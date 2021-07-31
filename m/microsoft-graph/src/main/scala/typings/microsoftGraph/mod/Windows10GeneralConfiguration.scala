@@ -2,596 +2,596 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows10GeneralConfiguration extends DeviceConfiguration {
+trait Windows10GeneralConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   /**
     * Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a
     * Microsoft account.
     */
-  var accountsBlockAddingNonMicrosoftAccountEmail: js.UndefOr[Boolean] = js.native
+  var accountsBlockAddingNonMicrosoftAccountEmail: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).
-  var antiTheftModeBlocked: js.UndefOr[Boolean] = js.native
+  var antiTheftModeBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. Possible values are:
     * notConfigured, blocked, allowed.
     */
-  var appsAllowTrustedAppsSideloading: js.UndefOr[StateManagementSetting] = js.native
+  var appsAllowTrustedAppsSideloading: js.UndefOr[StateManagementSetting] = js.undefined
   
   /**
     * Indicates whether or not to disable the launch of all apps from Windows Store that came pre-installed or were
     * downloaded.
     */
-  var appsBlockWindowsStoreOriginatedApps: js.UndefOr[Boolean] = js.native
+  var appsBlockWindowsStoreOriginatedApps: js.UndefOr[Boolean] = js.undefined
   
   // Specify a list of allowed Bluetooth services and profiles in hex formatted strings.
-  var bluetoothAllowedServices: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var bluetoothAllowedServices: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Whether or not to Block the user from using bluetooth advertising.
-  var bluetoothBlockAdvertising: js.UndefOr[Boolean] = js.native
+  var bluetoothBlockAdvertising: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from using bluetooth discoverable mode.
-  var bluetoothBlockDiscoverableMode: js.UndefOr[Boolean] = js.native
+  var bluetoothBlockDiscoverableMode: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.
-  var bluetoothBlockPrePairing: js.UndefOr[Boolean] = js.native
+  var bluetoothBlockPrePairing: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from using bluetooth.
-  var bluetoothBlocked: js.UndefOr[Boolean] = js.native
+  var bluetoothBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from accessing the camera of the device.
-  var cameraBlocked: js.UndefOr[Boolean] = js.native
+  var cameraBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from using data over cellular while roaming.
-  var cellularBlockDataWhenRoaming: js.UndefOr[Boolean] = js.native
+  var cellularBlockDataWhenRoaming: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from using VPN over cellular.
-  var cellularBlockVpn: js.UndefOr[Boolean] = js.native
+  var cellularBlockVpn: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from using VPN when roaming over cellular.
-  var cellularBlockVpnWhenRoaming: js.UndefOr[Boolean] = js.native
+  var cellularBlockVpnWhenRoaming: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from doing manual root certificate installation.
-  var certificatesBlockManualRootCertificateInstallation: js.UndefOr[Boolean] = js.native
+  var certificatesBlockManualRootCertificateInstallation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not to block Connected Devices Service which enables discovery and connection to other devices, remote
     * messaging, remote app sessions and other cross-device experiences.
     */
-  var connectedDevicesServiceBlocked: js.UndefOr[Boolean] = js.native
+  var connectedDevicesServiceBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from using copy paste.
-  var copyPasteBlocked: js.UndefOr[Boolean] = js.native
+  var copyPasteBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to Block the user from using Cortana.
-  var cortanaBlocked: js.UndefOr[Boolean] = js.native
+  var cortanaBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to block end user access to Defender.
-  var defenderBlockEndUserAccess: js.UndefOr[Boolean] = js.native
+  var defenderBlockEndUserAccess: js.UndefOr[Boolean] = js.undefined
   
   // Specifies the level of cloud-delivered protection. Possible values are: notConfigured, high, highPlus, zeroTolerance.
-  var defenderCloudBlockLevel: js.UndefOr[DefenderCloudBlockLevelType] = js.native
+  var defenderCloudBlockLevel: js.UndefOr[DefenderCloudBlockLevelType] = js.undefined
   
   // Number of days before deleting quarantined malware. Valid values 0 to 90
-  var defenderDaysBeforeDeletingQuarantinedMalware: js.UndefOr[NullableOption[Double]] = js.native
+  var defenderDaysBeforeDeletingQuarantinedMalware: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Gets or sets Defender’s actions to take on detected Malware per threat level.
-  var defenderDetectedMalwareActions: js.UndefOr[NullableOption[DefenderDetectedMalwareActions]] = js.native
+  var defenderDetectedMalwareActions: js.UndefOr[NullableOption[DefenderDetectedMalwareActions]] = js.undefined
   
   // File extensions to exclude from scans and real time protection.
-  var defenderFileExtensionsToExclude: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var defenderFileExtensionsToExclude: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Files and folder to exclude from scans and real time protection.
-  var defenderFilesAndFoldersToExclude: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var defenderFilesAndFoldersToExclude: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Value for monitoring file activity. Possible values are: userDefined, disable, monitorAllFiles,
     * monitorIncomingFilesOnly, monitorOutgoingFilesOnly.
     */
-  var defenderMonitorFileActivity: js.UndefOr[DefenderMonitorFileActivity] = js.native
+  var defenderMonitorFileActivity: js.UndefOr[DefenderMonitorFileActivity] = js.undefined
   
   // Processes to exclude from scans and real time protection.
-  var defenderProcessesToExclude: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var defenderProcessesToExclude: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * The configuration for how to prompt user for sample submission. Possible values are: userDefined, alwaysPrompt,
     * promptBeforeSendingPersonalData, neverSendData, sendAllDataWithoutPrompting.
     */
-  var defenderPromptForSampleSubmission: js.UndefOr[DefenderPromptForSampleSubmission] = js.native
+  var defenderPromptForSampleSubmission: js.UndefOr[DefenderPromptForSampleSubmission] = js.undefined
   
   // Indicates whether or not to require behavior monitoring.
-  var defenderRequireBehaviorMonitoring: js.UndefOr[Boolean] = js.native
+  var defenderRequireBehaviorMonitoring: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require cloud protection.
-  var defenderRequireCloudProtection: js.UndefOr[Boolean] = js.native
+  var defenderRequireCloudProtection: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require network inspection system.
-  var defenderRequireNetworkInspectionSystem: js.UndefOr[Boolean] = js.native
+  var defenderRequireNetworkInspectionSystem: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require real time monitoring.
-  var defenderRequireRealTimeMonitoring: js.UndefOr[Boolean] = js.native
+  var defenderRequireRealTimeMonitoring: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to scan archive files.
-  var defenderScanArchiveFiles: js.UndefOr[Boolean] = js.native
+  var defenderScanArchiveFiles: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to scan downloads.
-  var defenderScanDownloads: js.UndefOr[Boolean] = js.native
+  var defenderScanDownloads: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to scan incoming mail messages.
-  var defenderScanIncomingMail: js.UndefOr[Boolean] = js.native
+  var defenderScanIncomingMail: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to scan mapped network drives during full scan.
-  var defenderScanMappedNetworkDrivesDuringFullScan: js.UndefOr[Boolean] = js.native
+  var defenderScanMappedNetworkDrivesDuringFullScan: js.UndefOr[Boolean] = js.undefined
   
   // Max CPU usage percentage during scan. Valid values 0 to 100
-  var defenderScanMaxCpu: js.UndefOr[NullableOption[Double]] = js.native
+  var defenderScanMaxCpu: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to scan files opened from a network folder.
-  var defenderScanNetworkFiles: js.UndefOr[Boolean] = js.native
+  var defenderScanNetworkFiles: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to scan removable drives during full scan.
-  var defenderScanRemovableDrivesDuringFullScan: js.UndefOr[Boolean] = js.native
+  var defenderScanRemovableDrivesDuringFullScan: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to scan scripts loaded in Internet Explorer browser.
-  var defenderScanScriptsLoadedInInternetExplorer: js.UndefOr[Boolean] = js.native
+  var defenderScanScriptsLoadedInInternetExplorer: js.UndefOr[Boolean] = js.undefined
   
   // The defender system scan type. Possible values are: userDefined, disabled, quick, full.
-  var defenderScanType: js.UndefOr[DefenderScanType] = js.native
+  var defenderScanType: js.UndefOr[DefenderScanType] = js.undefined
   
   // The time to perform a daily quick scan.
-  var defenderScheduledQuickScanTime: js.UndefOr[NullableOption[String]] = js.native
+  var defenderScheduledQuickScanTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The defender time for the system scan.
-  var defenderScheduledScanTime: js.UndefOr[NullableOption[String]] = js.native
+  var defenderScheduledScanTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24
-  var defenderSignatureUpdateIntervalInHours: js.UndefOr[NullableOption[Double]] = js.native
+  var defenderSignatureUpdateIntervalInHours: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Defender day of the week for the system scan. Possible values are: userDefined, everyday, sunday, monday, tuesday,
     * wednesday, thursday, friday, saturday.
     */
-  var defenderSystemScanSchedule: js.UndefOr[WeeklySchedule] = js.native
+  var defenderSystemScanSchedule: js.UndefOr[WeeklySchedule] = js.undefined
   
   // Indicates whether or not to allow developer unlock. Possible values are: notConfigured, blocked, allowed.
-  var developerUnlockSetting: js.UndefOr[StateManagementSetting] = js.native
+  var developerUnlockSetting: js.UndefOr[StateManagementSetting] = js.undefined
   
   // Indicates whether or not to Block the user from resetting their phone.
-  var deviceManagementBlockFactoryResetOnMobile: js.UndefOr[Boolean] = js.native
+  var deviceManagementBlockFactoryResetOnMobile: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from doing manual un-enrollment from device management.
-  var deviceManagementBlockManualUnenroll: js.UndefOr[Boolean] = js.native
+  var deviceManagementBlockManualUnenroll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values
     * are: userDefined, none, basic, enhanced, full.
     */
-  var diagnosticsDataSubmissionMode: js.UndefOr[DiagnosticDataSubmissionMode] = js.native
+  var diagnosticsDataSubmissionMode: js.UndefOr[DiagnosticDataSubmissionMode] = js.undefined
   
   /**
     * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see
     * by default when they open Edge.
     */
-  var edgeAllowStartPagesModification: js.UndefOr[Boolean] = js.native
+  var edgeAllowStartPagesModification: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to prevent access to about flags on Edge browser.
-  var edgeBlockAccessToAboutFlags: js.UndefOr[Boolean] = js.native
+  var edgeBlockAccessToAboutFlags: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections
     * from Microsoft Edge to Microsoft services.
     */
-  var edgeBlockAddressBarDropdown: js.UndefOr[Boolean] = js.native
+  var edgeBlockAddressBarDropdown: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block auto fill.
-  var edgeBlockAutofill: js.UndefOr[Boolean] = js.native
+  var edgeBlockAutofill: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with
     * known compatibility issues.
     */
-  var edgeBlockCompatibilityList: js.UndefOr[Boolean] = js.native
+  var edgeBlockCompatibilityList: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block developer tools in the Edge browser.
-  var edgeBlockDeveloperTools: js.UndefOr[Boolean] = js.native
+  var edgeBlockDeveloperTools: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block extensions in the Edge browser.
-  var edgeBlockExtensions: js.UndefOr[Boolean] = js.native
+  var edgeBlockExtensions: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.
-  var edgeBlockInPrivateBrowsing: js.UndefOr[Boolean] = js.native
+  var edgeBlockInPrivateBrowsing: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using JavaScript.
-  var edgeBlockJavaScript: js.UndefOr[Boolean] = js.native
+  var edgeBlockJavaScript: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft
     * Edge.
     */
-  var edgeBlockLiveTileDataCollection: js.UndefOr[Boolean] = js.native
+  var edgeBlockLiveTileDataCollection: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block password manager.
-  var edgeBlockPasswordManager: js.UndefOr[Boolean] = js.native
+  var edgeBlockPasswordManager: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block popups.
-  var edgeBlockPopups: js.UndefOr[Boolean] = js.native
+  var edgeBlockPopups: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from using the search suggestions in the address bar.
-  var edgeBlockSearchSuggestions: js.UndefOr[Boolean] = js.native
+  var edgeBlockSearchSuggestions: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from sending the do not track header.
-  var edgeBlockSendingDoNotTrackHeader: js.UndefOr[Boolean] = js.native
+  var edgeBlockSendingDoNotTrackHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property
     * is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.
     */
-  var edgeBlockSendingIntranetTrafficToInternetExplorer: js.UndefOr[Boolean] = js.native
+  var edgeBlockSendingIntranetTrafficToInternetExplorer: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using the Edge browser.
-  var edgeBlocked: js.UndefOr[Boolean] = js.native
+  var edgeBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Clear browsing data on exiting Microsoft Edge.
-  var edgeClearBrowsingDataOnExit: js.UndefOr[Boolean] = js.native
+  var edgeClearBrowsingDataOnExit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates which cookies to block in the Edge browser. Possible values are: userDefined, allow, blockThirdParty,
     * blockAll.
     */
-  var edgeCookiePolicy: js.UndefOr[EdgeCookiePolicy] = js.native
+  var edgeCookiePolicy: js.UndefOr[EdgeCookiePolicy] = js.undefined
   
   /**
     * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those
     * enrolled in zero emissions configurations, to block this page.
     */
-  var edgeDisableFirstRunPage: js.UndefOr[Boolean] = js.native
+  var edgeDisableFirstRunPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates the enterprise mode site list location. Could be a local file, local network or http location.
-  var edgeEnterpriseModeSiteListLocation: js.UndefOr[NullableOption[String]] = js.native
+  var edgeEnterpriseModeSiteListLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The first run URL for when Edge browser is opened for the first time.
-  var edgeFirstRunUrl: js.UndefOr[NullableOption[String]] = js.native
+  var edgeFirstRunUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.
-  var edgeHomepageUrls: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var edgeHomepageUrls: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Indicates whether or not to Require the user to use the smart screen filter.
-  var edgeRequireSmartScreen: js.UndefOr[Boolean] = js.native
+  var edgeRequireSmartScreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their
     * default search engine provided the AllowSearchEngineCustomization policy is not set.
     */
-  var edgeSearchEngine: js.UndefOr[NullableOption[EdgeSearchEngineBase]] = js.native
+  var edgeSearchEngine: js.UndefOr[NullableOption[EdgeSearchEngineBase]] = js.undefined
   
   // Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.
-  var edgeSendIntranetTrafficToInternetExplorer: js.UndefOr[Boolean] = js.native
+  var edgeSendIntranetTrafficToInternetExplorer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order
     * changes to favorites are shared between browsers.
     */
-  var edgeSyncFavoritesWithInternetExplorer: js.UndefOr[Boolean] = js.native
+  var edgeSyncFavoritesWithInternetExplorer: js.UndefOr[Boolean] = js.undefined
   
   // Endpoint for discovering cloud printers.
-  var enterpriseCloudPrintDiscoveryEndPoint: js.UndefOr[NullableOption[String]] = js.native
+  var enterpriseCloudPrintDiscoveryEndPoint: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid
     * values 1 to 65535
     */
-  var enterpriseCloudPrintDiscoveryMaxLimit: js.UndefOr[NullableOption[Double]] = js.native
+  var enterpriseCloudPrintDiscoveryMaxLimit: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // OAuth resource URI for printer discovery service as configured in Azure portal.
-  var enterpriseCloudPrintMopriaDiscoveryResourceIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var enterpriseCloudPrintMopriaDiscoveryResourceIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Authentication endpoint for acquiring OAuth tokens.
-  var enterpriseCloudPrintOAuthAuthority: js.UndefOr[NullableOption[String]] = js.native
+  var enterpriseCloudPrintOAuthAuthority: js.UndefOr[NullableOption[String]] = js.undefined
   
   // GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.
-  var enterpriseCloudPrintOAuthClientIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var enterpriseCloudPrintOAuthClientIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // OAuth resource URI for print service as configured in the Azure portal.
-  var enterpriseCloudPrintResourceIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var enterpriseCloudPrintResourceIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether or not to enable device discovery UX.
-  var experienceBlockDeviceDiscovery: js.UndefOr[Boolean] = js.native
+  var experienceBlockDeviceDiscovery: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.
-  var experienceBlockErrorDialogWhenNoSIM: js.UndefOr[Boolean] = js.native
+  var experienceBlockErrorDialogWhenNoSIM: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to enable task switching on the device.
-  var experienceBlockTaskSwitcher: js.UndefOr[Boolean] = js.native
+  var experienceBlockTaskSwitcher: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block DVR and broadcasting.
-  var gameDvrBlocked: js.UndefOr[Boolean] = js.native
+  var gameDvrBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using internet sharing.
-  var internetSharingBlocked: js.UndefOr[Boolean] = js.native
+  var internetSharingBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from location services.
-  var locationServicesBlocked: js.UndefOr[Boolean] = js.native
+  var locationServicesBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows
     * 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.
     */
-  var lockScreenAllowTimeoutConfiguration: js.UndefOr[Boolean] = js.native
+  var lockScreenAllowTimeoutConfiguration: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block action center notifications over lock screen.
-  var lockScreenBlockActionCenterNotifications: js.UndefOr[Boolean] = js.native
+  var lockScreenBlockActionCenterNotifications: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not the user can interact with Cortana using speech while the system is locked.
-  var lockScreenBlockCortana: js.UndefOr[Boolean] = js.native
+  var lockScreenBlockCortana: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether to allow toast notifications above the device lock screen.
-  var lockScreenBlockToastNotifications: js.UndefOr[Boolean] = js.native
+  var lockScreenBlockToastNotifications: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices.
     * Supported values are 11-1800. Valid values 11 to 1800
     */
-  var lockScreenTimeoutInSeconds: js.UndefOr[NullableOption[Double]] = js.native
+  var lockScreenTimeoutInSeconds: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Disables the ability to quickly switch between users that are logged on simultaneously without logging off.
-  var logonBlockFastUserSwitching: js.UndefOr[Boolean] = js.native
+  var logonBlockFastUserSwitching: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block Microsoft account settings sync.
-  var microsoftAccountBlockSettingsSync: js.UndefOr[Boolean] = js.native
+  var microsoftAccountBlockSettingsSync: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block a Microsoft account.
-  var microsoftAccountBlocked: js.UndefOr[Boolean] = js.native
+  var microsoftAccountBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to
     * the user account that’s enrolled into MDM.
     */
-  var networkProxyApplySettingsDeviceWide: js.UndefOr[Boolean] = js.native
+  var networkProxyApplySettingsDeviceWide: js.UndefOr[Boolean] = js.undefined
   
   // Address to the proxy auto-config (PAC) script you want to use.
-  var networkProxyAutomaticConfigurationUrl: js.UndefOr[NullableOption[String]] = js.native
+  var networkProxyAutomaticConfigurationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC)
     * script.
     */
-  var networkProxyDisableAutoDetect: js.UndefOr[Boolean] = js.native
+  var networkProxyDisableAutoDetect: js.UndefOr[Boolean] = js.undefined
   
   // Specifies manual proxy server settings.
-  var networkProxyServer: js.UndefOr[NullableOption[Windows10NetworkProxyServer]] = js.native
+  var networkProxyServer: js.UndefOr[NullableOption[Windows10NetworkProxyServer]] = js.undefined
   
   // Indicates whether or not to Block the user from using near field communication.
-  var nfcBlocked: js.UndefOr[Boolean] = js.native
+  var nfcBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.
-  var oneDriveDisableFileSync: js.UndefOr[Boolean] = js.native
+  var oneDriveDisableFileSync: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify whether PINs or passwords such as '1111' or '1234' are allowed. For Windows 10 desktops, it also controls the
     * use of picture passwords.
     */
-  var passwordBlockSimple: js.UndefOr[Boolean] = js.native
+  var passwordBlockSimple: js.UndefOr[Boolean] = js.undefined
   
   // The password expiration in days. Valid values 0 to 730
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of character sets required in the password.
-  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The minimum password length. Valid values 4 to 16
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The minutes of inactivity before the screen times out.
-  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of previous passwords to prevent reuse of. Valid values 0 to 50
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to require a password upon resuming from an idle state.
-  var passwordRequireWhenResumeFromIdleState: js.UndefOr[Boolean] = js.native
+  var passwordRequireWhenResumeFromIdleState: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require the user to have a password.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
   // The number of sign in failures before factory reset. Valid values 0 to 999
-  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url
     * to a local image on the file system that needs to used as the Desktop Image.
     */
-  var personalizationDesktopImageUrl: js.UndefOr[NullableOption[String]] = js.native
+  var personalizationDesktopImageUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a
     * file Url to a local image on the file system that needs to be used as the Lock Screen Image.
     */
-  var personalizationLockScreenImageUrl: js.UndefOr[NullableOption[String]] = js.native
+  var personalizationLockScreenImageUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: notConfigured,
     * blocked, allowed.
     */
-  var privacyAdvertisingId: js.UndefOr[StateManagementSetting] = js.native
+  var privacyAdvertisingId: js.UndefOr[StateManagementSetting] = js.undefined
   
   /**
     * Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when
     * launching apps.
     */
-  var privacyAutoAcceptPairingAndConsentPrompts: js.UndefOr[Boolean] = js.native
+  var privacyAutoAcceptPairingAndConsentPrompts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store
     * applications.
     */
-  var privacyBlockInputPersonalization: js.UndefOr[Boolean] = js.native
+  var privacyBlockInputPersonalization: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from reset protection mode.
-  var resetProtectionModeBlocked: js.UndefOr[Boolean] = js.native
+  var resetProtectionModeBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Specifies what filter level of safe search is required. Possible values are: userDefined, strict, moderate.
-  var safeSearchFilter: js.UndefOr[SafeSearchFilterType] = js.native
+  var safeSearchFilter: js.UndefOr[SafeSearchFilterType] = js.undefined
   
   // Indicates whether or not to Block the user from taking Screenshots.
-  var screenCaptureBlocked: js.UndefOr[Boolean] = js.native
+  var screenCaptureBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Specifies if search can use diacritics.
-  var searchBlockDiacritics: js.UndefOr[Boolean] = js.native
+  var searchBlockDiacritics: js.UndefOr[Boolean] = js.undefined
   
   // Specifies whether to use automatic language detection when indexing content and properties.
-  var searchDisableAutoLanguageDetection: js.UndefOr[Boolean] = js.native
+  var searchDisableAutoLanguageDetection: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to disable the search indexer backoff feature.
-  var searchDisableIndexerBackoff: js.UndefOr[Boolean] = js.native
+  var searchDisableIndexerBackoff: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for
     * Cortana or Explorer.
     */
-  var searchDisableIndexingEncryptedItems: js.UndefOr[Boolean] = js.native
+  var searchDisableIndexingEncryptedItems: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.
-  var searchDisableIndexingRemovableDrive: js.UndefOr[Boolean] = js.native
+  var searchDisableIndexingRemovableDrive: js.UndefOr[Boolean] = js.undefined
   
   // Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.
-  var searchEnableAutomaticIndexSizeManangement: js.UndefOr[Boolean] = js.native
+  var searchEnableAutomaticIndexSizeManangement: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block remote queries of this computer’s index.
-  var searchEnableRemoteQueries: js.UndefOr[Boolean] = js.native
+  var searchEnableRemoteQueries: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Accounts in Settings app.
-  var settingsBlockAccountsPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockAccountsPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from installing provisioning packages.
-  var settingsBlockAddProvisioningPackage: js.UndefOr[Boolean] = js.native
+  var settingsBlockAddProvisioningPackage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Apps in Settings app.
-  var settingsBlockAppsPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockAppsPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from changing the language settings.
-  var settingsBlockChangeLanguage: js.UndefOr[Boolean] = js.native
+  var settingsBlockChangeLanguage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from changing power and sleep settings.
-  var settingsBlockChangePowerSleep: js.UndefOr[Boolean] = js.native
+  var settingsBlockChangePowerSleep: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from changing the region settings.
-  var settingsBlockChangeRegion: js.UndefOr[Boolean] = js.native
+  var settingsBlockChangeRegion: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from changing date and time settings.
-  var settingsBlockChangeSystemTime: js.UndefOr[Boolean] = js.native
+  var settingsBlockChangeSystemTime: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Devices in Settings app.
-  var settingsBlockDevicesPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockDevicesPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Ease of Access in Settings app.
-  var settingsBlockEaseOfAccessPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockEaseOfAccessPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from editing the device name.
-  var settingsBlockEditDeviceName: js.UndefOr[Boolean] = js.native
+  var settingsBlockEditDeviceName: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Gaming in Settings app.
-  var settingsBlockGamingPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockGamingPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Network &amp; Internet in Settings app.
-  var settingsBlockNetworkInternetPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockNetworkInternetPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Personalization in Settings app.
-  var settingsBlockPersonalizationPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockPersonalizationPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Privacy in Settings app.
-  var settingsBlockPrivacyPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockPrivacyPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the runtime configuration agent from removing provisioning packages.
-  var settingsBlockRemoveProvisioningPackage: js.UndefOr[Boolean] = js.native
+  var settingsBlockRemoveProvisioningPackage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Settings app.
-  var settingsBlockSettingsApp: js.UndefOr[Boolean] = js.native
+  var settingsBlockSettingsApp: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to System in Settings app.
-  var settingsBlockSystemPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockSystemPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Time &amp; Language in Settings app.
-  var settingsBlockTimeLanguagePage: js.UndefOr[Boolean] = js.native
+  var settingsBlockTimeLanguagePage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block access to Update &amp; Security in Settings app.
-  var settingsBlockUpdateSecurityPage: js.UndefOr[Boolean] = js.native
+  var settingsBlockUpdateSecurityPage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block multiple users of the same app to share data.
-  var sharedUserAppDataAllowed: js.UndefOr[Boolean] = js.native
+  var sharedUserAppDataAllowed: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.
-  var smartScreenBlockPromptOverride: js.UndefOr[Boolean] = js.native
+  var smartScreenBlockPromptOverride: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files
-  var smartScreenBlockPromptOverrideForFiles: js.UndefOr[Boolean] = js.native
+  var smartScreenBlockPromptOverrideForFiles: js.UndefOr[Boolean] = js.undefined
   
   // Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
-  var smartScreenEnableAppInstallControl: js.UndefOr[Boolean] = js.native
+  var smartScreenEnableAppInstallControl: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from unpinning apps from taskbar.
-  var startBlockUnpinningAppsFromTaskbar: js.UndefOr[Boolean] = js.native
+  var startBlockUnpinningAppsFromTaskbar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle
     * in the Settings app. Possible values are: userDefined, collapse, remove, disableSettingsApp.
     */
-  var startMenuAppListVisibility: js.UndefOr[WindowsStartMenuAppListVisibilityType] = js.native
+  var startMenuAppListVisibility: js.UndefOr[WindowsStartMenuAppListVisibilityType] = js.undefined
   
   // Enabling this policy hides the change account setting from appearing in the user tile in the start menu.
-  var startMenuHideChangeAccountSettings: js.UndefOr[Boolean] = js.native
+  var startMenuHideChangeAccountSettings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in
     * the Settings app.
     */
-  var startMenuHideFrequentlyUsedApps: js.UndefOr[Boolean] = js.native
+  var startMenuHideFrequentlyUsedApps: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides hibernate from appearing in the power button in the start menu.
-  var startMenuHideHibernate: js.UndefOr[Boolean] = js.native
+  var startMenuHideHibernate: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides lock from appearing in the user tile in the start menu.
-  var startMenuHideLock: js.UndefOr[Boolean] = js.native
+  var startMenuHideLock: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides the power button from appearing in the start menu.
-  var startMenuHidePowerButton: js.UndefOr[Boolean] = js.native
+  var startMenuHidePowerButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding
     * toggle in the Settings app.
     */
-  var startMenuHideRecentJumpLists: js.UndefOr[Boolean] = js.native
+  var startMenuHideRecentJumpLists: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle
     * in the Settings app.
     */
-  var startMenuHideRecentlyAddedApps: js.UndefOr[Boolean] = js.native
+  var startMenuHideRecentlyAddedApps: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides 'Restart/Update and Restart' from appearing in the power button in the start menu.
-  var startMenuHideRestartOptions: js.UndefOr[Boolean] = js.native
+  var startMenuHideRestartOptions: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides shut down/update and shut down from appearing in the power button in the start menu.
-  var startMenuHideShutDown: js.UndefOr[Boolean] = js.native
+  var startMenuHideShutDown: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides sign out from appearing in the user tile in the start menu.
-  var startMenuHideSignOut: js.UndefOr[Boolean] = js.native
+  var startMenuHideSignOut: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides sleep from appearing in the power button in the start menu.
-  var startMenuHideSleep: js.UndefOr[Boolean] = js.native
+  var startMenuHideSleep: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides switch account from appearing in the user tile in the start menu.
-  var startMenuHideSwitchAccount: js.UndefOr[Boolean] = js.native
+  var startMenuHideSwitchAccount: js.UndefOr[Boolean] = js.undefined
   
   // Enabling this policy hides the user tile from appearing in the start menu.
-  var startMenuHideUserTile: js.UndefOr[Boolean] = js.native
+  var startMenuHideUserTile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can
@@ -599,163 +599,163 @@ trait Windows10GeneralConfiguration extends DeviceConfiguration {
     * Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is
     * modified. The value should be a UTF-8 Base64 encoded byte array.
     */
-  var startMenuLayoutEdgeAssetsXml: js.UndefOr[NullableOption[Double]] = js.native
+  var startMenuLayoutEdgeAssetsXml: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified
     * by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.
     */
-  var startMenuLayoutXml: js.UndefOr[NullableOption[Double]] = js.native
+  var startMenuLayoutXml: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Allows admins to decide how the Start menu is displayed. Possible values are: userDefined, fullScreen, nonFullScreen.
-  var startMenuMode: js.UndefOr[WindowsStartMenuModeType] = js.native
+  var startMenuMode: js.UndefOr[WindowsStartMenuModeType] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderDocuments: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderDocuments: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderDownloads: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderDownloads: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. Possible values are: notConfigured,
     * hide, show.
     */
-  var startMenuPinnedFolderFileExplorer: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderFileExplorer: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderHomeGroup: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderHomeGroup: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. Possible values are: notConfigured,
     * hide, show.
     */
-  var startMenuPinnedFolderMusic: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderMusic: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderNetwork: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderNetwork: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderPersonalFolder: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderPersonalFolder: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderPictures: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderPictures: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderSettings: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderSettings: js.UndefOr[VisibilitySetting] = js.undefined
   
   /**
     * Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are:
     * notConfigured, hide, show.
     */
-  var startMenuPinnedFolderVideos: js.UndefOr[VisibilitySetting] = js.native
+  var startMenuPinnedFolderVideos: js.UndefOr[VisibilitySetting] = js.undefined
   
   // Indicates whether or not to Block the user from using removable storage.
-  var storageBlockRemovableStorage: js.UndefOr[Boolean] = js.native
+  var storageBlockRemovableStorage: js.UndefOr[Boolean] = js.undefined
   
   // Indicating whether or not to require encryption on a mobile device.
-  var storageRequireMobileDeviceEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireMobileDeviceEncryption: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether application data is restricted to the system drive.
-  var storageRestrictAppDataToSystemVolume: js.UndefOr[Boolean] = js.native
+  var storageRestrictAppDataToSystemVolume: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether the installation of applications is restricted to the system drive.
-  var storageRestrictAppInstallToSystemVolume: js.UndefOr[Boolean] = js.native
+  var storageRestrictAppInstallToSystemVolume: js.UndefOr[Boolean] = js.undefined
   
   // Whether the device is required to connect to the network.
-  var tenantLockdownRequireNetworkDuringOutOfBoxExperience: js.UndefOr[Boolean] = js.native
+  var tenantLockdownRequireNetworkDuringOutOfBoxExperience: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from USB connection.
-  var usbBlocked: js.UndefOr[Boolean] = js.native
+  var usbBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from voice recording.
-  var voiceRecordingBlocked: js.UndefOr[Boolean] = js.native
+  var voiceRecordingBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC
-  var webRtcBlockLocalhostIpAddress: js.UndefOr[Boolean] = js.native
+  var webRtcBlockLocalhostIpAddress: js.UndefOr[Boolean] = js.undefined
   
   // Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
-  var wiFiBlockAutomaticConnectHotspots: js.UndefOr[Boolean] = js.native
+  var wiFiBlockAutomaticConnectHotspots: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using Wi-Fi manual configuration.
-  var wiFiBlockManualConfiguration: js.UndefOr[Boolean] = js.native
+  var wiFiBlockManualConfiguration: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using Wi-Fi.
-  var wiFiBlocked: js.UndefOr[Boolean] = js.native
+  var wiFiBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low
     * frequency. Valid values 1 to 500
     */
-  var wiFiScanInterval: js.UndefOr[NullableOption[Double]] = js.native
+  var wiFiScanInterval: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership
     * notifications, Post-OOBE app install and redirect tiles.
     */
-  var windowsSpotlightBlockConsumerSpecificFeatures: js.UndefOr[Boolean] = js.native
+  var windowsSpotlightBlockConsumerSpecificFeatures: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce
     * users to what is new or changed
     */
-  var windowsSpotlightBlockOnActionCenter: js.UndefOr[Boolean] = js.native
+  var windowsSpotlightBlockOnActionCenter: js.UndefOr[Boolean] = js.undefined
   
   // Block personalized content in Windows spotlight based on user’s device usage.
-  var windowsSpotlightBlockTailoredExperiences: js.UndefOr[Boolean] = js.native
+  var windowsSpotlightBlockTailoredExperiences: js.UndefOr[Boolean] = js.undefined
   
   // Block third party content delivered via Windows Spotlight
-  var windowsSpotlightBlockThirdPartyNotifications: js.UndefOr[Boolean] = js.native
+  var windowsSpotlightBlockThirdPartyNotifications: js.UndefOr[Boolean] = js.undefined
   
   // Block Windows Spotlight Windows welcome experience
-  var windowsSpotlightBlockWelcomeExperience: js.UndefOr[Boolean] = js.native
+  var windowsSpotlightBlockWelcomeExperience: js.UndefOr[Boolean] = js.undefined
   
   // Allows IT admins to turn off the popup of Windows Tips.
-  var windowsSpotlightBlockWindowsTips: js.UndefOr[Boolean] = js.native
+  var windowsSpotlightBlockWindowsTips: js.UndefOr[Boolean] = js.undefined
   
   // Allows IT admins to turn off all Windows Spotlight features
-  var windowsSpotlightBlocked: js.UndefOr[Boolean] = js.native
+  var windowsSpotlightBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Specifies the type of Spotlight. Possible values are: notConfigured, disabled, enabled.
-  var windowsSpotlightConfigureOnLockScreen: js.UndefOr[WindowsSpotlightEnablementSettings] = js.native
+  var windowsSpotlightConfigureOnLockScreen: js.UndefOr[WindowsSpotlightEnablementSettings] = js.undefined
   
   // Indicates whether or not to block automatic update of apps from Windows Store.
-  var windowsStoreBlockAutoUpdate: js.UndefOr[Boolean] = js.native
+  var windowsStoreBlockAutoUpdate: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using the Windows store.
-  var windowsStoreBlocked: js.UndefOr[Boolean] = js.native
+  var windowsStoreBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to enable Private Store Only.
-  var windowsStoreEnablePrivateStoreOnly: js.UndefOr[Boolean] = js.native
+  var windowsStoreEnablePrivateStoreOnly: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow other devices from discovering this PC for projection.
-  var wirelessDisplayBlockProjectionToThisDevice: js.UndefOr[Boolean] = js.native
+  var wirelessDisplayBlockProjectionToThisDevice: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to allow user input from wireless display receiver.
-  var wirelessDisplayBlockUserInputFromReceiver: js.UndefOr[Boolean] = js.native
+  var wirelessDisplayBlockUserInputFromReceiver: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require a PIN for new devices to initiate pairing.
-  var wirelessDisplayRequirePinForPairing: js.UndefOr[Boolean] = js.native
+  var wirelessDisplayRequirePinForPairing: js.UndefOr[Boolean] = js.undefined
 }
 object Windows10GeneralConfiguration {
   

@@ -2,19 +2,17 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch of Change messages.
   */
-@js.native
 trait SchemaGoogleWatcherV1ChangeBatch extends StObject {
   
   /**
     * A list of Change messages.
     */
-  var changes: js.UndefOr[js.Array[SchemaGoogleWatcherV1Change]] = js.native
+  var changes: js.UndefOr[js.Array[SchemaGoogleWatcherV1Change]] = js.undefined
 }
 object SchemaGoogleWatcherV1ChangeBatch {
   

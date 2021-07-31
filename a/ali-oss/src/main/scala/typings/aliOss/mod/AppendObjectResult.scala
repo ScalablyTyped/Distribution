@@ -2,20 +2,18 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppendObjectResult extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var nextAppendPosition: String = js.native
+  var nextAppendPosition: String
   
   // the url of oss
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
   
-  var url: String = js.native
+  var url: String
 }
 object AppendObjectResult {
   

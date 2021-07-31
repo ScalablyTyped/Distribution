@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArcGISMapServiceCapabilitiesExportTiles extends Object {
+trait ArcGISMapServiceCapabilitiesExportTiles
+  extends StObject
+     with Object {
   
   /**
     * Specifies the maximum number of tiles that can be exported to a cache dataset or a tile package.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var maxExportTilesCount: Double = js.native
+  var maxExportTilesCount: Double
 }
 object ArcGISMapServiceCapabilitiesExportTiles {
   

@@ -10,9 +10,9 @@ A plugin for Gulp that renders mustache templates into html
 | ------------------ | :-------------: |
 | Full name          | gulp-mustache |
 | Keywords           | gulpplugin, gulp, mustache |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 26 |
-| # downloads        | 361464 |
+| # downloads        | 307506 |
 | # stars            | 11 |
 
 ## Links

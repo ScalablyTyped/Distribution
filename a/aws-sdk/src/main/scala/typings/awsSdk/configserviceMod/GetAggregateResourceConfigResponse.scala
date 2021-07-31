@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAggregateResourceConfigResponse extends StObject {
   
   /**
     * Returns a ConfigurationItem object.
     */
-  var ConfigurationItem: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationItem] = js.native
+  var ConfigurationItem: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationItem] = js.undefined
 }
 object GetAggregateResourceConfigResponse {
   

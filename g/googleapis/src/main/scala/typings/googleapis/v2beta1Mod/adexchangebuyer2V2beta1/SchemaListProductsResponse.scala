@@ -2,24 +2,22 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing products visible to the buyer.
   */
-@js.native
 trait SchemaListProductsResponse extends StObject {
   
   /**
     * List pagination support.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of matching products at their head revision number.
     */
-  var products: js.UndefOr[js.Array[SchemaProduct]] = js.native
+  var products: js.UndefOr[js.Array[SchemaProduct]] = js.undefined
 }
 object SchemaListProductsResponse {
   

@@ -8,60 +8,58 @@ import typings.typeorm.tableIndexOptionsMod.TableIndexOptions
 import typings.typeorm.tableUniqueOptionsMod.TableUniqueOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableOptionsMod {
   
-  @js.native
   trait TableOptions extends StObject {
     
     /**
       * Table check constraints.
       */
-    var checks: js.UndefOr[js.Array[TableCheckOptions]] = js.native
+    var checks: js.UndefOr[js.Array[TableCheckOptions]] = js.undefined
     
     /**
       * Table columns.
       */
-    var columns: js.UndefOr[js.Array[TableColumnOptions]] = js.native
+    var columns: js.UndefOr[js.Array[TableColumnOptions]] = js.undefined
     
     /**
       * Table engine.
       */
-    var engine: js.UndefOr[String] = js.native
+    var engine: js.UndefOr[String] = js.undefined
     
     /**
       * Table check constraints.
       */
-    var exclusions: js.UndefOr[js.Array[TableExclusionOptions]] = js.native
+    var exclusions: js.UndefOr[js.Array[TableExclusionOptions]] = js.undefined
     
     /**
       * Table foreign keys.
       */
-    var foreignKeys: js.UndefOr[js.Array[TableForeignKeyOptions]] = js.native
+    var foreignKeys: js.UndefOr[js.Array[TableForeignKeyOptions]] = js.undefined
     
     /**
       * Table indices.
       */
-    var indices: js.UndefOr[js.Array[TableIndexOptions]] = js.native
+    var indices: js.UndefOr[js.Array[TableIndexOptions]] = js.undefined
     
     /**
       * Indicates if table was just created.
       * This is needed, for example to check if we need to skip primary keys creation
       * for new tables.
       */
-    var justCreated: js.UndefOr[Boolean] = js.native
+    var justCreated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Table name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Table unique constraints.
       */
-    var uniques: js.UndefOr[js.Array[TableUniqueOptions]] = js.native
+    var uniques: js.UndefOr[js.Array[TableUniqueOptions]] = js.undefined
   }
   object TableOptions {
     

@@ -2,13 +2,13 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwitchParams extends ErrorParameters {
+trait SwitchParams
+  extends StObject
+     with ErrorParameters {
   
-  var caseIndex: Double = js.native
+  var caseIndex: Double
 }
 object SwitchParams {
   

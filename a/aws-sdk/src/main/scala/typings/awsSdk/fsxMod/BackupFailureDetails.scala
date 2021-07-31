@@ -2,16 +2,14 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupFailureDetails extends StObject {
   
   /**
     * A message describing the backup creation failure.
     */
-  var Message: js.UndefOr[ErrorMessage] = js.native
+  var Message: js.UndefOr[ErrorMessage] = js.undefined
 }
 object BackupFailureDetails {
   

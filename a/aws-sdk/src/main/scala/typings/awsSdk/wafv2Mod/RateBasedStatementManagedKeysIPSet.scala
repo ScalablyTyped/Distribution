@@ -2,18 +2,16 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateBasedStatementManagedKeysIPSet extends StObject {
   
   /**
     * The IP addresses that are currently blocked.
     */
-  var Addresses: js.UndefOr[IPAddresses] = js.native
+  var Addresses: js.UndefOr[IPAddresses] = js.undefined
   
-  var IPAddressVersion: js.UndefOr[typings.awsSdk.wafv2Mod.IPAddressVersion] = js.native
+  var IPAddressVersion: js.UndefOr[typings.awsSdk.wafv2Mod.IPAddressVersion] = js.undefined
 }
 object RateBasedStatementManagedKeysIPSet {
   

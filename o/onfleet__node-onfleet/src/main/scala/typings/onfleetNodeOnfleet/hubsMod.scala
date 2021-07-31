@@ -4,19 +4,23 @@ import typings.onfleetNodeOnfleet.anon.Apartment
 import typings.onfleetNodeOnfleet.destinationsMod.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hubsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Hubs", JSImport.Namespace)
   @js.native
-  class ^ () extends Hub
+  class ^ ()
+    extends StObject
+       with Hub {
+    
+    /* CompleteClass */
+    override def get(): js.Promise[js.Array[OnfleetHub]] = js.native
+  }
   
-  @js.native
   trait Hub extends StObject {
     
-    def get(): js.Promise[js.Array[OnfleetHub]] = js.native
+    def get(): js.Promise[js.Array[OnfleetHub]]
   }
   object Hub {
     
@@ -34,18 +38,17 @@ object hubsMod {
     }
   }
   
-  @js.native
   trait OnfleetHub extends StObject {
     
-    var address: Apartment = js.native
+    var address: Apartment
     
-    var id: String = js.native
+    var id: String
     
-    var location: Location = js.native
+    var location: Location
     
-    var name: String = js.native
+    var name: String
     
-    var teams: js.Array[String] = js.native
+    var teams: js.Array[String]
   }
   object OnfleetHub {
     

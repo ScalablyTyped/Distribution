@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeightedQuantileLoss extends StObject {
   
   /**
     * The difference between the predicted value and the actual value over the quantile, weighted (normalized) by dividing by the sum over all quantiles.
     */
-  var LossValue: js.UndefOr[Double] = js.native
+  var LossValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The quantile. Quantiles divide a probability distribution into regions of equal probability. For example, if the distribution was divided into 5 regions of equal probability, the quantiles would be 0.2, 0.4, 0.6, and 0.8.
     */
-  var Quantile: js.UndefOr[Double] = js.native
+  var Quantile: js.UndefOr[Double] = js.undefined
 }
 object WeightedQuantileLoss {
   

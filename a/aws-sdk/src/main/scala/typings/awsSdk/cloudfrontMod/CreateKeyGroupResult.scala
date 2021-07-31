@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateKeyGroupResult extends StObject {
   
   /**
     * The identifier for this version of the key group.
     */
-  var ETag: js.UndefOr[String] = js.native
+  var ETag: js.UndefOr[String] = js.undefined
   
   /**
     * The key group that was just created.
     */
-  var KeyGroup: js.UndefOr[typings.awsSdk.cloudfrontMod.KeyGroup] = js.native
+  var KeyGroup: js.UndefOr[typings.awsSdk.cloudfrontMod.KeyGroup] = js.undefined
   
   /**
     * The URL of the key group.
     */
-  var Location: js.UndefOr[String] = js.native
+  var Location: js.UndefOr[String] = js.undefined
 }
 object CreateKeyGroupResult {
   

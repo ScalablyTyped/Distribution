@@ -7,25 +7,23 @@ import typings.forkTsCheckerWebpackPlugin.loggerOptionsMod.LoggerOptions
 import typings.forkTsCheckerWebpackPlugin.typeScriptReporterOptionsMod.TypeScriptReporterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forkTsCheckerWebpackPluginOptionsMod {
   
-  @js.native
   trait ForkTsCheckerWebpackPluginOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var eslint: js.UndefOr[EsLintReporterOptions] = js.native
+    var eslint: js.UndefOr[EsLintReporterOptions] = js.undefined
     
-    var formatter: js.UndefOr[FormatterOptions] = js.native
+    var formatter: js.UndefOr[FormatterOptions] = js.undefined
     
-    var issue: js.UndefOr[IssueOptions] = js.native
+    var issue: js.UndefOr[IssueOptions] = js.undefined
     
-    var logger: js.UndefOr[LoggerOptions] = js.native
+    var logger: js.UndefOr[LoggerOptions] = js.undefined
     
-    var typescript: js.UndefOr[TypeScriptReporterOptions] = js.native
+    var typescript: js.UndefOr[TypeScriptReporterOptions] = js.undefined
   }
   object ForkTsCheckerWebpackPluginOptions {
     

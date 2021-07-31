@@ -2,13 +2,11 @@ package typings.reactBigCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Messages extends StObject {
   
-  var messages: typings.reactBigCalendar.mod.Messages = js.native
+  var messages: typings.reactBigCalendar.mod.Messages
 }
 object Messages {
   

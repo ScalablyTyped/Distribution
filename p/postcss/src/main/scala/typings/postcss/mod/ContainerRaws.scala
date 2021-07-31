@@ -2,13 +2,13 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContainerRaws extends NodeRaws {
+trait ContainerRaws
+  extends StObject
+     with NodeRaws {
   
-  var indent: js.UndefOr[String] = js.native
+  var indent: js.UndefOr[String] = js.undefined
 }
 object ContainerRaws {
   

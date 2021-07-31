@@ -5,19 +5,19 @@ import typings.typedoc.typedocStrings.readonly
 import typings.typedoc.typedocStrings.unique
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.TypeOperatorType, 'type' | 'operator' | 'target'> */
-@js.native
-trait TypeOperatorType extends SomeType {
+trait TypeOperatorType
+  extends StObject
+     with SomeType {
   
-  var operator: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly = js.native
+  var operator: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly
   
-  var target: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type = js.native
+  var target: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
   
-  var `type`: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String) = js.native
+  var `type`: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)
 }
 object TypeOperatorType {
   

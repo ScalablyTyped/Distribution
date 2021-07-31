@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyDetails extends StObject {
   
   /**
     * The action that produced the finding.
     */
-  var action: js.UndefOr[FindingAction] = js.native
+  var action: js.UndefOr[FindingAction] = js.undefined
   
   /**
     * The entity that performed the action that produced the finding.
     */
-  var actor: js.UndefOr[FindingActor] = js.native
+  var actor: js.UndefOr[FindingActor] = js.undefined
 }
 object PolicyDetails {
   

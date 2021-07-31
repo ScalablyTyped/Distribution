@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFaqsRequest extends StObject {
   
   /**
     * The index that contains the FAQ lists.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * The maximum number of FAQs to return in the response. If there are fewer results in the list, this response contains only the actual results.
     */
-  var MaxResults: js.UndefOr[MaxResultsIntegerForListFaqsRequest] = js.native
+  var MaxResults: js.UndefOr[MaxResultsIntegerForListFaqsRequest] = js.undefined
   
   /**
     * If the result of the previous request to ListFaqs was truncated, include the NextToken to fetch the next set of FAQs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
 }
 object ListFaqsRequest {
   

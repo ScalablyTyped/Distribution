@@ -2,35 +2,34 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonProperties
-  extends ComponentProperties
+  extends StObject
+     with ComponentProperties
      with ComponentWithIcon {
   
   /**
     * The content of the currently selected file
     */
-  var fileContent: js.UndefOr[String] = js.native
+  var fileContent: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the button opens the file browser dialog
     */
-  var isFile: js.UndefOr[Boolean] = js.native
+  var isFile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The label for the button
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * @deprecated This will be moved to `ComponentWithIconProperties`
     *
     * The title for the button. This title will show when hovered over
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ButtonProperties {
   

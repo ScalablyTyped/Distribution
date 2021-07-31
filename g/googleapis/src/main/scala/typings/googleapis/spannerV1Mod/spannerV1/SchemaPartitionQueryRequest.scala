@@ -3,13 +3,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for PartitionQuery
   */
-@js.native
 trait SchemaPartitionQueryRequest extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaPartitionQueryRequest extends StObject {
     * of the SQL query parameters. See the definition of Type for more
     * information about SQL types.
     */
-  var paramTypes: js.UndefOr[StringDictionary[SchemaType]] = js.native
+  var paramTypes: js.UndefOr[StringDictionary[SchemaType]] = js.undefined
   
   /**
     * The SQL query string can contain parameter placeholders. A parameter
@@ -34,12 +32,12 @@ trait SchemaPartitionQueryRequest extends StObject {
     * are parameter names, and whose values are the corresponding parameter
     * values.
     */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Additional options that affect how many partitions are created.
     */
-  var partitionOptions: js.UndefOr[SchemaPartitionOptions] = js.native
+  var partitionOptions: js.UndefOr[SchemaPartitionOptions] = js.undefined
   
   /**
     * The query request to generate partitions for. The request will fail if
@@ -51,13 +49,13 @@ trait SchemaPartitionQueryRequest extends StObject {
     * such as INSERT, UPDATE, or DELETE. Use ExecuteStreamingSql with a
     * PartitionedDml transaction for large, partition-friendly DML operations.
     */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
   
   /**
     * Read only snapshot transactions are supported, read/write and single use
     * transactions are not.
     */
-  var transaction: js.UndefOr[SchemaTransactionSelector] = js.native
+  var transaction: js.UndefOr[SchemaTransactionSelector] = js.undefined
 }
 object SchemaPartitionQueryRequest {
   

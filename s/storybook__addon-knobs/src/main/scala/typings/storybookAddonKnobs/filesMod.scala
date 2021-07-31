@@ -9,7 +9,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesMod {
@@ -17,12 +16,11 @@ object filesMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FilesTypeProps> & {  serialize :(): undefined,   deserialize :(): undefined} */
   object default {
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Files", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[FilesTypeProps]): ReactElement | Null = js.native
-    @JSImport("@storybook/addon-knobs/dist/components/types/Files", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[FilesTypeProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[FilesTypeProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[FilesTypeProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@storybook/addon-knobs/dist/components/types/Files", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -41,9 +39,9 @@ object filesMod {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Files", "default.deserialize")
     @js.native
-    def deserialize: js.Function0[js.UndefOr[scala.Nothing]] = js.native
+    def deserialize: js.Function0[Unit] = js.native
     @scala.inline
-    def deserialize_=(x: js.Function0[js.UndefOr[scala.Nothing]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
+    def deserialize_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Files", "default.displayName")
     @js.native
@@ -59,17 +57,18 @@ object filesMod {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Files", "default.serialize")
     @js.native
-    def serialize: js.Function0[js.UndefOr[scala.Nothing]] = js.native
+    def serialize: js.Function0[Unit] = js.native
     @scala.inline
-    def serialize_=(x: js.Function0[js.UndefOr[scala.Nothing]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
+    def serialize_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   }
   
   type DateTypeKnobValue = js.Array[String]
   
-  @js.native
-  trait FileTypeKnob extends KnobControlConfig[DateTypeKnobValue] {
+  trait FileTypeKnob
+    extends StObject
+       with KnobControlConfig[DateTypeKnobValue] {
     
-    var accept: String = js.native
+    var accept: String
   }
   object FileTypeKnob {
     
@@ -87,11 +86,12 @@ object filesMod {
     }
   }
   
-  @js.native
-  trait FilesTypeProps extends KnobControlProps[DateTypeKnobValue] {
+  trait FilesTypeProps
+    extends StObject
+       with KnobControlProps[DateTypeKnobValue] {
     
     @JSName("knob")
-    var knob_FilesTypeProps: FileTypeKnob = js.native
+    var knob_FilesTypeProps: FileTypeKnob
   }
   object FilesTypeProps {
     

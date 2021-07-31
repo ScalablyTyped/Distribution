@@ -2,19 +2,17 @@ package typings.log4js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Appenders extends StObject {
     
-    var appenders: js.Array[String] = js.native
+    var appenders: js.Array[String]
     
-    var enableCallStack: js.UndefOr[Boolean] = js.native
+    var enableCallStack: js.UndefOr[Boolean] = js.undefined
     
-    var level: String = js.native
+    var level: String
   }
   object Appenders {
     
@@ -44,18 +42,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Context extends StObject {
     
-    var context: js.UndefOr[Boolean] = js.native
+    var context: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[typings.log4js.mod.Format] = js.native
+    var format: js.UndefOr[typings.log4js.mod.Format] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var nolog: js.UndefOr[js.Any] = js.native
+    var nolog: js.UndefOr[js.Any] = js.undefined
     
-    var statusRules: js.UndefOr[js.Array[_]] = js.native
+    var statusRules: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Context {
     
@@ -98,7 +95,7 @@ object anon {
       def setNologUndefined: Self = StObject.set(x, "nolog", js.undefined)
       
       @scala.inline
-      def setStatusRules(value: js.Array[_]): Self = StObject.set(x, "statusRules", value.asInstanceOf[js.Any])
+      def setStatusRules(value: js.Array[js.Any]): Self = StObject.set(x, "statusRules", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStatusRulesUndefined: Self = StObject.set(x, "statusRules", js.undefined)
@@ -108,14 +105,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var format: js.UndefOr[typings.log4js.mod.Format] = js.native
+    var format: js.UndefOr[typings.log4js.mod.Format] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var nolog: js.UndefOr[js.Any] = js.native
+    var nolog: js.UndefOr[js.Any] = js.undefined
   }
   object Format {
     
@@ -153,12 +149,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Worker extends StObject {
     
-    var worker: Double = js.native
+    var worker: Double
     
-    var workerId: Double = js.native
+    var workerId: Double
   }
   object Worker {
     

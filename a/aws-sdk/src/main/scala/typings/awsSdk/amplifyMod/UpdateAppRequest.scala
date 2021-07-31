@@ -2,106 +2,104 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAppRequest extends StObject {
   
   /**
     *  The personal access token for a third-party source control system for an Amplify app. The token is used to create webhook and a read-only deploy key. The token is not stored. 
     */
-  var accessToken: js.UndefOr[AccessToken] = js.native
+  var accessToken: js.UndefOr[AccessToken] = js.undefined
   
   /**
     *  The unique ID for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  The automated branch creation configuration for an Amplify app. 
     */
-  var autoBranchCreationConfig: js.UndefOr[AutoBranchCreationConfig] = js.native
+  var autoBranchCreationConfig: js.UndefOr[AutoBranchCreationConfig] = js.undefined
   
   /**
     *  Describes the automated branch creation glob patterns for an Amplify app. 
     */
-  var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.native
+  var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.undefined
   
   /**
     *  The basic authorization credentials for an Amplify app. 
     */
-  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
+  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   
   /**
     *  The build specification (build spec) for an Amplify app. 
     */
-  var buildSpec: js.UndefOr[BuildSpec] = js.native
+  var buildSpec: js.UndefOr[BuildSpec] = js.undefined
   
   /**
     * The custom HTTP headers for an Amplify app.
     */
-  var customHeaders: js.UndefOr[CustomHeaders] = js.native
+  var customHeaders: js.UndefOr[CustomHeaders] = js.undefined
   
   /**
     *  The custom redirect and rewrite rules for an Amplify app. 
     */
-  var customRules: js.UndefOr[CustomRules] = js.native
+  var customRules: js.UndefOr[CustomRules] = js.undefined
   
   /**
     *  The description for an Amplify app. 
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     *  Enables automated branch creation for an Amplify app. 
     */
-  var enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.native
+  var enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined
   
   /**
     *  Enables basic authorization for an Amplify app. 
     */
-  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.native
+  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined
   
   /**
     *  Enables branch auto-building for an Amplify app. 
     */
-  var enableBranchAutoBuild: js.UndefOr[EnableAutoBuild] = js.native
+  var enableBranchAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined
   
   /**
     *  Automatically disconnects a branch in the Amplify Console when you delete a branch from your Git repository. 
     */
-  var enableBranchAutoDeletion: js.UndefOr[EnableBranchAutoDeletion] = js.native
+  var enableBranchAutoDeletion: js.UndefOr[EnableBranchAutoDeletion] = js.undefined
   
   /**
     *  The environment variables for an Amplify app. 
     */
-  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.native
+  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.undefined
   
   /**
     *  The AWS Identity and Access Management (IAM) service role for an Amplify app. 
     */
-  var iamServiceRoleArn: js.UndefOr[ServiceRoleArn] = js.native
+  var iamServiceRoleArn: js.UndefOr[ServiceRoleArn] = js.undefined
   
   /**
     *  The name for an Amplify app. 
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     *  The OAuth token for a third-party source control system for an Amplify app. The token is used to create a webhook and a read-only deploy key. The OAuth token is not stored. 
     */
-  var oauthToken: js.UndefOr[OauthToken] = js.native
+  var oauthToken: js.UndefOr[OauthToken] = js.undefined
   
   /**
     *  The platform for an Amplify app. 
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     *  The name of the repository for an Amplify app 
     */
-  var repository: js.UndefOr[Repository] = js.native
+  var repository: js.UndefOr[Repository] = js.undefined
 }
 object UpdateAppRequest {
   

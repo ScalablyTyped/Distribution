@@ -2,10 +2,8 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Strings extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait Strings extends StObject {
     * will throw an EvalError.
     * @default true
     */
-  var strings: js.UndefOr[Boolean] = js.native
+  var strings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to false any attempt to compile a WebAssembly module will throw a WebAssembly.CompileError.
     * @default true
     */
-  var wasm: js.UndefOr[Boolean] = js.native
+  var wasm: js.UndefOr[Boolean] = js.undefined
 }
 object Strings {
   

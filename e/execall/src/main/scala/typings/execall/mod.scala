@@ -3,7 +3,6 @@ package typings.execall
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,18 +29,20 @@ object mod {
   // ]
   ```
   */
+  @scala.inline
+  def apply(regexp: RegExp, string: String): js.Array[Match] = (^.asInstanceOf[js.Dynamic].apply(regexp.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
+  
   @JSImport("execall", JSImport.Namespace)
   @js.native
-  def apply(regexp: RegExp, string: String): js.Array[Match] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Match extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var `match`: String = js.native
+    var `match`: String
     
-    var subMatches: js.Array[String] = js.native
+    var subMatches: js.Array[String]
   }
   object Match {
     

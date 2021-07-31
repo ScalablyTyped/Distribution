@@ -6,7 +6,6 @@ import typings.wordpressComponents.baseControlMod.BaseControl.ControlProps
 import typings.wordpressComponents.focalPointPickerMod.FocalPointPicker.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focalPointPickerMod {
@@ -25,18 +24,17 @@ object focalPointPickerMod {
   
   object FocalPointPicker {
     
-    @js.native
     trait FocalPoint extends StObject {
       
       /**
         * Fractional percent from LTR of image (Range 0 to 1).
         */
-      var x: Double = js.native
+      var x: Double
       
       /**
         * Fractional percent from TTB of image (Range 0 to 1).
         */
-      var y: Double = js.native
+      var y: Double
     }
     object FocalPoint {
       
@@ -57,23 +55,24 @@ object focalPointPickerMod {
       }
     }
     
-    @js.native
-    trait Props extends ControlProps {
+    trait Props
+      extends StObject
+         with ControlProps {
       
       /**
         * Callback which is called when the focal point changes.
         */
-      def onChange(value: FocalPoint): Unit = js.native
+      def onChange(value: FocalPoint): Unit
       
       /**
         * URL of the image to be displayed.
         */
-      var url: String = js.native
+      var url: String
       
       /**
         * The focal point.
         */
-      var value: FocalPoint = js.native
+      var value: FocalPoint
     }
     object Props {
       

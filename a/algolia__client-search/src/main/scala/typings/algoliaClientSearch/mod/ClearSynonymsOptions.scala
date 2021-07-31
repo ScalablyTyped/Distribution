@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearSynonymsOptions extends StObject {
   
   /**
     * If the clear synonyms request should be forward to replicas.
     */
-  val forwardToReplicas: js.UndefOr[Boolean] = js.native
+  val forwardToReplicas: js.UndefOr[Boolean] = js.undefined
 }
 object ClearSynonymsOptions {
   

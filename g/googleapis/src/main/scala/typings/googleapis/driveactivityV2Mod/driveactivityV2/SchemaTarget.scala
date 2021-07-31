@@ -2,29 +2,27 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the target of activity.
   */
-@js.native
 trait SchemaTarget extends StObject {
   
   /**
     * The target is a Drive item.
     */
-  var driveItem: js.UndefOr[SchemaDriveItem] = js.native
+  var driveItem: js.UndefOr[SchemaDriveItem] = js.undefined
   
   /**
     * The target is a comment on a Drive file.
     */
-  var fileComment: js.UndefOr[SchemaFileComment] = js.native
+  var fileComment: js.UndefOr[SchemaFileComment] = js.undefined
   
   /**
     * The target is a Team Drive.
     */
-  var teamDrive: js.UndefOr[SchemaTeamDrive] = js.native
+  var teamDrive: js.UndefOr[SchemaTeamDrive] = js.undefined
 }
 object SchemaTarget {
   

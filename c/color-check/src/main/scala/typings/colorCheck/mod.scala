@@ -2,69 +2,61 @@ package typings.colorCheck
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("color-check", "aa")
+  @JSImport("color-check", JSImport.Namespace)
   @js.native
-  def aa(foreground: Color, background: Color): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("color-check", "aa_18")
-  @js.native
-  def aa18(foreground: Color, background: Color): Boolean = js.native
+  @scala.inline
+  def aa(foreground: Color, background: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aa")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("color-check", "aaa")
-  @js.native
-  def aaa(foreground: Color, background: Color): Boolean = js.native
+  @scala.inline
+  def aa18(foreground: Color, background: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aa_18")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("color-check", "aaa_18")
-  @js.native
-  def aaa18(foreground: Color, background: Color): Boolean = js.native
+  @scala.inline
+  def aaa(foreground: Color, background: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aaa")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def aaa18(foreground: Color, background: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aaa_18")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("color-check", "brightnessThreshold")
   @js.native
   val brightnessThreshold: Double = js.native
   
-  @JSImport("color-check", "colorBrightnessDifference")
-  @js.native
-  def colorBrightnessDifference(foreground: Color, background: Color): Boolean = js.native
+  @scala.inline
+  def colorBrightnessDifference(foreground: Color, background: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("colorBrightnessDifference")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("color-check", "colorCompliance")
-  @js.native
-  def colorCompliance(foreground: Color, background: Color): Boolean = js.native
+  @scala.inline
+  def colorCompliance(foreground: Color, background: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("colorCompliance")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("color-check", "colorContrast")
-  @js.native
-  def colorContrast(foreground: Color, background: Color): Double = js.native
+  @scala.inline
+  def colorContrast(foreground: Color, background: Color): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("colorContrast")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("color-check", "colorContrastThreshold")
   @js.native
   val colorContrastThreshold: Double = js.native
   
-  @JSImport("color-check", "colorDifference")
-  @js.native
-  def colorDifference(foreground: Color, background: Color): Boolean = js.native
+  @scala.inline
+  def colorDifference(foreground: Color, background: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("colorDifference")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("color-check", "colorGetLuminance")
-  @js.native
-  def colorGetLuminance(rgb: js.Tuple3[Double, Double, Double]): Double = js.native
+  @scala.inline
+  def colorGetLuminance(rgb: js.Tuple3[Double, Double, Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colorGetLuminance")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("color-check", "hexToRgb")
-  @js.native
-  def hexToRgb(colorValue: Color): RGB = js.native
+  @scala.inline
+  def hexToRgb(colorValue: Color): RGB = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToRgb")(colorValue.asInstanceOf[js.Any]).asInstanceOf[RGB]
   
   type Color = String | RGB
   
-  @js.native
   trait RGB extends StObject {
     
-    var b: String | Double = js.native
+    var b: String | Double
     
-    var g: String | Double = js.native
+    var g: String | Double
     
-    var r: String | Double = js.native
+    var r: String | Double
   }
   object RGB {
     

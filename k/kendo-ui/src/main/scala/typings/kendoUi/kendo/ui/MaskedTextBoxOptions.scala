@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaskedTextBoxOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ MaskedTextBoxChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ MaskedTextBoxChangeEvent, Unit]] = js.undefined
   
-  var clearPromptChar: js.UndefOr[Boolean] = js.native
+  var clearPromptChar: js.UndefOr[Boolean] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String | js.Function | MaskedTextBoxLabel] = js.native
+  var label: js.UndefOr[String | js.Function | MaskedTextBoxLabel] = js.undefined
   
-  var mask: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var promptChar: js.UndefOr[String] = js.native
+  var promptChar: js.UndefOr[String] = js.undefined
   
-  var rules: js.UndefOr[js.Any] = js.native
+  var rules: js.UndefOr[js.Any] = js.undefined
   
-  var unmaskOnPost: js.UndefOr[Boolean] = js.native
+  var unmaskOnPost: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object MaskedTextBoxOptions {
   

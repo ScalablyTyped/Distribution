@@ -9,10 +9,13 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dndListMod {
+  
+  @JSImport("baseui/dnd-list", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("baseui/dnd-list", "List")
   @js.native
@@ -26,10 +29,9 @@ object dndListMod {
     def this(props: ListProps, context: js.Any) = this()
   }
   
-  @js.native
   trait STATE_CHANGE_TYPE extends StObject {
     
-    var change: change_ = js.native
+    var change: change_
   }
   object STATE_CHANGE_TYPE {
     
@@ -90,40 +92,37 @@ object dndListMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @JSImport("baseui/dnd-list", "arrayMove")
-  @js.native
-  def arrayMove[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = js.native
+  @scala.inline
+  def arrayMove[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("baseui/dnd-list", "arrayRemove")
-  @js.native
-  def arrayRemove[T](array: js.Array[T], index: Double): js.Array[T] = js.native
+  @scala.inline
+  def arrayRemove[T](array: js.Array[T], index: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @js.native
   trait ListOverrides extends StObject {
     
     var CloseHandle: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArgT> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var DragHandle: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArgT> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Item: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArgT> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Label: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArgT> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var List: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArgT> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArgT> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ListOverrides {
     
@@ -186,18 +185,17 @@ object dndListMod {
     }
   }
   
-  @js.native
   trait ListProps extends StObject {
     
-    var items: js.UndefOr[js.Array[ReactNode]] = js.native
+    var items: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* args */ OldIndex, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ OldIndex, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[ListOverrides] = js.native
+    var overrides: js.UndefOr[ListOverrides] = js.undefined
     
-    var removable: js.UndefOr[Boolean] = js.native
+    var removable: js.UndefOr[Boolean] = js.undefined
     
-    var removableByMove: js.UndefOr[Boolean] = js.native
+    var removableByMove: js.UndefOr[Boolean] = js.undefined
   }
   object ListProps {
     
@@ -220,7 +218,7 @@ object dndListMod {
       def setItemsVarargs(value: ReactNode*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setOnChange(value: /* args */ OldIndex => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* args */ OldIndex => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -245,23 +243,22 @@ object dndListMod {
     }
   }
   
-  @js.native
   trait SharedStylePropsArgT extends StObject {
     
     @JSName("$isDragged")
-    var $isDragged: Boolean = js.native
+    var $isDragged: Boolean
     
     @JSName("$isRemovable")
-    var $isRemovable: Boolean = js.native
+    var $isRemovable: Boolean
     
     @JSName("$isRemovableByMove")
-    var $isRemovableByMove: Boolean = js.native
+    var $isRemovableByMove: Boolean
     
     @JSName("$isSelected")
-    var $isSelected: Boolean = js.native
+    var $isSelected: Boolean
     
     @JSName("$value")
-    var $value: ReactNode = js.native
+    var $value: ReactNode
   }
   object SharedStylePropsArgT {
     
@@ -294,10 +291,9 @@ object dndListMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var items: js.Array[ReactNode] = js.native
+    var items: js.Array[ReactNode]
   }
   object State {
     
@@ -320,23 +316,11 @@ object dndListMod {
   
   type StateReducer = js.Function3[change_, /* nextState */ State, /* currentState */ State, State]
   
-  /* Inlined baseui.baseui/dnd-list.StatefulListProps & {  initialState :baseui.baseui/dnd-list.State | undefined,   children :react.react.ReactNode} */
-  @js.native
-  trait StatefulComponentContainerProps extends StObject {
+  trait StatefulComponentContainerProps
+    extends StObject
+       with StatefulListProps {
     
-    var children: ReactNode = js.native
-    
-    var initialState: js.UndefOr[State] = js.native
-    
-    var onChange: js.UndefOr[js.Function1[/* params */ NewIndex, _]] = js.native
-    
-    var overrides: js.UndefOr[ListOverrides] = js.native
-    
-    var removable: js.UndefOr[Boolean] = js.native
-    
-    var removableByMove: js.UndefOr[Boolean] = js.native
-    
-    var stateReducer: js.UndefOr[StateReducer] = js.native
+    var children: ReactNode
   }
   object StatefulComponentContainerProps {
     
@@ -354,59 +338,22 @@ object dndListMod {
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
-      
-      @scala.inline
-      def setOnChange(value: /* params */ NewIndex => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
-      
-      @scala.inline
-      def setOverrides(value: ListOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
-      
-      @scala.inline
-      def setRemovable(value: Boolean): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRemovableByMove(value: Boolean): Self = StObject.set(x, "removableByMove", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRemovableByMoveUndefined: Self = StObject.set(x, "removableByMove", js.undefined)
-      
-      @scala.inline
-      def setRemovableUndefined: Self = StObject.set(x, "removable", js.undefined)
-      
-      @scala.inline
-      def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
-      
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
   
-  @js.native
   trait StatefulListProps extends StObject {
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* params */ NewIndex, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* params */ NewIndex, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[ListOverrides] = js.native
+    var overrides: js.UndefOr[ListOverrides] = js.undefined
     
-    var removable: js.UndefOr[Boolean] = js.native
+    var removable: js.UndefOr[Boolean] = js.undefined
     
-    var removableByMove: js.UndefOr[Boolean] = js.native
+    var removableByMove: js.UndefOr[Boolean] = js.undefined
     
-    var stateReducer: js.UndefOr[StateReducer] = js.native
+    var stateReducer: js.UndefOr[StateReducer] = js.undefined
   }
   object StatefulListProps {
     
@@ -426,7 +373,7 @@ object dndListMod {
       def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* params */ NewIndex => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* params */ NewIndex => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

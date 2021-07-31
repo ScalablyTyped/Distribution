@@ -4,16 +4,14 @@ import typings.wechatMiniprogram.DB.IDocumentData
 import typings.wechatMiniprogram.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.RQ<wechat-miniprogram.DB.IAddDocumentOptions> */
-@js.native
 trait RQIAddDocumentOptions extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var data: IDocumentData = js.native
+  var data: IDocumentData
 }
 object RQIAddDocumentOptions {
   

@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceMotionEventRotationRateInit extends StObject {
   
-  var alpha: js.UndefOr[Double | Null] = js.native
+  var alpha: js.UndefOr[Double | Null] = js.undefined
   
-  var beta: js.UndefOr[Double | Null] = js.native
+  var beta: js.UndefOr[Double | Null] = js.undefined
   
-  var gamma: js.UndefOr[Double | Null] = js.native
+  var gamma: js.UndefOr[Double | Null] = js.undefined
 }
 object DeviceMotionEventRotationRateInit {
   

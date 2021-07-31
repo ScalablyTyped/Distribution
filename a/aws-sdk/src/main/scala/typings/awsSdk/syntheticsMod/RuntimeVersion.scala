@@ -2,31 +2,29 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuntimeVersion extends StObject {
   
   /**
     * If this runtime version is deprecated, this value is the date of deprecation.
     */
-  var DeprecationDate: js.UndefOr[Timestamp] = js.native
+  var DeprecationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the runtime version, created by Amazon.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The date that the runtime version was released.
     */
-  var ReleaseDate: js.UndefOr[Timestamp] = js.native
+  var ReleaseDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the runtime version. For a list of valid runtime versions, see  Canary Runtime Versions.
     */
-  var VersionName: js.UndefOr[String] = js.native
+  var VersionName: js.UndefOr[String] = js.undefined
 }
 object RuntimeVersion {
   

@@ -2,27 +2,25 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration that controls how the data will change.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DeidentifyConfig extends StObject {
   
   /**
     * Treat the dataset as free-form text and apply the same free text
     * transformation everywhere.
     */
-  var infoTypeTransformations: js.UndefOr[SchemaGooglePrivacyDlpV2InfoTypeTransformations] = js.native
+  var infoTypeTransformations: js.UndefOr[SchemaGooglePrivacyDlpV2InfoTypeTransformations] = js.undefined
   
   /**
     * Treat the dataset as structured. Transformations can be applied to
     * specific locations within structured datasets, such as transforming a
     * column within a table.
     */
-  var recordTransformations: js.UndefOr[SchemaGooglePrivacyDlpV2RecordTransformations] = js.native
+  var recordTransformations: js.UndefOr[SchemaGooglePrivacyDlpV2RecordTransformations] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DeidentifyConfig {
   

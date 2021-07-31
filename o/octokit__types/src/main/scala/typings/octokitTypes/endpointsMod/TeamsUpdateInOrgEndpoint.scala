@@ -7,29 +7,27 @@ import typings.octokitTypes.octokitTypesStrings.push
 import typings.octokitTypes.octokitTypesStrings.secret
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsUpdateInOrgEndpoint extends StObject {
   
   /**
     * The description of the team.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the team.
     */
-  var name: String = js.native
+  var name: String
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * The ID of a team to set as the parent team.
     */
-  var parent_team_id: js.UndefOr[Double] = js.native
+  var parent_team_id: js.UndefOr[Double] = js.undefined
   
   /**
     * **Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:
@@ -37,7 +35,7 @@ trait TeamsUpdateInOrgEndpoint extends StObject {
     * \* `push` - team members can pull and push, but not administer newly-added repositories.
     * \* `admin` - team members can pull, push and administer newly-added repositories.
     */
-  var permission: js.UndefOr[pull | push | admin] = js.native
+  var permission: js.UndefOr[pull | push | admin] = js.undefined
   
   /**
     * The level of privacy this team should have. Editing teams without specifying this parameter leaves `privacy` intact. When a team is nested, the `privacy` for parent teams cannot be `secret`. The options are:
@@ -47,9 +45,9 @@ trait TeamsUpdateInOrgEndpoint extends StObject {
     * **For a parent or child team:**
     * \* `closed` - visible to all members of this organization.
     */
-  var privacy: js.UndefOr[secret | closed] = js.native
+  var privacy: js.UndefOr[secret | closed] = js.undefined
   
-  var team_slug: String = js.native
+  var team_slug: String
 }
 object TeamsUpdateInOrgEndpoint {
   

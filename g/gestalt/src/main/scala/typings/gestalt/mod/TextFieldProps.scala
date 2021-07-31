@@ -18,41 +18,39 @@ import typings.gestalt.gestaltStrings.url
 import typings.gestalt.gestaltStrings.username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFieldProps extends StObject {
   
-  var autoComplete: js.UndefOr[`current-password` | on | off | username | `new-password`] = js.native
+  var autoComplete: js.UndefOr[`current-password` | on | off | username | `new-password`] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var helperText: js.UndefOr[String] = js.native
+  var helperText: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.undefined
   
-  def onChange(args: EventSyntheticEventValueString): Unit = js.native
+  def onChange(args: EventSyntheticEventValueString): Unit
   
-  var onFocus: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* args */ `1`, Unit]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ `2`, Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* args */ `2`, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[md | lg] = js.native
+  var size: js.UndefOr[md | lg] = js.undefined
   
-  var `type`: js.UndefOr[date | email | number | password | text | url] = js.native
+  var `type`: js.UndefOr[date | email | number | password | text | url] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TextFieldProps {
   

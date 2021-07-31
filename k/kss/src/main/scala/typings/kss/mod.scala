@@ -5,17 +5,18 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Promise[KssStyleguide] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[KssStyleguide]]
+  @scala.inline
+  def apply(options: KssOptions): js.Promise[KssStyleguide] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KssStyleguide]]
+  
   @JSImport("kss", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[KssStyleguide] = js.native
-  @JSImport("kss", JSImport.Namespace)
-  @js.native
-  def apply(options: KssOptions): js.Promise[KssStyleguide] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("kss", "KssModifier")
   @js.native
@@ -151,34 +152,29 @@ object mod {
   }
   
   /** Parse a string of documented CSS, or an array of file anys with their content. */
-  @JSImport("kss", "parse")
-  @js.native
-  def parse(input: String, options: Options): KssStyleguide = js.native
-  @JSImport("kss", "parse")
-  @js.native
-  def parse(input: js.Array[File], options: Options): KssStyleguide = js.native
+  @scala.inline
+  def parse(input: String, options: Options): KssStyleguide = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KssStyleguide]
+  @scala.inline
+  def parse(input: js.Array[File], options: Options): KssStyleguide = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KssStyleguide]
   
   /** Traverse a directory, parse its contents, and create a `KssStyleGuide`. */
-  @JSImport("kss", "traverse")
-  @js.native
-  def traverse(directory: String, options: Options): js.Promise[KssStyleguide] = js.native
-  @JSImport("kss", "traverse")
-  @js.native
-  def traverse(directory: js.Array[String], options: Options): js.Promise[KssStyleguide] = js.native
+  @scala.inline
+  def traverse(directory: String, options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
+  @scala.inline
+  def traverse(directory: js.Array[String], options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
   
   type CallbackFn = js.Function2[/* error */ Error | Null, /* styleguide */ KssStyleguide, Unit]
   
-  @js.native
   trait File extends StObject {
     
     /** bath to source directory */
-    var base: String = js.native
+    var base: String
     
     /** file contents */
-    var contents: String = js.native
+    var contents: String
     
     /** full path to file */
-    var path: String = js.native
+    var path: String
   }
   object File {
     
@@ -202,23 +198,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait KssOptions extends Options {
+  trait KssOptions
+    extends StObject
+       with Options {
     
-    var builder: js.UndefOr[js.Any] = js.native
+    var builder: js.UndefOr[js.Any] = js.undefined
     
     @JSName("clone")
-    var clone_FKssOptions: js.UndefOr[Boolean] = js.native
+    var clone_FKssOptions: js.UndefOr[Boolean] = js.undefined
     
-    var custom: js.UndefOr[js.Any] = js.native
+    var custom: js.UndefOr[js.Any] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var logErrorFunction: js.UndefOr[js.Function1[/* repeated */ String, Unit]] = js.native
+    var logErrorFunction: js.UndefOr[js.Function1[/* repeated */ String, Unit]] = js.undefined
     
-    var source: js.Array[String] = js.native
+    var source: js.Array[String]
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object KssOptions {
     
@@ -275,7 +272,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -284,20 +280,20 @@ object mod {
       * description. Enabled by default.
       * @default true.
       */
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to automatically format Markdown using [marked](https://github.com/chjj/marked).
       * Enabled by default.
       * @default true
       */
-    var markdown: js.UndefOr[Boolean] = js.native
+    var markdown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use a regex or string (e.g. `*.less|*.css`) to only parse files matching this value.
       * @default *.css|*.less|*.sass|*.scss|*.styl|*.stylus
       */
-    var mask: js.UndefOr[String | RegExp] = js.native
+    var mask: js.UndefOr[String | RegExp] = js.undefined
   }
   object Options {
     
@@ -330,17 +326,16 @@ object mod {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
     /** The name of the file. */
-    var filename: String = js.native
+    var filename: String
     
     /** The line number where the KSS comment is found. */
-    var line: Double = js.native
+    var line: Double
     
     /** The full path of the file. */
-    var path: String = js.native
+    var path: String
   }
   object Source {
     

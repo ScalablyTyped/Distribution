@@ -2,16 +2,16 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RaphaelCartesianCurvePoint extends RaphaelCartesianPoint {
+trait RaphaelCartesianCurvePoint
+  extends StObject
+     with RaphaelCartesianPoint {
   
   /**
     * Angle of the curve derivative of the curve at the point.
     */
-  var alpha: Double = js.native
+  var alpha: Double
 }
 object RaphaelCartesianCurvePoint {
   

@@ -3,30 +3,28 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 import typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.SynthesizeConstants.Accept
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `synthesize` operation. */
-@js.native
 trait SynthesizeParams extends StObject {
   
   /** The requested format (MIME type) of the audio. You can use the `Accept` header or the `accept` parameter to specify the audio format. For more information about specifying an audio format, see **Audio formats (accept types)** in the method description. Default: `audio/ogg;codecs=opus`. */
-  var accept: js.UndefOr[Accept | String] = js.native
+  var accept: js.UndefOr[Accept | String] = js.undefined
   
   /** The customization ID (GUID) of a custom voice model to use for the synthesis. If a custom voice model is specified, it is guaranteed to work only if it matches the language of the indicated voice. You must make the request with service credentials created for the instance of the service that owns the custom model. Omit the parameter to use the specified voice with no customization. */
-  var customization_id: js.UndefOr[String] = js.native
+  var customization_id: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The text to synthesize. */
-  var text: String = js.native
+  var text: String
   
   /** The voice to use for synthesis. */
   var voice: js.UndefOr[
     typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.SynthesizeConstants.Voice | String
-  ] = js.native
+  ] = js.undefined
 }
 object SynthesizeParams {
   

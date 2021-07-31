@@ -16,60 +16,43 @@ import typings.vegaLite.vegaLiteStrings.tick
 import typings.vegaLite.vegaLiteStrings.trail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arc extends StObject {
   
-  val arc: typings.vegaLite.vegaLiteStrings.arc = js.native
+  val arc: typings.vegaLite.vegaLiteStrings.arc
   
-  val area: typings.vegaLite.vegaLiteStrings.area = js.native
+  val area: typings.vegaLite.vegaLiteStrings.area
   
-  val bar: typings.vegaLite.vegaLiteStrings.bar = js.native
+  val bar: typings.vegaLite.vegaLiteStrings.bar
   
-  val circle: typings.vegaLite.vegaLiteStrings.circle = js.native
+  val circle: typings.vegaLite.vegaLiteStrings.circle
   
-  val geoshape: typings.vegaLite.vegaLiteStrings.geoshape = js.native
+  val geoshape: typings.vegaLite.vegaLiteStrings.geoshape
   
-  val image: typings.vegaLite.vegaLiteStrings.image = js.native
+  val image: typings.vegaLite.vegaLiteStrings.image
   
-  val line: typings.vegaLite.vegaLiteStrings.line = js.native
+  val line: typings.vegaLite.vegaLiteStrings.line
   
-  val point: typings.vegaLite.vegaLiteStrings.point = js.native
+  val point: typings.vegaLite.vegaLiteStrings.point
   
-  val rect: typings.vegaLite.vegaLiteStrings.rect = js.native
+  val rect: typings.vegaLite.vegaLiteStrings.rect
   
-  val rule: typings.vegaLite.vegaLiteStrings.rule = js.native
+  val rule: typings.vegaLite.vegaLiteStrings.rule
   
-  val square: typings.vegaLite.vegaLiteStrings.square = js.native
+  val square: typings.vegaLite.vegaLiteStrings.square
   
-  val text: typings.vegaLite.vegaLiteStrings.text = js.native
+  val text: typings.vegaLite.vegaLiteStrings.text
   
-  val tick: typings.vegaLite.vegaLiteStrings.tick = js.native
+  val tick: typings.vegaLite.vegaLiteStrings.tick
   
-  val trail: typings.vegaLite.vegaLiteStrings.trail = js.native
+  val trail: typings.vegaLite.vegaLiteStrings.trail
 }
 object Arc {
   
   @scala.inline
-  def apply(
-    arc: arc,
-    area: area,
-    bar: bar,
-    circle: circle,
-    geoshape: geoshape,
-    image: image,
-    line: line,
-    point: point,
-    rect: rect,
-    rule: rule,
-    square: square,
-    text: text,
-    tick: tick,
-    trail: trail
-  ): Arc = {
-    val __obj = js.Dynamic.literal(arc = arc.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], bar = bar.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], geoshape = geoshape.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], square = square.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], trail = trail.asInstanceOf[js.Any])
+  def apply(): Arc = {
+    val __obj = js.Dynamic.literal(arc = "arc", area = "area", bar = "bar", circle = "circle", geoshape = "geoshape", image = "image", line = "line", point = "point", rect = "rect", rule = "rule", square = "square", text = "text", tick = "tick", trail = "trail")
     __obj.asInstanceOf[Arc]
   }
   

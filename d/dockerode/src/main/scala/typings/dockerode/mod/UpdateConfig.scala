@@ -2,23 +2,21 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfig extends StObject {
   
-  var Delay: js.UndefOr[Double] = js.native
+  var Delay: js.UndefOr[Double] = js.undefined
   
-  var FailureAction: js.UndefOr[String] = js.native
+  var FailureAction: js.UndefOr[String] = js.undefined
   
-  var MaxFailureRatio: js.UndefOr[Double] = js.native
+  var MaxFailureRatio: js.UndefOr[Double] = js.undefined
   
-  var Monitor: js.UndefOr[Double] = js.native
+  var Monitor: js.UndefOr[Double] = js.undefined
   
-  var Order: String = js.native
+  var Order: String
   
-  var Parallelism: Double = js.native
+  var Parallelism: Double
 }
 object UpdateConfig {
   

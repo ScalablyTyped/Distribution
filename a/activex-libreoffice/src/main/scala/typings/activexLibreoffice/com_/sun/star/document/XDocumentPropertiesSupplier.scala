@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see DocumentProperties
   * @since OOo 3.0
   */
-@js.native
 trait XDocumentPropertiesSupplier extends StObject {
   
   /**
     * provides the document properties object.
     * @returns an object of type {@link XDocumentProperties}
     */
-  val DocumentProperties: XDocumentProperties = js.native
+  val DocumentProperties: XDocumentProperties
   
   /**
     * provides the document properties object.
     * @returns an object of type {@link XDocumentProperties}
     */
-  def getDocumentProperties(): XDocumentProperties = js.native
+  def getDocumentProperties(): XDocumentProperties
 }
 object XDocumentPropertiesSupplier {
   

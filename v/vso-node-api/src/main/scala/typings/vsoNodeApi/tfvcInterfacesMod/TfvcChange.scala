@@ -2,21 +2,21 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcChange extends Change[TfvcItem] {
+trait TfvcChange
+  extends StObject
+     with Change[TfvcItem] {
   
   /**
     * List of merge sources in case of rename or branch creation.
     */
-  var mergeSources: js.Array[TfvcMergeSource] = js.native
+  var mergeSources: js.Array[TfvcMergeSource]
   
   /**
     * Version at which a (shelved) change was pended against
     */
-  var pendingVersion: Double = js.native
+  var pendingVersion: Double
 }
 object TfvcChange {
   

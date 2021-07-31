@@ -3,24 +3,24 @@ package typings.ddTrace.mod.plugins
 import typings.ddTrace.anon.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
-trait HttpServer extends Http_ {
+trait HttpServer
+  extends StObject
+     with Http_ {
   
   /**
     * Hooks to run before spans are finished.
     */
-  var hooks: js.UndefOr[Request] = js.native
+  var hooks: js.UndefOr[Request] = js.undefined
   
   /**
     * Whether to enable instrumention of <plugin>.middleware spans
     *
     * @default true
     */
-  var middleware: js.UndefOr[Boolean] = js.native
+  var middleware: js.UndefOr[Boolean] = js.undefined
 }
 object HttpServer {
   

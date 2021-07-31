@@ -2,36 +2,34 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathDelim extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var BegChar: Double = js.native
+  var BegChar: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val E: OMathArgs = js.native
+  val E: OMathArgs
   
-  var EndChar: Double = js.native
+  var EndChar: Double
   
-  var Grow: Boolean = js.native
+  var Grow: Boolean
   
-  var NoLeftChar: Boolean = js.native
+  var NoLeftChar: Boolean
   
-  var NoRightChar: Boolean = js.native
+  var NoRightChar: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var SepChar: Double = js.native
+  var SepChar: Double
   
-  var Shape: WdOMathShapeType = js.native
+  var Shape: WdOMathShapeType
   
   @JSName("Word.OMathDelim_typekey")
-  var WordDotOMathDelim_typekey: OMathDelim = js.native
+  var WordDotOMathDelim_typekey: OMathDelim
 }
 object OMathDelim {
   

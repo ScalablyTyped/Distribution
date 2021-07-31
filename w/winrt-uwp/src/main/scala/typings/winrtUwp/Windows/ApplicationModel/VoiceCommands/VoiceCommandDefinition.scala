@@ -4,18 +4,16 @@ import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables operations on a specific installed command set. */
-@js.native
 trait VoiceCommandDefinition extends StObject {
   
   /** Gets the language ( xml:lang ) value of the CommandSet element in the Voice Command Definition (VCD) file. */
-  var language: String = js.native
+  var language: String
   
   /** Gets the Name attribute value of the CommandSet element in the Voice Command Definition (VCD) file. */
-  var name: String = js.native
+  var name: String
   
   /**
     * Populates a PhraseList element with an array of Item elements.
@@ -23,7 +21,7 @@ trait VoiceCommandDefinition extends StObject {
     * @param phraseList A string array of values that will be added to the PhraseList element as Item elements.
     * @return A string array of values that will be added to the PhraseList element as Item elements.
     */
-  def setPhraseListAsync(phraseListName: String, phraseList: IIterable[String]): IPromiseWithIAsyncAction = js.native
+  def setPhraseListAsync(phraseListName: String, phraseList: IIterable[String]): IPromiseWithIAsyncAction
 }
 object VoiceCommandDefinition {
   

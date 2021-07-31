@@ -2,17 +2,15 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnDestroy extends StObject {
   
   /**
     * A callback method that performs custom clean-up, invoked immediately
     * before a directive, pipe, or service instance is destroyed.
     */
-  def ngOnDestroy(): Unit = js.native
+  def ngOnDestroy(): Unit
 }
 object OnDestroy {
   

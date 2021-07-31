@@ -3,24 +3,22 @@ package typings.uiGrid.mod
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exporter {
   
-  @js.native
   trait IColumnDef extends StObject {
     
     /**
       * the alignment you'd like for this specific column when exported into a pdf.
       * Can be 'left', 'right', 'center' or any other valid pdfMake alignment option.
       */
-    var exporterPdfAlign: js.UndefOr[String] = js.native
+    var exporterPdfAlign: js.UndefOr[String] = js.undefined
     
     /**
       * Suppresses export for this column. Used by selection and expandable.
       */
-    var exporterSuppressExport: js.UndefOr[Boolean] = js.native
+    var exporterSuppressExport: js.UndefOr[Boolean] = js.undefined
   }
   object IColumnDef {
     
@@ -47,7 +45,6 @@ object exporter {
     }
   }
   
-  @js.native
   trait IGridExporterApi extends StObject {
     
     /**
@@ -57,7 +54,7 @@ object exporter {
       * @param {string} colTypes which columns to export, valid values are uiGridExporterConstants.ALL,
       * uiGridExporterConstants.VISIBLE
       */
-    def csvExport(rowTypes: String, colTypes: String): Unit = js.native
+    def csvExport(rowTypes: String, colTypes: String): Unit
     
     /**
       * Exports rows from the grid in pdf format, the data exported is selected based on the provided options
@@ -68,7 +65,7 @@ object exporter {
       * @param {string} colTypes which columns to export, valid values are uiGridExporterConstants.ALL,
       * uiGridExporterConstants.VISIBLE
       */
-    def pdfExport(rowTypes: String, colTypes: String): Unit = js.native
+    def pdfExport(rowTypes: String, colTypes: String): Unit
   }
   object IGridExporterApi {
     
@@ -89,7 +86,6 @@ object exporter {
     }
   }
   
-  @js.native
   trait IGridOptions[TEntity] extends StObject {
     
     /**
@@ -98,7 +94,7 @@ object exporter {
       * @default null
       * @returns {ng.IPromise<Array<TEntity>>} A promise to load all data from server
       */
-    var exporterAllDataFn: js.UndefOr[js.Function0[IPromise[js.Array[TEntity]]]] = js.native
+    var exporterAllDataFn: js.UndefOr[js.Function0[IPromise[js.Array[TEntity]]]] = js.undefined
     
     /**
       * @deprecated
@@ -107,21 +103,21 @@ object exporter {
       * use exporterAllDataFn instead.
       * @returns {ng.IPromise<Array<TEntity>>} A promise to load all data from server
       */
-    var exporterAllDataPromise: js.UndefOr[js.Function0[IPromise[js.Array[TEntity]]]] = js.native
+    var exporterAllDataPromise: js.UndefOr[js.Function0[IPromise[js.Array[TEntity]]]] = js.undefined
     
     /**
       * The character to use as column separator link
       * Defaults to ','
       * @default ','
       */
-    var exporterCsvColumnSeparator: js.UndefOr[String] = js.native
+    var exporterCsvColumnSeparator: js.UndefOr[String] = js.undefined
     
     /**
       * The default filename to use when saving the downloaded csv. This will only work in some browsers.
       * Defaults to 'download.csv'
       * @default 'download.csv'
       */
-    var exporterCsvFilename: js.UndefOr[String] = js.native
+    var exporterCsvFilename: js.UndefOr[String] = js.undefined
     
     /**
       * A function to call for each field before exporting it.
@@ -142,9 +138,9 @@ object exporter {
           /* row */ IGridRowOf[TEntity], 
           /* col */ IGridColumnOf[TEntity], 
           /* value */ js.Any, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function to apply to the header displayNames before exporting. Useful for internationalisation,
@@ -156,46 +152,46 @@ object exporter {
       * @param {string} displayName
       * @returns {string} The filtered header
       */
-    var exporterHeaderFilter: js.UndefOr[js.Function1[/* displayName */ String, String]] = js.native
+    var exporterHeaderFilter: js.UndefOr[js.Function1[/* displayName */ String, String]] = js.undefined
     
     /**
       * Defaults to false, which leads to displayName being passed into the headerFilter.
       * If set to true, then will pass name instead.
       * @default false
       */
-    var exporterHeaderFilterUseName: js.UndefOr[Boolean] = js.native
+    var exporterHeaderFilterUseName: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add csv export menu items to the ui-grid grid menu, if it's present. Defaults to true.
       * @default true
       */
-    var exporterMenuCsv: js.UndefOr[Boolean] = js.native
+    var exporterMenuCsv: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add excel export menu items to the ui-grid grid menu, if it's present. Defaults to true.
       * @default true
       */
-    var exporterMenuExcel: js.UndefOr[Boolean] = js.native
+    var exporterMenuExcel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An option to determine the starting point for the menu items created by the exporter
       * @default 200
       */
-    var exporterMenuItemOrder: js.UndefOr[Double] = js.native
+    var exporterMenuItemOrder: js.UndefOr[Double] = js.undefined
     
     /**
       * The text to show on the exporter menu button link
       * Defaults to 'Export'
       * @default 'Export'
       */
-    var exporterMenuLabel: js.UndefOr[String] = js.native
+    var exporterMenuLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Add pdf export menu items to the ui-grid grid menu, if it's present.
       * Defaults to true.
       * @default true
       */
-    var exporterMenuPdf: js.UndefOr[Boolean] = js.native
+    var exporterMenuPdf: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Some versions of excel don't like the utf-16 BOM on the front,
@@ -205,7 +201,7 @@ object exporter {
       * Defaults to false
       * @default false
       */
-    var exporterOlderExcelCompatibility: js.UndefOr[Boolean] = js.native
+    var exporterOlderExcelCompatibility: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom callback routine that changes the pdf document,
@@ -215,13 +211,13 @@ object exporter {
       * In this example we add a style to the style array, so that we can use it in our footer definition.
       * @param {any} docDefinition Document definition in pdfMake format
       */
-    var exporterPdfCustomFormatter: js.UndefOr[js.Function1[/* docDefinition */ js.Any, _]] = js.native
+    var exporterPdfCustomFormatter: js.UndefOr[js.Function1[/* docDefinition */ js.Any, js.Any]] = js.undefined
     
     /**
       * The default style in pdfMake format
       * @todo replace with pdfmake format
       */
-    var exporterPdfDefaultStyle: js.UndefOr[js.Any] = js.native
+    var exporterPdfDefaultStyle: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The default filename to use when saving the downloaded pdf,
@@ -229,7 +225,7 @@ object exporter {
       * Defaults to 'download.pdf'
       * @default 'download.pdf'
       */
-    var exporterPdfFilename: js.UndefOr[String] = js.native
+    var exporterPdfFilename: js.UndefOr[String] = js.undefined
     
     /**
       * The footer section for pdf exports. Can be simple text, a more complex object in pdfMake format, or it
@@ -238,7 +234,7 @@ object exporter {
       */
     var exporterPdfFooter: js.UndefOr[
         String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The header section for pdf exports. Can be simple text, a more complex object in pdfMake format, or it
@@ -247,7 +243,7 @@ object exporter {
       */
     var exporterPdfHeader: js.UndefOr[
         String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maxium grid width - the current grid width will be scaled to match this,
@@ -255,27 +251,27 @@ object exporter {
       * Defaults to 720 (for A4 landscape), use 670 for LETTER
       * @default 720
       */
-    var exporterPdfMaxGridWidth: js.UndefOr[Double] = js.native
+    var exporterPdfMaxGridWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The orientation, should be a valid pdfMake value, 'landscape' or 'portrait'
       * Defaults to landscape
       * @default 'landscape'
       */
-    var exporterPdfOrientation: js.UndefOr[String] = js.native
+    var exporterPdfOrientation: js.UndefOr[String] = js.undefined
     
     /**
       * The orientation, should be a valid pdfMake paper size, usually 'A4' or 'LETTER' pdfMake page sizes
       * Defaults to A4
       * @default 'A4'
       */
-    var exporterPdfPageSize: js.UndefOr[String] = js.native
+    var exporterPdfPageSize: js.UndefOr[String] = js.undefined
     
     /**
       * exporterPdfTableHeaderStyle
       * @todo replace any with pdfmake format
       */
-    var exporterPdfTableHeaderStyle: js.UndefOr[js.Any] = js.native
+    var exporterPdfTableHeaderStyle: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A tableLayout in pdfMake format, controls gridlines and the like. We use the default layout usually.
@@ -283,7 +279,7 @@ object exporter {
       * @default null
       * @todo replace any with pdfmake format
       */
-    var exporterPdfTableLayout: js.UndefOr[js.Any] = js.native
+    var exporterPdfTableLayout: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The tableStyle in pdfMake format
@@ -291,7 +287,7 @@ object exporter {
       * @default { margin: [0, 5, 0, 15] }
       * @todo replace any with pdfmake format
       */
-    var exporterPdfTableStyle: js.UndefOr[js.Any] = js.native
+    var exporterPdfTableStyle: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Columns that should not be exported.
@@ -304,14 +300,14 @@ object exporter {
       * Defaults to: []
       * @default []
       */
-    var exporterSuppressColumns: js.UndefOr[js.Array[String]] = js.native
+    var exporterSuppressColumns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Don't show the export menu button, implying the user will roll their own UI for calling the exporter
       * Defaults to false
       * @default false
       */
-    var exporterSuppressMenu: js.UndefOr[Boolean] = js.native
+    var exporterSuppressMenu: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -322,7 +318,7 @@ object exporter {
     }
     
     @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.exporter.IGridOptions[_], TEntity] (val x: Self with typings.uiGrid.mod.exporter.IGridOptions[TEntity]) extends AnyVal {
+    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.exporter.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.exporter.IGridOptions[TEntity]) extends AnyVal {
       
       @scala.inline
       def setExporterAllDataFn(value: () => IPromise[js.Array[TEntity]]): Self = StObject.set(x, "exporterAllDataFn", js.Any.fromFunction0(value))
@@ -350,7 +346,7 @@ object exporter {
       
       @scala.inline
       def setExporterFieldCallback(
-        value: (/* grid */ IGridInstanceOf[TEntity], /* row */ IGridRowOf[TEntity], /* col */ IGridColumnOf[TEntity], /* value */ js.Any) => _
+        value: (/* grid */ IGridInstanceOf[TEntity], /* row */ IGridRowOf[TEntity], /* col */ IGridColumnOf[TEntity], /* value */ js.Any) => js.Any
       ): Self = StObject.set(x, "exporterFieldCallback", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -405,7 +401,7 @@ object exporter {
       def setExporterOlderExcelCompatibilityUndefined: Self = StObject.set(x, "exporterOlderExcelCompatibility", js.undefined)
       
       @scala.inline
-      def setExporterPdfCustomFormatter(value: /* docDefinition */ js.Any => _): Self = StObject.set(x, "exporterPdfCustomFormatter", js.Any.fromFunction1(value))
+      def setExporterPdfCustomFormatter(value: /* docDefinition */ js.Any => js.Any): Self = StObject.set(x, "exporterPdfCustomFormatter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setExporterPdfCustomFormatterUndefined: Self = StObject.set(x, "exporterPdfCustomFormatter", js.undefined)
@@ -493,7 +489,6 @@ object exporter {
     }
   }
   
-  @js.native
   trait IGridRow extends StObject {
     
     /**
@@ -501,7 +496,7 @@ object exporter {
       * Defaults to true
       * @default true
       */
-    var exporterEnableExporting: js.UndefOr[Boolean] = js.native
+    var exporterEnableExporting: js.UndefOr[Boolean] = js.undefined
   }
   object IGridRow {
     
@@ -522,28 +517,27 @@ object exporter {
     }
   }
   
-  @js.native
   trait IUiGridExporterConstants extends StObject {
     
     /** export all data, including data not visible.  Can be set for either rowTypes or colTypes */
-    var ALL: String = js.native
+    var ALL: String
     
-    var BUTTON_LABEL: String = js.native
+    var BUTTON_LABEL: String
     
-    var CSV_CONTENT: String = js.native
+    var CSV_CONTENT: String
     
-    var FILE_NAME: String = js.native
+    var FILE_NAME: String
     
     /**
       * Export all data, including data not visible.
       * Can be set only for rowTypes, selection of only some columns is not supported
       */
-    var SELECTED: String = js.native
+    var SELECTED: String
     
     /** export only visible data, including data not visible.  Can be set for either rowTypes or colTypes */
-    var VISIBLE: String = js.native
+    var VISIBLE: String
     
-    var featureName: String = js.native
+    var featureName: String
   }
   object IUiGridExporterConstants {
     

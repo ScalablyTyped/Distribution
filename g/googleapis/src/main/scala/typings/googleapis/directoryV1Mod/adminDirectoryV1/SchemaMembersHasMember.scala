@@ -2,20 +2,18 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Has Member response in Directory API.
   */
-@js.native
 trait SchemaMembersHasMember extends StObject {
   
   /**
     * Identifies whether the given user is a member of the group. Membership
     * can be direct or nested.
     */
-  var isMember: js.UndefOr[Boolean] = js.native
+  var isMember: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaMembersHasMember {
   

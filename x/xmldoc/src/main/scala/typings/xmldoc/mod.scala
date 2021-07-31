@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.xmldoc.xmldocStrings.element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("xmldoc", "XmlCDataNode")
   @js.native
-  class XmlCDataNode protected () extends XmlNode {
+  class XmlCDataNode protected ()
+    extends StObject
+       with XmlNode {
     def this(cdata: String) = this()
     
     var cdata: String = js.native
@@ -26,7 +27,9 @@ object mod {
   
   @JSImport("xmldoc", "XmlCommentNode")
   @js.native
-  class XmlCommentNode protected () extends XmlNode {
+  class XmlCommentNode protected ()
+    extends StObject
+       with XmlNode {
     def this(comment: String) = this()
     
     var comment: String = js.native
@@ -49,7 +52,9 @@ object mod {
   
   @JSImport("xmldoc", "XmlElement")
   @js.native
-  class XmlElement protected () extends XmlNode {
+  class XmlElement protected ()
+    extends StObject
+       with XmlNode {
     def this(tag: XmlTag) = this()
     
     var attr: XmlAttributes = js.native
@@ -107,7 +112,9 @@ object mod {
   
   @JSImport("xmldoc", "XmlTextNode")
   @js.native
-  class XmlTextNode protected () extends XmlNode {
+  class XmlTextNode protected ()
+    extends StObject
+       with XmlNode {
     def this(text: String) = this()
     
     var text: String = js.native
@@ -130,16 +137,15 @@ object mod {
   */
   trait XmlNode extends StObject
   
-  @js.native
   trait XmlOptions extends StObject {
     
-    var compressed: js.UndefOr[Boolean] = js.native
+    var compressed: js.UndefOr[Boolean] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var preserveWhitespace: js.UndefOr[Boolean] = js.native
+    var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var trimmed: js.UndefOr[Boolean] = js.native
+    var trimmed: js.UndefOr[Boolean] = js.undefined
   }
   object XmlOptions {
     
@@ -178,12 +184,11 @@ object mod {
     }
   }
   
-  @js.native
   trait XmlTag extends StObject {
     
-    var attributes: XmlAttributes = js.native
+    var attributes: XmlAttributes
     
-    var name: String = js.native
+    var name: String
   }
   object XmlTag {
     

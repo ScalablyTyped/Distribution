@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindParametersProperties extends StObject {
   
   /**
@@ -13,63 +11,63 @@ trait FindParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#contains)
     */
-  var contains: js.UndefOr[Boolean] = js.native
+  var contains: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify the geodatabase version to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#gdbVersion)
     */
-  var gdbVersion: js.UndefOr[String] = js.native
+  var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the number of decimal places for the geometries returned by the task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#geometryPrecision)
     */
-  var geometryPrecision: js.UndefOr[Double] = js.native
+  var geometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * The layers to perform the find operation on.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#layerIds)
     */
-  var layerIds: js.UndefOr[js.Array[Double]] = js.native
+  var layerIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The maximum allowable offset used for generalizing geometries returned by the find operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#maxAllowableOffset)
     */
-  var maxAllowableOffset: js.UndefOr[Double] = js.native
+  var maxAllowableOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The spatial reference of the output geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * If `true`, the output will include the geometry associated with each result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#returnGeometry)
     */
-  var returnGeometry: js.UndefOr[Boolean] = js.native
+  var returnGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The names of the fields of a layer to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#searchFields)
     */
-  var searchFields: js.UndefOr[js.Array[String]] = js.native
+  var searchFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The text that is searched across the layers and the fields as specified in the `layers` and [searchFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#searchFields) properties.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#searchText)
     */
-  var searchText: js.UndefOr[String] = js.native
+  var searchText: js.UndefOr[String] = js.undefined
 }
 object FindParametersProperties {
   

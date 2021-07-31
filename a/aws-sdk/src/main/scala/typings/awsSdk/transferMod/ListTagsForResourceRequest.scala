@@ -2,26 +2,24 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * Requests the tags associated with a particular Amazon Resource Name (ARN). An ARN is an identifier for a specific AWS resource, such as a server, user, or role.
     */
-  var Arn: typings.awsSdk.transferMod.Arn = js.native
+  var Arn: typings.awsSdk.transferMod.Arn
   
   /**
     * Specifies the number of tags to return as a response to the ListTagsForResource request.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.transferMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.transferMod.MaxResults] = js.undefined
   
   /**
     * When you request additional results from the ListTagsForResource operation, a NextToken parameter is returned in the input. You can then pass in a subsequent command to the NextToken parameter to continue listing additional tags.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transferMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transferMod.NextToken] = js.undefined
 }
 object ListTagsForResourceRequest {
   

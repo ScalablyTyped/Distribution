@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartFlowResponse extends StObject {
   
   /**
     *  Returns the internal execution ID of an on-demand flow when the flow is started. For scheduled or event-triggered flows, this value is null. 
     */
-  var executionId: js.UndefOr[ExecutionId] = js.native
+  var executionId: js.UndefOr[ExecutionId] = js.undefined
   
   /**
     *  The flow's Amazon Resource Name (ARN). 
     */
-  var flowArn: js.UndefOr[FlowArn] = js.native
+  var flowArn: js.UndefOr[FlowArn] = js.undefined
   
   /**
     *  Indicates the current status of the flow. 
     */
-  var flowStatus: js.UndefOr[FlowStatus] = js.native
+  var flowStatus: js.UndefOr[FlowStatus] = js.undefined
 }
 object StartFlowResponse {
   

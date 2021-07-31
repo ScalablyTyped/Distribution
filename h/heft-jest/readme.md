@@ -10,9 +10,9 @@ Integrates Heft and Jest
 | ------------------ | :-------------: |
 | Full name          | heft-jest |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 0 |
+| # downloads        | 405 |
 | # stars            | 0 |
 
 ## Links

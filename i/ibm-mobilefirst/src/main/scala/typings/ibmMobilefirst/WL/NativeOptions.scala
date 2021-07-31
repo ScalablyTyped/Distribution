@@ -2,23 +2,21 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeOptions extends StObject {
   
-  var autoSendLogs: js.UndefOr[Boolean] = js.native
+  var autoSendLogs: js.UndefOr[Boolean] = js.undefined
   
-  var autoUpdateConfig: js.UndefOr[Boolean] = js.native
+  var autoUpdateConfig: js.UndefOr[Boolean] = js.undefined
   
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
-  var filters: js.UndefOr[Filter] = js.native
+  var filters: js.UndefOr[Filter] = js.undefined
   
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
-  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.undefined
 }
 object NativeOptions {
   

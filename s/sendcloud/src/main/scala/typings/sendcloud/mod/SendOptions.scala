@@ -2,45 +2,43 @@ package typings.sendcloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendOptions extends StObject {
   
-  var api_key: js.UndefOr[String] = js.native
+  var api_key: js.UndefOr[String] = js.undefined
   
-  var api_user: js.UndefOr[String] = js.native
+  var api_user: js.UndefOr[String] = js.undefined
   
-  var bcc: js.UndefOr[String] = js.native
+  var bcc: js.UndefOr[String] = js.undefined
   
-  var cc: js.UndefOr[String] = js.native
+  var cc: js.UndefOr[String] = js.undefined
   
-  var files: js.UndefOr[String] = js.native
+  var files: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var fromname: js.UndefOr[String] = js.native
+  var fromname: js.UndefOr[String] = js.undefined
   
-  var gzip_compress: js.UndefOr[String] = js.native
+  var gzip_compress: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[Double] = js.native
+  var label: js.UndefOr[Double] = js.undefined
   
-  var replyto: js.UndefOr[String] = js.native
+  var replyto: js.UndefOr[String] = js.undefined
   
-  var resp_email_id: js.UndefOr[String] = js.native
+  var resp_email_id: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
-  var use_maillist: js.UndefOr[String] = js.native
+  var use_maillist: js.UndefOr[String] = js.undefined
   
-  var x_smtpapi: js.UndefOr[String] = js.native
+  var x_smtpapi: js.UndefOr[String] = js.undefined
 }
 object SendOptions {
   

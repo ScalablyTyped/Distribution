@@ -2,23 +2,21 @@ package typings.nodeZendesk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginablePayload extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var next_page: Double | Null = js.native
+  var next_page: Double | Null
   
-  var previous_page: Double | Null = js.native
+  var previous_page: Double | Null
 }
 object PaginablePayload {
   
   @scala.inline
   def apply(count: Double): PaginablePayload = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], next_page = null, previous_page = null)
     __obj.asInstanceOf[PaginablePayload]
   }
   

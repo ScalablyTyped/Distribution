@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenValidityUnitsType extends StObject {
   
   /**
     *  A time unit in “seconds”, “minutes”, “hours” or “days” for the value in AccessTokenValidity, defaults to hours.
     */
-  var AccessToken: js.UndefOr[TimeUnitsType] = js.native
+  var AccessToken: js.UndefOr[TimeUnitsType] = js.undefined
   
   /**
     * A time unit in “seconds”, “minutes”, “hours” or “days” for the value in IdTokenValidity, defaults to hours.
     */
-  var IdToken: js.UndefOr[TimeUnitsType] = js.native
+  var IdToken: js.UndefOr[TimeUnitsType] = js.undefined
   
   /**
     * A time unit in “seconds”, “minutes”, “hours” or “days” for the value in RefreshTokenValidity, defaults to days.
     */
-  var RefreshToken: js.UndefOr[TimeUnitsType] = js.native
+  var RefreshToken: js.UndefOr[TimeUnitsType] = js.undefined
 }
 object TokenValidityUnitsType {
   

@@ -4,33 +4,31 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents info about a smart card. */
-@js.native
 trait SmartCard extends StObject {
   
   /**
     * Establishes a connection to the smart card and returns a SmartCardConnection object representing the connection.
     * @return Asynchronous operation that, when complete, returns the SmartCardConnection object representing the connection.
     */
-  def connectAsync(): IPromiseWithIAsyncOperation[SmartCardConnection] = js.native
+  def connectAsync(): IPromiseWithIAsyncOperation[SmartCardConnection]
   
   /**
     * Returns the smart card's Answer to Reset (ATR), a standard series of bytes that contains info about the smart card's characteristics, behaviors, and state.
     * @return The smart card's ATR byte set.
     */
-  def getAnswerToResetAsync(): IPromiseWithIAsyncOperation[IBuffer] = js.native
+  def getAnswerToResetAsync(): IPromiseWithIAsyncOperation[IBuffer]
   
   /**
     * Returns the smart card's status.
     * @return One of the SmartCardStatus enumeration values, representing the smart card's status.
     */
-  def getStatusAsync(): IPromiseWithIAsyncOperation[SmartCardStatus] = js.native
+  def getStatusAsync(): IPromiseWithIAsyncOperation[SmartCardStatus]
   
   /** Gets info about the smart card reader into which the smart card is inserted. */
-  var reader: SmartCardReader = js.native
+  var reader: SmartCardReader
 }
 object SmartCard {
   

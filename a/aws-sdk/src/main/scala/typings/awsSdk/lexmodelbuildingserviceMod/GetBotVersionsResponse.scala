@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotVersionsResponse extends StObject {
   
   /**
     * An array of BotMetadata objects, one for each numbered version of the bot plus one for the $LATEST version.
     */
-  var bots: js.UndefOr[BotMetadataList] = js.native
+  var bots: js.UndefOr[BotMetadataList] = js.undefined
   
   /**
     * A pagination token for fetching the next page of bot versions. If the response to this call is truncated, Amazon Lex returns a pagination token in the response. To fetch the next page of versions, specify the pagination token in the next request. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetBotVersionsResponse {
   

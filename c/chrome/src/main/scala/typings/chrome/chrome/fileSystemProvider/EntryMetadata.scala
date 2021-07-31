@@ -3,29 +3,27 @@ package typings.chrome.chrome.fileSystemProvider
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntryMetadata extends StObject {
   
   /** True if it is a directory. */
-  var isDirectory: Boolean = js.native
+  var isDirectory: Boolean
   
   /** Optional. Mime type for the entry.  */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /** The last modified time of this entry. */
-  var modificationTime: Date = js.native
+  var modificationTime: Date
   
   /** Name of this entry (not full path name). Must not contain '/'. For root it must be empty. */
-  var name: String = js.native
+  var name: String
   
   /** File size in bytes. */
-  var size: Double = js.native
+  var size: Double
   
   /** Optional. Thumbnail image as a data URI in either PNG, JPEG or WEBP format, at most 32 KB in size. Optional, but can be provided only when explicitly requested by the onGetMetadataRequested event.  */
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
 }
 object EntryMetadata {
   

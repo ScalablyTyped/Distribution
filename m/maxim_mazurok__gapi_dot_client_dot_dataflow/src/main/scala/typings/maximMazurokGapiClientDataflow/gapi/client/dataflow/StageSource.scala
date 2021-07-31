@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StageSource extends StObject {
   
   /** Dataflow service generated name for this source. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** User name for the original user transform or collection with which this source is most closely associated. */
-  var originalTransformOrCollection: js.UndefOr[String] = js.native
+  var originalTransformOrCollection: js.UndefOr[String] = js.undefined
   
   /** Size of the source, if measurable. */
-  var sizeBytes: js.UndefOr[String] = js.native
+  var sizeBytes: js.UndefOr[String] = js.undefined
   
   /** Human-readable name for this source; may be user or system generated. */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object StageSource {
   

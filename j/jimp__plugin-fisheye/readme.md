@@ -10,9 +10,9 @@ Apply a fisheye effect to an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-fisheye |
 | Keywords           | - |
-| # releases         | 104 |
+| # releases         | 102 |
 | # dependents       | 1 |
-| # downloads        | 8866383 |
+| # downloads        | 21689884 |
 | # stars            | 0 |
 
 ## Links

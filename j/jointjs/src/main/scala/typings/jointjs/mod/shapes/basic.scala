@@ -8,7 +8,6 @@ import typings.jointjs.mod.dia.Element.GenericAttributes
 import typings.jointjs.mod.dia.Graph.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basic {
@@ -17,7 +16,7 @@ object basic {
   @js.native
   class Circle () extends Generic {
     def this(attributes: GenericAttributes[CircleSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[CircleSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -25,7 +24,7 @@ object basic {
   @js.native
   class Ellipse () extends Generic {
     def this(attributes: GenericAttributes[EllipseSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[EllipseSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -33,7 +32,7 @@ object basic {
   @js.native
   class Generic () extends Element {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -41,7 +40,7 @@ object basic {
   @js.native
   class Image () extends Generic {
     def this(attributes: GenericAttributes[ImageSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[ImageSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -49,7 +48,7 @@ object basic {
   @js.native
   class Path () extends Generic {
     def this(attributes: GenericAttributes[PathSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PathSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -57,7 +56,7 @@ object basic {
   @js.native
   class Polygon () extends Generic {
     def this(attributes: GenericAttributes[PolygonSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PolygonSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -65,7 +64,7 @@ object basic {
   @js.native
   class Polyline () extends Generic {
     def this(attributes: GenericAttributes[PolylineSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PolylineSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -73,7 +72,7 @@ object basic {
   @js.native
   class Rect () extends Generic {
     def this(attributes: GenericAttributes[RectSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[RectSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -81,7 +80,7 @@ object basic {
   @js.native
   class Rhombus () extends Generic {
     def this(attributes: GenericAttributes[PathSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[PathSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -89,7 +88,7 @@ object basic {
   @js.native
   class Text () extends Generic {
     def this(attributes: GenericAttributes[SVGTextSelector]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[SVGTextSelector], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -97,13 +96,13 @@ object basic {
   @js.native
   class TextBlock () extends Generic {
     def this(attributes: GenericAttributes[TextBlockSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[TextBlockSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
-  @js.native
   trait CircleSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGCircleSelector
   object CircleSelectors {
     
@@ -114,9 +113,9 @@ object basic {
     }
   }
   
-  @js.native
   trait EllipseSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGEllipseSelector
   object EllipseSelectors {
     
@@ -127,9 +126,9 @@ object basic {
     }
   }
   
-  @js.native
   trait ImageSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGImageSelector
   object ImageSelectors {
     
@@ -140,9 +139,9 @@ object basic {
     }
   }
   
-  @js.native
   trait PathSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGPathSelector
   object PathSelectors {
     
@@ -153,9 +152,9 @@ object basic {
     }
   }
   
-  @js.native
   trait PolygonSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGPolygonSelector
   object PolygonSelectors {
     
@@ -166,9 +165,9 @@ object basic {
     }
   }
   
-  @js.native
   trait PolylineSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGPolylineSelector
   object PolylineSelectors {
     
@@ -179,9 +178,9 @@ object basic {
     }
   }
   
-  @js.native
   trait RectSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGRectSelector
   object RectSelectors {
     
@@ -192,13 +191,13 @@ object basic {
     }
   }
   
-  @js.native
   trait TextBlockSelectors
-    extends SVGTextSelector
+    extends StObject
+       with SVGTextSelector
        with SVGRectSelector {
     
     @JSName(".content")
-    var Dotcontent: js.UndefOr[SVGTextAttributes] = js.native
+    var Dotcontent: js.UndefOr[SVGTextAttributes] = js.undefined
   }
   object TextBlockSelectors {
     

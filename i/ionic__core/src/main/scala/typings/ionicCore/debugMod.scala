@@ -4,16 +4,17 @@ import typings.ionicCore.interfaceMod.RouteChain
 import typings.ionicCore.interfaceMod.RouteRedirect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debugMod {
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/debug", "printRedirects")
+  @JSImport("@ionic/core/dist/types/components/router/utils/debug", JSImport.Namespace)
   @js.native
-  def printRedirects(redirects: js.Array[RouteRedirect]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/debug", "printRoutes")
-  @js.native
-  def printRoutes(routes: js.Array[RouteChain]): Unit = js.native
+  @scala.inline
+  def printRedirects(redirects: js.Array[RouteRedirect]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printRedirects")(redirects.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def printRoutes(routes: js.Array[RouteChain]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

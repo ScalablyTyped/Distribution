@@ -4,30 +4,28 @@ import typings.octokitTypes.octokitTypesStrings.dismissed
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeScanningUpdateAlertEndpoint extends StObject {
   
   /**
     * The code scanning alert number.
     */
-  var alert_number: js.UndefOr[Double] = js.native
+  var alert_number: js.UndefOr[Double] = js.undefined
   
   /**
     * **Required when the state is dismissed.** The reason for dismissing or closing the alert. Can be one of: `false positive`, `won't fix`, and `used in tests`.
     */
-  var dismissed_reason: js.UndefOr[String | Null] = js.native
+  var dismissed_reason: js.UndefOr[String | Null] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Sets the state of the code scanning alert. Can be one of `open` or `dismissed`. You must provide `dismissed_reason` when you set the state to `dismissed`.
     */
-  var state: open | dismissed = js.native
+  var state: open | dismissed
 }
 object CodeScanningUpdateAlertEndpoint {
   

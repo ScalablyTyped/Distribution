@@ -4,11 +4,12 @@ import typings.nvd3.nvd3Strings.x
 import typings.nvd3.nvd3Strings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distribution extends Nvd3Element {
+trait Distribution
+  extends StObject
+     with Nvd3Element {
   
   def axis(): String = js.native
   def axis(value: String): this.type = js.native

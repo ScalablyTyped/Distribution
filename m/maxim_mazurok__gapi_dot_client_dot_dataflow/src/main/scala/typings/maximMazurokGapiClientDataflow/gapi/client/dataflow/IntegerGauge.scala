@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerGauge extends StObject {
   
   /** The time at which this value was measured. Measured as msecs from epoch. */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /** The value of the variable represented by this gauge. */
-  var value: js.UndefOr[SplitInt64] = js.native
+  var value: js.UndefOr[SplitInt64] = js.undefined
 }
 object IntegerGauge {
   

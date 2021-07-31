@@ -10,17 +10,18 @@ import typings.redux.mod.Action
 import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("next-redux-wrapper", JSImport.Default)
+  @JSImport("next-redux-wrapper", JSImport.Namespace)
   @js.native
-  def default[S /* <: js.Object */, A /* <: Action[_] */](makeStore: MakeStore[S, A]): js.Function1[/* Component */ js.Any, FunctionComponentWrapperP] = js.native
-  @JSImport("next-redux-wrapper", JSImport.Default)
-  @js.native
-  def default[S /* <: js.Object */, A /* <: Action[_] */](makeStore: MakeStore[S, A], config: Config[_]): js.Function1[/* Component */ js.Any, FunctionComponentWrapperP] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[S /* <: js.Object */, A /* <: Action[js.Any] */](makeStore: MakeStore[S, A]): js.Function1[/* Component */ js.Any, FunctionComponentWrapperP] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(makeStore.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ js.Any, FunctionComponentWrapperP]]
+  @scala.inline
+  def default[S /* <: js.Object */, A /* <: Action[js.Any] */](makeStore: MakeStore[S, A], config: Config[js.Any]): js.Function1[/* Component */ js.Any, FunctionComponentWrapperP] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(makeStore.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ js.Any, FunctionComponentWrapperP]]
   
   @JSImport("next-redux-wrapper", "HYDRATE")
   @js.native
@@ -30,23 +31,20 @@ object mod {
   @js.native
   val STOREKEY: /* "__NEXT_REDUX_WRAPPER_STORE__" */ String = js.native
   
-  @JSImport("next-redux-wrapper", "createWrapper")
-  @js.native
-  def createWrapper[S /* <: js.Object */, A /* <: Action[_] */](makeStore: MakeStore[S, A]): GetServerSideProps[S, A] = js.native
-  @JSImport("next-redux-wrapper", "createWrapper")
-  @js.native
-  def createWrapper[S /* <: js.Object */, A /* <: Action[_] */](makeStore: MakeStore[S, A], config: Config[S]): GetServerSideProps[S, A] = js.native
+  @scala.inline
+  def createWrapper[S /* <: js.Object */, A /* <: Action[js.Any] */](makeStore: MakeStore[S, A]): GetServerSideProps[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(makeStore.asInstanceOf[js.Any]).asInstanceOf[GetServerSideProps[S, A]]
+  @scala.inline
+  def createWrapper[S /* <: js.Object */, A /* <: Action[js.Any] */](makeStore: MakeStore[S, A], config: Config[S]): GetServerSideProps[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(makeStore.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetServerSideProps[S, A]]
   
-  @js.native
   trait Config[S /* <: js.Object */] extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var deserializeState: js.UndefOr[js.Function1[/* state */ js.Any, S]] = js.native
+    var deserializeState: js.UndefOr[js.Function1[/* state */ js.Any, S]] = js.undefined
     
-    var serializeState: js.UndefOr[js.Function1[/* state */ S, _]] = js.native
+    var serializeState: js.UndefOr[js.Function1[/* state */ S, js.Any]] = js.undefined
     
-    var storeKey: js.UndefOr[String] = js.native
+    var storeKey: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -57,7 +55,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_], S /* <: js.Object */] (val x: Self with Config[S]) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?], S /* <: js.Object */] (val x: Self & Config[S]) extends AnyVal {
       
       @scala.inline
       def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
@@ -72,7 +70,7 @@ object mod {
       def setDeserializeStateUndefined: Self = StObject.set(x, "deserializeState", js.undefined)
       
       @scala.inline
-      def setSerializeState(value: /* state */ S => _): Self = StObject.set(x, "serializeState", js.Any.fromFunction1(value))
+      def setSerializeState(value: /* state */ S => js.Any): Self = StObject.set(x, "serializeState", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSerializeStateUndefined: Self = StObject.set(x, "serializeState", js.undefined)
@@ -93,20 +91,21 @@ object mod {
   */
   type Context = _Context | NextPageContext | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AppContext */ js.Any)
   
-  @js.native
-  trait GetServerSidePropsContext extends _Context {
+  trait GetServerSidePropsContext
+    extends StObject
+       with _Context {
     
-    var params: js.UndefOr[ParsedUrlQuery] = js.native
+    var params: js.UndefOr[ParsedUrlQuery] = js.undefined
     
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
     
-    var previewData: js.UndefOr[js.Any] = js.native
+    var previewData: js.UndefOr[js.Any] = js.undefined
     
-    var query: ParsedUrlQuery = js.native
+    var query: ParsedUrlQuery
     
-    var req: IncomingMessage = js.native
+    var req: IncomingMessage
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse
   }
   object GetServerSidePropsContext {
     
@@ -148,14 +147,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait GetStaticPropsContext extends _Context {
+  trait GetStaticPropsContext
+    extends StObject
+       with _Context {
     
-    var params: js.UndefOr[ParsedUrlQuery] = js.native
+    var params: js.UndefOr[ParsedUrlQuery] = js.undefined
     
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
     
-    var previewData: js.UndefOr[js.Any] = js.native
+    var previewData: js.UndefOr[js.Any] = js.undefined
   }
   object GetStaticPropsContext {
     
@@ -188,25 +188,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait InitStoreOptions[S, A /* <: Action[_] */] extends StObject {
+  trait InitStoreOptions[S, A /* <: Action[js.Any] */] extends StObject {
     
-    var config: Config[S] = js.native
+    var config: Config[S]
     
-    var context: Context = js.native
+    var context: Context
     
-    var makeStore: MakeStore[S, A] = js.native
+    var makeStore: MakeStore[S, A]
   }
   object InitStoreOptions {
     
     @scala.inline
-    def apply[S, A /* <: Action[_] */](config: Config[S], context: Context, makeStore: /* context */ Context => Store[S, A]): InitStoreOptions[S, A] = {
+    def apply[S, A /* <: Action[js.Any] */](config: Config[S], context: Context, makeStore: /* context */ Context => Store[S, A]): InitStoreOptions[S, A] = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], makeStore = js.Any.fromFunction1(makeStore))
       __obj.asInstanceOf[InitStoreOptions[S, A]]
     }
     
     @scala.inline
-    implicit class InitStoreOptionsMutableBuilder[Self <: InitStoreOptions[_, _], S, A /* <: Action[_] */] (val x: Self with (InitStoreOptions[S, A])) extends AnyVal {
+    implicit class InitStoreOptionsMutableBuilder[Self <: InitStoreOptions[?, ?], S, A /* <: Action[js.Any] */] (val x: Self & (InitStoreOptions[S, A])) extends AnyVal {
       
       @scala.inline
       def setConfig(value: Config[S]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
@@ -219,16 +218,15 @@ object mod {
     }
   }
   
-  type MakeStore[S, A /* <: Action[_] */] = js.Function1[/* context */ Context, Store[S, A]]
+  type MakeStore[S, A /* <: Action[js.Any] */] = js.Function1[/* context */ Context, Store[S, A]]
   
-  @js.native
   trait WrapperProps extends StObject {
     
-    var initialProps: js.Any = js.native
+    var initialProps: js.Any
     
-    var initialState: js.Any = js.native
+    var initialState: js.Any
     
-    var pageProps: js.UndefOr[js.Any] = js.native
+    var pageProps: js.UndefOr[js.Any] = js.undefined
   }
   object WrapperProps {
     
@@ -273,24 +271,23 @@ object mod {
   
   object nextDistNextServerLibUtilsAugmentingMod {
     
-    @js.native
-    trait NextPageContext[S, A /* <: Action[_] */] extends StObject {
+    trait NextPageContext[S, A /* <: Action[js.Any] */] extends StObject {
       
       /**
         * Provided by next-redux-wrapper: The redux store
         */
-      var store: Store[S, A] = js.native
+      var store: Store[S, A]
     }
     object NextPageContext {
       
       @scala.inline
-      def apply[S, A /* <: Action[_] */](store: Store[S, A]): typings.nextReduxWrapper.mod.nextDistNextServerLibUtilsAugmentingMod.NextPageContext[S, A] = {
+      def apply[S, A /* <: Action[js.Any] */](store: Store[S, A]): typings.nextReduxWrapper.mod.nextDistNextServerLibUtilsAugmentingMod.NextPageContext[S, A] = {
         val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.nextReduxWrapper.mod.nextDistNextServerLibUtilsAugmentingMod.NextPageContext[S, A]]
       }
       
       @scala.inline
-      implicit class NextPageContextMutableBuilder[Self <: typings.nextReduxWrapper.mod.nextDistNextServerLibUtilsAugmentingMod.NextPageContext[_, _], S, A /* <: Action[_] */] (val x: Self with (typings.nextReduxWrapper.mod.nextDistNextServerLibUtilsAugmentingMod.NextPageContext[S, A])) extends AnyVal {
+      implicit class NextPageContextMutableBuilder[Self <: typings.nextReduxWrapper.mod.nextDistNextServerLibUtilsAugmentingMod.NextPageContext[?, ?], S, A /* <: Action[js.Any] */] (val x: Self & (typings.nextReduxWrapper.mod.nextDistNextServerLibUtilsAugmentingMod.NextPageContext[S, A])) extends AnyVal {
         
         @scala.inline
         def setStore(value: Store[S, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])

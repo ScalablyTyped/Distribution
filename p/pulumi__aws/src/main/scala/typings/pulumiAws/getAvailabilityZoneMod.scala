@@ -4,51 +4,49 @@ import typings.pulumiAws.inputMod.GetAvailabilityZoneFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAvailabilityZoneMod {
   
-  @JSImport("@pulumi/aws/getAvailabilityZone", "getAvailabilityZone")
+  @JSImport("@pulumi/aws/getAvailabilityZone", JSImport.Namespace)
   @js.native
-  def getAvailabilityZone(): js.Promise[GetAvailabilityZoneResult] = js.native
-  @JSImport("@pulumi/aws/getAvailabilityZone", "getAvailabilityZone")
-  @js.native
-  def getAvailabilityZone(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetAvailabilityZoneResult] = js.native
-  @JSImport("@pulumi/aws/getAvailabilityZone", "getAvailabilityZone")
-  @js.native
-  def getAvailabilityZone(args: GetAvailabilityZoneArgs): js.Promise[GetAvailabilityZoneResult] = js.native
-  @JSImport("@pulumi/aws/getAvailabilityZone", "getAvailabilityZone")
-  @js.native
-  def getAvailabilityZone(args: GetAvailabilityZoneArgs, opts: InvokeOptions): js.Promise[GetAvailabilityZoneResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAvailabilityZone(): js.Promise[GetAvailabilityZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZone")().asInstanceOf[js.Promise[GetAvailabilityZoneResult]]
+  @scala.inline
+  def getAvailabilityZone(args: Unit, opts: InvokeOptions): js.Promise[GetAvailabilityZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAvailabilityZoneResult]]
+  @scala.inline
+  def getAvailabilityZone(args: GetAvailabilityZoneArgs): js.Promise[GetAvailabilityZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAvailabilityZoneResult]]
+  @scala.inline
+  def getAvailabilityZone(args: GetAvailabilityZoneArgs, opts: InvokeOptions): js.Promise[GetAvailabilityZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailabilityZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAvailabilityZoneResult]]
+  
   trait GetAvailabilityZoneArgs extends StObject {
     
     /**
       * Set to `true` to include all Availability Zones and Local Zones regardless of your opt in status.
       */
-    val allAvailabilityZones: js.UndefOr[Boolean] = js.native
+    val allAvailabilityZones: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configuration block(s) for filtering. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetAvailabilityZoneFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetAvailabilityZoneFilter]] = js.undefined
     
     /**
       * The name of the filter field. Valid values can be found in the [EC2 DescribeAvailabilityZones API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html).
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * A specific availability zone state to require. May be any of `"available"`, `"information"` or `"impaired"`.
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * The zone ID of the availability zone to select.
       */
-    val zoneId: js.UndefOr[String] = js.native
+    val zoneId: js.UndefOr[String] = js.undefined
   }
   object GetAvailabilityZoneArgs {
     
@@ -96,48 +94,47 @@ object getAvailabilityZoneMod {
     }
   }
   
-  @js.native
   trait GetAvailabilityZoneResult extends StObject {
     
-    val allAvailabilityZones: js.UndefOr[Boolean] = js.native
+    val allAvailabilityZones: js.UndefOr[Boolean] = js.undefined
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAvailabilityZoneFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetAvailabilityZoneFilter]] = js.undefined
     
     /**
       * For Availability Zones, this is the same value as the Region name. For Local Zones, the name of the associated group, for example `us-west-2-lax-1`.
       */
-    val groupName: String = js.native
+    val groupName: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The part of the AZ name that appears after the region name, uniquely identifying the AZ within its region.
       */
-    val nameSuffix: String = js.native
+    val nameSuffix: String
     
     /**
       * The name of the location from which the address is advertised.
       */
-    val networkBorderGroup: String = js.native
+    val networkBorderGroup: String
     
     /**
       * For Availability Zones, this always has the value of `opt-in-not-required`. For Local Zones, this is the opt in status. The possible values are `opted-in` and `not-opted-in`.
       */
-    val optInStatus: String = js.native
+    val optInStatus: String
     
     /**
       * The region where the selected availability zone resides. This is always the region selected on the provider, since this data source searches only within that region.
       */
-    val region: String = js.native
+    val region: String
     
-    val state: String = js.native
+    val state: String
     
-    val zoneId: String = js.native
+    val zoneId: String
   }
   object GetAvailabilityZoneResult {
     

@@ -2,23 +2,21 @@ package typings.kikBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KikMessage extends StObject {
   
-  var big: js.UndefOr[Boolean] = js.native
+  var big: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var noForward: js.UndefOr[Boolean] = js.native
+  var noForward: js.UndefOr[Boolean] = js.undefined
   
-  var pic: js.UndefOr[String] = js.native
+  var pic: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var title: String = js.native
+  var title: String
 }
 object KikMessage {
   

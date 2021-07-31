@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.container.XNameAccess
   * @see com.sun.star.beans.XPropertySet
   */
-@js.native
-trait WrappedTargetException extends Exception {
+trait WrappedTargetException
+  extends StObject
+     with Exception {
   
   /** The exception is thrown by the target. */
-  var TargetException: js.Any = js.native
+  var TargetException: js.Any
 }
 object WrappedTargetException {
   

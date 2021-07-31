@@ -2,30 +2,28 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XmlDataBinding extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  def ClearSettings(): Unit = js.native
+  def ClearSettings(): Unit
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.XmlDataBinding_typekey")
-  var ExcelDotXmlDataBinding_typekey: XmlDataBinding = js.native
+  var ExcelDotXmlDataBinding_typekey: XmlDataBinding
   
-  def LoadSettings(Url: String): Unit = js.native
+  def LoadSettings(Url: String): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Refresh(): XlXmlImportResult = js.native
+  def Refresh(): XlXmlImportResult
   
-  val SourceUrl: String = js.native
+  val SourceUrl: String
   
-  val _Default: String = js.native
+  val _Default: String
 }
 object XmlDataBinding {
   

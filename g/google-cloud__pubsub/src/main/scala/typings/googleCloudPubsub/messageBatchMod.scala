@@ -4,7 +4,6 @@ import typings.googleCloudPubsub.publisherMod.PublishCallback
 import typings.googleCloudPubsub.publisherMod.PubsubMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageBatchMod {
@@ -57,14 +56,13 @@ object messageBatchMod {
     var options: BatchPublishOptions = js.native
   }
   
-  @js.native
   trait BatchPublishOptions extends StObject {
     
-    var maxBytes: js.UndefOr[Double] = js.native
+    var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var maxMessages: js.UndefOr[Double] = js.native
+    var maxMessages: js.UndefOr[Double] = js.undefined
     
-    var maxMilliseconds: js.UndefOr[Double] = js.native
+    var maxMilliseconds: js.UndefOr[Double] = js.undefined
   }
   object BatchPublishOptions {
     

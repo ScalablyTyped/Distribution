@@ -2,23 +2,21 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registryInfoMod {
   
-  @js.native
   trait RegistryInfo extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var rootKey: String = js.native
+    var rootKey: String
     
-    var subkey: String = js.native
+    var subkey: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object RegistryInfo {
     

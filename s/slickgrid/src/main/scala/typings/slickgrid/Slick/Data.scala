@@ -3,23 +3,21 @@ package typings.slickgrid.Slick
 import typings.slickgrid.Slick.Data.Aggregators.Aggregator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Data {
   
   object Aggregators {
     
-    @js.native
     trait Aggregator[T /* <: SlickData */] extends StObject {
       
-      def accumulate(item: T): Unit = js.native
+      def accumulate(item: T): Unit
       
-      var field: String = js.native
+      var field: String
       
-      def init(): Unit = js.native
+      def init(): Unit
       
-      def storeResult(groupTotals: GroupTotals[T]): Unit = js.native
+      def storeResult(groupTotals: GroupTotals[T]): Unit
     }
     object Aggregator {
       
@@ -30,7 +28,7 @@ object Data {
       }
       
       @scala.inline
-      implicit class AggregatorMutableBuilder[Self <: Aggregator[_], T /* <: SlickData */] (val x: Self with Aggregator[T]) extends AnyVal {
+      implicit class AggregatorMutableBuilder[Self <: Aggregator[?], T /* <: SlickData */] (val x: Self & Aggregator[T]) extends AnyVal {
         
         @scala.inline
         def setAccumulate(value: T => Unit): Self = StObject.set(x, "accumulate", js.Any.fromFunction1(value))
@@ -56,7 +54,9 @@ object Data {
   }
   
   @js.native
-  trait DataView[T /* <: SlickData */] extends DataProvider[T] {
+  trait DataView[T /* <: SlickData */]
+    extends StObject
+       with DataProvider[T] {
     
     def addItem(item: T): Unit = js.native
     
@@ -166,12 +166,11 @@ object Data {
     def updateItem(id: String, item: T): Unit = js.native
   }
   
-  @js.native
   trait DataViewOptions[T /* <: SlickData */] extends StObject {
     
-    var groupItemMetadataProvider: js.UndefOr[GroupItemMetadataProvider[T]] = js.native
+    var groupItemMetadataProvider: js.UndefOr[GroupItemMetadataProvider[T]] = js.undefined
     
-    var inlineFilters: js.UndefOr[Boolean] = js.native
+    var inlineFilters: js.UndefOr[Boolean] = js.undefined
   }
   object DataViewOptions {
     
@@ -182,7 +181,7 @@ object Data {
     }
     
     @scala.inline
-    implicit class DataViewOptionsMutableBuilder[Self <: DataViewOptions[_], T /* <: SlickData */] (val x: Self with DataViewOptions[T]) extends AnyVal {
+    implicit class DataViewOptionsMutableBuilder[Self <: DataViewOptions[?], T /* <: SlickData */] (val x: Self & DataViewOptions[T]) extends AnyVal {
       
       @scala.inline
       def setGroupItemMetadataProvider(value: GroupItemMetadataProvider[T]): Self = StObject.set(x, "groupItemMetadataProvider", value.asInstanceOf[js.Any])
@@ -212,26 +211,25 @@ object Data {
     def init(): Unit = js.native
   }
   
-  @js.native
   trait GroupItemMetadataProviderOptions extends StObject {
     
-    var enableExpandCollapse: js.UndefOr[Boolean] = js.native
+    var enableExpandCollapse: js.UndefOr[Boolean] = js.undefined
     
-    var groupCssClass: js.UndefOr[String] = js.native
+    var groupCssClass: js.UndefOr[String] = js.undefined
     
-    var groupFocusable: js.UndefOr[Boolean] = js.native
+    var groupFocusable: js.UndefOr[Boolean] = js.undefined
     
-    var groupTitleCssClass: js.UndefOr[String] = js.native
+    var groupTitleCssClass: js.UndefOr[String] = js.undefined
     
-    var toggleCollapsedCssClass: js.UndefOr[String] = js.native
+    var toggleCollapsedCssClass: js.UndefOr[String] = js.undefined
     
-    var toggleCssClass: js.UndefOr[String] = js.native
+    var toggleCssClass: js.UndefOr[String] = js.undefined
     
-    var toggleExpandedCssCass: js.UndefOr[String] = js.native
+    var toggleExpandedCssCass: js.UndefOr[String] = js.undefined
     
-    var totalsCssClass: js.UndefOr[String] = js.native
+    var totalsCssClass: js.UndefOr[String] = js.undefined
     
-    var totalsFocusable: js.UndefOr[Boolean] = js.native
+    var totalsFocusable: js.UndefOr[Boolean] = js.undefined
   }
   object GroupItemMetadataProviderOptions {
     
@@ -300,29 +298,28 @@ object Data {
     }
   }
   
-  @js.native
   trait GroupingOptions[T] extends StObject {
     
-    var aggregateChildGroups: js.UndefOr[Boolean] = js.native
+    var aggregateChildGroups: js.UndefOr[Boolean] = js.undefined
     
-    var aggregateCollapsed: js.UndefOr[Boolean] = js.native
+    var aggregateCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var aggregateEmpty: js.UndefOr[Boolean] = js.native
+    var aggregateEmpty: js.UndefOr[Boolean] = js.undefined
     
     // todo
-    var aggregators: js.UndefOr[js.Array[Aggregator[T]]] = js.native
+    var aggregators: js.UndefOr[js.Array[Aggregator[T]]] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var comparer: js.UndefOr[js.Function2[/* a */ Group[T], /* b */ Group[T], Double]] = js.native
+    var comparer: js.UndefOr[js.Function2[/* a */ Group[T], /* b */ Group[T], Double]] = js.undefined
     
-    var displayTotalsRow: js.UndefOr[Boolean] = js.native
+    var displayTotalsRow: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* item */ js.UndefOr[T], String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* item */ js.UndefOr[T], String]] = js.undefined
     
-    var getter: js.UndefOr[(js.Function1[/* item */ js.UndefOr[T], _]) | String] = js.native
+    var getter: js.UndefOr[(js.Function1[/* item */ js.UndefOr[T], js.Any]) | String] = js.undefined
     
-    var predefinedValues: js.UndefOr[js.Array[_]] = js.native
+    var predefinedValues: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object GroupingOptions {
     
@@ -333,7 +330,7 @@ object Data {
     }
     
     @scala.inline
-    implicit class GroupingOptionsMutableBuilder[Self <: GroupingOptions[_], T] (val x: Self with GroupingOptions[T]) extends AnyVal {
+    implicit class GroupingOptionsMutableBuilder[Self <: GroupingOptions[?], T] (val x: Self & GroupingOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAggregateChildGroups(value: Boolean): Self = StObject.set(x, "aggregateChildGroups", value.asInstanceOf[js.Any])
@@ -387,16 +384,16 @@ object Data {
       def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
       @scala.inline
-      def setGetter(value: (js.Function1[/* item */ js.UndefOr[T], _]) | String): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
+      def setGetter(value: (js.Function1[/* item */ js.UndefOr[T], js.Any]) | String): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGetterFunction1(value: /* item */ js.UndefOr[T] => _): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
+      def setGetterFunction1(value: /* item */ js.UndefOr[T] => js.Any): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
       
       @scala.inline
-      def setPredefinedValues(value: js.Array[_]): Self = StObject.set(x, "predefinedValues", value.asInstanceOf[js.Any])
+      def setPredefinedValues(value: js.Array[js.Any]): Self = StObject.set(x, "predefinedValues", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPredefinedValuesUndefined: Self = StObject.set(x, "predefinedValues", js.undefined)
@@ -408,13 +405,11 @@ object Data {
   
   type OnPagingInfoChangedEventData = PagingOptions
   
-  @js.native
   trait OnRowCountChangedEventData extends StObject
   
-  @js.native
   trait OnRowsChangedEventData extends StObject {
     
-    var rows: js.Array[Double] = js.native
+    var rows: js.Array[Double]
   }
   object OnRowsChangedEventData {
     
@@ -435,16 +430,15 @@ object Data {
     }
   }
   
-  @js.native
   trait PagingOptions extends StObject {
     
-    var pageNum: js.UndefOr[Double] = js.native
+    var pageNum: js.UndefOr[Double] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var totalPages: js.UndefOr[Double] = js.native
+    var totalPages: js.UndefOr[Double] = js.undefined
     
-    var totalRows: js.UndefOr[Double] = js.native
+    var totalRows: js.UndefOr[Double] = js.undefined
   }
   object PagingOptions {
     
@@ -483,18 +477,17 @@ object Data {
     }
   }
   
-  @js.native
   trait RefreshHints extends StObject {
     
-    var ignoreDiffsAfter: js.UndefOr[Boolean] = js.native
+    var ignoreDiffsAfter: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreDiffsBefore: js.UndefOr[Boolean] = js.native
+    var ignoreDiffsBefore: js.UndefOr[Boolean] = js.undefined
     
-    var isFilterExpanding: js.UndefOr[Boolean] = js.native
+    var isFilterExpanding: js.UndefOr[Boolean] = js.undefined
     
-    var isFilterNarrowing: js.UndefOr[Boolean] = js.native
+    var isFilterNarrowing: js.UndefOr[Boolean] = js.undefined
     
-    var isFilterUnchanged: js.UndefOr[Boolean] = js.native
+    var isFilterUnchanged: js.UndefOr[Boolean] = js.undefined
   }
   object RefreshHints {
     

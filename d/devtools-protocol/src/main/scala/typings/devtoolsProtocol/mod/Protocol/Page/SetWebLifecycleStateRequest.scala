@@ -4,16 +4,14 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.active
 import typings.devtoolsProtocol.devtoolsProtocolStrings.frozen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetWebLifecycleStateRequest extends StObject {
   
   /**
     * Target lifecycle state (SetWebLifecycleStateRequestState enum)
     */
-  var state: frozen | active = js.native
+  var state: frozen | active
 }
 object SetWebLifecycleStateRequest {
   

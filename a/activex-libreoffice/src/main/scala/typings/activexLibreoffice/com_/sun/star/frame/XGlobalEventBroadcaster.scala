@@ -13,19 +13,18 @@ import typings.activexLibreoffice.com_.sun.star.document.XEventsSupplier
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the unified interface of {@link theGlobalEventBroadcaster} singleton.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XGlobalEventBroadcaster
-  extends XSet
+  extends StObject
      with XEventsSupplier
      with XDocumentEventBroadcaster
      with XEventBroadcaster
+     with XSet
      with XDocumentEventListener
 object XGlobalEventBroadcaster {
   

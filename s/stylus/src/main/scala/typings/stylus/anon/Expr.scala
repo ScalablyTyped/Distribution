@@ -5,27 +5,25 @@ import typings.stylus.mod.Stylus.Nodes.Literal
 import typings.stylus.mod.Stylus.Nodes.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expr extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var column: Double = js.native
+  var column: Double
   
-  var expr: js.UndefOr[Expression] = js.native
+  var expr: js.UndefOr[Expression] = js.undefined
   
-  var filename: String = js.native
+  var filename: String
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var literal: js.UndefOr[Literal] = js.native
+  var literal: js.UndefOr[Literal] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var segments: js.Array[Node] = js.native
+  var segments: js.Array[Node]
 }
 object Expr {
   

@@ -2,23 +2,21 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiKeys extends StObject {
   
   /**
     * The current page of elements from this collection.
     */
-  var items: js.UndefOr[ListOfApiKey] = js.native
+  var items: js.UndefOr[ListOfApiKey] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * A list of warning messages logged during the import of API keys when the failOnWarnings option is set to true.
     */
-  var warnings: js.UndefOr[ListOfString] = js.native
+  var warnings: js.UndefOr[ListOfString] = js.undefined
 }
 object ApiKeys {
   

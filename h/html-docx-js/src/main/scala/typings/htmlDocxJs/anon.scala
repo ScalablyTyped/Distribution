@@ -4,34 +4,32 @@ import typings.htmlDocxJs.htmlDocxJsStrings.landscape
 import typings.htmlDocxJs.htmlDocxJsStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
     /** The bottom page margin (default: 1440). */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** The margin for the footer (default: 720). */
-    var footer: js.UndefOr[Double] = js.native
+    var footer: js.UndefOr[Double] = js.undefined
     
     /** The margin for the gutter (default: 0). */
-    var gutter: js.UndefOr[Double] = js.native
+    var gutter: js.UndefOr[Double] = js.undefined
     
     /** The margin for the header (default: 720). */
-    var header: js.UndefOr[Double] = js.native
+    var header: js.UndefOr[Double] = js.undefined
     
     /** The left page margin (default: 1440). */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** The right page margin (default: 1440). */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** The top page margin (default: 1440, i.e. 2.54 cm). */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Bottom {
     
@@ -88,7 +86,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Margins extends StObject {
     
     /**
@@ -96,12 +93,12 @@ object anon {
       * [WordprocessingML documentation](http://officeopenxml.com/WPsectionPgMar.php)
       * for details).
       */
-    var margins: js.UndefOr[Bottom] = js.native
+    var margins: js.UndefOr[Bottom] = js.undefined
     
     /**
       * Page orientation. Must be `landscape` or `portrait` (default).
       */
-    var orientation: js.UndefOr[landscape | portrait] = js.native
+    var orientation: js.UndefOr[landscape | portrait] = js.undefined
   }
   object Margins {
     

@@ -2,28 +2,28 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseRadiusMod {
   
-  @JSImport("@antv/util/lib/parse-radius", JSImport.Default)
+  @JSImport("@antv/util/lib/parse-radius", JSImport.Namespace)
   @js.native
-  def default(radius: js.Array[Double]): RadiusType = js.native
-  @JSImport("@antv/util/lib/parse-radius", JSImport.Default)
-  @js.native
-  def default(radius: Double): RadiusType = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(radius: js.Array[Double]): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
+  @scala.inline
+  def default(radius: Double): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
+  
   trait RadiusType extends StObject {
     
-    var r1: Double = js.native
+    var r1: Double
     
-    var r2: Double = js.native
+    var r2: Double
     
-    var r3: Double = js.native
+    var r3: Double
     
-    var r4: Double = js.native
+    var r4: Double
   }
   object RadiusType {
     

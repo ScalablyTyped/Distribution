@@ -8,7 +8,6 @@ import typings.officeJs.Word.Interfaces.CustomPropertyCollectionData
 import typings.officeJs.Word.Interfaces.CustomPropertyCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait CustomPropertyCollection extends ClientObject {
+trait CustomPropertyCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Creates a new or sets an existing custom property.
@@ -75,7 +76,7 @@ trait CustomPropertyCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CustomPropertyCollection = js.native
-  def load(options: CustomPropertyCollectionLoadOptions with CollectionLoadOptions): CustomPropertyCollection = js.native
+  def load(options: CustomPropertyCollectionLoadOptions & CollectionLoadOptions): CustomPropertyCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): CustomPropertyCollection = js.native
   def load(propertyNames: String): CustomPropertyCollection = js.native
   def load(propertyNames: js.Array[String]): CustomPropertyCollection = js.native

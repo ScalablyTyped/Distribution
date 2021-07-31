@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceJobsList extends StandardParameters {
+trait ParamsResourceJobsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required.  The filter string specifies the jobs to be enumerated.
@@ -24,14 +24,14 @@ trait ParamsResourceJobsList extends StandardParameters {
     * companyName = "companies/123" * companyName = "companies/123" AND
     * requisitionId = "req-1"
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  If set to `true`, only Job.name, Job.requisition_id and
     * Job.language_code will be returned.  A typical use case is to synchronize
     * job repositories.  Defaults to false.
     */
-  var idsOnly: js.UndefOr[Boolean] = js.native
+  var idsOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  The maximum number of jobs to be returned per page of results.
@@ -39,12 +39,12 @@ trait ParamsResourceJobsList extends StandardParameters {
     * Otherwise, the maximum allowed page size is 100.  Default is 100 if empty
     * or a number < 1 is specified.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  The starting point of a query result.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceJobsList {
   

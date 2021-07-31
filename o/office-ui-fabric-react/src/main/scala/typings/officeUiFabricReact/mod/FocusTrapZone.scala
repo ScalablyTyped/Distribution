@@ -3,7 +3,6 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "FocusTrapZone")

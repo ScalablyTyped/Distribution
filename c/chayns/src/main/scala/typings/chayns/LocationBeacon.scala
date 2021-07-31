@@ -2,20 +2,18 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.getLocationBeacons()
-@js.native
 trait LocationBeacon extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var pushMessage: String = js.native
+  var pushMessage: String
 }
 object LocationBeacon {
   

@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 使用 MongoDB.getCollection 创建：,```JavaScript,var col1 = mdb.getCollection('test');,var col = mdb.test;,```
   */
 @js.native
-trait ClassMongoCollection extends ClassObject {
+trait ClassMongoCollection
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -65,9 +66,9 @@ trait ClassMongoCollection extends ClassObject {
     * 
     */
   def find(): ClassMongoCursor = js.native
-  def find(query: js.UndefOr[scala.Nothing], projection: js.Object): ClassMongoCursor = js.native
   def find(query: js.Object): ClassMongoCursor = js.native
   def find(query: js.Object, projection: js.Object): ClassMongoCursor = js.native
+  def find(query: Unit, projection: js.Object): ClassMongoCursor = js.native
   
   /**
     * 
@@ -91,9 +92,9 @@ trait ClassMongoCollection extends ClassObject {
     * 
     */
   def findOne(): js.Object = js.native
-  def findOne(query: js.UndefOr[scala.Nothing], projection: js.Object): js.Object = js.native
   def findOne(query: js.Object): js.Object = js.native
   def findOne(query: js.Object, projection: js.Object): js.Object = js.native
+  def findOne(query: Unit, projection: js.Object): js.Object = js.native
   
   /**
     * 
@@ -133,7 +134,7 @@ trait ClassMongoCollection extends ClassObject {
     * 
     * 
     */
-  def insert(documents: js.Array[_]): Unit = js.native
+  def insert(documents: js.Array[js.Any]): Unit = js.native
   
   /**
     * 
@@ -211,7 +212,7 @@ trait ClassMongoCollection extends ClassObject {
     * 
     */
   def update(query: js.Object, document: js.Object, options: js.Object): Unit = js.native
-  def update(query: js.Object, document: js.Object, upsert: js.UndefOr[scala.Nothing], multi: Boolean): Unit = js.native
   def update(query: js.Object, document: js.Object, upsert: Boolean): Unit = js.native
   def update(query: js.Object, document: js.Object, upsert: Boolean, multi: Boolean): Unit = js.native
+  def update(query: js.Object, document: js.Object, upsert: Unit, multi: Boolean): Unit = js.native
 }

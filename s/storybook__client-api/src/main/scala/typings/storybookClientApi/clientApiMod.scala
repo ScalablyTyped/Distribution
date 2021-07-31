@@ -11,72 +11,111 @@ import typings.storybookClientApi.typesMod.GetStorybookKind
 import typings.storybookClientApi.typesMod.PublishedStoreItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientApiMod {
   
+  @JSImport("@storybook/client-api/dist/client_api", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@storybook/client-api/dist/client_api", JSImport.Default)
   @js.native
-  class default protected () extends ClientApi {
+  class default protected ()
+    extends StObject
+       with ClientApi {
     def this(hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose: ClientApiParams) = this()
-  }
-  
-  @JSImport("@storybook/client-api/dist/client_api", "addArgTypesEnhancer")
-  @js.native
-  def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = js.native
-  
-  @JSImport("@storybook/client-api/dist/client_api", "addDecorator")
-  @js.native
-  def addDecorator(decorator: DecoratorFunction[_]): Unit = js.native
-  @JSImport("@storybook/client-api/dist/client_api", "addDecorator")
-  @js.native
-  def addDecorator(decorator: DecoratorFunction[_], deprecationWarning: Boolean): Unit = js.native
-  
-  @JSImport("@storybook/client-api/dist/client_api", "addLoader")
-  @js.native
-  def addLoader(loader: LoaderFunction): Unit = js.native
-  @JSImport("@storybook/client-api/dist/client_api", "addLoader")
-  @js.native
-  def addLoader(loader: LoaderFunction, deprecationWarning: Boolean): Unit = js.native
-  
-  @JSImport("@storybook/client-api/dist/client_api", "addParameters")
-  @js.native
-  def addParameters(parameters: Parameters): Unit = js.native
-  @JSImport("@storybook/client-api/dist/client_api", "addParameters")
-  @js.native
-  def addParameters(parameters: Parameters, deprecationWarning: Boolean): Unit = js.native
-  
-  @js.native
-  trait ClientApi extends StObject {
     
+    /* CompleteClass */
     var _addons: js.Any = js.native
     
+    /* CompleteClass */
     var _decorateStory: js.Any = js.native
     
+    /* CompleteClass */
     var _noStoryModuleAddMethodHotDispose: js.Any = js.native
     
+    /* CompleteClass */
     var _storyStore: js.Any = js.native
     
-    def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = js.native
+    /* CompleteClass */
+    override def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = js.native
     
-    def addDecorator(decorator: DecoratorFunction[_]): Unit = js.native
+    /* CompleteClass */
+    override def addDecorator(decorator: DecoratorFunction[js.Any]): Unit = js.native
     
-    def addLoader(loader: LoaderFunction): Unit = js.native
+    /* CompleteClass */
+    override def addLoader(loader: LoaderFunction): Unit = js.native
     
-    def addParameters(parameters: Parameters): Unit = js.native
+    /* CompleteClass */
+    override def addParameters(parameters: Parameters): Unit = js.native
     
-    def clearDecorators(): Unit = js.native
+    /* CompleteClass */
+    override def clearDecorators(): Unit = js.native
     
-    def getStorybook(): js.Array[GetStorybookKind] = js.native
+    /* CompleteClass */
+    override def getStorybook(): js.Array[GetStorybookKind] = js.native
     
-    def raw(): js.Array[PublishedStoreItem] = js.native
+    /* CompleteClass */
+    override def raw(): js.Array[PublishedStoreItem] = js.native
     
-    def setAddon(addon: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def setAddon(addon: js.Any): Unit = js.native
     
-    def store(): typings.storybookClientApi.storyStoreMod.default = js.native
+    /* CompleteClass */
+    override def store(): typings.storybookClientApi.storyStoreMod.default = js.native
     
-    def storiesOf[StoryFnReturnType](kind: String, m: NodeModule): StoryApi[StoryFnReturnType] = js.native
+    /* CompleteClass */
+    override def storiesOf[StoryFnReturnType](kind: String, m: NodeModule): StoryApi[StoryFnReturnType] = js.native
+  }
+  
+  @scala.inline
+  def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgTypesEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def addDecorator(decorator: DecoratorFunction[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addDecorator(decorator: DecoratorFunction[js.Any], deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def addLoader(loader: LoaderFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addLoader(loader: LoaderFunction, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def addParameters(parameters: Parameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addParameters(parameters: Parameters, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait ClientApi extends StObject {
+    
+    var _addons: js.Any
+    
+    var _decorateStory: js.Any
+    
+    var _noStoryModuleAddMethodHotDispose: js.Any
+    
+    var _storyStore: js.Any
+    
+    def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit
+    
+    def addDecorator(decorator: DecoratorFunction[js.Any]): Unit
+    
+    def addLoader(loader: LoaderFunction): Unit
+    
+    def addParameters(parameters: Parameters): Unit
+    
+    def clearDecorators(): Unit
+    
+    def getStorybook(): js.Array[GetStorybookKind]
+    
+    def raw(): js.Array[PublishedStoreItem]
+    
+    def setAddon(addon: js.Any): Unit
+    
+    def store(): typings.storybookClientApi.storyStoreMod.default
+    
+    def storiesOf[StoryFnReturnType](kind: String, m: NodeModule): StoryApi[StoryFnReturnType]
   }
   object ClientApi {
     
@@ -87,7 +126,7 @@ object clientApiMod {
       _noStoryModuleAddMethodHotDispose: js.Any,
       _storyStore: js.Any,
       addArgTypesEnhancer: ArgTypesEnhancer => Unit,
-      addDecorator: DecoratorFunction[_] => Unit,
+      addDecorator: DecoratorFunction[js.Any] => Unit,
       addLoader: LoaderFunction => Unit,
       addParameters: Parameters => Unit,
       clearDecorators: () => Unit,
@@ -108,7 +147,7 @@ object clientApiMod {
       def setAddArgTypesEnhancer(value: ArgTypesEnhancer => Unit): Self = StObject.set(x, "addArgTypesEnhancer", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setAddDecorator(value: DecoratorFunction[_] => Unit): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
+      def setAddDecorator(value: DecoratorFunction[js.Any] => Unit): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAddLoader(value: LoaderFunction => Unit): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))

@@ -3,23 +3,21 @@ package typings.materialUi.MaterialUI
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeforeAfterWrapperProps extends StObject {
   
-  var afterElementType: js.UndefOr[String] = js.native
+  var afterElementType: js.UndefOr[String] = js.undefined
   
-  var afterStyle: js.UndefOr[CSSProperties] = js.native
+  var afterStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var beforeElementType: js.UndefOr[String] = js.native
+  var beforeElementType: js.UndefOr[String] = js.undefined
   
-  var beforeStyle: js.UndefOr[CSSProperties] = js.native
+  var beforeStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var elementType: js.UndefOr[String] = js.native
+  var elementType: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object BeforeAfterWrapperProps {
   

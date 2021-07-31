@@ -2,19 +2,17 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientIdentityVerification extends StObject {
   
-  var inputOptions: js.UndefOr[js.Array[RecipientIdentityInputOption]] = js.native
+  var inputOptions: js.UndefOr[js.Array[RecipientIdentityInputOption]] = js.undefined
   
   /**
     * ID of the Identity Verification worklow used to verify recipients' identity. </br> This ID must match one of the [workflowId]
     * (https://developers.docusign.com/esign-rest-api/reference/Accounts/IdentityVerifications/list#accountIdentityVerificationWorkflow) available to your account.
     */
-  var workflowId: js.UndefOr[String] = js.native
+  var workflowId: js.UndefOr[String] = js.undefined
 }
 object RecipientIdentityVerification {
   

@@ -7,7 +7,6 @@ import typings.passportTwitter.passportTwitterBooleans.`false`
 import typings.passportTwitter.passportTwitterBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,11 +14,12 @@ object mod {
   @JSImport("passport-twitter", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(
       options: IStrategyOptionWithRequest,
       verify: js.Function5[
-            /* req */ Request_[ParamsDictionary, _, _, Query], 
+            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
             /* accessToken */ String, 
             /* refreshToken */ String, 
             /* profile */ Profile, 
@@ -38,13 +38,14 @@ object mod {
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
   }
   
-  @js.native
-  trait IStrategyOption extends IStrategyOptionBase {
+  trait IStrategyOption
+    extends StObject
+       with IStrategyOptionBase {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object IStrategyOption {
     
@@ -65,36 +66,35 @@ object mod {
     }
   }
   
-  @js.native
   trait IStrategyOptionBase extends StObject {
     
-    var accessTokenURL: js.UndefOr[String] = js.native
+    var accessTokenURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var consumerKey: String = js.native
+    var consumerKey: String
     
-    var consumerSecret: String = js.native
+    var consumerSecret: String
     
-    var forceLogin: js.UndefOr[Boolean] = js.native
+    var forceLogin: js.UndefOr[Boolean] = js.undefined
     
-    var includeEmail: js.UndefOr[Boolean] = js.native
+    var includeEmail: js.UndefOr[Boolean] = js.undefined
     
-    var includeEntities: js.UndefOr[Boolean] = js.native
+    var includeEntities: js.UndefOr[Boolean] = js.undefined
     
-    var includeStatus: js.UndefOr[Boolean] = js.native
+    var includeStatus: js.UndefOr[Boolean] = js.undefined
     
-    var requestTokenURL: js.UndefOr[String] = js.native
+    var requestTokenURL: js.UndefOr[String] = js.undefined
     
-    var screenName: js.UndefOr[String] = js.native
+    var screenName: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipExtendedUserProfile: js.UndefOr[Boolean] = js.native
+    var skipExtendedUserProfile: js.UndefOr[Boolean] = js.undefined
     
-    var userAuthorizationURL: js.UndefOr[String] = js.native
+    var userAuthorizationURL: js.UndefOr[String] = js.undefined
     
-    var userProfileURL: js.UndefOr[String] = js.native
+    var userProfileURL: js.UndefOr[String] = js.undefined
   }
   object IStrategyOptionBase {
     
@@ -184,16 +184,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait IStrategyOptionWithRequest extends IStrategyOptionBase {
+  trait IStrategyOptionWithRequest
+    extends StObject
+       with IStrategyOptionBase {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object IStrategyOptionWithRequest {
     
     @scala.inline
-    def apply(callbackURL: String, consumerKey: String, consumerSecret: String, passReqToCallback: `true`): IStrategyOptionWithRequest = {
-      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], consumerKey = consumerKey.asInstanceOf[js.Any], consumerSecret = consumerSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(callbackURL: String, consumerKey: String, consumerSecret: String): IStrategyOptionWithRequest = {
+      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], consumerKey = consumerKey.asInstanceOf[js.Any], consumerSecret = consumerSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[IStrategyOptionWithRequest]
     }
     
@@ -205,17 +206,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var _accessLevel: String = js.native
+    var _accessLevel: String
     
-    var _json: js.Any = js.native
+    var _json: js.Any
     
-    var _raw: String = js.native
+    var _raw: String
     
-    var gender: String = js.native
+    var gender: String
   }
   object Profile {
     

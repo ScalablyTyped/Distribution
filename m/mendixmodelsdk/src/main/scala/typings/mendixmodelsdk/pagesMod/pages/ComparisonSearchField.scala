@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object ComparisonSearchField {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ComparisonSearchField.create")
-  @js.native
-  def create(model: IModel): ComparisonSearchField = js.native
+  @scala.inline
+  def create(model: IModel): ComparisonSearchField = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ComparisonSearchField]
   
   /**
     * Creates and returns a new ComparisonSearchField instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object ComparisonSearchField {
     * of the parent ControlBar element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ComparisonSearchField.createIn")
-  @js.native
-  def createIn(container: ControlBar): ComparisonSearchField = js.native
+  @scala.inline
+  def createIn(container: ControlBar): ComparisonSearchField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ComparisonSearchField]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ComparisonSearchField.structureTypeName")

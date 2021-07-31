@@ -6,7 +6,6 @@ import typings.webdriverManager.downloadedBinaryMod.DownloadedBinary
 import typings.webdriverManager.mod.Binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileManagerMod {
@@ -17,6 +16,10 @@ object fileManagerMod {
   /* static members */
   object FileManager {
     
+    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * For the operating system, check against the list of operating systems that the
       * binary is available for.
@@ -24,9 +27,8 @@ object fileManagerMod {
       * @param binary The class type to have access to the static properties.
       * @returns If the binary is available for the operating system.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.checkOS_")
-    @js.native
-    def checkOS_(osType: String, binary: TypeofBinary): Boolean = js.native
+    @scala.inline
+    def checkOS_(osType: String, binary: TypeofBinary): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkOS_")(osType.asInstanceOf[js.Any], binary.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * For the operating system, create a list that includes the binaries
@@ -35,12 +37,10 @@ object fileManagerMod {
       * @param alternateCDN URL of the alternative CDN to be used instead of the default ones.
       * @returns A binary map that are available for the operating system.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.compileBinaries_")
-    @js.native
-    def compileBinaries_(osType: String): BinaryMap[Binary] = js.native
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.compileBinaries_")
-    @js.native
-    def compileBinaries_(osType: String, alternateCDN: String): BinaryMap[Binary] = js.native
+    @scala.inline
+    def compileBinaries_(osType: String): BinaryMap[Binary] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileBinaries_")(osType.asInstanceOf[js.Any]).asInstanceOf[BinaryMap[Binary]]
+    @scala.inline
+    def compileBinaries_(osType: String, alternateCDN: String): BinaryMap[Binary] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileBinaries_")(osType.asInstanceOf[js.Any], alternateCDN.asInstanceOf[js.Any])).asInstanceOf[BinaryMap[Binary]]
     
     /**
       * Try to download the binary version.
@@ -49,21 +49,18 @@ object fileManagerMod {
       * @returns Promise resolved to true for files downloaded, resolved to false for files not
       *          downloaded because they exist, rejected if there is an error.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.downloadFile")
-    @js.native
-    def downloadFile[T /* <: Binary */](binary: T, outputDir: String): js.Promise[Boolean] = js.native
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.downloadFile")
-    @js.native
-    def downloadFile[T /* <: Binary */](binary: T, outputDir: String, callback: js.Function): js.Promise[Boolean] = js.native
+    @scala.inline
+    def downloadFile[T /* <: Binary */](binary: T, outputDir: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(binary.asInstanceOf[js.Any], outputDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def downloadFile[T /* <: Binary */](binary: T, outputDir: String, callback: js.Function): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(binary.asInstanceOf[js.Any], outputDir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Finds all the downloaded binary versions stored in the output directory.
       * @param outputDir The directory where files are downloaded and stored.
       * @returns An dictionary map of all the downloaded binaries found in the output folder.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.downloadedBinaries")
-    @js.native
-    def downloadedBinaries(outputDir: String): BinaryMap[DownloadedBinary] = js.native
+    @scala.inline
+    def downloadedBinaries(outputDir: String): BinaryMap[DownloadedBinary] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadedBinaries")(outputDir.asInstanceOf[js.Any]).asInstanceOf[BinaryMap[DownloadedBinary]]
     
     /**
       * For the binary, operating system, and system architecture, look through
@@ -73,35 +70,31 @@ object fileManagerMod {
       * @param existingFiles A list of existing files.
       * @returns The downloaded binary with all the versions found.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.downloadedVersions_")
-    @js.native
-    def downloadedVersions_[T /* <: Binary */](binary: T, osType: String, arch: String, existingFiles: js.Array[String]): DownloadedBinary = js.native
+    @scala.inline
+    def downloadedVersions_[T /* <: Binary */](binary: T, osType: String, arch: String, existingFiles: js.Array[String]): DownloadedBinary = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadedVersions_")(binary.asInstanceOf[js.Any], osType.asInstanceOf[js.Any], arch.asInstanceOf[js.Any], existingFiles.asInstanceOf[js.Any])).asInstanceOf[DownloadedBinary]
     
     /**
       * Get the list of existing files from the output directory
       * @param outputDir The directory where binaries are saved
       * @returns A list of existing files.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.getExistingFiles")
-    @js.native
-    def getExistingFiles(outputDir: String): js.Array[String] = js.native
+    @scala.inline
+    def getExistingFiles(outputDir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExistingFiles")(outputDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Create a directory if it does not exist.
       * @param outputDir The directory to create.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.makeOutputDirectory")
-    @js.native
-    def makeOutputDirectory(outputDir: String): Unit = js.native
+    @scala.inline
+    def makeOutputDirectory(outputDir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOutputDirectory")(outputDir.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes the existing files found in the output directory that match the
       * binary prefix names.
       * @param outputDir The directory where files are downloaded and stored.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.removeExistingFiles")
-    @js.native
-    def removeExistingFiles(outputDir: String): Unit = js.native
+    @scala.inline
+    def removeExistingFiles(outputDir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExistingFiles")(outputDir.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Look up the operating system and compile a list of binaries that are available
@@ -109,11 +102,9 @@ object fileManagerMod {
       * @param alternateCDN URL of the alternative CDN to be used instead of the default ones.
       * @returns A binary map that is available for the operating system.
       */
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.setupBinaries")
-    @js.native
-    def setupBinaries(): BinaryMap[Binary] = js.native
-    @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager.setupBinaries")
-    @js.native
-    def setupBinaries(alternateCDN: String): BinaryMap[Binary] = js.native
+    @scala.inline
+    def setupBinaries(): BinaryMap[Binary] = ^.asInstanceOf[js.Dynamic].applyDynamic("setupBinaries")().asInstanceOf[BinaryMap[Binary]]
+    @scala.inline
+    def setupBinaries(alternateCDN: String): BinaryMap[Binary] = ^.asInstanceOf[js.Dynamic].applyDynamic("setupBinaries")(alternateCDN.asInstanceOf[js.Any]).asInstanceOf[BinaryMap[Binary]]
   }
 }

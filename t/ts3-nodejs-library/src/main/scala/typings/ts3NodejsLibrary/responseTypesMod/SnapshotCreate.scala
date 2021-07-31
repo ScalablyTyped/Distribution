@@ -3,18 +3,18 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SnapshotCreate extends ResponseEntry {
+trait SnapshotCreate
+  extends StObject
+     with ResponseEntry {
   
   /** only exists when a password has been set otherwise it will be undefined */
-  var salt: js.UndefOr[String] = js.native
+  var salt: js.UndefOr[String] = js.undefined
   
-  var snapshot: String = js.native
+  var snapshot: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object SnapshotCreate {
   

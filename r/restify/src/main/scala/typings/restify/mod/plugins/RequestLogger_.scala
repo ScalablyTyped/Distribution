@@ -2,19 +2,17 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestLogger_ extends StObject {
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var log: js.UndefOr[js.Any] = js.native
+  var log: js.UndefOr[js.Any] = js.undefined
   
-  var properties: js.UndefOr[js.Any] = js.native
+  var properties: js.UndefOr[js.Any] = js.undefined
   
-  var serializers: js.UndefOr[js.Any] = js.native
+  var serializers: js.UndefOr[js.Any] = js.undefined
 }
 object RequestLogger_ {
   

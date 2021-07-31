@@ -6,7 +6,6 @@ import typings.loopback.mod.RemoteMethodOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -96,16 +95,6 @@ trait TypeofModel extends StObject {
     paramName: String,
     getterName: String,
     hooks: Boolean,
-    options: js.UndefOr[scala.Nothing],
-    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
-  ): Unit = js.native
-  def nestRemoting(
-    relationName: String,
-    pathName: String,
-    filterMethod: String,
-    paramName: String,
-    getterName: String,
-    hooks: Boolean,
     options: js.Object
   ): Unit = js.native
   def nestRemoting(
@@ -116,6 +105,16 @@ trait TypeofModel extends StObject {
     getterName: String,
     hooks: Boolean,
     options: js.Object,
+    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
+  ): Unit = js.native
+  def nestRemoting(
+    relationName: String,
+    pathName: String,
+    filterMethod: String,
+    paramName: String,
+    getterName: String,
+    hooks: Boolean,
+    options: Unit,
     filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
   ): Unit = js.native
   

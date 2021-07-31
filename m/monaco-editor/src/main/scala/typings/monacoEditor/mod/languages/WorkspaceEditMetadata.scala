@@ -5,19 +5,17 @@ import typings.monacoEditor.anon.Id
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceEditMetadata extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var iconPath: js.UndefOr[Id | Uri | Dark] = js.native
+  var iconPath: js.UndefOr[Id | Uri | Dark] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var needsConfirmation: Boolean = js.native
+  var needsConfirmation: Boolean
 }
 object WorkspaceEditMetadata {
   

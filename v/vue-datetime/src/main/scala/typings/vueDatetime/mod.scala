@@ -5,7 +5,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,7 +22,9 @@ object mod extends Shortcut {
   val DatetimePopup: VueDateTimeConstructor = js.native
   
   @js.native
-  trait VueDateTimeConstructor extends VueConstructor[Vue] {
+  trait VueDateTimeConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     def data(): VueDateTimeData = js.native
     
@@ -32,10 +33,9 @@ object mod extends Shortcut {
     var props: VueDateTimeProps = js.native
   }
   
-  @js.native
   trait VueDateTimeData extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object VueDateTimeData {
     
@@ -53,12 +53,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueDateTimeProps extends StObject {
     
-    var inputClass: js.Any = js.native
+    var inputClass: js.Any
     
-    var inputStyle: js.Any = js.native
+    var inputStyle: js.Any
   }
   object VueDateTimeProps {
     

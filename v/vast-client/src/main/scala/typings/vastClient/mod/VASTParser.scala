@@ -7,7 +7,6 @@ import typings.vastClient.anon.PickVastErrorERRORCODE
 import typings.vastClient.anon.PickVastErrorExcludekeyof
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vast-client", "VASTParser")
@@ -47,7 +46,17 @@ class VASTParser () extends EventEmitter {
     /**
     * how many times the current url has been wrapped
     */
-  wrapperDepth: js.UndefOr[scala.Nothing],
+  wrapperDepth: Double
+  ): js.Promise[Document] = js.native
+  def fetchVAST(
+    /**
+    * The url to request the VAST document.
+    */
+  url: String,
+    /**
+    * how many times the current url has been wrapped
+    */
+  wrapperDepth: Double,
     /**
     * url of original wrapper
     */
@@ -61,17 +70,7 @@ class VASTParser () extends EventEmitter {
     /**
     * how many times the current url has been wrapped
     */
-  wrapperDepth: Double
-  ): js.Promise[Document] = js.native
-  def fetchVAST(
-    /**
-    * The url to request the VAST document.
-    */
-  url: String,
-    /**
-    * how many times the current url has been wrapped
-    */
-  wrapperDepth: Double,
+  wrapperDepth: Unit,
     /**
     * url of original wrapper
     */

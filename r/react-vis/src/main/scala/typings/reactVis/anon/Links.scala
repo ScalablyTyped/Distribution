@@ -3,17 +3,15 @@ package typings.reactVis.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Links extends StObject {
   
-  var labels: js.UndefOr[CSSProperties] = js.native
+  var labels: js.UndefOr[CSSProperties] = js.undefined
   
-  var links: js.UndefOr[CSSProperties] = js.native
+  var links: js.UndefOr[CSSProperties] = js.undefined
   
-  var rects: js.UndefOr[CSSProperties] = js.native
+  var rects: js.UndefOr[CSSProperties] = js.undefined
 }
 object Links {
   

@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * pushed to control plane systems. Typically, you create a new version of the
   * service config, and then create a Rollout to push the service config.
   */
-@js.native
 trait SchemaRollout extends StObject {
   
   /**
     * Creation time of the rollout. Readonly.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The user who created the Rollout. Readonly.
     */
-  var createdBy: js.UndefOr[String] = js.native
+  var createdBy: js.UndefOr[String] = js.undefined
   
   /**
     * The strategy associated with a rollout to delete a `ManagedService`.
     * Readonly.
     */
-  var deleteServiceStrategy: js.UndefOr[SchemaDeleteServiceStrategy] = js.native
+  var deleteServiceStrategy: js.UndefOr[SchemaDeleteServiceStrategy] = js.undefined
   
   /**
     * Optional unique identifier of this Rollout. Only lower case letters,
@@ -38,25 +36,25 @@ trait SchemaRollout extends StObject {
     * increasing positive number that is reset every day for each service. An
     * example of the generated rollout_id is &#39;2016-02-16r1&#39;
     */
-  var rolloutId: js.UndefOr[String] = js.native
+  var rolloutId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service associated with this Rollout.
     */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of this rollout. Readonly. In case of a failed rollout, the
     * system will automatically rollback to the current Rollout version.
     * Readonly.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Google Service Control selects service configurations based on traffic
     * percentage.
     */
-  var trafficPercentStrategy: js.UndefOr[SchemaTrafficPercentStrategy] = js.native
+  var trafficPercentStrategy: js.UndefOr[SchemaTrafficPercentStrategy] = js.undefined
 }
 object SchemaRollout {
   

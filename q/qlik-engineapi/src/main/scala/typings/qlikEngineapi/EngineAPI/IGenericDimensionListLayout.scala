@@ -2,16 +2,16 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericDimensionListLayout width extend GenericBaseLayout
   */
-@js.native
-trait IGenericDimensionListLayout extends IGenericBaseLayout {
+trait IGenericDimensionListLayout
+  extends StObject
+     with IGenericBaseLayout {
   
-  var qDimensionList: IDimensionList = js.native
+  var qDimensionList: IDimensionList
 }
 object IGenericDimensionListLayout {
   

@@ -1,0 +1,32 @@
+package typings.wixUiCore.standaloneSrcMod
+
+import typings.wixUiCore.anon.Handler
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("wix-ui-core/dist/standalone/src", "AddressInput")
+@js.native
+class AddressInput protected ()
+  extends typings.wixUiCore.componentsAddressInputMod.AddressInput {
+  def this(props: js.Any) = this()
+}
+/* static members */
+object AddressInput {
+  
+  @JSImport("wix-ui-core/dist/standalone/src", "AddressInput")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("wix-ui-core/dist/standalone/src", "AddressInput.defaultProps")
+  @js.native
+  def defaultProps: Handler = js.native
+  @scala.inline
+  def defaultProps_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("wix-ui-core/dist/standalone/src", "AddressInput.displayName")
+  @js.native
+  def displayName: String = js.native
+  @scala.inline
+  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

@@ -10,9 +10,9 @@ This package is for supporting Samsung TV Product API as commonjs style
 | ------------------ | :-------------: |
 | Full name          | tizen-tv-webapis |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 190 |
+| # downloads        | 1106 |
 | # stars            | 0 |
 
 ## Links

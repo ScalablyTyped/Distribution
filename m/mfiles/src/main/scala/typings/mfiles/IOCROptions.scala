@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFOCRLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOCROptions extends StObject {
   
-  def Clone(): IOCROptions = js.native
+  def Clone(): IOCROptions
   
-  var PrimaryLanguage: MFOCRLanguage = js.native
+  var PrimaryLanguage: MFOCRLanguage
   
-  var SecondaryLanguage: MFOCRLanguage = js.native
+  var SecondaryLanguage: MFOCRLanguage
 }
 object IOCROptions {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DDELinks
   * @since OOo 3.0
   */
-@js.native
-trait XDDELinks extends XNameAccess {
+trait XDDELinks
+  extends StObject
+     with XNameAccess {
   
   /**
     * adds a DDE link to the spreadsheet without updating it.
@@ -26,7 +26,7 @@ trait XDDELinks extends XNameAccess {
     * @param nMode the DDE link mode.
     * @returns the DDE link.
     */
-  def addDDELink(aApplication: String, aTopic: String, aItem: String, nMode: DDELinkMode): XDDELink = js.native
+  def addDDELink(aApplication: String, aTopic: String, aItem: String, nMode: DDELinkMode): XDDELink
 }
 object XDDELinks {
   

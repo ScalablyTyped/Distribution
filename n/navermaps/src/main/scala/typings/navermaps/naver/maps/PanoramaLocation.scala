@@ -2,21 +2,19 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaLocation extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var coord: LatLng = js.native
+  var coord: LatLng
   
-  var panoId: String = js.native
+  var panoId: String
   
-  var photodate: String = js.native
+  var photodate: String
   
-  var title: String = js.native
+  var title: String
 }
 object PanoramaLocation {
   

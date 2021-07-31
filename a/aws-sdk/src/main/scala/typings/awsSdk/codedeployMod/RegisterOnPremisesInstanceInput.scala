@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterOnPremisesInstanceInput extends StObject {
   
   /**
     * The ARN of the IAM session to associate with the on-premises instance.
     */
-  var iamSessionArn: js.UndefOr[IamSessionArn] = js.native
+  var iamSessionArn: js.UndefOr[IamSessionArn] = js.undefined
   
   /**
     * The ARN of the IAM user to associate with the on-premises instance.
     */
-  var iamUserArn: js.UndefOr[IamUserArn] = js.native
+  var iamUserArn: js.UndefOr[IamUserArn] = js.undefined
   
   /**
     * The name of the on-premises instance to register.
     */
-  var instanceName: InstanceName = js.native
+  var instanceName: InstanceName
 }
 object RegisterOnPremisesInstanceInput {
   

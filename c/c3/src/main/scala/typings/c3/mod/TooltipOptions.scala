@@ -8,10 +8,8 @@ import typings.c3.c3Strings.desc
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipOptions extends StObject {
   
   /**
@@ -22,32 +20,32 @@ trait TooltipOptions extends StObject {
     js.ThisFunction4[
       /* this */ ChartInternal, 
       /* data */ js.Array[DataPoint], 
-      /* defaultTitleFormat */ js.Function1[/* repeated */ js.Any, _], 
-      /* defaultValueFormat */ js.Function1[/* repeated */ js.Any, _], 
-      /* color */ js.Function1[/* repeated */ js.Any, _], 
+      /* defaultTitleFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
+      /* defaultValueFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
+      /* color */ js.Function1[/* repeated */ js.Any, js.Any], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var format: js.UndefOr[Name] = js.native
+  var format: js.UndefOr[Name] = js.undefined
   
   /**
     * Set if tooltip is grouped or not for the data points.
     * Defaults to `true`.
     */
-  var grouped: js.UndefOr[Boolean] = js.native
+  var grouped: js.UndefOr[Boolean] = js.undefined
   
   /** Show the tooltips based on the horizontal position of the mouse. */
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var init: js.UndefOr[PositionShow] = js.native
+  var init: js.UndefOr[PositionShow] = js.undefined
   
   /**
     * Set tooltip values order.
     */
   var order: js.UndefOr[
-    desc | asc | js.Array[_] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double]) | Null
-  ] = js.native
+    desc | asc | js.Array[js.Any] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double]) | Null
+  ] = js.undefined
   
   /**
     * Set custom position for the tooltip. This option can be used to modify the tooltip position by returning object that has top and left.
@@ -61,13 +59,13 @@ trait TooltipOptions extends StObject {
       /* element */ SVGElement, 
       Left
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Show or hide tooltip.
     * Defaults to `true`.
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object TooltipOptions {
   
@@ -85,9 +83,9 @@ object TooltipOptions {
       value: js.ThisFunction4[
           /* this */ ChartInternal, 
           /* data */ js.Array[DataPoint], 
-          /* defaultTitleFormat */ js.Function1[/* repeated */ js.Any, _], 
-          /* defaultValueFormat */ js.Function1[/* repeated */ js.Any, _], 
-          /* color */ js.Function1[/* repeated */ js.Any, _], 
+          /* defaultTitleFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
+          /* defaultValueFormat */ js.Function1[/* repeated */ js.Any, js.Any], 
+          /* color */ js.Function1[/* repeated */ js.Any, js.Any], 
           String
         ]
     ): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
@@ -120,7 +118,9 @@ object TooltipOptions {
     def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def setOrder(value: desc | asc | js.Array[_] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    def setOrder(
+      value: desc | asc | js.Array[js.Any] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double])
+    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrderFunction2(value: (/* data1 */ js.Any, /* data2 */ js.Any) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))

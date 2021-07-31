@@ -8,18 +8,20 @@ import typings.ionicReact.routerOptionsMod.RouterOptions
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionRouterContextMod {
+  
+  @JSImport("@ionic/react/dist/types/components/IonRouterContext", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/react/dist/types/components/IonRouterContext", "IonRouterContext")
   @js.native
   val IonRouterContext: Context[IonRouterContextState] = js.native
   
-  @JSImport("@ionic/react/dist/types/components/IonRouterContext", "useIonRouter")
-  @js.native
-  def useIonRouter(): IonRouterContextState = js.native
+  @scala.inline
+  def useIonRouter(): IonRouterContextState = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonRouter")().asInstanceOf[IonRouterContextState]
   
   @js.native
   trait IonRouterContextState extends StObject {
@@ -32,41 +34,31 @@ object ionRouterContextMod {
     def push(pathname: String): Unit = js.native
     def push(
       pathname: String,
-      routerDirection: js.UndefOr[scala.Nothing],
-      routeAction: js.UndefOr[scala.Nothing],
-      routerOptions: js.UndefOr[scala.Nothing],
+      routerDirection: Unit,
+      routeAction: Unit,
+      routerOptions: Unit,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
+    def push(pathname: String, routerDirection: Unit, routeAction: Unit, routerOptions: RouterOptions): Unit = js.native
     def push(
       pathname: String,
-      routerDirection: js.UndefOr[scala.Nothing],
-      routeAction: js.UndefOr[scala.Nothing],
-      routerOptions: RouterOptions
-    ): Unit = js.native
-    def push(
-      pathname: String,
-      routerDirection: js.UndefOr[scala.Nothing],
-      routeAction: js.UndefOr[scala.Nothing],
+      routerDirection: Unit,
+      routeAction: Unit,
       routerOptions: RouterOptions,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
-    def push(pathname: String, routerDirection: js.UndefOr[scala.Nothing], routeAction: RouteAction): Unit = js.native
+    def push(pathname: String, routerDirection: Unit, routeAction: RouteAction): Unit = js.native
     def push(
       pathname: String,
-      routerDirection: js.UndefOr[scala.Nothing],
+      routerDirection: Unit,
       routeAction: RouteAction,
-      routerOptions: js.UndefOr[scala.Nothing],
+      routerOptions: Unit,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
+    def push(pathname: String, routerDirection: Unit, routeAction: RouteAction, routerOptions: RouterOptions): Unit = js.native
     def push(
       pathname: String,
-      routerDirection: js.UndefOr[scala.Nothing],
-      routeAction: RouteAction,
-      routerOptions: RouterOptions
-    ): Unit = js.native
-    def push(
-      pathname: String,
-      routerDirection: js.UndefOr[scala.Nothing],
+      routerDirection: Unit,
       routeAction: RouteAction,
       routerOptions: RouterOptions,
       animationBuilder: AnimationBuilder
@@ -75,20 +67,20 @@ object ionRouterContextMod {
     def push(
       pathname: String,
       routerDirection: RouterDirection,
-      routeAction: js.UndefOr[scala.Nothing],
-      routerOptions: js.UndefOr[scala.Nothing],
+      routeAction: Unit,
+      routerOptions: Unit,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
     def push(
       pathname: String,
       routerDirection: RouterDirection,
-      routeAction: js.UndefOr[scala.Nothing],
+      routeAction: Unit,
       routerOptions: RouterOptions
     ): Unit = js.native
     def push(
       pathname: String,
       routerDirection: RouterDirection,
-      routeAction: js.UndefOr[scala.Nothing],
+      routeAction: Unit,
       routerOptions: RouterOptions,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
@@ -97,7 +89,7 @@ object ionRouterContextMod {
       pathname: String,
       routerDirection: RouterDirection,
       routeAction: RouteAction,
-      routerOptions: js.UndefOr[scala.Nothing],
+      routerOptions: Unit,
       animationBuilder: AnimationBuilder
     ): Unit = js.native
     def push(
@@ -114,6 +106,6 @@ object ionRouterContextMod {
       animationBuilder: AnimationBuilder
     ): Unit = js.native
     
-    var routeInfo: RouteInfo[_] = js.native
+    var routeInfo: RouteInfo[js.Any] = js.native
   }
 }

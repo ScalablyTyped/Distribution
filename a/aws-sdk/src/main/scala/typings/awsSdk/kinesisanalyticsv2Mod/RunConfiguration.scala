@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunConfiguration extends StObject {
   
   /**
     * Describes the restore behavior of a restarting application.
     */
-  var ApplicationRestoreConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationRestoreConfiguration] = js.native
+  var ApplicationRestoreConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationRestoreConfiguration] = js.undefined
   
   /**
     * Describes the starting parameters for a Flink-based Kinesis Data Analytics application.
     */
-  var FlinkRunConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FlinkRunConfiguration] = js.native
+  var FlinkRunConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.FlinkRunConfiguration] = js.undefined
   
   /**
     * Describes the starting parameters for a SQL-based Kinesis Data Analytics application application.
     */
-  var SqlRunConfigurations: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SqlRunConfigurations] = js.native
+  var SqlRunConfigurations: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.SqlRunConfigurations] = js.undefined
 }
 object RunConfiguration {
   

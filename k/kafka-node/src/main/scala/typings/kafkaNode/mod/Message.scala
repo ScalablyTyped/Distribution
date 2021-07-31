@@ -3,23 +3,21 @@ package typings.kafkaNode.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
-  var highWaterOffset: js.UndefOr[Double] = js.native
+  var highWaterOffset: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[String | Buffer] = js.native
+  var key: js.UndefOr[String | Buffer] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var partition: js.UndefOr[Double] = js.native
+  var partition: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
   
-  var value: String | Buffer = js.native
+  var value: String | Buffer
 }
 object Message {
   

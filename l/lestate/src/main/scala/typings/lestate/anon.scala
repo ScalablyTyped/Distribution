@@ -2,19 +2,17 @@ package typings.lestate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Force extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    def selector(state: js.Any): js.Object = js.native
+    def selector(state: js.Any): js.Object
   }
   object Force {
     
@@ -41,10 +39,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: Double = js.native
+    var id: Double
   }
   object Id {
     
@@ -62,6 +59,5 @@ object anon {
     }
   }
   
-  @js.native
   trait InitialState extends StObject
 }

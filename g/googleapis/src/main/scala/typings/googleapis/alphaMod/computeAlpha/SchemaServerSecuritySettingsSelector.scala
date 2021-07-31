@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * this selector match the Envoy&#39;s label and port, the server side
   * authentication and authorization settings are applied to the Envoy.
   */
-@js.native
 trait SchemaServerSecuritySettingsSelector extends StObject {
   
   /**
     * The labels associated with the XDS client.
     */
-  var labelMatches: js.UndefOr[js.Array[SchemaMetadataFilterLabelMatch]] = js.native
+  var labelMatches: js.UndefOr[js.Array[SchemaMetadataFilterLabelMatch]] = js.undefined
   
   /**
     * The listener port of the XDS client.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object SchemaServerSecuritySettingsSelector {
   

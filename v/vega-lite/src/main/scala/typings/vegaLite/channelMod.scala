@@ -55,10 +55,13 @@ import typings.vegaLite.vegaLiteStrings.y2Offset
 import typings.vegaLite.vegaLiteStrings.yOffset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelMod {
+  
+  @JSImport("vega-lite/build/src/channel", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/channel", "ANGLE")
   @js.native
@@ -278,279 +281,258 @@ object channelMod {
   @js.native
   val Y2: y2 = js.native
   
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_angle(channel: angle): MainChannelOf[angle] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_color(channel: color): MainChannelOf[color] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_column(channel: column): MainChannelOf[column] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_description(channel: description): MainChannelOf[description] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_detail(channel: detail): MainChannelOf[detail] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_facet(channel: facet): MainChannelOf[facet] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_fill(channel: fill): MainChannelOf[fill] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_fillOpacity(channel: fillOpacity): MainChannelOf[fillOpacity] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_href(channel: href): MainChannelOf[href] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_key(channel: key): MainChannelOf[key] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_latitude(channel: latitude): MainChannelOf[latitude] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_latitude2(channel: latitude2): MainChannelOf[latitude2] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_longitude(channel: longitude): MainChannelOf[longitude] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_longitude2(channel: longitude2): MainChannelOf[longitude2] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_opacity(channel: opacity): MainChannelOf[opacity] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_order(channel: order): MainChannelOf[order] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_radius(channel: radius): MainChannelOf[radius] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_radius2(channel: radius2): MainChannelOf[radius2] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_row(channel: row): MainChannelOf[row] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_shape(channel: shape): MainChannelOf[shape] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_size(channel: size): MainChannelOf[size] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_stroke(channel: stroke): MainChannelOf[stroke] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_strokeDash(channel: strokeDash): MainChannelOf[strokeDash] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_strokeOpacity(channel: strokeOpacity): MainChannelOf[strokeOpacity] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_strokeWidth(channel: strokeWidth): MainChannelOf[strokeWidth] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_text(channel: text): MainChannelOf[text] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_theta(channel: theta): MainChannelOf[theta] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_theta2(channel: theta2): MainChannelOf[theta2] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_tooltip(channel: tooltip): MainChannelOf[tooltip] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_url(channel: url): MainChannelOf[url] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_x(channel: x): MainChannelOf[x] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_x2(channel: x2): MainChannelOf[x2] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_y(channel: y): MainChannelOf[y] = js.native
-  @JSImport("vega-lite/build/src/channel", "getMainRangeChannel")
-  @js.native
-  def getMainRangeChannel_y2(channel: y2): MainChannelOf[y2] = js.native
+  @scala.inline
+  def getMainRangeChannel_angle(channel: angle): MainChannelOf[angle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[angle]]
   
-  @JSImport("vega-lite/build/src/channel", "getOffsetChannel")
-  @js.native
-  def getOffsetChannel(channel: Channel): xOffset | yOffset | x2Offset | y2Offset | thetaOffset | radiusOffset | theta2Offset | radius2Offset = js.native
+  @scala.inline
+  def getMainRangeChannel_color(channel: color): MainChannelOf[color] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[color]]
   
-  @JSImport("vega-lite/build/src/channel", "getPositionChannelFromLatLong")
-  @js.native
-  def getPositionChannelFromLatLong(channel: GeoPositionChannel): PositionChannel = js.native
+  @scala.inline
+  def getMainRangeChannel_column(channel: column): MainChannelOf[column] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[column]]
   
-  @JSImport("vega-lite/build/src/channel", "getPositionScaleChannel")
-  @js.native
-  def getPositionScaleChannel_height(sizeType: height): PositionScaleChannel = js.native
-  @JSImport("vega-lite/build/src/channel", "getPositionScaleChannel")
-  @js.native
-  def getPositionScaleChannel_width(sizeType: width): PositionScaleChannel = js.native
+  @scala.inline
+  def getMainRangeChannel_description(channel: description): MainChannelOf[description] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[description]]
   
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_angle(channel: angle): js.UndefOr[SecondaryChannelOf[angle]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_color(channel: color): js.UndefOr[SecondaryChannelOf[color]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_description(channel: description): js.UndefOr[SecondaryChannelOf[description]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_detail(channel: detail): js.UndefOr[SecondaryChannelOf[detail]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_fill(channel: fill): js.UndefOr[SecondaryChannelOf[fill]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_fillOpacity(channel: fillOpacity): js.UndefOr[SecondaryChannelOf[fillOpacity]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_href(channel: href): js.UndefOr[SecondaryChannelOf[href]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_key(channel: key): js.UndefOr[SecondaryChannelOf[key]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_latitude(channel: latitude): js.UndefOr[SecondaryChannelOf[latitude]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_latitude2(channel: latitude2): js.UndefOr[SecondaryChannelOf[latitude2]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_longitude(channel: longitude): js.UndefOr[SecondaryChannelOf[longitude]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_longitude2(channel: longitude2): js.UndefOr[SecondaryChannelOf[longitude2]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_opacity(channel: opacity): js.UndefOr[SecondaryChannelOf[opacity]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_order(channel: order): js.UndefOr[SecondaryChannelOf[order]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_radius(channel: radius): js.UndefOr[SecondaryChannelOf[radius]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_radius2(channel: radius2): js.UndefOr[SecondaryChannelOf[radius2]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_shape(channel: shape): js.UndefOr[SecondaryChannelOf[shape]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_size(channel: size): js.UndefOr[SecondaryChannelOf[size]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_stroke(channel: stroke): js.UndefOr[SecondaryChannelOf[stroke]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_strokeDash(channel: strokeDash): js.UndefOr[SecondaryChannelOf[strokeDash]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_strokeOpacity(channel: strokeOpacity): js.UndefOr[SecondaryChannelOf[strokeOpacity]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_strokeWidth(channel: strokeWidth): js.UndefOr[SecondaryChannelOf[strokeWidth]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_text(channel: text): js.UndefOr[SecondaryChannelOf[text]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_theta(channel: theta): js.UndefOr[SecondaryChannelOf[theta]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_theta2(channel: theta2): js.UndefOr[SecondaryChannelOf[theta2]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_tooltip(channel: tooltip): js.UndefOr[SecondaryChannelOf[tooltip]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_url(channel: url): js.UndefOr[SecondaryChannelOf[url]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_x(channel: x): js.UndefOr[SecondaryChannelOf[x]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_x2(channel: x2): js.UndefOr[SecondaryChannelOf[x2]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_y(channel: y): js.UndefOr[SecondaryChannelOf[y]] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSecondaryRangeChannel")
-  @js.native
-  def getSecondaryRangeChannel_y2(channel: y2): js.UndefOr[SecondaryChannelOf[y2]] = js.native
+  @scala.inline
+  def getMainRangeChannel_detail(channel: detail): MainChannelOf[detail] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[detail]]
   
-  @JSImport("vega-lite/build/src/channel", "getSizeChannel")
-  @js.native
-  def getSizeChannel(channel: Channel): js.UndefOr[width | height] = js.native
-  @JSImport("vega-lite/build/src/channel", "getSizeChannel")
-  @js.native
-  def getSizeChannel(channel: PositionChannel): width | height = js.native
+  @scala.inline
+  def getMainRangeChannel_facet(channel: facet): MainChannelOf[facet] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[facet]]
   
-  @JSImport("vega-lite/build/src/channel", "getVgPositionChannel")
-  @js.native
-  def getVgPositionChannel(channel: PolarPositionChannel): x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle = js.native
-  @JSImport("vega-lite/build/src/channel", "getVgPositionChannel")
-  @js.native
-  def getVgPositionChannel(channel: PositionChannel): x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle = js.native
+  @scala.inline
+  def getMainRangeChannel_fill(channel: fill): MainChannelOf[fill] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[fill]]
   
-  @JSImport("vega-lite/build/src/channel", "isChannel")
-  @js.native
-  def isChannel(str: String): /* is vega-lite.vega-lite/build/src/channel.Channel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_fillOpacity(channel: fillOpacity): MainChannelOf[fillOpacity] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[fillOpacity]]
   
-  @JSImport("vega-lite/build/src/channel", "isColorChannel")
-  @js.native
-  def isColorChannel(channel: Channel): /* is vega-lite.vega-lite/build/src/channel.ColorChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_href(channel: href): MainChannelOf[href] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[href]]
   
-  @JSImport("vega-lite/build/src/channel", "isGeoPositionChannel")
-  @js.native
-  def isGeoPositionChannel(c: Channel): /* is vega-lite.vega-lite/build/src/channel.GeoPositionChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_key(channel: key): MainChannelOf[key] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[key]]
   
-  @JSImport("vega-lite/build/src/channel", "isNonPositionScaleChannel")
-  @js.native
-  def isNonPositionScaleChannel(channel: Channel): /* is vega-lite.vega-lite/build/src/channel.NonPositionScaleChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_latitude(channel: latitude): MainChannelOf[latitude] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[latitude]]
   
-  @JSImport("vega-lite/build/src/channel", "isPolarPositionChannel")
-  @js.native
-  def isPolarPositionChannel(c: Channel): /* is vega-lite.vega-lite/build/src/channel.PolarPositionChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_latitude2(channel: latitude2): MainChannelOf[latitude2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[latitude2]]
   
-  @JSImport("vega-lite/build/src/channel", "isScaleChannel")
-  @js.native
-  def isScaleChannel(channel: Channel): /* is vega-lite.vega-lite/build/src/channel.ScaleChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_longitude(channel: longitude): MainChannelOf[longitude] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[longitude]]
   
-  @JSImport("vega-lite/build/src/channel", "isSecondaryRangeChannel")
-  @js.native
-  def isSecondaryRangeChannel(c: ExtendedChannel): /* is vega-lite.vega-lite/build/src/channel.SecondaryRangeChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_longitude2(channel: longitude2): MainChannelOf[longitude2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[longitude2]]
   
-  @JSImport("vega-lite/build/src/channel", "isSingleDefUnitChannel")
-  @js.native
-  def isSingleDefUnitChannel(str: String): /* is vega-lite.vega-lite/build/src/channel.SingleDefUnitChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_opacity(channel: opacity): MainChannelOf[opacity] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[opacity]]
   
-  @JSImport("vega-lite/build/src/channel", "isXorY")
-  @js.native
-  def isXorY(channel: ExtendedChannel): /* is vega-lite.vega-lite/build/src/channel.PositionScaleChannel */ Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_order(channel: order): MainChannelOf[order] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[order]]
   
-  @JSImport("vega-lite/build/src/channel", "rangeType")
-  @js.native
-  def rangeType(channel: ExtendedChannel): RangeType = js.native
+  @scala.inline
+  def getMainRangeChannel_radius(channel: radius): MainChannelOf[radius] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[radius]]
   
-  @JSImport("vega-lite/build/src/channel", "supportLegend")
-  @js.native
-  def supportLegend(channel: NonPositionScaleChannel): Boolean = js.native
+  @scala.inline
+  def getMainRangeChannel_radius2(channel: radius2): MainChannelOf[radius2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[radius2]]
   
-  @JSImport("vega-lite/build/src/channel", "supportMark")
-  @js.native
-  def supportMark(channel: Channel, mark: Mark): binned | always = js.native
+  @scala.inline
+  def getMainRangeChannel_row(channel: row): MainChannelOf[row] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[row]]
+  
+  @scala.inline
+  def getMainRangeChannel_shape(channel: shape): MainChannelOf[shape] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[shape]]
+  
+  @scala.inline
+  def getMainRangeChannel_size(channel: size): MainChannelOf[size] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[size]]
+  
+  @scala.inline
+  def getMainRangeChannel_stroke(channel: stroke): MainChannelOf[stroke] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[stroke]]
+  
+  @scala.inline
+  def getMainRangeChannel_strokeDash(channel: strokeDash): MainChannelOf[strokeDash] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[strokeDash]]
+  
+  @scala.inline
+  def getMainRangeChannel_strokeOpacity(channel: strokeOpacity): MainChannelOf[strokeOpacity] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[strokeOpacity]]
+  
+  @scala.inline
+  def getMainRangeChannel_strokeWidth(channel: strokeWidth): MainChannelOf[strokeWidth] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[strokeWidth]]
+  
+  @scala.inline
+  def getMainRangeChannel_text(channel: text): MainChannelOf[text] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[text]]
+  
+  @scala.inline
+  def getMainRangeChannel_theta(channel: theta): MainChannelOf[theta] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[theta]]
+  
+  @scala.inline
+  def getMainRangeChannel_theta2(channel: theta2): MainChannelOf[theta2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[theta2]]
+  
+  @scala.inline
+  def getMainRangeChannel_tooltip(channel: tooltip): MainChannelOf[tooltip] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[tooltip]]
+  
+  @scala.inline
+  def getMainRangeChannel_url(channel: url): MainChannelOf[url] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[url]]
+  
+  @scala.inline
+  def getMainRangeChannel_x(channel: x): MainChannelOf[x] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[x]]
+  
+  @scala.inline
+  def getMainRangeChannel_x2(channel: x2): MainChannelOf[x2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[x2]]
+  
+  @scala.inline
+  def getMainRangeChannel_y(channel: y): MainChannelOf[y] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[y]]
+  
+  @scala.inline
+  def getMainRangeChannel_y2(channel: y2): MainChannelOf[y2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[y2]]
+  
+  @scala.inline
+  def getOffsetChannel(channel: Channel): xOffset | yOffset | x2Offset | y2Offset | thetaOffset | radiusOffset | theta2Offset | radius2Offset = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[xOffset | yOffset | x2Offset | y2Offset | thetaOffset | radiusOffset | theta2Offset | radius2Offset]
+  
+  @scala.inline
+  def getPositionChannelFromLatLong(channel: GeoPositionChannel): PositionChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionChannelFromLatLong")(channel.asInstanceOf[js.Any]).asInstanceOf[PositionChannel]
+  
+  @scala.inline
+  def getPositionScaleChannel_height(sizeType: height): PositionScaleChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionScaleChannel")(sizeType.asInstanceOf[js.Any]).asInstanceOf[PositionScaleChannel]
+  
+  @scala.inline
+  def getPositionScaleChannel_width(sizeType: width): PositionScaleChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionScaleChannel")(sizeType.asInstanceOf[js.Any]).asInstanceOf[PositionScaleChannel]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_angle(channel: angle): js.UndefOr[SecondaryChannelOf[angle]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[angle]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_color(channel: color): js.UndefOr[SecondaryChannelOf[color]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[color]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_description(channel: description): js.UndefOr[SecondaryChannelOf[description]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[description]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_detail(channel: detail): js.UndefOr[SecondaryChannelOf[detail]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[detail]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_fill(channel: fill): js.UndefOr[SecondaryChannelOf[fill]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[fill]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_fillOpacity(channel: fillOpacity): js.UndefOr[SecondaryChannelOf[fillOpacity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[fillOpacity]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_href(channel: href): js.UndefOr[SecondaryChannelOf[href]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[href]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_key(channel: key): js.UndefOr[SecondaryChannelOf[key]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[key]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_latitude(channel: latitude): js.UndefOr[SecondaryChannelOf[latitude]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[latitude]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_latitude2(channel: latitude2): js.UndefOr[SecondaryChannelOf[latitude2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[latitude2]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_longitude(channel: longitude): js.UndefOr[SecondaryChannelOf[longitude]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[longitude]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_longitude2(channel: longitude2): js.UndefOr[SecondaryChannelOf[longitude2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[longitude2]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_opacity(channel: opacity): js.UndefOr[SecondaryChannelOf[opacity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[opacity]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_order(channel: order): js.UndefOr[SecondaryChannelOf[order]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[order]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_radius(channel: radius): js.UndefOr[SecondaryChannelOf[radius]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[radius]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_radius2(channel: radius2): js.UndefOr[SecondaryChannelOf[radius2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[radius2]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_shape(channel: shape): js.UndefOr[SecondaryChannelOf[shape]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[shape]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_size(channel: size): js.UndefOr[SecondaryChannelOf[size]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[size]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_stroke(channel: stroke): js.UndefOr[SecondaryChannelOf[stroke]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[stroke]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_strokeDash(channel: strokeDash): js.UndefOr[SecondaryChannelOf[strokeDash]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[strokeDash]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_strokeOpacity(channel: strokeOpacity): js.UndefOr[SecondaryChannelOf[strokeOpacity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[strokeOpacity]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_strokeWidth(channel: strokeWidth): js.UndefOr[SecondaryChannelOf[strokeWidth]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[strokeWidth]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_text(channel: text): js.UndefOr[SecondaryChannelOf[text]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[text]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_theta(channel: theta): js.UndefOr[SecondaryChannelOf[theta]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[theta]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_theta2(channel: theta2): js.UndefOr[SecondaryChannelOf[theta2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[theta2]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_tooltip(channel: tooltip): js.UndefOr[SecondaryChannelOf[tooltip]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[tooltip]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_url(channel: url): js.UndefOr[SecondaryChannelOf[url]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[url]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_x(channel: x): js.UndefOr[SecondaryChannelOf[x]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[x]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_x2(channel: x2): js.UndefOr[SecondaryChannelOf[x2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[x2]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_y(channel: y): js.UndefOr[SecondaryChannelOf[y]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[y]]]
+  
+  @scala.inline
+  def getSecondaryRangeChannel_y2(channel: y2): js.UndefOr[SecondaryChannelOf[y2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[y2]]]
+  
+  @scala.inline
+  def getSizeChannel(channel: Channel): js.UndefOr[width | height] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[width | height]]
+  @scala.inline
+  def getSizeChannel(channel: PositionChannel): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[width | height]
+  
+  @scala.inline
+  def getVgPositionChannel(channel: PolarPositionChannel): x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle = ^.asInstanceOf[js.Dynamic].applyDynamic("getVgPositionChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle]
+  @scala.inline
+  def getVgPositionChannel(channel: PositionChannel): x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle = ^.asInstanceOf[js.Dynamic].applyDynamic("getVgPositionChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle]
+  
+  @scala.inline
+  def isChannel(str: String): /* is vega-lite.vega-lite/build/src/channel.Channel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChannel")(str.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.Channel */ Boolean]
+  
+  @scala.inline
+  def isColorChannel(channel: Channel): /* is vega-lite.vega-lite/build/src/channel.ColorChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColorChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.ColorChannel */ Boolean]
+  
+  @scala.inline
+  def isGeoPositionChannel(c: Channel): /* is vega-lite.vega-lite/build/src/channel.GeoPositionChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGeoPositionChannel")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.GeoPositionChannel */ Boolean]
+  
+  @scala.inline
+  def isNonPositionScaleChannel(channel: Channel): /* is vega-lite.vega-lite/build/src/channel.NonPositionScaleChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNonPositionScaleChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.NonPositionScaleChannel */ Boolean]
+  
+  @scala.inline
+  def isPolarPositionChannel(c: Channel): /* is vega-lite.vega-lite/build/src/channel.PolarPositionChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPolarPositionChannel")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.PolarPositionChannel */ Boolean]
+  
+  @scala.inline
+  def isScaleChannel(channel: Channel): /* is vega-lite.vega-lite/build/src/channel.ScaleChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScaleChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.ScaleChannel */ Boolean]
+  
+  @scala.inline
+  def isSecondaryRangeChannel(c: ExtendedChannel): /* is vega-lite.vega-lite/build/src/channel.SecondaryRangeChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSecondaryRangeChannel")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.SecondaryRangeChannel */ Boolean]
+  
+  @scala.inline
+  def isSingleDefUnitChannel(str: String): /* is vega-lite.vega-lite/build/src/channel.SingleDefUnitChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSingleDefUnitChannel")(str.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.SingleDefUnitChannel */ Boolean]
+  
+  @scala.inline
+  def isXorY(channel: ExtendedChannel): /* is vega-lite.vega-lite/build/src/channel.PositionScaleChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXorY")(channel.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.PositionScaleChannel */ Boolean]
+  
+  @scala.inline
+  def rangeType(channel: ExtendedChannel): RangeType = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeType")(channel.asInstanceOf[js.Any]).asInstanceOf[RangeType]
+  
+  @scala.inline
+  def supportLegend(channel: NonPositionScaleChannel): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportLegend")(channel.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supportMark(channel: Channel, mark: Mark): binned | always = (^.asInstanceOf[js.Dynamic].applyDynamic("supportMark")(channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[binned | always]
   
   /* keyof vega-lite.vega-lite/build/src/encoding.Encoding<any> */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.x
@@ -585,7 +567,9 @@ object channelMod {
     - typings.vegaLite.vegaLiteStrings.description
     - typings.vegaLite.vegaLiteStrings.order
   */
-  trait Channel extends ExtendedChannel
+  trait Channel
+    extends StObject
+       with ExtendedChannel
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.color
@@ -616,7 +600,9 @@ object channelMod {
     - typings.vegaLite.vegaLiteStrings.row
     - typings.vegaLite.vegaLiteStrings.column
   */
-  trait FacetChannel extends ExtendedChannel
+  trait FacetChannel
+    extends StObject
+       with ExtendedChannel
   
   /* keyof vega-lite.anon.Latitude */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.longitude
@@ -672,7 +658,7 @@ object channelMod {
   type ScaleChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'stroke' | 'color' | 'shape' | 'x' | 'y' | 'theta' | 'radius' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle'>[number] */ js.Any
   
   /* Rewritten from type alias, can be one of: 
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.vegaLite.vegaLiteStrings.radius2
     - typings.vegaLite.vegaLiteStrings.theta2
     - typings.vegaLite.vegaLiteStrings.longitude2
@@ -717,36 +703,35 @@ object channelMod {
   type SingleDefUnitChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'text' | 'fill' | 'stroke' | 'color' | 'shape' | 'description' | 'x' | 'y' | 'x2' | 'y2' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2' | 'theta' | 'theta2' | 'radius' | 'radius2' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle' | 'key' | 'href' | 'url'>[number] */ js.Any
   
   /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/mark.Mark, 'always' | 'binned'>> */
-  @js.native
   trait SupportedMark extends StObject {
     
-    var arc: js.UndefOr[always | binned] = js.native
+    var arc: js.UndefOr[always | binned] = js.undefined
     
-    var area: js.UndefOr[always | binned] = js.native
+    var area: js.UndefOr[always | binned] = js.undefined
     
-    var bar: js.UndefOr[always | binned] = js.native
+    var bar: js.UndefOr[always | binned] = js.undefined
     
-    var circle: js.UndefOr[always | binned] = js.native
+    var circle: js.UndefOr[always | binned] = js.undefined
     
-    var geoshape: js.UndefOr[always | binned] = js.native
+    var geoshape: js.UndefOr[always | binned] = js.undefined
     
-    var image: js.UndefOr[always | binned] = js.native
+    var image: js.UndefOr[always | binned] = js.undefined
     
-    var line: js.UndefOr[always | binned] = js.native
+    var line: js.UndefOr[always | binned] = js.undefined
     
-    var point: js.UndefOr[always | binned] = js.native
+    var point: js.UndefOr[always | binned] = js.undefined
     
-    var rect: js.UndefOr[always | binned] = js.native
+    var rect: js.UndefOr[always | binned] = js.undefined
     
-    var rule: js.UndefOr[always | binned] = js.native
+    var rule: js.UndefOr[always | binned] = js.undefined
     
-    var square: js.UndefOr[always | binned] = js.native
+    var square: js.UndefOr[always | binned] = js.undefined
     
-    var text: js.UndefOr[always | binned] = js.native
+    var text: js.UndefOr[always | binned] = js.undefined
     
-    var tick: js.UndefOr[always | binned] = js.native
+    var tick: js.UndefOr[always | binned] = js.undefined
     
-    var trail: js.UndefOr[always | binned] = js.native
+    var trail: js.UndefOr[always | binned] = js.undefined
   }
   object SupportedMark {
     

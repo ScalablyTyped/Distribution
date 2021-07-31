@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAttributeDimValues...
   */
-@js.native
 trait INxAttributeDimValues extends StObject {
   
   /**
     * List of values.
     */
-  var qValues: js.Array[INxSimpleDimValue] = js.native
+  var qValues: js.Array[INxSimpleDimValue]
 }
 object INxAttributeDimValues {
   

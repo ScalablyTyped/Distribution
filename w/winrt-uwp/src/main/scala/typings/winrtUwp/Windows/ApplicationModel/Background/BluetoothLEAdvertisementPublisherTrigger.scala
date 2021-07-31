@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that is registered to advertise a Bluetooth LE advertisement in the background. */
-@js.native
 trait BluetoothLEAdvertisementPublisherTrigger extends StObject {
   
   /** Gets the Bluetooth LE advertisement to configure and publish in the background. */
-  var advertisement: BluetoothLEAdvertisement = js.native
+  var advertisement: BluetoothLEAdvertisement
 }
 object BluetoothLEAdvertisementPublisherTrigger {
   

@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lastnote extends StObject {
   
-  var first_indices: js.UndefOr[js.Array[Double]] = js.native
+  var first_indices: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var first_note: typings.vexflow.Vex.Flow.Note = js.native
+  var first_note: typings.vexflow.Vex.Flow.Note
   
-  var last_indices: js.UndefOr[js.Array[Double]] = js.native
+  var last_indices: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var last_note: typings.vexflow.Vex.Flow.Note = js.native
+  var last_note: typings.vexflow.Vex.Flow.Note
 }
 object Lastnote {
   

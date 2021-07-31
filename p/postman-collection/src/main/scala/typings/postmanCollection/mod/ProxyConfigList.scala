@@ -2,7 +2,6 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "ProxyConfigList")
@@ -16,7 +15,10 @@ class ProxyConfigList protected () extends PropertyList[ProxyConfig] {
 /* static members */
 object ProxyConfigList {
   
-  @JSImport("postman-collection", "ProxyConfigList.isProxyConfigList")
+  @JSImport("postman-collection", "ProxyConfigList")
   @js.native
-  def isProxyConfigList(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isProxyConfigList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfigList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

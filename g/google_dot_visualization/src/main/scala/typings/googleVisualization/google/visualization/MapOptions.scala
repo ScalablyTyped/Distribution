@@ -3,35 +3,33 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.anon.MapTypeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
-  var enableScrollWheel: js.UndefOr[Boolean] = js.native
+  var enableScrollWheel: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Object] = js.native
+  var icons: js.UndefOr[js.Object] = js.undefined
   
-  var lineColor: js.UndefOr[String] = js.native
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var mapType: js.UndefOr[String] = js.native
+  var mapType: js.UndefOr[String] = js.undefined
   
-  var mapTypeIds: js.UndefOr[js.Array[_]] = js.native
+  var mapTypeIds: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var maps: MapTypeId = js.native
+  var maps: MapTypeId
   
-  var showInfoWindow: js.UndefOr[Boolean] = js.native
+  var showInfoWindow: js.UndefOr[Boolean] = js.undefined
   
-  var showLine: js.UndefOr[Boolean] = js.native
+  var showLine: js.UndefOr[Boolean] = js.undefined
   
-  var showTooltip: js.UndefOr[Boolean] = js.native
+  var showTooltip: js.UndefOr[Boolean] = js.undefined
   
-  var useMapTypeControl: js.UndefOr[Boolean] = js.native
+  var useMapTypeControl: js.UndefOr[Boolean] = js.undefined
   
-  var zoomLevel: js.UndefOr[Double] = js.native
+  var zoomLevel: js.UndefOr[Double] = js.undefined
 }
 object MapOptions {
   
@@ -72,7 +70,7 @@ object MapOptions {
     def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTypeIds(value: js.Array[_]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
+    def setMapTypeIds(value: js.Array[js.Any]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMapTypeIdsUndefined: Self = StObject.set(x, "mapTypeIds", js.undefined)

@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataLabelsFilterOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) The operator to compare by. Can be one of
     * `>`, `<`, `>=`, `<=`, `==`, and `===`.
     */
-  var operator: js.UndefOr[OptionsOperatorValue] = js.native
+  var operator: js.UndefOr[OptionsOperatorValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The point property to filter by. Point
     * options are passed directly to properties, additionally there are `y`
     * value, `percentage` and others listed under Highcharts.Point members.
     */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The value to compare against.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object DataLabelsFilterOptionsObject {
   

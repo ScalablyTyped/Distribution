@@ -4,31 +4,29 @@ import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStreamSocketInformation extends StObject {
   
-  var bandwidthStatistics: BandwidthStatistics = js.native
+  var bandwidthStatistics: BandwidthStatistics
   
-  var localAddress: HostName = js.native
+  var localAddress: HostName
   
-  var localPort: String = js.native
+  var localPort: String
   
-  var protectionLevel: SocketProtectionLevel = js.native
+  var protectionLevel: SocketProtectionLevel
   
-  var remoteAddress: HostName = js.native
+  var remoteAddress: HostName
   
-  var remoteHostName: HostName = js.native
+  var remoteHostName: HostName
   
-  var remotePort: String = js.native
+  var remotePort: String
   
-  var remoteServiceName: String = js.native
+  var remoteServiceName: String
   
-  var roundTripTimeStatistics: RoundTripTimeStatistics = js.native
+  var roundTripTimeStatistics: RoundTripTimeStatistics
   
-  var sessionKey: IBuffer = js.native
+  var sessionKey: IBuffer
 }
 object IStreamSocketInformation {
   

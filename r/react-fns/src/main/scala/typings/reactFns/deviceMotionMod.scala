@@ -5,10 +5,13 @@ import typings.reactFns.deviceMotionDeviceMotionMod.DeviceMotionProps
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceMotionMod {
+  
+  @JSImport("react-fns/dist/DeviceMotion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-fns/dist/DeviceMotion", "DeviceMotion")
   @js.native
@@ -22,7 +25,6 @@ object deviceMotionMod {
     def this(props: SharedRenderProps[DeviceMotionProps], context: js.Any) = this()
   }
   
-  @JSImport("react-fns/dist/DeviceMotion", "withDeviceMotion")
-  @js.native
-  def withDeviceMotion[Props](Component: ComponentType[Props with DeviceMotionProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withDeviceMotion[Props](Component: ComponentType[Props & DeviceMotionProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDeviceMotion")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

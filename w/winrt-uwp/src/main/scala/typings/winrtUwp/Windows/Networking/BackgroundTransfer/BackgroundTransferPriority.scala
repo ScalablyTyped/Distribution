@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object BackgroundTransferPriority extends StObject {
   
   /** Default priority setting for an operation. By default when a new operation is created, it is placed at the end of the current transfer queue. */
   @js.native
-  sealed trait default extends BackgroundTransferPriority
+  sealed trait default
+    extends StObject
+       with BackgroundTransferPriority
   
   /** High priority setting for an operation. Ensures that the operation doesn't get placed at the very end of the queue, and is instead placed near the front. */
   @js.native
-  sealed trait high extends BackgroundTransferPriority
+  sealed trait high
+    extends StObject
+       with BackgroundTransferPriority
 }

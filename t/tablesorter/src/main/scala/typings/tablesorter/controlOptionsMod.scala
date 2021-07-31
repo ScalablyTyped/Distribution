@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlOptionsMod {
   
-  @js.native
   trait ControlOptions extends StObject {
     
     /**
       * The label of the control.
       */
-    var cellText: js.UndefOr[String] = js.native
+    var cellText: js.UndefOr[String] = js.undefined
   }
   object ControlOptions {
     

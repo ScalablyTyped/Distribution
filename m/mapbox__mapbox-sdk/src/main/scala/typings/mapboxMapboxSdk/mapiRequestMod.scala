@@ -10,7 +10,6 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapiRequestMod {
@@ -29,16 +28,15 @@ object mapiRequestMod {
     def unrestricted: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unrestricted = "unrestricted".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unrestricted]
   }
   
-  @js.native
   trait EventEmitter extends StObject {
     
-    var downloadProgress: ProgressEvent[EventTarget] = js.native
+    var downloadProgress: ProgressEvent[EventTarget]
     
-    var error: MapiError = js.native
+    var error: MapiError
     
-    var response: MapiResponse = js.native
+    var response: MapiResponse
     
-    var uploadProgress: ProgressEvent[EventTarget] = js.native
+    var uploadProgress: ProgressEvent[EventTarget]
   }
   object EventEmitter {
     
@@ -173,14 +171,13 @@ object mapiRequestMod {
     def url(accessToken: String): String = js.native
   }
   
-  @js.native
   trait PageCallbackFunction extends StObject {
     
-    var error: MapiError = js.native
+    var error: MapiError
     
-    def next(): Unit = js.native
+    def next(): Unit
     
-    var response: MapiResponse = js.native
+    var response: MapiResponse
   }
   object PageCallbackFunction {
     

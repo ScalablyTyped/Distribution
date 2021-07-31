@@ -7,7 +7,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,31 +16,46 @@ object mod {
   /**
     * Create a new router.
     */
-  class ^[StateT, CustomT] () extends Router[StateT, CustomT] {
+  class ^[StateT, CustomT] ()
+    extends StObject
+       with Router[StateT, CustomT] {
     def this(opt: RouterOptions) = this()
   }
+  @JSImport("@koa/router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@koa/router", "Layer")
   @js.native
   class Layer protected () extends StObject {
-    def this(path: String, methods: js.Array[String], middleware: js.Array[Middleware[_, js.Object]]) = this()
-    def this(path: String, methods: js.Array[String], middleware: Middleware[_, js.Object]) = this()
-    def this(path: RegExp, methods: js.Array[String], middleware: js.Array[Middleware[_, js.Object]]) = this()
-    def this(path: RegExp, methods: js.Array[String], middleware: Middleware[_, js.Object]) = this()
+    def this(path: String, methods: js.Array[String], middleware: js.Array[Middleware[js.Any, js.Object]]) = this()
+    def this(path: String, methods: js.Array[String], middleware: Middleware[js.Any, js.Object]) = this()
+    def this(path: RegExp, methods: js.Array[String], middleware: js.Array[Middleware[js.Any, js.Object]]) = this()
+    def this(path: RegExp, methods: js.Array[String], middleware: Middleware[js.Any, js.Object]) = this()
     def this(
       path: String,
       methods: js.Array[String],
-      middleware: js.Array[Middleware[_, js.Object]],
+      middleware: js.Array[Middleware[js.Any, js.Object]],
       opts: LayerOptions
     ) = this()
-    def this(path: String, methods: js.Array[String], middleware: Middleware[_, js.Object], opts: LayerOptions) = this()
+    def this(
+      path: String,
+      methods: js.Array[String],
+      middleware: Middleware[js.Any, js.Object],
+      opts: LayerOptions
+    ) = this()
     def this(
       path: RegExp,
       methods: js.Array[String],
-      middleware: js.Array[Middleware[_, js.Object]],
+      middleware: js.Array[Middleware[js.Any, js.Object]],
       opts: LayerOptions
     ) = this()
-    def this(path: RegExp, methods: js.Array[String], middleware: Middleware[_, js.Object], opts: LayerOptions) = this()
+    def this(
+      path: RegExp,
+      methods: js.Array[String],
+      middleware: Middleware[js.Any, js.Object],
+      opts: LayerOptions
+    ) = this()
     
     /**
       * Returns array of regexp url path captures.
@@ -62,7 +76,7 @@ object mod {
     /**
       * Run validations on route named parameters.
       */
-    def param(param: String, fn: Middleware[_, js.Object]): Layer = js.native
+    def param(param: String, fn: Middleware[js.Any, js.Object]): Layer = js.native
     
     var paramNames: js.Array[ParamName] = js.native
     
@@ -83,7 +97,7 @@ object mod {
       */
     def setPrefix(prefix: String): Layer = js.native
     
-    var stack: js.Array[Middleware[_, js.Object]] = js.native
+    var stack: js.Array[Middleware[js.Any, js.Object]] = js.native
     
     /**
       * Generate URL for route using given `params`.
@@ -116,27 +130,24 @@ object mod {
     * Generate URL from url pattern and given `params`.
     */
   /* static member */
-  @JSImport("@koa/router", "url")
-  @js.native
-  def url(path: String, params: js.Object): String = js.native
-  @JSImport("@koa/router", "url")
-  @js.native
-  def url(path: RegExp, params: js.Object): String = js.native
+  @scala.inline
+  def url(path: String, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def url(path: RegExp, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait LayerOptions extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreCaptures: js.UndefOr[Boolean] = js.native
+    var ignoreCaptures: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object LayerOptions {
     
@@ -184,7 +195,7 @@ object mod {
     }
   }
   
-  type Middleware[StateT, CustomT] = typings.koa.mod.Middleware[StateT, CustomT with (RouterParamContext[StateT, CustomT])]
+  type Middleware[StateT, CustomT] = typings.koa.mod.Middleware[StateT, CustomT & (RouterParamContext[StateT, CustomT])]
   
   type ParamMiddleware = js.Function3[/* param */ String, /* ctx */ RouterContextany, /* next */ Next, js.Any]
   
@@ -203,29 +214,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def all[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def all[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def all[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def all[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Returns separate middleware for responding to `OPTIONS` requests with
@@ -247,29 +258,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def del[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def del[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def del[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def del[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP delete method
@@ -283,29 +294,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def delete[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def delete[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def delete[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def delete[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP get method
@@ -319,29 +330,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def get[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def get[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def get[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def get[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP head method
@@ -355,29 +366,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def head[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def head[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def head[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def head[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP link method
@@ -391,29 +402,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def link[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def link[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def link[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def link[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Match given `path` and return corresponding routes.
@@ -437,29 +448,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def options[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def options[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def options[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def options[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Run middleware for named route parameters. Useful for auto-loading or validation.
@@ -480,29 +491,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def patch[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def patch[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def patch[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def patch[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * HTTP post method
@@ -516,29 +527,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def post[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def post[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def post[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def post[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Set the path prefix for a Router instance that was already initialized.
@@ -557,29 +568,29 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def put[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def put[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def put[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def put[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     /**
       * Redirect `source` to `destination` URL with optional 30x status `code`.
@@ -647,34 +658,34 @@ object mod {
       name: String,
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def unlink[T, U](
       name: String,
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def unlink[T, U](
       path: String,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def unlink[T, U](
       path: js.Array[String | RegExp],
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     def unlink[T, U](
       path: RegExp,
       middleware: typings.koa.mod.Middleware[T, U],
-      routeHandler: Middleware[StateT with T, CustomT with U]
-    ): Router[StateT with T, CustomT with U] = js.native
+      routeHandler: Middleware[StateT & T, CustomT & U]
+    ): Router[StateT & T, CustomT & U] = js.native
     
     def url(name: String): Error = js.native
-    def url(name: String, params: js.UndefOr[scala.Nothing], options: UrlOptionsQuery): Error = js.native
     def url(name: String, params: js.Any): Error = js.native
     def url(name: String, params: js.Any, options: UrlOptionsQuery): Error = js.native
+    def url(name: String, params: Unit, options: UrlOptionsQuery): Error = js.native
     /**
       * Generate URL for route. Takes either map of named `params` or series of
       * arguments (for regular expression routes)
@@ -697,11 +708,11 @@ object mod {
     @JSName("url")
     def url_String(name: String): String = js.native
     @JSName("url")
-    def url_String(name: String, params: js.UndefOr[scala.Nothing], options: UrlOptionsQuery): String = js.native
-    @JSName("url")
     def url_String(name: String, params: js.Any): String = js.native
     @JSName("url")
     def url_String(name: String, params: js.Any, options: UrlOptionsQuery): String = js.native
+    @JSName("url")
+    def url_String(name: String, params: Unit, options: UrlOptionsQuery): String = js.native
     
     /**
       * Use given middleware.
@@ -716,23 +727,22 @@ object mod {
     def use(path: RegExp, middleware: (Middleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
   }
   
-  @js.native
   trait RouterAllowedMethodsOptions extends StObject {
     
     /**
       * throw the returned value in place of the default MethodNotAllowed error
       */
-    var methodNotAllowed: js.UndefOr[js.Function0[_]] = js.native
+    var methodNotAllowed: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * throw the returned value in place of the default NotImplemented error
       */
-    var notImplemented: js.UndefOr[js.Function0[_]] = js.native
+    var notImplemented: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * throw error instead of setting status and header
       */
-    var `throw`: js.UndefOr[Boolean] = js.native
+    var `throw`: js.UndefOr[Boolean] = js.undefined
   }
   object RouterAllowedMethodsOptions {
     
@@ -746,13 +756,13 @@ object mod {
     implicit class RouterAllowedMethodsOptionsMutableBuilder[Self <: RouterAllowedMethodsOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMethodNotAllowed(value: () => _): Self = StObject.set(x, "methodNotAllowed", js.Any.fromFunction0(value))
+      def setMethodNotAllowed(value: () => js.Any): Self = StObject.set(x, "methodNotAllowed", js.Any.fromFunction0(value))
       
       @scala.inline
       def setMethodNotAllowedUndefined: Self = StObject.set(x, "methodNotAllowed", js.undefined)
       
       @scala.inline
-      def setNotImplemented(value: () => _): Self = StObject.set(x, "notImplemented", js.Any.fromFunction0(value))
+      def setNotImplemented(value: () => js.Any): Self = StObject.set(x, "notImplemented", js.Any.fromFunction0(value))
       
       @scala.inline
       def setNotImplementedUndefined: Self = StObject.set(x, "notImplemented", js.undefined)
@@ -765,27 +775,26 @@ object mod {
     }
   }
   
-  type RouterContext[StateT, CustomT] = ParameterizedContext[StateT, CustomT with (RouterParamContext[StateT, CustomT])]
+  type RouterContext[StateT, CustomT] = ParameterizedContext[StateT, CustomT & (RouterParamContext[StateT, CustomT])]
   
-  @js.native
   trait RouterOptions extends StObject {
     
     /**
       * Methods which should be supported by the router.
       */
-    var methods: js.UndefOr[js.Array[String]] = js.native
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Prefix for all routes.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var routerPath: js.UndefOr[String] = js.native
+    var routerPath: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not routing should be case-sensitive.
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not routes should matched strictly.
@@ -793,7 +802,7 @@ object mod {
       * If strict matching is enabled, the trailing slash is taken into
       * account when matching routes.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object RouterOptions {
     
@@ -841,25 +850,24 @@ object mod {
     }
   }
   
-  @js.native
   trait RouterParamContext[StateT, CustomT] extends StObject {
     
     /**
       * Matched route
       */
-    var _matchedRoute: js.UndefOr[String | RegExp] = js.native
+    var _matchedRoute: js.UndefOr[String | RegExp] = js.undefined
     
-    var _matchedRouteName: js.UndefOr[String] = js.native
+    var _matchedRouteName: js.UndefOr[String] = js.undefined
     
     /**
       * url params
       */
-    var params: js.Any = js.native
+    var params: js.Any
     
     /**
       * the router instance
       */
-    var router: Router[StateT, CustomT] = js.native
+    var router: Router[StateT, CustomT]
   }
   object RouterParamContext {
     
@@ -870,7 +878,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RouterParamContextMutableBuilder[Self <: RouterParamContext[_, _], StateT, CustomT] (val x: Self with (RouterParamContext[StateT, CustomT])) extends AnyVal {
+    implicit class RouterParamContextMutableBuilder[Self <: RouterParamContext[?, ?], StateT, CustomT] (val x: Self & (RouterParamContext[StateT, CustomT])) extends AnyVal {
       
       @scala.inline
       def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
@@ -892,14 +900,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RoutesMatch extends StObject {
     
-    var path: js.Array[Layer] = js.native
+    var path: js.Array[Layer]
     
-    var pathAndMethod: js.Array[Layer] = js.native
+    var pathAndMethod: js.Array[Layer]
     
-    var route: Boolean = js.native
+    var route: Boolean
   }
   object RoutesMatch {
     
@@ -929,10 +936,9 @@ object mod {
     }
   }
   
-  @js.native
   trait UrlOptionsQuery extends StObject {
     
-    var query: js.Object | String = js.native
+    var query: js.Object | String
   }
   object UrlOptionsQuery {
     

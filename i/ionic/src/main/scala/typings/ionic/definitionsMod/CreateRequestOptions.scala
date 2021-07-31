@@ -2,15 +2,13 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRequestOptions extends StObject {
   
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
-  var ssl: js.UndefOr[SSLConfig] = js.native
+  var ssl: js.UndefOr[SSLConfig] = js.undefined
 }
 object CreateRequestOptions {
   

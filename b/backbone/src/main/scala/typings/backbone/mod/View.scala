@@ -4,12 +4,11 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "View")
 @js.native
-class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends StObject {
+class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () extends StObject {
   def this(options: ViewOptions[TModel]) = this()
   
   @JSName("$")
@@ -74,22 +73,24 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends StOb
   var tagName: String = js.native
   
   def undelegate(eventName: String): View[TModel] = js.native
-  def undelegate(eventName: String, selector: js.UndefOr[scala.Nothing], listener: js.Function): View[TModel] = js.native
   def undelegate(eventName: String, selector: String): View[TModel] = js.native
   def undelegate(eventName: String, selector: String, listener: js.Function): View[TModel] = js.native
+  def undelegate(eventName: String, selector: Unit, listener: js.Function): View[TModel] = js.native
   
   def undelegateEvents(): js.Any = js.native
 }
 object View {
   
+  @JSImport("backbone", "View")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/
   /* static member */
-  @JSImport("backbone", "View.extend")
-  @js.native
-  def extend(properties: js.Any): js.Any = js.native
-  @JSImport("backbone", "View.extend")
-  @js.native
-  def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+  @scala.inline
+  def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -2,113 +2,111 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait A extends StObject {
   
   @JSName("::-webkit-file-upload-button")
-  var `ColonColon-webkit-file-upload-button`: Appearance = js.native
+  var `ColonColon-webkit-file-upload-button`: Appearance
   
-  var `[hidden]`: Display = js.native
+  var `[hidden]`: Display
   
   @JSName("[type=checkbox], [type=radio]")
-  var `[typeEqualssigncheckbox]Comma [typeEqualssignradio]`: BoxSizing = js.native
+  var `[typeEqualssigncheckbox]Comma [typeEqualssignradio]`: BoxSizing
   
   @JSName("[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button")
-  var `[typeEqualssignnumber]ColonColon-webkit-inner-spin-buttonComma [typeEqualssignnumber]ColonColon-webkit-outer-spin-button`: Height = js.native
+  var `[typeEqualssignnumber]ColonColon-webkit-inner-spin-buttonComma [typeEqualssignnumber]ColonColon-webkit-outer-spin-button`: Height
   
   @JSName("[type=search]")
-  var `[typeEqualssignsearch]`: OutlineOffset = js.native
+  var `[typeEqualssignsearch]`: OutlineOffset
   
   @JSName("[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration")
-  var `[typeEqualssignsearch]ColonColon-webkit-search-cancel-buttonComma [typeEqualssignsearch]ColonColon-webkit-search-decoration`: AppearanceString = js.native
+  var `[typeEqualssignsearch]ColonColon-webkit-search-cancel-buttonComma [typeEqualssignsearch]ColonColon-webkit-search-decoration`: AppearanceString
   
-  var a: Background = js.native
+  var a: Background
   
   @JSName("a:active, a:hover")
-  var `aColonactiveComma aColonhover`: OutlineWidth = js.native
+  var `aColonactiveComma aColonhover`: OutlineWidth
   
-  var `abbr[title]`: BorderBottom = js.native
+  var `abbr[title]`: BorderBottom
   
   @JSName("article, aside, footer, header, nav, section, figcaption, figure, main")
-  var `articleComma asideComma footerComma headerComma navComma sectionComma figcaptionComma figureComma main`: Display = js.native
+  var `articleComma asideComma footerComma headerComma navComma sectionComma figcaptionComma figureComma main`: Display
   
   @JSName("audio:not([controls])")
-  var `audioColonnotLeftparenthesis[controls]Rightparenthesis`: DisplayHeight = js.native
+  var `audioColonnotLeftparenthesis[controls]Rightparenthesis`: DisplayHeight
   
   @JSName("audio, video")
-  var `audioComma video`: Display = js.native
+  var `audioComma video`: Display
   
   @JSName("b, strong")
-  var `bComma strong`: FontWeight = js.native
+  var `bComma strong`: FontWeight
   
-  var body: Margin = js.native
+  var body: Margin
   
   @JSName("button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring")
-  var `buttonColon-moz-focusringComma [typeEqualssignbutton]Colon-moz-focusringComma [typeEqualssignreset]Colon-moz-focusringComma [typeEqualssignsubmit]Colon-moz-focusring`: Outline = js.native
+  var `buttonColon-moz-focusringComma [typeEqualssignbutton]Colon-moz-focusringComma [typeEqualssignreset]Colon-moz-focusringComma [typeEqualssignsubmit]Colon-moz-focusring`: Outline
   
   @JSName("button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner")
-  var `buttonColonColon-moz-focus-innerComma [typeEqualssignbutton]ColonColon-moz-focus-innerComma [typeEqualssignreset]ColonColon-moz-focus-innerComma [typeEqualssignsubmit]ColonColon-moz-focus-inner`: BorderStyle = js.native
+  var `buttonColonColon-moz-focus-innerComma [typeEqualssignbutton]ColonColon-moz-focus-innerComma [typeEqualssignreset]ColonColon-moz-focus-innerComma [typeEqualssignsubmit]ColonColon-moz-focus-inner`: BorderStyle
   
   @JSName("button, [type=reset], [type=submit]")
-  var `buttonComma [typeEqualssignreset]Comma [typeEqualssignsubmit]`: Webkitappearance = js.native
+  var `buttonComma [typeEqualssignreset]Comma [typeEqualssignsubmit]`: Webkitappearance
   
   @JSName("button, input")
-  var `buttonComma input`: Overflow = js.native
+  var `buttonComma input`: Overflow
   
   @JSName("button, input, optgroup, select, textarea")
-  var `buttonComma inputComma optgroupComma selectComma textarea`: FontFamily = js.native
+  var `buttonComma inputComma optgroupComma selectComma textarea`: FontFamily
   
   @JSName("button, select")
-  var `buttonComma select`: TextTransform = js.native
+  var `buttonComma select`: TextTransform
   
-  var canvas: Display = js.native
+  var canvas: Display
   
   @JSName("code, kbp, samp")
-  var `codeComma kbpComma samp`: FontSize = js.native
+  var `codeComma kbpComma samp`: FontSize
   
   @JSName("details, menu")
-  var `detailsComma menu`: Display = js.native
+  var `detailsComma menu`: Display
   
-  var dfn: FontStyle = js.native
+  var dfn: FontStyle
   
-  var fieldset: Border = js.native
+  var fieldset: Border
   
-  var h1: FontSizeMargin = js.native
+  var h1: FontSizeMargin
   
-  var hr: BoxSizingHeight = js.native
+  var hr: BoxSizingHeight
   
-  var html: LineHeight = js.native
+  var html: LineHeight
   
-  var img: VerticalAlign = js.native
+  var img: VerticalAlign
   
-  var legend: Color = js.native
+  var legend: Color
   
-  var mark: BackgroundColor = js.native
+  var mark: BackgroundColor
   
-  var pre: FontSize = js.native
+  var pre: FontSize
   
-  var progress: DisplayVerticalAlign = js.native
+  var progress: DisplayVerticalAlign
   
-  var small: FontSizeString = js.native
+  var small: FontSizeString
   
-  var sub: Bottom = js.native
+  var sub: Bottom
   
   @JSName("sub, sup")
-  var `subComma sup`: Position = js.native
+  var `subComma sup`: Position
   
-  var summary: Display = js.native
+  var summary: Display
   
-  var sup: Top = js.native
+  var sup: Top
   
   @JSName("svg:not(:root)")
-  var svgColonnotLeftparenthesisColonrootRightparenthesis: Overflow = js.native
+  var svgColonnotLeftparenthesisColonrootRightparenthesis: Overflow
   
-  var template: Display = js.native
+  var template: Display
   
-  var textarea: Overflow = js.native
+  var textarea: Overflow
 }
 object A {
   

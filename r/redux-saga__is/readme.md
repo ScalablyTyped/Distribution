@@ -10,9 +10,9 @@ Runtime type checking helpers
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/is |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 18938878 |
+| # releases         | 5 |
+| # dependents       | 7 |
+| # downloads        | 24231140 |
 | # stars            | 0 |
 
 ## Links

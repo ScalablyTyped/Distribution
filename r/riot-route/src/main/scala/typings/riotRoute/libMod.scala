@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod extends Shortcut {
@@ -30,9 +29,9 @@ object libMod extends Shortcut {
       * Changes the browser URL and notifies all the listeners assigned with `route(callback)`.
       */
     def apply(to: String): Unit = js.native
-    def apply(to: String, title: js.UndefOr[scala.Nothing], shouldReplace: Boolean): Unit = js.native
     def apply(to: String, title: String): Unit = js.native
     def apply(to: String, title: String, shouldReplace: Boolean): Unit = js.native
+    def apply(to: String, title: Unit, shouldReplace: Boolean): Unit = js.native
     
     /**
       * Change the base path.
@@ -59,9 +58,9 @@ object libMod extends Shortcut {
       * @param parser
       * @param secondParser
       */
-    def parser(parser: js.Function1[/* path */ String, js.Array[_]]): Unit = js.native
+    def parser(parser: js.Function1[/* path */ String, js.Array[js.Any]]): Unit = js.native
     def parser(
-      parser: js.Function1[/* path */ String, js.Array[_]],
+      parser: js.Function1[/* path */ String, js.Array[js.Any]],
       secondParser: js.Function2[/* path */ String, /* filter */ String, js.UndefOr[js.Array[String]]]
     ): Unit = js.native
     
@@ -85,7 +84,9 @@ object libMod extends Shortcut {
   }
   
   @js.native
-  trait RiotSubRoute extends RiotRoute
+  trait RiotSubRoute
+    extends StObject
+       with RiotRoute
   
   type _To = RiotRoute
   

@@ -4,15 +4,13 @@ import typings.forkTsCheckerWebpackPlugin.filesChangeMod.FilesChange
 import typings.forkTsCheckerWebpackPlugin.reportMod.Report
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterReporterMod {
   
-  @js.native
   trait Reporter extends StObject {
     
-    def getReport(change: FilesChange): js.Promise[Report] = js.native
+    def getReport(change: FilesChange): js.Promise[Report]
   }
   object Reporter {
     

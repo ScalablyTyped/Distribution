@@ -13,31 +13,29 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemRendererGetItemPropsReturnType extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var key: Id = js.native
+  var key: Id
   
-  var onContextMenu: ReactEventHandler[Element] = js.native
+  var onContextMenu: ReactEventHandler[Element]
   
-  var onDoubleClick: MouseEventHandler[Element] = js.native
+  var onDoubleClick: MouseEventHandler[Element]
   
-  var onMouseDown: MouseEventHandler[Element] = js.native
+  var onMouseDown: MouseEventHandler[Element]
   
-  var onMouseUp: MouseEventHandler[Element] = js.native
+  var onMouseUp: MouseEventHandler[Element]
   
-  var onTouchEnd: TouchEventHandler[Element] = js.native
+  var onTouchEnd: TouchEventHandler[Element]
   
-  var onTouchStart: TouchEventHandler[Element] = js.native
+  var onTouchStart: TouchEventHandler[Element]
   
-  var ref: Ref[_] = js.native
+  var ref: Ref[js.Any]
   
-  var style: CSSProperties = js.native
+  var style: CSSProperties
 }
 object ItemRendererGetItemPropsReturnType {
   
@@ -53,7 +51,7 @@ object ItemRendererGetItemPropsReturnType {
     onTouchStart: TouchEvent[Element] => scala.Unit,
     style: CSSProperties
   ): ItemRendererGetItemPropsReturnType = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onContextMenu = js.Any.fromFunction1(onContextMenu), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onContextMenu = js.Any.fromFunction1(onContextMenu), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any], ref = null)
     __obj.asInstanceOf[ItemRendererGetItemPropsReturnType]
   }
   
@@ -85,10 +83,10 @@ object ItemRendererGetItemPropsReturnType {
     def setOnTouchStart(value: TouchEvent[Element] => scala.Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => scala.Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => scala.Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

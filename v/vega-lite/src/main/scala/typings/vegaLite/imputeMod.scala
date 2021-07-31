@@ -7,7 +7,6 @@ import typings.vegaTypings.transformMod.FormulaTransform
 import typings.vegaTypings.transformMod.WindowTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imputeMod {
@@ -28,12 +27,14 @@ object imputeMod {
   /* static members */
   object ImputeNode {
     
-    @JSImport("vega-lite/build/src/compile/data/impute", "ImputeNode.makeFromEncoding")
+    @JSImport("vega-lite/build/src/compile/data/impute", "ImputeNode")
     @js.native
-    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): ImputeNode = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("vega-lite/build/src/compile/data/impute", "ImputeNode.makeFromTransform")
-    @js.native
-    def makeFromTransform(parent: DataFlowNode, imputeTransform: ImputeTransform): ImputeNode = js.native
+    @scala.inline
+    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): ImputeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[ImputeNode]
+    
+    @scala.inline
+    def makeFromTransform(parent: DataFlowNode, imputeTransform: ImputeTransform): ImputeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], imputeTransform.asInstanceOf[js.Any])).asInstanceOf[ImputeNode]
   }
 }

@@ -2,31 +2,29 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideSession extends StObject {
   
-  def getClientData(paramName: String): String = js.native
+  def getClientData(paramName: String): String
   
-  def getClientIP(): String = js.native
+  def getClientIP(): String
   
-  def getCurrentApplicationId(): String = js.native
+  def getCurrentApplicationId(): String
   
-  def getLanguage(): String = js.native
+  def getLanguage(): String
   
-  def getSessionToken(): String = js.native
+  def getSessionToken(): String
   
-  def getTimeZoneName(): String = js.native
+  def getTimeZoneName(): String
   
-  def getUrlOnStack(): String = js.native
+  def getUrlOnStack(): String
   
-  def isInteractive(): Boolean = js.native
+  def isInteractive(): Boolean
   
-  def isLoggedIn(): Boolean = js.native
+  def isLoggedIn(): Boolean
   
-  def putClientData(paramName: String, paramValue: String): Unit = js.native
+  def putClientData(paramName: String, paramValue: String): Unit
 }
 object GlideSession {
   

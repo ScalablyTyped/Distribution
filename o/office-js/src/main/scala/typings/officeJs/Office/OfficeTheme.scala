@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,28 +17,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * `OfficeTheme` is only supported in Office on Windows.
   */
-@js.native
 trait OfficeTheme extends StObject {
   
   /**
     * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "FFA500").
     */
-  var bodyBackgroundColor: String = js.native
+  var bodyBackgroundColor: String
   
   /**
     * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "FFA500").
     */
-  var bodyForegroundColor: String = js.native
+  var bodyForegroundColor: String
   
   /**
     * Gets the Office theme control background color as a hexadecimal color triplet (e.g., "FFA500").
     */
-  var controlBackgroundColor: String = js.native
+  var controlBackgroundColor: String
   
   /**
     * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "FFA500").
     */
-  var controlForegroundColor: String = js.native
+  var controlForegroundColor: String
 }
 object OfficeTheme {
   

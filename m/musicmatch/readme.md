@@ -10,9 +10,9 @@ musicmatch api
 | ------------------ | :-------------: |
 | Full name          | musicmatch |
 | Keywords           | musicmatch, api |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1806 |
+| # downloads        | 2143 |
 | # stars            | 1 |
 
 ## Links

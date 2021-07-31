@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationError extends StObject {
   
   /**
     * A description of the validation error.
     */
-  var errors: js.UndefOr[validationMessages] = js.native
+  var errors: js.UndefOr[validationMessages] = js.undefined
   
   /**
     * The identifier of the object that contains the validation error.
     */
-  var id: js.UndefOr[typings.awsSdk.datapipelineMod.id] = js.native
+  var id: js.UndefOr[typings.awsSdk.datapipelineMod.id] = js.undefined
 }
 object ValidationError {
   

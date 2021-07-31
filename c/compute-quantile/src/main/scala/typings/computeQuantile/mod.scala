@@ -3,19 +3,19 @@ package typings.computeQuantile
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("compute-quantile", JSImport.Namespace)
-  @js.native
-  def apply(array: ArrayLike[Double], quantile: Double): Double = js.native
-  @JSImport("compute-quantile", JSImport.Namespace)
-  @js.native
-  def apply(array: ArrayLike[Double], quantile: Double, options: Options): Double = js.native
+  @scala.inline
+  def apply(array: ArrayLike[Double], quantile: Double): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], quantile.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def apply(array: ArrayLike[Double], quantile: Double, options: Options): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], quantile.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  @JSImport("compute-quantile", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -24,7 +24,7 @@ object mod {
       * @default
       * false
       */
-    var sorted: js.UndefOr[Boolean] = js.native
+    var sorted: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

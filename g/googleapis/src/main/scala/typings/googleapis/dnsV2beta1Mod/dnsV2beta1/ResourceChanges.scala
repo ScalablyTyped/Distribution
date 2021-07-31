@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v2beta1", "dns_v2beta1.Resource$Changes")
@@ -93,7 +92,7 @@ class ResourceChanges protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaChange] = js.native
   def create(callback: BodyResponseCallback[SchemaChange]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
   def create(params: ParamsResourceChangesCreate): GaxiosPromise[SchemaChange] = js.native
   def create(params: ParamsResourceChangesCreate, callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def create(
@@ -185,7 +184,7 @@ class ResourceChanges protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaChange] = js.native
   def get(callback: BodyResponseCallback[SchemaChange]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
   def get(params: ParamsResourceChangesGet): GaxiosPromise[SchemaChange] = js.native
   def get(params: ParamsResourceChangesGet, callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def get(
@@ -288,7 +287,7 @@ class ResourceChanges protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaChangesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChangesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(params: ParamsResourceChangesList): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(params: ParamsResourceChangesList, callback: BodyResponseCallback[SchemaChangesListResponse]): Unit = js.native
   def list(

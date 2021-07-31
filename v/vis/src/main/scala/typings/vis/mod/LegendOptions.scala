@@ -2,23 +2,21 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendOptions extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var iconSpacing: js.UndefOr[Double] = js.native
+  var iconSpacing: js.UndefOr[Double] = js.undefined
   
-  var icons: js.UndefOr[Boolean] = js.native
+  var icons: js.UndefOr[Boolean] = js.undefined
   
-  var left: js.UndefOr[LegendPositionOptions] = js.native
+  var left: js.UndefOr[LegendPositionOptions] = js.undefined
   
-  var right: js.UndefOr[LegendPositionOptions] = js.native
+  var right: js.UndefOr[LegendPositionOptions] = js.undefined
 }
 object LegendOptions {
   

@@ -2,19 +2,17 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForceApprovalPrompt extends StObject {
   
-  var forceApprovalPrompt: js.UndefOr[js.Object] = js.native
+  var forceApprovalPrompt: js.UndefOr[js.Object] = js.undefined
   
-  var passwordSignupFields: js.UndefOr[String] = js.native
+  var passwordSignupFields: js.UndefOr[String] = js.undefined
   
-  var requestOfflineToken: js.UndefOr[js.Object] = js.native
+  var requestOfflineToken: js.UndefOr[js.Object] = js.undefined
   
-  var requestPermissions: js.UndefOr[js.Object] = js.native
+  var requestPermissions: js.UndefOr[js.Object] = js.undefined
 }
 object ForceApprovalPrompt {
   

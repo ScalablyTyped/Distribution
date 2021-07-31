@@ -2,71 +2,69 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMultipartUploadsOutput extends StObject {
   
   /**
     * The name of the bucket to which the multipart upload was initiated.
     */
-  var Bucket: js.UndefOr[BucketName] = js.native
+  var Bucket: js.UndefOr[BucketName] = js.undefined
   
   /**
     * If you specify a delimiter in the request, then the result returns each distinct key prefix containing the delimiter in a CommonPrefixes element. The distinct key prefixes are returned in the Prefix child element.
     */
-  var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.native
+  var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.undefined
   
   /**
     * Contains the delimiter you specified in the request. If you don't specify a delimiter in your request, this element is absent from the response.
     */
-  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.native
+  var Delimiter: js.UndefOr[typings.awsSdk.s3Mod.Delimiter] = js.undefined
   
   /**
     * Encoding type used by Amazon S3 to encode object keys in the response. If you specify encoding-type request parameter, Amazon S3 includes this element in the response, and returns encoded key name values in the following response elements:  Delimiter, KeyMarker, Prefix, NextKeyMarker, Key.
     */
-  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.native
+  var EncodingType: js.UndefOr[typings.awsSdk.s3Mod.EncodingType] = js.undefined
   
   /**
     * Indicates whether the returned list of multipart uploads is truncated. A value of true indicates that the list was truncated. The list can be truncated if the number of multipart uploads exceeds the limit allowed or specified by max uploads.
     */
-  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.undefined
   
   /**
     * The key at or after which the listing began.
     */
-  var KeyMarker: js.UndefOr[typings.awsSdk.s3Mod.KeyMarker] = js.native
+  var KeyMarker: js.UndefOr[typings.awsSdk.s3Mod.KeyMarker] = js.undefined
   
   /**
     * Maximum number of multipart uploads that could have been included in the response.
     */
-  var MaxUploads: js.UndefOr[typings.awsSdk.s3Mod.MaxUploads] = js.native
+  var MaxUploads: js.UndefOr[typings.awsSdk.s3Mod.MaxUploads] = js.undefined
   
   /**
     * When a list is truncated, this element specifies the value that should be used for the key-marker request parameter in a subsequent request.
     */
-  var NextKeyMarker: js.UndefOr[typings.awsSdk.s3Mod.NextKeyMarker] = js.native
+  var NextKeyMarker: js.UndefOr[typings.awsSdk.s3Mod.NextKeyMarker] = js.undefined
   
   /**
     * When a list is truncated, this element specifies the value that should be used for the upload-id-marker request parameter in a subsequent request.
     */
-  var NextUploadIdMarker: js.UndefOr[typings.awsSdk.s3Mod.NextUploadIdMarker] = js.native
+  var NextUploadIdMarker: js.UndefOr[typings.awsSdk.s3Mod.NextUploadIdMarker] = js.undefined
   
   /**
     * When a prefix is provided in the request, this field contains the specified prefix. The result contains only keys starting with the specified prefix.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * Upload ID after which listing began.
     */
-  var UploadIdMarker: js.UndefOr[typings.awsSdk.s3Mod.UploadIdMarker] = js.native
+  var UploadIdMarker: js.UndefOr[typings.awsSdk.s3Mod.UploadIdMarker] = js.undefined
   
   /**
     * Container for elements related to a particular multipart upload. A response can contain zero or more Upload elements.
     */
-  var Uploads: js.UndefOr[MultipartUploadList] = js.native
+  var Uploads: js.UndefOr[MultipartUploadList] = js.undefined
 }
 object ListMultipartUploadsOutput {
   

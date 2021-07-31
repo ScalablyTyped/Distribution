@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.unified
 import typings.openui5.sap.ui.core.ValueState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuTextFieldItem extends MenuItemBase {
+trait MenuTextFieldItem
+  extends StObject
+     with MenuItemBase {
   
   /**
     * Gets current value of property <code>icon</code>.Defines the icon of the {@link sap.ui.core.IconPool

@@ -9,15 +9,13 @@ import typings.googleapisCommon.anon.X16
 import typings.googleapisCommon.googleapisCommonStrings.int32
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaMod {
   
-  @js.native
   trait FragmentResponse extends StObject {
     
-    var codeFragment: StringDictionary[Fragment] = js.native
+    var codeFragment: StringDictionary[Fragment]
   }
   object FragmentResponse {
     
@@ -55,58 +53,57 @@ object schemaMod {
   
   type ParameterFormat = int32
   
-  @js.native
   trait Schema extends StObject {
     
-    var auth: Oauth2 = js.native
+    var auth: Oauth2
     
-    var basePath: String = js.native
+    var basePath: String
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var batchPath: String = js.native
+    var batchPath: String
     
-    var description: String = js.native
+    var description: String
     
-    var discoveryRestUrl: String = js.native
+    var discoveryRestUrl: String
     
-    var discoveryVersion: String = js.native
+    var discoveryVersion: String
     
-    var documentationLink: String = js.native
+    var documentationLink: String
     
-    var etag: String = js.native
+    var etag: String
     
-    var icons: X16 = js.native
+    var icons: X16
     
-    var id: String = js.native
+    var id: String
     
-    var kind: String = js.native
+    var kind: String
     
-    var methods: SchemaMethods = js.native
+    var methods: SchemaMethods
     
-    var name: String = js.native
+    var name: String
     
-    var ownerDomain: String = js.native
+    var ownerDomain: String
     
-    var ownerName: String = js.native
+    var ownerName: String
     
-    var parameters: SchemaParameters = js.native
+    var parameters: SchemaParameters
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var resources: SchemaResources = js.native
+    var resources: SchemaResources
     
-    var revision: String = js.native
+    var revision: String
     
-    var rootUrl: String = js.native
+    var rootUrl: String
     
-    var schemas: SchemaItems = js.native
+    var schemas: SchemaItems
     
-    var servicePath: String = js.native
+    var servicePath: String
     
-    var title: String = js.native
+    var title: String
     
-    var version: String = js.native
+    var version: String
   }
   object Schema {
     
@@ -222,27 +219,26 @@ object schemaMod {
     }
   }
   
-  @js.native
   trait SchemaItem extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
     @JSName("$ref")
-    var $ref: js.UndefOr[String] = js.native
+    var $ref: js.UndefOr[String] = js.undefined
     
-    var additionalProperties: js.UndefOr[StringDictionary[SchemaItem]] = js.native
+    var additionalProperties: js.UndefOr[StringDictionary[SchemaItem]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[ParameterFormat] = js.native
+    var format: js.UndefOr[ParameterFormat] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[StringDictionary[SchemaItem]] = js.native
+    var items: js.UndefOr[StringDictionary[SchemaItem]] = js.undefined
     
-    var properties: js.UndefOr[StringDictionary[SchemaItem]] = js.native
+    var properties: js.UndefOr[StringDictionary[SchemaItem]] = js.undefined
     
-    var `type`: js.UndefOr[SchemaType] = js.native
+    var `type`: js.UndefOr[SchemaType] = js.undefined
   }
   object SchemaItem {
     
@@ -313,32 +309,31 @@ object schemaMod {
   
   type SchemaItems = StringDictionary[SchemaItem]
   
-  @js.native
   trait SchemaMethod extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var fragment: String = js.native
+    var fragment: String
     
-    var httpMethod: HttpMethod = js.native
+    var httpMethod: HttpMethod
     
-    var id: String = js.native
+    var id: String
     
-    var mediaUpload: Protocols = js.native
+    var mediaUpload: Protocols
     
-    var parameterOrder: js.UndefOr[js.Array[String]] = js.native
+    var parameterOrder: js.UndefOr[js.Array[String]] = js.undefined
     
-    var parameters: js.UndefOr[StringDictionary[SchemaParameter]] = js.native
+    var parameters: js.UndefOr[StringDictionary[SchemaParameter]] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var request: Ref = js.native
+    var request: Ref
     
-    var response: Ref = js.native
+    var response: Ref
     
-    var sampleUrl: String = js.native
+    var sampleUrl: String
     
-    var scopes: js.Array[String] = js.native
+    var scopes: js.Array[String]
   }
   object SchemaMethod {
     
@@ -414,24 +409,23 @@ object schemaMod {
   
   type SchemaMethods = StringDictionary[SchemaMethod]
   
-  @js.native
   trait SchemaParameter extends StObject {
     
-    var default: String = js.native
+    var default: String
     
-    var description: String = js.native
+    var description: String
     
-    var enum: js.Array[String] = js.native
+    var `enum`: js.Array[String]
     
-    var enumDescription: js.Array[String] = js.native
+    var enumDescription: js.Array[String]
     
-    var format: ParameterFormat = js.native
+    var format: ParameterFormat
     
-    var location: String = js.native
+    var location: String
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var `type`: SchemaType = js.native
+    var `type`: SchemaType
   }
   object SchemaParameter {
     
@@ -439,14 +433,15 @@ object schemaMod {
     def apply(
       default: String,
       description: String,
-      enum: js.Array[String],
+      `enum`: js.Array[String],
       enumDescription: js.Array[String],
       format: ParameterFormat,
       location: String,
       required: Boolean,
       `type`: SchemaType
     ): SchemaParameter = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], enumDescription = enumDescription.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enumDescription = enumDescription.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+      __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaParameter]
     }
@@ -488,12 +483,11 @@ object schemaMod {
   
   type SchemaParameters = StringDictionary[SchemaParameter]
   
-  @js.native
   trait SchemaResource extends StObject {
     
-    var methods: js.UndefOr[SchemaMethods] = js.native
+    var methods: js.UndefOr[SchemaMethods] = js.undefined
     
-    var resources: js.UndefOr[SchemaResources] = js.native
+    var resources: js.UndefOr[SchemaResources] = js.undefined
   }
   object SchemaResource {
     
@@ -548,14 +542,13 @@ object schemaMod {
     def string: typings.googleapisCommon.googleapisCommonStrings.string = "string".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.string]
   }
   
-  @js.native
   trait Schemas extends StObject {
     
-    var discoveryVersion: String = js.native
+    var discoveryVersion: String
     
-    var items: js.Array[Schema] = js.native
+    var items: js.Array[Schema]
     
-    var kind: String = js.native
+    var kind: String
   }
   object Schemas {
     

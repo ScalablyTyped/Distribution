@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecListenerTls extends StObject {
   
   /**
     * The listener's TLS certificate.
     */
-  var certificate: VirtualGatewaySpecListenerTlsCertificate = js.native
+  var certificate: VirtualGatewaySpecListenerTlsCertificate
   
   /**
     * The listener's TLS mode. Valid values: `DISABLED`, `PERMISSIVE`, `STRICT`.
     */
-  var mode: String = js.native
+  var mode: String
 }
 object VirtualGatewaySpecListenerTls {
   

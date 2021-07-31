@@ -3,23 +3,23 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDataProxy extends IObservable {
+trait IDataProxy
+  extends StObject
+     with IObservable {
   
   /** [Method] Performs a batch of Operations in the order specified by batchOrder
     * @param options Object Object containing one or more properties supported by the batch method:
     * @returns Ext.data.Batch The newly created Batch
     */
-  var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.native
+  var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var batchActions: js.UndefOr[Boolean] = js.native
+  var batchActions: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var batchOrder: js.UndefOr[String] = js.native
+  var batchOrder: js.UndefOr[String] = js.undefined
   
   /** [Method] Performs the given create operation
     * @param operation Ext.data.Operation The Operation to perform
@@ -33,7 +33,7 @@ trait IDataProxy extends IObservable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Performs the given destroy operation
     * @param operation Ext.data.Operation The Operation to perform
@@ -47,31 +47,31 @@ trait IDataProxy extends IObservable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the model attached to this Proxy
     * @returns Ext.data.Model The model
     */
-  var getModel: js.UndefOr[js.Function0[IModel]] = js.native
+  var getModel: js.UndefOr[js.Function0[IModel]] = js.undefined
   
   /** [Method] Returns the reader currently attached to this proxy instance
     * @returns Ext.data.reader.Reader The Reader instance
     */
-  var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.native
+  var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.undefined
   
   /** [Method] Returns the writer currently attached to this proxy instance
     * @returns Ext.data.writer.Writer The Writer instance
     */
-  var getWriter: js.UndefOr[js.Function0[typings.extjs.Ext.data.writer.IWriter]] = js.native
+  var getWriter: js.UndefOr[js.Function0[typings.extjs.Ext.data.writer.IWriter]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isProxy: js.UndefOr[Boolean] = js.native
+  var isProxy: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var isSynchronous: js.UndefOr[Boolean] = js.native
+  var isSynchronous: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/Ext.data.Model) */
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Performs the given read operation
     * @param operation Ext.data.Operation The Operation to perform
@@ -85,10 +85,10 @@ trait IDataProxy extends IObservable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Object/String/Ext.data.reader.Reader) */
-  var reader: js.UndefOr[js.Any] = js.native
+  var reader: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Sets the model associated with this proxy
     * @param model String/Ext.data.Model The new model. Can be either the model name string, or a reference to the model's constructor
@@ -96,7 +96,7 @@ trait IDataProxy extends IObservable {
     */
   var setModel: js.UndefOr[
     js.Function2[/* model */ js.UndefOr[js.Any], /* setOnStore */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the Proxy s Reader by string config object or Reader instance
     * @param reader String/Object/Ext.data.reader.Reader The new Reader, which can be either a type string, a configuration object or an Ext.data.reader.Reader instance
@@ -104,7 +104,7 @@ trait IDataProxy extends IObservable {
     */
   var setReader: js.UndefOr[
     js.Function1[/* reader */ js.UndefOr[js.Any], typings.extjs.Ext.data.reader.IReader]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the Proxy s Writer by string config object or Writer instance
     * @param writer String/Object/Ext.data.writer.Writer The new Writer, which can be either a type string, a configuration object or an Ext.data.writer.Writer instance
@@ -112,7 +112,7 @@ trait IDataProxy extends IObservable {
     */
   var setWriter: js.UndefOr[
     js.Function1[/* writer */ js.UndefOr[js.Any], typings.extjs.Ext.data.writer.IWriter]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Performs the given update operation
     * @param operation Ext.data.Operation The Operation to perform
@@ -126,10 +126,10 @@ trait IDataProxy extends IObservable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Object/String/Ext.data.writer.Writer) */
-  var writer: js.UndefOr[js.Any] = js.native
+  var writer: js.UndefOr[js.Any] = js.undefined
 }
 object IDataProxy {
   

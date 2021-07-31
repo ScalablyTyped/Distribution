@@ -5,13 +5,13 @@ import typings.webix.mod.WebixCallback
 import typings.webix.mod.WebixTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.filemanager")
 @js.native
 class filemanager ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$dropAllow")
   def $dropAllow(args: js.Any*): js.Any = js.native
@@ -30,9 +30,12 @@ class filemanager ()
   def attachEvent(`type`: filemanagerEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: filemanagerEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   def clearAll(soft: Boolean): Unit = js.native
@@ -41,16 +44,16 @@ class filemanager ()
   var config_filemanager: filemanagerConfig = js.native
   
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
   def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
   def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   
   def copyFile(source: String, target: String): Unit = js.native
-  def copyFile(source: js.Array[_], target: String): Unit = js.native
+  def copyFile(source: js.Array[js.Any], target: String): Unit = js.native
   
   def count(): Double = js.native
   
@@ -59,7 +62,7 @@ class filemanager ()
   var data: DataStore = js.native
   
   def deleteFile(ids: String): Unit = js.native
-  def deleteFile(ids: js.Array[_]): Unit = js.native
+  def deleteFile(ids: js.Array[js.Any]): Unit = js.native
   
   def detachEvent(id: String): Unit = js.native
   
@@ -70,19 +73,23 @@ class filemanager ()
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   
-  def filter(text: WebixCallback | WebixTemplate): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
-  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: String, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback): Unit = js.native
+  def filter(text: WebixCallback, value: String): Unit = js.native
+  def filter(text: WebixCallback, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate): Unit = js.native
+  def filter(text: WebixTemplate, value: String): Unit = js.native
+  def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
   def find(criterion: WebixCallback): js.Any = js.native
   def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
   
-  def getActive(): String | js.Array[_] = js.native
+  def getActive(): String | js.Array[js.Any] = js.native
   
   def getActiveView(): js.Any = js.native
   
@@ -122,9 +129,9 @@ class filemanager ()
   def getParentId(id: String): String | Double = js.native
   def getParentId(id: Double): String | Double = js.native
   
-  def getPath(id: String): js.Array[_] = js.native
+  def getPath(id: String): js.Array[js.Any] = js.native
   
-  def getPathNames(id: String): js.Array[_] = js.native
+  def getPathNames(id: String): js.Array[js.Any] = js.native
   
   def getPrevId(id: String, step: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
@@ -132,9 +139,9 @@ class filemanager ()
   def getPrevSiblingId(id: String): String | Double = js.native
   def getPrevSiblingId(id: Double): String | Double = js.native
   
-  def getSearchData(id: String, text: String): js.Array[_] = js.native
+  def getSearchData(id: String, text: String): js.Array[js.Any] = js.native
   
-  def getSelectedFile(): String | js.Array[_] = js.native
+  def getSelectedFile(): String | js.Array[js.Any] = js.native
   
   def getUploader(): js.Any = js.native
   
@@ -158,32 +165,32 @@ class filemanager ()
   
   def levelUp(id: String): Unit = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
-  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[_] = js.native
-  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[_] = js.native
+  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
+  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
   
   def mapEvent(map: js.Any): Unit = js.native
   
   def markCopy(id: String): Unit = js.native
-  def markCopy(id: js.Array[_]): Unit = js.native
+  def markCopy(id: js.Array[js.Any]): Unit = js.native
   
   def markCut(id: String): Unit = js.native
-  def markCut(id: js.Array[_]): Unit = js.native
+  def markCut(id: js.Array[js.Any]): Unit = js.native
   
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: js.Any): String = js.native
   
   def moveFile(source: String, target: String): Unit = js.native
   
-  def openFolders(folders: js.Array[_]): Unit = js.native
+  def openFolders(folders: js.Array[js.Any]): Unit = js.native
   
   def parse(data: js.Any, `type`: String): Unit = js.native
   
@@ -194,7 +201,7 @@ class filemanager ()
   def refresh(id: Double): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[_]): Unit = js.native
+  def remove(id: js.Array[js.Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
   def renameFile(id: String, name: String, property: String): Unit = js.native
@@ -211,9 +218,9 @@ class filemanager ()
   def showTree(): Unit = js.native
   
   def sort(by: String): Unit = js.native
-  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
+  def sort(by: String, dir: Unit, as: String): Unit = js.native
   
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
@@ -226,7 +233,7 @@ class filemanager ()
   
   def uploadFile(target: String): Unit = js.native
   
-  var waitData: js.Promise[_] = js.native
+  var waitData: js.Promise[js.Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
 }

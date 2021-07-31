@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevisionInfo extends StObject {
   
   /**
     * Information about an application revision, including usage details and associated deployment groups.
     */
-  var genericRevisionInfo: js.UndefOr[GenericRevisionInfo] = js.native
+  var genericRevisionInfo: js.UndefOr[GenericRevisionInfo] = js.undefined
   
   /**
     * Information about the location and type of an application revision.
     */
-  var revisionLocation: js.UndefOr[RevisionLocation] = js.native
+  var revisionLocation: js.UndefOr[RevisionLocation] = js.undefined
 }
 object RevisionInfo {
   

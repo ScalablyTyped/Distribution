@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  a collection of a single node
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- org.scalablytyped.runtime.StObject because Already inherited
 - org.scalablytyped.runtime.NumberDictionary because Already inherited
 - typings.cytoscape.mod.CollectionAlgorithms because Already inherited
 - typings.cytoscape.mod.CollectionBuildingFiltering because Already inherited
@@ -28,7 +28,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.cytoscape.mod.Collection because Already inherited
 - typings.cytoscape.mod.NodeCollection because var conflicts: Ampersand_Original, Backslash_Original, Dot_Original, Exclamationmark_Original, `Leftparenthesis-Rightparenthesis_Original`, LeftparenthesisPlussignRightparenthesis_Original, Plussign_Original, Verticalline_Original, _dash_Original, add_Original, and_Original, difference_Original, intersect_Original, intersection_Original, length, n_Original, not_Original, or_Original, relativeComplement_Original, subtract_Original, symdiff_Original, symmetricDifference_Original, u_Original, union_Original, xor_Original. Inlined  */ @js.native
 trait NodeSingular
-  extends Singular[NodeSingular, NodeSingular]
+  extends StObject
+     with Singular[NodeSingular, NodeSingular]
      with NodeSingularMetadata
      with NodeSingularPosition
      with NodeSingularCompound

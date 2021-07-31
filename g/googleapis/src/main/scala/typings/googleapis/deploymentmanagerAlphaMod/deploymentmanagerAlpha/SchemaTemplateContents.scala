@@ -2,39 +2,37 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Files that make up the template contents of a template type.
   */
-@js.native
 trait SchemaTemplateContents extends StObject {
   
   /**
     * Import files referenced by the main template.
     */
-  var imports: js.UndefOr[js.Array[SchemaImportFile]] = js.native
+  var imports: js.UndefOr[js.Array[SchemaImportFile]] = js.undefined
   
   /**
     * Which interpreter (python or jinja) should be used during expansion.
     */
-  var interpreter: js.UndefOr[String] = js.native
+  var interpreter: js.UndefOr[String] = js.undefined
   
   /**
     * The filename of the mainTemplate
     */
-  var mainTemplate: js.UndefOr[String] = js.native
+  var mainTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * The contents of the template schema.
     */
-  var schema: js.UndefOr[String] = js.native
+  var schema: js.UndefOr[String] = js.undefined
   
   /**
     * The contents of the main template file.
     */
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
 }
 object SchemaTemplateContents {
   

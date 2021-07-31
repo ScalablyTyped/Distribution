@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationExecutionFilter extends StObject {
   
   /**
     * The key value used in the request.
     */
-  var Key: AssociationExecutionFilterKey = js.native
+  var Key: AssociationExecutionFilterKey
   
   /**
     * The filter type specified in the request.
     */
-  var Type: AssociationFilterOperatorType = js.native
+  var Type: AssociationFilterOperatorType
   
   /**
     * The value specified for the key.
     */
-  var Value: AssociationExecutionFilterValue = js.native
+  var Value: AssociationExecutionFilterValue
 }
 object AssociationExecutionFilter {
   

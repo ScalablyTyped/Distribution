@@ -12,28 +12,28 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of text field that displays the file name ( {@link URL} ) of the document.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait FileName extends TextField_ {
+trait FileName
+  extends StObject
+     with TextField_ {
   
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String = js.native
+  var CurrentPresentation: String
   
   /** determines the format the file name is displayed as specified in {@link com.sun.star.text.FilenameDisplayFormat} . */
-  var FileFormat: Double = js.native
+  var FileFormat: Double
   
   /** If this flag is set to `FALSE` the content is regularly updated. */
-  var IsFixed: Boolean = js.native
+  var IsFixed: Boolean
 }
 object FileName {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayersListItem extends StObject {
   
   /**
     * The newest version of the layer.
     */
-  var LatestMatchingVersion: js.UndefOr[LayerVersionsListItem] = js.native
+  var LatestMatchingVersion: js.UndefOr[LayerVersionsListItem] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the function layer.
     */
-  var LayerArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerArn] = js.native
+  var LayerArn: js.UndefOr[typings.awsSdk.lambdaMod.LayerArn] = js.undefined
   
   /**
     * The name of the layer.
     */
-  var LayerName: js.UndefOr[typings.awsSdk.lambdaMod.LayerName] = js.native
+  var LayerName: js.UndefOr[typings.awsSdk.lambdaMod.LayerName] = js.undefined
 }
 object LayersListItem {
   

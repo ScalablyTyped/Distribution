@@ -2,19 +2,17 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreetViewLocationRequest extends StObject {
   
-  var location: LatLng | LatLngLiteral = js.native
+  var location: LatLng | LatLngLiteral
   
-  var preference: js.UndefOr[StreetViewPreference] = js.native
+  var preference: js.UndefOr[StreetViewPreference] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var source: js.UndefOr[StreetViewSource] = js.native
+  var source: js.UndefOr[StreetViewSource] = js.undefined
 }
 object StreetViewLocationRequest {
   

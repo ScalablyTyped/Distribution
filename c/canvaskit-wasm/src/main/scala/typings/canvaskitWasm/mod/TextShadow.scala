@@ -2,20 +2,18 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextShadow extends StObject {
   
-  var blurRadius: js.UndefOr[Double] = js.native
+  var blurRadius: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[InputColor] = js.native
+  var color: js.UndefOr[InputColor] = js.undefined
   
   /**
     * 2d array for x and y offset. Defaults to [0, 0]
     */
-  var offset: js.UndefOr[js.Array[Double]] = js.native
+  var offset: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object TextShadow {
   

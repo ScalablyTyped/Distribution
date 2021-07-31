@@ -2,31 +2,29 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserProfileRequest extends StObject {
   
   /**
     * The name that will be displayed as the friendly name for the user in AWS CodeStar. 
     */
-  var displayName: UserProfileDisplayName = js.native
+  var displayName: UserProfileDisplayName
   
   /**
     * The email address that will be displayed as part of the user's profile in AWS CodeStar.
     */
-  var emailAddress: Email = js.native
+  var emailAddress: Email
   
   /**
     * The SSH public key associated with the user in AWS CodeStar. If a project owner allows the user remote access to project resources, this public key will be used along with the user's private key for SSH access.
     */
-  var sshPublicKey: js.UndefOr[SshPublicKey] = js.native
+  var sshPublicKey: js.UndefOr[SshPublicKey] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user in IAM.
     */
-  var userArn: UserArn = js.native
+  var userArn: UserArn
 }
 object CreateUserProfileRequest {
   

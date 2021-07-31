@@ -2,15 +2,13 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveResult extends StObject {
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object SaveResult {
   

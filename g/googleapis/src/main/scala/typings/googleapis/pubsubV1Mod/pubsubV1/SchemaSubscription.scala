@@ -3,13 +3,11 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A subscription resource.
   */
-@js.native
 trait SchemaSubscription extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait SchemaSubscription extends StObject {
     * endpoint.  If the subscriber never acknowledges the message, the Pub/Sub
     * system will eventually redeliver the message.
     */
-  var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * A policy that specifies the conditions for this subscription&#39;s
@@ -43,14 +41,14 @@ trait SchemaSubscription extends StObject {
     * might be changed in backward-incompatible ways and is not recommended for
     * production use. It is not subject to any SLA or deprecation policy.
     */
-  var expirationPolicy: js.UndefOr[SchemaExpirationPolicy] = js.native
+  var expirationPolicy: js.UndefOr[SchemaExpirationPolicy] = js.undefined
   
   /**
     * See &lt;a
     * href=&quot;https://cloud.google.com/pubsub/docs/labels&quot;&gt; Creating
     * and managing labels&lt;/a&gt;.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * How long to retain unacknowledged messages in the subscription&#39;s
@@ -60,7 +58,7 @@ trait SchemaSubscription extends StObject {
     * `Seek` can be done. Defaults to 7 days. Cannot be more than 7 days or
     * less than 10 minutes.
     */
-  var messageRetentionDuration: js.UndefOr[String] = js.native
+  var messageRetentionDuration: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the subscription. It must have the format
@@ -71,14 +69,14 @@ trait SchemaSubscription extends StObject {
     * between 3 and 255 characters in length, and it must not start with
     * `&quot;goog&quot;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If push delivery is used with this subscription, this field is used to
     * configure it. An empty `pushConfig` signifies that the subscriber will
     * pull and ack messages using API methods.
     */
-  var pushConfig: js.UndefOr[SchemaPushConfig] = js.native
+  var pushConfig: js.UndefOr[SchemaPushConfig] = js.undefined
   
   /**
     * Indicates whether to retain acknowledged messages. If true, then messages
@@ -88,14 +86,14 @@ trait SchemaSubscription extends StObject {
     * href=&quot;https://cloud.google.com/pubsub/docs/replay-overview#seek_to_a_time&quot;&gt;
     * Seek to a timestamp&lt;/a&gt;.
     */
-  var retainAckedMessages: js.UndefOr[Boolean] = js.native
+  var retainAckedMessages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the topic from which this subscription is receiving messages.
     * Format is `projects/{project}/topics/{topic}`. The value of this field
     * will be `_deleted-topic_` if the topic has been deleted.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaSubscription {
   

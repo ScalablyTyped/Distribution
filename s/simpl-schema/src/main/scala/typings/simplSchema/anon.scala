@@ -3,47 +3,45 @@ package typings.simplSchema
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BADDATE extends StObject {
     
-    var BAD_DATE: String = js.native
+    var BAD_DATE: String
     
-    var EXPECTED_TYPE: String = js.native
+    var EXPECTED_TYPE: String
     
-    var FAILED_REGULAR_EXPRESSION: String = js.native
+    var FAILED_REGULAR_EXPRESSION: String
     
-    var KEY_NOT_IN_SCHEMA: String = js.native
+    var KEY_NOT_IN_SCHEMA: String
     
-    var MAX_COUNT: String = js.native
+    var MAX_COUNT: String
     
-    var MAX_DATE: String = js.native
+    var MAX_DATE: String
     
-    var MAX_NUMBER: String = js.native
+    var MAX_NUMBER: String
     
-    var MAX_NUMBER_EXCLUSIVE: String = js.native
+    var MAX_NUMBER_EXCLUSIVE: String
     
-    var MAX_STRING: String = js.native
+    var MAX_STRING: String
     
-    var MIN_COUNT: String = js.native
+    var MIN_COUNT: String
     
-    var MIN_DATE: String = js.native
+    var MIN_DATE: String
     
-    var MIN_NUMBER: String = js.native
+    var MIN_NUMBER: String
     
-    var MIN_NUMBER_EXCLUSIVE: String = js.native
+    var MIN_NUMBER_EXCLUSIVE: String
     
-    var MIN_STRING: String = js.native
+    var MIN_STRING: String
     
-    var MUST_BE_INTEGER: String = js.native
+    var MUST_BE_INTEGER: String
     
-    var REQUIRED: String = js.native
+    var REQUIRED: String
     
-    var VALUE_NOT_ALLOWED: String = js.native
+    var VALUE_NOT_ALLOWED: String
   }
   object BADDATE {
     
@@ -127,30 +125,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Domain extends StObject {
     
-    var Domain: RegExp = js.native
+    var Domain: RegExp
     
-    var Email: RegExp = js.native
+    var Email: RegExp
     
-    var EmailWithTLD: RegExp = js.native
+    var EmailWithTLD: RegExp
     
-    var IP: RegExp = js.native
+    var IP: RegExp
     
-    var IPv4: RegExp = js.native
+    var IPv4: RegExp
     
-    var IPv6: RegExp = js.native
+    var IPv6: RegExp
     
-    var Id: RegExp = js.native
+    var Id: RegExp
     
-    var Phone: RegExp = js.native
+    var Phone: RegExp
     
-    var Url: RegExp = js.native
+    var Url: RegExp
     
-    var WeakDomain: RegExp = js.native
+    var WeakDomain: RegExp
     
-    var ZipCode: RegExp = js.native
+    var ZipCode: RegExp
   }
   object Domain {
     
@@ -210,10 +207,9 @@ object anon {
     }
   }
   
-  @js.native
   trait EndPointsOnly extends StObject {
     
-    var endPointsOnly: Boolean = js.native
+    var endPointsOnly: Boolean
   }
   object EndPointsOnly {
     
@@ -231,10 +227,9 @@ object anon {
     }
   }
   
-  @js.native
   trait KeepArrays extends StObject {
     
-    var keepArrays: js.UndefOr[Boolean] = js.native
+    var keepArrays: js.UndefOr[Boolean] = js.undefined
   }
   object KeepArrays {
     

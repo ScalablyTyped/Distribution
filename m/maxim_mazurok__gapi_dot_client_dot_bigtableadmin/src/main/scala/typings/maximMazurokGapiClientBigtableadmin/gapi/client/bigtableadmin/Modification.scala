@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Modification extends StObject {
   
   /** Create a new column family with the specified schema, or fail if one already exists with the given ID. */
-  var create: js.UndefOr[ColumnFamily] = js.native
+  var create: js.UndefOr[ColumnFamily] = js.undefined
   
   /** Drop (delete) the column family with the given ID, or fail if no such family exists. */
-  var drop: js.UndefOr[Boolean] = js.native
+  var drop: js.UndefOr[Boolean] = js.undefined
   
   /** The ID of the column family to be modified. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Update an existing column family to the specified schema, or fail if no column family exists with the given ID. */
-  var update: js.UndefOr[ColumnFamily] = js.native
+  var update: js.UndefOr[ColumnFamily] = js.undefined
 }
 object Modification {
   

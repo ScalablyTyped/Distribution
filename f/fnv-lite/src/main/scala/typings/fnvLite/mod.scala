@@ -7,34 +7,34 @@ import typings.fnvLite.fnvLiteStrings.hex
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fnv-lite", JSImport.Namespace)
   @js.native
-  class ^ () extends FNV
+  class ^ ()
+    extends StObject
+       with FNV
+  @JSImport("fnv-lite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("fnv-lite", "base36")
-  @js.native
-  def base36(input: Input): String = js.native
+  @scala.inline
+  def base36(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base36")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("fnv-lite", "base64")
-  @js.native
-  def base64(input: Input): String = js.native
+  @scala.inline
+  def base64(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("fnv-lite", "base64Url")
-  @js.native
-  def base64Url(input: Input): String = js.native
+  @scala.inline
+  def base64Url(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Url")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("fnv-lite", "hex")
-  @js.native
-  def hex(input: Input): String = js.native
+  @scala.inline
+  def hex(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait FNV extends StObject {

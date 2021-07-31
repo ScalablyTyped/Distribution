@@ -6,7 +6,6 @@ import typings.std.Partial
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,7 +17,7 @@ trait UpdateableQueryBuilder[T] extends StObject {
     value: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
-  ): TypeMatchedValue[T, K, js.Array[_] | Set[_], this.type] = js.native
+  ): TypeMatchedValue[T, K, js.Array[js.Any] | Set[js.Any], this.type] = js.native
   def add[K /* <: /* keyof T */ String */](
     key: K,
     value: StringDictionary[

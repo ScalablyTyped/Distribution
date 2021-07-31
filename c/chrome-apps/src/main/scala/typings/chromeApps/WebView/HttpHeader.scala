@@ -3,18 +3,16 @@ package typings.chromeApps.WebView
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An HTTP Header, represented as an object containing a key and either a value or a binaryValue. */
-@js.native
 trait HttpHeader extends StObject {
   
-  var binaryValue: js.UndefOr[ArrayBuffer] = js.native
+  var binaryValue: js.UndefOr[ArrayBuffer] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object HttpHeader {
   

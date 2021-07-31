@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,7 +14,8 @@ object mod extends Shortcut {
   
   @js.native
   trait EventEmitter
-    extends typings.node.eventsMod.global.NodeJS.EventEmitter {
+    extends StObject
+       with typings.node.eventsMod.global.NodeJS.EventEmitter {
     
     def addListener(event: String, listener: js.Function): this.type = js.native
     def addListener(event: String, tasks: js.Array[String]): this.type = js.native
@@ -29,12 +29,13 @@ object mod extends Shortcut {
   
   type Nodemon = js.Function1[/* option */ js.UndefOr[Option], EventEmitter]
   
-  @js.native
-  trait Option extends _Option {
+  trait Option
+    extends StObject
+       with _Option {
     
     var tasks: js.UndefOr[
         js.Array[String] | (js.Function1[/* changedFiles */ js.Array[String], js.Array[String]])
-      ] = js.native
+      ] = js.undefined
   }
   object Option {
     
@@ -63,81 +64,80 @@ object mod extends Shortcut {
   
   // TODO: Properties may be insufficient
   // TODO: In future this interface should be moved to nodemon.d.ts
-  @js.native
   trait _Option extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Debounce restart in seconds.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.native
+    var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
     
-    var events: js.UndefOr[StringDictionary[String]] = js.native
+    var events: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Execute script with "app", ie. -x "python -v".
       */
-    var exec: js.UndefOr[String] = js.native
+    var exec: js.UndefOr[String] = js.undefined
     
-    var execMap: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.native
+    var execMap: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
     
     /**
       * Exit on crash, allows use of nodemon with daemon tools like forever.js.
       */
-    var exitcrash: js.UndefOr[Boolean] = js.native
+    var exitcrash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Extensions to look for, ie. js,jade,hbs.
       */
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
     /**
       * Ignore specific files or directories.
       */
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Forces node to use the most compatible version for watching file changes.
       */
-    var legacyWatch: js.UndefOr[Boolean] = js.native
+    var legacyWatch: js.UndefOr[Boolean] = js.undefined
     
-    var nodeArgs: js.UndefOr[js.Array[String]] = js.native
+    var nodeArgs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Minimise nodemon messages to start/stop only.
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var restartable: js.UndefOr[String] = js.native
+    var restartable: js.UndefOr[String] = js.undefined
     
     /**
       * Execute script on change only, not startup
       */
-    var runOnChangeOnly: js.UndefOr[Boolean] = js.native
+    var runOnChangeOnly: js.UndefOr[Boolean] = js.undefined
     
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
     
-    var scriptPosition: js.UndefOr[Double] = js.native
+    var scriptPosition: js.UndefOr[Double] = js.undefined
     
     /**
       * Try to read from stdin.
       */
-    var stdin: js.UndefOr[Boolean] = js.native
+    var stdin: js.UndefOr[Boolean] = js.undefined
     
-    var stdout: js.UndefOr[Boolean] = js.native
+    var stdout: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show detail on what is causing restarts.
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Watch directory "dir" or files. use once for each directory or file to watch.
       */
-    var watch: js.UndefOr[js.Array[String]] = js.native
+    var watch: js.UndefOr[js.Array[String]] = js.undefined
   }
   object _Option {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAWSOrganizationsAccessStatusOutput extends StObject {
   
   /**
     * The status of the portfolio share feature.
     */
-  var AccessStatus: js.UndefOr[typings.awsSdk.servicecatalogMod.AccessStatus] = js.native
+  var AccessStatus: js.UndefOr[typings.awsSdk.servicecatalogMod.AccessStatus] = js.undefined
 }
 object GetAWSOrganizationsAccessStatusOutput {
   

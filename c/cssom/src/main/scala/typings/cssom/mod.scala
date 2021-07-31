@@ -14,10 +14,13 @@ import typings.cssom.cssomNumbers.`7`
 import typings.cssom.cssomNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cssom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cssom", "CSSDocumentRule")
   @js.native
@@ -188,7 +191,9 @@ object mod {
   
   @JSImport("cssom", "CSSStyleDeclaration")
   @js.native
-  class CSSStyleDeclaration () extends /* index */ NumberDictionary[String] {
+  class CSSStyleDeclaration ()
+    extends StObject
+       with /* index */ NumberDictionary[String] {
     
     var cssText: String = js.native
     
@@ -222,9 +227,12 @@ object mod {
   /* static members */
   object CSSStyleRule {
     
-    @JSImport("cssom", "CSSStyleRule.parse")
+    @JSImport("cssom", "CSSStyleRule")
     @js.native
-    def parse(ruleText: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def parse(ruleText: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ruleText.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("cssom", "CSSStyleSheet")
@@ -269,7 +277,9 @@ object mod {
   
   @JSImport("cssom", "MatcherList")
   @js.native
-  class MatcherList () extends /* index */ NumberDictionary[String] {
+  class MatcherList ()
+    extends StObject
+       with /* index */ NumberDictionary[String] {
     
     def appendMatcher(matcher: String): Unit = js.native
     
@@ -282,7 +292,9 @@ object mod {
   
   @JSImport("cssom", "MediaList")
   @js.native
-  class MediaList () extends /* index */ NumberDictionary[String] {
+  class MediaList ()
+    extends StObject
+       with /* index */ NumberDictionary[String] {
     
     def appendMedium(medium: String): Unit = js.native
     
@@ -300,11 +312,9 @@ object mod {
     var parentStyleSheet: StyleSheet | Null = js.native
   }
   
-  @JSImport("cssom", "clone")
-  @js.native
-  def clone_(stylesheet: CSSStyleSheet): CSSStyleSheet = js.native
+  @scala.inline
+  def clone_(stylesheet: CSSStyleSheet): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(stylesheet.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
   
-  @JSImport("cssom", "parse")
-  @js.native
-  def parse(token: String): CSSStyleSheet = js.native
+  @scala.inline
+  def parse(token: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(token.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
 }

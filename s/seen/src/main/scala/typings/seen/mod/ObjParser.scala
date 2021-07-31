@@ -3,7 +3,6 @@ package typings.seen.mod
 import typings.seen.anon.F
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "ObjParser")
@@ -14,7 +13,7 @@ class ObjParser () extends StObject {
   
   var faces: js.Array[js.Array[Double]] = js.native
   
-  def mapFacePoints(faceMap: js.Function1[/* points */ js.Array[Point], _]): Unit = js.native
+  def mapFacePoints(faceMap: js.Function1[/* points */ js.Array[Point], js.Any]): Unit = js.native
   
   def parse(contents: String): Unit = js.native
   

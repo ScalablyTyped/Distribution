@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a NUMPAGES field displaying the total number of pages.
   */
-@js.native
-trait CreatePageCountFieldCommand extends CommandWithSimpleStateBase {
+trait CreatePageCountFieldCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the CreatePageCountFieldCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object CreatePageCountFieldCommand {
   

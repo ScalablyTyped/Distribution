@@ -2,42 +2,40 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILineChartClasses extends StObject {
   
-  var area: js.UndefOr[String] = js.native
+  var area: js.UndefOr[String] = js.undefined
   
   /**
     * Default is 'ct-chart-line'
     */
-  var chart: js.UndefOr[String] = js.native
+  var chart: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var grid: js.UndefOr[String] = js.native
+  var grid: js.UndefOr[String] = js.undefined
   
-  var gridBackground: js.UndefOr[String] = js.native
+  var gridBackground: js.UndefOr[String] = js.undefined
   
-  var gridGroup: js.UndefOr[String] = js.native
+  var gridGroup: js.UndefOr[String] = js.undefined
   
-  var horizontal: js.UndefOr[String] = js.native
+  var horizontal: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelGroup: js.UndefOr[String] = js.native
+  var labelGroup: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.undefined
   
-  var point: js.UndefOr[String] = js.native
+  var point: js.UndefOr[String] = js.undefined
   
-  var series: js.UndefOr[String] = js.native
+  var series: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var vertical: js.UndefOr[String] = js.native
+  var vertical: js.UndefOr[String] = js.undefined
 }
 object ILineChartClasses {
   

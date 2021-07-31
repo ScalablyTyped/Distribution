@@ -2,41 +2,39 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCustomVerificationEmailTemplateRequest extends StObject {
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is not successfully verified.
     */
-  var FailureRedirectionURL: js.UndefOr[typings.awsSdk.sesMod.FailureRedirectionURL] = js.native
+  var FailureRedirectionURL: js.UndefOr[typings.awsSdk.sesMod.FailureRedirectionURL] = js.undefined
   
   /**
     * The email address that the custom verification email is sent from.
     */
-  var FromEmailAddress: js.UndefOr[FromAddress] = js.native
+  var FromEmailAddress: js.UndefOr[FromAddress] = js.undefined
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is successfully verified.
     */
-  var SuccessRedirectionURL: js.UndefOr[typings.awsSdk.sesMod.SuccessRedirectionURL] = js.native
+  var SuccessRedirectionURL: js.UndefOr[typings.awsSdk.sesMod.SuccessRedirectionURL] = js.undefined
   
   /**
     * The content of the custom verification email. The total size of the email must be less than 10 MB. The message body may contain HTML, with some limitations. For more information, see Custom Verification Email Frequently Asked Questions in the Amazon SES Developer Guide.
     */
-  var TemplateContent: js.UndefOr[typings.awsSdk.sesMod.TemplateContent] = js.native
+  var TemplateContent: js.UndefOr[typings.awsSdk.sesMod.TemplateContent] = js.undefined
   
   /**
     * The name of the custom verification email template that you want to update.
     */
-  var TemplateName: typings.awsSdk.sesMod.TemplateName = js.native
+  var TemplateName: typings.awsSdk.sesMod.TemplateName
   
   /**
     * The subject line of the custom verification email.
     */
-  var TemplateSubject: js.UndefOr[Subject] = js.native
+  var TemplateSubject: js.UndefOr[Subject] = js.undefined
 }
 object UpdateCustomVerificationEmailTemplateRequest {
   

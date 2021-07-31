@@ -2,14 +2,12 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Matrix extends StObject {
   
   /** Filter matrix */
-  var matrix: js.UndefOr[js.Array[Double]] = js.native
+  var matrix: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Matrix {
   

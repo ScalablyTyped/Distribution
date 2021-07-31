@@ -11,8 +11,8 @@ Strip line and/or block comments from a string. Blazing fast, and works with Jav
 | Full name          | strip-comments |
 | Keywords           | ada comments, apl comments, applescript comments, block comment, block, block-comment, c comments, code comment, comment, comments, csharp comments, css comments, css, hashbang comments, haskell comments, html comments, java comments, javascript comments, javascript, js, less comments, less css, less, less.js, lessjs, line comment, line comments, line, line-comment, line-comments, lua comments, matlab comments, ocaml comments, pascal comments, perl comments, php comments, python comments, remove, ruby comments, sass comments, sass, shebang comments, sql comments, strip, swift comments, typscript comments, xml comments |
 | # releases         | 3 |
-| # dependents       | 114 |
-| # downloads        | 87574322 |
+| # dependents       | 120 |
+| # downloads        | 112990093 |
 | # stars            | 5 |
 
 ## Links

@@ -2,11 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChildNode extends Node {
+trait ChildNode
+  extends StObject
+     with Node {
   
   /**
     * Inserts nodes just after node, while replacing strings in nodes with equivalent Text nodes.

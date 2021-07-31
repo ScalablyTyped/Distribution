@@ -2,29 +2,29 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseEventInit extends EventModifierInit {
+trait MouseEventInit
+  extends StObject
+     with EventModifierInit {
   
-  var button: js.UndefOr[Double] = js.native
+  var button: js.UndefOr[Double] = js.undefined
   
-  var buttons: js.UndefOr[Double] = js.native
+  var buttons: js.UndefOr[Double] = js.undefined
   
-  var clientX: js.UndefOr[Double] = js.native
+  var clientX: js.UndefOr[Double] = js.undefined
   
-  var clientY: js.UndefOr[Double] = js.native
+  var clientY: js.UndefOr[Double] = js.undefined
   
-  var movementX: js.UndefOr[Double] = js.native
+  var movementX: js.UndefOr[Double] = js.undefined
   
-  var movementY: js.UndefOr[Double] = js.native
+  var movementY: js.UndefOr[Double] = js.undefined
   
-  var relatedTarget: js.UndefOr[EventTarget | Null] = js.native
+  var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
   
-  var screenX: js.UndefOr[Double] = js.native
+  var screenX: js.UndefOr[Double] = js.undefined
   
-  var screenY: js.UndefOr[Double] = js.native
+  var screenY: js.UndefOr[Double] = js.undefined
 }
 object MouseEventInit {
   

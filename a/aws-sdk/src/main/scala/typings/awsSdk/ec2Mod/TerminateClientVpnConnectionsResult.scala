@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminateClientVpnConnectionsResult extends StObject {
   
   /**
     * The ID of the Client VPN endpoint.
     */
-  var ClientVpnEndpointId: js.UndefOr[String] = js.native
+  var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the client connections.
     */
-  var ConnectionStatuses: js.UndefOr[TerminateConnectionStatusSet] = js.native
+  var ConnectionStatuses: js.UndefOr[TerminateConnectionStatusSet] = js.undefined
   
   /**
     * The user who established the terminated client connections.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object TerminateClientVpnConnectionsResult {
   

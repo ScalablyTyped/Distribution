@@ -5,21 +5,21 @@ import typings.yandexMaps.yandexMapsStrings.hidden
 import typings.yandexMaps.yandexMapsStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPane extends IEventEmitter {
+trait IPane
+  extends StObject
+     with IEventEmitter {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def getElement(): HTMLElement = js.native
+  def getElement(): HTMLElement
   
-  def getMap(): Map_ = js.native
+  def getMap(): Map_
   
-  def getOverflow(): visible | hidden = js.native
+  def getOverflow(): visible | hidden
   
-  def getZIndex(): Double = js.native
+  def getZIndex(): Double
 }
 object IPane {
   

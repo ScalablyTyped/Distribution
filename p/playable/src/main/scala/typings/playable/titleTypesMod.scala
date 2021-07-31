@@ -6,7 +6,6 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleTypesMod {
@@ -29,12 +28,11 @@ object titleTypesMod {
     def show(): Unit = js.native
   }
   
-  @js.native
   trait ITitleAPI extends StObject {
     
-    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
+    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
     
-    var setTitleClickCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], Unit]] = js.native
+    var setTitleClickCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], Unit]] = js.undefined
   }
   object ITitleAPI {
     
@@ -61,10 +59,9 @@ object titleTypesMod {
     }
   }
   
-  @js.native
   trait ITitleViewCallbacks extends StObject {
     
-    var onClick: EventListenerOrEventListenerObject = js.native
+    var onClick: EventListenerOrEventListenerObject
   }
   object ITitleViewCallbacks {
     
@@ -85,12 +82,11 @@ object titleTypesMod {
     }
   }
   
-  @js.native
   trait ITitleViewConfig extends StObject {
     
-    var callbacks: ITitleViewCallbacks = js.native
+    var callbacks: ITitleViewCallbacks
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
   }
   object ITitleViewConfig {
     
@@ -111,14 +107,13 @@ object titleTypesMod {
     }
   }
   
-  @js.native
   trait ITitleViewStyles extends StObject {
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var link: String = js.native
+    var link: String
     
-    var title: String = js.native
+    var title: String
   }
   object ITitleViewStyles {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSubscriptionsMessage extends StObject {
   
   /**
     * A list of EventSubscriptions data types.
     */
-  var EventSubscriptionsList: js.UndefOr[typings.awsSdk.neptuneMod.EventSubscriptionsList] = js.native
+  var EventSubscriptionsList: js.UndefOr[typings.awsSdk.neptuneMod.EventSubscriptionsList] = js.undefined
   
   /**
     *  An optional pagination token provided by a previous DescribeOrderableDBInstanceOptions request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object EventSubscriptionsMessage {
   

@@ -2,21 +2,21 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppointmentResizingEventArgs extends EventArgs {
+trait AppointmentResizingEventArgs
+  extends StObject
+     with EventArgs {
   
-  var allow: Boolean = js.native
+  var allow: Boolean
   
-  val appointmentId: String = js.native
+  val appointmentId: String
   
-  val mouseEvent: js.Any = js.native
+  val mouseEvent: js.Any
   
-  val newInterval: BootstrapTimeInterval = js.native
+  val newInterval: BootstrapTimeInterval
   
-  val oldInterval: BootstrapTimeInterval = js.native
+  val oldInterval: BootstrapTimeInterval
 }
 object AppointmentResizingEventArgs {
   

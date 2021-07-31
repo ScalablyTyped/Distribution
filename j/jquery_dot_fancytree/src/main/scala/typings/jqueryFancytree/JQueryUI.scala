@@ -3,15 +3,13 @@ package typings.jqueryFancytree
 import typings.jqueryFancytree.Fancytree.FancytreeStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryUI {
   
-  @js.native
   trait UI extends StObject {
     
-    var fancytree: FancytreeStatic = js.native
+    var fancytree: FancytreeStatic
   }
   object UI {
     

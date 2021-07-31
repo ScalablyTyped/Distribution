@@ -2,7 +2,6 @@ package typings.activexWia.WIA
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Items object contains a collection of Item objects. See the Items property on the Device or Item object for details on accessing the Items object. */

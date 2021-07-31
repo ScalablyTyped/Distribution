@@ -2,56 +2,54 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionDeclaration extends StObject {
   
   /**
     * Specifies the action type and the provider of the action.
     */
-  var actionTypeId: ActionTypeId = js.native
+  var actionTypeId: ActionTypeId
   
   /**
     * The action's configuration. These are key-value pairs that specify input values for an action. For more information, see Action Structure Requirements in CodePipeline. For the list of configuration properties for the AWS CloudFormation action type in CodePipeline, see Configuration Properties Reference in the AWS CloudFormation User Guide. For template snippets with examples, see Using Parameter Override Functions with CodePipeline Pipelines in the AWS CloudFormation User Guide. The values can be represented in either JSON or YAML format. For example, the JSON configuration item format is as follows:   JSON:   "Configuration" : { Key : Value }, 
     */
-  var configuration: js.UndefOr[ActionConfigurationMap] = js.native
+  var configuration: js.UndefOr[ActionConfigurationMap] = js.undefined
   
   /**
     * The name or ID of the artifact consumed by the action, such as a test or build artifact.
     */
-  var inputArtifacts: js.UndefOr[InputArtifactList] = js.native
+  var inputArtifacts: js.UndefOr[InputArtifactList] = js.undefined
   
   /**
     * The action declaration's name.
     */
-  var name: ActionName = js.native
+  var name: ActionName
   
   /**
     * The variable namespace associated with the action. All variables produced as output by this action fall under this namespace.
     */
-  var namespace: js.UndefOr[ActionNamespace] = js.native
+  var namespace: js.UndefOr[ActionNamespace] = js.undefined
   
   /**
     * The name or ID of the result of the action declaration, such as a test or build artifact.
     */
-  var outputArtifacts: js.UndefOr[OutputArtifactList] = js.native
+  var outputArtifacts: js.UndefOr[OutputArtifactList] = js.undefined
   
   /**
     * The action declaration's AWS Region, such as us-east-1.
     */
-  var region: js.UndefOr[AWSRegionName] = js.native
+  var region: js.UndefOr[AWSRegionName] = js.undefined
   
   /**
     * The ARN of the IAM service role that performs the declared action. This is assumed through the roleArn for the pipeline.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The order in which actions are run.
     */
-  var runOrder: js.UndefOr[ActionRunOrder] = js.native
+  var runOrder: js.UndefOr[ActionRunOrder] = js.undefined
 }
 object ActionDeclaration {
   

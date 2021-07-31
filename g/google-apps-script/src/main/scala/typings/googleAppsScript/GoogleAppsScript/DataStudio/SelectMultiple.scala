@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,20 +26,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .addOption(option1)
   *       .addOption(option2);
   */
-@js.native
 trait SelectMultiple extends StObject {
   
-  def addOption(optionBuilder: OptionBuilder): SelectMultiple = js.native
+  def addOption(optionBuilder: OptionBuilder): SelectMultiple
   
-  def setAllowOverride(allowOverride: Boolean): SelectMultiple = js.native
+  def setAllowOverride(allowOverride: Boolean): SelectMultiple
   
-  def setHelpText(helpText: String): SelectMultiple = js.native
+  def setHelpText(helpText: String): SelectMultiple
   
-  def setId(id: String): SelectMultiple = js.native
+  def setId(id: String): SelectMultiple
   
-  def setIsDynamic(isDynamic: Boolean): SelectMultiple = js.native
+  def setIsDynamic(isDynamic: Boolean): SelectMultiple
   
-  def setName(name: String): SelectMultiple = js.native
+  def setName(name: String): SelectMultiple
 }
 object SelectMultiple {
   

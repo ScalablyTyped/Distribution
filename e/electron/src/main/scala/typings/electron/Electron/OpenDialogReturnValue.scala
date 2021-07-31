@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenDialogReturnValue extends StObject {
   
   /**
@@ -15,18 +13,18 @@ trait OpenDialogReturnValue extends StObject {
     *
     * @platform darwin,mas
     */
-  var bookmarks: js.UndefOr[js.Array[String]] = js.native
+  var bookmarks: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * whether or not the dialog was canceled.
     */
-  var canceled: Boolean = js.native
+  var canceled: Boolean
   
   /**
     * An array of file paths chosen by the user. If the dialog is cancelled this will
     * be an empty array.
     */
-  var filePaths: js.Array[String] = js.native
+  var filePaths: js.Array[String]
 }
 object OpenDialogReturnValue {
   

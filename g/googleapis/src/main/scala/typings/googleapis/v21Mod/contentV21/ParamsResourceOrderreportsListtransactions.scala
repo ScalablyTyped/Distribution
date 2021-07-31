@@ -6,49 +6,49 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrderreportsListtransactions extends StandardParameters {
+trait ParamsResourceOrderreportsListtransactions
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The Google-provided ID of the disbursement (found in Wallet).
     */
-  var disbursementId: js.UndefOr[String] = js.native
+  var disbursementId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of disbursements to return in the response, used for
     * paging.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the account that manages the order. This cannot be a
     * multi-client account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The last date in which transaction occurred. In ISO 8601 format. Default:
     * current date.
     */
-  var transactionEndDate: js.UndefOr[String] = js.native
+  var transactionEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * The first date in which transaction occurred. In ISO 8601 format.
     */
-  var transactionStartDate: js.UndefOr[String] = js.native
+  var transactionStartDate: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrderreportsListtransactions {
   

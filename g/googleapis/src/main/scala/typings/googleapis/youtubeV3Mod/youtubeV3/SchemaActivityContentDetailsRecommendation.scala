@@ -2,31 +2,29 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information that identifies the recommended resource.
   */
-@js.native
 trait SchemaActivityContentDetailsRecommendation extends StObject {
   
   /**
     * The reason that the resource is recommended to the user.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The resourceId object contains information that identifies the
     * recommended resource.
     */
-  var resourceId: js.UndefOr[SchemaResourceId] = js.native
+  var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
   
   /**
     * The seedResourceId object contains information about the resource that
     * caused the recommendation.
     */
-  var seedResourceId: js.UndefOr[SchemaResourceId] = js.native
+  var seedResourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }
 object SchemaActivityContentDetailsRecommendation {
   

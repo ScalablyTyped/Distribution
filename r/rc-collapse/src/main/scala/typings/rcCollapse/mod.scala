@@ -6,7 +6,6 @@ import typings.rcCollapse.anon.Typeofdefault
 import typings.rcCollapse.interfaceMod.CollapseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,6 +17,10 @@ object mod {
     def this(props: CollapseProps) = this()
   }
   object default {
+    
+    @JSImport("rc-collapse", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /* was `typeof CollapsePanel` */
     @JSImport("rc-collapse", "default.Panel")
@@ -52,9 +55,8 @@ object mod {
         @scala.inline
         def isActive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isActive")(x.asInstanceOf[js.Any])
         
-        @JSImport("rc-collapse", "default.Panel.defaultProps.onItemClick")
-        @js.native
-        def onItemClick(): Unit = js.native
+        @scala.inline
+        def onItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onItemClick")().asInstanceOf[Unit]
         
         @JSImport("rc-collapse", "default.Panel.defaultProps.showArrow")
         @js.native
@@ -83,9 +85,8 @@ object mod {
       @scala.inline
       def destroyInactivePanel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destroyInactivePanel")(x.asInstanceOf[js.Any])
       
-      @JSImport("rc-collapse", "default.defaultProps.onChange")
-      @js.native
-      def onChange(): Unit = js.native
+      @scala.inline
+      def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
       
       @JSImport("rc-collapse", "default.defaultProps.prefixCls")
       @js.native
@@ -95,9 +96,8 @@ object mod {
     }
     
     /* static member */
-    @JSImport("rc-collapse", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: CollapseProps): PartialCollapseState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: CollapseProps): PartialCollapseState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[PartialCollapseState]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -107,5 +107,5 @@ object mod {
     extends typings.rcCollapse.panelMod.default
   @JSImport("rc-collapse", "Panel")
   @js.native
-  val Panel: Instantiable0[typings.rcCollapse.panelMod.default] with Typeofdefault = js.native
+  val Panel: Instantiable0[typings.rcCollapse.panelMod.default] & Typeofdefault = js.native
 }

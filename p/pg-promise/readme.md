@@ -10,9 +10,9 @@ PostgreSQL interface for Node.js
 | ------------------ | :-------------: |
 | Full name          | pg-promise |
 | Keywords           | pg, promise, postgres |
-| # releases         | 86 |
-| # dependents       | 313 |
-| # downloads        | 6954674 |
+| # releases         | 92 |
+| # dependents       | 322 |
+| # downloads        | 7464936 |
 | # stars            | 35 |
 
 ## Links

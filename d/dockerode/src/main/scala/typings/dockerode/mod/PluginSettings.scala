@@ -2,19 +2,17 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginSettings extends StObject {
   
-  var Args: js.Array[String] = js.native
+  var Args: js.Array[String]
   
-  var Devices: js.Array[PluginDevice] = js.native
+  var Devices: js.Array[PluginDevice]
   
-  var Env: js.Array[String] = js.native
+  var Env: js.Array[String]
   
-  var Mounts: js.Array[PluginMount] = js.native
+  var Mounts: js.Array[PluginMount]
 }
 object PluginSettings {
   

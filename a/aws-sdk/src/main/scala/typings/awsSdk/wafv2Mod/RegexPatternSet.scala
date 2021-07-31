@@ -2,36 +2,34 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexPatternSet extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the entity.
     */
-  var ARN: js.UndefOr[ResourceArn] = js.native
+  var ARN: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * A description of the set that helps with identification. You cannot change the description of a set after you create it.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * A unique identifier for the set. This ID is returned in the responses to create and list commands. You provide it to operations like update and delete.
     */
-  var Id: js.UndefOr[EntityId] = js.native
+  var Id: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The name of the set. You cannot change the name after you create the set.
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
   
   /**
     * The regular expression patterns in the set.
     */
-  var RegularExpressionList: js.UndefOr[typings.awsSdk.wafv2Mod.RegularExpressionList] = js.native
+  var RegularExpressionList: js.UndefOr[typings.awsSdk.wafv2Mod.RegularExpressionList] = js.undefined
 }
 object RegexPatternSet {
   

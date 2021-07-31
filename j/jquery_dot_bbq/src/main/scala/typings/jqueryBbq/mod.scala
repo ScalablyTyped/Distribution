@@ -6,7 +6,6 @@ import typings.jqueryBbq.mod.global.JQueryBbq.JQueryDeparam
 import typings.jqueryBbq.mod.global.JQueryBbq.ParamFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,41 +16,43 @@ object mod {
     trait JQuery extends StObject {
       
       def fragment(): JQuery = js.native
-      def fragment(attr: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
-      def fragment(attr: js.UndefOr[scala.Nothing], params: js.Any): JQuery = js.native
-      def fragment(attr: js.UndefOr[scala.Nothing], params: js.Any, merge_mode: Double): JQuery = js.native
       def fragment(attr: js.Any): JQuery = js.native
-      def fragment(attr: js.Any, params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
       def fragment(attr: js.Any, params: js.Any): JQuery = js.native
       def fragment(attr: js.Any, params: js.Any, merge_mode: Double): JQuery = js.native
+      def fragment(attr: js.Any, params: Unit, merge_mode: Double): JQuery = js.native
+      def fragment(attr: Unit, params: js.Any): JQuery = js.native
+      def fragment(attr: Unit, params: js.Any, merge_mode: Double): JQuery = js.native
+      def fragment(attr: Unit, params: Unit, merge_mode: Double): JQuery = js.native
       
       def hashchange(): JQuery = js.native
-      def hashchange(eventData: js.UndefOr[scala.Nothing], handler: js.Function1[/* eventObject */ EventObject, _]): JQuery = js.native
       def hashchange(eventData: js.Any): JQuery = js.native
-      def hashchange(eventData: js.Any, handler: js.Function1[/* eventObject */ EventObject, _]): JQuery = js.native
-      def hashchange(handler: js.Function1[/* eventObject */ EventObject, _]): JQuery = js.native
+      def hashchange(eventData: js.Any, handler: js.Function1[/* eventObject */ EventObject, js.Any]): JQuery = js.native
+      def hashchange(eventData: Unit, handler: js.Function1[/* eventObject */ EventObject, js.Any]): JQuery = js.native
+      def hashchange(handler: js.Function1[/* eventObject */ EventObject, js.Any]): JQuery = js.native
       
       def querystring(): JQuery = js.native
-      def querystring(attr: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
-      def querystring(attr: js.UndefOr[scala.Nothing], params: js.Any): JQuery = js.native
-      def querystring(attr: js.UndefOr[scala.Nothing], params: js.Any, merge_mode: Double): JQuery = js.native
       def querystring(attr: js.Any): JQuery = js.native
-      def querystring(attr: js.Any, params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
       def querystring(attr: js.Any, params: js.Any): JQuery = js.native
       def querystring(attr: js.Any, params: js.Any, merge_mode: Double): JQuery = js.native
+      def querystring(attr: js.Any, params: Unit, merge_mode: Double): JQuery = js.native
+      def querystring(attr: Unit, params: js.Any): JQuery = js.native
+      def querystring(attr: Unit, params: js.Any, merge_mode: Double): JQuery = js.native
+      def querystring(attr: Unit, params: Unit, merge_mode: Double): JQuery = js.native
     }
     
     object JQueryBbq {
       
       @js.native
-      trait EventObject extends JQueryEventObject {
+      trait EventObject
+        extends StObject
+           with JQueryEventObject {
         
         var fragment: String = js.native
         
         def getState(): js.Any = js.native
-        def getState(key: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
         def getState(key: String): js.Any = js.native
         def getState(key: String, coerce: Boolean): js.Any = js.native
+        def getState(key: Unit, coerce: Boolean): js.Any = js.native
       }
       
       @js.native
@@ -68,9 +69,9 @@ object mod {
           */
         def getState(): js.Any = js.native
         def getState(coerce: Boolean): js.Any = js.native
-        def getState(key: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
         def getState(key: String): js.Any = js.native
         def getState(key: String, coerce: Boolean): js.Any = js.native
+        def getState(key: Unit, coerce: Boolean): js.Any = js.native
         
         /**
           * Adds a 'state' into the browser history at the current position, setting
@@ -81,11 +82,11 @@ object mod {
           * @name merge_mode Merge behavior defaults to 0 if merge_mode is not specified (unless a hash string beginning with # is specified, in which case merge behavior defaults to 2)
           */
         def pushState(): Unit = js.native
-        def pushState(params: js.UndefOr[scala.Nothing], merge_mode: Double): Unit = js.native
         def pushState(params: String): Unit = js.native
         def pushState(params: String, merge_mode: Double): Unit = js.native
         def pushState(params: js.Any): Unit = js.native
         def pushState(params: js.Any, merge_mode: Double): Unit = js.native
+        def pushState(params: Unit, merge_mode: Double): Unit = js.native
         
         /**
           * Remove one or more keys from the current browser history 'state', creating
@@ -121,9 +122,9 @@ object mod {
           * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
           */
         def fragment(): js.Any = js.native
-        def fragment(url: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
         def fragment(url: String): js.Any = js.native
         def fragment(url: String, coerce: Boolean): js.Any = js.native
+        def fragment(url: Unit, coerce: Boolean): js.Any = js.native
         
         /**
           * Parse the query string from a URL or the current window.location.href,
@@ -134,9 +135,9 @@ object mod {
           * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
           */
         def querystring(): js.Any = js.native
-        def querystring(url: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
         def querystring(url: String): js.Any = js.native
         def querystring(url: String, coerce: Boolean): js.Any = js.native
+        def querystring(url: Unit, coerce: Boolean): js.Any = js.native
       }
       
       @js.native
@@ -189,17 +190,17 @@ object mod {
         * @name merge_mode An object representing the deserialized params string.
         */
       def querystring(): String = js.native
-      def querystring(url: js.UndefOr[scala.Nothing], coerce: js.UndefOr[scala.Nothing], merge_mode: Double): String = js.native
-      def querystring(url: js.UndefOr[scala.Nothing], coerce: js.Any): String = js.native
-      def querystring(url: js.UndefOr[scala.Nothing], coerce: js.Any, merge_mode: Double): String = js.native
-      def querystring(url: js.UndefOr[scala.Nothing], coerce: Boolean): String = js.native
-      def querystring(url: js.UndefOr[scala.Nothing], coerce: Boolean, merge_mode: Double): String = js.native
       def querystring(url: String): String = js.native
-      def querystring(url: String, coerce: js.UndefOr[scala.Nothing], merge_mode: Double): String = js.native
       def querystring(url: String, coerce: js.Any): String = js.native
       def querystring(url: String, coerce: js.Any, merge_mode: Double): String = js.native
       def querystring(url: String, coerce: Boolean): String = js.native
       def querystring(url: String, coerce: Boolean, merge_mode: Double): String = js.native
+      def querystring(url: String, coerce: Unit, merge_mode: Double): String = js.native
+      def querystring(url: Unit, coerce: js.Any): String = js.native
+      def querystring(url: Unit, coerce: js.Any, merge_mode: Double): String = js.native
+      def querystring(url: Unit, coerce: Boolean): String = js.native
+      def querystring(url: Unit, coerce: Boolean, merge_mode: Double): String = js.native
+      def querystring(url: Unit, coerce: Unit, merge_mode: Double): String = js.native
       
       /**
         * Returns a params string equivalent to that returned by the internal

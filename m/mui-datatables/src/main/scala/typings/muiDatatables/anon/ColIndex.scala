@@ -5,19 +5,17 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColIndex extends StObject {
   
-  var colIndex: Double = js.native
+  var colIndex: Double
   
-  var dataIndex: Double = js.native
+  var dataIndex: Double
   
-  var event: MouseEvent[Element, NativeMouseEvent] = js.native
+  var event: MouseEvent[Element, NativeMouseEvent]
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
 }
 object ColIndex {
   

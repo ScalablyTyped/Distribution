@@ -3,41 +3,41 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dial extends Event {
+trait Dial
+  extends StObject
+     with Event {
   
   /**
     * The calling channel.
     */
-  var caller: js.UndefOr[Channel] = js.native
+  var caller: js.UndefOr[Channel] = js.undefined
   
   /**
     * Current status of the dialing attempt to the peer.
     */
-  var dialstatus: String = js.native
+  var dialstatus: String
   
   /**
     * The dial string for calling the peer channel.
     */
-  var dialstring: js.UndefOr[String] = js.native
+  var dialstring: js.UndefOr[String] = js.undefined
   
   /**
     * Forwarding target requested by the original dialed channel.
     */
-  var forward: js.UndefOr[String] = js.native
+  var forward: js.UndefOr[String] = js.undefined
   
   /**
     * Channel that the caller has been forwarded to.
     */
-  var forwarded: js.UndefOr[Channel] = js.native
+  var forwarded: js.UndefOr[Channel] = js.undefined
   
   /**
     * The dialed channel.
     */
-  var peer: Channel = js.native
+  var peer: Channel
 }
 object Dial {
   

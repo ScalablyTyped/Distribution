@@ -6,27 +6,28 @@ import typings.reactImageMagnify.anon.Height
 import typings.reactImageMagnify.anon.ReactImageMagnifyPropsRea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-image-magnify", JSImport.Default)
+  @JSImport("react-image-magnify", JSImport.Namespace)
   @js.native
-  def default(props: ReactImageMagnifyPropsRea): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: ReactImageMagnifyPropsRea): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait CommonImageType extends StObject {
     
-    var onError: js.UndefOr[js.Function0[Unit]] = js.native
+    var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var sizes: js.UndefOr[String] = js.native
+    var sizes: js.UndefOr[String] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var srcSet: js.UndefOr[String] = js.native
+    var srcSet: js.UndefOr[String] = js.undefined
   }
   object CommonImageType {
     
@@ -68,17 +69,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait LargeImageType extends CommonImageType {
+  trait LargeImageType
+    extends StObject
+       with CommonImageType {
     
     /**
       * Defaults to empty string
       */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object LargeImageType {
     
@@ -105,23 +107,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactImageMagnifyProps extends StObject {
     
     /**
       * CSS class applied to root container element.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class applied to enlarged image element.
       */
-    var enlargedImageClassName: js.UndefOr[String] = js.native
+    var enlargedImageClassName: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class applied to enlarged image container element.
       */
-    var enlargedImageContainerClassName: js.UndefOr[String] = js.native
+    var enlargedImageContainerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Specify enlarged image container dimensions as an object with width and height properties.
@@ -129,18 +130,18 @@ object mod {
       * Percentage is based on small image dimension. Number is pixels.
       * Not applied when enlargedImagePosition is set to 'over', the default for touch input.
       */
-    var enlargedImageContainerDimensions: js.UndefOr[Height] = js.native
+    var enlargedImageContainerDimensions: js.UndefOr[Height] = js.undefined
     
     /**
       * Style applied to enlarged image container element.
       */
-    var enlargedImageContainerStyle: js.UndefOr[CSSProperties] = js.native
+    var enlargedImageContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Render enlarged image into an HTML element of your choosing by specifying the target element id.
       * Requires React v16. Ignored for touch input by default - see isEnlargedImagePortalEnabledForTouch.
       */
-    var enlargedImagePortalId: js.UndefOr[String] = js.native
+    var enlargedImagePortalId: js.UndefOr[String] = js.undefined
     
     // Behavioral props
     /**
@@ -148,12 +149,12 @@ object mod {
       *
       * Default: beside(over for touch)
       */
-    var enlargedImagePosition: js.UndefOr[String] = js.native
+    var enlargedImagePosition: js.UndefOr[String] = js.undefined
     
     /**
       * Style applied to enlarged image element.
       */
-    var enlargedImageStyle: js.UndefOr[CSSProperties] = js.native
+    var enlargedImageStyle: js.UndefOr[CSSProperties] = js.undefined
     
     // Interation properties
     /**
@@ -161,124 +162,124 @@ object mod {
       *
       * Default: 300
       */
-    var fadeDurationInMs: js.UndefOr[Double] = js.native
+    var fadeDurationInMs: js.UndefOr[Double] = js.undefined
     
     /**
       * Reference to a component class or functional component. A Default is provided.
       */
-    var hintComponent: js.UndefOr[js.Function0[Unit]] = js.native
+    var hintComponent: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Hint text for mouse.
       *
       * Default: Hover to Zoom
       */
-    var hintTextMouse: js.UndefOr[String] = js.native
+    var hintTextMouse: js.UndefOr[String] = js.undefined
     
     /**
       * Hint text for touch.
       *
       * Default: Long-Touch to Zoom
       */
-    var hintTextTouch: js.UndefOr[String] = js.native
+    var hintTextTouch: js.UndefOr[String] = js.undefined
     
     /**
       * Milliseconds to delay hover trigger.
       *
       * Default: 250
       */
-    var hoverDelayInMs: js.UndefOr[Double] = js.native
+    var hoverDelayInMs: js.UndefOr[Double] = js.undefined
     
     /**
       * Milliseconds to delay hover-off trigger.
       *
       * Default: 150
       */
-    var hoverOffDelayInMs: js.UndefOr[Double] = js.native
+    var hoverOffDelayInMs: js.UndefOr[Double] = js.undefined
     
     /**
       * CSS class applied to small image element.
       */
-    var imageClassName: js.UndefOr[String] = js.native
+    var imageClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Style applied to small image element.
       */
-    var imageStyle: js.UndefOr[CSSProperties] = js.native
+    var imageStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Activate magnification immediately on touch. May impact scrolling.
       *
       * Default: false
       */
-    var isActivatedOnTouch: js.UndefOr[Boolean] = js.native
+    var isActivatedOnTouch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify portal rendering should be honored for touch input.
       *
       * Default: false
       */
-    var isEnlargedImagePortalEnabledForTouch: js.UndefOr[Boolean] = js.native
+    var isEnlargedImagePortalEnabledForTouch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable hint feature.
       *
       * Default: false
       */
-    var isHintEnabled: js.UndefOr[Boolean] = js.native
+    var isHintEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Large image information
       */
-    var largeImage: LargeImageType = js.native
+    var largeImage: LargeImageType
     
     /**
       * Specify a custom lens component.
       */
-    var lensComponent: js.UndefOr[js.Function0[Unit]] = js.native
+    var lensComponent: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Style applied to tinted lens.
       */
-    var lensStyle: js.UndefOr[CSSProperties] = js.native
+    var lensStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Milliseconds to delay long-press activation (long touch).
       *
       * Default: 500
       */
-    var pressDuration: js.UndefOr[Double] = js.native
+    var pressDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Pixels of movement allowed during long-press activation.
       *
       * Default: 5
       */
-    var pressMoveThreshold: js.UndefOr[Double] = js.native
+    var pressMoveThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Only show hint until the first interaction begins.
       *
       * Default: true
       */
-    var shouldHideHintAfterFirstActivation: js.UndefOr[Boolean] = js.native
+    var shouldHideHintAfterFirstActivation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a positive space lens in place of the default negative space lens.
       *
       * Default: false
       */
-    var shouldUsePositiveSpaceLens: js.UndefOr[Boolean] = js.native
+    var shouldUsePositiveSpaceLens: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Small image information.
       */
-    var smallImage: SmallImageType = js.native
+    var smallImage: SmallImageType
     
     /**
       * Style applied to root container element.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ReactImageMagnifyProps {
     
@@ -455,25 +456,26 @@ object mod {
     }
   }
   
-  @js.native
-  trait SmallImageType extends CommonImageType {
+  trait SmallImageType
+    extends StObject
+       with CommonImageType {
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /**
       * Required if isFluidWidth is not set
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: false
       */
-    var isFluidWidth: Boolean = js.native
+    var isFluidWidth: Boolean
     
     /**
       * Required if isFluidWidth is not set
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SmallImageType {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeInstanceRequest extends StObject {
   
   /** Required. Specifies the target version of Redis software to upgrade to. */
-  var redisVersion: js.UndefOr[String] = js.native
+  var redisVersion: js.UndefOr[String] = js.undefined
 }
 object UpgradeInstanceRequest {
   

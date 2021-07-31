@@ -2,46 +2,44 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLinkRequest extends StObject {
   
   /**
     *  The upload speed and download speed in Mbps. 
     */
-  var Bandwidth: typings.awsSdk.networkmanagerMod.Bandwidth = js.native
+  var Bandwidth: typings.awsSdk.networkmanagerMod.Bandwidth
   
   /**
     * A description of the link. Length Constraints: Maximum length of 256 characters.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The provider of the link. Constraints: Cannot include the following characters: | \ ^ Length Constraints: Maximum length of 128 characters.
     */
-  var Provider: js.UndefOr[String] = js.native
+  var Provider: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the site.
     */
-  var SiteId: String = js.native
+  var SiteId: String
   
   /**
     * The tags to apply to the resource during creation.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of the link. Constraints: Cannot include the following characters: | \ ^ Length Constraints: Maximum length of 128 characters.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object CreateLinkRequest {
   

@@ -3,7 +3,6 @@ package typings.nodegit
 import typings.nodegit.oidMod.Oid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexEntryMod {
@@ -37,12 +36,11 @@ object indexEntryMod {
     var uid: Double = js.native
   }
   
-  @js.native
   trait IndexTime extends StObject {
     
-    def nanoseconds(): Double = js.native
+    def nanoseconds(): Double
     
-    def seconds(): Double = js.native
+    def seconds(): Double
   }
   object IndexTime {
     

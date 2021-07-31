@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetAttribute extends StObject {
   
   /**
     * A facet attribute consists of either a definition or a reference. This structure contains the attribute definition. See Attribute References for more information.
     */
-  var AttributeDefinition: js.UndefOr[FacetAttributeDefinition] = js.native
+  var AttributeDefinition: js.UndefOr[FacetAttributeDefinition] = js.undefined
   
   /**
     * An attribute reference that is associated with the attribute. See Attribute References for more information.
     */
-  var AttributeReference: js.UndefOr[FacetAttributeReference] = js.native
+  var AttributeReference: js.UndefOr[FacetAttributeReference] = js.undefined
   
   /**
     * The name of the facet attribute.
     */
-  var Name: AttributeName = js.native
+  var Name: AttributeName
   
   /**
     * The required behavior of the FacetAttribute.
     */
-  var RequiredBehavior: js.UndefOr[RequiredAttributeBehavior] = js.native
+  var RequiredBehavior: js.UndefOr[RequiredAttributeBehavior] = js.undefined
 }
 object FacetAttribute {
   

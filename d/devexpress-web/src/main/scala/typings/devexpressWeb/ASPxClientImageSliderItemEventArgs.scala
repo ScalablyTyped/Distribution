@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientImageSlider.ActiveItemChanged and ASPxClientImageSlider.ItemClick events.
   */
-@js.native
-trait ASPxClientImageSliderItemEventArgs extends ASPxClientEventArgs {
+trait ASPxClientImageSliderItemEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets an item object related to the event.
     */
-  var item: ASPxClientImageSliderItem = js.native
+  var item: ASPxClientImageSliderItem
 }
 object ASPxClientImageSliderItemEventArgs {
   

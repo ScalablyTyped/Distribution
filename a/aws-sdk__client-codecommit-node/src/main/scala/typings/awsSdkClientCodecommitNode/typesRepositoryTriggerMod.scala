@@ -7,38 +7,36 @@ import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.upda
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryTriggerMod {
   
-  @js.native
   trait RepositoryTrigger extends StObject {
     
     /**
       * <p>The branches that will be included in the trigger configuration. If you specify an empty array, the trigger will apply to all branches.</p> <note> <p>While no content is required in the array, you must include the array itself.</p> </note>
       */
-    var branches: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var branches: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p>Any custom data associated with the trigger that will be included in the information sent to the target of the trigger.</p>
       */
-    var customData: js.UndefOr[String] = js.native
+    var customData: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The ARN of the resource that is the target for a trigger. For example, the ARN of a topic in Amazon Simple Notification Service (SNS).</p>
       */
-    var destinationArn: String = js.native
+    var destinationArn: String
     
     /**
       * <p>The repository events that will cause the trigger to run actions in another service, such as sending a notification through Amazon Simple Notification Service (SNS). </p> <note> <p>The valid value "all" cannot be used with any other values.</p> </note>
       */
-    var events: (js.Array[all | updateReference | createReference | deleteReference | String]) | (Iterable[all | updateReference | createReference | deleteReference | String]) = js.native
+    var events: (js.Array[all | updateReference | createReference | deleteReference | String]) | (Iterable[all | updateReference | createReference | deleteReference | String])
     
     /**
       * <p>The name of the trigger.</p>
       */
-    var name: String = js.native
+    var name: String
   }
   object RepositoryTrigger {
     
@@ -86,20 +84,21 @@ object typesRepositoryTriggerMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRepositoryTrigger extends RepositoryTrigger {
+  trait UnmarshalledRepositoryTrigger
+    extends StObject
+       with RepositoryTrigger {
     
     /**
       * <p>The branches that will be included in the trigger configuration. If you specify an empty array, the trigger will apply to all branches.</p> <note> <p>While no content is required in the array, you must include the array itself.</p> </note>
       */
     @JSName("branches")
-    var branches_UnmarshalledRepositoryTrigger: js.UndefOr[js.Array[String]] = js.native
+    var branches_UnmarshalledRepositoryTrigger: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * <p>The repository events that will cause the trigger to run actions in another service, such as sending a notification through Amazon Simple Notification Service (SNS). </p> <note> <p>The valid value "all" cannot be used with any other values.</p> </note>
       */
     @JSName("events")
-    var events_UnmarshalledRepositoryTrigger: js.Array[all | updateReference | createReference | deleteReference | String] = js.native
+    var events_UnmarshalledRepositoryTrigger: js.Array[all | updateReference | createReference | deleteReference | String]
   }
   object UnmarshalledRepositoryTrigger {
     

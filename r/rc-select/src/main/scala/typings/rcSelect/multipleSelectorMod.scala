@@ -21,7 +21,6 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multipleSelectorMod extends Shortcut {
@@ -30,26 +29,27 @@ object multipleSelectorMod extends Shortcut {
   @js.native
   val default: FC[SelectorProps] = js.native
   
-  @js.native
-  trait SelectorProps extends InnerSelectorProps {
+  trait SelectorProps
+    extends StObject
+       with InnerSelectorProps {
     
-    var choiceTransitionName: js.UndefOr[String] = js.native
+    var choiceTransitionName: js.UndefOr[String] = js.undefined
     
-    var maxTagCount: js.UndefOr[Double] = js.native
+    var maxTagCount: js.UndefOr[Double] = js.undefined
     
     var maxTagPlaceholder: js.UndefOr[
         ReactNode | (js.Function1[/* omittedValues */ js.Array[LabelValueType], ReactNode])
-      ] = js.native
+      ] = js.undefined
     
-    var maxTagTextLength: js.UndefOr[Double] = js.native
+    var maxTagTextLength: js.UndefOr[Double] = js.undefined
     
-    def onSelect(value: RawValueType, option: Selected): Unit = js.native
+    def onSelect(value: RawValueType, option: Selected): Unit
     
-    var removeIcon: js.UndefOr[RenderNode] = js.native
+    var removeIcon: js.UndefOr[RenderNode] = js.undefined
     
-    var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.native
+    var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.undefined
     
-    var tokenSeparators: js.UndefOr[js.Array[String]] = js.native
+    var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
   }
   object SelectorProps {
     
@@ -70,7 +70,7 @@ object multipleSelectorMod extends Shortcut {
       searchValue: String,
       values: js.Array[LabelValueType]
     ): SelectorProps = {
-      val __obj = js.Dynamic.literal(accessibilityIndex = accessibilityIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), onSelect = js.Any.fromFunction2(onSelect), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(accessibilityIndex = accessibilityIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), onSelect = js.Any.fromFunction2(onSelect), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], inputRef = null)
       __obj.asInstanceOf[SelectorProps]
     }
     

@@ -28,31 +28,29 @@ import typings.unzipper.unzipperStrings.resume
 import typings.unzipper.unzipperStrings.unpipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CompressedSize extends StObject {
     
-    var compressedSize: Double = js.native
+    var compressedSize: Double
     
-    var compressionMethod: Double = js.native
+    var compressionMethod: Double
     
-    var crc32: Double = js.native
+    var crc32: Double
     
-    var extraFieldLength: Double = js.native
+    var extraFieldLength: Double
     
-    var fileNameLength: Double = js.native
+    var fileNameLength: Double
     
-    var flags: Double = js.native
+    var flags: Double
     
-    var lastModifiedTime: Double = js.native
+    var lastModifiedTime: Double
     
-    var signature: js.UndefOr[Double] = js.native
+    var signature: js.UndefOr[Double] = js.undefined
     
-    var versionsNeededToExtract: Double = js.native
+    var versionsNeededToExtract: Double
   }
   object CompressedSize {
     
@@ -106,20 +104,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Disknum extends StObject {
     
-    var compressedSize: Double = js.native
+    var compressedSize: Double
     
-    var disknum: Double = js.native
+    var disknum: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var partsize: Double = js.native
+    var partsize: Double
     
-    var signature: Double = js.native
+    var signature: Double
     
-    var uncompressedSize: Double = js.native
+    var uncompressedSize: Double
   }
   object Disknum {
     
@@ -159,10 +156,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object Path {
     
@@ -180,12 +176,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    def size(): js.Promise[Double] = js.native
+    def size(): js.Promise[Double]
     
-    var stream: Readable = js.native
+    var stream: Readable
   }
   object Size {
     
@@ -306,14 +301,14 @@ object anon {
     def end(cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(chunk: js.Any, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def end(data: String): Unit = js.native
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -537,22 +532,14 @@ object anon {
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any): Boolean = js.native
     def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-    def write(
-      chunk: js.Any,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(chunk: js.Any, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
     def write(
       chunk: js.Any,
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
-    def write(
-      str: String,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }

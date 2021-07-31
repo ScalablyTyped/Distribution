@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeferUpdateChangedEventUIParam extends StObject {
   
   /**
     * Gets the defer update value.
     */
-  var deferUpdate: js.UndefOr[Boolean] = js.native
+  var deferUpdate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets a reference to the data selector.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DeferUpdateChangedEventUIParam {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateXMLClassifierRequest extends StObject {
   
   /**
     * An identifier of the data format that the classifier matches.
     */
-  var Classification: js.UndefOr[typings.awsSdk.glueMod.Classification] = js.native
+  var Classification: js.UndefOr[typings.awsSdk.glueMod.Classification] = js.undefined
   
   /**
     * The name of the classifier.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The XML tag designating the element that contains each record in an XML document being parsed. This cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a="A" item_b="B"&gt;&lt;/row&gt; is okay, but &lt;row item_a="A" item_b="B" /&gt; is not).
     */
-  var RowTag: js.UndefOr[typings.awsSdk.glueMod.RowTag] = js.native
+  var RowTag: js.UndefOr[typings.awsSdk.glueMod.RowTag] = js.undefined
 }
 object UpdateXMLClassifierRequest {
   

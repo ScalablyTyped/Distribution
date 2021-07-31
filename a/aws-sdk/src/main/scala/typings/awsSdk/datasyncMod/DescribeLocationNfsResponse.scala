@@ -2,33 +2,31 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLocationNfsResponse extends StObject {
   
   /**
     * The time that the NFS location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.native
+  var CreationTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the NFS location that was described.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
     * The URL of the source NFS location that was described.
     */
-  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.native
+  var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
   /**
     * The NFS mount options that DataSync used to mount your NFS share.
     */
-  var MountOptions: js.UndefOr[NfsMountOptions] = js.native
+  var MountOptions: js.UndefOr[NfsMountOptions] = js.undefined
   
-  var OnPremConfig: js.UndefOr[typings.awsSdk.datasyncMod.OnPremConfig] = js.native
+  var OnPremConfig: js.UndefOr[typings.awsSdk.datasyncMod.OnPremConfig] = js.undefined
 }
 object DescribeLocationNfsResponse {
   

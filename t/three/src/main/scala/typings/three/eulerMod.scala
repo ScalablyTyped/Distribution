@@ -6,7 +6,6 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eulerMod {
@@ -15,25 +14,20 @@ object eulerMod {
   @js.native
   class Euler () extends StObject {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      order: String
-    ) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, order: String) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], order: String) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, order: String) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], order: String) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, order: String) = this()
-    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], order: String) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     def this(x: Double, y: Double, z: Double, order: String) = this()
+    def this(x: Double, y: Double, z: Unit, order: String) = this()
+    def this(x: Double, y: Unit, z: Double, order: String) = this()
+    def this(x: Double, y: Unit, z: Unit, order: String) = this()
+    def this(x: Unit, y: Double, z: Double, order: String) = this()
+    def this(x: Unit, y: Double, z: Unit, order: String) = this()
+    def this(x: Unit, y: Unit, z: Double, order: String) = this()
+    def this(x: Unit, y: Unit, z: Unit, order: String) = this()
     
     def _onChange(callback: js.Function): this.type = js.native
     
@@ -43,7 +37,7 @@ object eulerMod {
     
     def equals(euler: Euler): Boolean = js.native
     
-    def fromArray(xyzo: js.Array[_]): Euler = js.native
+    def fromArray(xyzo: js.Array[js.Any]): Euler = js.native
     
     val isEuler: `true` = js.native
     
@@ -67,9 +61,9 @@ object eulerMod {
     def setFromVector3(v: Vector3, order: String): Euler = js.native
     
     def toArray(): js.Array[Double] = js.native
-    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     
     def toVector3(): Vector3 = js.native
     def toVector3(optionalResult: Vector3): Vector3 = js.native

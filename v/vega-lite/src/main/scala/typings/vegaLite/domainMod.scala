@@ -19,36 +19,32 @@ import typings.vegaTypings.scaleMod.SortField
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainMod {
   
-  @JSImport("vega-lite/build/src/compile/scale/domain", "assembleDomain")
+  @JSImport("vega-lite/build/src/compile/scale/domain", JSImport.Namespace)
   @js.native
-  def assembleDomain(model: Model, channel: ScaleChannel): SignalRef | ScaleDataRefsortVgSortFie | ScaleMultiDataRefsortVgSo | ScaleMultiFieldsRefsortVg | (js.Array[String | Double | Boolean | SignalRef]) = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/scale/domain", "canUseUnaggregatedDomain")
-  @js.native
-  def canUseUnaggregatedDomain_binned(fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null], scaleType: ScaleType): Reason = js.native
+  @scala.inline
+  def assembleDomain(model: Model, channel: ScaleChannel): SignalRef | ScaleDataRefsortVgSortFie | ScaleMultiDataRefsortVgSo | ScaleMultiFieldsRefsortVg | (js.Array[String | Double | Boolean | SignalRef]) = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleDomain")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[SignalRef | ScaleDataRefsortVgSortFie | ScaleMultiDataRefsortVgSo | ScaleMultiFieldsRefsortVg | (js.Array[String | Double | Boolean | SignalRef])]
   
-  @JSImport("vega-lite/build/src/compile/scale/domain", "domainSort")
-  @js.native
-  def domainSort(model: UnitModel, channel: ScaleChannel, scaleType: ScaleType): js.UndefOr[`true` | SortField] = js.native
+  @scala.inline
+  def canUseUnaggregatedDomain_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null], scaleType: ScaleType): Reason = (^.asInstanceOf[js.Dynamic].applyDynamic("canUseUnaggregatedDomain")(fieldDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Reason]
   
-  @JSImport("vega-lite/build/src/compile/scale/domain", "getFieldFromDomain")
-  @js.native
-  def getFieldFromDomain(domain: VgDomain): String = js.native
+  @scala.inline
+  def domainSort(model: UnitModel, channel: ScaleChannel, scaleType: ScaleType): js.UndefOr[`true` | SortField] = (^.asInstanceOf[js.Dynamic].applyDynamic("domainSort")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true` | SortField]]
   
-  @JSImport("vega-lite/build/src/compile/scale/domain", "mergeDomains")
-  @js.native
-  def mergeDomains(domains: js.Array[VgNonUnionDomain]): VgDomain = js.native
+  @scala.inline
+  def getFieldFromDomain(domain: VgDomain): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFieldFromDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/compile/scale/domain", "parseDomainForChannel")
-  @js.native
-  def parseDomainForChannel(model: UnitModel, channel: ScaleChannel): Explicit[js.Array[VgNonUnionDomain]] = js.native
+  @scala.inline
+  def mergeDomains(domains: js.Array[VgNonUnionDomain]): VgDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeDomains")(domains.asInstanceOf[js.Any]).asInstanceOf[VgDomain]
   
-  @JSImport("vega-lite/build/src/compile/scale/domain", "parseScaleDomain")
-  @js.native
-  def parseScaleDomain(model: Model): Unit = js.native
+  @scala.inline
+  def parseDomainForChannel(model: UnitModel, channel: ScaleChannel): Explicit[js.Array[VgNonUnionDomain]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDomainForChannel")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Explicit[js.Array[VgNonUnionDomain]]]
+  
+  @scala.inline
+  def parseScaleDomain(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScaleDomain")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

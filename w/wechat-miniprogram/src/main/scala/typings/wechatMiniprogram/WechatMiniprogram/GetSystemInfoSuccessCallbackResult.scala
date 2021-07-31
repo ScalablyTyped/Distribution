@@ -4,118 +4,116 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.dark
 import typings.wechatMiniprogram.wechatMiniprogramStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSystemInfoSuccessCallbackResult extends StObject {
   
   /** 客户端基础库版本
     *
     * 最低基础库： `1.1.0` */
-  var SDKVersion: String = js.native
+  var SDKVersion: String
   
   /** 允许微信使用相册的开关（仅 iOS 有效）
     *
     * 最低基础库： `2.6.0` */
-  var albumAuthorized: Boolean = js.native
+  var albumAuthorized: Boolean
   
   /** 设备性能等级（仅 Android）。取值为：-2 或 0（该设备无法运行小游戏），-1（性能未知），>=1（设备性能值，该值越高，设备性能越好，目前最高不到50）
     *
     * 最低基础库： `1.8.0` */
-  var benchmarkLevel: Double = js.native
+  var benchmarkLevel: Double
   
   /** 蓝牙的系统开关
     *
     * 最低基础库： `2.6.0` */
-  var bluetoothEnabled: Boolean = js.native
+  var bluetoothEnabled: Boolean
   
   /** 设备品牌
     *
     * 最低基础库： `1.5.0` */
-  var brand: String = js.native
+  var brand: String
   
   /** 允许微信使用摄像头的开关
     *
     * 最低基础库： `2.6.0` */
-  var cameraAuthorized: Boolean = js.native
+  var cameraAuthorized: Boolean
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 用户字体大小（单位px）。以微信客户端「我-设置-通用-字体大小」中的设置为准
     *
     * 最低基础库： `1.5.0` */
-  var fontSizeSetting: Double = js.native
+  var fontSizeSetting: Double
   
   /** 微信设置的语言 */
-  var language: String = js.native
+  var language: String
   
   /** 允许微信使用定位的开关
     *
     * 最低基础库： `2.6.0` */
-  var locationAuthorized: Boolean = js.native
+  var locationAuthorized: Boolean
   
   /** 地理位置的系统开关
     *
     * 最低基础库： `2.6.0` */
-  var locationEnabled: Boolean = js.native
+  var locationEnabled: Boolean
   
   /** 允许微信使用麦克风的开关
     *
     * 最低基础库： `2.6.0` */
-  var microphoneAuthorized: Boolean = js.native
+  var microphoneAuthorized: Boolean
   
   /** 设备型号 */
-  var model: String = js.native
+  var model: String
   
   /** 允许微信通知带有提醒的开关（仅 iOS 有效）
     *
     * 最低基础库： `2.6.0` */
-  var notificationAlertAuthorized: Boolean = js.native
+  var notificationAlertAuthorized: Boolean
   
   /** 允许微信通知的开关
     *
     * 最低基础库： `2.6.0` */
-  var notificationAuthorized: Boolean = js.native
+  var notificationAuthorized: Boolean
   
   /** 允许微信通知带有标记的开关（仅 iOS 有效）
     *
     * 最低基础库： `2.6.0` */
-  var notificationBadgeAuthorized: Boolean = js.native
+  var notificationBadgeAuthorized: Boolean
   
   /** 允许微信通知带有声音的开关（仅 iOS 有效）
     *
     * 最低基础库： `2.6.0` */
-  var notificationSoundAuthorized: Boolean = js.native
+  var notificationSoundAuthorized: Boolean
   
   /** 设备像素比 */
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
   /** 客户端平台 */
-  var platform: String = js.native
+  var platform: String
   
   /** 在竖屏正方向下的安全区域
     *
     * 最低基础库： `2.7.0` */
-  var safeArea: SafeAreaResult = js.native
+  var safeArea: SafeAreaResult
   
   /** 屏幕高度，单位px
     *
     * 最低基础库： `1.1.0` */
-  var screenHeight: Double = js.native
+  var screenHeight: Double
   
   /** 屏幕宽度，单位px
     *
     * 最低基础库： `1.1.0` */
-  var screenWidth: Double = js.native
+  var screenWidth: Double
   
   /** 状态栏的高度，单位px
     *
     * 最低基础库： `1.9.0` */
-  var statusBarHeight: Double = js.native
+  var statusBarHeight: Double
   
   /** 操作系统及版本 */
-  var system: String = js.native
+  var system: String
   
   /** 系统当前主题，取值为`light`或`dark`，全局配置`"darkmode":true`时才能获取，否则为 undefined （不支持小游戏）
     *
@@ -124,21 +122,21 @@ trait GetSystemInfoSuccessCallbackResult extends StObject {
     * - 'light': 浅色主题;
     *
     * 最低基础库： `2.11.0` */
-  var theme: js.UndefOr[dark | light] = js.native
+  var theme: js.UndefOr[dark | light] = js.undefined
   
   /** 微信版本号 */
-  var version: String = js.native
+  var version: String
   
   /** Wi-Fi 的系统开关
     *
     * 最低基础库： `2.6.0` */
-  var wifiEnabled: Boolean = js.native
+  var wifiEnabled: Boolean
   
   /** 可使用窗口高度，单位px */
-  var windowHeight: Double = js.native
+  var windowHeight: Double
   
   /** 可使用窗口宽度，单位px */
-  var windowWidth: Double = js.native
+  var windowWidth: Double
 }
 object GetSystemInfoSuccessCallbackResult {
   

@@ -2,10 +2,8 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompleteService extends StObject {
   
   def getPlacePredictions(
@@ -15,7 +13,7 @@ trait AutocompleteService extends StObject {
       /* status */ PlacesServiceStatus, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit
   
   def getQueryPredictions(
     request: QueryAutocompletionRequest,
@@ -24,7 +22,7 @@ trait AutocompleteService extends StObject {
       /* status */ PlacesServiceStatus, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit
 }
 object AutocompleteService {
   

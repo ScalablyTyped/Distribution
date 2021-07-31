@@ -2,14 +2,15 @@ package typings.heremaps.H.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents the UI controls for zooming in an out of the map.
   */
 @js.native
-trait ZoomControl extends Control {
+trait ZoomControl
+  extends StObject
+     with Control {
   
   /**
     * This method returns the zoom speed (in levels per millisecond) which is applied when the button is pressed constantly.
@@ -25,16 +26,15 @@ object ZoomControl {
     * @property slider {boolean=} - flag whether to show the slider (true) or not, defaults to false
     * @property sliderSnaps {boolean=} - flag whether slider should snap to the integer values or not, defaults to false. This option has effect only if slider is enabled.
     */
-  @js.native
   trait Options extends StObject {
     
-    var alignment: js.UndefOr[LayoutAlignment] = js.native
+    var alignment: js.UndefOr[LayoutAlignment] = js.undefined
     
-    var slider: js.UndefOr[Boolean] = js.native
+    var slider: js.UndefOr[Boolean] = js.undefined
     
-    var sliderSnaps: js.UndefOr[Boolean] = js.native
+    var sliderSnaps: js.UndefOr[Boolean] = js.undefined
     
-    var zoomSpeed: js.UndefOr[Double] = js.native
+    var zoomSpeed: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

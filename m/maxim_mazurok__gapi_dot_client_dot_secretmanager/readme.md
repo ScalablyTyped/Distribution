@@ -10,9 +10,9 @@ TypeScript typings for Secret Manager API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.secretmanager |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 80 |
+| # releases         | 9 |
+| # dependents       | 1 |
+| # downloads        | 949 |
 | # stars            | 0 |
 
 ## Links

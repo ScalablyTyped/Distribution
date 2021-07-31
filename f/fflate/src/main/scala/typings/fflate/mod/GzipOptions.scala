@@ -3,23 +3,23 @@ package typings.fflate.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GzipOptions extends DeflateOptions {
+trait GzipOptions
+  extends StObject
+     with DeflateOptions {
   
   /**
     * The filename of the data. If the `gunzip` command is used to decompress the data, it will output a file
     * with this name instead of the name of the compressed file.
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * When the file was last modified. Defaults to the current time.
     * If you're using GZIP, set this to 0 to avoid revealing a modification date entirely.
     */
-  var mtime: js.UndefOr[Date | String | Double] = js.native
+  var mtime: js.UndefOr[Date | String | Double] = js.undefined
 }
 object GzipOptions {
   

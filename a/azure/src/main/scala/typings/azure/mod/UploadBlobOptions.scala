@@ -2,21 +2,21 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadBlobOptions extends SetBlobPropertiesOptions {
+trait UploadBlobOptions
+  extends StObject
+     with SetBlobPropertiesOptions {
   
-  var metadata: js.UndefOr[StorageMetadata] = js.native
+  var metadata: js.UndefOr[StorageMetadata] = js.undefined
   
-  var parallelOperationThreadCount: js.UndefOr[Double] = js.native
+  var parallelOperationThreadCount: js.UndefOr[Double] = js.undefined
   
-  var speedSummary: js.UndefOr[SpeedSummary] = js.native
+  var speedSummary: js.UndefOr[SpeedSummary] = js.undefined
   
-  var storeBlobContentMD5: js.UndefOr[Boolean] = js.native
+  var storeBlobContentMD5: js.UndefOr[Boolean] = js.undefined
   
-  var useTransactionalMD5: js.UndefOr[Boolean] = js.native
+  var useTransactionalMD5: js.UndefOr[Boolean] = js.undefined
 }
 object UploadBlobOptions {
   

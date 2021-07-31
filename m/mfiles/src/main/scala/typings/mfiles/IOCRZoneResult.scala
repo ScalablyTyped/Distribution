@@ -3,29 +3,27 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFOCRDimensionUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOCRZoneResult extends StObject {
   
-  val Confidence: Double = js.native
+  val Confidence: Double
   
-  val DimensionUnit: MFOCRDimensionUnit = js.native
+  val DimensionUnit: MFOCRDimensionUnit
   
-  val Height: Double = js.native
+  val Height: Double
   
-  val ID: Double = js.native
+  val ID: Double
   
-  val Left: Double = js.native
+  val Left: Double
   
-  val RecognizedOnPage: Double = js.native
+  val RecognizedOnPage: Double
   
-  val ResultValue: ITypedValue = js.native
+  val ResultValue: ITypedValue
   
-  val Top: Double = js.native
+  val Top: Double
   
-  val Width: Double = js.native
+  val Width: Double
 }
 object IOCRZoneResult {
   

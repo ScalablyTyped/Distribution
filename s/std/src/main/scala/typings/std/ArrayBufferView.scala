@@ -2,26 +2,26 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArrayBufferView extends BufferSource {
+trait ArrayBufferView
+  extends StObject
+     with BufferSource {
   
   /**
     * The ArrayBuffer instance referenced by the array.
     */
-  var buffer: ArrayBufferLike = js.native
+  var buffer: ArrayBufferLike
   
   /**
     * The length in bytes of the array.
     */
-  var byteLength: Double = js.native
+  var byteLength: Double
   
   /**
     * The offset in bytes of the array.
     */
-  var byteOffset: Double = js.native
+  var byteOffset: Double
 }
 object ArrayBufferView {
   

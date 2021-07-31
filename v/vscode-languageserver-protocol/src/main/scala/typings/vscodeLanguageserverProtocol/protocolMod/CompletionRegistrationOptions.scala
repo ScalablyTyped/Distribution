@@ -2,18 +2,17 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionRegistrationOptions
-  extends CompletionOptions
+  extends StObject
      with TextDocumentRegistrationOptions
+     with CompletionOptions
 object CompletionRegistrationOptions {
   
   @scala.inline
   def apply(): CompletionRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[CompletionRegistrationOptions]
   }
 }

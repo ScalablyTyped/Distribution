@@ -2,15 +2,15 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RawIndexMap extends StartOfSourceMap {
+trait RawIndexMap
+  extends StObject
+     with StartOfSourceMap {
   
-  var sections: js.Array[RawSection] = js.native
+  var sections: js.Array[RawSection]
   
-  var version: Double = js.native
+  var version: Double
 }
 object RawIndexMap {
   

@@ -4,19 +4,17 @@ import typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment
 import typings.ckeditorCkeditor5Engine.mod.view.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastRangeBackward extends StObject {
   
-  var lastRangeBackward: js.UndefOr[Boolean] = js.native
+  var lastRangeBackward: js.UndefOr[Boolean] = js.undefined
   
-  var order: js.UndefOr[js.Array[Double]] = js.native
+  var order: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var rootElement: js.UndefOr[Element | DocumentFragment] = js.native
+  var rootElement: js.UndefOr[Element | DocumentFragment] = js.undefined
   
-  var sameSelectionCharacters: js.UndefOr[Boolean] = js.native
+  var sameSelectionCharacters: js.UndefOr[Boolean] = js.undefined
 }
 object LastRangeBackward {
   

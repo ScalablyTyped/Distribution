@@ -10,9 +10,9 @@ jsreport recipe rendering excels directly from open xml
 | ------------------ | :-------------: |
 | Full name          | jsreport-xlsx |
 | Keywords           | jsreport |
-| # releases         | 14 |
+| # releases         | 9 |
 | # dependents       | 6 |
-| # downloads        | 137072 |
+| # downloads        | 108450 |
 | # stars            | 0 |
 
 ## Links

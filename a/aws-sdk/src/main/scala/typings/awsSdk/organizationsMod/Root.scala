@@ -2,31 +2,29 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Root extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the root. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
     */
-  var Arn: js.UndefOr[RootArn] = js.native
+  var Arn: js.UndefOr[RootArn] = js.undefined
   
   /**
     * The unique identifier (ID) for the root. The regex pattern for a root ID string requires "r-" followed by from 4 to 32 lowercase letters or digits.
     */
-  var Id: js.UndefOr[RootId] = js.native
+  var Id: js.UndefOr[RootId] = js.undefined
   
   /**
     * The friendly name of the root. The regex pattern that is used to validate this parameter is a string of any of the characters in the ASCII character range.
     */
-  var Name: js.UndefOr[RootName] = js.native
+  var Name: js.UndefOr[RootName] = js.undefined
   
   /**
     * The types of policies that are currently enabled for the root and therefore can be attached to the root or to its OUs or accounts.  Even if a policy type is shown as available in the organization, you can separately enable and disable them at the root level by using EnablePolicyType and DisablePolicyType. Use DescribeOrganization to see the availability of the policy types in that organization. 
     */
-  var PolicyTypes: js.UndefOr[typings.awsSdk.organizationsMod.PolicyTypes] = js.native
+  var PolicyTypes: js.UndefOr[typings.awsSdk.organizationsMod.PolicyTypes] = js.undefined
 }
 object Root {
   

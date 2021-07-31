@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -114,9 +113,9 @@ trait HTMLTable extends StObject {
   var cellSpacing: js.Any = js.native
   
   def cells(): js.Any = js.native
-  def cells(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def cells(name: js.Any): js.Any = js.native
   def cells(name: js.Any, index: js.Any): js.Any = js.native
+  def cells(name: Unit, index: js.Any): js.Any = js.native
   @JSName("cells")
   val cells_Original: IHTMLElementCollection = js.native
   
@@ -357,9 +356,9 @@ trait HTMLTable extends StObject {
     * @param indexTo [indexTo=-1]
     */
   def moveRow(): js.Any = js.native
-  def moveRow(indexFrom: js.UndefOr[scala.Nothing], indexTo: Double): js.Any = js.native
   def moveRow(indexFrom: Double): js.Any = js.native
   def moveRow(indexFrom: Double, indexTo: Double): js.Any = js.native
+  def moveRow(indexFrom: Unit, indexTo: Double): js.Any = js.native
   
   def msMatchesSelector(v: String): Boolean = js.native
   
@@ -680,9 +679,9 @@ trait HTMLTable extends StObject {
   var role: String = js.native
   
   def rows(): js.Any = js.native
-  def rows(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def rows(name: js.Any): js.Any = js.native
   def rows(name: js.Any, index: js.Any): js.Any = js.native
+  def rows(name: Unit, index: js.Any): js.Any = js.native
   @JSName("rows")
   val rows_Original: IHTMLElementCollection = js.native
   
@@ -734,9 +733,9 @@ trait HTMLTable extends StObject {
   def swapNode(otherNode: IHTMLDOMNode): IHTMLDOMNode = js.native
   
   def tBodies(): js.Any = js.native
-  def tBodies(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def tBodies(name: js.Any): js.Any = js.native
   def tBodies(name: js.Any, index: js.Any): js.Any = js.native
+  def tBodies(name: Unit, index: js.Any): js.Any = js.native
   @JSName("tBodies")
   val tBodies_Original: IHTMLElementCollection = js.native
   

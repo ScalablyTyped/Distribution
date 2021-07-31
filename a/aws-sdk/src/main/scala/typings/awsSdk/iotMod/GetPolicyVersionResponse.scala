@@ -2,51 +2,49 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPolicyVersionResponse extends StObject {
   
   /**
     * The date the policy was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The generation ID of the policy version.
     */
-  var generationId: js.UndefOr[GenerationId] = js.native
+  var generationId: js.UndefOr[GenerationId] = js.undefined
   
   /**
     * Specifies whether the policy version is the default.
     */
-  var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.native
+  var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined
   
   /**
     * The date the policy was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The policy ARN.
     */
-  var policyArn: js.UndefOr[PolicyArn] = js.native
+  var policyArn: js.UndefOr[PolicyArn] = js.undefined
   
   /**
     * The JSON document that describes the policy.
     */
-  var policyDocument: js.UndefOr[PolicyDocument] = js.native
+  var policyDocument: js.UndefOr[PolicyDocument] = js.undefined
   
   /**
     * The policy name.
     */
-  var policyName: js.UndefOr[PolicyName] = js.native
+  var policyName: js.UndefOr[PolicyName] = js.undefined
   
   /**
     * The policy version ID.
     */
-  var policyVersionId: js.UndefOr[PolicyVersionId] = js.native
+  var policyVersionId: js.UndefOr[PolicyVersionId] = js.undefined
 }
 object GetPolicyVersionResponse {
   

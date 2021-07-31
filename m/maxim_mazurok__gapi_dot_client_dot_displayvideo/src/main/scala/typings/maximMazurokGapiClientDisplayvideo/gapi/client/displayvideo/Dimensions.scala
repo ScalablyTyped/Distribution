@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimensions extends StObject {
   
   /** The height in pixels. */
-  var heightPixels: js.UndefOr[Double] = js.native
+  var heightPixels: js.UndefOr[Double] = js.undefined
   
   /** The width in pixels. */
-  var widthPixels: js.UndefOr[Double] = js.native
+  var widthPixels: js.UndefOr[Double] = js.undefined
 }
 object Dimensions {
   

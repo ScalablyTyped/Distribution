@@ -12,33 +12,31 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait As[T /* <: SupportedMenuLinkComponent */] extends StObject {
     
-    var _ref: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var _ref: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[ResolvedMenuLinkComponent[T]] = js.native
+    var component: js.UndefOr[ResolvedMenuLinkComponent[T]] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.undefined
     
-    var setState: js.UndefOr[js.Function1[/* s */ State, PartialState]] = js.native
+    var setState: js.UndefOr[js.Function1[/* s */ State, PartialState]] = js.undefined
     
-    var state: js.UndefOr[State] = js.native
+    var state: js.UndefOr[State] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object As {
     
@@ -49,7 +47,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class AsMutableBuilder[Self <: As[_], T /* <: SupportedMenuLinkComponent */] (val x: Self with As[T]) extends AnyVal {
+    implicit class AsMutableBuilder[Self <: As[?], T /* <: SupportedMenuLinkComponent */] (val x: Self & As[T]) extends AnyVal {
       
       @scala.inline
       def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
@@ -113,10 +111,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object Children {
     
@@ -138,18 +135,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@reach/menu-button.@reach/menu-button.State> */
-  @js.native
   trait PartialState extends StObject {
     
-    var buttonId: js.UndefOr[String] = js.native
+    var buttonId: js.UndefOr[String] = js.undefined
     
-    var buttonRect: js.UndefOr[ButtonRect] = js.native
+    var buttonRect: js.UndefOr[ButtonRect] = js.undefined
     
-    var closingWithClick: js.UndefOr[Boolean] = js.native
+    var closingWithClick: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var selectionIndex: js.UndefOr[Double] = js.native
+    var selectionIndex: js.UndefOr[Double] = js.undefined
   }
   object PartialState {
     

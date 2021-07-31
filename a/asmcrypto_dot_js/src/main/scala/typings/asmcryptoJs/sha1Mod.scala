@@ -4,7 +4,6 @@ import typings.asmcryptoJs.hashMod.Hash
 import typings.asmcryptoJs.sha1AsmMod.sha1result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sha1Mod {

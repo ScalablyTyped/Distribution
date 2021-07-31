@@ -2,24 +2,22 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A web application entry point.
   */
-@js.native
 trait SchemaGoogleAppsScriptTypeWebAppEntryPoint extends StObject {
   
   /**
     * The entry point&#39;s configuration.
     */
-  var entryPointConfig: js.UndefOr[SchemaGoogleAppsScriptTypeWebAppConfig] = js.native
+  var entryPointConfig: js.UndefOr[SchemaGoogleAppsScriptTypeWebAppConfig] = js.undefined
   
   /**
     * The URL for the web application.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleAppsScriptTypeWebAppEntryPoint {
   

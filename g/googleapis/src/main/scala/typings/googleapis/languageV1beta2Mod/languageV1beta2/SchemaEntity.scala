@@ -3,7 +3,6 @@ package typings.googleapis.languageV1beta2Mod.languageV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,26 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an organization, or location. The API associates information, such as
   * salience and mentions, with entities.
   */
-@js.native
 trait SchemaEntity extends StObject {
   
   /**
     * The mentions of this entity in the input document. The API currently
     * supports proper noun mentions.
     */
-  var mentions: js.UndefOr[js.Array[SchemaEntityMention]] = js.native
+  var mentions: js.UndefOr[js.Array[SchemaEntityMention]] = js.undefined
   
   /**
     * Metadata associated with the entity.  Currently, Wikipedia URLs and
     * Knowledge Graph MIDs are provided, if available. The associated keys are
     * &quot;wikipedia_url&quot; and &quot;mid&quot;, respectively.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The representative name for the entity.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The salience score associated with the entity in the [0, 1.0] range.  The
@@ -38,7 +36,7 @@ trait SchemaEntity extends StObject {
     * centrality of that entity to the entire document text. Scores closer to 0
     * are less salient, while scores closer to 1.0 are highly salient.
     */
-  var salience: js.UndefOr[Double] = js.native
+  var salience: js.UndefOr[Double] = js.undefined
   
   /**
     * For calls to AnalyzeEntitySentiment or if
@@ -46,12 +44,12 @@ trait SchemaEntity extends StObject {
     * this field will contain the aggregate sentiment expressed for this entity
     * in the provided document.
     */
-  var sentiment: js.UndefOr[SchemaSentiment] = js.native
+  var sentiment: js.UndefOr[SchemaSentiment] = js.undefined
   
   /**
     * The entity type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaEntity {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1ColorInfo extends StObject {
   
   /** RGB components of the color. */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /** The fraction of pixels the color occupies in the image. Value in range [0, 1]. */
-  var pixelFraction: js.UndefOr[Double] = js.native
+  var pixelFraction: js.UndefOr[Double] = js.undefined
   
   /** Image-specific score for this color. Value in range [0, 1]. */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1ColorInfo {
   

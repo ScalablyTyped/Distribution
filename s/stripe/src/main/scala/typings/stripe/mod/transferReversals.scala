@@ -5,43 +5,43 @@ import typings.stripe.mod.transfers.ITransfer
 import typings.stripe.stripeStrings.transfer_reversal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferReversals {
   
-  @js.native
-  trait IReversal extends IResourceObject {
+  trait IReversal
+    extends StObject
+       with IResourceObject {
     
     /**
       * Amount reversed, in cents/pence.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Balance transaction that describes the impact of this reversal on your account balance. [Expandable]
       */
-    var balance_transaction: String | IBalanceTransaction = js.native
+    var balance_transaction: String | IBalanceTransaction
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code representing the currency.
       */
-    var currency: String = js.native
+    var currency: String
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is 'transfer_reversal'
       */
     @JSName("object")
-    var object_IReversal: transfer_reversal = js.native
+    var object_IReversal: transfer_reversal
     
     /**
       * ID of the transfer that was reversed. [Expandable]
       */
-    var transfer: String | ITransfer = js.native
+    var transfer: String | ITransfer
   }
   object IReversal {
     
@@ -53,11 +53,10 @@ object transferReversals {
       currency: String,
       id: String,
       metadata: IMetadata,
-      `object`: transfer_reversal,
       transfer: String | ITransfer
     ): IReversal = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], transfer = transfer.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("transfer_reversal")
       __obj.asInstanceOf[IReversal]
     }
     
@@ -87,27 +86,28 @@ object transferReversals {
     }
   }
   
-  @js.native
-  trait IReversalCreationOptions extends IDataOptionsWithMetadata {
+  trait IReversalCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A positive integer in cents/pence representing how much of this transfer to reverse. Can only reverse up to the unreversed amount
       * remaining of the transfer. Partial transfer reversals are only allowed for transfers to Stripe Accounts.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * An arbitrary string which you can attach to a reversal object. It is displayed alongside the reversal in the dashboard. This will
       * be unset if you POST an empty value.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean indicating whether the application fee should be refunded when reversing this transfer. If a full transfer reversal is
       * given, the full application fee will be refunded. Otherwise, the application fee will be refunded with an amount proportional to
       * the amount of the transfer reversed.
       */
-    var refund_application_fee: js.UndefOr[Boolean] = js.native
+    var refund_application_fee: js.UndefOr[Boolean] = js.undefined
   }
   object IReversalCreationOptions {
     
@@ -140,14 +140,15 @@ object transferReversals {
     }
   }
   
-  @js.native
-  trait IReversalUpdateOptions extends IDataOptionsWithMetadata {
+  trait IReversalUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * An arbitrary string which you can attach to a reversal object. It is displayed when in the web interface alongside the
       * reversal. This can be unset by updating the value to null and then saving.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
   }
   object IReversalUpdateOptions {
     

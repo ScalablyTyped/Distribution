@@ -13,22 +13,20 @@ import typings.std.HTMLInputElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseExtendedPickerTypesMod {
   
-  @js.native
   trait IBaseExtendedPicker[T] extends StObject {
     
     /** Sets focus to the input. */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /** Forces the picker to resolve */
-    var forceResolve: js.UndefOr[js.Function0[Unit]] = js.native
+    var forceResolve: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Gets the current value of the input. */
-    var items: js.UndefOr[js.Array[T]] = js.native
+    var items: js.UndefOr[js.Array[T]] = js.undefined
   }
   object IBaseExtendedPicker {
     
@@ -39,7 +37,7 @@ object baseExtendedPickerTypesMod {
     }
     
     @scala.inline
-    implicit class IBaseExtendedPickerMutableBuilder[Self <: IBaseExtendedPicker[_], T] (val x: Self with IBaseExtendedPicker[T]) extends AnyVal {
+    implicit class IBaseExtendedPickerMutableBuilder[Self <: IBaseExtendedPicker[?], T] (val x: Self & IBaseExtendedPicker[T]) extends AnyVal {
       
       @scala.inline
       def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
@@ -61,122 +59,121 @@ object baseExtendedPickerTypesMod {
     }
   }
   
-  @js.native
   trait IBaseExtendedPickerProps[T] extends StObject {
     
     /**
       * ClassName for the picker.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Ref of the component
       */
-    var componentRef: js.UndefOr[IRefObject[IBaseExtendedPicker[T]]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IBaseExtendedPicker[T]]] = js.undefined
     
     /**
       * Current rendered query string that's corealte to current rendered result
       **/
-    var currentRenderedQueryString: js.UndefOr[String] = js.native
+    var currentRenderedQueryString: js.UndefOr[String] = js.undefined
     
     /**
       * Initial items that have already been selected and should appear in the people picker.
       */
-    var defaultSelectedItems: js.UndefOr[js.Array[T]] = js.native
+    var defaultSelectedItems: js.UndefOr[js.Array[T]] = js.undefined
     
     /**
       * Flag for disabling the picker.
       * @defaultvalue false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Floating picker properties
       */
-    var floatingPickerProps: IBaseFloatingPickerProps[T] = js.native
+    var floatingPickerProps: IBaseFloatingPickerProps[T]
     
     /**
       * Focus zone props
       */
-    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.native
+    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
     
     /**
       * Header/title element for the picker
       */
-    var headerComponent: js.UndefOr[Element] = js.native
+    var headerComponent: js.UndefOr[Element] = js.undefined
     
     /**
       * Autofill input native props
       * @defaultvalue undefined
       */
-    var inputProps: js.UndefOr[IInputProps] = js.native
+    var inputProps: js.UndefOr[IInputProps] = js.undefined
     
     /**
       * Restrict the amount of selectable items.
       * @defaultvalue undefined
       */
-    var itemLimit: js.UndefOr[Double] = js.native
+    var itemLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * A callback for when the user moves the focus away from the picker
       */
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement | Autofill]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement | Autofill]] = js.undefined
     
     /**
       * A callback for when the selected list of items changes.
       */
-    var onChange: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Array[T]], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Array[T]], Unit]] = js.undefined
     
     /**
       * A callback for when the user put focus on the picker
       */
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement | Autofill]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement | Autofill]] = js.undefined
     
     /**
       * A callback on when an item was added to the selected item list
       */
-    var onItemAdded: js.UndefOr[js.Function1[/* addedItem */ T, Unit]] = js.native
+    var onItemAdded: js.UndefOr[js.Function1[/* addedItem */ T, Unit]] = js.undefined
     
     /**
       * A callback to process a selection after the user selects a suggestion from the picker.
       * The returned item will be added to the selected items list
       */
-    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.native
+    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.undefined
     
     /**
       * A callback on when an item or items were removed from the selected item list
       */
-    var onItemsRemoved: js.UndefOr[js.Function1[/* removedItems */ js.Array[T], Unit]] = js.native
+    var onItemsRemoved: js.UndefOr[js.Function1[/* removedItems */ js.Array[T], Unit]] = js.undefined
     
     /**
       * A callback for when text is pasted into the input
       */
-    var onPaste: js.UndefOr[js.Function1[/* pastedText */ String, js.Array[T]]] = js.native
+    var onPaste: js.UndefOr[js.Function1[/* pastedText */ String, js.Array[T]]] = js.undefined
     
     /**
       * Function that specifies how the floating picker will appear.
       */
-    var onRenderFloatingPicker: ComponentType[IBaseFloatingPickerProps[T]] = js.native
+    var onRenderFloatingPicker: ComponentType[IBaseFloatingPickerProps[T]]
     
     /**
       * Function that specifies how the floating picker will appear.
       */
-    var onRenderSelectedItems: ComponentType[IBaseSelectedItemsListProps[T]] = js.native
+    var onRenderSelectedItems: ComponentType[IBaseSelectedItemsListProps[T]]
     
     /**
       * If using as a controlled component use selectedItems here instead of the SelectedItemsList
       */
-    var selectedItems: js.UndefOr[js.Array[T]] = js.native
+    var selectedItems: js.UndefOr[js.Array[T]] = js.undefined
     
     /**
       * Selected items list properties
       */
-    var selectedItemsListProps: IBaseSelectedItemsListProps[T] = js.native
+    var selectedItemsListProps: IBaseSelectedItemsListProps[T]
     
     /**
       * If using as a controlled component use suggestionItems here instead of FloatingPicker
       */
-    var suggestionItems: js.UndefOr[js.Array[T]] = js.native
+    var suggestionItems: js.UndefOr[js.Array[T]] = js.undefined
   }
   object IBaseExtendedPickerProps {
     
@@ -192,7 +189,7 @@ object baseExtendedPickerTypesMod {
     }
     
     @scala.inline
-    implicit class IBaseExtendedPickerPropsMutableBuilder[Self <: IBaseExtendedPickerProps[_], T] (val x: Self with IBaseExtendedPickerProps[T]) extends AnyVal {
+    implicit class IBaseExtendedPickerPropsMutableBuilder[Self <: IBaseExtendedPickerProps[?], T] (val x: Self & IBaseExtendedPickerProps[T]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])

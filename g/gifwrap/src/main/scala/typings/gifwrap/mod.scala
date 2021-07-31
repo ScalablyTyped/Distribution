@@ -11,7 +11,6 @@ import typings.std.Error
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -57,7 +56,9 @@ object mod {
   
   @JSImport("gifwrap", "Gif")
   @js.native
-  class Gif protected () extends GifSpec {
+  class Gif protected ()
+    extends StObject
+       with GifSpec {
     def this(frames: js.Array[GifFrame], buffer: Buffer) = this()
     def this(frames: js.Array[GifFrame], buffer: Buffer, spec: GifSpec) = this()
     
@@ -96,15 +97,30 @@ object mod {
   @JSImport("gifwrap", "GifCodec")
   @js.native
   class GifCodec ()
-    extends GifEncoder
+    extends StObject
+       with GifEncoder
        with GifDecoder {
     def this(options: GifCodecOptions) = this()
+    
+    /* CompleteClass */
+    override def decodeGif(buffer: Buffer): js.Promise[Gif] = js.native
+    
+    /* CompleteClass */
+    override def encodeGif(frames: js.Array[GifFrame], spec: GifSpec): js.Promise[Gif] = js.native
   }
   
   @JSImport("gifwrap", "GifError")
   @js.native
-  class GifError protected () extends Error {
+  class GifError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("gifwrap", "GifFrame")
@@ -120,8 +136,8 @@ object mod {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, backgroundRGBA: Double) = this()
     def this(width: Double, height: Double, buffer: Buffer) = this()
-    def this(width: Double, height: Double, backgroundRGBA: js.UndefOr[scala.Nothing], options: GifFrameOptions) = this()
     def this(width: Double, height: Double, backgroundRGBA: Double, options: GifFrameOptions) = this()
+    def this(width: Double, height: Double, backgroundRGBA: Unit, options: GifFrameOptions) = this()
     def this(width: Double, height: Double, buffer: Buffer, options: GifFrameOptions) = this()
     
     @JSName("delayCentisecs")
@@ -162,156 +178,110 @@ object mod {
   
   object GifUtil {
     
-    @JSImport("gifwrap", "GifUtil.cloneFrames")
+    @JSImport("gifwrap", "GifUtil")
     @js.native
-    def cloneFrames(frames: js.Array[GifFrame]): js.Array[GifFrame] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("gifwrap", "GifUtil.copyAsJimp")
-    @js.native
-    def copyAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = js.native
+    @scala.inline
+    def cloneFrames(frames: js.Array[GifFrame]): js.Array[GifFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[js.Array[GifFrame]]
     
-    @JSImport("gifwrap", "GifUtil.getColorInfo")
-    @js.native
-    def getColorInfo(frames: js.Array[GifFrame]): Colors = js.native
-    @JSImport("gifwrap", "GifUtil.getColorInfo")
-    @js.native
-    def getColorInfo(frames: js.Array[GifFrame], maxGlobalIndex: Double): Colors = js.native
+    @scala.inline
+    def copyAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("gifwrap", "GifUtil.getMaxDimensions")
-    @js.native
-    def getMaxDimensions(frames: js.Array[GifFrame]): MaxHeight = js.native
+    @scala.inline
+    def getColorInfo(frames: js.Array[GifFrame]): Colors = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any]).asInstanceOf[Colors]
+    @scala.inline
+    def getColorInfo(frames: js.Array[GifFrame], maxGlobalIndex: Double): Colors = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any], maxGlobalIndex.asInstanceOf[js.Any])).asInstanceOf[Colors]
     
-    @JSImport("gifwrap", "GifUtil.quantizeDekker")
-    @js.native
-    def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeDekker")
-    @js.native
-    def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, dither: Dither): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeDekker")
-    @js.native
-    def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeDekker")
-    @js.native
-    def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double, dither: Dither): Unit = js.native
+    @scala.inline
+    def getMaxDimensions(frames: js.Array[GifFrame]): MaxHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxDimensions")(frames.asInstanceOf[js.Any]).asInstanceOf[MaxHeight]
     
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(
-      imageOrImages: js.Array[BitmapImage],
-      maxColorIndexes: Double,
-      histogram: js.UndefOr[scala.Nothing],
-      dither: Dither
-    ): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String, dither: Dither): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(
-      imageOrImages: BitmapImage,
-      maxColorIndexes: Double,
-      histogram: js.UndefOr[scala.Nothing],
-      dither: Dither
-    ): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeSorokin")
-    @js.native
-    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String, dither: Dither): Unit = js.native
+    @scala.inline
+    def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeDekker(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeDekker(imageOrImages: BitmapImage, maxColorIndexes: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeDekker")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
-    def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
-    def quantizeWu(
-      imageOrImages: js.Array[BitmapImage],
-      maxColorIndexes: Double,
-      significantBits: js.UndefOr[scala.Nothing],
-      dither: Dither
-    ): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
-    def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, significantBits: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
+    @scala.inline
+    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: String, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeSorokin(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, histogram: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: String, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeSorokin(imageOrImages: BitmapImage, maxColorIndexes: Double, histogram: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeSorokin")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], histogram.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeWu(imageOrImages: js.Array[BitmapImage], maxColorIndexes: Double, significantBits: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def quantizeWu(
       imageOrImages: js.Array[BitmapImage],
       maxColorIndexes: Double,
       significantBits: Double,
       dither: Dither
-    ): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
-    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def quantizeWu(
-      imageOrImages: BitmapImage,
+      imageOrImages: js.Array[BitmapImage],
       maxColorIndexes: Double,
-      significantBits: js.UndefOr[scala.Nothing],
+      significantBits: Unit,
       dither: Dither
-    ): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
-    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double): Unit = js.native
-    @JSImport("gifwrap", "GifUtil.quantizeWu")
-    @js.native
-    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double, dither: Dither): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Double, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def quantizeWu(imageOrImages: BitmapImage, maxColorIndexes: Double, significantBits: Unit, dither: Dither): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("quantizeWu")(imageOrImages.asInstanceOf[js.Any], maxColorIndexes.asInstanceOf[js.Any], significantBits.asInstanceOf[js.Any], dither.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("gifwrap", "GifUtil.read")
-    @js.native
-    def read(source: String): js.Promise[Gif] = js.native
-    @JSImport("gifwrap", "GifUtil.read")
-    @js.native
-    def read(source: String, decoder: GifDecoder): js.Promise[Gif] = js.native
-    @JSImport("gifwrap", "GifUtil.read")
-    @js.native
-    def read(source: Buffer): js.Promise[Gif] = js.native
-    @JSImport("gifwrap", "GifUtil.read")
-    @js.native
-    def read(source: Buffer, decoder: GifDecoder): js.Promise[Gif] = js.native
+    @scala.inline
+    def read(source: String): js.Promise[Gif] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Gif]]
+    @scala.inline
+    def read(source: String, decoder: GifDecoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    @scala.inline
+    def read(source: Buffer): js.Promise[Gif] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Gif]]
+    @scala.inline
+    def read(source: Buffer, decoder: GifDecoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
     
-    @JSImport("gifwrap", "GifUtil.shareAsJimp")
-    @js.native
-    def shareAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = js.native
+    @scala.inline
+    def shareAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("gifwrap", "GifUtil.write")
-    @js.native
-    def write(path: String, frames: js.Array[GifFrame]): js.Promise[Gif] = js.native
-    @JSImport("gifwrap", "GifUtil.write")
-    @js.native
-    def write(path: String, frames: js.Array[GifFrame], spec: js.UndefOr[scala.Nothing], encoder: GifEncoder): js.Promise[Gif] = js.native
-    @JSImport("gifwrap", "GifUtil.write")
-    @js.native
-    def write(path: String, frames: js.Array[GifFrame], spec: GifSpec): js.Promise[Gif] = js.native
-    @JSImport("gifwrap", "GifUtil.write")
-    @js.native
-    def write(path: String, frames: js.Array[GifFrame], spec: GifSpec, encoder: GifEncoder): js.Promise[Gif] = js.native
+    @scala.inline
+    def write(path: String, frames: js.Array[GifFrame]): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    @scala.inline
+    def write(path: String, frames: js.Array[GifFrame], spec: Unit, encoder: GifEncoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    @scala.inline
+    def write(path: String, frames: js.Array[GifFrame], spec: GifSpec): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
+    @scala.inline
+    def write(path: String, frames: js.Array[GifFrame], spec: GifSpec, encoder: GifEncoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
   }
   
-  @js.native
   trait Dither extends StObject {
     
     // default = true
-    var calculateErrorLikeGIMP: js.UndefOr[Boolean] = js.native
+    var calculateErrorLikeGIMP: js.UndefOr[Boolean] = js.undefined
     
-    var ditherAlgorithm: DitherAlgorithm = js.native
+    var ditherAlgorithm: DitherAlgorithm
     
-    var minimumColorDistanceToDither: js.UndefOr[Double] = js.native
+    var minimumColorDistanceToDither: js.UndefOr[Double] = js.undefined
     
     // default = 0
-    var serpentine: js.UndefOr[Boolean] = js.native
+    var serpentine: js.UndefOr[Boolean] = js.undefined
   }
   object Dither {
     
@@ -389,10 +359,9 @@ object mod {
     def TwoSierra: typings.gifwrap.gifwrapStrings.TwoSierra = "TwoSierra".asInstanceOf[typings.gifwrap.gifwrapStrings.TwoSierra]
   }
   
-  @js.native
   trait GifCodecOptions extends StObject {
     
-    var transparentRGB: js.UndefOr[Double] = js.native
+    var transparentRGB: js.UndefOr[Double] = js.undefined
   }
   object GifCodecOptions {
     
@@ -413,10 +382,9 @@ object mod {
     }
   }
   
-  @js.native
   trait GifDecoder extends StObject {
     
-    def decodeGif(buffer: Buffer): js.Promise[Gif] = js.native
+    def decodeGif(buffer: Buffer): js.Promise[Gif]
   }
   object GifDecoder {
     
@@ -434,10 +402,9 @@ object mod {
     }
   }
   
-  @js.native
   trait GifEncoder extends StObject {
     
-    def encodeGif(frames: js.Array[GifFrame], spec: GifSpec): js.Promise[Gif] = js.native
+    def encodeGif(frames: js.Array[GifFrame], spec: GifSpec): js.Promise[Gif]
   }
   object GifEncoder {
     
@@ -455,18 +422,17 @@ object mod {
     }
   }
   
-  @js.native
   trait GifFrameOptions extends StObject {
     
-    var delayCentisecs: js.UndefOr[Double] = js.native
+    var delayCentisecs: js.UndefOr[Double] = js.undefined
     
-    var disposalMethod: js.UndefOr[`0` | `1` | `2` | `3`] = js.native
+    var disposalMethod: js.UndefOr[`0` | `1` | `2` | `3`] = js.undefined
     
-    var isInterlaced: js.UndefOr[Boolean] = js.native
+    var isInterlaced: js.UndefOr[Boolean] = js.undefined
     
-    var xOffset: js.UndefOr[Double] = js.native
+    var xOffset: js.UndefOr[Double] = js.undefined
     
-    var yOffset: js.UndefOr[Double] = js.native
+    var yOffset: js.UndefOr[Double] = js.undefined
   }
   object GifFrameOptions {
     
@@ -511,14 +477,13 @@ object mod {
     }
   }
   
-  @js.native
   trait GifPalette extends StObject {
     
-    var colors: js.Array[Double] = js.native
+    var colors: js.Array[Double]
     
-    var indexCount: Double = js.native
+    var indexCount: Double
     
-    var usesTransparency: Boolean = js.native
+    var usesTransparency: Boolean
   }
   object GifPalette {
     
@@ -545,12 +510,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GifSpec extends StObject {
     
-    var colorScope: js.UndefOr[`0` | `1` | `2`] = js.native
+    var colorScope: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
-    var loops: js.UndefOr[Double] = js.native
+    var loops: js.UndefOr[Double] = js.undefined
   }
   object GifSpec {
     
@@ -577,14 +541,13 @@ object mod {
     }
   }
   
-  @js.native
   trait JimpBitmap extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object JimpBitmap {
     

@@ -4,7 +4,6 @@ import typings.plottable.dispatcherMod.Dispatcher
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyDispatcherMod {
@@ -84,9 +83,8 @@ object keyDispatcherMod {
       *
       * @return {Dispatchers.Key}
       */
-    @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key.getDispatcher")
-    @js.native
-    def getDispatcher(): typings.plottable.dispatchersMod.Key = js.native
+    @scala.inline
+    def getDispatcher(): typings.plottable.dispatchersMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[typings.plottable.dispatchersMod.Key]
   }
   
   type KeyCallback = js.Function2[/* keyCode */ Double, /* event */ KeyboardEvent, Unit]

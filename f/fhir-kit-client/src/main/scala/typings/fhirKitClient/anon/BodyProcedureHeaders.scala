@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Procedure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyProcedureHeaders extends StObject {
   
-  var body: Procedure = js.native
+  var body: Procedure
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Procedure = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Procedure
 }
 object BodyProcedureHeaders {
   
   @scala.inline
-  def apply(body: Procedure, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.Procedure): BodyProcedureHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Procedure, id: String): BodyProcedureHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Procedure")
     __obj.asInstanceOf[BodyProcedureHeaders]
   }
   

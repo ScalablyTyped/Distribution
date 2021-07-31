@@ -2,14 +2,12 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DEPRECATED - use CommandResult instead. Can be used as part of
   * CompleteRequest.metadata, or are part of a more sophisticated message.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead extends StObject {
     * also have its own idea of what this should be, but this excludes the
     * overhead of the RPCs and the bot response time.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of time *not* spent executing the command (ie
     * uploading/downloading files).
     */
-  var overhead: js.UndefOr[String] = js.native
+  var overhead: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOverhead {
   

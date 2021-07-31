@@ -2,15 +2,13 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PresentVerbInflector extends StObject {
   
-  def pluralize(token: String): String = js.native
+  def pluralize(token: String): String
   
-  def singularize(token: String): String = js.native
+  def singularize(token: String): String
 }
 object PresentVerbInflector {
   

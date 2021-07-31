@@ -2,16 +2,16 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoNetProxyNetwork extends SystemInfoProperty {
+trait SystemInfoNetProxyNetwork
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents the status (ON or OFF) of the net_proxy network.
     */
-  val status: String = js.native
+  val status: String
 }
 object SystemInfoNetProxyNetwork {
   

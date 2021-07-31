@@ -2,129 +2,129 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Contact extends OutlookItem {
+trait Contact
+  extends StObject
+     with OutlookItem {
   
   // The name of the contact's assistant.
-  var assistantName: js.UndefOr[NullableOption[String]] = js.native
+  var assistantName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in
     * UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var birthday: js.UndefOr[NullableOption[String]] = js.native
+  var birthday: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's business address.
-  var businessAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.native
+  var businessAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
   // The business home page of the contact.
-  var businessHomePage: js.UndefOr[NullableOption[String]] = js.native
+  var businessHomePage: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's business phone numbers.
-  var businessPhones: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var businessPhones: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The names of the contact's children.
-  var children: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var children: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The name of the contact's company.
-  var companyName: js.UndefOr[NullableOption[String]] = js.native
+  var companyName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's department.
-  var department: js.UndefOr[NullableOption[String]] = js.native
+  var department: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The contact's display name. You can specify the display name in a create or update operation. Note that later updates
     * to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
     * To preserve a pre-existing value, always include it as displayName in an update operation.
     */
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's email addresses.
-  var emailAddresses: js.UndefOr[NullableOption[js.Array[EmailAddress]]] = js.native
+  var emailAddresses: js.UndefOr[NullableOption[js.Array[EmailAddress]]] = js.undefined
   
   // The collection of open extensions defined for the contact. Read-only. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   // The name the contact is filed under.
-  var fileAs: js.UndefOr[NullableOption[String]] = js.native
+  var fileAs: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's generation.
-  var generation: js.UndefOr[NullableOption[String]] = js.native
+  var generation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's given name.
-  var givenName: js.UndefOr[NullableOption[String]] = js.native
+  var givenName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's home address.
-  var homeAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.native
+  var homeAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
   // The contact's home phone numbers.
-  var homePhones: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var homePhones: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The contact's instant messaging (IM) addresses.
-  var imAddresses: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var imAddresses: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The contact's initials.
-  var initials: js.UndefOr[NullableOption[String]] = js.native
+  var initials: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact’s job title.
-  var jobTitle: js.UndefOr[NullableOption[String]] = js.native
+  var jobTitle: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the contact's manager.
-  var manager: js.UndefOr[NullableOption[String]] = js.native
+  var manager: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's middle name.
-  var middleName: js.UndefOr[NullableOption[String]] = js.native
+  var middleName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's mobile phone number.
-  var mobilePhone: js.UndefOr[NullableOption[String]] = js.native
+  var mobilePhone: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.native
+  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
   // The contact's nickname.
-  var nickName: js.UndefOr[NullableOption[String]] = js.native
+  var nickName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The location of the contact's office.
-  var officeLocation: js.UndefOr[NullableOption[String]] = js.native
+  var officeLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Other addresses for the contact.
-  var otherAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.native
+  var otherAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
   // The ID of the contact's parent folder.
-  var parentFolderId: js.UndefOr[NullableOption[String]] = js.native
+  var parentFolderId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user's notes about the contact.
-  var personalNotes: js.UndefOr[NullableOption[String]] = js.native
+  var personalNotes: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Optional contact picture. You can get or set a photo for a contact.
-  var photo: js.UndefOr[NullableOption[ProfilePhoto]] = js.native
+  var photo: js.UndefOr[NullableOption[ProfilePhoto]] = js.undefined
   
   // The contact's profession.
-  var profession: js.UndefOr[NullableOption[String]] = js.native
+  var profession: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.native
+  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
   
   // The name of the contact's spouse/partner.
-  var spouseName: js.UndefOr[NullableOption[String]] = js.native
+  var spouseName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's surname.
-  var surname: js.UndefOr[NullableOption[String]] = js.native
+  var surname: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The contact's title.
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The phonetic Japanese company name of the contact.
-  var yomiCompanyName: js.UndefOr[NullableOption[String]] = js.native
+  var yomiCompanyName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The phonetic Japanese given name (first name) of the contact.
-  var yomiGivenName: js.UndefOr[NullableOption[String]] = js.native
+  var yomiGivenName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The phonetic Japanese surname (last name) of the contact.
-  var yomiSurname: js.UndefOr[NullableOption[String]] = js.native
+  var yomiSurname: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Contact {
   

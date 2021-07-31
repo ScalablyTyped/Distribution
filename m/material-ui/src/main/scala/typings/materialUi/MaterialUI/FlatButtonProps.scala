@@ -8,74 +8,73 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.materialUi.MaterialUI.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, style, tabIndex, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ @js.native
-trait FlatButtonProps
-  extends DOMAttributes[js.Object] {
+- typings.materialUi.MaterialUI.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, style, tabIndex, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ trait FlatButtonProps
+  extends StObject
+     with DOMAttributes[js.Object] {
   
   // <EnhancedButton/> is the element that get the 'other' properties
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var centerRipple: js.UndefOr[Boolean] = js.native
+  var centerRipple: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var containerElement: js.UndefOr[ReactNode | String] = js.native
+  var containerElement: js.UndefOr[ReactNode | String] = js.undefined
   
-  var disableFocusRipple: js.UndefOr[Boolean] = js.native
+  var disableFocusRipple: js.UndefOr[Boolean] = js.undefined
   
-  var disableKeyboardFocus: js.UndefOr[Boolean] = js.native
+  var disableKeyboardFocus: js.UndefOr[Boolean] = js.undefined
   
-  var disableTouchRipple: js.UndefOr[Boolean] = js.native
+  var disableTouchRipple: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var focusRippleColor: js.UndefOr[String] = js.native
+  var focusRippleColor: js.UndefOr[String] = js.undefined
   
-  var focusRippleOpacity: js.UndefOr[Double] = js.native
+  var focusRippleOpacity: js.UndefOr[Double] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var hoverColor: js.UndefOr[String] = js.native
+  var hoverColor: js.UndefOr[String] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[ReactNode] = js.native
+  var icon: js.UndefOr[ReactNode] = js.undefined
   
-  var keyboardFocused: js.UndefOr[Boolean] = js.native
+  var keyboardFocused: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var labelPosition: js.UndefOr[before | after] = js.native
+  var labelPosition: js.UndefOr[before | after] = js.undefined
   
-  var labelStyle: js.UndefOr[CSSProperties] = js.native
+  var labelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var linkButton: js.UndefOr[Boolean] = js.native
+  var linkButton: js.UndefOr[Boolean] = js.undefined
   
   var onKeyboardFocus: js.UndefOr[
     js.Function2[/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
   
-  var secondary: js.UndefOr[Boolean] = js.native
+  var secondary: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var touchRippleColor: js.UndefOr[String] = js.native
+  var touchRippleColor: js.UndefOr[String] = js.undefined
   
-  var touchRippleOpacity: js.UndefOr[Double] = js.native
+  var touchRippleOpacity: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object FlatButtonProps {
   

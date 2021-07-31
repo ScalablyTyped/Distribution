@@ -2,37 +2,37 @@ package typings.contentRange
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("content-range", "format")
+  @JSImport("content-range", JSImport.Namespace)
   @js.native
-  def format(options: ContentRangeFormatOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("content-range", "parse")
-  @js.native
-  def parse(str: String): ContentRangeParts | Null = js.native
+  @scala.inline
+  def format(options: ContentRangeFormatOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def parse(str: String): ContentRangeParts | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[ContentRangeParts | Null]
+  
   trait ContentRangeFormatOptions extends StObject {
     
-    var first: js.UndefOr[Double] = js.native
+    var first: js.UndefOr[Double] = js.undefined
     
-    var last: js.UndefOr[Double] = js.native
+    var last: js.UndefOr[Double] = js.undefined
     
-    var length: Double | Null = js.native
+    var length: Double | Null
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var unit: String = js.native
+    var unit: String
   }
   object ContentRangeFormatOptions {
     
     @scala.inline
     def apply(unit: String): ContentRangeFormatOptions = {
-      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], length = null)
       __obj.asInstanceOf[ContentRangeFormatOptions]
     }
     
@@ -68,22 +68,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ContentRangeParts extends StObject {
     
-    var first: Double | Null = js.native
+    var first: Double | Null
     
-    var last: Double | Null = js.native
+    var last: Double | Null
     
-    var length: Double | Null = js.native
+    var length: Double | Null
     
-    var unit: String = js.native
+    var unit: String
   }
   object ContentRangeParts {
     
     @scala.inline
     def apply(unit: String): ContentRangeParts = {
-      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], first = null, last = null, length = null)
       __obj.asInstanceOf[ContentRangeParts]
     }
     

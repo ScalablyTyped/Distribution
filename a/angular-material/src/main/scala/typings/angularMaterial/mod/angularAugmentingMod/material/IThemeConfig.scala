@@ -2,23 +2,21 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IThemeConfig extends StObject {
   
-  var alwaysWatchTheme: Boolean = js.native
+  var alwaysWatchTheme: Boolean
   
-  var defaultTheme: String = js.native
+  var defaultTheme: String
   
-  var disableTheming: Boolean = js.native
+  var disableTheming: Boolean
   
-  var generateOnDemand: Boolean = js.native
+  var generateOnDemand: Boolean
   
-  var nonce: String = js.native
+  var nonce: String
   
-  var registeredStyles: js.Array[String] = js.native
+  var registeredStyles: js.Array[String]
 }
 object IThemeConfig {
   

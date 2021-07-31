@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumnCommandItemIconClass extends StObject {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var edit: js.UndefOr[String] = js.native
+  var edit: js.UndefOr[String] = js.undefined
   
-  var update: js.UndefOr[String] = js.native
+  var update: js.UndefOr[String] = js.undefined
 }
 object GridColumnCommandItemIconClass {
   

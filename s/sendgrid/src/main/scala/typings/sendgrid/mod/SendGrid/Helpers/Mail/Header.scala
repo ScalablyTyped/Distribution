@@ -2,15 +2,13 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var value: String = js.native
+  var value: String
 }
 object Header {
   

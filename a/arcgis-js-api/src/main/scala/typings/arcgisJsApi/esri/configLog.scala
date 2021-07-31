@@ -8,25 +8,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait configLog extends Object {
+trait configLog
+  extends StObject
+     with Object {
   
   /**
     * An array of custom interceptor functions that can be used to intercept log messages.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
     */
-  var interceptors: js.Array[LogInterceptor] = js.native
+  var interceptors: js.Array[LogInterceptor]
   
   /**
     * The level of messages to log.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
     */
-  var level: none | error | warn | info = js.native
+  var level: none | error | warn | info
 }
 object configLog {
   

@@ -3,36 +3,26 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.anon.Checks
 import typings.stripe.mod.IMetadata
 import typings.stripe.stripeStrings.card
-import typings.stripe.stripeStrings.payment_method
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICardPaymentMethod
-  extends IBasePaymentMethod
+  extends StObject
+     with IBasePaymentMethod
      with IPaymentMethod {
   
-  var card: Checks = js.native
+  var card: Checks
   
-  var `type`: card = js.native
+  var `type`: card
 }
 object ICardPaymentMethod {
   
   @scala.inline
-  def apply(
-    card: Checks,
-    created: Double,
-    id: String,
-    livemode: Boolean,
-    metadata: IMetadata,
-    `object`: payment_method,
-    `type`: card
-  ): ICardPaymentMethod = {
-    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(card: Checks, created: Double, id: String, livemode: Boolean, metadata: IMetadata): ICardPaymentMethod = {
+    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], billing_details = null, customer = null)
+    __obj.updateDynamic("object")("payment_method")
+    __obj.updateDynamic("type")("card")
     __obj.asInstanceOf[ICardPaymentMethod]
   }
   

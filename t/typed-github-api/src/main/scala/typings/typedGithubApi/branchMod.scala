@@ -7,23 +7,21 @@ import typings.typedGithubApi.repositoryMod.Repository
 import typings.typedGithubApi.userMod.UserSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object branchMod {
   
-  @js.native
   trait Branch extends StObject {
     
-    var _links: Html = js.native
+    var _links: Html
     
-    var commit: CommitSummary = js.native
+    var commit: CommitSummary
     
-    var name: String = js.native
+    var name: String
     
-    var `protected`: js.UndefOr[Boolean] = js.native
+    var `protected`: js.UndefOr[Boolean] = js.undefined
     
-    var protection_url: js.UndefOr[String] = js.native
+    var protection_url: js.UndefOr[String] = js.undefined
   }
   object Branch {
     
@@ -59,12 +57,11 @@ object branchMod {
     }
   }
   
-  @js.native
   trait BranchRef extends StObject {
     
-    var commit: GitRef = js.native
+    var commit: GitRef
     
-    var name: String = js.native
+    var name: String
   }
   object BranchRef {
     
@@ -85,18 +82,17 @@ object branchMod {
     }
   }
   
-  @js.native
   trait BranchSummary extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var ref: String = js.native
+    var ref: String
     
-    var repo: Repository = js.native
+    var repo: Repository
     
-    var sha: String = js.native
+    var sha: String
     
-    var user: UserSummary = js.native
+    var user: UserSummary
   }
   object BranchSummary {
     

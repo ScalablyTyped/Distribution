@@ -12,22 +12,20 @@ import typings.atom.mod.Range
 import typings.atom.mod.TextEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linterMod {
   
-  @js.native
   trait CallbackSolution extends StObject {
     
     @JSName("apply")
-    def apply(): js.Any = js.native
+    def apply(): js.Any
     
-    var position: Range = js.native
+    var position: Range
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object CallbackSolution {
     
@@ -60,10 +58,9 @@ object linterMod {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Config {
     
@@ -81,24 +78,23 @@ object linterMod {
     }
   }
   
-  @js.native
   trait IndieDelegate extends StObject {
     
-    def clearMessages(): Unit = js.native
+    def clearMessages(): Unit
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    def getMessages(): js.Array[Message] = js.native
+    def getMessages(): js.Array[Message]
     
-    var name: String = js.native
+    var name: String
     
-    def onDidDestroy(callback: js.Function0[Unit]): Disposable = js.native
+    def onDidDestroy(callback: js.Function0[Unit]): Disposable
     
-    def onDidUpdate(callback: js.Function0[Unit]): Disposable = js.native
+    def onDidUpdate(callback: js.Function0[Unit]): Disposable
     
-    def setAllMessages(messages: js.Array[Message]): Unit = js.native
+    def setAllMessages(messages: js.Array[Message]): Unit
     
-    def setMessages(filePath: String, messages: js.Array[Message]): Unit = js.native
+    def setMessages(filePath: String, messages: js.Array[Message]): Unit
   }
   object IndieDelegate {
     
@@ -150,18 +146,17 @@ object linterMod {
   
   type LintResult = js.Array[Message] | Null
   
-  @js.native
   trait LinterProvider extends StObject {
     
-    var grammarScopes: js.Array[String] = js.native
+    var grammarScopes: js.Array[String]
     
-    def lint(editor: TextEditor): LintResult | js.Promise[LintResult] = js.native
+    def lint(editor: TextEditor): LintResult | js.Promise[LintResult]
     
-    var lintsOnChange: Boolean = js.native
+    var lintsOnChange: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var scope: file | project = js.native
+    var scope: file | project
   }
   object LinterProvider {
     
@@ -200,38 +195,37 @@ object linterMod {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
     /**
       *  Markdown long description of the error. Accepts a callback so that you can
       *  do things like HTTP requests.
       */
-    var description: js.UndefOr[String | (js.Function0[js.Promise[String] | String])] = js.native
+    var description: js.UndefOr[String | (js.Function0[js.Promise[String] | String])] = js.undefined
     
     /** The text for the message. */
-    var excerpt: String = js.native
+    var excerpt: String
     
     /** The name of the octicon to show in the gutter. */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** Optionally override the displayed linter name. Defaults to provider name. */
-    var linterName: js.UndefOr[String] = js.native
+    var linterName: js.UndefOr[String] = js.undefined
     
     /** The location of the issue (aka where to highlight). */
-    var location: File = js.native
+    var location: File
     
     /** A reference to a different location in the editor. */
-    var reference: js.UndefOr[Position] = js.native
+    var reference: js.UndefOr[Position] = js.undefined
     
     /** The severity level for the message. */
-    var severity: error | warning | info = js.native
+    var severity: error | warning | info
     
     /** Possible solutions (which the user can invoke at will). */
-    var solutions: js.UndefOr[js.Array[ReplacementSolution | CallbackSolution]] = js.native
+    var solutions: js.UndefOr[js.Array[ReplacementSolution | CallbackSolution]] = js.undefined
     
     /** An HTTP link to a resource explaining the issue. Default is a google search. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Message {
     
@@ -297,18 +291,17 @@ object linterMod {
     }
   }
   
-  @js.native
   trait ReplacementSolution extends StObject {
     
-    var currentText: js.UndefOr[String] = js.native
+    var currentText: js.UndefOr[String] = js.undefined
     
-    var position: Range = js.native
+    var position: Range
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var replaceWith: String = js.native
+    var replaceWith: String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ReplacementSolution {
     

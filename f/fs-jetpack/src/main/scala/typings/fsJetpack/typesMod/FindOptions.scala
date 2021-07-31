@@ -2,21 +2,19 @@ package typings.fsJetpack.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOptions extends StObject {
   
-  var directories: js.UndefOr[Boolean] = js.native
+  var directories: js.UndefOr[Boolean] = js.undefined
   
-  var files: js.UndefOr[Boolean] = js.native
+  var files: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var matching: js.UndefOr[String | js.Array[String]] = js.native
+  var matching: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object FindOptions {
   

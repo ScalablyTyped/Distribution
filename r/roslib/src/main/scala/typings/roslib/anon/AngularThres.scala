@@ -2,29 +2,27 @@ package typings.roslib.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AngularThres extends StObject {
   
-  var angularThres: js.UndefOr[Double] = js.native
+  var angularThres: js.UndefOr[Double] = js.undefined
   
-  var fixedFrame: js.UndefOr[java.lang.String] = js.native
+  var fixedFrame: js.UndefOr[java.lang.String] = js.undefined
   
-  var rate: js.UndefOr[Double] = js.native
+  var rate: js.UndefOr[Double] = js.undefined
   
-  var repubServiceName: js.UndefOr[java.lang.String] = js.native
+  var repubServiceName: js.UndefOr[java.lang.String] = js.undefined
   
-  var ros: typings.roslib.mod.Ros = js.native
+  var ros: typings.roslib.mod.Ros
   
-  var serverName: js.UndefOr[java.lang.String] = js.native
+  var serverName: js.UndefOr[java.lang.String] = js.undefined
   
-  var topicTimeout: js.UndefOr[Double] = js.native
+  var topicTimeout: js.UndefOr[Double] = js.undefined
   
-  var transThres: js.UndefOr[Double] = js.native
+  var transThres: js.UndefOr[Double] = js.undefined
   
-  var updateDelay: js.UndefOr[Double] = js.native
+  var updateDelay: js.UndefOr[Double] = js.undefined
 }
 object AngularThres {
   

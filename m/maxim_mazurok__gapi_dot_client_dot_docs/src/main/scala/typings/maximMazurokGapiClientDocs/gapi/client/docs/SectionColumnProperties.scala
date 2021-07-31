@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SectionColumnProperties extends StObject {
   
   /** The padding at the end of the column. */
-  var paddingEnd: js.UndefOr[Dimension] = js.native
+  var paddingEnd: js.UndefOr[Dimension] = js.undefined
   
   /** Output only. The width of the column. */
-  var width: js.UndefOr[Dimension] = js.native
+  var width: js.UndefOr[Dimension] = js.undefined
 }
 object SectionColumnProperties {
   

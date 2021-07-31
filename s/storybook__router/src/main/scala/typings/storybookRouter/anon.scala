@@ -6,15 +6,13 @@ import typings.reachRouter.mod.LocationProviderRenderFn
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object Path {
     
@@ -33,12 +31,11 @@ object anon {
   }
   
   /* Inlined std.Readonly<@reach/router.@reach/router.LocationProviderProps> */
-  @js.native
   trait ReadonlyLocationProviderP extends StObject {
     
-    val children: js.UndefOr[ReactNode | LocationProviderRenderFn] = js.native
+    val children: js.UndefOr[ReactNode | LocationProviderRenderFn] = js.undefined
     
-    val history: js.UndefOr[History] = js.native
+    val history: js.UndefOr[History] = js.undefined
   }
   object ReadonlyLocationProviderP {
     
@@ -68,10 +65,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Search extends StObject {
     
-    var search: String = js.native
+    var search: String
   }
   object Search {
     

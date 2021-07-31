@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NearestRoadsRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait NearestRoadsRequest extends StObject {
     * Coordinates should be separated by the pipe character: "|".
     * For example: `points=60.170880,24.942795|60.170879,24.942796|60.170877,24.942796`.
     */
-  var points: js.Array[LatLng] = js.native
+  var points: js.Array[LatLng]
 }
 object NearestRoadsRequest {
   

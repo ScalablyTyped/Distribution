@@ -3,128 +3,126 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /**
     * The hardware accelerator used on this instance. If you use accelerators, make sure that your configuration has [enough vCPUs and memory to support the `machine_type` you have
     * selected](/compute/docs/gpus/#gpus-list).
     */
-  var acceleratorConfig: js.UndefOr[AcceleratorConfig] = js.native
+  var acceleratorConfig: js.UndefOr[AcceleratorConfig] = js.undefined
   
   /**
     * Input only. The size of the boot disk in GB attached to this instance, up to a maximum of 64000 GB (64 TB). The minimum recommended value is 100 GB. If not specified, this defaults
     * to 100.
     */
-  var bootDiskSizeGb: js.UndefOr[String] = js.native
+  var bootDiskSizeGb: js.UndefOr[String] = js.undefined
   
   /** Input only. The type of the boot disk attached to this instance, defaults to standard persistent disk (`PD_STANDARD`). */
-  var bootDiskType: js.UndefOr[String] = js.native
+  var bootDiskType: js.UndefOr[String] = js.undefined
   
   /** Use a container image to start the notebook instance. */
-  var containerImage: js.UndefOr[ContainerImage] = js.native
+  var containerImage: js.UndefOr[ContainerImage] = js.undefined
   
   /** Output only. Instance creation time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Specify a custom Cloud Storage path where the GPU driver is stored. If not specified, we'll automatically choose from official GPU drivers. */
-  var customGpuDriverPath: js.UndefOr[String] = js.native
+  var customGpuDriverPath: js.UndefOr[String] = js.undefined
   
   /**
     * Input only. The size of the data disk in GB attached to this instance, up to a maximum of 64000 GB (64 TB). You can choose the size of the data disk based on how big your notebooks
     * and data are. If not specified, this defaults to 100.
     */
-  var dataDiskSizeGb: js.UndefOr[String] = js.native
+  var dataDiskSizeGb: js.UndefOr[String] = js.undefined
   
   /** Input only. The type of the data disk attached to this instance, defaults to standard persistent disk (`PD_STANDARD`). */
-  var dataDiskType: js.UndefOr[String] = js.native
+  var dataDiskType: js.UndefOr[String] = js.undefined
   
   /** Input only. Disk encryption method used on the boot and data disks, defaults to GMEK. */
-  var diskEncryption: js.UndefOr[String] = js.native
+  var diskEncryption: js.UndefOr[String] = js.undefined
   
   /** Output only. Attached disks to notebook instance. */
-  var disks: js.UndefOr[js.Array[Disk]] = js.native
+  var disks: js.UndefOr[js.Array[Disk]] = js.undefined
   
   /**
     * Whether the end user authorizes Google Cloud to install GPU driver on this instance. If this field is empty or set to false, the GPU driver won't be installed. Only applicable to
     * instances with GPUs.
     */
-  var installGpuDriver: js.UndefOr[Boolean] = js.native
+  var installGpuDriver: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Input only. The owner of this instance after creation. Format: `alias@example.com` Currently supports one owner only. If not specified, all of the service account users of your VM
     * instance's service account can use the instance.
     */
-  var instanceOwners: js.UndefOr[js.Array[String]] = js.native
+  var instanceOwners: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Input only. The KMS key used to encrypt the disks, only applicable if disk_encryption is CMEK. Format:
     * `projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}` Learn more about [using your own encryption keys](/kms/docs/quickstart).
     */
-  var kmsKey: js.UndefOr[String] = js.native
+  var kmsKey: js.UndefOr[String] = js.undefined
   
   /** Labels to apply to this instance. These can be later modified by the setLabels method. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. The [Compute Engine machine type](/compute/docs/machine-types) of this instance. */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /** Custom metadata to apply to this instance. */
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The name of this notebook instance. Format: `projects/{project_id}/locations/{location}/instances/{instance_id}` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The name of the VPC that this instance is in. Format: `projects/{project_id}/global/networks/{network_id}` */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /** If true, the notebook instance will not register with the proxy. */
-  var noProxyAccess: js.UndefOr[Boolean] = js.native
+  var noProxyAccess: js.UndefOr[Boolean] = js.undefined
   
   /** If true, no public IP will be assigned to this instance. */
-  var noPublicIp: js.UndefOr[Boolean] = js.native
+  var noPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /** Input only. If true, the data disk will not be auto deleted when deleting the instance. */
-  var noRemoveDataDisk: js.UndefOr[Boolean] = js.native
+  var noRemoveDataDisk: js.UndefOr[Boolean] = js.undefined
   
   /** Path to a Bash script that automatically runs after a notebook instance fully boots up. The path must be a URL or Cloud Storage path (gs://path-to-file/file-name). */
-  var postStartupScript: js.UndefOr[String] = js.native
+  var postStartupScript: js.UndefOr[String] = js.undefined
   
   /** Output only. The proxy endpoint that is used to access the Jupyter notebook. */
-  var proxyUri: js.UndefOr[String] = js.native
+  var proxyUri: js.UndefOr[String] = js.undefined
   
   /**
     * The service account on this instance, giving access to other Google Cloud services. You can use any service account within the same project, but you must have the service account
     * user permission to use the instance. If not specified, the [Compute Engine default service
     * account](https://cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /** Output only. The state of this instance. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** The name of the subnet that this instance is in. Format: `projects/{project_id}/regions/{region}/subnetworks/{subnetwork_id}` */
-  var subnet: js.UndefOr[String] = js.native
+  var subnet: js.UndefOr[String] = js.undefined
   
   /** Output only. Instance update time. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** The upgrade history of this instance. */
-  var upgradeHistory: js.UndefOr[js.Array[UpgradeHistoryEntry]] = js.native
+  var upgradeHistory: js.UndefOr[js.Array[UpgradeHistoryEntry]] = js.undefined
   
   /** Use a Compute Engine VM image to start the notebook instance. */
-  var vmImage: js.UndefOr[VmImage] = js.native
+  var vmImage: js.UndefOr[VmImage] = js.undefined
 }
 object Instance {
   
@@ -225,7 +223,7 @@ object Instance {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -241,7 +239,7 @@ object Instance {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

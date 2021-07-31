@@ -2,54 +2,52 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a person holding an elected office.
   */
-@js.native
 trait SchemaOfficial extends StObject {
   
   /**
     * Addresses at which to contact the official.
     */
-  var address: js.UndefOr[js.Array[SchemaSimpleAddressType]] = js.native
+  var address: js.UndefOr[js.Array[SchemaSimpleAddressType]] = js.undefined
   
   /**
     * A list of known (social) media channels for this official.
     */
-  var channels: js.UndefOr[js.Array[SchemaChannel]] = js.native
+  var channels: js.UndefOr[js.Array[SchemaChannel]] = js.undefined
   
   /**
     * The direct email addresses for the official.
     */
-  var emails: js.UndefOr[js.Array[String]] = js.native
+  var emails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The official&#39;s name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The full name of the party the official belongs to.
     */
-  var party: js.UndefOr[String] = js.native
+  var party: js.UndefOr[String] = js.undefined
   
   /**
     * The official&#39;s public contact phone numbers.
     */
-  var phones: js.UndefOr[js.Array[String]] = js.native
+  var phones: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A URL for a photo of the official.
     */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The official&#39;s public website URLs.
     */
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaOfficial {
   

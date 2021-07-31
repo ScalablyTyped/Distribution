@@ -2,15 +2,13 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasZM extends StObject {
   
-  var hasM: js.UndefOr[Boolean] = js.native
+  var hasM: js.UndefOr[Boolean] = js.undefined
   
-  var hasZ: js.UndefOr[Boolean] = js.native
+  var hasZ: js.UndefOr[Boolean] = js.undefined
 }
 object HasZM {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGroupResponse extends StObject {
   
   /**
     * The group object for the group.
     */
-  var Group: js.UndefOr[GroupType] = js.native
+  var Group: js.UndefOr[GroupType] = js.undefined
 }
 object UpdateGroupResponse {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateReplicationJobRequest extends StObject {
   
   /**
     * The description of the replication job.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * When true, the replication job produces encrypted AMIs. For more information, KmsKeyId.
     */
-  var encrypted: js.UndefOr[Encrypted] = js.native
+  var encrypted: js.UndefOr[Encrypted] = js.undefined
   
   /**
     * The time between consecutive replication runs, in hours.
     */
-  var frequency: js.UndefOr[Frequency] = js.native
+  var frequency: js.UndefOr[Frequency] = js.undefined
   
   /**
     * The ID of the KMS key for replication jobs that produce encrypted AMIs. This value can be any of the following:   KMS key ID   KMS key alias   ARN referring to the KMS key ID   ARN referring to the KMS key alias   If encrypted is enabled but a KMS key ID is not specified, the customer's default KMS key for Amazon EBS is used.
     */
-  var kmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var kmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * The license type to be used for the AMI created by a successful replication run.
     */
-  var licenseType: js.UndefOr[LicenseType] = js.native
+  var licenseType: js.UndefOr[LicenseType] = js.undefined
   
   /**
     * The start time of the next replication run.
     */
-  var nextReplicationRunStartTime: js.UndefOr[Timestamp] = js.native
+  var nextReplicationRunStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The maximum number of SMS-created AMIs to retain. The oldest is deleted after the maximum number is reached and a new AMI is created.
     */
-  var numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.native
+  var numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.undefined
   
   /**
     * The ID of the replication job.
     */
-  var replicationJobId: ReplicationJobId = js.native
+  var replicationJobId: ReplicationJobId
   
   /**
     * The name of the IAM role to be used by AWS SMS.
     */
-  var roleName: js.UndefOr[RoleName] = js.native
+  var roleName: js.UndefOr[RoleName] = js.undefined
 }
 object UpdateReplicationJobRequest {
   

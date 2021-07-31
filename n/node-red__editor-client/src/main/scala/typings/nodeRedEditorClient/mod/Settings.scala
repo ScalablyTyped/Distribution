@@ -3,25 +3,23 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.ApiRootUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  def get[T](key: String, defaultIfUndefined: T): T = js.native
+  def get[T](key: String, defaultIfUndefined: T): T
   
-  def init(options: ApiRootUrl, done: js.Function0[Unit]): Unit = js.native
+  def init(options: ApiRootUrl, done: js.Function0[Unit]): Unit
   
-  def load(done: js.Function0[Unit]): Unit = js.native
+  def load(done: js.Function0[Unit]): Unit
   
-  def loadUserSettings(done: js.Function0[Unit]): Unit = js.native
+  def loadUserSettings(done: js.Function0[Unit]): Unit
   
-  def remove(key: String): Unit = js.native
+  def remove(key: String): Unit
   
-  def set(key: String, value: js.Any): Unit = js.native
+  def set(key: String, value: js.Any): Unit
   
-  def theme[T](property: String, defaultValue: T): T = js.native
+  def theme[T](property: String, defaultValue: T): T
 }
 object Settings {
   

@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionRestrictionsGeoRestriction extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait DistributionRestrictionsGeoRestriction extends StObject {
     * want CloudFront either to distribute your content (`whitelist`) or not
     * distribute your content (`blacklist`).
     */
-  var locations: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var locations: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * The method that you want to use to restrict
     * distribution of your content by country: `none`, `whitelist`, or
     * `blacklist`.
     */
-  var restrictionType: Input[String] = js.native
+  var restrictionType: Input[String]
 }
 object DistributionRestrictionsGeoRestriction {
   

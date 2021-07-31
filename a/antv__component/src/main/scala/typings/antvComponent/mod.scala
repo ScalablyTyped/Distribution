@@ -10,7 +10,6 @@ import typings.antvComponent.typesMod.LegendBaseCfg
 import typings.antvComponent.typesMod.TooltipCfg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

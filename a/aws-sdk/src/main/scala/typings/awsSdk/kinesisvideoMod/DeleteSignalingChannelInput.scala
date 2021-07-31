@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSignalingChannelInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the signaling channel that you want to delete.
     */
-  var ChannelARN: ResourceARN = js.native
+  var ChannelARN: ResourceARN
   
   /**
     * The current version of the signaling channel that you want to delete. You can obtain the current version by invoking the DescribeSignalingChannel or ListSignalingChannels API operations.
     */
-  var CurrentVersion: js.UndefOr[Version] = js.native
+  var CurrentVersion: js.UndefOr[Version] = js.undefined
 }
 object DeleteSignalingChannelInput {
   

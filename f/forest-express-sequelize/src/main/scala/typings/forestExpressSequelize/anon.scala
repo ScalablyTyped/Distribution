@@ -2,19 +2,17 @@ package typings.forestExpressSequelize
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var attributes: Value = js.native
+    var attributes: Value
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Attributes {
     
@@ -39,20 +37,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var enums: js.UndefOr[js.Array[String]] = js.native
+    var enums: js.UndefOr[js.Array[String]] = js.undefined
     
-    var field: String = js.native
+    var field: String
     
-    var isRequired: js.UndefOr[Boolean] = js.native
+    var isRequired: js.UndefOr[Boolean] = js.undefined
     
-    var reference: js.UndefOr[String] = js.native
+    var reference: js.UndefOr[String] = js.undefined
     
-    var `type`: String | js.Array[String] = js.native
+    var `type`: String | js.Array[String]
   }
   object Description {
     
@@ -104,15 +101,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: js.Array[_] = js.native
+    var value: js.Array[js.Any]
   }
   object Value {
     
     @scala.inline
-    def apply(value: js.Array[_]): Value = {
+    def apply(value: js.Array[js.Any]): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
@@ -121,7 +117,7 @@ object anon {
     implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))

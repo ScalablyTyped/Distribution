@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderShipment extends StObject {
   
   /**
@@ -22,31 +20,31 @@ trait OrderShipment extends StObject {
     * Poste) - "`gls`" (General Logistics Systems France) - "`dpd`" (DPD Group by GeoPost) - "`bpost`" (Belgian Post Group) - "`colis prive`" (Colis Privé) - "`boxtal`" (Boxtal) -
     * "`geodis`" (GEODIS) - "`tnt`" (TNT) - "`db schenker`" (DB Schenker) - "`aramex`" (Aramex)
     */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /** Date on which the shipment has been created, in ISO 8601 format. */
-  var creationDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
   /** Date on which the shipment has been delivered, in ISO 8601 format. Present only if `status` is `delivered` */
-  var deliveryDate: js.UndefOr[String] = js.native
+  var deliveryDate: js.UndefOr[String] = js.undefined
   
   /** The ID of the shipment. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The line items that are shipped. */
-  var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.native
+  var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.undefined
   
   /** Delivery details of the shipment if scheduling is needed. */
-  var scheduledDeliveryDetails: js.UndefOr[OrderShipmentScheduledDeliveryDetails] = js.native
+  var scheduledDeliveryDetails: js.UndefOr[OrderShipmentScheduledDeliveryDetails] = js.undefined
   
   /** The shipment group ID of the shipment. This is set in shiplineitems request. */
-  var shipmentGroupId: js.UndefOr[String] = js.native
+  var shipmentGroupId: js.UndefOr[String] = js.undefined
   
   /** The status of the shipment. Acceptable values are: - "`delivered`" - "`readyForPickup`" - "`shipped`" - "`undeliverable`" */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The tracking ID for the shipment. */
-  var trackingId: js.UndefOr[String] = js.native
+  var trackingId: js.UndefOr[String] = js.undefined
 }
 object OrderShipment {
   

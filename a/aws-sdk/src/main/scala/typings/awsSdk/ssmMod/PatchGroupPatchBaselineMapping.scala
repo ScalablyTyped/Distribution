@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchGroupPatchBaselineMapping extends StObject {
   
   /**
     * The patch baseline the patch group is registered with.
     */
-  var BaselineIdentity: js.UndefOr[PatchBaselineIdentity] = js.native
+  var BaselineIdentity: js.UndefOr[PatchBaselineIdentity] = js.undefined
   
   /**
     * The name of the patch group registered with the patch baseline.
     */
-  var PatchGroup: js.UndefOr[typings.awsSdk.ssmMod.PatchGroup] = js.native
+  var PatchGroup: js.UndefOr[typings.awsSdk.ssmMod.PatchGroup] = js.undefined
 }
 object PatchGroupPatchBaselineMapping {
   

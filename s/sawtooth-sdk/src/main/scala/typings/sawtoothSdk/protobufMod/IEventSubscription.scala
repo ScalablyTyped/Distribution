@@ -2,17 +2,15 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEventSubscription extends StObject {
   
   /** EventSubscription eventType */
-  var eventType: js.UndefOr[String | Null] = js.native
+  var eventType: js.UndefOr[String | Null] = js.undefined
   
   /** EventSubscription filters */
-  var filters: js.UndefOr[js.Array[IEventFilter] | Null] = js.native
+  var filters: js.UndefOr[js.Array[IEventFilter] | Null] = js.undefined
 }
 object IEventSubscription {
   

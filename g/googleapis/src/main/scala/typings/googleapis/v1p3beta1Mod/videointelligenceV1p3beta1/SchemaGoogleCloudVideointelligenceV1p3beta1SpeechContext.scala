@@ -2,14 +2,12 @@ package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides &quot;hints&quot; to the speech recognizer to favor specific words
   * and phrases in the results.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext extends StObject 
     * vocabulary of the recognizer. See [usage
     * limits](https://cloud.google.com/speech/limits#content).
     */
-  var phrases: js.UndefOr[js.Array[String]] = js.native
+  var phrases: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext {
   

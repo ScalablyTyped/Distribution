@@ -3,17 +3,15 @@ package typings.angularCompiler
 import typings.angularCompiler.outputAstMod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object partialModuleMod {
   
-  @js.native
   trait PartialModule extends StObject {
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var statements: js.Array[Statement] = js.native
+    var statements: js.Array[Statement]
   }
   object PartialModule {
     

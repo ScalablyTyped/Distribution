@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueMatcher extends StObject {
   
   /** If specified, a match occurs if and only if the target value is a bool value and is equal to this field. */
-  var boolMatch: js.UndefOr[Boolean] = js.native
+  var boolMatch: js.UndefOr[Boolean] = js.undefined
   
   /** If specified, a match occurs if and only if the target value is a double value and is matched to this field. */
-  var doubleMatch: js.UndefOr[DoubleMatcher] = js.native
+  var doubleMatch: js.UndefOr[DoubleMatcher] = js.undefined
   
   /** If specified, a match occurs if and only if the target value is a list value and is matched to this field. */
-  var listMatch: js.UndefOr[ListMatcher] = js.native
+  var listMatch: js.UndefOr[ListMatcher] = js.undefined
   
   /** If specified, a match occurs if and only if the target value is a NullValue. */
-  var nullMatch: js.UndefOr[js.Any] = js.native
+  var nullMatch: js.UndefOr[js.Any] = js.undefined
   
   /**
     * If specified, value match will be performed based on whether the path is referring to a valid primitive value in the metadata. If the path is referring to a non-primitive value, the
     * result is always not matched.
     */
-  var presentMatch: js.UndefOr[Boolean] = js.native
+  var presentMatch: js.UndefOr[Boolean] = js.undefined
   
   /** If specified, a match occurs if and only if the target value is a string value and is matched to this field. */
-  var stringMatch: js.UndefOr[StringMatcher] = js.native
+  var stringMatch: js.UndefOr[StringMatcher] = js.undefined
 }
 object ValueMatcher {
   

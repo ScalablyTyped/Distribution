@@ -2,24 +2,22 @@ package typings.googleapis.composerV1Mod.composerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The environments in a project and location.
   */
-@js.native
 trait SchemaListEnvironmentsResponse extends StObject {
   
   /**
     * The list of environments returned by a ListEnvironmentsRequest.
     */
-  var environments: js.UndefOr[js.Array[SchemaEnvironment]] = js.native
+  var environments: js.UndefOr[js.Array[SchemaEnvironment]] = js.undefined
   
   /**
     * The page token used to query for the next page if one exists.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListEnvironmentsResponse {
   

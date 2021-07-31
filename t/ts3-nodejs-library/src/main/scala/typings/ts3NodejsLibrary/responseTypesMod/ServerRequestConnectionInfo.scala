@@ -3,41 +3,41 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerRequestConnectionInfo extends ResponseEntry {
+trait ServerRequestConnectionInfo
+  extends StObject
+     with ResponseEntry {
   
-  var connectionBandwidthReceivedLastMinuteTotal: Double = js.native
+  var connectionBandwidthReceivedLastMinuteTotal: Double
   
-  var connectionBandwidthReceivedLastSecondTotal: Double = js.native
+  var connectionBandwidthReceivedLastSecondTotal: Double
   
-  var connectionBandwidthSentLastMinuteTotal: Double = js.native
+  var connectionBandwidthSentLastMinuteTotal: Double
   
-  var connectionBandwidthSentLastSecondTotal: Double = js.native
+  var connectionBandwidthSentLastSecondTotal: Double
   
-  var connectionBytesReceivedTotal: Double = js.native
+  var connectionBytesReceivedTotal: Double
   
-  var connectionBytesSentTotal: Double = js.native
+  var connectionBytesSentTotal: Double
   
-  var connectionConnectedTime: Double = js.native
+  var connectionConnectedTime: Double
   
-  var connectionFiletransferBandwidthReceived: Double = js.native
+  var connectionFiletransferBandwidthReceived: Double
   
-  var connectionFiletransferBandwidthSent: Double = js.native
+  var connectionFiletransferBandwidthSent: Double
   
-  var connectionFiletransferBytesReceivedTotal: Double = js.native
+  var connectionFiletransferBytesReceivedTotal: Double
   
-  var connectionFiletransferBytesSentTotal: Double = js.native
+  var connectionFiletransferBytesSentTotal: Double
   
-  var connectionPacketlossTotal: Double = js.native
+  var connectionPacketlossTotal: Double
   
-  var connectionPacketsReceivedTotal: Double = js.native
+  var connectionPacketsReceivedTotal: Double
   
-  var connectionPacketsSentTotal: Double = js.native
+  var connectionPacketsSentTotal: Double
   
-  var connectionPing: Double = js.native
+  var connectionPing: Double
 }
 object ServerRequestConnectionInfo {
   

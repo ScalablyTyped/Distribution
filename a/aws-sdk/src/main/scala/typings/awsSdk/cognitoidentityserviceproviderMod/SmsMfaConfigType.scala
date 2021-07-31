@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmsMfaConfigType extends StObject {
   
   /**
     * The SMS authentication message that will be sent to users with the code they need to sign in. The message must contain the ‘{####}’ placeholder, which will be replaced with the code. If the message is not included, and default message will be used.
     */
-  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.native
+  var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
     * The SMS configuration.
     */
-  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.native
+  var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.undefined
 }
 object SmsMfaConfigType {
   

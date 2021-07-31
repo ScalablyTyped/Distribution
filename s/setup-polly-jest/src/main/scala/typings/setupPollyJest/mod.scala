@@ -4,22 +4,22 @@ import typings.pollyjsCore.mod.Polly
 import typings.pollyjsCore.mod.PollyConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("setup-polly-jest", "setupPolly")
+  @JSImport("setup-polly-jest", JSImport.Namespace)
   @js.native
-  def setupPolly(): Context = js.native
-  @JSImport("setup-polly-jest", "setupPolly")
-  @js.native
-  def setupPolly(config: PollyConfig): Context = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def setupPolly(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPolly")().asInstanceOf[Context]
+  @scala.inline
+  def setupPolly(config: PollyConfig): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPolly")(config.asInstanceOf[js.Any]).asInstanceOf[Context]
+  
   trait Context extends StObject {
     
-    val polly: Polly = js.native
+    val polly: Polly
   }
   object Context {
     

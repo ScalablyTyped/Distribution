@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ExecutionPolicy extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BuildBazelRemoteExecutionV2ExecutionPolicy extends StObject {
     * sooner than actions having the default priority, respectively. The particular semantics of this field is up to the server. In particular, every server will have their own supported
     * range of priorities, and will decide how these map into scheduling policy.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ExecutionPolicy {
   

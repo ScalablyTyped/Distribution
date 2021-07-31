@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorOptions extends StObject {
   
-  var fill: js.UndefOr[String | ConnectorFill] = js.native
+  var fill: js.UndefOr[String | ConnectorFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[ConnectorHover] = js.native
+  var hover: js.UndefOr[ConnectorHover] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[String | ConnectorStroke] = js.native
+  var stroke: js.UndefOr[String | ConnectorStroke] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ConnectorOptions {
   

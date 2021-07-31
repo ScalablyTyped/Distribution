@@ -2,19 +2,19 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DraggableControlProps extends BaseControlProps {
+trait DraggableControlProps
+  extends StObject
+     with BaseControlProps {
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var onDrag: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
 }
 object DraggableControlProps {
   

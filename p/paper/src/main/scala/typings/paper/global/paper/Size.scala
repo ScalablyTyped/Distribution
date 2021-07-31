@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -12,12 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.Size")
 @js.native
 class Size protected ()
-  extends typings.paper.paper.Size {
+  extends StObject
+     with typings.paper.paper.Size {
   /** 
     * Creates a Size object using the numbers in the given array as
     * dimensions.
     */
-  def this(array: js.Array[_]) = this()
+  def this(array: js.Array[js.Any]) = this()
   /** 
     * Creates a Size object using the properties in the given object.
     */
@@ -41,6 +41,10 @@ class Size protected ()
 }
 object Size {
   
+  @JSGlobal("paper.Size")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** 
     * Returns a new size object with the largest {@link #width} and
     * {@link #height} of the supplied sizes.
@@ -48,9 +52,8 @@ object Size {
     * @return the newly created size object
     */
   /* static member */
-  @JSGlobal("paper.Size.max")
-  @js.native
-  def max(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = js.native
+  @scala.inline
+  def max(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(size1.asInstanceOf[js.Any], size2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Size]
   
   /** 
     * Returns a new size object with the smallest {@link #width} and
@@ -59,9 +62,8 @@ object Size {
     * @return the newly created size object
     */
   /* static member */
-  @JSGlobal("paper.Size.min")
-  @js.native
-  def min(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = js.native
+  @scala.inline
+  def min(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(size1.asInstanceOf[js.Any], size2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Size]
   
   /** 
     * Returns a size object with random {@link #width} and {@link #height}
@@ -70,7 +72,6 @@ object Size {
     * @return the newly created size object
     */
   /* static member */
-  @JSGlobal("paper.Size.random")
-  @js.native
-  def random(): typings.paper.paper.Size = js.native
+  @scala.inline
+  def random(): typings.paper.paper.Size = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Size]
 }

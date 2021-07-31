@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cipher extends StObject {
   
   /**
     * The name of the cipher.
     */
-  var Name: js.UndefOr[CipherName] = js.native
+  var Name: js.UndefOr[CipherName] = js.undefined
   
   /**
     * The priority of the cipher.
     */
-  var Priority: js.UndefOr[CipherPriority] = js.native
+  var Priority: js.UndefOr[CipherPriority] = js.undefined
 }
 object Cipher {
   

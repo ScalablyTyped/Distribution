@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,22 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * set visible, though individual rows or columns can be hidden or set visible irrespective of the
   * collapsed state.
   */
-@js.native
 trait Group extends StObject {
   
-  def collapse(): Group = js.native
+  def collapse(): Group
   
-  def expand(): Group = js.native
+  def expand(): Group
   
-  def getControlIndex(): Integer = js.native
+  def getControlIndex(): Integer
   
-  def getDepth(): Integer = js.native
+  def getDepth(): Integer
   
-  def getRange(): Range = js.native
+  def getRange(): Range
   
-  def isCollapsed(): Boolean = js.native
+  def isCollapsed(): Boolean
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object Group {
   

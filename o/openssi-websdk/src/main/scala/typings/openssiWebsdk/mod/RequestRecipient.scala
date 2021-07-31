@@ -2,15 +2,13 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestRecipient extends StObject {
   
-  var did: js.UndefOr[DID] = js.native
+  var did: js.UndefOr[DID] = js.undefined
   
-  var name: js.UndefOr[AgentName] = js.native
+  var name: js.UndefOr[AgentName] = js.undefined
 }
 object RequestRecipient {
   

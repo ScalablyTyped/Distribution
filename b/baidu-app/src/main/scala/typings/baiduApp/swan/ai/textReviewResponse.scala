@@ -3,16 +3,14 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.anon.Pass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait textReviewResponse extends StObject {
   
-  var log_id: String = js.native
+  var log_id: String
   
   // 唯一的log id，用于问题定位。
-  var result: Pass = js.native
+  var result: Pass
 }
 object textReviewResponse {
   

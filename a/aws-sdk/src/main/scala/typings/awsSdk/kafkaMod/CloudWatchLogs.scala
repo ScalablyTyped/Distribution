@@ -2,15 +2,13 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchLogs extends StObject {
   
-  var Enabled: boolean = js.native
+  var Enabled: boolean
   
-  var LogGroup: js.UndefOr[string] = js.native
+  var LogGroup: js.UndefOr[string] = js.undefined
 }
 object CloudWatchLogs {
   

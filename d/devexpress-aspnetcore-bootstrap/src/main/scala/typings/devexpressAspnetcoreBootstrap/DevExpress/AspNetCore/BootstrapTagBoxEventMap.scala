@@ -2,43 +2,43 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapTagBoxEventMap extends BootstrapClientEditEventMap {
+trait BootstrapTagBoxEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var buttonClick: ButtonEditClickEventArgs = js.native
+  var buttonClick: ButtonEditClickEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var closeUp: EventArgs = js.native
+  var closeUp: EventArgs
   
-  var customHighlighting: ListEditCustomHighlightingEventArgs = js.native
+  var customHighlighting: ListEditCustomHighlightingEventArgs
   
-  var dropDown: EventArgs = js.native
+  var dropDown: EventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var itemFiltering: ListEditItemFilteringEventArgs = js.native
+  var itemFiltering: ListEditItemFilteringEventArgs
   
-  var keyDown: EditKeyEventArgs = js.native
+  var keyDown: EditKeyEventArgs
   
-  var keyPress: EditKeyEventArgs = js.native
+  var keyPress: EditKeyEventArgs
   
-  var keyUp: EditKeyEventArgs = js.native
+  var keyUp: EditKeyEventArgs
   
-  var queryCloseUp: CancelEventArgs = js.native
+  var queryCloseUp: CancelEventArgs
   
-  var selectedIndexChanged: ProcessingModeEventArgs = js.native
+  var selectedIndexChanged: ProcessingModeEventArgs
   
-  var tagsChanged: EventArgs = js.native
+  var tagsChanged: EventArgs
   
-  var textChanged: ProcessingModeEventArgs = js.native
+  var textChanged: ProcessingModeEventArgs
   
-  var userInput: EventArgs = js.native
+  var userInput: EventArgs
 }
 object BootstrapTagBoxEventMap {
   

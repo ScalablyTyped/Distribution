@@ -8,7 +8,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routedButtonMod {
@@ -17,20 +16,19 @@ object routedButtonMod {
   @JSImport("grommet/components/RoutedButton", "RoutedButton")
   @js.native
   class RoutedButton protected ()
-    extends Component[RoutedButtonProps with ButtonProps, ComponentState, js.Any] {
-    def this(props: RoutedButtonProps with ButtonProps) = this()
-    def this(props: RoutedButtonProps with ButtonProps, context: js.Any) = this()
+    extends Component[RoutedButtonProps & ButtonProps, ComponentState, js.Any] {
+    def this(props: RoutedButtonProps & ButtonProps) = this()
+    def this(props: RoutedButtonProps & ButtonProps, context: js.Any) = this()
   }
   @JSImport("grommet/components/RoutedButton", "RoutedButton")
   @js.native
-  val RoutedButton: ComponentClass[RoutedButtonProps with ButtonProps, ComponentState] = js.native
+  val RoutedButton: ComponentClass[RoutedButtonProps & ButtonProps, ComponentState] = js.native
   
-  @js.native
   trait RoutedButtonProps extends StObject {
     
-    var method: js.UndefOr[push | replace] = js.native
+    var method: js.UndefOr[push | replace] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object RoutedButtonProps {
     

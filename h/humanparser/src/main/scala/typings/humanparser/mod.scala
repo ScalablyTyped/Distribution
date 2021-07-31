@@ -3,7 +3,6 @@ package typings.humanparser
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,18 +11,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : HumanparserStatic = js.native
   
-  @js.native
   trait AddressOutput extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var city: String = js.native
+    var city: String
     
-    var fullAddress: String = js.native
+    var fullAddress: String
     
-    var state: String = js.native
+    var state: String
     
-    var zip: String = js.native
+    var zip: String
   }
   object AddressOutput {
     
@@ -53,10 +51,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FullerNameOutput extends StObject {
     
-    var fullName: String = js.native
+    var fullName: String
   }
   object FullerNameOutput {
     
@@ -74,14 +71,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HumanparserStatic extends StObject {
     
-    def getFullestName(name: String): FullerNameOutput = js.native
+    def getFullestName(name: String): FullerNameOutput
     
-    def parseAddress(address: String): AddressOutput = js.native
+    def parseAddress(address: String): AddressOutput
     
-    def parseName(name: String): NameOutput = js.native
+    def parseName(name: String): NameOutput
   }
   object HumanparserStatic {
     
@@ -109,20 +105,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait NameOutput extends StObject {
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var fullName: String = js.native
+    var fullName: String
     
-    var lastName: String = js.native
+    var lastName: String
     
-    var middleName: js.UndefOr[String] = js.native
+    var middleName: js.UndefOr[String] = js.undefined
     
-    var salutation: js.UndefOr[String] = js.native
+    var salutation: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object NameOutput {
     

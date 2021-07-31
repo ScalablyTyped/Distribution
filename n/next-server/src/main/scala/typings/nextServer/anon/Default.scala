@@ -3,13 +3,11 @@ package typings.nextServer.anon
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default[P] extends StObject {
   
-  var default: ComponentType[P] = js.native
+  var default: ComponentType[P]
 }
 object Default {
   
@@ -20,7 +18,7 @@ object Default {
   }
   
   @scala.inline
-  implicit class DefaultMutableBuilder[Self <: Default[_], P] (val x: Self with Default[P]) extends AnyVal {
+  implicit class DefaultMutableBuilder[Self <: Default[?], P] (val x: Self & Default[P]) extends AnyVal {
     
     @scala.inline
     def setDefault(value: ComponentType[P]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])

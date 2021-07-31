@@ -3,50 +3,48 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITensor extends StObject {
   
   /** Tensor boolVal */
-  var boolVal: js.UndefOr[js.Array[Boolean] | Null] = js.native
+  var boolVal: js.UndefOr[js.Array[Boolean] | Null] = js.undefined
   
   /** Tensor doubleVal */
-  var doubleVal: js.UndefOr[js.Array[Double] | Null] = js.native
+  var doubleVal: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** Tensor dtype */
-  var dtype: js.UndefOr[DataType | Null] = js.native
+  var dtype: js.UndefOr[DataType | Null] = js.undefined
   
   /** Tensor floatVal */
-  var floatVal: js.UndefOr[js.Array[Double] | Null] = js.native
+  var floatVal: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** Tensor int64Val */
-  var int64Val: js.UndefOr[(js.Array[Double | String]) | Null] = js.native
+  var int64Val: js.UndefOr[(js.Array[Double | String]) | Null] = js.undefined
   
   /** Tensor intVal */
-  var intVal: js.UndefOr[js.Array[Double] | Null] = js.native
+  var intVal: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** Tensor scomplexVal */
-  var scomplexVal: js.UndefOr[js.Array[Double] | Null] = js.native
+  var scomplexVal: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** Tensor stringVal */
-  var stringVal: js.UndefOr[js.Array[Uint8Array] | Null] = js.native
+  var stringVal: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
   
   /** Tensor tensorContent */
-  var tensorContent: js.UndefOr[Uint8Array | Null] = js.native
+  var tensorContent: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** Tensor tensorShape */
-  var tensorShape: js.UndefOr[ITensorShape | Null] = js.native
+  var tensorShape: js.UndefOr[ITensorShape | Null] = js.undefined
   
   /** Tensor uint32Val */
-  var uint32Val: js.UndefOr[js.Array[Double] | Null] = js.native
+  var uint32Val: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** Tensor uint64Val */
-  var uint64Val: js.UndefOr[(js.Array[Double | String]) | Null] = js.native
+  var uint64Val: js.UndefOr[(js.Array[Double | String]) | Null] = js.undefined
   
   /** Tensor versionNumber */
-  var versionNumber: js.UndefOr[Double | Null] = js.native
+  var versionNumber: js.UndefOr[Double | Null] = js.undefined
 }
 object ITensor {
   

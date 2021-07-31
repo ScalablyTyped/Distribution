@@ -2,21 +2,22 @@ package typings.cardValidator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseDateMod {
   
-  @JSImport("card-validator/dist/lib/parse-date", "parseDate")
+  @JSImport("card-validator/dist/lib/parse-date", JSImport.Namespace)
   @js.native
-  def parseDate(datestring: String): MonthAndYear = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parseDate(datestring: String): MonthAndYear = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(datestring.asInstanceOf[js.Any]).asInstanceOf[MonthAndYear]
+  
   trait MonthAndYear extends StObject {
     
-    var month: String = js.native
+    var month: String
     
-    var year: String = js.native
+    var year: String
   }
   object MonthAndYear {
     

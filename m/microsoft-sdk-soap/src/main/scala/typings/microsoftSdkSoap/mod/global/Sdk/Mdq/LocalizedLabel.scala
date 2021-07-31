@@ -2,21 +2,19 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalizedLabel extends StObject {
   
-  var HasChanged: Boolean = js.native
+  var HasChanged: Boolean
   
-  var IsManaged: Boolean = js.native
+  var IsManaged: Boolean
   
-  var Label: String = js.native
+  var Label: String
   
-  var LangaugeCode: Double = js.native
+  var LangaugeCode: Double
   
-  var MetadataId: String = js.native
+  var MetadataId: String
 }
 object LocalizedLabel {
   

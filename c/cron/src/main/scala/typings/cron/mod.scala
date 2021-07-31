@@ -5,10 +5,13 @@ import typings.moment.mod.Moment
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cron", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cron", "CronJob")
   @js.native
@@ -110,18 +113,18 @@ object mod {
     def this(source: String, zone: String) = this()
     def this(source: Moment, zone: String) = this()
     def this(source: Date, zone: String) = this()
-    def this(source: String, zone: js.UndefOr[scala.Nothing], utcOffset: String) = this()
-    def this(source: String, zone: js.UndefOr[scala.Nothing], utcOffset: Double) = this()
     def this(source: String, zone: String, utcOffset: String) = this()
     def this(source: String, zone: String, utcOffset: Double) = this()
-    def this(source: Moment, zone: js.UndefOr[scala.Nothing], utcOffset: String) = this()
-    def this(source: Moment, zone: js.UndefOr[scala.Nothing], utcOffset: Double) = this()
+    def this(source: String, zone: Unit, utcOffset: String) = this()
+    def this(source: String, zone: Unit, utcOffset: Double) = this()
     def this(source: Moment, zone: String, utcOffset: String) = this()
     def this(source: Moment, zone: String, utcOffset: Double) = this()
-    def this(source: Date, zone: js.UndefOr[scala.Nothing], utcOffset: String) = this()
-    def this(source: Date, zone: js.UndefOr[scala.Nothing], utcOffset: Double) = this()
+    def this(source: Moment, zone: Unit, utcOffset: String) = this()
+    def this(source: Moment, zone: Unit, utcOffset: Double) = this()
     def this(source: Date, zone: String, utcOffset: String) = this()
     def this(source: Date, zone: String, utcOffset: Double) = this()
+    def this(source: Date, zone: Unit, utcOffset: String) = this()
+    def this(source: Date, zone: Unit, utcOffset: Double) = this()
     
     /**
       * Get the number of milliseconds in the future at which to fire our callbacks.
@@ -142,8 +145,7 @@ object mod {
     def sendAt_Moment(): Moment = js.native
   }
   
-  @JSImport("cron", "job")
-  @js.native
+  @scala.inline
   def job(
     cronTime: String | Date | Moment,
     onTick: js.Function0[Unit],
@@ -154,99 +156,85 @@ object mod {
     runOnInit: js.UndefOr[Boolean],
     utcOffset: js.UndefOr[String | Double],
     unrefTimeout: js.UndefOr[Boolean]
-  ): CronJob = js.native
-  @JSImport("cron", "job")
-  @js.native
-  def job(options: CronJobParameters): CronJob = js.native
+  ): CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(cronTime.asInstanceOf[js.Any], onTick.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], start.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], context.asInstanceOf[js.Any], runOnInit.asInstanceOf[js.Any], utcOffset.asInstanceOf[js.Any], unrefTimeout.asInstanceOf[js.Any])).asInstanceOf[CronJob]
+  @scala.inline
+  def job(options: CronJobParameters): CronJob = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(options.asInstanceOf[js.Any]).asInstanceOf[CronJob]
   
-  @JSImport("cron", "sendAt")
-  @js.native
-  def sendAt(cronTime: String): Moment = js.native
-  @JSImport("cron", "sendAt")
-  @js.native
-  def sendAt(cronTime: Moment): Moment = js.native
-  @JSImport("cron", "sendAt")
-  @js.native
-  def sendAt(cronTime: Date): Moment = js.native
+  @scala.inline
+  def sendAt(cronTime: String): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  @scala.inline
+  def sendAt(cronTime: Moment): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  @scala.inline
+  def sendAt(cronTime: Date): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAt")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  @JSImport("cron", "time")
-  @js.native
-  def time(source: String): CronTime = js.native
-  @JSImport("cron", "time")
-  @js.native
-  def time(source: String, zone: String): CronTime = js.native
-  @JSImport("cron", "time")
-  @js.native
-  def time(source: Moment): CronTime = js.native
-  @JSImport("cron", "time")
-  @js.native
-  def time(source: Moment, zone: String): CronTime = js.native
-  @JSImport("cron", "time")
-  @js.native
-  def time(source: Date): CronTime = js.native
-  @JSImport("cron", "time")
-  @js.native
-  def time(source: Date, zone: String): CronTime = js.native
+  @scala.inline
+  def time(source: String): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
+  @scala.inline
+  def time(source: String, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
+  @scala.inline
+  def time(source: Moment): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
+  @scala.inline
+  def time(source: Moment, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
+  @scala.inline
+  def time(source: Date): CronTime = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any]).asInstanceOf[CronTime]
+  @scala.inline
+  def time(source: Date, zone: String): CronTime = (^.asInstanceOf[js.Dynamic].applyDynamic("time")(source.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[CronTime]
   
-  @JSImport("cron", "timeout")
-  @js.native
-  def timeout(cronTime: String): Double = js.native
-  @JSImport("cron", "timeout")
-  @js.native
-  def timeout(cronTime: Moment): Double = js.native
-  @JSImport("cron", "timeout")
-  @js.native
-  def timeout(cronTime: Date): Double = js.native
+  @scala.inline
+  def timeout(cronTime: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def timeout(cronTime: Moment): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def timeout(cronTime: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(cronTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type CronCommand = js.Function0[Unit] | String | Args
   
-  @js.native
   trait CronJobParameters extends StObject {
     
     /**
       * The context within which to execute the onTick method. This defaults to the cronjob itself allowing you to call ```this.stop()```. However, if you change this you'll have access to the functions and values within your context object.
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The time to fire off your job. This can be in the form of cron syntax or a JS ```Date``` object.
       */
-    var cronTime: String | Date | Moment = js.native
+    var cronTime: String | Date | Moment
     
     /**
       * A function that will fire when the job is stopped with ```job.stop()```, and may also be called by ```onTick``` at the end of each run.
       */
-    var onComplete: js.UndefOr[CronCommand | Null] = js.native
+    var onComplete: js.UndefOr[CronCommand | Null] = js.undefined
     
     /**
       * The function to fire at the specified time. If an ```onComplete``` callback was provided, ```onTick``` will receive it as an argument. ```onTick``` may call ```onComplete``` when it has finished its work.
       */
-    var onTick: CronCommand = js.native
+    var onTick: CronCommand
     
     /**
       * This will immediately fire your ```onTick``` function as soon as the requisit initialization has happened. This option is set to ```false``` by default for backwards compatibility.
       */
-    var runOnInit: js.UndefOr[Boolean] = js.native
+    var runOnInit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies whether to start the job just before exiting the constructor. By default this is set to false. If left at default you will need to call ```job.start()``` in order to start the job (assuming ```job``` is the variable you set the cronjob to). This does not immediately fire your ```onTick``` function, it just gives you more control over the behavior of your jobs.
       */
-    var start: js.UndefOr[Boolean] = js.native
+    var start: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the timezone for the execution. This will modify the actual time relative to your timezone. If the timezone is invalid, an error is thrown. You can check all timezones available at [Moment Timezone Website](http://momentjs.com/timezone/). Probably don't use both ```timeZone``` and ```utcOffset``` together or weird things may happen.
       */
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
     
     /**
       * If you have code that keeps the event loop running and want to stop the node process when that finishes regardless of the state of your cronjob, you can do so making use of this parameter. This is off by default and cron will run as if it needs to control the event loop. For more information take a look at [timers#timers_timeout_unref](https://nodejs.org/api/timers.html#timers_timeout_unref) from the NodeJS docs.
       */
-    var unrefTimeout: js.UndefOr[Boolean] = js.native
+    var unrefTimeout: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This allows you to specify the offset of your timezone rather than using the ```timeZone``` param. Probably don't use both ```timeZone``` and ```utcOffset``` together or weird things may happen.
       */
-    var utcOffset: js.UndefOr[String | Double] = js.native
+    var utcOffset: js.UndefOr[String | Double] = js.undefined
   }
   object CronJobParameters {
     

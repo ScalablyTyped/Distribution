@@ -4,7 +4,6 @@ import typings.nodeJsonDb.mod.JsonDB
 import typings.nodeJsonDb.utilsMod.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dbparentdataMod {

@@ -2,7 +2,6 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specified. The `date` and `text` fields typically represent the same date,
   * but are not guaranteed to.
   */
-@js.native
 trait SchemaBirthday extends StObject {
   
   /**
     * The date of the birthday.
     */
-  var date: js.UndefOr[SchemaDate] = js.native
+  var date: js.UndefOr[SchemaDate] = js.undefined
   
   /**
     * Metadata about the birthday.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * A free-form string representing the user&#39;s birthday.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaBirthday {
   

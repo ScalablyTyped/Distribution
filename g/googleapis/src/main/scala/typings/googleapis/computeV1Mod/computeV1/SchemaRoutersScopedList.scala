@@ -3,22 +3,20 @@ package typings.googleapis.computeV1Mod.computeV1
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRoutersScopedList extends StObject {
   
   /**
     * A list of routers contained in this scope.
     */
-  var routers: js.UndefOr[js.Array[SchemaRouter]] = js.native
+  var routers: js.UndefOr[js.Array[SchemaRouter]] = js.undefined
   
   /**
     * Informational warning which replaces the list of routers when the list is
     * empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaRoutersScopedList {
   

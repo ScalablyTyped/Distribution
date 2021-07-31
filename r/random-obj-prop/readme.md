@@ -12,7 +12,7 @@ Get a random property from an object
 | Keywords           | random, randomize, math, object, property, prop, pick, select, choice |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 1172 |
+| # downloads        | 1704 |
 | # stars            | 1 |
 
 ## Links

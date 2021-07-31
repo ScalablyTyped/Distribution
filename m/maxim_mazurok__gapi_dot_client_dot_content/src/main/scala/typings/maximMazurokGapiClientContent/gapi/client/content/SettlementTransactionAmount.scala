@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettlementTransactionAmount extends StObject {
   
-  var commission: js.UndefOr[SettlementTransactionAmountCommission] = js.native
+  var commission: js.UndefOr[SettlementTransactionAmountCommission] = js.undefined
   
   /**
     * The description of the event. Acceptable values are: - "`taxWithhold`" - "`principal`" - "`principalAdjustment`" - "`shippingFee`" - "`merchantRemittedSalesTax`" -
@@ -19,16 +17,16 @@ trait SettlementTransactionAmount extends StObject {
     * - "`transitPackageMissing`" - "`unsuccessfulDeliveryUndeliverable`" - "`wrongChargeInStore`" - "`wrongItem`" - "`returns`" - "`undeliverable`" - "`refundFromMerchant`" -
     * "`returnLabelShippingFee`"
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The amount that contributes to the line item price. */
-  var transactionAmount: js.UndefOr[Price] = js.native
+  var transactionAmount: js.UndefOr[Price] = js.undefined
   
   /**
     * The type of the amount. Acceptable values are: - "`itemPrice`" - "`orderPrice`" - "`refund`" - "`earlyRefund`" - "`courtesyRefund`" - "`returnRefund`" -
     * "`returnLabelShippingFeeAmount`"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SettlementTransactionAmount {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherProfileMobileApplication extends StObject {
   
   /** The app store the app belongs to. */
-  var appStore: js.UndefOr[String] = js.native
+  var appStore: js.UndefOr[String] = js.undefined
   
   /** The external ID for the app from its app store. */
-  var externalAppId: js.UndefOr[String] = js.native
+  var externalAppId: js.UndefOr[String] = js.undefined
   
   /** The name of the app. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object PublisherProfileMobileApplication {
   

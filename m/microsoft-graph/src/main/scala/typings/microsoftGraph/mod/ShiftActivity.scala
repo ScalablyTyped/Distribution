@@ -2,36 +2,34 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShiftActivity extends StObject {
   
   // Customer defined code for the shiftActivity. Required.
-  var code: js.UndefOr[NullableOption[String]] = js.native
+  var code: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the shiftActivity. Required.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The end date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601
     * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'. Required.
     */
-  var endDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether the microsoft.graph.user should be paid for the activity during their shift. Required.
-  var isPaid: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isPaid: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * The start date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601
     * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'. Required.
     */
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var theme: js.UndefOr[ScheduleEntityTheme] = js.native
+  var theme: js.UndefOr[ScheduleEntityTheme] = js.undefined
 }
 object ShiftActivity {
   

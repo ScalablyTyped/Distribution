@@ -2,30 +2,28 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inventory item List Response
   */
-@js.native
 trait SchemaInventoryItemsListResponse extends StObject {
   
   /**
     * Inventory item collection
     */
-  var inventoryItems: js.UndefOr[js.Array[SchemaInventoryItem]] = js.native
+  var inventoryItems: js.UndefOr[js.Array[SchemaInventoryItem]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#inventoryItemsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaInventoryItemsListResponse {
   

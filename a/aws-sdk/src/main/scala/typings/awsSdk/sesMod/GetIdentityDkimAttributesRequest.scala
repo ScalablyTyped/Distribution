@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityDkimAttributesRequest extends StObject {
   
   /**
     * A list of one or more verified identities - email addresses, domains, or both.
     */
-  var Identities: IdentityList = js.native
+  var Identities: IdentityList
 }
 object GetIdentityDkimAttributesRequest {
   

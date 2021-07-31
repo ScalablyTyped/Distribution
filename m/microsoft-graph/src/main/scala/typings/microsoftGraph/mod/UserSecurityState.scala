@@ -2,62 +2,60 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSecurityState extends StObject {
   
   // AAD User object identifier (GUID) - represents the physical/multi-account user entity.
-  var aadUserId: js.UndefOr[NullableOption[String]] = js.native
+  var aadUserId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
-  var accountName: js.UndefOr[NullableOption[String]] = js.native
+  var accountName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // NetBIOS/Active Directory domain of user account (that is, domain/account format).
-  var domainName: js.UndefOr[NullableOption[String]] = js.native
+  var domainName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For email-related alerts - user account's email 'role'. Possible values are: unknown, sender, recipient.
-  var emailRole: js.UndefOr[NullableOption[EmailRole]] = js.native
+  var emailRole: js.UndefOr[NullableOption[EmailRole]] = js.undefined
   
   // Indicates whether the user logged on through a VPN.
-  var isVpn: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isVpn: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Time at which the sign-in occurred. The Timestamp type represents date and time information using ISO 8601 format and
     * is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
     */
-  var logonDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var logonDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // User sign-in ID.
-  var logonId: js.UndefOr[NullableOption[String]] = js.native
+  var logonId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // IP Address the sign-in request originated from.
-  var logonIp: js.UndefOr[NullableOption[String]] = js.native
+  var logonIp: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Location (by IP address mapping) associated with a user sign-in event by this user.
-  var logonLocation: js.UndefOr[NullableOption[String]] = js.native
+  var logonLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Method of user sign in. Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
-  var logonType: js.UndefOr[NullableOption[LogonType]] = js.native
+  var logonType: js.UndefOr[NullableOption[LogonType]] = js.undefined
   
   // Active Directory (on-premises) Security Identifier (SID) of the user.
-  var onPremisesSecurityIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var onPremisesSecurityIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Provider-generated/calculated risk score of the user account. Recommended value range of 0-1, which equates to a
     * percentage.
     */
-  var riskScore: js.UndefOr[NullableOption[String]] = js.native
+  var riskScore: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * User account type (group membership), per Windows definition. Possible values are: unknown, standard, power,
     * administrator.
     */
-  var userAccountType: js.UndefOr[NullableOption[UserAccountSecurityType]] = js.native
+  var userAccountType: js.UndefOr[NullableOption[UserAccountSecurityType]] = js.undefined
   
   // User sign-in name - internet format: (user account name)@(user account DNS domain name).
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object UserSecurityState {
   

@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEdit extends StObject {
   
-  var limChar: Double = js.native
+  var limChar: Double
   
-  var minChar: Double = js.native
+  var minChar: Double
   
-  var text: String = js.native
+  var text: String
 }
 object TextEdit {
   

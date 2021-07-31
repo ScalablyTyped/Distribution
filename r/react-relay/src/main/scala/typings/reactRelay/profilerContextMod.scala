@@ -3,7 +3,6 @@ package typings.reactRelay
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object profilerContextMod {
@@ -12,10 +11,9 @@ object profilerContextMod {
   @js.native
   val ProfilerContext: Context[ProfilerContextType] = js.native
   
-  @js.native
   trait ProfilerContextType extends StObject {
     
-    def wrapPrepareQueryResource[T](cb: js.Function0[T]): T = js.native
+    def wrapPrepareQueryResource[T](cb: js.Function0[T]): T
   }
   object ProfilerContextType {
     

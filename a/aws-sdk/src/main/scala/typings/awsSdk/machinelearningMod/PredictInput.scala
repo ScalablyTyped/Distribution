@@ -2,20 +2,18 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredictInput extends StObject {
   
   /**
     * A unique identifier of the MLModel.
     */
-  var MLModelId: EntityId = js.native
+  var MLModelId: EntityId
   
-  var PredictEndpoint: VipURL = js.native
+  var PredictEndpoint: VipURL
   
-  var Record: typings.awsSdk.machinelearningMod.Record = js.native
+  var Record: typings.awsSdk.machinelearningMod.Record
 }
 object PredictInput {
   

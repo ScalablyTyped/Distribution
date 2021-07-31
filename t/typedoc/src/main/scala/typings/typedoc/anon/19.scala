@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.tsconfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `19` extends StObject {
   
-  var name: tsconfig = js.native
+  var name: tsconfig
 }
 object `19` {
   
   @scala.inline
-  def apply(name: tsconfig): `19` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `19` = {
+    val __obj = js.Dynamic.literal(name = "tsconfig")
     __obj.asInstanceOf[`19`]
   }
   

@@ -4,21 +4,24 @@ import typings.rcDialog.idialogproptypesMod.IDialogPropTypes
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogMod {
   
-  @JSImport("rc-dialog/es/Dialog", JSImport.Default)
+  @JSImport("rc-dialog/es/Dialog", JSImport.Namespace)
   @js.native
-  def default(props: IDialogChildProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait IDialogChildProps extends IDialogPropTypes {
+  @scala.inline
+  def default(props: IDialogChildProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  trait IDialogChildProps
+    extends StObject
+       with IDialogPropTypes {
     
-    def getOpenCount(): Double = js.native
+    def getOpenCount(): Double
     
-    var switchScrollingEffect: js.UndefOr[js.Function0[Unit]] = js.native
+    var switchScrollingEffect: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IDialogChildProps {
     

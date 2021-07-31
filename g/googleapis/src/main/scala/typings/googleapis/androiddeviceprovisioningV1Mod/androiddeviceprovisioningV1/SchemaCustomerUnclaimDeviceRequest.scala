@@ -2,19 +2,17 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for customer to unclaim a device.
   */
-@js.native
 trait SchemaCustomerUnclaimDeviceRequest extends StObject {
   
   /**
     * Required. The device to unclaim.
     */
-  var device: js.UndefOr[SchemaDeviceReference] = js.native
+  var device: js.UndefOr[SchemaDeviceReference] = js.undefined
 }
 object SchemaCustomerUnclaimDeviceRequest {
   

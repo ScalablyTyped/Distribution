@@ -7,11 +7,12 @@ import typings.ts3NodejsLibrary.responseTypesMod.Version
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instantiable extends Instantiable0[Command] {
+trait Instantiable
+  extends StObject
+     with Instantiable0[Command] {
   
   val Identifier: Apikey = js.native
   

@@ -4,17 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(stream: Stream): Cursor = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Cursor]
+  @scala.inline
+  def apply(stream: Stream, options: CursorOptions): Cursor = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor]
+  
   @JSImport("ansi", JSImport.Namespace)
   @js.native
-  def apply(stream: Stream): Cursor = js.native
-  @JSImport("ansi", JSImport.Namespace)
-  @js.native
-  def apply(stream: Stream, options: CursorOptions): Cursor = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The `Colorer` class manages both the background and foreground colors.
@@ -22,7 +23,8 @@ object mod {
   @JSImport("ansi", "Colorer")
   @js.native
   class Colorer protected ()
-    extends /* key */ StringDictionary[js.Function1[/* repeated */ js.Any, Cursor | Colorer]] {
+    extends StObject
+       with /* key */ StringDictionary[js.Function1[/* repeated */ js.Any, Cursor | Colorer]] {
     def this(cursor: Cursor, base: String) = this()
     
     /**
@@ -85,7 +87,8 @@ object mod {
   @JSImport("ansi", "Cursor")
   @js.native
   class Cursor protected ()
-    extends /* key */ StringDictionary[(js.Function1[/* repeated */ js.Any, Cursor]) | Colorer] {
+    extends StObject
+       with /* key */ StringDictionary[(js.Function1[/* repeated */ js.Any, Cursor]) | Colorer] {
     def this(stream: Stream) = this()
     def this(stream: Stream, options: CursorOptions) = this()
     
@@ -150,9 +153,9 @@ object mod {
       * Moves cursor to specific position
       */
     def goto(): Cursor = js.native
-    def goto(x: js.UndefOr[scala.Nothing], y: Double): Cursor = js.native
     def goto(x: Double): Cursor = js.native
     def goto(x: Double, y: Double): Cursor = js.native
+    def goto(x: Unit, y: Double): Cursor = js.native
     
     def green(): Cursor = js.native
     
@@ -227,12 +230,11 @@ object mod {
     def yellow(): Cursor = js.native
   }
   
-  @js.native
   trait CursorOptions extends StObject {
     
-    var buffering: Boolean = js.native
+    var buffering: Boolean
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
   }
   object CursorOptions {
     

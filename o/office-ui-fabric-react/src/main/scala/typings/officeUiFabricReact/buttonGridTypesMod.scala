@@ -10,96 +10,95 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonGridTypesMod {
   
-  @js.native
   trait IButtonGrid extends StObject
   
-  @js.native
-  trait IButtonGridProps extends TableHTMLAttributes[HTMLTableElement] {
+  trait IButtonGridProps
+    extends StObject
+       with TableHTMLAttributes[HTMLTableElement] {
     
     /**
       * Position this ButtonGrid is in the parent set (index in a parent menu, for example)
       */
-    var ariaPosInSet: js.UndefOr[Double] = js.native
+    var ariaPosInSet: js.UndefOr[Double] = js.undefined
     
     /**
       * Size of the parent set (size of parent menu, for example)
       */
-    var ariaSetSize: js.UndefOr[Double] = js.native
+    var ariaSetSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of columns.
       */
-    var columnCount: Double = js.native
+    var columnCount: Double
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IButtonGrid]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IButtonGrid]] = js.undefined
     
     /**
       * Class name for the FocusZone container for the ButtonGrid.
       * @deprecated Use `styles.focusedContainer` to define styling for the focus zone container
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * If false (the default), the ButtonGrid is contained inside a FocusZone.
       * If true, a FocusZone is not used.
       * @default false
       */
-    var doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.native
+    var doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Items to display in a ButtonGrid with the specified number of columns.
       */
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any]
     
     /**
       * Handler for when focus leaves the ButtonGrid.
       */
     @JSName("onBlur")
-    var onBlur_IButtonGridProps: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur_IButtonGridProps: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Custom renderer for the individual items.
       */
-    def onRenderItem(item: js.Any, index: Double): Element = js.native
+    def onRenderItem(item: js.Any, index: Double): Element
     
     /**
       * @deprecated Use `ariaPosInSet`
       */
-    var positionInSet: js.UndefOr[Double] = js.native
+    var positionInSet: js.UndefOr[Double] = js.undefined
     
     /**
       * @deprecated Use `ariaSetSize`
       */
-    var setSize: js.UndefOr[Double] = js.native
+    var setSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether focus should cycle back to the beginning once the user navigates past the end (and vice versa).
       * Only relevant if `doNotContainWithinFocusZone` is not true.
       */
-    var shouldFocusCircularNavigate: js.UndefOr[Boolean] = js.native
+    var shouldFocusCircularNavigate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional styles for the component.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IButtonGridStyleProps, IButtonGridStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IButtonGridStyleProps, IButtonGridStyles]] = js.undefined
     
     /**
       * Theme to apply to the component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IButtonGridProps {
     
     @scala.inline
-    def apply(columnCount: Double, items: js.Array[_], onRenderItem: (js.Any, Double) => Element): IButtonGridProps = {
+    def apply(columnCount: Double, items: js.Array[js.Any], onRenderItem: (js.Any, Double) => Element): IButtonGridProps = {
       val __obj = js.Dynamic.literal(columnCount = columnCount.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction2(onRenderItem))
       __obj.asInstanceOf[IButtonGridProps]
     }
@@ -144,7 +143,7 @@ object buttonGridTypesMod {
       def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
@@ -193,13 +192,12 @@ object buttonGridTypesMod {
     }
   }
   
-  @js.native
   trait IButtonGridStyleProps extends StObject {
     
     /**
       * Theme to apply to the ButtonGrid.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IButtonGridStyleProps {
     
@@ -217,23 +215,22 @@ object buttonGridTypesMod {
     }
   }
   
-  @js.native
   trait IButtonGridStyles extends StObject {
     
     /**
       * Style for the FocusZone container for the ButtonGrid.
       */
-    var focusedContainer: js.UndefOr[IStyle] = js.native
+    var focusedContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the table container of a ButtonGrid.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Style for the table cells of the ButtonGrid.
       */
-    var tableCell: IStyle = js.native
+    var tableCell: IStyle
   }
   object IButtonGridStyles {
     

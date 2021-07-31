@@ -5,10 +5,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("simplesmtp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("simplesmtp", "SMTPServer")
   @js.native
@@ -38,10 +41,7 @@ object mod {
   class SimpleServer () extends EventEmitter {
     def this(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
     def this(options: SmtpServerOptions) = this()
-    def this(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* connection */ SimpleServerConnection, Unit]
-    ) = this()
+    def this(options: Unit, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
     def this(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
     
     /**
@@ -57,27 +57,21 @@ object mod {
     var server: SMTPServer = js.native
   }
   
-  @JSImport("simplesmtp", "createSimpleServer")
-  @js.native
-  def createSimpleServer(): SimpleServer = js.native
-  @JSImport("simplesmtp", "createSimpleServer")
-  @js.native
-  def createSimpleServer(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = js.native
-  @JSImport("simplesmtp", "createSimpleServer")
-  @js.native
-  def createSimpleServer(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* connection */ SimpleServerConnection, Unit]
-  ): SimpleServer = js.native
-  @JSImport("simplesmtp", "createSimpleServer")
-  @js.native
-  def createSimpleServer(options: SmtpServerOptions): SimpleServer = js.native
-  @JSImport("simplesmtp", "createSimpleServer")
-  @js.native
-  def createSimpleServer(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = js.native
+  @scala.inline
+  def createSimpleServer(): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")().asInstanceOf[SimpleServer]
+  @scala.inline
+  def createSimpleServer(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(callback.asInstanceOf[js.Any]).asInstanceOf[SimpleServer]
+  @scala.inline
+  def createSimpleServer(options: Unit, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[SimpleServer]
+  @scala.inline
+  def createSimpleServer(options: SmtpServerOptions): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any]).asInstanceOf[SimpleServer]
+  @scala.inline
+  def createSimpleServer(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[SimpleServer]
   
   @js.native
-  trait SimpleServerConnection extends ReadableStream {
+  trait SimpleServerConnection
+    extends StObject
+       with ReadableStream {
     
     /**
       * Accept the message with the selected ID
@@ -112,78 +106,77 @@ object mod {
     var to: js.Array[String] = js.native
   }
   
-  @js.native
   trait SmtpServerOptions extends StObject {
     
     /**
       * greeting banner that is sent to the client on connection
       */
-    var SMTPBanner: js.UndefOr[String] = js.native
+    var SMTPBanner: js.UndefOr[String] = js.undefined
     
     /**
       * allowed authentication methods, defaults to <code>['PLAIN', 'LOGIN']</code>
       */
-    var authMethods: js.UndefOr[js.Array[String]] = js.native
+    var authMethods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * TLS credentials
       */
-    var credentials: js.UndefOr[js.Any] = js.native
+    var credentials: js.UndefOr[js.Any] = js.undefined
     
     /**
       * if set to true, print out messages about the connection
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if set, do not validate sender domains
       */
-    var disableDNSValidation: js.UndefOr[Boolean] = js.native
+    var disableDNSValidation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if set, support HELO only
       */
-    var disableEHLO: js.UndefOr[Boolean] = js.native
+    var disableEHLO: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if set to true, client may authenticate itself but don't have to
       */
-    var enableAuthentication: js.UndefOr[Boolean] = js.native
+    var enableAuthentication: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if set, allow client do not use STARTTLS
       */
-    var ignoreTLS: js.UndefOr[Boolean] = js.native
+    var ignoreTLS: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if set, limit the number of simultaneous connections to the server
       */
-    var maxClients: js.UndefOr[Double] = js.native
+    var maxClients: js.UndefOr[Double] = js.undefined
     
     /**
       * maximum size of an e-mail in bytes
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
       * the hostname of the server, will be used for informational messages
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * if set to true, require that the client must authenticate itself
       */
-    var requireAuthentication: js.UndefOr[Boolean] = js.native
+    var requireAuthentication: js.UndefOr[Boolean] = js.undefined
     
     /**
       * start a server on secure connection
       */
-    var secureConnection: js.UndefOr[Boolean] = js.native
+    var secureConnection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * client timeout in milliseconds, defaults to 60 000
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object SmtpServerOptions {
     

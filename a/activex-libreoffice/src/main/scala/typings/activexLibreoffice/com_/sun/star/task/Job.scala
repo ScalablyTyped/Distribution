@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloseListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,10 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see AsyncJob
   * @since OOo 1.1.2
   */
-@js.native
 trait Job
-  extends XCloseable
+  extends StObject
      with XJob
+     with XCloseable
 object Job {
   
   @scala.inline

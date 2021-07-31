@@ -8,24 +8,23 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("architect", "createApp")
+  @JSImport("architect", JSImport.Namespace)
   @js.native
-  def createApp(config: Config): Architect = js.native
-  @JSImport("architect", "createApp")
-  @js.native
-  def createApp(config: Config, callback: js.Function2[/* err */ Error, /* app */ Architect, Unit]): Architect = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("architect", "loadConfig")
-  @js.native
-  def loadConfig(configPath: String): Unit = js.native
-  @JSImport("architect", "loadConfig")
-  @js.native
-  def loadConfig(configPath: String, callback: js.Function2[/* err */ Error, /* config */ Config, Unit]): Unit = js.native
+  @scala.inline
+  def createApp(config: Config): Architect = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any]).asInstanceOf[Architect]
+  @scala.inline
+  def createApp(config: Config, callback: js.Function2[/* err */ Error, /* app */ Architect, Unit]): Architect = (^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Architect]
+  
+  @scala.inline
+  def loadConfig(configPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def loadConfig(configPath: String, callback: js.Function2[/* err */ Error, /* config */ Config, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Architect extends EventEmitter {

@@ -3,7 +3,6 @@ package typings.socketcluster
 import typings.socketcluster.mod.ColorCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socketclusterStrings {
@@ -39,7 +38,9 @@ object socketclusterStrings {
   def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
-  sealed trait green extends ColorCodes
+  sealed trait green
+    extends StObject
+       with ColorCodes
   @scala.inline
   def green: green = "green".asInstanceOf[green]
   
@@ -54,7 +55,9 @@ object socketclusterStrings {
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait red extends ColorCodes
+  sealed trait red
+    extends StObject
+       with ColorCodes
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   
@@ -94,7 +97,9 @@ object socketclusterStrings {
   def workerStart: workerStart = "workerStart".asInstanceOf[workerStart]
   
   @js.native
-  sealed trait yellow extends ColorCodes
+  sealed trait yellow
+    extends StObject
+       with ColorCodes
   @scala.inline
   def yellow: yellow = "yellow".asInstanceOf[yellow]
 }

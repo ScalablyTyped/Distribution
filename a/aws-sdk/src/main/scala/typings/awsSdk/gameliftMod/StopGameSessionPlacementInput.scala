@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopGameSessionPlacementInput extends StObject {
   
   /**
     * A unique identifier for a game session placement to cancel.
     */
-  var PlacementId: IdStringModel = js.native
+  var PlacementId: IdStringModel
 }
 object StopGameSessionPlacementInput {
   

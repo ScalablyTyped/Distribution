@@ -8,30 +8,27 @@ import typings.awsSdkClientCodecommitNode.postCommentForComparedCommitExceptions
 import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommitIdRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommitIdRequiredExceptionDetails> * / any */ @js.native
-  trait CommitIdRequiredException
-    extends CreateBranchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommitIdRequiredExceptionDetails> * / any */ trait CommitIdRequiredException
+    extends StObject
+       with CreateBranchExceptionsUnion
        with GetCommentsForComparedCommitExceptionsUnion
        with GetCommentsForPullRequestExceptionsUnion
        with GetCommitExceptionsUnion
        with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitIdRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitIdRequiredException
   }
   object CommitIdRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitIdRequiredException
-    ): CommitIdRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): CommitIdRequiredException = {
+      val __obj = js.Dynamic.literal(name = "CommitIdRequiredException")
       __obj.asInstanceOf[CommitIdRequiredException]
     }
     
@@ -45,6 +42,5 @@ object typesCommitIdRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait CommitIdRequiredExceptionDetails extends StObject
 }

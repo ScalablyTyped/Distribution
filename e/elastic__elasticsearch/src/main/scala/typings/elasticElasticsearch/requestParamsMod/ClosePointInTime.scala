@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClosePointInTime[T] extends Generic {
+trait ClosePointInTime[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
 }
 object ClosePointInTime {
   
@@ -19,7 +19,7 @@ object ClosePointInTime {
   }
   
   @scala.inline
-  implicit class ClosePointInTimeMutableBuilder[Self <: ClosePointInTime[_], T] (val x: Self with ClosePointInTime[T]) extends AnyVal {
+  implicit class ClosePointInTimeMutableBuilder[Self <: ClosePointInTime[?], T] (val x: Self & ClosePointInTime[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

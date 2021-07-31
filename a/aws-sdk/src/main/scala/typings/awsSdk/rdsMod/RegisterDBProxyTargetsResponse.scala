@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterDBProxyTargetsResponse extends StObject {
   
   /**
     * One or more DBProxyTarget objects that are created when you register targets with a target group.
     */
-  var DBProxyTargets: js.UndefOr[TargetList] = js.native
+  var DBProxyTargets: js.UndefOr[TargetList] = js.undefined
 }
 object RegisterDBProxyTargetsResponse {
   

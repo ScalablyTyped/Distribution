@@ -2,21 +2,19 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValidatorOwner extends StObject {
   
-  def getDataFilteredProperties(): js.Any = js.native
+  def getDataFilteredProperties(): js.Any
   
-  def getDataFilteredValues(): js.Any = js.native
+  def getDataFilteredValues(): js.Any
   
-  def getValidatorTitle(): String = js.native
+  def getValidatorTitle(): String
   
-  def getValidators(): js.Array[SurveyValidator] = js.native
+  def getValidators(): js.Array[SurveyValidator]
   
-  var validatedValue: js.Any = js.native
+  var validatedValue: js.Any
 }
 object IValidatorOwner {
   

@@ -9,47 +9,49 @@ import typings.reactHotLoader.anon.PartialConfig
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-hot-loader", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-hot-loader", "AppContainer")
   @js.native
   class AppContainer protected ()
-    extends Component[AppContainerProps with AppChildren, js.Object, js.Any] {
-    def this(props: AppContainerProps with AppChildren) = this()
+    extends Component[AppContainerProps & AppChildren, js.Object, js.Any] {
+    def this(props: AppContainerProps & AppChildren) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AppContainerProps with AppChildren, context: js.Any) = this()
+    def this(props: AppContainerProps & AppChildren, context: js.Any) = this()
   }
   
-  @JSImport("react-hot-loader", "areComponentsEqual")
-  @js.native
-  def areComponentsEqual[T](typeA: ComponentType[T], typeB: ComponentType[T]): Boolean = js.native
+  @scala.inline
+  def areComponentsEqual[T](typeA: ComponentType[T], typeB: ComponentType[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areComponentsEqual")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-hot-loader", "cold")
-  @js.native
-  def cold[T](component: T): T = js.native
+  @scala.inline
+  def cold[T](component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cold")(component.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("react-hot-loader", "hot")
-  @js.native
+  @scala.inline
   def hot(module: js.Any): js.Function2[
-    /* Component */ ComponentType[_], 
+    /* Component */ ComponentType[js.Any], 
     /* props */ js.UndefOr[AppContainerProps], 
-    ComponentType[_]
-  ] = js.native
+    ComponentType[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hot")(module.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* Component */ ComponentType[js.Any], 
+    /* props */ js.UndefOr[AppContainerProps], 
+    ComponentType[js.Any]
+  ]]
   
-  @JSImport("react-hot-loader", "setConfig")
-  @js.native
-  def setConfig(config: PartialConfig): Unit = js.native
+  @scala.inline
+  def setConfig(config: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait AppChildren extends StObject {
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
   }
   object AppChildren {
     
@@ -70,12 +72,11 @@ object mod {
     }
   }
   
-  @js.native
   trait AppContainerProps extends StObject {
     
-    var errorBoundary: js.UndefOr[Boolean] = js.native
+    var errorBoundary: js.UndefOr[Boolean] = js.undefined
     
-    var errorReporter: js.UndefOr[ComponentType[ErrorReporterProps]] = js.native
+    var errorReporter: js.UndefOr[ComponentType[ErrorReporterProps]] = js.undefined
   }
   object AppContainerProps {
     
@@ -102,56 +103,55 @@ object mod {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
     /**
       * Global error overlay
       */
-    var ErrorOverlay: ComponentType[Errors] = js.native
+    var ErrorOverlay: ComponentType[Errors]
     
     /**
       * Allows SFC to be used, enables "intermediate" components used by Relay, should be disabled for Preact
       */
-    var allowSFC: Boolean = js.native
+    var allowSFC: Boolean
     
     /**
       * Disable "hot-replacement-render"
       */
-    var disableHotRenderer: Boolean = js.native
+    var disableHotRenderer: Boolean
     
     /**
       * Disable "hot-replacement-render" when injection into react-dom are made
       */
-    var disableHotRendererWhenInjected: Boolean = js.native
+    var disableHotRendererWhenInjected: Boolean
     
     /**
       * default value for AppContainer errorOverlay
       */
-    var errorReporter: ComponentType[HotError] = js.native
+    var errorReporter: ComponentType[HotError]
     
     /**
       * flag to completely disable RHL for Components
       */
-    var ignoreComponents: Boolean = js.native
+    var ignoreComponents: Boolean
     
     /**
       * flag to completely disable RHL for SFC
       */
-    var ignoreSFC: Boolean = js.native
+    var ignoreSFC: Boolean
     
     /**
       * Specify loglLevel, default to 'error', set it to false to disable logs.
       * Available levels: ['debug', 'log', 'warn', 'error']
       */
-    var logLevel: String = js.native
+    var logLevel: String
     
     /**
       *
       * @param type {any} type being rendered. The first argument of React.createElement
       * @param displayName {string} type display name (if exists)
       */
-    def onComponentCreate(`type`: js.Any, displayName: String): js.Any = js.native
+    def onComponentCreate(`type`: js.Any, displayName: String): js.Any
     
     /**
       *
@@ -160,32 +160,32 @@ object mod {
       * @param {string} fileName - origin file
       * @return {any}
       */
-    def onComponentRegister(`type`: js.Any, uniqueLocalName: String, fileName: String): js.Any = js.native
+    def onComponentRegister(`type`: js.Any, uniqueLocalName: String, fileName: String): js.Any
     
     /**
       * keep render method unpatched, moving sideEffect to componentDidUpdate
       */
-    var pureRender: Boolean = js.native
+    var pureRender: Boolean
     
     /**
       *  Allows using SFC without changes. leading to some components not updated
       */
-    var pureSFC: Boolean = js.native
+    var pureSFC: Boolean
     
     /**
       * enables or disables hooks treatment
       */
-    var reloadHooks: Boolean = js.native
+    var reloadHooks: Boolean
     
     /**
       * Show "hot-loader/react-dom" warning
       */
-    var showReactDomPatchNotification: Boolean = js.native
+    var showReactDomPatchNotification: Boolean
     
     /**
       * Controls tail(deferred) update checking
       */
-    var trackTailUpdates: Boolean = js.native
+    var trackTailUpdates: Boolean
   }
   object Config {
     
@@ -261,10 +261,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ErrorReporterProps extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
   }
   object ErrorReporterProps {
     
@@ -282,12 +281,11 @@ object mod {
     }
   }
   
-  @js.native
   trait HotError extends StObject {
     
-    var error: Error = js.native
+    var error: Error
     
-    var errorInfo: js.UndefOr[ErrorInfo] = js.native
+    var errorInfo: js.UndefOr[ErrorInfo] = js.undefined
   }
   object HotError {
     

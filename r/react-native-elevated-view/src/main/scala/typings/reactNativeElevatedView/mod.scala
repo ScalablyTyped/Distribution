@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,10 +15,11 @@ object mod {
   
   type ElevatedView = Component[ElevatedViewProperties, js.Object, js.Any]
   
-  @js.native
-  trait ElevatedViewProperties extends ViewProps {
+  trait ElevatedViewProperties
+    extends StObject
+       with ViewProps {
     
-    var elevation: js.UndefOr[Double] = js.native
+    var elevation: js.UndefOr[Double] = js.undefined
   }
   object ElevatedViewProperties {
     

@@ -3,24 +3,22 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for google.datastore.admin.v1.DatastoreAdmin.ExportEntities.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1ExportEntitiesRequest extends StObject {
   
   /**
     * Description of what data from the project is included in the export.
     */
-  var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1EntityFilter] = js.native
+  var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1EntityFilter] = js.undefined
   
   /**
     * Client-assigned labels.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Location for the export metadata and data files.  The full resource URL
@@ -38,7 +36,7 @@ trait SchemaGoogleDatastoreAdminV1ExportEntitiesRequest extends StObject {
     * nesting the data files deeper, the same Cloud Storage bucket can be used
     * in multiple ExportEntities operations without conflict.
     */
-  var outputUrlPrefix: js.UndefOr[String] = js.native
+  var outputUrlPrefix: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1ExportEntitiesRequest {
   

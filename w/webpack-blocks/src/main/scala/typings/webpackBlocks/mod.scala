@@ -13,227 +13,205 @@ import typings.webpackBlocksWebpack.mod.ConstantOptions
 import typings.webpackBlocksWebpack.mod.OptimizationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-blocks", "addPlugins")
+  @JSImport("webpack-blocks", JSImport.Namespace)
   @js.native
-  def addPlugins(plugins: js.Array[Plugin]): Block[Context] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def addPlugins(plugins: js.Array[Plugin]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
   object babel {
     
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: typings.webpackBlocksBabel.mod.babel): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("webpack-blocks", "babel")
     @js.native
-    def apply(): js.Any = js.native
-    @JSImport("webpack-blocks", "babel")
-    @js.native
-    def apply(options: typings.webpackBlocksBabel.mod.babel): js.Any = js.native
+    val ^ : js.Any = js.native
   }
   
-  @JSImport("webpack-blocks", "createConfig")
-  @js.native
-  def createConfig(configSetters: js.Array[Block[Context]]): js.Any = js.native
-  @JSImport("webpack-blocks", "createConfig")
-  @js.native
-  def createConfig(configSetters: Block[Context]): js.Any = js.native
+  @scala.inline
+  def createConfig(configSetters: js.Array[Block[Context]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(configSetters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def createConfig(configSetters: Block[Context]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(configSetters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object css {
     
-    @JSImport("webpack-blocks", "css")
-    @js.native
-    def apply(): js.Any = js.native
-    @JSImport("webpack-blocks", "css")
-    @js.native
-    def apply(options: CssOptions): js.Any = js.native
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: CssOptions): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("webpack-blocks", "css.modules")
+    @JSImport("webpack-blocks", "css")
     @js.native
-    def modules(): js.Any = js.native
-    @JSImport("webpack-blocks", "css.modules")
-    @js.native
-    def modules(options: ModuleOptions): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def modules(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")().asInstanceOf[js.Any]
+    @scala.inline
+    def modules(options: ModuleOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("modules")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @JSImport("webpack-blocks", "customConfig")
-  @js.native
-  def customConfig(wpConfig: js.Any): js.Any = js.native
+  @scala.inline
+  def customConfig(wpConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("customConfig")(wpConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("webpack-blocks", "defineConstants")
-  @js.native
-  def defineConstants(constants: ConstantOptions): Block[Context] = js.native
+  @scala.inline
+  def defineConstants(constants: ConstantOptions): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConstants")(constants.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
   object devServer {
     
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: Unit, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: Unit, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: Options, entry: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: Options, entry: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
     @JSImport("webpack-blocks", "devServer")
     @js.native
-    def apply(): js.Any = js.native
-    @JSImport("webpack-blocks", "devServer")
-    @js.native
-    def apply(options: js.UndefOr[scala.Nothing], entry: String): js.Any = js.native
-    @JSImport("webpack-blocks", "devServer")
-    @js.native
-    def apply(options: js.UndefOr[scala.Nothing], entry: js.Array[String]): js.Any = js.native
-    @JSImport("webpack-blocks", "devServer")
-    @js.native
-    def apply(options: Options): js.Any = js.native
-    @JSImport("webpack-blocks", "devServer")
-    @js.native
-    def apply(options: Options, entry: String): js.Any = js.native
-    @JSImport("webpack-blocks", "devServer")
-    @js.native
-    def apply(options: Options, entry: js.Array[String]): js.Any = js.native
+    val ^ : js.Any = js.native
   }
   
-  @JSImport("webpack-blocks", "entryPoint")
-  @js.native
-  def entryPoint(entry: String): Block[Context] = js.native
-  @JSImport("webpack-blocks", "entryPoint")
-  @js.native
+  @scala.inline
+  def entryPoint(entry: String): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("entryPoint")(entry.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
+  @scala.inline
   def entryPoint(
     entry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry */ js.Any
-  ): Block[Context] = js.native
-  @JSImport("webpack-blocks", "entryPoint")
-  @js.native
-  def entryPoint(entry: js.Array[String]): Block[Context] = js.native
+  ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("entryPoint")(entry.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
+  @scala.inline
+  def entryPoint(entry: js.Array[String]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("entryPoint")(entry.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "env")
-  @js.native
-  def env(envName: String, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+  @scala.inline
+  def env(envName: String, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("env")(envName.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "extractText")
-  @js.native
-  def extractText(): js.Any = js.native
-  @JSImport("webpack-blocks", "extractText")
-  @js.native
-  def extractText(outputFilePattern: String): js.Any = js.native
+  @scala.inline
+  def extractText(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractText")().asInstanceOf[js.Any]
+  @scala.inline
+  def extractText(outputFilePattern: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractText")(outputFilePattern.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("webpack-blocks", "file")
-  @js.native
-  def file(): js.Any = js.native
-  @JSImport("webpack-blocks", "file")
-  @js.native
-  def file(options: FileOptions): js.Any = js.native
+  @scala.inline
+  def file(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[js.Any]
+  @scala.inline
+  def file(options: FileOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("webpack-blocks", "group")
-  @js.native
-  def group(configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+  @scala.inline
+  def group(configSetters: js.Array[Block[Context]]): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("group")(configSetters.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "optimization")
-  @js.native
-  def optimization(optimizationOptions: OptimizationOptions): Block[Context] = js.native
+  @scala.inline
+  def `match`(test: String, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+  @scala.inline
+  def `match`(test: String, options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+  @scala.inline
+  def `match`(test: js.Array[String], configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
+  @scala.inline
+  def `match`(test: js.Array[String], options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(test.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "performance")
-  @js.native
+  @scala.inline
+  def optimization(optimizationOptions: OptimizationOptions): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("optimization")(optimizationOptions.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
+  
+  @scala.inline
   def performance(
     performanceBudget: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options.Performance */ js.Any
-  ): Block[Context] = js.native
+  ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("performance")(performanceBudget.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
   object postcss {
     
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: typings.webpackBlocksPostcss.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("webpack-blocks", "postcss")
     @js.native
-    def apply(): js.Any = js.native
-    @JSImport("webpack-blocks", "postcss")
-    @js.native
-    def apply(options: typings.webpackBlocksPostcss.mod.Options): js.Any = js.native
+    val ^ : js.Any = js.native
   }
   
-  @JSImport("webpack-blocks", "resolve")
-  @js.native
+  @scala.inline
   def resolve(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Resolve */ js.Any
-  ): Block[Context] = js.native
+  ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(config.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
   object sass {
     
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: typings.webpackBlocksSass.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("webpack-blocks", "sass")
     @js.native
-    def apply(): js.Any = js.native
-    @JSImport("webpack-blocks", "sass")
-    @js.native
-    def apply(options: typings.webpackBlocksSass.mod.Options): js.Any = js.native
+    val ^ : js.Any = js.native
   }
   
-  @JSImport("webpack-blocks", "setContext")
-  @js.native
-  def setContext(contextPath: String): Block[Context] = js.native
+  @scala.inline
+  def setContext(contextPath: String): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(contextPath.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "setDevTool")
-  @js.native
-  def setDevTool(devtool: String): Block[Context] = js.native
+  @scala.inline
+  def setDevTool(devtool: String): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDevTool")(devtool.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "setEnv")
-  @js.native
-  def setEnv(constants: ConstantOptions): js.Any = js.native
+  @scala.inline
+  def setEnv(constants: ConstantOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnv")(constants.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("webpack-blocks", "setMode")
-  @js.native
-  def setMode(mode: js.Any): Block[Context] = js.native
+  @scala.inline
+  def setMode(mode: js.Any): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("setMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "setOutput")
-  @js.native
-  def setOutput(): Block[Context] = js.native
-  @JSImport("webpack-blocks", "setOutput")
-  @js.native
-  def setOutput(output: String): Block[Context] = js.native
-  @JSImport("webpack-blocks", "setOutput")
-  @js.native
+  @scala.inline
+  def setOutput(): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOutput")().asInstanceOf[Block[Context]]
+  @scala.inline
+  def setOutput(output: String): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOutput")(output.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
+  @scala.inline
   def setOutput(
     output: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Output */ js.Any
-  ): Block[Context] = js.native
+  ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("setOutput")(output.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
-  @JSImport("webpack-blocks", "sourceMaps")
-  @js.native
-  def sourceMaps(): Block[Context] = js.native
-  @JSImport("webpack-blocks", "sourceMaps")
-  @js.native
+  @scala.inline
+  def sourceMaps(): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("sourceMaps")().asInstanceOf[Block[Context]]
+  @scala.inline
   def sourceMaps(
     devtool: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options.Devtool */ js.Any
-  ): Block[Context] = js.native
+  ): Block[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("sourceMaps")(devtool.asInstanceOf[js.Any]).asInstanceOf[Block[Context]]
   
   object typescript {
     
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: typings.webpackBlocksTypescript.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("webpack-blocks", "typescript")
     @js.native
-    def apply(): js.Any = js.native
-    @JSImport("webpack-blocks", "typescript")
-    @js.native
-    def apply(options: typings.webpackBlocksTypescript.mod.Options): js.Any = js.native
+    val ^ : js.Any = js.native
   }
   
   object uglify {
     
+    @scala.inline
+    def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+    @scala.inline
+    def apply(options: typings.webpackBlocksUglify.mod.Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("webpack-blocks", "uglify")
     @js.native
-    def apply(): js.Any = js.native
-    @JSImport("webpack-blocks", "uglify")
-    @js.native
-    def apply(options: typings.webpackBlocksUglify.mod.Options): js.Any = js.native
+    val ^ : js.Any = js.native
   }
   
-  @JSImport("webpack-blocks", "url")
-  @js.native
-  def url(): js.Any = js.native
-  @JSImport("webpack-blocks", "url")
-  @js.native
-  def url(options: UrlOptions): js.Any = js.native
+  @scala.inline
+  def url(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[js.Any]
+  @scala.inline
+  def url(options: UrlOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("webpack-blocks", "when")
-  @js.native
-  def when(condition: Boolean, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  
-  @JSImport("webpack-blocks", "match")
-  @js.native
-  def `match`(test: String, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  @JSImport("webpack-blocks", "match")
-  @js.native
-  def `match`(test: String, options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  @JSImport("webpack-blocks", "match")
-  @js.native
-  def `match`(test: js.Array[String], configSetters: js.Array[Block[Context]]): Block[Context] = js.native
-  @JSImport("webpack-blocks", "match")
-  @js.native
-  def `match`(test: js.Array[String], options: MatchOptions, configSetters: js.Array[Block[Context]]): Block[Context] = js.native
+  @scala.inline
+  def when(condition: Boolean, configSetters: js.Array[Block[Context]]): Block[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(condition.asInstanceOf[js.Any], configSetters.asInstanceOf[js.Any])).asInstanceOf[Block[Context]]
 }

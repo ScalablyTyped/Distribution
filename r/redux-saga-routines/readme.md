@@ -10,9 +10,9 @@ Routines for redux-saga also useful with redux-form
 | ------------------ | :-------------: |
 | Full name          | redux-saga-routines |
 | Keywords           | redux, saga, redux-saga, routines, redux-saga-routines, redux-form |
-| # releases         | 12 |
-| # dependents       | 16 |
-| # downloads        | 575476 |
+| # releases         | 7 |
+| # dependents       | 17 |
+| # downloads        | 583864 |
 | # stars            | 0 |
 
 ## Links

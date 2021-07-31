@@ -4,24 +4,23 @@ import typings.awsSdkClientDynamodbNode.updateGlobalTableExceptionsUnionMod.Upda
 import typings.awsSdkClientDynamodbNode.updateGlobalTableSettingsExceptionsUnionMod.UpdateGlobalTableSettingsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicaNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ReplicaNotFoundExceptionDetails> * / any */ @js.native
-  trait ReplicaNotFoundException
-    extends UpdateGlobalTableExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ReplicaNotFoundExceptionDetails> * / any */ trait ReplicaNotFoundException
+    extends StObject
+       with UpdateGlobalTableExceptionsUnion
        with UpdateGlobalTableSettingsExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ReplicaNotFoundException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ReplicaNotFoundException
   }
   object ReplicaNotFoundException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ReplicaNotFoundException): ReplicaNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ReplicaNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "ReplicaNotFoundException")
       __obj.asInstanceOf[ReplicaNotFoundException]
     }
     
@@ -33,13 +32,12 @@ object typesReplicaNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait ReplicaNotFoundExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ReplicaNotFoundExceptionDetails {
     

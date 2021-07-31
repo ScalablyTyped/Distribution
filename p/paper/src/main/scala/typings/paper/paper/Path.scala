@@ -2,14 +2,15 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The path item represents a path in a Paper.js project.
   */
 @js.native
-trait Path extends PathItem {
+trait Path
+  extends StObject
+     with PathItem {
   
   /** 
     * Adds one or more segments to the end of the {@link #segments} array of

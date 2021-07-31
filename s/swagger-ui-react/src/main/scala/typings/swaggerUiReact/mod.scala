@@ -7,7 +7,6 @@ import typings.swaggerUiReact.swaggerUiReactStrings.list
 import typings.swaggerUiReact.swaggerUiReactStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,28 +26,27 @@ object mod {
   
   type SwaggerUI = PureComponent[SwaggerUIProps, js.Object, js.Any]
   
-  @js.native
   trait SwaggerUIProps extends StObject {
     
-    var deepLinking: js.UndefOr[Boolean] = js.native
+    var deepLinking: js.UndefOr[Boolean] = js.undefined
     
-    var defaultModelExpandDepth: js.UndefOr[Double] = js.native
+    var defaultModelExpandDepth: js.UndefOr[Double] = js.undefined
     
-    var docExpansion: js.UndefOr[list | full | none] = js.native
+    var docExpansion: js.UndefOr[list | full | none] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* system */ System, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* system */ System, Unit]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[Plugin]] = js.native
+    var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
     
-    var requestInterceptor: js.UndefOr[js.Function1[/* req */ Request, Request | js.Promise[Request]]] = js.native
+    var requestInterceptor: js.UndefOr[js.Function1[/* req */ Request, Request | js.Promise[Request]]] = js.undefined
     
-    var responseInterceptor: js.UndefOr[js.Function1[/* res */ Response, Response | js.Promise[Response]]] = js.native
+    var responseInterceptor: js.UndefOr[js.Function1[/* res */ Response, Response | js.Promise[Response]]] = js.undefined
     
-    var spec: js.UndefOr[js.Object | String] = js.native
+    var spec: js.UndefOr[js.Object | String] = js.undefined
     
-    var supportedSubmitMethods: js.UndefOr[js.Array[String]] = js.native
+    var supportedSubmitMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object SwaggerUIProps {
     

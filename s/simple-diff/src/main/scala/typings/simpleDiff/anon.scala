@@ -3,17 +3,15 @@ package typings.simpleDiff
 import typings.simpleDiff.mod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait NewPath extends StObject {
     
-    var newPath: Path = js.native
+    var newPath: Path
     
-    var oldPath: Path = js.native
+    var oldPath: Path
   }
   object NewPath {
     

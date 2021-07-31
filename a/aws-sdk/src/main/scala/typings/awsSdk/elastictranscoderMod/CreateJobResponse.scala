@@ -2,16 +2,14 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJobResponse extends StObject {
   
   /**
     * A section of the response body that provides information about the job that is created.
     */
-  var Job: js.UndefOr[typings.awsSdk.elastictranscoderMod.Job] = js.native
+  var Job: js.UndefOr[typings.awsSdk.elastictranscoderMod.Job] = js.undefined
 }
 object CreateJobResponse {
   

@@ -2,15 +2,13 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharRange extends StObject {
   
-  var qCharCount: Double = js.native
+  var qCharCount: Double
   
-  var qCharPos: Double = js.native
+  var qCharPos: Double
 }
 object CharRange {
   

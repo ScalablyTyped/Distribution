@@ -2,25 +2,23 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackQuery extends StObject {
   
-  var chat_instance: String = js.native
+  var chat_instance: String
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var from: User = js.native
+  var from: User
   
-  var game_short_name: js.UndefOr[String] = js.native
+  var game_short_name: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var inline_message_id: js.UndefOr[String] = js.native
+  var inline_message_id: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
 }
 object CallbackQuery {
   

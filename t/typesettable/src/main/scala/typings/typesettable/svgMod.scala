@@ -4,29 +4,47 @@ import typings.std.Element
 import typings.std.SVGElement
 import typings.std.SVGGraphicsElement
 import typings.typesettable.abstractMeasurerMod.IDimensions
+import typings.typesettable.abstractMeasurerMod.IRuler
+import typings.typesettable.abstractMeasurerMod.IRulerFactory
 import typings.typesettable.anon.Write
 import typings.typesettable.contextsMod.ITypesetterContext
+import typings.typesettable.writerMod.IPen
+import typings.typesettable.writerMod.IPenFactory
 import typings.typesettable.writerMod.ITransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgMod {
   
   @JSImport("typesettable/build/src/contexts/svg", "SvgContext")
   @js.native
-  class SvgContext protected () extends ITypesetterContext[SVGElement] {
+  class SvgContext protected ()
+    extends StObject
+       with ITypesetterContext[SVGElement] {
     def this(element: SVGElement) = this()
     def this(element: SVGElement, className: String) = this()
-    def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
+    def this(element: SVGElement, className: Unit, addTitleElement: Boolean) = this()
     
     var addTitleElement: js.Any = js.native
     
     var className: js.Any = js.native
     
+    /* CompleteClass */
+    override def createPen(text: String, transform: ITransform): IPen = js.native
+    /* CompleteClass */
+    override def createPen(text: String, transform: ITransform, container: SVGElement): IPen = js.native
     def createPen(text: String, transform: ITransform, element: Element): Write = js.native
+    /* CompleteClass */
+    @JSName("createPen")
+    var createPen_Original: IPenFactory[SVGElement] = js.native
+    
+    /* CompleteClass */
+    override def createRuler(): IRuler = js.native
+    /* CompleteClass */
+    @JSName("createRuler")
+    var createRuler_Original: IRulerFactory = js.native
     
     /* private */ def createSvgLinePen(textBlockGroup: js.Any): js.Any = js.native
     
@@ -72,23 +90,20 @@ object svgMod {
       *
       * Returns the new element.
       */
-    @JSImport("typesettable/build/src/contexts/svg", "SvgUtils.append")
-    @js.native
-    def append(element: Element, tagName: String, classNames: String*): SVGElement = js.native
+    @scala.inline
+    def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
-    @JSImport("typesettable/build/src/contexts/svg", "SvgUtils.create")
-    @js.native
-    def create(tagName: String, classNames: String*): SVGElement = js.native
+    @scala.inline
+    def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Returns the width/height of svg element's bounding box
       */
-    @JSImport("typesettable/build/src/contexts/svg", "SvgUtils.getDimensions")
-    @js.native
-    def getDimensions(element: SVGGraphicsElement): IDimensions = js.native
+    @scala.inline
+    def getDimensions(element: SVGGraphicsElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
   /* Rewritten from type alias, can be one of: 

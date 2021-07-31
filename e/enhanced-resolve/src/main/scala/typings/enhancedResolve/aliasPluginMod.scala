@@ -3,34 +3,56 @@ package typings.enhancedResolve
 import typings.enhancedResolve.mod.ResolverFactory.AliasItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aliasPluginMod {
   
   @JSImport("enhanced-resolve/lib/AliasPlugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AliasPlugin {
+  class ^ protected ()
+    extends StObject
+       with AliasPlugin {
     def this(source: String, options: AliasItem, target: String) = this()
-  }
-  
-  @js.native
-  trait AliasPlugin extends StObject {
     
+    /* CompleteClass */
     var alias: String = js.native
     
+    /* CompleteClass */
     @JSName("apply")
-    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
     
+    /* CompleteClass */
     var name: String = js.native
     
+    /* CompleteClass */
     var onlyModule: Boolean = js.native
     
+    /* CompleteClass */
     var options: AliasItem = js.native
     
+    /* CompleteClass */
     var source: String = js.native
     
+    /* CompleteClass */
     var target: String = js.native
+  }
+  
+  trait AliasPlugin extends StObject {
+    
+    var alias: String
+    
+    @JSName("apply")
+    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit
+    
+    var name: String
+    
+    var onlyModule: Boolean
+    
+    var options: AliasItem
+    
+    var source: String
+    
+    var target: String
   }
   object AliasPlugin {
     

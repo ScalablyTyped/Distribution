@@ -3,14 +3,17 @@ package typings.breeze.mod
 import typings.breeze.anon.IsCaseSensitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("breeze", "LocalQueryComparisonOptions")
 @js.native
 class LocalQueryComparisonOptions protected ()
-  extends typings.breeze.breeze.LocalQueryComparisonOptions {
+  extends StObject
+     with typings.breeze.breeze.LocalQueryComparisonOptions {
   def this(config: IsCaseSensitive) = this()
+  
+  /* CompleteClass */
+  override def setAsDefault(): Unit = js.native
 }
 /* static members */
 object LocalQueryComparisonOptions {

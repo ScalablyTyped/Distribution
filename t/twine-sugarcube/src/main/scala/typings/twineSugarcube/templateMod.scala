@@ -3,7 +3,6 @@ package typings.twineSugarcube
 import typings.twineSugarcube.extensionsMod.global.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateMod {
@@ -102,13 +101,12 @@ object templateMod {
   
   type TemplateExpander = js.ThisFunction0[/* this */ TemplateExpansionContext, String]
   
-  @js.native
   trait TemplateExpansionContext extends StObject {
     
     /**
       * The template's name.
       */
-    val name: String = js.native
+    val name: String
   }
   object TemplateExpansionContext {
     

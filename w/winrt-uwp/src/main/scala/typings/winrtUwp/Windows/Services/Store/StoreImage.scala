@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Services.Store
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an image that is associated with a product listing in the Windows Store. */
-@js.native
 trait StoreImage extends StObject {
   
   /** Gets the caption for the image. */
-  var caption: String = js.native
+  var caption: String
   
   /** Gets the height of the image, in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /** Gets the tag for the image. */
-  var imagePurposeTag: String = js.native
+  var imagePurposeTag: String
   
   /** Gets the URI of the image. */
-  var uri: Uri = js.native
+  var uri: Uri
   
   /** Gets the width of the image, in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object StoreImage {
   

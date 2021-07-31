@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Jobs")
@@ -89,7 +88,7 @@ class ResourceJobs protected () extends StObject {
     */
   def cancel(): GaxiosPromise[SchemaJobCancelResponse] = js.native
   def cancel(callback: BodyResponseCallback[SchemaJobCancelResponse]): Unit = js.native
-  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJobCancelResponse] = js.native
+  def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJobCancelResponse] = js.native
   def cancel(params: ParamsResourceJobsCancel): GaxiosPromise[SchemaJobCancelResponse] = js.native
   def cancel(params: ParamsResourceJobsCancel, callback: BodyResponseCallback[SchemaJobCancelResponse]): Unit = js.native
   def cancel(
@@ -180,7 +179,7 @@ class ResourceJobs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaJob] = js.native
   def get(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def get(
@@ -280,7 +279,7 @@ class ResourceJobs protected () extends StObject {
     */
   def getQueryResults(): GaxiosPromise[SchemaGetQueryResultsResponse] = js.native
   def getQueryResults(callback: BodyResponseCallback[SchemaGetQueryResultsResponse]): Unit = js.native
-  def getQueryResults(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetQueryResultsResponse] = js.native
+  def getQueryResults(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetQueryResultsResponse] = js.native
   def getQueryResults(params: ParamsResourceJobsGetqueryresults): GaxiosPromise[SchemaGetQueryResultsResponse] = js.native
   def getQueryResults(
     params: ParamsResourceJobsGetqueryresults,
@@ -380,7 +379,7 @@ class ResourceJobs protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaJob] = js.native
   def insert(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def insert(params: ParamsResourceJobsInsert): GaxiosPromise[SchemaJob] = js.native
   def insert(params: ParamsResourceJobsInsert, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def insert(
@@ -486,7 +485,7 @@ class ResourceJobs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaJobList] = js.native
   def list(callback: BodyResponseCallback[SchemaJobList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJobList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJobList] = js.native
   def list(params: ParamsResourceJobsList): GaxiosPromise[SchemaJobList] = js.native
   def list(params: ParamsResourceJobsList, callback: BodyResponseCallback[SchemaJobList]): Unit = js.native
   def list(
@@ -574,7 +573,7 @@ class ResourceJobs protected () extends StObject {
     */
   def query(): GaxiosPromise[SchemaQueryResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaQueryResponse]): Unit = js.native
-  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryResponse] = js.native
+  def query(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQueryResponse] = js.native
   def query(params: ParamsResourceJobsQuery): GaxiosPromise[SchemaQueryResponse] = js.native
   def query(params: ParamsResourceJobsQuery, callback: BodyResponseCallback[SchemaQueryResponse]): Unit = js.native
   def query(

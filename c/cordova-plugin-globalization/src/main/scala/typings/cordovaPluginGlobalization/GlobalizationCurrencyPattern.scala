@@ -2,33 +2,31 @@ package typings.cordovaPluginGlobalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Pattern to format and parse currency values according
   * to the client's user preferences and ISO 4217 currency code.
   */
-@js.native
 trait GlobalizationCurrencyPattern extends StObject {
   
   /** The ISO 4217 currency code for the pattern. */
-  var code: String = js.native
+  var code: String
   
   /** The decimal symbol to use for parsing and formatting. */
-  var decimal: String = js.native
+  var decimal: String
   
   /** The number of fractional digits to use when parsing and formatting currency. */
-  var fraction: Double = js.native
+  var fraction: Double
   
   /** The grouping symbol to use for parsing and formatting. */
-  var grouping: String = js.native
+  var grouping: String
   
   /** The currency pattern to format and parse currency values. The patterns follow Unicode Technical Standard #35. */
-  var pattern: String = js.native
+  var pattern: String
   
   /** The rounding increment to use when parsing and formatting. */
-  var rounding: Double = js.native
+  var rounding: Double
 }
 object GlobalizationCurrencyPattern {
   

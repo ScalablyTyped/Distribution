@@ -2,29 +2,29 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarginInfo extends _SheetKeys {
+trait MarginInfo
+  extends StObject
+     with _SheetKeys {
   
   /** Bottom side margin (inches) */
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
   /** Footer bottom height (inches) */
-  var footer: js.UndefOr[Double] = js.native
+  var footer: js.UndefOr[Double] = js.undefined
   
   /** Header top margin (inches) */
-  var header: js.UndefOr[Double] = js.native
+  var header: js.UndefOr[Double] = js.undefined
   
   /** Left side margin (inches) */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /** Right side margin (inches) */
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
   /** Top side margin (inches) */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object MarginInfo {
   

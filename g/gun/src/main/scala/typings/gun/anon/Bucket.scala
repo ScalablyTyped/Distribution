@@ -2,17 +2,15 @@ package typings.gun.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
-  var bucket: js.Any = js.native
+  var bucket: js.Any
   
-  var key: js.Any = js.native
+  var key: js.Any
   
-  var secret: js.Any = js.native
+  var secret: js.Any
 }
 object Bucket {
   

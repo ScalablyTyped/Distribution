@@ -7,34 +7,32 @@ import typings.octokitTypes.octokitTypesStrings.push
 import typings.octokitTypes.octokitTypesStrings.secret
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsCreateEndpoint extends StObject {
   
   /**
     * The description of the team.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * List GitHub IDs for organization members who will become team maintainers.
     */
-  var maintainers: js.UndefOr[js.Array[String]] = js.native
+  var maintainers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the team.
     */
-  var name: String = js.native
+  var name: String
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * The ID of a team to set as the parent team.
     */
-  var parent_team_id: js.UndefOr[Double] = js.native
+  var parent_team_id: js.UndefOr[Double] = js.undefined
   
   /**
     * **Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:
@@ -42,7 +40,7 @@ trait TeamsCreateEndpoint extends StObject {
     * \* `push` - team members can pull and push, but not administer newly-added repositories.
     * \* `admin` - team members can pull, push and administer newly-added repositories.
     */
-  var permission: js.UndefOr[pull | push | admin] = js.native
+  var permission: js.UndefOr[pull | push | admin] = js.undefined
   
   /**
     * The level of privacy this team should have. The options are:
@@ -54,12 +52,12 @@ trait TeamsCreateEndpoint extends StObject {
     * \* `closed` - visible to all members of this organization.
     * Default for child team: `closed`
     */
-  var privacy: js.UndefOr[secret | closed] = js.native
+  var privacy: js.UndefOr[secret | closed] = js.undefined
   
   /**
     * The full name (e.g., "organization-name/repository-name") of repositories to add the team to.
     */
-  var repo_names: js.UndefOr[js.Array[String]] = js.native
+  var repo_names: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TeamsCreateEndpoint {
   

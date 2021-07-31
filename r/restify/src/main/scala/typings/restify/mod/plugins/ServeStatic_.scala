@@ -2,29 +2,27 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServeStatic_ extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var appendRequestPath: js.UndefOr[Boolean] = js.native
+  var appendRequestPath: js.UndefOr[Boolean] = js.undefined
   
-  var charSet: js.UndefOr[String] = js.native
+  var charSet: js.UndefOr[String] = js.undefined
   
-  var directory: js.UndefOr[String] = js.native
+  var directory: js.UndefOr[String] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var gzip: js.UndefOr[Boolean] = js.native
+  var gzip: js.UndefOr[Boolean] = js.undefined
   
-  var `match`: js.UndefOr[js.Any] = js.native
+  var `match`: js.UndefOr[js.Any] = js.undefined
   
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
 }
 object ServeStatic_ {
   

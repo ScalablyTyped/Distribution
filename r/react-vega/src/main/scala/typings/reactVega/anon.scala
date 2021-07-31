@@ -5,21 +5,19 @@ import typings.reactVega.mod.VegaWithSpec
 import typings.vegaTypings.specMod.Spec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Bottom {
     
@@ -59,7 +57,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofVegaWithSpec extends Instantiable0[VegaWithSpec] {
+  trait TypeofVegaWithSpec
+    extends StObject
+       with Instantiable0[VegaWithSpec] {
     
     def getSpec(): Spec = js.native
   }

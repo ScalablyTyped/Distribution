@@ -2,38 +2,36 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoXmlStats extends StObject {
   
   /** The number of characters in the XML feed. */
-  var fileSize: Double = js.native
+  var fileSize: Double
   
   /** Number of Ground Overlays in the XML feed. */
-  var numGroundOverlays: Double = js.native
+  var numGroundOverlays: Double
   
   /** Number of Microsoft.Maps.Location objects in the XML feed. */
-  var numLocations: Double = js.native
+  var numLocations: Double
   
   /** The number of network links in the XML feed. */
-  var numNetworkLinks: Double = js.native
+  var numNetworkLinks: Double
   
   /** Number of Microsoft.Maps.Polygons objects in the XML feed. */
-  var numPolygons: Double = js.native
+  var numPolygons: Double
   
   /** Number of Microsoft.Maps.Polylines objects in the XML feed. */
-  var numPolylines: Double = js.native
+  var numPolylines: Double
   
   /** Number of Microsoft.Maps.Pushpins objects in the XML feed. */
-  var numPushpins: Double = js.native
+  var numPushpins: Double
   
   /** Number of Screen Overlays in the XML feed. */
-  var numScreenOverlays: Double = js.native
+  var numScreenOverlays: Double
   
   /** The amount of time in ms it took to process the XML feed. */
-  var processingTime: Double = js.native
+  var processingTime: Double
 }
 object IGeoXmlStats {
   

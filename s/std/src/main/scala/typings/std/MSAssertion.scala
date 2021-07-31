@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MSAssertion extends StObject {
   
-  val id: java.lang.String = js.native
+  val id: java.lang.String
   
-  val `type`: MSCredentialType = js.native
+  val `type`: MSCredentialType
 }
 object MSAssertion {
   

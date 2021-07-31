@@ -16,7 +16,6 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContentIdentifier
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It can be used if there is a need to execute SQL statements more than once, or if you want to format the query result fields differently from the
   * underlying table definitions.
   */
-@js.native
 trait Query
-  extends XQueryDefinition
+  extends StObject
+     with XQueryDefinition
      with DataSettings
      with XDataDescriptorFactory
      with XRename

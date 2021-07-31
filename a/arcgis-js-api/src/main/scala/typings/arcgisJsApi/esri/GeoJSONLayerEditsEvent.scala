@@ -2,17 +2,15 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoJSONLayerEditsEvent extends StObject {
   
-  var addedFeatures: js.Array[GeoJSONLayerEditsEventAddedFeatures] = js.native
+  var addedFeatures: js.Array[GeoJSONLayerEditsEventAddedFeatures]
   
-  var deletedFeatures: js.Array[GeoJSONLayerEditsEventDeletedFeatures] = js.native
+  var deletedFeatures: js.Array[GeoJSONLayerEditsEventDeletedFeatures]
   
-  var updatedFeatures: js.Array[GeoJSONLayerEditsEventUpdatedFeatures] = js.native
+  var updatedFeatures: js.Array[GeoJSONLayerEditsEventUpdatedFeatures]
 }
 object GeoJSONLayerEditsEvent {
   

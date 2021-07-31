@@ -2,36 +2,34 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOneAndReplaceOption extends StObject {
   
   /**
     * The maximum amount of time to allow the query to run.
     */
-  var maxTimeMS: js.UndefOr[scala.Double] = js.native
+  var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Limits the fields to return for all matching documents.
     */
-  var projection: js.UndefOr[js.Object] = js.native
+  var projection: js.UndefOr[js.Object] = js.undefined
   
   /**
     * When false, returns the updated document rather than the original. The default is true.
     */
-  var returnOriginal: js.UndefOr[Boolean] = js.native
+  var returnOriginal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines which document the operation modifies if the query selects multiple documents.
     */
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Upsert the document if it does not exist.
     */
-  var upsert: js.UndefOr[Boolean] = js.native
+  var upsert: js.UndefOr[Boolean] = js.undefined
 }
 object FindOneAndReplaceOption {
   

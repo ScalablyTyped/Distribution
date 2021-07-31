@@ -2,15 +2,13 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelatedNode extends StObject {
   
-  var html: String = js.native
+  var html: String
   
-  var target: js.Array[String] = js.native
+  var target: js.Array[String]
 }
 object RelatedNode {
   

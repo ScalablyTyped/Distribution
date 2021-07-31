@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEmailTemplateResponse extends StObject {
   
   /**
     * The content of the email template, composed of a subject line, an HTML part, and a text-only part.
     */
-  var TemplateContent: EmailTemplateContent = js.native
+  var TemplateContent: EmailTemplateContent
   
   /**
     * The name of the template you want to retrieve.
     */
-  var TemplateName: EmailTemplateName = js.native
+  var TemplateName: EmailTemplateName
 }
 object GetEmailTemplateResponse {
   

@@ -2,74 +2,72 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A description of an Android device tests may be run on.
   */
-@js.native
 trait SchemaAndroidModel extends StObject {
   
   /**
     * The company that this device is branded with. Example:
     * &quot;Google&quot;, &quot;Samsung&quot;.
     */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the industrial design. This corresponds to
     * android.os.Build.DEVICE.
     */
-  var codename: js.UndefOr[String] = js.native
+  var codename: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this device is virtual or physical.
     */
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this device is a phone, tablet, wearable, etc.
     */
-  var formFactor: js.UndefOr[String] = js.native
+  var formFactor: js.UndefOr[String] = js.undefined
   
   /**
     * The unique opaque id for this model. Use this for invoking the
     * TestExecutionService.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * True if and only if tests with this model are recorded by stitching
     * together screenshots. See use_low_spec_video_recording in device config.
     */
-  var lowFpsVideoRecording: js.UndefOr[Boolean] = js.native
+  var lowFpsVideoRecording: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The manufacturer of this device.
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * The human-readable marketing name for this device model. Examples:
     * &quot;Nexus 5&quot;, &quot;Galaxy S5&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Screen density in DPI. This corresponds to ro.sf.lcd_density
     */
-  var screenDensity: js.UndefOr[Double] = js.native
+  var screenDensity: js.UndefOr[Double] = js.undefined
   
   /**
     * Screen size in the horizontal (X) dimension measured in pixels.
     */
-  var screenX: js.UndefOr[Double] = js.native
+  var screenX: js.UndefOr[Double] = js.undefined
   
   /**
     * Screen size in the vertical (Y) dimension measured in pixels.
     */
-  var screenY: js.UndefOr[Double] = js.native
+  var screenY: js.UndefOr[Double] = js.undefined
   
   /**
     * The list of supported ABIs for this device. This corresponds to either
@@ -80,18 +78,18 @@ trait SchemaAndroidModel extends StObject {
     * AndroidVersion), denoting an ABI that is supported only on a particular
     * version.
     */
-  var supportedAbis: js.UndefOr[js.Array[String]] = js.native
+  var supportedAbis: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The set of Android versions this device supports.
     */
-  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.native
+  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Tags for this dimension. Examples: &quot;default&quot;,
     * &quot;preview&quot;, &quot;deprecated&quot;.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAndroidModel {
   

@@ -6,37 +6,35 @@ import typings.dockerode.anon.NetworkMode
 import typings.dockerode.anon.Networks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerInfo extends StObject {
   
-  var Command: String = js.native
+  var Command: String
   
-  var Created: Double = js.native
+  var Created: Double
   
-  var HostConfig: NetworkMode = js.native
+  var HostConfig: NetworkMode
   
-  var Id: String = js.native
+  var Id: String
   
-  var Image: String = js.native
+  var Image: String
   
-  var ImageID: String = js.native
+  var ImageID: String
   
-  var Labels: StringDictionary[String] = js.native
+  var Labels: StringDictionary[String]
   
-  var Mounts: js.Array[Destination] = js.native
+  var Mounts: js.Array[Destination]
   
-  var Names: js.Array[String] = js.native
+  var Names: js.Array[String]
   
-  var NetworkSettings: Networks = js.native
+  var NetworkSettings: Networks
   
-  var Ports: js.Array[Port] = js.native
+  var Ports: js.Array[Port]
   
-  var State: String = js.native
+  var State: String
   
-  var Status: String = js.native
+  var Status: String
 }
 object ContainerInfo {
   

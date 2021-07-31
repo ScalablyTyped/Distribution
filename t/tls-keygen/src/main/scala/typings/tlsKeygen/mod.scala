@@ -3,10 +3,13 @@ package typings.tlsKeygen
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("tls-keygen", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tls-keygen", "defaultCert")
   @js.native
@@ -24,20 +27,17 @@ object mod {
   @js.native
   val defaultSubjectAltName: js.Array[String] = js.native
   
-  @JSImport("tls-keygen", "ephemeral")
-  @js.native
-  def ephemeral(options: KeyGenOptions): js.Promise[EphemeralResult] = js.native
+  @scala.inline
+  def ephemeral(options: KeyGenOptions): js.Promise[EphemeralResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("ephemeral")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EphemeralResult]]
   
-  @JSImport("tls-keygen", "keygen")
-  @js.native
-  def keygen(options: KeyGenOptions): js.Promise[KeyGenResult] = js.native
+  @scala.inline
+  def keygen(options: KeyGenOptions): js.Promise[KeyGenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("keygen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyGenResult]]
   
-  @js.native
   trait EphemeralResult extends StObject {
     
-    var cert: Buffer = js.native
+    var cert: Buffer
     
-    var key: Buffer = js.native
+    var key: Buffer
   }
   object EphemeralResult {
     
@@ -58,18 +58,17 @@ object mod {
     }
   }
   
-  @js.native
   trait KeyGenOptions extends StObject {
     
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
-    var commonName: js.UndefOr[String] = js.native
+    var commonName: js.UndefOr[String] = js.undefined
     
-    var entrust: js.UndefOr[Boolean] = js.native
+    var entrust: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var subjectAltName: js.UndefOr[js.Array[String]] = js.native
+    var subjectAltName: js.UndefOr[js.Array[String]] = js.undefined
   }
   object KeyGenOptions {
     
@@ -117,12 +116,11 @@ object mod {
     }
   }
   
-  @js.native
   trait KeyGenResult extends StObject {
     
-    var cert: String = js.native
+    var cert: String
     
-    var key: String = js.native
+    var key: String
   }
   object KeyGenResult {
     

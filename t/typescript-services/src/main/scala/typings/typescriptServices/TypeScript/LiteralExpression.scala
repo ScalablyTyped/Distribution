@@ -2,23 +2,23 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LiteralExpression extends AST {
+trait LiteralExpression
+  extends StObject
+     with AST {
   
-  var _nodeType: js.Any = js.native
+  var _nodeType: js.Any
   
-  var _text: js.Any = js.native
+  var _text: js.Any
   
-  var _valueText: js.Any = js.native
+  var _valueText: js.Any
   
-  def structuralEquals(ast: ParenthesizedExpression, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ParenthesizedExpression, includingPosition: Boolean): Boolean
   
-  def text(): String = js.native
+  def text(): String
   
-  def valueText(): String = js.native
+  def valueText(): String
 }
 object LiteralExpression {
   

@@ -11,29 +11,26 @@ import typings.std.HTMLVideoElement
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(stream: HTMLAudioElement): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
+  @scala.inline
+  def apply(stream: HTMLAudioElement, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
+  @scala.inline
+  def apply(stream: HTMLVideoElement): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
+  @scala.inline
+  def apply(stream: HTMLVideoElement, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
+  @scala.inline
+  def apply(stream: MediaStream): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
+  @scala.inline
+  def apply(stream: MediaStream, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
+  
   @JSImport("hark", JSImport.Namespace)
   @js.native
-  def apply(stream: HTMLAudioElement): Harker = js.native
-  @JSImport("hark", JSImport.Namespace)
-  @js.native
-  def apply(stream: HTMLAudioElement, option: Option): Harker = js.native
-  @JSImport("hark", JSImport.Namespace)
-  @js.native
-  def apply(stream: HTMLVideoElement): Harker = js.native
-  @JSImport("hark", JSImport.Namespace)
-  @js.native
-  def apply(stream: HTMLVideoElement, option: Option): Harker = js.native
-  @JSImport("hark", JSImport.Namespace)
-  @js.native
-  def apply(stream: MediaStream): Harker = js.native
-  @JSImport("hark", JSImport.Namespace)
-  @js.native
-  def apply(stream: MediaStream, option: Option): Harker = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Harker extends StObject {
@@ -67,20 +64,19 @@ object mod {
     def suspend(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var audioContext: js.UndefOr[AudioContext] = js.native
+    var audioContext: js.UndefOr[AudioContext] = js.undefined
     
-    var history: js.UndefOr[Double] = js.native
+    var history: js.UndefOr[Double] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var play: js.UndefOr[Boolean] = js.native
+    var play: js.UndefOr[Boolean] = js.undefined
     
-    var smoothing: js.UndefOr[Double] = js.native
+    var smoothing: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object Option {
     

@@ -9,7 +9,6 @@ import typings.rmcTabs.defaultTabBarMod.PropsType
 import typings.rmcTabs.propsTypeMod.TabBarPropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonSdkApi extends StObject {
   
   /** The signature of the Non-SDK API */
-  var apiSignature: js.UndefOr[String] = js.native
+  var apiSignature: js.UndefOr[String] = js.undefined
   
   /** Example stack traces of this API being called. */
-  var exampleStackTraces: js.UndefOr[js.Array[String]] = js.native
+  var exampleStackTraces: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional debugging insights for non-SDK API violations. */
-  var insights: js.UndefOr[js.Array[NonSdkApiInsight]] = js.native
+  var insights: js.UndefOr[js.Array[NonSdkApiInsight]] = js.undefined
   
   /** The total number of times this API was observed to have been called. */
-  var invocationCount: js.UndefOr[Double] = js.native
+  var invocationCount: js.UndefOr[Double] = js.undefined
   
   /** Which list this API appears on */
-  var list: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.undefined
 }
 object NonSdkApi {
   

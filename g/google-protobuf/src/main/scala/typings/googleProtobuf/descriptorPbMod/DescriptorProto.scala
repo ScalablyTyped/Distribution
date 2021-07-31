@@ -11,7 +11,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto")
@@ -19,32 +18,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class DescriptorProto () extends Message {
   
   def addEnumType(): EnumDescriptorProto = js.native
-  def addEnumType(value: js.UndefOr[scala.Nothing], index: Double): EnumDescriptorProto = js.native
+  def addEnumType(value: Unit, index: Double): EnumDescriptorProto = js.native
   def addEnumType(value: EnumDescriptorProto): EnumDescriptorProto = js.native
   def addEnumType(value: EnumDescriptorProto, index: Double): EnumDescriptorProto = js.native
   
   def addExtension(): FieldDescriptorProto = js.native
-  def addExtension(value: js.UndefOr[scala.Nothing], index: Double): FieldDescriptorProto = js.native
+  def addExtension(value: Unit, index: Double): FieldDescriptorProto = js.native
   def addExtension(value: FieldDescriptorProto): FieldDescriptorProto = js.native
   def addExtension(value: FieldDescriptorProto, index: Double): FieldDescriptorProto = js.native
   
   def addExtensionRange(): ExtensionRange = js.native
-  def addExtensionRange(value: js.UndefOr[scala.Nothing], index: Double): ExtensionRange = js.native
+  def addExtensionRange(value: Unit, index: Double): ExtensionRange = js.native
   def addExtensionRange(value: ExtensionRange): ExtensionRange = js.native
   def addExtensionRange(value: ExtensionRange, index: Double): ExtensionRange = js.native
   
   def addField(): FieldDescriptorProto = js.native
-  def addField(value: js.UndefOr[scala.Nothing], index: Double): FieldDescriptorProto = js.native
+  def addField(value: Unit, index: Double): FieldDescriptorProto = js.native
   def addField(value: FieldDescriptorProto): FieldDescriptorProto = js.native
   def addField(value: FieldDescriptorProto, index: Double): FieldDescriptorProto = js.native
   
   def addNestedType(): DescriptorProto = js.native
-  def addNestedType(value: js.UndefOr[scala.Nothing], index: Double): DescriptorProto = js.native
+  def addNestedType(value: Unit, index: Double): DescriptorProto = js.native
   def addNestedType(value: DescriptorProto): DescriptorProto = js.native
   def addNestedType(value: DescriptorProto, index: Double): DescriptorProto = js.native
   
   def addOneofDecl(): OneofDescriptorProto = js.native
-  def addOneofDecl(value: js.UndefOr[scala.Nothing], index: Double): OneofDescriptorProto = js.native
+  def addOneofDecl(value: Unit, index: Double): OneofDescriptorProto = js.native
   def addOneofDecl(value: OneofDescriptorProto): OneofDescriptorProto = js.native
   def addOneofDecl(value: OneofDescriptorProto, index: Double): OneofDescriptorProto = js.native
   
@@ -52,7 +51,7 @@ class DescriptorProto () extends Message {
   def addReservedName(value: String, index: Double): String = js.native
   
   def addReservedRange(): ReservedRange = js.native
-  def addReservedRange(value: js.UndefOr[scala.Nothing], index: Double): ReservedRange = js.native
+  def addReservedRange(value: Unit, index: Double): ReservedRange = js.native
   def addReservedRange(value: ReservedRange): ReservedRange = js.native
   def addReservedRange(value: ReservedRange, index: Double): ReservedRange = js.native
   
@@ -164,13 +163,11 @@ object DescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): ExtensionRange = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: ExtensionRange, reader: BinaryReader): ExtensionRange = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: ExtensionRange, reader: BinaryReader): ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExtensionRange]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange.extensions")
     @js.native
@@ -185,22 +182,19 @@ object DescriptorProto {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: ExtensionRange, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: ExtensionRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ExtensionRange.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: ExtensionRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: ExtensionRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
-      var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.ExtensionRangeOptions.AsObject] = js.native
+      var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.ExtensionRangeOptions.AsObject] = js.undefined
       
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
     }
     object AsObject {
       
@@ -261,13 +255,11 @@ object DescriptorProto {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): ReservedRange = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: ReservedRange, reader: BinaryReader): ReservedRange = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: ReservedRange, reader: BinaryReader): ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ReservedRange]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange.extensions")
     @js.native
@@ -282,20 +274,17 @@ object DescriptorProto {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: ReservedRange, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: ReservedRange, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.ReservedRange.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: ReservedRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: ReservedRange): typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
     }
     object AsObject {
       
@@ -323,13 +312,11 @@ object DescriptorProto {
     }
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): DescriptorProto = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: DescriptorProto, reader: BinaryReader): DescriptorProto = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: DescriptorProto, reader: BinaryReader): DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[DescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.extensions")
   @js.native
@@ -344,36 +331,33 @@ object DescriptorProto {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: DescriptorProto, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: DescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: DescriptorProto): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: DescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var enumTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject] = js.native
+    var enumTypeList: js.Array[typings.googleProtobuf.descriptorPbMod.EnumDescriptorProto.AsObject]
     
-    var extensionList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject] = js.native
+    var extensionList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]
     
-    var extensionRangeList: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject] = js.native
+    var extensionRangeList: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ExtensionRange.AsObject]
     
-    var fieldList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject] = js.native
+    var fieldList: js.Array[typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.AsObject]
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nestedTypeList: js.Array[AsObject] = js.native
+    var nestedTypeList: js.Array[AsObject]
     
-    var oneofDeclList: js.Array[typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject] = js.native
+    var oneofDeclList: js.Array[typings.googleProtobuf.descriptorPbMod.OneofDescriptorProto.AsObject]
     
-    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.MessageOptions.AsObject] = js.native
+    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.MessageOptions.AsObject] = js.undefined
     
-    var reservedNameList: js.Array[String] = js.native
+    var reservedNameList: js.Array[String]
     
-    var reservedRangeList: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject] = js.native
+    var reservedRangeList: js.Array[typings.googleProtobuf.descriptorPbMod.DescriptorProto.ReservedRange.AsObject]
   }
   object AsObject {
     

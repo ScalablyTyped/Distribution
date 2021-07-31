@@ -2,16 +2,14 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.TextSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.TextSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplUnspecifiedField extends StObject {
   
-  var unspecifiedField: js.UndefOr[String] = js.native
+  var unspecifiedField: js.UndefOr[String] = js.undefined
   
-  var unspecifiedRule: js.UndefOr[String] = js.native
+  var unspecifiedRule: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplUnspecifiedField {
   

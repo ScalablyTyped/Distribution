@@ -2,19 +2,17 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resume Point Object
   * [resume point object](https://developer.spotify.com/documentation/web-api/reference/object-model/#resume-point-object)
   */
-@js.native
 trait ResumePointObject extends StObject {
   
-  var full_played: Boolean = js.native
+  var full_played: Boolean
   
-  var resume_position_ms: Double = js.native
+  var resume_position_ms: Double
 }
 object ResumePointObject {
   

@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOMStorage.GetDOMStorageItemsReques
 import typings.devtoolsProtocol.mod.Protocol.DOMStorage.GetDOMStorageItemsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetDOMStorageItemsResponse extends StObject {
   
-  var paramsType: js.Array[GetDOMStorageItemsRequest] = js.native
+  var paramsType: js.Array[GetDOMStorageItemsRequest]
   
-  var returnType: GetDOMStorageItemsResponse = js.native
+  var returnType: GetDOMStorageItemsResponse
 }
 object ReturnTypeGetDOMStorageItemsResponse {
   

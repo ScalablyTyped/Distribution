@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.vue.pluginMod.PluginObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,19 +19,25 @@ object mod extends Shortcut {
   object Types extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Types with String] = js.native
+    def apply(value: String): js.UndefOr[Types & String] = js.native
     
     @js.native
-    sealed trait Local extends Types
-    /* "local" */ val Local: typings.vueLs.mod.Types.Local with String = js.native
+    sealed trait Local
+      extends StObject
+         with Types
+    /* "local" */ val Local: typings.vueLs.mod.Types.Local & String = js.native
     
     @js.native
-    sealed trait Memory extends Types
-    /* "memory" */ val Memory: typings.vueLs.mod.Types.Memory with String = js.native
+    sealed trait Memory
+      extends StObject
+         with Types
+    /* "memory" */ val Memory: typings.vueLs.mod.Types.Memory & String = js.native
     
     @js.native
-    sealed trait Session extends Types
-    /* "session" */ val Session: typings.vueLs.mod.Types.Session with String = js.native
+    sealed trait Session
+      extends StObject
+         with Types
+    /* "session" */ val Session: typings.vueLs.mod.Types.Session & String = js.native
   }
   
   @JSImport("vue-ls", "WebStorage")
@@ -62,14 +67,13 @@ object mod extends Shortcut {
     def setOptions(options: Options): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var storage: js.UndefOr[Types] = js.native
+    var storage: js.UndefOr[Types] = js.undefined
   }
   object Options {
     
@@ -109,11 +113,10 @@ object mod extends Shortcut {
   
   object vueTypesVueAugmentingMod {
     
-    @js.native
     trait Vue extends StObject {
       
       @JSName("$ls")
-      var $ls: WebStorage = js.native
+      var $ls: WebStorage
     }
     object Vue {
       
@@ -131,10 +134,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait VueConstructor extends StObject {
       
-      var ls: WebStorage = js.native
+      var ls: WebStorage
     }
     object VueConstructor {
       

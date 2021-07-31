@@ -2,17 +2,15 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelOptions extends StObject {
   
-  var enableMassClear: js.UndefOr[Boolean] = js.native
+  var enableMassClear: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
   
-  var position: js.UndefOr[Point] = js.native
+  var position: js.UndefOr[Point] = js.undefined
 }
 object LabelOptions {
   

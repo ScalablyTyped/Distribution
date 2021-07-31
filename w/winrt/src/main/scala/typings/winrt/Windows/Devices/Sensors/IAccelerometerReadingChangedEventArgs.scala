@@ -2,13 +2,11 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccelerometerReadingChangedEventArgs extends StObject {
   
-  var reading: AccelerometerReading = js.native
+  var reading: AccelerometerReading
 }
 object IAccelerometerReadingChangedEventArgs {
   

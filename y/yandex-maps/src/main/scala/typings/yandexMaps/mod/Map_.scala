@@ -10,12 +10,13 @@ import typings.yandexMaps.mod.map.ZoomRange
 import typings.yandexMaps.mod.map.action.Manager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Map")
 @js.native
-class Map_ protected () extends IEventEmitter {
+class Map_ protected ()
+  extends StObject
+     with IEventEmitter {
   def this(parentElement: String, state: IMapState) = this()
   def this(parentElement: HTMLElement, state: IMapState) = this()
   def this(parentElement: String, state: IMapState, options: IMapOptions) = this()
@@ -39,6 +40,8 @@ class Map_ protected () extends IEventEmitter {
   
   def destroy(): Unit = js.native
   
+  /* CompleteClass */
+  var events: IEventManager[js.Object] = js.native
   @JSName("events")
   var events_Map_ : typings.yandexMaps.mod.event.Manager[js.Object] = js.native
   
@@ -76,14 +79,14 @@ class Map_ protected () extends IEventEmitter {
   def setBounds(bounds: js.Array[js.Array[Double]], options: IMapBoundsOptions): js.Promise[Unit] = js.native
   
   def setCenter(center: js.Array[Double]): js.Promise[Unit] = js.native
-  def setCenter(center: js.Array[Double], zoom: js.UndefOr[scala.Nothing], options: IMapPositionOptions): js.Promise[Unit] = js.native
   def setCenter(center: js.Array[Double], zoom: Double): js.Promise[Unit] = js.native
   def setCenter(center: js.Array[Double], zoom: Double, options: IMapPositionOptions): js.Promise[Unit] = js.native
+  def setCenter(center: js.Array[Double], zoom: Unit, options: IMapPositionOptions): js.Promise[Unit] = js.native
   
   def setGlobalPixelCenter(globalPixelCenter: js.Array[Double]): js.Promise[Unit] = js.native
-  def setGlobalPixelCenter(globalPixelCenter: js.Array[Double], zoom: js.UndefOr[scala.Nothing], options: IMapPositionOptions): js.Promise[Unit] = js.native
   def setGlobalPixelCenter(globalPixelCenter: js.Array[Double], zoom: Double): js.Promise[Unit] = js.native
   def setGlobalPixelCenter(globalPixelCenter: js.Array[Double], zoom: Double, options: IMapPositionOptions): js.Promise[Unit] = js.native
+  def setGlobalPixelCenter(globalPixelCenter: js.Array[Double], zoom: Unit, options: IMapPositionOptions): js.Promise[Unit] = js.native
   
   def setType(`type`: String): js.Promise[Unit] = js.native
   def setType(`type`: String, options: IMapCheckZoomRangeOptions): js.Promise[Unit] = js.native

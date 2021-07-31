@@ -4,26 +4,24 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/accordion/style.AccordionStyle> */
-@js.native
 trait PartialAccordionStyle extends StObject {
   
-  var arrow: js.UndefOr[TextStyle] = js.native
+  var arrow: js.UndefOr[TextStyle] = js.undefined
   
-  var container: js.UndefOr[ViewStyle] = js.native
+  var container: js.UndefOr[ViewStyle] = js.undefined
   
-  var content: js.UndefOr[ViewStyle] = js.native
+  var content: js.UndefOr[ViewStyle] = js.undefined
   
-  var contentText: js.UndefOr[TextStyle] = js.native
+  var contentText: js.UndefOr[TextStyle] = js.undefined
   
-  var header: js.UndefOr[ViewStyle] = js.native
+  var header: js.UndefOr[ViewStyle] = js.undefined
   
-  var headerText: js.UndefOr[TextStyle] = js.native
+  var headerText: js.UndefOr[TextStyle] = js.undefined
   
-  var headerWrap: js.UndefOr[ViewStyle] = js.native
+  var headerWrap: js.UndefOr[ViewStyle] = js.undefined
 }
 object PartialAccordionStyle {
   

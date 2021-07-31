@@ -3,27 +3,28 @@ package typings.vueComponentCompilerUtils
 import typings.postcss.mod.LazyResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compileStyleMod {
   
-  @JSImport("@vue/component-compiler-utils/dist/compileStyle", "compileStyle")
+  @JSImport("@vue/component-compiler-utils/dist/compileStyle", JSImport.Namespace)
   @js.native
-  def compileStyle(options: StyleCompileOptions): StyleCompileResults = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@vue/component-compiler-utils/dist/compileStyle", "compileStyleAsync")
-  @js.native
-  def compileStyleAsync(options: StyleCompileOptions): js.Promise[StyleCompileResults] = js.native
+  @scala.inline
+  def compileStyle(options: StyleCompileOptions): StyleCompileResults = ^.asInstanceOf[js.Dynamic].applyDynamic("compileStyle")(options.asInstanceOf[js.Any]).asInstanceOf[StyleCompileResults]
   
-  @JSImport("@vue/component-compiler-utils/dist/compileStyle", "doCompileStyle")
-  @js.native
-  def doCompileStyle(options: AsyncStyleCompileOptions): StyleCompileResults = js.native
+  @scala.inline
+  def compileStyleAsync(options: StyleCompileOptions): js.Promise[StyleCompileResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileStyleAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StyleCompileResults]]
   
-  @js.native
-  trait AsyncStyleCompileOptions extends StyleCompileOptions {
+  @scala.inline
+  def doCompileStyle(options: AsyncStyleCompileOptions): StyleCompileResults = ^.asInstanceOf[js.Dynamic].applyDynamic("doCompileStyle")(options.asInstanceOf[js.Any]).asInstanceOf[StyleCompileResults]
+  
+  trait AsyncStyleCompileOptions
+    extends StObject
+       with StyleCompileOptions {
     
-    var isAsync: js.UndefOr[Boolean] = js.native
+    var isAsync: js.UndefOr[Boolean] = js.undefined
   }
   object AsyncStyleCompileOptions {
     
@@ -44,28 +45,27 @@ object compileStyleMod {
     }
   }
   
-  @js.native
   trait StyleCompileOptions extends StObject {
     
-    var filename: String = js.native
+    var filename: String
     
-    var id: String = js.native
+    var id: String
     
-    var map: js.UndefOr[js.Any] = js.native
+    var map: js.UndefOr[js.Any] = js.undefined
     
-    var postcssOptions: js.UndefOr[js.Any] = js.native
+    var postcssOptions: js.UndefOr[js.Any] = js.undefined
     
-    var postcssPlugins: js.UndefOr[js.Array[_]] = js.native
+    var postcssPlugins: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var preprocessLang: js.UndefOr[String] = js.native
+    var preprocessLang: js.UndefOr[String] = js.undefined
     
-    var preprocessOptions: js.UndefOr[js.Any] = js.native
+    var preprocessOptions: js.UndefOr[js.Any] = js.undefined
     
-    var scoped: js.UndefOr[Boolean] = js.native
+    var scoped: js.UndefOr[Boolean] = js.undefined
     
-    var source: String = js.native
+    var source: String
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object StyleCompileOptions {
     
@@ -97,7 +97,7 @@ object compileStyleMod {
       def setPostcssOptionsUndefined: Self = StObject.set(x, "postcssOptions", js.undefined)
       
       @scala.inline
-      def setPostcssPlugins(value: js.Array[_]): Self = StObject.set(x, "postcssPlugins", value.asInstanceOf[js.Any])
+      def setPostcssPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "postcssPlugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPostcssPluginsUndefined: Self = StObject.set(x, "postcssPlugins", js.undefined)
@@ -134,16 +134,15 @@ object compileStyleMod {
     }
   }
   
-  @js.native
   trait StyleCompileResults extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var errors: js.Array[String] = js.native
+    var errors: js.Array[String]
     
-    var map: js.Any | Unit = js.native
+    var map: js.Any | Unit
     
-    var rawResult: LazyResult | Unit = js.native
+    var rawResult: LazyResult | Unit
   }
   object StyleCompileResults {
     

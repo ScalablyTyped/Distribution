@@ -4,11 +4,12 @@ import typings.reactNative.anon.Key
 import typings.reactNative.anon.UrlString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkingStatic extends NativeEventEmitter {
+trait LinkingStatic
+  extends StObject
+     with NativeEventEmitter {
   
   /**
     * Add a handler to Linking changes by listening to the `url` event type
@@ -41,7 +42,7 @@ trait LinkingStatic extends NativeEventEmitter {
     * NOTE: This method will fail if the system doesn't know how to open the specified URL. If you're passing in a non-http(s) URL, it's best to check {@code canOpenURL} first.
     * NOTE: For web URLs, the protocol ("http://", "https://") must be set accordingly!
     */
-  def openURL(url: String): js.Promise[_] = js.native
+  def openURL(url: String): js.Promise[js.Any] = js.native
   
   /**
     * Remove a handler by passing the `url` event type and the handler

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunPivotReportResponse extends StObject {
   
   /**
     * Aggregation of metric values. Can be totals, minimums, or maximums. The returned aggregations are controlled by the metric_aggregations in the pivot. The type of aggregation
     * returned in each row is shown by the dimension_values which are set to "RESERVED_".
     */
-  var aggregates: js.UndefOr[js.Array[Row]] = js.native
+  var aggregates: js.UndefOr[js.Array[Row]] = js.undefined
   
   /** Describes dimension columns. The number of DimensionHeaders and ordering of DimensionHeaders matches the dimensions present in rows. */
-  var dimensionHeaders: js.UndefOr[js.Array[DimensionHeader]] = js.native
+  var dimensionHeaders: js.UndefOr[js.Array[DimensionHeader]] = js.undefined
   
   /** Metadata for the report. */
-  var metadata: js.UndefOr[ResponseMetaData] = js.native
+  var metadata: js.UndefOr[ResponseMetaData] = js.undefined
   
   /** Describes metric columns. The number of MetricHeaders and ordering of MetricHeaders matches the metrics present in rows. */
-  var metricHeaders: js.UndefOr[js.Array[MetricHeader]] = js.native
+  var metricHeaders: js.UndefOr[js.Array[MetricHeader]] = js.undefined
   
   /**
     * Summarizes the columns and rows created by a pivot. Each pivot in the request produces one header in the response. If we have a request like this: "pivots": [{ "fieldNames":
@@ -29,13 +27,13 @@ trait RunPivotReportResponse extends StObject {
     * "value": "United Kingdom" }, { "value": "London" } ] }, { "dimensionValues": [ { "value": "Japan" }, { "value": "Osaka" } ] }] }, { "dimensionHeaders": [{ "dimensionValues": [{
     * "value": "session_start" }] }, { "dimensionValues": [{ "value": "scroll" }] }] }]
     */
-  var pivotHeaders: js.UndefOr[js.Array[PivotHeader]] = js.native
+  var pivotHeaders: js.UndefOr[js.Array[PivotHeader]] = js.undefined
   
   /** This Analytics Property's quota state including this request. */
-  var propertyQuota: js.UndefOr[PropertyQuota] = js.native
+  var propertyQuota: js.UndefOr[PropertyQuota] = js.undefined
   
   /** Rows of dimension value combinations and metric values in the report. */
-  var rows: js.UndefOr[js.Array[Row]] = js.native
+  var rows: js.UndefOr[js.Array[Row]] = js.undefined
 }
 object RunPivotReportResponse {
   

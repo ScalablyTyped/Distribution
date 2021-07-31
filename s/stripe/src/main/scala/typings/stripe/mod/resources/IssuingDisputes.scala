@@ -11,7 +11,6 @@ import typings.stripe.mod.issuing.disputes.IIssuingDisputeListOptions
 import typings.stripe.mod.issuing.disputes.IIssuingDisputeUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.IssuingDisputes")

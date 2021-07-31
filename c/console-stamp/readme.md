@@ -10,9 +10,9 @@ Patch NodeJS console methods in order to add timestamp information by pattern
 | ------------------ | :-------------: |
 | Full name          | console-stamp |
 | Keywords           | console, timestamp, log, jslog, debug |
-| # releases         | 10 |
-| # dependents       | 81 |
-| # downloads        | 1504879 |
+| # releases         | 8 |
+| # dependents       | 88 |
+| # downloads        | 1867258 |
 | # stars            | 13 |
 
 ## Links

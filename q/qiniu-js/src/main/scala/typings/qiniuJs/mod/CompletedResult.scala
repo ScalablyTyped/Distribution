@@ -2,29 +2,27 @@ package typings.qiniuJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletedResult extends StObject {
   
-  var avinfo: js.UndefOr[AvAudioInfo] = js.native
+  var avinfo: js.UndefOr[AvAudioInfo] = js.undefined
   
-  var bucket: String = js.native
+  var bucket: String
   
-  var ext: String = js.native
+  var ext: String
   
-  var imageInfo: js.UndefOr[AvImageInfo] = js.native
+  var imageInfo: js.UndefOr[AvImageInfo] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var name: String = js.native
+  var name: String
   
-  var persistentid: String = js.native
+  var persistentid: String
   
-  var sec: String = js.native
+  var sec: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object CompletedResult {
   

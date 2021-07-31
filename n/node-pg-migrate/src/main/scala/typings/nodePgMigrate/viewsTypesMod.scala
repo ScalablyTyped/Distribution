@@ -1,8 +1,6 @@
 package typings.nodePgMigrate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodePgMigrate.anon.ReverseCreateViewFn
-import typings.nodePgMigrate.anon.ReverseRenameViewFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.generalTypesMod.Value
@@ -10,7 +8,6 @@ import typings.nodePgMigrate.nodePgMigrateStrings.CASCADED
 import typings.nodePgMigrate.nodePgMigrateStrings.LOCAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewsTypesMod {
@@ -24,10 +21,9 @@ object viewsTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait AlterViewColumnOptions extends StObject {
     
-    var default: js.UndefOr[Value] = js.native
+    var default: js.UndefOr[Value] = js.undefined
   }
   object AlterViewColumnOptions {
     
@@ -56,12 +52,11 @@ object viewsTypesMod {
     }
   }
   
-  @js.native
   trait AlterViewOptions extends StObject {
     
-    var checkOption: js.UndefOr[Null | CASCADED | LOCAL] = js.native
+    var checkOption: js.UndefOr[Null | CASCADED | LOCAL] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object AlterViewOptions {
     
@@ -91,29 +86,34 @@ object viewsTypesMod {
     }
   }
   
-  type CreateView = CreateViewFn with ReverseCreateViewFn
+  @js.native
+  trait CreateView extends CreateViewFn {
+    
+    def reverse(viewName: Name, options: CreateViewOptions & DropOptions, definition: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateViewFn = js.native
+  }
   
   type CreateViewFn = js.Function3[
     /* viewName */ Name, 
-    /* options */ CreateViewOptions with DropOptions, 
+    /* options */ CreateViewOptions & DropOptions, 
     /* definition */ String, 
     String | js.Array[String]
   ]
   
-  @js.native
   trait CreateViewOptions extends StObject {
     
-    var checkOption: js.UndefOr[CASCADED | LOCAL] = js.native
+    var checkOption: js.UndefOr[CASCADED | LOCAL] = js.undefined
     
-    var columns: js.UndefOr[String | js.Array[String]] = js.native
+    var columns: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var options: js.UndefOr[ViewOptions] = js.native
+    var options: js.UndefOr[ViewOptions] = js.undefined
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
   }
   object CreateViewOptions {
     
@@ -173,7 +173,13 @@ object viewsTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameView = RenameViewFn with ReverseRenameViewFn
+  @js.native
+  trait RenameView extends RenameViewFn {
+    
+    def reverse(viewName: Name, newViewName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameViewFn = js.native
+  }
   
   type RenameViewFn = js.Function2[/* viewName */ Name, /* newViewName */ Name, String | js.Array[String]]
   

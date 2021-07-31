@@ -2,19 +2,17 @@ package typings.firebase.mod.default.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlParams extends StObject {
   
-  var event_callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var event_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var event_timeout: js.UndefOr[Double] = js.native
+  var event_timeout: js.UndefOr[Double] = js.undefined
   
-  var groups: js.UndefOr[String | js.Array[String]] = js.native
+  var groups: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var send_to: js.UndefOr[String | js.Array[String]] = js.native
+  var send_to: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object ControlParams {
   

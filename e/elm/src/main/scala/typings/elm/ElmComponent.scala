@@ -2,13 +2,11 @@ package typings.elm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElmComponent[P] extends StObject {
   
-  var ports: P = js.native
+  var ports: P
 }
 object ElmComponent {
   
@@ -19,7 +17,7 @@ object ElmComponent {
   }
   
   @scala.inline
-  implicit class ElmComponentMutableBuilder[Self <: ElmComponent[_], P] (val x: Self with ElmComponent[P]) extends AnyVal {
+  implicit class ElmComponentMutableBuilder[Self <: ElmComponent[?], P] (val x: Self & ElmComponent[P]) extends AnyVal {
     
     @scala.inline
     def setPorts(value: P): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])

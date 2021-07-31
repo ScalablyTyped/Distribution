@@ -2,12 +2,14 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsMaterializeMod {
   
-  @JSImport("rxjs/operators/materialize", "materialize")
+  @JSImport("rxjs/operators/materialize", JSImport.Namespace)
   @js.native
-  def materialize[T](): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def materialize[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("materialize")().asInstanceOf[js.Any]
 }

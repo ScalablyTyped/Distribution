@@ -3,14 +3,12 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud Dataproc job for running Apache Pig (https://pig.apache.org/)
   * queries on YARN.
   */
-@js.native
 trait SchemaPigJob extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaPigJob extends StObject {
     * default value is false. Setting to true can be useful when executing
     * independent parallel queries.
     */
-  var continueOnFailure: js.UndefOr[Boolean] = js.native
+  var continueOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. HCFS URIs of jar files to add to the CLASSPATH of the Pig
     * Client and Hadoop MapReduce (MR) tasks. Can contain Pig UDFs.
     */
-  var jarFileUris: js.UndefOr[js.Array[String]] = js.native
+  var jarFileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The runtime log config for job execution.
     */
-  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.undefined
   
   /**
     * Optional. A mapping of property names to values, used to configure Pig.
@@ -37,23 +35,23 @@ trait SchemaPigJob extends StObject {
     * overwritten. Can include properties set in /etc/hadoop/conf/ *-site.xml,
     * /etc/pig/conf/pig.properties, and classes in user code.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The HCFS URI of the script that contains the Pig queries.
     */
-  var queryFileUri: js.UndefOr[String] = js.native
+  var queryFileUri: js.UndefOr[String] = js.undefined
   
   /**
     * A list of queries.
     */
-  var queryList: js.UndefOr[SchemaQueryList] = js.native
+  var queryList: js.UndefOr[SchemaQueryList] = js.undefined
   
   /**
     * Optional. Mapping of query variable names to values (equivalent to the
     * Pig command: name=[value]).
     */
-  var scriptVariables: js.UndefOr[StringDictionary[String]] = js.native
+  var scriptVariables: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaPigJob {
   

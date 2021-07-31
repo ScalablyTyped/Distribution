@@ -4,17 +4,15 @@ import typings.jsCookie.mod.CookieReadConverter
 import typings.jsCookie.mod.CookieWriteConverter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Read[TConv /* <: js.Object */] extends StObject {
     
-    var read: js.UndefOr[CookieReadConverter] = js.native
+    var read: js.UndefOr[CookieReadConverter] = js.undefined
     
-    var write: js.UndefOr[CookieWriteConverter[TConv]] = js.native
+    var write: js.UndefOr[CookieWriteConverter[TConv]] = js.undefined
   }
   object Read {
     
@@ -25,7 +23,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ReadMutableBuilder[Self <: Read[_], TConv /* <: js.Object */] (val x: Self with Read[TConv]) extends AnyVal {
+    implicit class ReadMutableBuilder[Self <: Read[?], TConv /* <: js.Object */] (val x: Self & Read[TConv]) extends AnyVal {
       
       @scala.inline
       def setRead(value: (/* value */ String, /* name */ String) => String): Self = StObject.set(x, "read", js.Any.fromFunction2(value))

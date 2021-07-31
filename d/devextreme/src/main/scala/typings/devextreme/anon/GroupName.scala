@@ -5,19 +5,17 @@ import typings.devextreme.devextremeStrings.smallValueThreshold
 import typings.devextreme.devextremeStrings.topN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupName extends StObject {
   
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[none | smallValueThreshold | topN] = js.native
+  var mode: js.UndefOr[none | smallValueThreshold | topN] = js.undefined
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
   
-  var topCount: js.UndefOr[Double] = js.native
+  var topCount: js.UndefOr[Double] = js.undefined
 }
 object GroupName {
   

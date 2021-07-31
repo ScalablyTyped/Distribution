@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RandomSplitActivity extends StObject {
   
   /**
     * The paths for the activity, including the percentage of participants to enter each path and the activity to perform for each path.
     */
-  var Branches: js.UndefOr[ListOfRandomSplitEntry] = js.native
+  var Branches: js.UndefOr[ListOfRandomSplitEntry] = js.undefined
 }
 object RandomSplitActivity {
   

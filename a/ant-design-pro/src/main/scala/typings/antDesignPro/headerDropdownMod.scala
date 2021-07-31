@@ -11,7 +11,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerDropdownMod {
@@ -23,14 +22,15 @@ object headerDropdownMod {
   
   type HeaderDropdown = Component[HeaderDropdownProps, js.Any, js.Any]
   
-  @js.native
-  trait HeaderDropdownProps extends DropDownProps {
+  trait HeaderDropdownProps
+    extends StObject
+       with DropDownProps {
     
     @JSName("overlay")
-    var overlay_HeaderDropdownProps: ReactNode | OverlayFunc = js.native
+    var overlay_HeaderDropdownProps: ReactNode | OverlayFunc
     
     @JSName("placement")
-    var placement_HeaderDropdownProps: js.UndefOr[bottomLeft | bottomRight | topLeft | topCenter | topRight | bottomCenter] = js.native
+    var placement_HeaderDropdownProps: js.UndefOr[bottomLeft | bottomRight | topLeft | topCenter | topRight | bottomCenter] = js.undefined
   }
   object HeaderDropdownProps {
     

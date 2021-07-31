@@ -2,16 +2,15 @@ package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExtensionMapField
-  extends IMapField
+  extends StObject
+     with IMapField
      with AnyExtensionField {
   
   /** Extended type */
-  var extend: String = js.native
+  var extend: String
 }
 object IExtensionMapField {
   

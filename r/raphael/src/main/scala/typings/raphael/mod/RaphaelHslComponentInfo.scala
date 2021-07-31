@@ -2,26 +2,24 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelHslComponentInfo extends StObject {
   
   /**
     * The HSB or HSL hue channel.
     */
-  var h: Double = js.native
+  var h: Double
   
   /**
     * The HSL luminosity channel.
     */
-  var l: Double = js.native
+  var l: Double
   
   /**
     * The HSB or HSL saturation channel.
     */
-  var s: Double = js.native
+  var s: Double
 }
 object RaphaelHslComponentInfo {
   

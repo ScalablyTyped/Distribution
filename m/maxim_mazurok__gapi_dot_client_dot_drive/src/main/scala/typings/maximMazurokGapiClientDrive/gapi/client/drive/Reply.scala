@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reply extends StObject {
   
   /**
@@ -13,31 +11,31 @@ trait Reply extends StObject {
     * - resolve
     * - reopen
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** The author of the reply. The author's email address and permission ID will not be populated. */
-  var author: js.UndefOr[User] = js.native
+  var author: js.UndefOr[User] = js.undefined
   
   /** The plain text content of the reply. This field is used for setting the content, while htmlContent should be displayed. This is required on creates if no action is specified. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** The time at which the reply was created (RFC 3339 date-time). */
-  var createdTime: js.UndefOr[String] = js.native
+  var createdTime: js.UndefOr[String] = js.undefined
   
   /** Whether the reply has been deleted. A deleted reply has no content. */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /** The content of the reply with HTML formatting. */
-  var htmlContent: js.UndefOr[String] = js.native
+  var htmlContent: js.UndefOr[String] = js.undefined
   
   /** The ID of the reply. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#reply". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The last time the reply was modified (RFC 3339 date-time). */
-  var modifiedTime: js.UndefOr[String] = js.native
+  var modifiedTime: js.UndefOr[String] = js.undefined
 }
 object Reply {
   

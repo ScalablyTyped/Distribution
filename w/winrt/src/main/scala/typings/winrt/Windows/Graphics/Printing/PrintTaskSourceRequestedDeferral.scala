@@ -2,11 +2,11 @@ package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintTaskSourceRequestedDeferral extends IPrintTaskSourceRequestedDeferral
+trait PrintTaskSourceRequestedDeferral
+  extends StObject
+     with IPrintTaskSourceRequestedDeferral
 object PrintTaskSourceRequestedDeferral {
   
   @scala.inline

@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMergeCommitOutput extends StObject {
   
   /**
     * The commit ID of the merge base.
     */
-  var baseCommitId: js.UndefOr[ObjectId] = js.native
+  var baseCommitId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The commit ID of the destination commit specifier that was used in the merge evaluation.
     */
-  var destinationCommitId: js.UndefOr[ObjectId] = js.native
+  var destinationCommitId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The commit ID for the merge commit created when the source branch was merged into the destination branch. If the fast-forward merge strategy was used, there is no merge commit.
     */
-  var mergedCommitId: js.UndefOr[ObjectId] = js.native
+  var mergedCommitId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The commit ID of the source commit specifier that was used in the merge evaluation.
     */
-  var sourceCommitId: js.UndefOr[ObjectId] = js.native
+  var sourceCommitId: js.UndefOr[ObjectId] = js.undefined
 }
 object GetMergeCommitOutput {
   

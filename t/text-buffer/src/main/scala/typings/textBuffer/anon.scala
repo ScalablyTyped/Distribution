@@ -16,15 +16,13 @@ import typings.textBuffer.textBufferStrings.surround
 import typings.textBuffer.textBufferStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var clipDirection: backward | forward | closest = js.native
+    var clipDirection: backward | forward | closest
   }
   object `0` {
     
@@ -42,12 +40,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ClipDirection extends StObject {
     
-    var clipDirection: js.UndefOr[backward | forward | closest] = js.native
+    var clipDirection: js.UndefOr[backward | forward | closest] = js.undefined
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
   }
   object ClipDirection {
     
@@ -74,16 +71,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ClipDirectionExclusive extends StObject {
     
-    var clipDirection: js.UndefOr[backward | forward | closest] = js.native
+    var clipDirection: js.UndefOr[backward | forward | closest] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
   }
   object ClipDirectionExclusive {
     
@@ -122,14 +118,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ClipDirectionExclusiveInvalidate extends StObject {
     
-    var clipDirection: js.UndefOr[backward | forward | closest] = js.native
+    var clipDirection: js.UndefOr[backward | forward | closest] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
   }
   object ClipDirectionExclusiveInvalidate {
     
@@ -162,12 +157,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Exclusive extends StObject {
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
   }
   object Exclusive {
     
@@ -194,12 +188,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ExclusiveInvalidate extends StObject {
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
   }
   object ExclusiveInvalidate {
     
@@ -226,14 +219,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Invalidate extends StObject {
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+    var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
   }
   object Invalidate {
     
@@ -266,12 +258,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaintainHistory extends StObject {
     
-    var maintainHistory: js.UndefOr[Boolean] = js.native
+    var maintainHistory: js.UndefOr[Boolean] = js.undefined
     
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object MaintainHistory {
     
@@ -298,20 +289,19 @@ object anon {
     }
   }
   
-  @js.native
   trait NewExtent extends StObject {
     
     /** A Point representing the replacement extent. */
-    var newExtent: Point = js.native
+    var newExtent: Point
     
     /** A String representing the replacement text. */
-    var newText: String = js.native
+    var newText: String
     
     /** A Point representing the replaced extent. */
-    var oldExtent: Point = js.native
+    var oldExtent: Point
     
     /** A Point representing where the change started. */
-    var start: Point = js.native
+    var start: Point
   }
   object NewExtent {
     
@@ -338,12 +328,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NormalizeLineEndings extends StObject {
     
-    var normalizeLineEndings: js.UndefOr[Boolean] = js.native
+    var normalizeLineEndings: js.UndefOr[Boolean] = js.undefined
     
-    var undo: js.UndefOr[skip] = js.native
+    var undo: js.UndefOr[skip] = js.undefined
   }
   object NormalizeLineEndings {
     
@@ -371,38 +360,37 @@ object anon {
   }
   
   /* Inlined std.Readonly<text-buffer.text-buffer.<global>.TextBuffer.Point> */
-  @js.native
   trait ReadonlyPoint extends StObject {
     
-    val column: Double = js.native
+    val column: Double
     
-    def compare(other: PointCompatible): Double = js.native
+    def compare(other: PointCompatible): Double
     
-    def copy(): this.type = js.native
+    def copy(): this.type
     
-    def freeze(): this.type = js.native
+    def freeze(): this.type
     
-    def isEqual(other: PointCompatible): Boolean = js.native
+    def isEqual(other: PointCompatible): Boolean
     
-    def isGreaterThan(other: PointCompatible): Boolean = js.native
+    def isGreaterThan(other: PointCompatible): Boolean
     
-    def isGreaterThanOrEqual(other: PointCompatible): Boolean = js.native
+    def isGreaterThanOrEqual(other: PointCompatible): Boolean
     
-    def isLessThan(other: PointCompatible): Boolean = js.native
+    def isLessThan(other: PointCompatible): Boolean
     
-    def isLessThanOrEqual(other: PointCompatible): Boolean = js.native
+    def isLessThanOrEqual(other: PointCompatible): Boolean
     
-    def negate(): this.type = js.native
+    def negate(): this.type
     
-    val row: Double = js.native
+    val row: Double
     
-    def serialize(): js.Tuple2[Double, Double] = js.native
+    def serialize(): js.Tuple2[Double, Double]
     
-    def toArray(): js.Tuple2[Double, Double] = js.native
+    def toArray(): js.Tuple2[Double, Double]
     
-    def translate(other: PointCompatible): this.type = js.native
+    def translate(other: PointCompatible): this.type
     
-    def traverse(other: PointCompatible): this.type = js.native
+    def traverse(other: PointCompatible): this.type
   }
   object ReadonlyPoint {
     
@@ -529,10 +517,9 @@ object anon {
     def union(other: RangeLike): this.type = js.native
   }
   
-  @js.native
   trait Reversed extends StObject {
     
-    var reversed: Boolean = js.native
+    var reversed: Boolean
   }
   object Reversed {
     
@@ -550,17 +537,16 @@ object anon {
     }
   }
   
-  @js.native
   trait ShouldDestroyOnFileDelete extends StObject {
     
     /**
       *  A function that returns a Boolean indicating whether the buffer should
       *  be destroyed if its file is deleted.
       */
-    var shouldDestroyOnFileDelete: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldDestroyOnFileDelete: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** The initial string text of the buffer. */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ShouldDestroyOnFileDelete {
     

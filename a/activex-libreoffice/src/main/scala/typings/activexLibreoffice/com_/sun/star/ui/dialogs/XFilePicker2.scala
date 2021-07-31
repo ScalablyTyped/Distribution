@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends file picker interface to workaround some design problems. */
-@js.native
-trait XFilePicker2 extends XFilePicker {
+trait XFilePicker2
+  extends StObject
+     with XFilePicker {
   
   /**
     * Returns a sequence of the selected files including path information in URL format, conforming to [Rfc1738]{@link
@@ -24,7 +24,7 @@ trait XFilePicker2 extends XFilePicker {
     *  Instead to the method {@link getFiles()} of base interface {@link XFilePicker} the new method return full qualified URLs for every selected file.
     * @returns A list of all selected file as complete URLs.  ;   **Notes for the implementation of a FileSave dialog:** If there exists a checkbox "Automatic F
     */
-  val SelectedFiles: SafeArray[String] = js.native
+  val SelectedFiles: SafeArray[String]
   
   /**
     * Returns a sequence of the selected files including path information in URL format, conforming to [Rfc1738]{@link
@@ -39,7 +39,7 @@ trait XFilePicker2 extends XFilePicker {
     *  Instead to the method {@link getFiles()} of base interface {@link XFilePicker} the new method return full qualified URLs for every selected file.
     * @returns A list of all selected file as complete URLs.  ;   **Notes for the implementation of a FileSave dialog:** If there exists a checkbox "Automatic F
     */
-  def getSelectedFiles(): SafeArray[String] = js.native
+  def getSelectedFiles(): SafeArray[String]
 }
 object XFilePicker2 {
   

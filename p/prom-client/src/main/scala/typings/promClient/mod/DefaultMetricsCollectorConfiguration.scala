@@ -2,19 +2,17 @@ package typings.promClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultMetricsCollectorConfiguration extends StObject {
   
-  var eventLoopMonitoringPrecision: js.UndefOr[Double] = js.native
+  var eventLoopMonitoringPrecision: js.UndefOr[Double] = js.undefined
   
-  var gcDurationBuckets: js.UndefOr[js.Array[Double]] = js.native
+  var gcDurationBuckets: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var register: js.UndefOr[Registry] = js.native
+  var register: js.UndefOr[Registry] = js.undefined
 }
 object DefaultMetricsCollectorConfiguration {
   

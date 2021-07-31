@@ -2,29 +2,29 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetTrainedModels extends Generic {
+trait MlGetTrainedModels
+  extends StObject
+     with Generic {
   
-  var allow_no_match: js.UndefOr[Boolean] = js.native
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   
-  var decompress_definition: js.UndefOr[Boolean] = js.native
+  var decompress_definition: js.UndefOr[Boolean] = js.undefined
   
-  var for_export: js.UndefOr[Boolean] = js.native
+  var for_export: js.UndefOr[Boolean] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var include: js.UndefOr[String] = js.native
+  var include: js.UndefOr[String] = js.undefined
   
-  var include_model_definition: js.UndefOr[Boolean] = js.native
+  var include_model_definition: js.UndefOr[Boolean] = js.undefined
   
-  var model_id: js.UndefOr[String] = js.native
+  var model_id: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var tags: js.UndefOr[String | js.Array[String]] = js.native
+  var tags: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object MlGetTrainedModels {
   

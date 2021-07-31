@@ -2,74 +2,74 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the DevExpress.Web.ASPxGantt control.
   */
-@js.native
-trait ASPxClientGantt extends ASPxClientControl {
+trait ASPxClientGantt
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
-  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGantt]] = js.native
+  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGantt]]
   
   /**
     * Fires on the client if any server error occurs during server-side processing of a callback sent by the ASPxClientGantt.
     */
-  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientGantt]] = js.native
+  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientGantt]]
   
   /**
     * Collapses all tasks.
     */
-  def CollapseAll(): Unit = js.native
+  def CollapseAll(): Unit
   
   /**
     * Collapses the specified parent task.
     * @param key The task key.
     */
-  def CollapseTask(key: js.Any): Unit = js.native
+  def CollapseTask(key: js.Any): Unit
   
   /**
     * Enables you to implement a custom command's logic.
     */
-  var CustomCommand: ASPxClientEvent[ASPxClientGanttCustomCommandEventHandler[ASPxClientGantt]] = js.native
+  var CustomCommand: ASPxClientEvent[ASPxClientGanttCustomCommandEventHandler[ASPxClientGantt]]
   
   /**
     * Occurs on the client side after a callback's server-side processing has been completed.
     */
-  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGantt]] = js.native
+  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGantt]]
   
   /**
     * Expands all tasks.
     */
-  def ExpandAll(): Unit = js.native
+  def ExpandAll(): Unit
   
   /**
     * Expands the specified task.
     * @param key The task key.
     */
-  def ExpandTask(key: js.Any): Unit = js.native
+  def ExpandTask(key: js.Any): Unit
   
   /**
     * Sets the task's title position.
     * @param position The task position.
     */
-  def SetTaskTitlePosition(position: ASPxClientGanttTaskTitlePosition): Unit = js.native
+  def SetTaskTitlePosition(position: ASPxClientGanttTaskTitlePosition): Unit
   
   /**
     * Specifies the view type.
     * @param viewType The control's view type.
     */
-  def SetViewType(viewType: ASPxClientGanttViewType): Unit = js.native
+  def SetViewType(viewType: ASPxClientGanttViewType): Unit
   
   /**
     * Specifies whether the resources are visible in the Gantt.
     * @param value true, to show resources in the Gantt; otherwise, false.
     */
-  def ShowResources(value: Boolean): Unit = js.native
+  def ShowResources(value: Boolean): Unit
 }
 object ASPxClientGantt {
   

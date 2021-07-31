@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputClippingSettings extends StObject {
   
   /**
     * The source of the timecodes in the source being clipped.
     */
-  var InputTimecodeSource: typings.awsSdk.medialiveMod.InputTimecodeSource = js.native
+  var InputTimecodeSource: typings.awsSdk.medialiveMod.InputTimecodeSource
   
   /**
     * Settings to identify the start of the clip.
     */
-  var StartTimecode: js.UndefOr[typings.awsSdk.medialiveMod.StartTimecode] = js.native
+  var StartTimecode: js.UndefOr[typings.awsSdk.medialiveMod.StartTimecode] = js.undefined
   
   /**
     * Settings to identify the end of the clip.
     */
-  var StopTimecode: js.UndefOr[typings.awsSdk.medialiveMod.StopTimecode] = js.native
+  var StopTimecode: js.UndefOr[typings.awsSdk.medialiveMod.StopTimecode] = js.undefined
 }
 object InputClippingSettings {
   

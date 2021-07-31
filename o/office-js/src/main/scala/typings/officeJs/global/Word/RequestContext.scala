@@ -2,7 +2,6 @@ package typings.officeJs.global.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Word.RequestContext")
 @js.native
 class RequestContext ()
-  extends typings.officeJs.Word.RequestContext {
+  extends StObject
+     with typings.officeJs.Word.RequestContext {
   def this(url: String) = this()
 }

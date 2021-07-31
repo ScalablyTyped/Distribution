@@ -5,15 +5,13 @@ import typings.reactNavigationCore.navigationBuilderContextMod.GetStateListener
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeforeRemove extends StObject {
   
-  var beforeRemove: Record[String, js.UndefOr[ChildBeforeRemoveListener]] = js.native
+  var beforeRemove: Record[String, js.UndefOr[ChildBeforeRemoveListener]]
   
-  var getState: Record[String, js.UndefOr[GetStateListener]] = js.native
+  var getState: Record[String, js.UndefOr[GetStateListener]]
 }
 object BeforeRemove {
   

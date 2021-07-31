@@ -8,7 +8,6 @@ import typings.std.Element
 import typings.std.SVGPathElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -130,7 +129,6 @@ object mod {
   @scala.inline
   def utils_=(x: Typeofutils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utils")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AnimationOptions extends StObject {
     
     /**
@@ -138,24 +136,24 @@ object mod {
       * you need to modify within the step function.
       * Passed as a parameter to step function.
       */
-    var attachement: js.UndefOr[SVGPathElement] = js.native
+    var attachement: js.UndefOr[SVGPathElement] = js.undefined
     
     /**
       * Duration for animation in milliseconds
       * @default 800
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Easing for animation.
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var from: js.UndefOr[Color] = js.native
+    var from: js.UndefOr[Color] = js.undefined
     
-    var step: js.UndefOr[StepFunction] = js.native
+    var step: js.UndefOr[StepFunction] = js.undefined
     
-    var to: js.UndefOr[Color] = js.native
+    var to: js.UndefOr[Color] = js.undefined
   }
   object AnimationOptions {
     
@@ -217,7 +215,7 @@ object mod {
       * @param [cb] - Callback function which is called after transition ends.
       */
     def animate(progress: Double): Unit = js.native
-    def animate(progress: Double, options: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def animate(progress: Double, options: Unit, cb: js.Function0[Unit]): Unit = js.native
     def animate(progress: Double, options: AnimationOptions): Unit = js.native
     def animate(progress: Double, options: AnimationOptions, cb: js.Function0[Unit]): Unit = js.native
     
@@ -242,10 +240,9 @@ object mod {
     def value(): Double = js.native
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: String = js.native
+    var color: String
   }
   object Color {
     
@@ -266,20 +263,21 @@ object mod {
   /**
     * Options for path drawing
     */
-  @js.native
-  trait PathDrawingOptions extends AnimationOptions {
+  trait PathDrawingOptions
+    extends StObject
+       with AnimationOptions {
     
     /**
       * Stroke color.
       * @default '#3a3a3a'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Fill color for the shape. If null, no fill.
       * @default null
       */
-    var fill: js.UndefOr[String | Null] = js.native
+    var fill: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Width of the stroke.
@@ -290,7 +288,7 @@ object mod {
       * @see {@link https://github.com/kimmobrunfeldt/progressbar.js/issues/79}
       * @default 1.0
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Inline CSS styles for the created SVG element
@@ -299,7 +297,7 @@ object mod {
       * If you specify anything in this object, none of the default styles apply
       * @default null
       */
-    var svgStyle: js.UndefOr[SvgInlineStyle | Null] = js.native
+    var svgStyle: js.UndefOr[SvgInlineStyle | Null] = js.undefined
     
     /**
       *  Text element is a <p> element appended to container
@@ -308,28 +306,28 @@ object mod {
       * You can also prevent all default inline styles with 'text.style: null'
       * @default null
       */
-    var text: js.UndefOr[TextOptions | Null] = js.native
+    var text: js.UndefOr[TextOptions | Null] = js.undefined
     
     /**
       * If trail options are not defined, trail won't be drawn
       * Color for lighter trail stroke underneath the actual progress path.
       * @default '#eee'
       */
-    var trailColor: js.UndefOr[String] = js.native
+    var trailColor: js.UndefOr[String] = js.undefined
     
     /**
       * Width of the trail stroke.
       * Trail is always centered relative to actual progress path.
       * @default 1.0
       */
-    var trailWidth: js.UndefOr[Double] = js.native
+    var trailWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, some useful console.warn calls will be done if it seems
       * that progressbar is used incorrectly
       * @default false
       */
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
   }
   object PathDrawingOptions {
     
@@ -416,7 +414,6 @@ object mod {
   /** Inline CSS styles for the text element */
   type TextInlineStyle = StringDictionary[js.Any]
   
-  @js.native
   trait TextOptions extends StObject {
     
     /**
@@ -425,7 +422,7 @@ object mod {
       * If false, bottom line of SVG canvas is in the center of text.
       * @default true
       */
-    var alignToBottom: js.UndefOr[Boolean] = js.native
+    var alignToBottom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only effective if the `text.style` is not `null`.
@@ -433,13 +430,13 @@ object mod {
       * Setting this to false disables that feature.
       * @default true
       */
-    var autoStyleContainer: js.UndefOr[Boolean] = js.native
+    var autoStyleContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class name for text element.
       * @default 'progressbar-text'
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Inline CSS styles for the text element.
@@ -448,13 +445,13 @@ object mod {
       * set to position: relative. You can disable behavior this with `autoStyleContainer: false`
       * If you specify anything in this object, none of the default styles apply.
       */
-    var style: js.UndefOr[TextInlineStyle | Null] = js.native
+    var style: js.UndefOr[TextInlineStyle | Null] = js.undefined
     
     /**
       * Initial value for text.
       * @default null
       */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
   }
   object TextOptions {
     

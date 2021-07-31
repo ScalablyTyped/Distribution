@@ -5,12 +5,11 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgDialog
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,30 +17,30 @@ trait IgDialog
   /**
     * Event which is raised after the end of the animation when the dialog was closed or opened.
     */
-  var animationEnded: js.UndefOr[AnimationEndedEvent] = js.native
+  var animationEnded: js.UndefOr[AnimationEndedEvent] = js.undefined
   
   /**
     * Event which is raised when the dialog or its content loses focus.
     */
-  var blur: js.UndefOr[BlurEvent] = js.native
+  var blur: js.UndefOr[BlurEvent] = js.undefined
   
   /**
     * Gets/Sets the animation applied to the dialog when it is closed. That can be any object supported by the jquery hide(param) method.
     *
     */
-  var closeAnimation: js.UndefOr[js.Any] = js.native
+  var closeAnimation: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the close button in the dialog. Use option [locale.closeButtonTitle](ui.igdialog#options:locale.closeButtonTitle).
     */
-  var closeButtonTitle: js.UndefOr[String] = js.native
+  var closeButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets whether the dialog should close when Esc key is pressed.
     *
     */
-  var closeOnEscape: js.UndefOr[Boolean] = js.native
+  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the container html element for the dialog.
@@ -50,19 +49,19 @@ trait IgDialog
     * Note: If the "position" of the container is not set or it is "static", then the position is set to "relative".
     *
     */
-  var container: js.UndefOr[js.Any] = js.native
+  var container: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the name of the css class which is applied to the main DIV element of the dialog.
     *
     */
-  var dialogClass: js.UndefOr[String] = js.native
+  var dialogClass: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets whether the dialog can be dragged by the user.
     *
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the processing of the double-click on the dialog-header.If this option is not false and dialog was minimized, then its state will be set to normal.
@@ -70,51 +69,51 @@ trait IgDialog
     * and dialog-state will be set to normal if it was maximized.
     *
     */
-  var enableDblclick: js.UndefOr[js.Any] = js.native
+  var enableDblclick: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets the ability to adjust the state of the header depending on focused and not-focused states. Note: the "trackFocus" option should be enabled.
     *
     */
-  var enableHeaderFocus: js.UndefOr[Boolean] = js.native
+  var enableHeaderFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event which is raised when the dialog or its content gets focus.
     */
-  var focus: js.UndefOr[IgFocusEvent] = js.native
+  var focus: js.UndefOr[IgFocusEvent] = js.undefined
   
   /**
     * Gets/Sets the text which appears in the footer of the dialog.
     *
     */
-  var footerText: js.UndefOr[String] = js.native
+  var footerText: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the text which appears in the header of the dialog.
     *
     */
-  var headerText: js.UndefOr[String] = js.native
+  var headerText: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the initial height of the dialog in pixels for normal state.Besides numeric values, following units are supported: "px", "em" and "%".
     * In case of "%", the size of browser window is used and it has effect only on open action.
     *
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Gets the name of the css class which is applied to the SPAN element located on the left side of the header.
     *
     */
-  var imageClass: js.UndefOr[String] = js.native
+  var imageClass: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[IgDialogLocale] = js.native
+  var locale: js.UndefOr[IgDialogLocale] = js.undefined
   
   /**
     * Gets the jquery DIV object which is used as the main container for the dialog.
@@ -125,43 +124,43 @@ trait IgDialog
     * 4. Change of that option is not supported.
     *
     */
-  var mainElement: js.UndefOr[Element] = js.native
+  var mainElement: js.UndefOr[Element] = js.undefined
   
   /**
     * Gets/Sets the maximal height of the dialog in normal state. Note: that option has effect only while resizing the dialog by the end user.
     *
     */
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the maximal width of the dialog in normal state. Note: that option has effect only while resizing the dialog by the end user.
     *
     */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the maximize button in the dialog. Use option [locale.minimizeButtonTitle](ui.igdialog#options:locale.minimizeButtonTitle).
     */
-  var maximizeButtonTitle: js.UndefOr[String] = js.native
+  var maximizeButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the minimal height of the dialog in normal state.
     *
     */
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the minimal width of the dialog in normal state.
     *
     */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the minimize button in the dialog. Use option [locale.minimizeButtonTitle](ui.igdialog#options:locale.minimizeButtonTitle).
     */
-  var minimizeButtonTitle: js.UndefOr[String] = js.native
+  var minimizeButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the modal state of the dialog.
@@ -169,25 +168,25 @@ trait IgDialog
     * Note: the modal functionality is not supported when the dialog is minimized or pinned, because that will trigger misbehavior.
     *
     */
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the animation applied to the dialog when it is opened. That can be any object supported by the jquery show(param) method.
     *
     */
-  var openAnimation: js.UndefOr[js.Any] = js.native
+  var openAnimation: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the pin button in the dialog. Use option [locale.pinButtonTitle](ui.igdialog#options:locale.pinButtonTitle).
     */
-  var pinButtonTitle: js.UndefOr[String] = js.native
+  var pinButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets whether the dialog will be pinned on minimize.
     *
     */
-  var pinOnMinimized: js.UndefOr[Boolean] = js.native
+  var pinOnMinimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the dialog is pinned.
@@ -198,68 +197,68 @@ trait IgDialog
     * 2. Pinned state is not supported for modal dialog.
     *
     */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the initial position of the dialog. That should be an object, which contains "top" and "left" members or an object
     * supported by jquery.position(param) method. Examples: { left: 100, top: 200 }, { my: "left top", at: "left top", offset: "100 200" }
     *
     */
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Gets/Sets whether the dialog can be resized by the user.
     *
     */
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the restore button in the dialog.  Use option [locale.restoreButtonTitle](ui.igdialog#options:locale.restoreButtonTitle).
     */
-  var restoreButtonTitle: js.UndefOr[String] = js.native
+  var restoreButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets whether the close button in the dialog header should be visible.
     *
     */
-  var showCloseButton: js.UndefOr[Boolean] = js.native
+  var showCloseButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the dialog footer should be visible.
     *
     */
-  var showFooter: js.UndefOr[Boolean] = js.native
+  var showFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the dialog header should be visible.
     *
     */
-  var showHeader: js.UndefOr[Boolean] = js.native
+  var showHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the maximize button in the dialog header should be visible.
     *
     */
-  var showMaximizeButton: js.UndefOr[Boolean] = js.native
+  var showMaximizeButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the minimize button in the dialog header should be visible.
     *
     */
-  var showMinimizeButton: js.UndefOr[Boolean] = js.native
+  var showMinimizeButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the pin button in the dialog header should be visible.
     *
     */
-  var showPinButton: js.UndefOr[Boolean] = js.native
+  var showPinButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the state of the dialog.Note: when the dialog is modal, then pinned and minimized states are not supported, because that will trigger misbehavior.
@@ -271,30 +270,30 @@ trait IgDialog
     * "maximized" The dialog is maximized.
     * "closed" The dialog is closed.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised after the state of the dialog was changed.
     */
-  var stateChanged: js.UndefOr[StateChangedEvent] = js.native
+  var stateChanged: js.UndefOr[StateChangedEvent] = js.undefined
   
   /**
     * Event which is raised before the state of the dialog was changed.
     * Return false in order to cancel the action.
     */
-  var stateChanging: js.UndefOr[StateChangingEvent] = js.native
+  var stateChanging: js.UndefOr[StateChangingEvent] = js.undefined
   
   /**
     * Gets/Sets the value for the tabIndex attribute applied to the main html element of the dialog.
     *
     */
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the temporary value for src, which is used while changing the parent of the base element if it is an instance of IFRAME. That allows getting around possible JavaScript exceptions under IE.
     *
     */
-  var temporaryUrl: js.UndefOr[String] = js.native
+  var temporaryUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the ability to process focus and blur events of the child elements located in the dialog in order to maintain the focused state.
@@ -304,26 +303,26 @@ trait IgDialog
     * If that option is modified after the igDialog was already created, then depending on current state of the dialog, it will be temporary closed-opened or opened-closed.
     *
     */
-  var trackFocus: js.UndefOr[Boolean] = js.native
+  var trackFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets the title/tooltip for the unpin button in the dialog. Use option [locale.unpinButtonTitle](ui.igdialog#options:locale.unpinButtonTitle).
     */
-  var unpinButtonTitle: js.UndefOr[String] = js.native
+  var unpinButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the initial width of the dialog in pixels for normal state.Besides numeric values, following units are supported: "px", "em" and "%".
     * In case of "%", the size of browser window is used and it has effect only on open action.
     *
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Gets/Sets the value of zIndex applied to the main html element of the dialog. If value is not set, then 1000 is used.
     *
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object IgDialog {
   

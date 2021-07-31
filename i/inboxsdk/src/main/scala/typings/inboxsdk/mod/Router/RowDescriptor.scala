@@ -3,33 +3,31 @@ package typings.inboxsdk.mod.Router
 import typings.inboxsdk.mod.Lists.LabelDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowDescriptor extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
-  var iconHtml: js.UndefOr[String] = js.native
+  var iconHtml: js.UndefOr[String] = js.undefined
   
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
-  var isRead: String = js.native
+  var isRead: String
   
-  var labels: js.Array[LabelDescriptor] = js.native
+  var labels: js.Array[LabelDescriptor]
   
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var routeID: js.UndefOr[String] = js.native
+  var routeID: js.UndefOr[String] = js.undefined
   
-  var routeParams: js.UndefOr[js.Array[String]] = js.native
+  var routeParams: js.UndefOr[js.Array[String]] = js.undefined
   
-  var shortDetailText: String = js.native
+  var shortDetailText: String
   
-  var title: String = js.native
+  var title: String
 }
 object RowDescriptor {
   

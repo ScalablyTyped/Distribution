@@ -14,190 +14,153 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("numjs", "abs")
+  @JSImport("numjs", JSImport.Namespace)
   @js.native
-  def abs[T](x: NjParam[T]): NdArray[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("numjs", "add")
-  @js.native
-  def add[T](a: NjParam[T], b: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def abs[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "arange")
-  @js.native
-  def arange[T](start: Double): NdArray[T] = js.native
-  @JSImport("numjs", "arange")
-  @js.native
-  def arange[T](start: Double, stop: js.UndefOr[scala.Nothing], dtype: NdType[T]): NdArray[T] = js.native
-  @JSImport("numjs", "arange")
-  @js.native
-  def arange[T](start: Double, stop: Double): NdArray[T] = js.native
-  @JSImport("numjs", "arange")
-  @js.native
-  def arange[T](start: Double, stop: Double, dtype: NdType[T]): NdArray[T] = js.native
-  @JSImport("numjs", "arange")
-  @js.native
-  def arange[T](start: Double, stop: Double, step: Double): NdArray[T] = js.native
-  @JSImport("numjs", "arange")
-  @js.native
-  def arange[T](start: Double, stop: Double, step: Double, dtype: NdType[T]): NdArray[T] = js.native
-  @JSImport("numjs", "arange")
-  @js.native
-  def arange[T](stop: Double, dtype: NdType[T]): NdArray[T] = js.native
+  @scala.inline
+  def add[T](a: NjParam[T], b: NjParam[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "arccos")
-  @js.native
-  def arccos[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def arange[T](start: Double): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arange")(start.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def arange[T](start: Double, stop: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arange")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def arange[T](start: Double, stop: Double, dtype: NdType[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arange")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def arange[T](start: Double, stop: Double, step: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arange")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def arange[T](start: Double, stop: Double, step: Double, dtype: NdType[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arange")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def arange[T](start: Double, stop: Unit, dtype: NdType[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arange")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def arange[T](stop: Double, dtype: NdType[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arange")(stop.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "arcsin")
-  @js.native
-  def arcsin[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def arccos[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arccos")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "arctan")
-  @js.native
-  def arctan[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def arcsin[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arcsin")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "array")
-  @js.native
-  def array[T](arr: NjArray[T]): NdArray[T] = js.native
-  @JSImport("numjs", "array")
-  @js.native
-  def array[T](arr: NjArray[T], dtype: DataType): NdArray[T] = js.native
+  @scala.inline
+  def arctan[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arctan")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "broadcast")
-  @js.native
-  def broadcast[T, U](shape1: js.Array[T], shape2: js.Array[U]): js.Array[T | U] = js.native
+  @scala.inline
+  def array[T](arr: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(arr.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def array[T](arr: NjArray[T], dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(arr.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "clip")
-  @js.native
-  def clip[T](x: NjParam[T]): NdArray[T] = js.native
-  @JSImport("numjs", "clip")
-  @js.native
-  def clip[T](x: NjParam[T], min: js.UndefOr[scala.Nothing], max: Double): NdArray[T] = js.native
-  @JSImport("numjs", "clip")
-  @js.native
-  def clip[T](x: NjParam[T], min: Double): NdArray[T] = js.native
-  @JSImport("numjs", "clip")
-  @js.native
-  def clip[T](x: NjParam[T], min: Double, max: Double): NdArray[T] = js.native
+  @scala.inline
+  def broadcast[T, U](shape1: js.Array[T], shape2: js.Array[U]): js.Array[T | U] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(shape1.asInstanceOf[js.Any], shape2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T | U]]
   
-  @JSImport("numjs", "concatenate")
-  @js.native
-  def concatenate[T](arrays: NjArray[T]*): NdArray[T] = js.native
+  @scala.inline
+  def clip[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("clip")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def clip[T](x: NjParam[T], min: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("clip")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def clip[T](x: NjParam[T], min: Double, max: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("clip")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def clip[T](x: NjParam[T], min: Unit, max: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("clip")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "convolve")
-  @js.native
-  def convolve[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def concatenate[T](arrays: NjArray[T]*): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(arrays.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "cos")
-  @js.native
-  def cos[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def convolve[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convolve")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "diag")
-  @js.native
-  def diag[T](x: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def cos[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "divide")
-  @js.native
-  def divide[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def diag[T](x: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("diag")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "dot")
-  @js.native
-  def dot[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def divide[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "empty")
-  @js.native
-  def empty[T](shape: Double): NdArray[T] = js.native
-  @JSImport("numjs", "empty")
-  @js.native
-  def empty[T](shape: Double, dtype: NdType[T]): NdArray[T] = js.native
-  @JSImport("numjs", "empty")
-  @js.native
-  def empty[T](shape: NdArrayData[T]): NdArray[T] = js.native
-  @JSImport("numjs", "empty")
-  @js.native
-  def empty[T](shape: NdArrayData[T], dtype: NdType[T]): NdArray[T] = js.native
+  @scala.inline
+  def dot[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "equal")
-  @js.native
-  def equal[T](a: NjArray[T], b: NjArray[T]): Boolean = js.native
+  @scala.inline
+  def empty[T](shape: Double): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def empty[T](shape: Double, dtype: NdType[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("empty")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def empty[T](shape: NdArrayData[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def empty[T](shape: NdArrayData[T], dtype: NdType[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("empty")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  
+  @scala.inline
+  def equal[T](a: NjArray[T], b: NjArray[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   object errors {
     
-    @JSImport("numjs", "errors.ConfigError")
+    @JSImport("numjs", "errors")
     @js.native
-    def ConfigError(): Error = js.native
-    @JSImport("numjs", "errors.ConfigError")
-    @js.native
-    def ConfigError(message: String): Error = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("numjs", "errors.NotImplementedError")
-    @js.native
-    def NotImplementedError(): Error = js.native
-    @JSImport("numjs", "errors.NotImplementedError")
-    @js.native
-    def NotImplementedError(message: String): Error = js.native
+    @scala.inline
+    def ConfigError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfigError")().asInstanceOf[Error]
+    @scala.inline
+    def ConfigError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfigError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
     
-    @JSImport("numjs", "errors.ValueError")
-    @js.native
-    def ValueError(): Error = js.native
-    @JSImport("numjs", "errors.ValueError")
-    @js.native
-    def ValueError(message: String): Error = js.native
+    @scala.inline
+    def NotImplementedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NotImplementedError")().asInstanceOf[Error]
+    @scala.inline
+    def NotImplementedError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("NotImplementedError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+    
+    @scala.inline
+    def ValueError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueError")().asInstanceOf[Error]
+    @scala.inline
+    def ValueError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
   }
   
-  @JSImport("numjs", "exp")
-  @js.native
-  def exp[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def exp[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "fft")
-  @js.native
-  def fft[T](x: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def fft[T](x: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fft")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "fftconvolve")
-  @js.native
-  def fftconvolve[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def fftconvolve[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fftconvolve")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "flatten")
-  @js.native
-  def flatten[T](array: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def flatten[T](array: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "float32")
-  @js.native
-  def float32[T](arr: NjArray[T]): NjArray[Float32Array] = js.native
+  @scala.inline
+  def float32[T](arr: NjArray[T]): NjArray[Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("float32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Float32Array]]
   
-  @JSImport("numjs", "float64")
-  @js.native
-  def float64[T](arr: NjArray[T]): NjArray[Float64Array] = js.native
+  @scala.inline
+  def float64[T](arr: NjArray[T]): NjArray[Float64Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("float64")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Float64Array]]
   
-  @JSImport("numjs", "getRawData")
-  @js.native
-  def getRawData[T](array: NdArrayData[T]): Uint8Array = js.native
+  @scala.inline
+  def getRawData[T](array: NdArrayData[T]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawData")(array.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("numjs", "identity")
-  @js.native
-  def identity[T](n: T): NdArray[T] = js.native
-  @JSImport("numjs", "identity")
-  @js.native
-  def identity[T](n: T, dtype: DataType): NdArray[T] = js.native
+  @scala.inline
+  def identity[T](n: T): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(n.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def identity[T](n: T, dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("identity")(n.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "ifft")
-  @js.native
-  def ifft[T](x: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def ifft[T](x: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifft")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
   object images {
     
-    @JSImport("numjs", "images.areaSum")
+    @JSImport("numjs", "images")
     @js.native
-    def areaSum[T](h0: Double, w0: Double, H: Double, W: Double, SAT: NdArray[T]): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("numjs", "images.areaValue")
-    @js.native
-    def areaValue[T](img: NdArray[T]): Double = js.native
+    @scala.inline
+    def areaSum[T](h0: Double, w0: Double, H: Double, W: Double, SAT: NdArray[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("areaSum")(h0.asInstanceOf[js.Any], w0.asInstanceOf[js.Any], H.asInstanceOf[js.Any], W.asInstanceOf[js.Any], SAT.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def areaValue[T](img: NdArray[T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("areaValue")(img.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     object data {
       
@@ -248,194 +211,147 @@ object mod {
       val node: NdArray[Double] = js.native
     }
     
-    @JSImport("numjs", "images.flip")
-    @js.native
-    def flip[T, O](img: NdArray[T]): NdArray[O] = js.native
+    @scala.inline
+    def flip[T, O](img: NdArray[T]): NdArray[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[O]]
     
-    @JSImport("numjs", "images.read")
-    @js.native
-    def read(input: String): NdArray[Uint8Array] = js.native
+    @scala.inline
+    def read(input: String): NdArray[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint8Array]]
     
-    @JSImport("numjs", "images.resize")
-    @js.native
-    def resize[T](img: NdArray[T], height: Double, width: Double): NdArray[Uint8Array] = js.native
+    @scala.inline
+    def resize[T](img: NdArray[T], height: Double, width: Double): NdArray[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(img.asInstanceOf[js.Any], height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[NdArray[Uint8Array]]
     
-    @JSImport("numjs", "images.rgb2gray")
-    @js.native
-    def rgb2gray[T](img: NdArray[T]): NdArray[Uint8Array] = js.native
+    @scala.inline
+    def rgb2gray[T](img: NdArray[T]): NdArray[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint8Array]]
     
-    @JSImport("numjs", "images.sat")
-    @js.native
-    def sat[T](img: NdArray[T]): NdArray[Uint32Array] = js.native
+    @scala.inline
+    def sat[T](img: NdArray[T]): NdArray[Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("sat")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint32Array]]
     
-    @JSImport("numjs", "images.save")
-    @js.native
-    def save[T](img: NdArray[T], dest: String): Unit = js.native
+    @scala.inline
+    def save[T](img: NdArray[T], dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(img.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("numjs", "images.scharr")
-    @js.native
-    def scharr[T](img: NdArray[T]): NdArray[Float32Array] = js.native
+    @scala.inline
+    def scharr[T](img: NdArray[T]): NdArray[Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("scharr")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Float32Array]]
     
-    @JSImport("numjs", "images.sobel")
-    @js.native
-    def sobel[T](img: NdArray[T]): NdArray[Float32Array] = js.native
+    @scala.inline
+    def sobel[T](img: NdArray[T]): NdArray[Float32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("sobel")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Float32Array]]
     
-    @JSImport("numjs", "images.ssat")
-    @js.native
-    def ssat[T](img: NdArray[T]): NdArray[Uint32Array] = js.native
+    @scala.inline
+    def ssat[T](img: NdArray[T]): NdArray[Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("ssat")(img.asInstanceOf[js.Any]).asInstanceOf[NdArray[Uint32Array]]
   }
   
-  @JSImport("numjs", "int16")
-  @js.native
-  def int16[T](arr: NjArray[T]): NjArray[Int16Array] = js.native
+  @scala.inline
+  def int16[T](arr: NjArray[T]): NjArray[Int16Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int16")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Int16Array]]
   
-  @JSImport("numjs", "int32")
-  @js.native
-  def int32[T](arr: NjArray[T]): NjArray[Int32Array] = js.native
+  @scala.inline
+  def int32[T](arr: NjArray[T]): NjArray[Int32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Int32Array]]
   
-  @JSImport("numjs", "int8")
-  @js.native
-  def int8[T](arr: NjArray[T]): NjArray[Int8Array] = js.native
+  @scala.inline
+  def int8[T](arr: NjArray[T]): NjArray[Int8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("int8")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Int8Array]]
   
-  @JSImport("numjs", "max")
-  @js.native
-  def max[T](x: NjParam[T]): T = js.native
+  @scala.inline
+  def max[T](x: NjParam[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("numjs", "mean")
-  @js.native
-  def mean[T](x: NjParam[T]): T = js.native
+  @scala.inline
+  def mean[T](x: NjParam[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("numjs", "min")
-  @js.native
-  def min[T](x: NjParam[T]): T = js.native
+  @scala.inline
+  def min[T](x: NjParam[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("numjs", "multiply")
-  @js.native
-  def multiply[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def multiply[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "negative")
-  @js.native
-  def negative[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def negative[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("negative")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "ones")
-  @js.native
-  def ones[T](shape: Double): NdArray[T] = js.native
-  @JSImport("numjs", "ones")
-  @js.native
-  def ones[T](shape: Double, dtype: DataType): NdArray[T] = js.native
-  @JSImport("numjs", "ones")
-  @js.native
-  def ones[T](shape: NdArrayData[T]): NdArray[T] = js.native
-  @JSImport("numjs", "ones")
-  @js.native
-  def ones[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = js.native
+  @scala.inline
+  def ones[T](shape: Double): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def ones[T](shape: Double, dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def ones[T](shape: NdArrayData[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def ones[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "power")
-  @js.native
-  def power[T](x1: NjParam[T], x2: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def power[T](x1: NjParam[T], x2: NjParam[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("power")(x1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "random")
-  @js.native
-  def random[T](): NdArray[T] = js.native
-  @JSImport("numjs", "random")
-  @js.native
-  def random[T](shape: Double): NdArray[T] = js.native
-  @JSImport("numjs", "random")
-  @js.native
-  def random[T](shape: NdArrayData[T]): NdArray[T] = js.native
+  @scala.inline
+  def random[T](): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[NdArray[T]]
+  @scala.inline
+  def random[T](shape: Double): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def random[T](shape: NdArrayData[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "reshape")
-  @js.native
-  def reshape[T](array: NjArray[T], shape: NdArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def reshape[T](array: NjArray[T], shape: NdArray[T]): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(array.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "round")
-  @js.native
-  def round[T](x: NjArray[T]): NdArray[T] = js.native
+  @scala.inline
+  def round[T](x: NjArray[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "setRawData")
-  @js.native
-  def setRawData[T](array: NdArrayData[T], data: NdArrayData[T]): Uint8Array = js.native
+  @scala.inline
+  def setRawData[T](array: NdArrayData[T], data: NdArrayData[T]): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("setRawData")(array.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("numjs", "sigmoid")
-  @js.native
-  def sigmoid[T](x: NjParam[T]): NdArray[T] = js.native
-  @JSImport("numjs", "sigmoid")
-  @js.native
-  def sigmoid[T](x: NjParam[T], t: Double): NdArray[T] = js.native
+  @scala.inline
+  def sigmoid[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def sigmoid[T](x: NjParam[T], t: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sigmoid")(x.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "sin")
-  @js.native
-  def sin[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def sin[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "softmax")
-  @js.native
-  def softmax[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def softmax[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "sqrt")
-  @js.native
-  def sqrt[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def sqrt[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "stack")
-  @js.native
-  def stack[T](arrays: js.Array[NdArray[T]]): NdArray[T] = js.native
-  @JSImport("numjs", "stack")
-  @js.native
-  def stack[T](arrays: js.Array[NdArray[T]], axis: Double): NdArray[T] = js.native
+  @scala.inline
+  def stack[T](arrays: js.Array[NdArray[T]]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")(arrays.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def stack[T](arrays: js.Array[NdArray[T]], axis: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(arrays.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "std")
-  @js.native
-  def std[T](x: NjParam[T]): T = js.native
+  @scala.inline
+  def std[T](x: NjParam[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("std")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("numjs", "subtract")
-  @js.native
-  def subtract[T](a: NjParam[T], b: NjParam[T]): T = js.native
+  @scala.inline
+  def subtract[T](a: NjParam[T], b: NjParam[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("numjs", "sum")
-  @js.native
-  def sum[T](x: NjParam[T]): T = js.native
+  @scala.inline
+  def sum[T](x: NjParam[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("numjs", "tan")
-  @js.native
-  def tan[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def tan[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "tanh")
-  @js.native
-  def tanh[T](x: NjParam[T]): NdArray[T] = js.native
+  @scala.inline
+  def tanh[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "transpose")
-  @js.native
-  def transpose[T](x: NjParam[T]): NdArray[T] = js.native
-  @JSImport("numjs", "transpose")
-  @js.native
-  def transpose[T](x: NjParam[T], axes: Double): NdArray[T] = js.native
+  @scala.inline
+  def transpose[T](x: NjParam[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def transpose[T](x: NjParam[T], axes: Double): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], axes.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
-  @JSImport("numjs", "uint16")
-  @js.native
-  def uint16[T](arr: NjArray[T]): NjArray[Uint16Array] = js.native
+  @scala.inline
+  def uint16[T](arr: NjArray[T]): NjArray[Uint16Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint16")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Uint16Array]]
   
-  @JSImport("numjs", "uint32")
-  @js.native
-  def uint32[T](arr: NjArray[T]): NjArray[Uint32Array] = js.native
+  @scala.inline
+  def uint32[T](arr: NjArray[T]): NjArray[Uint32Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint32")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Uint32Array]]
   
-  @JSImport("numjs", "uint8")
-  @js.native
-  def uint8[T](arr: NjArray[T]): NjArray[Uint8Array] = js.native
+  @scala.inline
+  def uint8[T](arr: NjArray[T]): NjArray[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8")(arr.asInstanceOf[js.Any]).asInstanceOf[NjArray[Uint8Array]]
   
-  @JSImport("numjs", "zeros")
-  @js.native
-  def zeros[T](shape: Double): NdArray[T] = js.native
-  @JSImport("numjs", "zeros")
-  @js.native
-  def zeros[T](shape: Double, dtype: DataType): NdArray[T] = js.native
-  @JSImport("numjs", "zeros")
-  @js.native
-  def zeros[T](shape: NdArrayData[T]): NdArray[T] = js.native
-  @JSImport("numjs", "zeros")
-  @js.native
-  def zeros[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = js.native
+  @scala.inline
+  def zeros[T](shape: Double): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def zeros[T](shape: Double, dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def zeros[T](shape: NdArrayData[T]): NdArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[NdArray[T]]
+  @scala.inline
+  def zeros[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[NdArray[T]]
   
   @js.native
-  trait NdArray[T] extends ndarray[T] {
+  trait NdArray[T]
+    extends StObject
+       with ndarray[T] {
     
     @JSName("T")
     var T_NdArray: NdArray[T] = js.native
@@ -499,7 +415,7 @@ object mod {
       */
     def inspect(): String = js.native
     
-    def iteraxis(axis: Double, cb: js.Function2[/* x */ NdArray[T], /* i */ Double, _]): Unit = js.native
+    def iteraxis(axis: Double, cb: js.Function2[/* x */ NdArray[T], /* i */ Double, js.Any]): Unit = js.native
     
     /**
       * Return the maximum value of the array

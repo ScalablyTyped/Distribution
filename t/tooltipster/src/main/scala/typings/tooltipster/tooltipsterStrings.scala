@@ -4,13 +4,14 @@ import typings.tooltipster.JQueryTooltipster.TooltipEventName
 import typings.tooltipster.JQueryTooltipster.TooltipPositioningSide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipsterStrings {
   
   @js.native
-  sealed trait after extends TooltipEventName
+  sealed trait after
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   
@@ -20,17 +21,23 @@ object tooltipsterStrings {
   def appearing: appearing = "appearing".asInstanceOf[appearing]
   
   @js.native
-  sealed trait before extends TooltipEventName
+  sealed trait before
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   
   @js.native
-  sealed trait bottom extends TooltipPositioningSide
+  sealed trait bottom
+    extends StObject
+       with TooltipPositioningSide
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait close extends TooltipEventName
+  sealed trait close
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   
@@ -40,7 +47,9 @@ object tooltipsterStrings {
   def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait closing extends TooltipEventName
+  sealed trait closing
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
   
@@ -55,7 +64,9 @@ object tooltipsterStrings {
   def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait created extends TooltipEventName
+  sealed trait created
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def created: created = "created".asInstanceOf[created]
   
@@ -65,12 +76,16 @@ object tooltipsterStrings {
   def current: current = "current".asInstanceOf[current]
   
   @js.native
-  sealed trait destroy extends TooltipEventName
+  sealed trait destroy
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait destroyed extends TooltipEventName
+  sealed trait destroyed
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
@@ -85,7 +100,9 @@ object tooltipsterStrings {
   def disappearing: disappearing = "disappearing".asInstanceOf[disappearing]
   
   @js.native
-  sealed trait dismissable extends TooltipEventName
+  sealed trait dismissable
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def dismissable: dismissable = "dismissable".asInstanceOf[dismissable]
   
@@ -115,12 +132,16 @@ object tooltipsterStrings {
   def fall: fall = "fall".asInstanceOf[fall]
   
   @js.native
-  sealed trait format extends TooltipEventName
+  sealed trait format
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def format: format = "format".asInstanceOf[format]
   
   @js.native
-  sealed trait geometry extends TooltipEventName
+  sealed trait geometry
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def geometry: geometry = "geometry".asInstanceOf[geometry]
   
@@ -130,7 +151,9 @@ object tooltipsterStrings {
   def grow: grow = "grow".asInstanceOf[grow]
   
   @js.native
-  sealed trait init extends TooltipEventName
+  sealed trait init
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def init: init = "init".asInstanceOf[init]
   
@@ -140,7 +163,9 @@ object tooltipsterStrings {
   def instance: instance = "instance".asInstanceOf[instance]
   
   @js.native
-  sealed trait left extends TooltipPositioningSide
+  sealed trait left
+    extends StObject
+       with TooltipPositioningSide
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -180,17 +205,23 @@ object tooltipsterStrings {
   def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait position extends TooltipEventName
+  sealed trait position
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait positionTest extends TooltipEventName
+  sealed trait positionTest
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def positionTest: positionTest = "positionTest".asInstanceOf[positionTest]
   
   @js.native
-  sealed trait positionTested extends TooltipEventName
+  sealed trait positionTested
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def positionTested: positionTested = "positionTested".asInstanceOf[positionTested]
   
@@ -200,22 +231,30 @@ object tooltipsterStrings {
   def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait ready extends TooltipEventName
+  sealed trait ready
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait reposition extends TooltipEventName
+  sealed trait reposition
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def reposition: reposition = "reposition".asInstanceOf[reposition]
   
   @js.native
-  sealed trait repositioned extends TooltipEventName
+  sealed trait repositioned
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def repositioned: repositioned = "repositioned".asInstanceOf[repositioned]
   
   @js.native
-  sealed trait right extends TooltipPositioningSide
+  sealed trait right
+    extends StObject
+       with TooltipPositioningSide
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -230,7 +269,9 @@ object tooltipsterStrings {
   def scale: scale = "scale".asInstanceOf[scale]
   
   @js.native
-  sealed trait scroll extends TooltipEventName
+  sealed trait scroll
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   
@@ -245,22 +286,30 @@ object tooltipsterStrings {
   def stable: stable = "stable".asInstanceOf[stable]
   
   @js.native
-  sealed trait start extends TooltipEventName
+  sealed trait start
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait startcancel extends TooltipEventName
+  sealed trait startcancel
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def startcancel: startcancel = "startcancel".asInstanceOf[startcancel]
   
   @js.native
-  sealed trait startend extends TooltipEventName
+  sealed trait startend
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def startend: startend = "startend".asInstanceOf[startend]
   
   @js.native
-  sealed trait state extends TooltipEventName
+  sealed trait state
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def state: state = "state".asInstanceOf[state]
   
@@ -275,7 +324,9 @@ object tooltipsterStrings {
   def swing: swing = "swing".asInstanceOf[swing]
   
   @js.native
-  sealed trait top extends TooltipPositioningSide
+  sealed trait top
+    extends StObject
+       with TooltipPositioningSide
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
@@ -285,7 +336,9 @@ object tooltipsterStrings {
   def triggerHandler: triggerHandler = "triggerHandler".asInstanceOf[triggerHandler]
   
   @js.native
-  sealed trait updated extends TooltipEventName
+  sealed trait updated
+    extends StObject
+       with TooltipEventName
   @scala.inline
   def updated: updated = "updated".asInstanceOf[updated]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationSnapshotConfigurationDescription extends StObject {
   
   /**
     * Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.
     */
-  var SnapshotsEnabled: BooleanObject = js.native
+  var SnapshotsEnabled: BooleanObject
 }
 object ApplicationSnapshotConfigurationDescription {
   

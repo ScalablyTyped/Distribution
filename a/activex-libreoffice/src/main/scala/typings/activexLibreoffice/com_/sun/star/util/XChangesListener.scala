@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XChangesNotifier
   * @see XChangesBatch
   */
-@js.native
-trait XChangesListener extends XEventListener {
+trait XChangesListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a batch of changes occurred. */
-  def changesOccurred(Event: ChangesEvent): Unit = js.native
+  def changesOccurred(Event: ChangesEvent): Unit
 }
 object XChangesListener {
   

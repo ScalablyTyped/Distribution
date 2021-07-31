@@ -2,26 +2,24 @@ package typings.cordovaPluginNativeKeyboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeKeyboardUpdateOptions extends StObject {
   
   /**
     * Position the cursor anywhere in the text range. Defaults to the end of the text.
     */
-  var caretIndex: js.UndefOr[Double] = js.native
+  var caretIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * If false or omitted no changes to the keyboard state are made.
     */
-  var showKeyboard: js.UndefOr[Boolean] = js.native
+  var showKeyboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Replace the messenger's text by this. The current text remains if omitted.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object NativeKeyboardUpdateOptions {
   

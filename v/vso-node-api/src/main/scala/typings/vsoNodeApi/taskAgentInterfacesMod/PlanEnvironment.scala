@@ -3,17 +3,15 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlanEnvironment extends StObject {
   
-  var mask: js.Array[MaskHint] = js.native
+  var mask: js.Array[MaskHint]
   
-  var options: StringDictionary[JobOption] = js.native
+  var options: StringDictionary[JobOption]
   
-  var variables: StringDictionary[String] = js.native
+  var variables: StringDictionary[String]
 }
 object PlanEnvironment {
   

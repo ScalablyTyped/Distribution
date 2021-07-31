@@ -11,7 +11,7 @@ This plugin is used to fix elements on the page (top, bottom, anywhere); however
 | Keywords           | scroll, fixed, jquery |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 48023 |
+| # downloads        | 50231 |
 | # stars            | 4 |
 
 ## Links

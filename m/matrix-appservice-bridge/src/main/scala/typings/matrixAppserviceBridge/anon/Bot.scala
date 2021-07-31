@@ -3,21 +3,19 @@ package typings.matrixAppserviceBridge.anon
 import typings.matrixAppserviceBridge.intentMod.IntentOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bot extends StObject {
   
   /**
     * Options to supply to the bot intent.
     */
-  var bot: js.UndefOr[IntentOpts] = js.native
+  var bot: js.UndefOr[IntentOpts] = js.undefined
   
   /**
     * Options to supply to the client intents.
     */
-  var clients: js.UndefOr[IntentOpts] = js.native
+  var clients: js.UndefOr[IntentOpts] = js.undefined
 }
 object Bot {
   

@@ -4,15 +4,13 @@ import typings.popperjsCore.typesMod.VisualViewport
 import typings.popperjsCore.typesMod.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Popper extends StObject {
   
-  var popper: js.Array[typings.std.Element | Window | VisualViewport] = js.native
+  var popper: js.Array[typings.std.Element | Window | VisualViewport]
   
-  var reference: js.Array[typings.std.Element | Window | VisualViewport] = js.native
+  var reference: js.Array[typings.std.Element | Window | VisualViewport]
 }
 object Popper {
   

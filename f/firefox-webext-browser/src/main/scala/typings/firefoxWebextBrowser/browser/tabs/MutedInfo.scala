@@ -2,25 +2,23 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tab muted state and the reason for the last state change. */
-@js.native
 trait MutedInfo extends StObject {
   
   /**
     * The ID of the extension that changed the muted state. Not set if an extension was not the reason the muted state last changed.
     */
-  var extensionId: js.UndefOr[String] = js.native
+  var extensionId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the tab is prevented from playing sound (but hasn't necessarily recently produced sound). Equivalent to whether the muted audio indicator is showing.
     */
-  var muted: Boolean = js.native
+  var muted: Boolean
   
   /** The reason the tab was muted or unmuted. Not set if the tab's mute state has never been changed. */
-  var reason: js.UndefOr[MutedInfoReason] = js.native
+  var reason: js.UndefOr[MutedInfoReason] = js.undefined
 }
 object MutedInfo {
   

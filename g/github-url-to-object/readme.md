@@ -11,8 +11,8 @@ Extract user, repo, and other interesting properties from GitHub URLs
 | Full name          | github-url-to-object |
 | Keywords           | github, url, repo |
 | # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 1019989 |
+| # dependents       | 71 |
+| # downloads        | 1314231 |
 | # stars            | 6 |
 
 ## Links

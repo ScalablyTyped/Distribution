@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNamedQueryOutput extends StObject {
   
   /**
     * Information about the query.
     */
-  var NamedQuery: js.UndefOr[typings.awsSdk.athenaMod.NamedQuery] = js.native
+  var NamedQuery: js.UndefOr[typings.awsSdk.athenaMod.NamedQuery] = js.undefined
 }
 object GetNamedQueryOutput {
   

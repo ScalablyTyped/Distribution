@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait colorUtils extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait colorUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html#getBackgroundColor)
     */
-  def getBackgroundColor(view: MapView): js.Promise[Color_] = js.native
+  def getBackgroundColor(view: MapView): js.Promise[Color_]
   
   /**
     * This method inspects the basemap and background of a MapView and returns either `light` or `dark` as the theme of the background depending on if the average color of the basemap and the view's background is light or dark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html#getBackgroundColorTheme)
     */
-  def getBackgroundColorTheme(view: MapView): js.Promise[String] = js.native
+  def getBackgroundColorTheme(view: MapView): js.Promise[String]
 }
 object colorUtils {
   

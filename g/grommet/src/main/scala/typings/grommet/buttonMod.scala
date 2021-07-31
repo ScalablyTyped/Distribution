@@ -29,7 +29,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -37,58 +36,57 @@ object buttonMod {
   @JSImport("grommet/components/Button", "Button")
   @js.native
   val Button: FC[
-    ButtonProps with (Omit[
+    ButtonProps & (Omit[
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       color
     ])
   ] = js.native
   
-  @js.native
   trait ButtonProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var as: js.UndefOr[PolymorphicType] = js.native
+    var as: js.UndefOr[PolymorphicType] = js.undefined
     
-    var color: js.UndefOr[ColorType] = js.native
+    var color: js.UndefOr[ColorType] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[FillType] = js.native
+    var fill: js.UndefOr[FillType] = js.undefined
     
-    var focusIndicator: js.UndefOr[Boolean] = js.native
+    var focusIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var gap: js.UndefOr[GapType] = js.native
+    var gap: js.UndefOr[GapType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.native
+    var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[Element] = js.native
+    var icon: js.UndefOr[Element] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var secondary: js.UndefOr[Boolean] = js.native
+    var secondary: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large] = js.native
+    var size: js.UndefOr[small | medium | large] = js.undefined
     
-    var target: js.UndefOr[_self | _blank | _parent | _top | String] = js.native
+    var target: js.UndefOr[_self | _blank | _parent | _top | String] = js.undefined
     
-    var `type`: js.UndefOr[button | reset | submit] = js.native
+    var `type`: js.UndefOr[button | reset | submit] = js.undefined
   }
   object ButtonProps {
     
@@ -235,7 +233,7 @@ object buttonMod {
     }
   }
   
-  type ButtonType = ButtonProps with (Omit[
+  type ButtonType = ButtonProps & (Omit[
     DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
     color
   ])

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The needed cache on server side you can create using {@link XCachedDynamicResultSetFactory} .
   */
-@js.native
-trait XCachedDynamicResultSetStubFactory extends XInterface {
+trait XCachedDynamicResultSetStubFactory
+  extends StObject
+     with XInterface {
   
   /**
     * If you have instantiated a {@link CachedDynamicResultSet} on client side already, use this to connect your given Source on server side to the
@@ -39,14 +39,14 @@ trait XCachedDynamicResultSetStubFactory extends XInterface {
     TargetCache: XDynamicResultSet,
     SortingInfo: SeqEquiv[NumberedSortingInfo],
     CompareFactory: XAnyCompareFactory
-  ): Unit = js.native
+  ): Unit
   
   /**
     * creates a remote optimizes {@link XDynamicResultSet} .
     * @param Source must be an instance of service {@link DynamicResultSet} .
     * @returns an instance of service {@link CachedDynamicResultSetStub} .
     */
-  def createCachedDynamicResultSetStub(Source: XDynamicResultSet): XDynamicResultSet = js.native
+  def createCachedDynamicResultSetStub(Source: XDynamicResultSet): XDynamicResultSet
 }
 object XCachedDynamicResultSetStubFactory {
   

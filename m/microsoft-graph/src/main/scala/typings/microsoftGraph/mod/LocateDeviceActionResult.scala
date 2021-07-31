@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocateDeviceActionResult extends DeviceActionResult {
+trait LocateDeviceActionResult
+  extends StObject
+     with DeviceActionResult {
   
   // device location
-  var deviceLocation: js.UndefOr[NullableOption[DeviceGeoLocation]] = js.native
+  var deviceLocation: js.UndefOr[NullableOption[DeviceGeoLocation]] = js.undefined
 }
 object LocateDeviceActionResult {
   

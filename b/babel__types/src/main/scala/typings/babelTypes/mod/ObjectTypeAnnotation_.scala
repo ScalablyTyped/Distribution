@@ -3,41 +3,36 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.ObjectTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ObjectTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait ObjectTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
   
-  var callProperties: js.Array[ObjectTypeCallProperty_] | Null = js.native
+  var callProperties: js.Array[ObjectTypeCallProperty_] | Null
   
-  var exact: Boolean = js.native
+  var exact: Boolean
   
-  var indexers: js.Array[ObjectTypeIndexer_] | Null = js.native
+  var indexers: js.Array[ObjectTypeIndexer_] | Null
   
-  var inexact: Boolean | Null = js.native
+  var inexact: Boolean | Null
   
-  var internalSlots: js.Array[ObjectTypeInternalSlot_] | Null = js.native
+  var internalSlots: js.Array[ObjectTypeInternalSlot_] | Null
   
-  var properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_] = js.native
+  var properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]
   
   @JSName("type")
-  var type_ObjectTypeAnnotation_ : ObjectTypeAnnotation = js.native
+  var type_ObjectTypeAnnotation_ : ObjectTypeAnnotation
 }
 object ObjectTypeAnnotation_ {
   
   @scala.inline
-  def apply(
-    exact: Boolean,
-    properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
-    `type`: ObjectTypeAnnotation
-  ): ObjectTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(exact: Boolean, properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): ObjectTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], callProperties = null, end = null, indexers = null, inexact = null, innerComments = null, internalSlots = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ObjectTypeAnnotation")
     __obj.asInstanceOf[ObjectTypeAnnotation_]
   }
   

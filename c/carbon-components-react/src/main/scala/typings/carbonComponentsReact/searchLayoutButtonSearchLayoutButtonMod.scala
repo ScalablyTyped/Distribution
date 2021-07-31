@@ -1,0 +1,92 @@
+package typings.carbonComponentsReact
+
+import typings.carbonComponentsReact.anon.Format
+import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object searchLayoutButtonSearchLayoutButtonMod {
+  
+  /**
+    * @deprecated
+    */
+  @JSImport("carbon-components-react/lib/components/SearchLayoutButton/SearchLayoutButton", JSImport.Default)
+  @js.native
+  class default ()
+    extends Component[SearchLayoutButtonProps, js.Object, js.Any]
+  
+  /**
+    * @deprecated
+    */
+  type SearchLayoutButton = Component[SearchLayoutButtonProps, js.Object, js.Any]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.grid
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.list
+  */
+  trait SearchLayoutButtonFormat extends StObject
+  object SearchLayoutButtonFormat {
+    
+    @scala.inline
+    def grid: typings.carbonComponentsReact.carbonComponentsReactStrings.grid = "grid".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.grid]
+    
+    @scala.inline
+    def list: typings.carbonComponentsReact.carbonComponentsReactStrings.list = "list".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.list]
+  }
+  
+  trait SearchLayoutButtonProps extends StObject {
+    
+    var format: js.UndefOr[SearchLayoutButtonFormat] = js.undefined
+    
+    var iconDescriptionGrid: js.UndefOr[String] = js.undefined
+    
+    var iconDescriptionList: js.UndefOr[String] = js.undefined
+    
+    var labelText: js.UndefOr[String] = js.undefined
+    
+    var onChangeFormat: js.UndefOr[js.Function1[/* data */ Format, Unit]] = js.undefined
+  }
+  object SearchLayoutButtonProps {
+    
+    @scala.inline
+    def apply(): SearchLayoutButtonProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchLayoutButtonProps]
+    }
+    
+    @scala.inline
+    implicit class SearchLayoutButtonPropsMutableBuilder[Self <: SearchLayoutButtonProps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFormat(value: SearchLayoutButtonFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      @scala.inline
+      def setIconDescriptionGrid(value: String): Self = StObject.set(x, "iconDescriptionGrid", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIconDescriptionGridUndefined: Self = StObject.set(x, "iconDescriptionGrid", js.undefined)
+      
+      @scala.inline
+      def setIconDescriptionList(value: String): Self = StObject.set(x, "iconDescriptionList", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIconDescriptionListUndefined: Self = StObject.set(x, "iconDescriptionList", js.undefined)
+      
+      @scala.inline
+      def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
+      
+      @scala.inline
+      def setOnChangeFormat(value: /* data */ Format => Unit): Self = StObject.set(x, "onChangeFormat", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnChangeFormatUndefined: Self = StObject.set(x, "onChangeFormat", js.undefined)
+    }
+  }
+}

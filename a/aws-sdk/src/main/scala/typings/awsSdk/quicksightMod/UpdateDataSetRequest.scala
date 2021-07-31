@@ -2,56 +2,54 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSetRequest extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * Groupings of columns that work together in certain QuickSight features. Currently, only geospatial hierarchy is supported.
     */
-  var ColumnGroups: js.UndefOr[ColumnGroupList] = js.native
+  var ColumnGroups: js.UndefOr[ColumnGroupList] = js.undefined
   
   /**
     * A set of one or more definitions of a  ColumnLevelPermissionRule .
     */
-  var ColumnLevelPermissionRules: js.UndefOr[ColumnLevelPermissionRuleList] = js.native
+  var ColumnLevelPermissionRules: js.UndefOr[ColumnLevelPermissionRuleList] = js.undefined
   
   /**
     * The ID for the dataset that you want to update. This ID is unique per AWS Region for each AWS account.
     */
-  var DataSetId: ResourceId = js.native
+  var DataSetId: ResourceId
   
   /**
     * Indicates whether you want to import the data into SPICE.
     */
-  var ImportMode: DataSetImportMode = js.native
+  var ImportMode: DataSetImportMode
   
   /**
     * Configures the combination and transformation of the data from the physical tables.
     */
-  var LogicalTableMap: js.UndefOr[typings.awsSdk.quicksightMod.LogicalTableMap] = js.native
+  var LogicalTableMap: js.UndefOr[typings.awsSdk.quicksightMod.LogicalTableMap] = js.undefined
   
   /**
     * The display name for the dataset.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * Declares the physical tables that are available in the underlying data sources.
     */
-  var PhysicalTableMap: typings.awsSdk.quicksightMod.PhysicalTableMap = js.native
+  var PhysicalTableMap: typings.awsSdk.quicksightMod.PhysicalTableMap
   
   /**
     * The row-level security configuration for the data you want to create.
     */
-  var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.native
+  var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.undefined
 }
 object UpdateDataSetRequest {
   

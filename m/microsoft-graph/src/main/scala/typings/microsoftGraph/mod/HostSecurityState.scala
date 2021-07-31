@@ -2,36 +2,34 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostSecurityState extends StObject {
   
   // Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
-  var fqdn: js.UndefOr[NullableOption[String]] = js.native
+  var fqdn: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var isAzureAdJoined: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isAzureAdJoined: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var isAzureAdRegistered: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isAzureAdRegistered: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // True if the host is domain joined to an on-premises Active Directory domain.
-  var isHybridAzureDomainJoined: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isHybridAzureDomainJoined: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The local host name, without the DNS domain name.
-  var netBiosName: js.UndefOr[NullableOption[String]] = js.native
+  var netBiosName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Host Operating System. (For example, Windows10, MacOS, RHEL, etc.).
-  var os: js.UndefOr[NullableOption[String]] = js.native
+  var os: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
-  var privateIpAddress: js.UndefOr[NullableOption[String]] = js.native
+  var privateIpAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
-  var publicIpAddress: js.UndefOr[NullableOption[String]] = js.native
+  var publicIpAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Provider-generated/calculated risk score of the host. Recommended value range of 0-1, which equates to a percentage.
-  var riskScore: js.UndefOr[NullableOption[String]] = js.native
+  var riskScore: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object HostSecurityState {
   

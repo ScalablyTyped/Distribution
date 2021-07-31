@@ -3,17 +3,37 @@ package typings.playable
 import org.scalablytyped.runtime.Instantiable0
 import typings.playable.anon.ConfigEngine
 import typings.playable.loaderTypesMod.ILoader
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderMod {
   
   @JSImport("playable/dist/src/modules/ui/loader/loader", JSImport.Default)
   @js.native
-  class default protected () extends Loader {
+  class default protected ()
+    extends StObject
+       with Loader {
     def this(hasConfigEventEmitterEngineRootContainer: ConfigEngine) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isDelayedShowScheduled: Boolean = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    override def stopDelayedShow(): Unit = js.native
   }
   /* static members */
   object default {
@@ -46,7 +66,9 @@ object loaderMod {
   val DELAYED_SHOW_TIMEOUT: /* 100 */ Double = js.native
   
   @js.native
-  trait Loader extends ILoader {
+  trait Loader
+    extends StObject
+       with ILoader {
     
     var _bindCallbacks: js.Any = js.native
     

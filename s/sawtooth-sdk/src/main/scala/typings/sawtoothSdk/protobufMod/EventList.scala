@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "EventList")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new EventList.
   * @param [properties] Properties to set
   */
-class EventList () extends IEventList {
+class EventList ()
+  extends StObject
+     with IEventList {
   def this(properties: IEventList) = this()
   
   /** EventList events. */
@@ -32,17 +33,19 @@ class EventList () extends IEventList {
 /* static members */
 object EventList {
   
+  @JSImport("sawtooth-sdk/protobuf", "EventList")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new EventList instance using the specified properties.
     * @param [properties] Properties to set
     * @returns EventList instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.create")
-  @js.native
-  def create(): EventList = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.create")
-  @js.native
-  def create(properties: IEventList): EventList = js.native
+  @scala.inline
+  def create(): EventList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EventList]
+  @scala.inline
+  def create(properties: IEventList): EventList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[EventList]
   
   /**
     * Decodes an EventList message from the specified reader or buffer.
@@ -52,18 +55,14 @@ object EventList {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.decode")
-  @js.native
-  def decode(reader: Reader): EventList = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): EventList = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.decode")
-  @js.native
-  def decode(reader: Uint8Array): EventList = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): EventList = js.native
+  @scala.inline
+  def decode(reader: Reader): EventList = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EventList]
+  @scala.inline
+  def decode(reader: Reader, length: Double): EventList = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EventList]
+  @scala.inline
+  def decode(reader: Uint8Array): EventList = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EventList]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): EventList = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EventList]
   
   /**
     * Decodes an EventList message from the specified reader or buffer, length delimited.
@@ -72,12 +71,10 @@ object EventList {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): EventList = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): EventList = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): EventList = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EventList]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): EventList = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EventList]
   
   /**
     * Encodes the specified EventList message. Does not implicitly {@link EventList.verify|verify} messages.
@@ -85,12 +82,10 @@ object EventList {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.encode")
-  @js.native
-  def encode(message: IEventList): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.encode")
-  @js.native
-  def encode(message: IEventList, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IEventList): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IEventList, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified EventList message, length delimited. Does not implicitly {@link EventList.verify|verify} messages.
@@ -98,21 +93,18 @@ object EventList {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEventList): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEventList, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IEventList): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IEventList, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an EventList message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns EventList
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): EventList = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): EventList = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EventList]
   
   /**
     * Creates a plain object from an EventList message. Also converts values to other types if specified.
@@ -120,19 +112,16 @@ object EventList {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.toObject")
-  @js.native
-  def toObject(message: EventList): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "EventList.toObject")
-  @js.native
-  def toObject(message: EventList, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: EventList): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: EventList, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an EventList message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "EventList.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

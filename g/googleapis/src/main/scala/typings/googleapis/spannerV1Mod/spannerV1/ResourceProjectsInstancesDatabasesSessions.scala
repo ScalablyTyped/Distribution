@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instances$Databases$Sessions")
@@ -30,7 +29,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def beginTransaction(): GaxiosPromise[SchemaTransaction] = js.native
   def beginTransaction(callback: BodyResponseCallback[SchemaTransaction]): Unit = js.native
-  def beginTransaction(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransaction] = js.native
+  def beginTransaction(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTransaction] = js.native
   def beginTransaction(params: ParamsResourceProjectsInstancesDatabasesSessionsBegintransaction): GaxiosPromise[SchemaTransaction] = js.native
   def beginTransaction(
     params: ParamsResourceProjectsInstancesDatabasesSessionsBegintransaction,
@@ -68,7 +67,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def commit(): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(callback: BodyResponseCallback[SchemaCommitResponse]): Unit = js.native
-  def commit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommitResponse] = js.native
+  def commit(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(params: ParamsResourceProjectsInstancesDatabasesSessionsCommit): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(
     params: ParamsResourceProjectsInstancesDatabasesSessionsCommit,
@@ -115,7 +114,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaSession] = js.native
   def create(callback: BodyResponseCallback[SchemaSession]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSession] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSession] = js.native
   def create(params: ParamsResourceProjectsInstancesDatabasesSessionsCreate): GaxiosPromise[SchemaSession] = js.native
   def create(
     params: ParamsResourceProjectsInstancesDatabasesSessionsCreate,
@@ -149,7 +148,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsInstancesDatabasesSessionsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsInstancesDatabasesSessionsDelete,
@@ -193,7 +192,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def executeBatchDml(): GaxiosPromise[SchemaExecuteBatchDmlResponse] = js.native
   def executeBatchDml(callback: BodyResponseCallback[SchemaExecuteBatchDmlResponse]): Unit = js.native
-  def executeBatchDml(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExecuteBatchDmlResponse] = js.native
+  def executeBatchDml(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExecuteBatchDmlResponse] = js.native
   def executeBatchDml(params: ParamsResourceProjectsInstancesDatabasesSessionsExecutebatchdml): GaxiosPromise[SchemaExecuteBatchDmlResponse] = js.native
   def executeBatchDml(
     params: ParamsResourceProjectsInstancesDatabasesSessionsExecutebatchdml,
@@ -233,7 +232,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def executeSql(): GaxiosPromise[SchemaResultSet] = js.native
   def executeSql(callback: BodyResponseCallback[SchemaResultSet]): Unit = js.native
-  def executeSql(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResultSet] = js.native
+  def executeSql(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResultSet] = js.native
   def executeSql(params: ParamsResourceProjectsInstancesDatabasesSessionsExecutesql): GaxiosPromise[SchemaResultSet] = js.native
   def executeSql(
     params: ParamsResourceProjectsInstancesDatabasesSessionsExecutesql,
@@ -269,7 +268,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def executeStreamingSql(): GaxiosPromise[SchemaPartialResultSet] = js.native
   def executeStreamingSql(callback: BodyResponseCallback[SchemaPartialResultSet]): Unit = js.native
-  def executeStreamingSql(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPartialResultSet] = js.native
+  def executeStreamingSql(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPartialResultSet] = js.native
   def executeStreamingSql(params: ParamsResourceProjectsInstancesDatabasesSessionsExecutestreamingsql): GaxiosPromise[SchemaPartialResultSet] = js.native
   def executeStreamingSql(
     params: ParamsResourceProjectsInstancesDatabasesSessionsExecutestreamingsql,
@@ -305,7 +304,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSession] = js.native
   def get(callback: BodyResponseCallback[SchemaSession]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSession] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSession] = js.native
   def get(params: ParamsResourceProjectsInstancesDatabasesSessionsGet): GaxiosPromise[SchemaSession] = js.native
   def get(
     params: ParamsResourceProjectsInstancesDatabasesSessionsGet,
@@ -340,7 +339,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSessionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSessionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesDatabasesSessionsList): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesDatabasesSessionsList,
@@ -382,7 +381,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def partitionQuery(): GaxiosPromise[SchemaPartitionResponse] = js.native
   def partitionQuery(callback: BodyResponseCallback[SchemaPartitionResponse]): Unit = js.native
-  def partitionQuery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPartitionResponse] = js.native
+  def partitionQuery(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPartitionResponse] = js.native
   def partitionQuery(params: ParamsResourceProjectsInstancesDatabasesSessionsPartitionquery): GaxiosPromise[SchemaPartitionResponse] = js.native
   def partitionQuery(
     params: ParamsResourceProjectsInstancesDatabasesSessionsPartitionquery,
@@ -426,7 +425,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def partitionRead(): GaxiosPromise[SchemaPartitionResponse] = js.native
   def partitionRead(callback: BodyResponseCallback[SchemaPartitionResponse]): Unit = js.native
-  def partitionRead(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPartitionResponse] = js.native
+  def partitionRead(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPartitionResponse] = js.native
   def partitionRead(params: ParamsResourceProjectsInstancesDatabasesSessionsPartitionread): GaxiosPromise[SchemaPartitionResponse] = js.native
   def partitionRead(
     params: ParamsResourceProjectsInstancesDatabasesSessionsPartitionread,
@@ -466,7 +465,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def read(): GaxiosPromise[SchemaResultSet] = js.native
   def read(callback: BodyResponseCallback[SchemaResultSet]): Unit = js.native
-  def read(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResultSet] = js.native
+  def read(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResultSet] = js.native
   def read(params: ParamsResourceProjectsInstancesDatabasesSessionsRead): GaxiosPromise[SchemaResultSet] = js.native
   def read(
     params: ParamsResourceProjectsInstancesDatabasesSessionsRead,
@@ -504,7 +503,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def rollback(): GaxiosPromise[SchemaEmpty] = js.native
   def rollback(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def rollback(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def rollback(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def rollback(params: ParamsResourceProjectsInstancesDatabasesSessionsRollback): GaxiosPromise[SchemaEmpty] = js.native
   def rollback(
     params: ParamsResourceProjectsInstancesDatabasesSessionsRollback,
@@ -540,7 +539,7 @@ class ResourceProjectsInstancesDatabasesSessions protected () extends StObject {
     */
   def streamingRead(): GaxiosPromise[SchemaPartialResultSet] = js.native
   def streamingRead(callback: BodyResponseCallback[SchemaPartialResultSet]): Unit = js.native
-  def streamingRead(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPartialResultSet] = js.native
+  def streamingRead(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPartialResultSet] = js.native
   def streamingRead(params: ParamsResourceProjectsInstancesDatabasesSessionsStreamingread): GaxiosPromise[SchemaPartialResultSet] = js.native
   def streamingRead(
     params: ParamsResourceProjectsInstancesDatabasesSessionsStreamingread,

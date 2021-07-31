@@ -6,15 +6,15 @@ import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextStyleAndroid extends ViewStyle {
+trait TextStyleAndroid
+  extends StObject
+     with ViewStyle {
   
-  var includeFontPadding: js.UndefOr[Boolean] = js.native
+  var includeFontPadding: js.UndefOr[Boolean] = js.undefined
   
-  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.native
+  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
 }
 object TextStyleAndroid {
   

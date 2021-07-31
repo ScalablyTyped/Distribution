@@ -3,24 +3,23 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.Super
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait Super_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait Super_
+  extends StObject
+     with BaseNode
+     with Expression {
   
   @JSName("type")
-  var type_Super_ : Super = js.native
+  var type_Super_ : Super
 }
 object Super_ {
   
   @scala.inline
-  def apply(`type`: Super): Super_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): Super_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("Super")
     __obj.asInstanceOf[Super_]
   }
   

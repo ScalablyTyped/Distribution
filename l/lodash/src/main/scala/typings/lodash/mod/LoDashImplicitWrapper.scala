@@ -7,7 +7,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // prototype.commit
@@ -32,7 +31,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.bind
     */
-  def bind(thisArg: js.Any, partials: js.Any*): Function[js.Function1[/* repeated */ _, _]] = js.native
+  def bind(thisArg: js.Any, partials: js.Any*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
   
   /**
     * @see _.bindAll
@@ -42,7 +41,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.bindKey
     */
-  def bindKey(key: java.lang.String, partials: js.Any*): Function[js.Function1[/* repeated */ _, _]] = js.native
+  def bindKey(key: java.lang.String, partials: js.Any*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
   
   /**
     * @see _.camelCase
@@ -151,19 +150,19 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     * @see _.endsWith
     */
   def endsWith(): Boolean = js.native
-  def endsWith(target: js.UndefOr[scala.Nothing], position: Double): Boolean = js.native
   def endsWith(target: java.lang.String): Boolean = js.native
   def endsWith(target: java.lang.String, position: Double): Boolean = js.native
+  def endsWith(target: Unit, position: Double): Boolean = js.native
   
   /**
     * @see _.entries
     */
-  def entries(): Collection[js.Tuple2[java.lang.String, _]] = js.native
+  def entries(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
   
   /**
     * @see _.entriesIn
     */
-  def entriesIn(): Collection[js.Tuple2[java.lang.String, _]] = js.native
+  def entriesIn(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
   
   /**
     * @see _.eq
@@ -202,25 +201,25 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     * @see _.forIn
     */
   def forIn(): this.type = js.native
-  def forIn(iteratee: ObjectIterator[TValue, _]): this.type = js.native
+  def forIn(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
   
   /**
     * @see _.forInRight
     */
   def forInRight(): this.type = js.native
-  def forInRight(iteratee: ObjectIterator[TValue, _]): this.type = js.native
+  def forInRight(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
   
   /**
     * @see _.forOwn
     */
   def forOwn(): this.type = js.native
-  def forOwn(iteratee: ObjectIterator[TValue, _]): this.type = js.native
+  def forOwn(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
   
   /**
     * @see _.forOwnRight
     */
   def forOwnRight(): this.type = js.native
-  def forOwnRight(iteratee: ObjectIterator[TValue, _]): this.type = js.native
+  def forOwnRight(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
   
   /**
     * @see _.functions
@@ -276,7 +275,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.invokeMap
     */
-  def invokeMap(methodName: java.lang.String, args: js.Any*): Collection[_] = js.native
+  def invokeMap(methodName: java.lang.String, args: js.Any*): Collection[js.Any] = js.native
   /**
     * @see _.invokeMap
     */
@@ -511,7 +510,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.matchesProperty
     */
-  def matchesProperty[SrcValue](srcValue: SrcValue): Function[js.Function1[/* value */ _, Boolean]] = js.native
+  def matchesProperty[SrcValue](srcValue: SrcValue): Function[js.Function1[/* value */ js.Any, Boolean]] = js.native
   /**
     * @see _.matchesProperty
     */
@@ -526,12 +525,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.method
     */
-  def method(args: js.Any*): Function[js.Function1[/* object */ _, _]] = js.native
+  def method(args: js.Any*): Function[js.Function1[/* object */ js.Any, js.Any]] = js.native
   
   /**
     * @see _.methodOf
     */
-  def methodOf(args: js.Any*): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, _]] = js.native
+  def methodOf(args: js.Any*): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, js.Any]] = js.native
   
   /**
     * @see _.mixin
@@ -541,8 +540,8 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.mixin
     */
-  def mixin(source: Dictionary[js.Function1[/* repeated */ _, _]]): this.type = js.native
-  def mixin(source: Dictionary[js.Function1[/* repeated */ _, _]], options: MixinOptions): this.type = js.native
+  def mixin(source: Dictionary[js.Function1[/* repeated */ js.Any, js.Any]]): this.type = js.native
+  def mixin(source: Dictionary[js.Function1[/* repeated */ js.Any, js.Any]], options: MixinOptions): this.type = js.native
   
   /**
     * @see _.multiply
@@ -567,31 +566,31 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.nthArg
     */
-  def nthArg(): Function[js.Function1[/* repeated */ _, _]] = js.native
+  def nthArg(): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
   
   /**
     * @see _.pad
     */
   def pad(): java.lang.String = js.native
-  def pad(length: js.UndefOr[scala.Nothing], chars: java.lang.String): java.lang.String = js.native
   def pad(length: Double): java.lang.String = js.native
   def pad(length: Double, chars: java.lang.String): java.lang.String = js.native
+  def pad(length: Unit, chars: java.lang.String): java.lang.String = js.native
   
   /**
     * @see _.padEnd
     */
   def padEnd(): java.lang.String = js.native
-  def padEnd(length: js.UndefOr[scala.Nothing], chars: java.lang.String): java.lang.String = js.native
   def padEnd(length: Double): java.lang.String = js.native
   def padEnd(length: Double, chars: java.lang.String): java.lang.String = js.native
+  def padEnd(length: Unit, chars: java.lang.String): java.lang.String = js.native
   
   /**
     * @see _.padStart
     */
   def padStart(): java.lang.String = js.native
-  def padStart(length: js.UndefOr[scala.Nothing], chars: java.lang.String): java.lang.String = js.native
   def padStart(length: Double): java.lang.String = js.native
   def padStart(length: Double, chars: java.lang.String): java.lang.String = js.native
+  def padStart(length: Unit, chars: java.lang.String): java.lang.String = js.native
   
   /**
     * @see _.parseInt
@@ -612,7 +611,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.propertyOf
     */
-  def propertyOf(): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, _]] = js.native
+  def propertyOf(): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, js.Any]] = js.native
   
   /**
     * @see _.random
@@ -629,17 +628,17 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     * @see _.range
     */
   def range(): Collection[Double] = js.native
-  def range(end: js.UndefOr[scala.Nothing], step: Double): Collection[Double] = js.native
   def range(end: Double): Collection[Double] = js.native
   def range(end: Double, step: Double): Collection[Double] = js.native
+  def range(end: Unit, step: Double): Collection[Double] = js.native
   
   /**
     * @see _.rangeRight
     */
   def rangeRight(): Collection[Double] = js.native
-  def rangeRight(end: js.UndefOr[scala.Nothing], step: Double): Collection[Double] = js.native
   def rangeRight(end: Double): Collection[Double] = js.native
   def rangeRight(end: Double, step: Double): Collection[Double] = js.native
+  def rangeRight(end: Unit, step: Double): Collection[Double] = js.native
   
   /**
     * @see _.repeat
@@ -721,9 +720,9 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     * @see _.split
     */
   def split(): Collection[java.lang.String] = js.native
-  def split(separator: js.UndefOr[scala.Nothing], limit: Double): Collection[java.lang.String] = js.native
   def split(separator: java.lang.String): Collection[java.lang.String] = js.native
   def split(separator: java.lang.String, limit: Double): Collection[java.lang.String] = js.native
+  def split(separator: Unit, limit: Double): Collection[java.lang.String] = js.native
   def split(separator: RegExp): Collection[java.lang.String] = js.native
   def split(separator: RegExp, limit: Double): Collection[java.lang.String] = js.native
   
@@ -736,14 +735,14 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     * @see _.startsWith
     */
   def startsWith(): Boolean = js.native
-  def startsWith(target: js.UndefOr[scala.Nothing], position: Double): Boolean = js.native
   def startsWith(target: java.lang.String): Boolean = js.native
   def startsWith(target: java.lang.String, position: Double): Boolean = js.native
+  def startsWith(target: Unit, position: Double): Boolean = js.native
   
   /**
     * @see _.stubArray
     */
-  def stubArray(): js.Array[_] = js.native
+  def stubArray(): js.Array[js.Any] = js.native
   
   /**
     * @see _.stubFalse
@@ -833,12 +832,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.toPairs
     */
-  def toPairs(): Collection[js.Tuple2[java.lang.String, _]] = js.native
+  def toPairs(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
   
   /**
     * @see _.toPairsIn
     */
-  def toPairsIn(): Collection[js.Tuple2[java.lang.String, _]] = js.native
+  def toPairsIn(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
   
   /**
     * @see _.toPath
@@ -848,7 +847,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.toPlainObject
     */
-  def toPlainObject(): Object[_] = js.native
+  def toPlainObject(): Object[js.Any] = js.native
   
   /**
     * @see _.toSafeInteger
@@ -902,7 +901,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.update
     */
-  def update(path: PropertyPath, updater: js.Function1[/* value */ js.Any, _]): Object[_] = js.native
+  def update(path: PropertyPath, updater: js.Function1[/* value */ js.Any, js.Any]): Object[js.Any] = js.native
   
   /**
     * @see _.upperCase

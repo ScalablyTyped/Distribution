@@ -6,14 +6,15 @@ import typings.azureSb.mod.Azure.ServiceBus.ResponseCallback
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apnsserviceMod {
   
   @JSImport("azure-sb/lib/apnsservice", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ApnsService {
+  class ^ protected ()
+    extends StObject
+       with ApnsService {
     def this(notificationHubService: typings.azureSb.notificationhubserviceMod.^) = this()
   }
   
@@ -134,20 +135,19 @@ object apnsserviceMod {
   }
   
   /* Inlined std.Partial<{  expiry :std.Date,   aps :object,   badge :number,   alert :string,   sound :string,   payload :object}> */
-  @js.native
   trait Template extends StObject {
     
-    var alert: js.UndefOr[String] = js.native
+    var alert: js.UndefOr[String] = js.undefined
     
-    var aps: js.UndefOr[js.Object] = js.native
+    var aps: js.UndefOr[js.Object] = js.undefined
     
-    var badge: js.UndefOr[Double] = js.native
+    var badge: js.UndefOr[Double] = js.undefined
     
-    var expiry: js.UndefOr[Date] = js.native
+    var expiry: js.UndefOr[Date] = js.undefined
     
-    var payload: js.UndefOr[js.Object] = js.native
+    var payload: js.UndefOr[js.Object] = js.undefined
     
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
   }
   object Template {
     

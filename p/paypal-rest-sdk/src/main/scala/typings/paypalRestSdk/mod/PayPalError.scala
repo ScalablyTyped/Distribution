@@ -2,21 +2,19 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayPalError extends StObject {
   
-  val debug_id: String = js.native
+  val debug_id: String
   
-  val details: js.Array[ErrorDetails] = js.native
+  val details: js.Array[ErrorDetails]
   
-  val information_link: String = js.native
+  val information_link: String
   
-  val message: String = js.native
+  val message: String
   
-  val name: String = js.native
+  val name: String
 }
 object PayPalError {
   

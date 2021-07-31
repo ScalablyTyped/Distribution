@@ -2,41 +2,39 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserProfileResult extends StObject {
   
   /**
     * The date the user profile was created, in timestamp format.
     */
-  var createdTimestamp: js.UndefOr[CreatedTimestamp] = js.native
+  var createdTimestamp: js.UndefOr[CreatedTimestamp] = js.undefined
   
   /**
     * The name that is displayed as the friendly name for the user in AWS CodeStar.
     */
-  var displayName: js.UndefOr[UserProfileDisplayName] = js.native
+  var displayName: js.UndefOr[UserProfileDisplayName] = js.undefined
   
   /**
     * The email address that is displayed as part of the user's profile in AWS CodeStar.
     */
-  var emailAddress: js.UndefOr[Email] = js.native
+  var emailAddress: js.UndefOr[Email] = js.undefined
   
   /**
     * The date the user profile was last modified, in timestamp format.
     */
-  var lastModifiedTimestamp: js.UndefOr[LastModifiedTimestamp] = js.native
+  var lastModifiedTimestamp: js.UndefOr[LastModifiedTimestamp] = js.undefined
   
   /**
     * The SSH public key associated with the user in AWS CodeStar. This is the public portion of the public/private keypair the user can use to access project resources if a project owner allows the user remote access to those resources.
     */
-  var sshPublicKey: js.UndefOr[SshPublicKey] = js.native
+  var sshPublicKey: js.UndefOr[SshPublicKey] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user in IAM.
     */
-  var userArn: UserArn = js.native
+  var userArn: UserArn
 }
 object UpdateUserProfileResult {
   

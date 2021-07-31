@@ -20,10 +20,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secretsmanagerMod {
+  
+  @JSImport("@pulumi/aws/secretsmanager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/secretsmanager", "Secret")
   @js.native
@@ -38,11 +41,15 @@ object secretsmanagerMod {
       */
     def this(name: String) = this()
     def this(name: String, args: SecretArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SecretArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Secret {
+    
+    @JSImport("@pulumi/aws/secretsmanager", "Secret")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Secret resource's state with the given name, ID, and optional extra
@@ -53,26 +60,21 @@ object secretsmanagerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.secretMod.Secret = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.secretMod.Secret = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretState): typings.pulumiAws.secretMod.Secret = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "Secret.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretState, opts: CustomResourceOptions): typings.pulumiAws.secretMod.Secret = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.secretMod.Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretMod.Secret]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.secretMod.Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretMod.Secret]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretState): typings.pulumiAws.secretMod.Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretMod.Secret]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretState, opts: CustomResourceOptions): typings.pulumiAws.secretMod.Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretMod.Secret]
     
     /**
       * Returns true if the given object is an instance of Secret.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "Secret.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean]
   }
   
   @JSImport("@pulumi/aws/secretsmanager", "SecretPolicy")
@@ -92,6 +94,10 @@ object secretsmanagerMod {
   /* static members */
   object SecretPolicy {
     
+    @JSImport("@pulumi/aws/secretsmanager", "SecretPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecretPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -101,26 +107,21 @@ object secretsmanagerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.secretPolicyMod.SecretPolicy = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.secretPolicyMod.SecretPolicy = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretPolicyState): typings.pulumiAws.secretPolicyMod.SecretPolicy = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretPolicyState, opts: CustomResourceOptions): typings.pulumiAws.secretPolicyMod.SecretPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.secretPolicyMod.SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretPolicyMod.SecretPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.secretPolicyMod.SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretPolicyMod.SecretPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretPolicyState): typings.pulumiAws.secretPolicyMod.SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretPolicyMod.SecretPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretPolicyState, opts: CustomResourceOptions): typings.pulumiAws.secretPolicyMod.SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretPolicyMod.SecretPolicy]
     
     /**
       * Returns true if the given object is an instance of SecretPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "SecretPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean]
   }
   
   @JSImport("@pulumi/aws/secretsmanager", "SecretRotation")
@@ -140,6 +141,10 @@ object secretsmanagerMod {
   /* static members */
   object SecretRotation {
     
+    @JSImport("@pulumi/aws/secretsmanager", "SecretRotation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecretRotation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -149,26 +154,21 @@ object secretsmanagerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.secretRotationMod.SecretRotation = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.secretRotationMod.SecretRotation = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretRotationState): typings.pulumiAws.secretRotationMod.SecretRotation = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretRotationState, opts: CustomResourceOptions): typings.pulumiAws.secretRotationMod.SecretRotation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.secretRotationMod.SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretRotationMod.SecretRotation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.secretRotationMod.SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretRotationMod.SecretRotation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretRotationState): typings.pulumiAws.secretRotationMod.SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretRotationMod.SecretRotation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretRotationState, opts: CustomResourceOptions): typings.pulumiAws.secretRotationMod.SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretRotationMod.SecretRotation]
     
     /**
       * Returns true if the given object is an instance of SecretRotation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "SecretRotation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretRotation.SecretRotation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretRotation.SecretRotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretRotation.SecretRotation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/secretsmanager", "SecretVersion")
@@ -188,6 +188,10 @@ object secretsmanagerMod {
   /* static members */
   object SecretVersion {
     
+    @JSImport("@pulumi/aws/secretsmanager", "SecretVersion")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecretVersion resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -197,52 +201,39 @@ object secretsmanagerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "SecretVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.secretVersionMod.SecretVersion = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.secretVersionMod.SecretVersion = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretVersionState): typings.pulumiAws.secretVersionMod.SecretVersion = js.native
-    @JSImport("@pulumi/aws/secretsmanager", "SecretVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretVersionState, opts: CustomResourceOptions): typings.pulumiAws.secretVersionMod.SecretVersion = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.secretVersionMod.SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretVersionMod.SecretVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.secretVersionMod.SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretVersionMod.SecretVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretVersionState): typings.pulumiAws.secretVersionMod.SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretVersionMod.SecretVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretVersionState, opts: CustomResourceOptions): typings.pulumiAws.secretVersionMod.SecretVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.secretVersionMod.SecretVersion]
     
     /**
       * Returns true if the given object is an instance of SecretVersion.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/secretsmanager", "SecretVersion.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/secretsmanager", "getSecret")
-  @js.native
-  def getSecret(): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager", "getSecret")
-  @js.native
-  def getSecret(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager", "getSecret")
-  @js.native
-  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager", "getSecret")
-  @js.native
-  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = js.native
+  @scala.inline
+  def getSecret(): js.Promise[GetSecretResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")().asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: Unit, opts: InvokeOptions): js.Promise[GetSecretResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretResult]]
   
-  @JSImport("@pulumi/aws/secretsmanager", "getSecretRotation")
-  @js.native
-  def getSecretRotation(args: GetSecretRotationArgs): js.Promise[GetSecretRotationResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager", "getSecretRotation")
-  @js.native
-  def getSecretRotation(args: GetSecretRotationArgs, opts: InvokeOptions): js.Promise[GetSecretRotationResult] = js.native
+  @scala.inline
+  def getSecretRotation(args: GetSecretRotationArgs): js.Promise[GetSecretRotationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretRotationResult]]
+  @scala.inline
+  def getSecretRotation(args: GetSecretRotationArgs, opts: InvokeOptions): js.Promise[GetSecretRotationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretRotationResult]]
   
-  @JSImport("@pulumi/aws/secretsmanager", "getSecretVersion")
-  @js.native
-  def getSecretVersion(args: GetSecretVersionArgs): js.Promise[GetSecretVersionResult] = js.native
-  @JSImport("@pulumi/aws/secretsmanager", "getSecretVersion")
-  @js.native
-  def getSecretVersion(args: GetSecretVersionArgs, opts: InvokeOptions): js.Promise[GetSecretVersionResult] = js.native
+  @scala.inline
+  def getSecretVersion(args: GetSecretVersionArgs): js.Promise[GetSecretVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecretVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretVersionResult]]
+  @scala.inline
+  def getSecretVersion(args: GetSecretVersionArgs, opts: InvokeOptions): js.Promise[GetSecretVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecretVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretVersionResult]]
 }

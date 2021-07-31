@@ -4,17 +4,15 @@ import typings.astTypes.kindsMod.PositionKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceLocation extends StObject {
   
-  var end: PositionKind = js.native
+  var end: PositionKind
   
-  var source: js.UndefOr[String | Null] = js.native
+  var source: js.UndefOr[String | Null] = js.undefined
   
-  var start: PositionKind = js.native
+  var start: PositionKind
 }
 object SourceLocation {
   

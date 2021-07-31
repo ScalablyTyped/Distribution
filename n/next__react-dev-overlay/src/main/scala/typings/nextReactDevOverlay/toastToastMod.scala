@@ -5,7 +5,6 @@ import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastToastMod {
@@ -14,14 +13,13 @@ object toastToastMod {
   @js.native
   val Toast: FC[ToastProps] = js.native
   
-  @js.native
   trait ToastProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function1[/* ev */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object ToastProps {
     

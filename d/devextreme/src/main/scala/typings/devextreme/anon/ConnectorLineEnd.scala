@@ -8,29 +8,27 @@ import typings.devextreme.devextremeStrings.outlinedTriangle
 import typings.devextreme.devextremeStrings.straight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorLineEnd extends StObject {
   
-  var connectorLineEnd: js.UndefOr[none | arrow | outlinedTriangle | filledTriangle] = js.native
+  var connectorLineEnd: js.UndefOr[none | arrow | outlinedTriangle | filledTriangle] = js.undefined
   
-  var connectorLineStart: js.UndefOr[none | arrow | outlinedTriangle | filledTriangle] = js.native
+  var connectorLineStart: js.UndefOr[none | arrow | outlinedTriangle | filledTriangle] = js.undefined
   
-  var connectorLineType: js.UndefOr[straight | orthogonal] = js.native
+  var connectorLineType: js.UndefOr[straight | orthogonal] = js.undefined
   
-  var shapeMaxHeight: js.UndefOr[Double] = js.native
+  var shapeMaxHeight: js.UndefOr[Double] = js.undefined
   
-  var shapeMaxWidth: js.UndefOr[Double] = js.native
+  var shapeMaxWidth: js.UndefOr[Double] = js.undefined
   
-  var shapeMinHeight: js.UndefOr[Double] = js.native
+  var shapeMinHeight: js.UndefOr[Double] = js.undefined
   
-  var shapeMinWidth: js.UndefOr[Double] = js.native
+  var shapeMinWidth: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
-  var textStyle: js.UndefOr[js.Any] = js.native
+  var textStyle: js.UndefOr[js.Any] = js.undefined
 }
 object ConnectorLineEnd {
   

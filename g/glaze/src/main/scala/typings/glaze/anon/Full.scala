@@ -6,25 +6,23 @@ import typings.glaze.glazeStrings.Dot25rem
 import typings.glaze.glazeStrings.Dot5rem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Full extends StObject {
   
-  val full: `9999` = js.native
+  val full: `9999`
   
-  val lg: Dot5rem = js.native
+  val lg: Dot5rem
   
-  val md: Dot25rem = js.native
+  val md: Dot25rem
   
-  val sm: Dot125rem = js.native
+  val sm: Dot125rem
 }
 object Full {
   
   @scala.inline
-  def apply(full: `9999`, lg: Dot5rem, md: Dot25rem, sm: Dot125rem): Full = {
-    val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any])
+  def apply(): Full = {
+    val __obj = js.Dynamic.literal(full = 9999, lg = ".5rem", md = ".25rem", sm = ".125rem")
     __obj.asInstanceOf[Full]
   }
   

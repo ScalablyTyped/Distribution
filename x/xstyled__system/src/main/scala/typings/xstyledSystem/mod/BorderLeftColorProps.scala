@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderLeftColorProps extends StObject {
   
   val borderLeftColor: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BorderLeftColorProps {
   
@@ -28,7 +26,7 @@ object BorderLeftColorProps {
     @scala.inline
     def setBorderLeftColor(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
         ]
     ): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BorderLeftColorProps {
     def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
     @scala.inline
-    def setBorderLeftColorVarargs(value: js.Any*): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
+    def setBorderLeftColorVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any)*
+    ): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
   }
 }

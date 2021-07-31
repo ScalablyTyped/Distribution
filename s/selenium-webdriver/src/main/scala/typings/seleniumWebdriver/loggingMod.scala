@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggingMod {
+  
+  @JSImport("selenium-webdriver/lib/logging", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("selenium-webdriver/lib/logging", "Entry")
   @js.native
@@ -27,18 +30,18 @@ object loggingMod {
     def this(level: String, message: String, opt_timestamp: Double) = this()
     def this(level: Double, message: String, opt_timestamp: Double) = this()
     def this(level: Level, message: String, opt_timestamp: Double) = this()
-    def this(level: String, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: String) = this()
-    def this(level: String, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: IType) = this()
-    def this(level: Double, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: String) = this()
-    def this(level: Double, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
+    def this(level: String, message: String, opt_timestamp: Unit, opt_type: String) = this()
+    def this(level: String, message: String, opt_timestamp: Unit, opt_type: IType) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: IType) = this()
-    def this(level: Level, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: String) = this()
-    def this(level: Level, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
+    def this(level: Double, message: String, opt_timestamp: Unit, opt_type: String) = this()
+    def this(level: Double, message: String, opt_timestamp: Unit, opt_type: IType) = this()
     def this(level: Level, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: Level, message: String, opt_timestamp: Double, opt_type: IType) = this()
+    def this(level: Level, message: String, opt_timestamp: Unit, opt_type: String) = this()
+    def this(level: Level, message: String, opt_timestamp: Unit, opt_type: IType) = this()
     
     /** @type {!logging.Level} */
     var level: Level = js.native
@@ -363,48 +366,38 @@ object loggingMod {
   @js.native
   val Type: IType = js.native
   
-  @JSImport("selenium-webdriver/lib/logging", "addConsoleHandler")
-  @js.native
-  def addConsoleHandler(): Unit = js.native
-  @JSImport("selenium-webdriver/lib/logging", "addConsoleHandler")
-  @js.native
-  def addConsoleHandler(opt_logger: Logger): Unit = js.native
+  @scala.inline
+  def addConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")().asInstanceOf[Unit]
+  @scala.inline
+  def addConsoleHandler(opt_logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("selenium-webdriver/lib/logging", "getLevel")
-  @js.native
-  def getLevel(nameOrValue: String): Level = js.native
-  @JSImport("selenium-webdriver/lib/logging", "getLevel")
-  @js.native
-  def getLevel(nameOrValue: Double): Level = js.native
+  @scala.inline
+  def getLevel(nameOrValue: String): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[Level]
+  @scala.inline
+  def getLevel(nameOrValue: Double): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[Level]
   
-  @JSImport("selenium-webdriver/lib/logging", "getLogger")
-  @js.native
-  def getLogger(): Logger = js.native
-  @JSImport("selenium-webdriver/lib/logging", "getLogger")
-  @js.native
-  def getLogger(name: String): Logger = js.native
+  @scala.inline
+  def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
+  @scala.inline
+  def getLogger(name: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(name.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
-  @JSImport("selenium-webdriver/lib/logging", "installConsoleHandler")
-  @js.native
-  def installConsoleHandler(): Unit = js.native
+  @scala.inline
+  def installConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installConsoleHandler")().asInstanceOf[Unit]
   
-  @JSImport("selenium-webdriver/lib/logging", "removeConsoleHandler")
-  @js.native
-  def removeConsoleHandler(): Unit = js.native
-  @JSImport("selenium-webdriver/lib/logging", "removeConsoleHandler")
-  @js.native
-  def removeConsoleHandler(opt_logger: Logger): Unit = js.native
+  @scala.inline
+  def removeConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")().asInstanceOf[Unit]
+  @scala.inline
+  def removeConsoleHandler(opt_logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait IEntryJSON extends StObject {
     
-    var level: String = js.native
+    var level: String
     
-    var message: String = js.native
+    var message: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IEntryJSON {
     
@@ -432,23 +425,22 @@ object loggingMod {
     }
   }
   
-  @js.native
   trait IType extends StObject {
     
     /** Logs originating from the browser. */
-    var BROWSER: String = js.native
+    var BROWSER: String
     
     /** Logs from a WebDriver client. */
-    var CLIENT: String = js.native
+    var CLIENT: String
     
     /** Logs from a WebDriver implementation. */
-    var DRIVER: String = js.native
+    var DRIVER: String
     
     /** Logs related to performance. */
-    var PERFORMANCE: String = js.native
+    var PERFORMANCE: String
     
     /** Logs from the remote server. */
-    var SERVER: String = js.native
+    var SERVER: String
   }
   object IType {
     

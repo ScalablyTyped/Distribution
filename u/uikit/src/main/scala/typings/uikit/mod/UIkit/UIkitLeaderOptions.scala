@@ -2,15 +2,13 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitLeaderOptions extends StObject {
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var media: js.UndefOr[Double | String] = js.native
+  var media: js.UndefOr[Double | String] = js.undefined
 }
 object UIkitLeaderOptions {
   

@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +12,13 @@ trait DataValue extends StObject {
   def attachEvent(`type`: String, functor: WebixCallback, id: String): String | Double = js.native
   
   def bind(target: js.Any): Unit = js.native
-  def bind(target: js.Any, rule: js.UndefOr[scala.Nothing], format: String): Unit = js.native
+  def bind(target: js.Any, rule: Unit, format: String): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def detachEvent(id: String): Unit = js.native
   
@@ -39,4 +39,9 @@ trait DataValue extends StObject {
   def unbind(): Unit = js.native
   
   def unblockEvent(): Unit = js.native
+}
+object DataValue {
+  
+  @scala.inline
+  def apply: DataValueFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataValue").asInstanceOf[DataValueFactory]
 }

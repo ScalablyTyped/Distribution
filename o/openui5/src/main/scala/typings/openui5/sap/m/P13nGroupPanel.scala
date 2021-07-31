@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P13nGroupPanel extends P13nPanel {
+trait P13nGroupPanel
+  extends StObject
+     with P13nPanel {
   
   /**
     * Adds some groupItem to the aggregation <code>groupItems</code>.
@@ -260,7 +261,7 @@ trait P13nGroupPanel extends P13nPanel {
     * @since 1.26
     * @param array of operations [sap.m.P13nConditionOperation.BT, sap.m.P13nConditionOperation.EQ]
     */
-  def setOperations(array: js.Array[_]): Unit = js.native
+  def setOperations(array: js.Array[js.Any]): Unit = js.native
   
   /**
     * Unbinds aggregation <code>groupItems</code> from model data.

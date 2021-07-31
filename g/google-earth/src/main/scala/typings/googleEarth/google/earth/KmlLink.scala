@@ -2,11 +2,11 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLink extends KmlObject {
+trait KmlLink
+  extends StObject
+     with KmlObject {
   
   /**
     * A URL (either an HTTP address or a local file specification).
@@ -14,12 +14,12 @@ trait KmlLink extends KmlObject {
     * When the parent of Link is a Model, href is a COLLADA file.
     * When the parent of Link is an Overlay, href is an image.
     */
-  def getHref(): String = js.native
+  def getHref(): String
   
   /**
     * Indicates to refresh the file every n seconds.
     */
-  def getRefreshInterval(): Double = js.native
+  def getRefreshInterval(): Double
   
   /**
     * Specifies to use a time-based refresh mode.
@@ -30,20 +30,20 @@ trait KmlLink extends KmlObject {
     * * GEPlugin.REFRESH_ON_INTERVAL
     * * GEPlugin.REFRESH_ON_EXPIRE
     */
-  def getRefreshMode(): KmlRefreshModeEnum = js.native
+  def getRefreshMode(): KmlRefreshModeEnum
   
   /**
     * Scales the BBOX parameters before sending them to the server.
     * A value less than 1 specifies to use less than the full view (screen).
     * A value greater than 1 specifies to fetch an area that extends beyond the edges of the current view.
     */
-  def getViewBoundScale(): Double = js.native
+  def getViewBoundScale(): Double
   
   /**
     * Specifies the format of the query string that is appended to the Link's href before the file is fetched.
     * (If the href specifies a local file, this element is ignored.)
     */
-  def getViewFormat(): String = js.native
+  def getViewFormat(): String
   
   /**
     * Specifies how the link is refreshed when the viewport changes.
@@ -54,12 +54,12 @@ trait KmlLink extends KmlObject {
     * * GEPlugin.VIEW_REFRESH_ON_STOP
     * * GEPlugin.VIEW_REFRESH_ON_REGION
     */
-  def getViewRefreshMode(): KmlViewRefreshModeEnum = js.native
+  def getViewRefreshMode(): KmlViewRefreshModeEnum
   
   /**
     * Specifies how the link is refreshed when the camera changes.
     */
-  def getViewRefreshTime(): Double = js.native
+  def getViewRefreshTime(): Double
   
   /**
     * A URL (either an HTTP address or a local file specification).
@@ -67,12 +67,12 @@ trait KmlLink extends KmlObject {
     * When the parent of Link is a Model, href is a COLLADA file.
     * When the parent of Link is an Overlay, href is an image.
     */
-  def setHref(href: String): Unit = js.native
+  def setHref(href: String): Unit
   
   /**
     * Indicates to refresh the file every n seconds.
     */
-  def setRefreshInterval(refreshInterval: Double): Unit = js.native
+  def setRefreshInterval(refreshInterval: Double): Unit
   
   /**
     * Specifies to use a time-based refresh mode.
@@ -83,20 +83,20 @@ trait KmlLink extends KmlObject {
     * * GEPlugin.REFRESH_ON_INTERVAL
     * * GEPlugin.REFRESH_ON_EXPIRE
     */
-  def setRefreshMode(refreshMode: KmlRefreshModeEnum): Unit = js.native
+  def setRefreshMode(refreshMode: KmlRefreshModeEnum): Unit
   
   /**
     * Scales the BBOX parameters before sending them to the server.
     * A value less than 1 specifies to use less than the full view (screen).
     * A value greater than 1 specifies to fetch an area that extends beyond the edges of the current view.
     */
-  def setViewBoundScale(viewBoundScale: Double): Unit = js.native
+  def setViewBoundScale(viewBoundScale: Double): Unit
   
   /**
     * Specifies the format of the query string that is appended to the Link's href before the file is fetched.
     * (If the href specifies a local file, this element is ignored.)
     */
-  def setViewFormat(viewFormat: String): Unit = js.native
+  def setViewFormat(viewFormat: String): Unit
   
   /**
     * Specifies how the link is refreshed when the viewport changes.
@@ -107,12 +107,12 @@ trait KmlLink extends KmlObject {
     * * GEPlugin.VIEW_REFRESH_ON_STOP
     * * GEPlugin.VIEW_REFRESH_ON_REGION
     */
-  def setViewRefreshMode(viewRefreshMode: KmlViewRefreshModeEnum): Unit = js.native
+  def setViewRefreshMode(viewRefreshMode: KmlViewRefreshModeEnum): Unit
   
   /**
     * Specifies how the link is refreshed when the camera changes.
     */
-  def setViewRefreshTime(viewRefreshTime: Double): Unit = js.native
+  def setViewRefreshTime(viewRefreshTime: Double): Unit
 }
 object KmlLink {
   

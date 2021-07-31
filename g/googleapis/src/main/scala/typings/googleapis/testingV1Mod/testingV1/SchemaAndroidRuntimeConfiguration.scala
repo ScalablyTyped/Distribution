@@ -2,24 +2,22 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Android configuration that can be selected at the time a test is run.
   */
-@js.native
 trait SchemaAndroidRuntimeConfiguration extends StObject {
   
   /**
     * The set of available locales.
     */
-  var locales: js.UndefOr[js.Array[SchemaLocale]] = js.native
+  var locales: js.UndefOr[js.Array[SchemaLocale]] = js.undefined
   
   /**
     * The set of available orientations.
     */
-  var orientations: js.UndefOr[js.Array[SchemaOrientation]] = js.native
+  var orientations: js.UndefOr[js.Array[SchemaOrientation]] = js.undefined
 }
 object SchemaAndroidRuntimeConfiguration {
   

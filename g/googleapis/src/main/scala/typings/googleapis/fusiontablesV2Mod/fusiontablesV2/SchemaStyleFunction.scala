@@ -3,31 +3,29 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 import typings.googleapis.anon.Colors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a StyleFunction within a StyleSetting
   */
-@js.native
 trait SchemaStyleFunction extends StObject {
   
   /**
     * Bucket function that assigns a style based on the range a column value
     * falls into.
     */
-  var buckets: js.UndefOr[js.Array[SchemaBucket]] = js.native
+  var buckets: js.UndefOr[js.Array[SchemaBucket]] = js.undefined
   
   /**
     * Name of the column whose value is used in the style.
     */
-  var columnName: js.UndefOr[String] = js.native
+  var columnName: js.UndefOr[String] = js.undefined
   
   /**
     * Gradient function that interpolates a range of colors based on column
     * value.
     */
-  var gradient: js.UndefOr[Colors] = js.native
+  var gradient: js.UndefOr[Colors] = js.undefined
   
   /**
     * Stylers can be one of three kinds: &quot;fusiontables#fromColumn if the
@@ -38,7 +36,7 @@ trait SchemaStyleFunction extends StObject {
     * fusiontables#buckets if the styling is to based on the bucket into which
     * the the column value falls.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaStyleFunction {
   

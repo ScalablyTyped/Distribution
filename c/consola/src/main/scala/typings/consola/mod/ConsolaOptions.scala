@@ -4,29 +4,27 @@ import typings.consola.anon.typeinlogTypeConsolaLogOb
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsolaOptions extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var defaults: js.UndefOr[ConsolaLogObject] = js.native
+  var defaults: js.UndefOr[ConsolaLogObject] = js.undefined
   
-  var level: js.UndefOr[LogLevel] = js.native
+  var level: js.UndefOr[LogLevel] = js.undefined
   
-  var mockFn: js.UndefOr[ConsolaMockFn] = js.native
+  var mockFn: js.UndefOr[ConsolaMockFn] = js.undefined
   
-  var reporters: js.UndefOr[js.Array[ConsolaReporter]] = js.native
+  var reporters: js.UndefOr[js.Array[ConsolaReporter]] = js.undefined
   
-  var stderr: js.UndefOr[WritableStream] = js.native
+  var stderr: js.UndefOr[WritableStream] = js.undefined
   
-  var stdout: js.UndefOr[WritableStream] = js.native
+  var stdout: js.UndefOr[WritableStream] = js.undefined
   
-  var throttle: js.UndefOr[Double] = js.native
+  var throttle: js.UndefOr[Double] = js.undefined
   
-  var types: js.UndefOr[typeinlogTypeConsolaLogOb] = js.native
+  var types: js.UndefOr[typeinlogTypeConsolaLogOb] = js.undefined
 }
 object ConsolaOptions {
   

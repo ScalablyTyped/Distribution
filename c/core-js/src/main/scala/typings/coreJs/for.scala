@@ -3,11 +3,12 @@ package typings.coreJs
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `for`[T] extends IterableIterator[T] {
+trait `for`[T]
+  extends StObject
+     with IterableIterator[T] {
   
   def array(): Array[T] = js.native
   def array[U](callbackfn: js.Function2[/* value */ T, /* key */ js.Any, U]): Array[U] = js.native

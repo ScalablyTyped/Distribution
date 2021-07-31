@@ -4,47 +4,83 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeEventsBroadcasterMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/native-events-broadcaster", JSImport.Default)
   @js.native
-  class default protected () extends NativeEventsBroadcaster {
+  class default protected ()
+    extends StObject
+       with NativeEventsBroadcaster {
     def this(eventEmitter: IEventEmitter, output: HTMLVideoElement) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _checkVolumeChanges: js.Any = js.native
+    
+    /* CompleteClass */
+    var _currentMute: js.Any = js.native
+    
+    /* CompleteClass */
+    var _currentVolume: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _processEventFromVideo: js.Any = js.native
+    
+    /* CompleteClass */
+    var _shouldCheckVolume: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _video: js.Any = js.native
+    
+    /* CompleteClass */
+    override def checkVolumeChangeAfterLoadStart(): Unit = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
   }
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/native-events-broadcaster", "NATIVE_VIDEO_TO_BROADCAST")
   @js.native
   val NATIVE_VIDEO_TO_BROADCAST: js.Array[String] = js.native
   
-  @js.native
   trait NativeEventsBroadcaster extends StObject {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _checkVolumeChanges: js.Any = js.native
+    var _checkVolumeChanges: js.Any
     
-    var _currentMute: js.Any = js.native
+    var _currentMute: js.Any
     
-    var _currentVolume: js.Any = js.native
+    var _currentVolume: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _processEventFromVideo: js.Any = js.native
+    var _processEventFromVideo: js.Any
     
-    var _shouldCheckVolume: js.Any = js.native
+    var _shouldCheckVolume: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var _video: js.Any = js.native
+    var _video: js.Any
     
-    def checkVolumeChangeAfterLoadStart(): Unit = js.native
+    def checkVolumeChangeAfterLoadStart(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
   }
   object NativeEventsBroadcaster {
     

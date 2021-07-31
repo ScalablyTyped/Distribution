@@ -9,7 +9,6 @@ import typings.ol.tilecoordMod.TileCoord
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utfgridMod {
@@ -51,16 +50,15 @@ object utfgridMod {
     def getImage(): HTMLImageElement = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var jsonp: js.UndefOr[Boolean] = js.native
+    var jsonp: js.UndefOr[Boolean] = js.undefined
     
-    var preemptive: js.UndefOr[Boolean] = js.native
+    var preemptive: js.UndefOr[Boolean] = js.undefined
     
-    var tileJSON: js.UndefOr[Config] = js.native
+    var tileJSON: js.UndefOr[Config] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -134,14 +132,13 @@ object utfgridMod {
     def useTile(z: Double, x: Double, y: Double): Unit = js.native
   }
   
-  @js.native
   trait UTFGridJSON extends StObject {
     
-    var data: js.UndefOr[StringDictionary[js.Object]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Object]] = js.undefined
     
-    var grid: js.Array[String] = js.native
+    var grid: js.Array[String]
     
-    var keys: js.Array[String] = js.native
+    var keys: js.Array[String]
   }
   object UTFGridJSON {
     

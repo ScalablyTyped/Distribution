@@ -5,7 +5,6 @@ import typings.esfxEquatable.distMod.EqualityComparison
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,8 +16,8 @@ object mod {
     def this(equaler: Equaler[T]) = this()
     def this(equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T]) = this()
-    def this(iterable: js.UndefOr[scala.Nothing], equaler: Equaler[T]) = this()
-    def this(iterable: js.UndefOr[scala.Nothing], equaler: EqualityComparison[T]) = this()
+    def this(iterable: Unit, equaler: Equaler[T]) = this()
+    def this(iterable: Unit, equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T], equaler: Equaler[T]) = this()
     def this(iterable: Iterable[T], equaler: EqualityComparison[T]) = this()
   }

@@ -2,15 +2,13 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeInterval[T] extends StObject {
   
-  var interval: Double = js.native
+  var interval: Double
   
-  var value: T = js.native
+  var value: T
 }
 object TimeInterval {
   
@@ -21,7 +19,7 @@ object TimeInterval {
   }
   
   @scala.inline
-  implicit class TimeIntervalMutableBuilder[Self <: TimeInterval[_], T] (val x: Self with TimeInterval[T]) extends AnyVal {
+  implicit class TimeIntervalMutableBuilder[Self <: TimeInterval[?], T] (val x: Self & TimeInterval[T]) extends AnyVal {
     
     @scala.inline
     def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])

@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldmaster {
@@ -18,29 +17,30 @@ object fieldmaster {
     * specifies service of a {@link Bibliography} field master.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait Bibliography extends TextFieldMaster {
+  trait Bibliography
+    extends StObject
+       with TextFieldMaster {
     
     /** determines the closing bracket used to display the bibliography text fields. */
-    var BracketAfter: String = js.native
+    var BracketAfter: String
     
     /** determines the opening bracket used to display the bibliography text fields. */
-    var BracketBefore: String = js.native
+    var BracketBefore: String
     
     /** determines whether the bibliography text fields are numbered. If `FALSE` the short name of the bibliography entry is displayed instead. */
-    var IsNumberEntries: Boolean = js.native
+    var IsNumberEntries: Boolean
     
     /**
       * determines whether the bibliography entries in a bibliography index are sorted by the document position. If `FALSE` the SortKey property determines
       * the sorting of the entries.
       */
-    var IsSortByPosition: Boolean = js.native
+    var IsSortByPosition: Boolean
     
     /** contains the locale of the field master */
-    var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+    var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
     
     /** contains the name of the sort algorithm that is used to sort the text fields. */
-    var SortAlgorithm: String = js.native
+    var SortAlgorithm: String
     
     /**
       * determines the sorting of the bibliography entries in a bibliography index. This property is used if the property IsSortByPosition is not set. Each
@@ -60,7 +60,7 @@ object fieldmaster {
       *
       * Determines whether the sorting is ascending or descending. It uses the type {@link com.sun.star.text.BibliographyDataField}
       */
-    var SortKeys: SafeArray[PropertyValues] = js.native
+    var SortKeys: SafeArray[PropertyValues]
   }
   object Bibliography {
     
@@ -122,23 +122,24 @@ object fieldmaster {
     * specifies service of a {@link DDE} field master.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait DDE extends TextFieldMaster {
+  trait DDE
+    extends StObject
+       with TextFieldMaster {
     
     /** contains the content. */
-    var Content: String = js.native
+    var Content: String
     
     /** contains the element string of the {@link DDE} command. */
-    var DDECommandElement: String = js.native
+    var DDECommandElement: String
     
     /** contains the file string of the {@link DDE} command. */
-    var DDECommandFile: String = js.native
+    var DDECommandFile: String
     
     /** contains the type string of the {@link DDE} command. */
-    var DDECommandType: String = js.native
+    var DDECommandType: String
     
     /** determines whether {@link DDE} link is updated automatically. */
-    var IsAutomaticUpdate: Boolean = js.native
+    var IsAutomaticUpdate: Boolean
   }
   object DDE {
     
@@ -192,32 +193,33 @@ object fieldmaster {
     * specifies service of a {@link Database} field master.
     * @see com.sun.star.text.TextField Only one of the properties {@link DataBaseName} , {@link DataBaseURL} and {@link DataBaseResource} should be set. If
     */
-  @js.native
-  trait Database extends TextFieldMaster {
+  trait Database
+    extends StObject
+       with TextFieldMaster {
     
     /** contains the CommandType this can be the name of a data base table, a data query or a statement. (0 = table, 1 = query, 2 = statement) */
-    var CommandType: Double = js.native
+    var CommandType: Double
     
     /** specifies the database name. */
-    var DataBaseName: String = js.native
+    var DataBaseName: String
     
     /**
       * indicates a connection URL, which locates a database driver.
       * @since OOo 2.0
       */
-    var DataBaseResource: String = js.native
+    var DataBaseResource: String
     
     /**
       * indicates the URL of a database file.
       * @since OOo 2.0
       */
-    var DataBaseURL: String = js.native
+    var DataBaseURL: String
     
     /** contains the name of the data base table. */
-    var DataColumnName: String = js.native
+    var DataColumnName: String
     
     /** contains the command string. Depending on the CommandType property this can be the name of a data base table, a data query or a statement. */
-    var DataTableName: String = js.native
+    var DataTableName: String
   }
   object Database {
     
@@ -275,17 +277,18 @@ object fieldmaster {
     * Specifies the service of a set expression field master.
     * @see com.sun.star.text.TextFieldMaster
     */
-  @js.native
-  trait SetExpression extends TextFieldMaster {
+  trait SetExpression
+    extends StObject
+       with TextFieldMaster {
     
     /** determines the number of the chapter. This values is used if the field master is set as number sequence. */
-    var ChapterNumberingLevel: Double = js.native
+    var ChapterNumberingLevel: Double
     
     /** determines the numbering separator string if the field master is set as number sequence. */
-    var NumberingSeparator: String = js.native
+    var NumberingSeparator: String
     
     /** determines the type of the field as {@link com.sun.star.text.SetVariableType} */
-    var SubType: Double = js.native
+    var SubType: Double
   }
   object SetExpression {
     
@@ -331,17 +334,18 @@ object fieldmaster {
     * Specifies the service of a user field master.
     * @see com.sun.star.text.TextFieldMaster
     */
-  @js.native
-  trait User extends TextFieldMaster {
+  trait User
+    extends StObject
+       with TextFieldMaster {
     
     /** contains the content. */
-    var Content: String = js.native
+    var Content: String
     
     /** determines whether the field contains an expression. */
-    var IsExpression: Boolean = js.native
+    var IsExpression: Boolean
     
     /** contains the value. */
-    var Value: Double = js.native
+    var Value: Double
   }
   object User {
     

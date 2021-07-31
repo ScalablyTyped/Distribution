@@ -3,32 +3,32 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.SVG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExportSettingsSVG extends ExportSettings {
+trait ExportSettingsSVG
+  extends StObject
+     with ExportSettings {
   
-  val contentsOnly: js.UndefOr[Boolean] = js.native
+  val contentsOnly: js.UndefOr[Boolean] = js.undefined
   
-  val format: SVG = js.native
-  
-  // defaults to true
-  val suffix: js.UndefOr[String] = js.native
+  val format: SVG
   
   // defaults to true
-  val svgIdAttribute: js.UndefOr[Boolean] = js.native
+  val suffix: js.UndefOr[String] = js.undefined
   
-  val svgOutlineText: js.UndefOr[Boolean] = js.native
+  // defaults to true
+  val svgIdAttribute: js.UndefOr[Boolean] = js.undefined
+  
+  val svgOutlineText: js.UndefOr[Boolean] = js.undefined
   
   // defaults to false
-  val svgSimplifyStroke: js.UndefOr[Boolean] = js.native
+  val svgSimplifyStroke: js.UndefOr[Boolean] = js.undefined
 }
 object ExportSettingsSVG {
   
   @scala.inline
-  def apply(format: SVG): ExportSettingsSVG = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+  def apply(): ExportSettingsSVG = {
+    val __obj = js.Dynamic.literal(format = "SVG")
     __obj.asInstanceOf[ExportSettingsSVG]
   }
   

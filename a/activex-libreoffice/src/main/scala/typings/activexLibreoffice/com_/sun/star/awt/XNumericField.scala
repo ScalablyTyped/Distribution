@@ -4,81 +4,81 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and formatting of a numeric field. */
-@js.native
-trait XNumericField extends XInterface {
+trait XNumericField
+  extends StObject
+     with XInterface {
   
   /** returns the currently set number of decimals. */
-  var DecimalDigits: Double = js.native
+  var DecimalDigits: Double
   
   /** returns the currently set first value which is set on POS1 key. */
-  var First: Double = js.native
+  var First: Double
   
   /** returns the currently set last value which is set on END key. */
-  var Last: Double = js.native
+  var Last: Double
   
   /** returns the currently set maximum value that can be entered by the user. */
-  var Max: Double = js.native
+  var Max: Double
   
   /** returns the currently set minimum value that can be entered by the user. */
-  var Min: Double = js.native
+  var Min: Double
   
   /** returns the currently set increment value for the spin button. */
-  var SpinSize: Double = js.native
+  var SpinSize: Double
   
   /** returns the value which is currently displayed in the numeric field. */
-  var Value: Double = js.native
+  var Value: Double
   
   /** returns the currently set number of decimals. */
-  def getDecimalDigits(): Double = js.native
+  def getDecimalDigits(): Double
   
   /** returns the currently set first value which is set on POS1 key. */
-  def getFirst(): Double = js.native
+  def getFirst(): Double
   
   /** returns the currently set last value which is set on END key. */
-  def getLast(): Double = js.native
+  def getLast(): Double
   
   /** returns the currently set maximum value that can be entered by the user. */
-  def getMax(): Double = js.native
+  def getMax(): Double
   
   /** returns the currently set minimum value that can be entered by the user. */
-  def getMin(): Double = js.native
+  def getMin(): Double
   
   /** returns the currently set increment value for the spin button. */
-  def getSpinSize(): Double = js.native
+  def getSpinSize(): Double
   
   /** returns the value which is currently displayed in the numeric field. */
-  def getValue(): Double = js.native
+  def getValue(): Double
   
   /** returns whether the format is currently checked during user input. */
-  def isStrictFormat(): Boolean = js.native
+  def isStrictFormat(): Boolean
   
   /** sets the number of decimals. */
-  def setDecimalDigits(nDigits: Double): Unit = js.native
+  def setDecimalDigits(nDigits: Double): Unit
   
   /** sets the first value to be set on POS1 key. */
-  def setFirst(Value: Double): Unit = js.native
+  def setFirst(Value: Double): Unit
   
   /** sets the last value to be set on END key. */
-  def setLast(Value: Double): Unit = js.native
+  def setLast(Value: Double): Unit
   
   /** sets the maximum value that can be entered by the user. */
-  def setMax(Value: Double): Unit = js.native
+  def setMax(Value: Double): Unit
   
   /** sets the minimum value that can be entered by the user. */
-  def setMin(Value: Double): Unit = js.native
+  def setMin(Value: Double): Unit
   
   /** sets the increment value for the spin button. */
-  def setSpinSize(Value: Double): Unit = js.native
+  def setSpinSize(Value: Double): Unit
   
   /** determines if the format is checked during user input. */
-  def setStrictFormat(bStrict: Boolean): Unit = js.native
+  def setStrictFormat(bStrict: Boolean): Unit
   
   /** sets the value which is displayed in the numeric field. */
-  def setValue(Value: Double): Unit = js.native
+  def setValue(Value: Double): Unit
 }
 object XNumericField {
   

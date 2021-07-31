@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for cancellable events which concern manipulations on groups.
   */
-@js.native
-trait ASPxClientNavBarGroupCancelEventArgs extends ASPxClientProcessingModeCancelEventArgs {
+trait ASPxClientNavBarGroupCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
   
   /**
     * Gets the group object related to the event.
     */
-  var group: ASPxClientNavBarGroup = js.native
+  var group: ASPxClientNavBarGroup
 }
 object ASPxClientNavBarGroupCancelEventArgs {
   

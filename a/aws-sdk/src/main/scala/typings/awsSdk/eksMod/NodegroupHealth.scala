@@ -2,16 +2,14 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodegroupHealth extends StObject {
   
   /**
     * Any issues that are associated with the node group. 
     */
-  var issues: js.UndefOr[IssueList] = js.native
+  var issues: js.UndefOr[IssueList] = js.undefined
 }
 object NodegroupHealth {
   

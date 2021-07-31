@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SMSMfaSettingsType extends StObject {
   
   /**
     * Specifies whether SMS text message MFA is enabled.
     */
-  var Enabled: js.UndefOr[BooleanType] = js.native
+  var Enabled: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * Specifies whether SMS is the preferred MFA method.
     */
-  var PreferredMfa: js.UndefOr[BooleanType] = js.native
+  var PreferredMfa: js.UndefOr[BooleanType] = js.undefined
 }
 object SMSMfaSettingsType {
   

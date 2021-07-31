@@ -2,58 +2,56 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyObjectOutput extends StObject {
   
   /**
     * Container for all response elements.
     */
-  var CopyObjectResult: js.UndefOr[typings.awsSdk.s3Mod.CopyObjectResult] = js.native
+  var CopyObjectResult: js.UndefOr[typings.awsSdk.s3Mod.CopyObjectResult] = js.undefined
   
   /**
     * Version of the copied object in the destination bucket.
     */
-  var CopySourceVersionId: js.UndefOr[typings.awsSdk.s3Mod.CopySourceVersionId] = js.native
+  var CopySourceVersionId: js.UndefOr[typings.awsSdk.s3Mod.CopySourceVersionId] = js.undefined
   
   /**
     * If the object expiration is configured, the response includes this header.
     */
-  var Expiration: js.UndefOr[typings.awsSdk.s3Mod.Expiration] = js.native
+  var Expiration: js.UndefOr[typings.awsSdk.s3Mod.Expiration] = js.undefined
   
-  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.native
+  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.undefined
   
   /**
     * If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.native
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
     * If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round-trip message integrity verification of the customer-provided encryption key.
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.native
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
     * If present, specifies the AWS KMS Encryption Context to use for object encryption. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.
     */
-  var SSEKMSEncryptionContext: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSEncryptionContext] = js.native
+  var SSEKMSEncryptionContext: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSEncryptionContext] = js.undefined
   
   /**
     * If present, specifies the ID of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
     */
-  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.native
+  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.undefined
   
   /**
     * The server-side encryption algorithm used when storing this object in Amazon S3 (for example, AES256, aws:kms).
     */
-  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.native
+  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.undefined
   
   /**
     * Version ID of the newly created copy.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.native
+  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
 }
 object CopyObjectOutput {
   

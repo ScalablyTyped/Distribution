@@ -5,12 +5,12 @@ import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ICommand
-  extends typings.ionicCliFramework.definitionsMod.ICommand[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
+  extends StObject
+     with typings.ionicCliFramework.definitionsMod.ICommand[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
   
   val env: IonicEnvironment = js.native
   

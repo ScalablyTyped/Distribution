@@ -2,7 +2,6 @@ package typings.parseConflictJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,32 +11,31 @@ object mod {
     * If the JSON is valid, it just does JSON.parse as normal.
     * If either side of the conflict is invalid JSON, then an error is thrown for that.
     */
-  @JSImport("parse-conflict-json", JSImport.Namespace)
-  @js.native
-  def apply(text: String): js.Any = js.native
-  @JSImport("parse-conflict-json", JSImport.Namespace)
-  @js.native
-  def apply(text: String, reviver: js.UndefOr[scala.Nothing], prefer: Prefer): js.Any = js.native
-  @JSImport("parse-conflict-json", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(text: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def apply(
     text: String,
-    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _]
-  ): js.Any = js.native
-  @JSImport("parse-conflict-json", JSImport.Namespace)
-  @js.native
+    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
+  ): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def apply(
     text: String,
-    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _],
+    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
     prefer: Prefer
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(text: String, reviver: Unit, prefer: Prefer): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], prefer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @JSImport("parse-conflict-json", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * returns true if the data looks like a conflicted diff file
     */
-  @JSImport("parse-conflict-json", "isDiff")
-  @js.native
-  def isDiff(text: String): Boolean = js.native
+  @scala.inline
+  def isDiff(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDiff")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * If prefer is set to theirs, then the vaules of theirs and ours are switched in the resolver function.

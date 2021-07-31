@@ -12,7 +12,7 @@ A lite wrapper around tape to simplify async testing.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 27832 |
+| # downloads        | 23096 |
 | # stars            | 1 |
 
 ## Links

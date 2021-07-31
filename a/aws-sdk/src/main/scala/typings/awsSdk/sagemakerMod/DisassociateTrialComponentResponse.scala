@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateTrialComponentResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the trial.
     */
-  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.native
+  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.undefined
   
   /**
     * The ARN of the trial component.
     */
-  var TrialComponentArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentArn] = js.native
+  var TrialComponentArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentArn] = js.undefined
 }
 object DisassociateTrialComponentResponse {
   

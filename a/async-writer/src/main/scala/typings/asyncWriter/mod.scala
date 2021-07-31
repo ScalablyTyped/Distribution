@@ -6,59 +6,32 @@ import typings.node.streamMod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("async-writer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("async-writer", "AsyncWriter")
   @js.native
   class AsyncWriter () extends StObject {
     def this(writer: js.Any) = this()
-    def this(writer: js.UndefOr[scala.Nothing], global: StringDictionary[js.Any]) = this()
     def this(writer: js.Any, global: StringDictionary[js.Any]) = this()
-    def this(writer: js.UndefOr[scala.Nothing], global: js.UndefOr[scala.Nothing], async: Boolean) = this()
-    def this(writer: js.UndefOr[scala.Nothing], global: StringDictionary[js.Any], async: Boolean) = this()
-    def this(writer: js.Any, global: js.UndefOr[scala.Nothing], async: Boolean) = this()
+    def this(writer: Unit, global: StringDictionary[js.Any]) = this()
     def this(writer: js.Any, global: StringDictionary[js.Any], async: Boolean) = this()
-    def this(
-      writer: js.UndefOr[scala.Nothing],
-      global: js.UndefOr[scala.Nothing],
-      async: js.UndefOr[scala.Nothing],
-      buffer: Boolean
-    ) = this()
-    def this(
-      writer: js.UndefOr[scala.Nothing],
-      global: js.UndefOr[scala.Nothing],
-      async: Boolean,
-      buffer: Boolean
-    ) = this()
-    def this(
-      writer: js.UndefOr[scala.Nothing],
-      global: StringDictionary[js.Any],
-      async: js.UndefOr[scala.Nothing],
-      buffer: Boolean
-    ) = this()
-    def this(
-      writer: js.UndefOr[scala.Nothing],
-      global: StringDictionary[js.Any],
-      async: Boolean,
-      buffer: Boolean
-    ) = this()
-    def this(
-      writer: js.Any,
-      global: js.UndefOr[scala.Nothing],
-      async: js.UndefOr[scala.Nothing],
-      buffer: Boolean
-    ) = this()
-    def this(writer: js.Any, global: js.UndefOr[scala.Nothing], async: Boolean, buffer: Boolean) = this()
-    def this(
-      writer: js.Any,
-      global: StringDictionary[js.Any],
-      async: js.UndefOr[scala.Nothing],
-      buffer: Boolean
-    ) = this()
+    def this(writer: js.Any, global: Unit, async: Boolean) = this()
+    def this(writer: Unit, global: StringDictionary[js.Any], async: Boolean) = this()
+    def this(writer: Unit, global: Unit, async: Boolean) = this()
     def this(writer: js.Any, global: StringDictionary[js.Any], async: Boolean, buffer: Boolean) = this()
+    def this(writer: js.Any, global: StringDictionary[js.Any], async: Unit, buffer: Boolean) = this()
+    def this(writer: js.Any, global: Unit, async: Boolean, buffer: Boolean) = this()
+    def this(writer: js.Any, global: Unit, async: Unit, buffer: Boolean) = this()
+    def this(writer: Unit, global: StringDictionary[js.Any], async: Boolean, buffer: Boolean) = this()
+    def this(writer: Unit, global: StringDictionary[js.Any], async: Unit, buffer: Boolean) = this()
+    def this(writer: Unit, global: Unit, async: Boolean, buffer: Boolean) = this()
+    def this(writer: Unit, global: Unit, async: Unit, buffer: Boolean) = this()
     
     def _finish(): Unit = js.native
     
@@ -112,10 +85,13 @@ object mod {
   }
   object AsyncWriter {
     
-    /* static member */
-    @JSImport("async-writer", "AsyncWriter.enableAsyncStackTrace")
+    @JSImport("async-writer", "AsyncWriter")
     @js.native
-    def enableAsyncStackTrace(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
   }
   
   @JSImport("async-writer", "BufferedWriter")
@@ -146,29 +122,23 @@ object mod {
     def write(what: String): StringWriter = js.native
   }
   
-  @JSImport("async-writer", "create")
-  @js.native
-  def create(): AsyncWriter = js.native
-  @JSImport("async-writer", "create")
-  @js.native
-  def create(writer: js.UndefOr[scala.Nothing], options: AsyncWriterOptions): AsyncWriter = js.native
-  @JSImport("async-writer", "create")
-  @js.native
-  def create(writer: js.Any): AsyncWriter = js.native
-  @JSImport("async-writer", "create")
-  @js.native
-  def create(writer: js.Any, options: AsyncWriterOptions): AsyncWriter = js.native
+  @scala.inline
+  def create(): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AsyncWriter]
+  @scala.inline
+  def create(writer: js.Any): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncWriter]
+  @scala.inline
+  def create(writer: js.Any, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
+  @scala.inline
+  def create(writer: Unit, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
   
-  @JSImport("async-writer", "enableAsyncStackTrace")
-  @js.native
-  def enableAsyncStackTrace(): Unit = js.native
+  @scala.inline
+  def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
   
-  @js.native
   trait AsyncWriterOptions extends StObject {
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
-    var global: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var global: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object AsyncWriterOptions {
     
@@ -195,14 +165,13 @@ object mod {
     }
   }
   
-  @js.native
   trait BeginAsyncOptions extends StObject {
     
-    var last: js.UndefOr[Boolean] = js.native
+    var last: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object BeginAsyncOptions {
     

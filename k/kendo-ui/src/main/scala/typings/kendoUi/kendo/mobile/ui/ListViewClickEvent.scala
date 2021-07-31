@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListViewClickEvent extends ListViewEvent {
+trait ListViewClickEvent
+  extends StObject
+     with ListViewEvent {
   
-  var button: js.UndefOr[Button] = js.native
+  var button: js.UndefOr[Button] = js.undefined
   
-  var dataItem: js.UndefOr[js.Any] = js.native
+  var dataItem: js.UndefOr[js.Any] = js.undefined
   
-  var item: js.UndefOr[JQuery] = js.native
+  var item: js.UndefOr[JQuery] = js.undefined
   
-  var target: js.UndefOr[JQuery] = js.native
+  var target: js.UndefOr[JQuery] = js.undefined
 }
 object ListViewClickEvent {
   

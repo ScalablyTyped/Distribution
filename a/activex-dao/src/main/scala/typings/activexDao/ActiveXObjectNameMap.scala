@@ -10,38 +10,36 @@ import typings.activexDao.DAO.TableDef
 import typings.activexDao.DAO.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("DAO.DBEngine")
-  var DAODotDBEngine: DBEngine = js.native
+  var DAODotDBEngine: DBEngine
   
   @JSName("DAO.Field")
-  var DAODotField: Field = js.native
+  var DAODotField: Field
   
   @JSName("DAO.Group")
-  var DAODotGroup: Group = js.native
+  var DAODotGroup: Group
   
   @JSName("DAO.Index")
-  var DAODotIndex: Index = js.native
+  var DAODotIndex: Index
   
   @JSName("DAO.PrivateDBEngine")
-  var DAODotPrivateDBEngine: DBEngine = js.native
+  var DAODotPrivateDBEngine: DBEngine
   
   @JSName("DAO.QueryDef")
-  var DAODotQueryDef: QueryDef = js.native
+  var DAODotQueryDef: QueryDef
   
   @JSName("DAO.Relation")
-  var DAODotRelation: Relation = js.native
+  var DAODotRelation: Relation
   
   @JSName("DAO.TableDef")
-  var DAODotTableDef: TableDef = js.native
+  var DAODotTableDef: TableDef
   
   @JSName("DAO.User")
-  var DAODotUser: User = js.native
+  var DAODotUser: User
 }
 object ActiveXObjectNameMap {
   

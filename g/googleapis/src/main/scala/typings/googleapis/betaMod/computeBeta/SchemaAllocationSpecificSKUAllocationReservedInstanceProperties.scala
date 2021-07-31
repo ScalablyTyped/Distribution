@@ -2,19 +2,17 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties of the SKU instances being reserved.
   */
-@js.native
 trait SchemaAllocationSpecificSKUAllocationReservedInstanceProperties extends StObject {
   
   /**
     * Specifies accelerator type and count.
     */
-  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
   
   /**
     * Specifies amount of local ssd to reserve with each instance. The type of
@@ -22,19 +20,19 @@ trait SchemaAllocationSpecificSKUAllocationReservedInstanceProperties extends St
     */
   var localSsds: js.UndefOr[
     js.Array[SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies type of machine (name only) which has fixed number of vCPUs and
     * fixed amount of memory. This also includes specifying custom machine type
     * following custom-NUMBER_OF_CPUS-AMOUNT_OF_MEMORY pattern.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum cpu platform the reservation.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
 }
 object SchemaAllocationSpecificSKUAllocationReservedInstanceProperties {
   

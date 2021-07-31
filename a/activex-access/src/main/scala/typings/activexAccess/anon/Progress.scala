@@ -2,15 +2,13 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Progress extends StObject {
   
-  val Progress: Double = js.native
+  val Progress: Double
   
-  val ProgressMax: Double = js.native
+  val ProgressMax: Double
 }
 object Progress {
   

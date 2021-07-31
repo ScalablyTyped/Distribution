@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReusableDelegationSetLimit extends StObject {
   
   /**
     * The limit that you requested: MAX_ZONES_BY_REUSABLE_DELEGATION_SET, the maximum number of hosted zones that you can associate with the specified reusable delegation set.
     */
-  var Type: ReusableDelegationSetLimitType = js.native
+  var Type: ReusableDelegationSetLimitType
   
   /**
     * The current value for the MAX_ZONES_BY_REUSABLE_DELEGATION_SET limit.
     */
-  var Value: LimitValue = js.native
+  var Value: LimitValue
 }
 object ReusableDelegationSetLimit {
   

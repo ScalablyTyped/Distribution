@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -19,18 +18,17 @@ object typesMod {
   
   type Exception = ErrnoException
   
-  type FN[Arguments /* <: js.Array[_] */, Return] = js.Function1[/* args */ Arguments, Return]
+  type FN[Arguments /* <: js.Array[js.Any] */, Return] = js.Function1[/* args */ Arguments, Return]
   
   type Path = String
   
-  @js.native
   trait ReadOptions extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var mode: js.UndefOr[String | Double | `false`] = js.native
+    var mode: js.UndefOr[String | Double | `false`] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ReadOptions {
     
@@ -66,28 +64,27 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WriteOptions extends StObject {
     
-    var chown: js.UndefOr[Gid | `false`] = js.native
+    var chown: js.UndefOr[Gid | `false`] = js.undefined
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var fsync: js.UndefOr[Boolean] = js.native
+    var fsync: js.UndefOr[Boolean] = js.undefined
     
-    var fsyncWait: js.UndefOr[Boolean] = js.native
+    var fsyncWait: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[String | Double | `false`] = js.native
+    var mode: js.UndefOr[String | Double | `false`] = js.undefined
     
-    var schedule: js.UndefOr[js.Function1[/* filePath */ String, js.Promise[Disposer]]] = js.native
+    var schedule: js.UndefOr[js.Function1[/* filePath */ String, js.Promise[Disposer]]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tmpCreate: js.UndefOr[js.Function1[/* filePath */ String, String]] = js.native
+    var tmpCreate: js.UndefOr[js.Function1[/* filePath */ String, String]] = js.undefined
     
-    var tmpCreated: js.UndefOr[js.Function1[/* filePath */ String, _]] = js.native
+    var tmpCreated: js.UndefOr[js.Function1[/* filePath */ String, js.Any]] = js.undefined
     
-    var tmpPurge: js.UndefOr[Boolean] = js.native
+    var tmpPurge: js.UndefOr[Boolean] = js.undefined
   }
   object WriteOptions {
     
@@ -152,7 +149,7 @@ object typesMod {
       def setTmpCreateUndefined: Self = StObject.set(x, "tmpCreate", js.undefined)
       
       @scala.inline
-      def setTmpCreated(value: /* filePath */ String => _): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
+      def setTmpCreated(value: /* filePath */ String => js.Any): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTmpCreatedUndefined: Self = StObject.set(x, "tmpCreated", js.undefined)

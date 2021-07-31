@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.CardFocusing event.
   */
-@js.native
-trait ASPxClientCardViewCardFocusingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientCardViewCardFocusingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Provides access to the parameters associated with the ASPxClientCardView.CardFocusing event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Gets the card visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientCardViewCardFocusingEventArgs {
   

@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes an effect, especially a script to be executed, for a certain event given by the listener type and the name of the event method. */
-@js.native
 trait ScriptEventDescriptor extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait ScriptEventDescriptor extends StObject {
     *
     * If the type of this parameter is different from string, it will be converted, when added.
     */
-  var AddListenerParam: String = js.native
+  var AddListenerParam: String
   
   /** event method as string. */
-  var EventMethod: String = js.native
+  var EventMethod: String
   
   /** listener type as string, same as listener-XIdlClass.getName(). */
-  var ListenerType: String = js.native
+  var ListenerType: String
   
   /** script code as string (the code has to correspond with the language defined by ScriptType). */
-  var ScriptCode: String = js.native
+  var ScriptCode: String
   
   /** type of the script language as string; for example, "Basic" or "StarScript". */
-  var ScriptType: String = js.native
+  var ScriptType: String
 }
 object ScriptEventDescriptor {
   

@@ -10,7 +10,6 @@ import typings.antlr4.tokenMod.Token
 import typings.antlr4.treeMod.ParseTreeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {

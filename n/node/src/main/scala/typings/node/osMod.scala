@@ -11,18 +11,20 @@ import typings.node.nodeStrings.LE
 import typings.node.processMod.global.NodeJS.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object osMod {
+  
+  @JSImport("os", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("os", "EOL")
   @js.native
   val EOL: java.lang.String = js.native
   
-  @JSImport("os", "arch")
-  @js.native
-  def arch(): java.lang.String = js.native
+  @scala.inline
+  def arch(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("arch")().asInstanceOf[java.lang.String]
   
   object constants {
     
@@ -613,89 +615,73 @@ object osMod {
     val signals: SignalConstants = js.native
   }
   
-  @JSImport("os", "cpus")
-  @js.native
-  def cpus(): js.Array[CpuInfo] = js.native
+  @scala.inline
+  def cpus(): js.Array[CpuInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("cpus")().asInstanceOf[js.Array[CpuInfo]]
   
-  @JSImport("os", "endianness")
-  @js.native
-  def endianness(): BE | LE = js.native
+  @scala.inline
+  def endianness(): BE | LE = ^.asInstanceOf[js.Dynamic].applyDynamic("endianness")().asInstanceOf[BE | LE]
   
-  @JSImport("os", "freemem")
-  @js.native
-  def freemem(): Double = js.native
+  @scala.inline
+  def freemem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("freemem")().asInstanceOf[Double]
   
   /**
     * Gets the priority of a process.
     * Defaults to current process.
     */
-  @JSImport("os", "getPriority")
-  @js.native
-  def getPriority(): Double = js.native
-  @JSImport("os", "getPriority")
-  @js.native
-  def getPriority(pid: Double): Double = js.native
+  @scala.inline
+  def getPriority(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPriority")().asInstanceOf[Double]
+  @scala.inline
+  def getPriority(pid: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPriority")(pid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("os", "homedir")
-  @js.native
-  def homedir(): java.lang.String = js.native
+  @scala.inline
+  def homedir(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("homedir")().asInstanceOf[java.lang.String]
   
-  @JSImport("os", "hostname")
-  @js.native
-  def hostname(): java.lang.String = js.native
+  @scala.inline
+  def hostname(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("hostname")().asInstanceOf[java.lang.String]
   
-  @JSImport("os", "loadavg")
-  @js.native
-  def loadavg(): js.Array[Double] = js.native
+  @scala.inline
+  def loadavg(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[js.Array[Double]]
   
-  @JSImport("os", "networkInterfaces")
-  @js.native
-  def networkInterfaces(): Dict[js.Array[NetworkInterfaceInfo]] = js.native
+  @scala.inline
+  def networkInterfaces(): Dict[js.Array[NetworkInterfaceInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")().asInstanceOf[Dict[js.Array[NetworkInterfaceInfo]]]
   
-  @JSImport("os", "platform")
-  @js.native
-  def platform(): Platform = js.native
+  @scala.inline
+  def platform(): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")().asInstanceOf[Platform]
   
-  @JSImport("os", "release")
-  @js.native
-  def release(): java.lang.String = js.native
+  @scala.inline
+  def release(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("release")().asInstanceOf[java.lang.String]
   
   /**
     * Sets the priority of the process specified process.
     * @param priority Must be in range of -20 to 19
     */
-  @JSImport("os", "setPriority")
-  @js.native
-  def setPriority(pid: Double, priority: Double): Unit = js.native
+  @scala.inline
+  def setPriority(pid: Double, priority: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPriority")(pid.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Sets the priority of the current process.
     * @param priority Must be in range of -20 to 19
     */
-  @JSImport("os", "setPriority")
-  @js.native
-  def setPriority(priority: Double): Unit = js.native
+  @scala.inline
+  def setPriority(priority: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPriority")(priority.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("os", "tmpdir")
-  @js.native
-  def tmpdir(): java.lang.String = js.native
+  @scala.inline
+  def tmpdir(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpdir")().asInstanceOf[java.lang.String]
   
-  @JSImport("os", "totalmem")
-  @js.native
-  def totalmem(): Double = js.native
+  @scala.inline
+  def totalmem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("totalmem")().asInstanceOf[Double]
   
-  @JSImport("os", "uptime")
-  @js.native
-  def uptime(): Double = js.native
+  @scala.inline
+  def `type`(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")().asInstanceOf[java.lang.String]
   
-  @JSImport("os", "userInfo")
-  @js.native
-  def userInfo(): UserInfo_[java.lang.String] = js.native
-  @JSImport("os", "userInfo")
-  @js.native
-  def userInfo(options: `2`): UserInfo_[Buffer] = js.native
-  @JSImport("os", "userInfo")
-  @js.native
-  def userInfo(options: `4`): UserInfo_[java.lang.String] = js.native
+  @scala.inline
+  def uptime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uptime")().asInstanceOf[Double]
+  
+  @scala.inline
+  def userInfo(): UserInfo_[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")().asInstanceOf[UserInfo_[java.lang.String]]
+  @scala.inline
+  def userInfo(options: `2`): UserInfo_[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[Buffer]]
+  @scala.inline
+  def userInfo(options: `4`): UserInfo_[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[java.lang.String]]
   
   /**
     * Returns a string identifying the kernel version.
@@ -704,18 +690,16 @@ object osMod {
     * `GetVersionExW()` will be used. See
     * https://en.wikipedia.org/wiki/Uname#Examples for more information.
     */
-  @JSImport("os", "version")
-  @js.native
-  def version(): java.lang.String = js.native
+  @scala.inline
+  def version(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[java.lang.String]
   
-  @js.native
   trait CpuInfo extends StObject {
     
-    var model: java.lang.String = js.native
+    var model: java.lang.String
     
-    var speed: Double = js.native
+    var speed: Double
     
-    var times: Idle = js.native
+    var times: Idle
   }
   object CpuInfo {
     
@@ -739,24 +723,23 @@ object osMod {
     }
   }
   
-  @js.native
   trait NetworkInterfaceBase extends StObject {
     
-    var address: java.lang.String = js.native
+    var address: java.lang.String
     
-    var cidr: java.lang.String | Null = js.native
+    var cidr: java.lang.String | Null
     
-    var internal: Boolean = js.native
+    var internal: Boolean
     
-    var mac: java.lang.String = js.native
+    var mac: java.lang.String
     
-    var netmask: java.lang.String = js.native
+    var netmask: java.lang.String
   }
   object NetworkInterfaceBase {
     
     @scala.inline
     def apply(address: java.lang.String, internal: Boolean, mac: java.lang.String, netmask: java.lang.String): NetworkInterfaceBase = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[NetworkInterfaceBase]
     }
     
@@ -791,49 +774,36 @@ object osMod {
   object NetworkInterfaceInfo {
     
     @scala.inline
-    def NetworkInterfaceInfoIPv4(
-      address: java.lang.String,
-      family: IPv4,
-      internal: Boolean,
-      mac: java.lang.String,
-      netmask: java.lang.String
-    ): typings.node.osMod.NetworkInterfaceInfoIPv4 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any])
+    def NetworkInterfaceInfoIPv4(address: java.lang.String, internal: Boolean, mac: java.lang.String, netmask: java.lang.String): typings.node.osMod.NetworkInterfaceInfoIPv4 = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[typings.node.osMod.NetworkInterfaceInfoIPv4]
     }
     
     @scala.inline
     def NetworkInterfaceInfoIPv6(
       address: java.lang.String,
-      family: IPv6,
       internal: Boolean,
       mac: java.lang.String,
       netmask: java.lang.String,
       scopeid: Double
     ): typings.node.osMod.NetworkInterfaceInfoIPv6 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv6", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[typings.node.osMod.NetworkInterfaceInfoIPv6]
     }
   }
   
-  @js.native
   trait NetworkInterfaceInfoIPv4
-    extends NetworkInterfaceBase
+    extends StObject
+       with NetworkInterfaceBase
        with NetworkInterfaceInfo {
     
-    var family: IPv4 = js.native
+    var family: IPv4
   }
   object NetworkInterfaceInfoIPv4 {
     
     @scala.inline
-    def apply(
-      address: java.lang.String,
-      family: IPv4,
-      internal: Boolean,
-      mac: java.lang.String,
-      netmask: java.lang.String
-    ): NetworkInterfaceInfoIPv4 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any])
+    def apply(address: java.lang.String, internal: Boolean, mac: java.lang.String, netmask: java.lang.String): NetworkInterfaceInfoIPv4 = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[NetworkInterfaceInfoIPv4]
     }
     
@@ -845,27 +815,26 @@ object osMod {
     }
   }
   
-  @js.native
   trait NetworkInterfaceInfoIPv6
-    extends NetworkInterfaceBase
+    extends StObject
+       with NetworkInterfaceBase
        with NetworkInterfaceInfo {
     
-    var family: IPv6 = js.native
+    var family: IPv6
     
-    var scopeid: Double = js.native
+    var scopeid: Double
   }
   object NetworkInterfaceInfoIPv6 {
     
     @scala.inline
     def apply(
       address: java.lang.String,
-      family: IPv6,
       internal: Boolean,
       mac: java.lang.String,
       netmask: java.lang.String,
       scopeid: Double
     ): NetworkInterfaceInfoIPv6 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv6", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[NetworkInterfaceInfoIPv6]
     }
     
@@ -881,82 +850,81 @@ object osMod {
   }
   
   /* Inlined {[ key in node.process.<global>.NodeJS.Signals ]: number} */
-  @js.native
   trait SignalConstants extends StObject {
     
-    var SIGABRT: Double = js.native
+    var SIGABRT: Double
     
-    var SIGALRM: Double = js.native
+    var SIGALRM: Double
     
-    var SIGBREAK: Double = js.native
+    var SIGBREAK: Double
     
-    var SIGBUS: Double = js.native
+    var SIGBUS: Double
     
-    var SIGCHLD: Double = js.native
+    var SIGCHLD: Double
     
-    var SIGCONT: Double = js.native
+    var SIGCONT: Double
     
-    var SIGFPE: Double = js.native
+    var SIGFPE: Double
     
-    var SIGHUP: Double = js.native
+    var SIGHUP: Double
     
-    var SIGILL: Double = js.native
+    var SIGILL: Double
     
-    var SIGINFO: Double = js.native
+    var SIGINFO: Double
     
-    var SIGINT: Double = js.native
+    var SIGINT: Double
     
-    var SIGIO: Double = js.native
+    var SIGIO: Double
     
-    var SIGIOT: Double = js.native
+    var SIGIOT: Double
     
-    var SIGKILL: Double = js.native
+    var SIGKILL: Double
     
-    var SIGLOST: Double = js.native
+    var SIGLOST: Double
     
-    var SIGPIPE: Double = js.native
+    var SIGPIPE: Double
     
-    var SIGPOLL: Double = js.native
+    var SIGPOLL: Double
     
-    var SIGPROF: Double = js.native
+    var SIGPROF: Double
     
-    var SIGPWR: Double = js.native
+    var SIGPWR: Double
     
-    var SIGQUIT: Double = js.native
+    var SIGQUIT: Double
     
-    var SIGSEGV: Double = js.native
+    var SIGSEGV: Double
     
-    var SIGSTKFLT: Double = js.native
+    var SIGSTKFLT: Double
     
-    var SIGSTOP: Double = js.native
+    var SIGSTOP: Double
     
-    var SIGSYS: Double = js.native
+    var SIGSYS: Double
     
-    var SIGTERM: Double = js.native
+    var SIGTERM: Double
     
-    var SIGTRAP: Double = js.native
+    var SIGTRAP: Double
     
-    var SIGTSTP: Double = js.native
+    var SIGTSTP: Double
     
-    var SIGTTIN: Double = js.native
+    var SIGTTIN: Double
     
-    var SIGTTOU: Double = js.native
+    var SIGTTOU: Double
     
-    var SIGUNUSED: Double = js.native
+    var SIGUNUSED: Double
     
-    var SIGURG: Double = js.native
+    var SIGURG: Double
     
-    var SIGUSR1: Double = js.native
+    var SIGUSR1: Double
     
-    var SIGUSR2: Double = js.native
+    var SIGUSR2: Double
     
-    var SIGVTALRM: Double = js.native
+    var SIGVTALRM: Double
     
-    var SIGWINCH: Double = js.native
+    var SIGWINCH: Double
     
-    var SIGXCPU: Double = js.native
+    var SIGXCPU: Double
     
-    var SIGXFSZ: Double = js.native
+    var SIGXFSZ: Double
   }
   object SignalConstants {
     
@@ -1120,18 +1088,17 @@ object osMod {
     }
   }
   
-  @js.native
   trait UserInfo_[T] extends StObject {
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var homedir: T = js.native
+    var homedir: T
     
-    var shell: T = js.native
+    var shell: T
     
-    var uid: Double = js.native
+    var uid: Double
     
-    var username: T = js.native
+    var username: T
   }
   object UserInfo_ {
     
@@ -1142,7 +1109,7 @@ object osMod {
     }
     
     @scala.inline
-    implicit class UserInfo_MutableBuilder[Self <: UserInfo_[_], T] (val x: Self with UserInfo_[T]) extends AnyVal {
+    implicit class UserInfo_MutableBuilder[Self <: UserInfo_[?], T] (val x: Self & UserInfo_[T]) extends AnyVal {
       
       @scala.inline
       def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
@@ -1160,8 +1127,4 @@ object osMod {
       def setUsername(value: T): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
-  
-  @JSImport("os", "type")
-  @js.native
-  def `type`(): java.lang.String = js.native
 }

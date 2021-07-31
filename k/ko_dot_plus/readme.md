@@ -12,7 +12,7 @@ Awesome extensions to KnockoutJS
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 15220 |
+| # downloads        | 15552 |
 | # stars            | 0 |
 
 ## Links

@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartGridlines extends Entity {
+trait WorkbookChartGridlines
+  extends StObject
+     with Entity {
   
   // Represents the formatting of chart gridlines. Read-only.
-  var format: js.UndefOr[NullableOption[WorkbookChartGridlinesFormat]] = js.native
+  var format: js.UndefOr[NullableOption[WorkbookChartGridlinesFormat]] = js.undefined
   
   // Boolean value representing if the axis gridlines are visible or not.
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookChartGridlines {
   

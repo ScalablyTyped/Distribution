@@ -4,21 +4,19 @@ import typings.node.nodeBooleans.`false`
 import typings.node.nodeStrings.buffer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encoding extends StObject {
   
-  var encoding: buffer_ = js.native
+  var encoding: buffer_
   
-  var withFileTypes: js.UndefOr[`false`] = js.native
+  var withFileTypes: js.UndefOr[`false`] = js.undefined
 }
 object Encoding {
   
   @scala.inline
-  def apply(encoding: buffer_): Encoding = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  def apply(): Encoding = {
+    val __obj = js.Dynamic.literal(encoding = "buffer")
     __obj.asInstanceOf[Encoding]
   }
   

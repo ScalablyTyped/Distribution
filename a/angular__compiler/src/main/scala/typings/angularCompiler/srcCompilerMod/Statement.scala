@@ -2,7 +2,6 @@ package typings.angularCompiler.srcCompilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler", "Statement")
@@ -11,40 +10,37 @@ abstract class Statement ()
   extends typings.angularCompiler.outputAstMod.Statement {
   def this(modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier]) = this()
   def this(
-    modifiers: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
     modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
+  def this(modifiers: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
   def this(
-    modifiers: js.UndefOr[scala.Nothing],
-    sourceSpan: js.UndefOr[scala.Nothing],
-    leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
-  ) = this()
-  def this(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
     sourceSpan: Null,
     leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
   ) = this()
   def this(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
+    sourceSpan: Unit,
+    leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
+  ) = this()
+  def this(
+    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
   ) = this()
   def this(
-    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
-    sourceSpan: js.UndefOr[scala.Nothing],
-    leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
-  ) = this()
-  def this(
-    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
+    modifiers: Unit,
     sourceSpan: Null,
     leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
   ) = this()
   def this(
-    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
+    modifiers: Unit,
+    sourceSpan: Unit,
+    leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
+  ) = this()
+  def this(
+    modifiers: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
   ) = this()

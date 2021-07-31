@@ -2,16 +2,14 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAssetRequest extends StObject {
   
   /**
     * The ID of the MediaPackage VOD Asset resource to delete.
     */
-  var Id: string = js.native
+  var Id: string
 }
 object DeleteAssetRequest {
   

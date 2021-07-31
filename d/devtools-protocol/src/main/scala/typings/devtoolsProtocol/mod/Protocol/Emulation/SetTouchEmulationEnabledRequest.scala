@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTouchEmulationEnabledRequest extends StObject {
   
   /**
     * Whether the touch event emulation should be enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Maximum touch points supported. Defaults to one.
     */
-  var maxTouchPoints: js.UndefOr[integer] = js.native
+  var maxTouchPoints: js.UndefOr[integer] = js.undefined
 }
 object SetTouchEmulationEnabledRequest {
   

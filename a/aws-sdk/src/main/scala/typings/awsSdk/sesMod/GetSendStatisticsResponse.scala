@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSendStatisticsResponse extends StObject {
   
   /**
     * A list of data points, each of which represents 15 minutes of activity.
     */
-  var SendDataPoints: js.UndefOr[SendDataPointList] = js.native
+  var SendDataPoints: js.UndefOr[SendDataPointList] = js.undefined
 }
 object GetSendStatisticsResponse {
   

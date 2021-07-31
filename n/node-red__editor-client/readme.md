@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | @node-red/editor-client |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 38 |
 | # dependents       | 2 |
-| # downloads        | 826877 |
+| # downloads        | 930257 |
 | # stars            | 0 |
 
 ## Links

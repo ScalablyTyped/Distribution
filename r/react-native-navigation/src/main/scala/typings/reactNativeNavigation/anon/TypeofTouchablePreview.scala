@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.reactNativeNavigation.touchablePreviewMod.TouchablePreview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTouchablePreview extends Instantiable0[TouchablePreview] {
+trait TypeofTouchablePreview
+  extends StObject
+     with Instantiable0[TouchablePreview] {
   
   var defaultProps: TouchableComponent = js.native
   

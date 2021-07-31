@@ -6,19 +6,17 @@ import typings.meteor.mongoMod.Mongo.SortSpecifier
 import typings.meteorDburlesCollectionHelpers.mod.Full
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArrayFilters extends StObject {
     
-    var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+    var arrayFilters: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
     
-    var upsert: js.UndefOr[Boolean] = js.native
+    var upsert: js.UndefOr[Boolean] = js.undefined
   }
   object ArrayFilters {
     
@@ -32,7 +30,7 @@ object anon {
     implicit class ArrayFiltersMutableBuilder[Self <: ArrayFilters] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArrayFilters(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+      def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
@@ -54,28 +52,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Fetch[T] extends StObject {
     
-    var fetch: js.UndefOr[js.Array[String]] = js.native
+    var fetch: js.UndefOr[js.Array[String]] = js.undefined
     
-    var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Full[T] with T, Boolean]] = js.native
+    var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Full[T] & T, Boolean]] = js.undefined
     
-    var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Full[T] with T, Boolean]] = js.native
+    var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Full[T] & T, Boolean]] = js.undefined
     
     // ditto
     // tslint:disable-next-line ban-types
-    var transform: js.UndefOr[js.Function | Null] = js.native
+    var transform: js.UndefOr[js.Function | Null] = js.undefined
     
     var update: js.UndefOr[
         js.Function4[
           /* userId */ String, 
-          /* doc */ Full[T] with T, 
+          /* doc */ Full[T] & T, 
           /* fieldNames */ js.Array[String], 
           /* modifier */ js.Any, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Fetch {
     
@@ -86,7 +83,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FetchMutableBuilder[Self <: Fetch[_], T] (val x: Self with Fetch[T]) extends AnyVal {
+    implicit class FetchMutableBuilder[Self <: Fetch[?], T] (val x: Self & Fetch[T]) extends AnyVal {
       
       @scala.inline
       def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
@@ -98,13 +95,13 @@ object anon {
       def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
       
       @scala.inline
-      def setInsert(value: (/* userId */ String, /* doc */ Full[T] with T) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      def setInsert(value: (/* userId */ String, /* doc */ Full[T] & T) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
       @scala.inline
       def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
       @scala.inline
-      def setRemove(value: (/* userId */ String, /* doc */ Full[T] with T) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      def setRemove(value: (/* userId */ String, /* doc */ Full[T] & T) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
@@ -120,7 +117,7 @@ object anon {
       
       @scala.inline
       def setUpdate(
-        value: (/* userId */ String, /* doc */ Full[T] with T, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
+        value: (/* userId */ String, /* doc */ Full[T] & T, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
       ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -128,20 +125,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.UndefOr[FieldSpecifier] = js.native
+    var fields: js.UndefOr[FieldSpecifier] = js.undefined
     
-    var reactive: js.UndefOr[Boolean] = js.native
+    var reactive: js.UndefOr[Boolean] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[SortSpecifier] = js.native
+    var sort: js.UndefOr[SortSpecifier] = js.undefined
     
     // ditto
     // tslint:disable-next-line ban-types
-    var transform: js.UndefOr[js.Function | Null] = js.native
+    var transform: js.UndefOr[js.Function | Null] = js.undefined
   }
   object Fields {
     
@@ -189,12 +185,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InsertedId extends StObject {
     
-    var insertedId: js.UndefOr[String] = js.native
+    var insertedId: js.UndefOr[String] = js.undefined
     
-    var numberAffected: js.UndefOr[Double] = js.native
+    var numberAffected: js.UndefOr[Double] = js.undefined
   }
   object InsertedId {
     
@@ -221,10 +216,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Multi extends StObject {
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
   }
   object Multi {
     

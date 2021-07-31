@@ -2,27 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionalEffectTiming extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var direction: js.UndefOr[PlaybackDirection] = js.native
+  var direction: js.UndefOr[PlaybackDirection] = js.undefined
   
-  var duration: js.UndefOr[Double | java.lang.String] = js.native
+  var duration: js.UndefOr[Double | java.lang.String] = js.undefined
   
-  var easing: js.UndefOr[java.lang.String] = js.native
+  var easing: js.UndefOr[java.lang.String] = js.undefined
   
-  var endDelay: js.UndefOr[Double] = js.native
+  var endDelay: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[FillMode] = js.native
+  var fill: js.UndefOr[FillMode] = js.undefined
   
-  var iterationStart: js.UndefOr[Double] = js.native
+  var iterationStart: js.UndefOr[Double] = js.undefined
   
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
 }
 object OptionalEffectTiming {
   

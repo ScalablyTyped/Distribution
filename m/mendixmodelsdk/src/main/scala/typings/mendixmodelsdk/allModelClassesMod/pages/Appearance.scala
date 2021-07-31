@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object Appearance {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInControlBarButtonUnderAppearance")
-  @js.native
-  def createInControlBarButtonUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.ControlBarButton): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInControlBarButtonUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.ControlBarButton): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInGridColumnUnderAppearance")
-  @js.native
-  def createInGridColumnUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.GridColumn): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInGridColumnUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.GridColumn): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -79,9 +75,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInLayoutGridColumnUnderAppearance")
-  @js.native
-  def createInLayoutGridColumnUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -92,9 +87,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInLayoutGridRowUnderAppearance")
-  @js.native
-  def createInLayoutGridRowUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridRow): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInLayoutGridRowUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridRow): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -105,9 +99,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInLayoutUnderAppearance")
-  @js.native
-  def createInLayoutUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInLayoutUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -118,9 +111,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInNavigationListItemUnderAppearance")
-  @js.native
-  def createInNavigationListItemUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInNavigationListItemUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -131,9 +123,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInPageTemplateUnderAppearance")
-  @js.native
-  def createInPageTemplateUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.PageTemplate): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInPageTemplateUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.PageTemplate): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageTemplateUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -144,9 +135,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInPageUnderAppearance")
-  @js.native
-  def createInPageUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.Page): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInPageUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.Page): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -157,9 +147,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInScrollContainerRegionUnderAppearance")
-  @js.native
-  def createInScrollContainerRegionUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -170,9 +159,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInTableCellUnderAppearance")
-  @js.native
-  def createInTableCellUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInTableCellUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -183,9 +171,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInTableRowUnderAppearance")
-  @js.native
-  def createInTableRowUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.TableRow): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInTableRowUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.TableRow): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -196,9 +183,8 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.createInWidgetUnderAppearance")
-  @js.native
-  def createInWidgetUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.Widget): typings.mendixmodelsdk.pagesMod.pages.Appearance = js.native
+  @scala.inline
+  def createInWidgetUnderAppearance(container: typings.mendixmodelsdk.pagesMod.pages.Widget): typings.mendixmodelsdk.pagesMod.pages.Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Appearance]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Appearance.structureTypeName")

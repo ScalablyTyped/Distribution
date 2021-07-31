@@ -7,32 +7,32 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<next.next/dist/next-server/lib/router/router.CompletePrivateRouteInfo, 'styleSheets'> & {  initial :true} */
-@js.native
-trait OmitCompletePrivateRouteI extends PrivateRouteInfo {
+trait OmitCompletePrivateRouteI
+  extends StObject
+     with PrivateRouteInfo {
   
-  var Component: ComponentType[js.Object] = js.native
+  var Component: ComponentType[js.Object]
   
-  var __N_SSG: js.UndefOr[Boolean] = js.native
+  var __N_SSG: js.UndefOr[Boolean] = js.undefined
   
-  var __N_SSP: js.UndefOr[Boolean] = js.native
+  var __N_SSP: js.UndefOr[Boolean] = js.undefined
   
-  var err: js.UndefOr[Error] = js.native
+  var err: js.UndefOr[Error] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  var initial: `true` = js.native
+  var initial: `true`
   
-  var props: js.UndefOr[Record[String, _]] = js.native
+  var props: js.UndefOr[Record[String, js.Any]] = js.undefined
 }
 object OmitCompletePrivateRouteI {
   
   @scala.inline
-  def apply(Component: ComponentType[js.Object], initial: `true`): OmitCompletePrivateRouteI = {
-    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any])
+  def apply(Component: ComponentType[js.Object]): OmitCompletePrivateRouteI = {
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], initial = true)
     __obj.asInstanceOf[OmitCompletePrivateRouteI]
   }
   
@@ -58,7 +58,7 @@ object OmitCompletePrivateRouteI {
     def setInitial(value: `true`): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: Record[String, _]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)

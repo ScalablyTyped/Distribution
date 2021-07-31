@@ -2,28 +2,26 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestCommandsSuggestedKey extends StObject {
   
-  var default: js.UndefOr[KeyName] = js.native
+  var default: js.UndefOr[KeyName] = js.undefined
   
   /** @deprecated Unknown platform name */
-  var additionalProperties: js.UndefOr[String] = js.native
+  var additionalProperties: js.UndefOr[String] = js.undefined
   
-  var android: js.UndefOr[String] = js.native
+  var android: js.UndefOr[String] = js.undefined
   
-  var chromeos: js.UndefOr[String] = js.native
+  var chromeos: js.UndefOr[String] = js.undefined
   
-  var ios: js.UndefOr[String] = js.native
+  var ios: js.UndefOr[String] = js.undefined
   
-  var linux: js.UndefOr[KeyName] = js.native
+  var linux: js.UndefOr[KeyName] = js.undefined
   
-  var mac: js.UndefOr[KeyName] = js.native
+  var mac: js.UndefOr[KeyName] = js.undefined
   
-  var windows: js.UndefOr[KeyName] = js.native
+  var windows: js.UndefOr[KeyName] = js.undefined
 }
 object WebExtensionManifestCommandsSuggestedKey {
   

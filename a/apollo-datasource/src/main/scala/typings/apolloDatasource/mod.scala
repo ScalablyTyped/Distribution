@@ -3,7 +3,6 @@ package typings.apolloDatasource
 import typings.apolloServerCaching.keyValueCacheMod.KeyValueCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,12 +14,11 @@ object mod {
     var initialize: js.UndefOr[js.Function1[/* config */ DataSourceConfig[TContext], Unit | js.Promise[Unit]]] = js.native
   }
   
-  @js.native
   trait DataSourceConfig[TContext] extends StObject {
     
-    var cache: KeyValueCache[String] = js.native
+    var cache: KeyValueCache[String]
     
-    var context: TContext = js.native
+    var context: TContext
   }
   object DataSourceConfig {
     
@@ -31,7 +29,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DataSourceConfigMutableBuilder[Self <: DataSourceConfig[_], TContext] (val x: Self with DataSourceConfig[TContext]) extends AnyVal {
+    implicit class DataSourceConfigMutableBuilder[Self <: DataSourceConfig[?], TContext] (val x: Self & DataSourceConfig[TContext]) extends AnyVal {
       
       @scala.inline
       def setCache(value: KeyValueCache[String]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])

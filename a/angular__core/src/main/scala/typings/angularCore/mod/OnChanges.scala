@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnChanges extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait OnChanges extends StObject {
     * children are checked.
     * @param changes The changed properties.
     */
-  def ngOnChanges(changes: SimpleChanges): Unit = js.native
+  def ngOnChanges(changes: SimpleChanges): Unit
 }
 object OnChanges {
   

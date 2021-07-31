@@ -3,7 +3,6 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,9 @@ trait SharedWorkspace extends StObject {
   val Connected: Boolean = js.native
   
   def CreateNew(): Unit = js.native
-  def CreateNew(URL: js.UndefOr[scala.Nothing], Name: String): Unit = js.native
   def CreateNew(URL: String): Unit = js.native
   def CreateNew(URL: String, Name: String): Unit = js.native
+  def CreateNew(URL: Unit, Name: String): Unit = js.native
   
   val Creator: Double = js.native
   

@@ -4,26 +4,24 @@ import typings.xstate.interpreterMod.Clock
 import typings.xstate.interpreterMod.Interpreter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<xstate.xstate/lib/types.InterpreterOptions> */
-@js.native
 trait PartialInterpreterOptions extends StObject {
   
-  var clock: js.UndefOr[Clock] = js.native
+  var clock: js.UndefOr[Clock] = js.undefined
   
-  var deferEvents: js.UndefOr[Boolean] = js.native
+  var deferEvents: js.UndefOr[Boolean] = js.undefined
   
-  var devTools: js.UndefOr[Boolean | js.Object] = js.native
+  var devTools: js.UndefOr[Boolean | js.Object] = js.undefined
   
-  var execute: js.UndefOr[Boolean] = js.native
+  var execute: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var logger: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var logger: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var parent: js.UndefOr[Interpreter[_, _, _, ContextAny]] = js.native
+  var parent: js.UndefOr[Interpreter[js.Any, js.Any, js.Any, ContextAny]] = js.undefined
 }
 object PartialInterpreterOptions {
   
@@ -73,7 +71,7 @@ object PartialInterpreterOptions {
     def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def setParent(value: Interpreter[_, _, _, ContextAny]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    def setParent(value: Interpreter[js.Any, js.Any, js.Any, ContextAny]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)

@@ -4,15 +4,13 @@ import typings.octokitTypes.anon.Core
 import typings.octokitTypes.anon.Limit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateLimitGetResponseData extends StObject {
   
-  var rate: Limit = js.native
+  var rate: Limit
   
-  var resources: Core = js.native
+  var resources: Core
 }
 object RateLimitGetResponseData {
   

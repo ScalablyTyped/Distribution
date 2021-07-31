@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextShadowProps extends StObject {
   
   val textShadow: js.UndefOr[
     ResponsiveValue[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object TextShadowProps {
   
@@ -28,7 +26,7 @@ object TextShadowProps {
     @scala.inline
     def setTextShadow(
       value: ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double
         ]
     ): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object TextShadowProps {
     def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
     
     @scala.inline
-    def setTextShadowVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "textShadow", js.Array(value :_*))
+    def setTextShadowVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double)*
+    ): Self = StObject.set(x, "textShadow", js.Array(value :_*))
   }
 }

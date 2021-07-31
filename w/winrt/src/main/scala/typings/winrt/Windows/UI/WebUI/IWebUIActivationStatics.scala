@@ -2,19 +2,17 @@ package typings.winrt.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebUIActivationStatics extends StObject {
   
-  var onactivated: js.Any = js.native
+  var onactivated: js.Any
   
-  var onnavigated: js.Any = js.native
+  var onnavigated: js.Any
   
-  var onresuming: js.Any = js.native
+  var onresuming: js.Any
   
-  var onsuspending: js.Any = js.native
+  var onsuspending: js.Any
 }
 object IWebUIActivationStatics {
   

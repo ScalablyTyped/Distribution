@@ -3,37 +3,38 @@ package typings.picomatch
 import typings.picomatch.anon.MaxLength
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
+  @scala.inline
+  def apply(input: String, options: MaxLength): State = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[State]
+  
   @JSImport("picomatch/parse", JSImport.Namespace)
   @js.native
-  def apply(input: String, options: MaxLength): State = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait State extends StObject {
     
-    var backtrack: Boolean = js.native
+    var backtrack: Boolean
     
-    var braces: Double = js.native
+    var braces: Double
     
-    var brackets: Double = js.native
+    var brackets: Double
     
-    var consumed: String = js.native
+    var consumed: String
     
-    var globstar: Boolean = js.native
+    var globstar: Boolean
     
-    var index: Double = js.native
+    var index: Double
     
-    var output: String = js.native
+    var output: String
     
-    var parens: Double = js.native
+    var parens: Double
     
-    var start: Double = js.native
+    var start: Double
     
-    var tokens: js.Array[Token] = js.native
+    var tokens: js.Array[Token]
   }
   object State {
     
@@ -92,14 +93,13 @@ object parseMod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var output: js.Any = js.native
+    var output: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object Token {
     

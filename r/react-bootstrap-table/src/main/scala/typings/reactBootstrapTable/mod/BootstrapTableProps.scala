@@ -5,87 +5,87 @@ import typings.react.mod.Props
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapTableProps extends Props[BootstrapTable] {
+trait BootstrapTableProps
+  extends StObject
+     with Props[BootstrapTable] {
   
   /**
     * Automatically collapses open rows when doing a sort/filter/search action if those options have been specified.
     * Is an object with three possible fields: sort, filter, search. Each field is a flag to specify whether that
     * action type should cause expanded rows to close. All three fields default to false.
     */
-  var autoCollapse: js.UndefOr[typings.reactBootstrapTable.anon.Filter] = js.native
+  var autoCollapse: js.UndefOr[typings.reactBootstrapTable.anon.Filter] = js.undefined
   
   /**
     * Add your own class names on the react-bs-container-body class
     */
-  var bodyContainerClass: js.UndefOr[String] = js.native
+  var bodyContainerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Add css styles to the react-bs-container-body class.
     */
-  var bodyStyle: js.UndefOr[CSSProperties] = js.native
+  var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * Become a borderless table by setting bordered to false, default is true.
     */
-  var bordered: js.UndefOr[Boolean] = js.native
+  var bordered: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable cell editing on table. cellEdit accept an object which have the following properties
     */
-  var cellEdit: js.UndefOr[CellEdit[_]] = js.native
+  var cellEdit: js.UndefOr[CellEdit[js.Any]] = js.undefined
   
   /**
     * Enable column filter by setting columnFilter to true, default is false.
     * If enabled, there're input text field per column under the table, user can input your filter condition by each column.
     */
-  var columnFilter: js.UndefOr[Boolean] = js.native
+  var columnFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable condensed by setting condensed to true. Same as Bootstrap table class .table-condensed, default is false.
     */
-  var condensed: js.UndefOr[Boolean] = js.native
+  var condensed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add your own class names on the react-bs-table-container class
     */
-  var containerClass: js.UndefOr[String] = js.native
+  var containerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Add css styles to the react-bs-table-container class.
     * For example: containerStyle={ { background: '#00ff00' } }
     */
-  var containerStyle: js.UndefOr[CSSProperties] = js.native
+  var containerStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * Set CSV filename (e.g. items.csv). Default is spreadsheet.csv
     */
-  var csvFileName: js.UndefOr[String | js.Function0[String]] = js.native
+  var csvFileName: js.UndefOr[String | js.Function0[String]] = js.undefined
   
   /**
     * Use data to specify the data that you want to display on table.
     */
-  var data: js.Array[js.Object] = js.native
+  var data: js.Array[js.Object]
   
   /**
     * Enable row deletion by setting deleteRow to true, default is false.
     * If you enable row deletion, there's a button on the upper left side of table.
     */
-  var deleteRow: js.UndefOr[Boolean] = js.native
+  var deleteRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable writing the header row when exporting to a CSV file.
     */
-  var excludeCSVHeader: js.UndefOr[Boolean] = js.native
+  var excludeCSVHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Assign some alternative options for expand row feature, expandColumnOptions
     * only have four available property currently.
     */
-  var expandColumnOptions: js.UndefOr[ExpandColumnOptions] = js.native
+  var expandColumnOptions: js.UndefOr[ExpandColumnOptions] = js.undefined
   
   /**
     * Tell react-bootstrap-table what's content should be rendered in the expanding
@@ -94,7 +94,7 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     * expandComponent is always used with expandableRow, both of props are enable
     * the expand row functionality on table.
     */
-  var expandComponent: js.UndefOr[js.Function1[/* row */ js.Any, String | ReactElement]] = js.native
+  var expandComponent: js.UndefOr[js.Function1[/* row */ js.Any, String | ReactElement]] = js.undefined
   
   /**
     * Tell react-bootstrap-table which rows are able to expand. This prop accepts
@@ -102,60 +102,60 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     * expandableRow is always used with expandComponent, both of props are enable
     * the expand row functionality on table.
     */
-  var expandableRow: js.UndefOr[js.Function1[/* row */ js.Any, Boolean]] = js.native
+  var expandableRow: js.UndefOr[js.Function1[/* row */ js.Any, Boolean]] = js.undefined
   
   /**
     * Enable export csv function, default is false.
     * If you enable, there's a button on the upper left side of table.
     */
-  var exportCSV: js.UndefOr[Boolean] = js.native
+  var exportCSV: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to specify the total number of rows (matching current filter/sort/size per page) in a remote data source.
     * Documented in examples, but missing from the main docs. Essential for remote data pagination calculations.
     */
-  var fetchInfo: js.UndefOr[FetchInfo] = js.native
+  var fetchInfo: js.UndefOr[FetchInfo] = js.undefined
   
   /**
     * Add a footer to the table.
     */
-  var footer: js.UndefOr[Boolean] = js.native
+  var footer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Data for the table footer. Format is an array of footer rows, each containing an array of column footer data.
     */
-  var footerData: js.UndefOr[js.Array[js.Array[FooterData]]] = js.native
+  var footerData: js.UndefOr[js.Array[js.Array[FooterData]]] = js.undefined
   
   /**
     * Add your own class names on the react-bs-container-header class
     */
-  var headerContainerClass: js.UndefOr[String] = js.native
+  var headerContainerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Add css styles to the react-bs-container-header class.
     */
-  var headerStyle: js.UndefOr[CSSProperties] = js.native
+  var headerStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * Use height to set the height of table, default is 100%. The string needs to have a unit, e.g. 'px', '%'.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * Enable hover by setting hover to true. Same as Bootstrap table class .table-hover, default is false.
     */
-  var hover: js.UndefOr[Boolean] = js.native
+  var hover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, it will hide the pagination if there is only one page, default is false.
     */
-  var ignoreSinglePage: js.UndefOr[Boolean] = js.native
+  var ignoreSinglePage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable row insertion by setting insertRow to true, default is false.
     * If you enable row insertion, there's a button on the upper left side of table.
     */
-  var insertRow: js.UndefOr[Boolean] = js.native
+  var insertRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This prop will enable/disable the keyboard navigation cell by cell on table. This is new
@@ -167,41 +167,41 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     * editing, expand row or selection row, you may get interested to see how they work well
     * together: In the advance cases, you need to configure keyBoardNav as an object.
     */
-  var keyBoardNav: js.UndefOr[Boolean | KeyboardNavigation] = js.native
+  var keyBoardNav: js.UndefOr[Boolean | KeyboardNavigation] = js.undefined
   
   /**
     * Use keyField to tell table which column is unique. This is same as isKey in <TableHeaderColumn>
     * Tips: react-bootstrap-table support data manipulation(CRUD) so that we need to fetch correct row by a unique column.
     *       You need choose one of configuration to set the key field: isKey or keyField in <BootstrapTable>.
     */
-  var keyField: js.UndefOr[String] = js.native
+  var keyField: js.UndefOr[String] = js.undefined
   
   /**
     * Set the maximum height of table. You need give a string with an unit(px) value like height.
     */
-  var maxHeight: js.UndefOr[String] = js.native
+  var maxHeight: js.UndefOr[String] = js.undefined
   
   /**
     * Enable multi search by multiColumnSearch, default is false.
     * If you want to use multi search, you must enable search at first.
     * Tips: Use space to delimited search text. EX: 3 4, which means match all 3 or 4 datas in table.
     */
-  var multiColumnSearch: js.UndefOr[Boolean] = js.native
+  var multiColumnSearch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable the multi sort on table and the number value is means max number of sorting column.
     */
-  var multiColumnSort: js.UndefOr[Double] = js.native
+  var multiColumnSort: js.UndefOr[Double] = js.undefined
   
   /**
     * For some options setting on this component, you can set the options attribute and give an object which contain following properties
     */
-  var options: js.UndefOr[Options[_]] = js.native
+  var options: js.UndefOr[Options[js.Any]] = js.undefined
   
   /**
     * Enable pagination by setting pagination to true, default is false.
     */
-  var pagination: js.UndefOr[Boolean] = js.native
+  var pagination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Normally, react-bootstrap-table handles all the data sorting/filtering/pagination/etc itself internally.
@@ -213,71 +213,71 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     * we have following functionality you can control: sort, pagination, cellEdit, insertRow, dropRow, filter, search,
     * exportCSV.
     */
-  var remote: js.UndefOr[Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec])] = js.native
+  var remote: js.UndefOr[Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec])] = js.undefined
   
   /**
     * Render react-s-alert notifications
     */
-  var renderAlert: js.UndefOr[Boolean] = js.native
+  var renderAlert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a fix position for the vertical bar if it exist. Available is a number or Top and Bottom
     */
-  var scrollTop: js.UndefOr[Double | ScrollPosition] = js.native
+  var scrollTop: js.UndefOr[Double | ScrollPosition] = js.undefined
   
   /**
     * Enable search by setting search to true, default is false.
     * If enabled, there is a on the upper left side of the table. The default place holder is Search
     */
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set searchPlaceholder to change the placeholder in search field, default is Search.
     */
-  var searchPlaceholder: js.UndefOr[String] = js.native
+  var searchPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
     * Enable row selection on table. SelectRow accept an object.
     */
-  var selectRow: js.UndefOr[SelectRow[_]] = js.native
+  var selectRow: js.UndefOr[SelectRow[js.Any]] = js.undefined
   
   /**
     * Strict search. Set this flag to apply search terms so that only rows that contain ALL terms are included in the
     * search results.
     */
-  var strictSearch: js.UndefOr[Boolean] = js.native
+  var strictSearch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable striped by setting striped to true. Same as Bootstrap table class .table-striped, default is false.
     */
-  var striped: js.UndefOr[Boolean] = js.native
+  var striped: js.UndefOr[Boolean] = js.undefined
   
   /**
     * react-bootstrap-table separate two table element as header and body.
     * The tableBodyClass is for the table element in the body
     */
-  var tableBodyClass: js.UndefOr[String] = js.native
+  var tableBodyClass: js.UndefOr[String] = js.undefined
   
   /**
     * Add your own class names on the react-bs-table class
     */
-  var tableContainerClass: js.UndefOr[String] = js.native
+  var tableContainerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Table footer custom class
     */
-  var tableFooterClass: js.UndefOr[String] = js.native
+  var tableFooterClass: js.UndefOr[String] = js.undefined
   
   /**
     * react-bootstrap-table separate two table element as header and body.
     * The tableHeaderClass is for the table element in the header
     */
-  var tableHeaderClass: js.UndefOr[String] = js.native
+  var tableHeaderClass: js.UndefOr[String] = js.undefined
   
   /**
     * Add css styles to the react-bs-table class.
     */
-  var tableStyle: js.UndefOr[CSSProperties] = js.native
+  var tableStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * Assign the class name of row(tr). This attribute accept a string or function and function is a better way to do more customization.
@@ -288,25 +288,25 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     *      return rowIndex % 2 == 0 ? "tr-odd" : "tr-even"; // return a class name.
     *    }
     */
-  var trClassName: js.UndefOr[String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String])] = js.native
+  var trClassName: js.UndefOr[String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String])] = js.undefined
   
   /**
     * Set a style to be used for the table rows. Example: https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/style/tr-style-table.js
     */
   var trStyle: js.UndefOr[
     CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, CSSProperties])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Bootstrap version to use, values include '3' or '4'. Defaults to '3'.
     */
-  var version: js.UndefOr[BootstrapVersion] = js.native
+  var version: js.UndefOr[BootstrapVersion] = js.undefined
   
   /**
     * Disable the automatic tabIndex for navigating between cells. This can be useful if you have a page with multiple
     * tables on the page, to stop the tab moving to another table. Default is false.
     */
-  var withoutTabIndex: js.UndefOr[Boolean] = js.native
+  var withoutTabIndex: js.UndefOr[Boolean] = js.undefined
 }
 object BootstrapTableProps {
   
@@ -344,7 +344,7 @@ object BootstrapTableProps {
     def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     
     @scala.inline
-    def setCellEdit(value: CellEdit[_]): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
+    def setCellEdit(value: CellEdit[js.Any]): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellEditUndefined: Self = StObject.set(x, "cellEdit", js.undefined)
@@ -512,7 +512,7 @@ object BootstrapTableProps {
     def setMultiColumnSortUndefined: Self = StObject.set(x, "multiColumnSort", js.undefined)
     
     @scala.inline
-    def setOptions(value: Options[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    def setOptions(value: Options[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
@@ -557,7 +557,7 @@ object BootstrapTableProps {
     def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def setSelectRow(value: SelectRow[_]): Self = StObject.set(x, "selectRow", value.asInstanceOf[js.Any])
+    def setSelectRow(value: SelectRow[js.Any]): Self = StObject.set(x, "selectRow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectRowUndefined: Self = StObject.set(x, "selectRow", js.undefined)

@@ -3,35 +3,33 @@ package typings.msRest.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestPrepareOptions extends StObject {
   
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var bodyIsStream: js.UndefOr[Boolean] = js.native
+  var bodyIsStream: js.UndefOr[Boolean] = js.undefined
   
-  var deserializationMapper: Mapper = js.native
+  var deserializationMapper: Mapper
   
-  var disableClientRequestId: js.UndefOr[Boolean] = js.native
+  var disableClientRequestId: js.UndefOr[Boolean] = js.undefined
   
-  var disableJsonStringifyOnBody: js.UndefOr[Boolean] = js.native
+  var disableJsonStringifyOnBody: js.UndefOr[Boolean] = js.undefined
   
-  var formData: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  var pathParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.native
+  var pathParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
   
-  var queryParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.native
+  var queryParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
   
-  var serializationMapper: Mapper = js.native
+  var serializationMapper: Mapper
 }
 object RequestPrepareOptions {
   

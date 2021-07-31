@@ -4,31 +4,29 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.Proxy
 import typings.devtoolsProtocol.devtoolsProtocolStrings.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthChallenge extends StObject {
   
   /**
     * Origin of the challenger.
     */
-  var origin: String = js.native
+  var origin: String
   
   /**
     * The realm of the challenge. May be empty.
     */
-  var realm: String = js.native
+  var realm: String
   
   /**
     * The authentication scheme used, such as basic or digest
     */
-  var scheme: String = js.native
+  var scheme: String
   
   /**
     * Source of the authentication challenge. (AuthChallengeSource enum)
     */
-  var source: js.UndefOr[Server | Proxy] = js.native
+  var source: js.UndefOr[Server | Proxy] = js.undefined
 }
 object AuthChallenge {
   

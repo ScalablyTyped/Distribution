@@ -4,25 +4,23 @@ import typings.jpm.FFAddonSDK.SDKURL
 import typings.jpm.requestMod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Anonymous extends StObject {
   
-  var anonymous: js.UndefOr[Boolean] = js.native
+  var anonymous: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | js.Object] = js.native
+  var content: js.UndefOr[String | js.Object] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function1[/* response */ Response, _]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* response */ Response, js.Any]] = js.undefined
   
-  var overrideMimeType: js.UndefOr[String] = js.native
+  var overrideMimeType: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String | SDKURL] = js.native
+  var url: js.UndefOr[String | SDKURL] = js.undefined
 }
 object Anonymous {
   
@@ -60,7 +58,7 @@ object Anonymous {
     def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setOnComplete(value: /* response */ Response => _): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    def setOnComplete(value: /* response */ Response => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)

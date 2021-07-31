@@ -3,14 +3,12 @@ package typings.semanticUiTab.anon
 import typings.semanticUiTab.semanticUiTabBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'path'> */
-@js.native
 trait PickImplpath extends StObject {
   
-  var path: `false` | String = js.native
+  var path: `false` | String
 }
 object PickImplpath {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3BucketDestination extends StObject {
   
   /**
     * The account ID of the owner of the S3 Storage Lens metrics export bucket.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The Amazon Resource Name (ARN) of the bucket. This property is read-only and follows the following format:  arn:aws:s3:us-east-1:example-account-id:bucket/your-destination-bucket-name  
     */
-  var Arn: S3BucketArnString = js.native
+  var Arn: S3BucketArnString
   
   /**
     * The container for the type encryption of the metrics exports in this bucket.
     */
-  var Encryption: js.UndefOr[StorageLensDataExportEncryption] = js.native
+  var Encryption: js.UndefOr[StorageLensDataExportEncryption] = js.undefined
   
   /**
     * 
     */
-  var Format: typings.awsSdk.s3controlMod.Format = js.native
+  var Format: typings.awsSdk.s3controlMod.Format
   
   /**
     * The schema version of the export file.
     */
-  var OutputSchemaVersion: typings.awsSdk.s3controlMod.OutputSchemaVersion = js.native
+  var OutputSchemaVersion: typings.awsSdk.s3controlMod.OutputSchemaVersion
   
   /**
     * The prefix of the destination bucket where the metrics export will be delivered.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3controlMod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3controlMod.Prefix] = js.undefined
 }
 object S3BucketDestination {
   

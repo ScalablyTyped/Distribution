@@ -5,175 +5,175 @@ import typings.senchaTouch.Ext.data.IRecord
 import typings.senchaTouch.Ext.event.IEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INestedList extends IContainer {
+trait INestedList
+  extends StObject
+     with IContainer {
   
   /** [Config Option] (Boolean) */
-  var allowDeselect: js.UndefOr[Boolean] = js.native
+  var allowDeselect: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var backButton: js.UndefOr[js.Any] = js.native
+  var backButton: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var backText: js.UndefOr[java.lang.String] = js.native
+  var backText: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number) */
-  var clearSelectionDelay: js.UndefOr[Double] = js.native
+  var clearSelectionDelay: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Ext.Component) */
-  var detailCard: js.UndefOr[IComponent] = js.native
+  var detailCard: js.UndefOr[IComponent] = js.undefined
   
   /** [Config Option] (Ext.Container) */
-  var detailContainer: js.UndefOr[IContainer] = js.native
+  var detailContainer: js.UndefOr[IContainer] = js.undefined
   
   /** [Config Option] (String) */
-  var displayField: js.UndefOr[java.lang.String] = js.native
+  var displayField: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[java.lang.String] = js.native
+  var emptyText: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Returns the value of allowDeselect
     * @returns Boolean
     */
-  var getAllowDeselect: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAllowDeselect: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of backButton
     * @returns Object
     */
-  var getBackButton: js.UndefOr[js.Function0[_]] = js.native
+  var getBackButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of backText
     * @returns String
     */
-  var getBackText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getBackText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of clearSelectionOnListChange
     * @returns Boolean
     */
-  var getClearSelectionOnListChange: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getClearSelectionOnListChange: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of detailCard
     * @returns Ext.Component
     */
-  var getDetailCard: js.UndefOr[js.Function0[IComponent]] = js.native
+  var getDetailCard: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Returns the value of detailContainer
     * @returns Ext.Container
     */
-  var getDetailContainer: js.UndefOr[js.Function0[IContainer]] = js.native
+  var getDetailContainer: js.UndefOr[js.Function0[IContainer]] = js.undefined
   
   /** [Method] Returns the value of displayField
     * @returns String
     */
-  var getDisplayField: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getDisplayField: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of emptyText
     * @returns String
     */
-  var getEmptyText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getEmptyText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of itemHeight
     * @returns Number
     */
-  var getItemHeight: js.UndefOr[js.Function0[Double]] = js.native
+  var getItemHeight: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Override this method to provide custom template rendering of individual nodes
     * @param node Ext.data.Record
     * @returns String
     */
-  var getItemTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], java.lang.String]] = js.native
+  var getItemTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of listConfig
     * @returns Object
     */
-  var getListConfig: js.UndefOr[js.Function0[_]] = js.native
+  var getListConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of loadingText
     * @returns String
     */
-  var getLoadingText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getLoadingText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of onItemDisclosure
     * @returns Boolean/Function
     */
-  var getOnItemDisclosure: js.UndefOr[js.Function0[_]] = js.native
+  var getOnItemDisclosure: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of store
     * @returns Ext.data.TreeStore/String
     */
-  var getStore: js.UndefOr[js.Function0[_]] = js.native
+  var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the subList for a specified node  */
-  var getSubList: js.UndefOr[js.Function0[Unit]] = js.native
+  var getSubList: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns the value of title
     * @returns String
     */
-  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Override this method to provide custom template rendering of titles back buttons when useTitleAsBackText is enabled
     * @param node Ext.data.Record
     * @returns String
     */
-  var getTitleTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], java.lang.String]] = js.native
+  var getTitleTextTpl: js.UndefOr[js.Function1[/* node */ js.UndefOr[IRecord], java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of toolbar
     * @returns Ext.Toolbar/Object/Boolean
     */
-  var getToolbar: js.UndefOr[js.Function0[_]] = js.native
+  var getToolbar: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of updateTitleText
     * @returns Boolean
     */
-  var getUpdateTitleText: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUpdateTitleText: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of useSimpleItems
     * @returns Boolean
     */
-  var getUseSimpleItems: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUseSimpleItems: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of useTitleAsBackText
     * @returns Boolean
     */
-  var getUseTitleAsBackText: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUseTitleAsBackText: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of useToolbar
     * @returns Boolean
     */
-  var getUseToolbar: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUseToolbar: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of variableHeights
     * @returns Boolean
     */
-  var getVariableHeights: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getVariableHeights: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] The leaf you want to navigate to
     * @param node Ext.data.NodeInterface The specified node to navigate to.
     */
-  var goToLeaf: js.UndefOr[js.Function1[/* node */ js.UndefOr[INodeInterface], Unit]] = js.native
+  var goToLeaf: js.UndefOr[js.Function1[/* node */ js.UndefOr[INodeInterface], Unit]] = js.undefined
   
   /** [Method] Method to handle going to a specific node within this nested list
     * @param node Ext.data.NodeInterface The specified node to navigate to.
     */
-  var goToNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[INodeInterface], Unit]] = js.native
+  var goToNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[INodeInterface], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var itemHeight: js.UndefOr[Double] = js.native
+  var itemHeight: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var listConfig: js.UndefOr[js.Any] = js.native
+  var listConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var loadingText: js.UndefOr[java.lang.String] = js.native
+  var loadingText: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Called when the backButton has been tapped  */
-  var onBackTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBackTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Function) */
-  var onItemDisclosure: js.UndefOr[js.Any] = js.native
+  var onItemDisclosure: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Called when an list item has been tapped
     * @param list Ext.List The subList the item is on.
@@ -191,137 +191,137 @@ trait INestedList extends IContainer {
       /* e */ js.UndefOr[IEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of allowDeselect
     * @param allowDeselect Boolean The new value.
     */
-  var setAllowDeselect: js.UndefOr[js.Function1[/* allowDeselect */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAllowDeselect: js.UndefOr[js.Function1[/* allowDeselect */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of backButton
     * @param backButton Object The new value.
     */
-  var setBackButton: js.UndefOr[js.Function1[/* backButton */ js.UndefOr[js.Any], Unit]] = js.native
+  var setBackButton: js.UndefOr[js.Function1[/* backButton */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of backText
     * @param backText String The new value.
     */
-  var setBackText: js.UndefOr[js.Function1[/* backText */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setBackText: js.UndefOr[js.Function1[/* backText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of clearSelectionOnListChange
     * @param clearSelectionOnListChange Boolean The new value.
     */
-  var setClearSelectionOnListChange: js.UndefOr[js.Function1[/* clearSelectionOnListChange */ js.UndefOr[Boolean], Unit]] = js.native
+  var setClearSelectionOnListChange: js.UndefOr[js.Function1[/* clearSelectionOnListChange */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of detailCard
     * @param detailCard Ext.Component The new value.
     */
-  var setDetailCard: js.UndefOr[js.Function1[/* detailCard */ js.UndefOr[IComponent], Unit]] = js.native
+  var setDetailCard: js.UndefOr[js.Function1[/* detailCard */ js.UndefOr[IComponent], Unit]] = js.undefined
   
   /** [Method] Sets the value of detailContainer
     * @param detailContainer Ext.Container The new value.
     */
-  var setDetailContainer: js.UndefOr[js.Function1[/* detailContainer */ js.UndefOr[IContainer], Unit]] = js.native
+  var setDetailContainer: js.UndefOr[js.Function1[/* detailContainer */ js.UndefOr[IContainer], Unit]] = js.undefined
   
   /** [Method] Sets the value of displayField
     * @param displayField String The new value.
     */
-  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of emptyText
     * @param emptyText String The new value.
     */
-  var setEmptyText: js.UndefOr[js.Function1[/* emptyText */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setEmptyText: js.UndefOr[js.Function1[/* emptyText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemHeight
     * @param itemHeight Number The new value.
     */
-  var setItemHeight: js.UndefOr[js.Function1[/* itemHeight */ js.UndefOr[Double], Unit]] = js.native
+  var setItemHeight: js.UndefOr[js.Function1[/* itemHeight */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of listConfig
     * @param listConfig Object The new value.
     */
-  var setListConfig: js.UndefOr[js.Function1[/* listConfig */ js.UndefOr[js.Any], Unit]] = js.native
+  var setListConfig: js.UndefOr[js.Function1[/* listConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of loadingText
     * @param loadingText String The new value.
     */
-  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of onItemDisclosure
     * @param onItemDisclosure Boolean/Function The new value.
     */
-  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.native
+  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of store
     * @param store Ext.data.TreeStore/String The new value.
     */
-  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.native
+  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of title
     * @param title String The new value.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of toolbar
     * @param toolbar Ext.Toolbar/Object/Boolean The new value.
     */
-  var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.native
+  var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of ui
     * @param ui Object The new value.
     */
   @JSName("setUi")
-  var setUi_INestedList: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.native
+  var setUi_INestedList: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of updateTitleText
     * @param updateTitleText Boolean The new value.
     */
-  var setUpdateTitleText: js.UndefOr[js.Function1[/* updateTitleText */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUpdateTitleText: js.UndefOr[js.Function1[/* updateTitleText */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of useSimpleItems
     * @param useSimpleItems Boolean The new value.
     */
-  var setUseSimpleItems: js.UndefOr[js.Function1[/* useSimpleItems */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUseSimpleItems: js.UndefOr[js.Function1[/* useSimpleItems */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of useTitleAsBackText
     * @param useTitleAsBackText Boolean The new value.
     */
-  var setUseTitleAsBackText: js.UndefOr[js.Function1[/* useTitleAsBackText */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUseTitleAsBackText: js.UndefOr[js.Function1[/* useTitleAsBackText */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of useToolbar
     * @param useToolbar Boolean The new value.
     */
-  var setUseToolbar: js.UndefOr[js.Function1[/* useToolbar */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUseToolbar: js.UndefOr[js.Function1[/* useToolbar */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of variableHeights
     * @param variableHeights Boolean The new value.
     */
-  var setVariableHeights: js.UndefOr[js.Function1[/* variableHeights */ js.UndefOr[Boolean], Unit]] = js.native
+  var setVariableHeights: js.UndefOr[js.Function1[/* variableHeights */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Ext.data.TreeStore/String) */
-  var store: js.UndefOr[js.Any] = js.native
+  var store: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var title: js.UndefOr[java.lang.String] = js.native
+  var title: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Ext.Toolbar/Object/Boolean) */
-  var toolbar: js.UndefOr[js.Any] = js.native
+  var toolbar: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var updateTitleText: js.UndefOr[Boolean] = js.native
+  var updateTitleText: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useSimpleItems: js.UndefOr[Boolean] = js.native
+  var useSimpleItems: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useTitleAsBackText: js.UndefOr[Boolean] = js.native
+  var useTitleAsBackText: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useToolbar: js.UndefOr[Boolean] = js.native
+  var useToolbar: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var variableHeights: js.UndefOr[Boolean] = js.native
+  var variableHeights: js.UndefOr[Boolean] = js.undefined
 }
 object INestedList {
   
@@ -389,7 +389,7 @@ object INestedList {
     def setGetAllowDeselectUndefined: Self = StObject.set(x, "getAllowDeselect", js.undefined)
     
     @scala.inline
-    def setGetBackButton(value: () => _): Self = StObject.set(x, "getBackButton", js.Any.fromFunction0(value))
+    def setGetBackButton(value: () => js.Any): Self = StObject.set(x, "getBackButton", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetBackButtonUndefined: Self = StObject.set(x, "getBackButton", js.undefined)
@@ -443,7 +443,7 @@ object INestedList {
     def setGetItemTextTplUndefined: Self = StObject.set(x, "getItemTextTpl", js.undefined)
     
     @scala.inline
-    def setGetListConfig(value: () => _): Self = StObject.set(x, "getListConfig", js.Any.fromFunction0(value))
+    def setGetListConfig(value: () => js.Any): Self = StObject.set(x, "getListConfig", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetListConfigUndefined: Self = StObject.set(x, "getListConfig", js.undefined)
@@ -455,13 +455,13 @@ object INestedList {
     def setGetLoadingTextUndefined: Self = StObject.set(x, "getLoadingText", js.undefined)
     
     @scala.inline
-    def setGetOnItemDisclosure(value: () => _): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
+    def setGetOnItemDisclosure(value: () => js.Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
     
     @scala.inline
-    def setGetStore(value: () => _): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
@@ -485,7 +485,7 @@ object INestedList {
     def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
     @scala.inline
-    def setGetToolbar(value: () => _): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
+    def setGetToolbar(value: () => js.Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetToolbarUndefined: Self = StObject.set(x, "getToolbar", js.undefined)

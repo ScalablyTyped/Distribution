@@ -3,21 +3,19 @@ package typings.webix.mod
 import typings.webix.webix.ui.baseview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait markup extends StObject {
   
-  var attribute: js.Any = js.native
+  var attribute: js.Any
   
-  var dataTag: js.Any = js.native
+  var dataTag: js.Any
   
-  def init(node: String, target: String): baseview = js.native
+  def init(node: String, target: String): baseview
   
-  var namespace: js.Any = js.native
+  var namespace: js.Any
   
-  def parse(data: js.Any, datatype: String): Unit = js.native
+  def parse(data: js.Any, datatype: String): Unit
 }
 object markup {
   

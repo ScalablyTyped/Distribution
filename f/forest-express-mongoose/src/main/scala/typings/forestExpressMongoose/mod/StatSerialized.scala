@@ -3,13 +3,11 @@ package typings.forestExpressMongoose.mod
 import typings.forestExpressMongoose.anon.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatSerialized extends StObject {
   
-  var data: Attributes = js.native
+  var data: Attributes
 }
 object StatSerialized {
   

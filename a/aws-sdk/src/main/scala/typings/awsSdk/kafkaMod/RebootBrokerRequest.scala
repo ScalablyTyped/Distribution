@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RebootBrokerRequest extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait RebootBrokerRequest extends StObject {
     The list of broker IDs to be rebooted. The reboot-broker operation supports rebooting one broker at a time.
     
     */
-  var BrokerIds: listOfString = js.native
+  var BrokerIds: listOfString
   
   /**
     * 
     The Amazon Resource Name (ARN) of the cluster to be updated.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
 }
 object RebootBrokerRequest {
   

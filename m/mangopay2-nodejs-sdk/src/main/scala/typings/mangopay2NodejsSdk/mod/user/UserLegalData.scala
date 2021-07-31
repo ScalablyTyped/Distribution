@@ -6,86 +6,86 @@ import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserLegalData extends UserData {
+trait UserLegalData
+  extends StObject
+     with UserData {
   
   /**
     * The official registered number of the business
     */
-  var CompanyNumber: String = js.native
+  var CompanyNumber: String
   
   /**
     * The address of the company’s headquarters
     */
-  var HeadquartersAddress: AddressType = js.native
+  var HeadquartersAddress: AddressType
   
   /**
     * Type for legal user.
     */
-  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType = js.native
+  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType
   
   /**
     * The address of the company’s Legal representative person
     */
-  var LegalRepresentativeAddress: AddressType = js.native
+  var LegalRepresentativeAddress: AddressType
   
   /**
     * The date of birth of the company’s Legal representative person - be careful to set the right timezone (should be UTC) to avoid 00h becoming 23h (and hence interpreted as the day before)
     */
-  var LegalRepresentativeBirthday: Timestamp = js.native
+  var LegalRepresentativeBirthday: Timestamp
   
   /**
     * The country of residence of the company’s Legal representative person
     */
-  var LegalRepresentativeCountryOfResidence: CountryISO = js.native
+  var LegalRepresentativeCountryOfResidence: CountryISO
   
   /**
     * The email of the company’s Legal representative person - must be valid
     */
-  var LegalRepresentativeEmail: String = js.native
+  var LegalRepresentativeEmail: String
   
   /**
     * The first name of the company’s Legal representative person
     */
-  var LegalRepresentativeFirstName: String = js.native
+  var LegalRepresentativeFirstName: String
   
   /**
     * The last name of the company’s Legal representative person
     */
-  var LegalRepresentativeLastName: String = js.native
+  var LegalRepresentativeLastName: String
   
   /**
     * The nationality of the company’s Legal representative person
     */
-  var LegalRepresentativeNationality: CountryISO = js.native
+  var LegalRepresentativeNationality: CountryISO
   
   /**
     * The name of the legal user
     */
-  var Name: String = js.native
+  var Name: String
   
   @JSName("PersonType")
-  var PersonType_UserLegalData: LEGAL = js.native
+  var PersonType_UserLegalData: LEGAL
   
-  var ProofOfIdentity: String | Null = js.native
+  var ProofOfIdentity: String | Null
   
   /**
     * A MANGOPAY reference to the validated document of the proof of registration of the company
     */
-  var ProofOfRegistration: String | Null = js.native
+  var ProofOfRegistration: String | Null
   
   /**
     * The shareholder declaration of the company
     */
-  var ShareholderDeclaration: String | Null = js.native
+  var ShareholderDeclaration: String | Null
   
   /**
     * The business statute of the company
     */
-  var Statute: String | Null = js.native
+  var Statute: String | Null
 }
 object UserLegalData {
   
@@ -106,10 +106,9 @@ object UserLegalData {
     LegalRepresentativeLastName: String,
     LegalRepresentativeNationality: CountryISO,
     Name: String,
-    PersonType: LEGAL,
     Tag: String
   ): UserLegalData = {
-    val __obj = js.Dynamic.literal(CompanyNumber = CompanyNumber.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], HeadquartersAddress = HeadquartersAddress.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], KYCLevel = KYCLevel.asInstanceOf[js.Any], LegalPersonType = LegalPersonType.asInstanceOf[js.Any], LegalRepresentativeAddress = LegalRepresentativeAddress.asInstanceOf[js.Any], LegalRepresentativeBirthday = LegalRepresentativeBirthday.asInstanceOf[js.Any], LegalRepresentativeCountryOfResidence = LegalRepresentativeCountryOfResidence.asInstanceOf[js.Any], LegalRepresentativeEmail = LegalRepresentativeEmail.asInstanceOf[js.Any], LegalRepresentativeFirstName = LegalRepresentativeFirstName.asInstanceOf[js.Any], LegalRepresentativeLastName = LegalRepresentativeLastName.asInstanceOf[js.Any], LegalRepresentativeNationality = LegalRepresentativeNationality.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PersonType = PersonType.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CompanyNumber = CompanyNumber.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], HeadquartersAddress = HeadquartersAddress.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], KYCLevel = KYCLevel.asInstanceOf[js.Any], LegalPersonType = LegalPersonType.asInstanceOf[js.Any], LegalRepresentativeAddress = LegalRepresentativeAddress.asInstanceOf[js.Any], LegalRepresentativeBirthday = LegalRepresentativeBirthday.asInstanceOf[js.Any], LegalRepresentativeCountryOfResidence = LegalRepresentativeCountryOfResidence.asInstanceOf[js.Any], LegalRepresentativeEmail = LegalRepresentativeEmail.asInstanceOf[js.Any], LegalRepresentativeFirstName = LegalRepresentativeFirstName.asInstanceOf[js.Any], LegalRepresentativeLastName = LegalRepresentativeLastName.asInstanceOf[js.Any], LegalRepresentativeNationality = LegalRepresentativeNationality.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PersonType = "LEGAL", Tag = Tag.asInstanceOf[js.Any], ProofOfIdentity = null, ProofOfRegistration = null, ShareholderDeclaration = null, Statute = null)
     __obj.asInstanceOf[UserLegalData]
   }
   

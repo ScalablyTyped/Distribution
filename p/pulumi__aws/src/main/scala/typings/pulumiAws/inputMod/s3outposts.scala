@@ -3,18 +3,16 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3outposts {
   
-  @js.native
   trait EndpointNetworkInterface extends StObject {
     
     /**
       * Identifier of the Elastic Network Interface (ENI).
       */
-    var networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    var networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointNetworkInterface {
     

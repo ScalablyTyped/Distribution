@@ -7,15 +7,13 @@ import typings.dateFns.dateFnsStrings.extended
 import typings.dateFns.dateFnsStrings.time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Representation extends StObject {
   
-  var format: js.UndefOr[extended | basic] = js.native
+  var format: js.UndefOr[extended | basic] = js.undefined
   
-  var representation: js.UndefOr[complete | date | time] = js.native
+  var representation: js.UndefOr[complete | date | time] = js.undefined
 }
 object Representation {
   

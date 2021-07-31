@@ -3,22 +3,21 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.SwitchStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchStatement_
-  extends Node
+  extends StObject
+     with Node
      with BlockParent
      with Scopable
      with Statement {
   
-  var cases: js.Array[SwitchCase_] = js.native
+  var cases: js.Array[SwitchCase_]
   
-  var discriminant: Expression = js.native
+  var discriminant: Expression
   
   @JSName("type")
-  var type_SwitchStatement_ : SwitchStatement = js.native
+  var type_SwitchStatement_ : SwitchStatement
 }
 object SwitchStatement_ {
   
@@ -28,11 +27,10 @@ object SwitchStatement_ {
     discriminant: Expression,
     end: Double,
     loc: SourceLocation,
-    start: Double,
-    `type`: SwitchStatement
+    start: Double
   ): SwitchStatement_ = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SwitchStatement")
     __obj.asInstanceOf[SwitchStatement_]
   }
   

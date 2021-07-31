@@ -11,8 +11,8 @@ The Attribute module for G2, F2.
 | Full name          | @antv/attr |
 | Keywords           | antv, attr, g2, f2 |
 | # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 2205073 |
+| # dependents       | 8 |
+| # downloads        | 2509981 |
 | # stars            | 0 |
 
 ## Links

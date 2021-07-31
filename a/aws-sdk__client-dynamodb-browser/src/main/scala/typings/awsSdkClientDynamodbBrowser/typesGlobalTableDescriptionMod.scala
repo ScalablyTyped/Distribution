@@ -10,38 +10,36 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGlobalTableDescriptionMod {
   
-  @js.native
   trait GlobalTableDescription extends StObject {
     
     /**
       * <p>The creation time of the global table.</p>
       */
-    var CreationDateTime: js.UndefOr[Date | String | Double] = js.native
+    var CreationDateTime: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The unique identifier of the global table.</p>
       */
-    var GlobalTableArn: js.UndefOr[String] = js.native
+    var GlobalTableArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The global table name.</p>
       */
-    var GlobalTableName: js.UndefOr[String] = js.native
+    var GlobalTableName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The current state of the global table:</p> <ul> <li> <p> <code>CREATING</code> - The global table is being created.</p> </li> <li> <p> <code>UPDATING</code> - The global table is being updated.</p> </li> <li> <p> <code>DELETING</code> - The global table is being deleted.</p> </li> <li> <p> <code>ACTIVE</code> - The global table is ready for use.</p> </li> </ul>
       */
-    var GlobalTableStatus: js.UndefOr[CREATING | ACTIVE | DELETING | UPDATING | String] = js.native
+    var GlobalTableStatus: js.UndefOr[CREATING | ACTIVE | DELETING | UPDATING | String] = js.undefined
     
     /**
       * <p>The regions where the global table has replicas.</p>
       */
-    var ReplicationGroup: js.UndefOr[js.Array[ReplicaDescription] | Iterable[ReplicaDescription]] = js.native
+    var ReplicationGroup: js.UndefOr[js.Array[ReplicaDescription] | Iterable[ReplicaDescription]] = js.undefined
   }
   object GlobalTableDescription {
     
@@ -89,20 +87,21 @@ object typesGlobalTableDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledGlobalTableDescription extends GlobalTableDescription {
+  trait UnmarshalledGlobalTableDescription
+    extends StObject
+       with GlobalTableDescription {
     
     /**
       * <p>The creation time of the global table.</p>
       */
     @JSName("CreationDateTime")
-    var CreationDateTime_UnmarshalledGlobalTableDescription: js.UndefOr[Date] = js.native
+    var CreationDateTime_UnmarshalledGlobalTableDescription: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The regions where the global table has replicas.</p>
       */
     @JSName("ReplicationGroup")
-    var ReplicationGroup_UnmarshalledGlobalTableDescription: js.UndefOr[js.Array[UnmarshalledReplicaDescription]] = js.native
+    var ReplicationGroup_UnmarshalledGlobalTableDescription: js.UndefOr[js.Array[UnmarshalledReplicaDescription]] = js.undefined
   }
   object UnmarshalledGlobalTableDescription {
     

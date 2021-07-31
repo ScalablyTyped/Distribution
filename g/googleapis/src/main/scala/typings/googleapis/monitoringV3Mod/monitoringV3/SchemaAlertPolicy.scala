@@ -3,7 +3,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * services about this state. For an overview of alert policies, see
   * Introduction to Alerting.
   */
-@js.native
 trait SchemaAlertPolicy extends StObject {
   
   /**
     * How to combine the results of multiple conditions to determine if an
     * incident should be opened.
     */
-  var combiner: js.UndefOr[String] = js.native
+  var combiner: js.UndefOr[String] = js.undefined
   
   /**
     * A list of conditions for the policy. The conditions are combined by AND
@@ -27,13 +25,13 @@ trait SchemaAlertPolicy extends StObject {
     * evaluate to true, then an incident is created. A policy can have from one
     * to six conditions.
     */
-  var conditions: js.UndefOr[js.Array[SchemaCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaCondition]] = js.undefined
   
   /**
     * A read-only record of the creation of the alerting policy. If provided in
     * a call to create or update, this field will be ignored.
     */
-  var creationRecord: js.UndefOr[SchemaMutationRecord] = js.native
+  var creationRecord: js.UndefOr[SchemaMutationRecord] = js.undefined
   
   /**
     * A short name or phrase used to identify the policy in dashboards,
@@ -41,7 +39,7 @@ trait SchemaAlertPolicy extends StObject {
     * display name for multiple policies in the same project. The name is
     * limited to 512 Unicode characters.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Documentation that is included with notifications and incidents related
@@ -51,7 +49,7 @@ trait SchemaAlertPolicy extends StObject {
     * Notification channels that have limited capacity might not show this
     * documentation.
     */
-  var documentation: js.UndefOr[SchemaDocumentation] = js.native
+  var documentation: js.UndefOr[SchemaDocumentation] = js.undefined
   
   /**
     * Whether or not the policy is enabled. On write, the default
@@ -61,13 +59,13 @@ trait SchemaAlertPolicy extends StObject {
     * operations, unless a field projection has been specified that strips it
     * out.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A read-only record of the most recent change to the alerting policy. If
     * provided in a call to create or update, this field will be ignored.
     */
-  var mutationRecord: js.UndefOr[SchemaMutationRecord] = js.native
+  var mutationRecord: js.UndefOr[SchemaMutationRecord] = js.undefined
   
   /**
     * Required if the policy exists. The resource name for this policy. The
@@ -76,7 +74,7 @@ trait SchemaAlertPolicy extends StObject {
     * is created. When calling the alertPolicies.create method, do not include
     * the name field in the alerting policy passed as part of the request.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the notification channels to which notifications should be
@@ -86,7 +84,7 @@ trait SchemaAlertPolicy extends StObject {
     * from the ListNotificationChannels method. The syntax of the entries in
     * this field is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID]
     */
-  var notificationChannels: js.UndefOr[js.Array[String]] = js.native
+  var notificationChannels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User-supplied key/value data to be used for organizing and identifying
@@ -95,7 +93,7 @@ trait SchemaAlertPolicy extends StObject {
     * smaller. Labels and values can contain only lowercase letters, numerals,
     * underscores, and dashes. Keys must begin with a letter.
     */
-  var userLabels: js.UndefOr[StringDictionary[String]] = js.native
+  var userLabels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaAlertPolicy {
   

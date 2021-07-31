@@ -2,21 +2,19 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PBC extends StObject {
   
-  var PBC: typings.chromeApps.chromeAppsStrings.PBC = js.native
+  var PBC: typings.chromeApps.chromeAppsStrings.PBC
   
-  var PIN: typings.chromeApps.chromeAppsStrings.PIN = js.native
+  var PIN: typings.chromeApps.chromeAppsStrings.PIN
 }
 object PBC {
   
   @scala.inline
-  def apply(PBC: typings.chromeApps.chromeAppsStrings.PBC, PIN: typings.chromeApps.chromeAppsStrings.PIN): PBC = {
-    val __obj = js.Dynamic.literal(PBC = PBC.asInstanceOf[js.Any], PIN = PIN.asInstanceOf[js.Any])
+  def apply(): PBC = {
+    val __obj = js.Dynamic.literal(PBC = "PBC", PIN = "PIN")
     __obj.asInstanceOf[PBC]
   }
   

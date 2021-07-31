@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Clockwise extends js.Object {
+trait Clockwise extends StObject {
   
   /**
     * Whether draw clockwise.
@@ -15,7 +14,7 @@ trait Clockwise extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape.clockwise
     */
-  var clockwise: js.UndefOr[Boolean] = js.native
+  var clockwise: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The x value of the center of the element in the coordinate
@@ -24,7 +23,7 @@ trait Clockwise extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape.cx
     */
-  var cx: js.UndefOr[Double] = js.native
+  var cx: js.UndefOr[Double] = js.undefined
   
   /**
     * The y value of the center of the element in the coordinate
@@ -33,7 +32,7 @@ trait Clockwise extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape.cy
     */
-  var cy: js.UndefOr[Double] = js.native
+  var cy: js.UndefOr[Double] = js.undefined
   
   /**
     * end anble, in radian.
@@ -43,7 +42,7 @@ trait Clockwise extends js.Object {
     * "Math.PI * 2"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape.endAngle
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Outside radius.
@@ -51,7 +50,7 @@ trait Clockwise extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape.r
     */
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
   /**
     * Inside radius.
@@ -59,7 +58,7 @@ trait Clockwise extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape.r0
     */
-  var r0: js.UndefOr[Double] = js.native
+  var r0: js.UndefOr[Double] = js.undefined
   
   /**
     * start angle, in radian.
@@ -67,7 +66,7 @@ trait Clockwise extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape.startAngle
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
 }
 object Clockwise {
   
@@ -78,60 +77,48 @@ object Clockwise {
   }
   
   @scala.inline
-  implicit class ClockwiseOps[Self <: Clockwise] (val x: Self) extends AnyVal {
+  implicit class ClockwiseMutableBuilder[Self <: Clockwise] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockwise(value: Boolean): Self = this.set("clockwise", value.asInstanceOf[js.Any])
+    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
     @scala.inline
-    def deleteClockwise: Self = this.set("clockwise", js.undefined)
+    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCx(value: Double): Self = this.set("cx", value.asInstanceOf[js.Any])
+    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
     @scala.inline
-    def deleteCx: Self = this.set("cx", js.undefined)
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCy(value: Double): Self = this.set("cy", value.asInstanceOf[js.Any])
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def deleteCy: Self = this.set("cy", js.undefined)
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setR0(value: Double): Self = StObject.set(x, "r0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setR0Undefined: Self = StObject.set(x, "r0", js.undefined)
     
     @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR0(value: Double): Self = this.set("r0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteR0: Self = this.set("r0", js.undefined)
-    
-    @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
   }
 }

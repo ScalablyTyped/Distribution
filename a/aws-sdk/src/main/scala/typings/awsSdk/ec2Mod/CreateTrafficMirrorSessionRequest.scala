@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrafficMirrorSessionRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the Traffic Mirror session.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the source network interface.
     */
-  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId = js.native
+  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId
   
   /**
     * The number of bytes in each packet to mirror. These are bytes after the VXLAN header. Do not specify this parameter when you want to mirror the entire packet. To mirror a subset of the packet, set this to the length (in bytes) that you want to mirror. For example, if you set this value to 100, then the first 100 bytes that meet the filter criteria are copied to the target. If you do not want to mirror the entire packet, use the PacketLength parameter to specify the number of bytes in each packet to mirror.
     */
-  var PacketLength: js.UndefOr[Integer] = js.native
+  var PacketLength: js.UndefOr[Integer] = js.undefined
   
   /**
     * The session number determines the order in which sessions are evaluated when an interface is used by multiple sessions. The first session with a matching filter is the one that mirrors the packets. Valid values are 1-32766.
     */
-  var SessionNumber: Integer = js.native
+  var SessionNumber: Integer
   
   /**
     * The tags to assign to a Traffic Mirror session.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
     * The ID of the Traffic Mirror filter.
     */
-  var TrafficMirrorFilterId: typings.awsSdk.ec2Mod.TrafficMirrorFilterId = js.native
+  var TrafficMirrorFilterId: typings.awsSdk.ec2Mod.TrafficMirrorFilterId
   
   /**
     * The ID of the Traffic Mirror target.
     */
-  var TrafficMirrorTargetId: typings.awsSdk.ec2Mod.TrafficMirrorTargetId = js.native
+  var TrafficMirrorTargetId: typings.awsSdk.ec2Mod.TrafficMirrorTargetId
   
   /**
     * The VXLAN ID for the Traffic Mirror session. For more information about the VXLAN protocol, see RFC 7348. If you do not specify a VirtualNetworkId, an account-wide unique id is chosen at random.
     */
-  var VirtualNetworkId: js.UndefOr[Integer] = js.native
+  var VirtualNetworkId: js.UndefOr[Integer] = js.undefined
 }
 object CreateTrafficMirrorSessionRequest {
   

@@ -4,22 +4,22 @@ import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.srcSelectionMod.SelectionExtent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldSelection extends SelectionExtent {
+trait FieldSelection
+  extends StObject
+     with SelectionExtent {
   
   /**
     * The field name to extract selected values for, when a selection is [projected](https://vega.github.io/vega-lite/docs/project.html)
     * over multiple fields or encodings.
     */
-  var field: js.UndefOr[FieldName] = js.native
+  var field: js.UndefOr[FieldName] = js.undefined
   
   /**
     * The name of a selection.
     */
-  var selection: String = js.native
+  var selection: String
 }
 object FieldSelection {
   

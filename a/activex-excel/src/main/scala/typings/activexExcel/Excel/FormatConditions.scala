@@ -4,7 +4,6 @@ import typings.activexExcel.activexExcelNumbers.`1`
 import typings.activexExcel.activexExcelNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait FormatConditions extends StObject {
   @JSName("Add")
   def Add_2(Type: XlFormatConditionType, Operator: `2`, Formula1: String, Formula2: String): FormatCondition = js.native
   @JSName("Add")
-  def Add_2(Type: `2`, Operator: js.UndefOr[scala.Nothing], Formula1: String): FormatCondition = js.native
+  def Add_2(Type: `2`, Operator: Unit, Formula1: String): FormatCondition = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   

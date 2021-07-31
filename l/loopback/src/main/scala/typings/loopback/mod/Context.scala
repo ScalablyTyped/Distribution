@@ -2,7 +2,6 @@ package typings.loopback.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,32 +17,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {AccessToken} accessToken The access toke
   * @returns {AccessContext}
   */
-@js.native
 trait Context extends StObject {
   
   /** The access type */
-  var accesType: String = js.native
+  var accesType: String
   
   /** The access token */
-  var accessToken: AccessToken = js.native
+  var accessToken: AccessToken
   
   /** The model method to be invoked */
-  var method: String = js.native
+  var method: String
   
   /** The model class */
-  def model(): Unit = js.native
+  def model(): Unit
   
   /** The model id */
-  var modelId: String = js.native
+  var modelId: String
   
   /** The model name */
-  var modelName: String = js.native
+  var modelName: String
   
   /** An Array of principals */
-  var principals: js.Array[Principal] = js.native
+  var principals: js.Array[Principal]
   
   /** The model property/method/relation name */
-  var property: String = js.native
+  var property: String
 }
 object Context {
   

@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldRatingScale extends FieldMultiChoice {
+trait FieldRatingScale
+  extends StObject
+     with FieldMultiChoice {
   
   def get_gridEndNumber(): Double = js.native
   

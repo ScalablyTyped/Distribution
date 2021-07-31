@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,22 +16,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSourceHierarchy
   * @see com.sun.star.sheet.DataPilotSource
   */
-@js.native
 trait DataPilotSourceLevel
-  extends XNamed
+  extends StObject
+     with XNamed
      with XMembersSupplier
      with XDataPilotMemberResults
      with XPropertySet {
   
   /** specifies whether empty members are shown. */
-  var ShowEmpty: Boolean = js.native
+  var ShowEmpty: Boolean
   
   /**
     * specifies the subtotals that are inserted for the level.
     *
     * The subtotals are calculated with the members of this level.
     */
-  var SubTotals: SafeArray[GeneralFunction] = js.native
+  var SubTotals: SafeArray[GeneralFunction]
   
   /**
     * specifies the subtotals that are inserted for the level.
@@ -40,7 +39,7 @@ trait DataPilotSourceLevel
     * The subtotals are calculated with the members of this level.
     * @since LibreOffice 5.3
     */
-  var SubTotals2: SafeArray[Double] = js.native
+  var SubTotals2: SafeArray[Double]
 }
 object DataPilotSourceLevel {
   

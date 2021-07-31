@@ -5,7 +5,6 @@ import typings.dayjs.esmMod.ConfigType
 import typings.dayjs.esmMod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timezoneMod extends Shortcut {
@@ -26,9 +25,9 @@ object timezoneMod extends Shortcut {
     trait Dayjs extends StObject {
       
       def tz(): Dayjs = js.native
-      def tz(timezone: js.UndefOr[scala.Nothing], keepLocalTime: Boolean): Dayjs = js.native
       def tz(timezone: String): Dayjs = js.native
       def tz(timezone: String, keepLocalTime: Boolean): Dayjs = js.native
+      def tz(timezone: Unit, keepLocalTime: Boolean): Dayjs = js.native
     }
     
     @js.native

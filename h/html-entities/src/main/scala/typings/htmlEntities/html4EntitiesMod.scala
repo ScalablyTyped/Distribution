@@ -2,7 +2,6 @@ package typings.htmlEntities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html4EntitiesMod {
@@ -22,20 +21,20 @@ object html4EntitiesMod {
   /* static members */
   object Html4Entities {
     
-    @JSImport("html-entities/lib/html4-entities", "Html4Entities.decode")
+    @JSImport("html-entities/lib/html4-entities", "Html4Entities")
     @js.native
-    def decode(str: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("html-entities/lib/html4-entities", "Html4Entities.encode")
-    @js.native
-    def encode(str: String): String = js.native
+    @scala.inline
+    def decode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities/lib/html4-entities", "Html4Entities.encodeNonASCII")
-    @js.native
-    def encodeNonASCII(str: String): String = js.native
+    @scala.inline
+    def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities/lib/html4-entities", "Html4Entities.encodeNonUTF")
-    @js.native
-    def encodeNonUTF(str: String): String = js.native
+    @scala.inline
+    def encodeNonASCII(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonASCII")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def encodeNonUTF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonUTF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

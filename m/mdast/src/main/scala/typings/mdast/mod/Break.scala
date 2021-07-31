@@ -4,23 +4,22 @@ import typings.mdast.mdastStrings.break
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Break
-  extends StaticPhrasingContent
-     with Node {
+  extends StObject
+     with Node
+     with StaticPhrasingContent {
   
   @JSName("type")
-  var type_Break: break = js.native
+  var type_Break: break
 }
 object Break {
   
   @scala.inline
-  def apply(`type`: break): Break = {
+  def apply(): Break = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("break")
     __obj.asInstanceOf[Break]
   }
   

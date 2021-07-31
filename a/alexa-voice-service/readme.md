@@ -12,7 +12,7 @@ Alexa Voice Service wrapper for the browser.
 | Keywords           | amazon, alexa, skill, kit, echo, voice, ask, avs, speech |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 892 |
+| # downloads        | 948 |
 | # stars            | 3 |
 
 ## Links

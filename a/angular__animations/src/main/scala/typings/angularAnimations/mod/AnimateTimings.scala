@@ -2,24 +2,22 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimateTimings extends StObject {
   
   /**
     * The delay in applying an animation step. A number and optional time unit.
     * The default unit is milliseconds.
     */
-  var delay: Double = js.native
+  var delay: Double
   
   /**
     * The full duration of an animation step. A number and optional time unit,
     * such as "1s" or "10ms" for one second and 10 milliseconds, respectively.
     * The default unit is milliseconds.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * An easing style that controls how an animations step accelerates
@@ -29,13 +27,13 @@ trait AnimateTimings extends StObject {
     * - `ease-out`
     * - `ease-in-and-out`
     */
-  var easing: String | Null = js.native
+  var easing: String | Null
 }
 object AnimateTimings {
   
   @scala.inline
   def apply(delay: Double, duration: Double): AnimateTimings = {
-    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = null)
     __obj.asInstanceOf[AnimateTimings]
   }
   

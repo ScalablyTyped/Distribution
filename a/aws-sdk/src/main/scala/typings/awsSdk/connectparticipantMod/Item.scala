@@ -2,51 +2,49 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
   /**
     * The time when the message or event was sent. It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
     */
-  var AbsoluteTime: js.UndefOr[Instant] = js.native
+  var AbsoluteTime: js.UndefOr[Instant] = js.undefined
   
   /**
     * The content of the message or event.
     */
-  var Content: js.UndefOr[ChatContent] = js.native
+  var Content: js.UndefOr[ChatContent] = js.undefined
   
   /**
     * The type of content of the item.
     */
-  var ContentType: js.UndefOr[ChatContentType] = js.native
+  var ContentType: js.UndefOr[ChatContentType] = js.undefined
   
   /**
     * The chat display name of the sender.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.connectparticipantMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.connectparticipantMod.DisplayName] = js.undefined
   
   /**
     * The ID of the item.
     */
-  var Id: js.UndefOr[ChatItemId] = js.native
+  var Id: js.UndefOr[ChatItemId] = js.undefined
   
   /**
     * The ID of the sender in the session.
     */
-  var ParticipantId: js.UndefOr[typings.awsSdk.connectparticipantMod.ParticipantId] = js.native
+  var ParticipantId: js.UndefOr[typings.awsSdk.connectparticipantMod.ParticipantId] = js.undefined
   
   /**
     * The role of the sender. For example, is it a customer, agent, or system.
     */
-  var ParticipantRole: js.UndefOr[typings.awsSdk.connectparticipantMod.ParticipantRole] = js.native
+  var ParticipantRole: js.UndefOr[typings.awsSdk.connectparticipantMod.ParticipantRole] = js.undefined
   
   /**
     * Type of the item: message or event. 
     */
-  var Type: js.UndefOr[ChatItemType] = js.native
+  var Type: js.UndefOr[ChatItemType] = js.undefined
 }
 object Item {
   

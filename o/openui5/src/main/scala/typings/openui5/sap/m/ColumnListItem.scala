@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.VerticalAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnListItem extends ListItemBase {
+trait ColumnListItem
+  extends StObject
+     with ListItemBase {
   
   /**
     * Returns pop-in DOMRef as a jQuery Object

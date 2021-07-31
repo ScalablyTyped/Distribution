@@ -2,15 +2,13 @@ package typings.nwmatcher
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Document extends StObject {
     
-    var document: typings.std.Document = js.native
+    var document: typings.std.Document
   }
   object Document {
     

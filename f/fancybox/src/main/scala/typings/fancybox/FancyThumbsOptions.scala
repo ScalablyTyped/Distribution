@@ -4,31 +4,29 @@ import typings.fancybox.fancyboxStrings.x
 import typings.fancybox.fancyboxStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyThumbsOptions extends StObject {
   
   /**
     * Display thumbnails on opening
     */
-  var autoStart: js.UndefOr[Boolean] = js.native
+  var autoStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Vertical (y) or horizontal (x) scrolling
     */
-  var axis: js.UndefOr[x | y] = js.native
+  var axis: js.UndefOr[x | y] = js.undefined
   
   /**
     * Hide thumbnail grid when closing animation starts
     */
-  var hideOnClose: js.UndefOr[Boolean] = js.native
+  var hideOnClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Container is injected into this element
     */
-  var parentEl: js.UndefOr[String] = js.native
+  var parentEl: js.UndefOr[String] = js.undefined
 }
 object FancyThumbsOptions {
   

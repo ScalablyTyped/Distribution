@@ -3,17 +3,15 @@ package typings.protobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOneOf extends StObject {
   
   /** Oneof field names */
-  var oneof: js.Array[String] = js.native
+  var oneof: js.Array[String]
   
   /** Oneof options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object IOneOf {
   

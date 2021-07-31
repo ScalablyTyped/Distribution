@@ -2,46 +2,44 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStateMachineInput extends StObject {
   
   /**
     * The Amazon States Language definition of the state machine. See Amazon States Language.
     */
-  var definition: Definition = js.native
+  var definition: Definition
   
   /**
     * Defines what execution history events are logged and where they are logged.  By default, the level is set to OFF. For more information see Log Levels in the AWS Step Functions User Guide. 
     */
-  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
+  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.undefined
   
   /**
     * The name of the state machine.  A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
     */
-  var roleArn: Arn = js.native
+  var roleArn: Arn
   
   /**
     * Tags to be added when creating a state machine. An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide, and Controlling Access Using IAM Tags. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Selects whether AWS X-Ray tracing is enabled.
     */
-  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.native
+  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
   
   /**
     * Determines whether a Standard or Express state machine is created. The default is STANDARD. You cannot update the type of a state machine once it has been created.
     */
-  var `type`: js.UndefOr[StateMachineType] = js.native
+  var `type`: js.UndefOr[StateMachineType] = js.undefined
 }
 object CreateStateMachineInput {
   

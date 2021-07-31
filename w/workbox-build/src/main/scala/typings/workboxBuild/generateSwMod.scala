@@ -8,23 +8,24 @@ import typings.workboxBuild.typesMod.ManifestTransform
 import typings.workboxBuild.typesMod.RuntimeCachingEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateSwMod {
   
-  @JSImport("workbox-build/generate-sw", "generateSW")
+  @JSImport("workbox-build/generate-sw", JSImport.Namespace)
   @js.native
-  def generateSW(config: GenerateSWConfig): GenerateSWResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def generateSW(config: GenerateSWConfig): GenerateSWResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSW")(config.asInstanceOf[js.Any]).asInstanceOf[GenerateSWResult]
+  
   trait GenerateSWConfig extends StObject {
     
     /**
       * A list of entries to be precached, in addition to any entries that are
       * generated as part of the build configuration.
       */
-    var additionalManifestEntries: js.UndefOr[js.Array[ManifestEntry]] = js.native
+    var additionalManifestEntries: js.UndefOr[js.Array[ManifestEntry]] = js.undefined
     
     /**
       * The [targets](https://babeljs.io/docs/en/babel-preset-env#targets) to pass to
@@ -32,14 +33,14 @@ object generateSwMod {
       *
       * @default ['chrome >= 56']
       */
-    var babelPresetEnvTargets: js.UndefOr[js.Array[String]] = js.native
+    var babelPresetEnvTargets: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An optional ID to be prepended to cache names. This is primarily useful for
       * local development where multiple sites may be served from the same
       * `http://localhost:port` origin.
       */
-    var cacheId: js.UndefOr[String] = js.native
+    var cacheId: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not Workbox should attempt to identify an delete any precaches
@@ -47,7 +48,7 @@ object generateSwMod {
       *
       * @default false
       */
-    var cleanupOutdatedCaches: js.UndefOr[Boolean] = js.native
+    var cleanupOutdatedCaches: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the service worker should [start controlling](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#clientsclaim)
@@ -55,7 +56,7 @@ object generateSwMod {
       *
       * @default false
       */
-    var clientsClaim: js.UndefOr[Boolean] = js.native
+    var clientsClaim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If a navigation request for a URL ending in `/` fails to match a precached
@@ -65,7 +66,7 @@ object generateSwMod {
       *
       * @default 'index.html'
       */
-    var directoryIndex: js.UndefOr[String] = js.native
+    var directoryIndex: js.UndefOr[String] = js.undefined
     
     /**
       * Assets that match this will be assumed to be uniquely versioned via their
@@ -75,12 +76,12 @@ object generateSwMod {
       * you provide a RegExp that will detect that, as it will reduce the bandwidth
       * consumed when precaching.
       */
-    var dontCacheBustURLsMatching: js.UndefOr[RegExp] = js.native
+    var dontCacheBustURLsMatching: js.UndefOr[RegExp] = js.undefined
     
     /**
       * The local directory you wish to match `globPatterns` against. The path is relative to the current directory.
       */
-    var globDirectory: String = js.native
+    var globDirectory: String
     
     /**
       * Determines whether or not symlinks are followed when generating the precache
@@ -89,7 +90,7 @@ object generateSwMod {
       *
       * @default true
       */
-    var globFollow: js.UndefOr[Boolean] = js.native
+    var globFollow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A set of patterns matching files to always exclude when generating the
@@ -98,7 +99,7 @@ object generateSwMod {
       *
       * @default ['node_modules/ **']
       */
-    var globIgnores: js.UndefOr[js.Array[String]] = js.native
+    var globIgnores: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Files matching any of these patterns will be included in the precache
@@ -107,7 +108,7 @@ object generateSwMod {
       *
       * @default ['**.{js,css,html}']
       */
-    var globPatterns: js.UndefOr[js.Array[String]] = js.native
+    var globPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If true, an error reading a directory when generating a precache manifest
@@ -117,7 +118,7 @@ object generateSwMod {
       *
       * @default true
       */
-    var globStrict: js.UndefOr[Boolean] = js.native
+    var globStrict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Any search parameter names that match against one of the RegExp in this array
@@ -127,7 +128,7 @@ object generateSwMod {
       *
       * @default [/^utm_/]
       */
-    var ignoreURLParametersMatching: js.UndefOr[js.Array[RegExp]] = js.native
+    var ignoreURLParametersMatching: js.UndefOr[js.Array[RegExp]] = js.undefined
     
     /**
       * A list of JavaScript files that should be passed to [`importScripts()`](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/importScripts)
@@ -135,7 +136,7 @@ object generateSwMod {
       * let Workbox create your top-level service worker file, but want to include
       * some additional code, such as a push event listener.
       */
-    var importScripts: js.UndefOr[js.Array[String]] = js.native
+    var importScripts: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Whether the runtime code for the Workbox library should be included in the
@@ -145,14 +146,14 @@ object generateSwMod {
       *
       * @default false
       */
-    var inlineWorkboxRuntime: js.UndefOr[Boolean] = js.native
+    var inlineWorkboxRuntime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One or more functions which will be applied sequentially against the
       * generated manifest. If `modifyURLPrefix` or `dontCacheBustURLsMatching` are
       * also specified, their corresponding transformations will be applied first.
       */
-    var manifestTransforms: js.UndefOr[js.Array[ManifestTransform]] = js.native
+    var manifestTransforms: js.UndefOr[js.Array[ManifestTransform]] = js.undefined
     
     /**
       * This value can be used to determine the maximum size of files that will be
@@ -161,14 +162,14 @@ object generateSwMod {
       *
       * @default 2097152
       */
-    var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.native
+    var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to 'production', then an optimized service worker bundle that excludes
       * debugging info will be produced. If not explicitly configured here, the `mode`
       * value configured in the current `webpack` compiltion will be used.
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
     /**
       * A mapping of prefixes that, if present in an entry in the precache manifest,
@@ -178,7 +179,7 @@ object generateSwMod {
       * you can use the `manifestTransforms` option and provide a function that modifies
       * the entries in the manifest using whatever logic you provide.
       */
-    var modifyURLPrefix: js.UndefOr[StringDictionary[String]] = js.native
+    var modifyURLPrefix: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * If specified, all [navigation requests](https://developers.google.com/web/fundamentals/primers/service-workers/high-performance-loading#first_what_are_navigation_requests)
@@ -187,7 +188,7 @@ object generateSwMod {
       * precache manifest. This is meant to be used in a Single Page App scenario, in
       * which you want all navigations to use common [App Shell HTML](https://developers.google.com/web/fundamentals/architecture/app-shell).
       */
-    var navigateFallback: js.UndefOr[String] = js.native
+    var navigateFallback: js.UndefOr[String] = js.undefined
     
     /**
       * An optional array of regular expressions that restricts which URLs the configured
@@ -197,7 +198,7 @@ object generateSwMod {
       * both `navigateFallbackDenylist` and `navigateFallbackAllowlist` are
       * configured, the denylist takes precedent.
       */
-    var navigateFallbackAllowlist: js.UndefOr[js.Array[RegExp]] = js.native
+    var navigateFallbackAllowlist: js.UndefOr[js.Array[RegExp]] = js.undefined
     
     /**
       * An optional array of regular expressions that restricts which URLs the configured
@@ -207,7 +208,7 @@ object generateSwMod {
       * both `navigateFallbackDenylist` and `navigateFallbackAllowlist` are
       * configured, the denylist takes precedent.
       */
-    var navigateFallbackDenylist: js.UndefOr[js.Array[RegExp]] = js.native
+    var navigateFallbackDenylist: js.UndefOr[js.Array[RegExp]] = js.undefined
     
     /**
       * Whether or not to enable [navigation preload](https://developers.google.com/web/tools/workbox/modules/workbox-navigation-preload)
@@ -217,7 +218,7 @@ object generateSwMod {
       *
       * @default false
       */
-    var navigationPreload: js.UndefOr[Boolean] = js.native
+    var navigationPreload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls whether or not to include support for [offline Google Analytics](https://developers.google.com/web/tools/workbox/guides/enable-offline-analytics).
@@ -228,9 +229,9 @@ object generateSwMod {
       *
       * @default false
       */
-    var offlineGoogleAnalytics: js.UndefOr[Boolean | js.Object] = js.native
+    var offlineGoogleAnalytics: js.UndefOr[Boolean | js.Object] = js.undefined
     
-    var runtimeCaching: js.UndefOr[js.Array[RuntimeCachingEntry]] = js.native
+    var runtimeCaching: js.UndefOr[js.Array[RuntimeCachingEntry]] = js.undefined
     
     /**
       * Whether to add an unconditional call to [`skipWaiting()`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-core#.skipWaiting)
@@ -239,20 +240,20 @@ object generateSwMod {
       *
       * @default false
       */
-    var skipWaiting: js.UndefOr[Boolean] = js.native
+    var skipWaiting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to create a sourcemap for the generated service worker files.
       *
       * @default true
       */
-    var sourcemap: js.UndefOr[Boolean] = js.native
+    var sourcemap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path and filename of the service worker file that will be created by the
       * build process, relative to the current working directory. It must end in '.js'.
       */
-    var swDest: String = js.native
+    var swDest: String
     
     /**
       * If a URL is rendered based on some server-side logic, its contents may depend
@@ -263,7 +264,7 @@ object generateSwMod {
       * it will be interpreted as unique versioning information that you've generated
       * for a given URL.
       */
-    var templatedURLs: js.UndefOr[js.Object] = js.native
+    var templatedURLs: js.UndefOr[js.Object] = js.undefined
   }
   object GenerateSWConfig {
     

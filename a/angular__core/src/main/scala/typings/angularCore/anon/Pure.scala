@@ -3,20 +3,18 @@ package typings.angularCore.anon
 import typings.angularCore.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pure[T] extends StObject {
   
   /** Name of the pipe. Used for matching pipes in template to pipe defs. */
-  var name: String = js.native
+  var name: String
   
   /** Whether the pipe is pure. */
-  var pure: js.UndefOr[Boolean] = js.native
+  var pure: js.UndefOr[Boolean] = js.undefined
   
   /** Pipe class reference. Needed to extract pipe lifecycle hooks. */
-  var `type`: Type[T] = js.native
+  var `type`: Type[T]
 }
 object Pure {
   
@@ -28,7 +26,7 @@ object Pure {
   }
   
   @scala.inline
-  implicit class PureMutableBuilder[Self <: Pure[_], T] (val x: Self with Pure[T]) extends AnyVal {
+  implicit class PureMutableBuilder[Self <: Pure[?], T] (val x: Self & Pure[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

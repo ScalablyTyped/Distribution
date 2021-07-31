@@ -2,17 +2,15 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipboardContent extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val ClipboardContent: js.Any = js.native
+  val ClipboardContent: js.Any
   
-  val Target: typings.activexOutlook.Outlook.Folder = js.native
+  val Target: typings.activexOutlook.Outlook.Folder
 }
 object ClipboardContent {
   

@@ -2,29 +2,27 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of errors returned by a failed batch entry.
   */
-@js.native
 trait SchemaErrors extends StObject {
   
   /**
     * The HTTP status of the first error in errors.
     */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors.
     */
-  var errors: js.UndefOr[js.Array[SchemaError]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaError]] = js.undefined
   
   /**
     * The message of the first error in errors.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object SchemaErrors {
   

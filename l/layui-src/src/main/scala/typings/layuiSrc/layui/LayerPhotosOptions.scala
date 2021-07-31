@@ -4,17 +4,17 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerPhotosOptions extends LayerOptions {
+trait LayerPhotosOptions
+  extends StObject
+     with LayerOptions {
   
-  var photos: LayerPhotosData | String = js.native
+  var photos: LayerPhotosData | String
   
   var tab: js.UndefOr[
     js.Function2[/* pic */ LayerPhotosDataItem, /* layero */ JQuery[HTMLElement], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object LayerPhotosOptions {
   

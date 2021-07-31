@@ -10,9 +10,9 @@ JavaScript library for consuming Qlik backend services
 | ------------------ | :-------------: |
 | Full name          | enigma.js |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 10 |
-| # downloads        | 128284 |
+| # releases         | 10 |
+| # dependents       | 11 |
+| # downloads        | 153562 |
 | # stars            | 2 |
 
 ## Links

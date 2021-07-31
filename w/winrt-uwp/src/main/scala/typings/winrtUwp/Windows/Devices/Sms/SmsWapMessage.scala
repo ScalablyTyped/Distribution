@@ -5,48 +5,46 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an SMS WAP push message. */
-@js.native
 trait SmsWapMessage extends StObject {
   
   /** Gets the value of the X-Wap-Application-Id header of the SmsWapMessage . */
-  var applicationId: String = js.native
+  var applicationId: String
   
   /** Gets the binary body of the blob in the SmsWapMessage . */
-  var binaryBody: IBuffer = js.native
+  var binaryBody: IBuffer
   
   /** Gets the cellular class of the SMS device that received the message. */
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
   /** Gets the value of the Content-Type header in the SmsWapMessage . Parameters are presents in the Headers property. */
-  var contentType: String = js.native
+  var contentType: String
   
   /** Gets the device information ID of the SmsDevice that receives the SmsWapMessage . */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets the phone number of the sender of the SmsWapMessage . */
-  var from: String = js.native
+  var from: String
   
   /** Gets the header name-value pairs of the WAP push message. */
-  var headers: IMap[String, String] = js.native
+  var headers: IMap[String, String]
   
   /** Gets the message class of the SmsWapMessage . */
-  var messageClass: SmsMessageClass = js.native
+  var messageClass: SmsMessageClass
   
   /** Gets the message type of the SmsWapMessage . */
-  var messageType: SmsMessageType = js.native
+  var messageType: SmsMessageType
   
   /** Gets the ICCID (Integrated Circuit Card Identifier) of the SIM that received the message. */
-  var simIccId: String = js.native
+  var simIccId: String
   
   /** Gets the timestamp of the SmsWapMessage . */
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   /** Gets the recipient phone number of this SmsWapMessage . */
-  var to: String = js.native
+  var to: String
 }
 object SmsWapMessage {
   

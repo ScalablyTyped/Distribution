@@ -4,10 +4,13 @@ import typings.js2xmlparser.optionsMod.IOptions
 import typings.xmlcreate.mod.XmlElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("js2xmlparser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("js2xmlparser", "Absent")
   @js.native
@@ -26,17 +29,13 @@ object mod {
     def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("js2xmlparser", "parse")
-  @js.native
-  def parse(root: String, `object`: js.Any): String = js.native
-  @JSImport("js2xmlparser", "parse")
-  @js.native
-  def parse(root: String, `object`: js.Any, options: IOptions): String = js.native
+  @scala.inline
+  def parse(root: String, `object`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(root.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parse(root: String, `object`: js.Any, options: IOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(root.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("js2xmlparser", "parseToExistingElement")
-  @js.native
-  def parseToExistingElement(element: XmlElement[_], `object`: js.Any): Unit = js.native
-  @JSImport("js2xmlparser", "parseToExistingElement")
-  @js.native
-  def parseToExistingElement(element: XmlElement[_], `object`: js.Any, options: IOptions): Unit = js.native
+  @scala.inline
+  def parseToExistingElement(element: XmlElement[js.Any], `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseToExistingElement")(element.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parseToExistingElement(element: XmlElement[js.Any], `object`: js.Any, options: IOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseToExistingElement")(element.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

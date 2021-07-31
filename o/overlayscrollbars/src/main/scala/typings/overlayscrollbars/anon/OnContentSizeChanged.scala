@@ -9,35 +9,33 @@ import typings.overlayscrollbars.mod.SizeChangedCallback
 import typings.overlayscrollbars.mod.UpdatedCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnContentSizeChanged extends StObject {
   
-  var onContentSizeChanged: js.UndefOr[SizeChangedCallback | Null] = js.native
+  var onContentSizeChanged: js.UndefOr[SizeChangedCallback | Null] = js.undefined
   
-  var onDestroyed: js.UndefOr[BasicEventCallback | Null] = js.native
+  var onDestroyed: js.UndefOr[BasicEventCallback | Null] = js.undefined
   
-  var onDirectionChanged: js.UndefOr[DirectionChangedCallback | Null] = js.native
+  var onDirectionChanged: js.UndefOr[DirectionChangedCallback | Null] = js.undefined
   
-  var onHostSizeChanged: js.UndefOr[SizeChangedCallback | Null] = js.native
+  var onHostSizeChanged: js.UndefOr[SizeChangedCallback | Null] = js.undefined
   
-  var onInitializationWithdrawn: js.UndefOr[BasicEventCallback | Null] = js.native
+  var onInitializationWithdrawn: js.UndefOr[BasicEventCallback | Null] = js.undefined
   
-  var onInitialized: js.UndefOr[BasicEventCallback | Null] = js.native
+  var onInitialized: js.UndefOr[BasicEventCallback | Null] = js.undefined
   
-  var onOverflowAmountChanged: js.UndefOr[OverflowAmountChangedCallback | Null] = js.native
+  var onOverflowAmountChanged: js.UndefOr[OverflowAmountChangedCallback | Null] = js.undefined
   
-  var onOverflowChanged: js.UndefOr[OverflowChangedCallback | Null] = js.native
+  var onOverflowChanged: js.UndefOr[OverflowChangedCallback | Null] = js.undefined
   
-  var onScroll: js.UndefOr[ScrollEventCallback | Null] = js.native
+  var onScroll: js.UndefOr[ScrollEventCallback | Null] = js.undefined
   
-  var onScrollStart: js.UndefOr[ScrollEventCallback | Null] = js.native
+  var onScrollStart: js.UndefOr[ScrollEventCallback | Null] = js.undefined
   
-  var onScrollStop: js.UndefOr[ScrollEventCallback | Null] = js.native
+  var onScrollStop: js.UndefOr[ScrollEventCallback | Null] = js.undefined
   
-  var onUpdated: js.UndefOr[UpdatedCallback | Null] = js.native
+  var onUpdated: js.UndefOr[UpdatedCallback | Null] = js.undefined
 }
 object OnContentSizeChanged {
   

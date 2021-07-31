@@ -8,61 +8,56 @@ import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterMod {
   
-  @JSImport("gulp-typescript/release/reporter", "countErrors")
+  @JSImport("gulp-typescript/release/reporter", JSImport.Namespace)
   @js.native
-  def countErrors(results: CompilationResult): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gulp-typescript/release/reporter", "defaultReporter")
-  @js.native
-  def defaultReporter(): Reporter = js.native
+  @scala.inline
+  def countErrors(results: CompilationResult): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countErrors")(results.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("gulp-typescript/release/reporter", "emptyCompilationResult")
-  @js.native
-  def emptyCompilationResult(noEmit: Boolean): CompilationResult = js.native
+  @scala.inline
+  def defaultReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReporter")().asInstanceOf[Reporter]
   
-  @JSImport("gulp-typescript/release/reporter", "fullReporter")
-  @js.native
-  def fullReporter(): Reporter = js.native
-  @JSImport("gulp-typescript/release/reporter", "fullReporter")
-  @js.native
-  def fullReporter(fullFilename: Boolean): Reporter = js.native
+  @scala.inline
+  def emptyCompilationResult(noEmit: Boolean): CompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyCompilationResult")(noEmit.asInstanceOf[js.Any]).asInstanceOf[CompilationResult]
   
-  @JSImport("gulp-typescript/release/reporter", "longReporter")
-  @js.native
-  def longReporter(): Reporter = js.native
+  @scala.inline
+  def fullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")().asInstanceOf[Reporter]
+  @scala.inline
+  def fullReporter(fullFilename: Boolean): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")(fullFilename.asInstanceOf[js.Any]).asInstanceOf[Reporter]
   
-  @JSImport("gulp-typescript/release/reporter", "nullReporter")
-  @js.native
-  def nullReporter(): Reporter = js.native
+  @scala.inline
+  def longReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("longReporter")().asInstanceOf[Reporter]
   
-  @js.native
+  @scala.inline
+  def nullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("nullReporter")().asInstanceOf[Reporter]
+  
   trait CompilationResult extends StObject {
     
-    var declarationErrors: Double = js.native
+    var declarationErrors: Double
     
-    var emitErrors: Double = js.native
+    var emitErrors: Double
     
-    var emitSkipped: Boolean = js.native
+    var emitSkipped: Boolean
     
-    var globalErrors: Double = js.native
+    var globalErrors: Double
     
-    var noEmit: Boolean = js.native
+    var noEmit: Boolean
     
-    var optionsErrors: Double = js.native
+    var optionsErrors: Double
     
-    var semanticErrors: Double = js.native
+    var semanticErrors: Double
     
-    var syntaxErrors: Double = js.native
+    var syntaxErrors: Double
     
     /**
       * Only used when using isolatedModules.
       */
-    var transpileErrors: Double = js.native
+    var transpileErrors: Double
   }
   object CompilationResult {
     
@@ -114,12 +109,11 @@ object reporterMod {
     }
   }
   
-  @js.native
   trait Reporter extends StObject {
     
-    var error: js.UndefOr[js.Function2[/* error */ TypeScriptError, /* typescript */ Typeofts, Unit]] = js.native
+    var error: js.UndefOr[js.Function2[/* error */ TypeScriptError, /* typescript */ Typeofts, Unit]] = js.undefined
     
-    var finish: js.UndefOr[js.Function1[/* results */ CompilationResult, Unit]] = js.native
+    var finish: js.UndefOr[js.Function1[/* results */ CompilationResult, Unit]] = js.undefined
   }
   object Reporter {
     
@@ -146,22 +140,23 @@ object reporterMod {
     }
   }
   
-  @js.native
-  trait TypeScriptError extends Error {
+  trait TypeScriptError
+    extends StObject
+       with Error {
     
-    var diagnostic: Diagnostic = js.native
+    var diagnostic: Diagnostic
     
-    var endPosition: js.UndefOr[Character] = js.native
+    var endPosition: js.UndefOr[Character] = js.undefined
     
-    var file: js.UndefOr[VinylFile] = js.native
+    var file: js.UndefOr[VinylFile] = js.undefined
     
-    var fullFilename: js.UndefOr[String] = js.native
+    var fullFilename: js.UndefOr[String] = js.undefined
     
-    var relativeFilename: js.UndefOr[String] = js.native
+    var relativeFilename: js.UndefOr[String] = js.undefined
     
-    var startPosition: js.UndefOr[Character] = js.native
+    var startPosition: js.UndefOr[Character] = js.undefined
     
-    var tsFile: js.UndefOr[SourceFile] = js.native
+    var tsFile: js.UndefOr[SourceFile] = js.undefined
   }
   object TypeScriptError {
     

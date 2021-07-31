@@ -2,46 +2,44 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclLoggingConfigurationRedactedField extends StObject {
   
   /**
     * Redact all query arguments.
     */
-  var allQueryArguments: js.UndefOr[WebAclLoggingConfigurationRedactedFieldAllQueryArguments] = js.native
+  var allQueryArguments: js.UndefOr[WebAclLoggingConfigurationRedactedFieldAllQueryArguments] = js.undefined
   
   /**
     * Redact the request body, which immediately follows the request headers.
     */
-  var body: js.UndefOr[WebAclLoggingConfigurationRedactedFieldBody] = js.native
+  var body: js.UndefOr[WebAclLoggingConfigurationRedactedFieldBody] = js.undefined
   
   /**
     * Redact the HTTP method. The method indicates the type of operation that the request is asking the origin to perform.
     */
-  var method: js.UndefOr[WebAclLoggingConfigurationRedactedFieldMethod] = js.native
+  var method: js.UndefOr[WebAclLoggingConfigurationRedactedFieldMethod] = js.undefined
   
   /**
     * Redact the query string. This is the part of a URL that appears after a `?` character, if any.
     */
-  var queryString: js.UndefOr[WebAclLoggingConfigurationRedactedFieldQueryString] = js.native
+  var queryString: js.UndefOr[WebAclLoggingConfigurationRedactedFieldQueryString] = js.undefined
   
   /**
     * Redact a single header. See Single Header below for details.
     */
-  var singleHeader: js.UndefOr[WebAclLoggingConfigurationRedactedFieldSingleHeader] = js.native
+  var singleHeader: js.UndefOr[WebAclLoggingConfigurationRedactedFieldSingleHeader] = js.undefined
   
   /**
     * Redact a single query argument. See Single Query Argument below for details.
     */
-  var singleQueryArgument: js.UndefOr[WebAclLoggingConfigurationRedactedFieldSingleQueryArgument] = js.native
+  var singleQueryArgument: js.UndefOr[WebAclLoggingConfigurationRedactedFieldSingleQueryArgument] = js.undefined
   
   /**
     * Redact the request URI path. This is the part of a web request that identifies a resource, for example, `/images/daily-ad.jpg`.
     */
-  var uriPath: js.UndefOr[WebAclLoggingConfigurationRedactedFieldUriPath] = js.native
+  var uriPath: js.UndefOr[WebAclLoggingConfigurationRedactedFieldUriPath] = js.undefined
 }
 object WebAclLoggingConfigurationRedactedField {
   

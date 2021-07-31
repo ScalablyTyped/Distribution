@@ -3,21 +3,21 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is passed to an {@link InteractionHandler} when creating a stratum backend fails.
   * @since OOo 2.0
   */
-@js.native
-trait StratumCreationException extends BackendSetupException {
+trait StratumCreationException
+  extends StObject
+     with BackendSetupException {
   
   /** Initialization data passed to the stratum instance. */
-  var StratumData: String = js.native
+  var StratumData: String
   
   /** Identifier of the stratum service that could not be created. */
-  var StratumService: String = js.native
+  var StratumService: String
 }
 object StratumCreationException {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDatastoreAdminV1EntityFilter extends StObject {
   
   /** If empty, then this represents all kinds. */
-  var kinds: js.UndefOr[js.Array[String]] = js.native
+  var kinds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An empty list represents all namespaces. This is the preferred usage for projects that don't use namespaces. An empty string element represents the default namespace. This should be
     * used if the project has data in non-default namespaces, but doesn't want to include them. Each namespace in this list must be unique.
     */
-  var namespaceIds: js.UndefOr[js.Array[String]] = js.native
+  var namespaceIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleDatastoreAdminV1EntityFilter {
   

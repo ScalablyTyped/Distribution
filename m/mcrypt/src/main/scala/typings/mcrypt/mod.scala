@@ -3,10 +3,13 @@ package typings.mcrypt
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mcrypt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mcrypt", "MCrypt")
   @js.native
@@ -54,11 +57,9 @@ object mod {
     def validateKeySize(validate: Boolean): Unit = js.native
   }
   
-  @JSImport("mcrypt", "getAlgorithmNames")
-  @js.native
-  def getAlgorithmNames(): js.Array[String] = js.native
+  @scala.inline
+  def getAlgorithmNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlgorithmNames")().asInstanceOf[js.Array[String]]
   
-  @JSImport("mcrypt", "getModeNames")
-  @js.native
-  def getModeNames(): js.Array[String] = js.native
+  @scala.inline
+  def getModeNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModeNames")().asInstanceOf[js.Array[String]]
 }

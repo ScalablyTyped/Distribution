@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,17 +17,27 @@ sealed trait ChartMapProjectionType extends StObject
 object ChartMapProjectionType extends StObject {
   
   @js.native
-  sealed trait albers extends ChartMapProjectionType
+  sealed trait albers
+    extends StObject
+       with ChartMapProjectionType
   
   @js.native
-  sealed trait automatic extends ChartMapProjectionType
+  sealed trait automatic
+    extends StObject
+       with ChartMapProjectionType
   
   @js.native
-  sealed trait mercator extends ChartMapProjectionType
+  sealed trait mercator
+    extends StObject
+       with ChartMapProjectionType
   
   @js.native
-  sealed trait miller extends ChartMapProjectionType
+  sealed trait miller
+    extends StObject
+       with ChartMapProjectionType
   
   @js.native
-  sealed trait robinson extends ChartMapProjectionType
+  sealed trait robinson
+    extends StObject
+       with ChartMapProjectionType
 }

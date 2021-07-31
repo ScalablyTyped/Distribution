@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDistributionsByCachePolicyIdRequest extends StObject {
   
   /**
     * The ID of the cache policy whose associated distribution IDs you want to list.
     */
-  var CachePolicyId: String = js.native
+  var CachePolicyId: String
   
   /**
     * Use this field when paginating results to indicate where to begin in your list of distribution IDs. The response includes distribution IDs in the list that occur after the marker. To get the next page of the list, set this field’s value to the value of NextMarker from the current page’s response.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of distribution IDs that you want in the response.
     */
-  var MaxItems: js.UndefOr[String] = js.native
+  var MaxItems: js.UndefOr[String] = js.undefined
 }
 object ListDistributionsByCachePolicyIdRequest {
   

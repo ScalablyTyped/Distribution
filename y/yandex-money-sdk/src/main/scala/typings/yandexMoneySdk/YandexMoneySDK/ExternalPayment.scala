@@ -5,19 +5,17 @@ import typings.yandexMoneySdk.anon.Dictkey
 import typings.yandexMoneySdk.anon.Moneysourcetoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ExternalPayment {
   
-  @js.native
   trait GetInstanceIdResult extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var instance_id: js.UndefOr[String] = js.native
+    var instance_id: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object GetInstanceIdResult {
     
@@ -47,21 +45,20 @@ object ExternalPayment {
     }
   }
   
-  @js.native
   trait ProcessOptions extends StObject {
     
-    var csc: js.UndefOr[String] = js.native
+    var csc: js.UndefOr[String] = js.undefined
     
-    var ext_auth_fail_uri: String = js.native
+    var ext_auth_fail_uri: String
     
     // instance_id: string; // the method always overwrites this value
-    var ext_auth_success_uri: String = js.native
+    var ext_auth_success_uri: String
     
-    var money_source_token: js.UndefOr[String] = js.native
+    var money_source_token: js.UndefOr[String] = js.undefined
     
-    var request_id: String = js.native
+    var request_id: String
     
-    var request_token: js.UndefOr[Boolean] = js.native
+    var request_token: js.UndefOr[Boolean] = js.undefined
   }
   object ProcessOptions {
     
@@ -103,22 +100,21 @@ object ExternalPayment {
     }
   }
   
-  @js.native
   trait ProcessResult extends StObject {
     
-    var acs_params: js.UndefOr[Dictkey] = js.native
+    var acs_params: js.UndefOr[Dictkey] = js.undefined
     
-    var acs_uri: js.UndefOr[String] = js.native
+    var acs_uri: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var invoice_id: js.UndefOr[String] = js.native
+    var invoice_id: js.UndefOr[String] = js.undefined
     
-    var money_source: js.UndefOr[Moneysourcetoken] = js.native
+    var money_source: js.UndefOr[Moneysourcetoken] = js.undefined
     
-    var next_retry: js.UndefOr[Double] = js.native
+    var next_retry: js.UndefOr[Double] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object ProcessResult {
     
@@ -172,20 +168,20 @@ object ExternalPayment {
     }
   }
   
-  @js.native
   trait RequestOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
-    var amount_due: js.UndefOr[Double] = js.native
+    var amount_due: js.UndefOr[Double] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var pattern_id: String = js.native
+    var pattern_id: String
     
     // instance_id: string; // the method always overwrites this value
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object RequestOptions {
     
@@ -227,18 +223,17 @@ object ExternalPayment {
     }
   }
   
-  @js.native
   trait RequestResult extends StObject {
     
-    var contract_amount: js.UndefOr[Double] = js.native
+    var contract_amount: js.UndefOr[Double] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var request_id: js.UndefOr[String] = js.native
+    var request_id: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object RequestResult {
     

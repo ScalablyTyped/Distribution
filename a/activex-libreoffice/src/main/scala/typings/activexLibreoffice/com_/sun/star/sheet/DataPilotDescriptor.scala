@@ -11,61 +11,60 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents the description of the layout of a data pilot table.
   * @see com.sun.star.sheet.DataPilotTable
   */
-@js.native
 trait DataPilotDescriptor
-  extends XDataPilotDescriptor
+  extends StObject
+     with XDataPilotDescriptor
      with XPropertySet
      with XDataPilotDataLayoutFieldSupplier {
   
   /** specifies if columns for grand total results are created. */
-  var ColumnGrand: Boolean = js.native
+  var ColumnGrand: Boolean
   
   /** specifies whether to drill down to details or go into edit mode. */
-  var DrillDownOnDoubleClick: Boolean = js.native
+  var DrillDownOnDoubleClick: Boolean
   
   /**
     * specifies a label for grand total results.
     * @since OOo 3.4
     */
-  var GrandTotalName: String = js.native
+  var GrandTotalName: String
   
   /** specifies if empty rows in the source data are ignored. */
-  var IgnoreEmptyRows: Boolean = js.native
+  var IgnoreEmptyRows: Boolean
   
   /**
     * specifies parameters to create the data pilot table from a database.
     * @see DatabaseImportDescriptor
     * @since OOo 3.3
     */
-  var ImportDescriptor: SafeArray[PropertyValue] = js.native
+  var ImportDescriptor: SafeArray[PropertyValue]
   
   /** specifies if empty category cells in the source data should be treated as repetition of the content from the previous row. */
-  var RepeatIfEmpty: Boolean = js.native
+  var RepeatIfEmpty: Boolean
   
   /** specifies if rows for grand total results are created. */
-  var RowGrand: Boolean = js.native
+  var RowGrand: Boolean
   
   /**
     * specifies arguments that are passed to the implementation named by {@link SourceServiceName} .
     * @since OOo 3.3
     */
-  var ServiceArguments: SafeArray[PropertyValue] = js.native
+  var ServiceArguments: SafeArray[PropertyValue]
   
   /** specifies whether the filter button is shown. */
-  var ShowFilterButton: Boolean = js.native
+  var ShowFilterButton: Boolean
   
   /**
     * specifies the name of a {@link DataPilotSource} implementation for the data pilot table.
     * @since OOo 3.3
     */
-  var SourceServiceName: String = js.native
+  var SourceServiceName: String
 }
 object DataPilotDescriptor {
   

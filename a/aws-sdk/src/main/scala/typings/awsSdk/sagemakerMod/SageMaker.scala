@@ -19,7 +19,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,7 +50,7 @@ trait SageMaker extends Service {
   ): Request[AssociateTrialComponentResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_SageMaker: ConfigBase with ClientConfiguration = js.native
+  var config_SageMaker: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Create a machine learning algorithm that you can use in Amazon SageMaker and list in the AWS Marketplace.

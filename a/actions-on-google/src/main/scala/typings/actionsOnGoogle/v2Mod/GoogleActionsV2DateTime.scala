@@ -3,21 +3,21 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.argumentArgumentMod._Argument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoogleActionsV2DateTime extends _Argument {
+trait GoogleActionsV2DateTime
+  extends StObject
+     with _Argument {
   
   /**
     * Date value
     */
-  var date: js.UndefOr[GoogleTypeDate] = js.native
+  var date: js.UndefOr[GoogleTypeDate] = js.undefined
   
   /**
     * Time value
     */
-  var time: js.UndefOr[GoogleTypeTimeOfDay] = js.native
+  var time: js.UndefOr[GoogleTypeTimeOfDay] = js.undefined
 }
 object GoogleActionsV2DateTime {
   

@@ -44,7 +44,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupPopupMod extends Shortcut {
@@ -66,14 +65,13 @@ object popupPopupMod extends Shortcut {
     js.Tuple2[js.UndefOr[Double], js.UndefOr[Double]]
   ]
   
-  @js.native
   trait PopperOffsetsFunctionParams extends StObject {
     
-    var placement: Placement = js.native
+    var placement: Placement
     
-    var popper: Rect = js.native
+    var popper: Rect
     
-    var reference: Rect = js.native
+    var reference: Rect
   }
   object PopperOffsetsFunctionParams {
     
@@ -98,16 +96,18 @@ object popupPopupMod extends Shortcut {
   }
   
   @js.native
-  trait PopupComponent extends ComponentClass[PopupProps, ComponentState] {
+  trait PopupComponent
+    extends StObject
+       with ComponentClass[PopupProps, ComponentState] {
     
     var Content: StatelessComponent[PopupContentProps] = js.native
     
     var Header: StatelessComponent[PopupHeaderProps] = js.native
   }
   
-  @js.native
   trait PopupProps
-    extends StrictPopupProps
+    extends StObject
+       with StrictPopupProps
        with /* key */ StringDictionary[js.Any]
   object PopupProps {
     
@@ -118,44 +118,45 @@ object popupPopupMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StrictPopupProps extends StrictPortalProps {
+  trait StrictPopupProps
+    extends StObject
+       with StrictPortalProps {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Display the popup without the pointing arrow */
-    var basic: js.UndefOr[Boolean] = js.native
+    var basic: js.UndefOr[Boolean] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Simple text content for the popover. */
-    var content: js.UndefOr[SemanticShorthandItem[PopupContentProps]] = js.native
+    var content: js.UndefOr[SemanticShorthandItem[PopupContentProps]] = js.undefined
     
     /** Existing element the pop-up should be bound to. */
-    var context: js.UndefOr[Document | Window | HTMLElement | RefObject[HTMLElement]] = js.native
+    var context: js.UndefOr[Document | Window | HTMLElement | RefObject[HTMLElement]] = js.undefined
     
     /** A disabled popup only renders its trigger. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the Popper.js event listeners. */
-    var eventsEnabled: js.UndefOr[Boolean] = js.native
+    var eventsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** A flowing Popup has no maximum width and continues to flow to fit its content. */
-    var flowing: js.UndefOr[Boolean] = js.native
+    var flowing: js.UndefOr[Boolean] = js.undefined
     
     /** Header displayed above the content in bold. */
-    var header: js.UndefOr[SemanticShorthandItem[PopupHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[PopupHeaderProps]] = js.undefined
     
     /** Hide the Popup when scrolling the window. */
-    var hideOnScroll: js.UndefOr[Boolean] = js.native
+    var hideOnScroll: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the popup should not close on hover. */
-    var hoverable: js.UndefOr[Boolean] = js.native
+    var hoverable: js.UndefOr[Boolean] = js.undefined
     
     /** Invert the colors of the popup */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Offset values in px unit to apply to rendered popup. The basic offset accepts an
@@ -165,10 +166,10 @@ object popupPopupMod extends Shortcut {
       *
       * @see https://popper.js.org/docs/v2/modifiers/offset/
       */
-    var offset: js.UndefOr[(js.Tuple2[Double, js.UndefOr[Double]]) | PopperOffsetsFunction] = js.native
+    var offset: js.UndefOr[(js.Tuple2[Double, js.UndefOr[Double]]) | PopperOffsetsFunction] = js.undefined
     
     /** Events triggering the popup. */
-    var on: js.UndefOr[hover | click | focus | (js.Array[hover | click | focus])] = js.native
+    var on: js.UndefOr[hover | click | focus | (js.Array[hover | click | focus])] = js.undefined
     
     /**
       * Called when a close event happens.
@@ -179,7 +180,7 @@ object popupPopupMod extends Shortcut {
     @JSName("onClose")
     var onClose_StrictPopupProps: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the portal is mounted on the DOM.
@@ -188,7 +189,7 @@ object popupPopupMod extends Shortcut {
       * @param {object} data - All props.
       */
     @JSName("onMount")
-    var onMount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.native
+    var onMount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.undefined
     
     /**
       * Called when an open event happens.
@@ -199,7 +200,7 @@ object popupPopupMod extends Shortcut {
     @JSName("onOpen")
     var onOpen_StrictPopupProps: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the portal is unmounted from the DOM.
@@ -208,36 +209,36 @@ object popupPopupMod extends Shortcut {
       * @param {object} data - All props.
       */
     @JSName("onUnmount")
-    var onUnmount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.native
+    var onUnmount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.undefined
     
     /** Disables automatic repositioning of the component, it will always be placed according to the position value. */
-    var pinned: js.UndefOr[Boolean] = js.native
+    var pinned: js.UndefOr[Boolean] = js.undefined
     
     /** A wrapping element for an actual content that will be used for positioning. */
-    var popper: js.UndefOr[SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]] = js.native
+    var popper: js.UndefOr[SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]] = js.undefined
     
     /** A popup can have dependencies which update will schedule a position update. */
-    var popperDependencies: js.UndefOr[js.Array[_]] = js.native
+    var popperDependencies: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** An array containing custom settings for the Popper.js modifiers. */
-    var popperModifiers: js.UndefOr[js.Array[_]] = js.native
+    var popperModifiers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Position for the popover. */
     var position: js.UndefOr[
         (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
-      ] = js.native
+      ] = js.undefined
     
     /** Tells `Popper.js` to use the `position: fixed` strategy to position the popover. */
-    var positionFixed: js.UndefOr[Boolean] = js.native
+    var positionFixed: js.UndefOr[Boolean] = js.undefined
     
     /** Popup size. */
-    var size: js.UndefOr[mini | tiny | small | large | huge] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | huge] = js.undefined
     
     /** Custom Popup style. */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** Popup width. */
-    var wide: js.UndefOr[Boolean | very] = js.native
+    var wide: js.UndefOr[Boolean | very] = js.undefined
   }
   object StrictPopupProps {
     
@@ -386,7 +387,7 @@ object popupPopupMod extends Shortcut {
       def setPopper(value: SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPopperDependencies(value: js.Array[_]): Self = StObject.set(x, "popperDependencies", value.asInstanceOf[js.Any])
+      def setPopperDependencies(value: js.Array[js.Any]): Self = StObject.set(x, "popperDependencies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPopperDependenciesUndefined: Self = StObject.set(x, "popperDependencies", js.undefined)
@@ -400,7 +401,7 @@ object popupPopupMod extends Shortcut {
       ): Self = StObject.set(x, "popper", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setPopperModifiers(value: js.Array[_]): Self = StObject.set(x, "popperModifiers", value.asInstanceOf[js.Any])
+      def setPopperModifiers(value: js.Array[js.Any]): Self = StObject.set(x, "popperModifiers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPopperModifiersUndefined: Self = StObject.set(x, "popperModifiers", js.undefined)

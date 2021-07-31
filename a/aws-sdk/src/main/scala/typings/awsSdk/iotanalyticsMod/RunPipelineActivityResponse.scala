@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunPipelineActivityResponse extends StObject {
   
   /**
     * In case the pipeline activity fails, the log message that is generated.
     */
-  var logResult: js.UndefOr[LogResult] = js.native
+  var logResult: js.UndefOr[LogResult] = js.undefined
   
   /**
     * The enriched or transformed sample message payloads as base64-encoded strings. (The results of running the pipeline activity on each input sample message payload, encoded in base64.)
     */
-  var payloads: js.UndefOr[MessagePayloads] = js.native
+  var payloads: js.UndefOr[MessagePayloads] = js.undefined
 }
 object RunPipelineActivityResponse {
   

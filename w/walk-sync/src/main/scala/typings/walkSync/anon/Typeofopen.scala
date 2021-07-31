@@ -6,7 +6,6 @@ import typings.node.fsMod.OpenMode
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,13 +19,19 @@ trait Typeofopen extends StObject {
   def apply(
     path: PathLike,
     flags: OpenMode,
-    mode: js.UndefOr[Mode],
-    callback: js.Function2[ErrnoException | Null, /* fd */ Double, Unit]
+    mode: Null,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     flags: OpenMode,
-    mode: Null,
+    mode: Unit,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    flags: OpenMode,
+    mode: Mode,
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
 }

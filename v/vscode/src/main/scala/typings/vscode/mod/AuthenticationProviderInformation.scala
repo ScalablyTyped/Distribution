@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationProviderInformation extends StObject {
   
   /**
     * The unique identifier of the authentication provider.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The human-readable name of the authentication provider.
     */
-  val label: String = js.native
+  val label: String
 }
 object AuthenticationProviderInformation {
   

@@ -2,15 +2,13 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConstraintOptions extends StObject {
   
-  var collideConnected: js.UndefOr[Boolean] = js.native
+  var collideConnected: js.UndefOr[Boolean] = js.undefined
   
-  var wakeUpBodies: js.UndefOr[Boolean] = js.native
+  var wakeUpBodies: js.UndefOr[Boolean] = js.undefined
 }
 object IConstraintOptions {
   

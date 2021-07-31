@@ -3,120 +3,118 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineRecord extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The change ID.
     */
-  var changeId: Double = js.native
+  var changeId: Double
   
   /**
     * A string that indicates the current operation.
     */
-  var currentOperation: String = js.native
+  var currentOperation: String
   
   /**
     * A reference to a sub-timeline.
     */
-  var details: TimelineReference = js.native
+  var details: TimelineReference
   
   /**
     * The number of errors produced by this operation.
     */
-  var errorCount: Double = js.native
+  var errorCount: Double
   
   /**
     * The finish time.
     */
-  var finishTime: Date = js.native
+  var finishTime: Date
   
   /**
     * The ID of the record.
     */
-  var id: String = js.native
+  var id: String
   
-  var issues: js.Array[Issue] = js.native
+  var issues: js.Array[Issue]
   
   /**
     * The time the record was last modified.
     */
-  var lastModified: Date = js.native
+  var lastModified: Date
   
   /**
     * A reference to the log produced by this operation.
     */
-  var log: BuildLogReference = js.native
+  var log: BuildLogReference
   
   /**
     * The name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * An ordinal value relative to other records.
     */
-  var order: Double = js.native
+  var order: Double
   
   /**
     * The ID of the record's parent.
     */
-  var parentId: String = js.native
+  var parentId: String
   
   /**
     * The current completion percentage.
     */
-  var percentComplete: Double = js.native
+  var percentComplete: Double
   
   /**
     * The result.
     */
-  var result: TaskResult = js.native
+  var result: TaskResult
   
   /**
     * The result code.
     */
-  var resultCode: String = js.native
+  var resultCode: String
   
   /**
     * The start time.
     */
-  var startTime: Date = js.native
+  var startTime: Date
   
   /**
     * The state of the record.
     */
-  var state: TimelineRecordState = js.native
+  var state: TimelineRecordState
   
   /**
     * A reference to the task represented by this timeline record.
     */
-  var task: TaskReference = js.native
+  var task: TaskReference
   
   /**
     * The type of the record.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The REST URL of the timeline record.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * The number of warnings produced by this operation.
     */
-  var warningCount: Double = js.native
+  var warningCount: Double
   
   /**
     * The name of the agent running the operation.
     */
-  var workerName: String = js.native
+  var workerName: String
 }
 object TimelineRecord {
   

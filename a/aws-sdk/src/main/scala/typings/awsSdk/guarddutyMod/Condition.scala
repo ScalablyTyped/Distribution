@@ -2,71 +2,69 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
   /**
     * Represents the equal condition to be applied to a single field when querying for findings.
     */
-  var Eq: js.UndefOr[typings.awsSdk.guarddutyMod.Eq] = js.native
+  var Eq: js.UndefOr[typings.awsSdk.guarddutyMod.Eq] = js.undefined
   
   /**
     * Represents an equal  condition to be applied to a single field when querying for findings.
     */
-  var Equals: js.UndefOr[typings.awsSdk.guarddutyMod.Equals] = js.native
+  var Equals: js.UndefOr[typings.awsSdk.guarddutyMod.Equals] = js.undefined
   
   /**
     * Represents a greater than condition to be applied to a single field when querying for findings.
     */
-  var GreaterThan: js.UndefOr[Long] = js.native
+  var GreaterThan: js.UndefOr[Long] = js.undefined
   
   /**
     * Represents a greater than or equal condition to be applied to a single field when querying for findings.
     */
-  var GreaterThanOrEqual: js.UndefOr[Long] = js.native
+  var GreaterThanOrEqual: js.UndefOr[Long] = js.undefined
   
   /**
     * Represents a greater than condition to be applied to a single field when querying for findings.
     */
-  var Gt: js.UndefOr[Integer] = js.native
+  var Gt: js.UndefOr[Integer] = js.undefined
   
   /**
     * Represents a greater than or equal condition to be applied to a single field when querying for findings.
     */
-  var Gte: js.UndefOr[Integer] = js.native
+  var Gte: js.UndefOr[Integer] = js.undefined
   
   /**
     * Represents a less than condition to be applied to a single field when querying for findings.
     */
-  var LessThan: js.UndefOr[Long] = js.native
+  var LessThan: js.UndefOr[Long] = js.undefined
   
   /**
     * Represents a less than or equal condition to be applied to a single field when querying for findings.
     */
-  var LessThanOrEqual: js.UndefOr[Long] = js.native
+  var LessThanOrEqual: js.UndefOr[Long] = js.undefined
   
   /**
     * Represents a less than condition to be applied to a single field when querying for findings.
     */
-  var Lt: js.UndefOr[Integer] = js.native
+  var Lt: js.UndefOr[Integer] = js.undefined
   
   /**
     * Represents a less than or equal condition to be applied to a single field when querying for findings.
     */
-  var Lte: js.UndefOr[Integer] = js.native
+  var Lte: js.UndefOr[Integer] = js.undefined
   
   /**
     * Represents the not equal condition to be applied to a single field when querying for findings.
     */
-  var Neq: js.UndefOr[typings.awsSdk.guarddutyMod.Neq] = js.native
+  var Neq: js.UndefOr[typings.awsSdk.guarddutyMod.Neq] = js.undefined
   
   /**
     * Represents a not equal  condition to be applied to a single field when querying for findings.
     */
-  var NotEquals: js.UndefOr[typings.awsSdk.guarddutyMod.NotEquals] = js.native
+  var NotEquals: js.UndefOr[typings.awsSdk.guarddutyMod.NotEquals] = js.undefined
 }
 object Condition {
   

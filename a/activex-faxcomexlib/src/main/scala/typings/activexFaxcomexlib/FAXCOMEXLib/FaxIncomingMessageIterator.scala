@@ -2,30 +2,28 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxIncomingMessageIterator Class */
-@js.native
 trait FaxIncomingMessageIterator extends StObject {
   
   /** End of archive marker */
-  val AtEOF: Boolean = js.native
+  val AtEOF: Boolean
   
   @JSName("FAXCOMEXLib.FaxIncomingMessageIterator_typekey")
-  var FAXCOMEXLibDotFaxIncomingMessageIterator_typekey: FaxIncomingMessageIterator = js.native
+  var FAXCOMEXLibDotFaxIncomingMessageIterator_typekey: FaxIncomingMessageIterator
   
   /** The current message */
-  val Message: IFaxIncomingMessage = js.native
+  val Message: IFaxIncomingMessage
   
   /** Move to the first message in the archive */
-  def MoveFirst(): Unit = js.native
+  def MoveFirst(): Unit
   
   /** Move to the next message in the archive */
-  def MoveNext(): Unit = js.native
+  def MoveNext(): Unit
   
   /** Size of the prefetch buffer */
-  var PrefetchSize: Double = js.native
+  var PrefetchSize: Double
 }
 object FaxIncomingMessageIterator {
   

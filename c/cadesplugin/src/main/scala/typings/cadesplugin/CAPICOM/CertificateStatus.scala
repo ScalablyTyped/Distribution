@@ -2,13 +2,11 @@ package typings.cadesplugin.CAPICOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateStatus extends StObject {
   
-  var Result: Boolean = js.native
+  var Result: Boolean
 }
 object CertificateStatus {
   

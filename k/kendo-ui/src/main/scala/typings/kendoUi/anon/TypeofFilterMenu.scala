@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.FilterMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofFilterMenu extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): FilterMenu = js.native
+  def extend(proto: js.Object): FilterMenu
   
   /* static member */
-  var fn: FilterMenu = js.native
+  var fn: FilterMenu
 }
 object TypeofFilterMenu {
   

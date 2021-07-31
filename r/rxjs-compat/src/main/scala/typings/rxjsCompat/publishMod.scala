@@ -2,28 +2,29 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publishMod {
   
-  @JSImport("rxjs-compat/operators/publish", "publish")
+  @JSImport("rxjs-compat/operators/publish", JSImport.Namespace)
   @js.native
-  def publish[T](): js.Any = js.native
-  @JSImport("rxjs-compat/operators/publish", "publish")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def publish[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publish")().asInstanceOf[js.Any]
+  @scala.inline
   def publish[T](
     selector: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
     ]
-  ): js.Any = js.native
-  @JSImport("rxjs-compat/operators/publish", "publish")
-  @js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publish")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
   def publish_TR[T, R](
     selector: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
     ]
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publish")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -4,7 +4,6 @@ import typings.openlayers.mod.olx.FrameState
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "MapBrowserEvent")
@@ -23,14 +22,8 @@ class MapBrowserEvent protected () extends MapEvent {
     */
   def this(`type`: String, map: Map, browserEvent: Event) = this()
   def this(`type`: String, map: Map, browserEvent: Event, opt_dragging: Boolean) = this()
-  def this(
-    `type`: String,
-    map: Map,
-    browserEvent: Event,
-    opt_dragging: js.UndefOr[scala.Nothing],
-    opt_frameState: FrameState
-  ) = this()
   def this(`type`: String, map: Map, browserEvent: Event, opt_dragging: Boolean, opt_frameState: FrameState) = this()
+  def this(`type`: String, map: Map, browserEvent: Event, opt_dragging: Unit, opt_frameState: FrameState) = this()
   
   /**
     * The coordinate of the original browser event.

@@ -2,36 +2,34 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeploymentStatusResponse extends StObject {
   
   /**
     * The status of the deployment: ''InProgress'', ''Building'', ''Success'', or ''Failure''.
     */
-  var DeploymentStatus: js.UndefOr[string] = js.native
+  var DeploymentStatus: js.UndefOr[string] = js.undefined
   
   /**
     * The type of the deployment.
     */
-  var DeploymentType: js.UndefOr[typings.awsSdk.greengrassMod.DeploymentType] = js.native
+  var DeploymentType: js.UndefOr[typings.awsSdk.greengrassMod.DeploymentType] = js.undefined
   
   /**
     * Error details
     */
-  var ErrorDetails: js.UndefOr[typings.awsSdk.greengrassMod.ErrorDetails] = js.native
+  var ErrorDetails: js.UndefOr[typings.awsSdk.greengrassMod.ErrorDetails] = js.undefined
   
   /**
     * Error message
     */
-  var ErrorMessage: js.UndefOr[string] = js.native
+  var ErrorMessage: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the deployment status was updated.
     */
-  var UpdatedAt: js.UndefOr[string] = js.native
+  var UpdatedAt: js.UndefOr[string] = js.undefined
 }
 object GetDeploymentStatusResponse {
   

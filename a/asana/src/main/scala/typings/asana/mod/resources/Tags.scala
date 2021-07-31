@@ -7,7 +7,6 @@ import typings.asana.mod.resources.Tags.FindAllParams
 import typings.asana.mod.resources.Tags.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Tags
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * * Creates a new tag in a workspace or organization.
@@ -100,7 +100,7 @@ trait Tags
     * @return
     */
   def findAll(): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findAll(params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findAll(params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findAll(params: FindAllParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   
@@ -116,11 +116,11 @@ trait Tags
     * @return
     */
   def findById(tag: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(tag: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(tag: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(tag: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(tag: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(tag: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(tag: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(tag: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(tag: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(tag: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
@@ -136,11 +136,11 @@ trait Tags
     * @return
     */
   def findByWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   
@@ -157,11 +157,11 @@ trait Tags
     * @return
     */
   def getTasksWithTag(tag: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def getTasksWithTag(tag: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksWithTag(tag: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def getTasksWithTag(tag: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def getTasksWithTag(tag: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def getTasksWithTag(tag: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def getTasksWithTag(tag: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksWithTag(tag: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def getTasksWithTag(tag: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def getTasksWithTag(tag: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   
@@ -193,7 +193,9 @@ object Tags extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Tags")
   @js.native
-  class ^ protected () extends Tags {
+  class ^ protected ()
+    extends StObject
+       with Tags {
     /**
       * @param dispatcher
       */
@@ -204,12 +206,13 @@ object Tags extends Shortcut {
   @js.native
   val ^ : TagsStatic = js.native
   
-  @js.native
-  trait FindAllParams extends PaginationParams {
+  trait FindAllParams
+    extends StObject
+       with PaginationParams {
     
-    var archived: js.UndefOr[Boolean] = js.native
+    var archived: js.UndefOr[Boolean] = js.undefined
     
-    var team: js.UndefOr[String | Double] = js.native
+    var team: js.UndefOr[String | Double] = js.undefined
   }
   object FindAllParams {
     
@@ -238,17 +241,18 @@ object Tags extends Shortcut {
   
   @js.native
   trait Type
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     var color: String = js.native
     
     var created_at: String = js.native
     
-    var followers: js.Array[typings.asana.mod.resources.Resource] = js.native
+    var followers: js.Array[Resource] = js.native
     
     var notes: String = js.native
     
-    var workspace: typings.asana.mod.resources.Resource = js.native
+    var workspace: Resource = js.native
   }
   
   type _To = TagsStatic

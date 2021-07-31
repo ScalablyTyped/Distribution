@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInventoryEntriesRequest extends StObject {
   
   /**
     * One or more filters. Use a filter to return a more specific list of results.
     */
-  var Filters: js.UndefOr[InventoryFilterList] = js.native
+  var Filters: js.UndefOr[InventoryFilterList] = js.undefined
   
   /**
     * The instance ID for which you want inventory information.
     */
-  var InstanceId: typings.awsSdk.ssmMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ssmMod.InstanceId
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * The type of inventory item for which you want information.
     */
-  var TypeName: InventoryItemTypeName = js.native
+  var TypeName: InventoryItemTypeName
 }
 object ListInventoryEntriesRequest {
   

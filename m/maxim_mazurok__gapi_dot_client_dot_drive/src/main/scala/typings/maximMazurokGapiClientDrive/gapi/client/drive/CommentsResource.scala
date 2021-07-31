@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientDrive.anon.PageSize
 import typings.maximMazurokGapiClientDrive.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

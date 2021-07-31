@@ -2,36 +2,36 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetNavigationBarArgs extends AsyncCallback[Unit] {
+trait SetNavigationBarArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Navigation bar background color, supporting hex color value.
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Navigation bar bottom border color, supporting hex color value If the backgroundColor is set, the borderBottomColor does not take effect. The backgroundColor is used by default.
     */
-  var borderBottomColor: js.UndefOr[String] = js.native
+  var borderBottomColor: js.UndefOr[String] = js.undefined
   
   /**
     * Picture link address, must be https. Use 3x high-definition pictures. If the image is set, the title parameter is inactive.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * If the navigation bar is reset to the default color scheme of Alipay, false by default.
     */
-  var reset: js.UndefOr[Boolean] = js.native
+  var reset: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Navigation bar title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SetNavigationBarArgs {
   

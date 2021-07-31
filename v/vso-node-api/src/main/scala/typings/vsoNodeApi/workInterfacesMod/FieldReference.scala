@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldReference extends StObject {
   
   /**
     * fieldRefName for the field
     */
-  var referenceName: String = js.native
+  var referenceName: String
   
   /**
     * Full http link to more information about the field
     */
-  var url: String = js.native
+  var url: String
 }
 object FieldReference {
   

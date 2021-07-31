@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpFilter extends StObject {
   
   /**
     * A finding's CIDR value.
     */
-  var Cidr: js.UndefOr[NonEmptyString] = js.native
+  var Cidr: js.UndefOr[NonEmptyString] = js.undefined
 }
 object IpFilter {
   

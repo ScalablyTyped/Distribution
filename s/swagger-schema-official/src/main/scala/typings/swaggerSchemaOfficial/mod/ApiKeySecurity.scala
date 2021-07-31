@@ -5,27 +5,26 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.header
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiKeySecurity
-  extends BaseSecurity
+  extends StObject
+     with BaseSecurity
      with Security {
   
-  var in: query | header = js.native
+  var in: query | header
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_ApiKeySecurity: apiKey = js.native
+  var type_ApiKeySecurity: apiKey
 }
 object ApiKeySecurity {
   
   @scala.inline
-  def apply(in: query | header, name: String, `type`: apiKey): ApiKeySecurity = {
+  def apply(in: query | header, name: String): ApiKeySecurity = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("apiKey")
     __obj.asInstanceOf[ApiKeySecurity]
   }
   

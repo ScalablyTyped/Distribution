@@ -5,42 +5,38 @@ import typings.googleCloudStorage.anon.Callback
 import typings.node.querystringMod.ParsedUrlQueryInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("@google-cloud/storage/build/src/util", "encodeURI")
+  @JSImport("@google-cloud/storage/build/src/util", JSImport.Namespace)
   @js.native
-  def encodeURI(uri: String, encodeSlash: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@google-cloud/storage/build/src/util", "fixedEncodeURIComponent")
-  @js.native
-  def fixedEncodeURIComponent(str: String): String = js.native
+  @scala.inline
+  def encodeURI(uri: String, encodeSlash: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeURI")(uri.asInstanceOf[js.Any], encodeSlash.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@google-cloud/storage/build/src/util", "normalize")
-  @js.native
-  def normalize[T, U](): Callback[T, U] = js.native
-  @JSImport("@google-cloud/storage/build/src/util", "normalize")
-  @js.native
-  def normalize[T, U](optionsOrCallback: T | U): Callback[T, U] = js.native
-  @JSImport("@google-cloud/storage/build/src/util", "normalize")
-  @js.native
-  def normalize[T, U](optionsOrCallback: js.UndefOr[T | U], cb: U): Callback[T, U] = js.native
+  @scala.inline
+  def fixedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@google-cloud/storage/build/src/util", "objectEntries")
-  @js.native
-  def objectEntries[T](obj: StringDictionary[T]): js.Array[js.Tuple2[String, T]] = js.native
+  @scala.inline
+  def normalize[T, U](): Callback[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[Callback[T, U]]
+  @scala.inline
+  def normalize[T, U](optionsOrCallback: T | U): Callback[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any]).asInstanceOf[Callback[T, U]]
+  @scala.inline
+  def normalize[T, U](optionsOrCallback: T | U, cb: U): Callback[T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Callback[T, U]]
+  @scala.inline
+  def normalize[T, U](optionsOrCallback: Unit, cb: U): Callback[T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Callback[T, U]]
   
-  @JSImport("@google-cloud/storage/build/src/util", "objectKeyToLowercase")
-  @js.native
-  def objectKeyToLowercase[T](`object`: StringDictionary[T]): StringDictionary[T] = js.native
+  @scala.inline
+  def objectEntries[T](obj: StringDictionary[T]): js.Array[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectEntries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, T]]]
   
-  @JSImport("@google-cloud/storage/build/src/util", "qsStringify")
-  @js.native
-  def qsStringify(qs: ParsedUrlQueryInput): String = js.native
+  @scala.inline
+  def objectKeyToLowercase[T](`object`: StringDictionary[T]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectKeyToLowercase")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
   
-  @JSImport("@google-cloud/storage/build/src/util", "unicodeJSONStringify")
-  @js.native
-  def unicodeJSONStringify(obj: js.Object): String = js.native
+  @scala.inline
+  def qsStringify(qs: ParsedUrlQueryInput): String = ^.asInstanceOf[js.Dynamic].applyDynamic("qsStringify")(qs.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def unicodeJSONStringify(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unicodeJSONStringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

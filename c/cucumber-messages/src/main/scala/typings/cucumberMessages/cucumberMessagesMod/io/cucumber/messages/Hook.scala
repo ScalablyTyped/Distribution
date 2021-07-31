@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Hook. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Hook.
   * @param [properties] Properties to set
   */
-class Hook () extends IHook {
+class Hook ()
+  extends StObject
+     with IHook {
   def this(properties: IHook) = this()
   
   /** Hook id. */
@@ -36,18 +37,20 @@ class Hook () extends IHook {
 }
 object Hook {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Hook instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Hook instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.create")
-  @js.native
-  def create(): Hook = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.create")
-  @js.native
-  def create(properties: IHook): Hook = js.native
+  @scala.inline
+  def create(): Hook = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Hook]
+  @scala.inline
+  def create(properties: IHook): Hook = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Hook]
   
   /**
     * Decodes a Hook message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object Hook {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.decode")
-  @js.native
-  def decode(reader: Reader): Hook = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Hook = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.decode")
-  @js.native
-  def decode(reader: Uint8Array): Hook = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Hook = js.native
+  @scala.inline
+  def decode(reader: Reader): Hook = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Hook]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Hook = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Hook]
+  @scala.inline
+  def decode(reader: Uint8Array): Hook = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Hook]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Hook = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Hook]
   
   /**
     * Decodes a Hook message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object Hook {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Hook = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Hook = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Hook = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Hook]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Hook = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Hook]
   
   /**
     * Encodes the specified Hook message. Does not implicitly {@link io.cucumber.messages.Hook.verify|verify} messages.
@@ -93,12 +90,10 @@ object Hook {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.encode")
-  @js.native
-  def encode(message: IHook): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.encode")
-  @js.native
-  def encode(message: IHook, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IHook): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IHook, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Hook message, length delimited. Does not implicitly {@link io.cucumber.messages.Hook.verify|verify} messages.
@@ -107,12 +102,10 @@ object Hook {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IHook): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IHook, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IHook): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IHook, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Hook message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object Hook {
     * @returns Hook
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Hook = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Hook = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Hook]
   
   /**
     * Creates a plain object from a Hook message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object Hook {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.toObject")
-  @js.native
-  def toObject(message: Hook): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.toObject")
-  @js.native
-  def toObject(message: Hook, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Hook): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Hook, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Hook message.
@@ -144,7 +134,6 @@ object Hook {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Hook.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

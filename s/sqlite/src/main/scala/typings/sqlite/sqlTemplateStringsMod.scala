@@ -2,18 +2,19 @@ package typings.sqlite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqlTemplateStringsMod {
   
-  @JSImport("sql-template-strings", JSImport.Default)
+  @JSImport("sql-template-strings", JSImport.Namespace)
   @js.native
-  def default(strings: js.Any, values: js.Any*): SQLStatement = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sql-template-strings", "SQL")
-  @js.native
-  def SQL(strings: js.Any, values: js.Any*): SQLStatement = js.native
+  @scala.inline
+  def default(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
+  
+  @scala.inline
+  def SQL(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("SQL")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
   
   @JSImport("sql-template-strings", "SQLStatement")
   @js.native
@@ -81,6 +82,6 @@ object sqlTemplateStringsMod {
     /**
       * The values to be inserted for the placeholders
       */
-    var values: js.Array[_] = js.native
+    var values: js.Array[js.Any] = js.native
   }
 }

@@ -2,103 +2,101 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Instance resource is the computing unit that App Engine uses to
   * automatically scale an application.
   */
-@js.native
 trait SchemaInstance extends StObject {
   
   /**
     * App Engine release this instance is running on.@OutputOnly
     */
-  var appEngineRelease: js.UndefOr[String] = js.native
+  var appEngineRelease: js.UndefOr[String] = js.undefined
   
   /**
     * Availability of the instance.@OutputOnly
     */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /**
     * Average latency (ms) over the last minute.@OutputOnly
     */
-  var averageLatency: js.UndefOr[Double] = js.native
+  var averageLatency: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of errors since this instance was started.@OutputOnly
     */
-  var errors: js.UndefOr[Double] = js.native
+  var errors: js.UndefOr[Double] = js.undefined
   
   /**
     * Relative name of the instance within the version. Example:
     * instance-1.@OutputOnly
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Total memory in use (bytes).@OutputOnly
     */
-  var memoryUsage: js.UndefOr[String] = js.native
+  var memoryUsage: js.UndefOr[String] = js.undefined
   
   /**
     * Full path to the Instance resource in the API. Example:
     * apps/myapp/services/default/versions/v1/instances/instance-1.@OutputOnly
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Average queries per second (QPS) over the last minute.@OutputOnly
     */
-  var qps: js.UndefOr[Double] = js.native
+  var qps: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of requests since this instance was started.@OutputOnly
     */
-  var requests: js.UndefOr[Double] = js.native
+  var requests: js.UndefOr[Double] = js.undefined
   
   /**
     * Time that this instance was started.@OutputOnly
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this instance is in debug mode. Only applicable for instances in
     * App Engine flexible environment.@OutputOnly
     */
-  var vmDebugEnabled: js.UndefOr[Boolean] = js.native
+  var vmDebugEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Virtual machine ID of this instance. Only applicable for instances in App
     * Engine flexible environment.@OutputOnly
     */
-  var vmId: js.UndefOr[String] = js.native
+  var vmId: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address of this instance. Only applicable for instances in App
     * Engine flexible environment.@OutputOnly
     */
-  var vmIp: js.UndefOr[String] = js.native
+  var vmIp: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the virtual machine where this instance lives. Only applicable
     * for instances in App Engine flexible environment.@OutputOnly
     */
-  var vmName: js.UndefOr[String] = js.native
+  var vmName: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the virtual machine where this instance lives. Only applicable
     * for instances in App Engine flexible environment.@OutputOnly
     */
-  var vmStatus: js.UndefOr[String] = js.native
+  var vmStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Zone where the virtual machine is located. Only applicable for instances
     * in App Engine flexible environment.@OutputOnly
     */
-  var vmZoneName: js.UndefOr[String] = js.native
+  var vmZoneName: js.UndefOr[String] = js.undefined
 }
 object SchemaInstance {
   

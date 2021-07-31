@@ -4,7 +4,6 @@ import typings.restartHooks.useBreakpointMod.BreakpointDirection
 import typings.restartHooks.useBreakpointMod.DefaultBreakpoints
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object restartHooksStrings {
@@ -105,7 +104,9 @@ object restartHooksStrings {
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
   @js.native
-  sealed trait down extends BreakpointDirection
+  sealed trait down
+    extends StObject
+       with BreakpointDirection
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
@@ -225,7 +226,9 @@ object restartHooksStrings {
   def keyup: keyup = "keyup".asInstanceOf[keyup]
   
   @js.native
-  sealed trait lg extends DefaultBreakpoints
+  sealed trait lg
+    extends StObject
+       with DefaultBreakpoints
   @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
   
@@ -255,7 +258,9 @@ object restartHooksStrings {
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   
   @js.native
-  sealed trait md extends DefaultBreakpoints
+  sealed trait md
+    extends StObject
+       with DefaultBreakpoints
   @scala.inline
   def md: md = "md".asInstanceOf[md]
   
@@ -425,7 +430,9 @@ object restartHooksStrings {
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
-  sealed trait sm extends DefaultBreakpoints
+  sealed trait sm
+    extends StObject
+       with DefaultBreakpoints
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   
@@ -495,7 +502,9 @@ object restartHooksStrings {
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   
   @js.native
-  sealed trait up extends BreakpointDirection
+  sealed trait up
+    extends StObject
+       with BreakpointDirection
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   
@@ -525,12 +534,16 @@ object restartHooksStrings {
   def wheel: wheel = "wheel".asInstanceOf[wheel]
   
   @js.native
-  sealed trait xl extends DefaultBreakpoints
+  sealed trait xl
+    extends StObject
+       with DefaultBreakpoints
   @scala.inline
   def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
-  sealed trait xs extends DefaultBreakpoints
+  sealed trait xs
+    extends StObject
+       with DefaultBreakpoints
   @scala.inline
   def xs: xs = "xs".asInstanceOf[xs]
 }

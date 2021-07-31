@@ -11,15 +11,26 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiUtilsMod {
   
+  @JSImport("next/dist/next-server/server/api-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("next/dist/next-server/server/api-utils", "ApiError")
   @js.native
-  class ApiError protected () extends Error {
+  class ApiError protected ()
+    extends StObject
+       with Error {
     def this(statusCode: Double, message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     val statusCode: Double = js.native
   }
@@ -28,8 +39,7 @@ object apiUtilsMod {
   @js.native
   val SYMBOL_PREVIEW_DATA: js.Symbol = js.native
   
-  @JSImport("next/dist/next-server/server/api-utils", "apiResolver")
-  @js.native
+  @scala.inline
   def apiResolver(
     req: IncomingMessage,
     res: ServerResponse,
@@ -37,9 +47,8 @@ object apiUtilsMod {
     resolverModule: js.Any,
     apiContext: ApiPreviewProps,
     propagateError: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("next/dist/next-server/server/api-utils", "apiResolver")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiResolver")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], query.asInstanceOf[js.Any], resolverModule.asInstanceOf[js.Any], apiContext.asInstanceOf[js.Any], propagateError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apiResolver(
     req: IncomingMessage,
     res: ServerResponse,
@@ -48,64 +57,50 @@ object apiUtilsMod {
     apiContext: ApiPreviewProps,
     propagateError: Boolean,
     onError: js.Function1[/* hasErr */ Err, js.Promise[Unit]]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiResolver")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], query.asInstanceOf[js.Any], resolverModule.asInstanceOf[js.Any], apiContext.asInstanceOf[js.Any], propagateError.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("next/dist/next-server/server/api-utils", "getCookieParser")
-  @js.native
-  def getCookieParser(req: IncomingMessage): js.Function0[NextApiRequestCookies] = js.native
+  @scala.inline
+  def getCookieParser(req: IncomingMessage): js.Function0[NextApiRequestCookies] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookieParser")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestCookies]]
   
-  @JSImport("next/dist/next-server/server/api-utils", "parseBody")
-  @js.native
-  def parseBody(req: NextApiRequest, limit: String): js.Promise[_] = js.native
-  @JSImport("next/dist/next-server/server/api-utils", "parseBody")
-  @js.native
-  def parseBody(req: NextApiRequest, limit: Double): js.Promise[_] = js.native
+  @scala.inline
+  def parseBody(req: NextApiRequest, limit: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def parseBody(req: NextApiRequest, limit: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("next/dist/next-server/server/api-utils", "redirect")
-  @js.native
-  def redirect(res: NextApiResponse[_], statusOrUrl: String): NextApiResponse[_] = js.native
-  @JSImport("next/dist/next-server/server/api-utils", "redirect")
-  @js.native
-  def redirect(res: NextApiResponse[_], statusOrUrl: String, url: String): NextApiResponse[_] = js.native
-  @JSImport("next/dist/next-server/server/api-utils", "redirect")
-  @js.native
-  def redirect(res: NextApiResponse[_], statusOrUrl: Double): NextApiResponse[_] = js.native
-  @JSImport("next/dist/next-server/server/api-utils", "redirect")
-  @js.native
-  def redirect(res: NextApiResponse[_], statusOrUrl: Double, url: String): NextApiResponse[_] = js.native
+  @scala.inline
+  def redirect(res: NextApiResponse[js.Any], statusOrUrl: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  @scala.inline
+  def redirect(res: NextApiResponse[js.Any], statusOrUrl: String, url: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  @scala.inline
+  def redirect(res: NextApiResponse[js.Any], statusOrUrl: Double): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
+  @scala.inline
+  def redirect(res: NextApiResponse[js.Any], statusOrUrl: Double, url: String): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(res.asInstanceOf[js.Any], statusOrUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
   
-  @JSImport("next/dist/next-server/server/api-utils", "sendData")
-  @js.native
-  def sendData(req: NextApiRequest, res: NextApiResponse[_], body: js.Any): Unit = js.native
+  @scala.inline
+  def sendData(req: NextApiRequest, res: NextApiResponse[js.Any], body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("next/dist/next-server/server/api-utils", "sendError")
-  @js.native
-  def sendError(res: NextApiResponse[_], statusCode: Double, message: String): Unit = js.native
+  @scala.inline
+  def sendError(res: NextApiResponse[js.Any], statusCode: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("next/dist/next-server/server/api-utils", "sendJson")
-  @js.native
-  def sendJson(res: NextApiResponse[_], jsonBody: js.Any): Unit = js.native
+  @scala.inline
+  def sendJson(res: NextApiResponse[js.Any], jsonBody: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendJson")(res.asInstanceOf[js.Any], jsonBody.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("next/dist/next-server/server/api-utils", "sendStatusCode")
-  @js.native
-  def sendStatusCode(res: NextApiResponse[_], statusCode: Double): NextApiResponse[_] = js.native
+  @scala.inline
+  def sendStatusCode(res: NextApiResponse[js.Any], statusCode: Double): NextApiResponse[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendStatusCode")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[js.Any]]
   
-  @JSImport("next/dist/next-server/server/api-utils", "setLazyProp")
-  @js.native
-  def setLazyProp[T](hasReqParams: LazyProps, prop: String, getter: js.Function0[T]): Unit = js.native
+  @scala.inline
+  def setLazyProp[T](hasReqParams: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(hasReqParams.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("next/dist/next-server/server/api-utils", "tryGetPreviewData")
-  @js.native
-  def tryGetPreviewData(req: IncomingMessage, res: ServerResponse, options: ApiPreviewProps): js.Object | String | `false` = js.native
+  @scala.inline
+  def tryGetPreviewData(req: IncomingMessage, res: ServerResponse, options: ApiPreviewProps): js.Object | String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGetPreviewData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object | String | `false`]
   
-  @js.native
   trait ApiPreviewProps extends StObject {
     
-    var previewModeEncryptionKey: String = js.native
+    var previewModeEncryptionKey: String
     
-    var previewModeId: String = js.native
+    var previewModeId: String
     
-    var previewModeSigningKey: String = js.native
+    var previewModeSigningKey: String
   }
   object ApiPreviewProps {
     
@@ -129,12 +124,11 @@ object apiUtilsMod {
     }
   }
   
-  @js.native
   trait LazyProps extends StObject {
     
-    var params: js.UndefOr[Params | Boolean] = js.native
+    var params: js.UndefOr[Params | Boolean] = js.undefined
     
-    var req: NextApiRequest = js.native
+    var req: NextApiRequest
   }
   object LazyProps {
     

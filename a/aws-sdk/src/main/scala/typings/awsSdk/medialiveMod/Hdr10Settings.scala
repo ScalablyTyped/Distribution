@@ -2,10 +2,8 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hdr10Settings extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait Hdr10Settings extends StObject {
   An integer metadata value defining the maximum light level, in nits,
   of any single pixel within an encoded HDR video stream or file.
     */
-  var MaxCll: js.UndefOr[integerMin0Max32768] = js.native
+  var MaxCll: js.UndefOr[integerMin0Max32768] = js.undefined
   
   /**
     * Maximum Frame Average Light Level
   An integer metadata value defining the maximum average light level, in nits,
   for any single frame within an encoded HDR video stream or file.
     */
-  var MaxFall: js.UndefOr[integerMin0Max32768] = js.native
+  var MaxFall: js.UndefOr[integerMin0Max32768] = js.undefined
 }
 object Hdr10Settings {
   

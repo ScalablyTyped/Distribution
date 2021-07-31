@@ -11,8 +11,8 @@ Compose custom types containing mutually exclusive keys, using this generic Type
 | Full name          | ts-xor |
 | Keywords           | typescript, custom types, mutually exlusive keys, xor |
 | # releases         | 11 |
-| # dependents       | 16 |
-| # downloads        | 151434 |
+| # dependents       | 24 |
+| # downloads        | 354196 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,8 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsISSNOptions extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait IsISSNOptions extends StObject {
     *
     * @default false
     */
-  var case_sensitive: js.UndefOr[Boolean] = js.native
+  var case_sensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var require_hyphen: js.UndefOr[Boolean] = js.native
+  var require_hyphen: js.UndefOr[Boolean] = js.undefined
 }
 object IsISSNOptions {
   

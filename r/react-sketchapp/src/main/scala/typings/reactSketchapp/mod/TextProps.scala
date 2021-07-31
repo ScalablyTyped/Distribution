@@ -2,17 +2,15 @@ package typings.reactSketchapp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextProps extends StObject {
   
-  var children: js.UndefOr[String] = js.native
+  var children: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[TextStyle | StyleReference] = js.native
+  var style: js.UndefOr[TextStyle | StyleReference] = js.undefined
 }
 object TextProps {
   

@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecr {
   
-  @js.native
   trait RepositoryEncryptionConfiguration extends StObject {
     
     /**
       * The encryption type to use for the repository. Valid values are `AES256` or `KMS`. Defaults to `AES256`.
       */
-    var encryptionType: js.UndefOr[Input[String]] = js.native
+    var encryptionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the KMS key to use when `encryptionType` is `KMS`. If not specified, uses the default AWS managed key for ECR.
       */
-    var kmsKey: js.UndefOr[Input[String]] = js.native
+    var kmsKey: js.UndefOr[Input[String]] = js.undefined
   }
   object RepositoryEncryptionConfiguration {
     
@@ -46,13 +44,12 @@ object ecr {
     }
   }
   
-  @js.native
   trait RepositoryImageScanningConfiguration extends StObject {
     
     /**
       * Indicates whether images are scanned after being pushed to the repository (true) or not scanned (false).
       */
-    var scanOnPush: Input[Boolean] = js.native
+    var scanOnPush: Input[Boolean]
   }
   object RepositoryImageScanningConfiguration {
     

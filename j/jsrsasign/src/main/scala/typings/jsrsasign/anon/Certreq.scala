@@ -3,19 +3,17 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certreq extends StObject {
   
-  var certreq: js.UndefOr[Boolean] = js.native
+  var certreq: js.UndefOr[Boolean] = js.undefined
   
-  var mi: MessageImprint = js.native
+  var mi: MessageImprint
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var policy: js.UndefOr[String] = js.native
+  var policy: js.UndefOr[String] = js.undefined
 }
 object Certreq {
   

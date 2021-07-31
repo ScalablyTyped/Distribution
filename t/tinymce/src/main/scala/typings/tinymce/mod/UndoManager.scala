@@ -3,16 +3,15 @@ package typings.tinymce.mod
 import typings.std.DocumentEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UndoManager extends StObject {
   
   def add(): js.Object = js.native
-  def add(level: js.UndefOr[scala.Nothing], event: DocumentEvent): js.Object = js.native
   def add(level: js.Object): js.Object = js.native
   def add(level: js.Object, event: DocumentEvent): js.Object = js.native
+  def add(level: Unit, event: DocumentEvent): js.Object = js.native
   
   def beforeChange(): Unit = js.native
   

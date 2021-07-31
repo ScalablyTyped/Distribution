@@ -3,18 +3,21 @@ package typings.mongodb
 import typings.mongodb.mod.SortValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongodbNumbers {
   
   @js.native
-  sealed trait `-1` extends SortValues
+  sealed trait `-1`
+    extends StObject
+       with SortValues
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
-  sealed trait `1` extends SortValues
+  sealed trait `1`
+    extends StObject
+       with SortValues
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   

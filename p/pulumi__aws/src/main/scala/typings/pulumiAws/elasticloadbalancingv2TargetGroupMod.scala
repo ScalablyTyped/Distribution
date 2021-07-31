@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticloadbalancingv2TargetGroupMod {
@@ -28,7 +27,7 @@ object elasticloadbalancingv2TargetGroupMod {
     /** @deprecated aws.elasticloadbalancingv2.TargetGroup has been deprecated in favor of aws.lb.TargetGroup */
     def this(name: String) = this()
     def this(name: String, args: TargetGroupArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: TargetGroupArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -119,6 +118,10 @@ object elasticloadbalancingv2TargetGroupMod {
   /* static members */
   object TargetGroup {
     
+    @JSImport("@pulumi/aws/elasticloadbalancingv2/targetGroup", "TargetGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TargetGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -128,90 +131,84 @@ object elasticloadbalancingv2TargetGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancingv2/targetGroup", "TargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TargetGroup = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancingv2/targetGroup", "TargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TargetGroup = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancingv2/targetGroup", "TargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TargetGroupState): TargetGroup = js.native
-    @JSImport("@pulumi/aws/elasticloadbalancingv2/targetGroup", "TargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TargetGroupState, opts: CustomResourceOptions): TargetGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TargetGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TargetGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TargetGroupState): TargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TargetGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TargetGroupState, opts: CustomResourceOptions): TargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TargetGroup]
     
     /**
       * Returns true if the given object is an instance of TargetGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticloadbalancingv2/targetGroup", "TargetGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/targetGroup.TargetGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/targetGroup.TargetGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/targetGroup.TargetGroup */ Boolean]
   }
   
-  @js.native
   trait TargetGroupArgs extends StObject {
     
     /**
       * The amount time for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused. The range is 0-3600 seconds. The default value is 300 seconds.
       */
-    val deregistrationDelay: js.UndefOr[Input[Double]] = js.native
+    val deregistrationDelay: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A Health Check block. Health Check blocks are documented below.
       */
-    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupHealthCheck]] = js.native
+    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupHealthCheck]] = js.undefined
     
     /**
       * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `targetType` is `lambda`.
       */
-    val lambdaMultiValueHeadersEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val lambdaMultiValueHeadersEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Determines how the load balancer selects targets when routing requests. Only applicable for Application Load Balancer Target Groups. The value is `roundRobin` or `leastOutstandingRequests`. The default is `roundRobin`.
       */
-    val loadBalancingAlgorithmType: js.UndefOr[Input[String]] = js.native
+    val loadBalancingAlgorithmType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the target group. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Cannot be longer than 6 characters.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port on which targets receive traffic, unless overridden when registering a specific target. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The protocol to use for routing traffic to the targets. Should be one of `GENEVE`, `HTTP`, `HTTPS`, `TCP`, `TCP_UDP`, `TLS`, or `UDP`. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean to enable / disable support for proxy protocol v2 on Network Load Balancers. See [doc](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#proxy-protocol) for more information.
       */
-    val proxyProtocolV2: js.UndefOr[Input[Boolean]] = js.native
+    val proxyProtocolV2: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The amount time for targets to warm up before the load balancer sends them a full share of requests. The range is 30-900 seconds or 0 to disable. The default value is 0 seconds.
       */
-    val slowStart: js.UndefOr[Input[Double]] = js.native
+    val slowStart: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A Stickiness block. Stickiness blocks are documented below.
       */
-    val stickiness: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupStickiness]] = js.native
+    val stickiness: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupStickiness]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of target that you must specify when registering targets with this target group.
@@ -221,12 +218,12 @@ object elasticloadbalancingv2TargetGroupMod {
       * the RFC 1918 range (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16), and the RFC 6598 range (100.64.0.0/10).
       * You can't specify publicly routable IP addresses.
       */
-    val targetType: js.UndefOr[Input[String]] = js.native
+    val targetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the VPC in which to create the target group. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object TargetGroupArgs {
     
@@ -325,78 +322,77 @@ object elasticloadbalancingv2TargetGroupMod {
     }
   }
   
-  @js.native
   trait TargetGroupState extends StObject {
     
     /**
       * The ARN of the Target Group (matches `id`)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN suffix for use with CloudWatch Metrics.
       */
-    val arnSuffix: js.UndefOr[Input[String]] = js.native
+    val arnSuffix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount time for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused. The range is 0-3600 seconds. The default value is 300 seconds.
       */
-    val deregistrationDelay: js.UndefOr[Input[Double]] = js.native
+    val deregistrationDelay: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A Health Check block. Health Check blocks are documented below.
       */
-    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupHealthCheck]] = js.native
+    val healthCheck: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupHealthCheck]] = js.undefined
     
     /**
       * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `targetType` is `lambda`.
       */
-    val lambdaMultiValueHeadersEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val lambdaMultiValueHeadersEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Determines how the load balancer selects targets when routing requests. Only applicable for Application Load Balancer Target Groups. The value is `roundRobin` or `leastOutstandingRequests`. The default is `roundRobin`.
       */
-    val loadBalancingAlgorithmType: js.UndefOr[Input[String]] = js.native
+    val loadBalancingAlgorithmType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the target group. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Cannot be longer than 6 characters.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port on which targets receive traffic, unless overridden when registering a specific target. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The protocol to use for routing traffic to the targets. Should be one of `GENEVE`, `HTTP`, `HTTPS`, `TCP`, `TCP_UDP`, `TLS`, or `UDP`. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean to enable / disable support for proxy protocol v2 on Network Load Balancers. See [doc](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#proxy-protocol) for more information.
       */
-    val proxyProtocolV2: js.UndefOr[Input[Boolean]] = js.native
+    val proxyProtocolV2: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The amount time for targets to warm up before the load balancer sends them a full share of requests. The range is 30-900 seconds or 0 to disable. The default value is 0 seconds.
       */
-    val slowStart: js.UndefOr[Input[Double]] = js.native
+    val slowStart: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A Stickiness block. Stickiness blocks are documented below.
       */
-    val stickiness: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupStickiness]] = js.native
+    val stickiness: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticloadbalancingv2.TargetGroupStickiness]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of target that you must specify when registering targets with this target group.
@@ -406,12 +402,12 @@ object elasticloadbalancingv2TargetGroupMod {
       * the RFC 1918 range (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16), and the RFC 6598 range (100.64.0.0/10).
       * You can't specify publicly routable IP addresses.
       */
-    val targetType: js.UndefOr[Input[String]] = js.native
+    val targetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the VPC in which to create the target group. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object TargetGroupState {
     

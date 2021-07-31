@@ -1,129 +1,126 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/shader/variable/EVariableType", JSImport.Namespace)
-@js.native
-object evariabletypeMod extends js.Object {
-  @js.native
-  sealed trait EVariableType extends js.Object
+object evariabletypeMod {
   
   @js.native
-  object EVariableType extends js.Object {
-    @js.native
-    sealed trait BUFFER extends EVariableType
-    
-    @js.native
-    sealed trait COLOR_3 extends EVariableType
-    
-    @js.native
-    sealed trait FLOAT_1 extends EVariableType
-    
-    @js.native
-    sealed trait FLOAT_2 extends EVariableType
-    
-    @js.native
-    sealed trait FLOAT_3 extends EVariableType
-    
-    @js.native
-    sealed trait FLOAT_4 extends EVariableType
-    
-    @js.native
-    sealed trait FLOAT_MAT3 extends EVariableType
-    
-    @js.native
-    sealed trait FLOAT_MAT4 extends EVariableType
-    
-    @js.native
-    sealed trait FLOAT_MAT4_ARRAY extends EVariableType
-    
-    @js.native
-    sealed trait NUMBER_1 extends EVariableType
-    
-    @js.native
-    sealed trait SAMPLER_2D extends EVariableType
-    
-    @js.native
-    sealed trait SAMPLER_ARRAY extends EVariableType
-    
-    @js.native
-    sealed trait SAMPLER_CUBE extends EVariableType
-    
-    @js.native
-    sealed trait STRUCTURE extends EVariableType
-    
-    @js.native
-    sealed trait STRUCTURES extends EVariableType
-    
-    @js.native
-    sealed trait VECTOR_2 extends EVariableType
-    
-    @js.native
-    sealed trait VECTOR_3 extends EVariableType
-    
-    @js.native
-    sealed trait VECTOR_4 extends EVariableType
+  sealed trait EVariableType extends StObject
+  @JSImport("wonder.js/dist/es2015/renderer/shader/variable/EVariableType", "EVariableType")
+  @js.native
+  object EVariableType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EVariableType with Double] = js.native
-    /* 10 */ @js.native
-    object BUFFER extends TopLevel[BUFFER with Double]
+    def apply(value: Double): js.UndefOr[EVariableType & Double] = js.native
     
-    /* 7 */ @js.native
-    object COLOR_3 extends TopLevel[COLOR_3 with Double]
+    @js.native
+    sealed trait BUFFER
+      extends StObject
+         with EVariableType
+    /* 10 */ val BUFFER: typings.wonderJs.evariabletypeMod.EVariableType.BUFFER & Double = js.native
     
-    /* 0 */ @js.native
-    object FLOAT_1 extends TopLevel[FLOAT_1 with Double]
+    @js.native
+    sealed trait COLOR_3
+      extends StObject
+         with EVariableType
+    /* 7 */ val COLOR_3: typings.wonderJs.evariabletypeMod.EVariableType.COLOR_3 & Double = js.native
     
-    /* 1 */ @js.native
-    object FLOAT_2 extends TopLevel[FLOAT_2 with Double]
+    @js.native
+    sealed trait FLOAT_1
+      extends StObject
+         with EVariableType
+    /* 0 */ val FLOAT_1: typings.wonderJs.evariabletypeMod.EVariableType.FLOAT_1 & Double = js.native
     
-    /* 2 */ @js.native
-    object FLOAT_3 extends TopLevel[FLOAT_3 with Double]
+    @js.native
+    sealed trait FLOAT_2
+      extends StObject
+         with EVariableType
+    /* 1 */ val FLOAT_2: typings.wonderJs.evariabletypeMod.EVariableType.FLOAT_2 & Double = js.native
     
-    /* 3 */ @js.native
-    object FLOAT_4 extends TopLevel[FLOAT_4 with Double]
+    @js.native
+    sealed trait FLOAT_3
+      extends StObject
+         with EVariableType
+    /* 2 */ val FLOAT_3: typings.wonderJs.evariabletypeMod.EVariableType.FLOAT_3 & Double = js.native
     
-    /* 8 */ @js.native
-    object FLOAT_MAT3 extends TopLevel[FLOAT_MAT3 with Double]
+    @js.native
+    sealed trait FLOAT_4
+      extends StObject
+         with EVariableType
+    /* 3 */ val FLOAT_4: typings.wonderJs.evariabletypeMod.EVariableType.FLOAT_4 & Double = js.native
     
-    /* 9 */ @js.native
-    object FLOAT_MAT4 extends TopLevel[FLOAT_MAT4 with Double]
+    @js.native
+    sealed trait FLOAT_MAT3
+      extends StObject
+         with EVariableType
+    /* 8 */ val FLOAT_MAT3: typings.wonderJs.evariabletypeMod.EVariableType.FLOAT_MAT3 & Double = js.native
     
-    /* 17 */ @js.native
-    object FLOAT_MAT4_ARRAY extends TopLevel[FLOAT_MAT4_ARRAY with Double]
+    @js.native
+    sealed trait FLOAT_MAT4
+      extends StObject
+         with EVariableType
+    /* 9 */ val FLOAT_MAT4: typings.wonderJs.evariabletypeMod.EVariableType.FLOAT_MAT4 & Double = js.native
     
-    /* 13 */ @js.native
-    object NUMBER_1 extends TopLevel[NUMBER_1 with Double]
+    @js.native
+    sealed trait FLOAT_MAT4_ARRAY
+      extends StObject
+         with EVariableType
+    /* 17 */ val FLOAT_MAT4_ARRAY: typings.wonderJs.evariabletypeMod.EVariableType.FLOAT_MAT4_ARRAY & Double = js.native
     
-    /* 12 */ @js.native
-    object SAMPLER_2D extends TopLevel[SAMPLER_2D with Double]
+    @js.native
+    sealed trait NUMBER_1
+      extends StObject
+         with EVariableType
+    /* 13 */ val NUMBER_1: typings.wonderJs.evariabletypeMod.EVariableType.NUMBER_1 & Double = js.native
     
-    /* 16 */ @js.native
-    object SAMPLER_ARRAY extends TopLevel[SAMPLER_ARRAY with Double]
+    @js.native
+    sealed trait SAMPLER_2D
+      extends StObject
+         with EVariableType
+    /* 12 */ val SAMPLER_2D: typings.wonderJs.evariabletypeMod.EVariableType.SAMPLER_2D & Double = js.native
     
-    /* 11 */ @js.native
-    object SAMPLER_CUBE extends TopLevel[SAMPLER_CUBE with Double]
+    @js.native
+    sealed trait SAMPLER_ARRAY
+      extends StObject
+         with EVariableType
+    /* 16 */ val SAMPLER_ARRAY: typings.wonderJs.evariabletypeMod.EVariableType.SAMPLER_ARRAY & Double = js.native
     
-    /* 14 */ @js.native
-    object STRUCTURE extends TopLevel[STRUCTURE with Double]
+    @js.native
+    sealed trait SAMPLER_CUBE
+      extends StObject
+         with EVariableType
+    /* 11 */ val SAMPLER_CUBE: typings.wonderJs.evariabletypeMod.EVariableType.SAMPLER_CUBE & Double = js.native
     
-    /* 15 */ @js.native
-    object STRUCTURES extends TopLevel[STRUCTURES with Double]
+    @js.native
+    sealed trait STRUCTURE
+      extends StObject
+         with EVariableType
+    /* 14 */ val STRUCTURE: typings.wonderJs.evariabletypeMod.EVariableType.STRUCTURE & Double = js.native
     
-    /* 4 */ @js.native
-    object VECTOR_2 extends TopLevel[VECTOR_2 with Double]
+    @js.native
+    sealed trait STRUCTURES
+      extends StObject
+         with EVariableType
+    /* 15 */ val STRUCTURES: typings.wonderJs.evariabletypeMod.EVariableType.STRUCTURES & Double = js.native
     
-    /* 5 */ @js.native
-    object VECTOR_3 extends TopLevel[VECTOR_3 with Double]
+    @js.native
+    sealed trait VECTOR_2
+      extends StObject
+         with EVariableType
+    /* 4 */ val VECTOR_2: typings.wonderJs.evariabletypeMod.EVariableType.VECTOR_2 & Double = js.native
     
-    /* 6 */ @js.native
-    object VECTOR_4 extends TopLevel[VECTOR_4 with Double]
+    @js.native
+    sealed trait VECTOR_3
+      extends StObject
+         with EVariableType
+    /* 5 */ val VECTOR_3: typings.wonderJs.evariabletypeMod.EVariableType.VECTOR_3 & Double = js.native
     
+    @js.native
+    sealed trait VECTOR_4
+      extends StObject
+         with EVariableType
+    /* 6 */ val VECTOR_4: typings.wonderJs.evariabletypeMod.EVariableType.VECTOR_4 & Double = js.native
   }
-  
 }
-

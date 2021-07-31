@@ -9,7 +9,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a BatchUpdateIntentsRequest. */
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BatchUpdateIntentsRequest.
   * @param [properties] Properties to set
   */
-class BatchUpdateIntentsRequest () extends IBatchUpdateIntentsRequest {
+class BatchUpdateIntentsRequest ()
+  extends StObject
+     with IBatchUpdateIntentsRequest {
   def this(properties: IBatchUpdateIntentsRequest) = this()
   
   /** BatchUpdateIntentsRequest intentBatch. */
@@ -49,18 +50,20 @@ class BatchUpdateIntentsRequest () extends IBatchUpdateIntentsRequest {
 }
 object BatchUpdateIntentsRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new BatchUpdateIntentsRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns BatchUpdateIntentsRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.create")
-  @js.native
-  def create(): BatchUpdateIntentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.create")
-  @js.native
-  def create(properties: IBatchUpdateIntentsRequest): BatchUpdateIntentsRequest = js.native
+  @scala.inline
+  def create(): BatchUpdateIntentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchUpdateIntentsRequest]
+  @scala.inline
+  def create(properties: IBatchUpdateIntentsRequest): BatchUpdateIntentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsRequest]
   
   /**
     * Decodes a BatchUpdateIntentsRequest message from the specified reader or buffer.
@@ -71,18 +74,14 @@ object BatchUpdateIntentsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.decode")
-  @js.native
-  def decode(reader: Reader): BatchUpdateIntentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): BatchUpdateIntentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): BatchUpdateIntentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): BatchUpdateIntentsRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): BatchUpdateIntentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): BatchUpdateIntentsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateIntentsRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): BatchUpdateIntentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): BatchUpdateIntentsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateIntentsRequest]
   
   /**
     * Decodes a BatchUpdateIntentsRequest message from the specified reader or buffer, length delimited.
@@ -92,12 +91,10 @@ object BatchUpdateIntentsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): BatchUpdateIntentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): BatchUpdateIntentsRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): BatchUpdateIntentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): BatchUpdateIntentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsRequest]
   
   /**
     * Encodes the specified BatchUpdateIntentsRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.verify|verify} messages.
@@ -106,12 +103,10 @@ object BatchUpdateIntentsRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.encode")
-  @js.native
-  def encode(message: IBatchUpdateIntentsRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.encode")
-  @js.native
-  def encode(message: IBatchUpdateIntentsRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IBatchUpdateIntentsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IBatchUpdateIntentsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified BatchUpdateIntentsRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.verify|verify} messages.
@@ -120,12 +115,10 @@ object BatchUpdateIntentsRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchUpdateIntentsRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchUpdateIntentsRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IBatchUpdateIntentsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IBatchUpdateIntentsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a BatchUpdateIntentsRequest message from a plain object. Also converts values to their respective internal types.
@@ -133,9 +126,8 @@ object BatchUpdateIntentsRequest {
     * @returns BatchUpdateIntentsRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): BatchUpdateIntentsRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): BatchUpdateIntentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsRequest]
   
   /**
     * Creates a plain object from a BatchUpdateIntentsRequest message. Also converts values to other types if specified.
@@ -144,12 +136,10 @@ object BatchUpdateIntentsRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.toObject")
-  @js.native
-  def toObject(message: BatchUpdateIntentsRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.toObject")
-  @js.native
-  def toObject(message: BatchUpdateIntentsRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: BatchUpdateIntentsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: BatchUpdateIntentsRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a BatchUpdateIntentsRequest message.
@@ -157,7 +147,6 @@ object BatchUpdateIntentsRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

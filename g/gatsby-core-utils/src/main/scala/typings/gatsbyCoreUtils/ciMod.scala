@@ -2,16 +2,17 @@ package typings.gatsbyCoreUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ciMod {
   
-  @JSImport("gatsby-core-utils/dist/ci", "getCIName")
+  @JSImport("gatsby-core-utils/dist/ci", JSImport.Namespace)
   @js.native
-  def getCIName(): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-core-utils/dist/ci", "isCI")
-  @js.native
-  def isCI(): Boolean = js.native
+  @scala.inline
+  def getCIName(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCIName")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def isCI(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCI")().asInstanceOf[Boolean]
 }

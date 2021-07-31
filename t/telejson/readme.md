@@ -10,9 +10,9 @@ A library for teleporting rich data to another place.
 | ------------------ | :-------------: |
 | Full name          | telejson |
 | Keywords           | JSON, cyclic, cyclical, date, function, parse, regex, stringify |
-| # releases         | 26 |
-| # dependents       | 6 |
-| # downloads        | 67853625 |
+| # releases         | 24 |
+| # dependents       | 7 |
+| # downloads        | 93938057 |
 | # stars            | 0 |
 
 ## Links

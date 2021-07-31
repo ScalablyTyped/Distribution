@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartPreciseCoverageRequest extends StObject {
   
   /**
     * Allow the backend to send updates on its own initiative
     */
-  var allowTriggeredUpdates: js.UndefOr[Boolean] = js.native
+  var allowTriggeredUpdates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Collect accurate call counts beyond simple 'covered' or 'not covered'.
     */
-  var callCount: js.UndefOr[Boolean] = js.native
+  var callCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Collect block-based coverage.
     */
-  var detailed: js.UndefOr[Boolean] = js.native
+  var detailed: js.UndefOr[Boolean] = js.undefined
 }
 object StartPreciseCoverageRequest {
   

@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows importing a layer into a {@link Backend}
   * @since OOo 1.1.2
   */
-@js.native
-trait XLayerImporter extends XInterface {
+trait XLayerImporter
+  extends StObject
+     with XInterface {
   
   /**
     * gets the target backend for importing.
     * @returns the {@link Backend} into which layers are imported by {@link XLayerImporter.importLayer()} .
     */
-  var TargetBackend: XBackend = js.native
+  var TargetBackend: XBackend
   
   /**
     * gets the target backend for importing.
     * @returns the {@link Backend} into which layers are imported by {@link XLayerImporter.importLayer()} .
     */
-  def getTargetBackend(): XBackend = js.native
+  def getTargetBackend(): XBackend
   
   /**
     * Imports the layer given into the backend.
@@ -37,7 +37,7 @@ trait XLayerImporter extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the layer passed is for a component that doesn't exist in the backend
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the backend or source layer.
     */
-  def importLayer(aLayer: XLayer): Unit = js.native
+  def importLayer(aLayer: XLayer): Unit
   
   /**
     * Imports the layer given into the backend for a given entity.
@@ -51,14 +51,14 @@ trait XLayerImporter extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the layer passed is for a component that doesn't exist in the backend or if the entity doesn't
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the backend or source layer.
     */
-  def importLayerForEntity(aLayer: XLayer, aEntity: String): Unit = js.native
+  def importLayerForEntity(aLayer: XLayer, aEntity: String): Unit
   
   /**
     * sets the target backend for importing.
     * @param aBackend a {@link Backend} into which layers should be imported by {@link XLayerImporter.importLayer()} .
     * @throws com::sun::star::lang::NullPointerException if the backend passed is `NULL` .
     */
-  def setTargetBackend(aBackend: XBackend): Unit = js.native
+  def setTargetBackend(aBackend: XBackend): Unit
 }
 object XLayerImporter {
   

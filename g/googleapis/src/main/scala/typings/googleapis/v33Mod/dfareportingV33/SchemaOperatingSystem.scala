@@ -2,40 +2,38 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about an operating system that can be targeted by ads.
   */
-@js.native
 trait SchemaOperatingSystem extends StObject {
   
   /**
     * DART ID of this operating system. This is the ID used for targeting.
     */
-  var dartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this operating system is for desktop.
     */
-  var desktop: js.UndefOr[Boolean] = js.native
+  var desktop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#operatingSystem&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this operating system is for mobile.
     */
-  var mobile: js.UndefOr[Boolean] = js.native
+  var mobile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of this operating system.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaOperatingSystem {
   

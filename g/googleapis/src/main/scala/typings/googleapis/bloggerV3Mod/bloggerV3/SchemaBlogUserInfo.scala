@@ -2,26 +2,24 @@ package typings.googleapis.bloggerV3Mod.bloggerV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBlogUserInfo extends StObject {
   
   /**
     * The Blog resource.
     */
-  var blog: js.UndefOr[SchemaBlog] = js.native
+  var blog: js.UndefOr[SchemaBlog] = js.undefined
   
   /**
     * Information about a User for the Blog.
     */
-  var blog_user_info: js.UndefOr[SchemaBlogPerUserInfo] = js.native
+  var blog_user_info: js.UndefOr[SchemaBlogPerUserInfo] = js.undefined
   
   /**
     * The kind of this entity. Always blogger#blogUserInfo
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaBlogUserInfo {
   

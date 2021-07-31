@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.UI.Text.Core
 import typings.winrtUwp.Windows.Foundation.Deferral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the CompositionStarted event. */
-@js.native
 trait CoreTextCompositionStartedEventArgs extends StObject {
   
   /**
     * Requests that the operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
     * @return A Deferral object.
     */
-  def getDeferral(): Deferral = js.native
+  def getDeferral(): Deferral
   
   /** Gets a value that indicates whether the operation is canceled. */
-  var isCanceled: Boolean = js.native
+  var isCanceled: Boolean
 }
 object CoreTextCompositionStartedEventArgs {
   

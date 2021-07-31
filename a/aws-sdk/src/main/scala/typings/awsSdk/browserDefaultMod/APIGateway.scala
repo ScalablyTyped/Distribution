@@ -4,7 +4,6 @@ import typings.awsSdk.apigatewayMod.ClientConfiguration
 import typings.awsSdk.apigatewayMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/browser_default", "APIGateway")

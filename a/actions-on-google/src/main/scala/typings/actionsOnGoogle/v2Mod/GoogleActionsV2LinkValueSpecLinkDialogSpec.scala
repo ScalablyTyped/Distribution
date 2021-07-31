@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends StObject {
     * ignore this field and use the appropriate title.
     * Max 20 chars.
     */
-  var destinationName: js.UndefOr[String] = js.native
+  var destinationName: js.UndefOr[String] = js.undefined
   
   /**
     * A string that is added to the end of the confirmation prompt to explain
@@ -24,7 +22,7 @@ trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends StObject {
     * can be appended to the confirmation prompt like \"Can I send you to Google
     * Maps to navigate to pick up your coffee?\"
     */
-  var requestLinkReason: js.UndefOr[String] = js.native
+  var requestLinkReason: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2LinkValueSpecLinkDialogSpec {
   

@@ -6,30 +6,30 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardTitleMod {
   
   @JSImport("@react-md/card/types/CardTitle", "CardTitle")
   @js.native
-  val CardTitle: ForwardRefExoticComponent[CardTitleProps with RefAttributes[HTMLHeadingElement]] = js.native
+  val CardTitle: ForwardRefExoticComponent[CardTitleProps & RefAttributes[HTMLHeadingElement]] = js.native
   
-  @js.native
-  trait CardTitleProps extends HTMLAttributes[HTMLHeadingElement] {
+  trait CardTitleProps
+    extends StObject
+       with HTMLAttributes[HTMLHeadingElement] {
     
     /**
       * Boolean if the title should not be able to line-wrap and will ellipsis long
       * text.
       */
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the title should be smaller than normal. You should usually
       * enable this prop when using the `CardSubtitle` with this component in the
       * `CardHeader`.
       */
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
   }
   object CardTitleProps {
     

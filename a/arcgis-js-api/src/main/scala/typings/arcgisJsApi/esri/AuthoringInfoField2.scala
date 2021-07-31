@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AuthoringInfoField2 extends Object {
+trait AuthoringInfoField2
+  extends StObject
+     with Object {
   
   /**
     * Describes the class breaks generated for this field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field2)
     */
-  var classBreakInfos: js.UndefOr[js.Array[AuthoringInfoField2ClassBreakInfos]] = js.native
+  var classBreakInfos: js.UndefOr[js.Array[AuthoringInfoField2ClassBreakInfos]] = js.undefined
   
   /**
     * The name of a numeric field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field2)
     */
-  var field: String = js.native
+  var field: String
   
   /**
     * The label used to describe the field or variable in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field2)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a numeric field used to normalize the given `field`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field2)
     */
-  var normalizationField: js.UndefOr[String] = js.native
+  var normalizationField: js.UndefOr[String] = js.undefined
 }
 object AuthoringInfoField2 {
   

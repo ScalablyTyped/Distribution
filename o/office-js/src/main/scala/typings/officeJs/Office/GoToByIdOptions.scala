@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,19 +20,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In Word: `Office.SelectionMode.Selected` selects all content in the binding. `Office.SelectionMode.None` for text bindings, moves the cursor to 
   * the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
   */
-@js.native
 trait GoToByIdOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.native
+  var asyncContext: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies whether the location specified by the id parameter is selected (highlighted). 
     * Use {@link Office.SelectionMode} or string equivalent. See the Remarks for more information.
     */
-  var selectionMode: js.UndefOr[SelectionMode | String] = js.native
+  var selectionMode: js.UndefOr[SelectionMode | String] = js.undefined
 }
 object GoToByIdOptions {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLogGroupsResponse extends StObject {
   
   /**
     * The log groups. If the retentionInDays value if not included for a log group, then that log group is set to have its events never expire.
     */
-  var logGroups: js.UndefOr[LogGroups] = js.native
+  var logGroups: js.UndefOr[LogGroups] = js.undefined
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeLogGroupsResponse {
   

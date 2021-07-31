@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DesktopCapturer extends StObject {
   
   // Docs: https://electronjs.org/docs/api/desktop-capturer
@@ -18,7 +16,7 @@ trait DesktopCapturer extends StObject {
     * Catalina or higher, which can detected by
     * `systemPreferences.getMediaAccessStatus`.
     */
-  def getSources(options: SourcesOptions): js.Promise[js.Array[DesktopCapturerSource]] = js.native
+  def getSources(options: SourcesOptions): js.Promise[js.Array[DesktopCapturerSource]]
 }
 object DesktopCapturer {
   

@@ -3,32 +3,32 @@ package typings.blockies
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("blockies", JSImport.Namespace)
-  @js.native
-  def apply(): HTMLCanvasElement = js.native
-  @JSImport("blockies", JSImport.Namespace)
-  @js.native
-  def apply(config: BlockiesConfig): HTMLCanvasElement = js.native
+  @scala.inline
+  def apply(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HTMLCanvasElement]
+  @scala.inline
+  def apply(config: BlockiesConfig): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
   
+  @JSImport("blockies", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait BlockiesConfig extends StObject {
     
-    var bgcolor: js.UndefOr[String] = js.native
+    var bgcolor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var seed: js.UndefOr[String] = js.native
+    var seed: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var spotcolor: js.UndefOr[String] = js.native
+    var spotcolor: js.UndefOr[String] = js.undefined
   }
   object BlockiesConfig {
     

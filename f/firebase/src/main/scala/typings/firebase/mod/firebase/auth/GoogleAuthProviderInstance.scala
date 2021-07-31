@@ -2,20 +2,20 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @hidden
   */
-@js.native
-trait GoogleAuthProviderInstance extends AuthProvider {
+trait GoogleAuthProviderInstance
+  extends StObject
+     with AuthProvider {
   
   /**
     * @param scope Google OAuth scope.
     * @return The provider instance itself.
     */
-  def addScope(scope: String): AuthProvider = js.native
+  def addScope(scope: String): AuthProvider
   
   /**
     * Sets the OAuth custom parameters to pass in a Google OAuth request for popup
@@ -31,7 +31,7 @@ trait GoogleAuthProviderInstance extends AuthProvider {
     *     in the OAuth request.
     * @return The provider instance itself.
     */
-  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider
 }
 object GoogleAuthProviderInstance {
   

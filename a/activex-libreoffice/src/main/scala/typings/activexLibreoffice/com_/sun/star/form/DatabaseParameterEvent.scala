@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is fired if values for parameters are needed. */
-@js.native
-trait DatabaseParameterEvent extends EventObject {
+trait DatabaseParameterEvent
+  extends StObject
+     with EventObject {
   
   /**
     * specifies the list of parameters which are required for opening a result set.
@@ -21,7 +21,7 @@ trait DatabaseParameterEvent extends EventObject {
     * @see com.sun.star.sdb.RowSet
     * @see com.sun.star.form.component.DataForm
     */
-  var Parameters: XIndexAccess = js.native
+  var Parameters: XIndexAccess
 }
 object DatabaseParameterEvent {
   

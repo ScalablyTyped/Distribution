@@ -3,26 +3,24 @@ package typings.puppeteer.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RespondOptions extends StObject {
   
   /** Specifies the response body. */
-  var body: js.UndefOr[Buffer | String] = js.native
+  var body: js.UndefOr[Buffer | String] = js.undefined
   
   /** Specifies the Content-Type response header. */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /** Specifies the response headers. */
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
   
   /**
     * Specifies the response status code.
     * @default 200
     */
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
 }
 object RespondOptions {
   

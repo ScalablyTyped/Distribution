@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.media
 import typings.arcgisJsApi.esri.content.Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaContent
-  extends Content_
+  extends StObject
+     with Content_
      with Content
      with contentContent {
   
@@ -18,7 +18,7 @@ trait MediaContent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#mediaInfos)
     */
-  var mediaInfos: BarChartMediaInfo | ColumnChartMediaInfo | ImageMediaInfo | LineChartMediaInfo | PieChartMediaInfo | js.Array[_] = js.native
+  var mediaInfos: BarChartMediaInfo | ColumnChartMediaInfo | ImageMediaInfo | LineChartMediaInfo | PieChartMediaInfo | js.Array[js.Any] = js.native
   
   /**
     * The type of popup element displayed.

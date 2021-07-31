@@ -1,8 +1,6 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.ReverseCreateIndexFn
-import typings.nodePgMigrate.generalTypesMod.CascadeOption
-import typings.nodePgMigrate.generalTypesMod.IfExistsOption
+import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.nodePgMigrateStrings.ASC
 import typings.nodePgMigrate.nodePgMigrateStrings.DESC
@@ -13,41 +11,52 @@ import typings.nodePgMigrate.nodePgMigrateStrings.hash
 import typings.nodePgMigrate.nodePgMigrateStrings.spgist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexesTypesMod {
   
-  type CreateIndex = CreateIndexFn with ReverseCreateIndexFn
+  @js.native
+  trait CreateIndex extends CreateIndexFn {
+    
+    def reverse(tableName: Name, columns: String): String | js.Array[String] = js.native
+    def reverse(tableName: Name, columns: String, options: CreateIndexOptions & DropIndexOptions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, columns: js.Array[String | IndexColumn]): String | js.Array[String] = js.native
+    def reverse(
+      tableName: Name,
+      columns: js.Array[String | IndexColumn],
+      options: CreateIndexOptions & DropIndexOptions
+    ): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateIndexFn = js.native
+  }
   
   type CreateIndexFn = js.Function3[
     /* tableName */ Name, 
     /* columns */ String | (js.Array[String | IndexColumn]), 
-    /* options */ js.UndefOr[CreateIndexOptions with DropIndexOptions], 
+    /* options */ js.UndefOr[CreateIndexOptions & DropIndexOptions], 
     String | js.Array[String]
   ]
   
-  @js.native
   trait CreateIndexOptions extends StObject {
     
-    var concurrently: js.UndefOr[Boolean] = js.native
+    var concurrently: js.UndefOr[Boolean] = js.undefined
     
-    var ifNotExists: js.UndefOr[Boolean] = js.native
+    var ifNotExists: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[String | js.Array[String]] = js.native
+    var include: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var method: js.UndefOr[btree | hash | gist | spgist | gin] = js.native
+    var method: js.UndefOr[btree | hash | gist | spgist | gin] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated should be parameter of IndexColumn
       */
-    var opclass: js.UndefOr[Name] = js.native
+    var opclass: js.UndefOr[Name] = js.undefined
     
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
     
-    var where: js.UndefOr[String] = js.native
+    var where: js.UndefOr[String] = js.undefined
   }
   object CreateIndexOptions {
     
@@ -120,14 +129,13 @@ object indexesTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait DropIndexOptions
-    extends IfExistsOption
-       with CascadeOption {
+    extends StObject
+       with DropOptions {
     
-    var concurrently: js.UndefOr[Boolean] = js.native
+    var concurrently: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object DropIndexOptions {
     
@@ -154,14 +162,13 @@ object indexesTypesMod {
     }
   }
   
-  @js.native
   trait IndexColumn extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var opclass: js.UndefOr[Name] = js.native
+    var opclass: js.UndefOr[Name] = js.undefined
     
-    var sort: js.UndefOr[ASC | DESC] = js.native
+    var sort: js.UndefOr[ASC | DESC] = js.undefined
   }
   object IndexColumn {
     

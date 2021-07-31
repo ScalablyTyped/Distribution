@@ -2,31 +2,29 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDetectorRequest extends StObject {
   
   /**
     * The name of the detector model that created the detectors (instances).
     */
-  var detectorModelName: DetectorModelName = js.native
+  var detectorModelName: DetectorModelName
   
   /**
     * The value of the input key attribute (identifying the device or system) that caused the creation of this detector (instance).
     */
-  var keyValue: js.UndefOr[KeyValue] = js.native
+  var keyValue: js.UndefOr[KeyValue] = js.undefined
   
   /**
     * The ID to assign to the detector update "message". Each "messageId" must be unique within each batch sent.
     */
-  var messageId: MessageId = js.native
+  var messageId: MessageId
   
   /**
     * The new state, variable values, and timer settings of the detector (instance).
     */
-  var state: DetectorStateDefinition = js.native
+  var state: DetectorStateDefinition
 }
 object UpdateDetectorRequest {
   

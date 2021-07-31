@@ -2,17 +2,15 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataObjectCell extends StObject {
   
-  var f: js.UndefOr[String] = js.native
+  var f: js.UndefOr[String] = js.undefined
   
-  var p: js.UndefOr[js.Any] = js.native
+  var p: js.UndefOr[js.Any] = js.undefined
   
-  var v: js.UndefOr[js.Any] = js.native
+  var v: js.UndefOr[js.Any] = js.undefined
 }
 object DataObjectCell {
   

@@ -3,7 +3,6 @@ package typings.hdrHistogramJs
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractHistogramIteratorMod {
@@ -13,33 +12,39 @@ object abstractHistogramIteratorMod {
     */
   @JSImport("hdr-histogram-js/AbstractHistogramIterator", JSImport.Default)
   @js.native
-  abstract class default () extends AbstractHistogramIterator
-  
-  /**
-    * Used for iterating through histogram values.
-    */
-  @js.native
-  trait AbstractHistogramIterator extends StObject {
+  abstract class default ()
+    extends StObject
+       with AbstractHistogramIterator {
     
+    /* CompleteClass */
     var arrayTotalCount: Double = js.native
     
+    /* CompleteClass */
     var countAtThisValue: Double = js.native
     
+    /* CompleteClass */
     var currentIndex: Double = js.native
     
+    /* CompleteClass */
     var currentIterationValue: typings.hdrHistogramJs.histogramIterationValueMod.default = js.native
     
+    /* CompleteClass */
     var currentValueAtIndex: Double = js.native
     
+    /* CompleteClass */
     var exhaustedSubBuckets: js.Any = js.native
     
+    /* CompleteClass */
     var freshSubBucket: js.Any = js.native
     
-    def getPercentileIteratedFrom(): Double = js.native
+    /* CompleteClass */
+    override def getPercentileIteratedFrom(): Double = js.native
     
-    def getPercentileIteratedTo(): Double = js.native
+    /* CompleteClass */
+    override def getPercentileIteratedTo(): Double = js.native
     
-    def getValueIteratedTo(): Double = js.native
+    /* CompleteClass */
+    override def getValueIteratedTo(): Double = js.native
     
     /**
       * Returns true if the iteration has more elements. (In other words, returns true if next would return an
@@ -47,39 +52,118 @@ object abstractHistogramIteratorMod {
       *
       * @return true if the iterator has more elements.
       */
-    def hasNext(): Boolean = js.native
+    /* CompleteClass */
+    override def hasNext(): Boolean = js.native
     
+    /* CompleteClass */
     var histogram: AbstractHistogram = js.native
     
-    def incrementIterationLevel(): Unit = js.native
+    /* CompleteClass */
+    override def incrementIterationLevel(): Unit = js.native
     
-    def incrementSubBucket(): Unit = js.native
+    /* CompleteClass */
+    override def incrementSubBucket(): Unit = js.native
     
     /**
       * Returns the next element in the iteration.
       *
       * @return the {@link HistogramIterationValue} associated with the next element in the iteration.
       */
-    def next(): typings.hdrHistogramJs.histogramIterationValueMod.default = js.native
+    /* CompleteClass */
+    override def next(): typings.hdrHistogramJs.histogramIterationValueMod.default = js.native
     
+    /* CompleteClass */
     var nextValueAtIndex: Double = js.native
     
+    /* CompleteClass */
     var prevValueIteratedTo: Double = js.native
     
     /**
       * @return true if the current position's data should be emitted by the iterator
       */
-    def reachedIterationLevel(): Boolean = js.native
+    /* CompleteClass */
+    override def reachedIterationLevel(): Boolean = js.native
     
-    def resetIterator(histogram: AbstractHistogram): Unit = js.native
+    /* CompleteClass */
+    override def resetIterator(histogram: AbstractHistogram): Unit = js.native
     
+    /* CompleteClass */
     var savedHistogramTotalRawCount: Double = js.native
     
+    /* CompleteClass */
     var totalCountToCurrentIndex: Double = js.native
     
+    /* CompleteClass */
     var totalCountToPrevIndex: Double = js.native
     
+    /* CompleteClass */
     var totalValueToCurrentIndex: Double = js.native
+  }
+  
+  /**
+    * Used for iterating through histogram values.
+    */
+  trait AbstractHistogramIterator extends StObject {
+    
+    var arrayTotalCount: Double
+    
+    var countAtThisValue: Double
+    
+    var currentIndex: Double
+    
+    var currentIterationValue: typings.hdrHistogramJs.histogramIterationValueMod.default
+    
+    var currentValueAtIndex: Double
+    
+    var exhaustedSubBuckets: js.Any
+    
+    var freshSubBucket: js.Any
+    
+    def getPercentileIteratedFrom(): Double
+    
+    def getPercentileIteratedTo(): Double
+    
+    def getValueIteratedTo(): Double
+    
+    /**
+      * Returns true if the iteration has more elements. (In other words, returns true if next would return an
+      * element rather than throwing an exception.)
+      *
+      * @return true if the iterator has more elements.
+      */
+    def hasNext(): Boolean
+    
+    var histogram: AbstractHistogram
+    
+    def incrementIterationLevel(): Unit
+    
+    def incrementSubBucket(): Unit
+    
+    /**
+      * Returns the next element in the iteration.
+      *
+      * @return the {@link HistogramIterationValue} associated with the next element in the iteration.
+      */
+    def next(): typings.hdrHistogramJs.histogramIterationValueMod.default
+    
+    var nextValueAtIndex: Double
+    
+    var prevValueIteratedTo: Double
+    
+    /**
+      * @return true if the current position's data should be emitted by the iterator
+      */
+    def reachedIterationLevel(): Boolean
+    
+    def resetIterator(histogram: AbstractHistogram): Unit
+    
+    var savedHistogramTotalRawCount: Double
+    
+    var totalCountToCurrentIndex: Double
+    
+    var totalCountToPrevIndex: Double
+    
+    var totalValueToCurrentIndex: Double
   }
   object AbstractHistogramIterator {
     

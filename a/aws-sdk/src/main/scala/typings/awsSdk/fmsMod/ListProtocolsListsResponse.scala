@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProtocolsListsResponse extends StObject {
   
   /**
     * If you specify a value for MaxResults in your list request, and you have more objects than the maximum, AWS Firewall Manager returns this token in the response. You can use this token in subsequent requests to retrieve the next batch of objects.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * An array of ProtocolsListDataSummary objects.
     */
-  var ProtocolsLists: js.UndefOr[ProtocolsListsData] = js.native
+  var ProtocolsLists: js.UndefOr[ProtocolsListsData] = js.undefined
 }
 object ListProtocolsListsResponse {
   

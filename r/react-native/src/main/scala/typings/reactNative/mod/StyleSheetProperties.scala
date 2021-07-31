@@ -2,15 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleSheetProperties extends StObject {
   
-  def flatten[T /* <: String */](style: T): T = js.native
+  def flatten[T /* <: String */](style: T): T
   
-  var hairlineWidth: Double = js.native
+  var hairlineWidth: Double
 }
 object StyleSheetProperties {
   

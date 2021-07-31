@@ -6,21 +6,19 @@ import typings.std.OffscreenCanvas
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedWebGLRenderingContext extends StObject {
   
-  def addRestorable(restorable: Restorable): Unit = js.native
+  def addRestorable(restorable: Restorable): Unit
   
-  var canvas: HTMLCanvasElement | OffscreenCanvas = js.native
+  var canvas: HTMLCanvasElement | OffscreenCanvas
   
-  var gl: WebGLRenderingContext = js.native
+  var gl: WebGLRenderingContext
   
-  def removeRestorable(restorable: Restorable): Unit = js.native
+  def removeRestorable(restorable: Restorable): Unit
   
-  var restorables: js.Any = js.native
+  var restorables: js.Any
 }
 object ManagedWebGLRenderingContext {
   

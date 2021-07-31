@@ -3,58 +3,56 @@ package typings.vegaLite.anon
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<vega.vega.AggregateOp, std.Set<string>>> */
-@js.native
 trait PartialRecordAggregateOpS extends StObject {
   
-  var argmax: js.UndefOr[Set[String]] = js.native
+  var argmax: js.UndefOr[Set[String]] = js.undefined
   
-  var argmin: js.UndefOr[Set[String]] = js.native
+  var argmin: js.UndefOr[Set[String]] = js.undefined
   
-  var average: js.UndefOr[Set[String]] = js.native
+  var average: js.UndefOr[Set[String]] = js.undefined
   
-  var ci0: js.UndefOr[Set[String]] = js.native
+  var ci0: js.UndefOr[Set[String]] = js.undefined
   
-  var ci1: js.UndefOr[Set[String]] = js.native
+  var ci1: js.UndefOr[Set[String]] = js.undefined
   
-  var count: js.UndefOr[Set[String]] = js.native
+  var count: js.UndefOr[Set[String]] = js.undefined
   
-  var distinct: js.UndefOr[Set[String]] = js.native
+  var distinct: js.UndefOr[Set[String]] = js.undefined
   
-  var max: js.UndefOr[Set[String]] = js.native
+  var max: js.UndefOr[Set[String]] = js.undefined
   
-  var mean: js.UndefOr[Set[String]] = js.native
+  var mean: js.UndefOr[Set[String]] = js.undefined
   
-  var median: js.UndefOr[Set[String]] = js.native
+  var median: js.UndefOr[Set[String]] = js.undefined
   
-  var min: js.UndefOr[Set[String]] = js.native
+  var min: js.UndefOr[Set[String]] = js.undefined
   
-  var missing: js.UndefOr[Set[String]] = js.native
+  var missing: js.UndefOr[Set[String]] = js.undefined
   
-  var product: js.UndefOr[Set[String]] = js.native
+  var product: js.UndefOr[Set[String]] = js.undefined
   
-  var q1: js.UndefOr[Set[String]] = js.native
+  var q1: js.UndefOr[Set[String]] = js.undefined
   
-  var q3: js.UndefOr[Set[String]] = js.native
+  var q3: js.UndefOr[Set[String]] = js.undefined
   
-  var stderr: js.UndefOr[Set[String]] = js.native
+  var stderr: js.UndefOr[Set[String]] = js.undefined
   
-  var stdev: js.UndefOr[Set[String]] = js.native
+  var stdev: js.UndefOr[Set[String]] = js.undefined
   
-  var stdevp: js.UndefOr[Set[String]] = js.native
+  var stdevp: js.UndefOr[Set[String]] = js.undefined
   
-  var sum: js.UndefOr[Set[String]] = js.native
+  var sum: js.UndefOr[Set[String]] = js.undefined
   
-  var valid: js.UndefOr[Set[String]] = js.native
+  var valid: js.UndefOr[Set[String]] = js.undefined
   
-  var values: js.UndefOr[Set[String]] = js.native
+  var values: js.UndefOr[Set[String]] = js.undefined
   
-  var variance: js.UndefOr[Set[String]] = js.native
+  var variance: js.UndefOr[Set[String]] = js.undefined
   
-  var variancep: js.UndefOr[Set[String]] = js.native
+  var variancep: js.UndefOr[Set[String]] = js.undefined
 }
 object PartialRecordAggregateOpS {
   

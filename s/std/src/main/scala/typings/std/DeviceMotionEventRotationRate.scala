@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceMotionEventRotationRate extends StObject {
   
-  val alpha: Double | Null = js.native
+  val alpha: Double | Null
   
-  val beta: Double | Null = js.native
+  val beta: Double | Null
   
-  val gamma: Double | Null = js.native
+  val gamma: Double | Null
 }
 object DeviceMotionEventRotationRate {
   
   @scala.inline
   def apply(): DeviceMotionEventRotationRate = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(alpha = null, beta = null, gamma = null)
     __obj.asInstanceOf[DeviceMotionEventRotationRate]
   }
   

@@ -5,50 +5,50 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XDictionary1 extends XNamed {
+trait XDictionary1
+  extends StObject
+     with XNamed {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val DictionaryType: typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType = js.native
+  val DictionaryType: typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType
   
-  val Entries: SafeArray[XDictionaryEntry] = js.native
+  val Entries: SafeArray[XDictionaryEntry]
   
-  var Language: Double = js.native
+  var Language: Double
   
-  def add(aWord: String, bIsNegative: Boolean, aRplcText: String): Boolean = js.native
+  def add(aWord: String, bIsNegative: Boolean, aRplcText: String): Boolean
   
-  def addDictionaryEventListener(xListener: XDictionaryEventListener): Boolean = js.native
+  def addDictionaryEventListener(xListener: XDictionaryEventListener): Boolean
   
-  def addEntry(xDicEntry: XDictionaryEntry): Boolean = js.native
+  def addEntry(xDicEntry: XDictionaryEntry): Boolean
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def getCount(): Double = js.native
+  def getCount(): Double
   
-  def getDictionaryType(): typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType = js.native
+  def getDictionaryType(): typings.activexLibreoffice.com_.sun.star.linguistic2.DictionaryType
   
-  def getEntries(): SafeArray[XDictionaryEntry] = js.native
+  def getEntries(): SafeArray[XDictionaryEntry]
   
-  def getEntry(aWord: String): XDictionaryEntry = js.native
+  def getEntry(aWord: String): XDictionaryEntry
   
-  def getLanguage(): Double = js.native
+  def getLanguage(): Double
   
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
-  def isFull(): Boolean = js.native
+  def isFull(): Boolean
   
-  def remove(aWord: String): Boolean = js.native
+  def remove(aWord: String): Boolean
   
-  def removeDictionaryEventListener(xListener: XDictionaryEventListener): Boolean = js.native
+  def removeDictionaryEventListener(xListener: XDictionaryEventListener): Boolean
   
-  def setActive(bActivate: Boolean): Unit = js.native
+  def setActive(bActivate: Boolean): Unit
   
-  def setLanguage(nLang: Double): Unit = js.native
+  def setLanguage(nLang: Double): Unit
 }
 object XDictionary1 {
   

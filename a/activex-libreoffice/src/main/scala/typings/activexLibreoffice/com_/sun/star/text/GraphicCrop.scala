@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If this property is applied to a graphic object, then this object will correct these values if necessary.
   */
-@js.native
 trait GraphicCrop extends StObject {
   
   /** contains the bottom value to cut (if negative) or to extend (if positive) */
-  var Bottom: Double = js.native
+  var Bottom: Double
   
   /** contains the left value to cut (if negative) or to extend (if positive) */
-  var Left: Double = js.native
+  var Left: Double
   
   /** contains the right value to cut (if negative) or to extend (if positive) */
-  var Right: Double = js.native
+  var Right: Double
   
   /** contains the top value to cut (if negative) or to extend (if positive) */
-  var Top: Double = js.native
+  var Top: Double
 }
 object GraphicCrop {
   

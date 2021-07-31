@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RangeRuleInfo")
@@ -37,9 +36,8 @@ object RangeRuleInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RangeRuleInfo.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.RangeRuleInfo = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.RangeRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.RangeRuleInfo]
   
   /**
     * Creates and returns a new RangeRuleInfo instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object RangeRuleInfo {
     * of the parent ValidationRule element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RangeRuleInfo.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.RangeRuleInfo = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.RangeRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.RangeRuleInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RangeRuleInfo.structureTypeName")

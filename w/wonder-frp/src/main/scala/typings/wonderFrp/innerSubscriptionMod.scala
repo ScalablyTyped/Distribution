@@ -4,29 +4,37 @@ import typings.wonderFrp.generatorSubjectMod.GeneratorSubject
 import typings.wonderFrp.idisposableMod.IDisposable
 import typings.wonderFrp.observerMod.Observer
 import typings.wonderFrp.subjectMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/Disposable/InnerSubscription", JSImport.Namespace)
-@js.native
-object innerSubscriptionMod extends js.Object {
+object innerSubscriptionMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/Disposable/InnerSubscription", "InnerSubscription")
   @js.native
-  class InnerSubscription protected () extends IDisposable {
+  class InnerSubscription protected ()
+    extends StObject
+       with IDisposable {
     def this(subject: GeneratorSubject, observer: Observer) = this()
     def this(subject: Subject, observer: Observer) = this()
+    
     var _observer: js.Any = js.native
+    
     var _subject: js.Any = js.native
+    
     /* CompleteClass */
     override def dispose(): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object InnerSubscription extends js.Object {
-    def create(subject: GeneratorSubject, observer: Observer): InnerSubscription = js.native
-    def create(subject: Subject, observer: Observer): InnerSubscription = js.native
+  object InnerSubscription {
+    
+    @JSImport("wonder-frp/dist/commonjs/Disposable/InnerSubscription", "InnerSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(subject: GeneratorSubject, observer: Observer): InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[InnerSubscription]
+    @scala.inline
+    def create(subject: Subject, observer: Observer): InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[InnerSubscription]
   }
-  
 }
-

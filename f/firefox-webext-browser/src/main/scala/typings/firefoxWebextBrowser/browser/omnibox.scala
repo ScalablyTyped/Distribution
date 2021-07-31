@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,23 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object omnibox {
   
   /** A suggest result. */
-  @js.native
   trait DefaultSuggestResult extends StObject {
     
     /** The text that is displayed in the URL dropdown. */
-    var description: String = js.native
+    var description: String
     
     /**
       * An array of style ranges for the description, as provided by the extension.
       * @deprecated Unsupported on Firefox at this time.
       */
-    var descriptionStyles: js.UndefOr[js.Array[DefaultSuggestResultDescriptionStyles]] = js.native
+    var descriptionStyles: js.UndefOr[js.Array[DefaultSuggestResultDescriptionStyles]] = js.undefined
     
     /**
       * An array of style ranges for the description, as provided by ToValue().
       * @deprecated Unsupported on Firefox at this time.
       */
-    var descriptionStylesRaw: js.UndefOr[js.Array[DefaultSuggestResultDescriptionStylesRaw]] = js.native
+    var descriptionStylesRaw: js.UndefOr[js.Array[DefaultSuggestResultDescriptionStylesRaw]] = js.undefined
   }
   object DefaultSuggestResult {
     
@@ -68,15 +66,14 @@ object omnibox {
   }
   
   /** The style ranges for the description, as provided by the extension. */
-  @js.native
   trait DefaultSuggestResultDescriptionStyles extends StObject {
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
     
     /** The style type */
-    var `type`: DescriptionStyleType = js.native
+    var `type`: DescriptionStyleType
   }
   object DefaultSuggestResultDescriptionStyles {
     
@@ -105,12 +102,11 @@ object omnibox {
   }
   
   /** The style ranges for the description, as provided by ToValue(). */
-  @js.native
   trait DefaultSuggestResultDescriptionStylesRaw extends StObject {
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object DefaultSuggestResultDescriptionStylesRaw {
     
@@ -174,30 +170,29 @@ object omnibox {
   }
   
   /** A suggest result. */
-  @js.native
   trait SuggestResult extends StObject {
     
     /**
       * The text that is put into the URL bar, and that is sent to the extension when the user chooses this entry.
       */
-    var content: String = js.native
+    var content: String
     
     /**
       * The text that is displayed in the URL dropdown. Can contain XML-style markup for styling. The supported tags are 'url' (for a literal URL), 'match' (for highlighting text that matched what the user's query), and 'dim' (for dim helper text). The styles can be nested, eg. <dim><match>dimmed match</match></dim>. You must escape the five predefined entities to display them as text: stackoverflow.com/a/1091953/89484
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * An array of style ranges for the description, as provided by the extension.
       * @deprecated Unsupported on Firefox at this time.
       */
-    var descriptionStyles: js.UndefOr[js.Array[SuggestResultDescriptionStyles]] = js.native
+    var descriptionStyles: js.UndefOr[js.Array[SuggestResultDescriptionStyles]] = js.undefined
     
     /**
       * An array of style ranges for the description, as provided by ToValue().
       * @deprecated Unsupported on Firefox at this time.
       */
-    var descriptionStylesRaw: js.UndefOr[js.Array[SuggestResultDescriptionStylesRaw]] = js.native
+    var descriptionStylesRaw: js.UndefOr[js.Array[SuggestResultDescriptionStylesRaw]] = js.undefined
   }
   object SuggestResult {
     
@@ -237,15 +232,14 @@ object omnibox {
   }
   
   /** The style ranges for the description, as provided by the extension. */
-  @js.native
   trait SuggestResultDescriptionStyles extends StObject {
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
     
     /** The style type */
-    var `type`: DescriptionStyleType = js.native
+    var `type`: DescriptionStyleType
   }
   object SuggestResultDescriptionStyles {
     
@@ -274,12 +268,11 @@ object omnibox {
   }
   
   /** The style ranges for the description, as provided by ToValue(). */
-  @js.native
   trait SuggestResultDescriptionStylesRaw extends StObject {
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object SuggestResultDescriptionStylesRaw {
     

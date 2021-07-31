@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncDeploymentJobRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: ClientRequestToken = js.native
+  var clientRequestToken: ClientRequestToken
   
   /**
     * The target fleet for the synchronization.
     */
-  var fleet: Arn = js.native
+  var fleet: Arn
 }
 object SyncDeploymentJobRequest {
   

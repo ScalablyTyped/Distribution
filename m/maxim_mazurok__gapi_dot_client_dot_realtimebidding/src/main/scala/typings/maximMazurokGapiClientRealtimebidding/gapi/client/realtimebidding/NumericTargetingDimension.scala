@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericTargetingDimension extends StObject {
   
   /** The IDs excluded in a configuration. */
-  var excludedIds: js.UndefOr[js.Array[String]] = js.native
+  var excludedIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The IDs included in a configuration. */
-  var includedIds: js.UndefOr[js.Array[String]] = js.native
+  var includedIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object NumericTargetingDimension {
   

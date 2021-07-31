@@ -9,65 +9,64 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageProps
-  extends typings.reactNative.mod.ImageProps {
+  extends StObject
+     with typings.reactNative.mod.ImageProps {
   
   /**
     * Component for enclosing element (eg: TouchableHighlight, View, etc)
     *
     * @default View
     */
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Specify a different component as the Image component.
     *
     * @default Image
     */
-  var ImageComponent: js.UndefOr[ComponentType[_]] = js.native
+  var ImageComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
   /**
     * Content to render when image is loading
     */
-  var PlaceholderContent: js.UndefOr[ReactElement] = js.native
+  var PlaceholderContent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * Additional styling for the container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Callback function when long pressing component
     */
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback function when pressing component
     */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Additional styling for the placeholder container
     */
-  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Perform fade transition on image load
     *
     * @default true
     */
-  var transition: js.UndefOr[Boolean] = js.native
+  var transition: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets transition's duration
     *
     * @default 360
     */
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
 }
 object ImageProps {
   
@@ -96,7 +95,7 @@ object ImageProps {
     def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setImageComponent(value: ComponentType[_]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
+    def setImageComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)

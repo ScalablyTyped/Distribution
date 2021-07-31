@@ -2,21 +2,19 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakeDefault extends StObject {
   
-  var failOnDuplicatePaymentMethod: js.UndefOr[Boolean] = js.native
+  var failOnDuplicatePaymentMethod: js.UndefOr[Boolean] = js.undefined
   
-  var makeDefault: js.UndefOr[Boolean] = js.native
+  var makeDefault: js.UndefOr[Boolean] = js.undefined
   
-  var verificationAmount: js.UndefOr[String] = js.native
+  var verificationAmount: js.UndefOr[String] = js.undefined
   
-  var verificationMerchantAccountId: js.UndefOr[String] = js.native
+  var verificationMerchantAccountId: js.UndefOr[String] = js.undefined
   
-  var verifyCard: js.UndefOr[Boolean] = js.native
+  var verifyCard: js.UndefOr[Boolean] = js.undefined
 }
 object MakeDefault {
   

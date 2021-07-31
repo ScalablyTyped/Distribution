@@ -3,17 +3,15 @@ package typings.angularUiTree
 import typings.angularUiTree.AngularUITree.IParentTreeNodeScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var nodesScope: IParentTreeNodeScope = js.native
+    var nodesScope: IParentTreeNodeScope
   }
   object Index {
     

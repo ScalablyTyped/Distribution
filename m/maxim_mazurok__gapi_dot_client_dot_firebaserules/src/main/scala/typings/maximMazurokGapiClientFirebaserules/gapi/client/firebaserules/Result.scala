@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
   /** The result is undefined, meaning the result could not be computed. */
-  var undefined: js.UndefOr[js.Any] = js.native
+  var undefined: js.UndefOr[js.Any] = js.undefined
   
   /** The result is an actual value. The type of the value must match that of the type declared by the service. */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object Result {
   

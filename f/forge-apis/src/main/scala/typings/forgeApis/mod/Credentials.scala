@@ -2,19 +2,17 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentials extends StObject {
   
-  var client_id: String = js.native
+  var client_id: String
   
-  var client_secret: String = js.native
+  var client_secret: String
   
-  var grant_type: String = js.native
+  var grant_type: String
   
-  var scope: js.UndefOr[Scope] = js.native
+  var scope: js.UndefOr[Scope] = js.undefined
 }
 object Credentials {
   

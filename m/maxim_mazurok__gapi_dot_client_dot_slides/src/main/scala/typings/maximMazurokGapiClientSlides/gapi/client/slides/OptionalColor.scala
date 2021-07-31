@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionalColor extends StObject {
   
   /** If set, this will be used as an opaque color. If unset, this represents a transparent color. */
-  var opaqueColor: js.UndefOr[OpaqueColor] = js.native
+  var opaqueColor: js.UndefOr[OpaqueColor] = js.undefined
 }
 object OptionalColor {
   

@@ -4,49 +4,47 @@ import typings.mfiles.MFiles.MFACLEnforcingMode
 import typings.mfiles.MFiles.MFMetadataSyncFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultObjectPropertyOperations extends StObject {
   
-  def ApproveOrRejectAssignment(ObjVer: IObjVer, Approve: Boolean): IObjectVersionAndProperties = js.native
+  def ApproveOrRejectAssignment(ObjVer: IObjVer, Approve: Boolean): IObjectVersionAndProperties
   
-  def ApproveOrRejectAssignmentByUser(ObjVer: IObjVer, Approve: Boolean, UserID: Double): IObjectVersionAndProperties = js.native
+  def ApproveOrRejectAssignmentByUser(ObjVer: IObjVer, Approve: Boolean, UserID: Double): IObjectVersionAndProperties
   
-  def CreatePropertiesFromFileInformation(FileInformation: IFileInformation): IPropertyValues = js.native
+  def CreatePropertiesFromFileInformation(FileInformation: IFileInformation): IPropertyValues
   
-  def GenerateAutomaticPermissionsFromPropertyValues(PropertyValues: IPropertyValues): IAccessControlList = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(PropertyValues: IPropertyValues): IAccessControlList
   
-  def GetProperties(ObjVer: IObjVer, UpdateFromServer: Boolean): IPropertyValues = js.native
+  def GetProperties(ObjVer: IObjVer, UpdateFromServer: Boolean): IPropertyValues
   
-  def GetPropertiesAsXML(ObjVer: IObjVer, UpdateFromServer: Boolean): String = js.native
+  def GetPropertiesAsXML(ObjVer: IObjVer, UpdateFromServer: Boolean): String
   
-  def GetPropertiesForDisplay(ObjVer: IObjVer, UpdateFromServer: Boolean): IPropertyValuesForDisplay = js.native
+  def GetPropertiesForDisplay(ObjVer: IObjVer, UpdateFromServer: Boolean): IPropertyValuesForDisplay
   
-  def GetPropertiesForMetadataSync(ObjVer: IObjVer, Format: MFMetadataSyncFormat): INamedValues = js.native
+  def GetPropertiesForMetadataSync(ObjVer: IObjVer, Format: MFMetadataSyncFormat): INamedValues
   
-  def GetPropertiesOfMultipleObjects(ObjectVersions: IObjVers): IPropertyValuesOfMultipleObjects = js.native
+  def GetPropertiesOfMultipleObjects(ObjectVersions: IObjVers): IPropertyValuesOfMultipleObjects
   
-  def GetPropertiesWithIconClues(ObjVer: IObjVer, UpdateFromServer: Boolean): IPropertyValuesWithIconClues = js.native
+  def GetPropertiesWithIconClues(ObjVer: IObjVer, UpdateFromServer: Boolean): IPropertyValuesWithIconClues
   
-  def GetPropertiesWithIconCluesOfMultipleObjects(ObjectVersions: IObjVers): IPropertyValuesWithIconCluesOfMultipleObjects = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(ObjectVersions: IObjVers): IPropertyValuesWithIconCluesOfMultipleObjects
   
-  def GetProperty(ObjVer: IObjVer, Property: Double): IPropertyValue = js.native
+  def GetProperty(ObjVer: IObjVer, Property: Double): IPropertyValue
   
-  def GetVersionComment(ObjVer: IObjVer): IVersionComment = js.native
+  def GetVersionComment(ObjVer: IObjVer): IVersionComment
   
-  def GetVersionCommentHistory(ObjVer: IObjVer): IVersionComments = js.native
+  def GetVersionCommentHistory(ObjVer: IObjVer): IVersionComments
   
-  def GetWorkflowState(ObjVer: IObjVer, UpdateFromServer: Boolean): IObjectVersionWorkflowState = js.native
+  def GetWorkflowState(ObjVer: IObjVer, UpdateFromServer: Boolean): IObjectVersionWorkflowState
   
-  def MarkAssignmentComplete(ObjVer: IObjVer): IObjectVersionAndProperties = js.native
+  def MarkAssignmentComplete(ObjVer: IObjVer): IObjectVersionAndProperties
   
-  def MarkAssignmentCompleteByUser(ObjVer: IObjVer, UserID: Double): IObjectVersionAndProperties = js.native
+  def MarkAssignmentCompleteByUser(ObjVer: IObjVer, UserID: Double): IObjectVersionAndProperties
   
-  def RemoveProperty(ObjVer: IObjVer, Property: Double): IObjectVersionAndProperties = js.native
+  def RemoveProperty(ObjVer: IObjVer, Property: Double): IObjectVersionAndProperties
   
-  def SetAllProperties(ObjVer: IObjVer, AllowModifyingCheckedInObject: Boolean, PropertyValues: IPropertyValues): IObjectVersionAndProperties = js.native
+  def SetAllProperties(ObjVer: IObjVer, AllowModifyingCheckedInObject: Boolean, PropertyValues: IPropertyValues): IObjectVersionAndProperties
   
   def SetAllPropertiesWithPermissions(
     ObjVer: IObjVer,
@@ -54,7 +52,7 @@ trait IVaultObjectPropertyOperations extends StObject {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
   
   def SetAllPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
@@ -63,7 +61,7 @@ trait IVaultObjectPropertyOperations extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     ElectronicSignature: js.Any
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
   
   def SetCreationInfoAdmin(
     ObjVer: IObjVer,
@@ -71,7 +69,7 @@ trait IVaultObjectPropertyOperations extends StObject {
     CreatedBy: ITypedValue,
     UpdateCreated: Boolean,
     CreatedUtc: ITypedValue
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
   
   def SetLastModificationInfoAdmin(
     ObjVer: IObjVer,
@@ -79,18 +77,18 @@ trait IVaultObjectPropertyOperations extends StObject {
     LastModifiedBy: ITypedValue,
     UpdateLastModified: Boolean,
     LastModifiedUtc: ITypedValue
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
   
-  def SetProperties(ObjVer: IObjVer, PropertyValues: IPropertyValues): IObjectVersionAndProperties = js.native
+  def SetProperties(ObjVer: IObjVer, PropertyValues: IPropertyValues): IObjectVersionAndProperties
   
-  def SetPropertiesOfMultipleObjects(SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects): IObjectVersionAndPropertiesOfMultipleObjects = js.native
+  def SetPropertiesOfMultipleObjects(SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects): IObjectVersionAndPropertiesOfMultipleObjects
   
   def SetPropertiesWithPermissions(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
   
   def SetPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
@@ -98,17 +96,17 @@ trait IVaultObjectPropertyOperations extends StObject {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     ElectronicSignature: js.Any
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
   
-  def SetProperty(ObjVer: IObjVer, PropertyValue: IPropertyValue): IObjectVersionAndProperties = js.native
+  def SetProperty(ObjVer: IObjVer, PropertyValue: IPropertyValue): IObjectVersionAndProperties
   
-  def SetVersionComment(ObjVer: IObjVer, VersionComment: IPropertyValue): IObjectVersionAndProperties = js.native
+  def SetVersionComment(ObjVer: IObjVer, VersionComment: IPropertyValue): IObjectVersionAndProperties
   
-  def SetWorkflowState(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState): IObjectVersionAndProperties = js.native
+  def SetWorkflowState(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState): IObjectVersionAndProperties
   
-  def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: js.Any): IObjectVersionAndProperties = js.native
+  def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: js.Any): IObjectVersionAndProperties
   
-  def SetWorkflowStateTransition(ObjVer: IObjVer, Workflow: Double, lStateTransition: Double, lVersionComment: String): IObjectVersionAndProperties = js.native
+  def SetWorkflowStateTransition(ObjVer: IObjVer, Workflow: Double, lStateTransition: Double, lVersionComment: String): IObjectVersionAndProperties
   
   def SetWorkflowStateTransitionEx(
     ObjVer: IObjVer,
@@ -116,7 +114,7 @@ trait IVaultObjectPropertyOperations extends StObject {
     StateTransition: Double,
     VersionComment: String,
     ElectronicSignature: js.Any
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
 }
 object IVaultObjectPropertyOperations {
   

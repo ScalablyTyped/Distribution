@@ -11,8 +11,8 @@ cjson - Commented JavaScript Object Notation. It is a json loader, which parses 
 | Full name          | cjson |
 | Keywords           | json, parser, comments, config, loader |
 | # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 18908358 |
+| # dependents       | 133 |
+| # downloads        | 19802162 |
 | # stars            | 6 |
 
 ## Links

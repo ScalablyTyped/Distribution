@@ -2,27 +2,27 @@ package typings.stringSimilarity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("string-similarity", "compareTwoStrings")
+  @JSImport("string-similarity", JSImport.Namespace)
   @js.native
-  def compareTwoStrings(string1: String, string2: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("string-similarity", "findBestMatch")
-  @js.native
-  def findBestMatch(mainString: String, targetStrings: js.Array[String]): BestMatch = js.native
+  @scala.inline
+  def compareTwoStrings(string1: String, string2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareTwoStrings")(string1.asInstanceOf[js.Any], string2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def findBestMatch(mainString: String, targetStrings: js.Array[String]): BestMatch = (^.asInstanceOf[js.Dynamic].applyDynamic("findBestMatch")(mainString.asInstanceOf[js.Any], targetStrings.asInstanceOf[js.Any])).asInstanceOf[BestMatch]
+  
   trait BestMatch extends StObject {
     
-    var bestMatch: Rating = js.native
+    var bestMatch: Rating
     
-    var bestMatchIndex: Double = js.native
+    var bestMatchIndex: Double
     
-    var ratings: js.Array[Rating] = js.native
+    var ratings: js.Array[Rating]
   }
   object BestMatch {
     
@@ -49,12 +49,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Rating extends StObject {
     
-    var rating: Double = js.native
+    var rating: Double
     
-    var target: String = js.native
+    var target: String
   }
   object Rating {
     

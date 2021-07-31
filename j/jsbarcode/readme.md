@@ -10,10 +10,10 @@ JsBarcode is a customizable barcode generator with support for multiple barcode 
 | ------------------ | :-------------: |
 | Full name          | jsbarcode |
 | Keywords           | barcode, canvas, code128, upc, ean, itf, msi, pharmacode |
-| # releases         | 7 |
-| # dependents       | 80 |
-| # downloads        | 3106389 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 100 |
+| # downloads        | 3882119 |
+| # stars            | 16 |
 
 ## Links
 - [Homepage](https://github.com/lindell/JsBarcode#readme)

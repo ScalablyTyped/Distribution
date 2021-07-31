@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Floodlightconfigurations")
@@ -31,7 +30,7 @@ class ResourceFloodlightconfigurations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def get(callback: BodyResponseCallback[SchemaFloodlightConfiguration]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def get(params: ParamsResourceFloodlightconfigurationsGet): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def get(
     params: ParamsResourceFloodlightconfigurationsGet,
@@ -64,7 +63,7 @@ class ResourceFloodlightconfigurations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaFloodlightConfigurationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaFloodlightConfigurationsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfigurationsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFloodlightConfigurationsListResponse] = js.native
   def list(params: ParamsResourceFloodlightconfigurationsList): GaxiosPromise[SchemaFloodlightConfigurationsListResponse] = js.native
   def list(
     params: ParamsResourceFloodlightconfigurationsList,
@@ -99,7 +98,7 @@ class ResourceFloodlightconfigurations protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def patch(callback: BodyResponseCallback[SchemaFloodlightConfiguration]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def patch(params: ParamsResourceFloodlightconfigurationsPatch): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def patch(
     params: ParamsResourceFloodlightconfigurationsPatch,
@@ -132,7 +131,7 @@ class ResourceFloodlightconfigurations protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def update(callback: BodyResponseCallback[SchemaFloodlightConfiguration]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def update(params: ParamsResourceFloodlightconfigurationsUpdate): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def update(
     params: ParamsResourceFloodlightconfigurationsUpdate,

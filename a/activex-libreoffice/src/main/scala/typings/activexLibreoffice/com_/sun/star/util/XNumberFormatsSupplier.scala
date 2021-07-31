@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** supplies the collection of {@link NumberFormats} (for example, in a document) and the settings belonging to these formats. */
-@js.native
-trait XNumberFormatsSupplier extends XInterface {
+trait XNumberFormatsSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the {@link NumberFormatSettings} of this object. */
-  val NumberFormatSettings: XPropertySet = js.native
+  val NumberFormatSettings: XPropertySet
   
   /** @returns the collection of number formats belonging to this object (e.g., to this document). */
-  val NumberFormats: XNumberFormats = js.native
+  val NumberFormats: XNumberFormats
   
   /** @returns the {@link NumberFormatSettings} of this object. */
-  def getNumberFormatSettings(): XPropertySet = js.native
+  def getNumberFormatSettings(): XPropertySet
   
   /** @returns the collection of number formats belonging to this object (e.g., to this document). */
-  def getNumberFormats(): XNumberFormats = js.native
+  def getNumberFormats(): XNumberFormats
 }
 object XNumberFormatsSupplier {
   

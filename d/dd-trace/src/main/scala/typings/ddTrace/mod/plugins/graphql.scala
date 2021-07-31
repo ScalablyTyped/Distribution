@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.anon.Execute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,8 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * ```
   */
-@js.native
-trait graphql extends Instrumentation {
+trait graphql
+  extends StObject
+     with Instrumentation {
   
   /**
     * Whether to collapse list items into a single element. (i.e. single
@@ -40,7 +40,7 @@ trait graphql extends Instrumentation {
     *
     * @default true
     */
-  var collapse: js.UndefOr[Boolean] = js.native
+  var collapse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum depth of fields/resolvers to instrument. Set to `0` to only
@@ -48,7 +48,7 @@ trait graphql extends Instrumentation {
     *
     * @default -1
     */
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
   /**
     * An object of optional callbacks to be executed during the respective
@@ -57,7 +57,7 @@ trait graphql extends Instrumentation {
     *
     * @default {}
     */
-  var hooks: js.UndefOr[Execute] = js.native
+  var hooks: js.UndefOr[Execute] = js.undefined
   
   /**
     * Whether to enable signature calculation for the resource name. This can
@@ -65,7 +65,7 @@ trait graphql extends Instrumentation {
     *
     * @default true
     */
-  var signature: js.UndefOr[Boolean] = js.native
+  var signature: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of variable names to record. Can also be a callback that returns
@@ -73,8 +73,8 @@ trait graphql extends Instrumentation {
     * `variables => variables` would record all variables.
     */
   var variables: js.UndefOr[
-    js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]])
-  ] = js.native
+    js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[js.Any]])
+  ] = js.undefined
 }
 object graphql {
   
@@ -113,11 +113,11 @@ object graphql {
     
     @scala.inline
     def setVariables(
-      value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]])
+      value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[js.Any]])
     ): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariablesFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[_]): Self = StObject.set(x, "variables", js.Any.fromFunction1(value))
+    def setVariablesFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "variables", js.Any.fromFunction1(value))
     
     @scala.inline
     def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)

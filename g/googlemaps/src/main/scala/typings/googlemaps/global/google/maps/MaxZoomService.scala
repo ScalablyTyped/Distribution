@@ -2,7 +2,6 @@ package typings.googlemaps.global.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,4 +11,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("google.maps.MaxZoomService")
 @js.native
 class MaxZoomService ()
-  extends typings.googlemaps.google.maps.MaxZoomService
+  extends StObject
+     with typings.googlemaps.google.maps.MaxZoomService

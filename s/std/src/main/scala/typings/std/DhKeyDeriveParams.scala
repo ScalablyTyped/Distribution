@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DhKeyDeriveParams extends Algorithm {
+trait DhKeyDeriveParams
+  extends StObject
+     with Algorithm {
   
-  var public: CryptoKey = js.native
+  var public: CryptoKey
 }
 object DhKeyDeriveParams {
   

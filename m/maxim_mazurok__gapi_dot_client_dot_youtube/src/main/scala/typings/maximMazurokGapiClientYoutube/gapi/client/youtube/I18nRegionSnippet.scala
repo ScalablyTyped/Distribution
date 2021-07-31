@@ -2,18 +2,16 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name
-@js.native
 trait I18nRegionSnippet extends StObject {
   
   /** The region code as a 2-letter ISO country code. */
-  var gl: js.UndefOr[String] = js.native
+  var gl: js.UndefOr[String] = js.undefined
   
   /** The human-readable name of the region. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object I18nRegionSnippet {
   

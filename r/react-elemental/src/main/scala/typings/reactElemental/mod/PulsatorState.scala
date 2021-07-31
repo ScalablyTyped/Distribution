@@ -2,13 +2,11 @@ package typings.reactElemental.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PulsatorState extends StObject {
   
-  val color: js.Any = js.native
+  val color: js.Any
 }
 object PulsatorState {
   

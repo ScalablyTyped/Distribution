@@ -2,33 +2,31 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Diagnostics for a single beacon.
   */
-@js.native
 trait SchemaDiagnostics extends StObject {
   
   /**
     * An unordered list of Alerts that the beacon has.
     */
-  var alerts: js.UndefOr[js.Array[String]] = js.native
+  var alerts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Resource name of the beacon. For Eddystone-EID beacons, this may be the
     * beacon&#39;s current EID, or the beacon&#39;s &quot;stable&quot;
     * Eddystone-UID.
     */
-  var beaconName: js.UndefOr[String] = js.native
+  var beaconName: js.UndefOr[String] = js.undefined
   
   /**
     * The date when the battery is expected to be low. If the value is missing
     * then there is no estimate for when the battery will be low. This value is
     * only an estimate, not an exact date.
     */
-  var estimatedLowBatteryDate: js.UndefOr[SchemaDate] = js.native
+  var estimatedLowBatteryDate: js.UndefOr[SchemaDate] = js.undefined
 }
 object SchemaDiagnostics {
   

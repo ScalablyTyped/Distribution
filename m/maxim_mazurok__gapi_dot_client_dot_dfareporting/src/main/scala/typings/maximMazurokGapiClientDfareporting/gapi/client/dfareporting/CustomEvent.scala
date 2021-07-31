@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomEvent extends StObject {
   
   /** Annotate a click event. This field is mutually exclusive with insertEvent and annotateImpressionEvent. This or insertEvent and annotateImpressionEvent is a required field. */
-  var annotateClickEvent: js.UndefOr[CustomEventClickAnnotation] = js.native
+  var annotateClickEvent: js.UndefOr[CustomEventClickAnnotation] = js.undefined
   
   /** Annotate an impression. This field is mutually exclusive with insertEvent and annotateClickEvent. This or insertEvent and annotateClickEvent is a required field. */
-  var annotateImpressionEvent: js.UndefOr[CustomEventImpressionAnnotation] = js.native
+  var annotateImpressionEvent: js.UndefOr[CustomEventImpressionAnnotation] = js.undefined
   
   /** Custom variables associated with the event. */
-  var customVariables: js.UndefOr[js.Array[CustomVariable]] = js.native
+  var customVariables: js.UndefOr[js.Array[CustomVariable]] = js.undefined
   
   /** The type of event. If INSERT, the fields in insertEvent need to be populated. If ANNOTATE, the fields in either annotateClickEvent or annotateImpressionEvent need to be populated. */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
   
   /** Floodlight configuration ID of the advertiser the event is linked to. This is a required field. */
-  var floodlightConfigurationId: js.UndefOr[String] = js.native
+  var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Insert custom event. This field is mutually exclusive with annotateClickEvent and annotateImpressionEvent. This or annotateClickEvent and annotateImpressionEvent is a required
     * field.
     */
-  var insertEvent: js.UndefOr[CustomEventInsert] = js.native
+  var insertEvent: js.UndefOr[CustomEventInsert] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#customEvent". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The ordinal of this custom event. This is a required field. */
-  var ordinal: js.UndefOr[String] = js.native
+  var ordinal: js.UndefOr[String] = js.undefined
   
   /** The timestamp of this custom event, in Unix epoch micros. This is a required field. */
-  var timestampMicros: js.UndefOr[String] = js.native
+  var timestampMicros: js.UndefOr[String] = js.undefined
 }
 object CustomEvent {
   

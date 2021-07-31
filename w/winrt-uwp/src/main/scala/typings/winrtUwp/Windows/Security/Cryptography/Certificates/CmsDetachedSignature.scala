@@ -5,25 +5,23 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a detached signature for a signed CMS message. */
-@js.native
 trait CmsDetachedSignature extends StObject {
   
   /** Gets the list of certificates that are used for chain building for the signer certificate. */
-  var certificates: IVectorView[Certificate] = js.native
+  var certificates: IVectorView[Certificate]
   
   /** Gets the list of signers that are used for creating or verifying the signature. */
-  var signers: IVectorView[CmsSignerInfo] = js.native
+  var signers: IVectorView[CmsSignerInfo]
   
   /**
     * Verifies a signed CMS message against the original streaming input.
     * @param data The original input stream for the signed CMS message.
     * @return An asynchronous operation to retrieve the result of the signature validation operation.
     */
-  def verifySignatureAsync(data: IInputStream): IPromiseWithIAsyncOperation[SignatureValidationResult] = js.native
+  def verifySignatureAsync(data: IInputStream): IPromiseWithIAsyncOperation[SignatureValidationResult]
 }
 object CmsDetachedSignature {
   

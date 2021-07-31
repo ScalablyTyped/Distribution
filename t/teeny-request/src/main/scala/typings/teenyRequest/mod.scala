@@ -10,26 +10,32 @@ import typings.teenyRequest.teenyRequestBooleans.`false`
 import typings.teenyRequest.teenyStatisticsMod.TeenyStatistics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("teeny-request", "RequestError")
   @js.native
-  class RequestError () extends Error {
+  class RequestError ()
+    extends StObject
+       with Error {
     
     var code: js.UndefOr[Double] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   object teenyRequest {
     
-    @JSImport("teeny-request", "teenyRequest")
-    @js.native
-    def apply(reqOpts: Options): Request = js.native
-    @JSImport("teeny-request", "teenyRequest")
-    @js.native
-    def apply(reqOpts: Options, callback: RequestCallback[_]): Unit = js.native
+    @scala.inline
+    def apply(reqOpts: Options): Request = ^.asInstanceOf[js.Dynamic].apply(reqOpts.asInstanceOf[js.Any]).asInstanceOf[Request]
+    @scala.inline
+    def apply(reqOpts: Options, callback: RequestCallback[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(reqOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("teeny-request", "teenyRequest")
     @js.native
     val ^ : js.Any = js.native
@@ -69,32 +75,31 @@ object mod {
     def stats_=(x: TeenyStatistics): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stats")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait CoreOptions extends StObject {
     
-    var body: js.UndefOr[String | js.Object] = js.native
+    var body: js.UndefOr[String | js.Object] = js.undefined
     
-    var forever: js.UndefOr[Boolean] = js.native
+    var forever: js.UndefOr[Boolean] = js.undefined
     
-    var gzip: js.UndefOr[Boolean] = js.native
+    var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[js.Any] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var multipart: js.UndefOr[js.Array[RequestPart]] = js.native
+    var multipart: js.UndefOr[js.Array[RequestPart]] = js.undefined
     
-    var pool: js.UndefOr[AgentOptions | typings.node.httpMod.AgentOptions] = js.native
+    var pool: js.UndefOr[AgentOptions | typings.node.httpMod.AgentOptions] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var qs: js.UndefOr[js.Any] = js.native
+    var qs: js.UndefOr[js.Any] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var useQuerystring: js.UndefOr[Boolean] = js.native
+    var useQuerystring: js.UndefOr[Boolean] = js.undefined
   }
   object CoreOptions {
     
@@ -206,12 +211,12 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionsWithUri
-    extends CoreOptions
+    extends StObject
+       with CoreOptions
        with Options {
     
-    var uri: String = js.native
+    var uri: String
   }
   object OptionsWithUri {
     
@@ -229,12 +234,12 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionsWithUrl
-    extends CoreOptions
+    extends StObject
+       with CoreOptions
        with Options {
     
-    var url: String = js.native
+    var url: String
   }
   object OptionsWithUrl {
     
@@ -269,10 +274,9 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait RequestPart extends StObject {
     
-    var body: String | Readable = js.native
+    var body: String | Readable
   }
   object RequestPart {
     
@@ -290,18 +294,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Response[T] extends StObject {
     
-    var body: T = js.native
+    var body: T
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var request: Request = js.native
+    var request: Request
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var statusMessage: js.UndefOr[String] = js.native
+    var statusMessage: js.UndefOr[String] = js.undefined
   }
   object Response {
     
@@ -312,7 +315,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
+    implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
       
       @scala.inline
       def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

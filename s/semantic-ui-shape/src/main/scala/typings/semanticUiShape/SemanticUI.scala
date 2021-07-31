@@ -68,7 +68,6 @@ import typings.semanticUiShape.semanticUiShapeStrings.verbose
 import typings.semanticUiShape.semanticUiShapeStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -151,33 +150,36 @@ object SemanticUI {
       * Removes all inline styles
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: beforeChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: beforeChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+    def apply(behavior: setting, name: beforeChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-    def apply(behavior: setting, name: height, value: js.UndefOr[scala.Nothing]): next | initial | Double = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
+    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
     def apply(behavior: setting, name: height, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: height, value: Unit): next | initial | Double = js.native
     def apply(behavior: setting, name: height, value: initial): JQuery = js.native
     def apply(behavior: setting, name: height, value: next): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: width, value: js.UndefOr[scala.Nothing]): next | initial | Double = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: width, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: width, value: Unit): next | initial | Double = js.native
     def apply(behavior: setting, name: width, value: initial): JQuery = js.native
     def apply(behavior: setting, name: width, value: next): JQuery = js.native
     def apply(behavior: setting, value: ShapeSettings): JQuery = js.native
@@ -189,28 +191,27 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'animating'
           */
-        var animating: String = js.native
+        var animating: String
         
         /**
           * @default 'hidden'
           */
-        var hidden: String = js.native
+        var hidden: String
         
         /**
           * @default 'loading'
           */
-        var loading: String = js.native
+        var loading: String
       }
       object Impl {
         
@@ -237,24 +238,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplanimating | PickImplhidden | PickImplloading | PickImplactive) with PartialPickImplkeyofImplActive
+      type Param = (PickImplanimating | PickImplhidden | PickImplloading | PickImplactive) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'You tried to switch to a side that does not exist.'
           */
-        var side: String = js.native
+        var side: String
       }
       object Impl {
         
@@ -275,24 +275,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplside | PickImplmethod) with PartialPickImplkeyofImplMethod
+      type Param = (PickImplside | PickImplmethod) & PartialPickImplkeyofImplMethod
     }
     type ErrorSettings = typings.semanticUiShape.SemanticUI.Shape.ErrorSettings.Param
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.side'
           */
-        var side: String = js.native
+        var side: String
         
         /**
           * @default '.sides'
           */
-        var sides: String = js.native
+        var sides: String
       }
       object Impl {
         
@@ -313,14 +312,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplsides | PickImplside) with PartialPickImplkeyofImplSide
+      type Param = (PickImplsides | PickImplside) & PartialPickImplkeyofImplSide
     }
     type SelectorSettings = typings.semanticUiShape.SemanticUI.Shape.SelectorSettings.Param
     
-    @js.native
     trait Translation extends StObject {
       
-      var transform: String = js.native
+      var transform: String
     }
     object Translation {
       
@@ -341,7 +339,6 @@ object SemanticUI {
   
   object ShapeSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       // endregion
@@ -349,14 +346,14 @@ object SemanticUI {
       /**
         * Is called before side change
         */
-      def beforeChange(): Unit = js.native
+      def beforeChange(): Unit
       
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // region Shape Settings
       /**
@@ -364,11 +361,11 @@ object SemanticUI {
         *
         * @default 700
         */
-      var duration: Double = js.native
+      var duration: Double
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * When set to next will use the height of the next side during the shape's animation.
@@ -378,14 +375,14 @@ object SemanticUI {
         * @default 'initial'
         * @since 2.2
         */
-      var height: next | initial | Double = js.native
+      var height: next | initial | Double
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -393,31 +390,31 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Is called after visible side change
         */
-      def onChange(): Unit = js.native
+      def onChange(): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
       
       /**
         * When set to next will use the width of the next side during the shape's animation.
@@ -427,7 +424,7 @@ object SemanticUI {
         * @default 'initial'
         * @since 2.2
         */
-      var width: next | initial | Double = js.native
+      var width: next | initial | Double
     }
     object Impl {
       
@@ -499,7 +496,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplduration | PickImplwidth | PickImplheight | PickImplbeforeChange | PickImplonChange | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplduration | PickImplwidth | PickImplheight | PickImplbeforeChange | PickImplonChange | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/shape.html#/settings}

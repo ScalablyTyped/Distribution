@@ -10,9 +10,9 @@ TypeScript typings for Assured Workloads API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.assuredworkloads |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 14 |
 | # dependents       | 1 |
-| # downloads        | 78 |
+| # downloads        | 1369 |
 | # stars            | 0 |
 
 ## Links

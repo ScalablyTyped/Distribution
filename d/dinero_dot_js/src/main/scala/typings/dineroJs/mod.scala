@@ -3,17 +3,14 @@ package typings.dineroJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dinero.js", JSImport.Namespace)
-  @js.native
-  def apply(): Dinero = js.native
-  @JSImport("dinero.js", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Dinero = js.native
+  @scala.inline
+  def apply(): Dinero = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Dinero]
+  @scala.inline
+  def apply(options: Options): Dinero = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Dinero]
   
   @JSImport("dinero.js", JSImport.Namespace)
   @js.native
@@ -68,17 +65,14 @@ object mod {
   @scala.inline
   def globalRoundingMode_=(x: RoundingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalRoundingMode")(x.asInstanceOf[js.Any])
   
-  @JSImport("dinero.js", "maximum")
-  @js.native
-  def maximum(objects: js.Array[Dinero]): Dinero = js.native
+  @scala.inline
+  def maximum(objects: js.Array[Dinero]): Dinero = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(objects.asInstanceOf[js.Any]).asInstanceOf[Dinero]
   
-  @JSImport("dinero.js", "minimum")
-  @js.native
-  def minimum(objects: js.Array[Dinero]): Dinero = js.native
+  @scala.inline
+  def minimum(objects: js.Array[Dinero]): Dinero = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(objects.asInstanceOf[js.Any]).asInstanceOf[Dinero]
   
-  @JSImport("dinero.js", "normalizePrecision")
-  @js.native
-  def normalizePrecision(objects: js.Array[Dinero]): js.Array[Dinero] = js.native
+  @scala.inline
+  def normalizePrecision(objects: js.Array[Dinero]): js.Array[Dinero] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePrecision")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[Dinero]]
   
   /**
     * ISO 4217 CURRENCY CODES as specified in the documentation
@@ -868,9 +862,9 @@ object mod {
     def subtract(subtrahend: Dinero): Dinero = js.native
     
     def toFormat(): String = js.native
-    def toFormat(format: js.UndefOr[scala.Nothing], roundingMode: RoundingMode): String = js.native
     def toFormat(format: String): String = js.native
     def toFormat(format: String, roundingMode: RoundingMode): String = js.native
+    def toFormat(format: Unit, roundingMode: RoundingMode): String = js.native
     
     def toJSON(): DineroObject = js.native
     
@@ -882,14 +876,13 @@ object mod {
     def toUnit(): Double = js.native
   }
   
-  @js.native
   trait DineroObject extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var currency: Currency = js.native
+    var currency: Currency
     
-    var precision: Double = js.native
+    var precision: Double
   }
   object DineroObject {
     
@@ -913,21 +906,20 @@ object mod {
     }
   }
   
-  @js.native
   trait ExchangeRatesApiOptions extends StObject {
     
-    var endpoint: String | js.Promise[StringDictionary[_]] = js.native
+    var endpoint: String | js.Promise[StringDictionary[js.Any]]
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var propertyPath: js.UndefOr[String] = js.native
+    var propertyPath: js.UndefOr[String] = js.undefined
     
-    var roundingMode: js.UndefOr[RoundingMode] = js.native
+    var roundingMode: js.UndefOr[RoundingMode] = js.undefined
   }
   object ExchangeRatesApiOptions {
     
     @scala.inline
-    def apply(endpoint: String | js.Promise[StringDictionary[_]]): ExchangeRatesApiOptions = {
+    def apply(endpoint: String | js.Promise[StringDictionary[js.Any]]): ExchangeRatesApiOptions = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExchangeRatesApiOptions]
     }
@@ -936,7 +928,7 @@ object mod {
     implicit class ExchangeRatesApiOptionsMutableBuilder[Self <: ExchangeRatesApiOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEndpoint(value: String | js.Promise[StringDictionary[_]]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      def setEndpoint(value: String | js.Promise[StringDictionary[js.Any]]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
@@ -958,14 +950,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
-    var currency: js.UndefOr[Currency] = js.native
+    var currency: js.UndefOr[Currency] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

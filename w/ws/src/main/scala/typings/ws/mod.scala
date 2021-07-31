@@ -35,7 +35,6 @@ import typings.ws.wsStrings.pong
 import typings.ws.wsStrings.upgrade
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,18 +53,18 @@ object mod {
     def this(address: URL_, options: ClientOptions) = this()
     def this(address: URL_, protocols: String) = this()
     def this(address: URL_, protocols: js.Array[String]) = this()
-    def this(address: String, protocols: js.UndefOr[scala.Nothing], options: ClientRequestArgs) = this()
-    def this(address: String, protocols: js.UndefOr[scala.Nothing], options: ClientOptions) = this()
     def this(address: String, protocols: String, options: ClientRequestArgs) = this()
     def this(address: String, protocols: String, options: ClientOptions) = this()
     def this(address: String, protocols: js.Array[String], options: ClientRequestArgs) = this()
     def this(address: String, protocols: js.Array[String], options: ClientOptions) = this()
-    def this(address: URL_, protocols: js.UndefOr[scala.Nothing], options: ClientRequestArgs) = this()
-    def this(address: URL_, protocols: js.UndefOr[scala.Nothing], options: ClientOptions) = this()
+    def this(address: String, protocols: Unit, options: ClientRequestArgs) = this()
+    def this(address: String, protocols: Unit, options: ClientOptions) = this()
     def this(address: URL_, protocols: String, options: ClientRequestArgs) = this()
     def this(address: URL_, protocols: String, options: ClientOptions) = this()
     def this(address: URL_, protocols: js.Array[String], options: ClientRequestArgs) = this()
     def this(address: URL_, protocols: js.Array[String], options: ClientOptions) = this()
+    def this(address: URL_, protocols: Unit, options: ClientRequestArgs) = this()
+    def this(address: URL_, protocols: Unit, options: ClientOptions) = this()
   }
   @JSImport("ws", JSImport.Namespace)
   @js.native
@@ -104,7 +103,7 @@ object mod {
   @js.native
   class Server () extends EventEmitter {
     def this(options: ServerOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
+    def this(options: Unit, callback: js.Function0[Unit]) = this()
     def this(options: ServerOptions, callback: js.Function0[Unit]) = this()
     
     @JSName("addListener")
@@ -228,21 +227,18 @@ object mod {
   }
   
   // WebSocket stream
-  @JSImport("ws", "createWebSocketStream")
-  @js.native
-  def createWebSocketStream(websocket: WebSocket): Duplex = js.native
-  @JSImport("ws", "createWebSocketStream")
-  @js.native
-  def createWebSocketStream(websocket: WebSocket, options: DuplexOptions): Duplex = js.native
+  @scala.inline
+  def createWebSocketStream(websocket: WebSocket): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+  @scala.inline
+  def createWebSocketStream(websocket: WebSocket, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebSocketStream")(websocket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   
-  @js.native
   trait AddressInfo extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var family: String = js.native
+    var family: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object AddressInfo {
     
@@ -271,38 +267,39 @@ object mod {
     */
   type CertMeta = String | (js.Array[Buffer | String]) | Buffer
   
-  @js.native
-  trait ClientOptions extends SecureContextOptions {
+  trait ClientOptions
+    extends StObject
+       with SecureContextOptions {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var checkServerIdentity: js.UndefOr[js.Function2[/* servername */ String, /* cert */ CertMeta, Boolean]] = js.native
+    var checkServerIdentity: js.UndefOr[js.Function2[/* servername */ String, /* cert */ CertMeta, Boolean]] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var handshakeTimeout: js.UndefOr[Double] = js.native
+    var handshakeTimeout: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var maxPayload: js.UndefOr[Double] = js.native
+    var maxPayload: js.UndefOr[Double] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var perMessageDeflate: js.UndefOr[Boolean | PerMessageDeflateOptions] = js.native
+    var perMessageDeflate: js.UndefOr[Boolean | PerMessageDeflateOptions] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var protocolVersion: js.UndefOr[Double] = js.native
+    var protocolVersion: js.UndefOr[Double] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object ClientOptions {
     
@@ -407,16 +404,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CloseEvent extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
     
-    var target: WebSocket = js.native
+    var target: WebSocket
     
-    var wasClean: Boolean = js.native
+    var wasClean: Boolean
   }
   object CloseEvent {
     
@@ -448,16 +444,15 @@ object mod {
     */
   type Data = String | Buffer | ArrayBuffer | js.Array[Buffer]
   
-  @js.native
   trait ErrorEvent extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var message: String = js.native
+    var message: String
     
-    var target: WebSocket = js.native
+    var target: WebSocket
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ErrorEvent {
     
@@ -485,10 +480,9 @@ object mod {
     }
   }
   
-  @js.native
   trait EventListenerOptions extends StObject {
     
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
   }
   object EventListenerOptions {
     
@@ -509,14 +503,13 @@ object mod {
     }
   }
   
-  @js.native
   trait MessageEvent extends StObject {
     
-    var data: Data = js.native
+    var data: Data
     
-    var target: WebSocket = js.native
+    var target: WebSocket
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MessageEvent {
     
@@ -544,10 +537,9 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenEvent extends StObject {
     
-    var target: WebSocket = js.native
+    var target: WebSocket
   }
   object OpenEvent {
     
@@ -565,24 +557,23 @@ object mod {
     }
   }
   
-  @js.native
   trait PerMessageDeflateOptions extends StObject {
     
-    var clientMaxWindowBits: js.UndefOr[Double] = js.native
+    var clientMaxWindowBits: js.UndefOr[Double] = js.undefined
     
-    var clientNoContextTakeover: js.UndefOr[Boolean] = js.native
+    var clientNoContextTakeover: js.UndefOr[Boolean] = js.undefined
     
-    var concurrencyLimit: js.UndefOr[Double] = js.native
+    var concurrencyLimit: js.UndefOr[Double] = js.undefined
     
-    var serverMaxWindowBits: js.UndefOr[Double] = js.native
+    var serverMaxWindowBits: js.UndefOr[Double] = js.undefined
     
-    var serverNoContextTakeover: js.UndefOr[Boolean] = js.native
+    var serverNoContextTakeover: js.UndefOr[Boolean] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var zlibDeflateOptions: js.UndefOr[ChunkSize] = js.native
+    var zlibDeflateOptions: js.UndefOr[ChunkSize] = js.undefined
     
-    var zlibInflateOptions: js.UndefOr[ZlibOptions] = js.native
+    var zlibInflateOptions: js.UndefOr[ZlibOptions] = js.undefined
   }
   object PerMessageDeflateOptions {
     
@@ -645,30 +636,29 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var backlog: js.UndefOr[Double] = js.native
+    var backlog: js.UndefOr[Double] = js.undefined
     
-    var clientTracking: js.UndefOr[Boolean] = js.native
+    var clientTracking: js.UndefOr[Boolean] = js.undefined
     
-    var handleProtocols: js.UndefOr[js.Any] = js.native
+    var handleProtocols: js.UndefOr[js.Any] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var maxPayload: js.UndefOr[Double] = js.native
+    var maxPayload: js.UndefOr[Double] = js.undefined
     
-    var noServer: js.UndefOr[Boolean] = js.native
+    var noServer: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var perMessageDeflate: js.UndefOr[Boolean | PerMessageDeflateOptions] = js.native
+    var perMessageDeflate: js.UndefOr[Boolean | PerMessageDeflateOptions] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var server: js.UndefOr[typings.node.httpMod.Server | typings.node.httpsMod.Server] = js.native
+    var server: js.UndefOr[typings.node.httpMod.Server | typings.node.httpsMod.Server] = js.undefined
     
-    var verifyClient: js.UndefOr[VerifyClientCallbackAsync | VerifyClientCallbackSync] = js.native
+    var verifyClient: js.UndefOr[VerifyClientCallbackAsync | VerifyClientCallbackSync] = js.undefined
   }
   object ServerOptions {
     
@@ -852,9 +842,9 @@ object mod {
     var bufferedAmount: Double = js.native
     
     def close(): Unit = js.native
-    def close(code: js.UndefOr[scala.Nothing], data: String): Unit = js.native
     def close(code: Double): Unit = js.native
     def close(code: Double, data: String): Unit = js.native
+    def close(code: Unit, data: String): Unit = js.native
     
     var extensions: String = js.native
     
@@ -901,30 +891,22 @@ object mod {
     def onopen(event: OpenEvent): Unit = js.native
     
     def ping(): Unit = js.native
-    def ping(
-      data: js.UndefOr[scala.Nothing],
-      mask: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ Error, Unit]
-    ): Unit = js.native
-    def ping(data: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    def ping(data: js.UndefOr[scala.Nothing], mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def ping(data: js.Any): Unit = js.native
-    def ping(data: js.Any, mask: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def ping(data: js.Any, mask: Boolean): Unit = js.native
     def ping(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def ping(data: js.Any, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def ping(data: Unit, mask: Boolean): Unit = js.native
+    def ping(data: Unit, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def ping(data: Unit, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
     def pong(): Unit = js.native
-    def pong(
-      data: js.UndefOr[scala.Nothing],
-      mask: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ Error, Unit]
-    ): Unit = js.native
-    def pong(data: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    def pong(data: js.UndefOr[scala.Nothing], mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def pong(data: js.Any): Unit = js.native
-    def pong(data: js.Any, mask: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def pong(data: js.Any, mask: Boolean): Unit = js.native
     def pong(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def pong(data: js.Any, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def pong(data: Unit, mask: Boolean): Unit = js.native
+    def pong(data: Unit, mask: Boolean, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def pong(data: Unit, mask: Unit, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
     var protocol: String = js.native
     

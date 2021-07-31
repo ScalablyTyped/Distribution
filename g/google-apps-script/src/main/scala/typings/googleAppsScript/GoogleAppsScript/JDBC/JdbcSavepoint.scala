@@ -3,19 +3,17 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC Savepoint. For documentation of this class, see java.sql.Savepoint
   * .
   */
-@js.native
 trait JdbcSavepoint extends StObject {
   
-  def getSavepointId(): Integer = js.native
+  def getSavepointId(): Integer
   
-  def getSavepointName(): String = js.native
+  def getSavepointName(): String
 }
 object JdbcSavepoint {
   

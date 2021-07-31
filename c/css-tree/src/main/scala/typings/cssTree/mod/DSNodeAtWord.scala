@@ -3,22 +3,22 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.AtKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DSNodeAtWord extends DSNode {
+trait DSNodeAtWord
+  extends StObject
+     with DSNode {
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: AtKeyword = js.native
+  var `type`: AtKeyword
 }
 object DSNodeAtWord {
   
   @scala.inline
-  def apply(name: String, `type`: AtKeyword): DSNodeAtWord = {
+  def apply(name: String): DSNodeAtWord = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AtKeyword")
     __obj.asInstanceOf[DSNodeAtWord]
   }
   

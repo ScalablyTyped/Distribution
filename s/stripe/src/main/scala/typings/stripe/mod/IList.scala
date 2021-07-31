@@ -2,37 +2,35 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IList[T] extends StObject {
   
   /**
     * An array containing the actual response elements, paginated by any request parameters.
     */
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
   
   /**
     * Whether or not there are more elements available after this set. If false, this set comprises the end of the list.
     */
-  var has_more: Boolean = js.native
+  var has_more: Boolean
   
   /**
     * Value is 'list'
     */
-  var `object`: String = js.native
+  var `object`: String
   
   /**
     * The total number of items available. This value is not included by default,
     * but you can request it by specifying ?include[]=total_count
     */
-  var total_count: js.UndefOr[Double] = js.native
+  var total_count: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL for accessing this list.
     */
-  var url: String = js.native
+  var url: String
 }
 object IList {
   
@@ -44,7 +42,7 @@ object IList {
   }
   
   @scala.inline
-  implicit class IListMutableBuilder[Self <: IList[_], T] (val x: Self with IList[T]) extends AnyVal {
+  implicit class IListMutableBuilder[Self <: IList[?], T] (val x: Self & IList[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

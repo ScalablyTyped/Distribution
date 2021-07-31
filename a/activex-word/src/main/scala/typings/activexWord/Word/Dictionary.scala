@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictionary extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var LanguageID: WdLanguageID = js.native
+  var LanguageID: WdLanguageID
   
-  var LanguageSpecific: Boolean = js.native
+  var LanguageSpecific: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Path: String = js.native
+  val Path: String
   
-  val ReadOnly: Boolean = js.native
+  val ReadOnly: Boolean
   
-  val Type: WdDictionaryType = js.native
+  val Type: WdDictionaryType
   
   @JSName("Word.Dictionary_typekey")
-  var WordDotDictionary_typekey: Dictionary = js.native
+  var WordDotDictionary_typekey: Dictionary
 }
 object Dictionary {
   

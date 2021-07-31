@@ -10,9 +10,9 @@ An alternantive to EventEmitter using consumable streams.
 | ------------------ | :-------------: |
 | Full name          | async-stream-emitter |
 | Keywords           | iterable, async, stream, event, emitter, for-await-of |
-| # releases         | 13 |
+| # releases         | 7 |
 | # dependents       | 18 |
-| # downloads        | 79547 |
+| # downloads        | 91682 |
 | # stars            | 0 |
 
 ## Links

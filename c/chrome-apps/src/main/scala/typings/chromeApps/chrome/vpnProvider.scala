@@ -2,7 +2,6 @@ package typings.chromeApps.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -18,26 +17,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object vpnProvider {
   
-  @js.native
   trait VpnSessionParameters extends StObject {
     
     /**
       * IP address for the VPN interface in CIDR notation.
       * IPv4 is currently the only supported mode.
       */
-    var address: String = js.native
+    var address: String
     
     /**
       * Broadcast address for the VPN interface.
       * (default: deduced from IP address and mask)
       */
-    var broadcastAddress: js.UndefOr[String] = js.native
+    var broadcastAddress: js.UndefOr[String] = js.undefined
     
     /** A list of IPs for the DNS servers. */
-    var dnsServers: js.Array[String] = js.native
+    var dnsServers: js.Array[String]
     
     /** A list of search domains. (default: no search domain) */
-    var domainSearch: js.UndefOr[js.Array[String]] = js.native
+    var domainSearch: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Exclude network traffic to the list of IP blocks in CIDR notation from the tunnel.
@@ -47,7 +45,7 @@ object vpnProvider {
       * Such duplicates in the collated (exclusionList + inclusionList) list
       * are eliminated and the exact duplicate entry that will be eliminated is undefined.
       */
-    var exclusionList: js.Array[String] = js.native
+    var exclusionList: js.Array[String]
     
     /**
       * Include network traffic to the list of IP blocks in CIDR notation to the tunnel.
@@ -59,13 +57,13 @@ object vpnProvider {
       * Such duplicates in the collated (exclusionList + inclusionList) list are
       * eliminated and the exact duplicate entry that will be eliminated is undefined.
       */
-    var inclusionList: js.Array[String] = js.native
+    var inclusionList: js.Array[String]
     
     /**
       * MTU setting for the VPN interface (default 1500 bytes).
       * @default '1500'
       */
-    var mtu: js.UndefOr[String] = js.native
+    var mtu: js.UndefOr[String] = js.undefined
     
     /**
       * @since Chrome 51.
@@ -81,7 +79,7 @@ object vpnProvider {
       * feature based on browser support.
       * @default false
       */
-    var reconnect: Boolean = js.native
+    var reconnect: Boolean
   }
   object VpnSessionParameters {
     

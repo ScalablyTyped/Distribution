@@ -4,37 +4,31 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
   
-  @JSImport("rxjs/internal/observable/range", "dispatch")
+  @JSImport("rxjs/internal/observable/range", JSImport.Namespace)
   @js.native
-  def dispatch(state: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(): Observable[Double] = js.native
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(start: js.UndefOr[scala.Nothing], count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(start: js.UndefOr[scala.Nothing], count: Double): Observable[Double] = js.native
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(start: js.UndefOr[scala.Nothing], count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(start: Double): Observable[Double] = js.native
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(start: Double, count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(start: Double, count: Double): Observable[Double] = js.native
-  @JSImport("rxjs/internal/observable/range", "range")
-  @js.native
-  def range(start: Double, count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
+  @scala.inline
+  def dispatch(state: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def range(): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double, count: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double, count: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double, count: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Unit, count: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Unit, count: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Unit, count: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
 }

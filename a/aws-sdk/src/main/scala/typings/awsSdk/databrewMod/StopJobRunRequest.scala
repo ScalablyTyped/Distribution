@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopJobRunRequest extends StObject {
   
   /**
     * The name of the job to be stopped.
     */
-  var Name: JobName = js.native
+  var Name: JobName
   
   /**
     * The ID of the job run to be stopped.
     */
-  var RunId: JobRunId = js.native
+  var RunId: JobRunId
 }
 object StopJobRunRequest {
   

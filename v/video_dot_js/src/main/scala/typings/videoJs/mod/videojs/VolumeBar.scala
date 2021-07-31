@@ -3,14 +3,15 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The bar that contains the volume level and can be clicked on to adjust the level
   */
 @js.native
-trait VolumeBar extends Slider {
+trait VolumeBar
+  extends StObject
+     with Slider {
   
   /**
     * If the player is muted unmute it.

@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientAcceleratedmobilepageurl.anon.Accesstoken
 import typings.maximMazurokGapiClientAcceleratedmobilepageurl.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,17 +13,16 @@ object gapi {
     
     object acceleratedmobilepageurl {
       
-      @js.native
       trait AmpUrl extends StObject {
         
         /** The AMP URL pointing to the publisher's web server. */
-        var ampUrl: js.UndefOr[String] = js.native
+        var ampUrl: js.UndefOr[String] = js.undefined
         
         /** The [AMP Cache URL](/amp/cache/overview#amp-cache-url-format) pointing to the cached document in the Google AMP Cache. */
-        var cdnAmpUrl: js.UndefOr[String] = js.native
+        var cdnAmpUrl: js.UndefOr[String] = js.undefined
         
         /** The original non-AMP URL. */
-        var originalUrl: js.UndefOr[String] = js.native
+        var originalUrl: js.UndefOr[String] = js.undefined
       }
       object AmpUrl {
         
@@ -57,17 +55,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait AmpUrlError extends StObject {
         
         /** The error code of an API call. */
-        var errorCode: js.UndefOr[String] = js.native
+        var errorCode: js.UndefOr[String] = js.undefined
         
         /** An optional descriptive error message. */
-        var errorMessage: js.UndefOr[String] = js.native
+        var errorMessage: js.UndefOr[String] = js.undefined
         
         /** The original non-AMP URL. */
-        var originalUrl: js.UndefOr[String] = js.native
+        var originalUrl: js.UndefOr[String] = js.undefined
       }
       object AmpUrlError {
         
@@ -108,14 +105,13 @@ object gapi {
         def batchGet(request: Alt, body: BatchGetAmpUrlsRequest): Request[BatchGetAmpUrlsResponse] = js.native
       }
       
-      @js.native
       trait BatchGetAmpUrlsRequest extends StObject {
         
         /** The lookup_strategy being requested. */
-        var lookupStrategy: js.UndefOr[String] = js.native
+        var lookupStrategy: js.UndefOr[String] = js.undefined
         
         /** List of URLs to look up for the paired AMP URLs. The URLs are case-sensitive. Up to 50 URLs per lookup (see [Usage Limits](/amp/cache/reference/limits)). */
-        var urls: js.UndefOr[js.Array[String]] = js.native
+        var urls: js.UndefOr[js.Array[String]] = js.undefined
       }
       object BatchGetAmpUrlsRequest {
         
@@ -145,17 +141,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait BatchGetAmpUrlsResponse extends StObject {
         
         /**
           * For each URL in BatchAmpUrlsRequest, the URL response. The response might not be in the same order as URLs in the batch request. If BatchAmpUrlsRequest contains duplicate URLs,
           * AmpUrl is generated only once.
           */
-        var ampUrls: js.UndefOr[js.Array[AmpUrl]] = js.native
+        var ampUrls: js.UndefOr[js.Array[AmpUrl]] = js.undefined
         
         /** The errors for requested URLs that have no AMP URL. */
-        var urlErrors: js.UndefOr[js.Array[AmpUrlError]] = js.native
+        var urlErrors: js.UndefOr[js.Array[AmpUrlError]] = js.undefined
       }
       object BatchGetAmpUrlsResponse {
         

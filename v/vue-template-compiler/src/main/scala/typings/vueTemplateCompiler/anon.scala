@@ -2,19 +2,17 @@ package typings.vueTemplateCompiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Callback extends StObject {
     
-    var callback: String = js.native
+    var callback: String
     
-    var expression: String = js.native
+    var expression: String
     
-    var value: String = js.native
+    var value: String
   }
   object Callback {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Name {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

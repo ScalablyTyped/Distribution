@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsMonitoredresourcedescriptorsList extends StandardParameters {
+trait ParamsResourceProjectsMonitoredresourcedescriptorsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * An optional filter describing the descriptors to be returned. The filter
@@ -23,25 +23,25 @@ trait ParamsResourceProjectsMonitoredresourcedescriptorsList extends StandardPar
     * following filter returns only Google Compute Engine descriptors that have
     * an id label: resource.type = starts_with("gce_") AND resource.label:id
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The project on which to execute the request. The format is
     * "projects/{project_id_or_number}".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A positive number that is the maximum number of results to return.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * If this field is not empty then it must contain the nextPageToken value
     * returned by a previous call to this method. Using this field causes the
     * method to return additional results from the previous method call.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsMonitoredresourcedescriptorsList {
   

@@ -2,65 +2,63 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Combines all of the information about a DLP job.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DlpJob extends StObject {
   
   /**
     * Time when the job was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Time when the job finished.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * A stream of errors encountered running the job.
     */
-  var errors: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Error]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Error]] = js.undefined
   
   /**
     * Results from inspecting a data source.
     */
-  var inspectDetails: js.UndefOr[SchemaGooglePrivacyDlpV2InspectDataSourceDetails] = js.native
+  var inspectDetails: js.UndefOr[SchemaGooglePrivacyDlpV2InspectDataSourceDetails] = js.undefined
   
   /**
     * If created by a job trigger, the resource name of the trigger that
     * instantiated the job.
     */
-  var jobTriggerName: js.UndefOr[String] = js.native
+  var jobTriggerName: js.UndefOr[String] = js.undefined
   
   /**
     * The server-assigned name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Results from analyzing risk of a data source.
     */
-  var riskDetails: js.UndefOr[SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails] = js.native
+  var riskDetails: js.UndefOr[SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails] = js.undefined
   
   /**
     * Time when the job started.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * State of a job.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The type of job.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DlpJob {
   

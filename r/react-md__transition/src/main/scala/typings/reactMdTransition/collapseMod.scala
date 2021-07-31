@@ -8,18 +8,20 @@ import typings.reactMdTransition.typesMod.TransitionTimeout
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseMod {
   
   object Collapse {
     
-    @JSImport("@react-md/transition/types/Collapse", "Collapse")
-    @js.native
+    @scala.inline
     def apply(
       hasChildrenCollapsedClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary: CollapseProps
-    ): ReactElement | Null = js.native
+    ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasChildrenCollapsedClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("@react-md/transition/types/Collapse", "Collapse")
+    @js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -120,10 +122,9 @@ object collapseMod {
   }
   
   /* Inlined parent @react-md/transition.@react-md/transition/types/types.CollapseOptions<std.HTMLElement> */
-  @js.native
   trait CollapseProps extends StObject {
     
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The child element to trigger an animation for. This child **must**
@@ -132,22 +133,22 @@ object collapseMod {
       * - forwards the ref to a DOM element
       * - applies the `style`, `className`, and `hidden` attributes correctly.
       */
-    var children: ReactElement = js.native
+    var children: ReactElement
     
     /**
       * An optional className to merge with the current collapse transition
       * className.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the the child is currently collapsed.
       */
-    var collapsed: Boolean = js.native
+    var collapsed: Boolean
     
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The minimum height that the collapsed element can be which defaults to `0`.
@@ -161,7 +162,7 @@ object collapseMod {
       * are all set to `0` (default), the child will be removed from the DOM while
       * collapsed.
       */
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The minimum padding-bottom that the collapsed element can be which defaults
@@ -172,7 +173,7 @@ object collapseMod {
       * are all set to `0` (default), the child will be removed from the DOM while
       * collapsed.
       */
-    var minPaddingBottom: js.UndefOr[Double | String] = js.native
+    var minPaddingBottom: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The minimum padding-top that the collapsed element can be which defaults to
@@ -183,29 +184,29 @@ object collapseMod {
       * are all set to `0` (default), the child will be removed from the DOM while
       * collapsed.
       */
-    var minPaddingTop: js.UndefOr[Double | String] = js.native
+    var minPaddingTop: js.UndefOr[Double | String] = js.undefined
     
-    var onEnter: js.UndefOr[EnterHandler[HTMLElement]] = js.native
+    var onEnter: js.UndefOr[EnterHandler[HTMLElement]] = js.undefined
     
-    var onEntered: js.UndefOr[EnterHandler[HTMLElement]] = js.native
+    var onEntered: js.UndefOr[EnterHandler[HTMLElement]] = js.undefined
     
-    var onEntering: js.UndefOr[EnterHandler[HTMLElement]] = js.native
+    var onEntering: js.UndefOr[EnterHandler[HTMLElement]] = js.undefined
     
-    var onExit: js.UndefOr[ExitHandler[HTMLElement]] = js.native
+    var onExit: js.UndefOr[ExitHandler[HTMLElement]] = js.undefined
     
-    var onExited: js.UndefOr[ExitHandler[HTMLElement]] = js.native
+    var onExited: js.UndefOr[ExitHandler[HTMLElement]] = js.undefined
     
-    var onExiting: js.UndefOr[ExitHandler[HTMLElement]] = js.native
+    var onExiting: js.UndefOr[ExitHandler[HTMLElement]] = js.undefined
     
-    var ref: js.UndefOr[Ref[HTMLElement]] = js.native
+    var ref: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The timeout for the collapse transition. This will default to 250ms enter
       * and 200ms exit.
       */
-    var timeout: js.UndefOr[TransitionTimeout] = js.native
+    var timeout: js.UndefOr[TransitionTimeout] = js.undefined
   }
   object CollapseProps {
     

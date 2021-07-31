@@ -14,73 +14,72 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
-trait ChartProps
-  extends DOMAttributes[js.Object]
+- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait ChartProps
+  extends StObject
+     with DOMAttributes[js.Object]
      with /* event */ StringDictionary[js.Any] {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.native
+  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var filter: js.UndefOr[js.Array[_]] = js.native
+  var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var forceFit: js.UndefOr[Boolean] = js.native
+  var forceFit: js.UndefOr[Boolean] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
   // 事件属性
-  var onGetG2Instance: js.UndefOr[js.Function1[/* chart */ typings.antvG2.mod.Chart, Unit]] = js.native
+  var onGetG2Instance: js.UndefOr[js.Function1[/* chart */ typings.antvG2.mod.Chart, Unit]] = js.undefined
   
-  var onItemSelected: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.native
+  var onItemSelected: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   
-  var onItemSelectedChange: js.UndefOr[js.Function1[/* ev */ Data, Unit]] = js.native
+  var onItemSelectedChange: js.UndefOr[js.Function1[/* ev */ Data, Unit]] = js.undefined
   
-  var onItemUnselected: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.native
+  var onItemUnselected: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   
-  var onPlotClick: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.native
+  var onPlotClick: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   
-  var onPlotDblClick: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.native
+  var onPlotDblClick: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   
-  var onPlotEnter: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.native
+  var onPlotEnter: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   
-  var onPlotLeave: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.native
+  var onPlotLeave: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   
-  var onPlotMove: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.native
+  var onPlotMove: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   
-  var onTooltipChange: js.UndefOr[js.Function1[/* ev */ Items, Unit]] = js.native
+  var onTooltipChange: js.UndefOr[js.Function1[/* ev */ Items, Unit]] = js.undefined
   
-  var onTooltipHide: js.UndefOr[js.Function1[/* ev */ TooltipAny, Unit]] = js.native
+  var onTooltipHide: js.UndefOr[js.Function1[/* ev */ TooltipAny, Unit]] = js.undefined
   
-  var onTooltipShow: js.UndefOr[js.Function1[/* ev */ typings.bizcharts.anon.Tooltip, Unit]] = js.native
+  var onTooltipShow: js.UndefOr[js.Function1[/* ev */ typings.bizcharts.anon.Tooltip, Unit]] = js.undefined
   
   var padding: js.UndefOr[
     String | Bottom | Double | (js.Tuple4[Double | String, Double | String, Double | String, Double | String]) | (js.Tuple2[String, String])
-  ] = js.native
+  ] = js.undefined
   
-  var pixelRatio: js.UndefOr[Double] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.undefined
   
-  var placeholder: js.UndefOr[ReactElement | String | Boolean] = js.native
+  var placeholder: js.UndefOr[ReactElement | String | Boolean] = js.undefined
   
-  var plotBackground: js.UndefOr[background] = js.native
+  var plotBackground: js.UndefOr[background] = js.undefined
   
-  var ref: js.UndefOr[LegacyRef[js.Any]] = js.native
+  var ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  var scale: js.UndefOr[js.Any] = js.native
+  var scale: js.UndefOr[js.Any] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartProps {
   
@@ -118,7 +117,7 @@ object ChartProps {
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

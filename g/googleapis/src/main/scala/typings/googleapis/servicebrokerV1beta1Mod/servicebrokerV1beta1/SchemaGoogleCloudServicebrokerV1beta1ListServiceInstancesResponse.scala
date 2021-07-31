@@ -2,13 +2,11 @@ package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for the `ListServiceInstances()` method.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse extends 
     * error codes.
     * https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#service-broker-errors
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The list of instances in the broker.
     */
-  var instances: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance]] = js.undefined
   
   /**
     * This token allows you to get the next page of results for list requests.
@@ -30,7 +28,7 @@ trait SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse extends 
     * next list request. Subsequent list requests will have their own
     * `nextPageToken` to continue paging through the results
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse {
   

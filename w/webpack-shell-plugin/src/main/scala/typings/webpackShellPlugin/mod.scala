@@ -3,18 +3,18 @@ package typings.webpackShellPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-shell-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -23,39 +23,39 @@ object mod {
       * Useful for running HMR on webpack-dev-server or webpack watch mode.
       * @default true
       */
-    var dev: js.UndefOr[Boolean] = js.native
+    var dev: js.UndefOr[Boolean] = js.undefined
     
     /**
       * scripts to execute after files are emitted at the end of the compilation
       * @default []
       */
-    var onBuildEnd: js.UndefOr[js.Array[String]] = js.native
+    var onBuildEnd: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * scripts to execute after webpack process is complete
       * @default []
       */
-    var onBuildExit: js.UndefOr[js.Array[String]] = js.native
+    var onBuildExit: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * scripts to execute on the initial build
       * @default []
       */
-    var onBuildStart: js.UndefOr[js.Array[String]] = js.native
+    var onBuildStart: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Switches script execution process from spawn to exec.
       * If running into problems with spawn, turn this setting on.
       * @default false
       */
-    var safe: js.UndefOr[Boolean] = js.native
+    var safe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable for verbose output
       * @deprecated
       * @default false
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

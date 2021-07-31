@@ -2,18 +2,18 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines access rights for a single file, applied to a user or group */
-@js.native
-trait EvaluatedFileACL extends FileACL {
+trait EvaluatedFileACL
+  extends StObject
+     with FileACL {
   
   /** Whether the user may read the file */
-  var read: Boolean = js.native
+  var read: Boolean
   
   /** Whether the user may write the file */
-  var write: Boolean = js.native
+  var write: Boolean
 }
 object EvaluatedFileACL {
   

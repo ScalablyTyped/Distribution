@@ -3,35 +3,33 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
   /**
     * Output only. Indicates whether the job is completed. If the value is false, the job is still in progress. If true, the job is completed, and status.state field will indicate if it
     * was successful, failed, or cancelled.
     */
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. If present, the location of miscellaneous control files which may be used as part of job setup and handling. If not present, control files may be placed in the same
     * location as driver_output_uri.
     */
-  var driverControlFilesUri: js.UndefOr[String] = js.native
+  var driverControlFilesUri: js.UndefOr[String] = js.undefined
   
   /** Output only. A URI pointing to the location of the stdout of the job's driver program. */
-  var driverOutputResourceUri: js.UndefOr[String] = js.native
+  var driverOutputResourceUri: js.UndefOr[String] = js.undefined
   
   /** Optional. Job is a Hadoop job. */
-  var hadoopJob: js.UndefOr[HadoopJob] = js.native
+  var hadoopJob: js.UndefOr[HadoopJob] = js.undefined
   
   /** Optional. Job is a Hive job. */
-  var hiveJob: js.UndefOr[HiveJob] = js.native
+  var hiveJob: js.UndefOr[HiveJob] = js.undefined
   
   /** Output only. A UUID that uniquely identifies a job within the project over time. This is in contrast to a user-settable reference.job_id that may be reused over time. */
-  var jobUuid: js.UndefOr[String] = js.native
+  var jobUuid: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The labels to associate with this job. Label keys must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). Label values may be
@@ -40,47 +38,47 @@ trait Job extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Optional. Job is a Pig job. */
-  var pigJob: js.UndefOr[PigJob] = js.native
+  var pigJob: js.UndefOr[PigJob] = js.undefined
   
   /** Required. Job information, including how, when, and where to run the job. */
-  var placement: js.UndefOr[JobPlacement] = js.native
+  var placement: js.UndefOr[JobPlacement] = js.undefined
   
   /** Optional. Job is a Presto job. */
-  var prestoJob: js.UndefOr[PrestoJob] = js.native
+  var prestoJob: js.UndefOr[PrestoJob] = js.undefined
   
   /** Optional. Job is a PySpark job. */
-  var pysparkJob: js.UndefOr[PySparkJob] = js.native
+  var pysparkJob: js.UndefOr[PySparkJob] = js.undefined
   
   /**
     * Optional. The fully qualified reference to the job, which can be used to obtain the equivalent REST path of the job resource. If this property is not specified when a job is
     * created, the server generates a job_id.
     */
-  var reference: js.UndefOr[JobReference] = js.native
+  var reference: js.UndefOr[JobReference] = js.undefined
   
   /** Optional. Job scheduling configuration. */
-  var scheduling: js.UndefOr[JobScheduling] = js.native
+  var scheduling: js.UndefOr[JobScheduling] = js.undefined
   
   /** Optional. Job is a Spark job. */
-  var sparkJob: js.UndefOr[SparkJob] = js.native
+  var sparkJob: js.UndefOr[SparkJob] = js.undefined
   
   /** Optional. Job is a SparkR job. */
-  var sparkRJob: js.UndefOr[SparkRJob] = js.native
+  var sparkRJob: js.UndefOr[SparkRJob] = js.undefined
   
   /** Optional. Job is a SparkSql job. */
-  var sparkSqlJob: js.UndefOr[SparkSqlJob] = js.native
+  var sparkSqlJob: js.UndefOr[SparkSqlJob] = js.undefined
   
   /** Output only. The job status. Additional application-specific status information may be contained in the type_job and yarn_applications fields. */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
   
   /** Output only. The previous job status. */
-  var statusHistory: js.UndefOr[js.Array[JobStatus]] = js.native
+  var statusHistory: js.UndefOr[js.Array[JobStatus]] = js.undefined
   
   /** Output only. The collection of YARN applications spun up by this job.Beta Feature: This report is available for testing purposes only. It may be changed before final release. */
-  var yarnApplications: js.UndefOr[js.Array[YarnApplication]] = js.native
+  var yarnApplications: js.UndefOr[js.Array[YarnApplication]] = js.undefined
 }
 object Job {
   
@@ -133,7 +131,7 @@ object Job {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

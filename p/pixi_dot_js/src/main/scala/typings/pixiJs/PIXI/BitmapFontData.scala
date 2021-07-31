@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,38 +10,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait BitmapFontData extends StObject {
   
   /**
     * @member {PIXI.IBitmapFontDataChar[]} PIXI.BitmapFontData#char
     * @readOnly
     */
-  val char: js.Array[IBitmapFontDataChar] = js.native
+  val char: js.Array[IBitmapFontDataChar]
   
   /**
     * @member {PIXI.IBitmapFontDataCommon[]} PIXI.BitmapFontData#common
     * @readOnly
     */
-  val common: js.Array[IBitmapFontDataCommon] = js.native
+  val common: js.Array[IBitmapFontDataCommon]
   
   /**
     * @member {PIXI.IBitmapFontDataInfo[]} PIXI.BitmapFontData#info
     * @readOnly
     */
-  val info: js.Array[IBitmapFontDataInfo] = js.native
+  val info: js.Array[IBitmapFontDataInfo]
   
   /**
     * @member {PIXI.IBitmapFontDataKerning[]} PIXI.BitmapFontData#kerning
     * @readOnly
     */
-  val kerning: js.Array[IBitmapFontDataKerning] = js.native
+  val kerning: js.Array[IBitmapFontDataKerning]
   
   /**
     * @member {PIXI.IBitmapFontDataPage[]} PIXI.BitmapFontData#page
     * @readOnly
     */
-  val page: js.Array[IBitmapFontDataPage] = js.native
+  val page: js.Array[IBitmapFontDataPage]
 }
 object BitmapFontData {
   

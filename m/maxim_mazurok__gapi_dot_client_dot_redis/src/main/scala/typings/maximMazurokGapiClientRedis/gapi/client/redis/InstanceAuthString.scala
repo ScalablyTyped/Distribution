@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceAuthString extends StObject {
   
   /** AUTH string set on the instance. */
-  var authString: js.UndefOr[String] = js.native
+  var authString: js.UndefOr[String] = js.undefined
 }
 object InstanceAuthString {
   

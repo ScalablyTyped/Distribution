@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Each operation can have one or more header elements
   */
-@js.native
-trait TestScriptSetupActionOperationRequestHeader extends BackboneElement {
+trait TestScriptSetupActionOperationRequestHeader
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'field'.
     */
-  var _field: js.UndefOr[Element] = js.native
+  var _field: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * HTTP header field name
     */
-  var field: String = js.native
+  var field: String
   
   /**
     * HTTP headerfield value
     */
-  var value: String = js.native
+  var value: String
 }
 object TestScriptSetupActionOperationRequestHeader {
   

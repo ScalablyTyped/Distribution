@@ -3,18 +3,16 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelSelector extends StObject {
   
   /** Resource labels for this selector. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.LabelSelector with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.LabelSelector & TopLevel[js.Any]
+  ] = js.undefined
 }
 object LabelSelector {
   
@@ -31,7 +29,7 @@ object LabelSelector {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.LabelSelector with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.LabelSelector & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

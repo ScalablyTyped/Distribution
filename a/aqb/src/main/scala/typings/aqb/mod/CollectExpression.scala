@@ -3,12 +3,12 @@ package typings.aqb.mod
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CollectExpression
-  extends PartialStatement
+  extends StObject
+     with PartialStatement
      with Instantiable6[
       /* prev */ PartialStatement, 
       /* dfns */ js.Array[js.Any], 

@@ -3,37 +3,37 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FTInitUpload extends ResponseEntry {
+trait FTInitUpload
+  extends StObject
+     with ResponseEntry {
   
-  var clientftfid: Double = js.native
+  var clientftfid: Double
   
   /** exists when file is uploadable */
-  var ftkey: js.UndefOr[String] = js.native
+  var ftkey: js.UndefOr[String] = js.undefined
   
   /** exists when an error occured */
-  var msg: js.UndefOr[String] = js.native
+  var msg: js.UndefOr[String] = js.undefined
   
   /** exists when file is uploadable */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** exists when file is uploadable */
-  var proto: js.UndefOr[Double] = js.native
+  var proto: js.UndefOr[Double] = js.undefined
   
   /** exists when file is uploadable */
-  var seekpos: js.UndefOr[Double] = js.native
+  var seekpos: js.UndefOr[Double] = js.undefined
   
   /** exists when file is uploadable */
-  var serverftfid: js.UndefOr[Double] = js.native
+  var serverftfid: js.UndefOr[Double] = js.undefined
   
   /** exists when an error occured */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /** exists when an error occured */
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
 }
 object FTInitUpload {
   

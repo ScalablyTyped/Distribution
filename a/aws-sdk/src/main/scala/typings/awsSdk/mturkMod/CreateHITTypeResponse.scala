@@ -2,16 +2,14 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHITTypeResponse extends StObject {
   
   /**
     *  The ID of the newly registered HIT type.
     */
-  var HITTypeId: js.UndefOr[EntityId] = js.native
+  var HITTypeId: js.UndefOr[EntityId] = js.undefined
 }
 object CreateHITTypeResponse {
   

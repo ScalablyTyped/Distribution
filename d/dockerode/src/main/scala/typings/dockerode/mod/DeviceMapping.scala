@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceMapping extends StObject {
   
-  var CgroupPermissions: String = js.native
+  var CgroupPermissions: String
   
-  var PathInContainer: String = js.native
+  var PathInContainer: String
   
-  var PathOnHost: String = js.native
+  var PathOnHost: String
 }
 object DeviceMapping {
   

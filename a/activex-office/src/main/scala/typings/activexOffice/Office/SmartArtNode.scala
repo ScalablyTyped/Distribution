@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,7 +12,7 @@ trait SmartArtNode extends StObject {
     * @param Type [Type=1]
     */
   def AddNode(): SmartArtNode = js.native
-  def AddNode(Position: js.UndefOr[scala.Nothing], Type: MsoSmartArtNodeType): SmartArtNode = js.native
+  def AddNode(Position: Unit, Type: MsoSmartArtNodeType): SmartArtNode = js.native
   def AddNode(Position: MsoSmartArtNodePosition): SmartArtNode = js.native
   def AddNode(Position: MsoSmartArtNodePosition, Type: MsoSmartArtNodeType): SmartArtNode = js.native
   

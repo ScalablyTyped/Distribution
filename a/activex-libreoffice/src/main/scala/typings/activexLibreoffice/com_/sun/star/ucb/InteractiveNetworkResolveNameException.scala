@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A network error specifying a name resolution failure. */
-@js.native
-trait InteractiveNetworkResolveNameException extends ClassifiedInteractionRequest {
+trait InteractiveNetworkResolveNameException
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** The server name for which resolution failed. */
-  var Server: String = js.native
+  var Server: String
 }
 object InteractiveNetworkResolveNameException {
   

@@ -2,15 +2,15 @@ package typings.reactHotkeys.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyMapOptions extends _KeySequence {
+trait KeyMapOptions
+  extends StObject
+     with _KeySequence {
   
-  var action: KeyEventName = js.native
+  var action: KeyEventName
   
-  var sequence: MouseTrapKeySequence = js.native
+  var sequence: MouseTrapKeySequence
 }
 object KeyMapOptions {
   

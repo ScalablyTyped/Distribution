@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceNowConnectorProfileCredentials extends StObject {
   
   /**
     *  The password that corresponds to the user name. 
     */
-  var password: Password = js.native
+  var password: Password
   
   /**
     *  The name of the user. 
     */
-  var username: Username = js.native
+  var username: Username
 }
 object ServiceNowConnectorProfileCredentials {
   

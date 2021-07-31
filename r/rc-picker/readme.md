@@ -10,9 +10,9 @@ React date & time picker
 | ------------------ | :-------------: |
 | Full name          | rc-picker |
 | Keywords           | react, react-component, react-picker |
-| # releases         | 151 |
-| # dependents       | 40 |
-| # downloads        | 7295448 |
+| # releases         | 160 |
+| # dependents       | 46 |
+| # downloads        | 11554856 |
 | # stars            | 0 |
 
 ## Links

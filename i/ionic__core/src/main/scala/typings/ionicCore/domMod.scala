@@ -7,72 +7,49 @@ import typings.ionicCore.interfaceMod.RouterDirection
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domMod {
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "readNavState")
+  @JSImport("@ionic/core/dist/types/components/router/utils/dom", JSImport.Namespace)
   @js.native
-  def readNavState(): js.Promise[Ids] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "readNavState")
-  @js.native
-  def readNavState(root: HTMLElement): js.Promise[Ids] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "waitUntilNavNode")
-  @js.native
-  def waitUntilNavNode(): js.Promise[_] = js.native
+  @scala.inline
+  def readNavState(): js.Promise[Ids] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNavState")().asInstanceOf[js.Promise[Ids]]
+  @scala.inline
+  def readNavState(root: HTMLElement): js.Promise[Ids] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNavState")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ids]]
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
-  def writeNavState(root: js.UndefOr[scala.Nothing], chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
+  @scala.inline
+  def waitUntilNavNode(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilNavNode")().asInstanceOf[js.Promise[js.Any]]
+  
+  @scala.inline
+  def writeNavState(root: Unit, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def writeNavState(root: Unit, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def writeNavState(
-    root: js.UndefOr[scala.Nothing],
-    chain: RouteChain,
-    direction: RouterDirection,
-    index: Double,
-    changed: js.UndefOr[scala.Nothing],
-    animation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
-  def writeNavState(
-    root: js.UndefOr[scala.Nothing],
-    chain: RouteChain,
-    direction: RouterDirection,
-    index: Double,
-    changed: Boolean
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
-  def writeNavState(
-    root: js.UndefOr[scala.Nothing],
+    root: Unit,
     chain: RouteChain,
     direction: RouterDirection,
     index: Double,
     changed: Boolean,
     animation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
-  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def writeNavState(
-    root: HTMLElement,
+    root: Unit,
     chain: RouteChain,
     direction: RouterDirection,
     index: Double,
-    changed: js.UndefOr[scala.Nothing],
+    changed: Unit,
     animation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
-  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/dom", "writeNavState")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def writeNavState(
     root: HTMLElement,
     chain: RouteChain,
@@ -80,5 +57,14 @@ object domMod {
     index: Double,
     changed: Boolean,
     animation: AnimationBuilder
-  ): js.Promise[Boolean] = js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def writeNavState(
+    root: HTMLElement,
+    chain: RouteChain,
+    direction: RouterDirection,
+    index: Double,
+    changed: Unit,
+    animation: AnimationBuilder
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
 }

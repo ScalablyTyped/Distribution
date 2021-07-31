@@ -2,20 +2,18 @@ package typings.codemirror.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mode extends StObject {
   
-  var mode: typings.codemirror.mod.Mode[_] = js.native
+  var mode: typings.codemirror.mod.Mode[js.Any]
   
-  var state: js.Any = js.native
+  var state: js.Any
 }
 object Mode {
   
   @scala.inline
-  def apply(mode: typings.codemirror.mod.Mode[_], state: js.Any): Mode = {
+  def apply(mode: typings.codemirror.mod.Mode[js.Any], state: js.Any): Mode = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
@@ -24,7 +22,7 @@ object Mode {
   implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setMode(value: typings.codemirror.mod.Mode[_]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    def setMode(value: typings.codemirror.mod.Mode[js.Any]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])

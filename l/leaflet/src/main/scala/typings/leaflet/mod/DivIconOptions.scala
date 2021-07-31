@@ -4,15 +4,15 @@ import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DivIconOptions extends BaseIconOptions {
+trait DivIconOptions
+  extends StObject
+     with BaseIconOptions {
   
-  var bgPos: js.UndefOr[PointExpression] = js.native
+  var bgPos: js.UndefOr[PointExpression] = js.undefined
   
-  var html: js.UndefOr[String | HTMLElement | `false`] = js.native
+  var html: js.UndefOr[String | HTMLElement | `false`] = js.undefined
 }
 object DivIconOptions {
   

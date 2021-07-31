@@ -3,18 +3,16 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a RetryPolicy. */
-@js.native
 trait IRetryPolicy extends StObject {
   
   /** RetryPolicy maximumBackoff */
-  var maximumBackoff: js.UndefOr[IDuration | Null] = js.native
+  var maximumBackoff: js.UndefOr[IDuration | Null] = js.undefined
   
   /** RetryPolicy minimumBackoff */
-  var minimumBackoff: js.UndefOr[IDuration | Null] = js.native
+  var minimumBackoff: js.UndefOr[IDuration | Null] = js.undefined
 }
 object IRetryPolicy {
   

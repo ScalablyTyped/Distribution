@@ -3,44 +3,43 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhoamiUser
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var access_key: js.UndefOr[String] = js.native
+  var access_key: js.UndefOr[String] = js.undefined
   
-  var ancestor_concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.native
+  var ancestor_concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.undefined
   
-  var can_run_manual: js.UndefOr[Boolean] = js.native
+  var can_run_manual: js.UndefOr[Boolean] = js.undefined
   
-  var concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.native
+  var concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var first_name: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
-  var manual_minutes: js.UndefOr[Double] = js.native
+  var manual_minutes: js.UndefOr[Double] = js.undefined
   
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[js.Object] = js.native
+  var parent: js.UndefOr[js.Object] = js.undefined
   
-  var subscribed: js.UndefOr[Boolean] = js.native
+  var subscribed: js.UndefOr[Boolean] = js.undefined
   
-  var user_type: js.UndefOr[String] = js.native
+  var user_type: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var verified: js.UndefOr[Boolean] = js.native
+  var verified: js.UndefOr[Boolean] = js.undefined
 }
 object WhoamiUser {
   

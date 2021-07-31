@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsConfigurationFilter extends StObject {
   
   /**
     * Object prefix for filtering.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Set of object tags for filtering.
     */
-  var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
 }
 object AnalyticsConfigurationFilter {
   

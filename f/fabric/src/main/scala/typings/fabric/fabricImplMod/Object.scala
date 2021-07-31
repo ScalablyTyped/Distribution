@@ -25,13 +25,13 @@ import typings.std.HTMLCanvasElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Object")
 @js.native
 class Object ()
-  extends IObservable[Object]
+  extends StObject
+     with IObservable[Object]
      with IObjectOptions
      with IObjectAnimation[Object] {
   def this(options: IObjectOptions) = this()
@@ -86,9 +86,9 @@ class Object ()
     * @return {Object} .y height dimension
     */
   def _getTransformedDimensions(): X = js.native
-  def _getTransformedDimensions(skewX: js.UndefOr[scala.Nothing], skewY: Double): X = js.native
   def _getTransformedDimensions(skewX: Double): X = js.native
   def _getTransformedDimensions(skewX: Double, skewY: Double): X = js.native
+  def _getTransformedDimensions(skewX: Unit, skewY: Double): X = js.native
   
   /**
     * @private
@@ -173,7 +173,7 @@ class Object ()
     * object's properties, this matrix does not include the group transformation
     * @return {Array} transform matrix for the object
     */
-  def calcOwnMatrix(): js.Array[_] = js.native
+  def calcOwnMatrix(): js.Array[js.Any] = js.native
   
   /**
     * calculate trasform Matrix that represent current transformation from
@@ -181,8 +181,8 @@ class Object ()
     * @param {Boolean} [skipGroup] return transformMatrix for object and not go upward with parents
     * @return {Array} matrix Transform Matrix for the object
     */
-  def calcTransformMatrix(): js.Array[_] = js.native
-  def calcTransformMatrix(skipGroup: Boolean): js.Array[_] = js.native
+  def calcTransformMatrix(): js.Array[js.Any] = js.native
+  def calcTransformMatrix(skipGroup: Boolean): js.Array[js.Any] = js.native
   
   /**
     * Centers object vertically and horizontally on canvas to which is was added last
@@ -231,18 +231,13 @@ class Object ()
     * @return {Boolean} true if point is inside the object
     */
   def containsPoint(point: Point): Boolean = js.native
-  def containsPoint(
-    point: Point,
-    lines: js.UndefOr[scala.Nothing],
-    absolute: js.UndefOr[scala.Nothing],
-    calculate: Boolean
-  ): Boolean = js.native
-  def containsPoint(point: Point, lines: js.UndefOr[scala.Nothing], absolute: Boolean): Boolean = js.native
-  def containsPoint(point: Point, lines: js.UndefOr[scala.Nothing], absolute: Boolean, calculate: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any): Boolean = js.native
-  def containsPoint(point: Point, lines: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any, absolute: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: js.Any, absolute: Unit, calculate: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: Unit, absolute: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: Unit, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: Unit, absolute: Unit, calculate: Boolean): Boolean = js.native
   
   // functions from interactivity mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
@@ -269,9 +264,9 @@ class Object ()
     * @chainable
     */
   def drawBordersInGroup(ctx: CanvasRenderingContext2D): Object = js.native
-  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.UndefOr[scala.Nothing], styleOverride: js.Any): Object = js.native
   def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any): Object = js.native
   def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any, styleOverride: js.Any): Object = js.native
+  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: Unit, styleOverride: js.Any): Object = js.native
   
   /**
     * Paint the cached copy of the object on the target context.
@@ -344,9 +339,9 @@ class Object ()
     * @return {Object} Object with left, top, width, height properties
     */
   def getBoundingRect(): Top = js.native
-  def getBoundingRect(absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Top = js.native
   def getBoundingRect(absolute: Boolean): Top = js.native
   def getBoundingRect(absolute: Boolean, calculate: Boolean): Top = js.native
+  def getBoundingRect(absolute: Unit, calculate: Boolean): Top = js.native
   
   /**
     * Returns the real center coordinates of the object
@@ -357,9 +352,9 @@ class Object ()
     * return correct set of coordinates for intersection
     */
   def getCoords(): js.Any = js.native
-  def getCoords(absolute: js.UndefOr[scala.Nothing], calculate: Boolean): js.Any = js.native
   def getCoords(absolute: Boolean): js.Any = js.native
   def getCoords(absolute: Boolean, calculate: Boolean): js.Any = js.native
+  def getCoords(absolute: Unit, calculate: Boolean): js.Any = js.native
   
   /**
     * Returns coordinates of a pointer relative to an object
@@ -447,9 +442,9 @@ class Object ()
     * @return {String}
     */
   def getSvgTransform(): String = js.native
-  def getSvgTransform(full: js.UndefOr[scala.Nothing], additionalTransform: String): String = js.native
   def getSvgTransform(full: Boolean): String = js.native
   def getSvgTransform(full: Boolean, additionalTransform: String): String = js.native
+  def getSvgTransform(full: Unit, additionalTransform: String): String = js.native
   
   /**
     * Returns transform-string for svg-export from the transform matrix of single elements
@@ -465,7 +460,7 @@ class Object ()
   /**
     * Retrieves viewportTransform from Object's canvas if possible
     */
-  def getViewportTransform(): js.Array[_] = js.native
+  def getViewportTransform(): js.Array[js.Any] = js.native
   
   // functions from stateful mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
@@ -487,9 +482,9 @@ class Object ()
     * @return {Boolean} true if object intersects with another object
     */
   def intersectsWithObject(other: Object): Boolean = js.native
-  def intersectsWithObject(other: Object, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def intersectsWithObject(other: Object, absolute: Boolean): Boolean = js.native
   def intersectsWithObject(other: Object, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def intersectsWithObject(other: Object, absolute: Unit, calculate: Boolean): Boolean = js.native
   
   /**
     * Checks if object intersects with an area formed by 2 points
@@ -500,9 +495,9 @@ class Object ()
     * @return {Boolean} true if object intersects with an area formed by 2 points
     */
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any): Boolean = js.native
-  def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Unit, calculate: Boolean): Boolean = js.native
   
   /**
     * Check if cache is dirty
@@ -520,9 +515,9 @@ class Object ()
     * @return {Boolean} true if object is fully contained within area of another object
     */
   def isContainedWithinObject(other: Object): Boolean = js.native
-  def isContainedWithinObject(other: Object, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def isContainedWithinObject(other: Object, absolute: Boolean): Boolean = js.native
   def isContainedWithinObject(other: Object, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def isContainedWithinObject(other: Object, absolute: Unit, calculate: Boolean): Boolean = js.native
   
   /**
     * Checks if object is fully contained within area formed by 2 points
@@ -530,9 +525,9 @@ class Object ()
     * @param pointBR bottom-right point of area
     */
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any): Boolean = js.native
-  def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Unit, calculate: Boolean): Boolean = js.native
   
   /**
     * Returns true if the specified control is visible, false otherwise.
@@ -708,9 +703,9 @@ class Object ()
     * @chainable
     */
   def setCoords(): Object = js.native
-  def setCoords(ignoreZoom: js.UndefOr[scala.Nothing], skipAbsolute: Boolean): Object = js.native
   def setCoords(ignoreZoom: Boolean): Object = js.native
   def setCoords(ignoreZoom: Boolean, skipAbsolute: Boolean): Object = js.native
+  def setCoords(ignoreZoom: Unit, skipAbsolute: Boolean): Object = js.native
   
   @JSName("setGradient")
   def setGradient_fill(property: fill): Object = js.native
@@ -963,16 +958,12 @@ object Object {
     * @private
     * @return {fabric.Object}
     */
-  @JSImport("fabric/fabric-impl", "Object._fromObject")
-  @js.native
-  def _fromObject(className: String, `object`: Object): Object = js.native
-  @JSImport("fabric/fabric-impl", "Object._fromObject")
-  @js.native
-  def _fromObject(className: String, `object`: Object, callback: js.UndefOr[scala.Nothing], extraParam: js.Any): Object = js.native
-  @JSImport("fabric/fabric-impl", "Object._fromObject")
-  @js.native
-  def _fromObject(className: String, `object`: Object, callback: js.Function): Object = js.native
-  @JSImport("fabric/fabric-impl", "Object._fromObject")
-  @js.native
-  def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = js.native
+  @scala.inline
+  def _fromObject(className: String, `object`: Object): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Object]
+  @scala.inline
+  def _fromObject(className: String, `object`: Object, callback: js.Function): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Object]
+  @scala.inline
+  def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
+  @scala.inline
+  def _fromObject(className: String, `object`: Object, callback: Unit, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
 }

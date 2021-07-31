@@ -2,10 +2,8 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPollItemsResponse extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaPollItemsResponse extends StObject {
     * /&gt;structured_data.hash &lt;br /&gt;content.hash &lt;br /&gt;payload
     * &lt;br /&gt;status &lt;br /&gt;queue
     */
-  var items: js.UndefOr[js.Array[SchemaItem]] = js.native
+  var items: js.UndefOr[js.Array[SchemaItem]] = js.undefined
 }
 object SchemaPollItemsResponse {
   

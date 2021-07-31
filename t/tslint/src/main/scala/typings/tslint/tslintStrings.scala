@@ -6,7 +6,6 @@ import typings.tslint.ruleMod.RuleSeverity
 import typings.tslint.ruleMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tslintStrings {
@@ -47,32 +46,44 @@ object tslintStrings {
   def before: before = "before".asInstanceOf[before]
   
   @js.native
-  sealed trait error extends RuleSeverity
+  sealed trait error
+    extends StObject
+       with RuleSeverity
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait formatting extends RuleType
+  sealed trait formatting
+    extends StObject
+       with RuleType
   @scala.inline
   def formatting: formatting = "formatting".asInstanceOf[formatting]
   
   @js.native
-  sealed trait functionality extends RuleType
+  sealed trait functionality
+    extends StObject
+       with RuleType
   @scala.inline
   def functionality: functionality = "functionality".asInstanceOf[functionality]
   
   @js.native
-  sealed trait human extends ConsumerType
+  sealed trait human
+    extends StObject
+       with ConsumerType
   @scala.inline
   def human: human = "human".asInstanceOf[human]
   
   @js.native
-  sealed trait machine extends ConsumerType
+  sealed trait machine
+    extends StObject
+       with ConsumerType
   @scala.inline
   def machine: machine = "machine".asInstanceOf[machine]
   
   @js.native
-  sealed trait maintainability extends RuleType
+  sealed trait maintainability
+    extends StObject
+       with RuleType
   @scala.inline
   def maintainability: maintainability = "maintainability".asInstanceOf[maintainability]
   
@@ -87,17 +98,23 @@ object tslintStrings {
   def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait off extends RuleSeverity
+  sealed trait off
+    extends StObject
+       with RuleSeverity
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait style extends RuleType
+  sealed trait style
+    extends StObject
+       with RuleType
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait typescript extends RuleType
+  sealed trait typescript
+    extends StObject
+       with RuleType
   @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   
@@ -107,22 +124,30 @@ object tslintStrings {
   def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait utf16be extends Encoding
+  sealed trait utf16be
+    extends StObject
+       with Encoding
   @scala.inline
   def utf16be: utf16be = "utf16be".asInstanceOf[utf16be]
   
   @js.native
-  sealed trait utf16le extends Encoding
+  sealed trait utf16le
+    extends StObject
+       with Encoding
   @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
   @js.native
-  sealed trait utf8 extends Encoding
+  sealed trait utf8
+    extends StObject
+       with Encoding
   @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
   
   @js.native
-  sealed trait `utf8-bom` extends Encoding
+  sealed trait `utf8-bom`
+    extends StObject
+       with Encoding
   @scala.inline
   def `utf8-bom`: `utf8-bom` = "utf8-bom".asInstanceOf[`utf8-bom`]
   
@@ -132,7 +157,9 @@ object tslintStrings {
   def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait warning extends RuleSeverity
+  sealed trait warning
+    extends StObject
+       with RuleSeverity
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }

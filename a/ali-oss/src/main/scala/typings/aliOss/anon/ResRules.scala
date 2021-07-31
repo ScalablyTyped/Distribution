@@ -4,15 +4,13 @@ import typings.aliOss.mod.CORSRule
 import typings.aliOss.mod.NormalSuccessResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResRules extends StObject {
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
   
-  var rules: js.Array[CORSRule] = js.native
+  var rules: js.Array[CORSRule]
 }
 object ResRules {
   

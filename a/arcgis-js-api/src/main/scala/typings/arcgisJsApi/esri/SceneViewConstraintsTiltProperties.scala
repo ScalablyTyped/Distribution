@@ -6,25 +6,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewConstraintsTiltProperties extends Object {
+trait SceneViewConstraintsTiltProperties
+  extends StObject
+     with Object {
   
   /**
     * Specifies the maximum amount of tilt (in degrees) allowed in the view and may range from 0.5 to 179.5 degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the mode of the constraint.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var mode: js.UndefOr[auto | manual] = js.native
+  var mode: js.UndefOr[auto | manual] = js.undefined
 }
 object SceneViewConstraintsTiltProperties {
   

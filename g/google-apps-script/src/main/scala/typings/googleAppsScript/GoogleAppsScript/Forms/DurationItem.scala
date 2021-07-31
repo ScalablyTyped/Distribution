@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,38 +14,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var item = form.addDurationItem();
   *     item.setTitle('How long can you hold your breath?');
   */
-@js.native
 trait DurationItem extends StObject {
   
-  def createResponse(hours: Integer, minutes: Integer, seconds: Integer): ItemResponse = js.native
+  def createResponse(hours: Integer, minutes: Integer, seconds: Integer): ItemResponse
   
-  def duplicate(): DurationItem = js.native
+  def duplicate(): DurationItem
   
-  def getGeneralFeedback(): QuizFeedback = js.native
+  def getGeneralFeedback(): QuizFeedback
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getPoints(): Integer = js.native
+  def getPoints(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setGeneralFeedback(feedback: QuizFeedback): DurationItem = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): DurationItem
   
-  def setHelpText(text: String): DurationItem = js.native
+  def setHelpText(text: String): DurationItem
   
-  def setPoints(points: Integer): DurationItem = js.native
+  def setPoints(points: Integer): DurationItem
   
-  def setRequired(enabled: Boolean): DurationItem = js.native
+  def setRequired(enabled: Boolean): DurationItem
   
-  def setTitle(title: String): DurationItem = js.native
+  def setTitle(title: String): DurationItem
 }
 object DurationItem {
   

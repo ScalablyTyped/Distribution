@@ -3,7 +3,6 @@ package typings.nextReactDevOverlay
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayOverlayMod {
@@ -12,12 +11,11 @@ object overlayOverlayMod {
   @js.native
   val Overlay: FC[OverlayProps] = js.native
   
-  @js.native
   trait OverlayProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
   }
   object OverlayProps {
     

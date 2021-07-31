@@ -2,14 +2,12 @@ package typings.officeJs.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `customPropertyCollection.toJSON()`. */
-@js.native
 trait CustomPropertyCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[CustomPropertyData]] = js.native
+  var items: js.UndefOr[js.Array[CustomPropertyData]] = js.undefined
 }
 object CustomPropertyCollectionData {
   

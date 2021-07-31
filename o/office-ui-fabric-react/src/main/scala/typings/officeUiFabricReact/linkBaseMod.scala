@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.linkTypesMod.ILinkProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkBaseMod {
@@ -26,5 +25,9 @@ object linkBaseMod {
     var _onClick: js.Any = js.native
     
     var _renderContent: js.Any = js.native
+    
+    /** Sets focus to the link. */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
 }

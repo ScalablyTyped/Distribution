@@ -7,7 +7,6 @@ import typings.webgme.GmeCommon.Pointer
 import typings.webgme.GmeCommon.ResultCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -84,7 +83,7 @@ trait Client extends StObject {
     * The client opens a project and a branch and 
     * from there we can start registering for node events.
     */
-  def selectProject(projectId: String, branchName: String, callback: ResultCallback[_]): Unit = js.native
+  def selectProject(projectId: String, branchName: String, callback: ResultCallback[js.Any]): Unit = js.native
   
   def setAttributeSchema(nodeId: String, name: String, schema: AttributeSchema): Unit = js.native
   

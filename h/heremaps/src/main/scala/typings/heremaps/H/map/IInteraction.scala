@@ -4,7 +4,6 @@ import typings.heremaps.H.math.BitMask
 import typings.heremaps.H.util.kinetics.IKinetics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,19 +29,13 @@ trait IInteraction extends StObject {
     * @param opt_timestamp {number=} - known timestamp which should be passed
     */
   def interaction(x: Double, y: Double): Unit = js.native
-  def interaction(
-    x: Double,
-    y: Double,
-    opt_bx: js.UndefOr[scala.Nothing],
-    opt_by: js.UndefOr[scala.Nothing],
-    opt_timestamp: Double
-  ): Unit = js.native
-  def interaction(x: Double, y: Double, opt_bx: js.UndefOr[scala.Nothing], opt_by: Double): Unit = js.native
-  def interaction(x: Double, y: Double, opt_bx: js.UndefOr[scala.Nothing], opt_by: Double, opt_timestamp: Double): Unit = js.native
   def interaction(x: Double, y: Double, opt_bx: Double): Unit = js.native
-  def interaction(x: Double, y: Double, opt_bx: Double, opt_by: js.UndefOr[scala.Nothing], opt_timestamp: Double): Unit = js.native
   def interaction(x: Double, y: Double, opt_bx: Double, opt_by: Double): Unit = js.native
   def interaction(x: Double, y: Double, opt_bx: Double, opt_by: Double, opt_timestamp: Double): Unit = js.native
+  def interaction(x: Double, y: Double, opt_bx: Double, opt_by: Unit, opt_timestamp: Double): Unit = js.native
+  def interaction(x: Double, y: Double, opt_bx: Unit, opt_by: Double): Unit = js.native
+  def interaction(x: Double, y: Double, opt_bx: Unit, opt_by: Double, opt_timestamp: Double): Unit = js.native
+  def interaction(x: Double, y: Double, opt_bx: Unit, opt_by: Unit, opt_timestamp: Double): Unit = js.native
   
   /**
     * This method starts the interaction with the view port. Should be called every time when new interaction is started i.e mouse grab, or touch start.

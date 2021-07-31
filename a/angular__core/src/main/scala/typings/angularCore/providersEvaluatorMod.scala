@@ -5,7 +5,6 @@ import typings.typescript.mod.Expression
 import typings.typescript.mod.ObjectLiteralExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providersEvaluatorMod {
@@ -26,12 +25,11 @@ object providersEvaluatorMod {
     def visitObjectLiteralExpression(node: ObjectLiteralExpression, context: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait ProviderLiteral extends StObject {
     
-    var node: ObjectLiteralExpression = js.native
+    var node: ObjectLiteralExpression
     
-    var resolvedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any = js.native
+    var resolvedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
   }
   object ProviderLiteral {
     

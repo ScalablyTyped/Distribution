@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListEditCustomHighlightingEventArgs extends EventArgs {
+trait ListEditCustomHighlightingEventArgs
+  extends StObject
+     with EventArgs {
   
-  val filter: String = js.native
+  val filter: String
   
-  var highlighting: js.Any = js.native
+  var highlighting: js.Any
 }
 object ListEditCustomHighlightingEventArgs {
   

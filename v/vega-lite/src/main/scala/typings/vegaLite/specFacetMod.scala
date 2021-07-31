@@ -3,9 +3,8 @@ package typings.vegaLite
 import typings.vegaLite.binMod.BinParams
 import typings.vegaLite.channeldefMod.ChannelDef
 import typings.vegaLite.channeldefMod.Field
-import typings.vegaLite.channeldefMod.FieldDefBase
 import typings.vegaLite.channeldefMod.FieldName
-import typings.vegaLite.channeldefMod.TypeMixins
+import typings.vegaLite.channeldefMod.TypedFieldDef
 import typings.vegaLite.datetimeMod.DateTime
 import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.headerMod.Header
@@ -13,49 +12,46 @@ import typings.vegaLite.sortMod.EncodingSortField
 import typings.vegaLite.sortMod.SortArray
 import typings.vegaLite.sortMod.SortOrder
 import typings.vegaLite.specBaseMod.BaseSpec
-import typings.vegaLite.specBaseMod.ColumnMixins
-import typings.vegaLite.specBaseMod.GenericCompositionLayout
 import typings.vegaLite.specBaseMod.GenericCompositionLayoutWithColumns
 import typings.vegaLite.specBaseMod.ResolveMixins
 import typings.vegaLite.specLayerMod.GenericLayerSpec
 import typings.vegaLite.specLayerMod.NormalizedLayerSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import typings.vegaLite.specUnitMod.NormalizedUnitSpec
-import typings.vegaLite.srcGuideMod.TitleMixins
 import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaTypings.layoutMod.LayoutAlign
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object specFacetMod {
   
-  @JSImport("vega-lite/build/src/spec/facet", "isFacetFieldDef")
+  @JSImport("vega-lite/build/src/spec/facet", JSImport.Namespace)
   @js.native
-  def isFacetFieldDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, any> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/spec/facet", "isFacetMapping")
-  @js.native
-  def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetFieldDef[F, ES]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = js.native
-  @JSImport("vega-lite/build/src/spec/facet", "isFacetMapping")
-  @js.native
-  def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = js.native
+  @scala.inline
+  def isFacetFieldDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, any> */ Boolean]
   
-  @JSImport("vega-lite/build/src/spec/facet", "isFacetSpec")
-  @js.native
-  def isFacetSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean = js.native
+  @scala.inline
+  def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetFieldDef[F, ES]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetMapping")(f.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean]
+  @scala.inline
+  def isFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */](f: FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]): /* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetMapping")(f.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.FacetMapping<F, vega-lite.vega-lite/build/src/spec/facet.FacetFieldDef<F, vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> */ Boolean]
   
-  @js.native
-  trait EncodingFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */] extends FacetMapping[F, RowColumnEncodingFieldDef[F, ES]] {
+  @scala.inline
+  def isFacetSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFacetSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<any, any, any> */ Boolean]
+  
+  trait EncodingFacetMapping[F /* <: Field */, ES /* <: ExprRef | SignalRef */]
+    extends StObject
+       with FacetMapping[F, RowColumnEncodingFieldDef[F, ES]] {
     
     /**
       * A field definition for the (flexible) facet of trellis plots.
       *
       * If either `row` or `column` is specified, this channel will be ignored.
       */
-    var facet: js.UndefOr[FacetEncodingFieldDef[F, ES]] = js.native
+    var facet: js.UndefOr[FacetEncodingFieldDef[F, ES]] = js.undefined
   }
   object EncodingFacetMapping {
     
@@ -66,7 +62,7 @@ object specFacetMod {
     }
     
     @scala.inline
-    implicit class EncodingFacetMappingMutableBuilder[Self <: EncodingFacetMapping[_, _], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self with (EncodingFacetMapping[F, ES])) extends AnyVal {
+    implicit class EncodingFacetMappingMutableBuilder[Self <: EncodingFacetMapping[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (EncodingFacetMapping[F, ES])) extends AnyVal {
       
       @scala.inline
       def setFacet(value: FacetEncodingFieldDef[F, ES]): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
@@ -76,18 +72,16 @@ object specFacetMod {
     }
   }
   
-  type FacetEncodingFieldDef[F /* <: Field */, ES /* <: ExprRef | SignalRef */] = (FacetFieldDef[F, ES]) with GenericCompositionLayoutWithColumns
+  type FacetEncodingFieldDef[F /* <: Field */, ES /* <: ExprRef | SignalRef */] = (FacetFieldDef[F, ES]) & GenericCompositionLayoutWithColumns
   
-  @js.native
   trait FacetFieldDef[F /* <: Field */, ES /* <: ExprRef | SignalRef */]
-    extends FieldDefBase[F, Boolean | BinParams | Null]
-       with TitleMixins
-       with TypeMixins[StandardType] {
+    extends StObject
+       with TypedFieldDef[F, StandardType, Boolean | BinParams | Null] {
     
     /**
       * An object defining properties of a facet's header.
       */
-    var header: js.UndefOr[Header[ES]] = js.native
+    var header: js.UndefOr[Header[ES]] = js.undefined
     
     /**
       * Sort order for the encoded field.
@@ -104,7 +98,7 @@ object specFacetMod {
       *
       * __Note:__ `null` is not supported for `row` and `column`.
       */
-    var sort: js.UndefOr[SortArray | SortOrder | EncodingSortField[F] | Null] = js.native
+    var sort: js.UndefOr[SortArray | SortOrder | EncodingSortField[F] | Null] = js.undefined
   }
   object FacetFieldDef {
     
@@ -115,7 +109,7 @@ object specFacetMod {
     }
     
     @scala.inline
-    implicit class FacetFieldDefMutableBuilder[Self <: FacetFieldDef[_, _], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self with (FacetFieldDef[F, ES])) extends AnyVal {
+    implicit class FacetFieldDefMutableBuilder[Self <: FacetFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (FacetFieldDef[F, ES])) extends AnyVal {
       
       @scala.inline
       def setHeader(value: Header[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
@@ -137,18 +131,17 @@ object specFacetMod {
     }
   }
   
-  @js.native
   trait FacetMapping[F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */] extends StObject {
     
     /**
       * A field definition for the horizontal facet of trellis plots.
       */
-    var column: js.UndefOr[FD] = js.native
+    var column: js.UndefOr[FD] = js.undefined
     
     /**
       * A field definition for the vertical facet of trellis plots.
       */
-    var row: js.UndefOr[FD] = js.native
+    var row: js.UndefOr[FD] = js.undefined
   }
   object FacetMapping {
     
@@ -159,7 +152,7 @@ object specFacetMod {
     }
     
     @scala.inline
-    implicit class FacetMappingMutableBuilder[Self <: FacetMapping[_, _], F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */] (val x: Self with (FacetMapping[F, FD])) extends AnyVal {
+    implicit class FacetMappingMutableBuilder[Self <: FacetMapping[?, ?], F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */] (val x: Self & (FacetMapping[F, FD])) extends AnyVal {
       
       @scala.inline
       def setColumn(value: FD): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
@@ -175,11 +168,10 @@ object specFacetMod {
     }
   }
   
-  @js.native
-  trait GenericFacetSpec[U /* <: GenericUnitSpec[_, _] */, L /* <: GenericLayerSpec[_] */, F /* <: Field */]
-    extends GenericCompositionLayout
+  trait GenericFacetSpec[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */]
+    extends StObject
        with BaseSpec
-       with ColumnMixins
+       with GenericCompositionLayoutWithColumns
        with ResolveMixins {
     
     /**
@@ -187,17 +179,17 @@ object specFacetMod {
       * 1) [a field definition for faceting the plot by one field](https://vega.github.io/vega-lite/docs/facet.html#field-def)
       * 2) [An object that maps `row` and `column` channels to their field definitions](https://vega.github.io/vega-lite/docs/facet.html#mapping)
       */
-    var facet: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]) = js.native
+    var facet: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]])
     
     /**
       * A specification of the view that gets faceted.
       */
-    var spec: L | U = js.native
+    var spec: L | U
   }
   object GenericFacetSpec {
     
     @scala.inline
-    def apply[U /* <: GenericUnitSpec[_, _] */, L /* <: GenericLayerSpec[_] */, F /* <: Field */](
+    def apply[U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */](
       facet: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]]),
       spec: L | U
     ): GenericFacetSpec[U, L, F] = {
@@ -206,7 +198,7 @@ object specFacetMod {
     }
     
     @scala.inline
-    implicit class GenericFacetSpecMutableBuilder[Self <: GenericFacetSpec[_, _, _], U /* <: GenericUnitSpec[_, _] */, L /* <: GenericLayerSpec[_] */, F /* <: Field */] (val x: Self with (GenericFacetSpec[U, L, F])) extends AnyVal {
+    implicit class GenericFacetSpecMutableBuilder[Self <: GenericFacetSpec[?, ?, ?], U /* <: GenericUnitSpec[js.Any, js.Any] */, L /* <: GenericLayerSpec[js.Any] */, F /* <: Field */] (val x: Self & (GenericFacetSpec[U, L, F])) extends AnyVal {
       
       @scala.inline
       def setFacet(
@@ -220,8 +212,9 @@ object specFacetMod {
   
   type NormalizedFacetSpec = GenericFacetSpec[NormalizedUnitSpec, NormalizedLayerSpec, FieldName]
   
-  @js.native
-  trait RowColumnEncodingFieldDef[F /* <: Field */, ES /* <: ExprRef | SignalRef */] extends FacetFieldDef[F, ES] {
+  trait RowColumnEncodingFieldDef[F /* <: Field */, ES /* <: ExprRef | SignalRef */]
+    extends StObject
+       with FacetFieldDef[F, ES] {
     
     /**
       * The alignment to apply to row/column facet's subplot.
@@ -233,21 +226,21 @@ object specFacetMod {
       *
       * __Default value:__ `"all"`.
       */
-    var align: js.UndefOr[LayoutAlign] = js.native
+    var align: js.UndefOr[LayoutAlign] = js.undefined
     
     /**
       * Boolean flag indicating if facet's subviews should be centered relative to their respective rows or columns.
       *
       * __Default value:__ `false`
       */
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The spacing in pixels between facet's sub-views.
       *
       * __Default value__: Depends on `"spacing"` property of [the view composition configuration](https://vega.github.io/vega-lite/docs/config.html#view-config) (`20` by default)
       */
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
   }
   object RowColumnEncodingFieldDef {
     
@@ -258,7 +251,7 @@ object specFacetMod {
     }
     
     @scala.inline
-    implicit class RowColumnEncodingFieldDefMutableBuilder[Self <: RowColumnEncodingFieldDef[_, _], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self with (RowColumnEncodingFieldDef[F, ES])) extends AnyVal {
+    implicit class RowColumnEncodingFieldDefMutableBuilder[Self <: RowColumnEncodingFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (RowColumnEncodingFieldDef[F, ES])) extends AnyVal {
       
       @scala.inline
       def setAlign(value: LayoutAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])

@@ -2,15 +2,16 @@ package typings.antDesignProLayout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathToolsMod {
   
-  @JSImport("@ant-design/pro-layout/lib/utils/pathTools", "urlToList")
+  @JSImport("@ant-design/pro-layout/lib/utils/pathTools", JSImport.Namespace)
   @js.native
-  def urlToList(): js.Array[String] = js.native
-  @JSImport("@ant-design/pro-layout/lib/utils/pathTools", "urlToList")
-  @js.native
-  def urlToList(url: String): js.Array[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def urlToList(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToList")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def urlToList(url: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToList")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

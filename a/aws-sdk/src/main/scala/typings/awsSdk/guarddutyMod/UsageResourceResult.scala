@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageResourceResult extends StObject {
   
   /**
     * The AWS resource that generated usage.
     */
-  var Resource: js.UndefOr[String] = js.native
+  var Resource: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the sum total of usage for the specified resource type.
     */
-  var Total: js.UndefOr[typings.awsSdk.guarddutyMod.Total] = js.native
+  var Total: js.UndefOr[typings.awsSdk.guarddutyMod.Total] = js.undefined
 }
 object UsageResourceResult {
   

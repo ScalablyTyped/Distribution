@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncrementalProgramOptions[T /* <: BuilderProgram */] extends StObject {
   
-  var configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
+  var configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
   
-  var createProgram: js.UndefOr[CreateProgram_[T]] = js.native
+  var createProgram: js.UndefOr[CreateProgram_[T]] = js.undefined
   
-  var host: js.UndefOr[CompilerHost] = js.native
+  var host: js.UndefOr[CompilerHost] = js.undefined
   
-  var options: CompilerOptions = js.native
+  var options: CompilerOptions
   
-  var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.native
+  var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.undefined
   
-  var rootNames: js.Array[java.lang.String] = js.native
+  var rootNames: js.Array[java.lang.String]
 }
 object IncrementalProgramOptions {
   
@@ -29,7 +27,7 @@ object IncrementalProgramOptions {
   }
   
   @scala.inline
-  implicit class IncrementalProgramOptionsMutableBuilder[Self <: IncrementalProgramOptions[_], T /* <: BuilderProgram */] (val x: Self with IncrementalProgramOptions[T]) extends AnyVal {
+  implicit class IncrementalProgramOptionsMutableBuilder[Self <: IncrementalProgramOptions[?], T /* <: BuilderProgram */] (val x: Self & IncrementalProgramOptions[T]) extends AnyVal {
     
     @scala.inline
     def setConfigFileParsingDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "configFileParsingDiagnostics", value.asInstanceOf[js.Any])

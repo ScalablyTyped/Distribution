@@ -5,46 +5,46 @@ import typings.std.PropertyKey
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderContext extends Object {
+trait RenderContext
+  extends StObject
+     with Object {
   
   /**
     * Binds the color and depth buffers an external renderer is supposed to render into.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderContext)
     */
-  def bindRenderTarget(): Unit = js.native
+  def bindRenderTarget(): Unit
   
   /**
     * The camera used to render the current frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderContext)
     */
-  var camera: RenderCamera = js.native
+  var camera: RenderCamera
   
   /**
     * The WebGL rendering context.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderContext)
     */
-  var gl: WebGLRenderingContext = js.native
+  var gl: WebGLRenderingContext
   
   /**
     * A convenience function provided to completely reset the WebGL state after using it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderContext)
     */
-  def resetWebGLState(): Unit = js.native
+  def resetWebGLState(): Unit
   
   /**
     * The lighting used by [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) to render the current frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderContext)
     */
-  var sunLight: SunLight = js.native
+  var sunLight: SunLight
 }
 object RenderContext {
   

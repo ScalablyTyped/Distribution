@@ -2,139 +2,104 @@ package typings.parseFullName
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parse-full-name", "parseFullName")
+  @JSImport("parse-full-name", JSImport.Namespace)
   @js.native
-  def parseFullName(nameToParse: String): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: js.UndefOr[scala.Nothing],
-    fixCase: js.UndefOr[scala.Nothing],
-    stopOnError: js.UndefOr[scala.Nothing],
-    useLongLists: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: js.UndefOr[scala.Nothing],
-    fixCase: js.UndefOr[scala.Nothing],
-    stopOnError: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: js.UndefOr[scala.Nothing],
-    fixCase: js.UndefOr[scala.Nothing],
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(nameToParse: String, partToReturn: js.UndefOr[scala.Nothing], fixCase: Boolean): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: js.UndefOr[scala.Nothing],
-    fixCase: Boolean,
-    stopOnError: js.UndefOr[scala.Nothing],
-    useLongLists: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: js.UndefOr[scala.Nothing],
-    fixCase: Boolean,
-    stopOnError: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: js.UndefOr[scala.Nothing],
-    fixCase: Boolean,
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(nameToParse: String, partToReturn: partToReturn): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: js.UndefOr[scala.Nothing],
-    stopOnError: js.UndefOr[scala.Nothing],
-    useLongLists: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: js.UndefOr[scala.Nothing],
-    stopOnError: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: js.UndefOr[scala.Nothing],
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: Boolean,
-    stopOnError: js.UndefOr[scala.Nothing],
-    useLongLists: Boolean
-  ): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean, stopOnError: Boolean): Name = js.native
-  @JSImport("parse-full-name", "parseFullName")
-  @js.native
-  def parseFullName(
-    nameToParse: String,
-    partToReturn: partToReturn,
-    fixCase: Boolean,
-    stopOnError: Boolean,
-    useLongLists: Boolean
-  ): Name = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parseFullName(nameToParse: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any]).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(
+    nameToParse: String,
+    partToReturn: Unit,
+    fixCase: Boolean,
+    stopOnError: Boolean,
+    useLongLists: Boolean
+  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(
+    nameToParse: String,
+    partToReturn: Unit,
+    fixCase: Boolean,
+    stopOnError: Unit,
+    useLongLists: Boolean
+  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(
+    nameToParse: String,
+    partToReturn: Unit,
+    fixCase: Unit,
+    stopOnError: Boolean,
+    useLongLists: Boolean
+  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: Unit, fixCase: Unit, stopOnError: Unit, useLongLists: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: partToReturn): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Boolean, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(
+    nameToParse: String,
+    partToReturn: partToReturn,
+    fixCase: Boolean,
+    stopOnError: Boolean,
+    useLongLists: Boolean
+  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(
+    nameToParse: String,
+    partToReturn: partToReturn,
+    fixCase: Boolean,
+    stopOnError: Unit,
+    useLongLists: Boolean
+  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(nameToParse: String, partToReturn: partToReturn, fixCase: Unit, stopOnError: Boolean): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(
+    nameToParse: String,
+    partToReturn: partToReturn,
+    fixCase: Unit,
+    stopOnError: Boolean,
+    useLongLists: Boolean
+  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  @scala.inline
+  def parseFullName(
+    nameToParse: String,
+    partToReturn: partToReturn,
+    fixCase: Unit,
+    stopOnError: Unit,
+    useLongLists: Boolean
+  ): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFullName")(nameToParse.asInstanceOf[js.Any], partToReturn.asInstanceOf[js.Any], fixCase.asInstanceOf[js.Any], stopOnError.asInstanceOf[js.Any], useLongLists.asInstanceOf[js.Any])).asInstanceOf[Name]
+  
   trait Name extends StObject {
     
-    var error: js.UndefOr[js.Array[js.Any]] = js.native
+    var error: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var first: js.UndefOr[String] = js.native
+    var first: js.UndefOr[String] = js.undefined
     
-    var last: js.UndefOr[String] = js.native
+    var last: js.UndefOr[String] = js.undefined
     
-    var middle: js.UndefOr[String] = js.native
+    var middle: js.UndefOr[String] = js.undefined
     
-    var nick: js.UndefOr[String] = js.native
+    var nick: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Name {
     

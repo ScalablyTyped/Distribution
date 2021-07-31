@@ -2,38 +2,98 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var DataType: XlParameterDataType = js.native
+  var DataType: XlParameterDataType
   
   @JSName("Excel.Parameter_typekey")
-  var ExcelDotParameter_typekey: Parameter = js.native
+  var ExcelDotParameter_typekey: Parameter
   
-  var Name: String = js.native
+  var Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PromptString: String = js.native
+  val PromptString: String
   
-  var RefreshOnChange: Boolean = js.native
+  var RefreshOnChange: Boolean
   
-  def SetParam(Type: XlParameterType, Value: js.Any): Unit = js.native
+  def SetParam(Type: XlParameterType, Value: js.Any): Unit
   
-  def SourceRange(Address: String): Range = js.native
-  def SourceRange(RowIndex: Double): Range = js.native
-  def SourceRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def SourceRange(Address: String): Range
+  def SourceRange(RowIndex: Double): Range
+  def SourceRange(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("SourceRange")
-  val SourceRange_Original: Range = js.native
+  val SourceRange_Original: Range
   
-  val Type: XlParameterType = js.native
+  val Type: XlParameterType
   
-  val Value: js.Any = js.native
+  val Value: js.Any
+}
+object Parameter {
+  
+  @scala.inline
+  def apply(
+    Application: Application,
+    Creator: XlCreator,
+    DataType: XlParameterDataType,
+    ExcelDotParameter_typekey: Parameter,
+    Name: String,
+    Parent: js.Any,
+    PromptString: String,
+    RefreshOnChange: Boolean,
+    SetParam: (XlParameterType, js.Any) => Unit,
+    SourceRange: Range,
+    Type: XlParameterType,
+    Value: js.Any
+  ): Parameter = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DataType = DataType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PromptString = PromptString.asInstanceOf[js.Any], RefreshOnChange = RefreshOnChange.asInstanceOf[js.Any], SetParam = js.Any.fromFunction2(SetParam), SourceRange = SourceRange.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.Parameter_typekey")(ExcelDotParameter_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Parameter]
+  }
+  
+  @scala.inline
+  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataType(value: XlParameterDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExcelDotParameter_typekey(value: Parameter): Self = StObject.set(x, "Excel.Parameter_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPromptString(value: String): Self = StObject.set(x, "PromptString", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRefreshOnChange(value: Boolean): Self = StObject.set(x, "RefreshOnChange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSetParam(value: (XlParameterType, js.Any) => Unit): Self = StObject.set(x, "SetParam", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setSourceRange(value: Range): Self = StObject.set(x, "SourceRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: XlParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+  }
 }

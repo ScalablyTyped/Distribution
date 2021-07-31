@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMaintenanceWindowScheduleResult extends StObject {
   
   /**
     * The token for the next set of items to return. (You use this token in the next call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * Information about maintenance window executions scheduled for the specified time range.
     */
-  var ScheduledWindowExecutions: js.UndefOr[ScheduledWindowExecutionList] = js.native
+  var ScheduledWindowExecutions: js.UndefOr[ScheduledWindowExecutionList] = js.undefined
 }
 object DescribeMaintenanceWindowScheduleResult {
   

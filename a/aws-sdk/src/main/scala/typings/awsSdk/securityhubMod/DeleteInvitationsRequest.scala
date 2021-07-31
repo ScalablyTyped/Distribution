@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInvitationsRequest extends StObject {
   
   /**
     * The list of the account IDs that sent the invitations to delete.
     */
-  var AccountIds: AccountIdList = js.native
+  var AccountIds: AccountIdList
 }
 object DeleteInvitationsRequest {
   

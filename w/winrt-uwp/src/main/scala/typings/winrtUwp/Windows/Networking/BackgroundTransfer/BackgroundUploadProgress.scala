@@ -2,33 +2,31 @@ package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains status information about the upload operation. */
-@js.native
 trait BackgroundUploadProgress extends StObject {
   
   /** The total number of bytes received. This value does not include bytes received as part of response headers. If the upload operation has restarted, this value may be smaller than in the previous progress report. */
-  var bytesReceived: Double = js.native
+  var bytesReceived: Double
   
   /** The total number of bytes sent. If the upload operation has restarted, this value may be smaller than in the previous progress report. */
-  var bytesSent: Double = js.native
+  var bytesSent: Double
   
   /** TRUE if the upload request response has changed; otherwise, FALSE. */
-  var hasResponseChanged: Boolean = js.native
+  var hasResponseChanged: Boolean
   
   /** true if a upload transfer operation has restarted; otherwise false. */
-  var hasRestarted: Boolean = js.native
+  var hasRestarted: Boolean
   
   /** The current status of the upload operation. */
-  var status: BackgroundTransferStatus = js.native
+  var status: BackgroundTransferStatus
   
   /** The total number of bytes of data to upload. If this number is unknown, this value is set to 0. */
-  var totalBytesToReceive: Double = js.native
+  var totalBytesToReceive: Double
   
   /** The total number of bytes to upload. */
-  var totalBytesToSend: Double = js.native
+  var totalBytesToSend: Double
 }
 object BackgroundUploadProgress {
   

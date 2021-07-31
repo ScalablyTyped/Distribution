@@ -2,23 +2,21 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQuestionPanelDynamicData extends StObject {
   
-  def getItemIndex(item: ISurveyData): Double = js.native
+  def getItemIndex(item: ISurveyData): Double
   
-  def getPanelItemData(item: ISurveyData): js.Any = js.native
+  def getPanelItemData(item: ISurveyData): js.Any
   
-  def getRootData(): ISurveyData = js.native
+  def getRootData(): ISurveyData
   
-  def getSharedQuestionFromArray(name: String, panelIndex: Double): Question = js.native
+  def getSharedQuestionFromArray(name: String, panelIndex: Double): Question
   
-  def getSurvey(): ISurvey = js.native
+  def getSurvey(): ISurvey
   
-  def setPanelItemData(item: ISurveyData, name: String, `val`: js.Any): js.Any = js.native
+  def setPanelItemData(item: ISurveyData, name: String, `val`: js.Any): js.Any
 }
 object IQuestionPanelDynamicData {
   

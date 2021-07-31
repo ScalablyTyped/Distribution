@@ -11,8 +11,8 @@ Human-friendly process signals
 | Full name          | human-signals |
 | Keywords           | signal, signals, handlers, error-handling, errors, interrupts, sigterm, sigint, irq, process, exit, exit-code, status, operating-system, es6, javascript, linux, macos, windows, nodejs |
 | # releases         | 6 |
-| # dependents       | 18 |
-| # downloads        | 123360135 |
+| # dependents       | 43 |
+| # downloads        | 276757616 |
 | # stars            | 0 |
 
 ## Links

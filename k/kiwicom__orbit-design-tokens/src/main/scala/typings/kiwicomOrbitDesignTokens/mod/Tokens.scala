@@ -2,945 +2,943 @@ package typings.kiwicomOrbitDesignTokens.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tokens extends StObject {
   
-  var backgroundAlertCritical: String = js.native
+  var backgroundAlertCritical: String
   
-  var backgroundAlertInfo: String = js.native
+  var backgroundAlertInfo: String
   
-  var backgroundAlertSuccess: String = js.native
+  var backgroundAlertSuccess: String
   
-  var backgroundAlertWarning: String = js.native
+  var backgroundAlertWarning: String
   
-  var backgroundBadgeCritical: String = js.native
+  var backgroundBadgeCritical: String
   
-  var backgroundBadgeDark: String = js.native
+  var backgroundBadgeDark: String
   
-  var backgroundBadgeInfo: String = js.native
+  var backgroundBadgeInfo: String
   
-  var backgroundBadgeNeutral: String = js.native
+  var backgroundBadgeNeutral: String
   
-  var backgroundBadgeSuccess: String = js.native
+  var backgroundBadgeSuccess: String
   
-  var backgroundBadgeWarning: String = js.native
+  var backgroundBadgeWarning: String
   
-  var backgroundBadgeWhite: String = js.native
+  var backgroundBadgeWhite: String
   
-  var backgroundBody: String = js.native
+  var backgroundBody: String
   
-  var backgroundButtonBordered: String = js.native
+  var backgroundButtonBordered: String
   
-  var backgroundButtonBorderedActive: String = js.native
+  var backgroundButtonBorderedActive: String
   
-  var backgroundButtonBorderedHover: String = js.native
+  var backgroundButtonBorderedHover: String
   
-  var backgroundButtonCritical: String = js.native
+  var backgroundButtonCritical: String
   
-  var backgroundButtonCriticalActive: String = js.native
+  var backgroundButtonCriticalActive: String
   
-  var backgroundButtonCriticalHover: String = js.native
+  var backgroundButtonCriticalHover: String
   
-  var backgroundButtonFacebook: String = js.native
+  var backgroundButtonFacebook: String
   
-  var backgroundButtonFacebookActive: String = js.native
+  var backgroundButtonFacebookActive: String
   
-  var backgroundButtonFacebookHover: String = js.native
+  var backgroundButtonFacebookHover: String
   
-  var backgroundButtonGoogle: String = js.native
+  var backgroundButtonGoogle: String
   
-  var backgroundButtonGoogleActive: String = js.native
+  var backgroundButtonGoogleActive: String
   
-  var backgroundButtonGoogleHover: String = js.native
+  var backgroundButtonGoogleHover: String
   
-  var backgroundButtonInfo: String = js.native
+  var backgroundButtonInfo: String
   
-  var backgroundButtonInfoActive: String = js.native
+  var backgroundButtonInfoActive: String
   
-  var backgroundButtonInfoHover: String = js.native
+  var backgroundButtonInfoHover: String
   
-  var backgroundButtonLinkPrimary: String = js.native
+  var backgroundButtonLinkPrimary: String
   
-  var backgroundButtonLinkPrimaryActive: String = js.native
+  var backgroundButtonLinkPrimaryActive: String
   
-  var backgroundButtonLinkPrimaryHover: String = js.native
+  var backgroundButtonLinkPrimaryHover: String
   
-  var backgroundButtonLinkSecondary: String = js.native
+  var backgroundButtonLinkSecondary: String
   
-  var backgroundButtonLinkSecondaryActive: String = js.native
+  var backgroundButtonLinkSecondaryActive: String
   
-  var backgroundButtonLinkSecondaryHover: String = js.native
+  var backgroundButtonLinkSecondaryHover: String
   
-  var backgroundButtonPrimary: String = js.native
+  var backgroundButtonPrimary: String
   
-  var backgroundButtonPrimaryActive: String = js.native
+  var backgroundButtonPrimaryActive: String
   
-  var backgroundButtonPrimaryHover: String = js.native
+  var backgroundButtonPrimaryHover: String
   
-  var backgroundButtonSecondary: String = js.native
+  var backgroundButtonSecondary: String
   
-  var backgroundButtonSecondaryActive: String = js.native
+  var backgroundButtonSecondaryActive: String
   
-  var backgroundButtonSecondaryHover: String = js.native
+  var backgroundButtonSecondaryHover: String
   
-  var backgroundButtonSuccess: String = js.native
+  var backgroundButtonSuccess: String
   
-  var backgroundButtonSuccessActive: String = js.native
+  var backgroundButtonSuccessActive: String
   
-  var backgroundButtonSuccessHover: String = js.native
+  var backgroundButtonSuccessHover: String
   
-  var backgroundButtonWarning: String = js.native
+  var backgroundButtonWarning: String
   
-  var backgroundButtonWarningActive: String = js.native
+  var backgroundButtonWarningActive: String
   
-  var backgroundButtonWarningHover: String = js.native
+  var backgroundButtonWarningHover: String
   
-  var backgroundButtonWhite: String = js.native
+  var backgroundButtonWhite: String
   
-  var backgroundButtonWhiteActive: String = js.native
+  var backgroundButtonWhiteActive: String
   
-  var backgroundButtonWhiteBordered: String = js.native
+  var backgroundButtonWhiteBordered: String
   
-  var backgroundButtonWhiteBorderedActive: String = js.native
+  var backgroundButtonWhiteBorderedActive: String
   
-  var backgroundButtonWhiteBorderedHover: String = js.native
+  var backgroundButtonWhiteBorderedHover: String
   
-  var backgroundButtonWhiteHover: String = js.native
+  var backgroundButtonWhiteHover: String
   
-  var backgroundCard: String = js.native
+  var backgroundCard: String
   
-  var backgroundCarrierLogo: String = js.native
+  var backgroundCarrierLogo: String
   
-  var backgroundCountryFlag: String = js.native
+  var backgroundCountryFlag: String
   
-  var backgroundIllustration: String = js.native
+  var backgroundIllustration: String
   
-  var backgroundInput: String = js.native
+  var backgroundInput: String
   
-  var backgroundInputDisabled: String = js.native
+  var backgroundInputDisabled: String
   
-  var backgroundModal: String = js.native
+  var backgroundModal: String
   
-  var backgroundSeparator: String = js.native
+  var backgroundSeparator: String
   
-  var backgroundServiceLogo: String = js.native
+  var backgroundServiceLogo: String
   
-  var backgroundTable: String = js.native
+  var backgroundTable: String
   
-  var backgroundTableEven: String = js.native
+  var backgroundTableEven: String
   
-  var backgroundTableHover: String = js.native
+  var backgroundTableHover: String
   
-  var backgroundTableShadowLeft: String = js.native
+  var backgroundTableShadowLeft: String
   
-  var backgroundTableShadowRight: String = js.native
+  var backgroundTableShadowRight: String
   
-  var backgroundTag: String = js.native
+  var backgroundTag: String
   
-  var backgroundTagActive: String = js.native
+  var backgroundTagActive: String
   
-  var backgroundTagHover: String = js.native
+  var backgroundTagHover: String
   
-  var backgroundTagSelected: String = js.native
+  var backgroundTagSelected: String
   
-  var backgroundTagSelectedActive: String = js.native
+  var backgroundTagSelectedActive: String
   
-  var backgroundTagSelectedHover: String = js.native
+  var backgroundTagSelectedHover: String
   
-  var borderColorButtonCriticalBordered: String = js.native
+  var borderColorButtonCriticalBordered: String
   
-  var borderColorButtonCriticalBorderedActive: String = js.native
+  var borderColorButtonCriticalBorderedActive: String
   
-  var borderColorButtonCriticalBorderedHover: String = js.native
+  var borderColorButtonCriticalBorderedHover: String
   
-  var borderColorButtonFacebookBordered: String = js.native
+  var borderColorButtonFacebookBordered: String
   
-  var borderColorButtonFacebookBorderedActive: String = js.native
+  var borderColorButtonFacebookBorderedActive: String
   
-  var borderColorButtonFacebookBorderedHover: String = js.native
+  var borderColorButtonFacebookBorderedHover: String
   
-  var borderColorButtonGoogleBordered: String = js.native
+  var borderColorButtonGoogleBordered: String
   
-  var borderColorButtonGoogleBorderedActive: String = js.native
+  var borderColorButtonGoogleBorderedActive: String
   
-  var borderColorButtonGoogleBorderedHover: String = js.native
+  var borderColorButtonGoogleBorderedHover: String
   
-  var borderColorButtonInfoBordered: String = js.native
+  var borderColorButtonInfoBordered: String
   
-  var borderColorButtonInfoBorderedActive: String = js.native
+  var borderColorButtonInfoBorderedActive: String
   
-  var borderColorButtonInfoBorderedHover: String = js.native
+  var borderColorButtonInfoBorderedHover: String
   
-  var borderColorButtonPrimaryBordered: String = js.native
+  var borderColorButtonPrimaryBordered: String
   
-  var borderColorButtonPrimaryBorderedActive: String = js.native
+  var borderColorButtonPrimaryBorderedActive: String
   
-  var borderColorButtonPrimaryBorderedHover: String = js.native
+  var borderColorButtonPrimaryBorderedHover: String
   
-  var borderColorButtonSecondaryBordered: String = js.native
+  var borderColorButtonSecondaryBordered: String
   
-  var borderColorButtonSecondaryBorderedActive: String = js.native
+  var borderColorButtonSecondaryBorderedActive: String
   
-  var borderColorButtonSecondaryBorderedHover: String = js.native
+  var borderColorButtonSecondaryBorderedHover: String
   
-  var borderColorButtonSuccessBordered: String = js.native
+  var borderColorButtonSuccessBordered: String
   
-  var borderColorButtonSuccessBorderedActive: String = js.native
+  var borderColorButtonSuccessBorderedActive: String
   
-  var borderColorButtonSuccessBorderedHover: String = js.native
+  var borderColorButtonSuccessBorderedHover: String
   
-  var borderColorButtonWarningBordered: String = js.native
+  var borderColorButtonWarningBordered: String
   
-  var borderColorButtonWarningBorderedActive: String = js.native
+  var borderColorButtonWarningBorderedActive: String
   
-  var borderColorButtonWarningBorderedHover: String = js.native
+  var borderColorButtonWarningBorderedHover: String
   
-  var borderColorButtonWhiteBordered: String = js.native
+  var borderColorButtonWhiteBordered: String
   
-  var borderColorButtonWhiteBorderedActive: String = js.native
+  var borderColorButtonWhiteBorderedActive: String
   
-  var borderColorButtonWhiteBorderedHover: String = js.native
+  var borderColorButtonWhiteBorderedHover: String
   
-  var borderColorCard: String = js.native
+  var borderColorCard: String
   
-  var borderColorCheckboxRadio: String = js.native
+  var borderColorCheckboxRadio: String
   
-  var borderColorCheckboxRadioActive: String = js.native
+  var borderColorCheckboxRadioActive: String
   
-  var borderColorCheckboxRadioError: String = js.native
+  var borderColorCheckboxRadioError: String
   
-  var borderColorCheckboxRadioFocus: String = js.native
+  var borderColorCheckboxRadioFocus: String
   
-  var borderColorCheckboxRadioHover: String = js.native
+  var borderColorCheckboxRadioHover: String
   
-  var borderColorInput: String = js.native
+  var borderColorInput: String
   
-  var borderColorInputActive: String = js.native
+  var borderColorInputActive: String
   
-  var borderColorInputError: String = js.native
+  var borderColorInputError: String
   
-  var borderColorInputErrorFocus: String = js.native
+  var borderColorInputErrorFocus: String
   
-  var borderColorInputErrorHover: String = js.native
+  var borderColorInputErrorHover: String
   
-  var borderColorInputFocus: String = js.native
+  var borderColorInputFocus: String
   
-  var borderColorInputHover: String = js.native
+  var borderColorInputHover: String
   
-  var borderColorModal: String = js.native
+  var borderColorModal: String
   
-  var borderColorTable: String = js.native
+  var borderColorTable: String
   
-  var borderColorTableCell: String = js.native
+  var borderColorTableCell: String
   
-  var borderColorTableHead: String = js.native
+  var borderColorTableHead: String
   
-  var borderColorTag: String = js.native
+  var borderColorTag: String
   
-  var borderColorTagFocus: String = js.native
+  var borderColorTagFocus: String
   
-  var borderRadiusBadge: String = js.native
+  var borderRadiusBadge: String
   
-  var borderRadiusCircle: String = js.native
+  var borderRadiusCircle: String
   
-  var borderRadiusLarge: String = js.native
+  var borderRadiusLarge: String
   
-  var borderRadiusNormal: String = js.native
+  var borderRadiusNormal: String
   
-  var borderRadiusSmall: String = js.native
+  var borderRadiusSmall: String
   
-  var borderStyleCard: String = js.native
+  var borderStyleCard: String
   
-  var borderStyleInput: String = js.native
+  var borderStyleInput: String
   
-  var borderWidthCard: String = js.native
+  var borderWidthCard: String
   
-  var borderWidthInput: String = js.native
+  var borderWidthInput: String
   
-  var borderWidthInputFocus: String = js.native
+  var borderWidthInputFocus: String
   
-  var boxShadowActionable: String = js.native
+  var boxShadowActionable: String
   
-  var boxShadowButtonFocus: String = js.native
+  var boxShadowButtonFocus: String
   
-  var boxShadowElevatedLevel1: String = js.native
+  var boxShadowElevatedLevel1: String
   
-  var boxShadowModal: String = js.native
+  var boxShadowModal: String
   
-  var colorAlertIconCritical: String = js.native
+  var colorAlertIconCritical: String
   
-  var colorAlertIconInfo: String = js.native
+  var colorAlertIconInfo: String
   
-  var colorAlertIconSuccess: String = js.native
+  var colorAlertIconSuccess: String
   
-  var colorAlertIconWarning: String = js.native
+  var colorAlertIconWarning: String
   
-  var colorFormLabel: String = js.native
+  var colorFormLabel: String
   
-  var colorFormLabelFilled: String = js.native
+  var colorFormLabelFilled: String
   
-  var colorHeading: String = js.native
+  var colorHeading: String
   
-  var colorHeadingInverted: String = js.native
+  var colorHeadingInverted: String
   
-  var colorIconAttention: String = js.native
+  var colorIconAttention: String
   
-  var colorIconCheckboxRadio: String = js.native
+  var colorIconCheckboxRadio: String
   
-  var colorIconCheckboxRadioDisabled: String = js.native
+  var colorIconCheckboxRadioDisabled: String
   
-  var colorIconCritical: String = js.native
+  var colorIconCritical: String
   
-  var colorIconInfo: String = js.native
+  var colorIconInfo: String
   
-  var colorIconInput: String = js.native
+  var colorIconInput: String
   
-  var colorIconPrimary: String = js.native
+  var colorIconPrimary: String
   
-  var colorIconRadioButton: String = js.native
+  var colorIconRadioButton: String
   
-  var colorIconRadioButtonDisabled: String = js.native
+  var colorIconRadioButtonDisabled: String
   
-  var colorIconSecondary: String = js.native
+  var colorIconSecondary: String
   
-  var colorIconSuccess: String = js.native
+  var colorIconSuccess: String
   
-  var colorIconTertiary: String = js.native
+  var colorIconTertiary: String
   
-  var colorIconWarning: String = js.native
+  var colorIconWarning: String
   
-  var colorInfoCheckBoxRadio: String = js.native
+  var colorInfoCheckBoxRadio: String
   
-  var colorPlaceholderInput: String = js.native
+  var colorPlaceholderInput: String
   
-  var colorPlaceholderInputError: String = js.native
+  var colorPlaceholderInputError: String
   
-  var colorPlaceholderInputFile: String = js.native
+  var colorPlaceholderInputFile: String
   
-  var colorPlaceholderInputFileError: String = js.native
+  var colorPlaceholderInputFileError: String
   
-  var colorStopoverArrow: String = js.native
+  var colorStopoverArrow: String
   
-  var colorTextAlertCritical: String = js.native
+  var colorTextAlertCritical: String
   
-  var colorTextAlertInfo: String = js.native
+  var colorTextAlertInfo: String
   
-  var colorTextAlertLink: String = js.native
+  var colorTextAlertLink: String
   
-  var colorTextAlertSuccess: String = js.native
+  var colorTextAlertSuccess: String
   
-  var colorTextAlertWarning: String = js.native
+  var colorTextAlertWarning: String
   
-  var colorTextAttention: String = js.native
+  var colorTextAttention: String
   
-  var colorTextBadgeCritical: String = js.native
+  var colorTextBadgeCritical: String
   
-  var colorTextBadgeDark: String = js.native
+  var colorTextBadgeDark: String
   
-  var colorTextBadgeInfo: String = js.native
+  var colorTextBadgeInfo: String
   
-  var colorTextBadgeNeutral: String = js.native
+  var colorTextBadgeNeutral: String
   
-  var colorTextBadgeSuccess: String = js.native
+  var colorTextBadgeSuccess: String
   
-  var colorTextBadgeWarning: String = js.native
+  var colorTextBadgeWarning: String
   
-  var colorTextBadgeWhite: String = js.native
+  var colorTextBadgeWhite: String
   
-  var colorTextButtonCritical: String = js.native
+  var colorTextButtonCritical: String
   
-  var colorTextButtonCriticalActive: String = js.native
+  var colorTextButtonCriticalActive: String
   
-  var colorTextButtonCriticalBordered: String = js.native
+  var colorTextButtonCriticalBordered: String
   
-  var colorTextButtonCriticalBorderedActive: String = js.native
+  var colorTextButtonCriticalBorderedActive: String
   
-  var colorTextButtonCriticalBorderedHover: String = js.native
+  var colorTextButtonCriticalBorderedHover: String
   
-  var colorTextButtonCriticalHover: String = js.native
+  var colorTextButtonCriticalHover: String
   
-  var colorTextButtonFacebook: String = js.native
+  var colorTextButtonFacebook: String
   
-  var colorTextButtonFacebookActive: String = js.native
+  var colorTextButtonFacebookActive: String
   
-  var colorTextButtonFacebookBordered: String = js.native
+  var colorTextButtonFacebookBordered: String
   
-  var colorTextButtonFacebookBorderedActive: String = js.native
+  var colorTextButtonFacebookBorderedActive: String
   
-  var colorTextButtonFacebookBorderedHover: String = js.native
+  var colorTextButtonFacebookBorderedHover: String
   
-  var colorTextButtonFacebookHover: String = js.native
+  var colorTextButtonFacebookHover: String
   
-  var colorTextButtonFilled: String = js.native
+  var colorTextButtonFilled: String
   
-  var colorTextButtonFilledActive: String = js.native
+  var colorTextButtonFilledActive: String
   
-  var colorTextButtonFilledHover: String = js.native
+  var colorTextButtonFilledHover: String
   
-  var colorTextButtonGoogle: String = js.native
+  var colorTextButtonGoogle: String
   
-  var colorTextButtonGoogleActive: String = js.native
+  var colorTextButtonGoogleActive: String
   
-  var colorTextButtonGoogleBordered: String = js.native
+  var colorTextButtonGoogleBordered: String
   
-  var colorTextButtonGoogleBorderedActive: String = js.native
+  var colorTextButtonGoogleBorderedActive: String
   
-  var colorTextButtonGoogleBorderedHover: String = js.native
+  var colorTextButtonGoogleBorderedHover: String
   
-  var colorTextButtonGoogleHover: String = js.native
+  var colorTextButtonGoogleHover: String
   
-  var colorTextButtonInfo: String = js.native
+  var colorTextButtonInfo: String
   
-  var colorTextButtonInfoActive: String = js.native
+  var colorTextButtonInfoActive: String
   
-  var colorTextButtonInfoBordered: String = js.native
+  var colorTextButtonInfoBordered: String
   
-  var colorTextButtonInfoBorderedActive: String = js.native
+  var colorTextButtonInfoBorderedActive: String
   
-  var colorTextButtonInfoBorderedHover: String = js.native
+  var colorTextButtonInfoBorderedHover: String
   
-  var colorTextButtonInfoHover: String = js.native
+  var colorTextButtonInfoHover: String
   
-  var colorTextButtonLinkPrimary: String = js.native
+  var colorTextButtonLinkPrimary: String
   
-  var colorTextButtonLinkPrimaryActive: String = js.native
+  var colorTextButtonLinkPrimaryActive: String
   
-  var colorTextButtonLinkPrimaryHover: String = js.native
+  var colorTextButtonLinkPrimaryHover: String
   
-  var colorTextButtonLinkSecondary: String = js.native
+  var colorTextButtonLinkSecondary: String
   
-  var colorTextButtonLinkSecondaryActive: String = js.native
+  var colorTextButtonLinkSecondaryActive: String
   
-  var colorTextButtonLinkSecondaryHover: String = js.native
+  var colorTextButtonLinkSecondaryHover: String
   
-  var colorTextButtonPrimary: String = js.native
+  var colorTextButtonPrimary: String
   
-  var colorTextButtonPrimaryActive: String = js.native
+  var colorTextButtonPrimaryActive: String
   
-  var colorTextButtonPrimaryBordered: String = js.native
+  var colorTextButtonPrimaryBordered: String
   
-  var colorTextButtonPrimaryBorderedActive: String = js.native
+  var colorTextButtonPrimaryBorderedActive: String
   
-  var colorTextButtonPrimaryBorderedHover: String = js.native
+  var colorTextButtonPrimaryBorderedHover: String
   
-  var colorTextButtonPrimaryHover: String = js.native
+  var colorTextButtonPrimaryHover: String
   
-  var colorTextButtonSecondary: String = js.native
+  var colorTextButtonSecondary: String
   
-  var colorTextButtonSecondaryActive: String = js.native
+  var colorTextButtonSecondaryActive: String
   
-  var colorTextButtonSecondaryBordered: String = js.native
+  var colorTextButtonSecondaryBordered: String
   
-  var colorTextButtonSecondaryBorderedActive: String = js.native
+  var colorTextButtonSecondaryBorderedActive: String
   
-  var colorTextButtonSecondaryBorderedHover: String = js.native
+  var colorTextButtonSecondaryBorderedHover: String
   
-  var colorTextButtonSecondaryHover: String = js.native
+  var colorTextButtonSecondaryHover: String
   
-  var colorTextButtonSuccess: String = js.native
+  var colorTextButtonSuccess: String
   
-  var colorTextButtonSuccessActive: String = js.native
+  var colorTextButtonSuccessActive: String
   
-  var colorTextButtonSuccessBordered: String = js.native
+  var colorTextButtonSuccessBordered: String
   
-  var colorTextButtonSuccessBorderedActive: String = js.native
+  var colorTextButtonSuccessBorderedActive: String
   
-  var colorTextButtonSuccessBorderedHover: String = js.native
+  var colorTextButtonSuccessBorderedHover: String
   
-  var colorTextButtonSuccessHover: String = js.native
+  var colorTextButtonSuccessHover: String
   
-  var colorTextButtonWarning: String = js.native
+  var colorTextButtonWarning: String
   
-  var colorTextButtonWarningActive: String = js.native
+  var colorTextButtonWarningActive: String
   
-  var colorTextButtonWarningBordered: String = js.native
+  var colorTextButtonWarningBordered: String
   
-  var colorTextButtonWarningBorderedActive: String = js.native
+  var colorTextButtonWarningBorderedActive: String
   
-  var colorTextButtonWarningBorderedHover: String = js.native
+  var colorTextButtonWarningBorderedHover: String
   
-  var colorTextButtonWarningHover: String = js.native
+  var colorTextButtonWarningHover: String
   
-  var colorTextButtonWhite: String = js.native
+  var colorTextButtonWhite: String
   
-  var colorTextButtonWhiteActive: String = js.native
+  var colorTextButtonWhiteActive: String
   
-  var colorTextButtonWhiteBordered: String = js.native
+  var colorTextButtonWhiteBordered: String
   
-  var colorTextButtonWhiteBorderedActive: String = js.native
+  var colorTextButtonWhiteBorderedActive: String
   
-  var colorTextButtonWhiteBorderedHover: String = js.native
+  var colorTextButtonWhiteBorderedHover: String
   
-  var colorTextButtonWhiteHover: String = js.native
+  var colorTextButtonWhiteHover: String
   
-  var colorTextCritical: String = js.native
+  var colorTextCritical: String
   
-  var colorTextError: String = js.native
+  var colorTextError: String
   
-  var colorTextInfo: String = js.native
+  var colorTextInfo: String
   
-  var colorTextInput: String = js.native
+  var colorTextInput: String
   
-  var colorTextInputDisabled: String = js.native
+  var colorTextInputDisabled: String
   
-  var colorTextInputPrefix: String = js.native
+  var colorTextInputPrefix: String
   
-  var colorTextLinkPrimary: String = js.native
+  var colorTextLinkPrimary: String
   
-  var colorTextLinkPrimaryHover: String = js.native
+  var colorTextLinkPrimaryHover: String
   
-  var colorTextLinkSecondary: String = js.native
+  var colorTextLinkSecondary: String
   
-  var colorTextLinkSecondaryHover: String = js.native
+  var colorTextLinkSecondaryHover: String
   
-  var colorTextLoading: String = js.native
+  var colorTextLoading: String
   
-  var colorTextPrimary: String = js.native
+  var colorTextPrimary: String
   
-  var colorTextSecondary: String = js.native
+  var colorTextSecondary: String
   
-  var colorTextSuccess: String = js.native
+  var colorTextSuccess: String
   
-  var colorTextTable: String = js.native
+  var colorTextTable: String
   
-  var colorTextTag: String = js.native
+  var colorTextTag: String
   
-  var colorTextTagSelected: String = js.native
+  var colorTextTagSelected: String
   
-  var colorTextWarning: String = js.native
+  var colorTextWarning: String
   
-  var colorTextWhite: String = js.native
+  var colorTextWhite: String
   
-  var durationFast: String = js.native
+  var durationFast: String
   
-  var durationNormal: String = js.native
+  var durationNormal: String
   
-  var durationSlow: String = js.native
+  var durationSlow: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSizeButtonLarge: String = js.native
+  var fontSizeButtonLarge: String
   
-  var fontSizeButtonNormal: String = js.native
+  var fontSizeButtonNormal: String
   
-  var fontSizeButtonSmall: String = js.native
+  var fontSizeButtonSmall: String
   
-  var fontSizeFormFeedback: String = js.native
+  var fontSizeFormFeedback: String
   
-  var fontSizeFormLabel: String = js.native
+  var fontSizeFormLabel: String
   
-  var fontSizeHeadingDisplay: String = js.native
+  var fontSizeHeadingDisplay: String
   
-  var fontSizeHeadingDisplaySubtitle: String = js.native
+  var fontSizeHeadingDisplaySubtitle: String
   
-  var fontSizeHeadingTitle1: String = js.native
+  var fontSizeHeadingTitle1: String
   
-  var fontSizeHeadingTitle2: String = js.native
+  var fontSizeHeadingTitle2: String
   
-  var fontSizeHeadingTitle3: String = js.native
+  var fontSizeHeadingTitle3: String
   
-  var fontSizeHeadingTitle4: String = js.native
+  var fontSizeHeadingTitle4: String
   
-  var fontSizeHeadingTitle5: String = js.native
+  var fontSizeHeadingTitle5: String
   
-  var fontSizeInputNormal: String = js.native
+  var fontSizeInputNormal: String
   
-  var fontSizeInputSmall: String = js.native
+  var fontSizeInputSmall: String
   
-  var fontSizeMessage: String = js.native
+  var fontSizeMessage: String
   
-  var fontSizeTextLarge: String = js.native
+  var fontSizeTextLarge: String
   
-  var fontSizeTextNormal: String = js.native
+  var fontSizeTextNormal: String
   
-  var fontSizeTextSmall: String = js.native
+  var fontSizeTextSmall: String
   
-  var fontWeightBold: String = js.native
+  var fontWeightBold: String
   
-  var fontWeightHeadingDisplay: String = js.native
+  var fontWeightHeadingDisplay: String
   
-  var fontWeightHeadingDisplaySubtitle: String = js.native
+  var fontWeightHeadingDisplaySubtitle: String
   
-  var fontWeightHeadingTitle1: String = js.native
+  var fontWeightHeadingTitle1: String
   
-  var fontWeightHeadingTitle2: String = js.native
+  var fontWeightHeadingTitle2: String
   
-  var fontWeightHeadingTitle3: String = js.native
+  var fontWeightHeadingTitle3: String
   
-  var fontWeightHeadingTitle4: String = js.native
+  var fontWeightHeadingTitle4: String
   
-  var fontWeightHeadingTitle5: String = js.native
+  var fontWeightHeadingTitle5: String
   
-  var fontWeightLinks: String = js.native
+  var fontWeightLinks: String
   
-  var fontWeightMedium: String = js.native
+  var fontWeightMedium: String
   
-  var fontWeightNormal: String = js.native
+  var fontWeightNormal: String
   
-  var fontWeightTableHead: String = js.native
+  var fontWeightTableHead: String
   
-  var heightBadge: String = js.native
+  var heightBadge: String
   
-  var heightButtonLarge: String = js.native
+  var heightButtonLarge: String
   
-  var heightButtonNormal: String = js.native
+  var heightButtonNormal: String
   
-  var heightButtonSmall: String = js.native
+  var heightButtonSmall: String
   
-  var heightCheckbox: String = js.native
+  var heightCheckbox: String
   
-  var heightCountryFlag: String = js.native
+  var heightCountryFlag: String
   
-  var heightIconLarge: String = js.native
+  var heightIconLarge: String
   
-  var heightIconMedium: String = js.native
+  var heightIconMedium: String
   
-  var heightIconSmall: String = js.native
+  var heightIconSmall: String
   
-  var heightIllustrationMedium: String = js.native
+  var heightIllustrationMedium: String
   
-  var heightIllustrationSmall: String = js.native
+  var heightIllustrationSmall: String
   
-  var heightInputGroupSeparatorNormal: String = js.native
+  var heightInputGroupSeparatorNormal: String
   
-  var heightInputGroupSeparatorSmall: String = js.native
+  var heightInputGroupSeparatorSmall: String
   
-  var heightInputLarge: String = js.native
+  var heightInputLarge: String
   
-  var heightInputNormal: String = js.native
+  var heightInputNormal: String
   
-  var heightInputSmall: String = js.native
+  var heightInputSmall: String
   
-  var heightRadioButton: String = js.native
+  var heightRadioButton: String
   
-  var heightSeparator: String = js.native
+  var heightSeparator: String
   
-  var heightServiceLogoLarge: String = js.native
+  var heightServiceLogoLarge: String
   
-  var heightServiceLogoMedium: String = js.native
+  var heightServiceLogoMedium: String
   
-  var heightServiceLogoSmall: String = js.native
+  var heightServiceLogoSmall: String
   
-  var heightStopoverArrow: String = js.native
+  var heightStopoverArrow: String
   
-  var lineHeightHeading: String = js.native
+  var lineHeightHeading: String
   
-  var lineHeightHeadingDisplay: String = js.native
+  var lineHeightHeadingDisplay: String
   
-  var lineHeightHeadingDisplaySubtitle: String = js.native
+  var lineHeightHeadingDisplaySubtitle: String
   
-  var lineHeightHeadingTitle1: String = js.native
+  var lineHeightHeadingTitle1: String
   
-  var lineHeightHeadingTitle2: String = js.native
+  var lineHeightHeadingTitle2: String
   
-  var lineHeightHeadingTitle3: String = js.native
+  var lineHeightHeadingTitle3: String
   
-  var lineHeightHeadingTitle4: String = js.native
+  var lineHeightHeadingTitle4: String
   
-  var lineHeightHeadingTitle5: String = js.native
+  var lineHeightHeadingTitle5: String
   
-  var lineHeightText: String = js.native
+  var lineHeightText: String
   
-  var marginBadgeIcon: String = js.native
+  var marginBadgeIcon: String
   
-  var marginBottomSelectSuffix: String = js.native
+  var marginBottomSelectSuffix: String
   
-  var marginButtonGroup: String = js.native
+  var marginButtonGroup: String
   
-  var marginButtonGroupConnected: String = js.native
+  var marginButtonGroupConnected: String
   
-  var marginButtonIconLarge: String = js.native
+  var marginButtonIconLarge: String
   
-  var marginButtonIconNormal: String = js.native
+  var marginButtonIconNormal: String
   
-  var marginButtonIconSmall: String = js.native
+  var marginButtonIconSmall: String
   
-  var marginTopFormFeedback: String = js.native
+  var marginTopFormFeedback: String
   
-  var modifierScaleButtonActive: Double = js.native
+  var modifierScaleButtonActive: Double
   
-  var modifierScaleCheckboxRadioActive: Double = js.native
+  var modifierScaleCheckboxRadioActive: Double
   
-  var opacityButtonDisabled: String = js.native
+  var opacityButtonDisabled: String
   
-  var opacityCheckboxDisabled: String = js.native
+  var opacityCheckboxDisabled: String
   
-  var opacityOverlay: String = js.native
+  var opacityOverlay: String
   
-  var opacityRadioButtonDisabled: String = js.native
+  var opacityRadioButtonDisabled: String
   
-  var paddingAlert: String = js.native
+  var paddingAlert: String
   
-  var paddingAlertWithIcon: String = js.native
+  var paddingAlertWithIcon: String
   
-  var paddingBadge: String = js.native
+  var paddingBadge: String
   
-  var paddingButtonLarge: String = js.native
+  var paddingButtonLarge: String
   
-  var paddingButtonLargeWithIcons: String = js.native
+  var paddingButtonLargeWithIcons: String
   
-  var paddingButtonLargeWithLeftIcon: String = js.native
+  var paddingButtonLargeWithLeftIcon: String
   
-  var paddingButtonLargeWithRightIcon: String = js.native
+  var paddingButtonLargeWithRightIcon: String
   
-  var paddingButtonNormal: String = js.native
+  var paddingButtonNormal: String
   
-  var paddingButtonNormalWithIcons: String = js.native
+  var paddingButtonNormalWithIcons: String
   
-  var paddingButtonNormalWithLeftIcon: String = js.native
+  var paddingButtonNormalWithLeftIcon: String
   
-  var paddingButtonNormalWithRightIcon: String = js.native
+  var paddingButtonNormalWithRightIcon: String
   
-  var paddingButtonSmall: String = js.native
+  var paddingButtonSmall: String
   
-  var paddingButtonSmallWithIcons: String = js.native
+  var paddingButtonSmallWithIcons: String
   
-  var paddingButtonSmallWithLeftIcon: String = js.native
+  var paddingButtonSmallWithLeftIcon: String
   
-  var paddingButtonSmallWithRightIcon: String = js.native
+  var paddingButtonSmallWithRightIcon: String
   
-  var paddingButtonWithoutText: String = js.native
+  var paddingButtonWithoutText: String
   
-  var paddingInputFile: String = js.native
+  var paddingInputFile: String
   
-  var paddingInputNormal: String = js.native
+  var paddingInputNormal: String
   
-  var paddingInputSmall: String = js.native
+  var paddingInputSmall: String
   
-  var paddingLeftSelectPrefix: String = js.native
+  var paddingLeftSelectPrefix: String
   
-  var paddingLoading: String = js.native
+  var paddingLoading: String
   
-  var paddingTable: String = js.native
+  var paddingTable: String
   
-  var paddingTableCompact: String = js.native
+  var paddingTableCompact: String
   
-  var paddingTag: String = js.native
+  var paddingTag: String
   
-  var paddingTagRemovable: String = js.native
+  var paddingTagRemovable: String
   
-  var paddingTagRemovableWithIcon: String = js.native
+  var paddingTagRemovableWithIcon: String
   
-  var paddingTagWithIcon: String = js.native
+  var paddingTagWithIcon: String
   
-  var paddingTextareaNormal: String = js.native
+  var paddingTextareaNormal: String
   
-  var paddingTextareaSmall: String = js.native
+  var paddingTextareaSmall: String
   
-  var paletteBlueDark: String = js.native
+  var paletteBlueDark: String
   
-  var paletteBlueDarkActive: String = js.native
+  var paletteBlueDarkActive: String
   
-  var paletteBlueDarkHover: String = js.native
+  var paletteBlueDarkHover: String
   
-  var paletteBlueDarker: String = js.native
+  var paletteBlueDarker: String
   
-  var paletteBlueLight: String = js.native
+  var paletteBlueLight: String
   
-  var paletteBlueLightActive: String = js.native
+  var paletteBlueLightActive: String
   
-  var paletteBlueLightHover: String = js.native
+  var paletteBlueLightHover: String
   
-  var paletteBlueNormal: String = js.native
+  var paletteBlueNormal: String
   
-  var paletteBlueNormalActive: String = js.native
+  var paletteBlueNormalActive: String
   
-  var paletteBlueNormalHover: String = js.native
+  var paletteBlueNormalHover: String
   
-  var paletteCloudDark: String = js.native
+  var paletteCloudDark: String
   
-  var paletteCloudLight: String = js.native
+  var paletteCloudLight: String
   
-  var paletteCloudLightActive: String = js.native
+  var paletteCloudLightActive: String
   
-  var paletteCloudLightHover: String = js.native
+  var paletteCloudLightHover: String
   
-  var paletteCloudNormal: String = js.native
+  var paletteCloudNormal: String
   
-  var paletteCloudNormalActive: String = js.native
+  var paletteCloudNormalActive: String
   
-  var paletteCloudNormalHover: String = js.native
+  var paletteCloudNormalHover: String
   
-  var paletteGreenDark: String = js.native
+  var paletteGreenDark: String
   
-  var paletteGreenDarkActive: String = js.native
+  var paletteGreenDarkActive: String
   
-  var paletteGreenDarkHover: String = js.native
+  var paletteGreenDarkHover: String
   
-  var paletteGreenDarker: String = js.native
+  var paletteGreenDarker: String
   
-  var paletteGreenLight: String = js.native
+  var paletteGreenLight: String
   
-  var paletteGreenLightActive: String = js.native
+  var paletteGreenLightActive: String
   
-  var paletteGreenLightHover: String = js.native
+  var paletteGreenLightHover: String
   
-  var paletteGreenNormal: String = js.native
+  var paletteGreenNormal: String
   
-  var paletteGreenNormalActive: String = js.native
+  var paletteGreenNormalActive: String
   
-  var paletteGreenNormalHover: String = js.native
+  var paletteGreenNormalHover: String
   
-  var paletteInkLight: String = js.native
+  var paletteInkLight: String
   
-  var paletteInkLightActive: String = js.native
+  var paletteInkLightActive: String
   
-  var paletteInkLightHover: String = js.native
+  var paletteInkLightHover: String
   
-  var paletteInkLighter: String = js.native
+  var paletteInkLighter: String
   
-  var paletteInkLighterActive: String = js.native
+  var paletteInkLighterActive: String
   
-  var paletteInkLighterHover: String = js.native
+  var paletteInkLighterHover: String
   
-  var paletteInkNormal: String = js.native
+  var paletteInkNormal: String
   
-  var paletteInkNormalActive: String = js.native
+  var paletteInkNormalActive: String
   
-  var paletteInkNormalHover: String = js.native
+  var paletteInkNormalHover: String
   
-  var paletteOrangeDark: String = js.native
+  var paletteOrangeDark: String
   
-  var paletteOrangeDarkActive: String = js.native
+  var paletteOrangeDarkActive: String
   
-  var paletteOrangeDarkHover: String = js.native
+  var paletteOrangeDarkHover: String
   
-  var paletteOrangeDarker: String = js.native
+  var paletteOrangeDarker: String
   
-  var paletteOrangeLight: String = js.native
+  var paletteOrangeLight: String
   
-  var paletteOrangeLightActive: String = js.native
+  var paletteOrangeLightActive: String
   
-  var paletteOrangeLightHover: String = js.native
+  var paletteOrangeLightHover: String
   
-  var paletteOrangeNormal: String = js.native
+  var paletteOrangeNormal: String
   
-  var paletteOrangeNormalActive: String = js.native
+  var paletteOrangeNormalActive: String
   
-  var paletteOrangeNormalHover: String = js.native
+  var paletteOrangeNormalHover: String
   
-  var paletteProductDark: String = js.native
+  var paletteProductDark: String
   
-  var paletteProductDarkActive: String = js.native
+  var paletteProductDarkActive: String
   
-  var paletteProductDarkHover: String = js.native
+  var paletteProductDarkHover: String
   
-  var paletteProductDarker: String = js.native
+  var paletteProductDarker: String
   
-  var paletteProductLight: String = js.native
+  var paletteProductLight: String
   
-  var paletteProductLightActive: String = js.native
+  var paletteProductLightActive: String
   
-  var paletteProductLightHover: String = js.native
+  var paletteProductLightHover: String
   
-  var paletteProductNormal: String = js.native
+  var paletteProductNormal: String
   
-  var paletteProductNormalActive: String = js.native
+  var paletteProductNormalActive: String
   
-  var paletteProductNormalHover: String = js.native
+  var paletteProductNormalHover: String
   
-  var paletteRedDark: String = js.native
+  var paletteRedDark: String
   
-  var paletteRedDarkActive: String = js.native
+  var paletteRedDarkActive: String
   
-  var paletteRedDarkHover: String = js.native
+  var paletteRedDarkHover: String
   
-  var paletteRedDarker: String = js.native
+  var paletteRedDarker: String
   
-  var paletteRedLight: String = js.native
+  var paletteRedLight: String
   
-  var paletteRedLightActive: String = js.native
+  var paletteRedLightActive: String
   
-  var paletteRedLightHover: String = js.native
+  var paletteRedLightHover: String
   
-  var paletteRedNormal: String = js.native
+  var paletteRedNormal: String
   
-  var paletteRedNormalActive: String = js.native
+  var paletteRedNormalActive: String
   
-  var paletteRedNormalHover: String = js.native
+  var paletteRedNormalHover: String
   
-  var paletteSocialFacebook: String = js.native
+  var paletteSocialFacebook: String
   
-  var paletteSocialFacebookActive: String = js.native
+  var paletteSocialFacebookActive: String
   
-  var paletteSocialFacebookHover: String = js.native
+  var paletteSocialFacebookHover: String
   
-  var paletteWhite: String = js.native
+  var paletteWhite: String
   
-  var paletteWhiteActive: String = js.native
+  var paletteWhiteActive: String
   
-  var paletteWhiteHover: String = js.native
+  var paletteWhiteHover: String
   
-  var spaceLarge: String = js.native
+  var spaceLarge: String
   
-  var spaceMedium: String = js.native
+  var spaceMedium: String
   
-  var spaceSmall: String = js.native
+  var spaceSmall: String
   
-  var spaceXLarge: String = js.native
+  var spaceXLarge: String
   
-  var spaceXSmall: String = js.native
+  var spaceXSmall: String
   
-  var spaceXXLarge: String = js.native
+  var spaceXXLarge: String
   
-  var spaceXXSmall: String = js.native
+  var spaceXXSmall: String
   
-  var spaceXXXLarge: String = js.native
+  var spaceXXXLarge: String
   
-  var spaceXXXSmall: String = js.native
+  var spaceXXXSmall: String
   
-  var textDecorationTextLinkPrimary: String = js.native
+  var textDecorationTextLinkPrimary: String
   
-  var textDecorationTextLinkPrimaryHover: String = js.native
+  var textDecorationTextLinkPrimaryHover: String
   
-  var textDecorationTextLinkSecondary: String = js.native
+  var textDecorationTextLinkSecondary: String
   
-  var textDecorationTextLinkSecondaryHover: String = js.native
+  var textDecorationTextLinkSecondaryHover: String
   
-  var widthBadgeCircled: String = js.native
+  var widthBadgeCircled: String
   
-  var widthBreakpointDesktop: Double = js.native
+  var widthBreakpointDesktop: Double
   
-  var widthBreakpointLargeDesktop: Double = js.native
+  var widthBreakpointLargeDesktop: Double
   
-  var widthBreakpointLargeMobile: Double = js.native
+  var widthBreakpointLargeMobile: Double
   
-  var widthBreakpointMediumMobile: Double = js.native
+  var widthBreakpointMediumMobile: Double
   
-  var widthBreakpointTablet: Double = js.native
+  var widthBreakpointTablet: Double
   
-  var widthCheckbox: String = js.native
+  var widthCheckbox: String
   
-  var widthCountryFlag: String = js.native
+  var widthCountryFlag: String
   
-  var widthIconLarge: String = js.native
+  var widthIconLarge: String
   
-  var widthIconMedium: String = js.native
+  var widthIconMedium: String
   
-  var widthIconSmall: String = js.native
+  var widthIconSmall: String
   
-  var widthModalLarge: String = js.native
+  var widthModalLarge: String
   
-  var widthModalNormal: String = js.native
+  var widthModalNormal: String
   
-  var widthModalSmall: String = js.native
+  var widthModalSmall: String
   
-  var widthRadioButton: String = js.native
+  var widthRadioButton: String
   
-  var widthStopoverArrow: String = js.native
+  var widthStopoverArrow: String
   
-  var zIndexDefault: String = js.native
+  var zIndexDefault: String
   
-  var zIndexModal: String = js.native
+  var zIndexModal: String
   
-  var zIndexModalOverlay: String = js.native
+  var zIndexModalOverlay: String
   
-  var zIndexOnTheTop: String = js.native
+  var zIndexOnTheTop: String
   
-  var zIndexSticky: String = js.native
+  var zIndexSticky: String
 }
 object Tokens {
   

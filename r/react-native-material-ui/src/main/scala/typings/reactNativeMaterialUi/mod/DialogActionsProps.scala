@@ -4,15 +4,13 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.ActionsContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogActionsProps extends StObject {
   
-  var children: Element = js.native
+  var children: Element
   
-  var style: js.UndefOr[ActionsContainer] = js.native
+  var style: js.UndefOr[ActionsContainer] = js.undefined
 }
 object DialogActionsProps {
   

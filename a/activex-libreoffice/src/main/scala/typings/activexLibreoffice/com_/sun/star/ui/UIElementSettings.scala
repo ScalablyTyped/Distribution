@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XComponentContext
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limitations based on the real user interface element may be visible.
   * @since OOo 2.0
   */
-@js.native
 trait UIElementSettings
-  extends XIndexAccess
+  extends StObject
+     with XIndexAccess
      with XSingleComponentFactory {
   
   /**
@@ -28,7 +27,7 @@ trait UIElementSettings
     *
     * A toolbar can show a its user interface name on the window title, when it is in floating mode.
     */
-  var UIName: String = js.native
+  var UIName: String
 }
 object UIElementSettings {
   
@@ -38,7 +37,7 @@ object UIElementSettings {
     ElementType: `type`,
     UIName: String,
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (SeqEquiv[_], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (SeqEquiv[js.Any], XComponentContext) => XInterface,
     createInstanceWithContext: XComponentContext => XInterface,
     getByIndex: Double => js.Any,
     getCount: () => Double,

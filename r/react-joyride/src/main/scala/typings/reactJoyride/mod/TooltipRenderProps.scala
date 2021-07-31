@@ -4,21 +4,21 @@ import typings.reactJoyride.anon.Arialabel
 import typings.reactJoyride.anon.Ariamodal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TooltipRenderProps extends BeaconRenderProps {
+trait TooltipRenderProps
+  extends StObject
+     with BeaconRenderProps {
   
-  var backProps: Arialabel = js.native
+  var backProps: Arialabel
   
-  var closeProps: Arialabel = js.native
+  var closeProps: Arialabel
   
-  var primaryProps: Arialabel = js.native
+  var primaryProps: Arialabel
   
-  var skipProps: Arialabel = js.native
+  var skipProps: Arialabel
   
-  var tooltipProps: Ariamodal = js.native
+  var tooltipProps: Ariamodal
 }
 object TooltipRenderProps {
   

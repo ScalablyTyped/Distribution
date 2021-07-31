@@ -2,21 +2,19 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelatedResources extends StObject {
   
-  var authorization: js.UndefOr[AuthorizationResource] = js.native
+  var authorization: js.UndefOr[AuthorizationResource] = js.undefined
   
-  var capture: js.UndefOr[CaptureResource] = js.native
+  var capture: js.UndefOr[CaptureResource] = js.undefined
   
-  var order: js.UndefOr[js.Any] = js.native
+  var order: js.UndefOr[js.Any] = js.undefined
   
-  var refund: js.UndefOr[RefundResource] = js.native
+  var refund: js.UndefOr[RefundResource] = js.undefined
   
-  var sale: js.UndefOr[SaleResource] = js.native
+  var sale: js.UndefOr[SaleResource] = js.undefined
 }
 object RelatedResources {
   

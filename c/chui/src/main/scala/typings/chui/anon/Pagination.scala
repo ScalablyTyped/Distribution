@@ -3,19 +3,17 @@ package typings.chui.anon
 import typings.chui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pagination extends StObject {
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var pagination: js.UndefOr[Boolean] = js.native
+  var pagination: js.UndefOr[Boolean] = js.undefined
   
-  var panels: JQuery = js.native
+  var panels: JQuery
   
-  var target: js.Any = js.native
+  var target: js.Any
 }
 object Pagination {
   

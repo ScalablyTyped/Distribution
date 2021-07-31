@@ -2,23 +2,21 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TracingConfig extends StObject {
   
-  var disable: js.UndefOr[Boolean] = js.native
+  var disable: js.UndefOr[Boolean] = js.undefined
   
-  var reporter: js.UndefOr[ReporterConfig] = js.native
+  var reporter: js.UndefOr[ReporterConfig] = js.undefined
   
-  var sampler: js.UndefOr[SamplerConfig] = js.native
+  var sampler: js.UndefOr[SamplerConfig] = js.undefined
   
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
-  var shareRpcSpan: js.UndefOr[Boolean] = js.native
+  var shareRpcSpan: js.UndefOr[Boolean] = js.undefined
   
-  var traceId128bit: js.UndefOr[Boolean] = js.native
+  var traceId128bit: js.UndefOr[Boolean] = js.undefined
 }
 object TracingConfig {
   

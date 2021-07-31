@@ -6,52 +6,50 @@ import typings.intercomClient.userMod.Avatar
 import typings.intercomClient.userMod.LocationData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Lead.Lead> */
-@js.native
 trait PartialLead extends StObject {
   
-  var avatar: js.UndefOr[Avatar] = js.native
+  var avatar: js.UndefOr[Avatar] = js.undefined
   
-  var companies: js.UndefOr[Companies] = js.native
+  var companies: js.UndefOr[Companies] = js.undefined
   
-  var created_at: js.UndefOr[Double] = js.native
+  var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var email: js.UndefOr[String | Null] = js.native
+  var email: js.UndefOr[String | Null] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var last_request_at: js.UndefOr[Double | Null] = js.native
+  var last_request_at: js.UndefOr[Double | Null] = js.undefined
   
-  var last_seen_ip: js.UndefOr[String | Null] = js.native
+  var last_seen_ip: js.UndefOr[String | Null] = js.undefined
   
-  var location_data: js.UndefOr[LocationData | js.Object] = js.native
+  var location_data: js.UndefOr[LocationData | js.Object] = js.undefined
   
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
-  var phone: js.UndefOr[String | Null] = js.native
+  var phone: js.UndefOr[String | Null] = js.undefined
   
-  var referrer: js.UndefOr[String | Null] = js.native
+  var referrer: js.UndefOr[String | Null] = js.undefined
   
-  var segments: js.UndefOr[Segments] = js.native
+  var segments: js.UndefOr[Segments] = js.undefined
   
-  var social_profiles: js.UndefOr[Socialprofiles] = js.native
+  var social_profiles: js.UndefOr[Socialprofiles] = js.undefined
   
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
   
-  var `type`: js.UndefOr[contact] = js.native
+  var `type`: js.UndefOr[contact] = js.undefined
   
-  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.native
+  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined
   
-  var updated_at: js.UndefOr[Double] = js.native
+  var updated_at: js.UndefOr[Double] = js.undefined
   
-  var user_agent_data: js.UndefOr[String | Null] = js.native
+  var user_agent_data: js.UndefOr[String | Null] = js.undefined
   
-  var user_id: js.UndefOr[String | Null] = js.native
+  var user_id: js.UndefOr[String | Null] = js.undefined
 }
 object PartialLead {
   

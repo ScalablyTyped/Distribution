@@ -8,7 +8,6 @@ import typings.nodegit.mod.Index
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object revertMod {
@@ -19,41 +18,41 @@ object revertMod {
   /* static members */
   object Revert {
     
+    @JSImport("nodegit/revert", "Revert")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Reverts the given commit against the given "our" commit, producing an index that reflects the result of the revert.
       */
-    @JSImport("nodegit/revert", "Revert.commit")
-    @js.native
-    def commit(repo: Repository, revertCommit: Commit, ourCommit: Commit, mainline: Double): js.Promise[Index] = js.native
-    @JSImport("nodegit/revert", "Revert.commit")
-    @js.native
+    @scala.inline
+    def commit(repo: Repository, revertCommit: Commit, ourCommit: Commit, mainline: Double): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], revertCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
+    @scala.inline
     def commit(
       repo: Repository,
       revertCommit: Commit,
       ourCommit: Commit,
       mainline: Double,
       mergeOptions: MergeOptions
-    ): js.Promise[Index] = js.native
+    ): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], revertCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any], mergeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
     
-    @JSImport("nodegit/revert", "Revert.revert")
-    @js.native
-    def revert(repo: Repository, commit: Commit): js.Promise[Double] = js.native
-    @JSImport("nodegit/revert", "Revert.revert")
-    @js.native
-    def revert(repo: Repository, commit: Commit, givenOpts: RevertOptions): js.Promise[Double] = js.native
+    @scala.inline
+    def revert(repo: Repository, commit: Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def revert(repo: Repository, commit: Commit, givenOpts: RevertOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], givenOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   }
   
-  @js.native
   trait RevertOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var checkoutOpts: js.UndefOr[CheckoutOptions] = js.native
+    var checkoutOpts: js.UndefOr[CheckoutOptions] = js.undefined
     
-    var mainline: js.UndefOr[Double] = js.native
+    var mainline: js.UndefOr[Double] = js.undefined
     
-    var mergeOpts: js.UndefOr[MergeOptions] = js.native
+    var mergeOpts: js.UndefOr[MergeOptions] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object RevertOptions {
     

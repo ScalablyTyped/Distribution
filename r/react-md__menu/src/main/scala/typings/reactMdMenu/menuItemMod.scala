@@ -9,18 +9,17 @@ import typings.reactMdMenu.reactMdMenuStrings.menuitem
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemMod {
   
   @JSImport("@react-md/menu/types/MenuItem", "MenuItem")
   @js.native
-  val MenuItem: ForwardRefExoticComponent[MenuItemProps with RefAttributes[HTMLLIElement]] = js.native
+  val MenuItem: ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLLIElement]] = js.native
   
-  @js.native
   trait MenuItemProps
-    extends ListItemProps
+    extends StObject
+       with ListItemProps
        with _ValidMenuItem {
     
     /**
@@ -28,7 +27,7 @@ object menuItemMod {
       * some of the other `menuitem*` widgets.
       */
     @JSName("role")
-    var role_MenuItemProps: js.UndefOr[menuitem | button] = js.native
+    var role_MenuItemProps: js.UndefOr[menuitem | button] = js.undefined
   }
   object MenuItemProps {
     

@@ -12,7 +12,7 @@ Extract the actual stack of an error
 | Keywords           | extract, stack, error, trace, traces, lines, parse, get |
 | # releases         | 2 |
 | # dependents       | 11 |
-| # downloads        | 26353937 |
+| # downloads        | 41993764 |
 | # stars            | 0 |
 
 ## Links

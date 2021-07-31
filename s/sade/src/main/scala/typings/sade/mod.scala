@@ -5,28 +5,28 @@ import typings.sade.anon.ReadonlyCommandOptions
 import typings.sade.anon.lazytrueParseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sade", JSImport.Namespace)
-  @js.native
-  def apply(str: String): Sade = js.native
-  @JSImport("sade", JSImport.Namespace)
-  @js.native
-  def apply(str: String, isOne: Boolean): Sade = js.native
+  @scala.inline
+  def apply(str: String): Sade = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Sade]
+  @scala.inline
+  def apply(str: String, isOne: Boolean): Sade = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], isOne.asInstanceOf[js.Any])).asInstanceOf[Sade]
   
+  @JSImport("sade", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CommandOptions extends StObject {
     
-    var default: js.UndefOr[Boolean] = js.native
+    var default: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optionally define one or more aliases for the current Command.
       * When declared, the `opts.alias` value is passed directly to the [`prog.alias`](#progaliasnames) method.
       */
-    var alias: js.UndefOr[String | js.Array[String]] = js.native
+    var alias: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object CommandOptions {
     
@@ -56,24 +56,52 @@ object mod {
     }
   }
   
-  type Handler = js.Function1[/* repeated */ js.Any, js.Any]
-  
   @js.native
-  trait LazyOutput extends StObject {
+  trait Handler extends StObject {
     
-    var args: js.Array[String] = js.native
-    
-    def handler(args: js.Any*): js.Any = js.native
-    @JSName("handler")
-    var handler_Original: Handler = js.native
-    
-    var name: String = js.native
+    def apply(args: js.Any*): js.Any = js.native
   }
   
-  @js.native
-  trait ParseOptions extends Options {
+  trait LazyOutput extends StObject {
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var args: js.Array[String]
+    
+    def handler(args: js.Any*): js.Any
+    @JSName("handler")
+    var handler_Original: Handler
+    
+    var name: String
+  }
+  object LazyOutput {
+    
+    @scala.inline
+    def apply(args: js.Array[String], handler: Handler, name: String): LazyOutput = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LazyOutput]
+    }
+    
+    @scala.inline
+    implicit class LazyOutputMutableBuilder[Self <: LazyOutput] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      
+      @scala.inline
+      def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ParseOptions
+    extends StObject
+       with Options {
+    
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     
@@ -105,9 +133,9 @@ object mod {
     def alias(names: String*): Sade = js.native
     
     def command(str: String): Sade = js.native
-    def command(str: String, desc: js.UndefOr[scala.Nothing], opts: ReadonlyCommandOptions): Sade = js.native
     def command(str: String, desc: String): Sade = js.native
     def command(str: String, desc: String, opts: ReadonlyCommandOptions): Sade = js.native
+    def command(str: String, desc: Unit, opts: ReadonlyCommandOptions): Sade = js.native
     
     def describe(str: String): Sade = js.native
     def describe(str: js.Array[String]): Sade = js.native

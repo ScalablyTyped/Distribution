@@ -2,7 +2,6 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,13 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * namespace_ids=[&#39;&#39;, &#39;Baz&#39;]  The entire Baz namespace:
   * kinds=[], namespace_ids=[&#39;Baz&#39;]
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1beta1EntityFilter extends StObject {
   
   /**
     * If empty, then this represents all kinds.
     */
-  var kinds: js.UndefOr[js.Array[String]] = js.native
+  var kinds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An empty list represents all namespaces. This is the preferred usage for
@@ -32,7 +30,7 @@ trait SchemaGoogleDatastoreAdminV1beta1EntityFilter extends StObject {
     * data in non-default namespaces, but doesn&#39;t want to include them.
     * Each namespace in this list must be unique.
     */
-  var namespaceIds: js.UndefOr[js.Array[String]] = js.native
+  var namespaceIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1beta1EntityFilter {
   

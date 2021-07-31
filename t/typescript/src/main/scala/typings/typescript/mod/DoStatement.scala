@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoStatement extends IterationStatement {
+trait DoStatement
+  extends StObject
+     with IterationStatement {
   
   val expression: Expression = js.native
   

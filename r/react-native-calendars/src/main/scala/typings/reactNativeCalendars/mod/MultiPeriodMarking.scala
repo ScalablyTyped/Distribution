@@ -3,13 +3,13 @@ package typings.reactNativeCalendars.mod
 import typings.reactNativeCalendars.anon.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiPeriodMarking extends Marking {
+trait MultiPeriodMarking
+  extends StObject
+     with Marking {
   
-  var periods: js.Array[Color] = js.native
+  var periods: js.Array[Color]
 }
 object MultiPeriodMarking {
   

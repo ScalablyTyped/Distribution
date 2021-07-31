@@ -4,19 +4,17 @@ import typings.vueRouter.mod.default
 import typings.vueRouter.routerMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vueMod {
   
-  @js.native
   trait Vue extends StObject {
     
     @JSName("$route")
-    var $route: Route = js.native
+    var $route: Route
     
     @JSName("$router")
-    var $router: default = js.native
+    var $router: default
   }
   object Vue {
     

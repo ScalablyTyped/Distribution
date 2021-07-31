@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttMessages extends StObject {
   
-  var actions: js.UndefOr[GanttMessagesActions] = js.native
+  var actions: js.UndefOr[GanttMessagesActions] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var deleteDependencyConfirmation: js.UndefOr[String] = js.native
+  var deleteDependencyConfirmation: js.UndefOr[String] = js.undefined
   
-  var deleteDependencyWindowTitle: js.UndefOr[String] = js.native
+  var deleteDependencyWindowTitle: js.UndefOr[String] = js.undefined
   
-  var deleteTaskConfirmation: js.UndefOr[String] = js.native
+  var deleteTaskConfirmation: js.UndefOr[String] = js.undefined
   
-  var deleteTaskWindowTitle: js.UndefOr[String] = js.native
+  var deleteTaskWindowTitle: js.UndefOr[String] = js.undefined
   
-  var destroy: js.UndefOr[String] = js.native
+  var destroy: js.UndefOr[String] = js.undefined
   
-  var editor: js.UndefOr[GanttMessagesEditor] = js.native
+  var editor: js.UndefOr[GanttMessagesEditor] = js.undefined
   
-  var plannedTasks: js.UndefOr[GanttMessagesPlannedTasks] = js.native
+  var plannedTasks: js.UndefOr[GanttMessagesPlannedTasks] = js.undefined
   
-  var save: js.UndefOr[String] = js.native
+  var save: js.UndefOr[String] = js.undefined
   
-  var views: js.UndefOr[GanttMessagesViews] = js.native
+  var views: js.UndefOr[GanttMessagesViews] = js.undefined
 }
 object GanttMessages {
   

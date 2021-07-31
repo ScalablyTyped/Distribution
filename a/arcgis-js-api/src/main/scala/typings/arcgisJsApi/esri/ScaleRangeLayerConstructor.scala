@@ -3,8 +3,9 @@ package typings.arcgisJsApi.esri
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleRangeLayerConstructor extends Instantiable0[ScaleRangeLayer]
+trait ScaleRangeLayerConstructor
+  extends StObject
+     with Instantiable0[ScaleRangeLayer]

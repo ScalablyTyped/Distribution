@@ -4,7 +4,6 @@ import typings.countryTelephoneData.countryTelephoneDataBooleans.`true`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,22 +16,21 @@ object mod {
   @js.native
   val iso2Lookup: Record[String, Country] = js.native
   
-  @js.native
   trait Country extends StObject {
     
-    var dialCode: String = js.native
+    var dialCode: String
     
     /** A format string for phone numbers. **This could be an empty string.** */
-    var format: String = js.native
+    var format: String
     
-    var hasAreaCodes: js.UndefOr[`true`] = js.native
+    var hasAreaCodes: js.UndefOr[`true`] = js.undefined
     
     /** The {@link https://w.wiki/4kP |ISO 3166-1 alpha-2} country code (in **lowercase**) */
-    var iso2: String = js.native
+    var iso2: String
     
-    var name: String = js.native
+    var name: String
     
-    var priority: Double = js.native
+    var priority: Double
   }
   object Country {
     

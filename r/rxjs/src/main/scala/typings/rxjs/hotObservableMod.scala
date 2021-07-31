@@ -6,7 +6,6 @@ import typings.rxjs.subscriptionLogMod.SubscriptionLog
 import typings.rxjs.testMessageMod.TestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hotObservableMod {

@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisibleOnAllWorkspacesOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait VisibleOnAllWorkspacesOptions extends StObject {
     *
     * @platform darwin
     */
-  var visibleOnFullScreen: js.UndefOr[Boolean] = js.native
+  var visibleOnFullScreen: js.UndefOr[Boolean] = js.undefined
 }
 object VisibleOnAllWorkspacesOptions {
   

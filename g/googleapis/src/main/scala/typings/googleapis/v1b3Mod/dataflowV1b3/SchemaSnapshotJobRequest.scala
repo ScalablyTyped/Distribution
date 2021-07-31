@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to create a snapshot of a job.
   */
-@js.native
 trait SchemaSnapshotJobRequest extends StObject {
   
   /**
     * The location that contains this job.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * TTL for the snapshot.
     */
-  var ttl: js.UndefOr[String] = js.native
+  var ttl: js.UndefOr[String] = js.undefined
 }
 object SchemaSnapshotJobRequest {
   

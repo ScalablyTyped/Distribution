@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoSelectorPid extends StObject {
   
   /**
     * Selects a specific PID from within a video source.
     */
-  var Pid: js.UndefOr[integerMin0Max8191] = js.native
+  var Pid: js.UndefOr[integerMin0Max8191] = js.undefined
 }
 object VideoSelectorPid {
   

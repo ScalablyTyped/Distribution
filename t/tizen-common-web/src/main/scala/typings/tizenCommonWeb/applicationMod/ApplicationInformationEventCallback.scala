@@ -3,10 +3,8 @@ package typings.tizenCommonWeb.applicationMod
 import typings.tizenCommonWeb.packageMod.PackageId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationInformationEventCallback extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait ApplicationInformationEventCallback extends StObject {
     *
     * @param info The information of the installed application.
     */
-  var oninstalled: js.UndefOr[js.Function1[/* info */ ApplicationInformation, Unit]] = js.native
+  var oninstalled: js.UndefOr[js.Function1[/* info */ ApplicationInformation, Unit]] = js.undefined
   
   /**
     * Called when an application is uninstalled.
     *
     * @param id The ID of the uninstalled application.
     */
-  var onuninstalled: js.UndefOr[js.Function1[/* id */ PackageId, Unit]] = js.native
+  var onuninstalled: js.UndefOr[js.Function1[/* id */ PackageId, Unit]] = js.undefined
   
   /**
     * Called when an application is updated.
     *
     * @param info The information of the updated application.
     */
-  var onupdated: js.UndefOr[js.Function1[/* info */ ApplicationInformation, Unit]] = js.native
+  var onupdated: js.UndefOr[js.Function1[/* info */ ApplicationInformation, Unit]] = js.undefined
 }
 object ApplicationInformationEventCallback {
   

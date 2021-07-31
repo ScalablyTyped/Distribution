@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hatching extends StObject {
   
-  var border: js.UndefOr[ColorDashStyle] = js.native
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var hatching: js.UndefOr[Step] = js.native
+  var hatching: js.UndefOr[Step] = js.undefined
 }
 object Hatching {
   

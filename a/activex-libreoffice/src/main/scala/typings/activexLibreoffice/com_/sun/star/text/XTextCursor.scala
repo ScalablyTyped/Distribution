@@ -3,18 +3,18 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends a text range by method to modify its position. */
-@js.native
-trait XTextCursor extends XTextRange {
+trait XTextCursor
+  extends StObject
+     with XTextRange {
   
   /** sets the start of the position to the end. */
-  def collapseToEnd(): Unit = js.native
+  def collapseToEnd(): Unit
   
   /** sets the end of the position to the start. */
-  def collapseToStart(): Unit = js.native
+  def collapseToStart(): Unit
   
   /**
     * moves the cursor the specified number of characters to the left.
@@ -22,7 +22,7 @@ trait XTextCursor extends XTextRange {
     * @param bExpand specifies if the current selection of the cursor should be expanded or not.
     * @returns `TRUE` if the command was successfully completed. `FALSE` otherwise.  Note: Even if the command was not completed successfully it may be complete
     */
-  def goLeft(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goLeft(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor the specified number of characters to the right.
@@ -30,19 +30,19 @@ trait XTextCursor extends XTextRange {
     * @param bExpand specifies if the current selection of the cursor should be expanded or not.
     * @returns `TRUE` if the command was successfully completed. `FALSE` otherwise.  Note: Even if the command was not completed successfully it may be complete
     */
-  def goRight(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goRight(nCount: Double, bExpand: Boolean): Boolean
   
   /** moves the cursor to the end of the text. */
-  def gotoEnd(bExpand: Boolean): Unit = js.native
+  def gotoEnd(bExpand: Boolean): Unit
   
   /** moves or expands the cursor to a specified {@link TextRange} . */
-  def gotoRange(xRange: XTextRange, bExpand: Boolean): Unit = js.native
+  def gotoRange(xRange: XTextRange, bExpand: Boolean): Unit
   
   /** moves the cursor to the start of the text. */
-  def gotoStart(bExpand: Boolean): Unit = js.native
+  def gotoStart(bExpand: Boolean): Unit
   
   /** determines if the start and end positions are the same. */
-  def isCollapsed(): Boolean = js.native
+  def isCollapsed(): Boolean
 }
 object XTextCursor {
   

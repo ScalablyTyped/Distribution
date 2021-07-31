@@ -2,7 +2,6 @@ package typings.viewportList
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,25 +12,26 @@ object mod {
     * @param items - An array of device names to fetch
     * @returns - An array of viewports
     */
-  @JSImport("viewport-list", JSImport.Namespace)
-  @js.native
-  def apply(): js.Array[Device] = js.native
-  @JSImport("viewport-list", JSImport.Namespace)
-  @js.native
-  def apply(items: js.Array[String]): js.Array[Device] = js.native
+  @scala.inline
+  def apply(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[Device]]
+  @scala.inline
+  def apply(items: js.Array[String]): js.Array[Device] = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[Device]]
   
+  @JSImport("viewport-list", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Device extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var os: String = js.native
+    var os: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var release: String = js.native
+    var release: String
     
-    var size: String = js.native
+    var size: String
   }
   object Device {
     

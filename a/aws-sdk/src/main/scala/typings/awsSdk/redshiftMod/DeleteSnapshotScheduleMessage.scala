@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSnapshotScheduleMessage extends StObject {
   
   /**
     * A unique identifier of the snapshot schedule to delete.
     */
-  var ScheduleIdentifier: String = js.native
+  var ScheduleIdentifier: String
 }
 object DeleteSnapshotScheduleMessage {
   

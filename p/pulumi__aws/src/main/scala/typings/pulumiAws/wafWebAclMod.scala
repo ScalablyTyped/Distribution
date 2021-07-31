@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafWebAclMod {
@@ -67,6 +66,10 @@ object wafWebAclMod {
   /* static members */
   object WebAcl {
     
+    @JSImport("@pulumi/aws/waf/webAcl", "WebAcl")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WebAcl resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -76,60 +79,54 @@ object wafWebAclMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/waf/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID]): WebAcl = js.native
-    @JSImport("@pulumi/aws/waf/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WebAcl = js.native
-    @JSImport("@pulumi/aws/waf/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclState): WebAcl = js.native
-    @JSImport("@pulumi/aws/waf/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): WebAcl = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclState): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
     
     /**
       * Returns true if the given object is an instance of WebAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/waf/webAcl", "WebAcl.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/webAcl.WebAcl */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/webAcl.WebAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/webAcl.WebAcl */ Boolean]
   }
   
-  @js.native
   trait WebAclArgs extends StObject {
     
     /**
       * Configuration block with action that you want AWS WAF to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL. Detailed below.
       */
-    val defaultAction: Input[typings.pulumiAws.inputMod.waf.WebAclDefaultAction] = js.native
+    val defaultAction: Input[typings.pulumiAws.inputMod.waf.WebAclDefaultAction]
     
     /**
       * Configuration block to enable WAF logging. Detailed below.
       */
-    val loggingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.waf.WebAclLoggingConfiguration]] = js.native
+    val loggingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.waf.WebAclLoggingConfiguration]] = js.undefined
     
     /**
       * The name or description for the Amazon CloudWatch metric of this web ACL.
       */
-    val metricName: Input[String] = js.native
+    val metricName: Input[String]
     
     /**
       * The name or description of the web ACL.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration blocks containing rules to associate with the web ACL and the settings for each rule. Detailed below.
       */
-    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.WebAclRule]]]] = js.native
+    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.WebAclRule]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object WebAclArgs {
     
@@ -180,43 +177,42 @@ object wafWebAclMod {
     }
   }
   
-  @js.native
   trait WebAclState extends StObject {
     
     /**
       * The ARN of the WAF WebACL.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with action that you want AWS WAF to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL. Detailed below.
       */
-    val defaultAction: js.UndefOr[Input[typings.pulumiAws.inputMod.waf.WebAclDefaultAction]] = js.native
+    val defaultAction: js.UndefOr[Input[typings.pulumiAws.inputMod.waf.WebAclDefaultAction]] = js.undefined
     
     /**
       * Configuration block to enable WAF logging. Detailed below.
       */
-    val loggingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.waf.WebAclLoggingConfiguration]] = js.native
+    val loggingConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.waf.WebAclLoggingConfiguration]] = js.undefined
     
     /**
       * The name or description for the Amazon CloudWatch metric of this web ACL.
       */
-    val metricName: js.UndefOr[Input[String]] = js.native
+    val metricName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or description of the web ACL.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration blocks containing rules to associate with the web ACL and the settings for each rule. Detailed below.
       */
-    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.WebAclRule]]]] = js.native
+    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.waf.WebAclRule]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object WebAclState {
     

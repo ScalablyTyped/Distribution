@@ -7,7 +7,6 @@ import typings.aframe.mod.ObjectMap
 import typings.aframe.mod.System
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object primitives {
@@ -16,9 +15,8 @@ object primitives {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("AFRAME.primitives.getMeshMixin")
-  @js.native
-  def getMeshMixin(): DefaultComponents = js.native
+  @scala.inline
+  def getMeshMixin(): DefaultComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeshMixin")().asInstanceOf[DefaultComponents]
   
   @JSGlobal("AFRAME.primitives.primitives")
   @js.native

@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageStoreStatic extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait ImageStoreStatic extends StObject {
     base64ImageData: String,
     success: js.Function1[/* uri */ String, Unit],
     failure: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Retrieves the base64-encoded data for an image in the ImageStore. If the
@@ -40,13 +38,13 @@ trait ImageStoreStatic extends StObject {
     uri: String,
     success: js.Function1[/* base64ImageData */ String, Unit],
     failure: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Check if the ImageStore contains image data for the specified URI.
     * @platform ios
     */
-  def hasImageForTag(uri: String, callback: js.Function1[/* hasImage */ Boolean, Unit]): Unit = js.native
+  def hasImageForTag(uri: String, callback: js.Function1[/* hasImage */ Boolean, Unit]): Unit
   
   /**
     * Delete an image from the ImageStore. Images are stored in memory and
@@ -56,7 +54,7 @@ trait ImageStoreStatic extends StObject {
     * will simply fail silently.
     * @platform ios
     */
-  def removeImageForTag(uri: String): Unit = js.native
+  def removeImageForTag(uri: String): Unit
 }
 object ImageStoreStatic {
   

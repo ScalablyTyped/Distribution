@@ -2,16 +2,14 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopBulkDeploymentRequest extends StObject {
   
   /**
     * The ID of the bulk deployment.
     */
-  var BulkDeploymentId: string = js.native
+  var BulkDeploymentId: string
 }
 object StopBulkDeploymentRequest {
   

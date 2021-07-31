@@ -3,11 +3,9 @@ package typings.koaEjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
-import typings.koa.mod.^
 import typings.koaEjs.koaEjsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,9 +13,12 @@ object mod {
   /**
     *  Adds render method to the app context.
     */
+  @scala.inline
+  def apply(app: typings.koa.mod.^[DefaultState, DefaultContext], settings: Settings): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("koa-ejs", JSImport.Namespace)
   @js.native
-  def apply(app: ^[DefaultState, DefaultContext], settings: Settings): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The ejs API.
@@ -26,29 +27,28 @@ object mod {
   @js.native
   val ejs: js.Any = js.native
   
-  @js.native
   trait Settings extends StObject {
     
     /** When true, EJS will use an async function for rendering. Depends on async/await support in the JS runtime */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** Cache compiled templates */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** Log debug messages. */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /** Character to use with angle brackets for open / close (default %). */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /** Global layout file, default is layout, set false to disable layout. */
-    var layout: js.UndefOr[String | `false`] = js.native
+    var layout: js.UndefOr[String | `false`] = js.undefined
     
     /** View root directory */
-    var root: String = js.native
+    var root: String
     
     /** Filename extension for the views. Defaults to html. */
-    var viewExt: js.UndefOr[String] = js.native
+    var viewExt: js.UndefOr[String] = js.undefined
   }
   object Settings {
     

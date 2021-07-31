@@ -2,24 +2,24 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
 - typings.bpmnModdle.mod.BaseElement because Already inherited
-- typings.bpmnModdle.mod.FlowElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, auditing, monitoring, categoryValueRef */ @js.native
-trait DataObjectReference extends ItemAwareElement {
+- typings.bpmnModdle.mod.FlowElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, auditing, monitoring, categoryValueRef */ trait DataObjectReference
+  extends StObject
+     with ItemAwareElement {
   
-  var auditing: Auditing = js.native
+  var auditing: Auditing
   
-  var categoryValueRef: js.Array[CategoryValue] = js.native
+  var categoryValueRef: js.Array[CategoryValue]
   
-  var dataObjectRef: DataObject = js.native
+  var dataObjectRef: DataObject
   
-  var monitoring: Monitoring = js.native
+  var monitoring: Monitoring
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object DataObjectReference {
   

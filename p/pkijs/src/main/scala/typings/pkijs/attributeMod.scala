@@ -2,47 +2,62 @@ package typings.pkijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attributeMod {
   
   @JSImport("pkijs/src/Attribute", JSImport.Default)
   @js.native
-  class default () extends Attribute {
+  class default ()
+    extends StObject
+       with Attribute {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /* CompleteClass */
+    var value: js.Array[js.Any] = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("pkijs/src/Attribute", "default.compareWithDefault")
+    @JSImport("pkijs/src/Attribute", JSImport.Default)
     @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pkijs/src/Attribute", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/Attribute", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/Attribute", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait Attribute extends StObject {
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.Array[_] = js.native
+    var value: js.Array[js.Any]
   }
   object Attribute {
     
@@ -52,7 +67,7 @@ object attributeMod {
       toJSON: () => js.Any,
       toSchema: () => js.Any,
       `type`: String,
-      value: js.Array[_]
+      value: js.Array[js.Any]
     ): Attribute = {
       val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -75,7 +90,7 @@ object attributeMod {
       def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))

@@ -10,9 +10,9 @@ A canvas environment for Node
 | ------------------ | :-------------: |
 | Full name          | skia-canvas |
 | Keywords           | skia, canvas, offscreen, headless, graphic, graphics, image, images, compositing, render, pdf, svg, rust |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 568 |
+| # releases         | 14 |
+| # dependents       | 1 |
+| # downloads        | 2799 |
 | # stars            | 0 |
 
 ## Links

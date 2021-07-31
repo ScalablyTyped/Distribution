@@ -2,25 +2,61 @@ package typings.activexDao.DAO
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   @JSName("DAO.Parameter_typekey")
-  var DAODotParameter_typekey: Parameter = js.native
+  var DAODotParameter_typekey: Parameter
   
-  var Direction: Double = js.native
+  var Direction: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  def Properties(Item: String): Property = js.native
-  def Properties(Item: Double): Property = js.native
+  def Properties(Item: String): Property
+  def Properties(Item: Double): Property
   @JSName("Properties")
-  val Properties_Original: Properties = js.native
+  val Properties_Original: Properties
   
-  var Type: Double = js.native
+  var Type: Double
   
-  var Value: js.Any = js.native
+  var Value: js.Any
+}
+object Parameter {
+  
+  @scala.inline
+  def apply(
+    DAODotParameter_typekey: Parameter,
+    Direction: Double,
+    Name: String,
+    Properties: Properties,
+    Type: Double,
+    Value: js.Any
+  ): Parameter = {
+    val __obj = js.Dynamic.literal(Direction = Direction.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.Parameter_typekey")(DAODotParameter_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Parameter]
+  }
+  
+  @scala.inline
+  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDAODotParameter_typekey(value: Parameter): Self = StObject.set(x, "DAO.Parameter_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDirection(value: Double): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+  }
 }

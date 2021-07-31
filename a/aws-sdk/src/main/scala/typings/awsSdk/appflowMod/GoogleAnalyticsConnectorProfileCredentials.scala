@@ -2,36 +2,34 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsConnectorProfileCredentials extends StObject {
   
   /**
     *  The credentials used to access protected Google Analytics resources. 
     */
-  var accessToken: js.UndefOr[AccessToken] = js.native
+  var accessToken: js.UndefOr[AccessToken] = js.undefined
   
   /**
     *  The identifier for the desired client. 
     */
-  var clientId: ClientId = js.native
+  var clientId: ClientId
   
   /**
     *  The client secret used by the OAuth client to authenticate to the authorization server. 
     */
-  var clientSecret: ClientSecret = js.native
+  var clientSecret: ClientSecret
   
   /**
     *  The OAuth requirement needed to request security tokens from the connector endpoint. 
     */
-  var oAuthRequest: js.UndefOr[ConnectorOAuthRequest] = js.native
+  var oAuthRequest: js.UndefOr[ConnectorOAuthRequest] = js.undefined
   
   /**
     *  The credentials used to acquire new access tokens. This is required only for OAuth2 access tokens, and is not required for OAuth1 access tokens. 
     */
-  var refreshToken: js.UndefOr[RefreshToken] = js.native
+  var refreshToken: js.UndefOr[RefreshToken] = js.undefined
 }
 object GoogleAnalyticsConnectorProfileCredentials {
   

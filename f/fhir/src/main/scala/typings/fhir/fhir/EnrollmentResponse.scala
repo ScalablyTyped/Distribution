@@ -2,75 +2,75 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EnrollmentResponse resource
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait EnrollmentResponse extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait EnrollmentResponse
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.native
+  var _created: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'disposition'.
     */
-  var _disposition: js.UndefOr[Element] = js.native
+  var _disposition: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Creation date
     */
-  var created: js.UndefOr[dateTime] = js.native
+  var created: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Disposition Message
     */
-  var disposition: js.UndefOr[String] = js.native
+  var disposition: js.UndefOr[String] = js.undefined
   
   /**
     * Business Identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Insurer
     */
-  var organization: js.UndefOr[Reference] = js.native
+  var organization: js.UndefOr[Reference] = js.undefined
   
   /**
     * complete | error | partial
     */
-  var outcome: js.UndefOr[CodeableConcept] = js.native
+  var outcome: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Claim reference
     */
-  var request: js.UndefOr[Reference] = js.native
+  var request: js.UndefOr[Reference] = js.undefined
   
   /**
     * Responsible organization
     */
-  var requestOrganization: js.UndefOr[Reference] = js.native
+  var requestOrganization: js.UndefOr[Reference] = js.undefined
   
   /**
     * Responsible practitioner
     */
-  var requestProvider: js.UndefOr[Reference] = js.native
+  var requestProvider: js.UndefOr[Reference] = js.undefined
   
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
 }
 object EnrollmentResponse {
   

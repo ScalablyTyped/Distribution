@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserAttributesResponse extends StObject {
   
   /**
     * The code delivery details list from the server for the request to update user attributes.
     */
-  var CodeDeliveryDetailsList: js.UndefOr[CodeDeliveryDetailsListType] = js.native
+  var CodeDeliveryDetailsList: js.UndefOr[CodeDeliveryDetailsListType] = js.undefined
 }
 object UpdateUserAttributesResponse {
   

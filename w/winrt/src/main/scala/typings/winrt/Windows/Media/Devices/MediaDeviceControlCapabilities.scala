@@ -2,11 +2,11 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaDeviceControlCapabilities extends IMediaDeviceControlCapabilities
+trait MediaDeviceControlCapabilities
+  extends StObject
+     with IMediaDeviceControlCapabilities
 object MediaDeviceControlCapabilities {
   
   @scala.inline

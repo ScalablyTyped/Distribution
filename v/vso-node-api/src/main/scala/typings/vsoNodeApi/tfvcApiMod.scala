@@ -24,7 +24,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tfvcApiMod {
@@ -45,208 +44,149 @@ object tfvcApiMod {
     def getBatchedChangesets(changesetsRequestData: TfvcChangesetsRequestData): js.Promise[js.Array[TfvcChangesetRef]] = js.native
     
     def getBranch(path: String): js.Promise[TfvcBranch] = js.native
-    def getBranch(
-      path: String,
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean
-    ): js.Promise[TfvcBranch] = js.native
-    def getBranch(path: String, project: js.UndefOr[scala.Nothing], includeParent: Boolean): js.Promise[TfvcBranch] = js.native
-    def getBranch(path: String, project: js.UndefOr[scala.Nothing], includeParent: Boolean, includeChildren: Boolean): js.Promise[TfvcBranch] = js.native
     def getBranch(path: String, project: String): js.Promise[TfvcBranch] = js.native
-    def getBranch(path: String, project: String, includeParent: js.UndefOr[scala.Nothing], includeChildren: Boolean): js.Promise[TfvcBranch] = js.native
     def getBranch(path: String, project: String, includeParent: Boolean): js.Promise[TfvcBranch] = js.native
     def getBranch(path: String, project: String, includeParent: Boolean, includeChildren: Boolean): js.Promise[TfvcBranch] = js.native
+    def getBranch(path: String, project: String, includeParent: Unit, includeChildren: Boolean): js.Promise[TfvcBranch] = js.native
+    def getBranch(path: String, project: Unit, includeParent: Boolean): js.Promise[TfvcBranch] = js.native
+    def getBranch(path: String, project: Unit, includeParent: Boolean, includeChildren: Boolean): js.Promise[TfvcBranch] = js.native
+    def getBranch(path: String, project: Unit, includeParent: Unit, includeChildren: Boolean): js.Promise[TfvcBranch] = js.native
     
     def getBranchRefs(scopePath: String): js.Promise[js.Array[TfvcBranchRef]] = js.native
-    def getBranchRefs(
-      scopePath: String,
-      project: js.UndefOr[scala.Nothing],
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranchRef]] = js.native
-    def getBranchRefs(scopePath: String, project: js.UndefOr[scala.Nothing], includeDeleted: Boolean): js.Promise[js.Array[TfvcBranchRef]] = js.native
-    def getBranchRefs(
-      scopePath: String,
-      project: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranchRef]] = js.native
     def getBranchRefs(scopePath: String, project: String): js.Promise[js.Array[TfvcBranchRef]] = js.native
-    def getBranchRefs(
-      scopePath: String,
-      project: String,
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranchRef]] = js.native
     def getBranchRefs(scopePath: String, project: String, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranchRef]] = js.native
     def getBranchRefs(scopePath: String, project: String, includeDeleted: Boolean, includeLinks: Boolean): js.Promise[js.Array[TfvcBranchRef]] = js.native
+    def getBranchRefs(scopePath: String, project: String, includeDeleted: Unit, includeLinks: Boolean): js.Promise[js.Array[TfvcBranchRef]] = js.native
+    def getBranchRefs(scopePath: String, project: Unit, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranchRef]] = js.native
+    def getBranchRefs(scopePath: String, project: Unit, includeDeleted: Boolean, includeLinks: Boolean): js.Promise[js.Array[TfvcBranchRef]] = js.native
+    def getBranchRefs(scopePath: String, project: Unit, includeDeleted: Unit, includeLinks: Boolean): js.Promise[js.Array[TfvcBranchRef]] = js.native
     
     def getBranches(): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean,
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean,
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean,
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(project: js.UndefOr[scala.Nothing], includeParent: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: Boolean,
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: Boolean,
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: Boolean,
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(project: js.UndefOr[scala.Nothing], includeParent: Boolean, includeChildren: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: Boolean,
-      includeChildren: Boolean,
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: Boolean,
-      includeChildren: Boolean,
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: js.UndefOr[scala.Nothing],
-      includeParent: Boolean,
-      includeChildren: Boolean,
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
     def getBranches(project: String): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(project: String, includeParent: js.UndefOr[scala.Nothing], includeChildren: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean,
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean,
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: js.UndefOr[scala.Nothing],
-      includeChildren: Boolean,
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
     def getBranches(project: String, includeParent: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: Boolean,
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: Boolean,
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: Boolean,
-      includeChildren: js.UndefOr[scala.Nothing],
-      includeDeleted: Boolean,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
     def getBranches(project: String, includeParent: Boolean, includeChildren: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
-    def getBranches(
-      project: String,
-      includeParent: Boolean,
-      includeChildren: Boolean,
-      includeDeleted: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcBranch]] = js.native
     def getBranches(project: String, includeParent: Boolean, includeChildren: Boolean, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
     def getBranches(
       project: String,
       includeParent: Boolean,
       includeChildren: Boolean,
       includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: String,
+      includeParent: Boolean,
+      includeChildren: Boolean,
+      includeDeleted: Unit,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: String, includeParent: Boolean, includeChildren: Unit, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: String,
+      includeParent: Boolean,
+      includeChildren: Unit,
+      includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: String,
+      includeParent: Boolean,
+      includeChildren: Unit,
+      includeDeleted: Unit,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: String, includeParent: Unit, includeChildren: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: String, includeParent: Unit, includeChildren: Boolean, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: String,
+      includeParent: Unit,
+      includeChildren: Boolean,
+      includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: String,
+      includeParent: Unit,
+      includeChildren: Boolean,
+      includeDeleted: Unit,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: String, includeParent: Unit, includeChildren: Unit, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: String,
+      includeParent: Unit,
+      includeChildren: Unit,
+      includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: String,
+      includeParent: Unit,
+      includeChildren: Unit,
+      includeDeleted: Unit,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: Unit, includeParent: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: Unit, includeParent: Boolean, includeChildren: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: Unit, includeParent: Boolean, includeChildren: Boolean, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Boolean,
+      includeChildren: Boolean,
+      includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Boolean,
+      includeChildren: Boolean,
+      includeDeleted: Unit,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: Unit, includeParent: Boolean, includeChildren: Unit, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Boolean,
+      includeChildren: Unit,
+      includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Boolean,
+      includeChildren: Unit,
+      includeDeleted: Unit,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: Unit, includeParent: Unit, includeChildren: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: Unit, includeParent: Unit, includeChildren: Boolean, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Unit,
+      includeChildren: Boolean,
+      includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Unit,
+      includeChildren: Boolean,
+      includeDeleted: Unit,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(project: Unit, includeParent: Unit, includeChildren: Unit, includeDeleted: Boolean): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Unit,
+      includeChildren: Unit,
+      includeDeleted: Boolean,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcBranch]] = js.native
+    def getBranches(
+      project: Unit,
+      includeParent: Unit,
+      includeChildren: Unit,
+      includeDeleted: Unit,
       includeLinks: Boolean
     ): js.Promise[js.Array[TfvcBranch]] = js.native
     
@@ -265,13 +205,13 @@ object tfvcApiMod {
     ): js.Promise[TfvcChangeset] = js.native
     
     def getChangesetChanges(): js.Promise[js.Array[TfvcChange]] = js.native
-    def getChangesetChanges(id: js.UndefOr[scala.Nothing], skip: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TfvcChange]] = js.native
-    def getChangesetChanges(id: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TfvcChange]] = js.native
-    def getChangesetChanges(id: js.UndefOr[scala.Nothing], skip: Double, top: Double): js.Promise[js.Array[TfvcChange]] = js.native
     def getChangesetChanges(id: Double): js.Promise[js.Array[TfvcChange]] = js.native
-    def getChangesetChanges(id: Double, skip: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TfvcChange]] = js.native
     def getChangesetChanges(id: Double, skip: Double): js.Promise[js.Array[TfvcChange]] = js.native
     def getChangesetChanges(id: Double, skip: Double, top: Double): js.Promise[js.Array[TfvcChange]] = js.native
+    def getChangesetChanges(id: Double, skip: Unit, top: Double): js.Promise[js.Array[TfvcChange]] = js.native
+    def getChangesetChanges(id: Unit, skip: Double): js.Promise[js.Array[TfvcChange]] = js.native
+    def getChangesetChanges(id: Unit, skip: Double, top: Double): js.Promise[js.Array[TfvcChange]] = js.native
+    def getChangesetChanges(id: Unit, skip: Unit, top: Double): js.Promise[js.Array[TfvcChange]] = js.native
     
     def getChangesetWorkItems(): js.Promise[js.Array[AssociatedWorkItem]] = js.native
     def getChangesetWorkItems(id: Double): js.Promise[js.Array[AssociatedWorkItem]] = js.native
@@ -326,154 +266,21 @@ object tfvcApiMod {
     ): js.Promise[ReadableStream] = js.native
     
     def getItems(): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: js.UndefOr[scala.Nothing],
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean,
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: VersionControlRecursionType
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: js.UndefOr[scala.Nothing],
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: Boolean,
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(project: js.UndefOr[scala.Nothing], scopePath: String): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: String,
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: js.UndefOr[scala.Nothing],
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: String,
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: String,
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean,
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(project: js.UndefOr[scala.Nothing], scopePath: String, recursionLevel: VersionControlRecursionType): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: String,
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: js.UndefOr[scala.Nothing],
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: String,
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: js.UndefOr[scala.Nothing],
-      scopePath: String,
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: Boolean,
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(project: String): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: js.UndefOr[scala.Nothing],
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean,
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(project: String, scopePath: js.UndefOr[scala.Nothing], recursionLevel: VersionControlRecursionType): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: js.UndefOr[scala.Nothing],
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: js.UndefOr[scala.Nothing],
-      recursionLevel: VersionControlRecursionType,
-      includeLinks: Boolean,
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(project: String, scopePath: String): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: String, scopePath: String, recursionLevel: Unit, includeLinks: Boolean): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(
       project: String,
       scopePath: String,
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: js.UndefOr[scala.Nothing],
+      recursionLevel: Unit,
+      includeLinks: Boolean,
       versionDescriptor: TfvcVersionDescriptor
     ): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(
       project: String,
       scopePath: String,
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: String,
-      recursionLevel: js.UndefOr[scala.Nothing],
-      includeLinks: Boolean,
+      recursionLevel: Unit,
+      includeLinks: Unit,
       versionDescriptor: TfvcVersionDescriptor
     ): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(project: String, scopePath: String, recursionLevel: VersionControlRecursionType): js.Promise[js.Array[TfvcItem]] = js.native
@@ -481,13 +288,6 @@ object tfvcApiMod {
       project: String,
       scopePath: String,
       recursionLevel: VersionControlRecursionType,
-      includeLinks: js.UndefOr[scala.Nothing],
-      versionDescriptor: TfvcVersionDescriptor
-    ): js.Promise[js.Array[TfvcItem]] = js.native
-    def getItems(
-      project: String,
-      scopePath: String,
-      recursionLevel: VersionControlRecursionType,
       includeLinks: Boolean
     ): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(
@@ -495,6 +295,117 @@ object tfvcApiMod {
       scopePath: String,
       recursionLevel: VersionControlRecursionType,
       includeLinks: Boolean,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: String,
+      scopePath: String,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Unit,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: String, scopePath: Unit, recursionLevel: Unit, includeLinks: Boolean): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: String,
+      scopePath: Unit,
+      recursionLevel: Unit,
+      includeLinks: Boolean,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: String,
+      scopePath: Unit,
+      recursionLevel: Unit,
+      includeLinks: Unit,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: String, scopePath: Unit, recursionLevel: VersionControlRecursionType): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: String,
+      scopePath: Unit,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: String,
+      scopePath: Unit,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Boolean,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: String,
+      scopePath: Unit,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Unit,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: Unit, scopePath: String): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: Unit, scopePath: String, recursionLevel: Unit, includeLinks: Boolean): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: String,
+      recursionLevel: Unit,
+      includeLinks: Boolean,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: String,
+      recursionLevel: Unit,
+      includeLinks: Unit,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: Unit, scopePath: String, recursionLevel: VersionControlRecursionType): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: String,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Boolean
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: String,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Boolean,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: String,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Unit,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: Unit, scopePath: Unit, recursionLevel: Unit, includeLinks: Boolean): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: Unit,
+      recursionLevel: Unit,
+      includeLinks: Boolean,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: Unit,
+      recursionLevel: Unit,
+      includeLinks: Unit,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: Unit, scopePath: Unit, recursionLevel: VersionControlRecursionType): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(project: Unit, scopePath: Unit, recursionLevel: VersionControlRecursionType, includeLinks: Boolean): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: Unit,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Boolean,
+      versionDescriptor: TfvcVersionDescriptor
+    ): js.Promise[js.Array[TfvcItem]] = js.native
+    def getItems(
+      project: Unit,
+      scopePath: Unit,
+      recursionLevel: VersionControlRecursionType,
+      includeLinks: Unit,
       versionDescriptor: TfvcVersionDescriptor
     ): js.Promise[js.Array[TfvcItem]] = js.native
     
@@ -508,41 +419,36 @@ object tfvcApiMod {
     def getLabel(labelId: String, requestData: TfvcLabelRequestData, project: String): js.Promise[TfvcLabel] = js.native
     
     def getLabelItems(labelId: String): js.Promise[js.Array[TfvcItem]] = js.native
-    def getLabelItems(labelId: String, top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TfvcItem]] = js.native
     def getLabelItems(labelId: String, top: Double): js.Promise[js.Array[TfvcItem]] = js.native
     def getLabelItems(labelId: String, top: Double, skip: Double): js.Promise[js.Array[TfvcItem]] = js.native
+    def getLabelItems(labelId: String, top: Unit, skip: Double): js.Promise[js.Array[TfvcItem]] = js.native
     
     def getLabels(requestData: TfvcLabelRequestData): js.Promise[js.Array[TfvcLabelRef]] = js.native
-    def getLabels(
-      requestData: TfvcLabelRequestData,
-      project: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      skip: Double
-    ): js.Promise[js.Array[TfvcLabelRef]] = js.native
-    def getLabels(requestData: TfvcLabelRequestData, project: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
-    def getLabels(requestData: TfvcLabelRequestData, project: js.UndefOr[scala.Nothing], top: Double, skip: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
     def getLabels(requestData: TfvcLabelRequestData, project: String): js.Promise[js.Array[TfvcLabelRef]] = js.native
-    def getLabels(requestData: TfvcLabelRequestData, project: String, top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
     def getLabels(requestData: TfvcLabelRequestData, project: String, top: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
     def getLabels(requestData: TfvcLabelRequestData, project: String, top: Double, skip: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
+    def getLabels(requestData: TfvcLabelRequestData, project: String, top: Unit, skip: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
+    def getLabels(requestData: TfvcLabelRequestData, project: Unit, top: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
+    def getLabels(requestData: TfvcLabelRequestData, project: Unit, top: Double, skip: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
+    def getLabels(requestData: TfvcLabelRequestData, project: Unit, top: Unit, skip: Double): js.Promise[js.Array[TfvcLabelRef]] = js.native
     
     def getShelveset(shelvesetId: String): js.Promise[TfvcShelveset] = js.native
     def getShelveset(shelvesetId: String, requestData: TfvcShelvesetRequestData): js.Promise[TfvcShelveset] = js.native
     
     def getShelvesetChanges(shelvesetId: String): js.Promise[js.Array[TfvcChange]] = js.native
-    def getShelvesetChanges(shelvesetId: String, top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TfvcChange]] = js.native
     def getShelvesetChanges(shelvesetId: String, top: Double): js.Promise[js.Array[TfvcChange]] = js.native
     def getShelvesetChanges(shelvesetId: String, top: Double, skip: Double): js.Promise[js.Array[TfvcChange]] = js.native
+    def getShelvesetChanges(shelvesetId: String, top: Unit, skip: Double): js.Promise[js.Array[TfvcChange]] = js.native
     
     def getShelvesetWorkItems(shelvesetId: String): js.Promise[js.Array[AssociatedWorkItem]] = js.native
     
     def getShelvesets(): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
-    def getShelvesets(requestData: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
-    def getShelvesets(requestData: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
-    def getShelvesets(requestData: js.UndefOr[scala.Nothing], top: Double, skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
+    def getShelvesets(requestData: Unit, top: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
+    def getShelvesets(requestData: Unit, top: Double, skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
+    def getShelvesets(requestData: Unit, top: Unit, skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
     def getShelvesets(requestData: TfvcShelvesetRequestData): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
-    def getShelvesets(requestData: TfvcShelvesetRequestData, top: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
     def getShelvesets(requestData: TfvcShelvesetRequestData, top: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
     def getShelvesets(requestData: TfvcShelvesetRequestData, top: Double, skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
+    def getShelvesets(requestData: TfvcShelvesetRequestData, top: Unit, skip: Double): js.Promise[js.Array[TfvcShelvesetRef]] = js.native
   }
 }

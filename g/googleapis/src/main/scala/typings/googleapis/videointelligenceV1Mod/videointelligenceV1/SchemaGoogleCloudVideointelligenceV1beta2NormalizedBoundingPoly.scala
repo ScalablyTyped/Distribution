@@ -2,7 +2,6 @@ package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,13 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * will still be (0, 1, 2, 3). Note that values can be less than 0, or greater
   * than 1 due to trignometric calculations for location of the box.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly extends StObject {
   
   /**
     * Normalized vertices of the bounding polygon.
     */
-  var vertices: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2NormalizedVertex]] = js.native
+  var vertices: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2NormalizedVertex]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly {
   

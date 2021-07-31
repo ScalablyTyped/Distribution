@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Regiontargethttpsproxies")
@@ -33,7 +32,7 @@ class ResourceRegiontargethttpsproxies protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegiontargethttpsproxiesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceRegiontargethttpsproxiesDelete,
@@ -69,7 +68,7 @@ class ResourceRegiontargethttpsproxies protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTargetHttpsProxy] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetHttpsProxy]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetHttpsProxy] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetHttpsProxy] = js.native
   def get(params: ParamsResourceRegiontargethttpsproxiesGet): GaxiosPromise[SchemaTargetHttpsProxy] = js.native
   def get(
     params: ParamsResourceRegiontargethttpsproxiesGet,
@@ -105,7 +104,7 @@ class ResourceRegiontargethttpsproxies protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegiontargethttpsproxiesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(
     params: ParamsResourceRegiontargethttpsproxiesInsert,
@@ -143,7 +142,7 @@ class ResourceRegiontargethttpsproxies protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTargetHttpsProxyList] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetHttpsProxyList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetHttpsProxyList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetHttpsProxyList] = js.native
   def list(params: ParamsResourceRegiontargethttpsproxiesList): GaxiosPromise[SchemaTargetHttpsProxyList] = js.native
   def list(
     params: ParamsResourceRegiontargethttpsproxiesList,
@@ -179,7 +178,7 @@ class ResourceRegiontargethttpsproxies protected () extends StObject {
     */
   def setSslCertificates(): GaxiosPromise[SchemaOperation] = js.native
   def setSslCertificates(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setSslCertificates(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setSslCertificates(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setSslCertificates(params: ParamsResourceRegiontargethttpsproxiesSetsslcertificates): GaxiosPromise[SchemaOperation] = js.native
   def setSslCertificates(
     params: ParamsResourceRegiontargethttpsproxiesSetsslcertificates,
@@ -215,7 +214,7 @@ class ResourceRegiontargethttpsproxies protected () extends StObject {
     */
   def setUrlMap(): GaxiosPromise[SchemaOperation] = js.native
   def setUrlMap(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setUrlMap(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setUrlMap(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setUrlMap(params: ParamsResourceRegiontargethttpsproxiesSeturlmap): GaxiosPromise[SchemaOperation] = js.native
   def setUrlMap(
     params: ParamsResourceRegiontargethttpsproxiesSeturlmap,
@@ -250,7 +249,7 @@ class ResourceRegiontargethttpsproxies protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRegiontargethttpsproxiesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRegiontargethttpsproxiesTestiampermissions,

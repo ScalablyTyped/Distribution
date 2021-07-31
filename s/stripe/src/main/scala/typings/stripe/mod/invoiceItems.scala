@@ -8,65 +8,65 @@ import typings.stripe.mod.subscriptions.ISubscription
 import typings.stripe.stripeStrings.invoiceitem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invoiceItems {
   
-  @js.native
-  trait InvoiceItem extends IResourceObject {
+  trait InvoiceItem
+    extends StObject
+       with IResourceObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var currency: String = js.native
+    var currency: String
     
-    var customer: String | ICustomer = js.native
+    var customer: String | ICustomer
     
-    var date: Double = js.native
+    var date: Double
     
-    var description: String = js.native
+    var description: String
     
     /**
       * If true, discounts will apply to this invoice item. Always false for prorations.
       */
-    var discountable: Boolean = js.native
+    var discountable: Boolean
     
     /**
       * If null, the invoice item is pending and will be included in the upcoming invoice. [Expandable]
       */
-    var invoice: String | IInvoice | Null = js.native
+    var invoice: String | IInvoice | Null
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is "invoiceitem"
       */
     @JSName("object")
-    var object_InvoiceItem: invoiceitem = js.native
+    var object_InvoiceItem: invoiceitem
     
-    var period: IPeriod = js.native
+    var period: IPeriod
     
     /**
       * If the invoice item is a proration, the plan of the subscription that the proration was computed for.
       */
-    var plan: IPlan = js.native
+    var plan: IPlan
     
     /**
       * Whether or not the invoice item was created automatically as a proration adjustment when the customer switched plans
       */
-    var proration: Boolean = js.native
+    var proration: Boolean
     
     /**
       * If the invoice item is a proration, the quantity of the subscription that the proration was computed for.
       */
-    var quantity: Double = js.native
+    var quantity: Double
     
     /**
       * The subscription that this invoice item has been created for, if any.
       */
-    var subscription: String | ISubscription = js.native
+    var subscription: String | ISubscription
   }
   object InvoiceItem {
     
@@ -81,15 +81,14 @@ object invoiceItems {
       id: String,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: invoiceitem,
       period: IPeriod,
       plan: IPlan,
       proration: Boolean,
       quantity: Double,
       subscription: String | ISubscription
     ): InvoiceItem = {
-      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], discountable = discountable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], proration = proration.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], discountable = discountable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], proration = proration.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], invoice = null)
+      __obj.updateDynamic("object")("invoiceitem")
       __obj.asInstanceOf[InvoiceItem]
     }
     
@@ -146,61 +145,62 @@ object invoiceItems {
     }
   }
   
-  @js.native
-  trait InvoiceItemCreationOptions extends IDataOptionsWithMetadata {
+  trait InvoiceItemCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * The integer amount in cents of the charge to be applied to the upcoming invoice. If you want to apply a credit to the customer’s
       * account, pass a negative amount.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * 3-letter ISO code for currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The ID of the customer who will be billed when this invoice item is billed.
       */
-    var customer: String = js.native
+    var customer: String
     
     /**
       * An arbitrary string which you can attach to the invoice item. The description is displayed in the invoice for easy tracking.
       * This can be unset by updating the value to null and then saving.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Controls whether discounts apply to this invoice item. Defaults to false for prorations or negative invoice items, and true for
       * all other invoice items.
       */
-    var discountable: js.UndefOr[Boolean] = js.native
+    var discountable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The ID of an existing invoice to add this invoice item to. When left blank, the invoice item will be added to the next upcoming
       * scheduled invoice. Use this when adding invoice items in response to an invoice.created webhook. You cannot add an invoice item
       * to an invoice that has already been paid, attempted or closed.
       */
-    var invoice: js.UndefOr[String] = js.native
+    var invoice: js.UndefOr[String] = js.undefined
     
     /**
       * Non-negative integer. The quantity of units for the invoice item.
       */
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
     /**
       * The ID of a subscription to add this invoice item to. When left blank, the invoice item will be be added to the next upcoming
       * scheduled invoice. When set, scheduled invoices for subscriptions other than the specified subscription will ignore the invoice
       * item. Use this when you want to express that an invoice item has been accrued within the context of a particular subscription.
       */
-    var subscription: js.UndefOr[String] = js.native
+    var subscription: js.UndefOr[String] = js.undefined
     
     /**
       * The integer unit amount in cents of the charge to be applied to the upcoming invoice. This unit_amount will be multiplied by
       * the quantity to get the full amount. If you want to apply a credit to the customer’s account, pass a negative unit_amount.
       */
-    var unit_amount: js.UndefOr[Double] = js.native
+    var unit_amount: js.UndefOr[Double] = js.undefined
   }
   object InvoiceItemCreationOptions {
     
@@ -263,24 +263,25 @@ object invoiceItems {
     }
   }
   
-  @js.native
-  trait InvoiceItemListOptions extends IListOptionsCreated {
+  trait InvoiceItemListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * The identifier of the customer whose invoice items to return. If none is provided, all invoice items will be returned.
       */
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * Only return invoice items belonging to this invoice. If none is provided, all invoice items will be returned. If specifying an invoice, no customer identifier is needed.
       */
-    var invoice: js.UndefOr[String] = js.native
+    var invoice: js.UndefOr[String] = js.undefined
     
     /**
       * Set to true to only show pending invoice items, which are not yet attached to any invoices. Set to false to only show
       * invoice items already attached to invoices. If unspecified, no filter is applied.
       */
-    var pending: js.UndefOr[Boolean] = js.native
+    var pending: js.UndefOr[Boolean] = js.undefined
   }
   object InvoiceItemListOptions {
     
@@ -313,26 +314,27 @@ object invoiceItems {
     }
   }
   
-  @js.native
-  trait InvoiceItemUpdateOptions extends IDataOptionsWithMetadata {
+  trait InvoiceItemUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * The integer amount in cents/pence of the charge to be applied to the upcoming invoice. If you want to apply a credit to the customer's
       * account, pass a negative amount.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * An arbitrary string which you can attach to the invoice item. The description is displayed in the invoice for easy tracking. This can be
       * unset by updating the value to null and then saving.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Controls whether discounts apply to this invoice item. Defaults to false for prorations or negative invoice items, and true for all other
       * invoice items. Cannot be set to true for prorations.
       */
-    var discountable: js.UndefOr[Boolean] = js.native
+    var discountable: js.UndefOr[Boolean] = js.undefined
   }
   object InvoiceItemUpdateOptions {
     

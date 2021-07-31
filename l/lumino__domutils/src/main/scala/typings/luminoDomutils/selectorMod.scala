@@ -3,12 +3,15 @@ package typings.luminoDomutils
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorMod {
   
   object Selector {
+    
+    @JSImport("@lumino/domutils/types/selector", "Selector")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Calculate the specificity of a single CSS selector.
@@ -35,9 +38,8 @@ object selectorMod {
       * The computed result is cached, so subsequent calculations for the
       * same selector are extremely fast.
       */
-    @JSImport("@lumino/domutils/types/selector", "Selector.calculateSpecificity")
-    @js.native
-    def calculateSpecificity(selector: String): Double = js.native
+    @scala.inline
+    def calculateSpecificity(selector: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateSpecificity")(selector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Test whether a selector is a valid CSS selector.
@@ -50,9 +52,8 @@ object selectorMod {
       * The computed result is cached, so subsequent tests for the same
       * selector are extremely fast.
       */
-    @JSImport("@lumino/domutils/types/selector", "Selector.isValid")
-    @js.native
-    def isValid(selector: String): Boolean = js.native
+    @scala.inline
+    def isValid(selector: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Test whether an element matches a CSS selector.
@@ -67,8 +68,7 @@ object selectorMod {
       * This function uses the builtin browser capabilities when possible,
       * falling back onto a document query otherwise.
       */
-    @JSImport("@lumino/domutils/types/selector", "Selector.matches")
-    @js.native
-    def matches(element: Element, selector: String): Boolean = js.native
+    @scala.inline
+    def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

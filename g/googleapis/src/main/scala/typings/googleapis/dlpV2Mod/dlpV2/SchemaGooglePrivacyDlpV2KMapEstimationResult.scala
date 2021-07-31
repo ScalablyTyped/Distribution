@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of the reidentifiability analysis. Note that these results are an
   * estimation, not exact values.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2KMapEstimationResult extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2KMapEstimationResult extends StObject {
     * mean that there are no record with an estimated anonymity of 4, 5, or
     * larger than 10.
     */
-  var kMapEstimationHistogram: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket]] = js.native
+  var kMapEstimationHistogram: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KMapEstimationResult {
   

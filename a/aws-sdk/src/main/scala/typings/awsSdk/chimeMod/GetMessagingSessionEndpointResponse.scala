@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMessagingSessionEndpointResponse extends StObject {
   
   /**
     * The endpoint returned in the response.
     */
-  var Endpoint: js.UndefOr[MessagingSessionEndpoint] = js.native
+  var Endpoint: js.UndefOr[MessagingSessionEndpoint] = js.undefined
 }
 object GetMessagingSessionEndpointResponse {
   

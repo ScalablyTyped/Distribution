@@ -1,32 +1,35 @@
 package typings.flux
 
-import typings.flux.fluxStoreMod.^
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluxContainerMod {
   
-  @JSImport("flux/lib/FluxContainer", "create")
+  @JSImport("flux/lib/FluxContainer", JSImport.Namespace)
   @js.native
-  def create[TProps](base: Component[TProps, _, _]): Component[TProps, _, _] = js.native
-  @JSImport("flux/lib/FluxContainer", "create")
-  @js.native
-  def create[TProps](base: Component[TProps, _, _], options: RealOptions): Component[TProps, _, _] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("flux/lib/FluxContainer", "createFunctional")
-  @js.native
+  @scala.inline
+  def create[TProps](base: Component[TProps, js.Any, js.Any]): Component[TProps, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, js.Any, js.Any]]
+  @scala.inline
+  def create[TProps](base: Component[TProps, js.Any, js.Any], options: RealOptions): Component[TProps, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, js.Any, js.Any]]
+  @scala.inline
+  def create[TProps, TState, TContext, TStatic](base: (Component[TProps, TState, TContext]) & TStatic): (Component[TProps, TState, TContext]) & TStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[(Component[TProps, TState, TContext]) & TStatic]
+  @scala.inline
+  def create[TProps, TState, TContext, TStatic](base: (Component[TProps, TState, TContext]) & TStatic, options: RealOptions): (Component[TProps, TState, TContext]) & TStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(Component[TProps, TState, TContext]) & TStatic]
+  
+  @scala.inline
   def createFunctional[TProps, TState](
     viewFn: js.Function1[/* props */ TState, ReactElement],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 
-      js.Array[^[_]]
+      js.Array[typings.flux.fluxStoreMod.^[js.Any]]
     ],
     calculateState: js.Function3[
       /* prevState */ js.UndefOr[TState], 
@@ -34,15 +37,14 @@ object fluxContainerMod {
       /* maybeContext */ js.UndefOr[js.Any], 
       TState
     ]
-  ): Component[TProps, TState, _] = js.native
-  @JSImport("flux/lib/FluxContainer", "createFunctional")
-  @js.native
+  ): Component[TProps, TState, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctional")(viewFn.asInstanceOf[js.Any], getStores.asInstanceOf[js.Any], calculateState.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, js.Any]]
+  @scala.inline
   def createFunctional[TProps, TState](
     viewFn: js.Function1[/* props */ TState, ReactElement],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 
-      js.Array[^[_]]
+      js.Array[typings.flux.fluxStoreMod.^[js.Any]]
     ],
     calculateState: js.Function3[
       /* prevState */ js.UndefOr[TState], 
@@ -51,28 +53,19 @@ object fluxContainerMod {
       TState
     ],
     options: RealOptions
-  ): Component[TProps, TState, _] = js.native
+  ): Component[TProps, TState, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctional")(viewFn.asInstanceOf[js.Any], getStores.asInstanceOf[js.Any], calculateState.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, js.Any]]
   
-  @JSImport("flux/lib/FluxContainer", "create")
-  @js.native
-  def create_TPropsTState[TProps, TState](base: Component[TProps, TState, _]): Component[TProps, TState, _] = js.native
-  @JSImport("flux/lib/FluxContainer", "create")
-  @js.native
-  def create_TPropsTState[TProps, TState](base: Component[TProps, TState, _], options: RealOptions): Component[TProps, TState, _] = js.native
-  @JSImport("flux/lib/FluxContainer", "create")
-  @js.native
-  def create_TPropsTStateTContext[TProps, TState, TContext](base: Component[TProps, TState, TContext]): Component[TProps, TState, TContext] = js.native
-  @JSImport("flux/lib/FluxContainer", "create")
-  @js.native
-  def create_TPropsTStateTContext[TProps, TState, TContext](base: Component[TProps, TState, TContext], options: RealOptions): Component[TProps, TState, TContext] = js.native
-  @JSImport("flux/lib/FluxContainer", "create")
-  @js.native
-  def create_TPropsTStateTContextTStatic_Intersection[TProps, TState, TContext, TStatic](base: (Component[TProps, TState, TContext]) with TStatic): (Component[TProps, TState, TContext]) with TStatic = js.native
-  @JSImport("flux/lib/FluxContainer", "create")
-  @js.native
-  def create_TPropsTStateTContextTStatic_Intersection[TProps, TState, TContext, TStatic](base: (Component[TProps, TState, TContext]) with TStatic, options: RealOptions): (Component[TProps, TState, TContext]) with TStatic = js.native
+  @scala.inline
+  def create_TPropsTState[TProps, TState](base: Component[TProps, TState, js.Any]): Component[TProps, TState, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, TState, js.Any]]
+  @scala.inline
+  def create_TPropsTState[TProps, TState](base: Component[TProps, TState, js.Any], options: RealOptions): Component[TProps, TState, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, js.Any]]
   
-  type Component[TProps, TState, TContext] = ComponentConstructor[TProps] with (ComponentStatic[TProps, TState, TContext])
+  @scala.inline
+  def create_TPropsTStateTContext[TProps, TState, TContext](base: Component[TProps, TState, TContext]): Component[TProps, TState, TContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, TState, TContext]]
+  @scala.inline
+  def create_TPropsTStateTContext[TProps, TState, TContext](base: Component[TProps, TState, TContext], options: RealOptions): Component[TProps, TState, TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, TContext]]
+  
+  type Component[TProps, TState, TContext] = ComponentConstructor[TProps] & (ComponentStatic[TProps, TState, TContext])
   
   type ComponentConstructor[TProps] = (ComponentClass[TProps, ComponentState]) | StatelessComponent[TProps]
   
@@ -82,25 +75,24 @@ object fluxContainerMod {
     def calculateState(prevState: TState): TState = js.native
     def calculateState(prevState: TState, maybeProps: TProps): TState = js.native
     def calculateState(prevState: TState, maybeProps: TProps, maybeContext: TContext): TState = js.native
-    def calculateState(prevState: TState, maybeProps: js.UndefOr[scala.Nothing], maybeContext: TContext): TState = js.native
+    def calculateState(prevState: TState, maybeProps: Unit, maybeContext: TContext): TState = js.native
     
     def getStores(): StoresList = js.native
     def getStores(maybeProps: TProps): StoresList = js.native
     def getStores(maybeProps: TProps, maybeContext: TContext): StoresList = js.native
-    def getStores(maybeProps: js.UndefOr[scala.Nothing], maybeContext: TContext): StoresList = js.native
+    def getStores(maybeProps: Unit, maybeContext: TContext): StoresList = js.native
   }
   
-  @js.native
   trait RealOptions extends StObject {
     
     /** @default true */
-    var pure: js.UndefOr[Boolean] = js.native
+    var pure: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var withContext: js.UndefOr[Boolean] = js.native
+    var withContext: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var withProps: js.UndefOr[Boolean] = js.native
+    var withProps: js.UndefOr[Boolean] = js.undefined
   }
   object RealOptions {
     
@@ -133,5 +125,5 @@ object fluxContainerMod {
     }
   }
   
-  type StoresList = js.Array[^[js.Any]]
+  type StoresList = js.Array[typings.flux.fluxStoreMod.^[js.Any]]
 }

@@ -3,35 +3,33 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowTask extends StObject {
   
-  var alwaysRun: Boolean = js.native
+  var alwaysRun: Boolean
   
-  var condition: String = js.native
+  var condition: String
   
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
-  var definitionType: String = js.native
+  var definitionType: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var inputs: StringDictionary[String] = js.native
+  var inputs: StringDictionary[String]
   
-  var name: String = js.native
+  var name: String
   
-  var overrideInputs: StringDictionary[String] = js.native
+  var overrideInputs: StringDictionary[String]
   
-  var refName: String = js.native
+  var refName: String
   
-  var taskId: String = js.native
+  var taskId: String
   
-  var timeoutInMinutes: Double = js.native
+  var timeoutInMinutes: Double
   
-  var version: String = js.native
+  var version: String
 }
 object WorkflowTask {
   

@@ -2,19 +2,17 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var config: String = js.native
+  var config: String
   
-  var description: String = js.native
+  var description: String
   
-  var fail: String = js.native
+  var fail: String
   
-  var pass: String = js.native
+  var pass: String
 }
 object Config {
   

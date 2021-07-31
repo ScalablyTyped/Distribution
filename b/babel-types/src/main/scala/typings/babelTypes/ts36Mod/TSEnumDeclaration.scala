@@ -2,27 +2,26 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSEnumDeclaration
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with Statement {
   
-  var const: Boolean | Null = js.native
+  var const: Boolean | Null
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var initializer: Expression | Null = js.native
+  var initializer: Expression | Null
   
-  var members: js.Array[TSEnumMember] = js.native
+  var members: js.Array[TSEnumMember]
   
   @JSName("type")
-  var type_TSEnumDeclaration: typings.babelTypes.babelTypesStrings.TSEnumDeclaration = js.native
+  var type_TSEnumDeclaration: typings.babelTypes.babelTypesStrings.TSEnumDeclaration
 }
 object TSEnumDeclaration {
   

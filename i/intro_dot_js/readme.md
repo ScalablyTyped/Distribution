@@ -4,19 +4,19 @@
 Typings are for version 2.4
 
 ## Library description:
-Better introductions for websites and features with a step-by-step guide for your projects
+Lightweight, user-friendly onboarding tour library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | intro.js |
-| Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 27 |
-| # downloads        | 1462617 |
+| Keywords           | onboarding, tour, introjs, intro, guide, walkthrough |
+| # releases         | 5 |
+| # dependents       | 34 |
+| # downloads        | 1611939 |
 | # stars            | 11 |
 
 ## Links
-- [Homepage](http://introjs.com)
+- [Homepage](https://introjs.com)
 - [Bugs](https://github.com/usablica/intro.js/issues)
 - [Repository](https://github.com/usablica/intro.js)
 - [Npm](https://www.npmjs.com/package/intro.js)

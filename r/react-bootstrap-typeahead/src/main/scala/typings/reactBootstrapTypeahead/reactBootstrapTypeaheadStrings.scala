@@ -8,7 +8,6 @@ import typings.reactBootstrapTypeahead.mod.TypeaheadInputPropKeys
 import typings.reactBootstrapTypeahead.mod.TypeaheadMenuPropsPick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBootstrapTypeaheadStrings {
@@ -19,7 +18,9 @@ object reactBootstrapTypeaheadStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait activeIndex extends MenuItemContextKeys
+  sealed trait activeIndex
+    extends StObject
+       with MenuItemContextKeys
   @scala.inline
   def activeIndex: activeIndex = "activeIndex".asInstanceOf[activeIndex]
   
@@ -59,7 +60,9 @@ object reactBootstrapTypeaheadStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bsSize extends TypeaheadInputPropKeys
+  sealed trait bsSize
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def bsSize: bsSize = "bsSize".asInstanceOf[bsSize]
   
@@ -99,7 +102,9 @@ object reactBootstrapTypeaheadStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait disabled extends TypeaheadInputPropKeys
+  sealed trait disabled
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
@@ -144,7 +149,9 @@ object reactBootstrapTypeaheadStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait hintText extends HintedInputContextKeys
+  sealed trait hintText
+    extends StObject
+       with HintedInputContextKeys
   @scala.inline
   def hintText: hintText = "hintText".asInstanceOf[hintText]
   
@@ -159,7 +166,9 @@ object reactBootstrapTypeaheadStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait initialItem extends HintedInputContextKeys
+  sealed trait initialItem
+    extends StObject
+       with HintedInputContextKeys
   @scala.inline
   def initialItem: initialItem = "initialItem".asInstanceOf[initialItem]
   
@@ -174,39 +183,52 @@ object reactBootstrapTypeaheadStrings {
   def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait inputProps extends TypeaheadInputPropKeys
+  sealed trait inputProps
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def inputProps: inputProps = "inputProps".asInstanceOf[inputProps]
   
   @js.native
-  sealed trait isOnlyResult extends MenuItemContextKeys
+  sealed trait isOnlyResult
+    extends StObject
+       with MenuItemContextKeys
   @scala.inline
   def isOnlyResult: isOnlyResult = "isOnlyResult".asInstanceOf[isOnlyResult]
   
   @js.native
-  sealed trait justify extends TypeaheadAlign
+  sealed trait justify
+    extends StObject
+       with TypeaheadAlign
   @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait labelKey
-    extends TypeaheadInputPropKeys
+    extends StObject
+       with TypeaheadInputPropKeys
        with TypeaheadMenuPropsPick
   @scala.inline
   def labelKey: labelKey = "labelKey".asInstanceOf[labelKey]
   
   @js.native
-  sealed trait large extends TypeaheadBsSizes
+  sealed trait large
+    extends StObject
+       with TypeaheadBsSizes
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait left extends TypeaheadAlign
+  sealed trait left
+    extends StObject
+       with TypeaheadAlign
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lg extends TypeaheadBsSizes
+  sealed trait lg
+    extends StObject
+       with TypeaheadBsSizes
   @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
   
@@ -251,12 +273,16 @@ object reactBootstrapTypeaheadStrings {
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait multiple extends TypeaheadInputPropKeys
+  sealed trait multiple
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
-  sealed trait newSelectionPrefix extends TypeaheadMenuPropsPick
+  sealed trait newSelectionPrefix
+    extends StObject
+       with TypeaheadMenuPropsPick
   @scala.inline
   def newSelectionPrefix: newSelectionPrefix = "newSelectionPrefix".asInstanceOf[newSelectionPrefix]
   
@@ -291,47 +317,65 @@ object reactBootstrapTypeaheadStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onActiveItemChange extends MenuItemContextKeys
+  sealed trait onActiveItemChange
+    extends StObject
+       with MenuItemContextKeys
   @scala.inline
   def onActiveItemChange: onActiveItemChange = "onActiveItemChange".asInstanceOf[onActiveItemChange]
   
   @js.native
-  sealed trait onAdd extends HintedInputContextKeys
+  sealed trait onAdd
+    extends StObject
+       with HintedInputContextKeys
   @scala.inline
   def onAdd: onAdd = "onAdd".asInstanceOf[onAdd]
   
   @js.native
-  sealed trait onBlur extends TypeaheadInputPropKeys
+  sealed trait onBlur
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
-  sealed trait onChange extends TypeaheadInputPropKeys
+  sealed trait onChange
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
-  sealed trait onFocus extends TypeaheadInputPropKeys
+  sealed trait onFocus
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   
   @js.native
-  sealed trait onInitialItemChange extends MenuItemContextKeys
+  sealed trait onInitialItemChange
+    extends StObject
+       with MenuItemContextKeys
   @scala.inline
   def onInitialItemChange: onInitialItemChange = "onInitialItemChange".asInstanceOf[onInitialItemChange]
   
   @js.native
-  sealed trait onKeyDown extends TypeaheadInputPropKeys
+  sealed trait onKeyDown
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
   
   @js.native
-  sealed trait onMenuItemClick extends MenuItemContextKeys
+  sealed trait onMenuItemClick
+    extends StObject
+       with MenuItemContextKeys
   @scala.inline
   def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
   
   @js.native
-  sealed trait options extends TypeaheadMenuPropsPick
+  sealed trait options
+    extends StObject
+       with TypeaheadMenuPropsPick
   @scala.inline
   def options: options = "options".asInstanceOf[options]
   
@@ -346,7 +390,9 @@ object reactBootstrapTypeaheadStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait placeholder extends TypeaheadInputPropKeys
+  sealed trait placeholder
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   
@@ -381,17 +427,23 @@ object reactBootstrapTypeaheadStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait renderMenuItemChildren extends TypeaheadMenuPropsPick
+  sealed trait renderMenuItemChildren
+    extends StObject
+       with TypeaheadMenuPropsPick
   @scala.inline
   def renderMenuItemChildren: renderMenuItemChildren = "renderMenuItemChildren".asInstanceOf[renderMenuItemChildren]
   
   @js.native
-  sealed trait renderToken extends TypeaheadInputPropKeys
+  sealed trait renderToken
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def renderToken: renderToken = "renderToken".asInstanceOf[renderToken]
   
   @js.native
-  sealed trait right extends TypeaheadAlign
+  sealed trait right
+    extends StObject
+       with TypeaheadAlign
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -401,12 +453,16 @@ object reactBootstrapTypeaheadStrings {
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait selectHintOnEnter extends HintedInputContextKeys
+  sealed trait selectHintOnEnter
+    extends StObject
+       with HintedInputContextKeys
   @scala.inline
   def selectHintOnEnter: selectHintOnEnter = "selectHintOnEnter".asInstanceOf[selectHintOnEnter]
   
   @js.native
-  sealed trait selected extends TypeaheadInputPropKeys
+  sealed trait selected
+    extends StObject
+       with TypeaheadInputPropKeys
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   
@@ -416,12 +472,16 @@ object reactBootstrapTypeaheadStrings {
   def send: send = "send".asInstanceOf[send]
   
   @js.native
-  sealed trait sm extends TypeaheadBsSizes
+  sealed trait sm
+    extends StObject
+       with TypeaheadBsSizes
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
-  sealed trait small extends TypeaheadBsSizes
+  sealed trait small
+    extends StObject
+       with TypeaheadBsSizes
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   

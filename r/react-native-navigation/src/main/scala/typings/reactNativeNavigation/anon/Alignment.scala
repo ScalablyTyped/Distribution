@@ -4,31 +4,29 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.center
 import typings.reactNativeNavigation.reactNativeNavigationStrings.fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alignment extends StObject {
   
   /**
     * Set component alignment
     */
-  var alignment: js.UndefOr[center | fill] = js.native
+  var alignment: js.UndefOr[center | fill] = js.undefined
   
   /**
     * Component reference id, Auto generated if empty
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of your component
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Properties to pass down to the component
     */
-  var passProps: js.UndefOr[js.Object] = js.native
+  var passProps: js.UndefOr[js.Object] = js.undefined
 }
 object Alignment {
   

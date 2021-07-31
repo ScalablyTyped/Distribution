@@ -6,22 +6,21 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unaryUtilsMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/unary_utils", "unaryKernelFunc")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/unary_utils", JSImport.Namespace)
   @js.native
-  def unaryKernelFunc(name: String, op: SimpleUnaryOperation): KernelFunc = js.native
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/unary_utils", "unaryKernelFunc")
-  @js.native
-  def unaryKernelFunc(name: String, op: SimpleUnaryOperation, dtype: DataType): KernelFunc = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/unary_utils", "unaryKernelFuncFromImpl")
-  @js.native
-  def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl): KernelFunc = js.native
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/unary_utils", "unaryKernelFuncFromImpl")
-  @js.native
-  def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl, dtype: DataType): KernelFunc = js.native
+  @scala.inline
+  def unaryKernelFunc(name: String, op: SimpleUnaryOperation): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(name.asInstanceOf[js.Any], op.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  @scala.inline
+  def unaryKernelFunc(name: String, op: SimpleUnaryOperation, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  
+  @scala.inline
+  def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFuncFromImpl")(name.asInstanceOf[js.Any], unaryImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  @scala.inline
+  def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFuncFromImpl")(name.asInstanceOf[js.Any], unaryImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
 }

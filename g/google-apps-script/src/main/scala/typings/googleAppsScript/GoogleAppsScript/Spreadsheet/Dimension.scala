@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait Dimension extends StObject
 object Dimension extends StObject {
   
   @js.native
-  sealed trait COLUMNS extends Dimension
+  sealed trait COLUMNS
+    extends StObject
+       with Dimension
   
   @js.native
-  sealed trait ROWS extends Dimension
+  sealed trait ROWS
+    extends StObject
+       with Dimension
 }

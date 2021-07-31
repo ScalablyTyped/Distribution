@@ -2,21 +2,19 @@ package typings.typedoc.optionsDeclarationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclarationOptionBase extends StObject {
   
-  var help: String = js.native
+  var help: String
   
-  var name: String = js.native
+  var name: String
   
-  var scope: js.UndefOr[ParameterScope] = js.native
+  var scope: js.UndefOr[ParameterScope] = js.undefined
   
-  var short: js.UndefOr[String] = js.native
+  var short: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[ParameterType] = js.native
+  var `type`: js.UndefOr[ParameterType] = js.undefined
 }
 object DeclarationOptionBase {
   

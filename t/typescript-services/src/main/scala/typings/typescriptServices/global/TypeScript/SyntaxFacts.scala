@@ -4,84 +4,68 @@ import typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SyntaxFacts {
   
-  @JSGlobal("TypeScript.SyntaxFacts.getBinaryExpressionFromOperatorToken")
+  @JSGlobal("TypeScript.SyntaxFacts")
   @js.native
-  def getBinaryExpressionFromOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("TypeScript.SyntaxFacts.getOperatorTokenFromBinaryExpression")
-  @js.native
-  def getOperatorTokenFromBinaryExpression(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = js.native
+  @scala.inline
+  def getBinaryExpressionFromOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getBinaryExpressionFromOperatorToken")(tokenKind.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
   
-  @JSGlobal("TypeScript.SyntaxFacts.getPostfixUnaryExpressionFromOperatorToken")
-  @js.native
-  def getPostfixUnaryExpressionFromOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = js.native
+  @scala.inline
+  def getOperatorTokenFromBinaryExpression(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperatorTokenFromBinaryExpression")(tokenKind.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
   
-  @JSGlobal("TypeScript.SyntaxFacts.getPrefixUnaryExpressionFromOperatorToken")
-  @js.native
-  def getPrefixUnaryExpressionFromOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = js.native
+  @scala.inline
+  def getPostfixUnaryExpressionFromOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getPostfixUnaryExpressionFromOperatorToken")(tokenKind.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
   
-  @JSGlobal("TypeScript.SyntaxFacts.getText")
-  @js.native
-  def getText(kind: typings.typescriptServices.TypeScript.SyntaxKind): String = js.native
+  @scala.inline
+  def getPrefixUnaryExpressionFromOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): typings.typescriptServices.TypeScript.SyntaxKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixUnaryExpressionFromOperatorToken")(tokenKind.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
   
-  @JSGlobal("TypeScript.SyntaxFacts.getTokenKind")
-  @js.native
-  def getTokenKind(text: String): typings.typescriptServices.TypeScript.SyntaxKind = js.native
+  @scala.inline
+  def getText(kind: typings.typescriptServices.TypeScript.SyntaxKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isAnyDivideOrRegularExpressionToken")
-  @js.native
-  def isAnyDivideOrRegularExpressionToken(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def getTokenKind(text: String): typings.typescriptServices.TypeScript.SyntaxKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getTokenKind")(text.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isAnyDivideToken")
-  @js.native
-  def isAnyDivideToken(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isAnyDivideOrRegularExpressionToken(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyDivideOrRegularExpressionToken")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isAnyKeyword")
-  @js.native
-  def isAnyKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isAnyDivideToken(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyDivideToken")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isAnyPunctuation")
-  @js.native
-  def isAnyPunctuation(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isAnyKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyKeyword")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isBinaryExpressionOperatorToken")
-  @js.native
-  def isBinaryExpressionOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isAnyPunctuation(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyPunctuation")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isDirectivePrologueElement")
-  @js.native
-  def isDirectivePrologueElement(node: ISyntaxNodeOrToken): Boolean = js.native
+  @scala.inline
+  def isBinaryExpressionOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryExpressionOperatorToken")(tokenKind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isFutureReservedKeyword")
-  @js.native
-  def isFutureReservedKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isDirectivePrologueElement(node: ISyntaxNodeOrToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectivePrologueElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isFutureReservedStrictKeyword")
-  @js.native
-  def isFutureReservedStrictKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isFutureReservedKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFutureReservedKeyword")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isIdentifierNameOrAnyKeyword")
-  @js.native
-  def isIdentifierNameOrAnyKeyword(token: ISyntaxToken): Boolean = js.native
+  @scala.inline
+  def isFutureReservedStrictKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFutureReservedStrictKeyword")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isPrefixUnaryExpressionOperatorToken")
-  @js.native
-  def isPrefixUnaryExpressionOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isIdentifierNameOrAnyKeyword(token: ISyntaxToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierNameOrAnyKeyword")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isStandardKeyword")
-  @js.native
-  def isStandardKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isPrefixUnaryExpressionOperatorToken(tokenKind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixUnaryExpressionOperatorToken")(tokenKind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isTokenKind")
-  @js.native
-  def isTokenKind(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = js.native
+  @scala.inline
+  def isStandardKeyword(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStandardKeyword")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("TypeScript.SyntaxFacts.isUseStrictDirective")
-  @js.native
-  def isUseStrictDirective(node: ISyntaxNodeOrToken): Boolean = js.native
+  @scala.inline
+  def isTokenKind(kind: typings.typescriptServices.TypeScript.SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isUseStrictDirective(node: ISyntaxNodeOrToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUseStrictDirective")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

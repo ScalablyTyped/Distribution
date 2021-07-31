@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shaderLibMod {
@@ -112,14 +111,13 @@ object shaderLibMod {
     def standard_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standard")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Shader extends StObject {
     
-    var fragmentShader: String = js.native
+    var fragmentShader: String
     
-    var uniforms: StringDictionary[IUniform] = js.native
+    var uniforms: StringDictionary[IUniform]
     
-    var vertexShader: String = js.native
+    var vertexShader: String
   }
   object Shader {
     

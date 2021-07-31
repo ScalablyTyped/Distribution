@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WmxSitemap extends StObject {
   
   /** The various content types in the sitemap. */
-  var contents: js.UndefOr[js.Array[WmxSitemapContent]] = js.native
+  var contents: js.UndefOr[js.Array[WmxSitemapContent]] = js.undefined
   
   /** Number of errors in the sitemap. These are issues with the sitemap itself that need to be fixed before it can be processed correctly. */
-  var errors: js.UndefOr[String] = js.native
+  var errors: js.UndefOr[String] = js.undefined
   
   /** If true, the sitemap has not been processed. */
-  var isPending: js.UndefOr[Boolean] = js.native
+  var isPending: js.UndefOr[Boolean] = js.undefined
   
   /** If true, the sitemap is a collection of sitemaps. */
-  var isSitemapsIndex: js.UndefOr[Boolean] = js.native
+  var isSitemapsIndex: js.UndefOr[Boolean] = js.undefined
   
   /** Date & time in which this sitemap was last downloaded. Date format is in RFC 3339 format (yyyy-mm-dd). */
-  var lastDownloaded: js.UndefOr[String] = js.native
+  var lastDownloaded: js.UndefOr[String] = js.undefined
   
   /** Date & time in which this sitemap was submitted. Date format is in RFC 3339 format (yyyy-mm-dd). */
-  var lastSubmitted: js.UndefOr[String] = js.native
+  var lastSubmitted: js.UndefOr[String] = js.undefined
   
   /** The url of the sitemap. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** The type of the sitemap. For example: `rssFeed`. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Number of warnings for the sitemap. These are generally non-critical issues with URLs in the sitemaps. */
-  var warnings: js.UndefOr[String] = js.native
+  var warnings: js.UndefOr[String] = js.undefined
 }
 object WmxSitemap {
   

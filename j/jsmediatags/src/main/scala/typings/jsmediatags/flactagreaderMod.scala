@@ -4,7 +4,6 @@ import typings.jsmediatags.typesMod.ByteRange
 import typings.jsmediatags.typesMod.LoadCallbackType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flactagreaderMod {
@@ -15,13 +14,15 @@ object flactagreaderMod {
   /* static members */
   object default {
     
-    @JSImport("jsmediatags/build2/FLACTagReader", "default.canReadTagFormat")
+    @JSImport("jsmediatags/build2/FLACTagReader", JSImport.Default)
     @js.native
-    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jsmediatags/build2/FLACTagReader", "default.getTagIdentifierByteRange")
-    @js.native
-    def getTagIdentifierByteRange(): ByteRange = js.native
+    @scala.inline
+    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadTagFormat")(tagIdentifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def getTagIdentifierByteRange(): ByteRange = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagIdentifierByteRange")().asInstanceOf[ByteRange]
   }
   
   @js.native

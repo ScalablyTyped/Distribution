@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticInferenceAcceleratorAssociation extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the elastic inference accelerator. 
     */
-  var ElasticInferenceAcceleratorArn: js.UndefOr[String] = js.native
+  var ElasticInferenceAcceleratorArn: js.UndefOr[String] = js.undefined
   
   /**
     *  The ID of the association. 
     */
-  var ElasticInferenceAcceleratorAssociationId: js.UndefOr[String] = js.native
+  var ElasticInferenceAcceleratorAssociationId: js.UndefOr[String] = js.undefined
   
   /**
     *  The state of the elastic inference accelerator. 
     */
-  var ElasticInferenceAcceleratorAssociationState: js.UndefOr[String] = js.native
+  var ElasticInferenceAcceleratorAssociationState: js.UndefOr[String] = js.undefined
   
   /**
     *  The time at which the elastic inference accelerator is associated with an instance. 
     */
-  var ElasticInferenceAcceleratorAssociationTime: js.UndefOr[DateTime] = js.native
+  var ElasticInferenceAcceleratorAssociationTime: js.UndefOr[DateTime] = js.undefined
 }
 object ElasticInferenceAcceleratorAssociation {
   

@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to change the master password, or let it be requested and checked. */
-@js.native
-trait XMasterPasswordHandling extends XInterface {
+trait XMasterPasswordHandling
+  extends StObject
+     with XInterface {
   
   /**
     * allows to specify whether persistent storing of passwords is allowed
     *
     * After the storing is forbidden the master password and all the stored passwords are removed.
     */
-  def allowPersistentStoring(bAllow: Boolean): Boolean = js.native
+  def allowPersistentStoring(bAllow: Boolean): Boolean
   
   /**
     * allows to check the user authorization.
@@ -25,7 +25,7 @@ trait XMasterPasswordHandling extends XInterface {
     *
     * The call will use the standard interaction handler service {@link InteractionHandler} if no handler is provided.
     */
-  def authorizateWithMasterPassword(xHandler: XInteractionHandler): Boolean = js.native
+  def authorizateWithMasterPassword(xHandler: XInteractionHandler): Boolean
   
   /**
     * allows to change the master password.
@@ -34,16 +34,16 @@ trait XMasterPasswordHandling extends XInterface {
     *
     * The call will use the standard interaction handler service {@link InteractionHandler} if no handler is provided.
     */
-  def changeMasterPassword(xHandler: XInteractionHandler): Boolean = js.native
+  def changeMasterPassword(xHandler: XInteractionHandler): Boolean
   
   /** allows to detect whether there is already a master password */
-  def hasMasterPassword(): Boolean = js.native
+  def hasMasterPassword(): Boolean
   
   /** allows to detect whether persistent storing of passwords is allowed */
-  def isPersistentStoringAllowed(): Boolean = js.native
+  def isPersistentStoringAllowed(): Boolean
   
   /** let the master password and all the related stored passwords be removed. */
-  def removeMasterPassword(): Unit = js.native
+  def removeMasterPassword(): Unit
 }
 object XMasterPasswordHandling {
   

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the ISO speed settings for a frame in a variable photo sequence. */
-@js.native
 trait FrameIsoSpeedControl extends StObject {
   
   /** Gets or sets a value indicating whether ISO speed is automatically set for a frame in a variable photo sequence. */
-  var auto: Boolean = js.native
+  var auto: Boolean
   
   /** Gets or sets the ISO speed for a frame in a variable photo sequence. */
-  var value: Double = js.native
+  var value: Double
 }
 object FrameIsoSpeedControl {
   

@@ -6,41 +6,41 @@ import typings.vueComponentCompilerUtils.typesMod.VueTemplateCompiler
 import typings.vueTemplateCompiler.mod.CompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("vue-loader", "VueLoaderPlugin")
   @js.native
-  class VueLoaderPlugin () extends Plugin
+  class VueLoaderPlugin ()
+    extends StObject
+       with Plugin
   
-  @js.native
   trait VueLoaderOptions extends StObject {
     
-    var cacheDirectory: js.UndefOr[String] = js.native
+    var cacheDirectory: js.UndefOr[String] = js.undefined
     
-    var cacheIdentifier: js.UndefOr[String] = js.native
+    var cacheIdentifier: js.UndefOr[String] = js.undefined
     
-    var compiler: js.UndefOr[VueTemplateCompiler] = js.native
+    var compiler: js.UndefOr[VueTemplateCompiler] = js.undefined
     
-    var compilerOptions: js.UndefOr[CompilerOptions] = js.native
+    var compilerOptions: js.UndefOr[CompilerOptions] = js.undefined
     
-    var exposeFilename: js.UndefOr[Boolean] = js.native
+    var exposeFilename: js.UndefOr[Boolean] = js.undefined
     
-    var hotReload: js.UndefOr[Boolean] = js.native
+    var hotReload: js.UndefOr[Boolean] = js.undefined
     
-    var optimizeSSR: js.UndefOr[Boolean] = js.native
+    var optimizeSSR: js.UndefOr[Boolean] = js.undefined
     
-    var prettify: js.UndefOr[Boolean] = js.native
+    var prettify: js.UndefOr[Boolean] = js.undefined
     
-    var productionMode: js.UndefOr[Boolean] = js.native
+    var productionMode: js.UndefOr[Boolean] = js.undefined
     
-    var shadowMode: js.UndefOr[Boolean] = js.native
+    var shadowMode: js.UndefOr[Boolean] = js.undefined
     
-    var transformAssetUrls: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var transformAssetUrls: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
-    var transpileOptions: js.UndefOr[js.Object] = js.native
+    var transpileOptions: js.UndefOr[js.Object] = js.undefined
   }
   object VueLoaderOptions {
     

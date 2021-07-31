@@ -8,17 +8,15 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Common {
   
-  @js.native
   trait Contact extends StObject {
     
-    var emailAddress: String = js.native
+    var emailAddress: String
     
-    var name: String = js.native
+    var name: String
   }
   object Contact {
     
@@ -58,30 +56,29 @@ object Common {
     def setPlacementOptions(options: PositionOptions): Unit = js.native
   }
   
-  @js.native
   trait PositionOptions extends StObject {
     
-    var bottomBuffer: js.UndefOr[Double] = js.native
+    var bottomBuffer: js.UndefOr[Double] = js.undefined
     
-    var buffer: js.UndefOr[Double] = js.native
+    var buffer: js.UndefOr[Double] = js.undefined
     
-    var forceHAlign: js.UndefOr[Boolean] = js.native
+    var forceHAlign: js.UndefOr[Boolean] = js.undefined
     
-    var forcePosition: js.UndefOr[Boolean] = js.native
+    var forcePosition: js.UndefOr[Boolean] = js.undefined
     
-    var forceVAlign: js.UndefOr[Boolean] = js.native
+    var forceVAlign: js.UndefOr[Boolean] = js.undefined
     
-    var hAlign: js.UndefOr[String] = js.native
+    var hAlign: js.UndefOr[String] = js.undefined
     
-    var leftBuffer: js.UndefOr[Double] = js.native
+    var leftBuffer: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var rightBuffer: js.UndefOr[Double] = js.native
+    var rightBuffer: js.UndefOr[Double] = js.undefined
     
-    var topBuffer: js.UndefOr[Double] = js.native
+    var topBuffer: js.UndefOr[Double] = js.undefined
     
-    var vAlign: js.UndefOr[String] = js.native
+    var vAlign: js.UndefOr[String] = js.undefined
   }
   object PositionOptions {
     
@@ -162,14 +159,13 @@ object Common {
     }
   }
   
-  @js.native
   trait PreAutoCloseEvent extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    var cause: Event = js.native
+    var cause: Event
     
-    var `type`: outsideInteraction | escape = js.native
+    var `type`: outsideInteraction | escape
   }
   object PreAutoCloseEvent {
     
@@ -194,17 +190,16 @@ object Common {
     }
   }
   
-  @js.native
   trait SimpleElementView extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var destroyed: Boolean = js.native
+    var destroyed: Boolean
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
     
     @JSName("on")
-    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit
   }
   object SimpleElementView {
     

@@ -2,48 +2,46 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BacklogConfiguration extends StObject {
   
   /**
     * Behavior/type field mapping
     */
-  var backlogFields: BacklogFields = js.native
+  var backlogFields: BacklogFields
   
   /**
     * Bugs behavior
     */
-  var bugsBehavior: BugsBehavior = js.native
+  var bugsBehavior: BugsBehavior
   
   /**
     * Hidden Backlog
     */
-  var hiddenBacklogs: js.Array[String] = js.native
+  var hiddenBacklogs: js.Array[String]
   
   /**
     * Portfolio backlog descriptors
     */
-  var portfolioBacklogs: js.Array[BacklogLevelConfiguration] = js.native
+  var portfolioBacklogs: js.Array[BacklogLevelConfiguration]
   
   /**
     * Requirement backlog
     */
-  var requirementBacklog: BacklogLevelConfiguration = js.native
+  var requirementBacklog: BacklogLevelConfiguration
   
   /**
     * Task backlog
     */
-  var taskBacklog: BacklogLevelConfiguration = js.native
+  var taskBacklog: BacklogLevelConfiguration
   
-  var url: String = js.native
+  var url: String
   
   /**
     * Mapped states for work item types
     */
-  var workItemTypeMappedStates: js.Array[WorkItemTypeStateInfo] = js.native
+  var workItemTypeMappedStates: js.Array[WorkItemTypeStateInfo]
 }
 object BacklogConfiguration {
   

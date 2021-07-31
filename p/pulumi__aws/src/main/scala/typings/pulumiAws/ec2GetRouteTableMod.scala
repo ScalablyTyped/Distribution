@@ -7,57 +7,55 @@ import typings.pulumiAws.outputMod.ec2.GetRouteTableRoute
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2GetRouteTableMod {
   
-  @JSImport("@pulumi/aws/ec2/getRouteTable", "getRouteTable")
+  @JSImport("@pulumi/aws/ec2/getRouteTable", JSImport.Namespace)
   @js.native
-  def getRouteTable(): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getRouteTable", "getRouteTable")
-  @js.native
-  def getRouteTable(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getRouteTable", "getRouteTable")
-  @js.native
-  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getRouteTable", "getRouteTable")
-  @js.native
-  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRouteTable(): js.Promise[GetRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")().asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: Unit, opts: InvokeOptions): js.Promise[GetRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTableResult]]
+  
   trait GetRouteTableArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.undefined
     
     /**
       * The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
       */
-    val gatewayId: js.UndefOr[String] = js.native
+    val gatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * The id of the specific Route Table to retrieve.
       */
-    val routeTableId: js.UndefOr[String] = js.native
+    val routeTableId: js.UndefOr[String] = js.undefined
     
     /**
       * The id of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
       */
-    val subnetId: js.UndefOr[String] = js.native
+    val subnetId: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired Route Table.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The id of the VPC that the desired Route Table belongs to.
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetRouteTableArgs {
     
@@ -111,43 +109,42 @@ object ec2GetRouteTableMod {
     }
   }
   
-  @js.native
   trait GetRouteTableResult extends StObject {
     
-    val associations: js.Array[GetRouteTableAssociation] = js.native
+    val associations: js.Array[GetRouteTableAssociation]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetRouteTableFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetRouteTableFilter]] = js.undefined
     
     /**
       * The Gateway ID. Only set when associated with an Internet Gateway or Virtual Private Gateway.
       */
-    val gatewayId: String = js.native
+    val gatewayId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ID of the AWS account that owns the route table
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * The Route Table ID.
       */
-    val routeTableId: String = js.native
+    val routeTableId: String
     
-    val routes: js.Array[GetRouteTableRoute] = js.native
+    val routes: js.Array[GetRouteTableRoute]
     
     /**
       * The Subnet ID. Only set when associated with a Subnet.
       */
-    val subnetId: String = js.native
+    val subnetId: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetRouteTableResult {
     

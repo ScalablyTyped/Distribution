@@ -3,30 +3,30 @@ package typings.pathParser
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokeniserMod {
   
-  @JSImport("path-parser/dist/tokeniser", JSImport.Default)
+  @JSImport("path-parser/dist/tokeniser", JSImport.Namespace)
   @js.native
-  def default(str: String): js.Array[Token] = js.native
-  @JSImport("path-parser/dist/tokeniser", JSImport.Default)
-  @js.native
-  def default(str: String, tokens: js.Array[Token]): js.Array[Token] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(str: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  @scala.inline
+  def default(str: String, tokens: js.Array[Token]): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+  
   trait Token extends StObject {
     
-    var `match`: String = js.native
+    var `match`: String
     
-    var otherVal: js.Any = js.native
+    var otherVal: js.Any
     
-    var regex: js.UndefOr[RegExp] = js.native
+    var regex: js.UndefOr[RegExp] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var `val`: js.Any = js.native
+    var `val`: js.Any
   }
   object Token {
     

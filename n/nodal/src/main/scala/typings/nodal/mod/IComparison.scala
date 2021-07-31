@@ -3,18 +3,17 @@ package typings.nodal.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IComparison
-  extends /* item */ StringDictionary[js.Any] {
+  extends StObject
+     with /* item */ StringDictionary[js.Any] {
   
-  var __count: js.UndefOr[Double] = js.native
+  var __count: js.UndefOr[Double] = js.undefined
   
-  var __offset: js.UndefOr[Double] = js.native
+  var __offset: js.UndefOr[Double] = js.undefined
   
-  var __order: js.UndefOr[String] = js.native
+  var __order: js.UndefOr[String] = js.undefined
 }
 object IComparison {
   

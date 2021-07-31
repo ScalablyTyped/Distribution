@@ -6,25 +6,23 @@ import typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.QueryDrive
 import typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.QueryDriveActivityResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveActivity extends StObject {
   
-  var Activity: js.UndefOr[ActivityCollection] = js.native
+  var Activity: js.UndefOr[ActivityCollection] = js.undefined
   
   // Create a new instance of ConsolidationStrategy
-  def newConsolidationStrategy(): ConsolidationStrategy = js.native
+  def newConsolidationStrategy(): ConsolidationStrategy
   
   // Create a new instance of Legacy
-  def newLegacy(): js.Any = js.native
+  def newLegacy(): js.Any
   
   // Create a new instance of NoConsolidation
-  def newNoConsolidation(): js.Any = js.native
+  def newNoConsolidation(): js.Any
   
   // Create a new instance of QueryDriveActivityRequest
-  def newQueryDriveActivityRequest(): QueryDriveActivityRequest = js.native
+  def newQueryDriveActivityRequest(): QueryDriveActivityRequest
 }
 object DriveActivity {
   
@@ -41,11 +39,10 @@ object DriveActivity {
   
   object Collection {
     
-    @js.native
     trait ActivityCollection extends StObject {
       
       // Query past activity in Google Drive.
-      def query(resource: QueryDriveActivityRequest): QueryDriveActivityResponse = js.native
+      def query(resource: QueryDriveActivityRequest): QueryDriveActivityResponse
     }
     object ActivityCollection {
       
@@ -88,18 +85,17 @@ object DriveActivity {
   
   object Schema {
     
-    @js.native
     trait Action extends StObject {
       
-      var actor: js.UndefOr[Actor] = js.native
+      var actor: js.UndefOr[Actor] = js.undefined
       
-      var detail: js.UndefOr[ActionDetail] = js.native
+      var detail: js.UndefOr[ActionDetail] = js.undefined
       
-      var target: js.UndefOr[Target] = js.native
+      var target: js.UndefOr[Target] = js.undefined
       
-      var timeRange: js.UndefOr[TimeRange] = js.native
+      var timeRange: js.UndefOr[TimeRange] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object Action {
       
@@ -144,30 +140,29 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait ActionDetail extends StObject {
       
-      var comment: js.UndefOr[Comment] = js.native
+      var comment: js.UndefOr[Comment] = js.undefined
       
-      var create: js.UndefOr[Create] = js.native
+      var create: js.UndefOr[Create] = js.undefined
       
-      var delete: js.UndefOr[Delete] = js.native
+      var delete: js.UndefOr[Delete] = js.undefined
       
-      var dlpChange: js.UndefOr[DataLeakPreventionChange] = js.native
+      var dlpChange: js.UndefOr[DataLeakPreventionChange] = js.undefined
       
-      var edit: js.UndefOr[js.Any] = js.native
+      var edit: js.UndefOr[js.Any] = js.undefined
       
-      var move: js.UndefOr[Move] = js.native
+      var move: js.UndefOr[Move] = js.undefined
       
-      var permissionChange: js.UndefOr[PermissionChange] = js.native
+      var permissionChange: js.UndefOr[PermissionChange] = js.undefined
       
-      var reference: js.UndefOr[ApplicationReference] = js.native
+      var reference: js.UndefOr[ApplicationReference] = js.undefined
       
-      var rename: js.UndefOr[Rename] = js.native
+      var rename: js.UndefOr[Rename] = js.undefined
       
-      var restore: js.UndefOr[Restore] = js.native
+      var restore: js.UndefOr[Restore] = js.undefined
       
-      var settingsChange: js.UndefOr[SettingsChange] = js.native
+      var settingsChange: js.UndefOr[SettingsChange] = js.undefined
     }
     object ActionDetail {
       
@@ -248,18 +243,17 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Actor extends StObject {
       
-      var administrator: js.UndefOr[String] = js.native
+      var administrator: js.UndefOr[String] = js.undefined
       
-      var anonymous: js.UndefOr[String] = js.native
+      var anonymous: js.UndefOr[String] = js.undefined
       
-      var impersonation: js.UndefOr[Impersonation] = js.native
+      var impersonation: js.UndefOr[Impersonation] = js.undefined
       
-      var system: js.UndefOr[SystemEvent] = js.native
+      var system: js.UndefOr[SystemEvent] = js.undefined
       
-      var user: js.UndefOr[User] = js.native
+      var user: js.UndefOr[User] = js.undefined
     }
     object Actor {
       
@@ -304,10 +298,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait ApplicationReference extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ApplicationReference {
       
@@ -328,10 +321,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Assignment extends StObject {
       
-      var subtype: js.UndefOr[String] = js.native
+      var subtype: js.UndefOr[String] = js.undefined
     }
     object Assignment {
       
@@ -352,16 +344,15 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Comment extends StObject {
       
-      var assignment: js.UndefOr[Assignment] = js.native
+      var assignment: js.UndefOr[Assignment] = js.undefined
       
-      var mentionedUsers: js.UndefOr[js.Array[User]] = js.native
+      var mentionedUsers: js.UndefOr[js.Array[User]] = js.undefined
       
-      var post: js.UndefOr[Post] = js.native
+      var post: js.UndefOr[Post] = js.undefined
       
-      var suggestion: js.UndefOr[Suggestion] = js.native
+      var suggestion: js.UndefOr[Suggestion] = js.undefined
     }
     object Comment {
       
@@ -403,12 +394,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait ConsolidationStrategy extends StObject {
       
-      var legacy: js.UndefOr[js.Any] = js.native
+      var legacy: js.UndefOr[js.Any] = js.undefined
       
-      var none: js.UndefOr[js.Any] = js.native
+      var none: js.UndefOr[js.Any] = js.undefined
     }
     object ConsolidationStrategy {
       
@@ -435,10 +425,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Copy extends StObject {
       
-      var originalObject: js.UndefOr[TargetReference] = js.native
+      var originalObject: js.UndefOr[TargetReference] = js.undefined
     }
     object Copy {
       
@@ -459,14 +448,13 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Create extends StObject {
       
-      var copy: js.UndefOr[Copy] = js.native
+      var copy: js.UndefOr[Copy] = js.undefined
       
-      var `new`: js.UndefOr[js.Any] = js.native
+      var `new`: js.UndefOr[js.Any] = js.undefined
       
-      var upload: js.UndefOr[js.Any] = js.native
+      var upload: js.UndefOr[js.Any] = js.undefined
     }
     object Create {
       
@@ -499,10 +487,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait DataLeakPreventionChange extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object DataLeakPreventionChange {
       
@@ -523,10 +510,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Delete extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Delete {
       
@@ -547,12 +533,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Domain extends StObject {
       
-      var legacyId: js.UndefOr[String] = js.native
+      var legacyId: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Domain {
       
@@ -579,20 +564,19 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait DriveActivity extends StObject {
       
-      var actions: js.UndefOr[js.Array[Action]] = js.native
+      var actions: js.UndefOr[js.Array[Action]] = js.undefined
       
-      var actors: js.UndefOr[js.Array[Actor]] = js.native
+      var actors: js.UndefOr[js.Array[Actor]] = js.undefined
       
-      var primaryActionDetail: js.UndefOr[ActionDetail] = js.native
+      var primaryActionDetail: js.UndefOr[ActionDetail] = js.undefined
       
-      var targets: js.UndefOr[js.Array[Target]] = js.native
+      var targets: js.UndefOr[js.Array[Target]] = js.undefined
       
-      var timeRange: js.UndefOr[TimeRange] = js.native
+      var timeRange: js.UndefOr[TimeRange] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
     }
     object DriveActivity {
       
@@ -652,20 +636,19 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait DriveItem extends StObject {
       
-      var file: js.UndefOr[js.Any] = js.native
+      var file: js.UndefOr[js.Any] = js.undefined
       
-      var folder: js.UndefOr[Folder] = js.native
+      var folder: js.UndefOr[Folder] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var owner: js.UndefOr[Owner] = js.native
+      var owner: js.UndefOr[Owner] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object DriveItem {
       
@@ -716,16 +699,15 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait DriveItemReference extends StObject {
       
-      var file: js.UndefOr[js.Any] = js.native
+      var file: js.UndefOr[js.Any] = js.undefined
       
-      var folder: js.UndefOr[Folder] = js.native
+      var folder: js.UndefOr[Folder] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object DriveItemReference {
       
@@ -764,16 +746,15 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait FileComment extends StObject {
       
-      var legacyCommentId: js.UndefOr[String] = js.native
+      var legacyCommentId: js.UndefOr[String] = js.undefined
       
-      var legacyDiscussionId: js.UndefOr[String] = js.native
+      var legacyDiscussionId: js.UndefOr[String] = js.undefined
       
-      var linkToDiscussion: js.UndefOr[String] = js.native
+      var linkToDiscussion: js.UndefOr[String] = js.undefined
       
-      var parent: js.UndefOr[DriveItem] = js.native
+      var parent: js.UndefOr[DriveItem] = js.undefined
     }
     object FileComment {
       
@@ -812,10 +793,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Folder extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Folder {
       
@@ -836,12 +816,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Group extends StObject {
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Group {
       
@@ -868,10 +847,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Impersonation extends StObject {
       
-      var impersonatedUser: js.UndefOr[User] = js.native
+      var impersonatedUser: js.UndefOr[User] = js.undefined
     }
     object Impersonation {
       
@@ -892,12 +870,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait KnownUser extends StObject {
       
-      var isCurrentUser: js.UndefOr[Boolean] = js.native
+      var isCurrentUser: js.UndefOr[Boolean] = js.undefined
       
-      var personName: js.UndefOr[String] = js.native
+      var personName: js.UndefOr[String] = js.undefined
     }
     object KnownUser {
       
@@ -924,12 +901,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Move extends StObject {
       
-      var addedParents: js.UndefOr[js.Array[TargetReference]] = js.native
+      var addedParents: js.UndefOr[js.Array[TargetReference]] = js.undefined
       
-      var removedParents: js.UndefOr[js.Array[TargetReference]] = js.native
+      var removedParents: js.UndefOr[js.Array[TargetReference]] = js.undefined
     }
     object Move {
       
@@ -962,14 +938,13 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Owner extends StObject {
       
-      var domain: js.UndefOr[Domain] = js.native
+      var domain: js.UndefOr[Domain] = js.undefined
       
-      var teamDrive: js.UndefOr[TeamDriveReference] = js.native
+      var teamDrive: js.UndefOr[TeamDriveReference] = js.undefined
       
-      var user: js.UndefOr[User] = js.native
+      var user: js.UndefOr[User] = js.undefined
     }
     object Owner {
       
@@ -1002,20 +977,19 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Permission extends StObject {
       
-      var allowDiscovery: js.UndefOr[Boolean] = js.native
+      var allowDiscovery: js.UndefOr[Boolean] = js.undefined
       
-      var anyone: js.UndefOr[js.Any] = js.native
+      var anyone: js.UndefOr[js.Any] = js.undefined
       
-      var domain: js.UndefOr[Domain] = js.native
+      var domain: js.UndefOr[Domain] = js.undefined
       
-      var group: js.UndefOr[Group] = js.native
+      var group: js.UndefOr[Group] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var user: js.UndefOr[User] = js.native
+      var user: js.UndefOr[User] = js.undefined
     }
     object Permission {
       
@@ -1066,12 +1040,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait PermissionChange extends StObject {
       
-      var addedPermissions: js.UndefOr[js.Array[Permission]] = js.native
+      var addedPermissions: js.UndefOr[js.Array[Permission]] = js.undefined
       
-      var removedPermissions: js.UndefOr[js.Array[Permission]] = js.native
+      var removedPermissions: js.UndefOr[js.Array[Permission]] = js.undefined
     }
     object PermissionChange {
       
@@ -1104,10 +1077,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Post extends StObject {
       
-      var subtype: js.UndefOr[String] = js.native
+      var subtype: js.UndefOr[String] = js.undefined
     }
     object Post {
       
@@ -1128,20 +1100,19 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait QueryDriveActivityRequest extends StObject {
       
-      var ancestorName: js.UndefOr[String] = js.native
+      var ancestorName: js.UndefOr[String] = js.undefined
       
-      var consolidationStrategy: js.UndefOr[ConsolidationStrategy] = js.native
+      var consolidationStrategy: js.UndefOr[ConsolidationStrategy] = js.undefined
       
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
-      var itemName: js.UndefOr[String] = js.native
+      var itemName: js.UndefOr[String] = js.undefined
       
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
     }
     object QueryDriveActivityRequest {
       
@@ -1192,14 +1163,13 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait QueryDriveActivityResponse extends StObject {
       
       var activities: js.UndefOr[
             js.Array[typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity]
-          ] = js.native
+          ] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object QueryDriveActivityResponse {
       
@@ -1229,12 +1199,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Rename extends StObject {
       
-      var newTitle: js.UndefOr[String] = js.native
+      var newTitle: js.UndefOr[String] = js.undefined
       
-      var oldTitle: js.UndefOr[String] = js.native
+      var oldTitle: js.UndefOr[String] = js.undefined
     }
     object Rename {
       
@@ -1261,10 +1230,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Restore extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Restore {
       
@@ -1285,12 +1253,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait RestrictionChange extends StObject {
       
-      var feature: js.UndefOr[String] = js.native
+      var feature: js.UndefOr[String] = js.undefined
       
-      var newRestriction: js.UndefOr[String] = js.native
+      var newRestriction: js.UndefOr[String] = js.undefined
     }
     object RestrictionChange {
       
@@ -1317,10 +1284,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait SettingsChange extends StObject {
       
-      var restrictionChanges: js.UndefOr[js.Array[RestrictionChange]] = js.native
+      var restrictionChanges: js.UndefOr[js.Array[RestrictionChange]] = js.undefined
     }
     object SettingsChange {
       
@@ -1344,10 +1310,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Suggestion extends StObject {
       
-      var subtype: js.UndefOr[String] = js.native
+      var subtype: js.UndefOr[String] = js.undefined
     }
     object Suggestion {
       
@@ -1368,10 +1333,9 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait SystemEvent extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object SystemEvent {
       
@@ -1392,14 +1356,13 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait Target extends StObject {
       
-      var driveItem: js.UndefOr[DriveItem] = js.native
+      var driveItem: js.UndefOr[DriveItem] = js.undefined
       
-      var fileComment: js.UndefOr[js.Any] = js.native
+      var fileComment: js.UndefOr[js.Any] = js.undefined
       
-      var teamDrive: js.UndefOr[TeamDrive] = js.native
+      var teamDrive: js.UndefOr[TeamDrive] = js.undefined
     }
     object Target {
       
@@ -1432,12 +1395,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait TargetReference extends StObject {
       
-      var driveItem: js.UndefOr[DriveItemReference] = js.native
+      var driveItem: js.UndefOr[DriveItemReference] = js.undefined
       
-      var teamDrive: js.UndefOr[TeamDriveReference] = js.native
+      var teamDrive: js.UndefOr[TeamDriveReference] = js.undefined
     }
     object TargetReference {
       
@@ -1464,14 +1426,13 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait TeamDrive extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var root: js.UndefOr[DriveItem] = js.native
+      var root: js.UndefOr[DriveItem] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object TeamDrive {
       
@@ -1504,12 +1465,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait TeamDriveReference extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object TeamDriveReference {
       
@@ -1536,12 +1496,11 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait TimeRange extends StObject {
       
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
     }
     object TimeRange {
       
@@ -1568,14 +1527,13 @@ object DriveActivity {
       }
     }
     
-    @js.native
     trait User extends StObject {
       
-      var deletedUser: js.UndefOr[js.Any] = js.native
+      var deletedUser: js.UndefOr[js.Any] = js.undefined
       
-      var knownUser: js.UndefOr[KnownUser] = js.native
+      var knownUser: js.UndefOr[KnownUser] = js.undefined
       
-      var unknownUser: js.UndefOr[js.Any] = js.native
+      var unknownUser: js.UndefOr[js.Any] = js.undefined
     }
     object User {
       

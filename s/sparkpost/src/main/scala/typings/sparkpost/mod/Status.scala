@@ -7,35 +7,33 @@ import typings.sparkpost.sparkpostStrings.unverified
 import typings.sparkpost.sparkpostStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Status extends StObject {
   
   /** Verification status of abuse@ mailbox */
-  var abuse_at_status: valid | invalid | unverified | pending = js.native
+  var abuse_at_status: valid | invalid | unverified | pending
   
   /** Verification status of CNAME configuration */
-  var cname_status: valid | invalid | unverified | pending = js.native
+  var cname_status: valid | invalid | unverified | pending
   
   /** Compliance status */
-  var compliance_status: valid | pending | blocked = js.native
+  var compliance_status: valid | pending | blocked
   
   /** Verification status of DKIM configuration */
-  var dkim_status: valid | invalid | unverified | pending = js.native
+  var dkim_status: valid | invalid | unverified | pending
   
   /** Verification status of MX configuration */
-  var mx_status: valid | invalid | unverified | pending = js.native
+  var mx_status: valid | invalid | unverified | pending
   
   /** Whether domain ownership has been verified */
-  var ownership_verified: Boolean = js.native
+  var ownership_verified: Boolean
   
   /** Verification status of postmaster@ mailbox */
-  var postmaster_at_status: valid | invalid | unverified | pending = js.native
+  var postmaster_at_status: valid | invalid | unverified | pending
   
   /** Verification status of SPF configuration */
-  var spf_status: valid | invalid | unverified | pending = js.native
+  var spf_status: valid | invalid | unverified | pending
 }
 object Status {
   

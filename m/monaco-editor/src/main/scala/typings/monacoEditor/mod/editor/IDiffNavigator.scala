@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDiffNavigator extends StObject {
   
-  def canNavigate(): Boolean = js.native
+  def canNavigate(): Boolean
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  def next(): Unit = js.native
+  def next(): Unit
   
-  def previous(): Unit = js.native
+  def previous(): Unit
 }
 object IDiffNavigator {
   

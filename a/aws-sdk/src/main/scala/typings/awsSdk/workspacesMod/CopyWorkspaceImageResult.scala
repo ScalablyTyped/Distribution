@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyWorkspaceImageResult extends StObject {
   
   /**
     * The identifier of the image.
     */
-  var ImageId: js.UndefOr[WorkspaceImageId] = js.native
+  var ImageId: js.UndefOr[WorkspaceImageId] = js.undefined
 }
 object CopyWorkspaceImageResult {
   

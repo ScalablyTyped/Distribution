@@ -4,48 +4,46 @@ import typings.node.inspectorMod.Runtime.StackTrace
 import typings.node.inspectorMod.Runtime.StackTraceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PausedEventDataType extends StObject {
   
   /**
     * Just scheduled async call will have this stack trace as parent stack during async execution. This field is available only after <code>Debugger.stepInto</code> call with <code>breakOnAsynCall</code> flag.
     * @experimental
     */
-  var asyncCallStackTraceId: js.UndefOr[StackTraceId] = js.native
+  var asyncCallStackTraceId: js.UndefOr[StackTraceId] = js.undefined
   
   /**
     * Async stack trace, if any.
     */
-  var asyncStackTrace: js.UndefOr[StackTrace] = js.native
+  var asyncStackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Async stack trace, if any.
     * @experimental
     */
-  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.native
+  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.undefined
   
   /**
     * Call stack the virtual machine stopped on.
     */
-  var callFrames: js.Array[CallFrame] = js.native
+  var callFrames: js.Array[CallFrame]
   
   /**
     * Object containing break-specific auxiliary properties.
     */
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Hit breakpoints IDs
     */
-  var hitBreakpoints: js.UndefOr[js.Array[String]] = js.native
+  var hitBreakpoints: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Pause reason.
     */
-  var reason: String = js.native
+  var reason: String
 }
 object PausedEventDataType {
   

@@ -2,19 +2,19 @@ package typings.reactNativeNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentEventsMod {
   
-  @js.native
-  trait ComponentDidAppearEvent extends ComponentEvent {
+  trait ComponentDidAppearEvent
+    extends StObject
+       with ComponentEvent {
     
-    var componentName: String = js.native
+    var componentName: String
     
-    var componentType: ComponentType = js.native
+    var componentType: ComponentType
     
-    var passProps: js.UndefOr[js.Object] = js.native
+    var passProps: js.UndefOr[js.Object] = js.undefined
   }
   object ComponentDidAppearEvent {
     
@@ -41,12 +41,13 @@ object componentEventsMod {
     }
   }
   
-  @js.native
-  trait ComponentDidDisappearEvent extends ComponentEvent {
+  trait ComponentDidDisappearEvent
+    extends StObject
+       with ComponentEvent {
     
-    var componentName: String = js.native
+    var componentName: String
     
-    var componentType: ComponentType = js.native
+    var componentType: ComponentType
   }
   object ComponentDidDisappearEvent {
     
@@ -67,10 +68,9 @@ object componentEventsMod {
     }
   }
   
-  @js.native
   trait ComponentEvent extends StObject {
     
-    var componentId: String = js.native
+    var componentId: String
   }
   object ComponentEvent {
     
@@ -110,8 +110,9 @@ object componentEventsMod {
     def TopBarTitle: typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarTitle = "TopBarTitle".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.TopBarTitle]
   }
   
-  @js.native
-  trait ModalAttemptedToDismissEvent extends ComponentEvent
+  trait ModalAttemptedToDismissEvent
+    extends StObject
+       with ComponentEvent
   object ModalAttemptedToDismissEvent {
     
     @scala.inline
@@ -121,12 +122,13 @@ object componentEventsMod {
     }
   }
   
-  @js.native
-  trait ModalDismissedEvent extends ComponentEvent {
+  trait ModalDismissedEvent
+    extends StObject
+       with ComponentEvent {
     
-    var componentName: String = js.native
+    var componentName: String
     
-    var modalsDismissed: Double = js.native
+    var modalsDismissed: Double
   }
   object ModalDismissedEvent {
     
@@ -147,10 +149,11 @@ object componentEventsMod {
     }
   }
   
-  @js.native
-  trait NavigationButtonPressedEvent extends ComponentEvent {
+  trait NavigationButtonPressedEvent
+    extends StObject
+       with ComponentEvent {
     
-    var buttonId: String = js.native
+    var buttonId: String
   }
   object NavigationButtonPressedEvent {
     
@@ -168,12 +171,13 @@ object componentEventsMod {
     }
   }
   
-  @js.native
-  trait PreviewCompletedEvent extends ComponentEvent {
+  trait PreviewCompletedEvent
+    extends StObject
+       with ComponentEvent {
     
-    var componentName: js.UndefOr[String] = js.native
+    var componentName: js.UndefOr[String] = js.undefined
     
-    var previewComponentId: js.UndefOr[String] = js.native
+    var previewComponentId: js.UndefOr[String] = js.undefined
   }
   object PreviewCompletedEvent {
     
@@ -200,8 +204,9 @@ object componentEventsMod {
     }
   }
   
-  @js.native
-  trait ScreenPoppedEvent extends ComponentEvent
+  trait ScreenPoppedEvent
+    extends StObject
+       with ComponentEvent
   object ScreenPoppedEvent {
     
     @scala.inline
@@ -211,10 +216,11 @@ object componentEventsMod {
     }
   }
   
-  @js.native
-  trait SearchBarCancelPressedEvent extends ComponentEvent {
+  trait SearchBarCancelPressedEvent
+    extends StObject
+       with ComponentEvent {
     
-    var componentName: js.UndefOr[String] = js.native
+    var componentName: js.UndefOr[String] = js.undefined
   }
   object SearchBarCancelPressedEvent {
     
@@ -235,12 +241,13 @@ object componentEventsMod {
     }
   }
   
-  @js.native
-  trait SearchBarUpdatedEvent extends ComponentEvent {
+  trait SearchBarUpdatedEvent
+    extends StObject
+       with ComponentEvent {
     
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
     
-    var text: String = js.native
+    var text: String
   }
   object SearchBarUpdatedEvent {
     

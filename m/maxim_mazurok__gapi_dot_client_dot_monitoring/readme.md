@@ -10,9 +10,9 @@ TypeScript typings for Cloud Monitoring API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.monitoring |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 66 |
+| # downloads        | 1132 |
 | # stars            | 0 |
 
 ## Links

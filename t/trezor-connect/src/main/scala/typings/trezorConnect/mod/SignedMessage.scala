@@ -2,16 +2,14 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedMessage extends StObject {
   
-  var address: String = js.native
+  var address: String
   
   // signer address
-  var signature: String = js.native
+  var signature: String
 }
 object SignedMessage {
   

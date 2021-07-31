@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.AllergyIntolerance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyHeadersOptions extends StObject {
   
-  var body: AllergyIntolerance = js.native
+  var body: AllergyIntolerance
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance
 }
 object BodyHeadersOptions {
   
   @scala.inline
-  def apply(
-    body: AllergyIntolerance,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.AllergyIntolerance
-  ): BodyHeadersOptions = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: AllergyIntolerance): BodyHeadersOptions = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "AllergyIntolerance")
     __obj.asInstanceOf[BodyHeadersOptions]
   }
   

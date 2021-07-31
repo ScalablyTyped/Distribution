@@ -3,7 +3,6 @@ package typings.esriLeaflet.mod
 import typings.esriLeaflet.mod.leafletAugmentingMod.esri.QueryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

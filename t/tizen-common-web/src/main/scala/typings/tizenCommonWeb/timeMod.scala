@@ -13,7 +13,6 @@ import typings.std.Date
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeMod {
@@ -26,100 +25,16 @@ object timeMod {
     */
   class TZDate () extends StObject {
     def this(datetime: Date) = this()
-    def this(datetime: js.UndefOr[scala.Nothing], timezone: String) = this()
+    def this(datetime: Unit, timezone: String) = this()
     def this(datetime: Date, timezone: String) = this()
     def this(year: Double, month: Double, day: Double) = this()
     def this(year: Double, month: Double, day: Double, hours: Double) = this()
-    def this(year: Double, month: Double, day: Double, hours: js.UndefOr[scala.Nothing], minutes: Double) = this()
     def this(year: Double, month: Double, day: Double, hours: Double, minutes: Double) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ) = this()
+    def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Double) = this()
     def this(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: Double,
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double
-    ) = this()
+    def this(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Double) = this()
+    def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Double) = this()
+    def this(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double) = this()
     def this(
       year: Double,
       month: Double,
@@ -133,77 +48,70 @@ object timeMod {
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double,
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
-      milliseconds: Double,
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: js.UndefOr[scala.Nothing],
+      hours: Double,
       minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
+      seconds: Unit,
+      milliseconds: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double,
-      timezone: String
+      hours: Double,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
+      hours: Double,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
       minutes: Double,
       seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
+      milliseconds: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: js.UndefOr[scala.Nothing],
+      hours: Unit,
+      minutes: Double,
+      seconds: Unit,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Double,
       minutes: Double,
       seconds: Double,
       milliseconds: Double,
@@ -214,29 +122,9 @@ object timeMod {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: Double,
-      timezone: String
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
+      minutes: Double,
       seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
+      milliseconds: Unit,
       timezone: String
     ) = this()
     def this(
@@ -244,8 +132,8 @@ object timeMod {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: js.UndefOr[scala.Nothing],
-      seconds: Double,
+      minutes: Double,
+      seconds: Unit,
       milliseconds: Double,
       timezone: String
     ) = this()
@@ -255,8 +143,8 @@ object timeMod {
       day: Double,
       hours: Double,
       minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
-      milliseconds: js.UndefOr[scala.Nothing],
+      seconds: Unit,
+      milliseconds: Unit,
       timezone: String
     ) = this()
     def this(
@@ -264,8 +152,28 @@ object timeMod {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: Double,
-      seconds: js.UndefOr[scala.Nothing],
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Double,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Double,
+      minutes: Unit,
+      seconds: Unit,
       milliseconds: Double,
       timezone: String
     ) = this()
@@ -274,19 +182,89 @@ object timeMod {
       month: Double,
       day: Double,
       hours: Double,
-      minutes: Double,
-      seconds: Double,
-      milliseconds: js.UndefOr[scala.Nothing],
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Unit,
       timezone: String
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hours: Double,
+      hours: Unit,
       minutes: Double,
       seconds: Double,
       milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Double,
+      seconds: Double,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Double,
+      seconds: Unit,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Double,
+      seconds: Unit,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Double,
+      milliseconds: Unit,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Double,
+      timezone: String
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hours: Unit,
+      minutes: Unit,
+      seconds: Unit,
+      milliseconds: Unit,
       timezone: String
     ) = this()
     
@@ -782,45 +760,56 @@ object timeMod {
   object TimeDurationUnit extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TimeDurationUnit with String] = js.native
+    def apply(value: String): js.UndefOr[TimeDurationUnit & String] = js.native
     
     @js.native
-    sealed trait DAYS extends TimeDurationUnit
-    /* "DAYS" */ val DAYS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.DAYS with String = js.native
+    sealed trait DAYS
+      extends StObject
+         with TimeDurationUnit
+    /* "DAYS" */ val DAYS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.DAYS & String = js.native
     
     @js.native
-    sealed trait HOURS extends TimeDurationUnit
-    /* "HOURS" */ val HOURS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.HOURS with String = js.native
+    sealed trait HOURS
+      extends StObject
+         with TimeDurationUnit
+    /* "HOURS" */ val HOURS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.HOURS & String = js.native
     
     @js.native
-    sealed trait MINS extends TimeDurationUnit
-    /* "MINS" */ val MINS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.MINS with String = js.native
+    sealed trait MINS
+      extends StObject
+         with TimeDurationUnit
+    /* "MINS" */ val MINS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.MINS & String = js.native
     
     @js.native
-    sealed trait MSECS extends TimeDurationUnit
-    /* "MSECS" */ val MSECS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.MSECS with String = js.native
+    sealed trait MSECS
+      extends StObject
+         with TimeDurationUnit
+    /* "MSECS" */ val MSECS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.MSECS & String = js.native
     
     @js.native
-    sealed trait SECS extends TimeDurationUnit
-    /* "SECS" */ val SECS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.SECS with String = js.native
+    sealed trait SECS
+      extends StObject
+         with TimeDurationUnit
+    /* "SECS" */ val SECS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.SECS & String = js.native
   }
   
   @js.native
   trait TZDateConstructor
-    extends /**
+    extends StObject
+       with /**
     * @param datetime Date and time passed as a javascript Date object. If this parameter is omitted, current date and time will be used.
     * @param timezone The time zone identifier, e.g. "Seoul/Korea" or "Europe/Berlin". If this parameter is omitted, the device's default time zone will be used.
     */
   Instantiable0[TZDate]
        with Instantiable1[/* datetime */ Date, TZDate]
-       with Instantiable2[js.UndefOr[/* datetime */ Date], /* timezone */ String, TZDate]
+       with Instantiable2[(/* datetime */ Date) | (/* datetime */ Unit), /* timezone */ String, TZDate]
        with Instantiable3[/* year */ Double, /* month */ Double, /* day */ Double, TZDate]
        with Instantiable4[/* year */ Double, /* month */ Double, /* day */ Double, /* hours */ Double, TZDate]
        with Instantiable5[
           /* year */ Double, 
           /* month */ Double, 
           /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
+          (/* hours */ Double) | (/* hours */ Unit), 
           /* minutes */ Double, 
           TZDate
         ]
@@ -828,8 +817,8 @@ object timeMod {
           /* year */ Double, 
           /* month */ Double, 
           /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
-          js.UndefOr[/* minutes */ Double], 
+          (/* hours */ Double) | (/* hours */ Unit), 
+          (/* minutes */ Double) | (/* minutes */ Unit), 
           /* seconds */ Double, 
           TZDate
         ]
@@ -837,9 +826,9 @@ object timeMod {
           /* year */ Double, 
           /* month */ Double, 
           /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
-          js.UndefOr[/* minutes */ Double], 
-          js.UndefOr[/* seconds */ Double], 
+          (/* hours */ Double) | (/* hours */ Unit), 
+          (/* minutes */ Double) | (/* minutes */ Unit), 
+          (/* seconds */ Double) | (/* seconds */ Unit), 
           /* milliseconds */ Double, 
           TZDate
         ]
@@ -847,16 +836,18 @@ object timeMod {
           /* year */ Double, 
           /* month */ Double, 
           /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
-          js.UndefOr[/* minutes */ Double], 
-          js.UndefOr[/* seconds */ Double], 
-          js.UndefOr[/* milliseconds */ Double], 
+          (/* hours */ Double) | (/* hours */ Unit), 
+          (/* minutes */ Double) | (/* minutes */ Unit), 
+          (/* seconds */ Double) | (/* seconds */ Unit), 
+          (/* milliseconds */ Double) | (/* milliseconds */ Unit), 
           /* timezone */ String, 
           TZDate
         ]
   
   @js.native
-  trait TimeDurationConstructor extends Instantiable2[/* length */ Double, /* unit */ TimeDurationUnit, TimeDuration]
+  trait TimeDurationConstructor
+    extends StObject
+       with Instantiable2[/* length */ Double, /* unit */ TimeDurationUnit, TimeDuration]
   
   @js.native
   trait TimeUtil extends StObject {

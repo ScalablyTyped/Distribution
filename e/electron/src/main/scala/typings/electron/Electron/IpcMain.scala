@@ -3,11 +3,12 @@ package typings.electron.Electron
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpcMain extends EventEmitter {
+trait IpcMain
+  extends StObject
+     with EventEmitter {
   
   // Docs: https://electronjs.org/docs/api/ipc-main
   /**
@@ -24,7 +25,7 @@ trait IpcMain extends EventEmitter {
     */
   def handle(
     channel: String,
-    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ js.Any, js.Promise[Unit] | _]
+    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ js.Any, js.Promise[Unit] | js.Any]
   ): Unit = js.native
   
   /**
@@ -33,7 +34,7 @@ trait IpcMain extends EventEmitter {
     */
   def handleOnce(
     channel: String,
-    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ js.Any, js.Promise[Unit] | _]
+    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ js.Any, js.Promise[Unit] | js.Any]
   ): Unit = js.native
   
   /**

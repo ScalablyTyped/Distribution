@@ -3,19 +3,17 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUssdMessage extends StObject {
   
-  var dataCodingScheme: Double = js.native
+  var dataCodingScheme: Double
   
-  def getPayload(): Uint8Array = js.native
+  def getPayload(): Uint8Array
   
-  var payloadAsText: String = js.native
+  var payloadAsText: String
   
-  def setPayload(value: Uint8Array): Unit = js.native
+  def setPayload(value: Uint8Array): Unit
 }
 object IUssdMessage {
   

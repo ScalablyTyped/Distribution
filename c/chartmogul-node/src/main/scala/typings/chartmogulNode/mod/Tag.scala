@@ -4,26 +4,25 @@ import typings.chartmogulNode.commonMod.Entries
 import typings.chartmogulNode.commonMod.Strings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tag {
   
-  @JSImport("chartmogul-node", "Tag.add")
+  @JSImport("chartmogul-node", "Tag")
   @js.native
-  def add(config: Config, uuid: String, data: Tags): js.Promise[Tags] = js.native
-  @JSImport("chartmogul-node", "Tag.add")
-  @js.native
-  def add(config: Config, uuid: String, data: TagsWithEmail): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chartmogul-node", "Tag.remove")
-  @js.native
-  def remove(config: Config, uuid: String, data: Tags): js.Promise[Tags] = js.native
+  @scala.inline
+  def add(config: Config, uuid: String, data: Tags): js.Promise[Tags] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tags]]
+  @scala.inline
+  def add(config: Config, uuid: String, data: TagsWithEmail): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
   
-  @js.native
+  @scala.inline
+  def remove(config: Config, uuid: String, data: Tags): js.Promise[Tags] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tags]]
+  
   trait Tags extends StObject {
     
-    var tags: Strings = js.native
+    var tags: Strings
   }
   object Tags {
     
@@ -44,12 +43,11 @@ object Tag {
     }
   }
   
-  @js.native
   trait TagsWithEmail extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var tags: Strings = js.native
+    var tags: Strings
   }
   object TagsWithEmail {
     

@@ -10,7 +10,6 @@ import typings.xmldsigjs.signatureMethodMod.SignatureMethod
 import typings.xmldsigjs.xmlMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoConfigMod {
@@ -20,6 +19,10 @@ object cryptoConfigMod {
   class CryptoConfig () extends StObject
   /* static members */
   object CryptoConfig {
+    
+    @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates Transform from given name
@@ -31,27 +34,21 @@ object cryptoConfigMod {
       *
       * @memberOf CryptoConfig
       */
-    @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig.CreateFromName")
-    @js.native
-    def CreateFromName(): Transform = js.native
-    @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig.CreateFromName")
-    @js.native
-    def CreateFromName(name: String): Transform = js.native
+    @scala.inline
+    def CreateFromName(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromName")().asInstanceOf[Transform]
+    @scala.inline
+    def CreateFromName(name: String): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromName")(name.asInstanceOf[js.Any]).asInstanceOf[Transform]
     
-    @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig.CreateHashAlgorithm")
-    @js.native
-    def CreateHashAlgorithm(namespace: String): HashAlgorithm = js.native
+    @scala.inline
+    def CreateHashAlgorithm(namespace: String): HashAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateHashAlgorithm")(namespace.asInstanceOf[js.Any]).asInstanceOf[HashAlgorithm]
     
-    @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig.CreateSignatureAlgorithm")
-    @js.native
-    def CreateSignatureAlgorithm(method: SignatureMethod): SignatureAlgorithm = js.native
+    @scala.inline
+    def CreateSignatureAlgorithm(method: SignatureMethod): SignatureAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSignatureAlgorithm")(method.asInstanceOf[js.Any]).asInstanceOf[SignatureAlgorithm]
     
-    @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig.GetHashAlgorithm")
-    @js.native
-    def GetHashAlgorithm(algorithm: AlgorithmIdentifier): IHashAlgorithm = js.native
+    @scala.inline
+    def GetHashAlgorithm(algorithm: AlgorithmIdentifier): IHashAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHashAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[IHashAlgorithm]
     
-    @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig.GetSignatureAlgorithm")
-    @js.native
-    def GetSignatureAlgorithm(algorithm: Algorithm): ISignatureAlgorithm = js.native
+    @scala.inline
+    def GetSignatureAlgorithm(algorithm: Algorithm): ISignatureAlgorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSignatureAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[ISignatureAlgorithm]
   }
 }

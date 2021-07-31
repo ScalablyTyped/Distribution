@@ -2,19 +2,17 @@ package typings.carbonType.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWeight extends StObject {
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var fontWeight: Double = js.native
+  var fontWeight: Double
   
-  var letterSpacing: Double = js.native
+  var letterSpacing: Double
 }
 object FontWeight {
   

@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exceptions {
@@ -27,10 +26,10 @@ object exceptions {
   class InternalError protected ()
     extends typings.sawtoothSdk.exceptionsMod.InternalError {
     protected def this(message: String) = this()
-    protected def this(message: js.UndefOr[scala.Nothing], extendedData: Buffer) = this()
-    protected def this(message: js.UndefOr[scala.Nothing], extendedData: Uint8Array) = this()
     protected def this(message: String, extendedData: Buffer) = this()
     protected def this(message: String, extendedData: Uint8Array) = this()
+    protected def this(message: Unit, extendedData: Buffer) = this()
+    protected def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.InvalidTransaction")
@@ -38,10 +37,10 @@ object exceptions {
   class InvalidTransaction protected ()
     extends typings.sawtoothSdk.exceptionsMod.InvalidTransaction {
     protected def this(message: String) = this()
-    protected def this(message: js.UndefOr[scala.Nothing], extendedData: Buffer) = this()
-    protected def this(message: js.UndefOr[scala.Nothing], extendedData: Uint8Array) = this()
     protected def this(message: String, extendedData: Buffer) = this()
     protected def this(message: String, extendedData: Uint8Array) = this()
+    protected def this(message: Unit, extendedData: Buffer) = this()
+    protected def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions._TransactionProcessorError")
@@ -49,10 +48,10 @@ object exceptions {
   class TransactionProcessorError protected ()
     extends typings.sawtoothSdk.exceptionsMod.TransactionProcessorError {
     protected def this(message: String) = this()
-    protected def this(message: js.UndefOr[scala.Nothing], extendedData: Buffer) = this()
-    protected def this(message: js.UndefOr[scala.Nothing], extendedData: Uint8Array) = this()
     protected def this(message: String, extendedData: Buffer) = this()
     protected def this(message: String, extendedData: Uint8Array) = this()
+    protected def this(message: Unit, extendedData: Buffer) = this()
+    protected def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.ValidatorConnectionError")

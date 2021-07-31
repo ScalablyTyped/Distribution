@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntelligentTieringConfiguration extends StObject {
   
   /**
     * Specifies a bucket filter. The configuration only includes objects that meet the filter's criteria.
     */
-  var Filter: js.UndefOr[IntelligentTieringFilter] = js.native
+  var Filter: js.UndefOr[IntelligentTieringFilter] = js.undefined
   
   /**
     * The ID used to identify the S3 Intelligent-Tiering configuration.
     */
-  var Id: IntelligentTieringId = js.native
+  var Id: IntelligentTieringId
   
   /**
     * Specifies the status of the configuration.
     */
-  var Status: IntelligentTieringStatus = js.native
+  var Status: IntelligentTieringStatus
   
   /**
     * Specifies the S3 Intelligent-Tiering storage class tier of the configuration.
     */
-  var Tierings: TieringList = js.native
+  var Tierings: TieringList
 }
 object IntelligentTieringConfiguration {
   

@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortingExpressionsManager extends StObject {
   
   /**
@@ -16,11 +14,11 @@ trait SortingExpressionsManager extends StObject {
     * @param expr
     * @param feature
     */
-  def addSortingExpression(se: js.Object, expr: js.Object, feature: js.Object): Unit = js.native
+  def addSortingExpression(se: js.Object, expr: js.Object, feature: js.Object): Unit
   
-  def setFormattersForSortingExprs(exprs: js.Object, grid: js.Object): Unit = js.native
+  def setFormattersForSortingExprs(exprs: js.Object, grid: js.Object): Unit
   
-  def setGridInstance(grid: js.Object): Unit = js.native
+  def setGridInstance(grid: js.Object): Unit
 }
 object SortingExpressionsManager {
   

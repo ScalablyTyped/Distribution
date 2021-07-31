@@ -2,21 +2,19 @@ package typings.googleapis.bloggerV2Mod.bloggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPageList extends StObject {
   
   /**
     * The list of Pages for a Blog.
     */
-  var items: js.UndefOr[js.Array[SchemaPage]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPage]] = js.undefined
   
   /**
     * The kind of this entity. Always blogger#pageList
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaPageList {
   

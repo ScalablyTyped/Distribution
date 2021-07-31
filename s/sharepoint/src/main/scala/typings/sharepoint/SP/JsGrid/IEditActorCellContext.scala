@@ -3,27 +3,25 @@ package typings.sharepoint.SP.JsGrid
 import typings.sharepoint.anon.Bottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditActorCellContext extends StObject {
   
-  def SetCurrentValue(value: js.Any): Unit = js.native
+  def SetCurrentValue(value: js.Any): Unit
   
-  var cellExpandSpace: Bottom = js.native
+  var cellExpandSpace: Bottom
   
-  var column: ColumnInfo = js.native
+  var column: ColumnInfo
   
-  var field: GridField = js.native
+  var field: GridField
   
-  var fieldKey: String = js.native
+  var fieldKey: String
   
-  var originalValue: IValue = js.native
+  var originalValue: IValue
   
-  var propType: IPropertyType = js.native
+  var propType: IPropertyType
   
-  var record: IRecord = js.native
+  var record: IRecord
 }
 object IEditActorCellContext {
   

@@ -2,29 +2,29 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetModelSnapshots[T] extends Generic {
+trait MlGetModelSnapshots[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var desc: js.UndefOr[Boolean] = js.native
+  var desc: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var snapshot_id: js.UndefOr[String] = js.native
+  var snapshot_id: js.UndefOr[String] = js.undefined
   
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object MlGetModelSnapshots {
   
@@ -35,7 +35,7 @@ object MlGetModelSnapshots {
   }
   
   @scala.inline
-  implicit class MlGetModelSnapshotsMutableBuilder[Self <: MlGetModelSnapshots[_], T] (val x: Self with MlGetModelSnapshots[T]) extends AnyVal {
+  implicit class MlGetModelSnapshotsMutableBuilder[Self <: MlGetModelSnapshots[?], T] (val x: Self & MlGetModelSnapshots[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

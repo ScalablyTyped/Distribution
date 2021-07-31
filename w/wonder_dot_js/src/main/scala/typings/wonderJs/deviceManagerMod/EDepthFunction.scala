@@ -1,65 +1,63 @@
 package typings.wonderJs.deviceManagerMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EDepthFunction extends js.Object
-
+sealed trait EDepthFunction extends StObject
 @JSImport("wonder.js/dist/es2015/device/DeviceManager", "EDepthFunction")
 @js.native
-object EDepthFunction extends js.Object {
-  @js.native
-  sealed trait ALWAYS extends EDepthFunction
-  
-  @js.native
-  sealed trait EQUAL extends EDepthFunction
-  
-  @js.native
-  sealed trait GEQUAL extends EDepthFunction
-  
-  @js.native
-  sealed trait GREATER extends EDepthFunction
-  
-  @js.native
-  sealed trait LEQUAL extends EDepthFunction
-  
-  @js.native
-  sealed trait LESS extends EDepthFunction
-  
-  @js.native
-  sealed trait NEVER extends EDepthFunction
-  
-  @js.native
-  sealed trait NOTEQUAL extends EDepthFunction
+object EDepthFunction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EDepthFunction with Double] = js.native
-  /* 1 */ @js.native
-  object ALWAYS extends TopLevel[ALWAYS with Double]
+  def apply(value: Double): js.UndefOr[EDepthFunction & Double] = js.native
   
-  /* 4 */ @js.native
-  object EQUAL extends TopLevel[EQUAL with Double]
+  @js.native
+  sealed trait ALWAYS
+    extends StObject
+       with EDepthFunction
+  /* 1 */ val ALWAYS: typings.wonderJs.deviceManagerMod.EDepthFunction.ALWAYS & Double = js.native
   
-  /* 5 */ @js.native
-  object GEQUAL extends TopLevel[GEQUAL with Double]
+  @js.native
+  sealed trait EQUAL
+    extends StObject
+       with EDepthFunction
+  /* 4 */ val EQUAL: typings.wonderJs.deviceManagerMod.EDepthFunction.EQUAL & Double = js.native
   
-  /* 6 */ @js.native
-  object GREATER extends TopLevel[GREATER with Double]
+  @js.native
+  sealed trait GEQUAL
+    extends StObject
+       with EDepthFunction
+  /* 5 */ val GEQUAL: typings.wonderJs.deviceManagerMod.EDepthFunction.GEQUAL & Double = js.native
   
-  /* 3 */ @js.native
-  object LEQUAL extends TopLevel[LEQUAL with Double]
+  @js.native
+  sealed trait GREATER
+    extends StObject
+       with EDepthFunction
+  /* 6 */ val GREATER: typings.wonderJs.deviceManagerMod.EDepthFunction.GREATER & Double = js.native
   
-  /* 2 */ @js.native
-  object LESS extends TopLevel[LESS with Double]
+  @js.native
+  sealed trait LEQUAL
+    extends StObject
+       with EDepthFunction
+  /* 3 */ val LEQUAL: typings.wonderJs.deviceManagerMod.EDepthFunction.LEQUAL & Double = js.native
   
-  /* 0 */ @js.native
-  object NEVER extends TopLevel[NEVER with Double]
+  @js.native
+  sealed trait LESS
+    extends StObject
+       with EDepthFunction
+  /* 2 */ val LESS: typings.wonderJs.deviceManagerMod.EDepthFunction.LESS & Double = js.native
   
-  /* 7 */ @js.native
-  object NOTEQUAL extends TopLevel[NOTEQUAL with Double]
+  @js.native
+  sealed trait NEVER
+    extends StObject
+       with EDepthFunction
+  /* 0 */ val NEVER: typings.wonderJs.deviceManagerMod.EDepthFunction.NEVER & Double = js.native
   
+  @js.native
+  sealed trait NOTEQUAL
+    extends StObject
+       with EDepthFunction
+  /* 7 */ val NOTEQUAL: typings.wonderJs.deviceManagerMod.EDepthFunction.NOTEQUAL & Double = js.native
 }
-

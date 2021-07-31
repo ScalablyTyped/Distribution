@@ -2,36 +2,35 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource with narrative, extensions, and contained resources
   */
-@js.native
 trait DomainResource
-  extends ResourceBase
+  extends StObject
+     with ResourceBase
      with Resource {
   
   /**
     * Contained, inline Resources
     */
-  var contained: js.UndefOr[js.Array[Resource]] = js.native
+  var contained: js.UndefOr[js.Array[Resource]] = js.undefined
   
   /**
     * Additional Content defined by implementations
     */
-  var extension: js.UndefOr[js.Array[Extension]] = js.native
+  var `extension`: js.UndefOr[js.Array[Extension]] = js.undefined
   
   /**
     * Extensions that cannot be ignored
     */
-  var modifierExtension: js.UndefOr[js.Array[Extension]] = js.native
+  var modifierExtension: js.UndefOr[js.Array[Extension]] = js.undefined
   
   /**
     * Text summary of the resource, for human interpretation
     */
-  var text: js.UndefOr[Narrative] = js.native
+  var text: js.UndefOr[Narrative] = js.undefined
 }
 object DomainResource {
   

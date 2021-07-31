@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodesReloadSecureSettings[T] extends Generic {
+trait NodesReloadSecureSettings[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var node_id: js.UndefOr[String | js.Array[String]] = js.native
+  var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object NodesReloadSecureSettings {
   
@@ -23,7 +23,7 @@ object NodesReloadSecureSettings {
   }
   
   @scala.inline
-  implicit class NodesReloadSecureSettingsMutableBuilder[Self <: NodesReloadSecureSettings[_], T] (val x: Self with NodesReloadSecureSettings[T]) extends AnyVal {
+  implicit class NodesReloadSecureSettingsMutableBuilder[Self <: NodesReloadSecureSettings[?], T] (val x: Self & NodesReloadSecureSettings[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -2,16 +2,14 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetKeyRotationStatusResponse extends StObject {
   
   /**
     * A Boolean value that specifies whether key rotation is enabled.
     */
-  var KeyRotationEnabled: js.UndefOr[BooleanType] = js.native
+  var KeyRotationEnabled: js.UndefOr[BooleanType] = js.undefined
 }
 object GetKeyRotationStatusResponse {
   

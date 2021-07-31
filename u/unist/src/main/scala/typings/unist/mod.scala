@@ -3,17 +3,17 @@ package typings.unist
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   type Data = StringDictionary[js.Any]
   
-  @js.native
-  trait Literal extends Node {
+  trait Literal
+    extends StObject
+       with Node {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Literal {
     
@@ -32,25 +32,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Node
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Information from the ecosystem.
       */
-    var data: js.UndefOr[Data] = js.native
+    var data: js.UndefOr[Data] = js.undefined
     
     /**
       * Location of a node in a source document.
       * Must not be present if a node is generated.
       */
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
     /**
       * The variant of a node.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Node {
     
@@ -81,13 +81,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait Parent extends Node {
+  trait Parent
+    extends StObject
+       with Node {
     
     /**
       * List representing the children of a node.
       */
-    var children: js.Array[Node] = js.native
+    var children: js.Array[Node]
   }
   object Parent {
     
@@ -109,23 +110,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
     /**
       * Column in a source file (1-indexed integer).
       */
-    var column: Double = js.native
+    var column: Double
     
     /**
       * Line in a source file (1-indexed integer).
       */
-    var line: Double = js.native
+    var line: Double
     
     /**
       * Character in a source file (0-indexed integer).
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object Point {
     
@@ -152,24 +152,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
     /**
       * Place of the first character after the parsed source region.
       */
-    var end: Point = js.native
+    var end: Point
     
     /**
       * Start column at each index (plus start line) in the source region,
       * for elements that span multiple lines.
       */
-    var indent: js.UndefOr[js.Array[Double]] = js.native
+    var indent: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Place of the first character of the parsed source region.
       */
-    var start: Point = js.native
+    var start: Point
   }
   object Position {
     

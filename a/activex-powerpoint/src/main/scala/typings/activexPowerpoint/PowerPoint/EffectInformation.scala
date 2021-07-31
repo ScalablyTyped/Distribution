@@ -3,34 +3,32 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EffectInformation extends StObject {
   
-  val AfterEffect: MsoAnimAfterEffect = js.native
+  val AfterEffect: MsoAnimAfterEffect
   
-  val AnimateBackground: MsoTriState = js.native
+  val AnimateBackground: MsoTriState
   
-  val AnimateTextInReverse: MsoTriState = js.native
+  val AnimateTextInReverse: MsoTriState
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val BuildByLevelEffect: MsoAnimateByLevel = js.native
+  val BuildByLevelEffect: MsoAnimateByLevel
   
-  val Dim: ColorFormat = js.native
+  val Dim: ColorFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings = js.native
+  val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings
   
   @JSName("PowerPoint.EffectInformation_typekey")
-  var PowerPointDotEffectInformation_typekey: EffectInformation = js.native
+  var PowerPointDotEffectInformation_typekey: EffectInformation
   
-  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect = js.native
+  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect
   
-  val TextUnitEffect: MsoAnimTextUnitEffect = js.native
+  val TextUnitEffect: MsoAnimTextUnitEffect
 }
 object EffectInformation {
   

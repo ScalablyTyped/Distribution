@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxRoundPanel control.
   */
 @js.native
-trait ASPxClientRoundPanel extends ASPxClientPanelBase {
+trait ASPxClientRoundPanel
+  extends StObject
+     with ASPxClientPanelBase {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

@@ -2,72 +2,70 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
   /**
     * Current running client. The app value can refer to the following table.
     */
-  var app: String = js.native
+  var app: String
   
   /**
     * Cellphone brand.
     */
-  var brand: String = js.native
+  var brand: String
   
   /**
     * Current battery percentage.
     */
-  var currentBattery: String = js.native
+  var currentBattery: String
   
-  var fontSizeSetting: Double = js.native
+  var fontSizeSetting: Double
   
-  var language: String = js.native
+  var language: String
   
   /**
     * Cellphone model.
     */
-  var model: String = js.native
+  var model: String
   
   /**
     * Device pixel ratio.
     */
-  var pixelRatio: Double = js.native
+  var pixelRatio: Double
   
   /**
     * System name: Android, iOS.
     */
-  var platform: String = js.native
+  var platform: String
   
-  var screenHeight: Double = js.native
+  var screenHeight: Double
   
-  var screenWidth: Double = js.native
+  var screenWidth: Double
   
-  var statusBarHeight: Double = js.native
+  var statusBarHeight: Double
   
   /**
     * Device disk capacity.
     */
-  var storage: String = js.native
+  var storage: String
   
   /**
     * System version.
     */
-  var system: String = js.native
+  var system: String
   
-  var titleBarHeight: Double = js.native
+  var titleBarHeight: Double
   
   /**
     * App version number.
     */
-  var version: String = js.native
+  var version: String
   
-  var windowHeight: Double = js.native
+  var windowHeight: Double
   
-  var windowWidth: Double = js.native
+  var windowWidth: Double
 }
 object App {
   

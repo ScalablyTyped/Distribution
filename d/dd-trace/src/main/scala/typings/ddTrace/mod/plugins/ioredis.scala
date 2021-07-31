@@ -3,15 +3,15 @@ package typings.ddTrace.mod.plugins
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
   * [ioredis](https://github.com/luin/ioredis) module.
   */
-@js.native
-trait ioredis extends Instrumentation {
+trait ioredis
+  extends StObject
+     with Instrumentation {
   
   /**
     * List of commands that should not be instrumented. Takes precedence over
@@ -21,7 +21,7 @@ trait ioredis extends Instrumentation {
     */
   var blacklist: js.UndefOr[
     String | RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* command */ String, Boolean])])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of commands that should be instrumented.
@@ -30,7 +30,7 @@ trait ioredis extends Instrumentation {
     */
   var whitelist: js.UndefOr[
     String | RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* command */ String, Boolean])])
-  ] = js.native
+  ] = js.undefined
 }
 object ioredis {
   

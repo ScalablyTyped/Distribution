@@ -1,31 +1,46 @@
 package typings.tabris
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProgressEventInit extends EventInit {
+trait ProgressEventInit
+  extends StObject
+     with EventInit {
+  
   var lengthComputable: js.UndefOr[Boolean] = js.undefined
+  
   var loaded: js.UndefOr[Double] = js.undefined
+  
   var total: js.UndefOr[Double] = js.undefined
 }
-
 object ProgressEventInit {
+  
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    lengthComputable: js.UndefOr[Boolean] = js.undefined,
-    loaded: Int | Double = null,
-    total: Int | Double = null
-  ): ProgressEventInit = {
+  def apply(): ProgressEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(lengthComputable)) __obj.updateDynamic("lengthComputable")(lengthComputable.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressEventInit]
   }
+  
+  @scala.inline
+  implicit class ProgressEventInitMutableBuilder[Self <: ProgressEventInit] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
+    
+    @scala.inline
+    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    
+    @scala.inline
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+  }
 }
-

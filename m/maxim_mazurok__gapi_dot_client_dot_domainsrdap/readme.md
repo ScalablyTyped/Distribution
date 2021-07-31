@@ -10,9 +10,9 @@ TypeScript typings for Domains RDAP API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.domainsrdap |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 43 |
 | # dependents       | 1 |
-| # downloads        | 152 |
+| # downloads        | 3028 |
 | # stars            | 0 |
 
 ## Links

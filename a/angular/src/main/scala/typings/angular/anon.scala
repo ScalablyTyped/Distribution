@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.angular.mod.IController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Capacity extends StObject {
     
-    var capacity: js.UndefOr[Double] = js.native
+    var capacity: js.UndefOr[Double] = js.undefined
   }
   object Capacity {
     
@@ -33,18 +31,17 @@ object anon {
     }
   }
   
-  @js.native
   trait CodeName extends StObject {
     
-    var codeName: String = js.native
+    var codeName: String
     
-    var dot: Double = js.native
+    var dot: Double
     
-    var full: String = js.native
+    var full: String
     
-    var major: Double = js.native
+    var major: Double
     
-    var minor: Double = js.native
+    var minor: Double
   }
   object CodeName {
     
@@ -74,14 +71,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var requireBase: js.UndefOr[Boolean] = js.native
+    var requireBase: js.UndefOr[Boolean] = js.undefined
     
-    var rewriteLinks: js.UndefOr[Boolean] = js.native
+    var rewriteLinks: js.UndefOr[Boolean] = js.undefined
   }
   object Enabled {
     
@@ -114,18 +110,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
     /**
       * the id of the cache instance
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * the number of entries kept in the cache instance
       */
-    var size: Double = js.native
+    var size: Double
   }
   object Id {
     
@@ -146,10 +141,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Instance extends StObject {
     
-    var instance: IController = js.native
+    var instance: IController
   }
   object Instance {
     
@@ -169,5 +163,6 @@ object anon {
   
   @js.native
   trait Instantiable[T]
-    extends Instantiable1[/* args (repeated) */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, T]
 }

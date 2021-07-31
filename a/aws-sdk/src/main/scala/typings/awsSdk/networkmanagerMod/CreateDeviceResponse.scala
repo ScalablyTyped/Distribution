@@ -2,16 +2,14 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeviceResponse extends StObject {
   
   /**
     * Information about the device.
     */
-  var Device: js.UndefOr[typings.awsSdk.networkmanagerMod.Device] = js.native
+  var Device: js.UndefOr[typings.awsSdk.networkmanagerMod.Device] = js.undefined
 }
 object CreateDeviceResponse {
   

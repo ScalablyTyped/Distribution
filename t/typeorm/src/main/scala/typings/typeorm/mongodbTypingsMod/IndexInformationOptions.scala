@@ -2,23 +2,21 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexInformationOptions extends StObject {
   
   /**
     * Returns the full raw index information.
     */
-  var full: js.UndefOr[Boolean] = js.native
+  var full: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY,
     * ReadPreference.PRIMARY_PREFERRED, ReadPreference.SECONDARY,
     * ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
 }
 object IndexInformationOptions {
   

@@ -3,22 +3,21 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.TryStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TryStatement_
-  extends Node
+  extends StObject
+     with Node
      with Statement {
   
-  var block: BlockStatement_ = js.native
+  var block: BlockStatement_
   
-  var finalizer: BlockStatement_ = js.native
+  var finalizer: BlockStatement_
   
-  var handler: CatchClause_ = js.native
+  var handler: CatchClause_
   
   @JSName("type")
-  var type_TryStatement_ : TryStatement = js.native
+  var type_TryStatement_ : TryStatement
 }
 object TryStatement_ {
   
@@ -29,11 +28,10 @@ object TryStatement_ {
     finalizer: BlockStatement_,
     handler: CatchClause_,
     loc: SourceLocation,
-    start: Double,
-    `type`: TryStatement
+    start: Double
   ): TryStatement_ = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], finalizer = finalizer.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TryStatement")
     __obj.asInstanceOf[TryStatement_]
   }
   

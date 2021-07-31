@@ -2,48 +2,46 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Btreecheckpointgeneration extends StObject {
   
-  var `btree checkpoint generation`: Double = js.native
+  var `btree checkpoint generation`: Double
   
-  var `column-store fixed-size leaf pages`: Double = js.native
+  var `column-store fixed-size leaf pages`: Double
   
-  var `column-store internal pages`: Double = js.native
+  var `column-store internal pages`: Double
   
-  var `column-store variable-size RLE encoded values`: Double = js.native
+  var `column-store variable-size RLE encoded values`: Double
   
-  var `column-store variable-size deleted values`: Double = js.native
+  var `column-store variable-size deleted values`: Double
   
-  var `column-store variable-size leaf pages`: Double = js.native
+  var `column-store variable-size leaf pages`: Double
   
-  var `fixed-record size`: Double = js.native
+  var `fixed-record size`: Double
   
-  var `maximum internal page key size`: Double = js.native
+  var `maximum internal page key size`: Double
   
-  var `maximum internal page size`: Double = js.native
+  var `maximum internal page size`: Double
   
-  var `maximum leaf page key size`: Double = js.native
+  var `maximum leaf page key size`: Double
   
-  var `maximum leaf page size`: Double = js.native
+  var `maximum leaf page size`: Double
   
-  var `maximum leaf page value size`: Double = js.native
+  var `maximum leaf page value size`: Double
   
-  var `maximum tree depth`: Double = js.native
+  var `maximum tree depth`: Double
   
   @JSName("number of key/value pairs")
-  var `number of keySlashvalue pairs`: Double = js.native
+  var `number of keySlashvalue pairs`: Double
   
-  var `overflow pages`: Double = js.native
+  var `overflow pages`: Double
   
-  var `pages rewritten by compaction`: Double = js.native
+  var `pages rewritten by compaction`: Double
   
-  var `row-store internal pages`: Double = js.native
+  var `row-store internal pages`: Double
   
-  var `row-store leaf pages`: Double = js.native
+  var `row-store leaf pages`: Double
 }
 object Btreecheckpointgeneration {
   

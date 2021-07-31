@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesCanOptOut extends StObject {
   
-  var enumValues: CanOptOut = js.native
+  var enumValues: CanOptOut
 }
 object EnumValuesCanOptOut {
   

@@ -2,23 +2,21 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notes extends StObject {
   
-  var notes: js.UndefOr[js.Array[typings.evernote.mod.Types.Note]] = js.native
+  var notes: js.UndefOr[js.Array[typings.evernote.mod.Types.Note]] = js.undefined
   
-  var searchedWords: js.UndefOr[js.Array[String]] = js.native
+  var searchedWords: js.UndefOr[js.Array[String]] = js.undefined
   
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
-  var stoppedWords: js.UndefOr[js.Array[String]] = js.native
+  var stoppedWords: js.UndefOr[js.Array[String]] = js.undefined
   
-  var totalNotes: js.UndefOr[Double] = js.native
+  var totalNotes: js.UndefOr[Double] = js.undefined
   
-  var updateCount: js.UndefOr[Double] = js.native
+  var updateCount: js.UndefOr[Double] = js.undefined
 }
 object Notes {
   

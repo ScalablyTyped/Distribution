@@ -5,11 +5,11 @@ import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoJSONOptions[P] extends LayerOptions {
+trait GeoJSONOptions[P]
+  extends StObject
+     with LayerOptions {
   
   /**
     * A Function that will be used for converting GeoJSON coordinates to LatLngs.
@@ -20,7 +20,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
       /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]), 
       LatLng_
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A Function that will be used to decide whether to show a feature or not.
@@ -33,7 +33,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * }
     * ```
     */
-  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, P], Boolean]] = js.native
+  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, P], Boolean]] = js.undefined
   
   /**
     * A Function that will be called once for each created Feature, after it
@@ -45,7 +45,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * function (feature, layer) {}
     * ```
     */
-  var onEachFeature: js.UndefOr[js.Function2[/* feature */ Feature[GeometryObject, P], /* layer */ Layer, Unit]] = js.native
+  var onEachFeature: js.UndefOr[js.Function2[/* feature */ Feature[GeometryObject, P], /* layer */ Layer, Unit]] = js.undefined
   
   /**
     * A Function defining how GeoJSON points spawn Leaflet layers.
@@ -60,7 +60,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * }
     * ```
     */
-  var pointToLayer: js.UndefOr[js.Function2[/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_, Layer]] = js.native
+  var pointToLayer: js.UndefOr[js.Function2[/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_, Layer]] = js.undefined
   
   // should import GeoJSON typings
   /**
@@ -75,7 +75,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * }
     * ```
     */
-  var style: js.UndefOr[PathOptions | StyleFunction[P]] = js.native
+  var style: js.UndefOr[PathOptions | StyleFunction[P]] = js.undefined
 }
 object GeoJSONOptions {
   
@@ -86,7 +86,7 @@ object GeoJSONOptions {
   }
   
   @scala.inline
-  implicit class GeoJSONOptionsMutableBuilder[Self <: GeoJSONOptions[_], P] (val x: Self with GeoJSONOptions[P]) extends AnyVal {
+  implicit class GeoJSONOptionsMutableBuilder[Self <: GeoJSONOptions[?], P] (val x: Self & GeoJSONOptions[P]) extends AnyVal {
     
     @scala.inline
     def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))

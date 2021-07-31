@@ -2,31 +2,29 @@ package typings.jqueryFancytree.Fancytree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslationTable extends StObject {
   
   /**
     * "Load error!"
     */
-  var loadError: js.UndefOr[String] = js.native
+  var loadError: js.UndefOr[String] = js.undefined
   
   /**
     * "Loading..."  // &#8230; would be escaped when escapeTitles is true
     */
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
   /**
     * "More..."
     */
-  var moreData: js.UndefOr[String] = js.native
+  var moreData: js.UndefOr[String] = js.undefined
   
   /**
     * "No data."
     */
-  var noData: js.UndefOr[String] = js.native
+  var noData: js.UndefOr[String] = js.undefined
 }
 object TranslationTable {
   

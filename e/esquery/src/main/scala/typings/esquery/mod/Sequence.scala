@@ -3,24 +3,23 @@ package typings.esquery.mod
 import typings.esquery.esqueryStrings.compound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sequence
-  extends MultiSelectorAtom
+  extends StObject
+     with MultiSelectorAtom
      with MultiSelector
      with Selector {
   
   @JSName("type")
-  var type_Sequence: compound = js.native
+  var type_Sequence: compound
 }
 object Sequence {
   
   @scala.inline
-  def apply(selectors: js.Array[SubjectSelector], `type`: compound): Sequence = {
+  def apply(selectors: js.Array[SubjectSelector]): Sequence = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("compound")
     __obj.asInstanceOf[Sequence]
   }
   

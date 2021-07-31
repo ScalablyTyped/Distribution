@@ -4,21 +4,19 @@ import typings.mfiles.MFiles.MFFolderListingItemGroupingMode
 import typings.mfiles.MFiles.MFFolderListingViewMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFolderListingUIState extends StObject {
   
-  var ColumnSortings: IFolderListingColumnSortings = js.native
+  var ColumnSortings: IFolderListingColumnSortings
   
-  var Columns: IFolderListingColumns = js.native
+  var Columns: IFolderListingColumns
   
-  var GroupingMode: MFFolderListingItemGroupingMode = js.native
+  var GroupingMode: MFFolderListingItemGroupingMode
   
-  var IconSize: Double = js.native
+  var IconSize: Double
   
-  var ViewMode: MFFolderListingViewMode = js.native
+  var ViewMode: MFFolderListingViewMode
 }
 object IFolderListingUIState {
   

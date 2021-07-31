@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMaterialProperties extends StObject {
   
   /**
@@ -13,26 +11,26 @@ trait CIMMaterialProperties extends StObject {
     */
   var externalColorMixMode: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExternalColorMixMode * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The shininess.
     */
-  var shininess: js.UndefOr[Double] = js.native
+  var shininess: js.UndefOr[Double] = js.undefined
   
   /**
     * The specular color.
     */
-  var specularColor: js.UndefOr[js.Array[Double]] = js.native
+  var specularColor: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialProperties = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialProperties
 }
 object CIMMaterialProperties {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialProperties): CIMMaterialProperties = {
+  def apply(): CIMMaterialProperties = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMaterialProperties")
     __obj.asInstanceOf[CIMMaterialProperties]
   }
   

@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingGroupDocument extends StObject {
   
   /**
     * The thing group attributes.
     */
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
   /**
     * Parent group names.
     */
-  var parentGroupNames: js.UndefOr[ThingGroupNameList] = js.native
+  var parentGroupNames: js.UndefOr[ThingGroupNameList] = js.undefined
   
   /**
     * The thing group description.
     */
-  var thingGroupDescription: js.UndefOr[ThingGroupDescription] = js.native
+  var thingGroupDescription: js.UndefOr[ThingGroupDescription] = js.undefined
   
   /**
     * The thing group ID.
     */
-  var thingGroupId: js.UndefOr[ThingGroupId] = js.native
+  var thingGroupId: js.UndefOr[ThingGroupId] = js.undefined
   
   /**
     * The thing group name.
     */
-  var thingGroupName: js.UndefOr[ThingGroupName] = js.native
+  var thingGroupName: js.UndefOr[ThingGroupName] = js.undefined
 }
 object ThingGroupDocument {
   

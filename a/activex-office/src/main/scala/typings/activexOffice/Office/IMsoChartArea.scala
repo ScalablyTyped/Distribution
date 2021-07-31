@@ -2,56 +2,54 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMsoChartArea extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Border: IMsoBorder = js.native
+  val Border: IMsoBorder
   
-  def Clear(): js.Any = js.native
+  def Clear(): js.Any
   
-  def ClearContents(): js.Any = js.native
+  def ClearContents(): js.Any
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  def Copy(): js.Any = js.native
+  def Copy(): js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Font: ChartFont = js.native
+  val Font: ChartFont
   
-  val Format: IMsoChartFormat = js.native
+  val Format: IMsoChartFormat
   
-  var Height: Double = js.native
+  var Height: Double
   
-  val Interior: IMsoInterior = js.native
+  val Interior: IMsoInterior
   
-  var Left: Double = js.native
+  var Left: Double
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.IMsoChartArea_typekey")
-  var OfficeDotIMsoChartArea_typekey: IMsoChartArea = js.native
+  var OfficeDotIMsoChartArea_typekey: IMsoChartArea
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RoundedCorners: Boolean = js.native
+  var RoundedCorners: Boolean
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Shadow: Boolean = js.native
+  var Shadow: Boolean
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object IMsoChartArea {
   

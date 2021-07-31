@@ -2,7 +2,6 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.KiiClause")
 @js.native
 class KiiClause ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiClause
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.KiiClause
 object KiiClause {
+  
+  @JSGlobal("KiiCloud.KiiClause")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create a KiiClause with the AND operator concatenating multiple KiiClause objects
@@ -23,9 +27,8 @@ object KiiClause {
     *     KiiClause clause = KiiClause.and(clause1, clause2, clause3, . . .)
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.and")
-  @js.native
-  def and(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def and(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(A.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key == value)
@@ -34,9 +37,8 @@ object KiiClause {
     * @param value the value to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.equals")
-  @js.native
-  def equals_(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def equals_(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create a clause of geo box. This clause inquires objects in the specified rectangle.
@@ -52,13 +54,12 @@ object KiiClause {
     *             <li>northEast or southWest is not a reference of KiiGeoPoint.</li>
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.geoBox")
-  @js.native
+  @scala.inline
   def geoBox(
     key: String,
     northEast: typings.kiiCloudSdk.KiiCloud.KiiGeoPoint,
     southWest: typings.kiiCloudSdk.KiiCloud.KiiGeoPoint
-  ): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  ): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("geoBox")(key.asInstanceOf[js.Any], northEast.asInstanceOf[js.Any], southWest.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create a clause of geo distance. This clause inquires objects in the specified circle.
@@ -102,14 +103,13 @@ object KiiClause {
     *             bucket.executeQuery(query, queryCallback);
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.geoDistance")
-  @js.native
+  @scala.inline
   def geoDistance(
     key: String,
     center: typings.kiiCloudSdk.KiiCloud.KiiGeoPoint,
     radius: Double,
     putDistanceInto: String
-  ): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  ): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(key.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], putDistanceInto.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key > value)
@@ -118,9 +118,8 @@ object KiiClause {
     * @param value the value to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.greaterThan")
-  @js.native
-  def greaterThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def greaterThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key >= value)
@@ -129,9 +128,8 @@ object KiiClause {
     * @param value the value to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.greaterThanOrEqual")
-  @js.native
-  def greaterThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def greaterThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThanOrEqual")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression to returns all entities that have a specified field and type.
@@ -140,9 +138,8 @@ object KiiClause {
     * @param fieldType The type of the content of the field. The type of the content of the field must be provided, possible values are "STRING", "INTEGER", "DECIMAL" and "BOOLEAN".
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.hasField")
-  @js.native
-  def hasField(key: String, fieldType: String): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def hasField(key: String, fieldType: String): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("hasField")(key.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key in values)
@@ -151,9 +148,8 @@ object KiiClause {
     * @param values to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.inClause")
-  @js.native
-  def inClause(key: String, values: js.Array[_]): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def inClause(key: String, values: js.Array[js.Any]): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("inClause")(key.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key < value)
@@ -162,9 +158,8 @@ object KiiClause {
     * @param value the value to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.lessThan")
-  @js.native
-  def lessThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def lessThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key <= value)
@@ -173,9 +168,8 @@ object KiiClause {
     * @param value the value to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.lessThanOrEqual")
-  @js.native
-  def lessThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def lessThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThanOrEqual")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create a KiiClause with the NOT operator concatenating a KiiClause object
@@ -186,9 +180,8 @@ object KiiClause {
     * @param clause KiiClause object to negate
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.not")
-  @js.native
-  def not(clause: typings.kiiCloudSdk.KiiCloud.KiiClause): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def not(clause: typings.kiiCloudSdk.KiiCloud.KiiClause): typings.kiiCloudSdk.KiiCloud.KiiClause = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(clause.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key != value)
@@ -197,9 +190,8 @@ object KiiClause {
     * @param value the value to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.notEquals")
-  @js.native
-  def notEquals(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def notEquals(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("notEquals")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create a KiiClause with the OR operator concatenating multiple KiiClause objects
@@ -213,9 +205,8 @@ object KiiClause {
     *     KiiClause clause = KiiClause.or(clause1, clause2, clause3, . . .)
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.or")
-  @js.native
-  def or(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def or(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(A.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
   
   /**
     * Create an expression of the form (key STARTS WITH value)
@@ -224,7 +215,6 @@ object KiiClause {
     * @param value the value to compare
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiClause.startsWith")
-  @js.native
-  def startsWith(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  @scala.inline
+  def startsWith(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiClause]
 }

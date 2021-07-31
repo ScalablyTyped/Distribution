@@ -3,15 +3,13 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.GapType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: js.UndefOr[GapType] = js.native
+  var column: js.UndefOr[GapType] = js.undefined
   
-  var row: js.UndefOr[GapType] = js.native
+  var row: js.UndefOr[GapType] = js.undefined
 }
 object Column {
   

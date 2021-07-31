@@ -2,112 +2,110 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MongodbFindOneOptions extends StObject {
   
   /**
     * Set the batchSize for the getMoreCommand when iterating over the query results.
     */
-  var batchSize: js.UndefOr[scala.Double] = js.native
+  var batchSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * You can put a $comment field on a query to make looking in the profiler logs simpler.
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Explain the query instead of returning the data.
     */
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fields to return in the query. Object of fields to include or exclude (not both), {'a':1}.
     */
-  var fields: js.UndefOr[js.Object] = js.native
+  var fields: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Tell the query to use specific indexes in the query. Object of indexes to use, {'_id':1}.
     */
-  var hint: js.UndefOr[js.Object] = js.native
+  var hint: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Sets the limit of documents returned in the query.
     */
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Set index bounds.
     */
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Limit the number of items to scan.
     */
-  var maxScan: js.UndefOr[scala.Double] = js.native
+  var maxScan: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Number of milliseconds to wait before aborting the query.
     */
-  var maxTimeMs: js.UndefOr[scala.Double] = js.native
+  var maxTimeMs: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Set index bounds.
     */
-  var min: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Specify if the cursor should return partial results when querying against a sharded system.
     */
-  var partial: js.UndefOr[Boolean] = js.native
+  var partial: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return document results as raw BSON buffers.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
     * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * Only return the index key.
     */
-  var returnKey: js.UndefOr[Boolean] = js.native
+  var returnKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show disk location of results.
     */
-  var showDiskLoc: js.UndefOr[Boolean] = js.native
+  var showDiskLoc: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to skip N documents ahead in your query (useful for pagination).
     */
-  var skip: js.UndefOr[scala.Double] = js.native
+  var skip: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Snapshot query.
     */
-  var snapshot: js.UndefOr[Boolean] = js.native
+  var snapshot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to sort the documents coming back from the query. Array of indexes, [['a', 1]] etc.
     */
-  var sort: js.UndefOr[js.Array[_] | js.Object] = js.native
+  var sort: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
   
   /**
     * Specify if the cursor is tailable.
     */
-  var tailable: js.UndefOr[Boolean] = js.native
+  var tailable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify if the cursor can timeout.
     */
-  var timeout: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Boolean] = js.undefined
 }
 object MongodbFindOneOptions {
   
@@ -223,7 +221,7 @@ object MongodbFindOneOptions {
     def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
     @scala.inline
-    def setSort(value: js.Array[_] | js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    def setSort(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)

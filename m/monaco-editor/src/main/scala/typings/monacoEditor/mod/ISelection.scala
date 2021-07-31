@@ -2,31 +2,29 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISelection extends StObject {
   
   /**
     * The column on `positionLineNumber` where the selection has ended.
     */
-  val positionColumn: Double = js.native
+  val positionColumn: Double
   
   /**
     * The line number on which the selection has ended.
     */
-  val positionLineNumber: Double = js.native
+  val positionLineNumber: Double
   
   /**
     * The column on `selectionStartLineNumber` where the selection has started.
     */
-  val selectionStartColumn: Double = js.native
+  val selectionStartColumn: Double
   
   /**
     * The line number on which the selection has started.
     */
-  val selectionStartLineNumber: Double = js.native
+  val selectionStartLineNumber: Double
 }
 object ISelection {
   

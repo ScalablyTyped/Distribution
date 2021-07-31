@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartAxisFormat.toJSON()`. */
-@js.native
 trait ChartAxisFormatData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartAxisFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var font: js.UndefOr[ChartFontData] = js.native
+  var font: js.UndefOr[ChartFontData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ChartAxisFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var line: js.UndefOr[ChartLineFormatData] = js.native
+  var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }
 object ChartAxisFormatData {
   

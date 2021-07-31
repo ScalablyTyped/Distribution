@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ModelerSettings")
@@ -45,9 +44,8 @@ object ModelerSettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ModelerSettings.create")
-  @js.native
-  def create(model: IModel): ModelerSettings = js.native
+  @scala.inline
+  def create(model: IModel): ModelerSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ModelerSettings]
   
   /**
     * Creates and returns a new ModelerSettings instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object ModelerSettings {
     * of the parent ProjectSettings element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ModelerSettings.createIn")
-  @js.native
-  def createIn(container: ProjectSettings): ModelerSettings = js.native
+  @scala.inline
+  def createIn(container: ProjectSettings): ModelerSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ModelerSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ModelerSettings.structureTypeName")

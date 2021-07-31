@@ -3,11 +3,11 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMemento extends IBase {
+trait IMemento
+  extends StObject
+     with IBase {
   
   /** [Method] Captures the specified properties from the target object in this memento
     * @param props String/String[] The property or array of properties to capture.
@@ -15,12 +15,12 @@ trait IMemento extends IBase {
     */
   var capture: js.UndefOr[
     js.Function2[/* props */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes the specified properties from this memento
     * @param props String/String[] The property or array of properties to remove.
     */
-  var remove: js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Restores the specified properties from this memento to the target object
     * @param props String/String[] The property or array of properties to restore.
@@ -34,7 +34,7 @@ trait IMemento extends IBase {
       /* target */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Restores all captured properties in this memento to the target object
     * @param clear Boolean True to remove the restored properties from this memento or false to keep them (default is true).
@@ -42,10 +42,10 @@ trait IMemento extends IBase {
     */
   var restoreAll: js.UndefOr[
     js.Function2[/* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Object) */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
 }
 object IMemento {
   

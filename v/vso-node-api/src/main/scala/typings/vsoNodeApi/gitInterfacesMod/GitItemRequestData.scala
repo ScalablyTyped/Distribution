@@ -2,31 +2,29 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitItemRequestData extends StObject {
   
   /**
     * Whether to include metadata for all items
     */
-  var includeContentMetadata: Boolean = js.native
+  var includeContentMetadata: Boolean
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
   /**
     * Collection of items to fetch, including path, version, and recursion level
     */
-  var itemDescriptors: js.Array[GitItemDescriptor] = js.native
+  var itemDescriptors: js.Array[GitItemDescriptor]
   
   /**
     * Whether to include shallow ref to commit that last changed each item
     */
-  var latestProcessedChange: Boolean = js.native
+  var latestProcessedChange: Boolean
 }
 object GitItemRequestData {
   

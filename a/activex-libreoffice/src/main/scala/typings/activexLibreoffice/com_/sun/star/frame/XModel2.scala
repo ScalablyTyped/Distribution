@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * enumeration of all currently connected controller objects. (not {@link getCurrentController()} only, which depends on focus)establish new view
   * controller factory methods, which will make it possible to create new views for this model.
   */
-@js.native
-trait XModel2 extends XModel {
+trait XModel2
+  extends StObject
+     with XModel {
   
   /**
     * provides the available names of the factory to be used to create views.
@@ -35,7 +35,7 @@ trait XModel2 extends XModel {
     * @returns a sequence of names of all supported views for this document.
     * @see createView
     */
-  val AvailableViewControllerNames: SafeArray[String] = js.native
+  val AvailableViewControllerNames: SafeArray[String]
   
   /**
     * provides list of all currently connected controller objects.
@@ -44,7 +44,7 @@ trait XModel2 extends XModel {
     * controller will be missing (if they was added after this enumeration was created).
     * @returns list of controller objects. Enumeration can be empty but not NULL.
     */
-  val Controllers: XEnumeration = js.native
+  val Controllers: XEnumeration
   
   /**
     * creates the default view instance for this model.
@@ -55,7 +55,7 @@ trait XModel2 extends XModel {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the given parameter was wrong
     * @throws com::sun::star::uno::Exception if creation of a new view failed by other reasons
     */
-  def createDefaultViewController(Frame: XFrame): XController2 = js.native
+  def createDefaultViewController(Frame: XFrame): XController2
   
   /**
     * creates a new view instance classified by the specified name and arguments.
@@ -70,7 +70,7 @@ trait XModel2 extends XModel {
     * @throws com::sun::star::lang::IllegalArgumentException if one of the given parameter was wrong
     * @throws com::sun::star::uno::Exception if creation of a new view failed by other reasons
     */
-  def createViewController(ViewName: String, Arguments: SeqEquiv[PropertyValue], Frame: XFrame): XController2 = js.native
+  def createViewController(ViewName: String, Arguments: SeqEquiv[PropertyValue], Frame: XFrame): XController2
   
   /**
     * provides the available names of the factory to be used to create views.
@@ -84,7 +84,7 @@ trait XModel2 extends XModel {
     * @returns a sequence of names of all supported views for this document.
     * @see createView
     */
-  def getAvailableViewControllerNames(): SafeArray[String] = js.native
+  def getAvailableViewControllerNames(): SafeArray[String]
   
   /**
     * provides list of all currently connected controller objects.
@@ -93,7 +93,7 @@ trait XModel2 extends XModel {
     * controller will be missing (if they was added after this enumeration was created).
     * @returns list of controller objects. Enumeration can be empty but not NULL.
     */
-  def getControllers(): XEnumeration = js.native
+  def getControllers(): XEnumeration
 }
 object XModel2 {
   

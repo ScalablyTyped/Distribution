@@ -2,10 +2,13 @@ package typings.lightSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("light-sdk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("light-sdk", "config")
   @js.native
@@ -23,16 +26,14 @@ object mod {
   @js.native
   val openAPI: js.Any = js.native
   
-  @JSImport("light-sdk", "register")
-  @js.native
-  def register(options: js.Any): Unit = js.native
+  @scala.inline
+  def register(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait CallbackResult extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var info: Info = js.native
+    var info: Info
   }
   object CallbackResult {
     
@@ -53,10 +54,9 @@ object mod {
     }
   }
   
-  @js.native
   trait CallbackResultNoData extends StObject {
     
-    var info: Info = js.native
+    var info: Info
   }
   object CallbackResultNoData {
     
@@ -74,12 +74,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Info extends StObject {
     
-    var error_code: String = js.native
+    var error_code: String
     
-    var error_message: String = js.native
+    var error_message: String
   }
   object Info {
     
@@ -100,7 +99,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Native_ extends StObject {
     
     /**
@@ -123,7 +121,7 @@ object mod {
       * 3. backgroundColor字段 ：设置红点的背景颜色
       * @param cb 功能处理后的回调函数
       */
-    def addButton(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def addButton(params: js.Any, cb: js.Function0[Unit]): Unit
     
     /**
       * 通过JS发送统计分析埋点事件
@@ -133,7 +131,7 @@ object mod {
       * @param params.duration -事件时长（毫秒），该字段可以为持续性事件标识事件持续的时长，默认值为0
       * @param cb 功能处理后的回调函数
       */
-    def analyticsSendEvent(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def analyticsSendEvent(params: js.Any, cb: js.Function0[Unit]): Unit
     
     /**
       * 通过js调用页面返回事件
@@ -141,7 +139,7 @@ object mod {
       * @param params.number - 返回的层数。如为1，则返回上一层。大于等于页面栈数量，则返回首页，小于等于0，则无效。不配置该字段，则默认返回上一层
       * @param cb 功能处理后的回调函数
       */
-    def back(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def back(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口页面中返回指定图片的base64编码字符串
@@ -156,12 +154,12 @@ object mod {
       * @param params.reverselyOrdered - 多选图片(即type为CAMERA_MUTIL-ALBUM或MUTIL-ALBUM)情况下相册选择器是否倒序显示，默认正序显示，仅支持iOS
       * @param cb 功能处理后的回调函数
       */
-    def chooseImage(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def chooseImage(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js调用关闭页面
       */
-    def close(params: Null, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def close(params: Null, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 用于向系统日历增加事件
@@ -174,7 +172,7 @@ object mod {
       * @param params.alarmOffset - 提前提醒时间，单位：分 ，默认值为0，即事件开始时间提醒.注意事项：类型必须为整数，入参小于0时为默认值
       * @param cb 功能处理后的回调函数
       */
-    def createCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def createCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 用于向系统日历删除事件
@@ -184,7 +182,7 @@ object mod {
       * @param params.id - 事件id
       * @param cb 功能处理后的回调函数
       */
-    def deleteCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def deleteCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口在网页中删除存储在native的属性
@@ -194,7 +192,7 @@ object mod {
       * @param params.scope - native存储域
       * @param cb 功能处理后的回调函数
       */
-    def deleteData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def deleteData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 文件预览，支持doc，docx ，xls，xlsx，pdf，txt，ppt ，pptX。
@@ -203,7 +201,7 @@ object mod {
       * @param params.title -预览页面标题，如果不传title，默认为文件名（参见注意事项
       * @param cb 功能处理后的回调函数
       */
-    def filePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def filePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 文件下载保存功能。文件支持doc，docx ，xls，xlsx，pdf，txt，ppt ，pptX。
@@ -214,7 +212,7 @@ object mod {
       * @param params.overwrite -是否覆盖（默认不覆盖）
       * @param cb 功能处理后的回调函数
       */
-    def fileSave(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def fileSave(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口返回指定字符串内容的二维码图片的base64编码字符串
@@ -224,35 +222,35 @@ object mod {
       * @param params.size - 二维码尺寸,默认为300x300，
       * @param cb 功能处理后的回调函数
       */
-    def genCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def genCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口在网页中返回指定文件ID对应的base64编码字符串
       * @param params - 接口入参
       * @param params.path - 文件ID,协议为LightResource://xxx.类型
       */
-    def getBase64(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getBase64(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口获取客户端系统剪贴板内容
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def getClipBoardContent(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getClipBoardContent(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js获取手机通讯录信息
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def getContactInfo(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getContactInfo(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口获得当前框架页面堆栈信息
       * @param params
       * @param cb
       */
-    def getCurrentPages(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getCurrentPages(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js调用获取经纬度
@@ -260,27 +258,27 @@ object mod {
       * @param params.scanSpan - 定位刷新间隔（单位毫秒）
       * @param cb 功能处理后的回调函数
       */
-    def getLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 获取当前是否可获取定位状态
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def getLocationStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getLocationStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口获取当前网络状态
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def getNetworkStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getNetworkStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口获取APP状态栏高度
       * @param params - 接口入参
       */
-    def getStatusBarHeight(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getStatusBarHeight(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过网页js获取客户端基本信息
@@ -288,14 +286,14 @@ object mod {
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def getSystemInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getSystemInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口获取设备唯一标识码
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def getUDID(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getUDID(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过网页js获取客户端版本信息
@@ -303,7 +301,7 @@ object mod {
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def getVersion(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def getVersion(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 修改导航栏透明度
@@ -311,7 +309,7 @@ object mod {
       * @param params.alpha -设置透明度，透明度设置越小越透明
       * @param cb 功能处理后的回调函数
       */
-    def headSetAlpha(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def headSetAlpha(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js设置导航栏搜索视图
@@ -323,7 +321,7 @@ object mod {
       * @param params.placeholderTextColor -搜索框文字颜色，格式为 #ffffff，默认灰色
       * @param cb 功能处理后的回调函数
       */
-    def headSetSearchView(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def headSetSearchView(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 苹果内购接口
@@ -332,7 +330,7 @@ object mod {
       * @param params.orderId -商户订单号(此订单号为客户自己业务生成的订单号，用于最后一步校验苹果收据时做检测唯一性使用，保证内购链路完整性)
       * @param cb 功能处理后的回调函数
       */
-    def iapPurchase(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def iapPurchase(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口在网页中返回指定图片的文件ID，协议格式为LightResource://xxx.image
@@ -341,7 +339,7 @@ object mod {
       * @param params.sizeType -original原图，compressed 压缩图，默认 ['original','compressed']
       * @param params.sourceType - 相册选取或者拍照，默认 ['camera','album']
       */
-    def imagePicker(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def imagePicker(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 图片预览功能，支持预览多张图片。
@@ -350,7 +348,7 @@ object mod {
       * @param params.selectedIndex -预览时的图片数组下标(从0开始)，表示展示当前选中的图片。默认情况为0
       * @param cb 功能处理后的回调函数
       */
-    def imagePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def imagePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口记录日志信息
@@ -359,7 +357,7 @@ object mod {
       * @param params.content -日志内容
       * @param cb 功能处理后的回调函数
       */
-    def log(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def log(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 打开native系统特殊的外部链接 如电话，邮箱，短信，网页，其他APP等。
@@ -367,7 +365,7 @@ object mod {
       * @param url - 电话: tel:10086 邮箱: mailto:abc@163.com 短信: sms:10086 网页:https://www.baidu.com App: weixin://
       * @param cb 功能处理后的回调函数
       */
-    def openURL(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def openURL(params: js.Any, cb: js.Function0[Unit]): Unit
     
     /**
       * 通过js获取是否含有手势或指纹验证信息
@@ -375,14 +373,14 @@ object mod {
       * @param params.verifyType    -验证方式（FP:指纹 GL:手势）
       * @param cb 功能处理后的回调函数
       */
-    def preVerifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def preVerifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过JS获取推送消息
       * @param params - 接口入参
       * @param cb 功能处理后的回调函数
       */
-    def pushAddEventListener(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def pushAddEventListener(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 当前用户添加标签
@@ -391,7 +389,7 @@ object mod {
       * @param params.tags -用户所传的标签集合
       * @param cb
       */
-    def pushAddTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def pushAddTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 当前用户删除标签
@@ -400,7 +398,7 @@ object mod {
       * @param params.tags -用户所传的标签集合
       * @param cb
       */
-    def pushDeleteTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def pushDeleteTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过JS获取推送registrationID
@@ -408,7 +406,7 @@ object mod {
       * @param params - 接口入参
       * @param cb
       */
-    def pushGetRegistrationID(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def pushGetRegistrationID(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 获取当前用户的所有标签
@@ -416,7 +414,7 @@ object mod {
       * @param params
       * @param cb
       */
-    def pushGetTags(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def pushGetTags(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过JS向客户端传递推送alias，用于推送服务器定点推送
@@ -424,7 +422,7 @@ object mod {
       * @param params.alias    -推送alias，为空字符串时为清除已有alias
       * @param cb 功能处理后的回调函数
       */
-    def pushSetAlias(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def pushSetAlias(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 用于向系统日历查询事件
@@ -434,7 +432,7 @@ object mod {
       * @param params.id - 事件id
       * @param cb 功能处理后的回调函数
       */
-    def queryCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def queryCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口在网页中查询存储在native的属性
@@ -445,7 +443,7 @@ object mod {
       * @param params.scope - native存储域
       * @param cb 功能处理后的回调函数
       */
-    def readData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def readData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js删除已添加的导航栏按钮
@@ -453,7 +451,7 @@ object mod {
       * @param params.string    -若为“left”，则删除左侧按钮，若为“right”，则删除右侧按钮，默认为“right”
       * @param cb 功能处理后的回调函数
       */
-    def removeButton(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def removeButton(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js关闭安全键盘
@@ -461,7 +459,7 @@ object mod {
       * @param params - 接口入参
       * @param cb
       */
-    def safekeyboardHide(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def safekeyboardHide(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js展现安全键盘
@@ -478,7 +476,7 @@ object mod {
       * @param params.titleText -设置键盘顶部自定义文案，不配置或者配置字符串为空默认为“恒生安全输入键盘”。注意:不配置字段时，安全键盘顶部文案默认显示为safekeyboard.gmu中的配置。如果gmu中再没有的话，则默认显示为”恒生安全输入键盘”。
       * @param cb
       */
-    def safekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def safekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js对web页或JSNative页面上的图片进行本地化处理，保存至本地相册
@@ -486,7 +484,7 @@ object mod {
       * @param params.image -图片数据，支持以下格式：1. 标准http或https图片链接 2. 图片base64编码，以data:image/png;base64, //开头
       * @param cb 功能处理后的回调函数
       */
-    def saveImage(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def saveImage(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口打开本地二维码扫描页面，扫码成功后在网页中返回扫码结果信息
@@ -498,7 +496,7 @@ object mod {
       * @param params.type - 扫一扫识别类型。参数值有2种可选，qrcode：二维码， barcode：条形码，不传或参数错误时默认为二维码效果
       * @param cb 功能处理后的回调函数
       */
-    def scanCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def scanCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js修改导航栏背景色
@@ -506,7 +504,7 @@ object mod {
       * @param params.color    -颜色，格式为 #ffffff
       * @param cb 功能处理后的回调函数
       */
-    def setBackgroundColor(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def setBackgroundColor(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口在web或者JSNative页面中复制内容到剪贴板
@@ -514,7 +512,7 @@ object mod {
       * @param params.value - 需要复制到剪贴板的内容，目前只支持字符串
       * @param cb 功能处理后的回调函数
       */
-    def setClipBoardContent(params: js.Any, cb: js.Any): Unit = js.native
+    def setClipBoardContent(params: js.Any, cb: js.Any): Unit
     
     /**
       * 通过js接口设置屏幕方向
@@ -522,7 +520,7 @@ object mod {
       * @param params.screenOrientation    -    landscape_left:左横屏  landscape_right：右横屏 portrait：竖屏
       * @param cb 功能处理后的回调函数
       */
-    def setScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def setScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口设置导航栏上下标题样式
@@ -531,7 +529,7 @@ object mod {
       * @param params.subtitle    -副标题
       * @param cb 功能处理后的回调函数
       */
-    def setSubtitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def setSubtitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口设置屏幕可旋转方向
@@ -539,7 +537,7 @@ object mod {
       * @param params.supportScreenOrientation    -    以数组形式，添加可设置方向。
       * @param cb 功能处理后的回调函数
       */
-    def setSupportScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def setSupportScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口控制是否隐藏状态栏
@@ -547,7 +545,7 @@ object mod {
       * @param params.hidden    -是否隐藏
       * @param cb 功能处理后的回调函数
       */
-    def setSystemStatusBar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def setSystemStatusBar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 设置首页tab小红点
@@ -557,7 +555,7 @@ object mod {
       * @param params.value -type为0时，忽略value字段值为""以外的所有值。若value为"",则清除红点。type为1时，value为必须字段，显示在红点中心的文本,若value为"",则清除文本
       * @param cb 功能处理后的回调函数
       */
-    def setTabBarBadge(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def setTabBarBadge(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口控制导航栏标题
@@ -565,7 +563,7 @@ object mod {
       * @param params.title    -标题
       * @param cb 功能处理后的回调函数
       */
-    def setTitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def setTitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 控制导航栏红点按钮是否隐藏
@@ -574,7 +572,7 @@ object mod {
       * @param params.badgeId    -红点Id,供查询红点信息使用。注意:要跟你创建导航栏红点时Id保持一致。
       * @param cb 功能处理后的回调函数
       */
-    def showNativeBadge(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def showNativeBadge(params: js.Any, cb: js.Function0[Unit]): Unit
     
     /**
       * 显示蒙层
@@ -583,7 +581,7 @@ object mod {
       * @param params.dataType -data的类型 strh5 或 url ，默认strh5 （strh5: 加载字符串格式HTML, url: 远程地址或本地www下的HTML）
       * @param params.callbackDataType - 返回的data字段类型 json 或 text，默认是text
       */
-    def showOverlay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def showOverlay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js判断各个平台app在设备上是否已安装
@@ -591,7 +589,7 @@ object mod {
       * @param params.type -平台类型，目前type值只支持'qq'，'weibo'，'weixin'三个
       * @param cb 功能处理后的回调函数
       */
-    def socialAppInstalled(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def socialAppInstalled(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 三方登录接口
@@ -599,7 +597,7 @@ object mod {
       * @param params.type            登录平台类别,只支持qq,weibo,weixin三个type
       * @param cb 功能处理后的回调函数
       */
-    def socialLogin(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def socialLogin(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js分享内容到各平台
@@ -626,7 +624,7 @@ object mod {
       * “system”(系统分享)”
       * @param cb 功能处理后的回调函数
       */
-    def socialShare(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def socialShare(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js接口录制音频
@@ -634,7 +632,7 @@ object mod {
       * @param params.duration -音频录制的最长时间，以秒为单位
       * @param cb 功能处理后的回调函数
       */
-    def startRecord(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def startRecord(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js调用关闭定位服务
@@ -642,13 +640,13 @@ object mod {
       * @param params - 接口入参
       * @param cb
       */
-    def stopLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def stopLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口结束录制音频
       * @param cb
       */
-    def stopRecord(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def stopRecord(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 用于实现网络请求
@@ -660,7 +658,7 @@ object mod {
       * @param params.body - HTTP 请求体
       * @param params.timeout - 请求超时时间，单位ms,默认30000ms
       */
-    def streamFetch(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def streamFetch(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口在网页或JsNative页面中切换底部tab
@@ -669,7 +667,7 @@ object mod {
       * @param params.index - 切换至下标为index位置的tab
       * @param cb 功能处理后的回调函数
       */
-    def switchTab(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def switchTab(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js传入经服务器加签后的订单信息(orderInfo)并调用相应支付渠道SDK的支付接口
@@ -679,7 +677,7 @@ object mod {
       * @param params.isSandBox            -是否进入沙箱环境（只对支付宝有效）
       * @param cb 功能处理后的回调函数
       */
-    def tradePay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def tradePay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * t通过js关闭交易键盘
@@ -688,7 +686,7 @@ object mod {
       * @param params.type -关闭的键盘类型（price:交易价格键盘 volume:交易量键盘 search:股票代码搜索键盘）
       * @param cb
       */
-    def tradekeyboardHide(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
+    def tradekeyboardHide(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
     
     /**
       * 通过js展现交易键盘
@@ -700,7 +698,7 @@ object mod {
       * @param params.describe -键盘工具类描述
       * @param cb
       */
-    def tradekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def tradekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 用于向系统日历更新相应事件信息
@@ -714,13 +712,13 @@ object mod {
       * @param params.alarmOffset - 提前提醒时间，单位：分 ，默认值为0，即事件开始时间提醒.注意事项：类型必须为整数，入参小于0时为默认值
       * @param cb 功能处理后的回调函数
       */
-    def updateCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def updateCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过JS获取登录用户信息
       * @param cb
       */
-    def userGetInfo(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def userGetInfo(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js登录用户
@@ -733,7 +731,7 @@ object mod {
       * @param params.logoutWhenExit            -app退出后是否注销当前用户
       * @param cb 功能处理后的回调函数
       */
-    def userLogin(params: js.Any, cb: js.Any): Unit = js.native
+    def userLogin(params: js.Any, cb: js.Any): Unit
     
     /**
       * 通过js设置登录用户信息
@@ -747,13 +745,13 @@ object mod {
       * @param params.extraInfo            -用户额外信息
       * @param cb 功能处理后的回调函数
       */
-    def userSetInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def userSetInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过JS退出用户登录
       * @param cb
       */
-    def userlogout(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def userlogout(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js调用手势或指纹验证
@@ -764,7 +762,7 @@ object mod {
       * @param params.additionalTitle    -附加方式点击按钮title
       * @param cb 功能处理后的回调函数
       */
-    def verifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def verifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
     
     /**
       * 通过js接口在网页中向native保存数据
@@ -776,7 +774,7 @@ object mod {
       * @param params.scope - native存储域
       * @param cb 功能处理后的回调函数
       */
-    def writeData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
+    def writeData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
   }
   object Native_ {
     

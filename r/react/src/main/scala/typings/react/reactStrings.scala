@@ -5,7 +5,6 @@ import typings.react.mod.SuspenseListRevealOrder
 import typings.react.mod.SuspenseListTailMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactStrings {
@@ -36,7 +35,9 @@ object reactStrings {
   def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   
   @js.native
-  sealed trait _empty extends HTMLAttributeReferrerPolicy
+  sealed trait _empty
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -152,7 +153,8 @@ object reactStrings {
   
   @js.native
   sealed trait backwards
-    extends SuspenseListRevealOrder
+    extends StObject
+       with SuspenseListRevealOrder
        with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
@@ -284,7 +286,8 @@ object reactStrings {
   
   @js.native
   sealed trait collapsed
-    extends SuspenseListTailMode
+    extends StObject
+       with SuspenseListTailMode
        with typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode
   @scala.inline
   def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
@@ -576,7 +579,8 @@ object reactStrings {
   
   @js.native
   sealed trait forwards
-    extends SuspenseListRevealOrder
+    extends StObject
+       with SuspenseListRevealOrder
        with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   @scala.inline
   def forwards: forwards = "forwards".asInstanceOf[forwards]
@@ -653,7 +657,8 @@ object reactStrings {
   
   @js.native
   sealed trait hidden
-    extends SuspenseListTailMode
+    extends StObject
+       with SuspenseListTailMode
        with typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
@@ -914,12 +919,16 @@ object reactStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait `no-referrer` extends HTMLAttributeReferrerPolicy
+  sealed trait `no-referrer`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
   
   @js.native
-  sealed trait `no-referrer-when-downgrade` extends HTMLAttributeReferrerPolicy
+  sealed trait `no-referrer-when-downgrade`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   
@@ -979,12 +988,16 @@ object reactStrings {
   def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait origin extends HTMLAttributeReferrerPolicy
+  sealed trait origin
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
-  sealed trait `origin-when-cross-origin` extends HTMLAttributeReferrerPolicy
+  sealed trait `origin-when-cross-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   
@@ -1149,7 +1162,9 @@ object reactStrings {
   def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   
   @js.native
-  sealed trait `same-origin` extends HTMLAttributeReferrerPolicy
+  sealed trait `same-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   
@@ -1224,12 +1239,16 @@ object reactStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait `strict-origin` extends HTMLAttributeReferrerPolicy
+  sealed trait `strict-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   
   @js.native
-  sealed trait `strict-origin-when-cross-origin` extends HTMLAttributeReferrerPolicy
+  sealed trait `strict-origin-when-cross-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
   
@@ -1380,7 +1399,8 @@ object reactStrings {
   
   @js.native
   sealed trait together
-    extends SuspenseListRevealOrder
+    extends StObject
+       with SuspenseListRevealOrder
        with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   @scala.inline
   def together: together = "together".asInstanceOf[together]
@@ -1426,7 +1446,9 @@ object reactStrings {
   def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait `unsafe-url` extends HTMLAttributeReferrerPolicy
+  sealed trait `unsafe-url`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   @scala.inline
   def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
   

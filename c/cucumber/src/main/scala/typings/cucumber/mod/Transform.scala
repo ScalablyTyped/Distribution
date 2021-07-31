@@ -3,23 +3,21 @@ package typings.cucumber.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transform extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var preferForRegexpMatch: js.UndefOr[Boolean] = js.native
+  var preferForRegexpMatch: js.UndefOr[Boolean] = js.undefined
   
-  var regexp: RegExp = js.native
+  var regexp: RegExp
   
-  def transformer(arg: String*): js.Any = js.native
+  def transformer(arg: String*): js.Any
   
-  var typeName: js.UndefOr[String] = js.native
+  var typeName: js.UndefOr[String] = js.undefined
   
-  var useForSnippets: js.UndefOr[Boolean] = js.native
+  var useForSnippets: js.UndefOr[Boolean] = js.undefined
 }
 object Transform {
   

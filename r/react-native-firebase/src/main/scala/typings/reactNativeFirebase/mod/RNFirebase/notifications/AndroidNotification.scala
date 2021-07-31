@@ -11,7 +11,6 @@ import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Progress
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Visibility
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.AndroidNotification")
@@ -77,23 +76,18 @@ class AndroidNotification () extends StObject {
   def setBadgeIconType(badgeIconType: BadgeIconType): Notification = js.native
   
   def setBigPicture(picture: String): Notification = js.native
-  def setBigPicture(
-    picture: String,
-    largeIcon: js.UndefOr[scala.Nothing],
-    contentTitle: js.UndefOr[scala.Nothing],
-    summaryText: String
-  ): Notification = js.native
-  def setBigPicture(picture: String, largeIcon: js.UndefOr[scala.Nothing], contentTitle: String): Notification = js.native
-  def setBigPicture(picture: String, largeIcon: js.UndefOr[scala.Nothing], contentTitle: String, summaryText: String): Notification = js.native
   def setBigPicture(picture: String, largeIcon: String): Notification = js.native
-  def setBigPicture(picture: String, largeIcon: String, contentTitle: js.UndefOr[scala.Nothing], summaryText: String): Notification = js.native
   def setBigPicture(picture: String, largeIcon: String, contentTitle: String): Notification = js.native
   def setBigPicture(picture: String, largeIcon: String, contentTitle: String, summaryText: String): Notification = js.native
+  def setBigPicture(picture: String, largeIcon: String, contentTitle: Unit, summaryText: String): Notification = js.native
+  def setBigPicture(picture: String, largeIcon: Unit, contentTitle: String): Notification = js.native
+  def setBigPicture(picture: String, largeIcon: Unit, contentTitle: String, summaryText: String): Notification = js.native
+  def setBigPicture(picture: String, largeIcon: Unit, contentTitle: Unit, summaryText: String): Notification = js.native
   
   def setBigText(text: String): Notification = js.native
-  def setBigText(text: String, contentTitle: js.UndefOr[scala.Nothing], summaryText: String): Notification = js.native
   def setBigText(text: String, contentTitle: String): Notification = js.native
   def setBigText(text: String, contentTitle: String, summaryText: String): Notification = js.native
+  def setBigText(text: String, contentTitle: Unit, summaryText: String): Notification = js.native
   
   def setCategory(category: Category): Notification = js.native
   

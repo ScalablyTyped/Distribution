@@ -11,8 +11,8 @@ Like NumPy, in JavaScript
 | Full name          | numjs |
 | Keywords           | ndarray, array, multi, multidimensional, dimension, higher, image, volume, webgl, tensor, matrix, linear, algebra, science, numerical, computing, stride, shape, numpy |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 36224 |
+| # dependents       | 18 |
+| # downloads        | 31179 |
 | # stars            | 7 |
 
 ## Links

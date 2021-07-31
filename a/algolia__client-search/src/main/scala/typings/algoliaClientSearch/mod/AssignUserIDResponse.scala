@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignUserIDResponse extends StObject {
   
   /**
     * Date of creation of the userId.
     */
-  var createdAt: String = js.native
+  var createdAt: String
 }
 object AssignUserIDResponse {
   

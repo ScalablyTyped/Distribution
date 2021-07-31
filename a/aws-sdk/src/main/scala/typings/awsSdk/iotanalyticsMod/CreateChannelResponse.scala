@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateChannelResponse extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var channelArn: js.UndefOr[ChannelArn] = js.native
+  var channelArn: js.UndefOr[ChannelArn] = js.undefined
   
   /**
     * The name of the channel.
     */
-  var channelName: js.UndefOr[ChannelName] = js.native
+  var channelName: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * How long, in days, message data is kept for the channel.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
 }
 object CreateChannelResponse {
   

@@ -11,25 +11,25 @@ import typings.std.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentMod extends Shortcut {
   
   @JSImport("rc-dialog/es/Dialog/Content", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[ContentProps with RefAttributes[ContentRef]] = js.native
+  val default: ForwardRefExoticComponent[ContentProps & RefAttributes[ContentRef]] = js.native
   
-  @js.native
-  trait ContentProps extends IDialogChildProps {
+  trait ContentProps
+    extends StObject
+       with IDialogChildProps {
     
-    var ariaId: String = js.native
+    var ariaId: String
     
-    var motionName: String = js.native
+    var motionName: String
     
-    var onClick: MouseEventHandler[Element] = js.native
+    var onClick: MouseEventHandler[Element]
     
-    def onVisibleChanged(visible: Boolean): Unit = js.native
+    def onVisibleChanged(visible: Boolean): Unit
   }
   object ContentProps {
     
@@ -62,14 +62,13 @@ object contentMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ContentRef extends StObject {
     
-    def changeActive(next: Boolean): Unit = js.native
+    def changeActive(next: Boolean): Unit
     
-    def focus(): Unit = js.native
+    def focus(): Unit
     
-    def getDOM(): HTMLDivElement = js.native
+    def getDOM(): HTMLDivElement
   }
   object ContentRef {
     
@@ -93,8 +92,8 @@ object contentMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[ContentProps with RefAttributes[ContentRef]]
+  type _To = ForwardRefExoticComponent[ContentProps & RefAttributes[ContentRef]]
   
   /* This means you don't have to write `default`, but can instead just say `contentMod.foo` */
-  override def _to: ForwardRefExoticComponent[ContentProps with RefAttributes[ContentRef]] = default
+  override def _to: ForwardRefExoticComponent[ContentProps & RefAttributes[ContentRef]] = default
 }

@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait Position extends StObject {
     * line length.
     * If a line number is negative, it defaults to 0.
     */
-  var character: Double = js.native
+  var character: Double
   
   /**
     * Line position in a document (zero-based).
     * If a line number is greater than the number of lines in a document, it defaults back to the number of lines in the document.
     * If a line number is negative, it defaults to 0.
     */
-  var line: Double = js.native
+  var line: Double
 }
 object Position {
   
@@ -34,21 +32,23 @@ object Position {
     __obj.asInstanceOf[Position]
   }
   
+  @JSImport("vscode-languageserver-types", "Position")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Position literal from the given line and character.
     * @param line The position's line.
     * @param character The position's character.
     */
-  @JSImport("vscode-languageserver-types", "Position.create")
-  @js.native
-  def create(line: Double, character: Double): Position = js.native
+  @scala.inline
+  def create(line: Double, character: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Position]
   
   /**
     * Checks whether the given liternal conforms to the [Position](#Position) interface.
     */
-  @JSImport("vscode-languageserver-types", "Position.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
   
   @scala.inline
   implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {

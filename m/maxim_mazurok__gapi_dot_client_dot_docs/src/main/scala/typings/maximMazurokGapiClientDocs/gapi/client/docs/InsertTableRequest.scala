@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertTableRequest extends StObject {
   
   /** The number of columns in the table. */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
   /**
     * Inserts the table at the end of the given header, footer or document body. A newline character will be inserted before the inserted table. Tables cannot be inserted inside a
     * footnote.
     */
-  var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.native
+  var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.undefined
   
   /**
     * Inserts the table at a specific model index. A newline character will be inserted before the inserted table, therefore the table start index will be at the specified location index
     * + 1. The table must be inserted inside the bounds of an existing Paragraph. For instance, it cannot be inserted at a table's start index (i.e. between an existing table and its
     * preceding paragraph). Tables cannot be inserted inside a footnote or equation.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /** The number of rows in the table. */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
 }
 object InsertTableRequest {
   

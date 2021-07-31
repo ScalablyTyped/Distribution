@@ -2,36 +2,34 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalStyle extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Borders: typings.activexWord.Word.Borders = js.native
+  var Borders: typings.activexWord.Word.Borders
   
-  var BottomPadding: Double = js.native
+  var BottomPadding: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Font: typings.activexWord.Word.Font = js.native
+  var Font: typings.activexWord.Word.Font
   
-  var LeftPadding: Double = js.native
+  var LeftPadding: Double
   
-  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
+  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RightPadding: Double = js.native
+  var RightPadding: Double
   
-  val Shading: typings.activexWord.Word.Shading = js.native
+  val Shading: typings.activexWord.Word.Shading
   
-  var TopPadding: Double = js.native
+  var TopPadding: Double
   
   @JSName("Word.ConditionalStyle_typekey")
-  var WordDotConditionalStyle_typekey: ConditionalStyle = js.native
+  var WordDotConditionalStyle_typekey: ConditionalStyle
 }
 object ConditionalStyle {
   

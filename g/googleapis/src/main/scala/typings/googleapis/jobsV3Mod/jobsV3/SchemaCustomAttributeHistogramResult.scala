@@ -3,31 +3,29 @@ package typings.googleapis.jobsV3Mod.jobsV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Custom attribute histogram result.
   */
-@js.native
 trait SchemaCustomAttributeHistogramResult extends StObject {
   
   /**
     * Stores the key of custom attribute the histogram is performed on.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Stores bucketed histogram counting result or min/max values for custom
     * attribute long values associated with `key`.
     */
-  var longValueHistogramResult: js.UndefOr[SchemaNumericBucketingResult] = js.native
+  var longValueHistogramResult: js.UndefOr[SchemaNumericBucketingResult] = js.undefined
   
   /**
     * Stores a map from the values of string custom field associated with `key`
     * to the number of jobs with that value in this histogram result.
     */
-  var stringValueHistogramResult: js.UndefOr[StringDictionary[Double]] = js.native
+  var stringValueHistogramResult: js.UndefOr[StringDictionary[Double]] = js.undefined
 }
 object SchemaCustomAttributeHistogramResult {
   

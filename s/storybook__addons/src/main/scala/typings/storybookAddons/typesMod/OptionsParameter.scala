@@ -6,17 +6,16 @@ import typings.std.PropertyKey
 import typings.storybookAddons.anon.Base
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsParameter
-  extends Object
+  extends StObject
+     with Object
      with /* key */ StringDictionary[js.Any] {
   
-  var storySort: js.UndefOr[StorySortParameter] = js.native
+  var storySort: js.UndefOr[StorySortParameter] = js.undefined
   
-  var theme: js.UndefOr[Base] = js.native
+  var theme: js.UndefOr[Base] = js.undefined
 }
 object OptionsParameter {
   

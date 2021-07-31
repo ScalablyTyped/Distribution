@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapMenu control.
   */
-@js.native
-trait BootstrapClientMenu extends ASPxClientMenu {
+trait BootstrapClientMenu
+  extends StObject
+     with ASPxClientMenu {
   
   /**
     * Selects the specified menu item within the Menu control on the client side.
     * @param item A BootstrapClientMenuItem object specifying the menu item to select.
     */
-  def SetSelectedItem(item: BootstrapClientMenuItem): Unit = js.native
+  def SetSelectedItem(item: BootstrapClientMenuItem): Unit
 }
 object BootstrapClientMenu {
   

@@ -2,39 +2,35 @@ package typings.webcola
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linklengthsMod {
   
-  @JSImport("webcola/dist/src/linklengths", "generateDirectedEdgeConstraints")
+  @JSImport("webcola/dist/src/linklengths", JSImport.Namespace)
   @js.native
-  def generateDirectedEdgeConstraints[Link](n: Double, links: js.Array[Link], axis: String, la: LinkSepAccessor[Link]): js.Array[IConstraint] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("webcola/dist/src/linklengths", "jaccardLinkLengths")
-  @js.native
-  def jaccardLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link]): Unit = js.native
-  @JSImport("webcola/dist/src/linklengths", "jaccardLinkLengths")
-  @js.native
-  def jaccardLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link], w: Double): Unit = js.native
+  @scala.inline
+  def generateDirectedEdgeConstraints[Link](n: Double, links: js.Array[Link], axis: String, la: LinkSepAccessor[Link]): js.Array[IConstraint] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDirectedEdgeConstraints")(n.asInstanceOf[js.Any], links.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[js.Array[IConstraint]]
   
-  @JSImport("webcola/dist/src/linklengths", "stronglyConnectedComponents")
-  @js.native
-  def stronglyConnectedComponents[Link](numVertices: Double, edges: js.Array[Link], la: LinkAccessor[Link]): js.Array[js.Array[Double]] = js.native
+  @scala.inline
+  def jaccardLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jaccardLinkLengths")(links.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def jaccardLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link], w: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jaccardLinkLengths")(links.asInstanceOf[js.Any], la.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("webcola/dist/src/linklengths", "symmetricDiffLinkLengths")
-  @js.native
-  def symmetricDiffLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link]): Unit = js.native
-  @JSImport("webcola/dist/src/linklengths", "symmetricDiffLinkLengths")
-  @js.native
-  def symmetricDiffLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link], w: Double): Unit = js.native
+  @scala.inline
+  def stronglyConnectedComponents[Link](numVertices: Double, edges: js.Array[Link], la: LinkAccessor[Link]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("stronglyConnectedComponents")(numVertices.asInstanceOf[js.Any], edges.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   
-  @js.native
+  @scala.inline
+  def symmetricDiffLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symmetricDiffLinkLengths")(links.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def symmetricDiffLinkLengths[Link](links: js.Array[Link], la: LinkLengthAccessor[Link], w: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symmetricDiffLinkLengths")(links.asInstanceOf[js.Any], la.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait DirectedEdgeConstraints extends StObject {
     
-    var axis: String = js.native
+    var axis: String
     
-    var gap: Double = js.native
+    var gap: Double
   }
   object DirectedEdgeConstraints {
     
@@ -55,14 +51,13 @@ object linklengthsMod {
     }
   }
   
-  @js.native
   trait IConstraint extends StObject {
     
-    var gap: Double = js.native
+    var gap: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
   }
   object IConstraint {
     
@@ -86,12 +81,11 @@ object linklengthsMod {
     }
   }
   
-  @js.native
   trait LinkAccessor[Link] extends StObject {
     
-    def getSourceIndex(l: Link): Double = js.native
+    def getSourceIndex(l: Link): Double
     
-    def getTargetIndex(l: Link): Double = js.native
+    def getTargetIndex(l: Link): Double
   }
   object LinkAccessor {
     
@@ -102,7 +96,7 @@ object linklengthsMod {
     }
     
     @scala.inline
-    implicit class LinkAccessorMutableBuilder[Self <: LinkAccessor[_], Link] (val x: Self with LinkAccessor[Link]) extends AnyVal {
+    implicit class LinkAccessorMutableBuilder[Self <: LinkAccessor[?], Link] (val x: Self & LinkAccessor[Link]) extends AnyVal {
       
       @scala.inline
       def setGetSourceIndex(value: Link => Double): Self = StObject.set(x, "getSourceIndex", js.Any.fromFunction1(value))
@@ -112,10 +106,11 @@ object linklengthsMod {
     }
   }
   
-  @js.native
-  trait LinkLengthAccessor[Link] extends LinkAccessor[Link] {
+  trait LinkLengthAccessor[Link]
+    extends StObject
+       with LinkAccessor[Link] {
     
-    def setLength(l: Link, value: Double): Unit = js.native
+    def setLength(l: Link, value: Double): Unit
   }
   object LinkLengthAccessor {
     
@@ -126,17 +121,18 @@ object linklengthsMod {
     }
     
     @scala.inline
-    implicit class LinkLengthAccessorMutableBuilder[Self <: LinkLengthAccessor[_], Link] (val x: Self with LinkLengthAccessor[Link]) extends AnyVal {
+    implicit class LinkLengthAccessorMutableBuilder[Self <: LinkLengthAccessor[?], Link] (val x: Self & LinkLengthAccessor[Link]) extends AnyVal {
       
       @scala.inline
       def setSetLength(value: (Link, Double) => Unit): Self = StObject.set(x, "setLength", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
-  trait LinkSepAccessor[Link] extends LinkAccessor[Link] {
+  trait LinkSepAccessor[Link]
+    extends StObject
+       with LinkAccessor[Link] {
     
-    def getMinSeparation(l: Link): Double = js.native
+    def getMinSeparation(l: Link): Double
   }
   object LinkSepAccessor {
     
@@ -147,7 +143,7 @@ object linklengthsMod {
     }
     
     @scala.inline
-    implicit class LinkSepAccessorMutableBuilder[Self <: LinkSepAccessor[_], Link] (val x: Self with LinkSepAccessor[Link]) extends AnyVal {
+    implicit class LinkSepAccessorMutableBuilder[Self <: LinkSepAccessor[?], Link] (val x: Self & LinkSepAccessor[Link]) extends AnyVal {
       
       @scala.inline
       def setGetMinSeparation(value: Link => Double): Self = StObject.set(x, "getMinSeparation", js.Any.fromFunction1(value))

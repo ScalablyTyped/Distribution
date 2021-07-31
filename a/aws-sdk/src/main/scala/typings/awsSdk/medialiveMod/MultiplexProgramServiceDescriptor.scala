@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexProgramServiceDescriptor extends StObject {
   
   /**
     * Name of the provider.
     */
-  var ProviderName: stringMax256 = js.native
+  var ProviderName: stringMax256
   
   /**
     * Name of the service.
     */
-  var ServiceName: stringMax256 = js.native
+  var ServiceName: stringMax256
 }
 object MultiplexProgramServiceDescriptor {
   

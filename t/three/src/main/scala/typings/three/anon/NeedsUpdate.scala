@@ -2,15 +2,13 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NeedsUpdate extends StObject {
   
-  var needsUpdate: Boolean = js.native
+  var needsUpdate: Boolean
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object NeedsUpdate {
   

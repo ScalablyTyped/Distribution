@@ -6,13 +6,13 @@ import typings.sipJs.messagesMod.IncomingResponseMessage
 import typings.sipJs.transactionStateMod.TransactionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionUserMod {
   
-  @js.native
-  trait ClientTransactionUser extends TransactionUser {
+  trait ClientTransactionUser
+    extends StObject
+       with TransactionUser {
     
     /**
       * Callback for request timeout error.
@@ -23,7 +23,7 @@ object transactionUserMod {
       * TU MUST be informed of a timeout.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2.2
       */
-    var onRequestTimeout: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRequestTimeout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback for delegation of valid response handling.
@@ -31,7 +31,7 @@ object transactionUserMod {
       * Valid responses are passed up to the TU from the client transaction.
       * https://tools.ietf.org/html/rfc3261#section-17.1
       */
-    var receiveResponse: js.UndefOr[js.Function1[/* response */ IncomingResponseMessage, Unit]] = js.native
+    var receiveResponse: js.UndefOr[js.Function1[/* response */ IncomingResponseMessage, Unit]] = js.undefined
   }
   object ClientTransactionUser {
     
@@ -60,13 +60,12 @@ object transactionUserMod {
   
   type ServerTransactionUser = TransactionUser
   
-  @js.native
   trait TransactionUser extends StObject {
     
     /**
       * Logger factory.
       */
-    var loggerFactory: LoggerFactory = js.native
+    var loggerFactory: LoggerFactory
     
     /**
       * Callback for notification of transaction state changes.
@@ -78,7 +77,7 @@ object transactionUserMod {
       * https://tools.ietf.org/html/rfc3261#section-17
       * https://tools.ietf.org/html/rfc6026
       */
-    var onStateChange: js.UndefOr[js.Function1[/* newState */ TransactionState, Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function1[/* newState */ TransactionState, Unit]] = js.undefined
     
     /**
       * Callback for notification of a transport error.
@@ -92,7 +91,7 @@ object transactionUserMod {
       * https://tools.ietf.org/html/rfc3261#section-17.2.4
       * https://tools.ietf.org/html/rfc6026
       */
-    var onTransportError: js.UndefOr[js.Function1[/* error */ TransportError, Unit]] = js.native
+    var onTransportError: js.UndefOr[js.Function1[/* error */ TransportError, Unit]] = js.undefined
   }
   object TransactionUser {
     

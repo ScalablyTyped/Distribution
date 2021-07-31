@@ -3,22 +3,22 @@ package typings.glaze
 import typings.glaze.anon.PickConsoleLogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
   
-  @JSImport("glaze/dist-types/logger", "errorOnce")
+  @JSImport("glaze/dist-types/logger", JSImport.Namespace)
   @js.native
-  def errorOnce(message: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("glaze/dist-types/logger", "setLogger")
-  @js.native
-  def setLogger(logger: PickConsoleLogLevel): Unit = js.native
+  @scala.inline
+  def errorOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("glaze/dist-types/logger", "warnOnce")
-  @js.native
-  def warnOnce(message: String): Unit = js.native
+  @scala.inline
+  def setLogger(logger: PickConsoleLogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def warnOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.glaze.glazeStrings.warn

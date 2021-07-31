@@ -2,13 +2,11 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Upload reference for media files.
   */
-@js.native
 trait SchemaUploadRef extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaUploadRef extends StObject {
     * the form:
     * &quot;https://streetviewpublish.googleapis.com/media/user/{account_id}/photo/{upload_reference}&quot;
     */
-  var uploadUrl: js.UndefOr[String] = js.native
+  var uploadUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaUploadRef {
   

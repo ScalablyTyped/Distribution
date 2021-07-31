@@ -3,21 +3,19 @@ package typings.awsLambda.anon
 import typings.awsLambda.commonMod.StringMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateChallengeParameters extends StObject {
   
-  var challengeAnswer: String = js.native
+  var challengeAnswer: String
   
-  var clientMetadata: js.UndefOr[StringMap] = js.native
+  var clientMetadata: js.UndefOr[StringMap] = js.undefined
   
-  var privateChallengeParameters: StringMap = js.native
+  var privateChallengeParameters: StringMap
   
-  var userAttributes: StringMap = js.native
+  var userAttributes: StringMap
   
-  var userNotFound: js.UndefOr[Boolean] = js.native
+  var userNotFound: js.UndefOr[Boolean] = js.undefined
 }
 object PrivateChallengeParameters {
   

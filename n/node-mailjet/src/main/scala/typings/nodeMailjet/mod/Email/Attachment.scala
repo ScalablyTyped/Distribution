@@ -2,17 +2,15 @@ package typings.nodeMailjet.mod.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
-  var Base64Content: String = js.native
+  var Base64Content: String
   
-  var ContentType: String = js.native
+  var ContentType: String
   
-  var Filename: String = js.native
+  var Filename: String
 }
 object Attachment {
   

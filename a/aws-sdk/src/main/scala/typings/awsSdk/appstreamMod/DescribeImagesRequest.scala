@@ -2,36 +2,34 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImagesRequest extends StObject {
   
   /**
     * The ARNs of the public, private, and shared images to describe.
     */
-  var Arns: js.UndefOr[ArnList] = js.native
+  var Arns: js.UndefOr[ArnList] = js.undefined
   
   /**
     * The maximum size of each page of results.
     */
-  var MaxResults: js.UndefOr[DescribeImagesMaxResults] = js.native
+  var MaxResults: js.UndefOr[DescribeImagesMaxResults] = js.undefined
   
   /**
     * The names of the public or private images to describe.
     */
-  var Names: js.UndefOr[StringList] = js.native
+  var Names: js.UndefOr[StringList] = js.undefined
   
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The type of image (public, private, or shared) to describe. 
     */
-  var Type: js.UndefOr[VisibilityType] = js.native
+  var Type: js.UndefOr[VisibilityType] = js.undefined
 }
 object DescribeImagesRequest {
   

@@ -3,26 +3,26 @@ package typings.box2d.Box2D.Dynamics.Joints
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2MouseJointDef extends b2JointDef {
+trait b2MouseJointDef
+  extends StObject
+     with b2JointDef {
   
   /**
     * The damping ratio. 0 = no damping, 1 = critical damping.
     **/
-  var dampingRatio: Double = js.native
+  var dampingRatio: Double
   
   /**
     * The response speed.
     **/
-  var frequencyHz: Double = js.native
+  var frequencyHz: Double
   
   /**
     * The maximum constraint force that can be exerted to move the candidate body.
     **/
-  var maxForce: Double = js.native
+  var maxForce: Double
 }
 object b2MouseJointDef {
   

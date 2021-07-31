@@ -6,14 +6,16 @@ import typings.std.Partial
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-copy-write", JSImport.Default)
+  @JSImport("react-copy-write", JSImport.Namespace)
   @js.native
-  def default[T /* <: js.Object */](state: T): typings.reactCopyWrite.anon.Consumer[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T /* <: js.Object */](state: T): typings.reactCopyWrite.anon.Consumer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[typings.reactCopyWrite.anon.Consumer[T]]
   
   // It'd be nice if this could somehow be improved! Perhaps we need variadic
   // kinds plus infer keyword? Alternatively unions may solve our issue if we had
@@ -42,10 +44,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ConsumerPropsBase[T] extends StObject {
     
-    var select: js.UndefOr[js.Array[SelectorFn[T]]] = js.native
+    var select: js.UndefOr[js.Array[SelectorFn[T]]] = js.undefined
   }
   object ConsumerPropsBase {
     
@@ -56,7 +57,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConsumerPropsBaseMutableBuilder[Self <: ConsumerPropsBase[_], T] (val x: Self with ConsumerPropsBase[T]) extends AnyVal {
+    implicit class ConsumerPropsBaseMutableBuilder[Self <: ConsumerPropsBase[?], T] (val x: Self & ConsumerPropsBase[T]) extends AnyVal {
       
       @scala.inline
       def setSelect(value: js.Array[SelectorFn[T]]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
@@ -69,12 +70,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ConsumerPropsExplicitRender[T]
-    extends ConsumerPropsBase[T]
+    extends StObject
+       with ConsumerPropsBase[T]
        with ConsumerProps[T] {
     
-    var render: js.UndefOr[RenderFn[T]] = js.native
+    var render: js.UndefOr[RenderFn[T]] = js.undefined
   }
   object ConsumerPropsExplicitRender {
     
@@ -85,22 +86,22 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConsumerPropsExplicitRenderMutableBuilder[Self <: ConsumerPropsExplicitRender[_], T] (val x: Self with ConsumerPropsExplicitRender[T]) extends AnyVal {
+    implicit class ConsumerPropsExplicitRenderMutableBuilder[Self <: ConsumerPropsExplicitRender[?], T] (val x: Self & ConsumerPropsExplicitRender[T]) extends AnyVal {
       
       @scala.inline
-      def setRender(value: /* repeated */ ReturnType[SelectorFn[T]] => Element | js.Array[Element] | Null): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: RenderFn[T]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
   
-  @js.native
   trait ConsumerPropsImplicitRender[T]
-    extends ConsumerPropsBase[T]
+    extends StObject
+       with ConsumerPropsBase[T]
        with ConsumerProps[T] {
     
-    var children: js.UndefOr[RenderFn[T]] = js.native
+    var children: js.UndefOr[RenderFn[T]] = js.undefined
   }
   object ConsumerPropsImplicitRender {
     
@@ -111,10 +112,10 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConsumerPropsImplicitRenderMutableBuilder[Self <: ConsumerPropsImplicitRender[_], T] (val x: Self with ConsumerPropsImplicitRender[T]) extends AnyVal {
+    implicit class ConsumerPropsImplicitRenderMutableBuilder[Self <: ConsumerPropsImplicitRender[?], T] (val x: Self & ConsumerPropsImplicitRender[T]) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: /* repeated */ ReturnType[SelectorFn[T]] => Element | js.Array[Element] | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      def setChildren(value: RenderFn[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -127,12 +128,11 @@ object mod {
   
   type Provider[T] = Component[ProviderProps[T], js.Object, js.Any]
   
-  @js.native
   trait ProviderProps[T] extends StObject {
     
-    var children: Element | js.Array[Element] = js.native
+    var children: Element | js.Array[Element]
     
-    var initialState: js.UndefOr[Partial[T]] = js.native
+    var initialState: js.UndefOr[Partial[T]] = js.undefined
   }
   object ProviderProps {
     
@@ -143,7 +143,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[_], T] (val x: Self with ProviderProps[T]) extends AnyVal {
+    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[?], T] (val x: Self & ProviderProps[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -159,7 +159,11 @@ object mod {
     }
   }
   
-  type RenderFn[T] = js.Function1[/* repeated */ ReturnType[SelectorFn[T]], Element | js.Array[Element] | Null]
+  @js.native
+  trait RenderFn[T] extends StObject {
+    
+    def apply(state: ReturnType[SelectorFn[T]]*): Element | js.Array[Element] | Null = js.native
+  }
   
   type SelectorFn[T] = js.Function1[/* state */ T, AnyDeepMemberOfState[T]]
 }

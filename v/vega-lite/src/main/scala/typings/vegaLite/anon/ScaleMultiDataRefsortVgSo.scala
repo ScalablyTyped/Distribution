@@ -5,16 +5,14 @@ import typings.vegaTypings.scaleMod.SortField
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega.vega.ScaleMultiDataRef & {  sort :vega-lite.vega-lite/build/src/vega.schema.VgSortField | undefined} */
-@js.native
 trait ScaleMultiDataRefsortVgSo extends StObject {
   
-  var fields: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef] = js.native
+  var fields: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]
   
-  var sort: js.UndefOr[SortField] = js.native
+  var sort: js.UndefOr[SortField] = js.undefined
 }
 object ScaleMultiDataRefsortVgSo {
   

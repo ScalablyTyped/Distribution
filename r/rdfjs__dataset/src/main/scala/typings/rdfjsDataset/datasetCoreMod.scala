@@ -3,7 +3,6 @@ package typings.rdfjsDataset
 import typings.rdfJs.mod.Quad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasetCoreMod {
@@ -11,12 +10,15 @@ object datasetCoreMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("@rdfjs/dataset/DatasetCore", JSImport.Namespace)
   @js.native
-  class ^[InQuad] protected () extends DatasetCore[InQuad] {
+  class ^[InQuad] protected ()
+    extends StObject
+       with DatasetCore[InQuad] {
     def this(quads: js.Array[InQuad]) = this()
   }
   
   // tslint:disable-next-line no-unnecessary-class
   @js.native
   trait DatasetCore[InQuad]
-    extends typings.rdfJs.mod.DatasetCore[Quad, InQuad]
+    extends StObject
+       with typings.rdfJs.mod.DatasetCore[Quad, InQuad]
 }

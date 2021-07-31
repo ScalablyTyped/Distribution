@@ -2,26 +2,24 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryRunStatus extends StObject {
   
   /**
     * The current state of the run.
     */
-  var State: js.UndefOr[CanaryRunState] = js.native
+  var State: js.UndefOr[CanaryRunState] = js.undefined
   
   /**
     * If run of the canary failed, this field contains the reason for the error.
     */
-  var StateReason: js.UndefOr[String] = js.native
+  var StateReason: js.UndefOr[String] = js.undefined
   
   /**
     * If this value is CANARY_FAILURE, an exception occurred in the canary code. If this value is EXECUTION_FAILURE, an exception occurred in CloudWatch Synthetics.
     */
-  var StateReasonCode: js.UndefOr[CanaryRunStateReasonCode] = js.native
+  var StateReasonCode: js.UndefOr[CanaryRunStateReasonCode] = js.undefined
 }
 object CanaryRunStatus {
   

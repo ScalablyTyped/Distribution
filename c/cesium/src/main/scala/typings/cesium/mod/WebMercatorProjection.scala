@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "WebMercatorProjection")
@@ -32,12 +31,10 @@ object WebMercatorProjection {
   def MaximumLatitude_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaximumLatitude")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "WebMercatorProjection.geodeticLatitudeToMercatorAngle")
-  @js.native
-  def geodeticLatitudeToMercatorAngle(latitude: Double): Double = js.native
+  @scala.inline
+  def geodeticLatitudeToMercatorAngle(latitude: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geodeticLatitudeToMercatorAngle")(latitude.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "WebMercatorProjection.mercatorAngleToGeodeticLatitude")
-  @js.native
-  def mercatorAngleToGeodeticLatitude(mercatorAngle: Double): Double = js.native
+  @scala.inline
+  def mercatorAngleToGeodeticLatitude(mercatorAngle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mercatorAngleToGeodeticLatitude")(mercatorAngle.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

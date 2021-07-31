@@ -2,49 +2,44 @@ package typings.tensorflowTfjsData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deepMapMod {
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", "canTensorify")
+  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", JSImport.Namespace)
   @js.native
-  def canTensorify(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", "deepMap")
-  @js.native
-  def deepMap(input: js.Any, mapFn: js.Function1[/* x */ js.Any, DeepMapResult]): js.Any | js.Array[_] = js.native
+  @scala.inline
+  def canTensorify(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canTensorify")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", "deepMapAndAwaitAll")
-  @js.native
-  def deepMapAndAwaitAll(input: js.Any, mapFn: js.Function1[/* x */ js.Any, DeepMapAsyncResult]): js.Promise[_ | js.Array[_]] = js.native
+  @scala.inline
+  def deepMap(input: js.Any, mapFn: js.Function1[/* x */ js.Any, DeepMapResult]): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMap")(input.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", "deepZip")
-  @js.native
-  def deepZip(inputs: js.Array[_]): js.Any | js.Array[_] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", "deepZip")
-  @js.native
-  def deepZip(inputs: js.Array[_], zipFn: js.Function1[/* xs */ js.Array[_], DeepMapResult]): js.Any | js.Array[_] = js.native
+  @scala.inline
+  def deepMapAndAwaitAll(input: js.Any, mapFn: js.Function1[/* x */ js.Any, DeepMapAsyncResult]): js.Promise[js.Any | js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapAndAwaitAll")(input.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any | js.Array[js.Any]]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", "isIterable")
-  @js.native
-  def isIterable(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def deepZip(inputs: js.Array[js.Any]): js.Any | js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepZip")(inputs.asInstanceOf[js.Any]).asInstanceOf[js.Any | js.Array[js.Any]]
+  @scala.inline
+  def deepZip(inputs: js.Array[js.Any], zipFn: js.Function1[/* xs */ js.Array[js.Any], DeepMapResult]): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deepZip")(inputs.asInstanceOf[js.Any], zipFn.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/util/deep_map", "zipToList")
-  @js.native
-  def zipToList(x: js.Array[_]): DeepMapResult = js.native
+  @scala.inline
+  def isIterable(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def zipToList(x: js.Array[js.Any]): DeepMapResult = ^.asInstanceOf[js.Dynamic].applyDynamic("zipToList")(x.asInstanceOf[js.Any]).asInstanceOf[DeepMapResult]
+  
   trait DeepMapAsyncResult extends StObject {
     
-    var recurse: Boolean = js.native
+    var recurse: Boolean
     
-    var value: js.Promise[_] = js.native
+    var value: js.Promise[js.Any]
   }
   object DeepMapAsyncResult {
     
     @scala.inline
-    def apply(recurse: Boolean, value: js.Promise[_]): DeepMapAsyncResult = {
+    def apply(recurse: Boolean, value: js.Promise[js.Any]): DeepMapAsyncResult = {
       val __obj = js.Dynamic.literal(recurse = recurse.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeepMapAsyncResult]
     }
@@ -56,16 +51,15 @@ object deepMapMod {
       def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValue(value: js.Promise[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Promise[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait DeepMapResult extends StObject {
     
-    var recurse: Boolean = js.native
+    var recurse: Boolean
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object DeepMapResult {
     

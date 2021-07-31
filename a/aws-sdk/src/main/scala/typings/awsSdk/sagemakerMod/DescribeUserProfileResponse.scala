@@ -2,66 +2,64 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserProfileResponse extends StObject {
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * The ID of the domain that contains the profile.
     */
-  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.native
+  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.undefined
   
   /**
     * The failure reason.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The ID of the user's profile in the Amazon Elastic File System (EFS) volume.
     */
-  var HomeEfsFileSystemUid: js.UndefOr[EfsUid] = js.native
+  var HomeEfsFileSystemUid: js.UndefOr[EfsUid] = js.undefined
   
   /**
     * The last modified time.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.native
+  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
   
   /**
     * The SSO user identifier.
     */
-  var SingleSignOnUserIdentifier: js.UndefOr[typings.awsSdk.sagemakerMod.SingleSignOnUserIdentifier] = js.native
+  var SingleSignOnUserIdentifier: js.UndefOr[typings.awsSdk.sagemakerMod.SingleSignOnUserIdentifier] = js.undefined
   
   /**
     * The SSO user value.
     */
-  var SingleSignOnUserValue: js.UndefOr[String256] = js.native
+  var SingleSignOnUserValue: js.UndefOr[String256] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[UserProfileStatus] = js.native
+  var Status: js.UndefOr[UserProfileStatus] = js.undefined
   
   /**
     * The user profile Amazon Resource Name (ARN).
     */
-  var UserProfileArn: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileArn] = js.native
+  var UserProfileArn: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileArn] = js.undefined
   
   /**
     * The user profile name.
     */
-  var UserProfileName: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileName] = js.native
+  var UserProfileName: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileName] = js.undefined
   
   /**
     * A collection of settings.
     */
-  var UserSettings: js.UndefOr[typings.awsSdk.sagemakerMod.UserSettings] = js.native
+  var UserSettings: js.UndefOr[typings.awsSdk.sagemakerMod.UserSettings] = js.undefined
 }
 object DescribeUserProfileResponse {
   

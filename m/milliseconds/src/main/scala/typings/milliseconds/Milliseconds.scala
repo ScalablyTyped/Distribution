@@ -2,25 +2,23 @@ package typings.milliseconds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Milliseconds extends StObject {
   
-  def days(days: Double): Double = js.native
+  def days(days: Double): Double
   
-  def hours(hours: Double): Double = js.native
+  def hours(hours: Double): Double
   
-  def minutes(minutes: Double): Double = js.native
+  def minutes(minutes: Double): Double
   
-  def months(months: Double): Double = js.native
+  def months(months: Double): Double
   
-  def seconds(seconds: Double): Double = js.native
+  def seconds(seconds: Double): Double
   
-  def weeks(weeks: Double): Double = js.native
+  def weeks(weeks: Double): Double
   
-  def years(years: Double): Double = js.native
+  def years(years: Double): Double
 }
 object Milliseconds {
   

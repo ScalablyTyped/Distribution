@@ -12,7 +12,6 @@ import typings.requestStats.requestStatsStrings.complete
 import typings.requestStats.requestStatsStrings.request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,12 +24,10 @@ object mod {
     * @param res An instance of a HTTP response.
     * @param statsCallback A callback which will be called with a stats object when the HTTP request completes.
     */
-  @JSImport("request-stats", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, res: ServerResponse): StatsEmitter = js.native
-  @JSImport("request-stats", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, res: ServerResponse, statsCallback: StatsCallback): StatsEmitter = js.native
+  @scala.inline
+  def apply(req: IncomingMessage, res: ServerResponse): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  @scala.inline
+  def apply(req: IncomingMessage, res: ServerResponse, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
   /**
     * Attach request-stats to a HTTP server.
     * If no callback is provided, you can later attach a listener on the "complete" event.
@@ -38,40 +35,39 @@ object mod {
     * @param server Initialize request-stats with an instance a HTTP server.
     * @param statsCallback A callback which will be called for each completed HTTP request with a stats object.
     */
-  @JSImport("request-stats", JSImport.Namespace)
-  @js.native
-  def apply(server: Server): StatsEmitter = js.native
-  @JSImport("request-stats", JSImport.Namespace)
-  @js.native
-  def apply(server: Server, statsCallback: StatsCallback): StatsEmitter = js.native
-  @JSImport("request-stats", JSImport.Namespace)
-  @js.native
-  def apply(server: typings.node.httpsMod.Server): StatsEmitter = js.native
-  @JSImport("request-stats", JSImport.Namespace)
-  @js.native
-  def apply(server: typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = js.native
+  @scala.inline
+  def apply(server: Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
+  @scala.inline
+  def apply(server: Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  @scala.inline
+  def apply(server: typings.node.httpsMod.Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
+  @scala.inline
+  def apply(server: typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
   
+  @JSImport("request-stats", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Progress extends StObject {
     
     /**
       * `false` if the request is still in progress
       */
-    var completed: Boolean = js.native
+    var completed: Boolean
     
-    var req: BytesDelta = js.native
+    var req: BytesDelta
     
-    var res: Speed = js.native
+    var res: Speed
     
     /**
       * The total time the reuqest have been in progress
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * The time since previous call to `.progress()`
       */
-    var timeDelta: Double = js.native
+    var timeDelta: Double
   }
   object Progress {
     
@@ -101,7 +97,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
     /**
@@ -109,7 +104,7 @@ object mod {
       * If called multiple times, the returned progress object will contain the delta of the previous
       * call to `.progress()`.
       */
-    def progress(): Progress = js.native
+    def progress(): Progress
   }
   object Request {
     
@@ -127,22 +122,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
     /**
       * `true` if the connection was closed correctly and `false` otherwise
       */
-    var ok: Boolean = js.native
+    var ok: Boolean
     
-    var req: Bytes = js.native
+    var req: Bytes
     
-    var res: Headers = js.native
+    var res: Headers
     
     /**
       * The milliseconds it took to serve the request
       */
-    var time: Double = js.native
+    var time: Double
   }
   object Stats {
     

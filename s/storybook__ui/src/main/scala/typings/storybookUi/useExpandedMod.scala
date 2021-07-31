@@ -8,23 +8,24 @@ import typings.storybookApi.storiesMod.StoriesHash
 import typings.storybookUi.sidebarTypesMod.Highlight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useExpandedMod {
   
-  @JSImport("@storybook/ui/dist/components/sidebar/useExpanded", "useExpanded")
+  @JSImport("@storybook/ui/dist/components/sidebar/useExpanded", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def useExpanded(
     hasContainerRefIsBrowsingRefIdDataRootIdsHighlightedRefSetHighlightedItemIdSelectedStoryIdOnSelectStoryId: ExpandedProps
-  ): js.Tuple2[Record[String, Boolean], Dispatch[ExpandAction]] = js.native
+  ): js.Tuple2[Record[String, Boolean], Dispatch[ExpandAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useExpanded")(hasContainerRefIsBrowsingRefIdDataRootIdsHighlightedRefSetHighlightedItemIdSelectedStoryIdOnSelectStoryId.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Record[String, Boolean], Dispatch[ExpandAction]]]
   
-  @js.native
   trait ExpandAction extends StObject {
     
-    var ids: js.Array[String] = js.native
+    var ids: js.Array[String]
     
-    var value: Boolean = js.native
+    var value: Boolean
   }
   object ExpandAction {
     
@@ -48,26 +49,25 @@ object useExpandedMod {
     }
   }
   
-  @js.native
   trait ExpandedProps extends StObject {
     
-    var containerRef: MutableRefObject[HTMLElement] = js.native
+    var containerRef: MutableRefObject[HTMLElement]
     
-    var data: StoriesHash = js.native
+    var data: StoriesHash
     
-    var highlightedRef: MutableRefObject[Highlight] = js.native
+    var highlightedRef: MutableRefObject[Highlight]
     
-    var isBrowsing: Boolean = js.native
+    var isBrowsing: Boolean
     
-    def onSelectStoryId(storyId: String): Unit = js.native
+    def onSelectStoryId(storyId: String): Unit
     
-    var refId: String = js.native
+    var refId: String
     
-    var rootIds: js.Array[String] = js.native
+    var rootIds: js.Array[String]
     
-    var selectedStoryId: String | Null = js.native
+    var selectedStoryId: String | Null
     
-    def setHighlightedItemId(storyId: String): Unit = js.native
+    def setHighlightedItemId(storyId: String): Unit
   }
   object ExpandedProps {
     
@@ -82,7 +82,7 @@ object useExpandedMod {
       rootIds: js.Array[String],
       setHighlightedItemId: String => Unit
     ): ExpandedProps = {
-      val __obj = js.Dynamic.literal(containerRef = containerRef.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], highlightedRef = highlightedRef.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], onSelectStoryId = js.Any.fromFunction1(onSelectStoryId), refId = refId.asInstanceOf[js.Any], rootIds = rootIds.asInstanceOf[js.Any], setHighlightedItemId = js.Any.fromFunction1(setHighlightedItemId))
+      val __obj = js.Dynamic.literal(containerRef = containerRef.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], highlightedRef = highlightedRef.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], onSelectStoryId = js.Any.fromFunction1(onSelectStoryId), refId = refId.asInstanceOf[js.Any], rootIds = rootIds.asInstanceOf[js.Any], setHighlightedItemId = js.Any.fromFunction1(setHighlightedItemId), selectedStoryId = null)
       __obj.asInstanceOf[ExpandedProps]
     }
     

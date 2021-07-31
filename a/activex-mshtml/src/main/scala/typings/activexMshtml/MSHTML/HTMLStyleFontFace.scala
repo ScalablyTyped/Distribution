@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLStyleFontFace extends StObject {
   
   @JSName("MSHTML.HTMLStyleFontFace_typekey")
-  var MSHTMLDotHTMLStyleFontFace_typekey: HTMLStyleFontFace = js.native
+  var MSHTMLDotHTMLStyleFontFace_typekey: HTMLStyleFontFace
   
-  var cssText: String = js.native
+  var cssText: String
   
-  var fontsrc: String = js.native
+  var fontsrc: String
   
-  val parentRule: IHTMLCSSRule = js.native
+  val parentRule: IHTMLCSSRule
   
-  val parentStyleSheet: IHTMLStyleSheet = js.native
+  val parentStyleSheet: IHTMLStyleSheet
   
-  val style: IHTMLRuleStyle = js.native
+  val style: IHTMLRuleStyle
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object HTMLStyleFontFace {
   

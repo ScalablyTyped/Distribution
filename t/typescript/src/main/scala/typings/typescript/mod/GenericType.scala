@@ -2,21 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.typescript.mod.FlowType because Already inherited
 - typings.typescript.mod.Type because Already inherited
 - typings.typescript.mod.ObjectType because Already inherited
-- typings.typescript.mod.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, node, typeArguments */ @js.native
-trait GenericType extends InterfaceType {
+- typings.typescript.mod.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, node, typeArguments */ trait GenericType
+  extends StObject
+     with InterfaceType {
   
-  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.native
+  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.undefined
   
-  var target: GenericType = js.native
+  var target: GenericType
   
-  var typeArguments: js.UndefOr[js.Array[Type]] = js.native
+  var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
 }
 object GenericType {
   

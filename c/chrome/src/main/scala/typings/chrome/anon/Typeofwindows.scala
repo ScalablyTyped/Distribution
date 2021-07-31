@@ -7,7 +7,6 @@ import typings.chrome.chrome.windows.WindowIdEvent
 import typings.chrome.chrome.windows.WindowReferenceEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

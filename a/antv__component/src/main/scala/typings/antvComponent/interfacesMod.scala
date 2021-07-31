@@ -9,13 +9,14 @@ import typings.antvGBase.interfacesMod.IBase
 import typings.antvGBase.typesMod.BBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   @js.native
-  trait IComponent extends IBase {
+  trait IComponent
+    extends StObject
+       with IBase {
     
     /**
       * 清空组件
@@ -77,39 +78,38 @@ object interfacesMod {
     def update(cfg: js.Object): js.Any = js.native
   }
   
-  @js.native
   trait IList extends StObject {
     
     /**
       * 清空列表
       */
-    def clearItems(): js.Any = js.native
+    def clearItems(): js.Any
     
     /**
       * 清楚所有列表项的状态
       * @param {string} state 状态值
       */
-    def clearItemsState(state: String): js.Any = js.native
+    def clearItemsState(state: String): js.Any
     
     /**
       * 获取列表项
       * @return {ListItem[]} 列表项集合
       */
-    def getItems(): js.Array[ListItem] = js.native
+    def getItems(): js.Array[ListItem]
     
     /**
       * 根据状态获取
       * @param  {state}     state 状态名
       * @return {ListItem[]} 列表项
       */
-    def getItemsByState(state: js.Any): js.Array[ListItem] = js.native
+    def getItemsByState(state: js.Any): js.Array[ListItem]
     
     /**
       * 是否存在指定的状态
       * @param {ListItem} item  列表项
       * @param {string} state 状态名
       */
-    def hasState(item: ListItem, state: String): Boolean = js.native
+    def hasState(item: ListItem, state: String): Boolean
     
     /**
       * 设置列表项的状态
@@ -117,20 +117,20 @@ object interfacesMod {
       * @param {string}   state 状态名
       * @param {boolean}  value 状态值, true, false
       */
-    def setItemState(item: ListItem, state: String, value: Boolean): js.Any = js.native
+    def setItemState(item: ListItem, state: String, value: Boolean): js.Any
     
     /**
       * 设置列表项
       * @param {ListItem[]} items 列表项集合
       */
-    def setItems(items: js.Array[ListItem]): js.Any = js.native
+    def setItems(items: js.Array[ListItem]): js.Any
     
     /**
       * 更新列表项
       * @param {ListItem} item 列表项
       * @param {object}   cfg  列表项
       */
-    def updateItem(item: ListItem, cfg: js.Object): js.Any = js.native
+    def updateItem(item: ListItem, cfg: js.Object): js.Any
   }
   object IList {
     
@@ -178,39 +178,38 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait ILocation[T /* <: LocationCfg */] extends StObject {
     
     /**
       * 获取定位信息
       * @return {T} 定位信息
       */
-    def getLocation(): T = js.native
+    def getLocation(): T
     
     /**
       * 获取定位方式，point，points，region，circle，'none' 五种值
       * @return {LocationType} 定位方式
       */
-    def getLocationType(): LocationType = js.native
+    def getLocationType(): LocationType
     
     /**
       * 获取偏移信息
       * @return {OffsetPoint} 偏移信息
       */
-    def getOffset(): OffsetPoint = js.native
+    def getOffset(): OffsetPoint
     
     /**
       * 设置定位信息
       * @param {T} cfg 定位信息
       */
-    def setLocation(cfg: T): js.Any = js.native
+    def setLocation(cfg: T): js.Any
     
     /**
       * 设置偏移量
       * @param {number} offsetX 偏移 x
       * @param {number} offsetY 偏移 y
       */
-    def setOffset(offsetX: Double, offsetY: Double): js.Any = js.native
+    def setOffset(offsetX: Double, offsetY: Double): js.Any
   }
   object ILocation {
     
@@ -227,7 +226,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class ILocationMutableBuilder[Self <: ILocation[_], T /* <: LocationCfg */] (val x: Self with ILocation[T]) extends AnyVal {
+    implicit class ILocationMutableBuilder[Self <: ILocation[?], T /* <: LocationCfg */] (val x: Self & ILocation[T]) extends AnyVal {
       
       @scala.inline
       def setGetLocation(value: () => T): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))

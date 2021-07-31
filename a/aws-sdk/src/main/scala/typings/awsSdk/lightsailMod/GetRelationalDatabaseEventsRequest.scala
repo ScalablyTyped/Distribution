@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRelationalDatabaseEventsRequest extends StObject {
   
   /**
     * The number of minutes in the past from which to retrieve events. For example, to get all events from the past 2 hours, enter 120. Default: 60  The minimum is 1 and the maximum is 14 days (20160 minutes).
     */
-  var durationInMinutes: js.UndefOr[integer] = js.native
+  var durationInMinutes: js.UndefOr[integer] = js.undefined
   
   /**
     * The token to advance to the next page of results from your request. To get a page token, perform an initial GetRelationalDatabaseEvents request. If your results are paginated, the response will return a next page token that you can specify as the page token in a subsequent request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the database from which to get events.
     */
-  var relationalDatabaseName: ResourceName = js.native
+  var relationalDatabaseName: ResourceName
 }
 object GetRelationalDatabaseEventsRequest {
   

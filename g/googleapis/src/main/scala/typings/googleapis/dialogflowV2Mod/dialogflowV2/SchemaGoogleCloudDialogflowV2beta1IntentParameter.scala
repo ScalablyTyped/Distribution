@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents intent parameters.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentParameter extends StObject {
   
   /**
@@ -16,41 +14,41 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentParameter extends StObject {
     * result. Default values can be extracted from contexts by using the
     * following syntax: `#context_name.parameter_name`.
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the parameter.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the entity type, prefixed with `@`, that describes
     * values of the parameter. If the parameter is required, this must be
     * provided.
     */
-  var entityTypeDisplayName: js.UndefOr[String] = js.native
+  var entityTypeDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Indicates whether the parameter represents a list of values.
     */
-  var isList: js.UndefOr[Boolean] = js.native
+  var isList: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. Indicates whether the parameter is required. That is, whether
     * the intent cannot be completed without collecting the parameter value.
     */
-  var mandatory: js.UndefOr[Boolean] = js.native
+  var mandatory: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The unique identifier of this parameter.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of prompts that the agent can present to the
     * user in order to collect value for the parameter.
     */
-  var prompts: js.UndefOr[js.Array[String]] = js.native
+  var prompts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The definition of the parameter value. It can be: - a constant
@@ -58,7 +56,7 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentParameter extends StObject {
     * parameter value defined as `$parameter_name.original`, - a parameter
     * value from some context defined as   `#context_name.parameter_name`.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentParameter {
   

@@ -3,7 +3,6 @@ package typings.askmethatRating
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amtRatingPopoverMod {
@@ -43,39 +42,42 @@ object amtRatingPopoverMod {
   object AskmethatRatingPopoverDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AskmethatRatingPopoverDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[AskmethatRatingPopoverDirection & Double] = js.native
     
     @js.native
-    sealed trait bottom extends AskmethatRatingPopoverDirection
-    /* 1 */ val bottom: typings.askmethatRating.amtRatingPopoverMod.AskmethatRatingPopoverDirection.bottom with Double = js.native
+    sealed trait bottom
+      extends StObject
+         with AskmethatRatingPopoverDirection
+    /* 1 */ val bottom: typings.askmethatRating.amtRatingPopoverMod.AskmethatRatingPopoverDirection.bottom & Double = js.native
     
     @js.native
-    sealed trait top extends AskmethatRatingPopoverDirection
-    /* 0 */ val top: typings.askmethatRating.amtRatingPopoverMod.AskmethatRatingPopoverDirection.top with Double = js.native
+    sealed trait top
+      extends StObject
+         with AskmethatRatingPopoverDirection
+    /* 0 */ val top: typings.askmethatRating.amtRatingPopoverMod.AskmethatRatingPopoverDirection.top & Double = js.native
   }
   
-  @js.native
   trait AskmethatRatingPopoverOptions extends StObject {
     
     /**
       * Color used by the font & progress bar inside popover
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * Display popover at bottom or top
       */
-    var direction: js.UndefOr[AskmethatRatingPopoverDirection] = js.native
+    var direction: js.UndefOr[AskmethatRatingPopoverDirection] = js.undefined
     
     /**
       * fontClass used by the rating element inside popover
       */
-    var fontClass: String = js.native
+    var fontClass: String
     
     /**
       * Array of percentage to display
       */
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object AskmethatRatingPopoverOptions {
     

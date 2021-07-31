@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSubscriptionFiltersResponse extends StObject {
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The subscription filters.
     */
-  var subscriptionFilters: js.UndefOr[SubscriptionFilters] = js.native
+  var subscriptionFilters: js.UndefOr[SubscriptionFilters] = js.undefined
 }
 object DescribeSubscriptionFiltersResponse {
   

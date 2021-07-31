@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An optional interface that is implemented by resources that are relocatable to different anchors. */
-@js.native
 trait XRelocatableResource extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait XRelocatableResource extends StObject {
     * @param xNewAnchor The new anchor.
     * @returns Returns `TRUE` when the relocation was successful.
     */
-  def relocateToAnchor(xNewAnchor: XResource): Boolean = js.native
+  def relocateToAnchor(xNewAnchor: XResource): Boolean
 }
 object XRelocatableResource {
   

@@ -4,7 +4,6 @@ import typings.vscode.mod.TaskScope.Global
 import typings.vscode.mod.TaskScope.Workspace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Task")
@@ -45,14 +44,14 @@ class Task protected () extends StObject {
     taskDefinition: TaskDefinition,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: String
   ) = this()
   def this(
     taskDefinition: TaskDefinition,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: js.Array[String]
   ) = this()
   def this(
@@ -151,7 +150,7 @@ class Task protected () extends StObject {
     scope: Global,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: String
   ) = this()
   def this(
@@ -159,7 +158,7 @@ class Task protected () extends StObject {
     scope: Global,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: js.Array[String]
   ) = this()
   def this(
@@ -215,7 +214,7 @@ class Task protected () extends StObject {
     scope: Workspace,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: String
   ) = this()
   def this(
@@ -223,7 +222,7 @@ class Task protected () extends StObject {
     scope: Workspace,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: js.Array[String]
   ) = this()
   def this(
@@ -279,7 +278,7 @@ class Task protected () extends StObject {
     scope: WorkspaceFolder,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: String
   ) = this()
   def this(
@@ -287,7 +286,7 @@ class Task protected () extends StObject {
     scope: WorkspaceFolder,
     name: String,
     source: String,
-    execution: js.UndefOr[scala.Nothing],
+    execution: Unit,
     problemMatchers: js.Array[String]
   ) = this()
   def this(

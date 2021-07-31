@@ -15,75 +15,91 @@ import typings.materialUiCore.withThemeMod.WithTheme
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesMod {
+  
+  @JSImport("@material-ui/core/styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@material-ui/core/styles", "MuiThemeProvider")
   @js.native
   val MuiThemeProvider: ComponentType[MuiThemeProviderProps] = js.native
   
-  @JSImport("@material-ui/core/styles", "createGenerateClassName")
-  @js.native
-  def createGenerateClassName(): js.Any = js.native
-  @JSImport("@material-ui/core/styles", "createGenerateClassName")
-  @js.native
-  def createGenerateClassName(options: GenerateClassNameOptions): js.Any = js.native
+  @scala.inline
+  def createGenerateClassName(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")().asInstanceOf[js.Any]
+  @scala.inline
+  def createGenerateClassName(options: GenerateClassNameOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@material-ui/core/styles", "createMuiTheme")
-  @js.native
-  def createMuiTheme(): Theme = js.native
-  @JSImport("@material-ui/core/styles", "createMuiTheme")
-  @js.native
-  def createMuiTheme(options: ThemeOptions): Theme = js.native
+  @scala.inline
+  def createMuiTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")().asInstanceOf[Theme]
+  @scala.inline
+  def createMuiTheme(options: ThemeOptions): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")(options.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
-  @JSImport("@material-ui/core/styles", "createStyles")
-  @js.native
-  def createStyles[C /* <: String */](styles: StyleRules[C]): StyleRules[C] = js.native
+  @scala.inline
+  def createStyles[C /* <: String */](styles: StyleRules[C]): StyleRules[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[StyleRules[C]]
   
-  @JSImport("@material-ui/core/styles", "jssPreset")
-  @js.native
-  def jssPreset(): js.Any = js.native
+  @scala.inline
+  def jssPreset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jssPreset")().asInstanceOf[js.Any]
   
-  @JSImport("@material-ui/core/styles", "withStyles")
-  @js.native
+  @scala.inline
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
-  @JSImport("@material-ui/core/styles", "withStyles")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(style.asInstanceOf[js.Any]).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
+  @scala.inline
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
-  @JSImport("@material-ui/core/styles", "withStyles")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(style.asInstanceOf[js.Any]).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
+  @scala.inline
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
-  @JSImport("@material-ui/core/styles", "withStyles")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
+  @scala.inline
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
   
-  @JSImport("@material-ui/core/styles", "withTheme")
-  @js.native
-  def withTheme(): PropInjector[WithTheme, ThemedComponentProps] = js.native
+  @scala.inline
+  def withTheme(): PropInjector[WithTheme, ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")().asInstanceOf[PropInjector[WithTheme, ThemedComponentProps]]
 }

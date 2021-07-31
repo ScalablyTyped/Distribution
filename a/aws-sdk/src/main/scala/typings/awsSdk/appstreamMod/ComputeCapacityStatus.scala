@@ -2,31 +2,29 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputeCapacityStatus extends StObject {
   
   /**
     * The number of currently available instances that can be used to stream sessions.
     */
-  var Available: js.UndefOr[Integer] = js.native
+  var Available: js.UndefOr[Integer] = js.undefined
   
   /**
     * The desired number of streaming instances.
     */
-  var Desired: Integer = js.native
+  var Desired: Integer
   
   /**
     * The number of instances in use for streaming.
     */
-  var InUse: js.UndefOr[Integer] = js.native
+  var InUse: js.UndefOr[Integer] = js.undefined
   
   /**
     * The total number of simultaneous streaming instances that are running.
     */
-  var Running: js.UndefOr[Integer] = js.native
+  var Running: js.UndefOr[Integer] = js.undefined
 }
 object ComputeCapacityStatus {
   

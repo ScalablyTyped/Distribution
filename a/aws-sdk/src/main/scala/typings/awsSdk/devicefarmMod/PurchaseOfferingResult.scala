@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseOfferingResult extends StObject {
   
   /**
     * Represents the offering transaction for the purchase result.
     */
-  var offeringTransaction: js.UndefOr[OfferingTransaction] = js.native
+  var offeringTransaction: js.UndefOr[OfferingTransaction] = js.undefined
 }
 object PurchaseOfferingResult {
   

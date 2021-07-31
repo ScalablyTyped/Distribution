@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardMultiValue extends StObject {
   
-  val ID: String = js.native
+  val ID: String
   
-  val IsMultiValue: Boolean = js.native
+  val IsMultiValue: Boolean
   
-  val State: js.Any = js.native
+  val State: js.Any
   
-  val ValueParts: js.Any = js.native
+  val ValueParts: js.Any
 }
 object IMetadataCardMultiValue {
   

@@ -2,21 +2,21 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SafariExtensionMessageEvent extends SafariEvent {
+trait SafariExtensionMessageEvent
+  extends StObject
+     with SafariEvent {
   
   /**
     * The message data.
     */
-  var message: js.Any = js.native
+  var message: js.Any
   
   /**
     * The name of the message.
     */
-  var name: String = js.native
+  var name: String
 }
 object SafariExtensionMessageEvent {
   

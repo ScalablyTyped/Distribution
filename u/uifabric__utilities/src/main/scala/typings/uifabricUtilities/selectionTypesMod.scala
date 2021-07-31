@@ -2,7 +2,6 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionTypesMod {
@@ -18,15 +17,19 @@ object selectionTypesMod {
   object SelectionDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SelectionDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[SelectionDirection & Double] = js.native
     
     @js.native
-    sealed trait horizontal extends SelectionDirection
-    /* 0 */ val horizontal: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.horizontal with Double = js.native
+    sealed trait horizontal
+      extends StObject
+         with SelectionDirection
+    /* 0 */ val horizontal: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.horizontal & Double = js.native
     
     @js.native
-    sealed trait vertical extends SelectionDirection
-    /* 1 */ val vertical: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.vertical with Double = js.native
+    sealed trait vertical
+      extends StObject
+         with SelectionDirection
+    /* 1 */ val vertical: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.vertical & Double = js.native
   }
   
   @js.native
@@ -36,25 +39,30 @@ object selectionTypesMod {
   object SelectionMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SelectionMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[SelectionMode & Double] = js.native
     
     @js.native
-    sealed trait multiple extends SelectionMode
-    /* 2 */ val multiple: typings.uifabricUtilities.selectionTypesMod.SelectionMode.multiple with Double = js.native
+    sealed trait multiple
+      extends StObject
+         with SelectionMode
+    /* 2 */ val multiple: typings.uifabricUtilities.selectionTypesMod.SelectionMode.multiple & Double = js.native
     
     @js.native
-    sealed trait none extends SelectionMode
-    /* 0 */ val none: typings.uifabricUtilities.selectionTypesMod.SelectionMode.none with Double = js.native
+    sealed trait none
+      extends StObject
+         with SelectionMode
+    /* 0 */ val none: typings.uifabricUtilities.selectionTypesMod.SelectionMode.none & Double = js.native
     
     @js.native
-    sealed trait single extends SelectionMode
-    /* 1 */ val single: typings.uifabricUtilities.selectionTypesMod.SelectionMode.single with Double = js.native
+    sealed trait single
+      extends StObject
+         with SelectionMode
+    /* 1 */ val single: typings.uifabricUtilities.selectionTypesMod.SelectionMode.single & Double = js.native
   }
   
-  @js.native
   trait IObjectWithKey extends StObject {
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
   }
   object IObjectWithKey {
     

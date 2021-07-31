@@ -2,105 +2,73 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Utcdayhours extends StObject {
   
-  val utcdayhours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcdayhours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utchoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utchoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utchoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utchoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcmonthdate: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcmonthdate: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcquartermonth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcquartermonth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcsecondsmilliseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcsecondsmilliseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcweekday: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcweekday: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcweeksdayhours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcweeksdayhours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyeardayofyear: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyeardayofyear: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearmonth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearmonth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearmonthdate: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearmonthdate: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearquarter: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearquarter: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearquartermonth: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearquartermonth: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearweek: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearweek: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearweekday: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearweekday: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearweekdayhours: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearweekdayhours: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val utcyearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val utcyearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Utcdayhours {
   
   @scala.inline
-  def apply(
-    utcdayhours: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utchoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    utchoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcmonthdate: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcquartermonth: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcsecondsmilliseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcweekday: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcweeksdayhours: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyeardayofyear: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearmonth: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearmonthdate: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearquarter: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearquartermonth: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearweek: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearweekday: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearweekdayhours: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`,
-    utcyearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
-  ): Utcdayhours = {
-    val __obj = js.Dynamic.literal(utcdayhours = utcdayhours.asInstanceOf[js.Any], utcdayhoursminutes = utcdayhoursminutes.asInstanceOf[js.Any], utcdayhoursminutesseconds = utcdayhoursminutesseconds.asInstanceOf[js.Any], utchoursminutes = utchoursminutes.asInstanceOf[js.Any], utchoursminutesseconds = utchoursminutesseconds.asInstanceOf[js.Any], utcminutesseconds = utcminutesseconds.asInstanceOf[js.Any], utcmonthdate = utcmonthdate.asInstanceOf[js.Any], utcmonthdatehours = utcmonthdatehours.asInstanceOf[js.Any], utcmonthdatehoursminutes = utcmonthdatehoursminutes.asInstanceOf[js.Any], utcmonthdatehoursminutesseconds = utcmonthdatehoursminutesseconds.asInstanceOf[js.Any], utcquartermonth = utcquartermonth.asInstanceOf[js.Any], utcsecondsmilliseconds = utcsecondsmilliseconds.asInstanceOf[js.Any], utcweekday = utcweekday.asInstanceOf[js.Any], utcweekdayhoursminutes = utcweekdayhoursminutes.asInstanceOf[js.Any], utcweekdayhoursminutesseconds = utcweekdayhoursminutesseconds.asInstanceOf[js.Any], utcweeksdayhours = utcweeksdayhours.asInstanceOf[js.Any], utcyeardayofyear = utcyeardayofyear.asInstanceOf[js.Any], utcyearmonth = utcyearmonth.asInstanceOf[js.Any], utcyearmonthdate = utcyearmonthdate.asInstanceOf[js.Any], utcyearmonthdatehours = utcyearmonthdatehours.asInstanceOf[js.Any], utcyearmonthdatehoursminutes = utcyearmonthdatehoursminutes.asInstanceOf[js.Any], utcyearmonthdatehoursminutesseconds = utcyearmonthdatehoursminutesseconds.asInstanceOf[js.Any], utcyearquarter = utcyearquarter.asInstanceOf[js.Any], utcyearquartermonth = utcyearquartermonth.asInstanceOf[js.Any], utcyearweek = utcyearweek.asInstanceOf[js.Any], utcyearweekday = utcyearweekday.asInstanceOf[js.Any], utcyearweekdayhours = utcyearweekdayhours.asInstanceOf[js.Any], utcyearweekdayhoursminutes = utcyearweekdayhoursminutes.asInstanceOf[js.Any], utcyearweekdayhoursminutesseconds = utcyearweekdayhoursminutesseconds.asInstanceOf[js.Any])
+  def apply(): Utcdayhours = {
+    val __obj = js.Dynamic.literal(utcdayhours = 1, utcdayhoursminutes = 1, utcdayhoursminutesseconds = 1, utchoursminutes = 1, utchoursminutesseconds = 1, utcminutesseconds = 1, utcmonthdate = 1, utcmonthdatehours = 1, utcmonthdatehoursminutes = 1, utcmonthdatehoursminutesseconds = 1, utcquartermonth = 1, utcsecondsmilliseconds = 1, utcweekday = 1, utcweekdayhoursminutes = 1, utcweekdayhoursminutesseconds = 1, utcweeksdayhours = 1, utcyeardayofyear = 1, utcyearmonth = 1, utcyearmonthdate = 1, utcyearmonthdatehours = 1, utcyearmonthdatehoursminutes = 1, utcyearmonthdatehoursminutesseconds = 1, utcyearquarter = 1, utcyearquartermonth = 1, utcyearweek = 1, utcyearweekday = 1, utcyearweekdayhours = 1, utcyearweekdayhoursminutes = 1, utcyearweekdayhoursminutesseconds = 1)
     __obj.asInstanceOf[Utcdayhours]
   }
   

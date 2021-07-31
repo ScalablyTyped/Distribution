@@ -2,27 +2,25 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationPropertyOptions extends StObject {
   
-  var associationName: js.UndefOr[String] = js.native
+  var associationName: js.UndefOr[String] = js.undefined
   
-  var entityTypeName: String = js.native
+  var entityTypeName: String
   
-  var foreignKeyNames: js.UndefOr[js.Array[String]] = js.native
+  var foreignKeyNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var foreignKeyNamesOnServer: js.UndefOr[js.Array[String]] = js.native
+  var foreignKeyNamesOnServer: js.UndefOr[js.Array[String]] = js.undefined
   
-  var isScalar: js.UndefOr[Boolean] = js.native
+  var isScalar: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nameOnServer: js.UndefOr[String] = js.native
+  var nameOnServer: js.UndefOr[String] = js.undefined
   
-  var validators: js.UndefOr[js.Array[Validator]] = js.native
+  var validators: js.UndefOr[js.Array[Validator]] = js.undefined
 }
 object NavigationPropertyOptions {
   

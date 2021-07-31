@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,21 +16,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Another advantage of this method is that conflicts are avoided if property value restrictions depend on the value of other properties.
   */
-@js.native
-trait XPropertyAccess extends XInterface {
+trait XPropertyAccess
+  extends StObject
+     with XInterface {
   
   /** @returns a sequence of all property values within the object in a single call. */
-  var PropertyValues: SafeArray[PropertyValue] = js.native
+  var PropertyValues: SafeArray[PropertyValue]
   
   /** @returns a sequence of all property values within the object in a single call. */
-  def getPropertyValues(): SafeArray[PropertyValue] = js.native
+  def getPropertyValues(): SafeArray[PropertyValue]
   
   /**
     * sets the values of given properties.
     *
     * All properties which are not contained in the sequence **aProps** will be left unchanged.
     */
-  def setPropertyValues(aProps: SeqEquiv[PropertyValue]): Unit = js.native
+  def setPropertyValues(aProps: SeqEquiv[PropertyValue]): Unit
 }
 object XPropertyAccess {
   

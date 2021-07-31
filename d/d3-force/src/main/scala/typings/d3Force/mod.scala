@@ -4,183 +4,149 @@ import typings.d3Force.d3ForceStrings.end
 import typings.d3Force.d3ForceStrings.tick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-force", "forceCenter")
+  @JSImport("d3-force", JSImport.Namespace)
   @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](): ForceCenter_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceCenter")
-  @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: js.UndefOr[scala.Nothing], y: Double): ForceCenter_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceCenter")
-  @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceCenter_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceCenter")
-  @js.native
-  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double, y: Double): ForceCenter_[NodeDatum] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-force", "forceCollide")
-  @js.native
-  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](): ForceCollide_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceCollide")
-  @js.native
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](): ForceCenter_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")().asInstanceOf[ForceCenter_[NodeDatum]]
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceCenter_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")(x.asInstanceOf[js.Any]).asInstanceOf[ForceCenter_[NodeDatum]]
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double, y: Double): ForceCenter_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceCenter_[NodeDatum]]
+  @scala.inline
+  def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Unit, y: Double): ForceCenter_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceCenter_[NodeDatum]]
+  
+  @scala.inline
+  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](): ForceCollide_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCollide")().asInstanceOf[ForceCollide_[NodeDatum]]
+  @scala.inline
   def forceCollide[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodes */ js.Array[NodeDatum], Double]
-  ): ForceCollide_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceCollide")
-  @js.native
-  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceCollide_[NodeDatum] = js.native
+  ): ForceCollide_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCollide")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceCollide_[NodeDatum]]
+  @scala.inline
+  def forceCollide[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceCollide_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCollide")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceCollide_[NodeDatum]]
   
-  @JSImport("d3-force", "forceLink")
-  @js.native
-  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](): ForceLink_[NodeDatum, LinksDatum] = js.native
-  @JSImport("d3-force", "forceLink")
-  @js.native
-  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](links: js.Array[LinksDatum]): ForceLink_[NodeDatum, LinksDatum] = js.native
+  @scala.inline
+  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](): ForceLink_[NodeDatum, LinksDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLink")().asInstanceOf[ForceLink_[NodeDatum, LinksDatum]]
+  @scala.inline
+  def forceLink[NodeDatum /* <: SimulationNodeDatum */, LinksDatum /* <: SimulationLinkDatum[NodeDatum] */](links: js.Array[LinksDatum]): ForceLink_[NodeDatum, LinksDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLink")(links.asInstanceOf[js.Any]).asInstanceOf[ForceLink_[NodeDatum, LinksDatum]]
   
-  @JSImport("d3-force", "forceManyBody")
-  @js.native
-  def forceManyBody[NodeDatum /* <: SimulationNodeDatum */](): ForceManyBody_[NodeDatum] = js.native
+  @scala.inline
+  def forceManyBody[NodeDatum /* <: SimulationNodeDatum */](): ForceManyBody_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceManyBody")().asInstanceOf[ForceManyBody_[NodeDatum]]
   
-  @JSImport("d3-force", "forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
-    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
-    x: js.UndefOr[scala.Nothing],
-    y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
-    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
-    x: js.UndefOr[scala.Nothing],
-    y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceRadial_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: Double,
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: Double,
     y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
-    radius: Double,
-    x: js.UndefOr[scala.Nothing],
+    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
+    x: Unit,
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: js.UndefOr[scala.Nothing], y: Double): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
+    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
+    x: Unit,
+    y: Double
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceRadial_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any]).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     y: Double
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
   def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: Double,
     y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
-  ): ForceRadial_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceRadial")
-  @js.native
-  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double, y: Double): ForceRadial_[NodeDatum] = js.native
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Double, y: Double): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](
+    radius: Double,
+    x: Unit,
+    y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
+  ): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
+  @scala.inline
+  def forceRadial[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: Unit, y: Double): ForceRadial_[NodeDatum] = (^.asInstanceOf[js.Dynamic].applyDynamic("forceRadial")(radius.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[ForceRadial_[NodeDatum]]
   
-  @JSImport("d3-force", "forceSimulation")
-  @js.native
-  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](): Simulation[NodeDatum, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-force", "forceSimulation")
-  @js.native
-  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-force", "forceSimulation")
-  @js.native
-  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](): Simulation[NodeDatum, LinkDatum] = js.native
-  @JSImport("d3-force", "forceSimulation")
-  @js.native
-  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, LinkDatum] = js.native
+  @scala.inline
+  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](): Simulation[NodeDatum, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")().asInstanceOf[Simulation[NodeDatum, Unit]]
+  @scala.inline
+  def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")(nodesData.asInstanceOf[js.Any]).asInstanceOf[Simulation[NodeDatum, Unit]]
   
-  @JSImport("d3-force", "forceX")
-  @js.native
-  def forceX[NodeDatum /* <: SimulationNodeDatum */](): ForceX_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceX")
-  @js.native
-  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceX_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceX")
-  @js.native
-  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceX_[NodeDatum] = js.native
+  @scala.inline
+  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")().asInstanceOf[Simulation[NodeDatum, LinkDatum]]
+  @scala.inline
+  def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")(nodesData.asInstanceOf[js.Any]).asInstanceOf[Simulation[NodeDatum, LinkDatum]]
   
-  @JSImport("d3-force", "forceY")
-  @js.native
-  def forceY[NodeDatum /* <: SimulationNodeDatum */](): ForceY_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceY")
-  @js.native
-  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceY_[NodeDatum] = js.native
-  @JSImport("d3-force", "forceY")
-  @js.native
-  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: Double): ForceY_[NodeDatum] = js.native
+  @scala.inline
+  def forceX[NodeDatum /* <: SimulationNodeDatum */](): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")().asInstanceOf[ForceX_[NodeDatum]]
+  @scala.inline
+  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")(x.asInstanceOf[js.Any]).asInstanceOf[ForceX_[NodeDatum]]
+  @scala.inline
+  def forceX[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")(x.asInstanceOf[js.Any]).asInstanceOf[ForceX_[NodeDatum]]
+  
+  @scala.inline
+  def forceY[NodeDatum /* <: SimulationNodeDatum */](): ForceY_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceY")().asInstanceOf[ForceY_[NodeDatum]]
+  @scala.inline
+  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceY_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceY")(y.asInstanceOf[js.Any]).asInstanceOf[ForceY_[NodeDatum]]
+  @scala.inline
+  def forceY[NodeDatum /* <: SimulationNodeDatum */](y: Double): ForceY_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceY")(y.asInstanceOf[js.Any]).asInstanceOf[ForceY_[NodeDatum]]
   
   @js.native
   trait Force[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: js.UndefOr[SimulationLinkDatum[NodeDatum]] */] extends StObject {
@@ -206,7 +172,8 @@ object mod {
   
   @js.native
   trait ForceCenter_[NodeDatum /* <: SimulationNodeDatum */]
-    extends Force[NodeDatum, js.Any] {
+    extends StObject
+       with Force[NodeDatum, js.Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -253,7 +220,8 @@ object mod {
   
   @js.native
   trait ForceCollide_[NodeDatum /* <: SimulationNodeDatum */]
-    extends Force[NodeDatum, js.Any] {
+    extends StObject
+       with Force[NodeDatum, js.Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -327,7 +295,9 @@ object mod {
   }
   
   @js.native
-  trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */] extends Force[NodeDatum, LinkDatum] {
+  trait ForceLink_[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */]
+    extends StObject
+       with Force[NodeDatum, LinkDatum] {
     
     /**
       * Return the current distance accessor, which defaults to implying a default distance of 30.
@@ -470,7 +440,8 @@ object mod {
   
   @js.native
   trait ForceManyBody_[NodeDatum /* <: SimulationNodeDatum */]
-    extends Force[NodeDatum, js.Any] {
+    extends StObject
+       with Force[NodeDatum, js.Any] {
     
     /**
       * Returns the current maximum distance over which this force is considered, which defaults to infinity.
@@ -578,7 +549,8 @@ object mod {
   
   @js.native
   trait ForceRadial_[NodeDatum /* <: SimulationNodeDatum */]
-    extends Force[NodeDatum, js.Any] {
+    extends StObject
+       with Force[NodeDatum, js.Any] {
     
     /**
       * Assigns the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -724,7 +696,8 @@ object mod {
   
   @js.native
   trait ForceX_[NodeDatum /* <: SimulationNodeDatum */]
-    extends Force[NodeDatum, js.Any] {
+    extends StObject
+       with Force[NodeDatum, js.Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -810,7 +783,8 @@ object mod {
   
   @js.native
   trait ForceY_[NodeDatum /* <: SimulationNodeDatum */]
-    extends Force[NodeDatum, js.Any] {
+    extends StObject
+       with Force[NodeDatum, js.Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -1141,13 +1115,12 @@ object mod {
     def velocityDecay(decay: Double): this.type = js.native
   }
   
-  @js.native
   trait SimulationLinkDatum[NodeDatum /* <: SimulationNodeDatum */] extends StObject {
     
     /**
       * The zero-based index into the links array. Internally generated when calling ForceLink.links(...)
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Link’s source node.
@@ -1156,7 +1129,7 @@ object mod {
       * is replaced by an object reference to the corresponding node with the given identifier.
       * After initialization, the source property represents the source node object.
       */
-    var source: NodeDatum | String | Double = js.native
+    var source: NodeDatum | String | Double
     
     /**
       * Link’s source link
@@ -1165,7 +1138,7 @@ object mod {
       * is replaced by an object reference to the corresponding node with the given identifier.
       * After initialization, the target property represents the target node object.
       */
-    var target: NodeDatum | String | Double = js.native
+    var target: NodeDatum | String | Double
   }
   object SimulationLinkDatum {
     
@@ -1176,7 +1149,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SimulationLinkDatumMutableBuilder[Self <: SimulationLinkDatum[_], NodeDatum /* <: SimulationNodeDatum */] (val x: Self with SimulationLinkDatum[NodeDatum]) extends AnyVal {
+    implicit class SimulationLinkDatumMutableBuilder[Self <: SimulationLinkDatum[?], NodeDatum /* <: SimulationNodeDatum */] (val x: Self & SimulationLinkDatum[NodeDatum]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -1192,43 +1165,42 @@ object mod {
     }
   }
   
-  @js.native
   trait SimulationNodeDatum extends StObject {
     
     /**
       * Node’s fixed x-position (if position was fixed)
       */
-    var fx: js.UndefOr[Double | Null] = js.native
+    var fx: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Node’s fixed y-position (if position was fixed)
       */
-    var fy: js.UndefOr[Double | Null] = js.native
+    var fy: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Node’s zero-based index into nodes array. This property is set during the initialization process of a simulation.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s current x-velocity
       */
-    var vx: js.UndefOr[Double] = js.native
+    var vx: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s current y-velocity
       */
-    var vy: js.UndefOr[Double] = js.native
+    var vy: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s current x-position
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s current y-position
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object SimulationNodeDatum {
     

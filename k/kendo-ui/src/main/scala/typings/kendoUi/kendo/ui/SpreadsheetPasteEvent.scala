@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.spreadsheet.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpreadsheetPasteEvent extends SpreadsheetEvent {
+trait SpreadsheetPasteEvent
+  extends StObject
+     with SpreadsheetEvent {
   
-  var clipboardContent: js.UndefOr[js.Any] = js.native
+  var clipboardContent: js.UndefOr[js.Any] = js.undefined
   
-  var range: js.UndefOr[Range] = js.native
+  var range: js.UndefOr[Range] = js.undefined
 }
 object SpreadsheetPasteEvent {
   

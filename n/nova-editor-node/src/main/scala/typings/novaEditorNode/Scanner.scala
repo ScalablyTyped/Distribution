@@ -2,38 +2,36 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/scanner/
-@js.native
 trait Scanner extends StObject {
   
-  val atEnd: Boolean = js.native
+  val atEnd: Boolean
   
-  var caseSensitive: Boolean = js.native
+  var caseSensitive: Boolean
   
-  var location: Double = js.native
+  var location: Double
   
-  def scanChars(charset: Charset): String | Null = js.native
+  def scanChars(charset: Charset): String | Null
   
-  def scanFloat(): Double | Null = js.native
+  def scanFloat(): Double | Null
   
-  def scanHexFloat(): Double | Null = js.native
+  def scanHexFloat(): Double | Null
   
-  def scanHexInt(): Double | Null = js.native
+  def scanHexInt(): Double | Null
   
-  def scanInt(): Double | Null = js.native
+  def scanInt(): Double | Null
   
-  def scanString(string: String): String | Null = js.native
+  def scanString(string: String): String | Null
   
-  def scanUpToChars(charset: Charset): String | Null = js.native
+  def scanUpToChars(charset: Charset): String | Null
   
-  def scanUpToString(string: String): String | Null = js.native
+  def scanUpToString(string: String): String | Null
   
-  var skipChars: Charset = js.native
+  var skipChars: Charset
   
-  val string: String = js.native
+  val string: String
 }
 object Scanner {
   

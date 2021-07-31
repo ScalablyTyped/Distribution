@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.downloadPreloadMod.DownloadPreloadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `10` extends StObject {
   
-  var newVal: js.UndefOr[js.Array[DownloadPreloadOption]] = js.native
+  var newVal: js.UndefOr[js.Array[DownloadPreloadOption]] = js.undefined
   
-  var oldVal: js.UndefOr[js.Array[DownloadPreloadOption]] = js.native
+  var oldVal: js.UndefOr[js.Array[DownloadPreloadOption]] = js.undefined
 }
 object `10` {
   

@@ -2,7 +2,6 @@ package typings.azureSb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueresultMod {
@@ -13,32 +12,31 @@ object queueresultMod {
       
       object Results {
         
-        @js.native
         trait QueueProperties extends StObject {
           
-          var DeadLetteringOnMessageExpiration: String = js.native
+          var DeadLetteringOnMessageExpiration: String
           
-          var DefaultMessageTimeToLive: String = js.native
+          var DefaultMessageTimeToLive: String
           
-          var DuplicateDetectionHistoryTimeWindow: String = js.native
+          var DuplicateDetectionHistoryTimeWindow: String
           
-          var EnableBatchedOperations: Boolean = js.native
+          var EnableBatchedOperations: Boolean
           
-          var EnablePartitioning: Boolean = js.native
+          var EnablePartitioning: Boolean
           
-          var LockDuration: String = js.native
+          var LockDuration: String
           
-          var MaxDeliveryCount: Double = js.native
+          var MaxDeliveryCount: Double
           
-          var MaxSizeInMegabytes: Double = js.native
+          var MaxSizeInMegabytes: Double
           
-          var MessageCount: Double = js.native
+          var MessageCount: Double
           
-          var RequiresDuplicateDetection: Boolean = js.native
+          var RequiresDuplicateDetection: Boolean
           
-          var RequiresSession: Boolean = js.native
+          var RequiresSession: Boolean
           
-          var SizeInBytes: Double = js.native
+          var SizeInBytes: Double
         }
         object QueueProperties {
           
@@ -102,12 +100,11 @@ object queueresultMod {
           }
         }
         
-        @js.native
         trait QueueResult extends StObject {
           
-          def parse(xml: js.Object): js.Object | js.Array[js.Object] = js.native
+          def parse(xml: js.Object): js.Object | js.Array[js.Object]
           
-          def serialize(resource: QueueProperties): String = js.native
+          def serialize(resource: QueueProperties): String
         }
         object QueueResult {
           

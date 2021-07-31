@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkPathComponentDetails extends StObject {
   
   /**
     * The IP addresses of the destination.
     */
-  var Address: js.UndefOr[StringList] = js.native
+  var Address: js.UndefOr[StringList] = js.undefined
   
   /**
     * A list of port ranges for the destination.
     */
-  var PortRanges: js.UndefOr[PortRangeList] = js.native
+  var PortRanges: js.UndefOr[PortRangeList] = js.undefined
 }
 object NetworkPathComponentDetails {
   

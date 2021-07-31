@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The TLS settings for the server.
   */
-@js.native
 trait SchemaServerTlsSettings extends StObject {
   
   /**
     * Configures the mechanism to obtain security certificates and identity
     * information.
     */
-  var proxyTlsContext: js.UndefOr[SchemaTlsContext] = js.native
+  var proxyTlsContext: js.UndefOr[SchemaTlsContext] = js.undefined
   
   /**
     * A list of alternate names to verify the subject identity in the
     * certificate presented by the client.
     */
-  var subjectAltNames: js.UndefOr[js.Array[String]] = js.native
+  var subjectAltNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether connections should be secured using TLS. The value of
@@ -30,7 +28,7 @@ trait SchemaServerTlsSettings extends StObject {
     * semantics.   - MUTUAL Secure connections to the backends using mutual TLS
     * by presenting client certificates for authentication.
     */
-  var tlsMode: js.UndefOr[String] = js.native
+  var tlsMode: js.UndefOr[String] = js.undefined
 }
 object SchemaServerTlsSettings {
   

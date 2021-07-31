@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOutpostInstanceTypesMod {
   
-  @JSImport("@pulumi/aws/outposts/getOutpostInstanceTypes", "getOutpostInstanceTypes")
+  @JSImport("@pulumi/aws/outposts/getOutpostInstanceTypes", JSImport.Namespace)
   @js.native
-  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs): js.Promise[GetOutpostInstanceTypesResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutpostInstanceTypes", "getOutpostInstanceTypes")
-  @js.native
-  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs): js.Promise[GetOutpostInstanceTypesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceTypes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostInstanceTypesResult]]
+  @scala.inline
+  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceTypes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostInstanceTypesResult]]
+  
   trait GetOutpostInstanceTypesArgs extends StObject {
     
     /**
       * Outpost Amazon Resource Name (ARN).
       */
-    val arn: String = js.native
+    val arn: String
   }
   object GetOutpostInstanceTypesArgs {
     
@@ -39,20 +39,19 @@ object getOutpostInstanceTypesMod {
     }
   }
   
-  @js.native
   trait GetOutpostInstanceTypesResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of instance types.
       */
-    val instanceTypes: js.Array[String] = js.native
+    val instanceTypes: js.Array[String]
   }
   object GetOutpostInstanceTypesResult {
     

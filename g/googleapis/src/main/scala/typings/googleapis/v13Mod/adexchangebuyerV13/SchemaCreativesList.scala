@@ -2,7 +2,6 @@ package typings.googleapis.v13Mod.adexchangebuyerV13
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * accounts that the user has access to. Each entry in the feed corresponds to
   * a single creative.
   */
-@js.native
 trait SchemaCreativesList extends StObject {
   
   /**
     * A list of creatives.
     */
-  var items: js.UndefOr[js.Array[SchemaCreative]] = js.native
+  var items: js.UndefOr[js.Array[SchemaCreative]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token used to page through creatives. To retrieve the next
     * page of results, set the next request&#39;s &quot;pageToken&quot; value
     * to this.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativesList {
   

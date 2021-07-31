@@ -2,18 +2,34 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batchUpdatableMod {
   
   @JSImport("@devexpress/utils/lib/class/batch-updatable", "BatchUpdatableObject")
   @js.native
-  abstract class BatchUpdatableObject () extends IBatchUpdatableObjectExtend {
+  abstract class BatchUpdatableObject ()
+    extends StObject
+       with IBatchUpdatableObjectExtend {
+    
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def continueUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
     
     def isLocked(): Boolean = js.native
     
+    /* CompleteClass */
+    override def isUpdateLocked(): Boolean = js.native
+    
     var occurredEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    override def onUpdateLocked(): Unit = js.native
     
     def onUpdateUnlocked(occurredEvents: Double): Unit = js.native
     
@@ -21,19 +37,30 @@ object batchUpdatableMod {
     
     def resetOccurredEvents(): Unit = js.native
     
+    /* CompleteClass */
+    override def suspendUpdate(): Unit = js.native
+    
     var suspendUpdateCount: js.Any = js.native
   }
   
   @JSImport("@devexpress/utils/lib/class/batch-updatable", "EmptyBatchUpdatableObject")
   @js.native
-  class EmptyBatchUpdatableObject () extends IBatchUpdatableObject
+  class EmptyBatchUpdatableObject ()
+    extends StObject
+       with IBatchUpdatableObject {
+    
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
+  }
   
-  @js.native
   trait IBatchUpdatableObject extends StObject {
     
-    def beginUpdate(): Unit = js.native
+    def beginUpdate(): Unit
     
-    def endUpdate(): Unit = js.native
+    def endUpdate(): Unit
   }
   object IBatchUpdatableObject {
     
@@ -54,16 +81,17 @@ object batchUpdatableMod {
     }
   }
   
-  @js.native
-  trait IBatchUpdatableObjectExtend extends IBatchUpdatableObject {
+  trait IBatchUpdatableObjectExtend
+    extends StObject
+       with IBatchUpdatableObject {
     
-    def continueUpdate(): Unit = js.native
+    def continueUpdate(): Unit
     
-    def isUpdateLocked(): Boolean = js.native
+    def isUpdateLocked(): Boolean
     
-    def onUpdateLocked(): Unit = js.native
+    def onUpdateLocked(): Unit
     
-    def suspendUpdate(): Unit = js.native
+    def suspendUpdate(): Unit
   }
   object IBatchUpdatableObjectExtend {
     

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceVideosUpdate extends StandardParameters {
+trait ParamsResourceVideosUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -29,7 +29,7 @@ trait ParamsResourceVideosUpdate extends StandardParameters {
     * channel. The actual CMS account that the user authenticates with must be
     * linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter serves two purposes in this operation. It identifies
@@ -50,12 +50,12 @@ trait ParamsResourceVideosUpdate extends StandardParameters {
     * part that does not contain mutable values, that part will still be
     * included in the API response.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaVideo] = js.native
+  var requestBody: js.UndefOr[SchemaVideo] = js.undefined
 }
 object ParamsResourceVideosUpdate {
   

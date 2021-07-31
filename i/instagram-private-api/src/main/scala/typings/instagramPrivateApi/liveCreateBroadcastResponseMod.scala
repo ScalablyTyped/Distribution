@@ -2,79 +2,77 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveCreateBroadcastResponseMod {
   
-  @js.native
   trait LiveCreateBroadcastResponseRootObject extends StObject {
     
-    var allow_resolution_change: Double = js.native
+    var allow_resolution_change: Double
     
-    var avc_rtmp_payload: Double = js.native
+    var avc_rtmp_payload: Double
     
-    var broadcast_id: String = js.native
+    var broadcast_id: String
     
-    var broadcaster_update_frequency: Double = js.native
+    var broadcaster_update_frequency: Double
     
-    var connect_with_1rtt: Double = js.native
+    var connect_with_1rtt: Double
     
-    var disable_speed_test: Double = js.native
+    var disable_speed_test: Double
     
-    var fbvp_quic_upload_url: String = js.native
+    var fbvp_quic_upload_url: String
     
-    var fbvp_tcp_upload_url: String = js.native
+    var fbvp_tcp_upload_url: String
     
-    var heartbeat_interval: Double = js.native
+    var heartbeat_interval: Double
     
-    var live_trace_enabled: Double = js.native
+    var live_trace_enabled: Double
     
-    var live_trace_sample_interval_in_seconds: Double = js.native
+    var live_trace_sample_interval_in_seconds: Double
     
-    var live_trace_sampling_source: Double = js.native
+    var live_trace_sampling_source: Double
     
-    var max_time_in_seconds: Double = js.native
+    var max_time_in_seconds: Double
     
-    var pass_thru_enabled: Double = js.native
+    var pass_thru_enabled: Double
     
-    var speed_test_minimum_bandwidth_threshold: Double = js.native
+    var speed_test_minimum_bandwidth_threshold: Double
     
-    var speed_test_retry_max_count: Double = js.native
+    var speed_test_retry_max_count: Double
     
-    var speed_test_retry_time_delay: Double = js.native
+    var speed_test_retry_time_delay: Double
     
-    var speed_test_ui_timeout: Double = js.native
+    var speed_test_ui_timeout: Double
     
-    var status: String = js.native
+    var status: String
     
-    var stream_audio_bit_rate: Double = js.native
+    var stream_audio_bit_rate: Double
     
-    var stream_audio_channels: Double = js.native
+    var stream_audio_channels: Double
     
-    var stream_audio_sample_rate: Double = js.native
+    var stream_audio_sample_rate: Double
     
-    var stream_network_connection_retry_count: Double = js.native
+    var stream_network_connection_retry_count: Double
     
-    var stream_network_connection_retry_delay_in_seconds: Double = js.native
+    var stream_network_connection_retry_delay_in_seconds: Double
     
-    var stream_network_speed_test_payload_chunk_size_in_bytes: Double = js.native
+    var stream_network_speed_test_payload_chunk_size_in_bytes: Double
     
-    var stream_network_speed_test_payload_size_in_bytes: Double = js.native
+    var stream_network_speed_test_payload_size_in_bytes: Double
     
-    var stream_network_speed_test_payload_timeout_in_seconds: Double = js.native
+    var stream_network_speed_test_payload_timeout_in_seconds: Double
     
-    var stream_video_adaptive_bitrate_config: String = js.native
+    var stream_video_adaptive_bitrate_config: String
     
-    var stream_video_allow_b_frames: Double = js.native
+    var stream_video_allow_b_frames: Double
     
-    var stream_video_bit_rate: Double = js.native
+    var stream_video_bit_rate: Double
     
-    var stream_video_fps: Double = js.native
+    var stream_video_fps: Double
     
-    var stream_video_width: Double = js.native
+    var stream_video_width: Double
     
-    var upload_url: String = js.native
+    var upload_url: String
   }
   object LiveCreateBroadcastResponseRootObject {
     

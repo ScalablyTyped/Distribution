@@ -14,85 +14,84 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListPartsOutputMod {
   
-  @js.native
   trait ListPartsOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Date when multipart upload will become eligible for abort operation by lifecycle.</p>
       */
-    var AbortDate: js.UndefOr[Date] = js.native
+    var AbortDate: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Id of the lifecycle rule that makes a multipart upload eligible for abort operation.</p>
       */
-    var AbortRuleId: js.UndefOr[String] = js.native
+    var AbortRuleId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Name of the bucket to which the multipart upload was initiated.</p>
       */
-    var Bucket: js.UndefOr[String] = js.native
+    var Bucket: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Identifies who initiated the multipart upload.</p>
       */
-    var Initiator: js.UndefOr[UnmarshalledInitiator] = js.native
+    var Initiator: js.UndefOr[UnmarshalledInitiator] = js.undefined
     
     /**
       * <p>Indicates whether the returned list of parts is truncated.</p>
       */
-    var IsTruncated: js.UndefOr[Boolean] = js.native
+    var IsTruncated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>Object key for which the multipart upload was initiated.</p>
       */
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Maximum number of parts that were allowed in the response.</p>
       */
-    var MaxParts: js.UndefOr[Double] = js.native
+    var MaxParts: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>When a list is truncated, this element specifies the last part in the list, as well as the value to use for the part-number-marker request parameter in a subsequent request.</p>
       */
-    var NextPartNumberMarker: js.UndefOr[Double] = js.native
+    var NextPartNumberMarker: js.UndefOr[Double] = js.undefined
     
     /**
       * _Owner shape
       */
-    var Owner: js.UndefOr[UnmarshalledOwner] = js.native
+    var Owner: js.UndefOr[UnmarshalledOwner] = js.undefined
     
     /**
       * <p>Part number after which listing begins.</p>
       */
-    var PartNumberMarker: js.UndefOr[Double] = js.native
+    var PartNumberMarker: js.UndefOr[Double] = js.undefined
     
     /**
       * _Parts shape
       */
-    var Parts: js.UndefOr[js.Array[UnmarshalledPart]] = js.native
+    var Parts: js.UndefOr[js.Array[UnmarshalledPart]] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
     
     /**
       * <p>The class of storage used to store the object.</p>
       */
-    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.native
+    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.undefined
     
     /**
       * <p>Upload ID identifying the multipart upload whose parts are being listed.</p>
       */
-    var UploadId: js.UndefOr[String] = js.native
+    var UploadId: js.UndefOr[String] = js.undefined
   }
   object ListPartsOutput {
     

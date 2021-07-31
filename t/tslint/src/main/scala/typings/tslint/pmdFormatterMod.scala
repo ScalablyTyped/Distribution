@@ -4,7 +4,6 @@ import typings.tslint.abstractFormatterMod.AbstractFormatter
 import typings.tslint.formatterMod.IFormatterMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pmdFormatterMod {

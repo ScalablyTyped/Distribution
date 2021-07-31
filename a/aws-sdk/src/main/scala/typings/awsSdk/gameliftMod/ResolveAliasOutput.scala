@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveAliasOutput extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift fleet resource that this alias points to. 
     */
-  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
   
   /**
     * The fleet identifier that the alias is pointing to.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
 }
 object ResolveAliasOutput {
   

@@ -2,27 +2,25 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Structure representing a size._
   * @see https://docs.scriptable.app/size/#-new-size
   */
-@js.native
 trait Size extends StObject {
   
   /**
     * _Height value._
     * @see https://docs.scriptable.app/size/#height
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * _Width value._
     * @see https://docs.scriptable.app/size/#width
     */
-  var width: Double = js.native
+  var width: Double
 }
 object Size {
   

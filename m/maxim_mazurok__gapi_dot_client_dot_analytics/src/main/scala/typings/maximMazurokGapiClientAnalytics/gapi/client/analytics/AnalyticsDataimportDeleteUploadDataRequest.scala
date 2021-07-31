@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsDataimportDeleteUploadDataRequest extends StObject {
   
   /** A list of upload UIDs. */
-  var customDataImportUids: js.UndefOr[js.Array[String]] = js.native
+  var customDataImportUids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AnalyticsDataimportDeleteUploadDataRequest {
   

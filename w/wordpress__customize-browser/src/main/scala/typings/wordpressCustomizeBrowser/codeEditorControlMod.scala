@@ -3,7 +3,6 @@ package typings.wordpressCustomizeBrowser
 import typings.wordpressCustomizeBrowser.controlMod.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codeEditorControlMod {
@@ -27,6 +26,6 @@ object codeEditorControlMod {
     
     def onTabPrevious(): Unit = js.native
     
-    def onUpdateErrorNotice(errorAnnotations: js.Array[_]): Unit = js.native
+    def onUpdateErrorNotice(errorAnnotations: js.Array[js.Any]): Unit = js.native
   }
 }

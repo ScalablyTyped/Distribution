@@ -2,17 +2,16 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentUnorderedList
-  extends ContentBase
+  extends StObject
+     with ContentBase
      with _Content {
   
-  var `type`: js.UndefOr[UnorderedListType] = js.native
+  var `type`: js.UndefOr[UnorderedListType] = js.undefined
   
-  var ul: js.Array[UnorderedListElement] = js.native
+  var ul: js.Array[UnorderedListElement]
 }
 object ContentUnorderedList {
   

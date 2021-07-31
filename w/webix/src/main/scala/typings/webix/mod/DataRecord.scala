@@ -1,9 +1,9 @@
 package typings.webix.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,13 +13,13 @@ trait DataRecord extends StObject {
   def attachEvent(`type`: String, functor: WebixCallback, id: String): String | Double = js.native
   
   def bind(target: js.Any): Unit = js.native
-  def bind(target: js.Any, rule: js.UndefOr[scala.Nothing], format: String): Unit = js.native
+  def bind(target: js.Any, rule: Unit, format: String): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   var config: StringDictionary[js.Any] = js.native
   
@@ -33,10 +33,10 @@ trait DataRecord extends StObject {
   
   def isVisible(): Boolean = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
   def mapEvent(map: js.Any): Unit = js.native
   
@@ -54,4 +54,9 @@ trait DataRecord extends StObject {
   def unbind(): Unit = js.native
   
   def unblockEvent(): Unit = js.native
+}
+object DataRecord {
+  
+  @scala.inline
+  def apply: DataRecordFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataRecord").asInstanceOf[DataRecordFactory]
 }

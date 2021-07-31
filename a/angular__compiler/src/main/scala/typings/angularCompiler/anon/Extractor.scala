@@ -3,15 +3,13 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.staticReflectorMod.StaticReflector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extractor extends StObject {
   
-  var extractor: typings.angularCompiler.extractorMod.Extractor = js.native
+  var extractor: typings.angularCompiler.extractorMod.Extractor
   
-  var staticReflector: StaticReflector = js.native
+  var staticReflector: StaticReflector
 }
 object Extractor {
   

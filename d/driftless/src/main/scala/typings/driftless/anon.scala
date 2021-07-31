@@ -2,15 +2,13 @@ package typings.driftless
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CustomClearTimeout extends StObject {
     
-    var customClearTimeout: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var customClearTimeout: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   }
   object CustomClearTimeout {
     

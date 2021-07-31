@@ -2,17 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HyperCubeMeasureDef width extend NxMeasure
   */
-@js.native
-trait IHyperCubeMeasureDef extends INxMeasure {
+trait IHyperCubeMeasureDef
+  extends StObject
+     with INxMeasure {
   
   @JSName("qDef")
-  var qDef_IHyperCubeMeasureDef: IHyperCubeMeasureqDef = js.native
+  var qDef_IHyperCubeMeasureDef: IHyperCubeMeasureqDef
 }
 object IHyperCubeMeasureDef {
   

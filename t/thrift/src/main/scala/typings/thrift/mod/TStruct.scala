@@ -2,13 +2,11 @@ package typings.thrift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TStruct extends StObject {
   
-  var fname: String = js.native
+  var fname: String
 }
 object TStruct {
   

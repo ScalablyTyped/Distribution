@@ -2,11 +2,12 @@ package typings.ckeditorCkeditor5Utils.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Observable extends Emitter {
+trait Observable
+  extends StObject
+     with Emitter {
   
   def bind(bindProperties: String*): BindChain = js.native
   

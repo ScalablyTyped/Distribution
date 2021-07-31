@@ -2,31 +2,29 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteSegmentRequest extends StObject {
   
   /**
     * The criteria that define the dimensions for the segment.
     */
-  var Dimensions: js.UndefOr[SegmentDimensions] = js.native
+  var Dimensions: js.UndefOr[SegmentDimensions] = js.undefined
   
   /**
     * The name of the segment.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The segment group to use and the dimensions to apply to the group's base segments in order to build the segment. A segment group can consist of zero or more base segments. Your request can include only one segment group.
     */
-  var SegmentGroups: js.UndefOr[SegmentGroupList] = js.native
+  var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
   
   /**
     * A string-to-string map of key-value pairs that defines the tags to associate with the segment. Each tag consists of a required tag key and an associated tag value.
     */
-  var tags: js.UndefOr[MapOfString] = js.native
+  var tags: js.UndefOr[MapOfString] = js.undefined
 }
 object WriteSegmentRequest {
   

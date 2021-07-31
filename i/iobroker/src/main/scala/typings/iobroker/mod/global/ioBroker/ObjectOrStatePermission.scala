@@ -11,17 +11,17 @@ import typings.iobroker.iobrokerStrings.users
 import typings.iobroker.iobrokerStrings.write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectOrStatePermission extends Permission {
+trait ObjectOrStatePermission
+  extends StObject
+     with Permission {
   
   @JSName("operation")
-  var operation_ObjectOrStatePermission: list | read | write | create | delete = js.native
+  var operation_ObjectOrStatePermission: list | read | write | create | delete
   
   @JSName("type")
-  var type_ObjectOrStatePermission: `object` | file | users | state = js.native
+  var type_ObjectOrStatePermission: `object` | file | users | state
 }
 object ObjectOrStatePermission {
   

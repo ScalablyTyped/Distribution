@@ -2,38 +2,36 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DelimiterInfo...
   */
-@js.native
 trait IDelimiterInfo extends StObject {
   
   /**
     * Is set to true if multiple spaces are used to separate the values.
     */
-  var qIsMultiple: Boolean = js.native
+  var qIsMultiple: Boolean
   
   /**
     * Name of the delimiter.
     * Example:
     * "Tab_DELIMITER"
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Delimiter character number used by the engine to determine how to separate the values.
     */
-  var qNumber: Double = js.native
+  var qNumber: Double
   
   /**
     * Representation of the delimiter value that is used in the script.
     * Example:
     * "'\t'"
     */
-  var qScriptCode: String = js.native
+  var qScriptCode: String
 }
 object IDelimiterInfo {
   

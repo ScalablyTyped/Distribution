@@ -2,30 +2,30 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the Floating Action Button's BootstrapFABActionItem object.
   */
-@js.native
-trait BootstrapClientFABActionItem extends ASPxClientFABActionItemBase {
+trait BootstrapClientFABActionItem
+  extends StObject
+     with ASPxClientFABActionItemBase {
   
-  def GetBadgeCssClass(): String = js.native
+  def GetBadgeCssClass(): String
   
-  def GetBadgeIconCssClass(): String = js.native
+  def GetBadgeIconCssClass(): String
   
-  def GetBadgeText(): String = js.native
+  def GetBadgeText(): String
   
-  def GetIconCssClass(): String = js.native
+  def GetIconCssClass(): String
   
-  def SetBadgeCssClass(cssClass: String): Unit = js.native
+  def SetBadgeCssClass(cssClass: String): Unit
   
-  def SetBadgeIconCssClass(cssClass: String): Unit = js.native
+  def SetBadgeIconCssClass(cssClass: String): Unit
   
-  def SetBadgeText(text: String): Unit = js.native
+  def SetBadgeText(text: String): Unit
   
-  def SetIconCssClass(cssClass: String): Unit = js.native
+  def SetIconCssClass(cssClass: String): Unit
 }
 object BootstrapClientFABActionItem {
   

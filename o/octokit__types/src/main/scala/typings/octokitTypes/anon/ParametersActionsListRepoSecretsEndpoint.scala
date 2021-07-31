@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsListRepoSecretsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsListRepoSecretsEndpoint extends StObject {
   
-  var parameters: ActionsListRepoSecretsEndpoint = js.native
+  var parameters: ActionsListRepoSecretsEndpoint
   
-  var request: ActionsListRepoSecretsRequestOptions = js.native
+  var request: ActionsListRepoSecretsRequestOptions
   
-  var response: OctokitResponse[ActionsListRepoSecretsResponseData] = js.native
+  var response: OctokitResponse[ActionsListRepoSecretsResponseData]
 }
 object ParametersActionsListRepoSecretsEndpoint {
   

@@ -2,33 +2,33 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Polyline extends EventBindable {
+trait Polyline
+  extends StObject
+     with EventBindable {
   
-  def getBounds(): Bounds = js.native
+  def getBounds(): Bounds
   
-  def getExtData(): js.Any = js.native
+  def getExtData(): js.Any
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def getOptions(): PolylineOptions = js.native
+  def getOptions(): PolylineOptions
   
-  def getPath(): js.Array[LngLat] = js.native
+  def getPath(): js.Array[LngLat]
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def setExtData(ext: js.Any): Unit = js.native
+  def setExtData(ext: js.Any): Unit
   
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map): Unit
   
-  def setOptions(opt: PolylineOptions): Unit = js.native
+  def setOptions(opt: PolylineOptions): Unit
   
-  def setPath(path: js.Array[LngLat]): Unit = js.native
+  def setPath(path: js.Array[LngLat]): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Polyline {
   

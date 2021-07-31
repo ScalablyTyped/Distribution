@@ -14,7 +14,6 @@ import typings.jointjs.mod.mvc.ViewOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.LinkView")
@@ -131,9 +130,9 @@ class LinkView () extends CellViewGeneric[Link] {
   def requestConnectionUpdate(opt: StringDictionary[js.Any]): Unit = js.native
   
   def sendToken(token: SVGElement): Unit = js.native
-  def sendToken(token: SVGElement, duration: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def sendToken(token: SVGElement, duration: Double): Unit = js.native
   def sendToken(token: SVGElement, duration: Double, callback: js.Function0[Unit]): Unit = js.native
+  def sendToken(token: SVGElement, duration: Unit, callback: js.Function0[Unit]): Unit = js.native
   def sendToken(token: SVGElement, opt: Connection): Unit = js.native
   def sendToken(token: SVGElement, opt: Connection, callback: js.Function0[Unit]): Unit = js.native
   
@@ -154,22 +153,21 @@ object LinkView {
     Point
   ]
   
-  @js.native
   trait InteractivityOptions extends StObject {
     
-    var arrowheadMove: js.UndefOr[Boolean] = js.native
+    var arrowheadMove: js.UndefOr[Boolean] = js.undefined
     
-    var labelMove: js.UndefOr[Boolean] = js.native
+    var labelMove: js.UndefOr[Boolean] = js.undefined
     
-    var linkMove: js.UndefOr[Boolean] = js.native
+    var linkMove: js.UndefOr[Boolean] = js.undefined
     
-    var useLinkTools: js.UndefOr[Boolean] = js.native
+    var useLinkTools: js.UndefOr[Boolean] = js.undefined
     
-    var vertexAdd: js.UndefOr[Boolean] = js.native
+    var vertexAdd: js.UndefOr[Boolean] = js.undefined
     
-    var vertexMove: js.UndefOr[Boolean] = js.native
+    var vertexMove: js.UndefOr[Boolean] = js.undefined
     
-    var vertexRemove: js.UndefOr[Boolean] = js.native
+    var vertexRemove: js.UndefOr[Boolean] = js.undefined
   }
   object InteractivityOptions {
     
@@ -226,19 +224,19 @@ object LinkView {
     }
   }
   
-  @js.native
   trait LabelOptions
-    extends typings.jointjs.mod.dia.Cell.Options {
+    extends StObject
+       with typings.jointjs.mod.dia.Cell.Options {
     
-    var absoluteDistance: js.UndefOr[Boolean] = js.native
+    var absoluteDistance: js.UndefOr[Boolean] = js.undefined
     
-    var absoluteOffset: js.UndefOr[Boolean] = js.native
+    var absoluteOffset: js.UndefOr[Boolean] = js.undefined
     
-    var ensureLegibility: js.UndefOr[Boolean] = js.native
+    var ensureLegibility: js.UndefOr[Boolean] = js.undefined
     
-    var keepGradient: js.UndefOr[Boolean] = js.native
+    var keepGradient: js.UndefOr[Boolean] = js.undefined
     
-    var reverseDistance: js.UndefOr[Boolean] = js.native
+    var reverseDistance: js.UndefOr[Boolean] = js.undefined
   }
   object LabelOptions {
     
@@ -283,20 +281,21 @@ object LinkView {
     }
   }
   
-  @js.native
-  trait Options extends ViewOptions[Link] {
+  trait Options
+    extends StObject
+       with ViewOptions[Link] {
     
-    var doubleLinkTools: js.UndefOr[Boolean] = js.native
+    var doubleLinkTools: js.UndefOr[Boolean] = js.undefined
     
-    var doubleLinkToolsOffset: js.UndefOr[Double] = js.native
+    var doubleLinkToolsOffset: js.UndefOr[Double] = js.undefined
     
-    var linkToolsOffset: js.UndefOr[Double] = js.native
+    var linkToolsOffset: js.UndefOr[Double] = js.undefined
     
-    var longLinkLength: js.UndefOr[Double] = js.native
+    var longLinkLength: js.UndefOr[Double] = js.undefined
     
-    var sampleInterval: js.UndefOr[Double] = js.native
+    var sampleInterval: js.UndefOr[Double] = js.undefined
     
-    var shortLinkLength: js.UndefOr[Double] = js.native
+    var shortLinkLength: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

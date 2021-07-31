@@ -1,67 +1,50 @@
 package typings.tmiJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.tmiJs.tmiJsStrings._empty
 import typings.tmiJs.tmiJsStrings.action
-import typings.tmiJs.tmiJsStrings.admin
 import typings.tmiJs.tmiJsStrings.chat
-import typings.tmiJs.tmiJsStrings.global_mod
-import typings.tmiJs.tmiJsStrings.staff
 import typings.tmiJs.tmiJsStrings.whisper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ChatUserstate
-  extends CommonUserstate
+  extends StObject
+     with CommonUserstate
      with Userstate {
+  
   var bits: js.UndefOr[String] = js.undefined
+  
   var `message-type`: js.UndefOr[chat | action | whisper] = js.undefined
+  
   var username: js.UndefOr[String] = js.undefined
 }
-
 object ChatUserstate {
+  
   @scala.inline
-  def apply(
-    badges: Badges = null,
-    `badges-raw`: String = null,
-    bits: String = null,
-    color: String = null,
-    `display-name`: String = null,
-    emotes: StringDictionary[js.Array[String]] = null,
-    `emotes-raw`: String = null,
-    flags: String = null,
-    id: String = null,
-    `message-type`: chat | action | whisper = null,
-    mod: js.UndefOr[Boolean] = js.undefined,
-    `room-id`: String = null,
-    subscriber: js.UndefOr[Boolean] = js.undefined,
-    `tmi-sent-ts`: String = null,
-    turbo: js.UndefOr[Boolean] = js.undefined,
-    `user-id`: String = null,
-    `user-type`: _empty | typings.tmiJs.tmiJsStrings.mod | global_mod | admin | staff = null,
-    username: String = null
-  ): ChatUserstate = {
+  def apply(): ChatUserstate = {
     val __obj = js.Dynamic.literal()
-    if (badges != null) __obj.updateDynamic("badges")(badges.asInstanceOf[js.Any])
-    if (`badges-raw` != null) __obj.updateDynamic("badges-raw")(`badges-raw`.asInstanceOf[js.Any])
-    if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (`display-name` != null) __obj.updateDynamic("display-name")(`display-name`.asInstanceOf[js.Any])
-    if (emotes != null) __obj.updateDynamic("emotes")(emotes.asInstanceOf[js.Any])
-    if (`emotes-raw` != null) __obj.updateDynamic("emotes-raw")(`emotes-raw`.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (`message-type` != null) __obj.updateDynamic("message-type")(`message-type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(mod)) __obj.updateDynamic("mod")(mod.asInstanceOf[js.Any])
-    if (`room-id` != null) __obj.updateDynamic("room-id")(`room-id`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscriber)) __obj.updateDynamic("subscriber")(subscriber.asInstanceOf[js.Any])
-    if (`tmi-sent-ts` != null) __obj.updateDynamic("tmi-sent-ts")(`tmi-sent-ts`.asInstanceOf[js.Any])
-    if (!js.isUndefined(turbo)) __obj.updateDynamic("turbo")(turbo.asInstanceOf[js.Any])
-    if (`user-id` != null) __obj.updateDynamic("user-id")(`user-id`.asInstanceOf[js.Any])
-    if (`user-type` != null) __obj.updateDynamic("user-type")(`user-type`.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatUserstate]
   }
+  
+  @scala.inline
+  implicit class ChatUserstateMutableBuilder[Self <: ChatUserstate] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBits(value: String): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
+    
+    @scala.inline
+    def `setMessage-type`(value: chat | action | whisper): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
+    
+    @scala.inline
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+  }
 }
-

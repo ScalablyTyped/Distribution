@@ -14,15 +14,14 @@ import typings.awsSdkClientDynamodbBrowser.updateTableExceptionsUnionMod.UpdateT
 import typings.awsSdkClientDynamodbBrowser.updateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLimitExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_LimitExceededExceptionDetails> * / any */ @js.native
-  trait LimitExceededException
-    extends CreateBackupExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_LimitExceededExceptionDetails> * / any */ trait LimitExceededException
+    extends StObject
+       with CreateBackupExceptionsUnion
        with CreateGlobalTableExceptionsUnion
        with CreateTableExceptionsUnion
        with DeleteBackupExceptionsUnion
@@ -35,15 +34,13 @@ object typesLimitExceededExceptionMod {
        with UpdateTableExceptionsUnion
        with UpdateTimeToLiveExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.LimitExceededException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.LimitExceededException
   }
   object LimitExceededException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.LimitExceededException
-    ): LimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): LimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[LimitExceededException]
     }
     
@@ -57,13 +54,12 @@ object typesLimitExceededExceptionMod {
     }
   }
   
-  @js.native
   trait LimitExceededExceptionDetails extends StObject {
     
     /**
       * <p>Too many operations for a given subscriber.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object LimitExceededExceptionDetails {
     

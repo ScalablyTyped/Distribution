@@ -1,11 +1,8 @@
-package typings.sharepoint.SP
+package typings.sharepoint.SP.Taxonomy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Taxonomy {
-  
-  type ChangedGroup = typings.sharepoint.SP.Taxonomy.ChangedItem
-}
+
+type ChangedGroup = typings.sharepoint.SP.Taxonomy.ChangedItem

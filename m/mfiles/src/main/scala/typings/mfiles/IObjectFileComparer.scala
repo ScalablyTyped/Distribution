@@ -2,13 +2,11 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectFileComparer extends StObject {
   
-  def Compare(FileLeft: IObjectFile, FileRight: IObjectFile): Double = js.native
+  def Compare(FileLeft: IObjectFile, FileRight: IObjectFile): Double
 }
 object IObjectFileComparer {
   

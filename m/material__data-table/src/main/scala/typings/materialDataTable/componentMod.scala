@@ -6,7 +6,6 @@ import typings.materialDataTable.foundationMod.MDCDataTableFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -14,7 +13,7 @@ object componentMod {
   @JSImport("@material/data-table/component", "MDCDataTable")
   @js.native
   class MDCDataTable protected () extends MDCComponent[MDCDataTableFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCDataTableFoundation, args: js.Any*) = this()
     
     /**
@@ -59,8 +58,11 @@ object componentMod {
   /* static members */
   object MDCDataTable {
     
-    @JSImport("@material/data-table/component", "MDCDataTable.attachTo")
+    @JSImport("@material/data-table/component", "MDCDataTable")
     @js.native
-    def attachTo(root: Element): MDCDataTable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCDataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCDataTable]
   }
 }

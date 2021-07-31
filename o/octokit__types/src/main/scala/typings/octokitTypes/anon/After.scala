@@ -2,35 +2,33 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait After extends StObject {
   
-  var after: String = js.native
+  var after: String
   
-  var app: Events = js.native
+  var app: Events
   
-  var before: String = js.native
+  var before: String
   
-  var conclusion: String = js.native
+  var conclusion: String
   
-  var head_branch: String = js.native
+  var head_branch: String
   
-  var head_sha: String = js.native
+  var head_sha: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var pull_requests: js.Array[_] = js.native
+  var pull_requests: js.Array[js.Any]
   
-  var repository: Allowmergecommit = js.native
+  var repository: Allowmergecommit
   
-  var status: String = js.native
+  var status: String
   
-  var url: String = js.native
+  var url: String
 }
 object After {
   
@@ -44,7 +42,7 @@ object After {
     head_sha: String,
     id: Double,
     node_id: String,
-    pull_requests: js.Array[_],
+    pull_requests: js.Array[js.Any],
     repository: Allowmergecommit,
     status: String,
     url: String
@@ -81,7 +79,7 @@ object After {
     def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_requests(value: js.Array[_]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    def setPull_requests(value: js.Array[js.Any]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPull_requestsVarargs(value: js.Any*): Self = StObject.set(x, "pull_requests", js.Array(value :_*))

@@ -2,11 +2,12 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsoleMessageEvent extends Event {
+trait ConsoleMessageEvent
+  extends StObject
+     with Event {
   
   /**
     * The log level, from 0 to 3. In order it matches `verbose`, `info`, `warning` and

@@ -6,33 +6,31 @@ import typings.std.ArrayBufferView
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoOperationMod {
   
-  @js.native
   trait CryptoOperation extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    val algorithm: String = js.native
+    val algorithm: String
     
-    def finish(): Unit = js.native
+    def finish(): Unit
     
-    val key: Key = js.native
+    val key: Key
     
-    def onabort(event: Event): Unit = js.native
+    def onabort(event: Event): Unit
     
-    def oncomplete(event: Event): Unit = js.native
+    def oncomplete(event: Event): Unit
     
-    def onerror(event: Event): Unit = js.native
+    def onerror(event: Event): Unit
     
-    def onprogress(event: Event): Unit = js.native
+    def onprogress(event: Event): Unit
     
-    def process(buffer: ArrayBufferView): Unit = js.native
+    def process(buffer: ArrayBufferView): Unit
     
-    val result: js.UndefOr[ArrayBuffer] = js.native
+    val result: js.UndefOr[ArrayBuffer] = js.undefined
   }
   object CryptoOperation {
     

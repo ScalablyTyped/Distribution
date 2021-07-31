@@ -8,7 +8,6 @@ import typings.html5plus.html5plusStrings.text
 import typings.html5plus.html5plusStrings.url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjInputStyles extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
   /**
     * 输入框边框圆角半径
@@ -36,7 +34,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderRadius: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[String] = js.undefined
   
   /**
     * 输入框的边框宽度
@@ -44,7 +42,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderWidth: js.UndefOr[String] = js.native
+  var borderWidth: js.UndefOr[String] = js.undefined
   
   /**
     * 输入框的字体大小
@@ -53,7 +51,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /**
     * 输入框失去焦点事件
@@ -61,7 +59,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onBlur: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
   
   /**
     * 输入框完成输入事件
@@ -69,7 +67,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onComplete: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
   
   /**
     * 输入框获取焦点事件
@@ -77,7 +75,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onFocus: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
   
   /**
     * 输入框的提示文本
@@ -85,7 +83,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * 输入框类型
@@ -106,7 +104,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var `type`: js.UndefOr[email | number | search | tel | text | url] = js.native
+  var `type`: js.UndefOr[email | number | search | tel | text | url] = js.undefined
 }
 object PlusNativeObjInputStyles {
   

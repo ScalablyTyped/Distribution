@@ -2,26 +2,24 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceInput extends StObject {
   
   /**
     * Specifies that the list of tags returned be limited to the specified number of items.
     */
-  var Limit: js.UndefOr[PositiveIntObject] = js.native
+  var Limit: js.UndefOr[PositiveIntObject] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin returning the list of tags.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource for which you want to list tags.
     */
-  var ResourceARN: typings.awsSdk.storagegatewayMod.ResourceARN = js.native
+  var ResourceARN: typings.awsSdk.storagegatewayMod.ResourceARN
 }
 object ListTagsForResourceInput {
   

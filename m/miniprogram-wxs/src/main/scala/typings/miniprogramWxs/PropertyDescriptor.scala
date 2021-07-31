@@ -2,23 +2,21 @@ package typings.miniprogramWxs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyDescriptor extends StObject {
   
-  var configurable: js.UndefOr[scala.Boolean] = js.native
+  var configurable: js.UndefOr[scala.Boolean] = js.undefined
   
-  var enumerable: js.UndefOr[scala.Boolean] = js.native
+  var enumerable: js.UndefOr[scala.Boolean] = js.undefined
   
-  var get: js.UndefOr[js.Function0[_]] = js.native
+  var get: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var set: js.UndefOr[js.Function1[/* v */ js.Any, Unit]] = js.native
+  var set: js.UndefOr[js.Function1[/* v */ js.Any, Unit]] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
-  var writable: js.UndefOr[scala.Boolean] = js.native
+  var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 object PropertyDescriptor {
   
@@ -44,7 +42,7 @@ object PropertyDescriptor {
     def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
     
     @scala.inline
-    def setGet(value: () => _): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetUndefined: Self = StObject.set(x, "get", js.undefined)

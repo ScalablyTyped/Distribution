@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,9 +16,11 @@ object mod {
     * @param options Options
     * @param easeFunctions Custom ease functions
     */
-  class ^ () extends MoveTo {
+  class ^ ()
+    extends StObject
+       with MoveTo {
     def this(options: MoveToOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], easeFunctions: MoveToEaseFunctionsObject) = this()
+    def this(options: Unit, easeFunctions: MoveToEaseFunctionsObject) = this()
     def this(options: MoveToOptions, easeFunctions: MoveToEaseFunctionsObject) = this()
   }
   
@@ -75,33 +76,32 @@ object mod {
   
   type MoveToEaseFunctionsObject = StringDictionary[MoveToEaseFunction]
   
-  @js.native
   trait MoveToOptions extends StObject {
     
     /**
       * The function to be run after scrolling complete. Target passes as the first argument
       */
-    var callback: js.UndefOr[callbackType] = js.native
+    var callback: js.UndefOr[callbackType] = js.undefined
     
     /**
       * The container been computed and scrolled
       */
-    var container: js.UndefOr[Window | HTMLElement] = js.native
+    var container: js.UndefOr[Window | HTMLElement] = js.undefined
     
     /**
       * Duration of scrolling, in milliseconds
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Ease function name
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /**
       * The tolerance of the target to be scrolled, can be negative or positive
       */
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
   }
   object MoveToOptions {
     

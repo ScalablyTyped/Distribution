@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Composition information about the substance
   */
-@js.native
-trait SubstanceIngredient extends BackboneElement {
+trait SubstanceIngredient
+  extends StObject
+     with BackboneElement {
   
   /**
     * Optional amount (concentration)
     */
-  var quantity: js.UndefOr[Ratio] = js.native
+  var quantity: js.UndefOr[Ratio] = js.undefined
   
   /**
     * A component of the substance
     */
-  var substanceCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var substanceCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * A component of the substance
     */
-  var substanceReference: js.UndefOr[Reference] = js.native
+  var substanceReference: js.UndefOr[Reference] = js.undefined
 }
 object SubstanceIngredient {
   

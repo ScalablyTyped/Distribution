@@ -2,10 +2,8 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectedContext extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ConnectedContext extends StObject {
     * Note that the connection is not guaranteed to be in a connected
     * state on click.
     */
-  var connectionProfile: IConnectionProfile = js.native
+  var connectionProfile: IConnectionProfile
 }
 object ConnectedContext {
   

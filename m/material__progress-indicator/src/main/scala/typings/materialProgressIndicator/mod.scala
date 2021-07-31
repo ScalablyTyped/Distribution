@@ -2,33 +2,31 @@ package typings.materialProgressIndicator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait MDCProgressIndicator extends StObject {
     
     /**
       * Puts the component in the closed state.
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Toggles the component between the determinate and indeterminate state.
       */
-    var determinate: Boolean = js.native
+    var determinate: Boolean
     
     /**
       * Puts the component in the open state.
       */
-    def open(): Unit = js.native
+    def open(): Unit
     
     /**
       * The current progress value. Value should be between [0, 1].
       */
-    var progress: Double = js.native
+    var progress: Double
   }
   object MDCProgressIndicator {
     

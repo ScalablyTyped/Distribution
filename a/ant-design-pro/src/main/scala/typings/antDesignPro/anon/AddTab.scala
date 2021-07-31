@@ -2,15 +2,13 @@ package typings.antDesignPro.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTab extends StObject {
   
-  def addTab(id: js.Any): Unit = js.native
+  def addTab(id: js.Any): Unit
   
-  def removeTab(id: js.Any): Unit = js.native
+  def removeTab(id: js.Any): Unit
 }
 object AddTab {
   

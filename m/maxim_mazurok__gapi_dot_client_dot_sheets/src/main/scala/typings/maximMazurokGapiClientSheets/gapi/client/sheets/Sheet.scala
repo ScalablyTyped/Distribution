@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sheet extends StObject {
   
   /** The banded (alternating colors) ranges on this sheet. */
-  var bandedRanges: js.UndefOr[js.Array[BandedRange]] = js.native
+  var bandedRanges: js.UndefOr[js.Array[BandedRange]] = js.undefined
   
   /** The filter on this sheet, if any. */
-  var basicFilter: js.UndefOr[BasicFilter] = js.native
+  var basicFilter: js.UndefOr[BasicFilter] = js.undefined
   
   /** The specifications of every chart on this sheet. */
-  var charts: js.UndefOr[js.Array[EmbeddedChart]] = js.native
+  var charts: js.UndefOr[js.Array[EmbeddedChart]] = js.undefined
   
   /** All column groups on this sheet, ordered by increasing range start index, then by group depth. */
-  var columnGroups: js.UndefOr[js.Array[DimensionGroup]] = js.native
+  var columnGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
   
   /** The conditional format rules in this sheet. */
-  var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatRule]] = js.native
+  var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatRule]] = js.undefined
   
   /**
     * Data in the grid, if this is a grid sheet. The number of GridData objects returned is dependent on the number of ranges requested on this sheet. For example, if this is representing
@@ -29,28 +27,28 @@ trait Sheet extends StObject {
     * will have `startRow 14` (zero-based row 15), and `startColumn 3` (zero-based column D). For a DATA_SOURCE sheet, you can not request a specific range, the GridData contains all the
     * values.
     */
-  var data: js.UndefOr[js.Array[GridData]] = js.native
+  var data: js.UndefOr[js.Array[GridData]] = js.undefined
   
   /** The developer metadata associated with a sheet. */
-  var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+  var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
   
   /** The filter views in this sheet. */
-  var filterViews: js.UndefOr[js.Array[FilterView]] = js.native
+  var filterViews: js.UndefOr[js.Array[FilterView]] = js.undefined
   
   /** The ranges that are merged together. */
-  var merges: js.UndefOr[js.Array[GridRange]] = js.native
+  var merges: js.UndefOr[js.Array[GridRange]] = js.undefined
   
   /** The properties of the sheet. */
-  var properties: js.UndefOr[SheetProperties] = js.native
+  var properties: js.UndefOr[SheetProperties] = js.undefined
   
   /** The protected ranges in this sheet. */
-  var protectedRanges: js.UndefOr[js.Array[ProtectedRange]] = js.native
+  var protectedRanges: js.UndefOr[js.Array[ProtectedRange]] = js.undefined
   
   /** All row groups on this sheet, ordered by increasing range start index, then by group depth. */
-  var rowGroups: js.UndefOr[js.Array[DimensionGroup]] = js.native
+  var rowGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
   
   /** The slicers on this sheet. */
-  var slicers: js.UndefOr[js.Array[Slicer]] = js.native
+  var slicers: js.UndefOr[js.Array[Slicer]] = js.undefined
 }
 object Sheet {
   

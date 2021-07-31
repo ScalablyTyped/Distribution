@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertifiedDelivery extends StObject {
   
   /**
@@ -17,31 +15,31 @@ trait CertifiedDelivery extends StObject {
     *
     * If blank and the signer `accessCode` property is not set, then the access code is not required.
     */
-  var accessCode: js.UndefOr[String] = js.native
+  var accessCode: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `accessCode` property is editable. Read only.
     */
-  var accessCodeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var accessCodeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Optional. When set to **true**, the access code will be added to the email sent to the recipient. This nullifies the security measure of `accessCode` on the recipient.
     */
-  var addAccessCodeToEmail: js.UndefOr[String] = js.native
+  var addAccessCodeToEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Optional element. When set to **true**, the agents recipient associated with this recipient can change the recipient's pre-populated email address.
     * This element is only active if enabled for the account.
     */
-  var agentCanEditEmail: js.UndefOr[String] = js.native
+  var agentCanEditEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Optional element. When set to **true**, the agents recipient associated with this recipient can change the recipient's pre-populated name.
     * This element is only active if enabled for the account.
     */
-  var agentCanEditName: js.UndefOr[String] = js.native
+  var agentCanEditName: js.UndefOr[String] = js.undefined
   
-  var allowSystemOverrideForLockedRecipient: js.UndefOr[String] = js.native
+  var allowSystemOverrideForLockedRecipient: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the recipient is embedded or remote.
@@ -54,48 +52,48 @@ trait CertifiedDelivery extends StObject {
     *
     * Maximum length: 100 characters.
     */
-  var clientUserId: js.UndefOr[String] = js.native
+  var clientUserId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the number of times that the recipient has been through a signing completion for the envelope. If this number is greater than 0 for a signing group,
     * only the user who previously completed may sign again. Read only.
     */
-  var completedCount: js.UndefOr[String] = js.native
+  var completedCount: js.UndefOr[String] = js.undefined
   
   /**
     * An optional array of strings that enables the sender to provide custom data about the recipient. This information is returned in the envelope status
     * but otherwise not used by DocuSign. Each `customField` string can be a maximum of 100 characters.
     */
-  var customFields: js.UndefOr[js.Array[String]] = js.native
+  var customFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The date and time the recipient declined the document. Read only.
     */
-  var declinedDateTime: js.UndefOr[String] = js.native
+  var declinedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The reason the recipient declined the document. Read only.
     */
-  var declinedReason: js.UndefOr[String] = js.native
+  var declinedReason: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the envelope was delivered to the recipient. Read only.
     */
-  var deliveredDateTime: js.UndefOr[String] = js.native
+  var deliveredDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var deliveryMethod: js.UndefOr[String] = js.native
+  var deliveryMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var deliveryMethodMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var deliveryMethodMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
-  var designatorId: js.UndefOr[String] = js.native
+  var designatorId: js.UndefOr[String] = js.undefined
   
-  var designatorIdGuid: js.UndefOr[String] = js.native
+  var designatorIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * A list of `documentVisibility` objects. Each object in the list specifies whether a document in the envelope is visible to this recipient.
@@ -105,17 +103,17 @@ trait CertifiedDelivery extends StObject {
     js.Array[
       /* This object configures a recipient's read/write access to a document. */ DocumentVisibility
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The recipient's email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `email` property is editable. Read only.
     */
-  var emailMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var emailMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An optional complex type that sets a specific email subject and body for this recipient's notification email.
@@ -123,7 +121,7 @@ trait CertifiedDelivery extends StObject {
     * **Note**: You can set the `emailNotification` property separately for each recipient. If you set the value only for certain recipients,
     * the other recipients will inherit the this value from the top-level `emailSubject` and `emailBlurb`.
     */
-  var emailNotification: js.UndefOr[RecipientEmailNotification] = js.native
+  var emailNotification: js.UndefOr[RecipientEmailNotification] = js.undefined
   
   /**
     * Specifies a sender-provided valid URL string for redirecting an embedded recipient. When using this option, the embedded recipient still receives an email from DocuSign,
@@ -150,14 +148,14 @@ trait CertifiedDelivery extends StObject {
     *
     * `http://senderHost/[[mergeField1]]/ beginSigningSession? [[mergeField2]]&[[mergeField3]]`
     */
-  var embeddedRecipientStartURL: js.UndefOr[String] = js.native
+  var embeddedRecipientStartURL: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the documents that are not visible to this recipient. Document Visibility must be enabled for the account and the `enforceSignerVisibility` property must be
@@ -168,37 +166,37 @@ trait CertifiedDelivery extends StObject {
     * unless they are specifically excluded using this setting when an envelope is sent. Documents that do not have tabs are always visible to all recipients,
     * unless they are specifically excluded using this setting when an envelope is sent.
     */
-  var excludedDocuments: js.UndefOr[js.Array[String]] = js.native
+  var excludedDocuments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var faxNumber: js.UndefOr[String] = js.native
+  var faxNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var faxNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var faxNumberMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The recipient's first name. Maximum Length: 50 characters.
     */
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `firstame` property is editable. Read only.
     */
-  var firstNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var firstNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var fullNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var fullNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The name of the authentication check to use. This value must match one of the authentication types that the account uses. The names of these authentication
@@ -212,19 +210,19 @@ trait CertifiedDelivery extends StObject {
     * To use ID Check in an envelope, the idCheckConfigurationName should be ID Check $. For SMS, you would use SMS Auth $, and you would also need to add a
     * phone number to the smsAuthentication node.
     */
-  var idCheckConfigurationName: js.UndefOr[String] = js.native
+  var idCheckConfigurationName: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `idCheckConfigurationName` property is editable. Read only.
     */
-  var idCheckConfigurationNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var idCheckConfigurationNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * An object that contains input information related to a recipient ID check.
     */
   var idCheckInformationInput: js.UndefOr[
     /* A complex element that contains input information related to a recipient ID check. */ IdCheckInformationInput
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the ID Verification workflow applied on an envelope by workflow ID. <br/>See the
@@ -235,45 +233,45 @@ trait CertifiedDelivery extends StObject {
     * <br/>Note that ID Verification and ID Check are two distinct methods. ID Verification checks recipients' identity by verifying their ID while ID Check relies on
     * data available on public records (such as current and former address).
     */
-  var identityVerification: js.UndefOr[RecipientIdentityVerification] = js.native
+  var identityVerification: js.UndefOr[RecipientIdentityVerification] = js.undefined
   
   /**
     * When set to **true** and the envelope recipient creates a DocuSign account after signing, the Manage Account Email Notification settings are used as the default
     * settings for the recipient's account.
     */
-  var inheritEmailNotificationConfiguration: js.UndefOr[String] = js.native
+  var inheritEmailNotificationConfiguration: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient's last name.
     */
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `lastName` property is editable. Read only.
     */
-  var lastNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var lastNameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var lockedRecipientPhoneAuthEditable: js.UndefOr[String] = js.native
+  var lockedRecipientPhoneAuthEditable: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var lockedRecipientSmsEditable: js.UndefOr[String] = js.native
+  var lockedRecipientSmsEditable: js.UndefOr[String] = js.undefined
   
   /**
     * The full legal name of the recipient. Maximum Length: 100 characters.
     *
     * **Note**: You must always set a value for this property in requests, even if `firstName` and `lastName` are set.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `name` property is editable. Read only.
     */
-  var nameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var nameMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * A note sent to the recipient in the signing email.
@@ -286,12 +284,12 @@ trait CertifiedDelivery extends StObject {
     * Maximum Length: 1000 characters.
     *
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `note` property is editable. Read only.
     */
-  var noteMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var noteMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When `idCheckConfigurationName` is set to `Phone Auth $`, you use this complex type to provide the recipient authentication method details. It contains the following elements:
@@ -303,37 +301,37 @@ trait CertifiedDelivery extends StObject {
     *
     *
     */
-  var phoneAuthentication: js.UndefOr[RecipientPhoneAuthentication] = js.native
+  var phoneAuthentication: js.UndefOr[RecipientPhoneAuthentication] = js.undefined
   
-  var proofFile: js.UndefOr[RecipientProofFile] = js.native
+  var proofFile: js.UndefOr[RecipientProofFile] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var recipientAttachments: js.UndefOr[js.Array[RecipientAttachment]] = js.native
+  var recipientAttachments: js.UndefOr[js.Array[RecipientAttachment]] = js.undefined
   
   /**
     * Information about the recipient's authentication status. Read only.
     */
   var recipientAuthenticationStatus: js.UndefOr[
     /* A complex element that contains information about a user's authentication status. */ AuthenticationStatus
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Metadata about the features that are supported for the recipient type. Read only.
     */
-  var recipientFeatureMetadata: js.UndefOr[js.Array[FeatureAvailableMetadata]] = js.native
+  var recipientFeatureMetadata: js.UndefOr[js.Array[FeatureAvailableMetadata]] = js.undefined
   
   /**
     * Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the document.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
   /**
     * The globally-unique identifier (GUID) for a specific recipient on a specific envelope. If the same recipient is associated with multiple envelopes,
     * they will have a different GUID for each one. Read only.
     */
-  var recipientIdGuid: js.UndefOr[String] = js.native
+  var recipientIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient type, as specified by the following values:
@@ -350,47 +348,47 @@ trait CertifiedDelivery extends StObject {
     * - `signer`: Signers are recipients who must sign, initial, date, or add data to form fields on the documents in the envelope.
     * - `witness`: Witnesses are recipients whose signatures affirm that the identified signers have signed the documents in the envelope.
     */
-  var recipientType: js.UndefOr[String] = js.native
+  var recipientType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `recipientType` property is editable. Read only.
     */
-  var recipientTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var recipientTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When set to **true**, the recipient is required to use the specified ID check method (including Phone and SMS authentication) to validate their identity.
     */
-  var requireIdLookup: js.UndefOr[String] = js.native
+  var requireIdLookup: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `requireIdLookup` property is editable. Read only.
     */
-  var requireIdLookupMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var requireIdLookupMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Optional element. Specifies the role name associated with the recipient.<br/><br/>This property is required when you are working with template recipients.
     */
-  var roleName: js.UndefOr[String] = js.native
+  var roleName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the routing order of the recipient in the envelope.
     */
-  var routingOrder: js.UndefOr[String] = js.native
+  var routingOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `routingOrder` property is editable. Read only.
     */
-  var routingOrderMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var routingOrderMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The UTC DateTime when the envelope was sent. Read only.
     */
-  var sentDateTime: js.UndefOr[String] = js.native
+  var sentDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var signedDateTime: js.UndefOr[String] = js.native
+  var signedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The ID of the [signing group](https://support.docusign.com/en/guides/ndse-user-guide-signing-groups).
@@ -400,24 +398,24 @@ trait CertifiedDelivery extends StObject {
     * However, you could create a second signing group for the non-signer recipients and change the default action of Needs to Sign to a different value,
     * such as Receives a Copy.
     */
-  var signingGroupId: js.UndefOr[String] = js.native
+  var signingGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `signingGroupId` property is editable. Read only.
     */
-  var signingGroupIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var signingGroupIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Optional. The name of the signing group.
     *
     * Maximum Length: 100 characters.
     */
-  var signingGroupName: js.UndefOr[String] = js.native
+  var signingGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * A complex type that contains information about users in the signing group.
     */
-  var signingGroupUsers: js.UndefOr[js.Array[UserInfo]] = js.native
+  var signingGroupUsers: js.UndefOr[js.Array[UserInfo]] = js.undefined
   
   /**
     * When `idCheckConfigurationName` is set to `SMS Auth $`, you use this complex type to provide the recipient authentication method details.
@@ -425,12 +423,12 @@ trait CertifiedDelivery extends StObject {
     *
     *
     */
-  var smsAuthentication: js.UndefOr[RecipientSMSAuthentication] = js.native
+  var smsAuthentication: js.UndefOr[RecipientSMSAuthentication] = js.undefined
   
   /**
     * Deprecated.
     */
-  var socialAuthentications: js.UndefOr[js.Array[SocialAuthentication]] = js.native
+  var socialAuthentications: js.UndefOr[js.Array[SocialAuthentication]] = js.undefined
   
   /**
     * The status of the recipient. Read only.
@@ -450,39 +448,39 @@ trait CertifiedDelivery extends StObject {
     * - `signed`: The recipient has completed (signed) all required tags in an envelope. This is a temporary state during processing,
     * after which the recipient's status automatically switches to `completed`.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The code associated with the recipient's status. Read only.
     */
-  var statusCode: js.UndefOr[String] = js.native
+  var statusCode: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, email notifications are suppressed for the recipient, and they must access envelopes and documents from their DocuSign inbox.
     */
-  var suppressEmails: js.UndefOr[String] = js.native
+  var suppressEmails: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients.
     */
-  var templateLocked: js.UndefOr[String] = js.native
+  var templateLocked: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender may not remove the recipient. Used only when working with template recipients.
     */
-  var templateRequired: js.UndefOr[String] = js.native
+  var templateRequired: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of tabs in the documents. Read only.
     */
-  var totalTabCount: js.UndefOr[String] = js.native
+  var totalTabCount: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the user to access. Generally this is the ID of the current authenticated user, but if the authenticated user is an Administrator on the account,
     * `userId` can represent another user whom the Administrator is accessing.
     *
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object CertifiedDelivery {
   

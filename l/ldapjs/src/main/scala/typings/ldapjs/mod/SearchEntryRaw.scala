@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchEntryRaw
-  extends /* p */ StringDictionary[String | Buffer | js.Array[Buffer]] {
+  extends StObject
+     with /* p */ StringDictionary[String | Buffer | js.Array[Buffer]] {
   
-  var controls: js.Array[Control] = js.native
+  var controls: js.Array[Control]
   
-  var dn: String = js.native
+  var dn: String
 }
 object SearchEntryRaw {
   

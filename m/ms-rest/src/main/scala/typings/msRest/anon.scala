@@ -5,19 +5,17 @@ import typings.msRest.mod.Mapper
 import typings.msRest.mod.MapperType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var modelProperties: js.UndefOr[StringDictionary[Mapper]] = js.native
+    var modelProperties: js.UndefOr[StringDictionary[Mapper]] = js.undefined
     
-    var name: MapperType = js.native
+    var name: MapperType
   }
   object ClassName {
     
@@ -44,12 +42,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Element extends StObject {
     
-    var element: Mapper = js.native
+    var element: Mapper
     
-    var name: MapperType = js.native
+    var name: MapperType
   }
   object Element {
     
@@ -70,12 +67,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Name {
     
@@ -96,12 +92,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var name: MapperType = js.native
+    var name: MapperType
     
-    var value: Mapper = js.native
+    var value: Mapper
   }
   object Value {
     

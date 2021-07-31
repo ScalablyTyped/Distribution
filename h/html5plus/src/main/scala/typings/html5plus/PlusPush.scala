@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,17 +40,13 @@ trait PlusPush extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(`type`: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
-  def addEventListener(`type`: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ String, Unit]): Unit = js.native
-  def addEventListener(
-    `type`: js.UndefOr[scala.Nothing],
-    listener: js.Function1[/* result */ String, Unit],
-    capture: Boolean
-  ): Unit = js.native
   def addEventListener(`type`: String): Unit = js.native
-  def addEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function1[/* result */ String, Unit]): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function1[/* result */ String, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(`type`: String, listener: Unit, capture: Boolean): Unit = js.native
+  def addEventListener(`type`: Unit, listener: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def addEventListener(`type`: Unit, listener: js.Function1[/* result */ String, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(`type`: Unit, listener: Unit, capture: Boolean): Unit = js.native
   
   /**
     * 清空所有推送消息
@@ -68,17 +63,13 @@ trait PlusPush extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
   def createMessage(): Unit = js.native
-  def createMessage(
-    content: js.UndefOr[scala.Nothing],
-    payload: js.UndefOr[scala.Nothing],
-    options: PlusPushMessageOptions
-  ): Unit = js.native
-  def createMessage(content: js.UndefOr[scala.Nothing], payload: String): Unit = js.native
-  def createMessage(content: js.UndefOr[scala.Nothing], payload: String, options: PlusPushMessageOptions): Unit = js.native
   def createMessage(content: String): Unit = js.native
-  def createMessage(content: String, payload: js.UndefOr[scala.Nothing], options: PlusPushMessageOptions): Unit = js.native
   def createMessage(content: String, payload: String): Unit = js.native
   def createMessage(content: String, payload: String, options: PlusPushMessageOptions): Unit = js.native
+  def createMessage(content: String, payload: Unit, options: PlusPushMessageOptions): Unit = js.native
+  def createMessage(content: Unit, payload: String): Unit = js.native
+  def createMessage(content: Unit, payload: String, options: PlusPushMessageOptions): Unit = js.native
+  def createMessage(content: Unit, payload: Unit, options: PlusPushMessageOptions): Unit = js.native
   
   /**
     * 获取所有推送消息

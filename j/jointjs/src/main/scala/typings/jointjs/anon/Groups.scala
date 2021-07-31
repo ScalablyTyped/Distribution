@@ -5,15 +5,13 @@ import typings.jointjs.mod.dia.Element.Port
 import typings.jointjs.mod.dia.Element.PortGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groups extends StObject {
   
-  var groups: js.UndefOr[StringDictionary[PortGroup]] = js.native
+  var groups: js.UndefOr[StringDictionary[PortGroup]] = js.undefined
   
-  var items: js.UndefOr[js.Array[Port]] = js.native
+  var items: js.UndefOr[js.Array[Port]] = js.undefined
 }
 object Groups {
   

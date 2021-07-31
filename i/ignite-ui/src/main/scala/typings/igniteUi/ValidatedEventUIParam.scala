@@ -2,51 +2,49 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatedEventUIParam extends StObject {
   
   /**
     * Populated with options for the specific field in the collection or null.
     */
-  var fieldOptions: js.UndefOr[js.Any] = js.native
+  var fieldOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get the formatted message text, if any.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Get all messages, if any. May be more than one if [executeAllRules](ui.igvalidator#options:executeAllRules) is enabled.
     */
-  var messages: js.UndefOr[js.Array[_]] = js.native
+  var messages: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets reference to the igValidator widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Deprecated. Populated with the name of the rule that failed validation, if any.
     */
-  var rule: js.UndefOr[String] = js.native
+  var rule: js.UndefOr[String] = js.undefined
   
   /**
     * Populated with the names of rule that failed validation, if any.
     */
-  var rules: js.UndefOr[js.Array[_]] = js.native
+  var rules: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Determine the outcome of the validation.
     */
-  var valid: js.UndefOr[Boolean] = js.native
+  var valid: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the current value in target.
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ValidatedEventUIParam {
   
@@ -72,7 +70,7 @@ object ValidatedEventUIParam {
     def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setMessages(value: js.Array[_]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    def setMessages(value: js.Array[js.Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
@@ -93,7 +91,7 @@ object ValidatedEventUIParam {
     def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def setRules(value: js.Array[_]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)

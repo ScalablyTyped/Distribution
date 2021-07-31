@@ -2,24 +2,23 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTabBarStyleOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** tab 的背景色 */
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
   /** tabbar上边框的颜色， 仅支持 black/white */
-  var borderStyle: String = js.native
+  var borderStyle: String
   
   /** tab 上的文字默认颜色 */
-  var color: String = js.native
+  var color: String
   
   /** tab 上的文字选中时的颜色 */
-  var selectedColor: String = js.native
+  var selectedColor: String
 }
 object SetTabBarStyleOptions {
   

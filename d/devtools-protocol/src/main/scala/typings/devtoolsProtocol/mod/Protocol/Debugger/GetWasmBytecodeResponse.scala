@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWasmBytecodeResponse extends StObject {
   
   /**
     * Script source.
     */
-  var bytecode: String = js.native
+  var bytecode: String
 }
 object GetWasmBytecodeResponse {
   

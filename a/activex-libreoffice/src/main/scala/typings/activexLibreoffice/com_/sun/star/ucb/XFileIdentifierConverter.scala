@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Andreas Bille
   * @version 1.0
   */
-@js.native
-trait XFileIdentifierConverter extends XInterface {
+trait XFileIdentifierConverter
+  extends StObject
+     with XInterface {
   
   /**
     * Get information about the "locality" of a file content provider.
@@ -22,7 +22,7 @@ trait XFileIdentifierConverter extends XInterface {
     * @param BaseURL the base (file) URL used to specify a file content provider.
     * @returns an appropriate value representing the "locality" of the specified file content provider. Generally, higher (non-negative) numbers denote file con
     */
-  def getFileProviderLocality(BaseURL: String): Double = js.native
+  def getFileProviderLocality(BaseURL: String): Double
   
   /**
     * converts a file path in system dependent notation to a (file) URL.
@@ -30,14 +30,14 @@ trait XFileIdentifierConverter extends XInterface {
     * @param SystemPath a file path in system dependent notation.
     * @returns the URL corresponding to the file path, or an empty string if the file path cannot be converted into a URL.
     */
-  def getFileURLFromSystemPath(BaseURL: String, SystemPath: String): String = js.native
+  def getFileURLFromSystemPath(BaseURL: String, SystemPath: String): String
   
   /**
     * converts a (file) URL to a file path in system dependent notation.
     * @param URL a (file) URL.
     * @returns the file path corresponding to the URL, or an empty string if the URL cannot be converted into a file path.
     */
-  def getSystemPathFromFileURL(URL: String): String = js.native
+  def getSystemPathFromFileURL(URL: String): String
 }
 object XFileIdentifierConverter {
   

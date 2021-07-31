@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpRuleItem extends StObject {
   
   /**
     * The IP address range, in CIDR notation.
     */
-  var ipRule: js.UndefOr[IpRule] = js.native
+  var ipRule: js.UndefOr[IpRule] = js.undefined
   
   /**
     * The description.
     */
-  var ruleDesc: js.UndefOr[IpRuleDesc] = js.native
+  var ruleDesc: js.UndefOr[IpRuleDesc] = js.undefined
 }
 object IpRuleItem {
   

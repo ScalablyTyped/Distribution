@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelMailboxExportJobRequest extends StObject {
   
   /**
     * The idempotency token for the client request.
     */
-  var ClientToken: IdempotencyClientToken = js.native
+  var ClientToken: IdempotencyClientToken
   
   /**
     * The job ID.
     */
-  var JobId: MailboxExportJobId = js.native
+  var JobId: MailboxExportJobId
   
   /**
     * The organization ID.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object CancelMailboxExportJobRequest {
   

@@ -19,7 +19,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userPoolMod {
@@ -36,7 +35,7 @@ object userPoolMod {
       */
     def this(name: String) = this()
     def this(name: String, args: UserPoolArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: UserPoolArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -167,6 +166,10 @@ object userPoolMod {
   /* static members */
   object UserPool {
     
+    @JSImport("@pulumi/aws/cognito/userPool", "UserPool")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserPool resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -176,135 +179,129 @@ object userPoolMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito/userPool", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserPool = js.native
-    @JSImport("@pulumi/aws/cognito/userPool", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserPool = js.native
-    @JSImport("@pulumi/aws/cognito/userPool", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolState): UserPool = js.native
-    @JSImport("@pulumi/aws/cognito/userPool", "UserPool.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): UserPool = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolState): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPool]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPool]
     
     /**
       * Returns true if the given object is an instance of UserPool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito/userPool", "UserPool.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean]
   }
   
-  @js.native
   trait UserPoolArgs extends StObject {
     
     /**
       * The configuration for AdminCreateUser requests.
       */
-    val adminCreateUserConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]] = js.native
+    val adminCreateUserConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]] = js.undefined
     
     /**
       * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `usernameAttributes`.
       */
-    val aliasAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val aliasAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The attributes to be auto-verified. Possible values: email, phone_number.
       */
-    val autoVerifiedAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val autoVerifiedAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The configuration for the user pool's device tracking.
       */
-    val deviceConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]] = js.native
+    val deviceConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]] = js.undefined
     
     /**
       * The Email Configuration.
       */
-    val emailConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]] = js.native
+    val emailConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]] = js.undefined
     
     /**
       * A string representing the email verification message. Conflicts with `verificationMessageTemplate` configuration block `emailMessage` argument.
       */
-    val emailVerificationMessage: js.UndefOr[Input[String]] = js.native
+    val emailVerificationMessage: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A string representing the email verification subject. Conflicts with `verificationMessageTemplate` configuration block `emailSubject` argument.
       */
-    val emailVerificationSubject: js.UndefOr[Input[String]] = js.native
+    val emailVerificationSubject: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A container for the AWS Lambda triggers associated with the user pool.
       */
-    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]] = js.native
+    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]] = js.undefined
     
     /**
       * Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of `OFF`. Valid values:
       */
-    val mfaConfiguration: js.UndefOr[Input[String]] = js.native
+    val mfaConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the attribute.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A container for information about the user pool password policy.
       */
-    val passwordPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]] = js.native
+    val passwordPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]] = js.undefined
     
     /**
       * A container with the schema attributes of a user pool. Schema attributes from the [standard attribute set](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html#cognito-user-pools-standard-attributes) only need to be specified if they are different from the default configuration. Maximum of 50 attributes.
       */
-    val schemas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]] = js.native
+    val schemas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]] = js.undefined
     
     /**
       * A string representing the SMS authentication message. The message must contain the `{####}` placeholder, which will be replaced with the code.
       */
-    val smsAuthenticationMessage: js.UndefOr[Input[String]] = js.native
+    val smsAuthenticationMessage: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the [`up` command and use --replace](https://www.pulumi.com/docs/reference/cli/pulumi_up/).
       */
-    val smsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]] = js.native
+    val smsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]] = js.undefined
     
     /**
       * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
       */
-    val smsVerificationMessage: js.UndefOr[Input[String]] = js.native
+    val smsVerificationMessage: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block for software token Mult-Factor Authentication (MFA) settings. Detailed below.
       */
-    val softwareTokenMfaConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]] = js.native
+    val softwareTokenMfaConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]] = js.undefined
     
     /**
       * A map of tags to assign to the User Pool.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration block for user pool add-ons to enable user pool advanced security mode features.
       */
-    val userPoolAddOns: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]] = js.native
+    val userPoolAddOns: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]] = js.undefined
     
     /**
       * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
       */
-    val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Username Configuration.
       */
-    val usernameConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]] = js.native
+    val usernameConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]] = js.undefined
     
     /**
       * The verification message templates configuration.
       */
-    val verificationMessageTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]] = js.native
+    val verificationMessageTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]] = js.undefined
   }
   object UserPoolArgs {
     
@@ -457,133 +454,132 @@ object userPoolMod {
     }
   }
   
-  @js.native
   trait UserPoolState extends StObject {
     
     /**
       * The configuration for AdminCreateUser requests.
       */
-    val adminCreateUserConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]] = js.native
+    val adminCreateUserConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]] = js.undefined
     
     /**
       * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `usernameAttributes`.
       */
-    val aliasAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val aliasAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN of the user pool.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The attributes to be auto-verified. Possible values: email, phone_number.
       */
-    val autoVerifiedAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val autoVerifiedAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The date the user pool was created.
       */
-    val creationDate: js.UndefOr[Input[String]] = js.native
+    val creationDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The configuration for the user pool's device tracking.
       */
-    val deviceConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]] = js.native
+    val deviceConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]] = js.undefined
     
     /**
       * The Email Configuration.
       */
-    val emailConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]] = js.native
+    val emailConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]] = js.undefined
     
     /**
       * A string representing the email verification message. Conflicts with `verificationMessageTemplate` configuration block `emailMessage` argument.
       */
-    val emailVerificationMessage: js.UndefOr[Input[String]] = js.native
+    val emailVerificationMessage: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A string representing the email verification subject. Conflicts with `verificationMessageTemplate` configuration block `emailSubject` argument.
       */
-    val emailVerificationSubject: js.UndefOr[Input[String]] = js.native
+    val emailVerificationSubject: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The endpoint name of the user pool. Example format: cognito-idp.REGION.amazonaws.com/xxxx_yyyyy
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A container for the AWS Lambda triggers associated with the user pool.
       */
-    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]] = js.native
+    val lambdaConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]] = js.undefined
     
     /**
       * The date the user pool was last modified.
       */
-    val lastModifiedDate: js.UndefOr[Input[String]] = js.native
+    val lastModifiedDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of `OFF`. Valid values:
       */
-    val mfaConfiguration: js.UndefOr[Input[String]] = js.native
+    val mfaConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the attribute.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A container for information about the user pool password policy.
       */
-    val passwordPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]] = js.native
+    val passwordPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]] = js.undefined
     
     /**
       * A container with the schema attributes of a user pool. Schema attributes from the [standard attribute set](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html#cognito-user-pools-standard-attributes) only need to be specified if they are different from the default configuration. Maximum of 50 attributes.
       */
-    val schemas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]] = js.native
+    val schemas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]] = js.undefined
     
     /**
       * A string representing the SMS authentication message. The message must contain the `{####}` placeholder, which will be replaced with the code.
       */
-    val smsAuthenticationMessage: js.UndefOr[Input[String]] = js.native
+    val smsAuthenticationMessage: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the [`up` command and use --replace](https://www.pulumi.com/docs/reference/cli/pulumi_up/).
       */
-    val smsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]] = js.native
+    val smsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]] = js.undefined
     
     /**
       * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
       */
-    val smsVerificationMessage: js.UndefOr[Input[String]] = js.native
+    val smsVerificationMessage: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block for software token Mult-Factor Authentication (MFA) settings. Detailed below.
       */
-    val softwareTokenMfaConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]] = js.native
+    val softwareTokenMfaConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]] = js.undefined
     
     /**
       * A map of tags to assign to the User Pool.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration block for user pool add-ons to enable user pool advanced security mode features.
       */
-    val userPoolAddOns: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]] = js.native
+    val userPoolAddOns: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]] = js.undefined
     
     /**
       * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
       */
-    val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Username Configuration.
       */
-    val usernameConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]] = js.native
+    val usernameConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]] = js.undefined
     
     /**
       * The verification message templates configuration.
       */
-    val verificationMessageTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]] = js.native
+    val verificationMessageTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]] = js.undefined
   }
   object UserPoolState {
     

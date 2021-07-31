@@ -2,47 +2,45 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagRepositorySearchResponseMod {
   
-  @js.native
   trait TagRepositorySearchResponseResultsItem extends StObject {
     
-    var allow_following: Null = js.native
+    var allow_following: Null
     
-    var allow_muting_story: Null = js.native
+    var allow_muting_story: Null
     
-    var debug_info: Null = js.native
+    var debug_info: Null
     
-    var follow_button_text: Null = js.native
+    var follow_button_text: Null
     
-    var follow_status: Null = js.native
+    var follow_status: Null
     
-    var following: Null = js.native
+    var following: Null
     
-    var id: String = js.native
+    var id: String
     
-    var media_count: Double = js.native
+    var media_count: Double
     
-    var name: String = js.native
+    var name: String
     
-    var non_violating: Null = js.native
+    var non_violating: Null
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var related_tags: Null = js.native
+    var related_tags: Null
     
-    var search_result_subtitle: String = js.native
+    var search_result_subtitle: String
     
-    var show_follow_drop_down: Null = js.native
+    var show_follow_drop_down: Null
     
-    var social_context: Null = js.native
+    var social_context: Null
     
-    var social_context_profile_links: Null = js.native
+    var social_context_profile_links: Null
     
-    var subtitle: Null = js.native
+    var subtitle: Null
   }
   object TagRepositorySearchResponseResultsItem {
     
@@ -126,16 +124,15 @@ object tagRepositorySearchResponseMod {
     }
   }
   
-  @js.native
   trait TagRepositorySearchResponseRootObject extends StObject {
     
-    var has_more: Boolean = js.native
+    var has_more: Boolean
     
-    var rank_token: String = js.native
+    var rank_token: String
     
-    var results: js.Array[TagRepositorySearchResponseResultsItem] = js.native
+    var results: js.Array[TagRepositorySearchResponseResultsItem]
     
-    var status: String = js.native
+    var status: String
   }
   object TagRepositorySearchResponseRootObject {
     

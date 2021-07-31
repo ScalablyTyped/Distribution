@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.resources
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *
   **/
-@js.native
 trait IStylesheetResource extends StObject {
   
   /**
@@ -35,7 +33,7 @@ trait IStylesheetResource extends StObject {
     * @returns {Promise} resourcePromise object containing the stylesheets.
     *
     */
-  def getAll(): IPromise[IResourcePromise] = js.native
+  def getAll(): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -56,7 +54,7 @@ trait IStylesheetResource extends StObject {
     * @returns {Promise} resourcePromise object containing the rules.
     *
     */
-  def getRules(id: Double): IPromise[IResourcePromise] = js.native
+  def getRules(id: Double): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -77,7 +75,7 @@ trait IStylesheetResource extends StObject {
     * @returns {Promise} resourcePromise object containing the rules.
     *
     */
-  def getRulesByName(name: String): IPromise[IResourcePromise] = js.native
+  def getRulesByName(name: String): IPromise[IResourcePromise]
 }
 object IStylesheetResource {
   

@@ -8,24 +8,23 @@ import typings.nodeZendesk.mod.Users.Role
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Comments {
   
   object CommentsUsers {
     
-    @js.native
     trait ResponseModel
-      extends typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel {
+      extends StObject
+         with typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel {
       
-      val role: Role = js.native
+      val role: Role
     }
     object ResponseModel {
       
       @scala.inline
       def apply(agent: Boolean, id: ZendeskID, name: String, role: Role): typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel = {
-        val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], organization_id = null, photo = null)
         __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel]
       }
       
@@ -38,16 +37,17 @@ object Comments {
     }
   }
   
-  @js.native
-  trait ListPayload extends PaginablePayload {
+  trait ListPayload
+    extends StObject
+       with PaginablePayload {
     
-    var comments: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel] = js.native
+    var comments: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel]
   }
   object ListPayload {
     
     @scala.inline
     def apply(comments: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel], count: Double): typings.nodeZendesk.mod.Tickets.Comments.ListPayload = {
-      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], next_page = null, previous_page = null)
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.ListPayload]
     }
     
@@ -62,12 +62,11 @@ object Comments {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var flag_options: js.Any = js.native
+    var flag_options: js.Any
     
-    var flags: js.UndefOr[js.Array[Double]] = js.native
+    var flags: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Metadata {
     
@@ -96,10 +95,11 @@ object Comments {
   
   object Organizations {
     
-    @js.native
-    trait ResponseModel extends PersistableModel {
+    trait ResponseModel
+      extends StObject
+         with PersistableModel {
       
-      val name: String = js.native
+      val name: String
     }
     object ResponseModel {
       
@@ -118,9 +118,9 @@ object Comments {
     }
   }
   
-  @js.native
   trait ResponseModel
-    extends typings.nodeZendesk.mod.Requests.Comments.ResponseModel
+    extends StObject
+       with typings.nodeZendesk.mod.Requests.Comments.ResponseModel
   object ResponseModel {
     
     @scala.inline

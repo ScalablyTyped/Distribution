@@ -3,20 +3,25 @@ package typings.reactMdUtils
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dirMod {
   
-  @JSImport("@react-md/utils/types/Dir", "DEFAULT_DIR")
+  @JSImport("@react-md/utils/types/Dir", JSImport.Namespace)
   @js.native
-  def DEFAULT_DIR(): WritingDirection = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def DEFAULT_DIR(): WritingDirection = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_DIR")().asInstanceOf[WritingDirection]
   
   object Dir {
     
+    @scala.inline
+    def apply(hasChildrenDefaultDir: DirProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenDefaultDir.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/utils/types/Dir", "Dir")
     @js.native
-    def apply(hasChildrenDefaultDir: DirProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -38,25 +43,23 @@ object dirMod {
     }
   }
   
-  @JSImport("@react-md/utils/types/Dir", "useDir")
-  @js.native
-  def useDir(): WritingDirectionContext = js.native
+  @scala.inline
+  def useDir(): WritingDirectionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useDir")().asInstanceOf[WritingDirectionContext]
   
-  @js.native
   trait DirProps extends StObject {
     
     /**
       * A single ReactElement child. If the `Dir` has a parent `Dir`, the child
       * will have the `dir` prop cloned into this element.
       */
-    var children: ReactElement = js.native
+    var children: ReactElement
     
     /**
       * The default writing direction for your app or a subtree. To change the
       * current writing direction, use the `useDir` hook to get access to the
       * current `dir` and the `toggleDir` function.
       */
-    var defaultDir: js.UndefOr[WritingDirection | js.Function0[WritingDirection]] = js.native
+    var defaultDir: js.UndefOr[WritingDirection | js.Function0[WritingDirection]] = js.undefined
   }
   object DirProps {
     
@@ -97,18 +100,17 @@ object dirMod {
     def rtl: typings.reactMdUtils.reactMdUtilsStrings.rtl = "rtl".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.rtl]
   }
   
-  @js.native
   trait WritingDirectionContext extends StObject {
     
     /**
       * The current writing direction that is being inherited.
       */
-    var dir: WritingDirection = js.native
+    var dir: WritingDirection
     
     /**
       * Toggles the current writing direction for the first parent `Dir` component.
       */
-    def toggleDir(): Unit = js.native
+    def toggleDir(): Unit
   }
   object WritingDirectionContext {
     

@@ -3,39 +3,37 @@ package typings.chromeApps.chrome.networking.onc
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WiFiPropertiesBase[M /* <: ManagedObject */, S] extends StObject {
   
   /** The BSSID of the associated access point.. */
-  var BSSID: js.UndefOr[String] = js.native
+  var BSSID: js.UndefOr[String] = js.undefined
   
   /**
     * The WiFi service operating frequency in MHz.
     * For connected networks, the current frequency on which the network is connected.
     * Otherwise, the frequency of the best available BSS.
     */
-  var Frequency: js.UndefOr[integer] = js.native
+  var Frequency: js.UndefOr[integer] = js.undefined
   
   /** HEX-encoded copy of the network SSID. */
-  var HexSSID: js.UndefOr[S] = js.native
+  var HexSSID: js.UndefOr[S] = js.undefined
   
   /** The network SSID. */
-  var SSID: js.UndefOr[S] = js.native
+  var SSID: js.UndefOr[S] = js.undefined
   
   /** The network security type. */
-  var Security: js.UndefOr[S] = js.native
+  var Security: js.UndefOr[S] = js.undefined
   
   /** The network signal strength. */
-  var SignalStrength: js.UndefOr[integer] = js.native
+  var SignalStrength: js.UndefOr[integer] = js.undefined
   
   /**
     * @since Chrome 70
     * @description The tethering state associated with the connection.
     */
-  var TetheringState: js.UndefOr[String] = js.native
+  var TetheringState: js.UndefOr[String] = js.undefined
 }
 object WiFiPropertiesBase {
   
@@ -46,7 +44,7 @@ object WiFiPropertiesBase {
   }
   
   @scala.inline
-  implicit class WiFiPropertiesBaseMutableBuilder[Self <: WiFiPropertiesBase[_, _], M /* <: ManagedObject */, S] (val x: Self with (WiFiPropertiesBase[M, S])) extends AnyVal {
+  implicit class WiFiPropertiesBaseMutableBuilder[Self <: WiFiPropertiesBase[?, ?], M /* <: ManagedObject */, S] (val x: Self & (WiFiPropertiesBase[M, S])) extends AnyVal {
     
     @scala.inline
     def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])

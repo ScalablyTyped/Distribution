@@ -12,25 +12,23 @@ import typings.hafasClient.hafasClientStrings.walking
 import typings.hafasClient.hafasClientStrings.watercraft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A route represents a single set of stations, of a single line.
   */
-@js.native
 trait Route extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var line: String = js.native
+  var line: String
   
-  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking = js.native
+  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking
   
   /** stop ids */
-  var stops: js.Array[String] = js.native
+  var stops: js.Array[String]
   
-  var `type`: route = js.native
+  var `type`: route
 }
 object Route {
   
@@ -39,11 +37,10 @@ object Route {
     id: String,
     line: String,
     mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking,
-    stops: js.Array[String],
-    `type`: route
+    stops: js.Array[String]
   ): Route = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("route")
     __obj.asInstanceOf[Route]
   }
   

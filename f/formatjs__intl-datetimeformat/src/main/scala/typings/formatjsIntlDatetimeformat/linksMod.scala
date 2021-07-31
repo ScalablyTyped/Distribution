@@ -2,7 +2,6 @@ package typings.formatjsIntlDatetimeformat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linksMod {
@@ -521,6 +520,10 @@ object linksMod {
     @scala.inline
     def GB_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GB")(x.asInstanceOf[js.Any])
     
+    @JSImport("@formatjs/intl-datetimeformat/lib/src/data/links", "default.GMT-0")
+    @js.native
+    val `GMT-0`: String = js.native
+    
     @JSImport("@formatjs/intl-datetimeformat/lib/src/data/links", "default.GMT+0")
     @js.native
     def GMT0: String = js.native
@@ -820,9 +823,5 @@ object linksMod {
     def Zulu: String = js.native
     @scala.inline
     def Zulu_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Zulu")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@formatjs/intl-datetimeformat/lib/src/data/links", "default.GMT-0")
-    @js.native
-    val `GMT-0`: String = js.native
   }
 }

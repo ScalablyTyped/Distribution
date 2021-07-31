@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clickAwayListenerMod {
@@ -18,10 +17,11 @@ object clickAwayListenerMod {
   trait ClickAwayListener
     extends Component[ClickAwayListenerProps, js.Object, js.Any]
   
-  @js.native
-  trait ClickAwayListenerProps extends Props[ClickAwayListener] {
+  trait ClickAwayListenerProps
+    extends StObject
+       with Props[ClickAwayListener] {
     
-    var onClickAway: js.UndefOr[js.Any] = js.native
+    var onClickAway: js.UndefOr[js.Any] = js.undefined
   }
   object ClickAwayListenerProps {
     

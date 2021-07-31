@@ -10,9 +10,9 @@ Typings are for version 2.13.1
 | ------------------ | :-------------: |
 | Full name          | ganache-core |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 70 |
-| # downloads        | 913006 |
+| # releases         | 65 |
+| # dependents       | 86 |
+| # downloads        | 1133048 |
 | # stars            | 0 |
 
 ## Links

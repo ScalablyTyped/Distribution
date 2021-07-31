@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvancedSecurityOverrides extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait AdvancedSecurityOverrides extends StObject {
     * Criteria Mode enforces a strict security model typically only required for IT products used in national security systems and other highly sensitive organizations. Standard device
     * use may be affected. Only enabled if required.
     */
-  var commonCriteriaMode: js.UndefOr[String] = js.native
+  var commonCriteriaMode: js.UndefOr[String] = js.undefined
   
   /** The policy for untrusted apps (apps from unknown sources) enforced on the device. Replaces install_unknown_sources_allowed (deprecated). */
-  var untrustedAppsPolicy: js.UndefOr[String] = js.native
+  var untrustedAppsPolicy: js.UndefOr[String] = js.undefined
 }
 object AdvancedSecurityOverrides {
   

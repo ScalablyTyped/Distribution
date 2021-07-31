@@ -4,7 +4,6 @@ import typings.hapi.anon.Default
 import typings.hapi.mod.Util.Dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

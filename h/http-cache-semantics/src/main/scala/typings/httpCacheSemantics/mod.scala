@@ -3,28 +3,17 @@ package typings.httpCacheSemantics
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("http-cache-semantics", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CachePolicy {
+  class ^ protected ()
+    extends StObject
+       with CachePolicy {
     def this(req: Request, res: Response) = this()
     def this(req: Request, res: Response, options: Options) = this()
-  }
-  
-  /**
-    * `policy = CachePolicy.fromObject(obj)` creates an instance from object created by `toObject()`.
-    */
-  /* static member */
-  @JSImport("http-cache-semantics", "fromObject")
-  @js.native
-  def fromObject(obj: CachePolicyObject): CachePolicy = js.native
-  
-  @js.native
-  trait CachePolicy extends StObject {
     
     /**
       * Returns updated, filtered set of response headers to return to clients receiving the cached response.
@@ -34,12 +23,14 @@ object mod {
       * @example
       * cachedResponse.headers = cachePolicy.responseHeaders(cachedResponse);
       */
-    def responseHeaders(): Headers = js.native
+    /* CompleteClass */
+    override def responseHeaders(): Headers = js.native
     
     /**
       * Use this method to update the cache after receiving a new response from the origin server.
       */
-    def revalidatedPolicy(revalidationRequest: Request, revalidationResponse: Response): RevalidationPolicy = js.native
+    /* CompleteClass */
+    override def revalidatedPolicy(revalidationRequest: Request, revalidationResponse: Response): RevalidationPolicy = js.native
     
     /**
       * Returns updated, filtered set of request headers to send to the origin server to check if the cached
@@ -51,7 +42,8 @@ object mod {
       * @example
       * updateRequest.headers = cachePolicy.revalidationHeaders(updateRequest);
       */
-    def revalidationHeaders(newRequest: Request): Headers = js.native
+    /* CompleteClass */
+    override def revalidationHeaders(newRequest: Request): Headers = js.native
     
     /**
       * This is the most important method. Use this method to check whether the cached response is still fresh
@@ -64,13 +56,15 @@ object mod {
       * If it returns `false`, then the response may not be matching at all (e.g. it's for a different URL or method),
       * or may require to be refreshed first (see `revalidationHeaders()`).
       */
-    def satisfiesWithoutRevalidation(newRequest: Request): Boolean = js.native
+    /* CompleteClass */
+    override def satisfiesWithoutRevalidation(newRequest: Request): Boolean = js.native
     
     /**
       * Returns `true` if the response can be stored in a cache.
       * If it's `false` then you MUST NOT store either the request or the response.
       */
-    def storable(): Boolean = js.native
+    /* CompleteClass */
+    override def storable(): Boolean = js.native
     
     /**
       * Returns approximate time in milliseconds until the response becomes stale (i.e. not fresh).
@@ -79,13 +73,89 @@ object mod {
       * there are exceptions, e.g. a client can explicitly allow stale responses, so always check with
       * `satisfiesWithoutRevalidation()`.
       */
-    def timeToLive(): Double = js.native
+    /* CompleteClass */
+    override def timeToLive(): Double = js.native
     
     /**
       * Chances are you'll want to store the `CachePolicy` object along with the cached response.
       * `obj = policy.toObject()` gives a plain JSON-serializable object.
       */
-    def toObject(): CachePolicyObject = js.native
+    /* CompleteClass */
+    override def toObject(): CachePolicyObject = js.native
+  }
+  @JSImport("http-cache-semantics", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * `policy = CachePolicy.fromObject(obj)` creates an instance from object created by `toObject()`.
+    */
+  /* static member */
+  @scala.inline
+  def fromObject(obj: CachePolicyObject): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
+  
+  trait CachePolicy extends StObject {
+    
+    /**
+      * Returns updated, filtered set of response headers to return to clients receiving the cached response.
+      * This function is necessary, because proxies MUST always remove hop-by-hop headers (such as `TE` and `Connection`)
+      * and update response's `Age` to avoid doubling cache time.
+      *
+      * @example
+      * cachedResponse.headers = cachePolicy.responseHeaders(cachedResponse);
+      */
+    def responseHeaders(): Headers
+    
+    /**
+      * Use this method to update the cache after receiving a new response from the origin server.
+      */
+    def revalidatedPolicy(revalidationRequest: Request, revalidationResponse: Response): RevalidationPolicy
+    
+    /**
+      * Returns updated, filtered set of request headers to send to the origin server to check if the cached
+      * response can be reused. These headers allow the origin server to return status 304 indicating the
+      * response is still fresh. All headers unrelated to caching are passed through as-is.
+      *
+      * Use this method when updating cache from the origin server.
+      *
+      * @example
+      * updateRequest.headers = cachePolicy.revalidationHeaders(updateRequest);
+      */
+    def revalidationHeaders(newRequest: Request): Headers
+    
+    /**
+      * This is the most important method. Use this method to check whether the cached response is still fresh
+      * in the context of the new request.
+      *
+      * If it returns `true`, then the given `request` matches the original response this cache policy has been
+      * created with, and the response can be reused without contacting the server. Note that the old response
+      * can't be returned without being updated, see `responseHeaders()`.
+      *
+      * If it returns `false`, then the response may not be matching at all (e.g. it's for a different URL or method),
+      * or may require to be refreshed first (see `revalidationHeaders()`).
+      */
+    def satisfiesWithoutRevalidation(newRequest: Request): Boolean
+    
+    /**
+      * Returns `true` if the response can be stored in a cache.
+      * If it's `false` then you MUST NOT store either the request or the response.
+      */
+    def storable(): Boolean
+    
+    /**
+      * Returns approximate time in milliseconds until the response becomes stale (i.e. not fresh).
+      *
+      * After that time (when `timeToLive() <= 0`) the response might not be usable without revalidation. However,
+      * there are exceptions, e.g. a client can explicitly allow stale responses, so always check with
+      * `satisfiesWithoutRevalidation()`.
+      */
+    def timeToLive(): Double
+    
+    /**
+      * Chances are you'll want to store the `CachePolicy` object along with the cached response.
+      * `obj = policy.toObject()` gives a plain JSON-serializable object.
+      */
+    def toObject(): CachePolicyObject
   }
   object CachePolicy {
     
@@ -129,36 +199,35 @@ object mod {
     }
   }
   
-  @js.native
   trait CachePolicyObject extends StObject {
     
-    var a: Boolean = js.native
+    var a: Boolean
     
-    var ch: Double = js.native
+    var ch: Double
     
-    var h: js.UndefOr[String] = js.native
+    var h: js.UndefOr[String] = js.undefined
     
-    var imm: Double = js.native
+    var imm: Double
     
-    var m: String = js.native
+    var m: String
     
-    var reqcc: StringDictionary[String] = js.native
+    var reqcc: StringDictionary[String]
     
-    var reqh: Headers | Null = js.native
+    var reqh: Headers | Null
     
-    var rescc: StringDictionary[String] = js.native
+    var rescc: StringDictionary[String]
     
-    var resh: Headers = js.native
+    var resh: Headers
     
-    var sh: Boolean = js.native
+    var sh: Boolean
     
-    var st: Double = js.native
+    var st: Double
     
-    var t: Double = js.native
+    var t: Double
     
-    var u: js.UndefOr[String] = js.native
+    var u: js.UndefOr[String] = js.undefined
     
-    var v: Double = js.native
+    var v: Double
   }
   object CachePolicyObject {
     
@@ -176,7 +245,7 @@ object mod {
       t: Double,
       v: Double
     ): CachePolicyObject = {
-      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], ch = ch.asInstanceOf[js.Any], imm = imm.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], reqcc = reqcc.asInstanceOf[js.Any], rescc = rescc.asInstanceOf[js.Any], resh = resh.asInstanceOf[js.Any], sh = sh.asInstanceOf[js.Any], st = st.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], ch = ch.asInstanceOf[js.Any], imm = imm.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], reqcc = reqcc.asInstanceOf[js.Any], rescc = rescc.asInstanceOf[js.Any], resh = resh.asInstanceOf[js.Any], sh = sh.asInstanceOf[js.Any], st = st.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], reqh = null)
       __obj.asInstanceOf[CachePolicyObject]
     }
     
@@ -238,7 +307,6 @@ object mod {
   
   type Headers = StringDictionary[js.UndefOr[String | js.Array[String]]]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -246,7 +314,7 @@ object mod {
       * e.g. if a file hasn't been modified for 100 days, it'll be cached for 100*0.1 = 10 days.
       * @default 0.1
       */
-    var cacheHeuristic: js.UndefOr[Double] = js.native
+    var cacheHeuristic: js.UndefOr[Double] = js.undefined
     
     /**
       * If `true`, common anti-cache directives will be completely ignored if the non-standard `pre-check`
@@ -254,7 +322,7 @@ object mod {
       * in bad StackOverflow answers and PHP's "session limiter" defaults.
       * @default false
       */
-    var ignoreCargoCult: js.UndefOr[Boolean] = js.native
+    var ignoreCargoCult: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A number of milliseconds to assume as the default time to cache responses with `Cache-Control: immutable`.
@@ -262,7 +330,7 @@ object mod {
       * these can become stale, so `max-age` still overrides the default.
       * @default 24*3600*1000 (24h)
       */
-    var immutableMinTimeToLive: js.UndefOr[Double] = js.native
+    var immutableMinTimeToLive: js.UndefOr[Double] = js.undefined
     
     /**
       * If `true`, then the response is evaluated from a perspective of a shared cache (i.e. `private` is not
@@ -271,7 +339,7 @@ object mod {
       * `true` is recommended for HTTP clients.
       * @default true
       */
-    var shared: js.UndefOr[Boolean] = js.native
+    var shared: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false`, then server's `Date` header won't be used as the base for `max-age`. This is against the RFC,
@@ -279,7 +347,7 @@ object mod {
       * is not exactly in sync with the server's.
       * @default true
       */
-    var trustServerDate: js.UndefOr[Boolean] = js.native
+    var trustServerDate: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -324,14 +392,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Request {
     
@@ -361,12 +428,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object Response {
     
@@ -390,10 +456,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RevalidationPolicy extends StObject {
     
-    var matches: Boolean = js.native
+    var matches: Boolean
     
     /**
       * Boolean indicating whether the response body has changed.
@@ -404,13 +469,13 @@ object mod {
       * server without any conditional headers (i.e. don't use `revalidationHeaders()` this time) to get
       * the new resource.
       */
-    var modified: Boolean = js.native
+    var modified: Boolean
     
     /**
       * A new `CachePolicy` with HTTP headers updated from `revalidationResponse`. You can always replace
       * the old cached `CachePolicy` with the new one.
       */
-    var policy: CachePolicy = js.native
+    var policy: CachePolicy
   }
   object RevalidationPolicy {
     

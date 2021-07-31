@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait SwipeDirection extends StObject
 object SwipeDirection extends StObject {
   
   @js.native
-  sealed trait Both extends SwipeDirection
+  sealed trait Both
+    extends StObject
+       with SwipeDirection
   
   @js.native
-  sealed trait LeftToRight extends SwipeDirection
+  sealed trait LeftToRight
+    extends StObject
+       with SwipeDirection
   
   @js.native
-  sealed trait RightToLeft extends SwipeDirection
+  sealed trait RightToLeft
+    extends StObject
+       with SwipeDirection
 }

@@ -3,24 +3,24 @@ package typings.activexLibreoffice.com_.sun.star.logging
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service allows to log the events in a ring of specified size.
   * @since OOo 3.2
   */
-@js.native
-trait SimpleLogRing extends XSimpleLogRing {
+trait SimpleLogRing
+  extends StObject
+     with XSimpleLogRing {
   
   /** creates a ring of default size - 256 messages */
-  def create(): Unit = js.native
+  def create(): Unit
   
   /**
     * creates a ring of specified size
     * @param nSize the number of messages in a ring
     */
-  def createWithSize(nSize: Double): Unit = js.native
+  def createWithSize(nSize: Double): Unit
 }
 object SimpleLogRing {
   

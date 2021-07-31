@@ -2,15 +2,13 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAdvancedVideoCaptureDeviceController extends StObject {
   
-  def getDeviceProperty(propertyId: String): js.Any = js.native
+  def getDeviceProperty(propertyId: String): js.Any
   
-  def setDeviceProperty(propertyId: String, propertyValue: js.Any): Unit = js.native
+  def setDeviceProperty(propertyId: String, propertyValue: js.Any): Unit
 }
 object IAdvancedVideoCaptureDeviceController {
   

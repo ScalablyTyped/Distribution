@@ -2,14 +2,15 @@ package typings.smb2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("smb2", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SMB2 {
+  class ^ protected ()
+    extends StObject
+       with SMB2 {
     def this(options: SMB2Options) = this()
   }
   
@@ -30,7 +31,7 @@ object mod {
     def readFile(fileName: String, callback: js.Function2[/* error */ js.Any, /* data */ String, Unit]): Unit = js.native
     def readFile(
       fileName: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ js.Any, /* data */ String, Unit]
     ): Unit = js.native
     def readFile(fileName: String, options: SMB2ReadFileOptions): Unit = js.native
@@ -54,12 +55,7 @@ object mod {
     
     def writeFile(fileName: String, data: String): Unit = js.native
     def writeFile(fileName: String, data: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-    def writeFile(
-      fileName: String,
-      data: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.Any, Unit]
-    ): Unit = js.native
+    def writeFile(fileName: String, data: String, options: Unit, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
     def writeFile(fileName: String, data: String, options: SMB2ReadFileOptions): Unit = js.native
     def writeFile(
       fileName: String,
@@ -69,22 +65,21 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait SMB2Options extends StObject {
     
-    var autoCloseTimeout: js.UndefOr[Double] = js.native
+    var autoCloseTimeout: js.UndefOr[Double] = js.undefined
     
-    var domain: String = js.native
+    var domain: String
     
-    var packetConcurrency: js.UndefOr[Double] = js.native
+    var packetConcurrency: js.UndefOr[Double] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var share: String = js.native
+    var share: String
     
-    var username: String = js.native
+    var username: String
   }
   object SMB2Options {
     
@@ -129,16 +124,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SMB2ReadFileOptions extends StObject {
     
-    var encoding: String | Null = js.native
+    var encoding: String | Null
   }
   object SMB2ReadFileOptions {
     
     @scala.inline
     def apply(): SMB2ReadFileOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(encoding = null)
       __obj.asInstanceOf[SMB2ReadFileOptions]
     }
     

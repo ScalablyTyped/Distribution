@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,14 +12,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : Logger = js.native
   
-  @js.native
   trait LogOptionsI extends StObject {
     
-    var logFileName: js.UndefOr[String] = js.native
+    var logFileName: js.UndefOr[String] = js.undefined
     
-    var logLevel: js.UndefOr[Double] = js.native
+    var logLevel: js.UndefOr[Double] = js.undefined
     
-    var logMethod: js.UndefOr[Double] = js.native
+    var logMethod: js.UndefOr[Double] = js.undefined
   }
   object LogOptionsI {
     
@@ -54,7 +52,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Logger extends EventEmitter {
+  trait Logger
+    extends StObject
+       with EventEmitter {
     
     def debug(args: js.Any*): Unit = js.native
     

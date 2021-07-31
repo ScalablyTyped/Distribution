@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingGroupIndexingConfiguration extends StObject {
   
   /**
     * A list of thing group fields to index. This list cannot contain any managed fields. Use the GetIndexingConfiguration API to get a list of managed fields. Contains custom field names and their data type.
     */
-  var customFields: js.UndefOr[Fields] = js.native
+  var customFields: js.UndefOr[Fields] = js.undefined
   
   /**
     * Contains fields that are indexed and whose types are already known by the Fleet Indexing service.
     */
-  var managedFields: js.UndefOr[Fields] = js.native
+  var managedFields: js.UndefOr[Fields] = js.undefined
   
   /**
     * Thing group indexing mode.
     */
-  var thingGroupIndexingMode: ThingGroupIndexingMode = js.native
+  var thingGroupIndexingMode: ThingGroupIndexingMode
 }
 object ThingGroupIndexingConfiguration {
   

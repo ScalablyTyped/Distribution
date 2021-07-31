@@ -9,19 +9,17 @@ import typings.geolib.geolibStrings.longitude
 import typings.geolib.typesMod.AltitudeKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AltitudeLatitude extends StObject {
   
-  var altitude: js.UndefOr[AltitudeKeys] = js.native
+  var altitude: js.UndefOr[AltitudeKeys] = js.undefined
   
-  var latitude: js.UndefOr[lat | typings.geolib.geolibStrings.latitude | `1`] = js.native
+  var latitude: js.UndefOr[lat | typings.geolib.geolibStrings.latitude | `1`] = js.undefined
   
   var longitude: js.UndefOr[
     typings.geolib.geolibNumbers.`0` | lng | lon | typings.geolib.geolibStrings.longitude
-  ] = js.native
+  ] = js.undefined
 }
 object AltitudeLatitude {
   

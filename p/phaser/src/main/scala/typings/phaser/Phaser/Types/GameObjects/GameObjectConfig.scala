@@ -2,86 +2,84 @@ package typings.phaser.Phaser.Types.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameObjectConfig extends StObject {
   
   /**
     * Add the GameObject to the scene.
     */
-  var add: js.UndefOr[Boolean] = js.native
+  var add: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The alpha (opacity) of the Game Object.
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * The rotation angle of the Game Object, in degrees.
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * The blend mode of the GameObject.
     */
-  var blendMode: js.UndefOr[Double] = js.native
+  var blendMode: js.UndefOr[Double] = js.undefined
   
   /**
     * The depth of the GameObject.
     */
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
   /**
     * The horizontally flipped state of the Game Object.
     */
-  var flipX: js.UndefOr[Boolean] = js.native
+  var flipX: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The vertically flipped state of the Game Object.
     */
-  var flipY: js.UndefOr[Boolean] = js.native
+  var flipY: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The origin of the Game Object.
     */
-  var origin: js.UndefOr[Double | js.Object] = js.native
+  var origin: js.UndefOr[Double | js.Object] = js.undefined
   
   /**
     * The rotation angle of the Game Object, in radians.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * The scale of the GameObject.
     */
-  var scale: js.UndefOr[Double | js.Object] = js.native
+  var scale: js.UndefOr[Double | js.Object] = js.undefined
   
   /**
     * The scale mode of the GameObject.
     */
-  var scaleMode: js.UndefOr[Double] = js.native
+  var scaleMode: js.UndefOr[Double] = js.undefined
   
   /**
     * The scroll factor of the GameObject.
     */
-  var scrollFactor: js.UndefOr[Double | js.Object] = js.native
+  var scrollFactor: js.UndefOr[Double | js.Object] = js.undefined
   
   /**
     * The visible state of the Game Object.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The x position of the Game Object.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * The y position of the Game Object.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object GameObjectConfig {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccessPolicyRequest extends StObject {
   
   /**
     * The ID of the access policy.
     */
-  var accessPolicyId: ID = js.native
+  var accessPolicyId: ID
 }
 object DescribeAccessPolicyRequest {
   

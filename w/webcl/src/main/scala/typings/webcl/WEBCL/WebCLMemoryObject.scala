@@ -2,16 +2,14 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.6
-@js.native
 trait WebCLMemoryObject extends StObject {
   
-  def getInfo(name: MemInfo): js.Any = js.native
+  def getInfo(name: MemInfo): js.Any
   
-  def release(): Unit = js.native
+  def release(): Unit
 }
 object WebCLMemoryObject {
   

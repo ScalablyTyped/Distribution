@@ -4,7 +4,6 @@ import typings.dropboxjs.Dropbox.File.Stat
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Http {
@@ -28,12 +27,11 @@ object Http {
     var name: String = js.native
   }
   
-  @js.native
   trait PollResult extends StObject {
     
-    var hasChanges: Boolean = js.native
+    var hasChanges: Boolean
     
-    var retryAfter: Double = js.native
+    var retryAfter: Double
   }
   object PollResult {
     
@@ -54,14 +52,13 @@ object Http {
     }
   }
   
-  @js.native
   trait PulledChange extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var stat: Stat = js.native
+    var stat: Stat
     
-    var wasRemoved: Boolean = js.native
+    var wasRemoved: Boolean
   }
   object PulledChange {
     
@@ -85,18 +82,17 @@ object Http {
     }
   }
   
-  @js.native
   trait PulledChanges extends StObject {
     
-    var blankSlate: Boolean = js.native
+    var blankSlate: Boolean
     
-    def cursor(): String = js.native
+    def cursor(): String
     
-    var cursorTag: String = js.native
+    var cursorTag: String
     
-    var shouldBackOff: Boolean = js.native
+    var shouldBackOff: Boolean
     
-    var shouldPullAgain: Boolean = js.native
+    var shouldPullAgain: Boolean
   }
   object PulledChanges {
     
@@ -132,14 +128,13 @@ object Http {
     }
   }
   
-  @js.native
   trait RangeInfo extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object RangeInfo {
     
@@ -163,16 +158,15 @@ object Http {
     }
   }
   
-  @js.native
   trait UploadCursor extends StObject {
     
-    var expiresAt: Date = js.native
+    var expiresAt: Date
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var tag: String = js.native
+    var tag: String
     
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
   }
   object UploadCursor {
     

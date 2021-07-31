@@ -11,68 +11,52 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: InputType): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: InputType, format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: RawObject): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: RawObject, format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  
   @JSImport("gl-texture2d", JSImport.Namespace)
   @js.native
-  def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double]): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(
-    gl: WebGLRenderingContext,
-    input: js.Tuple2[Double, Double],
-    format: js.UndefOr[scala.Nothing],
-    `type`: GLenum
-  ): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum, `type`: GLenum): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: InputType): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: InputType, format: js.UndefOr[scala.Nothing], `type`: GLenum): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum, `type`: GLenum): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: RawObject): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: RawObject, format: js.UndefOr[scala.Nothing], `type`: GLenum): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum): Texture = js.native
-  @JSImport("gl-texture2d", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum, `type`: GLenum): Texture = js.native
+  val ^ : js.Any = js.native
   
   type GLenum = Double
   
   type InputType = ImageData | HTMLCanvasElement | HTMLImageElement | HTMLVideoElement
   
-  @js.native
   trait RawObject extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var raw: ArrayBufferView | InputType | ImageBitmap = js.native
+    var raw: ArrayBufferView | InputType | ImageBitmap
     
-    var width: Double = js.native
+    var width: Double
   }
   object RawObject {
     
@@ -119,17 +103,17 @@ object mod {
     var mipSamples: GLenum = js.native
     
     def setPixels(data: InputType): Unit = js.native
-    def setPixels(data: InputType, offset: js.UndefOr[scala.Nothing], mipLevel: GLenum): Unit = js.native
     def setPixels(data: InputType, offset: js.Tuple2[Double, Double]): Unit = js.native
     def setPixels(data: InputType, offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
+    def setPixels(data: InputType, offset: Unit, mipLevel: GLenum): Unit = js.native
     def setPixels(data: RawObject): Unit = js.native
-    def setPixels(data: RawObject, offset: js.UndefOr[scala.Nothing], mipLevel: GLenum): Unit = js.native
     def setPixels(data: RawObject, offset: js.Tuple2[Double, Double]): Unit = js.native
     def setPixels(data: RawObject, offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
+    def setPixels(data: RawObject, offset: Unit, mipLevel: GLenum): Unit = js.native
     def setPixels(data: ndarray[Double]): Unit = js.native
-    def setPixels(data: ndarray[Double], offset: js.UndefOr[scala.Nothing], mipLevel: GLenum): Unit = js.native
     def setPixels(data: ndarray[Double], offset: js.Tuple2[Double, Double]): Unit = js.native
     def setPixels(data: ndarray[Double], offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
+    def setPixels(data: ndarray[Double], offset: Unit, mipLevel: GLenum): Unit = js.native
     
     var shape: js.Tuple2[Double, Double] = js.native
     

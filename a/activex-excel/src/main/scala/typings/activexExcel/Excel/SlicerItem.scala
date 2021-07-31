@@ -2,34 +2,32 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlicerItem extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Caption: String = js.native
+  val Caption: String
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.SlicerItem_typekey")
-  var ExcelDotSlicerItem_typekey: SlicerItem = js.native
+  var ExcelDotSlicerItem_typekey: SlicerItem
   
-  val HasData: Boolean = js.native
+  val HasData: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: SlicerCache = js.native
+  val Parent: SlicerCache
   
-  var Selected: Boolean = js.native
+  var Selected: Boolean
   
-  val SourceName: js.Any = js.native
+  val SourceName: js.Any
   
-  val SourceNameStandard: String = js.native
+  val SourceNameStandard: String
   
-  val Value: String = js.native
+  val Value: String
 }
 object SlicerItem {
   

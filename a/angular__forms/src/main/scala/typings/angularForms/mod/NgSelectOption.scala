@@ -5,13 +5,14 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.Renderer2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "NgSelectOption")
 @js.native
-class NgSelectOption protected () extends OnDestroy {
-  def this(_element: ElementRef[_], _renderer: Renderer2, _select: SelectControlValueAccessor) = this()
+class NgSelectOption protected ()
+  extends StObject
+     with OnDestroy {
+  def this(_element: ElementRef[js.Any], _renderer: Renderer2, _select: SelectControlValueAccessor) = this()
   
   var _element: js.Any = js.native
   
@@ -24,6 +25,13 @@ class NgSelectOption protected () extends OnDestroy {
     * ID of the option element
     */
   var id: String = js.native
+  
+  /**
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
+    */
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
   
   /**
     * @description

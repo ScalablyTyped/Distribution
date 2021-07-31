@@ -3,24 +3,24 @@ package typings.reactVis.mod
 import typings.reactVis.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecorativeAxisProps extends AbstractSeriesProps[DecorativeAxisPoint] {
+trait DecorativeAxisProps
+  extends StObject
+     with AbstractSeriesProps[DecorativeAxisPoint] {
   
-  var axisDomain: js.Array[Double] = js.native
+  var axisDomain: js.Array[Double]
   
-  var axisEnd: Y = js.native
+  var axisEnd: Y
   
-  var axisStart: Y = js.native
+  var axisStart: Y
   
-  var numberOfTicks: js.UndefOr[Double] = js.native
+  var numberOfTicks: js.UndefOr[Double] = js.undefined
   
-  var tickSize: js.UndefOr[Double] = js.native
+  var tickSize: js.UndefOr[Double] = js.undefined
   
   // default: 10
-  var tickValue: js.UndefOr[js.Function1[/* x */ js.Any, String | Double]] = js.native
+  var tickValue: js.UndefOr[js.Function1[/* x */ js.Any, String | Double]] = js.undefined
 }
 object DecorativeAxisProps {
   

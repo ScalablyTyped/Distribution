@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PercentPair extends StObject {
   
   /**
     * The percentile.
     */
-  var percent: js.UndefOr[Percent] = js.native
+  var percent: js.UndefOr[Percent] = js.undefined
   
   /**
     * The value of the percentile.
     */
-  var value: js.UndefOr[PercentValue] = js.native
+  var value: js.UndefOr[PercentValue] = js.undefined
 }
 object PercentPair {
   

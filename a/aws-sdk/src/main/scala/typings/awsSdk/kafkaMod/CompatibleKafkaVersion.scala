@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompatibleKafkaVersion extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait CompatibleKafkaVersion extends StObject {
     A Kafka version.
     
     */
-  var SourceVersion: js.UndefOr[string] = js.native
+  var SourceVersion: js.UndefOr[string] = js.undefined
   
   /**
     * 
     A list of Kafka versions.
     
     */
-  var TargetVersions: js.UndefOr[listOfString] = js.native
+  var TargetVersions: js.UndefOr[listOfString] = js.undefined
 }
 object CompatibleKafkaVersion {
   

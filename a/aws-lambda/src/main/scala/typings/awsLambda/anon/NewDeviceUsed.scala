@@ -3,17 +3,15 @@ package typings.awsLambda.anon
 import typings.awsLambda.commonMod.StringMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewDeviceUsed extends StObject {
   
-  var clientMetadata: js.UndefOr[StringMap] = js.native
+  var clientMetadata: js.UndefOr[StringMap] = js.undefined
   
-  var newDeviceUsed: Boolean = js.native
+  var newDeviceUsed: Boolean
   
-  var userAttributes: StringMap = js.native
+  var userAttributes: StringMap
 }
 object NewDeviceUsed {
   

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Effects
 import typings.winrtUwp.Windows.Media.VideoFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides context for performing a custom video effect operation within the ProcessFrame method. */
-@js.native
 trait ProcessVideoFrameContext extends StObject {
   
   /** Gets the input frame for a video effect operation. */
-  var inputFrame: VideoFrame = js.native
+  var inputFrame: VideoFrame
   
   /** Gets the output frame for a video effect operation. */
-  var outputFrame: VideoFrame = js.native
+  var outputFrame: VideoFrame
 }
 object ProcessVideoFrameContext {
   

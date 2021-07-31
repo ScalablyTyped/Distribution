@@ -3,70 +3,68 @@ package typings.monacoEditor.mod.editor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IViewZone extends StObject {
   
   /**
     * The column after which this zone should appear.
     * If not set, the maxLineColumn of `afterLineNumber` will be used.
     */
-  var afterColumn: js.UndefOr[Double] = js.native
+  var afterColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * The line number after which this zone should appear.
     * Use 0 to place a view zone before the first line number.
     */
-  var afterLineNumber: Double = js.native
+  var afterLineNumber: Double
   
   /**
     * The dom node of the view zone
     */
-  var domNode: HTMLElement = js.native
+  var domNode: HTMLElement
   
   /**
     * The height in lines of the view zone.
     * If specified, `heightInPx` will be used instead of this.
     * If neither `heightInPx` nor `heightInLines` is specified, a default of `heightInLines` = 1 will be chosen.
     */
-  var heightInLines: js.UndefOr[Double] = js.native
+  var heightInLines: js.UndefOr[Double] = js.undefined
   
   /**
     * The height in px of the view zone.
     * If this is set, the editor will give preference to it rather than `heightInLines` above.
     * If neither `heightInPx` nor `heightInLines` is specified, a default of `heightInLines` = 1 will be chosen.
     */
-  var heightInPx: js.UndefOr[Double] = js.native
+  var heightInPx: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional dom node for the view zone that will be placed in the margin area.
     */
-  var marginDomNode: js.UndefOr[HTMLElement | Null] = js.native
+  var marginDomNode: js.UndefOr[HTMLElement | Null] = js.undefined
   
   /**
     * The minimum width in px of the view zone.
     * If this is set, the editor will ensure that the scroll width is >= than this value.
     */
-  var minWidthInPx: js.UndefOr[Double] = js.native
+  var minWidthInPx: js.UndefOr[Double] = js.undefined
   
   /**
     * Callback which gives the height in pixels of the view zone.
     */
-  var onComputedHeight: js.UndefOr[js.Function1[/* height */ Double, Unit]] = js.native
+  var onComputedHeight: js.UndefOr[js.Function1[/* height */ Double, Unit]] = js.undefined
   
   /**
     * Callback which gives the relative top of the view zone as it appears (taking scrolling into account).
     */
-  var onDomNodeTop: js.UndefOr[js.Function1[/* top */ Double, Unit]] = js.native
+  var onDomNodeTop: js.UndefOr[js.Function1[/* top */ Double, Unit]] = js.undefined
   
   /**
     * Suppress mouse down events.
     * If set, the editor will attach a mouse down listener to the view zone and .preventDefault on it.
     * Defaults to false
     */
-  var suppressMouseDown: js.UndefOr[Boolean] = js.native
+  var suppressMouseDown: js.UndefOr[Boolean] = js.undefined
 }
 object IViewZone {
   

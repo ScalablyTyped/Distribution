@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFlowExecutionMessagesResponse extends StObject {
   
   /**
     * A list of objects that contain information about events in the specified flow execution.
     */
-  var messages: js.UndefOr[FlowExecutionMessages] = js.native
+  var messages: js.UndefOr[FlowExecutionMessages] = js.undefined
   
   /**
     * The string to specify as nextToken when you request the next page of results. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListFlowExecutionMessagesResponse {
   

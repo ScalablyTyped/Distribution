@@ -2,31 +2,29 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerEvent extends StObject {
   
   /**
     * The time when the event occurred. 
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon S3 URL of the event's log file.
     */
-  var LogUrl: js.UndefOr[String] = js.native
+  var LogUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable informational or status message.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the server on or for which the event occurred. 
     */
-  var ServerName: js.UndefOr[String] = js.native
+  var ServerName: js.UndefOr[String] = js.undefined
 }
 object ServerEvent {
   

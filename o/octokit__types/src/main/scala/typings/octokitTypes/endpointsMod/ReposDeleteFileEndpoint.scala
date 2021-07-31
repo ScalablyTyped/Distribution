@@ -2,42 +2,40 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposDeleteFileEndpoint extends StObject {
   
   /**
     * object containing information about the author.
     */
-  var author: js.UndefOr[ReposDeleteFileParamsAuthor] = js.native
+  var author: js.UndefOr[ReposDeleteFileParamsAuthor] = js.undefined
   
   /**
     * The branch name. Default: the repository’s default branch (usually `master`)
     */
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
   /**
     * object containing information about the committer.
     */
-  var committer: js.UndefOr[ReposDeleteFileParamsCommitter] = js.native
+  var committer: js.UndefOr[ReposDeleteFileParamsCommitter] = js.undefined
   
   /**
     * The commit message.
     */
-  var message: String = js.native
+  var message: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var path: String = js.native
+  var path: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The blob SHA of the file being replaced.
     */
-  var sha: String = js.native
+  var sha: String
 }
 object ReposDeleteFileEndpoint {
   

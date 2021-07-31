@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartData extends StObject {
   
   /** The aggregation type for the series of a data source chart. Not supported for regular charts. */
-  var aggregateType: js.UndefOr[String] = js.native
+  var aggregateType: js.UndefOr[String] = js.undefined
   
   /** The reference to the data source column that the data reads from. */
-  var columnReference: js.UndefOr[DataSourceColumnReference] = js.native
+  var columnReference: js.UndefOr[DataSourceColumnReference] = js.undefined
   
   /** The rule to group the data by if the ChartData backs the domain of a data source chart. Not supported for regular charts. */
-  var groupRule: js.UndefOr[ChartGroupRule] = js.native
+  var groupRule: js.UndefOr[ChartGroupRule] = js.undefined
   
   /** The source ranges of the data. */
-  var sourceRange: js.UndefOr[ChartSourceRange] = js.native
+  var sourceRange: js.UndefOr[ChartSourceRange] = js.undefined
 }
 object ChartData {
   

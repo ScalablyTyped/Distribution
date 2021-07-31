@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -64,26 +63,26 @@ trait PlusUploader extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def createUpload(): PlusUploaderUpload = js.native
-  def createUpload(
-    url: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
-  ): PlusUploaderUpload = js.native
-  def createUpload(url: js.UndefOr[scala.Nothing], options: PlusUploaderUploadOptions): PlusUploaderUpload = js.native
-  def createUpload(
-    url: js.UndefOr[scala.Nothing],
-    options: PlusUploaderUploadOptions,
-    completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
-  ): PlusUploaderUpload = js.native
   def createUpload(url: String): PlusUploaderUpload = js.native
   def createUpload(
     url: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
   ): PlusUploaderUpload = js.native
   def createUpload(url: String, options: PlusUploaderUploadOptions): PlusUploaderUpload = js.native
   def createUpload(
     url: String,
+    options: PlusUploaderUploadOptions,
+    completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
+  ): PlusUploaderUpload = js.native
+  def createUpload(
+    url: Unit,
+    options: Unit,
+    completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
+  ): PlusUploaderUpload = js.native
+  def createUpload(url: Unit, options: PlusUploaderUploadOptions): PlusUploaderUpload = js.native
+  def createUpload(
+    url: Unit,
     options: PlusUploaderUploadOptions,
     completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
   ): PlusUploaderUpload = js.native
@@ -95,9 +94,9 @@ trait PlusUploader extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def enumerate(): Unit = js.native
-  def enumerate(enumCB: js.UndefOr[scala.Nothing], state: PlusUploaderUploadState): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[this.type], Unit], state: PlusUploaderUploadState): Unit = js.native
+  def enumerate(enumCB: Unit, state: PlusUploaderUploadState): Unit = js.native
   
   /**
     * 开始所有上传任务

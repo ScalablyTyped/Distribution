@@ -11,7 +11,6 @@ import typings.xrm.Xrm.Controls.StringControl
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,25 +23,24 @@ object Attributes {
   /**
     * Interface for an Entity attribute.
     */
-  @js.native
   trait Attribute extends StObject {
     
     /**
       * Adds a handler to be called when the attribute's value is changed.
       * @param handler The function reference.
       */
-    def addOnChange(handler: ContextSensitiveHandler): Unit = js.native
+    def addOnChange(handler: ContextSensitiveHandler): Unit
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    var controls: ItemCollection[Control] = js.native
+    var controls: ItemCollection[Control]
     
     /**
       * Fire all "on change" event handlers.
       */
-    def fireOnChange(): Unit = js.native
+    def fireOnChange(): Unit
     
     /**
       * Gets attribute type.
@@ -59,7 +57,7 @@ object Attributes {
       * * optionset
       * * string
       */
-    def getAttributeType(): AttributeType = js.native
+    def getAttributeType(): AttributeType
     
     /**
       * Gets the attribute format.
@@ -79,63 +77,63 @@ object Attributes {
       * * url            (string)
       * @see {@link getAttributeType}
       */
-    def getFormat(): AttributeFormat = js.native
+    def getFormat(): AttributeFormat
     
     /**
       * Gets a boolean value indicating whether this Attribute has unsaved changes.
       * @returns true if there are unsaved changes, otherwise false.
       */
-    def getIsDirty(): Boolean = js.native
+    def getIsDirty(): Boolean
     
     /**
       * Gets the logical name of the attribute.
       * @returns The logical name.
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * Gets a reference to the record context of this attribute.
       * @returns The parent record context.
       */
-    def getParent(): Entity = js.native
+    def getParent(): Entity
     
     /**
       * Gets the current level of requirement for the attribute.
       * @returns The required level, as either "none", "required", or "recommended"
       */
-    def getRequiredLevel(): RequirementLevel = js.native
+    def getRequiredLevel(): RequirementLevel
     
     /**
       * Gets current submit mode for the attribute.
       * @returns The submit mode, as either "always", "never", or "dirty"
       * @remarks The default value is "dirty"
       */
-    def getSubmitMode(): SubmitMode = js.native
+    def getSubmitMode(): SubmitMode
     
     /**
       * Gets the current user's privileges for the attribute.
       * @returns The user privileges.
       */
-    def getUserPrivilege(): Privilege = js.native
+    def getUserPrivilege(): Privilege
     
     /**
       * Gets the value.
       * @returns The value.
       */
-    def getValue(): js.Any = js.native
+    def getValue(): js.Any
     
     /**
       * Removes the handler from the "on change" event.
       * @param handler The handler.
       */
-    def removeOnChange(handler: ContextSensitiveHandler): Unit = js.native
+    def removeOnChange(handler: ContextSensitiveHandler): Unit
     
     /**
       * Sets the required level.
       * @param requirementLevel The requirement level, as either "none", "required", or "recommended"
       * @see {@link XrmEnum.AttributeRequirementLevel}
       */
-    def setRequiredLevel(requirementLevel: RequirementLevel): Unit = js.native
+    def setRequiredLevel(requirementLevel: RequirementLevel): Unit
     
     /**
       * Sets the submit mode.
@@ -143,13 +141,13 @@ object Attributes {
       * @default submitMode "dirty"
       * @see {@link XrmEnum.AttributeRequirementLevel}
       */
-    def setSubmitMode(submitMode: SubmitMode): Unit = js.native
+    def setSubmitMode(submitMode: SubmitMode): Unit
     
     /**
       * Sets the value.
       * @param value The value.
       */
-    def setValue(value: js.Any): Unit = js.native
+    def setValue(value: js.Any): Unit
   }
   object Attribute {
     
@@ -348,15 +346,16 @@ object Attributes {
     * Interface for a Boolean attribute.
     * @see {@link EnumAttribute}
     */
-  @js.native
-  trait BooleanAttribute extends EnumAttribute {
+  trait BooleanAttribute
+    extends StObject
+       with EnumAttribute {
     
     /**
       * Sets the value.
       * @param value The value.
       * @remarks Attributes on Quick Create Forms will not save values set with this method.
       */
-    def setValue(value: Boolean): Unit = js.native
+    def setValue(value: Boolean): Unit
   }
   object BooleanAttribute {
     
@@ -397,22 +396,23 @@ object Attributes {
     *
     * @see {@link Attribute}
     */
-  @js.native
-  trait DateAttribute extends Attribute {
+  trait DateAttribute
+    extends StObject
+       with Attribute {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_DateAttribute: ItemCollection[DateControl] = js.native
+    var controls_DateAttribute: ItemCollection[DateControl]
     
     /**
       * Sets the value.
       * @param value The value.
       * @remarks Attributes on Quick Create Forms will not save values set with this method.
       */
-    def setValue(value: Date): Unit = js.native
+    def setValue(value: Date): Unit
   }
   object DateAttribute {
     
@@ -472,15 +472,16 @@ object Attributes {
     * Common interface for enumeration attributes (OptionSet and Boolean).
     * @see {@link Attribute}
     */
-  @js.native
-  trait EnumAttribute extends Attribute {
+  trait EnumAttribute
+    extends StObject
+       with Attribute {
     
     /**
       * Gets the initial value of the attribute.
       * @returns The initial value.
       * @remarks Valid for OptionSet and boolean attribute types
       */
-    def getInitialValue(): Double | Boolean = js.native
+    def getInitialValue(): Double | Boolean
   }
   object EnumAttribute {
     
@@ -539,28 +540,29 @@ object Attributes {
     *
     * @see {@link Attribute}
     */
-  @js.native
-  trait LookupAttribute extends Attribute {
+  trait LookupAttribute
+    extends StObject
+       with Attribute {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_LookupAttribute: ItemCollection[LookupControl] = js.native
+    var controls_LookupAttribute: ItemCollection[LookupControl]
     
     /**
       * Gets a boolean value indicating whether the Lookup is a multi-value PartyList.
       * @returns true the attribute is a PartyList, otherwise false.
       */
-    def getIsPartyList(): Boolean = js.native
+    def getIsPartyList(): Boolean
     
     /**
       * Sets the value.
       * @param value The value.
       * @remarks Attributes on Quick Create Forms will not save values set with this method.
       */
-    def setValue(value: js.Array[LookupValue]): Unit = js.native
+    def setValue(value: js.Array[LookupValue]): Unit
   }
   object LookupAttribute {
     
@@ -606,40 +608,41 @@ object Attributes {
     * Interface for a Number attribute.
     * @see {@link Attribute}
     */
-  @js.native
-  trait NumberAttribute extends Attribute {
+  trait NumberAttribute
+    extends StObject
+       with Attribute {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_NumberAttribute: ItemCollection[NumberControl] = js.native
+    var controls_NumberAttribute: ItemCollection[NumberControl]
     
     /**
       * Gets the maximum value allowed.
       * @returns The maximum value allowed.
       */
-    def getMax(): Double = js.native
+    def getMax(): Double
     
     /**
       * Gets the minimum value allowed.
       * @returns The minimum value allowed.
       */
-    def getMin(): Double = js.native
+    def getMin(): Double
     
     /**
       * Gets the attribute's configured precision.
       * @returns The total number of allowed decimal places.
       */
-    def getPrecision(): Double = js.native
+    def getPrecision(): Double
     
     /**
       * Sets the value.
       * @param value The value.
       * @remarks Attributes on Quick Create Forms will not save values set with this method.
       */
-    def setValue(value: Double): Unit = js.native
+    def setValue(value: Double): Unit
   }
   object NumberAttribute {
     
@@ -694,7 +697,9 @@ object Attributes {
     * @see {@link EnumAttribute}
     */
   @js.native
-  trait OptionSetAttribute extends EnumAttribute {
+  trait OptionSetAttribute
+    extends StObject
+       with EnumAttribute {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
@@ -790,22 +795,23 @@ object Attributes {
     * Interface for a String attribute.
     * @see {@link Attribute}
     */
-  @js.native
-  trait StringAttribute extends Attribute {
+  trait StringAttribute
+    extends StObject
+       with Attribute {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
-    var controls_StringAttribute: ItemCollection[StringControl] = js.native
+    var controls_StringAttribute: ItemCollection[StringControl]
     
     /**
       * Gets maximum length allowed.
       * @returns The maximum length allowed.
       * @remarks The email form's "Description" attribute does not have the this method.
       */
-    def getMaxLength(): Double = js.native
+    def getMaxLength(): Double
     
     /**
       * Sets the value.
@@ -814,7 +820,7 @@ object Attributes {
       *          address formatting. Attributes on Quick Create Forms will not save values set
       *          with this method.
       */
-    def setValue(value: String): Unit = js.native
+    def setValue(value: String): Unit
   }
   object StringAttribute {
     

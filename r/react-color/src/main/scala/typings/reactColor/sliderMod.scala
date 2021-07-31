@@ -6,7 +6,6 @@ import typings.reactColor.anon.PartialClassesSliderPicke
 import typings.reactColor.mod.ColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod {
@@ -20,11 +19,12 @@ object sliderMod {
   trait SliderPicker
     extends Component[SliderPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait SliderPickerProps extends ColorPickerProps[SliderPicker] {
+  trait SliderPickerProps
+    extends StObject
+       with ColorPickerProps[SliderPicker] {
     
     @JSName("styles")
-    var styles_SliderPickerProps: js.UndefOr[PartialClassesSliderPicke] = js.native
+    var styles_SliderPickerProps: js.UndefOr[PartialClassesSliderPicke] = js.undefined
   }
   object SliderPickerProps {
     
@@ -45,12 +45,11 @@ object sliderMod {
     }
   }
   
-  @js.native
   trait SliderPickerStylesProps extends StObject {
     
-    var Hue: CSSProperties = js.native
+    var Hue: CSSProperties
     
-    var hue: CSSProperties = js.native
+    var hue: CSSProperties
   }
   object SliderPickerStylesProps {
     

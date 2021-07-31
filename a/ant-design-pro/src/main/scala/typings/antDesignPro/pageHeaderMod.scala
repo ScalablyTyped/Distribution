@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageHeaderMod {
@@ -21,56 +20,55 @@ object pageHeaderMod {
   
   type PageHeader = Component[PageHeaderProps, js.Any, js.Any]
   
-  @js.native
   trait PageHeaderProps extends StObject {
     
-    var action: js.UndefOr[ReactNode | String] = js.native
+    var action: js.UndefOr[ReactNode | String] = js.undefined
     
-    var breadcrumbList: js.UndefOr[js.Array[Title]] = js.native
+    var breadcrumbList: js.UndefOr[js.Array[Title]] = js.undefined
     
-    var breadcrumbNameMap: js.UndefOr[js.Any] = js.native
+    var breadcrumbNameMap: js.UndefOr[js.Any] = js.undefined
     
-    var breadcrumbSeparator: js.UndefOr[ReactNode] = js.native
+    var breadcrumbSeparator: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var extraContent: js.UndefOr[ReactNode] = js.native
+    var extraContent: js.UndefOr[ReactNode] = js.undefined
     
-    var hiddenBreadcrumb: js.UndefOr[Boolean] = js.native
+    var hiddenBreadcrumb: js.UndefOr[Boolean] = js.undefined
     
-    var home: js.UndefOr[ReactNode] = js.native
+    var home: js.UndefOr[ReactNode] = js.undefined
     
-    def itemRender(menuItem: js.Any): ReactNode = js.native
+    def itemRender(menuItem: js.Any): ReactNode
     
-    var linkElement: js.UndefOr[ReactNode | String] = js.native
+    var linkElement: js.UndefOr[ReactNode | String] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var location: js.UndefOr[Location[LocationState]] = js.native
+    var location: js.UndefOr[Location[LocationState]] = js.undefined
     
-    var logo: js.UndefOr[ReactNode | String] = js.native
+    var logo: js.UndefOr[ReactNode | String] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var routes: js.UndefOr[js.Array[_]] = js.native
+    var routes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabActiveKey: js.UndefOr[String] = js.native
+    var tabActiveKey: js.UndefOr[String] = js.undefined
     
-    var tabBarExtraContent: js.UndefOr[ReactNode] = js.native
+    var tabBarExtraContent: js.UndefOr[ReactNode] = js.undefined
     
-    var tabDefaultActiveKey: js.UndefOr[String] = js.native
+    var tabDefaultActiveKey: js.UndefOr[String] = js.undefined
     
-    var tabList: js.UndefOr[js.Array[Key]] = js.native
+    var tabList: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var title: js.UndefOr[ReactNode | String | Double] = js.native
+    var title: js.UndefOr[ReactNode | String | Double] = js.undefined
     
-    var wide: js.UndefOr[Boolean] = js.native
+    var wide: js.UndefOr[Boolean] = js.undefined
   }
   object PageHeaderProps {
     
@@ -180,7 +178,7 @@ object pageHeaderMod {
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
       @scala.inline
-      def setRoutes(value: js.Array[_]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      def setRoutes(value: js.Array[js.Any]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)

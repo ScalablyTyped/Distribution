@@ -5,36 +5,34 @@ import typings.emojiMart.nimbleEmojiIndexMod.EmojiEntry
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<std.Record<emoji-mart.emoji-mart/dist-es/utils/shared-props.CategoryName, string>> */
-  @js.native
   trait PartialRecordCategoryName extends StObject {
     
-    var activity: js.UndefOr[String] = js.native
+    var activity: js.UndefOr[String] = js.undefined
     
-    var custom: js.UndefOr[String] = js.native
+    var custom: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var foods: js.UndefOr[String] = js.native
+    var foods: js.UndefOr[String] = js.undefined
     
-    var nature: js.UndefOr[String] = js.native
+    var nature: js.UndefOr[String] = js.undefined
     
-    var objects: js.UndefOr[String] = js.native
+    var objects: js.UndefOr[String] = js.undefined
     
-    var people: js.UndefOr[String] = js.native
+    var people: js.UndefOr[String] = js.undefined
     
-    var places: js.UndefOr[String] = js.native
+    var places: js.UndefOr[String] = js.undefined
     
-    var recent: js.UndefOr[String] = js.native
+    var recent: js.UndefOr[String] = js.undefined
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
-    var symbols: js.UndefOr[String] = js.native
+    var symbols: js.UndefOr[String] = js.undefined
   }
   object PartialRecordCategoryName {
     
@@ -116,10 +114,9 @@ object anon {
   }
   
   /* Inlined std.Pick<emoji-mart.emoji-mart/dist-es.EmojiData, 'id'> */
-  @js.native
   trait PickEmojiDataid extends StObject {
     
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
   }
   object PickEmojiDataid {
     
@@ -141,30 +138,29 @@ object anon {
   }
   
   /* Inlined std.Record<emoji-mart.emoji-mart/dist-es/utils/shared-props.CategoryName, (): react.react.ReactNode> */
-  @js.native
   trait RecordCategoryNameReactNo extends StObject {
     
-    var activity: js.Function0[ReactNode] = js.native
+    var activity: js.Function0[ReactNode]
     
-    var custom: js.Function0[ReactNode] = js.native
+    var custom: js.Function0[ReactNode]
     
-    var flags: js.Function0[ReactNode] = js.native
+    var flags: js.Function0[ReactNode]
     
-    var foods: js.Function0[ReactNode] = js.native
+    var foods: js.Function0[ReactNode]
     
-    var nature: js.Function0[ReactNode] = js.native
+    var nature: js.Function0[ReactNode]
     
-    var objects: js.Function0[ReactNode] = js.native
+    var objects: js.Function0[ReactNode]
     
-    var people: js.Function0[ReactNode] = js.native
+    var people: js.Function0[ReactNode]
     
-    var places: js.Function0[ReactNode] = js.native
+    var places: js.Function0[ReactNode]
     
-    var recent: js.Function0[ReactNode] = js.native
+    var recent: js.Function0[ReactNode]
     
-    var search: js.Function0[ReactNode] = js.native
+    var search: js.Function0[ReactNode]
     
-    var symbols: js.Function0[ReactNode] = js.native
+    var symbols: js.Function0[ReactNode]
   }
   object RecordCategoryNameReactNo {
     
@@ -225,30 +221,29 @@ object anon {
   }
   
   /* Inlined std.Record<emoji-mart.emoji-mart/dist-es/utils/shared-props.CategoryName, string> */
-  @js.native
   trait RecordCategoryNamestring extends StObject {
     
-    var activity: String = js.native
+    var activity: String
     
-    var custom: String = js.native
+    var custom: String
     
-    var flags: String = js.native
+    var flags: String
     
-    var foods: String = js.native
+    var foods: String
     
-    var nature: String = js.native
+    var nature: String
     
-    var objects: String = js.native
+    var objects: String
     
-    var people: String = js.native
+    var people: String
     
-    var places: String = js.native
+    var places: String
     
-    var recent: String = js.native
+    var recent: String
     
-    var search: String = js.native
+    var search: String
     
-    var symbols: String = js.native
+    var symbols: String
   }
   object RecordCategoryNamestring {
     
@@ -309,20 +304,21 @@ object anon {
   }
   
   /* Inlined {[ variant in emoji-mart.emoji-mart/dist-es/utils/emoji-index/nimble-emoji-index.EmojiSkin ]: emoji-mart.emoji-mart/dist-es/utils/emoji-index/nimble-emoji-index.EmojiData} */
-  @js.native
-  trait variantinEmojiSkinEmojiDa extends EmojiEntry {
+  trait variantinEmojiSkinEmojiDa
+    extends StObject
+       with EmojiEntry {
     
-    var `1`: EmojiData = js.native
+    var `1`: EmojiData
     
-    var `2`: EmojiData = js.native
+    var `2`: EmojiData
     
-    var `3`: EmojiData = js.native
+    var `3`: EmojiData
     
-    var `4`: EmojiData = js.native
+    var `4`: EmojiData
     
-    var `5`: EmojiData = js.native
+    var `5`: EmojiData
     
-    var `6`: EmojiData = js.native
+    var `6`: EmojiData
   }
   object variantinEmojiSkinEmojiDa {
     

@@ -1,38 +1,37 @@
 package typings.ethereumjsUtil
 
-import typings.bnJs.mod.^
 import typings.ethereumjsUtil.addressMod.Address
 import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("ethereumjs-util/dist/types", "bnToHex")
+  @JSImport("ethereumjs-util/dist/types", JSImport.Namespace)
   @js.native
-  def bnToHex(value: ^): PrefixedHexString = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereumjs-util/dist/types", "bnToRlp")
-  @js.native
-  def bnToRlp(value: ^): Buffer = js.native
+  @scala.inline
+  def bnToHex(value: typings.bnJs.mod.^): PrefixedHexString = ^.asInstanceOf[js.Dynamic].applyDynamic("bnToHex")(value.asInstanceOf[js.Any]).asInstanceOf[PrefixedHexString]
+  
+  @scala.inline
+  def bnToRlp(value: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bnToRlp")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   type AddressLike = Address | Buffer | String
   
-  type BNLike = ^ | String | Double
+  type BNLike = typings.bnJs.mod.^ | String | Double
   
-  type BufferLike = Buffer | Uint8Array | js.Array[Double] | Double | ^ | TransformableToBuffer | PrefixedHexString
+  type BufferLike = Buffer | Uint8Array | js.Array[Double] | Double | typings.bnJs.mod.^ | TransformableToBuffer | PrefixedHexString
   
   type PrefixedHexString = String
   
-  @js.native
   trait TransformableToArray extends StObject {
     
-    def toArray(): Uint8Array = js.native
+    def toArray(): Uint8Array
     
-    var toBuffer: js.UndefOr[js.Function0[Buffer]] = js.native
+    var toBuffer: js.UndefOr[js.Function0[Buffer]] = js.undefined
   }
   object TransformableToArray {
     
@@ -56,12 +55,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TransformableToBuffer extends StObject {
     
-    var toArray: js.UndefOr[js.Function0[Uint8Array]] = js.native
+    var toArray: js.UndefOr[js.Function0[Uint8Array]] = js.undefined
     
-    def toBuffer(): Buffer = js.native
+    def toBuffer(): Buffer
   }
   object TransformableToBuffer {
     

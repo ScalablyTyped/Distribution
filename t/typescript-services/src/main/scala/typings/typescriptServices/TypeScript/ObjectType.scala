@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectType extends AST {
+trait ObjectType
+  extends StObject
+     with AST {
   
-  def structuralEquals(ast: ObjectType, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ObjectType, includingPosition: Boolean): Boolean
   
-  var typeMembers: ISeparatedSyntaxList2 = js.native
+  var typeMembers: ISeparatedSyntaxList2
 }
 object ObjectType {
   

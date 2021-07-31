@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarketplaceTargeting extends StObject {
   
   /** Geo criteria IDs to be included/excluded. */
-  var geoTargeting: js.UndefOr[CriteriaTargeting] = js.native
+  var geoTargeting: js.UndefOr[CriteriaTargeting] = js.undefined
   
   /** Inventory sizes to be included/excluded. */
-  var inventorySizeTargeting: js.UndefOr[InventorySizeTargeting] = js.native
+  var inventorySizeTargeting: js.UndefOr[InventorySizeTargeting] = js.undefined
   
   /** Placement targeting information, e.g., URL, mobile applications. */
-  var placementTargeting: js.UndefOr[PlacementTargeting] = js.native
+  var placementTargeting: js.UndefOr[PlacementTargeting] = js.undefined
   
   /** Technology targeting information, e.g., operating system, device category. */
-  var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.native
+  var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.undefined
   
   /** Video targeting information. */
-  var videoTargeting: js.UndefOr[VideoTargeting] = js.native
+  var videoTargeting: js.UndefOr[VideoTargeting] = js.undefined
 }
 object MarketplaceTargeting {
   

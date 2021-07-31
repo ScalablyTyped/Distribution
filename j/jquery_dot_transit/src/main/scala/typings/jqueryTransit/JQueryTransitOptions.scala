@@ -2,62 +2,60 @@ package typings.jqueryTransit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Transit //////////////////////////////////////////////////
-@js.native
 trait JQueryTransitOptions extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var margin: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[String] = js.undefined
   
-  var marginBottom: js.UndefOr[String] = js.native
+  var marginBottom: js.UndefOr[String] = js.undefined
   
-  var marginLeft: js.UndefOr[String] = js.native
+  var marginLeft: js.UndefOr[String] = js.undefined
   
-  var marginRight: js.UndefOr[String] = js.native
+  var marginRight: js.UndefOr[String] = js.undefined
   
-  var marginTop: js.UndefOr[String] = js.native
+  var marginTop: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var perspective: js.UndefOr[String] = js.native
+  var perspective: js.UndefOr[String] = js.undefined
   
-  var rotate: js.UndefOr[Double | String] = js.native
+  var rotate: js.UndefOr[Double | String] = js.undefined
   
-  var rotate3d: js.UndefOr[String] = js.native
+  var rotate3d: js.UndefOr[String] = js.undefined
   
-  var rotateX: js.UndefOr[String] = js.native
+  var rotateX: js.UndefOr[String] = js.undefined
   
-  var rotateY: js.UndefOr[String] = js.native
+  var rotateY: js.UndefOr[String] = js.undefined
   
-  var scale: js.UndefOr[Double | js.Array[Double]] = js.native
+  var scale: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var skewX: js.UndefOr[String] = js.native
+  var skewX: js.UndefOr[String] = js.undefined
   
-  var skewY: js.UndefOr[String] = js.native
+  var skewY: js.UndefOr[String] = js.undefined
   
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
   
-  var transformOrigin: js.UndefOr[String] = js.native
+  var transformOrigin: js.UndefOr[String] = js.undefined
   
-  var translate: js.UndefOr[(js.Array[Double | String]) | String] = js.native
+  var translate: js.UndefOr[(js.Array[Double | String]) | String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var x: js.UndefOr[Double | String] = js.native
+  var x: js.UndefOr[Double | String] = js.undefined
   
-  var y: js.UndefOr[Double | String] = js.native
+  var y: js.UndefOr[Double | String] = js.undefined
 }
 object JQueryTransitOptions {
   

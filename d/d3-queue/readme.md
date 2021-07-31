@@ -11,8 +11,8 @@ Evaluate asynchronous tasks with configurable concurrency.
 | Full name          | d3-queue |
 | Keywords           | d3, d3-module, asynchronous, async, queue |
 | # releases         | 0 |
-| # dependents       | 112 |
-| # downloads        | 15106475 |
+| # dependents       | 113 |
+| # downloads        | 14923496 |
 | # stars            | 4 |
 
 ## Links

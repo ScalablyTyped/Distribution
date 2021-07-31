@@ -12,7 +12,6 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
@@ -24,29 +23,29 @@ object inputMod {
   
   type Input = Component[InputProps, js.Object, js.Any]
   
-  @js.native
   trait InputProps
-    extends InputHTMLAttributes[HTMLInputElement]
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var addon: js.UndefOr[Boolean] = js.native
+    var addon: js.UndefOr[Boolean] = js.undefined
     
-    var bsSize: js.UndefOr[lg | sm] = js.native
+    var bsSize: js.UndefOr[lg | sm] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLInputElement | HTMLTextAreaElement]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLInputElement | HTMLTextAreaElement]] = js.undefined
     
-    var invalid: js.UndefOr[Boolean] = js.native
+    var invalid: js.UndefOr[Boolean] = js.undefined
     
-    var plaintext: js.UndefOr[Boolean] = js.native
+    var plaintext: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     @JSName("type")
-    var type_InputProps: js.UndefOr[InputType] = js.native
+    var type_InputProps: js.UndefOr[InputType] = js.undefined
     
-    var valid: js.UndefOr[Boolean] = js.native
+    var valid: js.UndefOr[Boolean] = js.undefined
   }
   object InputProps {
     
@@ -102,7 +101,7 @@ object inputMod {
       def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

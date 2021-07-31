@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait RankBy extends StObject
 object RankBy extends StObject {
   
   @js.native
-  sealed trait DISTANCE extends RankBy
+  sealed trait DISTANCE
+    extends StObject
+       with RankBy
   
   @js.native
-  sealed trait PROMINENCE extends RankBy
+  sealed trait PROMINENCE
+    extends StObject
+       with RankBy
 }

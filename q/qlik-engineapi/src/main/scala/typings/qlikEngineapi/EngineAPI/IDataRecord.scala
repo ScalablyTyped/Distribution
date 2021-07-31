@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DataRecord...
   */
-@js.native
 trait IDataRecord extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait IDataRecord extends StObject {
     * The first values (in result/qPreview/0/qValues) correspond to the field names in the table.
     * The following values (from result/qPreview/1/qValues) are the values of the fields in the table.
     */
-  var qValues: js.Array[String] = js.native
+  var qValues: js.Array[String]
 }
 object IDataRecord {
   

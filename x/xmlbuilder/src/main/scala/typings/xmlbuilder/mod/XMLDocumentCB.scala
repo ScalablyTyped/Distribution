@@ -4,7 +4,6 @@ import typings.xmlbuilder.anon.NData
 import typings.xmlbuilder.anon.PubID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,13 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class XMLDocumentCB () extends StObject {
   
   def a(elementName: String, attributeName: String, attributeType: String): XMLDocumentCB = js.native
-  def a(
-    elementName: String,
-    attributeName: String,
-    attributeType: String,
-    defaultValueType: js.UndefOr[scala.Nothing],
-    defaultValue: js.Any
-  ): XMLDocumentCB = js.native
   def a(elementName: String, attributeName: String, attributeType: String, defaultValueType: String): XMLDocumentCB = js.native
   def a(
     elementName: String,
@@ -31,23 +23,30 @@ class XMLDocumentCB () extends StObject {
     defaultValueType: String,
     defaultValue: js.Any
   ): XMLDocumentCB = js.native
+  def a(
+    elementName: String,
+    attributeName: String,
+    attributeType: String,
+    defaultValueType: Unit,
+    defaultValue: js.Any
+  ): XMLDocumentCB = js.native
   def a(name: js.Any): XMLDocumentCB = js.native
   def a(name: js.Any, value: js.Any): XMLDocumentCB = js.native
   
   def att(elementName: String, attributeName: String, attributeType: String): XMLDocumentCB = js.native
-  def att(
-    elementName: String,
-    attributeName: String,
-    attributeType: String,
-    defaultValueType: js.UndefOr[scala.Nothing],
-    defaultValue: js.Any
-  ): XMLDocumentCB = js.native
   def att(elementName: String, attributeName: String, attributeType: String, defaultValueType: String): XMLDocumentCB = js.native
   def att(
     elementName: String,
     attributeName: String,
     attributeType: String,
     defaultValueType: String,
+    defaultValue: js.Any
+  ): XMLDocumentCB = js.native
+  def att(
+    elementName: String,
+    attributeName: String,
+    attributeType: String,
+    defaultValueType: Unit,
     defaultValue: js.Any
   ): XMLDocumentCB = js.native
   def att(name: js.Any): XMLDocumentCB = js.native
@@ -69,19 +68,19 @@ class XMLDocumentCB () extends StObject {
     * @returns the document builder object
     */
   def attList(elementName: String, attributeName: String, attributeType: String): XMLDocumentCB = js.native
-  def attList(
-    elementName: String,
-    attributeName: String,
-    attributeType: String,
-    defaultValueType: js.UndefOr[scala.Nothing],
-    defaultValue: js.Any
-  ): XMLDocumentCB = js.native
   def attList(elementName: String, attributeName: String, attributeType: String, defaultValueType: String): XMLDocumentCB = js.native
   def attList(
     elementName: String,
     attributeName: String,
     attributeType: String,
     defaultValueType: String,
+    defaultValue: js.Any
+  ): XMLDocumentCB = js.native
+  def attList(
+    elementName: String,
+    attributeName: String,
+    attributeType: String,
+    defaultValueType: Unit,
     defaultValue: js.Any
   ): XMLDocumentCB = js.native
   
@@ -130,13 +129,13 @@ class XMLDocumentCB () extends StObject {
   def dat(value: String): XMLDocumentCB = js.native
   
   def dec(): XMLDocumentCB = js.native
-  def dec(version: js.UndefOr[scala.Nothing], encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLDocumentCB = js.native
-  def dec(version: js.UndefOr[scala.Nothing], encoding: String): XMLDocumentCB = js.native
-  def dec(version: js.UndefOr[scala.Nothing], encoding: String, standalone: Boolean): XMLDocumentCB = js.native
   def dec(version: String): XMLDocumentCB = js.native
-  def dec(version: String, encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLDocumentCB = js.native
   def dec(version: String, encoding: String): XMLDocumentCB = js.native
   def dec(version: String, encoding: String, standalone: Boolean): XMLDocumentCB = js.native
+  def dec(version: String, encoding: Unit, standalone: Boolean): XMLDocumentCB = js.native
+  def dec(version: Unit, encoding: String): XMLDocumentCB = js.native
+  def dec(version: Unit, encoding: String, standalone: Boolean): XMLDocumentCB = js.native
+  def dec(version: Unit, encoding: Unit, standalone: Boolean): XMLDocumentCB = js.native
   
   /**
     * Creates the XML declaration.
@@ -150,13 +149,13 @@ class XMLDocumentCB () extends StObject {
     * @returns the document builder object
     */
   def declaration(): XMLDocumentCB = js.native
-  def declaration(version: js.UndefOr[scala.Nothing], encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLDocumentCB = js.native
-  def declaration(version: js.UndefOr[scala.Nothing], encoding: String): XMLDocumentCB = js.native
-  def declaration(version: js.UndefOr[scala.Nothing], encoding: String, standalone: Boolean): XMLDocumentCB = js.native
   def declaration(version: String): XMLDocumentCB = js.native
-  def declaration(version: String, encoding: js.UndefOr[scala.Nothing], standalone: Boolean): XMLDocumentCB = js.native
   def declaration(version: String, encoding: String): XMLDocumentCB = js.native
   def declaration(version: String, encoding: String, standalone: Boolean): XMLDocumentCB = js.native
+  def declaration(version: String, encoding: Unit, standalone: Boolean): XMLDocumentCB = js.native
+  def declaration(version: Unit, encoding: String): XMLDocumentCB = js.native
+  def declaration(version: Unit, encoding: String, standalone: Boolean): XMLDocumentCB = js.native
+  def declaration(version: Unit, encoding: Unit, standalone: Boolean): XMLDocumentCB = js.native
   
   /**
     * Creates the document type definition.
@@ -170,14 +169,14 @@ class XMLDocumentCB () extends StObject {
     * @returns the document builder object
     */
   def doctype(root: String): XMLDocumentCB = js.native
-  def doctype(root: String, pubID: js.UndefOr[scala.Nothing], sysID: String): XMLDocumentCB = js.native
   def doctype(root: String, pubID: String): XMLDocumentCB = js.native
   def doctype(root: String, pubID: String, sysID: String): XMLDocumentCB = js.native
+  def doctype(root: String, pubID: Unit, sysID: String): XMLDocumentCB = js.native
   
   def dtd(root: String): XMLDocumentCB = js.native
-  def dtd(root: String, pubID: js.UndefOr[scala.Nothing], sysID: String): XMLDocumentCB = js.native
   def dtd(root: String, pubID: String): XMLDocumentCB = js.native
   def dtd(root: String, pubID: String, sysID: String): XMLDocumentCB = js.native
+  def dtd(root: String, pubID: Unit, sysID: String): XMLDocumentCB = js.native
   
   /**
     * Creates an element type declaration.
@@ -193,16 +192,16 @@ class XMLDocumentCB () extends StObject {
   def dtdElement(name: String, value: js.Object): XMLDocumentCB = js.native
   
   def e(name: js.Any): XMLDocumentCB = js.native
-  def e(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLDocumentCB = js.native
   def e(name: js.Any, attributes: js.Object): XMLDocumentCB = js.native
   def e(name: js.Any, attributes: js.Object, text: js.Any): XMLDocumentCB = js.native
+  def e(name: js.Any, attributes: Unit, text: js.Any): XMLDocumentCB = js.native
   
   def ele(name: String): XMLDocumentCB = js.native
   def ele(name: String, value: js.Object): XMLDocumentCB = js.native
   def ele(name: js.Any): XMLDocumentCB = js.native
-  def ele(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLDocumentCB = js.native
   def ele(name: js.Any, attributes: js.Object): XMLDocumentCB = js.native
   def ele(name: js.Any, attributes: js.Object, text: js.Any): XMLDocumentCB = js.native
+  def ele(name: js.Any, attributes: Unit, text: js.Any): XMLDocumentCB = js.native
   
   def element(name: String): XMLDocumentCB = js.native
   def element(name: String, value: js.Object): XMLDocumentCB = js.native
@@ -219,9 +218,9 @@ class XMLDocumentCB () extends StObject {
     * @returns the document builder object
     */
   def element(name: js.Any): XMLDocumentCB = js.native
-  def element(name: js.Any, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLDocumentCB = js.native
   def element(name: js.Any, attributes: js.Object): XMLDocumentCB = js.native
   def element(name: js.Any, attributes: js.Object, text: js.Any): XMLDocumentCB = js.native
+  def element(name: js.Any, attributes: Unit, text: js.Any): XMLDocumentCB = js.native
   
   /**
     * Ends the document and calls the `onEnd` callback function.
@@ -244,15 +243,15 @@ class XMLDocumentCB () extends StObject {
   def entity(name: String, value: String): XMLDocumentCB = js.native
   def entity(name: String, value: NData): XMLDocumentCB = js.native
   
-  def i(array: js.Array[_]): XMLDocumentCB = js.native
+  def i(array: js.Array[js.Any]): XMLDocumentCB = js.native
   def i(obj: js.Object): XMLDocumentCB = js.native
   def i(target: String, value: js.Any): XMLDocumentCB = js.native
   
-  def ins(array: js.Array[_]): XMLDocumentCB = js.native
+  def ins(array: js.Array[js.Any]): XMLDocumentCB = js.native
   def ins(obj: js.Object): XMLDocumentCB = js.native
   def ins(target: String, value: js.Any): XMLDocumentCB = js.native
   
-  def instruction(array: js.Array[_]): XMLDocumentCB = js.native
+  def instruction(array: js.Array[js.Any]): XMLDocumentCB = js.native
   def instruction(obj: js.Object): XMLDocumentCB = js.native
   /**
     * Creates a new processing instruction node and appends it to the list 
@@ -268,14 +267,14 @@ class XMLDocumentCB () extends StObject {
   def instruction(target: String, value: js.Any): XMLDocumentCB = js.native
   
   def n(name: String): XMLDocumentCB = js.native
-  def n(name: String, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLDocumentCB = js.native
   def n(name: String, attributes: js.Object): XMLDocumentCB = js.native
   def n(name: String, attributes: js.Object, text: js.Any): XMLDocumentCB = js.native
+  def n(name: String, attributes: Unit, text: js.Any): XMLDocumentCB = js.native
   
   def nod(name: String): XMLDocumentCB = js.native
-  def nod(name: String, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLDocumentCB = js.native
   def nod(name: String, attributes: js.Object): XMLDocumentCB = js.native
   def nod(name: String, attributes: js.Object, text: js.Any): XMLDocumentCB = js.native
+  def nod(name: String, attributes: Unit, text: js.Any): XMLDocumentCB = js.native
   
   /**
     * Creates a new child node and appends it to the list of child nodes.
@@ -289,9 +288,9 @@ class XMLDocumentCB () extends StObject {
     * @returns the document builder object
     */
   def node(name: String): XMLDocumentCB = js.native
-  def node(name: String, attributes: js.UndefOr[scala.Nothing], text: js.Any): XMLDocumentCB = js.native
   def node(name: String, attributes: js.Object): XMLDocumentCB = js.native
   def node(name: String, attributes: js.Object, text: js.Any): XMLDocumentCB = js.native
+  def node(name: String, attributes: Unit, text: js.Any): XMLDocumentCB = js.native
   
   def not(name: String, value: PubID): XMLDocumentCB = js.native
   

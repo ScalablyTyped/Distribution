@@ -2,7 +2,6 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait NativePointer
-  extends NativePointerValue
+  extends StObject
+     with NativePointerValue
      with _NativeReturnValue {
   
   def add(v: String): NativePointer = js.native
@@ -152,11 +152,11 @@ trait NativePointer
     * @param data The data to use. Defaults to `0`.
     */
   def sign(): NativePointer = js.native
-  def sign(key: js.UndefOr[scala.Nothing], data: String): NativePointer = js.native
-  def sign(key: js.UndefOr[scala.Nothing], data: Double): NativePointer = js.native
-  def sign(key: js.UndefOr[scala.Nothing], data: Int64): NativePointer = js.native
-  def sign(key: js.UndefOr[scala.Nothing], data: NativePointerValue): NativePointer = js.native
-  def sign(key: js.UndefOr[scala.Nothing], data: UInt64): NativePointer = js.native
+  def sign(key: Unit, data: String): NativePointer = js.native
+  def sign(key: Unit, data: Double): NativePointer = js.native
+  def sign(key: Unit, data: Int64): NativePointer = js.native
+  def sign(key: Unit, data: NativePointerValue): NativePointer = js.native
+  def sign(key: Unit, data: UInt64): NativePointer = js.native
   def sign(key: PointerAuthenticationKey): NativePointer = js.native
   def sign(key: PointerAuthenticationKey, data: String): NativePointer = js.native
   def sign(key: PointerAuthenticationKey, data: Double): NativePointer = js.native

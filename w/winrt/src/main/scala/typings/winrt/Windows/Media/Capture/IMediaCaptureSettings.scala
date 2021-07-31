@@ -2,21 +2,19 @@ package typings.winrt.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMediaCaptureSettings extends StObject {
   
-  var audioDeviceId: String = js.native
+  var audioDeviceId: String
   
-  var photoCaptureSource: PhotoCaptureSource = js.native
+  var photoCaptureSource: PhotoCaptureSource
   
-  var streamingCaptureMode: StreamingCaptureMode = js.native
+  var streamingCaptureMode: StreamingCaptureMode
   
-  var videoDeviceCharacteristic: VideoDeviceCharacteristic = js.native
+  var videoDeviceCharacteristic: VideoDeviceCharacteristic
   
-  var videoDeviceId: String = js.native
+  var videoDeviceId: String
 }
 object IMediaCaptureSettings {
   

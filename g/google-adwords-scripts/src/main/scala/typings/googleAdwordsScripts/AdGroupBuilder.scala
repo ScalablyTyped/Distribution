@@ -2,12 +2,12 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AdGroupBuilder[AdGroup]
-  extends AdWordsBuilder[AdGroup]
+  extends StObject
+     with AdWordsBuilder[AdGroup]
      with hasBiddingStrategyBuilder[AdGroupBuilder[AdGroup]]
      with hasTrackingTemplateBuilder[AdGroupBuilder[AdGroup]] {
   

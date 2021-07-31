@@ -18,7 +18,6 @@ import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.std.HTMLTableCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableCellMod extends Shortcut {
@@ -27,54 +26,55 @@ object tableCellMod extends Shortcut {
   @js.native
   val default: StatelessComponent[TableCellProps] = js.native
   
-  @js.native
-  trait StrictTableCellProps extends TdHTMLAttributes[HTMLTableCellElement] {
+  trait StrictTableCellProps
+    extends StObject
+       with TdHTMLAttributes[HTMLTableCellElement] {
     
     /** A cell can be active or selected by a user. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A table can be collapsing, taking up only as much space as its rows. */
-    var collapsing: js.UndefOr[Boolean] = js.native
+    var collapsing: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A cell can be disabled. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A cell may call attention to an error or a negative value. */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** Add an Icon by name, props object, or pass an <Icon /> */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** A cell may let a user know whether a value is bad. */
-    var negative: js.UndefOr[Boolean] = js.native
+    var negative: js.UndefOr[Boolean] = js.undefined
     
     /** A cell may let a user know whether a value is good. */
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
     /** A cell can be selectable. */
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
     /** A cell can specify that its contents should remain on a single line and not wrap. */
-    var singleLine: js.UndefOr[Boolean] = js.native
+    var singleLine: js.UndefOr[Boolean] = js.undefined
     
     /** A table cell can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.native
+    var textAlign: js.UndefOr[center | left | right] = js.undefined
     
     /** A table cell can adjust its text alignment. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
     
     /** A cell may warn a user. */
-    var warning: js.UndefOr[Boolean] = js.native
+    var warning: js.UndefOr[Boolean] = js.undefined
     
     /** A table can specify the width of individual columns independently. */
     @JSName("width")
-    var width_StrictTableCellProps: js.UndefOr[SemanticWIDTHS] = js.native
+    var width_StrictTableCellProps: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictTableCellProps {
     

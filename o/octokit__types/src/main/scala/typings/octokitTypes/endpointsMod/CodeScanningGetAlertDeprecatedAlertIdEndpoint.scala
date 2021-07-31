@@ -2,21 +2,19 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeScanningGetAlertDeprecatedAlertIdEndpoint extends StObject {
   
   /**
     * The code scanning alert number.
     *  @deprecated "alert_id" is deprecated. Use "alert_number" instead
     */
-  var alert_id: js.UndefOr[Double] = js.native
+  var alert_id: js.UndefOr[Double] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object CodeScanningGetAlertDeprecatedAlertIdEndpoint {
   

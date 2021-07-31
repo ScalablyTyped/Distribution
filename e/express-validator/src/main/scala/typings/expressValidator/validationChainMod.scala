@@ -8,14 +8,14 @@ import typings.expressValidator.sanitizersMod.Sanitizers
 import typings.expressValidator.validatorsMod.Validators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationChainMod {
   
   @js.native
   trait ValidationChain
-    extends Validators[ValidationChain]
+    extends StObject
+       with Validators[ValidationChain]
        with Sanitizers[ValidationChain]
        with ContextHandler[ValidationChain]
        with ContextRunner {

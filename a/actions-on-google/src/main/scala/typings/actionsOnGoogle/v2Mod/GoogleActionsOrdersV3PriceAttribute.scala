@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3PriceAttribute extends StObject {
   
   /**
     * Monetary amount.
     */
-  var amount: js.UndefOr[GoogleActionsOrdersV3Money] = js.native
+  var amount: js.UndefOr[GoogleActionsOrdersV3Money] = js.undefined
   
   /**
     * The percentage spec, to 1/1000th of a percent.
@@ -20,28 +18,28 @@ trait GoogleActionsOrdersV3PriceAttribute extends StObject {
     * Deprecating this field. Can consider adding back when a solid usecase is
     * required.
     */
-  var amountMillipercentage: js.UndefOr[Double] = js.native
+  var amountMillipercentage: js.UndefOr[Double] = js.undefined
   
   /**
     * Required: User displayed string of the price attribute. This is sent and
     * localized by merchant.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required: State of the price: Estimate vs Actual.
     */
-  var state: js.UndefOr[GoogleActionsOrdersV3PriceAttributeState] = js.native
+  var state: js.UndefOr[GoogleActionsOrdersV3PriceAttributeState] = js.undefined
   
   /**
     * Whether the price is tax included.
     */
-  var taxIncluded: js.UndefOr[Boolean] = js.native
+  var taxIncluded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required: Type of money attribute.
     */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3PriceAttributeType] = js.native
+  var `type`: js.UndefOr[GoogleActionsOrdersV3PriceAttributeType] = js.undefined
 }
 object GoogleActionsOrdersV3PriceAttribute {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetObjectAttributes extends StObject {
   
   /**
     * List of attribute names whose values will be retrieved.
     */
-  var AttributeNames: AttributeNameList = js.native
+  var AttributeNames: AttributeNameList
   
   /**
     * Reference that identifies the object whose attributes will be retrieved.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
   
   /**
     * Identifier for the facet whose attributes will be retrieved. See SchemaFacet for details.
     */
-  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet = js.native
+  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet
 }
 object BatchGetObjectAttributes {
   

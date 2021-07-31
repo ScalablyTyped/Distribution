@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of tags to be filtered.
   */
-@js.native
 trait SchemaTagFilterList extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaTagFilterList extends StObject {
     * They may be provided by &quot;Keyword&quot; or &quot;Tag&quot;. For
     * example &quot;PatientID&quot;, &quot;0010,0010&quot;.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTagFilterList {
   

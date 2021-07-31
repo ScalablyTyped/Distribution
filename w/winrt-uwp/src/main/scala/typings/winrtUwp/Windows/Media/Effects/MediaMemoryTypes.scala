@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Effects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object MediaMemoryTypes extends StObject {
   
   /** CPU memory. */
   @js.native
-  sealed trait cpu extends MediaMemoryTypes
+  sealed trait cpu
+    extends StObject
+       with MediaMemoryTypes
   
   /** GPU memory. */
   @js.native
-  sealed trait gpu extends MediaMemoryTypes
+  sealed trait gpu
+    extends StObject
+       with MediaMemoryTypes
   
   /** Both GPU and CPU memory. */
   @js.native
-  sealed trait gpuAndCpu extends MediaMemoryTypes
+  sealed trait gpuAndCpu
+    extends StObject
+       with MediaMemoryTypes
 }

@@ -12,7 +12,7 @@ A redbox (rsod) component to display your errors.
 | Keywords           | redbox, rsod, react, react-native |
 | # releases         | 0 |
 | # dependents       | 166 |
-| # downloads        | 9878332 |
+| # downloads        | 9154407 |
 | # stars            | 12 |
 
 ## Links

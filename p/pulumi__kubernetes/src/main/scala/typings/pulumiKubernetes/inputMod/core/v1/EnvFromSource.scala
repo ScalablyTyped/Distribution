@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EnvFromSource represents the source of a set of ConfigMaps
   */
-@js.native
 trait EnvFromSource extends StObject {
   
   /**
     * The ConfigMap to select from
     */
-  var configMapRef: js.UndefOr[Input[ConfigMapEnvSource]] = js.native
+  var configMapRef: js.UndefOr[Input[ConfigMapEnvSource]] = js.undefined
   
   /**
     * An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The Secret to select from
     */
-  var secretRef: js.UndefOr[Input[SecretEnvSource]] = js.native
+  var secretRef: js.UndefOr[Input[SecretEnvSource]] = js.undefined
 }
 object EnvFromSource {
   

@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface allows to get an object that allows to encrypt/decrypt data using the specified algorithm.
   * @since OOo 3.4
   */
-@js.native
-trait XCipherContextSupplier extends XInterface {
+trait XCipherContextSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns an object that allows to encrypt/decrypt data.
@@ -31,7 +31,7 @@ trait XCipherContextSupplier extends XInterface {
     aInitializationVector: SeqEquiv[Double],
     bEncryption: Boolean,
     aParams: SeqEquiv[NamedValue]
-  ): XCipherContext = js.native
+  ): XCipherContext
 }
 object XCipherContextSupplier {
   

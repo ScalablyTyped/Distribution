@@ -6,46 +6,85 @@ import typings.divaJs.interfacesMod.Region
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewportMod {
   
   @JSImport("diva.js/viewport", JSImport.Default)
   @js.native
-  class default protected () extends Viewport {
+  class default protected ()
+    extends StObject
+       with Viewport {
     def this(outer: HTMLElement) = this()
     def this(outer: HTMLElement, options: IntersectionTolerance) = this()
-  }
-  
-  @js.native
-  trait Viewport extends StObject {
     
+    /* CompleteClass */
     var bottom: Double = js.native
     
-    def hasHorizontalOverlap(region: Region): Boolean = js.native
+    /* CompleteClass */
+    override def hasHorizontalOverlap(region: Region): Boolean = js.native
     
-    def hasVerticalOverlap(region: Region): Boolean = js.native
+    /* CompleteClass */
+    override def hasVerticalOverlap(region: Region): Boolean = js.native
     
+    /* CompleteClass */
     var height: Double = js.native
     
+    /* CompleteClass */
     var intersectionTolerance: Double = js.native
     
-    def intersectsRegion(region: Region): Boolean = js.native
+    /* CompleteClass */
+    override def intersectsRegion(region: Region): Boolean = js.native
     
-    def invalidate(): Unit = js.native
+    /* CompleteClass */
+    override def invalidate(): Unit = js.native
     
+    /* CompleteClass */
     var left: Double = js.native
     
+    /* CompleteClass */
     var outer: HTMLElement = js.native
     
+    /* CompleteClass */
     var right: Double = js.native
     
-    def setInnerDimensions(dimensions: Dimensions): Unit = js.native
+    /* CompleteClass */
+    override def setInnerDimensions(dimensions: Dimensions): Unit = js.native
     
+    /* CompleteClass */
     var top: Double = js.native
     
+    /* CompleteClass */
     var width: Double = js.native
+  }
+  
+  trait Viewport extends StObject {
+    
+    var bottom: Double
+    
+    def hasHorizontalOverlap(region: Region): Boolean
+    
+    def hasVerticalOverlap(region: Region): Boolean
+    
+    var height: Double
+    
+    var intersectionTolerance: Double
+    
+    def intersectsRegion(region: Region): Boolean
+    
+    def invalidate(): Unit
+    
+    var left: Double
+    
+    var outer: HTMLElement
+    
+    var right: Double
+    
+    def setInnerDimensions(dimensions: Dimensions): Unit
+    
+    var top: Double
+    
+    var width: Double
   }
   object Viewport {
     

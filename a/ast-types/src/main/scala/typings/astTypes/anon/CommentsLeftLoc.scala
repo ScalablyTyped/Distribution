@@ -6,19 +6,17 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentsLeftLoc extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var left: IdentifierKind | TSQualifiedNameKind = js.native
+  var left: IdentifierKind | TSQualifiedNameKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var right: IdentifierKind | TSQualifiedNameKind = js.native
+  var right: IdentifierKind | TSQualifiedNameKind
 }
 object CommentsLeftLoc {
   

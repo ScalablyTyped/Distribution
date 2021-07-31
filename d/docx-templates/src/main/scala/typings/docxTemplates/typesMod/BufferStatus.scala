@@ -2,17 +2,15 @@ package typings.docxTemplates.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferStatus extends StObject {
   
-  var cmds: String = js.native
+  var cmds: String
   
-  var fInsertedText: Boolean = js.native
+  var fInsertedText: Boolean
   
-  var text: String = js.native
+  var text: String
 }
 object BufferStatus {
   

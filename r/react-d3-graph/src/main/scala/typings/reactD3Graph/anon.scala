@@ -2,23 +2,21 @@ package typings.reactD3Graph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AlphaTarget extends StObject {
     
-    var alphaTarget: Double = js.native
+    var alphaTarget: Double
     
-    var disableLinkForce: Boolean = js.native
+    var disableLinkForce: Boolean
     
-    var gravity: Double = js.native
+    var gravity: Double
     
-    var linkLength: Double = js.native
+    var linkLength: Double
     
-    var linkStrength: Double = js.native
+    var linkStrength: Double
   }
   object AlphaTarget {
     
@@ -54,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     

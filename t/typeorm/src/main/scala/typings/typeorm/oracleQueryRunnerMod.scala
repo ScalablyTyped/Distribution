@@ -19,7 +19,6 @@ import typings.typeorm.tableUniqueMod.TableUnique
 import typings.typeorm.viewMod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oracleQueryRunnerMod {
@@ -97,7 +96,7 @@ object oracleQueryRunnerMod {
       * Creates/uses database connection from the connection pool to perform further operations.
       * Returns obtained database connection.
       */
-    def connect(): js.Promise[_] = js.native
+    def connect(): js.Promise[js.Any] = js.native
     
     def createCheckConstraint(tableOrName: String, checkConstraint: TableCheck): js.Promise[Unit] = js.native
     /**
@@ -201,28 +200,13 @@ object oracleQueryRunnerMod {
       * Creates a new table.
       */
     def createTable(table: Table): js.Promise[Unit] = js.native
-    def createTable(
-      table: Table,
-      ifNotExist: js.UndefOr[scala.Nothing],
-      createForeignKeys: js.UndefOr[scala.Nothing],
-      createIndices: Boolean
-    ): js.Promise[Unit] = js.native
-    def createTable(table: Table, ifNotExist: js.UndefOr[scala.Nothing], createForeignKeys: Boolean): js.Promise[Unit] = js.native
-    def createTable(
-      table: Table,
-      ifNotExist: js.UndefOr[scala.Nothing],
-      createForeignKeys: Boolean,
-      createIndices: Boolean
-    ): js.Promise[Unit] = js.native
     def createTable(table: Table, ifNotExist: Boolean): js.Promise[Unit] = js.native
-    def createTable(
-      table: Table,
-      ifNotExist: Boolean,
-      createForeignKeys: js.UndefOr[scala.Nothing],
-      createIndices: Boolean
-    ): js.Promise[Unit] = js.native
     def createTable(table: Table, ifNotExist: Boolean, createForeignKeys: Boolean): js.Promise[Unit] = js.native
     def createTable(table: Table, ifNotExist: Boolean, createForeignKeys: Boolean, createIndices: Boolean): js.Promise[Unit] = js.native
+    def createTable(table: Table, ifNotExist: Boolean, createForeignKeys: Unit, createIndices: Boolean): js.Promise[Unit] = js.native
+    def createTable(table: Table, ifNotExist: Unit, createForeignKeys: Boolean): js.Promise[Unit] = js.native
+    def createTable(table: Table, ifNotExist: Unit, createForeignKeys: Boolean, createIndices: Boolean): js.Promise[Unit] = js.native
+    def createTable(table: Table, ifNotExist: Unit, createForeignKeys: Unit, createIndices: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Builds and returns SQL for create table.
@@ -267,7 +251,7 @@ object oracleQueryRunnerMod {
     /**
       * Promise used to obtain a database connection for a first time.
       */
-    var databaseConnectionPromise: js.Promise[_] = js.native
+    var databaseConnectionPromise: js.Promise[js.Any] = js.native
     
     /* protected */ def deleteViewDefinitionSql(viewOrPath: String): Query = js.native
     /**
@@ -418,33 +402,18 @@ object oracleQueryRunnerMod {
       * If schema path passed, it will drop schema in specified database.
       */
     def dropSchema(schemaPath: String): js.Promise[Unit] = js.native
-    def dropSchema(schemaPath: String, ifExist: js.UndefOr[scala.Nothing], isCascade: Boolean): js.Promise[Unit] = js.native
     def dropSchema(schemaPath: String, ifExist: Boolean): js.Promise[Unit] = js.native
     def dropSchema(schemaPath: String, ifExist: Boolean, isCascade: Boolean): js.Promise[Unit] = js.native
+    def dropSchema(schemaPath: String, ifExist: Unit, isCascade: Boolean): js.Promise[Unit] = js.native
     
     def dropTable(tableOrName: String): js.Promise[Unit] = js.native
-    def dropTable(
-      tableOrName: String,
-      ifExist: js.UndefOr[scala.Nothing],
-      dropForeignKeys: js.UndefOr[scala.Nothing],
-      dropIndices: Boolean
-    ): js.Promise[Unit] = js.native
-    def dropTable(tableOrName: String, ifExist: js.UndefOr[scala.Nothing], dropForeignKeys: Boolean): js.Promise[Unit] = js.native
-    def dropTable(
-      tableOrName: String,
-      ifExist: js.UndefOr[scala.Nothing],
-      dropForeignKeys: Boolean,
-      dropIndices: Boolean
-    ): js.Promise[Unit] = js.native
     def dropTable(tableOrName: String, ifExist: Boolean): js.Promise[Unit] = js.native
-    def dropTable(
-      tableOrName: String,
-      ifExist: Boolean,
-      dropForeignKeys: js.UndefOr[scala.Nothing],
-      dropIndices: Boolean
-    ): js.Promise[Unit] = js.native
     def dropTable(tableOrName: String, ifExist: Boolean, dropForeignKeys: Boolean): js.Promise[Unit] = js.native
     def dropTable(tableOrName: String, ifExist: Boolean, dropForeignKeys: Boolean, dropIndices: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: String, ifExist: Boolean, dropForeignKeys: Unit, dropIndices: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: String, ifExist: Unit, dropForeignKeys: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: String, ifExist: Unit, dropForeignKeys: Boolean, dropIndices: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: String, ifExist: Unit, dropForeignKeys: Unit, dropIndices: Boolean): js.Promise[Unit] = js.native
     /**
       * Drops the table.
       */
@@ -452,28 +421,13 @@ object oracleQueryRunnerMod {
       * Drops a table.
       */
     def dropTable(tableOrName: Table): js.Promise[Unit] = js.native
-    def dropTable(
-      tableOrName: Table,
-      ifExist: js.UndefOr[scala.Nothing],
-      dropForeignKeys: js.UndefOr[scala.Nothing],
-      dropIndices: Boolean
-    ): js.Promise[Unit] = js.native
-    def dropTable(tableOrName: Table, ifExist: js.UndefOr[scala.Nothing], dropForeignKeys: Boolean): js.Promise[Unit] = js.native
-    def dropTable(
-      tableOrName: Table,
-      ifExist: js.UndefOr[scala.Nothing],
-      dropForeignKeys: Boolean,
-      dropIndices: Boolean
-    ): js.Promise[Unit] = js.native
     def dropTable(tableOrName: Table, ifExist: Boolean): js.Promise[Unit] = js.native
-    def dropTable(
-      tableOrName: Table,
-      ifExist: Boolean,
-      dropForeignKeys: js.UndefOr[scala.Nothing],
-      dropIndices: Boolean
-    ): js.Promise[Unit] = js.native
     def dropTable(tableOrName: Table, ifExist: Boolean, dropForeignKeys: Boolean): js.Promise[Unit] = js.native
     def dropTable(tableOrName: Table, ifExist: Boolean, dropForeignKeys: Boolean, dropIndices: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: Table, ifExist: Boolean, dropForeignKeys: Unit, dropIndices: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: Table, ifExist: Unit, dropForeignKeys: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: Table, ifExist: Unit, dropForeignKeys: Boolean, dropIndices: Boolean): js.Promise[Unit] = js.native
+    def dropTable(tableOrName: Table, ifExist: Unit, dropForeignKeys: Unit, dropIndices: Boolean): js.Promise[Unit] = js.native
     
     /* protected */ def dropTableSql(tableOrName: String): Query = js.native
     /* protected */ def dropTableSql(tableOrName: String, ifExist: Boolean): Query = js.native
@@ -626,18 +580,13 @@ object oracleQueryRunnerMod {
       * Returns raw data stream.
       */
     def stream(query: String): js.Promise[ReadStream] = js.native
-    def stream(
-      query: String,
-      parameters: js.UndefOr[scala.Nothing],
-      onEnd: js.UndefOr[scala.Nothing],
-      onError: js.Function
-    ): js.Promise[ReadStream] = js.native
-    def stream(query: String, parameters: js.UndefOr[scala.Nothing], onEnd: js.Function): js.Promise[ReadStream] = js.native
-    def stream(query: String, parameters: js.UndefOr[scala.Nothing], onEnd: js.Function, onError: js.Function): js.Promise[ReadStream] = js.native
-    def stream(query: String, parameters: js.Array[_]): js.Promise[ReadStream] = js.native
-    def stream(query: String, parameters: js.Array[_], onEnd: js.UndefOr[scala.Nothing], onError: js.Function): js.Promise[ReadStream] = js.native
-    def stream(query: String, parameters: js.Array[_], onEnd: js.Function): js.Promise[ReadStream] = js.native
-    def stream(query: String, parameters: js.Array[_], onEnd: js.Function, onError: js.Function): js.Promise[ReadStream] = js.native
+    def stream(query: String, parameters: js.Array[js.Any]): js.Promise[ReadStream] = js.native
+    def stream(query: String, parameters: js.Array[js.Any], onEnd: js.Function): js.Promise[ReadStream] = js.native
+    def stream(query: String, parameters: js.Array[js.Any], onEnd: js.Function, onError: js.Function): js.Promise[ReadStream] = js.native
+    def stream(query: String, parameters: js.Array[js.Any], onEnd: Unit, onError: js.Function): js.Promise[ReadStream] = js.native
+    def stream(query: String, parameters: Unit, onEnd: js.Function): js.Promise[ReadStream] = js.native
+    def stream(query: String, parameters: Unit, onEnd: js.Function, onError: js.Function): js.Promise[ReadStream] = js.native
+    def stream(query: String, parameters: Unit, onEnd: Unit, onError: js.Function): js.Promise[ReadStream] = js.native
     
     def updatePrimaryKeys(tableOrName: String, columns: js.Array[TableColumn]): js.Promise[Unit] = js.native
     /**

@@ -6,28 +6,37 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.MonoTypeOperatorFunction
 import typings.rxjs.typesMod.PartialObserver
 import typings.rxjs.typesMod.SchedulerLike
+import typings.rxjs.typesMod.TeardownLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observeOnMod {
   
+  @JSImport("rxjs/internal/operators/observeOn", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("rxjs/internal/operators/observeOn", "ObserveOnMessage")
   @js.native
   class ObserveOnMessage protected () extends StObject {
-    def this(notification: Notification[_], destination: PartialObserver[_]) = this()
+    def this(notification: Notification[js.Any], destination: PartialObserver[js.Any]) = this()
     
-    var destination: PartialObserver[_] = js.native
+    var destination: PartialObserver[js.Any] = js.native
     
-    var notification: Notification[_] = js.native
+    var notification: Notification[js.Any] = js.native
   }
   
   @JSImport("rxjs/internal/operators/observeOn", "ObserveOnOperator")
   @js.native
-  class ObserveOnOperator[T] protected () extends Operator[T, T] {
+  class ObserveOnOperator[T] protected ()
+    extends StObject
+       with Operator[T, T] {
     def this(scheduler: SchedulerLike) = this()
     def this(scheduler: SchedulerLike, delay: Double) = this()
+    
+    /* CompleteClass */
+    override def call(subscriber: Subscriber[T], source: js.Any): TeardownLogic = js.native
     
     var delay: js.Any = js.native
     
@@ -49,16 +58,17 @@ object observeOnMod {
   /* static members */
   object ObserveOnSubscriber {
     
-    /** @nocollapse */
-    @JSImport("rxjs/internal/operators/observeOn", "ObserveOnSubscriber.dispatch")
+    @JSImport("rxjs/internal/operators/observeOn", "ObserveOnSubscriber")
     @js.native
-    def dispatch(arg: ObserveOnMessage): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /** @nocollapse */
+    @scala.inline
+    def dispatch(arg: ObserveOnMessage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("rxjs/internal/operators/observeOn", "observeOn")
-  @js.native
-  def observeOn[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/observeOn", "observeOn")
-  @js.native
-  def observeOn[T](scheduler: SchedulerLike, delay: Double): MonoTypeOperatorFunction[T] = js.native
+  @scala.inline
+  def observeOn[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def observeOn[T](scheduler: SchedulerLike, delay: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
 }

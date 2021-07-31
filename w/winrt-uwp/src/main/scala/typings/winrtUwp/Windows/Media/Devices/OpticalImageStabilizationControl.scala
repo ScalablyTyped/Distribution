@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Media.Devices
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** When supported, allows an app to enable optical image stabilization on the capture device. */
-@js.native
 trait OpticalImageStabilizationControl extends StObject {
   
   /** Gets or sets a value indicating the current optical image stabilization mode of the capture device. */
-  var mode: OpticalImageStabilizationMode = js.native
+  var mode: OpticalImageStabilizationMode
   
   /** Gets a value that indicates if the capture device supports the OpticalImageStabilizationControl . */
-  var supported: Boolean = js.native
+  var supported: Boolean
   
   /** Gets the list of OpticalImageStabilizationMode values indicating the modes supported by the capture device. */
-  var supportedModes: IVectorView[OpticalImageStabilizationMode] = js.native
+  var supportedModes: IVectorView[OpticalImageStabilizationMode]
 }
 object OpticalImageStabilizationControl {
   

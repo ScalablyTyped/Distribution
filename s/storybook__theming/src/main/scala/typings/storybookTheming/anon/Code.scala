@@ -2,31 +2,29 @@ package typings.storybookTheming.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var l1: Double = js.native
+  var l1: Double
   
-  var l2: Double = js.native
+  var l2: Double
   
-  var l3: Double = js.native
+  var l3: Double
   
-  var m1: Double = js.native
+  var m1: Double
   
-  var m2: Double = js.native
+  var m2: Double
   
-  var m3: Double = js.native
+  var m3: Double
   
-  var s1: Double = js.native
+  var s1: Double
   
-  var s2: Double = js.native
+  var s2: Double
   
-  var s3: Double = js.native
+  var s3: Double
 }
 object Code {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetPoolsRemoveHealthCheckRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait TargetPoolsRemoveHealthCheckRequest extends StObject {
     * - projects/project/global/httpHealthChecks/health-check
     * - global/httpHealthChecks/health-check
     */
-  var healthChecks: js.UndefOr[js.Array[HealthCheckReference]] = js.native
+  var healthChecks: js.UndefOr[js.Array[HealthCheckReference]] = js.undefined
 }
 object TargetPoolsRemoveHealthCheckRequest {
   

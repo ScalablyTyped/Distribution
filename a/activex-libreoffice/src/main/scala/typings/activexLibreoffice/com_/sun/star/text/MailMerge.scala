@@ -17,16 +17,15 @@ import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Gives access to mail merge functionality.
   * @since OOo 1.1.2
   */
-@js.native
 trait MailMerge
-  extends XJob
+  extends StObject
+     with XJob
      with XCancellable
      with XPropertySet
      with XMailMergeBroadcaster
@@ -38,7 +37,7 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var AddressFromColumn: String = js.native
+  var AddressFromColumn: String
   
   /**
     * contains the name of the document filter to save the attached mail merge document. This property is only valid if "SendAsAttachment" is set to `TRUE`
@@ -47,7 +46,7 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var AttachmentFilter: String = js.native
+  var AttachmentFilter: String
   
   /**
     * contains the name of the attachment. This property is only valid if "SendAsAttachment" is set to `TRUE` .
@@ -55,13 +54,13 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var AttachmentName: String = js.native
+  var AttachmentName: String
   
   /**
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var BlindCopiesTo: SafeArray[String] = js.native
+  var BlindCopiesTo: SafeArray[String]
   
   /**
     * contains a list of e-Mail addresses to
@@ -69,21 +68,21 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var CopiesTo: SafeArray[String] = js.native
+  var CopiesTo: SafeArray[String]
   
   /**
     * contains the URL of a text document that is to be processed.
     *
     * If this property is not set an empty document is created.
     */
-  var DocumentURL: String = js.native
+  var DocumentURL: String
   
   /**
     * determines whether file names of created files are generated using the content of a database column.
     *
     * This property is only evaluated for file output.
     */
-  var FileNameFromColumn: Boolean = js.native
+  var FileNameFromColumn: Boolean
   
   /**
     * contains the name of the column to generate the output file names.
@@ -94,7 +93,7 @@ trait MailMerge
     *
     * This property is only evaluated for file output.
     */
-  var FileNamePrefix: String = js.native
+  var FileNamePrefix: String
   
   /**
     * Contains the password of the incoming mail server. It is necessary to set this if the mail server configuration is set to "SMTP after POP"
@@ -103,7 +102,7 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var InServerPassword: String = js.native
+  var InServerPassword: String
   
   /**
     * contains the text of the mail body. This property is only valid if the property "SendAsAttachment" is set to `TRUE`
@@ -111,14 +110,14 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var MailBody: String = js.native
+  var MailBody: String
   
   /**
     * provides access to the model of the document to be processed.
     *
     * This property will automatically be set to the documents model if a document URL was set.
     */
-  var Model: XModel = js.native
+  var Model: XModel
   
   /**
     * Contains the password of the outgoing mail server. It is necessary to set this if the password is not already stored in the configuration for security
@@ -127,13 +126,13 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var OutServerPassword: String = js.native
+  var OutServerPassword: String
   
   /**
     * determines the destination of the mail merge action.
     * @see com.sun.star.text.MailMergeType
     */
-  var OutputType: Double = js.native
+  var OutputType: Double
   
   /**
     * contains the path where generated files are created.
@@ -142,7 +141,7 @@ trait MailMerge
     *
     * This property is only evaluated for file output.
     */
-  var OutputURL: String = js.native
+  var OutputURL: String
   
   /**
     * contains the properties that are defined in < {@link com.sun.star.view.PrintOptions} >.
@@ -150,7 +149,7 @@ trait MailMerge
     * This property is only evaluated for printer output.
     * @since OOo 2.0
     */
-  var PrintOptions: SafeArray[PropertyValue] = js.native
+  var PrintOptions: SafeArray[PropertyValue]
   
   /**
     * determines that the output of the mail merge is save in one single file.
@@ -158,7 +157,7 @@ trait MailMerge
     * This property is only evaluated for file output.
     * @since OOo 2.0
     */
-  var SaveAsSingleFile: Boolean = js.native
+  var SaveAsSingleFile: Boolean
   
   /**
     * contains the name of the document filter to save the output file(s).
@@ -166,7 +165,7 @@ trait MailMerge
     * This property is only evaluated for file output.
     * @since OOo 2.0
     */
-  var SaveFilter: String = js.native
+  var SaveFilter: String
   
   /**
     * determines that the created mail merge document is sent as attachment.
@@ -174,7 +173,7 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var SendAsAttachment: Boolean = js.native
+  var SendAsAttachment: Boolean
   
   /**
     * determines that the created mail merge document is sent as body in HTML format. This property is only valid if the property "SendAsAttachment" is set
@@ -183,14 +182,14 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var SendAsHTML: Boolean = js.native
+  var SendAsHTML: Boolean
   
   /**
     * determines whether single print jobs will be generated per output document.
     *
     * This property is only evaluated for printer output.
     */
-  var SinglePrintJobs: Boolean = js.native
+  var SinglePrintJobs: Boolean
   
   /**
     * contains the subject of the e-Mail message.
@@ -198,7 +197,7 @@ trait MailMerge
     * This property is only evaluated for e-Mail output.
     * @since OOo 2.0
     */
-  var Subject: String = js.native
+  var Subject: String
 }
 object MailMerge {
   
@@ -238,7 +237,7 @@ object MailMerge {
     ResultSet: XResultSet,
     SaveAsSingleFile: Boolean,
     SaveFilter: String,
-    Selection: SafeArray[_],
+    Selection: SafeArray[js.Any],
     SendAsAttachment: Boolean,
     SendAsHTML: Boolean,
     SinglePrintJobs: Boolean,

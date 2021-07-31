@@ -3,15 +3,13 @@ package typings.angularPlatformBrowser
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AppId extends StObject {
     
-    var appId: String = js.native
+    var appId: String
   }
   object AppId {
     
@@ -29,24 +27,23 @@ object anon {
     }
   }
   
-  @js.native
   trait CssProps extends StObject {
     
-    var cssProps: js.UndefOr[js.Any] = js.native
+    var cssProps: js.UndefOr[js.Any] = js.undefined
     
-    var domEvents: js.UndefOr[Boolean] = js.native
+    var domEvents: js.UndefOr[Boolean] = js.undefined
     
-    var enable: js.UndefOr[Boolean | (js.Function1[/* manager */ js.Any, Boolean])] = js.native
+    var enable: js.UndefOr[Boolean | (js.Function1[/* manager */ js.Any, Boolean])] = js.undefined
     
-    var inputClass: js.UndefOr[js.Any] = js.native
+    var inputClass: js.UndefOr[js.Any] = js.undefined
     
-    var inputTarget: js.UndefOr[EventTarget] = js.native
+    var inputTarget: js.UndefOr[EventTarget] = js.undefined
     
-    var preset: js.UndefOr[js.Array[_]] = js.native
+    var preset: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var recognizers: js.UndefOr[js.Array[_]] = js.native
+    var recognizers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var touchAction: js.UndefOr[String] = js.native
+    var touchAction: js.UndefOr[String] = js.undefined
   }
   object CssProps {
     
@@ -93,7 +90,7 @@ object anon {
       def setInputTargetUndefined: Self = StObject.set(x, "inputTarget", js.undefined)
       
       @scala.inline
-      def setPreset(value: js.Array[_]): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      def setPreset(value: js.Array[js.Any]): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
@@ -102,7 +99,7 @@ object anon {
       def setPresetVarargs(value: js.Any*): Self = StObject.set(x, "preset", js.Array(value :_*))
       
       @scala.inline
-      def setRecognizers(value: js.Array[_]): Self = StObject.set(x, "recognizers", value.asInstanceOf[js.Any])
+      def setRecognizers(value: js.Array[js.Any]): Self = StObject.set(x, "recognizers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRecognizersUndefined: Self = StObject.set(x, "recognizers", js.undefined)
@@ -118,12 +115,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DomEventName extends StObject {
     
-    var domEventName: String = js.native
+    var domEventName: String
     
-    var fullKey: String = js.native
+    var fullKey: String
   }
   object DomEventName {
     

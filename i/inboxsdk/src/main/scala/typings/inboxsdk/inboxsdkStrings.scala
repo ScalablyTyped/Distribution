@@ -7,18 +7,21 @@ import typings.inboxsdk.mod.Toolbars.SectionNames
 import typings.inboxsdk.mod.Toolbars.ToolbarButtonPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inboxsdkStrings {
   
   @js.native
-  sealed trait CHAT extends RouteTypes
+  sealed trait CHAT
+    extends StObject
+       with RouteTypes
   @scala.inline
   def CHAT: CHAT = "CHAT".asInstanceOf[CHAT]
   
   @js.native
-  sealed trait COLLAPSED extends MessageViewViewStates
+  sealed trait COLLAPSED
+    extends StObject
+       with MessageViewViewStates
   @scala.inline
   def COLLAPSED: COLLAPSED = "COLLAPSED".asInstanceOf[COLLAPSED]
   
@@ -28,7 +31,9 @@ object inboxsdkStrings {
   def CREATE: CREATE = "CREATE".asInstanceOf[CREATE]
   
   @js.native
-  sealed trait CUSTOM extends RouteTypes
+  sealed trait CUSTOM
+    extends StObject
+       with RouteTypes
   @scala.inline
   def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   
@@ -38,12 +43,16 @@ object inboxsdkStrings {
   def DROPDOWN_BUTTON: DROPDOWN_BUTTON = "DROPDOWN_BUTTON".asInstanceOf[DROPDOWN_BUTTON]
   
   @js.native
-  sealed trait EXPANDED extends MessageViewViewStates
+  sealed trait EXPANDED
+    extends StObject
+       with MessageViewViewStates
   @scala.inline
   def EXPANDED: EXPANDED = "EXPANDED".asInstanceOf[EXPANDED]
   
   @js.native
-  sealed trait HIDDEN extends MessageViewViewStates
+  sealed trait HIDDEN
+    extends StObject
+       with MessageViewViewStates
   @scala.inline
   def HIDDEN: HIDDEN = "HIDDEN".asInstanceOf[HIDDEN]
   
@@ -53,24 +62,31 @@ object inboxsdkStrings {
   def ICON_BUTTON: ICON_BUTTON = "ICON_BUTTON".asInstanceOf[ICON_BUTTON]
   
   @js.native
-  sealed trait INBOX_STATE extends SectionNames
+  sealed trait INBOX_STATE
+    extends StObject
+       with SectionNames
   @scala.inline
   def INBOX_STATE: INBOX_STATE = "INBOX_STATE".asInstanceOf[INBOX_STATE]
   
   @js.native
-  sealed trait LINK extends NavItemTypes
+  sealed trait LINK
+    extends StObject
+       with NavItemTypes
   @scala.inline
   def LINK: LINK = "LINK".asInstanceOf[LINK]
   
   @js.native
   sealed trait LIST
-    extends RouteTypes
+    extends StObject
+       with RouteTypes
        with ToolbarButtonPosition
   @scala.inline
   def LIST: LIST = "LIST".asInstanceOf[LIST]
   
   @js.native
-  sealed trait METADATA_STATE extends SectionNames
+  sealed trait METADATA_STATE
+    extends StObject
+       with SectionNames
   @scala.inline
   def METADATA_STATE: METADATA_STATE = "METADATA_STATE".asInstanceOf[METADATA_STATE]
   
@@ -85,12 +101,16 @@ object inboxsdkStrings {
   def MORE: MORE = "MORE".asInstanceOf[MORE]
   
   @js.native
-  sealed trait NAVIGATION extends NavItemTypes
+  sealed trait NAVIGATION
+    extends StObject
+       with NavItemTypes
   @scala.inline
   def NAVIGATION: NAVIGATION = "NAVIGATION".asInstanceOf[NAVIGATION]
   
   @js.native
-  sealed trait OTHER extends SectionNames
+  sealed trait OTHER
+    extends StObject
+       with SectionNames
   @scala.inline
   def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
@@ -100,7 +120,9 @@ object inboxsdkStrings {
   def PRIMARY_ACTION: PRIMARY_ACTION = "PRIMARY_ACTION".asInstanceOf[PRIMARY_ACTION]
   
   @js.native
-  sealed trait ROW extends ToolbarButtonPosition
+  sealed trait ROW
+    extends StObject
+       with ToolbarButtonPosition
   @scala.inline
   def ROW: ROW = "ROW".asInstanceOf[ROW]
   
@@ -115,19 +137,24 @@ object inboxsdkStrings {
   def SEND_ACTION: SEND_ACTION = "SEND_ACTION".asInstanceOf[SEND_ACTION]
   
   @js.native
-  sealed trait SETTINGS extends RouteTypes
+  sealed trait SETTINGS
+    extends StObject
+       with RouteTypes
   @scala.inline
   def SETTINGS: SETTINGS = "SETTINGS".asInstanceOf[SETTINGS]
   
   @js.native
   sealed trait THREAD
-    extends RouteTypes
+    extends StObject
+       with RouteTypes
        with ToolbarButtonPosition
   @scala.inline
   def THREAD: THREAD = "THREAD".asInstanceOf[THREAD]
   
   @js.native
-  sealed trait UNKNOWN extends RouteTypes
+  sealed trait UNKNOWN
+    extends StObject
+       with RouteTypes
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1beta1PriorityClassMod {
@@ -26,7 +25,7 @@ object v1beta1PriorityClassMod {
       */
     def this(name: String) = this()
     def this(name: String, args: PriorityClassArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PriorityClassArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -67,6 +66,10 @@ object v1beta1PriorityClassMod {
   /* static members */
   object PriorityClass {
     
+    @JSImport("@pulumi/kubernetes/scheduling/v1beta1/priorityClass", "PriorityClass")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PriorityClass resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -75,59 +78,55 @@ object v1beta1PriorityClassMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1/priorityClass", "PriorityClass.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PriorityClass = js.native
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1/priorityClass", "PriorityClass.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): PriorityClass = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PriorityClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PriorityClass]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): PriorityClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PriorityClass]
     
     /**
       * Returns true if the given object is an instance of PriorityClass.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1/priorityClass", "PriorityClass.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClass.PriorityClass */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClass.PriorityClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClass.PriorityClass */ Boolean]
   }
   
-  @js.native
   trait PriorityClassArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[schedulingDotk8sDotioSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[schedulingDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * description is an arbitrary string that usually provides guidelines on when this priority class should be used.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * globalDefault specifies whether this PriorityClass should be considered as the default priority for pods that do not have any priority class. Only one PriorityClass can be marked as `globalDefault`. However, if more than one PriorityClasses exists with their `globalDefault` field set to true, the smallest value of such global default PriorityClasses will be used as the default priority.
       */
-    val globalDefault: js.UndefOr[Input[Boolean]] = js.native
+    val globalDefault: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PriorityClass]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PriorityClass]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is beta-level, gated by the NonPreemptingPriority feature-gate.
       */
-    val preemptionPolicy: js.UndefOr[Input[String]] = js.native
+    val preemptionPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value of this priority class. This is the actual priority that pods receive when they have the name of this class in their pod spec.
       */
-    val value: Input[Double] = js.native
+    val value: Input[Double]
   }
   object PriorityClassArgs {
     

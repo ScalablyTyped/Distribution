@@ -3,15 +3,13 @@ package typings.stylableCore.anon
 import typings.stylableCore.stylableValueParsersMod.ExtendsValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ast extends StObject {
   
-  var ast: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify postcssValueParser.ParsedValue */ js.Any = js.native
+  var ast: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify postcssValueParser.ParsedValue */ js.Any
   
-  var types: js.Array[ExtendsValue] = js.native
+  var types: js.Array[ExtendsValue]
 }
 object Ast {
   

@@ -11,8 +11,8 @@ Get the MD5-sum of a given file, with low memory usage, even on huge files.
 | Full name          | md5-file |
 | Keywords           | md5, md5sum, checksum |
 | # releases         | 2 |
-| # dependents       | 448 |
-| # downloads        | 37421869 |
+| # dependents       | 487 |
+| # downloads        | 46665635 |
 | # stars            | 17 |
 
 ## Links

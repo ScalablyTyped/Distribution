@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.networkfirewall
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfigurationLoggingConfiguration extends StObject {
   
   /**
     * Set of configuration blocks describing the logging details for a firewall. See Log Destination Config below for details. At most, only two blocks can be specified; one for `FLOW` logs and one for `ALERT` logs.
     */
-  var logDestinationConfigs: Input[js.Array[Input[LoggingConfigurationLoggingConfigurationLogDestinationConfig]]] = js.native
+  var logDestinationConfigs: Input[js.Array[Input[LoggingConfigurationLoggingConfigurationLogDestinationConfig]]]
 }
 object LoggingConfigurationLoggingConfiguration {
   

@@ -4,7 +4,6 @@ import typings.googleGax.anon.Encode
 import typings.googleGax.grpcMod.GrpcClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "GrpcClient")
@@ -30,9 +29,12 @@ class GrpcClient ()
 /* static members */
 object GrpcClient {
   
-  @JSImport("google-gax", "GrpcClient._resolveFile")
+  @JSImport("google-gax", "GrpcClient")
   @js.native
-  def _resolveFile(protoPath: String, filename: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def _resolveFile(protoPath: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_resolveFile")(protoPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Creates a 'bytelength' function for a given proto message class.
@@ -44,7 +46,6 @@ object GrpcClient {
     * @return {function(Object):number} - a function to compute the byte length
     *   for an object.
     */
-  @JSImport("google-gax", "GrpcClient.createByteLengthFunction")
-  @js.native
-  def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = js.native
+  @scala.inline
+  def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
 }

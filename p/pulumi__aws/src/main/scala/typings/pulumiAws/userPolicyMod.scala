@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userPolicyMod {
@@ -49,6 +48,10 @@ object userPolicyMod {
   /* static members */
   object UserPolicy {
     
+    @JSImport("@pulumi/aws/iam/userPolicy", "UserPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,50 +61,44 @@ object userPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/userPolicy", "UserPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserPolicy = js.native
-    @JSImport("@pulumi/aws/iam/userPolicy", "UserPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserPolicy = js.native
-    @JSImport("@pulumi/aws/iam/userPolicy", "UserPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPolicyState): UserPolicy = js.native
-    @JSImport("@pulumi/aws/iam/userPolicy", "UserPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPolicyState, opts: CustomResourceOptions): UserPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPolicyState): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPolicyState, opts: CustomResourceOptions): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
     
     /**
       * Returns true if the given object is an instance of UserPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/userPolicy", "UserPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ Boolean]
   }
   
-  @js.native
   trait UserPolicyArgs extends StObject {
     
     /**
       * The name of the policy. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy document. This is a JSON formatted string.
       */
-    val policy: Input[String | PolicyDocument] = js.native
+    val policy: Input[String | PolicyDocument]
     
     /**
       * IAM user to which to attach this policy.
       */
-    val user: Input[String] = js.native
+    val user: Input[String]
   }
   object UserPolicyArgs {
     
@@ -134,28 +131,27 @@ object userPolicyMod {
     }
   }
   
-  @js.native
   trait UserPolicyState extends StObject {
     
     /**
       * The name of the policy. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The policy document. This is a JSON formatted string.
       */
-    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
     
     /**
       * IAM user to which to attach this policy.
       */
-    val user: js.UndefOr[Input[String]] = js.native
+    val user: js.UndefOr[Input[String]] = js.undefined
   }
   object UserPolicyState {
     

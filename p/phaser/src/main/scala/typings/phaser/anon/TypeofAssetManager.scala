@@ -2,17 +2,15 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofAssetManager extends StObject {
   
   /* static member */
-  var downloadBinary: js.Any = js.native
+  var downloadBinary: js.Any
   
   /* static member */
-  var downloadText: js.Any = js.native
+  var downloadText: js.Any
 }
 object TypeofAssetManager {
   

@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionOriginGroup extends StObject {
   
   /**
     * The failover criteria for when to failover to the secondary origin
     */
-  var failoverCriteria: Input[DistributionOriginGroupFailoverCriteria] = js.native
+  var failoverCriteria: Input[DistributionOriginGroupFailoverCriteria]
   
   /**
     * Ordered member configuration blocks assigned to the origin group, where the first member is the primary origin. You must specify two members.
     */
-  var members: Input[js.Array[Input[DistributionOriginGroupMember]]] = js.native
+  var members: Input[js.Array[Input[DistributionOriginGroupMember]]]
   
   /**
     * The unique identifier of the member origin
     */
-  var originId: Input[String] = js.native
+  var originId: Input[String]
 }
 object DistributionOriginGroup {
   

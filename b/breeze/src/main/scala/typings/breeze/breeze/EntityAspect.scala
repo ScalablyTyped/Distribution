@@ -2,7 +2,6 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -37,17 +36,13 @@ trait EntityAspect extends StObject {
   def isNavigationPropertyLoaded(navigationProperty: NavigationProperty): Boolean = js.native
   
   def loadNavigationProperty(navigationProperty: String): js.Promise[QueryResult] = js.native
-  def loadNavigationProperty(navigationProperty: String, callback: js.UndefOr[scala.Nothing], errorCallback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: String, callback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: String, callback: js.Function, errorCallback: js.Function): js.Promise[QueryResult] = js.native
+  def loadNavigationProperty(navigationProperty: String, callback: Unit, errorCallback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty): js.Promise[QueryResult] = js.native
-  def loadNavigationProperty(
-    navigationProperty: NavigationProperty,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function
-  ): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty, callback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty, callback: js.Function, errorCallback: js.Function): js.Promise[QueryResult] = js.native
+  def loadNavigationProperty(navigationProperty: NavigationProperty, callback: Unit, errorCallback: js.Function): js.Promise[QueryResult] = js.native
   
   var originalValues: js.Object = js.native
   

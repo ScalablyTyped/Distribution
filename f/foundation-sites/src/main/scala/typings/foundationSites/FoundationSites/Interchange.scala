@@ -2,16 +2,14 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/interchange.html#javascript-reference
-@js.native
 trait Interchange extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def replace(path: String): Unit = js.native
+  def replace(path: String): Unit
 }
 object Interchange {
   

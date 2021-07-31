@@ -23,31 +23,29 @@ import typings.reactAdal.reactAdalStrings.adalDottokenDotrenewDotstatus
 import typings.reactAdal.reactAdalStrings.adalDotusername
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `0`: ERRORColon = js.native
+    var `0`: ERRORColon
     
-    var `1`: WARNINGColon = js.native
+    var `1`: WARNINGColon
     
-    var `2`: INFOColon = js.native
+    var `2`: INFOColon
     
-    var `3`: VERBOSEColon = js.native
+    var `3`: VERBOSEColon
   }
   object `0` {
     
     @scala.inline
-    def apply(`0`: ERRORColon, `1`: WARNINGColon, `2`: INFOColon, `3`: VERBOSEColon): `0` = {
+    def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-      __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-      __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
-      __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+      __obj.updateDynamic("0")("ERROR:")
+      __obj.updateDynamic("1")("WARNING:")
+      __obj.updateDynamic("2")("INFO:")
+      __obj.updateDynamic("3")("VERBOSE:")
       __obj.asInstanceOf[`0`]
     }
     
@@ -68,57 +66,41 @@ object anon {
     }
   }
   
-  @js.native
   trait ACCESSTOKENKEY extends StObject {
     
-    var ACCESS_TOKEN_KEY: adalDotaccessDottokenDotkey = js.native
+    var ACCESS_TOKEN_KEY: adalDotaccessDottokenDotkey
     
-    var ERROR: adalDoterror = js.native
+    var ERROR: adalDoterror
     
-    var ERROR_DESCRIPTION: adalDoterrorDotdescription = js.native
+    var ERROR_DESCRIPTION: adalDoterrorDotdescription
     
-    var EXPIRATION_KEY: adalDotexpirationDotkey = js.native
+    var EXPIRATION_KEY: adalDotexpirationDotkey
     
-    var IDTOKEN: adalDotidtoken = js.native
+    var IDTOKEN: adalDotidtoken
     
-    var LOGIN_ERROR: adalDotloginDoterror = js.native
+    var LOGIN_ERROR: adalDotloginDoterror
     
-    var LOGIN_REQUEST: adalDotloginDotrequest = js.native
+    var LOGIN_REQUEST: adalDotloginDotrequest
     
-    var NONCE_IDTOKEN: adalDotnonceDotidtoken = js.native
+    var NONCE_IDTOKEN: adalDotnonceDotidtoken
     
-    var RENEW_STATUS: adalDottokenDotrenewDotstatus = js.native
+    var RENEW_STATUS: adalDottokenDotrenewDotstatus
     
-    var SESSION_STATE: adalDotsessionDotstate = js.native
+    var SESSION_STATE: adalDotsessionDotstate
     
-    var STATE_LOGIN: adalDotstateDotlogin = js.native
+    var STATE_LOGIN: adalDotstateDotlogin
     
-    var STATE_RENEW: adalDotstateDotrenew = js.native
+    var STATE_RENEW: adalDotstateDotrenew
     
-    var TOKEN_KEYS: adalDottokenDotkeys = js.native
+    var TOKEN_KEYS: adalDottokenDotkeys
     
-    var USERNAME: adalDotusername = js.native
+    var USERNAME: adalDotusername
   }
   object ACCESSTOKENKEY {
     
     @scala.inline
-    def apply(
-      ACCESS_TOKEN_KEY: adalDotaccessDottokenDotkey,
-      ERROR: adalDoterror,
-      ERROR_DESCRIPTION: adalDoterrorDotdescription,
-      EXPIRATION_KEY: adalDotexpirationDotkey,
-      IDTOKEN: adalDotidtoken,
-      LOGIN_ERROR: adalDotloginDoterror,
-      LOGIN_REQUEST: adalDotloginDotrequest,
-      NONCE_IDTOKEN: adalDotnonceDotidtoken,
-      RENEW_STATUS: adalDottokenDotrenewDotstatus,
-      SESSION_STATE: adalDotsessionDotstate,
-      STATE_LOGIN: adalDotstateDotlogin,
-      STATE_RENEW: adalDotstateDotrenew,
-      TOKEN_KEYS: adalDottokenDotkeys,
-      USERNAME: adalDotusername
-    ): ACCESSTOKENKEY = {
-      val __obj = js.Dynamic.literal(ACCESS_TOKEN_KEY = ACCESS_TOKEN_KEY.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], ERROR_DESCRIPTION = ERROR_DESCRIPTION.asInstanceOf[js.Any], EXPIRATION_KEY = EXPIRATION_KEY.asInstanceOf[js.Any], IDTOKEN = IDTOKEN.asInstanceOf[js.Any], LOGIN_ERROR = LOGIN_ERROR.asInstanceOf[js.Any], LOGIN_REQUEST = LOGIN_REQUEST.asInstanceOf[js.Any], NONCE_IDTOKEN = NONCE_IDTOKEN.asInstanceOf[js.Any], RENEW_STATUS = RENEW_STATUS.asInstanceOf[js.Any], SESSION_STATE = SESSION_STATE.asInstanceOf[js.Any], STATE_LOGIN = STATE_LOGIN.asInstanceOf[js.Any], STATE_RENEW = STATE_RENEW.asInstanceOf[js.Any], TOKEN_KEYS = TOKEN_KEYS.asInstanceOf[js.Any], USERNAME = USERNAME.asInstanceOf[js.Any])
+    def apply(): ACCESSTOKENKEY = {
+      val __obj = js.Dynamic.literal(ACCESS_TOKEN_KEY = "adal.access.token.key", ERROR = "adal.error", ERROR_DESCRIPTION = "adal.error.description", EXPIRATION_KEY = "adal.expiration.key", IDTOKEN = "adal.idtoken", LOGIN_ERROR = "adal.login.error", LOGIN_REQUEST = "adal.login.request", NONCE_IDTOKEN = "adal.nonce.idtoken", RENEW_STATUS = "adal.token.renew.status", SESSION_STATE = "adal.session.state", STATE_LOGIN = "adal.state.login", STATE_RENEW = "adal.state.renew", TOKEN_KEYS = "adal.token.keys", USERNAME = "adal.username")
       __obj.asInstanceOf[ACCESSTOKENKEY]
     }
     
@@ -169,22 +151,21 @@ object anon {
     }
   }
   
-  @js.native
   trait ERROR extends StObject {
     
-    var ERROR: typings.reactAdal.reactAdalNumbers.`0` = js.native
+    var ERROR: typings.reactAdal.reactAdalNumbers.`0`
     
-    var INFO: `2` = js.native
+    var INFO: `2`
     
-    var VERBOSE: `3` = js.native
+    var VERBOSE: `3`
     
-    var WARN: `1` = js.native
+    var WARN: `1`
   }
   object ERROR {
     
     @scala.inline
-    def apply(ERROR: typings.reactAdal.reactAdalNumbers.`0`, INFO: `2`, VERBOSE: `3`, WARN: `1`): ERROR = {
-      val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], VERBOSE = VERBOSE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any])
+    def apply(): ERROR = {
+      val __obj = js.Dynamic.literal(ERROR = 0, INFO = 2, VERBOSE = 3, WARN = 1)
       __obj.asInstanceOf[ERROR]
     }
     

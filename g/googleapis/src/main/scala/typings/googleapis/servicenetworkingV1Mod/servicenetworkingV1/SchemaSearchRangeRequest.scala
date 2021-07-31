@@ -2,13 +2,11 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to search for an unused range within allocated ranges.
   */
-@js.native
 trait SchemaSearchRangeRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSearchRangeRequest extends StObject {
     * Actual range will be determined using allocated range for the consumer
     * peered network and returned in the result.
     */
-  var ipPrefixLength: js.UndefOr[Double] = js.native
+  var ipPrefixLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Network name in the consumer project.   This network must have been
@@ -26,7 +24,7 @@ trait SchemaSearchRangeRequest extends StObject {
     * {project} is a project number, as in &#39;12345&#39; {network} is network
     * name.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchRangeRequest {
   

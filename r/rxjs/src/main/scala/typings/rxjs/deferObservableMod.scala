@@ -2,7 +2,6 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deferObservableMod {
@@ -15,12 +14,15 @@ object deferObservableMod {
   /* static members */
   object DeferObservable {
     
-    @JSImport("rxjs/observable/DeferObservable", "DeferObservable.create")
+    @JSImport("rxjs/observable/DeferObservable", "DeferObservable")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def create[T](
       observableFactory: js.Function0[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ _) | Unit
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any) | Unit
         ]
-    ): js.Any = js.native
+    ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(observableFactory.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

@@ -2,35 +2,35 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxPivotCustomizationControl control.
   */
-@js.native
-trait ASPxClientPivotCustomization extends ASPxClientControl {
+trait ASPxClientPivotCustomization
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Returns an HTML element that represents the root of the control's hierarchy.
     */
-  def GetMainContainer(): js.Any = js.native
+  def GetMainContainer(): js.Any
   
   /**
     * Returns a client-side equivalent of the owner Pivot Grid Control.
     */
-  def GetPivotGrid(): ASPxClientPivotGrid = js.native
+  def GetPivotGrid(): ASPxClientPivotGrid
   
   /**
     * Specifies the Customization Control's layout.
     * @param layout A string that specifies the Customization Control's layout.
     */
-  def SetLayout(layout: String): Unit = js.native
+  def SetLayout(layout: String): Unit
   
   /**
     * Recalculates the Customization Control height.
     */
-  def UpdateHeight(): Unit = js.native
+  def UpdateHeight(): Unit
 }
 object ASPxClientPivotCustomization {
   

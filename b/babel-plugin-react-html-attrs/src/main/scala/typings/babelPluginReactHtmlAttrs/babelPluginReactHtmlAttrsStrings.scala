@@ -4,7 +4,6 @@ import typings.babelPluginReactHtmlAttrs.mod.SuspenseListRevealOrder
 import typings.babelPluginReactHtmlAttrs.mod.SuspenseListTailMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object babelPluginReactHtmlAttrsStrings {
@@ -146,7 +145,8 @@ object babelPluginReactHtmlAttrsStrings {
   
   @js.native
   sealed trait backwards
-    extends SuspenseListRevealOrder
+    extends StObject
+       with SuspenseListRevealOrder
        with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListRevealOrder
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
@@ -278,7 +278,8 @@ object babelPluginReactHtmlAttrsStrings {
   
   @js.native
   sealed trait collapsed
-    extends SuspenseListTailMode
+    extends StObject
+       with SuspenseListTailMode
        with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListTailMode
   @scala.inline
   def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
@@ -560,7 +561,8 @@ object babelPluginReactHtmlAttrsStrings {
   
   @js.native
   sealed trait forwards
-    extends SuspenseListRevealOrder
+    extends StObject
+       with SuspenseListRevealOrder
        with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListRevealOrder
   @scala.inline
   def forwards: forwards = "forwards".asInstanceOf[forwards]
@@ -632,7 +634,8 @@ object babelPluginReactHtmlAttrsStrings {
   
   @js.native
   sealed trait hidden
-    extends SuspenseListTailMode
+    extends StObject
+       with SuspenseListTailMode
        with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListTailMode
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
@@ -1299,7 +1302,8 @@ object babelPluginReactHtmlAttrsStrings {
   
   @js.native
   sealed trait together
-    extends SuspenseListRevealOrder
+    extends StObject
+       with SuspenseListRevealOrder
        with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListRevealOrder
   @scala.inline
   def together: together = "together".asInstanceOf[together]

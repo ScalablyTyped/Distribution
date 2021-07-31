@@ -2,15 +2,15 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoveChannelMembersParameters extends UUIDMembersParameters {
+trait RemoveChannelMembersParameters
+  extends StObject
+     with UUIDMembersParameters {
   
-  var channel: String = js.native
+  var channel: String
   
-  var uuids: js.Array[String] = js.native
+  var uuids: js.Array[String]
 }
 object RemoveChannelMembersParameters {
   

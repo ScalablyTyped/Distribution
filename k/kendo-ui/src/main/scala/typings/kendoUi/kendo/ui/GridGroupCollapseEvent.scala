@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridGroupCollapseEvent extends GridEvent {
+trait GridGroupCollapseEvent
+  extends StObject
+     with GridEvent {
   
-  var element: js.UndefOr[JQuery] = js.native
+  var element: js.UndefOr[JQuery] = js.undefined
   
-  var group: js.UndefOr[js.Any] = js.native
+  var group: js.UndefOr[js.Any] = js.undefined
 }
 object GridGroupCollapseEvent {
   

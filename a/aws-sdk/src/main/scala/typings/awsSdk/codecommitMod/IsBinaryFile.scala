@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsBinaryFile extends StObject {
   
   /**
     * The binary or non-binary status of a file in the base of a merge or pull request.
     */
-  var base: js.UndefOr[CapitalBoolean] = js.native
+  var base: js.UndefOr[CapitalBoolean] = js.undefined
   
   /**
     * The binary or non-binary status of a file in the destination of a merge or pull request.
     */
-  var destination: js.UndefOr[CapitalBoolean] = js.native
+  var destination: js.UndefOr[CapitalBoolean] = js.undefined
   
   /**
     * The binary or non-binary status of file in the source of a merge or pull request.
     */
-  var source: js.UndefOr[CapitalBoolean] = js.native
+  var source: js.UndefOr[CapitalBoolean] = js.undefined
 }
 object IsBinaryFile {
   

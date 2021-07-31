@@ -2,25 +2,23 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for Liens.ListLiens.
   */
-@js.native
 trait SchemaListLiensResponse extends StObject {
   
   /**
     * A list of Liens.
     */
-  var liens: js.UndefOr[js.Array[SchemaLien]] = js.native
+  var liens: js.UndefOr[js.Array[SchemaLien]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListLiensResponse {
   

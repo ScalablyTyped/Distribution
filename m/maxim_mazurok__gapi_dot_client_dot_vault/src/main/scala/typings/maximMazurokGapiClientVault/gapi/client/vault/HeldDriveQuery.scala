@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeldDriveQuery extends StObject {
   
   /** If true, include files in shared drives in the hold. */
-  var includeSharedDriveFiles: js.UndefOr[Boolean] = js.native
+  var includeSharedDriveFiles: js.UndefOr[Boolean] = js.undefined
   
   /** If true, include files in Team Drives in the hold. */
-  var includeTeamDriveFiles: js.UndefOr[Boolean] = js.native
+  var includeTeamDriveFiles: js.UndefOr[Boolean] = js.undefined
 }
 object HeldDriveQuery {
   

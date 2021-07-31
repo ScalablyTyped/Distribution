@@ -4,13 +4,13 @@ import typings.mongodb.anon.IdObjectId
 import typings.mongodb.anon.NModified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReplaceWriteOpResult extends UpdateWriteOpResult {
+trait ReplaceWriteOpResult
+  extends StObject
+     with UpdateWriteOpResult {
   
-  var ops: js.Array[_] = js.native
+  var ops: js.Array[js.Any]
 }
 object ReplaceWriteOpResult {
   
@@ -19,7 +19,7 @@ object ReplaceWriteOpResult {
     connection: js.Any,
     matchedCount: scala.Double,
     modifiedCount: scala.Double,
-    ops: js.Array[_],
+    ops: js.Array[js.Any],
     result: NModified,
     upsertedCount: scala.Double,
     upsertedId: IdObjectId
@@ -32,7 +32,7 @@ object ReplaceWriteOpResult {
   implicit class ReplaceWriteOpResultMutableBuilder[Self <: ReplaceWriteOpResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setOps(value: js.Array[_]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    def setOps(value: js.Array[js.Any]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOpsVarargs(value: js.Any*): Self = StObject.set(x, "ops", js.Array(value :_*))

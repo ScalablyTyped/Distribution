@@ -2,101 +2,99 @@ package typings.babelTypes.indexTs37Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aliases extends StObject {
   
-  var Binary: typings.babelTypes.indexTs37Mod.Binary = js.native
+  var Binary: typings.babelTypes.indexTs37Mod.Binary
   
-  var Block: typings.babelTypes.indexTs37Mod.Block = js.native
+  var Block: typings.babelTypes.indexTs37Mod.Block
   
-  var BlockParent: typings.babelTypes.indexTs37Mod.BlockParent = js.native
+  var BlockParent: typings.babelTypes.indexTs37Mod.BlockParent
   
-  var Class: typings.babelTypes.indexTs37Mod.Class = js.native
+  var Class: typings.babelTypes.indexTs37Mod.Class
   
-  var CompletionStatement: typings.babelTypes.indexTs37Mod.CompletionStatement = js.native
+  var CompletionStatement: typings.babelTypes.indexTs37Mod.CompletionStatement
   
-  var Conditional: typings.babelTypes.indexTs37Mod.Conditional = js.native
+  var Conditional: typings.babelTypes.indexTs37Mod.Conditional
   
-  var Declaration: typings.babelTypes.indexTs37Mod.Declaration = js.native
+  var Declaration: typings.babelTypes.indexTs37Mod.Declaration
   
-  var EnumBody: typings.babelTypes.indexTs37Mod.EnumBody = js.native
+  var EnumBody: typings.babelTypes.indexTs37Mod.EnumBody
   
-  var EnumMember: typings.babelTypes.indexTs37Mod.EnumMember = js.native
+  var EnumMember: typings.babelTypes.indexTs37Mod.EnumMember
   
-  var ExportDeclaration: typings.babelTypes.indexTs37Mod.ExportDeclaration = js.native
+  var ExportDeclaration: typings.babelTypes.indexTs37Mod.ExportDeclaration
   
-  var Expression: typings.babelTypes.indexTs37Mod.Expression = js.native
+  var Expression: typings.babelTypes.indexTs37Mod.Expression
   
-  var ExpressionWrapper: typings.babelTypes.indexTs37Mod.ExpressionWrapper = js.native
+  var ExpressionWrapper: typings.babelTypes.indexTs37Mod.ExpressionWrapper
   
-  var Flow: typings.babelTypes.indexTs37Mod.Flow = js.native
+  var Flow: typings.babelTypes.indexTs37Mod.Flow
   
-  var FlowBaseAnnotation: typings.babelTypes.indexTs37Mod.FlowBaseAnnotation = js.native
+  var FlowBaseAnnotation: typings.babelTypes.indexTs37Mod.FlowBaseAnnotation
   
-  var FlowDeclaration: typings.babelTypes.indexTs37Mod.FlowDeclaration = js.native
+  var FlowDeclaration: typings.babelTypes.indexTs37Mod.FlowDeclaration
   
-  var FlowPredicate: typings.babelTypes.indexTs37Mod.FlowPredicate = js.native
+  var FlowPredicate: typings.babelTypes.indexTs37Mod.FlowPredicate
   
-  var FlowType: typings.babelTypes.indexTs37Mod.FlowType = js.native
+  var FlowType: typings.babelTypes.indexTs37Mod.FlowType
   
-  var For: typings.babelTypes.indexTs37Mod.For = js.native
+  var For: typings.babelTypes.indexTs37Mod.For
   
-  var ForXStatement: typings.babelTypes.indexTs37Mod.ForXStatement = js.native
+  var ForXStatement: typings.babelTypes.indexTs37Mod.ForXStatement
   
-  var Function: typings.babelTypes.indexTs37Mod.Function = js.native
+  var Function: typings.babelTypes.indexTs37Mod.Function
   
-  var FunctionParent: typings.babelTypes.indexTs37Mod.FunctionParent = js.native
+  var FunctionParent: typings.babelTypes.indexTs37Mod.FunctionParent
   
-  var Immutable: typings.babelTypes.indexTs37Mod.Immutable = js.native
+  var Immutable: typings.babelTypes.indexTs37Mod.Immutable
   
-  var JSX: typings.babelTypes.indexTs37Mod.JSX = js.native
+  var JSX: typings.babelTypes.indexTs37Mod.JSX
   
-  var LVal: typings.babelTypes.indexTs37Mod.LVal = js.native
+  var LVal: typings.babelTypes.indexTs37Mod.LVal
   
-  var Literal: typings.babelTypes.indexTs37Mod.Literal = js.native
+  var Literal: typings.babelTypes.indexTs37Mod.Literal
   
-  var Loop: typings.babelTypes.indexTs37Mod.Loop = js.native
+  var Loop: typings.babelTypes.indexTs37Mod.Loop
   
-  var Method: typings.babelTypes.indexTs37Mod.Method = js.native
+  var Method: typings.babelTypes.indexTs37Mod.Method
   
-  var ModuleDeclaration: typings.babelTypes.indexTs37Mod.ModuleDeclaration = js.native
+  var ModuleDeclaration: typings.babelTypes.indexTs37Mod.ModuleDeclaration
   
-  var ModuleSpecifier: typings.babelTypes.indexTs37Mod.ModuleSpecifier = js.native
+  var ModuleSpecifier: typings.babelTypes.indexTs37Mod.ModuleSpecifier
   
-  var ObjectMember: typings.babelTypes.indexTs37Mod.ObjectMember = js.native
+  var ObjectMember: typings.babelTypes.indexTs37Mod.ObjectMember
   
-  var Pattern: typings.babelTypes.indexTs37Mod.Pattern = js.native
+  var Pattern: typings.babelTypes.indexTs37Mod.Pattern
   
-  var PatternLike: typings.babelTypes.indexTs37Mod.PatternLike = js.native
+  var PatternLike: typings.babelTypes.indexTs37Mod.PatternLike
   
-  var Private: typings.babelTypes.indexTs37Mod.Private = js.native
+  var Private: typings.babelTypes.indexTs37Mod.Private
   
-  var Property: typings.babelTypes.indexTs37Mod.Property = js.native
+  var Property: typings.babelTypes.indexTs37Mod.Property
   
-  var Pureish: typings.babelTypes.indexTs37Mod.Pureish = js.native
+  var Pureish: typings.babelTypes.indexTs37Mod.Pureish
   
-  var Scopable: typings.babelTypes.indexTs37Mod.Scopable = js.native
+  var Scopable: typings.babelTypes.indexTs37Mod.Scopable
   
-  var Statement: typings.babelTypes.indexTs37Mod.Statement = js.native
+  var Statement: typings.babelTypes.indexTs37Mod.Statement
   
-  var TSBaseType: typings.babelTypes.indexTs37Mod.TSBaseType = js.native
+  var TSBaseType: typings.babelTypes.indexTs37Mod.TSBaseType
   
-  var TSEntityName: typings.babelTypes.indexTs37Mod.TSEntityName = js.native
+  var TSEntityName: typings.babelTypes.indexTs37Mod.TSEntityName
   
-  var TSType: typings.babelTypes.indexTs37Mod.TSType = js.native
+  var TSType: typings.babelTypes.indexTs37Mod.TSType
   
-  var TSTypeElement: typings.babelTypes.indexTs37Mod.TSTypeElement = js.native
+  var TSTypeElement: typings.babelTypes.indexTs37Mod.TSTypeElement
   
-  var Terminatorless: typings.babelTypes.indexTs37Mod.Terminatorless = js.native
+  var Terminatorless: typings.babelTypes.indexTs37Mod.Terminatorless
   
-  var UnaryLike: typings.babelTypes.indexTs37Mod.UnaryLike = js.native
+  var UnaryLike: typings.babelTypes.indexTs37Mod.UnaryLike
   
-  var UserWhitespacable: typings.babelTypes.indexTs37Mod.UserWhitespacable = js.native
+  var UserWhitespacable: typings.babelTypes.indexTs37Mod.UserWhitespacable
   
-  var While: typings.babelTypes.indexTs37Mod.While = js.native
+  var While: typings.babelTypes.indexTs37Mod.While
 }
 object Aliases {
   

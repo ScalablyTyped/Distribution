@@ -2,13 +2,11 @@ package typings.node.fsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatOptions extends StObject {
   
-  var bigint: Boolean = js.native
+  var bigint: Boolean
 }
 object StatOptions {
   

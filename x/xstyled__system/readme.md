@@ -4,21 +4,21 @@
 Typings are for version 1.19
 
 ## Library description:
-Modern style system for styled-components & emotion.
+xstyled system utilities.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @xstyled/system |
-| Keywords           | emotion, styled-components, css, system, styled-system |
-| # releases         | 34 |
-| # dependents       | 7 |
-| # downloads        | 254568 |
+| Keywords           | emotion, styled-components, css, system, styled-system, tailwindcss |
+| # releases         | 40 |
+| # dependents       | 8 |
+| # downloads        | 291356 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://xstyled.dev)
-- [Bugs](https://github.com/smooth-code/xstyled/issues)
-- [Repository](https://github.com/smooth-code/xstyled)
+- [Bugs](https://github.com/gregberge/xstyled/issues)
+- [Repository](https://github.com/gregberge/xstyled)
 - [Npm](https://www.npmjs.com/package/%40xstyled%2Fsystem)
     
 

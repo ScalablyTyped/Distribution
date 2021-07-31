@@ -6,21 +6,19 @@ import typings.devextreme.mod.DevExpress.viz.dxFunnel
 import typings.devextreme.mod.DevExpress.viz.dxFunnelItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventItem extends StObject {
   
-  var component: js.UndefOr[dxFunnel] = js.native
+  var component: js.UndefOr[dxFunnel] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var item: js.UndefOr[dxFunnelItem] = js.native
+  var item: js.UndefOr[dxFunnelItem] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object EventItem {
   

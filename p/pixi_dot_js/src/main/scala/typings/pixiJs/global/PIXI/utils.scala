@@ -3,13 +3,13 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.PIXI.utils.DecomposedDataUri
 import typings.pixiJs.anon.Device
 import typings.pixiJs.anon.Phone
+import typings.std.CanvasRenderingContext2D
 import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.Uint16Array
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -59,9 +59,58 @@ object utils {
   @JSGlobal("PIXI.utils.CanvasRenderTarget")
   @js.native
   class CanvasRenderTarget protected ()
-    extends typings.pixiJs.PIXI.utils.CanvasRenderTarget {
+    extends StObject
+       with typings.pixiJs.PIXI.utils.CanvasRenderTarget {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, resolution: Double) = this()
+    
+    /**
+      * The Canvas object that belongs to this CanvasRenderTarget.
+      *
+      * @member {HTMLCanvasElement} PIXI.utils.CanvasRenderTarget#canvas
+      */
+    /* CompleteClass */
+    var canvas: HTMLCanvasElement = js.native
+    
+    /**
+      * A CanvasRenderingContext2D object representing a two-dimensional rendering context.
+      *
+      * @member {CanvasRenderingContext2D} PIXI.utils.CanvasRenderTarget#context
+      */
+    /* CompleteClass */
+    var context: CanvasRenderingContext2D = js.native
+    
+    /**
+      * Destroys this canvas.
+      *
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * The height of the canvas buffer in pixels.
+      *
+      * @member {number}
+      */
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /**
+      * Resizes the canvas to the specified width and height.
+      *
+      * @param {number} width - the new width of the canvas
+      * @param {number} height - the new height of the canvas
+      */
+    /* CompleteClass */
+    override def resize(width: Double, height: Double): Unit = js.native
+    
+    /**
+      * The width of the canvas buffer in pixels.
+      *
+      * @member {number}
+      */
+    /* CompleteClass */
+    var width: Double = js.native
   }
   
   /**
@@ -76,7 +125,8 @@ object utils {
   @JSGlobal("PIXI.utils.EventEmitter")
   @js.native
   class EventEmitter ()
-    extends typings.pixiJs.PIXI.utils.EventEmitter
+    extends StObject
+       with typings.pixiJs.PIXI.utils.EventEmitter
   
   /**
     * @todo Describe property usage
@@ -112,9 +162,8 @@ object utils {
     * @memberof PIXI.utils
     * @function clearTextureCache
     */
-  @JSGlobal("PIXI.utils.clearTextureCache")
-  @js.native
-  def clearTextureCache(): Unit = js.native
+  @scala.inline
+  def clearTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTextureCache")().asInstanceOf[Unit]
   
   /**
     * changes blendMode according to texture format
@@ -125,9 +174,8 @@ object utils {
     * @param {boolean} premultiplied - whether source is premultiplied
     * @returns {number} true blend mode for this texture
     */
-  @JSGlobal("PIXI.utils.correctBlendMode")
-  @js.native
-  def correctBlendMode(blendMode: Double, premultiplied: Boolean): Double = js.native
+  @scala.inline
+  def correctBlendMode(blendMode: Double, premultiplied: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("correctBlendMode")(blendMode.asInstanceOf[js.Any], premultiplied.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Generic Mask Stack data structure
@@ -138,15 +186,12 @@ object utils {
     * @param {Uint16Array|Uint32Array} [outBuffer] - Buffer for output, length has to be `6 * size`
     * @return {Uint16Array|Uint32Array} - Resulting index buffer
     */
-  @JSGlobal("PIXI.utils.createIndicesForQuads")
-  @js.native
-  def createIndicesForQuads(size: Double): Uint16Array | Uint32Array = js.native
-  @JSGlobal("PIXI.utils.createIndicesForQuads")
-  @js.native
-  def createIndicesForQuads(size: Double, outBuffer: Uint16Array): Uint16Array | Uint32Array = js.native
-  @JSGlobal("PIXI.utils.createIndicesForQuads")
-  @js.native
-  def createIndicesForQuads(size: Double, outBuffer: Uint32Array): Uint16Array | Uint32Array = js.native
+  @scala.inline
+  def createIndicesForQuads(size: Double): Uint16Array | Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any]).asInstanceOf[Uint16Array | Uint32Array]
+  @scala.inline
+  def createIndicesForQuads(size: Double, outBuffer: Uint16Array): Uint16Array | Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[Uint16Array | Uint32Array]
+  @scala.inline
+  def createIndicesForQuads(size: Double, outBuffer: Uint32Array): Uint16Array | Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[Uint16Array | Uint32Array]
   
   /**
     * Split a data URI into components. Returns undefined if
@@ -157,9 +202,8 @@ object utils {
     * @param {string} dataUri - the data URI to check
     * @return {PIXI.utils.DecomposedDataUri|undefined} The decomposed data uri or undefined
     */
-  @JSGlobal("PIXI.utils.decomposeDataUri")
-  @js.native
-  def decomposeDataUri(dataUri: String): js.UndefOr[DecomposedDataUri] = js.native
+  @scala.inline
+  def decomposeDataUri(dataUri: String): js.UndefOr[DecomposedDataUri] = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeDataUri")(dataUri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DecomposedDataUri]]
   
   /**
     * Helper for warning developers about deprecated features & settings.
@@ -173,12 +217,10 @@ object utils {
     * @param {number} [ignoreDepth=3] - The number of steps to ignore at the top of the error stack
     *        this is mostly to ignore internal deprecation calls.
     */
-  @JSGlobal("PIXI.utils.deprecation")
-  @js.native
-  def deprecation(version: String, message: String): Unit = js.native
-  @JSGlobal("PIXI.utils.deprecation")
-  @js.native
-  def deprecation(version: String, message: String, ignoreDepth: Double): Unit = js.native
+  @scala.inline
+  def deprecation(version: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deprecation(version: String, message: String, ignoreDepth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ignoreDepth.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Destroys all texture in the cache
@@ -186,9 +228,8 @@ object utils {
     * @memberof PIXI.utils
     * @function destroyTextureCache
     */
-  @JSGlobal("PIXI.utils.destroyTextureCache")
-  @js.native
-  def destroyTextureCache(): Unit = js.native
+  @scala.inline
+  def destroyTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyTextureCache")().asInstanceOf[Unit]
   
   /**
     * A polygon triangulation library
@@ -202,18 +243,14 @@ object utils {
     * @param {number} [dimensions=2] - The number of coordinates per vertex in the input array
     * @return {number[]} Triangulated polygon
     */
-  @JSGlobal("PIXI.utils.earcut")
-  @js.native
-  def earcut(vertices: js.Array[Double]): js.Array[Double] = js.native
-  @JSGlobal("PIXI.utils.earcut")
-  @js.native
-  def earcut(vertices: js.Array[Double], holes: js.UndefOr[scala.Nothing], dimensions: Double): js.Array[Double] = js.native
-  @JSGlobal("PIXI.utils.earcut")
-  @js.native
-  def earcut(vertices: js.Array[Double], holes: js.Array[Double]): js.Array[Double] = js.native
-  @JSGlobal("PIXI.utils.earcut")
-  @js.native
-  def earcut(vertices: js.Array[Double], holes: js.Array[Double], dimensions: Double): js.Array[Double] = js.native
+  @scala.inline
+  def earcut(vertices: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def earcut(vertices: js.Array[Double], holes: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def earcut(vertices: js.Array[Double], holes: js.Array[Double], dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def earcut(vertices: js.Array[Double], holes: Unit, dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
     * get the resolution / device pixel ratio of an asset by looking for the prefix
@@ -225,12 +262,10 @@ object utils {
     * @param {number} [defaultValue=1] - the defaultValue if no filename prefix is set.
     * @return {number} resolution / device pixel ratio of an asset
     */
-  @JSGlobal("PIXI.utils.getResolutionOfUrl")
-  @js.native
-  def getResolutionOfUrl(url: String): Double = js.native
-  @JSGlobal("PIXI.utils.getResolutionOfUrl")
-  @js.native
-  def getResolutionOfUrl(url: String, defaultValue: Double): Double = js.native
+  @scala.inline
+  def getResolutionOfUrl(url: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getResolutionOfUrl(url: String, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Converts a hexadecimal color number to an [R, G, B] array of normalized floats (numbers from 0.0 to 1.0).
@@ -243,12 +278,10 @@ object utils {
     * @param  {number[]} [out=[]] - If supplied, this array will be used rather than returning a new one
     * @return {number[]} An array representing the [R, G, B] of the color where all values are floats.
     */
-  @JSGlobal("PIXI.utils.hex2rgb")
-  @js.native
-  def hex2rgb(hex: Double): js.Array[Double] = js.native
-  @JSGlobal("PIXI.utils.hex2rgb")
-  @js.native
-  def hex2rgb(hex: Double, out: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def hex2rgb(hex: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def hex2rgb(hex: Double, out: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
     * Converts a hexadecimal color number to a string.
@@ -260,9 +293,8 @@ object utils {
     * @param {number} hex - Number in hex (e.g., `0xffffff`)
     * @return {string} The string color (e.g., `"#ffffff"`).
     */
-  @JSGlobal("PIXI.utils.hex2string")
-  @js.native
-  def hex2string(hex: Double): String = js.native
+  @scala.inline
+  def hex2string(hex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2string")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * A simple JS library that detects mobile devices.
@@ -350,9 +382,8 @@ object utils {
     * @param {number} v - input value
     * @return {boolean} `true` if value is power of two
     */
-  @JSGlobal("PIXI.utils.isPow2")
-  @js.native
-  def isPow2(v: Double): Boolean = js.native
+  @scala.inline
+  def isPow2(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Helper for checking for WebGL support.
@@ -361,9 +392,8 @@ object utils {
     * @function isWebGLSupported
     * @return {boolean} Is WebGL supported.
     */
-  @JSGlobal("PIXI.utils.isWebGLSupported")
-  @js.native
-  def isWebGLSupported(): Boolean = js.native
+  @scala.inline
+  def isWebGLSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLSupported")().asInstanceOf[Boolean]
   
   /**
     * Computes ceil of log base 2
@@ -373,9 +403,8 @@ object utils {
     * @param {number} v - input value
     * @return {number} logarithm base 2
     */
-  @JSGlobal("PIXI.utils.log2")
-  @js.native
-  def log2(v: Double): Double = js.native
+  @scala.inline
+  def log2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Rounds to next power of two.
@@ -385,9 +414,8 @@ object utils {
     * @param {number} v - input value
     * @return {number}
     */
-  @JSGlobal("PIXI.utils.nextPow2")
-  @js.native
-  def nextPow2(v: Double): Double = js.native
+  @scala.inline
+  def nextPow2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * maps premultiply flag and blendMode to adjusted blendMode
@@ -401,18 +429,14 @@ object utils {
   @scala.inline
   def premultiplyBlendMode_=(x: js.Array[js.Array[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("premultiplyBlendMode")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: js.UndefOr[scala.Nothing], premultiply: Boolean): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = js.native
+  @scala.inline
+  def premultiplyRgba(rgb: js.Array[Double], alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   /**
     * combines rgb and alpha to out array
     *
@@ -424,18 +448,14 @@ object utils {
     * @param {boolean} [premultiply=true] - do premultiply it
     * @returns {Float32Array} vec4 rgba
     */
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: Float32Array, alpha: Double): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: js.UndefOr[scala.Nothing], premultiply: Boolean): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyRgba")
-  @js.native
-  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = js.native
+  @scala.inline
+  def premultiplyRgba(rgb: Float32Array, alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
   /**
     * premultiplies tint
@@ -446,9 +466,8 @@ object utils {
     * @param {number} alpha - floating point alpha (0.0-1.0)
     * @returns {number} tint multiplied by alpha
     */
-  @JSGlobal("PIXI.utils.premultiplyTint")
-  @js.native
-  def premultiplyTint(tint: Double, alpha: Double): Double = js.native
+  @scala.inline
+  def premultiplyTint(tint: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTint")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * converts integer tint and float alpha to vec4 form, premultiplies by default
@@ -461,18 +480,14 @@ object utils {
     * @param {boolean} [premultiply=true] - do premultiply it
     * @returns {Float32Array} vec4 rgba
     */
-  @JSGlobal("PIXI.utils.premultiplyTintToRgba")
-  @js.native
-  def premultiplyTintToRgba(tint: Double, alpha: Double): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyTintToRgba")
-  @js.native
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: js.UndefOr[scala.Nothing], premultiply: Boolean): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyTintToRgba")
-  @js.native
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array): Float32Array = js.native
-  @JSGlobal("PIXI.utils.premultiplyTintToRgba")
-  @js.native
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = js.native
+  @scala.inline
+  def premultiplyTintToRgba(tint: Double, alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
   /**
     * Remove items from a javascript array without generating garbage
@@ -483,9 +498,8 @@ object utils {
     * @param {number} startIdx - starting index
     * @param {number} removeCount - how many to remove
     */
-  @JSGlobal("PIXI.utils.removeItems")
-  @js.native
-  def removeItems(arr: js.Array[_], startIdx: Double, removeCount: Double): Unit = js.native
+  @scala.inline
+  def removeItems(arr: js.Array[js.Any], startIdx: Double, removeCount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeItems")(arr.asInstanceOf[js.Any], startIdx.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Converts a color as an [R, G, B] array of normalized floats to a hexadecimal number.
@@ -497,9 +511,8 @@ object utils {
     * @param {number[]} rgb - Array of numbers where all values are normalized floats from 0.0 to 1.0.
     * @return {number} Number in hexadecimal.
     */
-  @JSGlobal("PIXI.utils.rgb2hex")
-  @js.native
-  def rgb2hex(rgb: js.Array[Double]): Double = js.native
+  @scala.inline
+  def rgb2hex(rgb: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Logs out the version and renderer information for this running instance of PIXI.
@@ -511,9 +524,8 @@ object utils {
     * @memberof PIXI.utils
     * @param {string} type - The string renderer type to log.
     */
-  @JSGlobal("PIXI.utils.sayHello")
-  @js.native
-  def sayHello(`type`: String): Unit = js.native
+  @scala.inline
+  def sayHello(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns sign of number
@@ -523,9 +535,8 @@ object utils {
     * @param {number} n - the number to check the sign of
     * @returns {number} 0 if `n` is 0, -1 if `n` is negative, 1 if `n` is positive
     */
-  @JSGlobal("PIXI.utils.sign")
-  @js.native
-  def sign(n: Double): Double = js.native
+  @scala.inline
+  def sign(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Skips the hello message of renderers that are created after this is run.
@@ -533,9 +544,8 @@ object utils {
     * @function skipHello
     * @memberof PIXI.utils
     */
-  @JSGlobal("PIXI.utils.skipHello")
-  @js.native
-  def skipHello(): Unit = js.native
+  @scala.inline
+  def skipHello(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipHello")().asInstanceOf[Unit]
   
   /**
     * Converts a hexadecimal string to a hexadecimal color number.
@@ -547,9 +557,8 @@ object utils {
     * @param {string} string - The string color (e.g., `"#ffffff"`)
     * @return {number} Number in hexadecimal.
     */
-  @JSGlobal("PIXI.utils.string2hex")
-  @js.native
-  def string2hex(string: String): Double = js.native
+  @scala.inline
+  def string2hex(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("string2hex")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Trim transparent borders from a canvas
@@ -559,9 +568,8 @@ object utils {
     * @param {HTMLCanvasElement} canvas - the canvas to trim
     * @returns {object} Trim data
     */
-  @JSGlobal("PIXI.utils.trimCanvas")
-  @js.native
-  def trimCanvas(canvas: HTMLCanvasElement): js.Any = js.native
+  @scala.inline
+  def trimCanvas(canvas: HTMLCanvasElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the next unique identifier
@@ -570,9 +578,8 @@ object utils {
     * @function uid
     * @return {number} The next unique identifier to use.
     */
-  @JSGlobal("PIXI.utils.uid")
-  @js.native
-  def uid(): Double = js.native
+  @scala.inline
+  def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   
   /**
     * Node.js compatible URL utilities.

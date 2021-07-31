@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxContainerEntry...
   */
-@js.native
 trait INxContainerEntry[T] extends StObject {
   
   /**
     * Set of data
     */
-  var qData: T = js.native
+  var qData: T
   
   /**
     * Information about the object
     */
-  var qInfo: INxInfo = js.native
+  var qInfo: INxInfo
   
   /**
     * Information on publishing and permissions
     */
-  var qMeta: INxMeta = js.native
+  var qMeta: INxMeta
 }
 object INxContainerEntry {
   
@@ -35,7 +33,7 @@ object INxContainerEntry {
   }
   
   @scala.inline
-  implicit class INxContainerEntryMutableBuilder[Self <: INxContainerEntry[_], T] (val x: Self with INxContainerEntry[T]) extends AnyVal {
+  implicit class INxContainerEntryMutableBuilder[Self <: INxContainerEntry[?], T] (val x: Self & INxContainerEntry[T]) extends AnyVal {
     
     @scala.inline
     def setQData(value: T): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])

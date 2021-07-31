@@ -2,20 +2,19 @@ package typings.estreeJsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXOpeningElement
-  extends JSXBoundaryElement
+  extends StObject
+     with JSXBoundaryElement
      with _Node {
   
-  var attributes: js.Array[JSXAttribute | JSXSpreadAttribute] = js.native
+  var attributes: js.Array[JSXAttribute | JSXSpreadAttribute]
   
-  var selfClosing: Boolean = js.native
+  var selfClosing: Boolean
   
   @JSName("type")
-  var type_JSXOpeningElement: typings.estreeJsx.estreeJsxStrings.JSXOpeningElement = js.native
+  var type_JSXOpeningElement: typings.estreeJsx.estreeJsxStrings.JSXOpeningElement
 }
 object JSXOpeningElement {
   
@@ -23,11 +22,10 @@ object JSXOpeningElement {
   def apply(
     attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
     name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName,
-    selfClosing: Boolean,
-    `type`: typings.estreeJsx.estreeJsxStrings.JSXOpeningElement
+    selfClosing: Boolean
   ): JSXOpeningElement = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXOpeningElement")
     __obj.asInstanceOf[JSXOpeningElement]
   }
   

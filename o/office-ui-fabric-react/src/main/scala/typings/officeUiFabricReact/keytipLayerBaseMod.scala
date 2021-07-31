@@ -9,7 +9,6 @@ import typings.react.mod.KeyboardEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keytipLayerBaseMod {
@@ -188,14 +187,13 @@ object keytipLayerBaseMod {
     def defaultProps_=(x: IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IKeytipLayerState extends StObject {
     
-    var inKeytipMode: Boolean = js.native
+    var inKeytipMode: Boolean
     
-    var keytips: js.Array[IKeytipProps] = js.native
+    var keytips: js.Array[IKeytipProps]
     
-    var visibleKeytips: js.Array[IKeytipProps] = js.native
+    var visibleKeytips: js.Array[IKeytipProps]
   }
   object IKeytipLayerState {
     

@@ -2,7 +2,6 @@ package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,5 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be retried up to 7 days with an exponential backoff (capped at 10 seconds).
   * Retried execution is charged as any other execution.
   */
-@js.native
 trait SchemaRetry extends StObject

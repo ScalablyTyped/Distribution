@@ -2,37 +2,37 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PieChartProps extends PieRadarChartBase {
+trait PieChartProps
+  extends StObject
+     with PieRadarChartBase {
   
-  var centerText: js.UndefOr[String] = js.native
+  var centerText: js.UndefOr[String] = js.undefined
   
-  var centerTextRadiusPercent: js.UndefOr[Double] = js.native
+  var centerTextRadiusPercent: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[PieData] = js.native
+  var data: js.UndefOr[PieData] = js.undefined
   
-  var drawEntryLabels: js.UndefOr[Boolean] = js.native
+  var drawEntryLabels: js.UndefOr[Boolean] = js.undefined
   
-  var entryLabelColor: js.UndefOr[Color] = js.native
+  var entryLabelColor: js.UndefOr[Color] = js.undefined
   
-  var entryLabelTextSize: js.UndefOr[Double] = js.native
+  var entryLabelTextSize: js.UndefOr[Double] = js.undefined
   
-  var holeColor: js.UndefOr[Color] = js.native
+  var holeColor: js.UndefOr[Color] = js.undefined
   
-  var holeRadius: js.UndefOr[Double] = js.native
+  var holeRadius: js.UndefOr[Double] = js.undefined
   
-  var maxAngle: js.UndefOr[Double] = js.native
+  var maxAngle: js.UndefOr[Double] = js.undefined
   
-  var styledCenterText: js.UndefOr[typings.reactNativeChartsWrapper.anon.Color] = js.native
+  var styledCenterText: js.UndefOr[typings.reactNativeChartsWrapper.anon.Color] = js.undefined
   
-  var transparentCircleColor: js.UndefOr[Color] = js.native
+  var transparentCircleColor: js.UndefOr[Color] = js.undefined
   
-  var transparentCircleRadius: js.UndefOr[Double] = js.native
+  var transparentCircleRadius: js.UndefOr[Double] = js.undefined
   
-  var usePercentValues: js.UndefOr[Boolean] = js.native
+  var usePercentValues: js.UndefOr[Boolean] = js.undefined
 }
 object PieChartProps {
   

@@ -2,42 +2,40 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<screeps.AllLookAtTypes> */
-@js.native
 trait LookAtTypes extends StObject {
   
-  var constructionSite: js.UndefOr[ConstructionSite[BuildableStructureConstant]] = js.native
+  var constructionSite: js.UndefOr[ConstructionSite[BuildableStructureConstant]] = js.undefined
   
-  var creep: js.UndefOr[Creep] = js.native
+  var creep: js.UndefOr[Creep] = js.undefined
   
-  var deposit: js.UndefOr[Deposit] = js.native
+  var deposit: js.UndefOr[Deposit] = js.undefined
   
-  var energy: js.UndefOr[Resource[RESOURCE_ENERGY]] = js.native
+  var energy: js.UndefOr[Resource[RESOURCE_ENERGY]] = js.undefined
   
-  var exit: js.UndefOr[js.Any] = js.native
+  var exit: js.UndefOr[js.Any] = js.undefined
   
-  var flag: js.UndefOr[Flag] = js.native
+  var flag: js.UndefOr[Flag] = js.undefined
   
-  var mineral: js.UndefOr[Mineral[MineralConstant]] = js.native
+  var mineral: js.UndefOr[Mineral[MineralConstant]] = js.undefined
   
-  var nuke: js.UndefOr[Nuke] = js.native
+  var nuke: js.UndefOr[Nuke] = js.undefined
   
-  var powerCreep: js.UndefOr[PowerCreep] = js.native
+  var powerCreep: js.UndefOr[PowerCreep] = js.undefined
   
-  var resource: js.UndefOr[Resource[ResourceConstant]] = js.native
+  var resource: js.UndefOr[Resource[ResourceConstant]] = js.undefined
   
-  var ruin: js.UndefOr[Ruin] = js.native
+  var ruin: js.UndefOr[Ruin] = js.undefined
   
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
-  var structure: js.UndefOr[Structure[StructureConstant]] = js.native
+  var structure: js.UndefOr[Structure[StructureConstant]] = js.undefined
   
-  var terrain: js.UndefOr[Terrain] = js.native
+  var terrain: js.UndefOr[Terrain] = js.undefined
   
-  var tombstone: js.UndefOr[Tombstone] = js.native
+  var tombstone: js.UndefOr[Tombstone] = js.undefined
 }
 object LookAtTypes {
   

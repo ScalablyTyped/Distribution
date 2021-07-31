@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenX extends StObject {
   
-  var screenX: Double = js.native
+  var screenX: Double
   
-  var screenY: Double = js.native
+  var screenY: Double
 }
 object ScreenX {
   

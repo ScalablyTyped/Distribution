@@ -3,24 +3,23 @@ package typings.amqplib.propertiesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerProperties
-  extends /* key */ StringDictionary[js.UndefOr[String]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[String]] {
   
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
-  var host: String = js.native
+  var host: String
   
-  var information: String = js.native
+  var information: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var product: String = js.native
+  var product: String
   
-  var version: String = js.native
+  var version: String
 }
 object ServerProperties {
   

@@ -2,20 +2,18 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.TopbarTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.TopbarTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.TopbarTheme> */
-@js.native
 trait Topbar extends StObject {
   
-  var background: js.UndefOr[BackgroundProps] = js.native
+  var background: js.UndefOr[BackgroundProps] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var dark: TopbarTheme = js.native
+  var dark: TopbarTheme
   
-  var light: TopbarTheme = js.native
+  var light: TopbarTheme
 }
 object Topbar {
   

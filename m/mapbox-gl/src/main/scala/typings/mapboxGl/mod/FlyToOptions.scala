@@ -2,23 +2,22 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlyToOptions
-  extends AnimationOptions
+  extends StObject
+     with AnimationOptions
      with CameraOptions {
   
-  var curve: js.UndefOr[Double] = js.native
+  var curve: js.UndefOr[Double] = js.undefined
   
-  var maxDuration: js.UndefOr[Double] = js.native
+  var maxDuration: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var screenSpeed: js.UndefOr[Double] = js.native
+  var screenSpeed: js.UndefOr[Double] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
 }
 object FlyToOptions {
   

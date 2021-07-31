@@ -13,29 +13,27 @@ import typings.awsLambda.awsLambdaStrings.text_
 import typings.awsLambda.cloudfrontRequestMod._CloudFrontRequestResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudfrontMod {
   
-  @js.native
   trait CloudFrontCustomOrigin extends StObject {
     
-    var customHeaders: CloudFrontHeaders = js.native
+    var customHeaders: CloudFrontHeaders
     
-    var domainName: String = js.native
+    var domainName: String
     
-    var keepaliveTimeout: Double = js.native
+    var keepaliveTimeout: Double
     
-    var path: String = js.native
+    var path: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: http | https = js.native
+    var protocol: http | https
     
-    var readTimeout: Double = js.native
+    var readTimeout: Double
     
-    var sslProtocols: js.Array[String] = js.native
+    var sslProtocols: js.Array[String]
   }
   object CloudFrontCustomOrigin {
     
@@ -86,10 +84,9 @@ object cloudfrontMod {
     }
   }
   
-  @js.native
   trait CloudFrontEvent extends StObject {
     
-    var config: DistributionDomainName = js.native
+    var config: DistributionDomainName
   }
   object CloudFrontEvent {
     
@@ -129,22 +126,23 @@ object cloudfrontMod {
     }
   }
   
-  @js.native
-  trait CloudFrontRequest extends _CloudFrontRequestResult {
+  trait CloudFrontRequest
+    extends StObject
+       with _CloudFrontRequestResult {
     
-    var body: js.UndefOr[Action] = js.native
+    var body: js.UndefOr[Action] = js.undefined
     
-    val clientIp: String = js.native
+    val clientIp: String
     
-    var headers: CloudFrontHeaders = js.native
+    var headers: CloudFrontHeaders
     
-    val method: String = js.native
+    val method: String
     
-    var origin: js.UndefOr[CloudFrontOrigin] = js.native
+    var origin: js.UndefOr[CloudFrontOrigin] = js.undefined
     
-    var querystring: String = js.native
+    var querystring: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object CloudFrontRequest {
     
@@ -186,14 +184,13 @@ object cloudfrontMod {
     }
   }
   
-  @js.native
   trait CloudFrontResponse extends StObject {
     
-    var headers: CloudFrontHeaders = js.native
+    var headers: CloudFrontHeaders
     
-    var status: String = js.native
+    var status: String
     
-    var statusDescription: String = js.native
+    var statusDescription: String
   }
   object CloudFrontResponse {
     
@@ -217,18 +214,19 @@ object cloudfrontMod {
     }
   }
   
-  @js.native
-  trait CloudFrontResultResponse extends _CloudFrontRequestResult {
+  trait CloudFrontResultResponse
+    extends StObject
+       with _CloudFrontRequestResult {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var bodyEncoding: js.UndefOr[text_ | base64] = js.native
+    var bodyEncoding: js.UndefOr[text_ | base64] = js.undefined
     
-    var headers: js.UndefOr[CloudFrontHeaders] = js.native
+    var headers: js.UndefOr[CloudFrontHeaders] = js.undefined
     
-    var status: String = js.native
+    var status: String
     
-    var statusDescription: js.UndefOr[String] = js.native
+    var statusDescription: js.UndefOr[String] = js.undefined
   }
   object CloudFrontResultResponse {
     
@@ -270,18 +268,17 @@ object cloudfrontMod {
     }
   }
   
-  @js.native
   trait CloudFrontS3Origin extends StObject {
     
-    var authMethod: `origin-access-identity` | none_ = js.native
+    var authMethod: `origin-access-identity` | none_
     
-    var customHeaders: CloudFrontHeaders = js.native
+    var customHeaders: CloudFrontHeaders
     
-    var domainName: String = js.native
+    var domainName: String
     
-    var path: String = js.native
+    var path: String
     
-    var region: String = js.native
+    var region: String
   }
   object CloudFrontS3Origin {
     

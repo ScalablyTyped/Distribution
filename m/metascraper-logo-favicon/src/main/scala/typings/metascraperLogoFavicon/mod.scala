@@ -4,30 +4,30 @@ import typings.metascraper.mod.Rule
 import typings.node.httpMod.ClientRequestArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("metascraper-logo-favicon", JSImport.Namespace)
-  @js.native
-  def apply(): Rule = js.native
-  @JSImport("metascraper-logo-favicon", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Rule = js.native
+  @scala.inline
+  def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
+  @scala.inline
+  def apply(options: Options): Rule = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
+  @JSImport("metascraper-logo-favicon", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FaviconSize extends StObject {
     
-    var href: String = js.native
+    var href: String
     
-    var rel: js.UndefOr[String] = js.native
+    var rel: js.UndefOr[String] = js.undefined
     
-    var size: Double = js.native
+    var size: Double
     
-    var sizes: js.UndefOr[String] = js.native
+    var sizes: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object FaviconSize {
     
@@ -63,14 +63,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Any option provided here will passed to `got#options`. */
-    var gotOpts: js.UndefOr[ClientRequestArgs] = js.native
+    var gotOpts: js.UndefOr[ClientRequestArgs] = js.undefined
     
     /** Truncate the value extracted to a maximum size (default: `300`). */
-    var pickFn: js.UndefOr[PickFunction] = js.native
+    var pickFn: js.UndefOr[PickFunction] = js.undefined
   }
   object Options {
     

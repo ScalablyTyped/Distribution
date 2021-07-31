@@ -5,19 +5,17 @@ import typings.vegaLite.titleMod.BaseTitleNoValueRefs
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonMark extends StObject {
   
-  var nonMark: BaseTitleNoValueRefs[SignalRef] = js.native
+  var nonMark: BaseTitleNoValueRefs[SignalRef]
   
-  var subtitle: BaseTitleNoValueRefs[SignalRef] = js.native
+  var subtitle: BaseTitleNoValueRefs[SignalRef]
   
-  var subtitleMarkConfig: MarkConfig[SignalRef] = js.native
+  var subtitleMarkConfig: MarkConfig[SignalRef]
   
-  var titleMarkConfig: MarkConfig[SignalRef] = js.native
+  var titleMarkConfig: MarkConfig[SignalRef]
 }
 object NonMark {
   

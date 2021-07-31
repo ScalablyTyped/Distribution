@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniformSharding extends StObject {
   
   /**
     * Required. Total number of shards. When any physical devices are selected, the number must be >= 1 and <= 50. When no physical devices are selected, the number must be >= 1 and <=
     * 500.
     */
-  var numShards: js.UndefOr[Double] = js.native
+  var numShards: js.UndefOr[Double] = js.undefined
 }
 object UniformSharding {
   

@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audiomuted extends StObject {
   
-  var audio_muted: js.UndefOr[Boolean] = js.native
+  var audio_muted: js.UndefOr[Boolean] = js.undefined
   
-  var clips: js.UndefOr[js.Array[Length]] = js.native
+  var clips: js.UndefOr[js.Array[Length]] = js.undefined
   
-  var length: Double = js.native
+  var length: Double
   
-  var poster_frame_index: js.UndefOr[Double] = js.native
+  var poster_frame_index: js.UndefOr[Double] = js.undefined
 }
 object Audiomuted {
   

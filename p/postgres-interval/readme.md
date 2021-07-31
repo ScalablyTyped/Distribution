@@ -10,9 +10,9 @@ Parse Postgres interval columns
 | ------------------ | :-------------: |
 | Full name          | postgres-interval |
 | Keywords           | postgres, interval, parser |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 14 |
-| # downloads        | 53704614 |
+| # downloads        | 66704578 |
 | # stars            | 0 |
 
 ## Links

@@ -3,32 +3,26 @@ package typings.cesium.mod
 import typings.cesium.anon.Alpha
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Color")
 @js.native
 class Color () extends Packable {
   def this(red: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double) = this()
   def this(red: Double, green: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double) = this()
-  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double) = this()
+  def this(red: Unit, green: Double) = this()
   def this(red: Double, green: Double, blue: Double) = this()
-  def this(
-    red: js.UndefOr[scala.Nothing],
-    green: js.UndefOr[scala.Nothing],
-    blue: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double) = this()
-  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
-  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
-  def this(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
+  def this(red: Double, green: Unit, blue: Double) = this()
+  def this(red: Unit, green: Double, blue: Double) = this()
+  def this(red: Unit, green: Unit, blue: Double) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
+  def this(red: Double, green: Double, blue: Unit, alpha: Double) = this()
+  def this(red: Double, green: Unit, blue: Double, alpha: Double) = this()
+  def this(red: Double, green: Unit, blue: Unit, alpha: Double) = this()
+  def this(red: Unit, green: Double, blue: Double, alpha: Double) = this()
+  def this(red: Unit, green: Double, blue: Unit, alpha: Double) = this()
+  def this(red: Unit, green: Unit, blue: Double, alpha: Double) = this()
+  def this(red: Unit, green: Unit, blue: Unit, alpha: Double) = this()
   
   var alpha: Double = js.native
   
@@ -1104,390 +1098,215 @@ object Color {
   def YELLOW_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YELLOW")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "Color.add")
-  @js.native
-  def add(left: Color, right: Color): Color = js.native
-  @JSImport("cesium", "Color.add")
-  @js.native
-  def add(left: Color, right: Color, result: Color): Color = js.native
+  @scala.inline
+  def add(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def add(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.byteToFloat")
-  @js.native
-  def byteToFloat(number: Double): Double = js.native
+  @scala.inline
+  def byteToFloat(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteToFloat")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Color.clone")
-  @js.native
-  def clone_(color: Color): Color = js.native
-  @JSImport("cesium", "Color.clone")
-  @js.native
-  def clone_(color: Color, result: Color): Color = js.native
+  @scala.inline
+  def clone_(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
+  @scala.inline
+  def clone_(color: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.divide")
-  @js.native
-  def divide(left: Color, right: Color): Color = js.native
-  @JSImport("cesium", "Color.divide")
-  @js.native
-  def divide(left: Color, right: Color, result: Color): Color = js.native
+  @scala.inline
+  def divide(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def divide(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.divideByScalar")
-  @js.native
-  def divideByScalar(color: Color, scalar: Double): Color = js.native
-  @JSImport("cesium", "Color.divideByScalar")
-  @js.native
-  def divideByScalar(color: Color, scalar: Double, result: Color): Color = js.native
+  @scala.inline
+  def divideByScalar(color: Color, scalar: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divideByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def divideByScalar(color: Color, scalar: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divideByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.equals")
-  @js.native
-  def equals_(left: Color, right: Color): Boolean = js.native
+  @scala.inline
+  def equals_(left: Color, right: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("cesium", "Color.floatToByte")
-  @js.native
-  def floatToByte(number: Double): Double = js.native
+  @scala.inline
+  def floatToByte(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("floatToByte")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("cesium", "Color.fromAlpha")
-  @js.native
-  def fromAlpha(color: Color, alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromAlpha")
-  @js.native
-  def fromAlpha(color: Color, alpha: Double, result: Color): Color = js.native
+  @scala.inline
+  def fromAlpha(color: Color, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAlpha")(color.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromAlpha(color: Color, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAlpha")(color.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: js.UndefOr[scala.Nothing],
-    blue: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: js.UndefOr[scala.Nothing],
-    blue: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: js.UndefOr[scala.Nothing],
-    blue: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: js.UndefOr[scala.Nothing],
-    blue: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: js.UndefOr[scala.Nothing],
-    blue: Double,
-    alpha: Double,
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: Double,
-    blue: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: Double,
-    blue: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: js.UndefOr[scala.Nothing],
-    green: Double,
-    blue: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double, result: Color): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: Double,
-    green: js.UndefOr[scala.Nothing],
-    blue: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: Double,
-    green: js.UndefOr[scala.Nothing],
-    blue: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: Double,
-    green: js.UndefOr[scala.Nothing],
-    blue: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double, result: Color): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(
-    red: Double,
-    green: Double,
-    blue: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    result: Color
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double, result: Color): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: Double, blue: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: Double, blue: Double, alpha: js.UndefOr[scala.Nothing], result: Color): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: Double, blue: Double, alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromBytes")
-  @js.native
-  def fromBytes(red: Double, green: Double, blue: Double, alpha: Double, result: Color): Color = js.native
+  @scala.inline
+  def fromBytes(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")().asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any]).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double, blue: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double, blue: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double, blue: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double, blue: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double, blue: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double, blue: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Double, blue: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Unit, blue: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Unit, blue: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Unit, blue: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Unit, blue: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Unit, blue: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Unit, blue: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Double, green: Unit, blue: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double, blue: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double, blue: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double, blue: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double, blue: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double, blue: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double, blue: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Double, blue: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Unit, blue: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Unit, blue: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Unit, blue: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Unit, blue: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Unit, blue: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Unit, blue: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromBytes(red: Unit, green: Unit, blue: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.fromCartesian4")
-  @js.native
-  def fromCartesian4(cartesian: Cartesian4): Color = js.native
-  @JSImport("cesium", "Color.fromCartesian4")
-  @js.native
-  def fromCartesian4(cartesian: Cartesian4, result: Color): Color = js.native
+  @scala.inline
+  def fromCartesian4(cartesian: Cartesian4): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian4")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Color]
+  @scala.inline
+  def fromCartesian4(cartesian: Cartesian4, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian4")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.fromCssColorString")
-  @js.native
-  def fromCssColorString(color: String): Color = js.native
+  @scala.inline
+  def fromCssColorString(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCssColorString")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(
-    hue: js.UndefOr[scala.Nothing],
-    saturation: js.UndefOr[scala.Nothing],
-    lightness: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: js.UndefOr[scala.Nothing], lightness: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(
-    hue: js.UndefOr[scala.Nothing],
-    saturation: js.UndefOr[scala.Nothing],
-    lightness: Double,
-    alpha: Double
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(
-    hue: js.UndefOr[scala.Nothing],
-    saturation: Double,
-    lightness: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: Double, lightness: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: Double, lightness: Double, alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(
-    hue: Double,
-    saturation: js.UndefOr[scala.Nothing],
-    lightness: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double, alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: Double, saturation: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: Double, saturation: Double, lightness: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: Double, saturation: Double, lightness: Double): Color = js.native
-  @JSImport("cesium", "Color.fromHsl")
-  @js.native
-  def fromHsl(hue: Double, saturation: Double, lightness: Double, alpha: Double): Color = js.native
+  @scala.inline
+  def fromHsl(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")().asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any]).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double, saturation: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double, saturation: Double, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double, saturation: Double, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double, saturation: Double, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double, saturation: Unit, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double, saturation: Unit, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Double, saturation: Unit, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Unit, saturation: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Unit, saturation: Double, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Unit, saturation: Double, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Unit, saturation: Double, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Unit, saturation: Unit, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Unit, saturation: Unit, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromHsl(hue: Unit, saturation: Unit, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.fromRandom")
-  @js.native
-  def fromRandom(): Color = js.native
-  @JSImport("cesium", "Color.fromRandom")
-  @js.native
-  def fromRandom(options: js.UndefOr[scala.Nothing], result: Color): Color = js.native
-  @JSImport("cesium", "Color.fromRandom")
-  @js.native
-  def fromRandom(options: Alpha): Color = js.native
-  @JSImport("cesium", "Color.fromRandom")
-  @js.native
-  def fromRandom(options: Alpha, result: Color): Color = js.native
+  @scala.inline
+  def fromRandom(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")().asInstanceOf[Color]
+  @scala.inline
+  def fromRandom(options: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")(options.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def fromRandom(options: Alpha): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")(options.asInstanceOf[js.Any]).asInstanceOf[Color]
+  @scala.inline
+  def fromRandom(options: Alpha, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")(options.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.fromRgba")
-  @js.native
-  def fromRgba(rgba: Double): Color = js.native
+  @scala.inline
+  def fromRgba(rgba: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRgba")(rgba.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   /**
     * Computes the linear interpolation or extrapolation at t between the provided colors.
     */
   /* static member */
-  @JSImport("cesium", "Color.lerp")
-  @js.native
-  def lerp(start: Color, end: Color, t: Double, result: Color): Color = js.native
+  @scala.inline
+  def lerp(start: Color, end: Color, t: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], t.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.mod")
-  @js.native
-  def mod(left: Color, right: Color): Color = js.native
-  @JSImport("cesium", "Color.mod")
-  @js.native
-  def mod(left: Color, right: Color, result: Color): Color = js.native
+  @scala.inline
+  def mod(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def mod(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.multiply")
-  @js.native
-  def multiply(left: Color, right: Color): Color = js.native
-  @JSImport("cesium", "Color.multiply")
-  @js.native
-  def multiply(left: Color, right: Color, result: Color): Color = js.native
+  @scala.inline
+  def multiply(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def multiply(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.multiplyByScalar")
-  @js.native
-  def multiplyByScalar(color: Color, scalar: Double): Color = js.native
-  @JSImport("cesium", "Color.multiplyByScalar")
-  @js.native
-  def multiplyByScalar(color: Color, scalar: Double, result: Color): Color = js.native
+  @scala.inline
+  def multiplyByScalar(color: Color, scalar: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def multiplyByScalar(color: Color, scalar: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.pack")
-  @js.native
-  def pack(value: Color, array: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("cesium", "Color.pack")
-  @js.native
-  def pack(value: Color, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
+  @scala.inline
+  def pack(value: Color, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def pack(value: Color, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @JSImport("cesium", "Color.subtract")
-  @js.native
-  def subtract(left: Color, right: Color): Color = js.native
-  @JSImport("cesium", "Color.subtract")
-  @js.native
-  def subtract(left: Color, right: Color, result: Color): Color = js.native
+  @scala.inline
+  def subtract(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def subtract(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /* static member */
-  @JSImport("cesium", "Color.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): Color = js.native
-  @JSImport("cesium", "Color.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Color): Color = js.native
-  @JSImport("cesium", "Color.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): Color = js.native
-  @JSImport("cesium", "Color.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: Color): Color = js.native
+  @scala.inline
+  def unpack(array: js.Array[Double]): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[Color]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
 }

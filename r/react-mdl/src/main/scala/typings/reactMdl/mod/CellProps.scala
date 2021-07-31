@@ -3,36 +3,35 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellProps
-  extends HTMLProps[js.Any]
+  extends StObject
+     with HTMLProps[js.Any]
      with CustomRenderedComponent
      with ShadowedComponent {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var col: Double = js.native
+  var col: Double
   
-  var hideDesktop: js.UndefOr[Boolean] = js.native
+  var hideDesktop: js.UndefOr[Boolean] = js.undefined
   
-  var hidePhone: js.UndefOr[Boolean] = js.native
+  var hidePhone: js.UndefOr[Boolean] = js.undefined
   
-  var hideTablet: js.UndefOr[Boolean] = js.native
+  var hideTablet: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var offsetDesktop: js.UndefOr[Double] = js.native
+  var offsetDesktop: js.UndefOr[Double] = js.undefined
   
-  var offsetPhone: js.UndefOr[Double] = js.native
+  var offsetPhone: js.UndefOr[Double] = js.undefined
   
-  var offsetTablet: js.UndefOr[Double] = js.native
+  var offsetTablet: js.UndefOr[Double] = js.undefined
   
-  var phone: js.UndefOr[Double] = js.native
+  var phone: js.UndefOr[Double] = js.undefined
   
-  var tablet: js.UndefOr[Double] = js.native
+  var tablet: js.UndefOr[Double] = js.undefined
 }
 object CellProps {
   

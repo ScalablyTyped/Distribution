@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedCreateAssociation extends StObject {
   
   /**
     * The association.
     */
-  var Entry: js.UndefOr[CreateAssociationBatchRequestEntry] = js.native
+  var Entry: js.UndefOr[CreateAssociationBatchRequestEntry] = js.undefined
   
   /**
     * The source of the failure.
     */
-  var Fault: js.UndefOr[typings.awsSdk.ssmMod.Fault] = js.native
+  var Fault: js.UndefOr[typings.awsSdk.ssmMod.Fault] = js.undefined
   
   /**
     * A description of the failure.
     */
-  var Message: js.UndefOr[BatchErrorMessage] = js.native
+  var Message: js.UndefOr[BatchErrorMessage] = js.undefined
 }
 object FailedCreateAssociation {
   

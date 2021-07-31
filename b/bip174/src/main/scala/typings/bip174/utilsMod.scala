@@ -10,59 +10,49 @@ import typings.bip174.interfacesMod.PsbtOutputUpdate
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("bip174/src/lib/utils", "addInputAttributes")
+  @JSImport("bip174/src/lib/utils", JSImport.Namespace)
   @js.native
-  def addInputAttributes(inputs: js.Array[PsbtInput], data: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bip174/src/lib/utils", "addOutputAttributes")
-  @js.native
-  def addOutputAttributes(outputs: js.Array[PsbtOutput], data: js.Any): Unit = js.native
+  @scala.inline
+  def addInputAttributes(inputs: js.Array[PsbtInput], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addInputAttributes")(inputs.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bip174/src/lib/utils", "checkForInput")
-  @js.native
-  def checkForInput(inputs: js.Array[PsbtInput], inputIndex: Double): PsbtInput = js.native
+  @scala.inline
+  def addOutputAttributes(outputs: js.Array[PsbtOutput], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOutputAttributes")(outputs.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bip174/src/lib/utils", "checkForOutput")
-  @js.native
-  def checkForOutput(outputs: js.Array[PsbtOutput], outputIndex: Double): PsbtOutput = js.native
+  @scala.inline
+  def checkForInput(inputs: js.Array[PsbtInput], inputIndex: Double): PsbtInput = (^.asInstanceOf[js.Dynamic].applyDynamic("checkForInput")(inputs.asInstanceOf[js.Any], inputIndex.asInstanceOf[js.Any])).asInstanceOf[PsbtInput]
   
-  @JSImport("bip174/src/lib/utils", "checkHasKey")
-  @js.native
-  def checkHasKey(checkKeyVal: KeyValue, keyVals: js.UndefOr[scala.Nothing], enumLength: Double): Unit = js.native
-  @JSImport("bip174/src/lib/utils", "checkHasKey")
-  @js.native
-  def checkHasKey(checkKeyVal: KeyValue, keyVals: js.Array[KeyValue], enumLength: Double): Unit = js.native
+  @scala.inline
+  def checkForOutput(outputs: js.Array[PsbtOutput], outputIndex: Double): PsbtOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("checkForOutput")(outputs.asInstanceOf[js.Any], outputIndex.asInstanceOf[js.Any])).asInstanceOf[PsbtOutput]
   
-  @JSImport("bip174/src/lib/utils", "defaultLocktimeSetter")
-  @js.native
-  def defaultLocktimeSetter(locktime: Double, txBuf: Buffer): Buffer = js.native
+  @scala.inline
+  def checkHasKey(checkKeyVal: KeyValue, keyVals: js.Array[KeyValue], enumLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkHasKey")(checkKeyVal.asInstanceOf[js.Any], keyVals.asInstanceOf[js.Any], enumLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkHasKey(checkKeyVal: KeyValue, keyVals: Unit, enumLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkHasKey")(checkKeyVal.asInstanceOf[js.Any], keyVals.asInstanceOf[js.Any], enumLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bip174/src/lib/utils", "defaultVersionSetter")
-  @js.native
-  def defaultVersionSetter(version: Double, txBuf: Buffer): Buffer = js.native
+  @scala.inline
+  def defaultLocktimeSetter(locktime: Double, txBuf: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLocktimeSetter")(locktime.asInstanceOf[js.Any], txBuf.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bip174/src/lib/utils", "getEnumLength")
-  @js.native
-  def getEnumLength(myenum: js.Any): Double = js.native
+  @scala.inline
+  def defaultVersionSetter(version: Double, txBuf: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultVersionSetter")(version.asInstanceOf[js.Any], txBuf.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bip174/src/lib/utils", "inputCheckUncleanFinalized")
-  @js.native
-  def inputCheckUncleanFinalized(inputIndex: Double, input: PsbtInput): Unit = js.native
+  @scala.inline
+  def getEnumLength(myenum: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnumLength")(myenum.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bip174/src/lib/utils", "updateGlobal")
-  @js.native
-  def updateGlobal(updateData: PsbtGlobalUpdate, mainData: PsbtGlobal): Unit = js.native
+  @scala.inline
+  def inputCheckUncleanFinalized(inputIndex: Double, input: PsbtInput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inputCheckUncleanFinalized")(inputIndex.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bip174/src/lib/utils", "updateInput")
-  @js.native
-  def updateInput(updateData: PsbtInputUpdate, mainData: PsbtInput): Unit = js.native
+  @scala.inline
+  def updateGlobal(updateData: PsbtGlobalUpdate, mainData: PsbtGlobal): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGlobal")(updateData.asInstanceOf[js.Any], mainData.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bip174/src/lib/utils", "updateOutput")
-  @js.native
-  def updateOutput(updateData: PsbtOutputUpdate, mainData: PsbtOutput): Unit = js.native
+  @scala.inline
+  def updateInput(updateData: PsbtInputUpdate, mainData: PsbtInput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInput")(updateData.asInstanceOf[js.Any], mainData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def updateOutput(updateData: PsbtOutputUpdate, mainData: PsbtOutput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateOutput")(updateData.asInstanceOf[js.Any], mainData.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

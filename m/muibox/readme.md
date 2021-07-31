@@ -10,9 +10,9 @@ Promise-based dialog boxes (alert, confirm, prompt) using Material-UI
 | ------------------ | :-------------: |
 | Full name          | muibox |
 | Keywords           | react, material, material-design, material-ui, mui, dialog, modal |
-| # releases         | 12 |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 11643 |
+| # downloads        | 14322 |
 | # stars            | 0 |
 
 ## Links

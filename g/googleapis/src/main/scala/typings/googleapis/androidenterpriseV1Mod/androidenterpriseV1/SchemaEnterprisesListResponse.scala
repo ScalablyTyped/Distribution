@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The matching enterprise resources.
   */
-@js.native
 trait SchemaEnterprisesListResponse extends StObject {
   
   /**
     * An enterprise.
     */
-  var enterprise: js.UndefOr[js.Array[SchemaEnterprise]] = js.native
+  var enterprise: js.UndefOr[js.Array[SchemaEnterprise]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#enterprisesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaEnterprisesListResponse {
   

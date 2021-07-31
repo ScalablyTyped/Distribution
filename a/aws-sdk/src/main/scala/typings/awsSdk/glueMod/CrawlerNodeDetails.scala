@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrawlerNodeDetails extends StObject {
   
   /**
     * A list of crawls represented by the crawl node.
     */
-  var Crawls: js.UndefOr[CrawlList] = js.native
+  var Crawls: js.UndefOr[CrawlList] = js.undefined
 }
 object CrawlerNodeDetails {
   

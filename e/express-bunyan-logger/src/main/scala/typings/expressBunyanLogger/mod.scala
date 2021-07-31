@@ -3,7 +3,6 @@ package typings.expressBunyanLogger
 import typings.bunyan.mod.LogLevel
 import typings.bunyan.mod.Serializers
 import typings.bunyan.mod.Stream
-import typings.bunyan.mod.^
 import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
@@ -14,24 +13,23 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-bunyan-logger", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-bunyan-logger", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("express-bunyan-logger", "errorLogger")
+  @JSImport("express-bunyan-logger", JSImport.Namespace)
   @js.native
-  def errorLogger(): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-bunyan-logger", "errorLogger")
-  @js.native
-  def errorLogger(options: Options): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def errorLogger(): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")().asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def errorLogger(options: Options): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   type FormatFunction = js.Function1[/* meta */ js.Any, String]
   
@@ -44,40 +42,39 @@ object mod {
   type LevelFunction = js.Function3[/* status */ Double, /* err */ Error | Null, /* meta */ js.Any, String]
   
   /* Inlined parent std.Partial<bunyan.bunyan.LoggerOptions> */
-  @js.native
   trait Options extends StObject {
     
-    var excludes: js.UndefOr[js.Array[String]] = js.native
+    var excludes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var format: js.UndefOr[String | FormatFunction] = js.native
+    var format: js.UndefOr[String | FormatFunction] = js.undefined
     
-    var genReqId: js.UndefOr[RequestIdGenFunction] = js.native
+    var genReqId: js.UndefOr[RequestIdGenFunction] = js.undefined
     
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
-    var includesFn: js.UndefOr[IncludesFunction] = js.native
+    var includesFn: js.UndefOr[IncludesFunction] = js.undefined
     
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
-    var levelFn: js.UndefOr[LevelFunction] = js.native
+    var levelFn: js.UndefOr[LevelFunction] = js.undefined
     
-    var logger: js.UndefOr[^] = js.native
+    var logger: js.UndefOr[typings.bunyan.mod.^] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var obfuscate: js.UndefOr[js.Array[String]] = js.native
+    var obfuscate: js.UndefOr[js.Array[String]] = js.undefined
     
-    var obfuscatePlaceholder: js.UndefOr[String] = js.native
+    var obfuscatePlaceholder: js.UndefOr[String] = js.undefined
     
-    var parseUA: js.UndefOr[Boolean] = js.native
+    var parseUA: js.UndefOr[Boolean] = js.undefined
     
-    var serializers: js.UndefOr[Serializers] = js.native
+    var serializers: js.UndefOr[Serializers] = js.undefined
     
-    var src: js.UndefOr[Boolean] = js.native
+    var src: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
-    var streams: js.UndefOr[js.Array[Stream]] = js.native
+    var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   }
   object Options {
     
@@ -141,7 +138,7 @@ object mod {
       def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
       @scala.inline
-      def setLogger(value: ^): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      def setLogger(value: typings.bunyan.mod.^): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)

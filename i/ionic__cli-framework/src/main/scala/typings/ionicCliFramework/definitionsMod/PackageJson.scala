@@ -3,27 +3,25 @@ package typings.ionicCliFramework.definitionsMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageJson extends StObject {
   
-  var bin: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var bin: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var dependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var dependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var devDependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var devDependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var main: js.UndefOr[String] = js.native
+  var main: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var scripts: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var scripts: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var version: String = js.native
+  var version: String
 }
 object PackageJson {
   

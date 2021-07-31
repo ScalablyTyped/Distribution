@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.seleniumWebdriver.mod.Capabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofCapabilities extends Instantiable0[Capabilities] {
+trait TypeofCapabilities
+  extends StObject
+     with Instantiable0[Capabilities] {
   
   // endregion
   // region Static Methods

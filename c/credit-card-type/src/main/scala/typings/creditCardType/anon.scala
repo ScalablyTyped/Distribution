@@ -5,17 +5,15 @@ import typings.creditCardType.creditCardTypeNumbers.`4`
 import typings.creditCardType.typesMod.CreditCardTypeSecurityCodeLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object Name {
     
@@ -37,22 +35,21 @@ object anon {
   }
   
   /* Inlined std.Partial<credit-card-type.credit-card-type/dist/types.CreditCardType> */
-  @js.native
   trait PartialCreditCardType extends StObject {
     
-    var code: js.UndefOr[Name] = js.native
+    var code: js.UndefOr[Name] = js.undefined
     
-    var gaps: js.UndefOr[js.Array[Double]] = js.native
+    var gaps: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lengths: js.UndefOr[js.Array[Double]] = js.native
+    var lengths: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var matchStrength: js.UndefOr[Double] = js.native
+    var matchStrength: js.UndefOr[Double] = js.undefined
     
-    var niceType: js.UndefOr[String] = js.native
+    var niceType: js.UndefOr[String] = js.undefined
     
-    var patterns: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.native
+    var patterns: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PartialCreditCardType {
     
@@ -118,12 +115,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var name: CreditCardTypeSecurityCodeLabel = js.native
+    var name: CreditCardTypeSecurityCodeLabel
     
-    var size: `3` | `4` = js.native
+    var size: `3` | `4`
   }
   object Size {
     

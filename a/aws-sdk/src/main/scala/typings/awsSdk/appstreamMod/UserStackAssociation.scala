@@ -2,31 +2,29 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserStackAssociation extends StObject {
   
   /**
     * The authentication type for the user.
     */
-  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType = js.native
+  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType
   
   /**
     * Specifies whether a welcome email is sent to a user after the user is created in the user pool.
     */
-  var SendEmailNotification: js.UndefOr[Boolean] = js.native
+  var SendEmailNotification: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the stack that is associated with the user.
     */
-  var StackName: String = js.native
+  var StackName: String
   
   /**
     * The email address of the user who is associated with the stack.  Users' email addresses are case-sensitive. 
     */
-  var UserName: Username = js.native
+  var UserName: Username
 }
 object UserStackAssociation {
   

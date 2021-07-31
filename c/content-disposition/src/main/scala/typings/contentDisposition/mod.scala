@@ -4,7 +4,6 @@ import typings.contentDisposition.contentDispositionStrings.`inline`
 import typings.contentDisposition.contentDispositionStrings.attachment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,42 +12,40 @@ object mod {
     * Create an attachment `Content-Disposition` header value using the given file name, if supplied.
     * The `filename` is optional and if no file name is desired, but you want to specify options, set `filename` to undefined.
     */
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(filename: String): String = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(filename: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(filename: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("content-disposition", JSImport.Namespace)
   @js.native
-  def apply(): String = js.native
-  @JSImport("content-disposition", JSImport.Namespace)
-  @js.native
-  def apply(filename: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("content-disposition", JSImport.Namespace)
-  @js.native
-  def apply(filename: String): String = js.native
-  @JSImport("content-disposition", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parse a Content-Disposition header string
     */
-  @JSImport("content-disposition", "parse")
-  @js.native
-  def parse(contentDispositionHeader: String): ContentDisposition = js.native
+  @scala.inline
+  def parse(contentDispositionHeader: String): ContentDisposition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contentDispositionHeader.asInstanceOf[js.Any]).asInstanceOf[ContentDisposition]
   
   /**
     * Class for parsed Content-Disposition header for v8 optimization
     */
-  @js.native
   trait ContentDisposition extends StObject {
     
     /**
       * An object of the parameters in the disposition
       * (name of parameter always lower case and extended versions replace non-extended versions)
       */
-    var parameters: js.Any = js.native
+    var parameters: js.Any
     
     /**
       * The disposition type (always lower case)
       */
-    var `type`: attachment | `inline` | String = js.native
+    var `type`: attachment | `inline` | String
   }
   object ContentDisposition {
     
@@ -70,7 +67,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -79,7 +75,7 @@ object mod {
       * that support Unicode file names and a ISO-8859-1 version of the file name is automatically generated
       * @default true
       */
-    var fallback: js.UndefOr[String | Boolean] = js.native
+    var fallback: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Specifies the disposition type.
@@ -88,7 +84,7 @@ object mod {
       * The `type` is normalized to lower-case.
       * @default 'attachment'
       */
-    var `type`: js.UndefOr[attachment | `inline` | String] = js.native
+    var `type`: js.UndefOr[attachment | `inline` | String] = js.undefined
   }
   object Options {
     

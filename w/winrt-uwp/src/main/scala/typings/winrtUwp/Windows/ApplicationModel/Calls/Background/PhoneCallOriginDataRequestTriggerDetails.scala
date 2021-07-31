@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to provide the origin details of the phone call. */
-@js.native
 trait PhoneCallOriginDataRequestTriggerDetails extends StObject {
   
   /** Gets the phone number for the origin of the phone call. */
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
   /** Gets the unique identifier for this phone call. */
-  var requestId: String = js.native
+  var requestId: String
 }
 object PhoneCallOriginDataRequestTriggerDetails {
   

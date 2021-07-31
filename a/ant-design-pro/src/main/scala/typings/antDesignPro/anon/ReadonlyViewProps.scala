@@ -5,32 +5,30 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.ViewProps> */
-@js.native
 trait ReadonlyViewProps extends StObject {
   
-  val animate: js.UndefOr[Boolean] = js.native
+  val animate: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val data: js.UndefOr[js.Any] = js.native
+  val data: js.UndefOr[js.Any] = js.undefined
   
-  val end: js.UndefOr[typings.bizcharts.anon.X] = js.native
+  val end: js.UndefOr[typings.bizcharts.anon.X] = js.undefined
   
-  val filter: js.UndefOr[js.Array[_]] = js.native
+  val filter: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
-  val key: js.UndefOr[typings.react.mod.Key] = js.native
+  val key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  val ref: js.UndefOr[LegacyRef[_]] = js.native
+  val ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  val scale: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val scale: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  val start: js.UndefOr[typings.bizcharts.anon.X] = js.native
+  val start: js.UndefOr[typings.bizcharts.anon.X] = js.undefined
 }
 object ReadonlyViewProps {
   
@@ -68,7 +66,7 @@ object ReadonlyViewProps {
     def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -89,10 +87,10 @@ object ReadonlyViewProps {
     def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: LegacyRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

@@ -2,34 +2,32 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SELinuxOptions are the labels to be applied to the container
   */
-@js.native
 trait SELinuxOptions extends StObject {
   
   /**
     * Level is SELinux level label that applies to the container.
     */
-  var level: String = js.native
+  var level: String
   
   /**
     * Role is a SELinux role label that applies to the container.
     */
-  var role: String = js.native
+  var role: String
   
   /**
     * Type is a SELinux type label that applies to the container.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * User is a SELinux user label that applies to the container.
     */
-  var user: String = js.native
+  var user: String
 }
 object SELinuxOptions {
   

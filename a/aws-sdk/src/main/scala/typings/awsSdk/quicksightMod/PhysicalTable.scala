@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhysicalTable extends StObject {
   
   /**
     * A physical table type built from the results of the custom SQL query.
     */
-  var CustomSql: js.UndefOr[typings.awsSdk.quicksightMod.CustomSql] = js.native
+  var CustomSql: js.UndefOr[typings.awsSdk.quicksightMod.CustomSql] = js.undefined
   
   /**
     * A physical table type for relational data sources.
     */
-  var RelationalTable: js.UndefOr[typings.awsSdk.quicksightMod.RelationalTable] = js.native
+  var RelationalTable: js.UndefOr[typings.awsSdk.quicksightMod.RelationalTable] = js.undefined
   
   /**
     * A physical table type for as S3 data source.
     */
-  var S3Source: js.UndefOr[typings.awsSdk.quicksightMod.S3Source] = js.native
+  var S3Source: js.UndefOr[typings.awsSdk.quicksightMod.S3Source] = js.undefined
 }
 object PhysicalTable {
   

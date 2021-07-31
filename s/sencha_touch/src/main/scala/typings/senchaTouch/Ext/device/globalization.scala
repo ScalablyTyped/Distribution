@@ -3,43 +3,43 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalization {
   
-  @js.native
-  trait IAbstract extends IObservable {
+  trait IAbstract
+    extends StObject
+       with IObservable {
     
     /** [Method] Returns the value of currencyCode
       * @returns String
       */
-    var getCurrencyCode: js.UndefOr[js.Function0[String]] = js.native
+    var getCurrencyCode: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of dateType
       * @returns String
       */
-    var getDateType: js.UndefOr[js.Function0[String]] = js.native
+    var getDateType: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of formatLength
       * @returns String
       */
-    var getFormatLength: js.UndefOr[js.Function0[String]] = js.native
+    var getFormatLength: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of items
       * @returns String
       */
-    var getItems: js.UndefOr[js.Function0[String]] = js.native
+    var getItems: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of numberType
       * @returns String
       */
-    var getNumberType: js.UndefOr[js.Function0[String]] = js.native
+    var getNumberType: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of selector
       * @returns String
       */
-    var getSelector: js.UndefOr[js.Function0[String]] = js.native
+    var getSelector: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -49,37 +49,37 @@ object globalization {
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of currencyCode
       * @param currencyCode String The new value.
       */
-    var setCurrencyCode: js.UndefOr[js.Function1[/* currencyCode */ js.UndefOr[String], Unit]] = js.native
+    var setCurrencyCode: js.UndefOr[js.Function1[/* currencyCode */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of dateType
       * @param dateType String The new value.
       */
-    var setDateType: js.UndefOr[js.Function1[/* dateType */ js.UndefOr[String], Unit]] = js.native
+    var setDateType: js.UndefOr[js.Function1[/* dateType */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of formatLength
       * @param formatLength String The new value.
       */
-    var setFormatLength: js.UndefOr[js.Function1[/* formatLength */ js.UndefOr[String], Unit]] = js.native
+    var setFormatLength: js.UndefOr[js.Function1[/* formatLength */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of items
       * @param items String The new value.
       */
-    var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[String], Unit]] = js.native
+    var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of numberType
       * @param numberType String The new value.
       */
-    var setNumberType: js.UndefOr[js.Function1[/* numberType */ js.UndefOr[String], Unit]] = js.native
+    var setNumberType: js.UndefOr[js.Function1[/* numberType */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of selector
       * @param selector String The new value.
       */
-    var setSelector: js.UndefOr[js.Function1[/* selector */ js.UndefOr[String], Unit]] = js.native
+    var setSelector: js.UndefOr[js.Function1[/* selector */ js.UndefOr[String], Unit]] = js.undefined
   }
   object IAbstract {
     

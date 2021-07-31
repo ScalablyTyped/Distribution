@@ -2,19 +2,17 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An array value.
   */
-@js.native
 trait SchemaArrayValue extends StObject {
   
   /**
     * Values in the array.
     */
-  var values: js.UndefOr[js.Array[SchemaValue]] = js.native
+  var values: js.UndefOr[js.Array[SchemaValue]] = js.undefined
 }
 object SchemaArrayValue {
   

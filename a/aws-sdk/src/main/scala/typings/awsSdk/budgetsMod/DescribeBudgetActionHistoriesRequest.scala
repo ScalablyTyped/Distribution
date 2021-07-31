@@ -2,26 +2,24 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBudgetActionHistoriesRequest extends StObject {
   
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     *  A system-generated universally unique identifier (UUID) for the action. 
     */
-  var ActionId: typings.awsSdk.budgetsMod.ActionId = js.native
+  var ActionId: typings.awsSdk.budgetsMod.ActionId
   
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
-  var MaxResults: js.UndefOr[typings.awsSdk.budgetsMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.budgetsMod.MaxResults] = js.undefined
   
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
-  var TimePeriod: js.UndefOr[typings.awsSdk.budgetsMod.TimePeriod] = js.native
+  var TimePeriod: js.UndefOr[typings.awsSdk.budgetsMod.TimePeriod] = js.undefined
 }
 object DescribeBudgetActionHistoriesRequest {
   

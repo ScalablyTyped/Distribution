@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait I18nDebug extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait I18nDebug extends StObject {
     * production. Its presence is purely to help debug issue in development, and should not be relied
     * on in production application.
     */
-  var debug: js.UndefOr[js.Array[String]] = js.native
+  var debug: js.UndefOr[js.Array[String]] = js.undefined
 }
 object I18nDebug {
   

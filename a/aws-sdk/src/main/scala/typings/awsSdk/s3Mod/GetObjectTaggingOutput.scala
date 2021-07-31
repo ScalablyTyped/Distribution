@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectTaggingOutput extends StObject {
   
   /**
     * Contains the tag set.
     */
-  var TagSet: typings.awsSdk.s3Mod.TagSet = js.native
+  var TagSet: typings.awsSdk.s3Mod.TagSet
   
   /**
     * The versionId of the object for which you got the tagging information.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.native
+  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
 }
 object GetObjectTaggingOutput {
   

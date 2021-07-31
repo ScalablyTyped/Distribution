@@ -3,15 +3,13 @@ package typings.aceBuilds.anon
 import typings.aceBuilds.mod.Ace.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstRange extends StObject {
   
-  var firstRange: Range = js.native
+  var firstRange: Range
   
-  var range: js.UndefOr[Range] = js.native
+  var range: js.UndefOr[Range] = js.undefined
 }
 object FirstRange {
   

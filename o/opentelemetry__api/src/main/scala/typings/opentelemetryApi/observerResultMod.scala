@@ -3,15 +3,13 @@ package typings.opentelemetryApi
 import typings.opentelemetryApi.metricMod.Labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observerResultMod {
   
-  @js.native
   trait ObserverResult extends StObject {
     
-    def observe(value: Double, labels: Labels): Unit = js.native
+    def observe(value: Double, labels: Labels): Unit
   }
   object ObserverResult {
     

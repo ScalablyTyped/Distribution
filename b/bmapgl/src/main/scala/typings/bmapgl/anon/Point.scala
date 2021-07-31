@@ -2,21 +2,19 @@ package typings.bmapgl.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Point extends StObject {
   
-  var pixel: typings.bmapgl.BMapGL.Pixel = js.native
+  var pixel: typings.bmapgl.BMapGL.Pixel
   
-  var point: typings.bmapgl.BMapGL.Point = js.native
+  var point: typings.bmapgl.BMapGL.Point
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object Point {
   

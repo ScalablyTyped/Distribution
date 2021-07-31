@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestErrorEventUIParam extends StObject {
   
   /**
     * Gets the processed error message sent by the server
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the whole response object
     */
-  var response: js.UndefOr[js.Any] = js.native
+  var response: js.UndefOr[js.Any] = js.undefined
 }
 object RequestErrorEventUIParam {
   

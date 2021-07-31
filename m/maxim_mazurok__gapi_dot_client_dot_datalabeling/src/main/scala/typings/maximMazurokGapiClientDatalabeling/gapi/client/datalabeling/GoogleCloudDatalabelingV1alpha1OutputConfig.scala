@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1alpha1OutputConfig extends StObject {
   
   /** Output to a file in Cloud Storage. Should be used for labeling output other than image segmentation. */
-  var gcsDestination: js.UndefOr[GoogleCloudDatalabelingV1alpha1GcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GoogleCloudDatalabelingV1alpha1GcsDestination] = js.undefined
   
   /** Output to a folder in Cloud Storage. Should be used for image segmentation or document de-identification labeling outputs. */
-  var gcsFolderDestination: js.UndefOr[GoogleCloudDatalabelingV1alpha1GcsFolderDestination] = js.native
+  var gcsFolderDestination: js.UndefOr[GoogleCloudDatalabelingV1alpha1GcsFolderDestination] = js.undefined
 }
 object GoogleCloudDatalabelingV1alpha1OutputConfig {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClusterRequest extends StObject {
   
   /**
     * The name of the cluster to describe.
     */
-  var name: String = js.native
+  var name: String
 }
 object DescribeClusterRequest {
   

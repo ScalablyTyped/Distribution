@@ -3,53 +3,51 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchOptions extends StObject {
   
-  var doubleTapTimeout: js.UndefOr[Double] = js.native
+  var doubleTapTimeout: js.UndefOr[Double] = js.undefined
   
-  var doubletap: js.UndefOr[js.Function1[/* e */ TouchDoubletapEvent, Unit]] = js.native
+  var doubletap: js.UndefOr[js.Function1[/* e */ TouchDoubletapEvent, Unit]] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ TouchDragEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ TouchDragEvent, Unit]] = js.undefined
   
-  var dragend: js.UndefOr[js.Function1[/* e */ TouchDragendEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ TouchDragendEvent, Unit]] = js.undefined
   
-  var dragstart: js.UndefOr[js.Function1[/* e */ TouchDragstartEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ TouchDragstartEvent, Unit]] = js.undefined
   
-  var enableSwipe: js.UndefOr[Boolean] = js.native
+  var enableSwipe: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var gesturechange: js.UndefOr[js.Function1[/* e */ TouchGesturechangeEvent, Unit]] = js.native
+  var gesturechange: js.UndefOr[js.Function1[/* e */ TouchGesturechangeEvent, Unit]] = js.undefined
   
-  var gestureend: js.UndefOr[js.Function1[/* e */ TouchGestureendEvent, Unit]] = js.native
+  var gestureend: js.UndefOr[js.Function1[/* e */ TouchGestureendEvent, Unit]] = js.undefined
   
-  var gesturestart: js.UndefOr[js.Function1[/* e */ TouchGesturestartEvent, Unit]] = js.native
+  var gesturestart: js.UndefOr[js.Function1[/* e */ TouchGesturestartEvent, Unit]] = js.undefined
   
-  var hold: js.UndefOr[js.Function1[/* e */ TouchHoldEvent, Unit]] = js.native
+  var hold: js.UndefOr[js.Function1[/* e */ TouchHoldEvent, Unit]] = js.undefined
   
-  var maxDuration: js.UndefOr[Double] = js.native
+  var maxDuration: js.UndefOr[Double] = js.undefined
   
-  var maxYDelta: js.UndefOr[Double] = js.native
+  var maxYDelta: js.UndefOr[Double] = js.undefined
   
-  var minHold: js.UndefOr[Double] = js.native
+  var minHold: js.UndefOr[Double] = js.undefined
   
-  var minXDelta: js.UndefOr[Double] = js.native
+  var minXDelta: js.UndefOr[Double] = js.undefined
   
-  var multiTouch: js.UndefOr[Boolean] = js.native
+  var multiTouch: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var surface: js.UndefOr[JQuery] = js.native
+  var surface: js.UndefOr[JQuery] = js.undefined
   
-  var swipe: js.UndefOr[js.Function1[/* e */ TouchSwipeEvent, Unit]] = js.native
+  var swipe: js.UndefOr[js.Function1[/* e */ TouchSwipeEvent, Unit]] = js.undefined
   
-  var tap: js.UndefOr[js.Function1[/* e */ TouchTapEvent, Unit]] = js.native
+  var tap: js.UndefOr[js.Function1[/* e */ TouchTapEvent, Unit]] = js.undefined
   
-  var touchstart: js.UndefOr[js.Function1[/* e */ TouchTouchstartEvent, Unit]] = js.native
+  var touchstart: js.UndefOr[js.Function1[/* e */ TouchTouchstartEvent, Unit]] = js.undefined
 }
 object TouchOptions {
   

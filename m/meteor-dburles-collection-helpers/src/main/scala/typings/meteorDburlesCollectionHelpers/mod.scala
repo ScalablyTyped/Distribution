@@ -11,7 +11,6 @@ import typings.std.Required
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,11 @@ object mod {
   
   type Brand = _meteor_dburles_collection_helpers_brand
   
-  type Data[T] = DataFlavor[T] with NonHelpersOf[T] with Partial[HelpersOf[T]]
+  type Data[T] = DataFlavor[T] & NonHelpersOf[T] & Partial[HelpersOf[T]]
   
-  @js.native
   trait DataFlavor[T] extends StObject {
     
-    var _meteor_dburles_collection_helpers_isData: js.UndefOr[js.Tuple2[Flavor, T]] = js.native
+    var _meteor_dburles_collection_helpers_isData: js.UndefOr[js.Tuple2[Flavor, T]] = js.undefined
   }
   object DataFlavor {
     
@@ -36,7 +34,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DataFlavorMutableBuilder[Self <: DataFlavor[_], T] (val x: Self with DataFlavor[T]) extends AnyVal {
+    implicit class DataFlavorMutableBuilder[Self <: DataFlavor[?], T] (val x: Self & DataFlavor[T]) extends AnyVal {
       
       @scala.inline
       def set_meteor_dburles_collection_helpers_isData(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isData", value.asInstanceOf[js.Any])
@@ -49,16 +47,20 @@ object mod {
   type Flavor = _meteor_dburles_collection_helpers_flavor
   
   // apply HelpersFlavor, but only if the resulting type wouldn't be never or weak
-  type FlavorAsHelpers[TOriginal, TToFlavor] = TToFlavor | (TToFlavor with HelpersFlavor[TOriginal])
+  type FlavorAsHelpers[TOriginal, TToFlavor] = TToFlavor | (TToFlavor & HelpersFlavor[TOriginal])
   
   // types where HelperBrand will be used instead of HelperFlavor
   type FlavorUnsupportedTypes = js.UndefOr[Null]
   
-  type Full[T] = NonData[NonHelpers[T]] with HelpersOf[NonData[NonHelpers[T]]]
+  type Full[T] = NonData[NonHelpers[T]] & HelpersOf[NonData[NonHelpers[T]]]
   
-  type Func = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait Func extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
-  type Helper[T] = (T with HelperFlavor) | T | HelperBrand
+  type Helper[T] = (T & HelperFlavor) | T | HelperBrand
   
   // for types where (T & HelperFlavor) === never, (T | HelperBrand) is used instead,
   // and the HelperBrand is stripped off in HelpersOf
@@ -69,11 +71,11 @@ object mod {
   // however, this appears to be a limitation of Typescript (with strict null checks on, null and undefined
   // simply *can't* extend anything besides themselves (and void in undefined's case), so there's no way to
   // flavor them)
-  @js.native
   trait HelperBrand
-    extends _OptionalHelper[js.Any] {
+    extends StObject
+       with _OptionalHelper[js.Any] {
     
-    var _meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand = js.native
+    var _meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand
   }
   object HelperBrand {
     
@@ -98,10 +100,9 @@ object mod {
   // would be assignable to it, but Typescript prohibits assigning any type that doesn't share at least one
   // property with it)
   // weirdly, ({} & HelperFlavor) still accepts {}!
-  @js.native
   trait HelperFlavor extends StObject {
     
-    var _meteor_dburles_collection_helpers_isHelper: js.UndefOr[Flavor] = js.native
+    var _meteor_dburles_collection_helpers_isHelper: js.UndefOr[Flavor] = js.undefined
   }
   object HelperFlavor {
     
@@ -130,15 +131,14 @@ object mod {
   type Helpers[T] = FlavorAsHelpers[
     T, 
     (// methods will only ever get called on a Full<T> (unless you directly declare a Helpers<T>, but *why*)
-  ThisType[Full[T]]) with HelpersOf[NonHelpers[NonData[T]]]
+  ThisType[Full[T]]) & HelpersOf[NonHelpers[NonData[T]]]
   ]
   
   // used to flavor Helpers<T> so we can get back to the original T if needed
   // not to be confused with HelperFlavor
-  @js.native
   trait HelpersFlavor[T] extends StObject {
     
-    var _meteor_dburles_collection_helpers_isHelpersOf: js.UndefOr[js.Tuple2[Flavor, T]] = js.native
+    var _meteor_dburles_collection_helpers_isHelpersOf: js.UndefOr[js.Tuple2[Flavor, T]] = js.undefined
   }
   object HelpersFlavor {
     
@@ -149,7 +149,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HelpersFlavorMutableBuilder[Self <: HelpersFlavor[_], T] (val x: Self with HelpersFlavor[T]) extends AnyVal {
+    implicit class HelpersFlavorMutableBuilder[Self <: HelpersFlavor[?], T] (val x: Self & HelpersFlavor[T]) extends AnyVal {
       
       @scala.inline
       def set_meteor_dburles_collection_helpers_isHelpersOf(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelpersOf", value.asInstanceOf[js.Any])
@@ -170,7 +170,7 @@ object mod {
           OptionalHelperNames[Required[T]]
         ]
       ]
-    ]) with (Partial[Pick[T, OptionalHelperNames[Required[T]]]])
+    ]) & (Partial[Pick[T, OptionalHelperNames[Required[T]]]])
   ]
   
   type NonData[T] = T
@@ -187,19 +187,19 @@ object mod {
   ]
   
   /* Rewritten from type alias, can be one of: 
-    - T with typings.meteorDburlesCollectionHelpers.mod.HelperFlavor with typings.meteorDburlesCollectionHelpers.mod.OptionalHelperFlavor
-    - js.UndefOr[scala.Nothing]
+    - T & typings.meteorDburlesCollectionHelpers.mod.HelperFlavor & typings.meteorDburlesCollectionHelpers.mod.OptionalHelperFlavor
+    - scala.Unit
     - T
     - typings.meteorDburlesCollectionHelpers.mod.HelperBrand
     - typings.meteorDburlesCollectionHelpers.mod.OptionalHelperBrand
   */
-  type OptionalHelper[T] = js.UndefOr[_OptionalHelper[T] | (T with HelperFlavor with OptionalHelperFlavor) | T]
+  type OptionalHelper[T] = js.UndefOr[_OptionalHelper[T] | (T & HelperFlavor & OptionalHelperFlavor) | T]
   
-  @js.native
   trait OptionalHelperBrand
-    extends _OptionalHelper[js.Any] {
+    extends StObject
+       with _OptionalHelper[js.Any] {
     
-    var _meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper: js.UndefOr[Brand] = js.native
+    var _meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper: js.UndefOr[Brand] = js.undefined
   }
   object OptionalHelperBrand {
     
@@ -220,10 +220,9 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionalHelperFlavor extends StObject {
     
-    var _meteor_dburles_collection_helpers_isOptionalHelper: js.UndefOr[Flavor] = js.native
+    var _meteor_dburles_collection_helpers_isOptionalHelper: js.UndefOr[Flavor] = js.undefined
   }
   object OptionalHelperFlavor {
     
@@ -247,7 +246,7 @@ object mod {
   type OptionalHelperNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.Exclude<T[K], undefined> extends infer NoUndefined? [meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperBrand | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperBrand] extends [any]? K : [std.Required<any>] extends [/ * Inlined std.Required<meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperFlavor & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperFlavor> * /
   {  _meteor_dburles_collection_helpers_isHelper :meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Flavor,   _meteor_dburles_collection_helpers_isOptionalHelper :meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Flavor}]? K : never : never}[keyof T] */ js.Any
   
-  type PartialHelpers[T] = ThisType[NonData[NonHelpers[T]]] with Partial[Helpers[T]]
+  type PartialHelpers[T] = ThisType[NonData[NonHelpers[T]]] & Partial[Helpers[T]]
   
   type PropertyNamesMatching[T, TPred] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends TPred? K : never}[keyof T] */ js.Any
   
@@ -257,7 +256,7 @@ object mod {
   // tell us which types are helpers, *
   type RemoveHelperBrands[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: std.Exclude<meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.RemoveHelperFlavorForVoid<T[K]>, meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperBrand | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperBrand>}
-    */ typings.meteorDburlesCollectionHelpers.meteorDburlesCollectionHelpersStrings.RemoveHelperBrands with TopLevel[T]
+    */ typings.meteorDburlesCollectionHelpers.meteorDburlesCollectionHelpersStrings.RemoveHelperBrands & TopLevel[T]
   
   // void is a bit of a weird case; unlike the others, it doesn't explicitly become never when flavored,
   // and (void & HelperFlavor) *is* assignable to void, but only other expressions of type (void & HelperFlavor)

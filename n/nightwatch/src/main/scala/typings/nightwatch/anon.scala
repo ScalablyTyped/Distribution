@@ -5,19 +5,17 @@ import typings.nightwatch.mod.EnhancedElementInstance
 import typings.nightwatch.mod.EnhancedPageObjectSections
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Arch extends StObject {
     
-    var arch: String = js.native
+    var arch: String
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Arch {
     
@@ -41,14 +39,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Browser extends StObject {
     
-    var browser: js.UndefOr[String] = js.native
+    var browser: js.UndefOr[String] = js.undefined
     
-    var driver: js.UndefOr[String] = js.native
+    var driver: js.UndefOr[String] = js.undefined
     
-    var server: js.UndefOr[String] = js.native
+    var server: js.UndefOr[String] = js.undefined
   }
   object Browser {
     
@@ -81,12 +78,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Build extends StObject {
     
-    var build: Revision = js.native
+    var build: Revision
     
-    var status: Arch = js.native
+    var status: Arch
   }
   object Build {
     
@@ -107,16 +103,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Class extends StObject {
     
-    var `class`: String = js.native
+    var `class`: String
     
-    var message: String = js.native
+    var message: String
     
-    var screen: String = js.native
+    var screen: String
     
-    var stackTrace: js.Array[ClassName] = js.native
+    var stackTrace: js.Array[ClassName]
   }
   object Class {
     
@@ -147,16 +142,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var methodName: String = js.native
+    var methodName: String
   }
   object ClassName {
     
@@ -183,16 +177,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Cliargs extends StObject {
     
-    var cli_args: js.Array[String] = js.native
+    var cli_args: js.Array[String]
     
-    var port: Double = js.native
+    var port: Double
     
-    var server_path: String = js.native
+    var server_path: String
     
-    var start_process: Boolean = js.native
+    var start_process: Boolean
   }
   object Cliargs {
     
@@ -222,10 +215,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ELEMENT extends StObject {
     
-    var ELEMENT: String = js.native
+    var ELEMENT: String
   }
   object ELEMENT {
     
@@ -267,19 +259,18 @@ object anon {
       * Uses `url` protocol command.
       */
     def navigate(): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias nightwatch.nightwatch.EnhancedPageObject<Commands, Elements, Sections> */ js.Object = js.native
-    def navigate(url: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias nightwatch.nightwatch.EnhancedPageObject<Commands, Elements, Sections> */ js.Object = js.native
     def navigate(url: String): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias nightwatch.nightwatch.EnhancedPageObject<Commands, Elements, Sections> */ js.Object = js.native
     def navigate(url: String, callback: js.Function0[Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias nightwatch.nightwatch.EnhancedPageObject<Commands, Elements, Sections> */ js.Object = js.native
+    def navigate(url: Unit, callback: js.Function0[Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias nightwatch.nightwatch.EnhancedPageObject<Commands, Elements, Sections> */ js.Object = js.native
     
     var section: Sections = js.native
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -300,14 +291,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Revision extends StObject {
     
-    var revision: String = js.native
+    var revision: String
     
-    var time: String = js.native
+    var time: String
     
-    var version: String = js.native
+    var version: String
   }
   object Revision {
     
@@ -331,10 +321,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ui extends StObject {
     
-    var ui: js.UndefOr[String] = js.native
+    var ui: js.UndefOr[String] = js.undefined
   }
   object Ui {
     
@@ -355,12 +344,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

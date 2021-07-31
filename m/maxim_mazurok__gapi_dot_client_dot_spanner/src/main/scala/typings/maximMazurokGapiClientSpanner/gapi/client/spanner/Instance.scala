@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /** Required. The name of the instance's configuration. Values are of the form `projects//instanceConfigs/`. See also InstanceConfig and ListInstanceConfigs. */
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
   /** Required. The descriptive name for this instance as it appears in UIs. Must be unique per project and between 4 and 30 characters in length. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Deprecated. This field is not populated. */
-  var endpointUris: js.UndefOr[js.Array[String]] = js.native
+  var endpointUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Cloud Labels are a flexible and lightweight mechanism for organizing cloud resources into groups that reflect a customer's organizational needs and deployment strategies. Cloud
@@ -30,26 +28,26 @@ trait Instance extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Instance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Instance & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Required. A unique identifier for the instance, which cannot be changed after the instance is created. Values are of the form `projects//instances/a-z*[a-z0-9]`. The final segment
     * of the name must be between 2 and 64 characters in length.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The number of nodes allocated to this instance. This may be zero in API responses for instances that are not yet in state `READY`. See [the
     * documentation](https://cloud.google.com/spanner/docs/instances#node_count) for more information about nodes.
     */
-  var nodeCount: js.UndefOr[Double] = js.native
+  var nodeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. The current instance state. For CreateInstance, the state must be either omitted or set to `CREATING`. For UpdateInstance, the state must be either omitted or set to
     * `READY`.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object Instance {
   
@@ -87,7 +85,7 @@ object Instance {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Instance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

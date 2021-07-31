@@ -2,13 +2,11 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Structured response of a single validation unit.
   */
-@js.native
 trait SchemaLintResult extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaLintResult extends StObject {
     * particular binding and only targets the policy as a whole, such as
     * results about policy size violations.
     */
-  var bindingOrdinal: js.UndefOr[Double] = js.native
+  var bindingOrdinal: js.UndefOr[Double] = js.undefined
   
   /**
     * Human readable debug message associated with the issue.
     */
-  var debugMessage: js.UndefOr[String] = js.native
+  var debugMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the field for which this lint result is about.  For nested
@@ -36,30 +34,30 @@ trait SchemaLintResult extends StObject {
     * `policy.bindings.condition.expression`.  This field does not identify the
     * ordinality of the repetitive fields (for instance bindings in a policy).
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
   
   /**
     * The validation unit level.
     */
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
   /**
     * 0-based character position of problematic construct within the object
     * identified by `field_name`. Currently, this is populated only for
     * condition expression.
     */
-  var locationOffset: js.UndefOr[Double] = js.native
+  var locationOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The validation unit severity.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * The validation unit name, for instance
     * “lintValidationUnits/ConditionComplexityCheck”.
     */
-  var validationUnitName: js.UndefOr[String] = js.native
+  var validationUnitName: js.UndefOr[String] = js.undefined
 }
 object SchemaLintResult {
   

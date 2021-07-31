@@ -1,16 +1,15 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `26` extends js.Object {
+trait `26` extends StObject {
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[TextStyle] = js.native
+  var itemStyle: js.UndefOr[TextStyle] = js.undefined
 }
 object `26` {
   
@@ -21,24 +20,12 @@ object `26` {
   }
   
   @scala.inline
-  implicit class `26Ops`[Self <: `26`] (val x: Self) extends AnyVal {
+  implicit class `26MutableBuilder`[Self <: `26`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemStyle(value: TextStyle): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemStyle(value: TextStyle): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
   }
 }

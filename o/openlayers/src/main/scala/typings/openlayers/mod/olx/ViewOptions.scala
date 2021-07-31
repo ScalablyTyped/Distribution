@@ -5,42 +5,40 @@ import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for the view.
   */
-@js.native
 trait ViewOptions extends StObject {
   
-  var center: js.UndefOr[Coordinate_] = js.native
+  var center: js.UndefOr[Coordinate_] = js.undefined
   
-  var constrainRotation: js.UndefOr[Boolean | Double] = js.native
+  var constrainRotation: js.UndefOr[Boolean | Double] = js.undefined
   
-  var enableRotation: js.UndefOr[Boolean] = js.native
+  var enableRotation: js.UndefOr[Boolean] = js.undefined
   
-  var extent: js.UndefOr[Extent_] = js.native
+  var extent: js.UndefOr[Extent_] = js.undefined
   
-  var maxResolution: js.UndefOr[Double] = js.native
+  var maxResolution: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minResolution: js.UndefOr[Double] = js.native
+  var minResolution: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var projection: js.UndefOr[ProjectionLike] = js.native
+  var projection: js.UndefOr[ProjectionLike] = js.undefined
   
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
   
-  var resolutions: js.UndefOr[js.Array[Double]] = js.native
+  var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
-  var zoomFactor: js.UndefOr[Double] = js.native
+  var zoomFactor: js.UndefOr[Double] = js.undefined
 }
 object ViewOptions {
   

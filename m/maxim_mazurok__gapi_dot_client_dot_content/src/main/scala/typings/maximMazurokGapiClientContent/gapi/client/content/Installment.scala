@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Installment extends StObject {
   
   /** The amount the buyer has to pay per month. */
-  var amount: js.UndefOr[Price] = js.native
+  var amount: js.UndefOr[Price] = js.undefined
   
   /** The number of installments the buyer has to pay. */
-  var months: js.UndefOr[String] = js.native
+  var months: js.UndefOr[String] = js.undefined
 }
 object Installment {
   

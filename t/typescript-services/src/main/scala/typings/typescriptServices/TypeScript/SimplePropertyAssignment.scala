@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimplePropertyAssignment extends AST {
+trait SimplePropertyAssignment
+  extends StObject
+     with AST {
   
-  var expression: AST = js.native
+  var expression: AST
   
-  var propertyName: Identifier = js.native
+  var propertyName: Identifier
 }
 object SimplePropertyAssignment {
   

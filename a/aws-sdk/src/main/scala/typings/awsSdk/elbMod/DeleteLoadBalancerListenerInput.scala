@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLoadBalancerListenerInput extends StObject {
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
   
   /**
     * The client port numbers of the listeners.
     */
-  var LoadBalancerPorts: Ports = js.native
+  var LoadBalancerPorts: Ports
 }
 object DeleteLoadBalancerListenerInput {
   

@@ -11,8 +11,8 @@ merge single level defaults over a config object
 | Full name          | defaults |
 | Keywords           | config, defaults |
 | # releases         | 0 |
-| # dependents       | 348 |
-| # downloads        | 207196734 |
+| # dependents       | 377 |
+| # downloads        | 266830143 |
 | # stars            | 10 |
 
 ## Links

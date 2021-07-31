@@ -2,10 +2,8 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabledreason extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Disabledreason extends StObject {
     * "rejected.terms_of_service", "rejected.listed", "rejected.other",
     * "fields_needed", "listed", or "other".
     */
-  var disabled_reason: String = js.native
+  var disabled_reason: String
   
   /**
     * At what time the fields_needed must be provided. If this date is in
@@ -23,21 +21,21 @@ trait Disabledreason extends StObject {
     * consequences. If this date is in the future, fields_needed must be
     * provided to ensure the account remains in good standing.
     */
-  var due_by: Double = js.native
+  var due_by: Double
   
   /**
     * Field names that need to be provided for the account to remain in good
     * standing. Nested fields are separated by "." (for example,
     * "legal_entity.first_name").
     */
-  var fields_needed: js.Array[String] = js.native
+  var fields_needed: js.Array[String]
   
   /**
     * The set of capabilities you want to unlock for this account (US only).
     * Each capability will be inactive until you have provided its specific requirements and Stripe has verified them.
     * An account may have some of its requested capabilities be active and some be inactive.
     */
-  var requested_capabilities: js.UndefOr[js.Array[String]] = js.native
+  var requested_capabilities: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Disabledreason {
   

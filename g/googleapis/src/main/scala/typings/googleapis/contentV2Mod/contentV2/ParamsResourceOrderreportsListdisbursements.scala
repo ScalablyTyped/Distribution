@@ -6,44 +6,44 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrderreportsListdisbursements extends StandardParameters {
+trait ParamsResourceOrderreportsListdisbursements
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The last date which disbursements occurred. In ISO 8601 format. Default:
     * current date.
     */
-  var disbursementEndDate: js.UndefOr[String] = js.native
+  var disbursementEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * The first date which disbursements occurred. In ISO 8601 format.
     */
-  var disbursementStartDate: js.UndefOr[String] = js.native
+  var disbursementStartDate: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of disbursements to return in the response, used for
     * paging.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the account that manages the order. This cannot be a
     * multi-client account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrderreportsListdisbursements {
   

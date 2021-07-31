@@ -2,23 +2,21 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DSN extends StObject {
   
-  var DSN: String = js.native
+  var DSN: String
   
-  var enable: Boolean = js.native
+  var enable: Boolean
   
-  var ravenOptions: Null | String = js.native
+  var ravenOptions: Null | String
 }
 object DSN {
   
   @scala.inline
   def apply(DSN: String, enable: Boolean): DSN = {
-    val __obj = js.Dynamic.literal(DSN = DSN.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(DSN = DSN.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], ravenOptions = null)
     __obj.asInstanceOf[DSN]
   }
   

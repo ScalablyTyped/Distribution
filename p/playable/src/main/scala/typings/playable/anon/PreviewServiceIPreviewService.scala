@@ -3,13 +3,11 @@ package typings.playable.anon
 import typings.playable.previewServiceTypesMod.IPreviewService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewServiceIPreviewService extends StObject {
   
-  var previewService: IPreviewService = js.native
+  var previewService: IPreviewService
 }
 object PreviewServiceIPreviewService {
   

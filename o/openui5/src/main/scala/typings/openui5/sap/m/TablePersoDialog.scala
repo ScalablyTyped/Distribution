@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.base.ManagedObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TablePersoDialog extends ManagedObject {
+trait TablePersoDialog
+  extends StObject
+     with ManagedObject {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancel</code> event of this

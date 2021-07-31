@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,7 +54,7 @@ trait WorkSpaces extends Service {
   ): Request[AuthorizeIpRulesResult, AWSError] = js.native
   
   @JSName("config")
-  var config_WorkSpaces: ConfigBase with ClientConfiguration = js.native
+  var config_WorkSpaces: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Copies the specified image from the specified Region to the current Region. For more information about copying images, see  Copy a Custom WorkSpaces Image.  Before copying a shared image, be sure to verify that it has been shared from the correct AWS account. To determine if an image has been shared and to see the AWS account ID that owns an image, use the DescribeWorkSpaceImages and DescribeWorkspaceImagePermissions API operations.  

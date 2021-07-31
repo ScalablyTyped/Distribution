@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCErrorInit extends StObject {
   
-  var errorDetail: RTCErrorDetailType = js.native
+  var errorDetail: RTCErrorDetailType
   
-  var httpRequestStatusCode: js.UndefOr[Double] = js.native
+  var httpRequestStatusCode: js.UndefOr[Double] = js.undefined
   
-  var receivedAlert: js.UndefOr[Double] = js.native
+  var receivedAlert: js.UndefOr[Double] = js.undefined
   
-  var sctpCauseCode: js.UndefOr[Double] = js.native
+  var sctpCauseCode: js.UndefOr[Double] = js.undefined
   
-  var sdpLineNumber: js.UndefOr[Double] = js.native
+  var sdpLineNumber: js.UndefOr[Double] = js.undefined
   
-  var sentAlert: js.UndefOr[Double] = js.native
+  var sentAlert: js.UndefOr[Double] = js.undefined
 }
 object RTCErrorInit {
   

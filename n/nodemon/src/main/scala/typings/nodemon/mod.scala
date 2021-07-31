@@ -16,213 +16,197 @@ import typings.nodemon.nodemonStrings.stdout
 import typings.nodemon.nodemonStrings.watching
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Settings): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   @JSImport("nodemon", JSImport.Namespace)
   @js.native
-  def apply(options: String): js.Any = js.native
-  @JSImport("nodemon", JSImport.Namespace)
-  @js.native
-  def apply(options: Settings): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_crash(event: crash, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_exit(event: exit, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_readable(event: readable, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_start(event: start, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = js.native
-  @JSImport("nodemon", "addListener")
-  @js.native
-  def addListener_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = js.native
+  @scala.inline
+  def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit(event: String, args: js.Any*): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_configupdate(event: configColonupdate): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_crash(event: crash): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_exit(event: exit): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_log(event: log, msg: LogMessage): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_quit(event: quit): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_quit(event: quit, code: Double): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_readable(event: readable): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_restart(event: restart): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_restart(event: restart, files: js.Array[String]): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_start(event: start): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_stderr(event: stderr, data: Buffer): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_stdout(event: stdout, data: Buffer): Boolean = js.native
-  @JSImport("nodemon", "emit")
-  @js.native
-  def emit_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): Boolean = js.native
+  @scala.inline
+  def addListener_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("nodemon", "on")
-  @js.native
-  def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_crash(event: crash, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_exit(event: exit, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_readable(event: readable, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_start(event: start, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = js.native
-  @JSImport("nodemon", "on")
-  @js.native
-  def on_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = js.native
+  @scala.inline
+  def addListener_crash(event: crash, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("nodemon", "once")
-  @js.native
-  def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_crash(event: crash, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_exit(event: exit, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_readable(event: readable, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_start(event: start, listener: js.Function0[Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = js.native
-  @JSImport("nodemon", "once")
-  @js.native
-  def once_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = js.native
+  @scala.inline
+  def addListener_exit(event: exit, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("nodemon", "removeAllListeners")
-  @js.native
-  def removeAllListeners(): js.Any = js.native
-  @JSImport("nodemon", "removeAllListeners")
-  @js.native
-  def removeAllListeners(event: String): js.Any = js.native
-  @JSImport("nodemon", "removeAllListeners")
-  @js.native
-  def removeAllListeners(event: js.Symbol): js.Any = js.native
+  @scala.inline
+  def addListener_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("nodemon", "reset")
-  @js.native
-  def reset(): Unit = js.native
-  @JSImport("nodemon", "reset")
-  @js.native
-  def reset(done: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def addListener_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("nodemon", "restart")
-  @js.native
-  def restart(): Unit = js.native
+  @scala.inline
+  def addListener_readable(event: readable, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def addListener_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def addListener_start(event: start, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def addListener_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def addListener_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def addListener_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def emit(event: js.Symbol, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_configupdate(event: configColonupdate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_crash(event: crash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_exit(event: exit): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_log(event: log, msg: LogMessage): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_quit(event: quit): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def emit_quit(event: quit, code: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_readable(event: readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_restart(event: restart): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def emit_restart(event: restart, files: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_start(event: start): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_stderr(event: stderr, data: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_stdout(event: stdout, data: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def emit_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_crash(event: crash, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_exit(event: exit, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_readable(event: readable, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_start(event: start, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def on_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_configupdate(event: configColonupdate, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_crash(event: crash, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_exit(event: exit, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_log(event: log, listener: js.Function1[/* msg */ LogMessage, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_quit(event: quit, listener: js.Function1[/* code */ js.UndefOr[Double], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_readable(event: readable, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_restart(event: restart, listener: js.Function1[/* files */ js.UndefOr[js.Array[String]], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_start(event: start, listener: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_stderr(event: stderr, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_stdout(event: stdout, listener: js.Function1[/* data */ Buffer, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def once_watching(event: watching, listener: js.Function1[/* file */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def removeAllListeners(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[js.Any]
+  @scala.inline
+  def removeAllListeners(event: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def removeAllListeners(event: js.Symbol): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  @scala.inline
+  def reset(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def restart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")().asInstanceOf[Unit]
+  
   trait LogMessage extends StObject {
     
-    var colour: String = js.native
+    var colour: String
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object LogMessage {
     
@@ -247,130 +231,130 @@ object mod {
     }
   }
   
-  @js.native
   trait Settings
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Set to false to disable color output
       */
-    var colours: js.UndefOr[Boolean] = js.native
+    var colours: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Change into <dir> before running the script
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Debounce restart in seconds.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Print full debug configuration
       */
-    var dump: js.UndefOr[Boolean] = js.native
+    var dump: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.native
+    var env: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.undefined
     
-    var events: js.UndefOr[StringDictionary[String]] = js.native
+    var events: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Execute script with "app", ie. -x "python -v". May use variables.
       */
-    var exec: js.UndefOr[String] = js.native
+    var exec: js.UndefOr[String] = js.undefined
     
     /**
       * The global config file is useful for setting up default executables
       */
-    var execMap: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var execMap: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * Exit on crash, allows use of nodemon with daemon tools like forever.js.
       */
-    var exitcrash: js.UndefOr[Boolean] = js.native
+    var exitcrash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Extensions to look for, ie. js,jade,hbs.
       */
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
     /**
       * Ignore specific files or directories.  One entry per ignored value.  Wildcards are allowed.
       */
-    var ignore: js.UndefOr[js.Array[String | Re]] = js.native
+    var ignore: js.UndefOr[js.Array[String | Re]] = js.undefined
     
     /**
       * Root paths to ignore
       */
-    var ignoreRoot: js.UndefOr[js.Array[String]] = js.native
+    var ignoreRoot: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Forces node to use the most compatible version for watching file changes.
       *
       * Use polling to watch for changes (typically needed when watching over a network/Docker)
       */
-    var legacyWatch: js.UndefOr[Boolean] = js.native
+    var legacyWatch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Opt-out of update version check
       */
-    var noUpdateNotifier: js.UndefOr[Boolean] = js.native
+    var noUpdateNotifier: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Arguments to pass to node if exec is "node"
       */
-    var nodeArgs: js.UndefOr[js.Array[String]] = js.native
+    var nodeArgs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Combined with legacyWatch, milliseconds to poll for (default 100)
       */
-    var pollingInterval: js.UndefOr[Double] = js.native
+    var pollingInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimise nodemon messages to start/stop only.
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var restartable: js.UndefOr[String] = js.native
+    var restartable: js.UndefOr[String] = js.undefined
     
     /**
       * Execute script on change only, not startup
       */
-    var runOnChangeOnly: js.UndefOr[Boolean] = js.native
+    var runOnChangeOnly: js.UndefOr[Boolean] = js.undefined
     
-    var script: js.UndefOr[String] = js.native
+    var script: js.UndefOr[String] = js.undefined
     
-    var scriptPosition: js.UndefOr[Double] = js.native
+    var scriptPosition: js.UndefOr[Double] = js.undefined
     
     /**
       * Use specified kill signal instead of default (ex. SIGTERM)
       */
-    var signal: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var signal: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * Force nodemon to use spawn (over fork) [node only]
       */
-    var spawn: js.UndefOr[Boolean] = js.native
+    var spawn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Try to read from stdin. Set to false to have nodemon pass stdin directly to child process
       */
-    var stdin: js.UndefOr[Boolean] = js.native
+    var stdin: js.UndefOr[Boolean] = js.undefined
     
-    var stdout: js.UndefOr[Boolean] = js.native
+    var stdout: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show detail on what is causing restarts.
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Watch directory or file.  One entry per watched value.  Wildcards are allowed.
       */
-    var watch: js.UndefOr[js.Array[String | Re]] = js.native
+    var watch: js.UndefOr[js.Array[String | Re]] = js.undefined
   }
   object Settings {
     

@@ -9,7 +9,6 @@ import typings.std.ArrayBufferLike
 import typings.typeFest.basicMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,8 +21,8 @@ object mod extends Shortcut {
   @js.native
   class AnyPredicate[T] protected ()
     extends typings.ow.anyMod.AnyPredicate[T] {
-    def this(predicates: js.Array[BasePredicate[_]]) = this()
-    def this(predicates: js.Array[BasePredicate[_]], options: PredicateOptions) = this()
+    def this(predicates: js.Array[BasePredicate[js.Any]]) = this()
+    def this(predicates: js.Array[BasePredicate[js.Any]], options: PredicateOptions) = this()
   }
   
   @JSImport("ow", "ArgumentError")
@@ -186,7 +185,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Ow
-    extends Modifiers
+    extends StObject
+       with Modifiers
        with Predicates {
     
     /**

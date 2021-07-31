@@ -2,17 +2,15 @@ package typings.kurentoClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkCache extends StObject {
   
-  var networkCache: js.UndefOr[Double] = js.native
+  var networkCache: js.UndefOr[Double] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
   
-  var useEncodedMedia: js.UndefOr[Boolean] = js.native
+  var useEncodedMedia: js.UndefOr[Boolean] = js.undefined
 }
 object NetworkCache {
   

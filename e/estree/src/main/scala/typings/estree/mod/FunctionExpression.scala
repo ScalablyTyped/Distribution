@@ -2,33 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionExpression
-  extends BaseFunction
+  extends StObject
+     with BaseFunction
      with Expression
      with Function {
   
   @JSName("body")
-  var body_FunctionExpression: BlockStatement = js.native
+  var body_FunctionExpression: BlockStatement
   
-  var id: js.UndefOr[Identifier | Null] = js.native
+  var id: js.UndefOr[Identifier | Null] = js.undefined
   
   @JSName("type")
-  var type_FunctionExpression: typings.estree.estreeStrings.FunctionExpression = js.native
+  var type_FunctionExpression: typings.estree.estreeStrings.FunctionExpression
 }
 object FunctionExpression {
   
   @scala.inline
-  def apply(
-    body: BlockStatement,
-    params: js.Array[Pattern],
-    `type`: typings.estree.estreeStrings.FunctionExpression
-  ): FunctionExpression = {
+  def apply(body: BlockStatement, params: js.Array[Pattern]): FunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[FunctionExpression]
   }
   

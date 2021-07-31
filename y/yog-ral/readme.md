@@ -12,7 +12,7 @@ node-ral with mcpack and nshead
 | Keywords           | ral |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2066 |
+| # downloads        | 2213 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowMod extends Shortcut {
@@ -14,20 +13,19 @@ object rowMod extends Shortcut {
   @js.native
   val default: FC[RowProps] = js.native
   
-  @js.native
   trait RowProps extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var colon: Boolean = js.native
+    var colon: Boolean
     
-    var index: Double = js.native
+    var index: Double
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var row: js.Array[ReactElement] = js.native
+    var row: js.Array[ReactElement]
     
-    var vertical: Boolean = js.native
+    var vertical: Boolean
   }
   object RowProps {
     

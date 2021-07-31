@@ -7,14 +7,15 @@ import typings.std.HTMLImageElement
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Raster item represents an image in a Paper.js project.
   */
 @js.native
-trait Raster extends Item {
+trait Raster
+  extends StObject
+     with Item {
   
   /** 
     * The Canvas object of the raster. If the raster was created from an image,

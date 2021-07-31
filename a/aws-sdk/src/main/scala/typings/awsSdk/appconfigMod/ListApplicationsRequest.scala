@@ -2,21 +2,19 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationsRequest extends StObject {
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.appconfigMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.appconfigMod.MaxResults] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.appconfigMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.appconfigMod.NextToken] = js.undefined
 }
 object ListApplicationsRequest {
   

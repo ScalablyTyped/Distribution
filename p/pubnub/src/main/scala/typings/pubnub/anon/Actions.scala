@@ -3,21 +3,19 @@ package typings.pubnub.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actions extends StObject {
   
-  var actions: StringDictionary[StringDictionary[js.Array[ActionTimetoken]]] = js.native
+  var actions: StringDictionary[StringDictionary[js.Array[ActionTimetoken]]]
   
-  var channel: String = js.native
+  var channel: String
   
-  var message: js.Any = js.native
+  var message: js.Any
   
-  var meta: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var meta: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var timetoken: String | Double = js.native
+  var timetoken: String | Double
 }
 object Actions {
   

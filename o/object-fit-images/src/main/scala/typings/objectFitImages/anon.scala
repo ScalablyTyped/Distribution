@@ -2,17 +2,15 @@ package typings.objectFitImages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait SkipTest extends StObject {
     
-    var skipTest: js.UndefOr[Boolean] = js.native
+    var skipTest: js.UndefOr[Boolean] = js.undefined
     
-    var watchMQ: js.UndefOr[Boolean] = js.native
+    var watchMQ: js.UndefOr[Boolean] = js.undefined
   }
   object SkipTest {
     

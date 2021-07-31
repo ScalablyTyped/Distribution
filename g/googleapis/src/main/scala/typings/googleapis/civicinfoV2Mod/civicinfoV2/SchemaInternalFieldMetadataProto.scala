@@ -2,15 +2,13 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInternalFieldMetadataProto extends StObject {
   
-  var isAuto: js.UndefOr[Boolean] = js.native
+  var isAuto: js.UndefOr[Boolean] = js.undefined
   
-  var sourceSummary: js.UndefOr[SchemaInternalSourceSummaryProto] = js.native
+  var sourceSummary: js.UndefOr[SchemaInternalSourceSummaryProto] = js.undefined
 }
 object SchemaInternalFieldMetadataProto {
   

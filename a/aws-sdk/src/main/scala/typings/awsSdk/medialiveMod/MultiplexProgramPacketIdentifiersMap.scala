@@ -2,37 +2,35 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexProgramPacketIdentifiersMap extends StObject {
   
-  var AudioPids: js.UndefOr[listOfInteger] = js.native
+  var AudioPids: js.UndefOr[listOfInteger] = js.undefined
   
-  var DvbSubPids: js.UndefOr[listOfInteger] = js.native
+  var DvbSubPids: js.UndefOr[listOfInteger] = js.undefined
   
-  var DvbTeletextPid: js.UndefOr[integer] = js.native
+  var DvbTeletextPid: js.UndefOr[integer] = js.undefined
   
-  var EtvPlatformPid: js.UndefOr[integer] = js.native
+  var EtvPlatformPid: js.UndefOr[integer] = js.undefined
   
-  var EtvSignalPid: js.UndefOr[integer] = js.native
+  var EtvSignalPid: js.UndefOr[integer] = js.undefined
   
-  var KlvDataPids: js.UndefOr[listOfInteger] = js.native
+  var KlvDataPids: js.UndefOr[listOfInteger] = js.undefined
   
-  var PcrPid: js.UndefOr[integer] = js.native
+  var PcrPid: js.UndefOr[integer] = js.undefined
   
-  var PmtPid: js.UndefOr[integer] = js.native
+  var PmtPid: js.UndefOr[integer] = js.undefined
   
-  var PrivateMetadataPid: js.UndefOr[integer] = js.native
+  var PrivateMetadataPid: js.UndefOr[integer] = js.undefined
   
-  var Scte27Pids: js.UndefOr[listOfInteger] = js.native
+  var Scte27Pids: js.UndefOr[listOfInteger] = js.undefined
   
-  var Scte35Pid: js.UndefOr[integer] = js.native
+  var Scte35Pid: js.UndefOr[integer] = js.undefined
   
-  var TimedMetadataPid: js.UndefOr[integer] = js.native
+  var TimedMetadataPid: js.UndefOr[integer] = js.undefined
   
-  var VideoPid: js.UndefOr[integer] = js.native
+  var VideoPid: js.UndefOr[integer] = js.undefined
 }
 object MultiplexProgramPacketIdentifiersMap {
   

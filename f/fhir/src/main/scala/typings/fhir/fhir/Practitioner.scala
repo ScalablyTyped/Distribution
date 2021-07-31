@@ -2,80 +2,80 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person with a  formal responsibility in the provisioning of healthcare or related services
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Practitioner extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Practitioner
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.native
+  var _active: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'birthDate'.
     */
-  var _birthDate: js.UndefOr[Element] = js.native
+  var _birthDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'gender'.
     */
-  var _gender: js.UndefOr[Element] = js.native
+  var _gender: js.UndefOr[Element] = js.undefined
   
   /**
     * Whether this practitioner's record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Address(es) of the practitioner that are not role specific (typically home address)
     */
-  var address: js.UndefOr[js.Array[Address]] = js.native
+  var address: js.UndefOr[js.Array[Address]] = js.undefined
   
   /**
     * The date  on which the practitioner was born
     */
-  var birthDate: js.UndefOr[date] = js.native
+  var birthDate: js.UndefOr[date] = js.undefined
   
   /**
     * A language the practitioner is able to use in patient communication
     */
-  var communication: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var communication: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * male | female | other | unknown
     */
-  var gender: js.UndefOr[code] = js.native
+  var gender: js.UndefOr[code] = js.undefined
   
   /**
     * A identifier for the person as this agent
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * The name(s) associated with the practitioner
     */
-  var name: js.UndefOr[js.Array[HumanName]] = js.native
+  var name: js.UndefOr[js.Array[HumanName]] = js.undefined
   
   /**
     * Image of the person
     */
-  var photo: js.UndefOr[js.Array[Attachment]] = js.native
+  var photo: js.UndefOr[js.Array[Attachment]] = js.undefined
   
   /**
     * Qualifications obtained by training and certification
     */
-  var qualification: js.UndefOr[js.Array[PractitionerQualification]] = js.native
+  var qualification: js.UndefOr[js.Array[PractitionerQualification]] = js.undefined
   
   /**
     * A contact detail for the practitioner (that apply to all roles)
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
 }
 object Practitioner {
   

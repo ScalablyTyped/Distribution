@@ -2,7 +2,6 @@ package typings.googleapis.cloudassetV1Mod.cloudassetV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,20 +27,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ADMIN_READ logging. It also exempts foo@gmail.com from DATA_READ logging,
   * and bar@gmail.com from DATA_WRITE logging.
   */
-@js.native
 trait SchemaAuditConfig extends StObject {
   
   /**
     * The configuration for logging of each type of permission.
     */
-  var auditLogConfigs: js.UndefOr[js.Array[SchemaAuditLogConfig]] = js.native
+  var auditLogConfigs: js.UndefOr[js.Array[SchemaAuditLogConfig]] = js.undefined
   
   /**
     * Specifies a service that will be enabled for audit logging. For example,
     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
     * special value that covers all services.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaAuditConfig {
   

@@ -3,12 +3,11 @@ package typings.ionicCore.stencilPublicRuntimeMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentInterface
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
   /**
     * The component has loaded and has already rendered.
@@ -18,9 +17,9 @@ trait ComponentInterface
     *
     * componentDidLoad will only be called once.
     */
-  var componentDidLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentDidLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var componentDidRender: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentDidRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The component has just re-rendered.
@@ -31,7 +30,7 @@ trait ComponentInterface
     * componentWillUpdate is not called on the
     * first render.
     */
-  var componentDidUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentDidUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * A `@Prop` or `@State` property changed and a rerender is about to be requested.
@@ -43,7 +42,7 @@ trait ComponentInterface
     */
   var componentShouldUpdate: js.UndefOr[
     js.Function3[/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String, Boolean | Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The component is about to load and it has not
@@ -54,9 +53,9 @@ trait ComponentInterface
     *
     * componentWillLoad will only be called once.
     */
-  var componentWillLoad: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+  var componentWillLoad: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
   
-  var componentWillRender: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+  var componentWillRender: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
   
   /**
     * The component is about to update and re-render.
@@ -66,13 +65,13 @@ trait ComponentInterface
     *
     * componentWillUpdate is not called on the first render.
     */
-  var componentWillUpdate: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+  var componentWillUpdate: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
   
-  var connectedCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var connectedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var disconnectedCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var disconnectedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var render: js.UndefOr[js.Function0[_]] = js.native
+  var render: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object ComponentInterface {
   
@@ -140,7 +139,7 @@ object ComponentInterface {
     def setDisconnectedCallbackUndefined: Self = StObject.set(x, "disconnectedCallback", js.undefined)
     
     @scala.inline
-    def setRender(value: () => _): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
     @scala.inline
     def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

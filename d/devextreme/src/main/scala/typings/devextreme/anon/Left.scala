@@ -6,29 +6,27 @@ import typings.devextreme.devextremeStrings.longDash
 import typings.devextreme.devextremeStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Left extends StObject {
   
-  var bottom: js.UndefOr[Boolean] = js.native
+  var bottom: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
   
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var right: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Boolean] = js.undefined
   
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Left {
   

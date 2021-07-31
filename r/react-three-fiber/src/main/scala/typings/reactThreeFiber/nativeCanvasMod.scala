@@ -7,7 +7,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactThreeFiber.canvasMod.CanvasProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeCanvasMod {
@@ -16,19 +15,20 @@ object nativeCanvasMod {
   @js.native
   val Canvas: MemoExoticComponent[js.Function1[/* props */ NativeCanvasProps, Element]] = js.native
   
-  @js.native
-  trait NativeCanvasProps extends CanvasProps {
+  trait NativeCanvasProps
+    extends StObject
+       with CanvasProps {
     
-    var nativeRef_EXPERIMENTAL: js.UndefOr[MutableRefObject[_]] = js.native
+    var nativeRef_EXPERIMENTAL: js.UndefOr[MutableRefObject[js.Any]] = js.undefined
     
     var onContextCreated: js.UndefOr[
         js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExpoWebGLRenderingContext */ /* gl */ js.Any, 
-          js.Promise[_] | Unit
+          js.Promise[js.Any] | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
   }
   object NativeCanvasProps {
     
@@ -42,14 +42,14 @@ object nativeCanvasMod {
     implicit class NativeCanvasPropsMutableBuilder[Self <: NativeCanvasProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setNativeRef_EXPERIMENTAL(value: MutableRefObject[_]): Self = StObject.set(x, "nativeRef_EXPERIMENTAL", value.asInstanceOf[js.Any])
+      def setNativeRef_EXPERIMENTAL(value: MutableRefObject[js.Any]): Self = StObject.set(x, "nativeRef_EXPERIMENTAL", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNativeRef_EXPERIMENTALUndefined: Self = StObject.set(x, "nativeRef_EXPERIMENTAL", js.undefined)
       
       @scala.inline
       def setOnContextCreated(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExpoWebGLRenderingContext */ /* gl */ js.Any => js.Promise[_] | Unit
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExpoWebGLRenderingContext */ /* gl */ js.Any => js.Promise[js.Any] | Unit
       ): Self = StObject.set(x, "onContextCreated", js.Any.fromFunction1(value))
       
       @scala.inline

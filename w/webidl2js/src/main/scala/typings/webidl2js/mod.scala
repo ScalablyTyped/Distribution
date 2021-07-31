@@ -4,22 +4,42 @@ import typings.webidl2.mod.AttributeMemberType
 import typings.webidl2js.anon.Get
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webidl2js", JSImport.Namespace)
   @js.native
-  class ^ () extends Transformer {
+  class ^ ()
+    extends StObject
+       with Transformer {
     def this(opts: Options) = this()
+    
+    /**
+      * @param idl The WebIDL file or directory of WebIDL files
+      *        to generate wrappers for.
+      * @param impl The directory containing implementation files
+      *        for the provided WebIDL file(s).
+      */
+    /* CompleteClass */
+    override def addSource(idl: String, impl: String): this.type = js.native
+    
+    /**
+      * Generates WebIDL2JS wrapper classes for the supplied WebIDL file(s)
+      * in the supplied output directory.
+      *
+      * @param outputDir The directory where WebIDL2JS wrappers will be generated in.
+      * @return A promise that will be resolved once all files have been written,
+      *         or rejected if an error was encountered.
+      */
+    /* CompleteClass */
+    override def generate(outputDir: String): js.Promise[Unit] = js.native
   }
   
   type AttributeProcessor = js.ThisFunction2[/* this */ ProcessorContext, /* idl */ AttributeMemberType, /* implName */ String, Get]
   
   type CodeProcessor = js.ThisFunction1[/* this */ ProcessorContext, /* code */ String, String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -27,7 +47,7 @@ object mod {
       *
       * @default ""
       */
-    var implSuffix: js.UndefOr[String] = js.native
+    var implSuffix: js.UndefOr[String] = js.undefined
     
     /**
       * The function used to modify attributes and operations
@@ -35,7 +55,7 @@ object mod {
       *
       * The default value is the identity function.
       */
-    var processCEReactions: js.UndefOr[CodeProcessor] = js.native
+    var processCEReactions: js.UndefOr[CodeProcessor] = js.undefined
     
     /**
       * The function used to modify attributes and operations
@@ -43,7 +63,7 @@ object mod {
       *
       * The default value is the identity function.
       */
-    var processHTMLConstructor: js.UndefOr[CodeProcessor] = js.native
+    var processHTMLConstructor: js.UndefOr[CodeProcessor] = js.undefined
     
     /**
       * The function used to generate attributes and operations
@@ -51,14 +71,14 @@ object mod {
       *
       * @default null
       */
-    var processReflect: js.UndefOr[AttributeProcessor | Null] = js.native
+    var processReflect: js.UndefOr[AttributeProcessor | Null] = js.undefined
     
     /**
       * Whether non-fatal errors should be ignored.
       *
       * @default false
       */
-    var suppressErrors: js.UndefOr[Boolean] = js.native
+    var suppressErrors: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -119,7 +139,6 @@ object mod {
     def addImport(specifier: String, property: String): String = js.native
   }
   
-  @js.native
   trait Transformer extends StObject {
     
     /**
@@ -128,7 +147,7 @@ object mod {
       * @param impl The directory containing implementation files
       *        for the provided WebIDL file(s).
       */
-    def addSource(idl: String, impl: String): this.type = js.native
+    def addSource(idl: String, impl: String): this.type
     
     /**
       * Generates WebIDL2JS wrapper classes for the supplied WebIDL file(s)
@@ -138,7 +157,7 @@ object mod {
       * @return A promise that will be resolved once all files have been written,
       *         or rejected if an error was encountered.
       */
-    def generate(outputDir: String): js.Promise[Unit] = js.native
+    def generate(outputDir: String): js.Promise[Unit]
   }
   object Transformer {
     

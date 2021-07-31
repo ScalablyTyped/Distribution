@@ -2,17 +2,15 @@ package typings.storybookClientApi.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorybookKind extends StObject {
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var kind: String = js.native
+  var kind: String
   
-  var stories: js.Array[GetStorybookStory] = js.native
+  var stories: js.Array[GetStorybookStory]
 }
 object GetStorybookKind {
   

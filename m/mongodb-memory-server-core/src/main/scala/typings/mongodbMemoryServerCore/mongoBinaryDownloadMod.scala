@@ -7,31 +7,128 @@ import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.POST
 import typings.mongodbMemoryServerCore.typesMod.DownloadProgressT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongoBinaryDownloadMod {
   
   @JSImport("mongodb-memory-server-core/lib/util/MongoBinaryDownload", JSImport.Default)
   @js.native
-  class default protected () extends MongoBinaryDownload {
+  class default protected ()
+    extends StObject
+       with MongoBinaryDownload {
     def this(hasPlatformArchDownloadDirVersionCheckMD5: MongoBinaryDownloadOpts) = this()
+    
+    /* CompleteClass */
+    var arch: String = js.native
+    
+    /* CompleteClass */
+    var checkMD5: Boolean = js.native
+    
+    /* CompleteClass */
+    var dlProgress: DownloadProgressT = js.native
+    
+    /**
+      * Download file from downloadUrl
+      * @param downloadUrl URL to download a File
+      */
+    /* CompleteClass */
+    override def download(downloadUrl: String): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    var downloadDir: String = js.native
+    
+    /**
+      * Extract given Archive
+      * @param mongoDBArchive Archive location
+      * @returns extracted directory location
+      */
+    /* CompleteClass */
+    override def extract(mongoDBArchive: String): js.Promise[String] = js.native
+    
+    /**
+      * Extract a .tar.gz archive
+      * @param mongoDBArchive Archive location
+      * @param extractDir Directory to extract to
+      * @param filter Method to determine which files to extract
+      */
+    /* CompleteClass */
+    override def extractTarGz(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit] = js.native
+    
+    /**
+      * Extract a .zip archive
+      * @param mongoDBArchive Archive location
+      * @param extractDir Directory to extract to
+      * @param filter Method to determine which files to extract
+      */
+    /* CompleteClass */
+    override def extractZip(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit] = js.native
+    
+    /**
+      * Get the path of the already downloaded "mongod" file
+      * otherwise download it and then return the path
+      */
+    /* CompleteClass */
+    override def getMongodPath(): js.Promise[String] = js.native
+    
+    /**
+      * Downlaod given httpOptions to tempDownloadLocation, then move it to downloadLocation
+      * @param httpOptions The httpOptions directly passed to https.get
+      * @param downloadLocation The location the File should be after the download
+      * @param tempDownloadLocation The location the File should be while downloading
+      */
+    /* CompleteClass */
+    override def httpDownload(httpOptions: HttpDownloadOptions, downloadLocation: String, tempDownloadLocation: String): js.Promise[String] = js.native
+    
+    /**
+      * Test if the location given is already used
+      * Does *not* dereference links
+      * @param location The Path to test
+      */
+    /* CompleteClass */
+    override def locationExists(location: String): js.Promise[Boolean] = js.native
+    
+    /**
+      * Download MD5 file and check it against the MongoDB Archive
+      * @param urlForReferenceMD5 URL to download the MD5
+      * @param mongoDBArchive The MongoDB Archive file location
+      */
+    /* CompleteClass */
+    override def makeMD5check(urlForReferenceMD5: String, mongoDBArchive: String): js.Promise[js.UndefOr[Boolean]] = js.native
+    
+    /* CompleteClass */
+    var platform: String = js.native
+    
+    /**
+      * Print the Download Progress to STDOUT
+      * @param chunk A chunk to get the length
+      */
+    /* CompleteClass */
+    override def printDownloadProgress(chunk: Length): Unit = js.native
+    
+    /**
+      * Download the MongoDB Archive and check it against an MD5
+      * @returns The MongoDB Archive location
+      */
+    /* CompleteClass */
+    override def startDownload(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
   }
   
-  @js.native
   trait HttpDownloadOptions extends StObject {
     
-    var agent: js.UndefOr[HttpsProxyAgent] = js.native
+    var agent: js.UndefOr[HttpsProxyAgent] = js.undefined
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var method: GET | POST = js.native
+    var method: GET | POST
     
-    var path: String = js.native
+    var path: String
     
-    var port: String = js.native
+    var port: String
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object HttpDownloadOptions {
     
@@ -70,31 +167,30 @@ object mongoBinaryDownloadMod {
     }
   }
   
-  @js.native
   trait MongoBinaryDownload extends StObject {
     
-    var _downloadingUrl: js.UndefOr[String] = js.native
+    var _downloadingUrl: js.UndefOr[String] = js.undefined
     
-    var arch: String = js.native
+    var arch: String
     
-    var checkMD5: Boolean = js.native
+    var checkMD5: Boolean
     
-    var dlProgress: DownloadProgressT = js.native
+    var dlProgress: DownloadProgressT
     
     /**
       * Download file from downloadUrl
       * @param downloadUrl URL to download a File
       */
-    def download(downloadUrl: String): js.Promise[String] = js.native
+    def download(downloadUrl: String): js.Promise[String]
     
-    var downloadDir: String = js.native
+    var downloadDir: String
     
     /**
       * Extract given Archive
       * @param mongoDBArchive Archive location
       * @returns extracted directory location
       */
-    def extract(mongoDBArchive: String): js.Promise[String] = js.native
+    def extract(mongoDBArchive: String): js.Promise[String]
     
     /**
       * Extract a .tar.gz archive
@@ -102,7 +198,7 @@ object mongoBinaryDownloadMod {
       * @param extractDir Directory to extract to
       * @param filter Method to determine which files to extract
       */
-    def extractTarGz(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit] = js.native
+    def extractTarGz(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit]
     
     /**
       * Extract a .zip archive
@@ -110,13 +206,13 @@ object mongoBinaryDownloadMod {
       * @param extractDir Directory to extract to
       * @param filter Method to determine which files to extract
       */
-    def extractZip(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit] = js.native
+    def extractZip(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit]
     
     /**
       * Get the path of the already downloaded "mongod" file
       * otherwise download it and then return the path
       */
-    def getMongodPath(): js.Promise[String] = js.native
+    def getMongodPath(): js.Promise[String]
     
     /**
       * Downlaod given httpOptions to tempDownloadLocation, then move it to downloadLocation
@@ -124,37 +220,37 @@ object mongoBinaryDownloadMod {
       * @param downloadLocation The location the File should be after the download
       * @param tempDownloadLocation The location the File should be while downloading
       */
-    def httpDownload(httpOptions: HttpDownloadOptions, downloadLocation: String, tempDownloadLocation: String): js.Promise[String] = js.native
+    def httpDownload(httpOptions: HttpDownloadOptions, downloadLocation: String, tempDownloadLocation: String): js.Promise[String]
     
     /**
       * Test if the location given is already used
       * Does *not* dereference links
       * @param location The Path to test
       */
-    def locationExists(location: String): js.Promise[Boolean] = js.native
+    def locationExists(location: String): js.Promise[Boolean]
     
     /**
       * Download MD5 file and check it against the MongoDB Archive
       * @param urlForReferenceMD5 URL to download the MD5
       * @param mongoDBArchive The MongoDB Archive file location
       */
-    def makeMD5check(urlForReferenceMD5: String, mongoDBArchive: String): js.Promise[js.UndefOr[Boolean]] = js.native
+    def makeMD5check(urlForReferenceMD5: String, mongoDBArchive: String): js.Promise[js.UndefOr[Boolean]]
     
-    var platform: String = js.native
+    var platform: String
     
     /**
       * Print the Download Progress to STDOUT
       * @param chunk A chunk to get the length
       */
-    def printDownloadProgress(chunk: Length): Unit = js.native
+    def printDownloadProgress(chunk: Length): Unit
     
     /**
       * Download the MongoDB Archive and check it against an MD5
       * @returns The MongoDB Archive location
       */
-    def startDownload(): js.Promise[String] = js.native
+    def startDownload(): js.Promise[String]
     
-    var version: String = js.native
+    var version: String
   }
   object MongoBinaryDownload {
     
@@ -240,18 +336,17 @@ object mongoBinaryDownloadMod {
     }
   }
   
-  @js.native
   trait MongoBinaryDownloadOpts extends StObject {
     
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
-    var checkMD5: js.UndefOr[Boolean] = js.native
+    var checkMD5: js.UndefOr[Boolean] = js.undefined
     
-    var downloadDir: js.UndefOr[String] = js.native
+    var downloadDir: js.UndefOr[String] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object MongoBinaryDownloadOpts {
     

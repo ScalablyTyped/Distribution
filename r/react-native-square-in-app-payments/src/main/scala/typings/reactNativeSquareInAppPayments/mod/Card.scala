@@ -2,32 +2,30 @@ package typings.reactNativeSquareInAppPayments.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Card extends StObject {
   
   /** The brand (for example, VISA) of the card. */
-  var brand: Brand = js.native
+  var brand: Brand
   
   /** The expiration month of the card. Ranges between 1 and 12, with 1 corresponding to January and 12 to December. */
-  var expirationMonth: Double = js.native
+  var expirationMonth: Double
   
   /** The four-digit expiration year of the card. */
-  var expirationYear: Double = js.native
+  var expirationYear: Double
   
   /** The last 4 digits of this card's number. */
-  var lastFourDigits: String = js.native
+  var lastFourDigits: String
   
   /** The billing postal code associated with the card. */
-  var postalCode: String | Null = js.native
+  var postalCode: String | Null
   
   /** The prepaid type of the credit card (for example, a Prepaid Gift Card). Note: This property is experimental and will always return UNKNOWN */
-  var prepaidType: CardPrepaidType = js.native
+  var prepaidType: CardPrepaidType
   
   /** The type of card (for example, Credit or Debit). Note: This property is experimental and will always return UNKNOWN */
-  var `type`: CardType = js.native
+  var `type`: CardType
 }
 object Card {
   
@@ -40,7 +38,7 @@ object Card {
     prepaidType: CardPrepaidType,
     `type`: CardType
   ): Card = {
-    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], expirationMonth = expirationMonth.asInstanceOf[js.Any], expirationYear = expirationYear.asInstanceOf[js.Any], lastFourDigits = lastFourDigits.asInstanceOf[js.Any], prepaidType = prepaidType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], expirationMonth = expirationMonth.asInstanceOf[js.Any], expirationYear = expirationYear.asInstanceOf[js.Any], lastFourDigits = lastFourDigits.asInstanceOf[js.Any], prepaidType = prepaidType.asInstanceOf[js.Any], postalCode = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Card]
   }

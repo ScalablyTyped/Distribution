@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an interaction between a user and an item.
   */
-@js.native
 trait SchemaInteraction extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaInteraction extends StObject {
     * same type exist for a single user, only the most recent action is
     * recorded.
     */
-  var interactionTime: js.UndefOr[String] = js.native
+  var interactionTime: js.UndefOr[String] = js.undefined
   
   /**
     * The user that acted on the item.
     */
-  var principal: js.UndefOr[SchemaPrincipal] = js.native
+  var principal: js.UndefOr[SchemaPrincipal] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaInteraction {
   

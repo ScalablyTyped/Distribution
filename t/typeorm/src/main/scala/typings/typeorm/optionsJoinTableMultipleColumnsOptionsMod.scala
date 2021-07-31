@@ -3,41 +3,39 @@ package typings.typeorm
 import typings.typeorm.optionsJoinColumnOptionsMod.JoinColumnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsJoinTableMultipleColumnsOptionsMod {
   
-  @js.native
   trait JoinTableMultipleColumnsOptions extends StObject {
     
     /**
       * Database where join table will be created.
       * Works only in some databases (like mysql and mssql).
       */
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
     /**
       * Second (inverse) column of the join table.
       */
-    var inverseJoinColumns: js.UndefOr[js.Array[JoinColumnOptions]] = js.native
+    var inverseJoinColumns: js.UndefOr[js.Array[JoinColumnOptions]] = js.undefined
     
     /**
       * First column of the join table.
       */
-    var joinColumns: js.UndefOr[js.Array[JoinColumnOptions]] = js.native
+    var joinColumns: js.UndefOr[js.Array[JoinColumnOptions]] = js.undefined
     
     /**
       * Name of the table that will be created to store values of the both tables (join table).
       * By default is auto generated.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Schema where join table will be created.
       * Works only in some databases (like postgres and mssql).
       */
-    var schema: js.UndefOr[String] = js.native
+    var schema: js.UndefOr[String] = js.undefined
   }
   object JoinTableMultipleColumnsOptions {
     

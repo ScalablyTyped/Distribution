@@ -2,16 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the coordinates used with EnhancedCustomShapes */
-@js.native
 trait EnhancedCustomShapeTextFrame extends StObject {
   
-  var BottomRight: EnhancedCustomShapeParameterPair = js.native
+  var BottomRight: EnhancedCustomShapeParameterPair
   
-  var TopLeft: EnhancedCustomShapeParameterPair = js.native
+  var TopLeft: EnhancedCustomShapeParameterPair
 }
 object EnhancedCustomShapeTextFrame {
   

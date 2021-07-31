@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "Duration")
@@ -101,52 +100,42 @@ object Duration {
   def ZERO_=(x: Duration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "Duration.between")
-  @js.native
-  def between(startInclusive: Temporal, endExclusive: Temporal): Duration = js.native
+  @scala.inline
+  def between(startInclusive: Temporal, endExclusive: Temporal): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startInclusive.asInstanceOf[js.Any], endExclusive.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.from")
-  @js.native
-  def from(amount: TemporalAmount): Duration = js.native
+  @scala.inline
+  def from(amount: TemporalAmount): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.of")
-  @js.native
-  def of(amount: Double, unit: TemporalUnit): Duration = js.native
+  @scala.inline
+  def of(amount: Double, unit: TemporalUnit): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(amount.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.ofDays")
-  @js.native
-  def ofDays(days: Double): Duration = js.native
+  @scala.inline
+  def ofDays(days: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofDays")(days.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.ofHours")
-  @js.native
-  def ofHours(hours: Double): Duration = js.native
+  @scala.inline
+  def ofHours(hours: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofHours")(hours.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.ofMillis")
-  @js.native
-  def ofMillis(millis: Double): Duration = js.native
+  @scala.inline
+  def ofMillis(millis: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMillis")(millis.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.ofMinutes")
-  @js.native
-  def ofMinutes(minutes: Double): Duration = js.native
+  @scala.inline
+  def ofMinutes(minutes: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMinutes")(minutes.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.ofNanos")
-  @js.native
-  def ofNanos(nanos: Double): Duration = js.native
+  @scala.inline
+  def ofNanos(nanos: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNanos")(nanos.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.ofSeconds")
-  @js.native
-  def ofSeconds(seconds: Double): Duration = js.native
+  @scala.inline
+  def ofSeconds(seconds: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Duration.parse")
-  @js.native
-  def parse(text: String): Duration = js.native
+  @scala.inline
+  def parse(text: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Duration]
 }

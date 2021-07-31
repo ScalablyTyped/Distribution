@@ -4,32 +4,30 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@ant-design/react-native.@ant-design/react-native/lib/picker/PickerTypes.PickerProps> */
-@js.native
 trait ReadonlyPickerProps extends StObject {
   
-  val defaultSelectedValue: js.UndefOr[js.Any] = js.native
+  val defaultSelectedValue: js.UndefOr[js.Any] = js.undefined
   
-  val disabled: js.UndefOr[Boolean] = js.native
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val indicatorClassName: js.UndefOr[String] = js.native
+  val indicatorClassName: js.UndefOr[String] = js.undefined
   
-  val indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val noAnimate: js.UndefOr[Boolean] = js.native
+  val noAnimate: js.UndefOr[Boolean] = js.undefined
   
-  val onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+  val onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
   
-  val onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+  val onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
   
-  val selectedValue: js.UndefOr[js.Any] = js.native
+  val selectedValue: js.UndefOr[js.Any] = js.undefined
   
-  val style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object ReadonlyPickerProps {
   

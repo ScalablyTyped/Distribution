@@ -2,15 +2,13 @@ package typings.nodeMysqlWrapper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var connection: js.UndefOr[js.Object] = js.native
+    var connection: js.UndefOr[js.Object] = js.undefined
     
-    var idGeneration: js.UndefOr[String] = js.native
+    var idGeneration: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[js.Function] = js.native
+    var transform: js.UndefOr[js.Function] = js.undefined
   }
   object Connection {
     
@@ -71,16 +68,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Fetch[T] extends StObject {
     
-    var fetch: js.UndefOr[js.Array[String]] = js.native
+    var fetch: js.UndefOr[js.Array[String]] = js.undefined
     
-    var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ T, Boolean]] = js.native
+    var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ T, Boolean]] = js.undefined
     
-    var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ T, Boolean]] = js.native
+    var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ T, Boolean]] = js.undefined
     
-    var transform: js.UndefOr[js.Function] = js.native
+    var transform: js.UndefOr[js.Function] = js.undefined
     
     var update: js.UndefOr[
         js.Function4[
@@ -90,7 +86,7 @@ object anon {
           /* modifier */ js.Any, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Fetch {
     
@@ -101,7 +97,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FetchMutableBuilder[Self <: Fetch[_], T] (val x: Self with Fetch[T]) extends AnyVal {
+    implicit class FetchMutableBuilder[Self <: Fetch[?], T] (val x: Self & Fetch[T]) extends AnyVal {
       
       @scala.inline
       def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
@@ -140,20 +136,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.UndefOr[js.Any] = js.native
+    var fields: js.UndefOr[js.Any] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var reactive: js.UndefOr[Boolean] = js.native
+    var reactive: js.UndefOr[Boolean] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[js.Any] = js.native
+    var sort: js.UndefOr[js.Any] = js.undefined
     
-    var transform: js.UndefOr[js.Function] = js.native
+    var transform: js.UndefOr[js.Function] = js.undefined
   }
   object Fields {
     
@@ -204,12 +199,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InsertedId extends StObject {
     
-    var insertedId: js.UndefOr[String] = js.native
+    var insertedId: js.UndefOr[String] = js.undefined
     
-    var numberAffected: js.UndefOr[Double] = js.native
+    var numberAffected: js.UndefOr[Double] = js.undefined
   }
   object InsertedId {
     
@@ -236,12 +230,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Multi extends StObject {
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
     
-    var upsert: js.UndefOr[Boolean] = js.native
+    var upsert: js.UndefOr[Boolean] = js.undefined
   }
   object Multi {
     
@@ -268,18 +261,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Reactive extends StObject {
     
-    var fields: js.UndefOr[js.Any] = js.native
+    var fields: js.UndefOr[js.Any] = js.undefined
     
-    var reactive: js.UndefOr[Boolean] = js.native
+    var reactive: js.UndefOr[Boolean] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[js.Any] = js.native
+    var sort: js.UndefOr[js.Any] = js.undefined
     
-    var transform: js.UndefOr[js.Function] = js.native
+    var transform: js.UndefOr[js.Function] = js.undefined
   }
   object Reactive {
     

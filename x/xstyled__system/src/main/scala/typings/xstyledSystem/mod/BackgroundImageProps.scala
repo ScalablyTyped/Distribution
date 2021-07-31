@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundImageProps extends StObject {
   
   val backgroundImage: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BackgroundImageProps {
   
@@ -28,7 +26,7 @@ object BackgroundImageProps {
     @scala.inline
     def setBackgroundImage(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any
         ]
     ): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BackgroundImageProps {
     def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
     @scala.inline
-    def setBackgroundImageVarargs(value: js.Any*): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
+    def setBackgroundImageVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any)*
+    ): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
   }
 }

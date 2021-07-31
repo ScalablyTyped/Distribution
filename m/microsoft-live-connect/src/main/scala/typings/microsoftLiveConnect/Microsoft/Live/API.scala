@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -162,9 +161,9 @@ trait API extends StObject {
     *   which contains the user's sign-in status and the session object.
     */
   def getLoginStatus(): IPromise[ILoginStatus] = js.native
-  def getLoginStatus(callback: js.UndefOr[scala.Nothing], force: Boolean): IPromise[ILoginStatus] = js.native
   def getLoginStatus(callback: js.Function1[/* status */ ILoginStatus, Unit]): IPromise[ILoginStatus] = js.native
   def getLoginStatus(callback: js.Function1[/* status */ ILoginStatus, Unit], force: Boolean): IPromise[ILoginStatus] = js.native
+  def getLoginStatus(callback: Unit, force: Boolean): IPromise[ILoginStatus] = js.native
   
   /**
     * Retrieves the current session object synchronously, if a session

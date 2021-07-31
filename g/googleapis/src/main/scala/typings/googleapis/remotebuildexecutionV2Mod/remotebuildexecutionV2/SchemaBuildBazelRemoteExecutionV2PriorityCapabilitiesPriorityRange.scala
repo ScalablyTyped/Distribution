@@ -2,18 +2,16 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Supported range of priorities, including boundaries.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange extends StObject {
   
-  var maxPriority: js.UndefOr[Double] = js.native
+  var maxPriority: js.UndefOr[Double] = js.undefined
   
-  var minPriority: js.UndefOr[Double] = js.native
+  var minPriority: js.UndefOr[Double] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange {
   

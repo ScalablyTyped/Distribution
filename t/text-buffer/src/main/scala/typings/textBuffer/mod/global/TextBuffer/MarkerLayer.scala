@@ -6,7 +6,6 @@ import typings.textBuffer.anon.Invalidate
 import typings.textBuffer.mod.global.TextBuffer.Options.FindMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Experimental: A container for a related set of markers. */

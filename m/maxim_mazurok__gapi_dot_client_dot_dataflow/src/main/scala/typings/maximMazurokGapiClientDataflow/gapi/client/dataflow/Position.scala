@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
   /** Position is a byte offset. */
-  var byteOffset: js.UndefOr[String] = js.native
+  var byteOffset: js.UndefOr[String] = js.undefined
   
   /** CloudPosition is a concat position. */
-  var concatPosition: js.UndefOr[ConcatPosition] = js.native
+  var concatPosition: js.UndefOr[ConcatPosition] = js.undefined
   
   /** Position is past all other positions. Also useful for the end position of an unbounded range. */
-  var end: js.UndefOr[Boolean] = js.native
+  var end: js.UndefOr[Boolean] = js.undefined
   
   /** Position is a string key, ordered lexicographically. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Position is a record index. */
-  var recordIndex: js.UndefOr[String] = js.native
+  var recordIndex: js.UndefOr[String] = js.undefined
   
   /** CloudPosition is a base64 encoded BatchShufflePosition (with FIXED sharding). */
-  var shufflePosition: js.UndefOr[String] = js.native
+  var shufflePosition: js.UndefOr[String] = js.undefined
 }
 object Position {
   

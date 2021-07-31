@@ -5,13 +5,11 @@ import typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.none
 import typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.previous
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotOptions extends StObject {
   
-  val serverTimestamps: js.UndefOr[estimate | previous | none] = js.native
+  val serverTimestamps: js.UndefOr[estimate | previous | none] = js.undefined
 }
 object SnapshotOptions {
   

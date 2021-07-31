@@ -5,33 +5,109 @@ import typings.markdownIt.libMod.MarkdownIt
 import typings.markdownIt.tokenMod.Nesting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateInlineMod {
   
   @JSImport("markdown-it/lib/rules_inline/state_inline", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StateInline {
+  class ^ protected ()
+    extends StObject
+       with StateInline {
     def this(src: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]) = this()
+    
+    /* CompleteClass */
+    var Token: Instantiable3[
+        /* type */ String, 
+        /* tag */ String, 
+        /* nesting */ Nesting, 
+        typings.markdownIt.tokenMod.^
+      ] = js.native
+    
+    /**
+      * Stores { start: end } pairs. Useful for backtrack
+      * optimization of pairs parse (emphasis, strikes).
+      */
+    /* CompleteClass */
+    var cache: js.Any = js.native
+    
+    /**
+      * List of emphasis-like delimiters for current tag
+      */
+    /* CompleteClass */
+    var delimiters: js.Array[Delimiter] = js.native
+    
+    /* CompleteClass */
+    var env: js.Any = js.native
+    
+    /* CompleteClass */
+    var level: Double = js.native
+    
+    /* CompleteClass */
+    var md: MarkdownIt = js.native
+    
+    /* CompleteClass */
+    var pending: String = js.native
+    
+    /* CompleteClass */
+    var pendingLevel: Double = js.native
+    
+    /* CompleteClass */
+    var pos: Double = js.native
+    
+    /* CompleteClass */
+    var posMax: Double = js.native
+    
+    /**
+      * Push new token to "stream".
+      * If pending text exists - flush it as text token
+      */
+    /* CompleteClass */
+    override def push(`type`: String, tag: String, nesting: Nesting): typings.markdownIt.tokenMod.^ = js.native
+    
+    // Stack of delimiter lists for upper level tags
+    // _prev_delimiters: StateInline.Delimiter[][];
+    /**
+      * Flush pending text
+      */
+    /* CompleteClass */
+    override def pushPending(): typings.markdownIt.tokenMod.^ = js.native
+    
+    /**
+      * Scan a sequence of emphasis-like markers, and determine whether
+      * it can start an emphasis sequence or end an emphasis sequence.
+      *
+      * @param start position to scan from (it should point at a valid marker);
+      * @param canSplitWord determine if these markers can be found inside a word
+      */
+    /* CompleteClass */
+    override def scanDelims(start: Double, canSplitWord: Boolean): Scanned = js.native
+    
+    /* CompleteClass */
+    var src: String = js.native
+    
+    /* CompleteClass */
+    var tokens: js.Array[typings.markdownIt.tokenMod.^] = js.native
+    
+    /* CompleteClass */
+    var tokens_meta: js.Array[TokenMata | Null] = js.native
   }
   
-  @js.native
   trait Delimiter extends StObject {
     
-    var close: Boolean = js.native
+    var close: Boolean
     
-    var end: Double = js.native
+    var end: Double
     
-    var jump: Double = js.native
+    var jump: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var marker: Double = js.native
+    var marker: Double
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var token: Double = js.native
+    var token: Double
   }
   object Delimiter {
     
@@ -75,14 +151,13 @@ object stateInlineMod {
     }
   }
   
-  @js.native
   trait Scanned extends StObject {
     
-    var can_close: Boolean = js.native
+    var can_close: Boolean
     
-    var can_open: Boolean = js.native
+    var can_open: Boolean
     
-    var length: Double = js.native
+    var length: Double
   }
   object Scanned {
     
@@ -106,7 +181,6 @@ object stateInlineMod {
     }
   }
   
-  @js.native
   trait StateInline extends StObject {
     
     var Token: Instantiable3[
@@ -114,45 +188,45 @@ object stateInlineMod {
         /* tag */ String, 
         /* nesting */ Nesting, 
         typings.markdownIt.tokenMod.^
-      ] = js.native
+      ]
     
     /**
       * Stores { start: end } pairs. Useful for backtrack
       * optimization of pairs parse (emphasis, strikes).
       */
-    var cache: js.Any = js.native
+    var cache: js.Any
     
     /**
       * List of emphasis-like delimiters for current tag
       */
-    var delimiters: js.Array[Delimiter] = js.native
+    var delimiters: js.Array[Delimiter]
     
-    var env: js.Any = js.native
+    var env: js.Any
     
-    var level: Double = js.native
+    var level: Double
     
-    var md: MarkdownIt = js.native
+    var md: MarkdownIt
     
-    var pending: String = js.native
+    var pending: String
     
-    var pendingLevel: Double = js.native
+    var pendingLevel: Double
     
-    var pos: Double = js.native
+    var pos: Double
     
-    var posMax: Double = js.native
+    var posMax: Double
     
     /**
       * Push new token to "stream".
       * If pending text exists - flush it as text token
       */
-    def push(`type`: String, tag: String, nesting: Nesting): typings.markdownIt.tokenMod.^ = js.native
+    def push(`type`: String, tag: String, nesting: Nesting): typings.markdownIt.tokenMod.^
     
     // Stack of delimiter lists for upper level tags
     // _prev_delimiters: StateInline.Delimiter[][];
     /**
       * Flush pending text
       */
-    def pushPending(): typings.markdownIt.tokenMod.^ = js.native
+    def pushPending(): typings.markdownIt.tokenMod.^
     
     /**
       * Scan a sequence of emphasis-like markers, and determine whether
@@ -161,13 +235,13 @@ object stateInlineMod {
       * @param start position to scan from (it should point at a valid marker);
       * @param canSplitWord determine if these markers can be found inside a word
       */
-    def scanDelims(start: Double, canSplitWord: Boolean): Scanned = js.native
+    def scanDelims(start: Double, canSplitWord: Boolean): Scanned
     
-    var src: String = js.native
+    var src: String
     
-    var tokens: js.Array[typings.markdownIt.tokenMod.^] = js.native
+    var tokens: js.Array[typings.markdownIt.tokenMod.^]
     
-    var tokens_meta: js.Array[TokenMata | Null] = js.native
+    var tokens_meta: js.Array[TokenMata | Null]
   }
   object StateInline {
     
@@ -268,10 +342,9 @@ object stateInlineMod {
     }
   }
   
-  @js.native
   trait TokenMata extends StObject {
     
-    var delimiters: js.Array[Delimiter] = js.native
+    var delimiters: js.Array[Delimiter]
   }
   object TokenMata {
     

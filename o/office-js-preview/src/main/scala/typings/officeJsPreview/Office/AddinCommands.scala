@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AddinCommands {
@@ -61,7 +60,6 @@ object AddinCommands {
   /**
     * Specifies the behavior for when the event is completed.
     */
-  @js.native
   trait EventCompletedOptions extends StObject {
     
     /**
@@ -69,7 +67,7 @@ object AddinCommands {
       * this value indicates of the handled event should continue execution or be canceled.
       * For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.
       */
-    var allowEvent: Boolean = js.native
+    var allowEvent: Boolean
   }
   object EventCompletedOptions {
     
@@ -90,14 +88,13 @@ object AddinCommands {
   /**
     * Encapsulates source data for add-in events.
     */
-  @js.native
   trait Source extends StObject {
     
     /**
       * The ID of the control that triggered calling this function. The ID comes from the manifest and is the unique ID of your Office Add-in
       * as a GUID.
       */
-    var id: String = js.native
+    var id: String
   }
   object Source {
     

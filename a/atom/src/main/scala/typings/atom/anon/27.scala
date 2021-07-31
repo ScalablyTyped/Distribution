@@ -7,15 +7,13 @@ import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `27` extends StObject {
   
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
-  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
 }
 object `27` {
   

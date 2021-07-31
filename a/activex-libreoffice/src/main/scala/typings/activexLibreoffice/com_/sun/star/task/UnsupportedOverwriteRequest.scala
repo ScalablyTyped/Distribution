@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * so. Continuations for using with the mentioned service are Abort and Approve.
   * @since OOo 1.1.2
   */
-@js.native
-trait UnsupportedOverwriteRequest extends ClassifiedInteractionRequest {
+trait UnsupportedOverwriteRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** the name of the target that might be overwritten, can be empty. */
-  var Name: String = js.native
+  var Name: String
 }
 object UnsupportedOverwriteRequest {
   

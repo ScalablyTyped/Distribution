@@ -4,19 +4,17 @@ import typings.std.ClientRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ANIMATING extends StObject {
     
-    var ANIMATING: String = js.native
+    var ANIMATING: String
     
-    var SCROLL_AREA_SCROLL: String = js.native
+    var SCROLL_AREA_SCROLL: String
     
-    var SCROLL_TEST: String = js.native
+    var SCROLL_TEST: String
   }
   object ANIMATING {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AREASELECTOR extends StObject {
     
-    var AREA_SELECTOR: String = js.native
+    var AREA_SELECTOR: String
     
-    var CONTENT_SELECTOR: String = js.native
+    var CONTENT_SELECTOR: String
   }
   object AREASELECTOR {
     
@@ -67,36 +64,35 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tab-scroller.@material/tab-scroller/adapter.MDCTabScrollerAdapter> */
-  @js.native
   trait PartialMDCTabScrollerAdap extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addScrollAreaClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addScrollAreaClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var computeHorizontalScrollbarHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var computeHorizontalScrollbarHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var computeScrollAreaClientRect: js.UndefOr[js.Function0[ClientRect]] = js.native
+    var computeScrollAreaClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
     
-    var computeScrollContentClientRect: js.UndefOr[js.Function0[ClientRect]] = js.native
+    var computeScrollContentClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
     
-    var eventTargetMatchesSelector: js.UndefOr[js.Function2[/* evtTarget */ EventTarget, /* selector */ String, Boolean]] = js.native
+    var eventTargetMatchesSelector: js.UndefOr[js.Function2[/* evtTarget */ EventTarget, /* selector */ String, Boolean]] = js.undefined
     
-    var getScrollAreaOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollAreaOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getScrollAreaScrollLeft: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollAreaScrollLeft: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getScrollContentOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getScrollContentOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getScrollContentStyleValue: js.UndefOr[js.Function1[/* propertyName */ String, String]] = js.native
+    var getScrollContentStyleValue: js.UndefOr[js.Function1[/* propertyName */ String, String]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setScrollAreaScrollLeft: js.UndefOr[js.Function1[/* scrollLeft */ Double, Unit]] = js.native
+    var setScrollAreaScrollLeft: js.UndefOr[js.Function1[/* scrollLeft */ Double, Unit]] = js.undefined
     
-    var setScrollAreaStyleProperty: js.UndefOr[js.Function2[/* propName */ String, /* value */ String, Unit]] = js.native
+    var setScrollAreaStyleProperty: js.UndefOr[js.Function2[/* propName */ String, /* value */ String, Unit]] = js.undefined
     
-    var setScrollContentStyleProperty: js.UndefOr[js.Function2[/* propName */ String, /* value */ String, Unit]] = js.native
+    var setScrollContentStyleProperty: js.UndefOr[js.Function2[/* propName */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCTabScrollerAdap {
     

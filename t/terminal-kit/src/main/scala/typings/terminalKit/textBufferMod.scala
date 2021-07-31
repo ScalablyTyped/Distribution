@@ -9,37 +9,37 @@ import typings.terminalKit.screenBufferMod.Attributes
 import typings.terminalKit.screenBufferMod.DrawOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textBufferMod {
   
   @JSImport("terminal-kit/TextBuffer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends TextBuffer {
+  class ^ protected ()
+    extends StObject
+       with TextBuffer {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var dst: typings.terminalKit.screenBufferMod.^ = js.native
+    var dst: typings.terminalKit.screenBufferMod.^
     
-    var forceInBound: js.UndefOr[Double] = js.native
+    var forceInBound: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var tabWidth: js.UndefOr[Double] = js.native
+    var tabWidth: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

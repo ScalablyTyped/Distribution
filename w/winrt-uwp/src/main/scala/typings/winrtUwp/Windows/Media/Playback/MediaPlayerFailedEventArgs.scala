@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Media.Playback
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for MediaFailed events. */
-@js.native
 trait MediaPlayerFailedEventArgs extends StObject {
   
   /** Gets the MediaPlayerError value for the error that triggered the event. */
-  var error: MediaPlayerError = js.native
+  var error: MediaPlayerError
   
   /** Gets a string describing the error that occurred. */
-  var errorMessage: String = js.native
+  var errorMessage: String
   
   /** Gets an HResult that indicates any extra data about the error that occurred. */
-  var extendedErrorCode: WinRTError = js.native
+  var extendedErrorCode: WinRTError
 }
 object MediaPlayerFailedEventArgs {
   

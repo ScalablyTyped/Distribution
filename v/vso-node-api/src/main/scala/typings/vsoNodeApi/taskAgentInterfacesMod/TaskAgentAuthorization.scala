@@ -2,26 +2,24 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentAuthorization extends StObject {
   
   /**
     * Gets or sets the endpoint used to obtain access tokens from the configured token service.
     */
-  var authorizationUrl: String = js.native
+  var authorizationUrl: String
   
   /**
     * Gets or sets the client identifier for this agent.
     */
-  var clientId: String = js.native
+  var clientId: String
   
   /**
     * Gets or sets the public key used to verify the identity of this agent.
     */
-  var publicKey: TaskAgentPublicKey = js.native
+  var publicKey: TaskAgentPublicKey
 }
 object TaskAgentAuthorization {
   

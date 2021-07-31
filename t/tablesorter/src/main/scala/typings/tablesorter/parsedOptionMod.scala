@@ -2,23 +2,21 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parsedOptionMod {
   
-  @js.native
   trait ParsedOption extends StObject {
     
     /**
       * The parsed value of the cell.
       */
-    var parsed: js.Any = js.native
+    var parsed: js.Any
     
     /**
       * The unparsed text of the cell.
       */
-    var raw: String = js.native
+    var raw: String
   }
   object ParsedOption {
     

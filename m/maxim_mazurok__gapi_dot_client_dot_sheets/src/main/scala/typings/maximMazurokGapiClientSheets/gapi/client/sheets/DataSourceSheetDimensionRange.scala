@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSheetDimensionRange extends StObject {
   
   /** The columns on the data source sheet. */
-  var columnReferences: js.UndefOr[js.Array[DataSourceColumnReference]] = js.native
+  var columnReferences: js.UndefOr[js.Array[DataSourceColumnReference]] = js.undefined
   
   /** The ID of the data source sheet the range is on. */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object DataSourceSheetDimensionRange {
   

@@ -4,17 +4,17 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchSearchCompleteEventResults extends Object {
+trait SearchSearchCompleteEventResults
+  extends StObject
+     with Object {
   
-  var results: js.Array[SearchResult] = js.native
+  var results: js.Array[SearchResult]
   
-  var source: js.Any = js.native
+  var source: js.Any
   
-  var sourceIndex: Double = js.native
+  var sourceIndex: Double
 }
 object SearchSearchCompleteEventResults {
   

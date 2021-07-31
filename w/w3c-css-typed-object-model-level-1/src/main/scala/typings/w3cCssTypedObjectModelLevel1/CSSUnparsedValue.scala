@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CSSUnparsedValue
-  extends CSSStyleValue
+  extends StObject
+     with CSSStyleValue
      with /* idx */ NumberDictionary[CSSUnparsedSegment] {
   
   @JSName(js.Symbol.iterator)

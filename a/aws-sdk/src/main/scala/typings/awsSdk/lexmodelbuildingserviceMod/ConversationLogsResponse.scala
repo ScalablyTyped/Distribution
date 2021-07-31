@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversationLogsResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role used to write your logs to CloudWatch Logs or an S3 bucket.
     */
-  var iamRoleArn: js.UndefOr[IamRoleArn] = js.native
+  var iamRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
   /**
     * The settings for your conversation logs. You can log text, audio, or both.
     */
-  var logSettings: js.UndefOr[LogSettingsResponseList] = js.native
+  var logSettings: js.UndefOr[LogSettingsResponseList] = js.undefined
 }
 object ConversationLogsResponse {
   

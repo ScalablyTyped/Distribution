@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMsoChartData extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  def ActivateChartDataWindow(): Unit = js.native
+  def ActivateChartDataWindow(): Unit
   
-  def BreakLink(): Unit = js.native
+  def BreakLink(): Unit
   
-  val IsLinked: Boolean = js.native
+  val IsLinked: Boolean
   
   @JSName("Office.IMsoChartData_typekey")
-  var OfficeDotIMsoChartData_typekey: IMsoChartData = js.native
+  var OfficeDotIMsoChartData_typekey: IMsoChartData
   
-  val Workbook: js.Any = js.native
+  val Workbook: js.Any
 }
 object IMsoChartData {
   

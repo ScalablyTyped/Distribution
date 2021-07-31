@@ -2,58 +2,56 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
   /** Whether the order was acknowledged. */
-  var acknowledged: js.UndefOr[Boolean] = js.native
+  var acknowledged: js.UndefOr[Boolean] = js.undefined
   
   /** List of key-value pairs that are attached to a given order. */
-  var annotations: js.UndefOr[js.Array[OrderOrderAnnotation]] = js.native
+  var annotations: js.UndefOr[js.Array[OrderOrderAnnotation]] = js.undefined
   
   /** The billing address. */
-  var billingAddress: js.UndefOr[OrderAddress] = js.native
+  var billingAddress: js.UndefOr[OrderAddress] = js.undefined
   
   /** The details of the customer who placed the order. */
-  var customer: js.UndefOr[OrderCustomer] = js.native
+  var customer: js.UndefOr[OrderCustomer] = js.undefined
   
   /** Delivery details for shipments of type `delivery`. */
-  var deliveryDetails: js.UndefOr[OrderDeliveryDetails] = js.native
+  var deliveryDetails: js.UndefOr[OrderDeliveryDetails] = js.undefined
   
   /** The REST ID of the order. Globally unique. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#order`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Line items that are ordered. */
-  var lineItems: js.UndefOr[js.Array[OrderLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[OrderLineItem]] = js.undefined
   
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** Merchant-provided ID of the order. */
-  var merchantOrderId: js.UndefOr[String] = js.native
+  var merchantOrderId: js.UndefOr[String] = js.undefined
   
   /** The net amount for the order (price part). For example, if an order was originally for $100 and a refund was issued for $20, the net amount will be $80. */
-  var netPriceAmount: js.UndefOr[Price] = js.native
+  var netPriceAmount: js.UndefOr[Price] = js.undefined
   
   /**
     * The net amount for the order (tax part). Note that in certain cases due to taxable base adjustment `netTaxAmount` might not match to a sum of tax field across all lineItems and
     * refunds.
     */
-  var netTaxAmount: js.UndefOr[Price] = js.native
+  var netTaxAmount: js.UndefOr[Price] = js.undefined
   
   /** The status of the payment. Acceptable values are: - "`paymentCaptured`" - "`paymentRejected`" - "`paymentSecured`" - "`pendingAuthorization`" */
-  var paymentStatus: js.UndefOr[String] = js.native
+  var paymentStatus: js.UndefOr[String] = js.undefined
   
   /** Pickup details for shipments of type `pickup`. */
-  var pickupDetails: js.UndefOr[OrderPickupDetails] = js.native
+  var pickupDetails: js.UndefOr[OrderPickupDetails] = js.undefined
   
   /** The date when the order was placed, in ISO 8601 format. */
-  var placedDate: js.UndefOr[String] = js.native
+  var placedDate: js.UndefOr[String] = js.undefined
   
   /**
     * Promotions associated with the order. To determine which promotions apply to which products, check the `Promotions[].appliedItems[].lineItemId` field against the `LineItems[].id`
@@ -64,28 +62,28 @@ trait Order extends StObject {
     * `LineItems[].Product.Price.value` for each quantity item. Only 1 promotion can be applied to an offerId in a given order. To refund an item which had a promotion applied to it, make
     * sure to refund the amount after first subtracting the promotion discount from the item price. More details about the program are here.
     */
-  var promotions: js.UndefOr[js.Array[OrderPromotion]] = js.native
+  var promotions: js.UndefOr[js.Array[OrderPromotion]] = js.undefined
   
   /** Refunds for the order. */
-  var refunds: js.UndefOr[js.Array[OrderRefund]] = js.native
+  var refunds: js.UndefOr[js.Array[OrderRefund]] = js.undefined
   
   /** Shipments of the order. */
-  var shipments: js.UndefOr[js.Array[OrderShipment]] = js.native
+  var shipments: js.UndefOr[js.Array[OrderShipment]] = js.undefined
   
   /** The total cost of shipping for all items. */
-  var shippingCost: js.UndefOr[Price] = js.native
+  var shippingCost: js.UndefOr[Price] = js.undefined
   
   /** The tax for the total shipping cost. */
-  var shippingCostTax: js.UndefOr[Price] = js.native
+  var shippingCostTax: js.UndefOr[Price] = js.undefined
   
   /**
     * The status of the order. Acceptable values are: - "`canceled`" - "`delivered`" - "`inProgress`" - "`partiallyDelivered`" - "`partiallyReturned`" - "`partiallyShipped`" -
     * "`pendingShipment`" - "`returned`" - "`shipped`"
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The party responsible for collecting and remitting taxes. Acceptable values are: - "`marketplaceFacilitator`" - "`merchant`" */
-  var taxCollector: js.UndefOr[String] = js.native
+  var taxCollector: js.UndefOr[String] = js.undefined
 }
 object Order {
   

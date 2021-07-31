@@ -3,35 +3,31 @@ package typings.autolinker
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("autolinker/dist/commonjs/utils", "defaults")
+  @JSImport("autolinker/dist/commonjs/utils", JSImport.Namespace)
   @js.native
-  def defaults(dest: js.Any, src: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("autolinker/dist/commonjs/utils", "ellipsis")
-  @js.native
-  def ellipsis(str: String, truncateLen: Double): String = js.native
-  @JSImport("autolinker/dist/commonjs/utils", "ellipsis")
-  @js.native
-  def ellipsis(str: String, truncateLen: Double, ellipsisChars: String): String = js.native
+  @scala.inline
+  def defaults(dest: js.Any, src: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("autolinker/dist/commonjs/utils", "indexOf")
-  @js.native
-  def indexOf[T](arr: js.Array[T], element: T): Double = js.native
+  @scala.inline
+  def ellipsis(str: String, truncateLen: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(str.asInstanceOf[js.Any], truncateLen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def ellipsis(str: String, truncateLen: Double, ellipsisChars: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(str.asInstanceOf[js.Any], truncateLen.asInstanceOf[js.Any], ellipsisChars.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("autolinker/dist/commonjs/utils", "remove")
-  @js.native
-  def remove[T](arr: js.Array[T], fn: js.Function1[/* item */ T, Boolean]): Unit = js.native
+  @scala.inline
+  def indexOf[T](arr: js.Array[T], element: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(arr.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("autolinker/dist/commonjs/utils", "splitAndCapture")
-  @js.native
-  def splitAndCapture(str: String, splitRegex: RegExp): js.Array[String] = js.native
+  @scala.inline
+  def remove[T](arr: js.Array[T], fn: js.Function1[/* item */ T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("autolinker/dist/commonjs/utils", "throwUnhandledCaseError")
-  @js.native
-  def throwUnhandledCaseError(theValue: scala.Nothing): Unit = js.native
+  @scala.inline
+  def splitAndCapture(str: String, splitRegex: RegExp): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitAndCapture")(str.asInstanceOf[js.Any], splitRegex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def throwUnhandledCaseError(theValue: scala.Nothing): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throwUnhandledCaseError")(theValue.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

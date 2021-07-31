@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPlanMod {
   
-  @JSImport("@pulumi/aws/backup/getPlan", "getPlan")
+  @JSImport("@pulumi/aws/backup/getPlan", JSImport.Namespace)
   @js.native
-  def getPlan(args: GetPlanArgs): js.Promise[GetPlanResult] = js.native
-  @JSImport("@pulumi/aws/backup/getPlan", "getPlan")
-  @js.native
-  def getPlan(args: GetPlanArgs, opts: InvokeOptions): js.Promise[GetPlanResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPlan(args: GetPlanArgs): js.Promise[GetPlanResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlan")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPlanResult]]
+  @scala.inline
+  def getPlan(args: GetPlanArgs, opts: InvokeOptions): js.Promise[GetPlanResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlan")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPlanResult]]
+  
   trait GetPlanArgs extends StObject {
     
     /**
       * The backup plan ID.
       */
-    val planId: String = js.native
+    val planId: String
     
     /**
       * Metadata that you can assign to help organize the plans you create.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetPlanArgs {
     
@@ -51,35 +51,34 @@ object getPlanMod {
     }
   }
   
-  @js.native
   trait GetPlanResult extends StObject {
     
     /**
       * The ARN of the backup plan.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The display name of a backup plan.
       */
-    val name: String = js.native
+    val name: String
     
-    val planId: String = js.native
+    val planId: String
     
     /**
       * Metadata that you can assign to help organize the plans you create.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
       */
-    val version: String = js.native
+    val version: String
   }
   object GetPlanResult {
     

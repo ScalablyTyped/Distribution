@@ -4,50 +4,48 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a Windows Runtime random access stream for an IStream base implementation. */
-@js.native
 trait RandomAccessStreamOverStream extends StObject {
   
   /** Gets a value that indicates whether the stream can be read from. */
-  var canRead: Boolean = js.native
+  var canRead: Boolean
   
   /** Gets a value that indicates whether the stream can be written to. */
-  var canWrite: Boolean = js.native
+  var canWrite: Boolean
   
   /**
     * Creates a new instance of a IRandomAccessStream over the same resource as the current stream.
     * @return The new stream. The initial, internal position of the stream is 0.
     */
-  def cloneStream(): IRandomAccessStream = js.native
+  def cloneStream(): IRandomAccessStream
   
   /** Closes the current stream and releases system resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Flushes data asynchronously in a sequential stream.
     * @return The stream flush operation.
     */
-  def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def flushAsync(): IPromiseWithIAsyncOperation[Boolean]
   
   /**
     * Returns an input stream at a specified location in a stream.
     * @param position The location in the stream at which to begin.
     * @return The input stream.
     */
-  def getInputStreamAt(position: Double): IInputStream = js.native
+  def getInputStreamAt(position: Double): IInputStream
   
   /**
     * Returns an output stream at a specified location in a stream.
     * @param position The location in the output stream at which to begin.
     * @return The output stream.
     */
-  def getOutputStreamAt(position: Double): IOutputStream = js.native
+  def getOutputStreamAt(position: Double): IOutputStream
   
   /** Gets the byte offset of the stream. */
-  var position: Double = js.native
+  var position: Double
   
   /**
     * Returns an asynchronous byte reader object.
@@ -56,23 +54,23 @@ trait RandomAccessStreamOverStream extends StObject {
     * @param options Specifies the type of the asynchronous read operation.
     * @return The asynchronous operation.
     */
-  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   
   /**
     * Sets the position of the stream to the specified value.
     * @param position The new position of the stream.
     */
-  def seek(position: Double): Unit = js.native
+  def seek(position: Double): Unit
   
   /** Gets or sets the size of the random access stream. */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Writes data asynchronously in a sequential stream.
     * @param buffer The buffer into which the asynchronous writer operation writes.
     * @return The byte writer operation.
     */
-  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double]
 }
 object RandomAccessStreamOverStream {
   

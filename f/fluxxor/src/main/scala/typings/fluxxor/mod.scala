@@ -6,7 +6,6 @@ import typings.eventemitter3.mod.EventEmitter
 import typings.fluxxor.anon.TypeofReact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,7 +31,8 @@ object mod {
   @JSImport("fluxxor", "Flux")
   @js.native
   class Flux protected ()
-    extends EventEmitter[String | js.Symbol, js.Any] {
+    extends StObject
+       with EventEmitter[String | js.Symbol, js.Any] {
     def this(stores: js.Any, actions: js.Any) = this()
     
     var actions: js.Any = js.native
@@ -51,10 +51,9 @@ object mod {
     var stores: js.Any = js.native
   }
   
-  @js.native
   trait FluxChildMixin extends StObject {
     
-    def getFlux(): Flux = js.native
+    def getFlux(): Flux
   }
   object FluxChildMixin {
     
@@ -70,10 +69,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FluxMixin extends StObject {
     
-    def getFlux(): Flux = js.native
+    def getFlux(): Flux
   }
   object FluxMixin {
     
@@ -89,10 +87,9 @@ object mod {
     }
   }
   
-  @js.native
   trait StoreWatchMixin[StoreState] extends StObject {
     
-    def getStateFromFlux(): StoreState = js.native
+    def getStateFromFlux(): StoreState
   }
   object StoreWatchMixin {
     
@@ -101,16 +98,15 @@ object mod {
     def apply[StoreState](storeNames: String*): StoreWatchMixin[StoreState] = js.native
     
     @scala.inline
-    implicit class StoreWatchMixinMutableBuilder[Self <: StoreWatchMixin[_], StoreState] (val x: Self with StoreWatchMixin[StoreState]) extends AnyVal {
+    implicit class StoreWatchMixinMutableBuilder[Self <: StoreWatchMixin[?], StoreState] (val x: Self & StoreWatchMixin[StoreState]) extends AnyVal {
       
       @scala.inline
       def setGetStateFromFlux(value: () => StoreState): Self = StObject.set(x, "getStateFromFlux", js.Any.fromFunction0(value))
     }
   }
   
-  @JSImport("fluxxor", "createStore")
-  @js.native
-  def createStore(spec: StoreSpec): StoreClass = js.native
+  @scala.inline
+  def createStore(spec: StoreSpec): StoreClass = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(spec.asInstanceOf[js.Any]).asInstanceOf[StoreClass]
   
   @JSImport("fluxxor", "version")
   @js.native
@@ -118,10 +114,9 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Context extends StObject {
     
-    var flux: Flux = js.native
+    var flux: Flux
   }
   object Context {
     
@@ -141,7 +136,8 @@ object mod {
   
   @js.native
   trait Store
-    extends EventEmitter[String | js.Symbol, js.Any] {
+    extends StObject
+       with EventEmitter[String | js.Symbol, js.Any] {
     
     def bindActions(args: (String | js.Function)*): Unit = js.native
     def bindActions(args: js.Array[String | js.Function]): Unit = js.native
@@ -151,17 +147,17 @@ object mod {
   
   @js.native
   trait StoreClass
-    extends Instantiable0[js.Any]
+    extends StObject
+       with Instantiable0[js.Any]
        with Instantiable1[/* options */ js.Object, js.Any]
   
-  @js.native
   trait StoreSpec extends StObject {
     
-    var actions: js.UndefOr[js.Any] = js.native
+    var actions: js.UndefOr[js.Any] = js.undefined
     
     var initialize: js.UndefOr[
         js.Function2[/* instance */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object StoreSpec {
     

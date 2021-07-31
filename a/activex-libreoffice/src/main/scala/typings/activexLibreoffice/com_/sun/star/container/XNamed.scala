@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,17 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The name is generally unique in the container of the object.
   */
-@js.native
-trait XNamed extends XInterface {
+trait XNamed
+  extends StObject
+     with XInterface {
   
   /** @returns the programmatic name of the object. */
-  var Name: String = js.native
+  var Name: String
   
   /** @returns the programmatic name of the object. */
-  def getName(): String = js.native
+  def getName(): String
   
   /** sets the programmatic name of the object. */
-  def setName(aName: String): Unit = js.native
+  def setName(aName: String): Unit
 }
 object XNamed {
   

@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait TabLeader extends StObject
 object TabLeader extends StObject {
   
   @js.native
-  sealed trait dashes extends TabLeader
+  sealed trait dashes
+    extends StObject
+       with TabLeader
   
   @js.native
-  sealed trait dots extends TabLeader
+  sealed trait dots
+    extends StObject
+       with TabLeader
   
   @js.native
-  sealed trait equals extends TabLeader
+  sealed trait equals
+    extends StObject
+       with TabLeader
   
   @js.native
-  sealed trait lines extends TabLeader
+  sealed trait lines
+    extends StObject
+       with TabLeader
   
   @js.native
-  sealed trait spaces extends TabLeader
+  sealed trait spaces
+    extends StObject
+       with TabLeader
   
   @js.native
-  sealed trait thickLines extends TabLeader
+  sealed trait thickLines
+    extends StObject
+       with TabLeader
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule from which to remove the tags.
     */
-  var Arn: NotificationRuleArn = js.native
+  var Arn: NotificationRuleArn
   
   /**
     * The key names of the tags to remove.
     */
-  var TagKeys: typings.awsSdk.codestarnotificationsMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.codestarnotificationsMod.TagKeys
 }
 object UntagResourceRequest {
   

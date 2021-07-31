@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EbsConfiguration extends StObject {
   
   /**
     * An array of Amazon EBS volume specifications attached to a cluster instance.
     */
-  var EbsBlockDeviceConfigs: js.UndefOr[EbsBlockDeviceConfigList] = js.native
+  var EbsBlockDeviceConfigs: js.UndefOr[EbsBlockDeviceConfigList] = js.undefined
   
   /**
     * Indicates whether an Amazon EBS volume is EBS-optimized.
     */
-  var EbsOptimized: js.UndefOr[BooleanObject] = js.native
+  var EbsOptimized: js.UndefOr[BooleanObject] = js.undefined
 }
 object EbsConfiguration {
   

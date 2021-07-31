@@ -3,7 +3,6 @@ package typings.tsMockito
 import typings.tsMockito.methodActionMod.MethodAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argCaptorMod {
@@ -28,20 +27,19 @@ object argCaptorMod {
     def third(): js.Any = js.native
   }
   
-  @js.native
   trait ArgCaptor1[T] extends StObject {
     
-    def beforeLast(): js.Array[T] = js.native
+    def beforeLast(): js.Array[T]
     
-    def byCallIndex(index: Double): js.Array[T] = js.native
+    def byCallIndex(index: Double): js.Array[T]
     
-    def first(): js.Array[T] = js.native
+    def first(): js.Array[T]
     
-    def last(): js.Array[T] = js.native
+    def last(): js.Array[T]
     
-    def second(): js.Array[T] = js.native
+    def second(): js.Array[T]
     
-    def third(): js.Array[T] = js.native
+    def third(): js.Array[T]
   }
   object ArgCaptor1 {
     
@@ -59,7 +57,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor1MutableBuilder[Self <: ArgCaptor1[_], T] (val x: Self with ArgCaptor1[T]) extends AnyVal {
+    implicit class ArgCaptor1MutableBuilder[Self <: ArgCaptor1[?], T] (val x: Self & ArgCaptor1[T]) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Array[T]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -81,20 +79,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] extends StObject {
     
-    def beforeLast(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
+    def beforeLast(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]
     
-    def byCallIndex(index: Double): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
+    def byCallIndex(index: Double): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]
     
-    def first(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
+    def first(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]
     
-    def last(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
+    def last(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]
     
-    def second(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
+    def second(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]
     
-    def third(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] = js.native
+    def third(): js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]
   }
   object ArgCaptor10 {
     
@@ -112,7 +109,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor10MutableBuilder[Self <: ArgCaptor10[_, _, _, _, _, _, _, _, _, _], T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] (val x: Self with (ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9])) extends AnyVal {
+    implicit class ArgCaptor10MutableBuilder[Self <: ArgCaptor10[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] (val x: Self & (ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -134,20 +131,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor2[T0, T1] extends StObject {
     
-    def beforeLast(): js.Tuple2[T0, T1] = js.native
+    def beforeLast(): js.Tuple2[T0, T1]
     
-    def byCallIndex(index: Double): js.Tuple2[T0, T1] = js.native
+    def byCallIndex(index: Double): js.Tuple2[T0, T1]
     
-    def first(): js.Tuple2[T0, T1] = js.native
+    def first(): js.Tuple2[T0, T1]
     
-    def last(): js.Tuple2[T0, T1] = js.native
+    def last(): js.Tuple2[T0, T1]
     
-    def second(): js.Tuple2[T0, T1] = js.native
+    def second(): js.Tuple2[T0, T1]
     
-    def third(): js.Tuple2[T0, T1] = js.native
+    def third(): js.Tuple2[T0, T1]
   }
   object ArgCaptor2 {
     
@@ -165,7 +161,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor2MutableBuilder[Self <: ArgCaptor2[_, _], T0, T1] (val x: Self with (ArgCaptor2[T0, T1])) extends AnyVal {
+    implicit class ArgCaptor2MutableBuilder[Self <: ArgCaptor2[?, ?], T0, T1] (val x: Self & (ArgCaptor2[T0, T1])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -187,20 +183,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor3[T0, T1, T2] extends StObject {
     
-    def beforeLast(): js.Tuple3[T0, T1, T2] = js.native
+    def beforeLast(): js.Tuple3[T0, T1, T2]
     
-    def byCallIndex(index: Double): js.Tuple3[T0, T1, T2] = js.native
+    def byCallIndex(index: Double): js.Tuple3[T0, T1, T2]
     
-    def first(): js.Tuple3[T0, T1, T2] = js.native
+    def first(): js.Tuple3[T0, T1, T2]
     
-    def last(): js.Tuple3[T0, T1, T2] = js.native
+    def last(): js.Tuple3[T0, T1, T2]
     
-    def second(): js.Tuple3[T0, T1, T2] = js.native
+    def second(): js.Tuple3[T0, T1, T2]
     
-    def third(): js.Tuple3[T0, T1, T2] = js.native
+    def third(): js.Tuple3[T0, T1, T2]
   }
   object ArgCaptor3 {
     
@@ -218,7 +213,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor3MutableBuilder[Self <: ArgCaptor3[_, _, _], T0, T1, T2] (val x: Self with (ArgCaptor3[T0, T1, T2])) extends AnyVal {
+    implicit class ArgCaptor3MutableBuilder[Self <: ArgCaptor3[?, ?, ?], T0, T1, T2] (val x: Self & (ArgCaptor3[T0, T1, T2])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -240,20 +235,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor4[T0, T1, T2, T3] extends StObject {
     
-    def beforeLast(): js.Tuple4[T0, T1, T2, T3] = js.native
+    def beforeLast(): js.Tuple4[T0, T1, T2, T3]
     
-    def byCallIndex(index: Double): js.Tuple4[T0, T1, T2, T3] = js.native
+    def byCallIndex(index: Double): js.Tuple4[T0, T1, T2, T3]
     
-    def first(): js.Tuple4[T0, T1, T2, T3] = js.native
+    def first(): js.Tuple4[T0, T1, T2, T3]
     
-    def last(): js.Tuple4[T0, T1, T2, T3] = js.native
+    def last(): js.Tuple4[T0, T1, T2, T3]
     
-    def second(): js.Tuple4[T0, T1, T2, T3] = js.native
+    def second(): js.Tuple4[T0, T1, T2, T3]
     
-    def third(): js.Tuple4[T0, T1, T2, T3] = js.native
+    def third(): js.Tuple4[T0, T1, T2, T3]
   }
   object ArgCaptor4 {
     
@@ -271,7 +265,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor4MutableBuilder[Self <: ArgCaptor4[_, _, _, _], T0, T1, T2, T3] (val x: Self with (ArgCaptor4[T0, T1, T2, T3])) extends AnyVal {
+    implicit class ArgCaptor4MutableBuilder[Self <: ArgCaptor4[?, ?, ?, ?], T0, T1, T2, T3] (val x: Self & (ArgCaptor4[T0, T1, T2, T3])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -293,20 +287,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor5[T0, T1, T2, T3, T4] extends StObject {
     
-    def beforeLast(): js.Tuple5[T0, T1, T2, T3, T4] = js.native
+    def beforeLast(): js.Tuple5[T0, T1, T2, T3, T4]
     
-    def byCallIndex(index: Double): js.Tuple5[T0, T1, T2, T3, T4] = js.native
+    def byCallIndex(index: Double): js.Tuple5[T0, T1, T2, T3, T4]
     
-    def first(): js.Tuple5[T0, T1, T2, T3, T4] = js.native
+    def first(): js.Tuple5[T0, T1, T2, T3, T4]
     
-    def last(): js.Tuple5[T0, T1, T2, T3, T4] = js.native
+    def last(): js.Tuple5[T0, T1, T2, T3, T4]
     
-    def second(): js.Tuple5[T0, T1, T2, T3, T4] = js.native
+    def second(): js.Tuple5[T0, T1, T2, T3, T4]
     
-    def third(): js.Tuple5[T0, T1, T2, T3, T4] = js.native
+    def third(): js.Tuple5[T0, T1, T2, T3, T4]
   }
   object ArgCaptor5 {
     
@@ -324,7 +317,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor5MutableBuilder[Self <: ArgCaptor5[_, _, _, _, _], T0, T1, T2, T3, T4] (val x: Self with (ArgCaptor5[T0, T1, T2, T3, T4])) extends AnyVal {
+    implicit class ArgCaptor5MutableBuilder[Self <: ArgCaptor5[?, ?, ?, ?, ?], T0, T1, T2, T3, T4] (val x: Self & (ArgCaptor5[T0, T1, T2, T3, T4])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -346,20 +339,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor6[T0, T1, T2, T3, T4, T5] extends StObject {
     
-    def beforeLast(): js.Tuple6[T0, T1, T2, T3, T4, T5] = js.native
+    def beforeLast(): js.Tuple6[T0, T1, T2, T3, T4, T5]
     
-    def byCallIndex(index: Double): js.Tuple6[T0, T1, T2, T3, T4, T5] = js.native
+    def byCallIndex(index: Double): js.Tuple6[T0, T1, T2, T3, T4, T5]
     
-    def first(): js.Tuple6[T0, T1, T2, T3, T4, T5] = js.native
+    def first(): js.Tuple6[T0, T1, T2, T3, T4, T5]
     
-    def last(): js.Tuple6[T0, T1, T2, T3, T4, T5] = js.native
+    def last(): js.Tuple6[T0, T1, T2, T3, T4, T5]
     
-    def second(): js.Tuple6[T0, T1, T2, T3, T4, T5] = js.native
+    def second(): js.Tuple6[T0, T1, T2, T3, T4, T5]
     
-    def third(): js.Tuple6[T0, T1, T2, T3, T4, T5] = js.native
+    def third(): js.Tuple6[T0, T1, T2, T3, T4, T5]
   }
   object ArgCaptor6 {
     
@@ -377,7 +369,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor6MutableBuilder[Self <: ArgCaptor6[_, _, _, _, _, _], T0, T1, T2, T3, T4, T5] (val x: Self with (ArgCaptor6[T0, T1, T2, T3, T4, T5])) extends AnyVal {
+    implicit class ArgCaptor6MutableBuilder[Self <: ArgCaptor6[?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5] (val x: Self & (ArgCaptor6[T0, T1, T2, T3, T4, T5])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -399,20 +391,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor7[T0, T1, T2, T3, T4, T5, T6] extends StObject {
     
-    def beforeLast(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6] = js.native
+    def beforeLast(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6]
     
-    def byCallIndex(index: Double): js.Tuple7[T0, T1, T2, T3, T4, T5, T6] = js.native
+    def byCallIndex(index: Double): js.Tuple7[T0, T1, T2, T3, T4, T5, T6]
     
-    def first(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6] = js.native
+    def first(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6]
     
-    def last(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6] = js.native
+    def last(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6]
     
-    def second(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6] = js.native
+    def second(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6]
     
-    def third(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6] = js.native
+    def third(): js.Tuple7[T0, T1, T2, T3, T4, T5, T6]
   }
   object ArgCaptor7 {
     
@@ -430,7 +421,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor7MutableBuilder[Self <: ArgCaptor7[_, _, _, _, _, _, _], T0, T1, T2, T3, T4, T5, T6] (val x: Self with (ArgCaptor7[T0, T1, T2, T3, T4, T5, T6])) extends AnyVal {
+    implicit class ArgCaptor7MutableBuilder[Self <: ArgCaptor7[?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6] (val x: Self & (ArgCaptor7[T0, T1, T2, T3, T4, T5, T6])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -452,20 +443,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7] extends StObject {
     
-    def beforeLast(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7] = js.native
+    def beforeLast(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]
     
-    def byCallIndex(index: Double): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7] = js.native
+    def byCallIndex(index: Double): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]
     
-    def first(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7] = js.native
+    def first(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]
     
-    def last(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7] = js.native
+    def last(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]
     
-    def second(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7] = js.native
+    def second(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]
     
-    def third(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7] = js.native
+    def third(): js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]
   }
   object ArgCaptor8 {
     
@@ -483,7 +473,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor8MutableBuilder[Self <: ArgCaptor8[_, _, _, _, _, _, _, _], T0, T1, T2, T3, T4, T5, T6, T7] (val x: Self with (ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7])) extends AnyVal {
+    implicit class ArgCaptor8MutableBuilder[Self <: ArgCaptor8[?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7] (val x: Self & (ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
@@ -505,20 +495,19 @@ object argCaptorMod {
     }
   }
   
-  @js.native
   trait ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8] extends StObject {
     
-    def beforeLast(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8] = js.native
+    def beforeLast(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]
     
-    def byCallIndex(index: Double): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8] = js.native
+    def byCallIndex(index: Double): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]
     
-    def first(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8] = js.native
+    def first(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]
     
-    def last(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8] = js.native
+    def last(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]
     
-    def second(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8] = js.native
+    def second(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]
     
-    def third(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8] = js.native
+    def third(): js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]
   }
   object ArgCaptor9 {
     
@@ -536,7 +525,7 @@ object argCaptorMod {
     }
     
     @scala.inline
-    implicit class ArgCaptor9MutableBuilder[Self <: ArgCaptor9[_, _, _, _, _, _, _, _, _], T0, T1, T2, T3, T4, T5, T6, T7, T8] (val x: Self with (ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8])) extends AnyVal {
+    implicit class ArgCaptor9MutableBuilder[Self <: ArgCaptor9[?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8] (val x: Self & (ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8])) extends AnyVal {
       
       @scala.inline
       def setBeforeLast(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))

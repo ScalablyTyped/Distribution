@@ -8,7 +8,6 @@ import typings.std.ThisType
 import typings.zoneJs.anon.ADDEVENTLISTENERSTR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,17 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ZonePrivate extends StObject {
   
-  def ArraySlice(): js.Array[_] = js.native
-  def ArraySlice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[_] = js.native
-  def ArraySlice(start: Double): js.Array[_] = js.native
-  def ArraySlice(start: Double, end: Double): js.Array[_] = js.native
+  def ArraySlice(): js.Array[js.Any] = js.native
+  def ArraySlice(start: Double): js.Array[js.Any] = js.native
+  def ArraySlice(start: Double, end: Double): js.Array[js.Any] = js.native
+  def ArraySlice(start: Unit, end: Double): js.Array[js.Any] = js.native
   
   def ObjectCreate(): js.Any = js.native
   def ObjectCreate(o: js.Object): js.Any = js.native
-  def ObjectCreate(o: js.Object, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
-  def ObjectCreate(o: Null, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
+  def ObjectCreate(o: js.Object, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
+  def ObjectCreate(o: Null, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
   
-  def ObjectDefineProperty(o: js.Any, p: PropertyKey, attributes: PropertyDescriptor with ThisType[_]): js.Any = js.native
+  def ObjectDefineProperty(o: js.Any, p: PropertyKey, attributes: PropertyDescriptor & ThisType[js.Any]): js.Any = js.native
   
   def ObjectGetOwnPropertyDescriptor(o: js.Any, p: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
   
@@ -36,11 +35,11 @@ trait ZonePrivate extends StObject {
   
   def attachOriginToPatched(target: js.Any, origin: js.Any): Unit = js.native
   
-  def bindArguments(args: js.Array[_], source: String): js.Array[_] = js.native
+  def bindArguments(args: js.Array[js.Any], source: String): js.Array[js.Any] = js.native
   
   def currentZoneFrame(): ZoneFrame = js.native
   
-  def filterProperties(target: js.Any, onProperties: js.Array[String], ignoreProperties: js.Array[_]): js.Array[String] = js.native
+  def filterProperties(target: js.Any, onProperties: js.Array[String], ignoreProperties: js.Array[js.Any]): js.Array[String] = js.native
   
   def getGlobalObjects(): js.UndefOr[ADDEVENTLISTENERSTR] = js.native
   
@@ -56,13 +55,13 @@ trait ZonePrivate extends StObject {
   
   def patchEventPrototype(_global: js.Any, api: ZonePrivate): Unit = js.native
   
-  def patchEventTarget(global: js.Any, apis: js.Array[_]): js.Array[Boolean] = js.native
-  def patchEventTarget(global: js.Any, apis: js.Array[_], options: js.Any): js.Array[Boolean] = js.native
+  def patchEventTarget(global: js.Any, apis: js.Array[js.Any]): js.Array[Boolean] = js.native
+  def patchEventTarget(global: js.Any, apis: js.Array[js.Any], options: js.Any): js.Array[Boolean] = js.native
   
   def patchMacroTask(
     obj: js.Any,
     funcName: String,
-    metaCreator: js.Function2[/* self */ js.Any, /* args */ js.Array[_], _]
+    metaCreator: js.Function2[/* self */ js.Any, /* args */ js.Array[js.Any], js.Any]
   ): Unit = js.native
   
   def patchMethod(
@@ -72,7 +71,7 @@ trait ZonePrivate extends StObject {
       /* delegate */ js.Function, 
       /* delegateName */ String, 
       /* name */ String, 
-      js.Function2[/* self */ _, /* args */ js.Array[_], _]
+      js.Function2[/* self */ js.Any, /* args */ js.Array[js.Any], js.Any]
     ]
   ): js.Function | Null = js.native
   

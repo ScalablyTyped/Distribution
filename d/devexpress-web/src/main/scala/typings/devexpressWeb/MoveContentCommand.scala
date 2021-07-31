@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to move the selected range to a specific position in the document.
   */
-@js.native
-trait MoveContentCommand extends CommandWithSimpleStateBase {
+trait MoveContentCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the MoveContentCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param position An integer value specifying position to insert selected text.
     */
-  def execute(position: Double): Boolean = js.native
+  def execute(position: Double): Boolean
 }
 object MoveContentCommand {
   

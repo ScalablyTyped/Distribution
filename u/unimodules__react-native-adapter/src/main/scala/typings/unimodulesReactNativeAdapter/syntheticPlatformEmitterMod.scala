@@ -3,7 +3,6 @@ package typings.unimodulesReactNativeAdapter
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syntheticPlatformEmitterMod extends Shortcut {
@@ -12,12 +11,11 @@ object syntheticPlatformEmitterMod extends Shortcut {
   @js.native
   val default: SyntheticPlatformEmitter = js.native
   
-  @js.native
   trait SyntheticPlatformEmitter extends StObject {
     
-    var _emitter: js.Any = js.native
+    var _emitter: js.Any
     
-    def emit(eventName: String, props: js.Any): Unit = js.native
+    def emit(eventName: String, props: js.Any): Unit
   }
   object SyntheticPlatformEmitter {
     

@@ -3,11 +3,12 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.windows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlatformWindowsOSStatic extends PlatformStatic {
+trait PlatformWindowsOSStatic
+  extends StObject
+     with PlatformStatic {
   
   var OS: windows = js.native
 }

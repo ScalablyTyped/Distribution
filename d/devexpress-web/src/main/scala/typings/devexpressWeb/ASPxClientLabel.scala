@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxLabel control.
   */
-@js.native
-trait ASPxClientLabel extends ASPxClientStaticEdit {
+trait ASPxClientLabel
+  extends StObject
+     with ASPxClientStaticEdit {
   
   /**
     * Returns the text displayed within the editor.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Sets the text to be displayed within the editor.
     * @param text A string value specifying the text to be displayed within the editor.
     */
-  def SetText(text: String): Unit = js.native
+  def SetText(text: String): Unit
 }
 object ASPxClientLabel {
   

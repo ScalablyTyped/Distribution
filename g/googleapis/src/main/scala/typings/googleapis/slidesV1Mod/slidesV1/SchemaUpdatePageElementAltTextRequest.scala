@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates the alt text title and/or description of a page element.
   */
-@js.native
 trait SchemaUpdatePageElementAltTextRequest extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaUpdatePageElementAltTextRequest extends StObject {
     * readers and other accessibility interfaces. Only use human readable
     * values related to the content of the page element.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the page element the updates are applied to.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The updated alt text title of the page element. If unset the existing
@@ -30,7 +28,7 @@ trait SchemaUpdatePageElementAltTextRequest extends StObject {
     * other accessibility interfaces. Only use human readable values related to
     * the content of the page element.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdatePageElementAltTextRequest {
   

@@ -2,25 +2,23 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderHeight extends StObject {
   
-  var border: js.UndefOr[ColorWidth] = js.native
+  var border: js.UndefOr[ColorWidth] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var headerHeight: js.UndefOr[Double] = js.native
+  var headerHeight: js.UndefOr[Double] = js.undefined
   
-  var hoverEnabled: js.UndefOr[Boolean] = js.native
+  var hoverEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var hoverStyle: js.UndefOr[`30`] = js.native
+  var hoverStyle: js.UndefOr[`30`] = js.undefined
   
-  var label: js.UndefOr[TextOverflow] = js.native
+  var label: js.UndefOr[TextOverflow] = js.undefined
   
-  var selectionStyle: js.UndefOr[`30`] = js.native
+  var selectionStyle: js.UndefOr[`30`] = js.undefined
 }
 object HeaderHeight {
   

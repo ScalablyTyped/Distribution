@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2AuxiliaryTable extends StObject {
   
   /** Required. Quasi-identifier columns. */
-  var quasiIds: js.UndefOr[js.Array[GooglePrivacyDlpV2QuasiIdField]] = js.native
+  var quasiIds: js.UndefOr[js.Array[GooglePrivacyDlpV2QuasiIdField]] = js.undefined
   
   /** Required. The relative frequency column must contain a floating-point number between 0 and 1 (inclusive). Null values are assumed to be zero. */
-  var relativeFrequency: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var relativeFrequency: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
   /** Required. Auxiliary table location. */
-  var table: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.native
+  var table: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object GooglePrivacyDlpV2AuxiliaryTable {
   

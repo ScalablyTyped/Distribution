@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardingRulesScopedList extends StObject {
   
   /** A list of forwarding rules contained in this scope. */
-  var forwardingRules: js.UndefOr[js.Array[ForwardingRule]] = js.native
+  var forwardingRules: js.UndefOr[js.Array[ForwardingRule]] = js.undefined
   
   /** Informational warning which replaces the list of forwarding rules when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object ForwardingRulesScopedList {
   

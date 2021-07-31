@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartNavigatorCategoryAxisTitle extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[StockChartNavigatorCategoryAxisTitleBorder] = js.native
+  var border: js.UndefOr[StockChartNavigatorCategoryAxisTitleBorder] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[Double | StockChartNavigatorCategoryAxisTitleMargin] = js.native
+  var margin: js.UndefOr[Double | StockChartNavigatorCategoryAxisTitleMargin] = js.undefined
   
-  var padding: js.UndefOr[Double | StockChartNavigatorCategoryAxisTitlePadding] = js.native
+  var padding: js.UndefOr[Double | StockChartNavigatorCategoryAxisTitlePadding] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object StockChartNavigatorCategoryAxisTitle {
   

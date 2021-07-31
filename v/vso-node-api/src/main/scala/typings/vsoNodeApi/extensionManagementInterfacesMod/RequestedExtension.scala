@@ -2,36 +2,34 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestedExtension extends StObject {
   
   /**
     * The unique name of the extension
     */
-  var extensionName: String = js.native
+  var extensionName: String
   
   /**
     * A list of each request for the extension
     */
-  var extensionRequests: js.Array[ExtensionRequest] = js.native
+  var extensionRequests: js.Array[ExtensionRequest]
   
   /**
     * DisplayName of the publisher that owns the extension being published.
     */
-  var publisherDisplayName: String = js.native
+  var publisherDisplayName: String
   
   /**
     * Represents the Publisher of the requested extension
     */
-  var publisherName: String = js.native
+  var publisherName: String
   
   /**
     * The total number of requests for an extension
     */
-  var requestCount: Double = js.native
+  var requestCount: Double
 }
 object RequestedExtension {
   

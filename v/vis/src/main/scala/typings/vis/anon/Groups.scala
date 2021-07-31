@@ -6,15 +6,13 @@ import typings.vis.mod.DataItem
 import typings.vis.mod.DataItemCollectionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groups extends StObject {
   
-  var groups: js.UndefOr[DataGroupCollectionType] = js.native
+  var groups: js.UndefOr[DataGroupCollectionType] = js.undefined
   
-  var items: js.UndefOr[DataItemCollectionType] = js.native
+  var items: js.UndefOr[DataItemCollectionType] = js.undefined
 }
 object Groups {
   

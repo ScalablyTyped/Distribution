@@ -2,11 +2,11 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
+trait NativeInvocationListenerCallbacks
+  extends StObject
+     with InvocationListenerCallbacks {
   
   /**
     * Called synchronously when a thread is about to enter the target function.
@@ -15,7 +15,7 @@ trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
     *
     * Signature: `void onEnter (GumInvocationContext * ic)`
     */
-  var onEnter: js.UndefOr[NativePointer] = js.native
+  var onEnter: js.UndefOr[NativePointer] = js.undefined
   
   /**
     * Called synchronously when a thread is about to leave the target function.
@@ -24,7 +24,7 @@ trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
     *
     * Signature: `void onLeave (GumInvocationContext * ic)`
     */
-  var onLeave: js.UndefOr[NativePointer] = js.native
+  var onLeave: js.UndefOr[NativePointer] = js.undefined
 }
 object NativeInvocationListenerCallbacks {
   

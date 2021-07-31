@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleProtobuf.timestampPbMod.Timestamp.AsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CryptoKey extends StObject {
   
-  var createTime: AsObject = js.native
+  var createTime: AsObject
   
-  var labels: StringDictionary[String] = js.native
+  var labels: StringDictionary[String]
   
-  var name: String = js.native
+  var name: String
   
-  var nextRotationTime: js.UndefOr[AsObject] = js.native
+  var nextRotationTime: js.UndefOr[AsObject] = js.undefined
   
-  var primary: CryptoKeyVersion = js.native
+  var primary: CryptoKeyVersion
   
-  var purpose: CryptoKeyPurpose = js.native
+  var purpose: CryptoKeyPurpose
   
-  var versionTemplate: CryptoKeyVersionTemplate = js.native
+  var versionTemplate: CryptoKeyVersionTemplate
 }
 object CryptoKey {
   

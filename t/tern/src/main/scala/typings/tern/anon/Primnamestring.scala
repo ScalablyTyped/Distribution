@@ -9,7 +9,6 @@ import typings.tern.ternStrings.number
 import typings.tern.ternStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tern.tern/lib/infer.Prim & {  name :'string'} */
@@ -45,7 +44,7 @@ trait Primnamestring extends StObject {
   def isEmpty(args: js.Any*): Boolean = js.native
   
   /** The name of the type, if any. */
-  var name: (string | bool | number) with string = js.native
+  var name: (string | bool | number) & string = js.native
   
   /** The origin file of the type. */
   var origin: String = js.native

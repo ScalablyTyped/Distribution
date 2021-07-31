@@ -2,16 +2,15 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HTMLWndSelectElement extends StObject {
   
   def apply(): js.Any = js.native
-  def apply(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def apply(name: js.Any): js.Any = js.native
   def apply(name: js.Any, index: js.Any): js.Any = js.native
+  def apply(name: Unit, index: js.Any): js.Any = js.native
   
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
@@ -160,9 +159,9 @@ trait HTMLWndSelectElement extends StObject {
   def focus(): Unit = js.native
   
   def form(): js.Any = js.native
-  def form(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def form(name: js.Any): js.Any = js.native
   def form(name: js.Any, index: js.Any): js.Any = js.native
+  def form(name: Unit, index: js.Any): js.Any = js.native
   @JSName("form")
   val form_Original: IHTMLFormElement = js.native
   
@@ -275,9 +274,9 @@ trait HTMLWndSelectElement extends StObject {
   val isTextEdit: Boolean = js.native
   
   def item(): js.Any = js.native
-  def item(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def item(name: js.Any): js.Any = js.native
   def item(name: js.Any, index: js.Any): js.Any = js.native
+  def item(name: Unit, index: js.Any): js.Any = js.native
   
   var lang: String = js.native
   

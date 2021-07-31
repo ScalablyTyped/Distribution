@@ -3,13 +3,11 @@ package typings.wordpressApiFetch.mod.Schema
 import typings.wordpressApiFetch.anon.Formats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
-  var theme_supports: Formats = js.native
+  var theme_supports: Formats
 }
 object Theme {
   

@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CodeStarconnections extends Service {
   
   @JSName("config")
-  var config_CodeStarconnections: ConfigBase with ClientConfiguration = js.native
+  var config_CodeStarconnections: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a connection that can then be given to other AWS services like CodePipeline so that it can access third-party code repositories. The connection is in pending status until the third-party connection handshake is completed from the console.

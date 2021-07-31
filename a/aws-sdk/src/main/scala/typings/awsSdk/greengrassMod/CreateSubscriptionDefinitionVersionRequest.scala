@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSubscriptionDefinitionVersionRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
     */
-  var AmznClientToken: js.UndefOr[string] = js.native
+  var AmznClientToken: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the subscription definition.
     */
-  var SubscriptionDefinitionId: string = js.native
+  var SubscriptionDefinitionId: string
   
   /**
     * A list of subscriptions.
     */
-  var Subscriptions: js.UndefOr[listOfSubscription] = js.native
+  var Subscriptions: js.UndefOr[listOfSubscription] = js.undefined
 }
 object CreateSubscriptionDefinitionVersionRequest {
   

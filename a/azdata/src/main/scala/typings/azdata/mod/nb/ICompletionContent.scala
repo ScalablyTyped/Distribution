@@ -4,21 +4,19 @@ import typings.azdata.azdataStrings.error
 import typings.azdata.azdataStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICompletionContent extends StObject {
   
-  var cursor_end: Double = js.native
+  var cursor_end: Double
   
-  var cursor_start: Double = js.native
+  var cursor_start: Double
   
-  var matches: js.Array[String] = js.native
+  var matches: js.Array[String]
   
-  var metadata: js.Any = js.native
+  var metadata: js.Any
   
-  var status: ok | error = js.native
+  var status: ok | error
 }
 object ICompletionContent {
   

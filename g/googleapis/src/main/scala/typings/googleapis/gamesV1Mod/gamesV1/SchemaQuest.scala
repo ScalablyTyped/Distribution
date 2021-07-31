@@ -2,98 +2,96 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a Quest resource.
   */
-@js.native
 trait SchemaQuest extends StObject {
   
   /**
     * The timestamp at which the user accepted the quest in milliseconds since
     * the epoch in UTC. Only present if the player has accepted the quest.
     */
-  var acceptedTimestampMillis: js.UndefOr[String] = js.native
+  var acceptedTimestampMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the application this quest is part of.
     */
-  var applicationId: js.UndefOr[String] = js.native
+  var applicationId: js.UndefOr[String] = js.undefined
   
   /**
     * The banner image URL for the quest.
     */
-  var bannerUrl: js.UndefOr[String] = js.native
+  var bannerUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the quest.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp at which the quest ceases to be active in milliseconds
     * since the epoch in UTC.
     */
-  var endTimestampMillis: js.UndefOr[String] = js.native
+  var endTimestampMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The icon image URL for the quest.
     */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the quest.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the banner image being returned is a default image, or
     * is game-provided.
     */
-  var isDefaultBannerUrl: js.UndefOr[Boolean] = js.native
+  var isDefaultBannerUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the icon image being returned is a default image, or is
     * game-provided.
     */
-  var isDefaultIconUrl: js.UndefOr[Boolean] = js.native
+  var isDefaultIconUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#quest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp at which the quest was last updated by the user in
     * milliseconds since the epoch in UTC. Only present if the player has
     * accepted the quest.
     */
-  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.native
+  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The quest milestones.
     */
-  var milestones: js.UndefOr[js.Array[SchemaQuestMilestone]] = js.native
+  var milestones: js.UndefOr[js.Array[SchemaQuestMilestone]] = js.undefined
   
   /**
     * The name of the quest.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp at which the user should be notified that the quest will
     * end soon in milliseconds since the epoch in UTC.
     */
-  var notifyTimestampMillis: js.UndefOr[String] = js.native
+  var notifyTimestampMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp at which the quest becomes active in milliseconds since the
     * epoch in UTC.
     */
-  var startTimestampMillis: js.UndefOr[String] = js.native
+  var startTimestampMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the quest. Possible values are:   - &quot;UPCOMING&quot;:
@@ -106,7 +104,7 @@ trait SchemaQuest extends StObject {
     * &quot;EXPIRED&quot;: The quest has expired and was not accepted.  -
     * &quot;DELETED&quot;: The quest should be deleted from the local database.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaQuest {
   

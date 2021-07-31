@@ -2,40 +2,38 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMTextMargin extends StObject {
   
   /**
     * The bottom margin.
     */
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
   /**
     * The left margin.
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     * The right margin.
     */
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
   /**
     * The top margin.
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextMargin = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextMargin
 }
 object CIMTextMargin {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextMargin): CIMTextMargin = {
+  def apply(): CIMTextMargin = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMTextMargin")
     __obj.asInstanceOf[CIMTextMargin]
   }
   

@@ -3,27 +3,25 @@ package typings.qiniuJs.mod
 import typings.qiniuJs.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvFormat extends StObject {
   
-  var bit_rate: String = js.native
+  var bit_rate: String
   
-  var duration: String = js.native
+  var duration: String
   
-  var format_long_name: String = js.native
+  var format_long_name: String
   
-  var format_name: String = js.native
+  var format_name: String
   
-  var nb_streams: Double = js.native
+  var nb_streams: Double
   
-  var size: String = js.native
+  var size: String
   
-  var start_time: String = js.native
+  var start_time: String
   
-  var tags: Dictkey = js.native
+  var tags: Dictkey
 }
 object AvFormat {
   

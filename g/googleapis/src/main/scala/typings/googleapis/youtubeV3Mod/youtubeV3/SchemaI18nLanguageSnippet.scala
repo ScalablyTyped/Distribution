@@ -2,25 +2,23 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic details about an i18n language, such as language code and
   * human-readable name.
   */
-@js.native
 trait SchemaI18nLanguageSnippet extends StObject {
   
   /**
     * A short BCP-47 code that uniquely identifies a language.
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
   /**
     * The human-readable name of the language in the language itself.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaI18nLanguageSnippet {
   

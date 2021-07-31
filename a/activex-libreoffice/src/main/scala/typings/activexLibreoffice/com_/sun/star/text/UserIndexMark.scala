@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is a {@link TextRange} which is explicitly marked as an index entry for a {@link UserIndex} . */
-@js.native
-trait UserIndexMark extends BaseIndexMark {
+trait UserIndexMark
+  extends StObject
+     with BaseIndexMark {
   
   /** contains the name of the user index it belongs to. */
-  var UserIndexName: String = js.native
+  var UserIndexName: String
 }
 object UserIndexMark {
   

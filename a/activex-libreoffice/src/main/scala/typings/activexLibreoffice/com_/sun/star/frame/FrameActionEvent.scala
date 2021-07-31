@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * this event struct is broadcast for actions which can happen to components within frames
   * @see XFrameActionListener
   */
-@js.native
-trait FrameActionEvent extends EventObject {
+trait FrameActionEvent
+  extends StObject
+     with EventObject {
   
   /** specifies the concrete event */
-  var Action: FrameAction = js.native
+  var Action: FrameAction
   
   /** contains the frame in which the event occurred */
-  var Frame: XFrame = js.native
+  var Frame: XFrame
 }
 object FrameActionEvent {
   

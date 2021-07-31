@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesConfiguration/v1configuration", "gamesConfiguration_v1configuration.Resource$Achievementconfigurations")
@@ -30,7 +29,7 @@ class ResourceAchievementconfigurations protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAchievementconfigurationsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAchievementconfigurationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,7 +59,7 @@ class ResourceAchievementconfigurations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def get(callback: BodyResponseCallback[SchemaAchievementConfiguration]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def get(params: ParamsResourceAchievementconfigurationsGet): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def get(
     params: ParamsResourceAchievementconfigurationsGet,
@@ -93,7 +92,7 @@ class ResourceAchievementconfigurations protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def insert(callback: BodyResponseCallback[SchemaAchievementConfiguration]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def insert(params: ParamsResourceAchievementconfigurationsInsert): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def insert(
     params: ParamsResourceAchievementconfigurationsInsert,
@@ -128,7 +127,7 @@ class ResourceAchievementconfigurations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAchievementConfigurationListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAchievementConfigurationListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementConfigurationListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementConfigurationListResponse] = js.native
   def list(params: ParamsResourceAchievementconfigurationsList): GaxiosPromise[SchemaAchievementConfigurationListResponse] = js.native
   def list(
     params: ParamsResourceAchievementconfigurationsList,
@@ -162,7 +161,7 @@ class ResourceAchievementconfigurations protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def patch(callback: BodyResponseCallback[SchemaAchievementConfiguration]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def patch(params: ParamsResourceAchievementconfigurationsPatch): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def patch(
     params: ParamsResourceAchievementconfigurationsPatch,
@@ -196,7 +195,7 @@ class ResourceAchievementconfigurations protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def update(callback: BodyResponseCallback[SchemaAchievementConfiguration]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def update(params: ParamsResourceAchievementconfigurationsUpdate): GaxiosPromise[SchemaAchievementConfiguration] = js.native
   def update(
     params: ParamsResourceAchievementconfigurationsUpdate,

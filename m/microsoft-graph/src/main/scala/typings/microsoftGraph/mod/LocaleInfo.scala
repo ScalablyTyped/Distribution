@@ -2,21 +2,19 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocaleInfo extends StObject {
   
   // A name representing the user's locale in natural language, for example, 'English (United States)'.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A locale representation for the user, which includes the user's preferred language and country/region. For example,
     * 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows
     * 2-letter codes as defined in ISO 3166-1 alpha-2.
     */
-  var locale: js.UndefOr[NullableOption[String]] = js.native
+  var locale: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object LocaleInfo {
   

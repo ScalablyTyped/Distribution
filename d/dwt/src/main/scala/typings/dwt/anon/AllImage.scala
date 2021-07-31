@@ -2,19 +2,17 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllImage extends StObject {
   
-  var allImage: js.UndefOr[DisplayName] = js.native
+  var allImage: js.UndefOr[DisplayName] = js.undefined
   
-  var besides: js.UndefOr[`0`] = js.native
+  var besides: js.UndefOr[`0`] = js.undefined
   
-  var viewPort: js.UndefOr[`0`] = js.native
+  var viewPort: js.UndefOr[`0`] = js.undefined
   
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object AllImage {
   

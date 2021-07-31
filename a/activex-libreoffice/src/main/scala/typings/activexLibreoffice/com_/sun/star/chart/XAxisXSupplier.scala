@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,56 +14,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that not all diagrams are capable of displaying an **x** -axis, e.g., the {@link PieDiagram} .
   * @see XDiagram
   */
-@js.native
-trait XAxisXSupplier extends XInterface {
+trait XAxisXSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the properties of the **x** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  val XAxis: XPropertySet = js.native
+  val XAxis: XPropertySet
   
   /**
     * @returns the **x** -axis title shape.
     * @see ChartTitle
     */
-  val XAxisTitle: XShape = js.native
+  val XAxisTitle: XShape
   
   /**
     * @returns the properties of the help grid (minor grid) of the **x** -axis of the diagram.
     * @see ChartGrid
     */
-  val XHelpGrid: XPropertySet = js.native
+  val XHelpGrid: XPropertySet
   
   /**
     * @returns the properties of the main grid (major grid) of the **x** -axis of the diagram.
     * @see ChartGrid
     */
-  val XMainGrid: XPropertySet = js.native
+  val XMainGrid: XPropertySet
   
   /**
     * @returns the properties of the **x** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  def getXAxis(): XPropertySet = js.native
+  def getXAxis(): XPropertySet
   
   /**
     * @returns the **x** -axis title shape.
     * @see ChartTitle
     */
-  def getXAxisTitle(): XShape = js.native
+  def getXAxisTitle(): XShape
   
   /**
     * @returns the properties of the help grid (minor grid) of the **x** -axis of the diagram.
     * @see ChartGrid
     */
-  def getXHelpGrid(): XPropertySet = js.native
+  def getXHelpGrid(): XPropertySet
   
   /**
     * @returns the properties of the main grid (major grid) of the **x** -axis of the diagram.
     * @see ChartGrid
     */
-  def getXMainGrid(): XPropertySet = js.native
+  def getXMainGrid(): XPropertySet
 }
 object XAxisXSupplier {
   

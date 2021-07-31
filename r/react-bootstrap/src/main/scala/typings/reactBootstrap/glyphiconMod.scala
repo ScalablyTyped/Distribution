@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glyphiconMod {
@@ -18,14 +17,15 @@ object glyphiconMod {
   trait Glyphicon
     extends Component[GlyphiconProps, js.Object, js.Any]
   
-  @js.native
-  trait GlyphiconProps extends HTMLProps[Glyphicon] {
+  trait GlyphiconProps
+    extends StObject
+       with HTMLProps[Glyphicon] {
     
     // Optional
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
     // Required
-    var glyph: String = js.native
+    var glyph: String
   }
   object GlyphiconProps {
     

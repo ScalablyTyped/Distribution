@@ -2,30 +2,28 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OLEDBError extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  val ErrorString: String = js.native
+  val ErrorString: String
   
   @JSName("Excel.OLEDBError_typekey")
-  var ExcelDotOLEDBError_typekey: OLEDBError = js.native
+  var ExcelDotOLEDBError_typekey: OLEDBError
   
-  val Native: Double = js.native
+  val Native: Double
   
-  val Number: Double = js.native
+  val Number: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val SqlState: String = js.native
+  val SqlState: String
   
-  val Stage: Double = js.native
+  val Stage: Double
 }
 object OLEDBError {
   

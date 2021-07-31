@@ -4,22 +4,22 @@ import typings.pulumiAws.inputMod.kms.GetSecretSecret
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSecretMod {
   
-  @JSImport("@pulumi/aws/kms/getSecret", "getSecret")
+  @JSImport("@pulumi/aws/kms/getSecret", JSImport.Namespace)
   @js.native
-  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = js.native
-  @JSImport("@pulumi/aws/kms/getSecret", "getSecret")
-  @js.native
-  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretResult]]
+  @scala.inline
+  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretResult]]
+  
   trait GetSecretArgs extends StObject {
     
-    val secrets: js.Array[GetSecretSecret] = js.native
+    val secrets: js.Array[GetSecretSecret]
   }
   object GetSecretArgs {
     
@@ -40,15 +40,14 @@ object getSecretMod {
     }
   }
   
-  @js.native
   trait GetSecretResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val secrets: js.Array[typings.pulumiAws.outputMod.kms.GetSecretSecret] = js.native
+    val secrets: js.Array[typings.pulumiAws.outputMod.kms.GetSecretSecret]
   }
   object GetSecretResult {
     

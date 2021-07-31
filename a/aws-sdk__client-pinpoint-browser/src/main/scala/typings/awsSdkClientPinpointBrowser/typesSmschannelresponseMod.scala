@@ -2,83 +2,81 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSmschannelresponseMod {
   
-  @js.native
   trait SMSChannelResponse extends StObject {
     
     /**
       * The unique ID of the application to which the SMS channel belongs.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The date that the settings were last updated in ISO 8601 format.
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * If the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Not used. Retained for backwards compatibility.
       */
-    var HasCredential: js.UndefOr[Boolean] = js.native
+    var HasCredential: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Channel ID. Not used, only for backwards compatibility.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * Is this channel archived
       */
-    var IsArchived: js.UndefOr[Boolean] = js.native
+    var IsArchived: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Who last updated this entry
       */
-    var LastModifiedBy: js.UndefOr[String] = js.native
+    var LastModifiedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Last date this was updated
       */
-    var LastModifiedDate: js.UndefOr[String] = js.native
+    var LastModifiedDate: js.UndefOr[String] = js.undefined
     
     /**
       * Platform type. Will be "SMS"
       */
-    var Platform: js.UndefOr[String] = js.native
+    var Platform: js.UndefOr[String] = js.undefined
     
     /**
       * Promotional messages per second that can be sent
       */
-    var PromotionalMessagesPerSecond: js.UndefOr[Double] = js.native
+    var PromotionalMessagesPerSecond: js.UndefOr[Double] = js.undefined
     
     /**
       * Sender identifier of your messages.
       */
-    var SenderId: js.UndefOr[String] = js.native
+    var SenderId: js.UndefOr[String] = js.undefined
     
     /**
       * The short code registered with the phone provider.
       */
-    var ShortCode: js.UndefOr[String] = js.native
+    var ShortCode: js.UndefOr[String] = js.undefined
     
     /**
       * Transactional messages per second that can be sent
       */
-    var TransactionalMessagesPerSecond: js.UndefOr[Double] = js.native
+    var TransactionalMessagesPerSecond: js.UndefOr[Double] = js.undefined
     
     /**
       * Version of channel
       */
-    var Version: js.UndefOr[Double] = js.native
+    var Version: js.UndefOr[Double] = js.undefined
   }
   object SMSChannelResponse {
     

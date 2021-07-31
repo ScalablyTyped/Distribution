@@ -2,101 +2,99 @@ package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtocolApi extends StObject {
   
-  var Accessibility: AccessibilityApi = js.native
+  var Accessibility: AccessibilityApi
   
-  var Animation: AnimationApi = js.native
+  var Animation: AnimationApi
   
-  var ApplicationCache: ApplicationCacheApi = js.native
+  var ApplicationCache: ApplicationCacheApi
   
-  var Audits: AuditsApi = js.native
+  var Audits: AuditsApi
   
-  var BackgroundService: BackgroundServiceApi = js.native
+  var BackgroundService: BackgroundServiceApi
   
-  var Browser: BrowserApi = js.native
+  var Browser: BrowserApi
   
-  var CSS: CSSApi = js.native
+  var CSS: CSSApi
   
-  var CacheStorage: CacheStorageApi = js.native
+  var CacheStorage: CacheStorageApi
   
-  var Cast: CastApi = js.native
+  var Cast: CastApi
   
-  var Console: ConsoleApi = js.native
+  var Console: ConsoleApi
   
-  var DOM: DOMApi = js.native
+  var DOM: DOMApi
   
-  var DOMDebugger: DOMDebuggerApi = js.native
+  var DOMDebugger: DOMDebuggerApi
   
-  var DOMSnapshot: DOMSnapshotApi = js.native
+  var DOMSnapshot: DOMSnapshotApi
   
-  var DOMStorage: DOMStorageApi = js.native
+  var DOMStorage: DOMStorageApi
   
-  var Database: DatabaseApi = js.native
+  var Database: DatabaseApi
   
-  var Debugger: DebuggerApi = js.native
+  var Debugger: DebuggerApi
   
-  var DeviceOrientation: DeviceOrientationApi = js.native
+  var DeviceOrientation: DeviceOrientationApi
   
-  var Emulation: EmulationApi = js.native
+  var Emulation: EmulationApi
   
-  var Fetch: FetchApi = js.native
+  var Fetch: FetchApi
   
-  var HeadlessExperimental: HeadlessExperimentalApi = js.native
+  var HeadlessExperimental: HeadlessExperimentalApi
   
-  var HeapProfiler: HeapProfilerApi = js.native
+  var HeapProfiler: HeapProfilerApi
   
-  var IO: IOApi = js.native
+  var IO: IOApi
   
-  var IndexedDB: IndexedDBApi = js.native
+  var IndexedDB: IndexedDBApi
   
-  var Input: InputApi = js.native
+  var Input: InputApi
   
-  var Inspector: InspectorApi = js.native
+  var Inspector: InspectorApi
   
-  var LayerTree: LayerTreeApi = js.native
+  var LayerTree: LayerTreeApi
   
-  var Log: LogApi = js.native
+  var Log: LogApi
   
-  var Media: MediaApi = js.native
+  var Media: MediaApi
   
-  var Memory: MemoryApi = js.native
+  var Memory: MemoryApi
   
-  var Network: NetworkApi = js.native
+  var Network: NetworkApi
   
-  var Overlay: OverlayApi = js.native
+  var Overlay: OverlayApi
   
-  var Page: PageApi = js.native
+  var Page: PageApi
   
-  var Performance: PerformanceApi = js.native
+  var Performance: PerformanceApi
   
-  var Profiler: ProfilerApi = js.native
+  var Profiler: ProfilerApi
   
-  var Runtime: RuntimeApi = js.native
+  var Runtime: RuntimeApi
   
-  var Schema: SchemaApi = js.native
+  var Schema: SchemaApi
   
-  var Security: SecurityApi = js.native
+  var Security: SecurityApi
   
-  var ServiceWorker: ServiceWorkerApi = js.native
+  var ServiceWorker: ServiceWorkerApi
   
-  var Storage: StorageApi = js.native
+  var Storage: StorageApi
   
-  var SystemInfo: SystemInfoApi = js.native
+  var SystemInfo: SystemInfoApi
   
-  var Target: TargetApi = js.native
+  var Target: TargetApi
   
-  var Tethering: TetheringApi = js.native
+  var Tethering: TetheringApi
   
-  var Tracing: TracingApi = js.native
+  var Tracing: TracingApi
   
-  var WebAudio: WebAudioApi = js.native
+  var WebAudio: WebAudioApi
   
-  var WebAuthn: WebAuthnApi = js.native
+  var WebAuthn: WebAuthnApi
 }
 object ProtocolApi {
   

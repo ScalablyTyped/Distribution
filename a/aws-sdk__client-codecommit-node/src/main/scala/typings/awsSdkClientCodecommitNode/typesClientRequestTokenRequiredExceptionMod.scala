@@ -6,28 +6,25 @@ import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUni
 import typings.awsSdkClientCodecommitNode.postCommentReplyExceptionsUnionMod.PostCommentReplyExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesClientRequestTokenRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ClientRequestTokenRequiredExceptionDetails> * / any */ @js.native
-  trait ClientRequestTokenRequiredException
-    extends CreatePullRequestExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ClientRequestTokenRequiredExceptionDetails> * / any */ trait ClientRequestTokenRequiredException
+    extends StObject
+       with CreatePullRequestExceptionsUnion
        with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion
        with PostCommentReplyExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ClientRequestTokenRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ClientRequestTokenRequiredException
   }
   object ClientRequestTokenRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ClientRequestTokenRequiredException
-    ): ClientRequestTokenRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ClientRequestTokenRequiredException = {
+      val __obj = js.Dynamic.literal(name = "ClientRequestTokenRequiredException")
       __obj.asInstanceOf[ClientRequestTokenRequiredException]
     }
     
@@ -41,6 +38,5 @@ object typesClientRequestTokenRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait ClientRequestTokenRequiredExceptionDetails extends StObject
 }

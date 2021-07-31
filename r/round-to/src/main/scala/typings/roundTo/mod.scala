@@ -2,7 +2,6 @@ package typings.roundTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,9 +20,12 @@ object mod {
   	//=> 1200
   	```
   	*/
+  @scala.inline
+  def apply(number: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   @JSImport("round-to", JSImport.Namespace)
   @js.native
-  def apply(number: Double, precision: Double): Double = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Round down the decimals with [`Math.floor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor).
@@ -36,9 +38,8 @@ object mod {
   	//=> 1.23
   	```
   	*/
-  @JSImport("round-to", "down")
-  @js.native
-  def down(number: Double, precision: Double): Double = js.native
+  @scala.inline
+  def down(number: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("down")(number.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
   	Round up the decimals with [`Math.ceil`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil).
@@ -51,7 +52,6 @@ object mod {
   	//=> 1.24
   	```
   	*/
-  @JSImport("round-to", "up")
-  @js.native
-  def up(number: Double, precision: Double): Double = js.native
+  @scala.inline
+  def up(number: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("up")(number.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

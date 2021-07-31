@@ -2,18 +2,16 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** One end of a connection—or potential connection—and how it's configured. Each RTCSessionDescription consists of a description type indicating which part of the offer/answer negotiation process it describes and of the SDP descriptor of the session. */
-@js.native
 trait RTCSessionDescription extends StObject {
   
-  val sdp: java.lang.String = js.native
+  val sdp: java.lang.String
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
   
-  val `type`: RTCSdpType = js.native
+  val `type`: RTCSdpType
 }
 object RTCSessionDescription {
   

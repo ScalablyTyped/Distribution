@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramConnection extends StObject {
   
-  var content: js.UndefOr[DiagramConnectionContent] = js.native
+  var content: js.UndefOr[DiagramConnectionContent] = js.undefined
   
-  var editable: js.UndefOr[Boolean | DiagramConnectionEditable] = js.native
+  var editable: js.UndefOr[Boolean | DiagramConnectionEditable] = js.undefined
   
-  var endCap: js.UndefOr[String | DiagramConnectionEndCap] = js.native
+  var endCap: js.UndefOr[String | DiagramConnectionEndCap] = js.undefined
   
-  var from: js.UndefOr[String | DiagramConnectionFrom] = js.native
+  var from: js.UndefOr[String | DiagramConnectionFrom] = js.undefined
   
-  var fromConnector: js.UndefOr[String] = js.native
+  var fromConnector: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[DiagramConnectionHover] = js.native
+  var hover: js.UndefOr[DiagramConnectionHover] = js.undefined
   
-  var points: js.UndefOr[js.Array[DiagramConnectionPoint]] = js.native
+  var points: js.UndefOr[js.Array[DiagramConnectionPoint]] = js.undefined
   
-  var selection: js.UndefOr[DiagramConnectionSelection] = js.native
+  var selection: js.UndefOr[DiagramConnectionSelection] = js.undefined
   
-  var startCap: js.UndefOr[String | DiagramConnectionStartCap] = js.native
+  var startCap: js.UndefOr[String | DiagramConnectionStartCap] = js.undefined
   
-  var stroke: js.UndefOr[DiagramConnectionStroke] = js.native
+  var stroke: js.UndefOr[DiagramConnectionStroke] = js.undefined
   
-  var to: js.UndefOr[String | DiagramConnectionTo] = js.native
+  var to: js.UndefOr[String | DiagramConnectionTo] = js.undefined
   
-  var toConnector: js.UndefOr[String] = js.native
+  var toConnector: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DiagramConnection {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The tag's key.
     */
-  var key: TagKey = js.native
+  var key: TagKey
   
   /**
     * The tag's value.
     */
-  var value: TagValue = js.native
+  var value: TagValue
 }
 object Tag {
   

@@ -5,17 +5,15 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtocolResponse extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/protocol-response
   /**
     * The charset of response body, default is `"utf-8"`.
     */
-  var charset: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.undefined
   
   /**
     * The response body. When returning stream as response, this is a Node.js readable
@@ -23,66 +21,66 @@ trait ProtocolResponse extends StObject {
     * is a `Buffer`. When returning `String` as response, this is a `String`. This is
     * ignored for other types of responses.
     */
-  var data: js.UndefOr[Buffer | String | ReadableStream] = js.native
+  var data: js.UndefOr[Buffer | String | ReadableStream] = js.undefined
   
   /**
     * When assigned, the `request` will fail with the `error` number . For the
     * available error numbers you can use, please see the net error list.
     */
-  var error: js.UndefOr[Double] = js.native
+  var error: js.UndefOr[Double] = js.undefined
   
   /**
     * An object containing the response headers. The keys must be String, and values
     * must be either String or Array of String.
     */
-  var headers: js.UndefOr[Record[String, String | js.Array[String]]] = js.native
+  var headers: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
   
   /**
     * The HTTP `method`. This is only used for file and URL responses.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The MIME type of response body, default is `"text/html"`. Setting `mimeType`
     * would implicitly set the `content-type` header in response, but if
     * `content-type` is already set in `headers`, the `mimeType` would be ignored.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Path to the file which would be sent as response body. This is only used for
     * file responses.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The `referrer` URL. This is only used for file and URL responses.
     */
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
   /**
     * The session used for requesting URL, by default the HTTP request will reuse the
     * current session. Setting `session` to `null` would use a random independent
     * session. This is only used for URL responses.
     */
-  var session: js.UndefOr[Session_] = js.native
+  var session: js.UndefOr[Session_] = js.undefined
   
   /**
     * The HTTP response code, default is 200.
     */
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The data used as upload data. This is only used for URL responses when `method`
     * is `"POST"`.
     */
-  var uploadData: js.UndefOr[ProtocolResponseUploadData] = js.native
+  var uploadData: js.UndefOr[ProtocolResponseUploadData] = js.undefined
   
   /**
     * Download the `url` and pipe the result as response body. This is only used for
     * URL responses.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ProtocolResponse {
   

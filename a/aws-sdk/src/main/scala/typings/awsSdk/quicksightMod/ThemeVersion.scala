@@ -2,51 +2,49 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeVersion extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The Amazon QuickSight-defined ID of the theme that a custom theme inherits from. All themes initially inherit from a default QuickSight theme.
     */
-  var BaseThemeId: js.UndefOr[RestrictiveResourceId] = js.native
+  var BaseThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The theme configuration, which contains all the theme display properties.
     */
-  var Configuration: js.UndefOr[ThemeConfiguration] = js.native
+  var Configuration: js.UndefOr[ThemeConfiguration] = js.undefined
   
   /**
     * The date and time that this theme version was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The description of the theme.
     */
-  var Description: js.UndefOr[VersionDescription] = js.native
+  var Description: js.UndefOr[VersionDescription] = js.undefined
   
   /**
     * Errors associated with the theme.
     */
-  var Errors: js.UndefOr[ThemeErrorList] = js.native
+  var Errors: js.UndefOr[ThemeErrorList] = js.undefined
   
   /**
     * The status of the theme version.
     */
-  var Status: js.UndefOr[ResourceStatus] = js.native
+  var Status: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * The version number of the theme.
     */
-  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.native
+  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.undefined
 }
 object ThemeVersion {
   

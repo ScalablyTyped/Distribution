@@ -8,50 +8,48 @@ import typings.awsSdkClientPinpointBrowser.typesSimpleEmailMod.UnmarshalledSimpl
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEmailMessageMod {
   
-  @js.native
   trait EmailMessage extends StObject {
     
     /**
       * The body of the email message.
       */
-    var Body: js.UndefOr[String] = js.native
+    var Body: js.UndefOr[String] = js.undefined
     
     /**
       * The email address that bounces and complaints will be forwarded to when feedback forwarding is enabled.
       */
-    var FeedbackForwardingAddress: js.UndefOr[String] = js.native
+    var FeedbackForwardingAddress: js.UndefOr[String] = js.undefined
     
     /**
       * The email address used to send the email from. Defaults to use FromAddress specified in the Email Channel.
       */
-    var FromAddress: js.UndefOr[String] = js.native
+    var FromAddress: js.UndefOr[String] = js.undefined
     
     /**
       * An email represented as a raw MIME message.
       */
-    var RawEmail: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesRawEmailMod.RawEmail] = js.native
+    var RawEmail: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesRawEmailMod.RawEmail] = js.undefined
     
     /**
       * The reply-to email address(es) for the email. If the recipient replies to the email, each reply-to address will receive the reply.
       */
-    var ReplyToAddresses: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var ReplyToAddresses: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * An email composed of a subject, a text part and a html part.
       */
-    var SimpleEmail: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesSimpleEmailMod.SimpleEmail] = js.native
+    var SimpleEmail: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesSimpleEmailMod.SimpleEmail] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
         (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
-      ] = js.native
+      ] = js.undefined
   }
   object EmailMessage {
     
@@ -113,32 +111,33 @@ object typesEmailMessageMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEmailMessage extends EmailMessage {
+  trait UnmarshalledEmailMessage
+    extends StObject
+       with EmailMessage {
     
     /**
       * An email represented as a raw MIME message.
       */
     @JSName("RawEmail")
-    var RawEmail_UnmarshalledEmailMessage: js.UndefOr[UnmarshalledRawEmail] = js.native
+    var RawEmail_UnmarshalledEmailMessage: js.UndefOr[UnmarshalledRawEmail] = js.undefined
     
     /**
       * The reply-to email address(es) for the email. If the recipient replies to the email, each reply-to address will receive the reply.
       */
     @JSName("ReplyToAddresses")
-    var ReplyToAddresses_UnmarshalledEmailMessage: js.UndefOr[js.Array[String]] = js.native
+    var ReplyToAddresses_UnmarshalledEmailMessage: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An email composed of a subject, a text part and a html part.
       */
     @JSName("SimpleEmail")
-    var SimpleEmail_UnmarshalledEmailMessage: js.UndefOr[UnmarshalledSimpleEmail] = js.native
+    var SimpleEmail_UnmarshalledEmailMessage: js.UndefOr[UnmarshalledSimpleEmail] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     @JSName("Substitutions")
-    var Substitutions_UnmarshalledEmailMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var Substitutions_UnmarshalledEmailMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   }
   object UnmarshalledEmailMessage {
     

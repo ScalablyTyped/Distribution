@@ -2,41 +2,39 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointLocation extends StObject {
   
   /**
     * The name of the city where the endpoint is located.
     */
-  var City: js.UndefOr[string] = js.native
+  var City: js.UndefOr[string] = js.undefined
   
   /**
     * The two-character code, in ISO 3166-1 alpha-2 format, for the country or region where the endpoint is located. For example, US for the United States.
     */
-  var Country: js.UndefOr[string] = js.native
+  var Country: js.UndefOr[string] = js.undefined
   
   /**
     * The latitude coordinate of the endpoint location, rounded to one decimal place.
     */
-  var Latitude: js.UndefOr[double] = js.native
+  var Latitude: js.UndefOr[double] = js.undefined
   
   /**
     * The longitude coordinate of the endpoint location, rounded to one decimal place.
     */
-  var Longitude: js.UndefOr[double] = js.native
+  var Longitude: js.UndefOr[double] = js.undefined
   
   /**
     * The postal or ZIP code for the area where the endpoint is located.
     */
-  var PostalCode: js.UndefOr[string] = js.native
+  var PostalCode: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the region where the endpoint is located. For locations in the United States, this value is the name of a state.
     */
-  var Region: js.UndefOr[string] = js.native
+  var Region: js.UndefOr[string] = js.undefined
 }
 object EndpointLocation {
   

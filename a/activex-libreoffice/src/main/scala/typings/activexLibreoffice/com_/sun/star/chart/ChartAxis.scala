@@ -23,7 +23,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplie
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,99 +30,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note: The text properties correlate to all axis description elements, not to just a single text element.
   */
-@js.native
 trait ChartAxis
-  extends XAxis
+  extends StObject
      with LineProperties
      with CharacterProperties
      with UserDefinedAttributesSupplier
+     with XAxis
      with XPropertySet {
   
   /** The axis description may be arranged in a special order for a better placement. */
-  var ArrangeOrder: ChartAxisArrangeOrderType = js.native
+  var ArrangeOrder: ChartAxisArrangeOrderType
   
   /** The maximum value of the axis scale is calculated by the chart if this property is `TRUE` . */
-  var AutoMax: Boolean = js.native
+  var AutoMax: Boolean
   
   /** The minimum value of the axis scale is calculated by the chart if this property is `TRUE` . */
-  var AutoMin: Boolean = js.native
+  var AutoMin: Boolean
   
   /** The origin is calculated by the chart if this property is `TRUE` . */
-  var AutoOrigin: Boolean = js.native
+  var AutoOrigin: Boolean
   
   /** The number of help intervals within a main interval is calculated by the chart if this property is `TRUE` . */
-  var AutoStepHelp: Boolean = js.native
+  var AutoStepHelp: Boolean
   
   /** The distance between the main tick marks is calculated by the chart if this property is `TRUE` . */
-  var AutoStepMain: Boolean = js.native
+  var AutoStepMain: Boolean
   
   /**
     * determines which type of axis this is, e.g. a date-axis or a category-axis
     * @see ChartAxisType
     * @since OOo 3.4
     */
-  var AxisType: Double = js.native
+  var AxisType: Double
   
   /** Determines where the axis crosses the other axis. */
-  var CrossoverPosition: ChartAxisPosition = js.native
+  var CrossoverPosition: ChartAxisPosition
   
   /** Determines the scale value on the other axis when CrossoverPosition is set to VALUE. */
-  var CrossoverValue: Double = js.native
+  var CrossoverValue: Double
   
   /** Properties for axes labels:Determines whether to display text at the axis or not. */
-  var DisplayLabels: Boolean = js.native
+  var DisplayLabels: Boolean
   
   /**
     * Specifies the width of the gaps between each set of data points in a bar chart.
     *
     * The value is given in percent of the width of a bar; the valid range is 0 to 600%.
     */
-  var GapWidth: Double = js.native
+  var GapWidth: Double
   
   /**
     * Determines the type of the help marks.
     * @see ChartAxisMarks
     */
-  var HelpMarks: Double = js.native
+  var HelpMarks: Double
   
   /** Determines where the axis labels are placed. */
-  var LabelPosition: ChartAxisLabelPosition = js.native
+  var LabelPosition: ChartAxisLabelPosition
   
   /**
     * determines whether to use the number format given by the container application, e.g. a spreadsheet document, or from the own property {@link
     * NumberFormat} .
     */
-  var LinkNumberFormatToSource: Boolean = js.native
+  var LinkNumberFormatToSource: Boolean
   
   /** Determines if the axis is scaled logarithmically or not (linear). */
-  var Logarithmic: Boolean = js.native
+  var Logarithmic: Boolean
   
   /** Determines where the interval marks are placed. */
-  var MarkPosition: ChartAxisMarkPosition = js.native
+  var MarkPosition: ChartAxisMarkPosition
   
   /**
     * Properties for interval marks:Determines the type of the marks.
     * @see ChartAxisMarks
     */
-  var Marks: Double = js.native
+  var Marks: Double
   
   /** Properties for scaling:Contains the maximum value for the axis scale. */
-  var Max: Double = js.native
+  var Max: Double
   
   /** Contains the minimum value for the axis scale. */
-  var Min: Double = js.native
+  var Min: Double
   
   /**
     * Contains the type id for the number formatter of the axis.
     * @see com.sun.star.util.XNumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
   
   /**
     * Indicates the reference value where bars or areas have their grounding. This property has only an effect when the used ODF file format does not allow
     * for further axis positioning or the axis is a secondary y-axis.
     */
-  var Origin: Double = js.native
+  var Origin: Double
   
   /**
     * Properties related to bar charts:Determines the overlap of the bars in a bar-type chart.
@@ -131,37 +130,37 @@ trait ChartAxis
     * The value is given in percent of the width of the bars. The valid range is -100% to +100%. +100% means full overlap, -100% indicates a distance of one
     * bar between 2 neighboring bars.
     */
-  var Overlap: Double = js.native
+  var Overlap: Double
   
   /** Determines if the axis orientation is mathematical or reversed. */
-  var ReverseDirection: Boolean = js.native
+  var ReverseDirection: Boolean
   
   /** @deprecated DeprecatedUser property StepHelpCount instead Contains the distance between the help tick marks. */
-  var StepHelp: Double = js.native
+  var StepHelp: Double
   
   /**
     * Contains the number of help intervals within a main interval. E.g. a StepHelpCount of 5 divides the main interval into 5 pieces and thus produces 4
     * help tick marks.
     */
-  var StepHelpCount: Double = js.native
+  var StepHelpCount: Double
   
   /** Contains the distance between the main tick marks. */
-  var StepMain: Double = js.native
+  var StepMain: Double
   
   /** Determines if long text is broken into multiple lines. */
-  var TextBreak: Boolean = js.native
+  var TextBreak: Boolean
   
   /** Determines if certain labels are hidden, if they would otherwise overlap. In this case, the value of this property must be set to `FALSE` . */
-  var TextCanOverlap: Boolean = js.native
+  var TextCanOverlap: Boolean
   
   /** Determines the rotation of the text elements (axis description) in 100th degrees. */
-  var TextRotation: Double = js.native
+  var TextRotation: Double
   
   /**
     * if the current axis is a date-axis the intervals are chosen as given with {@link TimeIncrement}
     * @since OOo 3.4
     */
-  var TimeIncrement: typings.activexLibreoffice.com_.sun.star.chart.TimeIncrement = js.native
+  var TimeIncrement: typings.activexLibreoffice.com_.sun.star.chart.TimeIncrement
 }
 object ChartAxis {
   

@@ -5,58 +5,56 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableGroup extends StObject {
   
   /**
     * Gets or sets the identity who created.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets or sets description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Gets the unique identifier of this field.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets or sets the identity who modified.
     */
-  var modifiedBy: IdentityRef = js.native
+  var modifiedBy: IdentityRef
   
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
   /**
     * Gets or sets name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets or sets provider data.
     */
-  var providerData: VariableGroupProviderData = js.native
+  var providerData: VariableGroupProviderData
   
   /**
     * Gets or sets type.
     */
-  var `type`: String = js.native
+  var `type`: String
   
-  var variables: StringDictionary[VariableValue] = js.native
+  var variables: StringDictionary[VariableValue]
 }
 object VariableGroup {
   

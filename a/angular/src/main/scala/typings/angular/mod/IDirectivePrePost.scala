@@ -3,15 +3,13 @@ package typings.angular.mod
 import typings.angular.JQLite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDirectivePrePost[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] extends StObject {
   
-  var post: js.UndefOr[IDirectiveLinkFn[TScope, TElement, TAttributes, TController]] = js.native
+  var post: js.UndefOr[IDirectiveLinkFn[TScope, TElement, TAttributes, TController]] = js.undefined
   
-  var pre: js.UndefOr[IDirectiveLinkFn[TScope, TElement, TAttributes, TController]] = js.native
+  var pre: js.UndefOr[IDirectiveLinkFn[TScope, TElement, TAttributes, TController]] = js.undefined
 }
 object IDirectivePrePost {
   
@@ -22,7 +20,7 @@ object IDirectivePrePost {
   }
   
   @scala.inline
-  implicit class IDirectivePrePostMutableBuilder[Self <: IDirectivePrePost[_, _, _, _], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] (val x: Self with (IDirectivePrePost[TScope, TElement, TAttributes, TController])) extends AnyVal {
+  implicit class IDirectivePrePostMutableBuilder[Self <: IDirectivePrePost[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] (val x: Self & (IDirectivePrePost[TScope, TElement, TAttributes, TController])) extends AnyVal {
     
     @scala.inline
     def setPost(

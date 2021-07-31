@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBranchInput extends StObject {
   
   /**
     * The name of the new branch to create.
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     * The ID of the commit to point the new branch to.
     */
-  var commitId: CommitId = js.native
+  var commitId: CommitId
   
   /**
     * The name of the repository in which you want to create the new branch.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object CreateBranchInput {
   

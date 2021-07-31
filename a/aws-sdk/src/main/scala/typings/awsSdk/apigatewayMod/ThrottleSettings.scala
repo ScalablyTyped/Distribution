@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThrottleSettings extends StObject {
   
   /**
     * The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
     */
-  var burstLimit: js.UndefOr[Integer] = js.native
+  var burstLimit: js.UndefOr[Integer] = js.undefined
   
   /**
     * The API request steady-state rate limit.
     */
-  var rateLimit: js.UndefOr[Double] = js.native
+  var rateLimit: js.UndefOr[Double] = js.undefined
 }
 object ThrottleSettings {
   

@@ -4,37 +4,35 @@ import typings.octokitTypes.anon.Bloburl
 import typings.octokitTypes.anon.Commentsurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCompareCommitsResponseData extends StObject {
   
-  var ahead_by: Double = js.native
+  var ahead_by: Double
   
-  var base_commit: Commentsurl = js.native
+  var base_commit: Commentsurl
   
-  var behind_by: Double = js.native
+  var behind_by: Double
   
-  var commits: js.Array[Commentsurl] = js.native
+  var commits: js.Array[Commentsurl]
   
-  var diff_url: String = js.native
+  var diff_url: String
   
-  var files: js.Array[Bloburl] = js.native
+  var files: js.Array[Bloburl]
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var merge_base_commit: Commentsurl = js.native
+  var merge_base_commit: Commentsurl
   
-  var patch_url: String = js.native
+  var patch_url: String
   
-  var permalink_url: String = js.native
+  var permalink_url: String
   
-  var status: String = js.native
+  var status: String
   
-  var total_commits: Double = js.native
+  var total_commits: Double
   
-  var url: String = js.native
+  var url: String
 }
 object ReposCompareCommitsResponseData {
   

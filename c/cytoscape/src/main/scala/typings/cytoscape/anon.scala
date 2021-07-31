@@ -6,19 +6,17 @@ import typings.cytoscape.mod.NodeCollection
 import typings.cytoscape.mod.SingularElementReturnValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Both extends StObject {
     
-    var both: CollectionReturnValue = js.native
+    var both: CollectionReturnValue
     
-    var left: CollectionReturnValue = js.native
+    var left: CollectionReturnValue
     
-    var right: CollectionReturnValue = js.native
+    var right: CollectionReturnValue
   }
   object Both {
     
@@ -42,12 +40,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Col extends StObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var row: Double = js.native
+    var row: Double
   }
   object Col {
     
@@ -68,16 +65,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Components extends StObject {
     
-    var components: CollectionReturnValue = js.native
+    var components: CollectionReturnValue
     
-    var cut: EdgeCollection = js.native
+    var cut: EdgeCollection
     
-    var partitionFirst: NodeCollection = js.native
+    var partitionFirst: NodeCollection
     
-    var partitionSecond: NodeCollection = js.native
+    var partitionSecond: NodeCollection
   }
   object Components {
     
@@ -109,12 +105,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ComponentsCut extends StObject {
     
-    var components: CollectionReturnValue = js.native
+    var components: CollectionReturnValue
     
-    var cut: EdgeCollection = js.native
+    var cut: EdgeCollection
   }
   object ComponentsCut {
     
@@ -135,12 +130,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cut extends StObject {
     
-    var components: CollectionReturnValue = js.native
+    var components: CollectionReturnValue
     
-    var cut: NodeCollection = js.native
+    var cut: NodeCollection
   }
   object Cut {
     
@@ -161,10 +155,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Degree extends StObject {
     
-    def degree(): Double = js.native
+    def degree(): Double
   }
   object Degree {
     
@@ -182,18 +175,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Ele[T] extends StObject {
     
     /**
       * The element that corresponds to the minimum value.
       */
-    var ele: SingularElementReturnValue = js.native
+    var ele: SingularElementReturnValue
     
     /**
       * The minimum value found.
       */
-    var value: T = js.native
+    var value: T
   }
   object Ele {
     
@@ -204,7 +196,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class EleMutableBuilder[Self <: Ele[_], T] (val x: Self with Ele[T]) extends AnyVal {
+    implicit class EleMutableBuilder[Self <: Ele[?], T] (val x: Self & Ele[T]) extends AnyVal {
       
       @scala.inline
       def setEle(value: SingularElementReturnValue): Self = StObject.set(x, "ele", value.asInstanceOf[js.Any])
@@ -214,20 +206,19 @@ object anon {
     }
   }
   
-  @js.native
   trait H extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object H {
     
@@ -260,10 +251,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxDegree extends StObject {
     
-    def maxDegree(): Double = js.native
+    def maxDegree(): Double
   }
   object MaxDegree {
     
@@ -281,16 +271,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Parent extends StObject {
     
-    var parent: String | Null = js.native
+    var parent: String | Null
   }
   object Parent {
     
     @scala.inline
     def apply(): Parent = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(parent = null)
       __obj.asInstanceOf[Parent]
     }
     
@@ -305,12 +294,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object Source {
     
@@ -337,10 +325,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Weight extends StObject {
     
-    var weight: Double = js.native
+    var weight: Double
   }
   object Weight {
     
@@ -358,12 +345,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

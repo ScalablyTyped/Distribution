@@ -3,29 +3,28 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.DeclareModuleExports
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait DeclareModuleExports_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait DeclareModuleExports_
+  extends StObject
      with BaseNode
+     with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var typeAnnotation: TypeAnnotation_ = js.native
+  var typeAnnotation: TypeAnnotation_
   
   @JSName("type")
-  var type_DeclareModuleExports_ : DeclareModuleExports = js.native
+  var type_DeclareModuleExports_ : DeclareModuleExports
 }
 object DeclareModuleExports_ {
   
   @scala.inline
-  def apply(`type`: DeclareModuleExports, typeAnnotation: TypeAnnotation_): DeclareModuleExports_ = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeAnnotation: TypeAnnotation_): DeclareModuleExports_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareModuleExports")
     __obj.asInstanceOf[DeclareModuleExports_]
   }
   

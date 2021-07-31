@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedAppDiagnosticStatus extends StObject {
   
   // Instruction on how to mitigate a failed validation
-  var mitigationInstruction: js.UndefOr[NullableOption[String]] = js.native
+  var mitigationInstruction: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The state of the operation
-  var state: js.UndefOr[NullableOption[String]] = js.native
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The validation friendly name
-  var validationName: js.UndefOr[NullableOption[String]] = js.native
+  var validationName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedAppDiagnosticStatus {
   

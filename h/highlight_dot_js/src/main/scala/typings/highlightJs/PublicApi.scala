@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,16 +24,16 @@ trait PublicApi extends StObject {
   def getLanguage(languageName: String): js.UndefOr[Language] = js.native
   
   def highlight(languageName: String, code: String): HighlightResult = js.native
-  def highlight(languageName: String, code: String, ignoreIllegals: js.UndefOr[scala.Nothing], continuation: Mode): HighlightResult = js.native
   def highlight(languageName: String, code: String, ignoreIllegals: Boolean): HighlightResult = js.native
   def highlight(languageName: String, code: String, ignoreIllegals: Boolean, continuation: Mode): HighlightResult = js.native
+  def highlight(languageName: String, code: String, ignoreIllegals: Unit, continuation: Mode): HighlightResult = js.native
   
   def highlightAuto(code: String): AutoHighlightResult = js.native
   def highlightAuto(code: String, languageSubset: js.Array[String]): AutoHighlightResult = js.native
   
   def highlightBlock(element: HTMLElement): Unit = js.native
   
-  def inherit[T](original: T, args: (Record[String, _])*): T = js.native
+  def inherit[T](original: T, args: (Record[String, js.Any])*): T = js.native
   
   def initHighlighting(): Unit = js.native
   

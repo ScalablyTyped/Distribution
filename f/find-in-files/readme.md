@@ -11,8 +11,8 @@ A simple tool to search text patterns across multiple files
 | Full name          | find-in-files |
 | Keywords           | search, find, files |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 732590 |
+| # dependents       | 50 |
+| # downloads        | 860143 |
 | # stars            | 2 |
 
 ## Links

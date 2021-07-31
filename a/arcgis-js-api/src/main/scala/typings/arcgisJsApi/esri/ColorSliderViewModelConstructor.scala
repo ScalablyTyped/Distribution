@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorSliderViewModelConstructor
-  extends Instantiable0[ColorSliderViewModel]
+  extends StObject
+     with Instantiable0[ColorSliderViewModel]
      with Instantiable1[/* properties */ ColorSliderViewModelProperties, ColorSliderViewModel]

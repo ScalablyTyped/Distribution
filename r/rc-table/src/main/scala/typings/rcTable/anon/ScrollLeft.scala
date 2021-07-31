@@ -2,13 +2,11 @@ package typings.rcTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollLeft extends StObject {
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
 }
 object ScrollLeft {
   

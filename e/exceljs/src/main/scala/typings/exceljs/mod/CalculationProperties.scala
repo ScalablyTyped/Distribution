@@ -2,16 +2,14 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalculationProperties extends StObject {
   
   /**
   	 * Whether the application shall perform a full recalculation when the workbook is opened
   	 */
-  var fullCalcOnLoad: Boolean = js.native
+  var fullCalcOnLoad: Boolean
 }
 object CalculationProperties {
   

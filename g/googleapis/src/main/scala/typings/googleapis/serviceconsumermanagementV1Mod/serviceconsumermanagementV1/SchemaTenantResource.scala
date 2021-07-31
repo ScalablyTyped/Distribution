@@ -2,13 +2,11 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource constituting the TenancyUnit.
   */
-@js.native
 trait SchemaTenantResource extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaTenantResource extends StObject {
     * in the form &#39;projects/{number}&#39;. For example
     * &#39;projects/123456&#39;.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * Status of tenant resource.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Unique per single tenancy unit.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaTenantResource {
   

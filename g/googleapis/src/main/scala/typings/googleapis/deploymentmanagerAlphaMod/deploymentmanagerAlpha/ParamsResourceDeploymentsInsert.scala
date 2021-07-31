@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDeploymentsInsert extends StandardParameters {
+trait ParamsResourceDeploymentsInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Sets the policy to use for creating new resources.
     */
-  var createPolicy: js.UndefOr[String] = js.native
+  var createPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, creates a deployment and creates "shell" resources but
@@ -31,17 +31,17 @@ trait ParamsResourceDeploymentsInsert extends StandardParameters {
     * that the deployment will still exist after you cancel the preview and you
     * must separately delete this deployment if you want to remove it.
     */
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaDeployment] = js.native
+  var requestBody: js.UndefOr[SchemaDeployment] = js.undefined
 }
 object ParamsResourceDeploymentsInsert {
   

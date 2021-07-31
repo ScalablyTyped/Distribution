@@ -2,56 +2,54 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetImportJob extends StObject {
   
   /**
     * The creation date and time (in Unix time) of the dataset import job.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon S3 bucket that contains the training data to import.
     */
-  var dataSource: js.UndefOr[DataSource] = js.native
+  var dataSource: js.UndefOr[DataSource] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset that receives the imported data.
     */
-  var datasetArn: js.UndefOr[Arn] = js.native
+  var datasetArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the dataset import job.
     */
-  var datasetImportJobArn: js.UndefOr[Arn] = js.native
+  var datasetImportJobArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * If a dataset import job fails, provides the reason why.
     */
-  var failureReason: js.UndefOr[FailureReason] = js.native
+  var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The name of the import job.
     */
-  var jobName: js.UndefOr[Name] = js.native
+  var jobName: js.UndefOr[Name] = js.undefined
   
   /**
     * The date and time (in Unix time) the dataset was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The ARN of the AWS Identity and Access Management (IAM) role that has permissions to read from the Amazon S3 data source.
     */
-  var roleArn: js.UndefOr[Arn] = js.native
+  var roleArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The status of the dataset import job. A dataset import job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object DatasetImportJob {
   

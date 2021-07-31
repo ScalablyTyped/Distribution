@@ -10,9 +10,9 @@ WebPageTest API wrapper for NodeJS
 | ------------------ | :-------------: |
 | Full name          | webpagetest |
 | Keywords           | webpagetest, api, performance, test, browser |
-| # releases         | 3 |
-| # dependents       | 36 |
-| # downloads        | 398723 |
+| # releases         | 2 |
+| # dependents       | 35 |
+| # downloads        | 342234 |
 | # stars            | 25 |
 
 ## Links

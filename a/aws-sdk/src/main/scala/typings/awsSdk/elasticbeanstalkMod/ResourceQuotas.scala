@@ -2,36 +2,34 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceQuotas extends StObject {
   
   /**
     * The quota for applications in the AWS account.
     */
-  var ApplicationQuota: js.UndefOr[ResourceQuota] = js.native
+  var ApplicationQuota: js.UndefOr[ResourceQuota] = js.undefined
   
   /**
     * The quota for application versions in the AWS account.
     */
-  var ApplicationVersionQuota: js.UndefOr[ResourceQuota] = js.native
+  var ApplicationVersionQuota: js.UndefOr[ResourceQuota] = js.undefined
   
   /**
     * The quota for configuration templates in the AWS account.
     */
-  var ConfigurationTemplateQuota: js.UndefOr[ResourceQuota] = js.native
+  var ConfigurationTemplateQuota: js.UndefOr[ResourceQuota] = js.undefined
   
   /**
     * The quota for custom platforms in the AWS account.
     */
-  var CustomPlatformQuota: js.UndefOr[ResourceQuota] = js.native
+  var CustomPlatformQuota: js.UndefOr[ResourceQuota] = js.undefined
   
   /**
     * The quota for environments in the AWS account.
     */
-  var EnvironmentQuota: js.UndefOr[ResourceQuota] = js.native
+  var EnvironmentQuota: js.UndefOr[ResourceQuota] = js.undefined
 }
 object ResourceQuotas {
   

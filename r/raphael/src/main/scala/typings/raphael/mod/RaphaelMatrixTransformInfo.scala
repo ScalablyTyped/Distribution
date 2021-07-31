@@ -2,35 +2,33 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelMatrixTransformInfo extends StObject {
   
   /** Translation in the horizontal direction. */
-  var dx: Double = js.native
+  var dx: Double
   
   /** Translation in the vertical direction. */
-  var dy: Double = js.native
+  var dy: Double
   
   /**
     * Whether the matrix can be represented via simple transformations. If this set to `false` the other properties
     * of this instance are devoid of meaning and should not be accessed.
     */
-  var isSimple: Boolean = js.native
+  var isSimple: Boolean
   
   /** Rotation in degree. */
-  var rotate: Double = js.native
+  var rotate: Double
   
   /** Scaling factor in the horizontal direction. */
-  var scalex: Double = js.native
+  var scalex: Double
   
   /** Scaling factor in the vertical direction. */
-  var scaley: Double = js.native
+  var scaley: Double
   
   /** Shearing coefficient. */
-  var shear: Double = js.native
+  var shear: Double
 }
 object RaphaelMatrixTransformInfo {
   

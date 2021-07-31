@@ -5,10 +5,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainMod {
+  
+  @JSImport("domain", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("domain", "Domain")
   @js.native
@@ -24,9 +27,8 @@ object domainMod {
     var members: js.Array[EventEmitter | Timer] = js.native
   }
   
-  @JSImport("domain", "create")
-  @js.native
-  def create(): Domain = js.native
+  @scala.inline
+  def create(): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Domain]
   
   object global {
     
@@ -34,7 +36,8 @@ object domainMod {
       
       @js.native
       trait Domain
-        extends typings.node.eventsMod.global.NodeJS.EventEmitter {
+        extends StObject
+           with typings.node.eventsMod.global.NodeJS.EventEmitter {
         
         def add(emitter: Timer): Unit = js.native
         def add(emitter: typings.node.eventsMod.global.NodeJS.EventEmitter): Unit = js.native

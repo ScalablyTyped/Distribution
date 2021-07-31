@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedTypeReferenceDirectiveWithFailedLookupLocations extends StObject {
   
-  val failedLookupLocations: js.Array[java.lang.String] = js.native
+  val failedLookupLocations: js.Array[java.lang.String]
   
-  val resolvedTypeReferenceDirective: js.UndefOr[ResolvedTypeReferenceDirective] = js.native
+  val resolvedTypeReferenceDirective: js.UndefOr[ResolvedTypeReferenceDirective] = js.undefined
 }
 object ResolvedTypeReferenceDirectiveWithFailedLookupLocations {
   

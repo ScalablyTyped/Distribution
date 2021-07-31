@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Capacity extends StObject {
   
   /** Publish throughput capacity per partition in MiB/s. Must be >= 4 and <= 16. */
-  var publishMibPerSec: js.UndefOr[Double] = js.native
+  var publishMibPerSec: js.UndefOr[Double] = js.undefined
   
   /** Subscribe throughput capacity per partition in MiB/s. Must be >= 4 and <= 32. */
-  var subscribeMibPerSec: js.UndefOr[Double] = js.native
+  var subscribeMibPerSec: js.UndefOr[Double] = js.undefined
 }
 object Capacity {
   

@@ -12,7 +12,6 @@ import typings.antvGBase.typesMod.Point
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupComponentMod {
@@ -43,7 +42,7 @@ object groupComponentMod {
       * @param cfg 子组件配置项
       */
     @JSName("addComponent")
-    /* protected */ def addComponent_container[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */](parent: IGroup, cfg: (Omit[C, container]) with (Component[C, CT])): CT = js.native
+    /* protected */ def addComponent_container[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */](parent: IGroup, cfg: (Omit[C, container]) & (Component[C, CT])): CT = js.native
     
     /**
       * @protected
@@ -89,7 +88,7 @@ object groupComponentMod {
     
     /* protected */ def getElementId(localId: String): String = js.native
     
-    def getElementsByName(name: String): js.Array[_] = js.native
+    def getElementsByName(name: String): js.Array[js.Any] = js.native
     
     /* protected */ def getInnerLayoutBBox(): js.Any = js.native
     
@@ -101,8 +100,8 @@ object groupComponentMod {
     
     /* protected */ def moveElementTo(element: IElement, point: Point): Unit = js.native
     
-    def off(evt: js.UndefOr[scala.Nothing], callback: Callback): this.type = js.native
     def off(evt: String, callback: Callback): this.type = js.native
+    def off(evt: Unit, callback: Callback): this.type = js.native
     
     /* protected */ def offScreenRender(): js.Any = js.native
     

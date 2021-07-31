@@ -2,19 +2,17 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundingBox extends StObject {
   
-  var east: Double = js.native
+  var east: Double
   
-  var north: Double = js.native
+  var north: Double
   
-  var south: Double = js.native
+  var south: Double
   
-  var west: Double = js.native
+  var west: Double
 }
 object BoundingBox {
   

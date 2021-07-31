@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOMSnapshot.CaptureSnapshotRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMSnapshot.CaptureSnapshotResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCaptureSnapshotResponse extends StObject {
   
-  var paramsType: js.Array[CaptureSnapshotRequest] = js.native
+  var paramsType: js.Array[CaptureSnapshotRequest]
   
-  var returnType: CaptureSnapshotResponse = js.native
+  var returnType: CaptureSnapshotResponse
 }
 object ReturnTypeCaptureSnapshotResponse {
   

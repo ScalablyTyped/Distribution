@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGitHubAccountTokenNamesOutput extends StObject {
   
   /**
     * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent ListGitHubAccountTokenNames call to return the next set of names in the list. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list of names of connections to GitHub accounts.
     */
-  var tokenNameList: js.UndefOr[GitHubAccountTokenNameList] = js.native
+  var tokenNameList: js.UndefOr[GitHubAccountTokenNameList] = js.undefined
 }
 object ListGitHubAccountTokenNamesOutput {
   

@@ -3,23 +3,23 @@ package typings.webpackPkgPluginV4
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-pkg-plugin-v4", "WebpackPkgPlugin")
   @js.native
-  class WebpackPkgPlugin protected () extends Plugin {
+  class WebpackPkgPlugin protected ()
+    extends StObject
+       with Plugin {
     def this(config: Configuration) = this()
   }
   
-  @js.native
   trait Configuration extends StObject {
     
-    var output: String = js.native
+    var output: String
     
-    var targets: js.UndefOr[js.Array[String]] = js.native
+    var targets: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Configuration {
     

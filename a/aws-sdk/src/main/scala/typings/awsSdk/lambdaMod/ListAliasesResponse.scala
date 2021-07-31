@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAliasesResponse extends StObject {
   
   /**
     * A list of aliases.
     */
-  var Aliases: js.UndefOr[AliasList] = js.native
+  var Aliases: js.UndefOr[AliasList] = js.undefined
   
   /**
     * The pagination token that's included if more results are available.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
 }
 object ListAliasesResponse {
   

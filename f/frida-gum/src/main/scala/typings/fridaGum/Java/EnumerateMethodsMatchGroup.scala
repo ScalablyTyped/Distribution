@@ -2,20 +2,18 @@ package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Matching methods grouped by class loader.
   */
-@js.native
 trait EnumerateMethodsMatchGroup extends StObject {
   
   /**
     * One or more matching classes that have one or more methods matching
     * the given query.
     */
-  var classes: Array[EnumerateMethodsMatchClass] = js.native
+  var classes: Array[EnumerateMethodsMatchClass]
   
   /**
     * Class loader, or `null` for the bootstrap class loader.
@@ -23,13 +21,13 @@ trait EnumerateMethodsMatchGroup extends StObject {
     * Typically passed to `ClassFactory.get()` to interact with classes of
     * interest.
     */
-  var loader: typings.fridaGum.anon.Wrapper | Null = js.native
+  var loader: typings.fridaGum.anon.Wrapper | Null
 }
 object EnumerateMethodsMatchGroup {
   
   @scala.inline
   def apply(classes: Array[EnumerateMethodsMatchClass]): EnumerateMethodsMatchGroup = {
-    val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], loader = null)
     __obj.asInstanceOf[EnumerateMethodsMatchGroup]
   }
   

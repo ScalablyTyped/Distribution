@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains purchase and product information for an unfulfilled consumable in-app product. */
-@js.native
 trait UnfulfilledConsumable extends StObject {
   
   /** A unique ID used to identify a consumable in-app product within a large purchase catalog. */
-  var offerId: String = js.native
+  var offerId: String
   
   /** A unique ID used to identify a consumable in-app product. This ID is used by the app to get info about the product or feature that is enabled when the customer buys it through an in-app purchase. */
-  var productId: String = js.native
+  var productId: String
   
   /** A unique ID used to identify the transaction that included the purchase of a consumable in-app product. */
-  var transactionId: String = js.native
+  var transactionId: String
 }
 object UnfulfilledConsumable {
   

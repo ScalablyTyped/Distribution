@@ -3,18 +3,17 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceUserMetricsView
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var items: js.UndefOr[js.Array[PerformanceMetricsListViewItems]] = js.native
+  var items: js.UndefOr[js.Array[PerformanceMetricsListViewItems]] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
 }
 object PerformanceUserMetricsView {
   

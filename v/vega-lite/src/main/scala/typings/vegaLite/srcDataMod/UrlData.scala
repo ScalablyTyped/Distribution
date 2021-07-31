@@ -2,19 +2,18 @@ package typings.vegaLite.srcDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlData
-  extends DataSource
-     with DataBase {
+  extends StObject
+     with DataBase
+     with DataSource {
   
   /**
     * An URL from which to load the data set. Use the `format.type` property
     * to ensure the loaded data is correctly parsed.
     */
-  var url: String = js.native
+  var url: String
 }
 object UrlData {
   

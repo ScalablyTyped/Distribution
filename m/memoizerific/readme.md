@@ -11,8 +11,8 @@ Fast, small, efficient JavaScript memoization lib to memoize JS functions
 | Full name          | memoizerific |
 | Keywords           | memoize, memoizer, memoization, memoized, javascript, js, lru, cache, fast |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 62608698 |
+| # dependents       | 42 |
+| # downloads        | 83482402 |
 | # stars            | 1 |
 
 ## Links

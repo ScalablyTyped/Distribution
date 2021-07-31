@@ -2,25 +2,25 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericVariableProperties width extend GenericProperties
   */
-@js.native
-trait IGenericVariableProperties extends IGenericProperties {
+trait IGenericVariableProperties
+  extends StObject
+     with IGenericProperties {
   
   /**
     * Comment related to the variable.
     * >> This parameter is optional.
     */
-  var qComment: js.UndefOr[String] = js.native
+  var qComment: js.UndefOr[String] = js.undefined
   
   /**
     * Definition of the variable.
     */
-  var qDefinition: String = js.native
+  var qDefinition: String
   
   /**
     * Set this property to true to update the variable when applying a bookmark.
@@ -29,20 +29,20 @@ trait IGenericVariableProperties extends IGenericProperties {
     * Script variables cannot be persisted in the bookmark.
     * >> The default value is false.
     */
-  var qIncludeInBookmark: Boolean = js.native
+  var qIncludeInBookmark: Boolean
   
   /**
     * Name of the variable.
     * The name must be unique.
     * >> This parameter is mandatory.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Defines the format of the value.
     * >> This parameter is optional.
     */
-  var qNumberPresentation: js.UndefOr[IFieldAttributes] = js.native
+  var qNumberPresentation: js.UndefOr[IFieldAttributes] = js.undefined
 }
 object IGenericVariableProperties {
   

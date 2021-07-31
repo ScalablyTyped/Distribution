@@ -2,23 +2,24 @@ package typings.workboxBroadcastUpdate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object broadcastUpdateMod {
   
-  @JSImport("workbox-broadcast-update/broadcastUpdate", "broadcastUpdate")
+  @JSImport("workbox-broadcast-update/broadcastUpdate", JSImport.Namespace)
   @js.native
-  def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastUpdate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   trait BroadcastUpdateOptions extends StObject {
     
-    var cacheName: String = js.native
+    var cacheName: String
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object BroadcastUpdateOptions {
     

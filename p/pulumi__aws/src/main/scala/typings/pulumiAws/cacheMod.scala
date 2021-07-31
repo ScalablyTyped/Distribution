@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
@@ -38,6 +37,10 @@ object cacheMod {
   /* static members */
   object Cache {
     
+    @JSImport("@pulumi/aws/storagegateway/cache", "Cache")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cache resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object cacheMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway/cache", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cache = js.native
-    @JSImport("@pulumi/aws/storagegateway/cache", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cache = js.native
-    @JSImport("@pulumi/aws/storagegateway/cache", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CacheState): Cache = js.native
-    @JSImport("@pulumi/aws/storagegateway/cache", "Cache.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CacheState, opts: CustomResourceOptions): Cache = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cache]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cache]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CacheState): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cache]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CacheState, opts: CustomResourceOptions): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cache]
     
     /**
       * Returns true if the given object is an instance of Cache.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway/cache", "Cache.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean]
   }
   
-  @js.native
   trait CacheArgs extends StObject {
     
     /**
       * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
       */
-    val diskId: Input[String] = js.native
+    val diskId: Input[String]
     
     /**
       * The Amazon Resource Name (ARN) of the gateway.
       */
-    val gatewayArn: Input[String] = js.native
+    val gatewayArn: Input[String]
   }
   object CacheArgs {
     
@@ -101,18 +98,17 @@ object cacheMod {
     }
   }
   
-  @js.native
   trait CacheState extends StObject {
     
     /**
       * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
       */
-    val diskId: js.UndefOr[Input[String]] = js.native
+    val diskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the gateway.
       */
-    val gatewayArn: js.UndefOr[Input[String]] = js.native
+    val gatewayArn: js.UndefOr[Input[String]] = js.undefined
   }
   object CacheState {
     

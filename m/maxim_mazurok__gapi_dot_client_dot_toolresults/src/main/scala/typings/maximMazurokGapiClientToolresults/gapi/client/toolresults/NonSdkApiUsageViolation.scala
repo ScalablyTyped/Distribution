@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonSdkApiUsageViolation extends StObject {
   
   /** Signatures of a subset of those hidden API's. */
-  var apiSignatures: js.UndefOr[js.Array[String]] = js.native
+  var apiSignatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Total number of unique hidden API's accessed. */
-  var uniqueApis: js.UndefOr[Double] = js.native
+  var uniqueApis: js.UndefOr[Double] = js.undefined
 }
 object NonSdkApiUsageViolation {
   

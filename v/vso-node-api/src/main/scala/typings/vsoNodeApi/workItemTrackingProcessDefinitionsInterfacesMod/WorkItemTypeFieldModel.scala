@@ -2,29 +2,27 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemTypeFieldModel extends StObject {
   
-  var allowGroups: Boolean = js.native
+  var allowGroups: Boolean
   
-  var defaultValue: String = js.native
+  var defaultValue: String
   
-  var name: String = js.native
+  var name: String
   
-  var pickList: PickListMetadataModel = js.native
+  var pickList: PickListMetadataModel
   
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
-  var referenceName: String = js.native
+  var referenceName: String
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var `type`: FieldType = js.native
+  var `type`: FieldType
   
-  var url: String = js.native
+  var url: String
 }
 object WorkItemTypeFieldModel {
   

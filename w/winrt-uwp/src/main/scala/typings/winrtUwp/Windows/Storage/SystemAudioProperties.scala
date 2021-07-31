@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for Windows audio file properties. */
-@js.native
 trait SystemAudioProperties extends StObject {
   
   /** Gets the name of the System.Audio.EncodingBitrate property (one of the Windows audio file properties). */
-  var encodingBitrate: String = js.native
+  var encodingBitrate: String
 }
 object SystemAudioProperties {
   

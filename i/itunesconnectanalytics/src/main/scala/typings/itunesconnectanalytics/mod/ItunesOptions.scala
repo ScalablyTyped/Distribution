@@ -2,25 +2,23 @@ package typings.itunesconnectanalytics.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItunesOptions extends StObject {
   
-  var appleWidgetKey: js.UndefOr[String] = js.native
+  var appleWidgetKey: js.UndefOr[String] = js.undefined
   
-  var baseURL: js.UndefOr[String] = js.native
+  var baseURL: js.UndefOr[String] = js.undefined
   
-  var concurrentRequests: js.UndefOr[Double] = js.native
+  var concurrentRequests: js.UndefOr[Double] = js.undefined
   
-  def errorCallback(error: js.Any): Unit = js.native
+  def errorCallback(error: js.Any): Unit
   
-  var loginURL: js.UndefOr[String] = js.native
+  var loginURL: js.UndefOr[String] = js.undefined
   
-  var settingsURL: js.UndefOr[String] = js.native
+  var settingsURL: js.UndefOr[String] = js.undefined
   
-  def successCallback(cookies: String): Unit = js.native
+  def successCallback(cookies: String): Unit
 }
 object ItunesOptions {
   

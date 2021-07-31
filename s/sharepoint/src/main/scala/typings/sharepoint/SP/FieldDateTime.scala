@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldDateTime extends Field {
+trait FieldDateTime
+  extends StObject
+     with Field {
   
   def get_dateTimeCalendarType(): CalendarType = js.native
   

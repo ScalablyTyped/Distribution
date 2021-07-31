@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Myconfig")
@@ -29,7 +28,7 @@ class ResourceMyconfig protected () extends StObject {
     */
   def getUserSettings(): GaxiosPromise[SchemaUsersettings] = js.native
   def getUserSettings(callback: BodyResponseCallback[SchemaUsersettings]): Unit = js.native
-  def getUserSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUsersettings] = js.native
+  def getUserSettings(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUsersettings] = js.native
   def getUserSettings(params: ParamsResourceMyconfigGetusersettings): GaxiosPromise[SchemaUsersettings] = js.native
   def getUserSettings(params: ParamsResourceMyconfigGetusersettings, callback: BodyResponseCallback[SchemaUsersettings]): Unit = js.native
   def getUserSettings(
@@ -61,7 +60,7 @@ class ResourceMyconfig protected () extends StObject {
     */
   def releaseDownloadAccess(): GaxiosPromise[SchemaDownloadAccesses] = js.native
   def releaseDownloadAccess(callback: BodyResponseCallback[SchemaDownloadAccesses]): Unit = js.native
-  def releaseDownloadAccess(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDownloadAccesses] = js.native
+  def releaseDownloadAccess(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDownloadAccesses] = js.native
   def releaseDownloadAccess(params: ParamsResourceMyconfigReleasedownloadaccess): GaxiosPromise[SchemaDownloadAccesses] = js.native
   def releaseDownloadAccess(
     params: ParamsResourceMyconfigReleasedownloadaccess,
@@ -98,7 +97,7 @@ class ResourceMyconfig protected () extends StObject {
     */
   def requestAccess(): GaxiosPromise[SchemaRequestAccess] = js.native
   def requestAccess(callback: BodyResponseCallback[SchemaRequestAccess]): Unit = js.native
-  def requestAccess(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRequestAccess] = js.native
+  def requestAccess(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRequestAccess] = js.native
   def requestAccess(params: ParamsResourceMyconfigRequestaccess): GaxiosPromise[SchemaRequestAccess] = js.native
   def requestAccess(params: ParamsResourceMyconfigRequestaccess, callback: BodyResponseCallback[SchemaRequestAccess]): Unit = js.native
   def requestAccess(
@@ -135,7 +134,7 @@ class ResourceMyconfig protected () extends StObject {
     */
   def syncVolumeLicenses(): GaxiosPromise[SchemaVolumes] = js.native
   def syncVolumeLicenses(callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
-  def syncVolumeLicenses(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
+  def syncVolumeLicenses(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
   def syncVolumeLicenses(params: ParamsResourceMyconfigSyncvolumelicenses): GaxiosPromise[SchemaVolumes] = js.native
   def syncVolumeLicenses(params: ParamsResourceMyconfigSyncvolumelicenses, callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
   def syncVolumeLicenses(
@@ -166,7 +165,7 @@ class ResourceMyconfig protected () extends StObject {
     */
   def updateUserSettings(): GaxiosPromise[SchemaUsersettings] = js.native
   def updateUserSettings(callback: BodyResponseCallback[SchemaUsersettings]): Unit = js.native
-  def updateUserSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUsersettings] = js.native
+  def updateUserSettings(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUsersettings] = js.native
   def updateUserSettings(params: ParamsResourceMyconfigUpdateusersettings): GaxiosPromise[SchemaUsersettings] = js.native
   def updateUserSettings(
     params: ParamsResourceMyconfigUpdateusersettings,

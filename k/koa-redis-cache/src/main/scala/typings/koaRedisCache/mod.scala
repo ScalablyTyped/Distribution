@@ -8,65 +8,65 @@ import typings.redis.mod.ClientOpts
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-redis-cache", JSImport.Namespace)
-  @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-redis-cache", JSImport.Namespace)
-  @js.native
-  def apply(opts: CacheOptions): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(opts: CacheOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
+  @JSImport("koa-redis-cache", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CacheOptions extends StObject {
     
     /**
       * the routes to exclude, default is [].
       * example: ['/api/(.*)', '/view/:id']
       */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * redis expire time (second), default is 30 * 60 (30 min)
       */
-    var expire: js.UndefOr[Double] = js.native
+    var expire: js.UndefOr[Double] = js.undefined
     
     /**
       * max length of body size (in bytes) to cache.
       * if the size of the body exceeds maxLength, the body will not be cached.
       * default is: Infinity
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * callback function for error, default is function() {}
       */
-    var onerror: js.UndefOr[onErrorCallback] = js.native
+    var onerror: js.UndefOr[onErrorCallback] = js.undefined
     
     /**
       * if the passParam exists in the query string, skip the cache
       */
-    var passParam: js.UndefOr[String] = js.native
+    var passParam: js.UndefOr[String] = js.undefined
     
     /**
       * redis key prefix, default is koa-redis-cache:
       * If a function is supplied, its signature should be function(ctx) {} and it should return a string to use as the redis key prefix
       */
-    var prefix: js.UndefOr[String | getPrefixCallback] = js.native
+    var prefix: js.UndefOr[String | getPrefixCallback] = js.undefined
     
     /**
       * redis options
       */
-    var redis: js.UndefOr[RedisOptions] = js.native
+    var redis: js.UndefOr[RedisOptions] = js.undefined
     
     /**
       * the routes to cache, default is ['(.*)'].
       * can be set to an array of routes (string), or an array of RouteOptions
       */
-    var routes: js.UndefOr[js.Array[RouteOptions | String]] = js.native
+    var routes: js.UndefOr[js.Array[RouteOptions | String]] = js.undefined
   }
   object CacheOptions {
     
@@ -138,23 +138,22 @@ object mod {
     }
   }
   
-  @js.native
   trait RedisOptions extends StObject {
     
     /**
       * host name of the redis server, default: 'localhost'
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * node_redis options
       */
-    var options: js.UndefOr[ClientOpts] = js.native
+    var options: js.UndefOr[ClientOpts] = js.undefined
     
     /**
       * port number of the redis server, default: 6379
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object RedisOptions {
     
@@ -187,18 +186,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RouteOptions extends StObject {
     
     /**
       * expiration time in seconds for cached responses for the route
       */
-    var expire: js.UndefOr[Double] = js.native
+    var expire: js.UndefOr[Double] = js.undefined
     
     /**
       * the route to cache, example: '/api/(.*)'
       */
-    var route: String = js.native
+    var route: String
   }
   object RouteOptions {
     

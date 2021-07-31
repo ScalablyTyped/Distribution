@@ -2,21 +2,21 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcHistoryEntry extends HistoryEntry[TfvcItem] {
+trait TfvcHistoryEntry
+  extends StObject
+     with HistoryEntry[TfvcItem] {
   
   /**
     * The encoding of the item at this point in history (only relevant for File history, not folders)
     */
-  var encoding: Double = js.native
+  var encoding: Double
   
   /**
     * The file id of the item at this point in history (only relevant for File history, not folders)
     */
-  var fileId: Double = js.native
+  var fileId: Double
 }
 object TfvcHistoryEntry {
   

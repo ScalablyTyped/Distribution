@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio extends StObject {
   
   /** Output only. Whether the playback of this message can be interrupted by the end user's speech and the client can then starts the next Dialogflow request. */
-  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.native
+  var allowPlaybackInterruption: js.UndefOr[Boolean] = js.undefined
   
   /** Required. URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it. */
-  var audioUri: js.UndefOr[String] = js.native
+  var audioUri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio {
   

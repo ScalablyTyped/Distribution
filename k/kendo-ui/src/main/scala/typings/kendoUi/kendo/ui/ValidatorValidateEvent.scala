@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValidatorValidateEvent extends ValidatorEvent {
+trait ValidatorValidateEvent
+  extends StObject
+     with ValidatorEvent {
   
-  var errors: js.UndefOr[js.Array[_]] = js.native
+  var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var valid: js.UndefOr[Boolean] = js.native
+  var valid: js.UndefOr[Boolean] = js.undefined
 }
 object ValidatorValidateEvent {
   
@@ -24,7 +24,7 @@ object ValidatorValidateEvent {
   implicit class ValidatorValidateEventMutableBuilder[Self <: ValidatorValidateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setErrors(value: js.Array[_]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)

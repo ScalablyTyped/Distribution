@@ -2,31 +2,29 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBClusterParameterGroupMessage extends StObject {
   
   /**
     * The name of the cluster parameter group. Constraints:   Must not match the name of an existing DBClusterParameterGroup.    This value is stored as a lowercase string. 
     */
-  var DBClusterParameterGroupName: String = js.native
+  var DBClusterParameterGroupName: String
   
   /**
     * The cluster parameter group family name.
     */
-  var DBParameterGroupFamily: String = js.native
+  var DBParameterGroupFamily: String
   
   /**
     * The description for the cluster parameter group.
     */
-  var Description: String = js.native
+  var Description: String
   
   /**
     * The tags to be assigned to the cluster parameter group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDBClusterParameterGroupMessage {
   

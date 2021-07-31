@@ -2,27 +2,27 @@ package typings.reactNativeWindowsCli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object winappdeploytoolMod {
   
   @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/winappdeploytool", JSImport.Default)
   @js.native
-  class default () extends WinAppDeployTool
+  class default ()
+    extends StObject
+       with WinAppDeployTool
   
-  @js.native
   trait DeviceInfo extends StObject {
     
-    val guid: String = js.native
+    val guid: String
     
-    var index: js.Any = js.native
+    var index: js.Any
     
-    val ip: String = js.native
+    val ip: String
     
-    val name: String = js.native
+    val name: String
     
-    var `type`: js.Any = js.native
+    var `type`: js.Any
   }
   object DeviceInfo {
     

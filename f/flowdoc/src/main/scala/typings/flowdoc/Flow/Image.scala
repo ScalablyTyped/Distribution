@@ -4,23 +4,23 @@ import typings.flowdoc.Graphic
 import typings.flowdoc.flowdocStrings.IMAGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Image extends Graphic {
+trait Image
+  extends StObject
+     with Graphic {
   
-  var connections: js.UndefOr[js.Array[Connection]] = js.native
+  var connections: js.UndefOr[js.Array[Connection]] = js.undefined
   
   @JSName("type")
-  var type_Image: IMAGE = js.native
+  var type_Image: IMAGE
 }
 object Image {
   
   @scala.inline
-  def apply(id: String, name: String, position: Point, size: Size, source: FileAsset | URLAsset, `type`: IMAGE): Image = {
+  def apply(id: String, name: String, position: Point, size: Size, source: FileAsset | URLAsset): Image = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IMAGE")
     __obj.asInstanceOf[Image]
   }
   

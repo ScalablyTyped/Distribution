@@ -7,7 +7,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -15,7 +14,7 @@ object componentMod {
   @JSImport("@material/form-field/component", "MDCFormField")
   @js.native
   class MDCFormField protected () extends MDCComponent[MDCFormFieldFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCFormFieldFoundation, args: js.Any*) = this()
     
     var input: js.UndefOr[MDCFormFieldInput] = js.native
@@ -23,15 +22,17 @@ object componentMod {
   /* static members */
   object MDCFormField {
     
-    @JSImport("@material/form-field/component", "MDCFormField.attachTo")
+    @JSImport("@material/form-field/component", "MDCFormField")
     @js.native
-    def attachTo(root: HTMLElement): MDCFormField = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: HTMLElement): MDCFormField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCFormField]
   }
   
-  @js.native
   trait MDCFormFieldInput extends StObject {
     
-    val ripple: js.UndefOr[MDCRipple] = js.native
+    val ripple: js.UndefOr[MDCRipple] = js.undefined
   }
   object MDCFormFieldInput {
     

@@ -2,15 +2,13 @@ package typings.storybookAddonBackgrounds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Background extends StObject {
     
-    var background: String = js.native
+    var background: String
   }
   object Background {
     
@@ -28,14 +26,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CellAmount extends StObject {
     
-    var cellAmount: Double = js.native
+    var cellAmount: Double
     
-    var cellSize: Double = js.native
+    var cellSize: Double
     
-    var opacity: Double = js.native
+    var opacity: Double
   }
   object CellAmount {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Grid extends StObject {
     
-    var grid: CellAmount = js.native
+    var grid: CellAmount
     
-    var values: js.Array[Name] = js.native
+    var values: js.Array[Name]
   }
   object Grid {
     
@@ -88,12 +84,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Name {
     

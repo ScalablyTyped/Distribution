@@ -6,7 +6,6 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoAlgorithm.retroMod.IRetroable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bplustreeMod {
@@ -14,7 +13,8 @@ object bplustreeMod {
   @JSImport("@lumino/collections/types/bplustree", "BPlusTree")
   @js.native
   class BPlusTree[T] protected ()
-    extends IIterable[T]
+    extends StObject
+       with IIterable[T]
        with IRetroable[T] {
     /**
       * Construct a new B+ tree.
@@ -159,6 +159,20 @@ object bplustreeMod {
     val isEmpty: Boolean = js.native
     
     /**
+      * Get an iterator over the object's values.
+      *
+      * @returns An iterator which yields the object's values.
+      *
+      * #### Notes
+      * Depending on the iterable, the returned iterator may or may not be
+      * a new object. A collection or other container-like object should
+      * typically return a new iterator, while an iterator itself should
+      * normally return `this`.
+      */
+    /* CompleteClass */
+    override def iter(): IIterator[T] = js.native
+    
+    /**
       * The last item in the tree.
       *
       * This is `undefined` if the tree is empty.
@@ -183,6 +197,14 @@ object bplustreeMod {
     def remove(index: Double): js.UndefOr[T] = js.native
     
     /**
+      * Get a reverse iterator over the object's values.
+      *
+      * @returns An iterator which yields the object's values in reverse.
+      */
+    /* CompleteClass */
+    override def retro(): IIterator[T] = js.native
+    
+    /**
       * Create a reverse iterator for a slice of items in the tree.
       *
       * @param start - The index of the first item, inclusive. This
@@ -199,9 +221,9 @@ object bplustreeMod {
       * `O(log32 n)`
       */
     def retroSlice(): IIterator[T] = js.native
-    def retroSlice(start: js.UndefOr[scala.Nothing], stop: Double): IIterator[T] = js.native
     def retroSlice(start: Double): IIterator[T] = js.native
     def retroSlice(start: Double, stop: Double): IIterator[T] = js.native
+    def retroSlice(start: Unit, stop: Double): IIterator[T] = js.native
     
     /**
       * The size of the tree.
@@ -228,9 +250,9 @@ object bplustreeMod {
       * `O(log32 n)`
       */
     def slice(): IIterator[T] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], stop: Double): IIterator[T] = js.native
     def slice(start: Double): IIterator[T] = js.native
     def slice(start: Double, stop: Double): IIterator[T] = js.native
+    def slice(start: Unit, stop: Double): IIterator[T] = js.native
     
     /**
       * Update the tree with multiple items.
@@ -244,6 +266,10 @@ object bplustreeMod {
   }
   object BPlusTree {
     
+    @JSImport("@lumino/collections/types/bplustree", "BPlusTree")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a new B+ tree populated with the given items.
       *
@@ -256,8 +282,7 @@ object bplustreeMod {
       * #### Complexity
       * `O(n log32 n)`
       */
-    @JSImport("@lumino/collections/types/bplustree", "BPlusTree.from")
-    @js.native
-    def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): BPlusTree[T] = js.native
+    @scala.inline
+    def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[BPlusTree[T]]
   }
 }

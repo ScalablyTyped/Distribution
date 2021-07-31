@@ -2,16 +2,14 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopDBClusterMessage extends StObject {
   
   /**
     * The DB cluster identifier of the Neptune DB cluster to be stopped. This parameter is stored as a lowercase string.
     */
-  var DBClusterIdentifier: String = js.native
+  var DBClusterIdentifier: String
 }
 object StopDBClusterMessage {
   

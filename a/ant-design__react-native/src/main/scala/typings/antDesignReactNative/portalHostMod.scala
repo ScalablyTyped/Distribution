@@ -1,14 +1,10 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.mount
-import typings.antDesignReactNative.antDesignReactNativeStrings.unmount
-import typings.antDesignReactNative.antDesignReactNativeStrings.update
 import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalHostMod {
@@ -47,35 +43,34 @@ object portalHostMod {
   object Operation {
     
     @scala.inline
-    def ChildrenKey(key: Double, `type`: mount): typings.antDesignReactNative.anon.ChildrenKey = {
+    def ChildrenKey(key: Double): typings.antDesignReactNative.anon.ChildrenKey = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mount")
       __obj.asInstanceOf[typings.antDesignReactNative.anon.ChildrenKey]
     }
     
     @scala.inline
-    def KeyNumber(key: Double, `type`: unmount): typings.antDesignReactNative.anon.KeyNumber = {
+    def KeyNumber(key: Double): typings.antDesignReactNative.anon.KeyNumber = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("unmount")
       __obj.asInstanceOf[typings.antDesignReactNative.anon.KeyNumber]
     }
     
     @scala.inline
-    def KeyType(key: Double, `type`: update): typings.antDesignReactNative.anon.KeyType = {
+    def KeyType(key: Double): typings.antDesignReactNative.anon.KeyType = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[typings.antDesignReactNative.anon.KeyType]
     }
   }
   
-  @js.native
   trait PortalGuard extends StObject {
     
-    def add(e: ReactNode): Double = js.native
+    def add(e: ReactNode): Double
     
-    var nextKey: js.Any = js.native
+    var nextKey: js.Any
     
-    def remove(key: Double): Unit = js.native
+    def remove(key: Double): Unit
   }
   object PortalGuard {
     
@@ -126,10 +121,9 @@ object portalHostMod {
     def componentWillUnmount_MPortalHost(): Unit = js.native
   }
   
-  @js.native
   trait PortalHostProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object PortalHostProps {
     
@@ -150,14 +144,13 @@ object portalHostMod {
     }
   }
   
-  @js.native
   trait PortalMethods extends StObject {
     
-    def mount(children: ReactNode): Double = js.native
+    def mount(children: ReactNode): Double
     
-    def unmount(key: Double): Unit = js.native
+    def unmount(key: Double): Unit
     
-    def update(key: Double, children: ReactNode): Unit = js.native
+    def update(key: Double, children: ReactNode): Unit
   }
   object PortalMethods {
     

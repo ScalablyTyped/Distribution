@@ -3,12 +3,11 @@ package typings.jqueryUniform
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniformOptions
-  extends UniformCoreOptions
+  extends StObject
+     with UniformCoreOptions
      with /* option */ StringDictionary[js.Any]
 object UniformOptions {
   

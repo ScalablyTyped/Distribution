@@ -2,17 +2,15 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageOptions extends StObject {
   
   /** returns the base64 string representation (inline) of actual image */
-  var dataURI: js.UndefOr[Boolean] = js.native
+  var dataURI: js.UndefOr[Boolean] = js.undefined
   
   /** returns the thumbnail of actual image */
-  var thumbnail: js.UndefOr[Boolean] = js.native
+  var thumbnail: js.UndefOr[Boolean] = js.undefined
 }
 object ImageOptions {
   

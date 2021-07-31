@@ -10,9 +10,9 @@ The official Mixpanel JavaScript browser client library
 | ------------------ | :-------------: |
 | Full name          | mixpanel-browser |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 51 |
-| # downloads        | 6067723 |
+| # releases         | 18 |
+| # dependents       | 56 |
+| # downloads        | 7027745 |
 | # stars            | 2 |
 
 ## Links

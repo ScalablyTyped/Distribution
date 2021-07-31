@@ -2,40 +2,38 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Product contains ReferenceImages.
   */
-@js.native
 trait SchemaProduct extends StObject {
   
   /**
     * User-provided metadata to be stored with this product. Must be at most
     * 4096 characters long.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The user-provided name for this Product. Must not be empty. Must be at
     * most 4096 characters long.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the product.  Format is:
     * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`.  This field
     * is ignored when creating a product.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The category for the product identified by the reference image. This
     * should be either &quot;homegoods&quot;, &quot;apparel&quot;, or
     * &quot;toys&quot;.  This field is immutable.
     */
-  var productCategory: js.UndefOr[String] = js.native
+  var productCategory: js.UndefOr[String] = js.undefined
   
   /**
     * Key-value pairs that can be attached to a product. At query time,
@@ -45,7 +43,7 @@ trait SchemaProduct extends StObject {
     * to be supported soon.  Multiple values can be assigned to the same key.
     * One product may have up to 100 product_labels.
     */
-  var productLabels: js.UndefOr[js.Array[SchemaKeyValue]] = js.native
+  var productLabels: js.UndefOr[js.Array[SchemaKeyValue]] = js.undefined
 }
 object SchemaProduct {
   

@@ -3,22 +3,21 @@ package typings.saucelabs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var baseline: js.UndefOr[Dictkey] = js.native
+  var baseline: js.UndefOr[Dictkey] = js.undefined
   
-  var baseline_url: String = js.native
+  var baseline_url: String
   
-  var regime_end: Double = js.native
+  var regime_end: Double
   
-  var regime_start: Double = js.native
+  var regime_start: Double
 }
 object Active {
   

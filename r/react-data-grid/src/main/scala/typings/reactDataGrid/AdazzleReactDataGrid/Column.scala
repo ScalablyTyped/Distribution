@@ -7,31 +7,29 @@ import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a specific column to be rendered.
   */
-@js.native
 trait Column[T] extends StObject {
   
   /**
     * A class name to be applied to the cells in the column
     */
-  var cellClass: js.UndefOr[String] = js.native
+  var cellClass: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this column can be dragged (re-arranged).
     * @default false
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this column can be edited.
     * @default false
     */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The editor for this column. Several editors are available in "react-data-grid/addons".
@@ -39,7 +37,7 @@ trait Column[T] extends StObject {
     */
   var editor: js.UndefOr[
     ReactElement | (ComponentClass[EditorBaseProps, ComponentState]) | StatelessComponent[EditorBaseProps]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Events to be bound to the cells in this specific column.
@@ -47,68 +45,74 @@ trait Column[T] extends StObject {
     * @example
     * function onXxx(ev :SyntheticEvent, (rowIdx, idx, name): args)
     */
-  var events: js.UndefOr[StringDictionary[ColumnEventCallback]] = js.native
+  var events: js.UndefOr[StringDictionary[ColumnEventCallback]] = js.undefined
   
   /**
     * A custom formatter for this column's filter.
     */
-  var filterRenderer: js.UndefOr[ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.native
+  var filterRenderer: js.UndefOr[
+    ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
+  ] = js.undefined
   
   /**
     * Whether the rows in the grid can be filtered by this column.
     * @default false
     */
-  var filterable: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A custom read-only formatter for this column. An image formatter is available in "react-data-grid/addons".
     */
-  var formatter: js.UndefOr[ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.native
+  var formatter: js.UndefOr[
+    ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
+  ] = js.undefined
   
   /**
     * Retrieve meta data about the row, optionally provide column as a second argument
     */
-  var getRowMetaData: js.UndefOr[js.Function2[/* rowdata */ T, /* column */ js.UndefOr[Column[T]], _]] = js.native
+  var getRowMetaData: js.UndefOr[js.Function2[/* rowdata */ T, /* column */ js.UndefOr[Column[T]], js.Any]] = js.undefined
   
   /**
     * A custom formatter for this column's header.
     */
-  var headerRenderer: js.UndefOr[ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.native
+  var headerRenderer: js.UndefOr[
+    ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
+  ] = js.undefined
   
   /**
     * A unique key for this column. Required.
     * Each row should have a property with this name, which contains this column's value.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Whether this column should stay fixed on the left as the user scrolls horizontally.
     * @default false
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This column's display name. Required.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Whether this column can be resized by the user.
     * @default false
     */
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the rows in the grid can be sorted by this column.
     * @default false
     */
-  var sortable: js.UndefOr[Boolean] = js.native
+  var sortable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A custom width for this specific column.
     * @default minColumnWidth from the ReactDataGrid
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Column {
   
@@ -119,7 +123,7 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column[_], T] (val x: Self with Column[T]) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column[?], T] (val x: Self & Column[T]) extends AnyVal {
     
     @scala.inline
     def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
@@ -154,7 +158,7 @@ object Column {
     def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setFilterRenderer(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
+    def setFilterRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterRendererUndefined: Self = StObject.set(x, "filterRenderer", js.undefined)
@@ -166,19 +170,19 @@ object Column {
     def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
     @scala.inline
-    def setFormatter(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    def setFormatter(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def setGetRowMetaData(value: (/* rowdata */ T, /* column */ js.UndefOr[Column[T]]) => _): Self = StObject.set(x, "getRowMetaData", js.Any.fromFunction2(value))
+    def setGetRowMetaData(value: (/* rowdata */ T, /* column */ js.UndefOr[Column[T]]) => js.Any): Self = StObject.set(x, "getRowMetaData", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetRowMetaDataUndefined: Self = StObject.set(x, "getRowMetaData", js.undefined)
     
     @scala.inline
-    def setHeaderRenderer(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
+    def setHeaderRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHeaderRendererUndefined: Self = StObject.set(x, "headerRenderer", js.undefined)

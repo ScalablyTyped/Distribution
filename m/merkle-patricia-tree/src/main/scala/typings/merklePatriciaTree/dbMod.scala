@@ -8,7 +8,6 @@ import typings.merklePatriciaTree.merklePatriciaTreeStrings.put
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dbMod {
@@ -21,9 +20,9 @@ object dbMod {
     * @param {Object} [leveldb] - An abstract-leveldown compliant store
     */
   class DB () extends StObject {
-    def this(leveldb: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]]) = this()
+    def this(leveldb: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]) = this()
     
-    var _leveldb: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]] = js.native
+    var _leveldb: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]] = js.native
     
     /**
       * Performs a batch operation on db.
@@ -88,33 +87,34 @@ object dbMod {
   object BatchDBOp {
     
     @scala.inline
-    def DelBatch(key: Buffer, `type`: del): typings.merklePatriciaTree.dbMod.DelBatch = {
+    def DelBatch(key: Buffer): typings.merklePatriciaTree.dbMod.DelBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[typings.merklePatriciaTree.dbMod.DelBatch]
     }
     
     @scala.inline
-    def PutBatch(key: Buffer, `type`: put, value: Buffer): typings.merklePatriciaTree.dbMod.PutBatch = {
+    def PutBatch(key: Buffer, value: Buffer): typings.merklePatriciaTree.dbMod.PutBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[typings.merklePatriciaTree.dbMod.PutBatch]
     }
   }
   
-  @js.native
-  trait DelBatch extends BatchDBOp {
+  trait DelBatch
+    extends StObject
+       with BatchDBOp {
     
-    var key: Buffer = js.native
+    var key: Buffer
     
-    var `type`: del = js.native
+    var `type`: del
   }
   object DelBatch {
     
     @scala.inline
-    def apply(key: Buffer, `type`: del): DelBatch = {
+    def apply(key: Buffer): DelBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[DelBatch]
     }
     
@@ -129,21 +129,22 @@ object dbMod {
     }
   }
   
-  @js.native
-  trait PutBatch extends BatchDBOp {
+  trait PutBatch
+    extends StObject
+       with BatchDBOp {
     
-    var key: Buffer = js.native
+    var key: Buffer
     
-    var `type`: put = js.native
+    var `type`: put
     
-    var value: Buffer = js.native
+    var value: Buffer
   }
   object PutBatch {
     
     @scala.inline
-    def apply(key: Buffer, `type`: put, value: Buffer): PutBatch = {
+    def apply(key: Buffer, value: Buffer): PutBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[PutBatch]
     }
     

@@ -9,11 +9,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Draw extends Accessor {
+trait Draw
+  extends StObject
+     with Accessor {
   
   /**
     * A reference to the active [draw action](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html).

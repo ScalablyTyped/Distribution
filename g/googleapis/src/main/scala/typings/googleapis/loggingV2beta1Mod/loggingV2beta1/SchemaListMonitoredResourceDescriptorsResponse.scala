@@ -2,13 +2,11 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result returned from ListMonitoredResourceDescriptors.
   */
-@js.native
 trait SchemaListMonitoredResourceDescriptorsResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListMonitoredResourceDescriptorsResponse extends StObject {
     * then nextPageToken is included. To get the next set of results, call this
     * method again using the value of nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of resource descriptors.
     */
-  var resourceDescriptors: js.UndefOr[js.Array[SchemaMonitoredResourceDescriptor]] = js.native
+  var resourceDescriptors: js.UndefOr[js.Array[SchemaMonitoredResourceDescriptor]] = js.undefined
 }
 object SchemaListMonitoredResourceDescriptorsResponse {
   

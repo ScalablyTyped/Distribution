@@ -2,29 +2,27 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonsApiExportDataParameter extends StObject {
   
-  var columns: js.UndefOr[js.Any] = js.native
+  var columns: js.UndefOr[js.Any] = js.undefined
   
-  var decodeEntities: js.UndefOr[Boolean] = js.native
+  var decodeEntities: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[js.Any] = js.native
+  var format: js.UndefOr[js.Any] = js.undefined
   
-  var modifier: js.UndefOr[js.Any] = js.native
+  var modifier: js.UndefOr[js.Any] = js.undefined
   
-  var orthogonal: js.UndefOr[String] = js.native
+  var orthogonal: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Any] = js.native
+  var rows: js.UndefOr[js.Any] = js.undefined
   
-  var stripHtml: js.UndefOr[Boolean] = js.native
+  var stripHtml: js.UndefOr[Boolean] = js.undefined
   
-  var stripNewlines: js.UndefOr[Boolean] = js.native
+  var stripNewlines: js.UndefOr[Boolean] = js.undefined
   
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonsApiExportDataParameter {
   

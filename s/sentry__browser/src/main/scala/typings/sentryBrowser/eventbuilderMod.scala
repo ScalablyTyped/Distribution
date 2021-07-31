@@ -9,54 +9,43 @@ import typings.sentryTypes.severityMod.Severity
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventbuilderMod {
   
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromException")
+  @JSImport("@sentry/browser/dist/eventbuilder", JSImport.Namespace)
   @js.native
-  def eventFromException(options: Options, exception: js.Any): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromException")
-  @js.native
-  def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String, level: Severity): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String, level: Severity, hint: EventHint): js.Thenable[Event] = js.native
+  @scala.inline
+  def eventFromException(options: Options, exception: js.Any): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(options.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(options.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
   
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromString")
-  @js.native
-  def eventFromString(input: String): Event = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromString")
-  @js.native
-  def eventFromString(input: String, syntheticException: js.UndefOr[scala.Nothing], options: `0`): Event = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromString")
-  @js.native
-  def eventFromString(input: String, syntheticException: Error): Event = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromString")
-  @js.native
-  def eventFromString(input: String, syntheticException: Error, options: `0`): Event = js.native
+  @scala.inline
+  def eventFromMessage(options: Options, message: String): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromMessage(options: Options, message: String, level: Unit, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromMessage(options: Options, message: String, level: Severity): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromMessage(options: Options, message: String, level: Severity, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
   
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromUnknownInput")
-  @js.native
-  def eventFromUnknownInput(exception: js.Any): Event = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromUnknownInput")
-  @js.native
-  def eventFromUnknownInput(exception: js.Any, syntheticException: js.UndefOr[scala.Nothing], options: AttachStacktrace): Event = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromUnknownInput")
-  @js.native
-  def eventFromUnknownInput(exception: js.Any, syntheticException: Error): Event = js.native
-  @JSImport("@sentry/browser/dist/eventbuilder", "eventFromUnknownInput")
-  @js.native
-  def eventFromUnknownInput(exception: js.Any, syntheticException: Error, options: AttachStacktrace): Event = js.native
+  @scala.inline
+  def eventFromString(input: String): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromString")(input.asInstanceOf[js.Any]).asInstanceOf[Event]
+  @scala.inline
+  def eventFromString(input: String, syntheticException: Unit, options: `0`): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromString")(input.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
+  @scala.inline
+  def eventFromString(input: String, syntheticException: Error): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromString")(input.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any])).asInstanceOf[Event]
+  @scala.inline
+  def eventFromString(input: String, syntheticException: Error, options: `0`): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromString")(input.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
+  
+  @scala.inline
+  def eventFromUnknownInput(exception: js.Any): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromUnknownInput")(exception.asInstanceOf[js.Any]).asInstanceOf[Event]
+  @scala.inline
+  def eventFromUnknownInput(exception: js.Any, syntheticException: Unit, options: AttachStacktrace): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromUnknownInput")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
+  @scala.inline
+  def eventFromUnknownInput(exception: js.Any, syntheticException: Error): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromUnknownInput")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any])).asInstanceOf[Event]
+  @scala.inline
+  def eventFromUnknownInput(exception: js.Any, syntheticException: Error, options: AttachStacktrace): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromUnknownInput")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
 }

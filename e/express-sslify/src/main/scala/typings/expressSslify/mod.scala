@@ -5,19 +5,19 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-sslify", "HTTPS")
+  @JSImport("express-sslify", JSImport.Namespace)
   @js.native
-  def HTTPS(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-sslify", "HTTPS")
-  @js.native
-  def HTTPS(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def HTTPS(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTPS")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def HTTPS(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTPS")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   trait Options extends StObject {
     
     /**
@@ -25,7 +25,7 @@ object mod {
       * To tell express-sslify to look out for Azure's x-arr-ssl header.
       * @default false
       */
-    var trustAzureHeader: js.UndefOr[Boolean] = js.native
+    var trustAzureHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Heroku, nodejitsu and other hosters often use reverse proxies which offer SSL endpoints but then forward unencrypted HTTP traffic to the website.
@@ -33,13 +33,13 @@ object mod {
       * Luckily, most reverse proxies set the x-forwarded-proto header flag with the original request scheme.
       * @default false
       */
-    var trustProtoHeader: js.UndefOr[Boolean] = js.native
+    var trustProtoHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If your reverse proxy sends the original host using the X-Forwarded-Host header and you need to use that instead of the Host header for the redirect.
       * @default false
       */
-    var trustXForwardedHostHeader: js.UndefOr[Boolean] = js.native
+    var trustXForwardedHostHeader: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

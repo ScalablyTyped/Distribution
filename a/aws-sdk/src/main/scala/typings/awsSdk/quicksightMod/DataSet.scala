@@ -2,76 +2,74 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSet extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * Groupings of columns that work together in certain Amazon QuickSight features. Currently, only geospatial hierarchy is supported.
     */
-  var ColumnGroups: js.UndefOr[ColumnGroupList] = js.native
+  var ColumnGroups: js.UndefOr[ColumnGroupList] = js.undefined
   
   /**
     * A set of one or more definitions of a  ColumnLevelPermissionRule .
     */
-  var ColumnLevelPermissionRules: js.UndefOr[ColumnLevelPermissionRuleList] = js.native
+  var ColumnLevelPermissionRules: js.UndefOr[ColumnLevelPermissionRuleList] = js.undefined
   
   /**
     * The amount of SPICE capacity used by this dataset. This is 0 if the dataset isn't imported into SPICE.
     */
-  var ConsumedSpiceCapacityInBytes: js.UndefOr[Long_] = js.native
+  var ConsumedSpiceCapacityInBytes: js.UndefOr[Long_] = js.undefined
   
   /**
     * The time that this dataset was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The ID of the dataset.
     */
-  var DataSetId: js.UndefOr[ResourceId] = js.native
+  var DataSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * Indicates whether you want to import the data into SPICE.
     */
-  var ImportMode: js.UndefOr[DataSetImportMode] = js.native
+  var ImportMode: js.UndefOr[DataSetImportMode] = js.undefined
   
   /**
     * The last time that this dataset was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * Configures the combination and transformation of the data from the physical tables.
     */
-  var LogicalTableMap: js.UndefOr[typings.awsSdk.quicksightMod.LogicalTableMap] = js.native
+  var LogicalTableMap: js.UndefOr[typings.awsSdk.quicksightMod.LogicalTableMap] = js.undefined
   
   /**
     * A display name for the dataset.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The list of columns after all transforms. These columns are available in templates, analyses, and dashboards.
     */
-  var OutputColumns: js.UndefOr[OutputColumnList] = js.native
+  var OutputColumns: js.UndefOr[OutputColumnList] = js.undefined
   
   /**
     * Declares the physical tables that are available in the underlying data sources.
     */
-  var PhysicalTableMap: js.UndefOr[typings.awsSdk.quicksightMod.PhysicalTableMap] = js.native
+  var PhysicalTableMap: js.UndefOr[typings.awsSdk.quicksightMod.PhysicalTableMap] = js.undefined
   
   /**
     * The row-level security configuration for the dataset.
     */
-  var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.native
+  var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.undefined
 }
 object DataSet {
   

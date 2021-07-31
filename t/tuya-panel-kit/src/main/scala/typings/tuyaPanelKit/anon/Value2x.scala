@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value2x extends StObject {
   
-  var value1: Double = js.native
+  var value1: Double
   
-  var value2x: Double = js.native
+  var value2x: Double
 }
 object Value2x {
   

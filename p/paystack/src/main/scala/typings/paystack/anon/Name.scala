@@ -3,20 +3,19 @@ package typings.paystack.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name
-  extends /* others */ StringDictionary[js.Any] {
+  extends StObject
+     with /* others */ StringDictionary[js.Any] {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var email: String = js.native
+  var email: String
   
-  var name: String = js.native
+  var name: String
   
-  var reference: String = js.native
+  var reference: String
 }
 object Name {
   

@@ -6,7 +6,6 @@ import typings.reactColor.anon.PartialClassesMaterialPic
 import typings.reactColor.mod.ColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialMod {
@@ -20,11 +19,12 @@ object materialMod {
   trait MaterialPicker
     extends Component[MaterialPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait MaterialPickerProps extends ColorPickerProps[MaterialPicker] {
+  trait MaterialPickerProps
+    extends StObject
+       with ColorPickerProps[MaterialPicker] {
     
     @JSName("styles")
-    var styles_MaterialPickerProps: js.UndefOr[PartialClassesMaterialPic] = js.native
+    var styles_MaterialPickerProps: js.UndefOr[PartialClassesMaterialPic] = js.undefined
   }
   object MaterialPickerProps {
     
@@ -45,28 +45,27 @@ object materialMod {
     }
   }
   
-  @js.native
   trait MaterialPickerStylesProps extends StObject {
     
-    var HEXinput: CSSProperties = js.native
+    var HEXinput: CSSProperties
     
-    var HEXlabel: CSSProperties = js.native
+    var HEXlabel: CSSProperties
     
-    var HEXwrap: CSSProperties = js.native
+    var HEXwrap: CSSProperties
     
-    var Hex: CSSProperties = js.native
+    var Hex: CSSProperties
     
-    var RGBinput: CSSProperties = js.native
+    var RGBinput: CSSProperties
     
-    var RGBlabel: CSSProperties = js.native
+    var RGBlabel: CSSProperties
     
-    var RGBwrap: CSSProperties = js.native
+    var RGBwrap: CSSProperties
     
-    var material: CSSProperties = js.native
+    var material: CSSProperties
     
-    var split: CSSProperties = js.native
+    var split: CSSProperties
     
-    var third: CSSProperties = js.native
+    var third: CSSProperties
   }
   object MaterialPickerStylesProps {
     

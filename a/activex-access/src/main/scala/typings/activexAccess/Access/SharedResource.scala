@@ -2,24 +2,22 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedResource extends StObject {
   
   @JSName("Access.SharedResource_typekey")
-  var AccessDotSharedResource_typekey: SharedResource = js.native
+  var AccessDotSharedResource_typekey: SharedResource
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Type: AcResourceType = js.native
+  val Type: AcResourceType
 }
 object SharedResource {
   

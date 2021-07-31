@@ -5,42 +5,42 @@ import typings.elasticsearch.elasticsearchStrings.index
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndexDocumentParams[T] extends GenericParams {
+trait IndexDocumentParams[T]
+  extends StObject
+     with GenericParams {
   
   @JSName("body")
-  var body_IndexDocumentParams: T = js.native
+  var body_IndexDocumentParams: T
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var index: String = js.native
+  var index: String
   
-  var opType: js.UndefOr[index | create] = js.native
+  var opType: js.UndefOr[index | create] = js.undefined
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
-  var pipeline: js.UndefOr[String] = js.native
+  var pipeline: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[Refresh] = js.native
+  var refresh: js.UndefOr[Refresh] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var timestamp: js.UndefOr[Date | Double] = js.native
+  var timestamp: js.UndefOr[Date | Double] = js.undefined
   
-  var ttl: js.UndefOr[TimeSpan] = js.native
+  var ttl: js.UndefOr[TimeSpan] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var versionType: js.UndefOr[VersionType] = js.native
+  var versionType: js.UndefOr[VersionType] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.undefined
 }
 object IndexDocumentParams {
   
@@ -52,7 +52,7 @@ object IndexDocumentParams {
   }
   
   @scala.inline
-  implicit class IndexDocumentParamsMutableBuilder[Self <: IndexDocumentParams[_], T] (val x: Self with IndexDocumentParams[T]) extends AnyVal {
+  implicit class IndexDocumentParamsMutableBuilder[Self <: IndexDocumentParams[?], T] (val x: Self & IndexDocumentParams[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

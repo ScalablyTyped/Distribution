@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines an interface for creating enumerations for type descriptions.
   * @since OOo 1.1.2
   */
-@js.native
-trait XTypeDescriptionEnumerationAccess extends XInterface {
+trait XTypeDescriptionEnumerationAccess
+  extends StObject
+     with XInterface {
   
   /**
     * Creates an enumeration for type descriptions.
@@ -29,7 +29,7 @@ trait XTypeDescriptionEnumerationAccess extends XInterface {
     * @throws NoSuchTypeNameException in case that the given module name does not exist. This exception will never be thrown in case moduleName is the empty string.
     * @throws InvalidTypeNameException in case that the given module name does exist, but does not specify an UNOIDL module. This exception will never be throw
     */
-  def createTypeDescriptionEnumeration(moduleName: String, types: SeqEquiv[TypeClass], depth: TypeDescriptionSearchDepth): XTypeDescriptionEnumeration = js.native
+  def createTypeDescriptionEnumeration(moduleName: String, types: SeqEquiv[TypeClass], depth: TypeDescriptionSearchDepth): XTypeDescriptionEnumeration
 }
 object XTypeDescriptionEnumerationAccess {
   

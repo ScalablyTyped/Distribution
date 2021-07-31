@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grantMod {
@@ -80,6 +79,10 @@ object grantMod {
   /* static members */
   object Grant {
     
+    @JSImport("@pulumi/aws/kms/grant", "Grant")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Grant resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -89,71 +92,65 @@ object grantMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kms/grant", "Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Grant = js.native
-    @JSImport("@pulumi/aws/kms/grant", "Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Grant = js.native
-    @JSImport("@pulumi/aws/kms/grant", "Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GrantState): Grant = js.native
-    @JSImport("@pulumi/aws/kms/grant", "Grant.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): Grant = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Grant]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Grant]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GrantState): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Grant]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Grant]
     
     /**
       * Returns true if the given object is an instance of Grant.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kms/grant", "Grant.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean]
   }
   
-  @js.native
   trait GrantArgs extends StObject {
     
     /**
       * A structure that you can use to allow certain operations in the grant only when the desired encryption context is present. For more information about encryption context, see [Encryption Context](http://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html).
       */
-    val constraints: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]] = js.native
+    val constraints: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]] = js.undefined
     
     /**
       * A list of grant tokens to be used when creating the grant. See [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token) for more information about grant tokens.
       */
-    val grantCreationTokens: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val grantCreationTokens: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The principal that is given permission to perform the operations that the grant permits in ARN format. Note that due to eventual consistency issues around IAM principals, the state may not always be refreshed to reflect what is true in AWS.
       */
-    val granteePrincipal: Input[String] = js.native
+    val granteePrincipal: Input[String]
     
     /**
       * The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.
       */
-    val keyId: Input[String] = js.native
+    val keyId: Input[String]
     
     /**
       * A friendly name for identifying the grant.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of operations that the grant permits. The permitted values are: `Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, CreateGrant, RetireGrant, DescribeKey`
       */
-    val operations: Input[js.Array[Input[String]]] = js.native
+    val operations: Input[js.Array[Input[String]]]
     
     /**
       * -(Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
       * See [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) for more information.
       */
-    val retireOnDelete: js.UndefOr[Input[Boolean]] = js.native
+    val retireOnDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The principal that is given permission to retire the grant by using RetireGrant operation in ARN format. Note that due to eventual consistency issues around IAM principals, the state may not always be refreshed to reflect what is true in AWS.
       */
-    val retiringPrincipal: js.UndefOr[Input[String]] = js.native
+    val retiringPrincipal: js.UndefOr[Input[String]] = js.undefined
   }
   object GrantArgs {
     
@@ -216,59 +213,58 @@ object grantMod {
     }
   }
   
-  @js.native
   trait GrantState extends StObject {
     
     /**
       * A structure that you can use to allow certain operations in the grant only when the desired encryption context is present. For more information about encryption context, see [Encryption Context](http://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html).
       */
-    val constraints: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]] = js.native
+    val constraints: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]] = js.undefined
     
     /**
       * A list of grant tokens to be used when creating the grant. See [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token) for more information about grant tokens.
       */
-    val grantCreationTokens: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val grantCreationTokens: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The unique identifier for the grant.
       */
-    val grantId: js.UndefOr[Input[String]] = js.native
+    val grantId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The grant token for the created grant. For more information, see [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token).
       */
-    val grantToken: js.UndefOr[Input[String]] = js.native
+    val grantToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The principal that is given permission to perform the operations that the grant permits in ARN format. Note that due to eventual consistency issues around IAM principals, the state may not always be refreshed to reflect what is true in AWS.
       */
-    val granteePrincipal: js.UndefOr[Input[String]] = js.native
+    val granteePrincipal: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.
       */
-    val keyId: js.UndefOr[Input[String]] = js.native
+    val keyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name for identifying the grant.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of operations that the grant permits. The permitted values are: `Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, CreateGrant, RetireGrant, DescribeKey`
       */
-    val operations: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val operations: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * -(Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
       * See [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) for more information.
       */
-    val retireOnDelete: js.UndefOr[Input[Boolean]] = js.native
+    val retireOnDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The principal that is given permission to retire the grant by using RetireGrant operation in ARN format. Note that due to eventual consistency issues around IAM principals, the state may not always be refreshed to reflect what is true in AWS.
       */
-    val retiringPrincipal: js.UndefOr[Input[String]] = js.native
+    val retiringPrincipal: js.UndefOr[Input[String]] = js.undefined
   }
   object GrantState {
     

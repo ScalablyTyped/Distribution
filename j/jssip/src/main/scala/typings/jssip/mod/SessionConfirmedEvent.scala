@@ -2,15 +2,13 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionConfirmedEvent extends StObject {
   
-  var originator: String = js.native
+  var originator: String
   
-  var response: js.UndefOr[IncomingResponse] = js.native
+  var response: js.UndefOr[IncomingResponse] = js.undefined
 }
 object SessionConfirmedEvent {
   

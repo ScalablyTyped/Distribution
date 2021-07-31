@@ -4,24 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ResourceRequirements describes the compute resource requirements.
   */
-@js.native
 trait ResourceRequirements extends StObject {
   
   /**
     * Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     */
-  var limits: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var limits: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     */
-  var requests: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var requests: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
 }
 object ResourceRequirements {
   

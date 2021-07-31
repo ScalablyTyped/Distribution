@@ -4,92 +4,80 @@ import typings.bitcoinjsLib.networksMod.Network
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paymentsMod {
   
-  @JSImport("bitcoinjs-lib/types/payments", "embed")
+  @JSImport("bitcoinjs-lib/types/payments", JSImport.Namespace)
   @js.native
-  def embed(a: Payment): Payment = js.native
-  @JSImport("bitcoinjs-lib/types/payments", "embed")
-  @js.native
-  def embed(a: Payment, opts: PaymentOpts): Payment = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/payments", "p2ms")
-  @js.native
-  def p2ms(a: Payment): Payment = js.native
-  @JSImport("bitcoinjs-lib/types/payments", "p2ms")
-  @js.native
-  def p2ms(a: Payment, opts: PaymentOpts): Payment = js.native
+  @scala.inline
+  def embed(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("embed")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  @scala.inline
+  def embed(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("embed")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
-  @JSImport("bitcoinjs-lib/types/payments", "p2pk")
-  @js.native
-  def p2pk(a: Payment): Payment = js.native
-  @JSImport("bitcoinjs-lib/types/payments", "p2pk")
-  @js.native
-  def p2pk(a: Payment, opts: PaymentOpts): Payment = js.native
+  @scala.inline
+  def p2ms(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2ms")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  @scala.inline
+  def p2ms(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2ms")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
-  @JSImport("bitcoinjs-lib/types/payments", "p2pkh")
-  @js.native
-  def p2pkh(a: Payment): Payment = js.native
-  @JSImport("bitcoinjs-lib/types/payments", "p2pkh")
-  @js.native
-  def p2pkh(a: Payment, opts: PaymentOpts): Payment = js.native
+  @scala.inline
+  def p2pk(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2pk")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  @scala.inline
+  def p2pk(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2pk")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
-  @JSImport("bitcoinjs-lib/types/payments", "p2sh")
-  @js.native
-  def p2sh(a: Payment): Payment = js.native
-  @JSImport("bitcoinjs-lib/types/payments", "p2sh")
-  @js.native
-  def p2sh(a: Payment, opts: PaymentOpts): Payment = js.native
+  @scala.inline
+  def p2pkh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2pkh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  @scala.inline
+  def p2pkh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2pkh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
-  @JSImport("bitcoinjs-lib/types/payments", "p2wpkh")
-  @js.native
-  def p2wpkh(a: Payment): Payment = js.native
-  @JSImport("bitcoinjs-lib/types/payments", "p2wpkh")
-  @js.native
-  def p2wpkh(a: Payment, opts: PaymentOpts): Payment = js.native
+  @scala.inline
+  def p2sh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  @scala.inline
+  def p2sh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
-  @JSImport("bitcoinjs-lib/types/payments", "p2wsh")
-  @js.native
-  def p2wsh(a: Payment): Payment = js.native
-  @JSImport("bitcoinjs-lib/types/payments", "p2wsh")
-  @js.native
-  def p2wsh(a: Payment, opts: PaymentOpts): Payment = js.native
+  @scala.inline
+  def p2wpkh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  @scala.inline
+  def p2wpkh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
-  @js.native
+  @scala.inline
+  def p2wsh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2wsh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  @scala.inline
+  def p2wsh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2wsh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
+  
   trait Payment extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Array[Buffer]] = js.native
+    var data: js.UndefOr[js.Array[Buffer]] = js.undefined
     
-    var hash: js.UndefOr[Buffer] = js.native
+    var hash: js.UndefOr[Buffer] = js.undefined
     
-    var input: js.UndefOr[Buffer] = js.native
+    var input: js.UndefOr[Buffer] = js.undefined
     
-    var m: js.UndefOr[Double] = js.native
+    var m: js.UndefOr[Double] = js.undefined
     
-    var n: js.UndefOr[Double] = js.native
+    var n: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var network: js.UndefOr[Network] = js.native
+    var network: js.UndefOr[Network] = js.undefined
     
-    var output: js.UndefOr[Buffer] = js.native
+    var output: js.UndefOr[Buffer] = js.undefined
     
-    var pubkey: js.UndefOr[Buffer] = js.native
+    var pubkey: js.UndefOr[Buffer] = js.undefined
     
-    var pubkeys: js.UndefOr[js.Array[Buffer]] = js.native
+    var pubkeys: js.UndefOr[js.Array[Buffer]] = js.undefined
     
-    var redeem: js.UndefOr[Payment] = js.native
+    var redeem: js.UndefOr[Payment] = js.undefined
     
-    var signature: js.UndefOr[Buffer] = js.native
+    var signature: js.UndefOr[Buffer] = js.undefined
     
-    var signatures: js.UndefOr[js.Array[Buffer]] = js.native
+    var signatures: js.UndefOr[js.Array[Buffer]] = js.undefined
     
-    var witness: js.UndefOr[js.Array[Buffer]] = js.native
+    var witness: js.UndefOr[js.Array[Buffer]] = js.undefined
   }
   object Payment {
     
@@ -210,12 +198,11 @@ object paymentsMod {
   
   type PaymentFunction = js.Function0[Payment]
   
-  @js.native
   trait PaymentOpts extends StObject {
     
-    var allowIncomplete: js.UndefOr[Boolean] = js.native
+    var allowIncomplete: js.UndefOr[Boolean] = js.undefined
     
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
   }
   object PaymentOpts {
     

@@ -18,7 +18,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -48,44 +47,43 @@ object mod {
   
   type ReactImageGalleryImageSet = js.Array[Media]
   
-  @js.native
   trait ReactImageGalleryItem extends StObject {
     
-    var bulletClass: js.UndefOr[String] = js.native
+    var bulletClass: js.UndefOr[String] = js.undefined
     
-    var bulletOnClick: js.UndefOr[js.Function1[/* hasItemItemIndexCurrentIndex */ CurrentIndex, Unit]] = js.native
+    var bulletOnClick: js.UndefOr[js.Function1[/* hasItemItemIndexCurrentIndex */ CurrentIndex, Unit]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var fullscreen: js.UndefOr[String] = js.native
+    var fullscreen: js.UndefOr[String] = js.undefined
     
-    var imageSet: js.UndefOr[ReactImageGalleryImageSet] = js.native
+    var imageSet: js.UndefOr[ReactImageGalleryImageSet] = js.undefined
     
-    var original: String = js.native
+    var original: String
     
-    var originalAlt: js.UndefOr[String] = js.native
+    var originalAlt: js.UndefOr[String] = js.undefined
     
-    var originalClass: js.UndefOr[String] = js.native
+    var originalClass: js.UndefOr[String] = js.undefined
     
-    var originalTitle: js.UndefOr[String] = js.native
+    var originalTitle: js.UndefOr[String] = js.undefined
     
-    var renderItem: js.UndefOr[js.Function1[/* item */ this.type, ReactNode]] = js.native
+    var renderItem: js.UndefOr[js.Function1[/* item */ this.type, ReactNode]] = js.undefined
     
-    var renderThumbInner: js.UndefOr[js.Function1[/* item */ this.type, ReactNode]] = js.native
+    var renderThumbInner: js.UndefOr[js.Function1[/* item */ this.type, ReactNode]] = js.undefined
     
-    var sizes: js.UndefOr[String] = js.native
+    var sizes: js.UndefOr[String] = js.undefined
     
-    var srcSet: js.UndefOr[String] = js.native
+    var srcSet: js.UndefOr[String] = js.undefined
     
-    var thumbnail: js.UndefOr[String] = js.native
+    var thumbnail: js.UndefOr[String] = js.undefined
     
-    var thumbnailAlt: js.UndefOr[String] = js.native
+    var thumbnailAlt: js.UndefOr[String] = js.undefined
     
-    var thumbnailClass: js.UndefOr[String] = js.native
+    var thumbnailClass: js.UndefOr[String] = js.undefined
     
-    var thumbnailLabel: js.UndefOr[String] = js.native
+    var thumbnailLabel: js.UndefOr[String] = js.undefined
     
-    var thumbnailTitle: js.UndefOr[String] = js.native
+    var thumbnailTitle: js.UndefOr[String] = js.undefined
   }
   object ReactImageGalleryItem {
     
@@ -208,120 +206,119 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactImageGalleryProps extends StObject {
     
-    var additionalClass: js.UndefOr[String] = js.native
+    var additionalClass: js.UndefOr[String] = js.undefined
     
-    var autoPlay: js.UndefOr[Boolean] = js.native
+    var autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    var disableKeyDown: js.UndefOr[Boolean] = js.native
+    var disableKeyDown: js.UndefOr[Boolean] = js.undefined
     
-    var disableSwipe: js.UndefOr[Boolean] = js.native
+    var disableSwipe: js.UndefOr[Boolean] = js.undefined
     
-    var disableThumbnailScroll: js.UndefOr[Boolean] = js.native
+    var disableThumbnailScroll: js.UndefOr[Boolean] = js.undefined
     
-    var flickThreshold: js.UndefOr[Double] = js.native
+    var flickThreshold: js.UndefOr[Double] = js.undefined
     
-    var indexSeparator: js.UndefOr[String] = js.native
+    var indexSeparator: js.UndefOr[String] = js.undefined
     
-    var infinite: js.UndefOr[Boolean] = js.native
+    var infinite: js.UndefOr[Boolean] = js.undefined
     
-    var isRTL: js.UndefOr[Boolean] = js.native
+    var isRTL: js.UndefOr[Boolean] = js.undefined
     
-    var items: js.Array[ReactImageGalleryItem] = js.native
+    var items: js.Array[ReactImageGalleryItem]
     
-    var lazyLoad: js.UndefOr[Boolean] = js.native
+    var lazyLoad: js.UndefOr[Boolean] = js.undefined
     
-    var onBeforeSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
+    var onBeforeSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
     
-    var onErrorImageURL: js.UndefOr[String] = js.native
+    var onErrorImageURL: js.UndefOr[String] = js.undefined
     
-    var onImageError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.native
+    var onImageError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
     
-    var onImageLoad: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.native
+    var onImageLoad: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
     
-    var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.native
+    var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
     
-    var onPause: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
+    var onPause: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
+    var onPlay: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
-    var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ Element, Unit]] = js.native
+    var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ Element, Unit]] = js.undefined
     
-    var onSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
+    var onSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
     var onThumbnailClick: js.UndefOr[
         js.Function2[/* event */ MouseEventHandler[HTMLAnchorElement], /* index */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onThumbnailError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.native
+    var onThumbnailError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.native
+    var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.native
+    var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.native
+    var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
     
-    var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.native
+    var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined
     
-    var renderCustomControls: js.UndefOr[js.Function0[ReactNode]] = js.native
+    var renderCustomControls: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
     var renderFullscreenButton: js.UndefOr[
         js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isFullscreen */ Boolean, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var renderItem: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.native
+    var renderItem: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.undefined
     
     var renderLeftNav: js.UndefOr[
         js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* disabled */ Boolean, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
     var renderPlayPauseButton: js.UndefOr[
         js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isPlaying */ Boolean, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
     var renderRightNav: js.UndefOr[
         js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* disabled */ Boolean, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var renderThumbInner: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.native
+    var renderThumbInner: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.undefined
     
-    var showBullets: js.UndefOr[Boolean] = js.native
+    var showBullets: js.UndefOr[Boolean] = js.undefined
     
-    var showFullscreenButton: js.UndefOr[Boolean] = js.native
+    var showFullscreenButton: js.UndefOr[Boolean] = js.undefined
     
-    var showIndex: js.UndefOr[Boolean] = js.native
+    var showIndex: js.UndefOr[Boolean] = js.undefined
     
-    var showNav: js.UndefOr[Boolean] = js.native
+    var showNav: js.UndefOr[Boolean] = js.undefined
     
-    var showPlayButton: js.UndefOr[Boolean] = js.native
+    var showPlayButton: js.UndefOr[Boolean] = js.undefined
     
-    var showThumbnails: js.UndefOr[Boolean] = js.native
+    var showThumbnails: js.UndefOr[Boolean] = js.undefined
     
-    var slideDuration: js.UndefOr[Double] = js.native
+    var slideDuration: js.UndefOr[Double] = js.undefined
     
-    var slideInterval: js.UndefOr[Double] = js.native
+    var slideInterval: js.UndefOr[Double] = js.undefined
     
-    var slideOnThumbnailOver: js.UndefOr[Boolean] = js.native
+    var slideOnThumbnailOver: js.UndefOr[Boolean] = js.undefined
     
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
-    var stopPropagation: js.UndefOr[Boolean] = js.native
+    var stopPropagation: js.UndefOr[Boolean] = js.undefined
     
-    var swipeThreshold: js.UndefOr[Double] = js.native
+    var swipeThreshold: js.UndefOr[Double] = js.undefined
     
-    var swipingTransitionDuration: js.UndefOr[Double] = js.native
+    var swipingTransitionDuration: js.UndefOr[Double] = js.undefined
     
-    var thumbnailPosition: js.UndefOr[top | right | bottom | left] = js.native
+    var thumbnailPosition: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var useBrowserFullscreen: js.UndefOr[Boolean] = js.native
+    var useBrowserFullscreen: js.UndefOr[Boolean] = js.undefined
     
-    var useTranslate3D: js.UndefOr[Boolean] = js.native
+    var useTranslate3D: js.UndefOr[Boolean] = js.undefined
   }
   object ReactImageGalleryProps {
     

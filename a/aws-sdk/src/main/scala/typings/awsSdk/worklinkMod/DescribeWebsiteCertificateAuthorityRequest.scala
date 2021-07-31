@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWebsiteCertificateAuthorityRequest extends StObject {
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
   
   /**
     * A unique identifier for the certificate authority.
     */
-  var WebsiteCaId: Id = js.native
+  var WebsiteCaId: Id
 }
 object DescribeWebsiteCertificateAuthorityRequest {
   

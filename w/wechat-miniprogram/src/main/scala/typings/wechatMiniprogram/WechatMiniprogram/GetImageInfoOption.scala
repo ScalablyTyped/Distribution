@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImageInfoOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[GetImageInfoCompleteCallback] = js.native
+  var complete: js.UndefOr[GetImageInfoCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[GetImageInfoFailCallback] = js.native
+  var fail: js.UndefOr[GetImageInfoFailCallback] = js.undefined
   
   /** 图片的路径，支持网络路径、本地路径、代码包路径 */
-  var src: String = js.native
+  var src: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[GetImageInfoSuccessCallback] = js.native
+  var success: js.UndefOr[GetImageInfoSuccessCallback] = js.undefined
 }
 object GetImageInfoOption {
   

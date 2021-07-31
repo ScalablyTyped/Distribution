@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,21 +16,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XLogHandler.Encoding
   * @since OOo 2.3
   */
-@js.native
-trait FileHandler extends XLogHandler {
+trait FileHandler
+  extends StObject
+     with XLogHandler {
   
   /**
     * creates a log handler whose output is directed to a file given by URL.
     * @param FileURL the URL of the file to be created. This URL is resolved using the {@link com.sun.star.util.PathSubstitution} service. That is, it is allo
     */
-  def create(FileURL: String): Unit = js.native
+  def create(FileURL: String): Unit
   
   /**
     * creates an instance of the log handler, using generic settings
     * @param Settings contains the initial settings for the log handler  The following settings are recognized and supported: `Encoding` - denotes the initial
     * @throws com::sun::star::lang::IllegalArgumentException if `Settings` contains settings whose value is of the wrong type.
     */
-  def createWithSettings(Settings: SeqEquiv[NamedValue]): Unit = js.native
+  def createWithSettings(Settings: SeqEquiv[NamedValue]): Unit
 }
 object FileHandler {
   

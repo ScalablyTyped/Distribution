@@ -3,13 +3,11 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 import typings.firefoxWebextBrowser.browser.events.UrlFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventUrlFilters extends StObject {
   
-  var url: js.Array[UrlFilter] = js.native
+  var url: js.Array[UrlFilter]
 }
 object EventUrlFilters {
   

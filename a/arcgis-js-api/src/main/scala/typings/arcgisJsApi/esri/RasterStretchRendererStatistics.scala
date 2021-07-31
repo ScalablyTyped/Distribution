@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RasterStretchRendererStatistics extends Object {
+trait RasterStretchRendererStatistics
+  extends StObject
+     with Object {
   
   /**
     * The average pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
     */
-  var avg: js.UndefOr[Double] = js.native
+  var avg: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The standard deviation of the pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
     */
-  var stddev: js.UndefOr[Double] = js.native
+  var stddev: js.UndefOr[Double] = js.undefined
 }
 object RasterStretchRendererStatistics {
   

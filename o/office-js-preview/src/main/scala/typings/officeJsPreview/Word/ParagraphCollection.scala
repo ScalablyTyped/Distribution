@@ -7,7 +7,6 @@ import typings.officeJsPreview.Word.Interfaces.ParagraphCollectionData
 import typings.officeJsPreview.Word.Interfaces.ParagraphCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait ParagraphCollection extends ClientObject {
+trait ParagraphCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -60,7 +61,7 @@ trait ParagraphCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ParagraphCollection = js.native
-  def load(options: ParagraphCollectionLoadOptions with CollectionLoadOptions): ParagraphCollection = js.native
+  def load(options: ParagraphCollectionLoadOptions & CollectionLoadOptions): ParagraphCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ParagraphCollection = js.native
   def load(propertyNames: String): ParagraphCollection = js.native
   def load(propertyNames: js.Array[String]): ParagraphCollection = js.native

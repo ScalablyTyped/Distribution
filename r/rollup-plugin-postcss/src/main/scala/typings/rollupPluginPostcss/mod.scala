@@ -7,56 +7,56 @@ import typings.rollupPluginPostcss.anon.InsertAt
 import typings.rollupPluginPostcss.rollupPluginPostcssStrings.`inline`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-postcss", JSImport.Default)
+  @JSImport("rollup-plugin-postcss", JSImport.Namespace)
   @js.native
-  def default(): Plugin = js.native
-  @JSImport("rollup-plugin-postcss", JSImport.Default)
-  @js.native
-  def default(options: PostCssPluginOptions): Plugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  @scala.inline
+  def default(options: PostCssPluginOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   trait PostCssPluginOptions extends StObject {
     
-    var autoModules: js.UndefOr[Boolean] = js.native
+    var autoModules: js.UndefOr[Boolean] = js.undefined
     
-    var config: js.UndefOr[Boolean | Ctx] = js.native
+    var config: js.UndefOr[Boolean | Ctx] = js.undefined
     
-    var exec: js.UndefOr[Boolean] = js.native
+    var exec: js.UndefOr[Boolean] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var extract: js.UndefOr[Boolean | String] = js.native
+    var extract: js.UndefOr[Boolean | String] = js.undefined
     
     var inject: js.UndefOr[
         Boolean | InsertAt | (js.Function2[/* cssVariableName */ String, /* fileId */ String, String])
-      ] = js.native
+      ] = js.undefined
     
-    var loaders: js.UndefOr[js.Array[_]] = js.native
+    var loaders: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var minimize: js.UndefOr[Boolean | CssNanoOptions] = js.native
+    var minimize: js.UndefOr[Boolean | CssNanoOptions] = js.undefined
     
-    var modules: js.UndefOr[Boolean | js.Any] = js.native
+    var modules: js.UndefOr[Boolean | js.Any] = js.undefined
     
-    var name: js.UndefOr[js.Array[_ | js.Array[_]]] = js.native
+    var name: js.UndefOr[js.Array[js.Any | js.Array[js.Any]]] = js.undefined
     
-    var namedExports: js.UndefOr[(js.Function1[/* name */ String, String]) | Boolean] = js.native
+    var namedExports: js.UndefOr[(js.Function1[/* name */ String, String]) | Boolean] = js.undefined
     
-    var onImport: js.UndefOr[js.Function1[/* id */ js.Any, Unit]] = js.native
+    var onImport: js.UndefOr[js.Function1[/* id */ js.Any, Unit]] = js.undefined
     
-    var parser: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | String] = js.native
+    var parser: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | String] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[_]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var sourceMap: js.UndefOr[Boolean | `inline`] = js.native
+    var sourceMap: js.UndefOr[Boolean | `inline`] = js.undefined
     
-    var stringifier: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | String] = js.native
+    var stringifier: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | String] = js.undefined
     
-    var syntax: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | String] = js.native
+    var syntax: js.UndefOr[(js.Function1[/* repeated */ js.Any, Unit]) | String] = js.undefined
   }
   object PostCssPluginOptions {
     
@@ -114,7 +114,7 @@ object mod {
       def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
       @scala.inline
-      def setLoaders(value: js.Array[_]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      def setLoaders(value: js.Array[js.Any]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLoadersUndefined: Self = StObject.set(x, "loaders", js.undefined)
@@ -135,7 +135,7 @@ object mod {
       def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
       @scala.inline
-      def setName(value: js.Array[_ | js.Array[_]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      def setName(value: js.Array[js.Any | js.Array[js.Any]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -168,7 +168,7 @@ object mod {
       def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)

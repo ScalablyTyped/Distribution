@@ -30,7 +30,6 @@ import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -45,6 +44,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 43.
   */
 object vpnProvider {
+  
+  @JSGlobal("chrome.vpnProvider")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The enum is used by the platform to notify the client of the VPN session status.
@@ -187,21 +190,18 @@ object vpnProvider {
     * @param callback Called when the configuration is created or if there is an error.
     * Parameter id: A unique ID for the created configuration, empty string on failure.
     */
-  @JSGlobal("chrome.vpnProvider.createConfig")
-  @js.native
-  def createConfig(name: String, callback: js.Function1[/* id */ String, Unit]): Unit = js.native
+  @scala.inline
+  def createConfig(name: String, callback: js.Function1[/* id */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Destroys a VPN configuration created by the extension.
     * @param id ID of the VPN configuration to destroy.
     * @param callback Called when the configuration is destroyed or if there is an error.
     */
-  @JSGlobal("chrome.vpnProvider.destroyConfig")
-  @js.native
-  def destroyConfig(id: String): Unit = js.native
-  @JSGlobal("chrome.vpnProvider.destroyConfig")
-  @js.native
-  def destroyConfig(id: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def destroyConfig(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def destroyConfig(id: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Notifies the VPN session state to the platform. This will succeed only when the VPN session is owned by the extension.
@@ -211,8 +211,7 @@ object vpnProvider {
     * @see enum VpnConnectionState
     * @param callback Called when the notification is complete or if there is an error.
     */
-  @JSGlobal("chrome.vpnProvider.notifyConnectionStateChanged")
-  @js.native
+  @scala.inline
   def notifyConnectionStateChanged(
     state: ToStringLiteral[
       CONNECTEDFAILURE, 
@@ -222,9 +221,8 @@ object vpnProvider {
         connected__ | failure_
       ]
     ]
-  ): Unit = js.native
-  @JSGlobal("chrome.vpnProvider.notifyConnectionStateChanged")
-  @js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def notifyConnectionStateChanged(
     state: ToStringLiteral[
       CONNECTEDFAILURE, 
@@ -235,7 +233,7 @@ object vpnProvider {
       ]
     ],
     callback: js.Function0[Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Triggered when a configuration is created by the platform for the extension. */
   @JSGlobal("chrome.vpnProvider.onConfigCreated")
@@ -297,19 +295,16 @@ object vpnProvider {
     * @param data The IP packet to be sent to the platform.
     * @param callback Called when the packet is sent or if there is an error.
     */
-  @JSGlobal("chrome.vpnProvider.sendPacket")
-  @js.native
-  def sendPacket(data: ArrayBuffer): Unit = js.native
-  @JSGlobal("chrome.vpnProvider.sendPacket")
-  @js.native
-  def sendPacket(data: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def sendPacket(data: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def sendPacket(data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the parameters for the VPN session. This should be called immediately after 'connected' is received from the platform. This will succeed only when the VPN session is owned by the extension.
     * @param parameters The parameters for the VPN session.
     * @param callback Called when the parameters are set or if there is an error.
     */
-  @JSGlobal("chrome.vpnProvider.setParameters")
-  @js.native
-  def setParameters(parameters: VpnSessionParameters, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setParameters(parameters: VpnSessionParameters, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParameters")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,23 +2,23 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BasePermissions extends ClientValueObject {
+trait BasePermissions
+  extends StObject
+     with ClientValueObject {
   
-  def clear(perm: PermissionKind): Unit = js.native
+  def clear(perm: PermissionKind): Unit
   
-  def clearAll(): Unit = js.native
+  def clearAll(): Unit
   
-  def equals(perm: BasePermissions): Boolean = js.native
+  def equals(perm: BasePermissions): Boolean
   
-  def has(perm: PermissionKind): Boolean = js.native
+  def has(perm: PermissionKind): Boolean
   
-  def hasPermissions(high: Double, low: Double): Boolean = js.native
+  def hasPermissions(high: Double, low: Double): Boolean
   
-  def set(perm: PermissionKind): Unit = js.native
+  def set(perm: PermissionKind): Unit
 }
 object BasePermissions {
   

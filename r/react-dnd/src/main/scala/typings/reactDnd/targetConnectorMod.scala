@@ -4,14 +4,15 @@ import typings.dndCore.interfacesMod.Backend
 import typings.reactDnd.sourceConnectorMod.Connector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object targetConnectorMod {
   
   @JSImport("react-dnd/lib/common/TargetConnector", "TargetConnector")
   @js.native
-  class TargetConnector protected () extends Connector {
+  class TargetConnector protected ()
+    extends StObject
+       with Connector {
     def this(backend: Backend) = this()
     
     val backend: js.Any = js.native

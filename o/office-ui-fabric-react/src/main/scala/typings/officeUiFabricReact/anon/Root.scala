@@ -3,13 +3,11 @@ package typings.officeUiFabricReact.anon
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Root extends StObject {
   
-  var root: IStyle = js.native
+  var root: IStyle
 }
 object Root {
   

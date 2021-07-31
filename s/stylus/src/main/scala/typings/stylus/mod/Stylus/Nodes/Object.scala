@@ -4,35 +4,35 @@ import typings.stylus.anon.Column
 import typings.stylus.mod.Stylus.Dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Object extends Node {
+trait Object
+  extends StObject
+     with Node {
   
   /**
     * Get `key`.
     */
-  def get(key: java.lang.String): Node = js.native
+  def get(key: java.lang.String): Node
   
   /**
     * Has `key`?
     */
-  def has(key: java.lang.String): scala.Boolean = js.native
+  def has(key: java.lang.String): scala.Boolean
   
-  var length: Double = js.native
+  var length: Double
   
   /**
     * Set `key` to `val`.
     */
-  def set(key: java.lang.String, value: Node): this.type = js.native
+  def set(key: java.lang.String, value: Node): this.type
   
   /**
     * Convert object to string with properties.
     */
-  def toBlock(): java.lang.String = js.native
+  def toBlock(): java.lang.String
   
-  var vals: Dictionary[Node] = js.native
+  var vals: Dictionary[Node]
 }
 object Object {
   

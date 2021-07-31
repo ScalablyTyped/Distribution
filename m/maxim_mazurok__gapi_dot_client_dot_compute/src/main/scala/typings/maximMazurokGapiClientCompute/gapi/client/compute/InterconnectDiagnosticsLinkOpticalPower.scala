@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterconnectDiagnosticsLinkOpticalPower extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait InterconnectDiagnosticsLinkOpticalPower extends StObject {
     * - LOW_ALARM: The value has crossed below the low alarm threshold.
     * - HIGH_ALARM: The value has crossed above the high alarm threshold.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the current receiving or transmitting optical power, read in dBm. Take a known good optical value, give it a 10% margin and trigger warnings relative to that value. In
     * general, a -7dBm warning and a -11dBm alarm are good optical value estimates for most links.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object InterconnectDiagnosticsLinkOpticalPower {
   

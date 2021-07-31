@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (infinities or NaNs) in the population of values, as this will render the
   * mean and sum_of_squared_deviation fields meaningless.
   */
-@js.native
 trait SchemaDistribution extends StObject {
   
   /**
@@ -32,38 +30,38 @@ trait SchemaDistribution extends StObject {
     * size is less than N, then the remaining buckets are assigned values of
     * zero.
     */
-  var bucketCounts: js.UndefOr[js.Array[String]] = js.native
+  var bucketCounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required in the Stackdriver Monitoring API v3. Defines the histogram
     * bucket boundaries.
     */
-  var bucketOptions: js.UndefOr[SchemaBucketOptions] = js.native
+  var bucketOptions: js.UndefOr[SchemaBucketOptions] = js.undefined
   
   /**
     * The number of values in the population. Must be non-negative. This value
     * must equal the sum of the values in bucket_counts if a histogram is
     * provided.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * Must be in increasing order of value field.
     */
-  var exemplars: js.UndefOr[js.Array[SchemaExemplar]] = js.native
+  var exemplars: js.UndefOr[js.Array[SchemaExemplar]] = js.undefined
   
   /**
     * The arithmetic mean of the values in the population. If count is zero
     * then this field must be zero.
     */
-  var mean: js.UndefOr[Double] = js.native
+  var mean: js.UndefOr[Double] = js.undefined
   
   /**
     * If specified, contains the range of the population values. The field must
     * not be present if the count is zero. This field is presently ignored by
     * the Stackdriver Monitoring API v3.
     */
-  var range: js.UndefOr[SchemaRange] = js.native
+  var range: js.UndefOr[SchemaRange] = js.undefined
   
   /**
     * The sum of squared deviations from the mean of the values in the
@@ -72,7 +70,7 @@ trait SchemaDistribution extends StObject {
     * edition describes Welford&#39;s method for accumulating this sum in one
     * pass.If count is zero then this field must be zero.
     */
-  var sumOfSquaredDeviation: js.UndefOr[Double] = js.native
+  var sumOfSquaredDeviation: js.UndefOr[Double] = js.undefined
 }
 object SchemaDistribution {
   

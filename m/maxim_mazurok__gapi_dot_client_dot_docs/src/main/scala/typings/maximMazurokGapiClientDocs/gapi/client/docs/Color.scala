@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
   /** The RGB color value. */
-  var rgbColor: js.UndefOr[RgbColor] = js.native
+  var rgbColor: js.UndefOr[RgbColor] = js.undefined
 }
 object Color {
   

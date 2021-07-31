@@ -3,13 +3,11 @@ package typings.sequelize.anon
 import typings.sequelize.mod.DataTypeAbstract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: DataTypeAbstract = js.native
+  var `type`: DataTypeAbstract
 }
 object Type {
   

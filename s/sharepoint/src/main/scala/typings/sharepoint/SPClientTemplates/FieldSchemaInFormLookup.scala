@@ -3,37 +3,37 @@ package typings.sharepoint.SPClientTemplates
 import typings.sharepoint.anon.LookupId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents schema for a Lookup field in list form or in list view in grid mode */
-@js.native
-trait FieldSchemaInFormLookup extends FieldSchemaInForm {
+trait FieldSchemaInFormLookup
+  extends StObject
+     with FieldSchemaInForm {
   
   /** Specifies if the field allows multiple values */
-  var AllowMultipleValues: Boolean = js.native
+  var AllowMultipleValues: Boolean
   
   /** Returns base url for a list display form, e.g. "http:// portal/web/_layouts/15/listform.aspx?PageType=4"
     You must add "ListId" (Guid of the list) and "ID" (integer Id of the item) parameters in order to use this Url */
-  var BaseDisplayFormUrl: String = js.native
+  var BaseDisplayFormUrl: String
   
   /** Number of choices. Appears only for Lookup field. */
-  var ChoiceCount: Double = js.native
+  var ChoiceCount: Double
   
   /** List of choices for this field. */
-  var Choices: js.Array[LookupId] = js.native
+  var Choices: js.Array[LookupId]
   
   /** Indicates if the field is a dependent lookup */
-  var DependentLookup: Boolean = js.native
+  var DependentLookup: Boolean
   
-  var LookupListId: String = js.native
+  var LookupListId: String
   
   /** Returns string representation of a number that represents the current value for the "List Throttle Limit" web application setting.
     Only appears if Throttled property is true, i.e. the target lookup list is throttled. */
-  var MaxQueryResult: String = js.native
+  var MaxQueryResult: String
   
   /** Indicates wherever the lookup list is throttled (contains more items than value of the "List Throttle Limit" setting). */
-  var Throttled: Boolean = js.native
+  var Throttled: Boolean
 }
 object FieldSchemaInFormLookup {
   

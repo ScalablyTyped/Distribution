@@ -10,9 +10,9 @@ A collection of utilities for async iterables. Designed to replace your streams.
 | ------------------ | :-------------: |
 | Full name          | streaming-iterables |
 | Keywords           | async, generators, async generators, async iterables, iterators, async iterators, promise, stream, fp, transform, generator functions, async generator functions, bluestream, ramda |
-| # releases         | 24 |
-| # dependents       | 23 |
-| # downloads        | 257970 |
+| # releases         | 14 |
+| # dependents       | 33 |
+| # downloads        | 377651 |
 | # stars            | 0 |
 
 ## Links

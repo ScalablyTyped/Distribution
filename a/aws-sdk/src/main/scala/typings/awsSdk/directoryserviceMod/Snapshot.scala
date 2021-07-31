@@ -2,41 +2,39 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
   /**
     * The directory identifier.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The descriptive name of the snapshot.
     */
-  var Name: js.UndefOr[SnapshotName] = js.native
+  var Name: js.UndefOr[SnapshotName] = js.undefined
   
   /**
     * The snapshot identifier.
     */
-  var SnapshotId: js.UndefOr[typings.awsSdk.directoryserviceMod.SnapshotId] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.directoryserviceMod.SnapshotId] = js.undefined
   
   /**
     * The date and time that the snapshot was taken.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StartTime] = js.native
+  var StartTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StartTime] = js.undefined
   
   /**
     * The snapshot status.
     */
-  var Status: js.UndefOr[SnapshotStatus] = js.native
+  var Status: js.UndefOr[SnapshotStatus] = js.undefined
   
   /**
     * The snapshot type.
     */
-  var Type: js.UndefOr[SnapshotType] = js.native
+  var Type: js.UndefOr[SnapshotType] = js.undefined
 }
 object Snapshot {
   

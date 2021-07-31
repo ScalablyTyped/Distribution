@@ -2,20 +2,18 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The available logging options for a firewall rule.
   */
-@js.native
 trait SchemaFirewallLogConfig extends StObject {
   
   /**
     * This field denotes whether to enable logging for a particular firewall
     * rule.
     */
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaFirewallLogConfig {
   

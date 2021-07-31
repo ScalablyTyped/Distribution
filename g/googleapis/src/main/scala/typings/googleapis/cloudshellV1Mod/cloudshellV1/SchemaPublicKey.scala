@@ -2,24 +2,22 @@ package typings.googleapis.cloudshellV1Mod.cloudshellV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A public SSH key, corresponding to a private SSH key held by the client.
   */
-@js.native
 trait SchemaPublicKey extends StObject {
   
   /**
     * Required. Format of this key&#39;s content.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Content of this key.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Full name of this resource, in the format
@@ -30,7 +28,7 @@ trait SchemaPublicKey extends StObject {
     * example,
     * `users/someone@example.com/environments/default/publicKeys/myKey`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaPublicKey {
   

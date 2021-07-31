@@ -17,53 +17,51 @@ import typings.std.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabNodeMod extends Shortcut {
   
   @JSImport("rc-tabs/es/TabNavList/TabNode", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[TabNodeProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[TabNodeProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
   trait TabNodeProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[EditableConfig] = js.native
+    var editable: js.UndefOr[EditableConfig] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
     var onClick: js.UndefOr[
         js.Function1[/* e */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onFocus: FocusEventHandler[Element] = js.native
+    var onFocus: FocusEventHandler[Element]
     
-    def onRemove(): Unit = js.native
+    def onRemove(): Unit
     
     var onResize: js.UndefOr[
         js.Function4[/* width */ Double, /* height */ Double, /* left */ Double, /* top */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var removeAriaLabel: js.UndefOr[String] = js.native
+    var removeAriaLabel: js.UndefOr[String] = js.undefined
     
-    var removeIcon: js.UndefOr[ReactNode] = js.native
+    var removeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var renderWrapper: js.UndefOr[js.Function1[/* node */ ReactElement, ReactElement]] = js.native
+    var renderWrapper: js.UndefOr[js.Function1[/* node */ ReactElement, ReactElement]] = js.undefined
     
-    var rtl: Boolean = js.native
+    var rtl: Boolean
     
-    var tab: Tab = js.native
+    var tab: Tab
     
-    var tabBarGutter: js.UndefOr[Double] = js.native
+    var tabBarGutter: js.UndefOr[Double] = js.undefined
     
-    var tabPosition: TabPosition = js.native
+    var tabPosition: TabPosition
   }
   object TabNodeProps {
     
@@ -159,8 +157,8 @@ object tabNodeMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[TabNodeProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[TabNodeProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `tabNodeMod.foo` */
-  override def _to: ForwardRefExoticComponent[TabNodeProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[TabNodeProps & RefAttributes[HTMLDivElement]] = default
 }

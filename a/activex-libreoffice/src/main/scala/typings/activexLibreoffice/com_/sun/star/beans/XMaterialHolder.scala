@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,20 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XIntrospectionAccess} should also support {@link XMaterialHolder} to give access to this material.
   * @see XIntrospectionAccess
   */
-@js.native
-trait XMaterialHolder extends XInterface {
+trait XMaterialHolder
+  extends StObject
+     with XInterface {
   
   /**
     * returns the material that is connected to this (tool-) object
     * @returns the material that is connected to this (tool-) object.
     */
-  val Material: js.Any = js.native
+  val Material: js.Any
   
   /**
     * returns the material that is connected to this (tool-) object
     * @returns the material that is connected to this (tool-) object.
     */
-  def getMaterial(): js.Any = js.native
+  def getMaterial(): js.Any
 }
 object XMaterialHolder {
   

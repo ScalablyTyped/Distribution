@@ -4,17 +4,15 @@ import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeUIContext extends StObject {
   
-  var colorMode: String = js.native
+  var colorMode: String
   
-  var setColorMode: Dispatch[SetStateAction[String]] = js.native
+  var setColorMode: Dispatch[SetStateAction[String]]
   
-  var theme: Theme = js.native
+  var theme: Theme
 }
 object ThemeUIContext {
   

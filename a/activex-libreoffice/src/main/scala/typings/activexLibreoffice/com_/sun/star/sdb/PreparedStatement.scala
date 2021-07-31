@@ -22,16 +22,15 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a precompiled SQL statement. The service differs only in the access of the columns and parameters to the service {@link
   * com.sun.star.sdbc.PreparedStatement} .
   */
-@js.native
 trait PreparedStatement
-  extends typings.activexLibreoffice.com_.sun.star.sdbc.PreparedStatement
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbc.PreparedStatement
      with XColumnsSupplier
 object PreparedStatement {
   

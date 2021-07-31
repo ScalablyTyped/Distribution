@@ -3,7 +3,6 @@ package typings.chromeApps.chrome.system
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //////////////////////
@@ -15,17 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object network {
   
-  @js.native
   trait NetworkInterface extends StObject {
     
     /** The available IPv4/6 address. */
-    var address: String = js.native
+    var address: String
     
     /** The underlying name of the adapter. On *nix, this will typically be "eth0", "wlan0", etc. */
-    var name: String = js.native
+    var name: String
     
     /** The prefix length */
-    var prefixLength: integer = js.native
+    var prefixLength: integer
   }
   object NetworkInterface {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociatePrincipalWithPortfolioInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The portfolio identifier.
     */
-  var PortfolioId: Id = js.native
+  var PortfolioId: Id
   
   /**
     * The ARN of the principal (IAM user, role, or group).
     */
-  var PrincipalARN: typings.awsSdk.servicecatalogMod.PrincipalARN = js.native
+  var PrincipalARN: typings.awsSdk.servicecatalogMod.PrincipalARN
   
   /**
     * The principal type. The supported value is IAM.
     */
-  var PrincipalType: typings.awsSdk.servicecatalogMod.PrincipalType = js.native
+  var PrincipalType: typings.awsSdk.servicecatalogMod.PrincipalType
 }
 object AssociatePrincipalWithPortfolioInput {
   

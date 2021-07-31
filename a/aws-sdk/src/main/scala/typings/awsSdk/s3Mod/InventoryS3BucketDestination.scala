@@ -2,36 +2,34 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryS3BucketDestination extends StObject {
   
   /**
     * The account ID that owns the destination S3 bucket. If no account ID is provided, the owner is not validated before exporting data.    Although this value is optional, we strongly recommend that you set it to help prevent problems if the destination bucket ownership changes.  
     */
-  var AccountId: js.UndefOr[typings.awsSdk.s3Mod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.s3Mod.AccountId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the bucket where inventory results will be published.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * Contains the type of server-side encryption used to encrypt the inventory results.
     */
-  var Encryption: js.UndefOr[InventoryEncryption] = js.native
+  var Encryption: js.UndefOr[InventoryEncryption] = js.undefined
   
   /**
     * Specifies the output format of the inventory results.
     */
-  var Format: InventoryFormat = js.native
+  var Format: InventoryFormat
   
   /**
     * The prefix that is prepended to all inventory results.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
 }
 object InventoryS3BucketDestination {
   

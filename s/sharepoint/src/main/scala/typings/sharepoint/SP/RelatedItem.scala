@@ -2,35 +2,35 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RelatedItem extends ClientValueObject {
+trait RelatedItem
+  extends StObject
+     with ClientValueObject {
   
-  def get_iconUrl(): String = js.native
+  def get_iconUrl(): String
   
-  def get_itemId(): Double = js.native
+  def get_itemId(): Double
   
-  def get_listId(): String = js.native
+  def get_listId(): String
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def get_webId(): String = js.native
+  def get_webId(): String
   
-  def set_iconUrl(value: String): Unit = js.native
+  def set_iconUrl(value: String): Unit
   
-  def set_itemId(value: Double): Unit = js.native
+  def set_itemId(value: Double): Unit
   
-  def set_listId(value: String): Unit = js.native
+  def set_listId(value: String): Unit
   
-  def set_title(value: String): Unit = js.native
+  def set_title(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
   
-  def set_webId(value: String): Unit = js.native
+  def set_webId(value: String): Unit
 }
 object RelatedItem {
   

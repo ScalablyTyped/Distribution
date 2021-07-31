@@ -3,10 +3,13 @@ package typings.reactNativeSquareInAppPayments.mod
 import typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.Light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SQIPCardEntry {
+  
+  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Called in the `onCardNonceRequestSuccess` callback. Closes the card entry form.
@@ -16,9 +19,8 @@ object SQIPCardEntry {
     * call completeCardEntry after getting the card nonce from the `onCardNonceRequestSuccess` cardDetails parameter.
     * @param onCardEntryComplete - The callback invoked when card entry is completed and is closed.
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry.completeCardEntry")
-  @js.native
-  def completeCardEntry(onCardEntryComplete: CardEntryCompleteCallback): js.Promise[Unit] = js.native
+  @scala.inline
+  def completeCardEntry(onCardEntryComplete: CardEntryCompleteCallback): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeCardEntry")(onCardEntryComplete.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Sets the customization theme for the card entry view controller in the native layer.
@@ -26,9 +28,8 @@ object SQIPCardEntry {
     * @platform IOS
     * @param themeConfiguration - An object that defines the theme of an iOS card entry view controller.
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry.setIOSCardEntryTheme")
-  @js.native
-  def setIOSCardEntryTheme(themeConfiguration: ThemeIOS): js.Promise[Unit] = js.native
+  @scala.inline
+  def setIOSCardEntryTheme(themeConfiguration: ThemeIOS): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setIOSCardEntryTheme")(themeConfiguration.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Called in the `onCardNonceRequestSuccess` callback. Returns execution to the card entry form with an error string to be shown in the form.
@@ -36,17 +37,15 @@ object SQIPCardEntry {
     * If callback logic makes a server call to request a payment with the supplied nonce, this method is called after getting an error response from the server call.
     * @param errorMessage - The error message to be shown in the card entry form.
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry.showCardNonceProcessingError")
-  @js.native
-  def showCardNonceProcessingError(errorMessage: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def showCardNonceProcessingError(errorMessage: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("showCardNonceProcessingError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry.startCardEntryFlow")
-  @js.native
+  @scala.inline
   def startCardEntryFlow(
     cardEntryConfig: Null,
     onCardNonceRequestSuccess: CardEntryNonceRequestSuccessCallback,
     onCardEntryCancel: CardEntryCancelCallback
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startCardEntryFlow")(cardEntryConfig.asInstanceOf[js.Any], onCardNonceRequestSuccess.asInstanceOf[js.Any], onCardEntryCancel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   // Functions
   /**
     * Displays a full-screen card entry view.
@@ -55,22 +54,20 @@ object SQIPCardEntry {
     * @param onCardNonceRequestSuccess - Invoked when card entry is completed and the SDK has processed the payment card information.
     * @param onCardEntryCancel - Invoked when card entry is canceled.
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry.startCardEntryFlow")
-  @js.native
+  @scala.inline
   def startCardEntryFlow(
     cardEntryConfig: CardEntryConfig,
     onCardNonceRequestSuccess: CardEntryNonceRequestSuccessCallback,
     onCardEntryCancel: CardEntryCancelCallback
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startCardEntryFlow")(cardEntryConfig.asInstanceOf[js.Any], onCardNonceRequestSuccess.asInstanceOf[js.Any], onCardEntryCancel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry.startCardEntryFlowWithBuyerVerification")
-  @js.native
+  @scala.inline
   def startCardEntryFlowWithBuyerVerification(
     cardEntryConfig: Null,
     onBuyerVerificationSuccess: BuyerVerificationSuccessCallback,
     onBuyerVerificationFailure: BuyerVerificationErrorCallback,
     onCardEntryCancel: CardEntryCancelCallback
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startCardEntryFlowWithBuyerVerification")(cardEntryConfig.asInstanceOf[js.Any], onBuyerVerificationSuccess.asInstanceOf[js.Any], onBuyerVerificationFailure.asInstanceOf[js.Any], onCardEntryCancel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /**
     * Displays a full-screen card entry view with buyer verification flow enabled.
     * The method takes one configuration object and three call back parameters which correspond to the possible results of the request
@@ -79,27 +76,25 @@ object SQIPCardEntry {
     * @param onBuyerVerificationFailure - Invoked when card entry with buyer verification encounters errors.
     * @param onCardEntryCancel - Invoked when card entry is canceled.
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPCardEntry.startCardEntryFlowWithBuyerVerification")
-  @js.native
+  @scala.inline
   def startCardEntryFlowWithBuyerVerification(
     cardEntryConfig: CardEntryConfig,
     onBuyerVerificationSuccess: BuyerVerificationSuccessCallback,
     onBuyerVerificationFailure: BuyerVerificationErrorCallback,
     onCardEntryCancel: CardEntryCancelCallback
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startCardEntryFlowWithBuyerVerification")(cardEntryConfig.asInstanceOf[js.Any], onBuyerVerificationSuccess.asInstanceOf[js.Any], onBuyerVerificationFailure.asInstanceOf[js.Any], onCardEntryCancel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /** Represents the result of a successful buyer verification request. */
-  @js.native
   trait BuyerVerificationDetails extends StObject {
     
     /** Non-confidential details about the entered card, such as the brand and last four digits of the card number. */
-    var card: Card = js.native
+    var card: Card
     
     /** A one-time-use payment token that can be used with the Square Connect APIs to charge the card or save the card information. */
-    var nonce: String = js.native
+    var nonce: String
     
     /** The token representing a verified buyer. */
-    var token: String = js.native
+    var token: String
   }
   object BuyerVerificationDetails {
     
@@ -146,93 +141,92 @@ object SQIPCardEntry {
   type CardEntryCompleteCallback = js.Function0[Unit]
   
   // Types
-  @js.native
   trait CardEntryConfig extends StObject {
     
     /**
       * The street address lines of the contact address.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var addressLines: js.UndefOr[js.Array[String]] = js.native
+    var addressLines: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Payment amount
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates the action (Charge or Store) that will be performed onto the card after retrieving the verification token.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var buyerAction: js.UndefOr[String] = js.native
+    var buyerAction: js.UndefOr[String] = js.undefined
     
     /**
       * The city name of the contact address.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates that the customer must enter the postal code associated with their payment card. When false, the postal code field will not be displayed. Defaults to true.
       * A Postal code must be collected for processing payments for Square accounts based in the United States, Canada, and United Kingdom.
       * Disabling postal code collection in those regions will result in all credit card transactions being declined.
       */
-    var collectPostalCode: Boolean = js.native
+    var collectPostalCode: Boolean
     
     /**
       * A 2-letter string containing the ISO 3166-1 country code of the contact address.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var countryCode: js.UndefOr[String] = js.native
+    var countryCode: js.UndefOr[String] = js.undefined
     
     /**
       * ISO currency code of the payment amount.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var currencyCode: js.UndefOr[String] = js.native
+    var currencyCode: js.UndefOr[String] = js.undefined
     
     /**
       * Email address of the contact.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * Last name of the contact.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var familyName: js.UndefOr[String] = js.native
+    var familyName: js.UndefOr[String] = js.undefined
     
     /**
       * Given name of the contact.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var givenName: js.UndefOr[String] = js.native
+    var givenName: js.UndefOr[String] = js.undefined
     
     /**
       * The telephone number of the contact.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
     /**
       * The postal code of the contact address.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var postalCode: js.UndefOr[String] = js.native
+    var postalCode: js.UndefOr[String] = js.undefined
     
     /**
       * The applicable administrative region (e.g., province, state) of the contact address.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
     /**
       * The location that is being verified against.
       * Should be specified if calling `startCardEntryFlowWithBuyerVerification` method.
       */
-    var squareLocationId: js.UndefOr[String] = js.native
+    var squareLocationId: js.UndefOr[String] = js.undefined
   }
   object CardEntryConfig {
     
@@ -338,12 +332,11 @@ object SQIPCardEntry {
     */
   type CardEntryNonceRequestSuccessCallback = js.Function1[/* cardDetails */ CardDetails, Unit]
   
-  @js.native
   trait Font extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object Font {
     
@@ -366,16 +359,15 @@ object SQIPCardEntry {
   
   type KeyboardAppearance = Light | String
   
-  @js.native
   trait RGBAColor extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGBAColor {
     
@@ -403,44 +395,43 @@ object SQIPCardEntry {
   }
   
   /** Encapsulates options used to style the iOS native card entry view controller. */
-  @js.native
   trait ThemeIOS extends StObject {
     
     /** The background color of the card entry view controller. */
-    var backgroundColor: js.UndefOr[RGBAColor] = js.native
+    var backgroundColor: js.UndefOr[RGBAColor] = js.undefined
     
     /** The text color when the text is invalid. */
-    var errorColor: js.UndefOr[RGBAColor] = js.native
+    var errorColor: js.UndefOr[RGBAColor] = js.undefined
     
     /** The text field font. */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /** The fill color for text fields. */
-    var foregroundColor: js.UndefOr[RGBAColor] = js.native
+    var foregroundColor: js.UndefOr[RGBAColor] = js.undefined
     
     /** The appearance of the keyboard. */
-    var keyboardAppearance: js.UndefOr[KeyboardAppearance] = js.native
+    var keyboardAppearance: js.UndefOr[KeyboardAppearance] = js.undefined
     
     /** The text color used to display informational messages. */
-    var messageColor: js.UndefOr[RGBAColor] = js.native
+    var messageColor: js.UndefOr[RGBAColor] = js.undefined
     
     /** The text field placeholder text color. */
-    var placeholderTextColor: js.UndefOr[RGBAColor] = js.native
+    var placeholderTextColor: js.UndefOr[RGBAColor] = js.undefined
     
     /** The save button font. */
-    var saveButtonFont: js.UndefOr[Font] = js.native
+    var saveButtonFont: js.UndefOr[Font] = js.undefined
     
     /** The save button text color when enabled. */
-    var saveButtonTextColor: js.UndefOr[RGBAColor] = js.native
+    var saveButtonTextColor: js.UndefOr[RGBAColor] = js.undefined
     
     /** The text of the entry completion button */
-    var saveButtonTitle: js.UndefOr[String] = js.native
+    var saveButtonTitle: js.UndefOr[String] = js.undefined
     
     /** The text field text color. */
-    var textColor: js.UndefOr[RGBAColor] = js.native
+    var textColor: js.UndefOr[RGBAColor] = js.undefined
     
     /** The tint color reflected in the text field cursor and submit button background color when enabled. */
-    var tintColor: js.UndefOr[RGBAColor] = js.native
+    var tintColor: js.UndefOr[RGBAColor] = js.undefined
   }
   object ThemeIOS {
     

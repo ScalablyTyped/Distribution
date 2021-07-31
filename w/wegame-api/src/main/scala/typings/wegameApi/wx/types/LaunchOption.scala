@@ -2,32 +2,30 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // --启动参数
-@js.native
 trait LaunchOption extends StObject {
   
   /**
     * 当前小游戏是否被显示在聊天顶部
     */
-  var isSticky: Boolean = js.native
+  var isSticky: Boolean
   
   /**
     * 启动参数
     */
-  var query: js.Any = js.native
+  var query: js.Any
   
   /**
     * 场景值
     */
-  var scene: Double = js.native
+  var scene: Double
   
   /**
     * 票据
     */
-  var shareTicket: String = js.native
+  var shareTicket: String
 }
 object LaunchOption {
   

@@ -3,19 +3,17 @@ package typings.angularOdataResources.OData
 import typings.angularOdataResources.anon.Add
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Operators extends StObject {
   
-  def convert(from: String): js.Any = js.native
+  def convert(from: String): js.Any
   
-  var operators: Add = js.native
+  var operators: Add
   
-  var rtrim: js.Any = js.native
+  var rtrim: js.Any
   
-  /* private */ def trim(value: js.Any): js.Any = js.native
+  /* private */ def trim(value: js.Any): js.Any
 }
 object Operators {
   

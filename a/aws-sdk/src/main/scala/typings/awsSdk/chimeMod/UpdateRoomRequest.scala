@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRoomRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The room name.
     */
-  var Name: js.UndefOr[SensitiveString] = js.native
+  var Name: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The room ID.
     */
-  var RoomId: NonEmptyString = js.native
+  var RoomId: NonEmptyString
 }
 object UpdateRoomRequest {
   

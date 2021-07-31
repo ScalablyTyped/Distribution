@@ -9,77 +9,76 @@ import typings.mochaSugarFree.mod.TestCase
 import typings.mochaSugarFree.mod.TestCaseWithDone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  async :false | undefined,   fn :mocha-sugar-free.mocha-sugar-free.TestCase | undefined} */
-  @js.native
   trait Optionsasyncfalseundefine
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
     /**
       * Set whether timeouts are enabled.
       */
-    var enableTimeouts: js.UndefOr[Boolean] = js.native
+    var enableTimeouts: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether failing to return a PromiseLike should fail the test.
       */
-    var expectPromise: js.UndefOr[Boolean] = js.native
+    var expectPromise: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[TestCase] = js.native
+    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCase]
     
     /**
       * Whether the test should be skipped unconditionally.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a browser environment.
       */
-    var skipIfBrowser: js.UndefOr[Boolean] = js.native
+    var skipIfBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a WebWorker.
       */
-    var skipIfWebWorker: js.UndefOr[Boolean] = js.native
+    var skipIfWebWorker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped outside a browser environment.
       */
-    var skipUnlessBrowser: js.UndefOr[Boolean] = js.native
+    var skipUnlessBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set test slowness threshold.
       */
-    var slow: js.UndefOr[String | Double] = js.native
+    var slow: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set test timeout.
       */
-    var timeout: js.UndefOr[String | Double] = js.native
+    var timeout: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The test title. Replaced by the title parameter if present.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Optionsasyncfalseundefine {
     
     @scala.inline
     def apply(
-      async: js.UndefOr[Boolean] with js.UndefOr[`false`],
-      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[TestCase]
+      async: js.UndefOr[Boolean] & js.UndefOr[`false`],
+      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCase]
     ): Optionsasyncfalseundefine = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasyncfalseundefine]
@@ -89,7 +88,7 @@ object anon {
     implicit class OptionsasyncfalseundefineMutableBuilder[Self <: Optionsasyncfalseundefine] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnableTimeouts(value: Boolean): Self = StObject.set(x, "enableTimeouts", value.asInstanceOf[js.Any])
@@ -104,7 +103,7 @@ object anon {
       def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
       @scala.inline
-      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[TestCase]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCase]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
@@ -151,71 +150,71 @@ object anon {
   }
   
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  async :true,   fn :mocha-sugar-free.mocha-sugar-free.TestCaseWithDone | undefined} */
-  @js.native
   trait OptionsasynctruefnTestCas
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] with `true` = js.native
+    var async: js.UndefOr[Boolean] & `true`
     
     /**
       * Set whether timeouts are enabled.
       */
-    var enableTimeouts: js.UndefOr[Boolean] = js.native
+    var enableTimeouts: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether failing to return a PromiseLike should fail the test.
       */
-    var expectPromise: js.UndefOr[Boolean] = js.native
+    var expectPromise: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[TestCaseWithDone] = js.native
+    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCaseWithDone]
     
     /**
       * Whether the test should be skipped unconditionally.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a browser environment.
       */
-    var skipIfBrowser: js.UndefOr[Boolean] = js.native
+    var skipIfBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a WebWorker.
       */
-    var skipIfWebWorker: js.UndefOr[Boolean] = js.native
+    var skipIfWebWorker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped outside a browser environment.
       */
-    var skipUnlessBrowser: js.UndefOr[Boolean] = js.native
+    var skipUnlessBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set test slowness threshold.
       */
-    var slow: js.UndefOr[String | Double] = js.native
+    var slow: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set test timeout.
       */
-    var timeout: js.UndefOr[String | Double] = js.native
+    var timeout: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The test title. Replaced by the title parameter if present.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object OptionsasynctruefnTestCas {
     
     @scala.inline
     def apply(
-      async: js.UndefOr[Boolean] with `true`,
-      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[TestCaseWithDone]
+      async: js.UndefOr[Boolean] & `true`,
+      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCaseWithDone]
     ): OptionsasynctruefnTestCas = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsasynctruefnTestCas]
@@ -225,7 +224,7 @@ object anon {
     implicit class OptionsasynctruefnTestCasMutableBuilder[Self <: OptionsasynctruefnTestCas] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnableTimeouts(value: Boolean): Self = StObject.set(x, "enableTimeouts", value.asInstanceOf[js.Any])
@@ -241,7 +240,7 @@ object anon {
       
       @scala.inline
       def setFn(
-        value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[TestCaseWithDone]
+        value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCaseWithDone]
       ): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -289,69 +288,69 @@ object anon {
   }
   
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  fn :mocha-sugar-free.mocha-sugar-free.HookFunc | undefined} */
-  @js.native
   trait OptionsfnHookFuncundefine
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set whether timeouts are enabled.
       */
-    var enableTimeouts: js.UndefOr[Boolean] = js.native
+    var enableTimeouts: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether failing to return a PromiseLike should fail the test.
       */
-    var expectPromise: js.UndefOr[Boolean] = js.native
+    var expectPromise: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[HookFunc] = js.native
+    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[HookFunc]
     
     /**
       * Whether the test should be skipped unconditionally.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a browser environment.
       */
-    var skipIfBrowser: js.UndefOr[Boolean] = js.native
+    var skipIfBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a WebWorker.
       */
-    var skipIfWebWorker: js.UndefOr[Boolean] = js.native
+    var skipIfWebWorker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped outside a browser environment.
       */
-    var skipUnlessBrowser: js.UndefOr[Boolean] = js.native
+    var skipUnlessBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set test slowness threshold.
       */
-    var slow: js.UndefOr[String | Double] = js.native
+    var slow: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set test timeout.
       */
-    var timeout: js.UndefOr[String | Double] = js.native
+    var timeout: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The test title. Replaced by the title parameter if present.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object OptionsfnHookFuncundefine {
     
     @scala.inline
-    def apply(fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[HookFunc]): OptionsfnHookFuncundefine = {
+    def apply(fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[HookFunc]): OptionsfnHookFuncundefine = {
       val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsfnHookFuncundefine]
     }
@@ -378,7 +377,7 @@ object anon {
       def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
       @scala.inline
-      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[HookFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[HookFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
@@ -425,69 +424,69 @@ object anon {
   }
   
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  fn :mocha-sugar-free.mocha-sugar-free.SuiteFunc | undefined} */
-  @js.native
   trait OptionsfnSuiteFuncundefin
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set whether timeouts are enabled.
       */
-    var enableTimeouts: js.UndefOr[Boolean] = js.native
+    var enableTimeouts: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether failing to return a PromiseLike should fail the test.
       */
-    var expectPromise: js.UndefOr[Boolean] = js.native
+    var expectPromise: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[SuiteFunc] = js.native
+    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]
     
     /**
       * Whether the test should be skipped unconditionally.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a browser environment.
       */
-    var skipIfBrowser: js.UndefOr[Boolean] = js.native
+    var skipIfBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a WebWorker.
       */
-    var skipIfWebWorker: js.UndefOr[Boolean] = js.native
+    var skipIfWebWorker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped outside a browser environment.
       */
-    var skipUnlessBrowser: js.UndefOr[Boolean] = js.native
+    var skipUnlessBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set test slowness threshold.
       */
-    var slow: js.UndefOr[String | Double] = js.native
+    var slow: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set test timeout.
       */
-    var timeout: js.UndefOr[String | Double] = js.native
+    var timeout: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The test title. Replaced by the title parameter if present.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object OptionsfnSuiteFuncundefin {
     
     @scala.inline
-    def apply(fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[SuiteFunc]): OptionsfnSuiteFuncundefin = {
+    def apply(fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]): OptionsfnSuiteFuncundefin = {
       val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsfnSuiteFuncundefin]
     }
@@ -514,7 +513,7 @@ object anon {
       def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
       @scala.inline
-      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[SuiteFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
@@ -561,71 +560,71 @@ object anon {
   }
   
   /* Inlined mocha-sugar-free.mocha-sugar-free.Options & {  title :string,   fn :mocha-sugar-free.mocha-sugar-free.SuiteFunc | undefined} */
-  @js.native
   trait OptionstitlestringfnSuite
-    extends /* option */ StringDictionary[js.Any] {
+    extends StObject
+       with /* option */ StringDictionary[js.Any] {
     
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set whether timeouts are enabled.
       */
-    var enableTimeouts: js.UndefOr[Boolean] = js.native
+    var enableTimeouts: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether failing to return a PromiseLike should fail the test.
       */
-    var expectPromise: js.UndefOr[Boolean] = js.native
+    var expectPromise: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[SuiteFunc] = js.native
+    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]
     
     /**
       * Whether the test should be skipped unconditionally.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a browser environment.
       */
-    var skipIfBrowser: js.UndefOr[Boolean] = js.native
+    var skipIfBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped in a WebWorker.
       */
-    var skipIfWebWorker: js.UndefOr[Boolean] = js.native
+    var skipIfWebWorker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the test should be skipped outside a browser environment.
       */
-    var skipUnlessBrowser: js.UndefOr[Boolean] = js.native
+    var skipUnlessBrowser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set test slowness threshold.
       */
-    var slow: js.UndefOr[String | Double] = js.native
+    var slow: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set test timeout.
       */
-    var timeout: js.UndefOr[String | Double] = js.native
+    var timeout: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The test title. Replaced by the title parameter if present.
       */
-    var title: js.UndefOr[String] with String = js.native
+    var title: js.UndefOr[String] & String
   }
   object OptionstitlestringfnSuite {
     
     @scala.inline
     def apply(
-      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[SuiteFunc],
-      title: js.UndefOr[String] with String
+      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc],
+      title: js.UndefOr[String] & String
     ): OptionstitlestringfnSuite = {
       val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionstitlestringfnSuite]
@@ -653,7 +652,7 @@ object anon {
       def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
       @scala.inline
-      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) with js.UndefOr[SuiteFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
@@ -692,7 +691,7 @@ object anon {
       def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
       @scala.inline
-      def setTitle(value: js.UndefOr[String] with String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      def setTitle(value: js.UndefOr[String] & String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

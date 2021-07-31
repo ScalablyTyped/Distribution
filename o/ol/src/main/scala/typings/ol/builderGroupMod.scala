@@ -7,14 +7,15 @@ import typings.ol.canvasMod.DeclutterGroups
 import typings.ol.extentMod.Extent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object builderGroupMod {
   
   @JSImport("ol/render/canvas/BuilderGroup", JSImport.Default)
   @js.native
-  class default protected () extends BuilderGroup {
+  class default protected ()
+    extends StObject
+       with BuilderGroup {
     def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double, declutter: Boolean) = this()
   }
   
@@ -23,9 +24,9 @@ object builderGroupMod {
     
     def addDeclutter(group: Boolean): DeclutterGroups = js.native
     
-    def finish(): StringDictionary[typings.ol.olStrings.BuilderGroup with TopLevel[js.Any]] = js.native
+    def finish(): StringDictionary[typings.ol.olStrings.BuilderGroup & TopLevel[js.Any]] = js.native
     
-    def getBuilder(zIndex: js.UndefOr[scala.Nothing], builderType: BuilderType): typings.ol.vectorContextMod.default = js.native
     def getBuilder(zIndex: Double, builderType: BuilderType): typings.ol.vectorContextMod.default = js.native
+    def getBuilder(zIndex: Unit, builderType: BuilderType): typings.ol.vectorContextMod.default = js.native
   }
 }

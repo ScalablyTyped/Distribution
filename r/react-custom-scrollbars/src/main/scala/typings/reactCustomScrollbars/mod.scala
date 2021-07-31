@@ -8,7 +8,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,51 +61,52 @@ object mod {
     def scrollTop(top: Double): Unit = js.native
   }
   
-  @js.native
-  trait ScrollbarProps extends HTMLProps[Scrollbars] {
+  trait ScrollbarProps
+    extends StObject
+       with HTMLProps[Scrollbars] {
     
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
-    var autoHeightMax: js.UndefOr[Double | String] = js.native
+    var autoHeightMax: js.UndefOr[Double | String] = js.undefined
     
-    var autoHeightMin: js.UndefOr[Double | String] = js.native
+    var autoHeightMin: js.UndefOr[Double | String] = js.undefined
     
-    var autoHide: js.UndefOr[Boolean] = js.native
+    var autoHide: js.UndefOr[Boolean] = js.undefined
     
-    var autoHideDuration: js.UndefOr[Double] = js.native
+    var autoHideDuration: js.UndefOr[Double] = js.undefined
     
-    var autoHideTimeout: js.UndefOr[Double] = js.native
+    var autoHideTimeout: js.UndefOr[Double] = js.undefined
     
-    var hideTracksWhenNotNeeded: js.UndefOr[Boolean] = js.native
+    var hideTracksWhenNotNeeded: js.UndefOr[Boolean] = js.undefined
     
-    var onScrollFrame: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.native
+    var onScrollFrame: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.undefined
     
-    var onScrollStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onScrollStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onScrollStop: js.UndefOr[js.Function0[Unit]] = js.native
+    var onScrollStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     @JSName("onScroll")
-    var onScroll_ScrollbarProps: js.UndefOr[UIEventHandler[_]] = js.native
+    var onScroll_ScrollbarProps: js.UndefOr[UIEventHandler[js.Any]] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.undefined
     
-    var renderThumbHorizontal: js.UndefOr[StatelessComponent[_]] = js.native
+    var renderThumbHorizontal: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
     
-    var renderThumbVertical: js.UndefOr[StatelessComponent[_]] = js.native
+    var renderThumbVertical: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
     
-    var renderTrackHorizontal: js.UndefOr[StatelessComponent[_]] = js.native
+    var renderTrackHorizontal: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
     
-    var renderTrackVertical: js.UndefOr[StatelessComponent[_]] = js.native
+    var renderTrackVertical: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
     
-    var renderView: js.UndefOr[StatelessComponent[_]] = js.native
+    var renderView: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
     
-    var thumbMinSize: js.UndefOr[Double] = js.native
+    var thumbMinSize: js.UndefOr[Double] = js.undefined
     
-    var thumbSize: js.UndefOr[Double] = js.native
+    var thumbSize: js.UndefOr[Double] = js.undefined
     
-    var universal: js.UndefOr[Boolean] = js.native
+    var universal: js.UndefOr[Boolean] = js.undefined
   }
   object ScrollbarProps {
     
@@ -162,7 +162,7 @@ object mod {
       def setHideTracksWhenNotNeededUndefined: Self = StObject.set(x, "hideTracksWhenNotNeeded", js.undefined)
       
       @scala.inline
-      def setOnScroll(value: UIEvent[_, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      def setOnScroll(value: UIEvent[js.Any, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnScrollFrame(value: /* values */ positionValues => Unit): Self = StObject.set(x, "onScrollFrame", js.Any.fromFunction1(value))
@@ -192,31 +192,31 @@ object mod {
       def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
       @scala.inline
-      def setRenderThumbHorizontal(value: StatelessComponent[_]): Self = StObject.set(x, "renderThumbHorizontal", value.asInstanceOf[js.Any])
+      def setRenderThumbHorizontal(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderThumbHorizontal", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderThumbHorizontalUndefined: Self = StObject.set(x, "renderThumbHorizontal", js.undefined)
       
       @scala.inline
-      def setRenderThumbVertical(value: StatelessComponent[_]): Self = StObject.set(x, "renderThumbVertical", value.asInstanceOf[js.Any])
+      def setRenderThumbVertical(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderThumbVertical", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderThumbVerticalUndefined: Self = StObject.set(x, "renderThumbVertical", js.undefined)
       
       @scala.inline
-      def setRenderTrackHorizontal(value: StatelessComponent[_]): Self = StObject.set(x, "renderTrackHorizontal", value.asInstanceOf[js.Any])
+      def setRenderTrackHorizontal(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderTrackHorizontal", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderTrackHorizontalUndefined: Self = StObject.set(x, "renderTrackHorizontal", js.undefined)
       
       @scala.inline
-      def setRenderTrackVertical(value: StatelessComponent[_]): Self = StObject.set(x, "renderTrackVertical", value.asInstanceOf[js.Any])
+      def setRenderTrackVertical(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderTrackVertical", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderTrackVerticalUndefined: Self = StObject.set(x, "renderTrackVertical", js.undefined)
       
       @scala.inline
-      def setRenderView(value: StatelessComponent[_]): Self = StObject.set(x, "renderView", value.asInstanceOf[js.Any])
+      def setRenderView(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderView", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderViewUndefined: Self = StObject.set(x, "renderView", js.undefined)
@@ -247,24 +247,23 @@ object mod {
     }
   }
   
-  @js.native
   trait positionValues extends StObject {
     
-    var clientHeight: Double = js.native
+    var clientHeight: Double
     
-    var clientWidth: Double = js.native
+    var clientWidth: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var scrollHeight: Double = js.native
+    var scrollHeight: Double
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
     
-    var scrollWidth: Double = js.native
+    var scrollWidth: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object positionValues {
     

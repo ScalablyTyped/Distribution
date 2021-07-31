@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiPathEvent extends StObject {
   
-  def isDefaultPrevented(): Boolean = js.native
+  def isDefaultPrevented(): Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var sender: MultiPath = js.native
+  var sender: MultiPath
 }
 object MultiPathEvent {
   

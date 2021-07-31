@@ -2,13 +2,11 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Headers extends StObject {
   
-  var headers: XContentfulVersion = js.native
+  var headers: XContentfulVersion
 }
 object Headers {
   

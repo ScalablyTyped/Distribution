@@ -4,37 +4,35 @@ import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.coreInterfacesMod.WebApiConnectedServiceRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousDeploymentDefinition extends StObject {
   
   /**
     * The connected service associated with the continuous deployment
     */
-  var connectedService: WebApiConnectedServiceRef = js.native
+  var connectedService: WebApiConnectedServiceRef
   
   /**
     * The definition associated with the continuous deployment
     */
-  var definition: XamlDefinitionReference = js.native
+  var definition: XamlDefinitionReference
   
-  var gitBranch: String = js.native
+  var gitBranch: String
   
-  var hostedServiceName: String = js.native
+  var hostedServiceName: String
   
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
   
-  var repositoryId: String = js.native
+  var repositoryId: String
   
-  var storageAccountName: String = js.native
+  var storageAccountName: String
   
-  var subscriptionId: String = js.native
+  var subscriptionId: String
   
-  var website: String = js.native
+  var website: String
   
-  var webspace: String = js.native
+  var webspace: String
 }
 object ContinuousDeploymentDefinition {
   

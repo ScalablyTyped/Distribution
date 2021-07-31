@@ -3,11 +3,12 @@ package typings.webix.webix.ui
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait baselayout extends baseview {
+trait baselayout
+  extends StObject
+     with baseview {
   
   def addView(view: js.Any): String | Double = js.native
   def addView(view: js.Any, index: Double): String | Double = js.native
@@ -17,7 +18,7 @@ trait baselayout extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_baselayout: baselayoutConfig = js.native

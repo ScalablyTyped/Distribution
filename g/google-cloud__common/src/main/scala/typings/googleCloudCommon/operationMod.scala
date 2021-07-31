@@ -5,7 +5,6 @@ import typings.googleCloudCommon.serviceObjectMod.ServiceObject
 import typings.googleCloudCommon.serviceObjectMod.ServiceObjectConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationMod {
@@ -54,7 +53,7 @@ object operationMod {
       *
       * @return {Promise}
       */
-    def promise(): js.Promise[_] = js.native
+    def promise(): js.Promise[js.Any] = js.native
     
     /**
       * Poll `getMetadata` to check the operation's status. This runs a loop to

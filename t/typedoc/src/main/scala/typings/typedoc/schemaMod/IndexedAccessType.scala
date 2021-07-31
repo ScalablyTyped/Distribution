@@ -2,20 +2,20 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.IndexedAccessType, 'type' | 'indexType' | 'objectType'> */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ @js.native
-trait IndexedAccessType extends SomeType {
+- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait IndexedAccessType
+  extends StObject
+     with SomeType {
   
-  var indexType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type = js.native
+  var indexType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type
   
-  var objectType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type = js.native
+  var objectType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type
   
-  var `type`: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String) = js.native
+  var `type`: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)
 }
 object IndexedAccessType {
   

@@ -5,21 +5,19 @@ import typings.algoliaClientSearch.mod.RankingInfo
 import typings.algoliaClientSearch.mod.SnippetResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistinctSeqID[THit] extends StObject {
   
-  val _distinctSeqID: js.UndefOr[Double] = js.native
+  val _distinctSeqID: js.UndefOr[Double] = js.undefined
   
-  val _highlightResult: js.UndefOr[HighlightResult[THit]] = js.native
+  val _highlightResult: js.UndefOr[HighlightResult[THit]] = js.undefined
   
-  val _rankingInfo: js.UndefOr[RankingInfo] = js.native
+  val _rankingInfo: js.UndefOr[RankingInfo] = js.undefined
   
-  val _snippetResult: js.UndefOr[SnippetResult[THit]] = js.native
+  val _snippetResult: js.UndefOr[SnippetResult[THit]] = js.undefined
   
-  val objectID: String = js.native
+  val objectID: String
 }
 object DistinctSeqID {
   
@@ -30,7 +28,7 @@ object DistinctSeqID {
   }
   
   @scala.inline
-  implicit class DistinctSeqIDMutableBuilder[Self <: DistinctSeqID[_], THit] (val x: Self with DistinctSeqID[THit]) extends AnyVal {
+  implicit class DistinctSeqIDMutableBuilder[Self <: DistinctSeqID[?], THit] (val x: Self & DistinctSeqID[THit]) extends AnyVal {
     
     @scala.inline
     def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])

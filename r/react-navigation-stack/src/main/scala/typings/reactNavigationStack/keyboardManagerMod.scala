@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactNavigationStack.anon.OnPageChangeCancel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardManagerMod {
@@ -36,12 +35,11 @@ object keyboardManagerMod {
     var startTimestamp: js.Any = js.native
   }
   
-  @js.native
   trait Props extends StObject {
     
-    def children(props: OnPageChangeCancel): ReactNode = js.native
+    def children(props: OnPageChangeCancel): ReactNode
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
   }
   object Props {
     

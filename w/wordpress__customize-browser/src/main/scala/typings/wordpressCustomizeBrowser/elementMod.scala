@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.wordpressCustomizeBrowser.valueMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
@@ -45,16 +44,15 @@ object elementMod {
     def synchronizer_=(x: ElementSynchronizer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("synchronizer")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ElementSynchronizer extends StObject {
     
-    var checkbox: ElementSynchronizerMethod[Boolean] = js.native
+    var checkbox: ElementSynchronizerMethod[Boolean]
     
-    var html: ElementSynchronizerMethod[String] = js.native
+    var html: ElementSynchronizerMethod[String]
     
-    var radio: ElementSynchronizerMethod[Boolean] = js.native
+    var radio: ElementSynchronizerMethod[Boolean]
     
-    var `val`: ElementSynchronizerMethod[String] = js.native
+    var `val`: ElementSynchronizerMethod[String]
   }
   object ElementSynchronizer {
     

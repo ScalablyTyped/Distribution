@@ -4,100 +4,98 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseApproval extends StObject {
   
   /**
     * Gets or sets the type of approval.
     */
-  var approvalType: ApprovalType = js.native
+  var approvalType: ApprovalType
   
   /**
     * Gets the identity who approved.
     */
-  var approvedBy: IdentityRef = js.native
+  var approvedBy: IdentityRef
   
   /**
     * Gets or sets the identity who should approve.
     */
-  var approver: IdentityRef = js.native
+  var approver: IdentityRef
   
   /**
     * Gets or sets attempt which specifies as which deployment attempt it belongs.
     */
-  var attempt: Double = js.native
+  var attempt: Double
   
   /**
     * Gets or sets comments for approval.
     */
-  var comments: String = js.native
+  var comments: String
   
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets history which specifies all approvals associated with this approval.
     */
-  var history: js.Array[ReleaseApprovalHistory] = js.native
+  var history: js.Array[ReleaseApprovalHistory]
   
   /**
     * Gets the unique identifier of this field.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets or sets as approval is automated or not.
     */
-  var isAutomated: Boolean = js.native
+  var isAutomated: Boolean
   
-  var isNotificationOn: Boolean = js.native
+  var isNotificationOn: Boolean
   
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
   /**
     * Gets or sets rank which specifies the order of the approval. e.g. Same rank denotes parallel approval.
     */
-  var rank: Double = js.native
+  var rank: Double
   
   /**
     * Gets releaseReference which specifies the reference of the release to which this approval is associated.
     */
-  var release: ReleaseShallowReference = js.native
+  var release: ReleaseShallowReference
   
   /**
     * Gets releaseDefinitionReference which specifies the reference of the release definition to which this approval is associated.
     */
-  var releaseDefinition: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinition: ReleaseDefinitionShallowReference
   
   /**
     * Gets releaseEnvironmentReference which specifies the reference of the release environment to which this approval is associated.
     */
-  var releaseEnvironment: ReleaseEnvironmentShallowReference = js.native
+  var releaseEnvironment: ReleaseEnvironmentShallowReference
   
   /**
     * Gets the revision number.
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * Gets or sets the status of the approval.
     */
-  var status: ApprovalStatus = js.native
+  var status: ApprovalStatus
   
-  var trialNumber: Double = js.native
+  var trialNumber: Double
   
   /**
     * Gets url to access the approval.
     */
-  var url: String = js.native
+  var url: String
 }
 object ReleaseApproval {
   

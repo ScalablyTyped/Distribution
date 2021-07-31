@@ -4,14 +4,13 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait baseview extends StObject {
   
   @JSName("$getSize")
-  def $getSize(): js.Array[_] = js.native
+  def $getSize(): js.Array[js.Any] = js.native
   
   @JSName("$height")
   var $height: Double = js.native
@@ -33,7 +32,7 @@ trait baseview extends StObject {
   def adjust(): Unit = js.native
   
   def bind(target: js.Any): Unit = js.native
-  def bind(target: js.Any, rule: js.UndefOr[scala.Nothing], format: String): Unit = js.native
+  def bind(target: js.Any, rule: Unit, format: String): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   
@@ -47,7 +46,7 @@ trait baseview extends StObject {
   
   def enable(): Unit = js.native
   
-  def getChildViews(): js.Array[_] = js.native
+  def getChildViews(): js.Array[js.Any] = js.native
   
   def getFormView(): baseview = js.native
   
@@ -71,9 +70,9 @@ trait baseview extends StObject {
   def resize(): Unit = js.native
   
   def show(): Unit = js.native
-  def show(force: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
   def show(force: Boolean): Unit = js.native
   def show(force: Boolean, animation: Boolean): Unit = js.native
+  def show(force: Unit, animation: Boolean): Unit = js.native
   
   def unbind(): Unit = js.native
 }

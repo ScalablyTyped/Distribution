@@ -2,10 +2,8 @@ package typings.cordovaPluginNativeKeyboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonOptions extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait ButtonOptions extends StObject {
     *
     * Default: #000
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * A callback being executed as soon as the button is clicked
     */
-  def onPress(): Unit = js.native
+  def onPress(): Unit
   
   /**
     * If type is "text" you can set this to either "normal", "bold" or "italic".
     *
     * Default: "normal"
     */
-  var textStyle: js.UndefOr[String] = js.native
+  var textStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the button.
@@ -33,7 +31,7 @@ trait ButtonOptions extends StObject {
     *
     * Default: "text"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the button. On "text" the string is used as label
@@ -41,7 +39,7 @@ trait ButtonOptions extends StObject {
     *
     * Default: "Send"
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ButtonOptions {
   

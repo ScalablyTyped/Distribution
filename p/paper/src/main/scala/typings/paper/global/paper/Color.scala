@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.Color")
 @js.native
 class Color protected ()
-  extends typings.paper.paper.Color {
+  extends StObject
+     with typings.paper.paper.Color {
   /** 
     * Creates a Color object from a CSS string. All common CSS color string
     * formats are supported:
@@ -102,6 +102,10 @@ class Color protected ()
 }
 object Color {
   
+  @JSGlobal("paper.Color")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** 
     * Returns a color object with random {@link #red}, {@link #green}
     * and {@link #blue} values between `0` and `1`.
@@ -109,7 +113,6 @@ object Color {
     * @return the newly created color object
     */
   /* static member */
-  @JSGlobal("paper.Color.random")
-  @js.native
-  def random(): typings.paper.paper.Color = js.native
+  @scala.inline
+  def random(): typings.paper.paper.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Color]
 }

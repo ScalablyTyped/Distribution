@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvalidPath extends StObject {
   
-  var invalidPath: scala.Double = js.native
+  var invalidPath: scala.Double
   
-  var mergeContentNotFound: scala.Double = js.native
+  var mergeContentNotFound: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var otherError: scala.Double = js.native
+  var otherError: scala.Double
   
-  var pathInUse: scala.Double = js.native
+  var pathInUse: scala.Double
   
-  var unknownAction: scala.Double = js.native
+  var unknownAction: scala.Double
   
-  var unknownMergeType: scala.Double = js.native
+  var unknownMergeType: scala.Double
 }
 object InvalidPath {
   

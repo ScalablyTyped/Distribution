@@ -5,7 +5,6 @@ import typings.electron.electronStrings.message
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -98,8 +97,8 @@ trait Debugger extends EventEmitter {
     * 
   Send given command to the debugging target.
     */
-  def sendCommand(method: String): js.Promise[_] = js.native
-  def sendCommand(method: String, commandParams: js.UndefOr[scala.Nothing], sessionId: String): js.Promise[_] = js.native
-  def sendCommand(method: String, commandParams: js.Any): js.Promise[_] = js.native
-  def sendCommand(method: String, commandParams: js.Any, sessionId: String): js.Promise[_] = js.native
+  def sendCommand(method: String): js.Promise[js.Any] = js.native
+  def sendCommand(method: String, commandParams: js.Any): js.Promise[js.Any] = js.native
+  def sendCommand(method: String, commandParams: js.Any, sessionId: String): js.Promise[js.Any] = js.native
+  def sendCommand(method: String, commandParams: Unit, sessionId: String): js.Promise[js.Any] = js.native
 }

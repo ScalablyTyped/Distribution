@@ -2,29 +2,48 @@ package typings.lambdaPhi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathModelMod {
   
   @JSImport("lambda-phi/lib/path-model", JSImport.Default)
   @js.native
-  class default () extends PathModel
-  
-  @js.native
-  trait PathModel extends StObject {
+  class default ()
+    extends StObject
+       with PathModel {
     
+    /* CompleteClass */
     var _httpMethods: js.Any = js.native
     
+    /* CompleteClass */
     var _methodName: js.Any = js.native
     
+    /* CompleteClass */
     var _pattern: js.Any = js.native
     
+    /* CompleteClass */
     var httpMethods: js.Array[String] = js.native
     
+    /* CompleteClass */
     var methodName: String = js.native
     
+    /* CompleteClass */
     var pattern: String = js.native
+  }
+  
+  trait PathModel extends StObject {
+    
+    var _httpMethods: js.Any
+    
+    var _methodName: js.Any
+    
+    var _pattern: js.Any
+    
+    var httpMethods: js.Array[String]
+    
+    var methodName: String
+    
+    var pattern: String
   }
   object PathModel {
     

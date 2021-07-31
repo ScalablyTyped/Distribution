@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StoreExceptionsInformation extends ExceptionInformation {
+trait StoreExceptionsInformation
+  extends StObject
+     with ExceptionInformation {
   
-  var detailURI: js.UndefOr[java.lang.String | Null] = js.native
+  var detailURI: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var explanationString: js.UndefOr[java.lang.String | Null] = js.native
+  var explanationString: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var siteName: js.UndefOr[java.lang.String | Null] = js.native
+  var siteName: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 object StoreExceptionsInformation {
   

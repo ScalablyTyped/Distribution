@@ -6,44 +6,40 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concurrentMod {
   
   object concurrent {
     
-    @JSImport("cassandra-driver/lib/concurrent", "concurrent.executeConcurrent")
+    @JSImport("cassandra-driver/lib/concurrent", "concurrent")
     @js.native
-    def executeConcurrent(client: Client, queries: js.Array[Params]): js.Promise[ResultSetGroup] = js.native
-    @JSImport("cassandra-driver/lib/concurrent", "concurrent.executeConcurrent")
-    @js.native
-    def executeConcurrent(client: Client, queries: js.Array[Params], options: Options): js.Promise[ResultSetGroup] = js.native
-    @JSImport("cassandra-driver/lib/concurrent", "concurrent.executeConcurrent")
-    @js.native
-    def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[_]]): js.Promise[ResultSetGroup] = js.native
-    @JSImport("cassandra-driver/lib/concurrent", "concurrent.executeConcurrent")
-    @js.native
-    def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[_]], options: Options): js.Promise[ResultSetGroup] = js.native
-    @JSImport("cassandra-driver/lib/concurrent", "concurrent.executeConcurrent")
-    @js.native
-    def executeConcurrent(client: Client, query: String, parameters: Readable): js.Promise[ResultSetGroup] = js.native
-    @JSImport("cassandra-driver/lib/concurrent", "concurrent.executeConcurrent")
-    @js.native
-    def executeConcurrent(client: Client, query: String, parameters: Readable, options: Options): js.Promise[ResultSetGroup] = js.native
+    val ^ : js.Any = js.native
     
-    @js.native
+    @scala.inline
+    def executeConcurrent(client: Client, queries: js.Array[Params]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    @scala.inline
+    def executeConcurrent(client: Client, queries: js.Array[Params], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    @scala.inline
+    def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    @scala.inline
+    def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    @scala.inline
+    def executeConcurrent(client: Client, query: String, parameters: Readable): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    @scala.inline
+    def executeConcurrent(client: Client, query: String, parameters: Readable, options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    
     trait Options extends StObject {
       
-      var collectResults: js.UndefOr[Boolean] = js.native
+      var collectResults: js.UndefOr[Boolean] = js.undefined
       
-      var concurrencyLevel: js.UndefOr[Double] = js.native
+      var concurrencyLevel: js.UndefOr[Double] = js.undefined
       
-      var executionProfile: js.UndefOr[String] = js.native
+      var executionProfile: js.UndefOr[String] = js.undefined
       
-      var maxErrors: js.UndefOr[Double] = js.native
+      var maxErrors: js.UndefOr[Double] = js.undefined
       
-      var raiseOnFirstError: js.UndefOr[Boolean] = js.native
+      var raiseOnFirstError: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -88,19 +84,18 @@ object concurrentMod {
       }
     }
     
-    @js.native
     trait ResultSetGroup extends StObject {
       
-      var errors: js.Array[Error] = js.native
+      var errors: js.Array[Error]
       
-      var resultItems: js.Array[_] = js.native
+      var resultItems: js.Array[js.Any]
       
-      var totalExecuted: Double = js.native
+      var totalExecuted: Double
     }
     object ResultSetGroup {
       
       @scala.inline
-      def apply(errors: js.Array[Error], resultItems: js.Array[_], totalExecuted: Double): ResultSetGroup = {
+      def apply(errors: js.Array[Error], resultItems: js.Array[js.Any], totalExecuted: Double): ResultSetGroup = {
         val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], resultItems = resultItems.asInstanceOf[js.Any], totalExecuted = totalExecuted.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResultSetGroup]
       }
@@ -115,7 +110,7 @@ object concurrentMod {
         def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
         
         @scala.inline
-        def setResultItems(value: js.Array[_]): Self = StObject.set(x, "resultItems", value.asInstanceOf[js.Any])
+        def setResultItems(value: js.Array[js.Any]): Self = StObject.set(x, "resultItems", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setResultItemsVarargs(value: js.Any*): Self = StObject.set(x, "resultItems", js.Array(value :_*))

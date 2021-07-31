@@ -13,60 +13,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait relationshipGetSchemeByNameParams extends Object {
+trait relationshipGetSchemeByNameParams
+  extends StObject
+     with Object {
   
   /**
     * The basemap to pair with the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemeByName)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * If you have a non-Esri basemap (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemeByName)
     */
-  var basemapTheme: js.UndefOr[light | dark] = js.native
+  var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
     * The geometry type of the features to visualize.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemeByName)
     */
-  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch = js.native
+  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
   /**
     * The name of the scheme to retrieve.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemeByName)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Determines which set of primary and secondary color schemes to return.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemeByName)
     */
-  var theme: js.UndefOr[default] = js.native
+  var theme: js.UndefOr[default] = js.undefined
   
   /**
     * The SceneView instance in which the scheme will be used.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[SceneView] = js.native
+  var view: js.UndefOr[SceneView] = js.undefined
   
   /**
     * Indicates if the size units of the scheme will be in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemeByName)
     */
-  var worldScale: js.UndefOr[Boolean] = js.native
+  var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object relationshipGetSchemeByNameParams {
   

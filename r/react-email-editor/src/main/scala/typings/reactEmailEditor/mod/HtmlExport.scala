@@ -2,15 +2,13 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlExport extends StObject {
   
-  val design: Design = js.native
+  val design: Design
   
-  val html: String = js.native
+  val html: String
 }
 object HtmlExport {
   

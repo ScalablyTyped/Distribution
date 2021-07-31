@@ -2,20 +2,18 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A schedule for disks where the schedueled operations are performed.
   */
-@js.native
 trait SchemaResourcePolicySnapshotSchedulePolicySchedule extends StObject {
   
-  var dailySchedule: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.native
+  var dailySchedule: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.undefined
   
-  var hourlySchedule: js.UndefOr[SchemaResourcePolicyHourlyCycle] = js.native
+  var hourlySchedule: js.UndefOr[SchemaResourcePolicyHourlyCycle] = js.undefined
   
-  var weeklySchedule: js.UndefOr[SchemaResourcePolicyWeeklyCycle] = js.native
+  var weeklySchedule: js.UndefOr[SchemaResourcePolicyWeeklyCycle] = js.undefined
 }
 object SchemaResourcePolicySnapshotSchedulePolicySchedule {
   

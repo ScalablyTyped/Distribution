@@ -4,71 +4,69 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestConfiguration extends StObject {
   
   /**
     * Area of the configuration
     */
-  var area: ShallowReference = js.native
+  var area: ShallowReference
   
   /**
     * Description of the configuration
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Id of the configuration
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Is the configuration a default for the test plans
     */
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
   
   /**
     * Last Updated By  Reference
     */
-  var lastUpdatedBy: IdentityRef = js.native
+  var lastUpdatedBy: IdentityRef
   
   /**
     * Last Updated Data
     */
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
   /**
     * Name of the configuration
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Project to which the configuration belongs
     */
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
   /**
     * Revision of the the configuration
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * State of the configuration
     */
-  var state: TestConfigurationState = js.native
+  var state: TestConfigurationState
   
   /**
     * Url of Configuration Resource
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Dictionary of Test Variable, Selected Value
     */
-  var values: js.Array[NameValuePair] = js.native
+  var values: js.Array[NameValuePair]
 }
 object TestConfiguration {
   

@@ -11,7 +11,6 @@ import typings.prosemirrorModel.mod.Schema
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,7 +21,7 @@ object mod {
   
   @JSImport("prosemirror-markdown", "MarkdownParser")
   @js.native
-  class MarkdownParser[S /* <: Schema[_, _] */] protected () extends StObject {
+  class MarkdownParser[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     /**
       * Create a parser with the given configuration. You can configure
       * the markdown-it parser to parse the dialect you want, and provide
@@ -80,7 +79,7 @@ object mod {
   
   @JSImport("prosemirror-markdown", "MarkdownSerializer")
   @js.native
-  class MarkdownSerializer[S /* <: Schema[_, _] */] protected () extends StObject {
+  class MarkdownSerializer[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     def this(
       nodes: StringDictionary[
             js.Function4[
@@ -91,7 +90,7 @@ object mod {
               Unit
             ]
           ],
-      marks: StringDictionary[MarkSerializerConfig[_]]
+      marks: StringDictionary[MarkSerializerConfig[js.Any]]
     ) = this()
     
     /**
@@ -115,7 +114,7 @@ object mod {
   
   @JSImport("prosemirror-markdown", "MarkdownSerializerState")
   @js.native
-  class MarkdownSerializerState[S /* <: Schema[_, _] */] () extends StObject {
+  class MarkdownSerializerState[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
     
     /**
       * Close the block for the given node.
@@ -187,7 +186,6 @@ object mod {
     def text(text: String): Unit = js.native
     def text(text: String, escape: Boolean): Unit = js.native
     
-    def wrapBlock(delim: String, firstDelim: js.UndefOr[scala.Nothing], node: Node[S], f: js.Function0[Unit]): Unit = js.native
     /**
       * Render a block, prefixing each line with `delim`, and the first
       * line in `firstDelim`. `node` should be the node that is closed at
@@ -195,6 +193,7 @@ object mod {
       * content of the block.
       */
     def wrapBlock(delim: String, firstDelim: String, node: Node[S], f: js.Function0[Unit]): Unit = js.native
+    def wrapBlock(delim: String, firstDelim: Unit, node: Node[S], f: js.Function0[Unit]): Unit = js.native
     
     /**
       * Prepare the state for writing output (closing closed paragraphs,
@@ -217,29 +216,28 @@ object mod {
   @scala.inline
   def defaultMarkdownSerializer_=(x: MarkdownSerializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownSerializer")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait MarkSerializerConfig[S /* <: Schema[_, _] */] extends StObject {
+  trait MarkSerializerConfig[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
-    var close: String | MarkSerializerMethod[S] = js.native
+    var close: String | MarkSerializerMethod[S]
     
-    var escape: js.UndefOr[Boolean] = js.native
+    var escape: js.UndefOr[Boolean] = js.undefined
     
-    var expelEnclosingWhitespace: js.UndefOr[Boolean] = js.native
+    var expelEnclosingWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var mixable: js.UndefOr[Boolean] = js.native
+    var mixable: js.UndefOr[Boolean] = js.undefined
     
-    var open: String | MarkSerializerMethod[S] = js.native
+    var open: String | MarkSerializerMethod[S]
   }
   object MarkSerializerConfig {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](close: String | MarkSerializerMethod[S], open: String | MarkSerializerMethod[S]): MarkSerializerConfig[S] = {
+    def apply[S /* <: Schema[js.Any, js.Any] */](close: String | MarkSerializerMethod[S], open: String | MarkSerializerMethod[S]): MarkSerializerConfig[S] = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[MarkSerializerConfig[S]]
     }
     
     @scala.inline
-    implicit class MarkSerializerConfigMutableBuilder[Self <: MarkSerializerConfig[_], S /* <: Schema[_, _] */] (val x: Self with MarkSerializerConfig[S]) extends AnyVal {
+    implicit class MarkSerializerConfigMutableBuilder[Self <: MarkSerializerConfig[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & MarkSerializerConfig[S]) extends AnyVal {
       
       @scala.inline
       def setClose(value: String | MarkSerializerMethod[S]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
@@ -277,7 +275,7 @@ object mod {
     }
   }
   
-  type MarkSerializerMethod[S /* <: Schema[_, _] */] = js.Function4[
+  type MarkSerializerMethod[S /* <: Schema[js.Any, js.Any] */] = js.Function4[
     /* state */ MarkdownSerializerState[S], 
     /* mark */ Mark[S], 
     /* parent */ Fragment[S], 
@@ -285,14 +283,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait TokenConfig extends StObject {
     
     /**
       * Attributes for the node or mark. When `getAttrs` is provided,
       * it takes precedence.
       */
-    var attrs: js.UndefOr[Record[String, _]] = js.native
+    var attrs: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /**
       * This token comes in `_open` and `_close` variants (which are
@@ -301,7 +298,7 @@ object mod {
       * wrapped in a node of the type named to by the property's
       * value.
       */
-    var block: js.UndefOr[String] = js.native
+    var block: js.UndefOr[String] = js.undefined
     
     /**
       * A function used to compute the attributes for the node or mark
@@ -309,26 +306,26 @@ object mod {
       * token](https://markdown-it.github.io/markdown-it/#Token) and
       * returns an attribute object.
       */
-    var getAttrs: js.UndefOr[js.Function1[/* token */ typings.markdownIt.tokenMod.^, Record[String, _]]] = js.native
+    var getAttrs: js.UndefOr[js.Function1[/* token */ typings.markdownIt.tokenMod.^, Record[String, js.Any]]] = js.undefined
     
     /**
       * When true, ignore content for the matched token.
       */
-    var ignore: js.UndefOr[Boolean] = js.native
+    var ignore: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This token also comes in `_open` and `_close` variants, but
       * should add a mark (named by the value) to its content, rather
       * than wrapping it in a node.
       */
-    var mark: js.UndefOr[String] = js.native
+    var mark: js.UndefOr[String] = js.undefined
     
     /**
       * This token maps to a single node, whose type can be looked up
       * in the schema under the given name. Exactly one of `node`,
       * `block`, or `mark` must be set.
       */
-    var node: js.UndefOr[String] = js.native
+    var node: js.UndefOr[String] = js.undefined
   }
   object TokenConfig {
     
@@ -342,7 +339,7 @@ object mod {
     implicit class TokenConfigMutableBuilder[Self <: TokenConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttrs(value: Record[String, _]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
@@ -354,7 +351,7 @@ object mod {
       def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
       @scala.inline
-      def setGetAttrs(value: /* token */ typings.markdownIt.tokenMod.^ => Record[String, _]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
+      def setGetAttrs(value: /* token */ typings.markdownIt.tokenMod.^ => Record[String, js.Any]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)

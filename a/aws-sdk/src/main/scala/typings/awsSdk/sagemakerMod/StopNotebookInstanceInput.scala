@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopNotebookInstanceInput extends StObject {
   
   /**
     * The name of the notebook instance to terminate.
     */
-  var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName = js.native
+  var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName
 }
 object StopNotebookInstanceInput {
   

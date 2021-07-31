@@ -12,7 +12,7 @@ A very simple way to manage browser storage
 | Keywords           | localStorage, local, storage, localstorage, cookie, cookies |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 12996 |
+| # downloads        | 17225 |
 | # stars            | 0 |
 
 ## Links

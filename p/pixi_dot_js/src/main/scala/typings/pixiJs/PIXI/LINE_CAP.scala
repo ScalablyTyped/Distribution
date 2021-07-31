@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,11 +24,17 @@ sealed trait LINE_CAP extends StObject
 object LINE_CAP extends StObject {
   
   @js.native
-  sealed trait BUTT extends LINE_CAP
+  sealed trait BUTT
+    extends StObject
+       with LINE_CAP
   
   @js.native
-  sealed trait ROUND extends LINE_CAP
+  sealed trait ROUND
+    extends StObject
+       with LINE_CAP
   
   @js.native
-  sealed trait SQUARE extends LINE_CAP
+  sealed trait SQUARE
+    extends StObject
+       with LINE_CAP
 }

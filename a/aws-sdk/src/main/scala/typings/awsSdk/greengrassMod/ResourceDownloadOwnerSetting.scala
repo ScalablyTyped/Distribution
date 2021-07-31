@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDownloadOwnerSetting extends StObject {
   
   /**
     * The group owner of the resource. This is the name of an existing Linux OS group on the system or a GID. The group's permissions are added to the Lambda process.
     */
-  var GroupOwner: string = js.native
+  var GroupOwner: string
   
   /**
     * The permissions that the group owner has to the resource. Valid values are ''rw'' (read/write) or ''ro'' (read-only).
     */
-  var GroupPermission: Permission = js.native
+  var GroupPermission: Permission
 }
 object ResourceDownloadOwnerSetting {
   

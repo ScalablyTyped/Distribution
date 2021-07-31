@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessorInfo extends StObject {
   
   /**
     * The architectures supported by the instance type.
     */
-  var SupportedArchitectures: js.UndefOr[ArchitectureTypeList] = js.native
+  var SupportedArchitectures: js.UndefOr[ArchitectureTypeList] = js.undefined
   
   /**
     * The speed of the processor, in GHz.
     */
-  var SustainedClockSpeedInGhz: js.UndefOr[ProcessorSustainedClockSpeed] = js.native
+  var SustainedClockSpeedInGhz: js.UndefOr[ProcessorSustainedClockSpeed] = js.undefined
 }
 object ProcessorInfo {
   

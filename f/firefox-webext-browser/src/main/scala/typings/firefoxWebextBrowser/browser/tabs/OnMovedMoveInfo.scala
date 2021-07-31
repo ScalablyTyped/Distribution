@@ -2,17 +2,15 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnMovedMoveInfo extends StObject {
   
-  var fromIndex: Double = js.native
+  var fromIndex: Double
   
-  var toIndex: Double = js.native
+  var toIndex: Double
   
-  var windowId: Double = js.native
+  var windowId: Double
 }
 object OnMovedMoveInfo {
   

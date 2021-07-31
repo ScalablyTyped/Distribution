@@ -2,36 +2,34 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DislikeCount extends StObject {
   
   /**
     * The number of comments for the video.
     */
-  var commentCount: Double = js.native
+  var commentCount: Double
   
   /**
     * The number of users who have indicated that they disliked the video by giving it a negative rating.
     */
-  var dislikeCount: Double = js.native
+  var dislikeCount: Double
   
   /**
     * The number of users who currently have the video marked as a favorite video.
     */
-  var favoriteCount: Double = js.native
+  var favoriteCount: Double
   
   /**
     * The number of users who have indicated that they liked the video by giving it a positive rating.
     */
-  var likeCount: Double = js.native
+  var likeCount: Double
   
   /**
     * The number of times the video has been viewed.
     */
-  var viewCount: Double = js.native
+  var viewCount: Double
 }
 object DislikeCount {
   

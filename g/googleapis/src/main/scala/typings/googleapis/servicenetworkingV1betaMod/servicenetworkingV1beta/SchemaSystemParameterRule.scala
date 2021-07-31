@@ -2,14 +2,12 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Define a system parameter rule mapping system parameter definitions to
   * methods.
   */
-@js.native
 trait SchemaSystemParameterRule extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaSystemParameterRule extends StObject {
     * used the behavior is implementation-dependent. If none of the specified
     * names are present the behavior is parameter-dependent.
     */
-  var parameters: js.UndefOr[js.Array[SchemaSystemParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[SchemaSystemParameter]] = js.undefined
   
   /**
     * Selects the methods to which this rule applies. Use &#39;*&#39; to
     * indicate all methods in all APIs.  Refer to selector for syntax details.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object SchemaSystemParameterRule {
   

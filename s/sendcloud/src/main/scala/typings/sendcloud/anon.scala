@@ -2,25 +2,23 @@ package typings.sendcloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var description: String = js.native
+    var description: String
     
-    var members_count: Double = js.native
+    var members_count: Double
     
-    var modify_at: String = js.native
+    var modify_at: String
     
-    var name: String = js.native
+    var name: String
   }
   object Address {
     
@@ -60,18 +58,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Createdat extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var description: String = js.native
+    var description: String
     
-    var members_count: Double = js.native
+    var members_count: Double
     
-    var name: String = js.native
+    var name: String
   }
   object Createdat {
     
@@ -101,18 +98,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var description: String = js.native
+    var description: String
     
-    var members_count: Double = js.native
+    var members_count: Double
     
-    var modify_at: String = js.native
+    var modify_at: String
     
-    var name: String = js.native
+    var name: String
   }
   object Description {
     
@@ -142,20 +138,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Modifyat extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var modify_at: String = js.native
+    var modify_at: String
     
-    var name: String = js.native
+    var name: String
     
-    var subscribed: String = js.native
+    var subscribed: String
     
-    var vars: js.Object = js.native
+    var vars: js.Object
   }
   object Modifyat {
     

@@ -5,7 +5,6 @@ import typings.ethersprojectProviders.anon.Method
 import typings.ethersprojectProviders.jsonRpcProviderMod.JsonRpcProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object web3ProviderMod {
@@ -18,22 +17,21 @@ object web3ProviderMod {
     def this(provider: ExternalProvider, network: Networkish) = this()
     def this(provider: JsonRpcFetchFunc, network: Networkish) = this()
     
-    def jsonRpcFetchFunc(method: String): js.Promise[_] = js.native
-    def jsonRpcFetchFunc(method: String, params: js.Array[_]): js.Promise[_] = js.native
+    def jsonRpcFetchFunc(method: String): js.Promise[js.Any] = js.native
+    def jsonRpcFetchFunc(method: String, params: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
     val provider: ExternalProvider = js.native
   }
   
-  @js.native
   trait ExternalProvider extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var isMetaMask: js.UndefOr[Boolean] = js.native
+    var isMetaMask: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var request: js.UndefOr[js.Function1[/* request */ Method, js.Promise[_]]] = js.native
+    var request: js.UndefOr[js.Function1[/* request */ Method, js.Promise[js.Any]]] = js.undefined
     
     var send: js.UndefOr[
         js.Function2[
@@ -41,7 +39,7 @@ object web3ProviderMod {
           /* callback */ js.Function2[/* error */ js.Any, /* response */ js.Any, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var sendAsync: js.UndefOr[
         js.Function2[
@@ -49,7 +47,7 @@ object web3ProviderMod {
           /* callback */ js.Function2[/* error */ js.Any, /* response */ js.Any, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ExternalProvider {
     
@@ -81,7 +79,7 @@ object web3ProviderMod {
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       @scala.inline
-      def setRequest(value: /* request */ Method => js.Promise[_]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+      def setRequest(value: /* request */ Method => js.Promise[js.Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)

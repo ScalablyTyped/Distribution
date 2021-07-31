@@ -2,7 +2,6 @@ package typings.winjs.global.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("WinJS.UI.Layout")
 @js.native
 class Layout ()
-  extends typings.winjs.WinJS.UI.Layout
+  extends StObject
+     with typings.winjs.WinJS.UI.Layout
 object Layout {
   
   @JSGlobal("WinJS.UI.Layout")

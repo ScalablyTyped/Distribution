@@ -32,15 +32,15 @@ import typings.reactNative.mod.StatusBarStyle
 import typings.reactNative.mod._ColorSchemeName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeStrings {
   
   @js.native
   sealed trait default
-    extends KeyboardType
+    extends StObject
        with AlertType
+       with KeyboardType
        with ResponseType
        with ReturnKeyTypeIOS
        with ReturnKeyTypeOptions
@@ -94,13 +94,16 @@ object reactNativeStrings {
   def `900`: `900` = "900".asInstanceOf[`900`]
   
   @js.native
-  sealed trait Album extends CameraRollGroupType
+  sealed trait Album
+    extends StObject
+       with CameraRollGroupType
   @scala.inline
   def Album: Album = "Album".asInstanceOf[Album]
   
   @js.native
   sealed trait All
-    extends CameraRollAssetType
+    extends StObject
+       with CameraRollAssetType
        with CameraRollGroupType
   @scala.inline
   def All: All = "All".asInstanceOf[All]
@@ -116,12 +119,16 @@ object reactNativeStrings {
   def Dragging: Dragging = "Dragging".asInstanceOf[Dragging]
   
   @js.native
-  sealed trait Event extends CameraRollGroupType
+  sealed trait Event
+    extends StObject
+       with CameraRollGroupType
   @scala.inline
   def Event: Event = "Event".asInstanceOf[Event]
   
   @js.native
-  sealed trait Faces extends CameraRollGroupType
+  sealed trait Faces
+    extends StObject
+       with CameraRollGroupType
   @scala.inline
   def Faces: Faces = "Faces".asInstanceOf[Faces]
   
@@ -151,7 +158,9 @@ object reactNativeStrings {
   def LargeInverse: LargeInverse = "LargeInverse".asInstanceOf[LargeInverse]
   
   @js.native
-  sealed trait Library extends CameraRollGroupType
+  sealed trait Library
+    extends StObject
+       with CameraRollGroupType
   @scala.inline
   def Library: Library = "Library".asInstanceOf[Library]
   
@@ -166,12 +175,16 @@ object reactNativeStrings {
   def Normal: Normal = "Normal".asInstanceOf[Normal]
   
   @js.native
-  sealed trait PhotoStream extends CameraRollGroupType
+  sealed trait PhotoStream
+    extends StObject
+       with CameraRollGroupType
   @scala.inline
   def PhotoStream: PhotoStream = "PhotoStream".asInstanceOf[PhotoStream]
   
   @js.native
-  sealed trait Photos extends CameraRollAssetType
+  sealed trait Photos
+    extends StObject
+       with CameraRollAssetType
   @scala.inline
   def Photos: Photos = "Photos".asInstanceOf[Photos]
   
@@ -186,7 +199,9 @@ object reactNativeStrings {
   def RippleAndroid: RippleAndroid = "RippleAndroid".asInstanceOf[RippleAndroid]
   
   @js.native
-  sealed trait SavedPhotos extends CameraRollGroupType
+  sealed trait SavedPhotos
+    extends StObject
+       with CameraRollGroupType
   @scala.inline
   def SavedPhotos: SavedPhotos = "SavedPhotos".asInstanceOf[SavedPhotos]
   
@@ -231,7 +246,9 @@ object reactNativeStrings {
   def URL: URL = "URL".asInstanceOf[URL]
   
   @js.native
-  sealed trait Videos extends CameraRollAssetType
+  sealed trait Videos
+    extends StObject
+       with CameraRollAssetType
   @scala.inline
   def Videos: Videos = "Videos".asInstanceOf[Videos]
   
@@ -241,7 +258,9 @@ object reactNativeStrings {
   def WithAnimatedObject: WithAnimatedObject = "WithAnimatedObject".asInstanceOf[WithAnimatedObject]
   
   @js.native
-  sealed trait _empty extends XMLHttpRequestResponseType
+  sealed trait _empty
+    extends StObject
+       with XMLHttpRequestResponseType
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -256,17 +275,23 @@ object reactNativeStrings {
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
-  sealed trait activate extends AccessibilityActionName
+  sealed trait activate
+    extends StObject
+       with AccessibilityActionName
   @scala.inline
   def activate: activate = "activate".asInstanceOf[activate]
   
   @js.native
-  sealed trait active extends AppStateStatus
+  sealed trait active
+    extends StObject
+       with AppStateStatus
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   
   @js.native
-  sealed trait address extends DataDetectorTypes
+  sealed trait address
+    extends StObject
+       with DataDetectorTypes
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   
@@ -287,23 +312,30 @@ object reactNativeStrings {
   
   @js.native
   sealed trait adjustable
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
   @scala.inline
   def adjustable: adjustable = "adjustable".asInstanceOf[adjustable]
   
   @js.native
-  sealed trait alert extends AccessibilityRole
+  sealed trait alert
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
-  sealed trait all_ extends DataDetectorTypes
+  sealed trait all_
+    extends StObject
+       with DataDetectorTypes
   @scala.inline
   def all_ : all_ = "all".asInstanceOf[all_]
   
   @js.native
-  sealed trait allowsDirectInteraction extends AccessibilityTrait
+  sealed trait allowsDirectInteraction
+    extends StObject
+       with AccessibilityTrait
   @scala.inline
   def allowsDirectInteraction: allowsDirectInteraction = "allowsDirectInteraction".asInstanceOf[allowsDirectInteraction]
   
@@ -313,122 +345,170 @@ object reactNativeStrings {
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait android extends PlatformOSType
+  sealed trait android
+    extends StObject
+       with PlatformOSType
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait androidDotpermissionDotACCESS_COARSE_LOCATION extends Permission
+  sealed trait androidDotpermissionDotACCESS_COARSE_LOCATION
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotACCESS_COARSE_LOCATION: androidDotpermissionDotACCESS_COARSE_LOCATION = "android.permission.ACCESS_COARSE_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_COARSE_LOCATION]
   
   @js.native
-  sealed trait androidDotpermissionDotACCESS_FINE_LOCATION extends Permission
+  sealed trait androidDotpermissionDotACCESS_FINE_LOCATION
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotACCESS_FINE_LOCATION: androidDotpermissionDotACCESS_FINE_LOCATION = "android.permission.ACCESS_FINE_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_FINE_LOCATION]
   
   @js.native
-  sealed trait androidDotpermissionDotBODY_SENSORS extends Permission
+  sealed trait androidDotpermissionDotBODY_SENSORS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotBODY_SENSORS: androidDotpermissionDotBODY_SENSORS = "android.permission.BODY_SENSORS".asInstanceOf[androidDotpermissionDotBODY_SENSORS]
   
   @js.native
-  sealed trait androidDotpermissionDotCALL_PHONE extends Permission
+  sealed trait androidDotpermissionDotCALL_PHONE
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotCALL_PHONE: androidDotpermissionDotCALL_PHONE = "android.permission.CALL_PHONE".asInstanceOf[androidDotpermissionDotCALL_PHONE]
   
   @js.native
-  sealed trait androidDotpermissionDotCAMERA extends Permission
+  sealed trait androidDotpermissionDotCAMERA
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotCAMERA: androidDotpermissionDotCAMERA = "android.permission.CAMERA".asInstanceOf[androidDotpermissionDotCAMERA]
   
   @js.native
-  sealed trait androidDotpermissionDotGET_ACCOUNTS extends Permission
+  sealed trait androidDotpermissionDotGET_ACCOUNTS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotGET_ACCOUNTS: androidDotpermissionDotGET_ACCOUNTS = "android.permission.GET_ACCOUNTS".asInstanceOf[androidDotpermissionDotGET_ACCOUNTS]
   
   @js.native
-  sealed trait androidDotpermissionDotPROCESS_OUTGOING_CALLS extends Permission
+  sealed trait androidDotpermissionDotPROCESS_OUTGOING_CALLS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotPROCESS_OUTGOING_CALLS: androidDotpermissionDotPROCESS_OUTGOING_CALLS = "android.permission.PROCESS_OUTGOING_CALLS".asInstanceOf[androidDotpermissionDotPROCESS_OUTGOING_CALLS]
   
   @js.native
-  sealed trait androidDotpermissionDotREAD_CALENDAR extends Permission
+  sealed trait androidDotpermissionDotREAD_CALENDAR
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotREAD_CALENDAR: androidDotpermissionDotREAD_CALENDAR = "android.permission.READ_CALENDAR".asInstanceOf[androidDotpermissionDotREAD_CALENDAR]
   
   @js.native
-  sealed trait androidDotpermissionDotREAD_CALL_LOG extends Permission
+  sealed trait androidDotpermissionDotREAD_CALL_LOG
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotREAD_CALL_LOG: androidDotpermissionDotREAD_CALL_LOG = "android.permission.READ_CALL_LOG".asInstanceOf[androidDotpermissionDotREAD_CALL_LOG]
   
   @js.native
-  sealed trait androidDotpermissionDotREAD_CONTACTS extends Permission
+  sealed trait androidDotpermissionDotREAD_CONTACTS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotREAD_CONTACTS: androidDotpermissionDotREAD_CONTACTS = "android.permission.READ_CONTACTS".asInstanceOf[androidDotpermissionDotREAD_CONTACTS]
   
   @js.native
-  sealed trait androidDotpermissionDotREAD_EXTERNAL_STORAGE extends Permission
+  sealed trait androidDotpermissionDotREAD_EXTERNAL_STORAGE
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotREAD_EXTERNAL_STORAGE: androidDotpermissionDotREAD_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE".asInstanceOf[androidDotpermissionDotREAD_EXTERNAL_STORAGE]
   
   @js.native
-  sealed trait androidDotpermissionDotREAD_PHONE_STATE extends Permission
+  sealed trait androidDotpermissionDotREAD_PHONE_STATE
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotREAD_PHONE_STATE: androidDotpermissionDotREAD_PHONE_STATE = "android.permission.READ_PHONE_STATE".asInstanceOf[androidDotpermissionDotREAD_PHONE_STATE]
   
   @js.native
-  sealed trait androidDotpermissionDotREAD_SMS extends Permission
+  sealed trait androidDotpermissionDotREAD_SMS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotREAD_SMS: androidDotpermissionDotREAD_SMS = "android.permission.READ_SMS".asInstanceOf[androidDotpermissionDotREAD_SMS]
   
   @js.native
-  sealed trait androidDotpermissionDotRECEIVE_MMS extends Permission
+  sealed trait androidDotpermissionDotRECEIVE_MMS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotRECEIVE_MMS: androidDotpermissionDotRECEIVE_MMS = "android.permission.RECEIVE_MMS".asInstanceOf[androidDotpermissionDotRECEIVE_MMS]
   
   @js.native
-  sealed trait androidDotpermissionDotRECEIVE_SMS extends Permission
+  sealed trait androidDotpermissionDotRECEIVE_SMS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotRECEIVE_SMS: androidDotpermissionDotRECEIVE_SMS = "android.permission.RECEIVE_SMS".asInstanceOf[androidDotpermissionDotRECEIVE_SMS]
   
   @js.native
-  sealed trait androidDotpermissionDotRECEIVE_WAP_PUSH extends Permission
+  sealed trait androidDotpermissionDotRECEIVE_WAP_PUSH
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotRECEIVE_WAP_PUSH: androidDotpermissionDotRECEIVE_WAP_PUSH = "android.permission.RECEIVE_WAP_PUSH".asInstanceOf[androidDotpermissionDotRECEIVE_WAP_PUSH]
   
   @js.native
-  sealed trait androidDotpermissionDotRECORD_AUDIO extends Permission
+  sealed trait androidDotpermissionDotRECORD_AUDIO
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotRECORD_AUDIO: androidDotpermissionDotRECORD_AUDIO = "android.permission.RECORD_AUDIO".asInstanceOf[androidDotpermissionDotRECORD_AUDIO]
   
   @js.native
-  sealed trait androidDotpermissionDotSEND_SMS extends Permission
+  sealed trait androidDotpermissionDotSEND_SMS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotSEND_SMS: androidDotpermissionDotSEND_SMS = "android.permission.SEND_SMS".asInstanceOf[androidDotpermissionDotSEND_SMS]
   
   @js.native
-  sealed trait androidDotpermissionDotUSE_SIP extends Permission
+  sealed trait androidDotpermissionDotUSE_SIP
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotUSE_SIP: androidDotpermissionDotUSE_SIP = "android.permission.USE_SIP".asInstanceOf[androidDotpermissionDotUSE_SIP]
   
   @js.native
-  sealed trait androidDotpermissionDotWRITE_CALENDAR extends Permission
+  sealed trait androidDotpermissionDotWRITE_CALENDAR
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotWRITE_CALENDAR: androidDotpermissionDotWRITE_CALENDAR = "android.permission.WRITE_CALENDAR".asInstanceOf[androidDotpermissionDotWRITE_CALENDAR]
   
   @js.native
-  sealed trait androidDotpermissionDotWRITE_CALL_LOG extends Permission
+  sealed trait androidDotpermissionDotWRITE_CALL_LOG
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotWRITE_CALL_LOG: androidDotpermissionDotWRITE_CALL_LOG = "android.permission.WRITE_CALL_LOG".asInstanceOf[androidDotpermissionDotWRITE_CALL_LOG]
   
   @js.native
-  sealed trait androidDotpermissionDotWRITE_CONTACTS extends Permission
+  sealed trait androidDotpermissionDotWRITE_CONTACTS
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotWRITE_CONTACTS: androidDotpermissionDotWRITE_CONTACTS = "android.permission.WRITE_CONTACTS".asInstanceOf[androidDotpermissionDotWRITE_CONTACTS]
   
   @js.native
-  sealed trait androidDotpermissionDotWRITE_EXTERNAL_STORAGE extends Permission
+  sealed trait androidDotpermissionDotWRITE_EXTERNAL_STORAGE
+    extends StObject
+       with Permission
   @scala.inline
   def androidDotpermissionDotWRITE_EXTERNAL_STORAGE: androidDotpermissionDotWRITE_EXTERNAL_STORAGE = "android.permission.WRITE_EXTERNAL_STORAGE".asInstanceOf[androidDotpermissionDotWRITE_EXTERNAL_STORAGE]
   
@@ -438,12 +518,16 @@ object reactNativeStrings {
   def announcementFinished: announcementFinished = "announcementFinished".asInstanceOf[announcementFinished]
   
   @js.native
-  sealed trait arraybuffer extends XMLHttpRequestResponseType
+  sealed trait arraybuffer
+    extends StObject
+       with XMLHttpRequestResponseType
   @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
-  sealed trait `ascii-capable` extends KeyboardTypeIOS
+  sealed trait `ascii-capable`
+    extends StObject
+       with KeyboardTypeIOS
   @scala.inline
   def `ascii-capable`: `ascii-capable` = "ascii-capable".asInstanceOf[`ascii-capable`]
   
@@ -463,7 +547,9 @@ object reactNativeStrings {
   def automatic: automatic = "automatic".asInstanceOf[automatic]
   
   @js.native
-  sealed trait background extends AppStateStatus
+  sealed trait background
+    extends StObject
+       with AppStateStatus
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   
@@ -478,12 +564,16 @@ object reactNativeStrings {
   def bar: bar = "bar".asInstanceOf[bar]
   
   @js.native
-  sealed trait baseline extends FlexAlignType
+  sealed trait baseline
+    extends StObject
+       with FlexAlignType
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait basic extends ResponseType
+  sealed trait basic
+    extends StObject
+       with ResponseType
   @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]
   
@@ -498,12 +588,16 @@ object reactNativeStrings {
   def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait blob extends XMLHttpRequestResponseType
+  sealed trait blob
+    extends StObject
+       with XMLHttpRequestResponseType
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
-  sealed trait blur extends AppStateEvent
+  sealed trait blur
+    extends StObject
+       with AppStateEvent
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   
@@ -513,7 +607,9 @@ object reactNativeStrings {
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait boldTextChanged extends AccessibilityChangeEventName
+  sealed trait boldTextChanged
+    extends StObject
+       with AccessibilityChangeEventName
   @scala.inline
   def boldTextChanged: boldTextChanged = "boldTextChanged".asInstanceOf[boldTextChanged]
   
@@ -544,7 +640,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait button
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
   @scala.inline
   def button: button = "button".asInstanceOf[button]
@@ -555,7 +652,9 @@ object reactNativeStrings {
   def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
-  sealed trait calendarEvent extends DataDetectorTypes
+  sealed trait calendarEvent
+    extends StObject
+       with DataDetectorTypes
   @scala.inline
   def calendarEvent: calendarEvent = "calendarEvent".asInstanceOf[calendarEvent]
   
@@ -596,14 +695,16 @@ object reactNativeStrings {
   
   @js.native
   sealed trait center
-    extends FlexAlignType
+    extends StObject
+       with FlexAlignType
        with ImageResizeMode
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait change
-    extends AccessibilityChangeEventName
+    extends StObject
+       with AccessibilityChangeEventName
        with AppStateEvent
   @scala.inline
   def change: change = "change".asInstanceOf[change]
@@ -614,12 +715,16 @@ object reactNativeStrings {
   def characters: characters = "characters".asInstanceOf[characters]
   
   @js.native
-  sealed trait checkbox extends AccessibilityRole
+  sealed trait checkbox
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait clamp extends ExtrapolateType
+  sealed trait clamp
+    extends StObject
+       with ExtrapolateType
   @scala.inline
   def clamp: clamp = "clamp".asInstanceOf[clamp]
   
@@ -644,12 +749,16 @@ object reactNativeStrings {
   def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
   @js.native
-  sealed trait comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL extends Permission
+  sealed trait comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL
+    extends StObject
+       with Permission
   @scala.inline
   def comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL]
   
   @js.native
-  sealed trait combobox extends AccessibilityRole
+  sealed trait combobox
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def combobox: combobox = "combobox".asInstanceOf[combobox]
   
@@ -659,13 +768,16 @@ object reactNativeStrings {
   def contacts: contacts = "contacts".asInstanceOf[contacts]
   
   @js.native
-  sealed trait contain extends ImageResizeMode
+  sealed trait contain
+    extends StObject
+       with ImageResizeMode
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
   sealed trait cors
-    extends RequestMode
+    extends StObject
+       with RequestMode
        with ResponseType
   @scala.inline
   def cors: cors = "cors".asInstanceOf[cors]
@@ -676,7 +788,9 @@ object reactNativeStrings {
   def countryName: countryName = "countryName".asInstanceOf[countryName]
   
   @js.native
-  sealed trait cover extends ImageResizeMode
+  sealed trait cover
+    extends StObject
+       with ImageResizeMode
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
   
@@ -686,12 +800,16 @@ object reactNativeStrings {
   def creditCardNumber: creditCardNumber = "creditCardNumber".asInstanceOf[creditCardNumber]
   
   @js.native
-  sealed trait dark extends _ColorSchemeName
+  sealed trait dark
+    extends StObject
+       with _ColorSchemeName
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait `dark-content` extends StatusBarStyle
+  sealed trait `dark-content`
+    extends StObject
+       with StatusBarStyle
   @scala.inline
   def `dark-content`: `dark-content` = "dark-content".asInstanceOf[`dark-content`]
   
@@ -721,12 +839,16 @@ object reactNativeStrings {
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait `decimal-pad` extends KeyboardType
+  sealed trait `decimal-pad`
+    extends StObject
+       with KeyboardType
   @scala.inline
   def `decimal-pad`: `decimal-pad` = "decimal-pad".asInstanceOf[`decimal-pad`]
   
   @js.native
-  sealed trait decrement extends AccessibilityActionName
+  sealed trait decrement
+    extends StObject
+       with AccessibilityActionName
   @scala.inline
   def decrement: decrement = "decrement".asInstanceOf[decrement]
   
@@ -736,7 +858,9 @@ object reactNativeStrings {
   def defaultProps: defaultProps = "defaultProps".asInstanceOf[defaultProps]
   
   @js.native
-  sealed trait denied extends PermissionStatus
+  sealed trait denied
+    extends StObject
+       with PermissionStatus
   @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
   
@@ -751,7 +875,9 @@ object reactNativeStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait disabled extends AccessibilityTrait
+  sealed trait disabled
+    extends StObject
+       with AccessibilityTrait
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
@@ -771,13 +897,16 @@ object reactNativeStrings {
   def dismissedAction: dismissedAction = "dismissedAction".asInstanceOf[dismissedAction]
   
   @js.native
-  sealed trait document extends XMLHttpRequestResponseType
+  sealed trait document
+    extends StObject
+       with XMLHttpRequestResponseType
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait done
-    extends ReturnKeyType
+    extends StObject
+       with ReturnKeyType
        with ReturnKeyTypeOptions
   @scala.inline
   def done: done = "done".asInstanceOf[done]
@@ -803,17 +932,23 @@ object reactNativeStrings {
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
-  sealed trait easeIn extends KeyboardEventEasing
+  sealed trait easeIn
+    extends StObject
+       with KeyboardEventEasing
   @scala.inline
   def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
   
   @js.native
-  sealed trait easeInEaseOut extends KeyboardEventEasing
+  sealed trait easeInEaseOut
+    extends StObject
+       with KeyboardEventEasing
   @scala.inline
   def easeInEaseOut: easeInEaseOut = "easeInEaseOut".asInstanceOf[easeInEaseOut]
   
   @js.native
-  sealed trait easeOut extends KeyboardEventEasing
+  sealed trait easeOut
+    extends StObject
+       with KeyboardEventEasing
   @scala.inline
   def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
   
@@ -823,7 +958,9 @@ object reactNativeStrings {
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait `email-address` extends KeyboardType
+  sealed trait `email-address`
+    extends StObject
+       with KeyboardType
   @scala.inline
   def `email-address`: `email-address` = "email-address".asInstanceOf[`email-address`]
   
@@ -834,7 +971,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait `emergency-call`
-    extends ReturnKeyTypeIOS
+    extends StObject
+       with ReturnKeyTypeIOS
        with ReturnKeyTypeOptions
   @scala.inline
   def `emergency-call`: `emergency-call` = "emergency-call".asInstanceOf[`emergency-call`]
@@ -845,27 +983,37 @@ object reactNativeStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait error extends ResponseType
+  sealed trait error
+    extends StObject
+       with ResponseType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait escape extends AccessibilityActionName
+  sealed trait escape
+    extends StObject
+       with AccessibilityActionName
   @scala.inline
   def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
-  sealed trait extend extends ExtrapolateType
+  sealed trait extend
+    extends StObject
+       with ExtrapolateType
   @scala.inline
   def extend: extend = "extend".asInstanceOf[extend]
   
   @js.native
-  sealed trait extension extends AppStateStatus
+  sealed trait `extension`
+    extends StObject
+       with AppStateStatus
   @scala.inline
-  def extension: extension = "extension".asInstanceOf[extension]
+  def `extension`: `extension` = "extension".asInstanceOf[`extension`]
   
   @js.native
-  sealed trait fade extends StatusBarAnimation
+  sealed trait fade
+    extends StObject
+       with StatusBarAnimation
   @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
   
@@ -900,17 +1048,23 @@ object reactNativeStrings {
   def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
-  sealed trait `flex-end` extends FlexAlignType
+  sealed trait `flex-end`
+    extends StObject
+       with FlexAlignType
   @scala.inline
   def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   
   @js.native
-  sealed trait `flex-start` extends FlexAlignType
+  sealed trait `flex-start`
+    extends StObject
+       with FlexAlignType
   @scala.inline
   def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
-  sealed trait focus extends AppStateEvent
+  sealed trait focus
+    extends StObject
+       with AppStateEvent
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   
@@ -925,7 +1079,9 @@ object reactNativeStrings {
   def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
   
   @js.native
-  sealed trait frequentUpdates extends AccessibilityTrait
+  sealed trait frequentUpdates
+    extends StObject
+       with AccessibilityTrait
   @scala.inline
   def frequentUpdates: frequentUpdates = "frequentUpdates".asInstanceOf[frequentUpdates]
   
@@ -956,25 +1112,31 @@ object reactNativeStrings {
   
   @js.native
   sealed trait go
-    extends ReturnKeyType
+    extends StObject
+       with ReturnKeyType
        with ReturnKeyTypeOptions
   @scala.inline
   def go: go = "go".asInstanceOf[go]
   
   @js.native
   sealed trait google
-    extends ReturnKeyTypeIOS
+    extends StObject
+       with ReturnKeyTypeIOS
        with ReturnKeyTypeOptions
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   
   @js.native
-  sealed trait granted extends PermissionStatus
+  sealed trait granted
+    extends StObject
+       with PermissionStatus
   @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
   
   @js.native
-  sealed trait grayscaleChanged extends AccessibilityChangeEventName
+  sealed trait grayscaleChanged
+    extends StObject
+       with AccessibilityChangeEventName
   @scala.inline
   def grayscaleChanged: grayscaleChanged = "grayscaleChanged".asInstanceOf[grayscaleChanged]
   
@@ -995,7 +1157,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait header
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
   @scala.inline
   def header: header = "header".asInstanceOf[header]
@@ -1026,7 +1189,9 @@ object reactNativeStrings {
   def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait identity extends ExtrapolateType
+  sealed trait identity
+    extends StObject
+       with ExtrapolateType
   @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   
@@ -1037,28 +1202,37 @@ object reactNativeStrings {
   
   @js.native
   sealed trait image
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait imagebutton extends AccessibilityRole
+  sealed trait imagebutton
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def imagebutton: imagebutton = "imagebutton".asInstanceOf[imagebutton]
   
   @js.native
-  sealed trait inactive extends AppStateStatus
+  sealed trait inactive
+    extends StObject
+       with AppStateStatus
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
-  sealed trait include extends RequestCredentials
+  sealed trait include
+    extends StObject
+       with RequestCredentials
   @scala.inline
   def include: include = "include".asInstanceOf[include]
   
   @js.native
-  sealed trait increment extends AccessibilityActionName
+  sealed trait increment
+    extends StObject
+       with AccessibilityActionName
   @scala.inline
   def increment: increment = "increment".asInstanceOf[increment]
   
@@ -1073,12 +1247,16 @@ object reactNativeStrings {
   def interactive: interactive = "interactive".asInstanceOf[interactive]
   
   @js.native
-  sealed trait invertColorsChanged extends AccessibilityChangeEventName
+  sealed trait invertColorsChanged
+    extends StObject
+       with AccessibilityChangeEventName
   @scala.inline
   def invertColorsChanged: invertColorsChanged = "invertColorsChanged".asInstanceOf[invertColorsChanged]
   
   @js.native
-  sealed trait ios extends PlatformOSType
+  sealed trait ios
+    extends StObject
+       with PlatformOSType
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   
@@ -1094,7 +1272,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait join
-    extends ReturnKeyTypeIOS
+    extends StObject
+       with ReturnKeyTypeIOS
        with ReturnKeyTypeOptions
   @scala.inline
   def join: join = "join".asInstanceOf[join]
@@ -1105,7 +1284,9 @@ object reactNativeStrings {
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
   @js.native
-  sealed trait json extends XMLHttpRequestResponseType
+  sealed trait json
+    extends StObject
+       with XMLHttpRequestResponseType
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
@@ -1116,48 +1297,65 @@ object reactNativeStrings {
   
   @js.native
   sealed trait key
-    extends AccessibilityTrait
+    extends StObject
+       with AccessibilityTrait
        with NonAnimatedProps
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait keyboard extends KeyboardEventEasing
+  sealed trait keyboard
+    extends StObject
+       with KeyboardEventEasing
   @scala.inline
   def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   
   @js.native
-  sealed trait keyboardDidChangeFrame extends KeyboardEventName
+  sealed trait keyboardDidChangeFrame
+    extends StObject
+       with KeyboardEventName
   @scala.inline
   def keyboardDidChangeFrame: keyboardDidChangeFrame = "keyboardDidChangeFrame".asInstanceOf[keyboardDidChangeFrame]
   
   @js.native
-  sealed trait keyboardDidHide extends KeyboardEventName
+  sealed trait keyboardDidHide
+    extends StObject
+       with KeyboardEventName
   @scala.inline
   def keyboardDidHide: keyboardDidHide = "keyboardDidHide".asInstanceOf[keyboardDidHide]
   
   @js.native
-  sealed trait keyboardDidShow extends KeyboardEventName
+  sealed trait keyboardDidShow
+    extends StObject
+       with KeyboardEventName
   @scala.inline
   def keyboardDidShow: keyboardDidShow = "keyboardDidShow".asInstanceOf[keyboardDidShow]
   
   @js.native
-  sealed trait keyboardWillChangeFrame extends KeyboardEventName
+  sealed trait keyboardWillChangeFrame
+    extends StObject
+       with KeyboardEventName
   @scala.inline
   def keyboardWillChangeFrame: keyboardWillChangeFrame = "keyboardWillChangeFrame".asInstanceOf[keyboardWillChangeFrame]
   
   @js.native
-  sealed trait keyboardWillHide extends KeyboardEventName
+  sealed trait keyboardWillHide
+    extends StObject
+       with KeyboardEventName
   @scala.inline
   def keyboardWillHide: keyboardWillHide = "keyboardWillHide".asInstanceOf[keyboardWillHide]
   
   @js.native
-  sealed trait keyboardWillShow extends KeyboardEventName
+  sealed trait keyboardWillShow
+    extends StObject
+       with KeyboardEventName
   @scala.inline
   def keyboardWillShow: keyboardWillShow = "keyboardWillShow".asInstanceOf[keyboardWillShow]
   
   @js.native
-  sealed trait keyboardkey extends AccessibilityRole
+  sealed trait keyboardkey
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def keyboardkey: keyboardkey = "keyboardkey".asInstanceOf[keyboardkey]
   
@@ -1192,12 +1390,16 @@ object reactNativeStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait light extends _ColorSchemeName
+  sealed trait light
+    extends StObject
+       with _ColorSchemeName
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait `light-content` extends StatusBarStyle
+  sealed trait `light-content`
+    extends StObject
+       with StatusBarStyle
   @scala.inline
   def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
   
@@ -1207,18 +1409,23 @@ object reactNativeStrings {
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   
   @js.native
-  sealed trait linear extends KeyboardEventEasing
+  sealed trait linear
+    extends StObject
+       with KeyboardEventEasing
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait `lining-nums` extends FontVariant
+  sealed trait `lining-nums`
+    extends StObject
+       with FontVariant
   @scala.inline
   def `lining-nums`: `lining-nums` = "lining-nums".asInstanceOf[`lining-nums`]
   
   @js.native
   sealed trait link
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
        with DataDetectorTypes
   @scala.inline
@@ -1240,7 +1447,9 @@ object reactNativeStrings {
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   
   @js.native
-  sealed trait localNotification extends PushNotificationEventName
+  sealed trait localNotification
+    extends StObject
+       with PushNotificationEventName
   @scala.inline
   def localNotification: localNotification = "localNotification".asInstanceOf[localNotification]
   
@@ -1260,12 +1469,16 @@ object reactNativeStrings {
   def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
   
   @js.native
-  sealed trait `login-password` extends AlertType
+  sealed trait `login-password`
+    extends StObject
+       with AlertType
   @scala.inline
   def `login-password`: `login-password` = "login-password".asInstanceOf[`login-password`]
   
   @js.native
-  sealed trait longpress extends AccessibilityActionName
+  sealed trait longpress
+    extends StObject
+       with AccessibilityActionName
   @scala.inline
   def longpress: longpress = "longpress".asInstanceOf[longpress]
   
@@ -1280,12 +1493,16 @@ object reactNativeStrings {
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait macos extends PlatformOSType
+  sealed trait macos
+    extends StObject
+       with PlatformOSType
   @scala.inline
   def macos: macos = "macos".asInstanceOf[macos]
   
   @js.native
-  sealed trait magicTap extends AccessibilityActionName
+  sealed trait magicTap
+    extends StObject
+       with AccessibilityActionName
   @scala.inline
   def magicTap: magicTap = "magicTap".asInstanceOf[magicTap]
   
@@ -1295,22 +1512,30 @@ object reactNativeStrings {
   def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
-  sealed trait memoryWarning extends AppStateEvent
+  sealed trait memoryWarning
+    extends StObject
+       with AppStateEvent
   @scala.inline
   def memoryWarning: memoryWarning = "memoryWarning".asInstanceOf[memoryWarning]
   
   @js.native
-  sealed trait menu extends AccessibilityRole
+  sealed trait menu
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait menubar extends AccessibilityRole
+  sealed trait menubar
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def menubar: menubar = "menubar".asInstanceOf[menubar]
   
   @js.native
-  sealed trait menuitem extends AccessibilityRole
+  sealed trait menuitem
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
@@ -1365,7 +1590,9 @@ object reactNativeStrings {
   def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait `name-phone-pad` extends KeyboardTypeIOS
+  sealed trait `name-phone-pad`
+    extends StObject
+       with KeyboardTypeIOS
   @scala.inline
   def `name-phone-pad`: `name-phone-pad` = "name-phone-pad".asInstanceOf[`name-phone-pad`]
   
@@ -1380,12 +1607,16 @@ object reactNativeStrings {
   def nameSuffix: nameSuffix = "nameSuffix".asInstanceOf[nameSuffix]
   
   @js.native
-  sealed trait native extends PlatformOSType
+  sealed trait native
+    extends StObject
+       with PlatformOSType
   @scala.inline
   def native: native = "native".asInstanceOf[native]
   
   @js.native
-  sealed trait navigate extends RequestMode
+  sealed trait navigate
+    extends StObject
+       with RequestMode
   @scala.inline
   def navigate: navigate = "navigate".asInstanceOf[navigate]
   
@@ -1395,7 +1626,9 @@ object reactNativeStrings {
   def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait never_ask_again extends PermissionStatus
+  sealed trait never_ask_again
+    extends StObject
+       with PermissionStatus
   @scala.inline
   def never_ask_again: never_ask_again = "never_ask_again".asInstanceOf[never_ask_again]
   
@@ -1406,7 +1639,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait next
-    extends ReturnKeyType
+    extends StObject
+       with ReturnKeyType
        with ReturnKeyTypeOptions
   @scala.inline
   def next: next = "next".asInstanceOf[next]
@@ -1422,7 +1656,9 @@ object reactNativeStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait `no-cors` extends RequestMode
+  sealed trait `no-cors`
+    extends StObject
+       with RequestMode
   @scala.inline
   def `no-cors`: `no-cors` = "no-cors".asInstanceOf[`no-cors`]
   
@@ -1438,7 +1674,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait none
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
        with DataDetectorTypes
        with ReturnKeyTypeAndroid
@@ -1453,7 +1690,9 @@ object reactNativeStrings {
   def normal_ : normal_ = "normal".asInstanceOf[normal_]
   
   @js.native
-  sealed trait notification extends PushNotificationEventName
+  sealed trait notification
+    extends StObject
+       with PushNotificationEventName
   @scala.inline
   def notification: notification = "notification".asInstanceOf[notification]
   
@@ -1463,17 +1702,23 @@ object reactNativeStrings {
   def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   
   @js.native
-  sealed trait `number-pad` extends KeyboardType
+  sealed trait `number-pad`
+    extends StObject
+       with KeyboardType
   @scala.inline
   def `number-pad`: `number-pad` = "number-pad".asInstanceOf[`number-pad`]
   
   @js.native
-  sealed trait `numbers-and-punctuation` extends KeyboardTypeIOS
+  sealed trait `numbers-and-punctuation`
+    extends StObject
+       with KeyboardTypeIOS
   @scala.inline
   def `numbers-and-punctuation`: `numbers-and-punctuation` = "numbers-and-punctuation".asInstanceOf[`numbers-and-punctuation`]
   
   @js.native
-  sealed trait numeric extends KeyboardType
+  sealed trait numeric
+    extends StObject
+       with KeyboardType
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
@@ -1483,12 +1728,16 @@ object reactNativeStrings {
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait `oldstyle-nums` extends FontVariant
+  sealed trait `oldstyle-nums`
+    extends StObject
+       with FontVariant
   @scala.inline
   def `oldstyle-nums`: `oldstyle-nums` = "oldstyle-nums".asInstanceOf[`oldstyle-nums`]
   
   @js.native
-  sealed trait omit extends RequestCredentials
+  sealed trait omit
+    extends StObject
+       with RequestCredentials
   @scala.inline
   def omit: omit = "omit".asInstanceOf[omit]
   
@@ -1508,12 +1757,16 @@ object reactNativeStrings {
   def `only-if-cached`: `only-if-cached` = "only-if-cached".asInstanceOf[`only-if-cached`]
   
   @js.native
-  sealed trait opaque extends ResponseType
+  sealed trait opaque
+    extends StObject
+       with ResponseType
   @scala.inline
   def opaque: opaque = "opaque".asInstanceOf[opaque]
   
   @js.native
-  sealed trait opaqueredirect extends ResponseType
+  sealed trait opaqueredirect
+    extends StObject
+       with ResponseType
   @scala.inline
   def opaqueredirect: opaqueredirect = "opaqueredirect".asInstanceOf[opaqueredirect]
   
@@ -1538,7 +1791,9 @@ object reactNativeStrings {
   def pageSheet: pageSheet = "pageSheet".asInstanceOf[pageSheet]
   
   @js.native
-  sealed trait pageTurn extends AccessibilityTrait
+  sealed trait pageTurn
+    extends StObject
+       with AccessibilityTrait
   @scala.inline
   def pageTurn: pageTurn = "pageTurn".asInstanceOf[pageTurn]
   
@@ -1548,12 +1803,16 @@ object reactNativeStrings {
   def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait `phone-pad` extends KeyboardType
+  sealed trait `phone-pad`
+    extends StObject
+       with KeyboardType
   @scala.inline
   def `phone-pad`: `phone-pad` = "phone-pad".asInstanceOf[`phone-pad`]
   
   @js.native
-  sealed trait phoneNumber extends DataDetectorTypes
+  sealed trait phoneNumber
+    extends StObject
+       with DataDetectorTypes
   @scala.inline
   def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
@@ -1563,12 +1822,16 @@ object reactNativeStrings {
   def photo: photo = "photo".asInstanceOf[photo]
   
   @js.native
-  sealed trait `plain-text` extends AlertType
+  sealed trait `plain-text`
+    extends StObject
+       with AlertType
   @scala.inline
   def `plain-text`: `plain-text` = "plain-text".asInstanceOf[`plain-text`]
   
   @js.native
-  sealed trait plays extends AccessibilityTrait
+  sealed trait plays
+    extends StObject
+       with AccessibilityTrait
   @scala.inline
   def plays: plays = "plays".asInstanceOf[plays]
   
@@ -1609,7 +1872,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait previous
-    extends ReturnKeyTypeAndroid
+    extends StObject
+       with ReturnKeyTypeAndroid
        with ReturnKeyTypeOptions
   @scala.inline
   def previous: previous = "previous".asInstanceOf[previous]
@@ -1620,7 +1884,9 @@ object reactNativeStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait progressbar extends AccessibilityRole
+  sealed trait progressbar
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
   
@@ -1630,12 +1896,16 @@ object reactNativeStrings {
   def propTypes: propTypes = "propTypes".asInstanceOf[propTypes]
   
   @js.native
-  sealed trait `proportional-nums` extends FontVariant
+  sealed trait `proportional-nums`
+    extends StObject
+       with FontVariant
   @scala.inline
   def `proportional-nums`: `proportional-nums` = "proportional-nums".asInstanceOf[`proportional-nums`]
   
   @js.native
-  sealed trait radio extends AccessibilityRole
+  sealed trait radio
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   
@@ -1650,7 +1920,9 @@ object reactNativeStrings {
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
-  sealed trait radiogroup extends AccessibilityRole
+  sealed trait radiogroup
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def radiogroup: radiogroup = "radiogroup".asInstanceOf[radiogroup]
   
@@ -1665,27 +1937,37 @@ object reactNativeStrings {
   def recents: recents = "recents".asInstanceOf[recents]
   
   @js.native
-  sealed trait reduceMotionChanged extends AccessibilityChangeEventName
+  sealed trait reduceMotionChanged
+    extends StObject
+       with AccessibilityChangeEventName
   @scala.inline
   def reduceMotionChanged: reduceMotionChanged = "reduceMotionChanged".asInstanceOf[reduceMotionChanged]
   
   @js.native
-  sealed trait reduceTransparencyChanged extends AccessibilityChangeEventName
+  sealed trait reduceTransparencyChanged
+    extends StObject
+       with AccessibilityChangeEventName
   @scala.inline
   def reduceTransparencyChanged: reduceTransparencyChanged = "reduceTransparencyChanged".asInstanceOf[reduceTransparencyChanged]
   
   @js.native
-  sealed trait ref extends NonAnimatedProps
+  sealed trait ref
+    extends StObject
+       with NonAnimatedProps
   @scala.inline
   def ref: ref = "ref".asInstanceOf[ref]
   
   @js.native
-  sealed trait register extends PushNotificationEventName
+  sealed trait register
+    extends StObject
+       with PushNotificationEventName
   @scala.inline
   def register: register = "register".asInstanceOf[register]
   
   @js.native
-  sealed trait registrationError extends PushNotificationEventName
+  sealed trait registrationError
+    extends StObject
+       with PushNotificationEventName
   @scala.inline
   def registrationError: registrationError = "registrationError".asInstanceOf[registrationError]
   
@@ -1700,7 +1982,9 @@ object reactNativeStrings {
   def reload: reload = "reload".asInstanceOf[reload]
   
   @js.native
-  sealed trait repeat extends ImageResizeMode
+  sealed trait repeat
+    extends StObject
+       with ImageResizeMode
   @scala.inline
   def repeat: repeat = "repeat".asInstanceOf[repeat]
   
@@ -1721,7 +2005,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait route
-    extends ReturnKeyTypeIOS
+    extends StObject
+       with ReturnKeyTypeIOS
        with ReturnKeyTypeOptions
   @scala.inline
   def route: route = "route".asInstanceOf[route]
@@ -1743,7 +2028,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait `same-origin`
-    extends RequestCredentials
+    extends StObject
+       with RequestCredentials
        with RequestMode
   @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
@@ -1759,7 +2045,9 @@ object reactNativeStrings {
   def screen: screen = "screen".asInstanceOf[screen]
   
   @js.native
-  sealed trait screenReaderChanged extends AccessibilityChangeEventName
+  sealed trait screenReaderChanged
+    extends StObject
+       with AccessibilityChangeEventName
   @scala.inline
   def screenReaderChanged: screenReaderChanged = "screenReaderChanged".asInstanceOf[screenReaderChanged]
   
@@ -1774,13 +2062,16 @@ object reactNativeStrings {
   def scrollableAxes: scrollableAxes = "scrollableAxes".asInstanceOf[scrollableAxes]
   
   @js.native
-  sealed trait scrollbar extends AccessibilityRole
+  sealed trait scrollbar
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
   
   @js.native
   sealed trait search
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
        with ReturnKeyType
        with ReturnKeyTypeOptions
@@ -1788,18 +2079,23 @@ object reactNativeStrings {
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait `secure-text` extends AlertType
+  sealed trait `secure-text`
+    extends StObject
+       with AlertType
   @scala.inline
   def `secure-text`: `secure-text` = "secure-text".asInstanceOf[`secure-text`]
   
   @js.native
-  sealed trait selected extends AccessibilityTrait
+  sealed trait selected
+    extends StObject
+       with AccessibilityTrait
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   
   @js.native
   sealed trait send
-    extends ReturnKeyType
+    extends StObject
+       with ReturnKeyType
        with ReturnKeyTypeOptions
   @scala.inline
   def send: send = "send".asInstanceOf[send]
@@ -1820,12 +2116,16 @@ object reactNativeStrings {
   def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
-  sealed trait slide extends StatusBarAnimation
+  sealed trait slide
+    extends StObject
+       with StatusBarAnimation
   @scala.inline
   def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait `small-caps` extends FontVariant
+  sealed trait `small-caps`
+    extends StObject
+       with FontVariant
   @scala.inline
   def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
   
@@ -1855,7 +2155,9 @@ object reactNativeStrings {
   def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
   
   @js.native
-  sealed trait spinbutton extends AccessibilityRole
+  sealed trait spinbutton
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
   
@@ -1875,7 +2177,9 @@ object reactNativeStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait startsMedia extends AccessibilityTrait
+  sealed trait startsMedia
+    extends StObject
+       with AccessibilityTrait
   @scala.inline
   def startsMedia: startsMedia = "startsMedia".asInstanceOf[startsMedia]
   
@@ -1896,7 +2200,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait stretch
-    extends FlexAlignType
+    extends StObject
+       with FlexAlignType
        with ImageResizeMode
   @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
@@ -1908,28 +2213,37 @@ object reactNativeStrings {
   
   @js.native
   sealed trait summary
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
   @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
-  sealed trait switch extends AccessibilityRole
+  sealed trait switch
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait tab extends AccessibilityRole
+  sealed trait tab
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
-  sealed trait tablist extends AccessibilityRole
+  sealed trait tablist
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def tablist: tablist = "tablist".asInstanceOf[tablist]
   
   @js.native
-  sealed trait `tabular-nums` extends FontVariant
+  sealed trait `tabular-nums`
+    extends StObject
+       with FontVariant
   @scala.inline
   def `tabular-nums`: `tabular-nums` = "tabular-nums".asInstanceOf[`tabular-nums`]
   
@@ -1950,7 +2264,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait text
-    extends AccessibilityRole
+    extends StObject
+       with AccessibilityRole
        with AccessibilityTrait
        with XMLHttpRequestResponseType
   @scala.inline
@@ -1972,12 +2287,16 @@ object reactNativeStrings {
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
-  sealed trait timer extends AccessibilityRole
+  sealed trait timer
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def timer: timer = "timer".asInstanceOf[timer]
   
   @js.native
-  sealed trait toolbar extends AccessibilityRole
+  sealed trait toolbar
+    extends StObject
+       with AccessibilityRole
   @scala.inline
   def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
   
@@ -1997,7 +2316,9 @@ object reactNativeStrings {
   def trailing: trailing = "trailing".asInstanceOf[trailing]
   
   @js.native
-  sealed trait twitter extends KeyboardTypeIOS
+  sealed trait twitter
+    extends StObject
+       with KeyboardTypeIOS
   @scala.inline
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   
@@ -2012,7 +2333,9 @@ object reactNativeStrings {
   def `underline line-through`: `underline line-through` = ("underline line-through").asInstanceOf[`underline line-through`]
   
   @js.native
-  sealed trait unknown extends AppStateStatus
+  sealed trait unknown
+    extends StObject
+       with AppStateStatus
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
@@ -2032,7 +2355,9 @@ object reactNativeStrings {
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   
   @js.native
-  sealed trait url_ extends KeyboardTypeIOS
+  sealed trait url_
+    extends StObject
+       with KeyboardTypeIOS
   @scala.inline
   def url_ : url_ = "url".asInstanceOf[url_]
   
@@ -2057,12 +2382,16 @@ object reactNativeStrings {
   def `visible-password`: `visible-password` = "visible-password".asInstanceOf[`visible-password`]
   
   @js.native
-  sealed trait web extends PlatformOSType
+  sealed trait web
+    extends StObject
+       with PlatformOSType
   @scala.inline
   def web: web = "web".asInstanceOf[web]
   
   @js.native
-  sealed trait `web-search` extends KeyboardTypeIOS
+  sealed trait `web-search`
+    extends StObject
+       with KeyboardTypeIOS
   @scala.inline
   def `web-search`: `web-search` = "web-search".asInstanceOf[`web-search`]
   
@@ -2087,7 +2416,9 @@ object reactNativeStrings {
   def window: window = "window".asInstanceOf[window]
   
   @js.native
-  sealed trait windows extends PlatformOSType
+  sealed trait windows
+    extends StObject
+       with PlatformOSType
   @scala.inline
   def windows: windows = "windows".asInstanceOf[windows]
   
@@ -2108,7 +2439,8 @@ object reactNativeStrings {
   
   @js.native
   sealed trait yahoo
-    extends ReturnKeyTypeIOS
+    extends StObject
+       with ReturnKeyTypeIOS
        with ReturnKeyTypeOptions
   @scala.inline
   def yahoo: yahoo = "yahoo".asInstanceOf[yahoo]

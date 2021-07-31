@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -55,9 +54,8 @@ object AggregateListAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AggregateListAction.create")
-  @js.native
-  def create(model: IModel): AggregateListAction = js.native
+  @scala.inline
+  def create(model: IModel): AggregateListAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AggregateListAction]
   
   /**
     * Creates and returns a new AggregateListAction instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object AggregateListAction {
     * of the parent ActionActivity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AggregateListAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): AggregateListAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): AggregateListAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AggregateListAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AggregateListAction.structureTypeName")

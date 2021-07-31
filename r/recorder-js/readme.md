@@ -11,8 +11,8 @@ Record audio in your browser
 | Full name          | recorder-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 66548 |
+| # dependents       | 5 |
+| # downloads        | 91503 |
 | # stars            | 1 |
 
 ## Links

@@ -5,21 +5,19 @@ import typings.braintreeWebDropIn.braintreeWebDropInStrings.checkout
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.vault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait paypalCreateOptions extends StObject {
   
-  var amount: js.UndefOr[String | Double] = js.native
+  var amount: js.UndefOr[String | Double] = js.undefined
   
-  var buttonStyle: js.UndefOr[PartialButtonStyle] = js.native
+  var buttonStyle: js.UndefOr[PartialButtonStyle] = js.undefined
   
-  var commit: js.UndefOr[Boolean] = js.native
+  var commit: js.UndefOr[Boolean] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var flow: checkout | vault = js.native
+  var flow: checkout | vault
 }
 object paypalCreateOptions {
   

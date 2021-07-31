@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     CardService.newAuthorizationAction()
   *       .setAuthorizationUrl("http://google.com/");
   */
-@js.native
 trait AuthorizationAction extends StObject {
   
-  def setAuthorizationUrl(authorizationUrl: String): AuthorizationAction = js.native
+  def setAuthorizationUrl(authorizationUrl: String): AuthorizationAction
 }
 object AuthorizationAction {
   

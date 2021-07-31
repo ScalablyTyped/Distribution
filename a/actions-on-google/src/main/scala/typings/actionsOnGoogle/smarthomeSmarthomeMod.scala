@@ -17,11 +17,12 @@ import typings.actionsOnGoogle.apiV1Mod.SmartHomeV1SyncResponse
 import typings.actionsOnGoogle.assistantMod.AppHandler
 import typings.actionsOnGoogle.assistantMod.AppOptions
 import typings.actionsOnGoogle.assistantMod.ServiceBaseApp
+import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.frameworkFrameworkMod.BuiltinFrameworkMetadata
 import typings.actionsOnGoogle.frameworkFrameworkMod.Headers
+import typings.actionsOnGoogle.frameworkFrameworkMod.StandardResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smarthomeSmarthomeMod {
@@ -30,20 +31,21 @@ object smarthomeSmarthomeMod {
   @js.native
   val smarthome: SmartHome_ = js.native
   
-  @js.native
-  trait SmartHomeApp extends ServiceBaseApp {
+  trait SmartHomeApp
+    extends StObject
+       with ServiceBaseApp {
     
     /** @hidden */
-    def _intent(intent: SmartHomeV1Intents, handler: SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]): this.type = js.native
+    def _intent(intent: SmartHomeV1Intents, handler: SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]): this.type
     
     /** @hidden */
-    var _intents: SmartHomeHandlers = js.native
+    var _intents: SmartHomeHandlers
     
     /** @public */
-    var jwt: js.UndefOr[SmartHomeJwt] = js.native
+    var jwt: js.UndefOr[SmartHomeJwt] = js.undefined
     
     /** @public */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * Defines a function that will run when a DISCONNECT request is received.
@@ -62,7 +64,7 @@ object smarthomeSmarthomeMod {
       *
       * @public
       */
-    def onDisconnect(handler: SmartHomeHandler[SmartHomeV1DisconnectRequest, SmartHomeV1DisconnectResponse]): this.type = js.native
+    def onDisconnect(handler: SmartHomeHandler[SmartHomeV1DisconnectRequest, SmartHomeV1DisconnectResponse]): this.type
     
     /**
       * Defines a function that will run when an EXECUTE request is received.
@@ -85,7 +87,7 @@ object smarthomeSmarthomeMod {
       *
       * @public
       */
-    def onExecute(handler: SmartHomeHandler[SmartHomeV1ExecuteRequest, SmartHomeV1ExecuteResponse]): this.type = js.native
+    def onExecute(handler: SmartHomeHandler[SmartHomeV1ExecuteRequest, SmartHomeV1ExecuteResponse]): this.type
     
     /**
       * Defines a function that will run when a QUERY request is received.
@@ -109,7 +111,7 @@ object smarthomeSmarthomeMod {
       *
       * @public
       */
-    def onQuery(handler: SmartHomeHandler[SmartHomeV1QueryRequest, SmartHomeV1QueryResponse]): this.type = js.native
+    def onQuery(handler: SmartHomeHandler[SmartHomeV1QueryRequest, SmartHomeV1QueryResponse]): this.type
     
     /**
       * Defines a function that will run when a SYNC request is received.
@@ -133,7 +135,7 @@ object smarthomeSmarthomeMod {
       *
       * @public
       */
-    def onSync(handler: SmartHomeHandler[SmartHomeV1SyncRequest, SmartHomeV1SyncResponse]): this.type = js.native
+    def onSync(handler: SmartHomeHandler[SmartHomeV1SyncRequest, SmartHomeV1SyncResponse]): this.type
     
     /**
       * Reports the current state of a device or set of devices to the home graph.
@@ -176,7 +178,7 @@ object smarthomeSmarthomeMod {
       *
       * @public
       */
-    def reportState(reportedState: SmartHomeV1ReportStateRequest): js.Promise[String] = js.native
+    def reportState(reportedState: SmartHomeV1ReportStateRequest): js.Promise[String]
     
     /**
       * Sends a request to the home graph to send a new SYNC request. This should
@@ -214,7 +216,69 @@ object smarthomeSmarthomeMod {
       *
       * @public
       */
-    def requestSync(agentUserId: String): js.Promise[String] = js.native
+    def requestSync(agentUserId: String): js.Promise[String]
+  }
+  object SmartHomeApp {
+    
+    @scala.inline
+    def apply(
+      _intent: (SmartHomeV1Intents, SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]) => SmartHomeApp,
+      _intents: SmartHomeHandlers,
+      handler: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse],
+      onDisconnect: SmartHomeHandler[SmartHomeV1DisconnectRequest, SmartHomeV1DisconnectResponse] => SmartHomeApp,
+      onExecute: SmartHomeHandler[SmartHomeV1ExecuteRequest, SmartHomeV1ExecuteResponse] => SmartHomeApp,
+      onQuery: SmartHomeHandler[SmartHomeV1QueryRequest, SmartHomeV1QueryResponse] => SmartHomeApp,
+      onSync: SmartHomeHandler[SmartHomeV1SyncRequest, SmartHomeV1SyncResponse] => SmartHomeApp,
+      reportState: SmartHomeV1ReportStateRequest => js.Promise[String],
+      requestSync: String => js.Promise[String]
+    ): SmartHomeApp = {
+      val __obj = js.Dynamic.literal(_intent = js.Any.fromFunction2(_intent), _intents = _intents.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), onDisconnect = js.Any.fromFunction1(onDisconnect), onExecute = js.Any.fromFunction1(onExecute), onQuery = js.Any.fromFunction1(onQuery), onSync = js.Any.fromFunction1(onSync), reportState = js.Any.fromFunction1(reportState), requestSync = js.Any.fromFunction1(requestSync))
+      __obj.asInstanceOf[SmartHomeApp]
+    }
+    
+    @scala.inline
+    implicit class SmartHomeAppMutableBuilder[Self <: SmartHomeApp] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setJwt(value: SmartHomeJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setJwtUndefined: Self = StObject.set(x, "jwt", js.undefined)
+      
+      @scala.inline
+      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      @scala.inline
+      def setOnDisconnect(
+        value: SmartHomeHandler[SmartHomeV1DisconnectRequest, SmartHomeV1DisconnectResponse] => SmartHomeApp
+      ): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnExecute(value: SmartHomeHandler[SmartHomeV1ExecuteRequest, SmartHomeV1ExecuteResponse] => SmartHomeApp): Self = StObject.set(x, "onExecute", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnQuery(value: SmartHomeHandler[SmartHomeV1QueryRequest, SmartHomeV1QueryResponse] => SmartHomeApp): Self = StObject.set(x, "onQuery", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnSync(value: SmartHomeHandler[SmartHomeV1SyncRequest, SmartHomeV1SyncResponse] => SmartHomeApp): Self = StObject.set(x, "onSync", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setReportState(value: SmartHomeV1ReportStateRequest => js.Promise[String]): Self = StObject.set(x, "reportState", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRequestSync(value: String => js.Promise[String]): Self = StObject.set(x, "requestSync", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def set_intent(
+        value: (SmartHomeV1Intents, SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]) => SmartHomeApp
+      ): Self = StObject.set(x, "_intent", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def set_intents(value: SmartHomeHandlers): Self = StObject.set(x, "_intents", value.asInstanceOf[js.Any])
+    }
   }
   
   type SmartHomeHandler[TRequest /* <: SmartHomeV1Request */, TResponse /* <: SmartHomeV1Response */] = js.Function3[
@@ -226,28 +290,27 @@ object smarthomeSmarthomeMod {
   
   type SmartHomeHandlers = StringDictionary[SmartHomeHandler[SmartHomeV1Request, SmartHomeV1Response]]
   
-  @js.native
   trait SmartHomeJwt extends StObject {
     
-    var auth_provider_x509_cert_url: String = js.native
+    var auth_provider_x509_cert_url: String
     
-    var auth_uri: String = js.native
+    var auth_uri: String
     
-    var client_email: String = js.native
+    var client_email: String
     
-    var client_id: String = js.native
+    var client_id: String
     
-    var client_x509_cert_url: String = js.native
+    var client_x509_cert_url: String
     
-    var private_key: String = js.native
+    var private_key: String
     
-    var private_key_id: String = js.native
+    var private_key_id: String
     
-    var project_id: String = js.native
+    var project_id: String
     
-    var token_uri: String = js.native
+    var token_uri: String
     
-    var `type`: service_account = js.native
+    var `type`: service_account
   }
   object SmartHomeJwt {
     
@@ -261,11 +324,10 @@ object smarthomeSmarthomeMod {
       private_key: String,
       private_key_id: String,
       project_id: String,
-      token_uri: String,
-      `type`: service_account
+      token_uri: String
     ): SmartHomeJwt = {
       val __obj = js.Dynamic.literal(auth_provider_x509_cert_url = auth_provider_x509_cert_url.asInstanceOf[js.Any], auth_uri = auth_uri.asInstanceOf[js.Any], client_email = client_email.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], client_x509_cert_url = client_x509_cert_url.asInstanceOf[js.Any], private_key = private_key.asInstanceOf[js.Any], private_key_id = private_key_id.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any], token_uri = token_uri.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("service_account")
       __obj.asInstanceOf[SmartHomeJwt]
     }
     
@@ -304,8 +366,9 @@ object smarthomeSmarthomeMod {
     }
   }
   
-  @js.native
-  trait SmartHomeOptions extends AppOptions {
+  trait SmartHomeOptions
+    extends StObject
+       with AppOptions {
     
     /**
       * A JWT (JSON Web Token) that is able to access the home graph API.
@@ -313,7 +376,7 @@ object smarthomeSmarthomeMod {
       * created through the Google Cloud Console: https://console.cloud.google.com/apis/credentials
       * @public
       */
-    var jwt: js.UndefOr[SmartHomeJwt] = js.native
+    var jwt: js.UndefOr[SmartHomeJwt] = js.undefined
     
     /**
       * An API key to use the home graph API. See
@@ -321,7 +384,7 @@ object smarthomeSmarthomeMod {
       * to learn more.
       * @public
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object SmartHomeOptions {
     
@@ -348,5 +411,5 @@ object smarthomeSmarthomeMod {
     }
   }
   
-  type SmartHome_ = js.Function1[/* options */ js.UndefOr[SmartHomeOptions], AppHandler with SmartHomeApp]
+  type SmartHome_ = js.Function1[/* options */ js.UndefOr[SmartHomeOptions], AppHandler & SmartHomeApp]
 }

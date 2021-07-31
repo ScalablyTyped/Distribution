@@ -2,25 +2,23 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetcherOptions extends StObject {
   
   /** A download host to be used. Defaults to `https://storage.googleapis.com`. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** A path for the downloads folder. Defaults to `<root>/.local-chromium`, where `<root>` is puppeteer's package root. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Possible values are: `mac`, `win32`, `win64`, `linux`. Defaults to the current platform. */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     * @default 'chrome'
     */
-  var product: js.UndefOr[Product_] = js.native
+  var product: js.UndefOr[Product_] = js.undefined
 }
 object FetcherOptions {
   

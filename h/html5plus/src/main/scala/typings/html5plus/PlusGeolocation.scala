@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -63,28 +62,9 @@ trait PlusGeolocation extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
   def getCurrentPosition(): Unit = js.native
-  def getCurrentPosition(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.UndefOr[scala.Nothing],
-    options: PlusGeolocationPositionOptions
-  ): Unit = js.native
-  def getCurrentPosition(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit]
-  ): Unit = js.native
-  def getCurrentPosition(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit],
-    options: PlusGeolocationPositionOptions
-  ): Unit = js.native
   def getCurrentPosition(successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit]): Unit = js.native
   def getCurrentPosition(
     successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit],
-    errorCB: js.UndefOr[scala.Nothing],
-    options: PlusGeolocationPositionOptions
-  ): Unit = js.native
-  def getCurrentPosition(
-    successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit],
     errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit]
   ): Unit = js.native
   def getCurrentPosition(
@@ -92,6 +72,18 @@ trait PlusGeolocation extends StObject {
     errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit],
     options: PlusGeolocationPositionOptions
   ): Unit = js.native
+  def getCurrentPosition(
+    successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit],
+    errorCB: Unit,
+    options: PlusGeolocationPositionOptions
+  ): Unit = js.native
+  def getCurrentPosition(successCB: Unit, errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit]): Unit = js.native
+  def getCurrentPosition(
+    successCB: Unit,
+    errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit],
+    options: PlusGeolocationPositionOptions
+  ): Unit = js.native
+  def getCurrentPosition(successCB: Unit, errorCB: Unit, options: PlusGeolocationPositionOptions): Unit = js.native
   
   /**
     * 监听设备位置变化信息
@@ -102,28 +94,9 @@ trait PlusGeolocation extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
   def watchPosition(): Double = js.native
-  def watchPosition(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.UndefOr[scala.Nothing],
-    option: PlusGeolocationPositionOptions
-  ): Double = js.native
-  def watchPosition(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit]
-  ): Double = js.native
-  def watchPosition(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit],
-    option: PlusGeolocationPositionOptions
-  ): Double = js.native
   def watchPosition(successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit]): Double = js.native
   def watchPosition(
     successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit],
-    errorCB: js.UndefOr[scala.Nothing],
-    option: PlusGeolocationPositionOptions
-  ): Double = js.native
-  def watchPosition(
-    successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit],
     errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit]
   ): Double = js.native
   def watchPosition(
@@ -131,4 +104,16 @@ trait PlusGeolocation extends StObject {
     errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit],
     option: PlusGeolocationPositionOptions
   ): Double = js.native
+  def watchPosition(
+    successCB: js.Function1[/* result */ PlusGeolocationPosition, Unit],
+    errorCB: Unit,
+    option: PlusGeolocationPositionOptions
+  ): Double = js.native
+  def watchPosition(successCB: Unit, errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit]): Double = js.native
+  def watchPosition(
+    successCB: Unit,
+    errorCB: js.Function1[/* result */ PlusGeolocationGeolocationError, Unit],
+    option: PlusGeolocationPositionOptions
+  ): Double = js.native
+  def watchPosition(successCB: Unit, errorCB: Unit, option: PlusGeolocationPositionOptions): Double = js.native
 }

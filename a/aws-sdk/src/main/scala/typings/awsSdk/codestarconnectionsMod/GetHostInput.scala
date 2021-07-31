@@ -2,16 +2,14 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the requested host.
     */
-  var HostArn: typings.awsSdk.codestarconnectionsMod.HostArn = js.native
+  var HostArn: typings.awsSdk.codestarconnectionsMod.HostArn
 }
 object GetHostInput {
   

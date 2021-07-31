@@ -21,7 +21,6 @@ import typings.std.Omit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formMod {
@@ -31,19 +30,19 @@ object formMod {
   @js.native
   class Form protected ()
     extends Component[
-          FormProps[_] with (Omit[
+          FormProps[js.Any] & (Omit[
             DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
             onChange | onSubmit
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: FormProps[_] with (Omit[
+    def this(props: FormProps[js.Any] & (Omit[
             DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
             onChange | onSubmit
           ])) = this()
     def this(
-      props: FormProps[_] with (Omit[
+      props: FormProps[js.Any] & (Omit[
             DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
             onChange | onSubmit
           ]),
@@ -54,12 +53,13 @@ object formMod {
   @js.native
   val Form: TypedForm[js.Any] = js.native
   
-  @js.native
-  trait FormExtendedEvent[R, T] extends BaseSyntheticEvent[Event, EventTarget with T, EventTarget] {
+  trait FormExtendedEvent[R, T]
+    extends StObject
+       with BaseSyntheticEvent[Event, EventTarget & T, EventTarget] {
     
-    var touched: Record[String, Boolean] = js.native
+    var touched: Record[String, Boolean]
     
-    var value: R = js.native
+    var value: R
   }
   object FormExtendedEvent {
     
@@ -67,7 +67,7 @@ object formMod {
     def apply[R, T](
       bubbles: Boolean,
       cancelable: Boolean,
-      currentTarget: EventTarget with T,
+      currentTarget: EventTarget & T,
       defaultPrevented: Boolean,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
@@ -89,7 +89,7 @@ object formMod {
     }
     
     @scala.inline
-    implicit class FormExtendedEventMutableBuilder[Self <: FormExtendedEvent[_, _], R, T] (val x: Self with (FormExtendedEvent[R, T])) extends AnyVal {
+    implicit class FormExtendedEventMutableBuilder[Self <: FormExtendedEvent[?, ?], R, T] (val x: Self & (FormExtendedEvent[R, T])) extends AnyVal {
       
       @scala.inline
       def setTouched(value: Record[String, Boolean]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
@@ -99,26 +99,25 @@ object formMod {
     }
   }
   
-  @js.native
   trait FormProps[T] extends StObject {
     
-    var errors: js.UndefOr[js.Object] = js.native
+    var errors: js.UndefOr[js.Object] = js.undefined
     
-    var infos: js.UndefOr[js.Object] = js.native
+    var infos: js.UndefOr[js.Object] = js.undefined
     
-    var messages: js.UndefOr[Invalid] = js.native
+    var messages: js.UndefOr[Invalid] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
     
-    var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], _]] = js.native
+    var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], js.Any]] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* event */ FormExtendedEvent[T, Element], Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* event */ FormExtendedEvent[T, Element], Unit]] = js.undefined
     
-    var onValidate: js.UndefOr[js.Function1[/* validationResults */ Errors, Unit]] = js.native
+    var onValidate: js.UndefOr[js.Function1[/* validationResults */ Errors, Unit]] = js.undefined
     
-    var validate: js.UndefOr[blur | submit] = js.native
+    var validate: js.UndefOr[blur | submit] = js.undefined
     
-    var value: js.UndefOr[js.Object] = js.native
+    var value: js.UndefOr[js.Object] = js.undefined
   }
   object FormProps {
     
@@ -129,7 +128,7 @@ object formMod {
     }
     
     @scala.inline
-    implicit class FormPropsMutableBuilder[Self <: FormProps[_], T] (val x: Self with FormProps[T]) extends AnyVal {
+    implicit class FormPropsMutableBuilder[Self <: FormProps[?], T] (val x: Self & FormProps[T]) extends AnyVal {
       
       @scala.inline
       def setErrors(value: js.Object): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
@@ -156,7 +155,7 @@ object formMod {
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnReset(value: /* event */ SyntheticEvent[Element, Event] => _): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      def setOnReset(value: /* event */ SyntheticEvent[Element, Event] => js.Any): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
@@ -188,7 +187,7 @@ object formMod {
   }
   
   type TypedForm[T] = ComponentClass[
-    FormProps[T] with (Omit[
+    FormProps[T] & (Omit[
       DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
       onChange | onSubmit
     ]), 

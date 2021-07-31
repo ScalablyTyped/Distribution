@@ -6,19 +6,17 @@ import typings.algoliasearchHelper.mod.SearchParameters.HierarchicalFacet
 import typings.algoliasearchHelper.mod.SearchParameters.OperatorList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped std.ReturnType<algoliasearch-helper.anon.Typeofalgoliasearch> extends algoliasearch-helper.algoliasearch-helper.DummySearchClientV4 ? @algolia/client-search.@algolia/client-search.SearchOptions : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SearchOptionsV3 * / any */ @js.native
-trait PlainSearchParameters extends StObject {
+- Dropped std.ReturnType<algoliasearch-helper.anon.Typeofalgoliasearch> extends algoliasearch-helper.algoliasearch-helper.DummySearchClientV4 ? @algolia/client-search.@algolia/client-search.SearchOptions : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SearchOptionsV3 * / any */ trait PlainSearchParameters extends StObject {
   
   /**
     * This attribute contains the list of all the disjunctive facets
     * used. This list will be added to requested facets in the
     * [facets attribute](https://www.algolia.com/doc/rest-api/search#param-facets) sent to algolia.
     */
-  var disjunctiveFacets: js.UndefOr[js.Array[String]] = js.native
+  var disjunctiveFacets: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This attribute contains all the filters that need to be
@@ -31,7 +29,7 @@ trait PlainSearchParameters extends StObject {
     * When querying algolia, the values stored in this attribute will
     * be translated into the `facetFilters` attribute.
     */
-  var disjunctiveFacetsRefinements: js.UndefOr[StringDictionary[FacetList]] = js.native
+  var disjunctiveFacetsRefinements: js.UndefOr[StringDictionary[FacetList]] = js.undefined
   
   /**
     * This attribute contains all the filters that need to be
@@ -44,7 +42,7 @@ trait PlainSearchParameters extends StObject {
     * When querying algolia, the values stored in this attribute will
     * be translated into the `facetFilters` attribute.
     */
-  var facetsExcludes: js.UndefOr[StringDictionary[FacetList]] = js.native
+  var facetsExcludes: js.UndefOr[StringDictionary[FacetList]] = js.undefined
   
   // Refinements
   /**
@@ -58,7 +56,7 @@ trait PlainSearchParameters extends StObject {
     * When querying algolia, the values stored in this attribute will
     * be translated into the `facetFilters` attribute.
     */
-  var facetsRefinements: js.UndefOr[StringDictionary[FacetList]] = js.native
+  var facetsRefinements: js.UndefOr[StringDictionary[FacetList]] = js.undefined
   
   /**
     * This attribute contains the list of all the hierarchical facets
@@ -67,7 +65,7 @@ trait PlainSearchParameters extends StObject {
     * Hierarchical facets are a sub type of disjunctive facets that
     * let you filter faceted attributes hierarchically.
     */
-  var hierarchicalFacets: js.UndefOr[js.Array[HierarchicalFacet]] = js.native
+  var hierarchicalFacets: js.UndefOr[js.Array[HierarchicalFacet]] = js.undefined
   
   /**
     * This attribute contains all the filters that need to be
@@ -82,12 +80,12 @@ trait PlainSearchParameters extends StObject {
     * When querying algolia, the values stored in this attribute will
     * be translated into the `facetFilters` attribute.
     */
-  var hierarchicalFacetsRefinements: js.UndefOr[StringDictionary[FacetList]] = js.native
+  var hierarchicalFacetsRefinements: js.UndefOr[StringDictionary[FacetList]] = js.undefined
   
   /**
     * Targeted index. This parameter is mandatory.
     */
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
   /**
     * This attribute contains all the filters that need to be
@@ -99,14 +97,14 @@ trait PlainSearchParameters extends StObject {
     * When querying algolia, the values stored in this attribute will
     * be translated into the `numericFilters` attribute.
     */
-  var numericRefinements: js.UndefOr[StringDictionary[OperatorList]] = js.native
+  var numericRefinements: js.UndefOr[StringDictionary[OperatorList]] = js.undefined
   
-  var optionalFilters: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+  var optionalFilters: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   
-  var queryLanguages: js.UndefOr[js.Array[String]] = js.native
+  var queryLanguages: js.UndefOr[js.Array[String]] = js.undefined
   
   // types missing in @types/algoliasearch, so duplicated from v4
-  var ruleContexts: js.UndefOr[js.Array[String]] = js.native
+  var ruleContexts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This attribute contains all the tags used to refine the query.
@@ -114,7 +112,7 @@ trait PlainSearchParameters extends StObject {
     * When querying algolia, the values stored in this attribute will
     * be translated into the `tagFilters` attribute.
     */
-  var tagRefinements: js.UndefOr[js.Array[String]] = js.native
+  var tagRefinements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PlainSearchParameters {
   

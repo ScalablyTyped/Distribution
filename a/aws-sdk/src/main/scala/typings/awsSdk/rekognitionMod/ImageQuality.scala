@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageQuality extends StObject {
   
   /**
     * Value representing brightness of the face. The service returns a value between 0 and 100 (inclusive). A higher value indicates a brighter face image.
     */
-  var Brightness: js.UndefOr[Float] = js.native
+  var Brightness: js.UndefOr[Float] = js.undefined
   
   /**
     * Value representing sharpness of the face. The service returns a value between 0 and 100 (inclusive). A higher value indicates a sharper face image.
     */
-  var Sharpness: js.UndefOr[Float] = js.native
+  var Sharpness: js.UndefOr[Float] = js.undefined
 }
 object ImageQuality {
   

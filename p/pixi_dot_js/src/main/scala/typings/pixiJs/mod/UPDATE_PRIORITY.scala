@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,15 +25,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object UPDATE_PRIORITY extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.UPDATE_PRIORITY with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.UPDATE_PRIORITY & Double] = js.native
   
-  /* 1 */ val HIGH: typings.pixiJs.PIXI.UPDATE_PRIORITY.HIGH with Double = js.native
+  /* 1 */ val HIGH: typings.pixiJs.PIXI.UPDATE_PRIORITY.HIGH & Double = js.native
   
-  /* 0 */ val INTERACTION: typings.pixiJs.PIXI.UPDATE_PRIORITY.INTERACTION with Double = js.native
+  /* 0 */ val INTERACTION: typings.pixiJs.PIXI.UPDATE_PRIORITY.INTERACTION & Double = js.native
   
-  /* 3 */ val LOW: typings.pixiJs.PIXI.UPDATE_PRIORITY.LOW with Double = js.native
+  /* 3 */ val LOW: typings.pixiJs.PIXI.UPDATE_PRIORITY.LOW & Double = js.native
   
-  /* 2 */ val NORMAL: typings.pixiJs.PIXI.UPDATE_PRIORITY.NORMAL with Double = js.native
+  /* 2 */ val NORMAL: typings.pixiJs.PIXI.UPDATE_PRIORITY.NORMAL & Double = js.native
   
-  /* 4 */ val UTILITY: typings.pixiJs.PIXI.UPDATE_PRIORITY.UTILITY with Double = js.native
+  /* 4 */ val UTILITY: typings.pixiJs.PIXI.UPDATE_PRIORITY.UTILITY & Double = js.native
 }

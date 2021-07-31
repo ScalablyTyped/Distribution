@@ -2,7 +2,6 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * explicitly with calls to Datastore.BeginTransaction or implicitly by
   * setting ReadOptions.new_transaction in read requests.
   */
-@js.native
 trait SchemaTransactionOptions extends StObject {
   
   /**
     * The transaction should only allow reads.
     */
-  var readOnly: js.UndefOr[SchemaReadOnly] = js.native
+  var readOnly: js.UndefOr[SchemaReadOnly] = js.undefined
   
   /**
     * The transaction should allow both reads and writes.
     */
-  var readWrite: js.UndefOr[SchemaReadWrite] = js.native
+  var readWrite: js.UndefOr[SchemaReadWrite] = js.undefined
 }
 object SchemaTransactionOptions {
   

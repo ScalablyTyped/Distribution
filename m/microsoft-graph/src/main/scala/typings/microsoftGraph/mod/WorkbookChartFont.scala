@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartFont extends Entity {
+trait WorkbookChartFont
+  extends StObject
+     with Entity {
   
   // Represents the bold status of font.
-  var bold: js.UndefOr[NullableOption[Boolean]] = js.native
+  var bold: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // HTML color code representation of the text color. E.g. #FF0000 represents Red.
-  var color: js.UndefOr[NullableOption[String]] = js.native
+  var color: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Represents the italic status of the font.
-  var italic: js.UndefOr[NullableOption[Boolean]] = js.native
+  var italic: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Font name (e.g. 'Calibri')
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Size of the font (e.g. 11)
-  var size: js.UndefOr[NullableOption[Double]] = js.native
+  var size: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Type of underline applied to the font. The possible values are: None, Single.
-  var underline: js.UndefOr[NullableOption[String]] = js.native
+  var underline: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WorkbookChartFont {
   

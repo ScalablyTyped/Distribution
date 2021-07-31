@@ -4,7 +4,6 @@ import typings.twit.mod.StreamEndpoint
 import typings.twit.mod.Twitter.ResultType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twitStrings {
@@ -30,7 +29,9 @@ object twitStrings {
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait mixed extends ResultType
+  sealed trait mixed
+    extends StObject
+       with ResultType
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
@@ -40,7 +41,9 @@ object twitStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait popular extends ResultType
+  sealed trait popular
+    extends StObject
+       with ResultType
   @scala.inline
   def popular: popular = "popular".asInstanceOf[popular]
   
@@ -55,32 +58,44 @@ object twitStrings {
   def public: public = "public".asInstanceOf[public]
   
   @js.native
-  sealed trait recent extends ResultType
+  sealed trait recent
+    extends StObject
+       with ResultType
   @scala.inline
   def recent: recent = "recent".asInstanceOf[recent]
   
   @js.native
-  sealed trait site extends StreamEndpoint
+  sealed trait site
+    extends StObject
+       with StreamEndpoint
   @scala.inline
   def site: site = "site".asInstanceOf[site]
   
   @js.native
-  sealed trait statusesSlashfilter extends StreamEndpoint
+  sealed trait statusesSlashfilter
+    extends StObject
+       with StreamEndpoint
   @scala.inline
   def statusesSlashfilter: statusesSlashfilter = "statuses/filter".asInstanceOf[statusesSlashfilter]
   
   @js.native
-  sealed trait statusesSlashfirehose extends StreamEndpoint
+  sealed trait statusesSlashfirehose
+    extends StObject
+       with StreamEndpoint
   @scala.inline
   def statusesSlashfirehose: statusesSlashfirehose = "statuses/firehose".asInstanceOf[statusesSlashfirehose]
   
   @js.native
-  sealed trait statusesSlashsample extends StreamEndpoint
+  sealed trait statusesSlashsample
+    extends StObject
+       with StreamEndpoint
   @scala.inline
   def statusesSlashsample: statusesSlashsample = "statuses/sample".asInstanceOf[statusesSlashsample]
   
   @js.native
-  sealed trait user extends StreamEndpoint
+  sealed trait user
+    extends StObject
+       with StreamEndpoint
   @scala.inline
   def user: user = "user".asInstanceOf[user]
 }

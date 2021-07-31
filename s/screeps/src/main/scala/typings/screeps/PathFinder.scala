@@ -3,7 +3,6 @@ package typings.screeps
 import typings.screeps.anon.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,5 +42,5 @@ trait PathFinder extends StObject {
     * @deprecated This method is deprecated and will be removed soon.
     * @param isEnabled Whether to activate the new pathfinder or deactivate.
     */
-  def use(isEnabled: Boolean): js.UndefOr[scala.Nothing] = js.native
+  def use(isEnabled: Boolean): Unit = js.native
 }

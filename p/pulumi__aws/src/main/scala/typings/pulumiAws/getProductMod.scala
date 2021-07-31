@@ -4,30 +4,30 @@ import typings.pulumiAws.inputMod.pricing.GetProductFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getProductMod {
   
-  @JSImport("@pulumi/aws/pricing/getProduct", "getProduct")
+  @JSImport("@pulumi/aws/pricing/getProduct", JSImport.Namespace)
   @js.native
-  def getProduct(args: GetProductArgs): js.Promise[GetProductResult] = js.native
-  @JSImport("@pulumi/aws/pricing/getProduct", "getProduct")
-  @js.native
-  def getProduct(args: GetProductArgs, opts: InvokeOptions): js.Promise[GetProductResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getProduct(args: GetProductArgs): js.Promise[GetProductResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProduct")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetProductResult]]
+  @scala.inline
+  def getProduct(args: GetProductArgs, opts: InvokeOptions): js.Promise[GetProductResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProduct")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetProductResult]]
+  
   trait GetProductArgs extends StObject {
     
     /**
       * A list of filters. Passed directly to the API (see GetProducts API reference). These filters must describe a single product, this resource will fail if more than one product is returned by the API.
       */
-    val filters: js.Array[GetProductFilter] = js.native
+    val filters: js.Array[GetProductFilter]
     
     /**
       * The code of the service. Available service codes can be fetched using the DescribeServices pricing API call.
       */
-    val serviceCode: String = js.native
+    val serviceCode: String
   }
   object GetProductArgs {
     
@@ -51,22 +51,21 @@ object getProductMod {
     }
   }
   
-  @js.native
   trait GetProductResult extends StObject {
     
-    val filters: js.Array[typings.pulumiAws.outputMod.pricing.GetProductFilter] = js.native
+    val filters: js.Array[typings.pulumiAws.outputMod.pricing.GetProductFilter]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set to the product returned from the API.
       */
-    val result: String = js.native
+    val result: String
     
-    val serviceCode: String = js.native
+    val serviceCode: String
   }
   object GetProductResult {
     

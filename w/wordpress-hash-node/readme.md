@@ -12,7 +12,7 @@ A phpass portable hashing function compatible with wordpress passwords
 | Keywords           | wordpress, phpass, hash |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 72386 |
+| # downloads        | 84228 |
 | # stars            | 3 |
 
 ## Links

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "wix-ui-test-utils" : "1.0.177"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "wix-ui-test-utils" : "1.0.177"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -9,10 +9,13 @@ import typings.diff2html.typesMod.LineMatchingType
 import typings.diff2html.typesMod.OutputFormatType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("diff2html", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object defaultDiff2HtmlConfig {
     
@@ -76,37 +79,31 @@ object mod {
     def renderNothingWhenEmpty_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderNothingWhenEmpty")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("diff2html", "html")
-  @js.native
-  def html(diffInput: String): String = js.native
-  @JSImport("diff2html", "html")
-  @js.native
-  def html(diffInput: String, configuration: Diff2HtmlConfig): String = js.native
-  @JSImport("diff2html", "html")
-  @js.native
-  def html(diffInput: js.Array[DiffFile]): String = js.native
-  @JSImport("diff2html", "html")
-  @js.native
-  def html(diffInput: js.Array[DiffFile], configuration: Diff2HtmlConfig): String = js.native
+  @scala.inline
+  def html(diffInput: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def html(diffInput: String, configuration: Diff2HtmlConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def html(diffInput: js.Array[DiffFile]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def html(diffInput: js.Array[DiffFile], configuration: Diff2HtmlConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("diff2html", "parse")
-  @js.native
-  def parse(diffInput: String): js.Array[DiffFile] = js.native
-  @JSImport("diff2html", "parse")
-  @js.native
-  def parse(diffInput: String, configuration: Diff2HtmlConfig): js.Array[DiffFile] = js.native
+  @scala.inline
+  def parse(diffInput: String): js.Array[DiffFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any]).asInstanceOf[js.Array[DiffFile]]
+  @scala.inline
+  def parse(diffInput: String, configuration: Diff2HtmlConfig): js.Array[DiffFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiffFile]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.diff2html.renderUtilsMod.RenderConfig because Already inherited
-  - typings.diff2html.sideBySideRendererMod.SideBySideRendererConfig because var conflicts: diffStyle, matchWordsThreshold, matching, matchingMaxComparisons, maxLineLengthHighlight, maxLineSizeInBlockForComparison, renderNothingWhenEmpty. Inlined  */ @js.native
-  trait Diff2HtmlConfig
-    extends LineByLineRendererConfig
+  - typings.diff2html.sideBySideRendererMod.SideBySideRendererConfig because var conflicts: diffStyle, matchWordsThreshold, matching, matchingMaxComparisons, maxLineLengthHighlight, maxLineSizeInBlockForComparison, renderNothingWhenEmpty. Inlined  */ trait Diff2HtmlConfig
+    extends StObject
        with DiffParserConfig
+       with LineByLineRendererConfig
        with HoganJsUtilsConfig {
     
-    var drawFileList: js.UndefOr[Boolean] = js.native
+    var drawFileList: js.UndefOr[Boolean] = js.undefined
     
-    var outputFormat: js.UndefOr[OutputFormatType] = js.native
+    var outputFormat: js.UndefOr[OutputFormatType] = js.undefined
   }
   object Diff2HtmlConfig {
     

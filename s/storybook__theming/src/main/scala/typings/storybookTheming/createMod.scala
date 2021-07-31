@@ -4,23 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.storybookTheming.typesMod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createMod {
   
-  @JSImport("@storybook/theming/dist/create", "create")
+  @JSImport("@storybook/theming/dist/create", JSImport.Namespace)
   @js.native
-  def create(): ThemeVars = js.native
-  @JSImport("@storybook/theming/dist/create", "create")
-  @js.native
-  def create(vars: js.UndefOr[scala.Nothing], rest: Rest): ThemeVars = js.native
-  @JSImport("@storybook/theming/dist/create", "create")
-  @js.native
-  def create(vars: ThemeVars): ThemeVars = js.native
-  @JSImport("@storybook/theming/dist/create", "create")
-  @js.native
-  def create(vars: ThemeVars, rest: Rest): ThemeVars = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): ThemeVars = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ThemeVars]
+  @scala.inline
+  def create(vars: Unit, rest: Rest): ThemeVars = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[ThemeVars]
+  @scala.inline
+  def create(vars: ThemeVars): ThemeVars = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any]).asInstanceOf[ThemeVars]
+  @scala.inline
+  def create(vars: ThemeVars, rest: Rest): ThemeVars = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vars.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[ThemeVars]
   
   object themes {
     

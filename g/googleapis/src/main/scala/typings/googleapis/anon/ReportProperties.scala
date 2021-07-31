@@ -5,25 +5,23 @@ import typings.googleapis.v33Mod.dfareportingV33.SchemaDimensionValue
 import typings.googleapis.v33Mod.dfareportingV33.SchemaSortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportProperties extends StObject {
   
-  var customRichMediaEvents: js.UndefOr[js.Array[SchemaDimensionValue]] = js.native
+  var customRichMediaEvents: js.UndefOr[js.Array[SchemaDimensionValue]] = js.undefined
   
-  var dateRange: js.UndefOr[SchemaDateRange] = js.native
+  var dateRange: js.UndefOr[SchemaDateRange] = js.undefined
   
-  var dimensionFilters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.undefined
   
-  var dimensions: js.UndefOr[js.Array[SchemaSortedDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SchemaSortedDimension]] = js.undefined
   
-  var floodlightConfigId: js.UndefOr[SchemaDimensionValue] = js.native
+  var floodlightConfigId: js.UndefOr[SchemaDimensionValue] = js.undefined
   
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var reportProperties: js.UndefOr[IncludeAttributedIPConversions] = js.native
+  var reportProperties: js.UndefOr[IncludeAttributedIPConversions] = js.undefined
 }
 object ReportProperties {
   

@@ -2,51 +2,49 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Async extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * TODO: description of async attribute true | false | 1 | 0
     */
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the blur radius of the heatmap regions. 10 | 20 | ...
     */
-  var blur: js.UndefOr[Double] = js.native
+  var blur: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the type of blur shape. "circle" | "square" | ...
     */
-  var `brush-typebrushType`: js.UndefOr[String] = js.native
+  var `brush-typebrushType`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the blur shapes to composite or not. true | false | 1 | 0
     */
-  var composite: js.UndefOr[Boolean] = js.native
+  var composite: js.UndefOr[Boolean] = js.undefined
   
-  var graph: js.UndefOr[KeyscalekeyScale] = js.native
+  var graph: js.UndefOr[KeyscalekeyScale] = js.undefined
   
   /**
     * Sets the size of the object/shape. 4 | "6px" | ...
     */
-  var size: js.UndefOr[js.Any] = js.native
+  var size: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether or not the data is sorted. true | false | 1 | 0
     */
-  var `sort-datasortData`: js.UndefOr[Boolean] = js.native
+  var `sort-datasortData`: js.UndefOr[Boolean] = js.undefined
   
-  var tooltip: js.UndefOr[Backgroundfit] = js.native
+  var tooltip: js.UndefOr[Backgroundfit] = js.undefined
 }
 object Async {
   

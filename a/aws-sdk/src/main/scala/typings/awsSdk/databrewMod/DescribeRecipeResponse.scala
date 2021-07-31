@@ -2,76 +2,74 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRecipeResponse extends StObject {
   
   /**
     * The date and time that the recipe was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.native
+  var CreateDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (user name) of the user who created the recipe.
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
     * The description of the recipe.
     */
-  var Description: js.UndefOr[RecipeDescription] = js.native
+  var Description: js.UndefOr[RecipeDescription] = js.undefined
   
   /**
     * The identifier (user name) of the user who last modified the recipe.
     */
-  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.native
+  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The date and time that the recipe was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the recipe.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
   
   /**
     * The name of the project associated with this recipe.
     */
-  var ProjectName: js.UndefOr[typings.awsSdk.databrewMod.ProjectName] = js.native
+  var ProjectName: js.UndefOr[typings.awsSdk.databrewMod.ProjectName] = js.undefined
   
   /**
     * The identifier (user name) of the user who last published the recipe.
     */
-  var PublishedBy: js.UndefOr[typings.awsSdk.databrewMod.PublishedBy] = js.native
+  var PublishedBy: js.UndefOr[typings.awsSdk.databrewMod.PublishedBy] = js.undefined
   
   /**
     * The date and time when the recipe was last published.
     */
-  var PublishedDate: js.UndefOr[Date] = js.native
+  var PublishedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The recipe version identifier.
     */
-  var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.native
+  var RecipeVersion: js.UndefOr[typings.awsSdk.databrewMod.RecipeVersion] = js.undefined
   
   /**
     * The ARN of the recipe.
     */
-  var ResourceArn: js.UndefOr[Arn] = js.native
+  var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * One or more steps to be performed by the recipe. Each step consists of an action, and the conditions under which the action should succeed.
     */
-  var Steps: js.UndefOr[RecipeStepList] = js.native
+  var Steps: js.UndefOr[RecipeStepList] = js.undefined
   
   /**
     * Metadata tags associated with this project.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object DescribeRecipeResponse {
   

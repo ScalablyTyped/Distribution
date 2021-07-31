@@ -12,7 +12,7 @@ A metascraper rule to extract address information from websites
 | Keywords           | metascraper, address, street, location, poi, scrape, parse |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 195 |
+| # downloads        | 466 |
 | # stars            | 0 |
 
 ## Links

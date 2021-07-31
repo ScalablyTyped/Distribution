@@ -7,10 +7,8 @@ import typings.reactDates.reactDatesStrings.verticalScrollable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnGetPrevScrollableMonths extends StObject {
   
   var onGetNextScrollableMonths: js.UndefOr[
@@ -18,7 +16,7 @@ trait OnGetPrevScrollableMonths extends StObject {
       /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   // VERTICAL_SCROLLABLE daypickers only
   var onGetPrevScrollableMonths: js.UndefOr[
@@ -26,15 +24,15 @@ trait OnGetPrevScrollableMonths extends StObject {
       /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var orientation: verticalScrollable = js.native
+  var orientation: verticalScrollable
 }
 object OnGetPrevScrollableMonths {
   
   @scala.inline
-  def apply(orientation: verticalScrollable): OnGetPrevScrollableMonths = {
-    val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
+  def apply(): OnGetPrevScrollableMonths = {
+    val __obj = js.Dynamic.literal(orientation = "verticalScrollable")
     __obj.asInstanceOf[OnGetPrevScrollableMonths]
   }
   

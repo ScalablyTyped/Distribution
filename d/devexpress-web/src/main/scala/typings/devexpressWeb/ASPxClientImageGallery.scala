@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ASPxImageGallery control.
   */
 @js.native
-trait ASPxClientImageGallery extends ASPxClientDataView {
+trait ASPxClientImageGallery
+  extends StObject
+     with ASPxClientDataView {
   
   /**
     * Occurs on the client side after an active item has been changed within the fullscreen viewer.

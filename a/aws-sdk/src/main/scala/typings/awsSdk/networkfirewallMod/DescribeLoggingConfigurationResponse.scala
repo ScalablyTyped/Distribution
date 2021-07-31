@@ -2,18 +2,16 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLoggingConfigurationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the firewall.
     */
-  var FirewallArn: js.UndefOr[ResourceArn] = js.native
+  var FirewallArn: js.UndefOr[ResourceArn] = js.undefined
   
-  var LoggingConfiguration: js.UndefOr[typings.awsSdk.networkfirewallMod.LoggingConfiguration] = js.native
+  var LoggingConfiguration: js.UndefOr[typings.awsSdk.networkfirewallMod.LoggingConfiguration] = js.undefined
 }
 object DescribeLoggingConfigurationResponse {
   

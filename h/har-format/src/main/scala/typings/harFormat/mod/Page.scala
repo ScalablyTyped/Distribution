@@ -2,255 +2,253 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
   /** _non-standard_  */
-  var _SpeedIndex: js.UndefOr[Double | Null] = js.native
+  var _SpeedIndex: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _TTFB: js.UndefOr[Double | Null] = js.native
+  var _TTFB: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _URL: js.UndefOr[String | Null] = js.native
+  var _URL: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
   /** _non-standard_  */
-  var _adult_site: js.UndefOr[Double | Null] = js.native
+  var _adult_site: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _aft: js.UndefOr[Double | Null] = js.native
+  var _aft: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _base_page_cdn: js.UndefOr[String | Null] = js.native
+  var _base_page_cdn: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _base_page_redirects: js.UndefOr[Double | Null] = js.native
+  var _base_page_redirects: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _base_page_ttfb: js.UndefOr[Double | Null] = js.native
+  var _base_page_ttfb: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _browser_main_memory_kb: js.UndefOr[Double | Null] = js.native
+  var _browser_main_memory_kb: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _browser_name: js.UndefOr[String | Null] = js.native
+  var _browser_name: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _browser_other_private_memory_kb: js.UndefOr[Double | Null] = js.native
+  var _browser_other_private_memory_kb: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _browser_process_count: js.UndefOr[Double | Null] = js.native
+  var _browser_process_count: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _browser_version: js.UndefOr[String | Null] = js.native
+  var _browser_version: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _browser_working_set_kb: js.UndefOr[Double | Null] = js.native
+  var _browser_working_set_kb: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _bytesIn: js.UndefOr[Double | Null] = js.native
+  var _bytesIn: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _bytesInDoc: js.UndefOr[Double | Null] = js.native
+  var _bytesInDoc: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _bytesOut: js.UndefOr[Double | Null] = js.native
+  var _bytesOut: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _bytesOutDoc: js.UndefOr[Double | Null] = js.native
+  var _bytesOutDoc: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _cached: js.UndefOr[Double | Null] = js.native
+  var _cached: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _certificate_bytes: js.UndefOr[Double | Null] = js.native
+  var _certificate_bytes: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _connections: js.UndefOr[Double | Null] = js.native
+  var _connections: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _date: js.UndefOr[Double | Null] = js.native
+  var _date: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _docCPUms: js.UndefOr[Double | Null] = js.native
+  var _docCPUms: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _docCPUpct: js.UndefOr[Double | Null] = js.native
+  var _docCPUpct: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _docTime: js.UndefOr[Double | Null] = js.native
+  var _docTime: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _domContentLoadedEventEnd: js.UndefOr[Double | Null] = js.native
+  var _domContentLoadedEventEnd: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _domContentLoadedEventStart: js.UndefOr[Double | Null] = js.native
+  var _domContentLoadedEventStart: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _domElements: js.UndefOr[Double | Null] = js.native
+  var _domElements: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _domInteractive: js.UndefOr[Double | Null] = js.native
+  var _domInteractive: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _domLoading: js.UndefOr[Double | Null] = js.native
+  var _domLoading: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _domTime: js.UndefOr[Double | Null] = js.native
+  var _domTime: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _effectiveBps: js.UndefOr[Double | Null] = js.native
+  var _effectiveBps: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _effectiveBpsDoc: js.UndefOr[Double | Null] = js.native
+  var _effectiveBpsDoc: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _eventName: js.UndefOr[String | Null] = js.native
+  var _eventName: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _firstPaint: js.UndefOr[Double | Null] = js.native
+  var _firstPaint: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _fixed_viewport: js.UndefOr[Double | Null] = js.native
+  var _fixed_viewport: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _fullyLoaded: js.UndefOr[Double | Null] = js.native
+  var _fullyLoaded: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _fullyLoadedCPUms: js.UndefOr[Double | Null] = js.native
+  var _fullyLoadedCPUms: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _fullyLoadedCPUpct: js.UndefOr[Double | Null] = js.native
+  var _fullyLoadedCPUpct: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _gzip_savings: js.UndefOr[Double | Null] = js.native
+  var _gzip_savings: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _gzip_total: js.UndefOr[Double | Null] = js.native
+  var _gzip_total: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _image_savings: js.UndefOr[Double | Null] = js.native
+  var _image_savings: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _image_total: js.UndefOr[Double | Null] = js.native
+  var _image_total: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _isResponsive: js.UndefOr[Double | Null] = js.native
+  var _isResponsive: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _lastVisualChange: js.UndefOr[Double | Null] = js.native
+  var _lastVisualChange: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _loadEventEnd: js.UndefOr[Double | Null] = js.native
+  var _loadEventEnd: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _loadEventStart: js.UndefOr[Double | Null] = js.native
+  var _loadEventStart: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _loadTime: js.UndefOr[Double | Null] = js.native
+  var _loadTime: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _minify_savings: js.UndefOr[Double | Null] = js.native
+  var _minify_savings: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _minify_total: js.UndefOr[Double | Null] = js.native
+  var _minify_total: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _optimization_checked: js.UndefOr[Double | Null] = js.native
+  var _optimization_checked: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _pageSpeedVersion: js.UndefOr[String | Null] = js.native
+  var _pageSpeedVersion: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _render: js.UndefOr[Double | Null] = js.native
+  var _render: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _requests: js.UndefOr[Double | Null] = js.native
+  var _requests: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _requestsDoc: js.UndefOr[Double | Null] = js.native
+  var _requestsDoc: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _requestsFull: js.UndefOr[Double | Null] = js.native
+  var _requestsFull: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _responses_200: js.UndefOr[Double | Null] = js.native
+  var _responses_200: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _responses_404: js.UndefOr[Double | Null] = js.native
+  var _responses_404: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _responses_other: js.UndefOr[Double | Null] = js.native
+  var _responses_other: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _result: js.UndefOr[Double | Null] = js.native
+  var _result: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _run: js.UndefOr[Double | Null] = js.native
+  var _run: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_cache: js.UndefOr[Double | Null] = js.native
+  var _score_cache: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_cdn: js.UndefOr[Double | Null] = js.native
+  var _score_cdn: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_combine: js.UndefOr[Double | Null] = js.native
+  var _score_combine: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_compress: js.UndefOr[Double | Null] = js.native
+  var _score_compress: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_cookies: js.UndefOr[Double | Null] = js.native
+  var _score_cookies: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_etags: js.UndefOr[Double | Null] = js.native
+  var _score_etags: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_gzip: js.UndefOr[Double | Null] = js.native
+  var _score_gzip: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var `_score_keep-alive`: js.UndefOr[Double | Null] = js.native
+  var `_score_keep-alive`: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_minify: js.UndefOr[Double | Null] = js.native
+  var _score_minify: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _score_progressive_jpeg: js.UndefOr[Double | Null] = js.native
+  var _score_progressive_jpeg: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _server_count: js.UndefOr[Double | Null] = js.native
+  var _server_count: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _server_rtt: js.UndefOr[Double | Null] = js.native
+  var _server_rtt: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _step: js.UndefOr[Double | Null] = js.native
+  var _step: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _title: js.UndefOr[String | Null] = js.native
+  var _title: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
-  var _titleTime: js.UndefOr[Double | Null] = js.native
+  var _titleTime: js.UndefOr[Double | Null] = js.undefined
   
   /** _non-standard_  */
-  var _visualComplete: js.UndefOr[Double | Null] = js.native
+  var _visualComplete: js.UndefOr[Double | Null] = js.undefined
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of a page within the `<log>` (HAR doc).
     * Entries use it to refer the parent page.
     */
-  var id: String = js.native
+  var id: String
   
   /** Detailed timing info about page load */
-  var pageTimings: PageTiming = js.native
+  var pageTimings: PageTiming
   
   /**
     * Date and time stamp for the beginning of the page load
@@ -258,10 +256,10 @@ trait Page extends StObject {
     * (ISO 8601 - `YYYY-MM-DDThh:mm:ss.sTZD`,
     * e.g. `2009-07-24T19:20:30.45+01:00`).
     */
-  var startedDateTime: String = js.native
+  var startedDateTime: String
   
   /** Page title. */
-  var title: String = js.native
+  var title: String
 }
 object Page {
   

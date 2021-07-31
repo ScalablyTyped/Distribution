@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternalEditorPaddingOptions extends StObject {
   
-  val bottom: Double = js.native
+  val bottom: Double
   
-  val top: Double = js.native
+  val top: Double
 }
 object InternalEditorPaddingOptions {
   

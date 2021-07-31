@@ -5,12 +5,12 @@ import typings.jasmine.jasmineStrings.get
 import typings.jasmine.jasmineStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Spec
-  extends SuiteOrSpec
+  extends StObject
+     with SuiteOrSpec
      with Instantiable3[/* env */ Env, /* suite */ Suite, /* description */ String, js.Any] {
   
   def addBeforesAndAftersToQueue(): Unit = js.native
@@ -26,9 +26,9 @@ trait Spec
   var afterCallbacks: js.Array[SpecFunction] = js.native
   
   def execute(): js.Any = js.native
-  def execute(onComplete: js.UndefOr[scala.Nothing], enabled: Boolean): js.Any = js.native
   def execute(onComplete: js.Function0[Unit]): js.Any = js.native
   def execute(onComplete: js.Function0[Unit], enabled: Boolean): js.Any = js.native
+  def execute(onComplete: Unit, enabled: Boolean): js.Any = js.native
   
   def expect(actual: js.Any): js.Any = js.native
   
@@ -44,13 +44,13 @@ trait Spec
   
   def getFullName(): String = js.native
   
-  def getMatchersClass_(): Matchers[_] = js.native
+  def getMatchersClass_(): Matchers[js.Any] = js.native
   
   def getResult(): js.Any = js.native
   
   def log(arguments: js.Any): js.Any = js.native
   
-  var matchersClass: Matchers[_] = js.native
+  var matchersClass: Matchers[js.Any] = js.native
   
   def removeAllSpies(): Unit = js.native
   
@@ -79,7 +79,7 @@ trait Spec
   def waits(timeout: Double): Spec = js.native
   
   def waitsFor(latchFunction: SpecFunction): Spec = js.native
-  def waitsFor(latchFunction: SpecFunction, timeoutMessage: js.UndefOr[scala.Nothing], timeout: Double): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String, timeout: Double): Spec = js.native
+  def waitsFor(latchFunction: SpecFunction, timeoutMessage: Unit, timeout: Double): Spec = js.native
 }

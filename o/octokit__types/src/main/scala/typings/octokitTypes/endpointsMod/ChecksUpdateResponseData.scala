@@ -6,43 +6,41 @@ import typings.octokitTypes.anon.Events
 import typings.octokitTypes.anon.IdNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChecksUpdateResponseData extends StObject {
   
-  var app: Events = js.native
+  var app: Events
   
-  var check_suite: IdNumber = js.native
+  var check_suite: IdNumber
   
-  var completed_at: String = js.native
+  var completed_at: String
   
-  var conclusion: String = js.native
+  var conclusion: String
   
-  var details_url: String = js.native
+  var details_url: String
   
-  var external_id: String = js.native
+  var external_id: String
   
-  var head_sha: String = js.native
+  var head_sha: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var output: Annotationsurl = js.native
+  var output: Annotationsurl
   
-  var pull_requests: js.Array[Base] = js.native
+  var pull_requests: js.Array[Base]
   
-  var started_at: String = js.native
+  var started_at: String
   
-  var status: String = js.native
+  var status: String
   
-  var url: String = js.native
+  var url: String
 }
 object ChecksUpdateResponseData {
   

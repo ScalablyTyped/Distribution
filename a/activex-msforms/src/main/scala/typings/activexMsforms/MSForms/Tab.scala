@@ -2,30 +2,28 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tab extends StObject {
   
-  var Accelerator: String = js.native
+  var Accelerator: String
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var ControlTipText: String = js.native
+  var ControlTipText: String
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Index: Double = js.native
+  var Index: Double
   
   @JSName("MSForms.Tab_typekey")
-  var MSFormsDotTab_typekey: Tab = js.native
+  var MSFormsDotTab_typekey: Tab
   
-  var Name: String = js.native
+  var Name: String
   
-  var Tag: String = js.native
+  var Tag: String
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object Tab {
   

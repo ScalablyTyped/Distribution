@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepricingRuleRestriction extends StObject {
   
   /** The inclusive floor lower bound. The repricing rule only applies when new price >= floor. */
-  var floor: js.UndefOr[RepricingRuleRestrictionBoundary] = js.native
+  var floor: js.UndefOr[RepricingRuleRestrictionBoundary] = js.undefined
   
   /**
     * If true, use the AUTO_PRICING_MIN_PRICE offer attribute as the lower bound of the rule. If use_auto_pricing_min_price is true, then only offers with `AUTO_PRICING_MIN_PRICE`
     * existing on the offer will get Repricer treatment, even if a floor value is set on the rule. Also, if use_auto_pricing_min_price is true, the floor restriction will be ignored.
     */
-  var useAutoPricingMinPrice: js.UndefOr[Boolean] = js.native
+  var useAutoPricingMinPrice: js.UndefOr[Boolean] = js.undefined
 }
 object RepricingRuleRestriction {
   

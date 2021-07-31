@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -49,7 +48,7 @@ trait EmulatedCanvas2D extends StObject {
     * @param quality
     */
   def toDataURL(): String = js.native
-  def toDataURL(codec: js.UndefOr[scala.Nothing], quality: Double): String = js.native
   def toDataURL(codec: String): String = js.native
   def toDataURL(codec: String, quality: Double): String = js.native
+  def toDataURL(codec: Unit, quality: Double): String = js.native
 }

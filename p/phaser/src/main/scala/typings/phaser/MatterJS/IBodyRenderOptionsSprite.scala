@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBodyRenderOptionsSprite extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait IBodyRenderOptionsSprite extends StObject {
     * @type number
     * @default 0
     */
-  var xOffset: Double = js.native
+  var xOffset: Double
   
   /**
     * A `Number` that defines the scaling in the y-axis for the sprite, if any.
@@ -24,7 +22,7 @@ trait IBodyRenderOptionsSprite extends StObject {
     * @type number
     * @default 0
     */
-  var yOffset: Double = js.native
+  var yOffset: Double
 }
 object IBodyRenderOptionsSprite {
   

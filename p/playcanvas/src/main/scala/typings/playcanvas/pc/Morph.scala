@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param graphicsDevice - The graphics device used to manage this morph target. If it is not provided, a device is obtained
   * from the {@link pc.Application}.
   */
-@js.native
 trait Morph extends StObject {
   
   /**
     * Frees video memory allocated by this object.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Gets the morph target by index.
     * @param index - An index of morph target.
     * @returns A morph target object.
     */
-  def getTarget(index: Double): MorphTarget = js.native
+  def getTarget(index: Double): MorphTarget
 }
 object Morph {
   

@@ -10,9 +10,9 @@ Embed a representation of an URL on third party sites
 | ------------------ | :-------------: |
 | Full name          | metascraper-iframe |
 | Keywords           | embed, iframe, metascraper, oembed |
-| # releases         | 59 |
-| # dependents       | 0 |
-| # downloads        | 11238 |
+| # releases         | 90 |
+| # dependents       | 1 |
+| # downloads        | 16893 |
 | # stars            | 0 |
 
 ## Links

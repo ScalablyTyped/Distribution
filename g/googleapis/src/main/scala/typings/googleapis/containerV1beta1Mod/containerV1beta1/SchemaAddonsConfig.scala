@@ -2,14 +2,12 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for the addons that can be automatically spun up in the
   * cluster, enabling additional functionality.
   */
-@js.native
 trait SchemaAddonsConfig extends StObject {
   
   /**
@@ -17,38 +15,38 @@ trait SchemaAddonsConfig extends StObject {
     * enabled in order to enable Cloud Run addon. This option can only be
     * enabled at cluster creation time.
     */
-  var cloudRunConfig: js.UndefOr[SchemaCloudRunConfig] = js.native
+  var cloudRunConfig: js.UndefOr[SchemaCloudRunConfig] = js.undefined
   
   /**
     * Configuration for the horizontal pod autoscaling feature, which increases
     * or decreases the number of replica pods a replication controller has
     * based on the resource usage of the existing pods.
     */
-  var horizontalPodAutoscaling: js.UndefOr[SchemaHorizontalPodAutoscaling] = js.native
+  var horizontalPodAutoscaling: js.UndefOr[SchemaHorizontalPodAutoscaling] = js.undefined
   
   /**
     * Configuration for the HTTP (L7) load balancing controller addon, which
     * makes it easy to set up HTTP load balancers for services in a cluster.
     */
-  var httpLoadBalancing: js.UndefOr[SchemaHttpLoadBalancing] = js.native
+  var httpLoadBalancing: js.UndefOr[SchemaHttpLoadBalancing] = js.undefined
   
   /**
     * Configuration for Istio, an open platform to connect, manage, and secure
     * microservices.
     */
-  var istioConfig: js.UndefOr[SchemaIstioConfig] = js.native
+  var istioConfig: js.UndefOr[SchemaIstioConfig] = js.undefined
   
   /**
     * Configuration for the Kubernetes Dashboard.
     */
-  var kubernetesDashboard: js.UndefOr[SchemaKubernetesDashboard] = js.native
+  var kubernetesDashboard: js.UndefOr[SchemaKubernetesDashboard] = js.undefined
   
   /**
     * Configuration for NetworkPolicy. This only tracks whether the addon is
     * enabled or not on the Master, it does not track whether network policy is
     * enabled for the nodes.
     */
-  var networkPolicyConfig: js.UndefOr[SchemaNetworkPolicyConfig] = js.native
+  var networkPolicyConfig: js.UndefOr[SchemaNetworkPolicyConfig] = js.undefined
 }
 object SchemaAddonsConfig {
   

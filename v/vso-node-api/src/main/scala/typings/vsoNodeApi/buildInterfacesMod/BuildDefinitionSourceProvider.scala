@@ -4,41 +4,39 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildDefinitionSourceProvider extends StObject {
   
   /**
     * Uri of the associated definition
     */
-  var definitionUri: String = js.native
+  var definitionUri: String
   
   /**
     * fields associated with this build definition
     */
-  var fields: StringDictionary[String] = js.native
+  var fields: StringDictionary[String]
   
   /**
     * Id of this source provider
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The lst time this source provider was modified
     */
-  var lastModified: Date = js.native
+  var lastModified: Date
   
   /**
     * Name of the source provider
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Which trigger types are supported by this definition source provider
     */
-  var supportedTriggerTypes: DefinitionTriggerType = js.native
+  var supportedTriggerTypes: DefinitionTriggerType
 }
 object BuildDefinitionSourceProvider {
   

@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,72 +18,28 @@ object mod {
     def this(config: ReadonlyGraylogConfig) = this()
     
     def alert(message: String): Unit = js.native
-    def alert(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def alert(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def alert(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def alert(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def alert(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def alert(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def alert(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def alert(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def alert(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def alert(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def alert(message: String, fullMessage: String): Unit = js.native
-    def alert(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def alert(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def alert(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def alert(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def alert(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def alert(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def alert(message: Error): Unit = js.native
-    def alert(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def alert(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def alert(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def alert(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def alert(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def alert(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def alert(message: Record[String, js.Any]): Unit = js.native
+    def alert(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def alert(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def alert(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def alert(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def alert(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def alert(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def alert(message: Record[String, _]): Unit = js.native
-    def alert(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def alert(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def alert(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("alert")
@@ -94,646 +49,250 @@ object mod {
     def close(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     
     def critical(message: String): Unit = js.native
-    def critical(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def critical(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def critical(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def critical(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def critical(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def critical(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def critical(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def critical(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def critical(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def critical(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def critical(message: String, fullMessage: String): Unit = js.native
-    def critical(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def critical(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def critical(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def critical(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def critical(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def critical(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def critical(message: Error): Unit = js.native
-    def critical(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def critical(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def critical(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def critical(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def critical(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def critical(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def critical(message: Record[String, js.Any]): Unit = js.native
+    def critical(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def critical(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def critical(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def critical(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def critical(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def critical(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def critical(message: Record[String, _]): Unit = js.native
-    def critical(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def critical(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def critical(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("critical")
     var critical_Original: FnCall = js.native
     
     def debug(message: String): Unit = js.native
-    def debug(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def debug(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def debug(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def debug(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def debug(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def debug(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def debug(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def debug(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def debug(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def debug(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def debug(message: String, fullMessage: String): Unit = js.native
-    def debug(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def debug(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def debug(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def debug(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def debug(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def debug(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def debug(message: Error): Unit = js.native
-    def debug(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def debug(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def debug(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def debug(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def debug(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def debug(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def debug(message: Record[String, js.Any]): Unit = js.native
+    def debug(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def debug(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def debug(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def debug(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def debug(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def debug(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def debug(message: Record[String, _]): Unit = js.native
-    def debug(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def debug(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def debug(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("debug")
     var debug_Original: FnCall = js.native
     
     def emergency(message: String): Unit = js.native
-    def emergency(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def emergency(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def emergency(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def emergency(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def emergency(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def emergency(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def emergency(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def emergency(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def emergency(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def emergency(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def emergency(message: String, fullMessage: String): Unit = js.native
-    def emergency(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def emergency(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def emergency(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def emergency(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def emergency(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def emergency(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def emergency(message: Error): Unit = js.native
-    def emergency(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def emergency(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def emergency(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def emergency(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def emergency(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def emergency(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def emergency(message: Record[String, js.Any]): Unit = js.native
+    def emergency(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def emergency(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def emergency(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def emergency(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def emergency(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def emergency(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def emergency(message: Record[String, _]): Unit = js.native
-    def emergency(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def emergency(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def emergency(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("emergency")
     var emergency_Original: FnCall = js.native
     
     def error(message: String): Unit = js.native
-    def error(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def error(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def error(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def error(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def error(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def error(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def error(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def error(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def error(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def error(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def error(message: String, fullMessage: String): Unit = js.native
-    def error(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def error(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def error(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def error(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def error(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def error(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def error(message: Error): Unit = js.native
-    def error(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def error(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def error(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def error(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def error(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def error(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def error(message: Record[String, js.Any]): Unit = js.native
+    def error(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def error(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def error(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def error(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def error(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def error(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def error(message: Record[String, _]): Unit = js.native
-    def error(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def error(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def error(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("error")
     var error_Original: FnCall = js.native
     
     def info(message: String): Unit = js.native
-    def info(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def info(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def info(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def info(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def info(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def info(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def info(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def info(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def info(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def info(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def info(message: String, fullMessage: String): Unit = js.native
-    def info(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def info(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def info(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def info(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def info(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def info(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def info(message: Error): Unit = js.native
-    def info(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def info(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def info(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def info(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def info(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def info(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def info(message: Record[String, js.Any]): Unit = js.native
+    def info(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def info(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def info(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def info(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def info(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def info(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def info(message: Record[String, _]): Unit = js.native
-    def info(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def info(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def info(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("info")
     var info_Original: FnCall = js.native
     
     def log(message: String): Unit = js.native
-    def log(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def log(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def log(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def log(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def log(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def log(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def log(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def log(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def log(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def log(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def log(message: String, fullMessage: String): Unit = js.native
-    def log(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def log(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def log(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def log(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def log(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def log(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def log(message: Error): Unit = js.native
-    def log(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def log(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def log(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def log(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def log(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def log(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def log(message: Record[String, js.Any]): Unit = js.native
+    def log(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def log(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def log(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def log(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def log(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def log(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def log(message: Record[String, _]): Unit = js.native
-    def log(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def log(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def log(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     
     def notice(message: String): Unit = js.native
-    def notice(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def notice(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def notice(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def notice(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def notice(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def notice(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def notice(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def notice(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def notice(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def notice(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def notice(message: String, fullMessage: String): Unit = js.native
-    def notice(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def notice(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def notice(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def notice(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def notice(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def notice(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def notice(message: Error): Unit = js.native
-    def notice(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def notice(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def notice(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def notice(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def notice(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def notice(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def notice(message: Record[String, js.Any]): Unit = js.native
+    def notice(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def notice(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def notice(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def notice(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def notice(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def notice(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def notice(message: Record[String, _]): Unit = js.native
-    def notice(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def notice(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def notice(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("notice")
     var notice_Original: FnCall = js.native
     
     def warn(message: String): Unit = js.native
-    def warn(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def warn(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def warn(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warn(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def warn(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def warn(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warn(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def warn(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def warn(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warn(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def warn(message: String, fullMessage: String): Unit = js.native
-    def warn(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warn(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def warn(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def warn(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def warn(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warn(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def warn(message: Error): Unit = js.native
-    def warn(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def warn(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warn(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def warn(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def warn(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warn(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def warn(message: Record[String, js.Any]): Unit = js.native
+    def warn(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def warn(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def warn(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def warn(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warn(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def warn(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warn(message: Record[String, _]): Unit = js.native
-    def warn(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warn(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def warn(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("warn")
     var warn_Original: FnCall = js.native
     
     def warning(message: String): Unit = js.native
-    def warning(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def warning(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def warning(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warning(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def warning(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def warning(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warning(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def warning(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def warning(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warning(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def warning(message: String, fullMessage: String): Unit = js.native
-    def warning(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warning(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def warning(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def warning(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def warning(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warning(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def warning(message: Error): Unit = js.native
-    def warning(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def warning(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warning(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def warning(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def warning(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def warning(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def warning(message: Record[String, js.Any]): Unit = js.native
+    def warning(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def warning(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def warning(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def warning(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warning(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def warning(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warning(message: Record[String, _]): Unit = js.native
-    def warning(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def warning(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def warning(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
     @JSName("warning")
@@ -746,14 +305,13 @@ object mod {
     val graylog: typings.graylog2.mod.graylog = js.native
   }
   
-  @js.native
   trait GraylogConfig extends StObject {
     
     /**
       * The max UDP packet size. Should never exceed the MTU of your system.
       * The default value is 1400
       */
-    var bufferSize: js.UndefOr[Double] = js.native
+    var bufferSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The strategy for a message compression:
@@ -763,24 +321,24 @@ object mod {
       *
       *  The default value is "optimal"
       */
-    var deflate: js.UndefOr[GraylogDeflate] = js.native
+    var deflate: js.UndefOr[GraylogDeflate] = js.undefined
     
     /**
       * The facility - log's field type in Graylog.
       * The default value is "Node.js"
       */
-    var facility: js.UndefOr[String] = js.native
+    var facility: js.UndefOr[String] = js.undefined
     
     /**
       * The name of a host.
       * The default value is "os.hostname()"
       */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * The list of graylog servers
       */
-    var servers: js.Array[Readonlyhoststringportnum] = js.native
+    var servers: js.Array[Readonlyhoststringportnum]
   }
   object GraylogConfig {
     

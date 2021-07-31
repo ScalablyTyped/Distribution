@@ -20,33 +20,33 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XFixedLine extends XReportControlModel {
+trait XFixedLine
+  extends StObject
+     with XReportControlModel {
   
   /** This property contains the line color. */
-  var LineColor: Color = js.native
+  var LineColor: Color
   
   /** This property contains the dash of the line. */
-  var LineDash: typings.activexLibreoffice.com_.sun.star.drawing.LineDash = js.native
+  var LineDash: typings.activexLibreoffice.com_.sun.star.drawing.LineDash
   
   /** This property contains the type of the line. */
-  var LineStyle: typings.activexLibreoffice.com_.sun.star.drawing.LineStyle = js.native
+  var LineStyle: typings.activexLibreoffice.com_.sun.star.drawing.LineStyle
   
   /** This property contains the extent of transparency. */
-  var LineTransparence: Double = js.native
+  var LineTransparence: Double
   
   /** This property contains the width of the line in 1/100th mm. */
-  var LineWidth: Double = js.native
+  var LineWidth: Double
   
   /**
     * specifies the orientation of the control.
     *
     * `; 0: horizontal; 1: vertical (default); `
     */
-  var Orientation: Double = js.native
+  var Orientation: Double
 }
 object XFixedLine {
   

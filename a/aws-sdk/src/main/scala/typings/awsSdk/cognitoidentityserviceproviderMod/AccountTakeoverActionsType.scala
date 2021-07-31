@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountTakeoverActionsType extends StObject {
   
   /**
     * Action to take for a high risk.
     */
-  var HighAction: js.UndefOr[AccountTakeoverActionType] = js.native
+  var HighAction: js.UndefOr[AccountTakeoverActionType] = js.undefined
   
   /**
     * Action to take for a low risk.
     */
-  var LowAction: js.UndefOr[AccountTakeoverActionType] = js.native
+  var LowAction: js.UndefOr[AccountTakeoverActionType] = js.undefined
   
   /**
     * Action to take for a medium risk.
     */
-  var MediumAction: js.UndefOr[AccountTakeoverActionType] = js.native
+  var MediumAction: js.UndefOr[AccountTakeoverActionType] = js.undefined
 }
 object AccountTakeoverActionsType {
   

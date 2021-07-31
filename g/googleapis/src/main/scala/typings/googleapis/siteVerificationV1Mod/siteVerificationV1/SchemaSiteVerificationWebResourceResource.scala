@@ -3,10 +3,8 @@ package typings.googleapis.siteVerificationV1Mod.siteVerificationV1
 import typings.googleapis.anon.Identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSiteVerificationWebResourceResource extends StObject {
   
   /**
@@ -14,17 +12,17 @@ trait SchemaSiteVerificationWebResourceResource extends StObject {
     * &quot;id&quot; portion of the REST URL for the Get, Update, and Delete
     * operations.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The email addresses of all verified owners.
     */
-  var owners: js.UndefOr[js.Array[String]] = js.native
+  var owners: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The address and type of a site that is verified or will be verified.
     */
-  var site: js.UndefOr[Identifier] = js.native
+  var site: js.UndefOr[Identifier] = js.undefined
 }
 object SchemaSiteVerificationWebResourceResource {
   

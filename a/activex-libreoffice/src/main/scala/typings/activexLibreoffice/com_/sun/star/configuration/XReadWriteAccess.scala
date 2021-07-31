@@ -8,12 +8,11 @@ import typings.activexLibreoffice.com_.sun.star.util.ChangesSet
 import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XReadWriteAccess
-  extends XHierarchicalNameReplace
+  extends StObject
+     with XHierarchicalNameReplace
      with XChangesBatch
      with XHierarchicalPropertySetInfo
 object XReadWriteAccess {

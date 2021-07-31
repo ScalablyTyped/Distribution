@@ -3,13 +3,15 @@ package typings.jsonRpcWs
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsonRpcWs.jsonRpcWsStrings.`2Dot0`
 import typings.ws.mod.ServerOptions
-import typings.ws.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("json-rpc-ws", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("json-rpc-ws", "Base")
   @js.native
@@ -18,7 +20,7 @@ object mod {
     /**
       * Connected event handler
       */
-    def connected(socket: ^): Unit = js.native
+    def connected(socket: typings.ws.mod.^): Unit = js.native
     
     /**
       * Disconnected event handler
@@ -56,7 +58,7 @@ object mod {
       */
     def send[ParamType, ParamCallbackType](eventName: String): Unit = js.native
     def send[ParamType, ParamCallbackType](eventName: String, params: ParamType, callback: ReplyCallback[ParamCallbackType]): Unit = js.native
-    def send[ParamType, ParamCallbackType](eventName: String, params: js.UndefOr[scala.Nothing], callback: ReplyCallback[ParamCallbackType]): Unit = js.native
+    def send[ParamType, ParamCallbackType](eventName: String, params: Unit, callback: ReplyCallback[ParamCallbackType]): Unit = js.native
     @JSName("send")
     def send_ParamTypeParamCallbackType[ParamType, ParamCallbackType](eventName: String, params: ParamType): Unit = js.native
   }
@@ -64,8 +66,8 @@ object mod {
   @JSImport("json-rpc-ws", "Client")
   @js.native
   class Client[TConnection /* <: Connection */] protected () extends Base[TConnection] {
-    def this(WebSocket: ^) = this()
-    def this(WebSocket: ^, browser: Boolean) = this()
+    def this(WebSocket: typings.ws.mod.^) = this()
+    def this(WebSocket: typings.ws.mod.^, browser: Boolean) = this()
     
     /**
       * Connect to a json-rpc-ws server
@@ -88,15 +90,12 @@ object mod {
     def isConnected(): Boolean = js.native
   }
   
-  @JSImport("json-rpc-ws", "Errors")
-  @js.native
-  def Errors(`type`: String, id: String, data: js.Any): js.Any | Null = js.native
-  @JSImport("json-rpc-ws", "Errors")
-  @js.native
-  def Errors(`type`: String, id: Double, data: js.Any): js.Any | Null = js.native
-  @JSImport("json-rpc-ws", "Errors")
-  @js.native
-  def Errors(`type`: String, id: Null, data: js.Any): js.Any | Null = js.native
+  @scala.inline
+  def Errors(`type`: String, id: String, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
+  @scala.inline
+  def Errors(`type`: String, id: Double, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
+  @scala.inline
+  def Errors(`type`: String, id: Null, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
   
   @JSImport("json-rpc-ws", "Server")
   @js.native
@@ -108,7 +107,7 @@ object mod {
       * Start the server
       */
     def start(): Unit = js.native
-    def start(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def start(options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def start(options: ServerOptions): Unit = js.native
     def start(options: ServerOptions, callback: js.Function0[Unit]): Unit = js.native
     
@@ -118,13 +117,11 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @JSImport("json-rpc-ws", "createClient")
-  @js.native
-  def createClient[TConnection /* <: Connection */](): Client[TConnection] = js.native
+  @scala.inline
+  def createClient[TConnection /* <: Connection */](): Client[TConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client[TConnection]]
   
-  @JSImport("json-rpc-ws", "createServer")
-  @js.native
-  def createServer[TConnection /* <: Connection */](): Server[TConnection] = js.native
+  @scala.inline
+  def createServer[TConnection /* <: Connection */](): Server[TConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server[TConnection]]
   
   @js.native
   trait Connection extends StObject {
@@ -139,16 +136,16 @@ object mod {
     
     def message(data: js.Any): Unit = js.native
     
-    var parent: Base[_] = js.native
+    var parent: Base[js.Any] = js.native
     
     def processPayload[ParamType](payload: Payload[ParamType]): Unit = js.native
     
-    var responseHandlers: StringDictionary[ReplyCallback[_]] = js.native
+    var responseHandlers: StringDictionary[ReplyCallback[js.Any]] = js.native
     
     def sendError(error: js.Any): Unit = js.native
-    def sendError(error: js.Any, id: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
     def sendError(error: js.Any, id: String): Unit = js.native
     def sendError(error: js.Any, id: String, data: js.Any): Unit = js.native
+    def sendError(error: js.Any, id: Unit, data: js.Any): Unit = js.native
     
     def sendMethod[ParamType, ParamCallbackType](method: String, params: ParamType): Unit = js.native
     def sendMethod[ParamType, ParamCallbackType](method: String, params: ParamType, callback: ReplyCallback[ParamCallbackType]): Unit = js.native
@@ -156,11 +153,11 @@ object mod {
     def sendRaw[ParamType](payload: Payload[ParamType]): Unit = js.native
     
     def sendResult(id: String): Unit = js.native
-    def sendResult(id: String, error: js.UndefOr[scala.Nothing], result: js.Any): Unit = js.native
     def sendResult(id: String, error: js.Any): Unit = js.native
     def sendResult(id: String, error: js.Any, result: js.Any): Unit = js.native
+    def sendResult(id: String, error: Unit, result: js.Any): Unit = js.native
     
-    var socket: ^ = js.native
+    var socket: typings.ws.mod.^ = js.native
   }
   
   type Handler[TConnection /* <: Connection */, ParamType, ParamCallbackType] = js.ThisFunction2[
@@ -170,20 +167,19 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Payload[ParamType] extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var jsonrpc: js.UndefOr[`2Dot0`] = js.native
+    var jsonrpc: js.UndefOr[`2Dot0`] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var params: js.UndefOr[ParamType] = js.native
+    var params: js.UndefOr[ParamType] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
   }
   object Payload {
     
@@ -194,7 +190,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload[_], ParamType] (val x: Self with Payload[ParamType]) extends AnyVal {
+    implicit class PayloadMutableBuilder[Self <: Payload[?], ParamType] (val x: Self & Payload[ParamType]) extends AnyVal {
       
       @scala.inline
       def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

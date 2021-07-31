@@ -2,19 +2,17 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorEventObject extends StObject {
   
-  var detailedMessage: js.UndefOr[String] = js.native
+  var detailedMessage: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var message: String = js.native
+  var message: String
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
 }
 object ErrorEventObject {
   

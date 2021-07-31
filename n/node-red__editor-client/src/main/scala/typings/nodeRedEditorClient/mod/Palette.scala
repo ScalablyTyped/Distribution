@@ -3,27 +3,25 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Palette extends StObject {
   
-  def add(nt: String, `def`: js.Object): Unit = js.native
+  def add(nt: String, `def`: js.Object): Unit
   
-  var editor: PaletteEditor = js.native
+  var editor: PaletteEditor
   
-  def getCategories(): js.Array[Label] = js.native
+  def getCategories(): js.Array[Label]
   
-  def hide(nt: String): Unit = js.native
+  def hide(nt: String): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
-  def remove(nt: String): Unit = js.native
+  def remove(nt: String): Unit
   
-  def show(nt: String): Unit = js.native
+  def show(nt: String): Unit
 }
 object Palette {
   

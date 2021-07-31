@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteModelRequest extends StObject {
   
   /**
     * The model ID of the model to delete.
     */
-  var modelId: modelIdentifier = js.native
+  var modelId: modelIdentifier
   
   /**
     * The model type of the model to delete.
     */
-  var modelType: ModelTypeEnum = js.native
+  var modelType: ModelTypeEnum
 }
 object DeleteModelRequest {
   

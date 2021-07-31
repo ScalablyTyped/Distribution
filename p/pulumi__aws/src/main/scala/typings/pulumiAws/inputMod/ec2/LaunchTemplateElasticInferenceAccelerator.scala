@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateElasticInferenceAccelerator extends StObject {
   
   /**
     * Accelerator type.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object LaunchTemplateElasticInferenceAccelerator {
   

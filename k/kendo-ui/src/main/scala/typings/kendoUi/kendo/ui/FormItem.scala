@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormItem extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var editor: js.UndefOr[String | js.Function] = js.native
+  var editor: js.UndefOr[String | js.Function] = js.undefined
   
-  var editorOptions: js.UndefOr[js.Any] = js.native
+  var editorOptions: js.UndefOr[js.Any] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[FormItem]] = js.native
+  var items: js.UndefOr[js.Array[FormItem]] = js.undefined
   
-  var label: js.UndefOr[String | FormItemLabel] = js.native
+  var label: js.UndefOr[String | FormItemLabel] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var validation: js.UndefOr[js.Any] = js.native
+  var validation: js.UndefOr[js.Any] = js.undefined
 }
 object FormItem {
   

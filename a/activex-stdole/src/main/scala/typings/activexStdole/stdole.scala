@@ -7,21 +7,19 @@ import typings.activexStdole.activexStdoleNumbers.`4`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stdole {
   
-  @js.native
   trait DISPPARAMS extends StObject {
     
-    val cArgs: Double = js.native
+    val cArgs: Double
     
-    val cNamedArgs: Double = js.native
+    val cNamedArgs: Double
     
-    val rgdispidNamedArgs: Double = js.native
+    val rgdispidNamedArgs: Double
     
-    val rgvarg: js.Any = js.native
+    val rgvarg: js.Any
   }
   object DISPPARAMS {
     
@@ -48,26 +46,25 @@ object stdole {
     }
   }
   
-  @js.native
   trait EXCEPINFO extends StObject {
     
-    val bstrDescription: String = js.native
+    val bstrDescription: String
     
-    val bstrHelpFile: String = js.native
+    val bstrHelpFile: String
     
-    val bstrSource: String = js.native
+    val bstrSource: String
     
-    val dwHelpContext: Double = js.native
+    val dwHelpContext: Double
     
-    val pfnDeferredFillIn: js.UndefOr[scala.Nothing] = js.native
+    val pfnDeferredFillIn: Unit
     
-    val pvReserved: js.UndefOr[scala.Nothing] = js.native
+    val pvReserved: Unit
     
-    val scode: js.Any = js.native
+    val scode: js.Any
     
-    val wCode: Double = js.native
+    val wCode: Double
     
-    val wReserved: Double = js.native
+    val wReserved: Double
   }
   object EXCEPINFO {
     
@@ -77,11 +74,13 @@ object stdole {
       bstrHelpFile: String,
       bstrSource: String,
       dwHelpContext: Double,
+      pfnDeferredFillIn: Unit,
+      pvReserved: Unit,
       scode: js.Any,
       wCode: Double,
       wReserved: Double
     ): EXCEPINFO = {
-      val __obj = js.Dynamic.literal(bstrDescription = bstrDescription.asInstanceOf[js.Any], bstrHelpFile = bstrHelpFile.asInstanceOf[js.Any], bstrSource = bstrSource.asInstanceOf[js.Any], dwHelpContext = dwHelpContext.asInstanceOf[js.Any], scode = scode.asInstanceOf[js.Any], wCode = wCode.asInstanceOf[js.Any], wReserved = wReserved.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bstrDescription = bstrDescription.asInstanceOf[js.Any], bstrHelpFile = bstrHelpFile.asInstanceOf[js.Any], bstrSource = bstrSource.asInstanceOf[js.Any], dwHelpContext = dwHelpContext.asInstanceOf[js.Any], pfnDeferredFillIn = pfnDeferredFillIn.asInstanceOf[js.Any], pvReserved = pvReserved.asInstanceOf[js.Any], scode = scode.asInstanceOf[js.Any], wCode = wCode.asInstanceOf[js.Any], wReserved = wReserved.asInstanceOf[js.Any])
       __obj.asInstanceOf[EXCEPINFO]
     }
     
@@ -101,6 +100,12 @@ object stdole {
       def setDwHelpContext(value: Double): Self = StObject.set(x, "dwHelpContext", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setPfnDeferredFillIn(value: Unit): Self = StObject.set(x, "pfnDeferredFillIn", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPvReserved(value: Unit): Self = StObject.set(x, "pvReserved", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setScode(value: js.Any): Self = StObject.set(x, "scode", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -111,16 +116,15 @@ object stdole {
     }
   }
   
-  @js.native
   trait GUID extends StObject {
     
-    val Data1: Double = js.native
+    val Data1: Double
     
-    val Data2: Double = js.native
+    val Data2: Double
     
-    val Data3: Double = js.native
+    val Data3: Double
     
-    val Data4: SafeArray[Double] = js.native
+    val Data4: SafeArray[Double]
   }
   object GUID {
     
@@ -201,27 +205,26 @@ object stdole {
   
   type OLE_YPOS_PIXELS = Double
   
-  @js.native
   trait StdFont extends StObject {
     
-    val Bold: Boolean = js.native
+    val Bold: Boolean
     
-    val Charset: Double = js.native
+    val Charset: Double
     
-    val Italic: Boolean = js.native
+    val Italic: Boolean
     
-    val Name: String = js.native
+    val Name: String
     
-    val Size: Double = js.native
+    val Size: Double
     
-    val Strikethrough: Boolean = js.native
+    val Strikethrough: Boolean
     
-    val Underline: Boolean = js.native
+    val Underline: Boolean
     
-    val Weight: Double = js.native
+    val Weight: Double
     
     @JSName("stdole.StdFont_typekey")
-    var stdoleDotStdFont_typekey: StdFont = js.native
+    var stdoleDotStdFont_typekey: StdFont
   }
   object StdFont {
     
@@ -274,12 +277,11 @@ object stdole {
     }
   }
   
-  @js.native
   trait StdPicture extends StObject {
     
-    val Handle: Double = js.native
+    val Handle: Double
     
-    val Height: Double = js.native
+    val Height: Double
     
     def Render(
       hdc: Double,
@@ -291,17 +293,17 @@ object stdole {
       ySrc: Double,
       cxSrc: Double,
       cySrc: Double,
-      prcWBounds: js.UndefOr[scala.Nothing]
-    ): Unit = js.native
+      prcWBounds: Unit
+    ): Unit
     
-    val Type: Double = js.native
+    val Type: Double
     
-    val Width: Double = js.native
+    val Width: Double
     
-    val hPal: Double = js.native
+    val hPal: Double
     
     @JSName("stdole.StdPicture_typekey")
-    var stdoleDotStdPicture_typekey: StdPicture = js.native
+    var stdoleDotStdPicture_typekey: StdPicture
   }
   object StdPicture {
     
@@ -309,7 +311,7 @@ object stdole {
     def apply(
       Handle: Double,
       Height: Double,
-      Render: (Double, Double, Double, Double, Double, Double, Double, Double, Double, js.UndefOr[scala.Nothing]) => Unit,
+      Render: (Double, Double, Double, Double, Double, Double, Double, Double, Double, Unit) => Unit,
       Type: Double,
       Width: Double,
       hPal: Double,
@@ -333,9 +335,7 @@ object stdole {
       def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRender(
-        value: (Double, Double, Double, Double, Double, Double, Double, Double, Double, js.UndefOr[scala.Nothing]) => Unit
-      ): Self = StObject.set(x, "Render", js.Any.fromFunction10(value))
+      def setRender(value: (Double, Double, Double, Double, Double, Double, Double, Double, Double, Unit) => Unit): Self = StObject.set(x, "Render", js.Any.fromFunction10(value))
       
       @scala.inline
       def setStdoleDotStdPicture_typekey(value: StdPicture): Self = StObject.set(x, "stdole.StdPicture_typekey", value.asInstanceOf[js.Any])

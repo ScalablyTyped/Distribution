@@ -3,15 +3,16 @@ package typings.vscodeLanguageclient
 import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object processesMod {
   
-  @JSImport("vscode-languageclient/lib/utils/processes", "terminate")
+  @JSImport("vscode-languageclient/lib/utils/processes", JSImport.Namespace)
   @js.native
-  def terminate(process: ChildProcess): Boolean = js.native
-  @JSImport("vscode-languageclient/lib/utils/processes", "terminate")
-  @js.native
-  def terminate(process: ChildProcess, cwd: String): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def terminate(process: ChildProcess): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(process.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def terminate(process: ChildProcess, cwd: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(process.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

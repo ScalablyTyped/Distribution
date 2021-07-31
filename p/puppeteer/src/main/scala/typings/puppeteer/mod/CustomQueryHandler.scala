@@ -5,10 +5,8 @@ import typings.std.Element
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomQueryHandler extends StObject {
   
   var queryAll: js.UndefOr[
@@ -17,11 +15,11 @@ trait CustomQueryHandler extends StObject {
       /* selector */ String, 
       js.Array[Element] | NodeListOf[Element]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var queryOne: js.UndefOr[
     js.Function2[/* element */ Element | Document, /* selector */ String, Element | Null]
-  ] = js.native
+  ] = js.undefined
 }
 object CustomQueryHandler {
   

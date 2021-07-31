@@ -2,7 +2,6 @@ package typings.tizenCommonWeb.tizenMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/tizen", "AttributeRangeFilter")
@@ -10,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class AttributeRangeFilter protected () extends AbstractFilter {
   def this(attributeName: String) = this()
   def this(attributeName: String, initialValue: js.Any) = this()
-  def this(attributeName: String, initialValue: js.UndefOr[scala.Nothing], endValue: js.Any) = this()
   def this(attributeName: String, initialValue: js.Any, endValue: js.Any) = this()
+  def this(attributeName: String, initialValue: Unit, endValue: js.Any) = this()
   
   /**
     * The name of the object attribute used for filtering.

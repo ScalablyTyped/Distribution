@@ -5,39 +5,53 @@ import typings.inversify.interfacesMod.interfaces.Container
 import typings.inversify.interfacesMod.interfaces.Newable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod {
   
-  @JSImport("inversify-inject-decorators/dts/decorators", "makePropertyInjectDecorator")
+  @JSImport("inversify-inject-decorators/dts/decorators", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def makePropertyInjectDecorator(container: Container, doCache: Boolean): js.Function1[
-    /* serviceIdentifier */ String | js.Symbol | Newable[_] | Abstract[_], 
-    js.Function2[/* proto */ _, /* key */ String, Unit]
-  ] = js.native
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyInjectDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+  ]]
   
-  @JSImport("inversify-inject-decorators/dts/decorators", "makePropertyInjectNamedDecorator")
-  @js.native
+  @scala.inline
   def makePropertyInjectNamedDecorator(container: Container, doCache: Boolean): js.Function2[
-    /* serviceIdentifier */ String | js.Symbol | Newable[_] | Abstract[_], 
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
     /* named */ String, 
-    js.Function2[/* proto */ _, /* key */ String, Unit]
-  ] = js.native
+    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyInjectNamedDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    /* named */ String, 
+    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+  ]]
   
-  @JSImport("inversify-inject-decorators/dts/decorators", "makePropertyInjectTaggedDecorator")
-  @js.native
+  @scala.inline
   def makePropertyInjectTaggedDecorator(container: Container, doCache: Boolean): js.Function3[
-    /* serviceIdentifier */ String | js.Symbol | Newable[_] | Abstract[_], 
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
     /* key */ String, 
     /* value */ js.Any, 
-    js.Function2[/* proto */ _, /* propertyName */ String, Unit]
-  ] = js.native
+    js.Function2[/* proto */ js.Any, /* propertyName */ String, Unit]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyInjectTaggedDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    /* key */ String, 
+    /* value */ js.Any, 
+    js.Function2[/* proto */ js.Any, /* propertyName */ String, Unit]
+  ]]
   
-  @JSImport("inversify-inject-decorators/dts/decorators", "makePropertyMultiInjectDecorator")
-  @js.native
+  @scala.inline
   def makePropertyMultiInjectDecorator(container: Container, doCache: Boolean): js.Function1[
-    /* serviceIdentifier */ String | js.Symbol | Newable[_] | Abstract[_], 
-    js.Function2[/* proto */ _, /* key */ String, Unit]
-  ] = js.native
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makePropertyMultiInjectDecorator")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* serviceIdentifier */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
+    js.Function2[/* proto */ js.Any, /* key */ String, Unit]
+  ]]
 }

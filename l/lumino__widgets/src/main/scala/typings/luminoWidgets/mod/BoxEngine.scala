@@ -3,10 +3,13 @@ package typings.luminoWidgets.mod
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BoxEngine {
+  
+  @JSImport("@lumino/widgets", "BoxEngine")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Adjust a sizer by a delta and update its neighbors accordingly.
@@ -25,9 +28,8 @@ object BoxEngine {
     * This is useful when implementing box layouts where the boundaries
     * between the sizers are interactively adjustable by the user.
     */
-  @JSImport("@lumino/widgets", "BoxEngine.adjust")
-  @js.native
-  def adjust(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], index: Double, delta: Double): Unit = js.native
+  @scala.inline
+  def adjust(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], index: Double, delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("adjust")(sizers.asInstanceOf[js.Any], index.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Calculate the optimal layout sizes for a sequence of box sizers.
@@ -91,7 +93,6 @@ object BoxEngine {
     * have no effect on the new output. It is therefore not necessary to
     * create new sizer objects on each resize event.
     */
-  @JSImport("@lumino/widgets", "BoxEngine.calc")
-  @js.native
-  def calc(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], space: Double): Double = js.native
+  @scala.inline
+  def calc(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], space: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calc")(sizers.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

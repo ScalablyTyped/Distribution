@@ -6,7 +6,6 @@ import typings.wordpressComponents.baseControlMod.BaseControl.ControlProps
 import typings.wordpressComponents.toggleControlMod.ToggleControl.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleControlMod {
@@ -25,20 +24,21 @@ object toggleControlMod {
   
   object ToggleControl {
     
-    @js.native
-    trait Props extends ControlProps {
+    trait Props
+      extends StObject
+         with ControlProps {
       
       /**
         * If checked is `true` the toggle will be checked. If checked is
         * `false` the toggle will be unchecked. If no value is passed the
         * toggle will be unchecked.
         */
-      var checked: js.UndefOr[Boolean] = js.native
+      var checked: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A function that receives the checked state as input.
         */
-      var onChange: js.UndefOr[js.Function1[/* isChecked */ Boolean, Unit]] = js.native
+      var onChange: js.UndefOr[js.Function1[/* isChecked */ Boolean, Unit]] = js.undefined
     }
     object Props {
       

@@ -3,14 +3,13 @@ package typings.wechatMiniprogram.DB
 import typings.wechatMiniprogram.IAPIParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRemoveDocumentOptions
-  extends IAPIParam[js.Any] {
+  extends StObject
+     with IAPIParam[js.Any] {
   
-  var query: IQueryCondition = js.native
+  var query: IQueryCondition
 }
 object IRemoveDocumentOptions {
   

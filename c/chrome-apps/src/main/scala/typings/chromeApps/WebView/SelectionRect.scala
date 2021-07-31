@@ -3,7 +3,6 @@ package typings.chromeApps.WebView
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The containment semantics are array-like; that is, the coordinate (left, top) is considered to be contained by the rectangle,
   * but the coordinate (left + width, top) is not.
   **/
-@js.native
 trait SelectionRect extends StObject {
   
   /** Height of the rectangle. */
-  var height: integer = js.native
+  var height: integer
   
   /** Distance from the left edge of the screen to the left edge of the rectangle. */
-  var left: integer = js.native
+  var left: integer
   
   /** Distance from the top edge of the screen to the top edge of the rectangle. */
-  var top: integer = js.native
+  var top: integer
   
   /** Width of the rectangle. */
-  var width: integer = js.native
+  var width: integer
 }
 object SelectionRect {
   

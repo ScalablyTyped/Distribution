@@ -2,63 +2,61 @@ package typings.gapiYoutubeanalytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dimensions extends StObject {
     
     /**
       * A comma-separated list of YouTube Analytics dimensions, such as views or ageGroup,gender.
       */
-    var dimensions: js.UndefOr[String] = js.native
+    var dimensions: js.UndefOr[String] = js.undefined
     
     /**
       * The end date for fetching YouTube Analytics data. The value should be in YYYY-MM-DD format.
       */
-    var `end-date`: String = js.native
+    var `end-date`: String
     
     /**
       * Selector specifying which fields to include in a partial response.
       */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * A list of filters that should be applied when retrieving YouTube Analytics data. The Available Reports document identifies the dimensions that can be used to filter each report, and the Dimensions document defines those dimensions. If a request uses multiple filters, join them together with a semicolon (;), and the returned result table will satisfy both filters.
       */
-    var filters: js.UndefOr[String] = js.native
+    var filters: js.UndefOr[String] = js.undefined
     
     /**
       * Identifies the YouTube channel or content owner for which you are retrieving YouTube Analytics data. - To request data for a YouTube user, set the ids parameter value to channel==CHANNEL_ID, where CHANNEL_ID specifies the unique YouTube channel ID. - To request data for a YouTube CMS content owner, set the ids parameter value to contentOwner==OWNER_NAME, where OWNER_NAME is the CMS name of the content owner.
       */
-    var ids: String = js.native
+    var ids: String
     
     /**
       * The maximum number of rows to include in the response.
       */
-    var `max-results`: js.UndefOr[Double] = js.native
+    var `max-results`: js.UndefOr[Double] = js.undefined
     
     /**
       * A comma-separated list of YouTube Analytics metrics, such as views or likes,dislikes.
       */
-    var metrics: String = js.native
+    var metrics: String
     
     /**
       * A comma-separated list of dimensions or metrics that determine the sort order for YouTube Analytics data. By default the sort order is ascending. The '-' prefix causes descending sort order.
       */
-    var sort: js.UndefOr[String] = js.native
+    var sort: js.UndefOr[String] = js.undefined
     
     /**
       * The start date for fetching YouTube Analytics data. The value should be in YYYY-MM-DD format.
       */
-    var `start-date`: String = js.native
+    var `start-date`: String
     
     /**
       * An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter (one-based, inclusive).
       */
-    var `start-index`: js.UndefOr[Double] = js.native
+    var `start-index`: js.UndefOr[Double] = js.undefined
   }
   object Dimensions {
     

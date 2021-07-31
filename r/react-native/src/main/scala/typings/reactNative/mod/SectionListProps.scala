@@ -6,21 +6,21 @@ import typings.reactNative.anon.Index
 import typings.reactNative.anon.Section
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SectionListProps[ItemT, SectionT] extends VirtualizedListWithoutRenderItemProps[ItemT] {
+trait SectionListProps[ItemT, SectionT]
+  extends StObject
+     with VirtualizedListWithoutRenderItemProps[ItemT] {
   
   /**
     * Rendered in between adjacent Items within each section.
     */
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.native
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
   
   /**
     * Rendered in between each section.
     */
-  var SectionSeparatorComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  var SectionSeparatorComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
   /**
     * `getItemLayout` is an optional optimization that lets us skip measurement of dynamic
@@ -39,38 +39,38 @@ trait SectionListProps[ItemT, SectionT] extends VirtualizedListWithoutRenderItem
       /* index */ Double, 
       Index
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Uses legacy MetroListView instead of default VirtualizedSectionList
     */
-  var legacyImplementation: js.UndefOr[Boolean] = js.native
+  var legacyImplementation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default renderer for every item in every section. Can be over-ridden on a per-section basis.
     */
-  var renderItem: js.UndefOr[SectionListRenderItem[ItemT, SectionT]] = js.native
+  var renderItem: js.UndefOr[SectionListRenderItem[ItemT, SectionT]] = js.undefined
   
   /**
     * Rendered at the bottom of each section.
     */
-  var renderSectionFooter: js.UndefOr[js.Function1[/* info */ Section[ItemT, SectionT], ReactElement | Null]] = js.native
+  var renderSectionFooter: js.UndefOr[js.Function1[/* info */ Section[ItemT, SectionT], ReactElement | Null]] = js.undefined
   
   /**
     * Rendered at the top of each section. Sticky headers are not yet supported.
     */
-  var renderSectionHeader: js.UndefOr[js.Function1[/* info */ Section[ItemT, SectionT], ReactElement | Null]] = js.native
+  var renderSectionHeader: js.UndefOr[js.Function1[/* info */ Section[ItemT, SectionT], ReactElement | Null]] = js.undefined
   
   /**
     * An array of objects with data for each section.
     */
-  var sections: js.Array[SectionListData[ItemT, SectionT]] = js.native
+  var sections: js.Array[SectionListData[ItemT, SectionT]]
   
   /**
     * Makes section headers stick to the top of the screen until the next one pushes it off.
     * Only enabled by default on iOS because that is the platform standard there.
     */
-  var stickySectionHeadersEnabled: js.UndefOr[Boolean] = js.native
+  var stickySectionHeadersEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SectionListProps {
   
@@ -81,7 +81,7 @@ object SectionListProps {
   }
   
   @scala.inline
-  implicit class SectionListPropsMutableBuilder[Self <: SectionListProps[_, _], ItemT, SectionT] (val x: Self with (SectionListProps[ItemT, SectionT])) extends AnyVal {
+  implicit class SectionListPropsMutableBuilder[Self <: SectionListProps[?, ?], ItemT, SectionT] (val x: Self & (SectionListProps[ItemT, SectionT])) extends AnyVal {
     
     @scala.inline
     def setGetItemLayout(
@@ -92,7 +92,7 @@ object SectionListProps {
     def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
     @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[_]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
@@ -125,7 +125,7 @@ object SectionListProps {
     def setRenderSectionHeaderUndefined: Self = StObject.set(x, "renderSectionHeader", js.undefined)
     
     @scala.inline
-    def setSectionSeparatorComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "SectionSeparatorComponent", value.asInstanceOf[js.Any])
+    def setSectionSeparatorComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "SectionSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSectionSeparatorComponentNull: Self = StObject.set(x, "SectionSeparatorComponent", null)

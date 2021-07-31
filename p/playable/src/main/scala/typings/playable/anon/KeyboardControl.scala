@@ -5,17 +5,15 @@ import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.rootContainerTypesMod.IRootContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardControl extends StObject {
   
-  var engine: IPlaybackEngine = js.native
+  var engine: IPlaybackEngine
   
-  var keyboardControl: IKeyboardControl = js.native
+  var keyboardControl: IKeyboardControl
   
-  var rootContainer: IRootContainer = js.native
+  var rootContainer: IRootContainer
 }
 object KeyboardControl {
   

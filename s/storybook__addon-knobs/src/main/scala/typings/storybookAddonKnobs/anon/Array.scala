@@ -2,21 +2,19 @@ package typings.storybookAddonKnobs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array extends StObject {
   
-  var boolean: FunctionComponentBooleanT = js.native
+  var boolean: FunctionComponentBooleanT
   
-  var button: FunctionComponentButtonTy = js.native
+  var button: FunctionComponentButtonTy
   
-  var files: FunctionComponentFilesTyp = js.native
+  var files: FunctionComponentFilesTyp
   
-  var options: FunctionComponentOptionsT = js.native
+  var options: FunctionComponentOptionsT
   
-  var select: FunctionComponentSelectTy = js.native
+  var select: FunctionComponentSelectTy
 }
 object Array {
   

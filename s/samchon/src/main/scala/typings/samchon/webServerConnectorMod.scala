@@ -4,7 +4,6 @@ import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.webCommunicatorMod.WebCommunicator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webServerConnectorMod {

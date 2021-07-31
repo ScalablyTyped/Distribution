@@ -5,7 +5,6 @@ import typings.pusherChatkitClient.chatmanagerMod.ChatManagerConstructorArgs
 import typings.pusherChatkitClient.chatmanagerMod.TokenProviderConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,7 +17,8 @@ object mod {
   @JSImport("@pusher/chatkit-client", "ChatManager")
   @js.native
   class ChatManagerCls protected ()
-    extends typings.pusherChatkitClient.chatmanagerMod.ChatManager {
+    extends StObject
+       with typings.pusherChatkitClient.chatmanagerMod.ChatManager {
     def this(args: ChatManagerConstructorArgs) = this()
   }
   

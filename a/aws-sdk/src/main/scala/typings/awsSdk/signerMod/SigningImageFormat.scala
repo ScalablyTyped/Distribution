@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningImageFormat extends StObject {
   
   /**
     * The default format of a code signing image.
     */
-  var defaultFormat: ImageFormat = js.native
+  var defaultFormat: ImageFormat
   
   /**
     * The supported formats of a code signing image.
     */
-  var supportedFormats: ImageFormats = js.native
+  var supportedFormats: ImageFormats
 }
 object SigningImageFormat {
   

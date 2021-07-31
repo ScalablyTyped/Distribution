@@ -2,10 +2,8 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateFormatOptions extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DateFormatOptions extends StObject {
     * - 'long' - Long format: e.g., "February 28, 2016"
     * You cannot specify both formatType and pattern.
     */
-  var formatType: js.UndefOr[String] = js.native
+  var formatType: js.UndefOr[String] = js.undefined
   
   /**
     * A custom format pattern to apply to the value, similar to the ICU date and time format.
@@ -23,12 +21,12 @@ trait DateFormatOptions extends StObject {
     * @example
     * var formatter3 = new google.visualization.DateFormat({pattern: "EEE, MMM d, ''yy"});
     */
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
   /**
     * The time zone in which to display the date value. This is a numeric value, indicating GMT + this number of time zones (can be negative). Date object are created by default with the assumed time zone of the computer on which they are created; this option is used to display that value in a different time zone. For example, if you created a Date object of 5pm noon on a computer located in Greenwich, England, and specified timeZone to be -5 (options['timeZone'] = -5, or Eastern Pacific Time in the US), the value displayed would be 12 noon.
     */
-  var timeZone: js.UndefOr[Double] = js.native
+  var timeZone: js.UndefOr[Double] = js.undefined
 }
 object DateFormatOptions {
   

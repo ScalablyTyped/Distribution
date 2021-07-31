@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaiduChannelRequest extends StObject {
   
   /**
     * The API key that you received from the Baidu Cloud Push service to communicate with the service.
     */
-  var ApiKey: string = js.native
+  var ApiKey: string
   
   /**
     * Specifies whether to enable the Baidu channel for the application.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * The secret key that you received from the Baidu Cloud Push service to communicate with the service.
     */
-  var SecretKey: string = js.native
+  var SecretKey: string
 }
 object BaiduChannelRequest {
   

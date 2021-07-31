@@ -3,15 +3,13 @@ package typings.vexflow.anon
 import typings.vexflow.Vex.IFont
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cache extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var font: js.UndefOr[IFont] = js.native
+  var font: js.UndefOr[IFont] = js.undefined
 }
 object Cache {
   

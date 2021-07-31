@@ -10,9 +10,9 @@ TypeScript typings for Cloud Dataproc API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dataproc |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 861 |
+| # downloads        | 977 |
 | # stars            | 0 |
 
 ## Links

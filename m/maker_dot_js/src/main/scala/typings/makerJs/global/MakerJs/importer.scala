@@ -3,14 +3,16 @@ package typings.makerJs.global.MakerJs
 import typings.makerJs.MakerJs.IModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object importer {
   
-  @JSGlobal("MakerJs.importer.fromSVGPathData")
+  @JSGlobal("MakerJs.importer")
   @js.native
-  def fromSVGPathData(pathData: String): IModel = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromSVGPathData(pathData: String): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSVGPathData")(pathData.asInstanceOf[js.Any]).asInstanceOf[IModel]
   
   /**
     * Create a numeric array from a string of numbers. The numbers may be delimited by anything non-numeric.
@@ -23,7 +25,6 @@ object importer {
     * @param s The string of numbers.
     * @returns Array of numbers.
     */
-  @JSGlobal("MakerJs.importer.parseNumericList")
-  @js.native
-  def parseNumericList(s: String): js.Array[Double] = js.native
+  @scala.inline
+  def parseNumericList(s: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNumericList")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

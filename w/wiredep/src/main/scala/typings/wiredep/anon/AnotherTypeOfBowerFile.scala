@@ -2,22 +2,20 @@ package typings.wiredep.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnotherTypeOfBowerFile extends StObject {
   
   /**
     * @exemple:
     *   return '<script class="random-' + Math.random() + '" src="' + filePath + '"></script>'
     */
-  def anotherTypeOfBowerFile(filePath: String): String = js.native
+  def anotherTypeOfBowerFile(filePath: String): String
   
   /**
     * <format for this {{filePath}} to be injected>
     */
-  var typeOfBowerFile: String = js.native
+  var typeOfBowerFile: String
 }
 object AnotherTypeOfBowerFile {
   

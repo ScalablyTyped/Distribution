@@ -4,31 +4,31 @@ import typings.hapi.anon.Artifacts
 import typings.shot.mod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerInjectOptions extends RequestOptions {
+trait ServerInjectOptions
+  extends StObject
+     with RequestOptions {
   
   /**
     * allows access to routes with config.isInternal set to true. Defaults to false.
     */
-  var allowInternals: js.UndefOr[Boolean] = js.native
+  var allowInternals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * sets the initial value of request.app, defaults to {}.
     */
-  var app: js.UndefOr[ApplicationState] = js.native
+  var app: js.UndefOr[ApplicationState] = js.undefined
   
   /**
     * Authentication bypass options.
     */
-  var auth: js.UndefOr[Artifacts] = js.native
+  var auth: js.UndefOr[Artifacts] = js.undefined
   
   /**
     * sets the initial value of request.plugins, defaults to {}.
     */
-  var plugins: js.UndefOr[PluginsStates] = js.native
+  var plugins: js.UndefOr[PluginsStates] = js.undefined
 }
 object ServerInjectOptions {
   

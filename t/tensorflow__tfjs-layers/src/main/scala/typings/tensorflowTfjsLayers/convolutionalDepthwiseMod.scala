@@ -13,10 +13,13 @@ import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convolutionalDepthwiseMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "DepthwiseConv2D")
   @js.native
@@ -48,136 +51,35 @@ object convolutionalDepthwiseMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(x: Tensor[Rank], depthwiseKernel: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.UndefOr[scala.Nothing],
-    padding: String,
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(x: Tensor[Rank], depthwiseKernel: Tensor[Rank], strides: js.Tuple2[Double, Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.Tuple2[Double, Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.Tuple2[Double, Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
-  def depthwiseConv2d(
-    x: Tensor[Rank],
-    depthwiseKernel: Tensor[Rank],
-    strides: js.Tuple2[Double, Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
+  @scala.inline
+  def depthwiseConv2d(x: Tensor[Rank], depthwiseKernel: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(x: Tensor[Rank], depthwiseKernel: Tensor[Rank], strides: js.Tuple2[Double, Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def depthwiseConv2d(
     x: Tensor[Rank],
     depthwiseKernel: Tensor[Rank],
     strides: js.Tuple2[Double, Double],
     padding: String
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def depthwiseConv2d(
     x: Tensor[Rank],
     depthwiseKernel: Tensor[Rank],
     strides: js.Tuple2[Double, Double],
     padding: String,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def depthwiseConv2d(
     x: Tensor[Rank],
     depthwiseKernel: Tensor[Rank],
     strides: js.Tuple2[Double, Double],
     padding: String,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "depthwiseConv2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def depthwiseConv2d(
     x: Tensor[Rank],
     depthwiseKernel: Tensor[Rank],
@@ -185,10 +87,91 @@ object convolutionalDepthwiseMod {
     padding: String,
     dataFormat: DataFormat,
     dilationRate: js.Tuple2[Double, Double]
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: js.Tuple2[Double, Double],
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: js.Tuple2[Double, Double],
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: js.Tuple2[Double, Double],
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(x: Tensor[Rank], depthwiseKernel: Tensor[Rank], strides: Unit, padding: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: Unit,
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def depthwiseConv2d(
+    x: Tensor[Rank],
+    depthwiseKernel: Tensor[Rank],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    dilationRate: js.Tuple2[Double, Double]
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], depthwiseKernel.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilationRate.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @js.native
-  trait DepthwiseConv2DLayerArgs extends BaseConvLayerArgs {
+  trait DepthwiseConv2DLayerArgs
+    extends StObject
+       with BaseConvLayerArgs {
     
     /**
       * The number of depthwise convolution output channels for each input
@@ -197,23 +180,23 @@ object convolutionalDepthwiseMod {
       * `filtersIn * depthMultiplier`.
       * Default: 1.
       */
-    var depthMultiplier: js.UndefOr[Double] = js.native
+    var depthMultiplier: js.UndefOr[Double] = js.undefined
     
     /**
       * Constraint for the depthwise kernel matrix.
       */
-    var depthwiseConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var depthwiseConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the depthwise kernel matrix.
       * Default: GlorotNormal.
       */
-    var depthwiseInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var depthwiseInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regulzarizer function for the depthwise kernel matrix.
       */
-    var depthwiseRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var depthwiseRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * An integer or Array of 2 integers, specifying the width and height of the
@@ -221,7 +204,7 @@ object convolutionalDepthwiseMod {
       * for all spatial dimensions.
       */
     @JSName("kernelSize")
-    var kernelSize_DepthwiseConv2DLayerArgs: Double | (js.Tuple2[Double, Double]) = js.native
+    var kernelSize_DepthwiseConv2DLayerArgs: Double | (js.Tuple2[Double, Double])
   }
   object DepthwiseConv2DLayerArgs {
     

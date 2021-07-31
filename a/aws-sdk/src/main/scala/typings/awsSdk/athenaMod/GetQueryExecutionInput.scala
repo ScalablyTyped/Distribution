@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueryExecutionInput extends StObject {
   
   /**
     * The unique ID of the query execution.
     */
-  var QueryExecutionId: typings.awsSdk.athenaMod.QueryExecutionId = js.native
+  var QueryExecutionId: typings.awsSdk.athenaMod.QueryExecutionId
 }
 object GetQueryExecutionInput {
   

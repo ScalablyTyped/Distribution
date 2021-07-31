@@ -3,18 +3,16 @@ package typings.numeral
 import typings.numeral.anon.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://numeraljs.com/#custom-formats
-@js.native
 trait NumeralJsFormat extends StObject {
   
-  def format(value: js.Any, format: String, roundingFunction: RoundingFunction): String = js.native
+  def format(value: js.Any, format: String, roundingFunction: RoundingFunction): String
   
-  var regexps: Format = js.native
+  var regexps: Format
   
-  def unformat(value: String): Double = js.native
+  def unformat(value: String): Double
 }
 object NumeralJsFormat {
   

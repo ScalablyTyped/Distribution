@@ -8,13 +8,12 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectStoreServer extends StObject {
   
-  def abort(listener: js.Function1[/* ev */ Event, _]): ObjectStoreServer = js.native
+  def abort(listener: js.Function1[/* ev */ Event, js.Any]): ObjectStoreServer = js.native
   
   def add[T](table: String, entities: T*): js.Promise[js.Array[T]] = js.native
   def add[T](table: String, entity: T): js.Promise[T] = js.native
@@ -22,11 +21,11 @@ trait ObjectStoreServer extends StObject {
   
   def addEventListener(`type`: String, listener: ErrorListener | EventListener): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(`type`: abort, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_abort(`type`: abort, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.Function1[/* err */ Error, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.Function1[/* err */ Error, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_versionchange(`type`: versionchange, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_versionchange(`type`: versionchange, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
   
   @JSName("add")
   def add_TKeyTValue[TKey, TValue](table: String, entities: (KeyValuePair[TKey, TValue])*): js.Promise[js.Array[KeyValuePair[TKey, TValue]]] = js.native
@@ -37,7 +36,7 @@ trait ObjectStoreServer extends StObject {
   def count(keyOrRange: js.Any): js.Promise[Double] = js.native
   def count(table: String, key: js.Any): js.Promise[Double] = js.native
   
-  def error(listener: js.Function1[/* ev */ Error, _]): ObjectStoreServer = js.native
+  def error(listener: js.Function1[/* ev */ Error, js.Any]): ObjectStoreServer = js.native
   
   def get[T](table: String, key: js.Any): js.Promise[T] = js.native
   
@@ -53,5 +52,5 @@ trait ObjectStoreServer extends StObject {
   @JSName("update")
   def update_TKeyTValue[TKey, TValue](table: String, entities: (KeyValuePair[TKey, TValue])*): js.Promise[js.Array[KeyValuePair[TKey, TValue]]] = js.native
   
-  def versionchange(listener: js.Function1[/* ev */ Event, _]): ObjectStoreServer = js.native
+  def versionchange(listener: js.Function1[/* ev */ Event, js.Any]): ObjectStoreServer = js.native
 }

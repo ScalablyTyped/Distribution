@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change a floating object's absolute position.
   */
-@js.native
-trait ChangeFloatingObjectAbsolutePositionCommand extends ChangeFloatingObjectPropertyCommandBase[FloatingObjectAbsolutePositionSettings]
+trait ChangeFloatingObjectAbsolutePositionCommand
+  extends StObject
+     with ChangeFloatingObjectPropertyCommandBase[FloatingObjectAbsolutePositionSettings]
 object ChangeFloatingObjectAbsolutePositionCommand {
   
   @scala.inline

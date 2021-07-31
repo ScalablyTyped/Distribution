@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.writeGood.anon.Explanation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,44 +11,45 @@ object mod {
   /**
     * Returns a list of violations in the supplied `text`.
     */
+  @scala.inline
+  def apply(text: String): js.Array[Problem] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Problem]]
+  @scala.inline
+  def apply(text: String, options: Options): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
+  
   @JSImport("write-good", JSImport.Namespace)
   @js.native
-  def apply(text: String): js.Array[Problem] = js.native
-  @JSImport("write-good", JSImport.Namespace)
-  @js.native
-  def apply(text: String, options: Options): js.Array[Problem] = js.native
+  val ^ : js.Any = js.native
   
   type CustomChecks = StringDictionary[Explanation]
   
-  @js.native
   trait DefaultChecks extends StObject {
     
     /** Checks for adverbs that can weaken meaning: really, very, extremely, etc. Enabled by default */
-    var adverb: js.UndefOr[Boolean] = js.native
+    var adverb: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for common cliches. Enabled by default */
-    var cliches: js.UndefOr[Boolean] = js.native
+    var cliches: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for {@link https://en.wikipedia.org/wiki/E-Prime|"to-be"} verbs. **Disabled** by default */
-    var eprime: js.UndefOr[Boolean] = js.native
+    var eprime: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for lexical illusions – cases where a word is repeated. Enabled by default */
-    var illusion: js.UndefOr[Boolean] = js.native
+    var illusion: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for passive voice. Enabled by default */
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for so at the beginning of the sentence. Enabled by default */
-    var so: js.UndefOr[Boolean] = js.native
+    var so: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for there is or there are at the beginning of the sentence. Enabled by default */
-    var thereIs: js.UndefOr[Boolean] = js.native
+    var thereIs: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for wordy phrases and unnecessary words.. Enabled by default */
-    var tooWordy: js.UndefOr[Boolean] = js.native
+    var tooWordy: js.UndefOr[Boolean] = js.undefined
     
     /** Checks for "weasel words." Enabled by default */
-    var weasel: js.UndefOr[Boolean] = js.native
+    var weasel: js.UndefOr[Boolean] = js.undefined
   }
   object DefaultChecks {
     
@@ -118,17 +118,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends DefaultChecks {
+  trait Options
+    extends StObject
+       with DefaultChecks {
     
     /** Custom rules */
-    var checks: js.UndefOr[CustomChecks] = js.native
+    var checks: js.UndefOr[CustomChecks] = js.undefined
     
     /**
       * A list of strings to whitelist from suggestions. For example, normally "only"
       * would be picked up as a bad word, but you might want to exempt "read-only"
       */
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -158,17 +159,16 @@ object mod {
     }
   }
   
-  @js.native
   trait Problem extends StObject {
     
     /** The position of the match in the input text */
-    var index: Double = js.native
+    var index: Double
     
     /** The length of the match */
-    var offset: Double = js.native
+    var offset: Double
     
     /** An explaination of the problem */
-    var reason: String = js.native
+    var reason: String
   }
   object Problem {
     

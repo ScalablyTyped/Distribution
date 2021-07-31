@@ -2,36 +2,34 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceTableFeatureDetails extends StObject {
   
   /**
     * Represents the GSI properties for the table when the backup was created. It includes the IndexName, KeySchema, Projection, and ProvisionedThroughput for the GSIs on the table at the time of backup. 
     */
-  var GlobalSecondaryIndexes: js.UndefOr[typings.awsSdk.dynamodbMod.GlobalSecondaryIndexes] = js.native
+  var GlobalSecondaryIndexes: js.UndefOr[typings.awsSdk.dynamodbMod.GlobalSecondaryIndexes] = js.undefined
   
   /**
     * Represents the LSI properties for the table when the backup was created. It includes the IndexName, KeySchema and Projection for the LSIs on the table at the time of backup. 
     */
-  var LocalSecondaryIndexes: js.UndefOr[typings.awsSdk.dynamodbMod.LocalSecondaryIndexes] = js.native
+  var LocalSecondaryIndexes: js.UndefOr[typings.awsSdk.dynamodbMod.LocalSecondaryIndexes] = js.undefined
   
   /**
     * The description of the server-side encryption status on the table when the backup was created.
     */
-  var SSEDescription: js.UndefOr[typings.awsSdk.dynamodbMod.SSEDescription] = js.native
+  var SSEDescription: js.UndefOr[typings.awsSdk.dynamodbMod.SSEDescription] = js.undefined
   
   /**
     * Stream settings on the table when the backup was created.
     */
-  var StreamDescription: js.UndefOr[StreamSpecification] = js.native
+  var StreamDescription: js.UndefOr[StreamSpecification] = js.undefined
   
   /**
     * Time to Live settings on the table when the backup was created.
     */
-  var TimeToLiveDescription: js.UndefOr[typings.awsSdk.dynamodbMod.TimeToLiveDescription] = js.native
+  var TimeToLiveDescription: js.UndefOr[typings.awsSdk.dynamodbMod.TimeToLiveDescription] = js.undefined
 }
 object SourceTableFeatureDetails {
   

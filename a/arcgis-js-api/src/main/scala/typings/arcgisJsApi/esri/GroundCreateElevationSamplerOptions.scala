@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroundCreateElevationSamplerOptions extends Object {
+trait GroundCreateElevationSamplerOptions
+  extends StObject
+     with Object {
   
   /**
     * The value to use when there is no data available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#createElevationSampler)
     */
-  var noDataValue: js.UndefOr[Double] = js.native
+  var noDataValue: js.UndefOr[Double] = js.undefined
 }
 object GroundCreateElevationSamplerOptions {
   

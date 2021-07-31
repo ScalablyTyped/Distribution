@@ -6,10 +6,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.scale
 import typings.wechatMiniprogram.wechatMiniprogramStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /**
@@ -19,21 +17,21 @@ trait Type extends StObject {
     * - scale: 缩放导致
     * - update: 调用接口导致
     */
-  var causedBy: drag | scale | update = js.native
+  var causedBy: drag | scale | update
   
   /**
     * 视野变化结束时触发
     *
     * 视野变化结束为 `end`
     */
-  var `type`: end = js.native
+  var `type`: end
 }
 object Type {
   
   @scala.inline
-  def apply(causedBy: drag | scale | update, `type`: end): Type = {
+  def apply(causedBy: drag | scale | update): Type = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("end")
     __obj.asInstanceOf[Type]
   }
   

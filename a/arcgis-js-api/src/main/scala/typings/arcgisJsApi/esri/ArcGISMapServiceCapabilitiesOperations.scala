@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArcGISMapServiceCapabilitiesOperations extends Object {
+trait ArcGISMapServiceCapabilitiesOperations
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the service can generate images.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsExportMap: Boolean = js.native
+  var supportsExportMap: Boolean
   
   /**
     * Indicates if the tiles from the service can be exported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsExportTiles: Boolean = js.native
+  var supportsExportTiles: Boolean
   
   /**
     * Indicates if features in the sublayers can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsQuery: Boolean = js.native
+  var supportsQuery: Boolean
   
   /**
     * Indicates if the service exposes a tile map that describes the presence of tiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsTileMap: Boolean = js.native
+  var supportsTileMap: Boolean
 }
 object ArcGISMapServiceCapabilitiesOperations {
   

@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.connected__
 import typings.chromeApps.chromeAppsStrings.failure_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CONNECTEDFAILURE extends StObject {
   
-  var CONNECTED: connected__ = js.native
+  var CONNECTED: connected__
   
-  var FAILURE: failure_ = js.native
+  var FAILURE: failure_
 }
 object CONNECTEDFAILURE {
   
   @scala.inline
-  def apply(CONNECTED: connected__, FAILURE: failure_): CONNECTEDFAILURE = {
-    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED.asInstanceOf[js.Any], FAILURE = FAILURE.asInstanceOf[js.Any])
+  def apply(): CONNECTEDFAILURE = {
+    val __obj = js.Dynamic.literal(CONNECTED = "connected", FAILURE = "failure")
     __obj.asInstanceOf[CONNECTEDFAILURE]
   }
   

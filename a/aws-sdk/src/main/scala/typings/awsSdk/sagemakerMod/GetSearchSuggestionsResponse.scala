@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSearchSuggestionsResponse extends StObject {
   
   /**
     * A list of property names for a Resource that match a SuggestionQuery.
     */
-  var PropertyNameSuggestions: js.UndefOr[PropertyNameSuggestionList] = js.native
+  var PropertyNameSuggestions: js.UndefOr[PropertyNameSuggestionList] = js.undefined
 }
 object GetSearchSuggestionsResponse {
   

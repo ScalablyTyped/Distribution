@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAppResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the app.
     */
-  var AppArn: js.UndefOr[typings.awsSdk.sagemakerMod.AppArn] = js.native
+  var AppArn: js.UndefOr[typings.awsSdk.sagemakerMod.AppArn] = js.undefined
 }
 object CreateAppResponse {
   

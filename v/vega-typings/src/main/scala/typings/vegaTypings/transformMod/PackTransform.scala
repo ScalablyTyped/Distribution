@@ -7,32 +7,32 @@ import typings.vegaTypings.utilMod.Vector5
 import typings.vegaTypings.vegaTypingsStrings.pack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PackTransform extends _Transforms {
+trait PackTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector5[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector5[String | SignalRef]) | SignalRef] = js.undefined
   
-  var field: js.UndefOr[FieldRef] = js.native
+  var field: js.UndefOr[FieldRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var radius: js.UndefOr[FieldRef] = js.native
+  var radius: js.UndefOr[FieldRef] = js.undefined
   
-  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var `type`: pack = js.native
+  var `type`: pack
 }
 object PackTransform {
   
   @scala.inline
-  def apply(`type`: pack): PackTransform = {
+  def apply(): PackTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pack")
     __obj.asInstanceOf[PackTransform]
   }
   

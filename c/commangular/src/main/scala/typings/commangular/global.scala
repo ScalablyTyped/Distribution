@@ -5,7 +5,6 @@ import typings.commangular.commangular.ICommAngularStatic
 import typings.commangular.commangular.ICommandCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -28,9 +27,8 @@ object global {
   * @param callback The function that will be called upon the completion of the command
   *         function should expecte an ICommandInfo parameter.
   */
-  @JSGlobal("dispatch")
-  @js.native
-  def dispatch(ec: ICommandCall, callback: js.Function): Unit = js.native
+  @scala.inline
+  def dispatch(ec: ICommandCall, callback: js.Function): Unit = (js.Dynamic.global.applyDynamic("dispatch")(ec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Extending the angular rootScope to include the dispatch function in all scopes.

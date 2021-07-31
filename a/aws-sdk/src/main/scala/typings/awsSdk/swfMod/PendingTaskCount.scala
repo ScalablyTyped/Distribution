@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingTaskCount extends StObject {
   
   /**
     * The number of tasks in the task list.
     */
-  var count: Count = js.native
+  var count: Count
   
   /**
     * If set to true, indicates that the actual count was more than the maximum supported by this API and the count returned is the truncated value.
     */
-  var truncated: js.UndefOr[Truncated] = js.native
+  var truncated: js.UndefOr[Truncated] = js.undefined
 }
 object PendingTaskCount {
   

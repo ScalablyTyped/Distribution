@@ -2,21 +2,19 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoaderError extends StObject {
   
   /**
     * error code
     */
-  var code: Double = js.native
+  var code: Double
   
   /**
     *  error description
     */
-  var text: String = js.native
+  var text: String
 }
 object LoaderError {
   

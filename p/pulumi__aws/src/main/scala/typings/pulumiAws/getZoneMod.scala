@@ -4,56 +4,54 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getZoneMod {
   
-  @JSImport("@pulumi/aws/route53/getZone", "getZone")
+  @JSImport("@pulumi/aws/route53/getZone", JSImport.Namespace)
   @js.native
-  def getZone(): js.Promise[GetZoneResult] = js.native
-  @JSImport("@pulumi/aws/route53/getZone", "getZone")
-  @js.native
-  def getZone(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
-  @JSImport("@pulumi/aws/route53/getZone", "getZone")
-  @js.native
-  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = js.native
-  @JSImport("@pulumi/aws/route53/getZone", "getZone")
-  @js.native
-  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getZone(): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")().asInstanceOf[js.Promise[GetZoneResult]]
+  @scala.inline
+  def getZone(args: Unit, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
+  @scala.inline
+  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetZoneResult]]
+  @scala.inline
+  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
+  
   trait GetZoneArgs extends StObject {
     
     /**
       * The Hosted Zone name of the desired Hosted Zone.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * Used with `name` field to get a private Hosted Zone.
       */
-    val privateZone: js.UndefOr[Boolean] = js.native
+    val privateZone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of Record Set in the Hosted Zone.
       */
-    val resourceRecordSetCount: js.UndefOr[Double] = js.native
+    val resourceRecordSetCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Used with `name` field. A map of tags, each pair of which must exactly match a pair on the desired Hosted Zone.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Used with `name` field to get a private Hosted Zone associated with the vpcId (in this case, privateZone is not mandatory).
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
     
     /**
       * The Hosted Zone id of the desired Hosted Zone.
       */
-    val zoneId: js.UndefOr[String] = js.native
+    val zoneId: js.UndefOr[String] = js.undefined
   }
   object GetZoneArgs {
     
@@ -104,53 +102,52 @@ object getZoneMod {
     }
   }
   
-  @js.native
   trait GetZoneResult extends StObject {
     
     /**
       * Caller Reference of the Hosted Zone.
       */
-    val callerReference: String = js.native
+    val callerReference: String
     
     /**
       * The comment field of the Hosted Zone.
       */
-    val comment: String = js.native
+    val comment: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The description provided by the service that created the Hosted Zone (e.g. `arn:aws:servicediscovery:us-east-1:1234567890:namespace/ns-xxxxxxxxxxxxxxxx`).
       */
-    val linkedServiceDescription: String = js.native
+    val linkedServiceDescription: String
     
     /**
       * The service that created the Hosted Zone (e.g. `servicediscovery.amazonaws.com`).
       */
-    val linkedServicePrincipal: String = js.native
+    val linkedServicePrincipal: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The list of DNS name servers for the Hosted Zone.
       */
-    val nameServers: js.Array[String] = js.native
+    val nameServers: js.Array[String]
     
-    val privateZone: js.UndefOr[Boolean] = js.native
+    val privateZone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of Record Set in the Hosted Zone.
       */
-    val resourceRecordSetCount: Double = js.native
+    val resourceRecordSetCount: Double
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
     
-    val zoneId: String = js.native
+    val zoneId: String
   }
   object GetZoneResult {
     

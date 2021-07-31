@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or other entity conducting the job search. Providing this information
   * improves the quality of the search results across devices.
   */
-@js.native
 trait SchemaDeviceInfo extends StObject {
   
   /**
     * Optional.  Type of the device.
     */
-  var deviceType: js.UndefOr[String] = js.native
+  var deviceType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  A device-specific ID. The ID must be a unique identifier that
     * distinguishes the device from other devices.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SchemaDeviceInfo {
   

@@ -2,20 +2,18 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The extracted action from the sentence. */
-@js.native
 trait SemanticRolesResultAction extends StObject {
   
   /** normalized version of the action. */
-  var normalized: js.UndefOr[String] = js.native
+  var normalized: js.UndefOr[String] = js.undefined
   
   /** Analyzed text that corresponds to the action. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var verb: js.UndefOr[SemanticRolesVerb] = js.native
+  var verb: js.UndefOr[SemanticRolesVerb] = js.undefined
 }
 object SemanticRolesResultAction {
   

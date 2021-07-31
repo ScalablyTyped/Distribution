@@ -6,7 +6,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,9 +27,9 @@ trait KnockoutUtils extends StObject {
   def arrayPushAll[T](array: js.Array[T], valuesToPush: js.Array[T]): js.Array[T] = js.native
   def arrayPushAll[T](array: KnockoutObservableArray[T], valuesToPush: js.Array[T]): js.Array[T] = js.native
   
-  def arrayRemoveItem(array: js.Array[_], itemToRemove: js.Any): Unit = js.native
+  def arrayRemoveItem(array: js.Array[js.Any], itemToRemove: js.Any): Unit = js.native
   
-  def cloneNodes(nodesArray: js.Array[_], shouldCleanNodes: Boolean): js.Array[_] = js.native
+  def cloneNodes(nodesArray: js.Array[js.Any], shouldCleanNodes: Boolean): js.Array[js.Any] = js.native
   
   def compareArrays[T](a: js.Array[T], b: js.Array[T]): js.Array[KnockoutArrayChange[T]] = js.native
   
@@ -55,11 +54,11 @@ trait KnockoutUtils extends StObject {
   //////////////////////////////////
   // utils.js
   //////////////////////////////////
-  var fieldsIncludedWithJsonPost: js.Array[_] = js.native
+  var fieldsIncludedWithJsonPost: js.Array[js.Any] = js.native
   
   def forceRefresh(node: js.Any): Unit = js.native
   
-  def getFormFields(form: js.Any, fieldName: String): js.Array[_] = js.native
+  def getFormFields(form: js.Any, fieldName: String): js.Array[js.Any] = js.native
   
   var ieVersion: Double = js.native
   
@@ -67,13 +66,13 @@ trait KnockoutUtils extends StObject {
   
   var isIe7: Boolean = js.native
   
-  def jQueryHtmlParse(html: String): js.Array[_] = js.native
+  def jQueryHtmlParse(html: String): js.Array[js.Any] = js.native
   
-  def makeArray(arrayLikeObject: js.Any): js.Array[_] = js.native
+  def makeArray(arrayLikeObject: js.Any): js.Array[js.Any] = js.native
   
-  def moveCleanedNodesToContainerElement(nodes: js.Array[_]): HTMLElement = js.native
+  def moveCleanedNodesToContainerElement(nodes: js.Array[js.Any]): HTMLElement = js.native
   
-  def parseHtmlFragment(html: String): js.Array[_] = js.native
+  def parseHtmlFragment(html: String): js.Array[js.Any] = js.native
   
   def parseJson(jsonString: String): js.Any = js.native
   
@@ -85,9 +84,9 @@ trait KnockoutUtils extends StObject {
   
   def registerEventHandler(element: js.Any, eventType: js.Any, handler: js.Function): Unit = js.native
   
-  def replaceDomNodes(nodeToReplaceOrNodeArray: js.Any, newNodesArray: js.Array[_]): Unit = js.native
+  def replaceDomNodes(nodeToReplaceOrNodeArray: js.Any, newNodesArray: js.Array[js.Any]): Unit = js.native
   
-  def setDomNodeChildren(domNode: js.Any, childNodes: js.Array[_]): Unit = js.native
+  def setDomNodeChildren(domNode: js.Any, childNodes: js.Array[js.Any]): Unit = js.native
   
   //setTextContent(element: any, textContent: string): void; // NOT PART OF THE MINIFIED API SURFACE (ONLY IN knockout-{version}.debug.js) https://github.com/SteveSanderson/knockout/issues/670
   def setElementName(element: js.Any, name: String): Unit = js.native
@@ -100,7 +99,7 @@ trait KnockoutUtils extends StObject {
   //////////////////////////////////
   // utils.domManipulation.js
   //////////////////////////////////
-  def simpleHtmlParse(html: String): js.Array[_] = js.native
+  def simpleHtmlParse(html: String): js.Array[js.Any] = js.native
   
   def stringStartsWith(str: String, startsWith: String): Boolean = js.native
   
@@ -109,9 +108,9 @@ trait KnockoutUtils extends StObject {
   def stringTrim(str: String): String = js.native
   
   def stringifyJson(data: js.Any): String = js.native
-  def stringifyJson(data: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function, space: String): String = js.native
+  def stringifyJson(data: js.Any, replacer: Unit, space: String): String = js.native
   
   def tagNameLower(element: js.Any): String = js.native
   

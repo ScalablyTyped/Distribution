@@ -5,7 +5,6 @@ import typings.fabric.fabricImplMod.IGradientOptions
 import typings.std.SVGGradientElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Gradient")
@@ -34,6 +33,10 @@ class Gradient protected ()
 /* static members */
 object Gradient {
   
+  @JSImport("fabric", "fabric.Gradient")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns {@link fabric.Gradient} instance from its object representation
     * @static
@@ -41,12 +44,10 @@ object Gradient {
     * @param {Object} obj
     * @param {Object} [options] Options object
     */
-  @JSImport("fabric", "fabric.Gradient.forObject")
-  @js.native
-  def forObject(obj: js.Any): typings.fabric.fabricImplMod.Gradient = js.native
-  @JSImport("fabric", "fabric.Gradient.forObject")
-  @js.native
-  def forObject(obj: js.Any, options: IGradientOptions): typings.fabric.fabricImplMod.Gradient = js.native
+  @scala.inline
+  def forObject(obj: js.Any): typings.fabric.fabricImplMod.Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
+  @scala.inline
+  def forObject(obj: js.Any, options: IGradientOptions): typings.fabric.fabricImplMod.Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
   
   /**
     * Returns {@link fabric.Gradient} instance from an SVG element
@@ -58,7 +59,6 @@ object Gradient {
     * @see http://www.w3.org/TR/SVG/pservers.html#LinearGradientElement
     * @see http://www.w3.org/TR/SVG/pservers.html#RadialGradientElement
     */
-  @JSImport("fabric", "fabric.Gradient.fromElement")
-  @js.native
-  def fromElement(el: SVGGradientElement, instance: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Gradient = js.native
+  @scala.inline
+  def fromElement(el: SVGGradientElement, instance: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(el.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
 }

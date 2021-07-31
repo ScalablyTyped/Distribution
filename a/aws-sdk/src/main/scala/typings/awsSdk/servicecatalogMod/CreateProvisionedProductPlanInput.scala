@@ -2,66 +2,64 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProvisionedProductPlanInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
     */
-  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken = js.native
+  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken
   
   /**
     * Passed to CloudFormation. The SNS topic ARNs to which to publish stack-related events.
     */
-  var NotificationArns: js.UndefOr[typings.awsSdk.servicecatalogMod.NotificationArns] = js.native
+  var NotificationArns: js.UndefOr[typings.awsSdk.servicecatalogMod.NotificationArns] = js.undefined
   
   /**
     * The path identifier of the product. This value is optional if the product has a default path, and required if the product has more than one path. To list the paths for a product, use ListLaunchPaths.
     */
-  var PathId: js.UndefOr[Id] = js.native
+  var PathId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the plan.
     */
-  var PlanName: ProvisionedProductPlanName = js.native
+  var PlanName: ProvisionedProductPlanName
   
   /**
     * The plan type.
     */
-  var PlanType: ProvisionedProductPlanType = js.native
+  var PlanType: ProvisionedProductPlanType
   
   /**
     * The product identifier.
     */
-  var ProductId: Id = js.native
+  var ProductId: Id
   
   /**
     * A user-friendly name for the provisioned product. This value must be unique for the AWS account and cannot be updated after the product is provisioned.
     */
-  var ProvisionedProductName: typings.awsSdk.servicecatalogMod.ProvisionedProductName = js.native
+  var ProvisionedProductName: typings.awsSdk.servicecatalogMod.ProvisionedProductName
   
   /**
     * The identifier of the provisioning artifact.
     */
-  var ProvisioningArtifactId: Id = js.native
+  var ProvisioningArtifactId: Id
   
   /**
     * Parameters specified by the administrator that are required for provisioning the product.
     */
-  var ProvisioningParameters: js.UndefOr[UpdateProvisioningParameters] = js.native
+  var ProvisioningParameters: js.UndefOr[UpdateProvisioningParameters] = js.undefined
   
   /**
     * One or more tags. If the plan is for an existing provisioned product, the product must have a RESOURCE_UPDATE constraint with TagUpdatesOnProvisionedProduct set to ALLOWED to allow tag updates.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
 }
 object CreateProvisionedProductPlanInput {
   

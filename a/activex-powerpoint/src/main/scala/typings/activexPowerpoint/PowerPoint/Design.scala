@@ -3,36 +3,34 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Design extends StObject {
   
-  def AddTitleMaster(): Master = js.native
+  def AddTitleMaster(): Master
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val HasTitleMaster: MsoTriState = js.native
+  val HasTitleMaster: MsoTriState
   
-  val Index: Double = js.native
+  val Index: Double
   
-  def MoveTo(toPos: Double): Unit = js.native
+  def MoveTo(toPos: Double): Unit
   
-  var Name: String = js.native
+  var Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Design_typekey")
-  var PowerPointDotDesign_typekey: Design = js.native
+  var PowerPointDotDesign_typekey: Design
   
-  var Preserved: MsoTriState = js.native
+  var Preserved: MsoTriState
   
-  val SlideMaster: Master = js.native
+  val SlideMaster: Master
   
-  val TitleMaster: Master = js.native
+  val TitleMaster: Master
 }
 object Design {
   

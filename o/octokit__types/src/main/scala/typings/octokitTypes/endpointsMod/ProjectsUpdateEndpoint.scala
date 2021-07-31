@@ -1,28 +1,26 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`7`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.closed
+import typings.octokitTypes.octokitTypesStrings.inertia
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  project_id :number,   name :string | undefined,   body :string | undefined,   state :'open' | 'closed' | undefined,   organization_permission :string | undefined,   private :boolean | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
-@js.native
-trait ProjectsUpdateEndpoint extends StObject {
+trait ProjectsUpdateEndpoint
+  extends StObject
+     with RequiredPreview[inertia] {
   
   /**
     * The description of the project.
     */
-  var body: js.UndefOr[String] = js.native
-  
-  var mediaType: `7` = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the project.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The permission level that determines whether all members of the project's organization can see and/or make changes to the project. Setting `organization_permission` is only available for organization projects. If an organization member belongs to a team with a higher level of access or is a collaborator with a higher level of access, their permission level is not lowered by `organization_permission`. For information on changing access for a team or collaborator, see [Add or update team project permissions](https://developer.github.com/v3/teams/#add-or-update-team-project-permissions) or [Add project collaborator](https://developer.github.com/v3/projects/collaborators/#add-project-collaborator).
@@ -35,7 +33,7 @@ trait ProjectsUpdateEndpoint extends StObject {
     * \* `admin` - Organization members can read, write and administer this project.
     * \* `none` - Organization members can only see this project if it is public.
     */
-  var organization_permission: js.UndefOr[String] = js.native
+  var organization_permission: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of a project board. Setting `private` is only available for organization and user projects. **Note:** Updating a project's visibility requires `admin` access to the project.
@@ -44,19 +42,19 @@ trait ProjectsUpdateEndpoint extends StObject {
     * \* `false` - Anyone can see the project.
     * \* `true` - Only the user can view a project board created on a user account. Organization members with the appropriate `organization_permission` can see project boards in an organization account.
     */
-  var `private`: js.UndefOr[Boolean] = js.native
+  var `private`: js.UndefOr[Boolean] = js.undefined
   
-  var project_id: Double = js.native
+  var project_id: Double
   
   /**
     * State of the project. Either `open` or `closed`.
     */
-  var state: js.UndefOr[open | closed] = js.native
+  var state: js.UndefOr[open | closed] = js.undefined
 }
 object ProjectsUpdateEndpoint {
   
   @scala.inline
-  def apply(mediaType: `7`, project_id: Double): ProjectsUpdateEndpoint = {
+  def apply(mediaType: `0`[inertia], project_id: Double): ProjectsUpdateEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsUpdateEndpoint]
   }
@@ -69,9 +67,6 @@ object ProjectsUpdateEndpoint {
     
     @scala.inline
     def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

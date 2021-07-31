@@ -9,7 +9,6 @@ import typings.activexShdocvw.activexShdocvwNumbers.`5`
 import typings.activexShdocvw.activexShdocvwNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for WebBrowser security icon notification */

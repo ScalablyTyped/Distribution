@@ -9,7 +9,6 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MobileMessagingCordova {
@@ -203,7 +202,7 @@ object MobileMessagingCordova {
       *   }
       * }
       */
-    def submitEvent(eventData: CustomEvent[_]): Unit = js.native
+    def submitEvent(eventData: CustomEvent[js.Any]): Unit = js.native
     
     /**
       * Sends an event to the server immediately.
@@ -222,7 +221,7 @@ object MobileMessagingCordova {
       * @param callback will be called on result
       * @param errorCallback will be called on error, you have to handle error and do retries yourself
       */
-    def submitEventImmediately(eventData: CustomEvent[_], callback: js.Function0[Unit], errorCallback: js.Function0[Unit]): Unit = js.native
+    def submitEventImmediately(eventData: CustomEvent[js.Any], callback: js.Function0[Unit], errorCallback: js.Function0[Unit]): Unit = js.native
     
     /**
       * Un register from MobileMessaging library event.
@@ -233,30 +232,29 @@ object MobileMessagingCordova {
     def unregister(event: Event, handler: js.Function1[/* message */ Message, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Configuration extends StObject {
     
-    var android: js.UndefOr[MultipleNotifications] = js.native
+    var android: js.UndefOr[MultipleNotifications] = js.undefined
     
     /**
       * The application code of your Application from Push Portal website
       */
-    var applicationCode: String = js.native
+    var applicationCode: String
     
-    var defaultMessageStorage: js.UndefOr[Boolean] = js.native
+    var defaultMessageStorage: js.UndefOr[Boolean] = js.undefined
     
-    var geofencingEnabled: js.UndefOr[Boolean] = js.native
+    var geofencingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var ios: js.UndefOr[ForceCleanup] = js.native
+    var ios: js.UndefOr[ForceCleanup] = js.undefined
     
     /**
       * Message storage save callback
       */
-    var messageStorage: js.UndefOr[String] = js.native
+    var messageStorage: js.UndefOr[String] = js.undefined
     
-    var notificationCategories: js.UndefOr[js.Array[Actions]] = js.native
+    var notificationCategories: js.UndefOr[js.Array[Actions]] = js.undefined
     
-    var privacySettings: js.UndefOr[ApplicationCodePersistingDisabled] = js.native
+    var privacySettings: js.UndefOr[ApplicationCodePersistingDisabled] = js.undefined
   }
   object Configuration {
     
@@ -319,16 +317,15 @@ object MobileMessagingCordova {
     }
   }
   
-  @js.native
   trait DefaultMessageStorage extends StObject {
     
-    def delete(messageId: String, callback: js.Function0[Unit]): Unit = js.native
+    def delete(messageId: String, callback: js.Function0[Unit]): Unit
     
-    def deleteAll(callback: js.Function0[Unit]): Unit = js.native
+    def deleteAll(callback: js.Function0[Unit]): Unit
     
-    def find(messageId: String, callback: js.Function1[/* message */ Message, Unit]): Unit = js.native
+    def find(messageId: String, callback: js.Function1[/* message */ Message, Unit]): Unit
     
-    def findAll(callback: js.Function1[/* messages */ js.Array[Message], Unit]): Unit = js.native
+    def findAll(callback: js.Function1[/* messages */ js.Array[Message], Unit]): Unit
   }
   object DefaultMessageStorage {
     
@@ -420,40 +417,39 @@ object MobileMessagingCordova {
     def Male: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Male = "Male".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.Male]
   }
   
-  @js.native
   trait Installation extends StObject {
     
-    var appVersion: js.UndefOr[String] = js.native
+    var appVersion: js.UndefOr[String] = js.undefined
     
-    var applicationUserId: js.UndefOr[String] = js.native
+    var applicationUserId: js.UndefOr[String] = js.undefined
     
-    var customAttributes: js.UndefOr[Record[String, String]] = js.native
+    var customAttributes: js.UndefOr[Record[String, String]] = js.undefined
     
-    var deviceManufacturer: js.UndefOr[String] = js.native
+    var deviceManufacturer: js.UndefOr[String] = js.undefined
     
-    var deviceModel: js.UndefOr[String] = js.native
+    var deviceModel: js.UndefOr[String] = js.undefined
     
-    var deviceName: js.UndefOr[String] = js.native
+    var deviceName: js.UndefOr[String] = js.undefined
     
-    var deviceSecure: js.UndefOr[Boolean] = js.native
+    var deviceSecure: js.UndefOr[Boolean] = js.undefined
     
-    var deviceTimezoneId: js.UndefOr[String] = js.native
+    var deviceTimezoneId: js.UndefOr[String] = js.undefined
     
-    var geoEnabled: js.UndefOr[Boolean] = js.native
+    var geoEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var isPrimaryDevice: js.UndefOr[Boolean] = js.native
+    var isPrimaryDevice: js.UndefOr[Boolean] = js.undefined
     
-    var isPushRegistrationEnabled: js.UndefOr[Boolean] = js.native
+    var isPushRegistrationEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var notificationsEnabled: js.UndefOr[Boolean] = js.native
+    var notificationsEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var os: js.UndefOr[OS] = js.native
+    var os: js.UndefOr[OS] = js.undefined
     
-    var osVersion: String = js.native
+    var osVersion: String
     
-    var sdkVersion: js.UndefOr[String] = js.native
+    var sdkVersion: js.UndefOr[String] = js.undefined
   }
   object Installation {
     
@@ -561,26 +557,25 @@ object MobileMessagingCordova {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var customPayload: js.UndefOr[Record[String, String]] = js.native
+    var customPayload: js.UndefOr[Record[String, String]] = js.undefined
     
-    var internalData: js.UndefOr[String] = js.native
+    var internalData: js.UndefOr[String] = js.undefined
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var silent: js.UndefOr[String] = js.native
+    var silent: js.UndefOr[String] = js.undefined
     
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var vibrate: js.UndefOr[String] = js.native
+    var vibrate: js.UndefOr[String] = js.undefined
   }
   object Message {
     
@@ -646,12 +641,11 @@ object MobileMessagingCordova {
     }
   }
   
-  @js.native
   trait MobileMessagingError extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var message: String = js.native
+    var message: String
   }
   object MobileMessagingError {
     
@@ -686,14 +680,13 @@ object MobileMessagingCordova {
     def iOS: typings.mobileMessagingCordova.mobileMessagingCordovaStrings.iOS = "iOS".asInstanceOf[typings.mobileMessagingCordova.mobileMessagingCordovaStrings.iOS]
   }
   
-  @js.native
   trait PersonalizeContext extends StObject {
     
-    var forceDepersonalize: js.UndefOr[Boolean] = js.native
+    var forceDepersonalize: js.UndefOr[Boolean] = js.undefined
     
-    var userAttributes: js.UndefOr[Record[String, String]] = js.native
+    var userAttributes: js.UndefOr[Record[String, String]] = js.undefined
     
-    var userIdentity: UserIdentity = js.native
+    var userIdentity: UserIdentity
   }
   object PersonalizeContext {
     
@@ -723,28 +716,27 @@ object MobileMessagingCordova {
     }
   }
   
-  @js.native
   trait UserData extends StObject {
     
-    var birthday: js.UndefOr[Date] = js.native
+    var birthday: js.UndefOr[Date] = js.undefined
     
-    var customAttributes: js.UndefOr[Record[String, String]] = js.native
+    var customAttributes: js.UndefOr[Record[String, String]] = js.undefined
     
-    var emails: js.UndefOr[js.Array[String]] = js.native
+    var emails: js.UndefOr[js.Array[String]] = js.undefined
     
-    var externalUserId: String = js.native
+    var externalUserId: String
     
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
-    var gender: js.UndefOr[Gender] = js.native
+    var gender: js.UndefOr[Gender] = js.undefined
     
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
-    var middleName: js.UndefOr[String] = js.native
+    var middleName: js.UndefOr[String] = js.undefined
     
-    var phones: js.UndefOr[js.Array[String]] = js.native
+    var phones: js.UndefOr[js.Array[String]] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UserData {
     
@@ -825,14 +817,13 @@ object MobileMessagingCordova {
     }
   }
   
-  @js.native
   trait UserIdentity extends StObject {
     
-    var emails: js.UndefOr[js.Array[String]] = js.native
+    var emails: js.UndefOr[js.Array[String]] = js.undefined
     
-    var externalUserId: String = js.native
+    var externalUserId: String
     
-    var phones: js.UndefOr[js.Array[String]] = js.native
+    var phones: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UserIdentity {
     

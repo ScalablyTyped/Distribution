@@ -3,27 +3,25 @@ package typings.openseadragon.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverlayOptions extends StObject {
   
-  var checkResize: js.UndefOr[Boolean] = js.native
+  var checkResize: js.UndefOr[Boolean] = js.undefined
   
-  var element: HTMLElement = js.native
+  var element: HTMLElement
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var location: Point | Rect = js.native
+  var location: Point | Rect
   
-  var onDraw: js.UndefOr[OnDrawCallback] = js.native
+  var onDraw: js.UndefOr[OnDrawCallback] = js.undefined
   
-  var placement: js.UndefOr[Placement] = js.native
+  var placement: js.UndefOr[Placement] = js.undefined
   
-  var rotationMode: js.UndefOr[Boolean] = js.native
+  var rotationMode: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object OverlayOptions {
   

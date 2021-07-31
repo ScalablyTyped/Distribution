@@ -5,82 +5,82 @@ import typings.nodeZendesk.mod.AuditableModel
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/users#json-format-for-agent-or-admin-requests|Zendesk Users JSON Format}
   */
-@js.native
-trait ResponseModel extends AuditableModel {
+trait ResponseModel
+  extends StObject
+     with AuditableModel {
   
-  val active: Boolean = js.native
+  val active: Boolean
   
-  val alias: String | Null = js.native
+  val alias: String | Null
   
-  val chat_only: Boolean = js.native
+  val chat_only: Boolean
   
-  val custom_role_id: Double | Null = js.native
+  val custom_role_id: Double | Null
   
-  val default_group_id: Double | Null = js.native
+  val default_group_id: Double | Null
   
-  val details: String | Null = js.native
+  val details: String | Null
   
-  val email: String | Null = js.native
+  val email: String | Null
   
-  val external_id: String | Null = js.native
+  val external_id: String | Null
   
-  val last_login_at: String | Null = js.native
+  val last_login_at: String | Null
   
-  val locale: String | Null = js.native
+  val locale: String | Null
   
-  val locale_id: Double | Null = js.native
+  val locale_id: Double | Null
   
-  val moderator: Boolean = js.native
+  val moderator: Boolean
   
-  val name: String = js.native
+  val name: String
   
-  val notes: String | Null = js.native
+  val notes: String | Null
   
-  val only_private_comments: Boolean = js.native
+  val only_private_comments: Boolean
   
-  val organization_id: Double | Null = js.native
+  val organization_id: Double | Null
   
-  val phone: String | Null = js.native
+  val phone: String | Null
   
-  val photo: Model | Null = js.native
+  val photo: Model | Null
   
-  val report_csv: Boolean = js.native
+  val report_csv: Boolean
   
-  val restricted_agent: Boolean = js.native
+  val restricted_agent: Boolean
   
-  val role: Role = js.native
+  val role: Role
   
-  val role_type: RoleType = js.native
+  val role_type: RoleType
   
-  val shared: Boolean = js.native
+  val shared: Boolean
   
-  val shared_agent: Boolean = js.native
+  val shared_agent: Boolean
   
-  val shared_phone_number: Boolean | Null = js.native
+  val shared_phone_number: Boolean | Null
   
-  val signature: String | Null = js.native
+  val signature: String | Null
   
-  val suspended: Boolean = js.native
+  val suspended: Boolean
   
-  val tags: js.UndefOr[js.Array[_] | Null] = js.native
+  val tags: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
   
-  val ticket_restriction: TicketRestriction | Null = js.native
+  val ticket_restriction: TicketRestriction | Null
   
-  val time_zone: String | Null = js.native
+  val time_zone: String | Null
   
-  val two_factor_auth_enabled: Boolean = js.native
+  val two_factor_auth_enabled: Boolean
   
-  val url: String = js.native
+  val url: String
   
-  val user_fields: js.UndefOr[js.Object | Null] = js.native
+  val user_fields: js.UndefOr[js.Object | Null] = js.undefined
   
-  val verified: Boolean = js.native
+  val verified: Boolean
 }
 object ResponseModel {
   
@@ -104,7 +104,7 @@ object ResponseModel {
     url: String,
     verified: Boolean
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], chat_only = chat_only.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], moderator = moderator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], only_private_comments = only_private_comments.asInstanceOf[js.Any], report_csv = report_csv.asInstanceOf[js.Any], restricted_agent = restricted_agent.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], role_type = role_type.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any], shared_agent = shared_agent.asInstanceOf[js.Any], suspended = suspended.asInstanceOf[js.Any], two_factor_auth_enabled = two_factor_auth_enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], chat_only = chat_only.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], moderator = moderator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], only_private_comments = only_private_comments.asInstanceOf[js.Any], report_csv = report_csv.asInstanceOf[js.Any], restricted_agent = restricted_agent.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], role_type = role_type.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any], shared_agent = shared_agent.asInstanceOf[js.Any], suspended = suspended.asInstanceOf[js.Any], two_factor_auth_enabled = two_factor_auth_enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], alias = null, custom_role_id = null, default_group_id = null, details = null, email = null, external_id = null, last_login_at = null, locale = null, locale_id = null, notes = null, organization_id = null, phone = null, photo = null, shared_phone_number = null, signature = null, ticket_restriction = null, time_zone = null, updated_at = null)
     __obj.asInstanceOf[ResponseModel]
   }
   
@@ -238,7 +238,7 @@ object ResponseModel {
     def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTagsNull: Self = StObject.set(x, "tags", null)

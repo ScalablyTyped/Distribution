@@ -15,14 +15,15 @@ import typings.std.WebGLContextAttributes
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface
 // Possible contextId values are defined by the enum OffscreenRenderingContextId { "2d", "bitmaprenderer", "webgl", "webgl2" }
 // See also description: https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas/getContext
 @js.native
-trait OffscreenCanvas extends EventTarget {
+trait OffscreenCanvas
+  extends StObject
+     with EventTarget {
   
   def convertToBlob(): js.Promise[Blob] = js.native
   def convertToBlob(options: Quality): js.Promise[Blob] = js.native

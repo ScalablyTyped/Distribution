@@ -2,34 +2,32 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Context passed to create a SMART client directly without completing the SMART on FHIR OAuth2 authorization workflow
   */
-@js.native
 trait Context extends StObject {
   
   /**
     * Authorization context
     */
-  var auth: js.UndefOr[AuthContext] = js.native
+  var auth: js.UndefOr[AuthContext] = js.undefined
   
   /**
     * Patient in context
     */
-  var patientId: js.UndefOr[String] = js.native
+  var patientId: js.UndefOr[String] = js.undefined
   
   /**
     * FHIR service base url
     */
-  var serviceUrl: String = js.native
+  var serviceUrl: String
   
   /**
     * User in context
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object Context {
   

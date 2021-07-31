@@ -2,18 +2,16 @@ package typings.reactNativeNavigation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Properties to pass down to the component
     */
-  var passProps: js.UndefOr[js.Object] = js.native
+  var passProps: js.UndefOr[js.Object] = js.undefined
 }
 object Name {
   

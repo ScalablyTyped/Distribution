@@ -15,7 +15,6 @@ import typings.typesettable.contextsMod.IRulerFactoryContext
 import typings.typesettable.contextsMod.ITypesetterContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -84,8 +83,8 @@ object mod {
     extends typings.typesettable.contextsMod.CanvasContext {
     def this(ctx: CanvasRenderingContext2D) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
-    def this(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
+    def this(ctx: CanvasRenderingContext2D, lineHeight: Unit, style: ICanvasFontStyle) = this()
   }
   
   @JSImport("typesettable", "CharacterMeasurer")
@@ -110,8 +109,8 @@ object mod {
       */
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, className: String) = this()
-    def this(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean) = this()
     def this(element: HTMLElement, className: String, addTitle: Boolean) = this()
+    def this(element: HTMLElement, className: Unit, addTitle: Boolean) = this()
   }
   
   @JSImport("typesettable", "HtmlUtils")
@@ -121,12 +120,15 @@ object mod {
   /* static members */
   object HtmlUtils {
     
+    @JSImport("typesettable", "HtmlUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Adds the variadic classnames to the Element
       */
-    @JSImport("typesettable", "HtmlUtils.addClasses")
-    @js.native
-    def addClasses(element: Element, classNames: String*): Unit = js.native
+    @scala.inline
+    def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Appends an HTML element with the specified tag name to the provided element.
@@ -134,23 +136,20 @@ object mod {
       *
       * Returns the new element.
       */
-    @JSImport("typesettable", "HtmlUtils.append")
-    @js.native
-    def append(element: Element, tagName: String, classNames: String*): HTMLElement = js.native
+    @scala.inline
+    def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Creates and returns a new HTMLElement with the attached classnames.
       */
-    @JSImport("typesettable", "HtmlUtils.create")
-    @js.native
-    def create(tagName: String, classNames: String*): HTMLElement = js.native
+    @scala.inline
+    def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * Returns the width/height of HTMLElement's bounding box
       */
-    @JSImport("typesettable", "HtmlUtils.getDimensions")
-    @js.native
-    def getDimensions(element: HTMLElement): IDimensions = js.native
+    @scala.inline
+    def getDimensions(element: HTMLElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
   @JSImport("typesettable", "Measurer")
@@ -170,19 +169,21 @@ object mod {
   /* static members */
   object Methods {
     
+    @JSImport("typesettable", "Methods")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Check if two arrays are equal by strict equality.
       */
-    @JSImport("typesettable", "Methods.arrayEq")
-    @js.native
-    def arrayEq[T](a: js.Array[T], b: js.Array[T]): Boolean = js.native
+    @scala.inline
+    def arrayEq[T](a: js.Array[T], b: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Shim for _.defaults
       */
-    @JSImport("typesettable", "Methods.defaults")
-    @js.native
-    def defaults(target: js.Any, objects: js.Any*): js.Any = js.native
+    @scala.inline
+    def defaults(target: js.Any, objects: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * @param {any} a Object to check against b for equality.
@@ -192,13 +193,11 @@ object mod {
       *          values associated with those keys. Values will be compared
       *          with ===.
       */
-    @JSImport("typesettable", "Methods.objEq")
-    @js.native
-    def objEq(a: js.Any, b: js.Any): Boolean = js.native
+    @scala.inline
+    def objEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("objEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("typesettable", "Methods.strictEq")
-    @js.native
-    def strictEq(a: js.Any, b: js.Any): Boolean = js.native
+    @scala.inline
+    def strictEq(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSImport("typesettable", "SingleLineWrapper")
@@ -226,30 +225,28 @@ object mod {
   /* static members */
   object StringMethods {
     
+    @JSImport("typesettable", "StringMethods")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Treat all sequences of consecutive spaces as a single " ".
       */
-    @JSImport("typesettable", "StringMethods.combineWhitespace")
-    @js.native
-    def combineWhitespace(str: String): String = js.native
+    @scala.inline
+    def combineWhitespace(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("combineWhitespace")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typesettable", "StringMethods.isNotEmptyString")
-    @js.native
-    def isNotEmptyString(str: String): Boolean = js.native
+    @scala.inline
+    def isNotEmptyString(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmptyString")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("typesettable", "StringMethods.trimEnd")
-    @js.native
-    def trimEnd(str: String): String = js.native
-    @JSImport("typesettable", "StringMethods.trimEnd")
-    @js.native
-    def trimEnd(str: String, c: String): String = js.native
+    @scala.inline
+    def trimEnd(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimEnd")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def trimEnd(str: String, c: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimEnd")(str.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("typesettable", "StringMethods.trimStart")
-    @js.native
-    def trimStart(str: String): String = js.native
-    @JSImport("typesettable", "StringMethods.trimStart")
-    @js.native
-    def trimStart(str: String, splitter: String): String = js.native
+    @scala.inline
+    def trimStart(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimStart")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def trimStart(str: String, splitter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimStart")(str.asInstanceOf[js.Any], splitter.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("typesettable", "SvgContext")
@@ -258,8 +255,8 @@ object mod {
     extends typings.typesettable.contextsMod.SvgContext {
     def this(element: SVGElement) = this()
     def this(element: SVGElement, className: String) = this()
-    def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
+    def this(element: SVGElement, className: Unit, addTitleElement: Boolean) = this()
   }
   /* static members */
   object SvgContext {
@@ -298,23 +295,20 @@ object mod {
       *
       * Returns the new element.
       */
-    @JSImport("typesettable", "SvgUtils.append")
-    @js.native
-    def append(element: Element, tagName: String, classNames: String*): SVGElement = js.native
+    @scala.inline
+    def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
-    @JSImport("typesettable", "SvgUtils.create")
-    @js.native
-    def create(tagName: String, classNames: String*): SVGElement = js.native
+    @scala.inline
+    def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Returns the width/height of svg element's bounding box
       */
-    @JSImport("typesettable", "SvgUtils.getDimensions")
-    @js.native
-    def getDimensions(element: SVGGraphicsElement): IDimensions = js.native
+    @scala.inline
+    def getDimensions(element: SVGGraphicsElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
   @JSImport("typesettable", "Tokenizer")
@@ -326,49 +320,41 @@ object mod {
   @js.native
   class Typesetter protected ()
     extends typings.typesettable.typesetterMod.Typesetter {
-    def this(context: ITypesetterContext[_]) = this()
+    def this(context: ITypesetterContext[js.Any]) = this()
   }
   /* static members */
   object Typesetter {
     
-    @JSImport("typesettable", "Typesetter.canvas")
+    @JSImport("typesettable", "Typesetter")
     @js.native
-    def canvas(ctx: CanvasRenderingContext2D): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.canvas")
-    @js.native
-    def canvas(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.canvas")
-    @js.native
-    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.canvas")
-    @js.native
-    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typesettable", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement, className: String): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement, className: String, addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D): typings.typesettable.typesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Unit, style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
     
-    @JSImport("typesettable", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement, className: String): typings.typesettable.typesetterMod.Typesetter = js.native
-    @JSImport("typesettable", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement, className: String, addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
+    @scala.inline
+    def html(element: HTMLElement): typings.typesettable.typesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def html(element: HTMLElement, className: String): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def html(element: HTMLElement, className: String, addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def html(element: HTMLElement, className: Unit, addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    
+    @scala.inline
+    def svg(element: SVGElement): typings.typesettable.typesetterMod.Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any]).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def svg(element: SVGElement, className: String): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def svg(element: SVGElement, className: String, addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
+    @scala.inline
+    def svg(element: SVGElement, className: Unit, addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[typings.typesettable.typesetterMod.Typesetter]
   }
   
   @JSImport("typesettable", "Wrapper")
@@ -380,10 +366,13 @@ object mod {
   @js.native
   class Writer protected ()
     extends typings.typesettable.writersMod.Writer {
-    def this(_measurer: typings.typesettable.measurersMod.AbstractMeasurer, _penFactory: IPenFactoryContext[_]) = this()
     def this(
       _measurer: typings.typesettable.measurersMod.AbstractMeasurer,
-      _penFactory: IPenFactoryContext[_],
+      _penFactory: IPenFactoryContext[js.Any]
+    ) = this()
+    def this(
+      _measurer: typings.typesettable.measurersMod.AbstractMeasurer,
+      _penFactory: IPenFactoryContext[js.Any],
       _wrapper: typings.typesettable.wrappersMod.Wrapper
     ) = this()
   }

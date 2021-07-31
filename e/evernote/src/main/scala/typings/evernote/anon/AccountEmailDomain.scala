@@ -2,39 +2,37 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountEmailDomain extends StObject {
   
-  var accountEmailDomain: js.UndefOr[String] = js.native
+  var accountEmailDomain: js.UndefOr[String] = js.undefined
   
-  var enableFacebookSharing: js.UndefOr[Boolean] = js.native
+  var enableFacebookSharing: js.UndefOr[Boolean] = js.undefined
   
-  var enableGiftSubscriptions: js.UndefOr[Boolean] = js.native
+  var enableGiftSubscriptions: js.UndefOr[Boolean] = js.undefined
   
-  var enableGoogle: js.UndefOr[Boolean] = js.native
+  var enableGoogle: js.UndefOr[Boolean] = js.undefined
   
-  var enableLinkedInSharing: js.UndefOr[Boolean] = js.native
+  var enableLinkedInSharing: js.UndefOr[Boolean] = js.undefined
   
-  var enablePublicNotebooks: js.UndefOr[Boolean] = js.native
+  var enablePublicNotebooks: js.UndefOr[Boolean] = js.undefined
   
-  var enableSharedNotebooks: js.UndefOr[Boolean] = js.native
+  var enableSharedNotebooks: js.UndefOr[Boolean] = js.undefined
   
-  var enableSingleNoteSharing: js.UndefOr[Boolean] = js.native
+  var enableSingleNoteSharing: js.UndefOr[Boolean] = js.undefined
   
-  var enableSponsoredAccounts: js.UndefOr[Boolean] = js.native
+  var enableSponsoredAccounts: js.UndefOr[Boolean] = js.undefined
   
-  var enableSupportTickets: js.UndefOr[Boolean] = js.native
+  var enableSupportTickets: js.UndefOr[Boolean] = js.undefined
   
-  var enableTwitterSharing: js.UndefOr[Boolean] = js.native
+  var enableTwitterSharing: js.UndefOr[Boolean] = js.undefined
   
-  var marketingUrl: js.UndefOr[String] = js.native
+  var marketingUrl: js.UndefOr[String] = js.undefined
   
-  var serviceHost: js.UndefOr[String] = js.native
+  var serviceHost: js.UndefOr[String] = js.undefined
   
-  var supportUrl: js.UndefOr[String] = js.native
+  var supportUrl: js.UndefOr[String] = js.undefined
 }
 object AccountEmailDomain {
   

@@ -10,9 +10,9 @@ Use readable/writeable streams for manipulating S3 objects.
 | ------------------ | :-------------: |
 | Full name          | s3-streams |
 | Keywords           | s3, stream, upload, download |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 135371 |
+| # downloads        | 144233 |
 | # stars            | 2 |
 
 ## Links

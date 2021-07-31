@@ -3,17 +3,15 @@ package typings.pdfmake.interfacesMod
 import typings.pdfmake.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasLineElement extends StObject {
   
-  var dash: js.UndefOr[Length] = js.native
+  var dash: js.UndefOr[Length] = js.undefined
   
-  var lineColor: js.UndefOr[String] = js.native
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
 }
 object CanvasLineElement {
   

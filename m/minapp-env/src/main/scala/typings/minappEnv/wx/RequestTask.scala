@@ -2,10 +2,8 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestTask extends StObject {
   
   /** [RequestTask.abort()](RequestTask.abort.md)
@@ -13,7 +11,7 @@ trait RequestTask extends StObject {
     * 中断请求任务
     *
     * 最低基础库： `1.4.0` */
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   /** [RequestTask.offHeadersReceived(function callback)](RequestTask.offHeadersReceived.md)
     *
@@ -21,7 +19,7 @@ trait RequestTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def offHeadersReceived(/** HTTP Response Header 事件的回调函数 */
-  callback: RequestTaskOffHeadersReceivedCallback): Unit = js.native
+  callback: RequestTaskOffHeadersReceivedCallback): Unit
   
   /** [RequestTask.onHeadersReceived(function callback)](RequestTask.onHeadersReceived.md)
     *
@@ -29,7 +27,7 @@ trait RequestTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def onHeadersReceived(/** HTTP Response Header 事件的回调函数 */
-  callback: RequestTaskOnHeadersReceivedCallback): Unit = js.native
+  callback: RequestTaskOnHeadersReceivedCallback): Unit
 }
 object RequestTask {
   

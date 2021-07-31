@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The matching user resources.
   */
-@js.native
 trait SchemaUsersListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#usersListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A user of an enterprise.
     */
-  var user: js.UndefOr[js.Array[SchemaUser]] = js.native
+  var user: js.UndefOr[js.Array[SchemaUser]] = js.undefined
 }
 object SchemaUsersListResponse {
   

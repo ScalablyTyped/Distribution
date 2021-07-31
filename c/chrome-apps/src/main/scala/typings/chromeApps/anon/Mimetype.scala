@@ -2,17 +2,15 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mimetype extends StObject {
   
   /** The MIME type for which the Native Client module will be registered as content handler. */
-  var mime_type: String = js.native
+  var mime_type: String
   
   /** The location of a Native Client manifest (a .nmf file) within the app's directory. */
-  var path: String = js.native
+  var path: String
 }
 object Mimetype {
   

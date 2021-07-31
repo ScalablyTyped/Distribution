@@ -2,30 +2,28 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceAttribute extends StObject {
   
   @JSName("app:id")
-  var appColonid: String = js.native
+  var appColonid: String
   
-  var iso3: String = js.native
+  var iso3: String
   
-  var locality: String = js.native
+  var locality: String
   
-  var phone: String = js.native
+  var phone: String
   
-  var postal_code: String = js.native
+  var postal_code: String
   
-  var region: String = js.native
+  var region: String
   
-  var street_address: String = js.native
+  var street_address: String
   
-  var twitter: String = js.native
+  var twitter: String
   
-  var url: String = js.native
+  var url: String
 }
 object PlaceAttribute {
   

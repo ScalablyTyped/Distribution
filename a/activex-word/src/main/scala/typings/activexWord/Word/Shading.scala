@@ -2,30 +2,28 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shading extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var BackgroundPatternColor: WdColor = js.native
+  var BackgroundPatternColor: WdColor
   
-  var BackgroundPatternColorIndex: WdColorIndex = js.native
+  var BackgroundPatternColorIndex: WdColorIndex
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var ForegroundPatternColor: WdColor = js.native
+  var ForegroundPatternColor: WdColor
   
-  var ForegroundPatternColorIndex: WdColorIndex = js.native
+  var ForegroundPatternColorIndex: WdColorIndex
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Texture: WdTextureIndex = js.native
+  var Texture: WdTextureIndex
   
   @JSName("Word.Shading_typekey")
-  var WordDotShading_typekey: Shading = js.native
+  var WordDotShading_typekey: Shading
 }
 object Shading {
   

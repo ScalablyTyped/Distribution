@@ -2,13 +2,11 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default[T] extends StObject {
   
-  var default: T = js.native
+  var default: T
 }
 object Default {
   
@@ -19,7 +17,7 @@ object Default {
   }
   
   @scala.inline
-  implicit class DefaultMutableBuilder[Self <: Default[_], T] (val x: Self with Default[T]) extends AnyVal {
+  implicit class DefaultMutableBuilder[Self <: Default[?], T] (val x: Self & Default[T]) extends AnyVal {
     
     @scala.inline
     def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])

@@ -2,19 +2,17 @@ package typings.reactOnsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageTransitionOptions extends StObject {
   
-  var animation: js.UndefOr[NavigatorAnimationTypes] = js.native
+  var animation: js.UndefOr[NavigatorAnimationTypes] = js.undefined
   
-  var animationOptions: js.UndefOr[AnimationOptions] = js.native
+  var animationOptions: js.UndefOr[AnimationOptions] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
 }
 object PageTransitionOptions {
   

@@ -2,31 +2,29 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The original conversion that was inserted or updated and whether there were
   * any errors.
   */
-@js.native
 trait SchemaConversionStatus extends StObject {
   
   /**
     * The original conversion that was inserted or updated.
     */
-  var conversion: js.UndefOr[SchemaConversion] = js.native
+  var conversion: js.UndefOr[SchemaConversion] = js.undefined
   
   /**
     * A list of errors related to this conversion.
     */
-  var errors: js.UndefOr[js.Array[SchemaConversionError]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaConversionError]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#conversionStatus&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaConversionStatus {
   

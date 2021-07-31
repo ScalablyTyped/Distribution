@@ -8,10 +8,13 @@ import typings.sawtoothSdk.coreMod.PublicKey
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signingMod {
+  
+  @JSImport("sawtooth-sdk/signing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sawtooth-sdk/signing", "CryptoFactory")
   @js.native
@@ -71,9 +74,8 @@ object signingMod {
     def sign(message: Buffer): String = js.native
   }
   
-  @JSImport("sawtooth-sdk/signing", "createContext")
-  @js.native
-  def createContext(algorithmName: String): Context = js.native
+  @scala.inline
+  def createContext(algorithmName: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(algorithmName.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   type message = String | Buffer | TypedArray | DataView
 }

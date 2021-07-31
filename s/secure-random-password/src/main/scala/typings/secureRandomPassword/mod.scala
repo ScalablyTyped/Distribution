@@ -2,10 +2,13 @@ package typings.secureRandomPassword
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("secure-random-password", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("secure-random-password", "consonants")
   @js.native
@@ -27,19 +30,15 @@ object mod {
   @js.native
   val lower: String = js.native
   
-  @JSImport("secure-random-password", "randomPassword")
-  @js.native
-  def randomPassword(): String = js.native
-  @JSImport("secure-random-password", "randomPassword")
-  @js.native
-  def randomPassword(options: RandomPasswordOptions): String = js.native
+  @scala.inline
+  def randomPassword(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomPassword")().asInstanceOf[String]
+  @scala.inline
+  def randomPassword(options: RandomPasswordOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomPassword")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("secure-random-password", "randomString")
-  @js.native
-  def randomString(): String = js.native
-  @JSImport("secure-random-password", "randomString")
-  @js.native
-  def randomString(options: RandomPasswordOptions): String = js.native
+  @scala.inline
+  def randomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")().asInstanceOf[String]
+  @scala.inline
+  def randomString(options: RandomPasswordOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("secure-random-password", "symbols")
   @js.native
@@ -53,12 +52,11 @@ object mod {
   @js.native
   val vowels: String = js.native
   
-  @js.native
   trait RandomPasswordCharactersSet extends StObject {
     
-    var characters: String = js.native
+    var characters: String
     
-    var exactly: js.UndefOr[Double] = js.native
+    var exactly: js.UndefOr[Double] = js.undefined
   }
   object RandomPasswordCharactersSet {
     
@@ -82,18 +80,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RandomPasswordOptions extends StObject {
     
-    var avoidAmbiguous: js.UndefOr[Boolean] = js.native
+    var avoidAmbiguous: js.UndefOr[Boolean] = js.undefined
     
     var characters: js.UndefOr[
         String | RandomPasswordCharactersSet | (js.Array[RandomPasswordCharactersSet | String])
-      ] = js.native
+      ] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var predicate: js.UndefOr[js.Function1[/* result */ String, Boolean]] = js.native
+    var predicate: js.UndefOr[js.Function1[/* result */ String, Boolean]] = js.undefined
   }
   object RandomPasswordOptions {
     

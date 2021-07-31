@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryExecuteMessageParams extends StObject {
   
-  var message: IResultMessage = js.native
+  var message: IResultMessage
   
-  var ownerUri: String = js.native
+  var ownerUri: String
 }
 object QueryExecuteMessageParams {
   

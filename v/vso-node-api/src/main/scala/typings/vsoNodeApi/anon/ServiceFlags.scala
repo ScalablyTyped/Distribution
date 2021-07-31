@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceFlags extends StObject {
   
-  var disabled: scala.Double = js.native
+  var disabled: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var serviceFlags: scala.Double = js.native
+  var serviceFlags: scala.Double
   
-  var unChanged: scala.Double = js.native
+  var unChanged: scala.Double
   
-  var verified: scala.Double = js.native
+  var verified: scala.Double
 }
 object ServiceFlags {
   

@@ -2,19 +2,17 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A metric value representing a list of floating point numbers.
   */
-@js.native
 trait SchemaFloatingPointList extends StObject {
   
   /**
     * Elements of the list.
     */
-  var elements: js.UndefOr[js.Array[Double]] = js.native
+  var elements: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaFloatingPointList {
   

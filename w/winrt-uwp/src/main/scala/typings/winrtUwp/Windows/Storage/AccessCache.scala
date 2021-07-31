@@ -11,7 +11,6 @@ import typings.winrtUwp.anon.ItemsAccessListEntry
 import typings.winrtUwp.winrtUwpStrings.itemremoved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables and manages access to the most recently used (MRU) list of storage items, and to the list of storage items that the application has saved for efficient future access. */
@@ -26,23 +25,33 @@ object AccessCache {
     
     /** When the app accesses the item, the user is prevented from entering information. */
     @js.native
-    sealed trait disallowUserInput extends AccessCacheOptions
+    sealed trait disallowUserInput
+      extends StObject
+         with AccessCacheOptions
     
     /** When the app accesses the item, it is retrieved from a fast location like the local file system. */
     @js.native
-    sealed trait fastLocationsOnly extends AccessCacheOptions
+    sealed trait fastLocationsOnly
+      extends StObject
+         with AccessCacheOptions
     
     /** Default. */
     @js.native
-    sealed trait none extends AccessCacheOptions
+    sealed trait none
+      extends StObject
+         with AccessCacheOptions
     
     /** When the app accesses the item in the StorageItemMostRecentlyUsedList , Windows preserves the item's current position in the MRU and does not update the access time of the item. */
     @js.native
-    sealed trait suppressAccessTimeUpdate extends AccessCacheOptions
+    sealed trait suppressAccessTimeUpdate
+      extends StObject
+         with AccessCacheOptions
     
     /** When the app accesses the item, the app retrieves a cached, read-only version of the file. This version of the file might not be the most recent. */
     @js.native
-    sealed trait useReadOnlyCachedCopy extends AccessCacheOptions
+    sealed trait useReadOnlyCachedCopy
+      extends StObject
+         with AccessCacheOptions
   }
   
   @js.native
@@ -54,22 +63,25 @@ object AccessCache {
     
     /** The storage item is visible in the MRU list for the app and the system. */
     @js.native
-    sealed trait appAndSystem extends RecentStorageItemVisibility
+    sealed trait appAndSystem
+      extends StObject
+         with RecentStorageItemVisibility
     
     /** The storage item is visible in the MRU list for the app only. */
     @js.native
-    sealed trait appOnly extends RecentStorageItemVisibility
+    sealed trait appOnly
+      extends StObject
+         with RecentStorageItemVisibility
   }
   
   /** Represents a list entry that contains the identifier and metadata for a StorageFile or StorageFolder object in a list. */
-  @js.native
   trait AccessListEntry extends StObject {
     
     /** Optional app-specified metadata associated with the StorageFile or StorageFolder in the list. */
-    var metadata: String = js.native
+    var metadata: String
     
     /** The identifier of the StorageFile or StorageFolder in the list. */
-    var token: String = js.native
+    var token: String
   }
   object AccessListEntry {
     
@@ -92,7 +104,9 @@ object AccessCache {
   
   /** A list of the entries that are in your app's most recently used list (MRU) (obtained from the static StorageApplicationPermissions.MostRecentlyUsedList property) and in your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). */
   @js.native
-  trait AccessListEntryView extends Array[AccessListEntry] {
+  trait AccessListEntryView
+    extends StObject
+       with Array[AccessListEntry] {
     
     /**
       * Retrieves the first storage item from the access list or most recently used (MRU) list.
@@ -123,11 +137,10 @@ object AccessCache {
   }
   
   /** Provides data about an ItemRemoved event. */
-  @js.native
   trait ItemRemovedEventArgs extends StObject {
     
     /** Gets information about the StorageFile or StorageFolder that was removed from the StorageItemMostRecentlyUsedList . */
-    var removedEntry: AccessListEntry = js.native
+    var removedEntry: AccessListEntry
   }
   object ItemRemovedEventArgs {
     
@@ -146,7 +159,6 @@ object AccessCache {
   }
   
   /** Provides static properties for you to get your app's most recently used list (MRU) (use StorageApplicationPermissions.MostRecentlyUsedList ) and future-access list (use StorageApplicationPermissions.FutureAccessList . */
-  @js.native
   trait StorageApplicationPermissions extends StObject
   
   /** Represents your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). By picking files and folders, your user grants your app permission to access items that might not be accessible otherwise. If you add these items to your future-access list then you'll retain that permission when your app wants to access those items again later. Items are stored in the future-access list as StorageFile and StorageFolder objects. */
@@ -279,7 +291,7 @@ object AccessCache {
       */
     def add(file: IStorageItem, metadata: String, visibility: RecentStorageItemVisibility): String = js.native
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemremoved(
       `type`: itemremoved,
@@ -374,7 +386,7 @@ object AccessCache {
     var maximumItemsAllowed: Double = js.native
     
     /** Fires when a storage item is removed from the most recently used (MRU) list. */
-    def onitemremoved(ev: ItemRemovedEventArgs with WinRTEvent[StorageItemMostRecentlyUsedList]): Unit = js.native
+    def onitemremoved(ev: ItemRemovedEventArgs & WinRTEvent[StorageItemMostRecentlyUsedList]): Unit = js.native
     /** Fires when a storage item is removed from the most recently used (MRU) list. */
     @JSName("onitemremoved")
     var onitemremoved_Original: TypedEventHandler[StorageItemMostRecentlyUsedList, ItemRemovedEventArgs] = js.native
@@ -385,7 +397,7 @@ object AccessCache {
       */
     def remove(token: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_itemremoved(
       `type`: itemremoved,

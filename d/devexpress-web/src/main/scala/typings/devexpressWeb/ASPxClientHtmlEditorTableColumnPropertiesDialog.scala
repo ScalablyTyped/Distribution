@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Column Properties dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorTableColumnPropertiesDialog extends ASPxClientHtmlEditorTableElementPropertiesDialog {
+trait ASPxClientHtmlEditorTableColumnPropertiesDialog
+  extends StObject
+     with ASPxClientHtmlEditorTableElementPropertiesDialog {
   
   /**
     * Provides access to the client object of the "Width" combo box in the Html Editor's "Column Properties" dialog.
     */
-  def GetWidthTypeComboBox(): ASPxClientComboBox = js.native
+  def GetWidthTypeComboBox(): ASPxClientComboBox
   
   /**
     * Provides access to the client object of the spin editor that allows you to set the column width value in the Html Editor's "Column Properties" dialog.
     */
-  def GetWidthValueSpinEdit(): ASPxClientSpinEdit = js.native
+  def GetWidthValueSpinEdit(): ASPxClientSpinEdit
   
   /**
     * Provides access to the client object of the combo box that allows you to specify the column width measurement unit in the Html Editor's "Column Properties" dialog.
     */
-  def GetWidthValueTypeComboBox(): ASPxClientComboBox = js.native
+  def GetWidthValueTypeComboBox(): ASPxClientComboBox
 }
 object ASPxClientHtmlEditorTableColumnPropertiesDialog {
   

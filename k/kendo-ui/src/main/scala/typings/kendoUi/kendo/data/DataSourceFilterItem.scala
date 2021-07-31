@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourceFilterItem extends DataSourceFilter {
+trait DataSourceFilterItem
+  extends StObject
+     with DataSourceFilter {
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var operator: js.UndefOr[String | js.Function] = js.native
+  var operator: js.UndefOr[String | js.Function] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object DataSourceFilterItem {
   

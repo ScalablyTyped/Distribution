@@ -4,31 +4,29 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewItemMod {
   
-  @js.native
   trait ViewItem[T] extends StObject {
     
-    var disableIonPageManagement: js.UndefOr[Boolean] = js.native
+    var disableIonPageManagement: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var ionPageElement: js.UndefOr[HTMLElement] = js.native
+    var ionPageElement: js.UndefOr[HTMLElement] = js.undefined
     
-    var ionRoute: js.UndefOr[Boolean] = js.native
+    var ionRoute: js.UndefOr[Boolean] = js.undefined
     
-    var mount: Boolean = js.native
+    var mount: Boolean
     
-    var outletId: String = js.native
+    var outletId: String
     
-    var reactElement: ReactElement = js.native
+    var reactElement: ReactElement
     
-    var routeData: js.UndefOr[T] = js.native
+    var routeData: js.UndefOr[T] = js.undefined
     
-    var transitionHtml: js.UndefOr[String] = js.native
+    var transitionHtml: js.UndefOr[String] = js.undefined
   }
   object ViewItem {
     
@@ -39,7 +37,7 @@ object viewItemMod {
     }
     
     @scala.inline
-    implicit class ViewItemMutableBuilder[Self <: ViewItem[_], T] (val x: Self with ViewItem[T]) extends AnyVal {
+    implicit class ViewItemMutableBuilder[Self <: ViewItem[?], T] (val x: Self & ViewItem[T]) extends AnyVal {
       
       @scala.inline
       def setDisableIonPageManagement(value: Boolean): Self = StObject.set(x, "disableIonPageManagement", value.asInstanceOf[js.Any])

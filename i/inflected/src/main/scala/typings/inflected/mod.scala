@@ -6,7 +6,6 @@ import typings.inflected.mod.Options.Parameterize
 import typings.inflected.mod.Options.Transliterate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -56,10 +55,9 @@ object mod extends Shortcut {
   
   object Options {
     
-    @js.native
     trait Humanize extends StObject {
       
-      var capitalize: Boolean = js.native
+      var capitalize: Boolean
     }
     object Humanize {
       
@@ -77,10 +75,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Parameterize extends StObject {
       
-      var separator: String = js.native
+      var separator: String
     }
     object Parameterize {
       
@@ -98,12 +95,11 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Transliterate extends StObject {
       
-      var locale: String = js.native
+      var locale: String
       
-      var replacement: String = js.native
+      var replacement: String
     }
     object Transliterate {
       

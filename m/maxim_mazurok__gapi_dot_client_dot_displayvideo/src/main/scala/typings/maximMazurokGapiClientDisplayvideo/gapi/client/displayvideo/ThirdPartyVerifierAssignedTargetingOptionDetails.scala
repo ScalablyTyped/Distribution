@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartyVerifierAssignedTargetingOptionDetails extends StObject {
   
   /** Third party brand verifier -- Adloox. */
-  var adloox: js.UndefOr[Adloox] = js.native
+  var adloox: js.UndefOr[Adloox] = js.undefined
   
   /** Third party brand verifier -- DoubleVerify. */
-  var doubleVerify: js.UndefOr[DoubleVerify] = js.native
+  var doubleVerify: js.UndefOr[DoubleVerify] = js.undefined
   
   /** Third party brand verifier -- Integral Ad Science. */
-  var integralAdScience: js.UndefOr[IntegralAdScience] = js.native
+  var integralAdScience: js.UndefOr[IntegralAdScience] = js.undefined
 }
 object ThirdPartyVerifierAssignedTargetingOptionDetails {
   

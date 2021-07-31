@@ -5,28 +5,28 @@ import typings.expressServeStaticCore.mod.RequestHandler
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-request-id", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
-  @JSImport("express-request-id", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
   
+  @JSImport("express-request-id", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var attributeName: js.UndefOr[String] = js.native
+    var attributeName: js.UndefOr[String] = js.undefined
     
-    var headerName: js.UndefOr[String] = js.native
+    var headerName: js.UndefOr[String] = js.undefined
     
-    var setHeader: js.UndefOr[Boolean] = js.native
+    var setHeader: js.UndefOr[Boolean] = js.undefined
     
-    var uuidVersion: js.UndefOr[String] = js.native
+    var uuidVersion: js.UndefOr[String] = js.undefined
   }
   object Options {
     

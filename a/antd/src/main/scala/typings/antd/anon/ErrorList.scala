@@ -3,23 +3,21 @@ package typings.antd.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorList extends StObject {
   
-  var errorList: Element = js.native
+  var errorList: Element
   
-  var extra: Element | Null = js.native
+  var extra: Element | Null
   
-  var input: Element = js.native
+  var input: Element
 }
 object ErrorList {
   
   @scala.inline
   def apply(errorList: Element, input: Element): ErrorList = {
-    val __obj = js.Dynamic.literal(errorList = errorList.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errorList = errorList.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], extra = null)
     __obj.asInstanceOf[ErrorList]
   }
   

@@ -8,7 +8,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectMod {
@@ -37,9 +36,8 @@ object objectMod {
     def deserialize_=(x: js.Function1[/* value */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@storybook/addon-knobs/dist/components/types/Object", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps[T](props: ObjectTypeProps[T], state: ObjectTypeState[T]): ObjectTypeState[T] | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps[T](props: ObjectTypeProps[T], state: ObjectTypeState[T]): ObjectTypeState[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeState[T] | Null]
     
     /* static member */
     object propTypes {
@@ -83,14 +81,13 @@ object objectMod {
   
   type ObjectTypeProps[T] = KnobControlProps[T]
   
-  @js.native
   trait ObjectTypeState[T] extends StObject {
     
-    var failed: Boolean = js.native
+    var failed: Boolean
     
-    var json: js.UndefOr[T] = js.native
+    var json: js.UndefOr[T] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ObjectTypeState {
     
@@ -101,7 +98,7 @@ object objectMod {
     }
     
     @scala.inline
-    implicit class ObjectTypeStateMutableBuilder[Self <: ObjectTypeState[_], T] (val x: Self with ObjectTypeState[T]) extends AnyVal {
+    implicit class ObjectTypeStateMutableBuilder[Self <: ObjectTypeState[?], T] (val x: Self & ObjectTypeState[T]) extends AnyVal {
       
       @scala.inline
       def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])

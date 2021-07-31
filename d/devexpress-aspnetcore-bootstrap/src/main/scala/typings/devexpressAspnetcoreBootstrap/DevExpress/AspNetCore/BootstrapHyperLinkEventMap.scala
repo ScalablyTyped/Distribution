@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapHyperLinkEventMap extends ControlEventMap {
+trait BootstrapHyperLinkEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var click: EditClickEventArgs = js.native
+  var click: EditClickEventArgs
 }
 object BootstrapHyperLinkEventMap {
   

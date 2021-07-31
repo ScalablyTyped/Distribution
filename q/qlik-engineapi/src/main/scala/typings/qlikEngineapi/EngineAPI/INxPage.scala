@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxPage...
   */
-@js.native
 trait INxPage extends StObject {
   
   /**
@@ -16,26 +14,26 @@ trait INxPage extends StObject {
     * The indexing of the rows may vary depending on whether the cells are expanded or not
     * (parameter qAlwaysFullyExpanded in HyperCubeDef).
     */
-  var qHeight: Double = js.native
+  var qHeight: Double
   
   /**
     * Position from the left.
     * Corresponds to the first column.
     */
-  var qLeft: Double = js.native
+  var qLeft: Double
   
   /**
     * Position from the top.
     * Corresponds to the first row.
     */
-  var qTop: Double = js.native
+  var qTop: Double
   
   /**
     * Number of columns in the page.
     * The indexing of the columns may vary depending on whether the cells are expanded or not
     * (parameter qAlwaysFullyExpanded in HyperCubeDef).
     */
-  var qWidth: Double = js.native
+  var qWidth: Double
 }
 object INxPage {
   

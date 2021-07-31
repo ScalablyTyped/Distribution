@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait And extends StObject {
   
-  var and: js.UndefOr[String] = js.native
+  var and: js.UndefOr[String] = js.undefined
   
-  var notAnd: js.UndefOr[String] = js.native
+  var notAnd: js.UndefOr[String] = js.undefined
   
-  var notOr: js.UndefOr[String] = js.native
+  var notOr: js.UndefOr[String] = js.undefined
   
-  var or: js.UndefOr[String] = js.native
+  var or: js.UndefOr[String] = js.undefined
 }
 object And {
   

@@ -2,14 +2,14 @@ package typings.pubsubJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PubSubJS {
   
   @js.native
   trait Base
-    extends CountSubscriptions
+    extends StObject
+       with CountSubscriptions
        with ClearAllSubscriptions
        with GetSubscriptions
        with Publish
@@ -28,10 +28,9 @@ object PubSubJS {
     def clearAllSubscriptions(token: js.Any): Unit = js.native
   }
   
-  @js.native
   trait CountSubscriptions extends StObject {
     
-    def countSubscriptions(token: js.Any): Double = js.native
+    def countSubscriptions(token: js.Any): Double
   }
   object CountSubscriptions {
     
@@ -49,15 +48,14 @@ object PubSubJS {
     }
   }
   
-  @js.native
   trait GetSubscriptions extends StObject {
     
-    def getSubscriptions(token: js.Any): js.Array[_] = js.native
+    def getSubscriptions(token: js.Any): js.Array[js.Any]
   }
   object GetSubscriptions {
     
     @scala.inline
-    def apply(getSubscriptions: js.Any => js.Array[_]): GetSubscriptions = {
+    def apply(getSubscriptions: js.Any => js.Array[js.Any]): GetSubscriptions = {
       val __obj = js.Dynamic.literal(getSubscriptions = js.Any.fromFunction1(getSubscriptions))
       __obj.asInstanceOf[GetSubscriptions]
     }
@@ -66,7 +64,7 @@ object PubSubJS {
     implicit class GetSubscriptionsMutableBuilder[Self <: GetSubscriptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetSubscriptions(value: js.Any => js.Array[_]): Self = StObject.set(x, "getSubscriptions", js.Any.fromFunction1(value))
+      def setGetSubscriptions(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getSubscriptions", js.Any.fromFunction1(value))
     }
   }
   
@@ -80,12 +78,11 @@ object PubSubJS {
     def publishSync(message: String, data: js.Any): Boolean = js.native
   }
   
-  @js.native
   trait Subscribe extends StObject {
     
-    def subscribe(message: String, func: js.Function): String = js.native
+    def subscribe(message: String, func: js.Function): String
     
-    def subscribeOnce(message: String, func: js.Function): js.Any = js.native
+    def subscribeOnce(message: String, func: js.Function): js.Any
   }
   object Subscribe {
     
@@ -106,10 +103,9 @@ object PubSubJS {
     }
   }
   
-  @js.native
   trait Unsubscribe extends StObject {
     
-    def unsubscribe(tokenOrFunction: js.Any): js.Any = js.native
+    def unsubscribe(tokenOrFunction: js.Any): js.Any
   }
   object Unsubscribe {
     

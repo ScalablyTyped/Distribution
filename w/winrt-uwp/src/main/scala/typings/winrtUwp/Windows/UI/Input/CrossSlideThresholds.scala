@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the distance thresholds for a CrossSliding interaction. */
-@js.native
 trait CrossSlideThresholds extends StObject {
   
   /** The distance, in DIPs, from the initial point of contact until the rearrange action is initiated. */
-  var rearrangeStart: Double = js.native
+  var rearrangeStart: Double
   
   /** The distance, in DIPs, from the initial point of contact until the selection action is initiated. */
-  var selectionStart: Double = js.native
+  var selectionStart: Double
   
   /** The distance, in DIPs, from the initial point of contact until the end of the speed bump. */
-  var speedBumpEnd: Double = js.native
+  var speedBumpEnd: Double
   
   /** The distance, in DIPs, from the initial point of contact until the speed bump is initiated. */
-  var speedBumpStart: Double = js.native
+  var speedBumpStart: Double
 }
 object CrossSlideThresholds {
   

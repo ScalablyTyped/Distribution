@@ -3,51 +3,49 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.drop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointDropEventObject extends StObject {
   
   /**
     * New point after drag if only a single one.
     */
-  var newPoint: js.UndefOr[PointDragDropObject] = js.native
+  var newPoint: js.UndefOr[PointDragDropObject] = js.undefined
   
   /**
     * New point id after drag if only a single one.
     */
-  var newPointId: js.UndefOr[String] = js.native
+  var newPointId: js.UndefOr[String] = js.undefined
   
   /**
     * New points after drop.
     */
-  var newPoints: Dictionary[PointDragDropObject] = js.native
+  var newPoints: Dictionary[PointDragDropObject]
   
   /**
     * Number of new points.
     */
-  var numNewPoints: Double = js.native
+  var numNewPoints: Double
   
   /**
     * Original data.
     */
-  var origin: DragDropPositionObject = js.native
+  var origin: DragDropPositionObject
   
   /**
     * Prevent default drop action.
     */
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
   /**
     * Target point that caused the event.
     */
-  var target: Point = js.native
+  var target: Point
   
   /**
     * Event type.
     */
-  var `type`: drop = js.native
+  var `type`: drop
 }
 object PointDropEventObject {
   
@@ -57,11 +55,10 @@ object PointDropEventObject {
     numNewPoints: Double,
     origin: DragDropPositionObject,
     preventDefault: js.Function,
-    target: Point,
-    `type`: drop
+    target: Point
   ): PointDropEventObject = {
     val __obj = js.Dynamic.literal(newPoints = newPoints.asInstanceOf[js.Any], numNewPoints = numNewPoints.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("drop")
     __obj.asInstanceOf[PointDropEventObject]
   }
   

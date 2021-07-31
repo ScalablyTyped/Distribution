@@ -3,53 +3,43 @@ package typings.electronLocalshortcut
 import typings.electron.mod.BrowserWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("electron-localshortcut", "disableAll")
+  @JSImport("electron-localshortcut", JSImport.Namespace)
   @js.native
-  def disableAll(win: BrowserWindow): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("electron-localshortcut", "enableAll")
-  @js.native
-  def enableAll(win: BrowserWindow): Unit = js.native
+  @scala.inline
+  def disableAll(win: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableAll")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("electron-localshortcut", "isRegistered")
-  @js.native
-  def isRegistered(accelerator: String): Boolean = js.native
-  @JSImport("electron-localshortcut", "isRegistered")
-  @js.native
-  def isRegistered(win: BrowserWindow, accelerator: String): Boolean = js.native
+  @scala.inline
+  def enableAll(win: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAll")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("electron-localshortcut", "register")
-  @js.native
-  def register(accelerator: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSImport("electron-localshortcut", "register")
-  @js.native
-  def register(accelerator: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
-  @JSImport("electron-localshortcut", "register")
-  @js.native
-  def register(win: BrowserWindow, accelerator: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSImport("electron-localshortcut", "register")
-  @js.native
-  def register(win: BrowserWindow, accelerator: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def isRegistered(accelerator: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegistered")(accelerator.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isRegistered(win: BrowserWindow, accelerator: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRegistered")(win.asInstanceOf[js.Any], accelerator.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("electron-localshortcut", "unregister")
-  @js.native
-  def unregister(accelerator: String): Unit = js.native
-  @JSImport("electron-localshortcut", "unregister")
-  @js.native
-  def unregister(accelerator: js.Array[String]): Unit = js.native
-  @JSImport("electron-localshortcut", "unregister")
-  @js.native
-  def unregister(win: BrowserWindow, accelerator: String): Unit = js.native
-  @JSImport("electron-localshortcut", "unregister")
-  @js.native
-  def unregister(win: BrowserWindow, accelerator: js.Array[String]): Unit = js.native
+  @scala.inline
+  def register(accelerator: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(accelerator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def register(accelerator: js.Array[String], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(accelerator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def register(win: BrowserWindow, accelerator: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(win.asInstanceOf[js.Any], accelerator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def register(win: BrowserWindow, accelerator: js.Array[String], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(win.asInstanceOf[js.Any], accelerator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-localshortcut", "unregisterAll")
-  @js.native
-  def unregisterAll(win: BrowserWindow): Unit = js.native
+  @scala.inline
+  def unregister(accelerator: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(accelerator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unregister(accelerator: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(accelerator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unregister(win: BrowserWindow, accelerator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(win.asInstanceOf[js.Any], accelerator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unregister(win: BrowserWindow, accelerator: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(win.asInstanceOf[js.Any], accelerator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def unregisterAll(win: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterAll")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

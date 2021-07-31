@@ -2,7 +2,6 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "Point")
@@ -51,7 +50,10 @@ class Point protected () extends StObject {
 /* static members */
 object Point {
   
-  @JSImport("mapbox-gl", "Point.convert")
+  @JSImport("mapbox-gl", "Point")
   @js.native
-  def convert(a: PointLike): Point = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def convert(a: PointLike): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(a.asInstanceOf[js.Any]).asInstanceOf[Point]
 }

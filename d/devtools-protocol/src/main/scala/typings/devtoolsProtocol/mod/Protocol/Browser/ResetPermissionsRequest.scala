@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetPermissionsRequest extends StObject {
   
   /**
     * BrowserContext to reset permissions. When omitted, default browser context is used.
     */
-  var browserContextId: js.UndefOr[BrowserContextID] = js.native
+  var browserContextId: js.UndefOr[BrowserContextID] = js.undefined
 }
 object ResetPermissionsRequest {
   

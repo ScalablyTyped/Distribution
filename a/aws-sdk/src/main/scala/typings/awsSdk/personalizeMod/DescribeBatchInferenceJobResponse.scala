@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBatchInferenceJobResponse extends StObject {
   
   /**
     * Information on the specified batch inference job.
     */
-  var batchInferenceJob: js.UndefOr[BatchInferenceJob] = js.native
+  var batchInferenceJob: js.UndefOr[BatchInferenceJob] = js.undefined
 }
 object DescribeBatchInferenceJobResponse {
   

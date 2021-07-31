@@ -6,7 +6,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -61,15 +60,15 @@ class User protected () extends PersistedModel {
     * @param {AccessToken} token The generated access token object
     */
   def createAccessToken(ttl: Double): js.Promise[AccessToken] | Unit = js.native
-  def createAccessToken(
-    ttl: Double,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ String | Error, /* token */ AccessToken, Unit]
-  ): js.Promise[AccessToken] | Unit = js.native
   def createAccessToken(ttl: Double, options: js.Any): js.Promise[AccessToken] | Unit = js.native
   def createAccessToken(
     ttl: Double,
     options: js.Any,
+    callback: js.Function2[/* err */ String | Error, /* token */ AccessToken, Unit]
+  ): js.Promise[AccessToken] | Unit = js.native
+  def createAccessToken(
+    ttl: Double,
+    options: Unit,
     callback: js.Function2[/* err */ String | Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = js.native
   
@@ -162,6 +161,10 @@ class User protected () extends PersistedModel {
 }
 object User {
   
+  @JSImport("loopback", "User")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Confirm the user's identity
     * @param {Any} userId
@@ -171,12 +174,10 @@ object User {
     * @param {Error} er
     */
   /* static member */
-  @JSImport("loopback", "User.confirm")
-  @js.native
-  def confirm(userId: js.Any, token: String, redirect: String): js.Promise[Unit] | Unit = js.native
-  @JSImport("loopback", "User.confirm")
-  @js.native
-  def confirm(userId: js.Any, token: String, redirect: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = js.native
+  @scala.inline
+  def confirm(userId: js.Any, token: String, redirect: String): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], redirect.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
+  @scala.inline
+  def confirm(userId: js.Any, token: String, redirect: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], redirect.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
   
   /**
     * A default verification token generator which accepts the user the token is
@@ -188,12 +189,10 @@ object User {
     * @param {() => void} cb The generator must pass back the new token with this function cal
     */
   /* static member */
-  @JSImport("loopback", "User.generateVerificationToken")
-  @js.native
-  def generateVerificationToken(user: js.Any): js.Promise[Unit] | Unit = js.native
-  @JSImport("loopback", "User.generateVerificationToken")
-  @js.native
-  def generateVerificationToken(user: js.Any, callback: js.Function0[Unit]): js.Promise[Unit] | Unit = js.native
+  @scala.inline
+  def generateVerificationToken(user: js.Any): js.Promise[Unit] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVerificationToken")(user.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Unit]
+  @scala.inline
+  def generateVerificationToken(user: js.Any, callback: js.Function0[Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateVerificationToken")(user.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
   
   /**
     * Login a user by with the given `credentials`
@@ -212,36 +211,30 @@ object User {
     * @param {AccessToken} token Access token if login is successfu
     */
   /* static member */
-  @JSImport("loopback", "User.login")
-  @js.native
-  def login(credentials: js.Any): js.Promise[AccessToken] | Unit = js.native
-  @JSImport("loopback", "User.login")
-  @js.native
-  def login(
-    credentials: js.Any,
-    include: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
-  ): js.Promise[AccessToken] | Unit = js.native
-  @JSImport("loopback", "User.login")
-  @js.native
-  def login(credentials: js.Any, include: String): js.Promise[AccessToken] | Unit = js.native
-  @JSImport("loopback", "User.login")
-  @js.native
+  @scala.inline
+  def login(credentials: js.Any): js.Promise[AccessToken] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AccessToken] | Unit]
+  @scala.inline
+  def login(credentials: js.Any, include: String): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
+  @scala.inline
   def login(
     credentials: js.Any,
     include: String,
     callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
-  ): js.Promise[AccessToken] | Unit = js.native
-  @JSImport("loopback", "User.login")
-  @js.native
-  def login(credentials: js.Any, include: js.Array[String]): js.Promise[AccessToken] | Unit = js.native
-  @JSImport("loopback", "User.login")
-  @js.native
+  ): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
+  @scala.inline
+  def login(credentials: js.Any, include: js.Array[String]): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
+  @scala.inline
   def login(
     credentials: js.Any,
     include: js.Array[String],
     callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
-  ): js.Promise[AccessToken] | Unit = js.native
+  ): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
+  @scala.inline
+  def login(
+    credentials: js.Any,
+    include: Unit,
+    callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
+  ): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
   
   /**
     * Logout a user with the given accessToken id
@@ -257,12 +250,10 @@ object User {
     * @param {Error} er
     */
   /* static member */
-  @JSImport("loopback", "User.logout")
-  @js.native
-  def logout(accessTokenID: String): js.Promise[Unit] | Unit = js.native
-  @JSImport("loopback", "User.logout")
-  @js.native
-  def logout(accessTokenID: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = js.native
+  @scala.inline
+  def logout(accessTokenID: String): js.Promise[Unit] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(accessTokenID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Unit]
+  @scala.inline
+  def logout(accessTokenID: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logout")(accessTokenID.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
   
   /**
     * Normalize the credentials
@@ -272,9 +263,8 @@ object User {
     * @returns {any} The normalized credential objec
     */
   /* static member */
-  @JSImport("loopback", "User.normalizeCredentials")
-  @js.native
-  def normalizeCredentials(credentials: js.Any, realmRequired: Boolean, realmDelimiter: String): js.Any = js.native
+  @scala.inline
+  def normalizeCredentials(credentials: js.Any, realmRequired: Boolean, realmDelimiter: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeCredentials")(credentials.asInstanceOf[js.Any], realmRequired.asInstanceOf[js.Any], realmDelimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Create a short lived acess token for temporary login. Allows users
@@ -285,10 +275,8 @@ object User {
     * @param {Error} er
     */
   /* static member */
-  @JSImport("loopback", "User.resetPassword")
-  @js.native
-  def resetPassword(options: js.Object): js.Promise[Unit] | Unit = js.native
-  @JSImport("loopback", "User.resetPassword")
-  @js.native
-  def resetPassword(options: js.Object, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = js.native
+  @scala.inline
+  def resetPassword(options: js.Object): js.Promise[Unit] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Unit]
+  @scala.inline
+  def resetPassword(options: js.Object, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
 }

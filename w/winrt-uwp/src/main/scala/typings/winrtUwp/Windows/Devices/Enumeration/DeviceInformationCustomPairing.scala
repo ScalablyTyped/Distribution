@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.pairingrequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a custom pairing for a DeviceInformation object. */
 @js.native
 trait DeviceInformationCustomPairing extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pairingrequested(
     `type`: pairingrequested,
@@ -22,7 +21,7 @@ trait DeviceInformationCustomPairing extends StObject {
   ): Unit = js.native
   
   /** Raised when a pairing action is requested. */
-  def onpairingrequested(ev: DevicePairingRequestedEventArgs with WinRTEvent[DeviceInformationCustomPairing]): Unit = js.native
+  def onpairingrequested(ev: DevicePairingRequestedEventArgs & WinRTEvent[DeviceInformationCustomPairing]): Unit = js.native
   /** Raised when a pairing action is requested. */
   @JSName("onpairingrequested")
   var onpairingrequested_Original: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs] = js.native
@@ -53,7 +52,7 @@ trait DeviceInformationCustomPairing extends StObject {
     devicePairingSettings: IDevicePairingSettings
   ): IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pairingrequested(
     `type`: pairingrequested,

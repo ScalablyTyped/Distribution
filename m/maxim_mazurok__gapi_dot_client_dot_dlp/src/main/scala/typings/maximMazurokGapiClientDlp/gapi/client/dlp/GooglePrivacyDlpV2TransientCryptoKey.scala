@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2TransientCryptoKey extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GooglePrivacyDlpV2TransientCryptoKey extends StObject {
     * same generated key if their names are the same. When the data crypto key is generated, this name is not used in any way (repeating the api call will result in a different key being
     * generated).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2TransientCryptoKey {
   

@@ -4,17 +4,15 @@ import typings.istanbulLibSourceMaps.istanbulLibSourceMapsStrings.file
 import typings.istanbulLibSourceMaps.istanbulLibSourceMapsStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Data {
     
@@ -37,16 +35,15 @@ object anon {
   }
   
   /* Inlined std.Partial<istanbul-lib-source-maps.istanbul-lib-source-maps.MapStoreOptions> */
-  @js.native
   trait PartialMapStoreOptions extends StObject {
     
-    var baseDir: js.UndefOr[String] = js.native
+    var baseDir: js.UndefOr[String] = js.undefined
     
-    var sourceStore: js.UndefOr[memory | file] = js.native
+    var sourceStore: js.UndefOr[memory | file] = js.undefined
     
-    var tmpdir: js.UndefOr[String] = js.native
+    var tmpdir: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object PartialMapStoreOptions {
     

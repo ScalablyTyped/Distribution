@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TestDocument. */
-@js.native
 trait TestDocument extends StObject {
   
   /** The unique identifier for the configuration. */
-  var configuration_id: js.UndefOr[String] = js.native
+  var configuration_id: js.UndefOr[String] = js.undefined
   
   /** The number of 10-kB chunks of field data that were enriched. This can be used to estimate the cost of running a real ingestion. */
-  var enriched_field_units: js.UndefOr[Double] = js.native
+  var enriched_field_units: js.UndefOr[Double] = js.undefined
   
   /** An array of notice messages about the preview operation. */
-  var notices: js.UndefOr[js.Array[Notice]] = js.native
+  var notices: js.UndefOr[js.Array[Notice]] = js.undefined
   
   /** Format of the test document. */
-  var original_media_type: js.UndefOr[String] = js.native
+  var original_media_type: js.UndefOr[String] = js.undefined
   
   /** An array of objects that describe each step in the preview process. */
-  var snapshots: js.UndefOr[js.Array[DocumentSnapshot]] = js.native
+  var snapshots: js.UndefOr[js.Array[DocumentSnapshot]] = js.undefined
   
   /** Status of the preview operation. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object TestDocument {
   

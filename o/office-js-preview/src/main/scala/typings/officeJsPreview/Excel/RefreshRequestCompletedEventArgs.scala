@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Local
 import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait RefreshRequestCompletedEventArgs extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait RefreshRequestCompletedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var refreshed: Boolean = js.native
+  var refreshed: Boolean
   
   /**
     *
@@ -34,7 +32,7 @@ trait RefreshRequestCompletedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var serviceId: Double = js.native
+  var serviceId: Double
   
   /**
     *
@@ -43,7 +41,7 @@ trait RefreshRequestCompletedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -52,7 +50,7 @@ trait RefreshRequestCompletedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var `type`: LinkedDataTypeRefreshRequestCompleted = js.native
+  var `type`: LinkedDataTypeRefreshRequestCompleted
   
   /**
     *
@@ -61,19 +59,14 @@ trait RefreshRequestCompletedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var warnings: js.UndefOr[js.Array[String]] = js.native
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RefreshRequestCompletedEventArgs {
   
   @scala.inline
-  def apply(
-    refreshed: Boolean,
-    serviceId: Double,
-    source: EventSource | Local | Remote,
-    `type`: LinkedDataTypeRefreshRequestCompleted
-  ): RefreshRequestCompletedEventArgs = {
+  def apply(refreshed: Boolean, serviceId: Double, source: EventSource | Local | Remote): RefreshRequestCompletedEventArgs = {
     val __obj = js.Dynamic.literal(refreshed = refreshed.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LinkedDataTypeRefreshRequestCompleted")
     __obj.asInstanceOf[RefreshRequestCompletedEventArgs]
   }
   

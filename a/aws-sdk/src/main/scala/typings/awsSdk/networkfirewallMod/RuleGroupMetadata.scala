@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupMetadata extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule group.
     */
-  var Arn: js.UndefOr[ResourceArn] = js.native
+  var Arn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The descriptive name of the rule group. You can't change the name of a rule group after you create it.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
 }
 object RuleGroupMetadata {
   

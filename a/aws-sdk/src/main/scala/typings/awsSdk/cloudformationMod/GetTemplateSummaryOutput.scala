@@ -2,56 +2,54 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTemplateSummaryOutput extends StObject {
   
   /**
     * The capabilities found within the template. If your template contains IAM resources, you must specify the CAPABILITY_IAM or CAPABILITY_NAMED_IAM value for this parameter when you use the CreateStack or UpdateStack actions with your template; otherwise, those actions return an InsufficientCapabilities error. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.
     */
-  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.native
+  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.undefined
   
   /**
     * The list of resources that generated the values in the Capabilities response element.
     */
-  var CapabilitiesReason: js.UndefOr[typings.awsSdk.cloudformationMod.CapabilitiesReason] = js.native
+  var CapabilitiesReason: js.UndefOr[typings.awsSdk.cloudformationMod.CapabilitiesReason] = js.undefined
   
   /**
     * A list of the transforms that are declared in the template.
     */
-  var DeclaredTransforms: js.UndefOr[TransformsList] = js.native
+  var DeclaredTransforms: js.UndefOr[TransformsList] = js.undefined
   
   /**
     * The value that is defined in the Description property of the template.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * The value that is defined for the Metadata property of the template.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.cloudformationMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.cloudformationMod.Metadata] = js.undefined
   
   /**
     * A list of parameter declarations that describe various properties for each parameter.
     */
-  var Parameters: js.UndefOr[ParameterDeclarations] = js.native
+  var Parameters: js.UndefOr[ParameterDeclarations] = js.undefined
   
   /**
     * A list of resource identifier summaries that describe the target resources of an import operation and the properties you can provide during the import to identify the target resources. For example, BucketName is a possible identifier property for an AWS::S3::Bucket resource. 
     */
-  var ResourceIdentifierSummaries: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceIdentifierSummaries] = js.native
+  var ResourceIdentifierSummaries: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceIdentifierSummaries] = js.undefined
   
   /**
     * A list of all the template resource types that are defined in the template, such as AWS::EC2::Instance, AWS::Dynamo::Table, and Custom::MyCustomInstance.
     */
-  var ResourceTypes: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceTypes] = js.native
+  var ResourceTypes: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceTypes] = js.undefined
   
   /**
     * The AWS template format version, which identifies the capabilities of the template.
     */
-  var Version: js.UndefOr[typings.awsSdk.cloudformationMod.Version] = js.native
+  var Version: js.UndefOr[typings.awsSdk.cloudformationMod.Version] = js.undefined
 }
 object GetTemplateSummaryOutput {
   

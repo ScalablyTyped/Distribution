@@ -5,17 +5,15 @@ import typings.baseui.baseuiStrings.remove
 import typings.baseui.baseuiStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait STATE_CHANGE_TYPE extends StObject {
   
-  var clear: typings.baseui.baseuiStrings.clear = js.native
+  var clear: typings.baseui.baseuiStrings.clear
   
-  var remove: typings.baseui.baseuiStrings.remove = js.native
+  var remove: typings.baseui.baseuiStrings.remove
   
-  var select: typings.baseui.baseuiStrings.select = js.native
+  var select: typings.baseui.baseuiStrings.select
 }
 object STATE_CHANGE_TYPE {
   

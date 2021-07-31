@@ -2,21 +2,19 @@ package typings.babelTypes.indexTs37Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseComment extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var loc: SourceLocation = js.native
+  var loc: SourceLocation
   
-  var start: Double = js.native
+  var start: Double
   
-  var `type`: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine = js.native
+  var `type`: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine
   
-  var value: String = js.native
+  var value: String
 }
 object BaseComment {
   

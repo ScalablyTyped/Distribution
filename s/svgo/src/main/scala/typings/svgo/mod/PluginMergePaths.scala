@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginMergePaths extends PluginConfig {
+trait PluginMergePaths
+  extends StObject
+     with PluginConfig {
   
-  var mergePaths: Boolean | js.Object = js.native
+  var mergePaths: Boolean | js.Object
 }
 object PluginMergePaths {
   

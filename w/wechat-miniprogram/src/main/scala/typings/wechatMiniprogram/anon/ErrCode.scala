@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrCode extends StObject {
   
   /**
@@ -16,9 +14,9 @@ trait ErrCode extends StObject {
     * - `10003` 背景音资源 (BGM) 加载失败
     * - `10004` 等待画面资源 (waiting-image) 加载失败
     */
-  var errCode: Double = js.native
+  var errCode: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object ErrCode {
   

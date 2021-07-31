@@ -4,13 +4,13 @@ import typings.slickgrid.DOMEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Editors {
   
-  @js.native
-  trait Checkbox[T /* <: SlickData */] extends Editor[T]
+  trait Checkbox[T /* <: SlickData */]
+    extends StObject
+       with Editor[T]
   object Checkbox {
     
     @scala.inline
@@ -29,14 +29,15 @@ object Editors {
     }
   }
   
-  @js.native
-  trait Date[T /* <: SlickData */] extends Editor[T] {
+  trait Date[T /* <: SlickData */]
+    extends StObject
+       with Editor[T] {
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def position(position: Position): Unit = js.native
+    def position(position: Position): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object Date {
     
@@ -59,7 +60,7 @@ object Editors {
     }
     
     @scala.inline
-    implicit class DateMutableBuilder[Self <: Date[_], T /* <: SlickData */] (val x: Self with Date[T]) extends AnyVal {
+    implicit class DateMutableBuilder[Self <: Date[?], T /* <: SlickData */] (val x: Self & Date[T]) extends AnyVal {
       
       @scala.inline
       def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
@@ -72,24 +73,23 @@ object Editors {
     }
   }
   
-  @js.native
   trait Editor[T /* <: SlickData */] extends StObject {
     
-    def applyValue(item: T, state: String): Unit = js.native
+    def applyValue(item: T, state: String): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def focus(): Unit = js.native
+    def focus(): Unit
     
-    def init(): Unit = js.native
+    def init(): Unit
     
-    def isValueChanged(): Boolean = js.native
+    def isValueChanged(): Boolean
     
-    def loadValue(item: T): Unit = js.native
+    def loadValue(item: T): Unit
     
-    def serializeValue(): js.Any = js.native
+    def serializeValue(): js.Any
     
-    def validate(): ValidateResults = js.native
+    def validate(): ValidateResults
   }
   object Editor {
     
@@ -109,7 +109,7 @@ object Editors {
     }
     
     @scala.inline
-    implicit class EditorMutableBuilder[Self <: Editor[_], T /* <: SlickData */] (val x: Self with Editor[T]) extends AnyVal {
+    implicit class EditorMutableBuilder[Self <: Editor[?], T /* <: SlickData */] (val x: Self & Editor[T]) extends AnyVal {
       
       @scala.inline
       def setApplyValue(value: (T, String) => Unit): Self = StObject.set(x, "applyValue", js.Any.fromFunction2(value))
@@ -137,24 +137,23 @@ object Editors {
     }
   }
   
-  @js.native
   trait EditorOptions[T /* <: SlickData */] extends StObject {
     
-    var cancelChanges: js.UndefOr[js.Function0[Unit]] = js.native
+    var cancelChanges: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var column: Column[T] = js.native
+    var column: Column[T]
     
-    var commitChanges: js.UndefOr[js.Function0[Unit]] = js.native
+    var commitChanges: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var container: HTMLElement = js.native
+    var container: HTMLElement
     
-    var grid: Grid[T] = js.native
+    var grid: Grid[T]
     
-    var gridPosition: js.UndefOr[CellPosition] = js.native
+    var gridPosition: js.UndefOr[CellPosition] = js.undefined
     
-    var item: js.UndefOr[T] = js.native
+    var item: js.UndefOr[T] = js.undefined
     
-    var position: js.UndefOr[CellPosition] = js.native
+    var position: js.UndefOr[CellPosition] = js.undefined
   }
   object EditorOptions {
     
@@ -165,7 +164,7 @@ object Editors {
     }
     
     @scala.inline
-    implicit class EditorOptionsMutableBuilder[Self <: EditorOptions[_], T /* <: SlickData */] (val x: Self with EditorOptions[T]) extends AnyVal {
+    implicit class EditorOptionsMutableBuilder[Self <: EditorOptions[?], T /* <: SlickData */] (val x: Self & EditorOptions[T]) extends AnyVal {
       
       @scala.inline
       def setCancelChanges(value: () => Unit): Self = StObject.set(x, "cancelChanges", js.Any.fromFunction0(value))
@@ -208,8 +207,9 @@ object Editors {
     }
   }
   
-  @js.native
-  trait Integer[T /* <: SlickData */] extends Editor[T]
+  trait Integer[T /* <: SlickData */]
+    extends StObject
+       with Editor[T]
   object Integer {
     
     @scala.inline
@@ -228,20 +228,21 @@ object Editors {
     }
   }
   
-  @js.native
-  trait LongText[T /* <: SlickData */] extends Editor[T] {
+  trait LongText[T /* <: SlickData */]
+    extends StObject
+       with Editor[T] {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def handleKeyDown(e: DOMEvent): Unit = js.native
+    def handleKeyDown(e: DOMEvent): Unit
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def position(position: Position): Unit = js.native
+    def position(position: Position): Unit
     
-    def save(): Unit = js.native
+    def save(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object LongText {
     
@@ -267,7 +268,7 @@ object Editors {
     }
     
     @scala.inline
-    implicit class LongTextMutableBuilder[Self <: LongText[_], T /* <: SlickData */] (val x: Self with LongText[T]) extends AnyVal {
+    implicit class LongTextMutableBuilder[Self <: LongText[?], T /* <: SlickData */] (val x: Self & LongText[T]) extends AnyVal {
       
       @scala.inline
       def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
@@ -289,8 +290,9 @@ object Editors {
     }
   }
   
-  @js.native
-  trait PercentComplete[T /* <: SlickData */] extends Editor[T]
+  trait PercentComplete[T /* <: SlickData */]
+    extends StObject
+       with Editor[T]
   object PercentComplete {
     
     @scala.inline
@@ -309,12 +311,13 @@ object Editors {
     }
   }
   
-  @js.native
-  trait Text[T /* <: SlickData */] extends Editor[T] {
+  trait Text[T /* <: SlickData */]
+    extends StObject
+       with Editor[T] {
     
-    def getValue(): String = js.native
+    def getValue(): String
     
-    def setValue(`val`: String): Unit = js.native
+    def setValue(`val`: String): Unit
   }
   object Text {
     
@@ -336,7 +339,7 @@ object Editors {
     }
     
     @scala.inline
-    implicit class TextMutableBuilder[Self <: Text[_], T /* <: SlickData */] (val x: Self with Text[T]) extends AnyVal {
+    implicit class TextMutableBuilder[Self <: Text[?], T /* <: SlickData */] (val x: Self & Text[T]) extends AnyVal {
       
       @scala.inline
       def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
@@ -346,8 +349,9 @@ object Editors {
     }
   }
   
-  @js.native
-  trait YesNoSelect[T /* <: SlickData */] extends Editor[T]
+  trait YesNoSelect[T /* <: SlickData */]
+    extends StObject
+       with Editor[T]
   object YesNoSelect {
     
     @scala.inline

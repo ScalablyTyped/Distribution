@@ -8,43 +8,41 @@ import typings.qlik.qlikStrings.P
 import typings.qlik.qlikStrings.S
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperCubeDef extends StObject {
   
-  var qAlwaysFullyExpanded: js.UndefOr[Boolean] = js.native
+  var qAlwaysFullyExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var qCalcCond: js.UndefOr[ValueExpr] = js.native
+  var qCalcCond: js.UndefOr[ValueExpr] = js.undefined
   
-  var qDimensions: js.UndefOr[js.Array[NxDimension]] = js.native
+  var qDimensions: js.UndefOr[js.Array[NxDimension]] = js.undefined
   
-  var qIndentMode: js.UndefOr[Boolean] = js.native
+  var qIndentMode: js.UndefOr[Boolean] = js.undefined
   
-  var qInitialDataFetch: js.UndefOr[js.Array[NxPage]] = js.native
+  var qInitialDataFetch: js.UndefOr[js.Array[NxPage]] = js.undefined
   
-  var qInterColumnSortOrder: js.UndefOr[js.Array[Double]] = js.native
+  var qInterColumnSortOrder: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var qMaxStackedCells: js.UndefOr[Double] = js.native
+  var qMaxStackedCells: js.UndefOr[Double] = js.undefined
   
-  var qMeasures: js.UndefOr[js.Array[NxMeasure]] = js.native
+  var qMeasures: js.UndefOr[js.Array[NxMeasure]] = js.undefined
   
-  var qMode: js.UndefOr[S | P | K] = js.native
+  var qMode: js.UndefOr[S | P | K] = js.undefined
   
-  var qNoOfLeftDims: js.UndefOr[Double] = js.native
+  var qNoOfLeftDims: js.UndefOr[Double] = js.undefined
   
-  var qPopulateMissing: js.UndefOr[Boolean] = js.native
+  var qPopulateMissing: js.UndefOr[Boolean] = js.undefined
   
-  var qShowTotalsAbove: js.UndefOr[Boolean] = js.native
+  var qShowTotalsAbove: js.UndefOr[Boolean] = js.undefined
   
-  var qSortByYValue: js.UndefOr[`-1` | `0` | `1`] = js.native
+  var qSortByYValue: js.UndefOr[`-1` | `0` | `1`] = js.undefined
   
-  var qStateName: js.UndefOr[String] = js.native
+  var qStateName: js.UndefOr[String] = js.undefined
   
-  var qSuppressZero: js.UndefOr[Boolean] = js.native
+  var qSuppressZero: js.UndefOr[Boolean] = js.undefined
   
-  var qSupressMissing: js.UndefOr[Boolean] = js.native
+  var qSupressMissing: js.UndefOr[Boolean] = js.undefined
 }
 object HyperCubeDef {
   

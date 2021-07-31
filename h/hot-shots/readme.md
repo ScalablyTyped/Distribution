@@ -10,9 +10,9 @@ Node.js client for StatsD, DogStatsD, and Telegraf
 | ------------------ | :-------------: |
 | Full name          | hot-shots |
 | Keywords           | statsd, dogstatsd, datadog, metrics, telegraf |
-| # releases         | 32 |
-| # dependents       | 64 |
-| # downloads        | 11567679 |
+| # releases         | 33 |
+| # dependents       | 72 |
+| # downloads        | 13000375 |
 | # stars            | 6 |
 
 ## Links

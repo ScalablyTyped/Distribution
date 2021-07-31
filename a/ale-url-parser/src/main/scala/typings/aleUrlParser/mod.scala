@@ -3,33 +3,33 @@ package typings.aleUrlParser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ale-url-parser", "parse")
+  @JSImport("ale-url-parser", JSImport.Namespace)
   @js.native
-  def parse(url: String): UrlObject = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ale-url-parser", "stringify")
-  @js.native
-  def stringify(urlObject: UrlObject): String = js.native
+  @scala.inline
+  def parse(url: String): UrlObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[UrlObject]
+  
+  @scala.inline
+  def stringify(urlObject: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(urlObject.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type QueryParams = StringDictionary[js.Any]
   
-  @js.native
   trait UrlObject extends StObject {
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[js.Array[String]] = js.native
+    var path: js.UndefOr[js.Array[String]] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[QueryParams] = js.native
+    var query: js.UndefOr[QueryParams] = js.undefined
   }
   object UrlObject {
     

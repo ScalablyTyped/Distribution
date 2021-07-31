@@ -2,36 +2,34 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationConnectorProperties extends StObject {
   
   /**
     *  The properties required to query Amazon EventBridge. 
     */
-  var EventBridge: js.UndefOr[EventBridgeDestinationProperties] = js.native
+  var EventBridge: js.UndefOr[EventBridgeDestinationProperties] = js.undefined
   
   /**
     *  The properties required to query Amazon Redshift. 
     */
-  var Redshift: js.UndefOr[RedshiftDestinationProperties] = js.native
+  var Redshift: js.UndefOr[RedshiftDestinationProperties] = js.undefined
   
   /**
     *  The properties required to query Amazon S3. 
     */
-  var S3: js.UndefOr[S3DestinationProperties] = js.native
+  var S3: js.UndefOr[S3DestinationProperties] = js.undefined
   
   /**
     *  The properties required to query Salesforce. 
     */
-  var Salesforce: js.UndefOr[SalesforceDestinationProperties] = js.native
+  var Salesforce: js.UndefOr[SalesforceDestinationProperties] = js.undefined
   
   /**
     *  The properties required to query Snowflake. 
     */
-  var Snowflake: js.UndefOr[SnowflakeDestinationProperties] = js.native
+  var Snowflake: js.UndefOr[SnowflakeDestinationProperties] = js.undefined
 }
 object DestinationConnectorProperties {
   

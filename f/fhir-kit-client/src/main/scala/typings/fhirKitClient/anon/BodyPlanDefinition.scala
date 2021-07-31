@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.PlanDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyPlanDefinition extends StObject {
   
-  var body: PlanDefinition = js.native
+  var body: PlanDefinition
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.PlanDefinition = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.PlanDefinition
 }
 object BodyPlanDefinition {
   
   @scala.inline
-  def apply(body: PlanDefinition, resourceType: typings.fhirKitClient.fhirKitClientStrings.PlanDefinition): BodyPlanDefinition = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: PlanDefinition): BodyPlanDefinition = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "PlanDefinition")
     __obj.asInstanceOf[BodyPlanDefinition]
   }
   

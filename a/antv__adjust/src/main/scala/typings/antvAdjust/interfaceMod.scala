@@ -3,31 +3,29 @@ package typings.antvAdjust
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait AdjustCfg extends StObject {
     
-    val adjustNames: js.UndefOr[js.Array[String]] = js.native
+    val adjustNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    val dodgeBy: js.UndefOr[String] = js.native
+    val dodgeBy: js.UndefOr[String] = js.undefined
     
-    val dodgeRatio: js.UndefOr[Double] = js.native
+    val dodgeRatio: js.UndefOr[Double] = js.undefined
     
-    val height: js.UndefOr[Double] = js.native
+    val height: js.UndefOr[Double] = js.undefined
     
-    val marginRatio: js.UndefOr[Double] = js.native
+    val marginRatio: js.UndefOr[Double] = js.undefined
     
-    val reverseOrder: js.UndefOr[Boolean] = js.native
+    val reverseOrder: js.UndefOr[Boolean] = js.undefined
     
-    val size: js.UndefOr[Double] = js.native
+    val size: js.UndefOr[Double] = js.undefined
     
-    val xField: js.UndefOr[String] = js.native
+    val xField: js.UndefOr[String] = js.undefined
     
-    val yField: js.UndefOr[String] = js.native
+    val yField: js.UndefOr[String] = js.undefined
   }
   object AdjustCfg {
     
@@ -101,36 +99,35 @@ object interfaceMod {
   
   type Data = StringDictionary[js.Any]
   
-  @js.native
   trait DodgeCfg extends StObject {
     
-    val adjustNames: js.UndefOr[js.Array[String]] = js.native
+    val adjustNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    val columnWidthRatio: js.UndefOr[Double] = js.native
+    val columnWidthRatio: js.UndefOr[Double] = js.undefined
     
-    val defaultSize: js.UndefOr[Double] = js.native
+    val defaultSize: js.UndefOr[Double] = js.undefined
     
-    val dodgeBy: js.UndefOr[String] = js.native
+    val dodgeBy: js.UndefOr[String] = js.undefined
     
-    val dodgePadding: js.UndefOr[Double] = js.native
+    val dodgePadding: js.UndefOr[Double] = js.undefined
     
-    val dodgeRatio: js.UndefOr[Double] = js.native
+    val dodgeRatio: js.UndefOr[Double] = js.undefined
     
-    val groupNum: js.UndefOr[Double] = js.native
+    val groupNum: js.UndefOr[Double] = js.undefined
     
-    val intervalPadding: js.UndefOr[Double] = js.native
+    val intervalPadding: js.UndefOr[Double] = js.undefined
     
-    val marginRatio: js.UndefOr[Double] = js.native
+    val marginRatio: js.UndefOr[Double] = js.undefined
     
-    val maxColumnWidth: js.UndefOr[Double] = js.native
+    val maxColumnWidth: js.UndefOr[Double] = js.undefined
     
-    val minColumnWidth: js.UndefOr[Double] = js.native
+    val minColumnWidth: js.UndefOr[Double] = js.undefined
     
-    val xDimensionLength: js.UndefOr[Double] = js.native
+    val xDimensionLength: js.UndefOr[Double] = js.undefined
     
-    val xField: String = js.native
+    val xField: String
     
-    val yField: js.UndefOr[String] = js.native
+    val yField: js.UndefOr[String] = js.undefined
   }
   object DodgeCfg {
     
@@ -229,12 +226,11 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var next: Double = js.native
+    var next: Double
     
-    var pre: Double = js.native
+    var pre: Double
   }
   object Range {
     
@@ -255,20 +251,19 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait StackCfg extends StObject {
     
-    val adjustNames: js.UndefOr[js.Array[String]] = js.native
+    val adjustNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    val height: js.UndefOr[Double] = js.native
+    val height: js.UndefOr[Double] = js.undefined
     
-    val reverseOrder: js.UndefOr[Boolean] = js.native
+    val reverseOrder: js.UndefOr[Boolean] = js.undefined
     
-    val size: js.UndefOr[Double] = js.native
+    val size: js.UndefOr[Double] = js.undefined
     
-    val xField: String = js.native
+    val xField: String
     
-    val yField: js.UndefOr[String] = js.native
+    val yField: js.UndefOr[String] = js.undefined
   }
   object StackCfg {
     

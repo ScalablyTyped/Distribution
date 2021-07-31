@@ -4,29 +4,30 @@ import typings.antDesignReactNative.libStyleMod.Theme
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/carousel/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/carousel/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): CarouselStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): CarouselStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[CarouselStyle]
+  
   trait CarouselStyle extends StObject {
     
-    var pagination: ViewStyle = js.native
+    var pagination: ViewStyle
     
-    var paginationX: ViewStyle = js.native
+    var paginationX: ViewStyle
     
-    var paginationY: ViewStyle = js.native
+    var paginationY: ViewStyle
     
-    var pointActiveStyle: ViewStyle = js.native
+    var pointActiveStyle: ViewStyle
     
-    var pointStyle: ViewStyle = js.native
+    var pointStyle: ViewStyle
     
-    var spaceStyle: ViewStyle = js.native
+    var spaceStyle: ViewStyle
   }
   object CarouselStyle {
     

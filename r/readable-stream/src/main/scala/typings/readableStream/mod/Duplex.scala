@@ -12,7 +12,6 @@ import typings.readableStream.anon.End
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -60,7 +59,7 @@ class Duplex ()
   @JSName("emit")
   def emit_resume(event: resume): Boolean = js.native
   
-  def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
   
   @JSName("on")
   def on_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
@@ -146,20 +145,19 @@ class Duplex ()
   @JSName("unshift")
   def unshift_Boolean(chunk: js.Any): Boolean = js.native
   
-  def write(
-    chunk: js.Any,
-    encoding: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-  ): Boolean = js.native
+  def write(chunk: js.Any, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
 object Duplex {
+  
+  @JSImport("readable-stream", "Duplex")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This is a dummy function required to retain type compatibility to node.
     * @deprecated DO NOT USE
     */
   /* static member */
-  @JSImport("readable-stream", "Duplex.from")
-  @js.native
-  def from(source: js.Any): js.Any = js.native
+  @scala.inline
+  def from(source: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

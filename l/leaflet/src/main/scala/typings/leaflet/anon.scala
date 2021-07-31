@@ -22,25 +22,23 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Active extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var coords: Coords = js.native
+    var coords: Coords
     
-    var current: Boolean = js.native
+    var current: Boolean
     
-    var el: HTMLElement = js.native
+    var el: HTMLElement
     
-    var loaded: js.UndefOr[Date] = js.native
+    var loaded: js.UndefOr[Date] = js.undefined
     
-    var retain: js.UndefOr[Boolean] = js.native
+    var retain: js.UndefOr[Boolean] = js.undefined
   }
   object Active {
     
@@ -82,14 +80,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Alt extends StObject {
     
-    var alt: js.UndefOr[Double] = js.native
+    var alt: js.UndefOr[Double] = js.undefined
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
   }
   object Alt {
     
@@ -118,7 +115,8 @@ object anon {
   
   @js.native
   trait Attribution
-    extends Instantiable0[Control_]
+    extends StObject
+       with Instantiable0[Control_]
        with Instantiable1[/* options */ ControlOptions, Control_] {
     
     var Attribution: Instantiable1[
@@ -137,24 +135,28 @@ object anon {
     
     var Zoom: Instantiable1[/* options */ js.UndefOr[ZoomOptions], typings.leaflet.mod.Control_.Zoom] = js.native
     
-    def extend[T /* <: js.Object */](props: T): InstantiableT[T] with (/* import warning: importer.ImportType#apply Failed type conversion: typeof Control */ js.Any) = js.native
+    def extend[T /* <: js.Object */](props: T): InstantiableT[T] & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Control */ js.Any) = js.native
   }
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* args (repeated) */ js.Any, js.Any]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, js.Any]
   
   @js.native
   trait InstantiableT[T /* <: js.Object */]
-    extends Instantiable1[/* args (repeated) */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, T]
   
   @js.native
-  trait TypeofClass extends Instantiable0[Class] {
+  trait TypeofClass
+    extends StObject
+       with Instantiable0[Class] {
     
     def addInitHook(initHookFn: js.Function0[Unit]): js.Any = js.native
     def addInitHook(methodName: String, args: js.Any*): js.Any = js.native
     
-    def extend(props: js.Any): Instantiable with (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    def extend(props: js.Any): Instantiable & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
     
     def include(props: js.Any): js.Any = js.native
     
@@ -200,12 +202,11 @@ object anon {
     def stopPropagation(ev: PropagableEvent): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
@@ -227,22 +228,23 @@ object anon {
   }
   
   /* Inlined {[name: string] : std.HTMLElement} & leaflet.leaflet.DefaultMapPanes */
-  @js.native
-  trait namestringHTMLElementDefa extends /* name */ StringDictionary[HTMLElement] {
+  trait namestringHTMLElementDefa
+    extends StObject
+       with /* name */ StringDictionary[HTMLElement] {
     
-    var mapPane: HTMLElement = js.native
+    var mapPane: HTMLElement
     
-    var markerPane: HTMLElement = js.native
+    var markerPane: HTMLElement
     
-    var overlayPane: HTMLElement = js.native
+    var overlayPane: HTMLElement
     
-    var popupPane: HTMLElement = js.native
+    var popupPane: HTMLElement
     
-    var shadowPane: HTMLElement = js.native
+    var shadowPane: HTMLElement
     
-    var tilePane: HTMLElement = js.native
+    var tilePane: HTMLElement
     
-    var tooltipPane: HTMLElement = js.native
+    var tooltipPane: HTMLElement
   }
   object namestringHTMLElementDefa {
     
@@ -289,13 +291,14 @@ object anon {
   /* Inlined {new (args : ...any): any} & {extend (props : any): {new (args : ...any): any} & typeof Class, include (props : any): any & typeof Class, mergeOptions (props : any): any & typeof Class, addInitHook (initHookFn : (): void): any & typeof Class, addInitHook (methodName : string, args : ...any): any & typeof Class, new (): leaflet.leaflet.Class} */
   @js.native
   trait newargsanyanyextendpropsa
-    extends Instantiable0[Class]
+    extends StObject
+       with Instantiable0[Class]
        with Instantiable1[/* args (repeated) */ js.Any, js.Any] {
     
     def addInitHook(initHookFn: js.Function0[Unit]): js.Any = js.native
     def addInitHook(methodName: String, args: js.Any*): js.Any = js.native
     
-    def extend(props: js.Any): Instantiable with (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    def extend(props: js.Any): Instantiable & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
     
     def include(props: js.Any): js.Any = js.native
     

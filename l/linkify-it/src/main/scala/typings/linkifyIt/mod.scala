@@ -4,47 +4,44 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("linkify-it", JSImport.Namespace)
-  @js.native
-  def apply(): LinkifyIt = js.native
-  @JSImport("linkify-it", JSImport.Namespace)
-  @js.native
-  def apply(schemas: js.UndefOr[scala.Nothing], options: Options): LinkifyIt = js.native
-  @JSImport("linkify-it", JSImport.Namespace)
-  @js.native
-  def apply(schemas: Options): LinkifyIt = js.native
-  @JSImport("linkify-it", JSImport.Namespace)
-  @js.native
-  def apply(schemas: Options, options: Options): LinkifyIt = js.native
-  @JSImport("linkify-it", JSImport.Namespace)
-  @js.native
-  def apply(schemas: SchemaRules): LinkifyIt = js.native
-  @JSImport("linkify-it", JSImport.Namespace)
-  @js.native
-  def apply(schemas: SchemaRules, options: Options): LinkifyIt = js.native
+  @scala.inline
+  def apply(): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LinkifyIt]
+  @scala.inline
+  def apply(schemas: Unit, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
+  @scala.inline
+  def apply(schemas: Options): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any]).asInstanceOf[LinkifyIt]
+  @scala.inline
+  def apply(schemas: Options, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
+  @scala.inline
+  def apply(schemas: SchemaRules): LinkifyIt = ^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any]).asInstanceOf[LinkifyIt]
+  @scala.inline
+  def apply(schemas: SchemaRules, options: Options): LinkifyIt = (^.asInstanceOf[js.Dynamic].apply(schemas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinkifyIt]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("linkify-it", JSImport.Namespace)
   @js.native
-  class ^ () extends LinkifyIt {
+  class ^ ()
+    extends StObject
+       with LinkifyIt {
     def this(schemas: Options) = this()
     def this(schemas: SchemaRules) = this()
-    def this(schemas: js.UndefOr[scala.Nothing], options: Options) = this()
+    def this(schemas: Unit, options: Options) = this()
     def this(schemas: Options, options: Options) = this()
     def this(schemas: SchemaRules, options: Options) = this()
   }
-  
+  @JSImport("linkify-it", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FullRule extends StObject {
     
-    var normalize: js.UndefOr[js.Function1[/* match */ Match, Unit]] = js.native
+    var normalize: js.UndefOr[js.Function1[/* match */ Match, Unit]] = js.undefined
     
-    var validate: String | RegExp | Validate = js.native
+    var validate: String | RegExp | Validate
   }
   object FullRule {
     
@@ -96,20 +93,19 @@ object mod {
     def tlds(list: js.Array[String], keepOld: Boolean): LinkifyIt = js.native
   }
   
-  @js.native
   trait Match extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var lastIndex: Double = js.native
+    var lastIndex: Double
     
-    var raw: String = js.native
+    var raw: String
     
-    var schema: String = js.native
+    var schema: String
     
-    var text: String = js.native
+    var text: String
     
-    var url: String = js.native
+    var url: String
   }
   object Match {
     
@@ -142,14 +138,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var fuzzyEmail: js.UndefOr[Boolean] = js.native
+    var fuzzyEmail: js.UndefOr[Boolean] = js.undefined
     
-    var fuzzyIP: js.UndefOr[Boolean] = js.native
+    var fuzzyIP: js.UndefOr[Boolean] = js.undefined
     
-    var fuzzyLink: js.UndefOr[Boolean] = js.native
+    var fuzzyLink: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,37 +2,36 @@ package typings.electronNotarize
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("electron-notarize", "notarize")
+  @JSImport("electron-notarize", JSImport.Namespace)
   @js.native
-  def notarize(hasAppBundleIdAppPathAscProviderAuthOptions: NotarizeOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("electron-notarize", "stapleApp")
-  @js.native
-  def stapleApp(opts: NotarizeStapleOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def notarize(hasAppBundleIdAppPathAscProviderAuthOptions: NotarizeOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("notarize")(hasAppBundleIdAppPathAscProviderAuthOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("electron-notarize", "startNotarize")
-  @js.native
-  def startNotarize(opts: NotarizeStartOptions): js.Promise[NotarizeResult] = js.native
+  @scala.inline
+  def stapleApp(opts: NotarizeStapleOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stapleApp")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("electron-notarize", "validateAuthorizationArgs")
-  @js.native
-  def validateAuthorizationArgs(opts: NotarizeCredentials): NotarizeCredentials = js.native
+  @scala.inline
+  def startNotarize(opts: NotarizeStartOptions): js.Promise[NotarizeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNotarize")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NotarizeResult]]
   
-  @JSImport("electron-notarize", "waitForNotarize")
-  @js.native
-  def waitForNotarize(opts: NotarizeWaitOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def validateAuthorizationArgs(opts: NotarizeCredentials): NotarizeCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("validateAuthorizationArgs")(opts.asInstanceOf[js.Any]).asInstanceOf[NotarizeCredentials]
   
-  @js.native
-  trait NotarizeApiKeyCredentials extends NotarizeCredentials {
+  @scala.inline
+  def waitForNotarize(opts: NotarizeWaitOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForNotarize")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  trait NotarizeApiKeyCredentials
+    extends StObject
+       with NotarizeCredentials {
     
-    var appleApiIssuer: String = js.native
+    var appleApiIssuer: String
     
-    var appleApiKey: String = js.native
+    var appleApiKey: String
   }
   object NotarizeApiKeyCredentials {
     
@@ -53,12 +52,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NotarizeAppOptions extends StObject {
     
-    var appBundleId: String = js.native
+    var appBundleId: String
     
-    var appPath: String = js.native
+    var appPath: String
   }
   object NotarizeAppOptions {
     
@@ -101,12 +99,13 @@ object mod {
   
   type NotarizeOptions = NotarizeStartOptions
   
-  @js.native
-  trait NotarizePasswordCredentials extends NotarizeCredentials {
+  trait NotarizePasswordCredentials
+    extends StObject
+       with NotarizeCredentials {
     
-    var appleId: String = js.native
+    var appleId: String
     
-    var appleIdPassword: String = js.native
+    var appleIdPassword: String
   }
   object NotarizePasswordCredentials {
     
@@ -127,10 +126,9 @@ object mod {
     }
   }
   
-  @js.native
   trait NotarizeResult extends StObject {
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object NotarizeResult {
     
@@ -149,10 +147,9 @@ object mod {
   }
   
   /* Inlined std.Pick<electron-notarize.electron-notarize.NotarizeAppOptions, 'appPath'> */
-  @js.native
   trait NotarizeStapleOptions extends StObject {
     
-    var appPath: String = js.native
+    var appPath: String
   }
   object NotarizeStapleOptions {
     
@@ -170,14 +167,13 @@ object mod {
     }
   }
   
-  type NotarizeStartOptions = NotarizeAppOptions with NotarizeCredentials with TransporterOptions
+  type NotarizeStartOptions = NotarizeAppOptions & NotarizeCredentials & TransporterOptions
   
-  type NotarizeWaitOptions = NotarizeResult with NotarizeCredentials
+  type NotarizeWaitOptions = NotarizeResult & NotarizeCredentials
   
-  @js.native
   trait TransporterOptions extends StObject {
     
-    var ascProvider: js.UndefOr[String] = js.native
+    var ascProvider: js.UndefOr[String] = js.undefined
   }
   object TransporterOptions {
     

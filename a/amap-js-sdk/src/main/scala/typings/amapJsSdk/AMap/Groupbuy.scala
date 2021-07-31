@@ -2,43 +2,41 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groupbuy extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var detail: String = js.native
+  var detail: String
   
-  var discount: Double = js.native
+  var discount: Double
   
-  var etime: String = js.native
+  var etime: String
   
-  var groupbuy_price: Double = js.native
+  var groupbuy_price: Double
   
-  var original_price: Double = js.native
+  var original_price: Double
   
-  var photos: js.Array[Photo] = js.native
+  var photos: js.Array[Photo]
   
-  var provider: String = js.native
+  var provider: String
   
-  var sold_num: Double = js.native
+  var sold_num: Double
   
-  var stime: String = js.native
+  var stime: String
   
-  var ticket_address: String = js.native
+  var ticket_address: String
   
-  var ticket_tel: String = js.native
+  var ticket_tel: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var type_code: String = js.native
+  var type_code: String
   
-  var url: String = js.native
+  var url: String
 }
 object Groupbuy {
   

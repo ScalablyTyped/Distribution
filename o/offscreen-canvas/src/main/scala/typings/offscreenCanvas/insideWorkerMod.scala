@@ -5,14 +5,16 @@ import typings.std.PostMessageOptions
 import typings.std.Transferable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object insideWorkerMod {
   
+  @scala.inline
+  def apply(listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]): WorkerInterface = ^.asInstanceOf[js.Dynamic].apply(listener.asInstanceOf[js.Any]).asInstanceOf[WorkerInterface]
+  
   @JSImport("offscreen-canvas/inside-worker", JSImport.Namespace)
   @js.native
-  def apply(listener: js.Function1[/* ev */ MessageEvent[_], _]): WorkerInterface = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait WorkerInterface extends StObject {

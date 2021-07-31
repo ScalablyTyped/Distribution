@@ -13,7 +13,6 @@ import typings.vscodeLanguageserverProtocol.protocolImplementationMod.Implementa
 import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object implementationMod {
@@ -28,7 +27,6 @@ object implementationMod {
     def this(client: BaseLanguageClient) = this()
   }
   
-  @js.native
   trait ImplementationMiddleware extends StObject {
     
     var provideImplementation: js.UndefOr[
@@ -40,7 +38,7 @@ object implementationMod {
           /* next */ ProvideImplementationSignature, 
           ProviderResult[Definition | js.Array[DefinitionLink]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ImplementationMiddleware {
     

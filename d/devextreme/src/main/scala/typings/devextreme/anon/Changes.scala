@@ -2,13 +2,11 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Changes extends StObject {
   
-  var changes: js.UndefOr[js.Array[_]] = js.native
+  var changes: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object Changes {
   
@@ -22,7 +20,7 @@ object Changes {
   implicit class ChangesMutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChanges(value: js.Array[_]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    def setChanges(value: js.Array[js.Any]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)

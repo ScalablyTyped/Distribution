@@ -3,15 +3,13 @@ package typings.rcSelect.anon
 import typings.rcSelect.generatorMod.RawValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovedValue[P /* <: RawValueType | js.Object */] extends StObject {
   
-  var removedValue: P = js.native
+  var removedValue: P
   
-  var values: js.Array[P] = js.native
+  var values: js.Array[P]
 }
 object RemovedValue {
   
@@ -22,7 +20,7 @@ object RemovedValue {
   }
   
   @scala.inline
-  implicit class RemovedValueMutableBuilder[Self <: RemovedValue[_], P /* <: RawValueType | js.Object */] (val x: Self with RemovedValue[P]) extends AnyVal {
+  implicit class RemovedValueMutableBuilder[Self <: RemovedValue[?], P /* <: RawValueType | js.Object */] (val x: Self & RemovedValue[P]) extends AnyVal {
     
     @scala.inline
     def setRemovedValue(value: P): Self = StObject.set(x, "removedValue", value.asInstanceOf[js.Any])

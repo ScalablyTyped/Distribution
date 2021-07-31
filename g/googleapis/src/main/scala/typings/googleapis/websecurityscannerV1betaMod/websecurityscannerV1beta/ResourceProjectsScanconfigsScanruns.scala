@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1beta", "websecurityscanner_v1beta.Resource$Projects$Scanconfigs$Scanruns")
@@ -36,7 +35,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaScanRun] = js.native
   def get(callback: BodyResponseCallback[SchemaScanRun]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
   def get(params: ParamsResourceProjectsScanconfigsScanrunsGet): GaxiosPromise[SchemaScanRun] = js.native
   def get(
     params: ParamsResourceProjectsScanconfigsScanrunsGet,
@@ -71,7 +70,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListScanRunsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListScanRunsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScanRunsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListScanRunsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsScanrunsList): GaxiosPromise[SchemaListScanRunsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsScanrunsList,
@@ -104,7 +103,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends StObject {
     */
   def stop(): GaxiosPromise[SchemaScanRun] = js.native
   def stop(callback: BodyResponseCallback[SchemaScanRun]): Unit = js.native
-  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
+  def stop(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
   def stop(params: ParamsResourceProjectsScanconfigsScanrunsStop): GaxiosPromise[SchemaScanRun] = js.native
   def stop(
     params: ParamsResourceProjectsScanconfigsScanrunsStop,

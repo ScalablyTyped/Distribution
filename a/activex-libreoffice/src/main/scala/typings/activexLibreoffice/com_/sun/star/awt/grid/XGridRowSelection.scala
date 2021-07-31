@@ -3,71 +3,69 @@ package typings.activexLibreoffice.com_.sun.star.awt.grid
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interfaces provides access to the selection of row for {@link UnoControlGrid} .
   * @since LibreOffice 3.4
   */
-@js.native
 trait XGridRowSelection extends StObject {
   
   /**
     * Returns the indices of all selected rows.
     * @returns a sequence of indices.
     */
-  val SelectedRows: SafeArray[Double] = js.native
+  val SelectedRows: SafeArray[Double]
   
   /**
     * Adds a listener for the {@link GridSelectionEvent} posted after the grid changes.
     * @param listener the listener to add.
     */
-  def addSelectionListener(listener: XGridSelectionListener): Unit = js.native
+  def addSelectionListener(listener: XGridSelectionListener): Unit
   
   /** Deselects all selected rows. */
-  def deselectAllRows(): Unit = js.native
+  def deselectAllRows(): Unit
   
   /**
     * removes the selection for a given row
     * @param RowIndex denotes the index of the row to deselect
     */
-  def deselectRow(RowIndex: Double): Unit = js.native
+  def deselectRow(RowIndex: Double): Unit
   
   /**
     * Returns the indices of all selected rows.
     * @returns a sequence of indices.
     */
-  def getSelectedRows(): SafeArray[Double] = js.native
+  def getSelectedRows(): SafeArray[Double]
   
   /**
     * Returns whether rows are selected.
     * @returns `TRUE` if and only if at least one row is selected.
     */
-  def hasSelectedRows(): Boolean = js.native
+  def hasSelectedRows(): Boolean
   
   /**
     * Returns whether a specific row is selected.
     * @param RowIndex the index of a row. If the value does not denote a valid row index, i.e. is smaller than `0` or greater than the number of rows, this is
     * @returns `TRUE` if and only if there is a row with the given index, and it is selected currently.
     */
-  def isRowSelected(RowIndex: Double): Boolean = js.native
+  def isRowSelected(RowIndex: Double): Boolean
   
   /**
     * Removes a listener previously added with {@link addSelectionListener()} .
     * @param listener the listener to remove.
     */
-  def removeSelectionListener(listener: XGridSelectionListener): Unit = js.native
+  def removeSelectionListener(listener: XGridSelectionListener): Unit
   
   /** Selects all rows. */
-  def selectAllRows(): Unit = js.native
+  def selectAllRows(): Unit
   
   /**
     * selects a given row
     * @param RowIndex denotes the index of the row to select
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `RowIndex` does not denote a valid row index
     */
-  def selectRow(RowIndex: Double): Unit = js.native
+  def selectRow(RowIndex: Double): Unit
 }
 object XGridRowSelection {
   

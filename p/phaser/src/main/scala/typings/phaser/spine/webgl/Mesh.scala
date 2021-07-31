@@ -6,69 +6,68 @@ import typings.std.Float32Array
 import typings.std.Uint16Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mesh
-  extends Disposable
+  extends StObject
+     with Disposable
      with Restorable {
   
-  var attributes: js.Any = js.native
+  var attributes: js.Any
   
-  def bind(shader: Shader): Unit = js.native
+  def bind(shader: Shader): Unit
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  var dirtyIndices: js.Any = js.native
+  var dirtyIndices: js.Any
   
-  var dirtyVertices: js.Any = js.native
+  var dirtyVertices: js.Any
   
-  def draw(shader: Shader, primitiveType: Double): Unit = js.native
+  def draw(shader: Shader, primitiveType: Double): Unit
   
-  def drawWithOffset(shader: Shader, primitiveType: Double, offset: Double, count: Double): Unit = js.native
+  def drawWithOffset(shader: Shader, primitiveType: Double, offset: Double, count: Double): Unit
   
-  var elementsPerVertex: js.Any = js.native
+  var elementsPerVertex: js.Any
   
-  def getAttributes(): js.Array[VertexAttribute] = js.native
+  def getAttributes(): js.Array[VertexAttribute]
   
-  def getIndices(): Uint16Array = js.native
+  def getIndices(): Uint16Array
   
-  def getVertexSizeInFloats(): Double = js.native
+  def getVertexSizeInFloats(): Double
   
-  def getVertices(): Float32Array = js.native
+  def getVertices(): Float32Array
   
-  var indices: js.Any = js.native
+  var indices: js.Any
   
-  var indicesBuffer: js.Any = js.native
+  var indicesBuffer: js.Any
   
-  var indicesLength: js.Any = js.native
+  var indicesLength: js.Any
   
-  def maxIndices(): Double = js.native
+  def maxIndices(): Double
   
-  def maxVertices(): Double = js.native
+  def maxVertices(): Double
   
-  def numIndices(): Double = js.native
+  def numIndices(): Double
   
-  def numVertices(): Double = js.native
+  def numVertices(): Double
   
-  def setIndices(indices: js.Array[Double]): Unit = js.native
+  def setIndices(indices: js.Array[Double]): Unit
   
-  def setIndicesLength(length: Double): Unit = js.native
+  def setIndicesLength(length: Double): Unit
   
-  def setVertices(vertices: js.Array[Double]): Unit = js.native
+  def setVertices(vertices: js.Array[Double]): Unit
   
-  def setVerticesLength(length: Double): Unit = js.native
+  def setVerticesLength(length: Double): Unit
   
-  def unbind(shader: Shader): Unit = js.native
+  def unbind(shader: Shader): Unit
   
-  var update: js.Any = js.native
+  var update: js.Any
   
-  var vertices: js.Any = js.native
+  var vertices: js.Any
   
-  var verticesBuffer: js.Any = js.native
+  var verticesBuffer: js.Any
   
-  var verticesLength: js.Any = js.native
+  var verticesLength: js.Any
 }
 object Mesh {
   

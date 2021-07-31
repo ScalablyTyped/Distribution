@@ -14,53 +14,53 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clearableLabeledInputMod {
+  
+  @JSImport("antd/lib/input/ClearableLabeledInput", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("antd/lib/input/ClearableLabeledInput", JSImport.Default)
   @js.native
   class default () extends ClearableLabeledInput
   
-  @JSImport("antd/lib/input/ClearableLabeledInput", "hasPrefixSuffix")
-  @js.native
-  def hasPrefixSuffix(props: ClearableInputProps): Boolean = js.native
-  @JSImport("antd/lib/input/ClearableLabeledInput", "hasPrefixSuffix")
-  @js.native
-  def hasPrefixSuffix(props: InputProps): Boolean = js.native
+  @scala.inline
+  def hasPrefixSuffix(props: ClearableInputProps): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPrefixSuffix")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasPrefixSuffix(props: InputProps): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPrefixSuffix")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * This basic props required for input and textarea.
     */
-  @js.native
   trait BasicProps extends StObject {
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var bordered: Boolean = js.native
+    var bordered: Boolean
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[DirectionType] = js.native
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var element: ReactElement = js.native
+    var element: ReactElement
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    def handleReset(event: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
+    def handleReset(event: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit
     
-    var inputType: text_ | input = js.native
+    var inputType: text_ | input
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object BasicProps {
     
@@ -147,20 +147,21 @@ object clearableLabeledInputMod {
   /**
     * This props only for input.
     */
-  @js.native
-  trait ClearableInputProps extends BasicProps {
+  trait ClearableInputProps
+    extends StObject
+       with BasicProps {
     
-    var addonAfter: js.UndefOr[ReactNode] = js.native
+    var addonAfter: js.UndefOr[ReactNode] = js.undefined
     
-    var addonBefore: js.UndefOr[ReactNode] = js.native
+    var addonBefore: js.UndefOr[ReactNode] = js.undefined
     
-    var prefix: js.UndefOr[ReactNode] = js.native
+    var prefix: js.UndefOr[ReactNode] = js.undefined
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
     
-    var suffix: js.UndefOr[ReactNode] = js.native
+    var suffix: js.UndefOr[ReactNode] = js.undefined
     
-    var triggerFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var triggerFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ClearableInputProps {
     

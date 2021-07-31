@@ -2,23 +2,23 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CipherKeyValueParams extends CommonParams {
+trait CipherKeyValueParams
+  extends StObject
+     with CommonParams {
   
-  var askOnDecrypt: js.UndefOr[Boolean] = js.native
+  var askOnDecrypt: js.UndefOr[Boolean] = js.undefined
   
-  var askOnEncrypt: js.UndefOr[Boolean] = js.native
+  var askOnEncrypt: js.UndefOr[Boolean] = js.undefined
   
-  var iv: js.UndefOr[String] = js.native
+  var iv: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var path: String | js.Array[Double] = js.native
+  var path: String | js.Array[Double]
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object CipherKeyValueParams {
   

@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait IconSetConditionalFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait IconSetConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var criteria: js.UndefOr[Boolean] = js.native
+  var criteria: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait IconSetConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var reverseIconOrder: js.UndefOr[Boolean] = js.native
+  var reverseIconOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait IconSetConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var showIconOnly: js.UndefOr[Boolean] = js.native
+  var showIconOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait IconSetConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
 }
 object IconSetConditionalFormatLoadOptions {
   

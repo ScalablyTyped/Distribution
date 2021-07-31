@@ -9,7 +9,6 @@ import typings.libp2pNoise.xxMod.XX
 import typings.peerId.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handshakeXxFallbackMod {
@@ -41,7 +40,7 @@ object handshakeXxFallbackMod {
       staticKeypair: KeyPair,
       connection: WrappedConnection,
       initialMsg: bytes,
-      remotePeer: js.UndefOr[scala.Nothing],
+      remotePeer: Unit,
       ephemeralKeys: KeyPair
     ) = this()
     def this(
@@ -61,8 +60,8 @@ object handshakeXxFallbackMod {
       staticKeypair: KeyPair,
       connection: WrappedConnection,
       initialMsg: bytes,
-      remotePeer: js.UndefOr[scala.Nothing],
-      ephemeralKeys: js.UndefOr[scala.Nothing],
+      remotePeer: Unit,
+      ephemeralKeys: Unit,
       handshake: XX
     ) = this()
     def this(
@@ -72,7 +71,7 @@ object handshakeXxFallbackMod {
       staticKeypair: KeyPair,
       connection: WrappedConnection,
       initialMsg: bytes,
-      remotePeer: js.UndefOr[scala.Nothing],
+      remotePeer: Unit,
       ephemeralKeys: KeyPair,
       handshake: XX
     ) = this()
@@ -84,7 +83,7 @@ object handshakeXxFallbackMod {
       connection: WrappedConnection,
       initialMsg: bytes,
       remotePeer: ^,
-      ephemeralKeys: js.UndefOr[scala.Nothing],
+      ephemeralKeys: Unit,
       handshake: XX
     ) = this()
     def this(

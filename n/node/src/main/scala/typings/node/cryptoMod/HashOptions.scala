@@ -3,17 +3,17 @@ package typings.node.cryptoMod
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HashOptions extends TransformOptions {
+trait HashOptions
+  extends StObject
+     with TransformOptions {
   
   /**
     * For XOF hash functions such as `shake256`, the
     * outputLength option can be used to specify the desired output length in bytes.
     */
-  var outputLength: js.UndefOr[Double] = js.native
+  var outputLength: js.UndefOr[Double] = js.undefined
 }
 object HashOptions {
   

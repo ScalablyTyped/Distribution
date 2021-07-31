@@ -4,17 +4,15 @@ import typings.dingtalkRobotSender.dingtalkRobotSenderStrings.`0`
 import typings.dingtalkRobotSender.dingtalkRobotSenderStrings.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActionURL extends StObject {
     
-    var actionURL: String = js.native
+    var actionURL: String
     
-    var title: String = js.native
+    var title: String
   }
   object ActionURL {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AtMobiles extends StObject {
     
-    var atMobiles: js.Array[String] = js.native
+    var atMobiles: js.Array[String]
     
-    var isAtAll: Boolean = js.native
+    var isAtAll: Boolean
   }
   object AtMobiles {
     
@@ -64,22 +61,21 @@ object anon {
     }
   }
   
-  @js.native
   trait BtnOrientation extends StObject {
     
-    var btnOrientation: `0` | `1` = js.native
+    var btnOrientation: `0` | `1`
     
-    var btns: js.UndefOr[js.Array[ActionURL]] = js.native
+    var btns: js.UndefOr[js.Array[ActionURL]] = js.undefined
     
-    var hideAvatar: `0` | `1` = js.native
+    var hideAvatar: `0` | `1`
     
-    var singleTitle: js.UndefOr[String] = js.native
+    var singleTitle: js.UndefOr[String] = js.undefined
     
-    var singleURL: js.UndefOr[String] = js.native
+    var singleURL: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
   }
   object BtnOrientation {
     
@@ -127,10 +123,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
   }
   object Content {
     
@@ -148,16 +143,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IsAtAll extends StObject {
     
-    var atMobiles: js.Array[String] = js.native
+    var atMobiles: js.Array[String]
     
-    var isAtAll: Boolean = js.native
+    var isAtAll: Boolean
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
   }
   object IsAtAll {
     
@@ -187,14 +181,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MessageURL_ extends StObject {
     
-    var messageURL: String = js.native
+    var messageURL: String
     
-    var picURL: String = js.native
+    var picURL: String
     
-    var title: String = js.native
+    var title: String
   }
   object MessageURL_ {
     
@@ -218,16 +211,15 @@ object anon {
     }
   }
   
-  @js.native
   trait MessageUrl extends StObject {
     
-    var messageUrl: String = js.native
+    var messageUrl: String
     
-    var picUrl: String = js.native
+    var picUrl: String
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
   }
   object MessageUrl {
     

@@ -4,27 +4,25 @@ import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Element extends StObject {
   
-  var element: js.UndefOr[JQuery[HTMLElement]] = js.native
+  var element: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   
-  var foldStyle: js.UndefOr[String] = js.native
+  var foldStyle: js.UndefOr[String] = js.undefined
   
-  var globals: js.UndefOr[js.Object] = js.native
+  var globals: js.UndefOr[js.Object] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[js.Object] = js.native
+  var options: js.UndefOr[js.Object] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Element {
   

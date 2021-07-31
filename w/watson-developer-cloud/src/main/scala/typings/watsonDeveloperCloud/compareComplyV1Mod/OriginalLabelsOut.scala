@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The original labeling from the input document, without the submitted feedback. */
-@js.native
 trait OriginalLabelsOut extends StObject {
   
   /** List of functional categories into which the element falls; in other words, the subject matter of the element. */
-  var categories: js.UndefOr[js.Array[Category]] = js.native
+  var categories: js.UndefOr[js.Array[Category]] = js.undefined
   
   /** A string identifying the type of modification the feedback entry in the `updated_labels` array. Possible values are `added`, `not_changed`, and `removed`. */
-  var modification: js.UndefOr[String] = js.native
+  var modification: js.UndefOr[String] = js.undefined
   
   /** Description of the action specified by the element and whom it affects. */
-  var types: js.UndefOr[js.Array[TypeLabel]] = js.native
+  var types: js.UndefOr[js.Array[TypeLabel]] = js.undefined
 }
 object OriginalLabelsOut {
   

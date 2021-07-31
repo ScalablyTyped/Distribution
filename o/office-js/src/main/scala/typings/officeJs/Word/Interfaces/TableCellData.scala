@@ -13,11 +13,9 @@ import typings.officeJs.officeJsStrings.Top
 import typings.officeJs.officeJsStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableCell.toJSON()`. */
-@js.native
 trait TableCellData extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var body: js.UndefOr[BodyData] = js.native
+  var body: js.UndefOr[BodyData] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var cellIndex: js.UndefOr[Double] = js.native
+  var cellIndex: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var columnWidth: js.UndefOr[Double] = js.native
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.native
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var shadingColor: js.UndefOr[String] = js.native
+  var shadingColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.native
+  var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TableCellData {
   

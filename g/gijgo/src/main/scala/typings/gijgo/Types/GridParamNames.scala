@@ -2,23 +2,21 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridParamNames extends StObject {
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var groupBy: js.UndefOr[String] = js.native
+  var groupBy: js.UndefOr[String] = js.undefined
   
-  var groupByDirection: js.UndefOr[String] = js.native
+  var groupByDirection: js.UndefOr[String] = js.undefined
   
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.undefined
   
-  var sortBy: js.UndefOr[String] = js.native
+  var sortBy: js.UndefOr[String] = js.undefined
 }
 object GridParamNames {
   

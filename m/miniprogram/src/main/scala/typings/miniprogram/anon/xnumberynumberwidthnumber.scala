@@ -3,26 +3,24 @@ package typings.miniprogram.anon
 import typings.miniprogram.AsyncCallbackFailObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  x :number,   y :number,   width :number,   height :number} & miniprogram.AsyncCallback<{  width :number,   height :number,   data :std.Uint8ClampedArray | undefined}> */
-@js.native
 trait xnumberynumberwidthnumber extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var success: js.UndefOr[js.Function1[/* res */ Data, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ Data, Unit]] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object xnumberynumberwidthnumber {
   

@@ -16,31 +16,32 @@ import typings.jsreportPdfUtils.mod.JsReportPdfUtils.PdfPassword
 import typings.jsreportPdfUtils.mod.JsReportPdfUtils.PdfSign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  
   @JSImport("jsreport-pdf-utils", JSImport.Namespace)
   @js.native
-  def apply(): ExtensionDefinition = js.native
+  val ^ : js.Any = js.native
   
   object JsReportPdfUtils {
     
-    @js.native
     trait PdfMeta extends StObject {
       
-      var author: js.UndefOr[String] = js.native
+      var author: js.UndefOr[String] = js.undefined
       
-      var creator: js.UndefOr[String] = js.native
+      var creator: js.UndefOr[String] = js.undefined
       
-      var keywords: js.UndefOr[String] = js.native
+      var keywords: js.UndefOr[String] = js.undefined
       
-      var producer: js.UndefOr[String] = js.native
+      var producer: js.UndefOr[String] = js.undefined
       
-      var subject: js.UndefOr[String] = js.native
+      var subject: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object PdfMeta {
       
@@ -91,18 +92,17 @@ object mod {
       }
     }
     
-    @js.native
     trait PdfOperation extends StObject {
       
-      var mergeWholeDocument: js.UndefOr[Boolean] = js.native
+      var mergeWholeDocument: js.UndefOr[Boolean] = js.undefined
       
-      var renderForEveryPage: js.UndefOr[Boolean] = js.native
+      var renderForEveryPage: js.UndefOr[Boolean] = js.undefined
       
-      var template: js.UndefOr[Template] = js.native
+      var template: js.UndefOr[Template] = js.undefined
       
-      var templateShortid: js.UndefOr[String] = js.native
+      var templateShortid: js.UndefOr[String] = js.undefined
       
-      var `type`: merge | append | prepend = js.native
+      var `type`: merge | append | prepend
     }
     object PdfOperation {
       
@@ -145,24 +145,23 @@ object mod {
       }
     }
     
-    @js.native
     trait PdfPassword extends StObject {
       
-      var contentAccessibility: Boolean = js.native
+      var contentAccessibility: Boolean
       
-      var copying: Boolean = js.native
+      var copying: Boolean
       
-      var documentAssembly: `true` = js.native
+      var documentAssembly: `true`
       
-      var fillingForms: Boolean = js.native
+      var fillingForms: Boolean
       
-      var modifying: Boolean = js.native
+      var modifying: Boolean
       
-      var ownerPassword: String = js.native
+      var ownerPassword: String
       
-      var password: String = js.native
+      var password: String
       
-      var printing: HighResolution | NotAllowed | LowResolution = js.native
+      var printing: HighResolution | NotAllowed | LowResolution
     }
     object PdfPassword {
       
@@ -170,14 +169,13 @@ object mod {
       def apply(
         contentAccessibility: Boolean,
         copying: Boolean,
-        documentAssembly: `true`,
         fillingForms: Boolean,
         modifying: Boolean,
         ownerPassword: String,
         password: String,
         printing: HighResolution | NotAllowed | LowResolution
       ): PdfPassword = {
-        val __obj = js.Dynamic.literal(contentAccessibility = contentAccessibility.asInstanceOf[js.Any], copying = copying.asInstanceOf[js.Any], documentAssembly = documentAssembly.asInstanceOf[js.Any], fillingForms = fillingForms.asInstanceOf[js.Any], modifying = modifying.asInstanceOf[js.Any], ownerPassword = ownerPassword.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], printing = printing.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(contentAccessibility = contentAccessibility.asInstanceOf[js.Any], copying = copying.asInstanceOf[js.Any], documentAssembly = true, fillingForms = fillingForms.asInstanceOf[js.Any], modifying = modifying.asInstanceOf[js.Any], ownerPassword = ownerPassword.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], printing = printing.asInstanceOf[js.Any])
         __obj.asInstanceOf[PdfPassword]
       }
       
@@ -210,12 +208,11 @@ object mod {
       }
     }
     
-    @js.native
     trait PdfSign extends StObject {
       
-      var certificateAsset: Contrent = js.native
+      var certificateAsset: Contrent
       
-      var reason: String = js.native
+      var reason: String
     }
     object PdfSign {
       
@@ -240,16 +237,15 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var pdfMeta: js.UndefOr[PdfMeta] = js.native
+      var pdfMeta: js.UndefOr[PdfMeta] = js.undefined
       
-      var pdfOperations: js.UndefOr[js.Array[PdfOperation]] = js.native
+      var pdfOperations: js.UndefOr[js.Array[PdfOperation]] = js.undefined
       
-      var pdfPassword: js.UndefOr[PdfPassword] = js.native
+      var pdfPassword: js.UndefOr[PdfPassword] = js.undefined
       
-      var pdfSign: js.UndefOr[PdfSign] = js.native
+      var pdfSign: js.UndefOr[PdfSign] = js.undefined
     }
     object Template {
       

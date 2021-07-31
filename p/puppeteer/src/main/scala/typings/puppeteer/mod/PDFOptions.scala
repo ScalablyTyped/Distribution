@@ -3,17 +3,15 @@ package typings.puppeteer.mod
 import typings.puppeteer.anon.Bottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFOptions extends StObject {
   
   /**
     * Display header and footer.
     * @default false
     */
-  var displayHeaderFooter: js.UndefOr[Boolean] = js.native
+  var displayHeaderFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * HTML template for the print footer. Should be valid HTML markup with following classes used to inject printing values into them:
@@ -23,13 +21,13 @@ trait PDFOptions extends StObject {
     * - `pageNumber` current page number
     * - `totalPages` total pages in the document
     */
-  var footerTemplate: js.UndefOr[String] = js.native
+  var footerTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Paper format. If set, takes priority over width or height options.
     * @default 'Letter'
     */
-  var format: js.UndefOr[PDFFormat] = js.native
+  var format: js.UndefOr[PDFFormat] = js.undefined
   
   /**
     * HTML template for the print header. Should be valid HTML markup with following classes used to inject printing values into them:
@@ -39,54 +37,54 @@ trait PDFOptions extends StObject {
     * - `pageNumber` current page number
     * - `totalPages` total pages in the document
     */
-  var headerTemplate: js.UndefOr[String] = js.native
+  var headerTemplate: js.UndefOr[String] = js.undefined
   
   /** Paper height. */
-  var height: js.UndefOr[LayoutDimension] = js.native
+  var height: js.UndefOr[LayoutDimension] = js.undefined
   
   /**
     * Paper orientation.
     * @default false
     */
-  var landscape: js.UndefOr[Boolean] = js.native
+  var landscape: js.UndefOr[Boolean] = js.undefined
   
   /** Paper margins, defaults to none. */
-  var margin: js.UndefOr[Bottom] = js.native
+  var margin: js.UndefOr[Bottom] = js.undefined
   
   /**
     * Paper ranges to print, e.g., '1-5, 8, 11-13'.
     * @default '' which means print all pages.
     */
-  var pageRanges: js.UndefOr[String] = js.native
+  var pageRanges: js.UndefOr[String] = js.undefined
   
   /**
     * The file path to save the PDF to.
     * If `path` is a relative path, then it is resolved relative to current working directory.
     * If no path is provided, the PDF won't be saved to the disk.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Give any CSS @page size declared in the page priority over what is declared in width and
     * height or format options.
     * @default false which will scale the content to fit the paper size.
     */
-  var preferCSSPageSize: js.UndefOr[Boolean] = js.native
+  var preferCSSPageSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Print background graphics.
     * @default false
     */
-  var printBackground: js.UndefOr[Boolean] = js.native
+  var printBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Scale of the webpage rendering.
     * @default 1
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /** Paper width. */
-  var width: js.UndefOr[LayoutDimension] = js.native
+  var width: js.UndefOr[LayoutDimension] = js.undefined
 }
 object PDFOptions {
   

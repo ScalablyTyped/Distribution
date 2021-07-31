@@ -5,34 +5,34 @@ import typings.mobx.observablemapMod.IMapDidChange
 import typings.mobx.observablemapMod.ObservableMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Name[K, V] extends IMapDidChange[K, V] {
+trait Name[K, V]
+  extends StObject
+     with IMapDidChange[K, V] {
   
-  var name: K = js.native
+  var name: K
   
-  var newValue: V = js.native
+  var newValue: V
   
-  var `object`: ObservableMap[K, V] = js.native
+  var `object`: ObservableMap[K, V]
   
-  var oldValue: V = js.native
+  var oldValue: V
   
-  var `type`: update = js.native
+  var `type`: update
 }
 object Name {
   
   @scala.inline
-  def apply[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], oldValue: V, `type`: update): Name[K, V] = {
+  def apply[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], oldValue: V): Name[K, V] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[Name[K, V]]
   }
   
   @scala.inline
-  implicit class NameMutableBuilder[Self <: Name[_, _], K, V] (val x: Self with (Name[K, V])) extends AnyVal {
+  implicit class NameMutableBuilder[Self <: Name[?, ?], K, V] (val x: Self & (Name[K, V])) extends AnyVal {
     
     @scala.inline
     def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

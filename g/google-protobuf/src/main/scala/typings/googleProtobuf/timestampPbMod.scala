@@ -10,7 +10,6 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timestampPbMod {
@@ -38,13 +37,11 @@ object timestampPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): Timestamp = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
-    @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: Timestamp, reader: BinaryReader): Timestamp = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: Timestamp, reader: BinaryReader): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
     
     @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp.extensions")
     @js.native
@@ -59,20 +56,17 @@ object timestampPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: Timestamp, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: Timestamp, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: Timestamp): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: Timestamp): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var nanos: Double = js.native
+      var nanos: Double
       
-      var seconds: Double = js.native
+      var seconds: Double
     }
     object AsObject {
       

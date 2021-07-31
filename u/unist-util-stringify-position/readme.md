@@ -11,8 +11,8 @@ unist utility to serialize a node, position, or point as a human readable locati
 | Full name          | unist-util-stringify-position |
 | Keywords           | unist, unist-util, util, utility, position, location, point, node, stringify, tostring |
 | # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 168369724 |
+| # dependents       | 18 |
+| # downloads        | 209802199 |
 | # stars            | 0 |
 
 ## Links

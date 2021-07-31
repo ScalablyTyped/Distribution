@@ -18,7 +18,6 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandpaletteMod {
@@ -183,7 +182,9 @@ object commandpaletteMod {
       */
     @JSImport("@lumino/widgets/types/commandpalette", "CommandPalette.Renderer")
     @js.native
-    class Renderer () extends IRenderer {
+    class Renderer ()
+      extends StObject
+         with IRenderer {
       
       /**
         * Create the class name for the command item icon.
@@ -258,6 +259,39 @@ object commandpaletteMod {
       def formatItemShortcut(data: IItemRenderData): Child = js.native
       
       /**
+        * Render the empty results message for a command palette.
+        *
+        * @param data - The data to use for rendering the message.
+        *
+        * @returns A virtual element representing the message.
+        */
+      /* CompleteClass */
+      override def renderEmptyMessage(data: IEmptyMessageRenderData): VirtualElement = js.native
+      
+      /**
+        * Render the virtual element for a command palette header.
+        *
+        * @param data - The data to use for rendering the header.
+        *
+        * @returns A virtual element representing the header.
+        */
+      /* CompleteClass */
+      override def renderHeader(data: IHeaderRenderData): VirtualElement = js.native
+      
+      /**
+        * Render the virtual element for a command palette item.
+        *
+        * @param data - The data to use for rendering the item.
+        *
+        * @returns A virtual element representing the item.
+        *
+        * #### Notes
+        * The command palette will not render invisible items.
+        */
+      /* CompleteClass */
+      override def renderItem(data: IItemRenderData): VirtualElement = js.native
+      
+      /**
         * Render the caption for a command palette item.
         *
         * @param data - The data to use for rendering the caption.
@@ -313,13 +347,12 @@ object commandpaletteMod {
     /**
       * The render data for a command palette empty message.
       */
-    @js.native
     trait IEmptyMessageRenderData extends StObject {
       
       /**
         * The query which failed to match any commands.
         */
-      var query: String = js.native
+      var query: String
     }
     object IEmptyMessageRenderData {
       
@@ -340,24 +373,23 @@ object commandpaletteMod {
     /**
       * The render data for a command palette header.
       */
-    @js.native
     trait IHeaderRenderData extends StObject {
       
       /**
         * The category of the header.
         */
-      val category: String = js.native
+      val category: String
       
       /**
         * The indices of the matched characters in the category.
         */
-      val indices: js.Array[Double] | Null = js.native
+      val indices: js.Array[Double] | Null
     }
     object IHeaderRenderData {
       
       @scala.inline
       def apply(category: String): IHeaderRenderData = {
-        val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], indices = null)
         __obj.asInstanceOf[IHeaderRenderData]
       }
       
@@ -384,83 +416,82 @@ object commandpaletteMod {
       * #### Notes
       * Item objects are created automatically by a command palette.
       */
-    @js.native
     trait IItem extends StObject {
       
       /**
         * The arguments for the command.
         */
-      val args: ReadonlyJSONObject = js.native
+      val args: ReadonlyJSONObject
       
       /**
         * The display caption for the command item.
         */
-      val caption: String = js.native
+      val caption: String
       
       /**
         * The category for the command item.
         */
-      val category: String = js.native
+      val category: String
       
       /**
         * The extra class name for the command item.
         */
-      val className: String = js.native
+      val className: String
       
       /**
         * The command to execute when the item is triggered.
         */
-      val command: String = js.native
+      val command: String
       
       /**
         * The dataset for the command item.
         */
-      val dataset: Dataset = js.native
+      val dataset: Dataset
       
       /**
         * The icon renderer for the command item.
         */
-      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String] = js.native
+      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String] = js.undefined
       
       /**
         * The icon class for the command item.
         */
-      val iconClass: String = js.native
+      val iconClass: String
       
       /**
         * The icon label for the command item.
         */
-      val iconLabel: String = js.native
+      val iconLabel: String
       
       /**
         * Whether the command item is enabled.
         */
-      val isEnabled: Boolean = js.native
+      val isEnabled: Boolean
       
       /**
         * Whether the command item is toggled.
         */
-      val isToggled: Boolean = js.native
+      val isToggled: Boolean
       
       /**
         * Whether the command item is visible.
         */
-      val isVisible: Boolean = js.native
+      val isVisible: Boolean
       
       /**
         * The key binding for the command item.
         */
-      val keyBinding: IKeyBinding | Null = js.native
+      val keyBinding: IKeyBinding | Null
       
       /**
         * The display label for the command item.
         */
-      val label: String = js.native
+      val label: String
       
       /**
         * The rank for the command item.
         */
-      val rank: Double = js.native
+      val rank: Double
     }
     object IItem {
       
@@ -480,7 +511,7 @@ object commandpaletteMod {
         label: String,
         rank: Double
       ): IItem = {
-        val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isToggled = isToggled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isToggled = isToggled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], keyBinding = null)
         __obj.asInstanceOf[IItem]
       }
       
@@ -543,7 +574,6 @@ object commandpaletteMod {
     /**
       * An options object for creating a command item.
       */
-    @js.native
     trait IItemOptions extends StObject {
       
       /**
@@ -551,17 +581,17 @@ object commandpaletteMod {
         *
         * The default value is an empty object.
         */
-      var args: js.UndefOr[ReadonlyJSONObject] = js.native
+      var args: js.UndefOr[ReadonlyJSONObject] = js.undefined
       
       /**
         * The category for the item.
         */
-      var category: String = js.native
+      var category: String
       
       /**
         * The command to execute when the item is triggered.
         */
-      var command: String = js.native
+      var command: String
       
       /**
         * The rank for the command item.
@@ -575,7 +605,7 @@ object commandpaletteMod {
         *
         * The default rank is `Infinity`.
         */
-      var rank: js.UndefOr[Double] = js.native
+      var rank: js.UndefOr[Double] = js.undefined
     }
     object IItemOptions {
       
@@ -611,29 +641,28 @@ object commandpaletteMod {
     /**
       * The render data for a command palette item.
       */
-    @js.native
     trait IItemRenderData extends StObject {
       
       /**
         * Whether the item is the active item.
         */
-      val active: Boolean = js.native
+      val active: Boolean
       
       /**
         * The indices of the matched characters in the label.
         */
-      val indices: js.Array[Double] | Null = js.native
+      val indices: js.Array[Double] | Null
       
       /**
         * The command palette item to render.
         */
-      val item: IItem = js.native
+      val item: IItem
     }
     object IItemRenderData {
       
       @scala.inline
       def apply(active: Boolean, item: IItem): IItemRenderData = {
-        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], indices = null)
         __obj.asInstanceOf[IItemRenderData]
       }
       
@@ -660,20 +689,19 @@ object commandpaletteMod {
     /**
       * An options object for creating a command palette.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The command registry for use with the command palette.
         */
-      var commands: CommandRegistry = js.native
+      var commands: CommandRegistry
       
       /**
         * A custom renderer for use with the command palette.
         *
         * The default is a shared renderer instance.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
     }
     object IOptions {
       
@@ -700,7 +728,6 @@ object commandpaletteMod {
     /**
       * A renderer for use with a command palette.
       */
-    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -710,7 +737,7 @@ object commandpaletteMod {
         *
         * @returns A virtual element representing the message.
         */
-      def renderEmptyMessage(data: IEmptyMessageRenderData): VirtualElement = js.native
+      def renderEmptyMessage(data: IEmptyMessageRenderData): VirtualElement
       
       /**
         * Render the virtual element for a command palette header.
@@ -719,7 +746,7 @@ object commandpaletteMod {
         *
         * @returns A virtual element representing the header.
         */
-      def renderHeader(data: IHeaderRenderData): VirtualElement = js.native
+      def renderHeader(data: IHeaderRenderData): VirtualElement
       
       /**
         * Render the virtual element for a command palette item.
@@ -731,7 +758,7 @@ object commandpaletteMod {
         * #### Notes
         * The command palette will not render invisible items.
         */
-      def renderItem(data: IItemRenderData): VirtualElement = js.native
+      def renderItem(data: IItemRenderData): VirtualElement
     }
     object IRenderer {
       

@@ -11,8 +11,8 @@ Create a debounced version of a promise returning function
 | Full name          | debounce-promise |
 | Keywords           | promise, batch, accumulate, debounce, throttle, ratelimit |
 | # releases         | 3 |
-| # dependents       | 68 |
-| # downloads        | 4871705 |
+| # dependents       | 74 |
+| # downloads        | 5865215 |
 | # stars            | 0 |
 
 ## Links

@@ -2,23 +2,23 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlTimeSpan extends KmlObject {
+trait KmlTimeSpan
+  extends StObject
+     with KmlObject {
   
   /**
     * Describes the beginning instant of a time period.
     * If absent, the beginning of the period is unbounded.
     */
-  def getBegin(): KmlDateTime = js.native
+  def getBegin(): KmlDateTime
   
   /**
     * Describes the ending instant of a time period.
     * If absent, the end of the period is unbounded.
     */
-  def getEnd(): KmlDateTime = js.native
+  def getEnd(): KmlDateTime
 }
 object KmlTimeSpan {
   

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestartFrameRequest extends StObject {
   
   /**
     * Call frame identifier to evaluate on.
     */
-  var callFrameId: CallFrameId = js.native
+  var callFrameId: CallFrameId
 }
 object RestartFrameRequest {
   

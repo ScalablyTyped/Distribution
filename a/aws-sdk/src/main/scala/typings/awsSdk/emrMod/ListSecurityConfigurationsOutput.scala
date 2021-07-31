@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecurityConfigurationsOutput extends StObject {
   
   /**
     * A pagination token that indicates the next set of results to retrieve. Include the marker in the next ListSecurityConfiguration call to retrieve the next page of results, if required.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
   
   /**
     * The creation date and time, and name, of each security configuration.
     */
-  var SecurityConfigurations: js.UndefOr[SecurityConfigurationList] = js.native
+  var SecurityConfigurations: js.UndefOr[SecurityConfigurationList] = js.undefined
 }
 object ListSecurityConfigurationsOutput {
   

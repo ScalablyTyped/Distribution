@@ -2,21 +2,19 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
   /**
     *  The file name for the artifact. 
     */
-  var artifactFileName: ArtifactFileName = js.native
+  var artifactFileName: ArtifactFileName
   
   /**
     *  The unique ID for the artifact. 
     */
-  var artifactId: ArtifactId = js.native
+  var artifactId: ArtifactId
 }
 object Artifact {
   

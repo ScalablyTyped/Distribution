@@ -6,31 +6,29 @@ import typings.sentryTypes.sessionMod.SessionStatus
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attrs extends StObject {
     
-    var attrs: js.UndefOr[Environment] = js.native
+    var attrs: js.UndefOr[Environment] = js.undefined
     
-    var did: js.UndefOr[String] = js.native
+    var did: js.UndefOr[String] = js.undefined
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var errors: Double = js.native
+    var errors: Double
     
-    var init: Boolean = js.native
+    var init: Boolean
     
-    var sid: String = js.native
+    var sid: String
     
-    var started: String = js.native
+    var started: String
     
-    var status: SessionStatus = js.native
+    var status: SessionStatus
     
-    var timestamp: String = js.native
+    var timestamp: String
   }
   object Attrs {
     
@@ -86,13 +84,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /** Extension methods for the hub, which are bound to the current Hub instance */
+    extends StObject
+       with /** Extension methods for the hub, which are bound to the current Hub instance */
   /* key */ StringDictionary[js.Function] {
     
     /** Hack to prevent bundlers from breaking our usage of the domain package in the cross-platform Hub package */
-    var domain: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var domain: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object Dictkey {
     
@@ -113,16 +111,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Environment extends StObject {
     
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var ip_address: js.UndefOr[String] = js.native
+    var ip_address: js.UndefOr[String] = js.undefined
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var user_agent: js.UndefOr[String] = js.native
+    var user_agent: js.UndefOr[String] = js.undefined
   }
   object Environment {
     
@@ -161,15 +158,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Extensions extends StObject {
     
     /**
       * Extra Hub properties injected by various SDKs
       */
-    var extensions: js.UndefOr[Dictkey] = js.native
+    var extensions: js.UndefOr[Dictkey] = js.undefined
     
-    var hub: js.UndefOr[Hub] = js.native
+    var hub: js.UndefOr[Hub] = js.undefined
   }
   object Extensions {
     
@@ -197,28 +193,27 @@ object anon {
   }
   
   /* Inlined std.Omit<@sentry/types.@sentry/types.SessionContext, 'started' | 'status'> */
-  @js.native
   trait OmitSessionContextstarted extends StObject {
     
-    var did: js.UndefOr[String] = js.native
+    var did: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var errors: js.UndefOr[Double] = js.native
+    var errors: js.UndefOr[Double] = js.undefined
     
-    var ipAddress: js.UndefOr[String] = js.native
+    var ipAddress: js.UndefOr[String] = js.undefined
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var sid: js.UndefOr[String] = js.native
+    var sid: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var user: js.UndefOr[User | Null] = js.native
+    var user: js.UndefOr[User | Null] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object OmitSessionContextstarted {
     

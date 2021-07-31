@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClustersResponse extends StObject {
   
   /** A list of clusters in the project in the specified zone, or across all ones. */
-  var clusters: js.UndefOr[js.Array[Cluster]] = js.native
+  var clusters: js.UndefOr[js.Array[Cluster]] = js.undefined
   
   /** If any zones are listed here, the list of clusters returned may be missing those zones. */
-  var missingZones: js.UndefOr[js.Array[String]] = js.native
+  var missingZones: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListClustersResponse {
   

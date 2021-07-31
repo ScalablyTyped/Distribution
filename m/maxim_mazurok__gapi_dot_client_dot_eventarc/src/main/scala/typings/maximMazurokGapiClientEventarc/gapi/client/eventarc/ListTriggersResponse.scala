@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTriggersResponse extends StObject {
   
   /** A page token that can be sent to ListTriggers to request the next page. If this is empty, then there are no more pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The requested triggers, up to the number specified in `page_size`. */
-  var triggers: js.UndefOr[js.Array[Trigger]] = js.native
+  var triggers: js.UndefOr[js.Array[Trigger]] = js.undefined
   
   /** Unreachable resources, if any. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListTriggersResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.stsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentials extends StObject {
   
   /**
     * The access key ID that identifies the temporary security credentials.
     */
-  var AccessKeyId: accessKeyIdType = js.native
+  var AccessKeyId: accessKeyIdType
   
   /**
     * The date on which the current credentials expire.
     */
-  var Expiration: dateType = js.native
+  var Expiration: dateType
   
   /**
     * The secret access key that can be used to sign requests.
     */
-  var SecretAccessKey: accessKeySecretType = js.native
+  var SecretAccessKey: accessKeySecretType
   
   /**
     * The token that users must pass to the service API to use the temporary credentials.
     */
-  var SessionToken: tokenType = js.native
+  var SessionToken: tokenType
 }
 object Credentials {
   

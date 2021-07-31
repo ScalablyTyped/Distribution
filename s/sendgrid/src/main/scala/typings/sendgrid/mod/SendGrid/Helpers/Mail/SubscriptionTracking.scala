@@ -3,29 +3,27 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.Html
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionTracking extends StObject {
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def getHtml(): String = js.native
+  def getHtml(): String
   
-  def getSubstitutionTag(): String = js.native
+  def getSubstitutionTag(): String
   
-  def getText(): String = js.native
+  def getText(): String
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def setHtml(html: String): Unit = js.native
+  def setHtml(html: String): Unit
   
-  def setSubstitutionTag(substitutionTag: String): Unit = js.native
+  def setSubstitutionTag(substitutionTag: String): Unit
   
-  def setText(text: String): Unit = js.native
+  def setText(text: String): Unit
   
-  def toJSON(): Html = js.native
+  def toJSON(): Html
 }
 object SubscriptionTracking {
   

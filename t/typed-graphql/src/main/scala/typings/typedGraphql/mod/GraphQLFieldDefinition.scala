@@ -3,23 +3,21 @@ package typings.typedGraphql.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphQLFieldDefinition extends StObject {
   
-  var args: js.Array[GraphQLArgument] = js.native
+  var args: js.Array[GraphQLArgument]
   
-  var deprecationReason: js.UndefOr[String] = js.native
+  var deprecationReason: js.UndefOr[String] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
   
-  var resolve: js.UndefOr[GraphQLFieldResolveFn] = js.native
+  var resolve: js.UndefOr[GraphQLFieldResolveFn] = js.undefined
   
-  var `type`: GraphQLOutputType = js.native
+  var `type`: GraphQLOutputType
 }
 object GraphQLFieldDefinition {
   

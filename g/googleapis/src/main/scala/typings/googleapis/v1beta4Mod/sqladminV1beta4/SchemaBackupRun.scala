@@ -2,81 +2,79 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A BackupRun resource.
   */
-@js.native
 trait SchemaBackupRun extends StObject {
   
   /**
     * The description of this run, only applicable to on-demand backups.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The time the backup operation completed in UTC timezone in RFC 3339
     * format, for example 2012-11-15T16:19:00.094Z.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time the run was enqueued in UTC timezone in RFC 3339 format, for
     * example 2012-11-15T16:19:00.094Z.
     */
-  var enqueuedTime: js.UndefOr[String] = js.native
+  var enqueuedTime: js.UndefOr[String] = js.undefined
   
   /**
     * Information about why the backup operation failed. This is only present
     * if the run has the FAILED status.
     */
-  var error: js.UndefOr[SchemaOperationError] = js.native
+  var error: js.UndefOr[SchemaOperationError] = js.undefined
   
   /**
     * The identifier for this backup run. Unique only for a specific Cloud SQL
     * instance.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the database instance.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#backupRun.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The time the backup operation actually started in UTC timezone in RFC
     * 3339 format, for example 2012-11-15T16:19:00.094Z.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The status of this run.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this run; can be either &quot;AUTOMATED&quot; or
     * &quot;ON_DEMAND&quot;.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The start time of the backup window during which this the backup was
     * attempted in RFC 3339 format, for example 2012-11-15T16:19:00.094Z.
     */
-  var windowStartTime: js.UndefOr[String] = js.native
+  var windowStartTime: js.UndefOr[String] = js.undefined
 }
 object SchemaBackupRun {
   

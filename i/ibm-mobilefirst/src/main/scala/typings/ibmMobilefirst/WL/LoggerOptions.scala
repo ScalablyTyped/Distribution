@@ -2,43 +2,41 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggerOptions extends StObject {
   
-  var autoSendLogs: js.UndefOr[Boolean] = js.native
+  var autoSendLogs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @deprecated since version 6.2. use filters instead.
     */
-  var blacklist: js.UndefOr[js.Array[String]] = js.native
+  var blacklist: js.UndefOr[js.Array[String]] = js.undefined
   
-  var callback: js.UndefOr[LoggerCallback] = js.native
+  var callback: js.UndefOr[LoggerCallback] = js.undefined
   
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
-  var filters: js.UndefOr[Filter] = js.native
+  var filters: js.UndefOr[Filter] = js.undefined
   
-  var level: js.UndefOr[js.Array[String] | String | Double] = js.native
+  var level: js.UndefOr[js.Array[String] | String | Double] = js.undefined
   
-  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.undefined
   
-  var pkg: js.UndefOr[String] = js.native
+  var pkg: js.UndefOr[String] = js.undefined
   
-  var pretty: js.UndefOr[Boolean] = js.native
+  var pretty: js.UndefOr[Boolean] = js.undefined
   
-  var stacktrace: js.UndefOr[Boolean] = js.native
+  var stacktrace: js.UndefOr[Boolean] = js.undefined
   
-  var stringify: js.UndefOr[Boolean] = js.native
+  var stringify: js.UndefOr[Boolean] = js.undefined
   
-  var tag: js.UndefOr[Tag] = js.native
+  var tag: js.UndefOr[Tag] = js.undefined
   
   /**
     * @deprecated since version 6.2. use filters instead.
     */
-  var whitelist: js.UndefOr[js.Array[String]] = js.native
+  var whitelist: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LoggerOptions {
   

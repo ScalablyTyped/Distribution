@@ -16,7 +16,6 @@ import typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -47,9 +46,8 @@ object DirectEntityRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -60,9 +58,8 @@ object DirectEntityRef {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.createInCreateObjectClientActionUnderEntityRef")
-  @js.native
-  def createInCreateObjectClientActionUnderEntityRef(container: CreateObjectClientAction): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def createInCreateObjectClientActionUnderEntityRef(container: CreateObjectClientAction): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateObjectClientActionUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -73,9 +70,8 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.createInEntityPathSourceUnderEntityRef")
-  @js.native
-  def createInEntityPathSourceUnderEntityRef(container: EntityPathSource): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def createInEntityPathSourceUnderEntityRef(container: EntityPathSource): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityPathSourceUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -86,9 +82,8 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.createInEntityWidgetUnderEntityRef")
-  @js.native
-  def createInEntityWidgetUnderEntityRef(container: EntityWidget): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def createInEntityWidgetUnderEntityRef(container: EntityWidget): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -99,9 +94,8 @@ object DirectEntityRef {
     *  7.11.0 to 7.16.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.createInNewButtonUnderEntityRef")
-  @js.native
-  def createInNewButtonUnderEntityRef(container: NewButton): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def createInNewButtonUnderEntityRef(container: NewButton): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNewButtonUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -112,9 +106,8 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.createInReferenceSetSelectorUnderConstrainedByRefs")
-  @js.native
-  def createInReferenceSetSelectorUnderConstrainedByRefs(container: ReferenceSetSelector): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderConstrainedByRefs(container: ReferenceSetSelector): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderConstrainedByRefs")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -125,9 +118,8 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.createInSelectorXPathSourceUnderConstrainedByRefs")
-  @js.native
-  def createInSelectorXPathSourceUnderConstrainedByRefs(container: SelectorXPathSource): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def createInSelectorXPathSourceUnderConstrainedByRefs(container: SelectorXPathSource): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorXPathSourceUnderConstrainedByRefs")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -138,9 +130,8 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.createInWidgetValueUnderEntityRef")
-  @js.native
-  def createInWidgetValueUnderEntityRef(container: WidgetValue): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = js.native
+  @scala.inline
+  def createInWidgetValueUnderEntityRef(container: WidgetValue): typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.DirectEntityRef]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.DirectEntityRef.structureTypeName")

@@ -2,36 +2,34 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleImportDetails extends StObject {
   
   /**
     * Absolute address, if available.
     */
-  var address: js.UndefOr[NativePointer] = js.native
+  var address: js.UndefOr[NativePointer] = js.undefined
   
   /**
     * Module name, if available.
     */
-  var module: js.UndefOr[String] = js.native
+  var module: js.UndefOr[String] = js.undefined
   
   /**
     * Imported symbol name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Memory location where the import is stored, if available.
     */
-  var slot: js.UndefOr[NativePointer] = js.native
+  var slot: js.UndefOr[NativePointer] = js.undefined
   
   /**
     * The kind of import, if available.
     */
-  var `type`: js.UndefOr[ModuleImportType] = js.native
+  var `type`: js.UndefOr[ModuleImportType] = js.undefined
 }
 object ModuleImportDetails {
   

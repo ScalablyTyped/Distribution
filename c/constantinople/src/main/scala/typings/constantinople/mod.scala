@@ -6,61 +6,49 @@ import typings.constantinople.anon.Constant
 import typings.constantinople.anon.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("constantinople", JSImport.Default)
+  @JSImport("constantinople", JSImport.Namespace)
   @js.native
-  def default(src: String): Boolean = js.native
-  @JSImport("constantinople", JSImport.Default)
-  @js.native
-  def default(src: String, constants: js.UndefOr[scala.Nothing], options: ParserOptions): Boolean = js.native
-  @JSImport("constantinople", JSImport.Default)
-  @js.native
-  def default(src: String, constants: js.Any): Boolean = js.native
-  @JSImport("constantinople", JSImport.Default)
-  @js.native
-  def default(src: String, constants: js.Any, options: ParserOptions): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("constantinople", "expressionToConstant")
-  @js.native
-  def expressionToConstant(expression: Expression): Constant | Result = js.native
-  @JSImport("constantinople", "expressionToConstant")
-  @js.native
-  def expressionToConstant(expression: Expression, options: ExpressionToConstantOptions): Constant | Result = js.native
+  @scala.inline
+  def default(src: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def default(src: String, constants: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(src: String, constants: js.Any, options: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(src: String, constants: Unit, options: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("constantinople", "isConstant")
-  @js.native
-  def isConstant(src: String): Boolean = js.native
-  @JSImport("constantinople", "isConstant")
-  @js.native
-  def isConstant(src: String, constants: js.UndefOr[scala.Nothing], options: ParserOptions): Boolean = js.native
-  @JSImport("constantinople", "isConstant")
-  @js.native
-  def isConstant(src: String, constants: js.Any): Boolean = js.native
-  @JSImport("constantinople", "isConstant")
-  @js.native
-  def isConstant(src: String, constants: js.Any, options: ParserOptions): Boolean = js.native
+  @scala.inline
+  def expressionToConstant(expression: Expression): Constant | Result = ^.asInstanceOf[js.Dynamic].applyDynamic("expressionToConstant")(expression.asInstanceOf[js.Any]).asInstanceOf[Constant | Result]
+  @scala.inline
+  def expressionToConstant(expression: Expression, options: ExpressionToConstantOptions): Constant | Result = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToConstant")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Constant | Result]
   
-  @JSImport("constantinople", "toConstant")
-  @js.native
-  def toConstant(src: String): js.Any = js.native
-  @JSImport("constantinople", "toConstant")
-  @js.native
-  def toConstant(src: String, constants: js.UndefOr[scala.Nothing], options: ParserOptions): js.Any = js.native
-  @JSImport("constantinople", "toConstant")
-  @js.native
-  def toConstant(src: String, constants: js.Any): js.Any = js.native
-  @JSImport("constantinople", "toConstant")
-  @js.native
-  def toConstant(src: String, constants: js.Any, options: ParserOptions): js.Any = js.native
+  @scala.inline
+  def isConstant(src: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstant")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isConstant(src: String, constants: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConstant")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isConstant(src: String, constants: js.Any, options: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConstant")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isConstant(src: String, constants: Unit, options: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConstant")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def toConstant(src: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toConstant")(src.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def toConstant(src: String, constants: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toConstant")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toConstant(src: String, constants: js.Any, options: ParserOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toConstant")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def toConstant(src: String, constants: Unit, options: ParserOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toConstant")(src.asInstanceOf[js.Any], constants.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait ExpressionToConstantOptions extends StObject {
     
-    var constants: js.UndefOr[js.Any] = js.native
+    var constants: js.UndefOr[js.Any] = js.undefined
   }
   object ExpressionToConstantOptions {
     
@@ -81,10 +69,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends ExpressionToConstantOptions {
+  trait Options
+    extends StObject
+       with ExpressionToConstantOptions {
     
-    var babylon: js.UndefOr[ParserOptions] = js.native
+    var babylon: js.UndefOr[ParserOptions] = js.undefined
   }
   object Options {
     

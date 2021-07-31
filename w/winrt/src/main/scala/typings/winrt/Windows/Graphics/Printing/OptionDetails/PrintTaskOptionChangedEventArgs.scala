@@ -2,11 +2,11 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintTaskOptionChangedEventArgs extends IPrintTaskOptionChangedEventArgs
+trait PrintTaskOptionChangedEventArgs
+  extends StObject
+     with IPrintTaskOptionChangedEventArgs
 object PrintTaskOptionChangedEventArgs {
   
   @scala.inline

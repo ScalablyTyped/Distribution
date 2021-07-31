@@ -2,21 +2,19 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Opacity extends StObject {
   
   /** Class to apply to the region. */
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /** Points should be added in counter-clockwise direction  to close the polygon. */
-  var points: js.Array[X] = js.native
+  var points: js.Array[X]
   
-  var text: js.UndefOr[js.Function2[/* value */ Double, /* percentage */ Double, String]] = js.native
+  var text: js.UndefOr[js.Function2[/* value */ Double, /* percentage */ Double, String]] = js.undefined
 }
 object Opacity {
   

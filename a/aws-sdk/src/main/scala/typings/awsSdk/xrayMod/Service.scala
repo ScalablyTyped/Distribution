@@ -2,76 +2,74 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Service extends StObject {
   
   /**
     * Identifier of the AWS account in which the service runs.
     */
-  var AccountId: js.UndefOr[String] = js.native
+  var AccountId: js.UndefOr[String] = js.undefined
   
   /**
     * A histogram that maps the spread of service durations.
     */
-  var DurationHistogram: js.UndefOr[Histogram] = js.native
+  var DurationHistogram: js.UndefOr[Histogram] = js.undefined
   
   /**
     * Connections to downstream services.
     */
-  var Edges: js.UndefOr[EdgeList] = js.native
+  var Edges: js.UndefOr[EdgeList] = js.undefined
   
   /**
     * The end time of the last segment that the service generated.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The canonical name of the service.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of names for the service, including the canonical name.
     */
-  var Names: js.UndefOr[ServiceNames] = js.native
+  var Names: js.UndefOr[ServiceNames] = js.undefined
   
   /**
     * Identifier for the service. Unique within the service map.
     */
-  var ReferenceId: js.UndefOr[NullableInteger] = js.native
+  var ReferenceId: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * A histogram that maps the spread of service response times.
     */
-  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.native
+  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.undefined
   
   /**
     * Indicates that the service was the first service to process a request.
     */
-  var Root: js.UndefOr[NullableBoolean] = js.native
+  var Root: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The start time of the first segment that the service generated.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The service's state.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * Aggregated statistics for the service.
     */
-  var SummaryStatistics: js.UndefOr[ServiceStatistics] = js.native
+  var SummaryStatistics: js.UndefOr[ServiceStatistics] = js.undefined
   
   /**
     * The type of service.   AWS Resource - The type of an AWS resource. For example, AWS::EC2::Instance for an application running on Amazon EC2 or AWS::DynamoDB::Table for an Amazon DynamoDB table that the application used.   AWS Service - The type of an AWS service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    client - Represents the clients that sent requests to a root service.    remote - A downstream service of indeterminate type.  
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object Service {
   

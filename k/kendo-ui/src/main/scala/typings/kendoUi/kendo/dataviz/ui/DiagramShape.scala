@@ -2,49 +2,47 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramShape extends StObject {
   
-  var connectorDefaults: js.UndefOr[DiagramShapeConnectorDefaults] = js.native
+  var connectorDefaults: js.UndefOr[DiagramShapeConnectorDefaults] = js.undefined
   
-  var connectors: js.UndefOr[js.Array[DiagramShapeConnector]] = js.native
+  var connectors: js.UndefOr[js.Array[DiagramShapeConnector]] = js.undefined
   
-  var content: js.UndefOr[DiagramShapeContent] = js.native
+  var content: js.UndefOr[DiagramShapeContent] = js.undefined
   
-  var editable: js.UndefOr[Boolean | DiagramShapeEditable] = js.native
+  var editable: js.UndefOr[Boolean | DiagramShapeEditable] = js.undefined
   
-  var fill: js.UndefOr[String | DiagramShapeFill] = js.native
+  var fill: js.UndefOr[String | DiagramShapeFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[DiagramShapeHover] = js.native
+  var hover: js.UndefOr[DiagramShapeHover] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var rotation: js.UndefOr[DiagramShapeRotation] = js.native
+  var rotation: js.UndefOr[DiagramShapeRotation] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[DiagramShapeStroke] = js.native
+  var stroke: js.UndefOr[DiagramShapeStroke] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object DiagramShape {
   

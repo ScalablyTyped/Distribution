@@ -2,17 +2,15 @@ package typings.securePassword
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Memlimit extends StObject {
     
-    var memlimit: js.UndefOr[Double] = js.native
+    var memlimit: js.UndefOr[Double] = js.undefined
     
-    var opslimit: js.UndefOr[Double] = js.native
+    var opslimit: js.UndefOr[Double] = js.undefined
   }
   object Memlimit {
     

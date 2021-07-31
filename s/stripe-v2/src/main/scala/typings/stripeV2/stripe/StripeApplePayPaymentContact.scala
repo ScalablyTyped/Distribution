@@ -2,29 +2,27 @@ package typings.stripeV2.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeApplePayPaymentContact extends StObject {
   
-  var addressLines: js.Array[String] = js.native
+  var addressLines: js.Array[String]
   
-  var administrativeArea: String = js.native
+  var administrativeArea: String
   
-  var countryCode: String = js.native
+  var countryCode: String
   
-  var emailAddress: String = js.native
+  var emailAddress: String
   
-  var familyName: String = js.native
+  var familyName: String
   
-  var givenName: String = js.native
+  var givenName: String
   
-  var locality: String = js.native
+  var locality: String
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
-  var postalCode: String = js.native
+  var postalCode: String
 }
 object StripeApplePayPaymentContact {
   

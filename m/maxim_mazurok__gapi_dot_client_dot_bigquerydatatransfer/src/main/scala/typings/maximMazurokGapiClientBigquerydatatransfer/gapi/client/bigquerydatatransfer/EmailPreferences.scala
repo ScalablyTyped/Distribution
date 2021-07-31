@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailPreferences extends StObject {
   
   /** If true, email notifications will be sent on transfer run failures. */
-  var enableFailureEmail: js.UndefOr[Boolean] = js.native
+  var enableFailureEmail: js.UndefOr[Boolean] = js.undefined
 }
 object EmailPreferences {
   

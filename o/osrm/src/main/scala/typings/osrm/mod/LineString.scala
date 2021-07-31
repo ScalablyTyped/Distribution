@@ -2,22 +2,20 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineString extends StObject {
   
-  var coordinates: js.Array[Coordinate] = js.native
+  var coordinates: js.Array[Coordinate]
   
-  var `type`: typings.osrm.osrmStrings.LineString = js.native
+  var `type`: typings.osrm.osrmStrings.LineString
 }
 object LineString {
   
   @scala.inline
-  def apply(coordinates: js.Array[Coordinate], `type`: typings.osrm.osrmStrings.LineString): LineString = {
+  def apply(coordinates: js.Array[Coordinate]): LineString = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LineString")
     __obj.asInstanceOf[LineString]
   }
   

@@ -9,7 +9,6 @@ import typings.std.EventTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,7 +21,8 @@ object mod {
       @JSGlobal("CalHeatMap")
       @js.native
       class ^ ()
-        extends typings.calHeatmap.mod.global.CalHeatMap.CalHeatMap
+        extends StObject
+           with typings.calHeatmap.mod.global.CalHeatMap.CalHeatMap
       
       @JSGlobal("CalHeatMap")
       @js.native
@@ -119,11 +119,11 @@ object mod {
           * @param {} legendColor Same as legendColors : an object with the heatmap's colors, or an array of 2 colors
           */
         def setLegend(): Unit = js.native
-        def setLegend(legend: js.UndefOr[scala.Nothing], legendColors: js.Array[String]): Unit = js.native
-        def setLegend(legend: js.UndefOr[scala.Nothing], legendColors: LegendColor): Unit = js.native
         def setLegend(legend: js.Array[Double]): Unit = js.native
         def setLegend(legend: js.Array[Double], legendColors: js.Array[String]): Unit = js.native
         def setLegend(legend: js.Array[Double], legendColors: LegendColor): Unit = js.native
+        def setLegend(legend: Unit, legendColors: js.Array[String]): Unit = js.native
+        def setLegend(legend: Unit, legendColors: LegendColor): Unit = js.native
         
         /** Display the legend, if not already shown. */
         def showLegend(): Unit = js.native
@@ -145,65 +145,65 @@ object mod {
           *                                                   populating the calendar in realtime!
           */
         def update(data: String): Unit = js.native
-        def update(data: String, afterLoad: js.UndefOr[scala.Nothing], updateMode: Double): Unit = js.native
         def update(data: String, afterLoad: js.Function): Unit = js.native
         def update(data: String, afterLoad: js.Function, updateMode: Double): Unit = js.native
         def update(data: String, afterLoad: Boolean): Unit = js.native
         def update(data: String, afterLoad: Boolean, updateMode: Double): Unit = js.native
+        def update(data: String, afterLoad: Unit, updateMode: Double): Unit = js.native
         def update(data: js.Object): Unit = js.native
-        def update(data: js.Object, afterLoad: js.UndefOr[scala.Nothing], updateMode: Double): Unit = js.native
         def update(data: js.Object, afterLoad: js.Function): Unit = js.native
         def update(data: js.Object, afterLoad: js.Function, updateMode: Double): Unit = js.native
         def update(data: js.Object, afterLoad: Boolean): Unit = js.native
         def update(data: js.Object, afterLoad: Boolean, updateMode: Double): Unit = js.native
+        def update(data: js.Object, afterLoad: Unit, updateMode: Double): Unit = js.native
       }
       
       @js.native
       trait CalHeatMapStatic
-        extends Instantiable0[typings.calHeatmap.mod.global.CalHeatMap.CalHeatMap]
+        extends StObject
+           with Instantiable0[typings.calHeatmap.mod.global.CalHeatMap.CalHeatMap]
       
       type DataFormat = /** timestamp are in seconds, value can be any number (integer or float) */
       StringDictionary[Double]
       
-      @js.native
       trait InitOptions extends StObject {
         
         /** Called after drawing the empty calendar, and before filling it with data. */
-        var afterLoad: js.UndefOr[js.Function0[Unit]] = js.native
+        var afterLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
         
         /**
           * Called after getting the data from source, but before filling the calendar.
           * This callback must return a json object formatted in the expected data format.
           * afterLoadData() is used to do some works on the data, especially when the data source is not returning data in the expected format.
           */
-        var afterLoadData: js.UndefOr[js.Function1[/* data */ js.Any, DataFormat]] = js.native
+        var afterLoadData: js.UndefOr[js.Function1[/* data */ js.Any, DataFormat]] = js.undefined
         
         /**
           * Called after shifting the calendar one domain forward.
           * The date argument is the start date of the domain that was added.
           */
-        var afterLoadNextDomain: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+        var afterLoadNextDomain: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
         
         /**
           * Called after shifting the calendar one domain back.
           * The date argument is the start date of the domain that was added.
           */
-        var afterLoadPreviousDomain: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+        var afterLoadPreviousDomain: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
         
         // ================================================
         // Other
         // ================================================
         /** Animation duration, in milliseconds. Default value: 500 */
-        var animationDuration: js.UndefOr[Double] = js.native
+        var animationDuration: js.UndefOr[Double] = js.undefined
         
         /** Space between each subDomain cell, in pixel. Default: 2 */
-        var cellPadding: js.UndefOr[Double] = js.native
+        var cellPadding: js.UndefOr[Double] = js.undefined
         
         /** subDomain cell's border radius, for rounder corner, in pixel. Default: 0 */
-        var cellRadius: js.UndefOr[Double] = js.native
+        var cellRadius: js.UndefOr[Double] = js.undefined
         
         /** Size of each subDomain cell, in pixels. Default: 10 */
-        var cellSize: js.UndefOr[Double] = js.native
+        var cellSize: js.UndefOr[Double] = js.undefined
         
         /**
           * Control the number of columns to split the domain dates into. Default: null
@@ -213,7 +213,7 @@ object mod {
           * That setting limit the maximum number of columns, and doesn't necessary means that each rows will
           * contains that number of columns.
           */
-        var colLimit: js.UndefOr[Double] = js.native
+        var colLimit: js.UndefOr[Double] = js.undefined
         
         /**
           * Whether to consider missing date:value couple in the data source as equal to 0.  Default: false
@@ -221,13 +221,13 @@ object mod {
           * You should ask yourself, if the API is not returning result for a date, is it because there is really no value
           * associated to this date, or because it's supposed to be equal to 0, and it's skipped in order to save bandwidth ?
           */
-        var considerMissingDataAsZero: js.UndefOr[Boolean] = js.native
+        var considerMissingDataAsZero: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Data used to fill the calendar. Default: ""
           * String is interpreted as a URL to an API, which should be returning the data used to fill the calendar.
           */
-        var data: js.UndefOr[String | js.Object] = js.native
+        var data: js.UndefOr[String | js.Object] = js.undefined
         
         /**
           * Engine used to parse the data. Default: json
@@ -237,16 +237,16 @@ object mod {
           *  "tsv"  - Interpret the data exactly like csv, but are delimited with a tab character, instead of comma.
           *  "txt"  - Just return the data as a string.
           */
-        var dataType: js.UndefOr[String] = js.native
+        var dataType: js.UndefOr[String] = js.undefined
         
         /** Whether to display the legend. Default: true */
-        var displayLegend: js.UndefOr[Boolean] = js.native
+        var displayLegend: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Type of domain. Default: "hour"
           * Valid domains: {"hour", "day", "week", "month", "year"}
           */
-        var domain: js.UndefOr[String] = js.native
+        var domain: js.UndefOr[String] = js.undefined
         
         /**
           * Whether to enable domain dynamic width and height. Default: true
@@ -255,29 +255,29 @@ object mod {
           * With dynamic dimension enabled, the domain width and height will be adjusted to fit the
           * domain content, whereas when it's disabled, all domains will have the same dimension : the biggest.
           */
-        var domainDynamicDimension: js.UndefOr[Boolean] = js.native
+        var domainDynamicDimension: js.UndefOr[Boolean] = js.undefined
         
         /** Space between each domain, in pixel. Default: 2 */
-        var domainGutter: js.UndefOr[Double] = js.native
+        var domainGutter: js.UndefOr[Double] = js.undefined
         
         /**
           * Format of the domain label.
           * Works exactly like subDomainDateFormat, and will format the domain label with any string accepted by d3.time.format(), or a function.
           * To not display the domain label, set domainLabelFormat to "" (empty string).
           */
-        var domainLabelFormat: js.UndefOr[String | js.Function] = js.native
+        var domainLabelFormat: js.UndefOr[String | js.Function] = js.undefined
         
         /**
           * Margin around each domain, in pixel. Default: [0,0,0,0]
           * Ordered like in CSS (top, right, bottom, left), it also accepts CSS like values
           */
-        var domainMargin: js.UndefOr[Double | js.Array[Double]] = js.native
+        var domainMargin: js.UndefOr[Double | js.Array[Double]] = js.undefined
         
         /**
           * Highlight selected subDomain cells. Default: false
           * Takes an array of Date object. Can also accepts the now string, equivalent to Date.now().
           */
-        var highlight: js.UndefOr[String | (js.Array[_ | Date | String])] = js.native
+        var highlight: js.UndefOr[String | (js.Array[js.Any | Date | String])] = js.undefined
         
         // ================================================
         // i18n
@@ -288,34 +288,34 @@ object mod {
           * For the lazy, you can also pass a simple string, ar a single element array, and it'll automatically guess
           * the plural form, as long as it's the singular form plus the "s" suffix.
           */
-        var itemName: js.UndefOr[String | js.Array[String]] = js.native
+        var itemName: js.UndefOr[String | js.Array[String]] = js.undefined
         
         /**
           * The calendar instance namespace.
           * If you have more than one instance of Cal-Heatmap, you should assign each instance its own namespace, in order to isolate each instance event handler.
           */
-        var itemNamespace: js.UndefOr[String] = js.native
+        var itemNamespace: js.UndefOr[String] = js.undefined
         
         // ================================================
         // Presentation
         // ================================================
         /** DOM node to insert the calendar in. Default: "#cal-heatmap" */
-        var itemSelector: js.UndefOr[String | HTMLElement | Element | EventTarget] = js.native
+        var itemSelector: js.UndefOr[String | HTMLElement | Element | EventTarget] = js.undefined
         
         /** Position and alignment of the domain label. */
-        var label: js.UndefOr[Label] = js.native
+        var label: js.UndefOr[Label] = js.undefined
         
         // ================================================
         // Legend
         // ================================================
         /** Assign each range of values to a color. Default: [10, 20, 30, 40] */
-        var legend: js.UndefOr[js.Array[Double]] = js.native
+        var legend: js.UndefOr[js.Array[Double]] = js.undefined
         
         /** Padding between each legend cell, in pixels. Default: 2 */
-        var legendCellPadding: js.UndefOr[Double] = js.native
+        var legendCellPadding: js.UndefOr[Double] = js.undefined
         
         /** Size of the legend cells, in pixels. Default: 10 */
-        var legendCellSize: js.UndefOr[Double] = js.native
+        var legendCellSize: js.UndefOr[Double] = js.undefined
         
         /**
           * Set of colors to automagically compute the heatmap colors.
@@ -323,7 +323,7 @@ object mod {
           * cal-heatmap on initialization, or even dynamically change them after.
           * All legend settings can be changed dynamically after calendar initialisation, with setLegend().
           */
-        var legendColors: js.UndefOr[LegendColor | js.Array[String]] = js.native
+        var legendColors: js.UndefOr[LegendColor | js.Array[String]] = js.undefined
         
         /**
           * Horizontal position of the legend. Default: "left"
@@ -332,10 +332,10 @@ object mod {
           *  "center" - Center the legend
           *  "right"  - Align the legend to the right
           */
-        var legendHorizontalPosition: js.UndefOr[String] = js.native
+        var legendHorizontalPosition: js.UndefOr[String] = js.undefined
         
         /** Margin around the legend, in pixels. Default: [10, 0, 0, 0] */
-        var legendMargin: js.UndefOr[Double | js.Array[Double]] = js.native
+        var legendMargin: js.UndefOr[Double | js.Array[Double]] = js.undefined
         
         /**
           * Orientation of the legend. Default: "horizontal"
@@ -344,7 +344,7 @@ object mod {
           *  "horizontal" - Legend is displayed horizontally, from left to right
           *  "vertical"   - Legend is displayed vertically, from top to bottom
           */
-        var legendOrientation: js.UndefOr[String] = js.native
+        var legendOrientation: js.UndefOr[String] = js.undefined
         
         /**
           * Formatting of the legend title, displayed when hovering a legend cell.
@@ -355,7 +355,7 @@ object mod {
           *  {down}  The lower bound of a color
           *  {up}    The upper bound of a color
           */
-        var legendTitleFormat: js.UndefOr[LegendTitleTemplates] = js.native
+        var legendTitleFormat: js.UndefOr[LegendTitleTemplates] = js.undefined
         
         /**
           * Vertical position of the legend. Default: "bottom"
@@ -365,10 +365,10 @@ object mod {
           *             Use with legendHorizontalPosition, to position the legend on the left (default) or on the right.
           *  "bottom" - Place the legend on below the calendar
           */
-        var legendVerticalPosition: js.UndefOr[String] = js.native
+        var legendVerticalPosition: js.UndefOr[String] = js.undefined
         
         /** Upper limit of the domain navigation, preventing navigating beyond a certain date. Default: null */
-        var maxDate: js.UndefOr[Date] = js.native
+        var maxDate: js.UndefOr[Date] = js.undefined
         
         /**
           * Lower limit of the domain navigation, preventing navigating beyond a certain date. Default: null
@@ -376,19 +376,19 @@ object mod {
           * Like with start, minDate does not have to be precise, and just have to be a date inside the domain.
           * previous() will always return true, unless the domain containing minDate is reached, in which case, it'll return false.
           */
-        var minDate: js.UndefOr[Date] = js.native
+        var minDate: js.UndefOr[Date] = js.undefined
         
         /**
           * Will attach the next() event to the specified element, on a mouse click, shifting the calendar one domain forward. Default value: false
           * If you want to shift by more than one domain, see the next() method.
           */
-        var nextSelector: js.UndefOr[String | HTMLElement] = js.native
+        var nextSelector: js.UndefOr[String | HTMLElement] = js.undefined
         
         // ================================================
         // Events
         // ================================================
         /** Called after a mouse click event on a subDomain cell. */
-        var onClick: js.UndefOr[js.Function2[/* date */ Date, /* value */ Double, Unit]] = js.native
+        var onClick: js.UndefOr[js.Function2[/* date */ Date, /* value */ Double, Unit]] = js.undefined
         
         /**
           * Called after drawing and filling the calendar.
@@ -397,13 +397,13 @@ object mod {
           * This event will only trigger once, on the initial setup. See afterLoadPreviousDomain and afterLoadNextDomain for
           * callback events after a domain navigation.
           */
-        var onComplete: js.UndefOr[js.Function0[Unit]] = js.native
+        var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
         
         /**
           * Triggered after next(), when the incoming domain is containing maxDate.
           * See onMinDomainReached().
           */
-        var onMaxDomainReached: js.UndefOr[js.Function1[/* reached */ Boolean, Unit]] = js.native
+        var onMaxDomainReached: js.UndefOr[js.Function1[/* reached */ Boolean, Unit]] = js.undefined
         
         /**
           * Triggered after previous(), when the incoming domain is containing minDate.
@@ -412,20 +412,20 @@ object mod {
           * In order to reverse the action, onMinDomainReached() will be called with false as argument afer next(), only once, and only if the
           * leftmost domain is not the lower limit domain anymore.
           */
-        var onMinDomainReached: js.UndefOr[js.Function1[/* reached */ Boolean, Unit]] = js.native
+        var onMinDomainReached: js.UndefOr[js.Function1[/* reached */ Boolean, Unit]] = js.undefined
         
         /**
           * Will attach the previous() event to the specified element, on a mouse click, shifting the calendar one domain back. Default value: false
           * If you want to shift by more than one domain, see the previous() method.
           */
-        var previousSelector: js.UndefOr[String | HTMLElement] = js.native
+        var previousSelector: js.UndefOr[String | HTMLElement] = js.undefined
         
         /** Number of domain to display. Default: 12 */
-        var range: js.UndefOr[Double] = js.native
+        var range: js.UndefOr[Double] = js.undefined
         
         /** Control the number of rows to split the domain dates into. Default: null
           * If rowLimit and colLimit are both used, rowLimit will be ignored. */
-        var rowLimit: js.UndefOr[Double] = js.native
+        var rowLimit: js.UndefOr[Double] = js.undefined
         
         // ================================================
         // Data
@@ -434,13 +434,13 @@ object mod {
           * Starting date of the calendar. Default: new Date()
           * It doesn't have to be precise, the calendar will not start at that date, but at the first domain containing that date.
           */
-        var start: js.UndefOr[Date] = js.native
+        var start: js.UndefOr[Date] = js.undefined
         
         /**
           * Type of subDomain. Default: "min"
           * Valid subDomains: {"min", "x_min", "hour", "x_hour", "day", "x_day", "week", "x_week", "month", "x_month"}
           */
-        var subDomain: js.UndefOr[String] = js.native
+        var subDomain: js.UndefOr[String] = js.undefined
         
         /**
           * Format of the {date} template string inside subDomainTitleFormat.
@@ -449,14 +449,14 @@ object mod {
           * As d3.time.format() will only output English dates, subDomainDateFormat can also accept a function,
           * with the subDomain date as the argument.
           */
-        var subDomainDateFormat: js.UndefOr[String | js.Function] = js.native
+        var subDomainDateFormat: js.UndefOr[String | js.Function] = js.undefined
         
         /**
           * Format of the text inside a subDomain cell.
           * Disabled by default, you can display a text inside each subDomain cell.
           * Works exactly like subDomainDateFormat, except that the function takes the cell value as second argument.
           */
-        var subDomainTextFormat: js.UndefOr[String | js.Function] = js.native
+        var subDomainTextFormat: js.UndefOr[String | js.Function] = js.undefined
         
         /**
           * Format of the title displayed when hovering a subDomain.
@@ -468,16 +468,16 @@ object mod {
           *  {connector}  An English preposition placed before a datetime (on Monday, at 15:00, etc.). Each subDomain
           *               have their own default connector, corresponding to the default date format.
           */
-        var subDomainTitleFormat: js.UndefOr[SubDomainFormatTemplates] = js.native
+        var subDomainTitleFormat: js.UndefOr[SubDomainFormatTemplates] = js.undefined
         
         /** Whether to display a tooltip when hovering over a date. Default: false */
-        var tooltip: js.UndefOr[Boolean] = js.native
+        var tooltip: js.UndefOr[Boolean] = js.undefined
         
         /** To display the calendar vertically, with each domain one under the other. Default: false */
-        var verticalOrientation: js.UndefOr[Boolean] = js.native
+        var verticalOrientation: js.UndefOr[Boolean] = js.undefined
         
         /** Whether to start the week on Monday, instead of Sunday. Default: true */
-        var weekStartOnMonday: js.UndefOr[Boolean] = js.native
+        var weekStartOnMonday: js.UndefOr[Boolean] = js.undefined
       }
       object InitOptions {
         
@@ -602,7 +602,7 @@ object mod {
           def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
           
           @scala.inline
-          def setHighlight(value: String | (js.Array[_ | Date | String])): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+          def setHighlight(value: String | (js.Array[js.Any | Date | String])): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
@@ -811,14 +811,13 @@ object mod {
       }
       
       /** Position and alignment of the domain label. */
-      @js.native
       trait Label extends StObject {
         
         /**
           * Horizontal align of the domain. Default: "center"
           * Valid values: {"left", "center", "right"}
           */
-        var align: js.UndefOr[String] = js.native
+        var align: js.UndefOr[String] = js.undefined
         
         /**
           * Height of the domain label in pixels.
@@ -827,31 +826,31 @@ object mod {
           * of setting the label height to 0. Default: null
           * Valid values: any integer
           */
-        var height: js.UndefOr[Double] = js.native
+        var height: js.UndefOr[Double] = js.undefined
         
         /**
           * More control about label positioning, if the default value does not fit your need,
           * especially when label is rotated, or when using a big font-size. Default: {x:0, y:0}
           */
-        var offset: js.UndefOr[LabelOffset] = js.native
+        var offset: js.UndefOr[LabelOffset] = js.undefined
         
         /**
           * Position of the label, relative to the domain. Default: "bottom"
           * Valid values: {"top", "right", "bottom", "left"}
           */
-        var position: js.UndefOr[String] = js.native
+        var position: js.UndefOr[String] = js.undefined
         
         /**
           * Rotation for a vertical label. Default: null
           * Valid values: {null, "left", "right"}
           */
-        var rotate: js.UndefOr[String] = js.native
+        var rotate: js.UndefOr[String] = js.undefined
         
         /**
           * Only used when label is rotated, defines the width of the label. Default: 100
           * Valid values: any intger
           */
-        var width: js.UndefOr[Double] = js.native
+        var width: js.UndefOr[Double] = js.undefined
       }
       object Label {
         
@@ -902,12 +901,11 @@ object mod {
         }
       }
       
-      @js.native
       trait LabelOffset extends StObject {
         
-        var x: Double = js.native
+        var x: Double
         
-        var y: Double = js.native
+        var y: Double
       }
       object LabelOffset {
         
@@ -928,23 +926,22 @@ object mod {
         }
       }
       
-      @js.native
       trait LegendColor extends StObject {
         
         /** Base color of the date cells */
-        var base: js.UndefOr[String] = js.native
+        var base: js.UndefOr[String] = js.undefined
         
         /** Color for the dates with value == 0 */
-        var empty: js.UndefOr[String] = js.native
+        var empty: js.UndefOr[String] = js.undefined
         
         /** Color of the highest value on the legend */
-        var max: String = js.native
+        var max: String
         
         /** Color of the smallest value on the legend */
-        var min: String = js.native
+        var min: String
         
         /** Color for the special value */
-        var overflow: js.UndefOr[String] = js.native
+        var overflow: js.UndefOr[String] = js.undefined
       }
       object LegendColor {
         
@@ -983,17 +980,16 @@ object mod {
         }
       }
       
-      @js.native
       trait LegendTitleTemplates extends StObject {
         
         /** Formatting of all the value but the first and the last. Default value: "between {down} and {up} {name}" */
-        var inner: js.UndefOr[String] = js.native
+        var inner: js.UndefOr[String] = js.undefined
         
         /** Formatting of the smallest (leftmost) value of the legend. Default value: "less than {min} {name}" */
-        var lower: js.UndefOr[String] = js.native
+        var lower: js.UndefOr[String] = js.undefined
         
         /** Formatting of the biggest (rightmost) value of the legend. Default value: "more than {max} {name}" */
-        var upper: js.UndefOr[String] = js.native
+        var upper: js.UndefOr[String] = js.undefined
       }
       object LegendTitleTemplates {
         
@@ -1026,27 +1022,28 @@ object mod {
         }
       }
       
-      @js.native
-      trait RuntimeOptions extends InitOptions {
+      trait RuntimeOptions
+        extends StObject
+           with InitOptions {
         
         /** Margin around each domain, in pixels. Ordered like in CSS (top, right, bottom, left) */
         @JSName("domainMargin")
-        var domainMargin_RuntimeOptions: js.Array[Double] = js.native
+        var domainMargin_RuntimeOptions: js.Array[Double]
         
         /** List of dates to highlight */
         @JSName("highlight")
-        var highlight_RuntimeOptions: js.Array[Date] = js.native
+        var highlight_RuntimeOptions: js.Array[Date]
         
         /**
           * Name of the items to represent in the calendar.
           * First index is singular form, and the second index, the plural form.
           */
         @JSName("itemName")
-        var itemName_RuntimeOptions: js.Array[String] = js.native
+        var itemName_RuntimeOptions: js.Array[String]
         
         /** Margin around the legend, in pixels. Ordered like in CSS (top, right, bottom, left) */
         @JSName("legendMargin")
-        var legendMargin_RuntimeOptions: js.Array[Double] = js.native
+        var legendMargin_RuntimeOptions: js.Array[Double]
       }
       object RuntimeOptions {
         
@@ -1090,14 +1087,13 @@ object mod {
         }
       }
       
-      @js.native
       trait SubDomainFormatTemplates extends StObject {
         
         /** Format of the title when there is no value associated to the date. Default value: "{date}" */
-        var empty: js.UndefOr[String] = js.native
+        var empty: js.UndefOr[String] = js.undefined
         
         /** Format of the title when it's associated to a value. Default value: "{count} {name} {connector} {date}" */
-        var filled: js.UndefOr[String] = js.native
+        var filled: js.UndefOr[String] = js.undefined
       }
       object SubDomainFormatTemplates {
         

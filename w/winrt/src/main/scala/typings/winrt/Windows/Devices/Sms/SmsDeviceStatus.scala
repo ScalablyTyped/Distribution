@@ -2,7 +2,6 @@ package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,26 +11,42 @@ sealed trait SmsDeviceStatus extends StObject
 object SmsDeviceStatus extends StObject {
   
   @js.native
-  sealed trait badSim extends SmsDeviceStatus
+  sealed trait badSim
+    extends StObject
+       with SmsDeviceStatus
   
   @js.native
-  sealed trait deviceBlocked extends SmsDeviceStatus
+  sealed trait deviceBlocked
+    extends StObject
+       with SmsDeviceStatus
   
   @js.native
-  sealed trait deviceFailure extends SmsDeviceStatus
+  sealed trait deviceFailure
+    extends StObject
+       with SmsDeviceStatus
   
   @js.native
-  sealed trait deviceLocked extends SmsDeviceStatus
+  sealed trait deviceLocked
+    extends StObject
+       with SmsDeviceStatus
   
   @js.native
-  sealed trait off extends SmsDeviceStatus
+  sealed trait off
+    extends StObject
+       with SmsDeviceStatus
   
   @js.native
-  sealed trait ready extends SmsDeviceStatus
+  sealed trait ready
+    extends StObject
+       with SmsDeviceStatus
   
   @js.native
-  sealed trait simNotInserted extends SmsDeviceStatus
+  sealed trait simNotInserted
+    extends StObject
+       with SmsDeviceStatus
   
   @js.native
-  sealed trait subscriptionNotActivated extends SmsDeviceStatus
+  sealed trait subscriptionNotActivated
+    extends StObject
+       with SmsDeviceStatus
 }

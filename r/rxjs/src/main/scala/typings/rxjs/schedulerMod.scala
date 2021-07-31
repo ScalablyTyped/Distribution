@@ -5,14 +5,15 @@ import typings.rxjs.actionMod.Action
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schedulerMod {
   
   @JSImport("rxjs/internal/Scheduler", "Scheduler")
   @js.native
-  class Scheduler protected () extends SchedulerLike {
+  class Scheduler protected ()
+    extends StObject
+       with SchedulerLike {
     def this(SchedulerAction: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
@@ -40,13 +41,16 @@ object schedulerMod {
   /* static members */
   object Scheduler {
     
+    @JSImport("rxjs/internal/Scheduler", "Scheduler")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Note: the extra arrow function wrapper is to make testing by overriding
       * Date.now easier.
       * @nocollapse
       */
-    @JSImport("rxjs/internal/Scheduler", "Scheduler.now")
-    @js.native
-    def now(): Double = js.native
+    @scala.inline
+    def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   }
 }

@@ -7,19 +7,17 @@ import typings.devextreme.devextremeStrings.row
 import typings.devextreme.devextremeStrings.startEdit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditOnKeyPress extends StObject {
   
-  var editOnKeyPress: js.UndefOr[Boolean] = js.native
+  var editOnKeyPress: js.UndefOr[Boolean] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var enterKeyAction: js.UndefOr[startEdit | moveFocus] = js.native
+  var enterKeyAction: js.UndefOr[startEdit | moveFocus] = js.undefined
   
-  var enterKeyDirection: js.UndefOr[none | column | row] = js.native
+  var enterKeyDirection: js.UndefOr[none | column | row] = js.undefined
 }
 object EditOnKeyPress {
   

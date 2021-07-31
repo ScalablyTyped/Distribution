@@ -2,15 +2,13 @@ package typings.reactNativeMaterialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Labels extends StObject {
   
-  var icon: String = js.native
+  var icon: String
   
-  var labels: js.Array[String] = js.native
+  var labels: js.Array[String]
 }
 object Labels {
   

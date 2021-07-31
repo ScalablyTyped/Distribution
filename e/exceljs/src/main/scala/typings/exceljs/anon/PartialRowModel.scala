@@ -3,30 +3,28 @@ package typings.exceljs.anon
 import typings.exceljs.mod.CellModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.RowModel> */
-@js.native
 trait PartialRowModel extends StObject {
   
-  var cells: js.UndefOr[js.Array[CellModel]] = js.native
+  var cells: js.UndefOr[js.Array[CellModel]] = js.undefined
   
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
-  var outlineLevel: js.UndefOr[Double] = js.native
+  var outlineLevel: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[PartialStyleAlignment] = js.native
+  var style: js.UndefOr[PartialStyleAlignment] = js.undefined
 }
 object PartialRowModel {
   

@@ -2,20 +2,20 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the success/failure of an action
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait OperationOutcome extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait OperationOutcome
+  extends StObject
+     with DomainResource {
   
   /**
     * A single issue associated with the action
     */
-  var issue: js.Array[OperationOutcomeIssue] = js.native
+  var issue: js.Array[OperationOutcomeIssue]
 }
 object OperationOutcome {
   

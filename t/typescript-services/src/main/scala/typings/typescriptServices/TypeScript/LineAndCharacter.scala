@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineAndCharacter extends StObject {
   
-  var _character: js.Any = js.native
+  var _character: js.Any
   
-  var _line: js.Any = js.native
+  var _line: js.Any
   
-  def character(): Double = js.native
+  def character(): Double
   
-  def line(): Double = js.native
+  def line(): Double
 }
 object LineAndCharacter {
   

@@ -2,7 +2,6 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.transaction_settled
   - typings.braintree.braintreeStrings.transaction_settlement_declined
 */
-trait TransactionNotificationKind extends _WebhookNotificationKind
+trait TransactionNotificationKind
+  extends StObject
+     with _WebhookNotificationKind
 object TransactionNotificationKind {
   
   @scala.inline

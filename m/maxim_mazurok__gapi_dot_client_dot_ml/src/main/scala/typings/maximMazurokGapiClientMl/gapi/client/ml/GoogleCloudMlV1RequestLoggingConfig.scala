@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1RequestLoggingConfig extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait GoogleCloudMlV1RequestLoggingConfig extends StObject {
     * for your project must have permission to write to it. The table must have the following [schema](/bigquery/docs/schemas): Field nameType Mode model STRING REQUIRED model_version
     * STRING REQUIRED time TIMESTAMP REQUIRED raw_data STRING REQUIRED raw_prediction STRING NULLABLE groundtruth STRING NULLABLE
     */
-  var bigqueryTableName: js.UndefOr[String] = js.native
+  var bigqueryTableName: js.UndefOr[String] = js.undefined
   
   /**
     * Percentage of requests to be logged, expressed as a fraction from 0 to 1. For example, if you want to log 10% of requests, enter `0.1`. The sampling window is the lifetime of the
     * model version. Defaults to 0.
     */
-  var samplingPercentage: js.UndefOr[Double] = js.native
+  var samplingPercentage: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1RequestLoggingConfig {
   

@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnlineMeetingInfo extends StObject {
   
   // The ID of the conference.
-  var conferenceId: js.UndefOr[NullableOption[String]] = js.native
+  var conferenceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The external link that launches the online meeting. This is a URL that clients will launch into a browser and will
     * redirect the user to join the meeting.
     */
-  var joinUrl: js.UndefOr[NullableOption[String]] = js.native
+  var joinUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // All of the phone numbers associated with this conference.
-  var phones: js.UndefOr[NullableOption[js.Array[Phone]]] = js.native
+  var phones: js.UndefOr[NullableOption[js.Array[Phone]]] = js.undefined
   
   // The pre-formatted quickdial for this call.
-  var quickDial: js.UndefOr[NullableOption[String]] = js.native
+  var quickDial: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The toll free numbers that can be used to join the conference.
-  var tollFreeNumbers: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var tollFreeNumbers: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The toll number that can be used to join the conference.
-  var tollNumber: js.UndefOr[NullableOption[String]] = js.native
+  var tollNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnlineMeetingInfo {
   

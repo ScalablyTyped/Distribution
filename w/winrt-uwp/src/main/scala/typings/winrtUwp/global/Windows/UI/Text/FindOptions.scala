@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the options to use when doing a text search. */
@@ -11,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FindOptions extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.FindOptions with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.FindOptions & Double] = js.native
   
-  /* 2 */ val `case`: typings.winrtUwp.Windows.UI.Text.FindOptions.`case` with Double = js.native
+  /* 2 */ val `case`: typings.winrtUwp.Windows.UI.Text.FindOptions.`case` & Double = js.native
   
-  /* 0 */ val none: typings.winrtUwp.Windows.UI.Text.FindOptions.none with Double = js.native
+  /* 0 */ val none: typings.winrtUwp.Windows.UI.Text.FindOptions.none & Double = js.native
   
-  /* 1 */ val word: typings.winrtUwp.Windows.UI.Text.FindOptions.word with Double = js.native
+  /* 1 */ val word: typings.winrtUwp.Windows.UI.Text.FindOptions.word & Double = js.native
 }

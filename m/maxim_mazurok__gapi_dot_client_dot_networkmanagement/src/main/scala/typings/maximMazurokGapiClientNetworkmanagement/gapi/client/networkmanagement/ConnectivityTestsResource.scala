@@ -12,7 +12,6 @@ import typings.maximMazurokGapiClientNetworkmanagement.anon.Oauthtoken
 import typings.maximMazurokGapiClientNetworkmanagement.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

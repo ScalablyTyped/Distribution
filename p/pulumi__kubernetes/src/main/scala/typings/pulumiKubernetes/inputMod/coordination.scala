@@ -6,7 +6,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.coordinationDotk8sDotioS
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coordination {
@@ -16,28 +15,27 @@ object coordination {
     /**
       * Lease defines a lease concept.
       */
-    @js.native
     trait Lease extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[coordinationDotk8sDotioSlashv1]] = js.native
+      var apiVersion: js.UndefOr[Input[coordinationDotk8sDotioSlashv1]] = js.undefined
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Lease]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Lease]] = js.undefined
       
       /**
         * More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * Specification of the Lease. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[Input[LeaseSpec]] = js.native
+      var spec: js.UndefOr[Input[LeaseSpec]] = js.undefined
     }
     object Lease {
       
@@ -79,33 +77,32 @@ object coordination {
     /**
       * LeaseSpec is a specification of a Lease.
       */
-    @js.native
     trait LeaseSpec extends StObject {
       
       /**
         * acquireTime is a time when the current lease was acquired.
         */
-      var acquireTime: js.UndefOr[Input[String]] = js.native
+      var acquireTime: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * holderIdentity contains the identity of the holder of a current lease.
         */
-      var holderIdentity: js.UndefOr[Input[String]] = js.native
+      var holderIdentity: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * leaseDurationSeconds is a duration that candidates for a lease need to wait to force acquire it. This is measure against time of last observed RenewTime.
         */
-      var leaseDurationSeconds: js.UndefOr[Input[Double]] = js.native
+      var leaseDurationSeconds: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * leaseTransitions is the number of transitions of a lease between holders.
         */
-      var leaseTransitions: js.UndefOr[Input[Double]] = js.native
+      var leaseTransitions: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * renewTime is a time when the current holder of a lease has last updated the lease.
         */
-      var renewTime: js.UndefOr[Input[String]] = js.native
+      var renewTime: js.UndefOr[Input[String]] = js.undefined
     }
     object LeaseSpec {
       
@@ -156,28 +153,27 @@ object coordination {
     /**
       * Lease defines a lease concept.
       */
-    @js.native
     trait Lease extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[coordinationDotk8sDotioSlashv1beta1]] = js.native
+      var apiVersion: js.UndefOr[Input[coordinationDotk8sDotioSlashv1beta1]] = js.undefined
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Lease]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Lease]] = js.undefined
       
       /**
         * More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * Specification of the Lease. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[Input[LeaseSpec]] = js.native
+      var spec: js.UndefOr[Input[LeaseSpec]] = js.undefined
     }
     object Lease {
       
@@ -219,33 +215,32 @@ object coordination {
     /**
       * LeaseSpec is a specification of a Lease.
       */
-    @js.native
     trait LeaseSpec extends StObject {
       
       /**
         * acquireTime is a time when the current lease was acquired.
         */
-      var acquireTime: js.UndefOr[Input[String]] = js.native
+      var acquireTime: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * holderIdentity contains the identity of the holder of a current lease.
         */
-      var holderIdentity: js.UndefOr[Input[String]] = js.native
+      var holderIdentity: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * leaseDurationSeconds is a duration that candidates for a lease need to wait to force acquire it. This is measure against time of last observed RenewTime.
         */
-      var leaseDurationSeconds: js.UndefOr[Input[Double]] = js.native
+      var leaseDurationSeconds: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * leaseTransitions is the number of transitions of a lease between holders.
         */
-      var leaseTransitions: js.UndefOr[Input[Double]] = js.native
+      var leaseTransitions: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * renewTime is a time when the current holder of a lease has last updated the lease.
         */
-      var renewTime: js.UndefOr[Input[String]] = js.native
+      var renewTime: js.UndefOr[Input[String]] = js.undefined
     }
     object LeaseSpec {
       

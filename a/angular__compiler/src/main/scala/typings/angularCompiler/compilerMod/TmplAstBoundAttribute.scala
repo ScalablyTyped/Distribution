@@ -6,7 +6,6 @@ import typings.angularCompiler.i18nAstMod.I18nMeta
 import typings.angularCompiler.r3AstMod.BoundAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "TmplAstBoundAttribute")
@@ -59,7 +58,7 @@ class TmplAstBoundAttribute protected ()
     unit: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
+    valueSpan: Unit,
     i18n: I18nMeta
   ) = this()
   def this(
@@ -81,7 +80,7 @@ class TmplAstBoundAttribute protected ()
     unit: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
+    valueSpan: Unit,
     i18n: I18nMeta
   ) = this()
   def this(
@@ -99,10 +98,12 @@ class TmplAstBoundAttribute protected ()
 /* static members */
 object TmplAstBoundAttribute {
   
-  @JSImport("@angular/compiler/compiler", "TmplAstBoundAttribute.fromBoundElementProperty")
+  @JSImport("@angular/compiler/compiler", "TmplAstBoundAttribute")
   @js.native
-  def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): BoundAttribute = js.native
-  @JSImport("@angular/compiler/compiler", "TmplAstBoundAttribute.fromBoundElementProperty")
-  @js.native
-  def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty, i18n: I18nMeta): BoundAttribute = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): BoundAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundAttribute]
+  @scala.inline
+  def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty, i18n: I18nMeta): BoundAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[BoundAttribute]
 }

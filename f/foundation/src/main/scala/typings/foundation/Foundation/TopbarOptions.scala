@@ -2,27 +2,25 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopbarOptions extends StObject {
   
-  var back_text: js.UndefOr[String] = js.native
+  var back_text: js.UndefOr[String] = js.undefined
   
-  var custom_back_text: js.UndefOr[Boolean] = js.native
+  var custom_back_text: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var is_hover: js.UndefOr[Boolean] = js.native
+  var is_hover: js.UndefOr[Boolean] = js.undefined
   
-  var mobile_show_parent_link: js.UndefOr[Boolean] = js.native
+  var mobile_show_parent_link: js.UndefOr[Boolean] = js.undefined
   
-  var scrolltop: js.UndefOr[Boolean] = js.native
+  var scrolltop: js.UndefOr[Boolean] = js.undefined
   
-  var sticky_class: js.UndefOr[String] = js.native
+  var sticky_class: js.UndefOr[String] = js.undefined
   
-  var sticky_on: js.UndefOr[String] = js.native
+  var sticky_on: js.UndefOr[String] = js.undefined
 }
 object TopbarOptions {
   

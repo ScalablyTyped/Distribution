@@ -3,28 +3,26 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Tooltip.TooltipClassKey>> */
-@js.native
 trait PartialStyleRulesTooltipC extends StObject {
   
-  var popper: js.UndefOr[CSSProperties] = js.native
+  var popper: js.UndefOr[CSSProperties] = js.undefined
   
-  var popperInteractive: js.UndefOr[CSSProperties] = js.native
+  var popperInteractive: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltip: js.UndefOr[CSSProperties] = js.native
+  var tooltip: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipPlacementBottom: js.UndefOr[CSSProperties] = js.native
+  var tooltipPlacementBottom: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipPlacementLeft: js.UndefOr[CSSProperties] = js.native
+  var tooltipPlacementLeft: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipPlacementRight: js.UndefOr[CSSProperties] = js.native
+  var tooltipPlacementRight: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipPlacementTop: js.UndefOr[CSSProperties] = js.native
+  var tooltipPlacementTop: js.UndefOr[CSSProperties] = js.undefined
   
-  var touch: js.UndefOr[CSSProperties] = js.native
+  var touch: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesTooltipC {
   

@@ -3,12 +3,13 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a browser plugin. */
 @js.native
-trait Plugin extends /* index */ NumberDictionary[MimeType] {
+trait Plugin
+  extends StObject
+     with /* index */ NumberDictionary[MimeType] {
   
   /**
     * Returns the plugin's description.

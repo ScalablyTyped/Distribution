@@ -5,7 +5,6 @@ import typings.awsSdk.anon.Address
 import typings.awsSdk.anon.CachePeriodInMinutes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointCacheMod {
@@ -37,24 +36,27 @@ object endpointCacheMod {
   /* static members */
   object EndpointCache {
     
-    @JSImport("aws-sdk/vendor/endpoint-cache", "EndpointCache.getKeyString")
+    @JSImport("aws-sdk/vendor/endpoint-cache", "EndpointCache")
     @js.native
-    def getKeyString(key: EndpointIdentifier): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getKeyString(key: EndpointIdentifier): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyString")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   type DiscoveredEndpoints = js.Array[CachePeriodInMinutes]
   
-  @js.native
   trait EndpointIdentifier
-    extends /* key */ StringDictionary[js.UndefOr[String]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[String]] {
     
-    var accessKeyId: js.UndefOr[String] = js.native
+    var accessKeyId: js.UndefOr[String] = js.undefined
     
-    var operation: js.UndefOr[String] = js.native
+    var operation: js.UndefOr[String] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var serviceId: js.UndefOr[String] = js.native
+    var serviceId: js.UndefOr[String] = js.undefined
   }
   object EndpointIdentifier {
     

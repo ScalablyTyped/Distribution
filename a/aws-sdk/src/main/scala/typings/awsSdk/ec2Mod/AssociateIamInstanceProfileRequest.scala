@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateIamInstanceProfileRequest extends StObject {
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: IamInstanceProfileSpecification = js.native
+  var IamInstanceProfile: IamInstanceProfileSpecification
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ec2Mod.InstanceId
 }
 object AssociateIamInstanceProfileRequest {
   

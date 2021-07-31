@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The people who performed the procedure
   */
-@js.native
-trait ProcedurePerformer extends BackboneElement {
+trait ProcedurePerformer
+  extends StObject
+     with BackboneElement {
   
   /**
     * The reference to the practitioner
     */
-  var actor: Reference = js.native
+  var actor: Reference
   
   /**
     * Organization the device or practitioner was acting for
     */
-  var onBehalfOf: js.UndefOr[Reference] = js.native
+  var onBehalfOf: js.UndefOr[Reference] = js.undefined
   
   /**
     * The role the actor was in
     */
-  var role: js.UndefOr[CodeableConcept] = js.native
+  var role: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ProcedurePerformer {
   

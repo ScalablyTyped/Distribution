@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFlowDefinitionsResponse extends StObject {
   
   /**
     * An array of objects describing the flow definitions.
     */
-  var FlowDefinitionSummaries: typings.awsSdk.sagemakerMod.FlowDefinitionSummaries = js.native
+  var FlowDefinitionSummaries: typings.awsSdk.sagemakerMod.FlowDefinitionSummaries
   
   /**
     * A token to resume pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListFlowDefinitionsResponse {
   

@@ -3,27 +3,36 @@ package typings.setIntervalAsync
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legacyMod {
   
+  @JSImport("set-interval-async/legacy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("set-interval-async/legacy", "SetIntervalAsyncError")
   @js.native
-  class SetIntervalAsyncError () extends Error
+  class SetIntervalAsyncError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  @JSImport("set-interval-async/legacy", "clearIntervalAsync")
-  @js.native
-  def clearIntervalAsync(timer: SetIntervalAsyncTimer): js.Promise[Unit] = js.native
+  @scala.inline
+  def clearIntervalAsync(timer: SetIntervalAsyncTimer): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIntervalAsync")(timer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("set-interval-async/legacy", "setIntervalAsync")
-  @js.native
-  def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, _], interval: Double, args: js.Any*): SetIntervalAsyncTimer = js.native
+  @scala.inline
+  def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, args: js.Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SetIntervalAsyncTimer]
   
-  @js.native
   trait SetIntervalAsyncTimer extends StObject {
     
-    var id: Double = js.native
+    var id: Double
   }
   object SetIntervalAsyncTimer {
     

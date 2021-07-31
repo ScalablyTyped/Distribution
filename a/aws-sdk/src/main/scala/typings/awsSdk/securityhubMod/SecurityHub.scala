@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -83,7 +82,7 @@ trait SecurityHub extends Service {
   ): Request[BatchUpdateFindingsResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_SecurityHub: ConfigBase with ClientConfiguration = js.native
+  var config_SecurityHub: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a custom action target in Security Hub. You can use custom actions on findings and insights in Security Hub to trigger target actions in Amazon CloudWatch Events.

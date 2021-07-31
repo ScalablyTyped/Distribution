@@ -3,18 +3,17 @@ package typings.openidClient.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndSessionParameters
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var id_token_hint: js.UndefOr[TokenSet | String] = js.native
+  var id_token_hint: js.UndefOr[TokenSet | String] = js.undefined
   
-  var post_logout_redirect_uri: js.UndefOr[String] = js.native
+  var post_logout_redirect_uri: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object EndSessionParameters {
   

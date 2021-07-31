@@ -2,12 +2,14 @@ package typings.awsSdkUtilUriEscape
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object escapeUriPathMod {
   
-  @JSImport("@aws-sdk/util-uri-escape/dist/cjs/escape-uri-path", "escapeUriPath")
+  @JSImport("@aws-sdk/util-uri-escape/dist/cjs/escape-uri-path", JSImport.Namespace)
   @js.native
-  def escapeUriPath(uri: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def escapeUriPath(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeUriPath")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
 }

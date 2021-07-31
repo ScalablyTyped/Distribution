@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateActivityOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the created activity.
     */
-  var activityArn: Arn = js.native
+  var activityArn: Arn
   
   /**
     * The date the activity is created.
     */
-  var creationDate: Timestamp = js.native
+  var creationDate: Timestamp
 }
 object CreateActivityOutput {
   

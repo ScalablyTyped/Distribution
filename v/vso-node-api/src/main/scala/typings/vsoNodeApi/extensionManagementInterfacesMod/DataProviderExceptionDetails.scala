@@ -2,26 +2,24 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProviderExceptionDetails extends StObject {
   
   /**
     * The type of the exception that was thrown.
     */
-  var exceptionType: String = js.native
+  var exceptionType: String
   
   /**
     * Message that is associated with the exception.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The StackTrace from the exception turned into a string.
     */
-  var stackTrace: String = js.native
+  var stackTrace: String
 }
 object DataProviderExceptionDetails {
   

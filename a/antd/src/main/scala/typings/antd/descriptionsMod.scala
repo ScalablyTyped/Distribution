@@ -13,16 +13,17 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object descriptionsMod {
   
   object default {
     
-    @JSImport("antd/lib/descriptions", JSImport.Default)
-    @js.native
-    def apply(hasPrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize: DescriptionsProps): Element = js.native
+    @scala.inline
+    def apply(
+      hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize: DescriptionsProps
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("antd/lib/descriptions", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -34,30 +35,29 @@ object descriptionsMod {
     def Item_=(x: FC[DescriptionsItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait DescriptionsProps extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colon: js.UndefOr[Boolean] = js.native
+    var colon: js.UndefOr[Boolean] = js.undefined
     
-    var column: js.UndefOr[Double | PartialRecordBreakpointnu] = js.native
+    var column: js.UndefOr[Double | PartialRecordBreakpointnu] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var layout: js.UndefOr[horizontal | vertical] = js.native
+    var layout: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[middle | small | default] = js.native
+    var size: js.UndefOr[middle | small | default] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object DescriptionsProps {
     

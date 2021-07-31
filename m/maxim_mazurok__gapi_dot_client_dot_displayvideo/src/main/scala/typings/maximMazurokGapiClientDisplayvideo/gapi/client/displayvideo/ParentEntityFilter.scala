@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentEntityFilter extends StObject {
   
   /** Required. File types that will be returned. */
-  var fileType: js.UndefOr[js.Array[String]] = js.native
+  var fileType: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The IDs of the specified filter type. This is used to filter entities to fetch. If filter type is not `FILTER_TYPE_NONE`, at least one ID must be specified. */
-  var filterIds: js.UndefOr[js.Array[String]] = js.native
+  var filterIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. Filter type used to filter fetched entities. */
-  var filterType: js.UndefOr[String] = js.native
+  var filterType: js.UndefOr[String] = js.undefined
 }
 object ParentEntityFilter {
   

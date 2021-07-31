@@ -4,25 +4,23 @@ import typings.pulumiPulumi.workspaceMod.PulumiFn
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewOptions extends StObject {
   
-  var expectNoChanges: js.UndefOr[Boolean] = js.native
+  var expectNoChanges: js.UndefOr[Boolean] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var parallel: js.UndefOr[Double] = js.native
+  var parallel: js.UndefOr[Double] = js.undefined
   
-  var program: js.UndefOr[PulumiFn] = js.native
+  var program: js.UndefOr[PulumiFn] = js.undefined
   
-  var replace: js.UndefOr[js.Array[String]] = js.native
+  var replace: js.UndefOr[js.Array[String]] = js.undefined
   
-  var target: js.UndefOr[js.Array[String]] = js.native
+  var target: js.UndefOr[js.Array[String]] = js.undefined
   
-  var targetDependents: js.UndefOr[Boolean] = js.native
+  var targetDependents: js.UndefOr[Boolean] = js.undefined
 }
 object PreviewOptions {
   

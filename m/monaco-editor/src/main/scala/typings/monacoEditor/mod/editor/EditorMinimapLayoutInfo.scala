@@ -2,33 +2,31 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorMinimapLayoutInfo extends StObject {
   
-  val minimapCanvasInnerHeight: Double = js.native
+  val minimapCanvasInnerHeight: Double
   
-  val minimapCanvasInnerWidth: Double = js.native
+  val minimapCanvasInnerWidth: Double
   
-  val minimapCanvasOuterHeight: Double = js.native
+  val minimapCanvasOuterHeight: Double
   
-  val minimapCanvasOuterWidth: Double = js.native
+  val minimapCanvasOuterWidth: Double
   
-  val minimapHeightIsEditorHeight: Boolean = js.native
+  val minimapHeightIsEditorHeight: Boolean
   
-  val minimapIsSampling: Boolean = js.native
+  val minimapIsSampling: Boolean
   
-  val minimapLeft: Double = js.native
+  val minimapLeft: Double
   
-  val minimapLineHeight: Double = js.native
+  val minimapLineHeight: Double
   
-  val minimapScale: Double = js.native
+  val minimapScale: Double
   
-  val minimapWidth: Double = js.native
+  val minimapWidth: Double
   
-  val renderMinimap: RenderMinimap = js.native
+  val renderMinimap: RenderMinimap
 }
 object EditorMinimapLayoutInfo {
   

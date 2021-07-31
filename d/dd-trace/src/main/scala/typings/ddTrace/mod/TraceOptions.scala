@@ -2,28 +2,28 @@ package typings.ddTrace.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TraceOptions extends Analyzable {
+trait TraceOptions
+  extends StObject
+     with Analyzable {
   
   /**
     * The resource you are tracing. The resource name must not be longer than
     * 5000 characters.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * The service you are tracing. The service name must not be longer than
     * 100 characters.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * The type of request.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object TraceOptions {
   

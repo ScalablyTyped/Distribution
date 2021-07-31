@@ -2,21 +2,19 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A non-empty list of row or column headers for a table. Exactly one of
   * prices, weights, numItems, postalCodeGroupNames, or location must be set.
   */
-@js.native
 trait SchemaHeaders extends StObject {
   
   /**
     * A list of location ID sets. Must be non-empty. Can only be set if all
     * other fields are not set.
     */
-  var locations: js.UndefOr[js.Array[SchemaLocationIdSet]] = js.native
+  var locations: js.UndefOr[js.Array[SchemaLocationIdSet]] = js.undefined
   
   /**
     * A list of inclusive number of items upper bounds. The last value can be
@@ -25,7 +23,7 @@ trait SchemaHeaders extends StObject {
     * &quot; 50 items&quot;. Must be non-empty. Can only be set if all other
     * fields are not set.
     */
-  var numberOfItems: js.UndefOr[js.Array[String]] = js.native
+  var numberOfItems: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of postal group names. The last value can be &quot;all other
@@ -34,7 +32,7 @@ trait SchemaHeaders extends StObject {
     * match the delivery country of the service. Must be non-empty. Can only be
     * set if all other fields are not set.
     */
-  var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.native
+  var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of inclusive order price upper bounds. The last price&#39;s value
@@ -47,7 +45,7 @@ trait SchemaHeaders extends StObject {
     * must have the same currency. Must be non-empty. Can only be set if all
     * other fields are not set.
     */
-  var prices: js.UndefOr[js.Array[SchemaPrice]] = js.native
+  var prices: js.UndefOr[js.Array[SchemaPrice]] = js.undefined
   
   /**
     * A list of inclusive order weight upper bounds. The last weight&#39;s
@@ -59,7 +57,7 @@ trait SchemaHeaders extends StObject {
     * service must have the same unit. Must be non-empty. Can only be set if
     * all other fields are not set.
     */
-  var weights: js.UndefOr[js.Array[SchemaWeight]] = js.native
+  var weights: js.UndefOr[js.Array[SchemaWeight]] = js.undefined
 }
 object SchemaHeaders {
   

@@ -2,7 +2,6 @@ package typings.storybookChannels
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -63,12 +62,11 @@ object mod {
     val transport: js.Any = js.native
   }
   
-  @js.native
   trait ChannelArgs extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var transport: js.UndefOr[ChannelTransport] = js.native
+    var transport: js.UndefOr[ChannelTransport] = js.undefined
   }
   object ChannelArgs {
     
@@ -95,19 +93,18 @@ object mod {
     }
   }
   
-  @js.native
   trait ChannelEvent extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var from: String = js.native
+    var from: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ChannelEvent {
     
     @scala.inline
-    def apply(args: js.Array[_], from: String, `type`: String): ChannelEvent = {
+    def apply(args: js.Array[js.Any], from: String, `type`: String): ChannelEvent = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelEvent]
@@ -117,7 +114,7 @@ object mod {
     implicit class ChannelEventMutableBuilder[Self <: ChannelEvent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))

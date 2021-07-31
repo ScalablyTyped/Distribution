@@ -3,17 +3,15 @@ package typings.googlemaps.google.maps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
-  var text: String = js.native
+  var text: String
   
-  var time_zone: String = js.native
+  var time_zone: String
   
-  var value: Date = js.native
+  var value: Date
 }
 object Time {
   

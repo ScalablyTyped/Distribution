@@ -3,22 +3,20 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.r3AstMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NgContentSelectors extends StObject {
   
   /**
     * Any ng-content selectors extracted from the template. Contains `null` when an ng-content
     * element without selector is present.
     */
-  var ngContentSelectors: js.Array[String] = js.native
+  var ngContentSelectors: js.Array[String]
   
   /**
     * Parsed nodes of the template.
     */
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
 }
 object NgContentSelectors {
   

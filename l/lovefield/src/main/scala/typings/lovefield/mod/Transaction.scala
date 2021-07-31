@@ -4,23 +4,21 @@ import typings.lovefield.mod.query.Builder
 import typings.lovefield.mod.schema.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transaction extends StObject {
   
-  def attach(query: Builder): js.Promise[js.Array[js.Object]] = js.native
+  def attach(query: Builder): js.Promise[js.Array[js.Object]]
   
-  def begin(scope: js.Array[Table]): js.Promise[Unit] = js.native
+  def begin(scope: js.Array[Table]): js.Promise[Unit]
   
-  def commit(): js.Promise[Unit] = js.native
+  def commit(): js.Promise[Unit]
   
-  def exec(queries: js.Array[Builder]): js.Promise[js.Array[js.Array[js.Object]]] = js.native
+  def exec(queries: js.Array[Builder]): js.Promise[js.Array[js.Array[js.Object]]]
   
-  def rollback(): js.Promise[Unit] = js.native
+  def rollback(): js.Promise[Unit]
   
-  def stats(): TransactionStats = js.native
+  def stats(): TransactionStats
 }
 object Transaction {
   

@@ -2,21 +2,19 @@ package typings.stripe.mod.invoices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IThresholdReason extends StObject {
   
   /**
     * The total invoice amount threshold boundary if it triggered the threshold invoice.
     */
-  var amount_gte: Double = js.native
+  var amount_gte: Double
   
   /**
     * Indicates which line items triggered a threshold invoice.
     */
-  var item_reasons: js.Array[IItemReason] = js.native
+  var item_reasons: js.Array[IItemReason]
 }
 object IThresholdReason {
   

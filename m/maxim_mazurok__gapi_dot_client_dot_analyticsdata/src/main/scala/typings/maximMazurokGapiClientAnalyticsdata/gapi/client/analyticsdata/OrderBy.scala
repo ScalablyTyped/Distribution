@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderBy extends StObject {
   
   /** If true, sorts by descending order. */
-  var desc: js.UndefOr[Boolean] = js.native
+  var desc: js.UndefOr[Boolean] = js.undefined
   
   /** Sorts results by a dimension's values. */
-  var dimension: js.UndefOr[DimensionOrderBy] = js.native
+  var dimension: js.UndefOr[DimensionOrderBy] = js.undefined
   
   /** Sorts results by a metric's values. */
-  var metric: js.UndefOr[MetricOrderBy] = js.native
+  var metric: js.UndefOr[MetricOrderBy] = js.undefined
   
   /** Sorts results by a metric's values within a pivot column group. */
-  var pivot: js.UndefOr[PivotOrderBy] = js.native
+  var pivot: js.UndefOr[PivotOrderBy] = js.undefined
 }
 object OrderBy {
   

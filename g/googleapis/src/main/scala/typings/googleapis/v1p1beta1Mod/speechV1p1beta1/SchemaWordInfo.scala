@@ -2,13 +2,11 @@ package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Word-specific information for recognized words.
   */
-@js.native
 trait SchemaWordInfo extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaWordInfo extends StObject {
     * it to be always provided. The default of 0.0 is a sentinel value
     * indicating `confidence` was not set.
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. Time offset relative to the beginning of the audio, and
@@ -28,7 +26,7 @@ trait SchemaWordInfo extends StObject {
     * `enable_word_time_offsets=true` and only in the top hypothesis. This is
     * an experimental feature and the accuracy of the time offset can vary.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A distinct integer value is assigned for every speaker
@@ -38,7 +36,7 @@ trait SchemaWordInfo extends StObject {
     * enable_speaker_diarization = &#39;true&#39; and only in the top
     * alternative.
     */
-  var speakerTag: js.UndefOr[Double] = js.native
+  var speakerTag: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. Time offset relative to the beginning of the audio, and
@@ -46,12 +44,12 @@ trait SchemaWordInfo extends StObject {
     * `enable_word_time_offsets=true` and only in the top hypothesis. This is
     * an experimental feature and the accuracy of the time offset can vary.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The word corresponding to this set of information.
     */
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object SchemaWordInfo {
   

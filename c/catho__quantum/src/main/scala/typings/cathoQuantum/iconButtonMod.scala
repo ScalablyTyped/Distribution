@@ -15,21 +15,19 @@ import typings.cathoQuantum.cathoQuantumStrings.xsmall
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconButtonMod {
   
   type IconButton = ComponentType[IconButtonProps]
   
-  @js.native
   trait IconButtonProps extends StObject {
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
     
-    var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.native
+    var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.undefined
     
-    var theme: js.UndefOr[Spacing] = js.native
+    var theme: js.UndefOr[Spacing] = js.undefined
   }
   object IconButtonProps {
     

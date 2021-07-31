@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeViewAnimation extends StObject {
   
-  var collapse: js.UndefOr[Boolean | TreeViewAnimationCollapse] = js.native
+  var collapse: js.UndefOr[Boolean | TreeViewAnimationCollapse] = js.undefined
   
-  var expand: js.UndefOr[Boolean | TreeViewAnimationExpand] = js.native
+  var expand: js.UndefOr[Boolean | TreeViewAnimationExpand] = js.undefined
 }
 object TreeViewAnimation {
   

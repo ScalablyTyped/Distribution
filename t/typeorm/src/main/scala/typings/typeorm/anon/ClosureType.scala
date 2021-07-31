@@ -6,29 +6,27 @@ import typings.typeorm.typeormStrings.ancestor
 import typings.typeorm.typeormStrings.descendant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClosureType extends StObject {
   
-  var args: ColumnMetadataArgs = js.native
+  var args: ColumnMetadataArgs
   
-  var closureType: js.UndefOr[ancestor | descendant] = js.native
+  var closureType: js.UndefOr[ancestor | descendant] = js.undefined
   
-  var connection: typings.typeorm.connectionMod.Connection = js.native
+  var connection: typings.typeorm.connectionMod.Connection
   
-  var embeddedMetadata: js.UndefOr[typings.typeorm.embeddedMetadataMod.EmbeddedMetadata] = js.native
+  var embeddedMetadata: js.UndefOr[typings.typeorm.embeddedMetadataMod.EmbeddedMetadata] = js.undefined
   
-  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata = js.native
+  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata
   
-  var materializedPath: js.UndefOr[Boolean] = js.native
+  var materializedPath: js.UndefOr[Boolean] = js.undefined
   
-  var nestedSetLeft: js.UndefOr[Boolean] = js.native
+  var nestedSetLeft: js.UndefOr[Boolean] = js.undefined
   
-  var nestedSetRight: js.UndefOr[Boolean] = js.native
+  var nestedSetRight: js.UndefOr[Boolean] = js.undefined
   
-  var referencedColumn: js.UndefOr[ColumnMetadata] = js.native
+  var referencedColumn: js.UndefOr[ColumnMetadata] = js.undefined
 }
 object ClosureType {
   

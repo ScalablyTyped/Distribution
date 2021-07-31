@@ -11,7 +11,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a KnowledgeBases */
@@ -26,8 +25,8 @@ class KnowledgeBases protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls CreateKnowledgeBase.
@@ -96,6 +95,10 @@ class KnowledgeBases protected () extends Service {
 }
 object KnowledgeBases {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeBases")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new KnowledgeBases service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -104,18 +107,14 @@ object KnowledgeBases {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeBases.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): KnowledgeBases = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeBases.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): KnowledgeBases = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeBases.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): KnowledgeBases = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.KnowledgeBases.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): KnowledgeBases = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): KnowledgeBases = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBases]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.KnowledgeBases#createKnowledgeBase}.

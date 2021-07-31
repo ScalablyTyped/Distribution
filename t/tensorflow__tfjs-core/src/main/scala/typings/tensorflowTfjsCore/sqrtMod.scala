@@ -5,15 +5,14 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqrtMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/sqrt", "sqrt")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/sqrt", JSImport.Namespace)
   @js.native
-  def sqrt[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/sqrt", "sqrt")
-  @js.native
-  def sqrt[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sqrt[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

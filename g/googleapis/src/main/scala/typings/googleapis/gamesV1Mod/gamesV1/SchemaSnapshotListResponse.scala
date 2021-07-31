@@ -2,31 +2,29 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of snapshot objects.
   */
-@js.native
 trait SchemaSnapshotListResponse extends StObject {
   
   /**
     * The snapshots.
     */
-  var items: js.UndefOr[js.Array[SchemaSnapshot]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSnapshot]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#snapshotListResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token corresponding to the next page of results. If there are no more
     * results, the token is omitted.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaSnapshotListResponse {
   

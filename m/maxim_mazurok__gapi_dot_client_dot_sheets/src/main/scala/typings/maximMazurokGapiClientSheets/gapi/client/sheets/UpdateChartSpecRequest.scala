@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChartSpecRequest extends StObject {
   
   /** The ID of the chart to update. */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /** The specification to apply to the chart. */
-  var spec: js.UndefOr[ChartSpec] = js.native
+  var spec: js.UndefOr[ChartSpec] = js.undefined
 }
 object UpdateChartSpecRequest {
   

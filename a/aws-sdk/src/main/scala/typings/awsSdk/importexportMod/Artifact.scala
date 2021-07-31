@@ -2,15 +2,13 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
-  var Description: js.UndefOr[typings.awsSdk.importexportMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.importexportMod.Description] = js.undefined
   
-  var URL: js.UndefOr[typings.awsSdk.importexportMod.URL] = js.native
+  var URL: js.UndefOr[typings.awsSdk.importexportMod.URL] = js.undefined
 }
 object Artifact {
   

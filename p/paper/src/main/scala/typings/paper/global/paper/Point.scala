@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -13,12 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.Point")
 @js.native
 class Point protected ()
-  extends typings.paper.paper.Point {
+  extends StObject
+     with typings.paper.paper.Point {
   /** 
     * Creates a Point object using the numbers in the given array as
     * coordinates.
     */
-  def this(array: js.Array[_]) = this()
+  def this(array: js.Array[js.Any]) = this()
   /** 
     * Creates a Point object using the properties in the given object.
     * 
@@ -44,6 +44,10 @@ class Point protected ()
 }
 object Point {
   
+  @JSGlobal("paper.Point")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** 
     * Returns a new point object with the largest {@link #x} and
     * {@link #y} of the supplied points.
@@ -51,9 +55,8 @@ object Point {
     * @return the newly created point object
     */
   /* static member */
-  @JSGlobal("paper.Point.max")
-  @js.native
-  def max(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
+  @scala.inline
+  def max(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Point]
   
   /** 
     * Returns a new point object with the smallest {@link #x} and
@@ -62,9 +65,8 @@ object Point {
     * @return the newly created point object
     */
   /* static member */
-  @JSGlobal("paper.Point.min")
-  @js.native
-  def min(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
+  @scala.inline
+  def min(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Point]
   
   /** 
     * Returns a point object with random {@link #x} and {@link #y} values
@@ -73,7 +75,6 @@ object Point {
     * @return the newly created point object
     */
   /* static member */
-  @JSGlobal("paper.Point.random")
-  @js.native
-  def random(): typings.paper.paper.Point = js.native
+  @scala.inline
+  def random(): typings.paper.paper.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Point]
 }

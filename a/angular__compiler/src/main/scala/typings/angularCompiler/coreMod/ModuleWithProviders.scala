@@ -2,20 +2,18 @@ package typings.angularCompiler.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleWithProviders extends StObject {
   
-  var ngModule: typings.angularCompiler.coreMod.Type = js.native
+  var ngModule: Type
   
-  var providers: js.UndefOr[js.Array[Provider]] = js.native
+  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
 }
 object ModuleWithProviders {
   
   @scala.inline
-  def apply(ngModule: typings.angularCompiler.coreMod.Type): ModuleWithProviders = {
+  def apply(ngModule: Type): ModuleWithProviders = {
     val __obj = js.Dynamic.literal(ngModule = ngModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleWithProviders]
   }
@@ -24,7 +22,7 @@ object ModuleWithProviders {
   implicit class ModuleWithProvidersMutableBuilder[Self <: ModuleWithProviders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setNgModule(value: typings.angularCompiler.coreMod.Type): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+    def setNgModule(value: Type): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])

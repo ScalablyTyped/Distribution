@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USD extends StObject {
   
   /**
     * The fractional portion, in cents, of the amount. 
     */
-  var Cents: js.UndefOr[typings.awsSdk.sagemakerMod.Cents] = js.native
+  var Cents: js.UndefOr[typings.awsSdk.sagemakerMod.Cents] = js.undefined
   
   /**
     * The whole number of dollars in the amount.
     */
-  var Dollars: js.UndefOr[typings.awsSdk.sagemakerMod.Dollars] = js.native
+  var Dollars: js.UndefOr[typings.awsSdk.sagemakerMod.Dollars] = js.undefined
   
   /**
     * Fractions of a cent, in tenths.
     */
-  var TenthFractionsOfACent: js.UndefOr[typings.awsSdk.sagemakerMod.TenthFractionsOfACent] = js.native
+  var TenthFractionsOfACent: js.UndefOr[typings.awsSdk.sagemakerMod.TenthFractionsOfACent] = js.undefined
 }
 object USD {
   

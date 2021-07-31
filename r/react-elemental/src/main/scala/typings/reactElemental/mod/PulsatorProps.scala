@@ -3,21 +3,19 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PulsatorProps extends StObject {
   
-  val color: js.UndefOr[String] = js.native
+  val color: js.UndefOr[String] = js.undefined
   
-  val inactive: js.UndefOr[Boolean] = js.native
+  val inactive: js.UndefOr[Boolean] = js.undefined
   
-  val size: js.UndefOr[PulsatorSize] = js.native
+  val size: js.UndefOr[PulsatorSize] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val transparent: js.UndefOr[Boolean] = js.native
+  val transparent: js.UndefOr[Boolean] = js.undefined
 }
 object PulsatorProps {
   

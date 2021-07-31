@@ -2,21 +2,19 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDiscovererRequest extends StObject {
   
   /**
     * The description of the discoverer to update.
     */
-  var Description: js.UndefOr[stringMin0Max256] = js.native
+  var Description: js.UndefOr[stringMin0Max256] = js.undefined
   
   /**
     * The ID of the discoverer.
     */
-  var DiscovererId: string = js.native
+  var DiscovererId: string
 }
 object UpdateDiscovererRequest {
   

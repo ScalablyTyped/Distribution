@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object efs {
   
-  @js.native
   trait AccessPointPosixUser extends StObject {
     
     /**
       * The POSIX group ID used for all file system operations using this access point.
       */
-    var gid: Double = js.native
+    var gid: Double
     
     /**
       * Secondary POSIX group IDs used for all file system operations using this access point.
       */
-    var secondaryGids: js.UndefOr[js.Array[Double]] = js.native
+    var secondaryGids: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The POSIX user ID used for all file system operations using this access point.
       */
-    var uid: Double = js.native
+    var uid: Double
   }
   object AccessPointPosixUser {
     
@@ -53,18 +51,17 @@ object efs {
     }
   }
   
-  @js.native
   trait AccessPointRootDirectory extends StObject {
     
     /**
       * Specifies the POSIX IDs and permissions to apply to the access point's Root Directory. See Creation Info below.
       */
-    var creationInfo: AccessPointRootDirectoryCreationInfo = js.native
+    var creationInfo: AccessPointRootDirectoryCreationInfo
     
     /**
       * Specifies the path on the EFS file system to expose as the root directory to NFS clients using the access point to access the EFS file system. A path can have up to four subdirectories. If the specified path does not exist, you are required to provide `creationInfo`.
       */
-    var path: String = js.native
+    var path: String
   }
   object AccessPointRootDirectory {
     
@@ -85,23 +82,22 @@ object efs {
     }
   }
   
-  @js.native
   trait AccessPointRootDirectoryCreationInfo extends StObject {
     
     /**
       * Specifies the POSIX group ID to apply to the `rootDirectory`.
       */
-    var ownerGid: Double = js.native
+    var ownerGid: Double
     
     /**
       * Specifies the POSIX user ID to apply to the `rootDirectory`.
       */
-    var ownerUid: Double = js.native
+    var ownerUid: Double
     
     /**
       * Specifies the POSIX permissions to apply to the RootDirectory, in the format of an octal number representing the file's mode bits.
       */
-    var permissions: String = js.native
+    var permissions: String
   }
   object AccessPointRootDirectoryCreationInfo {
     
@@ -125,13 +121,12 @@ object efs {
     }
   }
   
-  @js.native
   trait FileSystemLifecyclePolicy extends StObject {
     
     /**
       * Indicates how long it takes to transition files to the IA storage class. Valid values: `AFTER_7_DAYS`, `AFTER_14_DAYS`, `AFTER_30_DAYS`, `AFTER_60_DAYS`, or `AFTER_90_DAYS`.
       */
-    var transitionToIa: String = js.native
+    var transitionToIa: String
   }
   object FileSystemLifecyclePolicy {
     
@@ -149,24 +144,23 @@ object efs {
     }
   }
   
-  @js.native
   trait GetAccessPointPosixUser extends StObject {
     
     /**
       * Group ID
       */
-    var gid: Double = js.native
+    var gid: Double
     
     /**
       * Secondary group IDs
       */
-    var secondaryGids: js.Array[Double] = js.native
+    var secondaryGids: js.Array[Double]
     
     /**
       * User Id
       * * `rootDirectory`- Single element list containing information on the directory on the Amazon EFS file system that the access point provides access to.
       */
-    var uid: Double = js.native
+    var uid: Double
   }
   object GetAccessPointPosixUser {
     
@@ -193,18 +187,17 @@ object efs {
     }
   }
   
-  @js.native
   trait GetAccessPointRootDirectory extends StObject {
     
     /**
       * Single element list containing information on the creation permissions of the directory
       */
-    var creationInfos: js.Array[GetAccessPointRootDirectoryCreationInfo] = js.native
+    var creationInfos: js.Array[GetAccessPointRootDirectoryCreationInfo]
     
     /**
       * Path exposed as the root directory
       */
-    var path: String = js.native
+    var path: String
   }
   object GetAccessPointRootDirectory {
     
@@ -228,23 +221,22 @@ object efs {
     }
   }
   
-  @js.native
   trait GetAccessPointRootDirectoryCreationInfo extends StObject {
     
     /**
       * POSIX owner group ID
       */
-    var ownerGid: Double = js.native
+    var ownerGid: Double
     
     /**
       * POSIX owner user ID
       */
-    var ownerUid: Double = js.native
+    var ownerUid: Double
     
     /**
       * POSIX permissions mode
       */
-    var permissions: String = js.native
+    var permissions: String
   }
   object GetAccessPointRootDirectoryCreationInfo {
     
@@ -268,10 +260,9 @@ object efs {
     }
   }
   
-  @js.native
   trait GetFileSystemLifecyclePolicy extends StObject {
     
-    var transitionToIa: String = js.native
+    var transitionToIa: String
   }
   object GetFileSystemLifecyclePolicy {
     

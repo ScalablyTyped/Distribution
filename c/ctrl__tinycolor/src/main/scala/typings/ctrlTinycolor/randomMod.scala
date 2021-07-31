@@ -15,42 +15,41 @@ import typings.ctrlTinycolor.ctrlTinycolorStrings.yellow
 import typings.ctrlTinycolor.distMod.TinyColor_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object randomMod {
+  
+  @JSImport("@ctrl/tinycolor/dist/random", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ctrl/tinycolor/dist/random", "bounds")
   @js.native
   val bounds: js.Array[ColorBound] = js.native
   
-  @JSImport("@ctrl/tinycolor/dist/random", "random")
-  @js.native
-  def random(): TinyColor_ = js.native
-  @JSImport("@ctrl/tinycolor/dist/random", "random")
-  @js.native
-  def random(options: RandomCountOptions): js.Array[TinyColor_] = js.native
-  @JSImport("@ctrl/tinycolor/dist/random", "random")
-  @js.native
-  def random(options: RandomOptions): TinyColor_ = js.native
-  @JSImport("@ctrl/tinycolor/dist/random", "random")
-  @js.native
-  def random_Array(): js.Array[TinyColor_] = js.native
+  @scala.inline
+  def random(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[TinyColor_]
+  @scala.inline
+  def random(options: RandomCountOptions): js.Array[TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[TinyColor_]]
+  @scala.inline
+  def random(options: RandomOptions): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(options.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
   
-  @js.native
+  @scala.inline
+  def random_Array(): js.Array[TinyColor_] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[js.Array[TinyColor_]]
+  
   trait ColorBound extends StObject {
     
-    var hueRange: (js.Tuple2[Double, Double]) | Null = js.native
+    var hueRange: (js.Tuple2[Double, Double]) | Null
     
-    var lowerBounds: js.Array[js.Tuple2[Double, Double]] = js.native
+    var lowerBounds: js.Array[js.Tuple2[Double, Double]]
     
-    var name: String = js.native
+    var name: String
   }
   object ColorBound {
     
     @scala.inline
     def apply(lowerBounds: js.Array[js.Tuple2[Double, Double]], name: String): ColorBound = {
-      val __obj = js.Dynamic.literal(lowerBounds = lowerBounds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(lowerBounds = lowerBounds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], hueRange = null)
       __obj.asInstanceOf[ColorBound]
     }
     
@@ -74,10 +73,11 @@ object randomMod {
     }
   }
   
-  @js.native
-  trait RandomCountOptions extends RandomOptions {
+  trait RandomCountOptions
+    extends StObject
+       with RandomOptions {
     
-    var count: js.UndefOr[Double | Null] = js.native
+    var count: js.UndefOr[Double | Null] = js.undefined
   }
   object RandomCountOptions {
     
@@ -101,18 +101,17 @@ object randomMod {
     }
   }
   
-  @js.native
   trait RandomOptions extends StObject {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
     var hue: js.UndefOr[
         Double | String | red | orange | yellow | green | blue | purple | pink | monochrome
-      ] = js.native
+      ] = js.undefined
     
-    var luminosity: js.UndefOr[random | bright | dark | light] = js.native
+    var luminosity: js.UndefOr[random | bright | dark | light] = js.undefined
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
   }
   object RandomOptions {
     

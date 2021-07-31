@@ -3,20 +3,23 @@ package typings.nodeEasyCert
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-easy-cert", JSImport.Namespace)
-  @js.native
-  def apply(options: CertManagerOptions): CertManager = js.native
+  @scala.inline
+  def apply(options: CertManagerOptions): CertManager = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CertManager]
   
   @JSImport("node-easy-cert", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CertManager {
+  class ^ protected ()
+    extends StObject
+       with CertManager {
     def this(options: CertManagerOptions) = this()
   }
+  @JSImport("node-easy-cert", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS
@@ -45,7 +48,7 @@ object mod {
       * @param callback Optional callback called when all certificates are cleared.
       */
     def clearCerts(): Unit = js.native
-    def clearCerts(callback: js.Function0[_]): Unit = js.native
+    def clearCerts(callback: js.Function0[js.Any]): Unit = js.native
     
     /**
       * Generates a new Root CA certificate.
@@ -84,17 +87,16 @@ object mod {
     def isRootCAFileExists(): Boolean = js.native
   }
   
-  @js.native
   trait CertManagerOptions extends StObject {
     
     /** The default attributes of a generated cert, you can change it here */
-    var defaultCertAttrs: js.UndefOr[js.Array[CertificateAttribute]] = js.native
+    var defaultCertAttrs: js.UndefOr[js.Array[CertificateAttribute]] = js.undefined
     
     /**
       * Path where certificates should be stored.
       * @default "/{USER_HOME}/{.node_easy_certs}/"
       */
-    var rootDirPath: js.UndefOr[String] = js.native
+    var rootDirPath: js.UndefOr[String] = js.undefined
   }
   object CertManagerOptions {
     
@@ -144,12 +146,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait CertificateAttributeName extends CertificateAttribute {
+  trait CertificateAttributeName
+    extends StObject
+       with CertificateAttribute {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object CertificateAttributeName {
     
@@ -170,12 +173,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait CertificateAttributeShortName extends CertificateAttribute {
+  trait CertificateAttributeShortName
+    extends StObject
+       with CertificateAttribute {
     
-    var shortName: String = js.native
+    var shortName: String
     
-    var value: String = js.native
+    var value: String
   }
   object CertificateAttributeShortName {
     
@@ -203,17 +207,16 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait GenerateConfig extends StObject {
     
     /** The Common Name for the new certificate. */
-    var commonName: String = js.native
+    var commonName: String
     
     /**
       * Should overwrite any existing file.
       * @default false
       */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
   }
   object GenerateConfig {
     

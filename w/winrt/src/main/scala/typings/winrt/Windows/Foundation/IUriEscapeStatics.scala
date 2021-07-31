@@ -2,15 +2,13 @@ package typings.winrt.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUriEscapeStatics extends StObject {
   
-  def escapeComponent(toEscape: String): String = js.native
+  def escapeComponent(toEscape: String): String
   
-  def unescapeComponent(toUnescape: String): String = js.native
+  def unescapeComponent(toUnescape: String): String
 }
 object IUriEscapeStatics {
   

@@ -2,46 +2,44 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An overlay that covers an area of the map with bitmap tiles.
   */
-@js.native
 trait TileOverlay extends StObject {
   
   /**
     * Custom data used to populate the URL template.
     */
-  var data: js.Object = js.native
+  var data: js.Object
   
   /**
     * Maximum zoom level of the overlay.
     */
-  var maximumZ: Double = js.native
+  var maximumZ: Double
   
   /**
     * Minimum zoom level of the overlay.
     */
-  var minimumZ: Double = js.native
+  var minimumZ: Double
   
   /**
     * Opacity level of the overlay.
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Reloads the tile overlay for the displayed map region with the latest
     * data values.
     */
-  def reload(): Unit = js.native
+  def reload(): Unit
   
   /**
     * A string, or callback function that returns a string, with a URL that
     * provides the requested tile.
     */
-  var urlTemplate: String | URLTemplateCallback = js.native
+  var urlTemplate: String | URLTemplateCallback
 }
 object TileOverlay {
   

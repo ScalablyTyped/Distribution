@@ -2,16 +2,14 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'dy' | 'input'> */
-@js.native
 trait AvgPool3DBackpropInputs extends StObject {
   
-  var dy: js.UndefOr[js.Any] = js.native
+  var dy: js.UndefOr[js.Any] = js.undefined
   
-  var input: js.UndefOr[js.Any] = js.native
+  var input: js.UndefOr[js.Any] = js.undefined
 }
 object AvgPool3DBackpropInputs {
   

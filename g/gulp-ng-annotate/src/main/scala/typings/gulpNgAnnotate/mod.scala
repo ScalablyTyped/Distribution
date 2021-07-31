@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,48 +15,47 @@ object mod extends Shortcut {
   type NgAnnotate = js.Function1[/* option */ js.UndefOr[Option], ReadWriteStream]
   
   //TODO: Should be on ng-annotate module
-  @js.native
   trait Option extends StObject {
     
     /**
       * Add annotations where non-existing
       */
-    var add: js.UndefOr[Boolean] = js.native
+    var add: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable optional matcher
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * List optional matchers
       */
-    var list: js.UndefOr[Boolean] = js.native
+    var list: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Load a user plugin with the provided path
       */
-    var plugin: js.UndefOr[js.Array[_]] = js.native
+    var plugin: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Restrict matching further or to expand matching
       */
-    var regexp: js.UndefOr[String] = js.native
+    var regexp: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all existing annotations
       */
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Rename providers (services, factories, controllers, etc.) with a new name when declared and referenced through annotation
       */
-    var rename: js.UndefOr[js.Array[RenameOption]] = js.native
+    var rename: js.UndefOr[js.Array[RenameOption]] = js.undefined
     
     /**
       * Output '$scope' instead of "$scope".
       */
-    var single_quotes: js.UndefOr[Boolean] = js.native
+    var single_quotes: js.UndefOr[Boolean] = js.undefined
   }
   object Option {
     
@@ -89,7 +87,7 @@ object mod extends Shortcut {
       def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
       @scala.inline
-      def setPlugin(value: js.Array[_]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      def setPlugin(value: js.Array[js.Any]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
@@ -126,12 +124,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RenameOption extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var to: String = js.native
+    var to: String
   }
   object RenameOption {
     

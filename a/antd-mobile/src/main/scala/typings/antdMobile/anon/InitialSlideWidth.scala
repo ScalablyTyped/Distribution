@@ -2,13 +2,11 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitialSlideWidth extends StObject {
   
-  var initialSlideWidth: Double = js.native
+  var initialSlideWidth: Double
 }
 object InitialSlideWidth {
   

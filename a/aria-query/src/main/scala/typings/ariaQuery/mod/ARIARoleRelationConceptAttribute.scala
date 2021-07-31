@@ -4,19 +4,17 @@ import typings.ariaQuery.ariaQueryStrings.Greaterthansign1
 import typings.ariaQuery.ariaQueryStrings.unset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIARoleRelationConceptAttribute extends StObject {
   
   // These constraints are drawn from the mapping between ARIA and HTML:
   // https://www.w3.org/TR/html-aria
-  var constraints: js.UndefOr[js.Array[unset | Greaterthansign1]] = js.native
+  var constraints: js.UndefOr[js.Array[unset | Greaterthansign1]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object ARIARoleRelationConceptAttribute {
   

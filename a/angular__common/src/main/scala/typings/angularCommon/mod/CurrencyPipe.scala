@@ -6,12 +6,13 @@ import typings.angularCommon.angularCommonStrings.symbol
 import typings.angularCore.mod.PipeTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "CurrencyPipe")
 @js.native
-class CurrencyPipe protected () extends PipeTransform {
+class CurrencyPipe protected ()
+  extends StObject
+     with PipeTransform {
   def this(_locale: String) = this()
   def this(_locale: String, _defaultCurrencyCode: String) = this()
   
@@ -26,6 +27,8 @@ class CurrencyPipe protected () extends PipeTransform {
     digitsInfo: js.UndefOr[String],
     locale: js.UndefOr[String]
   ): Null = js.native
+  /* CompleteClass */
+  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
   /**
     *
     * @param value The number to be formatted as currency.

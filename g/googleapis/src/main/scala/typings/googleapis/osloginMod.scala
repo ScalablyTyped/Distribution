@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object osloginMod {
+  
+  @JSImport("googleapis/build/src/apis/oslogin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -118,9 +121,12 @@ object osloginMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/oslogin", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/oslogin", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -164,22 +170,19 @@ object osloginMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/oslogin", "oslogin")
-  @js.native
-  def oslogin(options: Options): Oslogin = js.native
-  @JSImport("googleapis/build/src/apis/oslogin", "oslogin")
-  @js.native
-  def oslogin(options: typings.googleapis.osloginV1alphaMod.osloginV1alpha.Options): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = js.native
-  @JSImport("googleapis/build/src/apis/oslogin", "oslogin")
-  @js.native
-  def oslogin(options: typings.googleapis.osloginV1betaMod.osloginV1beta.Options): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = js.native
-  @JSImport("googleapis/build/src/apis/oslogin", "oslogin")
-  @js.native
-  def oslogin_v1(version: v1): Oslogin = js.native
-  @JSImport("googleapis/build/src/apis/oslogin", "oslogin")
-  @js.native
-  def oslogin_v1alpha(version: v1alpha): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = js.native
-  @JSImport("googleapis/build/src/apis/oslogin", "oslogin")
-  @js.native
-  def oslogin_v1beta(version: v1beta): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = js.native
+  @scala.inline
+  def oslogin(options: Options): Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[Oslogin]
+  @scala.inline
+  def oslogin(options: typings.googleapis.osloginV1alphaMod.osloginV1alpha.Options): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin]
+  @scala.inline
+  def oslogin(options: typings.googleapis.osloginV1betaMod.osloginV1beta.Options): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin]
+  
+  @scala.inline
+  def oslogin_v1(version: v1): Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[Oslogin]
+  
+  @scala.inline
+  def oslogin_v1alpha(version: v1alpha): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin]
+  
+  @scala.inline
+  def oslogin_v1beta(version: v1beta): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin]
 }

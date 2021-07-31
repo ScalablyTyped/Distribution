@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Data.Text
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reverse-converts a Japanese string which is mix of phonetic and ideographic characters, to a string of phonetic characters. */
-@js.native
 trait TextReverseConversionGenerator extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait TextReverseConversionGenerator extends StObject {
     * @param input The string containing ideographic characters to be reverse-converted.
     * @return An asynchronous operation to return the phonetic expression.
     */
-  def convertBackAsync(input: String): IPromiseWithIAsyncOperation[String] = js.native
+  def convertBackAsync(input: String): IPromiseWithIAsyncOperation[String]
   
   /** Determines if the language tag specified is available for reverse conversions, but is not installed on the user's device. */
-  var languageAvailableButNotInstalled: Boolean = js.native
+  var languageAvailableButNotInstalled: Boolean
   
   /** Gets the language tag of the successfully created TextReverseConversionGenerator object. */
-  var resolvedLanguage: String = js.native
+  var resolvedLanguage: String
 }
 object TextReverseConversionGenerator {
   

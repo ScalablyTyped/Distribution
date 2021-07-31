@@ -17,16 +17,14 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dygraphs {
   
-  @js.native
   trait Annotation extends StObject {
     
     /**    If true, attach annotations to the x-axis, rather than to actual points. */
-    var attachAtBottom: js.UndefOr[Boolean] = js.native
+    var attachAtBottom: js.UndefOr[Boolean] = js.undefined
     
     /** This function is called whenever the user clicks on this annotation. */
     var clickHandler: js.UndefOr[
@@ -35,12 +33,12 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**    CSS class to use for styling the annotation. */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** this function is called whenever the user double-clicks on this annotation. */
     var dblClickHandler: js.UndefOr[
@@ -49,20 +47,20 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var div: js.UndefOr[HTMLDivElement] = js.native
+    var div: js.UndefOr[HTMLDivElement] = js.undefined
     
     /** Height (in pixels) of the annotation flag or icon. */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify in place of shortText to mark the annotation with an image rather than text.
       * If you specify this, you must specify width and height.
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** This function is called whenever the user mouses out of this annotation. */
     var mouseOutHandler: js.UndefOr[
@@ -71,9 +69,9 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** This function is called whenever the user mouses over this annotation. */
     var mouseOverHandler: js.UndefOr[
@@ -82,36 +80,36 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** The name of the series to which the annotated point belongs. */
-    var series: String = js.native
+    var series: String
     
     /**    Text that will appear on the annotation's flag. */
-    var shortText: js.UndefOr[String] = js.native
+    var shortText: js.UndefOr[String] = js.undefined
     
     /** A longer description of the annotation which will appear when the user hovers over it. */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**    Height of the tick mark (in pixels) connecting the point to its flag or icon. */
-    var tickHeight: js.UndefOr[Double] = js.native
+    var tickHeight: js.UndefOr[Double] = js.undefined
     
     /**    Width (in pixels) of the annotation flag or icon. */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * The x value of the point. This should be the same as the value
       * you specified in your CSV file, e.g. "2010-09-13".
       * You must set either x or xval.
       */
-    var x: js.UndefOr[Double | String] = js.native
+    var x: js.UndefOr[Double | String] = js.undefined
     
     /**
       * numeric value of the point, or millis since epoch.
       */
-    var xval: js.UndefOr[Double] = js.native
+    var xval: js.UndefOr[Double] = js.undefined
   }
   object Annotation {
     
@@ -131,7 +129,7 @@ object dygraphs {
       def setAttachAtBottomUndefined: Self = StObject.set(x, "attachAtBottom", js.undefined)
       
       @scala.inline
-      def setClickHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = StObject.set(x, "clickHandler", js.Any.fromFunction4(value))
+      def setClickHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction4(value))
       
       @scala.inline
       def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
@@ -143,7 +141,7 @@ object dygraphs {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setDblClickHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = StObject.set(x, "dblClickHandler", js.Any.fromFunction4(value))
+      def setDblClickHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "dblClickHandler", js.Any.fromFunction4(value))
       
       @scala.inline
       def setDblClickHandlerUndefined: Self = StObject.set(x, "dblClickHandler", js.undefined)
@@ -167,13 +165,13 @@ object dygraphs {
       def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
       @scala.inline
-      def setMouseOutHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction4(value))
+      def setMouseOutHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOutHandler", js.Any.fromFunction4(value))
       
       @scala.inline
       def setMouseOutHandlerUndefined: Self = StObject.set(x, "mouseOutHandler", js.undefined)
       
       @scala.inline
-      def setMouseOverHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction4(value))
+      def setMouseOverHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "mouseOverHandler", js.Any.fromFunction4(value))
       
       @scala.inline
       def setMouseOverHandlerUndefined: Self = StObject.set(x, "mouseOverHandler", js.undefined)
@@ -219,16 +217,15 @@ object dygraphs {
     }
   }
   
-  @js.native
   trait Area extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Area {
     
@@ -277,28 +274,27 @@ object dygraphs {
   
   type DataArray = js.Array[js.Array[Double | Date | Null]]
   
-  @js.native
   trait LegendData extends StObject {
     
     /**
       * Dygraph object for this graph
       */
-    var dygraph: Dygraph = js.native
+    var dygraph: Dygraph
     
     /**
       * Series data for the highlighted points
       */
-    var series: js.Array[SeriesLegendData] = js.native
+    var series: js.Array[SeriesLegendData]
     
     /**
       * x value of highlighted points
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * Generated HTML for x value
       */
-    var xHTML: String = js.native
+    var xHTML: String
   }
   object LegendData {
     
@@ -328,9 +324,9 @@ object dygraphs {
     }
   }
   
-  @js.native
   trait Options
-    extends PerSeriesOptions
+    extends StObject
+       with PerSeriesOptions
        with PerAxisOptions {
     
     /**
@@ -339,7 +335,7 @@ object dygraphs {
       * times on each zoom. If you set a zoomCallback, it will only be called after the animation
       * is complete.
       */
-    var animatedZooms: js.UndefOr[Boolean] = js.native
+    var animatedZooms: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If provided, this function is called whenever the user clicks on an annotation.
@@ -350,9 +346,9 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If provided, this function is called whenever the user double-clicks on an annotation.
@@ -363,9 +359,9 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If provided, this function is called whenever the user mouses out of an annotation.
@@ -376,9 +372,9 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If provided, this function is called whenever the user mouses over an annotation.
@@ -389,9 +385,9 @@ object dygraphs {
           /* point */ Point, 
           /* dygraph */ Dygraph, 
           /* event */ MouseEvent, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Defines per-axis options. Valid keys are 'x', 'y' and 'y2'. Only some options may be set
@@ -399,33 +395,33 @@ object dygraphs {
       * See also documentation on <a href='http://dygraphs.com/per-axis.html'>per-series and
       * per-axis options</a>.
       */
-    var axes: js.UndefOr[X] = js.native
+    var axes: js.UndefOr[X] = js.undefined
     
     /**
       * A function to call when the canvas is clicked.
       */
     var clickCallback: js.UndefOr[
-        js.Function3[/* e */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point], _]
-      ] = js.native
+        js.Function3[/* e */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point], js.Any]
+      ] = js.undefined
     
     /**
       * If <strong>colors</strong> is not specified, saturation of the automatically-generated
       * data series colors. (0.0-1.0).
       */
-    var colorSaturation: js.UndefOr[Double] = js.native
+    var colorSaturation: js.UndefOr[Double] = js.undefined
     
     /**
       * If colors is not specified, value of the data series colors, as in hue/saturation/value.
       * (0.0-1.0, default 0.5)
       */
-    var colorValue: js.UndefOr[Double] = js.native
+    var colorValue: js.UndefOr[Double] = js.undefined
     
     /**
       * List of colors for the data series. These can be of the form "#AABBCC" or
       * "rgb(255,100,200)" or "yellow", etc. If not specified, equally-spaced points around a
       * color wheel are used. Overridden by the 'color' option.
       */
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Usually, when Dygraphs encounters a missing value in a data series, it interprets this as
@@ -433,31 +429,31 @@ object dygraphs {
       * which only a different series has data, then you'll want to connect the dots by setting
       * this to true. To explicitly include a gap with this option set, use a value of NaN.
       */
-    var connectSeparatedPoints: js.UndefOr[Boolean] = js.native
+    var connectSeparatedPoints: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set, parse each CSV cell as "low;middle;high". Error bars will be drawn for each
       * point between low and high, with the series itself going through middle.
       */
-    var customBars: js.UndefOr[Boolean] = js.native
+    var customBars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom DataHandler. This is an advanced customization. See http://bit.ly/151E7Aq.
       */
-    var dataHandler: js.UndefOr[js.Any] = js.native
+    var dataHandler: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Initially zoom in on a section of the graph. Is of the form [earliest, latest], where
       * earliest/latest are milliseconds since epoch. If the data for the x-axis is numeric, the
       * values in dateWindow must also be numbers.
       */
-    var dateWindow: js.UndefOr[js.Array[Double]] = js.native
+    var dateWindow: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The delimiter to look for when separating fields of a CSV file. Setting this to a tab is
       * not usually necessary, since tab-delimited data is auto-detected.
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Unless it's run in scientific mode (see the <code>sigFigs</code> option), dygraphs
@@ -467,33 +463,33 @@ object dygraphs {
       * less than 0.1^digitsAfterDecimal (i.e. those which would show up as '0.00') will be
       * displayed in scientific notation.
       */
-    var digitsAfterDecimal: js.UndefOr[Double] = js.native
+    var digitsAfterDecimal: js.UndefOr[Double] = js.undefined
     
     /**
       * Only applies when Dygraphs is used as a GViz chart. Causes string columns following a data
       * series to be interpreted as annotations on points in that series. This is the same format
       * used by Google's AnnotatedTimeLine chart.
       */
-    var displayAnnotations: js.UndefOr[Boolean] = js.native
+    var displayAnnotations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set, draw the X axis at the Y=0 position and the Y axis at the X=0 position if those
       * positions are inside the graph's visible area. Otherwise, draw the axes at the bottom or
       * left graph edge as usual.
       */
-    var drawAxesAtZero: js.UndefOr[Boolean] = js.native
+    var drawAxesAtZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set, this callback gets called every time the dygraph is drawn. This includes the
       * initial draw, after zooming and repeatedly while panning.
       */
-    var drawCallback: js.UndefOr[js.Function2[/* dygraph */ Dygraph, /* is_initial */ Boolean, _]] = js.native
+    var drawCallback: js.UndefOr[js.Function2[/* dygraph */ Dygraph, /* is_initial */ Boolean, js.Any]] = js.undefined
     
     /**
       * Draw points at the edges of gaps in the data. This improves visibility of small data
       * segments or other data irregularities.
       */
-    var drawGapEdgePoints: js.UndefOr[Boolean] = js.native
+    var drawGapEdgePoints: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Draw a custom item when a point is highlighted.    Default is a small dot matching the
@@ -509,9 +505,9 @@ object dygraphs {
           /* cy */ Double, 
           /* color */ String, 
           /* pointSize */ Double, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Draw a custom item when drawPoints is enabled. Default is a small dot matching the series
@@ -527,39 +523,39 @@ object dygraphs {
           /* cy */ Double, 
           /* color */ String, 
           /* pointSize */ Double, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Does the data contain standard deviations? Setting this to true alters the input format.
       */
-    var errorBars: js.UndefOr[Boolean] = js.native
+    var errorBars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the data being displayed in the chart. This can only be set when calling
       * updateOptions; it cannot be set from the constructor. For a full description of valid data
       * formats, see the <a href='http://dygraphs.com/data.html'>Data Formats</a> page.
       */
-    var file: js.UndefOr[Data] = js.native
+    var file: js.UndefOr[Data] = js.undefined
     
     /**
       * When set, attempt to parse each cell in the CSV file as "a/b", where a and b are integers.
       * The ratio will be plotted. This allows computation of Wilson confidence intervals (see
       * below).
       */
-    var fractions: js.UndefOr[Boolean] = js.native
+    var fractions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Height, in pixels, of the chart. If the container div has been explicitly sized, this will
       * be ignored.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to hide the legend when the mouse leaves the chart area.
       */
-    var hideOverlayOnMouseOut: js.UndefOr[Boolean] = js.native
+    var hideOverlayOnMouseOut: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set, this callback gets called every time a new point is highlighted.
@@ -571,37 +567,37 @@ object dygraphs {
           /* points */ js.Array[Point], 
           /* row */ Double, 
           /* seriesName */ String, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Fade the background while highlighting series. 1=fully visible background (disable
       * fading), 0=hiddden background (show highlighted series only).
       */
-    var highlightSeriesBackgroundAlpha: js.UndefOr[Double] = js.native
+    var highlightSeriesBackgroundAlpha: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the background color used to fade out the series in conjunction with 'highlightSeriesBackgroundAlpha'.
       * Default: rgb(255, 255, 255)
       */
-    var highlightSeriesBackgroundColor: js.UndefOr[String] = js.native
+    var highlightSeriesBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * When set, the options from this object are applied to the timeseries closest to the mouse
       * pointer for interactive highlighting. See also 'highlightCallback'. Example:
       * highlightSeriesOpts: { strokeWidth: 3 }.
       */
-    var highlightSeriesOpts: js.UndefOr[PerSeriesOptions] = js.native
+    var highlightSeriesOpts: js.UndefOr[PerSeriesOptions] = js.undefined
     
     /**
       * Usually, dygraphs will use the range of the data plus some padding to set the range of the
       * y-axis. If this option is set, the y-axis will always include zero, typically as the
       * lowest value. This can be used to avoid exaggerating the variance in the data
       */
-    var includeZero: js.UndefOr[Boolean] = js.native
+    var includeZero: js.UndefOr[Boolean] = js.undefined
     
-    var interactionModel: js.UndefOr[js.Any] = js.native
+    var interactionModel: js.UndefOr[js.Any] = js.undefined
     
     /**
       * When this option is passed to updateOptions() along with either the
@@ -610,106 +606,106 @@ object dygraphs {
       * is changed programmatically and also where manual zooming is allowed and use is made of
       * the <code>isZoomed</code> method to determine this.
       */
-    var isZoomedIgnoreProgrammaticZoom: js.UndefOr[Boolean] = js.native
+    var isZoomedIgnoreProgrammaticZoom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A name for each data series, including the independent (X) series. For CSV files and
       * DataTable objections, this is determined by context. For raw data, this must be specified.
       * If it is not, default values are supplied and a warning is logged.
       */
-    var labels: js.UndefOr[js.Array[String]] = js.native
+    var labels: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Show data labels in an external div, rather than on the graph.    This value can either be a
       * div element or a div id.
       */
-    var labelsDiv: js.UndefOr[String | HTMLElement] = js.native
+    var labelsDiv: js.UndefOr[String | HTMLElement] = js.undefined
     
     /**
       * Additional styles to apply to the currently-highlighted points div. For example, {
       * 'fontWeight': 'bold' } will make the labels bold. In general, it is better to use CSS to
       * style the .dygraph-legend class than to use this property.
       */
-    var labelsDivStyles: js.UndefOr[StringDictionary[String]] = js.native
+    var labelsDivStyles: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Width (in pixels) of the div which shows information on the currently-highlighted points.
       */
-    var labelsDivWidth: js.UndefOr[Double] = js.native
+    var labelsDivWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Put <code>&lt;br/&gt;</code> between lines in the label string. Often used in conjunction
       * with <strong>labelsDiv</strong>.
       */
-    var labelsSeparateLines: js.UndefOr[Boolean] = js.native
+    var labelsSeparateLines: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show zero value labels in the labelsDiv.
       */
-    var labelsShowZeroValues: js.UndefOr[Boolean] = js.native
+    var labelsShowZeroValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show date/time labels according to UTC (instead of local time).
       */
-    var labelsUTC: js.UndefOr[Boolean] = js.native
+    var labelsUTC: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When to display the legend. By default, it only appears when a user mouses over the chart.
       * Set it to "always" to always display a legend of some sort. When set to "follow", legend
       * follows highlighted points. If set to 'never' then it will not appear at all.
       */
-    var legend: js.UndefOr[always | follow | onmouseover | never] = js.native
+    var legend: js.UndefOr[always | follow | onmouseover | never] = js.undefined
     
     /**
       * for details see https://github.com/danvk/dygraphs/pull/683
       */
-    var legendFormatter: js.UndefOr[js.Function1[/* legendData */ LegendData, String]] = js.native
+    var legendFormatter: js.UndefOr[js.Function1[/* legendData */ LegendData, String]] = js.undefined
     
     /**
       * A value representing the farthest a graph may be panned, in percent of the display. For
       * example, a value of 0.1 means that the graph can only be panned 10% pased the edges of the
       * displayed values. null means no bounds.
       */
-    var panEdgeFraction: js.UndefOr[Double] = js.native
+    var panEdgeFraction: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines per-graph plugins. Useful for per-graph customization
       */
-    var plugins: js.UndefOr[js.Array[_]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * A function to call when a data point is clicked. and the point that was clicked.
       */
-    var pointClickCallback: js.UndefOr[js.Function2[/* e */ MouseEvent, /* point */ Point, _]] = js.native
+    var pointClickCallback: js.UndefOr[js.Function2[/* e */ MouseEvent, /* point */ Point, js.Any]] = js.undefined
     
     /**
       * Height, in pixels, of the range selector widget. This option can only be specified at
       * Dygraph creation time.
       */
-    var rangeSelectorHeight: js.UndefOr[Double] = js.native
+    var rangeSelectorHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The range selector mini plot fill color. This can be of the form "#AABBCC" or
       * "rgb(255,100,200)" or "yellow". You can also specify null or "" to turn off fill.
       */
-    var rangeSelectorPlotFillColor: js.UndefOr[String] = js.native
+    var rangeSelectorPlotFillColor: js.UndefOr[String] = js.undefined
     
     /**
       * The range selector mini plot stroke color. This can be of the form "#AABBCC" or
       * "rgb(255,100,200)" or "yellow". You can also specify null or "" to turn off stroke.
       */
-    var rangeSelectorPlotStrokeColor: js.UndefOr[String] = js.native
+    var rangeSelectorPlotStrokeColor: js.UndefOr[String] = js.undefined
     
     /**
       * Number of pixels to leave blank at the right edge of the Dygraph. This makes it easier to
       * highlight the right-most data point.
       */
-    var rightGap: js.UndefOr[Double] = js.native
+    var rightGap: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of days over which to average data. Discussed extensively above.
       */
-    var rollPeriod: js.UndefOr[Double] = js.native
+    var rollPeriod: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines per-series options. Its keys match the y-axis label names, and the values are
@@ -717,27 +713,27 @@ object dygraphs {
       * missing, it falls back on the old-style of per-series options comingled with global
       * options.
       */
-    var series: js.UndefOr[StringDictionary[PerSeriesOptions]] = js.native
+    var series: js.UndefOr[StringDictionary[PerSeriesOptions]] = js.undefined
     
     /**
       * Whether to show the legend upon mouseover.
       */
-    var showLabelsOnHighlight: js.UndefOr[Boolean] = js.native
+    var showLabelsOnHighlight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show or hide the range selector widget.
       */
-    var showRangeSelector: js.UndefOr[Boolean] = js.native
+    var showRangeSelector: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the rolling average period text box should be shown.
       */
-    var showRoller: js.UndefOr[Boolean] = js.native
+    var showRoller: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When errorBars is set, shade this many standard deviations above/below each point.
       */
-    var sigma: js.UndefOr[Double] = js.native
+    var sigma: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, stack series on top of one another rather than drawing them independently. The
@@ -745,7 +741,7 @@ object dygraphs {
       * will be on bottom. NaN values are drawn as white areas without a line on top, see
       * stackedGraphNaNFill for details.
       */
-    var stackedGraph: js.UndefOr[Boolean] = js.native
+    var stackedGraph: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls handling of NaN values inside a stacked graph. NaN values are
@@ -754,73 +750,73 @@ object dygraphs {
       * rightmost value as needed), "inside" (interpolate internally only, use zero outside
       * leftmost and rightmost value), and "none" (treat NaN as zero everywhere).
       */
-    var stackedGraphNaNFill: js.UndefOr[String] = js.native
+    var stackedGraphNaNFill: js.UndefOr[String] = js.undefined
     
     /**
       * Text to display above the chart. You can supply any HTML for this value, not just text. If
       * you wish to style it using CSS, use the 'dygraph-label' or 'dygraph-title' classes.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * Height of the chart title, in pixels. This also controls the default font size of the
       * title. If you style the title on your own, this controls how much space is set aside above
       * the chart for the title's div.
       */
-    var titleHeight: js.UndefOr[Double] = js.native
+    var titleHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * When set, this callback gets called before the chart is drawn. It details on how to use
       * this.
       */
     var underlayCallback: js.UndefOr[
-        js.Function3[/* context */ CanvasRenderingContext2D, /* area */ Area, /* dygraph */ Dygraph, _]
-      ] = js.native
+        js.Function3[/* context */ CanvasRenderingContext2D, /* area */ Area, /* dygraph */ Dygraph, js.Any]
+      ] = js.undefined
     
     /**
       * When set, this callback gets called every time the user stops highlighting any point by
       * mousing out of the graph.
       */
-    var unhighlightCallback: js.UndefOr[js.Function1[/* event */ MouseEvent, _]] = js.native
+    var unhighlightCallback: js.UndefOr[js.Function1[/* event */ MouseEvent, js.Any]] = js.undefined
     
     /**
       * Which series should initially be visible? Once the Dygraph has been constructed, you can
       * access and modify the visibility of each series using the <code>visibility</code> and
       * <code>setVisibility</code> methods.
       */
-    var visibility: js.UndefOr[js.Array[Boolean]] = js.native
+    var visibility: js.UndefOr[js.Array[Boolean]] = js.undefined
     
     /**
       * Width, in pixels, of the chart. If the container div has been explicitly sized, this will
       * be ignored.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Use in conjunction with the "fractions" option. Instead of plotting +/- N standard
       * deviations, dygraphs will compute a Wilson confidence interval and plot that. This has
       * more reasonable behavior for ratios close to 0 or 1.
       */
-    var wilsonInterval: js.UndefOr[Boolean] = js.native
+    var wilsonInterval: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Height, in pixels, of the x-axis. If not set explicitly, this is computed based on
       * axisLabelFontSize and axisTickSize.
       */
-    var xAxisHeight: js.UndefOr[Double] = js.native
+    var xAxisHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Height of the x-axis label, in pixels. This also controls the default font size of the
       * x-axis label. If you style the label on your own, this controls how much space is set
       * aside below the chart for the x-axis label's div.
       */
-    var xLabelHeight: js.UndefOr[Double] = js.native
+    var xLabelHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Add the specified amount of extra space (in pixels) around the X-axis value range to
       * ensure points at the edges remain visible.
       */
-    var xRangePad: js.UndefOr[Double] = js.native
+    var xRangePad: js.UndefOr[Double] = js.undefined
     
     /**
       * A function which parses x-values (i.e. the dependent series). Must return a number, even
@@ -828,14 +824,14 @@ object dygraphs {
       * primarily for parsing CSV data. *=Dygraphs is slightly more accepting in the dates which
       * it will parse. See code for details.
       */
-    var xValueParser: js.UndefOr[js.Function1[/* val */ String, Double]] = js.native
+    var xValueParser: js.UndefOr[js.Function1[/* val */ String, Double]] = js.undefined
     
     /**
       * Text to display below the chart's x-axis. You can supply any HTML for this value, not just
       * text. If you wish to style it using CSS, use the 'dygraph-label' or 'dygraph-xlabel'
       * classes.
       */
-    var xlabel: js.UndefOr[String] = js.native
+    var xlabel: js.UndefOr[String] = js.undefined
     
     /**
       * Text to display to the right of the chart's secondary y-axis. This label is only displayed
@@ -844,20 +840,20 @@ object dygraphs {
       * this. The comments for the 'ylabel' option generally apply here as well. This label gets a
       * 'dygraph-y2label' instead of a 'dygraph-ylabel' class.
       */
-    var y2label: js.UndefOr[String] = js.native
+    var y2label: js.UndefOr[String] = js.undefined
     
     /**
       * Width of the div which contains the y-axis label. Since the y-axis label appears rotated
       * 90 degrees, this actually affects the height of its div.
       */
-    var yLabelWidth: js.UndefOr[Double] = js.native
+    var yLabelWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, add the specified amount of extra space (in pixels) around the Y-axis value range
       * to ensure points at the edges remain visible. If unset, use the traditional Y padding
       * algorithm.
       */
-    var yRangePad: js.UndefOr[Double] = js.native
+    var yRangePad: js.UndefOr[Double] = js.undefined
     
     /**
       * Text to display to the left of the chart's y-axis. You can supply any HTML for this value,
@@ -869,7 +865,7 @@ object dygraphs {
       * (but remember that it's rotated, so width is controlled by the 'height' property) or set
       * the yLabelWidth option.
       */
-    var ylabel: js.UndefOr[String] = js.native
+    var ylabel: js.UndefOr[String] = js.undefined
     
     /**
       * A function to call when the zoom window is changed (either by zooming in or out).
@@ -879,9 +875,9 @@ object dygraphs {
           /* minDate */ Double, 
           /* maxDate */ Double, 
           /* yRanges */ js.Array[js.Tuple2[Double, Double]], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -902,7 +898,7 @@ object dygraphs {
       
       @scala.inline
       def setAnnotationClickHandler(
-        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _
+        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any
       ): Self = StObject.set(x, "annotationClickHandler", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -910,7 +906,7 @@ object dygraphs {
       
       @scala.inline
       def setAnnotationDblClickHandler(
-        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _
+        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any
       ): Self = StObject.set(x, "annotationDblClickHandler", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -918,7 +914,7 @@ object dygraphs {
       
       @scala.inline
       def setAnnotationMouseOutHandler(
-        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _
+        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any
       ): Self = StObject.set(x, "annotationMouseOutHandler", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -926,7 +922,7 @@ object dygraphs {
       
       @scala.inline
       def setAnnotationMouseOverHandler(
-        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _
+        value: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => js.Any
       ): Self = StObject.set(x, "annotationMouseOverHandler", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -939,7 +935,7 @@ object dygraphs {
       def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
       @scala.inline
-      def setClickCallback(value: (/* e */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point]) => _): Self = StObject.set(x, "clickCallback", js.Any.fromFunction3(value))
+      def setClickCallback(value: (/* e */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point]) => js.Any): Self = StObject.set(x, "clickCallback", js.Any.fromFunction3(value))
       
       @scala.inline
       def setClickCallbackUndefined: Self = StObject.set(x, "clickCallback", js.undefined)
@@ -1017,7 +1013,7 @@ object dygraphs {
       def setDrawAxesAtZeroUndefined: Self = StObject.set(x, "drawAxesAtZero", js.undefined)
       
       @scala.inline
-      def setDrawCallback(value: (/* dygraph */ Dygraph, /* is_initial */ Boolean) => _): Self = StObject.set(x, "drawCallback", js.Any.fromFunction2(value))
+      def setDrawCallback(value: (/* dygraph */ Dygraph, /* is_initial */ Boolean) => js.Any): Self = StObject.set(x, "drawCallback", js.Any.fromFunction2(value))
       
       @scala.inline
       def setDrawCallbackUndefined: Self = StObject.set(x, "drawCallback", js.undefined)
@@ -1030,7 +1026,7 @@ object dygraphs {
       
       @scala.inline
       def setDrawHighlightPointCallback(
-        value: (/* g */ Dygraph, /* seriesName */ String, /* canvasContext */ CanvasRenderingContext2D, /* cx */ Double, /* cy */ Double, /* color */ String, /* pointSize */ Double) => _
+        value: (/* g */ Dygraph, /* seriesName */ String, /* canvasContext */ CanvasRenderingContext2D, /* cx */ Double, /* cy */ Double, /* color */ String, /* pointSize */ Double) => js.Any
       ): Self = StObject.set(x, "drawHighlightPointCallback", js.Any.fromFunction7(value))
       
       @scala.inline
@@ -1038,7 +1034,7 @@ object dygraphs {
       
       @scala.inline
       def setDrawPointCallback(
-        value: (/* g */ Dygraph, /* seriesName */ String, /* canvasContext */ CanvasRenderingContext2D, /* cx */ Double, /* cy */ Double, /* color */ String, /* pointSize */ Double) => _
+        value: (/* g */ Dygraph, /* seriesName */ String, /* canvasContext */ CanvasRenderingContext2D, /* cx */ Double, /* cy */ Double, /* color */ String, /* pointSize */ Double) => js.Any
       ): Self = StObject.set(x, "drawPointCallback", js.Any.fromFunction7(value))
       
       @scala.inline
@@ -1079,7 +1075,7 @@ object dygraphs {
       
       @scala.inline
       def setHighlightCallback(
-        value: (/* event */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point], /* row */ Double, /* seriesName */ String) => _
+        value: (/* event */ MouseEvent, /* xval */ Double, /* points */ js.Array[Point], /* row */ Double, /* seriesName */ String) => js.Any
       ): Self = StObject.set(x, "highlightCallback", js.Any.fromFunction5(value))
       
       @scala.inline
@@ -1185,7 +1181,7 @@ object dygraphs {
       def setPanEdgeFractionUndefined: Self = StObject.set(x, "panEdgeFraction", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
@@ -1194,7 +1190,7 @@ object dygraphs {
       def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
       @scala.inline
-      def setPointClickCallback(value: (/* e */ MouseEvent, /* point */ Point) => _): Self = StObject.set(x, "pointClickCallback", js.Any.fromFunction2(value))
+      def setPointClickCallback(value: (/* e */ MouseEvent, /* point */ Point) => js.Any): Self = StObject.set(x, "pointClickCallback", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPointClickCallbackUndefined: Self = StObject.set(x, "pointClickCallback", js.undefined)
@@ -1284,13 +1280,13 @@ object dygraphs {
       def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       @scala.inline
-      def setUnderlayCallback(value: (/* context */ CanvasRenderingContext2D, /* area */ Area, /* dygraph */ Dygraph) => _): Self = StObject.set(x, "underlayCallback", js.Any.fromFunction3(value))
+      def setUnderlayCallback(value: (/* context */ CanvasRenderingContext2D, /* area */ Area, /* dygraph */ Dygraph) => js.Any): Self = StObject.set(x, "underlayCallback", js.Any.fromFunction3(value))
       
       @scala.inline
       def setUnderlayCallbackUndefined: Self = StObject.set(x, "underlayCallback", js.undefined)
       
       @scala.inline
-      def setUnhighlightCallback(value: /* event */ MouseEvent => _): Self = StObject.set(x, "unhighlightCallback", js.Any.fromFunction1(value))
+      def setUnhighlightCallback(value: /* event */ MouseEvent => js.Any): Self = StObject.set(x, "unhighlightCallback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUnhighlightCallbackUndefined: Self = StObject.set(x, "unhighlightCallback", js.undefined)
@@ -1372,7 +1368,7 @@ object dygraphs {
       
       @scala.inline
       def setZoomCallback(
-        value: (/* minDate */ Double, /* maxDate */ Double, /* yRanges */ js.Array[js.Tuple2[Double, Double]]) => _
+        value: (/* minDate */ Double, /* maxDate */ Double, /* yRanges */ js.Array[js.Tuple2[Double, Double]]) => js.Any
       ): Self = StObject.set(x, "zoomCallback", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1380,18 +1376,17 @@ object dygraphs {
     }
   }
   
-  @js.native
   trait PerAxisOptions extends StObject {
     
     /**
       * Color for x- and y-axis labels. This is a CSS color string.
       */
-    var axisLabelColor: js.UndefOr[String] = js.native
+    var axisLabelColor: js.UndefOr[String] = js.undefined
     
     /**
       * Size of the font (in pixels) to use in the axis labels, both x- and y-axis.
       */
-    var axisLabelFontSize: js.UndefOr[Double] = js.native
+    var axisLabelFontSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to call to format the tick values that appear along an axis. This is usually set
@@ -1401,53 +1396,53 @@ object dygraphs {
         js.Function4[
           /* v */ Double | Date, 
           /* granularity */ Double, 
-          /* opts */ js.Function1[/* name */ String, _], 
+          /* opts */ js.Function1[/* name */ String, js.Any], 
           /* dygraph */ Dygraph, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Width (in pixels) of the containing divs for x- and y-axis labels. For the y-axis, this
       * also controls the width of the y-axis. Note that for the x-axis, this is independent from
       * pixelsPerLabel, which controls the spacing between labels.
       */
-    var axisLabelWidth: js.UndefOr[Double] = js.native
+    var axisLabelWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Color of the x- and y-axis lines. Accepts any value which the HTML canvas strokeStyle
       * attribute understands, e.g. 'black' or 'rgb(0, 100, 255)'.
       */
-    var axisLineColor: js.UndefOr[String] = js.native
+    var axisLineColor: js.UndefOr[String] = js.undefined
     
     /**
       * Thickness (in pixels) of the x- and y-axis lines.
       */
-    var axisLineWidth: js.UndefOr[Double] = js.native
+    var axisLineWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The size of the line to display next to each tick mark on x- or y-axes.
       */
-    var axisTickSize: js.UndefOr[Double] = js.native
+    var axisTickSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to draw the specified axis. This may be set on a per-axis basis to define the
       * visibility of each axis separately. Setting this to false also prevents axis ticks from
       * being drawn and reclaims the space for the chart grid/lines.
       */
-    var drawAxis: js.UndefOr[Boolean] = js.native
+    var drawAxis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display gridlines in the chart. This may be set on a per-axis basis to define
       * the visibility of each axis' grid separately.
       */
-    var drawGrid: js.UndefOr[Boolean] = js.native
+    var drawGrid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The color of the gridlines. This may be set on a per-axis basis to define each axis' grid
       * separately.
       */
-    var gridLineColor: js.UndefOr[String] = js.native
+    var gridLineColor: js.UndefOr[String] = js.undefined
     
     /**
       * A custom pattern array where the even index is a draw and odd is a space in pixels. If
@@ -1455,14 +1450,14 @@ object dygraphs {
       * array could be expressed as a smaller even length array. This is used to create dashed
       * gridlines.
       */
-    var gridLinePattern: js.UndefOr[js.Array[Double]] = js.native
+    var gridLinePattern: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Thickness (in pixels) of the gridlines drawn under the chart. The vertical/horizontal
       * gridlines can be turned off entirely by using the drawXGrid and drawYGrid options. This
       * may be set on a per-axis basis to define each axis' grid separately.
       */
-    var gridLineWidth: js.UndefOr[Double] = js.native
+    var gridLineWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Only valid for y and y2, has no effect on x: This option defines whether the y axes should
@@ -1473,18 +1468,18 @@ object dygraphs {
       * have their own ticks. (2 grids) 4.) y=false, y2=false: Invalid configuration causes an
       * error.
       */
-    var independentTicks: js.UndefOr[Boolean] = js.native
+    var independentTicks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show K/M/B for thousands/millions/billions on y-axis.
       */
-    var labelsKMB: js.UndefOr[Boolean] = js.native
+    var labelsKMB: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show k/M/G for kilo/Mega/Giga on y-axis. This is different than <code>labelsKMB</code> in
       * that it uses base 2, not 10.
       */
-    var labelsKMG2: js.UndefOr[Boolean] = js.native
+    var labelsKMG2: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set for the y-axis or x-axis, the graph shows that axis in log scale. Any values less
@@ -1494,7 +1489,7 @@ object dygraphs {
       * Not compatible with showZero. connectSeparatedPoints is ignored. This is ignored for
       * date-based x-axes.
       */
-    var logscale: js.UndefOr[Boolean] = js.native
+    var logscale: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When displaying numbers in normal (not scientific) mode, large numbers will be displayed
@@ -1504,14 +1499,14 @@ object dygraphs {
       * in scientific mode. If you'd like to see all those digits, set this to something large,
       * like 20 or 30.
       */
-    var maxNumberWidth: js.UndefOr[Double] = js.native
+    var maxNumberWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of pixels to require between each x- and y-label. Larger values will yield a
       * sparser axis with fewer ticks. This is set on a <a href='per-axis.html'>per-axis</a>
       * basis.
       */
-    var pixelsPerLabel: js.UndefOr[Double] = js.native
+    var pixelsPerLabel: js.UndefOr[Double] = js.undefined
     
     /**
       * By default, dygraphs displays numbers with a fixed number of digits after the decimal
@@ -1519,7 +1514,7 @@ object dygraphs {
       * that number of sig figs. A value of 2, for instance, would cause 1 to be display as 1.0
       * and 1234 to be displayed as 1.23e+3.
       */
-    var sigFigs: js.UndefOr[Double] = js.native
+    var sigFigs: js.UndefOr[Double] = js.undefined
     
     /**
       * This lets you specify an arbitrary function to generate tick marks on an axis. The tick
@@ -1533,12 +1528,12 @@ object dygraphs {
           /* min */ Double, 
           /* max */ Double, 
           /* pixels */ Double, 
-          /* opts */ js.Function1[/* name */ String, _], 
+          /* opts */ js.Function1[/* name */ String, js.Any], 
           /* dygraph */ Dygraph, 
           /* vals */ js.Array[Double], 
           js.Array[Label]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function to provide a custom display format for the values displayed on mouseover. This
@@ -1549,14 +1544,14 @@ object dygraphs {
     var valueFormatter: js.UndefOr[
         js.Function6[
           /* v */ Double, 
-          /* opts */ js.Function1[/* name */ String, _], 
+          /* opts */ js.Function1[/* name */ String, js.Any], 
           /* seriesName */ String, 
           /* dygraph */ Dygraph, 
           /* row */ Double, 
           /* col */ Double, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Explicitly set the vertical range of the graph to [low, high]. This may be set on a
@@ -1564,7 +1559,7 @@ object dygraphs {
       * be calculated automatically (e.g. [null, 30] to automatically calculate just the lower
       * bound)
       */
-    var valueRange: js.UndefOr[(js.Tuple2[Double | Null, Double | Null]) | Null] = js.native
+    var valueRange: js.UndefOr[(js.Tuple2[Double | Null, Double | Null]) | Null] = js.undefined
   }
   object PerAxisOptions {
     
@@ -1591,7 +1586,7 @@ object dygraphs {
       
       @scala.inline
       def setAxisLabelFormatter(
-        value: (/* v */ Double | Date, /* granularity */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph) => _
+        value: (/* v */ Double | Date, /* granularity */ Double, /* opts */ js.Function1[/* name */ String, js.Any], /* dygraph */ Dygraph) => js.Any
       ): Self = StObject.set(x, "axisLabelFormatter", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -1698,7 +1693,7 @@ object dygraphs {
       
       @scala.inline
       def setTicker(
-        value: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[Label]
+        value: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, js.Any], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[Label]
       ): Self = StObject.set(x, "ticker", js.Any.fromFunction6(value))
       
       @scala.inline
@@ -1706,7 +1701,7 @@ object dygraphs {
       
       @scala.inline
       def setValueFormatter(
-        value: (/* v */ Double, /* opts */ js.Function1[/* name */ String, _], /* seriesName */ String, /* dygraph */ Dygraph, /* row */ Double, /* col */ Double) => _
+        value: (/* v */ Double, /* opts */ js.Function1[/* name */ String, js.Any], /* seriesName */ String, /* dygraph */ Dygraph, /* row */ Double, /* col */ Double) => js.Any
       ): Self = StObject.set(x, "valueFormatter", js.Any.fromFunction6(value))
       
       @scala.inline
@@ -1723,19 +1718,18 @@ object dygraphs {
     }
   }
   
-  @js.native
   trait PerSeriesOptions extends StObject {
     
     /**
       * Set to either 'y1' or 'y2' to assign a series to a y-axis (primary or secondary). Must be
       * set per-series.
       */
-    var axis: js.UndefOr[y1 | y2] = js.native
+    var axis: js.UndefOr[y1 | y2] = js.undefined
     
     /**
       * A per-series color definition. Used in conjunction with, and overrides, the colors option.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Draw a small dot at each point, in addition to a line going through the point. This makes
@@ -1743,7 +1737,7 @@ object dygraphs {
       * The small dot can be replaced with a custom rendering by supplying a <a
       * href='#drawPointCallback'>drawPointCallback</a>.
       */
-    var drawPoints: js.UndefOr[Boolean] = js.native
+    var drawPoints: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Error bars (or custom bars) for each series are drawn in the same color as the series, but
@@ -1752,30 +1746,30 @@ object dygraphs {
       * as the line for the series itself. This can be used to produce chart lines whose thickness
       * varies at each point.
       */
-    var fillAlpha: js.UndefOr[Double] = js.native
+    var fillAlpha: js.UndefOr[Double] = js.undefined
     
     /**
       * Should the area underneath the graph be filled? This option is not compatible with error
       * bars. This may be set on a <a href='per-axis.html'>per-series</a> basis.
       */
-    var fillGraph: js.UndefOr[Boolean] = js.native
+    var fillGraph: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The size in pixels of the dot drawn over highlighted points.
       */
-    var highlightCircleSize: js.UndefOr[Double] = js.native
+    var highlightCircleSize: js.UndefOr[Double] = js.undefined
     
     /**
       * A function which plot data for this series on the chart.         
       */
-    var plotter: js.UndefOr[js.Any] = js.native
+    var plotter: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The size of the dot to draw on each point in pixels (see drawPoints). A dot is always
       * drawn when a point is "isolated", i.e. there is a missing point on either side of it. This
       * also controls the size of those dots.
       */
-    var pointSize: js.UndefOr[Double] = js.native
+    var pointSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Mark this series for inclusion in the range selector. The mini plot curve will be an
@@ -1783,24 +1777,24 @@ object dygraphs {
       * is to average all the series. Setting it for one series will result in that series being
       * charted alone in the range selector.
       */
-    var showInRangeSelector: js.UndefOr[Boolean] = js.native
+    var showInRangeSelector: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When set, display the graph as a step plot instead of a line plot. This option may either
       * be set for the whole graph or for single series.
       */
-    var stepPlot: js.UndefOr[Boolean] = js.native
+    var stepPlot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Color for the line border used if strokeBorderWidth is set.
       */
-    var strokeBorderColor: js.UndefOr[String] = js.native
+    var strokeBorderColor: js.UndefOr[String] = js.undefined
     
     /**
       * Draw a border around graph lines to make crossing lines more easily distinguishable.
       * Useful for graphs with many lines.
       */
-    var strokeBorderWidth: js.UndefOr[Double] = js.native
+    var strokeBorderWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * A custom pattern array where the even index is a draw and odd is a space in pixels. If
@@ -1808,13 +1802,13 @@ object dygraphs {
       * array could be expressed as a smaller even length array. This is used to create dashed
       * lines.
       */
-    var strokePattern: js.UndefOr[js.Array[Double]] = js.native
+    var strokePattern: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * The width of the lines connecting data points. This can be used to increase the contrast
       * or some graphs.
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
   }
   object PerSeriesOptions {
     
@@ -1924,34 +1918,33 @@ object dygraphs {
     * yval_stacked is the cumulative Y value used for stacking graphs,
     * and bottom/top/minus/plus are used for error bar graphs.
     */
-  @js.native
   trait Point extends StObject {
     
-    var annotation: js.UndefOr[Annotation] = js.native
+    var annotation: js.UndefOr[Annotation] = js.undefined
     
-    var idx: Double = js.native
+    var idx: Double
     
-    var name: String = js.native
+    var name: String
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var xval: js.UndefOr[Double] = js.native
+    var xval: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
     
-    var y_bottom: js.UndefOr[Double] = js.native
+    var y_bottom: js.UndefOr[Double] = js.undefined
     
-    var y_stacked: js.UndefOr[Double] = js.native
+    var y_stacked: js.UndefOr[Double] = js.undefined
     
-    var y_top: js.UndefOr[Double] = js.native
+    var y_top: js.UndefOr[Double] = js.undefined
     
-    var yval: js.UndefOr[Double] = js.native
+    var yval: js.UndefOr[Double] = js.undefined
     
-    var yval_minus: js.UndefOr[Double] = js.native
+    var yval_minus: js.UndefOr[Double] = js.undefined
     
-    var yval_plus: js.UndefOr[Double] = js.native
+    var yval_plus: js.UndefOr[Double] = js.undefined
     
-    var yval_stacked: js.UndefOr[Double] = js.native
+    var yval_stacked: js.UndefOr[Double] = js.undefined
   }
   object Point {
     
@@ -2038,48 +2031,47 @@ object dygraphs {
     }
   }
   
-  @js.native
   trait SeriesLegendData extends StObject {
     
     /**
       * Assigned or generated series color
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * Series line dash
       */
-    var dashHTML: String = js.native
+    var dashHTML: String
     
     /**
       * Whether currently focused or not
       */
-    var isHighlighted: Boolean = js.native
+    var isHighlighted: Boolean
     
     /**
       * Whether the series line is inside the selected/zoomed region
       */
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
     /**
       * Assigned label to this series
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * Generated label html for this series
       */
-    var labelHTML: String = js.native
+    var labelHTML: String
     
     /**
       * y value of this series
       */
-    var y: Double = js.native
+    var y: Double
     
     /**
       * Generated html for y value
       */
-    var yHTML: String = js.native
+    var yHTML: String
   }
   object SeriesLegendData {
     
@@ -2127,18 +2119,17 @@ object dygraphs {
     }
   }
   
-  @js.native
   trait SeriesProperties extends StObject {
     
-    var axis: Double = js.native
+    var axis: Double
     
-    var color: String = js.native
+    var color: String
     
-    var column: Double = js.native
+    var column: Double
     
-    var name: String = js.native
+    var name: String
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object SeriesProperties {
     

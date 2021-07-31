@@ -2,43 +2,41 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Custompoi extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var city: String = js.native
+  var city: String
   
-  var cityCode: Double = js.native
+  var cityCode: Double
   
-  var databoxId: String = js.native
+  var databoxId: String
   
-  var district: String = js.native
+  var district: String
   
-  var districtCode: Double = js.native
+  var districtCode: Double
   
-  var extendedData: js.Any = js.native
+  var extendedData: js.Any
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
-  var poiId: String = js.native
+  var poiId: String
   
-  var point: Point = js.native
+  var point: Point
   
-  var postcode: String = js.native
+  var postcode: String
   
-  var province: String = js.native
+  var province: String
   
-  var provinceCode: Double = js.native
+  var provinceCode: Double
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var title: String = js.native
+  var title: String
   
-  var typeId: Double = js.native
+  var typeId: Double
 }
 object Custompoi {
   

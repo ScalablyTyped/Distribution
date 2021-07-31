@@ -2,21 +2,19 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arguments extends StObject {
   
-  var arguments: js.Array[String] = js.native
+  var arguments: js.Array[String]
   
-  var entrypoint: String = js.native
+  var entrypoint: String
   
-  var privileged: Boolean = js.native
+  var privileged: Boolean
   
-  var tty: Boolean = js.native
+  var tty: Boolean
   
-  var user: String = js.native
+  var user: String
 }
 object Arguments {
   

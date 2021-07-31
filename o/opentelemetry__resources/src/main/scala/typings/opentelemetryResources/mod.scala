@@ -5,10 +5,13 @@ import typings.opentelemetryResources.envDetectorMod.EnvDetector_
 import typings.opentelemetryResources.typesMod.ResourceAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@opentelemetry/resources", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object CLOUD_RESOURCE {
     
@@ -187,6 +190,10 @@ object mod {
   /* static members */
   object Resource {
     
+    @JSImport("@opentelemetry/resources", "Resource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("@opentelemetry/resources", "Resource.EMPTY")
     @js.native
     val EMPTY: typings.opentelemetryResources.resourceMod.Resource = js.native
@@ -194,16 +201,14 @@ object mod {
     /**
       * Returns a Resource that indentifies the SDK in use.
       */
-    @JSImport("@opentelemetry/resources", "Resource.createTelemetrySDKResource")
-    @js.native
-    def createTelemetrySDKResource(): typings.opentelemetryResources.resourceMod.Resource = js.native
+    @scala.inline
+    def createTelemetrySDKResource(): typings.opentelemetryResources.resourceMod.Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetrySDKResource")().asInstanceOf[typings.opentelemetryResources.resourceMod.Resource]
     
     /**
       * Returns an empty Resource
       */
-    @JSImport("@opentelemetry/resources", "Resource.empty")
-    @js.native
-    def empty(): typings.opentelemetryResources.resourceMod.Resource = js.native
+    @scala.inline
+    def empty(): typings.opentelemetryResources.resourceMod.Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[typings.opentelemetryResources.resourceMod.Resource]
   }
   
   object SERVICE_RESOURCE {
@@ -270,12 +275,10 @@ object mod {
     def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@opentelemetry/resources", "detectResources")
-  @js.native
-  def detectResources(): js.Promise[typings.opentelemetryResources.resourceMod.Resource] = js.native
-  @JSImport("@opentelemetry/resources", "detectResources")
-  @js.native
-  def detectResources(config: ResourceDetectionConfig): js.Promise[typings.opentelemetryResources.resourceMod.Resource] = js.native
+  @scala.inline
+  def detectResources(): js.Promise[typings.opentelemetryResources.resourceMod.Resource] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectResources")().asInstanceOf[js.Promise[typings.opentelemetryResources.resourceMod.Resource]]
+  @scala.inline
+  def detectResources(config: ResourceDetectionConfig): js.Promise[typings.opentelemetryResources.resourceMod.Resource] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectResources")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.opentelemetryResources.resourceMod.Resource]]
   
   @JSImport("@opentelemetry/resources", "envDetector")
   @js.native

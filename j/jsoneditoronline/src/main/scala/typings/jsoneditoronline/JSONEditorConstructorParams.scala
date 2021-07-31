@@ -2,17 +2,15 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorConstructorParams extends StObject {
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var fieldEditable: js.UndefOr[Boolean] = js.native
+  var fieldEditable: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object JSONEditorConstructorParams {
   

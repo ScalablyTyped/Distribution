@@ -2,37 +2,35 @@ package typings.reactLottie
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearCanvas: js.UndefOr[Boolean] = js.native
+    var clearCanvas: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The canvas context
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Hides elements when opacity reaches 0. Only with SVG renderer.
       * @default true
       */
-    var hideOnTransparent: js.UndefOr[Boolean] = js.native
+    var hideOnTransparent: js.UndefOr[Boolean] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
     /**
       * Loads DOM elements when needed. Might speed up initialization for large number of elements. Only with SVG renderer.
       */
-    var progressiveLoad: js.UndefOr[Boolean] = js.native
+    var progressiveLoad: js.UndefOr[Boolean] = js.undefined
     
-    var scaleMode: js.UndefOr[js.Any] = js.native
+    var scaleMode: js.UndefOr[js.Any] = js.undefined
   }
   object ClassName {
     

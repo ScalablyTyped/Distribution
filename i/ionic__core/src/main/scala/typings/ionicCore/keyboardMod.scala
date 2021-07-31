@@ -3,10 +3,13 @@ package typings.ionicCore
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardMod {
+  
+  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "KEYBOARD_DID_CLOSE")
   @js.native
@@ -16,42 +19,32 @@ object keyboardMod {
   @js.native
   val KEYBOARD_DID_OPEN: /* "ionKeyboardDidShow" */ String = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "copyVisualViewport")
-  @js.native
-  def copyVisualViewport(visualViewport: js.Any): js.Any = js.native
+  @scala.inline
+  def copyVisualViewport(visualViewport: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copyVisualViewport")(visualViewport.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "keyboardDidClose")
-  @js.native
-  def keyboardDidClose(win: Window): Boolean = js.native
+  @scala.inline
+  def keyboardDidClose(win: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidClose")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "keyboardDidOpen")
-  @js.native
-  def keyboardDidOpen(): Boolean = js.native
+  @scala.inline
+  def keyboardDidOpen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidOpen")().asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "keyboardDidResize")
-  @js.native
-  def keyboardDidResize(win: Window): Boolean = js.native
+  @scala.inline
+  def keyboardDidResize(win: Window): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDidResize")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "resetKeyboardAssist")
-  @js.native
-  def resetKeyboardAssist(): Unit = js.native
+  @scala.inline
+  def resetKeyboardAssist(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeyboardAssist")().asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "setKeyboardClose")
-  @js.native
-  def setKeyboardClose(win: Window): Unit = js.native
+  @scala.inline
+  def setKeyboardClose(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardClose")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "setKeyboardOpen")
-  @js.native
-  def setKeyboardOpen(win: Window): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "setKeyboardOpen")
-  @js.native
-  def setKeyboardOpen(win: Window, ev: js.Any): Unit = js.native
+  @scala.inline
+  def setKeyboardOpen(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardOpen")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setKeyboardOpen(win: Window, ev: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setKeyboardOpen")(win.asInstanceOf[js.Any], ev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "startKeyboardAssist")
-  @js.native
-  def startKeyboardAssist(win: Window): Unit = js.native
+  @scala.inline
+  def startKeyboardAssist(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startKeyboardAssist")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/keyboard/keyboard", "trackViewportChanges")
-  @js.native
-  def trackViewportChanges(win: Window): Unit = js.native
+  @scala.inline
+  def trackViewportChanges(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackViewportChanges")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

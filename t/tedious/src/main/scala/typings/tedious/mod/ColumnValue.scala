@@ -2,15 +2,13 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnValue extends StObject {
   
-  var metadata: ColumnMetaData = js.native
+  var metadata: ColumnMetaData
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ColumnValue {
   

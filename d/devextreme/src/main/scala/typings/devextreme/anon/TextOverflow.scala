@@ -5,17 +5,15 @@ import typings.devextreme.devextremeStrings.hide
 import typings.devextreme.devextremeStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextOverflow extends StObject {
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object TextOverflow {
   

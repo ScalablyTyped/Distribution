@@ -15,7 +15,6 @@ import typings.qs.mod.ParsedQs
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appServiceMod {
@@ -42,15 +41,15 @@ object appServiceMod {
     /**
       * @deprecated Use `AppService.expressApp`
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
     /**
       * @deprecated Use `AppService.expressApp`
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
     /**
       * @deprecated Use `AppService.expressApp`
       */
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
     /**
       * @deprecated Use `AppService.expressApp`
       */
@@ -88,8 +87,8 @@ object appServiceMod {
       * @param {Function} callback The callback for the "listening" event. Optional.
       * @returns {Promise} When the server is listening, if a callback is not provided.
       */
-    def listen(port: Double, hostname: String, backlog: Double): js.UndefOr[js.Promise[_]] = js.native
-    def listen(port: Double, hostname: String, backlog: Double, callback: js.Function0[Unit]): js.UndefOr[js.Promise[_]] = js.native
+    def listen(port: Double, hostname: String, backlog: Double): js.UndefOr[js.Promise[js.Any]] = js.native
+    def listen(port: Double, hostname: String, backlog: Double, callback: js.Function0[Unit]): js.UndefOr[js.Promise[js.Any]] = js.native
     
     /**
       * Override this method to handle alias queries.
@@ -126,7 +125,7 @@ object appServiceMod {
       * });
       */
     @JSName("on")
-    def on_ephemeral(event: ephemeral, cb: js.Function1[/* event */ Record[String, _], Unit]): this.type = js.native
+    def on_ephemeral(event: ephemeral, cb: js.Function1[/* event */ Record[String, js.Any], Unit]): this.type = js.native
     /**
       * Emitted when an event is pushed to the appservice.
       * The format of the event object is documented at
@@ -138,7 +137,7 @@ object appServiceMod {
       * });
       */
     @JSName("on")
-    def on_event(event: event, cb: js.Function1[/* event */ Record[String, _], Unit]): this.type = js.native
+    def on_event(event: event, cb: js.Function1[/* event */ Record[String, js.Any], Unit]): this.type = js.native
     /**
       * Emitted when the HTTP listener logs some information.
       * `access_tokens` are stripped from requests

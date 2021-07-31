@@ -2,13 +2,11 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyBackupAttributesResponse extends StObject {
   
-  var Backup: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Backup] = js.native
+  var Backup: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Backup] = js.undefined
 }
 object ModifyBackupAttributesResponse {
   

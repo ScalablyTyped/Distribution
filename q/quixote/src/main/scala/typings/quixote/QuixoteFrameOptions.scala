@@ -2,23 +2,21 @@ package typings.quixote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuixoteFrameOptions extends StObject {
   
   // Height of the iframe. Defaults to a large value (see stability note below)
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   // URL of an HTML document to load into the frame. Must be served from same domain as the enclosing test document, or you could get same-origin policy errors. Defaults to an empty document with <!DOCTYPE html> (to enable standards-mode rendering)
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   // URL of a CSS stylesheet to load into the frame. Defaults to loading nothing
-  var stylesheet: js.UndefOr[String] = js.native
+  var stylesheet: js.UndefOr[String] = js.undefined
   
   // Width of the iframe. Defaults to a large value (see stability note below)
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object QuixoteFrameOptions {
   

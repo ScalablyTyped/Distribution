@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCourseAliasesResponse extends StObject {
   
   /** The course aliases. */
-  var aliases: js.UndefOr[js.Array[CourseAlias]] = js.native
+  var aliases: js.UndefOr[js.Array[CourseAlias]] = js.undefined
   
   /** Token identifying the next page of results to return. If empty, no further results are available. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCourseAliasesResponse {
   

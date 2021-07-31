@@ -6,46 +6,46 @@ import typings.winrtUwp.Windows.Media.Effects.IAudioEffectDefinition
 import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* unmapped type */
 /** Defines an audio node. */
-@js.native
-trait IAudioNode extends IClosable {
+trait IAudioNode
+  extends StObject
+     with IClosable {
   
   /** Gets or sets a value indicating if the audio node consumes input. */
-  var consumeInput: Boolean = js.native
+  var consumeInput: Boolean
   
   /**
     * Disables all effects in the EffectDefinitions list with the specified effect definition.
     * @param definition The effect definition of the effects to disable.
     */
-  def disableEffectsByDefinition(definition: IAudioEffectDefinition): Unit = js.native
+  def disableEffectsByDefinition(definition: IAudioEffectDefinition): Unit
   
   /** Gets the list of effect definitions for the audio node. */
-  var effectDefinitions: IVector[IAudioEffectDefinition] = js.native
+  var effectDefinitions: IVector[IAudioEffectDefinition]
   
   /**
     * Enables all effects in the EffectDefinitions list with the specified effect definition.
     * @param definition The effect definition of the effects to enable.
     */
-  def enableEffectsByDefinition(definition: IAudioEffectDefinition): Unit = js.native
+  def enableEffectsByDefinition(definition: IAudioEffectDefinition): Unit
   
   /** Gets the encoding properties for the audio node. */
-  var encodingProperties: AudioEncodingProperties = js.native
+  var encodingProperties: AudioEncodingProperties
   
   /** Gets or sets the outgoing gain for the audio node. */
-  var outgoingGain: Double = js.native
+  var outgoingGain: Double
   
   /** Resets the audio node. */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /** Starts the audio node. */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /** Stops the audio node. */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object IAudioNode {
   

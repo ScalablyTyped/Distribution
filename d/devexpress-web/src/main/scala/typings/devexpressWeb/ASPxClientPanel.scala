@@ -2,49 +2,49 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxPanel control.
   */
-@js.native
-trait ASPxClientPanel extends ASPxClientPanelBase {
+trait ASPxClientPanel
+  extends StObject
+     with ASPxClientPanelBase {
   
   /**
     * Collapses the expanded panel.
     */
-  def Collapse(): Unit = js.native
+  def Collapse(): Unit
   
   /**
     * Occurs when the expanded panel is closed.
     */
-  var Collapsed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]] = js.native
+  var Collapsed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]
   
   /**
     * Expands the collapsed panel.
     */
-  def Expand(): Unit = js.native
+  def Expand(): Unit
   
   /**
     * Occurs when an end-user opens the expand panel.
     */
-  var Expanded: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]] = js.native
+  var Expanded: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]
   
   /**
     * Returns a value specifying whether the panel can be expanded.
     */
-  def IsExpandable(): Boolean = js.native
+  def IsExpandable(): Boolean
   
   /**
     * Returns a value specifying whether the panel is expanded.
     */
-  def IsExpanded(): Boolean = js.native
+  def IsExpanded(): Boolean
   
   /**
     * Expands or collapses the client panel.
     */
-  def Toggle(): Unit = js.native
+  def Toggle(): Unit
 }
 object ASPxClientPanel {
   

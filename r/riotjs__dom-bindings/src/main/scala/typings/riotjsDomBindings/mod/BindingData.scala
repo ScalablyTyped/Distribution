@@ -2,7 +2,6 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -16,13 +15,13 @@ trait BindingData extends StObject
 object BindingData {
   
   @scala.inline
-  def EachBindingData(itemName: String, template: TemplateChunk[_, _]): typings.riotjsDomBindings.mod.EachBindingData = {
+  def EachBindingData(itemName: String, template: TemplateChunk[js.Any, js.Any]): typings.riotjsDomBindings.mod.EachBindingData = {
     val __obj = js.Dynamic.literal(itemName = itemName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.riotjsDomBindings.mod.EachBindingData]
   }
   
   @scala.inline
-  def IfBindingData(template: TemplateChunk[_, _]): typings.riotjsDomBindings.mod.IfBindingData = {
+  def IfBindingData(template: TemplateChunk[js.Any, js.Any]): typings.riotjsDomBindings.mod.IfBindingData = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.riotjsDomBindings.mod.IfBindingData]
   }
@@ -42,7 +41,7 @@ object BindingData {
   @scala.inline
   def TagBindingData(
     attributes: js.Array[AttributeExpressionData],
-    getComponent: String => TemplateChunk[_, _],
+    getComponent: String => TemplateChunk[js.Any, js.Any],
     slots: js.Array[SlotBindingData]
   ): typings.riotjsDomBindings.mod.TagBindingData = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], getComponent = js.Any.fromFunction1(getComponent), slots = slots.asInstanceOf[js.Any])

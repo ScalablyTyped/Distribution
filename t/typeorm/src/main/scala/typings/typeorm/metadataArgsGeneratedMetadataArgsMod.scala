@@ -5,28 +5,26 @@ import typings.typeorm.typeormStrings.rowid
 import typings.typeorm.typeormStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsGeneratedMetadataArgsMod {
   
-  @js.native
   trait GeneratedMetadataArgs extends StObject {
     
     /**
       * Class's property name to which decorator is applied.
       */
-    val propertyName: String = js.native
+    val propertyName: String
     
     /**
       * Generation strategy.
       */
-    val strategy: uuid | increment | rowid = js.native
+    val strategy: uuid | increment | rowid
     
     /**
       * Class to which decorator is applied.
       */
-    val target: js.Function | String = js.native
+    val target: js.Function | String
   }
   object GeneratedMetadataArgs {
     

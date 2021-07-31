@@ -2,15 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentMachine extends StObject {
   
-  var agent: TaskAgentReference = js.native
+  var agent: TaskAgentReference
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object DeploymentMachine {
   

@@ -11,8 +11,8 @@ Makes Windows-style paths more unix and URI friendly.
 | Full name          | urix |
 | Keywords           | path, url, uri, unix, windows, backslash, slash |
 | # releases         | 1 |
-| # dependents       | 90 |
-| # downloads        | 540740386 |
+| # dependents       | 128 |
+| # downloads        | 649713087 |
 | # stars            | 0 |
 
 ## Links

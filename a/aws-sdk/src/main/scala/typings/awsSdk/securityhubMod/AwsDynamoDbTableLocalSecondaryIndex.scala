@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableLocalSecondaryIndex extends StObject {
   
   /**
     * The ARN of the index.
     */
-  var IndexArn: js.UndefOr[NonEmptyString] = js.native
+  var IndexArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the index.
     */
-  var IndexName: js.UndefOr[NonEmptyString] = js.native
+  var IndexName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The complete key schema for the index.
     */
-  var KeySchema: js.UndefOr[AwsDynamoDbTableKeySchemaList] = js.native
+  var KeySchema: js.UndefOr[AwsDynamoDbTableKeySchemaList] = js.undefined
   
   /**
     * Attributes that are copied from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.
     */
-  var Projection: js.UndefOr[AwsDynamoDbTableProjection] = js.native
+  var Projection: js.UndefOr[AwsDynamoDbTableProjection] = js.undefined
 }
 object AwsDynamoDbTableLocalSecondaryIndex {
   

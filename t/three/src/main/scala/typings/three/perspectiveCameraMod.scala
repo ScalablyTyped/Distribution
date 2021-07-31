@@ -5,7 +5,6 @@ import typings.three.cameraMod.Camera
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object perspectiveCameraMod {
@@ -20,25 +19,20 @@ object perspectiveCameraMod {
   	 */
   class PerspectiveCamera () extends Camera {
     def this(fov: Double) = this()
-    def this(fov: js.UndefOr[scala.Nothing], aspect: Double) = this()
     def this(fov: Double, aspect: Double) = this()
-    def this(fov: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double) = this()
-    def this(fov: js.UndefOr[scala.Nothing], aspect: Double, near: Double) = this()
-    def this(fov: Double, aspect: js.UndefOr[scala.Nothing], near: Double) = this()
+    def this(fov: Unit, aspect: Double) = this()
     def this(fov: Double, aspect: Double, near: Double) = this()
-    def this(
-      fov: js.UndefOr[scala.Nothing],
-      aspect: js.UndefOr[scala.Nothing],
-      near: js.UndefOr[scala.Nothing],
-      far: Double
-    ) = this()
-    def this(fov: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double, far: Double) = this()
-    def this(fov: js.UndefOr[scala.Nothing], aspect: Double, near: js.UndefOr[scala.Nothing], far: Double) = this()
-    def this(fov: js.UndefOr[scala.Nothing], aspect: Double, near: Double, far: Double) = this()
-    def this(fov: Double, aspect: js.UndefOr[scala.Nothing], near: js.UndefOr[scala.Nothing], far: Double) = this()
-    def this(fov: Double, aspect: js.UndefOr[scala.Nothing], near: Double, far: Double) = this()
-    def this(fov: Double, aspect: Double, near: js.UndefOr[scala.Nothing], far: Double) = this()
+    def this(fov: Double, aspect: Unit, near: Double) = this()
+    def this(fov: Unit, aspect: Double, near: Double) = this()
+    def this(fov: Unit, aspect: Unit, near: Double) = this()
     def this(fov: Double, aspect: Double, near: Double, far: Double) = this()
+    def this(fov: Double, aspect: Double, near: Unit, far: Double) = this()
+    def this(fov: Double, aspect: Unit, near: Double, far: Double) = this()
+    def this(fov: Double, aspect: Unit, near: Unit, far: Double) = this()
+    def this(fov: Unit, aspect: Double, near: Double, far: Double) = this()
+    def this(fov: Unit, aspect: Double, near: Unit, far: Double) = this()
+    def this(fov: Unit, aspect: Unit, near: Double, far: Double) = this()
+    def this(fov: Unit, aspect: Unit, near: Unit, far: Double) = this()
     
     /**
     	 * Camera frustum aspect ratio, window width divided by window height.

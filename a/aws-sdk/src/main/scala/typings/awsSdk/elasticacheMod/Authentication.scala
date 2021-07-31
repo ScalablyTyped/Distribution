@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authentication extends StObject {
   
   /**
     * The number of passwords belonging to the user. The maximum is two.
     */
-  var PasswordCount: js.UndefOr[IntegerOptional] = js.native
+  var PasswordCount: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Indicates whether the user requires a password to authenticate.
     */
-  var Type: js.UndefOr[AuthenticationType] = js.native
+  var Type: js.UndefOr[AuthenticationType] = js.undefined
 }
 object Authentication {
   

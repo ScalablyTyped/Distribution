@@ -11,8 +11,8 @@ Port mapping via UPnP APIs
 | Full name          | nat-upnp |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 31662 |
+| # dependents       | 29 |
+| # downloads        | 27483 |
 | # stars            | 3 |
 
 ## Links

@@ -7,65 +7,64 @@ import typings.wordpressApiFetch.anon.Dictk
 import typings.wordpressApiFetch.anon.Protected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasePost[T /* <: Context */]
-  extends BaseResponse
+  extends StObject
+     with BaseResponse
      with /* k */ StringDictionary[js.Any] {
   
-  var author: Double = js.native
+  var author: Double
   
-  var categories: js.Array[Double] = js.native
+  var categories: js.Array[Double]
   
-  var comment_status: OpenOrClosed = js.native
+  var comment_status: OpenOrClosed
   
-  var content: Contextual[T, Protected, Blockversion] = js.native
+  var content: Contextual[T, Protected, Blockversion]
   
-  var date: String = js.native
+  var date: String
   
-  var date_gmt: String = js.native
+  var date_gmt: String
   
-  var excerpt: Contextual[T, Protected, js.Object] = js.native
+  var excerpt: Contextual[T, Protected, js.Object]
   
-  var featured_media: Double = js.native
+  var featured_media: Double
   
-  var format: PostFormat = js.native
+  var format: PostFormat
   
-  var generated_slug: String = js.native
+  var generated_slug: String
   
-  var guid: Contextual[T, js.Object, js.Object] = js.native
+  var guid: Contextual[T, js.Object, js.Object]
   
-  var id: Double = js.native
+  var id: Double
   
-  var link: String = js.native
+  var link: String
   
-  var meta: js.Array[_] = js.native
+  var meta: js.Array[js.Any]
   
-  var modified: String = js.native
+  var modified: String
   
-  var modified_gmt: String = js.native
+  var modified_gmt: String
   
-  var password: String = js.native
+  var password: String
   
-  var permalink_template: String = js.native
+  var permalink_template: String
   
-  var ping_status: OpenOrClosed = js.native
+  var ping_status: OpenOrClosed
   
-  var slug: String = js.native
+  var slug: String
   
-  var status: PostStatus = js.native
+  var status: PostStatus
   
-  var sticky: Boolean = js.native
+  var sticky: Boolean
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var template: String = js.native
+  var template: String
   
-  var title: Contextual[T, js.Object, js.Object] = js.native
+  var title: Contextual[T, js.Object, js.Object]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BasePost {
   
@@ -85,7 +84,7 @@ object BasePost {
     guid: Contextual[T, js.Object, js.Object],
     id: Double,
     link: String,
-    meta: js.Array[_],
+    meta: js.Array[js.Any],
     modified: String,
     modified_gmt: String,
     password: String,
@@ -105,7 +104,7 @@ object BasePost {
   }
   
   @scala.inline
-  implicit class BasePostMutableBuilder[Self <: BasePost[_], T /* <: Context */] (val x: Self with BasePost[T]) extends AnyVal {
+  implicit class BasePostMutableBuilder[Self <: BasePost[?], T /* <: Context */] (val x: Self & BasePost[T]) extends AnyVal {
     
     @scala.inline
     def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
@@ -150,7 +149,7 @@ object BasePost {
     def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))

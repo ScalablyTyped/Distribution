@@ -2,80 +2,80 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Measurement, calculation or setting capability of a medical device
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait DeviceMetric extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait DeviceMetric
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'category'.
     */
-  var _category: js.UndefOr[Element] = js.native
+  var _category: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'color'.
     */
-  var _color: js.UndefOr[Element] = js.native
+  var _color: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'operationalStatus'.
     */
-  var _operationalStatus: js.UndefOr[Element] = js.native
+  var _operationalStatus: js.UndefOr[Element] = js.undefined
   
   /**
     * Describes the calibrations that have been performed or that are required to be performed
     */
-  var calibration: js.UndefOr[js.Array[DeviceMetricCalibration]] = js.native
+  var calibration: js.UndefOr[js.Array[DeviceMetricCalibration]] = js.undefined
   
   /**
     * measurement | setting | calculation | unspecified
     */
-  var category: code = js.native
+  var category: code
   
   /**
     * black | red | green | yellow | blue | magenta | cyan | white
     */
-  var color: js.UndefOr[code] = js.native
+  var color: js.UndefOr[code] = js.undefined
   
   /**
     * Unique identifier of this DeviceMetric
     */
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
   /**
     * Describes the measurement repetition time
     */
-  var measurementPeriod: js.UndefOr[Timing] = js.native
+  var measurementPeriod: js.UndefOr[Timing] = js.undefined
   
   /**
     * on | off | standby | entered-in-error
     */
-  var operationalStatus: js.UndefOr[code] = js.native
+  var operationalStatus: js.UndefOr[code] = js.undefined
   
   /**
     * Describes the link to the parent DeviceComponent
     */
-  var parent: js.UndefOr[Reference] = js.native
+  var parent: js.UndefOr[Reference] = js.undefined
   
   /**
     * Describes the link to the source Device
     */
-  var source: js.UndefOr[Reference] = js.native
+  var source: js.UndefOr[Reference] = js.undefined
   
   /**
     * Identity of metric, for example Heart Rate or PEEP Setting
     */
-  var `type`: CodeableConcept = js.native
+  var `type`: CodeableConcept
   
   /**
     * Unit of Measure for the Metric
     */
-  var unit: js.UndefOr[CodeableConcept] = js.native
+  var unit: js.UndefOr[CodeableConcept] = js.undefined
 }
 object DeviceMetric {
   

@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.Uik
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XComponentRegistry extends XInterface {
+trait XComponentRegistry
+  extends StObject
+     with XInterface {
   
   /** @deprecated Deprecated */
-  def createObject(URL: String, Uik: Uik): XInterface = js.native
+  def createObject(URL: String, Uik: Uik): XInterface
 }
 object XComponentRegistry {
   

@@ -10,9 +10,9 @@ Phone number validation rule for Joi
 | ------------------ | :-------------: |
 | Full name          | joi-phone-number |
 | Keywords           | joi, extention, phone number, rule |
-| # releases         | 15 |
+| # releases         | 12 |
 | # dependents       | 6 |
-| # downloads        | 326115 |
+| # downloads        | 423896 |
 | # stars            | 2 |
 
 ## Links

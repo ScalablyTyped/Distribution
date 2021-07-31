@@ -8,19 +8,22 @@ import typings.pulumiAws.pulumiAwsStrings.`2012-10-17`
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentsMod {
   
-  @JSImport("@pulumi/aws/iam/documents", "assumeRolePolicyForPrincipal")
+  @JSImport("@pulumi/aws/iam/documents", JSImport.Namespace)
   @js.native
-  def assumeRolePolicyForPrincipal(principal: Principal): PolicyDocument = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AWSPrincipal extends Principal {
+  @scala.inline
+  def assumeRolePolicyForPrincipal(principal: Principal): PolicyDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("assumeRolePolicyForPrincipal")(principal.asInstanceOf[js.Any]).asInstanceOf[PolicyDocument]
+  
+  trait AWSPrincipal
+    extends StObject
+       with Principal {
     
-    var AWS: Input[js.Array[Input[String]] | String] = js.native
+    var AWS: Input[js.Array[Input[String]] | String]
   }
   object AWSPrincipal {
     
@@ -68,10 +71,11 @@ object documentsMod {
     */
   StringDictionary[ConditionArguments]
   
-  @js.native
-  trait FederatedPrincipal extends Principal {
+  trait FederatedPrincipal
+    extends StObject
+       with Principal {
     
-    var Federated: Input[js.Array[Input[String]] | String] = js.native
+    var Federated: Input[js.Array[Input[String]] | String]
   }
   object FederatedPrincipal {
     
@@ -92,23 +96,22 @@ object documentsMod {
     }
   }
   
-  @js.native
   trait PolicyDocument extends StObject {
     
     /**
       * An optional document ID.
       */
-    var Id: js.UndefOr[Input[String]] = js.native
+    var Id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more policy statements, describing the effect, principal, action, resource, and condition.
       */
-    var Statement: Input[js.Array[Input[PolicyStatement]]] = js.native
+    var Statement: Input[js.Array[Input[PolicyStatement]]]
     
     /**
       * The version of the policy language that you want to use. As a best practice, use the latest `2012-10-17` version.
       */
-    var Version: Input[`2008-10-17` | `2012-10-17`] = js.native
+    var Version: Input[`2008-10-17` | `2012-10-17`]
   }
   object PolicyDocument {
     
@@ -138,57 +141,56 @@ object documentsMod {
     }
   }
   
-  @js.native
   trait PolicyStatement extends StObject {
     
     /**
       * Include a list of actions that the policy allows or denies. Required (either Action or NotAction)
       * Reference: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html
       */
-    var Action: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+    var Action: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
     
     /**
       * Specify the circumstances under which the policy grants permission.
       */
-    var Condition: js.UndefOr[Input[Conditions]] = js.native
+    var Condition: js.UndefOr[Input[Conditions]] = js.undefined
     
     /**
       * Indicate whether the policy allows or denies access.
       */
-    var Effect: Input[Allow | Deny] = js.native
+    var Effect: Input[Allow | Deny]
     
     /**
       * Include a list of actions that are not covered by this policy. Required (either Action or NotAction)
       * Reference: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html
       */
-    var NotAction: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+    var NotAction: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
     
     /**
       * Indicate the account, user, role, or federated user to which this policy does not apply.
       */
-    var NotPrincipal: js.UndefOr[Input[Principal]] = js.native
+    var NotPrincipal: js.UndefOr[Input[Principal]] = js.undefined
     
     /**
       * A list of resources that are specifically excluded by this policy.
       */
-    var NotResource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+    var NotResource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
     
     /**
       * Indicate the account, user, role, or federated user to which you would like to allow or deny access. If you are
       * creating a policy to attach to a user or role, you cannot include this element. The principal is implied as that
       * user or role.
       */
-    var Principal: js.UndefOr[Input[typings.pulumiAws.documentsMod.Principal]] = js.native
+    var Principal: js.UndefOr[Input[typings.pulumiAws.documentsMod.Principal]] = js.undefined
     
     /**
       * A list of resources to which the actions apply.
       */
-    var Resource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+    var Resource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
     
     /**
       * An optional statement ID to differentiate between your statements.
       */
-    var Sid: js.UndefOr[Input[String]] = js.native
+    var Sid: js.UndefOr[Input[String]] = js.undefined
   }
   object PolicyStatement {
     
@@ -274,10 +276,11 @@ object documentsMod {
   */
   trait Principal extends StObject
   
-  @js.native
-  trait ServicePrincipal extends Principal {
+  trait ServicePrincipal
+    extends StObject
+       with Principal {
     
-    var Service: Input[js.Array[Input[String]] | String] = js.native
+    var Service: Input[js.Array[Input[String]] | String]
   }
   object ServicePrincipal {
     

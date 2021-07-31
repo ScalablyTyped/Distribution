@@ -2,17 +2,15 @@ package typings.dateFns.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTime extends StObject {
   
-  def date(args: js.Any*): js.Any = js.native
+  def date(args: js.Any*): js.Any
   
-  def dateTime(args: js.Any*): js.Any = js.native
+  def dateTime(args: js.Any*): js.Any
   
-  def time(args: js.Any*): js.Any = js.native
+  def time(args: js.Any*): js.Any
 }
 object DateTime {
   

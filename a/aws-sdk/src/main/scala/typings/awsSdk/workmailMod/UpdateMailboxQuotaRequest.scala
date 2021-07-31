@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMailboxQuotaRequest extends StObject {
   
   /**
     * The updated mailbox quota, in MB, for the specified user.
     */
-  var MailboxQuota: typings.awsSdk.workmailMod.MailboxQuota = js.native
+  var MailboxQuota: typings.awsSdk.workmailMod.MailboxQuota
   
   /**
     * The identifier for the organization that contains the user for whom to update the mailbox quota.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifer for the user for whom to update the mailbox quota.
     */
-  var UserId: WorkMailIdentifier = js.native
+  var UserId: WorkMailIdentifier
 }
 object UpdateMailboxQuotaRequest {
   

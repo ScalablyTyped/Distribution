@@ -3,19 +3,17 @@ package typings.winrt.Windows.Media.PlayTo
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlayToSourceRequest extends StObject {
   
-  var deadline: Date = js.native
+  var deadline: Date
   
-  def displayErrorString(errorString: String): Unit = js.native
+  def displayErrorString(errorString: String): Unit
   
-  def getDeferral(): PlayToSourceDeferral = js.native
+  def getDeferral(): PlayToSourceDeferral
   
-  def setSource(value: PlayToSource): Unit = js.native
+  def setSource(value: PlayToSource): Unit
 }
 object IPlayToSourceRequest {
   

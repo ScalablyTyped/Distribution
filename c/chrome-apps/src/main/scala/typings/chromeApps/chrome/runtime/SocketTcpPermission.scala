@@ -2,18 +2,16 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// For chrome.sockets ///
-@js.native
 trait SocketTcpPermission extends StObject {
   
   /**
     * The host:port pattern for connect operations.
     * *:* are allowed
     */
-  var connect: js.UndefOr[String | js.Array[String]] = js.native
+  var connect: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SocketTcpPermission {
   

@@ -3,33 +3,31 @@ package typings.awsSdkClientCognitoIdentityBrowser
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCredentialsMod {
   
-  @js.native
   trait Credentials extends StObject {
     
     /**
       * <p>The Access Key portion of the credentials.</p>
       */
-    var AccessKeyId: js.UndefOr[String] = js.native
+    var AccessKeyId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The date at which these credentials will expire.</p>
       */
-    var Expiration: js.UndefOr[Date | String | Double] = js.native
+    var Expiration: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The Secret Access Key portion of the credentials</p>
       */
-    var SecretKey: js.UndefOr[String] = js.native
+    var SecretKey: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The Session Token portion of the credentials</p>
       */
-    var SessionToken: js.UndefOr[String] = js.native
+    var SessionToken: js.UndefOr[String] = js.undefined
   }
   object Credentials {
     
@@ -68,14 +66,15 @@ object typesCredentialsMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCredentials extends Credentials {
+  trait UnmarshalledCredentials
+    extends StObject
+       with Credentials {
     
     /**
       * <p>The date at which these credentials will expire.</p>
       */
     @JSName("Expiration")
-    var Expiration_UnmarshalledCredentials: js.UndefOr[Date] = js.native
+    var Expiration_UnmarshalledCredentials: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledCredentials {
     

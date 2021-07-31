@@ -14,14 +14,15 @@ import typings.socketclusterServer.serverMod.CodecEngine
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
   
   @JSImport("socketcluster-client/lib/transport", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AGTransport {
+  class ^ protected ()
+    extends StObject
+       with AGTransport {
     def this(authEngine: AGAuthEngine, codecEngine: CodecEngine, options: ClientOptions) = this()
     def this(
       authEngine: AGAuthEngine,
@@ -33,7 +34,7 @@ object transportMod {
       authEngine: AGAuthEngine,
       codecEngine: CodecEngine,
       options: ClientOptions,
-      wsOptions: js.UndefOr[scala.Nothing],
+      wsOptions: Unit,
       handlers: TransportHandlers
     ) = this()
     def this(
@@ -69,9 +70,9 @@ object transportMod {
     def clearAllListeners(): Unit = js.native
     
     def close(): Unit = js.native
-    def close(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
     def close(code: Double): Unit = js.native
     def close(code: Double, reason: String): Unit = js.native
+    def close(code: Unit, reason: String): Unit = js.native
     
     var codec: CodecEngine = js.native
     
@@ -119,18 +120,17 @@ object transportMod {
     var wsOptions: js.UndefOr[typings.ws.mod.ClientOptions] = js.native
   }
   
-  @js.native
   trait EventObject extends StObject {
     
-    var callback: js.UndefOr[EventObjectCallback] = js.native
+    var callback: js.UndefOr[EventObjectCallback] = js.undefined
     
-    var cid: js.UndefOr[Double] = js.native
+    var cid: js.UndefOr[Double] = js.undefined
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var event: String = js.native
+    var event: String
     
-    var timeout: js.UndefOr[Timer] = js.native
+    var timeout: js.UndefOr[Timer] = js.undefined
   }
   object EventObject {
     
@@ -171,14 +171,13 @@ object transportMod {
   
   type EventObjectCallback = js.Function2[/* error */ Error, /* eventObject */ EventObject, Unit]
   
-  @js.native
   trait InvokeOptions extends StObject {
     
-    var ackTimeout: js.UndefOr[Double] = js.native
+    var ackTimeout: js.UndefOr[Double] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var noTimeout: js.UndefOr[Boolean] = js.native
+    var noTimeout: js.UndefOr[Boolean] = js.undefined
   }
   object InvokeOptions {
     
@@ -211,12 +210,11 @@ object transportMod {
     }
   }
   
-  @js.native
   trait OnCloseValue extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
   }
   object OnCloseValue {
     
@@ -237,10 +235,9 @@ object transportMod {
     }
   }
   
-  @js.native
   trait OnErrorValue extends StObject {
     
-    var error: Error = js.native
+    var error: Error
   }
   object OnErrorValue {
     
@@ -258,12 +255,11 @@ object transportMod {
     }
   }
   
-  @js.native
   trait OnEventValue extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var event: String = js.native
+    var event: String
   }
   object OnEventValue {
     
@@ -284,12 +280,11 @@ object transportMod {
     }
   }
   
-  @js.native
   trait OnInboundInvokeValue extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var procedure: String = js.native
+    var procedure: String
   }
   object OnInboundInvokeValue {
     
@@ -310,12 +305,11 @@ object transportMod {
     }
   }
   
-  @js.native
   trait OnInboundTransmitValue extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var event: String = js.native
+    var event: String
   }
   object OnInboundTransmitValue {
     
@@ -336,12 +330,11 @@ object transportMod {
     }
   }
   
-  @js.native
   trait OnOpenAbortValue extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
   }
   object OnOpenAbortValue {
     
@@ -362,22 +355,21 @@ object transportMod {
     }
   }
   
-  @js.native
   trait OnOpenValue extends StObject {
     
-    var authToken: AuthToken | Null = js.native
+    var authToken: AuthToken | Null
     
-    var id: String = js.native
+    var id: String
     
-    var isAuthenticated: Boolean = js.native
+    var isAuthenticated: Boolean
     
-    var pingTimeout: Double = js.native
+    var pingTimeout: Double
   }
   object OnOpenValue {
     
     @scala.inline
     def apply(id: String, isAuthenticated: Boolean, pingTimeout: Double): OnOpenValue = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any], authToken = null)
       __obj.asInstanceOf[OnOpenValue]
     }
     
@@ -401,10 +393,9 @@ object transportMod {
     }
   }
   
-  @js.native
   trait TransmitOptions extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object TransmitOptions {
     

@@ -3,7 +3,6 @@ package typings.firebase.mod.firebase.firestore
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,7 +23,7 @@ trait WriteBatch extends StObject {
     * @param documentRef A reference to the document to be deleted.
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
-  def delete(documentRef: DocumentReference[_]): WriteBatch = js.native
+  def delete(documentRef: DocumentReference[js.Any]): WriteBatch = js.native
   
   /**
     * Writes to the document referred to by the provided `DocumentReference`.
@@ -59,7 +58,7 @@ trait WriteBatch extends StObject {
     * within the document.
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
-  def update(documentRef: DocumentReference[_], data: UpdateData): WriteBatch = js.native
+  def update(documentRef: DocumentReference[js.Any], data: UpdateData): WriteBatch = js.native
   /**
     * Updates fields in the document referred to by this `DocumentReference`.
     * The update will fail if applied to a document that does not exist.
@@ -74,6 +73,11 @@ trait WriteBatch extends StObject {
     * @return A Promise resolved once the data has been successfully written
     * to the backend (Note that it won't resolve while you're offline).
     */
-  def update(documentRef: DocumentReference[_], field: String, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
-  def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
+  def update(documentRef: DocumentReference[js.Any], field: String, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
+  def update(
+    documentRef: DocumentReference[js.Any],
+    field: FieldPath,
+    value: js.Any,
+    moreFieldsAndValues: js.Any*
+  ): WriteBatch = js.native
 }

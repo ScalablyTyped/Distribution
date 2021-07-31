@@ -6,7 +6,6 @@ import typings.three.geometryMod.Geometry
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tubeGeometryMod {
@@ -23,76 +22,12 @@ object tubeGeometryMod {
     	 */
     def this(path: Curve[Vector3]) = this()
     def this(path: Curve[Vector3], tubularSegments: Double) = this()
-    def this(path: Curve[Vector3], tubularSegments: js.UndefOr[scala.Nothing], radius: Double) = this()
     def this(path: Curve[Vector3], tubularSegments: Double, radius: Double) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: js.UndefOr[scala.Nothing],
-      radius: js.UndefOr[scala.Nothing],
-      radiusSegments: Double
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: js.UndefOr[scala.Nothing],
-      radius: Double,
-      radiusSegments: Double
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: Double,
-      radius: js.UndefOr[scala.Nothing],
-      radiusSegments: Double
-    ) = this()
+    def this(path: Curve[Vector3], tubularSegments: Unit, radius: Double) = this()
     def this(path: Curve[Vector3], tubularSegments: Double, radius: Double, radiusSegments: Double) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: js.UndefOr[scala.Nothing],
-      radius: js.UndefOr[scala.Nothing],
-      radiusSegments: js.UndefOr[scala.Nothing],
-      closed: Boolean
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: js.UndefOr[scala.Nothing],
-      radius: js.UndefOr[scala.Nothing],
-      radiusSegments: Double,
-      closed: Boolean
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: js.UndefOr[scala.Nothing],
-      radius: Double,
-      radiusSegments: js.UndefOr[scala.Nothing],
-      closed: Boolean
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: js.UndefOr[scala.Nothing],
-      radius: Double,
-      radiusSegments: Double,
-      closed: Boolean
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: Double,
-      radius: js.UndefOr[scala.Nothing],
-      radiusSegments: js.UndefOr[scala.Nothing],
-      closed: Boolean
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: Double,
-      radius: js.UndefOr[scala.Nothing],
-      radiusSegments: Double,
-      closed: Boolean
-    ) = this()
-    def this(
-      path: Curve[Vector3],
-      tubularSegments: Double,
-      radius: Double,
-      radiusSegments: js.UndefOr[scala.Nothing],
-      closed: Boolean
-    ) = this()
+    def this(path: Curve[Vector3], tubularSegments: Double, radius: Unit, radiusSegments: Double) = this()
+    def this(path: Curve[Vector3], tubularSegments: Unit, radius: Double, radiusSegments: Double) = this()
+    def this(path: Curve[Vector3], tubularSegments: Unit, radius: Unit, radiusSegments: Double) = this()
     def this(
       path: Curve[Vector3],
       tubularSegments: Double,
@@ -100,6 +35,31 @@ object tubeGeometryMod {
       radiusSegments: Double,
       closed: Boolean
     ) = this()
+    def this(
+      path: Curve[Vector3],
+      tubularSegments: Double,
+      radius: Double,
+      radiusSegments: Unit,
+      closed: Boolean
+    ) = this()
+    def this(
+      path: Curve[Vector3],
+      tubularSegments: Double,
+      radius: Unit,
+      radiusSegments: Double,
+      closed: Boolean
+    ) = this()
+    def this(path: Curve[Vector3], tubularSegments: Double, radius: Unit, radiusSegments: Unit, closed: Boolean) = this()
+    def this(
+      path: Curve[Vector3],
+      tubularSegments: Unit,
+      radius: Double,
+      radiusSegments: Double,
+      closed: Boolean
+    ) = this()
+    def this(path: Curve[Vector3], tubularSegments: Unit, radius: Double, radiusSegments: Unit, closed: Boolean) = this()
+    def this(path: Curve[Vector3], tubularSegments: Unit, radius: Unit, radiusSegments: Double, closed: Boolean) = this()
+    def this(path: Curve[Vector3], tubularSegments: Unit, radius: Unit, radiusSegments: Unit, closed: Boolean) = this()
     
     var binormals: js.Array[Vector3] = js.native
     

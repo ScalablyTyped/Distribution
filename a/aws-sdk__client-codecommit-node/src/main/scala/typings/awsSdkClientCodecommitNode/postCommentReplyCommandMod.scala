@@ -7,16 +7,18 @@ import typings.awsSdkClientCodecommitNode.typesPostCommentReplyInputMod.PostComm
 import typings.awsSdkClientCodecommitNode.typesPostCommentReplyOutputMod.PostCommentReplyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postCommentReplyCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/PostCommentReplyCommand", "PostCommentReplyCommand")
   @js.native
-  class PostCommentReplyCommand protected () extends Command[
+  class PostCommentReplyCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           PostCommentReplyInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object postCommentReplyCommandMod {
         ] {
     def this(input: PostCommentReplyInput) = this()
     
+    /* CompleteClass */
+    override val input: PostCommentReplyInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[PostCommentReplyInput, PostCommentReplyOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: CodeCommitResolvedConfiguration
+    ): Handler[PostCommentReplyInput, PostCommentReplyOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: CodeCommitResolvedConfiguration,
+      options: js.Any
     ): Handler[PostCommentReplyInput, PostCommentReplyOutput] = js.native
   }
 }

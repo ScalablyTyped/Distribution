@@ -2,27 +2,25 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppPackage extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var isObjectEnabler: js.UndefOr[Boolean] = js.native
+  var isObjectEnabler: js.UndefOr[Boolean] = js.undefined
   
-  var isPublic: js.UndefOr[Boolean] = js.native
+  var isPublic: js.UndefOr[Boolean] = js.undefined
   
-  var references: js.Array[String] = js.native
+  var references: js.Array[String]
   
-  var requiredEngineVersion: String = js.native
+  var requiredEngineVersion: String
   
-  var resource: String = js.native
+  var resource: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object AppPackage {
   

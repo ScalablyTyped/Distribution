@@ -4,25 +4,23 @@ import typings.octokitTypes.anon.Archiveurl
 import typings.octokitTypes.anon.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetCombinedStatusForRefResponseData extends StObject {
   
-  var commit_url: String = js.native
+  var commit_url: String
   
-  var repository: Archiveurl = js.native
+  var repository: Archiveurl
   
-  var sha: String = js.native
+  var sha: String
   
-  var state: String = js.native
+  var state: String
   
-  var statuses: js.Array[Context] = js.native
+  var statuses: js.Array[Context]
   
-  var total_count: Double = js.native
+  var total_count: Double
   
-  var url: String = js.native
+  var url: String
 }
 object ReposGetCombinedStatusForRefResponseData {
   

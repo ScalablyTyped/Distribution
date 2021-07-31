@@ -13,15 +13,21 @@ import typings.gridstack.typesMod.GridStackOptions
 import typings.gridstack.typesMod.GridStackWidget
 import typings.gridstack.typesMod.numberOrString
 import typings.gridstack.utilsMod.HeightData
+import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleSheet
 import typings.std.Event
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gridstack", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gridstack", "GridStack")
   @js.native
@@ -56,8 +62,9 @@ object mod {
       * @param options widget position/size options (optional, and ignore if first param is already option) - see GridStackWidget
       */
     def addWidget(): GridItemHTMLElement = js.native
-    def addWidget(els: js.UndefOr[GridStackElement], options: GridStackWidget): GridItemHTMLElement = js.native
+    def addWidget(els: Unit, options: GridStackWidget): GridItemHTMLElement = js.native
     def addWidget(els: GridStackElement): GridItemHTMLElement = js.native
+    def addWidget(els: GridStackElement, options: GridStackWidget): GridItemHTMLElement = js.native
     def addWidget(els: GridStackWidget): GridItemHTMLElement = js.native
     def addWidget(els: GridStackWidget, options: GridStackWidget): GridItemHTMLElement = js.native
     
@@ -292,9 +299,9 @@ object mod {
       * @param y new position y. If value is null or undefined it will be ignored.
       */
     def move(els: GridStackElement): GridStack = js.native
-    def move(els: GridStackElement, x: js.UndefOr[scala.Nothing], y: Double): GridStack = js.native
     def move(els: GridStackElement, x: Double): GridStack = js.native
     def move(els: GridStackElement, x: Double, y: Double): GridStack = js.native
+    def move(els: GridStackElement, x: Unit, y: Double): GridStack = js.native
     
     /**
       * unsubscribe from the 'on' event below
@@ -350,9 +357,9 @@ object mod {
       * @param triggerEvent if `false` (quiet mode) element will not be added to removed list and no 'removed' callbacks will be called (Default? true).
       */
     def removeWidget(els: GridStackElement): GridStack = js.native
-    def removeWidget(els: GridStackElement, removeDOM: js.UndefOr[scala.Nothing], triggerEvent: Boolean): GridStack = js.native
     def removeWidget(els: GridStackElement, removeDOM: Boolean): GridStack = js.native
     def removeWidget(els: GridStackElement, removeDOM: Boolean, triggerEvent: Boolean): GridStack = js.native
+    def removeWidget(els: GridStackElement, removeDOM: Unit, triggerEvent: Boolean): GridStack = js.native
     
     /**
       * Enables/Disables resizing.
@@ -368,9 +375,9 @@ object mod {
       * @param height  new dimensions height. If value is null or undefined it will be ignored.
       */
     def resize(els: GridStackElement): GridStack = js.native
-    def resize(els: GridStackElement, width: js.UndefOr[scala.Nothing], height: Double): GridStack = js.native
     def resize(els: GridStackElement, width: Double): GridStack = js.native
     def resize(els: GridStackElement, width: Double, height: Double): GridStack = js.native
+    def resize(els: GridStackElement, width: Unit, height: Double): GridStack = js.native
     
     /** saves the current layout returning a list of widgets for serialization */
     def save(): js.Array[GridStackWidget] = js.native
@@ -398,45 +405,21 @@ object mod {
       * @param height  new dimensions height. If value is null or undefined it will be ignored.
       */
     def update(els: GridStackElement): GridStack = js.native
-    def update(
-      els: GridStackElement,
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): GridStack = js.native
-    def update(els: GridStackElement, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): GridStack = js.native
-    def update(
-      els: GridStackElement,
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ): GridStack = js.native
-    def update(els: GridStackElement, x: js.UndefOr[scala.Nothing], y: Double): GridStack = js.native
-    def update(
-      els: GridStackElement,
-      x: js.UndefOr[scala.Nothing],
-      y: Double,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): GridStack = js.native
-    def update(els: GridStackElement, x: js.UndefOr[scala.Nothing], y: Double, width: Double): GridStack = js.native
-    def update(els: GridStackElement, x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): GridStack = js.native
     def update(els: GridStackElement, x: Double): GridStack = js.native
-    def update(
-      els: GridStackElement,
-      x: Double,
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: js.UndefOr[scala.Nothing], width: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): GridStack = js.native
     def update(els: GridStackElement, x: Double, y: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): GridStack = js.native
     def update(els: GridStackElement, x: Double, y: Double, width: Double): GridStack = js.native
     def update(els: GridStackElement, x: Double, y: Double, width: Double, height: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Double, y: Double, width: Unit, height: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Double, y: Unit, width: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Double, y: Unit, width: Double, height: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Double, y: Unit, width: Unit, height: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Unit, y: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Unit, y: Double, width: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Unit, y: Double, width: Double, height: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Unit, y: Double, width: Unit, height: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Unit, y: Unit, width: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Unit, y: Unit, width: Double, height: Double): GridStack = js.native
+    def update(els: GridStackElement, x: Unit, y: Unit, width: Unit, height: Double): GridStack = js.native
     
     /**
       * Returns true if the height of the grid will be less the vertical
@@ -507,18 +490,14 @@ object mod {
       * Note: the HTMLElement (of type GridHTMLElement) will store a `gridstack: GridStack` value that can be retrieve later
       * let grid = document.querySelector('.grid-stack').gridstack;
       */
-    @JSImport("gridstack", "GridStack.init")
-    @js.native
-    def init(): GridStack = js.native
-    @JSImport("gridstack", "GridStack.init")
-    @js.native
-    def init(options: js.UndefOr[scala.Nothing], elOrString: GridStackElement): GridStack = js.native
-    @JSImport("gridstack", "GridStack.init")
-    @js.native
-    def init(options: GridStackOptions): GridStack = js.native
-    @JSImport("gridstack", "GridStack.init")
-    @js.native
-    def init(options: GridStackOptions, elOrString: GridStackElement): GridStack = js.native
+    @scala.inline
+    def init(): GridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[GridStack]
+    @scala.inline
+    def init(options: Unit, elOrString: GridStackElement): GridStack = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], elOrString.asInstanceOf[js.Any])).asInstanceOf[GridStack]
+    @scala.inline
+    def init(options: GridStackOptions): GridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[GridStack]
+    @scala.inline
+    def init(options: GridStackOptions, elOrString: GridStackElement): GridStack = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], elOrString.asInstanceOf[js.Any])).asInstanceOf[GridStack]
     
     /**
       * Will initialize a list of elements (given a selector) and return an array of grids.
@@ -529,18 +508,14 @@ object mod {
       * let grids = GridStack.initAll();
       * grids.forEach(...)
       */
-    @JSImport("gridstack", "GridStack.initAll")
-    @js.native
-    def initAll(): js.Array[GridStack] = js.native
-    @JSImport("gridstack", "GridStack.initAll")
-    @js.native
-    def initAll(options: js.UndefOr[scala.Nothing], selector: String): js.Array[GridStack] = js.native
-    @JSImport("gridstack", "GridStack.initAll")
-    @js.native
-    def initAll(options: GridStackOptions): js.Array[GridStack] = js.native
-    @JSImport("gridstack", "GridStack.initAll")
-    @js.native
-    def initAll(options: GridStackOptions, selector: String): js.Array[GridStack] = js.native
+    @scala.inline
+    def initAll(): js.Array[GridStack] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")().asInstanceOf[js.Array[GridStack]]
+    @scala.inline
+    def initAll(options: Unit, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
+    @scala.inline
+    def initAll(options: GridStackOptions): js.Array[GridStack] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStack]]
+    @scala.inline
+    def initAll(options: GridStackOptions, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
   }
   
   @JSImport("gridstack", "GridStackDD")
@@ -557,14 +532,12 @@ object mod {
     val ^ : js.Any = js.native
     
     /** get the current registered plugin to use */
-    @JSImport("gridstack", "GridStackDD.get")
-    @js.native
-    def get(): TypeofGridStackDD = js.native
+    @scala.inline
+    def get(): TypeofGridStackDD = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[TypeofGridStackDD]
     
     /** call this method to register your plugin instead of the default no-op one */
-    @JSImport("gridstack", "GridStackDD.registerPlugin")
-    @js.native
-    def registerPlugin(pluginClass: TypeofGridStackDD): Unit = js.native
+    @scala.inline
+    def registerPlugin(pluginClass: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("gridstack", "GridStackDD.registeredPlugins")
     @js.native
@@ -585,145 +558,24 @@ object mod {
   class GridStackEngine ()
     extends typings.gridstack.gridstackEngineMod.GridStackEngine {
     def this(column: Double) = this()
-    def this(column: js.UndefOr[scala.Nothing], onchange: onChangeCB) = this()
     def this(column: Double, onchange: onChangeCB) = this()
-    def this(column: js.UndefOr[scala.Nothing], onchange: js.UndefOr[scala.Nothing], float: Boolean) = this()
-    def this(column: js.UndefOr[scala.Nothing], onchange: onChangeCB, float: Boolean) = this()
-    def this(column: Double, onchange: js.UndefOr[scala.Nothing], float: Boolean) = this()
+    def this(column: Unit, onchange: onChangeCB) = this()
+    def this(column: Double, onchange: Unit, float: Boolean) = this()
     def this(column: Double, onchange: onChangeCB, float: Boolean) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: js.UndefOr[scala.Nothing],
-      float: js.UndefOr[scala.Nothing],
-      maxRow: Double
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: js.UndefOr[scala.Nothing],
-      float: Boolean,
-      maxRow: Double
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: onChangeCB,
-      float: js.UndefOr[scala.Nothing],
-      maxRow: Double
-    ) = this()
-    def this(column: js.UndefOr[scala.Nothing], onchange: onChangeCB, float: Boolean, maxRow: Double) = this()
-    def this(
-      column: Double,
-      onchange: js.UndefOr[scala.Nothing],
-      float: js.UndefOr[scala.Nothing],
-      maxRow: Double
-    ) = this()
-    def this(column: Double, onchange: js.UndefOr[scala.Nothing], float: Boolean, maxRow: Double) = this()
-    def this(column: Double, onchange: onChangeCB, float: js.UndefOr[scala.Nothing], maxRow: Double) = this()
+    def this(column: Unit, onchange: Unit, float: Boolean) = this()
+    def this(column: Unit, onchange: onChangeCB, float: Boolean) = this()
+    def this(column: Double, onchange: Unit, float: Boolean, maxRow: Double) = this()
+    def this(column: Double, onchange: Unit, float: Unit, maxRow: Double) = this()
     def this(column: Double, onchange: onChangeCB, float: Boolean, maxRow: Double) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: js.UndefOr[scala.Nothing],
-      float: js.UndefOr[scala.Nothing],
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: js.UndefOr[scala.Nothing],
-      float: js.UndefOr[scala.Nothing],
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: js.UndefOr[scala.Nothing],
-      float: Boolean,
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: js.UndefOr[scala.Nothing],
-      float: Boolean,
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: onChangeCB,
-      float: js.UndefOr[scala.Nothing],
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: onChangeCB,
-      float: js.UndefOr[scala.Nothing],
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: onChangeCB,
-      float: Boolean,
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: js.UndefOr[scala.Nothing],
-      onchange: onChangeCB,
-      float: Boolean,
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: Double,
-      onchange: js.UndefOr[scala.Nothing],
-      float: js.UndefOr[scala.Nothing],
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: Double,
-      onchange: js.UndefOr[scala.Nothing],
-      float: js.UndefOr[scala.Nothing],
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: Double,
-      onchange: js.UndefOr[scala.Nothing],
-      float: Boolean,
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: Double,
-      onchange: js.UndefOr[scala.Nothing],
-      float: Boolean,
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: Double,
-      onchange: onChangeCB,
-      float: js.UndefOr[scala.Nothing],
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: Double,
-      onchange: onChangeCB,
-      float: js.UndefOr[scala.Nothing],
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(
-      column: Double,
-      onchange: onChangeCB,
-      float: Boolean,
-      maxRow: js.UndefOr[scala.Nothing],
-      nodes: js.Array[GridStackNode]
-    ) = this()
+    def this(column: Double, onchange: onChangeCB, float: Unit, maxRow: Double) = this()
+    def this(column: Unit, onchange: Unit, float: Boolean, maxRow: Double) = this()
+    def this(column: Unit, onchange: Unit, float: Unit, maxRow: Double) = this()
+    def this(column: Unit, onchange: onChangeCB, float: Boolean, maxRow: Double) = this()
+    def this(column: Unit, onchange: onChangeCB, float: Unit, maxRow: Double) = this()
+    def this(column: Double, onchange: Unit, float: Boolean, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Double, onchange: Unit, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Double, onchange: Unit, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Double, onchange: Unit, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
     def this(
       column: Double,
       onchange: onChangeCB,
@@ -731,6 +583,17 @@ object mod {
       maxRow: Double,
       nodes: js.Array[GridStackNode]
     ) = this()
+    def this(column: Double, onchange: onChangeCB, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Double, onchange: onChangeCB, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Double, onchange: onChangeCB, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: Unit, float: Boolean, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: Unit, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: Unit, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: Unit, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: onChangeCB, float: Boolean, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: onChangeCB, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: onChangeCB, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
+    def this(column: Unit, onchange: onChangeCB, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
   }
   
   @JSImport("gridstack", "Utils")
@@ -740,20 +603,21 @@ object mod {
   /* static members */
   object Utils {
     
-    /** inserts a CSS rule */
-    @JSImport("gridstack", "Utils.addCSSRule")
+    @JSImport("gridstack", "Utils")
     @js.native
-    def addCSSRule(sheet: CSSStyleSheet, selector: String, rules: String): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /** inserts a CSS rule */
+    @scala.inline
+    def addCSSRule(sheet: CSSStyleSheet, selector: String, rules: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCSSRule")(sheet.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** makes a shallow copy of the passed json struct */
-    @JSImport("gridstack", "Utils.clone")
-    @js.native
-    def clone(target: js.Object): js.Object = js.native
+    @scala.inline
+    def clone(target: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /** return the closest parent matching the given class */
-    @JSImport("gridstack", "Utils.closestByClass")
-    @js.native
-    def closestByClass(el: HTMLElement, name: String): HTMLElement = js.native
+    @scala.inline
+    def closestByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * creates a style sheet with style id under given parent
@@ -761,35 +625,28 @@ object mod {
       * @param parent to insert the stylesheet as first child,
       * if none supplied it will be appended to the document head instead.
       */
-    @JSImport("gridstack", "Utils.createStylesheet")
-    @js.native
-    def createStylesheet(id: String): CSSStyleSheet = js.native
-    @JSImport("gridstack", "Utils.createStylesheet")
-    @js.native
-    def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = js.native
+    @scala.inline
+    def createStylesheet(id: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
+    @scala.inline
+    def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
     
     /** copies unset fields in target to use the given default sources values */
-    @JSImport("gridstack", "Utils.defaults")
-    @js.native
-    def defaults(target: js.Any, sources: js.Any*): js.Object = js.native
+    @scala.inline
+    def defaults(target: js.Any, sources: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /** returns true if a and b overlap */
-    @JSImport("gridstack", "Utils.isIntercepted")
-    @js.native
-    def isIntercepted(a: GridStackWidget, b: GridStackWidget): Boolean = js.native
+    @scala.inline
+    def isIntercepted(a: GridStackWidget, b: GridStackWidget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIntercepted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("gridstack", "Utils.parseHeight")
-    @js.native
-    def parseHeight(`val`: numberOrString): HeightData = js.native
+    @scala.inline
+    def parseHeight(`val`: numberOrString): HeightData = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHeight")(`val`.asInstanceOf[js.Any]).asInstanceOf[HeightData]
     
-    @JSImport("gridstack", "Utils.removePositioningStyles")
-    @js.native
-    def removePositioningStyles(el: HTMLElement): Unit = js.native
+    @scala.inline
+    def removePositioningStyles(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePositioningStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** removed the given stylesheet id */
-    @JSImport("gridstack", "Utils.removeStylesheet")
-    @js.native
-    def removeStylesheet(id: String): Unit = js.native
+    @scala.inline
+    def removeStylesheet(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Sorts array of nodes
@@ -797,59 +654,46 @@ object mod {
       * @param dir 1 for asc, -1 for desc (optional)
       * @param width width of the grid. If undefined the width will be calculated automatically (optional).
       **/
-    @JSImport("gridstack", "Utils.sort")
-    @js.native
-    def sort(nodes: js.Array[GridStackNode]): js.Array[GridStackNode] = js.native
-    @JSImport("gridstack", "Utils.sort")
-    @js.native
-    def sort(nodes: js.Array[GridStackNode], dir: js.UndefOr[scala.Nothing], column: Double): js.Array[GridStackNode] = js.native
-    @JSImport("gridstack", "Utils.sort")
-    @js.native
-    def sort_1(nodes: js.Array[GridStackNode], dir: `-1`): js.Array[GridStackNode] = js.native
-    @JSImport("gridstack", "Utils.sort")
-    @js.native
-    def sort_1(nodes: js.Array[GridStackNode], dir: `-1`, column: Double): js.Array[GridStackNode] = js.native
-    @JSImport("gridstack", "Utils.sort")
-    @js.native
-    def sort_1(nodes: js.Array[GridStackNode], dir: `1`): js.Array[GridStackNode] = js.native
-    @JSImport("gridstack", "Utils.sort")
-    @js.native
-    def sort_1(nodes: js.Array[GridStackNode], dir: `1`, column: Double): js.Array[GridStackNode] = js.native
+    @scala.inline
+    def sort(nodes: js.Array[GridStackNode]): js.Array[GridStackNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStackNode]]
+    @scala.inline
+    def sort(nodes: js.Array[GridStackNode], dir: Unit, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
     
-    @JSImport("gridstack", "Utils.toBool")
-    @js.native
-    def toBool(v: js.Any): Boolean = js.native
+    @scala.inline
+    def sort_1(nodes: js.Array[GridStackNode], dir: `-1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    @scala.inline
+    def sort_1(nodes: js.Array[GridStackNode], dir: `-1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    @scala.inline
+    def sort_1(nodes: js.Array[GridStackNode], dir: `1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    @scala.inline
+    def sort_1(nodes: js.Array[GridStackNode], dir: `1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
     
-    @JSImport("gridstack", "Utils.toNumber")
-    @js.native
-    def toNumber(): Double | Null = js.native
-    @JSImport("gridstack", "Utils.toNumber")
-    @js.native
-    def toNumber(value: String): Double | Null = js.native
+    @scala.inline
+    def toBool(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBool")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def toNumber(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")().asInstanceOf[Double | Null]
+    @scala.inline
+    def toNumber(value: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   }
   
-  @JSImport("gridstack", "obsolete")
-  @js.native
-  def obsolete(self: js.Any, f: js.Any, oldName: String, newName: String, rev: String): js.Function1[/* repeated */ js.Any, _] = js.native
+  @scala.inline
+  def obsolete(self: js.Any, f: js.Any, oldName: String, newName: String, rev: String): js.Function1[/* repeated */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("obsolete")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @JSImport("gridstack", "obsoleteAttr")
-  @js.native
-  def obsoleteAttr(el: HTMLElement, oldName: String, newName: String, rev: String): Unit = js.native
+  @scala.inline
+  def obsoleteAttr(el: HTMLElement, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteAttr")(el.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gridstack", "obsoleteOpts")
-  @js.native
-  def obsoleteOpts(opts: GridStackOptions, oldName: String, newName: String, rev: String): Unit = js.native
+  @scala.inline
+  def obsoleteOpts(opts: GridStackOptions, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOpts")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gridstack", "obsoleteOptsDel")
-  @js.native
-  def obsoleteOptsDel(opts: GridStackOptions, oldName: String, rev: String, info: String): Unit = js.native
+  @scala.inline
+  def obsoleteOptsDel(opts: GridStackOptions, oldName: String, rev: String, info: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOptsDel")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CellPosition extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object CellPosition {
     
@@ -871,9 +715,25 @@ object mod {
   }
   
   @js.native
-  trait GridHTMLElement extends HTMLElement {
+  trait GridHTMLElement
+    extends StObject
+       with HTMLElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var gridstack: js.UndefOr[GridStack] = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
   type GridStackElement = String | HTMLElement | GridItemHTMLElement
@@ -924,12 +784,11 @@ object mod {
     def resizestop: typings.gridstack.gridstackStrings.resizestop = "resizestop".asInstanceOf[typings.gridstack.gridstackStrings.resizestop]
   }
   
-  @js.native
   trait MousePosition extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object MousePosition {
     

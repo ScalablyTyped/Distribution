@@ -4,24 +4,22 @@ import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a SOAP message used in manual challenge requests. */
-@js.native
 trait PlayReadySoapMessage extends StObject {
   
   /**
     * Retrieves the contents of the SOAP message.
     * @return The contents of the SOAP message.
     */
-  def getMessageBody(): js.Array[Double] = js.native
+  def getMessageBody(): js.Array[Double]
   
   /** Gets a collection of the SOAP headers applied to the current SOAP request or SOAP response. */
-  var messageHeaders: IPropertySet = js.native
+  var messageHeaders: IPropertySet
   
   /** Gets the base URL of the XML Web service. */
-  var uri: Uri = js.native
+  var uri: Uri
 }
 object PlayReadySoapMessage {
   

@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomProps[TLength] extends StObject {
   
   val bottom: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BottomProps {
   
@@ -23,12 +21,12 @@ object BottomProps {
   }
   
   @scala.inline
-  implicit class BottomPropsMutableBuilder[Self <: BottomProps[_], TLength] (val x: Self with BottomProps[TLength]) extends AnyVal {
+  implicit class BottomPropsMutableBuilder[Self <: BottomProps[?], TLength] (val x: Self & BottomProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBottom(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BottomProps {
     def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def setBottomVarargs(value: js.Any*): Self = StObject.set(x, "bottom", js.Array(value :_*))
+    def setBottomVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "bottom", js.Array(value :_*))
   }
 }

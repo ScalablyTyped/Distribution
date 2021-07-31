@@ -6,7 +6,6 @@ import typings.typescript.mod.ExportAssignment
 import typings.typescript.mod.ExportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exportMod {

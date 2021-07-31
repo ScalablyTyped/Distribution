@@ -2,13 +2,13 @@ package typings.ngCommand
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngCommand {
   
-  @js.native
-  trait Command extends ICommand
+  trait Command
+    extends StObject
+       with ICommand
   object Command {
     
     @scala.inline
@@ -21,23 +21,22 @@ object ngCommand {
   /**
     * Command proxy object.
     */
-  @js.native
   trait ICommand extends StObject {
     
     /**
       * Determines whether the command can execute or not.
       */
-    var canExecute: Boolean = js.native
+    var canExecute: Boolean
     
     /**
       * Executes the command function.
       */
-    def execute(): js.Any = js.native
+    def execute(): js.Any
     
     /**
       * Determines whether the command is currently executing.
       */
-    var isExecuting: Boolean = js.native
+    var isExecuting: Boolean
   }
   object ICommand {
     

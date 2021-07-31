@@ -7,23 +7,23 @@ import typings.std.EventTarget
 import typings.webBluetooth.webBluetoothStrings.characteristicvaluechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BluetoothRemoteGATTCharacteristic
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with CharacteristicEventHandlers {
   
   @JSName("addEventListener")
   def addEventListener_characteristicvaluechanged(
     `type`: characteristicvaluechanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_characteristicvaluechanged(
     `type`: characteristicvaluechanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     useCapture: Boolean
   ): Unit = js.native
   

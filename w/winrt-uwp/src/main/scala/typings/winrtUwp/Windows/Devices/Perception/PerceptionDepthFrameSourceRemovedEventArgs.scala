@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event data for depth frame source removed events. */
-@js.native
 trait PerceptionDepthFrameSourceRemovedEventArgs extends StObject {
   
   /** Gets the depth frame source that was removed. */
-  var frameSource: PerceptionDepthFrameSource = js.native
+  var frameSource: PerceptionDepthFrameSource
 }
 object PerceptionDepthFrameSourceRemovedEventArgs {
   

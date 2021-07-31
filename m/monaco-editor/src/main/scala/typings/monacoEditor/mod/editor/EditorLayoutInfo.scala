@@ -2,92 +2,90 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorLayoutInfo extends StObject {
   
   /**
     * Left position for the content (actual text)
     */
-  val contentLeft: Double = js.native
+  val contentLeft: Double
   
   /**
     * The width of the content (actual text)
     */
-  val contentWidth: Double = js.native
+  val contentWidth: Double
   
   /**
     * Left position for the line decorations.
     */
-  val decorationsLeft: Double = js.native
+  val decorationsLeft: Double
   
   /**
     * The width of the line decorations.
     */
-  val decorationsWidth: Double = js.native
+  val decorationsWidth: Double
   
   /**
     * Left position for the glyph margin.
     */
-  val glyphMarginLeft: Double = js.native
+  val glyphMarginLeft: Double
   
   /**
     * The width of the glyph margin.
     */
-  val glyphMarginWidth: Double = js.native
+  val glyphMarginWidth: Double
   
   /**
     * Full editor height.
     */
-  val height: Double = js.native
+  val height: Double
   
   /**
     * The height of the horizontal scrollbar.
     */
-  val horizontalScrollbarHeight: Double = js.native
+  val horizontalScrollbarHeight: Double
   
-  val isViewportWrapping: Boolean = js.native
+  val isViewportWrapping: Boolean
   
-  val isWordWrapMinified: Boolean = js.native
+  val isWordWrapMinified: Boolean
   
   /**
     * Left position for the line numbers.
     */
-  val lineNumbersLeft: Double = js.native
+  val lineNumbersLeft: Double
   
   /**
     * The width of the line numbers.
     */
-  val lineNumbersWidth: Double = js.native
+  val lineNumbersWidth: Double
   
   /**
     * Layout information for the minimap
     */
-  val minimap: EditorMinimapLayoutInfo = js.native
+  val minimap: EditorMinimapLayoutInfo
   
   /**
     * The position of the overview ruler.
     */
-  val overviewRuler: OverviewRulerPosition = js.native
+  val overviewRuler: OverviewRulerPosition
   
   /**
     * The width of the vertical scrollbar.
     */
-  val verticalScrollbarWidth: Double = js.native
+  val verticalScrollbarWidth: Double
   
   /**
     * The number of columns (of typical characters) fitting on a viewport line.
     */
-  val viewportColumn: Double = js.native
+  val viewportColumn: Double
   
   /**
     * Full editor width.
     */
-  val width: Double = js.native
+  val width: Double
   
-  val wrappingColumn: Double = js.native
+  val wrappingColumn: Double
 }
 object EditorLayoutInfo {
   

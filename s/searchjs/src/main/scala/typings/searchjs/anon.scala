@@ -2,31 +2,29 @@ package typings.searchjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait End extends StObject {
     
-    var end: Boolean = js.native
+    var end: Boolean
     
-    var joinAnd: String = js.native
+    var joinAnd: String
     
-    var negator: Boolean = js.native
+    var negator: Boolean
     
-    var propertySearch: Boolean = js.native
+    var propertySearch: Boolean
     
-    var propertySearchDepth: Double = js.native
+    var propertySearchDepth: Double
     
-    var separator: String = js.native
+    var separator: String
     
-    var start: Boolean = js.native
+    var start: Boolean
     
-    var text: Boolean = js.native
+    var text: Boolean
     
-    var word: Boolean = js.native
+    var word: Boolean
   }
   object End {
     

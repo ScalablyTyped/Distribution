@@ -38,7 +38,6 @@ import typings.chromeApps.chromeAppsStrings.synchronous_
 import typings.chromeApps.chromeAppsStrings.vendor_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -58,6 +57,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see[Accessing Hardware Devices]{@link https://developer.chrome.com/apps/app_usb}
   */
 object usb {
+  
+  @JSGlobal("chrome.usb")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   object Direction {
@@ -243,13 +246,12 @@ object usb {
     * @param transferInfo The transfer parameters.
     * @param callback
     */
-  @JSGlobal("chrome.usb.bulkTransfer")
-  @js.native
+  @scala.inline
   def bulkTransfer(
     handle: ConnectionHandle,
     transferInfo: GenericTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkTransfer")(handle.asInstanceOf[js.Any], transferInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Claims an interface on a USB device.
@@ -262,9 +264,8 @@ object usb {
     * @param interfaceNumber The interface to be claimed.
     * @param callback
     */
-  @JSGlobal("chrome.usb.claimInterface")
-  @js.native
-  def claimInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def claimInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("claimInterface")(handle.asInstanceOf[js.Any], interfaceNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Closes a connection handle.
@@ -272,12 +273,10 @@ object usb {
     * @param handle The ConnectionHandle to close.
     * @param [callback]
     */
-  @JSGlobal("chrome.usb.closeDevice")
-  @js.native
-  def closeDevice(handle: ConnectionHandle): Unit = js.native
-  @JSGlobal("chrome.usb.closeDevice")
-  @js.native
-  def closeDevice(handle: ConnectionHandle, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def closeDevice(handle: ConnectionHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDevice")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def closeDevice(handle: ConnectionHandle, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeDevice")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Performs a control transfer on the specified device.
@@ -287,13 +286,12 @@ object usb {
     * @param transferInfo Transfer info
     * @param callback
     */
-  @JSGlobal("chrome.usb.controlTransfer")
-  @js.native
+  @scala.inline
   def controlTransfer(
     handle: ConnectionHandle,
     transferInfo: TransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("controlTransfer")(handle.asInstanceOf[js.Any], transferInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Finds USB devices specified by the vendor, product and (optionally) interface IDs and if permissions allow opens them for use.
@@ -306,9 +304,8 @@ object usb {
     * @requires(CrOS) Chrome OS if you specify *interfaceId*
     * @param callback
     */
-  @JSGlobal("chrome.usb.findDevices")
-  @js.native
-  def findDevices(options: InterfaceId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = js.native
+  @scala.inline
+  def findDevices(options: InterfaceId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Finds USB devices specified by the vendor, product and (optionally) interface IDs and if permissions allow opens them for use.
     * If the access request is rejected or the device fails to be opened a connection handle will not be created or returned.
@@ -318,9 +315,8 @@ object usb {
     *                  - productId: The product ID.
     * @param callback
     */
-  @JSGlobal("chrome.usb.findDevices")
-  @js.native
-  def findDevices(options: ProductId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = js.native
+  @scala.inline
+  def findDevices(options: ProductId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets the configuration descriptor for the currently selected configuration.
@@ -328,9 +324,8 @@ object usb {
     * @param handle An open connection to the device.
     * @param callback
     */
-  @JSGlobal("chrome.usb.getConfiguration")
-  @js.native
-  def getConfiguration(handle: ConnectionHandle, callback: js.Function1[/* config */ ConfigDescriptor, Unit]): Unit = js.native
+  @scala.inline
+  def getConfiguration(handle: ConnectionHandle, callback: js.Function1[/* config */ ConfigDescriptor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns the full set of device configuration descriptors.
@@ -338,9 +333,8 @@ object usb {
     * @param device The Device to fetch descriptors from.
     * @param callback
     */
-  @JSGlobal("chrome.usb.getConfigurations")
-  @js.native
-  def getConfigurations(device: Device, callback: js.Function1[/* configs */ js.Array[ConfigDescriptor], Unit]): Unit = js.native
+  @scala.inline
+  def getConfigurations(device: Device, callback: js.Function1[/* configs */ js.Array[ConfigDescriptor], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigurations")(device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Enumerates connected USB devices.
@@ -348,9 +342,8 @@ object usb {
     * @param options The properties to search for on target devices.
     * @param callback
     */
-  @JSGlobal("chrome.usb.getDevices")
-  @js.native
-  def getDevices(options: Filters, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  @scala.inline
+  def getDevices(options: Filters, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Presents a device picker to the user and returns the Devices selected.
@@ -364,9 +357,8 @@ object usb {
     *                   If multiple filters are provided, devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
-  @JSGlobal("chrome.usb.getUserSelectedDevices")
-  @js.native
-  def getUserSelectedDevices(options: Multiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  @scala.inline
+  def getUserSelectedDevices(options: Multiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Performs an interrupt transfer on the specified device.
@@ -374,13 +366,12 @@ object usb {
     * @param transferInfo The transfer parameters.
     * @param callback
     */
-  @JSGlobal("chrome.usb.interruptTransfer")
-  @js.native
+  @scala.inline
   def interruptTransfer(
     handle: ConnectionHandle,
     transferInfo: GenericTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interruptTransfer")(handle.asInstanceOf[js.Any], transferInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Performs an isochronous transfer on the specific device.
@@ -388,25 +379,23 @@ object usb {
     * @param transferInfo
     * @param callback
     */
-  @JSGlobal("chrome.usb.isochronousTransfer")
-  @js.native
+  @scala.inline
   def isochronousTransfer(
     handle: ConnectionHandle,
     transferInfo: IsochronousTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isochronousTransfer")(handle.asInstanceOf[js.Any], transferInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Lists all interfaces on a USB device.
     * @param handle An open connection to the device.
     * @param callback
     */
-  @JSGlobal("chrome.usb.listInterfaces")
-  @js.native
+  @scala.inline
   def listInterfaces(
     handle: ConnectionHandle,
     callback: js.Function1[/* descriptors */ js.Array[InterfaceDescriptor], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listInterfaces")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Event generated when a device is added to the system.
@@ -435,9 +424,8 @@ object usb {
     * @param device The device to open.
     * @param callback
     */
-  @JSGlobal("chrome.usb.openDevice")
-  @js.native
-  def openDevice(device: Device, callback: js.Function1[/* handle */ ConnectionHandle, Unit]): Unit = js.native
+  @scala.inline
+  def openDevice(device: Device, callback: js.Function1[/* handle */ ConnectionHandle, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openDevice")(device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Releases a claimed interface.
@@ -445,17 +433,15 @@ object usb {
     * @param interfaceNumber The interface to be released.
     * @param callback
     */
-  @JSGlobal("chrome.usb.releaseInterface")
-  @js.native
-  def releaseInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def releaseInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseInterface")(handle.asInstanceOf[js.Any], interfaceNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @deprecated Since Chrome 40.
     * @requires(CrOS) Chrome OS specific. This operation is now implicitly performed as a part of *openDevice*.
     */
-  @JSGlobal("chrome.usb.requestAccess")
-  @js.native
-  def requestAccess(device: Device, interfaceId: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def requestAccess(device: Device, interfaceId: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAccess")(device.asInstanceOf[js.Any], interfaceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Tries to reset the USB device. If the reset fails, the given connection handle will be closed
@@ -464,9 +450,8 @@ object usb {
     * @param handle A connection handle to reset.
     * @param callback
     */
-  @JSGlobal("chrome.usb.resetDevice")
-  @js.native
-  def resetDevice(handle: ConnectionHandle, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def resetDevice(handle: ConnectionHandle, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetDevice")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Select a device configuration.
@@ -479,9 +464,8 @@ object usb {
     * @param configurationValue
     * @param callback
     */
-  @JSGlobal("chrome.usb.setConfiguration")
-  @js.native
-  def setConfiguration(handle: ConnectionHandle, configurationValue: integer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setConfiguration(handle: ConnectionHandle, configurationValue: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfiguration")(handle.asInstanceOf[js.Any], configurationValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Selects an alternate setting on a previously claimed interface.
@@ -490,12 +474,11 @@ object usb {
     * @param alternateSetting The alternate setting to configure.
     * @param callback
     */
-  @JSGlobal("chrome.usb.setInterfaceAlternateSetting")
-  @js.native
+  @scala.inline
   def setInterfaceAlternateSetting(
     handle: ConnectionHandle,
     interfaceNumber: integer,
     alternateSetting: integer,
     callback: js.Function0[Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterfaceAlternateSetting")(handle.asInstanceOf[js.Any], interfaceNumber.asInstanceOf[js.Any], alternateSetting.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

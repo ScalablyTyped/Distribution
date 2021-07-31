@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.workflowsMod.workflows.UserTask
 import typings.mendixmodelsdk.workflowsMod.workflows.Workflow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.StringTemplate")
@@ -39,9 +38,8 @@ object StringTemplate {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object StringTemplate {
     * of the parent CustomRequestHandling element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.createInCustomRequestHandlingUnderTemplate")
-  @js.native
-  def createInCustomRequestHandlingUnderTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.CustomRequestHandling): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def createInCustomRequestHandlingUnderTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.CustomRequestHandling): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRequestHandlingUnderTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -62,9 +59,8 @@ object StringTemplate {
     *  6.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.createInHttpConfigurationUnderCustomLocationTemplate")
-  @js.native
-  def createInHttpConfigurationUnderCustomLocationTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def createInHttpConfigurationUnderCustomLocationTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -72,9 +68,8 @@ object StringTemplate {
     * of the parent LogMessageAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.createInLogMessageActionUnderMessageTemplate")
-  @js.native
-  def createInLogMessageActionUnderMessageTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.LogMessageAction): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def createInLogMessageActionUnderMessageTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.LogMessageAction): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderMessageTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -85,9 +80,8 @@ object StringTemplate {
     *  8.4.0 to 8.5.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.createInStringTemplateParameterValueUnderTemplate")
-  @js.native
-  def createInStringTemplateParameterValueUnderTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.StringTemplateParameterValue): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def createInStringTemplateParameterValueUnderTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.StringTemplateParameterValue): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStringTemplateParameterValueUnderTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -98,9 +92,8 @@ object StringTemplate {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.createInUserTaskUnderDescription")
-  @js.native
-  def createInUserTaskUnderDescription(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def createInUserTaskUnderDescription(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -111,9 +104,8 @@ object StringTemplate {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.createInUserTaskUnderSubject")
-  @js.native
-  def createInUserTaskUnderSubject(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def createInUserTaskUnderSubject(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderSubject")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -124,9 +116,8 @@ object StringTemplate {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.StringTemplate.createInWorkflowUnderSubject")
-  @js.native
-  def createInWorkflowUnderSubject(container: Workflow): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
+  @scala.inline
+  def createInWorkflowUnderSubject(container: Workflow): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderSubject")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.StringTemplate.structureTypeName")

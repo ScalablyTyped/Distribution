@@ -2,23 +2,21 @@ package typings.recurlyRecurlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
   /**
     * Font color applied to all placeholder text.
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[Cvv] = js.native
+  var content: js.UndefOr[Cvv] = js.undefined
   
   /**
     * Font weight applied to all placeholder text.
     */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
 }
 object Content {
   

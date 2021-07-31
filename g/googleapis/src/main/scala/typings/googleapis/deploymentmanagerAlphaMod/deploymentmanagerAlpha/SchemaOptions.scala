@@ -2,36 +2,34 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options allows customized resource handling by Deployment Manager.
   */
-@js.native
 trait SchemaOptions extends StObject {
   
   /**
     * Options regarding how to thread async requests.
     */
-  var asyncOptions: js.UndefOr[js.Array[SchemaAsyncOptions]] = js.native
+  var asyncOptions: js.UndefOr[js.Array[SchemaAsyncOptions]] = js.undefined
   
   /**
     * The mappings that apply for requests.
     */
-  var inputMappings: js.UndefOr[js.Array[SchemaInputMapping]] = js.native
+  var inputMappings: js.UndefOr[js.Array[SchemaInputMapping]] = js.undefined
   
   /**
     * The json path to the field in the resource JSON body into which the
     * resource name should be mapped. Leaving this empty indicates that there
     * should be no mapping performed.
     */
-  var nameProperty: js.UndefOr[String] = js.native
+  var nameProperty: js.UndefOr[String] = js.undefined
   
   /**
     * Options for how to validate and process properties on a resource.
     */
-  var validationOptions: js.UndefOr[SchemaValidationOptions] = js.native
+  var validationOptions: js.UndefOr[SchemaValidationOptions] = js.undefined
 }
 object SchemaOptions {
   

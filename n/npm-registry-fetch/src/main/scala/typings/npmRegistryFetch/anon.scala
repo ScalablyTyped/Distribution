@@ -2,34 +2,32 @@ package typings.npmRegistryFetch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<npm-registry-fetch.npm-registry-fetch.AuthOptions> */
-  @js.native
   trait PartialAuthOptions extends StObject {
     
-    var _auth: js.UndefOr[String] = js.native
+    var _auth: js.UndefOr[String] = js.undefined
     
-    var _authToken: js.UndefOr[String] = js.native
+    var _authToken: js.UndefOr[String] = js.undefined
     
-    var _password: js.UndefOr[String] = js.native
+    var _password: js.UndefOr[String] = js.undefined
     
-    var `always-auth`: js.UndefOr[Boolean] = js.native
+    var `always-auth`: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysAuth: js.UndefOr[Boolean] = js.native
+    var alwaysAuth: js.UndefOr[Boolean] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var otp: js.UndefOr[Double | String] = js.native
+    var otp: js.UndefOr[Double | String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object PartialAuthOptions {
     
@@ -105,16 +103,15 @@ object anon {
   }
   
   /* Inlined std.Partial<npm-registry-fetch.npm-registry-fetch.FetchRetryOptions> */
-  @js.native
   trait PartialFetchRetryOptions extends StObject {
     
-    var fetchRetries: js.UndefOr[Double] = js.native
+    var fetchRetries: js.UndefOr[Double] = js.undefined
     
-    var fetchRetryFactor: js.UndefOr[Double] = js.native
+    var fetchRetryFactor: js.UndefOr[Double] = js.undefined
     
-    var fetchRetryMaxtimeout: js.UndefOr[Double] = js.native
+    var fetchRetryMaxtimeout: js.UndefOr[Double] = js.undefined
     
-    var fetchRetryMintimeout: js.UndefOr[Double] = js.native
+    var fetchRetryMintimeout: js.UndefOr[Double] = js.undefined
   }
   object PartialFetchRetryOptions {
     

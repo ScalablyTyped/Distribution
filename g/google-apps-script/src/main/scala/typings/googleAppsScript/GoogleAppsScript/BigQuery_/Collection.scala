@@ -17,7 +17,6 @@ import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TableDataList
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TableList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Collection {

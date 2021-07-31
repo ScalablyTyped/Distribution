@@ -12,7 +12,6 @@ import typings.openpgp.mod.enums.symmetric
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crypto {
@@ -22,6 +21,10 @@ object crypto {
     */
   object aesKw {
     
+    @JSImport("openpgp", "crypto.aes_kw")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * AES key unwrap
       * @param key
@@ -29,9 +32,8 @@ object crypto {
       * @returns
       * @throws
       */
-    @JSImport("openpgp", "crypto.aes_kw.unwrap")
-    @js.native
-    def unwrap(key: String, data: String): Uint8Array = js.native
+    @scala.inline
+    def unwrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
     /**
       * AES key wrap
@@ -39,23 +41,28 @@ object crypto {
       * @param data
       * @returns
       */
-    @JSImport("openpgp", "crypto.aes_kw.wrap")
-    @js.native
-    def wrap(key: String, data: String): Uint8Array = js.native
+    @scala.inline
+    def wrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   object cfb {
     
-    @JSImport("openpgp", "crypto.cfb.decrypt")
+    @JSImport("openpgp", "crypto.cfb")
     @js.native
-    def decrypt(algo: js.Any, key: js.Any, ciphertext: js.Any, iv: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("openpgp", "crypto.cfb.encrypt")
-    @js.native
-    def encrypt(algo: js.Any, key: js.Any, plaintext: js.Any, iv: js.Any): js.Any = js.native
+    @scala.inline
+    def decrypt(algo: js.Any, key: js.Any, ciphertext: js.Any, iv: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    
+    @scala.inline
+    def encrypt(algo: js.Any, key: js.Any, plaintext: js.Any, iv: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object cipher {
+    
+    @JSImport("openpgp", "crypto.cipher")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * AES-128 encryption and decryption (ID 7)
@@ -64,9 +71,8 @@ object crypto {
       * @see
       * @returns
       */
-    @JSImport("openpgp", "crypto.cipher.aes128")
-    @js.native
-    def aes128(key: String): js.Object = js.native
+    @scala.inline
+    def aes128(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes128")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * AES-128 Block Cipher (ID 8)
@@ -75,9 +81,8 @@ object crypto {
       * @see
       * @returns
       */
-    @JSImport("openpgp", "crypto.cipher.aes192")
-    @js.native
-    def aes192(key: String): js.Object = js.native
+    @scala.inline
+    def aes192(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes192")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * AES-128 Block Cipher (ID 9)
@@ -86,9 +91,8 @@ object crypto {
       * @see
       * @returns
       */
-    @JSImport("openpgp", "crypto.cipher.aes256")
-    @js.native
-    def aes256(key: String): js.Object = js.native
+    @scala.inline
+    def aes256(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes256")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * Blowfish Block Cipher (ID 4)
@@ -96,9 +100,8 @@ object crypto {
       * @see
       * @returns
       */
-    @JSImport("openpgp", "crypto.cipher.blowfish")
-    @js.native
-    def blowfish(key: String): js.Object = js.native
+    @scala.inline
+    def blowfish(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("blowfish")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * CAST-128 Block Cipher (ID 3)
@@ -106,17 +109,15 @@ object crypto {
       * @see
       * @returns
       */
-    @JSImport("openpgp", "crypto.cipher.cast5")
-    @js.native
-    def cast5(key: String): js.Object = js.native
+    @scala.inline
+    def cast5(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("cast5")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * Not implemented
       * @throws
       */
-    @JSImport("openpgp", "crypto.cipher.idea")
-    @js.native
-    def idea(): Unit = js.native
+    @scala.inline
+    def idea(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("idea")().asInstanceOf[Unit]
     
     /**
       * Triple DES Block Cipher (ID 2)
@@ -124,9 +125,8 @@ object crypto {
       * @see
       * @returns
       */
-    @JSImport("openpgp", "crypto.cipher.tripledes")
-    @js.native
-    def tripledes(key: String): js.Object = js.native
+    @scala.inline
+    def tripledes(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("tripledes")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * Twofish Block Cipher (ID 10)
@@ -134,12 +134,15 @@ object crypto {
       * @see
       * @returns
       */
-    @JSImport("openpgp", "crypto.cipher.twofish")
-    @js.native
-    def twofish(key: String): js.Object = js.native
+    @scala.inline
+    def twofish(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("twofish")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   object cmac {
+    
+    @JSImport("openpgp", "crypto.cmac")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This implementation of CMAC is based on the description of OMAC in
@@ -164,12 +167,15 @@ object crypto {
       * @param data
       * @param padding
       */
-    @JSImport("openpgp", "crypto.cmac.rightXorMut")
-    @js.native
-    def rightXorMut(data: Uint8Array, padding: Uint8Array): Unit = js.native
+    @scala.inline
+    def rightXorMut(data: Uint8Array, padding: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rightXorMut")(data.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object crypto {
+    
+    @JSImport("openpgp", "crypto.crypto")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Generate algorithm-specific key parameters
@@ -178,9 +184,8 @@ object crypto {
       * @param oid Object identifier for ECC keys
       * @returns The array of parameters
       */
-    @JSImport("openpgp", "crypto.crypto.generateParams")
-    @js.native
-    def generateParams(algo: String, bits: Integer, oid: OID): js.Array[_] = js.native
+    @scala.inline
+    def generateParams(algo: String, bits: Integer, oid: OID): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateParams")(algo.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Generating a session key for the specified symmetric algorithm
@@ -188,18 +193,16 @@ object crypto {
       * @param algo Symmetric encryption algorithm
       * @returns Random bytes as a string to be used as a key
       */
-    @JSImport("openpgp", "crypto.crypto.generateSessionKey")
-    @js.native
-    def generateSessionKey(algo: symmetric): Uint8Array = js.native
+    @scala.inline
+    def generateSessionKey(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSessionKey")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
     /**
       * Returns the types comprising the encrypted session key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    @JSImport("openpgp", "crypto.crypto.getEncSessionKeyParamTypes")
-    @js.native
-    def getEncSessionKeyParamTypes(algo: String): js.Array[_] = js.native
+    @scala.inline
+    def getEncSessionKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncSessionKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Generates a random byte prefix for the specified algorithm
@@ -207,27 +210,24 @@ object crypto {
       * @param algo Symmetric encryption algorithm
       * @returns Random bytes with length equal to the block size of the cipher, plus the last two bytes repeated.
       */
-    @JSImport("openpgp", "crypto.crypto.getPrefixRandom")
-    @js.native
-    def getPrefixRandom(algo: symmetric): Uint8Array = js.native
+    @scala.inline
+    def getPrefixRandom(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixRandom")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
     /**
       * Returns the types comprising the private key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    @JSImport("openpgp", "crypto.crypto.getPrivKeyParamTypes")
-    @js.native
-    def getPrivKeyParamTypes(algo: String): js.Array[_] = js.native
+    @scala.inline
+    def getPrivKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrivKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Returns the types comprising the public key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    @JSImport("openpgp", "crypto.crypto.getPubKeyParamTypes")
-    @js.native
-    def getPubKeyParamTypes(algo: String): js.Array[_] = js.native
+    @scala.inline
+    def getPubKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPubKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Decrypts data using specified algorithm and private key parameters.
@@ -238,14 +238,13 @@ object crypto {
       * @param fingerprint Recipient fingerprint
       * @returns An MPI containing the decrypted data
       */
-    @JSImport("openpgp", "crypto.crypto.publicKeyDecrypt")
-    @js.native
+    @scala.inline
     def publicKeyDecrypt(
       algo: publicKey,
       key_params: js.Array[MPI | OID | KDFParams],
       data_params: js.Array[MPI | OID | KDFParams],
       fingerprint: String
-    ): MPI = js.native
+    ): MPI = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyDecrypt")(algo.asInstanceOf[js.Any], key_params.asInstanceOf[js.Any], data_params.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[MPI]
     
     /**
       * Encrypts data using specified algorithm and public key parameters.
@@ -256,21 +255,23 @@ object crypto {
       * @param fingerprint Recipient fingerprint
       * @returns encrypted session key parameters
       */
-    @JSImport("openpgp", "crypto.crypto.publicKeyEncrypt")
-    @js.native
-    def publicKeyEncrypt(algo: publicKey, pub_params: js.Array[MPI | OID | KDFParams], data: MPI, fingerprint: String): js.Array[_] = js.native
+    @scala.inline
+    def publicKeyEncrypt(algo: publicKey, pub_params: js.Array[MPI | OID | KDFParams], data: MPI, fingerprint: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyEncrypt")(algo.asInstanceOf[js.Any], pub_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   }
   
   object eax {
+    
+    @JSImport("openpgp", "crypto.eax")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Class to en/decrypt using EAX mode.
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    @JSImport("openpgp", "crypto.eax.EAX")
-    @js.native
-    def EAX(cipher: String, key: Uint8Array): Unit = js.native
+    @scala.inline
+    def EAX(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EAX")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Decrypt ciphertext input.
@@ -279,9 +280,8 @@ object crypto {
       * @param adata Associated data to verify
       * @returns The plaintext output
       */
-    @JSImport("openpgp", "crypto.eax.decrypt")
-    @js.native
-    def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = js.native
+    @scala.inline
+    def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
     
     /**
       * Encrypt plaintext input.
@@ -290,21 +290,23 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    @JSImport("openpgp", "crypto.eax.encrypt")
-    @js.native
-    def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = js.native
+    @scala.inline
+    def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
   }
   
   object gcm {
+    
+    @JSImport("openpgp", "crypto.gcm")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Class to en/decrypt using GCM mode.
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    @JSImport("openpgp", "crypto.gcm.GCM")
-    @js.native
-    def GCM(cipher: String, key: Uint8Array): Unit = js.native
+    @scala.inline
+    def GCM(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GCM")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -323,18 +325,16 @@ object crypto {
       * @param data Data to be hashed
       * @returns hash value
       */
-    @JSImport("openpgp", "crypto.hash.digest")
-    @js.native
-    def digest(algo: typings.openpgp.mod.enums.hash, data: Uint8Array): js.Promise[Uint8Array] = js.native
+    @scala.inline
+    def digest(algo: typings.openpgp.mod.enums.hash, data: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
     
     /**
       * Returns the hash size in bytes of the specified hash algorithm type
       * @param algo Hash algorithm type (See {@link https://tools.ietf.org/html/rfc4880#section-9.4|RFC 4880 9.4})
       * @returns Size in bytes of the resulting hash
       */
-    @JSImport("openpgp", "crypto.hash.getHashByteLength")
-    @js.native
-    def getHashByteLength(algo: typings.openpgp.mod.enums.hash): Integer = js.native
+    @scala.inline
+    def getHashByteLength(algo: typings.openpgp.mod.enums.hash): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashByteLength")(algo.asInstanceOf[js.Any]).asInstanceOf[Integer]
     
     /**
       * @see module:md5
@@ -402,14 +402,17 @@ object crypto {
   
   object ocb {
     
+    @JSImport("openpgp", "crypto.ocb")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Class to en/decrypt using OCB mode.
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    @JSImport("openpgp", "crypto.ocb.OCB")
-    @js.native
-    def OCB(cipher: String, key: Uint8Array): Unit = js.native
+    @scala.inline
+    def OCB(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OCB")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Decrypt ciphertext input.
@@ -418,9 +421,8 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    @JSImport("openpgp", "crypto.ocb.decrypt")
-    @js.native
-    def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = js.native
+    @scala.inline
+    def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
     
     /**
       * Encrypt plaintext input.
@@ -429,9 +431,8 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    @JSImport("openpgp", "crypto.ocb.encrypt")
-    @js.native
-    def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = js.native
+    @scala.inline
+    def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
   }
   
   /**
@@ -443,15 +444,18 @@ object crypto {
     
     object eme {
       
+      @JSImport("openpgp", "crypto.pkcs1.eme")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Decode a EME-PKCS1-v1_5 padded message
         * @see
         * @param EM encoded message, an octet string
         * @returns message, an octet string
         */
-      @JSImport("openpgp", "crypto.pkcs1.eme.decode")
-      @js.native
-      def decode(EM: String): String = js.native
+      @scala.inline
+      def decode(EM: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(EM.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Create a EME-PKCS1-v1_5 padded message
@@ -460,12 +464,15 @@ object crypto {
         * @param k the length in octets of the key modulus
         * @returns EME-PKCS1 padded message
         */
-      @JSImport("openpgp", "crypto.pkcs1.eme.encode")
-      @js.native
-      def encode(M: String, k: Integer): js.Promise[String] = js.native
+      @scala.inline
+      def encode(M: String, k: Integer): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(M.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     }
     
     object emsa {
+      
+      @JSImport("openpgp", "crypto.pkcs1.emsa")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Create a EMSA-PKCS1-v1_5 padded message
@@ -475,9 +482,8 @@ object crypto {
         * @param emLen intended length in octets of the encoded message
         * @returns encoded message
         */
-      @JSImport("openpgp", "crypto.pkcs1.emsa.encode")
-      @js.native
-      def encode(algo: Integer, hashed: Uint8Array, emLen: Integer): String = js.native
+      @scala.inline
+      def encode(algo: Integer, hashed: Uint8Array, emLen: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(algo.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], emLen.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     
     /**
@@ -494,28 +500,34 @@ object crypto {
     */
   object pkcs5 {
     
+    @JSImport("openpgp", "crypto.pkcs5")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Remove pkcs5 padding from a string.
       * @param msg Text to remove padding from
       * @returns Text with padding removed
       */
-    @JSImport("openpgp", "crypto.pkcs5.decode")
-    @js.native
-    def decode(msg: String): String = js.native
+    @scala.inline
+    def decode(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Add pkcs5 padding to a text.
       * @param msg Text to add padding
       * @returns Text with padding added
       */
-    @JSImport("openpgp", "crypto.pkcs5.encode")
-    @js.native
-    def encode(msg: String): String = js.native
+    @scala.inline
+    def encode(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object publicKey {
     
     object dsa {
+      
+      @JSImport("openpgp", "crypto.public_key.dsa")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * DSA Sign function
@@ -527,8 +539,7 @@ object crypto {
         * @param x
         * @returns
         */
-      @JSImport("openpgp", "crypto.public_key.dsa.sign")
-      @js.native
+      @scala.inline
       def sign(
         hash_algo: Integer,
         hashed: Uint8Array,
@@ -536,7 +547,7 @@ object crypto {
         p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Object = js.native
+      ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(hash_algo.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], g.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       /**
         * DSA Verify function
@@ -550,8 +561,7 @@ object crypto {
         * @param y
         * @returns BN
         */
-      @JSImport("openpgp", "crypto.public_key.dsa.verify")
-      @js.native
+      @scala.inline
       def verify(
         hash_algo: Integer,
         r: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -561,10 +571,14 @@ object crypto {
         p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = js.native
+      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hash_algo.asInstanceOf[js.Any], r.asInstanceOf[js.Any], s.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], g.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     }
     
     object elgamal {
+      
+      @JSImport("openpgp", "crypto.public_key.elgamal")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * ElGamal Encryption function
@@ -574,14 +588,13 @@ object crypto {
         * @param x
         * @returns BN
         */
-      @JSImport("openpgp", "crypto.public_key.elgamal.decrypt")
-      @js.native
+      @scala.inline
       def decrypt(
         c1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         c2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = js.native
+      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], p.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * ElGamal Encryption function
@@ -591,14 +604,13 @@ object crypto {
         * @param y
         * @returns
         */
-      @JSImport("openpgp", "crypto.public_key.elgamal.encrypt")
-      @js.native
+      @scala.inline
       def encrypt(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Object = js.native
+      ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(m.asInstanceOf[js.Any], p.asInstanceOf[js.Any], g.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     }
     
     /**
@@ -618,6 +630,10 @@ object crypto {
       
       object ecdh {
         
+        @JSImport("openpgp", "crypto.public_key.elliptic.ecdh")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Decrypt and unwrap the value derived from session key
           * @param oid Elliptic curve object identifier
@@ -629,8 +645,7 @@ object crypto {
           * @param fingerprint Recipient fingerprint
           * @returns Value derived from session
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.ecdh.decrypt")
-        @js.native
+        @scala.inline
         def decrypt(
           oid: OID,
           cipher_algo: symmetric,
@@ -640,8 +655,10 @@ object crypto {
           d: Uint8Array,
           fingerprint: String
         ): js.Promise[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
-              ] = js.native
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(oid.asInstanceOf[js.Any], cipher_algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], V.asInstanceOf[js.Any], C.asInstanceOf[js.Any], d.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+              ]]
         
         /**
           * Encrypt and wrap a session key
@@ -653,9 +670,8 @@ object crypto {
           * @param fingerprint Recipient fingerprint
           * @returns Returns public part of ephemeral key and encoded session key
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.ecdh.encrypt")
-        @js.native
-        def encrypt(oid: OID, cipher_algo: symmetric, hash_algo: hash, m: MPI, Q: Uint8Array, fingerprint: String): js.Promise[C] = js.native
+        @scala.inline
+        def encrypt(oid: OID, cipher_algo: symmetric, hash_algo: hash, m: MPI, Q: Uint8Array, fingerprint: String): js.Promise[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(oid.asInstanceOf[js.Any], cipher_algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[C]]
         
         /**
           * Generate ECDHE secret from private key and public part of ephemeral key
@@ -664,11 +680,12 @@ object crypto {
           * @param d Recipient private key
           * @returns Generated ephemeral secret
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.ecdh.genPrivateEphemeralKey")
-        @js.native
+        @scala.inline
         def genPrivateEphemeralKey(curve: Curve, V: Uint8Array, d: Uint8Array): js.Promise[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
-              ] = js.native
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+              ] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPrivateEphemeralKey")(curve.asInstanceOf[js.Any], V.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+              ]]
         
         /**
           * Generate ECDHE ephemeral key and secret from public key
@@ -676,12 +693,15 @@ object crypto {
           * @param Q Recipient public key
           * @returns Returns public part of ephemeral key and generated ephemeral secret
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.ecdh.genPublicEphemeralKey")
-        @js.native
-        def genPublicEphemeralKey(curve: Curve, Q: Uint8Array): js.Promise[S] = js.native
+        @scala.inline
+        def genPublicEphemeralKey(curve: Curve, Q: Uint8Array): js.Promise[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPublicEphemeralKey")(curve.asInstanceOf[js.Any], Q.asInstanceOf[js.Any])).asInstanceOf[js.Promise[S]]
       }
       
       object ecdsa {
+        
+        @JSImport("openpgp", "crypto.public_key.elliptic.ecdsa")
+        @js.native
+        val ^ : js.Any = js.native
         
         /**
           * Sign a message using the provided key
@@ -692,9 +712,8 @@ object crypto {
           * @param hashed The hashed message
           * @returns Signature of the message
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.ecdsa.sign")
-        @js.native
-        def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = js.native
+        @scala.inline
+        def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
         
         /**
           * Verifies if a signature is valid for a message
@@ -706,12 +725,15 @@ object crypto {
           * @param hashed The hashed message
           * @returns
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.ecdsa.verify")
-        @js.native
-        def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = js.native
+        @scala.inline
+        def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       }
       
       object eddsa {
+        
+        @JSImport("openpgp", "crypto.public_key.elliptic.eddsa")
+        @js.native
+        val ^ : js.Any = js.native
         
         /**
           * Sign a message using the provided keygit
@@ -722,9 +744,8 @@ object crypto {
           * @param hashed The hashed message
           * @returns Signature of the message
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.eddsa.sign")
-        @js.native
-        def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = js.native
+        @scala.inline
+        def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
         
         /**
           * Verifies if a signature is valid for a message
@@ -736,9 +757,8 @@ object crypto {
           * @param hashed The hashed message
           * @returns
           */
-        @JSImport("openpgp", "crypto.public_key.elliptic.eddsa.verify")
-        @js.native
-        def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = js.native
+        @scala.inline
+        def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       }
       
       object key {
@@ -751,6 +771,10 @@ object crypto {
     
     object prime {
       
+      @JSImport("openpgp", "crypto.public_key.prime")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Tests whether n is probably prime or not using Fermat's test with b = 2.
         * Fails if b^(n-1) mod n === 1.
@@ -758,12 +782,11 @@ object crypto {
         * @param b Optional Fermat test base
         * @returns
         */
-      @JSImport("openpgp", "crypto.public_key.prime.fermat")
-      @js.native
+      @scala.inline
       def fermat(
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         b: Integer
-      ): Boolean = js.native
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fermat")(n.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Probabilistic primality testing
@@ -772,13 +795,12 @@ object crypto {
         * @param k Optional number of iterations of Miller-Rabin test
         * @returns
         */
-      @JSImport("openpgp", "crypto.public_key.prime.isProbablePrime")
-      @js.native
+      @scala.inline
       def isProbablePrime(
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         k: Integer
-      ): Boolean = js.native
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isProbablePrime")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Tests whether n is probably prime or not using the Miller-Rabin test.
@@ -788,13 +810,12 @@ object crypto {
         * @param rand Optional function to generate potential witnesses
         * @returns
         */
-      @JSImport("openpgp", "crypto.public_key.prime.millerRabin")
-      @js.native
+      @scala.inline
       def millerRabin(
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         k: Integer,
         rand: js.Function
-      ): Boolean = js.native
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("millerRabin")(n.asInstanceOf[js.Any], k.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Probabilistic random number generator
@@ -803,16 +824,19 @@ object crypto {
         * @param k Optional number of iterations of Miller-Rabin test
         * @returns BN
         */
-      @JSImport("openpgp", "crypto.public_key.prime.randomProbablePrime")
-      @js.native
+      @scala.inline
       def randomProbablePrime(
         bits: Integer,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         k: Integer
-      ): js.Any = js.native
+      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("randomProbablePrime")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     }
     
     object rsa {
+      
+      @JSImport("openpgp", "crypto.public_key.rsa")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Decrypt RSA message
@@ -825,8 +849,7 @@ object crypto {
         * @param u RSA private inverse of prime q
         * @returns RSA Plaintext
         */
-      @JSImport("openpgp", "crypto.public_key.rsa.decrypt")
-      @js.native
+      @scala.inline
       def decrypt(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -835,7 +858,7 @@ object crypto {
         p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         u: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = js.native
+      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], u.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Encrypt message
@@ -844,13 +867,12 @@ object crypto {
         * @param e RSA public exponent
         * @returns RSA Ciphertext
         */
-      @JSImport("openpgp", "crypto.public_key.rsa.encrypt")
-      @js.native
+      @scala.inline
       def encrypt(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = js.native
+      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Generate a new random private key B bits long with public exponent E.
@@ -862,9 +884,8 @@ object crypto {
         * @returns RSA public modulus, RSA public exponent, RSA private exponent,
         *          RSA private prime p, RSA private prime q, u = q ** -1 mod p
         */
-      @JSImport("openpgp", "crypto.public_key.rsa.generate")
-      @js.native
-      def generate(B: Integer, E: String): js.Object = js.native
+      @scala.inline
+      def generate(B: Integer, E: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(B.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       /**
         * Create signature
@@ -874,14 +895,13 @@ object crypto {
         * @param d RSA private exponent
         * @returns RSA Signature
         */
-      @JSImport("openpgp", "crypto.public_key.rsa.sign")
-      @js.native
+      @scala.inline
       def sign(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = js.native
+      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /**
         * Verify signature
@@ -890,24 +910,26 @@ object crypto {
         * @param e RSA public exponent
         * @returns
         */
-      @JSImport("openpgp", "crypto.public_key.rsa.verify")
-      @js.native
+      @scala.inline
       def verify(
         s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ): js.Any = js.native
+      ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(s.asInstanceOf[js.Any], n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     }
   }
   
   object random {
     
+    @JSImport("openpgp", "crypto.random")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Buffer for secure random numbers
       */
-    @JSImport("openpgp", "crypto.random.RandomBuffer")
-    @js.native
-    def RandomBuffer(): Unit = js.native
+    @scala.inline
+    def RandomBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomBuffer")().asInstanceOf[Unit]
     
     /**
       * Create a secure random MPI that is greater than or equal to min and less than max.
@@ -915,21 +937,23 @@ object crypto {
       * @param max Upper bound, excluded
       * @returns Random MPI
       */
-    @JSImport("openpgp", "crypto.random.getRandomBN")
-    @js.native
-    def getRandomBN(min: MPI, max: MPI): js.Any = js.native
+    @scala.inline
+    def getRandomBN(min: MPI, max: MPI): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBN")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Retrieve secure random byte array of the specified length
       * @param length Length in bytes to generate
       * @returns Random byte array
       */
-    @JSImport("openpgp", "crypto.random.getRandomBytes")
-    @js.native
-    def getRandomBytes(length: Integer): Uint8Array = js.native
+    @scala.inline
+    def getRandomBytes(length: Integer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   }
   
   object signature {
+    
+    @JSImport("openpgp", "crypto.signature")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a signature on data using specified algorithms and private key parameters.
@@ -943,9 +967,8 @@ object crypto {
       * @param hashed The hashed data
       * @returns Signature
       */
-    @JSImport("openpgp", "crypto.signature.sign")
-    @js.native
-    def sign(algo: publicKey, hash_algo: hash, key_params: js.Array[MPI], data: Uint8Array, hashed: Uint8Array): Uint8Array = js.native
+    @scala.inline
+    def sign(algo: publicKey, hash_algo: hash, key_params: js.Array[MPI], data: Uint8Array, hashed: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], key_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
     /**
       * Verifies the signature provided for data using specified algorithms and public key parameters.
@@ -960,8 +983,7 @@ object crypto {
       * @param hashed The hashed data
       * @returns True if signature is valid
       */
-    @JSImport("openpgp", "crypto.signature.verify")
-    @js.native
+    @scala.inline
     def verify(
       algo: publicKey,
       hash_algo: hash,
@@ -969,6 +991,6 @@ object crypto {
       pub_MPIs: js.Array[MPI],
       data: Uint8Array,
       hashed: Uint8Array
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], msg_MPIs.asInstanceOf[js.Any], pub_MPIs.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

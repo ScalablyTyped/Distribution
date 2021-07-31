@@ -16,37 +16,35 @@ import typings.sharedb.sharedbStrings.reply
 import typings.sharedb.sharedbStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object middleware {
   
-  @js.native
   trait ActionContextMap extends StObject {
     
-    var afterSubmit: SubmitContext = js.native
+    var afterSubmit: SubmitContext
     
     @JSName("apply")
-    var apply: ApplyContext = js.native
+    var apply: ApplyContext
     
-    var commit: CommitContext = js.native
+    var commit: CommitContext
     
-    var connect: ConnectContext = js.native
+    var connect: ConnectContext
     
-    var doc: DocContext = js.native
+    var doc: DocContext
     
     // Deprecated, use 'readSnapshots' instead.
-    var op: OpContext = js.native
+    var op: OpContext
     
-    var query: QueryContext = js.native
+    var query: QueryContext
     
-    var readSnapshots: ReadSnapshotsContext = js.native
+    var readSnapshots: ReadSnapshotsContext
     
-    var receive: ReceiveContext = js.native
+    var receive: ReceiveContext
     
-    var reply: ReplyContext = js.native
+    var reply: ReplyContext
     
-    var submit: SubmitContext = js.native
+    var submit: SubmitContext
   }
   object ActionContextMap {
     
@@ -106,9 +104,9 @@ object middleware {
     }
   }
   
-  @js.native
   trait ApplyContext
-    extends BaseContext
+    extends StObject
+       with BaseContext
        with SubmitRequest
   object ApplyContext {
     
@@ -126,19 +124,18 @@ object middleware {
       retries: Double,
       start: Double
     ): ApplyContext = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], channels = null, maxRetries = null, saveMilestoneSnapshot = null, snapshot = null, suppressPublish = null)
       __obj.asInstanceOf[ApplyContext]
     }
   }
   
-  @js.native
   trait BaseContext extends StObject {
     
-    var action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit = js.native
+    var action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit
     
-    var agent: typings.sharedb.agentMod.^ = js.native
+    var agent: typings.sharedb.agentMod.^
     
-    var backend: sharedb = js.native
+    var backend: sharedb
   }
   object BaseContext {
     
@@ -168,9 +165,9 @@ object middleware {
     }
   }
   
-  @js.native
   trait CommitContext
-    extends BaseContext
+    extends StObject
+       with BaseContext
        with SubmitRequest
   object CommitContext {
     
@@ -188,17 +185,18 @@ object middleware {
       retries: Double,
       start: Double
     ): CommitContext = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], channels = null, maxRetries = null, saveMilestoneSnapshot = null, snapshot = null, suppressPublish = null)
       __obj.asInstanceOf[CommitContext]
     }
   }
   
-  @js.native
-  trait ConnectContext extends BaseContext {
+  trait ConnectContext
+    extends StObject
+       with BaseContext {
     
-    var req: js.Any = js.native
+    var req: js.Any
     
-    var stream: js.Any = js.native
+    var stream: js.Any
   }
   object ConnectContext {
     
@@ -225,14 +223,15 @@ object middleware {
     }
   }
   
-  @js.native
-  trait DocContext extends BaseContext {
+  trait DocContext
+    extends StObject
+       with BaseContext {
     
-    var collection: String = js.native
+    var collection: String
     
-    var id: String = js.native
+    var id: String
     
-    var snapshot: Snapshot = js.native
+    var snapshot: Snapshot
   }
   object DocContext {
     
@@ -263,14 +262,15 @@ object middleware {
     }
   }
   
-  @js.native
-  trait OpContext extends BaseContext {
+  trait OpContext
+    extends StObject
+       with BaseContext {
     
-    var collection: String = js.native
+    var collection: String
     
-    var id: String = js.native
+    var id: String
     
-    var op: typings.sharedb.sharedbMod.Op = js.native
+    var op: typings.sharedb.sharedbMod.Op
   }
   object OpContext {
     
@@ -301,26 +301,27 @@ object middleware {
     }
   }
   
-  @js.native
-  trait QueryContext extends BaseContext {
+  trait QueryContext
+    extends StObject
+       with BaseContext {
     
-    var channel: String = js.native
+    var channel: String
     
-    var collection: String = js.native
+    var collection: String
     
-    var db: DB | Null = js.native
+    var db: DB | Null
     
-    var fields: js.UndefOr[ProjectionFields] = js.native
+    var fields: js.UndefOr[ProjectionFields] = js.undefined
     
-    var index: String = js.native
+    var index: String
     
-    var options: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var projection: js.UndefOr[Projection] = js.native
+    var projection: js.UndefOr[Projection] = js.undefined
     
-    var query: js.Any = js.native
+    var query: js.Any
     
-    var snapshotProjection: Projection | Null = js.native
+    var snapshotProjection: Projection | Null
   }
   object QueryContext {
     
@@ -334,7 +335,7 @@ object middleware {
       index: String,
       query: js.Any
     ): QueryContext = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], db = null, snapshotProjection = null)
       __obj.asInstanceOf[QueryContext]
     }
     
@@ -385,14 +386,15 @@ object middleware {
     }
   }
   
-  @js.native
-  trait ReadSnapshotsContext extends BaseContext {
+  trait ReadSnapshotsContext
+    extends StObject
+       with BaseContext {
     
-    var collection: String = js.native
+    var collection: String
     
-    var snapshotType: SnapshotType = js.native
+    var snapshotType: SnapshotType
     
-    var snapshots: js.Array[Snapshot] = js.native
+    var snapshots: js.Array[Snapshot]
   }
   object ReadSnapshotsContext {
     
@@ -426,10 +428,11 @@ object middleware {
     }
   }
   
-  @js.native
-  trait ReceiveContext extends BaseContext {
+  trait ReceiveContext
+    extends StObject
+       with BaseContext {
     
-    var data: StringDictionary[js.Any] = js.native
+    var data: StringDictionary[js.Any]
   }
   object ReceiveContext {
     
@@ -452,12 +455,13 @@ object middleware {
     }
   }
   
-  @js.native
-  trait ReplyContext extends BaseContext {
+  trait ReplyContext
+    extends StObject
+       with BaseContext {
     
-    var reply: StringDictionary[js.Any] = js.native
+    var reply: StringDictionary[js.Any]
     
-    var request: ClientRequest = js.native
+    var request: ClientRequest
   }
   object ReplyContext {
     
@@ -502,9 +506,9 @@ object middleware {
     def current: typings.sharedb.sharedbStrings.current = "current".asInstanceOf[typings.sharedb.sharedbStrings.current]
   }
   
-  @js.native
   trait SubmitContext
-    extends BaseContext
+    extends StObject
+       with BaseContext
        with SubmitRequest
   object SubmitContext {
     
@@ -522,7 +526,7 @@ object middleware {
       retries: Double,
       start: Double
     ): SubmitContext = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], channels = null, maxRetries = null, saveMilestoneSnapshot = null, snapshot = null, suppressPublish = null)
       __obj.asInstanceOf[SubmitContext]
     }
   }

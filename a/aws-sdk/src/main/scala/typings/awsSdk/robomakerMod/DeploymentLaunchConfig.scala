@@ -2,36 +2,34 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentLaunchConfig extends StObject {
   
   /**
     * An array of key/value pairs specifying environment variables for the robot application
     */
-  var environmentVariables: js.UndefOr[EnvironmentVariableMap] = js.native
+  var environmentVariables: js.UndefOr[EnvironmentVariableMap] = js.undefined
   
   /**
     * The launch file name.
     */
-  var launchFile: Command = js.native
+  var launchFile: Command
   
   /**
     * The package name.
     */
-  var packageName: Command = js.native
+  var packageName: Command
   
   /**
     * The deployment post-launch file. This file will be executed after the launch file.
     */
-  var postLaunchFile: js.UndefOr[Path] = js.native
+  var postLaunchFile: js.UndefOr[Path] = js.undefined
   
   /**
     * The deployment pre-launch file. This file will be executed prior to the launch file.
     */
-  var preLaunchFile: js.UndefOr[Path] = js.native
+  var preLaunchFile: js.UndefOr[Path] = js.undefined
 }
 object DeploymentLaunchConfig {
   

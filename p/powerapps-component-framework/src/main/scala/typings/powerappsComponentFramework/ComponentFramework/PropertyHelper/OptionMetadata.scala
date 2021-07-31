@@ -2,20 +2,18 @@ package typings.powerappsComponentFramework.ComponentFramework.PropertyHelper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Option Item Metadata
   */
-@js.native
 trait OptionMetadata extends StObject {
   
-  var Color: String = js.native
+  var Color: String
   
-  var Label: String = js.native
+  var Label: String
   
-  var Value: Double = js.native
+  var Value: Double
 }
 object OptionMetadata {
   

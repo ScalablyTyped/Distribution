@@ -2,51 +2,49 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSecretsManagerSecretDetails extends StObject {
   
   /**
     * Whether the secret is deleted.
     */
-  var Deleted: js.UndefOr[Boolean] = js.native
+  var Deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user-provided description of the secret.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN, Key ID, or alias of the AWS KMS customer master key (CMK) used to encrypt the SecretString or SecretBinary values for versions of this secret.
     */
-  var KmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the secret.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether rotation is enabled.
     */
-  var RotationEnabled: js.UndefOr[Boolean] = js.native
+  var RotationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the Lambda function that rotates the secret.
     */
-  var RotationLambdaArn: js.UndefOr[NonEmptyString] = js.native
+  var RotationLambdaArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the rotation occurred within the specified rotation frequency.
     */
-  var RotationOccurredWithinFrequency: js.UndefOr[Boolean] = js.native
+  var RotationOccurredWithinFrequency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the rotation schedule for the secret.
     */
-  var RotationRules: js.UndefOr[AwsSecretsManagerSecretRotationRules] = js.native
+  var RotationRules: js.UndefOr[AwsSecretsManagerSecretRotationRules] = js.undefined
 }
 object AwsSecretsManagerSecretDetails {
   

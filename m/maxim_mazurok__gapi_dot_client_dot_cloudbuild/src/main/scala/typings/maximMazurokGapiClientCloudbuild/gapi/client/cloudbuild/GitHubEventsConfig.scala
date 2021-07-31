@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitHubEventsConfig extends StObject {
   
   /** The installationID that emits the GitHub event. */
-  var installationId: js.UndefOr[String] = js.native
+  var installationId: js.UndefOr[String] = js.undefined
   
   /** Name of the repository. For example: The name for https://github.com/googlecloudplatform/cloud-builders is "cloud-builders". */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Owner of the repository. For example: The owner for https://github.com/googlecloudplatform/cloud-builders is "googlecloudplatform". */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /** filter to match changes in pull requests. */
-  var pullRequest: js.UndefOr[PullRequestFilter] = js.native
+  var pullRequest: js.UndefOr[PullRequestFilter] = js.undefined
   
   /** filter to match changes in refs like branches, tags. */
-  var push: js.UndefOr[PushFilter] = js.native
+  var push: js.UndefOr[PushFilter] = js.undefined
 }
 object GitHubEventsConfig {
   

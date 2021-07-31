@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalReplicationGroupInfo extends StObject {
   
   /**
     * The name of the Global Datastore
     */
-  var GlobalReplicationGroupId: js.UndefOr[String] = js.native
+  var GlobalReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The role of the replication group in a Global Datastore. Can be primary or secondary.
     */
-  var GlobalReplicationGroupMemberRole: js.UndefOr[String] = js.native
+  var GlobalReplicationGroupMemberRole: js.UndefOr[String] = js.undefined
 }
 object GlobalReplicationGroupInfo {
   

@@ -2324,7 +2324,6 @@ import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -2726,7 +2725,7 @@ trait JQuery extends StObject {
   @JSName("igBaseChart")
   def igBaseChart_flush(methodName: flush): Unit = js.native
   @JSName("igBaseChart")
-  def igBaseChart_getData(methodName: getData): js.Array[_] = js.native
+  def igBaseChart_getData(methodName: getData): js.Array[js.Any] = js.native
   @JSName("igBaseChart")
   def igBaseChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igBaseChart")
@@ -5810,7 +5809,7 @@ trait JQuery extends StObject {
   @JSName("igCategoryChart")
   def igCategoryChart_flush(methodName: flush): Unit = js.native
   @JSName("igCategoryChart")
-  def igCategoryChart_getData(methodName: getData): js.Array[_] = js.native
+  def igCategoryChart_getData(methodName: getData): js.Array[js.Any] = js.native
   @JSName("igCategoryChart")
   def igCategoryChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igCategoryChart")
@@ -6285,7 +6284,7 @@ trait JQuery extends StObject {
     *             visually separated from the default colors. The array should contain the color values.
     *
     */
-  def igColorPicker(optionLiteral: option, optionName: standardColors): js.Array[_] = js.native
+  def igColorPicker(optionLiteral: option, optionName: standardColors): js.Array[js.Any] = js.native
   /**
     * /Sets the standard colors. Standard colors are the ones displayed in the color picker bottom,
     *             visually separated from the default colors. The array should contain the color values.
@@ -6293,7 +6292,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igColorPicker(optionLiteral: option, optionName: standardColors, optionValue: js.Array[_]): Unit = js.native
+  def igColorPicker(optionLiteral: option, optionName: standardColors, optionValue: js.Array[js.Any]): Unit = js.native
   def igColorPicker(options: IgColorPicker): JQuery = js.native
   
   def igColorPickerSplitButton(methodName: String, methodParams: js.Any*): js.Any = js.native
@@ -6417,14 +6416,14 @@ trait JQuery extends StObject {
     * Button items.
     *
     */
-  def igColorPickerSplitButton(optionLiteral: option, optionName: items): js.Array[_] = js.native
+  def igColorPickerSplitButton(optionLiteral: option, optionName: items): js.Array[js.Any] = js.native
   /**
     * Button items.
     *
     *
     * @optionValue New value to be set.
     */
-  def igColorPickerSplitButton(optionLiteral: option, optionName: items, optionValue: js.Array[_]): Unit = js.native
+  def igColorPickerSplitButton(optionLiteral: option, optionName: items, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets whether the default button will be switched when another button is selected.
     *
@@ -7481,19 +7480,19 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_clearInput(methodName: clearInput): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_clearInput(methodName: clearInput, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
-  @JSName("igCombo")
   def igCombo_clearInput(methodName: clearInput, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_clearInput(methodName: clearInput, options: js.Object, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_closeDropDown(methodName: closeDropDown): js.Object = js.native
+  def igCombo_clearInput(methodName: clearInput, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_closeDropDown(methodName: closeDropDown, callback: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
+  def igCombo_closeDropDown(methodName: closeDropDown): js.Object = js.native
   @JSName("igCombo")
   def igCombo_closeDropDown(methodName: closeDropDown, callback: js.Function): js.Object = js.native
   @JSName("igCombo")
   def igCombo_closeDropDown(methodName: closeDropDown, callback: js.Function, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_closeDropDown(methodName: closeDropDown, callback: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_comboWrapper(methodName: comboWrapper): js.Object = js.native
   @JSName("igCombo")
@@ -7505,45 +7504,35 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_deselect(methodName: deselect, $items: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_deselect(methodName: deselect, $items: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
-  @JSName("igCombo")
   def igCombo_deselect(methodName: deselect, $items: js.Object, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_deselect(methodName: deselect, $items: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_deselectAll(methodName: deselectAll): js.Object = js.native
+  def igCombo_deselect(methodName: deselect, $items: js.Object, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_deselectAll(methodName: deselectAll, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
+  def igCombo_deselectAll(methodName: deselectAll): js.Object = js.native
   @JSName("igCombo")
   def igCombo_deselectAll(methodName: deselectAll, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_deselectAll(methodName: deselectAll, options: js.Object, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_deselectByIndex(methodName: deselectByIndex, index: js.Object): js.Object = js.native
+  def igCombo_deselectAll(methodName: deselectAll, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_deselectByIndex(
-    methodName: deselectByIndex,
-    index: js.Object,
-    options: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): js.Object = js.native
+  def igCombo_deselectByIndex(methodName: deselectByIndex, index: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_deselectByIndex(methodName: deselectByIndex, index: js.Object, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_deselectByIndex(methodName: deselectByIndex, index: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_deselectByValue(methodName: deselectByValue, value: js.Object): js.Object = js.native
+  def igCombo_deselectByIndex(methodName: deselectByIndex, index: js.Object, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_deselectByValue(
-    methodName: deselectByValue,
-    value: js.Object,
-    options: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): js.Object = js.native
+  def igCombo_deselectByValue(methodName: deselectByValue, value: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_deselectByValue(methodName: deselectByValue, value: js.Object, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_deselectByValue(methodName: deselectByValue, value: js.Object, options: js.Object, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_deselectByValue(methodName: deselectByValue, value: js.Object, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_destroy(methodName: destroy): js.Object = js.native
   @JSName("igCombo")
@@ -7553,38 +7542,33 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_filter(methodName: filter): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_filter(methodName: filter, texts: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
-  @JSName("igCombo")
   def igCombo_filter(methodName: filter, texts: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_filter(methodName: filter, texts: js.Object, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[_]): js.Object = js.native
+  def igCombo_filter(methodName: filter, texts: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[_], event: js.Object): js.Object = js.native
+  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[js.Any]): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_filteredItems(methodName: filteredItems): js.Array[_] = js.native
+  def igCombo_filterByExpressions(methodName: filterByExpressions, expressions: js.Array[js.Any], event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_filteredItems(methodName: filteredItems): js.Array[js.Any] = js.native
   @JSName("igCombo")
   def igCombo_index(methodName: index): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_index(
-    methodName: index,
-    index: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_index(methodName: index, index: js.UndefOr[scala.Nothing], options: js.Object): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_index(methodName: index, index: js.UndefOr[scala.Nothing], options: js.Object, event: js.Object): js.Object = js.native
-  @JSName("igCombo")
   def igCombo_index(methodName: index, index: js.Object): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_index(methodName: index, index: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_index(methodName: index, index: js.Object, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_index(methodName: index, index: js.Object, options: js.Object, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_index(methodName: index, index: js.Object, options: Unit, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_index(methodName: index, index: Unit, options: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_index(methodName: index, index: Unit, options: js.Object, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_index(methodName: index, index: Unit, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_isIndexSelected(methodName: isIndexSelected, index: js.Object): Boolean = js.native
   @JSName("igCombo")
@@ -7592,7 +7576,7 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_isValueSelected(methodName: isValueSelected, value: js.Object): Boolean = js.native
   @JSName("igCombo")
-  def igCombo_items(methodName: items): js.Array[_] = js.native
+  def igCombo_items(methodName: items): js.Array[js.Any] = js.native
   @JSName("igCombo")
   def igCombo_itemsFromElement(methodName: itemsFromElement, $element: js.Object): js.Object = js.native
   @JSName("igCombo")
@@ -7610,34 +7594,19 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_openDropDown(methodName: openDropDown): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_openDropDown(
-    methodName: openDropDown,
-    callback: js.UndefOr[scala.Nothing],
-    focusCombo: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_openDropDown(methodName: openDropDown, callback: js.UndefOr[scala.Nothing], focusCombo: Boolean): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_openDropDown(
-    methodName: openDropDown,
-    callback: js.UndefOr[scala.Nothing],
-    focusCombo: Boolean,
-    event: js.Object
-  ): js.Object = js.native
-  @JSName("igCombo")
   def igCombo_openDropDown(methodName: openDropDown, callback: js.Function): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_openDropDown(
-    methodName: openDropDown,
-    callback: js.Function,
-    focusCombo: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): js.Object = js.native
   @JSName("igCombo")
   def igCombo_openDropDown(methodName: openDropDown, callback: js.Function, focusCombo: Boolean): js.Object = js.native
   @JSName("igCombo")
   def igCombo_openDropDown(methodName: openDropDown, callback: js.Function, focusCombo: Boolean, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_openDropDown(methodName: openDropDown, callback: js.Function, focusCombo: Unit, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_openDropDown(methodName: openDropDown, callback: Unit, focusCombo: Boolean): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_openDropDown(methodName: openDropDown, callback: Unit, focusCombo: Boolean, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_openDropDown(methodName: openDropDown, callback: Unit, focusCombo: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igCombo")
@@ -7651,21 +7620,21 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_select(methodName: select, $items: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_select(methodName: select, $items: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
-  @JSName("igCombo")
   def igCombo_select(methodName: select, $items: js.Object, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_select(methodName: select, $items: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_selectAll(methodName: selectAll): js.Object = js.native
+  def igCombo_select(methodName: select, $items: js.Object, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_selectAll(methodName: selectAll, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
+  def igCombo_selectAll(methodName: selectAll): js.Object = js.native
   @JSName("igCombo")
   def igCombo_selectAll(methodName: selectAll, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_selectAll(methodName: selectAll, options: js.Object, event: js.Object): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_selectedItems(methodName: selectedItems): js.Array[_] = js.native
+  def igCombo_selectAll(methodName: selectAll, options: Unit, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_selectedItems(methodName: selectedItems): js.Array[js.Any] = js.native
   @JSName("igCombo")
   def igCombo_text(methodName: text): String | js.Object = js.native
   @JSName("igCombo")
@@ -7681,24 +7650,19 @@ trait JQuery extends StObject {
   @JSName("igCombo")
   def igCombo_value(methodName: value): js.Object = js.native
   @JSName("igCombo")
-  def igCombo_value(
-    methodName: value,
-    value: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_value(methodName: value, value: js.UndefOr[scala.Nothing], options: js.Object): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_value(methodName: value, value: js.UndefOr[scala.Nothing], options: js.Object, event: js.Object): js.Object = js.native
-  @JSName("igCombo")
   def igCombo_value(methodName: value, value: js.Object): js.Object = js.native
-  @JSName("igCombo")
-  def igCombo_value(methodName: value, value: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_value(methodName: value, value: js.Object, options: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_value(methodName: value, value: js.Object, options: js.Object, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_value(methodName: value, value: js.Object, options: Unit, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_value(methodName: value, value: Unit, options: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_value(methodName: value, value: Unit, options: js.Object, event: js.Object): js.Object = js.native
+  @JSName("igCombo")
+  def igCombo_value(methodName: value, value: Unit, options: Unit, event: js.Object): js.Object = js.native
   @JSName("igCombo")
   def igCombo_valueInput(methodName: valueInput): js.Object = js.native
   
@@ -7886,7 +7850,7 @@ trait JQuery extends StObject {
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: groups): js.Array[_] = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: groups): js.Array[js.Any] = js.native
   /**
     * (array of number objects) /Sets the number of digits in the integer part of a number, which are divided into groups.
     * The "groupSeparator" is inserted between groups.
@@ -7900,7 +7864,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[_]): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets the height of the control.
     *
@@ -7977,7 +7941,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type number.
     *
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: listItems): js.Array[_] = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type number.
@@ -7985,7 +7949,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igCurrencyEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[_]): Unit = js.native
+  def igCurrencyEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -9933,11 +9897,11 @@ trait JQuery extends StObject {
   @JSName("igDataChart")
   def igDataChart_exportImage(methodName: exportImage): js.Object = js.native
   @JSName("igDataChart")
-  def igDataChart_exportImage(methodName: exportImage, width: js.UndefOr[scala.Nothing], height: js.Object): js.Object = js.native
-  @JSName("igDataChart")
   def igDataChart_exportImage(methodName: exportImage, width: js.Object): js.Object = js.native
   @JSName("igDataChart")
   def igDataChart_exportImage(methodName: exportImage, width: js.Object, height: js.Object): js.Object = js.native
+  @JSName("igDataChart")
+  def igDataChart_exportImage(methodName: exportImage, width: Unit, height: js.Object): js.Object = js.native
   @JSName("igDataChart")
   def igDataChart_exportVisualData(methodName: exportVisualData): Unit = js.native
   @JSName("igDataChart")
@@ -14976,7 +14940,7 @@ trait JQuery extends StObject {
   @JSName("igFinancialChart")
   def igFinancialChart_flush(methodName: flush): Unit = js.native
   @JSName("igFinancialChart")
-  def igFinancialChart_getData(methodName: getData): js.Array[_] = js.native
+  def igFinancialChart_getData(methodName: getData): js.Array[js.Any] = js.native
   @JSName("igFinancialChart")
   def igFinancialChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igFinancialChart")
@@ -15593,7 +15557,7 @@ trait JQuery extends StObject {
   @JSName("igFunnelChart")
   def igFunnelChart_flush(methodName: flush): Unit = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_getData(methodName: getData): js.Array[_] = js.native
+  def igFunnelChart_getData(methodName: getData): js.Array[js.Any] = js.native
   @JSName("igFunnelChart")
   def igFunnelChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igFunnelChart")
@@ -15623,13 +15587,13 @@ trait JQuery extends StObject {
   @JSName("igFunnelChart")
   def igFunnelChart_removeItem(methodName: removeItem, index: Double): js.Object = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes): js.Array[_] = js.native
+  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes): js.Array[js.Any] = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes, selection: js.Array[_]): js.Array[_] = js.native
+  def igFunnelChart_selectedSliceIndexes(methodName: selectedSliceIndexes, selection: js.Array[js.Any]): js.Array[js.Any] = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems): js.Array[_] = js.native
+  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems): js.Array[js.Any] = js.native
   @JSName("igFunnelChart")
-  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems, selection: js.Array[_]): js.Array[_] = js.native
+  def igFunnelChart_selectedSliceItems(methodName: selectedSliceItems, selection: js.Array[js.Any]): js.Array[js.Any] = js.native
   @JSName("igFunnelChart")
   def igFunnelChart_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   @JSName("igFunnelChart")
@@ -15923,7 +15887,7 @@ trait JQuery extends StObject {
     * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
     *
     */
-  def igGrid(optionLiteral: option, optionName: dataSource): js.Array[_] | js.Object | String = js.native
+  def igGrid(optionLiteral: option, optionName: dataSource): js.Array[js.Any] | js.Object | String = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type).
     *
@@ -15955,7 +15919,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[_]): Unit = js.native
+  def igGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[js.Any]): Unit = js.native
   def igGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Object): Unit = js.native
   /**
     * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
@@ -17073,19 +17037,19 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_checkAndSyncHeights(methodName: checkAndSyncHeights): Unit = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[_]): Boolean = js.native
+  def igGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[_]): Boolean = js.native
+  def igGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object): js.Object = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: js.UndefOr[scala.Nothing], after: Boolean): js.Object = js.native
-  @JSName("igGridColumnFixing")
   def igGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: String): js.Object = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  @JSName("igGridColumnFixing")
+  def igGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: Unit, after: Boolean): js.Object = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_fixDataSkippedColumns(methodName: fixDataSkippedColumns): Unit = js.native
   @JSName("igGridColumnFixing")
@@ -17093,41 +17057,37 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns): Double = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_getWidthOfFixedColumns(
-    methodName: getWidthOfFixedColumns,
-    fCols: js.UndefOr[scala.Nothing],
-    excludeNonDataColumns: js.UndefOr[scala.Nothing],
-    includeHidden: Boolean
-  ): Double = js.native
+  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any]): Double = js.native
+  @JSName("igGridColumnFixing")
+  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any], excludeNonDataColumns: Boolean): Double = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.UndefOr[scala.Nothing],
-    excludeNonDataColumns: Boolean
-  ): Double = js.native
-  @JSName("igGridColumnFixing")
-  def igGridColumnFixing_getWidthOfFixedColumns(
-    methodName: getWidthOfFixedColumns,
-    fCols: js.UndefOr[scala.Nothing],
+    fCols: js.Array[js.Any],
     excludeNonDataColumns: Boolean,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[_]): Double = js.native
-  @JSName("igGridColumnFixing")
   def igGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[_],
-    excludeNonDataColumns: js.UndefOr[scala.Nothing],
+    fCols: js.Array[js.Any],
+    excludeNonDataColumns: Unit,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[_], excludeNonDataColumns: Boolean): Double = js.native
+  def igGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: Unit, excludeNonDataColumns: Boolean): Double = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[_],
+    fCols: Unit,
     excludeNonDataColumns: Boolean,
+    includeHidden: Boolean
+  ): Double = js.native
+  @JSName("igGridColumnFixing")
+  def igGridColumnFixing_getWidthOfFixedColumns(
+    methodName: getWidthOfFixedColumns,
+    fCols: Unit,
+    excludeNonDataColumns: Unit,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igGridColumnFixing")
@@ -17141,28 +17101,23 @@ trait JQuery extends StObject {
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_syncHeights(methodName: syncHeights): Unit = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_syncHeights(methodName: syncHeights, check: js.UndefOr[scala.Nothing], clearRowsHeights: Boolean): Unit = js.native
-  @JSName("igGridColumnFixing")
   def igGridColumnFixing_syncHeights(methodName: syncHeights, check: Boolean): Unit = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_syncHeights(methodName: syncHeights, check: Boolean, clearRowsHeights: Boolean): Unit = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[_], $anotherRows: js.Array[_]): Unit = js.native
+  def igGridColumnFixing_syncHeights(methodName: syncHeights, check: Unit, clearRowsHeights: Boolean): Unit = js.native
+  @JSName("igGridColumnFixing")
+  def igGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[js.Any], $anotherRows: js.Array[js.Any]): Unit = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_unfixAllColumns(methodName: unfixAllColumns): Unit = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object): js.Object = js.native
   @JSName("igGridColumnFixing")
-  def igGridColumnFixing_unfixColumn(
-    methodName: unfixColumn,
-    colIdentifier: js.Object,
-    target: js.UndefOr[scala.Nothing],
-    after: Boolean
-  ): js.Object = js.native
-  @JSName("igGridColumnFixing")
   def igGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object, target: String): js.Object = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  @JSName("igGridColumnFixing")
+  def igGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object, target: Unit, after: Boolean): js.Object = js.native
   @JSName("igGridColumnFixing")
   def igGridColumnFixing_unfixDataSkippedColumns(methodName: unfixDataSkippedColumns): Unit = js.native
   @JSName("igGridColumnFixing")
@@ -17740,42 +17695,7 @@ trait JQuery extends StObject {
   @JSName("igGridColumnMoving")
   def igGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object): Unit = js.native
   @JSName("igGridColumnMoving")
-  def igGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igGridColumnMoving")
-  def igGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean
-  ): Unit = js.native
-  @JSName("igGridColumnMoving")
-  def igGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean,
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igGridColumnMoving")
   def igGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean): Unit = js.native
-  @JSName("igGridColumnMoving")
-  def igGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: Boolean,
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
   @JSName("igGridColumnMoving")
   def igGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean, inDom: Boolean): Unit = js.native
   @JSName("igGridColumnMoving")
@@ -17785,6 +17705,35 @@ trait JQuery extends StObject {
     target: js.Object,
     after: Boolean,
     inDom: Boolean,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igGridColumnMoving")
+  def igGridColumnMoving_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Boolean,
+    inDom: Unit,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igGridColumnMoving")
+  def igGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Unit, inDom: Boolean): Unit = js.native
+  @JSName("igGridColumnMoving")
+  def igGridColumnMoving_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Boolean,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igGridColumnMoving")
+  def igGridColumnMoving_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Unit,
     callback: js.Function
   ): Unit = js.native
   @JSName("igGridColumnMoving")
@@ -17921,7 +17870,7 @@ trait JQuery extends StObject {
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority): js.Array[_] = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority): js.Array[js.Any] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
@@ -17929,7 +17878,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[_]): Unit = js.native
+  def igGridFeatureChooserPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Controls the direction in which the control shows relative to the target element
     *
@@ -18124,7 +18073,7 @@ trait JQuery extends StObject {
   @JSName("igGridFeatureChooserPopover")
   def igGridFeatureChooserPopover_show(methodName: show): Unit = js.native
   @JSName("igGridFeatureChooserPopover")
-  def igGridFeatureChooserPopover_show(methodName: show, trg: js.UndefOr[scala.Nothing], content: String): Unit = js.native
+  def igGridFeatureChooserPopover_show(methodName: show, trg: Unit, content: String): Unit = js.native
   @JSName("igGridFeatureChooserPopover")
   def igGridFeatureChooserPopover_show(methodName: show, trg: Element): Unit = js.native
   @JSName("igGridFeatureChooserPopover")
@@ -18927,18 +18876,13 @@ trait JQuery extends StObject {
   @JSName("igGridFiltering")
   def igGridFiltering_destroy(methodName: destroy): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(methodName: filter, expressions: js.Array[_]): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any]): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(
-    methodName: filter,
-    expressions: js.Array[_],
-    updateUI: js.UndefOr[scala.Nothing],
-    addedFromAdvanced: Boolean
-  ): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(methodName: filter, expressions: js.Array[_], updateUI: Boolean): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igGridFiltering")
-  def igGridFiltering_filter(methodName: filter, expressions: js.Array[_], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
+  def igGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igGridFiltering")
   def igGridFiltering_getFilteringMatchesCount(methodName: getFilteringMatchesCount): Double = js.native
   @JSName("igGridFiltering")
@@ -19752,22 +19696,17 @@ trait JQuery extends StObject {
   @JSName("igGridGroupBy")
   def igGridGroupBy_expand(methodName: expand, rowId: String): Unit = js.native
   @JSName("igGridGroupBy")
-  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[_], colKey: String): js.Array[_] = js.native
+  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[js.Any], colKey: String): js.Array[js.Any] = js.native
   @JSName("igGridGroupBy")
-  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[_], colKey: String, idval: String): js.Array[_] = js.native
+  def igGridGroupBy_getGroupedData(methodName: getGroupedData, data: js.Array[js.Any], colKey: String, idval: String): js.Array[js.Any] = js.native
   @JSName("igGridGroupBy")
   def igGridGroupBy_groupByColumn(methodName: groupByColumn, key: String): Unit = js.native
-  @JSName("igGridGroupBy")
-  def igGridGroupBy_groupByColumn(
-    methodName: groupByColumn,
-    key: String,
-    layout: js.UndefOr[scala.Nothing],
-    sortingDirection: js.Object
-  ): Unit = js.native
   @JSName("igGridGroupBy")
   def igGridGroupBy_groupByColumn(methodName: groupByColumn, key: String, layout: String): Unit = js.native
   @JSName("igGridGroupBy")
   def igGridGroupBy_groupByColumn(methodName: groupByColumn, key: String, layout: String, sortingDirection: js.Object): Unit = js.native
+  @JSName("igGridGroupBy")
+  def igGridGroupBy_groupByColumn(methodName: groupByColumn, key: String, layout: Unit, sortingDirection: js.Object): Unit = js.native
   @JSName("igGridGroupBy")
   def igGridGroupBy_groupByColumns(methodName: groupByColumns): js.Object = js.native
   @JSName("igGridGroupBy")
@@ -20245,9 +20184,9 @@ trait JQuery extends StObject {
   @JSName("igGridHiding")
   def igGridHiding_hideColumnChooser(methodName: hideColumnChooser): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[_]): Unit = js.native
+  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any]): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[_], callback: js.Function): Unit = js.native
+  def igGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
   @JSName("igGridHiding")
   def igGridHiding_isToRenderButtonReset(methodName: isToRenderButtonReset): Unit = js.native
   @JSName("igGridHiding")
@@ -20269,9 +20208,9 @@ trait JQuery extends StObject {
   @JSName("igGridHiding")
   def igGridHiding_showColumnChooser(methodName: showColumnChooser): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[_]): Unit = js.native
+  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any]): Unit = js.native
   @JSName("igGridHiding")
-  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[_], callback: js.Function): Unit = js.native
+  def igGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
   
   def igGridModalDialog(methodName: String, methodParams: js.Any*): js.Any = js.native
   def igGridModalDialog(optionLiteral: option, optionName: animationDuration): Double = js.native
@@ -20546,7 +20485,7 @@ trait JQuery extends StObject {
   @JSName("igGridMultiColumnHeaders")
   def igGridMultiColumnHeaders_expandGroup(methodName: expandGroup, groupKey: String, callback: js.Function): Unit = js.native
   @JSName("igGridMultiColumnHeaders")
-  def igGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[_] = js.native
+  def igGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[js.Any] = js.native
   @JSName("igGridMultiColumnHeaders")
   def igGridMultiColumnHeaders_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igGridMultiColumnHeaders")
@@ -21917,11 +21856,11 @@ trait JQuery extends StObject {
   @JSName("igGridSelection")
   def igGridSelection_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igGridSelection")
-  def igGridSelection_selectedCells(methodName: selectedCells): js.Array[_] = js.native
+  def igGridSelection_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
   @JSName("igGridSelection")
   def igGridSelection_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igGridSelection")
-  def igGridSelection_selectedRows(methodName: selectedRows): js.Array[_] = js.native
+  def igGridSelection_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
   
   def igGridSorting(methodName: String, methodParams: js.Any*): js.Any = js.native
   /**
@@ -22541,7 +22480,7 @@ trait JQuery extends StObject {
   @JSName("igGridSorting")
   def igGridSorting_sortMultiple(methodName: sortMultiple): Unit = js.native
   @JSName("igGridSorting")
-  def igGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[_]): Unit = js.native
+  def igGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[js.Any]): Unit = js.native
   @JSName("igGridSorting")
   def igGridSorting_unsortColumn(methodName: unsortColumn, index: js.Object, header: js.Object): Unit = js.native
   
@@ -22987,7 +22926,7 @@ trait JQuery extends StObject {
   def igGridSummaries_calculateSummaryColumn(
     methodName: calculateSummaryColumn,
     ck: String,
-    columnMethods: js.Array[_],
+    columnMethods: js.Array[js.Any],
     data: js.Object,
     dataType: js.Object
   ): Unit = js.native
@@ -23700,7 +23639,7 @@ trait JQuery extends StObject {
     * Gets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
     */
-  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[_] = js.native
+  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[js.Any] = js.native
   /**
     * Sets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
@@ -23708,7 +23647,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: String): Unit = js.native
-  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[_]): Unit = js.native
+  def igGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * On touch-enabled devices specifies the swipe distance for the delete button to appear.
     *
@@ -23766,11 +23705,11 @@ trait JQuery extends StObject {
   @JSName("igGridUpdating")
   def igGridUpdating_endEdit(methodName: endEdit): Boolean = js.native
   @JSName("igGridUpdating")
-  def igGridUpdating_endEdit(methodName: endEdit, update: js.UndefOr[scala.Nothing], raiseEvents: Boolean): Boolean = js.native
-  @JSName("igGridUpdating")
   def igGridUpdating_endEdit(methodName: endEdit, update: Boolean): Boolean = js.native
   @JSName("igGridUpdating")
   def igGridUpdating_endEdit(methodName: endEdit, update: Boolean, raiseEvents: Boolean): Boolean = js.native
+  @JSName("igGridUpdating")
+  def igGridUpdating_endEdit(methodName: endEdit, update: Unit, raiseEvents: Boolean): Boolean = js.native
   @JSName("igGridUpdating")
   def igGridUpdating_findInvalid(methodName: findInvalid): String = js.native
   @JSName("igGridUpdating")
@@ -23803,11 +23742,11 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_activeRow(methodName: activeRow): js.Object = js.native
   @JSName("igGrid")
-  def igGrid_allFixedRows(methodName: allFixedRows): js.Array[_] = js.native
+  def igGrid_allFixedRows(methodName: allFixedRows): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_allRows(methodName: allRows): js.Array[_] = js.native
+  def igGrid_allRows(methodName: allRows): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_allTransactions(methodName: allTransactions): js.Array[_] = js.native
+  def igGrid_allTransactions(methodName: allTransactions): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_autoSizeColumns(methodName: autoSizeColumns): Unit = js.native
   @JSName("igGrid")
@@ -23825,9 +23764,9 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_changeRegional(methodName: changeRegional): Unit = js.native
   @JSName("igGrid")
-  def igGrid_children(methodName: children): js.Array[_] = js.native
+  def igGrid_children(methodName: children): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_childrenWidgets(methodName: childrenWidgets): js.Array[_] = js.native
+  def igGrid_childrenWidgets(methodName: childrenWidgets): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_columnByKey(methodName: columnByKey, key: String): js.Object = js.native
   @JSName("igGrid")
@@ -23861,7 +23800,7 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_fixedRowAt(methodName: fixedRowAt, i: Double): Element = js.native
   @JSName("igGrid")
-  def igGrid_fixedRows(methodName: fixedRows): js.Array[_] = js.native
+  def igGrid_fixedRows(methodName: fixedRows): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_fixedTable(methodName: fixedTable): js.Object = js.native
   @JSName("igGrid")
@@ -23897,9 +23836,9 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_id(methodName: id): String = js.native
   @JSName("igGrid")
-  def igGrid_immediateChildren(methodName: immediateChildren): js.Array[_] = js.native
+  def igGrid_immediateChildren(methodName: immediateChildren): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[_] = js.native
+  def igGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_isFixedColumn(methodName: isFixedColumn, colKey: js.Object): Boolean = js.native
   @JSName("igGrid")
@@ -23907,42 +23846,7 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object): Unit = js.native
   @JSName("igGrid")
-  def igGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igGrid")
-  def igGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean
-  ): Unit = js.native
-  @JSName("igGrid")
-  def igGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean,
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igGrid")
   def igGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean): Unit = js.native
-  @JSName("igGrid")
-  def igGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: Boolean,
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
   @JSName("igGrid")
   def igGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean, inDom: Boolean): Unit = js.native
   @JSName("igGrid")
@@ -23955,15 +23859,44 @@ trait JQuery extends StObject {
     callback: js.Function
   ): Unit = js.native
   @JSName("igGrid")
+  def igGrid_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Boolean,
+    inDom: Unit,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igGrid")
+  def igGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Unit, inDom: Boolean): Unit = js.native
+  @JSName("igGrid")
+  def igGrid_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Boolean,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igGrid")
+  def igGrid_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Unit,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igGrid")
   def igGrid_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igGrid")
   def igGrid_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
   @JSName("igGrid")
   def igGrid_option(optionLiteral: option, options: IgGrid): JQuery = js.native
   @JSName("igGrid")
-  def igGrid_pendingTransactions(methodName: pendingTransactions): js.Array[_] = js.native
+  def igGrid_pendingTransactions(methodName: pendingTransactions): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[_]): Unit = js.native
+  def igGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[js.Any]): Unit = js.native
   @JSName("igGrid")
   def igGrid_renderNewRow(methodName: renderNewRow): Unit = js.native
   @JSName("igGrid")
@@ -23971,13 +23904,13 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_resizeContainer(methodName: resizeContainer): Unit = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback): js.Array[_] = js.native
+  def igGrid_rollback(methodName: rollback): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback, rowId: js.UndefOr[scala.Nothing], updateUI: Boolean): js.Array[_] = js.native
+  def igGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[_] = js.native
+  def igGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[js.Any] = js.native
   @JSName("igGrid")
-  def igGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[_] = js.native
+  def igGrid_rollback(methodName: rollback, rowId: Unit, updateUI: Boolean): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_rowAt(methodName: rowAt, i: Double): Element = js.native
   @JSName("igGrid")
@@ -23985,7 +23918,7 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_rowById(methodName: rowById, rowId: js.Object, isFixed: Boolean): Element = js.native
   @JSName("igGrid")
-  def igGrid_rows(methodName: rows): js.Array[_] = js.native
+  def igGrid_rows(methodName: rows): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_saveChanges(methodName: saveChanges, success: js.Function, error: js.Function): Unit = js.native
   @JSName("igGrid")
@@ -23993,11 +23926,11 @@ trait JQuery extends StObject {
   @JSName("igGrid")
   def igGrid_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igGrid")
-  def igGrid_selectedCells(methodName: selectedCells): js.Array[_] = js.native
+  def igGrid_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igGrid")
-  def igGrid_selectedRows(methodName: selectedRows): js.Array[_] = js.native
+  def igGrid_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
   @JSName("igGrid")
   def igGrid_setColumnTemplate(methodName: setColumnTemplate, col: js.Object, tmpl: String): Unit = js.native
   @JSName("igGrid")
@@ -24011,7 +23944,7 @@ trait JQuery extends StObject {
     notToRender: js.Object
   ): Unit = js.native
   @JSName("igGrid")
-  def igGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[_], removeOldValues: js.Object): Unit = js.native
+  def igGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[js.Any], removeOldValues: js.Object): Unit = js.native
   @JSName("igGrid")
   def igGrid_showColumn(methodName: showColumn, column: js.Object, callback: js.Function): Unit = js.native
   @JSName("igGrid")
@@ -24415,7 +24348,7 @@ trait JQuery extends StObject {
     * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
     *
     */
-  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource): String | js.Array[_] | js.Object = js.native
+  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource): String | js.Array[js.Any] | js.Object = js.native
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type).
     *
@@ -24447,7 +24380,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: String): Unit = js.native
-  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[_]): Unit = js.native
+  def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[js.Any]): Unit = js.native
   def igHierarchicalGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Object): Unit = js.native
   /**
     * Gets the default property in the response where children will be located
@@ -25252,14 +25185,14 @@ trait JQuery extends StObject {
     * The html editor custom toolbars list.
     *
     */
-  def igHtmlEditor(optionLiteral: option, optionName: customToolbars): js.Array[_] = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: customToolbars): js.Array[js.Any] = js.native
   /**
     * The html editor custom toolbars list.
     *
     *
     * @optionValue New value to be set.
     */
-  def igHtmlEditor(optionLiteral: option, optionName: customToolbars, optionValue: js.Array[_]): Unit = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: customToolbars, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Event is fired on keyboard cut action.
     */
@@ -25464,14 +25397,14 @@ trait JQuery extends StObject {
     * The html editor toolbars list.
     *
     */
-  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings): js.Array[_] = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings): js.Array[js.Any] = js.native
   /**
     * The html editor toolbars list.
     *
     *
     * @optionValue New value to be set.
     */
-  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings, optionValue: js.Array[_]): Unit = js.native
+  def igHtmlEditor(optionLiteral: option, optionName: toolbarSettings, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Event is fired on keyboard undo action.
     */
@@ -25895,34 +25828,19 @@ trait JQuery extends StObject {
   @JSName("igLayoutManager")
   def igLayoutManager_reflow(methodName: reflow): Unit = js.native
   @JSName("igLayoutManager")
-  def igLayoutManager_reflow(
-    methodName: reflow,
-    forceReflow: js.UndefOr[scala.Nothing],
-    animationDuration: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): Unit = js.native
-  @JSName("igLayoutManager")
-  def igLayoutManager_reflow(methodName: reflow, forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double): Unit = js.native
-  @JSName("igLayoutManager")
-  def igLayoutManager_reflow(
-    methodName: reflow,
-    forceReflow: js.UndefOr[scala.Nothing],
-    animationDuration: Double,
-    event: js.Object
-  ): Unit = js.native
-  @JSName("igLayoutManager")
   def igLayoutManager_reflow(methodName: reflow, forceReflow: Boolean): Unit = js.native
-  @JSName("igLayoutManager")
-  def igLayoutManager_reflow(
-    methodName: reflow,
-    forceReflow: Boolean,
-    animationDuration: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): Unit = js.native
   @JSName("igLayoutManager")
   def igLayoutManager_reflow(methodName: reflow, forceReflow: Boolean, animationDuration: Double): Unit = js.native
   @JSName("igLayoutManager")
   def igLayoutManager_reflow(methodName: reflow, forceReflow: Boolean, animationDuration: Double, event: js.Object): Unit = js.native
+  @JSName("igLayoutManager")
+  def igLayoutManager_reflow(methodName: reflow, forceReflow: Boolean, animationDuration: Unit, event: js.Object): Unit = js.native
+  @JSName("igLayoutManager")
+  def igLayoutManager_reflow(methodName: reflow, forceReflow: Unit, animationDuration: Double): Unit = js.native
+  @JSName("igLayoutManager")
+  def igLayoutManager_reflow(methodName: reflow, forceReflow: Unit, animationDuration: Double, event: js.Object): Unit = js.native
+  @JSName("igLayoutManager")
+  def igLayoutManager_reflow(methodName: reflow, forceReflow: Unit, animationDuration: Unit, event: js.Object): Unit = js.native
   
   def igLinearGauge(methodName: String, methodParams: js.Any*): js.Any = js.native
   /**
@@ -27715,11 +27633,11 @@ trait JQuery extends StObject {
   @JSName("igMap")
   def igMap_exportImage(methodName: exportImage): js.Object = js.native
   @JSName("igMap")
-  def igMap_exportImage(methodName: exportImage, width: js.UndefOr[scala.Nothing], height: js.Object): js.Object = js.native
-  @JSName("igMap")
   def igMap_exportImage(methodName: exportImage, width: js.Object): js.Object = js.native
   @JSName("igMap")
   def igMap_exportImage(methodName: exportImage, width: js.Object, height: js.Object): js.Object = js.native
+  @JSName("igMap")
+  def igMap_exportImage(methodName: exportImage, width: Unit, height: js.Object): js.Object = js.native
   @JSName("igMap")
   def igMap_exportVisualData(methodName: exportVisualData): Unit = js.native
   @JSName("igMap")
@@ -28039,14 +27957,14 @@ trait JQuery extends StObject {
     * Sets gets list of items which are used for drop-down list.
     * Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them.
     */
-  def igMaskEditor(optionLiteral: option, optionName: listItems): js.Array[_] = js.native
+  def igMaskEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
   /**
     * Sets gets list of items which are used for drop-down list.
     * Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them.
     *
     * @optionValue New value to be set.
     */
-  def igMaskEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[_]): Unit = js.native
+  def igMaskEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.
     */
@@ -28487,7 +28405,7 @@ trait JQuery extends StObject {
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  def igNotifier(optionLiteral: option, optionName: directionPriority): js.Array[_] = js.native
+  def igNotifier(optionLiteral: option, optionName: directionPriority): js.Array[js.Any] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
@@ -28495,7 +28413,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNotifier(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[_]): Unit = js.native
+  def igNotifier(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Controls the direction in which the control shows relative to the target element
     *
@@ -28736,7 +28654,7 @@ trait JQuery extends StObject {
   @JSName("igNotifier")
   def igNotifier_show(methodName: show): Unit = js.native
   @JSName("igNotifier")
-  def igNotifier_show(methodName: show, trg: js.UndefOr[scala.Nothing], content: String): Unit = js.native
+  def igNotifier_show(methodName: show, trg: Unit, content: String): Unit = js.native
   @JSName("igNotifier")
   def igNotifier_show(methodName: show, trg: Element): Unit = js.native
   @JSName("igNotifier")
@@ -28976,7 +28894,7 @@ trait JQuery extends StObject {
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  def igNumericEditor(optionLiteral: option, optionName: groups): js.Array[_] = js.native
+  def igNumericEditor(optionLiteral: option, optionName: groups): js.Array[js.Any] = js.native
   /**
     * (array of number objects) /Sets the number of digits in the integer part of a number, which are divided into groups.
     * The "groupSeparator" is inserted between groups.
@@ -28990,7 +28908,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[_]): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets the height of the control.
     *
@@ -29067,7 +28985,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type number.
     *
     */
-  def igNumericEditor(optionLiteral: option, optionName: listItems): js.Array[_] = js.native
+  def igNumericEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type number.
@@ -29075,7 +28993,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igNumericEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[_]): Unit = js.native
+  def igNumericEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -29770,7 +29688,7 @@ trait JQuery extends StObject {
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  def igPercentEditor(optionLiteral: option, optionName: groups): js.Array[_] = js.native
+  def igPercentEditor(optionLiteral: option, optionName: groups): js.Array[js.Any] = js.native
   /**
     * (array of number objects) /Sets the number of digits in the integer part of a number, which are divided into groups.
     * The "groupSeparator" is inserted between groups.
@@ -29784,7 +29702,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[_]): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: groups, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets the height of the control.
     *
@@ -29861,7 +29779,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type number.
     *
     */
-  def igPercentEditor(optionLiteral: option, optionName: listItems): js.Array[_] = js.native
+  def igPercentEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type number.
@@ -29869,7 +29787,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPercentEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[_]): Unit = js.native
+  def igPercentEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -30464,14 +30382,14 @@ trait JQuery extends StObject {
     * Gets  the collection of exploded slice indices.
     * Should be an array of integers that indicate the indexes of the slices to explode.
     */
-  def igPieChart(optionLiteral: option, optionName: explodedSlices): js.Array[_] = js.native
+  def igPieChart(optionLiteral: option, optionName: explodedSlices): js.Array[js.Any] = js.native
   /**
     * Sets the collection of exploded slice indices.
     * Should be an array of integers that indicate the indexes of the slices to explode.
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: explodedSlices, optionValue: js.Array[_]): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: explodedSlices, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets  the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.
     * Use context.item to get the item associated with the slice, if any.
@@ -30824,7 +30742,7 @@ trait JQuery extends StObject {
     * Gets  the currently selected data items.  Adding or removing data items from this array will
     *             select or deselect the slices associated with those items.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedItems): js.Array[_] = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedItems): js.Array[js.Any] = js.native
   /**
     * Event fired when the selectedItems array has changed.
     *             Function takes arguments evt and ui.
@@ -30865,19 +30783,19 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedItems, optionValue: js.Array[_]): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedItems, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Sets the collection of selected slice indices.
     *             Should be an array of integers that indicate the indexes of the slices to select.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedSlices): js.Array[_] = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedSlices): js.Array[js.Any] = js.native
   /**
     * Sets the collection of selected slice indices.
     *             Should be an array of integers that indicate the indexes of the slices to select.
     *
     * @optionValue New value to be set.
     */
-  def igPieChart(optionLiteral: option, optionName: selectedSlices, optionValue: js.Array[_]): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: selectedSlices, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets  the style used when a slice is selected.
     */
@@ -31093,11 +31011,11 @@ trait JQuery extends StObject {
   @JSName("igPieChart")
   def igPieChart_exportImage(methodName: exportImage): js.Object = js.native
   @JSName("igPieChart")
-  def igPieChart_exportImage(methodName: exportImage, width: js.UndefOr[scala.Nothing], height: js.Object): js.Object = js.native
-  @JSName("igPieChart")
   def igPieChart_exportImage(methodName: exportImage, width: js.Object): js.Object = js.native
   @JSName("igPieChart")
   def igPieChart_exportImage(methodName: exportImage, width: js.Object, height: js.Object): js.Object = js.native
+  @JSName("igPieChart")
+  def igPieChart_exportImage(methodName: exportImage, width: Unit, height: js.Object): js.Object = js.native
   @JSName("igPieChart")
   def igPieChart_exportVisualData(methodName: exportVisualData): Unit = js.native
   @JSName("igPieChart")
@@ -32235,9 +32153,9 @@ trait JQuery extends StObject {
   def igPivotGrid(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
   def igPivotGrid(options: IgPivotGrid): JQuery = js.native
   @JSName("igPivotGrid")
-  def igPivotGrid_appliedColumnSortDirections(methodName: appliedColumnSortDirections): js.Array[_] = js.native
+  def igPivotGrid_appliedColumnSortDirections(methodName: appliedColumnSortDirections): js.Array[js.Any] = js.native
   @JSName("igPivotGrid")
-  def igPivotGrid_appliedLevelSortDirections(methodName: appliedLevelSortDirections): js.Array[_] = js.native
+  def igPivotGrid_appliedLevelSortDirections(methodName: appliedLevelSortDirections): js.Array[js.Any] = js.native
   @JSName("igPivotGrid")
   def igPivotGrid_changeGlobalLanguage(methodName: changeGlobalLanguage): Unit = js.native
   @JSName("igPivotGrid")
@@ -32512,7 +32430,7 @@ trait JQuery extends StObject {
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  def igPopover(optionLiteral: option, optionName: directionPriority): js.Array[_] = js.native
+  def igPopover(optionLiteral: option, optionName: directionPriority): js.Array[js.Any] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
@@ -32520,7 +32438,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[_]): Unit = js.native
+  def igPopover(optionLiteral: option, optionName: directionPriority, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Controls the direction in which the control shows relative to the target element
     *
@@ -32750,7 +32668,7 @@ trait JQuery extends StObject {
   @JSName("igPopover")
   def igPopover_show(methodName: show): Unit = js.native
   @JSName("igPopover")
-  def igPopover_show(methodName: show, trg: js.UndefOr[scala.Nothing], content: String): Unit = js.native
+  def igPopover_show(methodName: show, trg: Unit, content: String): Unit = js.native
   @JSName("igPopover")
   def igPopover_show(methodName: show, trg: Element): Unit = js.native
   @JSName("igPopover")
@@ -35119,14 +35037,14 @@ trait JQuery extends StObject {
     * Lists of all the views, rendered in the Scheduler.
     *
     */
-  def igScheduler(optionLiteral: option, optionName: views): js.Array[_] = js.native
+  def igScheduler(optionLiteral: option, optionName: views): js.Array[js.Any] = js.native
   /**
     * Lists of all the views, rendered in the Scheduler.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScheduler(optionLiteral: option, optionName: views, optionValue: js.Array[_]): Unit = js.native
+  def igScheduler(optionLiteral: option, optionName: views, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Fired after week is changed when using previous and next buttons (fired only in Week View)
     */
@@ -35601,26 +35519,26 @@ trait JQuery extends StObject {
     * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
     *
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsH): js.Array[_] = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsH): js.Array[js.Any] = js.native
   /**
     * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsH, optionValue: js.Array[_]): Unit = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsH, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
     *
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsV): js.Array[_] = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsV): js.Array[js.Any] = js.native
   /**
     * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
     *
     *
     * @optionValue New value to be set.
     */
-  def igScroll(optionLiteral: option, optionName: syncedElemsV, optionValue: js.Array[_]): Unit = js.native
+  def igScroll(optionLiteral: option, optionName: syncedElemsV, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Event which is raised on mouse up from the scrollbar's thumb drag.
     */
@@ -37514,7 +37432,7 @@ trait JQuery extends StObject {
   @JSName("igShapeChart")
   def igShapeChart_flush(methodName: flush): Unit = js.native
   @JSName("igShapeChart")
-  def igShapeChart_getData(methodName: getData): js.Array[_] = js.native
+  def igShapeChart_getData(methodName: getData): js.Array[js.Any] = js.native
   @JSName("igShapeChart")
   def igShapeChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igShapeChart")
@@ -38334,7 +38252,7 @@ trait JQuery extends StObject {
   @JSName("igSparkline")
   def igSparkline_flush(methodName: flush): Unit = js.native
   @JSName("igSparkline")
-  def igSparkline_getData(methodName: getData): js.Array[_] = js.native
+  def igSparkline_getData(methodName: getData): js.Array[js.Any] = js.native
   @JSName("igSparkline")
   def igSparkline_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
   @JSName("igSparkline")
@@ -39752,7 +39670,7 @@ trait JQuery extends StObject {
     * Items in the list can be of type string.
     *
     */
-  def igTextEditor(optionLiteral: option, optionName: listItems): js.Array[_] = js.native
+  def igTextEditor(optionLiteral: option, optionName: listItems): js.Array[js.Any] = js.native
   /**
     * /Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type string.
@@ -39760,7 +39678,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTextEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[_]): Unit = js.native
+  def igTextEditor(optionLiteral: option, optionName: listItems, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
@@ -40263,7 +40181,7 @@ trait JQuery extends StObject {
     * Gets/Sets the height of each column in the container.
     *
     */
-  def igTileManager(optionLiteral: option, optionName: columnHeight): String | Double | js.Array[_] = js.native
+  def igTileManager(optionLiteral: option, optionName: columnHeight): String | Double | js.Array[js.Any] = js.native
   /**
     * /Sets the height of each column in the container.
     *
@@ -40271,13 +40189,13 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: String): Unit = js.native
-  def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: js.Array[_]): Unit = js.native
+  def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: js.Array[js.Any]): Unit = js.native
   def igTileManager(optionLiteral: option, optionName: columnHeight, optionValue: Double): Unit = js.native
   /**
     * Gets/Sets the width of each column in the container.
     *
     */
-  def igTileManager(optionLiteral: option, optionName: columnWidth): String | Double | js.Array[_] = js.native
+  def igTileManager(optionLiteral: option, optionName: columnWidth): String | Double | js.Array[js.Any] = js.native
   /**
     * /Sets the width of each column in the container.
     *
@@ -40285,7 +40203,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: String): Unit = js.native
-  def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: js.Array[_]): Unit = js.native
+  def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: js.Array[js.Any]): Unit = js.native
   def igTileManager(optionLiteral: option, optionName: columnWidth, optionValue: Double): Unit = js.native
   /**
     * Fired before databinding is performed
@@ -40808,26 +40726,21 @@ trait JQuery extends StObject {
   @JSName("igTileManager")
   def igTileManager_maximize(methodName: maximize, $tileToMaximize: js.Object): Unit = js.native
   @JSName("igTileManager")
-  def igTileManager_maximize(
-    methodName: maximize,
-    $tileToMaximize: js.Object,
-    animDuration: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): Unit = js.native
-  @JSName("igTileManager")
   def igTileManager_maximize(methodName: maximize, $tileToMaximize: js.Object, animDuration: Double): Unit = js.native
   @JSName("igTileManager")
   def igTileManager_maximize(methodName: maximize, $tileToMaximize: js.Object, animDuration: Double, event: js.Object): Unit = js.native
+  @JSName("igTileManager")
+  def igTileManager_maximize(methodName: maximize, $tileToMaximize: js.Object, animDuration: Unit, event: js.Object): Unit = js.native
   @JSName("igTileManager")
   def igTileManager_maximizedTile(methodName: maximizedTile): js.Object = js.native
   @JSName("igTileManager")
   def igTileManager_minimize(methodName: minimize): Unit = js.native
   @JSName("igTileManager")
-  def igTileManager_minimize(methodName: minimize, animDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
-  @JSName("igTileManager")
   def igTileManager_minimize(methodName: minimize, animDuration: Double): Unit = js.native
   @JSName("igTileManager")
   def igTileManager_minimize(methodName: minimize, animDuration: Double, event: js.Object): Unit = js.native
+  @JSName("igTileManager")
+  def igTileManager_minimize(methodName: minimize, animDuration: Unit, event: js.Object): Unit = js.native
   @JSName("igTileManager")
   def igTileManager_minimizedTiles(methodName: minimizedTiles): js.Object = js.native
   @JSName("igTileManager")
@@ -40839,34 +40752,19 @@ trait JQuery extends StObject {
   @JSName("igTileManager")
   def igTileManager_reflow(methodName: reflow): Unit = js.native
   @JSName("igTileManager")
-  def igTileManager_reflow(
-    methodName: reflow,
-    forceReflow: js.UndefOr[scala.Nothing],
-    animationDuration: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): Unit = js.native
-  @JSName("igTileManager")
-  def igTileManager_reflow(methodName: reflow, forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double): Unit = js.native
-  @JSName("igTileManager")
-  def igTileManager_reflow(
-    methodName: reflow,
-    forceReflow: js.UndefOr[scala.Nothing],
-    animationDuration: Double,
-    event: js.Object
-  ): Unit = js.native
-  @JSName("igTileManager")
   def igTileManager_reflow(methodName: reflow, forceReflow: js.Object): Unit = js.native
-  @JSName("igTileManager")
-  def igTileManager_reflow(
-    methodName: reflow,
-    forceReflow: js.Object,
-    animationDuration: js.UndefOr[scala.Nothing],
-    event: js.Object
-  ): Unit = js.native
   @JSName("igTileManager")
   def igTileManager_reflow(methodName: reflow, forceReflow: js.Object, animationDuration: Double): Unit = js.native
   @JSName("igTileManager")
   def igTileManager_reflow(methodName: reflow, forceReflow: js.Object, animationDuration: Double, event: js.Object): Unit = js.native
+  @JSName("igTileManager")
+  def igTileManager_reflow(methodName: reflow, forceReflow: js.Object, animationDuration: Unit, event: js.Object): Unit = js.native
+  @JSName("igTileManager")
+  def igTileManager_reflow(methodName: reflow, forceReflow: Unit, animationDuration: Double): Unit = js.native
+  @JSName("igTileManager")
+  def igTileManager_reflow(methodName: reflow, forceReflow: Unit, animationDuration: Double, event: js.Object): Unit = js.native
+  @JSName("igTileManager")
+  def igTileManager_reflow(methodName: reflow, forceReflow: Unit, animationDuration: Unit, event: js.Object): Unit = js.native
   @JSName("igTileManager")
   def igTileManager_splitter(methodName: splitter): js.Object = js.native
   @JSName("igTileManager")
@@ -41911,14 +41809,14 @@ trait JQuery extends StObject {
     * Get/Set Toolbar's items.
     *
     */
-  def igToolbar(optionLiteral: option, optionName: items): js.Array[_] = js.native
+  def igToolbar(optionLiteral: option, optionName: items): js.Array[js.Any] = js.native
   /**
     * Get/Set Toolbar's items.
     *
     *
     * @optionValue New value to be set.
     */
-  def igToolbar(optionLiteral: option, optionName: items, optionValue: js.Array[_]): Unit = js.native
+  def igToolbar(optionLiteral: option, optionName: items, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
@@ -43057,7 +42955,7 @@ trait JQuery extends StObject {
     * Can be any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an $.ig.DataSource itself
     *
     */
-  def igTreeGrid(optionLiteral: option, optionName: dataSource): js.Array[_] | js.Object | String = js.native
+  def igTreeGrid(optionLiteral: option, optionName: dataSource): js.Array[js.Any] | js.Object | String = js.native
   /**
     * Options object to configure data source-specific settings
     *
@@ -43101,7 +42999,7 @@ trait JQuery extends StObject {
     *
     * @optionValue New value to be set.
     */
-  def igTreeGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[_]): Unit = js.native
+  def igTreeGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Array[js.Any]): Unit = js.native
   def igTreeGrid(optionLiteral: option, optionName: dataSource, optionValue: js.Object): Unit = js.native
   /**
     * Default column width that will be set for all columns, that don't have [column width](ui.iggrid#options:columns.width) defined. Can also be set as '*', in which case the width auto-size based on the content of the column cells (including the header text).
@@ -44027,19 +43925,19 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_checkAndSyncHeights(methodName: checkAndSyncHeights): Unit = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[_]): Boolean = js.native
+  def igTreeGridColumnFixing_checkFixingAllowed(methodName: checkFixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[_]): Boolean = js.native
+  def igTreeGridColumnFixing_checkUnfixingAllowed(methodName: checkUnfixingAllowed, columns: js.Array[js.Any]): Boolean = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object): js.Object = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: js.UndefOr[scala.Nothing], after: Boolean): js.Object = js.native
-  @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: String): js.Object = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  @JSName("igTreeGridColumnFixing")
+  def igTreeGridColumnFixing_fixColumn(methodName: fixColumn, colIdentifier: js.Object, target: Unit, after: Boolean): js.Object = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_fixDataSkippedColumns(methodName: fixDataSkippedColumns): Unit = js.native
   @JSName("igTreeGridColumnFixing")
@@ -44047,41 +43945,37 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns): Double = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_getWidthOfFixedColumns(
-    methodName: getWidthOfFixedColumns,
-    fCols: js.UndefOr[scala.Nothing],
-    excludeNonDataColumns: js.UndefOr[scala.Nothing],
-    includeHidden: Boolean
-  ): Double = js.native
+  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any]): Double = js.native
+  @JSName("igTreeGridColumnFixing")
+  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[js.Any], excludeNonDataColumns: Boolean): Double = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.UndefOr[scala.Nothing],
-    excludeNonDataColumns: Boolean
-  ): Double = js.native
-  @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_getWidthOfFixedColumns(
-    methodName: getWidthOfFixedColumns,
-    fCols: js.UndefOr[scala.Nothing],
+    fCols: js.Array[js.Any],
     excludeNonDataColumns: Boolean,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[_]): Double = js.native
-  @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[_],
-    excludeNonDataColumns: js.UndefOr[scala.Nothing],
+    fCols: js.Array[js.Any],
+    excludeNonDataColumns: Unit,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: js.Array[_], excludeNonDataColumns: Boolean): Double = js.native
+  def igTreeGridColumnFixing_getWidthOfFixedColumns(methodName: getWidthOfFixedColumns, fCols: Unit, excludeNonDataColumns: Boolean): Double = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_getWidthOfFixedColumns(
     methodName: getWidthOfFixedColumns,
-    fCols: js.Array[_],
+    fCols: Unit,
     excludeNonDataColumns: Boolean,
+    includeHidden: Boolean
+  ): Double = js.native
+  @JSName("igTreeGridColumnFixing")
+  def igTreeGridColumnFixing_getWidthOfFixedColumns(
+    methodName: getWidthOfFixedColumns,
+    fCols: Unit,
+    excludeNonDataColumns: Unit,
     includeHidden: Boolean
   ): Double = js.native
   @JSName("igTreeGridColumnFixing")
@@ -44095,28 +43989,23 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_syncHeights(methodName: syncHeights): Unit = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_syncHeights(methodName: syncHeights, check: js.UndefOr[scala.Nothing], clearRowsHeights: Boolean): Unit = js.native
-  @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_syncHeights(methodName: syncHeights, check: Boolean): Unit = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_syncHeights(methodName: syncHeights, check: Boolean, clearRowsHeights: Boolean): Unit = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[_], $anotherRows: js.Array[_]): Unit = js.native
+  def igTreeGridColumnFixing_syncHeights(methodName: syncHeights, check: Unit, clearRowsHeights: Boolean): Unit = js.native
+  @JSName("igTreeGridColumnFixing")
+  def igTreeGridColumnFixing_syncRowsHeights(methodName: syncRowsHeights, $trs: js.Array[js.Any], $anotherRows: js.Array[js.Any]): Unit = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_unfixAllColumns(methodName: unfixAllColumns): Unit = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object): js.Object = js.native
   @JSName("igTreeGridColumnFixing")
-  def igTreeGridColumnFixing_unfixColumn(
-    methodName: unfixColumn,
-    colIdentifier: js.Object,
-    target: js.UndefOr[scala.Nothing],
-    after: Boolean
-  ): js.Object = js.native
-  @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object, target: String): js.Object = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object, target: String, after: Boolean): js.Object = js.native
+  @JSName("igTreeGridColumnFixing")
+  def igTreeGridColumnFixing_unfixColumn(methodName: unfixColumn, colIdentifier: js.Object, target: Unit, after: Boolean): js.Object = js.native
   @JSName("igTreeGridColumnFixing")
   def igTreeGridColumnFixing_unfixDataSkippedColumns(methodName: unfixDataSkippedColumns): Unit = js.native
   @JSName("igTreeGridColumnFixing")
@@ -44669,42 +44558,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridColumnMoving")
   def igTreeGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object): Unit = js.native
   @JSName("igTreeGridColumnMoving")
-  def igTreeGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igTreeGridColumnMoving")
-  def igTreeGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean
-  ): Unit = js.native
-  @JSName("igTreeGridColumnMoving")
-  def igTreeGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean,
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igTreeGridColumnMoving")
   def igTreeGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean): Unit = js.native
-  @JSName("igTreeGridColumnMoving")
-  def igTreeGridColumnMoving_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: Boolean,
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
   @JSName("igTreeGridColumnMoving")
   def igTreeGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean, inDom: Boolean): Unit = js.native
   @JSName("igTreeGridColumnMoving")
@@ -44714,6 +44568,35 @@ trait JQuery extends StObject {
     target: js.Object,
     after: Boolean,
     inDom: Boolean,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igTreeGridColumnMoving")
+  def igTreeGridColumnMoving_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Boolean,
+    inDom: Unit,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igTreeGridColumnMoving")
+  def igTreeGridColumnMoving_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Unit, inDom: Boolean): Unit = js.native
+  @JSName("igTreeGridColumnMoving")
+  def igTreeGridColumnMoving_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Boolean,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igTreeGridColumnMoving")
+  def igTreeGridColumnMoving_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Unit,
     callback: js.Function
   ): Unit = js.native
   @JSName("igTreeGridColumnMoving")
@@ -45556,18 +45439,13 @@ trait JQuery extends StObject {
   @JSName("igTreeGridFiltering")
   def igTreeGridFiltering_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[_]): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any]): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(
-    methodName: filter,
-    expressions: js.Array[_],
-    updateUI: js.UndefOr[scala.Nothing],
-    addedFromAdvanced: Boolean
-  ): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[_], updateUI: Boolean): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igTreeGridFiltering")
-  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[_], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
+  def igTreeGridFiltering_filter(methodName: filter, expressions: js.Array[js.Any], updateUI: Unit, addedFromAdvanced: Boolean): Unit = js.native
   @JSName("igTreeGridFiltering")
   def igTreeGridFiltering_getFilteringMatchesCount(methodName: getFilteringMatchesCount): Double = js.native
   @JSName("igTreeGridFiltering")
@@ -46010,9 +45888,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridHiding")
   def igTreeGridHiding_hideColumnChooser(methodName: hideColumnChooser): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[_]): Unit = js.native
+  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any]): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[_], callback: js.Function): Unit = js.native
+  def igTreeGridHiding_hideMultiColumns(methodName: hideMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
   @JSName("igTreeGridHiding")
   def igTreeGridHiding_isToRenderButtonReset(methodName: isToRenderButtonReset): Unit = js.native
   @JSName("igTreeGridHiding")
@@ -46034,9 +45912,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGridHiding")
   def igTreeGridHiding_showColumnChooser(methodName: showColumnChooser): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[_]): Unit = js.native
+  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any]): Unit = js.native
   @JSName("igTreeGridHiding")
-  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[_], callback: js.Function): Unit = js.native
+  def igTreeGridHiding_showMultiColumns(methodName: showMultiColumns, columns: js.Array[js.Any], callback: js.Function): Unit = js.native
   
   def igTreeGridMultiColumnHeaders(methodName: String, methodParams: js.Any*): js.Any = js.native
   /**
@@ -46103,7 +45981,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridMultiColumnHeaders")
   def igTreeGridMultiColumnHeaders_expandGroup(methodName: expandGroup, groupKey: String, callback: js.Function): Unit = js.native
   @JSName("igTreeGridMultiColumnHeaders")
-  def igTreeGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[_] = js.native
+  def igTreeGridMultiColumnHeaders_getMultiColumnHeaders(methodName: getMultiColumnHeaders): js.Array[js.Any] = js.native
   @JSName("igTreeGridMultiColumnHeaders")
   def igTreeGridMultiColumnHeaders_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igTreeGridMultiColumnHeaders")
@@ -47066,7 +46944,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_checkStateById(methodName: checkStateById, rowId: js.Object): String = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_checkedRows(methodName: checkedRows): js.Array[_] = js.native
+  def igTreeGridRowSelectors_checkedRows(methodName: checkedRows): js.Array[js.Any] = js.native
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_destroy(methodName: destroy): Unit = js.native
   @JSName("igTreeGridRowSelectors")
@@ -47076,7 +46954,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_option(optionLiteral: option, options: IgTreeGridRowSelectors): JQuery = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_partiallyCheckedRows(methodName: partiallyCheckedRows): js.Array[_] = js.native
+  def igTreeGridRowSelectors_partiallyCheckedRows(methodName: partiallyCheckedRows): js.Array[js.Any] = js.native
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_rsRenderColgroup(methodName: rsRenderColgroup): Unit = js.native
   @JSName("igTreeGridRowSelectors")
@@ -47084,7 +46962,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_toggleCheckStateById(methodName: toggleCheckStateById, rowId: js.Object): Unit = js.native
   @JSName("igTreeGridRowSelectors")
-  def igTreeGridRowSelectors_uncheckedRows(methodName: uncheckedRows): js.Array[_] = js.native
+  def igTreeGridRowSelectors_uncheckedRows(methodName: uncheckedRows): js.Array[js.Any] = js.native
   
   def igTreeGridSelection(methodName: String, methodParams: js.Any*): js.Any = js.native
   /**
@@ -47333,11 +47211,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGridSelection")
   def igTreeGridSelection_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igTreeGridSelection")
-  def igTreeGridSelection_selectedCells(methodName: selectedCells): js.Array[_] = js.native
+  def igTreeGridSelection_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
   @JSName("igTreeGridSelection")
   def igTreeGridSelection_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igTreeGridSelection")
-  def igTreeGridSelection_selectedRows(methodName: selectedRows): js.Array[_] = js.native
+  def igTreeGridSelection_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
   
   def igTreeGridSorting(methodName: String, methodParams: js.Any*): js.Any = js.native
   /**
@@ -47956,7 +47834,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGridSorting")
   def igTreeGridSorting_sortMultiple(methodName: sortMultiple): Unit = js.native
   @JSName("igTreeGridSorting")
-  def igTreeGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[_]): Unit = js.native
+  def igTreeGridSorting_sortMultiple(methodName: sortMultiple, exprs: js.Array[js.Any]): Unit = js.native
   @JSName("igTreeGridSorting")
   def igTreeGridSorting_unsortColumn(methodName: unsortColumn, index: js.Object, header: js.Object): Unit = js.native
   
@@ -48670,7 +48548,7 @@ trait JQuery extends StObject {
     * Gets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
     */
-  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[_] = js.native
+  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers): String | js.Array[js.Any] = js.native
   /**
     * Sets how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
@@ -48678,7 +48556,7 @@ trait JQuery extends StObject {
     * @optionValue New value to be set.
     */
   def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: String): Unit = js.native
-  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[_]): Unit = js.native
+  def igTreeGridUpdating(optionLiteral: option, optionName: startEditTriggers, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * On touch-enabled devices specifies the swipe distance for the delete button to appear.
     *
@@ -48738,11 +48616,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGridUpdating")
   def igTreeGridUpdating_endEdit(methodName: endEdit): Boolean = js.native
   @JSName("igTreeGridUpdating")
-  def igTreeGridUpdating_endEdit(methodName: endEdit, update: js.UndefOr[scala.Nothing], raiseEvents: Boolean): Boolean = js.native
-  @JSName("igTreeGridUpdating")
   def igTreeGridUpdating_endEdit(methodName: endEdit, update: Boolean): Boolean = js.native
   @JSName("igTreeGridUpdating")
   def igTreeGridUpdating_endEdit(methodName: endEdit, update: Boolean, raiseEvents: Boolean): Boolean = js.native
+  @JSName("igTreeGridUpdating")
+  def igTreeGridUpdating_endEdit(methodName: endEdit, update: Unit, raiseEvents: Boolean): Boolean = js.native
   @JSName("igTreeGridUpdating")
   def igTreeGridUpdating_findInvalid(methodName: findInvalid): String = js.native
   @JSName("igTreeGridUpdating")
@@ -48783,11 +48661,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_activeRow(methodName: activeRow): js.Object = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_allFixedRows(methodName: allFixedRows): js.Array[_] = js.native
+  def igTreeGrid_allFixedRows(methodName: allFixedRows): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_allRows(methodName: allRows): js.Array[_] = js.native
+  def igTreeGrid_allRows(methodName: allRows): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_allTransactions(methodName: allTransactions): js.Array[_] = js.native
+  def igTreeGrid_allTransactions(methodName: allTransactions): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_autoSizeColumns(methodName: autoSizeColumns): Unit = js.native
   @JSName("igTreeGrid")
@@ -48799,9 +48677,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_changeRegional(methodName: changeRegional): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_children(methodName: children): js.Array[_] = js.native
+  def igTreeGrid_children(methodName: children): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_childrenWidgets(methodName: childrenWidgets): js.Array[_] = js.native
+  def igTreeGrid_childrenWidgets(methodName: childrenWidgets): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_collapseRow(methodName: collapseRow, row: js.Object): Unit = js.native
   @JSName("igTreeGrid")
@@ -48843,7 +48721,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_fixedRowAt(methodName: fixedRowAt, i: Double): Element = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_fixedRows(methodName: fixedRows): js.Array[_] = js.native
+  def igTreeGrid_fixedRows(methodName: fixedRows): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_fixedTable(methodName: fixedTable): js.Object = js.native
   @JSName("igTreeGrid")
@@ -48879,9 +48757,9 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_id(methodName: id): String = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_immediateChildren(methodName: immediateChildren): js.Array[_] = js.native
+  def igTreeGrid_immediateChildren(methodName: immediateChildren): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[_] = js.native
+  def igTreeGrid_immediateChildrenWidgets(methodName: immediateChildrenWidgets): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_isFixedColumn(methodName: isFixedColumn, colKey: js.Object): Boolean = js.native
   @JSName("igTreeGrid")
@@ -48889,42 +48767,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igTreeGrid")
-  def igTreeGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean
-  ): Unit = js.native
-  @JSName("igTreeGrid")
-  def igTreeGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean,
-    callback: js.Function
-  ): Unit = js.native
-  @JSName("igTreeGrid")
   def igTreeGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean): Unit = js.native
-  @JSName("igTreeGrid")
-  def igTreeGrid_moveColumn(
-    methodName: moveColumn,
-    column: js.Object,
-    target: js.Object,
-    after: Boolean,
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Boolean, inDom: Boolean): Unit = js.native
   @JSName("igTreeGrid")
@@ -48937,15 +48780,44 @@ trait JQuery extends StObject {
     callback: js.Function
   ): Unit = js.native
   @JSName("igTreeGrid")
+  def igTreeGrid_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Boolean,
+    inDom: Unit,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igTreeGrid")
+  def igTreeGrid_moveColumn(methodName: moveColumn, column: js.Object, target: js.Object, after: Unit, inDom: Boolean): Unit = js.native
+  @JSName("igTreeGrid")
+  def igTreeGrid_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Boolean,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igTreeGrid")
+  def igTreeGrid_moveColumn(
+    methodName: moveColumn,
+    column: js.Object,
+    target: js.Object,
+    after: Unit,
+    inDom: Unit,
+    callback: js.Function
+  ): Unit = js.native
+  @JSName("igTreeGrid")
   def igTreeGrid_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_option(optionLiteral: option, options: IgTreeGrid): JQuery = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_pendingTransactions(methodName: pendingTransactions): js.Array[_] = js.native
+  def igTreeGrid_pendingTransactions(methodName: pendingTransactions): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[_]): Unit = js.native
+  def igTreeGrid_renderMultiColumnHeader(methodName: renderMultiColumnHeader, cols: js.Array[js.Any]): Unit = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_renderNewChild(methodName: renderNewChild, rec: js.Object): Unit = js.native
   @JSName("igTreeGrid")
@@ -48957,13 +48829,13 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_resizeContainer(methodName: resizeContainer): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback): js.Array[_] = js.native
+  def igTreeGrid_rollback(methodName: rollback): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback, rowId: js.UndefOr[scala.Nothing], updateUI: Boolean): js.Array[_] = js.native
+  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object): js.Array[_] = js.native
+  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rollback(methodName: rollback, rowId: js.Object, updateUI: Boolean): js.Array[_] = js.native
+  def igTreeGrid_rollback(methodName: rollback, rowId: Unit, updateUI: Boolean): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_rowAt(methodName: rowAt, i: Double): Element = js.native
   @JSName("igTreeGrid")
@@ -48971,7 +48843,7 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_rowById(methodName: rowById, rowId: js.Object, isFixed: Boolean): Element = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_rows(methodName: rows): js.Array[_] = js.native
+  def igTreeGrid_rows(methodName: rows): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_saveChanges(methodName: saveChanges, success: js.Function, error: js.Function): Unit = js.native
   @JSName("igTreeGrid")
@@ -48979,11 +48851,11 @@ trait JQuery extends StObject {
   @JSName("igTreeGrid")
   def igTreeGrid_selectedCell(methodName: selectedCell): js.Object = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_selectedCells(methodName: selectedCells): js.Array[_] = js.native
+  def igTreeGrid_selectedCells(methodName: selectedCells): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_selectedRow(methodName: selectedRow): js.Object = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_selectedRows(methodName: selectedRows): js.Array[_] = js.native
+  def igTreeGrid_selectedRows(methodName: selectedRows): js.Array[js.Any] = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_setColumnTemplate(methodName: setColumnTemplate, col: js.Object, tmpl: String): Unit = js.native
   @JSName("igTreeGrid")
@@ -48997,7 +48869,7 @@ trait JQuery extends StObject {
     notToRender: js.Object
   ): Unit = js.native
   @JSName("igTreeGrid")
-  def igTreeGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[_], removeOldValues: js.Object): Unit = js.native
+  def igTreeGrid_setUnboundValues(methodName: setUnboundValues, key: String, values: js.Array[js.Any], removeOldValues: js.Object): Unit = js.native
   @JSName("igTreeGrid")
   def igTreeGrid_showColumn(methodName: showColumn, column: js.Object, callback: js.Function): Unit = js.native
   @JSName("igTreeGrid")
@@ -49016,11 +48888,11 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_addNode(methodName: addNode, node: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_addNode(methodName: addNode, node: js.Object, parent: js.UndefOr[scala.Nothing], nodeIndex: Double): Unit = js.native
-  @JSName("igTree")
   def igTree_addNode(methodName: addNode, node: js.Object, parent: js.Object): Unit = js.native
   @JSName("igTree")
   def igTree_addNode(methodName: addNode, node: js.Object, parent: js.Object, nodeIndex: Double): Unit = js.native
+  @JSName("igTree")
+  def igTree_addNode(methodName: addNode, node: js.Object, parent: Unit, nodeIndex: Double): Unit = js.native
   @JSName("igTree")
   def igTree_applyChangesToNode(methodName: applyChangesToNode, element: js.Object, data: js.Object): Unit = js.native
   @JSName("igTree")
@@ -49034,11 +48906,11 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_checkState(methodName: checkState, node: js.Object): String = js.native
   @JSName("igTree")
-  def igTree_checkedNodes(methodName: checkedNodes): js.Array[_] = js.native
+  def igTree_checkedNodes(methodName: checkedNodes): js.Array[js.Any] = js.native
   @JSName("igTree")
-  def igTree_children(methodName: children, parent: js.Object): js.Array[_] = js.native
+  def igTree_children(methodName: children, parent: js.Object): js.Array[js.Any] = js.native
   @JSName("igTree")
-  def igTree_childrenByPath(methodName: childrenByPath, path: String): js.Array[_] = js.native
+  def igTree_childrenByPath(methodName: childrenByPath, path: String): js.Array[js.Any] = js.native
   @JSName("igTree")
   def igTree_clearSelection(methodName: clearSelection): Unit = js.native
   @JSName("igTree")
@@ -49060,13 +48932,13 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_expandToNode(methodName: expandToNode, node: js.Object, toSelect: Boolean): Unit = js.native
   @JSName("igTree")
-  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String): js.Array[_] = js.native
+  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String): js.Array[js.Any] = js.native
   @JSName("igTree")
-  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String, parent: js.Object): js.Array[_] = js.native
+  def igTree_findImmediateNodesByText(methodName: findImmediateNodesByText, text: String, parent: js.Object): js.Array[js.Any] = js.native
   @JSName("igTree")
-  def igTree_findNodesByText(methodName: findNodesByText, text: String): js.Array[_] = js.native
+  def igTree_findNodesByText(methodName: findNodesByText, text: String): js.Array[js.Any] = js.native
   @JSName("igTree")
-  def igTree_findNodesByText(methodName: findNodesByText, text: String, parent: js.Object): js.Array[_] = js.native
+  def igTree_findNodesByText(methodName: findNodesByText, text: String, parent: js.Object): js.Array[js.Any] = js.native
   @JSName("igTree")
   def igTree_isChecked(methodName: isChecked, node: js.Object): Boolean = js.native
   @JSName("igTree")
@@ -49096,7 +48968,7 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_partiallyCheckNode(methodName: partiallyCheckNode, nodeObj: js.Object, cascadeDir: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_partiallyCheckedNodes(methodName: partiallyCheckedNodes): js.Array[_] = js.native
+  def igTree_partiallyCheckedNodes(methodName: partiallyCheckedNodes): js.Array[js.Any] = js.native
   @JSName("igTree")
   def igTree_removeAt(methodName: removeAt, path: String): Unit = js.native
   @JSName("igTree")
@@ -49116,25 +48988,25 @@ trait JQuery extends StObject {
   @JSName("igTree")
   def igTree_toggleCheckstate(methodName: toggleCheckstate_, node: js.Object, event: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_transactionLog(methodName: transactionLog): js.Array[_] = js.native
+  def igTree_transactionLog(methodName: transactionLog): js.Array[js.Any] = js.native
   @JSName("igTree")
   def igTree_uncheckNode(methodName: uncheckNode, nodeObj: js.Object, cascadeDir: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_uncheckedNodes(methodName: uncheckedNodes): js.Array[_] = js.native
+  def igTree_uncheckedNodes(methodName: uncheckedNodes): js.Array[js.Any] = js.native
   
   def igUpload(methodName: String, methodParams: js.Any*): js.Any = js.native
   /**
     * Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example ["gif", "jpg", "bmp"].
     *
     */
-  def igUpload(optionLiteral: option, optionName: allowedExtensions): js.Array[_] = js.native
+  def igUpload(optionLiteral: option, optionName: allowedExtensions): js.Array[js.Any] = js.native
   /**
     * Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example ["gif", "jpg", "bmp"].
     *
     *
     * @optionValue New value to be set.
     */
-  def igUpload(optionLiteral: option, optionName: allowedExtensions, optionValue: js.Array[_]): Unit = js.native
+  def igUpload(optionLiteral: option, optionName: allowedExtensions, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Get or set whether the file start upload automatically when it is selected. Default is false.
     *
@@ -49806,7 +49678,7 @@ trait JQuery extends StObject {
   @JSName("igUpload")
   def igUpload_addDataField(methodName: addDataField, formData: js.Object, field: js.Object): Unit = js.native
   @JSName("igUpload")
-  def igUpload_addDataFields(methodName: addDataFields, formData: js.Object, fields: js.Array[_]): Unit = js.native
+  def igUpload_addDataFields(methodName: addDataFields, formData: js.Object, fields: js.Array[js.Any]): Unit = js.native
   @JSName("igUpload")
   def igUpload_cancelAll(methodName: cancelAll): Unit = js.native
   @JSName("igUpload")
@@ -50091,14 +49963,14 @@ trait JQuery extends StObject {
     * Gets/Sets a minimum and/or maximum length of text or number of selected items. Null or 0 values are ignored.
     *
     */
-  def igValidator(optionLiteral: option, optionName: lengthRange): js.Array[_] | js.Object = js.native
+  def igValidator(optionLiteral: option, optionName: lengthRange): js.Array[js.Any] | js.Object = js.native
   /**
     * /Sets a minimum and/or maximum length of text or number of selected items. Null or 0 values are ignored.
     *
     *
     * @optionValue New value to be set.
     */
-  def igValidator(optionLiteral: option, optionName: lengthRange, optionValue: js.Array[_]): Unit = js.native
+  def igValidator(optionLiteral: option, optionName: lengthRange, optionValue: js.Array[js.Any]): Unit = js.native
   def igValidator(optionLiteral: option, optionName: lengthRange, optionValue: js.Object): Unit = js.native
   /**
     * Set/Get the locale setting for the widget.
@@ -50390,14 +50262,14 @@ trait JQuery extends StObject {
     * Gets/Sets a minimum and/or maximum value. Null values are ignored.
     *
     */
-  def igValidator(optionLiteral: option, optionName: valueRange): js.Array[_] | js.Object = js.native
+  def igValidator(optionLiteral: option, optionName: valueRange): js.Array[js.Any] | js.Object = js.native
   /**
     * /Sets a minimum and/or maximum value. Null values are ignored.
     *
     *
     * @optionValue New value to be set.
     */
-  def igValidator(optionLiteral: option, optionName: valueRange, optionValue: js.Array[_]): Unit = js.native
+  def igValidator(optionLiteral: option, optionName: valueRange, optionValue: js.Array[js.Any]): Unit = js.native
   def igValidator(optionLiteral: option, optionName: valueRange, optionValue: js.Object): Unit = js.native
   def igValidator(options: IgValidator): JQuery = js.native
   @JSName("igValidator")
@@ -50411,9 +50283,9 @@ trait JQuery extends StObject {
   @JSName("igValidator")
   def igValidator_destroy(methodName: destroy): Unit = js.native
   @JSName("igValidator")
-  def igValidator_getErrorMessages(methodName: getErrorMessages): js.Array[_] = js.native
+  def igValidator_getErrorMessages(methodName: getErrorMessages): js.Array[js.Any] = js.native
   @JSName("igValidator")
-  def igValidator_getErrorMessages(methodName: getErrorMessages, field: js.Object): js.Array[_] = js.native
+  def igValidator_getErrorMessages(methodName: getErrorMessages, field: js.Object): js.Array[js.Any] = js.native
   @JSName("igValidator")
   def igValidator_hide(methodName: hide): Unit = js.native
   @JSName("igValidator")
@@ -50864,14 +50736,14 @@ trait JQuery extends StObject {
     * Gets/Sets a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.
     *
     */
-  def igVideoPlayer(optionLiteral: option, optionName: sources): js.Array[_] = js.native
+  def igVideoPlayer(optionLiteral: option, optionName: sources): js.Array[js.Any] = js.native
   /**
     * /Sets a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.
     *
     *
     * @optionValue New value to be set.
     */
-  def igVideoPlayer(optionLiteral: option, optionName: sources, optionValue: js.Array[_]): Unit = js.native
+  def igVideoPlayer(optionLiteral: option, optionName: sources, optionValue: js.Array[js.Any]): Unit = js.native
   /**
     * Gets/Sets video title.
     *
@@ -51524,11 +51396,11 @@ trait JQuery extends StObject {
   @JSName("igZoombar")
   def igZoombar_zoom(methodName: zoom): js.Object = js.native
   @JSName("igZoombar")
-  def igZoombar_zoom(methodName: zoom, left: js.UndefOr[scala.Nothing], width: Double): js.Object = js.native
-  @JSName("igZoombar")
   def igZoombar_zoom(methodName: zoom, left: Double): js.Object = js.native
   @JSName("igZoombar")
   def igZoombar_zoom(methodName: zoom, left: Double, width: Double): js.Object = js.native
+  @JSName("igZoombar")
+  def igZoombar_zoom(methodName: zoom, left: Unit, width: Double): js.Object = js.native
   
   def mouseWrapper(methodName: String, methodParams: js.Any*): js.Any = js.native
   def mouseWrapper(optionLiteral: option, optionName: cancel): String = js.native

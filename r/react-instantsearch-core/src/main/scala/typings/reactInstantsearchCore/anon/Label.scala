@@ -4,15 +4,13 @@ import typings.reactInstantsearchCore.mod.RefinementValue
 import typings.reactInstantsearchCore.mod.SearchState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var value: RefinementValue = js.native
+  var value: RefinementValue
 }
 object Label {
   

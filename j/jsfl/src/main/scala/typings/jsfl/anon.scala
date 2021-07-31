@@ -2,21 +2,19 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Keyframe extends StObject {
     
-    var keyframe: FlashFrame = js.native
+    var keyframe: FlashFrame
     
-    var layer: FlashLayer = js.native
+    var layer: FlashLayer
     
-    var parent: js.Any = js.native
+    var parent: js.Any
     
-    var timeline: FlashTimeline = js.native
+    var timeline: FlashTimeline
   }
   object Keyframe {
     

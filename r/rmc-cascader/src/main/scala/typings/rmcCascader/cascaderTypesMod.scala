@@ -3,7 +3,6 @@ package typings.rmcCascader
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cascaderTypesMod {
@@ -12,14 +11,13 @@ object cascaderTypesMod {
   
   type CascaderValue = js.Array[CascaderOneValue]
   
-  @js.native
   trait ICascaderDataItem extends StObject {
     
-    var children: js.UndefOr[js.Array[ICascaderDataItem]] = js.native
+    var children: js.UndefOr[js.Array[ICascaderDataItem]] = js.undefined
     
-    var label: ReactNode = js.native
+    var label: ReactNode
     
-    var value: CascaderOneValue = js.native
+    var value: CascaderOneValue
   }
   object ICascaderDataItem {
     
@@ -52,40 +50,39 @@ object cascaderTypesMod {
     }
   }
   
-  @js.native
   trait ICascaderProps extends StObject {
     
     /** web only */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
-    var data: js.Array[ICascaderDataItem] = js.native
+    var data: js.Array[ICascaderDataItem]
     
-    var defaultValue: js.UndefOr[CascaderValue] = js.native
+    var defaultValue: js.UndefOr[CascaderValue] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var indicatorStyle: js.UndefOr[js.Object] = js.native
+    var indicatorStyle: js.UndefOr[js.Object] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.native
-    
-    /** web only */
-    var onScrollChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.native
-    
-    var pickerItemStyle: js.UndefOr[js.Object] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
     
     /** web only */
-    var pickerPrefixCls: js.UndefOr[String] = js.native
+    var onScrollChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
+    
+    var pickerItemStyle: js.UndefOr[js.Object] = js.undefined
     
     /** web only */
-    var prefixCls: js.UndefOr[String] = js.native
+    var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    var rootNativeProps: js.UndefOr[js.Object] = js.native
+    /** web only */
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var rootNativeProps: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[CascaderValue] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
+    
+    var value: js.UndefOr[CascaderValue] = js.undefined
   }
   object ICascaderProps {
     

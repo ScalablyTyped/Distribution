@@ -5,7 +5,6 @@ import typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1.Optio
 import typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1.Proximitybeacon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

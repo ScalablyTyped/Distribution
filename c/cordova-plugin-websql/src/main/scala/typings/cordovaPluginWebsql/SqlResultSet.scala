@@ -2,17 +2,15 @@ package typings.cordovaPluginWebsql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlResultSet extends StObject {
   
-  var insertId: Double = js.native
+  var insertId: Double
   
-  var rows: SqlResultSetRowList = js.native
+  var rows: SqlResultSetRowList
   
-  var rowsAffected: Double = js.native
+  var rowsAffected: Double
 }
 object SqlResultSet {
   

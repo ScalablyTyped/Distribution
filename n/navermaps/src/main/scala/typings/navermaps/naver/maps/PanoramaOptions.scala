@@ -2,41 +2,39 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaOptions extends StObject {
   
-  var aroundControl: Boolean = js.native
+  var aroundControl: Boolean
   
-  var aroundControlOptions: AroundControlOptions = js.native
+  var aroundControlOptions: AroundControlOptions
   
-  var logoControl: Boolean = js.native
+  var logoControl: Boolean
   
-  var logoControlOptions: LogoControlOptions = js.native
+  var logoControlOptions: LogoControlOptions
   
-  var maxScale: Double = js.native
+  var maxScale: Double
   
-  var maxZoom: Double = js.native
+  var maxZoom: Double
   
-  var minScale: Double = js.native
+  var minScale: Double
   
-  var minZoom: Double = js.native
+  var minZoom: Double
   
-  var panoId: String = js.native
+  var panoId: String
   
-  var position: LatLng | LatLngLiteral = js.native
+  var position: LatLng | LatLngLiteral
   
-  var pov: PanoramaPov = js.native
+  var pov: PanoramaPov
   
-  var size: Size | SizeLiteral = js.native
+  var size: Size | SizeLiteral
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var zoomControl: Boolean = js.native
+  var zoomControl: Boolean
   
-  var zoomControlOptions: ZoomControlOptions = js.native
+  var zoomControlOptions: ZoomControlOptions
 }
 object PanoramaOptions {
   

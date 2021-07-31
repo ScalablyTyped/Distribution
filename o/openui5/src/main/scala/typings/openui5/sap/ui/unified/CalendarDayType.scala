@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,35 +14,57 @@ sealed trait CalendarDayType extends StObject
 object CalendarDayType extends StObject {
   
   @js.native
-  sealed trait None extends CalendarDayType
+  sealed trait None
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type01 extends CalendarDayType
+  sealed trait Type01
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type02 extends CalendarDayType
+  sealed trait Type02
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type03 extends CalendarDayType
+  sealed trait Type03
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type04 extends CalendarDayType
+  sealed trait Type04
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type05 extends CalendarDayType
+  sealed trait Type05
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type06 extends CalendarDayType
+  sealed trait Type06
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type07 extends CalendarDayType
+  sealed trait Type07
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type08 extends CalendarDayType
+  sealed trait Type08
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type09 extends CalendarDayType
+  sealed trait Type09
+    extends StObject
+       with CalendarDayType
   
   @js.native
-  sealed trait Type10 extends CalendarDayType
+  sealed trait Type10
+    extends StObject
+       with CalendarDayType
 }

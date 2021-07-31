@@ -3,10 +3,13 @@ package typings.reactLoadable
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackMod {
+  
+  @JSImport("react-loadable/webpack", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("react-loadable/webpack", "ReactLoadablePlugin")
@@ -15,26 +18,24 @@ object webpackMod {
     def this(opts: ReactLoadablePluginOptions) = this()
   }
   
-  @JSImport("react-loadable/webpack", "getBundles")
-  @js.native
-  def getBundles(manifest: Manifest, moduleIds: js.Array[String]): js.Array[Bundle] = js.native
+  @scala.inline
+  def getBundles(manifest: Manifest, moduleIds: js.Array[String]): js.Array[Bundle] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundles")(manifest.asInstanceOf[js.Any], moduleIds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bundle]]
   
-  @js.native
   trait Bundle extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String | Null = js.native
+    var name: String | Null
     
-    var publicPath: String = js.native
+    var publicPath: String
   }
   object Bundle {
     
     @scala.inline
     def apply(file: String, id: String, publicPath: String): Bundle = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any], name = null)
       __obj.asInstanceOf[Bundle]
     }
     
@@ -60,10 +61,9 @@ object webpackMod {
   
   type Manifest = StringDictionary[js.Array[Bundle]]
   
-  @js.native
   trait ReactLoadablePluginOptions extends StObject {
     
-    var filename: String = js.native
+    var filename: String
   }
   object ReactLoadablePluginOptions {
     

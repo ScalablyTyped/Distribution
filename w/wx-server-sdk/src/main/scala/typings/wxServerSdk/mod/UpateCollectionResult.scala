@@ -3,13 +3,11 @@ package typings.wxServerSdk.mod
 import typings.wxServerSdk.anon.Updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpateCollectionResult extends StObject {
   
-  var stats: Updated = js.native
+  var stats: Updated
 }
 object UpateCollectionResult {
   

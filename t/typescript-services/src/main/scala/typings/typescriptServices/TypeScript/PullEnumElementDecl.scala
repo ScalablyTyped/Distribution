@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PullEnumElementDecl extends NormalPullDecl {
+trait PullEnumElementDecl
+  extends StObject
+     with NormalPullDecl {
   
-  var constantValue: Double = js.native
+  var constantValue: Double
 }
 object PullEnumElementDecl {
   

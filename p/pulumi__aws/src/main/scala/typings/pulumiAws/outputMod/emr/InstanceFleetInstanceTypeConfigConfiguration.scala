@@ -3,21 +3,19 @@ package typings.pulumiAws.outputMod.emr
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceFleetInstanceTypeConfigConfiguration extends StObject {
   
   /**
     * The classification within a configuration.
     */
-  var classification: js.UndefOr[String] = js.native
+  var classification: js.UndefOr[String] = js.undefined
   
   /**
     * A map of properties specified within a configuration classification
     */
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object InstanceFleetInstanceTypeConfigConfiguration {
   

@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrawlerJdbcTarget extends StObject {
   
   /**
     * The name of the connection to use to connect to the JDBC target.
     */
-  var connectionName: Input[String] = js.native
+  var connectionName: Input[String]
   
   /**
     * A list of glob patterns used to exclude from the crawl.
     */
-  var exclusions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var exclusions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * The path of the JDBC target.
     */
-  var path: Input[String] = js.native
+  var path: Input[String]
 }
 object CrawlerJdbcTarget {
   

@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2SignInValue extends StObject {
   
   /**
     * The status of the sign in requested by the app.
     */
-  var status: js.UndefOr[GoogleActionsV2SignInValueStatus] = js.native
+  var status: js.UndefOr[GoogleActionsV2SignInValueStatus] = js.undefined
 }
 object GoogleActionsV2SignInValue {
   

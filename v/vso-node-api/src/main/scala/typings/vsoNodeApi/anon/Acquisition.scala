@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acquisition extends StObject {
   
-  var acquisition: scala.Double = js.native
+  var acquisition: scala.Double
   
-  var install: scala.Double = js.native
+  var install: scala.Double
   
-  var other: scala.Double = js.native
+  var other: scala.Double
   
-  var review: scala.Double = js.native
+  var review: scala.Double
   
-  var sales: scala.Double = js.native
+  var sales: scala.Double
   
-  var uninstall: scala.Double = js.native
+  var uninstall: scala.Double
 }
 object Acquisition {
   

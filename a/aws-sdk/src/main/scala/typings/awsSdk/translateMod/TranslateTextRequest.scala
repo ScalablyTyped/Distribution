@@ -2,31 +2,29 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateTextRequest extends StObject {
   
   /**
     * The language code for the language of the source text. The language must be a language supported by Amazon Translate. For a list of language codes, see what-is-languages. To have Amazon Translate determine the source language of your text, you can specify auto in the SourceLanguageCode field. If you specify auto, Amazon Translate will call Amazon Comprehend to determine the source language.
     */
-  var SourceLanguageCode: LanguageCodeString = js.native
+  var SourceLanguageCode: LanguageCodeString
   
   /**
     * The language code requested for the language of the target text. The language must be a language supported by Amazon Translate.
     */
-  var TargetLanguageCode: LanguageCodeString = js.native
+  var TargetLanguageCode: LanguageCodeString
   
   /**
     * The name of the terminology list file to be used in the TranslateText request. You can use 1 terminology list at most in a TranslateText request. Terminology lists can contain a maximum of 256 terms.
     */
-  var TerminologyNames: js.UndefOr[ResourceNameList] = js.native
+  var TerminologyNames: js.UndefOr[ResourceNameList] = js.undefined
   
   /**
     * The text to translate. The text string can be a maximum of 5,000 bytes long. Depending on your character set, this may be fewer than 5,000 characters.
     */
-  var Text: BoundedLengthString = js.native
+  var Text: BoundedLengthString
 }
 object TranslateTextRequest {
   

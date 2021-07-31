@@ -2,29 +2,27 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var notification: js.UndefOr[Boolean] = js.native
+  var notification: js.UndefOr[Boolean] = js.undefined
   
-  var replyMarkup: js.UndefOr[js.Any] = js.native
+  var replyMarkup: js.UndefOr[js.Any] = js.undefined
   
-  var replyToMessage: js.UndefOr[Double] = js.native
+  var replyToMessage: js.UndefOr[Double] = js.undefined
   
-  var serverDownload: js.UndefOr[Boolean] = js.native
+  var serverDownload: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Height {
   

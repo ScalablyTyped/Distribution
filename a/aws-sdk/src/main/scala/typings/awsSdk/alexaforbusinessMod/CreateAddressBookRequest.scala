@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAddressBookRequest extends StObject {
   
   /**
     * A unique, user-specified identifier for the request that ensures idempotency.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
     * The description of the address book.
     */
-  var Description: js.UndefOr[AddressBookDescription] = js.native
+  var Description: js.UndefOr[AddressBookDescription] = js.undefined
   
   /**
     * The name of the address book.
     */
-  var Name: AddressBookName = js.native
+  var Name: AddressBookName
 }
 object CreateAddressBookRequest {
   

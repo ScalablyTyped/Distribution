@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasets {
@@ -41,9 +40,8 @@ object datasets {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSet.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.datasetsMod.datasets.DataSet = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.datasetsMod.datasets.DataSet = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSet]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSet.structureTypeName")
@@ -85,9 +83,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetAccess.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess]
     
     /**
       * Creates and returns a new DataSetAccess instance in the SDK and on the server.
@@ -95,9 +92,8 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetAccess.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetAccess.structureTypeName")
@@ -139,9 +135,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetColumn.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn]
     
     /**
       * Creates and returns a new DataSetColumn instance in the SDK and on the server.
@@ -149,9 +144,8 @@ object datasets {
       * of the parent JavaDataSetSource element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetColumn.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource): typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource): typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetColumn.structureTypeName")
@@ -193,9 +187,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetConstraintAccess.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess]
     
     /**
       * Creates and returns a new DataSetConstraintAccess instance in the SDK and on the server.
@@ -203,9 +196,8 @@ object datasets {
       * of the parent DataSetParameterAccess element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetConstraintAccess.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetConstraintAccess.structureTypeName")
@@ -247,9 +239,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetDateTimeConstraint.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint]
     
     /**
       * Creates and returns a new DataSetDateTimeConstraint instance in the SDK and on the server.
@@ -257,9 +248,8 @@ object datasets {
       * of the parent DataSetParameter element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetDateTimeConstraint.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetDateTimeConstraint.structureTypeName")
@@ -301,9 +291,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetModuleRoleAccess.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess]
     
     /**
       * Creates and returns a new DataSetModuleRoleAccess instance in the SDK and on the server.
@@ -311,9 +300,8 @@ object datasets {
       * of the parent DataSetAccess element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetModuleRoleAccess.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetModuleRoleAccess.structureTypeName")
@@ -355,9 +343,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetNumericConstraint.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint]
     
     /**
       * Creates and returns a new DataSetNumericConstraint instance in the SDK and on the server.
@@ -365,9 +352,8 @@ object datasets {
       * of the parent DataSetParameter element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetNumericConstraint.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetNumericConstraint.structureTypeName")
@@ -409,9 +395,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetObjectConstraint.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint]
     
     /**
       * Creates and returns a new DataSetObjectConstraint instance in the SDK and on the server.
@@ -419,9 +404,8 @@ object datasets {
       * of the parent DataSetParameter element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetObjectConstraint.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetObjectConstraint.structureTypeName")
@@ -463,9 +447,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetParameter.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter]
     
     /**
       * Creates and returns a new DataSetParameter instance in the SDK and on the server.
@@ -473,9 +456,8 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetParameter.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetParameter.structureTypeName")
@@ -517,9 +499,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetParameterAccess.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess]
     
     /**
       * Creates and returns a new DataSetParameterAccess instance in the SDK and on the server.
@@ -527,9 +508,8 @@ object datasets {
       * of the parent DataSetModuleRoleAccess element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetParameterAccess.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.DataSetParameterAccess.structureTypeName")
@@ -749,9 +729,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.JavaDataSetSource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource]
     
     /**
       * Creates and returns a new JavaDataSetSource instance in the SDK and on the server.
@@ -759,9 +738,8 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.JavaDataSetSource.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.JavaDataSetSource.structureTypeName")
@@ -803,9 +781,8 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.OqlDataSetSource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource]
     
     /**
       * Creates and returns a new OqlDataSetSource instance in the SDK and on the server.
@@ -813,9 +790,8 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.OqlDataSetSource.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "datasets.OqlDataSetSource.structureTypeName")

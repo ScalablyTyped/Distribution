@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceStatus extends StObject {
   
   /**
     * The current state of the instance.
     */
-  var State: js.UndefOr[InstanceState] = js.native
+  var State: js.UndefOr[InstanceState] = js.undefined
   
   /**
     * The details of the status change reason for the instance.
     */
-  var StateChangeReason: js.UndefOr[InstanceStateChangeReason] = js.native
+  var StateChangeReason: js.UndefOr[InstanceStateChangeReason] = js.undefined
   
   /**
     * The timeline of the instance status over time.
     */
-  var Timeline: js.UndefOr[InstanceTimeline] = js.native
+  var Timeline: js.UndefOr[InstanceTimeline] = js.undefined
 }
 object InstanceStatus {
   

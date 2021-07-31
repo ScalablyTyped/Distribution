@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SshScript extends StObject {
   
   /** The ssh configuration script. */
-  var script: js.UndefOr[String] = js.native
+  var script: js.UndefOr[String] = js.undefined
 }
 object SshScript {
   

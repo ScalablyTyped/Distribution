@@ -9,28 +9,27 @@ import typings.mdast.mdastNumbers.`6`
 import typings.mdast.mdastStrings.heading
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Heading
-  extends Parent
+  extends StObject
+     with Parent
      with BlockContent {
   
   @JSName("children")
-  var children_Heading: js.Array[PhrasingContent] = js.native
+  var children_Heading: js.Array[PhrasingContent]
   
-  var depth: `1` | `2` | `3` | `4` | `5` | `6` = js.native
+  var depth: `1` | `2` | `3` | `4` | `5` | `6`
   
   @JSName("type")
-  var type_Heading: heading = js.native
+  var type_Heading: heading
 }
 object Heading {
   
   @scala.inline
-  def apply(children: js.Array[PhrasingContent], depth: `1` | `2` | `3` | `4` | `5` | `6`, `type`: heading): Heading = {
+  def apply(children: js.Array[PhrasingContent], depth: `1` | `2` | `3` | `4` | `5` | `6`): Heading = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("heading")
     __obj.asInstanceOf[Heading]
   }
   

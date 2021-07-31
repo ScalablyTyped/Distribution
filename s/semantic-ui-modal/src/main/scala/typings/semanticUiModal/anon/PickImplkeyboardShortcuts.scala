@@ -2,14 +2,12 @@ package typings.semanticUiModal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-modal.SemanticUI.ModalSettings._Impl, 'keyboardShortcuts'> */
-@js.native
 trait PickImplkeyboardShortcuts extends StObject {
   
-  var keyboardShortcuts: Boolean = js.native
+  var keyboardShortcuts: Boolean
 }
 object PickImplkeyboardShortcuts {
   

@@ -2,21 +2,19 @@ package typings.wechatMiniprogram.ICloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTempFileURLResultItem extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var fileID: String = js.native
+  var fileID: String
   
-  var maxAge: Double = js.native
+  var maxAge: Double
   
-  var status: Double = js.native
+  var status: Double
   
-  var tempFileURL: String = js.native
+  var tempFileURL: String
 }
 object GetTempFileURLResultItem {
   

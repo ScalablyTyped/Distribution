@@ -3,19 +3,19 @@ package typings.reactNativeSvgCharts.mod
 import typings.reactNativeSvgCharts.anon.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YAxisProps[T] extends AxisProps[T] {
+trait YAxisProps[T]
+  extends StObject
+     with AxisProps[T] {
   
-  var contentInset: js.UndefOr[Top] = js.native
+  var contentInset: js.UndefOr[Top] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var yAccessor: js.UndefOr[AccessorFunction[T, _]] = js.native
+  var yAccessor: js.UndefOr[AccessorFunction[T, js.Any]] = js.undefined
 }
 object YAxisProps {
   
@@ -26,7 +26,7 @@ object YAxisProps {
   }
   
   @scala.inline
-  implicit class YAxisPropsMutableBuilder[Self <: YAxisProps[_], T] (val x: Self with YAxisProps[T]) extends AnyVal {
+  implicit class YAxisPropsMutableBuilder[Self <: YAxisProps[?], T] (val x: Self & YAxisProps[T]) extends AnyVal {
     
     @scala.inline
     def setContentInset(value: Top): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object YAxisProps {
     def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setYAccessor(value: /* props */ AccessorFunctionProps[T] => _): Self = StObject.set(x, "yAccessor", js.Any.fromFunction1(value))
+    def setYAccessor(value: /* props */ AccessorFunctionProps[T] => js.Any): Self = StObject.set(x, "yAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
     def setYAccessorUndefined: Self = StObject.set(x, "yAccessor", js.undefined)

@@ -3,17 +3,17 @@ package typings.nodeSass
 import typings.nodeSass.mod._ImporterReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Contents extends _ImporterReturnType {
+  trait Contents
+    extends StObject
+       with _ImporterReturnType {
     
-    var contents: String = js.native
+    var contents: String
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
   }
   object Contents {
     
@@ -37,18 +37,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Duration extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var end: Double = js.native
+    var end: Double
     
-    var entry: String = js.native
+    var entry: String
     
-    var includedFiles: js.Array[String] = js.native
+    var includedFiles: js.Array[String]
     
-    var start: Double = js.native
+    var start: Double
   }
   object Duration {
     
@@ -81,10 +80,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait File extends _ImporterReturnType {
+  trait File
+    extends StObject
+       with _ImporterReturnType {
     
-    var file: String = js.native
+    var file: String
   }
   object File {
     

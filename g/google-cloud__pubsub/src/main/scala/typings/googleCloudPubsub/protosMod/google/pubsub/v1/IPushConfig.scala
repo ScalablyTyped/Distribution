@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.IOidcToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PushConfig. */
-@js.native
 trait IPushConfig extends StObject {
   
   /** PushConfig attributes */
-  var attributes: js.UndefOr[StringDictionary[String] | Null] = js.native
+  var attributes: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /** PushConfig oidcToken */
-  var oidcToken: js.UndefOr[IOidcToken | Null] = js.native
+  var oidcToken: js.UndefOr[IOidcToken | Null] = js.undefined
   
   /** PushConfig pushEndpoint */
-  var pushEndpoint: js.UndefOr[String | Null] = js.native
+  var pushEndpoint: js.UndefOr[String | Null] = js.undefined
 }
 object IPushConfig {
   

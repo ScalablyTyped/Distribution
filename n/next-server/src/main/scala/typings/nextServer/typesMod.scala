@@ -4,19 +4,17 @@ import typings.nextServer.anon.BodyParser
 import typings.nextServer.nextServerStrings.hybrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait PageConfig extends StObject {
     
-    var amp: js.UndefOr[Boolean | hybrid] = js.native
+    var amp: js.UndefOr[Boolean | hybrid] = js.undefined
     
-    var api: js.UndefOr[BodyParser] = js.native
+    var api: js.UndefOr[BodyParser] = js.undefined
     
-    var experimentalPrerender: js.UndefOr[Boolean] = js.native
+    var experimentalPrerender: js.UndefOr[Boolean] = js.undefined
   }
   object PageConfig {
     

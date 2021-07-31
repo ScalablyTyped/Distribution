@@ -6,189 +6,72 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.lossOpsUtilsMod.Reduction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logLossMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", JSImport.Namespace)
   @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Unit, epsilon: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: T,
-    predictions: T,
-    weights: js.UndefOr[TensorLike],
-    epsilon: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, weights: js.UndefOr[TensorLike], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, weights: js.UndefOr[TensorLike], epsilon: Double, reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: T,
-    predictions: T,
-    weights: Tensor[Rank],
-    epsilon: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, weights: Tensor[Rank], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, weights: Tensor[Rank], epsilon: Double, reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: T,
-    predictions: TensorLike,
-    weights: js.UndefOr[TensorLike],
-    epsilon: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, weights: js.UndefOr[TensorLike], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: T,
-    predictions: TensorLike,
-    weights: js.UndefOr[TensorLike],
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
+    weights: Unit,
     epsilon: Double,
     reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: T,
-    predictions: TensorLike,
-    weights: Tensor[Rank],
-    epsilon: js.UndefOr[scala.Nothing],
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
+    weights: Unit,
+    epsilon: Unit,
     reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, weights: Tensor[Rank], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, weights: Tensor[Rank], epsilon: Double, reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Tensor[Rank], epsilon: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: T,
-    weights: js.UndefOr[TensorLike],
-    epsilon: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, weights: js.UndefOr[TensorLike], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: T,
-    weights: js.UndefOr[TensorLike],
-    epsilon: Double,
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: T,
-    weights: Tensor[Rank],
-    epsilon: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, weights: Tensor[Rank], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, weights: Tensor[Rank], epsilon: Double, reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: TensorLike,
-    weights: js.UndefOr[TensorLike],
-    epsilon: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: js.UndefOr[TensorLike], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: TensorLike,
-    weights: js.UndefOr[TensorLike],
-    epsilon: Double,
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: TensorLike,
-    weights: Tensor[Rank],
-    epsilon: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: Tensor[Rank], epsilon: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: TensorLike,
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
     weights: Tensor[Rank],
     epsilon: Double,
     reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/log_loss", "logLoss")
-  @js.native
-  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
+    weights: Tensor[Rank],
+    epsilon: Unit,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: TensorLike, epsilon: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
+    weights: TensorLike,
+    epsilon: Double,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
+    weights: TensorLike,
+    epsilon: Unit,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
 }

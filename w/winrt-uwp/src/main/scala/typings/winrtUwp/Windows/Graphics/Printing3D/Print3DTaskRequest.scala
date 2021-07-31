@@ -2,11 +2,9 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3D print job request. */
-@js.native
 trait Print3DTaskRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait Print3DTaskRequest extends StObject {
     * @param handler The callback for the source of the print job request.
     * @return The 3D print job.
     */
-  def createTask(title: String, printerId: String, handler: Print3DTaskSourceRequestedHandler): Print3DTask = js.native
+  def createTask(title: String, printerId: String, handler: Print3DTaskSourceRequestedHandler): Print3DTask
 }
 object Print3DTaskRequest {
   

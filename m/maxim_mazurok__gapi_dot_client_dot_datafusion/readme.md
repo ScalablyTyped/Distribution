@@ -10,9 +10,9 @@ TypeScript typings for Cloud Data Fusion API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.datafusion |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 547 |
+| # downloads        | 777 |
 | # stars            | 0 |
 
 ## Links

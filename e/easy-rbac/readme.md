@@ -12,7 +12,7 @@ RBAC implementation for Node.js
 | Keywords           | rbac |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 73715 |
+| # downloads        | 90573 |
 | # stars            | 5 |
 
 ## Links

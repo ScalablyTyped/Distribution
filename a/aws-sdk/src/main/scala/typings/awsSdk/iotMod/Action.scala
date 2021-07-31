@@ -2,111 +2,109 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /**
     * Change the state of a CloudWatch alarm.
     */
-  var cloudwatchAlarm: js.UndefOr[CloudwatchAlarmAction] = js.native
+  var cloudwatchAlarm: js.UndefOr[CloudwatchAlarmAction] = js.undefined
   
   /**
     * Send data to CloudWatch Logs.
     */
-  var cloudwatchLogs: js.UndefOr[CloudwatchLogsAction] = js.native
+  var cloudwatchLogs: js.UndefOr[CloudwatchLogsAction] = js.undefined
   
   /**
     * Capture a CloudWatch metric.
     */
-  var cloudwatchMetric: js.UndefOr[CloudwatchMetricAction] = js.native
+  var cloudwatchMetric: js.UndefOr[CloudwatchMetricAction] = js.undefined
   
   /**
     * Write to a DynamoDB table.
     */
-  var dynamoDB: js.UndefOr[DynamoDBAction] = js.native
+  var dynamoDB: js.UndefOr[DynamoDBAction] = js.undefined
   
   /**
     * Write to a DynamoDB table. This is a new version of the DynamoDB action. It allows you to write each attribute in an MQTT message payload into a separate DynamoDB column.
     */
-  var dynamoDBv2: js.UndefOr[DynamoDBv2Action] = js.native
+  var dynamoDBv2: js.UndefOr[DynamoDBv2Action] = js.undefined
   
   /**
     * Write data to an Amazon Elasticsearch Service domain.
     */
-  var elasticsearch: js.UndefOr[ElasticsearchAction] = js.native
+  var elasticsearch: js.UndefOr[ElasticsearchAction] = js.undefined
   
   /**
     * Write to an Amazon Kinesis Firehose stream.
     */
-  var firehose: js.UndefOr[FirehoseAction] = js.native
+  var firehose: js.UndefOr[FirehoseAction] = js.undefined
   
   /**
     * Send data to an HTTPS endpoint.
     */
-  var http: js.UndefOr[HttpAction] = js.native
+  var http: js.UndefOr[HttpAction] = js.undefined
   
   /**
     * Sends message data to an AWS IoT Analytics channel.
     */
-  var iotAnalytics: js.UndefOr[IotAnalyticsAction] = js.native
+  var iotAnalytics: js.UndefOr[IotAnalyticsAction] = js.undefined
   
   /**
     * Sends an input to an AWS IoT Events detector.
     */
-  var iotEvents: js.UndefOr[IotEventsAction] = js.native
+  var iotEvents: js.UndefOr[IotEventsAction] = js.undefined
   
   /**
     * Sends data from the MQTT message that triggered the rule to AWS IoT SiteWise asset properties.
     */
-  var iotSiteWise: js.UndefOr[IotSiteWiseAction] = js.native
+  var iotSiteWise: js.UndefOr[IotSiteWiseAction] = js.undefined
   
   /**
     * Write data to an Amazon Kinesis stream.
     */
-  var kinesis: js.UndefOr[KinesisAction] = js.native
+  var kinesis: js.UndefOr[KinesisAction] = js.undefined
   
   /**
     * Invoke a Lambda function.
     */
-  var lambda: js.UndefOr[LambdaAction] = js.native
+  var lambda: js.UndefOr[LambdaAction] = js.undefined
   
   /**
     * Publish to another MQTT topic.
     */
-  var republish: js.UndefOr[RepublishAction] = js.native
+  var republish: js.UndefOr[RepublishAction] = js.undefined
   
   /**
     * Write to an Amazon S3 bucket.
     */
-  var s3: js.UndefOr[S3Action] = js.native
+  var s3: js.UndefOr[S3Action] = js.undefined
   
   /**
     * Send a message to a Salesforce IoT Cloud Input Stream.
     */
-  var salesforce: js.UndefOr[SalesforceAction] = js.native
+  var salesforce: js.UndefOr[SalesforceAction] = js.undefined
   
   /**
     * Publish to an Amazon SNS topic.
     */
-  var sns: js.UndefOr[SnsAction] = js.native
+  var sns: js.UndefOr[SnsAction] = js.undefined
   
   /**
     * Publish to an Amazon SQS queue.
     */
-  var sqs: js.UndefOr[SqsAction] = js.native
+  var sqs: js.UndefOr[SqsAction] = js.undefined
   
   /**
     * Starts execution of a Step Functions state machine.
     */
-  var stepFunctions: js.UndefOr[StepFunctionsAction] = js.native
+  var stepFunctions: js.UndefOr[StepFunctionsAction] = js.undefined
   
   /**
     * The Timestream rule action writes attributes (measures) from an MQTT message into an Amazon Timestream table. For more information, see the Timestream topic rule action documentation.
     */
-  var timestream: js.UndefOr[TimestreamAction] = js.native
+  var timestream: js.UndefOr[TimestreamAction] = js.undefined
 }
 object Action {
   

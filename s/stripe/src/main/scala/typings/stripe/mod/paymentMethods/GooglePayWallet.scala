@@ -3,22 +3,21 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.stripeStrings.google_pay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePayWallet
-  extends TokenizedWallet
+  extends StObject
+     with TokenizedWallet
      with CardWallet {
   
-  var `type`: google_pay = js.native
+  var `type`: google_pay
 }
 object GooglePayWallet {
   
   @scala.inline
-  def apply(`type`: google_pay): GooglePayWallet = {
+  def apply(): GooglePayWallet = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("google_pay")
     __obj.asInstanceOf[GooglePayWallet]
   }
   

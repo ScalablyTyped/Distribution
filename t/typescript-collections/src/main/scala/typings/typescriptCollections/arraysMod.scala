@@ -4,66 +4,53 @@ import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arraysMod {
   
-  @JSImport("typescript-collections/dist/lib/arrays", "contains")
+  @JSImport("typescript-collections/dist/lib/arrays", JSImport.Namespace)
   @js.native
-  def contains[T](array: js.Array[T], item: T): Boolean = js.native
-  @JSImport("typescript-collections/dist/lib/arrays", "contains")
-  @js.native
-  def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typescript-collections/dist/lib/arrays", "copy")
-  @js.native
-  def copy[T](array: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def contains[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "equals")
-  @js.native
-  def equals_[T](array1: js.Array[T], array2: js.Array[T]): Boolean = js.native
-  @JSImport("typescript-collections/dist/lib/arrays", "equals")
-  @js.native
-  def equals_[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = js.native
+  @scala.inline
+  def copy[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "forEach")
-  @js.native
-  def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = js.native
+  @scala.inline
+  def equals_[T](array1: js.Array[T], array2: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "frequency")
-  @js.native
-  def frequency[T](array: js.Array[T], item: T): Double = js.native
-  @JSImport("typescript-collections/dist/lib/arrays", "frequency")
-  @js.native
-  def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+  @scala.inline
+  def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "indexOf")
-  @js.native
-  def indexOf[T](array: js.Array[T], item: T): Double = js.native
-  @JSImport("typescript-collections/dist/lib/arrays", "indexOf")
-  @js.native
-  def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+  @scala.inline
+  def frequency[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "lastIndexOf")
-  @js.native
-  def lastIndexOf[T](array: js.Array[T], item: T): Double = js.native
-  @JSImport("typescript-collections/dist/lib/arrays", "lastIndexOf")
-  @js.native
-  def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
+  @scala.inline
+  def indexOf[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "remove")
-  @js.native
-  def remove[T](array: js.Array[T], item: T): Boolean = js.native
-  @JSImport("typescript-collections/dist/lib/arrays", "remove")
-  @js.native
-  def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
+  @scala.inline
+  def lastIndexOf[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "swap")
-  @js.native
-  def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = js.native
+  @scala.inline
+  def remove[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("typescript-collections/dist/lib/arrays", "toString")
-  @js.native
-  def toString_[T](array: js.Array[T]): String = js.native
+  @scala.inline
+  def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(array.asInstanceOf[js.Any], i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def toString_[T](array: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(array.asInstanceOf[js.Any]).asInstanceOf[String]
 }

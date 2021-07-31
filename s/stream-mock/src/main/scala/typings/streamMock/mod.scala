@@ -7,7 +7,6 @@ import typings.std.ArrayLike
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,10 +15,10 @@ object mod {
   @js.native
   class BufferReadableMock protected ()
     extends typings.streamMock.readableMod.BufferReadableMock {
-    def this(source: ArrayLike[_]) = this()
-    def this(source: Iterable[_]) = this()
-    def this(source: ArrayLike[_], options: ReadableOptions) = this()
-    def this(source: Iterable[_], options: ReadableOptions) = this()
+    def this(source: ArrayLike[js.Any]) = this()
+    def this(source: Iterable[js.Any]) = this()
+    def this(source: ArrayLike[js.Any], options: ReadableOptions) = this()
+    def this(source: Iterable[js.Any], options: ReadableOptions) = this()
   }
   
   @JSImport("stream-mock", "BufferWritableMock")
@@ -33,21 +32,21 @@ object mod {
   @js.native
   class DuplexMock ()
     extends typings.streamMock.duplexMod.DuplexMock {
-    def this(source: ArrayLike[_]) = this()
-    def this(source: Iterable[_]) = this()
-    def this(source: js.UndefOr[scala.Nothing], options: DuplexOptions) = this()
-    def this(source: ArrayLike[_], options: DuplexOptions) = this()
-    def this(source: Iterable[_], options: DuplexOptions) = this()
+    def this(source: ArrayLike[js.Any]) = this()
+    def this(source: Iterable[js.Any]) = this()
+    def this(source: Unit, options: DuplexOptions) = this()
+    def this(source: ArrayLike[js.Any], options: DuplexOptions) = this()
+    def this(source: Iterable[js.Any], options: DuplexOptions) = this()
   }
   
   @JSImport("stream-mock", "ObjectReadableMock")
   @js.native
   class ObjectReadableMock protected ()
     extends typings.streamMock.readableMod.ObjectReadableMock {
-    def this(source: ArrayLike[_]) = this()
-    def this(source: Iterable[_]) = this()
-    def this(source: ArrayLike[_], options: ReadableOptions) = this()
-    def this(source: Iterable[_], options: ReadableOptions) = this()
+    def this(source: ArrayLike[js.Any]) = this()
+    def this(source: Iterable[js.Any]) = this()
+    def this(source: ArrayLike[js.Any], options: ReadableOptions) = this()
+    def this(source: Iterable[js.Any], options: ReadableOptions) = this()
   }
   
   @JSImport("stream-mock", "ObjectWritableMock")
@@ -61,10 +60,10 @@ object mod {
   @js.native
   class ReadableMock protected ()
     extends typings.streamMock.readableMod.ReadableMock {
-    def this(source: ArrayLike[_]) = this()
-    def this(source: Iterable[_]) = this()
-    def this(source: ArrayLike[_], options: ReadableOptions) = this()
-    def this(source: Iterable[_], options: ReadableOptions) = this()
+    def this(source: ArrayLike[js.Any]) = this()
+    def this(source: Iterable[js.Any]) = this()
+    def this(source: ArrayLike[js.Any], options: ReadableOptions) = this()
+    def this(source: Iterable[js.Any], options: ReadableOptions) = this()
   }
   
   @JSImport("stream-mock", "WritableMock")

@@ -3,12 +3,14 @@ package typings.coreJs
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreforMod {
   
+  @scala.inline
+  def apply[T](iterable: Iterable[T]): `for`[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[`for`[T]]
+  
   @JSImport("core-js/library/core/$for", JSImport.Namespace)
   @js.native
-  def apply[T](iterable: Iterable[T]): `for`[T] = js.native
+  val ^ : js.Any = js.native
 }

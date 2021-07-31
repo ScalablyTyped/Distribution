@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides subscription info for a product SKU that represents a subscription with recurring billing. */
-@js.native
 trait StoreSubscriptionInfo extends StObject {
   
   /** Gets the duration of the billing period for a subscription, in the units specified by the BillingPeriodUnit property. */
-  var billingPeriod: Double = js.native
+  var billingPeriod: Double
   
   /** Gets the units of the billing period for a subscription. */
-  var billingPeriodUnit: StoreDurationUnit = js.native
+  var billingPeriodUnit: StoreDurationUnit
   
   /** Gets a value that indicates whether the subscription contains a trial period. */
-  var hasTrialPeriod: Boolean = js.native
+  var hasTrialPeriod: Boolean
   
   /** Gets the duration of the trial period for the subscription, in the units specified by the TrialPeriodUnit property. To determine whether the subscription has a trial period, use the HasTrialPeriod property. */
-  var trialPeriod: Double = js.native
+  var trialPeriod: Double
   
   /** Gets the units of the trial period for the subscription. */
-  var trialPeriodUnit: StoreDurationUnit = js.native
+  var trialPeriodUnit: StoreDurationUnit
 }
 object StoreSubscriptionInfo {
   

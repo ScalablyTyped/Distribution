@@ -2,61 +2,59 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnInfo extends StObject {
   
   /**
     * Indicates whether values in the column are case-sensitive.
     */
-  var CaseSensitive: js.UndefOr[Boolean] = js.native
+  var CaseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The catalog to which the query results belong.
     */
-  var CatalogName: js.UndefOr[String] = js.native
+  var CatalogName: js.UndefOr[String] = js.undefined
   
   /**
     * A column label.
     */
-  var Label: js.UndefOr[String] = js.native
+  var Label: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the column.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Indicates the column's nullable status.
     */
-  var Nullable: js.UndefOr[ColumnNullable] = js.native
+  var Nullable: js.UndefOr[ColumnNullable] = js.undefined
   
   /**
     * For DECIMAL data types, specifies the total number of digits, up to 38. For performance reasons, we recommend up to 18 digits.
     */
-  var Precision: js.UndefOr[Integer] = js.native
+  var Precision: js.UndefOr[Integer] = js.undefined
   
   /**
     * For DECIMAL data types, specifies the total number of digits in the fractional part of the value. Defaults to 0.
     */
-  var Scale: js.UndefOr[Integer] = js.native
+  var Scale: js.UndefOr[Integer] = js.undefined
   
   /**
     * The schema name (database name) to which the query results belong.
     */
-  var SchemaName: js.UndefOr[String] = js.native
+  var SchemaName: js.UndefOr[String] = js.undefined
   
   /**
     * The table name for the query results.
     */
-  var TableName: js.UndefOr[String] = js.native
+  var TableName: js.UndefOr[String] = js.undefined
   
   /**
     * The data type of the column.
     */
-  var Type: String = js.native
+  var Type: String
 }
 object ColumnInfo {
   

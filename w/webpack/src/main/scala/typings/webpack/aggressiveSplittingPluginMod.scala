@@ -2,33 +2,31 @@ package typings.webpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aggressiveSplittingPluginMod {
   
-  @js.native
   trait AggressiveSplittingPluginOptions extends StObject {
     
     /**
     	 * Default: 0
     	 */
-    var chunkOverhead: js.UndefOr[Double] = js.native
+    var chunkOverhead: js.UndefOr[Double] = js.undefined
     
     /**
     	 * Default: 1
     	 */
-    var entryChunkMultiplicator: js.UndefOr[Double] = js.native
+    var entryChunkMultiplicator: js.UndefOr[Double] = js.undefined
     
     /**
     	 * Byte, maxsize of per file. Default: 51200
     	 */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
     	 * Byte, split point. Default: 30720
     	 */
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
   }
   object AggressiveSplittingPluginOptions {
     

@@ -7,15 +7,15 @@ import typings.vexflow.anon.Firstxpx
 import typings.vexflow.anon.Lastindices
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabTie extends StaveTie {
+trait TabTie
+  extends StObject
+     with StaveTie {
   
-  def createHammeron(notes: Firstindices): TabTie = js.native
+  def createHammeron(notes: Firstindices): TabTie
   
-  def createPulloff(notes: Firstindices): TabTie = js.native
+  def createPulloff(notes: Firstindices): TabTie
 }
 object TabTie {
   

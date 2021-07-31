@@ -5,10 +5,13 @@ import typings.node.httpMod.Agent
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cloud-config-client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cloud-config-client", "Config")
   @js.native
@@ -32,19 +35,16 @@ object mod {
     def toString(spaces: Double): String = js.native
   }
   
-  @JSImport("cloud-config-client", "load")
-  @js.native
-  def load(options: Options): js.Promise[Config] = js.native
-  @JSImport("cloud-config-client", "load")
-  @js.native
-  def load(options: Options, callback: LoadCallback): js.Promise[Config] = js.native
+  @scala.inline
+  def load(options: Options): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
+  @scala.inline
+  def load(options: Options, callback: LoadCallback): js.Promise[Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config]]
   
-  @js.native
   trait Auth extends StObject {
     
-    var pass: String = js.native
+    var pass: String
     
-    var user: String = js.native
+    var user: String
   }
   object Auth {
     
@@ -65,18 +65,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigData extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var name: String = js.native
+    var name: String
     
-    var profiles: js.Array[String] = js.native
+    var profiles: js.Array[String]
     
-    var propertySources: js.Array[ConfigFile] = js.native
+    var propertySources: js.Array[ConfigFile]
     
-    var version: String = js.native
+    var version: String
   }
   object ConfigData {
     
@@ -118,12 +117,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigFile extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var source: ConfigSource = js.native
+    var source: ConfigSource
   }
   object ConfigFile {
     
@@ -148,27 +146,26 @@ object mod {
   
   type LoadCallback = js.Function2[/* error */ Error, /* config */ js.UndefOr[Config], Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.native
+    var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.undefined
     
     /** @deprecated use name */
-    var application: js.UndefOr[String] = js.native
+    var application: js.UndefOr[String] = js.undefined
     
-    var auth: js.UndefOr[Auth] = js.native
+    var auth: js.UndefOr[Auth] = js.undefined
     
-    var context: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var context: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var profiles: js.UndefOr[String | js.Array[String]] = js.native
+    var profiles: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

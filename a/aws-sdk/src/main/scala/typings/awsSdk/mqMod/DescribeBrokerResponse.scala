@@ -2,151 +2,149 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBrokerResponse extends StObject {
   
   /**
     * The authentication strategy used to secure the broker.
     */
-  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.native
+  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
   
   /**
     * Required. Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions. The automatic upgrades occur during the maintenance window of the broker or after a manual broker reboot.
     */
-  var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.native
+  var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the broker.
     */
-  var BrokerArn: js.UndefOr[string] = js.native
+  var BrokerArn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: js.UndefOr[string] = js.native
+  var BrokerId: js.UndefOr[string] = js.undefined
   
   /**
     * A list of information about allocated brokers.
     */
-  var BrokerInstances: js.UndefOr[listOfBrokerInstance] = js.native
+  var BrokerInstances: js.UndefOr[listOfBrokerInstance] = js.undefined
   
   /**
     * The name of the broker. This value must be unique in your AWS account, 1-50 characters long, must contain only letters, numbers, dashes, and underscores, and must not contain whitespaces, brackets, wildcard characters, or special characters.
     */
-  var BrokerName: js.UndefOr[string] = js.native
+  var BrokerName: js.UndefOr[string] = js.undefined
   
   /**
     * The status of the broker.
     */
-  var BrokerState: js.UndefOr[typings.awsSdk.mqMod.BrokerState] = js.native
+  var BrokerState: js.UndefOr[typings.awsSdk.mqMod.BrokerState] = js.undefined
   
   /**
     * The list of all revisions for the specified configuration.
     */
-  var Configurations: js.UndefOr[typings.awsSdk.mqMod.Configurations] = js.native
+  var Configurations: js.UndefOr[typings.awsSdk.mqMod.Configurations] = js.undefined
   
   /**
     * The time when the broker was created.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.native
+  var Created: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * Required. The deployment mode of the broker.
     */
-  var DeploymentMode: js.UndefOr[typings.awsSdk.mqMod.DeploymentMode] = js.native
+  var DeploymentMode: js.UndefOr[typings.awsSdk.mqMod.DeploymentMode] = js.undefined
   
   /**
     * Encryption options for the broker.
     */
-  var EncryptionOptions: js.UndefOr[typings.awsSdk.mqMod.EncryptionOptions] = js.native
+  var EncryptionOptions: js.UndefOr[typings.awsSdk.mqMod.EncryptionOptions] = js.undefined
   
   /**
     * Required. The type of broker engine. Note: Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ.
     */
-  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.native
+  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
   /**
     * The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
     */
-  var EngineVersion: js.UndefOr[string] = js.native
+  var EngineVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The broker's instance type.
     */
-  var HostInstanceType: js.UndefOr[string] = js.native
+  var HostInstanceType: js.UndefOr[string] = js.undefined
   
   /**
     * The metadata of the LDAP server used to authenticate and authorize connections to the broker.
     */
-  var LdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.native
+  var LdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.undefined
   
   /**
     * The list of information about logs currently enabled and pending to be deployed for the specified broker.
     */
-  var Logs: js.UndefOr[LogsSummary] = js.native
+  var Logs: js.UndefOr[LogsSummary] = js.undefined
   
   /**
     * The parameters that determine the WeeklyStartTime.
     */
-  var MaintenanceWindowStartTime: js.UndefOr[WeeklyStartTime] = js.native
+  var MaintenanceWindowStartTime: js.UndefOr[WeeklyStartTime] = js.undefined
   
   /**
     * The authentication strategy that will be applied when the broker is rebooted.
     */
-  var PendingAuthenticationStrategy: js.UndefOr[AuthenticationStrategy] = js.native
+  var PendingAuthenticationStrategy: js.UndefOr[AuthenticationStrategy] = js.undefined
   
   /**
     * The version of the broker engine to upgrade to. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
     */
-  var PendingEngineVersion: js.UndefOr[string] = js.native
+  var PendingEngineVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The host instance type of the broker to upgrade to. For a list of supported instance types, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide//broker.html#broker-instance-types
     */
-  var PendingHostInstanceType: js.UndefOr[string] = js.native
+  var PendingHostInstanceType: js.UndefOr[string] = js.undefined
   
   /**
     * The metadata of the LDAP server that will be used to authenticate and authorize connections to the broker once it is rebooted.
     */
-  var PendingLdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.native
+  var PendingLdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.undefined
   
   /**
     * The list of pending security groups to authorize connections to brokers.
     */
-  var PendingSecurityGroups: js.UndefOr[listOfString] = js.native
+  var PendingSecurityGroups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * Required. Enables connections from applications outside of the VPC that hosts the broker's subnets.
     */
-  var PubliclyAccessible: js.UndefOr[boolean] = js.native
+  var PubliclyAccessible: js.UndefOr[boolean] = js.undefined
   
   /**
     * The list of security groups (1 minimum, 5 maximum) that authorizes connections to brokers.
     */
-  var SecurityGroups: js.UndefOr[listOfString] = js.native
+  var SecurityGroups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The broker's storage type.
     */
-  var StorageType: js.UndefOr[BrokerStorageType] = js.native
+  var StorageType: js.UndefOr[BrokerStorageType] = js.undefined
   
   /**
     * The list of groups that define which subnets and IP ranges the broker can use from different Availability Zones. A SINGLE_INSTANCE deployment requires one subnet (for example, the default subnet). An ACTIVE_STANDBY_MULTI_AZ deployment (ACTIVEMQ) requires two subnets. A CLUSTER_MULTI_AZ deployment (RABBITMQ) has no subnet requirements when deployed with public accessibility, deployment without public accessibility requires at least one subnet.
     */
-  var SubnetIds: js.UndefOr[listOfString] = js.native
+  var SubnetIds: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The list of all tags associated with this broker.
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
     * The list of all broker usernames for the specified broker.
     */
-  var Users: js.UndefOr[listOfUserSummary] = js.native
+  var Users: js.UndefOr[listOfUserSummary] = js.undefined
 }
 object DescribeBrokerResponse {
   

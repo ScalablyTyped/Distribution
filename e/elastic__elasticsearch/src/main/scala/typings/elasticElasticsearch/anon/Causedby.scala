@@ -2,17 +2,15 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Causedby extends StObject {
   
-  var caused_by: Reason = js.native
+  var caused_by: Reason
   
-  var reason: String = js.native
+  var reason: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Causedby {
   

@@ -3,24 +3,25 @@ package typings.vueDocgenApi
 import typings.vueDocgenApi.resolveRequiredMod.ImportedVariableSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recursiveResolveIEVMod {
   
-  @JSImport("vue-docgen-api/dist/utils/recursiveResolveIEV", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/utils/recursiveResolveIEV", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     pathResolver: js.Function2[/* path */ String, /* originalDirNameOverride */ js.UndefOr[String], String | Null],
     varToFilePath: ImportedVariableSet,
     validExtends: js.Function1[/* fullFilePath */ String, Boolean]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathResolver.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], validExtends.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("vue-docgen-api/dist/utils/recursiveResolveIEV", "resolveIEV")
-  @js.native
+  @scala.inline
   def resolveIEV(
     pathResolver: js.Function2[/* path */ String, /* originalDirNameOverride */ js.UndefOr[String], String | Null],
     varToFilePath: ImportedVariableSet,
     validExtends: js.Function1[/* fullFilePath */ String, Boolean]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveIEV")(pathResolver.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], validExtends.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

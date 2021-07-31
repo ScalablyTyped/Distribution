@@ -2,23 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptingCompleteResult extends StObject {
   
-  var canceled: Boolean = js.native
+  var canceled: Boolean
   
-  var errorDetails: String = js.native
+  var errorDetails: String
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var hasError: Boolean = js.native
+  var hasError: Boolean
   
-  var operationId: String = js.native
+  var operationId: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object ScriptingCompleteResult {
   

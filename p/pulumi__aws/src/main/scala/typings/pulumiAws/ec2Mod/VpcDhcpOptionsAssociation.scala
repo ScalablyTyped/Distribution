@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation")
@@ -27,6 +26,10 @@ class VpcDhcpOptionsAssociation protected ()
 /* static members */
 object VpcDhcpOptionsAssociation {
   
+  @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get an existing VpcDhcpOptionsAssociation resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -36,24 +39,19 @@ object VpcDhcpOptionsAssociation {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
-  @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
-  @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
-  @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState, opts: CustomResourceOptions): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState, opts: CustomResourceOptions): typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation]
   
   /**
     * Returns true if the given object is an instance of VpcDhcpOptionsAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/aws/ec2", "VpcDhcpOptionsAssociation.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean]
 }

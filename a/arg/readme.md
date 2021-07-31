@@ -10,9 +10,9 @@ Unopinionated, no-frills CLI argument parser
 | ------------------ | :-------------: |
 | Full name          | arg |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 865 |
-| # downloads        | 174576457 |
+| # releases         | 4 |
+| # dependents       | 1022 |
+| # downloads        | 210621723 |
 | # stars            | 1 |
 
 ## Links

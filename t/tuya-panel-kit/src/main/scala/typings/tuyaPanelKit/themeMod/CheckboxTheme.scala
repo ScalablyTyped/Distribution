@@ -2,19 +2,17 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxTheme extends StObject {
   
-  var activeColor: String = js.native
+  var activeColor: String
   
-  var disabledColor: String = js.native
+  var disabledColor: String
   
-  var fontColor: String = js.native
+  var fontColor: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object CheckboxTheme {
   

@@ -11,8 +11,8 @@ A cryptographically secure generator for random numbers in a range.
 | Full name          | random-number-csprng |
 | Keywords           | csprng, random, number, crypto |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 382655 |
+| # dependents       | 24 |
+| # downloads        | 507008 |
 | # stars            | 2 |
 
 ## Links

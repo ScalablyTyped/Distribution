@@ -2,15 +2,13 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataErr extends StObject {
   
-  var DataErr: Double = js.native
+  var DataErr: Double
   
-  var Response: Double = js.native
+  var Response: Double
 }
 object DataErr {
   

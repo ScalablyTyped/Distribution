@@ -2,22 +2,20 @@ package typings.awsSdkClientS3Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNoSuchUploadMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NoSuchUploadDetails> * / any */ @js.native
-  trait NoSuchUpload extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NoSuchUploadDetails> * / any */ trait NoSuchUpload extends StObject {
     
-    var name: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchUpload = js.native
+    var name: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchUpload
   }
   object NoSuchUpload {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchUpload): NoSuchUpload = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): NoSuchUpload = {
+      val __obj = js.Dynamic.literal(name = "NoSuchUpload")
       __obj.asInstanceOf[NoSuchUpload]
     }
     
@@ -29,6 +27,5 @@ object typesNoSuchUploadMod {
     }
   }
   
-  @js.native
   trait NoSuchUploadDetails extends StObject
 }

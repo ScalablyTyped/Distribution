@@ -2,19 +2,17 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphemeLines extends StObject {
   
-  var _unwrappedLines: js.Array[String] = js.native
+  var _unwrappedLines: js.Array[String]
   
-  var graphemeLines: js.Array[String] = js.native
+  var graphemeLines: js.Array[String]
   
-  var graphemeText: js.Array[String] = js.native
+  var graphemeText: js.Array[String]
   
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
 }
 object GraphemeLines {
   

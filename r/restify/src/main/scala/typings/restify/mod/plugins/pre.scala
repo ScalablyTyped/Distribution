@@ -6,60 +6,54 @@ import typings.restify.anon.UserAgentRegExp
 import typings.restify.mod.RequestHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pre {
   
+  @JSImport("restify", "plugins.pre")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Provide req.set(key, val) and req.get(key) methods for setting and retrieving context to a specific request.
     */
-  @JSImport("restify", "plugins.pre.context")
-  @js.native
-  def context(): RequestHandler = js.native
+  @scala.inline
+  def context(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("context")().asInstanceOf[RequestHandler]
   
-  @JSImport("restify", "plugins.pre.dedupeSlashes")
-  @js.native
-  def dedupeSlashes(): RequestHandler = js.native
+  @scala.inline
+  def dedupeSlashes(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("dedupeSlashes")().asInstanceOf[RequestHandler]
   
   /**
     * This pre handler fixes issues with node hanging when an asyncHandler is used prior to bodyParser.
     */
-  @JSImport("restify", "plugins.pre.pause")
-  @js.native
-  def pause(): RequestHandler = js.native
+  @scala.inline
+  def pause(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[RequestHandler]
   
   /**
     * Automatically reuse incoming request header as the request id.
     */
-  @JSImport("restify", "plugins.pre.reqIdHeaders")
-  @js.native
-  def reqIdHeaders(options: Headers): RequestHandler = js.native
+  @scala.inline
+  def reqIdHeaders(options: Headers): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("reqIdHeaders")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
   /**
     * Cleans up duplicate or trailing / on the URL
     */
-  @JSImport("restify", "plugins.pre.sanitizePath")
-  @js.native
-  def sanitizePath(): RequestHandler = js.native
+  @scala.inline
+  def sanitizePath(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizePath")().asInstanceOf[RequestHandler]
   
   /**
     * Checks req.urls query params with strict key/val format and rejects non-strict requests with status code 400.
     */
-  @JSImport("restify", "plugins.pre.strictQueryParams")
-  @js.native
-  def strictQueryParams(): RequestHandler = js.native
-  @JSImport("restify", "plugins.pre.strictQueryParams")
-  @js.native
-  def strictQueryParams(options: Message): RequestHandler = js.native
+  @scala.inline
+  def strictQueryParams(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def strictQueryParams(options: Message): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("strictQueryParams")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
   /**
     * Regexp to capture curl user-agents
     */
-  @JSImport("restify", "plugins.pre.userAgentConnection")
-  @js.native
-  def userAgentConnection(): RequestHandler = js.native
-  @JSImport("restify", "plugins.pre.userAgentConnection")
-  @js.native
-  def userAgentConnection(options: UserAgentRegExp): RequestHandler = js.native
+  @scala.inline
+  def userAgentConnection(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")().asInstanceOf[RequestHandler]
+  @scala.inline
+  def userAgentConnection(options: UserAgentRegExp): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentConnection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
 }

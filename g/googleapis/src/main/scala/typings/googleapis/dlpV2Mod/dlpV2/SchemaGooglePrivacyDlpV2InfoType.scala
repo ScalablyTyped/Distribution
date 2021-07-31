@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Type of information detected by the API.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InfoType extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGooglePrivacyDlpV2InfoType extends StObject {
     * built-in type. InfoType names should conform to the pattern
     * [a-zA-Z0-9_]{1,64}.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InfoType {
   

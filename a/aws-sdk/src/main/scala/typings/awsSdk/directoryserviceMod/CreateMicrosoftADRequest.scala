@@ -2,46 +2,44 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMicrosoftADRequest extends StObject {
   
   /**
     * A description for the directory. This label will appear on the AWS console Directory Details page after the directory is created.
     */
-  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
     * AWS Managed Microsoft AD is available in two editions: Standard and Enterprise. Enterprise is the default.
     */
-  var Edition: js.UndefOr[DirectoryEdition] = js.native
+  var Edition: js.UndefOr[DirectoryEdition] = js.undefined
   
   /**
     * The fully qualified domain name for the AWS Managed Microsoft AD directory, such as corp.example.com. This name will resolve inside your VPC only. It does not need to be publicly resolvable.
     */
-  var Name: DirectoryName = js.native
+  var Name: DirectoryName
   
   /**
     * The password for the default administrative user named Admin. If you need to change the password for the administrator account, you can use the ResetUserPassword API call.
     */
-  var Password: typings.awsSdk.directoryserviceMod.Password = js.native
+  var Password: typings.awsSdk.directoryserviceMod.Password
   
   /**
     * The NetBIOS name for your domain, such as CORP. If you don't specify a NetBIOS name, it will default to the first part of your directory DNS. For example, CORP for the directory DNS corp.example.com. 
     */
-  var ShortName: js.UndefOr[DirectoryShortName] = js.native
+  var ShortName: js.UndefOr[DirectoryShortName] = js.undefined
   
   /**
     * The tags to be assigned to the AWS Managed Microsoft AD directory.
     */
-  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.undefined
   
   /**
     * Contains VPC information for the CreateDirectory or CreateMicrosoftAD operation.
     */
-  var VpcSettings: DirectoryVpcSettings = js.native
+  var VpcSettings: DirectoryVpcSettings
 }
 object CreateMicrosoftADRequest {
   

@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersResponseOctokitResponse extends StObject {
   
-  var parameters: RequestParameters with (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData] = js.native
+  var response: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData]
 }
 object ParametersResponseOctokitResponse {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData]
   ): ParametersResponseOctokitResponse = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,7 +34,7 @@ object ParametersResponseOctokitResponse {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

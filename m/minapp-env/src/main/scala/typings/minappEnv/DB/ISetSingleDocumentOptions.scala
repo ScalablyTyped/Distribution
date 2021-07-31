@@ -3,14 +3,13 @@ package typings.minappEnv.DB
 import typings.minappEnv.IAPIParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISetSingleDocumentOptions
-  extends IAPIParam[js.Any] {
+  extends StObject
+     with IAPIParam[js.Any] {
   
-  var data: IUpdateCondition = js.native
+  var data: IUpdateCondition
 }
 object ISetSingleDocumentOptions {
   

@@ -2,32 +2,30 @@ package typings.extjs.Ext.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskrunner {
   
-  @js.native
   trait ITask extends StObject {
     
     /** [Method] Destroys this instance stopping this task s execution  */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Boolean) */
-    var fireOnStart: js.UndefOr[Boolean] = js.native
+    var fireOnStart: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Restarts this task clearing it duration expiration and run count
       * @param interval Number Optionally reset this task's interval.
       */
-    var restart: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.native
+    var restart: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Starts this task if it is not already started
       * @param interval Number Optionally reset this task's interval.
       */
-    var start: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.native
+    var start: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Stops this task  */
-    var stop: js.UndefOr[js.Function0[Unit]] = js.native
+    var stop: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ITask {
     

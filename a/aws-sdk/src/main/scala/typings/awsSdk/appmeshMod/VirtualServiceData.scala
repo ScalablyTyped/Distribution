@@ -2,33 +2,31 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualServiceData extends StObject {
   
   /**
     * The name of the service mesh that the virtual service resides in.
     */
-  var meshName: ResourceName = js.native
+  var meshName: ResourceName
   
-  var metadata: ResourceMetadata = js.native
+  var metadata: ResourceMetadata
   
   /**
     * The specifications of the virtual service.
     */
-  var spec: VirtualServiceSpec = js.native
+  var spec: VirtualServiceSpec
   
   /**
     * The current status of the virtual service.
     */
-  var status: VirtualServiceStatus = js.native
+  var status: VirtualServiceStatus
   
   /**
     * The name of the virtual service.
     */
-  var virtualServiceName: ServiceName = js.native
+  var virtualServiceName: ServiceName
 }
 object VirtualServiceData {
   

@@ -2,20 +2,20 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * openAddress的调用参数
   */
-@js.native
-trait OpenAddressConfig extends WxBaseRequestConfig {
+trait OpenAddressConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 成功回调
     */
   @JSName("success")
-  var success_OpenAddressConfig: js.UndefOr[js.Function1[/* res */ OpenAddressResponse, Unit]] = js.native
+  var success_OpenAddressConfig: js.UndefOr[js.Function1[/* res */ OpenAddressResponse, Unit]] = js.undefined
 }
 object OpenAddressConfig {
   

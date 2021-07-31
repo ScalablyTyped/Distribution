@@ -6,21 +6,19 @@ import typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextF
 import typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MDCTextFieldFoundationMap extends StObject {
     
-    var characterCounter: MDCTextFieldCharacterCounterFoundation = js.native
+    var characterCounter: MDCTextFieldCharacterCounterFoundation
     
-    var helperText: MDCTextFieldHelperTextFoundation = js.native
+    var helperText: MDCTextFieldHelperTextFoundation
     
-    var leadingIcon: MDCTextFieldIconFoundation = js.native
+    var leadingIcon: MDCTextFieldIconFoundation
     
-    var trailingIcon: MDCTextFieldIconFoundation = js.native
+    var trailingIcon: MDCTextFieldIconFoundation
   }
   object MDCTextFieldFoundationMap {
     
@@ -53,20 +51,19 @@ object typesMod {
   }
   
   /* Inlined std.Pick<std.HTMLInputElement, 'disabled' | 'maxLength' | 'type' | 'value' | 'required'> & {  validity :std.Pick<std.ValidityState, 'badInput' | 'valid'>} */
-  @js.native
   trait MDCTextFieldNativeInputElement extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var maxLength: Double = js.native
+    var maxLength: Double
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var validity: PickValidityStatebadInput = js.native
+    var validity: PickValidityStatebadInput
     
-    var value: String = js.native
+    var value: String
   }
   object MDCTextFieldNativeInputElement {
     

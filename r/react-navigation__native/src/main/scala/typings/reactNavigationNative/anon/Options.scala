@@ -3,13 +3,11 @@ package typings.reactNavigationNative.anon
 import typings.reactNavigationNative.typesMod.LinkingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var options: js.UndefOr[LinkingOptions] = js.native
+  var options: js.UndefOr[LinkingOptions] = js.undefined
 }
 object Options {
   

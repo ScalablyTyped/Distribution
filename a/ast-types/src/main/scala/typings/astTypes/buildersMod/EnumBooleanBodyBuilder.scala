@@ -5,7 +5,6 @@ import typings.astTypes.kindsMod.EnumBooleanMemberKind
 import typings.astTypes.namedTypesMod.namedTypes.EnumBooleanBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

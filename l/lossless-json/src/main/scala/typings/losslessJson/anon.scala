@@ -2,15 +2,13 @@ package typings.losslessJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CircularRefs extends StObject {
     
-    var circularRefs: js.UndefOr[Boolean] = js.native
+    var circularRefs: js.UndefOr[Boolean] = js.undefined
   }
   object CircularRefs {
     
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CircularRefsBoolean extends StObject {
     
-    var circularRefs: Boolean = js.native
+    var circularRefs: Boolean
   }
   object CircularRefsBoolean {
     

@@ -5,26 +5,26 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a cell which can be addressed with a {@link com.sun.star.table.CellAddress} . */
-@js.native
-trait XCellAddressable extends XInterface {
+trait XCellAddressable
+  extends StObject
+     with XInterface {
   
   /**
     * returns the address of the cell in the spreadsheet document.
     *
     * The {@link com.sun.star.table.CellAddress} can be used to address the cell within its document.
     */
-  val CellAddress: typings.activexLibreoffice.com_.sun.star.table.CellAddress = js.native
+  val CellAddress: typings.activexLibreoffice.com_.sun.star.table.CellAddress
   
   /**
     * returns the address of the cell in the spreadsheet document.
     *
     * The {@link com.sun.star.table.CellAddress} can be used to address the cell within its document.
     */
-  def getCellAddress(): typings.activexLibreoffice.com_.sun.star.table.CellAddress = js.native
+  def getCellAddress(): typings.activexLibreoffice.com_.sun.star.table.CellAddress
 }
 object XCellAddressable {
   

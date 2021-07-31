@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * example, if a user gives a positive rating to a video, you would insert
   * that video into the liked videos playlist for that user&#39;s channel.
   */
-@js.native
 trait SchemaPlaylistItem extends StObject {
   
   /**
@@ -30,35 +28,35 @@ trait SchemaPlaylistItem extends StObject {
     * item is a YouTube video. The object contains additional information about
     * the video.
     */
-  var contentDetails: js.UndefOr[SchemaPlaylistItemContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaPlaylistItemContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the playlist item.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#playlistItem&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the playlist item, such
     * as its title and position in the playlist.
     */
-  var snippet: js.UndefOr[SchemaPlaylistItemSnippet] = js.native
+  var snippet: js.UndefOr[SchemaPlaylistItemSnippet] = js.undefined
   
   /**
     * The status object contains information about the playlist item&#39;s
     * privacy status.
     */
-  var status: js.UndefOr[SchemaPlaylistItemStatus] = js.native
+  var status: js.UndefOr[SchemaPlaylistItemStatus] = js.undefined
 }
 object SchemaPlaylistItem {
   

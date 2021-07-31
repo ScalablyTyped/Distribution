@@ -4,7 +4,6 @@ import typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.T
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FactoryApi {
@@ -14,29 +13,28 @@ object FactoryApi {
     */
   object Popup {
     
-    @js.native
     trait Popup extends StObject {
       
       /**
         * Indicates whether popup close on an outside mouse click.
         * When it's false, the popup will not be closed on an outside mouse click.
         */
-      var closeOnOutsideClick: js.UndefOr[Boolean] = js.native
+      var closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Static DOM element to be inserted
         */
-      var content: HTMLElement = js.native
+      var content: HTMLElement
       
       /**
         * The id to be set to the anchor control if any.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * The name of the Popup. Used as the reference to open Popups.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * The name of Popup which should be opened.
@@ -45,12 +43,12 @@ object FactoryApi {
         * To close Popups, should be provided empty string.
         * This prop will be automatically propagated to children.
         */
-      var popupToOpen: js.UndefOr[String] = js.native
+      var popupToOpen: js.UndefOr[String] = js.undefined
       
       /**
         * The type of Popup, which is described in PopupType enum. Should be only one "root" Popup for each set of Popups.
         */
-      var `type`: PopupType = js.native
+      var `type`: PopupType
     }
     object Popup {
       
@@ -93,43 +91,42 @@ object FactoryApi {
       }
     }
     
-    @js.native
     trait PopupService extends StObject {
       
       /**
         * Close an existing popup in the service with the given name. Does nothing if popup does not exist yet.
         * @param name the name of the popup you're trying to close
         */
-      def closePopup(name: String): Unit = js.native
+      def closePopup(name: String): Unit
       
       /**
         * Create a new popup element
         * @param props The popup properties object, see Popup interface for more
         */
-      def createPopup(props: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup): Unit = js.native
+      def createPopup(props: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup): Unit
       
       /**
         * Remove the referenced popup from the popupService, unregister the service
         * @param name The name of the popup to remove
         */
-      def deletePopup(name: String): Unit = js.native
+      def deletePopup(name: String): Unit
       
       /**
         * Gets the currently set popup Id
         */
-      def getPopupsId(): String = js.native
+      def getPopupsId(): String
       
       /**
         * Open an existing popup in the service with the given name. Does nothing if popup does not exist yet.
         * @param name the name of the popup you're trying to open
         */
-      def openPopup(name: String): Unit = js.native
+      def openPopup(name: String): Unit
       
       /**
         * Sets the ID (on the DOM and in the system) for the root popup element.
         * @param id The string to set as the id
         */
-      def setPopupsId(id: String): Unit = js.native
+      def setPopupsId(id: String): Unit
       
       /**
         * Update an existing popup in the service with the given name, patching new content to the same popup element. Does nothing if popup does not exist yet.
@@ -139,7 +136,7 @@ object FactoryApi {
       def updatePopup(
         name: String,
         newProps: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup
-      ): Unit = js.native
+      ): Unit
     }
     object PopupService {
       

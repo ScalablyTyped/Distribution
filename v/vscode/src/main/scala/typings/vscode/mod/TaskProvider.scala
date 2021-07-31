@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskProvider[T /* <: Task */] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TaskProvider[T /* <: Task */] extends StObject {
     * @param token A cancellation token.
     * @return an array of tasks
     */
-  def provideTasks(token: CancellationToken): ProviderResult[js.Array[T]] = js.native
+  def provideTasks(token: CancellationToken): ProviderResult[js.Array[T]]
   
   /**
     * Resolves a task that has no [`execution`](#Task.execution) set. Tasks are
@@ -28,7 +26,7 @@ trait TaskProvider[T /* <: Task */] extends StObject {
     * @param token A cancellation token.
     * @return The resolved task
     */
-  def resolveTask(task: T, token: CancellationToken): ProviderResult[T] = js.native
+  def resolveTask(task: T, token: CancellationToken): ProviderResult[T]
 }
 object TaskProvider {
   
@@ -42,7 +40,7 @@ object TaskProvider {
   }
   
   @scala.inline
-  implicit class TaskProviderMutableBuilder[Self <: TaskProvider[_], T /* <: Task */] (val x: Self with TaskProvider[T]) extends AnyVal {
+  implicit class TaskProviderMutableBuilder[Self <: TaskProvider[?], T /* <: Task */] (val x: Self & TaskProvider[T]) extends AnyVal {
     
     @scala.inline
     def setProvideTasks(value: CancellationToken => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTasks", js.Any.fromFunction1(value))

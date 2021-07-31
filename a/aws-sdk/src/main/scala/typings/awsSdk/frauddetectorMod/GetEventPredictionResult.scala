@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventPredictionResult extends StObject {
   
   /**
     * The model scores. Amazon Fraud Detector generates model scores between 0 and 1000, where 0 is low fraud risk and 1000 is high fraud risk. Model scores are directly related to the false positive rate (FPR). For example, a score of 600 corresponds to an estimated 10% false positive rate whereas a score of 900 corresponds to an estimated 2% false positive rate.
     */
-  var modelScores: js.UndefOr[ListOfModelScores] = js.native
+  var modelScores: js.UndefOr[ListOfModelScores] = js.undefined
   
   /**
     * The results.
     */
-  var ruleResults: js.UndefOr[ListOfRuleResults] = js.native
+  var ruleResults: js.UndefOr[ListOfRuleResults] = js.undefined
 }
 object GetEventPredictionResult {
   

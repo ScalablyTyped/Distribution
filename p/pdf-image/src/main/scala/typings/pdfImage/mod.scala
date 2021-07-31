@@ -6,7 +6,6 @@ import typings.pdfImage.anon.ReadonlyConvertOptions
 import typings.pdfImage.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -1026,492 +1025,491 @@ object mod {
   }
   
   /* Inlined {[ key in pdf-image.pdf-image.ConvertOptionKey ]:? string} */
-  @js.native
   trait ConvertOptions extends StObject {
     
-    var `-adaptive-blur`: js.UndefOr[String] = js.native
+    var `-adaptive-blur`: js.UndefOr[String] = js.undefined
     
-    var `-adaptive-resize`: js.UndefOr[String] = js.native
+    var `-adaptive-resize`: js.UndefOr[String] = js.undefined
     
-    var `-adaptive-sharpen`: js.UndefOr[String] = js.native
+    var `-adaptive-sharpen`: js.UndefOr[String] = js.undefined
     
-    var `-adjoin`: js.UndefOr[String] = js.native
+    var `-adjoin`: js.UndefOr[String] = js.undefined
     
-    var `-affine`: js.UndefOr[String] = js.native
+    var `-affine`: js.UndefOr[String] = js.undefined
     
-    var `-alpha`: js.UndefOr[String] = js.native
+    var `-alpha`: js.UndefOr[String] = js.undefined
     
-    var `-annotate`: js.UndefOr[String] = js.native
+    var `-annotate`: js.UndefOr[String] = js.undefined
     
-    var `-antialias`: js.UndefOr[String] = js.native
+    var `-antialias`: js.UndefOr[String] = js.undefined
     
-    var `-append`: js.UndefOr[String] = js.native
+    var `-append`: js.UndefOr[String] = js.undefined
     
-    var `-authenticate`: js.UndefOr[String] = js.native
+    var `-authenticate`: js.UndefOr[String] = js.undefined
     
-    var `-auto-gamma`: js.UndefOr[String] = js.native
+    var `-auto-gamma`: js.UndefOr[String] = js.undefined
     
-    var `-auto-level`: js.UndefOr[String] = js.native
+    var `-auto-level`: js.UndefOr[String] = js.undefined
     
-    var `-auto-orient`: js.UndefOr[String] = js.native
+    var `-auto-orient`: js.UndefOr[String] = js.undefined
     
-    var `-auto-threshold`: js.UndefOr[String] = js.native
+    var `-auto-threshold`: js.UndefOr[String] = js.undefined
     
-    var `-background`: js.UndefOr[String] = js.native
+    var `-background`: js.UndefOr[String] = js.undefined
     
-    var `-bench`: js.UndefOr[String] = js.native
+    var `-bench`: js.UndefOr[String] = js.undefined
     
-    var `-bias`: js.UndefOr[String] = js.native
+    var `-bias`: js.UndefOr[String] = js.undefined
     
-    var `-black-threshold`: js.UndefOr[String] = js.native
+    var `-black-threshold`: js.UndefOr[String] = js.undefined
     
-    var `-blue-primary`: js.UndefOr[String] = js.native
+    var `-blue-primary`: js.UndefOr[String] = js.undefined
     
-    var `-blue-shift`: js.UndefOr[String] = js.native
+    var `-blue-shift`: js.UndefOr[String] = js.undefined
     
-    var `-blur`: js.UndefOr[String] = js.native
+    var `-blur`: js.UndefOr[String] = js.undefined
     
-    var `-border`: js.UndefOr[String] = js.native
+    var `-border`: js.UndefOr[String] = js.undefined
     
-    var `-bordercolor`: js.UndefOr[String] = js.native
+    var `-bordercolor`: js.UndefOr[String] = js.undefined
     
-    var `-brightness-contrast`: js.UndefOr[String] = js.native
+    var `-brightness-contrast`: js.UndefOr[String] = js.undefined
     
-    var `-canny`: js.UndefOr[String] = js.native
+    var `-canny`: js.UndefOr[String] = js.undefined
     
-    var `-caption`: js.UndefOr[String] = js.native
+    var `-caption`: js.UndefOr[String] = js.undefined
     
-    var `-cdl`: js.UndefOr[String] = js.native
+    var `-cdl`: js.UndefOr[String] = js.undefined
     
-    var `-channel`: js.UndefOr[String] = js.native
+    var `-channel`: js.UndefOr[String] = js.undefined
     
-    var `-charcoal`: js.UndefOr[String] = js.native
+    var `-charcoal`: js.UndefOr[String] = js.undefined
     
-    var `-chop`: js.UndefOr[String] = js.native
+    var `-chop`: js.UndefOr[String] = js.undefined
     
-    var `-clahe`: js.UndefOr[String] = js.native
+    var `-clahe`: js.UndefOr[String] = js.undefined
     
-    var `-clamp`: js.UndefOr[String] = js.native
+    var `-clamp`: js.UndefOr[String] = js.undefined
     
-    var `-clip`: js.UndefOr[String] = js.native
+    var `-clip`: js.UndefOr[String] = js.undefined
     
-    var `-clip-mask`: js.UndefOr[String] = js.native
+    var `-clip-mask`: js.UndefOr[String] = js.undefined
     
-    var `-clip-path`: js.UndefOr[String] = js.native
+    var `-clip-path`: js.UndefOr[String] = js.undefined
     
-    var `-clone`: js.UndefOr[String] = js.native
+    var `-clone`: js.UndefOr[String] = js.undefined
     
-    var `-clut`: js.UndefOr[String] = js.native
+    var `-clut`: js.UndefOr[String] = js.undefined
     
-    var `-coalesce`: js.UndefOr[String] = js.native
+    var `-coalesce`: js.UndefOr[String] = js.undefined
     
-    var `-color-matrix`: js.UndefOr[String] = js.native
+    var `-color-matrix`: js.UndefOr[String] = js.undefined
     
-    var `-colorize`: js.UndefOr[String] = js.native
+    var `-colorize`: js.UndefOr[String] = js.undefined
     
-    var `-colors`: js.UndefOr[String] = js.native
+    var `-colors`: js.UndefOr[String] = js.undefined
     
-    var `-colorspace`: js.UndefOr[String] = js.native
+    var `-colorspace`: js.UndefOr[String] = js.undefined
     
-    var `-combine`: js.UndefOr[String] = js.native
+    var `-combine`: js.UndefOr[String] = js.undefined
     
-    var `-comment`: js.UndefOr[String] = js.native
+    var `-comment`: js.UndefOr[String] = js.undefined
     
-    var `-compare`: js.UndefOr[String] = js.native
+    var `-compare`: js.UndefOr[String] = js.undefined
     
-    var `-complexoperator`: js.UndefOr[String] = js.native
+    var `-complexoperator`: js.UndefOr[String] = js.undefined
     
-    var `-compose`: js.UndefOr[String] = js.native
+    var `-compose`: js.UndefOr[String] = js.undefined
     
-    var `-composite`: js.UndefOr[String] = js.native
+    var `-composite`: js.UndefOr[String] = js.undefined
     
-    var `-compress`: js.UndefOr[String] = js.native
+    var `-compress`: js.UndefOr[String] = js.undefined
     
-    var `-connected-components`: js.UndefOr[String] = js.native
+    var `-connected-components`: js.UndefOr[String] = js.undefined
     
-    var `-contrast`: js.UndefOr[String] = js.native
+    var `-contrast`: js.UndefOr[String] = js.undefined
     
-    var `-contrast-stretch`: js.UndefOr[String] = js.native
+    var `-contrast-stretch`: js.UndefOr[String] = js.undefined
     
-    var `-convolve`: js.UndefOr[String] = js.native
+    var `-convolve`: js.UndefOr[String] = js.undefined
     
-    var `-copy`: js.UndefOr[String] = js.native
+    var `-copy`: js.UndefOr[String] = js.undefined
     
-    var `-crop`: js.UndefOr[String] = js.native
+    var `-crop`: js.UndefOr[String] = js.undefined
     
-    var `-cycle`: js.UndefOr[String] = js.native
+    var `-cycle`: js.UndefOr[String] = js.undefined
     
-    var `-debug`: js.UndefOr[String] = js.native
+    var `-debug`: js.UndefOr[String] = js.undefined
     
-    var `-decipher`: js.UndefOr[String] = js.native
+    var `-decipher`: js.UndefOr[String] = js.undefined
     
-    var `-deconstruct`: js.UndefOr[String] = js.native
+    var `-deconstruct`: js.UndefOr[String] = js.undefined
     
-    var `-define`: js.UndefOr[String] = js.native
+    var `-define`: js.UndefOr[String] = js.undefined
     
-    var `-delay`: js.UndefOr[String] = js.native
+    var `-delay`: js.UndefOr[String] = js.undefined
     
-    var `-delete`: js.UndefOr[String] = js.native
+    var `-delete`: js.UndefOr[String] = js.undefined
     
-    var `-density`: js.UndefOr[String] = js.native
+    var `-density`: js.UndefOr[String] = js.undefined
     
-    var `-depth`: js.UndefOr[String] = js.native
+    var `-depth`: js.UndefOr[String] = js.undefined
     
-    var `-despeckle`: js.UndefOr[String] = js.native
+    var `-despeckle`: js.UndefOr[String] = js.undefined
     
-    var `-direction`: js.UndefOr[String] = js.native
+    var `-direction`: js.UndefOr[String] = js.undefined
     
-    var `-display`: js.UndefOr[String] = js.native
+    var `-display`: js.UndefOr[String] = js.undefined
     
-    var `-dispose`: js.UndefOr[String] = js.native
+    var `-dispose`: js.UndefOr[String] = js.undefined
     
-    var `-distort`: js.UndefOr[String] = js.native
+    var `-distort`: js.UndefOr[String] = js.undefined
     
-    var `-distribute-cache`: js.UndefOr[String] = js.native
+    var `-distribute-cache`: js.UndefOr[String] = js.undefined
     
-    var `-dither`: js.UndefOr[String] = js.native
+    var `-dither`: js.UndefOr[String] = js.undefined
     
-    var `-draw`: js.UndefOr[String] = js.native
+    var `-draw`: js.UndefOr[String] = js.undefined
     
-    var `-duplicate`: js.UndefOr[String] = js.native
+    var `-duplicate`: js.UndefOr[String] = js.undefined
     
-    var `-edge`: js.UndefOr[String] = js.native
+    var `-edge`: js.UndefOr[String] = js.undefined
     
-    var `-emboss`: js.UndefOr[String] = js.native
+    var `-emboss`: js.UndefOr[String] = js.undefined
     
-    var `-encipher`: js.UndefOr[String] = js.native
+    var `-encipher`: js.UndefOr[String] = js.undefined
     
-    var `-encoding`: js.UndefOr[String] = js.native
+    var `-encoding`: js.UndefOr[String] = js.undefined
     
-    var `-endian`: js.UndefOr[String] = js.native
+    var `-endian`: js.UndefOr[String] = js.undefined
     
-    var `-enhance`: js.UndefOr[String] = js.native
+    var `-enhance`: js.UndefOr[String] = js.undefined
     
-    var `-equalize`: js.UndefOr[String] = js.native
+    var `-equalize`: js.UndefOr[String] = js.undefined
     
-    var `-evaluate`: js.UndefOr[String] = js.native
+    var `-evaluate`: js.UndefOr[String] = js.undefined
     
-    var `-evaluate-sequence`: js.UndefOr[String] = js.native
+    var `-evaluate-sequence`: js.UndefOr[String] = js.undefined
     
-    var `-extent`: js.UndefOr[String] = js.native
+    var `-extent`: js.UndefOr[String] = js.undefined
     
-    var `-extract`: js.UndefOr[String] = js.native
+    var `-extract`: js.UndefOr[String] = js.undefined
     
-    var `-family`: js.UndefOr[String] = js.native
+    var `-family`: js.UndefOr[String] = js.undefined
     
-    var `-features`: js.UndefOr[String] = js.native
+    var `-features`: js.UndefOr[String] = js.undefined
     
-    var `-fft`: js.UndefOr[String] = js.native
+    var `-fft`: js.UndefOr[String] = js.undefined
     
-    var `-fill`: js.UndefOr[String] = js.native
+    var `-fill`: js.UndefOr[String] = js.undefined
     
-    var `-filter`: js.UndefOr[String] = js.native
+    var `-filter`: js.UndefOr[String] = js.undefined
     
-    var `-flatten`: js.UndefOr[String] = js.native
+    var `-flatten`: js.UndefOr[String] = js.undefined
     
-    var `-flip`: js.UndefOr[String] = js.native
+    var `-flip`: js.UndefOr[String] = js.undefined
     
-    var `-floodfill`: js.UndefOr[String] = js.native
+    var `-floodfill`: js.UndefOr[String] = js.undefined
     
-    var `-flop`: js.UndefOr[String] = js.native
+    var `-flop`: js.UndefOr[String] = js.undefined
     
-    var `-font`: js.UndefOr[String] = js.native
+    var `-font`: js.UndefOr[String] = js.undefined
     
-    var `-format`: js.UndefOr[String] = js.native
+    var `-format`: js.UndefOr[String] = js.undefined
     
-    var `-frame`: js.UndefOr[String] = js.native
+    var `-frame`: js.UndefOr[String] = js.undefined
     
-    var `-function`: js.UndefOr[String] = js.native
+    var `-function`: js.UndefOr[String] = js.undefined
     
-    var `-fuzz`: js.UndefOr[String] = js.native
+    var `-fuzz`: js.UndefOr[String] = js.undefined
     
-    var `-fx`: js.UndefOr[String] = js.native
+    var `-fx`: js.UndefOr[String] = js.undefined
     
-    var `-gamma`: js.UndefOr[String] = js.native
+    var `-gamma`: js.UndefOr[String] = js.undefined
     
-    var `-gaussian-blur`: js.UndefOr[String] = js.native
+    var `-gaussian-blur`: js.UndefOr[String] = js.undefined
     
-    var `-geometry`: js.UndefOr[String] = js.native
+    var `-geometry`: js.UndefOr[String] = js.undefined
     
-    var `-gravity`: js.UndefOr[String] = js.native
+    var `-gravity`: js.UndefOr[String] = js.undefined
     
-    var `-grayscale`: js.UndefOr[String] = js.native
+    var `-grayscale`: js.UndefOr[String] = js.undefined
     
-    var `-green-primary`: js.UndefOr[String] = js.native
+    var `-green-primary`: js.UndefOr[String] = js.undefined
     
-    var `-help`: js.UndefOr[String] = js.native
+    var `-help`: js.UndefOr[String] = js.undefined
     
-    var `-hough-lines`: js.UndefOr[String] = js.native
+    var `-hough-lines`: js.UndefOr[String] = js.undefined
     
-    var `-identify`: js.UndefOr[String] = js.native
+    var `-identify`: js.UndefOr[String] = js.undefined
     
-    var `-ift`: js.UndefOr[String] = js.native
+    var `-ift`: js.UndefOr[String] = js.undefined
     
-    var `-implode`: js.UndefOr[String] = js.native
+    var `-implode`: js.UndefOr[String] = js.undefined
     
-    var `-insert`: js.UndefOr[String] = js.native
+    var `-insert`: js.UndefOr[String] = js.undefined
     
-    var `-intensity`: js.UndefOr[String] = js.native
+    var `-intensity`: js.UndefOr[String] = js.undefined
     
-    var `-intent`: js.UndefOr[String] = js.native
+    var `-intent`: js.UndefOr[String] = js.undefined
     
-    var `-interlace`: js.UndefOr[String] = js.native
+    var `-interlace`: js.UndefOr[String] = js.undefined
     
-    var `-interline-spacing`: js.UndefOr[String] = js.native
+    var `-interline-spacing`: js.UndefOr[String] = js.undefined
     
-    var `-interpolate`: js.UndefOr[String] = js.native
+    var `-interpolate`: js.UndefOr[String] = js.undefined
     
-    var `-interword-spacing`: js.UndefOr[String] = js.native
+    var `-interword-spacing`: js.UndefOr[String] = js.undefined
     
-    var `-kerning`: js.UndefOr[String] = js.native
+    var `-kerning`: js.UndefOr[String] = js.undefined
     
-    var `-kmeans`: js.UndefOr[String] = js.native
+    var `-kmeans`: js.UndefOr[String] = js.undefined
     
-    var `-kuwahara`: js.UndefOr[String] = js.native
+    var `-kuwahara`: js.UndefOr[String] = js.undefined
     
-    var `-label`: js.UndefOr[String] = js.native
+    var `-label`: js.UndefOr[String] = js.undefined
     
-    var `-lat`: js.UndefOr[String] = js.native
+    var `-lat`: js.UndefOr[String] = js.undefined
     
-    var `-layers`: js.UndefOr[String] = js.native
+    var `-layers`: js.UndefOr[String] = js.undefined
     
-    var `-level`: js.UndefOr[String] = js.native
+    var `-level`: js.UndefOr[String] = js.undefined
     
-    var `-limit`: js.UndefOr[String] = js.native
+    var `-limit`: js.UndefOr[String] = js.undefined
     
-    var `-linear-stretch`: js.UndefOr[String] = js.native
+    var `-linear-stretch`: js.UndefOr[String] = js.undefined
     
-    var `-liquid-rescale`: js.UndefOr[String] = js.native
+    var `-liquid-rescale`: js.UndefOr[String] = js.undefined
     
-    var `-list`: js.UndefOr[String] = js.native
+    var `-list`: js.UndefOr[String] = js.undefined
     
-    var `-log`: js.UndefOr[String] = js.native
+    var `-log`: js.UndefOr[String] = js.undefined
     
-    var `-loop`: js.UndefOr[String] = js.native
+    var `-loop`: js.UndefOr[String] = js.undefined
     
-    var `-mattecolor`: js.UndefOr[String] = js.native
+    var `-mattecolor`: js.UndefOr[String] = js.undefined
     
-    var `-mean-shift`: js.UndefOr[String] = js.native
+    var `-mean-shift`: js.UndefOr[String] = js.undefined
     
-    var `-median`: js.UndefOr[String] = js.native
+    var `-median`: js.UndefOr[String] = js.undefined
     
-    var `-metric`: js.UndefOr[String] = js.native
+    var `-metric`: js.UndefOr[String] = js.undefined
     
-    var `-mode`: js.UndefOr[String] = js.native
+    var `-mode`: js.UndefOr[String] = js.undefined
     
-    var `-modulate`: js.UndefOr[String] = js.native
+    var `-modulate`: js.UndefOr[String] = js.undefined
     
-    var `-moments`: js.UndefOr[String] = js.native
+    var `-moments`: js.UndefOr[String] = js.undefined
     
-    var `-monitor`: js.UndefOr[String] = js.native
+    var `-monitor`: js.UndefOr[String] = js.undefined
     
-    var `-monochrome`: js.UndefOr[String] = js.native
+    var `-monochrome`: js.UndefOr[String] = js.undefined
     
-    var `-morph`: js.UndefOr[String] = js.native
+    var `-morph`: js.UndefOr[String] = js.undefined
     
-    var `-morphology`: js.UndefOr[String] = js.native
+    var `-morphology`: js.UndefOr[String] = js.undefined
     
-    var `-motion-blur`: js.UndefOr[String] = js.native
+    var `-motion-blur`: js.UndefOr[String] = js.undefined
     
-    var `-negate`: js.UndefOr[String] = js.native
+    var `-negate`: js.UndefOr[String] = js.undefined
     
-    var `-noise`: js.UndefOr[String] = js.native
+    var `-noise`: js.UndefOr[String] = js.undefined
     
-    var `-normalize`: js.UndefOr[String] = js.native
+    var `-normalize`: js.UndefOr[String] = js.undefined
     
-    var `-opaque`: js.UndefOr[String] = js.native
+    var `-opaque`: js.UndefOr[String] = js.undefined
     
-    var `-ordered-dither`: js.UndefOr[String] = js.native
+    var `-ordered-dither`: js.UndefOr[String] = js.undefined
     
-    var `-orient`: js.UndefOr[String] = js.native
+    var `-orient`: js.UndefOr[String] = js.undefined
     
-    var `-page`: js.UndefOr[String] = js.native
+    var `-page`: js.UndefOr[String] = js.undefined
     
-    var `-paint`: js.UndefOr[String] = js.native
+    var `-paint`: js.UndefOr[String] = js.undefined
     
-    var `-perceptible`: js.UndefOr[String] = js.native
+    var `-perceptible`: js.UndefOr[String] = js.undefined
     
-    var `-ping`: js.UndefOr[String] = js.native
+    var `-ping`: js.UndefOr[String] = js.undefined
     
-    var `-pointsize`: js.UndefOr[String] = js.native
+    var `-pointsize`: js.UndefOr[String] = js.undefined
     
-    var `-polaroid`: js.UndefOr[String] = js.native
+    var `-polaroid`: js.UndefOr[String] = js.undefined
     
-    var `-poly`: js.UndefOr[String] = js.native
+    var `-poly`: js.UndefOr[String] = js.undefined
     
-    var `-posterize`: js.UndefOr[String] = js.native
+    var `-posterize`: js.UndefOr[String] = js.undefined
     
-    var `-precision`: js.UndefOr[String] = js.native
+    var `-precision`: js.UndefOr[String] = js.undefined
     
-    var `-preview`: js.UndefOr[String] = js.native
+    var `-preview`: js.UndefOr[String] = js.undefined
     
-    var `-print`: js.UndefOr[String] = js.native
+    var `-print`: js.UndefOr[String] = js.undefined
     
-    var `-process`: js.UndefOr[String] = js.native
+    var `-process`: js.UndefOr[String] = js.undefined
     
-    var `-profile`: js.UndefOr[String] = js.native
+    var `-profile`: js.UndefOr[String] = js.undefined
     
-    var `-quality`: js.UndefOr[String] = js.native
+    var `-quality`: js.UndefOr[String] = js.undefined
     
-    var `-quantize`: js.UndefOr[String] = js.native
+    var `-quantize`: js.UndefOr[String] = js.undefined
     
-    var `-quiet`: js.UndefOr[String] = js.native
+    var `-quiet`: js.UndefOr[String] = js.undefined
     
-    var `-radial-blur`: js.UndefOr[String] = js.native
+    var `-radial-blur`: js.UndefOr[String] = js.undefined
     
-    var `-raise`: js.UndefOr[String] = js.native
+    var `-raise`: js.UndefOr[String] = js.undefined
     
-    var `-random-threshold`: js.UndefOr[String] = js.native
+    var `-random-threshold`: js.UndefOr[String] = js.undefined
     
-    var `-range-threshold`: js.UndefOr[String] = js.native
+    var `-range-threshold`: js.UndefOr[String] = js.undefined
     
-    var `-read-mask`: js.UndefOr[String] = js.native
+    var `-read-mask`: js.UndefOr[String] = js.undefined
     
-    var `-red-primary`: js.UndefOr[String] = js.native
+    var `-red-primary`: js.UndefOr[String] = js.undefined
     
-    var `-regard-warnings`: js.UndefOr[String] = js.native
+    var `-regard-warnings`: js.UndefOr[String] = js.undefined
     
-    var `-region`: js.UndefOr[String] = js.native
+    var `-region`: js.UndefOr[String] = js.undefined
     
-    var `-remap`: js.UndefOr[String] = js.native
+    var `-remap`: js.UndefOr[String] = js.undefined
     
-    var `-render`: js.UndefOr[String] = js.native
+    var `-render`: js.UndefOr[String] = js.undefined
     
-    var `-repage`: js.UndefOr[String] = js.native
+    var `-repage`: js.UndefOr[String] = js.undefined
     
-    var `-resample`: js.UndefOr[String] = js.native
+    var `-resample`: js.UndefOr[String] = js.undefined
     
-    var `-resize`: js.UndefOr[String] = js.native
+    var `-resize`: js.UndefOr[String] = js.undefined
     
-    var `-respect-parentheses`: js.UndefOr[String] = js.native
+    var `-respect-parentheses`: js.UndefOr[String] = js.undefined
     
-    var `-roll`: js.UndefOr[String] = js.native
+    var `-roll`: js.UndefOr[String] = js.undefined
     
-    var `-rotate`: js.UndefOr[String] = js.native
+    var `-rotate`: js.UndefOr[String] = js.undefined
     
-    var `-sample`: js.UndefOr[String] = js.native
+    var `-sample`: js.UndefOr[String] = js.undefined
     
-    var `-sampling-factor`: js.UndefOr[String] = js.native
+    var `-sampling-factor`: js.UndefOr[String] = js.undefined
     
-    var `-scale`: js.UndefOr[String] = js.native
+    var `-scale`: js.UndefOr[String] = js.undefined
     
-    var `-scene`: js.UndefOr[String] = js.native
+    var `-scene`: js.UndefOr[String] = js.undefined
     
-    var `-seed`: js.UndefOr[String] = js.native
+    var `-seed`: js.UndefOr[String] = js.undefined
     
-    var `-segment`: js.UndefOr[String] = js.native
+    var `-segment`: js.UndefOr[String] = js.undefined
     
-    var `-selective-blur`: js.UndefOr[String] = js.native
+    var `-selective-blur`: js.UndefOr[String] = js.undefined
     
-    var `-separate`: js.UndefOr[String] = js.native
+    var `-separate`: js.UndefOr[String] = js.undefined
     
-    var `-sepia-tone`: js.UndefOr[String] = js.native
+    var `-sepia-tone`: js.UndefOr[String] = js.undefined
     
-    var `-set`: js.UndefOr[String] = js.native
+    var `-set`: js.UndefOr[String] = js.undefined
     
-    var `-shade`: js.UndefOr[String] = js.native
+    var `-shade`: js.UndefOr[String] = js.undefined
     
-    var `-shadow`: js.UndefOr[String] = js.native
+    var `-shadow`: js.UndefOr[String] = js.undefined
     
-    var `-sharpen`: js.UndefOr[String] = js.native
+    var `-sharpen`: js.UndefOr[String] = js.undefined
     
-    var `-shave`: js.UndefOr[String] = js.native
+    var `-shave`: js.UndefOr[String] = js.undefined
     
-    var `-shear`: js.UndefOr[String] = js.native
+    var `-shear`: js.UndefOr[String] = js.undefined
     
-    var `-sigmoidal-contrast`: js.UndefOr[String] = js.native
+    var `-sigmoidal-contrast`: js.UndefOr[String] = js.undefined
     
-    var `-size`: js.UndefOr[String] = js.native
+    var `-size`: js.UndefOr[String] = js.undefined
     
-    var `-sketch`: js.UndefOr[String] = js.native
+    var `-sketch`: js.UndefOr[String] = js.undefined
     
-    var `-smush`: js.UndefOr[String] = js.native
+    var `-smush`: js.UndefOr[String] = js.undefined
     
-    var `-solarize`: js.UndefOr[String] = js.native
+    var `-solarize`: js.UndefOr[String] = js.undefined
     
-    var `-splice`: js.UndefOr[String] = js.native
+    var `-splice`: js.UndefOr[String] = js.undefined
     
-    var `-spread`: js.UndefOr[String] = js.native
+    var `-spread`: js.UndefOr[String] = js.undefined
     
-    var `-statistic`: js.UndefOr[String] = js.native
+    var `-statistic`: js.UndefOr[String] = js.undefined
     
-    var `-stretch`: js.UndefOr[String] = js.native
+    var `-stretch`: js.UndefOr[String] = js.undefined
     
-    var `-strip`: js.UndefOr[String] = js.native
+    var `-strip`: js.UndefOr[String] = js.undefined
     
-    var `-stroke`: js.UndefOr[String] = js.native
+    var `-stroke`: js.UndefOr[String] = js.undefined
     
-    var `-strokewidth`: js.UndefOr[String] = js.native
+    var `-strokewidth`: js.UndefOr[String] = js.undefined
     
-    var `-style`: js.UndefOr[String] = js.native
+    var `-style`: js.UndefOr[String] = js.undefined
     
-    var `-swap`: js.UndefOr[String] = js.native
+    var `-swap`: js.UndefOr[String] = js.undefined
     
-    var `-swirl`: js.UndefOr[String] = js.native
+    var `-swirl`: js.UndefOr[String] = js.undefined
     
-    var `-synchronize`: js.UndefOr[String] = js.native
+    var `-synchronize`: js.UndefOr[String] = js.undefined
     
-    var `-taint`: js.UndefOr[String] = js.native
+    var `-taint`: js.UndefOr[String] = js.undefined
     
-    var `-texture`: js.UndefOr[String] = js.native
+    var `-texture`: js.UndefOr[String] = js.undefined
     
-    var `-threshold`: js.UndefOr[String] = js.native
+    var `-threshold`: js.UndefOr[String] = js.undefined
     
-    var `-thumbnail`: js.UndefOr[String] = js.native
+    var `-thumbnail`: js.UndefOr[String] = js.undefined
     
-    var `-tile`: js.UndefOr[String] = js.native
+    var `-tile`: js.UndefOr[String] = js.undefined
     
-    var `-tile-offset`: js.UndefOr[String] = js.native
+    var `-tile-offset`: js.UndefOr[String] = js.undefined
     
-    var `-tint`: js.UndefOr[String] = js.native
+    var `-tint`: js.UndefOr[String] = js.undefined
     
-    var `-transform`: js.UndefOr[String] = js.native
+    var `-transform`: js.UndefOr[String] = js.undefined
     
-    var `-transparent`: js.UndefOr[String] = js.native
+    var `-transparent`: js.UndefOr[String] = js.undefined
     
-    var `-transparent-color`: js.UndefOr[String] = js.native
+    var `-transparent-color`: js.UndefOr[String] = js.undefined
     
-    var `-transpose`: js.UndefOr[String] = js.native
+    var `-transpose`: js.UndefOr[String] = js.undefined
     
-    var `-transverse`: js.UndefOr[String] = js.native
+    var `-transverse`: js.UndefOr[String] = js.undefined
     
-    var `-treedepth`: js.UndefOr[String] = js.native
+    var `-treedepth`: js.UndefOr[String] = js.undefined
     
-    var `-trim`: js.UndefOr[String] = js.native
+    var `-trim`: js.UndefOr[String] = js.undefined
     
-    var `-type`: js.UndefOr[String] = js.native
+    var `-type`: js.UndefOr[String] = js.undefined
     
-    var `-undercolor`: js.UndefOr[String] = js.native
+    var `-undercolor`: js.UndefOr[String] = js.undefined
     
-    var `-unique-colors`: js.UndefOr[String] = js.native
+    var `-unique-colors`: js.UndefOr[String] = js.undefined
     
-    var `-units`: js.UndefOr[String] = js.native
+    var `-units`: js.UndefOr[String] = js.undefined
     
-    var `-unsharp`: js.UndefOr[String] = js.native
+    var `-unsharp`: js.UndefOr[String] = js.undefined
     
-    var `-verbose`: js.UndefOr[String] = js.native
+    var `-verbose`: js.UndefOr[String] = js.undefined
     
-    var `-version`: js.UndefOr[String] = js.native
+    var `-version`: js.UndefOr[String] = js.undefined
     
-    var `-view`: js.UndefOr[String] = js.native
+    var `-view`: js.UndefOr[String] = js.undefined
     
-    var `-vignette`: js.UndefOr[String] = js.native
+    var `-vignette`: js.UndefOr[String] = js.undefined
     
-    var `-virtual-pixel`: js.UndefOr[String] = js.native
+    var `-virtual-pixel`: js.UndefOr[String] = js.undefined
     
-    var `-wave`: js.UndefOr[String] = js.native
+    var `-wave`: js.UndefOr[String] = js.undefined
     
-    var `-wavelet-denoise`: js.UndefOr[String] = js.native
+    var `-wavelet-denoise`: js.UndefOr[String] = js.undefined
     
-    var `-weight`: js.UndefOr[String] = js.native
+    var `-weight`: js.UndefOr[String] = js.undefined
     
-    var `-white-point`: js.UndefOr[String] = js.native
+    var `-white-point`: js.UndefOr[String] = js.undefined
     
-    var `-white-threshold`: js.UndefOr[String] = js.native
+    var `-white-threshold`: js.UndefOr[String] = js.undefined
     
-    var `-write`: js.UndefOr[String] = js.native
+    var `-write`: js.UndefOr[String] = js.undefined
     
-    var `-write-mask`: js.UndefOr[String] = js.native
+    var `-write-mask`: js.UndefOr[String] = js.undefined
   }
   object ConvertOptions {
     
@@ -2979,21 +2977,20 @@ object mod {
   }
   
   type OptionalSpread[CombinedImage /* <: Boolean */] = js.Array[
-    (Options with `0`[CombinedImage]) | (Options with CombinedImageCombinedImage[CombinedImage]) | js.Any
+    (Options & `0`[CombinedImage]) | (Options & CombinedImageCombinedImage[CombinedImage]) | js.Any
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var convertExtension: js.UndefOr[String] = js.native
+    var convertExtension: js.UndefOr[String] = js.undefined
     
-    var convertOptions: js.UndefOr[ConvertOptions] = js.native
+    var convertOptions: js.UndefOr[ConvertOptions] = js.undefined
     
-    var graphicsMagick: js.UndefOr[Boolean] = js.native
+    var graphicsMagick: js.UndefOr[Boolean] = js.undefined
     
-    var outputDirectory: js.UndefOr[String] = js.native
+    var outputDirectory: js.UndefOr[String] = js.undefined
     
-    var pdfFileBaseName: js.UndefOr[String] = js.native
+    var pdfFileBaseName: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -3038,38 +3035,39 @@ object mod {
     }
   }
   
-  @js.native
-  trait PDFInfo extends /* key */ StringDictionary[String] {
+  trait PDFInfo
+    extends StObject
+       with /* key */ StringDictionary[String] {
     
-    var CreationDate: String = js.native
+    var CreationDate: String
     
-    var Creator: String = js.native
+    var Creator: String
     
-    var Encrypted: String = js.native
+    var Encrypted: String
     
-    var `File size`: String = js.native
+    var `File size`: String
     
-    var Form: String = js.native
+    var Form: String
     
-    var JavaScript: String = js.native
+    var JavaScript: String
     
-    var Optimized: String = js.native
+    var Optimized: String
     
-    var `PDF version`: String = js.native
+    var `PDF version`: String
     
-    var `Page rot`: String = js.native
+    var `Page rot`: String
     
-    var `Page size`: String = js.native
+    var `Page size`: String
     
-    var Pages: String = js.native
+    var Pages: String
     
-    var Producer: String = js.native
+    var Producer: String
     
-    var Suspects: String = js.native
+    var Suspects: String
     
-    var Tagged: String = js.native
+    var Tagged: String
     
-    var UserProperties: String = js.native
+    var UserProperties: String
   }
   object PDFInfo {
     

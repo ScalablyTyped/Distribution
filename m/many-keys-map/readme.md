@@ -9,16 +9,16 @@ A `Map` subclass with support for multiple keys for one entry.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | many-keys-map |
-| Keywords           | multiple, keys, map, multimap, multi, key, many, any |
-| # releases         | 5 |
+| Keywords           | any, key, keys, many, map, multi, multimap, multiple |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 34414 |
+| # downloads        | 49729 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/bfred-it/many-keys-map#readme)
-- [Bugs](https://github.com/bfred-it/many-keys-map/issues)
-- [Repository](https://github.com/bfred-it/many-keys-map)
+- [Homepage](https://github.com/fregante/many-keys-map#readme)
+- [Bugs](https://github.com/fregante/many-keys-map/issues)
+- [Repository](https://github.com/fregante/many-keys-map)
 - [Npm](https://www.npmjs.com/package/many-keys-map)
     
 

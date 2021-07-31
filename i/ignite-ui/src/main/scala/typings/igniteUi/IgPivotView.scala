@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotView
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,26 +16,26 @@ trait IgPivotView
     * Configuration settings that will be assigned to the igPivotDataSelector widget.
     *
     */
-  var dataSelectorOptions: js.UndefOr[IgPivotViewDataSelectorOptions] = js.native
+  var dataSelectorOptions: js.UndefOr[IgPivotViewDataSelectorOptions] = js.undefined
   
   /**
     * Configuration settings for the panel containing the igPivotDataSelector.
     *
     */
-  var dataSelectorPanel: js.UndefOr[IgPivotViewDataSelectorPanel] = js.native
+  var dataSelectorPanel: js.UndefOr[IgPivotViewDataSelectorPanel] = js.undefined
   
   /**
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     * The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.
     *
     */
-  var dataSourceOptions: js.UndefOr[IgPivotViewDataSourceOptions] = js.native
+  var dataSourceOptions: js.UndefOr[IgPivotViewDataSourceOptions] = js.undefined
   
   /**
     *
@@ -46,37 +45,37 @@ trait IgPivotView
     * "number" The widget height can be set as a number.
     * "null" will stretch vertically to fit the parent, if no other heights are defined.
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Configuration settings that will be assigned to the igPivotGrid widget.
     *
     */
-  var pivotGridOptions: js.UndefOr[IgPivotViewPivotGridOptions] = js.native
+  var pivotGridOptions: js.UndefOr[IgPivotViewPivotGridOptions] = js.undefined
   
   /**
     * Configuration settings for the panel containing the igPivotGrid.
     *
     */
-  var pivotGridPanel: js.UndefOr[IgPivotViewPivotGridPanel] = js.native
+  var pivotGridPanel: js.UndefOr[IgPivotViewPivotGridPanel] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     *
@@ -86,7 +85,7 @@ trait IgPivotView
     * "number" The widget width can be set as a number.
     * "null" will stretch to fit the parent, if no other widths are defined.
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgPivotView {
   

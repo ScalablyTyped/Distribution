@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wdio/config" : "6.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wdio/config" : "6.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

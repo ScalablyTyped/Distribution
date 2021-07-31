@@ -4,19 +4,17 @@ import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.Foundation.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintPageDescription extends StObject {
   
-  var dpiX: Double = js.native
+  var dpiX: Double
   
-  var dpiY: Double = js.native
+  var dpiY: Double
   
-  var imageableRect: Rect = js.native
+  var imageableRect: Rect
   
-  var pageSize: Size = js.native
+  var pageSize: Size
 }
 object PrintPageDescription {
   

@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Styles extends StObject {
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
 }
 object Styles {
   
   @scala.inline
-  def apply(styles: StringDictionary[RegisteredStyle[_]]): Styles = {
+  def apply(styles: StringDictionary[RegisteredStyle[js.Any]]): Styles = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styles]
   }
@@ -24,6 +22,6 @@ object Styles {
   implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

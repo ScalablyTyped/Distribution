@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exemplar extends StObject {
   
   /**
@@ -18,15 +16,15 @@ trait Exemplar extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** The observation (sampling) time of the above value. */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /** Value of the exemplar point. This value determines to which bucket the exemplar belongs. */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object Exemplar {
   
@@ -44,7 +42,7 @@ object Exemplar {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
@@ -55,7 +53,7 @@ object Exemplar {
     def setAttachmentsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar & TopLevel[js.Any])*
     ): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline

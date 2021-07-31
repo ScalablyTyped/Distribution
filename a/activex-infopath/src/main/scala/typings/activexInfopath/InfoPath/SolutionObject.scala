@@ -3,22 +3,20 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SolutionObject extends StObject {
   
-  val DOM: IXMLDOMDocument = js.native
+  val DOM: IXMLDOMDocument
   
   @JSName("InfoPath.SolutionObject_typekey")
-  var InfoPathDotSolutionObject_typekey: SolutionObject = js.native
+  var InfoPathDotSolutionObject_typekey: SolutionObject
   
-  val PackageURL: String = js.native
+  val PackageURL: String
   
-  val URI: String = js.native
+  val URI: String
   
-  val Version: String = js.native
+  val Version: String
 }
 object SolutionObject {
   

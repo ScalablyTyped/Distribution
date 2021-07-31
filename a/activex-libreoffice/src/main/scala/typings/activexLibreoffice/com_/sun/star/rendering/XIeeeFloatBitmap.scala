@@ -9,12 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specialized interface for bitmaps containing IEEE floats as their color components. */
-@js.native
-trait XIeeeFloatBitmap extends XIeeeFloatReadOnlyBitmap {
+trait XIeeeFloatBitmap
+  extends StObject
+     with XIeeeFloatReadOnlyBitmap {
   
   /**
     * Set raw data of a bitmap.
@@ -31,7 +31,7 @@ trait XIeeeFloatBitmap extends XIeeeFloatReadOnlyBitmap {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if parts of the given rectangle are outside the permissible bitmap area.
     * @throws com::sun::star::lang::IllegalArgumentException if the given memory layout does not match this bitmap's layout, or if the given data sequence has
     */
-  def setData(data: SeqEquiv[Double], bitmapLayout: FloatingPointBitmapLayout, rect: IntegerRectangle2D): Unit = js.native
+  def setData(data: SeqEquiv[Double], bitmapLayout: FloatingPointBitmapLayout, rect: IntegerRectangle2D): Unit
   
   /**
     * Set a single pixel of the bitmap with the given color value.
@@ -45,7 +45,7 @@ trait XIeeeFloatBitmap extends XIeeeFloatReadOnlyBitmap {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given point is outside the permissible bitmap area.
     * @throws com::sun::star::lang::IllegalArgumentException if the given memory layout does not match this bitmap's layout, or if the given data sequence has
     */
-  def setPixel(color: SeqEquiv[Double], bitmapLayout: FloatingPointBitmapLayout, pos: IntegerPoint2D): Unit = js.native
+  def setPixel(color: SeqEquiv[Double], bitmapLayout: FloatingPointBitmapLayout, pos: IntegerPoint2D): Unit
 }
 object XIeeeFloatBitmap {
   

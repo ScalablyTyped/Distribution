@@ -2,41 +2,39 @@ package typings.filepond.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePondSvgIconProps extends StObject {
   
   /**
     * The icon used for done.
     * @default '<svg></svg>'
     */
-  var iconDone: js.UndefOr[String] = js.native
+  var iconDone: js.UndefOr[String] = js.undefined
   
   /**
     * The icon used for process actions.
     * @default '<svg></svg>'
     */
-  var iconProcess: js.UndefOr[String] = js.native
+  var iconProcess: js.UndefOr[String] = js.undefined
   
   /**
     * The icon used for remove actions.
     * @default '<svg></svg>'
     */
-  var iconRemove: js.UndefOr[String] = js.native
+  var iconRemove: js.UndefOr[String] = js.undefined
   
   /**
     * The icon used for retry actions.
     * @default '<svg></svg>'
     */
-  var iconRetry: js.UndefOr[String] = js.native
+  var iconRetry: js.UndefOr[String] = js.undefined
   
   /**
     * The icon used for undo actions.
     * @default '<svg></svg>'
     */
-  var iconUndo: js.UndefOr[String] = js.native
+  var iconUndo: js.UndefOr[String] = js.undefined
 }
 object FilePondSvgIconProps {
   

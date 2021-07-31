@@ -6,21 +6,19 @@ import typings.uniApp.uniAppStrings.push
 import typings.uniApp.uniAppStrings.share
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProviderOptions extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 服务类型，可取值“oauth”、“share”、“payment”、“push”
@@ -29,12 +27,12 @@ trait GetProviderOptions extends StObject {
     * - payment: 支付
     * - push: 推送
     */
-  var service: js.UndefOr[oauth | share | payment | push] = js.native
+  var service: js.UndefOr[oauth | share | payment | push] = js.undefined
   
   /**
     * 接口调用成功的回调
     */
-  var success: js.UndefOr[js.Function1[/* result */ GetProviderRes, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ GetProviderRes, Unit]] = js.undefined
 }
 object GetProviderOptions {
   

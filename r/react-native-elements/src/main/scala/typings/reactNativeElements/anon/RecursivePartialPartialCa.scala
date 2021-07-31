@@ -9,38 +9,36 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.CardProps>> */
-@js.native
 trait RecursivePartialPartialCa extends StObject {
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var dividerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var dividerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var featuredSubtitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var featuredSubtitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var featuredSubtitleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var featuredSubtitleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var featuredTitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var featuredTitle: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var featuredTitleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var featuredTitleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var image: js.UndefOr[RecursivePartial[js.UndefOr[ImageSourcePropType]]] = js.native
+  var image: js.UndefOr[RecursivePartial[js.UndefOr[ImageSourcePropType]]] = js.undefined
   
-  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialImageProps]]] = js.native
+  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialImageProps]]] = js.undefined
   
-  var imageStyle: js.UndefOr[RecursivePartial[js.UndefOr[ImageStyle]]] = js.native
+  var imageStyle: js.UndefOr[RecursivePartial[js.UndefOr[ImageStyle]]] = js.undefined
   
-  var imageWrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var imageWrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var title: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.native
+  var title: js.UndefOr[RecursivePartial[js.UndefOr[String | ReactElement]]] = js.undefined
   
-  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var wrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var wrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
 }
 object RecursivePartialPartialCa {
   

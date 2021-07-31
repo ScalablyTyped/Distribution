@@ -4,45 +4,84 @@ import typings.std.CSSRule
 import typings.std.CSSStyleSheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleSheetMod {
   
   @JSImport("ui-box/dist/src/utils/style-sheet", JSImport.Default)
   @js.native
-  class default () extends CustomStyleSheet {
+  class default ()
+    extends StObject
+       with CustomStyleSheet {
     def this(options: Options) = this()
-  }
-  
-  @js.native
-  trait CustomStyleSheet extends StObject {
     
-    def _insert(sheet: CSSStyleSheet, rule: String): Unit = js.native
+    /* CompleteClass */
+    override def _insert(sheet: CSSStyleSheet, rule: String): Unit = js.native
     
+    /* CompleteClass */
     var ctr: js.Any = js.native
     
-    def flush(): Unit = js.native
+    /* CompleteClass */
+    override def flush(): Unit = js.native
     
-    def getSheet(): js.UndefOr[CSSStyleSheet] = js.native
+    /* CompleteClass */
+    override def getSheet(): js.UndefOr[CSSStyleSheet] = js.native
     
-    def inject(): Unit = js.native
+    /* CompleteClass */
+    override def inject(): Unit = js.native
     
+    /* CompleteClass */
     var injected: js.Any = js.native
     
-    def insert(rule: String): Double = js.native
+    /* CompleteClass */
+    override def insert(rule: String): Double = js.native
     
+    /* CompleteClass */
     var isSpeedy: js.Any = js.native
     
+    /* CompleteClass */
     var maxLength: js.Any = js.native
     
-    def rules(): js.Array[CSSRule] = js.native
+    /* CompleteClass */
+    override def rules(): js.Array[CSSRule] = js.native
     
+    /* CompleteClass */
     var sheet: js.Any = js.native
     
-    def speedy(bool: Boolean): Unit = js.native
+    /* CompleteClass */
+    override def speedy(bool: Boolean): Unit = js.native
     
+    /* CompleteClass */
     var tags: js.Any = js.native
+  }
+  
+  trait CustomStyleSheet extends StObject {
+    
+    def _insert(sheet: CSSStyleSheet, rule: String): Unit
+    
+    var ctr: js.Any
+    
+    def flush(): Unit
+    
+    def getSheet(): js.UndefOr[CSSStyleSheet]
+    
+    def inject(): Unit
+    
+    var injected: js.Any
+    
+    def insert(rule: String): Double
+    
+    var isSpeedy: js.Any
+    
+    var maxLength: js.Any
+    
+    def rules(): js.Array[CSSRule]
+    
+    var sheet: js.Any
+    
+    def speedy(bool: Boolean): Unit
+    
+    var tags: js.Any
   }
   object CustomStyleSheet {
     
@@ -110,12 +149,11 @@ object styleSheetMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var speedy: js.UndefOr[Boolean] = js.native
+    var speedy: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

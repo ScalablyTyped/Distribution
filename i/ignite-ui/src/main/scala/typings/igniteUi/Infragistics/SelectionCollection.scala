@@ -2,51 +2,49 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionCollection extends StObject {
   
-  def activate(identifier: js.Object, element: js.Object, suppress: js.Object): Unit = js.native
+  def activate(identifier: js.Object, element: js.Object, suppress: js.Object): Unit
   
-  def addSubscriber(subscriber: js.Object, owner: js.Object): Unit = js.native
+  def addSubscriber(subscriber: js.Object, owner: js.Object): Unit
   
-  def changeOwner(newOwner: js.Object): Unit = js.native
+  def changeOwner(newOwner: js.Object): Unit
   
-  def cleanAll(forOwner: js.Object): Unit = js.native
+  def cleanAll(forOwner: js.Object): Unit
   
-  def clearSelection(forOwner: js.Object): Unit = js.native
+  def clearSelection(forOwner: js.Object): Unit
   
-  def deactivate(suppress: js.Object): Unit = js.native
+  def deactivate(suppress: js.Object): Unit
   
-  def deselect(identifier: js.Object, info: js.Object, suppress: js.Object): Unit = js.native
+  def deselect(identifier: js.Object, info: js.Object, suppress: js.Object): Unit
   
-  def deselectAll(suppress: js.Object): Unit = js.native
+  def deselectAll(suppress: js.Object): Unit
   
-  def elementFromIdentifier(identifier: js.Object): Unit = js.native
+  def elementFromIdentifier(identifier: js.Object): Unit
   
-  def isActive(identifier: js.Object, forOwner: js.Object): Unit = js.native
+  def isActive(identifier: js.Object, forOwner: js.Object): Unit
   
-  def isSelected(identifier: js.Object, forOwner: js.Object): Unit = js.native
+  def isSelected(identifier: js.Object, forOwner: js.Object): Unit
   
-  def onlyOneSelected(): Unit = js.native
+  def onlyOneSelected(): Unit
   
-  def rangeDeselect(range: js.Object, info: js.Object, suppress: js.Object): Unit = js.native
+  def rangeDeselect(range: js.Object, info: js.Object, suppress: js.Object): Unit
   
-  def rangeSelect(range: js.Object, add: js.Object, prevRange: js.Object, info: js.Object, suppress: js.Object): Unit = js.native
+  def rangeSelect(range: js.Object, add: js.Object, prevRange: js.Object, info: js.Object, suppress: js.Object): Unit
   
-  def removeSubscriber(subscriberId: js.Object, owner: js.Object): Unit = js.native
+  def removeSubscriber(subscriberId: js.Object, owner: js.Object): Unit
   
-  def select(identifier: js.Object, add: js.Object, info: js.Object, suppress: js.Object): Unit = js.native
+  def select(identifier: js.Object, add: js.Object, info: js.Object, suppress: js.Object): Unit
   
-  def selectedCells(): Unit = js.native
+  def selectedCells(): Unit
   
-  def selectedRows(): Unit = js.native
+  def selectedRows(): Unit
   
-  def selectionLength(): Unit = js.native
+  def selectionLength(): Unit
   
-  def toggle(element: js.Object): Unit = js.native
+  def toggle(element: js.Object): Unit
 }
 object SelectionCollection {
   

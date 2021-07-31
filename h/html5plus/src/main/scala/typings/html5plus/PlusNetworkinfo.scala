@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
   */
-@js.native
 trait PlusNetworkinfo extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var CONNECTION_CELL2G: js.UndefOr[Double] = js.native
+  var CONNECTION_CELL2G: js.UndefOr[Double] = js.undefined
   
   /**
     * 蜂窝移动3G网络
@@ -27,7 +25,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var CONNECTION_CELL3G: js.UndefOr[Double] = js.native
+  var CONNECTION_CELL3G: js.UndefOr[Double] = js.undefined
   
   /**
     * 蜂窝移动4G网络
@@ -35,7 +33,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var CONNECTION_CELL4G: js.UndefOr[Double] = js.native
+  var CONNECTION_CELL4G: js.UndefOr[Double] = js.undefined
   
   /**
     * 有线网络
@@ -43,7 +41,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var CONNECTION_ETHERNET: js.UndefOr[Double] = js.native
+  var CONNECTION_ETHERNET: js.UndefOr[Double] = js.undefined
   
   /**
     * 未连接网络
@@ -51,7 +49,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var CONNECTION_NONE: js.UndefOr[Double] = js.native
+  var CONNECTION_NONE: js.UndefOr[Double] = js.undefined
   
   /**
     * 网络连接状态未知
@@ -59,7 +57,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var CONNECTION_UNKNOW: js.UndefOr[Double] = js.native
+  var CONNECTION_UNKNOW: js.UndefOr[Double] = js.undefined
   
   /**
     * 无线WIFI网络
@@ -67,7 +65,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  var CONNECTION_WIFI: js.UndefOr[Double] = js.native
+  var CONNECTION_WIFI: js.UndefOr[Double] = js.undefined
   
   /**
     * 获取设备当前连接的网络类型
@@ -75,7 +73,7 @@ trait PlusNetworkinfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
-  def getCurrentType(): Double = js.native
+  def getCurrentType(): Double
 }
 object PlusNetworkinfo {
   

@@ -6,7 +6,6 @@ import typings.baseui.blockMod.Scale
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexGridMod {
@@ -19,12 +18,13 @@ object flexGridMod {
   @js.native
   val FlexGridItem: FC[FlexGridItemProps] = js.native
   
-  @js.native
-  trait FlexGridItemProps extends FlexGridProps {
+  trait FlexGridItemProps
+    extends StObject
+       with FlexGridProps {
     
-    var flexGridItemCount: js.UndefOr[Double] = js.native
+    var flexGridItemCount: js.UndefOr[Double] = js.undefined
     
-    var flexGridItemIndex: js.UndefOr[Double] = js.native
+    var flexGridItemIndex: js.UndefOr[Double] = js.undefined
   }
   object FlexGridItemProps {
     
@@ -51,14 +51,15 @@ object flexGridMod {
     }
   }
   
-  @js.native
-  trait FlexGridProps extends BlockProps {
+  trait FlexGridProps
+    extends StObject
+       with BlockProps {
     
-    var flexGridColumnCount: js.UndefOr[Responsive[Double]] = js.native
+    var flexGridColumnCount: js.UndefOr[Responsive[Double]] = js.undefined
     
-    var flexGridColumnGap: js.UndefOr[Responsive[Scale]] = js.native
+    var flexGridColumnGap: js.UndefOr[Responsive[Scale]] = js.undefined
     
-    var flexGridRowGap: js.UndefOr[Responsive[Scale]] = js.native
+    var flexGridRowGap: js.UndefOr[Responsive[Scale]] = js.undefined
   }
   object FlexGridProps {
     

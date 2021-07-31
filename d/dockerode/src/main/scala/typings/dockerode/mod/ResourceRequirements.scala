@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceRequirements extends StObject {
   
-  var Limits: js.UndefOr[ResourceLimits] = js.native
+  var Limits: js.UndefOr[ResourceLimits] = js.undefined
   
-  var Reservations: js.UndefOr[Resources] = js.native
+  var Reservations: js.UndefOr[Resources] = js.undefined
 }
 object ResourceRequirements {
   

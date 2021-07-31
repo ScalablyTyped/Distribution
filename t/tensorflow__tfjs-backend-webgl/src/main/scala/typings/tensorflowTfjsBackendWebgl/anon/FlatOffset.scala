@@ -3,15 +3,13 @@ package typings.tensorflowTfjsBackendWebgl.anon
 import typings.tensorflowTfjsCore.kernelRegistryMod.DataId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlatOffset extends StObject {
   
-  var flatOffset: Double = js.native
+  var flatOffset: Double
   
-  var origDataId: DataId = js.native
+  var origDataId: DataId
 }
 object FlatOffset {
   

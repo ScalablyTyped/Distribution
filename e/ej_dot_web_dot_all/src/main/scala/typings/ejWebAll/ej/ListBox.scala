@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBox extends Widget_ {
+trait ListBox
+  extends StObject
+     with Widget_ {
   
   def addItem(listItem: String, index: Double): Unit = js.native
   /** Adds a given list items in the ListBox widget at a specified index. It accepts two parameters.
@@ -160,13 +161,13 @@ trait ListBox extends Widget_ {
     * @param {any[]} Values of the listbox items to be hidden.
     * @returns {void}
     */
-  def hideItemsByValues(values: js.Array[_]): Unit = js.native
+  def hideItemsByValues(values: js.Array[js.Any]): Unit = js.native
   
   /** Merges the given data with the existing data items in the listbox.
     * @param {any[]} Data to merge in listbox.
     * @returns {void}
     */
-  def mergeData(data: js.Array[_]): Unit = js.native
+  def mergeData(data: js.Array[js.Any]): Unit = js.native
   
   @JSName("model")
   var model_ListBox: Model = js.native
@@ -273,7 +274,7 @@ trait ListBox extends Widget_ {
     * @param {any[]} Values of the listbox items to be shown.
     * @returns {void}
     */
-  def showItemsByValues(values: js.Array[_]): Unit = js.native
+  def showItemsByValues(values: js.Array[js.Any]): Unit = js.native
   
   /** Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
     * @returns {void}
@@ -333,47 +334,52 @@ object ListBox {
     
     ///To sort items in Ascending order.
     @js.native
-    sealed trait Ascending extends SortOrder
+    sealed trait Ascending
+      extends StObject
+         with SortOrder
     
     ///To sort items in Descending order.
     @js.native
-    sealed trait Descending extends SortOrder
+    sealed trait Descending
+      extends StObject
+         with SortOrder
     
     ///The items are not sorted.
     @js.native
-    sealed trait None extends SortOrder
+    sealed trait None
+      extends StObject
+         with SortOrder
   }
   
-  @js.native
   trait ActionBeforeSuccessEventArgs extends StObject {
     
     /** List of actual object.
       */
-    var actual: js.UndefOr[js.Any] = js.native
+    var actual: js.UndefOr[js.Any] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Object of ListBox widget which contains DataManager arguments
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /** List of array object
       */
-    var result: js.UndefOr[js.Array[_]] = js.native
+    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** ExecuteQuery object of DataManager
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object ActionBeforeSuccessEventArgs {
     
@@ -411,7 +417,7 @@ object ListBox {
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       @scala.inline
-      def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -433,20 +439,19 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -479,40 +484,39 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns number of times trying to fetch the data
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[_]] = js.native
+    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -556,7 +560,7 @@ object ListBox {
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       @scala.inline
-      def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -578,28 +582,27 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ActionFailureEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the error message
       */
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionFailureEventArgs {
     
@@ -644,40 +647,39 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ActionSuccessEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns number of times trying to fetch the data
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[_]] = js.native
+    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object ActionSuccessEventArgs {
     
@@ -721,7 +723,7 @@ object ListBox {
       def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       @scala.inline
-      def setResult(value: js.Array[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
@@ -743,52 +745,51 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -869,52 +870,51 @@ object ListBox {
     }
   }
   
-  @js.native
   trait CheckChangeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CheckChangeEventArgs {
     
@@ -995,20 +995,19 @@ object ListBox {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -1041,20 +1040,19 @@ object ListBox {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -1087,52 +1085,51 @@ object ListBox {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.
       */
-    var checkBy: js.UndefOr[Boolean] = js.native
+    var checkBy: js.UndefOr[Boolean] = js.undefined
     
     /** The grouping in the ListBox widget can be defined using this field.
       */
-    var groupBy: js.UndefOr[String] = js.native
+    var groupBy: js.UndefOr[String] = js.undefined
     
     /** Defines the HTML attributes such as id, class, styles for the specific ListBox item.
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the specific field name which contains id values for the list items.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Defines the image attributes such as height, width, styles and so on.
       */
-    var imageAttributes: js.UndefOr[String] = js.native
+    var imageAttributes: js.UndefOr[String] = js.undefined
     
     /** Defines the imageURL for the image to be displayed in the ListBox item.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.
       */
-    var selectBy: js.UndefOr[Boolean] = js.native
+    var selectBy: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the sprite CSS class for the image to be displayed.
       */
-    var spriteCssClass: js.UndefOr[String] = js.native
+    var spriteCssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the table name to get the specific set of list items to be loaded in the ListBox widget while rendering with remote data.
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
     
     /** Defines the specific field name in the data source to load the list with data.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Defines the specific field name in the data source to load the list with data value property.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -1213,20 +1210,19 @@ object ListBox {
     }
   }
   
-  @js.native
   trait FocusInEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FocusInEventArgs {
     
@@ -1259,20 +1255,19 @@ object ListBox {
     }
   }
   
-  @js.native
   trait FocusOutEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FocusOutEventArgs {
     
@@ -1305,48 +1300,47 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ItemDragEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ItemDragEventArgs {
     
@@ -1421,48 +1415,47 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ItemDragStartEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ItemDragStartEventArgs {
     
@@ -1537,48 +1530,47 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ItemDragStopEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ItemDragStopEventArgs {
     
@@ -1653,48 +1645,47 @@ object ListBox {
     }
   }
   
-  @js.native
   trait ItemDropEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ItemDropEventArgs {
     
@@ -1769,239 +1760,238 @@ object ListBox {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Event will be triggered before the requested data via AJAX once loaded in successfully.
       */
-    var actionBeforeSuccess: js.UndefOr[js.Function1[/* e */ ActionBeforeSuccessEventArgs, Unit]] = js.native
+    var actionBeforeSuccess: js.UndefOr[js.Function1[/* e */ ActionBeforeSuccessEventArgs, Unit]] = js.undefined
     
     /** Triggers before the AJAX request begins to load data in the ListBox widget.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggers when the AJAX requests complete. The request may get failed or succeed.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when the data requested from AJAX get failed.
       */
-    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.native
+    var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers after the data requested via AJAX is successfully loaded in the ListBox widget.
       */
-    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.native
+    var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.undefined
     
     /** Enables/disables the dragging behavior of the items in ListBox widget.
       * @Default {false}
       */
-    var allowDrag: js.UndefOr[Boolean] = js.native
+    var allowDrag: js.UndefOr[Boolean] = js.undefined
     
     /** Accepts the items which are dropped in to it, when it is set to true.
       * @Default {false}
       */
-    var allowDrop: js.UndefOr[Boolean] = js.native
+    var allowDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables multiple selection.
       * @Default {false}
       */
-    var allowMultiSelection: js.UndefOr[Boolean] = js.native
+    var allowMultiSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Loads the list data on demand via scrolling behavior to improve the applicationâ€™s performance. There are two ways to load data which can be defined using â€œvirtualScrollModeâ€
       * property.
       * @Default {false}
       */
-    var allowVirtualScrolling: js.UndefOr[Boolean] = js.native
+    var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This property
       * accepts the id of the child ListBox widget to populate the data.
       * @Default {null}
       */
-    var cascadeTo: js.UndefOr[String] = js.native
+    var cascadeTo: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the case sensitive search for list item by typing the text (search) value.
       * @Default {false}
       */
-    var caseSensitiveSearch: js.UndefOr[Boolean] = js.native
+    var caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when the item selection is changed.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the list item is checked or unchecked.
       */
-    var checkChange: js.UndefOr[js.Function1[/* e */ CheckChangeEventArgs, Unit]] = js.native
+    var checkChange: js.UndefOr[js.Function1[/* e */ CheckChangeEventArgs, Unit]] = js.undefined
     
     /** Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true.
       * @Default {null}
       */
-    var checkedIndices: js.UndefOr[js.Array[_]] = js.native
+    var checkedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Triggers when the ListBox widget is created successfully.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** The root class for the ListBox widget to customize the existing theme.
       * @Default {â€œâ€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Contains the list of data for generating the list items.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers when the ListBox widget is destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the search behavior to find the specific list item by typing the text value.
       * @Default {false}
       */
-    var enableIncrementalSearch: js.UndefOr[Boolean] = js.native
+    var enableIncrementalSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the ListBox widgetâ€™s content from right to left when enabled.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies ellipsis (&quot;...&quot;) representation in an overflowed list item content when it is set to false.
       * @Default {true}
       */
-    var enableWordWrap: js.UndefOr[Boolean] = js.native
+    var enableWordWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ListBox widget.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Mapping fields for the data items of the ListBox widget.
       * @Default {null}
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** Triggers when focus the listbox items.
       */
-    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.native
+    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.undefined
     
     /** Triggers when focus out from listbox items.
       */
-    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.native
+    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Defines the height of the ListBox widget.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Triggers when the list item is being dragged.
       */
-    var itemDrag: js.UndefOr[js.Function1[/* e */ ItemDragEventArgs, Unit]] = js.native
+    var itemDrag: js.UndefOr[js.Function1[/* e */ ItemDragEventArgs, Unit]] = js.undefined
     
     /** Triggers when the list item is ready to be dragged.
       */
-    var itemDragStart: js.UndefOr[js.Function1[/* e */ ItemDragStartEventArgs, Unit]] = js.native
+    var itemDragStart: js.UndefOr[js.Function1[/* e */ ItemDragStartEventArgs, Unit]] = js.undefined
     
     /** Triggers when the list item stops dragging.
       */
-    var itemDragStop: js.UndefOr[js.Function1[/* e */ ItemDragStopEventArgs, Unit]] = js.native
+    var itemDragStop: js.UndefOr[js.Function1[/* e */ ItemDragStopEventArgs, Unit]] = js.undefined
     
     /** Triggers when the list item is dropped.
       */
-    var itemDrop: js.UndefOr[js.Function1[/* e */ ItemDropEventArgs, Unit]] = js.native
+    var itemDrop: js.UndefOr[js.Function1[/* e */ ItemDropEventArgs, Unit]] = js.undefined
     
     /** Defines the height for individual ListBox item.
       * @Default {null}
       */
-    var itemHeight: js.UndefOr[String] = js.native
+    var itemHeight: js.UndefOr[String] = js.undefined
     
     /** The number of list items to be loaded in the list box while enabling virtual scrolling and when virtualScrollMode is set to continuous.
       * @Default {5}
       */
-    var itemRequestCount: js.UndefOr[Double] = js.native
+    var itemRequestCount: js.UndefOr[Double] = js.undefined
     
     /** The number of list items to be shown in the ListBox widget. The remaining list items will be scrollable.
       * @Default {null}
       */
-    var itemsCount: js.UndefOr[Double] = js.native
+    var itemsCount: js.UndefOr[Double] = js.undefined
     
     /** Loads data for the listbox by default (i.e. on initialization) when it is set to true. It creates empty ListBox if it is set to false.
       * @Default {true}
       */
-    var loadDataOnInit: js.UndefOr[Boolean] = js.native
+    var loadDataOnInit: js.UndefOr[Boolean] = js.undefined
     
     /** The query to retrieve required data from the data source.
       * @Default {ej.Query()}
       */
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
     
     /** Triggers when a list item gets selected.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** The list item to be selected by default using its index.
       * @Default {null}
       */
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
     /** The list items to be selected by default using its indices. To use this property allowMultiSelection should be enabled.
       * @Default {[]}
       */
-    var selectedIndices: js.UndefOr[js.Array[_]] = js.native
+    var selectedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Enables/Disables the multi selection option with the help of checkbox control.
       * @Default {false}
       */
-    var showCheckbox: js.UndefOr[Boolean] = js.native
+    var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** To display the ListBox container with rounded corners.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Set to sort ListBox items either by Ascending or Descending order. By default sortOrder is set as enum type of &quot;None&quot;.You can use only below mentioned type for sorting
       * purpose.
       * @Default {ej.SortOrder.None}
       */
-    var sortOrder: js.UndefOr[SortOrder_ | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder_ | String] = js.undefined
     
     /** Specifies the targetID for the listbox items.
       * @Default {null}
       */
-    var targetID: js.UndefOr[String] = js.native
+    var targetID: js.UndefOr[String] = js.undefined
     
     /** The template to display the ListBox widget with customized appearance.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** The total number of list items to be rendered in the ListBox widget.
       * @Default {null}
       */
-    var totalItemsCount: js.UndefOr[Double] = js.native
+    var totalItemsCount: js.UndefOr[Double] = js.undefined
     
     /** Triggers when a list item gets unselected.
       */
-    var unselect: js.UndefOr[js.Function1[/* e */ UnselectEventArgs, Unit]] = js.native
+    var unselect: js.UndefOr[js.Function1[/* e */ UnselectEventArgs, Unit]] = js.undefined
     
     /** Holds the selected items values and used to bind value to the list item using AngularJS and KnockoutJS.
       * @Default {â€œâ€}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
       * @Default {ej.VirtualScrollMode.Normal}
       */
-    var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.native
+    var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.undefined
     
     /** Defines the width of the ListBox widget.
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -2093,7 +2083,7 @@ object ListBox {
       def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
       
       @scala.inline
-      def setCheckedIndices(value: js.Array[_]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
+      def setCheckedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCheckedIndicesUndefined: Self = StObject.set(x, "checkedIndices", js.undefined)
@@ -2246,7 +2236,7 @@ object ListBox {
       def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
       
       @scala.inline
-      def setSelectedIndices(value: js.Array[_]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      def setSelectedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
@@ -2316,52 +2306,51 @@ object ListBox {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     
@@ -2442,52 +2431,51 @@ object ListBox {
     }
   }
   
-  @js.native
   trait UnselectEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** List itemâ€™s index.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Boolean value based on whether the list item is checked or not.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on the list item is enabled or not.
       */
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** Boolean value based on whether the list item is selected or not.
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** List itemâ€™s text (label).
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** List itemâ€™s value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object UnselectEventArgs {
     

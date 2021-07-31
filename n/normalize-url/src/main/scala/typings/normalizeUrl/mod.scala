@@ -3,7 +3,6 @@ package typings.normalizeUrl
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,20 +19,21 @@ object mod {
   //=> 'http://sindresorhus.com/baz?a=foo&b=bar'
   ```
   */
-  @JSImport("normalize-url", JSImport.Namespace)
-  @js.native
-  def apply(url: String): String = js.native
-  @JSImport("normalize-url", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): String = js.native
+  @scala.inline
+  def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("normalize-url", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		@default 'http:'
     		*/
-    val defaultProtocol: js.UndefOr[String] = js.native
+    val defaultProtocol: js.UndefOr[String] = js.undefined
     
     /**
     		Normalizes `https:` URLs to `http:`.
@@ -46,7 +46,7 @@ object mod {
     		//=> 'http://sindresorhus.com'
     		```
     		*/
-    val forceHttp: js.UndefOr[Boolean] = js.native
+    val forceHttp: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Normalizes `http:` URLs to `https:`.
@@ -60,7 +60,7 @@ object mod {
     		//=> 'https://sindresorhus.com'
     		```
     		*/
-    val forceHttps: js.UndefOr[Boolean] = js.native
+    val forceHttps: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Prepends `defaultProtocol` to the URL if it's protocol-relative.
@@ -73,7 +73,7 @@ object mod {
     		//=> '//sindresorhus.com'
     		```
     		*/
-    val normalizeProtocol: js.UndefOr[Boolean] = js.native
+    val normalizeProtocol: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Removes the default directory index file from path that matches any of the provided strings or regexes.
@@ -87,7 +87,7 @@ object mod {
     		//=> 'http://sindresorhus.com/foo'
     		```
     		*/
-    val removeDirectoryIndex: js.UndefOr[js.Array[RegExp | String]] = js.native
+    val removeDirectoryIndex: js.UndefOr[js.Array[RegExp | String]] = js.undefined
     
     /**
     		Removes query parameters that matches any of the provided strings or regexes.
@@ -100,7 +100,7 @@ object mod {
     		//=> 'http://sindresorhus.com/?foo=bar'
     		```
     		*/
-    val removeQueryParameters: js.UndefOr[js.Array[RegExp | String]] = js.native
+    val removeQueryParameters: js.UndefOr[js.Array[RegExp | String]] = js.undefined
     
     /**
     		Remove a sole `/` pathname in the output. This option is independant of `removeTrailingSlash`.
@@ -113,7 +113,7 @@ object mod {
     		//=> 'https://sindresorhus.com/'
     		```
     		*/
-    val removeSingleSlash: js.UndefOr[Boolean] = js.native
+    val removeSingleSlash: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Removes trailing slash.
@@ -129,7 +129,7 @@ object mod {
     		//=> 'http://sindresorhus.com'
     		```
     		*/
-    val removeTrailingSlash: js.UndefOr[Boolean] = js.native
+    val removeTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Sorts the query parameters alphabetically by key.
@@ -142,7 +142,7 @@ object mod {
     		//=> 'http://sindresorhus.com/?b=two&a=one&c=three'
     		```
     		*/
-    val sortQueryParameters: js.UndefOr[Boolean] = js.native
+    val sortQueryParameters: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Strip the [authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) part of a URL.
@@ -155,7 +155,7 @@ object mod {
     		//=> 'https://user:password@sindresorhus.com'
     		```
     		*/
-    val stripAuthentication: js.UndefOr[Boolean] = js.native
+    val stripAuthentication: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Removes hash from the URL.
@@ -168,7 +168,7 @@ object mod {
     		//=> 'http://sindresorhus.com/about.html'
     		```
     		*/
-    val stripHash: js.UndefOr[Boolean] = js.native
+    val stripHash: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Removes HTTP(S) protocol from an URL `http://sindresorhus.com` → `sindresorhus.com`.
@@ -181,7 +181,7 @@ object mod {
     		//=> 'sindresorhus.com'
     		```
     		*/
-    val stripProtocol: js.UndefOr[Boolean] = js.native
+    val stripProtocol: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Removes `www.` from the URL.
@@ -194,7 +194,7 @@ object mod {
     		//=> 'http://www.sindresorhus.com'
     		```
     		*/
-    val stripWWW: js.UndefOr[Boolean] = js.native
+    val stripWWW: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

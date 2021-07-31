@@ -9,11 +9,12 @@ import typings.hapiHapi.hapiHapiStrings.stop
 import typings.hapiPodium.mod.Podium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerEvents extends Podium {
+trait ServerEvents
+  extends StObject
+     with Podium {
   
   /**
     * Subscribe to an event where:
@@ -65,8 +66,8 @@ trait ServerEvents extends Podium {
     * @return Return value: a promise that resolves when the event is emitted.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servereventsoncecriteria)
     */
-  def once(criteria: String): js.Promise[_] = js.native
-  def once(criteria: ServerEventCriteria[String]): js.Promise[_] = js.native
+  def once(criteria: String): js.Promise[js.Any] = js.native
+  def once(criteria: ServerEventCriteria[String]): js.Promise[js.Any] = js.native
   /**
     * Same as calling [server.events.on()](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) with the count option set to 1.
     * @param criteria - the subscription criteria which must be one of:

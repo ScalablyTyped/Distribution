@@ -2,20 +2,18 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSsekmsMod {
   
   type UnmarshalledSSEKMS = _SSEKMS
   
-  @js.native
   trait _SSEKMS extends StObject {
     
     /**
       * <p>Specifies the ID of the AWS Key Management Service (KMS) master encryption key to use for encrypting Inventory reports.</p>
       */
-    var KeyId: String = js.native
+    var KeyId: String
   }
   object _SSEKMS {
     

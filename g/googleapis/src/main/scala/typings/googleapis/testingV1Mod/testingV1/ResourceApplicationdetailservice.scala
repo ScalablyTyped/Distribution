@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/testing/v1", "testing_v1.Resource$Applicationdetailservice")
@@ -30,7 +29,7 @@ class ResourceApplicationdetailservice protected () extends StObject {
     */
   def getApkDetails(): GaxiosPromise[SchemaGetApkDetailsResponse] = js.native
   def getApkDetails(callback: BodyResponseCallback[SchemaGetApkDetailsResponse]): Unit = js.native
-  def getApkDetails(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetApkDetailsResponse] = js.native
+  def getApkDetails(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetApkDetailsResponse] = js.native
   def getApkDetails(params: ParamsResourceApplicationdetailserviceGetapkdetails): GaxiosPromise[SchemaGetApkDetailsResponse] = js.native
   def getApkDetails(
     params: ParamsResourceApplicationdetailserviceGetapkdetails,

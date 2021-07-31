@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.IndexOperationResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.IndexOperationResponse>> */
-@js.native
 trait ReadonlyWaitablePromiseIn extends StObject {
   
-  def `catch`[TResult](): js.Promise[IndexOperationResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[IndexOperationResponse | TResult]
   
-  def `finally`(): js.Promise[IndexOperationResponse] = js.native
+  def `finally`(): js.Promise[IndexOperationResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyWaitablePromiseIn {
   

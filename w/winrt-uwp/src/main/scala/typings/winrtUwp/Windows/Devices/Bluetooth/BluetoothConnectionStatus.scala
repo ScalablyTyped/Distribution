@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object BluetoothConnectionStatus extends StObject {
   
   /** The device is connected. */
   @js.native
-  sealed trait connected extends BluetoothConnectionStatus
+  sealed trait connected
+    extends StObject
+       with BluetoothConnectionStatus
   
   /** The device is disconnected. */
   @js.native
-  sealed trait disconnected extends BluetoothConnectionStatus
+  sealed trait disconnected
+    extends StObject
+       with BluetoothConnectionStatus
 }

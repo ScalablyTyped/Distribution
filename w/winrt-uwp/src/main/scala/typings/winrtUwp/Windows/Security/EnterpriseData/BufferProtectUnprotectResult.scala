@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about the result from protecting or unprotecting an enterprise protected buffer. */
-@js.native
 trait BufferProtectUnprotectResult extends StObject {
   
   /** Gets the enterprise protected buffer that has been protected or unprotected. */
-  var buffer: IBuffer = js.native
+  var buffer: IBuffer
   
   /** Gets the DataProtectionInfo object concerning the enterprise protected buffer that has been protected or unprotected. */
-  var protectionInfo: DataProtectionInfo = js.native
+  var protectionInfo: DataProtectionInfo
 }
 object BufferProtectUnprotectResult {
   

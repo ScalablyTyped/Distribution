@@ -2,17 +2,15 @@ package typings.reactPlayer.lazyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacebookConfig extends StObject {
   
-  var appId: String = js.native
+  var appId: String
   
-  var playerId: String = js.native
+  var playerId: String
   
-  var version: String = js.native
+  var version: String
 }
 object FacebookConfig {
   

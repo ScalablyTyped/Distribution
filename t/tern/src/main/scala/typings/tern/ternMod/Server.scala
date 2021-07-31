@@ -1,6 +1,7 @@
 package typings.tern.ternMod
 
 import typings.tern.inferMod.Context
+import typings.tern.ternMod.^
 import typings.tern.ternStrings.afterLoad
 import typings.tern.ternStrings.beforeLoad
 import typings.tern.ternStrings.completion
@@ -12,7 +13,6 @@ import typings.tern.ternStrings.reset
 import typings.tern.ternStrings.typeAt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,9 +31,9 @@ trait Server extends StObject {
     * argument. That way, the file is counted towards the dependency budget of the root of its dependency graph.
     */
   def addFile(name: String): Unit = js.native
-  def addFile(name: String, text: js.UndefOr[scala.Nothing], parent: String): Unit = js.native
   def addFile(name: String, text: String): Unit = js.native
   def addFile(name: String, text: String, parent: String): Unit = js.native
+  def addFile(name: String, text: Unit, parent: String): Unit = js.native
   
   val cx: Context = js.native
   
@@ -79,7 +79,7 @@ trait Server extends StObject {
     * When the server hasn’t been configured to be asynchronous, the callback will be called before request returns.
     */
   def request[Q /* <: Query */, D /* <: Document */](
-    doc: D with typings.tern.anon.Query[Q],
+    doc: D & typings.tern.anon.Query[Q],
     callback: js.Function2[
       /* error */ String | Null, 
       /* response */ js.UndefOr[js.Object | QueryResult[Q]], 
@@ -93,4 +93,9 @@ trait Server extends StObject {
     event: /* keyof tern.tern/lib/tern.Events */ reset | beforeLoad | afterLoad | preParse | postParse | preInfer | postInfer | typeAt | completion,
     file: File
   ): Unit = js.native
+}
+object Server {
+  
+  @scala.inline
+  def apply: TernConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Server").asInstanceOf[TernConstructor]
 }

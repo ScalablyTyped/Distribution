@@ -2,17 +2,15 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCompleteOptions extends StObject {
   
-  var blurTimeout: js.UndefOr[Double] = js.native
+  var blurTimeout: js.UndefOr[Double] = js.undefined
   
-  var noResultsMessage: js.UndefOr[String] = js.native
+  var noResultsMessage: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object AutoCompleteOptions {
   

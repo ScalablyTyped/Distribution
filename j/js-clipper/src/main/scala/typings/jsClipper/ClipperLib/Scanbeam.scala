@@ -2,15 +2,13 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scanbeam extends StObject {
   
-  var Y: Double = js.native
+  var Y: Double
   
-  var next: TEdge = js.native
+  var next: TEdge
 }
 object Scanbeam {
   

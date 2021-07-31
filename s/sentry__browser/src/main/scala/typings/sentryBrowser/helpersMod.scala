@@ -7,75 +7,70 @@ import typings.sentryTypes.dsnMod.DsnLike
 import typings.sentryTypes.wrappedfunctionMod.WrappedFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("@sentry/browser/dist/helpers", "ignoreNextOnError")
+  @JSImport("@sentry/browser/dist/helpers", JSImport.Namespace)
   @js.native
-  def ignoreNextOnError(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/browser/dist/helpers", "injectReportDialog")
-  @js.native
-  def injectReportDialog(): Unit = js.native
-  @JSImport("@sentry/browser/dist/helpers", "injectReportDialog")
-  @js.native
-  def injectReportDialog(options: ReportDialogOptions): Unit = js.native
+  @scala.inline
+  def ignoreNextOnError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreNextOnError")().asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/helpers", "shouldIgnoreOnError")
-  @js.native
-  def shouldIgnoreOnError(): Boolean = js.native
+  @scala.inline
+  def injectReportDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")().asInstanceOf[Unit]
+  @scala.inline
+  def injectReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/helpers", "wrap")
-  @js.native
-  def wrap(fn: WrappedFunction): js.Any = js.native
-  @JSImport("@sentry/browser/dist/helpers", "wrap")
-  @js.native
-  def wrap(fn: WrappedFunction, options: js.UndefOr[scala.Nothing], before: WrappedFunction): js.Any = js.native
-  @JSImport("@sentry/browser/dist/helpers", "wrap")
-  @js.native
-  def wrap(fn: WrappedFunction, options: Mechanism): js.Any = js.native
-  @JSImport("@sentry/browser/dist/helpers", "wrap")
-  @js.native
-  def wrap(fn: WrappedFunction, options: Mechanism, before: WrappedFunction): js.Any = js.native
+  @scala.inline
+  def shouldIgnoreOnError(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldIgnoreOnError")().asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def wrap(fn: WrappedFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def wrap(fn: WrappedFunction, options: Unit, before: WrappedFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def wrap(fn: WrappedFunction, options: Mechanism): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def wrap(fn: WrappedFunction, options: Mechanism, before: WrappedFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait ReportDialogOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var dsn: js.UndefOr[DsnLike] = js.native
+    var dsn: js.UndefOr[DsnLike] = js.undefined
     
-    var errorFormEntry: js.UndefOr[String] = js.native
+    var errorFormEntry: js.UndefOr[String] = js.undefined
     
-    var errorGeneric: js.UndefOr[String] = js.native
+    var errorGeneric: js.UndefOr[String] = js.undefined
     
-    var eventId: js.UndefOr[String] = js.native
+    var eventId: js.UndefOr[String] = js.undefined
     
-    var labelClose: js.UndefOr[String] = js.native
+    var labelClose: js.UndefOr[String] = js.undefined
     
-    var labelComments: js.UndefOr[String] = js.native
+    var labelComments: js.UndefOr[String] = js.undefined
     
-    var labelEmail: js.UndefOr[String] = js.native
+    var labelEmail: js.UndefOr[String] = js.undefined
     
-    var labelName: js.UndefOr[String] = js.native
+    var labelName: js.UndefOr[String] = js.undefined
     
-    var labelSubmit: js.UndefOr[String] = js.native
+    var labelSubmit: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /** Callback after reportDialog showed up */
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
-    var subtitle2: js.UndefOr[String] = js.native
+    var subtitle2: js.UndefOr[String] = js.undefined
     
-    var successMessage: js.UndefOr[String] = js.native
+    var successMessage: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[Email] = js.native
+    var user: js.UndefOr[Email] = js.undefined
   }
   object ReportDialogOptions {
     

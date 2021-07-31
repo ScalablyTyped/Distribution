@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents transfer coding information used in the Transfer-Encoding HTTP header on an HTTP request. */
-@js.native
 trait HttpTransferCodingHeaderValue extends StObject {
   
   /** Gets a set of parameters used in the Transfer-Encoding HTTP header. */
-  var parameters: IVector[HttpNameValueHeaderValue] = js.native
+  var parameters: IVector[HttpNameValueHeaderValue]
   
   /** Gets the transfer-coding value used in the Transfer-Encoding HTTP header. */
-  var value: String = js.native
+  var value: String
 }
 object HttpTransferCodingHeaderValue {
   

@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -24,27 +23,32 @@ object interfacesMod {
   object ListenerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ListenerType with String] = js.native
+    def apply(value: String): js.UndefOr[ListenerType & String] = js.native
     
     @js.native
-    sealed trait keyboard extends ListenerType
-    /* "keyboard" */ val keyboard: typings.reactDndTouchBackend.interfacesMod.ListenerType.keyboard with String = js.native
+    sealed trait keyboard
+      extends StObject
+         with ListenerType
+    /* "keyboard" */ val keyboard: typings.reactDndTouchBackend.interfacesMod.ListenerType.keyboard & String = js.native
     
     @js.native
-    sealed trait mouse extends ListenerType
-    /* "mouse" */ val mouse: typings.reactDndTouchBackend.interfacesMod.ListenerType.mouse with String = js.native
+    sealed trait mouse
+      extends StObject
+         with ListenerType
+    /* "mouse" */ val mouse: typings.reactDndTouchBackend.interfacesMod.ListenerType.mouse & String = js.native
     
     @js.native
-    sealed trait touch extends ListenerType
-    /* "touch" */ val touch: typings.reactDndTouchBackend.interfacesMod.ListenerType.touch with String = js.native
+    sealed trait touch
+      extends StObject
+         with ListenerType
+    /* "touch" */ val touch: typings.reactDndTouchBackend.interfacesMod.ListenerType.touch & String = js.native
   }
   
-  @js.native
   trait AngleRange extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object AngleRange {
     
@@ -65,18 +69,17 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait EventName extends StObject {
     
-    var contextmenu: js.UndefOr[typings.reactDndTouchBackend.reactDndTouchBackendStrings.contextmenu] = js.native
+    var contextmenu: js.UndefOr[typings.reactDndTouchBackend.reactDndTouchBackendStrings.contextmenu] = js.undefined
     
-    var end: js.UndefOr[mouseup | touchend] = js.native
+    var end: js.UndefOr[mouseup | touchend] = js.undefined
     
-    var keydown: js.UndefOr[typings.reactDndTouchBackend.reactDndTouchBackendStrings.keydown] = js.native
+    var keydown: js.UndefOr[typings.reactDndTouchBackend.reactDndTouchBackendStrings.keydown] = js.undefined
     
-    var move: js.UndefOr[mousemove | touchmove] = js.native
+    var move: js.UndefOr[mousemove | touchmove] = js.undefined
     
-    var start: js.UndefOr[mousedown | touchstart] = js.native
+    var start: js.UndefOr[mousedown | touchstart] = js.undefined
   }
   object EventName {
     
@@ -121,10 +124,9 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait TouchBackendContext extends StObject {
     
-    var window: js.UndefOr[Window] = js.native
+    var window: js.UndefOr[Window] = js.undefined
   }
   object TouchBackendContext {
     
@@ -145,22 +147,21 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait TouchBackendOptions extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var delayMouseStart: js.UndefOr[Double] = js.native
+    var delayMouseStart: js.UndefOr[Double] = js.undefined
     
-    var delayTouchStart: js.UndefOr[Double] = js.native
+    var delayTouchStart: js.UndefOr[Double] = js.undefined
     
-    var enableHoverOutsideTarget: js.UndefOr[Boolean] = js.native
+    var enableHoverOutsideTarget: js.UndefOr[Boolean] = js.undefined
     
-    var enableKeyboardEvents: js.UndefOr[Boolean] = js.native
+    var enableKeyboardEvents: js.UndefOr[Boolean] = js.undefined
     
-    var enableMouseEvents: js.UndefOr[Boolean] = js.native
+    var enableMouseEvents: js.UndefOr[Boolean] = js.undefined
     
-    var enableTouchEvents: js.UndefOr[Boolean] = js.native
+    var enableTouchEvents: js.UndefOr[Boolean] = js.undefined
     
     var getDropTargetElementsAtPoint: js.UndefOr[
         js.Function3[
@@ -169,13 +170,13 @@ object interfacesMod {
           /* dropTargets */ js.Array[HTMLElement], 
           js.Array[HTMLElement]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var ignoreContextMenu: js.UndefOr[Boolean] = js.native
+    var ignoreContextMenu: js.UndefOr[Boolean] = js.undefined
     
-    var scrollAngleRanges: js.UndefOr[js.Array[AngleRange]] = js.native
+    var scrollAngleRanges: js.UndefOr[js.Array[AngleRange]] = js.undefined
     
-    var touchSlop: js.UndefOr[Double] = js.native
+    var touchSlop: js.UndefOr[Double] = js.undefined
   }
   object TouchBackendOptions {
     

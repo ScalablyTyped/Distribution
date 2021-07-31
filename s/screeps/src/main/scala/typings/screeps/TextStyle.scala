@@ -5,28 +5,26 @@ import typings.screeps.screepsStrings.left
 import typings.screeps.screepsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextStyle extends StObject {
   
-  var align: js.UndefOr[center | left | right] = js.native
+  var align: js.UndefOr[center | left | right] = js.undefined
   
   /**
     * Background color in any web format, default is undefined (no background).When background is enabled, text vertical align is set to middle (default is baseline).
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Background rectangle padding, default is 0.3.
     */
-  var backgroundPadding: js.UndefOr[Double] = js.native
+  var backgroundPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * Font color in any web format, default is #ffffff(white).
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Either a number or a string in one of the following forms:
@@ -35,22 +33,22 @@ trait TextStyle extends StObject {
     * 0.7 serif
     * bold italic 1.5 Times New Roman
     */
-  var font: js.UndefOr[Double | String] = js.native
+  var font: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Opacity value, default is 1.0.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Stroke color in any web format, default is undefined (no stroke).
     */
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
   /**
     * Stroke width, default is 0.15.
     */
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object TextStyle {
   

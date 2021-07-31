@@ -3,19 +3,17 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormOptions[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var formOptions: js.UndefOr[js.Any] = js.native
+  var formOptions: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object FormOptions {
   
@@ -26,7 +24,7 @@ object FormOptions {
   }
   
   @scala.inline
-  implicit class FormOptionsMutableBuilder[Self <: FormOptions[_], T] (val x: Self with FormOptions[T]) extends AnyVal {
+  implicit class FormOptionsMutableBuilder[Self <: FormOptions[?], T] (val x: Self & FormOptions[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

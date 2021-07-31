@@ -8,32 +8,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait workersOpenOptions extends Object {
+trait workersOpenOptions
+  extends StObject
+     with Object {
   
   /**
     * The objects defining the API accessible from the module.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
     */
-  var client: js.UndefOr[js.Any] = js.native
+  var client: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * Indicates how to load the module.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
     */
-  var strategy: js.UndefOr[distributed | dedicated | local] = js.native
+  var strategy: js.UndefOr[distributed | dedicated | local] = js.undefined
 }
 object workersOpenOptions {
   

@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hit extends StObject {
   
-  var hit: Double = js.native
+  var hit: Double
   
-  var rect: Rect = js.native
+  var rect: Rect
 }
 object Hit {
   

@@ -2,19 +2,17 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of a SourceGetMetadataOperation.
   */
-@js.native
 trait SchemaSourceGetMetadataResponse extends StObject {
   
   /**
     * The computed metadata.
     */
-  var metadata: js.UndefOr[SchemaSourceMetadata] = js.native
+  var metadata: js.UndefOr[SchemaSourceMetadata] = js.undefined
 }
 object SchemaSourceGetMetadataResponse {
   

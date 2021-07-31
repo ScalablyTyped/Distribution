@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputeMessageStatsRequest extends StObject {
   
   /**
     * The exclusive end of the range. The range is empty if end_cursor <= start_cursor. Specifying a start_cursor before the first message and an end_cursor after the last message will
     * retrieve all messages.
     */
-  var endCursor: js.UndefOr[Cursor] = js.native
+  var endCursor: js.UndefOr[Cursor] = js.undefined
   
   /** Required. The partition for which we should compute message stats. */
-  var partition: js.UndefOr[String] = js.native
+  var partition: js.UndefOr[String] = js.undefined
   
   /** The inclusive start of the range. */
-  var startCursor: js.UndefOr[Cursor] = js.native
+  var startCursor: js.UndefOr[Cursor] = js.undefined
 }
 object ComputeMessageStatsRequest {
   

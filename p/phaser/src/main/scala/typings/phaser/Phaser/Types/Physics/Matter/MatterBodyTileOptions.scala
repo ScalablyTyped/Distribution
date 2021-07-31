@@ -2,21 +2,19 @@ package typings.phaser.Phaser.Types.Physics.Matter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatterBodyTileOptions extends StObject {
   
   /**
     * Whether or not to add the newly created body (or existing body if options.body is used) to the Matter world.
     */
-  var addToWorld: js.UndefOr[Boolean] = js.native
+  var addToWorld: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the newly created body should be made static. This defaults to true since typically tiles should not be moved.
     */
-  var isStatic: js.UndefOr[Boolean] = js.native
+  var isStatic: js.UndefOr[Boolean] = js.undefined
 }
 object MatterBodyTileOptions {
   

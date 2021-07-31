@@ -1,12 +1,10 @@
 package typings.semver
 
-import typings.semver.semverMod.^
 import typings.semver.semverNumbers.`-1`
 import typings.semver.semverNumbers.`0`
 import typings.semver.semverNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compareBuildMod {
@@ -23,16 +21,16 @@ object compareBuildMod {
     *
     * @since 6.1.0
     */
+  @scala.inline
+  def apply(a: String, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def apply(a: String, b: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def apply(a: typings.semver.semverMod.^, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def apply(a: typings.semver.semverMod.^, b: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  
   @JSImport("semver/functions/compare-build", JSImport.Namespace)
   @js.native
-  def apply(a: String, b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/functions/compare-build", JSImport.Namespace)
-  @js.native
-  def apply(a: String, b: ^): `1` | `0` | `-1` = js.native
-  @JSImport("semver/functions/compare-build", JSImport.Namespace)
-  @js.native
-  def apply(a: ^, b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/functions/compare-build", JSImport.Namespace)
-  @js.native
-  def apply(a: ^, b: ^): `1` | `0` | `-1` = js.native
+  val ^ : js.Any = js.native
 }

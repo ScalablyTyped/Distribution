@@ -6,7 +6,6 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
@@ -14,15 +13,22 @@ object errorMod {
   @JSImport("superstruct/lib/error", "StructError")
   @js.native
   class StructError protected ()
-    extends Error
+    extends StObject
+       with Error
        with /* key */ StringDictionary[js.Any] {
     def this(failure: Failure, iterable: Iterable[Failure]) = this()
     
-    var branch: js.Array[_] = js.native
+    var branch: js.Array[js.Any] = js.native
     
     def failures(): IterableIterator[Failure] = js.native
     
     var key: js.UndefOr[String | Double] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var path: js.Array[Double | String] = js.native
     
@@ -33,28 +39,27 @@ object errorMod {
     var value: js.Any = js.native
   }
   
-  @js.native
   trait Failure extends StObject {
     
-    var branch: js.Array[_] = js.native
+    var branch: js.Array[js.Any]
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var path: js.Array[String | Double] = js.native
+    var path: js.Array[String | Double]
     
-    var refinement: js.UndefOr[String] = js.native
+    var refinement: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Failure {
     
     @scala.inline
     def apply(
-      branch: js.Array[_],
+      branch: js.Array[js.Any],
       message: String,
       path: js.Array[String | Double],
       `type`: String,
@@ -69,7 +74,7 @@ object errorMod {
     implicit class FailureMutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBranch(value: js.Array[_]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))

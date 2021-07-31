@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
   /**
     * The fully qualified domain name.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.workmailMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.workmailMod.DomainName] = js.undefined
   
   /**
     * The hosted zone ID for a domain hosted in Route 53. Required when configuring a domain hosted in Route 53.
     */
-  var HostedZoneId: js.UndefOr[typings.awsSdk.workmailMod.HostedZoneId] = js.native
+  var HostedZoneId: js.UndefOr[typings.awsSdk.workmailMod.HostedZoneId] = js.undefined
 }
 object Domain {
   

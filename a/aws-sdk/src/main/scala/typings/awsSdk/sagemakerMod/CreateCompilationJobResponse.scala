@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCompilationJobResponse extends StObject {
   
   /**
     * If the action is successful, the service sends back an HTTP 200 response. Amazon SageMaker returns the following data in JSON format:    CompilationJobArn: The Amazon Resource Name (ARN) of the compiled job.  
     */
-  var CompilationJobArn: typings.awsSdk.sagemakerMod.CompilationJobArn = js.native
+  var CompilationJobArn: typings.awsSdk.sagemakerMod.CompilationJobArn
 }
 object CreateCompilationJobResponse {
   

@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SATFactory extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SATFactory extends StObject {
     * @param {ICollisionData} previousCollision
     * @return {ICollisionData} collision
     */
-  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData = js.native
+  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData
 }
 object SATFactory {
   

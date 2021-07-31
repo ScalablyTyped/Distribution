@@ -3,26 +3,26 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.data.proxy.IServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAjaxProxy extends IServer {
+trait IAjaxProxy
+  extends StObject
+     with IServer {
   
   /** [Property] (Object) */
-  var actionMethods: js.UndefOr[js.Any] = js.native
+  var actionMethods: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns the HTTP method name for a given request
     * @param request Ext.data.Request The request object
     * @returns String The HTTP method to use (should be one of 'GET', 'POST', 'PUT' or 'DELETE')
     */
-  var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.native
+  var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
   
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
 }
 object IAjaxProxy {
   

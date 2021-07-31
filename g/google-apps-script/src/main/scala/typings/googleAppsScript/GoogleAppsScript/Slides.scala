@@ -127,358 +127,356 @@ import typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WriteControl
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.EmbeddedChart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slides extends StObject {
   
-  var Presentations: js.UndefOr[PresentationsCollection] = js.native
+  var Presentations: js.UndefOr[PresentationsCollection] = js.undefined
   
   // Create a new instance of AffineTransform
-  def newAffineTransform(): AffineTransform = js.native
+  def newAffineTransform(): AffineTransform
   
   // Create a new instance of AutoText
-  def newAutoText(): AutoText = js.native
+  def newAutoText(): AutoText
   
   // Create a new instance of BatchUpdatePresentationRequest
-  def newBatchUpdatePresentationRequest(): BatchUpdatePresentationRequest = js.native
+  def newBatchUpdatePresentationRequest(): BatchUpdatePresentationRequest
   
   // Create a new instance of Bullet
-  def newBullet(): Bullet = js.native
+  def newBullet(): Bullet
   
   // Create a new instance of ColorScheme
-  def newColorScheme(): ColorScheme = js.native
+  def newColorScheme(): ColorScheme
   
   // Create a new instance of ColorStop
-  def newColorStop(): ColorStop = js.native
+  def newColorStop(): ColorStop
   
   // Create a new instance of CreateImageRequest
-  def newCreateImageRequest(): CreateImageRequest = js.native
+  def newCreateImageRequest(): CreateImageRequest
   
   // Create a new instance of CreateLineRequest
-  def newCreateLineRequest(): CreateLineRequest = js.native
+  def newCreateLineRequest(): CreateLineRequest
   
   // Create a new instance of CreateParagraphBulletsRequest
-  def newCreateParagraphBulletsRequest(): CreateParagraphBulletsRequest = js.native
+  def newCreateParagraphBulletsRequest(): CreateParagraphBulletsRequest
   
   // Create a new instance of CreateShapeRequest
-  def newCreateShapeRequest(): CreateShapeRequest = js.native
+  def newCreateShapeRequest(): CreateShapeRequest
   
   // Create a new instance of CreateSheetsChartRequest
-  def newCreateSheetsChartRequest(): CreateSheetsChartRequest = js.native
+  def newCreateSheetsChartRequest(): CreateSheetsChartRequest
   
   // Create a new instance of CreateSlideRequest
-  def newCreateSlideRequest(): CreateSlideRequest = js.native
+  def newCreateSlideRequest(): CreateSlideRequest
   
   // Create a new instance of CreateTableRequest
-  def newCreateTableRequest(): CreateTableRequest = js.native
+  def newCreateTableRequest(): CreateTableRequest
   
   // Create a new instance of CreateVideoRequest
-  def newCreateVideoRequest(): CreateVideoRequest = js.native
+  def newCreateVideoRequest(): CreateVideoRequest
   
   // Create a new instance of CropProperties
-  def newCropProperties(): CropProperties = js.native
+  def newCropProperties(): CropProperties
   
   // Create a new instance of DeleteObjectRequest
-  def newDeleteObjectRequest(): DeleteObjectRequest = js.native
+  def newDeleteObjectRequest(): DeleteObjectRequest
   
   // Create a new instance of DeleteParagraphBulletsRequest
-  def newDeleteParagraphBulletsRequest(): DeleteParagraphBulletsRequest = js.native
+  def newDeleteParagraphBulletsRequest(): DeleteParagraphBulletsRequest
   
   // Create a new instance of DeleteTableColumnRequest
-  def newDeleteTableColumnRequest(): DeleteTableColumnRequest = js.native
+  def newDeleteTableColumnRequest(): DeleteTableColumnRequest
   
   // Create a new instance of DeleteTableRowRequest
-  def newDeleteTableRowRequest(): DeleteTableRowRequest = js.native
+  def newDeleteTableRowRequest(): DeleteTableRowRequest
   
   // Create a new instance of DeleteTextRequest
-  def newDeleteTextRequest(): DeleteTextRequest = js.native
+  def newDeleteTextRequest(): DeleteTextRequest
   
   // Create a new instance of Dimension
-  def newDimension(): Dimension = js.native
+  def newDimension(): Dimension
   
   // Create a new instance of DuplicateObjectRequest
-  def newDuplicateObjectRequest(): DuplicateObjectRequest = js.native
+  def newDuplicateObjectRequest(): DuplicateObjectRequest
   
   // Create a new instance of Group
-  def newGroup(): Group = js.native
+  def newGroup(): Group
   
   // Create a new instance of GroupObjectsRequest
-  def newGroupObjectsRequest(): GroupObjectsRequest = js.native
+  def newGroupObjectsRequest(): GroupObjectsRequest
   
   // Create a new instance of Image
-  def newImage(): Image = js.native
+  def newImage(): Image
   
   // Create a new instance of ImageProperties
-  def newImageProperties(): ImageProperties = js.native
+  def newImageProperties(): ImageProperties
   
   // Create a new instance of InsertTableColumnsRequest
-  def newInsertTableColumnsRequest(): InsertTableColumnsRequest = js.native
+  def newInsertTableColumnsRequest(): InsertTableColumnsRequest
   
   // Create a new instance of InsertTableRowsRequest
-  def newInsertTableRowsRequest(): InsertTableRowsRequest = js.native
+  def newInsertTableRowsRequest(): InsertTableRowsRequest
   
   // Create a new instance of InsertTextRequest
-  def newInsertTextRequest(): InsertTextRequest = js.native
+  def newInsertTextRequest(): InsertTextRequest
   
   // Create a new instance of LayoutPlaceholderIdMapping
-  def newLayoutPlaceholderIdMapping(): LayoutPlaceholderIdMapping = js.native
+  def newLayoutPlaceholderIdMapping(): LayoutPlaceholderIdMapping
   
   // Create a new instance of LayoutProperties
-  def newLayoutProperties(): LayoutProperties = js.native
+  def newLayoutProperties(): LayoutProperties
   
   // Create a new instance of LayoutReference
-  def newLayoutReference(): LayoutReference = js.native
+  def newLayoutReference(): LayoutReference
   
   // Create a new instance of Line
-  def newLine(): Line = js.native
+  def newLine(): Line
   
   // Create a new instance of LineConnection
-  def newLineConnection(): LineConnection = js.native
+  def newLineConnection(): LineConnection
   
   // Create a new instance of LineFill
-  def newLineFill(): LineFill = js.native
+  def newLineFill(): LineFill
   
   // Create a new instance of LineProperties
-  def newLineProperties(): LineProperties = js.native
+  def newLineProperties(): LineProperties
   
   // Create a new instance of Link
-  def newLink(): Link = js.native
+  def newLink(): Link
   
   // Create a new instance of MasterProperties
-  def newMasterProperties(): MasterProperties = js.native
+  def newMasterProperties(): MasterProperties
   
   // Create a new instance of MergeTableCellsRequest
-  def newMergeTableCellsRequest(): MergeTableCellsRequest = js.native
+  def newMergeTableCellsRequest(): MergeTableCellsRequest
   
   // Create a new instance of NotesProperties
-  def newNotesProperties(): NotesProperties = js.native
+  def newNotesProperties(): NotesProperties
   
   // Create a new instance of OpaqueColor
-  def newOpaqueColor(): OpaqueColor = js.native
+  def newOpaqueColor(): OpaqueColor
   
   // Create a new instance of OptionalColor
-  def newOptionalColor(): OptionalColor = js.native
+  def newOptionalColor(): OptionalColor
   
   // Create a new instance of Outline
-  def newOutline(): Outline = js.native
+  def newOutline(): Outline
   
   // Create a new instance of OutlineFill
-  def newOutlineFill(): OutlineFill = js.native
+  def newOutlineFill(): OutlineFill
   
   // Create a new instance of Page
-  def newPage(): Page = js.native
+  def newPage(): Page
   
   // Create a new instance of PageBackgroundFill
-  def newPageBackgroundFill(): PageBackgroundFill = js.native
+  def newPageBackgroundFill(): PageBackgroundFill
   
   // Create a new instance of PageElement
-  def newPageElement(): PageElement = js.native
+  def newPageElement(): PageElement
   
   // Create a new instance of PageElementProperties
-  def newPageElementProperties(): PageElementProperties = js.native
+  def newPageElementProperties(): PageElementProperties
   
   // Create a new instance of PageProperties
-  def newPageProperties(): PageProperties = js.native
+  def newPageProperties(): PageProperties
   
   // Create a new instance of ParagraphMarker
-  def newParagraphMarker(): ParagraphMarker = js.native
+  def newParagraphMarker(): ParagraphMarker
   
   // Create a new instance of ParagraphStyle
-  def newParagraphStyle(): ParagraphStyle = js.native
+  def newParagraphStyle(): ParagraphStyle
   
   // Create a new instance of Placeholder
-  def newPlaceholder(): Placeholder = js.native
+  def newPlaceholder(): Placeholder
   
   // Create a new instance of Presentation
-  def newPresentation(): Presentation = js.native
+  def newPresentation(): Presentation
   
   // Create a new instance of Range
-  def newRange(): Range = js.native
+  def newRange(): Range
   
   // Create a new instance of Recolor
-  def newRecolor(): Recolor = js.native
+  def newRecolor(): Recolor
   
   // Create a new instance of RefreshSheetsChartRequest
-  def newRefreshSheetsChartRequest(): RefreshSheetsChartRequest = js.native
+  def newRefreshSheetsChartRequest(): RefreshSheetsChartRequest
   
   // Create a new instance of ReplaceAllShapesWithImageRequest
-  def newReplaceAllShapesWithImageRequest(): ReplaceAllShapesWithImageRequest = js.native
+  def newReplaceAllShapesWithImageRequest(): ReplaceAllShapesWithImageRequest
   
   // Create a new instance of ReplaceAllShapesWithSheetsChartRequest
-  def newReplaceAllShapesWithSheetsChartRequest(): ReplaceAllShapesWithSheetsChartRequest = js.native
+  def newReplaceAllShapesWithSheetsChartRequest(): ReplaceAllShapesWithSheetsChartRequest
   
   // Create a new instance of ReplaceAllTextRequest
-  def newReplaceAllTextRequest(): ReplaceAllTextRequest = js.native
+  def newReplaceAllTextRequest(): ReplaceAllTextRequest
   
   // Create a new instance of ReplaceImageRequest
-  def newReplaceImageRequest(): ReplaceImageRequest = js.native
+  def newReplaceImageRequest(): ReplaceImageRequest
   
   // Create a new instance of Request
-  def newRequest(): Request = js.native
+  def newRequest(): Request
   
   // Create a new instance of RerouteLineRequest
-  def newRerouteLineRequest(): RerouteLineRequest = js.native
+  def newRerouteLineRequest(): RerouteLineRequest
   
   // Create a new instance of RgbColor
-  def newRgbColor(): RgbColor = js.native
+  def newRgbColor(): RgbColor
   
   // Create a new instance of Shadow
-  def newShadow(): Shadow = js.native
+  def newShadow(): Shadow
   
   // Create a new instance of Shape
-  def newShape(): Shape = js.native
+  def newShape(): Shape
   
   // Create a new instance of ShapeBackgroundFill
-  def newShapeBackgroundFill(): ShapeBackgroundFill = js.native
+  def newShapeBackgroundFill(): ShapeBackgroundFill
   
   // Create a new instance of ShapeProperties
-  def newShapeProperties(): ShapeProperties = js.native
+  def newShapeProperties(): ShapeProperties
   
   // Create a new instance of SheetsChart
-  def newSheetsChart(): SheetsChart = js.native
+  def newSheetsChart(): SheetsChart
   
   // Create a new instance of SheetsChartProperties
-  def newSheetsChartProperties(): SheetsChartProperties = js.native
+  def newSheetsChartProperties(): SheetsChartProperties
   
   // Create a new instance of Size
-  def newSize(): Size = js.native
+  def newSize(): Size
   
   // Create a new instance of SlideProperties
-  def newSlideProperties(): SlideProperties = js.native
+  def newSlideProperties(): SlideProperties
   
   // Create a new instance of SolidFill
-  def newSolidFill(): SolidFill = js.native
+  def newSolidFill(): SolidFill
   
   // Create a new instance of StretchedPictureFill
-  def newStretchedPictureFill(): StretchedPictureFill = js.native
+  def newStretchedPictureFill(): StretchedPictureFill
   
   // Create a new instance of SubstringMatchCriteria
-  def newSubstringMatchCriteria(): SubstringMatchCriteria = js.native
+  def newSubstringMatchCriteria(): SubstringMatchCriteria
   
   // Create a new instance of Table
-  def newTable(): Table = js.native
+  def newTable(): Table
   
   // Create a new instance of TableBorderCell
-  def newTableBorderCell(): TableBorderCell = js.native
+  def newTableBorderCell(): TableBorderCell
   
   // Create a new instance of TableBorderFill
-  def newTableBorderFill(): TableBorderFill = js.native
+  def newTableBorderFill(): TableBorderFill
   
   // Create a new instance of TableBorderProperties
-  def newTableBorderProperties(): TableBorderProperties = js.native
+  def newTableBorderProperties(): TableBorderProperties
   
   // Create a new instance of TableBorderRow
-  def newTableBorderRow(): TableBorderRow = js.native
+  def newTableBorderRow(): TableBorderRow
   
   // Create a new instance of TableCell
-  def newTableCell(): TableCell = js.native
+  def newTableCell(): TableCell
   
   // Create a new instance of TableCellBackgroundFill
-  def newTableCellBackgroundFill(): TableCellBackgroundFill = js.native
+  def newTableCellBackgroundFill(): TableCellBackgroundFill
   
   // Create a new instance of TableCellLocation
-  def newTableCellLocation(): TableCellLocation = js.native
+  def newTableCellLocation(): TableCellLocation
   
   // Create a new instance of TableCellProperties
-  def newTableCellProperties(): TableCellProperties = js.native
+  def newTableCellProperties(): TableCellProperties
   
   // Create a new instance of TableColumnProperties
-  def newTableColumnProperties(): TableColumnProperties = js.native
+  def newTableColumnProperties(): TableColumnProperties
   
   // Create a new instance of TableRange
-  def newTableRange(): TableRange = js.native
+  def newTableRange(): TableRange
   
   // Create a new instance of TableRow
-  def newTableRow(): TableRow = js.native
+  def newTableRow(): TableRow
   
   // Create a new instance of TableRowProperties
-  def newTableRowProperties(): TableRowProperties = js.native
+  def newTableRowProperties(): TableRowProperties
   
   // Create a new instance of TextContent
-  def newTextContent(): TextContent = js.native
+  def newTextContent(): TextContent
   
   // Create a new instance of TextElement
-  def newTextElement(): TextElement = js.native
+  def newTextElement(): TextElement
   
   // Create a new instance of TextRun
-  def newTextRun(): TextRun = js.native
+  def newTextRun(): TextRun
   
   // Create a new instance of TextStyle
-  def newTextStyle(): TextStyle = js.native
+  def newTextStyle(): TextStyle
   
   // Create a new instance of ThemeColorPair
-  def newThemeColorPair(): ThemeColorPair = js.native
+  def newThemeColorPair(): ThemeColorPair
   
   // Create a new instance of UngroupObjectsRequest
-  def newUngroupObjectsRequest(): UngroupObjectsRequest = js.native
+  def newUngroupObjectsRequest(): UngroupObjectsRequest
   
   // Create a new instance of UnmergeTableCellsRequest
-  def newUnmergeTableCellsRequest(): UnmergeTableCellsRequest = js.native
+  def newUnmergeTableCellsRequest(): UnmergeTableCellsRequest
   
   // Create a new instance of UpdateImagePropertiesRequest
-  def newUpdateImagePropertiesRequest(): UpdateImagePropertiesRequest = js.native
+  def newUpdateImagePropertiesRequest(): UpdateImagePropertiesRequest
   
   // Create a new instance of UpdateLineCategoryRequest
-  def newUpdateLineCategoryRequest(): UpdateLineCategoryRequest = js.native
+  def newUpdateLineCategoryRequest(): UpdateLineCategoryRequest
   
   // Create a new instance of UpdateLinePropertiesRequest
-  def newUpdateLinePropertiesRequest(): UpdateLinePropertiesRequest = js.native
+  def newUpdateLinePropertiesRequest(): UpdateLinePropertiesRequest
   
   // Create a new instance of UpdatePageElementAltTextRequest
-  def newUpdatePageElementAltTextRequest(): UpdatePageElementAltTextRequest = js.native
+  def newUpdatePageElementAltTextRequest(): UpdatePageElementAltTextRequest
   
   // Create a new instance of UpdatePageElementTransformRequest
-  def newUpdatePageElementTransformRequest(): UpdatePageElementTransformRequest = js.native
+  def newUpdatePageElementTransformRequest(): UpdatePageElementTransformRequest
   
   // Create a new instance of UpdatePageElementsZOrderRequest
-  def newUpdatePageElementsZOrderRequest(): UpdatePageElementsZOrderRequest = js.native
+  def newUpdatePageElementsZOrderRequest(): UpdatePageElementsZOrderRequest
   
   // Create a new instance of UpdatePagePropertiesRequest
-  def newUpdatePagePropertiesRequest(): UpdatePagePropertiesRequest = js.native
+  def newUpdatePagePropertiesRequest(): UpdatePagePropertiesRequest
   
   // Create a new instance of UpdateParagraphStyleRequest
-  def newUpdateParagraphStyleRequest(): UpdateParagraphStyleRequest = js.native
+  def newUpdateParagraphStyleRequest(): UpdateParagraphStyleRequest
   
   // Create a new instance of UpdateShapePropertiesRequest
-  def newUpdateShapePropertiesRequest(): UpdateShapePropertiesRequest = js.native
+  def newUpdateShapePropertiesRequest(): UpdateShapePropertiesRequest
   
   // Create a new instance of UpdateSlidesPositionRequest
-  def newUpdateSlidesPositionRequest(): UpdateSlidesPositionRequest = js.native
+  def newUpdateSlidesPositionRequest(): UpdateSlidesPositionRequest
   
   // Create a new instance of UpdateTableBorderPropertiesRequest
-  def newUpdateTableBorderPropertiesRequest(): UpdateTableBorderPropertiesRequest = js.native
+  def newUpdateTableBorderPropertiesRequest(): UpdateTableBorderPropertiesRequest
   
   // Create a new instance of UpdateTableCellPropertiesRequest
-  def newUpdateTableCellPropertiesRequest(): UpdateTableCellPropertiesRequest = js.native
+  def newUpdateTableCellPropertiesRequest(): UpdateTableCellPropertiesRequest
   
   // Create a new instance of UpdateTableColumnPropertiesRequest
-  def newUpdateTableColumnPropertiesRequest(): UpdateTableColumnPropertiesRequest = js.native
+  def newUpdateTableColumnPropertiesRequest(): UpdateTableColumnPropertiesRequest
   
   // Create a new instance of UpdateTableRowPropertiesRequest
-  def newUpdateTableRowPropertiesRequest(): UpdateTableRowPropertiesRequest = js.native
+  def newUpdateTableRowPropertiesRequest(): UpdateTableRowPropertiesRequest
   
   // Create a new instance of UpdateTextStyleRequest
-  def newUpdateTextStyleRequest(): UpdateTextStyleRequest = js.native
+  def newUpdateTextStyleRequest(): UpdateTextStyleRequest
   
   // Create a new instance of UpdateVideoPropertiesRequest
-  def newUpdateVideoPropertiesRequest(): UpdateVideoPropertiesRequest = js.native
+  def newUpdateVideoPropertiesRequest(): UpdateVideoPropertiesRequest
   
   // Create a new instance of Video
-  def newVideo(): Video = js.native
+  def newVideo(): Video
   
   // Create a new instance of VideoProperties
-  def newVideoProperties(): VideoProperties = js.native
+  def newVideoProperties(): VideoProperties
   
   // Create a new instance of WeightedFontFamily
-  def newWeightedFontFamily(): WeightedFontFamily = js.native
+  def newWeightedFontFamily(): WeightedFontFamily
   
   // Create a new instance of WordArt
-  def newWordArt(): WordArt = js.native
+  def newWordArt(): WordArt
   
   // Create a new instance of WriteControl
-  def newWriteControl(): WriteControl = js.native
+  def newWriteControl(): WriteControl
 }
 object Slides {
   
@@ -614,13 +612,19 @@ object Slides {
   object AlignmentPosition extends StObject {
     
     @js.native
-    sealed trait CENTER extends AlignmentPosition
+    sealed trait CENTER
+      extends StObject
+         with AlignmentPosition
     
     @js.native
-    sealed trait HORIZONTAL_CENTER extends AlignmentPosition
+    sealed trait HORIZONTAL_CENTER
+      extends StObject
+         with AlignmentPosition
     
     @js.native
-    sealed trait VERTICAL_CENTER extends AlignmentPosition
+    sealed trait VERTICAL_CENTER
+      extends StObject
+         with AlignmentPosition
   }
   
   @js.native
@@ -637,37 +641,59 @@ object Slides {
   object ArrowStyle extends StObject {
     
     @js.native
-    sealed trait FILL_ARROW extends ArrowStyle
+    sealed trait FILL_ARROW
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait FILL_CIRCLE extends ArrowStyle
+    sealed trait FILL_CIRCLE
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait FILL_DIAMOND extends ArrowStyle
+    sealed trait FILL_DIAMOND
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait FILL_SQUARE extends ArrowStyle
+    sealed trait FILL_SQUARE
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait NONE extends ArrowStyle
+    sealed trait NONE
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait OPEN_ARROW extends ArrowStyle
+    sealed trait OPEN_ARROW
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait OPEN_CIRCLE extends ArrowStyle
+    sealed trait OPEN_CIRCLE
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait OPEN_DIAMOND extends ArrowStyle
+    sealed trait OPEN_DIAMOND
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait OPEN_SQUARE extends ArrowStyle
+    sealed trait OPEN_SQUARE
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait STEALTH_ARROW extends ArrowStyle
+    sealed trait STEALTH_ARROW
+      extends StObject
+         with ArrowStyle
     
     @js.native
-    sealed trait UNSUPPORTED extends ArrowStyle
+    sealed trait UNSUPPORTED
+      extends StObject
+         with ArrowStyle
   }
   
   @js.native
@@ -680,10 +706,14 @@ object Slides {
   object AutoTextType extends StObject {
     
     @js.native
-    sealed trait SLIDE_NUMBER extends AutoTextType
+    sealed trait SLIDE_NUMBER
+      extends StObject
+         with AutoTextType
     
     @js.native
-    sealed trait UNSUPPORTED extends AutoTextType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with AutoTextType
   }
   
   @js.native
@@ -696,13 +726,19 @@ object Slides {
   object CellMergeState extends StObject {
     
     @js.native
-    sealed trait HEAD extends CellMergeState
+    sealed trait HEAD
+      extends StObject
+         with CellMergeState
     
     @js.native
-    sealed trait MERGED extends CellMergeState
+    sealed trait MERGED
+      extends StObject
+         with CellMergeState
     
     @js.native
-    sealed trait NORMAL extends CellMergeState
+    sealed trait NORMAL
+      extends StObject
+         with CellMergeState
   }
   
   @js.native
@@ -721,16 +757,24 @@ object Slides {
   object ContentAlignment extends StObject {
     
     @js.native
-    sealed trait BOTTOM extends ContentAlignment
+    sealed trait BOTTOM
+      extends StObject
+         with ContentAlignment
     
     @js.native
-    sealed trait MIDDLE extends ContentAlignment
+    sealed trait MIDDLE
+      extends StObject
+         with ContentAlignment
     
     @js.native
-    sealed trait TOP extends ContentAlignment
+    sealed trait TOP
+      extends StObject
+         with ContentAlignment
     
     @js.native
-    sealed trait UNSUPPORTED extends ContentAlignment
+    sealed trait UNSUPPORTED
+      extends StObject
+         with ContentAlignment
   }
   
   @js.native
@@ -746,25 +790,39 @@ object Slides {
   object DashStyle extends StObject {
     
     @js.native
-    sealed trait DASH extends DashStyle
+    sealed trait DASH
+      extends StObject
+         with DashStyle
     
     @js.native
-    sealed trait DASH_DOT extends DashStyle
+    sealed trait DASH_DOT
+      extends StObject
+         with DashStyle
     
     @js.native
-    sealed trait DOT extends DashStyle
+    sealed trait DOT
+      extends StObject
+         with DashStyle
     
     @js.native
-    sealed trait LONG_DASH extends DashStyle
+    sealed trait LONG_DASH
+      extends StObject
+         with DashStyle
     
     @js.native
-    sealed trait LONG_DASH_DOT extends DashStyle
+    sealed trait LONG_DASH_DOT
+      extends StObject
+         with DashStyle
     
     @js.native
-    sealed trait SOLID extends DashStyle
+    sealed trait SOLID
+      extends StObject
+         with DashStyle
     
     @js.native
-    sealed trait UNSUPPORTED extends DashStyle
+    sealed trait UNSUPPORTED
+      extends StObject
+         with DashStyle
   }
   
   @js.native
@@ -777,13 +835,19 @@ object Slides {
   object FillType extends StObject {
     
     @js.native
-    sealed trait NONE extends FillType
+    sealed trait NONE
+      extends StObject
+         with FillType
     
     @js.native
-    sealed trait SOLID extends FillType
+    sealed trait SOLID
+      extends StObject
+         with FillType
     
     @js.native
-    sealed trait UNSUPPORTED extends FillType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with FillType
   }
   
   @js.native
@@ -799,16 +863,24 @@ object Slides {
   object LineCategory extends StObject {
     
     @js.native
-    sealed trait BENT extends LineCategory
+    sealed trait BENT
+      extends StObject
+         with LineCategory
     
     @js.native
-    sealed trait CURVED extends LineCategory
+    sealed trait CURVED
+      extends StObject
+         with LineCategory
     
     @js.native
-    sealed trait STRAIGHT extends LineCategory
+    sealed trait STRAIGHT
+      extends StObject
+         with LineCategory
     
     @js.native
-    sealed trait UNSUPPORTED extends LineCategory
+    sealed trait UNSUPPORTED
+      extends StObject
+         with LineCategory
   }
   
   @js.native
@@ -821,13 +893,19 @@ object Slides {
   object LineFillType extends StObject {
     
     @js.native
-    sealed trait NONE extends LineFillType
+    sealed trait NONE
+      extends StObject
+         with LineFillType
     
     @js.native
-    sealed trait SOLID extends LineFillType
+    sealed trait SOLID
+      extends StObject
+         with LineFillType
     
     @js.native
-    sealed trait UNSUPPORTED extends LineFillType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with LineFillType
   }
   
   @js.native
@@ -844,37 +922,59 @@ object Slides {
   object LineType extends StObject {
     
     @js.native
-    sealed trait BENT_CONNECTOR_2 extends LineType
+    sealed trait BENT_CONNECTOR_2
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait BENT_CONNECTOR_3 extends LineType
+    sealed trait BENT_CONNECTOR_3
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait BENT_CONNECTOR_4 extends LineType
+    sealed trait BENT_CONNECTOR_4
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait BENT_CONNECTOR_5 extends LineType
+    sealed trait BENT_CONNECTOR_5
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait CURVED_CONNECTOR_2 extends LineType
+    sealed trait CURVED_CONNECTOR_2
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait CURVED_CONNECTOR_3 extends LineType
+    sealed trait CURVED_CONNECTOR_3
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait CURVED_CONNECTOR_4 extends LineType
+    sealed trait CURVED_CONNECTOR_4
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait CURVED_CONNECTOR_5 extends LineType
+    sealed trait CURVED_CONNECTOR_5
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait STRAIGHT_CONNECTOR_1 extends LineType
+    sealed trait STRAIGHT_CONNECTOR_1
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait STRAIGHT_LINE extends LineType
+    sealed trait STRAIGHT_LINE
+      extends StObject
+         with LineType
     
     @js.native
-    sealed trait UNSUPPORTED extends LineType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with LineType
   }
   
   @js.native
@@ -887,19 +987,29 @@ object Slides {
   object LinkType extends StObject {
     
     @js.native
-    sealed trait SLIDE_ID extends LinkType
+    sealed trait SLIDE_ID
+      extends StObject
+         with LinkType
     
     @js.native
-    sealed trait SLIDE_INDEX extends LinkType
+    sealed trait SLIDE_INDEX
+      extends StObject
+         with LinkType
     
     @js.native
-    sealed trait SLIDE_POSITION extends LinkType
+    sealed trait SLIDE_POSITION
+      extends StObject
+         with LinkType
     
     @js.native
-    sealed trait UNSUPPORTED extends LinkType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with LinkType
     
     @js.native
-    sealed trait URL extends LinkType
+    sealed trait URL
+      extends StObject
+         with LinkType
   }
   
   @js.native
@@ -950,49 +1060,79 @@ object Slides {
   object ListPreset extends StObject {
     
     @js.native
-    sealed trait ARROW3D_CIRCLE_SQUARE extends ListPreset
+    sealed trait ARROW3D_CIRCLE_SQUARE
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait ARROW_DIAMOND_DISC extends ListPreset
+    sealed trait ARROW_DIAMOND_DISC
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait CHECKBOX extends ListPreset
+    sealed trait CHECKBOX
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait DIAMONDX_ARROW3D_SQUARE extends ListPreset
+    sealed trait DIAMONDX_ARROW3D_SQUARE
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait DIAMONDX_HOLLOWDIAMOND_SQUARE extends ListPreset
+    sealed trait DIAMONDX_HOLLOWDIAMOND_SQUARE
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait DIAMOND_CIRCLE_SQUARE extends ListPreset
+    sealed trait DIAMOND_CIRCLE_SQUARE
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait DIGIT_ALPHA_ROMAN extends ListPreset
+    sealed trait DIGIT_ALPHA_ROMAN
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait DIGIT_ALPHA_ROMAN_PARENS extends ListPreset
+    sealed trait DIGIT_ALPHA_ROMAN_PARENS
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait DIGIT_NESTED extends ListPreset
+    sealed trait DIGIT_NESTED
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait DISC_CIRCLE_SQUARE extends ListPreset
+    sealed trait DISC_CIRCLE_SQUARE
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait LEFTTRIANGLE_DIAMOND_DISC extends ListPreset
+    sealed trait LEFTTRIANGLE_DIAMOND_DISC
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait STAR_CIRCLE_SQUARE extends ListPreset
+    sealed trait STAR_CIRCLE_SQUARE
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait UPPERALPHA_ALPHA_ROMAN extends ListPreset
+    sealed trait UPPERALPHA_ALPHA_ROMAN
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait UPPERROMAN_UPPERALPHA_DIGIT extends ListPreset
+    sealed trait UPPERROMAN_UPPERALPHA_DIGIT
+      extends StObject
+         with ListPreset
     
     @js.native
-    sealed trait ZERODIGIT_ALPHA_ROMAN extends ListPreset
+    sealed trait ZERODIGIT_ALPHA_ROMAN
+      extends StObject
+         with ListPreset
   }
   
   @js.native
@@ -1005,16 +1145,24 @@ object Slides {
   object PageBackgroundType extends StObject {
     
     @js.native
-    sealed trait NONE extends PageBackgroundType
+    sealed trait NONE
+      extends StObject
+         with PageBackgroundType
     
     @js.native
-    sealed trait PICTURE extends PageBackgroundType
+    sealed trait PICTURE
+      extends StObject
+         with PageBackgroundType
     
     @js.native
-    sealed trait SOLID extends PageBackgroundType
+    sealed trait SOLID
+      extends StObject
+         with PageBackgroundType
     
     @js.native
-    sealed trait UNSUPPORTED extends PageBackgroundType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with PageBackgroundType
   }
   
   @js.native
@@ -1027,31 +1175,49 @@ object Slides {
   object PageElementType extends StObject {
     
     @js.native
-    sealed trait GROUP extends PageElementType
+    sealed trait GROUP
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait IMAGE extends PageElementType
+    sealed trait IMAGE
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait LINE extends PageElementType
+    sealed trait LINE
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait SHAPE extends PageElementType
+    sealed trait SHAPE
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait SHEETS_CHART extends PageElementType
+    sealed trait SHEETS_CHART
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait TABLE extends PageElementType
+    sealed trait TABLE
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait UNSUPPORTED extends PageElementType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait VIDEO extends PageElementType
+    sealed trait VIDEO
+      extends StObject
+         with PageElementType
     
     @js.native
-    sealed trait WORD_ART extends PageElementType
+    sealed trait WORD_ART
+      extends StObject
+         with PageElementType
   }
   
   @js.native
@@ -1064,16 +1230,24 @@ object Slides {
   object PageType extends StObject {
     
     @js.native
-    sealed trait LAYOUT extends PageType
+    sealed trait LAYOUT
+      extends StObject
+         with PageType
     
     @js.native
-    sealed trait MASTER extends PageType
+    sealed trait MASTER
+      extends StObject
+         with PageType
     
     @js.native
-    sealed trait SLIDE extends PageType
+    sealed trait SLIDE
+      extends StObject
+         with PageType
     
     @js.native
-    sealed trait UNSUPPORTED extends PageType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with PageType
   }
   
   @js.native
@@ -1086,19 +1260,29 @@ object Slides {
   object ParagraphAlignment extends StObject {
     
     @js.native
-    sealed trait CENTER extends ParagraphAlignment
+    sealed trait CENTER
+      extends StObject
+         with ParagraphAlignment
     
     @js.native
-    sealed trait END extends ParagraphAlignment
+    sealed trait END
+      extends StObject
+         with ParagraphAlignment
     
     @js.native
-    sealed trait JUSTIFIED extends ParagraphAlignment
+    sealed trait JUSTIFIED
+      extends StObject
+         with ParagraphAlignment
     
     @js.native
-    sealed trait START extends ParagraphAlignment
+    sealed trait START
+      extends StObject
+         with ParagraphAlignment
     
     @js.native
-    sealed trait UNSUPPORTED extends ParagraphAlignment
+    sealed trait UNSUPPORTED
+      extends StObject
+         with ParagraphAlignment
   }
   
   @js.native
@@ -1115,58 +1299,94 @@ object Slides {
   object PlaceholderType extends StObject {
     
     @js.native
-    sealed trait BODY extends PlaceholderType
+    sealed trait BODY
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait CENTERED_TITLE extends PlaceholderType
+    sealed trait CENTERED_TITLE
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait CHART extends PlaceholderType
+    sealed trait CHART
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait CLIP_ART extends PlaceholderType
+    sealed trait CLIP_ART
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait DATE_AND_TIME extends PlaceholderType
+    sealed trait DATE_AND_TIME
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait DIAGRAM extends PlaceholderType
+    sealed trait DIAGRAM
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait FOOTER extends PlaceholderType
+    sealed trait FOOTER
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait HEADER extends PlaceholderType
+    sealed trait HEADER
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait MEDIA extends PlaceholderType
+    sealed trait MEDIA
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait NONE extends PlaceholderType
+    sealed trait NONE
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait OBJECT extends PlaceholderType
+    sealed trait OBJECT
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait PICTURE extends PlaceholderType
+    sealed trait PICTURE
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait SLIDE_IMAGE extends PlaceholderType
+    sealed trait SLIDE_IMAGE
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait SLIDE_NUMBER extends PlaceholderType
+    sealed trait SLIDE_NUMBER
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait SUBTITLE extends PlaceholderType
+    sealed trait SUBTITLE
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait TABLE extends PlaceholderType
+    sealed trait TABLE
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait TITLE extends PlaceholderType
+    sealed trait TITLE
+      extends StObject
+         with PlaceholderType
     
     @js.native
-    sealed trait UNSUPPORTED extends PlaceholderType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with PlaceholderType
   }
   
   @js.native
@@ -1181,40 +1401,64 @@ object Slides {
   object PredefinedLayout extends StObject {
     
     @js.native
-    sealed trait BIG_NUMBER extends PredefinedLayout
+    sealed trait BIG_NUMBER
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait BLANK extends PredefinedLayout
+    sealed trait BLANK
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait CAPTION_ONLY extends PredefinedLayout
+    sealed trait CAPTION_ONLY
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait MAIN_POINT extends PredefinedLayout
+    sealed trait MAIN_POINT
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait ONE_COLUMN_TEXT extends PredefinedLayout
+    sealed trait ONE_COLUMN_TEXT
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait SECTION_HEADER extends PredefinedLayout
+    sealed trait SECTION_HEADER
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait SECTION_TITLE_AND_DESCRIPTION extends PredefinedLayout
+    sealed trait SECTION_TITLE_AND_DESCRIPTION
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait TITLE extends PredefinedLayout
+    sealed trait TITLE
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait TITLE_AND_BODY extends PredefinedLayout
+    sealed trait TITLE_AND_BODY
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait TITLE_AND_TWO_COLUMNS extends PredefinedLayout
+    sealed trait TITLE_AND_TWO_COLUMNS
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait TITLE_ONLY extends PredefinedLayout
+    sealed trait TITLE_ONLY
+      extends StObject
+         with PredefinedLayout
     
     @js.native
-    sealed trait UNSUPPORTED extends PredefinedLayout
+    sealed trait UNSUPPORTED
+      extends StObject
+         with PredefinedLayout
   }
   
   @js.native
@@ -1233,25 +1477,39 @@ object Slides {
   object SelectionType extends StObject {
     
     @js.native
-    sealed trait CURRENT_PAGE extends SelectionType
+    sealed trait CURRENT_PAGE
+      extends StObject
+         with SelectionType
     
     @js.native
-    sealed trait NONE extends SelectionType
+    sealed trait NONE
+      extends StObject
+         with SelectionType
     
     @js.native
-    sealed trait PAGE extends SelectionType
+    sealed trait PAGE
+      extends StObject
+         with SelectionType
     
     @js.native
-    sealed trait PAGE_ELEMENT extends SelectionType
+    sealed trait PAGE_ELEMENT
+      extends StObject
+         with SelectionType
     
     @js.native
-    sealed trait TABLE_CELL extends SelectionType
+    sealed trait TABLE_CELL
+      extends StObject
+         with SelectionType
     
     @js.native
-    sealed trait TEXT extends SelectionType
+    sealed trait TEXT
+      extends StObject
+         with SelectionType
     
     @js.native
-    sealed trait UNSUPPORTED extends SelectionType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with SelectionType
   }
   
   @js.native
@@ -1268,433 +1526,719 @@ object Slides {
   object ShapeType extends StObject {
     
     @js.native
-    sealed trait ARC extends ShapeType
+    sealed trait ARC
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ARROW_EAST extends ShapeType
+    sealed trait ARROW_EAST
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ARROW_NORTH extends ShapeType
+    sealed trait ARROW_NORTH
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ARROW_NORTH_EAST extends ShapeType
+    sealed trait ARROW_NORTH_EAST
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait BENT_ARROW extends ShapeType
+    sealed trait BENT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait BENT_UP_ARROW extends ShapeType
+    sealed trait BENT_UP_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait BEVEL extends ShapeType
+    sealed trait BEVEL
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait BLOCK_ARC extends ShapeType
+    sealed trait BLOCK_ARC
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait BRACE_PAIR extends ShapeType
+    sealed trait BRACE_PAIR
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait BRACKET_PAIR extends ShapeType
+    sealed trait BRACKET_PAIR
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CAN extends ShapeType
+    sealed trait CAN
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CHEVRON extends ShapeType
+    sealed trait CHEVRON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CHORD extends ShapeType
+    sealed trait CHORD
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CLOUD extends ShapeType
+    sealed trait CLOUD
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CLOUD_CALLOUT extends ShapeType
+    sealed trait CLOUD_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CORNER extends ShapeType
+    sealed trait CORNER
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CUBE extends ShapeType
+    sealed trait CUBE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CURVED_DOWN_ARROW extends ShapeType
+    sealed trait CURVED_DOWN_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CURVED_LEFT_ARROW extends ShapeType
+    sealed trait CURVED_LEFT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CURVED_RIGHT_ARROW extends ShapeType
+    sealed trait CURVED_RIGHT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CURVED_UP_ARROW extends ShapeType
+    sealed trait CURVED_UP_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait CUSTOM extends ShapeType
+    sealed trait CUSTOM
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DECAGON extends ShapeType
+    sealed trait DECAGON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DIAGONAL_STRIPE extends ShapeType
+    sealed trait DIAGONAL_STRIPE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DIAMOND extends ShapeType
+    sealed trait DIAMOND
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DODECAGON extends ShapeType
+    sealed trait DODECAGON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DONUT extends ShapeType
+    sealed trait DONUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DOUBLE_WAVE extends ShapeType
+    sealed trait DOUBLE_WAVE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DOWN_ARROW extends ShapeType
+    sealed trait DOWN_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait DOWN_ARROW_CALLOUT extends ShapeType
+    sealed trait DOWN_ARROW_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ELLIPSE extends ShapeType
+    sealed trait ELLIPSE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ELLIPSE_RIBBON extends ShapeType
+    sealed trait ELLIPSE_RIBBON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ELLIPSE_RIBBON_2 extends ShapeType
+    sealed trait ELLIPSE_RIBBON_2
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_ALTERNATE_PROCESS extends ShapeType
+    sealed trait FLOW_CHART_ALTERNATE_PROCESS
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_COLLATE extends ShapeType
+    sealed trait FLOW_CHART_COLLATE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_CONNECTOR extends ShapeType
+    sealed trait FLOW_CHART_CONNECTOR
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_DECISION extends ShapeType
+    sealed trait FLOW_CHART_DECISION
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_DELAY extends ShapeType
+    sealed trait FLOW_CHART_DELAY
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_DISPLAY extends ShapeType
+    sealed trait FLOW_CHART_DISPLAY
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_DOCUMENT extends ShapeType
+    sealed trait FLOW_CHART_DOCUMENT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_EXTRACT extends ShapeType
+    sealed trait FLOW_CHART_EXTRACT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_INPUT_OUTPUT extends ShapeType
+    sealed trait FLOW_CHART_INPUT_OUTPUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_INTERNAL_STORAGE extends ShapeType
+    sealed trait FLOW_CHART_INTERNAL_STORAGE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_MAGNETIC_DISK extends ShapeType
+    sealed trait FLOW_CHART_MAGNETIC_DISK
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_MAGNETIC_DRUM extends ShapeType
+    sealed trait FLOW_CHART_MAGNETIC_DRUM
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_MAGNETIC_TAPE extends ShapeType
+    sealed trait FLOW_CHART_MAGNETIC_TAPE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_MANUAL_INPUT extends ShapeType
+    sealed trait FLOW_CHART_MANUAL_INPUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_MANUAL_OPERATION extends ShapeType
+    sealed trait FLOW_CHART_MANUAL_OPERATION
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_MERGE extends ShapeType
+    sealed trait FLOW_CHART_MERGE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_MULTIDOCUMENT extends ShapeType
+    sealed trait FLOW_CHART_MULTIDOCUMENT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_OFFLINE_STORAGE extends ShapeType
+    sealed trait FLOW_CHART_OFFLINE_STORAGE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_OFFPAGE_CONNECTOR extends ShapeType
+    sealed trait FLOW_CHART_OFFPAGE_CONNECTOR
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_ONLINE_STORAGE extends ShapeType
+    sealed trait FLOW_CHART_ONLINE_STORAGE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_OR extends ShapeType
+    sealed trait FLOW_CHART_OR
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_PREDEFINED_PROCESS extends ShapeType
+    sealed trait FLOW_CHART_PREDEFINED_PROCESS
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_PREPARATION extends ShapeType
+    sealed trait FLOW_CHART_PREPARATION
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_PROCESS extends ShapeType
+    sealed trait FLOW_CHART_PROCESS
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_PUNCHED_CARD extends ShapeType
+    sealed trait FLOW_CHART_PUNCHED_CARD
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_PUNCHED_TAPE extends ShapeType
+    sealed trait FLOW_CHART_PUNCHED_TAPE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_SORT extends ShapeType
+    sealed trait FLOW_CHART_SORT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_SUMMING_JUNCTION extends ShapeType
+    sealed trait FLOW_CHART_SUMMING_JUNCTION
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FLOW_CHART_TERMINATOR extends ShapeType
+    sealed trait FLOW_CHART_TERMINATOR
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FOLDED_CORNER extends ShapeType
+    sealed trait FOLDED_CORNER
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait FRAME extends ShapeType
+    sealed trait FRAME
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait HALF_FRAME extends ShapeType
+    sealed trait HALF_FRAME
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait HEART extends ShapeType
+    sealed trait HEART
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait HEPTAGON extends ShapeType
+    sealed trait HEPTAGON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait HEXAGON extends ShapeType
+    sealed trait HEXAGON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait HOME_PLATE extends ShapeType
+    sealed trait HOME_PLATE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait HORIZONTAL_SCROLL extends ShapeType
+    sealed trait HORIZONTAL_SCROLL
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait IRREGULAR_SEAL_1 extends ShapeType
+    sealed trait IRREGULAR_SEAL_1
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait IRREGULAR_SEAL_2 extends ShapeType
+    sealed trait IRREGULAR_SEAL_2
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_ARROW extends ShapeType
+    sealed trait LEFT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_ARROW_CALLOUT extends ShapeType
+    sealed trait LEFT_ARROW_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_BRACE extends ShapeType
+    sealed trait LEFT_BRACE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_BRACKET extends ShapeType
+    sealed trait LEFT_BRACKET
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_RIGHT_ARROW extends ShapeType
+    sealed trait LEFT_RIGHT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_RIGHT_ARROW_CALLOUT extends ShapeType
+    sealed trait LEFT_RIGHT_ARROW_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_RIGHT_UP_ARROW extends ShapeType
+    sealed trait LEFT_RIGHT_UP_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LEFT_UP_ARROW extends ShapeType
+    sealed trait LEFT_UP_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait LIGHTNING_BOLT extends ShapeType
+    sealed trait LIGHTNING_BOLT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait MATH_DIVIDE extends ShapeType
+    sealed trait MATH_DIVIDE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait MATH_EQUAL extends ShapeType
+    sealed trait MATH_EQUAL
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait MATH_MINUS extends ShapeType
+    sealed trait MATH_MINUS
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait MATH_MULTIPLY extends ShapeType
+    sealed trait MATH_MULTIPLY
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait MATH_NOT_EQUAL extends ShapeType
+    sealed trait MATH_NOT_EQUAL
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait MATH_PLUS extends ShapeType
+    sealed trait MATH_PLUS
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait MOON extends ShapeType
+    sealed trait MOON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait NOTCHED_RIGHT_ARROW extends ShapeType
+    sealed trait NOTCHED_RIGHT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait NO_SMOKING extends ShapeType
+    sealed trait NO_SMOKING
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait OCTAGON extends ShapeType
+    sealed trait OCTAGON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait PARALLELOGRAM extends ShapeType
+    sealed trait PARALLELOGRAM
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait PENTAGON extends ShapeType
+    sealed trait PENTAGON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait PIE extends ShapeType
+    sealed trait PIE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait PLAQUE extends ShapeType
+    sealed trait PLAQUE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait PLUS extends ShapeType
+    sealed trait PLUS
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait QUAD_ARROW extends ShapeType
+    sealed trait QUAD_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait QUAD_ARROW_CALLOUT extends ShapeType
+    sealed trait QUAD_ARROW_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RECTANGLE extends ShapeType
+    sealed trait RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RIBBON extends ShapeType
+    sealed trait RIBBON
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RIBBON_2 extends ShapeType
+    sealed trait RIBBON_2
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RIGHT_ARROW extends ShapeType
+    sealed trait RIGHT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RIGHT_ARROW_CALLOUT extends ShapeType
+    sealed trait RIGHT_ARROW_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RIGHT_BRACE extends ShapeType
+    sealed trait RIGHT_BRACE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RIGHT_BRACKET extends ShapeType
+    sealed trait RIGHT_BRACKET
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait RIGHT_TRIANGLE extends ShapeType
+    sealed trait RIGHT_TRIANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ROUND_1_RECTANGLE extends ShapeType
+    sealed trait ROUND_1_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ROUND_2_DIAGONAL_RECTANGLE extends ShapeType
+    sealed trait ROUND_2_DIAGONAL_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ROUND_2_SAME_RECTANGLE extends ShapeType
+    sealed trait ROUND_2_SAME_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait ROUND_RECTANGLE extends ShapeType
+    sealed trait ROUND_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait SMILEY_FACE extends ShapeType
+    sealed trait SMILEY_FACE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait SNIP_1_RECTANGLE extends ShapeType
+    sealed trait SNIP_1_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait SNIP_2_DIAGONAL_RECTANGLE extends ShapeType
+    sealed trait SNIP_2_DIAGONAL_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait SNIP_2_SAME_RECTANGLE extends ShapeType
+    sealed trait SNIP_2_SAME_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait SNIP_ROUND_RECTANGLE extends ShapeType
+    sealed trait SNIP_ROUND_RECTANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait SPEECH extends ShapeType
+    sealed trait SPEECH
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STARBURST extends ShapeType
+    sealed trait STARBURST
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_10 extends ShapeType
+    sealed trait STAR_10
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_12 extends ShapeType
+    sealed trait STAR_12
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_16 extends ShapeType
+    sealed trait STAR_16
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_24 extends ShapeType
+    sealed trait STAR_24
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_32 extends ShapeType
+    sealed trait STAR_32
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_4 extends ShapeType
+    sealed trait STAR_4
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_5 extends ShapeType
+    sealed trait STAR_5
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_6 extends ShapeType
+    sealed trait STAR_6
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_7 extends ShapeType
+    sealed trait STAR_7
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STAR_8 extends ShapeType
+    sealed trait STAR_8
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait STRIPED_RIGHT_ARROW extends ShapeType
+    sealed trait STRIPED_RIGHT_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait SUN extends ShapeType
+    sealed trait SUN
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait TEARDROP extends ShapeType
+    sealed trait TEARDROP
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait TEXT_BOX extends ShapeType
+    sealed trait TEXT_BOX
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait TRAPEZOID extends ShapeType
+    sealed trait TRAPEZOID
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait TRIANGLE extends ShapeType
+    sealed trait TRIANGLE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait UNSUPPORTED extends ShapeType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait UP_ARROW extends ShapeType
+    sealed trait UP_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait UP_ARROW_CALLOUT extends ShapeType
+    sealed trait UP_ARROW_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait UP_DOWN_ARROW extends ShapeType
+    sealed trait UP_DOWN_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait UTURN_ARROW extends ShapeType
+    sealed trait UTURN_ARROW
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait VERTICAL_SCROLL extends ShapeType
+    sealed trait VERTICAL_SCROLL
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait WAVE extends ShapeType
+    sealed trait WAVE
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait WEDGE_ELLIPSE_CALLOUT extends ShapeType
+    sealed trait WEDGE_ELLIPSE_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait WEDGE_RECTANGLE_CALLOUT extends ShapeType
+    sealed trait WEDGE_RECTANGLE_CALLOUT
+      extends StObject
+         with ShapeType
     
     @js.native
-    sealed trait WEDGE_ROUND_RECTANGLE_CALLOUT extends ShapeType
+    sealed trait WEDGE_ROUND_RECTANGLE_CALLOUT
+      extends StObject
+         with ShapeType
   }
   
   @js.native
@@ -1707,10 +2251,14 @@ object Slides {
   object SheetsChartEmbedType extends StObject {
     
     @js.native
-    sealed trait IMAGE extends SheetsChartEmbedType
+    sealed trait IMAGE
+      extends StObject
+         with SheetsChartEmbedType
     
     @js.native
-    sealed trait UNSUPPORTED extends SheetsChartEmbedType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with SheetsChartEmbedType
   }
   
   @js.native
@@ -1723,13 +2271,19 @@ object Slides {
   object SlideLinkingMode extends StObject {
     
     @js.native
-    sealed trait LINKED extends SlideLinkingMode
+    sealed trait LINKED
+      extends StObject
+         with SlideLinkingMode
     
     @js.native
-    sealed trait NOT_LINKED extends SlideLinkingMode
+    sealed trait NOT_LINKED
+      extends StObject
+         with SlideLinkingMode
     
     @js.native
-    sealed trait UNSUPPORTED extends SlideLinkingMode
+    sealed trait UNSUPPORTED
+      extends StObject
+         with SlideLinkingMode
   }
   
   @js.native
@@ -1742,16 +2296,24 @@ object Slides {
   object SlidePosition extends StObject {
     
     @js.native
-    sealed trait FIRST_SLIDE extends SlidePosition
+    sealed trait FIRST_SLIDE
+      extends StObject
+         with SlidePosition
     
     @js.native
-    sealed trait LAST_SLIDE extends SlidePosition
+    sealed trait LAST_SLIDE
+      extends StObject
+         with SlidePosition
     
     @js.native
-    sealed trait NEXT_SLIDE extends SlidePosition
+    sealed trait NEXT_SLIDE
+      extends StObject
+         with SlidePosition
     
     @js.native
-    sealed trait PREVIOUS_SLIDE extends SlidePosition
+    sealed trait PREVIOUS_SLIDE
+      extends StObject
+         with SlidePosition
   }
   
   @js.native
@@ -1764,13 +2326,19 @@ object Slides {
   object SpacingMode extends StObject {
     
     @js.native
-    sealed trait COLLAPSE_LISTS extends SpacingMode
+    sealed trait COLLAPSE_LISTS
+      extends StObject
+         with SpacingMode
     
     @js.native
-    sealed trait NEVER_COLLAPSE extends SpacingMode
+    sealed trait NEVER_COLLAPSE
+      extends StObject
+         with SpacingMode
     
     @js.native
-    sealed trait UNSUPPORTED extends SpacingMode
+    sealed trait UNSUPPORTED
+      extends StObject
+         with SpacingMode
   }
   
   @js.native
@@ -1783,16 +2351,24 @@ object Slides {
   object TextBaselineOffset extends StObject {
     
     @js.native
-    sealed trait NONE extends TextBaselineOffset
+    sealed trait NONE
+      extends StObject
+         with TextBaselineOffset
     
     @js.native
-    sealed trait SUBSCRIPT extends TextBaselineOffset
+    sealed trait SUBSCRIPT
+      extends StObject
+         with TextBaselineOffset
     
     @js.native
-    sealed trait SUPERSCRIPT extends TextBaselineOffset
+    sealed trait SUPERSCRIPT
+      extends StObject
+         with TextBaselineOffset
     
     @js.native
-    sealed trait UNSUPPORTED extends TextBaselineOffset
+    sealed trait UNSUPPORTED
+      extends StObject
+         with TextBaselineOffset
   }
   
   @js.native
@@ -1805,13 +2381,19 @@ object Slides {
   object TextDirection extends StObject {
     
     @js.native
-    sealed trait LEFT_TO_RIGHT extends TextDirection
+    sealed trait LEFT_TO_RIGHT
+      extends StObject
+         with TextDirection
     
     @js.native
-    sealed trait RIGHT_TO_LEFT extends TextDirection
+    sealed trait RIGHT_TO_LEFT
+      extends StObject
+         with TextDirection
     
     @js.native
-    sealed trait UNSUPPORTED extends TextDirection
+    sealed trait UNSUPPORTED
+      extends StObject
+         with TextDirection
   }
   
   @js.native
@@ -1824,43 +2406,69 @@ object Slides {
   object ThemeColorType extends StObject {
     
     @js.native
-    sealed trait ACCENT1 extends ThemeColorType
+    sealed trait ACCENT1
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait ACCENT2 extends ThemeColorType
+    sealed trait ACCENT2
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait ACCENT3 extends ThemeColorType
+    sealed trait ACCENT3
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait ACCENT4 extends ThemeColorType
+    sealed trait ACCENT4
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait ACCENT5 extends ThemeColorType
+    sealed trait ACCENT5
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait ACCENT6 extends ThemeColorType
+    sealed trait ACCENT6
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait DARK1 extends ThemeColorType
+    sealed trait DARK1
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait DARK2 extends ThemeColorType
+    sealed trait DARK2
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait FOLLOWED_HYPERLINK extends ThemeColorType
+    sealed trait FOLLOWED_HYPERLINK
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait HYPERLINK extends ThemeColorType
+    sealed trait HYPERLINK
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait LIGHT1 extends ThemeColorType
+    sealed trait LIGHT1
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait LIGHT2 extends ThemeColorType
+    sealed trait LIGHT2
+      extends StObject
+         with ThemeColorType
     
     @js.native
-    sealed trait UNSUPPORTED extends ThemeColorType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with ThemeColorType
   }
   
   @js.native
@@ -1873,10 +2481,14 @@ object Slides {
   object VideoSourceType extends StObject {
     
     @js.native
-    sealed trait UNSUPPORTED extends VideoSourceType
+    sealed trait UNSUPPORTED
+      extends StObject
+         with VideoSourceType
     
     @js.native
-    sealed trait YOUTUBE extends VideoSourceType
+    sealed trait YOUTUBE
+      extends StObject
+         with VideoSourceType
   }
   
   /**
@@ -1892,22 +2504,21 @@ object Slides {
     *     x2 = scaleX * x1 + shearX * y1 + translateX
     *     y2 = scaleY * y1 + shearY * x1 + translateY
     */
-  @js.native
   trait AffineTransform extends StObject {
     
-    def getScaleX(): Double = js.native
+    def getScaleX(): Double
     
-    def getScaleY(): Double = js.native
+    def getScaleY(): Double
     
-    def getShearX(): Double = js.native
+    def getShearX(): Double
     
-    def getShearY(): Double = js.native
+    def getShearY(): Double
     
-    def getTranslateX(): Double = js.native
+    def getTranslateX(): Double
     
-    def getTranslateY(): Double = js.native
+    def getTranslateY(): Double
     
-    def toBuilder(): AffineTransformBuilder = js.native
+    def toBuilder(): AffineTransformBuilder
   }
   object AffineTransform {
     
@@ -1964,22 +2575,21 @@ object Slides {
     *       [ 1.1   1.0   0.0 ]
     *       [  0     0     1  ]
     */
-  @js.native
   trait AffineTransformBuilder extends StObject {
     
-    def build(): typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform = js.native
+    def build(): typings.googleAppsScript.GoogleAppsScript.Slides.AffineTransform
     
-    def setScaleX(scaleX: Double): AffineTransformBuilder = js.native
+    def setScaleX(scaleX: Double): AffineTransformBuilder
     
-    def setScaleY(scaleY: Double): AffineTransformBuilder = js.native
+    def setScaleY(scaleY: Double): AffineTransformBuilder
     
-    def setShearX(shearX: Double): AffineTransformBuilder = js.native
+    def setShearX(shearX: Double): AffineTransformBuilder
     
-    def setShearY(shearY: Double): AffineTransformBuilder = js.native
+    def setShearY(shearY: Double): AffineTransformBuilder
     
-    def setTranslateX(translateX: Double): AffineTransformBuilder = js.native
+    def setTranslateX(translateX: Double): AffineTransformBuilder
     
-    def setTranslateY(translateY: Double): AffineTransformBuilder = js.native
+    def setTranslateY(translateY: Double): AffineTransformBuilder
   }
   object AffineTransformBuilder {
     
@@ -2027,14 +2637,13 @@ object Slides {
     * An element of text that is dynamically replaced with content that can change over time, such as a
     * slide number.
     */
-  @js.native
   trait AutoText extends StObject {
     
-    def getAutoTextType(): AutoTextType = js.native
+    def getAutoTextType(): AutoTextType
     
-    def getIndex(): Integer = js.native
+    def getIndex(): Integer
     
-    def getRange(): TextRange = js.native
+    def getRange(): TextRange
   }
   object AutoText {
     
@@ -2061,22 +2670,21 @@ object Slides {
   /**
     * Describes the border around an element.
     */
-  @js.native
   trait Border extends StObject {
     
-    def getDashStyle(): DashStyle = js.native
+    def getDashStyle(): DashStyle
     
-    def getLineFill(): typings.googleAppsScript.GoogleAppsScript.Slides.LineFill = js.native
+    def getLineFill(): typings.googleAppsScript.GoogleAppsScript.Slides.LineFill
     
-    def getWeight(): Double = js.native
+    def getWeight(): Double
     
-    def isVisible(): Boolean = js.native
+    def isVisible(): Boolean
     
-    def setDashStyle(style: DashStyle): Border = js.native
+    def setDashStyle(style: DashStyle): Border
     
-    def setTransparent(): Border = js.native
+    def setTransparent(): Border
     
-    def setWeight(points: Double): Border = js.native
+    def setWeight(points: Double): Border
   }
   object Border {
     
@@ -2143,10 +2751,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait PresentationsCollection extends StObject {
       
-      var Pages: js.UndefOr[PagesCollection] = js.native
+      var Pages: js.UndefOr[PagesCollection] = js.undefined
       
       // Applies one or more updates to the presentation.
       // Each request is validated before
@@ -2165,17 +2772,17 @@ object Slides {
       // collaborators, the presentation should reflect your changes. In any case,
       // the updates in your request are guaranteed to be applied together
       // atomically.
-      def batchUpdate(resource: BatchUpdatePresentationRequest, presentationId: String): BatchUpdatePresentationResponse = js.native
+      def batchUpdate(resource: BatchUpdatePresentationRequest, presentationId: String): BatchUpdatePresentationResponse
       
       // Creates a blank presentation using the title given in the request. If a
       // `presentationId` is provided, it is used as the ID of the new presentation.
       // Otherwise, a new ID is generated. Other fields in the request, including
       // any provided content, are ignored.
       // Returns the created presentation.
-      def create(resource: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation = js.native
+      def create(resource: typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation
       
       // Gets the latest version of the specified presentation.
-      def get(presentationId: String): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation = js.native
+      def get(presentationId: String): typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation
     }
     object PresentationsCollection {
       
@@ -2215,14 +2822,13 @@ object Slides {
   /**
     * An opaque color
     */
-  @js.native
   trait Color extends StObject {
     
-    def asRgbColor(): typings.googleAppsScript.GoogleAppsScript.Base.RgbColor = js.native
+    def asRgbColor(): typings.googleAppsScript.GoogleAppsScript.Base.RgbColor
     
-    def asThemeColor(): ThemeColor = js.native
+    def asThemeColor(): ThemeColor
     
-    def getColorType(): ColorType = js.native
+    def getColorType(): ColorType
   }
   object Color {
     
@@ -2269,12 +2875,11 @@ object Slides {
   /**
     * The connection site on a PageElement that can connect to a connector.
     */
-  @js.native
   trait ConnectionSite extends StObject {
     
-    def getIndex(): Integer = js.native
+    def getIndex(): Integer
     
-    def getPageElement(): typings.googleAppsScript.GoogleAppsScript.Slides.PageElement = js.native
+    def getPageElement(): typings.googleAppsScript.GoogleAppsScript.Slides.PageElement
   }
   object ConnectionSite {
     
@@ -2752,20 +3357,19 @@ object Slides {
   /**
     * A hypertext link.
     */
-  @js.native
   trait Link extends StObject {
     
-    def getLinkType(): LinkType = js.native
+    def getLinkType(): LinkType
     
-    def getLinkedSlide(): Slide = js.native
+    def getLinkedSlide(): Slide
     
-    def getSlideId(): String = js.native
+    def getSlideId(): String
     
-    def getSlideIndex(): Integer = js.native
+    def getSlideIndex(): Integer
     
-    def getSlidePosition(): SlidePosition = js.native
+    def getSlidePosition(): SlidePosition
     
-    def getUrl(): String = js.native
+    def getUrl(): String
   }
   object Link {
     
@@ -2808,12 +3412,11 @@ object Slides {
   /**
     * A list in the text.
     */
-  @js.native
   trait List extends StObject {
     
-    def getListId(): String = js.native
+    def getListId(): String
     
-    def getListParagraphs(): js.Array[Paragraph] = js.native
+    def getListParagraphs(): js.Array[Paragraph]
   }
   object List {
     
@@ -2837,20 +3440,19 @@ object Slides {
   /**
     * The list styling for a range of text.
     */
-  @js.native
   trait ListStyle extends StObject {
     
-    def applyListPreset(listPreset: ListPreset): ListStyle = js.native
+    def applyListPreset(listPreset: ListPreset): ListStyle
     
-    def getGlyph(): String = js.native
+    def getGlyph(): String
     
-    def getList(): List = js.native
+    def getList(): List
     
-    def getNestingLevel(): Integer = js.native
+    def getNestingLevel(): Integer
     
-    def isInList(): Boolean = js.native
+    def isInList(): Boolean
     
-    def removeFromList(): ListStyle = js.native
+    def removeFromList(): ListStyle
   }
   object ListStyle {
     
@@ -3287,10 +3889,9 @@ object Slides {
   /**
     * A collection of one or more PageElement instances.
     */
-  @js.native
   trait PageElementRange extends StObject {
     
-    def getPageElements(): js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.PageElement] = js.native
+    def getPageElements(): js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.PageElement]
   }
   object PageElementRange {
     
@@ -3311,10 +3912,9 @@ object Slides {
   /**
     * A collection of one or more Page instances.
     */
-  @js.native
   trait PageRange extends StObject {
     
-    def getPages(): js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Page] = js.native
+    def getPages(): js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Page]
   }
   object PageRange {
     
@@ -3335,12 +3935,11 @@ object Slides {
   /**
     * A segment of text terminated by a newline character.
     */
-  @js.native
   trait Paragraph extends StObject {
     
-    def getIndex(): Integer = js.native
+    def getIndex(): Integer
     
-    def getRange(): TextRange = js.native
+    def getRange(): TextRange
   }
   object Paragraph {
     
@@ -3368,44 +3967,43 @@ object Slides {
     * multiple paragraphs, and those paragraphs have different values for the read method being called.
     * To avoid this, query for paragraph styles using the TextRange returned by the Paragraph.getRange() method.
     */
-  @js.native
   trait ParagraphStyle extends StObject {
     
-    def getIndentEnd(): Double = js.native
+    def getIndentEnd(): Double
     
-    def getIndentFirstLine(): Double = js.native
+    def getIndentFirstLine(): Double
     
-    def getIndentStart(): Double = js.native
+    def getIndentStart(): Double
     
-    def getLineSpacing(): Double = js.native
+    def getLineSpacing(): Double
     
-    def getParagraphAlignment(): ParagraphAlignment = js.native
+    def getParagraphAlignment(): ParagraphAlignment
     
-    def getSpaceAbove(): Double = js.native
+    def getSpaceAbove(): Double
     
-    def getSpaceBelow(): Double = js.native
+    def getSpaceBelow(): Double
     
-    def getSpacingMode(): SpacingMode = js.native
+    def getSpacingMode(): SpacingMode
     
-    def getTextDirection(): TextDirection = js.native
+    def getTextDirection(): TextDirection
     
-    def setIndentEnd(indent: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setIndentEnd(indent: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setIndentFirstLine(indent: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setIndentFirstLine(indent: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setIndentStart(indent: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setIndentStart(indent: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setLineSpacing(spacing: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setLineSpacing(spacing: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setParagraphAlignment(alignment: ParagraphAlignment): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setParagraphAlignment(alignment: ParagraphAlignment): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setSpaceAbove(space: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setSpaceAbove(space: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setSpaceBelow(space: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setSpaceBelow(space: Double): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setSpacingMode(mode: SpacingMode): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setSpacingMode(mode: SpacingMode): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
     
-    def setTextDirection(direction: TextDirection): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle = js.native
+    def setTextDirection(direction: TextDirection): typings.googleAppsScript.GoogleAppsScript.Slides.ParagraphStyle
   }
   object ParagraphStyle {
     
@@ -3496,16 +4094,15 @@ object Slides {
   /**
     * A fill that renders an image that's stretched to the dimensions of its container.
     */
-  @js.native
   trait PictureFill extends StObject {
     
-    def getAs(contentType: String): Blob = js.native
+    def getAs(contentType: String): Blob
     
-    def getBlob(): Blob = js.native
+    def getBlob(): Blob
     
-    def getContentUrl(): String = js.native
+    def getContentUrl(): String
     
-    def getSourceUrl(): String = js.native
+    def getSourceUrl(): String
   }
   object PictureFill {
     
@@ -3540,12 +4137,11 @@ object Slides {
   /**
     * A point representing a location.
     */
-  @js.native
   trait Point extends StObject {
     
-    def getX(): Double = js.native
+    def getX(): Double
     
-    def getY(): Double = js.native
+    def getY(): Double
   }
   object Point {
     
@@ -3642,22 +4238,21 @@ object Slides {
   
   object Schema {
     
-    @js.native
     trait AffineTransform extends StObject {
       
-      var scaleX: js.UndefOr[Double] = js.native
+      var scaleX: js.UndefOr[Double] = js.undefined
       
-      var scaleY: js.UndefOr[Double] = js.native
+      var scaleY: js.UndefOr[Double] = js.undefined
       
-      var shearX: js.UndefOr[Double] = js.native
+      var shearX: js.UndefOr[Double] = js.undefined
       
-      var shearY: js.UndefOr[Double] = js.native
+      var shearY: js.UndefOr[Double] = js.undefined
       
-      var translateX: js.UndefOr[Double] = js.native
+      var translateX: js.UndefOr[Double] = js.undefined
       
-      var translateY: js.UndefOr[Double] = js.native
+      var translateY: js.UndefOr[Double] = js.undefined
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
     }
     object AffineTransform {
       
@@ -3714,14 +4309,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait AutoText extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.native
+      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AutoText {
       
@@ -3754,12 +4348,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait BatchUpdatePresentationRequest extends StObject {
       
-      var requests: js.UndefOr[js.Array[Request]] = js.native
+      var requests: js.UndefOr[js.Array[Request]] = js.undefined
       
-      var writeControl: js.UndefOr[WriteControl] = js.native
+      var writeControl: js.UndefOr[WriteControl] = js.undefined
     }
     object BatchUpdatePresentationRequest {
       
@@ -3789,14 +4382,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait BatchUpdatePresentationResponse extends StObject {
       
-      var presentationId: js.UndefOr[String] = js.native
+      var presentationId: js.UndefOr[String] = js.undefined
       
-      var replies: js.UndefOr[js.Array[Response]] = js.native
+      var replies: js.UndefOr[js.Array[Response]] = js.undefined
       
-      var writeControl: js.UndefOr[WriteControl] = js.native
+      var writeControl: js.UndefOr[WriteControl] = js.undefined
     }
     object BatchUpdatePresentationResponse {
       
@@ -3832,16 +4424,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait Bullet extends StObject {
       
-      var bulletStyle: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.native
+      var bulletStyle: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.undefined
       
-      var glyph: js.UndefOr[String] = js.native
+      var glyph: js.UndefOr[String] = js.undefined
       
-      var listId: js.UndefOr[String] = js.native
+      var listId: js.UndefOr[String] = js.undefined
       
-      var nestingLevel: js.UndefOr[Double] = js.native
+      var nestingLevel: js.UndefOr[Double] = js.undefined
     }
     object Bullet {
       
@@ -3880,10 +4471,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait ColorScheme extends StObject {
       
-      var colors: js.UndefOr[js.Array[ThemeColorPair]] = js.native
+      var colors: js.UndefOr[js.Array[ThemeColorPair]] = js.undefined
     }
     object ColorScheme {
       
@@ -3907,14 +4497,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait ColorStop extends StObject {
       
-      var alpha: js.UndefOr[Double] = js.native
+      var alpha: js.UndefOr[Double] = js.undefined
       
-      var color: js.UndefOr[OpaqueColor] = js.native
+      var color: js.UndefOr[OpaqueColor] = js.undefined
       
-      var position: js.UndefOr[Double] = js.native
+      var position: js.UndefOr[Double] = js.undefined
     }
     object ColorStop {
       
@@ -3947,14 +4536,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateImageRequest extends StObject {
       
-      var elementProperties: js.UndefOr[PageElementProperties] = js.native
+      var elementProperties: js.UndefOr[PageElementProperties] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object CreateImageRequest {
       
@@ -3987,10 +4575,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateImageResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateImageResponse {
       
@@ -4011,16 +4598,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateLineRequest extends StObject {
       
-      var category: js.UndefOr[String] = js.native
+      var category: js.UndefOr[String] = js.undefined
       
-      var elementProperties: js.UndefOr[PageElementProperties] = js.native
+      var elementProperties: js.UndefOr[PageElementProperties] = js.undefined
       
-      var lineCategory: js.UndefOr[String] = js.native
+      var lineCategory: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateLineRequest {
       
@@ -4059,10 +4645,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateLineResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateLineResponse {
       
@@ -4083,16 +4668,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateParagraphBulletsRequest extends StObject {
       
-      var bulletPreset: js.UndefOr[String] = js.native
+      var bulletPreset: js.UndefOr[String] = js.undefined
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var textRange: js.UndefOr[Range] = js.native
+      var textRange: js.UndefOr[Range] = js.undefined
     }
     object CreateParagraphBulletsRequest {
       
@@ -4131,14 +4715,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateShapeRequest extends StObject {
       
-      var elementProperties: js.UndefOr[PageElementProperties] = js.native
+      var elementProperties: js.UndefOr[PageElementProperties] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var shapeType: js.UndefOr[String] = js.native
+      var shapeType: js.UndefOr[String] = js.undefined
     }
     object CreateShapeRequest {
       
@@ -4171,10 +4754,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateShapeResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateShapeResponse {
       
@@ -4195,18 +4777,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateSheetsChartRequest extends StObject {
       
-      var chartId: js.UndefOr[Double] = js.native
+      var chartId: js.UndefOr[Double] = js.undefined
       
-      var elementProperties: js.UndefOr[PageElementProperties] = js.native
+      var elementProperties: js.UndefOr[PageElementProperties] = js.undefined
       
-      var linkingMode: js.UndefOr[String] = js.native
+      var linkingMode: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
     }
     object CreateSheetsChartRequest {
       
@@ -4251,10 +4832,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateSheetsChartResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateSheetsChartResponse {
       
@@ -4275,16 +4855,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateSlideRequest extends StObject {
       
-      var insertionIndex: js.UndefOr[Double] = js.native
+      var insertionIndex: js.UndefOr[Double] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var placeholderIdMappings: js.UndefOr[js.Array[LayoutPlaceholderIdMapping]] = js.native
+      var placeholderIdMappings: js.UndefOr[js.Array[LayoutPlaceholderIdMapping]] = js.undefined
       
-      var slideLayoutReference: js.UndefOr[LayoutReference] = js.native
+      var slideLayoutReference: js.UndefOr[LayoutReference] = js.undefined
     }
     object CreateSlideRequest {
       
@@ -4326,10 +4905,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateSlideResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateSlideResponse {
       
@@ -4350,16 +4928,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateTableRequest extends StObject {
       
-      var columns: js.UndefOr[Double] = js.native
+      var columns: js.UndefOr[Double] = js.undefined
       
-      var elementProperties: js.UndefOr[PageElementProperties] = js.native
+      var elementProperties: js.UndefOr[PageElementProperties] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var rows: js.UndefOr[Double] = js.native
+      var rows: js.UndefOr[Double] = js.undefined
     }
     object CreateTableRequest {
       
@@ -4398,10 +4975,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateTableResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateTableResponse {
       
@@ -4422,16 +4998,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateVideoRequest extends StObject {
       
-      var elementProperties: js.UndefOr[PageElementProperties] = js.native
+      var elementProperties: js.UndefOr[PageElementProperties] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
     }
     object CreateVideoRequest {
       
@@ -4470,10 +5045,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait CreateVideoResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object CreateVideoResponse {
       
@@ -4494,18 +5068,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait CropProperties extends StObject {
       
-      var angle: js.UndefOr[Double] = js.native
+      var angle: js.UndefOr[Double] = js.undefined
       
-      var bottomOffset: js.UndefOr[Double] = js.native
+      var bottomOffset: js.UndefOr[Double] = js.undefined
       
-      var leftOffset: js.UndefOr[Double] = js.native
+      var leftOffset: js.UndefOr[Double] = js.undefined
       
-      var rightOffset: js.UndefOr[Double] = js.native
+      var rightOffset: js.UndefOr[Double] = js.undefined
       
-      var topOffset: js.UndefOr[Double] = js.native
+      var topOffset: js.UndefOr[Double] = js.undefined
     }
     object CropProperties {
       
@@ -4550,10 +5123,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait DeleteObjectRequest extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object DeleteObjectRequest {
       
@@ -4574,14 +5146,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait DeleteParagraphBulletsRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var textRange: js.UndefOr[Range] = js.native
+      var textRange: js.UndefOr[Range] = js.undefined
     }
     object DeleteParagraphBulletsRequest {
       
@@ -4614,12 +5185,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait DeleteTableColumnRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var tableObjectId: js.UndefOr[String] = js.native
+      var tableObjectId: js.UndefOr[String] = js.undefined
     }
     object DeleteTableColumnRequest {
       
@@ -4646,12 +5216,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait DeleteTableRowRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var tableObjectId: js.UndefOr[String] = js.native
+      var tableObjectId: js.UndefOr[String] = js.undefined
     }
     object DeleteTableRowRequest {
       
@@ -4678,14 +5247,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait DeleteTextRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var textRange: js.UndefOr[Range] = js.native
+      var textRange: js.UndefOr[Range] = js.undefined
     }
     object DeleteTextRequest {
       
@@ -4718,12 +5286,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait Dimension extends StObject {
       
-      var magnitude: js.UndefOr[Double] = js.native
+      var magnitude: js.UndefOr[Double] = js.undefined
       
-      var unit: js.UndefOr[String] = js.native
+      var unit: js.UndefOr[String] = js.undefined
     }
     object Dimension {
       
@@ -4750,12 +5317,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait DuplicateObjectRequest extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var objectIds: js.UndefOr[js.Object] = js.native
+      var objectIds: js.UndefOr[js.Object] = js.undefined
     }
     object DuplicateObjectRequest {
       
@@ -4782,10 +5348,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait DuplicateObjectResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object DuplicateObjectResponse {
       
@@ -4806,10 +5371,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait Group extends StObject {
       
-      var children: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]] = js.native
+      var children: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]] = js.undefined
     }
     object Group {
       
@@ -4833,12 +5397,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait GroupObjectsRequest extends StObject {
       
-      var childrenObjectIds: js.UndefOr[js.Array[String]] = js.native
+      var childrenObjectIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var groupObjectId: js.UndefOr[String] = js.native
+      var groupObjectId: js.UndefOr[String] = js.undefined
     }
     object GroupObjectsRequest {
       
@@ -4868,10 +5431,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait GroupObjectsResponse extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object GroupObjectsResponse {
       
@@ -4892,14 +5454,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait Image extends StObject {
       
-      var contentUrl: js.UndefOr[String] = js.native
+      var contentUrl: js.UndefOr[String] = js.undefined
       
-      var imageProperties: js.UndefOr[ImageProperties] = js.native
+      var imageProperties: js.UndefOr[ImageProperties] = js.undefined
       
-      var sourceUrl: js.UndefOr[String] = js.native
+      var sourceUrl: js.UndefOr[String] = js.undefined
     }
     object Image {
       
@@ -4932,24 +5493,23 @@ object Slides {
       }
     }
     
-    @js.native
     trait ImageProperties extends StObject {
       
-      var brightness: js.UndefOr[Double] = js.native
+      var brightness: js.UndefOr[Double] = js.undefined
       
-      var contrast: js.UndefOr[Double] = js.native
+      var contrast: js.UndefOr[Double] = js.undefined
       
-      var cropProperties: js.UndefOr[CropProperties] = js.native
+      var cropProperties: js.UndefOr[CropProperties] = js.undefined
       
-      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.native
+      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.undefined
       
-      var outline: js.UndefOr[Outline] = js.native
+      var outline: js.UndefOr[Outline] = js.undefined
       
-      var recolor: js.UndefOr[Recolor] = js.native
+      var recolor: js.UndefOr[Recolor] = js.undefined
       
-      var shadow: js.UndefOr[Shadow] = js.native
+      var shadow: js.UndefOr[Shadow] = js.undefined
       
-      var transparency: js.UndefOr[Double] = js.native
+      var transparency: js.UndefOr[Double] = js.undefined
     }
     object ImageProperties {
       
@@ -5012,16 +5572,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait InsertTableColumnsRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var insertRight: js.UndefOr[Boolean] = js.native
+      var insertRight: js.UndefOr[Boolean] = js.undefined
       
-      var number: js.UndefOr[Double] = js.native
+      var number: js.UndefOr[Double] = js.undefined
       
-      var tableObjectId: js.UndefOr[String] = js.native
+      var tableObjectId: js.UndefOr[String] = js.undefined
     }
     object InsertTableColumnsRequest {
       
@@ -5060,16 +5619,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait InsertTableRowsRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var insertBelow: js.UndefOr[Boolean] = js.native
+      var insertBelow: js.UndefOr[Boolean] = js.undefined
       
-      var number: js.UndefOr[Double] = js.native
+      var number: js.UndefOr[Double] = js.undefined
       
-      var tableObjectId: js.UndefOr[String] = js.native
+      var tableObjectId: js.UndefOr[String] = js.undefined
     }
     object InsertTableRowsRequest {
       
@@ -5108,16 +5666,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait InsertTextRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var insertionIndex: js.UndefOr[Double] = js.native
+      var insertionIndex: js.UndefOr[Double] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
     }
     object InsertTextRequest {
       
@@ -5156,14 +5713,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait LayoutPlaceholderIdMapping extends StObject {
       
-      var layoutPlaceholder: js.UndefOr[Placeholder] = js.native
+      var layoutPlaceholder: js.UndefOr[Placeholder] = js.undefined
       
-      var layoutPlaceholderObjectId: js.UndefOr[String] = js.native
+      var layoutPlaceholderObjectId: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object LayoutPlaceholderIdMapping {
       
@@ -5196,14 +5752,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait LayoutProperties extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var masterObjectId: js.UndefOr[String] = js.native
+      var masterObjectId: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object LayoutProperties {
       
@@ -5236,12 +5791,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait LayoutReference extends StObject {
       
-      var layoutId: js.UndefOr[String] = js.native
+      var layoutId: js.UndefOr[String] = js.undefined
       
-      var predefinedLayout: js.UndefOr[String] = js.native
+      var predefinedLayout: js.UndefOr[String] = js.undefined
     }
     object LayoutReference {
       
@@ -5268,14 +5822,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait Line extends StObject {
       
-      var lineCategory: js.UndefOr[String] = js.native
+      var lineCategory: js.UndefOr[String] = js.undefined
       
-      var lineProperties: js.UndefOr[LineProperties] = js.native
+      var lineProperties: js.UndefOr[LineProperties] = js.undefined
       
-      var lineType: js.UndefOr[String] = js.native
+      var lineType: js.UndefOr[String] = js.undefined
     }
     object Line {
       
@@ -5308,12 +5861,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait LineConnection extends StObject {
       
-      var connectedObjectId: js.UndefOr[String] = js.native
+      var connectedObjectId: js.UndefOr[String] = js.undefined
       
-      var connectionSiteIndex: js.UndefOr[Double] = js.native
+      var connectionSiteIndex: js.UndefOr[Double] = js.undefined
     }
     object LineConnection {
       
@@ -5340,10 +5892,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait LineFill extends StObject {
       
-      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.native
+      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.undefined
     }
     object LineFill {
       
@@ -5364,24 +5915,23 @@ object Slides {
       }
     }
     
-    @js.native
     trait LineProperties extends StObject {
       
-      var dashStyle: js.UndefOr[String] = js.native
+      var dashStyle: js.UndefOr[String] = js.undefined
       
-      var endArrow: js.UndefOr[String] = js.native
+      var endArrow: js.UndefOr[String] = js.undefined
       
-      var endConnection: js.UndefOr[LineConnection] = js.native
+      var endConnection: js.UndefOr[LineConnection] = js.undefined
       
-      var lineFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill] = js.native
+      var lineFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill] = js.undefined
       
-      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.native
+      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.undefined
       
-      var startArrow: js.UndefOr[String] = js.native
+      var startArrow: js.UndefOr[String] = js.undefined
       
-      var startConnection: js.UndefOr[LineConnection] = js.native
+      var startConnection: js.UndefOr[LineConnection] = js.undefined
       
-      var weight: js.UndefOr[Dimension] = js.native
+      var weight: js.UndefOr[Dimension] = js.undefined
     }
     object LineProperties {
       
@@ -5444,16 +5994,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait Link extends StObject {
       
-      var pageObjectId: js.UndefOr[String] = js.native
+      var pageObjectId: js.UndefOr[String] = js.undefined
       
-      var relativeLink: js.UndefOr[String] = js.native
+      var relativeLink: js.UndefOr[String] = js.undefined
       
-      var slideIndex: js.UndefOr[Double] = js.native
+      var slideIndex: js.UndefOr[Double] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object Link {
       
@@ -5492,12 +6041,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait List extends StObject {
       
-      var listId: js.UndefOr[String] = js.native
+      var listId: js.UndefOr[String] = js.undefined
       
-      var nestingLevel: js.UndefOr[js.Object] = js.native
+      var nestingLevel: js.UndefOr[js.Object] = js.undefined
     }
     object List {
       
@@ -5524,10 +6072,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait MasterProperties extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
     }
     object MasterProperties {
       
@@ -5548,12 +6095,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait MergeTableCellsRequest extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var tableRange: js.UndefOr[TableRange] = js.native
+      var tableRange: js.UndefOr[TableRange] = js.undefined
     }
     object MergeTableCellsRequest {
       
@@ -5580,10 +6126,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait NestingLevel extends StObject {
       
-      var bulletStyle: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.native
+      var bulletStyle: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.undefined
     }
     object NestingLevel {
       
@@ -5604,10 +6149,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait NotesProperties extends StObject {
       
-      var speakerNotesObjectId: js.UndefOr[String] = js.native
+      var speakerNotesObjectId: js.UndefOr[String] = js.undefined
     }
     object NotesProperties {
       
@@ -5628,12 +6172,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait OpaqueColor extends StObject {
       
-      var rgbColor: js.UndefOr[RgbColor] = js.native
+      var rgbColor: js.UndefOr[RgbColor] = js.undefined
       
-      var themeColor: js.UndefOr[String] = js.native
+      var themeColor: js.UndefOr[String] = js.undefined
     }
     object OpaqueColor {
       
@@ -5660,10 +6203,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait OptionalColor extends StObject {
       
-      var opaqueColor: js.UndefOr[OpaqueColor] = js.native
+      var opaqueColor: js.UndefOr[OpaqueColor] = js.undefined
     }
     object OptionalColor {
       
@@ -5684,16 +6226,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait Outline extends StObject {
       
-      var dashStyle: js.UndefOr[String] = js.native
+      var dashStyle: js.UndefOr[String] = js.undefined
       
-      var outlineFill: js.UndefOr[OutlineFill] = js.native
+      var outlineFill: js.UndefOr[OutlineFill] = js.undefined
       
-      var propertyState: js.UndefOr[String] = js.native
+      var propertyState: js.UndefOr[String] = js.undefined
       
-      var weight: js.UndefOr[Dimension] = js.native
+      var weight: js.UndefOr[Dimension] = js.undefined
     }
     object Outline {
       
@@ -5732,10 +6273,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait OutlineFill extends StObject {
       
-      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.native
+      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.undefined
     }
     object OutlineFill {
       
@@ -5756,26 +6296,25 @@ object Slides {
       }
     }
     
-    @js.native
     trait Page extends StObject {
       
-      var layoutProperties: js.UndefOr[LayoutProperties] = js.native
+      var layoutProperties: js.UndefOr[LayoutProperties] = js.undefined
       
-      var masterProperties: js.UndefOr[MasterProperties] = js.native
+      var masterProperties: js.UndefOr[MasterProperties] = js.undefined
       
-      var notesProperties: js.UndefOr[NotesProperties] = js.native
+      var notesProperties: js.UndefOr[NotesProperties] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var pageElements: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]] = js.native
+      var pageElements: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement]] = js.undefined
       
-      var pageProperties: js.UndefOr[PageProperties] = js.native
+      var pageProperties: js.UndefOr[PageProperties] = js.undefined
       
-      var pageType: js.UndefOr[String] = js.native
+      var pageType: js.UndefOr[String] = js.undefined
       
-      var revisionId: js.UndefOr[String] = js.native
+      var revisionId: js.UndefOr[String] = js.undefined
       
-      var slideProperties: js.UndefOr[SlideProperties] = js.native
+      var slideProperties: js.UndefOr[SlideProperties] = js.undefined
     }
     object Page {
       
@@ -5847,14 +6386,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait PageBackgroundFill extends StObject {
       
-      var propertyState: js.UndefOr[String] = js.native
+      var propertyState: js.UndefOr[String] = js.undefined
       
-      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.native
+      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.undefined
       
-      var stretchedPictureFill: js.UndefOr[StretchedPictureFill] = js.native
+      var stretchedPictureFill: js.UndefOr[StretchedPictureFill] = js.undefined
     }
     object PageBackgroundFill {
       
@@ -5887,34 +6425,33 @@ object Slides {
       }
     }
     
-    @js.native
     trait PageElement extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var elementGroup: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group] = js.native
+      var elementGroup: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group] = js.undefined
       
-      var image: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image] = js.native
+      var image: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image] = js.undefined
       
-      var line: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line] = js.native
+      var line: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var shape: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape] = js.native
+      var shape: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape] = js.undefined
       
-      var sheetsChart: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart] = js.native
+      var sheetsChart: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
       
-      var table: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table] = js.native
+      var table: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.native
+      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.undefined
       
-      var video: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video] = js.native
+      var video: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video] = js.undefined
       
-      var wordArt: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt] = js.native
+      var wordArt: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt] = js.undefined
     }
     object PageElement {
       
@@ -6007,14 +6544,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait PageElementProperties extends StObject {
       
-      var pageObjectId: js.UndefOr[String] = js.native
+      var pageObjectId: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
       
-      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.native
+      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.undefined
     }
     object PageElementProperties {
       
@@ -6047,12 +6583,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait PageProperties extends StObject {
       
-      var colorScheme: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme] = js.native
+      var colorScheme: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme] = js.undefined
       
-      var pageBackgroundFill: js.UndefOr[PageBackgroundFill] = js.native
+      var pageBackgroundFill: js.UndefOr[PageBackgroundFill] = js.undefined
     }
     object PageProperties {
       
@@ -6079,12 +6614,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait ParagraphMarker extends StObject {
       
-      var bullet: js.UndefOr[Bullet] = js.native
+      var bullet: js.UndefOr[Bullet] = js.undefined
       
-      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle] = js.native
+      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle] = js.undefined
     }
     object ParagraphMarker {
       
@@ -6111,26 +6645,25 @@ object Slides {
       }
     }
     
-    @js.native
     trait ParagraphStyle extends StObject {
       
-      var alignment: js.UndefOr[String] = js.native
+      var alignment: js.UndefOr[String] = js.undefined
       
-      var direction: js.UndefOr[String] = js.native
+      var direction: js.UndefOr[String] = js.undefined
       
-      var indentEnd: js.UndefOr[Dimension] = js.native
+      var indentEnd: js.UndefOr[Dimension] = js.undefined
       
-      var indentFirstLine: js.UndefOr[Dimension] = js.native
+      var indentFirstLine: js.UndefOr[Dimension] = js.undefined
       
-      var indentStart: js.UndefOr[Dimension] = js.native
+      var indentStart: js.UndefOr[Dimension] = js.undefined
       
-      var lineSpacing: js.UndefOr[Double] = js.native
+      var lineSpacing: js.UndefOr[Double] = js.undefined
       
-      var spaceAbove: js.UndefOr[Dimension] = js.native
+      var spaceAbove: js.UndefOr[Dimension] = js.undefined
       
-      var spaceBelow: js.UndefOr[Dimension] = js.native
+      var spaceBelow: js.UndefOr[Dimension] = js.undefined
       
-      var spacingMode: js.UndefOr[String] = js.native
+      var spacingMode: js.UndefOr[String] = js.undefined
     }
     object ParagraphStyle {
       
@@ -6199,14 +6732,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait Placeholder extends StObject {
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var parentObjectId: js.UndefOr[String] = js.native
+      var parentObjectId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Placeholder {
       
@@ -6239,26 +6771,25 @@ object Slides {
       }
     }
     
-    @js.native
     trait Presentation extends StObject {
       
-      var layouts: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]] = js.native
+      var layouts: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]] = js.undefined
       
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
-      var masters: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]] = js.native
+      var masters: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]] = js.undefined
       
-      var notesMaster: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page] = js.native
+      var notesMaster: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page] = js.undefined
       
-      var pageSize: js.UndefOr[Size] = js.native
+      var pageSize: js.UndefOr[Size] = js.undefined
       
-      var presentationId: js.UndefOr[String] = js.native
+      var presentationId: js.UndefOr[String] = js.undefined
       
-      var revisionId: js.UndefOr[String] = js.native
+      var revisionId: js.UndefOr[String] = js.undefined
       
-      var slides: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]] = js.native
+      var slides: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page]] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Presentation {
       
@@ -6336,14 +6867,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait Range extends StObject {
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Range {
       
@@ -6376,12 +6906,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait Recolor extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var recolorStops: js.UndefOr[js.Array[ColorStop]] = js.native
+      var recolorStops: js.UndefOr[js.Array[ColorStop]] = js.undefined
     }
     object Recolor {
       
@@ -6411,10 +6940,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait RefreshSheetsChartRequest extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object RefreshSheetsChartRequest {
       
@@ -6435,18 +6963,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait ReplaceAllShapesWithImageRequest extends StObject {
       
-      var containsText: js.UndefOr[SubstringMatchCriteria] = js.native
+      var containsText: js.UndefOr[SubstringMatchCriteria] = js.undefined
       
-      var imageReplaceMethod: js.UndefOr[String] = js.native
+      var imageReplaceMethod: js.UndefOr[String] = js.undefined
       
-      var imageUrl: js.UndefOr[String] = js.native
+      var imageUrl: js.UndefOr[String] = js.undefined
       
-      var pageObjectIds: js.UndefOr[js.Array[String]] = js.native
+      var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var replaceMethod: js.UndefOr[String] = js.native
+      var replaceMethod: js.UndefOr[String] = js.undefined
     }
     object ReplaceAllShapesWithImageRequest {
       
@@ -6494,10 +7021,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait ReplaceAllShapesWithImageResponse extends StObject {
       
-      var occurrencesChanged: js.UndefOr[Double] = js.native
+      var occurrencesChanged: js.UndefOr[Double] = js.undefined
     }
     object ReplaceAllShapesWithImageResponse {
       
@@ -6518,18 +7044,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait ReplaceAllShapesWithSheetsChartRequest extends StObject {
       
-      var chartId: js.UndefOr[Double] = js.native
+      var chartId: js.UndefOr[Double] = js.undefined
       
-      var containsText: js.UndefOr[SubstringMatchCriteria] = js.native
+      var containsText: js.UndefOr[SubstringMatchCriteria] = js.undefined
       
-      var linkingMode: js.UndefOr[String] = js.native
+      var linkingMode: js.UndefOr[String] = js.undefined
       
-      var pageObjectIds: js.UndefOr[js.Array[String]] = js.native
+      var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
     }
     object ReplaceAllShapesWithSheetsChartRequest {
       
@@ -6577,10 +7102,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait ReplaceAllShapesWithSheetsChartResponse extends StObject {
       
-      var occurrencesChanged: js.UndefOr[Double] = js.native
+      var occurrencesChanged: js.UndefOr[Double] = js.undefined
     }
     object ReplaceAllShapesWithSheetsChartResponse {
       
@@ -6601,14 +7125,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait ReplaceAllTextRequest extends StObject {
       
-      var containsText: js.UndefOr[SubstringMatchCriteria] = js.native
+      var containsText: js.UndefOr[SubstringMatchCriteria] = js.undefined
       
-      var pageObjectIds: js.UndefOr[js.Array[String]] = js.native
+      var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var replaceText: js.UndefOr[String] = js.native
+      var replaceText: js.UndefOr[String] = js.undefined
     }
     object ReplaceAllTextRequest {
       
@@ -6644,10 +7167,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait ReplaceAllTextResponse extends StObject {
       
-      var occurrencesChanged: js.UndefOr[Double] = js.native
+      var occurrencesChanged: js.UndefOr[Double] = js.undefined
     }
     object ReplaceAllTextResponse {
       
@@ -6668,14 +7190,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait ReplaceImageRequest extends StObject {
       
-      var imageObjectId: js.UndefOr[String] = js.native
+      var imageObjectId: js.UndefOr[String] = js.undefined
       
-      var imageReplaceMethod: js.UndefOr[String] = js.native
+      var imageReplaceMethod: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object ReplaceImageRequest {
       
@@ -6708,94 +7229,93 @@ object Slides {
       }
     }
     
-    @js.native
     trait Request extends StObject {
       
-      var createImage: js.UndefOr[CreateImageRequest] = js.native
+      var createImage: js.UndefOr[CreateImageRequest] = js.undefined
       
-      var createLine: js.UndefOr[CreateLineRequest] = js.native
+      var createLine: js.UndefOr[CreateLineRequest] = js.undefined
       
-      var createParagraphBullets: js.UndefOr[CreateParagraphBulletsRequest] = js.native
+      var createParagraphBullets: js.UndefOr[CreateParagraphBulletsRequest] = js.undefined
       
-      var createShape: js.UndefOr[CreateShapeRequest] = js.native
+      var createShape: js.UndefOr[CreateShapeRequest] = js.undefined
       
-      var createSheetsChart: js.UndefOr[CreateSheetsChartRequest] = js.native
+      var createSheetsChart: js.UndefOr[CreateSheetsChartRequest] = js.undefined
       
-      var createSlide: js.UndefOr[CreateSlideRequest] = js.native
+      var createSlide: js.UndefOr[CreateSlideRequest] = js.undefined
       
-      var createTable: js.UndefOr[CreateTableRequest] = js.native
+      var createTable: js.UndefOr[CreateTableRequest] = js.undefined
       
-      var createVideo: js.UndefOr[CreateVideoRequest] = js.native
+      var createVideo: js.UndefOr[CreateVideoRequest] = js.undefined
       
-      var deleteObject: js.UndefOr[DeleteObjectRequest] = js.native
+      var deleteObject: js.UndefOr[DeleteObjectRequest] = js.undefined
       
-      var deleteParagraphBullets: js.UndefOr[DeleteParagraphBulletsRequest] = js.native
+      var deleteParagraphBullets: js.UndefOr[DeleteParagraphBulletsRequest] = js.undefined
       
-      var deleteTableColumn: js.UndefOr[DeleteTableColumnRequest] = js.native
+      var deleteTableColumn: js.UndefOr[DeleteTableColumnRequest] = js.undefined
       
-      var deleteTableRow: js.UndefOr[DeleteTableRowRequest] = js.native
+      var deleteTableRow: js.UndefOr[DeleteTableRowRequest] = js.undefined
       
-      var deleteText: js.UndefOr[DeleteTextRequest] = js.native
+      var deleteText: js.UndefOr[DeleteTextRequest] = js.undefined
       
-      var duplicateObject: js.UndefOr[DuplicateObjectRequest] = js.native
+      var duplicateObject: js.UndefOr[DuplicateObjectRequest] = js.undefined
       
-      var groupObjects: js.UndefOr[GroupObjectsRequest] = js.native
+      var groupObjects: js.UndefOr[GroupObjectsRequest] = js.undefined
       
-      var insertTableColumns: js.UndefOr[InsertTableColumnsRequest] = js.native
+      var insertTableColumns: js.UndefOr[InsertTableColumnsRequest] = js.undefined
       
-      var insertTableRows: js.UndefOr[InsertTableRowsRequest] = js.native
+      var insertTableRows: js.UndefOr[InsertTableRowsRequest] = js.undefined
       
-      var insertText: js.UndefOr[InsertTextRequest] = js.native
+      var insertText: js.UndefOr[InsertTextRequest] = js.undefined
       
-      var mergeTableCells: js.UndefOr[MergeTableCellsRequest] = js.native
+      var mergeTableCells: js.UndefOr[MergeTableCellsRequest] = js.undefined
       
-      var refreshSheetsChart: js.UndefOr[RefreshSheetsChartRequest] = js.native
+      var refreshSheetsChart: js.UndefOr[RefreshSheetsChartRequest] = js.undefined
       
-      var replaceAllShapesWithImage: js.UndefOr[ReplaceAllShapesWithImageRequest] = js.native
+      var replaceAllShapesWithImage: js.UndefOr[ReplaceAllShapesWithImageRequest] = js.undefined
       
-      var replaceAllShapesWithSheetsChart: js.UndefOr[ReplaceAllShapesWithSheetsChartRequest] = js.native
+      var replaceAllShapesWithSheetsChart: js.UndefOr[ReplaceAllShapesWithSheetsChartRequest] = js.undefined
       
-      var replaceAllText: js.UndefOr[ReplaceAllTextRequest] = js.native
+      var replaceAllText: js.UndefOr[ReplaceAllTextRequest] = js.undefined
       
-      var replaceImage: js.UndefOr[ReplaceImageRequest] = js.native
+      var replaceImage: js.UndefOr[ReplaceImageRequest] = js.undefined
       
-      var rerouteLine: js.UndefOr[RerouteLineRequest] = js.native
+      var rerouteLine: js.UndefOr[RerouteLineRequest] = js.undefined
       
-      var ungroupObjects: js.UndefOr[UngroupObjectsRequest] = js.native
+      var ungroupObjects: js.UndefOr[UngroupObjectsRequest] = js.undefined
       
-      var unmergeTableCells: js.UndefOr[UnmergeTableCellsRequest] = js.native
+      var unmergeTableCells: js.UndefOr[UnmergeTableCellsRequest] = js.undefined
       
-      var updateImageProperties: js.UndefOr[UpdateImagePropertiesRequest] = js.native
+      var updateImageProperties: js.UndefOr[UpdateImagePropertiesRequest] = js.undefined
       
-      var updateLineCategory: js.UndefOr[UpdateLineCategoryRequest] = js.native
+      var updateLineCategory: js.UndefOr[UpdateLineCategoryRequest] = js.undefined
       
-      var updateLineProperties: js.UndefOr[UpdateLinePropertiesRequest] = js.native
+      var updateLineProperties: js.UndefOr[UpdateLinePropertiesRequest] = js.undefined
       
-      var updatePageElementAltText: js.UndefOr[UpdatePageElementAltTextRequest] = js.native
+      var updatePageElementAltText: js.UndefOr[UpdatePageElementAltTextRequest] = js.undefined
       
-      var updatePageElementTransform: js.UndefOr[UpdatePageElementTransformRequest] = js.native
+      var updatePageElementTransform: js.UndefOr[UpdatePageElementTransformRequest] = js.undefined
       
-      var updatePageElementsZOrder: js.UndefOr[UpdatePageElementsZOrderRequest] = js.native
+      var updatePageElementsZOrder: js.UndefOr[UpdatePageElementsZOrderRequest] = js.undefined
       
-      var updatePageProperties: js.UndefOr[UpdatePagePropertiesRequest] = js.native
+      var updatePageProperties: js.UndefOr[UpdatePagePropertiesRequest] = js.undefined
       
-      var updateParagraphStyle: js.UndefOr[UpdateParagraphStyleRequest] = js.native
+      var updateParagraphStyle: js.UndefOr[UpdateParagraphStyleRequest] = js.undefined
       
-      var updateShapeProperties: js.UndefOr[UpdateShapePropertiesRequest] = js.native
+      var updateShapeProperties: js.UndefOr[UpdateShapePropertiesRequest] = js.undefined
       
-      var updateSlidesPosition: js.UndefOr[UpdateSlidesPositionRequest] = js.native
+      var updateSlidesPosition: js.UndefOr[UpdateSlidesPositionRequest] = js.undefined
       
-      var updateTableBorderProperties: js.UndefOr[UpdateTableBorderPropertiesRequest] = js.native
+      var updateTableBorderProperties: js.UndefOr[UpdateTableBorderPropertiesRequest] = js.undefined
       
-      var updateTableCellProperties: js.UndefOr[UpdateTableCellPropertiesRequest] = js.native
+      var updateTableCellProperties: js.UndefOr[UpdateTableCellPropertiesRequest] = js.undefined
       
-      var updateTableColumnProperties: js.UndefOr[UpdateTableColumnPropertiesRequest] = js.native
+      var updateTableColumnProperties: js.UndefOr[UpdateTableColumnPropertiesRequest] = js.undefined
       
-      var updateTableRowProperties: js.UndefOr[UpdateTableRowPropertiesRequest] = js.native
+      var updateTableRowProperties: js.UndefOr[UpdateTableRowPropertiesRequest] = js.undefined
       
-      var updateTextStyle: js.UndefOr[UpdateTextStyleRequest] = js.native
+      var updateTextStyle: js.UndefOr[UpdateTextStyleRequest] = js.undefined
       
-      var updateVideoProperties: js.UndefOr[UpdateVideoPropertiesRequest] = js.native
+      var updateVideoProperties: js.UndefOr[UpdateVideoPropertiesRequest] = js.undefined
     }
     object Request {
       
@@ -7068,10 +7588,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait RerouteLineRequest extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object RerouteLineRequest {
       
@@ -7092,32 +7611,31 @@ object Slides {
       }
     }
     
-    @js.native
     trait Response extends StObject {
       
-      var createImage: js.UndefOr[CreateImageResponse] = js.native
+      var createImage: js.UndefOr[CreateImageResponse] = js.undefined
       
-      var createLine: js.UndefOr[CreateLineResponse] = js.native
+      var createLine: js.UndefOr[CreateLineResponse] = js.undefined
       
-      var createShape: js.UndefOr[CreateShapeResponse] = js.native
+      var createShape: js.UndefOr[CreateShapeResponse] = js.undefined
       
-      var createSheetsChart: js.UndefOr[CreateSheetsChartResponse] = js.native
+      var createSheetsChart: js.UndefOr[CreateSheetsChartResponse] = js.undefined
       
-      var createSlide: js.UndefOr[CreateSlideResponse] = js.native
+      var createSlide: js.UndefOr[CreateSlideResponse] = js.undefined
       
-      var createTable: js.UndefOr[CreateTableResponse] = js.native
+      var createTable: js.UndefOr[CreateTableResponse] = js.undefined
       
-      var createVideo: js.UndefOr[CreateVideoResponse] = js.native
+      var createVideo: js.UndefOr[CreateVideoResponse] = js.undefined
       
-      var duplicateObject: js.UndefOr[DuplicateObjectResponse] = js.native
+      var duplicateObject: js.UndefOr[DuplicateObjectResponse] = js.undefined
       
-      var groupObjects: js.UndefOr[GroupObjectsResponse] = js.native
+      var groupObjects: js.UndefOr[GroupObjectsResponse] = js.undefined
       
-      var replaceAllShapesWithImage: js.UndefOr[ReplaceAllShapesWithImageResponse] = js.native
+      var replaceAllShapesWithImage: js.UndefOr[ReplaceAllShapesWithImageResponse] = js.undefined
       
-      var replaceAllShapesWithSheetsChart: js.UndefOr[ReplaceAllShapesWithSheetsChartResponse] = js.native
+      var replaceAllShapesWithSheetsChart: js.UndefOr[ReplaceAllShapesWithSheetsChartResponse] = js.undefined
       
-      var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.native
+      var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.undefined
     }
     object Response {
       
@@ -7204,14 +7722,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait RgbColor extends StObject {
       
-      var blue: js.UndefOr[Double] = js.native
+      var blue: js.UndefOr[Double] = js.undefined
       
-      var green: js.UndefOr[Double] = js.native
+      var green: js.UndefOr[Double] = js.undefined
       
-      var red: js.UndefOr[Double] = js.native
+      var red: js.UndefOr[Double] = js.undefined
     }
     object RgbColor {
       
@@ -7244,24 +7761,23 @@ object Slides {
       }
     }
     
-    @js.native
     trait Shadow extends StObject {
       
-      var alignment: js.UndefOr[String] = js.native
+      var alignment: js.UndefOr[String] = js.undefined
       
-      var alpha: js.UndefOr[Double] = js.native
+      var alpha: js.UndefOr[Double] = js.undefined
       
-      var blurRadius: js.UndefOr[Dimension] = js.native
+      var blurRadius: js.UndefOr[Dimension] = js.undefined
       
-      var color: js.UndefOr[OpaqueColor] = js.native
+      var color: js.UndefOr[OpaqueColor] = js.undefined
       
-      var propertyState: js.UndefOr[String] = js.native
+      var propertyState: js.UndefOr[String] = js.undefined
       
-      var rotateWithShape: js.UndefOr[Boolean] = js.native
+      var rotateWithShape: js.UndefOr[Boolean] = js.undefined
       
-      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.native
+      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Shadow {
       
@@ -7324,16 +7840,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait Shape extends StObject {
       
-      var placeholder: js.UndefOr[Placeholder] = js.native
+      var placeholder: js.UndefOr[Placeholder] = js.undefined
       
-      var shapeProperties: js.UndefOr[ShapeProperties] = js.native
+      var shapeProperties: js.UndefOr[ShapeProperties] = js.undefined
       
-      var shapeType: js.UndefOr[String] = js.native
+      var shapeType: js.UndefOr[String] = js.undefined
       
-      var text: js.UndefOr[TextContent] = js.native
+      var text: js.UndefOr[TextContent] = js.undefined
     }
     object Shape {
       
@@ -7372,12 +7887,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait ShapeBackgroundFill extends StObject {
       
-      var propertyState: js.UndefOr[String] = js.native
+      var propertyState: js.UndefOr[String] = js.undefined
       
-      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.native
+      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.undefined
     }
     object ShapeBackgroundFill {
       
@@ -7404,18 +7918,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait ShapeProperties extends StObject {
       
-      var contentAlignment: js.UndefOr[String] = js.native
+      var contentAlignment: js.UndefOr[String] = js.undefined
       
-      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.native
+      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.undefined
       
-      var outline: js.UndefOr[Outline] = js.native
+      var outline: js.UndefOr[Outline] = js.undefined
       
-      var shadow: js.UndefOr[Shadow] = js.native
+      var shadow: js.UndefOr[Shadow] = js.undefined
       
-      var shapeBackgroundFill: js.UndefOr[ShapeBackgroundFill] = js.native
+      var shapeBackgroundFill: js.UndefOr[ShapeBackgroundFill] = js.undefined
     }
     object ShapeProperties {
       
@@ -7460,16 +7973,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait SheetsChart extends StObject {
       
-      var chartId: js.UndefOr[Double] = js.native
+      var chartId: js.UndefOr[Double] = js.undefined
       
-      var contentUrl: js.UndefOr[String] = js.native
+      var contentUrl: js.UndefOr[String] = js.undefined
       
-      var sheetsChartProperties: js.UndefOr[SheetsChartProperties] = js.native
+      var sheetsChartProperties: js.UndefOr[SheetsChartProperties] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
     }
     object SheetsChart {
       
@@ -7508,10 +8020,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait SheetsChartProperties extends StObject {
       
-      var chartImageProperties: js.UndefOr[ImageProperties] = js.native
+      var chartImageProperties: js.UndefOr[ImageProperties] = js.undefined
     }
     object SheetsChartProperties {
       
@@ -7532,12 +8043,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait Size extends StObject {
       
-      var height: js.UndefOr[Dimension] = js.native
+      var height: js.UndefOr[Dimension] = js.undefined
       
-      var width: js.UndefOr[Dimension] = js.native
+      var width: js.UndefOr[Dimension] = js.undefined
     }
     object Size {
       
@@ -7564,14 +8074,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait SlideProperties extends StObject {
       
-      var layoutObjectId: js.UndefOr[String] = js.native
+      var layoutObjectId: js.UndefOr[String] = js.undefined
       
-      var masterObjectId: js.UndefOr[String] = js.native
+      var masterObjectId: js.UndefOr[String] = js.undefined
       
-      var notesPage: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page] = js.native
+      var notesPage: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page] = js.undefined
     }
     object SlideProperties {
       
@@ -7604,12 +8113,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait SolidFill extends StObject {
       
-      var alpha: js.UndefOr[Double] = js.native
+      var alpha: js.UndefOr[Double] = js.undefined
       
-      var color: js.UndefOr[OpaqueColor] = js.native
+      var color: js.UndefOr[OpaqueColor] = js.undefined
     }
     object SolidFill {
       
@@ -7636,12 +8144,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait StretchedPictureFill extends StObject {
       
-      var contentUrl: js.UndefOr[String] = js.native
+      var contentUrl: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
     }
     object StretchedPictureFill {
       
@@ -7668,12 +8175,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait SubstringMatchCriteria extends StObject {
       
-      var matchCase: js.UndefOr[Boolean] = js.native
+      var matchCase: js.UndefOr[Boolean] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
     }
     object SubstringMatchCriteria {
       
@@ -7700,20 +8206,19 @@ object Slides {
       }
     }
     
-    @js.native
     trait Table extends StObject {
       
-      var columns: js.UndefOr[Double] = js.native
+      var columns: js.UndefOr[Double] = js.undefined
       
-      var horizontalBorderRows: js.UndefOr[js.Array[TableBorderRow]] = js.native
+      var horizontalBorderRows: js.UndefOr[js.Array[TableBorderRow]] = js.undefined
       
-      var rows: js.UndefOr[Double] = js.native
+      var rows: js.UndefOr[Double] = js.undefined
       
-      var tableColumns: js.UndefOr[js.Array[TableColumnProperties]] = js.native
+      var tableColumns: js.UndefOr[js.Array[TableColumnProperties]] = js.undefined
       
-      var tableRows: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow]] = js.native
+      var tableRows: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow]] = js.undefined
       
-      var verticalBorderRows: js.UndefOr[js.Array[TableBorderRow]] = js.native
+      var verticalBorderRows: js.UndefOr[js.Array[TableBorderRow]] = js.undefined
     }
     object Table {
       
@@ -7776,12 +8281,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableBorderCell extends StObject {
       
-      var location: js.UndefOr[TableCellLocation] = js.native
+      var location: js.UndefOr[TableCellLocation] = js.undefined
       
-      var tableBorderProperties: js.UndefOr[TableBorderProperties] = js.native
+      var tableBorderProperties: js.UndefOr[TableBorderProperties] = js.undefined
     }
     object TableBorderCell {
       
@@ -7808,10 +8312,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableBorderFill extends StObject {
       
-      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.native
+      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.undefined
     }
     object TableBorderFill {
       
@@ -7832,14 +8335,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableBorderProperties extends StObject {
       
-      var dashStyle: js.UndefOr[String] = js.native
+      var dashStyle: js.UndefOr[String] = js.undefined
       
-      var tableBorderFill: js.UndefOr[TableBorderFill] = js.native
+      var tableBorderFill: js.UndefOr[TableBorderFill] = js.undefined
       
-      var weight: js.UndefOr[Dimension] = js.native
+      var weight: js.UndefOr[Dimension] = js.undefined
     }
     object TableBorderProperties {
       
@@ -7872,10 +8374,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableBorderRow extends StObject {
       
-      var tableBorderCells: js.UndefOr[js.Array[TableBorderCell]] = js.native
+      var tableBorderCells: js.UndefOr[js.Array[TableBorderCell]] = js.undefined
     }
     object TableBorderRow {
       
@@ -7899,18 +8400,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableCell extends StObject {
       
-      var columnSpan: js.UndefOr[Double] = js.native
+      var columnSpan: js.UndefOr[Double] = js.undefined
       
-      var location: js.UndefOr[TableCellLocation] = js.native
+      var location: js.UndefOr[TableCellLocation] = js.undefined
       
-      var rowSpan: js.UndefOr[Double] = js.native
+      var rowSpan: js.UndefOr[Double] = js.undefined
       
-      var tableCellProperties: js.UndefOr[TableCellProperties] = js.native
+      var tableCellProperties: js.UndefOr[TableCellProperties] = js.undefined
       
-      var text: js.UndefOr[TextContent] = js.native
+      var text: js.UndefOr[TextContent] = js.undefined
     }
     object TableCell {
       
@@ -7955,12 +8455,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableCellBackgroundFill extends StObject {
       
-      var propertyState: js.UndefOr[String] = js.native
+      var propertyState: js.UndefOr[String] = js.undefined
       
-      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.native
+      var solidFill: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill] = js.undefined
     }
     object TableCellBackgroundFill {
       
@@ -7987,12 +8486,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableCellLocation extends StObject {
       
-      var columnIndex: js.UndefOr[Double] = js.native
+      var columnIndex: js.UndefOr[Double] = js.undefined
       
-      var rowIndex: js.UndefOr[Double] = js.native
+      var rowIndex: js.UndefOr[Double] = js.undefined
     }
     object TableCellLocation {
       
@@ -8019,12 +8517,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableCellProperties extends StObject {
       
-      var contentAlignment: js.UndefOr[String] = js.native
+      var contentAlignment: js.UndefOr[String] = js.undefined
       
-      var tableCellBackgroundFill: js.UndefOr[TableCellBackgroundFill] = js.native
+      var tableCellBackgroundFill: js.UndefOr[TableCellBackgroundFill] = js.undefined
     }
     object TableCellProperties {
       
@@ -8051,10 +8548,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableColumnProperties extends StObject {
       
-      var columnWidth: js.UndefOr[Dimension] = js.native
+      var columnWidth: js.UndefOr[Dimension] = js.undefined
     }
     object TableColumnProperties {
       
@@ -8075,14 +8571,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableRange extends StObject {
       
-      var columnSpan: js.UndefOr[Double] = js.native
+      var columnSpan: js.UndefOr[Double] = js.undefined
       
-      var location: js.UndefOr[TableCellLocation] = js.native
+      var location: js.UndefOr[TableCellLocation] = js.undefined
       
-      var rowSpan: js.UndefOr[Double] = js.native
+      var rowSpan: js.UndefOr[Double] = js.undefined
     }
     object TableRange {
       
@@ -8115,14 +8610,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableRow extends StObject {
       
-      var rowHeight: js.UndefOr[Dimension] = js.native
+      var rowHeight: js.UndefOr[Dimension] = js.undefined
       
-      var tableCells: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell]] = js.native
+      var tableCells: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell]] = js.undefined
       
-      var tableRowProperties: js.UndefOr[TableRowProperties] = js.native
+      var tableRowProperties: js.UndefOr[TableRowProperties] = js.undefined
     }
     object TableRow {
       
@@ -8158,10 +8652,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait TableRowProperties extends StObject {
       
-      var minRowHeight: js.UndefOr[Dimension] = js.native
+      var minRowHeight: js.UndefOr[Dimension] = js.undefined
     }
     object TableRowProperties {
       
@@ -8182,12 +8675,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait TextContent extends StObject {
       
-      var lists: js.UndefOr[js.Object] = js.native
+      var lists: js.UndefOr[js.Object] = js.undefined
       
-      var textElements: js.UndefOr[js.Array[TextElement]] = js.native
+      var textElements: js.UndefOr[js.Array[TextElement]] = js.undefined
     }
     object TextContent {
       
@@ -8217,18 +8709,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait TextElement extends StObject {
       
-      var autoText: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText] = js.native
+      var autoText: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText] = js.undefined
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var paragraphMarker: js.UndefOr[ParagraphMarker] = js.native
+      var paragraphMarker: js.UndefOr[ParagraphMarker] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var textRun: js.UndefOr[TextRun] = js.native
+      var textRun: js.UndefOr[TextRun] = js.undefined
     }
     object TextElement {
       
@@ -8273,12 +8764,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait TextRun extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.native
+      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.undefined
     }
     object TextRun {
       
@@ -8305,32 +8795,31 @@ object Slides {
       }
     }
     
-    @js.native
     trait TextStyle extends StObject {
       
-      var backgroundColor: js.UndefOr[OptionalColor] = js.native
+      var backgroundColor: js.UndefOr[OptionalColor] = js.undefined
       
-      var baselineOffset: js.UndefOr[String] = js.native
+      var baselineOffset: js.UndefOr[String] = js.undefined
       
-      var bold: js.UndefOr[Boolean] = js.native
+      var bold: js.UndefOr[Boolean] = js.undefined
       
-      var fontFamily: js.UndefOr[String] = js.native
+      var fontFamily: js.UndefOr[String] = js.undefined
       
-      var fontSize: js.UndefOr[Dimension] = js.native
+      var fontSize: js.UndefOr[Dimension] = js.undefined
       
-      var foregroundColor: js.UndefOr[OptionalColor] = js.native
+      var foregroundColor: js.UndefOr[OptionalColor] = js.undefined
       
-      var italic: js.UndefOr[Boolean] = js.native
+      var italic: js.UndefOr[Boolean] = js.undefined
       
-      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.native
+      var link: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link] = js.undefined
       
-      var smallCaps: js.UndefOr[Boolean] = js.native
+      var smallCaps: js.UndefOr[Boolean] = js.undefined
       
-      var strikethrough: js.UndefOr[Boolean] = js.native
+      var strikethrough: js.UndefOr[Boolean] = js.undefined
       
-      var underline: js.UndefOr[Boolean] = js.native
+      var underline: js.UndefOr[Boolean] = js.undefined
       
-      var weightedFontFamily: js.UndefOr[WeightedFontFamily] = js.native
+      var weightedFontFamily: js.UndefOr[WeightedFontFamily] = js.undefined
     }
     object TextStyle {
       
@@ -8417,12 +8906,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait ThemeColorPair extends StObject {
       
-      var color: js.UndefOr[RgbColor] = js.native
+      var color: js.UndefOr[RgbColor] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ThemeColorPair {
       
@@ -8449,14 +8937,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait Thumbnail extends StObject {
       
-      var contentUrl: js.UndefOr[String] = js.native
+      var contentUrl: js.UndefOr[String] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object Thumbnail {
       
@@ -8489,10 +8976,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait UngroupObjectsRequest extends StObject {
       
-      var objectIds: js.UndefOr[js.Array[String]] = js.native
+      var objectIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object UngroupObjectsRequest {
       
@@ -8516,12 +9002,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait UnmergeTableCellsRequest extends StObject {
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var tableRange: js.UndefOr[TableRange] = js.native
+      var tableRange: js.UndefOr[TableRange] = js.undefined
     }
     object UnmergeTableCellsRequest {
       
@@ -8548,14 +9033,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateImagePropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var imageProperties: js.UndefOr[ImageProperties] = js.native
+      var imageProperties: js.UndefOr[ImageProperties] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object UpdateImagePropertiesRequest {
       
@@ -8588,12 +9072,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateLineCategoryRequest extends StObject {
       
-      var lineCategory: js.UndefOr[String] = js.native
+      var lineCategory: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object UpdateLineCategoryRequest {
       
@@ -8620,14 +9103,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateLinePropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var lineProperties: js.UndefOr[LineProperties] = js.native
+      var lineProperties: js.UndefOr[LineProperties] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
     }
     object UpdateLinePropertiesRequest {
       
@@ -8660,14 +9142,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdatePageElementAltTextRequest extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object UpdatePageElementAltTextRequest {
       
@@ -8700,14 +9181,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdatePageElementTransformRequest extends StObject {
       
-      var applyMode: js.UndefOr[String] = js.native
+      var applyMode: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.native
+      var transform: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform] = js.undefined
     }
     object UpdatePageElementTransformRequest {
       
@@ -8740,12 +9220,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdatePageElementsZOrderRequest extends StObject {
       
-      var operation: js.UndefOr[String] = js.native
+      var operation: js.UndefOr[String] = js.undefined
       
-      var pageElementObjectIds: js.UndefOr[js.Array[String]] = js.native
+      var pageElementObjectIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object UpdatePageElementsZOrderRequest {
       
@@ -8775,14 +9254,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdatePagePropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var pageProperties: js.UndefOr[PageProperties] = js.native
+      var pageProperties: js.UndefOr[PageProperties] = js.undefined
     }
     object UpdatePagePropertiesRequest {
       
@@ -8815,18 +9293,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateParagraphStyleRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle] = js.native
+      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle] = js.undefined
       
-      var textRange: js.UndefOr[Range] = js.native
+      var textRange: js.UndefOr[Range] = js.undefined
     }
     object UpdateParagraphStyleRequest {
       
@@ -8871,14 +9348,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateShapePropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var shapeProperties: js.UndefOr[ShapeProperties] = js.native
+      var shapeProperties: js.UndefOr[ShapeProperties] = js.undefined
     }
     object UpdateShapePropertiesRequest {
       
@@ -8911,12 +9387,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateSlidesPositionRequest extends StObject {
       
-      var insertionIndex: js.UndefOr[Double] = js.native
+      var insertionIndex: js.UndefOr[Double] = js.undefined
       
-      var slideObjectIds: js.UndefOr[js.Array[String]] = js.native
+      var slideObjectIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object UpdateSlidesPositionRequest {
       
@@ -8946,18 +9421,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateTableBorderPropertiesRequest extends StObject {
       
-      var borderPosition: js.UndefOr[String] = js.native
+      var borderPosition: js.UndefOr[String] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var tableBorderProperties: js.UndefOr[TableBorderProperties] = js.native
+      var tableBorderProperties: js.UndefOr[TableBorderProperties] = js.undefined
       
-      var tableRange: js.UndefOr[TableRange] = js.native
+      var tableRange: js.UndefOr[TableRange] = js.undefined
     }
     object UpdateTableBorderPropertiesRequest {
       
@@ -9002,16 +9476,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateTableCellPropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var tableCellProperties: js.UndefOr[TableCellProperties] = js.native
+      var tableCellProperties: js.UndefOr[TableCellProperties] = js.undefined
       
-      var tableRange: js.UndefOr[TableRange] = js.native
+      var tableRange: js.UndefOr[TableRange] = js.undefined
     }
     object UpdateTableCellPropertiesRequest {
       
@@ -9050,16 +9523,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateTableColumnPropertiesRequest extends StObject {
       
-      var columnIndices: js.UndefOr[js.Array[Double]] = js.native
+      var columnIndices: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var tableColumnProperties: js.UndefOr[TableColumnProperties] = js.native
+      var tableColumnProperties: js.UndefOr[TableColumnProperties] = js.undefined
     }
     object UpdateTableColumnPropertiesRequest {
       
@@ -9101,16 +9573,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateTableRowPropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var rowIndices: js.UndefOr[js.Array[Double]] = js.native
+      var rowIndices: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var tableRowProperties: js.UndefOr[TableRowProperties] = js.native
+      var tableRowProperties: js.UndefOr[TableRowProperties] = js.undefined
     }
     object UpdateTableRowPropertiesRequest {
       
@@ -9152,18 +9623,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateTextStyleRequest extends StObject {
       
-      var cellLocation: js.UndefOr[TableCellLocation] = js.native
+      var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.native
+      var style: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle] = js.undefined
       
-      var textRange: js.UndefOr[Range] = js.native
+      var textRange: js.UndefOr[Range] = js.undefined
     }
     object UpdateTextStyleRequest {
       
@@ -9208,14 +9678,13 @@ object Slides {
       }
     }
     
-    @js.native
     trait UpdateVideoPropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var videoProperties: js.UndefOr[VideoProperties] = js.native
+      var videoProperties: js.UndefOr[VideoProperties] = js.undefined
     }
     object UpdateVideoPropertiesRequest {
       
@@ -9248,16 +9717,15 @@ object Slides {
       }
     }
     
-    @js.native
     trait Video extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
-      var videoProperties: js.UndefOr[VideoProperties] = js.native
+      var videoProperties: js.UndefOr[VideoProperties] = js.undefined
     }
     object Video {
       
@@ -9296,18 +9764,17 @@ object Slides {
       }
     }
     
-    @js.native
     trait VideoProperties extends StObject {
       
-      var autoPlay: js.UndefOr[Boolean] = js.native
+      var autoPlay: js.UndefOr[Boolean] = js.undefined
       
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
-      var mute: js.UndefOr[Boolean] = js.native
+      var mute: js.UndefOr[Boolean] = js.undefined
       
-      var outline: js.UndefOr[Outline] = js.native
+      var outline: js.UndefOr[Outline] = js.undefined
       
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
     }
     object VideoProperties {
       
@@ -9352,12 +9819,11 @@ object Slides {
       }
     }
     
-    @js.native
     trait WeightedFontFamily extends StObject {
       
-      var fontFamily: js.UndefOr[String] = js.native
+      var fontFamily: js.UndefOr[String] = js.undefined
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
     }
     object WeightedFontFamily {
       
@@ -9384,10 +9850,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait WordArt extends StObject {
       
-      var renderedText: js.UndefOr[String] = js.native
+      var renderedText: js.UndefOr[String] = js.undefined
     }
     object WordArt {
       
@@ -9408,10 +9873,9 @@ object Slides {
       }
     }
     
-    @js.native
     trait WriteControl extends StObject {
       
-      var requiredRevisionId: js.UndefOr[String] = js.native
+      var requiredRevisionId: js.UndefOr[String] = js.undefined
     }
     object WriteControl {
       
@@ -9441,20 +9905,19 @@ object Slides {
     *     var selectionType = selection.getSelectionType();
     *     }
     */
-  @js.native
   trait Selection extends StObject {
     
-    def getCurrentPage(): typings.googleAppsScript.GoogleAppsScript.Slides.Page = js.native
+    def getCurrentPage(): typings.googleAppsScript.GoogleAppsScript.Slides.Page
     
-    def getPageElementRange(): PageElementRange = js.native
+    def getPageElementRange(): PageElementRange
     
-    def getPageRange(): PageRange = js.native
+    def getPageRange(): PageRange
     
-    def getSelectionType(): SelectionType = js.native
+    def getSelectionType(): SelectionType
     
-    def getTableCellRange(): TableCellRange = js.native
+    def getTableCellRange(): TableCellRange
     
-    def getTextRange(): TextRange = js.native
+    def getTextRange(): TextRange
   }
   object Selection {
     
@@ -9821,78 +10284,77 @@ object Slides {
     *     // Create and open a presentation.
     *     preso = SlidesApp.create('Presentation Name');
     */
-  @js.native
   trait SlidesApp extends StObject {
     
-    var AlignmentPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ js.Any = js.native
+    var AlignmentPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AlignmentPosition */ js.Any
     
-    var ArrowStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any = js.native
+    var ArrowStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrowStyle */ js.Any
     
-    var AutoTextType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ js.Any = js.native
+    var AutoTextType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoTextType */ js.Any
     
-    var CellMergeState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ js.Any = js.native
+    var CellMergeState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CellMergeState */ js.Any
     
-    var ColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ js.Any = js.native
+    var ColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ js.Any
     
-    var ContentAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ js.Any = js.native
+    var ContentAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentAlignment */ js.Any
     
-    var DashStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ js.Any = js.native
+    var DashStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DashStyle */ js.Any
     
-    var FillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ js.Any = js.native
+    var FillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FillType */ js.Any
     
-    var LineCategory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ js.Any = js.native
+    var LineCategory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCategory */ js.Any
     
-    var LineFillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ js.Any = js.native
+    var LineFillType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineFillType */ js.Any
     
-    var LineType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ js.Any = js.native
+    var LineType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineType */ js.Any
     
-    var LinkType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ js.Any = js.native
+    var LinkType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkType */ js.Any
     
-    var ListPreset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ js.Any = js.native
+    var ListPreset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListPreset */ js.Any
     
-    var PageBackgroundType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ js.Any = js.native
+    var PageBackgroundType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundType */ js.Any
     
-    var PageElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ js.Any = js.native
+    var PageElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageElementType */ js.Any
     
-    var PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any = js.native
+    var PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any
     
-    var ParagraphAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ js.Any = js.native
+    var ParagraphAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphAlignment */ js.Any
     
-    var PlaceholderType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ js.Any = js.native
+    var PlaceholderType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaceholderType */ js.Any
     
-    var PredefinedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ js.Any = js.native
+    var PredefinedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PredefinedLayout */ js.Any
     
-    var SelectionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ js.Any = js.native
+    var SelectionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionType */ js.Any
     
-    var ShapeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ js.Any = js.native
+    var ShapeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShapeType */ js.Any
     
-    var SheetsChartEmbedType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ js.Any = js.native
+    var SheetsChartEmbedType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetsChartEmbedType */ js.Any
     
-    var SlideLinkingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ js.Any = js.native
+    var SlideLinkingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlideLinkingMode */ js.Any
     
-    var SlidePosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ js.Any = js.native
+    var SlidePosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SlidePosition */ js.Any
     
-    var SpacingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ js.Any = js.native
+    var SpacingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpacingMode */ js.Any
     
-    var TextBaselineOffset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ js.Any = js.native
+    var TextBaselineOffset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextBaselineOffset */ js.Any
     
-    var TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any = js.native
+    var TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any
     
-    var ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any = js.native
+    var ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any
     
-    var VideoSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ js.Any = js.native
+    var VideoSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ js.Any
     
-    def create(name: String): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation = js.native
+    def create(name: String): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation
     
-    def getActivePresentation(): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation = js.native
+    def getActivePresentation(): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation
     
-    def getUi(): Ui = js.native
+    def getUi(): Ui
     
-    def newAffineTransformBuilder(): AffineTransformBuilder = js.native
+    def newAffineTransformBuilder(): AffineTransformBuilder
     
-    def openById(id: String): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation = js.native
+    def openById(id: String): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation
     
-    def openByUrl(url: String): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation = js.native
+    def openByUrl(url: String): typings.googleAppsScript.GoogleAppsScript.Slides.Presentation
   }
   object SlidesApp {
     
@@ -10449,12 +10911,11 @@ object Slides {
     * SolidFill objects are detached and immutable, so do not reflect changes made after
     * they have been created.
     */
-  @js.native
   trait SolidFill extends StObject {
     
-    def getAlpha(): Double = js.native
+    def getAlpha(): Double
     
-    def getColor(): Color = js.native
+    def getColor(): Color
   }
   object SolidFill {
     
@@ -10572,34 +11033,33 @@ object Slides {
   /**
     * A cell in a table.
     */
-  @js.native
   trait TableCell extends StObject {
     
-    def getColumnIndex(): Integer = js.native
+    def getColumnIndex(): Integer
     
-    def getColumnSpan(): Integer = js.native
+    def getColumnSpan(): Integer
     
-    def getContentAlignment(): ContentAlignment = js.native
+    def getContentAlignment(): ContentAlignment
     
-    def getFill(): Fill = js.native
+    def getFill(): Fill
     
-    def getHeadCell(): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell = js.native
+    def getHeadCell(): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell
     
-    def getMergeState(): CellMergeState = js.native
+    def getMergeState(): CellMergeState
     
-    def getParentColumn(): TableColumn = js.native
+    def getParentColumn(): TableColumn
     
-    def getParentRow(): typings.googleAppsScript.GoogleAppsScript.Slides.TableRow = js.native
+    def getParentRow(): typings.googleAppsScript.GoogleAppsScript.Slides.TableRow
     
-    def getParentTable(): typings.googleAppsScript.GoogleAppsScript.Slides.Table = js.native
+    def getParentTable(): typings.googleAppsScript.GoogleAppsScript.Slides.Table
     
-    def getRowIndex(): Integer = js.native
+    def getRowIndex(): Integer
     
-    def getRowSpan(): Integer = js.native
+    def getRowSpan(): Integer
     
-    def getText(): TextRange = js.native
+    def getText(): TextRange
     
-    def setContentAlignment(contentAlignment: ContentAlignment): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell = js.native
+    def setContentAlignment(contentAlignment: ContentAlignment): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell
   }
   object TableCell {
     
@@ -10670,10 +11130,9 @@ object Slides {
   /**
     * A collection of one or more TableCell instances.
     */
-  @js.native
   trait TableCellRange extends StObject {
     
-    def getTableCells(): js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell] = js.native
+    def getTableCells(): js.Array[typings.googleAppsScript.GoogleAppsScript.Slides.TableCell]
   }
   object TableCellRange {
     
@@ -10695,20 +11154,19 @@ object Slides {
     * A column in a table. A column consists of a list of table cells. A column is identified by the
     * column index.
     */
-  @js.native
   trait TableColumn extends StObject {
     
-    def getCell(cellIndex: Integer): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell = js.native
+    def getCell(cellIndex: Integer): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell
     
-    def getIndex(): Integer = js.native
+    def getIndex(): Integer
     
-    def getNumCells(): Integer = js.native
+    def getNumCells(): Integer
     
-    def getParentTable(): typings.googleAppsScript.GoogleAppsScript.Slides.Table = js.native
+    def getParentTable(): typings.googleAppsScript.GoogleAppsScript.Slides.Table
     
-    def getWidth(): Double = js.native
+    def getWidth(): Double
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object TableColumn {
     
@@ -10751,20 +11209,19 @@ object Slides {
   /**
     * A row in a table. A row consists of a list of table cells. A row is identified by the row index.
     */
-  @js.native
   trait TableRow extends StObject {
     
-    def getCell(cellIndex: Integer): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell = js.native
+    def getCell(cellIndex: Integer): typings.googleAppsScript.GoogleAppsScript.Slides.TableCell
     
-    def getIndex(): Integer = js.native
+    def getIndex(): Integer
     
-    def getMinimumHeight(): Double = js.native
+    def getMinimumHeight(): Double
     
-    def getNumCells(): Integer = js.native
+    def getNumCells(): Integer
     
-    def getParentTable(): typings.googleAppsScript.GoogleAppsScript.Slides.Table = js.native
+    def getParentTable(): typings.googleAppsScript.GoogleAppsScript.Slides.Table
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object TableRow {
     
@@ -10948,12 +11405,11 @@ object Slides {
   /**
     * A color that refers to an entry in the page's ColorScheme.
     */
-  @js.native
   trait ThemeColor extends StObject {
     
-    def getColorType(): ColorType = js.native
+    def getColorType(): ColorType
     
-    def getThemeColorType(): ThemeColorType = js.native
+    def getThemeColorType(): ThemeColorType
   }
   object ThemeColor {
     

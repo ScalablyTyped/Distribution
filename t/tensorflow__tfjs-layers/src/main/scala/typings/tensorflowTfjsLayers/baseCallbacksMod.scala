@@ -9,10 +9,13 @@ import typings.tensorflowTfjsLayers.logsMod.Logs
 import typings.tensorflowTfjsLayers.logsMod.UnresolvedLogs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseCallbacksMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "BaseCallback")
   @js.native
@@ -79,9 +82,8 @@ object baseCallbacksMod {
     /**
       * Clear all registered callback constructors.
       */
-    @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.clear")
-    @js.native
-    def clear(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.constructors")
     @js.native
@@ -97,9 +99,8 @@ object baseCallbacksMod {
       *
       * @param verbosityLevel: Level of verbosity.
       */
-    @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.createCallbacks")
-    @js.native
-    def createCallbacks(verbosityLevel: Double): js.Array[BaseCallback] = js.native
+    @scala.inline
+    def createCallbacks(verbosityLevel: Double): js.Array[BaseCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallbacks")(verbosityLevel.asInstanceOf[js.Any]).asInstanceOf[js.Array[BaseCallback]]
     
     /**
       * Register a tf.LayersModel.fit() callback constructor.
@@ -113,9 +114,8 @@ object baseCallbacksMod {
       * @throws Error, if the same callbackConstructor has been registered before,
       *   either at the same or a different `verbosityLevel`.
       */
-    @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.registerCallbackConstructor")
-    @js.native
-    def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = js.native
+    @scala.inline
+    def registerCallbackConstructor(verbosityLevel: Double, callbackConstructor: BaseCallbackConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCallbackConstructor")(verbosityLevel.asInstanceOf[js.Any], callbackConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackList")
@@ -128,8 +128,8 @@ object baseCallbacksMod {
     */
   class CallbackList () extends StObject {
     def this(callbacks: js.Array[BaseCallback]) = this()
-    def this(callbacks: js.UndefOr[scala.Nothing], queueLength: Double) = this()
     def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
+    def this(callbacks: Unit, queueLength: Double) = this()
     
     def append(callback: BaseCallback): Unit = js.native
     
@@ -246,19 +246,22 @@ object baseCallbacksMod {
   object ModelLoggingVerbosity extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ModelLoggingVerbosity with Double] = js.native
+    def apply(value: Double): js.UndefOr[ModelLoggingVerbosity & Double] = js.native
     
     @js.native
-    sealed trait SILENT extends ModelLoggingVerbosity
-    /* 0 */ val SILENT: typings.tensorflowTfjsLayers.baseCallbacksMod.ModelLoggingVerbosity.SILENT with Double = js.native
+    sealed trait SILENT
+      extends StObject
+         with ModelLoggingVerbosity
+    /* 0 */ val SILENT: typings.tensorflowTfjsLayers.baseCallbacksMod.ModelLoggingVerbosity.SILENT & Double = js.native
     
     @js.native
-    sealed trait VERBOSE extends ModelLoggingVerbosity
-    /* 1 */ val VERBOSE: typings.tensorflowTfjsLayers.baseCallbacksMod.ModelLoggingVerbosity.VERBOSE with Double = js.native
+    sealed trait VERBOSE
+      extends StObject
+         with ModelLoggingVerbosity
+    /* 1 */ val VERBOSE: typings.tensorflowTfjsLayers.baseCallbacksMod.ModelLoggingVerbosity.VERBOSE & Double = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "configureCallbacks")
-  @js.native
+  @scala.inline
   def configureCallbacks(
     callbacks: js.Array[BaseCallback],
     verbose: ModelLoggingVerbosity,
@@ -269,47 +272,45 @@ object baseCallbacksMod {
     batchSize: Double,
     doValidation: Boolean,
     callbackMetrics: js.Array[String]
-  ): typings.tensorflowTfjsLayers.anon.CallbackList = js.native
+  ): typings.tensorflowTfjsLayers.anon.CallbackList = (^.asInstanceOf[js.Dynamic].applyDynamic("configureCallbacks")(callbacks.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], epochs.asInstanceOf[js.Any], initialEpoch.asInstanceOf[js.Any], numTrainSamples.asInstanceOf[js.Any], stepsPerEpoch.asInstanceOf[js.Any], batchSize.asInstanceOf[js.Any], doValidation.asInstanceOf[js.Any], callbackMetrics.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsLayers.anon.CallbackList]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "standardizeCallbacks")
-  @js.native
-  def standardizeCallbacks(callbacks: js.Array[BaseCallback | CustomCallbackArgs], yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "standardizeCallbacks")
-  @js.native
-  def standardizeCallbacks(callbacks: BaseCallback, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "standardizeCallbacks")
-  @js.native
-  def standardizeCallbacks(callbacks: CustomCallbackArgs, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = js.native
+  @scala.inline
+  def standardizeCallbacks(callbacks: js.Array[BaseCallback | CustomCallbackArgs], yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
+  @scala.inline
+  def standardizeCallbacks(callbacks: BaseCallback, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
+  @scala.inline
+  def standardizeCallbacks(callbacks: CustomCallbackArgs, yieldEvery: YieldEveryOptions): js.Array[BaseCallback] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeCallbacks")(callbacks.asInstanceOf[js.Any], yieldEvery.asInstanceOf[js.Any])).asInstanceOf[js.Array[BaseCallback]]
   
   @js.native
-  trait BaseCallbackConstructor extends Instantiable0[BaseCallback]
+  trait BaseCallbackConstructor
+    extends StObject
+       with Instantiable0[BaseCallback]
   
-  @js.native
   trait CustomCallbackArgs extends StObject {
     
     var onBatchBegin: js.UndefOr[
         js.Function2[/* batch */ Double, /* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]
-      ] = js.native
+      ] = js.undefined
     
     var onBatchEnd: js.UndefOr[
         js.Function2[/* batch */ Double, /* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]
-      ] = js.native
+      ] = js.undefined
     
     var onEpochBegin: js.UndefOr[
         js.Function2[/* epoch */ Double, /* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]
-      ] = js.native
+      ] = js.undefined
     
     var onEpochEnd: js.UndefOr[
         js.Function2[/* epoch */ Double, /* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]
-      ] = js.native
+      ] = js.undefined
     
-    var onTrainBegin: js.UndefOr[js.Function1[/* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]] = js.native
+    var onTrainBegin: js.UndefOr[js.Function1[/* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]] = js.undefined
     
-    var onTrainEnd: js.UndefOr[js.Function1[/* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]] = js.native
+    var onTrainEnd: js.UndefOr[js.Function1[/* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]] = js.undefined
     
     var onYield: js.UndefOr[
         js.Function3[/* epoch */ Double, /* batch */ Double, /* logs */ Logs, Unit | js.Promise[Unit]]
-      ] = js.native
+      ] = js.undefined
   }
   object CustomCallbackArgs {
     

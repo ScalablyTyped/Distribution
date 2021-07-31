@@ -3,23 +3,21 @@ package typings.nano.mod
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangesReaderScope extends StObject {
   
   // fetch changes and stop when an empty batch is received
-  def get(opts: ChangesReaderOptions): EventEmitter = js.native
+  def get(opts: ChangesReaderOptions): EventEmitter
   
   // spool the change in one long feed, instead of batches
-  def spool(opts: ChangesReaderOptions): EventEmitter = js.native
+  def spool(opts: ChangesReaderOptions): EventEmitter
   
   // fetch changes forever
-  def start(opts: ChangesReaderOptions): EventEmitter = js.native
+  def start(opts: ChangesReaderOptions): EventEmitter
   
   // stop consuming the changes feed
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object ChangesReaderScope {
   

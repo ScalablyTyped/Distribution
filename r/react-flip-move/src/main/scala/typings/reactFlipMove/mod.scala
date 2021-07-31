@@ -9,7 +9,6 @@ import typings.std.ClientRect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,12 +20,13 @@ object mod {
   
   object FlipMove {
     
-    @js.native
-    trait Animation extends _AnimationProp {
+    trait Animation
+      extends StObject
+         with _AnimationProp {
       
-      var from: PartialCSSStyleDeclaratio = js.native
+      var from: PartialCSSStyleDeclaratio
       
-      var to: PartialCSSStyleDeclaratio = js.native
+      var to: PartialCSSStyleDeclaratio
     }
     object Animation {
       
@@ -54,7 +54,9 @@ object mod {
       - typings.reactFlipMove.reactFlipMoveStrings.accordionHorizontal
       - typings.reactFlipMove.reactFlipMoveStrings.none
     */
-    trait AnimationPreset extends _AnimationProp
+    trait AnimationPreset
+      extends StObject
+         with _AnimationProp
     object AnimationPreset {
       
       @scala.inline
@@ -80,23 +82,22 @@ object mod {
     */
     type AnimationProp = _AnimationProp | Boolean
     
-    @js.native
     trait FlipMoveProps extends StObject {
       
       /**
         * Control the appear animation that runs when the component mounts. Works identically to enterAnimation below, but
         * only fires on the initial children.
         */
-      var appearAnimation: js.UndefOr[AnimationProp] = js.native
+      var appearAnimation: js.UndefOr[AnimationProp] = js.undefined
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * The length, in milliseconds, to wait before the animation begins.
         *
         * @default 0
         */
-      var delay: js.UndefOr[Double | String] = js.native
+      var delay: js.UndefOr[Double | String] = js.undefined
       
       /**
         * Sometimes, you may wish to temporarily disable the animations and have the normal behaviour resumed. Setting this
@@ -104,21 +105,21 @@ object mod {
         *
         * @default false
         */
-      var disableAllAnimations: js.UndefOr[Boolean] = js.native
+      var disableAllAnimations: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The length, in milliseconds, that the transition ought to take.
         *
         * @default 350
         */
-      var duration: js.UndefOr[Double | String] = js.native
+      var duration: js.UndefOr[Double | String] = js.undefined
       
       /**
         * Any valid CSS3 timing function (eg. "linear", "ease-in", "cubic-bezier(1, 0, 0, 1)").
         *
         * @default "ease-in-out"
         */
-      var easing: js.UndefOr[String] = js.native
+      var easing: js.UndefOr[String] = js.undefined
       
       /**
         * Control the onEnter animation that runs when new items are added to the DOM.
@@ -154,7 +155,7 @@ object mod {
         *
         * @default "elevator"
         */
-      var enterAnimation: js.UndefOr[AnimationProp] = js.native
+      var enterAnimation: js.UndefOr[AnimationProp] = js.undefined
       
       /**
         * This function is called with a DOM node as the only argument. It should return an object as specified by the
@@ -163,7 +164,7 @@ object mod {
         * For normal usage of FlipMove you won't need this. An example of usage is when FlipMove is used in a container
         * that is scaled using CSS. You can correct the values from getBoundingClientRect by using this prop.
         */
-      var getPosition: js.UndefOr[js.Function1[/* node */ HTMLElement, ClientRect]] = js.native
+      var getPosition: js.UndefOr[js.Function1[/* node */ HTMLElement, ClientRect]] = js.undefined
       
       /**
         * Control the onLeave animation that runs when new items are removed from the DOM.
@@ -172,7 +173,7 @@ object mod {
         *
         * @default "elevator"
         */
-      var leaveAnimation: js.UndefOr[AnimationProp] = js.native
+      var leaveAnimation: js.UndefOr[AnimationProp] = js.undefined
       
       /**
         * Do not collapse container height until after leaving animations complete.
@@ -182,7 +183,7 @@ object mod {
         *
         * @default false
         */
-      var maintainContainerHeight: js.UndefOr[Boolean] = js.native
+      var maintainContainerHeight: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A callback to be invoked **once per child element** at the end of the animation.
@@ -193,7 +194,7 @@ object mod {
         * @param childElement  A reference to the React Element being animated.
         * @param domNode       A reference to the unadulterated DOM node being animated.
         */
-      var onFinish: js.UndefOr[js.Function2[/* childElement */ ReactElement, /* domNode */ HTMLElement, Unit]] = js.native
+      var onFinish: js.UndefOr[js.Function2[/* childElement */ ReactElement, /* domNode */ HTMLElement, Unit]] = js.undefined
       
       /**
         * A callback to be invoked **once per group** at the end of the animation.
@@ -214,7 +215,7 @@ object mod {
               /* domNodes */ js.Array[HTMLElement], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * A callback to be invoked **once per child element** at the start of the animation.
@@ -225,7 +226,7 @@ object mod {
         * @param childElement  A reference to the React Element being animated.
         * @param domNode       A reference to the unadulterated DOM node being animated.
         */
-      var onStart: js.UndefOr[js.Function2[/* childElement */ ReactElement, /* domNode */ HTMLElement, Unit]] = js.native
+      var onStart: js.UndefOr[js.Function2[/* childElement */ ReactElement, /* domNode */ HTMLElement, Unit]] = js.undefined
       
       /**
         * A callback to be invoked **once per group** at the start of the animation.
@@ -247,7 +248,7 @@ object mod {
               /* domNodes */ js.Array[HTMLElement], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * The length, in milliseconds, to be added to the delay of each subsequent element.
@@ -266,7 +267,7 @@ object mod {
         *
         * @default 0
         */
-      var staggerDelayBy: js.UndefOr[Double | String] = js.native
+      var staggerDelayBy: js.UndefOr[Double | String] = js.undefined
       
       /**
         * The length, in milliseconds, to be added to the duration of each subsequent element.
@@ -282,9 +283,9 @@ object mod {
         *
         * @default 0
         */
-      var staggerDurationBy: js.UndefOr[Double | String] = js.native
+      var staggerDurationBy: js.UndefOr[Double | String] = js.undefined
       
-      var style: js.UndefOr[Styles] = js.native
+      var style: js.UndefOr[Styles] = js.undefined
       
       /**
         * Flip Move wraps your children in a container element. By default, this element is a div, but you may wish to
@@ -294,12 +295,12 @@ object mod {
         *
         * @default "div"
         */
-      var typeName: js.UndefOr[String | Null] = js.native
+      var typeName: js.UndefOr[String | Null] = js.undefined
       
       /**
         * @default "top"
         */
-      var verticalAlignment: js.UndefOr[String] = js.native
+      var verticalAlignment: js.UndefOr[String] = js.undefined
     }
     object FlipMoveProps {
       

@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Optional interface of sidebar panels. */
-@js.native
 trait XSidebarPanel extends StObject {
   
   /** Minimal possible width of this panel. */
-  val MinimalWidth: Double = js.native
+  val MinimalWidth: Double
   
   /**
     * For a given width of the container the layouter asks every ui element for its optimal height.
@@ -19,10 +17,10 @@ trait XSidebarPanel extends StObject {
     *
     * The height is set via the XWindow interface.
     */
-  def getHeightForWidth(nWidth: Double): LayoutSize = js.native
+  def getHeightForWidth(nWidth: Double): LayoutSize
   
   /** Minimal possible width of this panel. */
-  def getMinimalWidth(): Double = js.native
+  def getMinimalWidth(): Double
 }
 object XSidebarPanel {
   

@@ -3,16 +3,14 @@ package typings.webappsecCredentialManagement
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#authenticatorresponse}
   */
-@js.native
 trait AuthenticatorResponse extends StObject {
   
-  val clientDataJSON: ArrayBuffer = js.native
+  val clientDataJSON: ArrayBuffer
 }
 object AuthenticatorResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNFSFileSharesInput extends StObject {
   
   /**
     * An array containing the Amazon Resource Name (ARN) of each file share to be described.
     */
-  var FileShareARNList: typings.awsSdk.storagegatewayMod.FileShareARNList = js.native
+  var FileShareARNList: typings.awsSdk.storagegatewayMod.FileShareARNList
 }
 object DescribeNFSFileSharesInput {
   

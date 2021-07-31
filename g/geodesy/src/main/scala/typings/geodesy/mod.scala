@@ -3,17 +3,15 @@ package typings.geodesy
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait Datum extends StObject {
     
-    var ellipsoid: Ellipsoid = js.native
+    var ellipsoid: Ellipsoid
     
-    var transform: Transform = js.native
+    var transform: Transform
   }
   object Datum {
     
@@ -38,14 +36,13 @@ object mod {
   
   type Dp = Double
   
-  @js.native
   trait Ellipsoid extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var f: Double = js.native
+    var f: Double
   }
   object Ellipsoid {
     
@@ -89,12 +86,11 @@ object mod {
     def dms: typings.geodesy.geodesyStrings.dms = "dms".asInstanceOf[typings.geodesy.geodesyStrings.dms]
   }
   
-  @js.native
   trait GeoJSON extends StObject {
     
-    var coordinates: js.Tuple2[Double, Double] = js.native
+    var coordinates: js.Tuple2[Double, Double]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object GeoJSON {
     

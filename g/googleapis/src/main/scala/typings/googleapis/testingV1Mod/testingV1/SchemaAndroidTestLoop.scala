@@ -2,7 +2,6 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * \&lt;intent-name\&gt; will be implicitly added, since Games is the only
   * user of this api, for the time being.
   */
-@js.native
 trait SchemaAndroidTestLoop extends StObject {
   
   /**
     * The APK for the application under test.
     */
-  var appApk: js.UndefOr[SchemaFileReference] = js.native
+  var appApk: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
     * A multi-apk app bundle for the application under test.
     */
-  var appBundle: js.UndefOr[SchemaAppBundle] = js.native
+  var appBundle: js.UndefOr[SchemaAppBundle] = js.undefined
   
   /**
     * The java package for the application under test. The default is
     * determined by examining the application&#39;s manifest.
     */
-  var appPackageId: js.UndefOr[String] = js.native
+  var appPackageId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of scenario labels that should be run during the test. The
@@ -37,13 +35,13 @@ trait SchemaAndroidTestLoop extends StObject {
     * the manifest with the com.google.test.loops.player_experience name to the
     * execution. Scenarios can also be specified in the scenarios field.
     */
-  var scenarioLabels: js.UndefOr[js.Array[String]] = js.native
+  var scenarioLabels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of scenarios that should be run during the test. The default is
     * all test loops, derived from the application&#39;s manifest.
     */
-  var scenarios: js.UndefOr[js.Array[Double]] = js.native
+  var scenarios: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaAndroidTestLoop {
   

@@ -3,7 +3,6 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "NamespaceBase")
@@ -69,14 +68,14 @@ abstract class NamespaceBase () extends ReflectionObject {
     */
   def lookup(path: String, filterTypes: js.Any): ReflectionObject | Null = js.native
   def lookup(path: String, filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Array[_]): ReflectionObject | Null = js.native
-  def lookup(path: String, filterTypes: js.Array[_], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: js.Array[js.Any]): ReflectionObject | Null = js.native
+  def lookup(path: String, filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: String, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String]): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String], filterTypes: js.Any): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String], filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[_]): ReflectionObject | Null = js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[_], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any]): ReflectionObject | Null = js.native
+  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   
   /**

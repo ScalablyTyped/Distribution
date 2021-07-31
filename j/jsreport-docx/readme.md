@@ -10,9 +10,9 @@ jsreport recipe rendering docx files
 | ------------------ | :-------------: |
 | Full name          | jsreport-docx |
 | Keywords           | jsreport, docx |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 1 |
-| # downloads        | 42820 |
+| # downloads        | 45318 |
 | # stars            | 0 |
 
 ## Links

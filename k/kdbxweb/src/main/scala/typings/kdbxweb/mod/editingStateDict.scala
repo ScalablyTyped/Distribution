@@ -3,13 +3,13 @@ package typings.kdbxweb.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait editingStateDict extends /* uuid */ StringDictionary[editingState] {
+trait editingStateDict
+  extends StObject
+     with /* uuid */ StringDictionary[editingState] {
   
-  var meta: editingState = js.native
+  var meta: editingState
 }
 object editingStateDict {
   

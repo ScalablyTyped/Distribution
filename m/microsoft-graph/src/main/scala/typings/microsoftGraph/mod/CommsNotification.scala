@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommsNotification extends StObject {
   
   // Possible values are: created, updated, deleted.
-  var changeType: js.UndefOr[ChangeType] = js.native
+  var changeType: js.UndefOr[ChangeType] = js.undefined
   
   // URI of the resource that was changed.
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
 }
 object CommsNotification {
   

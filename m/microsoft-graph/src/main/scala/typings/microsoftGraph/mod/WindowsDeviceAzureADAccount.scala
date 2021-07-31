@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsDeviceAzureADAccount extends WindowsDeviceAccount {
+trait WindowsDeviceAzureADAccount
+  extends StObject
+     with WindowsDeviceAccount {
   
   // Not yet documented
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsDeviceAzureADAccount {
   

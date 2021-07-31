@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAdexchangebuyer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BidProtocol extends StObject {
   
   /**
@@ -19,10 +17,10 @@ trait BidProtocol extends StObject {
     * - PROTOCOL_OPENRTB_PROTOBUF_2_4
     * - PROTOCOL_OPENRTB_PROTOBUF_2_5
     */
-  var bidProtocol: js.UndefOr[String] = js.native
+  var bidProtocol: js.UndefOr[String] = js.undefined
   
   /** The maximum queries per second the Ad Exchange will send. */
-  var maximumQps: js.UndefOr[Double] = js.native
+  var maximumQps: js.UndefOr[Double] = js.undefined
   
   /**
     * The geographical region the Ad Exchange should send requests from. Only used by some quota systems, but always setting the value is recommended. Allowed values:
@@ -31,10 +29,10 @@ trait BidProtocol extends StObject {
     * - US_EAST
     * - US_WEST
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** The URL to which the Ad Exchange will send bid requests. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object BidProtocol {
   

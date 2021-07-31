@@ -6,17 +6,15 @@ import typings.three.object3DMod.Object3D
 import typings.three.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSceneUtils extends StObject {
   
-  def attach(child: Object3D, scene: Scene, parent: Object3D): Unit = js.native
+  def attach(child: Object3D, scene: Scene, parent: Object3D): Unit
   
-  def createMultiMaterialObject(geometry: Geometry, materials: js.Array[Material]): Object3D = js.native
+  def createMultiMaterialObject(geometry: Geometry, materials: js.Array[Material]): Object3D
   
-  def detach(child: Object3D, parent: Object3D, scene: Scene): Unit = js.native
+  def detach(child: Object3D, parent: Object3D, scene: Scene): Unit
 }
 object TypeofSceneUtils {
   

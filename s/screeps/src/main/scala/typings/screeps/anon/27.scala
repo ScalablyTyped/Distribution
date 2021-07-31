@@ -3,19 +3,17 @@ package typings.screeps.anon
 import typings.screeps.screepsStrings.XZH2O
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `27` extends StObject {
   
-  var X: XZH2O = js.native
+  var X: XZH2O
 }
 object `27` {
   
   @scala.inline
-  def apply(X: XZH2O): `27` = {
-    val __obj = js.Dynamic.literal(X = X.asInstanceOf[js.Any])
+  def apply(): `27` = {
+    val __obj = js.Dynamic.literal(X = "XZH2O")
     __obj.asInstanceOf[`27`]
   }
   

@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "QueueService")
@@ -38,13 +37,8 @@ class QueueService () extends StorageServiceClient {
     */
   def this(storageAccount: String, storageAccessKey: String) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String) = this()
-  def this(
-    storageAccount: String,
-    storageAccessKey: String,
-    host: js.UndefOr[scala.Nothing],
-    sasToken: String
-  ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, sasToken: String) = this()
+  def this(storageAccount: String, storageAccessKey: String, host: Unit, sasToken: String) = this()
   
   var authenticationProvider: SharedKey = js.native
   

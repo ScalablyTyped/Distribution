@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecsClusterMod {
@@ -27,7 +26,7 @@ object ecsClusterMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ClusterArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -63,6 +62,10 @@ object ecsClusterMod {
   /* static members */
   object Cluster {
     
+    @JSImport("@pulumi/aws/ecs/cluster", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,35 +75,29 @@ object ecsClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecs/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cluster = js.native
-    @JSImport("@pulumi/aws/ecs/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
-    @JSImport("@pulumi/aws/ecs/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
-    @JSImport("@pulumi/aws/ecs/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecs/cluster", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean]
   }
   
-  @js.native
   trait ClusterArgs extends StObject {
     
     /**
       * List of short names of one or more capacity providers to associate with the cluster. Valid values also include `FARGATE` and `FARGATE_SPOT`.
       */
-    val capacityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val capacityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The capacity provider strategy to use by default for the cluster. Can be one or more.  Defined below.
@@ -109,22 +106,22 @@ object ecsClusterMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the cluster (up to 255 letters, numbers, hyphens, and underscores)
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block(s) with cluster settings. For example, this can be used to enable CloudWatch Container Insights for a cluster. Defined below.
       */
-    val settings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]] = js.native
+    val settings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterArgs {
     
@@ -182,18 +179,17 @@ object ecsClusterMod {
     }
   }
   
-  @js.native
   trait ClusterState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) that identifies the cluster
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of short names of one or more capacity providers to associate with the cluster. Valid values also include `FARGATE` and `FARGATE_SPOT`.
       */
-    val capacityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val capacityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The capacity provider strategy to use by default for the cluster. Can be one or more.  Defined below.
@@ -202,22 +198,22 @@ object ecsClusterMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterDefaultCapacityProviderStrategy]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the cluster (up to 255 letters, numbers, hyphens, and underscores)
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block(s) with cluster settings. For example, this can be used to enable CloudWatch Container Insights for a cluster. Defined below.
       */
-    val settings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]] = js.native
+    val settings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ClusterSetting]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterState {
     

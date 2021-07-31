@@ -2,39 +2,37 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RouteStatus communicates the observed state of the Route (from the
   * controller).
   */
-@js.native
 trait SchemaRouteStatus extends StObject {
   
   /**
     * Similar to domain, information on where the service is available on HTTP.
     */
-  var address: js.UndefOr[SchemaAddressable] = js.native
+  var address: js.UndefOr[SchemaAddressable] = js.undefined
   
   /**
     * Conditions communicates information about ongoing/complete reconciliation
     * processes that bring the &quot;spec&quot; inline with the observed state
     * of the world.
     */
-  var conditions: js.UndefOr[js.Array[SchemaRouteCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaRouteCondition]] = js.undefined
   
   /**
     * Domain holds the top-level domain that will distribute traffic over the
     * provided targets. It generally has the form
     * https://{route-hash}-{project-hash}-{cluster-level-suffix}.a.run.app
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * For Cloud Run, identifical to domain.
     */
-  var domainInternal: js.UndefOr[String] = js.native
+  var domainInternal: js.UndefOr[String] = js.undefined
   
   /**
     * ObservedGeneration is the &#39;Generation&#39; of the Route that was last
@@ -46,7 +44,7 @@ trait SchemaRouteStatus extends StObject {
     * observedGeneration, as new &quot;latest ready&quot; revisions from the
     * Configuration are processed without an update to the Route&#39;s spec.
     */
-  var observedGeneration: js.UndefOr[Double] = js.native
+  var observedGeneration: js.UndefOr[Double] = js.undefined
   
   /**
     * Traffic holds the configured traffic distribution. These entries will
@@ -54,7 +52,7 @@ trait SchemaRouteStatus extends StObject {
     * the spec, this will hold the LatestReadyRevisionName that we last
     * observed.
     */
-  var traffic: js.UndefOr[js.Array[SchemaTrafficTarget]] = js.native
+  var traffic: js.UndefOr[js.Array[SchemaTrafficTarget]] = js.undefined
 }
 object SchemaRouteStatus {
   

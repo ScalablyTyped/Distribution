@@ -5,7 +5,6 @@ import typings.lowdb.mod.AdapterAsync
 import typings.lowdb.mod.AdapterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileAsyncMod extends Shortcut {
@@ -13,7 +12,9 @@ object fileAsyncMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("lowdb/adapters/FileAsync", JSImport.Namespace)
   @js.native
-  class ^[SchemaT] protected () extends AdapterAsync[SchemaT] {
+  class ^[SchemaT] protected ()
+    extends StObject
+       with AdapterAsync[SchemaT] {
     def this(source: String) = this()
     def this(source: String, options: AdapterOptions[SchemaT]) = this()
   }

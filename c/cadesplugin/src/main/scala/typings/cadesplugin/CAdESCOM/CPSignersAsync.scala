@@ -5,18 +5,16 @@ import typings.cadesplugin.CADESCommon.PromisifiedFunction
 import typings.cadesplugin.CADESCommon.Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.CPSigners> */
-@js.native
 trait CPSignersAsync extends StObject {
   
   val Count: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double] = js.native
+  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
   
   val Item: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[js.Function1[/* index */ Double, CPSigner]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, CPSigner]]) = js.native
+  js.Promise[Unpacked[js.Function1[/* index */ Double, CPSigner]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, CPSigner]])
 }
 object CPSignersAsync {
   
@@ -44,7 +42,7 @@ object CPSignersAsync {
     def setCountFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Count", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -57,7 +55,7 @@ object CPSignersAsync {
     def setItemFunction1(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any]) | (/* index */ Double) => CPSigner | js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | (/* index */ Double) => CPSigner | js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

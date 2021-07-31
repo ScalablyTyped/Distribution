@@ -2,120 +2,118 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParagraphFormat extends StObject {
   
-  var AddSpaceBetweenFarEastAndAlpha: Double = js.native
+  var AddSpaceBetweenFarEastAndAlpha: Double
   
-  var AddSpaceBetweenFarEastAndDigit: Double = js.native
+  var AddSpaceBetweenFarEastAndDigit: Double
   
-  var Alignment: WdParagraphAlignment = js.native
+  var Alignment: WdParagraphAlignment
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var AutoAdjustRightIndent: Double = js.native
+  var AutoAdjustRightIndent: Double
   
-  var BaseLineAlignment: WdBaselineAlignment = js.native
+  var BaseLineAlignment: WdBaselineAlignment
   
-  var Borders: typings.activexWord.Word.Borders = js.native
+  var Borders: typings.activexWord.Word.Borders
   
-  var CharacterUnitFirstLineIndent: Double = js.native
+  var CharacterUnitFirstLineIndent: Double
   
-  var CharacterUnitLeftIndent: Double = js.native
+  var CharacterUnitLeftIndent: Double
   
-  var CharacterUnitRightIndent: Double = js.native
+  var CharacterUnitRightIndent: Double
   
-  def CloseUp(): Unit = js.native
+  def CloseUp(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DisableLineHeightGrid: Double = js.native
+  var DisableLineHeightGrid: Double
   
-  val Duplicate: ParagraphFormat = js.native
+  val Duplicate: ParagraphFormat
   
-  var FarEastLineBreakControl: Double = js.native
+  var FarEastLineBreakControl: Double
   
-  var FirstLineIndent: Double = js.native
+  var FirstLineIndent: Double
   
-  var HalfWidthPunctuationOnTopOfLine: Double = js.native
+  var HalfWidthPunctuationOnTopOfLine: Double
   
-  var HangingPunctuation: Double = js.native
+  var HangingPunctuation: Double
   
-  var Hyphenation: Double = js.native
+  var Hyphenation: Double
   
-  def IndentCharWidth(Count: Double): Unit = js.native
+  def IndentCharWidth(Count: Double): Unit
   
-  def IndentFirstLineCharWidth(Count: Double): Unit = js.native
+  def IndentFirstLineCharWidth(Count: Double): Unit
   
-  var KeepTogether: Double = js.native
+  var KeepTogether: Double
   
-  var KeepWithNext: Double = js.native
+  var KeepWithNext: Double
   
-  var LeftIndent: Double = js.native
+  var LeftIndent: Double
   
-  var LineSpacing: Double = js.native
+  var LineSpacing: Double
   
-  var LineSpacingRule: WdLineSpacing = js.native
+  var LineSpacingRule: WdLineSpacing
   
-  var LineUnitAfter: Double = js.native
+  var LineUnitAfter: Double
   
-  var LineUnitBefore: Double = js.native
+  var LineUnitBefore: Double
   
-  var MirrorIndents: Double = js.native
+  var MirrorIndents: Double
   
-  var NoLineNumber: Double = js.native
+  var NoLineNumber: Double
   
-  def OpenOrCloseUp(): Unit = js.native
+  def OpenOrCloseUp(): Unit
   
-  def OpenUp(): Unit = js.native
+  def OpenUp(): Unit
   
-  var OutlineLevel: WdOutlineLevel = js.native
+  var OutlineLevel: WdOutlineLevel
   
-  var PageBreakBefore: Double = js.native
+  var PageBreakBefore: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ReadingOrder: WdReadingOrder = js.native
+  var ReadingOrder: WdReadingOrder
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  var RightIndent: Double = js.native
+  var RightIndent: Double
   
-  val Shading: typings.activexWord.Word.Shading = js.native
+  val Shading: typings.activexWord.Word.Shading
   
-  def Space1(): Unit = js.native
+  def Space1(): Unit
   
-  def Space15(): Unit = js.native
+  def Space15(): Unit
   
-  def Space2(): Unit = js.native
+  def Space2(): Unit
   
-  var SpaceAfter: Double = js.native
+  var SpaceAfter: Double
   
-  var SpaceAfterAuto: Double = js.native
+  var SpaceAfterAuto: Double
   
-  var SpaceBefore: Double = js.native
+  var SpaceBefore: Double
   
-  var SpaceBeforeAuto: Double = js.native
+  var SpaceBeforeAuto: Double
   
-  var Style: js.Any = js.native
+  var Style: js.Any
   
-  def TabHangingIndent(Count: Double): Unit = js.native
+  def TabHangingIndent(Count: Double): Unit
   
-  def TabIndent(Count: Double): Unit = js.native
+  def TabIndent(Count: Double): Unit
   
-  var TabStops: typings.activexWord.Word.TabStops = js.native
+  var TabStops: typings.activexWord.Word.TabStops
   
-  var TextboxTightWrap: WdTextboxTightWrap = js.native
+  var TextboxTightWrap: WdTextboxTightWrap
   
-  var WidowControl: Double = js.native
+  var WidowControl: Double
   
   @JSName("Word.ParagraphFormat_typekey")
-  var WordDotParagraphFormat_typekey: ParagraphFormat = js.native
+  var WordDotParagraphFormat_typekey: ParagraphFormat
   
-  var WordWrap: Double = js.native
+  var WordWrap: Double
 }
 object ParagraphFormat {
   

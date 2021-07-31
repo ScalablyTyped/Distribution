@@ -5,36 +5,36 @@ import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.widgetOptionsMod.WidgetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetOptionStoreMod {
   
-  @js.native
-  trait WidgetOptionStore[TElement] extends WidgetOptions[TElement] {
+  trait WidgetOptionStore[TElement]
+    extends StObject
+       with WidgetOptions[TElement] {
     
     /**
       * The jQuery-object containing the cloned table for the sticky headers.
       */
     @JSName("$sticky")
-    var $sticky: JQuery[HTMLElement] = js.native
+    var $sticky: JQuery[HTMLElement]
     
     /**
       * A jQuery-object containing all filters which are bound to all columns.
       */
     @JSName("filter_$anyMatch")
-    var filter_$anyMatch: JQuery[HTMLElement] = js.native
+    var filter_$anyMatch: JQuery[HTMLElement]
     
     /**
       * A jQuery-object containing all external filters.
       */
     @JSName("filter_$externalFilters")
-    var filter_$externalFilters: JQuery[HTMLElement] = js.native
+    var filter_$externalFilters: JQuery[HTMLElement]
     
     /**
       * A value indicating whether the filters have initialized.
       */
-    var filter_initialized: Boolean = js.native
+    var filter_initialized: Boolean
   }
   object WidgetOptionStore {
     
@@ -50,7 +50,7 @@ object widgetOptionStoreMod {
     }
     
     @scala.inline
-    implicit class WidgetOptionStoreMutableBuilder[Self <: WidgetOptionStore[_], TElement] (val x: Self with WidgetOptionStore[TElement]) extends AnyVal {
+    implicit class WidgetOptionStoreMutableBuilder[Self <: WidgetOptionStore[?], TElement] (val x: Self & WidgetOptionStore[TElement]) extends AnyVal {
       
       @scala.inline
       def set$sticky(value: JQuery[HTMLElement]): Self = StObject.set(x, "$sticky", value.asInstanceOf[js.Any])

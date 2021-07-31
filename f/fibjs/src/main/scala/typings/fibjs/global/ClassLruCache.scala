@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_LruCache")
 @js.native
 class ClassLruCache protected ()
-  extends typings.fibjs.ClassLruCache {
+  extends StObject
+     with typings.fibjs.ClassLruCache {
   /**
     * 
     * @brief LruCache 对象构造函数

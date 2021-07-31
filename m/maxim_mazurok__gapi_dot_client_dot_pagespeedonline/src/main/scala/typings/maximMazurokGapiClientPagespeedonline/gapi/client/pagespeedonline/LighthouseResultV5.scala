@@ -3,64 +3,62 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LighthouseResultV5 extends StObject {
   
   /** Map of audits in the LHR. */
   var audits: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Map of categories in the LHR. */
-  var categories: js.UndefOr[Categories] = js.native
+  var categories: js.UndefOr[Categories] = js.undefined
   
   /** Map of category groups in the LHR. */
   var categoryGroups: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The configuration settings for this LHR. */
-  var configSettings: js.UndefOr[ConfigSettings] = js.native
+  var configSettings: js.UndefOr[ConfigSettings] = js.undefined
   
   /** Environment settings that were used when making this LHR. */
-  var environment: js.UndefOr[Environment] = js.native
+  var environment: js.UndefOr[Environment] = js.undefined
   
   /** The time that this run was fetched. */
-  var fetchTime: js.UndefOr[String] = js.native
+  var fetchTime: js.UndefOr[String] = js.undefined
   
   /** The final resolved url that was audited. */
-  var finalUrl: js.UndefOr[String] = js.native
+  var finalUrl: js.UndefOr[String] = js.undefined
   
   /** The internationalization strings that are required to render the LHR. */
-  var i18n: js.UndefOr[I18n] = js.native
+  var i18n: js.UndefOr[I18n] = js.undefined
   
   /** The lighthouse version that was used to generate this LHR. */
-  var lighthouseVersion: js.UndefOr[String] = js.native
+  var lighthouseVersion: js.UndefOr[String] = js.undefined
   
   /** The original requested url. */
-  var requestedUrl: js.UndefOr[String] = js.native
+  var requestedUrl: js.UndefOr[String] = js.undefined
   
   /** List of all run warnings in the LHR. Will always output to at least `[]`. */
-  var runWarnings: js.UndefOr[js.Array[_]] = js.native
+  var runWarnings: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /** A top-level error message that, if present, indicates a serious enough problem that this Lighthouse result may need to be discarded. */
-  var runtimeError: js.UndefOr[RuntimeError] = js.native
+  var runtimeError: js.UndefOr[RuntimeError] = js.undefined
   
   /** The Stack Pack advice strings. */
-  var stackPacks: js.UndefOr[js.Array[StackPack]] = js.native
+  var stackPacks: js.UndefOr[js.Array[StackPack]] = js.undefined
   
   /** Timing information for this LHR. */
-  var timing: js.UndefOr[Timing] = js.native
+  var timing: js.UndefOr[Timing] = js.undefined
   
   /** The user agent that was used to run this LHR. */
-  var userAgent: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.undefined
 }
 object LighthouseResultV5 {
   
@@ -77,7 +75,7 @@ object LighthouseResultV5 {
     def setAudits(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
     ): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -93,7 +91,7 @@ object LighthouseResultV5 {
     def setCategoryGroups(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
     ): Self = StObject.set(x, "categoryGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -142,7 +140,7 @@ object LighthouseResultV5 {
     def setRequestedUrlUndefined: Self = StObject.set(x, "requestedUrl", js.undefined)
     
     @scala.inline
-    def setRunWarnings(value: js.Array[_]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
+    def setRunWarnings(value: js.Array[js.Any]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRunWarningsUndefined: Self = StObject.set(x, "runWarnings", js.undefined)

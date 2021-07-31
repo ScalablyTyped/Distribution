@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,29 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * reported as abusive. Video abuse report reasons are used with
   * video.ReportAbuse.
   */
-@js.native
 trait SchemaVideoAbuseReportReason extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this abuse report reason.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#videoAbuseReportReason&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the abuse report reason.
     */
-  var snippet: js.UndefOr[SchemaVideoAbuseReportReasonSnippet] = js.native
+  var snippet: js.UndefOr[SchemaVideoAbuseReportReasonSnippet] = js.undefined
 }
 object SchemaVideoAbuseReportReason {
   

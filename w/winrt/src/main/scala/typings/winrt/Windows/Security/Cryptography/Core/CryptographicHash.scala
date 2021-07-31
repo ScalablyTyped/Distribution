@@ -3,11 +3,11 @@ package typings.winrt.Windows.Security.Cryptography.Core
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CryptographicHash extends IHashComputation
+trait CryptographicHash
+  extends StObject
+     with IHashComputation
 object CryptographicHash {
   
   @scala.inline

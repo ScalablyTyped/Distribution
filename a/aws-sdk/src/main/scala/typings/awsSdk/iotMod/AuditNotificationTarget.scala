@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditNotificationTarget extends StObject {
   
   /**
     * True if notifications to the target are enabled.
     */
-  var enabled: js.UndefOr[Enabled] = js.native
+  var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
     * The ARN of the role that grants permission to send notifications to the target.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The ARN of the target (SNS topic) to which audit notifications are sent.
     */
-  var targetArn: js.UndefOr[TargetArn] = js.native
+  var targetArn: js.UndefOr[TargetArn] = js.undefined
 }
 object AuditNotificationTarget {
   

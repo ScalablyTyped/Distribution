@@ -2,61 +2,59 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticsearchClusterConfig extends StObject {
   
   /**
     * Total number of dedicated master nodes, active and on standby, for the cluster.
     */
-  var DedicatedMasterCount: js.UndefOr[IntegerClass] = js.native
+  var DedicatedMasterCount: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     * A boolean value to indicate whether a dedicated master node is enabled. See About Dedicated Master Nodes for more information.
     */
-  var DedicatedMasterEnabled: js.UndefOr[Boolean] = js.native
+  var DedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance type for a dedicated master node.
     */
-  var DedicatedMasterType: js.UndefOr[ESPartitionInstanceType] = js.native
+  var DedicatedMasterType: js.UndefOr[ESPartitionInstanceType] = js.undefined
   
   /**
     * The number of instances in the specified domain cluster.
     */
-  var InstanceCount: js.UndefOr[IntegerClass] = js.native
+  var InstanceCount: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     * The instance type for an Elasticsearch cluster. UltraWarm instance types are not supported for data instances.
     */
-  var InstanceType: js.UndefOr[ESPartitionInstanceType] = js.native
+  var InstanceType: js.UndefOr[ESPartitionInstanceType] = js.undefined
   
   /**
     * The number of warm nodes in the cluster.
     */
-  var WarmCount: js.UndefOr[IntegerClass] = js.native
+  var WarmCount: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     * True to enable warm storage.
     */
-  var WarmEnabled: js.UndefOr[Boolean] = js.native
+  var WarmEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance type for the Elasticsearch cluster's warm nodes.
     */
-  var WarmType: js.UndefOr[ESWarmPartitionInstanceType] = js.native
+  var WarmType: js.UndefOr[ESWarmPartitionInstanceType] = js.undefined
   
   /**
     * Specifies the zone awareness configuration for a domain when zone awareness is enabled.
     */
-  var ZoneAwarenessConfig: js.UndefOr[typings.awsSdk.esMod.ZoneAwarenessConfig] = js.native
+  var ZoneAwarenessConfig: js.UndefOr[typings.awsSdk.esMod.ZoneAwarenessConfig] = js.undefined
   
   /**
     * A boolean value to indicate whether zone awareness is enabled. See About Zone Awareness for more information.
     */
-  var ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.native
+  var ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ElasticsearchClusterConfig {
   

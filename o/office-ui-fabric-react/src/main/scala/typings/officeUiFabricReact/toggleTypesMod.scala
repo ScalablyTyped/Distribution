@@ -17,15 +17,13 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.icomponentasMod.IComponentAs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleTypesMod {
   
-  @js.native
   trait IToggle extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object IToggle {
     
@@ -43,68 +41,69 @@ object toggleTypesMod {
     }
   }
   
-  @js.native
-  trait IToggleProps extends HTMLAttributes[HTMLElement] {
+  trait IToggleProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Text for screen-reader to announce as the name of the toggle.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Render the root element as another type.
       */
-    var as: js.UndefOr[IComponentAs[HTMLAttributes[HTMLElement]]] = js.native
+    var as: js.UndefOr[IComponentAs[HTMLAttributes[HTMLElement]]] = js.undefined
     
     /**
       * Checked state of the toggle. If you are maintaining state yourself, use this property.
       * Otherwise use `defaultChecked`.
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional callback to access the IToggle interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IToggle]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IToggle]] = js.undefined
     
     /**
       * Optional disabled flag.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the label (not the onText/offText) should be positioned inline with the toggle control.
       * Left (right in RTL) side when on/off text provided VS right (left in RTL) side when no on/off text.
       * Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.
       */
-    var inlineLabel: js.UndefOr[Boolean] = js.native
+    var inlineLabel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional keytip for this toggle
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * A label for the toggle.
       */
-    var label: js.UndefOr[String | Element] = js.native
+    var label: js.UndefOr[String | Element] = js.undefined
     
     /**
       * @deprecated Use `ariaLabel` for name, and let the metadata convey state
       */
-    var offAriaLabel: js.UndefOr[String] = js.native
+    var offAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Text to display when toggle is OFF.
       * Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.
       */
-    var offText: js.UndefOr[String] = js.native
+    var offText: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Use `ariaLabel` for name, and let the metadata convey state
       */
-    var onAriaLabel: js.UndefOr[String] = js.native
+    var onAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Callback issued when the value changes.
@@ -116,35 +115,35 @@ object toggleTypesMod {
           /* checked */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @deprecated Use `onChange` instead.
       */
-    var onChanged: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+    var onChanged: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
     
     /**
       * Text to display when toggle is ON.
       * Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.
       */
-    var onText: js.UndefOr[String] = js.native
+    var onText: js.UndefOr[String] = js.undefined
     
     /**
       * (Optional) Specify whether to use the "switch" role (ARIA 1.1) or the checkbox role (ARIA 1.0).
       * If unspecified, defaults to "switch".
       */
     @JSName("role")
-    var role_IToggleProps: js.UndefOr[checkbox | switch | menuitemcheckbox] = js.native
+    var role_IToggleProps: js.UndefOr[checkbox | switch | menuitemcheckbox] = js.undefined
     
     /**
       * Optional styles for the component.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IToggleProps {
     
@@ -269,38 +268,37 @@ object toggleTypesMod {
     }
   }
   
-  @js.native
   trait IToggleStyleProps extends StObject {
     
     /**
       * Component is checked.
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Root element class name.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Component is disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether label should be positioned inline with the toggle.
       */
-    var inlineLabel: js.UndefOr[Boolean] = js.native
+    var inlineLabel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the user did not specify a on/off text. Influencing only when inlineLabel is used.
       */
-    var onOffMissing: js.UndefOr[Boolean] = js.native
+    var onOffMissing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Theme values.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IToggleStyleProps {
     
@@ -348,36 +346,35 @@ object toggleTypesMod {
     }
   }
   
-  @js.native
   trait IToggleStyles extends StObject {
     
     /**
       * Container for the toggle pill and the text next to it.
       */
-    var container: IStyle = js.native
+    var container: IStyle
     
     /**
       * Label element above the toggle.
       */
-    var label: IStyle = js.native
+    var label: IStyle
     
     /**
       * Pill, rendered as a button.
       */
-    var pill: IStyle = js.native
+    var pill: IStyle
     
     /** Root element. */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Text next to the pill.
       */
-    var text: IStyle = js.native
+    var text: IStyle
     
     /**
       * Thumb inside of the pill.
       */
-    var thumb: IStyle = js.native
+    var thumb: IStyle
   }
   object IToggleStyles {
     

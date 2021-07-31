@@ -2,31 +2,29 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKey extends StObject {
   
   /**
     * The fingerprint of the public key.
     */
-  var Fingerprint: js.UndefOr[String] = js.native
+  var Fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The ending time of validity of the public key.
     */
-  var ValidityEndTime: js.UndefOr[Date] = js.native
+  var ValidityEndTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The starting time of validity of the public key.
     */
-  var ValidityStartTime: js.UndefOr[Date] = js.native
+  var ValidityStartTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The DER encoded public key value in PKCS#1 format.
     */
-  var Value: js.UndefOr[ByteBuffer] = js.native
+  var Value: js.UndefOr[ByteBuffer] = js.undefined
 }
 object PublicKey {
   

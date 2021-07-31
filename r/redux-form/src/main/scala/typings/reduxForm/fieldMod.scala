@@ -17,7 +17,6 @@ import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldMod {
@@ -46,7 +45,7 @@ object fieldMod {
     
     var dirty: Boolean = js.native
     
-    def getRenderedComponent(): Component[WrappedFieldProps with P, js.Object, _] = js.native
+    def getRenderedComponent(): Component[WrappedFieldProps & P, js.Object, js.Any] = js.native
     
     var name: String = js.native
     
@@ -56,38 +55,37 @@ object fieldMod {
   }
   
   /* Inlined parent std.Partial<redux-form.redux-form/lib/Field.CommonFieldProps> */
-  @js.native
   trait BaseFieldProps[P] extends StObject {
     
-    var component: js.UndefOr[(ComponentType[WrappedFieldProps with P]) | input | select | textarea] = js.native
+    var component: js.UndefOr[(ComponentType[WrappedFieldProps & P]) | input | select | textarea] = js.undefined
     
-    var format: js.UndefOr[Formatter | Null] = js.native
+    var format: js.UndefOr[Formatter | Null] = js.undefined
     
-    var forwardRef: js.UndefOr[Boolean] = js.native
+    var forwardRef: js.UndefOr[Boolean] = js.undefined
     
-    var immutableProps: js.UndefOr[js.Array[String]] = js.native
+    var immutableProps: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var normalize: js.UndefOr[Normalizer] = js.native
+    var normalize: js.UndefOr[Normalizer] = js.undefined
     
-    var onBlur: js.UndefOr[EventWithDataHandler[FocusEvent[_]]] = js.native
+    var onBlur: js.UndefOr[EventWithDataHandler[FocusEvent[js.Any]]] = js.undefined
     
-    var onChange: js.UndefOr[EventWithDataHandler[ChangeEvent[_]]] = js.native
+    var onChange: js.UndefOr[EventWithDataHandler[ChangeEvent[js.Any]]] = js.undefined
     
-    var onDragStart: js.UndefOr[EventHandler[DragEvent[_]]] = js.native
+    var onDragStart: js.UndefOr[EventHandler[DragEvent[js.Any]]] = js.undefined
     
-    var onDrop: js.UndefOr[EventHandler[DragEvent[_]]] = js.native
+    var onDrop: js.UndefOr[EventHandler[DragEvent[js.Any]]] = js.undefined
     
-    var onFocus: js.UndefOr[EventHandler[FocusEvent[_]]] = js.native
+    var onFocus: js.UndefOr[EventHandler[FocusEvent[js.Any]]] = js.undefined
     
-    var parse: js.UndefOr[Parser] = js.native
+    var parse: js.UndefOr[Parser] = js.undefined
     
-    var props: js.UndefOr[P] = js.native
+    var props: js.UndefOr[P] = js.undefined
     
-    var validate: js.UndefOr[Validator | js.Array[Validator]] = js.native
+    var validate: js.UndefOr[Validator | js.Array[Validator]] = js.undefined
     
-    var warn: js.UndefOr[Validator | js.Array[Validator]] = js.native
+    var warn: js.UndefOr[Validator | js.Array[Validator]] = js.undefined
   }
   object BaseFieldProps {
     
@@ -98,10 +96,10 @@ object fieldMod {
     }
     
     @scala.inline
-    implicit class BaseFieldPropsMutableBuilder[Self <: BaseFieldProps[_], P] (val x: Self with BaseFieldProps[P]) extends AnyVal {
+    implicit class BaseFieldPropsMutableBuilder[Self <: BaseFieldProps[?], P] (val x: Self & BaseFieldProps[P]) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: (ComponentType[WrappedFieldProps with P]) | input | select | textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: (ComponentType[WrappedFieldProps & P]) | input | select | textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
@@ -143,7 +141,7 @@ object fieldMod {
       
       @scala.inline
       def setOnBlur(
-        value: (/* event */ js.UndefOr[FocusEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onBlur", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -151,26 +149,26 @@ object fieldMod {
       
       @scala.inline
       def setOnChange(
-        value: (/* event */ js.UndefOr[ChangeEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnDragStart(value: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
+      def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
       @scala.inline
-      def setOnDrop(value: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
@@ -217,25 +215,24 @@ object fieldMod {
     }
   }
   
-  @js.native
   trait CommonFieldInputProps extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var onDragStart: EventHandler[DragEvent[_]] = js.native
+    var onDragStart: EventHandler[DragEvent[js.Any]]
     
-    var onDrop: EventHandler[DragEvent[_]] = js.native
+    var onDrop: EventHandler[DragEvent[js.Any]]
     
-    var onFocus: EventHandler[FocusEvent[_]] = js.native
+    var onFocus: EventHandler[FocusEvent[js.Any]]
   }
   object CommonFieldInputProps {
     
     @scala.inline
     def apply(
       name: String,
-      onDragStart: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
-      onDrop: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
-      onFocus: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit
+      onDragStart: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onDrop: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onFocus: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit
     ): CommonFieldInputProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus))
       __obj.asInstanceOf[CommonFieldInputProps]
@@ -248,33 +245,34 @@ object fieldMod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDragStart(value: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
+      def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setOnDrop(value: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setOnFocus(value: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
-  trait CommonFieldProps extends CommonFieldInputProps {
+  trait CommonFieldProps
+    extends StObject
+       with CommonFieldInputProps {
     
-    var onBlur: EventWithDataHandler[FocusEvent[_]] = js.native
+    var onBlur: EventWithDataHandler[FocusEvent[js.Any]]
     
-    var onChange: EventWithDataHandler[ChangeEvent[_]] = js.native
+    var onChange: EventWithDataHandler[ChangeEvent[js.Any]]
   }
   object CommonFieldProps {
     
     @scala.inline
     def apply(
       name: String,
-      onBlur: (/* event */ js.UndefOr[FocusEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onChange: (/* event */ js.UndefOr[ChangeEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onDragStart: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
-      onDrop: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
-      onFocus: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit
+      onBlur: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onChange: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onDragStart: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onDrop: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onFocus: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit
     ): CommonFieldProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = js.Any.fromFunction4(onBlur), onChange = js.Any.fromFunction4(onChange), onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus))
       __obj.asInstanceOf[CommonFieldProps]
@@ -285,12 +283,12 @@ object fieldMod {
       
       @scala.inline
       def setOnBlur(
-        value: (/* event */ js.UndefOr[FocusEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onBlur", js.Any.fromFunction4(value))
       
       @scala.inline
       def setOnChange(
-        value: (/* event */ js.UndefOr[ChangeEvent[_]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
     }
   }
@@ -315,11 +313,11 @@ object fieldMod {
   
   @js.native
   trait GenericField[P]
-    extends Component[BaseFieldProps[P] with P, js.Object, js.Any] {
+    extends Component[BaseFieldProps[P] & P, js.Object, js.Any] {
     
     var dirty: Boolean = js.native
     
-    def getRenderedComponent(): Component[WrappedFieldProps with P, js.Object, _] = js.native
+    def getRenderedComponent(): Component[WrappedFieldProps & P, js.Object, js.Any] = js.native
     
     var name: String = js.native
     
@@ -348,27 +346,28 @@ object fieldMod {
     js.Any
   ]
   
-  @js.native
-  trait WrappedFieldInputProps extends CommonFieldInputProps {
+  trait WrappedFieldInputProps
+    extends StObject
+       with CommonFieldInputProps {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var onBlur: EventOrValueHandler[FocusEvent[_]] = js.native
+    var onBlur: EventOrValueHandler[FocusEvent[js.Any]]
     
-    var onChange: EventOrValueHandler[ChangeEvent[_]] = js.native
+    var onChange: EventOrValueHandler[ChangeEvent[js.Any]]
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object WrappedFieldInputProps {
     
     @scala.inline
     def apply(
       name: String,
-      onBlur: EventOrValueHandler[FocusEvent[_]],
-      onChange: EventOrValueHandler[ChangeEvent[_]],
-      onDragStart: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
-      onDrop: (DragEvent[_], /* name */ js.UndefOr[String]) => Unit,
-      onFocus: (FocusEvent[_], /* name */ js.UndefOr[String]) => Unit,
+      onBlur: EventOrValueHandler[FocusEvent[js.Any]],
+      onChange: EventOrValueHandler[ChangeEvent[js.Any]],
+      onDragStart: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onDrop: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
+      onFocus: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
       value: js.Any
     ): WrappedFieldInputProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = onBlur.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus), value = value.asInstanceOf[js.Any])
@@ -385,50 +384,49 @@ object fieldMod {
       def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: EventOrValueHandler[FocusEvent[_]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      def setOnBlur(value: EventOrValueHandler[FocusEvent[js.Any]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnChange(value: EventOrValueHandler[ChangeEvent[_]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      def setOnChange(value: EventOrValueHandler[ChangeEvent[js.Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait WrappedFieldMetaProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var asyncValidating: Boolean = js.native
+    var asyncValidating: Boolean
     
-    var autofilled: Boolean = js.native
+    var autofilled: Boolean
     
-    var dirty: Boolean = js.native
+    var dirty: Boolean
     
-    var dispatch: Dispatch[_] = js.native
+    var dispatch: Dispatch[js.Any]
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var form: String = js.native
+    var form: String
     
-    var initial: js.Any = js.native
+    var initial: js.Any
     
-    var invalid: Boolean = js.native
+    var invalid: Boolean
     
-    var pristine: Boolean = js.native
+    var pristine: Boolean
     
-    var submitFailed: Boolean = js.native
+    var submitFailed: Boolean
     
-    var submitting: Boolean = js.native
+    var submitting: Boolean
     
-    var touched: Boolean = js.native
+    var touched: Boolean
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
-    var visited: Boolean = js.native
+    var visited: Boolean
     
-    var warning: js.UndefOr[js.Any] = js.native
+    var warning: js.UndefOr[js.Any] = js.undefined
   }
   object WrappedFieldMetaProps {
     
@@ -437,7 +435,7 @@ object fieldMod {
       asyncValidating: Boolean,
       autofilled: Boolean,
       dirty: Boolean,
-      dispatch: _ => _,
+      dispatch: js.Any => js.Any,
       form: String,
       initial: js.Any,
       invalid: Boolean,
@@ -471,7 +469,7 @@ object fieldMod {
       def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDispatch(value: _ => _): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       @scala.inline
       def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
@@ -514,12 +512,11 @@ object fieldMod {
     }
   }
   
-  @js.native
   trait WrappedFieldProps extends StObject {
     
-    var input: WrappedFieldInputProps = js.native
+    var input: WrappedFieldInputProps
     
-    var meta: WrappedFieldMetaProps = js.native
+    var meta: WrappedFieldMetaProps
   }
   object WrappedFieldProps {
     

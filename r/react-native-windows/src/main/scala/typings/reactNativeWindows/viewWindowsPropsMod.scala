@@ -4,34 +4,33 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeWindows.keyboardExtPropsMod.IKeyboardProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewWindowsPropsMod {
   
-  @js.native
   trait IViewWindowsProps
-    extends ViewProps
-       with IKeyboardProps {
+    extends StObject
+       with IKeyboardProps
+       with ViewProps {
     
     /** @Deprecated Use focusable instead.*/
-    var acceptsKeyboardFocus: js.UndefOr[Boolean] = js.native
+    var acceptsKeyboardFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates to accessibility services that the UI Component is within a set and has the given numbered position.
       *
       * See https://github.com/ReactWindows/discussions-and-proposals/blob/harinik-accessibility/proposals/0000-accessibilityapis-lists.md
       */
-    var accessibilityPosInSet: js.UndefOr[Double] = js.native
+    var accessibilityPosInSet: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates to accessibility services that the UI Component is within a set with the given size.
       *
       * See https://github.com/ReactWindows/discussions-and-proposals/blob/harinik-accessibility/proposals/0000-accessibilityapis-lists.md
       */
-    var accessibilitySetSize: js.UndefOr[Double] = js.native
+    var accessibilitySetSize: js.UndefOr[Double] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
   }
   object IViewWindowsProps {
     

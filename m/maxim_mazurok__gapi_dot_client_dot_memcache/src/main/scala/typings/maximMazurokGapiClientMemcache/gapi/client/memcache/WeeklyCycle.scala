@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeeklyCycle extends StObject {
   
   /** User can specify multiple windows in a week. Minimum of 1 window. */
-  var schedule: js.UndefOr[js.Array[Schedule]] = js.native
+  var schedule: js.UndefOr[js.Array[Schedule]] = js.undefined
 }
 object WeeklyCycle {
   

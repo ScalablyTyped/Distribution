@@ -13,7 +13,6 @@ import typings.std.Partial
 import typings.std.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -29,7 +28,7 @@ object anon {
     def apply(
       name: push,
       args: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ js.Any
         ]
     ): js.Promise[Unit] = js.native
     def apply(
@@ -38,62 +37,61 @@ object anon {
   }
   
   /* Inlined std.Partial<std.MessageEvent<any>> */
-  @js.native
   trait PartialMessageEventany extends StObject {
     
-    var AT_TARGET: js.UndefOr[Double] = js.native
+    var AT_TARGET: js.UndefOr[Double] = js.undefined
     
-    var BUBBLING_PHASE: js.UndefOr[Double] = js.native
+    var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
     
-    var CAPTURING_PHASE: js.UndefOr[Double] = js.native
+    var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
     
-    var NONE: js.UndefOr[Double] = js.native
+    var NONE: js.UndefOr[Double] = js.undefined
     
-    var bubbles: js.UndefOr[Boolean] = js.native
+    var bubbles: js.UndefOr[Boolean] = js.undefined
     
-    var cancelBubble: js.UndefOr[Boolean] = js.native
+    var cancelBubble: js.UndefOr[Boolean] = js.undefined
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
-    var composed: js.UndefOr[Boolean] = js.native
+    var composed: js.UndefOr[Boolean] = js.undefined
     
-    var composedPath: js.UndefOr[js.Function0[js.Array[EventTarget]]] = js.native
+    var composedPath: js.UndefOr[js.Function0[js.Array[EventTarget]]] = js.undefined
     
-    var currentTarget: js.UndefOr[EventTarget | Null] = js.native
+    var currentTarget: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var defaultPrevented: js.UndefOr[Boolean] = js.native
+    var defaultPrevented: js.UndefOr[Boolean] = js.undefined
     
-    var eventPhase: js.UndefOr[Double] = js.native
+    var eventPhase: js.UndefOr[Double] = js.undefined
     
-    var initEvent: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.native
+    var initEvent: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.undefined
     
-    var isTrusted: js.UndefOr[Boolean] = js.native
+    var isTrusted: js.UndefOr[Boolean] = js.undefined
     
-    var lastEventId: js.UndefOr[String] = js.native
+    var lastEventId: js.UndefOr[String] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var ports: js.UndefOr[js.Array[MessagePort]] = js.native
+    var ports: js.UndefOr[js.Array[MessagePort]] = js.undefined
     
-    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.native
+    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var returnValue: js.UndefOr[Boolean] = js.native
+    var returnValue: js.UndefOr[Boolean] = js.undefined
     
-    var source: js.UndefOr[MessageEventSource | Null] = js.native
+    var source: js.UndefOr[MessageEventSource | Null] = js.undefined
     
-    var srcElement: js.UndefOr[EventTarget | Null] = js.native
+    var srcElement: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var target: js.UndefOr[EventTarget | Null] = js.native
+    var target: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var timeStamp: js.UndefOr[Double] = js.native
+    var timeStamp: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PartialMessageEventany {
     

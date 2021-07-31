@@ -6,7 +6,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,63 +61,62 @@ object mod {
     }
   }
   
-  @js.native
   trait TabNavigatorItemProps extends StObject {
     
     /**
       * Allow font scaling for title
       */
-    var allowFontScaling: js.UndefOr[Boolean] = js.native
+    var allowFontScaling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text for Item badge
       */
-    var badgeText: js.UndefOr[String | Double] = js.native
+    var badgeText: js.UndefOr[String | Double] = js.undefined
     
     /**
       * onPress method for Item
       */
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Returns Item badge
       */
-    var renderBadge: js.UndefOr[js.Function0[Element]] = js.native
+    var renderBadge: js.UndefOr[js.Function0[Element]] = js.undefined
     
     /**
       * Returns Item icon
       */
-    var renderIcon: js.UndefOr[js.Function0[Element]] = js.native
+    var renderIcon: js.UndefOr[js.Function0[Element]] = js.undefined
     
     /**
       * Returns selected Item icon
       */
-    var renderSelectedIcon: js.UndefOr[js.Function0[Element]] = js.native
+    var renderSelectedIcon: js.UndefOr[js.Function0[Element]] = js.undefined
     
     /**
       * Return whether the item is selected
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Styling for selected Item title
       */
-    var selectedTitleStyle: js.UndefOr[TextStyle] = js.native
+    var selectedTitleStyle: js.UndefOr[TextStyle] = js.undefined
     
     /**
       * Styling for tab
       */
-    var tabStyle: js.UndefOr[ViewStyle] = js.native
+    var tabStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Item title
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * Styling for Item title
       */
-    var titleStyle: js.UndefOr[TextStyle] = js.native
+    var titleStyle: js.UndefOr[TextStyle] = js.undefined
   }
   object TabNavigatorItemProps {
     
@@ -199,7 +197,6 @@ object mod {
     }
   }
   
-  @js.native
   trait TabNavigatorProps extends StObject {
     
     /**
@@ -207,22 +204,22 @@ object mod {
       *
       * @default false
       */
-    var hidesTabTouch: js.UndefOr[Boolean] = js.native
+    var hidesTabTouch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Define for rendered scene
       */
-    var sceneStyle: js.UndefOr[ViewStyle] = js.native
+    var sceneStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Define shadow style for tabBar
       */
-    var tabBarShadowStyle: js.UndefOr[ViewStyle] = js.native
+    var tabBarShadowStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Define style for TabBar
       */
-    var tabBarStyle: js.UndefOr[ViewStyle] = js.native
+    var tabBarStyle: js.UndefOr[ViewStyle] = js.undefined
   }
   object TabNavigatorProps {
     

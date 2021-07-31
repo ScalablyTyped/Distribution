@@ -2,39 +2,38 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckboxProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
   
   /**
     * Whether the checkbox is checked or not.
     */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text to display next to the check box.
     */
-  var children: js.UndefOr[String] = js.native
+  var children: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the checkbox can be used.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Called when the checkbox is clicked. The current checkbox state is passed as an argument.
     */
-  var onToggle: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+  var onToggle: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
   
   /**
     * Whether the checkbox can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object CheckboxProps {
   

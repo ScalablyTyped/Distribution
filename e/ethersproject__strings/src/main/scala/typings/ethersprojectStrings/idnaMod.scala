@@ -2,24 +2,23 @@ package typings.ethersprojectStrings
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idnaMod {
   
-  @JSImport("@ethersproject/strings/lib/idna", "nameprep")
+  @JSImport("@ethersproject/strings/lib/idna", JSImport.Namespace)
   @js.native
-  def nameprep(value: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/strings/lib/idna", "_nameprepTableA1")
-  @js.native
-  def nameprepTableA1(codepoint: Double): Boolean = js.native
+  @scala.inline
+  def nameprep(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nameprep")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/strings/lib/idna", "_nameprepTableB2")
-  @js.native
-  def nameprepTableB2(codepoint: Double): js.Array[Double] = js.native
+  @scala.inline
+  def nameprepTableA1(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableA1")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ethersproject/strings/lib/idna", "_nameprepTableC")
-  @js.native
-  def nameprepTableC(codepoint: Double): Boolean = js.native
+  @scala.inline
+  def nameprepTableB2(codepoint: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableB2")(codepoint.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def nameprepTableC(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableC")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

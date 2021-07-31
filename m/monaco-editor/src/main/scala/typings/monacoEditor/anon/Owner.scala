@@ -3,17 +3,15 @@ package typings.monacoEditor.anon
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Owner extends StObject {
   
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
-  var resource: js.UndefOr[Uri] = js.native
+  var resource: js.UndefOr[Uri] = js.undefined
   
-  var take: js.UndefOr[Double] = js.native
+  var take: js.UndefOr[Double] = js.undefined
 }
 object Owner {
   

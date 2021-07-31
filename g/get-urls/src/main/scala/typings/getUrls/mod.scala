@@ -3,7 +3,6 @@ package typings.getUrls
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,35 +19,37 @@ object mod {
   //=> Set {'http://sindresorhus.com', 'http://yeoman.io'}
   ```
   */
-  @JSImport("get-urls", JSImport.Namespace)
-  @js.native
-  def apply(text: String): Set[String] = js.native
-  @JSImport("get-urls", JSImport.Namespace)
-  @js.native
-  def apply(text: String, options: Options): Set[String] = js.native
+  @scala.inline
+  def apply(text: String): Set[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Set[String]]
+  @scala.inline
+  def apply(text: String, options: Options): Set[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Set[String]]
   
+  @JSImport("get-urls", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options
-    extends typings.normalizeUrl.mod.Options {
+    extends StObject
+       with typings.normalizeUrl.mod.Options {
     
     /**
     		Exclude URLs that match URLs in the given array.
     		@default []
     		*/
-    val exclude: js.UndefOr[js.Array[String]] = js.native
+    val exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		Extract URLs that appear as query parameters in the found URLs.
     		@default false
     		*/
-    val extractFromQueryString: js.UndefOr[Boolean] = js.native
+    val extractFromQueryString: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Require URLs to have a scheme or leading `www.` to be considered an URL. When `false`, matches against a list of valid TLDs, so it will match URLs like `unicorn.education`.
     		Does not affect URLs in query parameters if using the `extractFromQueryString` option.
     		@default true
     		*/
-    val requireSchemeOrWww: js.UndefOr[Boolean] = js.native
+    val requireSchemeOrWww: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

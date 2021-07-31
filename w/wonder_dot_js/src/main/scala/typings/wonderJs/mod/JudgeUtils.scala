@@ -1,29 +1,49 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "JudgeUtils")
 @js.native
 class JudgeUtils ()
   extends typings.wonderJs.judgeUtilsMod.JudgeUtils
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "JudgeUtils")
-@js.native
-object JudgeUtils extends js.Object {
-  def isClass(objInstance: js.Any, className: String): Boolean = js.native
+object JudgeUtils {
+  
+  @JSImport("wonder.js/dist/es2015", "JudgeUtils")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isClass(objInstance: js.Any, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClass")(objInstance.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
   def isCollection(
     list: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ js.Any
-  ): Boolean = js.native
-  def isComponenet(component: typings.wonderJs.componentMod.Component): Boolean = js.native
-  def isDom(obj: js.Any): Boolean = js.native
-  def isEqual(target1: js.Any, target2: js.Any): Boolean = js.native
-  def isFloatArray(data: js.Any): Boolean = js.native
-  def isInterface(target: js.Any, memberOfInterface: String): Boolean = js.native
-  def isPowerOfTwo(value: Double): Boolean = js.native
-  def isSelf(self: typings.wonderJs.entityMod.Entity, entityObject: typings.wonderJs.entityMod.Entity): Boolean = js.native
-  def isView(obj: js.Any): Boolean = js.native
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(list.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isComponenet(component: typings.wonderJs.componentMod.Component): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComponenet")(component.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isDom(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDom")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEqual(target1: js.Any, target2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(target1.asInstanceOf[js.Any], target2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFloatArray(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFloatArray")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isInterface(target: js.Any, memberOfInterface: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInterface")(target.asInstanceOf[js.Any], memberOfInterface.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPowerOfTwo(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSelf(self: typings.wonderJs.entityMod.Entity, entityObject: typings.wonderJs.entityMod.Entity): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSelf")(self.asInstanceOf[js.Any], entityObject.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isView(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isView")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the visual feedback settings for pointer input. */
-@js.native
 trait PointerVisualizationSettings extends StObject {
   
   /** Gets or sets a value that indicates whether visual feedback is enabled for pen/stylus input when the barrel button is pressed. */
-  var isBarrelButtonFeedbackEnabled: Boolean = js.native
+  var isBarrelButtonFeedbackEnabled: Boolean
   
   /** Gets or sets a value that indicates whether visual feedback is enabled when a pointer contact is detected. */
-  var isContactFeedbackEnabled: Boolean = js.native
+  var isContactFeedbackEnabled: Boolean
 }
 object PointerVisualizationSettings {
   

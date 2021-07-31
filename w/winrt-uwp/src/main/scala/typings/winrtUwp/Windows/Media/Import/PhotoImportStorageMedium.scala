@@ -2,36 +2,34 @@ package typings.winrtUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a storage medium exposed by a photo import source device. */
-@js.native
 trait PhotoImportStorageMedium extends StObject {
   
   /** Gets the available space on the storage medium, in bytes. */
-  var availableSpaceInBytes: Double = js.native
+  var availableSpaceInBytes: Double
   
   /** Gets the capacity of the storage media, in bytes. */
-  var capacityInBytes: Double = js.native
+  var capacityInBytes: Double
   
   /** Gets a description of the storage medium. */
-  var description: String = js.native
+  var description: String
   
   /** Gets the name of the storage medium. */
-  var name: String = js.native
+  var name: String
   
   /** Refreshes the information about the storage medium. */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
   
   /** Gets the serial number of the storage medium. */
-  var serialNumber: String = js.native
+  var serialNumber: String
   
   /** Gets the type of the storage medium. */
-  var storageMediumType: PhotoImportStorageMediumType = js.native
+  var storageMediumType: PhotoImportStorageMediumType
   
   /** Gets a value indicating the access modes supported by the storage medium. */
-  var supportedAccessMode: PhotoImportAccessMode = js.native
+  var supportedAccessMode: PhotoImportAccessMode
 }
 object PhotoImportStorageMedium {
   

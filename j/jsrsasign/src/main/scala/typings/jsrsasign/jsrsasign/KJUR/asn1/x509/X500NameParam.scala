@@ -2,17 +2,15 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X500NameParam extends StObject {
   
-  var C: String = js.native
+  var C: String
   
-  var CN: String = js.native
+  var CN: String
   
-  var O: String = js.native
+  var O: String
 }
 object X500NameParam {
   

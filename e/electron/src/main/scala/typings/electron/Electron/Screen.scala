@@ -6,11 +6,12 @@ import typings.electron.electronStrings.`display-removed`
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Screen extends EventEmitter {
+trait Screen
+  extends StObject
+     with EventEmitter {
   
   @JSName("addListener")
   def addListener_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native

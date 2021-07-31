@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClusterOperationResponse extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait DescribeClusterOperationResponse extends StObject {
     Cluster operation information
     
     */
-  var ClusterOperationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ClusterOperationInfo] = js.native
+  var ClusterOperationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ClusterOperationInfo] = js.undefined
 }
 object DescribeClusterOperationResponse {
   

@@ -3,61 +3,61 @@ package typings.senchaTouch.Ext.draw
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILimitedCache extends IBase {
+trait ILimitedCache
+  extends StObject
+     with IBase {
   
   /** [Method] Clear all the objects  */
-  var clear: js.UndefOr[js.Function0[Unit]] = js.native
+  var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var feeder: js.UndefOr[js.Any] = js.native
+  var feeder: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Get a cached object
     * @param id String
     * @param args Mixed... Arguments appended to feeder.
     * @returns Object
     */
-  var get: js.UndefOr[js.Function2[/* id */ String, /* repeated */ js.Any, _]] = js.native
+  var get: js.UndefOr[js.Function2[/* id */ String, /* repeated */ js.Any, js.Any]] = js.undefined
   
   /** [Method] Returns the value of feeder
     * @returns Function
     */
-  var getFeeder: js.UndefOr[js.Function0[_]] = js.native
+  var getFeeder: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of limit
     * @returns Number
     */
-  var getLimit: js.UndefOr[js.Function0[Double]] = js.native
+  var getLimit: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[_]] = js.native
+  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Number) */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Sets the value of feeder
     * @param feeder Function The new value.
     * @returns Number
     */
-  var setFeeder: js.UndefOr[js.Function1[/* feeder */ js.UndefOr[js.Any], Double]] = js.native
+  var setFeeder: js.UndefOr[js.Function1[/* feeder */ js.UndefOr[js.Any], Double]] = js.undefined
   
   /** [Method] Sets the value of limit
     * @param limit Number The new value.
     */
-  var setLimit: js.UndefOr[js.Function1[/* limit */ js.UndefOr[Double], Unit]] = js.native
+  var setLimit: js.UndefOr[js.Function1[/* limit */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object ILimitedCache {
   
@@ -83,10 +83,10 @@ object ILimitedCache {
     def setFeederUndefined: Self = StObject.set(x, "feeder", js.undefined)
     
     @scala.inline
-    def setGet(value: (/* id */ String, /* repeated */ js.Any) => _): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    def setGet(value: (/* id */ String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFeeder(value: () => _): Self = StObject.set(x, "getFeeder", js.Any.fromFunction0(value))
+    def setGetFeeder(value: () => js.Any): Self = StObject.set(x, "getFeeder", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetFeederUndefined: Self = StObject.set(x, "getFeeder", js.undefined)
@@ -98,7 +98,7 @@ object ILimitedCache {
     def setGetLimitUndefined: Self = StObject.set(x, "getLimit", js.undefined)
     
     @scala.inline
-    def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)

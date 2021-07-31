@@ -2,21 +2,19 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONFormatter extends StObject {
   
-  def get(): js.Object = js.native
+  def get(): js.Object
   
-  def getText(): String = js.native
+  def getText(): String
   
-  def onError(err: String): Unit = js.native
+  def onError(err: String): Unit
   
-  def set(json: js.Object): Unit = js.native
+  def set(json: js.Object): Unit
   
-  def setText(jsonString: String): Unit = js.native
+  def setText(jsonString: String): Unit
 }
 object JSONFormatter {
   

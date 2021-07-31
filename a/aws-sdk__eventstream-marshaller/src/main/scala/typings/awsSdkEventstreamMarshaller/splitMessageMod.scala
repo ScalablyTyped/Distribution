@@ -5,21 +5,22 @@ import typings.std.DataView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitMessageMod {
   
-  @JSImport("@aws-sdk/eventstream-marshaller/dist/cjs/splitMessage", "splitMessage")
+  @JSImport("@aws-sdk/eventstream-marshaller/dist/cjs/splitMessage", JSImport.Namespace)
   @js.native
-  def splitMessage(hasByteLengthByteOffsetBuffer: ArrayBufferView): MessageParts = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def splitMessage(hasByteLengthByteOffsetBuffer: ArrayBufferView): MessageParts = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMessage")(hasByteLengthByteOffsetBuffer.asInstanceOf[js.Any]).asInstanceOf[MessageParts]
+  
   trait MessageParts extends StObject {
     
-    var body: Uint8Array = js.native
+    var body: Uint8Array
     
-    var headers: DataView = js.native
+    var headers: DataView
   }
   object MessageParts {
     

@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientStorage.gapi.client.storage
 import typings.maximMazurokGapiClientStorage.anon.ProjectNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectAccessControl extends StObject {
   
   /** The name of the bucket. */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /** The domain associated with the entity, if any. */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** The email address associated with the entity, if any. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The entity holding the permission, in one of the following forms:
@@ -32,34 +30,34 @@ trait ObjectAccessControl extends StObject {
     * - The group example@googlegroups.com would be group-example@googlegroups.com.
     * - To refer to all members of the Google Apps for Business domain example.com, the entity would be domain-example.com.
     */
-  var entity: js.UndefOr[String] = js.native
+  var entity: js.UndefOr[String] = js.undefined
   
   /** The ID for the entity, if any. */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /** HTTP 1.1 Entity tag for the access-control entry. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The content generation of the object, if applied to an object. */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /** The ID of the access-control entry. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of item this is. For object access control entries, this is always storage#objectAccessControl. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The name of the object, if applied to an object. */
-  var `object`: js.UndefOr[String] = js.native
+  var `object`: js.UndefOr[String] = js.undefined
   
   /** The project team associated with the entity, if any. */
-  var projectTeam: js.UndefOr[ProjectNumber] = js.native
+  var projectTeam: js.UndefOr[ProjectNumber] = js.undefined
   
   /** The access permission for the entity. */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /** The link to this access-control entry. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object ObjectAccessControl {
   

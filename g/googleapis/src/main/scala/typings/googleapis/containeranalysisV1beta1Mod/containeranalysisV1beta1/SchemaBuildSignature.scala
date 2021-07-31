@@ -2,13 +2,11 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message encapsulating the signature of the verified build.
   */
-@js.native
 trait SchemaBuildSignature extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaBuildSignature extends StObject {
     * the CN for a cert), or a reference to an external key (such as a
     * reference to a key in Cloud Key Management Service).
     */
-  var keyId: js.UndefOr[String] = js.native
+  var keyId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the key, either stored in `public_key` or referenced in
     * `key_id`.
     */
-  var keyType: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.undefined
   
   /**
     * Public key of the builder which can be used to verify that the related
@@ -37,13 +35,13 @@ trait SchemaBuildSignature extends StObject {
     * representation in signed.bin. OpenSSL can then verify the signature:
     * `openssl sha256 -verify public.pem -signature signature.bin signed.bin`
     */
-  var publicKey: js.UndefOr[String] = js.native
+  var publicKey: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Signature of the related `BuildProvenance`. In JSON, this is
     * base-64 encoded.
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildSignature {
   

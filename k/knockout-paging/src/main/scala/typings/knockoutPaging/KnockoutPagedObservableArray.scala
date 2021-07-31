@@ -2,11 +2,12 @@ package typings.knockoutPaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutPagedObservableArray[T] extends KnockoutObservableArray[T] {
+trait KnockoutPagedObservableArray[T]
+  extends StObject
+     with KnockoutObservableArray[T] {
   
   def firstItemOnPage(): Double = js.native
   def firstItemOnPage(value: Double): Unit = js.native

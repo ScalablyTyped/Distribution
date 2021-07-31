@@ -2,17 +2,15 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGConditionalProcessingAttributes extends StObject {
   
-  var requiredExtensions: js.UndefOr[Boolean] = js.native
+  var requiredExtensions: js.UndefOr[Boolean] = js.undefined
   
-  var requiredFeatures: js.UndefOr[String] = js.native
+  var requiredFeatures: js.UndefOr[String] = js.undefined
   
-  var systemLanguage: js.UndefOr[String] = js.native
+  var systemLanguage: js.UndefOr[String] = js.undefined
 }
 object SVGConditionalProcessingAttributes {
   

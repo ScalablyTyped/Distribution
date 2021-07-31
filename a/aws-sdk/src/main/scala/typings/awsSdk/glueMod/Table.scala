@@ -2,106 +2,104 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
   /**
     * The ID of the Data Catalog in which the table resides.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The time when the table definition was created in the Data Catalog.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.native
+  var CreateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The person or entity who created the table.
     */
-  var CreatedBy: js.UndefOr[NameString] = js.native
+  var CreatedBy: js.UndefOr[NameString] = js.undefined
   
   /**
     * The name of the database where the table metadata resides. For Hive compatibility, this must be all lowercase.
     */
-  var DatabaseName: js.UndefOr[NameString] = js.native
+  var DatabaseName: js.UndefOr[NameString] = js.undefined
   
   /**
     * A description of the table.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * Indicates whether the table has been registered with AWS Lake Formation.
     */
-  var IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.native
+  var IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The last time that the table was accessed. This is usually taken from HDFS, and might not be reliable.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.native
+  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time that column statistics were computed for this table.
     */
-  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.native
+  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The table name. For Hive compatibility, this must be entirely lowercase.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The owner of the table.
     */
-  var Owner: js.UndefOr[NameString] = js.native
+  var Owner: js.UndefOr[NameString] = js.undefined
   
   /**
     * These key-value pairs define properties associated with the table.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. When you create a table used by Amazon Athena, and you do not specify any partitionKeys, you must at least set the value of partitionKeys to an empty list. For example:  "PartitionKeys": [] 
     */
-  var PartitionKeys: js.UndefOr[ColumnList] = js.native
+  var PartitionKeys: js.UndefOr[ColumnList] = js.undefined
   
   /**
     * The retention time for this table.
     */
-  var Retention: js.UndefOr[NonNegativeInteger] = js.native
+  var Retention: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     * A storage descriptor containing information about the physical storage of this table.
     */
-  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.native
+  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.undefined
   
   /**
     * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
     */
-  var TableType: js.UndefOr[TableTypeString] = js.native
+  var TableType: js.UndefOr[TableTypeString] = js.undefined
   
   /**
     * A TableIdentifier structure that describes a target table for resource linking.
     */
-  var TargetTable: js.UndefOr[TableIdentifier] = js.native
+  var TargetTable: js.UndefOr[TableIdentifier] = js.undefined
   
   /**
     * The last time that the table was updated.
     */
-  var UpdateTime: js.UndefOr[Timestamp] = js.native
+  var UpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If the table is a view, the expanded text of the view; otherwise null.
     */
-  var ViewExpandedText: js.UndefOr[ViewTextString] = js.native
+  var ViewExpandedText: js.UndefOr[ViewTextString] = js.undefined
   
   /**
     * If the table is a view, the original text of the view; otherwise null.
     */
-  var ViewOriginalText: js.UndefOr[ViewTextString] = js.native
+  var ViewOriginalText: js.UndefOr[ViewTextString] = js.undefined
 }
 object Table {
   

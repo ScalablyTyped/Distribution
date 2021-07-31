@@ -3,31 +3,29 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a separator.
   */
-@js.native
 trait SeparatorOptions extends StObject {
   
   /**
     * Gets or sets the text of the separator.
     */
-  var line: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the type of the choice.
     */
-  var `type`: separator = js.native
+  var `type`: separator
 }
 object SeparatorOptions {
   
   @scala.inline
-  def apply(`type`: separator): SeparatorOptions = {
+  def apply(): SeparatorOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("separator")
     __obj.asInstanceOf[SeparatorOptions]
   }
   

@@ -3,7 +3,6 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.useFormMod.ReducerAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,7 +17,7 @@ trait InternalHooks extends StObject {
   
   def registerField(entity: FieldEntity): js.Function0[Unit] = js.native
   
-  def setCallbacks(callbacks: Callbacks[_]): Unit = js.native
+  def setCallbacks(callbacks: Callbacks[js.Any]): Unit = js.native
   
   def setInitialValues(values: Store, init: Boolean): Unit = js.native
   

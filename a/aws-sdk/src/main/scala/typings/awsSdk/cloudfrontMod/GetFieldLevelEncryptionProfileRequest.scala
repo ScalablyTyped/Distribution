@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFieldLevelEncryptionProfileRequest extends StObject {
   
   /**
     * Get the ID for the field-level encryption profile information.
     */
-  var Id: String = js.native
+  var Id: String
 }
 object GetFieldLevelEncryptionProfileRequest {
   

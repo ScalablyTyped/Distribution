@@ -3,11 +3,12 @@ package typings.angular.mod
 import typings.angular.anon.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILocationProvider extends IServiceProvider {
+trait ILocationProvider
+  extends StObject
+     with IServiceProvider {
   
   def hashPrefix(): String = js.native
   def hashPrefix(prefix: String): ILocationProvider = js.native

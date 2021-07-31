@@ -2,27 +2,25 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHashTable[T] extends StObject {
   
-  def add(key: String, data: T): Boolean = js.native
+  def add(key: String, data: T): Boolean
   
-  def addOrUpdate(key: String, data: T): Boolean = js.native
+  def addOrUpdate(key: String, data: T): Boolean
   
-  def count(): Double = js.native
+  def count(): Double
   
-  def every(fn: js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], context: js.Any): Boolean = js.native
+  def every(fn: js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], context: js.Any): Boolean
   
-  def getAllKeys(): js.Array[String] = js.native
+  def getAllKeys(): js.Array[String]
   
-  def lookup(key: String): T = js.native
+  def lookup(key: String): T
   
-  def map(fn: js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], context: js.Any): Unit = js.native
+  def map(fn: js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], context: js.Any): Unit
   
-  def some(fn: js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], context: js.Any): Boolean = js.native
+  def some(fn: js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], context: js.Any): Boolean
 }
 object IHashTable {
   
@@ -42,7 +40,7 @@ object IHashTable {
   }
   
   @scala.inline
-  implicit class IHashTableMutableBuilder[Self <: IHashTable[_], T] (val x: Self with IHashTable[T]) extends AnyVal {
+  implicit class IHashTableMutableBuilder[Self <: IHashTable[?], T] (val x: Self & IHashTable[T]) extends AnyVal {
     
     @scala.inline
     def setAdd(value: (String, T) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))

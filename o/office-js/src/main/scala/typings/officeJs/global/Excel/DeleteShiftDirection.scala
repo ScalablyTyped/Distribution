@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DeleteShiftDirection extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.DeleteShiftDirection with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.DeleteShiftDirection & String] = js.native
   
-  /* "Left" */ val left: typings.officeJs.Excel.DeleteShiftDirection.left with String = js.native
+  /* "Left" */ val left: typings.officeJs.Excel.DeleteShiftDirection.left & String = js.native
   
-  /* "Up" */ val up: typings.officeJs.Excel.DeleteShiftDirection.up with String = js.native
+  /* "Up" */ val up: typings.officeJs.Excel.DeleteShiftDirection.up & String = js.native
 }

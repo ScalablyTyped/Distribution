@@ -5,7 +5,6 @@ import typings.cloudeventsSdk.anon.Id
 import typings.cloudeventsSdk.cloudeventMod.CE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spec03Mod {
@@ -17,12 +16,13 @@ object spec03Mod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/v03/spec_0_3", JSImport.Namespace)
   @js.native
-  class ^ () extends Spec03
+  class ^ ()
+    extends StObject
+       with Spec03
   
-  @js.native
   trait CloudEvent extends StObject {
     
-    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent] = js.native
+    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]
   }
   object CloudEvent {
     

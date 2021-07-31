@@ -13,7 +13,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerMod extends Shortcut {
@@ -22,63 +21,62 @@ object drawerMod extends Shortcut {
   @js.native
   val default: FC[DrawerProps] = js.native
   
-  @js.native
   trait DrawerProps extends StObject {
     
-    var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var bodyStyle: js.UndefOr[CSSProperties] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var destroyOnClose: js.UndefOr[Boolean] = js.native
+    var destroyOnClose: js.UndefOr[Boolean] = js.undefined
     
     /** wrapper dom node style of header and body */
-    var drawerStyle: js.UndefOr[CSSProperties] = js.native
+    var drawerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
-    var footerStyle: js.UndefOr[CSSProperties] = js.native
+    var footerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.native
+    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
     
-    var handler: js.UndefOr[ReactNode] = js.native
+    var handler: js.UndefOr[ReactNode] = js.undefined
     
-    var headerStyle: js.UndefOr[CSSProperties] = js.native
+    var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskStyle: js.UndefOr[CSSProperties] = js.native
+    var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* e */ EventType, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* e */ EventType, Unit]] = js.undefined
     
-    var placement: js.UndefOr[placementType] = js.native
+    var placement: js.UndefOr[placementType] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var push: js.UndefOr[Boolean | PushState] = js.native
+    var push: js.UndefOr[Boolean | PushState] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object DrawerProps {
     
@@ -260,10 +258,9 @@ object drawerMod extends Shortcut {
   
   type EventType = KeyboardEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement | HTMLButtonElement, NativeMouseEvent])
   
-  @js.native
   trait IDrawerState extends StObject {
     
-    var push: js.UndefOr[Boolean] = js.native
+    var push: js.UndefOr[Boolean] = js.undefined
   }
   object IDrawerState {
     
@@ -284,10 +281,9 @@ object drawerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait PushState extends StObject {
     
-    var distance: String | Double = js.native
+    var distance: String | Double
   }
   object PushState {
     

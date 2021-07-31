@@ -2,19 +2,17 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPMLine extends StObject {
   
-  var fmt: js.UndefOr[String] = js.native
+  var fmt: js.UndefOr[String] = js.undefined
   
-  var kind: String = js.native
+  var kind: String
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var protocol: String = js.native
+  var protocol: String
 }
 object SDPMLine {
   

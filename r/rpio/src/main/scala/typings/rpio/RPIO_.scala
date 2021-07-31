@@ -13,14 +13,12 @@ import typings.rpio.rpioStrings.gpio
 import typings.rpio.rpioStrings.physical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RPIO_ {
   
   type CallbackFunction = js.Function1[/* pin */ Double, Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -33,7 +31,7 @@ object RPIO_ {
       * true: use /dev/gpiomem for non-root but GPIO-only access
       * false: use /dev/mem for full access but requires root
       */
-    var gpiomem: js.UndefOr[Boolean] = js.native
+    var gpiomem: js.UndefOr[Boolean] = js.undefined
     
     /**
       * There are two naming schemes when referring to GPIO pins:
@@ -48,7 +46,7 @@ object RPIO_ {
       * gpio: use the Broadcom GPIOxx naming
       * physical: use the physical P01-P40 header layou
       */
-    var mapping: js.UndefOr[gpio | physical] = js.native
+    var mapping: js.UndefOr[gpio | physical] = js.undefined
     
     /**
       * Mock mode is a dry-run environment where everything except pin access is performed. This is useful for testing scripts, and can also be used on systems which do not support GPIO at all.
@@ -57,7 +55,7 @@ object RPIO_ {
       */
     var mock: js.UndefOr[
         `raspi-b-r1` | `raspi-a` | `raspi-b` | `raspi-aPlussign` | `raspi-bPlussign` | `raspi-2` | `raspi-3` | `raspi-zero` | `raspi-zero-w`
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

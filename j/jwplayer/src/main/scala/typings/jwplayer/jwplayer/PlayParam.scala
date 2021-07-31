@@ -6,15 +6,13 @@ import typings.jwplayer.jwplayerStrings.buffering
 import typings.jwplayer.jwplayerStrings.playing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayParam extends StObject {
   
-  var oldstate: buffering | playing = js.native
+  var oldstate: buffering | playing
   
-  var viewable: `0` | `1` = js.native
+  var viewable: `0` | `1`
 }
 object PlayParam {
   

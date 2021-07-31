@@ -1,51 +1,48 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/object/EEventType", JSImport.Namespace)
-@js.native
-object eeventtypeMod extends js.Object {
-  @js.native
-  sealed trait EEventType extends js.Object
+object eeventtypeMod {
   
   @js.native
-  object EEventType extends js.Object {
-    @js.native
-    sealed trait CUSTOM extends EEventType
-    
-    @js.native
-    sealed trait KEYBOARD extends EEventType
-    
-    @js.native
-    sealed trait MOUSE extends EEventType
-    
-    @js.native
-    sealed trait POINT extends EEventType
-    
-    @js.native
-    sealed trait TOUCH extends EEventType
+  sealed trait EEventType extends StObject
+  @JSImport("wonder.js/dist/es2015/event/object/EEventType", "EEventType")
+  @js.native
+  object EEventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EEventType with Double] = js.native
-    /* 4 */ @js.native
-    object CUSTOM extends TopLevel[CUSTOM with Double]
+    def apply(value: Double): js.UndefOr[EEventType & Double] = js.native
     
-    /* 3 */ @js.native
-    object KEYBOARD extends TopLevel[KEYBOARD with Double]
+    @js.native
+    sealed trait CUSTOM
+      extends StObject
+         with EEventType
+    /* 4 */ val CUSTOM: typings.wonderJs.eeventtypeMod.EEventType.CUSTOM & Double = js.native
     
-    /* 0 */ @js.native
-    object MOUSE extends TopLevel[MOUSE with Double]
+    @js.native
+    sealed trait KEYBOARD
+      extends StObject
+         with EEventType
+    /* 3 */ val KEYBOARD: typings.wonderJs.eeventtypeMod.EEventType.KEYBOARD & Double = js.native
     
-    /* 2 */ @js.native
-    object POINT extends TopLevel[POINT with Double]
+    @js.native
+    sealed trait MOUSE
+      extends StObject
+         with EEventType
+    /* 0 */ val MOUSE: typings.wonderJs.eeventtypeMod.EEventType.MOUSE & Double = js.native
     
-    /* 1 */ @js.native
-    object TOUCH extends TopLevel[TOUCH with Double]
+    @js.native
+    sealed trait POINT
+      extends StObject
+         with EEventType
+    /* 2 */ val POINT: typings.wonderJs.eeventtypeMod.EEventType.POINT & Double = js.native
     
+    @js.native
+    sealed trait TOUCH
+      extends StObject
+         with EEventType
+    /* 1 */ val TOUCH: typings.wonderJs.eeventtypeMod.EEventType.TOUCH & Double = js.native
   }
-  
 }
-

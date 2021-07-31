@@ -2,21 +2,19 @@ package typings.rcFieldForm.interfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callbacks[Values] extends StObject {
   
   var onFieldsChange: js.UndefOr[
     js.Function2[/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onFinish: js.UndefOr[js.Function1[/* values */ Values, Unit]] = js.native
+  var onFinish: js.UndefOr[js.Function1[/* values */ Values, Unit]] = js.undefined
   
-  var onFinishFailed: js.UndefOr[js.Function1[/* errorInfo */ ValidateErrorEntity[Values], Unit]] = js.native
+  var onFinishFailed: js.UndefOr[js.Function1[/* errorInfo */ ValidateErrorEntity[Values], Unit]] = js.undefined
   
-  var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ js.Any, /* values */ Values, Unit]] = js.native
+  var onValuesChange: js.UndefOr[js.Function2[/* changedValues */ js.Any, /* values */ Values, Unit]] = js.undefined
 }
 object Callbacks {
   
@@ -27,7 +25,7 @@ object Callbacks {
   }
   
   @scala.inline
-  implicit class CallbacksMutableBuilder[Self <: Callbacks[_], Values] (val x: Self with Callbacks[Values]) extends AnyVal {
+  implicit class CallbacksMutableBuilder[Self <: Callbacks[?], Values] (val x: Self & Callbacks[Values]) extends AnyVal {
     
     @scala.inline
     def setOnFieldsChange(value: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Unit): Self = StObject.set(x, "onFieldsChange", js.Any.fromFunction2(value))

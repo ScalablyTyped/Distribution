@@ -2,82 +2,80 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnTunnel extends StObject {
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Detailed status message for the VPN tunnel. */
-  var detailedStatus: js.UndefOr[String] = js.native
+  var detailedStatus: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** IKE protocol version to use when establishing the VPN tunnel with the peer VPN gateway. Acceptable IKE versions are 1 or 2. The default version is 2. */
-  var ikeVersion: js.UndefOr[Double] = js.native
+  var ikeVersion: js.UndefOr[Double] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#vpnTunnel for VPN tunnels. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Local traffic selector to use when establishing the VPN tunnel with the peer VPN gateway. The value should be a CIDR formatted string, for example: 192.168.0.0/16. The ranges must
     * be disjoint. Only IPv4 is supported.
     */
-  var localTrafficSelector: js.UndefOr[js.Array[String]] = js.native
+  var localTrafficSelector: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a
     * dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the peer side external VPN gateway to which this VPN tunnel is connected. Provided by the client when the VPN tunnel is created. This field is exclusive with the field
     * peerGcpGateway.
     */
-  var peerExternalGateway: js.UndefOr[String] = js.native
+  var peerExternalGateway: js.UndefOr[String] = js.undefined
   
   /** The interface ID of the external VPN gateway to which this VPN tunnel is connected. Provided by the client when the VPN tunnel is created. */
-  var peerExternalGatewayInterface: js.UndefOr[Double] = js.native
+  var peerExternalGatewayInterface: js.UndefOr[Double] = js.undefined
   
   /**
     * URL of the peer side HA GCP VPN gateway to which this VPN tunnel is connected. Provided by the client when the VPN tunnel is created. This field can be used when creating highly
     * available VPN from VPC network to VPC network, the field is exclusive with the field peerExternalGateway. If provided, the VPN tunnel will automatically use the same
     * vpnGatewayInterface ID in the peer GCP VPN gateway.
     */
-  var peerGcpGateway: js.UndefOr[String] = js.native
+  var peerGcpGateway: js.UndefOr[String] = js.undefined
   
   /** IP address of the peer VPN gateway. Only IPv4 is supported. */
-  var peerIp: js.UndefOr[String] = js.native
+  var peerIp: js.UndefOr[String] = js.undefined
   
   /** [Output Only] URL of the region where the VPN tunnel resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Remote traffic selectors to use when establishing the VPN tunnel with the peer VPN gateway. The value should be a CIDR formatted string, for example: 192.168.0.0/16. The ranges
     * should be disjoint. Only IPv4 is supported.
     */
-  var remoteTrafficSelector: js.UndefOr[js.Array[String]] = js.native
+  var remoteTrafficSelector: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URL of the router resource to be used for dynamic routing. */
-  var router: js.UndefOr[String] = js.native
+  var router: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Shared secret used to set the secure session between the Cloud VPN gateway and the peer VPN gateway. */
-  var sharedSecret: js.UndefOr[String] = js.native
+  var sharedSecret: js.UndefOr[String] = js.undefined
   
   /** Hash of the shared secret. */
-  var sharedSecretHash: js.UndefOr[String] = js.native
+  var sharedSecretHash: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of the VPN tunnel, which can be one of the following:
@@ -98,19 +96,19 @@ trait VpnTunnel extends StObject {
     * - PEER_IDENTITY_MISMATCH: Peer identity does not match peer IP, probably behind NAT.
     * - TS_NARROWING_NOT_ALLOWED: Traffic selector narrowing not allowed for an HA-VPN tunnel.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** URL of the Target VPN gateway with which this VPN tunnel is associated. Provided by the client when the VPN tunnel is created. */
-  var targetVpnGateway: js.UndefOr[String] = js.native
+  var targetVpnGateway: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the VPN gateway with which this VPN tunnel is associated. Provided by the client when the VPN tunnel is created. This must be used (instead of target_vpn_gateway) if a High
     * Availability VPN gateway resource is created.
     */
-  var vpnGateway: js.UndefOr[String] = js.native
+  var vpnGateway: js.UndefOr[String] = js.undefined
   
   /** The interface ID of the VPN gateway with which this VPN tunnel is associated. */
-  var vpnGatewayInterface: js.UndefOr[Double] = js.native
+  var vpnGatewayInterface: js.UndefOr[Double] = js.undefined
 }
 object VpnTunnel {
   

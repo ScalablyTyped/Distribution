@@ -2,15 +2,13 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerDependency extends StObject {
   
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
 }
 object ContainerDependency {
   

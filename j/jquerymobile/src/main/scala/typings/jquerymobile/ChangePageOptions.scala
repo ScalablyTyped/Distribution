@@ -2,33 +2,31 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangePageOptions extends StObject {
   
-  var allowSamePageTransition: js.UndefOr[Boolean] = js.native
+  var allowSamePageTransition: js.UndefOr[Boolean] = js.undefined
   
-  var changeHash: js.UndefOr[Boolean] = js.native
+  var changeHash: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataUrl: js.UndefOr[String] = js.native
+  var dataUrl: js.UndefOr[String] = js.undefined
   
-  var pageContainer: js.UndefOr[JQuery] = js.native
+  var pageContainer: js.UndefOr[JQuery] = js.undefined
   
-  var reloadPage: js.UndefOr[Boolean] = js.native
+  var reloadPage: js.UndefOr[Boolean] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var showLoadMsg: js.UndefOr[Boolean] = js.native
+  var showLoadMsg: js.UndefOr[Boolean] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ChangePageOptions {
   

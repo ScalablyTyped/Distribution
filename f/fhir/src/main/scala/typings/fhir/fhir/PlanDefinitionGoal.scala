@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What the plan is trying to accomplish
   */
-@js.native
-trait PlanDefinitionGoal extends BackboneElement {
+trait PlanDefinitionGoal
+  extends StObject
+     with BackboneElement {
   
   /**
     * What does the goal address
     */
-  var addresses: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var addresses: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * E.g. Treatment, dietary, behavioral, etc
     */
-  var category: js.UndefOr[CodeableConcept] = js.native
+  var category: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Code or text describing the goal
     */
-  var description: CodeableConcept = js.native
+  var description: CodeableConcept
   
   /**
     * Supporting documentation for the goal
     */
-  var documentation: js.UndefOr[js.Array[RelatedArtifact]] = js.native
+  var documentation: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
   
   /**
     * high-priority | medium-priority | low-priority
     */
-  var priority: js.UndefOr[CodeableConcept] = js.native
+  var priority: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When goal pursuit begins
     */
-  var start: js.UndefOr[CodeableConcept] = js.native
+  var start: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Target outcome for the goal
     */
-  var target: js.UndefOr[js.Array[PlanDefinitionGoalTarget]] = js.native
+  var target: js.UndefOr[js.Array[PlanDefinitionGoalTarget]] = js.undefined
 }
 object PlanDefinitionGoal {
   

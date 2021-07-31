@@ -2,7 +2,6 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KVO extends StObject {
   
-  def addListener(eventName: js.Any, listener: js.Function0[_]): MapEventListener = js.native
+  def addListener(eventName: js.Any, listener: js.Function0[js.Any]): MapEventListener = js.native
   
-  def addListenerOnce(eventName: js.Any, listener: js.Function0[_]): MapEventListener = js.native
+  def addListenerOnce(eventName: js.Any, listener: js.Function0[js.Any]): MapEventListener = js.native
   
   def bindTo(key: String, target: KVO): Unit = js.native
   def bindTo(key: String, target: KVO, targetKey: String): Unit = js.native

@@ -3,7 +3,6 @@ package typings.vigourUa
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,26 +13,29 @@ object mod {
     * @param obj object to be merged to the output result
     * @returns object representing your user agent
     */
-  @JSImport("vigour-ua", JSImport.Namespace)
-  @js.native
-  def apply(_ua: String): UserAgent = js.native
+  @scala.inline
+  def apply(_ua: String): UserAgent = ^.asInstanceOf[js.Dynamic].apply(_ua.asInstanceOf[js.Any]).asInstanceOf[UserAgent]
   /**
     * Returns an object representing the user agent including data such as browser, device and platform
     * @param _ua the raw user agent string to be converted
     * @returns object representing your user agent
     */
+  @scala.inline
+  def apply[T /* <: js.Object */](_ua: String, obj: T): UserAgent & T = (^.asInstanceOf[js.Dynamic].apply(_ua.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[UserAgent & T]
+  
   @JSImport("vigour-ua", JSImport.Namespace)
   @js.native
-  def apply[T /* <: js.Object */](_ua: String, obj: T): UserAgent with T = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait UserAgent extends /* value */ StringDictionary[String | Double] {
+  trait UserAgent
+    extends StObject
+       with /* value */ StringDictionary[String | Double] {
     
-    var browser: String = js.native
+    var browser: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object UserAgent {
     

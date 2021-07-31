@@ -2,14 +2,12 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutTemplateSourcesDomElement * / any */ @js.native
-trait KnockstrapStringTemplate extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutTemplateSourcesDomElement * / any */ trait KnockstrapStringTemplate extends StObject {
   
-  var templateName: String = js.native
+  var templateName: String
 }
 object KnockstrapStringTemplate {
   

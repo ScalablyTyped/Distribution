@@ -9,7 +9,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileSystemMod {
@@ -44,7 +43,7 @@ object fileSystemMod {
       */
     def createFileSync(p: String, flag: FileFlag, mode: Double): File = js.native
     
-    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
     
@@ -214,7 +213,7 @@ object fileSystemMod {
       * @param path The path to the location that is being queried. Only
       *   useful for filesystems that support mount points.
       */
-    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     /**
       * **Supplemental**: Test whether or not the given path exists by checking with
@@ -469,24 +468,23 @@ object fileSystemMod {
     def writeFileSync(fname: String, data: Buffer, encoding: Null, flag: FileFlag, mode: Double): Unit = js.native
   }
   
-  @js.native
   trait FileSystemConstructor extends StObject {
     
     /**
       * **Core**: Creates a file system of this given type with the given
       * options.
       */
-    def Create(options: js.Object, cb: BFSCallback[FileSystem]): Unit = js.native
+    def Create(options: js.Object, cb: BFSCallback[FileSystem]): Unit
     
     /**
       * **Core**: Name to identify this particular file system.
       */
-    var Name: String = js.native
+    var Name: String
     
     /**
       * **Core**: Describes all of the options available for this file system.
       */
-    var Options: FileSystemOptions = js.native
+    var Options: FileSystemOptions
     
     /**
       * **Core**: Returns 'true' if this filesystem is available in the current
@@ -495,7 +493,7 @@ object fileSystemMod {
       *
       * Defaults to 'false', as the FileSystem base class isn't usable alone.
       */
-    def isAvailable(): Boolean = js.native
+    def isAvailable(): Boolean
   }
   object FileSystemConstructor {
     
@@ -527,16 +525,15 @@ object fileSystemMod {
     }
   }
   
-  @js.native
   trait FileSystemOption[T] extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String | js.Array[String] = js.native
+    var `type`: String | js.Array[String]
     
-    var validator: js.UndefOr[js.Function2[/* opt */ T, /* cb */ BFSOneArgCallback, Unit]] = js.native
+    var validator: js.UndefOr[js.Function2[/* opt */ T, /* cb */ BFSOneArgCallback, Unit]] = js.undefined
   }
   object FileSystemOption {
     
@@ -548,7 +545,7 @@ object fileSystemMod {
     }
     
     @scala.inline
-    implicit class FileSystemOptionMutableBuilder[Self <: FileSystemOption[_], T] (val x: Self with FileSystemOption[T]) extends AnyVal {
+    implicit class FileSystemOptionMutableBuilder[Self <: FileSystemOption[?], T] (val x: Self & FileSystemOption[T]) extends AnyVal {
       
       @scala.inline
       def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])

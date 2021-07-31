@@ -2,19 +2,17 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentChange[T] extends StObject {
   
-  val doc: QueryDocumentSnapshot[T] = js.native
+  val doc: QueryDocumentSnapshot[T]
   
-  val newIndex: Double = js.native
+  val newIndex: Double
   
-  val oldIndex: Double = js.native
+  val oldIndex: Double
   
-  val `type`: DocumentChangeType = js.native
+  val `type`: DocumentChangeType
 }
 object DocumentChange {
   
@@ -26,7 +24,7 @@ object DocumentChange {
   }
   
   @scala.inline
-  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange[_], T] (val x: Self with DocumentChange[T]) extends AnyVal {
+  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange[?], T] (val x: Self & DocumentChange[T]) extends AnyVal {
     
     @scala.inline
     def setDoc(value: QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])

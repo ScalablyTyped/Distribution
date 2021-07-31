@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * platform-specific file paths, or newsgroup names). The abbreviation algorithms will then take into account the structural information.
   * @see XStringWidth
   */
-@js.native
-trait XStringAbbreviation extends XInterface {
+trait XStringAbbreviation
+  extends StObject
+     with XInterface {
   
   /**
     * Abbreviate a string, so that the resulting abbreviated string is not wider than some given width.
@@ -28,7 +28,7 @@ trait XStringAbbreviation extends XInterface {
     * @param aString The string that is abbreviated.
     * @returns an abbreviated string.
     */
-  def abbreviateString(xStringWidth: XStringWidth, nWidth: Double, aString: String): String = js.native
+  def abbreviateString(xStringWidth: XStringWidth, nWidth: Double, aString: String): String
 }
 object XStringAbbreviation {
   

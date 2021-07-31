@@ -3,27 +3,25 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicySnapshotSchedulePolicySnapshotProperties extends StObject {
   
   /** Chain name that the snapshot is created in. */
-  var chainName: js.UndefOr[String] = js.native
+  var chainName: js.UndefOr[String] = js.undefined
   
   /** Indication to perform a 'guest aware' snapshot. */
-  var guestFlush: js.UndefOr[Boolean] = js.native
+  var guestFlush: js.UndefOr[Boolean] = js.undefined
   
   /** Labels to apply to scheduled snapshots. These can be later modified by the setLabels method. Label values may be empty. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Cloud Storage bucket storage location of the auto snapshot (regional or multi-regional). */
-  var storageLocations: js.UndefOr[js.Array[String]] = js.native
+  var storageLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ResourcePolicySnapshotSchedulePolicySnapshotProperties {
   
@@ -52,7 +50,7 @@ object ResourcePolicySnapshotSchedulePolicySnapshotProperties {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ResourcePolicySnapshotSchedulePolicySnapshotProperties & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

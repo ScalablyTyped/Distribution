@@ -2,15 +2,13 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseMultipleSelectionState[Item] extends StObject {
   
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   
-  var selectedItems: js.Array[Item] = js.native
+  var selectedItems: js.Array[Item]
 }
 object UseMultipleSelectionState {
   
@@ -21,7 +19,7 @@ object UseMultipleSelectionState {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionStateMutableBuilder[Self <: UseMultipleSelectionState[_], Item] (val x: Self with UseMultipleSelectionState[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionStateMutableBuilder[Self <: UseMultipleSelectionState[?], Item] (val x: Self & UseMultipleSelectionState[Item]) extends AnyVal {
     
     @scala.inline
     def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])

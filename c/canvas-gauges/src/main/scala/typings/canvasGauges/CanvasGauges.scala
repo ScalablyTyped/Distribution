@@ -25,7 +25,6 @@ import typings.std.MutationRecord
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CanvasGauges {
@@ -34,7 +33,7 @@ object CanvasGauges {
   trait Animation extends StObject {
     
     def animate(): js.Any = js.native
-    def animate(draw: js.UndefOr[scala.Nothing], end: EndEventCallback): js.Any = js.native
+    def animate(draw: Unit, end: EndEventCallback): js.Any = js.native
     def animate(draw: DrawEventCallback): js.Any = js.native
     def animate(draw: DrawEventCallback, end: EndEventCallback): js.Any = js.native
     
@@ -109,7 +108,9 @@ object CanvasGauges {
   }
   
   @js.native
-  trait Collection extends Array[BaseGauge] {
+  trait Collection
+    extends StObject
+       with Array[BaseGauge] {
     
     def get(id: String): BaseGauge = js.native
     def get(id: Double): BaseGauge = js.native
@@ -223,188 +224,187 @@ object CanvasGauges {
     def normal: typings.canvasGauges.canvasGaugesStrings.normal = "normal".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.normal]
   }
   
-  @js.native
   trait GenericOptions extends StObject {
     
-    var animateOnInit: js.UndefOr[Boolean] = js.native
+    var animateOnInit: js.UndefOr[Boolean] = js.undefined
     
-    var animatedValue: js.UndefOr[Boolean] = js.native
+    var animatedValue: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var animationRule: js.UndefOr[String | AnimationRule] = js.native
+    var animationRule: js.UndefOr[String | AnimationRule] = js.undefined
     
-    var barProgress: js.UndefOr[Boolean] = js.native
+    var barProgress: js.UndefOr[Boolean] = js.undefined
     
-    var barShadow: js.UndefOr[Double] = js.native
+    var barShadow: js.UndefOr[Double] = js.undefined
     
-    var barStrokeWidth: js.UndefOr[Double] = js.native
+    var barStrokeWidth: js.UndefOr[Double] = js.undefined
     
-    var barWidth: js.UndefOr[Double] = js.native
+    var barWidth: js.UndefOr[Double] = js.undefined
     
-    var borderInnerWidth: js.UndefOr[Double] = js.native
+    var borderInnerWidth: js.UndefOr[Double] = js.undefined
     
-    var borderMiddleWidth: js.UndefOr[Double] = js.native
+    var borderMiddleWidth: js.UndefOr[Double] = js.undefined
     
-    var borderOuterWidth: js.UndefOr[Double] = js.native
+    var borderOuterWidth: js.UndefOr[Double] = js.undefined
     
-    var borderShadowWidth: js.UndefOr[Double] = js.native
+    var borderShadowWidth: js.UndefOr[Double] = js.undefined
     
-    var borders: js.UndefOr[Boolean] = js.native
+    var borders: js.UndefOr[Boolean] = js.undefined
     
-    var colorBar: js.UndefOr[String] = js.native
+    var colorBar: js.UndefOr[String] = js.undefined
     
-    var colorBarProgress: js.UndefOr[String] = js.native
+    var colorBarProgress: js.UndefOr[String] = js.undefined
     
-    var colorBarShadow: js.UndefOr[String] = js.native
+    var colorBarShadow: js.UndefOr[String] = js.undefined
     
-    var colorBarStroke: js.UndefOr[String] = js.native
+    var colorBarStroke: js.UndefOr[String] = js.undefined
     
-    var colorBorderInner: js.UndefOr[String] = js.native
+    var colorBorderInner: js.UndefOr[String] = js.undefined
     
-    var colorBorderInnerEnd: js.UndefOr[String] = js.native
+    var colorBorderInnerEnd: js.UndefOr[String] = js.undefined
     
-    var colorBorderMiddle: js.UndefOr[String] = js.native
+    var colorBorderMiddle: js.UndefOr[String] = js.undefined
     
-    var colorBorderMiddleEnd: js.UndefOr[String] = js.native
+    var colorBorderMiddleEnd: js.UndefOr[String] = js.undefined
     
-    var colorBorderOuter: js.UndefOr[String] = js.native
+    var colorBorderOuter: js.UndefOr[String] = js.undefined
     
-    var colorBorderOuterEnd: js.UndefOr[String] = js.native
+    var colorBorderOuterEnd: js.UndefOr[String] = js.undefined
     
-    var colorBorderShadow: js.UndefOr[String] = js.native
+    var colorBorderShadow: js.UndefOr[String] = js.undefined
     
-    var colorMajorTicks: js.UndefOr[String] = js.native
+    var colorMajorTicks: js.UndefOr[String] = js.undefined
     
-    var colorMinorTicks: js.UndefOr[String] = js.native
+    var colorMinorTicks: js.UndefOr[String] = js.undefined
     
-    var colorNeedle: js.UndefOr[String] = js.native
+    var colorNeedle: js.UndefOr[String] = js.undefined
     
-    var colorNeedleEnd: js.UndefOr[String] = js.native
+    var colorNeedleEnd: js.UndefOr[String] = js.undefined
     
-    var colorNeedleShadowDown: js.UndefOr[String] = js.native
+    var colorNeedleShadowDown: js.UndefOr[String] = js.undefined
     
-    var colorNeedleShadowUp: js.UndefOr[String] = js.native
+    var colorNeedleShadowUp: js.UndefOr[String] = js.undefined
     
-    var colorNumbers: js.UndefOr[String] = js.native
+    var colorNumbers: js.UndefOr[String] = js.undefined
     
-    var colorPlate: js.UndefOr[String] = js.native
+    var colorPlate: js.UndefOr[String] = js.undefined
     
-    var colorPlateEnd: js.UndefOr[String] = js.native
+    var colorPlateEnd: js.UndefOr[String] = js.undefined
     
-    var colorTitle: js.UndefOr[String] = js.native
+    var colorTitle: js.UndefOr[String] = js.undefined
     
-    var colorUnits: js.UndefOr[String] = js.native
+    var colorUnits: js.UndefOr[String] = js.undefined
     
-    var colorValueBoxBackground: js.UndefOr[String] = js.native
+    var colorValueBoxBackground: js.UndefOr[String] = js.undefined
     
-    var colorValueBoxRect: js.UndefOr[String] = js.native
+    var colorValueBoxRect: js.UndefOr[String] = js.undefined
     
-    var colorValueBoxRectEnd: js.UndefOr[String] = js.native
+    var colorValueBoxRectEnd: js.UndefOr[String] = js.undefined
     
-    var colorValueBoxShadow: js.UndefOr[String] = js.native
+    var colorValueBoxShadow: js.UndefOr[String] = js.undefined
     
-    var colorValueText: js.UndefOr[String] = js.native
+    var colorValueText: js.UndefOr[String] = js.undefined
     
-    var colorValueTextShadow: js.UndefOr[String] = js.native
+    var colorValueTextShadow: js.UndefOr[String] = js.undefined
     
-    var exactTicks: js.UndefOr[Boolean] = js.native
+    var exactTicks: js.UndefOr[Boolean] = js.undefined
     
-    var fontNumbers: js.UndefOr[String] = js.native
+    var fontNumbers: js.UndefOr[String] = js.undefined
     
-    var fontNumbersSize: js.UndefOr[Double] = js.native
+    var fontNumbersSize: js.UndefOr[Double] = js.undefined
     
-    var fontNumbersStyle: js.UndefOr[FontStyle] = js.native
+    var fontNumbersStyle: js.UndefOr[FontStyle] = js.undefined
     
-    var fontNumbersWeight: js.UndefOr[FontWeight] = js.native
+    var fontNumbersWeight: js.UndefOr[FontWeight] = js.undefined
     
-    var fontTitle: js.UndefOr[String] = js.native
+    var fontTitle: js.UndefOr[String] = js.undefined
     
-    var fontTitleSize: js.UndefOr[Double] = js.native
+    var fontTitleSize: js.UndefOr[Double] = js.undefined
     
-    var fontTitleStyle: js.UndefOr[FontStyle] = js.native
+    var fontTitleStyle: js.UndefOr[FontStyle] = js.undefined
     
-    var fontTitleWeight: js.UndefOr[FontWeight] = js.native
+    var fontTitleWeight: js.UndefOr[FontWeight] = js.undefined
     
-    var fontUnits: js.UndefOr[String] = js.native
+    var fontUnits: js.UndefOr[String] = js.undefined
     
-    var fontUnitsSize: js.UndefOr[Double] = js.native
+    var fontUnitsSize: js.UndefOr[Double] = js.undefined
     
-    var fontUnitsStyle: js.UndefOr[FontStyle] = js.native
+    var fontUnitsStyle: js.UndefOr[FontStyle] = js.undefined
     
-    var fontUnitsWeight: js.UndefOr[FontWeight] = js.native
+    var fontUnitsWeight: js.UndefOr[FontWeight] = js.undefined
     
-    var fontValue: js.UndefOr[String] = js.native
+    var fontValue: js.UndefOr[String] = js.undefined
     
-    var fontValueSize: js.UndefOr[Double] = js.native
+    var fontValueSize: js.UndefOr[Double] = js.undefined
     
-    var fontValueStyle: js.UndefOr[FontStyle] = js.native
+    var fontValueStyle: js.UndefOr[FontStyle] = js.undefined
     
-    var fontValueWeight: js.UndefOr[FontWeight] = js.native
+    var fontValueWeight: js.UndefOr[FontWeight] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var highlights: js.UndefOr[js.Array[Highlight]] = js.native
+    var highlights: js.UndefOr[js.Array[Highlight]] = js.undefined
     
-    var highlightsWidth: js.UndefOr[Double] = js.native
+    var highlightsWidth: js.UndefOr[Double] = js.undefined
     
-    var listeners: js.UndefOr[EventListeners] = js.native
+    var listeners: js.UndefOr[EventListeners] = js.undefined
     
-    var majorTicks: js.UndefOr[MajorTicks] = js.native
+    var majorTicks: js.UndefOr[MajorTicks] = js.undefined
     
-    var majorTicksDec: js.UndefOr[Double] = js.native
+    var majorTicksDec: js.UndefOr[Double] = js.undefined
     
-    var majorTicksInt: js.UndefOr[Double] = js.native
+    var majorTicksInt: js.UndefOr[Double] = js.undefined
     
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
-    var minorTicks: js.UndefOr[Double] = js.native
+    var minorTicks: js.UndefOr[Double] = js.undefined
     
-    var needle: js.UndefOr[Boolean] = js.native
+    var needle: js.UndefOr[Boolean] = js.undefined
     
-    var needleEnd: js.UndefOr[Double] = js.native
+    var needleEnd: js.UndefOr[Double] = js.undefined
     
-    var needleShadow: js.UndefOr[Boolean] = js.native
+    var needleShadow: js.UndefOr[Boolean] = js.undefined
     
-    var needleStart: js.UndefOr[Double] = js.native
+    var needleStart: js.UndefOr[Double] = js.undefined
     
-    var needleType: js.UndefOr[String] = js.native
+    var needleType: js.UndefOr[String] = js.undefined
     
-    var needleWidth: js.UndefOr[Double] = js.native
+    var needleWidth: js.UndefOr[Double] = js.undefined
     
-    var numbersMargin: js.UndefOr[Double] = js.native
+    var numbersMargin: js.UndefOr[Double] = js.undefined
     
-    var renderTo: RenderTarget = js.native
+    var renderTo: RenderTarget
     
-    var strokeTicks: js.UndefOr[Boolean] = js.native
+    var strokeTicks: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String | Boolean] = js.native
+    var title: js.UndefOr[String | Boolean] = js.undefined
     
-    var units: js.UndefOr[String | Boolean] = js.native
+    var units: js.UndefOr[String | Boolean] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
-    var valueBox: js.UndefOr[Boolean] = js.native
+    var valueBox: js.UndefOr[Boolean] = js.undefined
     
-    var valueBoxBorderRadius: js.UndefOr[Double] = js.native
+    var valueBoxBorderRadius: js.UndefOr[Double] = js.undefined
     
-    var valueBoxStroke: js.UndefOr[Double] = js.native
+    var valueBoxStroke: js.UndefOr[Double] = js.undefined
     
-    var valueBoxWidth: js.UndefOr[Double] = js.native
+    var valueBoxWidth: js.UndefOr[Double] = js.undefined
     
-    var valueDec: js.UndefOr[Double] = js.native
+    var valueDec: js.UndefOr[Double] = js.undefined
     
-    var valueInt: js.UndefOr[Double] = js.native
+    var valueInt: js.UndefOr[Double] = js.undefined
     
-    var valueText: js.UndefOr[String] = js.native
+    var valueText: js.UndefOr[String] = js.undefined
     
-    var valueTextShadow: js.UndefOr[Boolean] = js.native
+    var valueTextShadow: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object GenericOptions {
     
@@ -965,14 +965,13 @@ object CanvasGauges {
     }
   }
   
-  @js.native
   trait Highlight extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var from: Double = js.native
+    var from: Double
     
-    var to: Double = js.native
+    var to: Double
   }
   object Highlight {
     
@@ -997,7 +996,9 @@ object CanvasGauges {
   }
   
   @js.native
-  trait LinearGauge extends BaseGauge {
+  trait LinearGauge
+    extends StObject
+       with BaseGauge {
     
     @JSName("options")
     var options_LinearGauge: LinearGaugeOptions = js.native
@@ -1006,30 +1007,31 @@ object CanvasGauges {
     var type_LinearGauge: LinearGauge = js.native
   }
   
-  @js.native
-  trait LinearGaugeOptions extends GenericOptions {
+  trait LinearGaugeOptions
+    extends StObject
+       with GenericOptions {
     
-    var barBeginCircle: js.UndefOr[Double] = js.native
+    var barBeginCircle: js.UndefOr[Double] = js.undefined
     
-    var barLength: js.UndefOr[Double] = js.native
+    var barLength: js.UndefOr[Double] = js.undefined
     
-    var borderRadius: js.UndefOr[Double] = js.native
+    var borderRadius: js.UndefOr[Double] = js.undefined
     
-    var colorBarEnd: js.UndefOr[String] = js.native
+    var colorBarEnd: js.UndefOr[String] = js.undefined
     
-    var colorBarProgressEnd: js.UndefOr[String] = js.native
+    var colorBarProgressEnd: js.UndefOr[String] = js.undefined
     
-    var needleSide: js.UndefOr[String] = js.native
+    var needleSide: js.UndefOr[String] = js.undefined
     
-    var numberSide: js.UndefOr[String] = js.native
+    var numberSide: js.UndefOr[String] = js.undefined
     
-    var tickSide: js.UndefOr[String] = js.native
+    var tickSide: js.UndefOr[String] = js.undefined
     
-    var ticksPadding: js.UndefOr[Double] = js.native
+    var ticksPadding: js.UndefOr[Double] = js.undefined
     
-    var ticksWidth: js.UndefOr[Double] = js.native
+    var ticksWidth: js.UndefOr[Double] = js.undefined
     
-    var ticksWidthMinor: js.UndefOr[Double] = js.native
+    var ticksWidthMinor: js.UndefOr[Double] = js.undefined
   }
   object LinearGaugeOptions {
     
@@ -1113,7 +1115,9 @@ object CanvasGauges {
   type MajorTicks = js.Array[Double | String]
   
   @js.native
-  trait RadialGauge extends BaseGauge {
+  trait RadialGauge
+    extends StObject
+       with BaseGauge {
     
     @JSName("options")
     var options_RadialGauge: RadialGaugeOptions = js.native
@@ -1122,30 +1126,31 @@ object CanvasGauges {
     var type_RadialGauge: RadialGauge = js.native
   }
   
-  @js.native
-  trait RadialGaugeOptions extends GenericOptions {
+  trait RadialGaugeOptions
+    extends StObject
+       with GenericOptions {
     
-    var animationTarget: js.UndefOr[String] = js.native
+    var animationTarget: js.UndefOr[String] = js.undefined
     
-    var colorNeedleCircleInner: js.UndefOr[String] = js.native
+    var colorNeedleCircleInner: js.UndefOr[String] = js.undefined
     
-    var colorNeedleCircleInnerEnd: js.UndefOr[String] = js.native
+    var colorNeedleCircleInnerEnd: js.UndefOr[String] = js.undefined
     
-    var colorNeedleCircleOuter: js.UndefOr[String] = js.native
+    var colorNeedleCircleOuter: js.UndefOr[String] = js.undefined
     
-    var colorNeedleCircleOuterEnd: js.UndefOr[String] = js.native
+    var colorNeedleCircleOuterEnd: js.UndefOr[String] = js.undefined
     
-    var needleCircleInner: js.UndefOr[Boolean] = js.native
+    var needleCircleInner: js.UndefOr[Boolean] = js.undefined
     
-    var needleCircleOuter: js.UndefOr[Boolean] = js.native
+    var needleCircleOuter: js.UndefOr[Boolean] = js.undefined
     
-    var needleCircleSize: js.UndefOr[Double] = js.native
+    var needleCircleSize: js.UndefOr[Double] = js.undefined
     
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
-    var ticksAngle: js.UndefOr[Double] = js.native
+    var ticksAngle: js.UndefOr[Double] = js.undefined
     
-    var useMinPath: js.UndefOr[Boolean] = js.native
+    var useMinPath: js.UndefOr[Boolean] = js.undefined
   }
   object RadialGaugeOptions {
     
@@ -1228,42 +1233,41 @@ object CanvasGauges {
   
   type RenderTarget = String | HTMLElement
   
-  @js.native
   trait SmartCanvas extends StObject {
     
-    def commit(): SmartCanvas = js.native
+    def commit(): SmartCanvas
     
-    var context: CanvasRenderingContext2D = js.native
+    var context: CanvasRenderingContext2D
     
-    var contextClone: CanvasRenderingContext2D = js.native
+    var contextClone: CanvasRenderingContext2D
     
-    def destroy(): js.Any = js.native
+    def destroy(): js.Any
     
-    var drawHeight: Double = js.native
+    var drawHeight: Double
     
-    var drawWidth: Double = js.native
+    var drawWidth: Double
     
-    var drawX: Double = js.native
+    var drawX: Double
     
-    var drawY: Double = js.native
+    var drawY: Double
     
-    var element: HTMLCanvasElement = js.native
+    var element: HTMLCanvasElement
     
-    var elementClone: HTMLCanvasElement = js.native
+    var elementClone: HTMLCanvasElement
     
-    var height: Double = js.native
+    var height: Double
     
-    def init(): js.Any = js.native
+    def init(): js.Any
     
-    var minSide: Double = js.native
+    var minSide: Double
     
-    def onRedraw(): js.Any = js.native
+    def onRedraw(): js.Any
     
-    var pixelRatio: Double = js.native
+    var pixelRatio: Double
     
-    def redraw(): SmartCanvas = js.native
+    def redraw(): SmartCanvas
     
-    var width: Double = js.native
+    var width: Double
   }
   object SmartCanvas {
     
@@ -1347,51 +1351,107 @@ object CanvasGauges {
     }
   }
   
-  @js.native
   trait rules extends StObject {
     
-    def bounce(percent: Double): Double = js.native
+    def bounce(percent: Double): Double
     @JSName("bounce")
-    var bounce_Original: AnimationRule = js.native
+    var bounce_Original: AnimationRule
     
-    def cycle(percent: Double): Double = js.native
+    def cycle(percent: Double): Double
     @JSName("cycle")
-    var cycle_Original: AnimationRule = js.native
+    var cycle_Original: AnimationRule
     
-    def debounce(percent: Double): Double = js.native
+    def debounce(percent: Double): Double
     @JSName("debounce")
-    var debounce_Original: AnimationRule = js.native
+    var debounce_Original: AnimationRule
     
-    def decycle(percent: Double): Double = js.native
+    def decycle(percent: Double): Double
     @JSName("decycle")
-    var decycle_Original: AnimationRule = js.native
+    var decycle_Original: AnimationRule
     
-    def delastic(percent: Double): Double = js.native
+    def delastic(percent: Double): Double
     @JSName("delastic")
-    var delastic_Original: AnimationRule = js.native
+    var delastic_Original: AnimationRule
     
-    def dequad(percent: Double): Double = js.native
+    def dequad(percent: Double): Double
     @JSName("dequad")
-    var dequad_Original: AnimationRule = js.native
+    var dequad_Original: AnimationRule
     
-    def dequint(percent: Double): Double = js.native
+    def dequint(percent: Double): Double
     @JSName("dequint")
-    var dequint_Original: AnimationRule = js.native
+    var dequint_Original: AnimationRule
     
-    def elastic(percent: Double): Double = js.native
+    def elastic(percent: Double): Double
     @JSName("elastic")
-    var elastic_Original: AnimationRule = js.native
+    var elastic_Original: AnimationRule
     
-    def linear(percent: Double): Double = js.native
+    def linear(percent: Double): Double
     @JSName("linear")
-    var linear_Original: AnimationRule = js.native
+    var linear_Original: AnimationRule
     
-    def quad(percent: Double): Double = js.native
+    def quad(percent: Double): Double
     @JSName("quad")
-    var quad_Original: AnimationRule = js.native
+    var quad_Original: AnimationRule
     
-    def quint(percent: Double): Double = js.native
+    def quint(percent: Double): Double
     @JSName("quint")
-    var quint_Original: AnimationRule = js.native
+    var quint_Original: AnimationRule
+  }
+  object rules {
+    
+    @scala.inline
+    def apply(
+      bounce: /* percent */ Double => Double,
+      cycle: /* percent */ Double => Double,
+      debounce: /* percent */ Double => Double,
+      decycle: /* percent */ Double => Double,
+      delastic: /* percent */ Double => Double,
+      dequad: /* percent */ Double => Double,
+      dequint: /* percent */ Double => Double,
+      elastic: /* percent */ Double => Double,
+      linear: /* percent */ Double => Double,
+      quad: /* percent */ Double => Double,
+      quint: /* percent */ Double => Double
+    ): rules = {
+      val __obj = js.Dynamic.literal(bounce = js.Any.fromFunction1(bounce), cycle = js.Any.fromFunction1(cycle), debounce = js.Any.fromFunction1(debounce), decycle = js.Any.fromFunction1(decycle), delastic = js.Any.fromFunction1(delastic), dequad = js.Any.fromFunction1(dequad), dequint = js.Any.fromFunction1(dequint), elastic = js.Any.fromFunction1(elastic), linear = js.Any.fromFunction1(linear), quad = js.Any.fromFunction1(quad), quint = js.Any.fromFunction1(quint))
+      __obj.asInstanceOf[rules]
+    }
+    
+    @scala.inline
+    implicit class rulesMutableBuilder[Self <: rules] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCycle(value: /* percent */ Double => Double): Self = StObject.set(x, "cycle", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDebounce(value: /* percent */ Double => Double): Self = StObject.set(x, "debounce", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDecycle(value: /* percent */ Double => Double): Self = StObject.set(x, "decycle", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDelastic(value: /* percent */ Double => Double): Self = StObject.set(x, "delastic", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDequad(value: /* percent */ Double => Double): Self = StObject.set(x, "dequad", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDequint(value: /* percent */ Double => Double): Self = StObject.set(x, "dequint", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "elastic", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setLinear(value: /* percent */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "quad", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "quint", js.Any.fromFunction1(value))
+    }
   }
 }

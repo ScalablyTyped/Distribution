@@ -2,15 +2,15 @@ package typings.simperium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeartbeatEvent extends SimperiumEvent {
+trait HeartbeatEvent
+  extends StObject
+     with SimperiumEvent {
   
-  def beat(count: Double): Unit = js.native
+  def beat(count: Double): Unit
   
-  def timeout(): Unit = js.native
+  def timeout(): Unit
 }
 object HeartbeatEvent {
   

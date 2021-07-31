@@ -5,17 +5,15 @@ import typings.react.reactStrings.update
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfilerProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var onRender: ProfilerOnRenderCallback = js.native
+  var onRender: ProfilerOnRenderCallback
 }
 object ProfilerProps {
   

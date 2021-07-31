@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReusableConfigsResponse extends StObject {
   
   /** A token to retrieve next page of results. Pass this value in ListReusableConfigsRequest.next_page_token to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of ReusableConfigs. */
-  var reusableConfigs: js.UndefOr[js.Array[ReusableConfig]] = js.native
+  var reusableConfigs: js.UndefOr[js.Array[ReusableConfig]] = js.undefined
   
   /** A list of locations (e.g. "us-west1") that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListReusableConfigsResponse {
   

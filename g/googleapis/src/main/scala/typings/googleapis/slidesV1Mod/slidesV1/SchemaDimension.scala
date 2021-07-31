@@ -2,24 +2,22 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A magnitude in a single direction in the specified units.
   */
-@js.native
 trait SchemaDimension extends StObject {
   
   /**
     * The magnitude.
     */
-  var magnitude: js.UndefOr[Double] = js.native
+  var magnitude: js.UndefOr[Double] = js.undefined
   
   /**
     * The units for magnitude.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object SchemaDimension {
   

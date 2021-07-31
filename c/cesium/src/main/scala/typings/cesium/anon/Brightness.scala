@@ -4,33 +4,31 @@ import typings.cesium.mod.ImageryLayer
 import typings.cesium.mod.ImageryLayer.ValueFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Brightness extends StObject {
   
-  var alpha: js.UndefOr[Double | ValueFunc] = js.native
+  var alpha: js.UndefOr[Double | ValueFunc] = js.undefined
   
-  var brightness: js.UndefOr[Double | ValueFunc] = js.native
+  var brightness: js.UndefOr[Double | ValueFunc] = js.undefined
   
-  var contrast: js.UndefOr[Double | ValueFunc] = js.native
+  var contrast: js.UndefOr[Double | ValueFunc] = js.undefined
   
-  var gamma: js.UndefOr[Double | ValueFunc] = js.native
+  var gamma: js.UndefOr[Double | ValueFunc] = js.undefined
   
-  var hue: js.UndefOr[Double | ValueFunc] = js.native
+  var hue: js.UndefOr[Double | ValueFunc] = js.undefined
   
-  var maximumAnisotropy: js.UndefOr[Double] = js.native
+  var maximumAnisotropy: js.UndefOr[Double] = js.undefined
   
-  var maximumTerrainLevel: js.UndefOr[Double] = js.native
+  var maximumTerrainLevel: js.UndefOr[Double] = js.undefined
   
-  var minimumTerrainLevel: js.UndefOr[Double] = js.native
+  var minimumTerrainLevel: js.UndefOr[Double] = js.undefined
   
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
   
-  var saturation: js.UndefOr[Double | ValueFunc] = js.native
+  var saturation: js.UndefOr[Double | ValueFunc] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object Brightness {
   

@@ -4,26 +4,26 @@ import typings.reactStripeElements.mod.ReactStripeElements.StripeProviderProps
 import typings.stripeV3.stripe.Stripe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {  apiKey :never | undefined,   stripe :stripe-v3.stripe.Stripe | null} & react-stripe-elements.react-stripe-elements.ReactStripeElements.StripeProviderOptions */
-  @js.native
-  trait apiKeyneverundefinedstrip extends StripeProviderProps {
+  trait apiKeyneverundefinedstrip
+    extends StObject
+       with StripeProviderProps {
     
-    var apiKey: js.UndefOr[scala.Nothing] = js.native
+    var apiKey: js.UndefOr[scala.Nothing] = js.undefined
     
-    var stripe: Stripe | Null = js.native
+    var stripe: Stripe | Null
     
-    var stripeAccount: js.UndefOr[String] = js.native
+    var stripeAccount: js.UndefOr[String] = js.undefined
   }
   object apiKeyneverundefinedstrip {
     
     @scala.inline
     def apply(): apiKeyneverundefinedstrip = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(stripe = null)
       __obj.asInstanceOf[apiKeyneverundefinedstrip]
     }
     
@@ -45,14 +45,15 @@ object anon {
   }
   
   /* Inlined {  apiKey :string,   stripe :never | undefined} & react-stripe-elements.react-stripe-elements.ReactStripeElements.StripeProviderOptions */
-  @js.native
-  trait apiKeystringstripeneverun extends StripeProviderProps {
+  trait apiKeystringstripeneverun
+    extends StObject
+       with StripeProviderProps {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var stripe: js.UndefOr[scala.Nothing] = js.native
+    var stripe: js.UndefOr[scala.Nothing] = js.undefined
     
-    var stripeAccount: js.UndefOr[String] = js.native
+    var stripeAccount: js.UndefOr[String] = js.undefined
   }
   object apiKeystringstripeneverun {
     

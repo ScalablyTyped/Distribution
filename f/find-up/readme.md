@@ -11,8 +11,8 @@ Find a file or directory by walking up parent directories
 | Full name          | find-up |
 | Keywords           | find, up, find-up, findup, look-up, look, file, search, match, package, resolve, parent, parents, folder, directory, walk, walking, path |
 | # releases         | 4 |
-| # dependents       | 1325 |
-| # downloads        | 1788698380 |
+| # dependents       | 1539 |
+| # downloads        | 2307490682 |
 | # stars            | 13 |
 
 ## Links

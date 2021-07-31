@@ -3,28 +3,26 @@ package typings.jsmediatags
 import typings.jsmediatags.typesMod.ByteArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object byteArrayUtilsMod {
   
-  @JSImport("jsmediatags/build2/ByteArrayUtils", "bin")
+  @JSImport("jsmediatags/build2/ByteArrayUtils", JSImport.Namespace)
   @js.native
-  def bin(string: String): ByteArray = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsmediatags/build2/ByteArrayUtils", "getInteger24")
-  @js.native
-  def getInteger24(number: Double): ByteArray = js.native
+  @scala.inline
+  def bin(string: String): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")(string.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  @JSImport("jsmediatags/build2/ByteArrayUtils", "getInteger32")
-  @js.native
-  def getInteger32(number: Double): ByteArray = js.native
+  @scala.inline
+  def getInteger24(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteger24")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  @JSImport("jsmediatags/build2/ByteArrayUtils", "getSynchsafeInteger32")
-  @js.native
-  def getSynchsafeInteger32(number: Double): ByteArray = js.native
+  @scala.inline
+  def getInteger32(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteger32")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  @JSImport("jsmediatags/build2/ByteArrayUtils", "pad")
-  @js.native
-  def pad(array: js.Array[_], size: Double): js.Array[_] = js.native
+  @scala.inline
+  def getSynchsafeInteger32(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getSynchsafeInteger32")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
+  
+  @scala.inline
+  def pad(array: js.Array[js.Any], size: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

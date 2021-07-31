@@ -3,17 +3,16 @@ package typings.documentdb.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewDocument
-  extends UniqueId
+  extends StObject
+     with UniqueId
      with /** Custom properties */
 /* key */ StringDictionary[js.Any] {
   
   /** The time to live in seconds of the document. */
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
 }
 object NewDocument {
   

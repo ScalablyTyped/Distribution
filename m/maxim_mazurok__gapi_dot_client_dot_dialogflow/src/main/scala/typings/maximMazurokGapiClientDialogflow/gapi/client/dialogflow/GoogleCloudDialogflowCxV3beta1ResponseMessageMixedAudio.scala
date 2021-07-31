@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudio extends StObject {
   
   /** Segments this audio response is composed of. */
-  var segments: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment]] = js.native
+  var segments: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudioSegment]] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudio {
   

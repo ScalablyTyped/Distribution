@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tier extends StObject {
   
   /** The maximum disk size of this tier in bytes. */
-  var DiskQuota: js.UndefOr[String] = js.native
+  var DiskQuota: js.UndefOr[String] = js.undefined
   
   /** The maximum RAM usage of this tier in bytes. */
-  var RAM: js.UndefOr[String] = js.native
+  var RAM: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#tier*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The applicable regions for this tier. */
-  var region: js.UndefOr[js.Array[String]] = js.native
+  var region: js.UndefOr[js.Array[String]] = js.undefined
   
   /** An identifier for the machine type, for example, db-n1-standard-1. For related information, see Pricing. */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
 }
 object Tier {
   

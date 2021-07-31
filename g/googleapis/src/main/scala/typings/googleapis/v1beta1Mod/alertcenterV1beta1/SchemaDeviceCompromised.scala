@@ -2,24 +2,22 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A mobile device compromised alert. Derived from audit logs.
   */
-@js.native
 trait SchemaDeviceCompromised extends StObject {
   
   /**
     * The email of the user this alert was created for.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The list of security events.
     */
-  var events: js.UndefOr[js.Array[SchemaDeviceCompromisedSecurityDetail]] = js.native
+  var events: js.UndefOr[js.Array[SchemaDeviceCompromisedSecurityDetail]] = js.undefined
 }
 object SchemaDeviceCompromised {
   

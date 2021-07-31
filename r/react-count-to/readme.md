@@ -10,9 +10,9 @@ Animated counter component for React.js
 | ------------------ | :-------------: |
 | Full name          | react-count-to |
 | Keywords           | React.js, react-component |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 76910 |
+| # downloads        | 124589 |
 | # stars            | 1 |
 
 ## Links

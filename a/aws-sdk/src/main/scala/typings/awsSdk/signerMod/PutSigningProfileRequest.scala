@@ -2,41 +2,39 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSigningProfileRequest extends StObject {
   
   /**
     * A subfield of platform. This specifies any different configuration options that you want to apply to the chosen platform (such as a different hash-algorithm or signing-algorithm).
     */
-  var overrides: js.UndefOr[SigningPlatformOverrides] = js.native
+  var overrides: js.UndefOr[SigningPlatformOverrides] = js.undefined
   
   /**
     * The ID of the signing platform to be created.
     */
-  var platformId: PlatformId = js.native
+  var platformId: PlatformId
   
   /**
     * The name of the signing profile to be created.
     */
-  var profileName: ProfileName = js.native
+  var profileName: ProfileName
   
   /**
     * The AWS Certificate Manager certificate that will be used to sign code with the new signing profile.
     */
-  var signingMaterial: SigningMaterial = js.native
+  var signingMaterial: SigningMaterial
   
   /**
     * Map of key-value pairs for signing. These can include any information that you want to use during signing.
     */
-  var signingParameters: js.UndefOr[SigningParameters] = js.native
+  var signingParameters: js.UndefOr[SigningParameters] = js.undefined
   
   /**
     * Tags to be associated with the signing profile that is being created.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object PutSigningProfileRequest {
   

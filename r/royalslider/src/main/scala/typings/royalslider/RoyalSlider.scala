@@ -3,7 +3,6 @@ package typings.royalslider
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RoyalSlider {
@@ -162,28 +161,27 @@ object RoyalSlider {
     var width: Double = js.native
   }
   
-  @js.native
   trait RoyalSliderAutoplayOptions extends StObject {
     
     /**
       * Delay between items in ms. (default: 300)
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable autoplay or not. (default: false)
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pause autoplay on hover. (default: true)
       */
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Stop autoplay at first user action. (default: true)
       */
-    var stopAtAction: js.UndefOr[Boolean] = js.native
+    var stopAtAction: js.UndefOr[Boolean] = js.undefined
   }
   object RoyalSliderAutoplayOptions {
     
@@ -222,38 +220,37 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderBlockOptions extends StObject {
     
     /**
       * Delay between each block show up, in ms. (default: 200)
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Easing function of block animation.Read more in easing section of docs. (default: 'easeOutSine' )
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /**
       * true or false  (default: true)
       */
-    var fadeEffect: js.UndefOr[Boolean] = js.native
+    var fadeEffect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Move effect direction.Can be 'left', 'right', 'top', 'bottom' or 'none'. (default: 'top')
       */
-    var moveEffect: js.UndefOr[String] = js.native
+    var moveEffect: js.UndefOr[String] = js.undefined
     
     /**
       * Distance for move effect in pixels. (default: 20)
       */
-    var moveOffset: js.UndefOr[Double] = js.native
+    var moveOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Transition speed of block, in ms. (default: 400)
       */
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object RoyalSliderBlockOptions {
     
@@ -304,23 +301,22 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderDeeplinkingOptions extends StObject {
     
     /**
       * Automatically change URL after transition and listen for hash change. (default: false)
       */
-    var change: js.UndefOr[Boolean] = js.native
+    var change: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Linking to slides by appending #SLIDE_INDEX to url.Slides count starts from 1. If change is set to false hash is only read once, after page load. (default: false)
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prefix that will be added to hash. For example if you set it to 'gallery-', hash would look like this: #gallery-5 (default: '')
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object RoyalSliderDeeplinkingOptions {
     
@@ -353,28 +349,27 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderFullscreenOptions extends StObject {
     
     /**
       * Fullscreen button at top right. (default: true)
       */
-    var buttonFS: js.UndefOr[Boolean] = js.native
+    var buttonFS: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fullscreen functions enabled. (default: false)
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Force keyboard arrows nav in fullscreen. (default: true)
       */
-    var keyboardNav: js.UndefOr[Boolean] = js.native
+    var keyboardNav: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Native browser fullscreen. (default: false)
       */
-    var nativeFS: js.UndefOr[Boolean] = js.native
+    var nativeFS: js.UndefOr[Boolean] = js.undefined
   }
   object RoyalSliderFullscreenOptions {
     
@@ -413,224 +408,223 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderOptions extends StObject {
     
     /**
       * Adds rsActiveSlide class to current slide before transition. (default: false)
       */
-    var addActiveClass: js.UndefOr[Boolean] = js.native
+    var addActiveClass: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows usage of CSS3 transitions. Might be useful if you're experiencing font-rendering problems, or other CSS3-related bugs. (default: true)
       */
-    var allowCSS3: js.UndefOr[Boolean] = js.native
+    var allowCSS3: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Direction arrows navigation. (default: true)
       */
-    var arrowsNav: js.UndefOr[Boolean] = js.native
+    var arrowsNav: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Auto hide arrows. (default: true)
       */
-    var arrowsNavAutoHide: js.UndefOr[Boolean] = js.native
+    var arrowsNavAutoHide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hides arrows completely on touch devices. (default: false)
       */
-    var arrowsNavHideOnTouch: js.UndefOr[Boolean] = js.native
+    var arrowsNavHideOnTouch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Scales and animates height based on current slide. Please note: if you have images in slide that don't have rsImg class) or don't have fixed size, use $(window).load() instead of $(document).ready() before initializing slider. Also, autoHeight doesn't work with properties like autoScaleSlider, imageScaleMode and imageAlignCenter.  (default: false)
       */
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically updates slider height based on base width. (default: false)
       */
-    var autoScaleSlider: js.UndefOr[Boolean] = js.native
+    var autoScaleSlider: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 400 Base slider height
       */
-    var autoScaleSliderHeight: js.UndefOr[Double] = js.native
+    var autoScaleSliderHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Base slider width.Slider will autocalculate the ratio based on these values. (default: 800)
       */
-    var autoScaleSliderWidth: js.UndefOr[Double] = js.native
+    var autoScaleSliderWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Autoplay slideshow can be enabled via slider options. Delay between items can be set globally via delay option, or specifically for each item by adding data-rsDelay="1000" to root element of the slide (1000 = 1sec).
       */
-    var autoplay: js.UndefOr[RoyalSliderAutoplayOptions] = js.native
+    var autoplay: js.UndefOr[RoyalSliderAutoplayOptions] = js.undefined
     
     /**
       * All elements inside slide that have class rsABlock will be treated by slider as animated blocks (tag name doesn't matter). Blocks can not be nested, but you can put multiple instances of them into one slide, or make slide itself animated block.
       */
-    var block: js.UndefOr[RoyalSliderBlockOptions] = js.native
+    var block: js.UndefOr[RoyalSliderBlockOptions] = js.undefined
     
     /**
       * Navigation type, can be 'bullets', 'thumbnails', 'tabs' or 'none' (default: 'bullets')
       */
-    var controlNavigation: js.UndefOr[String] = js.native
+    var controlNavigation: js.UndefOr[String] = js.undefined
     
     /**
       *  If set to true adds arrows and fullscreen button inside rsOverflow container, otherwise inside root slider container. (default: true)
       */
-    var controlsInside: js.UndefOr[Boolean] = js.native
+    var controlsInside: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Deep linking module makes URL automatically change when you switch slides and you can easily link to specific slide (aka permalink).
       */
-    var deeplinking: js.UndefOr[RoyalSliderDeeplinkingOptions] = js.native
+    var deeplinking: js.UndefOr[RoyalSliderDeeplinkingOptions] = js.undefined
     
     /**
       * Easing function for simple transition.Read more in the easing section of the documentation. (default: 'easeInOutSine')
       */
-    var easeInOut: js.UndefOr[String] = js.native
+    var easeInOut: js.UndefOr[String] = js.undefined
     
     /**
       * Easing function of animation after ending of the swipe gesture. Read more in the easing section of the documentation. (default: 'easeOutSine')
       */
-    var easeOut: js.UndefOr[String] = js.native
+    var easeOut: js.UndefOr[String] = js.undefined
     
     /**
       * Fades in slide after it's loaded. (default: true)
       */
-    var fadeinLoadedSlide: js.UndefOr[Boolean] = js.native
+    var fadeinLoadedSlide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You may specify larger images when slider is in fullscreen mode by adding data-rsBigImg attribute to rsImg element. A few examples:
       */
-    var fullscreen: js.UndefOr[RoyalSliderFullscreenOptions] = js.native
+    var fullscreen: js.UndefOr[RoyalSliderFullscreenOptions] = js.undefined
     
     /**
       * Adds global caption element to slider, read more in the global caption section of documentation. (default: false)
       */
-    var globalCaption: js.UndefOr[Boolean] = js.native
+    var globalCaption: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Aligns image to center of slide. (default: true)
       */
-    var imageAlignCenter: js.UndefOr[Boolean] = js.native
+    var imageAlignCenter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Scale mode for images."fill", "fit", "fit-if-smaller" or "none". (default: 'fit-if-smaller')
       */
-    var imageScaleMode: js.UndefOr[String] = js.native
+    var imageScaleMode: js.UndefOr[String] = js.undefined
     
     /**
       * Distance between image and edge of slide (doesn't work with 'fill' scale mode). (default: 4)
       */
-    var imageScalePadding: js.UndefOr[Double] = js.native
+    var imageScalePadding: js.UndefOr[Double] = js.undefined
     
     /**
       * Adds base height to all images for better-looking loading. Can be specified separately for each image. (default: null)
       */
-    var imgHeight: js.UndefOr[Double] = js.native
+    var imgHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Adds base width to all images for better-looking loading. Can be specified separately for each image. (default: null)
       */
-    var imgWidth: js.UndefOr[Double] = js.native
+    var imgWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Navigate slider with keyboard left and right arrows. (default: false)
       */
-    var keyboardNavEnabled: js.UndefOr[Boolean] = js.native
+    var keyboardNavEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes slider to go from last slide to first. (default: false)
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes slider to go from last slide to first with rewind. Overrides prev option. (default: false)
       */
-    var loopRewind: js.UndefOr[Boolean] = js.native
+    var loopRewind: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Minimum distance in pixels to show next slide while dragging. (default: 10)
       */
-    var minSlideOffset: js.UndefOr[Double] = js.native
+    var minSlideOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Navigates forward by clicking on slide. (default: true)
       */
-    var navigateByClick: js.UndefOr[Boolean] = js.native
+    var navigateByClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of slides to preload on sides.If you set it to 0, only one slide will be kept in the display list at once. (default: 4)
       */
-    var numImagesToPreload: js.UndefOr[Double] = js.native
+    var numImagesToPreload: js.UndefOr[Double] = js.undefined
     
     /**
       * Randomizes all slides at start. (default: false)
       */
-    var randomizeSlides: js.UndefOr[Boolean] = js.native
+    var randomizeSlides: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Mouse drag navigation over slider. (default: true)
       */
-    var sliderDrag: js.UndefOr[Boolean] = js.native
+    var sliderDrag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Touch navigation of slider. (default: true)
       */
-    var sliderTouch: js.UndefOr[Boolean] = js.native
+    var sliderTouch: js.UndefOr[Boolean] = js.undefined
     
     // false
     /**
       * Overrides HTML of slides, used for creating of slides from HTML that is not attached to DOM. More info in knowledge base.  (default: null)
       */
-    var slides: js.UndefOr[Element] = js.native
+    var slides: js.UndefOr[Element] = js.undefined
     
     /**
       * Can be 'vertical' or 'horizontal'. (default: 'horizontal')
       */
-    var slidesOrientation: js.UndefOr[String] = js.native
+    var slidesOrientation: js.UndefOr[String] = js.undefined
     
     /**
       * Spacing between slides in pixels. (default: 8)
       */
-    var slidesSpacing: js.UndefOr[Double] = js.native
+    var slidesSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * Start slide index. (default: 0)
       */
-    var startSlideId: js.UndefOr[Double] = js.native
+    var startSlideId: js.UndefOr[Double] = js.undefined
     
     /**
       * Thumbnail options
       */
-    var thumbs: js.UndefOr[RoyalSliderThumbsOptions] = js.native
+    var thumbs: js.UndefOr[RoyalSliderThumbsOptions] = js.undefined
     
     /**
       * Slider transition speed, in ms. (default: 600)
       */
-    var transitionSpeed: js.UndefOr[Double] = js.native
+    var transitionSpeed: js.UndefOr[Double] = js.undefined
     
     /**
       * 'move' or 'fade'. Important note about fade transition, slides must have background as only one image is animating. (default: 'move')
       */
-    var transitionType: js.UndefOr[String] = js.native
+    var transitionType: js.UndefOr[String] = js.undefined
     
     /**
       * Enables spinning preloader, you may style it via CSS (class rsPreloader). (default: true)
       */
-    var usePreloader: js.UndefOr[Boolean] = js.native
+    var usePreloader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * To add video to slide, you need to add data-rsVideo="" attribute to image. It can contain link to YouTube or Vimeo video.
       */
-    var video: js.UndefOr[RoyalSliderVideoOptions] = js.native
+    var video: js.UndefOr[RoyalSliderVideoOptions] = js.undefined
     
     /**
       * Module "reveals" next and previous slides, like in this template.
       */
-    var visibleNearby: js.UndefOr[RoyalSliderVisibleOptions] = js.native
+    var visibleNearby: js.UndefOr[RoyalSliderVisibleOptions] = js.undefined
   }
   object RoyalSliderOptions {
     
@@ -903,88 +897,87 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderSlide extends StObject {
     
     /**
       * TODO
       */
-    var appendOnLoaded: Boolean = js.native
+    var appendOnLoaded: Boolean
     
     /**
       * slide element
       */
-    var content: JQuery = js.native
+    var content: JQuery
     
     /**
       * TODO
       */
-    var contentAdded: Boolean = js.native
+    var contentAdded: Boolean
     
     /**
       * slide element wrapper
       */
-    var holder: JQuery = js.native
+    var holder: JQuery
     
     /**
       * slide index
       */
-    var id: Double = js.native
+    var id: Double
     
     /**
       * TODO
       */
-    var images: Null = js.native
+    var images: Null
     
     /**
       * TODO
       */
-    var isAdded: Boolean = js.native
+    var isAdded: Boolean
     
     /**
       * TODO
       */
-    var isAppended: Boolean = js.native
+    var isAppended: Boolean
     
     /**
       * TODO
       */
-    var isBig: Boolean = js.native
+    var isBig: Boolean
     
     /**
       * TODO
       */
-    var isLoaded: Boolean = js.native
+    var isLoaded: Boolean
     
     /**
       * TODO
       */
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
     
     /**
       * TODO
       */
-    var isRendered: Boolean = js.native
+    var isRendered: Boolean
     
     /**
       * TODO
       */
-    var loadedTriggered: Boolean = js.native
+    var loadedTriggered: Boolean
     
     /**
       * TODO
       */
-    var positionSet: Boolean = js.native
+    var positionSet: Boolean
     
     /**
       * TODO
       */
-    var sizeReady: Boolean = js.native
+    var sizeReady: Boolean
     
     /**
       * TODO
       */
-    var thumbnail: String = js.native
+    var thumbnail: String
   }
   object RoyalSliderSlide {
     
@@ -1064,73 +1057,72 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderThumbsOptions extends StObject {
     
     /**
       * Adds span element with class thumbIco to every thumbnail. Useful for styling (default: false)
       */
-    var appendSpan: js.UndefOr[Boolean] = js.native
+    var appendSpan: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Replaces default thumbnail arrow. You have to add it to DOM manually. (default: null)
       */
-    var arrowLeft: js.UndefOr[JQuery] = js.native
+    var arrowLeft: js.UndefOr[JQuery] = js.undefined
     
     /**
       * Replaces default thumbnail arrow. You have to add it to DOM manually. (default: null)
       */
-    var arrowRight: js.UndefOr[JQuery] = js.native
+    var arrowRight: js.UndefOr[JQuery] = js.undefined
     
     /**
       * Thumbnails arrows. (default: true)
       */
-    var arrows: js.UndefOr[Boolean] = js.native
+    var arrows: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Auto hide thumbnails arrows on hover. (default: false)
       */
-    var arrowsAutoHide: js.UndefOr[Boolean] = js.native
+    var arrowsAutoHide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically centers container with thumbs if there are small number of items (default: true)
       */
-    var autoCenter: js.UndefOr[Boolean] = js.native
+    var autoCenter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Thumbnails mouse drag. (default: true)
       */
-    var drag: js.UndefOr[Boolean] = js.native
+    var drag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Margin that equals thumbs spacing for first and last item. (default: true)
       */
-    var firstMargin: js.UndefOr[Boolean] = js.native
+    var firstMargin: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reduces size of main viewport area by thumbnails width or height, use it when you set 100 % width to slider.This option is always true, when slider is in fullscreen mode. (default: true)
       */
-    var fitInViewport: js.UndefOr[Boolean] = js.native
+    var fitInViewport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 'horizontal' or 'vertical'. (default: 'horizontal')
       */
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
     /**
       * Spacing between thumbs. (default: 4)
       */
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
     
     /**
       * Thumbnails touch. (default: true)
       */
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Thumbnails transition speed. (default: 600)
       */
-    var transitionSpeed: js.UndefOr[Double] = js.native
+    var transitionSpeed: js.UndefOr[Double] = js.undefined
   }
   object RoyalSliderThumbsOptions {
     
@@ -1223,33 +1215,32 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderVideoOptions extends StObject {
     
     /**
       * Auto hide arrows when video is playing  (default: true)
       */
-    var autoHideArrows: js.UndefOr[Boolean] = js.native
+    var autoHideArrows: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Auto hide animated blocks when video is playing. (default: false)
       */
-    var autoHideBlocks: js.UndefOr[Boolean] = js.native
+    var autoHideBlocks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Auto hide navigation when video is playing. (default: false)
       */
-    var autoHideControlNav: js.UndefOr[Boolean] = js.native
+    var autoHideControlNav: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Vimeo embed code. %id% is replaced by video id. (default: '<iframe src="http://player.vimeo.com/video/%id%?byline=0&amp;portrait=0&amp;autoplay=1" frameborder="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
       */
-    var vimeoCode: js.UndefOr[String] = js.native
+    var vimeoCode: js.UndefOr[String] = js.undefined
     
     /**
       * Youtube embed code. %id% is replaced by video id. (default: '<iframe src="http://www.youtube.com/embed/%id%?rel=1&autoplay=1&showinfo=0" frameborder="no"></iframe>')
       */
-    var youTubeCode: js.UndefOr[String] = js.native
+    var youTubeCode: js.UndefOr[String] = js.undefined
   }
   object RoyalSliderVideoOptions {
     
@@ -1294,38 +1285,37 @@ object RoyalSlider {
     }
   }
   
-  @js.native
   trait RoyalSliderVisibleOptions extends StObject {
     
     /**
       * Used for responsive design. Changes centerArea value to breakpointCenterArea when width of slider is less then value in this option. Set to 0 to disable. (default: 0)
       */
-    var breakpoint: js.UndefOr[Double] = js.native
+    var breakpoint: js.UndefOr[Double] = js.undefined
     
     /**
       * Same as centerArea option, just for breakpoint. Can be changed dynamically via `sliderInstance.st.breakpointCenterArea`. (default: 0.8)
       */
-    var breakpointCenterArea: js.UndefOr[Double] = js.native
+    var breakpointCenterArea: js.UndefOr[Double] = js.undefined
     
     /**
       * Alignment of center image, if you set it to false center image will be aligned to left. (default: true)
       */
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Ratio that determines area of center image.For example for 0.6 - 60 % of slider area will get center image and 20% for two images on sides. (default: 0.6)
       */
-    var centerArea: js.UndefOr[Double] = js.native
+    var centerArea: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable visible-nearby. (default: true)
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables navigation to next slide by clicking on current slide (if navigateByClick is true). (default: true)
       */
-    var navigateByCenterClick: js.UndefOr[Boolean] = js.native
+    var navigateByCenterClick: js.UndefOr[Boolean] = js.undefined
   }
   object RoyalSliderVisibleOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServiceActionExecutionParametersOutput extends StObject {
   
   /**
     * The parameters of the self-service action.
     */
-  var ServiceActionParameters: js.UndefOr[ExecutionParameters] = js.native
+  var ServiceActionParameters: js.UndefOr[ExecutionParameters] = js.undefined
 }
 object DescribeServiceActionExecutionParametersOutput {
   

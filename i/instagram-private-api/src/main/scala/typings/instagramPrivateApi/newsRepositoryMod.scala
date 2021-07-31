@@ -5,7 +5,6 @@ import typings.instagramPrivateApi.newsRepositoryInboxResponseMod.NewsRepository
 import typings.instagramPrivateApi.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object newsRepositoryMod {

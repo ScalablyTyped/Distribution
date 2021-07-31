@@ -2,51 +2,49 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTaskRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that is used to monitor and log events in the task. 
     */
-  var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.native
+  var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an AWS storage resource's location. 
     */
-  var DestinationLocationArn: LocationArn = js.native
+  var DestinationLocationArn: LocationArn
   
   /**
     * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".   
     */
-  var Excludes: js.UndefOr[FilterList] = js.native
+  var Excludes: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The name of a task. This value is a text reference that is used to identify the task in the console. 
     */
-  var Name: js.UndefOr[TagValue] = js.native
+  var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
     * The set of configuration options that control the behavior of a single execution of the task that occurs when you call StartTaskExecution. You can configure these options to preserve metadata such as user ID (UID) and group ID (GID), file permissions, data integrity verification, and so on. For each individual task execution, you can override these options by specifying the OverrideOptions before starting the task execution. For more information, see the operation. 
     */
-  var Options: js.UndefOr[typings.awsSdk.datasyncMod.Options] = js.native
+  var Options: js.UndefOr[typings.awsSdk.datasyncMod.Options] = js.undefined
   
   /**
     * Specifies a schedule used to periodically transfer files from a source to a destination location. The schedule should be specified in UTC time. For more information, see task-scheduling.
     */
-  var Schedule: js.UndefOr[TaskSchedule] = js.native
+  var Schedule: js.UndefOr[TaskSchedule] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source location for the task.
     */
-  var SourceLocationArn: LocationArn = js.native
+  var SourceLocationArn: LocationArn
   
   /**
     * The key-value pair that represents the tag that you want to add to the resource. The value can be an empty string. 
     */
-  var Tags: js.UndefOr[InputTagList] = js.native
+  var Tags: js.UndefOr[InputTagList] = js.undefined
 }
 object CreateTaskRequest {
   

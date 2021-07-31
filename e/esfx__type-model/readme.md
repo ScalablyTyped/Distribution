@@ -11,8 +11,8 @@ Utility types for TypeScript.
 | Full name          | @esfx/type-model |
 | Keywords           | - |
 | # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 168908 |
+| # dependents       | 5 |
+| # downloads        | 197763 |
 | # stars            | 0 |
 
 ## Links

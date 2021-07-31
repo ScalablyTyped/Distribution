@@ -2,25 +2,23 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avatar extends StObject {
   
   // 账号的邮箱
-  var avatar: String = js.native
+  var avatar: String
   
   // 账号对应的手机号码
-  var email: String = js.native
+  var email: String
   
   // 账号的真实姓名
-  var mobile: String = js.native
+  var mobile: String
   
-  var realName: String = js.native
+  var realName: String
   
   // 账号的头像链接
-  var userId: String = js.native
+  var userId: String
 }
 object Avatar {
   

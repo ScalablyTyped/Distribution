@@ -2,21 +2,19 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cooldown extends StObject {
   
   /**
     * Cooldown ticks remaining, or undefined if the power creep is not spawned in the world.
     */
-  var cooldown: js.UndefOr[Double] = js.native
+  var cooldown: js.UndefOr[Double] = js.undefined
   
   /**
     * Current level of the power
     */
-  var level: Double = js.native
+  var level: Double
 }
 object Cooldown {
   

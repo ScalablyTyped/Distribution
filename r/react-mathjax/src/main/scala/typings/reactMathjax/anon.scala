@@ -3,19 +3,17 @@ package typings.reactMathjax
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var script: js.UndefOr[String | Boolean] = js.native
+    var script: js.UndefOr[String | Boolean] = js.undefined
   }
   object Children {
     
@@ -48,14 +46,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Formula extends StObject {
     
-    var formula: String = js.native
+    var formula: String
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var onRender: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Formula {
     

@@ -8,12 +8,10 @@ import typings.semanticRelease.mod.Result
 import typings.semanticRelease.semanticReleaseBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Channel extends StObject {
     
     /**
@@ -37,7 +35,7 @@ object anon {
       * For example `{name: 'next', channel: 'channel-${name}'}` will be
       * expanded to `{name: 'next', channel: 'channel-next'}`.
       */
-    var channel: js.UndefOr[String | `false`] = js.native
+    var channel: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * The name of git branch.
@@ -53,7 +51,7 @@ object anon {
       * active only  when the branches `next` and/or `next-major` are
       * created in the repository.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The pre-release identifier to append to [semantic versions](https://semver.org/)
@@ -75,7 +73,7 @@ object anon {
       *
       * Required for pre-release branches.
       */
-    var prerelease: js.UndefOr[String | Boolean] = js.native
+    var prerelease: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * The range of [semantic versions](https://semver.org/) to support on
@@ -90,7 +88,7 @@ object anon {
       * Required for maintenance branches, unless `name` is formatted like
       * `N.N.x` or `N.x` (`N` is a number).
       */
-    var range: js.UndefOr[String] = js.native
+    var range: js.UndefOr[String] = js.undefined
   }
   object Channel {
     
@@ -126,28 +124,29 @@ object anon {
     }
   }
   
-  @js.native
-  trait Commits extends Result {
+  trait Commits
+    extends StObject
+       with Result {
     
     /**
       * The list of commits included in the new release.
       */
-    var commits: js.Array[Commit] = js.native
+    var commits: js.Array[Commit]
     
     /**
       * Information related to the last release found.
       */
-    var lastRelease: LastRelease = js.native
+    var lastRelease: LastRelease
     
     /**
       * Information related to the newly published release.
       */
-    var nextRelease: NextRelease = js.native
+    var nextRelease: NextRelease
     
     /**
       * The list of releases published, one release per publish plugin.
       */
-    var releases: js.Array[Release] = js.native
+    var releases: js.Array[Release]
   }
   object Commits {
     
@@ -185,23 +184,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
     /**
       * The committer email.
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * The committer name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The committer date.
       */
-    var short: String = js.native
+    var short: String
   }
   object Email {
     
@@ -225,12 +223,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    def error(message: String, vars: js.Any*): Unit = js.native
+    def error(message: String, vars: js.Any*): Unit
     
-    def log(message: String, vars: js.Any*): Unit = js.native
+    def log(message: String, vars: js.Any*): Unit
   }
   object Error {
     
@@ -251,18 +248,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Long extends StObject {
     
     /**
       * The commit tree hash.
       */
-    var long: String = js.native
+    var long: String
     
     /**
       * The commit abbreviated tree hash.
       */
-    var short: String = js.native
+    var short: String
   }
   object Long {
     

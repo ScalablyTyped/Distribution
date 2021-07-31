@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookTableColumn extends Entity {
+trait WorkbookTableColumn
+  extends StObject
+     with Entity {
   
   // Retrieve the filter applied to the column. Read-only.
-  var filter: js.UndefOr[NullableOption[WorkbookFilter]] = js.native
+  var filter: js.UndefOr[NullableOption[WorkbookFilter]] = js.undefined
   
   // Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   // Returns the name of the table column.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell
     * that contain an error will return the error string.
     */
-  var values: js.UndefOr[NullableOption[_]] = js.native
+  var values: js.UndefOr[NullableOption[js.Any]] = js.undefined
 }
 object WorkbookTableColumn {
   
@@ -59,7 +59,7 @@ object WorkbookTableColumn {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setValues(value: NullableOption[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesNull: Self = StObject.set(x, "values", null)

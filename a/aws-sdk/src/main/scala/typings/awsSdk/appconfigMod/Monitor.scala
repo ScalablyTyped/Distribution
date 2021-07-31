@@ -2,21 +2,19 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Monitor extends StObject {
   
   /**
     * ARN of the Amazon CloudWatch alarm.
     */
-  var AlarmArn: js.UndefOr[Arn] = js.native
+  var AlarmArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * ARN of an IAM role for AppConfig to monitor AlarmArn.
     */
-  var AlarmRoleArn: js.UndefOr[RoleArn] = js.native
+  var AlarmRoleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object Monitor {
   

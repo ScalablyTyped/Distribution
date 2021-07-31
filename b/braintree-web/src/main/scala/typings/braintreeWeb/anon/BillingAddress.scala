@@ -2,17 +2,15 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingAddress extends StObject {
   
-  var billingAddress: js.UndefOr[js.Any] = js.native
+  var billingAddress: js.UndefOr[js.Any] = js.undefined
   
-  var cardholderName: js.UndefOr[String] = js.native
+  var cardholderName: js.UndefOr[String] = js.undefined
   
-  var vault: js.UndefOr[Boolean] = js.native
+  var vault: js.UndefOr[Boolean] = js.undefined
 }
 object BillingAddress {
   

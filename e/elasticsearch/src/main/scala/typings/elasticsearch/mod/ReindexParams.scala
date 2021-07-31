@@ -2,26 +2,26 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReindexParams extends GenericParams {
+trait ReindexParams
+  extends StObject
+     with GenericParams {
   
   @JSName("body")
-  var body_ReindexParams: typings.elasticsearch.anon.Conflicts = js.native
+  var body_ReindexParams: typings.elasticsearch.anon.Conflicts
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var requestsPerSecond: js.UndefOr[Double] = js.native
+  var requestsPerSecond: js.UndefOr[Double] = js.undefined
   
-  var slices: js.UndefOr[Double] = js.native
+  var slices: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.undefined
   
-  var waitForCompletion: js.UndefOr[Boolean] = js.native
+  var waitForCompletion: js.UndefOr[Boolean] = js.undefined
 }
 object ReindexParams {
   

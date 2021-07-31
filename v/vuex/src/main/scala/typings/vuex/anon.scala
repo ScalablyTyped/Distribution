@@ -8,21 +8,19 @@ import typings.vuex.mod.MutationTree
 import typings.vuex.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actions[S] extends StObject {
     
-    var actions: js.UndefOr[ActionTree[S, S]] = js.native
+    var actions: js.UndefOr[ActionTree[S, S]] = js.undefined
     
-    var getters: js.UndefOr[GetterTree[S, S]] = js.native
+    var getters: js.UndefOr[GetterTree[S, S]] = js.undefined
     
-    var modules: js.UndefOr[ModuleTree[S]] = js.native
+    var modules: js.UndefOr[ModuleTree[S]] = js.undefined
     
-    var mutations: js.UndefOr[MutationTree[S]] = js.native
+    var mutations: js.UndefOr[MutationTree[S]] = js.undefined
   }
   object Actions {
     
@@ -33,7 +31,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ActionsMutableBuilder[Self <: Actions[_], S] (val x: Self with Actions[S]) extends AnyVal {
+    implicit class ActionsMutableBuilder[Self <: Actions[?], S] (val x: Self & Actions[S]) extends AnyVal {
       
       @scala.inline
       def setActions(value: ActionTree[S, S]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])

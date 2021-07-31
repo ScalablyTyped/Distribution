@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceProperties extends StObject {
   
   /**
@@ -14,70 +12,70 @@ trait InstanceProperties extends StObject {
     * own. If these instances will be used as an IP gateway or it will be set as the next-hop in a Route resource, specify true. If unsure, leave this set to false. See the Enable IP
     * forwarding documentation for more information.
     */
-  var canIpForward: js.UndefOr[Boolean] = js.native
+  var canIpForward: js.UndefOr[Boolean] = js.undefined
   
   /** Specifies the Confidential Instance options. */
-  var confidentialInstanceConfig: js.UndefOr[ConfidentialInstanceConfig] = js.native
+  var confidentialInstanceConfig: js.UndefOr[ConfidentialInstanceConfig] = js.undefined
   
   /** An optional text description for the instances that are created from these properties. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** An array of disks that are associated with the instances that are created from these properties. */
-  var disks: js.UndefOr[js.Array[AttachedDisk]] = js.native
+  var disks: js.UndefOr[js.Array[AttachedDisk]] = js.undefined
   
   /** A list of guest accelerator cards' type and count to use for instances created from these properties. */
-  var guestAccelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.undefined
   
   /** Labels to apply to instances that are created from these properties. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The machine type to use for instances that are created from these properties. */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key/value pairs to assign to instances that are created from these properties. These pairs can consist of custom metadata or predefined keys. See Project and instance
     * metadata for more information.
     */
-  var metadata: js.UndefOr[Metadata] = js.native
+  var metadata: js.UndefOr[Metadata] = js.undefined
   
   /**
     * Minimum cpu/platform to be used by instances. The instance may be scheduled on the specified or newer cpu/platform. Applicable values are the friendly names of CPU platforms, such
     * as minCpuPlatform: "Intel Haswell" or minCpuPlatform: "Intel Sandy Bridge". For more information, read Specifying a Minimum CPU Platform.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /** An array of network access configurations for this interface. */
-  var networkInterfaces: js.UndefOr[js.Array[NetworkInterface]] = js.native
+  var networkInterfaces: js.UndefOr[js.Array[NetworkInterface]] = js.undefined
   
   /** The private IPv6 google access type for VMs. If not specified, use  INHERIT_FROM_SUBNETWORK as default. */
-  var privateIpv6GoogleAccess: js.UndefOr[String] = js.native
+  var privateIpv6GoogleAccess: js.UndefOr[String] = js.undefined
   
   /** Specifies the reservations that instances can consume from. */
-  var reservationAffinity: js.UndefOr[ReservationAffinity] = js.native
+  var reservationAffinity: js.UndefOr[ReservationAffinity] = js.undefined
   
   /** Resource policies (names, not ULRs) applied to instances created from these properties. */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Specifies the scheduling options for the instances that are created from these properties. */
-  var scheduling: js.UndefOr[Scheduling] = js.native
+  var scheduling: js.UndefOr[Scheduling] = js.undefined
   
   /**
     * A list of service accounts with specified scopes. Access tokens for these service accounts are available to the instances that are created from these properties. Use metadata
     * queries to obtain the access tokens for these instances.
     */
-  var serviceAccounts: js.UndefOr[js.Array[ServiceAccount]] = js.native
+  var serviceAccounts: js.UndefOr[js.Array[ServiceAccount]] = js.undefined
   
-  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.native
+  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.undefined
   
   /**
     * A list of tags to apply to the instances that are created from these properties. The tags identify valid sources or targets for network firewalls. The setTags method can modify this
     * list of tags. Each tag within the list must comply with RFC1035.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object InstanceProperties {
   
@@ -130,7 +128,7 @@ object InstanceProperties {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

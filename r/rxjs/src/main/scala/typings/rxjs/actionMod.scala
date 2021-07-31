@@ -5,7 +5,6 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.SchedulerAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionMod {
@@ -31,6 +30,6 @@ object actionMod {
     def schedule(): Subscription = js.native
     def schedule(state: T): Subscription = js.native
     def schedule(state: T, delay: Double): Subscription = js.native
-    def schedule(state: js.UndefOr[scala.Nothing], delay: Double): Subscription = js.native
+    def schedule(state: Unit, delay: Double): Subscription = js.native
   }
 }

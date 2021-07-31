@@ -3,29 +3,27 @@ package typings.ytSearch.mod
 import typings.ytSearch.ytSearchStrings.live_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveSearchResultBase extends StObject {
   
-  var author: Author = js.native
+  var author: Author
   
-  var description: String = js.native
+  var description: String
   
-  var image: String = js.native
+  var image: String
   
-  var thumbnail: String = js.native
+  var thumbnail: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: live_ = js.native
+  var `type`: live_
   
-  var url: String = js.native
+  var url: String
   
-  var videoId: String = js.native
+  var videoId: String
   
-  var watching: Double = js.native
+  var watching: Double
 }
 object LiveSearchResultBase {
   
@@ -36,13 +34,12 @@ object LiveSearchResultBase {
     image: String,
     thumbnail: String,
     title: String,
-    `type`: live_,
     url: String,
     videoId: String,
     watching: Double
   ): LiveSearchResultBase = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any], watching = watching.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("live")
     __obj.asInstanceOf[LiveSearchResultBase]
   }
   

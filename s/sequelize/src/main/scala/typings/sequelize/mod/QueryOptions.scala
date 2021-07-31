@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,40 +10,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Options
   */
-@js.native
 trait QueryOptions
-  extends SearchPathOptions
+  extends StObject
+     with SearchPathOptions
      with ReturningOptions {
   
   /**
     * Either an object of named bind parameter in the format `$param` or an array of unnamed
     * bind parameter to replace `$1`, `$2`, ... in your SQL.
     */
-  var bind: js.UndefOr[js.Object | js.Array[String]] = js.native
+  var bind: js.UndefOr[js.Object | js.Array[String]] = js.undefined
   
   // TODO: force, cascade
-  var fieldMap: js.UndefOr[StringDictionary[String]] = js.native
+  var fieldMap: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A sequelize instance used to build the return instance
     */
-  var instance: js.UndefOr[Instance[_]] = js.native
+  var instance: js.UndefOr[Instance[js.Any]] = js.undefined
   
   /**
     * A function that gets executed while running the query to log the sql.
     */
-  var logging: js.UndefOr[Boolean | js.Function] = js.native
+  var logging: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
     * Map returned fields to model's fields if `options.model` or `options.instance` is present.
     * Mapping will occur before building the model instance.
     */
-  var mapToModel: js.UndefOr[Boolean] = js.native
+  var mapToModel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A sequelize model used to build the returned model instances (used to be called callee)
     */
-  var model: js.UndefOr[Model[_, _, _]] = js.native
+  var model: js.UndefOr[Model[js.Any, js.Any, js.Any]] = js.undefined
   
   /**
     * If true, transforms objects with `.` separated property names into nested objects using
@@ -54,47 +53,47 @@ trait QueryOptions
     *
     * Defaults to false
     */
-  var nest: js.UndefOr[Boolean] = js.native
+  var nest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the query type to `SELECT` and return a single row
     */
-  var plain: js.UndefOr[Boolean] = js.native
+  var plain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, sequelize will not try to format the results of the query, or build an instance of a model from
     * the result
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Either an object of named parameter replacements in the format `:param` or an array of unnamed
     * replacements to replace `?` in your SQL.
     */
-  var replacements: js.UndefOr[js.Object | js.Array[String]] = js.native
+  var replacements: js.UndefOr[js.Object | js.Array[String]] = js.undefined
   
   /**
     * Set of flags that control when a query is automatically retried.
     */
-  var retry: js.UndefOr[RetryOptions] = js.native
+  var retry: js.UndefOr[RetryOptions] = js.undefined
   
   /**
     * If false do not prepend the query with the search_path (Postgres only)
     */
-  var supportsSearchPath: js.UndefOr[Boolean] = js.native
+  var supportsSearchPath: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of query you are executing. The query type affects how results are formatted before they are
     * passed back. The type is a string, but `Sequelize.QueryTypes` is provided as convenience shortcuts.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Force the query to use the write pool, regardless of the query type.
     *
     * Defaults to false
     */
-  var useMaster: js.UndefOr[Boolean] = js.native
+  var useMaster: js.UndefOr[Boolean] = js.undefined
 }
 object QueryOptions {
   
@@ -123,7 +122,7 @@ object QueryOptions {
     def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
     
     @scala.inline
-    def setInstance(value: Instance[_]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    def setInstance(value: Instance[js.Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
@@ -141,7 +140,7 @@ object QueryOptions {
     def setMapToModelUndefined: Self = StObject.set(x, "mapToModel", js.undefined)
     
     @scala.inline
-    def setModel(value: Model[_, _, _]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setModelUndefined: Self = StObject.set(x, "model", js.undefined)

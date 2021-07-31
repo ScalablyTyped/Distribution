@@ -4,23 +4,23 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.center
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForceCenter extends Force {
+trait ForceCenter
+  extends StObject
+     with Force {
   
-  var force: center = js.native
+  var force: center
   
-  var x: js.UndefOr[Double | SignalRef] = js.native
+  var x: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var y: js.UndefOr[Double | SignalRef] = js.native
+  var y: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object ForceCenter {
   
   @scala.inline
-  def apply(force: center): ForceCenter = {
-    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+  def apply(): ForceCenter = {
+    val __obj = js.Dynamic.literal(force = "center")
     __obj.asInstanceOf[ForceCenter]
   }
   

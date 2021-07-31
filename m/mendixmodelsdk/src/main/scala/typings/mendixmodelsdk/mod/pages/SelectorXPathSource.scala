@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.SelectorXPathSource")
@@ -37,9 +36,8 @@ object SelectorXPathSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SelectorXPathSource.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource]
   
   /**
     * Creates and returns a new SelectorXPathSource instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object SelectorXPathSource {
     * of the parent AssociationWidget element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.SelectorXPathSource.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.SelectorXPathSource.structureTypeName")

@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MLUserDataEncryption extends StObject {
   
   /**
     * The ID for the customer-provided KMS key.
     */
-  var KmsKeyId: js.UndefOr[NameString] = js.native
+  var KmsKeyId: js.UndefOr[NameString] = js.undefined
   
   /**
     * The encryption mode applied to user data. Valid values are:   DISABLED: encryption is disabled   SSEKMS: use of server-side encryption with AWS Key Management Service (SSE-KMS) for user data stored in Amazon S3.  
     */
-  var MlUserDataEncryptionMode: MLUserDataEncryptionModeString = js.native
+  var MlUserDataEncryptionMode: MLUserDataEncryptionModeString
 }
 object MLUserDataEncryption {
   

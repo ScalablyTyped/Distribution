@@ -8,15 +8,13 @@ import typings.rmcDrawer.rmcDrawerStrings.right
 import typings.rmcDrawer.rmcDrawerStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait OverlayClicked extends StObject {
     
-    var overlayClicked: Boolean = js.native
+    var overlayClicked: Boolean
   }
   object OverlayClicked {
     
@@ -35,42 +33,41 @@ object anon {
   }
   
   /* Inlined std.Partial<rmc-drawer.rmc-drawer.DrawerProps> */
-  @js.native
   trait PartialDrawerProps extends StObject {
     
-    var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.native
+    var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[CSSProperties] = js.native
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var docked: js.UndefOr[Boolean] = js.native
+    var docked: js.UndefOr[Boolean] = js.undefined
     
-    var dragHandleStyle: js.UndefOr[CSSProperties] = js.native
+    var dragHandleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var dragToggleDistance: js.UndefOr[Double] = js.native
+    var dragToggleDistance: js.UndefOr[Double] = js.undefined
     
-    var enableDragHandle: js.UndefOr[Boolean] = js.native
+    var enableDragHandle: js.UndefOr[Boolean] = js.undefined
     
-    var onOpenChange: js.UndefOr[js.Function2[/* open */ Boolean, /* overlay */ js.UndefOr[OverlayClicked], Unit]] = js.native
+    var onOpenChange: js.UndefOr[js.Function2[/* open */ Boolean, /* overlay */ js.UndefOr[OverlayClicked], Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var position: js.UndefOr[left | right | top | bottom] = js.native
+    var position: js.UndefOr[left | right | top | bottom] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var sidebar: js.UndefOr[ReactNode] = js.native
+    var sidebar: js.UndefOr[ReactNode] = js.undefined
     
-    var sidebarStyle: js.UndefOr[CSSProperties] = js.native
+    var sidebarStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
     
-    var transitions: js.UndefOr[Boolean] = js.native
+    var transitions: js.UndefOr[Boolean] = js.undefined
   }
   object PartialDrawerProps {
     

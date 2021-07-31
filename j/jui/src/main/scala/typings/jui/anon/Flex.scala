@@ -4,57 +4,55 @@ import typings.jui.juiStrings.bottom
 import typings.jui.juiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flex extends StObject {
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Boolean} [flex=true]
     * Drop-down menu is varied by changing the width function
     */
-  var flex: js.UndefOr[Boolean] = js.native
+  var flex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {Integer} [height=100]
     * Determines an initial selection button with a specified value
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {Integer} [index=0]
     * Determines an initial selection button with a specified index
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {Boolean} [keydown=false]
     * It is possible to select a node using the keyboard
     */
-  var keydown: js.UndefOr[Boolean] = js.native
+  var keydown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {"top"/"bottom"} [position="bottom"]
     * It is possible to determine an initial selection button with a specified value
     */
-  var position: js.UndefOr[top | bottom] = js.native
+  var position: js.UndefOr[top | bottom] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {String} [value=0]
     * Determines an initial selection button with a specified value
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {Integer} [width=0]
     * Determines the horizontal size of a combo box
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Flex {
   

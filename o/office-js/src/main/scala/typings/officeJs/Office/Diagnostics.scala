@@ -6,7 +6,6 @@ import typings.officeJs.officeJsStrings.ThreeColumns
 import typings.officeJs.officeJsStrings.TwoColumns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait Diagnostics extends StObject {
   
   /**
@@ -44,7 +42,7 @@ trait Diagnostics extends StObject {
     * 
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var OWAView: typings.officeJs.Office.MailboxEnums.OWAView | OneColumn | TwoColumns | ThreeColumns = js.native
+  var OWAView: typings.officeJs.Office.MailboxEnums.OWAView | OneColumn | TwoColumns | ThreeColumns
   
   /**
     * Gets a string that represents the name of the host application.
@@ -59,7 +57,7 @@ trait Diagnostics extends StObject {
     * 
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var hostName: String = js.native
+  var hostName: String
   
   /**
     * Gets a string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0").
@@ -73,7 +71,7 @@ trait Diagnostics extends StObject {
     * 
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var hostVersion: String = js.native
+  var hostVersion: String
 }
 object Diagnostics {
   

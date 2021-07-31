@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CostExplorer extends Service {
   
   @JSName("config")
-  var config_CostExplorer: ConfigBase with ClientConfiguration = js.native
+  var config_CostExplorer: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new cost anomaly detection monitor with the requested type and monitor specification. 

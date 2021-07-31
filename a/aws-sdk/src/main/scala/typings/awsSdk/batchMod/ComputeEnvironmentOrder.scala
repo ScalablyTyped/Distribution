@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputeEnvironmentOrder extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the compute environment.
     */
-  var computeEnvironment: String = js.native
+  var computeEnvironment: String
   
   /**
     * The order of the compute environment.
     */
-  var order: Integer = js.native
+  var order: Integer
 }
 object ComputeEnvironmentOrder {
   

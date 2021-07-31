@@ -2,24 +2,22 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about an image.
   */
-@js.native
 trait IImageInfo extends StObject {
   
   /**
     * The height, in pixels, of this image of this particular size.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The width, in pixels, of this image of this particular size.
     */
-  var source: String = js.native
+  var source: String
   
   /**
     * The type of this image of this particular size. Valid values are:
@@ -28,12 +26,12 @@ trait IImageInfo extends StObject {
     * - album (maximum size 176 x 176 pixels)
     * - small (maximum size 96 x 96 pixels)
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The width, in pixels, of this image of this particular size.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object IImageInfo {
   

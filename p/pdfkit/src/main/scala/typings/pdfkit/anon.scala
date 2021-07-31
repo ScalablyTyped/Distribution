@@ -2,23 +2,21 @@ package typings.pdfkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Annots extends StObject {
     
-    var Annots: js.Any = js.native
+    var Annots: js.Any
     
-    var ExtGState: js.UndefOr[js.Any] = js.native
+    var ExtGState: js.UndefOr[js.Any] = js.undefined
     
-    var Font: js.UndefOr[js.Any] = js.native
+    var Font: js.UndefOr[js.Any] = js.undefined
     
-    var Pattern: js.Any = js.native
+    var Pattern: js.Any
     
-    var XObject: js.UndefOr[js.Any] = js.native
+    var XObject: js.UndefOr[js.Any] = js.undefined
   }
   object Annots {
     
@@ -57,16 +55,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -93,12 +90,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Count {
     
@@ -119,10 +115,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Origin extends StObject {
     
-    var origin: js.UndefOr[js.Array[Double]] = js.native
+    var origin: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Origin {
     

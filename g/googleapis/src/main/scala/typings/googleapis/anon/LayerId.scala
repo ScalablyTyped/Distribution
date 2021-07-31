@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerId extends StObject {
   
-  var allowedCharacterCount: js.UndefOr[Double] = js.native
+  var allowedCharacterCount: js.UndefOr[Double] = js.undefined
   
-  var layerId: js.UndefOr[String] = js.native
+  var layerId: js.UndefOr[String] = js.undefined
   
-  var limitType: js.UndefOr[String] = js.native
+  var limitType: js.UndefOr[String] = js.undefined
   
-  var remainingCharacterCount: js.UndefOr[Double] = js.native
+  var remainingCharacterCount: js.UndefOr[Double] = js.undefined
   
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object LayerId {
   

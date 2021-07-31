@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.TablePersoDialog")
 @js.native
 class TablePersoDialog protected ()
-  extends typings.openui5.sap.m.TablePersoDialog {
+  extends StObject
+     with typings.openui5.sap.m.TablePersoDialog {
   /**
     * The TablePersoDialog can be used to display and allow modification of personalization settings
     * relating to a Table. It displays the columns of the table that it refers to by using<ul><li>The

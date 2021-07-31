@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ProductDetail extends StObject {
   
   /**
@@ -13,31 +11,31 @@ trait GoogleCloudRecommendationengineV1beta1ProductDetail extends StObject {
     * `stock_status` is set to `IN_STOCK`. Note that if an item is out of stock, you must set the `stock_state` field to be `OUT_OF_STOCK`. Leaving this field unspecified / as zero is not
     * sufficient to mark the item out of stock.
     */
-  var availableQuantity: js.UndefOr[Double] = js.native
+  var availableQuantity: js.UndefOr[Double] = js.undefined
   
   /** Optional. Currency code for price/costs. Use three-character ISO-4217 code. Required only if originalPrice or displayPrice is set. */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /** Optional. Display price of the product (e.g. discounted price). If provided, this will override the display price in Catalog for this product. */
-  var displayPrice: js.UndefOr[Double] = js.native
+  var displayPrice: js.UndefOr[Double] = js.undefined
   
   /** Required. Catalog item ID. UTF-8 encoded string with a length limit of 128 characters. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Optional. Extra features associated with a product in the user event. */
-  var itemAttributes: js.UndefOr[GoogleCloudRecommendationengineV1beta1FeatureMap] = js.native
+  var itemAttributes: js.UndefOr[GoogleCloudRecommendationengineV1beta1FeatureMap] = js.undefined
   
   /** Optional. Original price of the product. If provided, this will override the original price in Catalog for this product. */
-  var originalPrice: js.UndefOr[Double] = js.native
+  var originalPrice: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Quantity of the product associated with the user event. For example, this field will be 2 if two products are added to the shopping cart for `add-to-cart` event. Required
     * for `add-to-cart`, `add-to-list`, `remove-from-cart`, `checkout-start`, `purchase-complete`, `refund` event types.
     */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
   /** Optional. Item stock state. If provided, this overrides the stock state in Catalog for items in this event. */
-  var stockState: js.UndefOr[String] = js.native
+  var stockState: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ProductDetail {
   

@@ -2,7 +2,6 @@ package typings.googleMarkerclustererplus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *      If this value is <code>undefined</code> or <code>""</code>, <code>title</code> is set to the
   *      value of the <code>title</code> property passed to the MarkerClusterer.
   */
-@js.native
 trait ClusterIconInfo extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var text: java.lang.String = js.native
+  var text: java.lang.String
   
-  var title: java.lang.String = js.native
+  var title: java.lang.String
 }
 object ClusterIconInfo {
   

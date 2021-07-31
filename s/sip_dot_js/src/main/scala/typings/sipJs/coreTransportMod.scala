@@ -2,12 +2,10 @@ package typings.sipJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreTransportMod {
   
-  @js.native
   trait Transport extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object coreTransportMod {
       * Formatted as defined for the Via header sent-protocol transport.
       * https://tools.ietf.org/html/rfc3261#section-20.42
       */
-    val protocol: String = js.native
+    val protocol: String
     
     /**
       * Send a message.
@@ -27,7 +25,7 @@ object coreTransportMod {
       *
       * @param message - Message to send.
       */
-    def send(message: String): js.Promise[Unit] = js.native
+    def send(message: String): js.Promise[Unit]
   }
   object Transport {
     

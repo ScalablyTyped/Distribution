@@ -9,21 +9,20 @@ import typings.winrtUwp.winrtUwpStrings.consolidated
 import typings.winrtUwp.winrtUwpStrings.visibleboundschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the active application view and associated states and behaviors. */
 @js.native
 trait ApplicationView extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_consolidated(
     `type`: consolidated,
     listener: TypedEventHandler[ApplicationView, ApplicationViewConsolidatedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, _]): Unit = js.native
+  def addEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, js.Any]): Unit = js.native
   
   /** Gets whether the current window (app view) is adjacent to the left edge of the screen, whether the window is full-screen or docked. */
   var adjacentToLeftDisplayEdge: Boolean = js.native
@@ -56,28 +55,28 @@ trait ApplicationView extends StObject {
   var isScreenCaptureEnabled: Boolean = js.native
   
   /** Occurs when the window is removed from the list of recently used apps, or if the user executes a close gesture on it. */
-  def onconsolidated(ev: ApplicationViewConsolidatedEventArgs with WinRTEvent[ApplicationView]): Unit = js.native
+  def onconsolidated(ev: ApplicationViewConsolidatedEventArgs & WinRTEvent[ApplicationView]): Unit = js.native
   /** Occurs when the window is removed from the list of recently used apps, or if the user executes a close gesture on it. */
   @JSName("onconsolidated")
   var onconsolidated_Original: TypedEventHandler[ApplicationView, ApplicationViewConsolidatedEventArgs] = js.native
   
   /** This event is raised when the value of VisibleBounds changes, typically as a result of the status bar, app bar, or other chrome being shown or hidden. */
-  def onvisibleboundschanged(ev: js.Any with WinRTEvent[ApplicationView]): Unit = js.native
+  def onvisibleboundschanged(ev: js.Any & WinRTEvent[ApplicationView]): Unit = js.native
   /** This event is raised when the value of VisibleBounds changes, typically as a result of the status bar, app bar, or other chrome being shown or hidden. */
   @JSName("onvisibleboundschanged")
-  var onvisibleboundschanged_Original: TypedEventHandler[ApplicationView, _] = js.native
+  var onvisibleboundschanged_Original: TypedEventHandler[ApplicationView, js.Any] = js.native
   
   /** Gets the current orientation (landscape or portrait) of the window (app view) with respect to the display. */
   var orientation: ApplicationViewOrientation = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_consolidated(
     `type`: consolidated,
     listener: TypedEventHandler[ApplicationView, ApplicationViewConsolidatedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, _]): Unit = js.native
+  def removeEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, js.Any]): Unit = js.native
   
   /**
     * Sets a value indicating the bounds used by the framework to lay out the contents of the window (app view).

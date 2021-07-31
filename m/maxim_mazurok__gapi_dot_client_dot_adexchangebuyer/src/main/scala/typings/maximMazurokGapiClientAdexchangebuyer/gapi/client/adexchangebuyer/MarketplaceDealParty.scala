@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarketplaceDealParty extends StObject {
   
   /** The buyer/seller associated with the deal. One of buyer/seller is specified for a deal-party. */
-  var buyer: js.UndefOr[Buyer] = js.native
+  var buyer: js.UndefOr[Buyer] = js.undefined
   
   /** The buyer/seller associated with the deal. One of buyer/seller is specified for a deal party. */
-  var seller: js.UndefOr[Seller] = js.native
+  var seller: js.UndefOr[Seller] = js.undefined
 }
 object MarketplaceDealParty {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stream extends StObject {
   
   /**
     * The ID of a file associated with a stream.
     */
-  var fileId: js.UndefOr[FileId] = js.native
+  var fileId: js.UndefOr[FileId] = js.undefined
   
   /**
     * The stream ID.
     */
-  var streamId: js.UndefOr[StreamId] = js.native
+  var streamId: js.UndefOr[StreamId] = js.undefined
 }
 object Stream {
   

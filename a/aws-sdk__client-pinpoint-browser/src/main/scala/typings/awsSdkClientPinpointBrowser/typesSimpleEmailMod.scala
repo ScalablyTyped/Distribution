@@ -4,28 +4,26 @@ import typings.awsSdkClientPinpointBrowser.typesSimpleEmailPartMod.SimpleEmailPa
 import typings.awsSdkClientPinpointBrowser.typesSimpleEmailPartMod.UnmarshalledSimpleEmailPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSimpleEmailMod {
   
-  @js.native
   trait SimpleEmail extends StObject {
     
     /**
       * The content of the message, in HTML format. Use this for email clients that can process HTML. You can include clickable links, formatted text, and much more in an HTML message.
       */
-    var HtmlPart: js.UndefOr[SimpleEmailPart] = js.native
+    var HtmlPart: js.UndefOr[SimpleEmailPart] = js.undefined
     
     /**
       * The subject of the message: A short summary of the content, which will appear in the recipient's inbox.
       */
-    var Subject: js.UndefOr[SimpleEmailPart] = js.native
+    var Subject: js.UndefOr[SimpleEmailPart] = js.undefined
     
     /**
       * The content of the message, in text format. Use this for text-based email clients, or clients on high-latency networks (such as mobile devices).
       */
-    var TextPart: js.UndefOr[SimpleEmailPart] = js.native
+    var TextPart: js.UndefOr[SimpleEmailPart] = js.undefined
   }
   object SimpleEmail {
     
@@ -58,26 +56,27 @@ object typesSimpleEmailMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSimpleEmail extends SimpleEmail {
+  trait UnmarshalledSimpleEmail
+    extends StObject
+       with SimpleEmail {
     
     /**
       * The content of the message, in HTML format. Use this for email clients that can process HTML. You can include clickable links, formatted text, and much more in an HTML message.
       */
     @JSName("HtmlPart")
-    var HtmlPart_UnmarshalledSimpleEmail: js.UndefOr[UnmarshalledSimpleEmailPart] = js.native
+    var HtmlPart_UnmarshalledSimpleEmail: js.UndefOr[UnmarshalledSimpleEmailPart] = js.undefined
     
     /**
       * The subject of the message: A short summary of the content, which will appear in the recipient's inbox.
       */
     @JSName("Subject")
-    var Subject_UnmarshalledSimpleEmail: js.UndefOr[UnmarshalledSimpleEmailPart] = js.native
+    var Subject_UnmarshalledSimpleEmail: js.UndefOr[UnmarshalledSimpleEmailPart] = js.undefined
     
     /**
       * The content of the message, in text format. Use this for text-based email clients, or clients on high-latency networks (such as mobile devices).
       */
     @JSName("TextPart")
-    var TextPart_UnmarshalledSimpleEmail: js.UndefOr[UnmarshalledSimpleEmailPart] = js.native
+    var TextPart_UnmarshalledSimpleEmail: js.UndefOr[UnmarshalledSimpleEmailPart] = js.undefined
   }
   object UnmarshalledSimpleEmail {
     

@@ -10,15 +10,14 @@ import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updatePullRequestTitleExceptionsUnionMod.UpdatePullRequestTitleExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestDoesNotExistExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestDoesNotExistExceptionDetails> * / any */ @js.native
-  trait PullRequestDoesNotExistException
-    extends DescribePullRequestEventsExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestDoesNotExistExceptionDetails> * / any */ trait PullRequestDoesNotExistException
+    extends StObject
+       with DescribePullRequestEventsExceptionsUnion
        with GetCommentsForPullRequestExceptionsUnion
        with GetPullRequestExceptionsUnion
        with MergePullRequestByFastForwardExceptionsUnion
@@ -27,15 +26,13 @@ object typesPullRequestDoesNotExistExceptionMod {
        with UpdatePullRequestStatusExceptionsUnion
        with UpdatePullRequestTitleExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestDoesNotExistException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestDoesNotExistException
   }
   object PullRequestDoesNotExistException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestDoesNotExistException
-    ): PullRequestDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PullRequestDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "PullRequestDoesNotExistException")
       __obj.asInstanceOf[PullRequestDoesNotExistException]
     }
     
@@ -49,6 +46,5 @@ object typesPullRequestDoesNotExistExceptionMod {
     }
   }
   
-  @js.native
   trait PullRequestDoesNotExistExceptionDetails extends StObject
 }

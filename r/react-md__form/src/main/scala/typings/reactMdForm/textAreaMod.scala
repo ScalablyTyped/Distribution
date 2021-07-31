@@ -11,43 +11,42 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textAreaMod {
   
   @JSImport("@react-md/form/types/text-field/TextArea", "TextArea")
   @js.native
-  val TextArea: ForwardRefExoticComponent[TextAreaProps with RefAttributes[HTMLTextAreaElement]] = js.native
+  val TextArea: ForwardRefExoticComponent[TextAreaProps & RefAttributes[HTMLTextAreaElement]] = js.native
   
-  @js.native
   trait TextAreaProps
-    extends TextareaHTMLAttributes[HTMLTextAreaElement]
+    extends StObject
+       with TextareaHTMLAttributes[HTMLTextAreaElement]
        with TextFieldContainerOptions {
     
     /**
       * Boolean if the height changes should be animated when the `resize` prop is
       * set to `"auto"`.
       */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional className to apply to the textarea element. The base `style`
       * prop is applied to the surrounding `div` instead.
       */
-    var areaClassName: js.UndefOr[String] = js.native
+    var areaClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the textarea element. The base `style` prop
       * is applied to the surrounding `div` instead.
       */
-    var areaStyle: js.UndefOr[CSSProperties] = js.native
+    var areaStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * An optional ref to apply to the text field's container div element. The
       * default ref is forwarded on to the `input` element.
       */
-    var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
+    var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
     
     /**
       * The default value for the text field which will make it uncontrolled.  If
@@ -56,13 +55,13 @@ object textAreaMod {
       * instead for a controlled input.
       */
     @JSName("defaultValue")
-    var defaultValue_TextAreaProps: js.UndefOr[String] = js.native
+    var defaultValue_TextAreaProps: js.UndefOr[String] = js.undefined
     
     /**
       * An id to apply to the text area. This is required for a11y.
       */
     @JSName("id")
-    var id_TextAreaProps: String = js.native
+    var id_TextAreaProps: String
     
     /**
       * An optional floating label to use for the text field. This should really
@@ -70,30 +69,30 @@ object textAreaMod {
       * wrapped in the `<Label>` component itself and automatically apply the
       * `htmlFor` prop for this text field.
       */
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional className to apply to the label wrapper.
       */
-    var labelClassName: js.UndefOr[String] = js.native
+    var labelClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the label wrapper.
       */
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The maximum number of rows that are allowed. When this is set to `-1`, it
       * will infinitely expand based on the text content.
       */
-    var maxRows: js.UndefOr[Double] = js.native
+    var maxRows: js.UndefOr[Double] = js.undefined
     
     /**
       * Updates the resize ability for the textarea. Native textareas are resizable
       * both horizontally and vertically, but this component will prevent resizing
       * by default and instead animate height changes as the user types.
       */
-    var resize: js.UndefOr[TextAreaResize] = js.native
+    var resize: js.UndefOr[TextAreaResize] = js.undefined
     
     /**
       * The value to use for the text field. This will make the component
@@ -101,7 +100,7 @@ object textAreaMod {
       * this will act as a read only text field.
       */
     @JSName("value")
-    var value_TextAreaProps: js.UndefOr[String] = js.native
+    var value_TextAreaProps: js.UndefOr[String] = js.undefined
   }
   object TextAreaProps {
     

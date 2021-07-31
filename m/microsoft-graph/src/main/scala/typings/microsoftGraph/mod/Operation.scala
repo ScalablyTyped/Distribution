@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Operation extends Entity {
+trait Operation
+  extends StObject
+     with Entity {
   
   // The start time of the operation.
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The time of the last action of the operation.
-  var lastActionDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastActionDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The current status of the operation: notStarted, running, completed, failed
-  var status: js.UndefOr[NullableOption[OperationStatus]] = js.native
+  var status: js.UndefOr[NullableOption[OperationStatus]] = js.undefined
 }
 object Operation {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableServiceRequest extends StObject {
   
   /** Defines the behavior for checking service usage when disabling a service. */
-  var checkIfServiceHasUsage: js.UndefOr[String] = js.native
+  var checkIfServiceHasUsage: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if services that are enabled and which depend on this service should also be disabled. If not set, an error will be generated if any enabled services depend on the service
     * to be disabled. When set, the service, and any enabled services that depend on it, will be disabled together.
     */
-  var disableDependentServices: js.UndefOr[Boolean] = js.native
+  var disableDependentServices: js.UndefOr[Boolean] = js.undefined
 }
 object DisableServiceRequest {
   

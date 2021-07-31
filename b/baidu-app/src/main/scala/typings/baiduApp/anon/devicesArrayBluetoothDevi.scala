@@ -4,17 +4,15 @@ import typings.baiduApp.baiduAppStrings.ok
 import typings.baiduApp.swan.BluetoothDevice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  devices :std.Array<baidu-app.swan.BluetoothDevice>} & baidu-app.swan.ErrMsgResponse */
-@js.native
 trait devicesArrayBluetoothDevi extends StObject {
   
-  var devices: js.Array[BluetoothDevice] = js.native
+  var devices: js.Array[BluetoothDevice]
   
   /** 成功：ok，错误：详细信息 */
-  var errMsg: ok | String = js.native
+  var errMsg: ok | String
 }
 object devicesArrayBluetoothDevi {
   

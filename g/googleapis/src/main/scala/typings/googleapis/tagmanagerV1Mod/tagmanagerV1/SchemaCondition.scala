@@ -2,13 +2,11 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a predicate.
   */
-@js.native
 trait SchemaCondition extends StObject {
   
   /**
@@ -22,12 +20,12 @@ trait SchemaCondition extends StObject {
     * include a boolean parameter named negate boolean parameter that is set to
     * true.
     */
-  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.undefined
   
   /**
     * The type of operator for this condition.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCondition {
   

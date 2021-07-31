@@ -4,13 +4,11 @@ import typings.devextreme.devextremeStrings.horizontal
 import typings.devextreme.devextremeStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `24` extends StObject {
   
-  var orientation: js.UndefOr[horizontal | vertical] = js.native
+  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
 }
 object `24` {
   

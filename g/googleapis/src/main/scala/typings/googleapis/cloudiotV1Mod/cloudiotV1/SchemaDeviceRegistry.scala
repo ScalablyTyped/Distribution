@@ -2,13 +2,11 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A container for a group of devices.
   */
-@js.native
 trait SchemaDeviceRegistry extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaDeviceRegistry extends StObject {
     * it should be able to connect even if its registry credentials are
     * revoked, deleted, or modified.
     */
-  var credentials: js.UndefOr[js.Array[SchemaRegistryCredential]] = js.native
+  var credentials: js.UndefOr[js.Array[SchemaRegistryCredential]] = js.undefined
   
   /**
     * The configuration for notification of telemetry events received from the
@@ -36,35 +34,35 @@ trait SchemaDeviceRegistry extends StObject {
     * try to do so using an HTTP connection, an error is returned. Up to 10
     * configurations may be provided.
     */
-  var eventNotificationConfigs: js.UndefOr[js.Array[SchemaEventNotificationConfig]] = js.native
+  var eventNotificationConfigs: js.UndefOr[js.Array[SchemaEventNotificationConfig]] = js.undefined
   
   /**
     * The DeviceService (HTTP) configuration for this device registry.
     */
-  var httpConfig: js.UndefOr[SchemaHttpConfig] = js.native
+  var httpConfig: js.UndefOr[SchemaHttpConfig] = js.undefined
   
   /**
     * The identifier of this device registry. For example, `myRegistry`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * **Beta Feature**  The default logging verbosity for activity from devices
     * in this registry. The verbosity level can be overridden by
     * Device.log_level.
     */
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
   /**
     * The MQTT configuration for this device registry.
     */
-  var mqttConfig: js.UndefOr[SchemaMqttConfig] = js.native
+  var mqttConfig: js.UndefOr[SchemaMqttConfig] = js.undefined
   
   /**
     * The resource path name. For example,
     * `projects/example-project/locations/us-central1/registries/my-registry`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration for notification of new states received from the
@@ -74,7 +72,7 @@ trait SchemaDeviceRegistry extends StObject {
     * no notification will be published but the state will still be stored in
     * Cloud IoT Core.
     */
-  var stateNotificationConfig: js.UndefOr[SchemaStateNotificationConfig] = js.native
+  var stateNotificationConfig: js.UndefOr[SchemaStateNotificationConfig] = js.undefined
 }
 object SchemaDeviceRegistry {
   

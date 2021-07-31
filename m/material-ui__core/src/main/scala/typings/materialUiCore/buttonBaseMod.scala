@@ -5,7 +5,6 @@ import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonBaseMod extends Shortcut {

@@ -3,33 +3,31 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the appearance of a device picker. */
-@js.native
 trait DevicePickerAppearance extends StObject {
   
   /** Gets and sets the accent color of the picker UI. */
-  var accentColor: Color = js.native
+  var accentColor: Color
   
   /** Gets and sets the background color of the picker UI. */
-  var backgroundColor: Color = js.native
+  var backgroundColor: Color
   
   /** Gets and sets the foreground color of the picker UI. */
-  var foregroundColor: Color = js.native
+  var foregroundColor: Color
   
   /** Gets and sets the accent color for a device that has been selected in the picker. */
-  var selectedAccentColor: Color = js.native
+  var selectedAccentColor: Color
   
   /** Gets and sets the background color for a device that is selected in the picker. */
-  var selectedBackgroundColor: Color = js.native
+  var selectedBackgroundColor: Color
   
   /** Gets and sets the foreground color for a device that is selected in the picker. */
-  var selectedForegroundColor: Color = js.native
+  var selectedForegroundColor: Color
   
   /** Gets and sets the title for the picker UI. */
-  var title: String = js.native
+  var title: String
 }
 object DevicePickerAppearance {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveDimensionRequest extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait MoveDimensionRequest extends StObject {
     * specified. For example, given `A1..A5` of `0, 1, 2, 3, 4` and wanting to move `"1"` and `"2"` to between `"3"` and `"4"`, the source would be `ROWS [1..3)`,and the destination index
     * would be `"4"` (the zero-based index of row 5). The end result would be `A1..A5` of `0, 3, 1, 2, 4`.
     */
-  var destinationIndex: js.UndefOr[Double] = js.native
+  var destinationIndex: js.UndefOr[Double] = js.undefined
   
   /** The source dimensions to move. */
-  var source: js.UndefOr[DimensionRange] = js.native
+  var source: js.UndefOr[DimensionRange] = js.undefined
 }
 object MoveDimensionRequest {
   

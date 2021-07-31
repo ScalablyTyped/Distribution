@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArrayConstructor
-  extends Instantiable0[Array[js.Any]]
+  extends StObject
+     with Instantiable0[Array[js.Any]]
      with Instantiable1[
       (/* arrayLength */ Double) | (/* items (repeated) */ js.Object), 
       Array[js.Any | js.Object]
     ] {
   
-  def apply(): Array[_] = js.native
-  def apply(arrayLength: Double): Array[_] = js.native
+  def apply(): Array[js.Any] = js.native
+  def apply(arrayLength: Double): Array[js.Any] = js.native
   def apply[T](items: T*): Array[T] = js.native
   
   /**
@@ -26,9 +26,9 @@ trait ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from[T, U](arrayLike: ArrayLike[T]): Array[U] = js.native
-  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Array[U] = js.native
   def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
   def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: Unit, thisArg: js.Any): Array[U] = js.native
   /**
     * Creates an array from an iterable object.
     * @param iterable An iterable object to convert to an array.
@@ -36,9 +36,9 @@ trait ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from[T, U](iterable: Iterable[T]): Array[U] = js.native
-  def from[T, U](iterable: Iterable[T], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Array[U] = js.native
   def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
   def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
+  def from[T, U](iterable: Iterable[T], mapfn: Unit, thisArg: js.Any): Array[U] = js.native
   
   def isArray(arg: js.Any): /* is minapp-env.Array<any> */ scala.Boolean = js.native
   

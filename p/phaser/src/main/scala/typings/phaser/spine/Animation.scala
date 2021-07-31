@@ -2,10 +2,8 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
   @JSName("apply")
@@ -18,17 +16,17 @@ trait Animation extends StObject {
     alpha: Double,
     blend: MixBlend,
     direction: MixDirection
-  ): Unit = js.native
+  ): Unit
   
-  var duration: Double = js.native
+  var duration: Double
   
-  def hasTimeline(id: Double): Boolean = js.native
+  def hasTimeline(id: Double): Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var timelineIds: js.Array[Boolean] = js.native
+  var timelineIds: js.Array[Boolean]
   
-  var timelines: js.Array[Timeline] = js.native
+  var timelines: js.Array[Timeline]
 }
 object Animation {
   

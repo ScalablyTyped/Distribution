@@ -3,21 +3,19 @@ package typings.typeorm.anon
 import typings.typeorm.columnTypesMod.ColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsArray extends StObject {
   
-  var isArray: js.UndefOr[Boolean] = js.native
+  var isArray: js.UndefOr[Boolean] = js.undefined
   
-  var length: js.UndefOr[Double | String] = js.native
+  var length: js.UndefOr[Double | String] = js.undefined
   
-  var precision: js.UndefOr[Double | Null] = js.native
+  var precision: js.UndefOr[Double | Null] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[ColumnType | String] = js.native
+  var `type`: js.UndefOr[ColumnType | String] = js.undefined
 }
 object IsArray {
   

@@ -2,12 +2,12 @@ package typings.naverWhale.whale.contentSettings
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MultipleAutomaticDownloadsContentSetting
-  extends typings.chrome.chrome.contentSettings.ContentSetting {
+  extends StObject
+     with typings.chrome.chrome.contentSettings.ContentSetting {
   
   def set(details: typings.chrome.chrome.contentSettings.MultipleAutomaticDownloadsSetDetails): Unit = js.native
   def set(

@@ -8,105 +8,103 @@ import typings.octokitTypes.anon.Label
 import typings.octokitTypes.anon.Membersurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsUpdateResponseData extends StObject {
   
-  var _links: Commits = js.native
+  var _links: Commits
   
-  var active_lock_reason: String = js.native
+  var active_lock_reason: String
   
-  var additions: Double = js.native
+  var additions: Double
   
-  var assignee: Avatarurl = js.native
+  var assignee: Avatarurl
   
-  var assignees: js.Array[Avatarurl] = js.native
+  var assignees: js.Array[Avatarurl]
   
-  var author_association: String = js.native
+  var author_association: String
   
-  var base: Label = js.native
+  var base: Label
   
-  var body: String = js.native
+  var body: String
   
-  var changed_files: Double = js.native
+  var changed_files: Double
   
-  var closed_at: String = js.native
+  var closed_at: String
   
-  var comments: Double = js.native
+  var comments: Double
   
-  var comments_url: String = js.native
+  var comments_url: String
   
-  var commits: Double = js.native
+  var commits: Double
   
-  var commits_url: String = js.native
+  var commits_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var deletions: Double = js.native
+  var deletions: Double
   
-  var diff_url: String = js.native
+  var diff_url: String
   
-  var draft: Boolean = js.native
+  var draft: Boolean
   
-  var head: Label = js.native
+  var head: Label
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var issue_url: String = js.native
+  var issue_url: String
   
-  var labels: js.Array[Color] = js.native
+  var labels: js.Array[Color]
   
-  var locked: Boolean = js.native
+  var locked: Boolean
   
-  var maintainer_can_modify: Boolean = js.native
+  var maintainer_can_modify: Boolean
   
-  var merge_commit_sha: String = js.native
+  var merge_commit_sha: String
   
-  var mergeable: Boolean = js.native
+  var mergeable: Boolean
   
-  var mergeable_state: String = js.native
+  var mergeable_state: String
   
-  var merged: Boolean = js.native
+  var merged: Boolean
   
-  var merged_at: String = js.native
+  var merged_at: String
   
-  var merged_by: Avatarurl = js.native
+  var merged_by: Avatarurl
   
-  var milestone: Closedat = js.native
+  var milestone: Closedat
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var patch_url: String = js.native
+  var patch_url: String
   
-  var rebaseable: Boolean = js.native
+  var rebaseable: Boolean
   
-  var requested_reviewers: js.Array[Avatarurl] = js.native
+  var requested_reviewers: js.Array[Avatarurl]
   
-  var requested_teams: js.Array[Membersurl] = js.native
+  var requested_teams: js.Array[Membersurl]
   
-  var review_comment_url: String = js.native
+  var review_comment_url: String
   
-  var review_comments: Double = js.native
+  var review_comments: Double
   
-  var review_comments_url: String = js.native
+  var review_comments_url: String
   
-  var state: String = js.native
+  var state: String
   
-  var statuses_url: String = js.native
+  var statuses_url: String
   
-  var title: String = js.native
+  var title: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: Avatarurl = js.native
+  var user: Avatarurl
 }
 object PullsUpdateResponseData {
   

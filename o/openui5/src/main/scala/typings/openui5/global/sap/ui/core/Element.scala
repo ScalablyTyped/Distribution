@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.Element")
@@ -39,7 +38,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the new element
   */
 class Element ()
-  extends typings.openui5.sap.ui.core.Element {
+  extends StObject
+     with typings.openui5.sap.ui.core.Element {
   def this(mSettings: js.Any) = this()
   /**
     * Constructs and initializes an UI Element with the given <code>sId</code> and settings.If the

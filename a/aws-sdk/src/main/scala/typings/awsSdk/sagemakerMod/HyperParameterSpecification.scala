@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperParameterSpecification extends StObject {
   
   /**
     * The default value for this hyperparameter. If a default value is specified, a hyperparameter cannot be required.
     */
-  var DefaultValue: js.UndefOr[HyperParameterValue] = js.native
+  var DefaultValue: js.UndefOr[HyperParameterValue] = js.undefined
   
   /**
     * A brief description of the hyperparameter.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * Indicates whether this hyperparameter is required.
     */
-  var IsRequired: js.UndefOr[Boolean] = js.native
+  var IsRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether this hyperparameter is tunable in a hyperparameter tuning job.
     */
-  var IsTunable: js.UndefOr[Boolean] = js.native
+  var IsTunable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of this hyperparameter. The name must be unique.
     */
-  var Name: ParameterName = js.native
+  var Name: ParameterName
   
   /**
     * The allowed range for this hyperparameter.
     */
-  var Range: js.UndefOr[ParameterRange] = js.native
+  var Range: js.UndefOr[ParameterRange] = js.undefined
   
   /**
     * The type of this hyperparameter. The valid types are Integer, Continuous, Categorical, and FreeText.
     */
-  var Type: ParameterType = js.native
+  var Type: ParameterType
 }
 object HyperParameterSpecification {
   

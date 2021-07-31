@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomErrorResponses extends StObject {
   
   /**
     * A complex type that contains a CustomErrorResponse element for each HTTP status code for which you want to specify a custom error page and/or a caching duration. 
     */
-  var Items: js.UndefOr[CustomErrorResponseList] = js.native
+  var Items: js.UndefOr[CustomErrorResponseList] = js.undefined
   
   /**
     * The number of HTTP status codes for which you want to specify a custom error page and/or a caching duration. If Quantity is 0, you can omit Items.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object CustomErrorResponses {
   

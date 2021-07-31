@@ -2,15 +2,13 @@ package typings.reactNativeCommunityCliTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidIos extends StObject {
   
-  var android: js.UndefOr[Null | js.Object] = js.native
+  var android: js.UndefOr[Null | js.Object] = js.undefined
   
-  var ios: js.UndefOr[Null | PodspecPath] = js.native
+  var ios: js.UndefOr[Null | PodspecPath] = js.undefined
 }
 object AndroidIos {
   

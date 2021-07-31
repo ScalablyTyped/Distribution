@@ -6,10 +6,8 @@ import typings.chromeApps.chromeAppsStrings.CHANGED
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationOptions extends StObject {
   
   /**
@@ -25,19 +23,19 @@ trait NotificationOptions extends StObject {
       /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
       CHANGED | typings.chromeApps.chromeAppsStrings.DELETED
     ]
-  ] = js.native
+  ]
   
   /** List of changes to entries within the observed directory (including the entry itself)  */
-  var changes: js.UndefOr[js.Array[NotificationChange]] = js.native
+  var changes: js.UndefOr[js.Array[NotificationChange]] = js.undefined
   
   /** The identifier of the file system related to this change. */
-  var fileSystemId: String = js.native
+  var fileSystemId: String
   
   /** The path of the observed entry. */
-  var observedPath: String = js.native
+  var observedPath: String
   
   /** Mode of the observed entry. */
-  var recursive: Boolean = js.native
+  var recursive: Boolean
   
   /**
     * Tag for the notification.
@@ -45,7 +43,7 @@ trait NotificationOptions extends StObject {
     * Note, that this flag is necessary to provide notifications about changes
     * which changed even when the system was shutdown.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object NotificationOptions {
   

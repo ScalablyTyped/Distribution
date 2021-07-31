@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientTransactionListRequest.
   * @param [properties] Properties to set
   */
-class ClientTransactionListRequest () extends IClientTransactionListRequest {
+class ClientTransactionListRequest ()
+  extends StObject
+     with IClientTransactionListRequest {
   def this(properties: IClientTransactionListRequest) = this()
   
   /** ClientTransactionListRequest headId. */
@@ -40,17 +41,19 @@ class ClientTransactionListRequest () extends IClientTransactionListRequest {
 /* static members */
 object ClientTransactionListRequest {
   
+  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ClientTransactionListRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientTransactionListRequest instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.create")
-  @js.native
-  def create(): ClientTransactionListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.create")
-  @js.native
-  def create(properties: IClientTransactionListRequest): ClientTransactionListRequest = js.native
+  @scala.inline
+  def create(): ClientTransactionListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientTransactionListRequest]
+  @scala.inline
+  def create(properties: IClientTransactionListRequest): ClientTransactionListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListRequest]
   
   /**
     * Decodes a ClientTransactionListRequest message from the specified reader or buffer.
@@ -60,18 +63,14 @@ object ClientTransactionListRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.decode")
-  @js.native
-  def decode(reader: Reader): ClientTransactionListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ClientTransactionListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): ClientTransactionListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ClientTransactionListRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): ClientTransactionListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ClientTransactionListRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionListRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): ClientTransactionListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ClientTransactionListRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientTransactionListRequest]
   
   /**
     * Decodes a ClientTransactionListRequest message from the specified reader or buffer, length delimited.
@@ -80,12 +79,10 @@ object ClientTransactionListRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ClientTransactionListRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ClientTransactionListRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ClientTransactionListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ClientTransactionListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListRequest]
   
   /**
     * Encodes the specified ClientTransactionListRequest message. Does not implicitly {@link ClientTransactionListRequest.verify|verify} messages.
@@ -93,12 +90,10 @@ object ClientTransactionListRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.encode")
-  @js.native
-  def encode(message: IClientTransactionListRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.encode")
-  @js.native
-  def encode(message: IClientTransactionListRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientTransactionListRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientTransactionListRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientTransactionListRequest message, length delimited. Does not implicitly {@link ClientTransactionListRequest.verify|verify} messages.
@@ -106,21 +101,18 @@ object ClientTransactionListRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientTransactionListRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientTransactionListRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientTransactionListRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientTransactionListRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientTransactionListRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientTransactionListRequest
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ClientTransactionListRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ClientTransactionListRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientTransactionListRequest]
   
   /**
     * Creates a plain object from a ClientTransactionListRequest message. Also converts values to other types if specified.
@@ -128,19 +120,16 @@ object ClientTransactionListRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.toObject")
-  @js.native
-  def toObject(message: ClientTransactionListRequest): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.toObject")
-  @js.native
-  def toObject(message: ClientTransactionListRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ClientTransactionListRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ClientTransactionListRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientTransactionListRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientTransactionListRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

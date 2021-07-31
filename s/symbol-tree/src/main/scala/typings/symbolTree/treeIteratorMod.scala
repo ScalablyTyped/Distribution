@@ -8,16 +8,17 @@ import typings.symbolTree.symbolTreeNumbers.`4`
 import typings.symbolTree.symbolTreeNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeIteratorMod {
   
   @JSImport("symbol-tree/lib/TreeIterator", JSImport.Namespace)
   @js.native
-  class ^[T /* <: js.Object */] protected () extends TreeIterator[T] {
+  class ^[T /* <: js.Object */] protected ()
+    extends StObject
+       with TreeIterator[T] {
     def this(
-      tree: typings.symbolTree.symbolTreeMod.^[_],
+      tree: typings.symbolTree.symbolTreeMod.^[js.Any],
       root: T,
       firstResult: T,
       iterateFunction: IterateFunction
@@ -90,7 +91,9 @@ object treeIteratorMod {
   }
   
   @js.native
-  trait TreeIterator[T /* <: js.Object */] extends IterableIterator[T] {
+  trait TreeIterator[T /* <: js.Object */]
+    extends StObject
+       with IterableIterator[T] {
     
     @JSName(js.Symbol.iterator)
     var iterator_TreeIterator: js.Function0[this.type] = js.native
@@ -98,12 +101,11 @@ object treeIteratorMod {
     def next(): TreeIteratorResult[T] = js.native
   }
   
-  @js.native
   trait TreeIteratorResult[T] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: T = js.native
+    var value: T
   }
   object TreeIteratorResult {
     
@@ -114,7 +116,7 @@ object treeIteratorMod {
     }
     
     @scala.inline
-    implicit class TreeIteratorResultMutableBuilder[Self <: TreeIteratorResult[_], T] (val x: Self with TreeIteratorResult[T]) extends AnyVal {
+    implicit class TreeIteratorResultMutableBuilder[Self <: TreeIteratorResult[?], T] (val x: Self & TreeIteratorResult[T]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

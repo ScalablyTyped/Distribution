@@ -2,14 +2,12 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for index operations. This metadata populates the metadata field
   * of google.longrunning.Operation.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata extends StObject {
   
   /**
@@ -17,34 +15,34 @@ trait SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata extends StObject {
     * cancellation is in progress, cancelled will be true but
     * google.longrunning.Operation.done will be false.
     */
-  var cancelled: js.UndefOr[Boolean] = js.native
+  var cancelled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Progress of the existing operation, measured in number of documents.
     */
-  var documentProgress: js.UndefOr[SchemaGoogleFirestoreAdminV1beta1Progress] = js.native
+  var documentProgress: js.UndefOr[SchemaGoogleFirestoreAdminV1beta1Progress] = js.undefined
   
   /**
     * The time the operation ended, either successfully or otherwise. Unset if
     * the operation is still active.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The index resource that this operation is acting on. For example:
     * `projects/{project_id}/databases/{database_id}/indexes/{index_id}`
     */
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
   /**
     * The type of index operation.
     */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /**
     * The time that work began on the operation.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata {
   

@@ -7,7 +7,6 @@ import typings.gulpCoffeeify.anon.Ext
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,20 +19,19 @@ object mod extends Shortcut {
   
   type Coffeeify = js.Function1[/* option */ js.UndefOr[Option], ReadWriteStream]
   
-  @js.native
   trait Option extends StObject {
     
     /**
       * [DEPRECATED]: You should use a 'paths' options of browserify.
       */
-    var aliases: js.UndefOr[Aliases] = js.native
+    var aliases: js.UndefOr[Aliases] = js.undefined
     
-    var options: js.UndefOr[Debug] = js.native
+    var options: js.UndefOr[Debug] = js.undefined
     
     /**
       * [DEPRECATED]
       */
-    var transforms: js.UndefOr[Transforms] = js.native
+    var transforms: js.UndefOr[Transforms] = js.undefined
   }
   object Option {
     

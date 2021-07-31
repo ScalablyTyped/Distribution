@@ -2,25 +2,23 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquirePermission extends StObject {
   
   /** Restrictions on user buying and acquiring content. */
-  var acquirePermission: js.UndefOr[String] = js.native
+  var acquirePermission: js.UndefOr[String] = js.undefined
   
   /** The age group of the user. */
-  var ageGroup: js.UndefOr[String] = js.native
+  var ageGroup: js.UndefOr[String] = js.undefined
   
   /** The maximum allowed maturity rating for the user. */
-  var allowedMaturityRating: js.UndefOr[String] = js.native
+  var allowedMaturityRating: js.UndefOr[String] = js.undefined
   
-  var isInFamily: js.UndefOr[Boolean] = js.native
+  var isInFamily: js.UndefOr[Boolean] = js.undefined
   
   /** The role of the user in the family. */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object AcquirePermission {
   

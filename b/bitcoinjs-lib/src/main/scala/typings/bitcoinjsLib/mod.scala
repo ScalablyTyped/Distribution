@@ -13,7 +13,6 @@ import typings.bitcoinjsLib.scriptSignatureMod.ScriptSignature
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,58 +24,52 @@ object mod {
   /* static members */
   object Block {
     
-    @JSImport("bitcoinjs-lib", "Block.calculateMerkleRoot")
+    @JSImport("bitcoinjs-lib", "Block")
     @js.native
-    def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.transactionMod.Transaction]): Buffer = js.native
-    @JSImport("bitcoinjs-lib", "Block.calculateMerkleRoot")
-    @js.native
-    def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.transactionMod.Transaction], forWitness: Boolean): Buffer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "Block.calculateTarget")
-    @js.native
-    def calculateTarget(bits: Double): Buffer = js.native
+    @scala.inline
+    def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.transactionMod.Transaction]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    @scala.inline
+    def calculateMerkleRoot(transactions: js.Array[typings.bitcoinjsLib.transactionMod.Transaction], forWitness: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any], forWitness.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib", "Block.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.blockMod.Block = js.native
+    @scala.inline
+    def calculateTarget(bits: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateTarget")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib", "Block.fromHex")
-    @js.native
-    def fromHex(hex: String): typings.bitcoinjsLib.blockMod.Block = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.blockMod.Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.blockMod.Block]
+    
+    @scala.inline
+    def fromHex(hex: String): typings.bitcoinjsLib.blockMod.Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.blockMod.Block]
   }
   
   object ECPair {
     
-    @JSImport("bitcoinjs-lib", "ECPair.fromPrivateKey")
+    @JSImport("bitcoinjs-lib", "ECPair")
     @js.native
-    def fromPrivateKey(buffer: Buffer): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
-    @JSImport("bitcoinjs-lib", "ECPair.fromPrivateKey")
-    @js.native
-    def fromPrivateKey(buffer: Buffer, options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "ECPair.fromPublicKey")
-    @js.native
-    def fromPublicKey(buffer: Buffer): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
-    @JSImport("bitcoinjs-lib", "ECPair.fromPublicKey")
-    @js.native
-    def fromPublicKey(buffer: Buffer, options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
+    @scala.inline
+    def fromPrivateKey(buffer: Buffer): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
+    @scala.inline
+    def fromPrivateKey(buffer: Buffer, options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
     
-    @JSImport("bitcoinjs-lib", "ECPair.fromWIF")
-    @js.native
-    def fromWIF(wifString: String): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
-    @JSImport("bitcoinjs-lib", "ECPair.fromWIF")
-    @js.native
-    def fromWIF(wifString: String, network: js.Array[Network]): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
-    @JSImport("bitcoinjs-lib", "ECPair.fromWIF")
-    @js.native
-    def fromWIF(wifString: String, network: Network): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
+    @scala.inline
+    def fromPublicKey(buffer: Buffer): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
+    @scala.inline
+    def fromPublicKey(buffer: Buffer, options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
     
-    @JSImport("bitcoinjs-lib", "ECPair.makeRandom")
-    @js.native
-    def makeRandom(): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
-    @JSImport("bitcoinjs-lib", "ECPair.makeRandom")
-    @js.native
-    def makeRandom(options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = js.native
+    @scala.inline
+    def fromWIF(wifString: String): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
+    @scala.inline
+    def fromWIF(wifString: String, network: js.Array[Network]): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
+    @scala.inline
+    def fromWIF(wifString: String, network: Network): typings.bitcoinjsLib.ecpairMod.ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
+    
+    @scala.inline
+    def makeRandom(): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")().asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
+    @scala.inline
+    def makeRandom(options: ECPairOptions): typings.bitcoinjsLib.ecpairMod.ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")(options.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.ecpairMod.ECPair]
   }
   
   @JSImport("bitcoinjs-lib", "Psbt")
@@ -84,32 +77,30 @@ object mod {
   class Psbt ()
     extends typings.bitcoinjsLib.psbtMod.Psbt {
     def this(opts: PsbtOptsOptional) = this()
-    def this(opts: js.UndefOr[scala.Nothing], data: typings.bip174.mod.Psbt) = this()
+    def this(opts: Unit, data: typings.bip174.mod.Psbt) = this()
     def this(opts: PsbtOptsOptional, data: typings.bip174.mod.Psbt) = this()
   }
   /* static members */
   object Psbt {
     
-    @JSImport("bitcoinjs-lib", "Psbt.fromBase64")
+    @JSImport("bitcoinjs-lib", "Psbt")
     @js.native
-    def fromBase64(data: String): typings.bitcoinjsLib.psbtMod.Psbt = js.native
-    @JSImport("bitcoinjs-lib", "Psbt.fromBase64")
-    @js.native
-    def fromBase64(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "Psbt.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.psbtMod.Psbt = js.native
-    @JSImport("bitcoinjs-lib", "Psbt.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = js.native
+    @scala.inline
+    def fromBase64(data: String): typings.bitcoinjsLib.psbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
+    @scala.inline
+    def fromBase64(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
     
-    @JSImport("bitcoinjs-lib", "Psbt.fromHex")
-    @js.native
-    def fromHex(data: String): typings.bitcoinjsLib.psbtMod.Psbt = js.native
-    @JSImport("bitcoinjs-lib", "Psbt.fromHex")
-    @js.native
-    def fromHex(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.psbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
+    @scala.inline
+    def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
+    
+    @scala.inline
+    def fromHex(data: String): typings.bitcoinjsLib.psbtMod.Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
+    @scala.inline
+    def fromHex(data: String, opts: PsbtOptsOptional): typings.bitcoinjsLib.psbtMod.Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.psbtMod.Psbt]
   }
   
   @JSImport("bitcoinjs-lib", "Transaction")
@@ -118,6 +109,10 @@ object mod {
     extends typings.bitcoinjsLib.transactionMod.Transaction
   /* static members */
   object Transaction {
+    
+    @JSImport("bitcoinjs-lib", "Transaction")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bitcoinjs-lib", "Transaction.ADVANCED_TRANSACTION_FLAG")
     @js.native
@@ -147,20 +142,16 @@ object mod {
     @js.native
     val SIGHASH_SINGLE: /* 3 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib", "Transaction.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.transactionMod.Transaction = js.native
-    @JSImport("bitcoinjs-lib", "Transaction.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): typings.bitcoinjsLib.transactionMod.Transaction = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): typings.bitcoinjsLib.transactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.transactionMod.Transaction]
+    @scala.inline
+    def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): typings.bitcoinjsLib.transactionMod.Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], _NO_STRICT.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.transactionMod.Transaction]
     
-    @JSImport("bitcoinjs-lib", "Transaction.fromHex")
-    @js.native
-    def fromHex(hex: String): typings.bitcoinjsLib.transactionMod.Transaction = js.native
+    @scala.inline
+    def fromHex(hex: String): typings.bitcoinjsLib.transactionMod.Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.transactionMod.Transaction]
     
-    @JSImport("bitcoinjs-lib", "Transaction.isCoinbaseHash")
-    @js.native
-    def isCoinbaseHash(buffer: Buffer): Boolean = js.native
+    @scala.inline
+    def isCoinbaseHash(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoinbaseHash")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("bitcoinjs-lib", "TransactionBuilder")
@@ -168,105 +159,98 @@ object mod {
   class TransactionBuilder ()
     extends typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder {
     def this(network: Network) = this()
-    def this(network: js.UndefOr[scala.Nothing], maximumFeeRate: Double) = this()
+    def this(network: Unit, maximumFeeRate: Double) = this()
     def this(network: Network, maximumFeeRate: Double) = this()
   }
   /* static members */
   object TransactionBuilder {
     
-    @JSImport("bitcoinjs-lib", "TransactionBuilder.fromTransaction")
+    @JSImport("bitcoinjs-lib", "TransactionBuilder")
     @js.native
-    def fromTransaction(transaction: typings.bitcoinjsLib.transactionMod.Transaction): typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder = js.native
-    @JSImport("bitcoinjs-lib", "TransactionBuilder.fromTransaction")
-    @js.native
-    def fromTransaction(transaction: typings.bitcoinjsLib.transactionMod.Transaction, network: Network): typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromTransaction(transaction: typings.bitcoinjsLib.transactionMod.Transaction): typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTransaction")(transaction.asInstanceOf[js.Any]).asInstanceOf[typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder]
+    @scala.inline
+    def fromTransaction(transaction: typings.bitcoinjsLib.transactionMod.Transaction, network: Network): typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTransaction")(transaction.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder]
   }
   
   object address {
     
-    @JSImport("bitcoinjs-lib", "address.fromBase58Check")
+    @JSImport("bitcoinjs-lib", "address")
     @js.native
-    def fromBase58Check(address: String): Base58CheckResult = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "address.fromBech32")
-    @js.native
-    def fromBech32(address: String): Bech32Result = js.native
+    @scala.inline
+    def fromBase58Check(address: String): Base58CheckResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58Check")(address.asInstanceOf[js.Any]).asInstanceOf[Base58CheckResult]
     
-    @JSImport("bitcoinjs-lib", "address.fromOutputScript")
-    @js.native
-    def fromOutputScript(output: Buffer): String = js.native
-    @JSImport("bitcoinjs-lib", "address.fromOutputScript")
-    @js.native
-    def fromOutputScript(output: Buffer, network: Network): String = js.native
+    @scala.inline
+    def fromBech32(address: String): Bech32Result = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBech32")(address.asInstanceOf[js.Any]).asInstanceOf[Bech32Result]
     
-    @JSImport("bitcoinjs-lib", "address.toBase58Check")
-    @js.native
-    def toBase58Check(hash: Buffer, version: Double): String = js.native
+    @scala.inline
+    def fromOutputScript(output: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOutputScript")(output.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def fromOutputScript(output: Buffer, network: Network): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOutputScript")(output.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("bitcoinjs-lib", "address.toBech32")
-    @js.native
-    def toBech32(data: Buffer, version: Double, prefix: String): String = js.native
+    @scala.inline
+    def toBase58Check(hash: Buffer, version: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBase58Check")(hash.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("bitcoinjs-lib", "address.toOutputScript")
-    @js.native
-    def toOutputScript(address: String): Buffer = js.native
-    @JSImport("bitcoinjs-lib", "address.toOutputScript")
-    @js.native
-    def toOutputScript(address: String, network: Network): Buffer = js.native
+    @scala.inline
+    def toBech32(data: Buffer, version: Double, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBech32")(data.asInstanceOf[js.Any], version.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def toOutputScript(address: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toOutputScript")(address.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    @scala.inline
+    def toOutputScript(address: String, network: Network): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toOutputScript")(address.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   }
   
   object bip32 {
     
-    @JSImport("bitcoinjs-lib", "bip32.fromBase58")
+    @JSImport("bitcoinjs-lib", "bip32")
     @js.native
-    def fromBase58(inString: String): BIP32Interface = js.native
-    @JSImport("bitcoinjs-lib", "bip32.fromBase58")
-    @js.native
-    def fromBase58(inString: String, network: typings.bip32.bip32Mod.Network): BIP32Interface = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "bip32.fromPrivateKey")
-    @js.native
-    def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = js.native
-    @JSImport("bitcoinjs-lib", "bip32.fromPrivateKey")
-    @js.native
-    def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = js.native
+    @scala.inline
+    def fromBase58(inString: String): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
+    @scala.inline
+    def fromBase58(inString: String, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
     
-    @JSImport("bitcoinjs-lib", "bip32.fromPublicKey")
-    @js.native
-    def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = js.native
-    @JSImport("bitcoinjs-lib", "bip32.fromPublicKey")
-    @js.native
-    def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = js.native
+    @scala.inline
+    def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+    @scala.inline
+    def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
     
-    @JSImport("bitcoinjs-lib", "bip32.fromSeed")
-    @js.native
-    def fromSeed(seed: Buffer): BIP32Interface = js.native
-    @JSImport("bitcoinjs-lib", "bip32.fromSeed")
-    @js.native
-    def fromSeed(seed: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = js.native
+    @scala.inline
+    def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+    @scala.inline
+    def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+    
+    @scala.inline
+    def fromSeed(seed: Buffer): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
+    @scala.inline
+    def fromSeed(seed: Buffer, network: typings.bip32.bip32Mod.Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   }
   
   object crypto {
     
-    @JSImport("bitcoinjs-lib", "crypto.hash160")
+    @JSImport("bitcoinjs-lib", "crypto")
     @js.native
-    def hash160(buffer: Buffer): Buffer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "crypto.hash256")
-    @js.native
-    def hash256(buffer: Buffer): Buffer = js.native
+    @scala.inline
+    def hash160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib", "crypto.ripemd160")
-    @js.native
-    def ripemd160(buffer: Buffer): Buffer = js.native
+    @scala.inline
+    def hash256(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash256")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib", "crypto.sha1")
-    @js.native
-    def sha1(buffer: Buffer): Buffer = js.native
+    @scala.inline
+    def ripemd160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib", "crypto.sha256")
-    @js.native
-    def sha256(buffer: Buffer): Buffer = js.native
+    @scala.inline
+    def sha1(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    
+    @scala.inline
+    def sha256(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   }
   
   object networks {
@@ -286,135 +270,117 @@ object mod {
   
   object payments {
     
-    @JSImport("bitcoinjs-lib", "payments.embed")
+    @JSImport("bitcoinjs-lib", "payments")
     @js.native
-    def embed(a: Payment): Payment = js.native
-    @JSImport("bitcoinjs-lib", "payments.embed")
-    @js.native
-    def embed(a: Payment, opts: PaymentOpts): Payment = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "payments.p2ms")
-    @js.native
-    def p2ms(a: Payment): Payment = js.native
-    @JSImport("bitcoinjs-lib", "payments.p2ms")
-    @js.native
-    def p2ms(a: Payment, opts: PaymentOpts): Payment = js.native
+    @scala.inline
+    def embed(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("embed")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    @scala.inline
+    def embed(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("embed")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
     
-    @JSImport("bitcoinjs-lib", "payments.p2pk")
-    @js.native
-    def p2pk(a: Payment): Payment = js.native
-    @JSImport("bitcoinjs-lib", "payments.p2pk")
-    @js.native
-    def p2pk(a: Payment, opts: PaymentOpts): Payment = js.native
+    @scala.inline
+    def p2ms(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2ms")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    @scala.inline
+    def p2ms(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2ms")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
     
-    @JSImport("bitcoinjs-lib", "payments.p2pkh")
-    @js.native
-    def p2pkh(a: Payment): Payment = js.native
-    @JSImport("bitcoinjs-lib", "payments.p2pkh")
-    @js.native
-    def p2pkh(a: Payment, opts: PaymentOpts): Payment = js.native
+    @scala.inline
+    def p2pk(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2pk")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    @scala.inline
+    def p2pk(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2pk")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
     
-    @JSImport("bitcoinjs-lib", "payments.p2sh")
-    @js.native
-    def p2sh(a: Payment): Payment = js.native
-    @JSImport("bitcoinjs-lib", "payments.p2sh")
-    @js.native
-    def p2sh(a: Payment, opts: PaymentOpts): Payment = js.native
+    @scala.inline
+    def p2pkh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2pkh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    @scala.inline
+    def p2pkh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2pkh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
     
-    @JSImport("bitcoinjs-lib", "payments.p2wpkh")
-    @js.native
-    def p2wpkh(a: Payment): Payment = js.native
-    @JSImport("bitcoinjs-lib", "payments.p2wpkh")
-    @js.native
-    def p2wpkh(a: Payment, opts: PaymentOpts): Payment = js.native
+    @scala.inline
+    def p2sh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    @scala.inline
+    def p2sh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
     
-    @JSImport("bitcoinjs-lib", "payments.p2wsh")
-    @js.native
-    def p2wsh(a: Payment): Payment = js.native
-    @JSImport("bitcoinjs-lib", "payments.p2wsh")
-    @js.native
-    def p2wsh(a: Payment, opts: PaymentOpts): Payment = js.native
+    @scala.inline
+    def p2wpkh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    @scala.inline
+    def p2wpkh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
+    
+    @scala.inline
+    def p2wsh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2wsh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    @scala.inline
+    def p2wsh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2wsh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   }
   
   object script {
     
-    @JSImport("bitcoinjs-lib", "script.compile")
+    @JSImport("bitcoinjs-lib", "script")
     @js.native
-    def compile(chunks: Stack): Buffer = js.native
-    @JSImport("bitcoinjs-lib", "script.compile")
-    @js.native
-    def compile(chunks: Buffer): Buffer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib", "script.decompile")
-    @js.native
-    def decompile(buffer: js.Array[Double | Buffer]): (js.Array[Double | Buffer]) | Null = js.native
-    @JSImport("bitcoinjs-lib", "script.decompile")
-    @js.native
-    def decompile(buffer: Buffer): (js.Array[Double | Buffer]) | Null = js.native
+    @scala.inline
+    def compile(chunks: Stack): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(chunks.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    @scala.inline
+    def compile(chunks: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(chunks.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib", "script.fromASM")
-    @js.native
-    def fromASM(asm: String): Buffer = js.native
+    @scala.inline
+    def decompile(buffer: js.Array[Double | Buffer]): (js.Array[Double | Buffer]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("decompile")(buffer.asInstanceOf[js.Any]).asInstanceOf[(js.Array[Double | Buffer]) | Null]
+    @scala.inline
+    def decompile(buffer: Buffer): (js.Array[Double | Buffer]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("decompile")(buffer.asInstanceOf[js.Any]).asInstanceOf[(js.Array[Double | Buffer]) | Null]
     
-    @JSImport("bitcoinjs-lib", "script.isCanonicalPubKey")
-    @js.native
-    def isCanonicalPubKey(buffer: Buffer): Boolean = js.native
+    @scala.inline
+    def fromASM(asm: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromASM")(asm.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib", "script.isCanonicalScriptSignature")
-    @js.native
-    def isCanonicalScriptSignature(buffer: Buffer): Boolean = js.native
+    @scala.inline
+    def isCanonicalPubKey(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCanonicalPubKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("bitcoinjs-lib", "script.isDefinedHashType")
-    @js.native
-    def isDefinedHashType(hashType: Double): Boolean = js.native
+    @scala.inline
+    def isCanonicalScriptSignature(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCanonicalScriptSignature")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("bitcoinjs-lib", "script.isPushOnly")
-    @js.native
-    def isPushOnly(value: Stack): Boolean = js.native
+    @scala.inline
+    def isDefinedHashType(hashType: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefinedHashType")(hashType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isPushOnly(value: Stack): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPushOnly")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     object number {
       
-      @JSImport("bitcoinjs-lib", "script.number.decode")
+      @JSImport("bitcoinjs-lib", "script.number")
       @js.native
-      def decode(buffer: Buffer): Double = js.native
-      @JSImport("bitcoinjs-lib", "script.number.decode")
-      @js.native
-      def decode(buffer: Buffer, maxLength: js.UndefOr[scala.Nothing], minimal: Boolean): Double = js.native
-      @JSImport("bitcoinjs-lib", "script.number.decode")
-      @js.native
-      def decode(buffer: Buffer, maxLength: Double): Double = js.native
-      @JSImport("bitcoinjs-lib", "script.number.decode")
-      @js.native
-      def decode(buffer: Buffer, maxLength: Double, minimal: Boolean): Double = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("bitcoinjs-lib", "script.number.encode")
-      @js.native
-      def encode(_number: Double): Buffer = js.native
+      @scala.inline
+      def decode(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
+      @scala.inline
+      def decode(buffer: Buffer, maxLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def decode(buffer: Buffer, maxLength: Double, minimal: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], minimal.asInstanceOf[js.Any])).asInstanceOf[Double]
+      @scala.inline
+      def decode(buffer: Buffer, maxLength: Unit, minimal: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], minimal.asInstanceOf[js.Any])).asInstanceOf[Double]
+      
+      @scala.inline
+      def encode(_number: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(_number.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     }
     
     object signature {
       
-      @JSImport("bitcoinjs-lib", "script.signature.decode")
+      @JSImport("bitcoinjs-lib", "script.signature")
       @js.native
-      def decode(buffer: Buffer): ScriptSignature = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("bitcoinjs-lib", "script.signature.encode")
-      @js.native
-      def encode(signature: Buffer, hashType: Double): Buffer = js.native
+      @scala.inline
+      def decode(buffer: Buffer): ScriptSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[ScriptSignature]
+      
+      @scala.inline
+      def encode(signature: Buffer, hashType: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(signature.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     }
     
-    @JSImport("bitcoinjs-lib", "script.toASM")
-    @js.native
-    def toASM(chunks: js.Array[Double | Buffer]): String = js.native
-    @JSImport("bitcoinjs-lib", "script.toASM")
-    @js.native
-    def toASM(chunks: Buffer): String = js.native
+    @scala.inline
+    def toASM(chunks: js.Array[Double | Buffer]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASM")(chunks.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toASM(chunks: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASM")(chunks.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("bitcoinjs-lib", "script.toStack")
-    @js.native
-    def toStack(chunks: js.Array[Double | Buffer]): js.Array[Buffer] = js.native
-    @JSImport("bitcoinjs-lib", "script.toStack")
-    @js.native
-    def toStack(chunks: Buffer): js.Array[Buffer] = js.native
+    @scala.inline
+    def toStack(chunks: js.Array[Double | Buffer]): js.Array[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStack")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer]]
+    @scala.inline
+    def toStack(chunks: Buffer): js.Array[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStack")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer]]
   }
 }

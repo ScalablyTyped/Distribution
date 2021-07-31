@@ -3,21 +3,19 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actions extends StObject {
   
-  def add(name: String, handler: js.Function0[Unit]): Unit = js.native
+  def add(name: String, handler: js.Function0[Unit]): Unit
   
-  def get(name: String): js.Function0[Unit] = js.native
+  def get(name: String): js.Function0[Unit]
   
-  def invoke(name: String, args: js.Any): Unit = js.native
+  def invoke(name: String, args: js.Any): Unit
   
-  def list(): js.Array[Id] = js.native
+  def list(): js.Array[Id]
   
-  def remove(name: String): Unit = js.native
+  def remove(name: String): Unit
 }
 object Actions {
   

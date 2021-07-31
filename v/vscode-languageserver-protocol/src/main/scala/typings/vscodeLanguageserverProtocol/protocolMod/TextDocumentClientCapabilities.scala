@@ -8,131 +8,129 @@ import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionR
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionClientCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentClientCapabilities extends StObject {
   
   /**
     * Capabilities specific to the `textDocument/codeAction`
     */
-  var codeAction: js.UndefOr[CodeActionClientCapabilities] = js.native
+  var codeAction: js.UndefOr[CodeActionClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/codeLens`
     */
-  var codeLens: js.UndefOr[CodeLensClientCapabilities] = js.native
+  var codeLens: js.UndefOr[CodeLensClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/documentColor`
     */
-  var colorProvider: js.UndefOr[DocumentColorClientCapabilities] = js.native
+  var colorProvider: js.UndefOr[DocumentColorClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/completion`
     */
-  var completion: js.UndefOr[CompletionClientCapabilities] = js.native
+  var completion: js.UndefOr[CompletionClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/declaration`
     *
     * @since 3.14.0
     */
-  var declaration: js.UndefOr[DeclarationClientCapabilities] = js.native
+  var declaration: js.UndefOr[DeclarationClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/definition`
     */
-  var definition: js.UndefOr[DefinitionClientCapabilities] = js.native
+  var definition: js.UndefOr[DefinitionClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/documentHighlight`
     */
-  var documentHighlight: js.UndefOr[DocumentHighlightClientCapabilities] = js.native
+  var documentHighlight: js.UndefOr[DocumentHighlightClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/documentLink`
     */
-  var documentLink: js.UndefOr[DocumentLinkClientCapabilities] = js.native
+  var documentLink: js.UndefOr[DocumentLinkClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/documentSymbol`
     */
-  var documentSymbol: js.UndefOr[DocumentSymbolClientCapabilities] = js.native
+  var documentSymbol: js.UndefOr[DocumentSymbolClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to `textDocument/foldingRange` requests.
     *
     * @since 3.10.0
     */
-  var foldingRange: js.UndefOr[FoldingRangeClientCapabilities] = js.native
+  var foldingRange: js.UndefOr[FoldingRangeClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/formatting`
     */
-  var formatting: js.UndefOr[DocumentFormattingClientCapabilities] = js.native
+  var formatting: js.UndefOr[DocumentFormattingClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/hover`
     */
-  var hover: js.UndefOr[HoverClientCapabilities] = js.native
+  var hover: js.UndefOr[HoverClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/implementation`
     *
     * @since 3.6.0
     */
-  var implementation: js.UndefOr[ImplementationClientCapabilities] = js.native
+  var implementation: js.UndefOr[ImplementationClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/onTypeFormatting`
     */
-  var onTypeFormatting: js.UndefOr[DocumentOnTypeFormattingClientCapabilities] = js.native
+  var onTypeFormatting: js.UndefOr[DocumentOnTypeFormattingClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to `textDocument/publishDiagnostics`.
     */
-  var publishDiagnostics: js.UndefOr[PublishDiagnosticsClientCapabilities] = js.native
+  var publishDiagnostics: js.UndefOr[PublishDiagnosticsClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/rangeFormatting`
     */
-  var rangeFormatting: js.UndefOr[DocumentRangeFormattingClientCapabilities] = js.native
+  var rangeFormatting: js.UndefOr[DocumentRangeFormattingClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/references`
     */
-  var references: js.UndefOr[ReferenceClientCapabilities] = js.native
+  var references: js.UndefOr[ReferenceClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/rename`
     */
-  var rename: js.UndefOr[RenameClientCapabilities] = js.native
+  var rename: js.UndefOr[RenameClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to `textDocument/selectionRange` requests
     *
     * @since 3.15.0
     */
-  var selectionRange: js.UndefOr[SelectionRangeClientCapabilities] = js.native
+  var selectionRange: js.UndefOr[SelectionRangeClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/signatureHelp`
     */
-  var signatureHelp: js.UndefOr[SignatureHelpClientCapabilities] = js.native
+  var signatureHelp: js.UndefOr[SignatureHelpClientCapabilities] = js.undefined
   
   /**
     * Defines which synchronization capabilities the client supports.
     */
-  var synchronization: js.UndefOr[TextDocumentSyncClientCapabilities] = js.native
+  var synchronization: js.UndefOr[TextDocumentSyncClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `textDocument/typeDefinition`
     *
     * @since 3.6.0
     */
-  var typeDefinition: js.UndefOr[TypeDefinitionClientCapabilities] = js.native
+  var typeDefinition: js.UndefOr[TypeDefinitionClientCapabilities] = js.undefined
 }
 object TextDocumentClientCapabilities {
   

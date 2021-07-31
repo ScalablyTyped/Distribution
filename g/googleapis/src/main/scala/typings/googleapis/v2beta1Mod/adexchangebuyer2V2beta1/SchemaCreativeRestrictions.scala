@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Preferred Deal in Ad Manager. This doesn&#39;t apply to Private Auction and
   * AdX Preferred Deals.
   */
-@js.native
 trait SchemaCreativeRestrictions extends StObject {
   
   /**
     * The format of the environment that the creatives will be displayed in.
     */
-  var creativeFormat: js.UndefOr[String] = js.native
+  var creativeFormat: js.UndefOr[String] = js.undefined
   
-  var creativeSpecifications: js.UndefOr[js.Array[SchemaCreativeSpecification]] = js.native
+  var creativeSpecifications: js.UndefOr[js.Array[SchemaCreativeSpecification]] = js.undefined
   
   /**
     * Skippable video ads allow viewers to skip ads after 5 seconds.
     */
-  var skippableAdType: js.UndefOr[String] = js.native
+  var skippableAdType: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeRestrictions {
   

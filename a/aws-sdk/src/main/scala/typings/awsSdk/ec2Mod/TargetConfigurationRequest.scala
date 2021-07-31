@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetConfigurationRequest extends StObject {
   
   /**
     * The number of instances the Covertible Reserved Instance offering can be applied to. This parameter is reserved and cannot be specified in a request
     */
-  var InstanceCount: js.UndefOr[Integer] = js.native
+  var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Convertible Reserved Instance offering ID.
     */
-  var OfferingId: ReservedInstancesOfferingId = js.native
+  var OfferingId: ReservedInstancesOfferingId
 }
 object TargetConfigurationRequest {
   

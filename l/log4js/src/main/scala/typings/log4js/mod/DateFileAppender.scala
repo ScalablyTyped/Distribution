@@ -3,38 +3,38 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.dateFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateFileAppender extends Appender {
+trait DateFileAppender
+  extends StObject
+     with Appender {
   
   // include the pattern in the name of the current log file as well as the backups.(default false)
-  var alwaysIncludePattern: js.UndefOr[Boolean] = js.native
+  var alwaysIncludePattern: js.UndefOr[Boolean] = js.undefined
   
   // compress the backup files during rolling (backup files will have .gz extension)(default false)
-  var compress: js.UndefOr[Boolean] = js.native
+  var compress: js.UndefOr[Boolean] = js.undefined
   
   // if this value is greater than zero, then files older than that many days will be deleted during log rolling.(default 0)
-  var daysToKeep: js.UndefOr[Double] = js.native
+  var daysToKeep: js.UndefOr[Double] = js.undefined
   
   // default “utf-8”
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   // the path of the file where you want your logs written.
-  var filename: String = js.native
+  var filename: String
   
   // default ‘a’
-  var flags: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.undefined
   
   // keep the file extension when rotating logs
-  var keepFileExt: js.UndefOr[Boolean] = js.native
+  var keepFileExt: js.UndefOr[Boolean] = js.undefined
   
   // defaults to basic layout
-  var layout: js.UndefOr[Layout] = js.native
+  var layout: js.UndefOr[Layout] = js.undefined
   
   // default 0644
-  var mode: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[Double] = js.undefined
   
   // defaults to .yyyy-MM-dd - the pattern to use to determine when to roll the logs.
   /**
@@ -48,16 +48,16 @@ trait DateFileAppender extends Appender {
     *  - SSS  : milliseconds (although I'm not sure you'd want to roll your logs every millisecond)
     *  - O    : timezone (capital letter o)
     */
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var `type`: dateFile = js.native
+  var `type`: dateFile
 }
 object DateFileAppender {
   
   @scala.inline
-  def apply(filename: String, `type`: dateFile): DateFileAppender = {
+  def apply(filename: String): DateFileAppender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dateFile")
     __obj.asInstanceOf[DateFileAppender]
   }
   

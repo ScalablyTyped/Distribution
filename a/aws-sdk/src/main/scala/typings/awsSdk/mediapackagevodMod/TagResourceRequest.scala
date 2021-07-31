@@ -2,21 +2,19 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the resource. You can get this from the response to any request to the resource.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * A collection of tags associated with a resource
     */
-  var Tags: mapOfString = js.native
+  var Tags: mapOfString
 }
 object TagResourceRequest {
   

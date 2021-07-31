@@ -3,53 +3,51 @@ package typings.hasura.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberOrderByAggregate[T, Keys /* <: /* keyof T */ String */] extends StObject {
   
   var avg: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
   
   var stddev: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
   
   var stddev_pop: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
   
   var stddev_samp: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
   
   var sum: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
   
   var var_pop: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
   
   var variance: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
 }
 object NumberOrderByAggregate {
   
@@ -60,13 +58,13 @@ object NumberOrderByAggregate {
   }
   
   @scala.inline
-  implicit class NumberOrderByAggregateMutableBuilder[Self <: NumberOrderByAggregate[_, _], T, Keys /* <: /* keyof T */ String */] (val x: Self with (NumberOrderByAggregate[T, Keys])) extends AnyVal {
+  implicit class NumberOrderByAggregateMutableBuilder[Self <: NumberOrderByAggregate[?, ?], T, Keys /* <: /* keyof T */ String */] (val x: Self & (NumberOrderByAggregate[T, Keys])) extends AnyVal {
     
     @scala.inline
     def setAvg(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -76,7 +74,7 @@ object NumberOrderByAggregate {
     def setStddev(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -86,7 +84,7 @@ object NumberOrderByAggregate {
     def setStddev_pop(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "stddev_pop", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -96,7 +94,7 @@ object NumberOrderByAggregate {
     def setStddev_samp(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "stddev_samp", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -106,7 +104,7 @@ object NumberOrderByAggregate {
     def setSum(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -116,7 +114,7 @@ object NumberOrderByAggregate {
     def setVar_pop(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "var_pop", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -126,7 +124,7 @@ object NumberOrderByAggregate {
     def setVariance(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in Keys ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.NumberOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.NumberOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     @scala.inline

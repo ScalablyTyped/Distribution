@@ -2,17 +2,15 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleConditionModel extends StObject {
   
-  var conditionType: String = js.native
+  var conditionType: String
   
-  var field: String = js.native
+  var field: String
   
-  var value: String = js.native
+  var value: String
 }
 object RuleConditionModel {
   

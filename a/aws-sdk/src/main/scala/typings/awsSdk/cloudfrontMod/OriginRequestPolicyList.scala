@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginRequestPolicyList extends StObject {
   
   /**
     * Contains the origin request policies in the list.
     */
-  var Items: js.UndefOr[OriginRequestPolicySummaryList] = js.native
+  var Items: js.UndefOr[OriginRequestPolicySummaryList] = js.undefined
   
   /**
     * The maximum number of origin request policies requested.
     */
-  var MaxItems: integer = js.native
+  var MaxItems: integer
   
   /**
     * If there are more items in the list than are in this response, this element is present. It contains the value that you should use in the Marker field of a subsequent request to continue listing origin request policies where you left off.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of origin request policies returned in the response.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object OriginRequestPolicyList {
   

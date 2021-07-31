@@ -2,19 +2,17 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoundTripTimeStatistics extends StObject {
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var sum: Double = js.native
+  var sum: Double
   
-  var variance: Double = js.native
+  var variance: Double
 }
 object RoundTripTimeStatistics {
   

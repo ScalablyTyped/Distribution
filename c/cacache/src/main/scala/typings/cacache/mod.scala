@@ -13,46 +13,48 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cacache", "clearMemoized")
+  @JSImport("cacache", JSImport.Namespace)
   @js.native
-  def clearMemoized(): Record[String, CacheObject] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def clearMemoized(): Record[String, CacheObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearMemoized")().asInstanceOf[Record[String, CacheObject]]
   
   object get {
     
-    @JSImport("cacache", "get")
-    @js.native
-    def apply(cachePath: String, key: String): js.Promise[GetCacheObject] = js.native
-    @JSImport("cacache", "get")
-    @js.native
-    def apply(cachePath: String, key: String, options: Options): js.Promise[GetCacheObject] = js.native
+    @scala.inline
+    def apply(cachePath: String, key: String): js.Promise[GetCacheObject] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCacheObject]]
+    @scala.inline
+    def apply(cachePath: String, key: String, options: Options): js.Promise[GetCacheObject] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCacheObject]]
     
-    @JSImport("cacache", "get.byDigest")
+    @JSImport("cacache", "get")
     @js.native
-    def byDigest(cachePath: String, hash: String): js.Promise[String] = js.native
-    @JSImport("cacache", "get.byDigest")
-    @js.native
-    def byDigest(cachePath: String, hash: String, opts: Options): js.Promise[String] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def byDigest(cachePath: String, hash: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def byDigest(cachePath: String, hash: String, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     object copy {
       
-      @JSImport("cacache", "get.copy")
-      @js.native
-      def apply(cachePath: String, key: String, dest: String): js.Promise[CacheObject] = js.native
-      @JSImport("cacache", "get.copy")
-      @js.native
-      def apply(cachePath: String, key: String, dest: String, opts: Options): js.Promise[CacheObject] = js.native
+      @scala.inline
+      def apply(cachePath: String, key: String, dest: String): js.Promise[CacheObject] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CacheObject]]
+      @scala.inline
+      def apply(cachePath: String, key: String, dest: String, opts: Options): js.Promise[CacheObject] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CacheObject]]
       
-      @JSImport("cacache", "get.copy.byDigest")
+      @JSImport("cacache", "get.copy")
       @js.native
-      def byDigest(cachePath: String, hash: String, dest: String): js.Promise[String] = js.native
-      @JSImport("cacache", "get.copy.byDigest")
-      @js.native
-      def byDigest(cachePath: String, hash: String, dest: String, opts: Options): js.Promise[String] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def byDigest(cachePath: String, hash: String, dest: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+      @scala.inline
+      def byDigest(cachePath: String, hash: String, dest: String, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     }
     
     /**
@@ -62,21 +64,18 @@ object mod {
       * content as size. If no content exists for this integrity, it will return
       * `false`.
       */
-    @JSImport("cacache", "get.hasContent")
-    @js.native
-    def hasContent(cachePath: String, hash: String): js.Promise[HasContentObject | `false`] = js.native
+    @scala.inline
+    def hasContent(cachePath: String, hash: String): js.Promise[HasContentObject | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasContent")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HasContentObject | `false`]]
     
-    @JSImport("cacache", "get.hasContentnc")
-    @js.native
-    def hasContentnc(cachePath: String, hash: String): HasContentObject | `false` = js.native
+    @scala.inline
+    def hasContentnc(cachePath: String, hash: String): HasContentObject | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("hasContentnc")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[HasContentObject | `false`]
     
     /**
       * Looks up `key` in the cache index, returning information about the entry
       * if one exists.
       */
-    @JSImport("cacache", "get.info")
-    @js.native
-    def info(cachePath: String, key: String): js.Promise[CacheObject] = js.native
+    @scala.inline
+    def info(cachePath: String, key: String): js.Promise[CacheObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CacheObject]]
     
     object stream {
       
@@ -94,41 +93,40 @@ object mod {
         * entirely. This version does not emit the `metadata` and `integrity`
         * events at all.
         */
-      @JSImport("cacache", "get.stream")
-      @js.native
-      def apply(cachePath: String, key: String): ReadableStream = js.native
-      @JSImport("cacache", "get.stream")
-      @js.native
-      def apply(cachePath: String, key: String, opts: Options): ReadableStream = js.native
+      @scala.inline
+      def apply(cachePath: String, key: String): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+      @scala.inline
+      def apply(cachePath: String, key: String, opts: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
       
-      @JSImport("cacache", "get.stream.byDigest")
+      @JSImport("cacache", "get.stream")
       @js.native
-      def byDigest(cachePath: String, hash: String): ReadableStream = js.native
-      @JSImport("cacache", "get.stream.byDigest")
-      @js.native
-      def byDigest(cachePath: String, hash: String, opts: Options): ReadableStream = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def byDigest(cachePath: String, hash: String): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+      @scala.inline
+      def byDigest(cachePath: String, hash: String, opts: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("byDigest")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
     }
     
-    @JSImport("cacache", "get.sync")
-    @js.native
-    def sync(cachePath: String, key: String): CacheObject = js.native
-    @JSImport("cacache", "get.sync")
-    @js.native
-    def sync(cachePath: String, key: String, opts: Options): CacheObject = js.native
+    @scala.inline
+    def sync(cachePath: String, key: String): CacheObject = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CacheObject]
+    @scala.inline
+    def sync(cachePath: String, key: String, opts: Options): CacheObject = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CacheObject]
     
-    @JSImport("cacache", "get.syncDigest")
-    @js.native
-    def syncDigest(cachePath: String, key: String): CacheObject = js.native
-    @JSImport("cacache", "get.syncDigest")
-    @js.native
-    def syncDigest(cachePath: String, key: String, opts: Options): CacheObject = js.native
+    @scala.inline
+    def syncDigest(cachePath: String, key: String): CacheObject = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDigest")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[CacheObject]
+    @scala.inline
+    def syncDigest(cachePath: String, key: String, opts: Options): CacheObject = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDigest")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CacheObject]
   }
   
   object ls {
     
+    @scala.inline
+    def apply(cachePath: String): js.Promise[Cache] = ^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cache]]
+    
     @JSImport("cacache", "ls")
     @js.native
-    def apply(cachePath: String): js.Promise[Cache] = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Lists info for all entries currently in the cache as a single large
@@ -137,55 +135,55 @@ object mod {
       * This works just like `ls`, except `get.info` entries are returned as
       * `'data'` events on the returned stream.
       */
-    @JSImport("cacache", "ls.stream")
-    @js.native
-    def stream(cachePath: String): ReadableStream = js.native
+    @scala.inline
+    def stream(cachePath: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   }
   
   object put {
     
+    @scala.inline
+    def apply(cachePath: String, key: String, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def apply(cachePath: String, key: String, data: js.Any, opts: typings.cacache.enMod.put.Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    
     @JSImport("cacache", "put")
     @js.native
-    def apply(cachePath: String, key: String, data: js.Any): js.Promise[String] = js.native
-    @JSImport("cacache", "put")
-    @js.native
-    def apply(cachePath: String, key: String, data: js.Any, opts: typings.cacache.enMod.put.Options): js.Promise[String] = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a Writable Stream that inserts data written to it into the cache.
       * Emits an `integrity` event with the digest of written contents when it
       * succeeds.
       */
-    @JSImport("cacache", "put.stream")
-    @js.native
-    def stream(cachePath: String, key: String): WritableStream = js.native
-    @JSImport("cacache", "put.stream")
-    @js.native
-    def stream(cachePath: String, key: String, opts: typings.cacache.enMod.put.Options): WritableStream = js.native
+    @scala.inline
+    def stream(cachePath: String, key: String): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+    @scala.inline
+    def stream(cachePath: String, key: String, opts: typings.cacache.enMod.put.Options): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
   }
   
   object rm {
     
+    @scala.inline
+    def apply(cachePath: String, key: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    
     @JSImport("cacache", "rm")
     @js.native
-    def apply(cachePath: String, key: String): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Clears the entire cache. Mainly by blowing away the cache directory
       * itself.
       */
-    @JSImport("cacache", "rm.all")
-    @js.native
-    def all(cachePath: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def all(cachePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(cachePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Removes the content identified by `integrity`. Any index entries
       * referring to it will not be usable again until the content is re-added
       * to the cache with an identical digest.
       */
-    @JSImport("cacache", "rm.content")
-    @js.native
-    def content(cachePath: String, hash: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def content(cachePath: String, hash: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("content")(cachePath.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Removes the index entry for `key`. Content will still be accessible if
@@ -195,16 +193,18 @@ object mod {
       * entries), use `rm.content`. Or, to safely vacuum any unused content,
       * use `verify`.
       */
-    @JSImport("cacache", "rm.entry")
-    @js.native
-    def entry(cachePath: String, key: String): js.Promise[CacheObject] = js.native
+    @scala.inline
+    def entry(cachePath: String, key: String): js.Promise[CacheObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("entry")(cachePath.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CacheObject]]
   }
   
-  @JSImport("cacache", "setLocale")
-  @js.native
-  def setLocale(locale: String): js.Any = js.native
+  @scala.inline
+  def setLocale(locale: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object tmp {
+    
+    @JSImport("cacache", "tmp")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Sets the `uid` and `gid` properties on all files and folders within the
@@ -212,9 +212,8 @@ object mod {
       *
       * Use this after manually writing files into `tmp.mkdir` or `tmp.withTmp`.
       */
-    @JSImport("cacache", "tmp.fix")
-    @js.native
-    def fix(cachePath: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def fix(cachePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fix")(cachePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Returns a unique temporary directory inside the cache's `tmp` dir. This
@@ -228,16 +227,13 @@ object mod {
       *
       * If you want automatic cleanup of this directory, use `tmp.withTmp()`
       */
-    @JSImport("cacache", "tmp.mkdir")
-    @js.native
-    def mkdir(cachePath: String): js.Promise[String] = js.native
-    @JSImport("cacache", "tmp.mkdir")
-    @js.native
-    def mkdir(cachePath: String, opts: typings.cacache.enMod.tmp.Options): js.Promise[String] = js.native
+    @scala.inline
+    def mkdir(cachePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(cachePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def mkdir(cachePath: String, opts: typings.cacache.enMod.tmp.Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(cachePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @JSImport("cacache", "tmp.withTmp")
-    @js.native
-    def withTmp(cachePath: String, cb: Callback): Unit = js.native
+    @scala.inline
+    def withTmp(cachePath: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withTmp")(cachePath.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Creates a temporary directory with `tmp.mkdir()` and calls `cb` with it.
       * The created temporary directory will be removed when the return value of
@@ -246,26 +242,26 @@ object mod {
       *
       * The same caveats apply when it comes to managing permissions for the tmp dir's contents.
       */
-    @JSImport("cacache", "tmp.withTmp")
-    @js.native
-    def withTmp(cachePath: String, opts: typings.cacache.enMod.tmp.Options, cb: Callback): Unit = js.native
+    @scala.inline
+    def withTmp(cachePath: String, opts: typings.cacache.enMod.tmp.Options, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withTmp")(cachePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object verify {
     
+    @scala.inline
+    def apply(cachePath: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def apply(cachePath: String, opts: typings.cacache.enMod.verify.Options): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(cachePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    
     @JSImport("cacache", "verify")
     @js.native
-    def apply(cachePath: String): js.Promise[_] = js.native
-    @JSImport("cacache", "verify")
-    @js.native
-    def apply(cachePath: String, opts: typings.cacache.enMod.verify.Options): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a Date representing the last time `cacache.verify` was run on
       * `cache`.
       */
-    @JSImport("cacache", "verify.lastRun")
-    @js.native
-    def lastRun(cachePath: String): js.Promise[Date] = js.native
+    @scala.inline
+    def lastRun(cachePath: String): js.Promise[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastRun")(cachePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Date]]
   }
 }

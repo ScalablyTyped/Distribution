@@ -2,29 +2,27 @@ package typings.jestTestResult.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattedAssertionResult extends StObject {
   
-  var ancestorTitles: js.Array[String] = js.native
+  var ancestorTitles: js.Array[String]
   
-  var failureMessages: js.Array[String] | Null = js.native
+  var failureMessages: js.Array[String] | Null
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var location: js.UndefOr[Callsite | Null] = js.native
+  var location: js.UndefOr[Callsite | Null] = js.undefined
   
-  var status: Status = js.native
+  var status: Status
   
-  var title: String = js.native
+  var title: String
 }
 object FormattedAssertionResult {
   
   @scala.inline
   def apply(ancestorTitles: js.Array[String], fullName: String, status: Status, title: String): FormattedAssertionResult = {
-    val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], failureMessages = null)
     __obj.asInstanceOf[FormattedAssertionResult]
   }
   

@@ -3,32 +3,31 @@ package typings.typedGraphql.mod
 import typings.typedGraphql.typedGraphqlStrings.INTERFACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IntrospectionInterfaceType extends IntrospectionType {
+trait IntrospectionInterfaceType
+  extends StObject
+     with IntrospectionType {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var fields: js.Array[IntrospectionField] = js.native
+  var fields: js.Array[IntrospectionField]
   
-  var kind: INTERFACE = js.native
+  var kind: INTERFACE
   
-  var name: String = js.native
+  var name: String
   
-  var possibleTypes: js.Array[IntrospectionNamedTypeRef] = js.native
+  var possibleTypes: js.Array[IntrospectionNamedTypeRef]
 }
 object IntrospectionInterfaceType {
   
   @scala.inline
   def apply(
     fields: js.Array[IntrospectionField],
-    kind: INTERFACE,
     name: String,
     possibleTypes: js.Array[IntrospectionNamedTypeRef]
   ): IntrospectionInterfaceType = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = "INTERFACE", name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInterfaceType]
   }
   

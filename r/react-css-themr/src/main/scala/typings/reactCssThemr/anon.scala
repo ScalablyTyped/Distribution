@@ -4,15 +4,13 @@ import typings.reactCssThemr.mod.TMapThemrProps
 import typings.reactCssThemr.mod.TReactCSSThemrTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MapThemrProps[P] extends StObject {
     
-    var mapThemrProps: js.UndefOr[TMapThemrProps[P]] = js.native
+    var mapThemrProps: js.UndefOr[TMapThemrProps[P]] = js.undefined
   }
   object MapThemrProps {
     
@@ -23,20 +21,19 @@ object anon {
     }
     
     @scala.inline
-    implicit class MapThemrPropsMutableBuilder[Self <: MapThemrProps[_], P] (val x: Self with MapThemrProps[P]) extends AnyVal {
+    implicit class MapThemrPropsMutableBuilder[Self <: MapThemrProps[?], P] (val x: Self & MapThemrProps[P]) extends AnyVal {
       
       @scala.inline
-      def setMapThemrProps(value: (P, /* theme */ TReactCSSThemrTheme) => P with Theme): Self = StObject.set(x, "mapThemrProps", js.Any.fromFunction2(value))
+      def setMapThemrProps(value: (P, /* theme */ TReactCSSThemrTheme) => P & Theme): Self = StObject.set(x, "mapThemrProps", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMapThemrPropsUndefined: Self = StObject.set(x, "mapThemrProps", js.undefined)
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var theme: TReactCSSThemrTheme = js.native
+    var theme: TReactCSSThemrTheme
   }
   object Theme {
     

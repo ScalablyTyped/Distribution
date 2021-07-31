@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDeviceRequest extends StObject {
   
   /**
     * The ARN of the device to update. Required.
     */
-  var DeviceArn: js.UndefOr[Arn] = js.native
+  var DeviceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The updated device name. Required.
     */
-  var DeviceName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceName] = js.native
+  var DeviceName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceName] = js.undefined
 }
 object UpdateDeviceRequest {
   

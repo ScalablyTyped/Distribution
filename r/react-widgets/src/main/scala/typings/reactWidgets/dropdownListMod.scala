@@ -16,7 +16,6 @@ import typings.reactWidgets.reactWidgetsStrings.startsWith
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownListMod extends Shortcut {
@@ -31,41 +30,40 @@ object dropdownListMod extends Shortcut {
   }
   @JSImport("react-widgets/lib/DropdownList", JSImport.Namespace)
   @js.native
-  val ^ : DropdownListClass = js.native
+  val ^ : js.Object & DropdownListClass = js.native
   
   type DropdownListClass = ComponentClass[DropdownListProps, ComponentState]
   
-  @js.native
   trait DropdownListMessages extends StObject {
     
     /**
       * Text to display for the create option
       * @default: "Create option {text}"
       */
-    var createOption: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.native
+    var createOption: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.undefined
     
     /**
       * Text to display when the the current filter does not return any results.
       * @default: "The filter returned no results"
       */
-    var emptyFilter: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.native
+    var emptyFilter: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.undefined
     
     /**
       * Text to display when the data prop array is empty.
       * @default: "There are no items in this list"
       */
-    var emptyList: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.native
+    var emptyList: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.undefined
     
     /**
       * The placeholder text for the filter input.
       */
-    var filterPlaceholder: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.native
+    var filterPlaceholder: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.undefined
     
     /**
       * Dropdown button text for screen readers.
       * @default: "Open Dropdown"
       */
-    var open: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.native
+    var open: js.UndefOr[String | (js.Function1[/* props */ DropdownListProps, String])] = js.undefined
   }
   object DropdownListMessages {
     
@@ -125,70 +123,70 @@ object dropdownListMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DropdownListProps
-    extends ReactWidgetsCommonDropdownProps
+    extends StObject
+       with ReactWidgetsCommonDropdownProps
        with AutoFocus {
     
     /**
       * Allow to create a new option on the data list.
       */
-    var allowCreate: js.UndefOr[Boolean | onFilter] = js.native
+    var allowCreate: js.UndefOr[Boolean | onFilter] = js.undefined
     
     /**
       * Mark whether the widget is in a busy or loading state. If true the widget will display a
       * spinner gif, useful when loading data via an ajax call.
       * @default false
       */
-    var busy: js.UndefOr[Boolean] = js.native
+    var busy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional ReactNode to override the spinner gif element when the busy property
       * is set to true.
       */
-    var busySpinner: js.UndefOr[ReactNode] = js.native
+    var busySpinner: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Use in conjunction with the filter prop. Filter the list without regard for case. This
       * only applies to non function values for filter
       * @default false
       */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds a css class to the input container element.
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Provide an array of possible values for the DropdownList. If an array of objects is
       * provided you should use the valueField and textField props, to specify which object
       * properties comprise the value field (such as an id) and the field used to label the item.
       */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The defaultOpen prop can be used to set an
       * initialization value for uncontrolled widgets.
       */
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default value.
       */
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Delay
       * @default 250
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * The speed, in milliseconds, of the dropdown animation.
       * @default 250
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify a filtering method used to reduce the items in the dropdown as you type.
@@ -198,105 +196,105 @@ object dropdownListMod extends Shortcut {
       */
     var filter: js.UndefOr[
         `false` | startsWith | endsWith | contains | (js.Function2[/* dataItem */ js.Any, /* str */ String, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Determines how to group the DropdownList. Providing a string will group the data array by
       * that property. You can also provide a function which should return the group value.
       */
-    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, _])] = js.native
+    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, js.Any])] = js.undefined
     
     /**
       * This component is used to render each option group, when groupBy is specified. By default
       * the groupBy value will be used.
       */
-    var groupComponent: js.UndefOr[ReactType[_]] = js.native
+    var groupComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     /**
       * This component is used to render each possible item in the DropdownList. The default
       * component renders the text of the selected item (specified by textfield)
       */
-    var itemComponent: js.UndefOr[ReactType[_] | String] = js.native
+    var itemComponent: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
-    var listComponent: js.UndefOr[ReactType[_] | String] = js.native
+    var listComponent: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying List component.
       */
-    var listProps: js.UndefOr[js.Object] = js.native
+    var listProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Object hash containing display text and/or text for screen readers. Use the messages
       * object to localize widget text and increase accessibility.
       */
-    var messages: js.UndefOr[DropdownListMessages] = js.native
+    var messages: js.UndefOr[DropdownListMessages] = js.undefined
     
     /**
       * Use in conjunction with the filter prop. Start filtering the list only after the value
       * has reached a minimum length.
       * @default 1
       */
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether or not the SelectList allows multiple selection or not.
       * when false the SelectList will render as a list of radio buttons, and checkboxes when true.
       */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The HTML name attribute used to group checkboxes and radio buttons together.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Change event Handler that is called when the value is changed.
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
     /**
       * Create event Handler that is called when a new option is added to the data list.
       */
-    var onCreate: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onCreate: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
     /**
       * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
       */
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
     
     /**
       * The native onKeyPress event, called preventDefault will stop any custom behavior.
       */
-    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
     
     /**
       * Called when the value of the filter input changes either from typing or a pasted value.
       * onSearch should be used when the searchTerm prop is set.
       */
-    var onSearch: js.UndefOr[js.Function1[/* searchTerm */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* searchTerm */ String, Unit]] = js.undefined
     
     /**
       * This handler fires when an item has been selected from the list. It fires before the
       * onChange handler, and fires regardless of whether the value has actually changed.
       */
-    var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
     /**
       * Called when the DropdownList is about to open or close. onToggle should be used when the
       * open prop is set otherwise the widget open buttons won't work.
       */
-    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
     
     /**
       * Whether or not the DropdownList is open. When unset (undefined) the DropdownList will
       * handle the opening and closing internally.
       */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text to display when the value is empty.
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * The string value of the current search being typed into the DropdownList. When unset
@@ -304,27 +302,27 @@ object dropdownListMod extends Shortcut {
       * prop can be used to set an initialization value for uncontrolled widgets. searchTerm is
       * only relevant when the filter prop is set.
       */
-    var searchTerm: js.UndefOr[String] = js.native
+    var searchTerm: js.UndefOr[String] = js.undefined
     
     /**
       * Specify which data item field to display in the DropdownList and selected item.
       * ThetextFieldprop may also also used as to find an item in the list as you type. Providing
       * an accessor function allows for computed text values
       */
-    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.native
+    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.undefined
     
     /**
       * The current value of the DropdownList. This can be an object (such as a member of the
       * data array) or a primitive value, hinted to by the valueField. The widget value does not
       * need to be in the data array; widgets can have values that are not in their list.
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
     /**
       * This component is used to render the selected value of the DropdownList. The default
       * component renders the text of the selected item (specified by textfield)
       */
-    var valueComponent: js.UndefOr[ReactType[_]] = js.native
+    var valueComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     /**
       * A dataItem field name for uniquely identifying items in the data list. A valueField is
@@ -333,7 +331,7 @@ object dropdownListMod extends Shortcut {
       * When a valueField is not provided, the DropdownList will use strict equality checks (===)
       * to locate the value in the data list.
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object DropdownListProps {
     
@@ -377,7 +375,7 @@ object dropdownListMod extends Shortcut {
       def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -421,28 +419,28 @@ object dropdownListMod extends Shortcut {
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       @scala.inline
-      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, _])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, js.Any])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupByFunction1(value: /* dataItem */ js.Any => _): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+      def setGroupByFunction1(value: /* dataItem */ js.Any => js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
       @scala.inline
-      def setGroupComponent(value: ReactType[_]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+      def setGroupComponent(value: ReactType[js.Any]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
       
       @scala.inline
-      def setItemComponent(value: ReactType[_] | String): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      def setItemComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
       
       @scala.inline
-      def setListComponent(value: ReactType[_] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
+      def setListComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListComponentUndefined: Self = StObject.set(x, "listComponent", js.undefined)
@@ -550,7 +548,7 @@ object dropdownListMod extends Shortcut {
       def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValueComponent(value: ReactType[_]): Self = StObject.set(x, "valueComponent", value.asInstanceOf[js.Any])
+      def setValueComponent(value: ReactType[js.Any]): Self = StObject.set(x, "valueComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueComponentUndefined: Self = StObject.set(x, "valueComponent", js.undefined)
@@ -566,8 +564,8 @@ object dropdownListMod extends Shortcut {
     }
   }
   
-  type _To = DropdownListClass
+  type _To = js.Object & DropdownListClass
   
   /* This means you don't have to write `^`, but can instead just say `dropdownListMod.foo` */
-  override def _to: DropdownListClass = ^
+  override def _to: js.Object & DropdownListClass = ^
 }

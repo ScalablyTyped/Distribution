@@ -2,14 +2,12 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#h-rtcdatachannelevent
-@js.native
 trait RTCDataChannelEvent extends StObject {
   
-  val channel: RTCDataChannel = js.native
+  val channel: RTCDataChannel
 }
 object RTCDataChannelEvent {
   

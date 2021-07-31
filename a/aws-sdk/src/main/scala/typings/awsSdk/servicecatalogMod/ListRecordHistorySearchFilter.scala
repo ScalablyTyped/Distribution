@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRecordHistorySearchFilter extends StObject {
   
   /**
     * The filter key.    product - Filter results based on the specified product identifier.    provisionedproduct - Filter results based on the provisioned product identifier.  
     */
-  var Key: js.UndefOr[SearchFilterKey] = js.native
+  var Key: js.UndefOr[SearchFilterKey] = js.undefined
   
   /**
     * The filter value.
     */
-  var Value: js.UndefOr[SearchFilterValue] = js.native
+  var Value: js.UndefOr[SearchFilterValue] = js.undefined
 }
 object ListRecordHistorySearchFilter {
   

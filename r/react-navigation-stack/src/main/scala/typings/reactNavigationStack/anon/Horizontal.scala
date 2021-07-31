@@ -2,15 +2,13 @@ package typings.reactNavigationStack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Horizontal extends StObject {
   
-  var horizontal: js.UndefOr[Double] = js.native
+  var horizontal: js.UndefOr[Double] = js.undefined
   
-  var vertical: js.UndefOr[Double] = js.native
+  var vertical: js.UndefOr[Double] = js.undefined
 }
 object Horizontal {
   

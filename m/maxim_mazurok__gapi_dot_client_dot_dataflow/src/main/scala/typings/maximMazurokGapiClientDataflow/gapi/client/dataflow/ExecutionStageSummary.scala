@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionStageSummary extends StObject {
   
   /** Collections produced and consumed by component transforms of this stage. */
-  var componentSource: js.UndefOr[js.Array[ComponentSource]] = js.native
+  var componentSource: js.UndefOr[js.Array[ComponentSource]] = js.undefined
   
   /** Transforms that comprise this execution stage. */
-  var componentTransform: js.UndefOr[js.Array[ComponentTransform]] = js.native
+  var componentTransform: js.UndefOr[js.Array[ComponentTransform]] = js.undefined
   
   /** Dataflow service generated id for this stage. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Input sources for this stage. */
-  var inputSource: js.UndefOr[js.Array[StageSource]] = js.native
+  var inputSource: js.UndefOr[js.Array[StageSource]] = js.undefined
   
   /** Type of tranform this stage is executing. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Dataflow service generated name for this stage. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output sources for this stage. */
-  var outputSource: js.UndefOr[js.Array[StageSource]] = js.native
+  var outputSource: js.UndefOr[js.Array[StageSource]] = js.undefined
   
   /** Other stages that must complete before this stage can run. */
-  var prerequisiteStage: js.UndefOr[js.Array[String]] = js.native
+  var prerequisiteStage: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExecutionStageSummary {
   

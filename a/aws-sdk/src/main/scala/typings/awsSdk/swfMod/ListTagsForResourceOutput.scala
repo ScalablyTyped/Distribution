@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceOutput extends StObject {
   
   /**
     * An array of tags associated with the domain.
     */
-  var tags: js.UndefOr[ResourceTagList] = js.native
+  var tags: js.UndefOr[ResourceTagList] = js.undefined
 }
 object ListTagsForResourceOutput {
   

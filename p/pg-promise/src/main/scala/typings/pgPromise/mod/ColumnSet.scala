@@ -4,7 +4,6 @@ import typings.pgPromise.anon.From
 import typings.pgPromise.anon.Prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // helpers.Column class;
@@ -27,13 +26,13 @@ class ColumnSet[S] protected () extends StObject {
   
   val columns: js.Array[Column[S]] = js.native
   
-  def extend(columns: js.Array[String | IColumnConfig[_] | Column[_]]): ColumnSet[_] = js.native
-  def extend(columns: Column[_]): ColumnSet[_] = js.native
-  def extend(columns: ColumnSet[_]): ColumnSet[_] = js.native
+  def extend(columns: js.Array[String | IColumnConfig[js.Any] | Column[js.Any]]): ColumnSet[js.Any] = js.native
+  def extend(columns: Column[js.Any]): ColumnSet[js.Any] = js.native
+  def extend(columns: ColumnSet[js.Any]): ColumnSet[js.Any] = js.native
   
-  def merge(columns: js.Array[String | IColumnConfig[_] | Column[_]]): ColumnSet[_] = js.native
-  def merge(columns: Column[_]): ColumnSet[_] = js.native
-  def merge(columns: ColumnSet[_]): ColumnSet[_] = js.native
+  def merge(columns: js.Array[String | IColumnConfig[js.Any] | Column[js.Any]]): ColumnSet[js.Any] = js.native
+  def merge(columns: Column[js.Any]): ColumnSet[js.Any] = js.native
+  def merge(columns: ColumnSet[js.Any]): ColumnSet[js.Any] = js.native
   
   val names: String = js.native
   

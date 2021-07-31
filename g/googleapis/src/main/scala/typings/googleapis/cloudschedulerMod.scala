@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudschedulerMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudscheduler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object cloudschedulerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudscheduler", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudscheduler", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object cloudschedulerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudscheduler", "cloudscheduler")
-  @js.native
-  def cloudscheduler(options: Options): Cloudscheduler = js.native
-  @JSImport("googleapis/build/src/apis/cloudscheduler", "cloudscheduler")
-  @js.native
-  def cloudscheduler_v1beta1(version: v1beta1): Cloudscheduler = js.native
+  @scala.inline
+  def cloudscheduler(options: Options): Cloudscheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudscheduler")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudscheduler]
+  
+  @scala.inline
+  def cloudscheduler_v1beta1(version: v1beta1): Cloudscheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudscheduler")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudscheduler]
 }

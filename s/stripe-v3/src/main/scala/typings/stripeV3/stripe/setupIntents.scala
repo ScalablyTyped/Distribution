@@ -8,23 +8,21 @@ import typings.stripeV3.stripeV3Strings.setup_intent
 import typings.stripeV3.stripeV3Strings.use_stripe_sdk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object setupIntents {
   
-  @js.native
   trait SetupIntent extends StObject {
     
     /**
       * ID of the Connect application that created the SetupIntent.
       */
-    var application: String | Null = js.native
+    var application: String | Null
     
     /**
       * Reason for cancellation of this SetupIntent.
       */
-    var cancelation_reason: SetupIntentCancelationReason | Null = js.native
+    var cancelation_reason: SetupIntentCancelationReason | Null
     
     /**
       * The client secret of this SetupIntent. Used for client-side retrieval using a publishable key.
@@ -32,12 +30,12 @@ object setupIntents {
       * It should not be stored, logged, embedded in URLs, or exposed to anyone other than the customer.
       * Make sure that you have TLS enabled on any page that includes the client secret.
       */
-    var client_secret: String = js.native
+    var client_secret: String
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * ID of the Customer this SetupIntent belongs to, if one exists.
@@ -45,65 +43,65 @@ object setupIntents {
       * to this Customer, and payment methods attached to other Customers cannot be
       * used with this SetupIntent.
       */
-    var customer: String | Null = js.native
+    var customer: String | Null
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Unique identifier for the object.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The error encountered in the previous SetupIntent confirmation.
       */
-    var last_payment_error: Error | Null = js.native
+    var last_payment_error: Error | Null
     
     /**
       * Has the value true if the object exists in live mode or the value
       * false if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be
       * useful for storing additional information about the object in a structured format.
       */
-    var metadata: Metadata = js.native
+    var metadata: Metadata
     
     /**
       * If present, this property tells you what actions you need to take in
       * order for your customer to continue payment setup.
       */
-    var next_action: SetupIntentNextActionUseStripeSdk | SetupIntentNextActionRedirectToUrl = js.native
+    var next_action: SetupIntentNextActionUseStripeSdk | SetupIntentNextActionRedirectToUrl
     
     /**
       * Value is "setup_intent".
       */
-    var `object`: setup_intent = js.native
+    var `object`: setup_intent
     
     /**
       * The account (if any) for which the setup is intended.
       */
-    var on_behalf_of: String | Null = js.native
+    var on_behalf_of: String | Null
     
     /**
       * ID of the payment method used with this SetupIntent.
       */
-    var payment_method: String | Null = js.native
+    var payment_method: String | Null
     
     /**
       * The list of payment method types (e.g. card) that this SetupIntent is allowed to set up.
       */
-    var payment_method_types: js.Array[String] = js.native
+    var payment_method_types: js.Array[String]
     
     /**
       * Status of this SetupIntent
       */
-    var status: SetupIntentStatus = js.native
+    var status: SetupIntentStatus
     
     /**
       * Indicates how the payment method is intended to be used in the future.
@@ -112,7 +110,7 @@ object setupIntents {
       * customer may or may not be in your checkout flow. If not provided,
       * this value defaults to off_session.
       */
-    var usage: on_session | off_session = js.native
+    var usage: on_session | off_session
   }
   object SetupIntent {
     
@@ -124,13 +122,12 @@ object setupIntents {
       livemode: Boolean,
       metadata: Metadata,
       next_action: SetupIntentNextActionUseStripeSdk | SetupIntentNextActionRedirectToUrl,
-      `object`: setup_intent,
       payment_method_types: js.Array[String],
       status: SetupIntentStatus,
       usage: on_session | off_session
     ): SetupIntent = {
-      val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], application = null, cancelation_reason = null, customer = null, last_payment_error = null, on_behalf_of = null, payment_method = null)
+      __obj.updateDynamic("object")("setup_intent")
       __obj.asInstanceOf[SetupIntent]
     }
     
@@ -232,26 +229,25 @@ object setupIntents {
     def requested_by_customer: typings.stripeV3.stripeV3Strings.requested_by_customer = "requested_by_customer".asInstanceOf[typings.stripeV3.stripeV3Strings.requested_by_customer]
   }
   
-  @js.native
   trait SetupIntentNextActionRedirectToUrl extends StObject {
     
     /**
       * Contains instructions for authenticating a payment by
       * redirecting your customer to another page or application.
       */
-    var redirect_to_url: Url = js.native
+    var redirect_to_url: Url
     
     /**
       * Type of the next action to perform
       */
-    var `type`: redirect_to_url = js.native
+    var `type`: redirect_to_url
   }
   object SetupIntentNextActionRedirectToUrl {
     
     @scala.inline
-    def apply(redirect_to_url: Url, `type`: redirect_to_url): SetupIntentNextActionRedirectToUrl = {
+    def apply(redirect_to_url: Url): SetupIntentNextActionRedirectToUrl = {
       val __obj = js.Dynamic.literal(redirect_to_url = redirect_to_url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("redirect_to_url")
       __obj.asInstanceOf[SetupIntentNextActionRedirectToUrl]
     }
     
@@ -266,13 +262,12 @@ object setupIntents {
     }
   }
   
-  @js.native
   trait SetupIntentNextActionUseStripeSdk extends StObject {
     
     /**
       * Type of the next action to perform
       */
-    var `type`: use_stripe_sdk = js.native
+    var `type`: use_stripe_sdk
     
     /**
       * When confirming a SetupIntent with Stripe.js, Stripe.js depends on
@@ -280,14 +275,14 @@ object setupIntents {
       * shape of the contents is subject to change and is only intended to
       * be used by Stripe.js.
       */
-    var use_stripe_sdk: js.Any = js.native
+    var use_stripe_sdk: js.Any
   }
   object SetupIntentNextActionUseStripeSdk {
     
     @scala.inline
-    def apply(`type`: use_stripe_sdk, use_stripe_sdk: js.Any): SetupIntentNextActionUseStripeSdk = {
+    def apply(use_stripe_sdk: js.Any): SetupIntentNextActionUseStripeSdk = {
       val __obj = js.Dynamic.literal(use_stripe_sdk = use_stripe_sdk.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("use_stripe_sdk")
       __obj.asInstanceOf[SetupIntentNextActionUseStripeSdk]
     }
     

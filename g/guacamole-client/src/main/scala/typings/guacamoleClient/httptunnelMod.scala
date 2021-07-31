@@ -3,7 +3,6 @@ package typings.guacamoleClient
 import typings.guacamoleClient.tunnelMod.Tunnel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httptunnelMod {
@@ -21,7 +20,7 @@ object httptunnelMod {
       */
     def this(tunnelURL: String) = this()
     def this(tunnelURL: String, crossDomain: Boolean) = this()
-    def this(tunnelURL: String, crossDomain: js.UndefOr[scala.Nothing], extraTunnelHeaders: Boolean) = this()
     def this(tunnelURL: String, crossDomain: Boolean, extraTunnelHeaders: Boolean) = this()
+    def this(tunnelURL: String, crossDomain: Unit, extraTunnelHeaders: Boolean) = this()
   }
 }

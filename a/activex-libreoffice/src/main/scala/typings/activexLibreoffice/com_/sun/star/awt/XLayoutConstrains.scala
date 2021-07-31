@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the layout constraints for a surrounding container. */
-@js.native
-trait XLayoutConstrains extends XInterface {
+trait XLayoutConstrains
+  extends StObject
+     with XInterface {
   
   /** returns the minimum size for this component. */
-  val MinimumSize: Size = js.native
+  val MinimumSize: Size
   
   /** returns the preferred size for this component. */
-  val PreferredSize: Size = js.native
+  val PreferredSize: Size
   
   /** calculates the adjusted size for a given maximum size. */
-  def calcAdjustedSize(aNewSize: Size): Size = js.native
+  def calcAdjustedSize(aNewSize: Size): Size
   
   /** returns the minimum size for this component. */
-  def getMinimumSize(): Size = js.native
+  def getMinimumSize(): Size
   
   /** returns the preferred size for this component. */
-  def getPreferredSize(): Size = js.native
+  def getPreferredSize(): Size
 }
 object XLayoutConstrains {
   

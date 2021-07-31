@@ -3,39 +3,37 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFAutoStateTransitionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStateTransition extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  def Clone(): IStateTransition = js.native
+  def Clone(): IStateTransition
   
-  var Description: String = js.native
+  var Description: String
   
-  var EvaluationOrderNumber: Double = js.native
+  var EvaluationOrderNumber: Double
   
-  var FromState: Double = js.native
+  var FromState: Double
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var SemanticAliases: ISemanticAliases = js.native
+  var SemanticAliases: ISemanticAliases
   
-  var SignatureSettings: ISignatureSettings = js.native
+  var SignatureSettings: ISignatureSettings
   
-  var ToState: Double = js.native
+  var ToState: Double
   
-  var TriggerAllowedByVBScript: String = js.native
+  var TriggerAllowedByVBScript: String
   
-  var TriggerCriteria: ISearchConditions = js.native
+  var TriggerCriteria: ISearchConditions
   
-  var TriggerInDays: Double = js.native
+  var TriggerInDays: Double
   
-  var TriggerMode: MFAutoStateTransitionMode = js.native
+  var TriggerMode: MFAutoStateTransitionMode
 }
 object IStateTransition {
   

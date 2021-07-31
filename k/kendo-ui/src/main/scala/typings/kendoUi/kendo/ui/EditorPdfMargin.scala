@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorPdfMargin extends StObject {
   
-  var bottom: js.UndefOr[Double | String] = js.native
+  var bottom: js.UndefOr[Double | String] = js.undefined
   
-  var left: js.UndefOr[Double | String] = js.native
+  var left: js.UndefOr[Double | String] = js.undefined
   
-  var right: js.UndefOr[Double | String] = js.native
+  var right: js.UndefOr[Double | String] = js.undefined
   
-  var top: js.UndefOr[Double | String] = js.native
+  var top: js.UndefOr[Double | String] = js.undefined
 }
 object EditorPdfMargin {
   

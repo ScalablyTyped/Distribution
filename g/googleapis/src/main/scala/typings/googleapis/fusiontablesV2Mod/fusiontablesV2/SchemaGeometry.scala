@@ -2,26 +2,24 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Geometry object.
   */
-@js.native
 trait SchemaGeometry extends StObject {
   
   /**
     * The list of geometries in this geometry collection.
     */
-  var geometries: js.UndefOr[js.Array[_]] = js.native
+  var geometries: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var geometry: js.UndefOr[js.Any] = js.native
+  var geometry: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Type: A collection of geometries.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGeometry {
   
@@ -35,7 +33,7 @@ object SchemaGeometry {
   implicit class SchemaGeometryMutableBuilder[Self <: SchemaGeometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGeometries(value: js.Array[_]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    def setGeometries(value: js.Array[js.Any]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)

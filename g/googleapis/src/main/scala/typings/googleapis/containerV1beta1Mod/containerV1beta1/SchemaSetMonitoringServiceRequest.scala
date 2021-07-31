@@ -2,20 +2,18 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SetMonitoringServiceRequest sets the monitoring service of a cluster.
   */
-@js.native
 trait SchemaSetMonitoringServiceRequest extends StObject {
   
   /**
     * Deprecated. The name of the cluster to upgrade. This field has been
     * deprecated and replaced by the name field.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The monitoring service the cluster should use to write metrics. Currently
@@ -23,27 +21,27 @@ trait SchemaSetMonitoringServiceRequest extends StObject {
     * Cloud Monitoring service * &quot;none&quot; - no metrics will be exported
     * from the cluster
     */
-  var monitoringService: js.UndefOr[String] = js.native
+  var monitoringService: js.UndefOr[String] = js.undefined
   
   /**
     * The name (project, location, cluster) of the cluster to set monitoring.
     * Specified in the format &#39;projects/x/locations/x/clusters/ *&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The Google Developers Console [project ID or project
     * number](https://support.google.com/cloud/answer/6158840). This field has
     * been deprecated and replaced by the name field.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the Google Compute Engine
     * [zone](/compute/docs/zones#available) in which the cluster resides. This
     * field has been deprecated and replaced by the name field.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaSetMonitoringServiceRequest {
   

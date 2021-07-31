@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountAttributesResult extends StObject {
   
   /**
     * The Elastic Beanstalk resource quotas associated with the calling AWS account.
     */
-  var ResourceQuotas: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceQuotas] = js.native
+  var ResourceQuotas: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceQuotas] = js.undefined
 }
 object DescribeAccountAttributesResult {
   

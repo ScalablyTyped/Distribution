@@ -16,14 +16,15 @@ import typings.creativebulmaBulmaTagsinput.creativebulmaBulmaTagsinputStrings.va
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@creativebulma/bulma-tagsinput", JSImport.Default)
   @js.native
-  class default protected () extends BulmaTagsInput {
+  class default protected ()
+    extends StObject
+       with BulmaTagsInput {
     /**
       * @param selector query string returning a single Node or directly a Node
       */
@@ -35,6 +36,10 @@ object mod {
   /* static members */
   object default {
     
+    @JSImport("@creativebulma/bulma-tagsinput", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * DOM modifications will be observed to detect any new element responding to the given selector
       * to automatically instantiate BulmaTagsInput on them with the given option.
@@ -42,18 +47,14 @@ object mod {
       * @param selector selector can be a query string returning a single Node or a NodeList, directly
       * a Node or a NodeList
       */
-    @JSImport("@creativebulma/bulma-tagsinput", "default.attach")
-    @js.native
-    def attach(selector: String): BulmaTagsInput = js.native
-    @JSImport("@creativebulma/bulma-tagsinput", "default.attach")
-    @js.native
-    def attach(selector: String, options: BulmaTagsInputOptions): BulmaTagsInput = js.native
-    @JSImport("@creativebulma/bulma-tagsinput", "default.attach")
-    @js.native
-    def attach(selector: HTMLInputElement): BulmaTagsInput = js.native
-    @JSImport("@creativebulma/bulma-tagsinput", "default.attach")
-    @js.native
-    def attach(selector: HTMLInputElement, options: BulmaTagsInputOptions): BulmaTagsInput = js.native
+    @scala.inline
+    def attach(selector: String): BulmaTagsInput = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[BulmaTagsInput]
+    @scala.inline
+    def attach(selector: String, options: BulmaTagsInputOptions): BulmaTagsInput = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BulmaTagsInput]
+    @scala.inline
+    def attach(selector: HTMLInputElement): BulmaTagsInput = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[BulmaTagsInput]
+    @scala.inline
+    def attach(selector: HTMLInputElement, options: BulmaTagsInputOptions): BulmaTagsInput = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BulmaTagsInput]
   }
   
   @js.native
@@ -143,18 +144,18 @@ object mod {
     def off(eventName: String): Unit = js.native
     
     @JSName("on")
-    def on_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def on_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     @JSName("on")
     def on_afterflush(
       eventName: afterDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], _]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
     ): Unit = js.native
     @JSName("on")
-    def on_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, _]): Unit = js.native
+    def on_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
     @JSName("on")
-    def on_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def on_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     @JSName("on")
-    def on_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def on_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     /**
       * Subscribes on event eventName specified function
       *
@@ -162,48 +163,48 @@ object mod {
       * @param listener
       */
     @JSName("on")
-    def on_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, _]): Unit = js.native
+    def on_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
     @JSName("on")
     def on_beforeflush(
       eventName: beforeDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], _]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
     ): Unit = js.native
     @JSName("on")
-    def on_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, _]): Unit = js.native
+    def on_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
     @JSName("on")
-    def on_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def on_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     @JSName("on")
-    def on_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def on_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     
     @JSName("once")
-    def once_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def once_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     @JSName("once")
     def once_afterflush(
       eventName: afterDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], _]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
     ): Unit = js.native
     @JSName("once")
-    def once_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, _]): Unit = js.native
+    def once_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
     @JSName("once")
-    def once_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def once_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     @JSName("once")
-    def once_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def once_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     /**
       * Subscribes on event name specified function to fire only once
       */
     @JSName("once")
-    def once_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, _]): Unit = js.native
+    def once_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
     @JSName("once")
     def once_beforeflush(
       eventName: beforeDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], _]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
     ): Unit = js.native
     @JSName("once")
-    def once_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, _]): Unit = js.native
+    def once_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
     @JSName("once")
-    def once_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def once_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     @JSName("once")
-    def once_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, _]): Unit = js.native
+    def once_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
     
     /**
       * Remove given items
@@ -266,7 +267,6 @@ object mod {
     var value: String | js.Array[String] = js.native
   }
   
-  @js.native
   trait BulmaTagsInputEventMap extends StObject {
     
     /**
@@ -274,67 +274,67 @@ object mod {
       * parameter.
       */
     @JSName("after.add")
-    var afterDotadd: Item = js.native
+    var afterDotadd: Item
     
     /**
       * Triggered after flushing items.
       */
     @JSName("after.flush")
-    var afterDotflush: js.Array[String | BulmaTagsInputItem] = js.native
+    var afterDotflush: js.Array[String | BulmaTagsInputItem]
     
     /**
       * Triggered once a tag has been removed. The removed item is passed as parameter.
       */
     @JSName("after.remove")
-    var afterDotremove: String | BulmaTagsInputItem = js.native
+    var afterDotremove: String | BulmaTagsInputItem
     
     /**
       * Triggered once an item has been selected. The concerned item and related tag are passed in
       * an Object as parameter.
       */
     @JSName("after.select")
-    var afterDotselect: Item = js.native
+    var afterDotselect: Item
     
     /**
       * Triggered once an item has been unselected. The concerned item and related tag are passed in
       * an Object as parameter.
       */
     @JSName("after.unselect")
-    var afterDotunselect: Item = js.native
+    var afterDotunselect: Item
     
     /**
       * Trigerred before adding new tag. The concerned item is passed as parameter. You can modify the item
       * before its treatment by returning the new item data or prevent tag to be added by returning false.
       */
     @JSName("before.add")
-    var beforeDotadd: String | BulmaTagsInputItem = js.native
+    var beforeDotadd: String | BulmaTagsInputItem
     
     /**
       * Triggered before flushing items. Items array is passed as parameter.
       */
     @JSName("before.flush")
-    var beforeDotflush: js.Array[String | BulmaTagsInputItem] = js.native
+    var beforeDotflush: js.Array[String | BulmaTagsInputItem]
     
     /**
       * Triggered before removing a tag. The concerned item is passed as parameter. You can prevent
       * deletion by returning `false`.
       */
     @JSName("before.remove")
-    var beforeDotremove: String | BulmaTagsInputItem = js.native
+    var beforeDotremove: String | BulmaTagsInputItem
     
     /**
       * Triggered before selecting an item. The concerned item and related tag are passed in an
       * Object as parameter.
       */
     @JSName("before.select")
-    var beforeDotselect: Item = js.native
+    var beforeDotselect: Item
     
     /**
       * Triggered before unselect an item. The concerned item and related tag are passed in an Object
       * as parameter.
       */
     @JSName("before.unselect")
-    var beforeDotunselect: Item = js.native
+    var beforeDotunselect: Item
   }
   object BulmaTagsInputEventMap {
     
@@ -406,12 +406,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BulmaTagsInputItem extends StObject {
     
-    var text: String = js.native
+    var text: String
     
-    var value: String = js.native
+    var value: String
   }
   object BulmaTagsInputItem {
     
@@ -432,7 +431,6 @@ object mod {
     }
   }
   
-  @js.native
   trait BulmaTagsInputOptions extends StObject {
     
     /**
@@ -440,35 +438,35 @@ object mod {
       *
       * @default false
       */
-    var allowDuplicates: js.UndefOr[Boolean] = js.native
+    var allowDuplicates: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, duplicate tags value check is case sensitive.
       *
       * @default true
       */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, tags will be unselected when new tag is entered.
       *
       * @default false
       */
-    var clearSelectionOnTyping: js.UndefOr[Boolean] = js.native
+    var clearSelectionOnTyping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, datalist will close automatically after an item have been selected.
       *
       * @default true
       */
-    var closeDropdownOnItemSelect: js.UndefOr[Boolean] = js.native
+    var closeDropdownOnItemSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Multiple tags can be added at once. Delimiter is used to separate all tags.
       *
       * @default ",",
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * When true, tags can be entered manually. This option is useful with select Tags inputs. Set
@@ -476,7 +474,7 @@ object mod {
       *
       * @default true
       */
-    var freeInput: js.UndefOr[Boolean] = js.native
+    var freeInput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, if `allowDuplicates` option if false then the already existing tag will be
@@ -484,57 +482,57 @@ object mod {
       *
       * @default true
       */
-    var highlightDuplicate: js.UndefOr[Boolean] = js.native
+    var highlightDuplicate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, identified matches strings when searching is highlighted.
       *
       * @default true
       */
-    var highlightMatchesString: js.UndefOr[Boolean] = js.native
+    var highlightMatchesString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When adding objects as tags, you can set itemText to the name of the property of item to use
       * for a its tag's text. When this options is not set, the value of _itemValue_ will be used.
       */
-    var itemText: js.UndefOr[String] = js.native
+    var itemText: js.UndefOr[String] = js.undefined
     
     /**
       * When adding objects as tags, itemValue must be set to the name of the property containing the
       * item's value.
       */
-    var itemValue: js.UndefOr[String] = js.native
+    var itemValue: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the maximum length of a single tag.
       */
-    var maxChars: js.UndefOr[Double] = js.native
+    var maxChars: js.UndefOr[Double] = js.undefined
     
     /**
       * When set, no more than the given number of tags are allowed to add.
       */
-    var maxTags: js.UndefOr[Double] = js.native
+    var maxTags: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines the minimum length of a single tag.
       *
       * @default 1
       */
-    var minChars: js.UndefOr[Double] = js.native
+    var minChars: js.UndefOr[Double] = js.undefined
     
     /**
       * Empty dropdown label.
       *
       * @default "No results found"
       */
-    var noResultsLabel: js.UndefOr[String] = js.native
+    var noResultsLabel: js.UndefOr[String] = js.undefined
     
     /**
       * TagsInput placeholder text if original input doesn't have one.
       *
       * @default undefined
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * When true, tags are removable either using the associted delete button or _backspace_ and
@@ -542,28 +540,28 @@ object mod {
       *
       * @default true
       */
-    var removable: js.UndefOr[Boolean] = js.native
+    var removable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines the minimum length of input value before loading auto-complete.
       *
       * @default 1
       */
-    var searchMinChars: js.UndefOr[Double] = js.native
+    var searchMinChars: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines on what dropdown item data do we search the entered value.
       *
       * @default "text"
       */
-    var searchOn: js.UndefOr[value | text] = js.native
+    var searchOn: js.UndefOr[value | text] = js.undefined
     
     /**
       * When true, tags can be selected either by mouse click or using _left_ or _right_ arrow keys.
       *
       * @default true
       */
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Source of data proposed in dropdown (used for auto-complete).
@@ -572,21 +570,21 @@ object mod {
       */
     var source: js.UndefOr[
         (js.Array[String | BulmaTagsInputItem]) | (js.Function0[js.Array[String | BulmaTagsInputItem]]) | (js.Promise[js.Array[String | BulmaTagsInputItem]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Classname applied to each tag.
       *
       * @default "is-rounded"
       */
-    var tagClass: js.UndefOr[String] = js.native
+    var tagClass: js.UndefOr[String] = js.undefined
     
     /**
       * When true, automatically removes all whitespace around tags.
       *
       * @default true
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object BulmaTagsInputOptions {
     

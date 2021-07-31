@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZoneOperationsListResponse extends StObject {
   
-  var header: js.UndefOr[ResponseHeader] = js.native
+  var header: js.UndefOr[ResponseHeader] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The presence of this field indicates that there exist more results following your last page of results in pagination order. To fetch them, make another list request using this value
@@ -18,10 +16,10 @@ trait ManagedZoneOperationsListResponse extends StObject {
     * the first and last paginated list request, the set of all elements returned will be an inconsistent view of the collection. There is no way to retrieve a consistent snapshot of a
     * collection larger than the maximum page size.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The operation resources. */
-  var operations: js.UndefOr[js.Array[Operation]] = js.native
+  var operations: js.UndefOr[js.Array[Operation]] = js.undefined
 }
 object ManagedZoneOperationsListResponse {
   

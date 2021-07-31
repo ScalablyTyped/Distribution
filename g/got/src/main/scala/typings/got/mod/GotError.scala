@@ -11,7 +11,6 @@ import typings.node.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -28,8 +27,8 @@ trait GotError extends StObject
 object GotError {
   
   @scala.inline
-  def CancelError(message: String, name: typings.got.gotStrings.CancelError): typings.got.mod.CancelError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def CancelError(message: String): typings.got.mod.CancelError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "CancelError")
     __obj.asInstanceOf[typings.got.mod.CancelError]
   }
   
@@ -38,62 +37,46 @@ object GotError {
     body: Buffer | String | js.Object,
     headers: IncomingHttpHeaders,
     message: String,
-    name: typings.got.gotStrings.HTTPError,
     statusCode: Double,
     statusMessage: String
   ): typings.got.mod.HTTPError = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = "HTTPError", statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.got.mod.HTTPError]
   }
   
   @scala.inline
-  def MaxRedirectsError(
-    message: String,
-    name: typings.got.gotStrings.MaxRedirectsError,
-    redirectUrls: js.Array[String],
-    statusCode: Double,
-    statusMessage: String
-  ): typings.got.mod.MaxRedirectsError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], redirectUrls = redirectUrls.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
+  def MaxRedirectsError(message: String, redirectUrls: js.Array[String], statusCode: Double, statusMessage: String): typings.got.mod.MaxRedirectsError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "MaxRedirectsError", redirectUrls = redirectUrls.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.got.mod.MaxRedirectsError]
   }
   
   @scala.inline
-  def ParseError(
-    message: String,
-    name: typings.got.gotStrings.ParseError,
-    statusCode: Double,
-    statusMessage: String
-  ): typings.got.mod.ParseError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
+  def ParseError(message: String, statusCode: Double, statusMessage: String): typings.got.mod.ParseError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "ParseError", statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.got.mod.ParseError]
   }
   
   @scala.inline
-  def ReadError(message: String, name: typings.got.gotStrings.ReadError): typings.got.mod.ReadError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def ReadError(message: String): typings.got.mod.ReadError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "ReadError")
     __obj.asInstanceOf[typings.got.mod.ReadError]
   }
   
   @scala.inline
-  def RequestError(message: String, name: typings.got.gotStrings.RequestError): typings.got.mod.RequestError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def RequestError(message: String): typings.got.mod.RequestError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "RequestError")
     __obj.asInstanceOf[typings.got.mod.RequestError]
   }
   
   @scala.inline
-  def TimeoutError(
-    event: lookup | connect | secureConnect | socket | response | send | request,
-    message: String,
-    name: typings.got.gotStrings.TimeoutError
-  ): typings.got.mod.TimeoutError = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def TimeoutError(event: lookup | connect | secureConnect | socket | response | send | request, message: String): typings.got.mod.TimeoutError = {
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = "TimeoutError")
     __obj.asInstanceOf[typings.got.mod.TimeoutError]
   }
   
   @scala.inline
-  def UnsupportedProtocolError(message: String, name: typings.got.gotStrings.UnsupportedProtocolError): typings.got.mod.UnsupportedProtocolError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def UnsupportedProtocolError(message: String): typings.got.mod.UnsupportedProtocolError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "UnsupportedProtocolError")
     __obj.asInstanceOf[typings.got.mod.UnsupportedProtocolError]
   }
 }

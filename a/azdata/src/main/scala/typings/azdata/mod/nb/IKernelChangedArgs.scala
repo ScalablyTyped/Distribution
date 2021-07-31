@@ -2,21 +2,19 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKernelChangedArgs extends StObject {
   
-  var newValue: IKernel | Null = js.native
+  var newValue: IKernel | Null
   
-  var oldValue: IKernel | Null = js.native
+  var oldValue: IKernel | Null
 }
 object IKernelChangedArgs {
   
   @scala.inline
   def apply(): IKernelChangedArgs = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(newValue = null, oldValue = null)
     __obj.asInstanceOf[IKernelChangedArgs]
   }
   

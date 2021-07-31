@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Measure extends StObject {
   
   /**
@@ -58,28 +56,28 @@ trait Measure extends StObject {
     *
     * @param value
     */
-  def aggregatorType(value: js.Object): Double = js.native
+  def aggregatorType(value: js.Object): Double
   
   /**
     * Returns the caption of the measure used when displaying the name of the measure to the user.
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns the default format string for the measure.
     *
     * @param value
     */
-  def defaultFormatString(value: js.Object): String = js.native
+  def defaultFormatString(value: js.Object): String
   
   /**
     * Returns a user-friendly description of the measure.
     *
     * @param value
     */
-  def description(value: js.Object): String = js.native
+  def description(value: js.Object): String
   
   /**
     * Returns the measure display folder path to be used when displaying the measure in the user interface.
@@ -87,28 +85,28 @@ trait Measure extends StObject {
     *
     * @param value
     */
-  def measureDisplayFolder(value: js.Object): String = js.native
+  def measureDisplayFolder(value: js.Object): String
   
   /**
     * Returns the name of the measure group this measure belongs to.
     *
     * @param value
     */
-  def measureGroupName(value: js.Object): String = js.native
+  def measureGroupName(value: js.Object): String
   
   /**
     * Returns the name of the measure.
     *
     * @param value
     */
-  def name(value: js.Object): String = js.native
+  def name(value: js.Object): String
   
   /**
     * Returns the unique name of the measure.
     *
     * @param value
     */
-  def uniqueName(value: js.Object): String = js.native
+  def uniqueName(value: js.Object): String
 }
 object Measure {
   

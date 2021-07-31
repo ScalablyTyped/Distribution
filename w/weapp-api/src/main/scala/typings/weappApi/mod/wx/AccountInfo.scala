@@ -4,18 +4,16 @@ import typings.weappApi.anon.AppId
 import typings.weappApi.anon.Vetsion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 帐号信息
-@js.native
 trait AccountInfo extends StObject {
   
   //  插件帐号信息（仅在插件中调用时包含这一项）
-  var Plugin: Vetsion = js.native
+  var Plugin: Vetsion
   
   //  小程序帐号信息
-  var miniProgram: AppId = js.native
+  var miniProgram: AppId
 }
 object AccountInfo {
   

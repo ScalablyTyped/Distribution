@@ -2,39 +2,37 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
-  var amount: Amount = js.native
+  var amount: Amount
   
-  val create_time: js.UndefOr[String] = js.native
+  val create_time: js.UndefOr[String] = js.undefined
   
-  val fmf_details: js.UndefOr[FraudManagementFiltersDetails] = js.native
+  val fmf_details: js.UndefOr[FraudManagementFiltersDetails] = js.undefined
   
-  val id: String = js.native
+  val id: String
   
-  val links: js.UndefOr[js.Array[Link]] = js.native
+  val links: js.UndefOr[js.Array[Link]] = js.undefined
   
-  val parent_payment: js.UndefOr[String] = js.native
+  val parent_payment: js.UndefOr[String] = js.undefined
   
-  val payment_mode: js.UndefOr[String] = js.native
+  val payment_mode: js.UndefOr[String] = js.undefined
   
-  val processor_response: js.UndefOr[js.Any] = js.native
+  val processor_response: js.UndefOr[js.Any] = js.undefined
   
-  val protection_eligibility: js.UndefOr[String] = js.native
+  val protection_eligibility: js.UndefOr[String] = js.undefined
   
-  val protection_eligibility_type: js.UndefOr[String] = js.native
+  val protection_eligibility_type: js.UndefOr[String] = js.undefined
   
-  val reason_code: js.UndefOr[String] = js.native
+  val reason_code: js.UndefOr[String] = js.undefined
   
-  val receipt_id: js.UndefOr[String] = js.native
+  val receipt_id: js.UndefOr[String] = js.undefined
   
-  val state: js.UndefOr[String] = js.native
+  val state: js.UndefOr[String] = js.undefined
   
-  val update_time: js.UndefOr[String] = js.native
+  val update_time: js.UndefOr[String] = js.undefined
 }
 object Resource {
   

@@ -5,7 +5,6 @@ import typings.twineSugarcube.extensionsMod.global.Array
 import typings.twineSugarcube.twineSugarcubeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object macroMod {
@@ -86,7 +85,8 @@ object macroMod {
   
   @js.native
   trait MacroArgsArray
-    extends Array[js.Any] {
+    extends StObject
+       with Array[js.Any] {
     
     /**
       * The current tag's argument string after converting all TwineScript syntax elements into their
@@ -100,14 +100,13 @@ object macroMod {
     var raw: String = js.native
   }
   
-  @js.native
   trait MacroContext extends StObject {
     
     /**
       * The argument string parsed into an array of discrete arguments.
       * @since 2.0.0
       */
-    var args: MacroArgsArray = js.native
+    var args: MacroArgsArray
     
     /**
       * Returns whether any of the macro's ancestors passed the test implemented by the given
@@ -116,7 +115,7 @@ object macroMod {
       * is passed in as its sole parameter.
       * @since 2.0.0
       */
-    def contextHas(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Boolean = js.native
+    def contextHas(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Boolean
     
     /**
       * Returns the first of the macro's ancestors which passed the test implemented by the given
@@ -125,7 +124,7 @@ object macroMod {
       * passed in as its sole parameter.
       * @since 2.0.0
       */
-    def contextSelect(filter: js.Function1[/* context */ MacroContextObject, Boolean]): js.Object = js.native
+    def contextSelect(filter: js.Function1[/* context */ MacroContextObject, Boolean]): js.Object
     
     /**
       * Returns a new array containing all of the macro's ancestors which passed the test implemented
@@ -133,44 +132,44 @@ object macroMod {
       * @since 2.0.0
       * @param filter
       */
-    def contextSelectAll(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Array[js.Object] = js.native
+    def contextSelectAll(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Array[js.Object]
     
     /**
       * Renders the message prefixed with the name of the macro and returns false.
       * @param message The error message to output.
       * @since 2.0.0
       */
-    def error(message: String): `false` = js.native
+    def error(message: String): `false`
     
     /**
       * The name of the macro.
       * @since 2.0.0
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The current output element.
       * @since 2.0.0
       */
-    var output: HTMLElement = js.native
+    var output: HTMLElement
     
     /**
       * The (execution) context object of the macro's parent, or null if the macro has no parent.
       * @since 2.0.0
       */
-    var parent: js.Object = js.native
+    var parent: js.Object
     
     /**
       * The text of a container macro parsed into discrete payload objects by tag.
       * @since 2.0.0
       */
-    var payload: Array[MacroContextObject] = js.native
+    var payload: Array[MacroContextObject]
     
     /**
       * The macro's definition — created via @see Macro.add()
       * @since 2.0.0
       */
-    var self: js.Object = js.native
+    var self: js.Object
   }
   object MacroContext {
     
@@ -226,24 +225,23 @@ object macroMod {
     }
   }
   
-  @js.native
   trait MacroContextObject extends StObject {
     
     /**
       * The current tag's argument string parsed into an array of discrete arguments.
       * Equivalent in function to <MacroContext>.args.
       */
-    var args: MacroArgsArray = js.native
+    var args: MacroArgsArray
     
     /**
       * The current tag's contents — i.e. the text between the current tag and the next.
       */
-    var contents: String = js.native
+    var contents: String
     
     /**
       * Name of the current tag.
       */
-    var name: String = js.native
+    var name: String
   }
   object MacroContextObject {
     
@@ -267,14 +265,13 @@ object macroMod {
     }
   }
   
-  @js.native
   trait MacroDefinition extends StObject {
     
-    def handler(): Unit = js.native
+    def handler(): Unit
     
-    var skipArgs: js.UndefOr[Boolean] = js.native
+    var skipArgs: js.UndefOr[Boolean] = js.undefined
     
-    var tags: js.UndefOr[Array[String]] = js.native
+    var tags: js.UndefOr[Array[String]] = js.undefined
   }
   object MacroDefinition {
     
@@ -304,7 +301,6 @@ object macroMod {
     }
   }
   
-  @js.native
   trait MacroTags extends StObject {
     
     /**
@@ -315,14 +311,14 @@ object macroMod {
       * @example
       * Macro.tags.get("else") // For the standard library, returns: ["if"]
       */
-    def get(name: String): Array[String] = js.native
+    def get(name: String): Array[String]
     
     /**
       * Returns whether the named macro tag exists.
       * @param name Name of the macro tag to search for.
       * @since 2.0.0
       */
-    def has(name: String): Boolean = js.native
+    def has(name: String): Boolean
   }
   object MacroTags {
     

@@ -23,75 +23,75 @@ import typings.stripe.stripeStrings.pending
 import typings.stripe.stripeStrings.succeeded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * To charge a credit or a debit card, you create a charge object. You can retrieve and refund individual
   * charges as well as list all charges. Charges are identified by a unique random ID.
   */
-@js.native
-trait ICharge extends IResourceObject {
+trait ICharge
+  extends StObject
+     with IResourceObject {
   
   /**
     * Amount charged in cents/pence, positive integer or zero.
     */
-  var amount: Double = js.native
+  var amount: Double
   
   /**
     * Amount in cents/pence refunded (can be less than the amount attribute on the
     * charge if a partial refund was issued), positive integer or zero.
     */
-  var amount_refunded: Double = js.native
+  var amount_refunded: Double
   
   /**
     * ID of the Connect application that created the charge. [Expandable]
     */
-  var application: js.UndefOr[String | IApplication | Null] = js.native
+  var application: js.UndefOr[String | IApplication | Null] = js.undefined
   
   /**
     * The application fee (if any) for the charge. See the Connect documentation
     * for details. [Expandable]
     */
-  var application_fee: js.UndefOr[String | IApplicationFee | Null] = js.native
+  var application_fee: js.UndefOr[String | IApplicationFee | Null] = js.undefined
   
   /**
     * The amount of the application fee (if any) for the charge. See the Connect
     * documentation for details.
     */
-  var application_fee_amount: js.UndefOr[Double | Null] = js.native
+  var application_fee_amount: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * ID of the balance transaction that describes the impact of this charge on
     * your account balance (not including refunds or disputes). [Expandable]
     */
-  var balance_transaction: String | IBalanceTransaction = js.native
+  var balance_transaction: String | IBalanceTransaction
   
   /**
     * Billing information associated with the payment method at the time of the transaction.
     */
-  var billing_details: js.UndefOr[Address | Null] = js.native
+  var billing_details: js.UndefOr[Address | Null] = js.undefined
   
   /**
     * If the charge was created without capturing, this boolean represents whether or not it is
     * still uncaptured or has since been captured.
     */
-  var captured: Boolean = js.native
+  var captured: Boolean
   
-  var created: Double = js.native
+  var created: Double
   
   /**
     * Three-letter ISO currency code representing the currency in which the
     * charge was made.
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * ID of the customer this charge is for if one exists. [Expandable]
     */
-  var customer: String | ICustomer | Null = js.native
+  var customer: String | ICustomer | Null
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The account (if any) the charge was made on behalf of, with an automatic
@@ -99,43 +99,43 @@ trait ICharge extends IResourceObject {
     * <https://stripe.com/docs/connect/destination-charges> for details.
     * [Expandable]
     */
-  var destination: js.UndefOr[String | IAccount | Null] = js.native
+  var destination: js.UndefOr[String | IAccount | Null] = js.undefined
   
   /**
     * Details about the dispute if the charge has been disputed. [Expandable]
     */
-  var dispute: js.UndefOr[String | IDispute | Null] = js.native
+  var dispute: js.UndefOr[String | IDispute | Null] = js.undefined
   
   /**
     * Error code explaining reason for charge failure if available (see the errors section for a list of
     * codes: https://stripe.com/docs/api#errors).
     */
-  var failure_code: String | Null = js.native
+  var failure_code: String | Null
   
   /**
     * Message to user further explaining reason for charge failure if available.
     */
-  var failure_message: String | Null = js.native
+  var failure_message: String | Null
   
   /**
     * Hash with information on fraud assessments for the charge.
     */
-  var fraud_details: Stripereport = js.native
+  var fraud_details: Stripereport
   
   /**
     * ID of the invoice this charge is for if one exists. [Expandable]
     */
-  var invoice: String | IInvoice | Null = js.native
+  var invoice: String | IInvoice | Null
   
-  var livemode: Boolean = js.native
+  var livemode: Boolean
   
-  var metadata: IMetadata = js.native
+  var metadata: IMetadata
   
   /**
     * Value is 'charge'
     */
   @JSName("object")
-  var object_ICharge: charge = js.native
+  var object_ICharge: charge
   
   /**
     * The Stripe account ID for which these funds are intended. Automatically
@@ -143,96 +143,96 @@ trait ICharge extends IResourceObject {
     * Separate Charges and Transfers]
     * <https://stripe.com/docs/connect/charges-transfers#on-behalf-of>.
     */
-  var on_behalf_of: js.UndefOr[String | Null] = js.native
+  var on_behalf_of: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of the order this charge is for if one exists. [Expandable]
     */
-  var order: String | IOrder | Null = js.native
+  var order: String | IOrder | Null
   
   /**
     * Details about whether the payment was accepted, and why. See
     * understanding declines for details. [Expandable]
     */
-  var outcome: js.UndefOr[IOutcome] = js.native
+  var outcome: js.UndefOr[IOutcome] = js.undefined
   
   /**
     * true if the charge succeeded, or was successfully authorized for later capture.
     */
-  var paid: Boolean = js.native
+  var paid: Boolean
   
   /**
     * ID of the PaymentIntent associated with this charge, if one exists.
     */
-  var payment_intent: js.UndefOr[String] = js.native
+  var payment_intent: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the payment method used in this charge.
     */
-  var payment_method: String | Null = js.native
+  var payment_method: String | Null
   
   /**
     * Details about the payment method at the time of the transaction.
     */
-  var payment_method_details: IPaymentMethodDetails | Null = js.native
+  var payment_method_details: IPaymentMethodDetails | Null
   
   /**
     * This is the email address that the receipt for this charge was sent to.
     */
-  var receipt_email: String | Null = js.native
+  var receipt_email: String | Null
   
   /**
     * This is the transaction number that appears on email receipts sent for this charge.
     */
-  var receipt_number: String | Null = js.native
+  var receipt_number: String | Null
   
   /**
     * This is the URL to view the receipt for this charge. The receipt is kept up-to-date to the
     * latest state of the charge, including any refunds. If the charge is for an Invoice, the
     * receipt will be stylized as an Invoice receipt.
     */
-  var receipt_url: String = js.native
+  var receipt_url: String
   
   /**
     * Whether or not the charge has been fully refunded. If the charge is only partially refunded,
     * this attribute will still be false.
     */
-  var refunded: Boolean = js.native
+  var refunded: Boolean
   
   /**
     * A list of refunds that have been applied to the charge.
     */
-  var refunds: IChargeRefunds = js.native
+  var refunds: IChargeRefunds
   
   /**
     * ID of the review associated with this charge if one exists. [Expandable]
     */
-  var review: js.UndefOr[String | IReview | Null] = js.native
+  var review: js.UndefOr[String | IReview | Null] = js.undefined
   
   /**
     * Shipping information for the charge.
     */
-  var shipping: js.UndefOr[IShippingInformation | Null] = js.native
+  var shipping: js.UndefOr[IShippingInformation | Null] = js.undefined
   
   /**
     * For most Stripe users, the source of every charge is a credit or debit card.
     * This hash is then the card object describing that card.
     * This value is null if this charge is associated with a Payment Intent instead of a Source.
     */
-  var source: IStripeSource | Null = js.native
+  var source: IStripeSource | Null
   
   /**
     * The transfer ID which created this charge. Only present if the charge came
     * from another Stripe account. See the Connect documentation for details.
     * [Expandable]
     */
-  var source_transfer: String | ITransfer | Null = js.native
+  var source_transfer: String | ITransfer | Null
   
   /**
     * Extra information about a charge. This will appear on your customer’s
     * credit card statement.
     */
-  var statement_descriptor: String | Null = js.native
+  var statement_descriptor: String | Null
   
   /**
     * Provides information about the charge that customers see on their statements.
@@ -240,24 +240,24 @@ trait ICharge extends IResourceObject {
     * set on the account to form the complete statement descriptor. Maximum 22 characters
     * for the concatenated descriptor.
     */
-  var statement_descriptor_suffix: js.UndefOr[String | Null] = js.native
+  var statement_descriptor_suffix: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The status of the payment is either "succeeded", "pending", or "failed".
     */
-  var status: succeeded | pending | failed = js.native
+  var status: succeeded | pending | failed
   
   /**
     * ID of the transfer to the destination account (only applicable if the
     * charge was created using the destination parameter). [Expandable]
     */
-  var transfer: js.UndefOr[String | ITransfer] = js.native
+  var transfer: js.UndefOr[String | ITransfer] = js.undefined
   
   /**
     * An optional dictionary including the account to automatically transfer
     * to as part of a destination charge. See the Connect documentation for details.
     */
-  var transfer_data: js.UndefOr[Destination | Null] = js.native
+  var transfer_data: js.UndefOr[Destination | Null] = js.undefined
   
   /**
     * A string that identifies this transaction as part of a group.
@@ -265,7 +265,7 @@ trait ICharge extends IResourceObject {
     * <https://stripe.com/docs/connect/charges-transfers#grouping-transactions>
     * for details.
     */
-  var transfer_group: js.UndefOr[String | Null] = js.native
+  var transfer_group: js.UndefOr[String | Null] = js.undefined
 }
 object ICharge {
   
@@ -281,15 +281,14 @@ object ICharge {
     id: String,
     livemode: Boolean,
     metadata: IMetadata,
-    `object`: charge,
     paid: Boolean,
     receipt_url: String,
     refunded: Boolean,
     refunds: IChargeRefunds,
     status: succeeded | pending | failed
   ): ICharge = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_refunded = amount_refunded.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fraud_details = fraud_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], receipt_url = receipt_url.asInstanceOf[js.Any], refunded = refunded.asInstanceOf[js.Any], refunds = refunds.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_refunded = amount_refunded.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fraud_details = fraud_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], receipt_url = receipt_url.asInstanceOf[js.Any], refunded = refunded.asInstanceOf[js.Any], refunds = refunds.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], customer = null, failure_code = null, failure_message = null, invoice = null, order = null, payment_method = null, payment_method_details = null, receipt_email = null, receipt_number = null, source = null, source_transfer = null, statement_descriptor = null)
+    __obj.updateDynamic("object")("charge")
     __obj.asInstanceOf[ICharge]
   }
   

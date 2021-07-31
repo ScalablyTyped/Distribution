@@ -2,15 +2,13 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononDetail extends StObject {
   
-  var page: String = js.native
+  var page: String
   
-  var req: js.Array[String] = js.native
+  var req: js.Array[String]
 }
 object PhononDetail {
   

@@ -2,7 +2,6 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minappEnvStrings {
@@ -383,7 +382,9 @@ object minappEnvStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait byteLength extends ArrayBufferLike
+  sealed trait byteLength
+    extends StObject
+       with ArrayBufferLike
   @scala.inline
   def byteLength: byteLength = "byteLength".asInstanceOf[byteLength]
   
@@ -658,7 +659,9 @@ object minappEnvStrings {
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
-  sealed trait slice extends ArrayBufferLike
+  sealed trait slice
+    extends StObject
+       with ArrayBufferLike
   @scala.inline
   def slice: slice = "slice".asInstanceOf[slice]
   

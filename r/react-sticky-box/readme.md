@@ -10,9 +10,9 @@ Boxes that behave nicely while scrolling
 | ------------------ | :-------------: |
 | Full name          | react-sticky-box |
 | Keywords           | react, scroll, sticky, fixed |
-| # releases         | 16 |
+| # releases         | 6 |
 | # dependents       | 6 |
-| # downloads        | 814002 |
+| # downloads        | 993994 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCACertificateParams extends StObject {
   
   /**
     * The action that you want to apply to the CA cerrtificate. The only supported value is DEACTIVATE.
     */
-  var action: CACertificateUpdateAction = js.native
+  var action: CACertificateUpdateAction
 }
 object UpdateCACertificateParams {
   

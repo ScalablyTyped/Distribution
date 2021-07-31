@@ -2,73 +2,71 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightSummary extends StObject {
   
   /**
     *  Categories The categories that label and describe the type of insight.
     */
-  var Categories: js.UndefOr[InsightCategoryList] = js.native
+  var Categories: js.UndefOr[InsightCategoryList] = js.undefined
   
   /**
     * The impact statistics of the client side service. This includes the number of requests to the client service and whether the requests were faults or okay. 
     */
-  var ClientRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.native
+  var ClientRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.undefined
   
   /**
     * The time, in Unix seconds, at which the insight ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the group that the insight belongs to.
     */
-  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.native
+  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.undefined
   
   /**
     * The name of the group that the insight belongs to.
     */
-  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.native
+  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.undefined
   
   /**
     * The insights unique identifier. 
     */
-  var InsightId: js.UndefOr[typings.awsSdk.xrayMod.InsightId] = js.native
+  var InsightId: js.UndefOr[typings.awsSdk.xrayMod.InsightId] = js.undefined
   
   /**
     * The time, in Unix seconds, that the insight was last updated.
     */
-  var LastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var LastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
-  var RootCauseServiceId: js.UndefOr[ServiceId] = js.native
+  var RootCauseServiceId: js.UndefOr[ServiceId] = js.undefined
   
   /**
     * The impact statistics of the root cause service. This includes the number of requests to the client service and whether the requests were faults or okay. 
     */
-  var RootCauseServiceRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.native
+  var RootCauseServiceRequestImpactStatistics: js.UndefOr[RequestImpactStatistics] = js.undefined
   
   /**
     * The time, in Unix seconds, at which the insight began.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current state of the insight.
     */
-  var State: js.UndefOr[InsightState] = js.native
+  var State: js.UndefOr[InsightState] = js.undefined
   
   /**
     * A brief description of the insight.
     */
-  var Summary: js.UndefOr[InsightSummaryText] = js.native
+  var Summary: js.UndefOr[InsightSummaryText] = js.undefined
   
   /**
     * The service within the insight that is most impacted by the incident.
     */
-  var TopAnomalousServices: js.UndefOr[AnomalousServiceList] = js.native
+  var TopAnomalousServices: js.UndefOr[AnomalousServiceList] = js.undefined
 }
 object InsightSummary {
   

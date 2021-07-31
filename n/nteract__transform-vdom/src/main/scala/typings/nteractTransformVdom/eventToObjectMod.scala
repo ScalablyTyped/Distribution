@@ -18,14 +18,16 @@ import typings.std.Event
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventToObjectMod {
   
-  @JSImport("@nteract/transform-vdom/lib/event-to-object", "serializeEvent")
+  @JSImport("@nteract/transform-vdom/lib/event-to-object", JSImport.Namespace)
   @js.native
-  def serializeEvent[T](event: SyntheticEvent[T, Event]): SerializedEvent[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def serializeEvent[T](event: SyntheticEvent[T, Event]): SerializedEvent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEvent")(event.asInstanceOf[js.Any]).asInstanceOf[SerializedEvent[T]]
   
   type SerializedEvent[T] = (Partial[
     AnimationEvent[T] | ChangeEvent[T] | ClipboardEvent[T] | CompositionEvent[T] | KeyboardEvent[T] | (MouseEvent[T, NativeMouseEvent]) | PointerEvent[T] | TouchEvent[T] | TransitionEvent[T] | (UIEvent[T, NativeUIEvent]) | WheelEvent[T]

@@ -10,9 +10,9 @@ Typings are for version 0.10
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-size-snapshot |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 46 |
-| # downloads        | 654413 |
+| # releases         | 5 |
+| # dependents       | 48 |
+| # downloads        | 811945 |
 | # stars            | 0 |
 
 ## Links

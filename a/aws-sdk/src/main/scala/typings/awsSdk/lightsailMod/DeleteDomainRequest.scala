@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDomainRequest extends StObject {
   
   /**
     * The specific domain name to delete.
     */
-  var domainName: DomainName = js.native
+  var domainName: DomainName
 }
 object DeleteDomainRequest {
   

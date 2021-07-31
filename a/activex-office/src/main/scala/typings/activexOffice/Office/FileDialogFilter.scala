@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileDialogFilter extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Description: String = js.native
+  val Description: String
   
-  val Extensions: String = js.native
+  val Extensions: String
   
   @JSName("Office.FileDialogFilter_typekey")
-  var OfficeDotFileDialogFilter_typekey: FileDialogFilter = js.native
+  var OfficeDotFileDialogFilter_typekey: FileDialogFilter
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object FileDialogFilter {
   

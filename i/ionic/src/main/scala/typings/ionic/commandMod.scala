@@ -14,7 +14,6 @@ import typings.ionicCliFramework.mod.BaseCommand
 import typings.ionicCliFramework.mod.TaskChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandMod {

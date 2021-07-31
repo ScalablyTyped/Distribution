@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSubscriptionRequest extends StObject {
   
   /**
     * When you initally create a subscription, AutoRenew is set to ENABLED. If ENABLED, the subscription will be automatically renewed at the end of the existing subscription period. You can change this by submitting an UpdateSubscription request. If the UpdateSubscription request does not included a value for AutoRenew, the existing value for AutoRenew remains unchanged.
     */
-  var AutoRenew: js.UndefOr[typings.awsSdk.shieldMod.AutoRenew] = js.native
+  var AutoRenew: js.UndefOr[typings.awsSdk.shieldMod.AutoRenew] = js.undefined
 }
 object UpdateSubscriptionRequest {
   

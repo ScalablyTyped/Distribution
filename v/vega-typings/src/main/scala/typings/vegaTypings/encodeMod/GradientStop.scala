@@ -3,21 +3,19 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.colorMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GradientStop extends StObject {
   
   /**
     * The color value at this point in the gradient.
     */
-  var color: Color = js.native
+  var color: Color
   
   /**
     * The offset fraction for the color stop, indicating its position within the gradient.
     */
-  var offset: Double = js.native
+  var offset: Double
 }
 object GradientStop {
   

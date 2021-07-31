@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommuteFilter extends StObject {
   
   /**
@@ -14,25 +12,25 @@ trait CommuteFilter extends StObject {
     * Commute Search is not able to calculate accurate commute times to jobs with city level and coarser address information. Jobs with imprecise addresses will return a `travel_duration`
     * time of 0 regardless of distance from the job seeker.
     */
-  var allowImpreciseAddresses: js.UndefOr[Boolean] = js.native
+  var allowImpreciseAddresses: js.UndefOr[Boolean] = js.undefined
   
   /** Required. The method of transportation for which to calculate the commute time. */
-  var commuteMethod: js.UndefOr[String] = js.native
+  var commuteMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The departure time used to calculate traffic impact, represented as google.type.TimeOfDay in local time zone. Currently traffic model is restricted to hour level
     * resolution.
     */
-  var departureTime: js.UndefOr[TimeOfDay] = js.native
+  var departureTime: js.UndefOr[TimeOfDay] = js.undefined
   
   /** Optional. Specifies the traffic density to use when calculating commute time. */
-  var roadTraffic: js.UndefOr[String] = js.native
+  var roadTraffic: js.UndefOr[String] = js.undefined
   
   /** Required. The latitude and longitude of the location from which to calculate the commute time. */
-  var startCoordinates: js.UndefOr[LatLng] = js.native
+  var startCoordinates: js.UndefOr[LatLng] = js.undefined
   
   /** Required. The maximum travel time in seconds. The maximum allowed value is `3600s` (one hour). Format is `123s`. */
-  var travelDuration: js.UndefOr[String] = js.native
+  var travelDuration: js.UndefOr[String] = js.undefined
 }
 object CommuteFilter {
   

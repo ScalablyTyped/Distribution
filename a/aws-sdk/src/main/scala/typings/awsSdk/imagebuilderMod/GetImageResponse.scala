@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImageResponse extends StObject {
   
   /**
     * The image object. 
     */
-  var image: js.UndefOr[Image] = js.native
+  var image: js.UndefOr[Image] = js.undefined
   
   /**
     * The request ID that uniquely identifies this request. 
     */
-  var requestId: js.UndefOr[NonEmptyString] = js.native
+  var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object GetImageResponse {
   

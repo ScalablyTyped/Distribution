@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar). The
   * date must be a valid calendar date between the year 1 and 9999.
   */
-@js.native
 trait SchemaDate extends StObject {
   
   /**
     * Day of month. Must be from 1 to 31 and valid for the year and month.
     */
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
   /**
     * Month of date. Must be from 1 to 12.
     */
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
   /**
     * Year of date. Must be from 1 to 9999.
     */
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object SchemaDate {
   

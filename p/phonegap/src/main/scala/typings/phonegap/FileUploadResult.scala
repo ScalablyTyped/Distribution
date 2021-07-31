@@ -2,17 +2,15 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileUploadResult extends StObject {
   
-  var bytesSent: Double = js.native
+  var bytesSent: Double
   
-  var response: String = js.native
+  var response: String
   
-  var responseCode: Double = js.native
+  var responseCode: Double
 }
 object FileUploadResult {
   

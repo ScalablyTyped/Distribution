@@ -7,7 +7,6 @@ import typings.reactNative.reactNativeStrings.diskSlashmemory
 import typings.reactNative.reactNativeStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -28,36 +27,31 @@ object Image {
   @scala.inline
   def abortPrefetch_=(x: js.UndefOr[js.Function1[/* requestId */ Double, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("abortPrefetch")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-native", "Image.getSize")
-  @js.native
-  def getSize(uri: String, success: js.Function2[/* width */ Double, /* height */ Double, Unit]): js.Any = js.native
-  @JSImport("react-native", "Image.getSize")
-  @js.native
+  @scala.inline
+  def getSize(uri: String, success: js.Function2[/* width */ Double, /* height */ Double, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def getSize(
     uri: String,
     success: js.Function2[/* width */ Double, /* height */ Double, Unit],
     failure: js.Function1[/* error */ js.Any, Unit]
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-native", "Image.getSizeWithHeaders")
-  @js.native
+  @scala.inline
   def getSizeWithHeaders(
     uri: String,
     headers: StringDictionary[String],
     success: js.Function2[/* width */ Double, /* height */ Double, Unit]
-  ): js.Any = js.native
-  @JSImport("react-native", "Image.getSizeWithHeaders")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def getSizeWithHeaders(
     uri: String,
     headers: StringDictionary[String],
     success: js.Function2[/* width */ Double, /* height */ Double, Unit],
     failure: js.Function1[/* error */ js.Any, Unit]
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-native", "Image.prefetch")
-  @js.native
-  def prefetch(url: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def prefetch(url: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("react-native", "Image.queryCache")
   @js.native
@@ -80,7 +74,6 @@ object Image {
   /**
     * @see https://reactnative.dev/docs/image#resolveassetsource
     */
-  @JSImport("react-native", "Image.resolveAssetSource")
-  @js.native
-  def resolveAssetSource(source: ImageSourcePropType): ImageResolvedAssetSource = js.native
+  @scala.inline
+  def resolveAssetSource(source: ImageSourcePropType): ImageResolvedAssetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAssetSource")(source.asInstanceOf[js.Any]).asInstanceOf[ImageResolvedAssetSource]
 }

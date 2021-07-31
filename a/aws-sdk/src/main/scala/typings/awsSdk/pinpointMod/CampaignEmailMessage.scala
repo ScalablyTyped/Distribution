@@ -2,31 +2,29 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignEmailMessage extends StObject {
   
   /**
     * The body of the email for recipients whose email clients don't render HTML content.
     */
-  var Body: js.UndefOr[string] = js.native
+  var Body: js.UndefOr[string] = js.undefined
   
   /**
     * The verified email address to send the email from. The default address is the FromAddress specified for the email channel for the application.
     */
-  var FromAddress: js.UndefOr[string] = js.native
+  var FromAddress: js.UndefOr[string] = js.undefined
   
   /**
     * The body of the email, in HTML format, for recipients whose email clients render HTML content.
     */
-  var HtmlBody: js.UndefOr[string] = js.native
+  var HtmlBody: js.UndefOr[string] = js.undefined
   
   /**
     * The subject line, or title, of the email.
     */
-  var Title: js.UndefOr[string] = js.native
+  var Title: js.UndefOr[string] = js.undefined
 }
 object CampaignEmailMessage {
   

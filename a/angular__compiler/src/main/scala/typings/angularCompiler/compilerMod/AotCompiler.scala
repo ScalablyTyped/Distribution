@@ -7,7 +7,6 @@ import typings.angularCompiler.injectableCompilerMod.InjectableCompiler
 import typings.angularCompiler.typeCheckCompilerMod.TypeCheckCompiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "AotCompiler")

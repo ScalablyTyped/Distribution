@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApiKeyResponse extends StObject {
   
   /**
     * The date when the api key was deleted.
     */
-  var deletedAt: String = js.native
+  var deletedAt: String
 }
 object DeleteApiKeyResponse {
   

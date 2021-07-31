@@ -2,31 +2,29 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestDetails extends StObject {
   
   /**
     * Details about the export to signed URL request.
     */
-  var ExportAssetToSignedUrl: js.UndefOr[ExportAssetToSignedUrlRequestDetails] = js.native
+  var ExportAssetToSignedUrl: js.UndefOr[ExportAssetToSignedUrlRequestDetails] = js.undefined
   
   /**
     * Details about the export to Amazon S3 request.
     */
-  var ExportAssetsToS3: js.UndefOr[ExportAssetsToS3RequestDetails] = js.native
+  var ExportAssetsToS3: js.UndefOr[ExportAssetsToS3RequestDetails] = js.undefined
   
   /**
     * Details about the import from signed URL request.
     */
-  var ImportAssetFromSignedUrl: js.UndefOr[ImportAssetFromSignedUrlRequestDetails] = js.native
+  var ImportAssetFromSignedUrl: js.UndefOr[ImportAssetFromSignedUrlRequestDetails] = js.undefined
   
   /**
     * Details about the import from Amazon S3 request.
     */
-  var ImportAssetsFromS3: js.UndefOr[ImportAssetsFromS3RequestDetails] = js.native
+  var ImportAssetsFromS3: js.UndefOr[ImportAssetsFromS3RequestDetails] = js.undefined
 }
 object RequestDetails {
   

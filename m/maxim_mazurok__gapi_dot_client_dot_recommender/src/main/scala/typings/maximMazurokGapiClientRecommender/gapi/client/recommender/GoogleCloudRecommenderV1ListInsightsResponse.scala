@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1ListInsightsResponse extends StObject {
   
   /** The set of insights for the `parent` resource. */
-  var insights: js.UndefOr[js.Array[GoogleCloudRecommenderV1Insight]] = js.native
+  var insights: js.UndefOr[js.Array[GoogleCloudRecommenderV1Insight]] = js.undefined
   
   /** A token that can be used to request the next page of results. This field is empty if there are no additional results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommenderV1ListInsightsResponse {
   

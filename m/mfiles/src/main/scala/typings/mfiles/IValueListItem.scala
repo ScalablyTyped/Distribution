@@ -3,43 +3,41 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInValueList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValueListItem extends StObject {
   
-  var AutomaticPermissionsForObjects: IAutomaticPermissions = js.native
+  var AutomaticPermissionsForObjects: IAutomaticPermissions
   
-  def Clone(): IValueListItem = js.native
+  def Clone(): IValueListItem
   
-  def CloneFrom(ValueListItem: IValueListItem): Unit = js.native
+  def CloneFrom(ValueListItem: IValueListItem): Unit
   
-  val Deleted: Boolean = js.native
+  val Deleted: Boolean
   
-  val DisplayID: String = js.native
+  val DisplayID: String
   
-  val DisplayIDAvailable: Boolean = js.native
+  val DisplayIDAvailable: Boolean
   
-  def GetIconAsPNG(Width: Double, Height: Double): js.Array[Double] = js.native
+  def GetIconAsPNG(Width: Double, Height: Double): js.Array[Double]
   
-  var HasOwner: Boolean = js.native
+  var HasOwner: Boolean
   
-  var HasParent: Boolean = js.native
+  var HasParent: Boolean
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Icon: js.Array[Double] = js.native
+  var Icon: js.Array[Double]
   
-  val ItemGUID: String = js.native
+  val ItemGUID: String
   
-  var Name: String = js.native
+  var Name: String
   
-  var OwnerID: Double = js.native
+  var OwnerID: Double
   
-  var ParentID: Double = js.native
+  var ParentID: Double
   
-  var ValueListID: MFBuiltInValueList | Double = js.native
+  var ValueListID: MFBuiltInValueList | Double
 }
 object IValueListItem {
   

@@ -2,76 +2,74 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaidArray extends StObject {
   
   /**
     * The array's Availability Zone. For more information, see Regions and Endpoints.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * When the RAID array was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The array's Linux device. For example /dev/mdadm0.
     */
-  var Device: js.UndefOr[String] = js.native
+  var Device: js.UndefOr[String] = js.undefined
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * For PIOPS volumes, the IOPS per disk.
     */
-  var Iops: js.UndefOr[Integer] = js.native
+  var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
     * The array's mount point.
     */
-  var MountPoint: js.UndefOr[String] = js.native
+  var MountPoint: js.UndefOr[String] = js.undefined
   
   /**
     * The array name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The number of disks in the array.
     */
-  var NumberOfDisks: js.UndefOr[Integer] = js.native
+  var NumberOfDisks: js.UndefOr[Integer] = js.undefined
   
   /**
     * The array ID.
     */
-  var RaidArrayId: js.UndefOr[String] = js.native
+  var RaidArrayId: js.UndefOr[String] = js.undefined
   
   /**
     * The RAID level.
     */
-  var RaidLevel: js.UndefOr[Integer] = js.native
+  var RaidLevel: js.UndefOr[Integer] = js.undefined
   
   /**
     * The array's size.
     */
-  var Size: js.UndefOr[Integer] = js.native
+  var Size: js.UndefOr[Integer] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
   
   /**
     * The volume type, standard or PIOPS.
     */
-  var VolumeType: js.UndefOr[String] = js.native
+  var VolumeType: js.UndefOr[String] = js.undefined
 }
 object RaidArray {
   

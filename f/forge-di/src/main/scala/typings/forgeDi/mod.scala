@@ -6,10 +6,13 @@ import typings.forgeDi.configMod.Config
 import typings.forgeDi.constructorMod.Constructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("forge-di", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("forge-di", JSImport.Default)
   @js.native
@@ -71,13 +74,13 @@ object mod {
   object Mode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.forgeDi.modeMod.Mode with String] = js.native
+    def apply(value: String): js.UndefOr[typings.forgeDi.modeMod.Mode & String] = js.native
     
-    /* "All" */ val All: typings.forgeDi.modeMod.Mode.All with String = js.native
+    /* "All" */ val All: typings.forgeDi.modeMod.Mode.All & String = js.native
     
-    /* "AtLeastOne" */ val AtLeastOne: typings.forgeDi.modeMod.Mode.AtLeastOne with String = js.native
+    /* "AtLeastOne" */ val AtLeastOne: typings.forgeDi.modeMod.Mode.AtLeastOne & String = js.native
     
-    /* "AtMostOne" */ val AtMostOne: typings.forgeDi.modeMod.Mode.AtMostOne with String = js.native
+    /* "AtMostOne" */ val AtMostOne: typings.forgeDi.modeMod.Mode.AtMostOne & String = js.native
   }
   
   @JSImport("forge-di", "RegexInspector")
@@ -120,7 +123,6 @@ object mod {
     ) = this()
   }
   
-  @JSImport("forge-di", "inject")
-  @js.native
-  def inject[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = js.native
+  @scala.inline
+  def inject[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(hints.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ T, T]]
 }

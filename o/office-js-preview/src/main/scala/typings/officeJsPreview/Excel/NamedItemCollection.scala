@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait NamedItemCollection extends ClientObject {
+trait NamedItemCollection
+  extends StObject
+     with ClientObject {
   
   def add(name: String, reference: String): NamedItem = js.native
   def add(name: String, reference: String, comment: String): NamedItem = js.native
@@ -86,7 +87,7 @@ trait NamedItemCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): NamedItemCollection = js.native
-  def load(options: NamedItemCollectionLoadOptions with CollectionLoadOptions): NamedItemCollection = js.native
+  def load(options: NamedItemCollectionLoadOptions & CollectionLoadOptions): NamedItemCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): NamedItemCollection = js.native
   def load(propertyNames: String): NamedItemCollection = js.native
   def load(propertyNames: js.Array[String]): NamedItemCollection = js.native

@@ -4,7 +4,6 @@ import typings.matrixAppserviceBridge.anon.Localpart
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usersMatrixMod {
@@ -20,9 +19,9 @@ object usersMatrixMod {
       *               to change the default value.
       */
     def this(userId: String) = this()
-    def this(userId: String, _data: Record[String, _]) = this()
-    def this(userId: String, _data: js.UndefOr[scala.Nothing], escape: Boolean) = this()
-    def this(userId: String, _data: Record[String, _], escape: Boolean) = this()
+    def this(userId: String, _data: Record[String, js.Any]) = this()
+    def this(userId: String, _data: Unit, escape: Boolean) = this()
+    def this(userId: String, _data: Record[String, js.Any], escape: Boolean) = this()
     
     val _data: js.Any = js.native
     

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see com.sun.star.sheet.DDELink
   */
-@js.native
-trait XDDELink extends XInterface {
+trait XDDELink
+  extends StObject
+     with XInterface {
   
   /** returns the application from which data are requested (the DDE server application). */
-  val Application: String = js.native
+  val Application: String
   
   /** returns the DDE item from which data are requested. */
-  val Item: String = js.native
+  val Item: String
   
   /** returns the DDE topic from which data are requested. */
-  val Topic: String = js.native
+  val Topic: String
   
   /** returns the application from which data are requested (the DDE server application). */
-  def getApplication(): String = js.native
+  def getApplication(): String
   
   /** returns the DDE item from which data are requested. */
-  def getItem(): String = js.native
+  def getItem(): String
   
   /** returns the DDE topic from which data are requested. */
-  def getTopic(): String = js.native
+  def getTopic(): String
 }
 object XDDELink {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStaticIpResult extends StObject {
   
   /**
     * An array of key-value pairs containing information about the requested static IP.
     */
-  var staticIp: js.UndefOr[StaticIp] = js.native
+  var staticIp: js.UndefOr[StaticIp] = js.undefined
 }
 object GetStaticIpResult {
   

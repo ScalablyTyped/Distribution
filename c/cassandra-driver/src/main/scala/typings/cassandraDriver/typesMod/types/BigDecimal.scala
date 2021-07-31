@@ -3,7 +3,6 @@ package typings.cassandraDriver.typesMod.types
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.BigDecimal")
@@ -33,23 +32,23 @@ class BigDecimal protected () extends StObject {
 }
 object BigDecimal {
   
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.fromBuffer")
+  @JSImport("cassandra-driver/lib/types", "types.BigDecimal")
   @js.native
-  def fromBuffer(buf: Buffer): BigDecimal = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.fromNumber")
-  @js.native
-  def fromNumber(value: Double): BigDecimal = js.native
+  @scala.inline
+  def fromBuffer(buf: Buffer): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.fromString")
-  @js.native
-  def fromString(value: String): BigDecimal = js.native
+  @scala.inline
+  def fromNumber(value: Double): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.toBuffer")
-  @js.native
-  def toBuffer(value: BigDecimal): Buffer = js.native
+  @scala.inline
+  def fromString(value: String): BigDecimal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[BigDecimal]
+  
+  /* static member */
+  @scala.inline
+  def toBuffer(value: BigDecimal): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /**
     * The message body.
     */
-  var Body: typings.awsSdk.sesMod.Body = js.native
+  var Body: typings.awsSdk.sesMod.Body
   
   /**
     * The subject of the message: A short summary of the content, which will appear in the recipient's inbox.
     */
-  var Subject: Content = js.native
+  var Subject: Content
 }
 object Message {
   

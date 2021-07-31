@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDashboardRequest extends StObject {
   
   /**
     * The alias name.
     */
-  var AliasName: js.UndefOr[typings.awsSdk.quicksightMod.AliasName] = js.native
+  var AliasName: js.UndefOr[typings.awsSdk.quicksightMod.AliasName] = js.undefined
   
   /**
     * The ID of the AWS account that contains the dashboard that you're describing.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: RestrictiveResourceId = js.native
+  var DashboardId: RestrictiveResourceId
   
   /**
     * The version number for the dashboard. If a version number isn't passed, the latest published dashboard version is described. 
     */
-  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.native
+  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.undefined
 }
 object DescribeDashboardRequest {
   

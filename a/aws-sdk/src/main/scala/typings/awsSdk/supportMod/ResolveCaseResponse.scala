@@ -2,21 +2,19 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveCaseResponse extends StObject {
   
   /**
     * The status of the case after the ResolveCase request was processed.
     */
-  var finalCaseStatus: js.UndefOr[CaseStatus] = js.native
+  var finalCaseStatus: js.UndefOr[CaseStatus] = js.undefined
   
   /**
     * The status of the case when the ResolveCase request was sent.
     */
-  var initialCaseStatus: js.UndefOr[CaseStatus] = js.native
+  var initialCaseStatus: js.UndefOr[CaseStatus] = js.undefined
 }
 object ResolveCaseResponse {
   

@@ -2,61 +2,59 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleDetail extends StObject {
   
   /**
     * The rule ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * The timestamp of when the rule was created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The rule description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The detector for which the rule is associated.
     */
-  var detectorId: js.UndefOr[identifier] = js.native
+  var detectorId: js.UndefOr[identifier] = js.undefined
   
   /**
     * The rule expression.
     */
-  var expression: js.UndefOr[ruleExpression] = js.native
+  var expression: js.UndefOr[ruleExpression] = js.undefined
   
   /**
     * The rule language.
     */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /**
     * Timestamp of the last time the rule was updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The rule outcomes.
     */
-  var outcomes: js.UndefOr[NonEmptyListOfStrings] = js.native
+  var outcomes: js.UndefOr[NonEmptyListOfStrings] = js.undefined
   
   /**
     * The rule ID.
     */
-  var ruleId: js.UndefOr[identifier] = js.native
+  var ruleId: js.UndefOr[identifier] = js.undefined
   
   /**
     * The rule version.
     */
-  var ruleVersion: js.UndefOr[wholeNumberVersionString] = js.native
+  var ruleVersion: js.UndefOr[wholeNumberVersionString] = js.undefined
 }
 object RuleDetail {
   

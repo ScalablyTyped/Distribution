@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsColumnEnumOptionsMod {
   
-  @js.native
   trait ColumnEnumOptions extends StObject {
     
     /**
       * Array of possible enumerated values.
       */
-    var enum: js.UndefOr[js.Array[_] | js.Object] = js.native
+    var `enum`: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
     
     /**
       * Exact name of enum
       */
-    var enumName: js.UndefOr[String] = js.native
+    var enumName: js.UndefOr[String] = js.undefined
   }
   object ColumnEnumOptions {
     
@@ -32,7 +30,7 @@ object optionsColumnEnumOptionsMod {
     implicit class ColumnEnumOptionsMutableBuilder[Self <: ColumnEnumOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEnum(value: js.Array[_] | js.Object): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      def setEnum(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnumName(value: String): Self = StObject.set(x, "enumName", value.asInstanceOf[js.Any])

@@ -3,29 +3,27 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndExpr extends StObject {
   
-  var colorExpr: js.UndefOr[String | js.Function] = js.native
+  var colorExpr: js.UndefOr[String | js.Function] = js.undefined
   
   var dataSource: js.UndefOr[
-    js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
-  ] = js.native
+    js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
+  ] = js.undefined
   
-  var endExpr: js.UndefOr[String | js.Function] = js.native
+  var endExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var keyExpr: js.UndefOr[String | js.Function] = js.native
+  var keyExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var parentIdExpr: js.UndefOr[String | js.Function] = js.native
+  var parentIdExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var progressExpr: js.UndefOr[String | js.Function] = js.native
+  var progressExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var startExpr: js.UndefOr[String | js.Function] = js.native
+  var startExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var titleExpr: js.UndefOr[String | js.Function] = js.native
+  var titleExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 object EndExpr {
   
@@ -45,7 +43,7 @@ object EndExpr {
     def setColorExprUndefined: Self = StObject.set(x, "colorExpr", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)

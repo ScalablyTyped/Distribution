@@ -2,14 +2,12 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Use this field to specify bucketing option for the histogram
   * search response.
   */
-@js.native
 trait SchemaNumericBucketingOption extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaNumericBucketingOption extends StObject {
     * buckets are created: (-inf, 5), 5, 10), [10, 15), [15, inf). At most 20
     * [buckets_bound is supported.
     */
-  var bucketBounds: js.UndefOr[js.Array[Double]] = js.native
+  var bucketBounds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Optional.  If set to true, the histogram result includes minimum/maximum
     * value of the numeric field.
     */
-  var requiresMinMax: js.UndefOr[Boolean] = js.native
+  var requiresMinMax: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaNumericBucketingOption {
   

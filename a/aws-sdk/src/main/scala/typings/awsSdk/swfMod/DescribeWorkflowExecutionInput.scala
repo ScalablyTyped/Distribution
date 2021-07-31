@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkflowExecutionInput extends StObject {
   
   /**
     * The name of the domain containing the workflow execution.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * The workflow execution to describe.
     */
-  var execution: WorkflowExecution = js.native
+  var execution: WorkflowExecution
 }
 object DescribeWorkflowExecutionInput {
   

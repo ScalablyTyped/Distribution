@@ -2,51 +2,49 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleCondition extends StObject {
   
   /**
     * The field in the HTTP request. The following are the possible values:    http-header     http-request-method     host-header     path-pattern     query-string     source-ip   
     */
-  var Field: js.UndefOr[ConditionFieldName] = js.native
+  var Field: js.UndefOr[ConditionFieldName] = js.undefined
   
   /**
     * Information for a host header condition. Specify only when Field is host-header.
     */
-  var HostHeaderConfig: js.UndefOr[HostHeaderConditionConfig] = js.native
+  var HostHeaderConfig: js.UndefOr[HostHeaderConditionConfig] = js.undefined
   
   /**
     * Information for an HTTP header condition. Specify only when Field is http-header.
     */
-  var HttpHeaderConfig: js.UndefOr[HttpHeaderConditionConfig] = js.native
+  var HttpHeaderConfig: js.UndefOr[HttpHeaderConditionConfig] = js.undefined
   
   /**
     * Information for an HTTP method condition. Specify only when Field is http-request-method.
     */
-  var HttpRequestMethodConfig: js.UndefOr[HttpRequestMethodConditionConfig] = js.native
+  var HttpRequestMethodConfig: js.UndefOr[HttpRequestMethodConditionConfig] = js.undefined
   
   /**
     * Information for a path pattern condition. Specify only when Field is path-pattern.
     */
-  var PathPatternConfig: js.UndefOr[PathPatternConditionConfig] = js.native
+  var PathPatternConfig: js.UndefOr[PathPatternConditionConfig] = js.undefined
   
   /**
     * Information for a query string condition. Specify only when Field is query-string.
     */
-  var QueryStringConfig: js.UndefOr[QueryStringConditionConfig] = js.native
+  var QueryStringConfig: js.UndefOr[QueryStringConditionConfig] = js.undefined
   
   /**
     * Information for a source IP condition. Specify only when Field is source-ip.
     */
-  var SourceIpConfig: js.UndefOr[SourceIpConditionConfig] = js.native
+  var SourceIpConfig: js.UndefOr[SourceIpConditionConfig] = js.undefined
   
   /**
     * The condition value. Specify only when Field is host-header or path-pattern. Alternatively, to specify multiple host names or multiple path patterns, use HostHeaderConfig or PathPatternConfig. If Field is host-header and you are not using HostHeaderConfig, you can specify a single host name (for example, my.example.com) in Values. A host name is case insensitive, can be up to 128 characters in length, and can contain any of the following characters.   A-Z, a-z, 0-9   - .   * (matches 0 or more characters)   ? (matches exactly 1 character)   If Field is path-pattern and you are not using PathPatternConfig, you can specify a single path pattern (for example, /img/ *) in Values. A path pattern is case-sensitive, can be up to 128 characters in length, and can contain any of the following characters.   A-Z, a-z, 0-9   _ - . $ / ~ " ' @ : +   &amp; (using &amp;amp;)   * (matches 0 or more characters)   ? (matches exactly 1 character)  
     */
-  var Values: js.UndefOr[ListOfString] = js.native
+  var Values: js.UndefOr[ListOfString] = js.undefined
 }
 object RuleCondition {
   

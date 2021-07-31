@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1AutomatedStoppingConfig extends StObject {
   
-  var decayCurveStoppingConfig: js.UndefOr[GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig] = js.native
+  var decayCurveStoppingConfig: js.UndefOr[GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig] = js.undefined
   
-  var medianAutomatedStoppingConfig: js.UndefOr[GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig] = js.native
+  var medianAutomatedStoppingConfig: js.UndefOr[GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig] = js.undefined
 }
 object GoogleCloudMlV1AutomatedStoppingConfig {
   

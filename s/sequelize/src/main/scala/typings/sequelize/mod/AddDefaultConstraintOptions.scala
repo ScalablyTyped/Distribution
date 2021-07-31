@@ -2,24 +2,24 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddDefaultConstraintOptions extends AddConstraintOptions {
+trait AddDefaultConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: typings.sequelize.sequelizeStrings.default = js.native
+  var `type`: typings.sequelize.sequelizeStrings.default
 }
 object AddDefaultConstraintOptions {
   
   @scala.inline
-  def apply(`type`: typings.sequelize.sequelizeStrings.default): AddDefaultConstraintOptions = {
+  def apply(): AddDefaultConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("default")
     __obj.asInstanceOf[AddDefaultConstraintOptions]
   }
   

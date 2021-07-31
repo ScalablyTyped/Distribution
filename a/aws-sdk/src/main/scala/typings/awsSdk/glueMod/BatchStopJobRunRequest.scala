@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchStopJobRunRequest extends StObject {
   
   /**
     * The name of the job definition for which to stop job runs.
     */
-  var JobName: NameString = js.native
+  var JobName: NameString
   
   /**
     * A list of the JobRunIds that should be stopped for that job definition.
     */
-  var JobRunIds: BatchStopJobRunJobRunIdList = js.native
+  var JobRunIds: BatchStopJobRunJobRunIdList
 }
 object BatchStopJobRunRequest {
   

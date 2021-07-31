@@ -10,9 +10,9 @@ BIP32 Hierarchal Deterministic Node operations.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/hdnode |
 | Keywords           | Ethereum, ethers |
-| # releases         | 31 |
-| # dependents       | 18 |
-| # downloads        | 568955 |
+| # releases         | 34 |
+| # dependents       | 24 |
+| # downloads        | 1185555 |
 | # stars            | 0 |
 
 ## Links

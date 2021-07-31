@@ -1,6 +1,5 @@
 package typings.popperjsCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.popperjsCore.anon.Reference
 import typings.popperjsCore.enumsMod.Placement
 import typings.popperjsCore.popperjsCoreStrings.offset
@@ -8,18 +7,20 @@ import typings.popperjsCore.typesMod.Modifier
 import typings.popperjsCore.typesMod.Offsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object offsetMod extends Shortcut {
+object offsetMod {
+  
+  @JSImport("@popperjs/core/lib/modifiers/offset", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@popperjs/core/lib/modifiers/offset", JSImport.Default)
   @js.native
   val default: Modifier[offset, Options] = js.native
   
-  @JSImport("@popperjs/core/lib/modifiers/offset", "distanceAndSkiddingToXY")
-  @js.native
-  def distanceAndSkiddingToXY(placement: Placement, rects: Reference, offset: Offset): Offsets = js.native
+  @scala.inline
+  def distanceAndSkiddingToXY(placement: Placement, rects: Reference, offset: Offset): Offsets = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAndSkiddingToXY")(placement.asInstanceOf[js.Any], rects.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Offsets]
   
   type Offset = OffsetsFunction | (js.Tuple2[js.UndefOr[Double | Null], js.UndefOr[Double | Null]])
   
@@ -30,10 +31,9 @@ object offsetMod extends Shortcut {
     js.Tuple2[js.UndefOr[Double | Null], js.UndefOr[Double | Null]]
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var offset: Offset = js.native
+    var offset: Offset
   }
   object Options {
     
@@ -55,9 +55,4 @@ object offsetMod extends Shortcut {
       ): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
     }
   }
-  
-  type _To = Modifier[offset, Options]
-  
-  /* This means you don't have to write `default`, but can instead just say `offsetMod.foo` */
-  override def _to: Modifier[offset, Options] = default
 }

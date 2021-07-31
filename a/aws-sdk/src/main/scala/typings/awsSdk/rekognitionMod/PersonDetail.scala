@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonDetail extends StObject {
   
   /**
     * Bounding box around the detected person.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
   
   /**
     * Face details for the detected person.
     */
-  var Face: js.UndefOr[FaceDetail] = js.native
+  var Face: js.UndefOr[FaceDetail] = js.undefined
   
   /**
     * Identifier for the person detected person within a video. Use to keep track of the person throughout the video. The identifier is not stored by Amazon Rekognition.
     */
-  var Index: js.UndefOr[PersonIndex] = js.native
+  var Index: js.UndefOr[PersonIndex] = js.undefined
 }
 object PersonDetail {
   

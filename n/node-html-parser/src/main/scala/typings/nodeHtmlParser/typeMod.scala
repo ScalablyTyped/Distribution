@@ -2,7 +2,6 @@ package typings.nodeHtmlParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeMod {
@@ -12,13 +11,13 @@ object typeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[NodeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[NodeType & Double] = js.native
     
-    /* 8 */ val COMMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.COMMENT_NODE with Double = js.native
+    /* 8 */ val COMMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.COMMENT_NODE & Double = js.native
     
-    /* 1 */ val ELEMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.ELEMENT_NODE with Double = js.native
+    /* 1 */ val ELEMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.ELEMENT_NODE & Double = js.native
     
-    /* 3 */ val TEXT_NODE: typings.nodeHtmlParser.typeMod.NodeType.TEXT_NODE with Double = js.native
+    /* 3 */ val TEXT_NODE: typings.nodeHtmlParser.typeMod.NodeType.TEXT_NODE & Double = js.native
   }
   
   @js.native
@@ -28,12 +27,18 @@ object typeMod {
   object NodeType extends StObject {
     
     @js.native
-    sealed trait COMMENT_NODE extends NodeType
+    sealed trait COMMENT_NODE
+      extends StObject
+         with NodeType
     
     @js.native
-    sealed trait ELEMENT_NODE extends NodeType
+    sealed trait ELEMENT_NODE
+      extends StObject
+         with NodeType
     
     @js.native
-    sealed trait TEXT_NODE extends NodeType
+    sealed trait TEXT_NODE
+      extends StObject
+         with NodeType
   }
 }

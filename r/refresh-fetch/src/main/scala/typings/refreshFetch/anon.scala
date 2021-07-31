@@ -3,18 +3,16 @@ package typings.refreshFetch
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body[ResponseBody] extends StObject {
     
     /* tslint:disable-next-line no-unnecessary-generics */
-    var body: ResponseBody = js.native
+    var body: ResponseBody
     
-    var response: Response = js.native
+    var response: Response
   }
   object Body {
     
@@ -25,7 +23,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body[_], ResponseBody] (val x: Self with Body[ResponseBody]) extends AnyVal {
+    implicit class BodyMutableBuilder[Self <: Body[?], ResponseBody] (val x: Self & Body[ResponseBody]) extends AnyVal {
       
       @scala.inline
       def setBody(value: ResponseBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
@@ -35,14 +33,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Fetch[T] extends StObject {
     
-    var fetch: T = js.native
+    var fetch: T
     
-    def refreshToken(): js.Promise[Unit] = js.native
+    def refreshToken(): js.Promise[Unit]
     
-    def shouldRefreshToken(error: js.Any): Boolean = js.native
+    def shouldRefreshToken(error: js.Any): Boolean
   }
   object Fetch {
     
@@ -53,7 +50,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FetchMutableBuilder[Self <: Fetch[_], T] (val x: Self with Fetch[T]) extends AnyVal {
+    implicit class FetchMutableBuilder[Self <: Fetch[?], T] (val x: Self & Fetch[T]) extends AnyVal {
       
       @scala.inline
       def setFetch(value: T): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])

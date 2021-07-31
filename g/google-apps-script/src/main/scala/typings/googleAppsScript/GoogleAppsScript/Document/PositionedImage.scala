@@ -4,7 +4,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.Blob
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,36 +26,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setTopOffset(60)
   *         .setLeftOffset(40);
   */
-@js.native
 trait PositionedImage extends StObject {
   
-  def getAs(contentType: String): Blob = js.native
+  def getAs(contentType: String): Blob
   
-  def getBlob(): Blob = js.native
+  def getBlob(): Blob
   
-  def getHeight(): Integer = js.native
+  def getHeight(): Integer
   
-  def getId(): String = js.native
+  def getId(): String
   
-  def getLayout(): PositionedLayout = js.native
+  def getLayout(): PositionedLayout
   
-  def getLeftOffset(): Double = js.native
+  def getLeftOffset(): Double
   
-  def getParagraph(): Paragraph = js.native
+  def getParagraph(): Paragraph
   
-  def getTopOffset(): Double = js.native
+  def getTopOffset(): Double
   
-  def getWidth(): Integer = js.native
+  def getWidth(): Integer
   
-  def setHeight(height: Integer): PositionedImage = js.native
+  def setHeight(height: Integer): PositionedImage
   
-  def setLayout(layout: PositionedLayout): PositionedImage = js.native
+  def setLayout(layout: PositionedLayout): PositionedImage
   
-  def setLeftOffset(offset: Double): PositionedImage = js.native
+  def setLeftOffset(offset: Double): PositionedImage
   
-  def setTopOffset(offset: Double): PositionedImage = js.native
+  def setTopOffset(offset: Double): PositionedImage
   
-  def setWidth(width: Integer): PositionedImage = js.native
+  def setWidth(width: Integer): PositionedImage
 }
 object PositionedImage {
   

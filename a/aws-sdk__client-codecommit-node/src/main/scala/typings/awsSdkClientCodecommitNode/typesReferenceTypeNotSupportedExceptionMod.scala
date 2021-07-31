@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.createPullRequestExceptionsUnionMod.CreatePullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReferenceTypeNotSupportedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ReferenceTypeNotSupportedExceptionDetails> * / any */ @js.native
-  trait ReferenceTypeNotSupportedException extends CreatePullRequestExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ReferenceTypeNotSupportedExceptionDetails> * / any */ trait ReferenceTypeNotSupportedException
+    extends StObject
+       with CreatePullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceTypeNotSupportedException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceTypeNotSupportedException
   }
   object ReferenceTypeNotSupportedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceTypeNotSupportedException
-    ): ReferenceTypeNotSupportedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ReferenceTypeNotSupportedException = {
+      val __obj = js.Dynamic.literal(name = "ReferenceTypeNotSupportedException")
       __obj.asInstanceOf[ReferenceTypeNotSupportedException]
     }
     
@@ -34,6 +32,5 @@ object typesReferenceTypeNotSupportedExceptionMod {
     }
   }
   
-  @js.native
   trait ReferenceTypeNotSupportedExceptionDetails extends StObject
 }

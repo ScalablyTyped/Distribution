@@ -2,21 +2,19 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationControlOptions extends StObject {
   
-  var anchor: js.UndefOr[ControlAnchor] = js.native
+  var anchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var enableGeolocation: js.UndefOr[Boolean] = js.native
+  var enableGeolocation: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
   
-  var showZoomInfo: js.UndefOr[Boolean] = js.native
+  var showZoomInfo: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[NavigationControlType] = js.native
+  var `type`: js.UndefOr[NavigationControlType] = js.undefined
 }
 object NavigationControlOptions {
   

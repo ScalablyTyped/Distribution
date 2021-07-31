@@ -2,55 +2,53 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackIconColor extends StObject {
   
-  var backIconColor: js.UndefOr[String] = js.native
+  var backIconColor: js.UndefOr[String] = js.undefined
   
-  var bottomBg: js.UndefOr[String] = js.native
+  var bottomBg: js.UndefOr[String] = js.undefined
   
-  var cancelFontColor: js.UndefOr[String] = js.native
+  var cancelFontColor: js.UndefOr[String] = js.undefined
   
-  var cancelFontSize: js.UndefOr[Double] = js.native
+  var cancelFontSize: js.UndefOr[Double] = js.undefined
   
-  var cellBg: js.UndefOr[String] = js.native
+  var cellBg: js.UndefOr[String] = js.undefined
   
-  var cellFontColor: js.UndefOr[String] = js.native
+  var cellFontColor: js.UndefOr[String] = js.undefined
   
-  var cellFontSize: js.UndefOr[Double] = js.native
+  var cellFontSize: js.UndefOr[Double] = js.undefined
   
-  var cellHeight: js.UndefOr[Double] = js.native
+  var cellHeight: js.UndefOr[Double] = js.undefined
   
-  var checkboxColor: js.UndefOr[String] = js.native
+  var checkboxColor: js.UndefOr[String] = js.undefined
   
-  var confirmFontColor: js.UndefOr[String] = js.native
+  var confirmFontColor: js.UndefOr[String] = js.undefined
   
-  var confirmFontSize: js.UndefOr[Double] = js.native
+  var confirmFontSize: js.UndefOr[Double] = js.undefined
   
-  var footerRadius: js.UndefOr[Double] = js.native
+  var footerRadius: js.UndefOr[Double] = js.undefined
   
-  var lineColor: js.UndefOr[String] = js.native
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  var list: js.UndefOr[CellFontColor] = js.native
+  var list: js.UndefOr[CellFontColor] = js.undefined
   
-  var numberSelector: js.UndefOr[CellPlusColor] = js.native
+  var numberSelector: js.UndefOr[CellPlusColor] = js.undefined
   
-  var subTitleFontColor: js.UndefOr[String] = js.native
+  var subTitleFontColor: js.UndefOr[String] = js.undefined
   
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
   
-  var titleBg: js.UndefOr[String] = js.native
+  var titleBg: js.UndefOr[String] = js.undefined
   
-  var titleFontColor: js.UndefOr[String] = js.native
+  var titleFontColor: js.UndefOr[String] = js.undefined
   
-  var titleFontSize: js.UndefOr[Double] = js.native
+  var titleFontSize: js.UndefOr[Double] = js.undefined
   
-  var titleHeight: js.UndefOr[Double] = js.native
+  var titleHeight: js.UndefOr[Double] = js.undefined
   
-  var titleRadius: js.UndefOr[Double] = js.native
+  var titleRadius: js.UndefOr[Double] = js.undefined
 }
 object BackIconColor {
   

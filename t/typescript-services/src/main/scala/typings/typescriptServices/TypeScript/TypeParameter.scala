@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeParameter extends AST {
+trait TypeParameter
+  extends StObject
+     with AST {
   
-  var constraint: Constraint = js.native
+  var constraint: Constraint
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  def structuralEquals(ast: TypeParameter, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: TypeParameter, includingPosition: Boolean): Boolean
 }
 object TypeParameter {
   

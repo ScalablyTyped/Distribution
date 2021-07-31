@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** AudioListing. */
-@js.native
 trait AudioListing extends StObject {
   
   /** **For an archive-type resource,** an array of `AudioResource` objects that provides information about the audio-type resources that are contained in the resource. Omitted for an audio-type resource. */
-  var audio: js.UndefOr[js.Array[AudioResource]] = js.native
+  var audio: js.UndefOr[js.Array[AudioResource]] = js.undefined
   
   /** **For an archive-type resource,** an object of type `AudioResource` that provides information about the resource. Omitted for an audio-type resource. */
-  var container: js.UndefOr[AudioResource] = js.native
+  var container: js.UndefOr[AudioResource] = js.undefined
   
   /** **For an audio-type resource,** an `AudioDetails` object that provides detailed information about the resource. The object is empty until the service finishes processing the audio. Omitted for an archive-type resource. */
-  var details: js.UndefOr[AudioDetails] = js.native
+  var details: js.UndefOr[AudioDetails] = js.undefined
   
   /** **For an audio-type resource,**  the total seconds of audio in the resource. Omitted for an archive-type resource. */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** **For an audio-type resource,** the user-specified name of the resource. Omitted for an archive-type resource. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** **For an audio-type resource,** the status of the resource: * `ok`: The service successfully analyzed the audio data. The data can be used to train the custom model. * `being_processed`: The service is still analyzing the audio data. The service cannot accept requests to add new audio resources or to train the custom model until its analysis is complete. * `invalid`: The audio data is not valid for training the custom model (possibly because it has the wrong format or sampling rate, or because it is corrupted). Omitted for an archive-type resource. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object AudioListing {
   

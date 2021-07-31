@@ -12,13 +12,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a service for area diagrams. */
-@js.native
 trait AreaDiagram
-  extends Diagram
+  extends StObject
+     with Diagram
      with ChartStatistics
      with ChartAxisXSupplier
      with ChartTwoAxisYSupplier

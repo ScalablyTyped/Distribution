@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminGetUserRequest extends StObject {
   
   /**
     * The user pool ID for the user pool where you want to get information about the user.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user name of the user you wish to retrieve.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object AdminGetUserRequest {
   

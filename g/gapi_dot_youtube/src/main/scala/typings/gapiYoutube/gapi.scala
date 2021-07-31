@@ -20,7 +20,6 @@ import typings.gapiYoutube.anon.RequestBody
 import typings.gapiYoutube.anon.VideoId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -29,18 +28,17 @@ object gapi {
     
     object youtube {
       
-      @js.native
       trait activities extends StObject {
         
         /**
           * Posts a bulletin for a specific channel.
           */
-        def insert(`object`: Part): HttpRequest[GoogleApiYouTubeActivityResource] = js.native
+        def insert(`object`: Part): HttpRequest[GoogleApiYouTubeActivityResource]
         
         /**
           * Returns a list of channel activity events that match the request criteria.
           */
-        def list(`object`: Home): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeActivityResource]] = js.native
+        def list(`object`: Home): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeActivityResource]]
       }
       object activities {
         
@@ -64,13 +62,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait channelBanners extends StObject {
         
         /**
           * Uploads a channel banner to YouTube.
           */
-        def insert(`object`: OnBehalfOfContentOwner): HttpRequest[GoogleApiYouTubeChannelBannerResource] = js.native
+        def insert(`object`: OnBehalfOfContentOwner): HttpRequest[GoogleApiYouTubeChannelBannerResource]
       }
       object channelBanners {
         
@@ -88,18 +85,17 @@ object gapi {
         }
       }
       
-      @js.native
       trait channels extends StObject {
         
         /**
           * Returns a collection of zero or more channel resources that match the request criteria.
           */
-        def list(`object`: ForUsername): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeChannelResource]] = js.native
+        def list(`object`: ForUsername): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeChannelResource]]
         
         /**
           * Updates a channel's metadata.
           */
-        def update(`object`: RequestBody): HttpRequest[GoogleApiYouTubeChannelResource] = js.native
+        def update(`object`: RequestBody): HttpRequest[GoogleApiYouTubeChannelResource]
       }
       object channels {
         
@@ -123,13 +119,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait guideCategories extends StObject {
         
         /**
           * Returns a list of categories that can be associated with YouTube channels.
           */
-        def list(`object`: Hl): HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeGuideCategoryResource]] = js.native
+        def list(`object`: Hl): HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeGuideCategoryResource]]
       }
       object guideCategories {
         
@@ -147,28 +142,27 @@ object gapi {
         }
       }
       
-      @js.native
       trait playlistItems extends StObject {
         
         /**
           * Deletes a playlist item.
           */
-        def delete(`object`: Id): HttpRequest[GoogleApiYouTubePlaylistItemResource] = js.native
+        def delete(`object`: Id): HttpRequest[GoogleApiYouTubePlaylistItemResource]
         
         /**
           * Adds a resource to a playlist.
           */
-        def insert(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistItemResource] = js.native
+        def insert(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistItemResource]
         
         /**
           * Returns a collection of playlist items that match the API request parameters. You can retrieve all of the playlist items in a specified playlist or retrieve one or more playlist items by their unique IDs.
           */
-        def list(`object`: MaxResults): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistItemResource]] = js.native
+        def list(`object`: MaxResults): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistItemResource]]
         
         /**
           * Modifies a playlist item. For example, you could update the item's position in the playlist.
           */
-        def update(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistItemResource] = js.native
+        def update(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistItemResource]
       }
       object playlistItems {
         
@@ -202,28 +196,27 @@ object gapi {
         }
       }
       
-      @js.native
       trait playlists extends StObject {
         
         /**
           * Deletes a playlist.
           */
-        def delete(`object`: Id): HttpRequest[GoogleApiYouTubePlaylistResource] = js.native
+        def delete(`object`: Id): HttpRequest[GoogleApiYouTubePlaylistResource]
         
         /**
           * Creates a playlist.
           */
-        def insert(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistResource] = js.native
+        def insert(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistResource]
         
         /**
           * Returns a collection of playlists that match the API request parameters. For example, you can retrieve all playlists that the authenticated user owns, or you can retrieve one or more playlists by their unique IDs.
           */
-        def list(`object`: Mine): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistResource]] = js.native
+        def list(`object`: Mine): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistResource]]
         
         /**
           * Modifies a playlist. For example, you could change a playlist's title, description, or privacy status.
           */
-        def update(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistResource] = js.native
+        def update(`object`: Part): HttpRequest[GoogleApiYouTubePlaylistResource]
       }
       object playlists {
         
@@ -255,13 +248,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait search extends StObject {
         
         /**
           * Returns a collection of search results that match the query parameters specified in the API request. By default, a search result set identifies matching video, channel, and playlist resources, but you can also configure queries to only retrieve a specific type of resource.
           */
-        def list(`object`: ChannelType): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSearchResource]] = js.native
+        def list(`object`: ChannelType): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSearchResource]]
       }
       object search {
         
@@ -279,23 +271,22 @@ object gapi {
         }
       }
       
-      @js.native
       trait subscriptions extends StObject {
         
         /**
           * Deletes a subscription.
           */
-        def delete(`object`: Id): HttpRequest[GoogleApiYouTubeSubscriptionResource] = js.native
+        def delete(`object`: Id): HttpRequest[GoogleApiYouTubeSubscriptionResource]
         
         /**
           * Adds a subscription for the authenticated user's channel.
           */
-        def insert(`object`: PartRequestBody): HttpRequest[GoogleApiYouTubeSubscriptionResource] = js.native
+        def insert(`object`: PartRequestBody): HttpRequest[GoogleApiYouTubeSubscriptionResource]
         
         /**
           * Returns subscription resources that match the API request criteria.
           */
-        def list(`object`: ForChannelId): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]] = js.native
+        def list(`object`: ForChannelId): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]]
       }
       object subscriptions {
         
@@ -325,13 +316,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait thumbnails extends StObject {
         
         /**
           * Uploads a custom video thumbnail to YouTube and sets it for a video.
           */
-        def set(`object`: VideoId): HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]] = js.native
+        def set(`object`: VideoId): HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]]
       }
       object thumbnails {
         
@@ -349,13 +339,12 @@ object gapi {
         }
       }
       
-      @js.native
       trait videoCategories extends StObject {
         
         /**
           * Returns a list of categories that can be associated with YouTube videos.
           */
-        def list(`object`: Hl): HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeVideoCategoryResource]] = js.native
+        def list(`object`: Hl): HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeVideoCategoryResource]]
       }
       object videoCategories {
         
@@ -373,38 +362,37 @@ object gapi {
         }
       }
       
-      @js.native
       trait videos extends StObject {
         
         /**
           * Deletes a YouTube video.
           */
-        def delete(`object`: IdOnBehalfOfContentOwner): HttpRequest[GoogleApiYouTubeVideoResource] = js.native
+        def delete(`object`: IdOnBehalfOfContentOwner): HttpRequest[GoogleApiYouTubeVideoResource]
         
         /**
           * Get user ratings for videos.
           */
-        def getRating(`object`: IdOnBehalfOfContentOwner): HttpRequest[GoogleApiYouTubeVideoGetRatingResponse] = js.native
+        def getRating(`object`: IdOnBehalfOfContentOwner): HttpRequest[GoogleApiYouTubeVideoGetRatingResponse]
         
         /**
           * Uploads a video to YouTube and optionally sets the video's metadata.
           */
-        def insert(`object`: AutoLevels): HttpRequest[GoogleApiYouTubeVideoResource] = js.native
+        def insert(`object`: AutoLevels): HttpRequest[GoogleApiYouTubeVideoResource]
         
         /**
           * Returns a list of videos that match the API request parameters.
           */
-        def list(`object`: Chart): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]] = js.native
+        def list(`object`: Chart): HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]]
         
         /**
           * Like, dislike, or remove rating from a video.
           */
-        def rate(`object`: OnBehalfOfContentOwnerRating): HttpRequest[_] = js.native
+        def rate(`object`: OnBehalfOfContentOwnerRating): HttpRequest[js.Any]
         
         /**
           * Updates a video's metadata.
           */
-        def update(`object`: RequestBody): HttpRequest[GoogleApiYouTubeVideoResource] = js.native
+        def update(`object`: RequestBody): HttpRequest[GoogleApiYouTubeVideoResource]
       }
       object videos {
         
@@ -414,7 +402,7 @@ object gapi {
           getRating: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoGetRatingResponse],
           insert: AutoLevels => HttpRequest[GoogleApiYouTubeVideoResource],
           list: Chart => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]],
-          rate: OnBehalfOfContentOwnerRating => HttpRequest[_],
+          rate: OnBehalfOfContentOwnerRating => HttpRequest[js.Any],
           update: RequestBody => HttpRequest[GoogleApiYouTubeVideoResource]
         ): videos = {
           val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), getRating = js.Any.fromFunction1(getRating), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), rate = js.Any.fromFunction1(rate), update = js.Any.fromFunction1(update))
@@ -437,7 +425,7 @@ object gapi {
           def setList(value: Chart => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
           @scala.inline
-          def setRate(value: OnBehalfOfContentOwnerRating => HttpRequest[_]): Self = StObject.set(x, "rate", js.Any.fromFunction1(value))
+          def setRate(value: OnBehalfOfContentOwnerRating => HttpRequest[js.Any]): Self = StObject.set(x, "rate", js.Any.fromFunction1(value))
           
           @scala.inline
           def setUpdate(value: RequestBody => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))

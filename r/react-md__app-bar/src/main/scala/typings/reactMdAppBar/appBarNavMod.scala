@@ -7,18 +7,17 @@ import typings.reactMdButton.buttonMod.ButtonProps
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appBarNavMod {
   
   @JSImport("@react-md/app-bar/types/AppBarNav", "AppBarNav")
   @js.native
-  val AppBarNav: ForwardRefExoticComponent[AppBarNavProps with RefAttributes[HTMLButtonElement]] = js.native
+  val AppBarNav: ForwardRefExoticComponent[AppBarNavProps & RefAttributes[HTMLButtonElement]] = js.native
   
-  @js.native
   trait AppBarNavProps
-    extends ButtonProps
+    extends StObject
+       with ButtonProps
        with AppBarColorInherit
   object AppBarNavProps {
     

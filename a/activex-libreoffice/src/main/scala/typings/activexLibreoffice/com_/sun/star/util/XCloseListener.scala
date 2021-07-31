@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCloseable
   * @see XCloseBroadcaster
   */
-@js.native
-trait XCloseListener extends XEventListener {
+trait XCloseListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when the listened object is closed really
@@ -32,7 +32,7 @@ trait XCloseListener extends XEventListener {
     * any more.
     * @param Source describes the source of the event (must be the listened object)
     */
-  def notifyClosing(Source: EventObject): Unit = js.native
+  def notifyClosing(Source: EventObject): Unit
   
   /**
     * is called when somewhere tries to close listened object
@@ -51,7 +51,7 @@ trait XCloseListener extends XEventListener {
     * @param GetsOwnership `TRUE` pass the ownership to this listener, if it throw the veto exception (otherwise this parameter must be ignored!) ; `FALSE` fo
     * @throws CloseVetoException if listener disagree with the close request on listened object it must throw this exception
     */
-  def queryClosing(Source: EventObject, GetsOwnership: Boolean): Unit = js.native
+  def queryClosing(Source: EventObject, GetsOwnership: Boolean): Unit
 }
 object XCloseListener {
   

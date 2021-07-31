@@ -4,7 +4,6 @@ import typings.stripe.mod.skus.ISku
 import typings.stripe.stripeStrings.product
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object products {
@@ -13,28 +12,27 @@ object products {
     * The dimensions of this product for shipping purposes. A SKU associated with this product can override this value by having its
     * own package_dimensions
     */
-  @js.native
   trait IPackageDimensions extends StObject {
     
     /**
       * Height, in inches. Maximum precision is 2 decimal places.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Length, in inches. Maximum precision is 2 decimal places.
       */
-    var length: Double = js.native
+    var length: Double
     
     /**
       * Weight, in ounces. Maximum precision is 2 decimal places.
       */
-    var weight: Double = js.native
+    var weight: Double
     
     /**
       * Width, in inches. Maximum precision is 2 decimal places.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object IPackageDimensions {
     
@@ -61,96 +59,97 @@ object products {
     }
   }
   
-  @js.native
-  trait IProduct extends IResourceObject {
+  trait IProduct
+    extends StObject
+       with IResourceObject {
     
     /**
       * Whether or not the product is currently available for purchase.
       */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /**
       * A list of up to 5 attributes that each SKU can provide values for (e.g. ["color", "size"]).
       */
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
     /**
       * A short one-line description of the product, meant to be displayable to the customer.
       */
-    var caption: String = js.native
+    var caption: String
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * An array of connect application identifiers that cannot purchase this product.
       */
-    var deactivated_on: js.Array[String] = js.native
+    var deactivated_on: js.Array[String]
     
     /**
       * The product’s description, meant to be displayable to the customer.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * A list of up to 8 URLs of images for this product, meant to be displayable to the customer.
       */
-    var images: js.Array[String] = js.native
+    var images: js.Array[String]
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * The product’s name, meant to be displayable to the customer.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Value is "product"
       */
     @JSName("object")
-    var object_IProduct: product = js.native
+    var object_IProduct: product
     
-    var package_dimensions: IPackageDimensions = js.native
+    var package_dimensions: IPackageDimensions
     
     /**
       * Whether this product is a shipped good.
       */
-    var shippable: Boolean = js.native
+    var shippable: Boolean
     
     /**
       * A sublist of active SKUs associated with this product.
       */
-    var skus: IList[ISku] = js.native
+    var skus: IList[ISku]
     
     /**
       * Extra information about a product which will appear on your customer’s credit card statement. In the case that multiple products are billed
       * at once, the first statement descriptor will be used. Only available on products of type=service.
       */
-    var statement_descriptor: String = js.native
+    var statement_descriptor: String
     
     /**
       * The type of the product. Defaults to `service` if not explicitly specified, enabling use of this product
       * withSubscriptions and Plans. Set this parameter to `good` to use this product with Orders and SKUs. On API
       * versions before `2018-02-05`, this field defaults to `good` for compatibility reasons.
       */
-    var `type`: js.UndefOr[ProductType] = js.native
+    var `type`: js.UndefOr[ProductType] = js.undefined
     
     /**
       * A label that represents units of this product, such as seat(s), in Stripe and on customers’ receipts and invoices.
       * Only available on products of type=service.
       */
-    var unit_label: js.UndefOr[String] = js.native
+    var unit_label: js.UndefOr[String] = js.undefined
     
-    var updated: Double = js.native
+    var updated: Double
     
     /**
       * A URL of a publicly-accessible webpage for this product.
       */
-    var url: String = js.native
+    var url: String
   }
   object IProduct {
     
@@ -167,7 +166,6 @@ object products {
       livemode: Boolean,
       metadata: IMetadata,
       name: String,
-      `object`: product,
       package_dimensions: IPackageDimensions,
       shippable: Boolean,
       skus: IList[ISku],
@@ -176,7 +174,7 @@ object products {
       url: String
     ): IProduct = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], deactivated_on = deactivated_on.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], package_dimensions = package_dimensions.asInstanceOf[js.Any], shippable = shippable.asInstanceOf[js.Any], skus = skus.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("product")
       __obj.asInstanceOf[IProduct]
     }
     
@@ -257,63 +255,64 @@ object products {
     }
   }
   
-  @js.native
-  trait IProductCreationOptions extends IDataOptionsWithMetadata {
+  trait IProductCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Whether or not the product is currently available for purchase. Defaults to true. May only be set if type=good.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A list of up to 5 alphanumeric attributes that each SKU can provide values for (e.g. ["color", "size"]).
       * Applicable to both service and good types.
       */
-    var attributes: js.UndefOr[js.Array[String]] = js.native
+    var attributes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A short one-line description of the product, meant to be displayable to the customer. May only be set if type=good.
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * An array of Connect application names or identifiers that should not be able to order the SKUs for this product.
       * May only be set if type=good.
       */
-    var deactivate_on: js.UndefOr[js.Array[String]] = js.native
+    var deactivate_on: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The product’s description, meant to be displayable to the customer. May only be set if type=good.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The identifier for the product. Must be unique. If not provided, an identifier will be randomly generated.
       * Applicable to both service and good types.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * A list of up to 8 URLs of images for this product, meant to be displayable to the customer. May only be set if type=good.
       */
-    var images: js.UndefOr[js.Array[String]] = js.native
+    var images: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The product’s name, meant to be displayable to the customer.
       * Applicable to both service and good types.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The dimensions of this product for shipping purposes. A SKU associated with this product can override this value by having its own
       * package_dimensions. May only be set if type=good.
       */
-    var package_dimensions: js.UndefOr[IPackageDimensions] = js.native
+    var package_dimensions: js.UndefOr[IPackageDimensions] = js.undefined
     
     /**
       * Whether this product is shipped (i.e. physical goods). Defaults to true. May only be set if type=good.
       */
-    var shippable: js.UndefOr[Boolean] = js.native
+    var shippable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An arbitrary string to be displayed on your customer’s credit card statement. This may be up to 22 characters. The statement description
@@ -321,25 +320,25 @@ object products {
       * stripped. While most banks display this information consistently, some may display it incorrectly or not at all.
       * May only be set if type=service.
       */
-    var statement_descriptor: js.UndefOr[String] = js.native
+    var statement_descriptor: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the product. Defaults to `service` if not explicitly specified, enabling use of this product
       * withSubscriptions and Plans. Set this parameter to `good` to use this product with Orders and SKUs. On API
       * versions before `2018-02-05`, this field defaults to `good` for compatibility reasons.
       */
-    var `type`: js.UndefOr[ProductType] = js.native
+    var `type`: js.UndefOr[ProductType] = js.undefined
     
     /**
       * A label that represents units of this product, such as seat(s), in Stripe and on customers’ receipts and invoices.
       * Only available on products of type=service.
       */
-    var unit_label: js.UndefOr[String] = js.native
+    var unit_label: js.UndefOr[String] = js.undefined
     
     /**
       * A URL of a publicly-accessible webpage for this product. May only be set if type=good.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IProductCreationOptions {
     
@@ -444,39 +443,40 @@ object products {
     }
   }
   
-  @js.native
-  trait IProductListOptions extends IListOptions {
+  trait IProductListOptions
+    extends StObject
+       with IListOptions {
     
     /**
       * Only return products that are active or inactive (e.g. pass false to list all inactive products).
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp,
       * or it can be a dictionary with the following options:
       */
-    var created: js.UndefOr[IDateFilter] = js.native
+    var created: js.UndefOr[IDateFilter] = js.undefined
     
     /**
       * Only return products with the given IDs.
       */
-    var ids: js.UndefOr[js.Array[String]] = js.native
+    var ids: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Only return products that can be shipped (i.e., physical, not digital products).
       */
-    var shippable: js.UndefOr[Boolean] = js.native
+    var shippable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only return products of this type
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Only return products with the given url
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IProductListOptions {
     
@@ -530,52 +530,53 @@ object products {
     }
   }
   
-  @js.native
-  trait IProductUpdateOptions extends IDataOptionsWithMetadata {
+  trait IProductUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Whether or not the product is available for purchase. Setting this to false also deactivates any active, related SKUs. Setting this to
       * true does not automatically activate any deactivated, related SKUs.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A short one-line description of the product, meant to be displayable to the customer.
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * An array of Connect application names or identifiers that should not be able to order the SKUs for this product. This can be unset
       * by updating the value to null and then saving.
       */
-    var deactivate_on: js.UndefOr[js.Array[String]] = js.native
+    var deactivate_on: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The product’s description, meant to be displayable to the customer.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * A list of up to 8 URLs of images for this product, meant to be displayable to the customer. This can be unset by updating the value to
       * null and then saving.
       */
-    var images: js.UndefOr[js.Array[String]] = js.native
+    var images: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The product’s name, meant to be displayable to the customer.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The dimensions of this product for shipping purposes. A SKU associated with this product can override this value by having its own
       * package_dimensions.
       */
-    var package_dimensions: js.UndefOr[IPackageDimensions] = js.native
+    var package_dimensions: js.UndefOr[IPackageDimensions] = js.undefined
     
     /**
       * Whether this product is shipped (i.e. physical goods). Defaults to true.
       */
-    var shippable: js.UndefOr[Boolean] = js.native
+    var shippable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An arbitrary string to be displayed on your customer’s credit card statement. This may be up to 22 characters. The statement description
@@ -583,12 +584,12 @@ object products {
       * stripped. While most banks display this information consistently, some may display it incorrectly or not at all.
       * May only be set if type=service.
       */
-    var statement_descriptor: js.UndefOr[String] = js.native
+    var statement_descriptor: js.UndefOr[String] = js.undefined
     
     /**
       * A URL of a publicly-accessible webpage for this product.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IProductUpdateOptions {
     

@@ -7,35 +7,33 @@ import typings.chartJs.chartJsStrings.top
 import typings.chartJs.chartJsStrings.zero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLineOptions extends StObject {
   
-  var backgroundColor: js.UndefOr[ChartColor] = js.native
+  var backgroundColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderCapStyle: js.UndefOr[String] = js.native
+  var borderCapStyle: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[ChartColor] = js.native
+  var borderColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderDash: js.UndefOr[js.Array[_]] = js.native
+  var borderDash: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var borderDashOffset: js.UndefOr[Double] = js.native
+  var borderDashOffset: js.UndefOr[Double] = js.undefined
   
-  var borderJoinStyle: js.UndefOr[String] = js.native
+  var borderJoinStyle: js.UndefOr[String] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var capBezierPoints: js.UndefOr[Boolean] = js.native
+  var capBezierPoints: js.UndefOr[Boolean] = js.undefined
   
-  var cubicInterpolationMode: js.UndefOr[default | monotone] = js.native
+  var cubicInterpolationMode: js.UndefOr[default | monotone] = js.undefined
   
-  var fill: js.UndefOr[zero | top | bottom | Boolean] = js.native
+  var fill: js.UndefOr[zero | top | bottom | Boolean] = js.undefined
   
-  var stepped: js.UndefOr[Boolean] = js.native
+  var stepped: js.UndefOr[Boolean] = js.undefined
   
-  var tension: js.UndefOr[Double] = js.native
+  var tension: js.UndefOr[Double] = js.undefined
 }
 object ChartLineOptions {
   
@@ -73,7 +71,7 @@ object ChartLineOptions {
     def setBorderColorVarargs(value: String*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
     
     @scala.inline
-    def setBorderDash(value: js.Array[_]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
+    def setBorderDash(value: js.Array[js.Any]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBorderDashOffset(value: Double): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])

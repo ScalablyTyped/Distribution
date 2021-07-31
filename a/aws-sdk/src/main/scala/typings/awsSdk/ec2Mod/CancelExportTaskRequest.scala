@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelExportTaskRequest extends StObject {
   
   /**
     * The ID of the export task. This is the ID returned by CreateInstanceExportTask.
     */
-  var ExportTaskId: ExportVmTaskId = js.native
+  var ExportTaskId: ExportVmTaskId
 }
 object CancelExportTaskRequest {
   

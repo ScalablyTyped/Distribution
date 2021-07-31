@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,7 @@ trait PlusAndroidInstanceObject extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def plusSetAttribute(): Unit = js.native
-  def plusSetAttribute(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def plusSetAttribute(name: String): Unit = js.native
   def plusSetAttribute(name: String, value: js.Any): Unit = js.native
+  def plusSetAttribute(name: Unit, value: js.Any): Unit = js.native
 }

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessageRequest extends StObject {
   
   /** Required. Message to send. */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /** Flag for testing the request without actually delivering the message. */
-  var validateOnly: js.UndefOr[Boolean] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object SendMessageRequest {
   

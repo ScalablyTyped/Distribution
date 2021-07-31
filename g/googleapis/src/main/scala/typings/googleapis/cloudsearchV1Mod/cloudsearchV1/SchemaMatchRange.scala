@@ -2,24 +2,22 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Matched range of a snippet [start, end).
   */
-@js.native
 trait SchemaMatchRange extends StObject {
   
   /**
     * End of the match in the snippet.
     */
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
   /**
     * Starting position of the match in the snippet.
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object SchemaMatchRange {
   

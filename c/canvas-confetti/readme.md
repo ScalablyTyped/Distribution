@@ -10,9 +10,9 @@ performant confetti animation in the browser
 | ------------------ | :-------------: |
 | Full name          | canvas-confetti |
 | Keywords           | canvas, confetti, animation, burst, fireworks, snow, particles |
-| # releases         | 19 |
-| # dependents       | 11 |
-| # downloads        | 808222 |
+| # releases         | 24 |
+| # dependents       | 14 |
+| # downloads        | 1150233 |
 | # stars            | 0 |
 
 ## Links

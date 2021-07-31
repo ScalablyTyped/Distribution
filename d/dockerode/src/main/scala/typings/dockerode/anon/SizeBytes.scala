@@ -2,15 +2,13 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeBytes extends StObject {
   
-  var Mode: Double = js.native
+  var Mode: Double
   
-  var SizeBytes: Double = js.native
+  var SizeBytes: Double
 }
 object SizeBytes {
   

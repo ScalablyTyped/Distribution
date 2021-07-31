@@ -2,41 +2,39 @@ package typings.sendcloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateSendOptions extends StObject {
   
-  var api_key: js.UndefOr[String] = js.native
+  var api_key: js.UndefOr[String] = js.undefined
   
-  var api_user: js.UndefOr[String] = js.native
+  var api_user: js.UndefOr[String] = js.undefined
   
-  var files: js.UndefOr[String] = js.native
+  var files: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var fromname: js.UndefOr[String] = js.native
+  var fromname: js.UndefOr[String] = js.undefined
   
-  var gzip_compress: js.UndefOr[String] = js.native
+  var gzip_compress: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[Double] = js.native
+  var label: js.UndefOr[Double] = js.undefined
   
-  var replyTo: js.UndefOr[String] = js.native
+  var replyTo: js.UndefOr[String] = js.undefined
   
-  var resp_email_id: js.UndefOr[String] = js.native
+  var resp_email_id: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var substitution_vars: js.UndefOr[String] = js.native
+  var substitution_vars: js.UndefOr[String] = js.undefined
   
-  var template_invoke_name: js.UndefOr[String] = js.native
+  var template_invoke_name: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
-  var use_maillist: js.UndefOr[String] = js.native
+  var use_maillist: js.UndefOr[String] = js.undefined
 }
 object TemplateSendOptions {
   

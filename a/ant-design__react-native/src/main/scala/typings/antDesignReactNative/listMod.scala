@@ -9,7 +9,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -35,12 +34,12 @@ object listMod {
   trait List
     extends Component[ListProps, js.Any, js.Any]
   
-  @js.native
   trait ListProps
-    extends ListPropsType
+    extends StObject
+       with ListPropsType
        with WithThemeStyles[ListStyle] {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object ListProps {
     

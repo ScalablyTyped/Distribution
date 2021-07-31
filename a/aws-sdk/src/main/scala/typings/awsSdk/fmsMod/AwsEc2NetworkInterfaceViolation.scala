@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2NetworkInterfaceViolation extends StObject {
   
   /**
     * List of security groups that violate the rules specified in the master security group of the AWS Firewall Manager policy.
     */
-  var ViolatingSecurityGroups: js.UndefOr[ResourceIdList] = js.native
+  var ViolatingSecurityGroups: js.UndefOr[ResourceIdList] = js.undefined
   
   /**
     * The resource ID of the network interface.
     */
-  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.native
+  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.undefined
 }
 object AwsEc2NetworkInterfaceViolation {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchingCriteria extends StObject {
   
   /**
     * Required. The name of a CloudEvents atrribute. Currently, only a subset of attributes can be specified. All triggers MUST provide a matching criteria for attribute 'type'. Event
     * types specify what event type has attributes are allowed based on
     */
-  var attribute: js.UndefOr[String] = js.native
+  var attribute: js.UndefOr[String] = js.undefined
   
   /** Required. The value for the attribute */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object MatchingCriteria {
   

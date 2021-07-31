@@ -4,17 +4,15 @@ import typings.formatjsEcma402Abstract.typesDisplaynamesMod.LanguageTag
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NarrowRecord extends StObject {
   
-  var long: Record[LanguageTag, String] = js.native
+  var long: Record[LanguageTag, String]
   
-  var narrow: Record[LanguageTag, String] = js.native
+  var narrow: Record[LanguageTag, String]
   
-  var short: Record[LanguageTag, String] = js.native
+  var short: Record[LanguageTag, String]
 }
 object NarrowRecord {
   

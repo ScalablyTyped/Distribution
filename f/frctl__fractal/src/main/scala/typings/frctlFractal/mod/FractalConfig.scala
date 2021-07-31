@@ -3,22 +3,20 @@ package typings.frctlFractal.mod
 import typings.frctlFractal.anon.Author
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FractalConfig extends StObject {
   
-  var project: js.UndefOr[Author] = js.native
+  var project: js.UndefOr[Author] = js.undefined
   
   @JSName("project.author")
-  var projectDotauthor: js.UndefOr[String] = js.native
+  var projectDotauthor: js.UndefOr[String] = js.undefined
   
   @JSName("project.title")
-  var projectDottitle: js.UndefOr[String] = js.native
+  var projectDottitle: js.UndefOr[String] = js.undefined
   
   @JSName("project.version")
-  var projectDotversion: js.UndefOr[String] = js.native
+  var projectDotversion: js.UndefOr[String] = js.undefined
 }
 object FractalConfig {
   

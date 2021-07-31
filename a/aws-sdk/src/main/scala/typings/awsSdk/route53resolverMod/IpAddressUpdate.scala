@@ -2,26 +2,24 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpAddressUpdate extends StObject {
   
   /**
     * The new IP address.
     */
-  var Ip: js.UndefOr[typings.awsSdk.route53resolverMod.Ip] = js.native
+  var Ip: js.UndefOr[typings.awsSdk.route53resolverMod.Ip] = js.undefined
   
   /**
     *  Only when removing an IP address from a Resolver endpoint: The ID of the IP address that you want to remove. To get this ID, use GetResolverEndpoint.
     */
-  var IpId: js.UndefOr[ResourceId] = js.native
+  var IpId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The ID of the subnet that includes the IP address that you want to update. To get this ID, use GetResolverEndpoint.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.route53resolverMod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.route53resolverMod.SubnetId] = js.undefined
 }
 object IpAddressUpdate {
   

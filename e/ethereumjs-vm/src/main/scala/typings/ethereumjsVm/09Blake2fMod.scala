@@ -5,16 +5,17 @@ import typings.ethereumjsVm.typesMod.PrecompileInput
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object `09Blake2fMod` {
   
-  @JSImport("ethereumjs-vm/dist/evm/precompiles/09-blake2f", JSImport.Default)
+  @JSImport("ethereumjs-vm/dist/evm/precompiles/09-blake2f", JSImport.Namespace)
   @js.native
-  def default(opts: PrecompileInput): ExecResult = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereumjs-vm/dist/evm/precompiles/09-blake2f", "F")
-  @js.native
-  def F(h: Uint32Array, m: Uint32Array, t: Uint32Array, f: Boolean, rounds: Double): Unit = js.native
+  @scala.inline
+  def default(opts: PrecompileInput): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
+  
+  @scala.inline
+  def F(h: Uint32Array, m: Uint32Array, t: Uint32Array, f: Boolean, rounds: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("F")(h.asInstanceOf[js.Any], m.asInstanceOf[js.Any], t.asInstanceOf[js.Any], f.asInstanceOf[js.Any], rounds.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

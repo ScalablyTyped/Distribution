@@ -5,7 +5,6 @@ import typings.mysql.mod.MysqlError
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "Connection")
@@ -97,7 +96,7 @@ class Connection protected () extends EventEmitter {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def notice(tableWhichCalled: String, queryStr: String, rawRows: js.Array[_]): Unit = js.native
+  def notice(tableWhichCalled: String, queryStr: String, rawRows: js.Array[js.Any]): Unit = js.native
   
   /**
     * Executes a database query.
@@ -107,11 +106,11 @@ class Connection protected () extends EventEmitter {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, _]): Unit = js.native
+  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any]): Unit = js.native
   def query(
     queryStr: String,
-    callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, _],
-    queryArguments: js.Array[_]
+    callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any],
+    queryArguments: js.Array[js.Any]
   ): Unit = js.native
   
   /**
@@ -126,12 +125,12 @@ class Connection protected () extends EventEmitter {
   /**
     * Force to fetch ONLY these Database table names {array of string}.
     */
-  var tableNamesToUseOnly: js.Array[_] = js.native
+  var tableNamesToUseOnly: js.Array[js.Any] = js.native
   
   /**
     * All tables {MysqlTable} inside this connection's database.
     */
-  var tables: js.Array[Table[_]] = js.native
+  var tables: js.Array[Table[js.Any]] = js.native
   
   /**
     * Removes an event listener/watcher from a table for a specific event type.
@@ -144,7 +143,7 @@ class Connection protected () extends EventEmitter {
   def unwatch(
     tableName: String,
     evtType: String,
-    callbackToRemove: js.Function1[/* rawResults */ js.Array[_], Unit]
+    callbackToRemove: js.Function1[/* rawResults */ js.Array[js.Any], Unit]
   ): Unit = js.native
   
   /**
@@ -163,5 +162,5 @@ class Connection protected () extends EventEmitter {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def watch(tableName: String, evtType: js.Any, callback: js.Function1[/* rawRows */ js.Array[_], Unit]): Unit = js.native
+  def watch(tableName: String, evtType: js.Any, callback: js.Function1[/* rawRows */ js.Array[js.Any], Unit]): Unit = js.native
 }

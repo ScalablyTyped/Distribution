@@ -3,7 +3,6 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.pathMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationMod {
@@ -53,9 +52,8 @@ object operationMod {
       * @param {string} queryId
       * @return {!OperationSource}
       */
-    @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationSource.forServerTaggedQuery")
-    @js.native
-    def forServerTaggedQuery(queryId: String): OperationSource = js.native
+    @scala.inline
+    def forServerTaggedQuery(queryId: String): OperationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("forServerTaggedQuery")(queryId.asInstanceOf[js.Any]).asInstanceOf[OperationSource]
   }
   
   @js.native
@@ -65,48 +63,55 @@ object operationMod {
   object OperationType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OperationType with Double] = js.native
+    def apply(value: Double): js.UndefOr[OperationType & Double] = js.native
     
     @js.native
-    sealed trait ACK_USER_WRITE extends OperationType
-    /* 2 */ val ACK_USER_WRITE: typings.firebaseDatabase.operationMod.OperationType.ACK_USER_WRITE with Double = js.native
+    sealed trait ACK_USER_WRITE
+      extends StObject
+         with OperationType
+    /* 2 */ val ACK_USER_WRITE: typings.firebaseDatabase.operationMod.OperationType.ACK_USER_WRITE & Double = js.native
     
     @js.native
-    sealed trait LISTEN_COMPLETE extends OperationType
-    /* 3 */ val LISTEN_COMPLETE: typings.firebaseDatabase.operationMod.OperationType.LISTEN_COMPLETE with Double = js.native
+    sealed trait LISTEN_COMPLETE
+      extends StObject
+         with OperationType
+    /* 3 */ val LISTEN_COMPLETE: typings.firebaseDatabase.operationMod.OperationType.LISTEN_COMPLETE & Double = js.native
     
     @js.native
-    sealed trait MERGE extends OperationType
-    /* 1 */ val MERGE: typings.firebaseDatabase.operationMod.OperationType.MERGE with Double = js.native
+    sealed trait MERGE
+      extends StObject
+         with OperationType
+    /* 1 */ val MERGE: typings.firebaseDatabase.operationMod.OperationType.MERGE & Double = js.native
     
     @js.native
-    sealed trait OVERWRITE extends OperationType
-    /* 0 */ val OVERWRITE: typings.firebaseDatabase.operationMod.OperationType.OVERWRITE with Double = js.native
+    sealed trait OVERWRITE
+      extends StObject
+         with OperationType
+    /* 0 */ val OVERWRITE: typings.firebaseDatabase.operationMod.OperationType.OVERWRITE & Double = js.native
   }
   
-  @js.native
   trait Operation extends StObject {
     
     /**
       * @param {string} childName
       * @return {?Operation}
       */
-    def operationForChild(childName: String): Operation | Null = js.native
+    def operationForChild(childName: String): Operation | Null
     
     /**
       * @type {!Path}
       */
-    var path: Path = js.native
+    var path: Path
     
     /**
       * @type {!OperationSource}
       */
-    var source: OperationSource = js.native
+    var source: OperationSource
     
     /**
       * @type {!OperationType}
       */
-    var `type`: OperationType = js.native
+    var `type`: OperationType
   }
   object Operation {
     

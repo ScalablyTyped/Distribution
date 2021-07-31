@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binders {
@@ -24,7 +23,9 @@ object binders {
   object input {
     
     @js.native
-    trait checked extends TypedBinder {
+    trait checked
+      extends StObject
+         with TypedBinder {
       
       def change(): Unit = js.native
       
@@ -41,20 +42,24 @@ object binders {
     type source = typings.kendoUi.kendo.data.binders.source
     
     @js.native
-    trait value extends TypedBinder {
+    trait value
+      extends StObject
+         with TypedBinder {
       
       def change(): Unit = js.native
     }
   }
   
   @js.native
-  trait source extends Binder {
+  trait source
+    extends StObject
+       with Binder {
     
-    def add(index: Number, items: js.Array[_]): Unit = js.native
+    def add(index: Number, items: js.Array[js.Any]): Unit = js.native
     
     def container(): Element = js.native
     
-    def remove(index: Number, items: js.Array[_]): Unit = js.native
+    def remove(index: Number, items: js.Array[js.Any]): Unit = js.native
     
     def render(): Unit = js.native
     
@@ -66,7 +71,9 @@ object binders {
   type text = Binder
   
   @js.native
-  trait value extends TypedBinder {
+  trait value
+    extends StObject
+       with TypedBinder {
     
     def change(): Unit = js.native
   }
@@ -76,7 +83,9 @@ object binders {
   object widget {
     
     @js.native
-    trait checked extends Binder {
+    trait checked
+      extends StObject
+         with Binder {
       
       def change(): Unit = js.native
       
@@ -88,7 +97,9 @@ object binders {
     object dropdowntree {
       
       @js.native
-      trait value extends Binder {
+      trait value
+        extends StObject
+           with Binder {
         
         def change(): Unit = js.native
       }
@@ -97,7 +108,9 @@ object binders {
     type enabled = Binder
     
     @js.native
-    trait end extends Binder {
+    trait end
+      extends StObject
+         with Binder {
       
       def change(): Unit = js.native
     }
@@ -109,20 +122,26 @@ object binders {
     object multiselect {
       
       @js.native
-      trait value extends Binder {
+      trait value
+        extends StObject
+           with Binder {
         
         def change(): Unit = js.native
       }
     }
     
     @js.native
-    trait start extends Binder {
+    trait start
+      extends StObject
+         with Binder {
       
       def change(): Unit = js.native
     }
     
     @js.native
-    trait value extends Binder {
+    trait value
+      extends StObject
+         with Binder {
       
       def change(): Unit = js.native
     }

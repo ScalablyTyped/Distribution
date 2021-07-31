@@ -7,16 +7,18 @@ import typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionInputMod.Stop
 import typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionOutputMod.StopStreamEncryptionOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stopStreamEncryptionCommandMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/commands/StopStreamEncryptionCommand", "StopStreamEncryptionCommand")
   @js.native
-  class StopStreamEncryptionCommand protected () extends Command[
+  class StopStreamEncryptionCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           StopStreamEncryptionInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object stopStreamEncryptionCommandMod {
         ] {
     def this(input: StopStreamEncryptionInput) = this()
     
+    /* CompleteClass */
+    override val input: StopStreamEncryptionInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[StopStreamEncryptionInput, StopStreamEncryptionOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KinesisResolvedConfiguration
+    ): Handler[StopStreamEncryptionInput, StopStreamEncryptionOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: KinesisResolvedConfiguration,
+      options: js.Any
     ): Handler[StopStreamEncryptionInput, StopStreamEncryptionOutput] = js.native
   }
 }

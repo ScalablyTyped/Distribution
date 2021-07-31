@@ -37,14 +37,13 @@ import typings.fastifyError.mod.FastifyError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeMod {
   
-  @js.native
   trait RouteGenericInterface
-    extends RequestGenericInterface
+    extends StObject
+       with RequestGenericInterface
        with ReplyGenericInterface
   object RouteGenericInterface {
     
@@ -73,21 +72,50 @@ object routeMod {
     ])
   ]
   
-  @js.native
-  trait RouteOptions[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] extends RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] {
+  trait RouteOptions[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig]
+    extends StObject
+       with RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] {
     
     def handler(
       request: FastifyRequest[RouteGeneric, RawServer, RawRequest],
       reply: FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
     ): Unit | (js.Promise[
         (/* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Reply'] */ js.Any) | Unit
-      ]) = js.native
+      ])
     @JSName("handler")
-    var handler_Original: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = js.native
+    var handler_Original: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
     
-    var method: HTTPMethods | js.Array[HTTPMethods] = js.native
+    var method: HTTPMethods | js.Array[HTTPMethods]
     
-    var url: String = js.native
+    var url: String
+  }
+  object RouteOptions {
+    
+    @scala.inline
+    def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](
+      handler: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig],
+      method: HTTPMethods | js.Array[HTTPMethods],
+      url: String
+    ): RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = {
+      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]]
+    }
+    
+    @scala.inline
+    implicit class RouteOptionsMutableBuilder[Self <: RouteOptions[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] (val x: Self & (RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) extends AnyVal {
+      
+      @scala.inline
+      def setHandler(value: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMethod(value: HTTPMethods | js.Array[HTTPMethods]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMethodVarargs(value: HTTPMethods*): Self = StObject.set(x, "method", js.Array(value :_*))
+      
+      @scala.inline
+      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -108,14 +136,13 @@ object routeMod {
     ): FastifyInstance[RawServer, RawRequest, RawReply, FastifyLoggerInstance] = js.native
   }
   
-  @js.native
   trait RouteShorthandOptions[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] extends StObject {
     
-    var attachValidation: js.UndefOr[Boolean] = js.native
+    var attachValidation: js.UndefOr[Boolean] = js.undefined
     
-    var bodyLimit: js.UndefOr[Double] = js.native
+    var bodyLimit: js.UndefOr[Double] = js.undefined
     
-    var config: js.UndefOr[ContextConfig] = js.native
+    var config: js.UndefOr[ContextConfig] = js.undefined
     
     var errorHandler: js.UndefOr[
         js.ThisFunction3[
@@ -140,79 +167,79 @@ object routeMod {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var logLevel: js.UndefOr[LogLevel] = js.native
+    var logLevel: js.UndefOr[LogLevel] = js.undefined
     
     var onError: js.UndefOr[
         (onErrorHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError]) | (js.Array[
           onErrorHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError]
         ])
-      ] = js.native
+      ] = js.undefined
     
     // hooks
     var onRequest: js.UndefOr[
         (onRequestHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
           onRequestHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onResponse: js.UndefOr[
         (onResponseHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
           onResponseHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onSend: js.UndefOr[
-        (onSendHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
-          onSendHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
+        (onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
+          onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var onTimeout: js.UndefOr[
         (onTimeoutHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
           onTimeoutHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var preHandler: js.UndefOr[
         (preHandlerHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
           preHandlerHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var preParsing: js.UndefOr[
         (preParsingHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
           preParsingHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var preSerialization: js.UndefOr[
-        (preSerializationHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
-          preSerializationHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
+        (preSerializationHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
+          preSerializationHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var preValidation: js.UndefOr[
         (preValidationHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
           preValidationHookHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var prefixTrailingSlash: js.UndefOr[slash | `no-slash` | both] = js.native
+    var prefixTrailingSlash: js.UndefOr[slash | `no-slash` | both] = js.undefined
     
-    var schema: js.UndefOr[FastifySchema] = js.native
+    var schema: js.UndefOr[FastifySchema] = js.undefined
     
     // TODO: Change to actual type.
     var schemaErrorFormatter: js.UndefOr[
         js.Function2[/* errors */ js.Array[FastifySchemaValidationError], /* dataVar */ String, Error]
-      ] = js.native
+      ] = js.undefined
     
-    var serializerCompiler: js.UndefOr[FastifySchemaCompiler] = js.native
+    var serializerCompiler: js.UndefOr[FastifySchemaCompiler] = js.undefined
     
-    var validatorCompiler: js.UndefOr[FastifySchemaCompiler] = js.native
+    var validatorCompiler: js.UndefOr[FastifySchemaCompiler] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object RouteShorthandOptions {
     
@@ -223,7 +250,7 @@ object routeMod {
     }
     
     @scala.inline
-    implicit class RouteShorthandOptionsMutableBuilder[Self <: RouteShorthandOptions[_, _, _, _, _], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] (val x: Self with (RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) extends AnyVal {
+    implicit class RouteShorthandOptionsMutableBuilder[Self <: RouteShorthandOptions[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] (val x: Self & (RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) extends AnyVal {
       
       @scala.inline
       def setAttachValidation(value: Boolean): Self = StObject.set(x, "attachValidation", value.asInstanceOf[js.Any])
@@ -336,14 +363,14 @@ object routeMod {
       
       @scala.inline
       def setOnSend(
-        value: (onSendHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
-              onSendHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
+        value: (onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
+              onSendHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "onSend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSendFunction4(
-        value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], _, /* done */ DoneFuncWithErrOrRes) => Unit
+        value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], js.Any, /* done */ DoneFuncWithErrOrRes) => Unit
       ): Self = StObject.set(x, "onSend", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -412,14 +439,14 @@ object routeMod {
       
       @scala.inline
       def setPreSerialization(
-        value: (preSerializationHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
-              preSerializationHookHandler[_, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
+        value: (preSerializationHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) | (js.Array[
+              preSerializationHookHandler[js.Any, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
             ])
       ): Self = StObject.set(x, "preSerialization", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreSerializationFunction4(
-        value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], _, /* done */ DoneFuncWithErrOrRes) => Unit
+        value: (/* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], js.Any, /* done */ DoneFuncWithErrOrRes) => Unit
       ): Self = StObject.set(x, "preSerialization", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -486,16 +513,32 @@ object routeMod {
     }
   }
   
-  @js.native
-  trait RouteShorthandOptionsWithHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] extends RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] {
+  trait RouteShorthandOptionsWithHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig]
+    extends StObject
+       with RouteShorthandOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] {
     
     def handler(
       request: FastifyRequest[RouteGeneric, RawServer, RawRequest],
       reply: FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
     ): Unit | (js.Promise[
         (/* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Reply'] */ js.Any) | Unit
-      ]) = js.native
+      ])
     @JSName("handler")
-    var handler_Original: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = js.native
+    var handler_Original: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]
+  }
+  object RouteShorthandOptionsWithHandler {
+    
+    @scala.inline
+    def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig](handler: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig] = {
+      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]]
+    }
+    
+    @scala.inline
+    implicit class RouteShorthandOptionsWithHandlerMutableBuilder[Self <: RouteShorthandOptionsWithHandler[?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] (val x: Self & (RouteShorthandOptionsWithHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig])) extends AnyVal {
+      
+      @scala.inline
+      def setHandler(value: RouteHandlerMethod[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    }
   }
 }

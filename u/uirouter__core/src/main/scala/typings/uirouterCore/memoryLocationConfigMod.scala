@@ -3,14 +3,15 @@ package typings.uirouterCore
 import typings.uirouterCore.coreservicesMod.LocationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoryLocationConfigMod {
   
   @JSImport("@uirouter/core/lib/vanilla/memoryLocationConfig", "MemoryLocationConfig")
   @js.native
-  class MemoryLocationConfig () extends LocationConfig {
+  class MemoryLocationConfig ()
+    extends StObject
+       with LocationConfig {
     
     var _baseHref: String = js.native
     
@@ -23,7 +24,7 @@ object memoryLocationConfigMod {
     var _protocol: String = js.native
     
     @JSName("dispose")
-    var dispose_Original: js.Function0[_] = js.native
+    var dispose_Original: js.Function0[js.Any] = js.native
     
     def hashPrefix(newval: js.Any): js.Any = js.native
   }

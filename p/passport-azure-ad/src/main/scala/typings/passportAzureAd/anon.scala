@@ -2,19 +2,17 @@ package typings.passportAzureAd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FamilyName extends StObject {
     
-    var familyName: js.UndefOr[String] = js.native
+    var familyName: js.UndefOr[String] = js.undefined
     
-    var givenName: js.UndefOr[String] = js.native
+    var givenName: js.UndefOr[String] = js.undefined
     
-    var middleName: js.UndefOr[String] = js.native
+    var middleName: js.UndefOr[String] = js.undefined
   }
   object FamilyName {
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Iv extends StObject {
     
-    var iv: String = js.native
+    var iv: String
     
-    var key: String = js.native
+    var key: String
   }
   object Iv {
     

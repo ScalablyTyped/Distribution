@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventRiskType extends StObject {
   
   /**
     * Indicates whether compromised credentials were detected during an authentication event.
     */
-  var CompromisedCredentialsDetected: js.UndefOr[WrappedBooleanType] = js.native
+  var CompromisedCredentialsDetected: js.UndefOr[WrappedBooleanType] = js.undefined
   
   /**
     * The risk decision.
     */
-  var RiskDecision: js.UndefOr[RiskDecisionType] = js.native
+  var RiskDecision: js.UndefOr[RiskDecisionType] = js.undefined
   
   /**
     * The risk level.
     */
-  var RiskLevel: js.UndefOr[RiskLevelType] = js.native
+  var RiskLevel: js.UndefOr[RiskLevelType] = js.undefined
 }
 object EventRiskType {
   

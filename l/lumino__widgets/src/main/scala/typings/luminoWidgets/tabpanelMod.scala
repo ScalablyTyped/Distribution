@@ -10,7 +10,6 @@ import typings.luminoWidgets.tabpanelMod.TabPanel.TabPlacement
 import typings.luminoWidgets.widgetMod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabpanelMod {
@@ -175,34 +174,33 @@ object tabpanelMod {
     /**
       * The arguments object for the `currentChanged` signal.
       */
-    @js.native
     trait ICurrentChangedArgs extends StObject {
       
       /**
         * The currently selected index.
         */
-      var currentIndex: Double = js.native
+      var currentIndex: Double
       
       /**
         * The currently selected widget.
         */
-      var currentWidget: Widget | Null = js.native
+      var currentWidget: Widget | Null
       
       /**
         * The previously selected index.
         */
-      var previousIndex: Double = js.native
+      var previousIndex: Double
       
       /**
         * The previously selected widget.
         */
-      var previousWidget: Widget | Null = js.native
+      var previousWidget: Widget | Null
     }
     object ICurrentChangedArgs {
       
       @scala.inline
       def apply(currentIndex: Double, previousIndex: Double): ICurrentChangedArgs = {
-        val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any], currentWidget = null, previousWidget = null)
         __obj.asInstanceOf[ICurrentChangedArgs]
       }
       
@@ -232,7 +230,6 @@ object tabpanelMod {
     /**
       * An options object for initializing a tab panel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -240,21 +237,21 @@ object tabpanelMod {
         *
         * The default is a shared renderer instance.
         */
-      var renderer: js.UndefOr[IRenderer[Widget]] = js.native
+      var renderer: js.UndefOr[IRenderer[Widget]] = js.undefined
       
       /**
         * The placement of the tab bar relative to the content.
         *
         * The default is `'top'`.
         */
-      var tabPlacement: js.UndefOr[TabPlacement] = js.native
+      var tabPlacement: js.UndefOr[TabPlacement] = js.undefined
       
       /**
         * Whether the tabs are movable by the user.
         *
         * The default is `false`.
         */
-      var tabsMovable: js.UndefOr[Boolean] = js.native
+      var tabsMovable: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       

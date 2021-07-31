@@ -2,18 +2,16 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIndexFieldRequest extends StObject {
   
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
   
   /**
     * The name of the index field your want to remove from the domain's indexing options.
     */
-  var IndexFieldName: DynamicFieldName = js.native
+  var IndexFieldName: DynamicFieldName
 }
 object DeleteIndexFieldRequest {
   

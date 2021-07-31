@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,13 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * restrict the set of results to only those items indexed with the value
   * *p0*.
   */
-@js.native
 trait SchemaEnumPropertyOptions extends StObject {
   
   /**
     * If set, describes how the enum should be used as a search operator.
     */
-  var operatorOptions: js.UndefOr[SchemaEnumOperatorOptions] = js.native
+  var operatorOptions: js.UndefOr[SchemaEnumOperatorOptions] = js.undefined
   
   /**
     * Used to specify the ordered ranking for the enumeration that determines
@@ -31,7 +29,7 @@ trait SchemaEnumPropertyOptions extends StObject {
     * possible EnumValuePair values given for this property. Can only be used
     * if isRepeatable is false.
     */
-  var orderedRanking: js.UndefOr[String] = js.native
+  var orderedRanking: js.UndefOr[String] = js.undefined
   
   /**
     * The list of possible values for the enumeration property. All
@@ -44,7 +42,7 @@ trait SchemaEnumPropertyOptions extends StObject {
     * integer values to allow adding a value in between previously registered
     * values. The maximum number of elements is 100.
     */
-  var possibleValues: js.UndefOr[js.Array[SchemaEnumValuePair]] = js.native
+  var possibleValues: js.UndefOr[js.Array[SchemaEnumValuePair]] = js.undefined
 }
 object SchemaEnumPropertyOptions {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SipRuleTargetApplication extends StObject {
   
   /**
     * AWS Region of target application.
     */
-  var AwsRegion: js.UndefOr[String] = js.native
+  var AwsRegion: js.UndefOr[String] = js.undefined
   
   /**
     * Priority of the SIP media application in the target list.
     */
-  var Priority: js.UndefOr[SipApplicationPriority] = js.native
+  var Priority: js.UndefOr[SipApplicationPriority] = js.undefined
   
   /**
     * The SIP media application ID.
     */
-  var SipMediaApplicationId: js.UndefOr[NonEmptyString] = js.native
+  var SipMediaApplicationId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object SipRuleTargetApplication {
   

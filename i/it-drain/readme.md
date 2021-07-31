@@ -10,9 +10,9 @@ Empties an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-drain |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 82058 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 265125 |
 | # stars            | 0 |
 
 ## Links

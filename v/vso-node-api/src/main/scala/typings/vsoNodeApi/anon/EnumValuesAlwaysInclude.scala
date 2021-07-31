@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesAlwaysInclude extends StObject {
   
-  var enumValues: AlwaysInclude = js.native
+  var enumValues: AlwaysInclude
 }
 object EnumValuesAlwaysInclude {
   

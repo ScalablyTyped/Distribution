@@ -2,15 +2,13 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolarCoordinates extends StObject {
   
-  var phi: Double = js.native
+  var phi: Double
   
-  var r: Double = js.native
+  var r: Double
 }
 object PolarCoordinates {
   

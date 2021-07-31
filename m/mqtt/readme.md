@@ -10,9 +10,9 @@ A library for the MQTT protocol
 | ------------------ | :-------------: |
 | Full name          | mqtt |
 | Keywords           | mqtt, publish/subscribe, publish, subscribe |
-| # releases         | 9 |
-| # dependents       | 1256 |
-| # downloads        | 8387341 |
+| # releases         | 13 |
+| # dependents       | 1335 |
+| # downloads        | 9295990 |
 | # stars            | 87 |
 
 ## Links

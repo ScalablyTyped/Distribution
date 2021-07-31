@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwitchStatement extends Statement {
+trait SwitchStatement
+  extends StObject
+     with Statement {
   
   val caseBlock: CaseBlock = js.native
   

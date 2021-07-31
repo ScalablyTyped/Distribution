@@ -2,10 +2,8 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnifiedTopologyOptions extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait UnifiedTopologyOptions extends StObject {
     * The frequency with which topology updates are scheduled
     * @default 10000
     */
-  var heartbeatFrequencyMS: js.UndefOr[scala.Double] = js.native
+  var heartbeatFrequencyMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * **Only applies to the unified topology**
     * The size of the latency window for selecting among multiple suitable servers
     * @default 15
     */
-  var localThresholdMS: js.UndefOr[scala.Double] = js.native
+  var localThresholdMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * **Only applies to the unified topology**
     * The maximum amount of time a connection should remain idle in the connection pool before being marked idle.
     * @default Infinity
     */
-  var maxIdleTimeMS: js.UndefOr[scala.Double] = js.native
+  var maxIdleTimeMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     *  **Only applies to the unified topology**
@@ -35,26 +33,26 @@ trait UnifiedTopologyOptions extends StObject {
     * This includes in use and available connections
     * @default 10
     */
-  var maxPoolSize: js.UndefOr[scala.Double] = js.native
+  var maxPoolSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * **Only applies to the unified topology**
     * The minimum number of connections that MUST exist at any moment in a single connection pool.
     * @default 0
     */
-  var minPoolSize: js.UndefOr[scala.Double] = js.native
+  var minPoolSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * With `useUnifiedTopology`, the MongoDB driver will try to find a server to send any given operation to
     * and keep retrying for `serverSelectionTimeoutMS` milliseconds.
     * Default: 30000
     */
-  var serverSelectionTimeoutMS: js.UndefOr[scala.Double] = js.native
+  var serverSelectionTimeoutMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Enables the new unified topology layer
     */
-  var useUnifiedTopology: js.UndefOr[Boolean] = js.native
+  var useUnifiedTopology: js.UndefOr[Boolean] = js.undefined
   
   /**
     * **Only applies to the unified topology**
@@ -62,7 +60,7 @@ trait UnifiedTopologyOptions extends StObject {
     * The default is 0 which means there is no limit.
     * @default 0
     */
-  var waitQueueTimeoutMS: js.UndefOr[scala.Double] = js.native
+  var waitQueueTimeoutMS: js.UndefOr[scala.Double] = js.undefined
 }
 object UnifiedTopologyOptions {
   

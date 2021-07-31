@@ -2,7 +2,6 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amCoordinateChartMod {
@@ -158,6 +157,6 @@ object amCoordinateChartMod {
       * adding/removing axes directly to array.
       * Chart creates one value axis automatically, so if you need only one value axis, you don't need to create it.
       */
-    var valueAxes: js.Array[_] = js.native
+    var valueAxes: js.Array[js.Any] = js.native
   }
 }

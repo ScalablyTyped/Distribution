@@ -2,10 +2,13 @@ package typings.builderUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object archMod {
+  
+  @JSImport("builder-util/out/arch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait Arch extends StObject
@@ -14,44 +17,47 @@ object archMod {
   object Arch extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Arch with Double] = js.native
+    def apply(value: Double): js.UndefOr[Arch & Double] = js.native
     
     @js.native
-    sealed trait arm64 extends Arch
-    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 with Double = js.native
+    sealed trait arm64
+      extends StObject
+         with Arch
+    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 & Double = js.native
     
     @js.native
-    sealed trait armv7l extends Arch
-    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l with Double = js.native
+    sealed trait armv7l
+      extends StObject
+         with Arch
+    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l & Double = js.native
     
     @js.native
-    sealed trait ia32 extends Arch
-    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 with Double = js.native
+    sealed trait ia32
+      extends StObject
+         with Arch
+    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 & Double = js.native
     
     @js.native
-    sealed trait x64 extends Arch
-    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 with Double = js.native
+    sealed trait x64
+      extends StObject
+         with Arch
+    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
   }
   
-  @JSImport("builder-util/out/arch", "archFromString")
-  @js.native
-  def archFromString(name: String): Arch = js.native
+  @scala.inline
+  def archFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("archFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]
   
-  @JSImport("builder-util/out/arch", "getArchCliNames")
-  @js.native
-  def getArchCliNames(): js.Array[String] = js.native
+  @scala.inline
+  def getArchCliNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchCliNames")().asInstanceOf[js.Array[String]]
   
-  @JSImport("builder-util/out/arch", "getArchSuffix")
-  @js.native
-  def getArchSuffix(arch: Arch): String = js.native
+  @scala.inline
+  def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("builder-util/out/arch", "getArtifactArchName")
-  @js.native
-  def getArtifactArchName(arch: Arch, ext: String): String = js.native
+  @scala.inline
+  def getArtifactArchName(arch: Arch, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getArtifactArchName")(arch.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("builder-util/out/arch", "toLinuxArchString")
-  @js.native
-  def toLinuxArchString(arch: Arch, targetName: String): String = js.native
+  @scala.inline
+  def toLinuxArchString(arch: Arch, targetName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLinuxArchString")(arch.asInstanceOf[js.Any], targetName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.builderUtil.builderUtilStrings.x64

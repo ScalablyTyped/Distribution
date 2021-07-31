@@ -2,19 +2,17 @@ package typings.materialSwitch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ARIACHECKEDATTR extends StObject {
     
-    var ARIA_CHECKED_ATTR: String = js.native
+    var ARIA_CHECKED_ATTR: String
     
-    var NATIVE_CONTROL_SELECTOR: String = js.native
+    var NATIVE_CONTROL_SELECTOR: String
     
-    var RIPPLE_SURFACE_SELECTOR: String = js.native
+    var RIPPLE_SURFACE_SELECTOR: String
   }
   object ARIACHECKEDATTR {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CHECKED extends StObject {
     
-    var CHECKED: String = js.native
+    var CHECKED: String
     
-    var DISABLED: String = js.native
+    var DISABLED: String
   }
   object CHECKED {
     
@@ -65,18 +62,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/switch.@material/switch/adapter.MDCSwitchAdapter> */
-  @js.native
   trait PartialMDCSwitchAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setNativeControlAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setNativeControlAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var setNativeControlChecked: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+    var setNativeControlChecked: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
     
-    var setNativeControlDisabled: js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]] = js.native
+    var setNativeControlDisabled: js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]] = js.undefined
   }
   object PartialMDCSwitchAdapter {
     

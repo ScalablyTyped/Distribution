@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Accounts to search
   */
-@js.native
 trait SchemaHangoutsChatInfo extends StObject {
   
   /**
     * A set of rooms to search.
     */
-  var roomId: js.UndefOr[js.Array[String]] = js.native
+  var roomId: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaHangoutsChatInfo {
   

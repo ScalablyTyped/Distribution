@@ -4,42 +4,67 @@ import typings.semanticUiReactEventStack.typesMod.EventListeners
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventSetMod {
   
   @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventSet", JSImport.Default)
   @js.native
-  class default protected () extends EventSet {
+  class default protected ()
+    extends StObject
+       with EventSet {
     /**
       * @see https://jsperf.com/suir-eventset-constructor
       */
     def this(eventHandlers: EventListeners) = this()
-  }
-  
-  @js.native
-  trait EventSet extends StObject {
     
     /**
       * @see https://jsperf.com/suir-eventset-addhandlers
       */
-    def addHandlers(additionalHandlers: EventListeners): EventSet = js.native
+    /* CompleteClass */
+    override def addHandlers(additionalHandlers: EventListeners): EventSet = js.native
     
     /**
       * @see https://jsperf.com/suir-eventset-dispatchsingle
       * @see https://jsperf.com/suir-eventset-dispatchmultiple2
       */
-    def dispatchEvent(event: Event, dispatchAll: Boolean): Unit = js.native
+    /* CompleteClass */
+    override def dispatchEvent(event: Event, dispatchAll: Boolean): Unit = js.native
     
-    val handlers: js.Any = js.native
+    /* CompleteClass */
+    override val handlers: js.Any = js.native
     
-    def hasHandlers(): Boolean = js.native
+    /* CompleteClass */
+    override def hasHandlers(): Boolean = js.native
     
     /**
       * @see https://jsperf.com/suir-eventset-removehandlers
       */
-    def removeHandlers(removalHandlers: EventListeners): EventSet = js.native
+    /* CompleteClass */
+    override def removeHandlers(removalHandlers: EventListeners): EventSet = js.native
+  }
+  
+  trait EventSet extends StObject {
+    
+    /**
+      * @see https://jsperf.com/suir-eventset-addhandlers
+      */
+    def addHandlers(additionalHandlers: EventListeners): EventSet
+    
+    /**
+      * @see https://jsperf.com/suir-eventset-dispatchsingle
+      * @see https://jsperf.com/suir-eventset-dispatchmultiple2
+      */
+    def dispatchEvent(event: Event, dispatchAll: Boolean): Unit
+    
+    val handlers: js.Any
+    
+    def hasHandlers(): Boolean
+    
+    /**
+      * @see https://jsperf.com/suir-eventset-removehandlers
+      */
+    def removeHandlers(removalHandlers: EventListeners): EventSet
   }
   object EventSet {
     

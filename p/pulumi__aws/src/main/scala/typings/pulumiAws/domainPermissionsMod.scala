@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainPermissionsMod {
@@ -53,6 +52,10 @@ object domainPermissionsMod {
   /* static members */
   object DomainPermissions {
     
+    @JSImport("@pulumi/aws/codeartifact/domainPermissions", "DomainPermissions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DomainPermissions resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,50 +65,44 @@ object domainPermissionsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codeartifact/domainPermissions", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DomainPermissions = js.native
-    @JSImport("@pulumi/aws/codeartifact/domainPermissions", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainPermissions = js.native
-    @JSImport("@pulumi/aws/codeartifact/domainPermissions", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainPermissionsState): DomainPermissions = js.native
-    @JSImport("@pulumi/aws/codeartifact/domainPermissions", "DomainPermissions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainPermissionsState, opts: CustomResourceOptions): DomainPermissions = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainPermissionsState): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainPermissionsState, opts: CustomResourceOptions): DomainPermissions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainPermissions]
     
     /**
       * Returns true if the given object is an instance of DomainPermissions.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codeartifact/domainPermissions", "DomainPermissions.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/domainPermissions.DomainPermissions */ Boolean]
   }
   
-  @js.native
   trait DomainPermissionsArgs extends StObject {
     
     /**
       * The name of the domain on which to set the resource policy.
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[Input[String]] = js.native
+    val domainOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A JSON policy string to be set as the access control resource policy on the provided domain.
       */
-    val policyDocument: Input[String] = js.native
+    val policyDocument: Input[String]
     
     /**
       * The current revision of the resource policy to be set. This revision is used for optimistic locking, which prevents others from overwriting your changes to the domain's resource policy.
       */
-    val policyRevision: js.UndefOr[Input[String]] = js.native
+    val policyRevision: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainPermissionsArgs {
     
@@ -138,33 +135,32 @@ object domainPermissionsMod {
     }
   }
   
-  @js.native
   trait DomainPermissionsState extends StObject {
     
     /**
       * The name of the domain on which to set the resource policy.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[Input[String]] = js.native
+    val domainOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A JSON policy string to be set as the access control resource policy on the provided domain.
       */
-    val policyDocument: js.UndefOr[Input[String]] = js.native
+    val policyDocument: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The current revision of the resource policy to be set. This revision is used for optimistic locking, which prevents others from overwriting your changes to the domain's resource policy.
       */
-    val policyRevision: js.UndefOr[Input[String]] = js.native
+    val policyRevision: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the resource associated with the resource policy.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainPermissionsState {
     

@@ -10,10 +10,13 @@ import typings.wordpressBlocks.mod.BlockInstance
 import typings.wordpressBlocks.wordpressBlocksStrings.BlockContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockContentProviderMod {
+  
+  @JSImport("@wordpress/blocks/block-content-provider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default extends Shortcut {
     
@@ -27,23 +30,21 @@ object blockContentProviderMod {
     override def _to: ComponentType[Props] = ^
   }
   
-  @JSImport("@wordpress/blocks/block-content-provider", "withBlockContentContext")
-  @js.native
-  def withBlockContentContext[T /* <: ComponentType[_] */](wrapped: T): ComponentType[Omit[_, BlockContent]] = js.native
+  @scala.inline
+  def withBlockContentContext[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, BlockContent]]]
   
   object BlockContentProvider {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var innerBlocks: js.Array[BlockInstance[StringDictionary[_]]] = js.native
+      var innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]
     }
     object Props {
       
       @scala.inline
-      def apply(innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]): Props = {
+      def apply(innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Props = {
         val __obj = js.Dynamic.literal(innerBlocks = innerBlocks.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
@@ -58,7 +59,7 @@ object blockContentProviderMod {
         def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
         @scala.inline
-        def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[_]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+        def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))

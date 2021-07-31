@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugRuleConfiguration extends StObject {
   
   /**
     * The instance type to deploy for a training job.
     */
-  var InstanceType: js.UndefOr[ProcessingInstanceType] = js.native
+  var InstanceType: js.UndefOr[ProcessingInstanceType] = js.undefined
   
   /**
     * Path to local storage location for output of rules. Defaults to /opt/ml/processing/output/rule/.
     */
-  var LocalPath: js.UndefOr[DirectoryPath] = js.native
+  var LocalPath: js.UndefOr[DirectoryPath] = js.undefined
   
   /**
     * The name of the rule configuration. It must be unique relative to other rule configuration names.
     */
-  var RuleConfigurationName: typings.awsSdk.sagemakerMod.RuleConfigurationName = js.native
+  var RuleConfigurationName: typings.awsSdk.sagemakerMod.RuleConfigurationName
   
   /**
     * The Amazon Elastic Container (ECR) Image for the managed rule evaluation.
     */
-  var RuleEvaluatorImage: AlgorithmImage = js.native
+  var RuleEvaluatorImage: AlgorithmImage
   
   /**
     *  Runtime configuration for rule container.
     */
-  var RuleParameters: js.UndefOr[typings.awsSdk.sagemakerMod.RuleParameters] = js.native
+  var RuleParameters: js.UndefOr[typings.awsSdk.sagemakerMod.RuleParameters] = js.undefined
   
   /**
     * Path to Amazon S3 storage location for rules.
     */
-  var S3OutputPath: js.UndefOr[S3Uri] = js.native
+  var S3OutputPath: js.UndefOr[S3Uri] = js.undefined
   
   /**
     * The size, in GB, of the ML storage volume attached to the processing instance.
     */
-  var VolumeSizeInGB: js.UndefOr[OptionalVolumeSizeInGB] = js.native
+  var VolumeSizeInGB: js.UndefOr[OptionalVolumeSizeInGB] = js.undefined
 }
 object DebugRuleConfiguration {
   

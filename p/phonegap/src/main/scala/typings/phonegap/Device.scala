@@ -2,27 +2,25 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
-  var available: Boolean = js.native
+  var available: Boolean
   
-  var capture: Capture = js.native
+  var capture: Capture
   
-  var cordova: String = js.native
+  var cordova: String
   
-  var model: String = js.native
+  var model: String
   
-  var name: String = js.native
+  var name: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var version: String = js.native
+  var version: String
 }
 object Device {
   

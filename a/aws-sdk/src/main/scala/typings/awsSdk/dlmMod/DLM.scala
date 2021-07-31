@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DLM extends Service {
   
   @JSName("config")
-  var config_DLM: ConfigBase with ClientConfiguration = js.native
+  var config_DLM: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a policy to manage the lifecycle of the specified AWS resources. You can create up to 100 lifecycle policies.

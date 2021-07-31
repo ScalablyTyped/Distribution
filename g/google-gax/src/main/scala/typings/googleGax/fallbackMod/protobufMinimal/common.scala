@@ -4,14 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.INamespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object common {
   
+  @scala.inline
+  def apply(name: String, json: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("google-gax/build/src/fallback", "protobufMinimal.common")
   @js.native
-  def apply(name: String, json: StringDictionary[js.Any]): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets the root definition of the specified common proto file.
@@ -28,7 +30,6 @@ object common {
     * @param file Proto file name
     * @returns Root definition or `null` if not defined
     */
-  @JSImport("google-gax/build/src/fallback", "protobufMinimal.common.get")
-  @js.native
-  def get(file: String): INamespace | Null = js.native
+  @scala.inline
+  def get(file: String): INamespace | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(file.asInstanceOf[js.Any]).asInstanceOf[INamespace | Null]
 }

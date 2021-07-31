@@ -2,32 +2,30 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxTreeValue extends StObject {
   
   /**
     * Attribute dimension values.
     */
-  var qAttrDims: js.UndefOr[INxAttributeDimValues] = js.native
+  var qAttrDims: js.UndefOr[INxAttributeDimValues] = js.undefined
   
   /**
     * Attribute expression values.
     */
-  var qAttrExps: js.UndefOr[INxAttributeExpressionValues] = js.native
+  var qAttrExps: js.UndefOr[INxAttributeExpressionValues] = js.undefined
   
   /**
     * The text version of the value, if available.
     */
-  var qText: String = js.native
+  var qText: String
   
   /**
     * Value of the cell.
     * Is set to NaN, if the value is not a number.
     */
-  var qValue: Double = js.native
+  var qValue: Double
 }
 object INxTreeValue {
   

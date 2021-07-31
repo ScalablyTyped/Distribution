@@ -2,26 +2,24 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServersRequest extends StObject {
   
   /**
     * This is not currently implemented for DescribeServers requests. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.opsworkscmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.opsworkscmMod.MaxResults] = js.undefined
   
   /**
     * This is not currently implemented for DescribeServers requests. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.opsworkscmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.opsworkscmMod.NextToken] = js.undefined
   
   /**
     * Describes the server with the specified ServerName.
     */
-  var ServerName: js.UndefOr[typings.awsSdk.opsworkscmMod.ServerName] = js.native
+  var ServerName: js.UndefOr[typings.awsSdk.opsworkscmMod.ServerName] = js.undefined
 }
 object DescribeServersRequest {
   

@@ -3,15 +3,13 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.MarginType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Level extends StObject {
   
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[MarginType] = js.native
+  var margin: js.UndefOr[MarginType] = js.undefined
 }
 object Level {
   

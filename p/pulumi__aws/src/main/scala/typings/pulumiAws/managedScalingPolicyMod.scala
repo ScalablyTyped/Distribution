@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object managedScalingPolicyMod {
@@ -39,6 +38,10 @@ object managedScalingPolicyMod {
   /* static members */
   object ManagedScalingPolicy {
     
+    @JSImport("@pulumi/aws/emr/managedScalingPolicy", "ManagedScalingPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ManagedScalingPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object managedScalingPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/emr/managedScalingPolicy", "ManagedScalingPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ManagedScalingPolicy = js.native
-    @JSImport("@pulumi/aws/emr/managedScalingPolicy", "ManagedScalingPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ManagedScalingPolicy = js.native
-    @JSImport("@pulumi/aws/emr/managedScalingPolicy", "ManagedScalingPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ManagedScalingPolicyState): ManagedScalingPolicy = js.native
-    @JSImport("@pulumi/aws/emr/managedScalingPolicy", "ManagedScalingPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ManagedScalingPolicyState, opts: CustomResourceOptions): ManagedScalingPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ManagedScalingPolicyState): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ManagedScalingPolicyState, opts: CustomResourceOptions): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
     
     /**
       * Returns true if the given object is an instance of ManagedScalingPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/emr/managedScalingPolicy", "ManagedScalingPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/managedScalingPolicy.ManagedScalingPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/managedScalingPolicy.ManagedScalingPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/emr/managedScalingPolicy.ManagedScalingPolicy */ Boolean]
   }
   
-  @js.native
   trait ManagedScalingPolicyArgs extends StObject {
     
     /**
       * The id of the EMR cluster
       */
-    val clusterId: Input[String] = js.native
+    val clusterId: Input[String]
     
     /**
       * Configuration block with compute limit settings. Described below.
       */
-    val computeLimits: Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]] = js.native
+    val computeLimits: Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]]
   }
   object ManagedScalingPolicyArgs {
     
@@ -108,20 +105,19 @@ object managedScalingPolicyMod {
     }
   }
   
-  @js.native
   trait ManagedScalingPolicyState extends StObject {
     
     /**
       * The id of the EMR cluster
       */
-    val clusterId: js.UndefOr[Input[String]] = js.native
+    val clusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with compute limit settings. Described below.
       */
     val computeLimits: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]]
-      ] = js.native
+      ] = js.undefined
   }
   object ManagedScalingPolicyState {
     

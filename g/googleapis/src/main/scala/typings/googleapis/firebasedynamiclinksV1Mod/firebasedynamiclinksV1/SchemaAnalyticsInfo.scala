@@ -2,24 +2,22 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tracking parameters supported by Dynamic Link.
   */
-@js.native
 trait SchemaAnalyticsInfo extends StObject {
   
   /**
     * Google Play Campaign Measurements.
     */
-  var googlePlayAnalytics: js.UndefOr[SchemaGooglePlayAnalytics] = js.native
+  var googlePlayAnalytics: js.UndefOr[SchemaGooglePlayAnalytics] = js.undefined
   
   /**
     * iTunes Connect App Analytics.
     */
-  var itunesConnectAnalytics: js.UndefOr[SchemaITunesConnectAnalytics] = js.native
+  var itunesConnectAnalytics: js.UndefOr[SchemaITunesConnectAnalytics] = js.undefined
 }
 object SchemaAnalyticsInfo {
   

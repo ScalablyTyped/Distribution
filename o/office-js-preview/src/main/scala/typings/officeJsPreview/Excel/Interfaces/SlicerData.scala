@@ -6,11 +6,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.DataSourceOrder
 import typings.officeJsPreview.officeJsPreviewStrings.Descending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `slicer.toJSON()`. */
-@js.native
 trait SlicerData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var isFilterCleared: js.UndefOr[Boolean] = js.native
+  var isFilterCleared: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -53,7 +51,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -70,7 +68,7 @@ trait SlicerData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var nameInFormula: js.UndefOr[String] = js.native
+  var nameInFormula: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -78,7 +76,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var slicerItems: js.UndefOr[js.Array[SlicerItemData]] = js.native
+  var slicerItems: js.UndefOr[js.Array[SlicerItemData]] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait SlicerData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var slicerStyle: js.UndefOr[SlicerStyleData] = js.native
+  var slicerStyle: js.UndefOr[SlicerStyleData] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var sortBy: js.UndefOr[SlicerSortType | DataSourceOrder | Ascending | Descending] = js.native
+  var sortBy: js.UndefOr[SlicerSortType | DataSourceOrder | Ascending | Descending] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -112,7 +110,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -121,7 +119,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -129,7 +127,7 @@ trait SlicerData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var worksheet: js.UndefOr[WorksheetData] = js.native
+  var worksheet: js.UndefOr[WorksheetData] = js.undefined
 }
 object SlicerData {
   

@@ -6,48 +6,63 @@ import typings.scrivito.mod.ObjSearchOperator
 import typings.scrivito.mod._ObjSearchSingleAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrivitoStrings {
   
   @js.native
-  sealed trait Asterisk extends _ObjSearchSingleAttribute
+  sealed trait Asterisk
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait MetadataCollection extends _ObjSearchSingleAttribute
+  sealed trait MetadataCollection
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def MetadataCollection: MetadataCollection = "MetadataCollection".asInstanceOf[MetadataCollection]
   
   @js.native
-  sealed trait _createdAt extends _ObjSearchSingleAttribute
+  sealed trait _createdAt
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def _createdAt: _createdAt = "_createdAt".asInstanceOf[_createdAt]
   
   @js.native
-  sealed trait _lastChanged extends _ObjSearchSingleAttribute
+  sealed trait _lastChanged
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def _lastChanged: _lastChanged = "_lastChanged".asInstanceOf[_lastChanged]
   
   @js.native
-  sealed trait _objClass extends _ObjSearchSingleAttribute
+  sealed trait _objClass
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def _objClass: _objClass = "_objClass".asInstanceOf[_objClass]
   
   @js.native
-  sealed trait _path extends _ObjSearchSingleAttribute
+  sealed trait _path
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def _path: _path = "_path".asInstanceOf[_path]
   
   @js.native
-  sealed trait _permalink extends _ObjSearchSingleAttribute
+  sealed trait _permalink
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def _permalink: _permalink = "_permalink".asInstanceOf[_permalink]
   
   @js.native
-  sealed trait _restriction extends _ObjSearchSingleAttribute
+  sealed trait _restriction
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def _restriction: _restriction = "_restriction".asInstanceOf[_restriction]
   
@@ -57,12 +72,16 @@ object scrivitoStrings {
   def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
-  sealed trait binary extends Attribute
+  sealed trait binary
+    extends StObject
+       with Attribute
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait blobColontext extends ExtractableTextAttributes
+  sealed trait blobColontext
+    extends StObject
+       with ExtractableTextAttributes
   @scala.inline
   def blobColontext: blobColontext = "blob:text".asInstanceOf[blobColontext]
   
@@ -77,12 +96,16 @@ object scrivitoStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait contains extends ObjSearchOperator
+  sealed trait contains
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
   
   @js.native
-  sealed trait containsPrefix extends ObjSearchOperator
+  sealed trait containsPrefix
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def containsPrefix: containsPrefix = "containsPrefix".asInstanceOf[containsPrefix]
   
@@ -92,12 +115,16 @@ object scrivitoStrings {
   def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
-  sealed trait date extends Attribute
+  sealed trait date
+    extends StObject
+       with Attribute
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait datetime extends Attribute
+  sealed trait datetime
+    extends StObject
+       with Attribute
   @scala.inline
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   
@@ -107,44 +134,59 @@ object scrivitoStrings {
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait enum extends Attribute
+  sealed trait `enum`
+    extends StObject
+       with Attribute
   @scala.inline
-  def enum: enum = "enum".asInstanceOf[enum]
+  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
-  sealed trait equals extends ObjSearchOperator
+  sealed trait equals
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def equals: equals = "equals".asInstanceOf[equals]
   
   @js.native
-  sealed trait float extends Attribute
+  sealed trait float
+    extends StObject
+       with Attribute
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait html
-    extends Attribute
+    extends StObject
+       with Attribute
        with ExtractableTextAttributes
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait id extends _ObjSearchSingleAttribute
+  sealed trait id
+    extends StObject
+       with _ObjSearchSingleAttribute
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait integer extends Attribute
+  sealed trait integer
+    extends StObject
+       with Attribute
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait isGreaterThan extends ObjSearchOperator
+  sealed trait isGreaterThan
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def isGreaterThan: isGreaterThan = "isGreaterThan".asInstanceOf[isGreaterThan]
   
   @js.native
-  sealed trait isLessThan extends ObjSearchOperator
+  sealed trait isLessThan
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def isLessThan: isLessThan = "isLessThan".asInstanceOf[isLessThan]
   
@@ -154,37 +196,51 @@ object scrivitoStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait link extends Attribute
+  sealed trait link
+    extends StObject
+       with Attribute
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait linklist extends Attribute
+  sealed trait linklist
+    extends StObject
+       with Attribute
   @scala.inline
   def linklist: linklist = "linklist".asInstanceOf[linklist]
   
   @js.native
-  sealed trait linksTo extends ObjSearchOperator
+  sealed trait linksTo
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def linksTo: linksTo = "linksTo".asInstanceOf[linksTo]
   
   @js.native
-  sealed trait multienum extends Attribute
+  sealed trait multienum
+    extends StObject
+       with Attribute
   @scala.inline
   def multienum: multienum = "multienum".asInstanceOf[multienum]
   
   @js.native
-  sealed trait reference extends Attribute
+  sealed trait reference
+    extends StObject
+       with Attribute
   @scala.inline
   def reference: reference = "reference".asInstanceOf[reference]
   
   @js.native
-  sealed trait referencelist extends Attribute
+  sealed trait referencelist
+    extends StObject
+       with Attribute
   @scala.inline
   def referencelist: referencelist = "referencelist".asInstanceOf[referencelist]
   
   @js.native
-  sealed trait refersTo extends ObjSearchOperator
+  sealed trait refersTo
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def refersTo: refersTo = "refersTo".asInstanceOf[refersTo]
   
@@ -199,19 +255,24 @@ object scrivitoStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait startsWith extends ObjSearchOperator
+  sealed trait startsWith
+    extends StObject
+       with ObjSearchOperator
   @scala.inline
   def startsWith: startsWith = "startsWith".asInstanceOf[startsWith]
   
   @js.native
   sealed trait string
-    extends Attribute
+    extends StObject
+       with Attribute
        with ExtractableTextAttributes
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait stringlist extends Attribute
+  sealed trait stringlist
+    extends StObject
+       with Attribute
   @scala.inline
   def stringlist: stringlist = "stringlist".asInstanceOf[stringlist]
   
@@ -222,7 +283,8 @@ object scrivitoStrings {
   
   @js.native
   sealed trait widgetlist
-    extends Attribute
+    extends StObject
+       with Attribute
        with ExtractableTextAttributes
   @scala.inline
   def widgetlist: widgetlist = "widgetlist".asInstanceOf[widgetlist]

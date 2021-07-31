@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachedFromTargetEvent extends StObject {
   
   /**
     * Detached session identifier.
     */
-  var sessionId: SessionID = js.native
+  var sessionId: SessionID
   
   /**
     * Deprecated.
     */
-  var targetId: js.UndefOr[TargetID] = js.native
+  var targetId: js.UndefOr[TargetID] = js.undefined
 }
 object DetachedFromTargetEvent {
   

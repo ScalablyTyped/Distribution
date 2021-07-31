@@ -3,16 +3,14 @@ package typings.semanticUiApi.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-api.SemanticUI.Api.RegExpSettings._Impl, keyof semantic-ui-api.SemanticUI.Api.RegExpSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplOptional extends StObject {
   
-  var optional: js.UndefOr[RegExp] = js.native
+  var optional: js.UndefOr[RegExp] = js.undefined
   
-  var required: js.UndefOr[RegExp] = js.native
+  var required: js.UndefOr[RegExp] = js.undefined
 }
 object PartialPickImplkeyofImplOptional {
   

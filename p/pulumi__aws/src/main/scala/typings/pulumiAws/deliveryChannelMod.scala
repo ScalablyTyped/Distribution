@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deliveryChannelMod {
@@ -54,6 +53,10 @@ object deliveryChannelMod {
   /* static members */
   object DeliveryChannel {
     
+    @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DeliveryChannel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,55 +66,49 @@ object deliveryChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DeliveryChannel = js.native
-    @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DeliveryChannel = js.native
-    @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeliveryChannelState): DeliveryChannel = js.native
-    @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeliveryChannelState, opts: CustomResourceOptions): DeliveryChannel = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeliveryChannelState): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeliveryChannelState, opts: CustomResourceOptions): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
     
     /**
       * Returns true if the given object is an instance of DeliveryChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean]
   }
   
-  @js.native
   trait DeliveryChannelArgs extends StObject {
     
     /**
       * The name of the delivery channel. Defaults to `default`. Changing it recreates the resource.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the S3 bucket used to store the configuration history.
       */
-    val s3BucketName: Input[String] = js.native
+    val s3BucketName: Input[String]
     
     /**
       * The prefix for the specified S3 bucket.
       */
-    val s3KeyPrefix: js.UndefOr[Input[String]] = js.native
+    val s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Options for how AWS Config delivers configuration snapshots. See below
       */
-    val snapshotDeliveryProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]] = js.native
+    val snapshotDeliveryProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]] = js.undefined
     
     /**
       * The ARN of the SNS topic that AWS Config delivers notifications to.
       */
-    val snsTopicArn: js.UndefOr[Input[String]] = js.native
+    val snsTopicArn: js.UndefOr[Input[String]] = js.undefined
   }
   object DeliveryChannelArgs {
     
@@ -153,33 +150,32 @@ object deliveryChannelMod {
     }
   }
   
-  @js.native
   trait DeliveryChannelState extends StObject {
     
     /**
       * The name of the delivery channel. Defaults to `default`. Changing it recreates the resource.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the S3 bucket used to store the configuration history.
       */
-    val s3BucketName: js.UndefOr[Input[String]] = js.native
+    val s3BucketName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The prefix for the specified S3 bucket.
       */
-    val s3KeyPrefix: js.UndefOr[Input[String]] = js.native
+    val s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Options for how AWS Config delivers configuration snapshots. See below
       */
-    val snapshotDeliveryProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]] = js.native
+    val snapshotDeliveryProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]] = js.undefined
     
     /**
       * The ARN of the SNS topic that AWS Config delivers notifications to.
       */
-    val snsTopicArn: js.UndefOr[Input[String]] = js.native
+    val snsTopicArn: js.UndefOr[Input[String]] = js.undefined
   }
   object DeliveryChannelState {
     

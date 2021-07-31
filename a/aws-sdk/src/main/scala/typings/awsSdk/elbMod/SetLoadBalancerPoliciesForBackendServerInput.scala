@@ -2,26 +2,24 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetLoadBalancerPoliciesForBackendServerInput extends StObject {
   
   /**
     * The port number associated with the EC2 instance.
     */
-  var InstancePort: EndPointPort = js.native
+  var InstancePort: EndPointPort
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
   
   /**
     * The names of the policies. If the list is empty, then all current polices are removed from the EC2 instance.
     */
-  var PolicyNames: typings.awsSdk.elbMod.PolicyNames = js.native
+  var PolicyNames: typings.awsSdk.elbMod.PolicyNames
 }
 object SetLoadBalancerPoliciesForBackendServerInput {
   

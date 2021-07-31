@@ -6,21 +6,21 @@ import typings.openfin.openfinStrings.minimized
 import typings.openfin.openfinStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowBeginBoundsChangingEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowBeginBoundsChangingEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var windowState: minimized | normal | maximized = js.native
+  var windowState: minimized | normal | maximized
 }
 object WindowBeginBoundsChangingEvent {
   
@@ -42,7 +42,7 @@ object WindowBeginBoundsChangingEvent {
   }
   
   @scala.inline
-  implicit class WindowBeginBoundsChangingEventMutableBuilder[Self <: WindowBeginBoundsChangingEvent[_, _], Topic, Type] (val x: Self with (WindowBeginBoundsChangingEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowBeginBoundsChangingEventMutableBuilder[Self <: WindowBeginBoundsChangingEvent[?, ?], Topic, Type] (val x: Self & (WindowBeginBoundsChangingEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

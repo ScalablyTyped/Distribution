@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.data
 import typings.kendoUi.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeListDataSource extends DataSource {
+trait TreeListDataSource
+  extends StObject
+     with DataSource {
   
   def add(model: TreeListModel): TreeListModel = js.native
   
@@ -22,7 +23,7 @@ trait TreeListDataSource extends DataSource {
   def level(model: js.Any): Double = js.native
   def level(model: TreeListModel): Double = js.native
   
-  def load(model: TreeListModel): JQueryPromise[_] = js.native
+  def load(model: TreeListModel): JQueryPromise[js.Any] = js.native
   
   def parentNode(model: TreeListModel): TreeListModel = js.native
   

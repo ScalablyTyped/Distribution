@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Character classification (upper, lower, digit, letter, number, ...) and generic Unicode enabled parser. */
-@js.native
-trait XCharacterClassification extends XInterface {
+trait XCharacterClassification
+  extends StObject
+     with XInterface {
   
   /** Get DirectionProperty of character at position **nPos** . */
-  def getCharacterDirection(aText: String, nPos: Double): Double = js.native
+  def getCharacterDirection(aText: String, nPos: Double): Double
   
-  def getCharacterType(aText: String, nPos: Double, aLocale: Locale): Double = js.native
+  def getCharacterType(aText: String, nPos: Double, aLocale: Locale): Double
   
-  def getScript(aText: String, nPos: Double): Double = js.native
+  def getScript(aText: String, nPos: Double): Double
   
   /**
     * Get accumulated KCharacterTypes of string starting at position **nPos** of length **nCount** code points.
     * @returns A number with appropriate flags set to indicate what type of characters the string contains, each flag value being one of {@link KCharacterType}
     */
-  def getStringType(aText: String, nPos: Double, nCount: Double, aLocale: Locale): Double = js.native
+  def getStringType(aText: String, nPos: Double, nCount: Double, aLocale: Locale): Double
   
-  def getType(aText: String, nPos: Double): Double = js.native
+  def getType(aText: String, nPos: Double): Double
   
   /**
     * Parse a string for a token starting at position **nPos** .
@@ -49,7 +49,7 @@ trait XCharacterClassification extends XInterface {
     aUserDefinedCharactersStart: String,
     nContCharFlags: Double,
     aUserDefinedCharactersCont: String
-  ): ParseResult = js.native
+  ): ParseResult
   
   /**
     * Parse a string for a token of type **nTokenType** starting at position **nPos** .
@@ -74,16 +74,16 @@ trait XCharacterClassification extends XInterface {
     aUserDefinedCharactersStart: String,
     nContCharFlags: Double,
     aUserDefinedCharactersCont: String
-  ): ParseResult = js.native
+  ): ParseResult
   
   /** Convert upper case alpha to lower case alpha, starting at position **nPos** for **nCount** code points. */
-  def toLower(aText: String, nPos: Double, nCount: Double, aLocale: Locale): String = js.native
+  def toLower(aText: String, nPos: Double, nCount: Double, aLocale: Locale): String
   
   /** Convert to title case, starting at position **nPos** for **nCount** code points. */
-  def toTitle(aText: String, nPos: Double, nCount: Double, aLocale: Locale): String = js.native
+  def toTitle(aText: String, nPos: Double, nCount: Double, aLocale: Locale): String
   
   /** Convert lower case alpha to upper case alpha, starting at position **nPos** for **nCount** code points. */
-  def toUpper(aText: String, nPos: Double, nCount: Double, aLocale: Locale): String = js.native
+  def toUpper(aText: String, nPos: Double, nCount: Double, aLocale: Locale): String
 }
 object XCharacterClassification {
   

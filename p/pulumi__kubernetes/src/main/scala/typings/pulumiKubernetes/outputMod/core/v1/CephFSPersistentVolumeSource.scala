@@ -2,44 +2,42 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
   */
-@js.native
 trait CephFSPersistentVolumeSource extends StObject {
   
   /**
     * Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var monitors: js.Array[String] = js.native
+  var monitors: js.Array[String]
   
   /**
     * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var secretFile: String = js.native
+  var secretFile: String
   
   /**
     * Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var secretRef: SecretReference = js.native
+  var secretRef: SecretReference
   
   /**
     * Optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
     */
-  var user: String = js.native
+  var user: String
 }
 object CephFSPersistentVolumeSource {
   

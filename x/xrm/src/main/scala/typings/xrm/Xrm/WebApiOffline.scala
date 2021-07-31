@@ -3,7 +3,6 @@ package typings.xrm.Xrm
 import typings.xrm.Xrm.Async.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -47,9 +46,9 @@ trait WebApiOffline extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/retrievemultiplerecords External Link: retrieveMultipleRecords (Client API reference)}
     */
   def retrieveMultipleRecords(entityLogicalName: String): PromiseLike[RetrieveMultipleResult] = js.native
-  def retrieveMultipleRecords(entityLogicalName: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): PromiseLike[RetrieveMultipleResult] = js.native
   def retrieveMultipleRecords(entityLogicalName: String, options: String): PromiseLike[RetrieveMultipleResult] = js.native
   def retrieveMultipleRecords(entityLogicalName: String, options: String, maxPageSize: Double): PromiseLike[RetrieveMultipleResult] = js.native
+  def retrieveMultipleRecords(entityLogicalName: String, options: Unit, maxPageSize: Double): PromiseLike[RetrieveMultipleResult] = js.native
   
   /**
     * Retrieves an entity record.
@@ -70,8 +69,8 @@ trait WebApiOffline extends StObject {
     * @returns On success, returns a promise containing a JSON object with the retrieved attributes and their values.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/retrieverecord External Link: retrieveRecord (Client API reference)}
     */
-  def retrieveRecord(entityLogicalName: String, id: String): PromiseLike[_] = js.native
-  def retrieveRecord(entityLogicalName: String, id: String, options: String): PromiseLike[_] = js.native
+  def retrieveRecord(entityLogicalName: String, id: String): PromiseLike[js.Any] = js.native
+  def retrieveRecord(entityLogicalName: String, id: String, options: String): PromiseLike[js.Any] = js.native
   
   /**
     * Updates an entity record.
@@ -81,5 +80,5 @@ trait WebApiOffline extends StObject {
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/updaterecord External Link: updateRecord (Client API reference)}
     */
-  def updateRecord(entityLogicalName: String, id: String, data: js.Any): PromiseLike[_] = js.native
+  def updateRecord(entityLogicalName: String, id: String, data: js.Any): PromiseLike[js.Any] = js.native
 }

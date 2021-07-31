@@ -8,11 +8,12 @@ import typings.kendoUi.kendo.data.TreeListModel
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeList extends Widget {
+trait TreeList
+  extends StObject
+     with Widget {
   
   def addRow(parentRow: String): Unit = js.native
   def addRow(parentRow: JQuery): Unit = js.native
@@ -31,9 +32,9 @@ trait TreeList extends Widget {
   def closeCell(): Unit = js.native
   def closeCell(isCancel: Boolean): Unit = js.native
   
-  def collapse(row: String): JQueryPromise[_] = js.native
-  def collapse(row: JQuery): JQueryPromise[_] = js.native
-  def collapse(row: Element): JQueryPromise[_] = js.native
+  def collapse(row: String): JQueryPromise[js.Any] = js.native
+  def collapse(row: JQuery): JQueryPromise[js.Any] = js.native
+  def collapse(row: Element): JQueryPromise[js.Any] = js.native
   
   var columns: js.Any = js.native
   
@@ -49,9 +50,9 @@ trait TreeList extends Widget {
   
   def editRow(row: JQuery): Unit = js.native
   
-  def expand(row: String): JQueryPromise[_] = js.native
-  def expand(row: JQuery): JQueryPromise[_] = js.native
-  def expand(row: Element): JQueryPromise[_] = js.native
+  def expand(row: String): JQueryPromise[js.Any] = js.native
+  def expand(row: JQuery): JQueryPromise[js.Any] = js.native
+  def expand(row: Element): JQueryPromise[js.Any] = js.native
   
   def hideColumn(column: String): Unit = js.native
   def hideColumn(column: Double): Unit = js.native
@@ -83,7 +84,7 @@ trait TreeList extends Widget {
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  def saveAsPDF(): JQueryPromise[js.Any] = js.native
   
   def saveChanges(): Unit = js.native
   

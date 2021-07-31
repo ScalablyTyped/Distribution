@@ -10,7 +10,6 @@ import typings.videoJs.videoJsStrings.height
 import typings.videoJs.videoJsStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Components can also use methods from {@link EventTarget}
   */
 @js.native
-trait Component extends EventedMixin {
+trait Component
+  extends StObject
+     with EventedMixin {
   
   /**
     * Find a single DOM element matching a `selector`. This can be within the `Component`s
@@ -90,25 +91,25 @@ trait Component extends EventedMixin {
     *         `Component` will get created by this process.
     */
   def addChild(component: String): Component = js.native
-  def addChild(component: String, optionsopt: js.UndefOr[scala.Nothing], indexopt: Double): Component = js.native
   def addChild(component: String, optionsopt: js.Any): Component = js.native
   def addChild(component: String, optionsopt: js.Any, indexopt: Double): Component = js.native
+  def addChild(component: String, optionsopt: Unit, indexopt: Double): Component = js.native
   def addChild(component: Element): Element = js.native
-  def addChild(component: Element, optionsopt: js.UndefOr[scala.Nothing], indexopt: Double): Element = js.native
   def addChild(component: Element, optionsopt: js.Any): Element = js.native
   def addChild(component: Element, optionsopt: js.Any, indexopt: Double): Element = js.native
+  def addChild(component: Element, optionsopt: Unit, indexopt: Double): Element = js.native
   def addChild[T /* <: Component */](child: T): T = js.native
-  def addChild[T /* <: Component */](child: T, options: js.UndefOr[scala.Nothing], index: Double): T = js.native
   def addChild[T /* <: Component */](child: T, options: js.Any): T = js.native
   def addChild[T /* <: Component */](child: T, options: js.Any, index: Double): T = js.native
+  def addChild[T /* <: Component */](child: T, options: Unit, index: Double): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String): T = js.native
-  @JSName("addChild")
-  def addChild_T_Component_T[T /* <: Component */](child: String, options: js.UndefOr[scala.Nothing], index: Double): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String, options: js.Any): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String, options: js.Any, index: Double): T = js.native
+  @JSName("addChild")
+  def addChild_T_Component_T[T /* <: Component */](child: String, options: Unit, index: Double): T = js.native
   
   /**
     * Add a CSS class name to the `Component`s element.
@@ -213,13 +214,13 @@ trait Component extends EventedMixin {
     * @return The element that gets created.
     */
   def createEl(): Element = js.native
-  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
-  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any): Element = js.native
-  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any, attributes: js.Any): Element = js.native
   def createEl(tagName: String): Element = js.native
-  def createEl(tagName: String, properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any, attributes: js.Any): Element = js.native
+  def createEl(tagName: String, properties: Unit, attributes: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: js.Any, attributes: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: Unit, attributes: js.Any): Element = js.native
   
   @JSName("currentDimension")
   def currentDimension_height(widthOrHeight: height): Double = js.native
@@ -502,9 +503,9 @@ trait Component extends EventedMixin {
     * @return The localized string or if no localization exists the english string.
     */
   def localize(string: String): String = js.native
-  def localize(string: String, tokens: js.UndefOr[scala.Nothing], defaultValue: String): String = js.native
   def localize(string: String, tokens: js.Array[String]): String = js.native
   def localize(string: String, tokens: js.Array[String], defaultValue: String): String = js.native
+  def localize(string: String, tokens: Unit, defaultValue: String): String = js.native
   
   /**
     * Lock a `Component`s element in its visible state by adding the 'vjs-lock-showing'
@@ -729,12 +730,11 @@ object Component {
     * An object that contains width and height values of the `Component`s
     * computed style. Uses `window.getComputedStyle`.
     */
-  @js.native
   trait DimensionObject extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object DimensionObject {
     

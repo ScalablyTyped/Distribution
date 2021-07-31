@@ -3,13 +3,13 @@ package typings.reactAsync.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncProps[T] extends AsyncOptions[T] {
+trait AsyncProps[T]
+  extends StObject
+     with AsyncOptions[T] {
   
-  var children: js.UndefOr[AsyncChildren[T]] = js.native
+  var children: js.UndefOr[AsyncChildren[T]] = js.undefined
 }
 object AsyncProps {
   
@@ -20,7 +20,7 @@ object AsyncProps {
   }
   
   @scala.inline
-  implicit class AsyncPropsMutableBuilder[Self <: AsyncProps[_], T] (val x: Self with AsyncProps[T]) extends AnyVal {
+  implicit class AsyncPropsMutableBuilder[Self <: AsyncProps[?], T] (val x: Self & AsyncProps[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: AsyncChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

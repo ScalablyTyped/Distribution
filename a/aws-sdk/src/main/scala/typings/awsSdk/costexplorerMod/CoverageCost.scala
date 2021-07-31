@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverageCost extends StObject {
   
   /**
     * How much an On-Demand Instance costs.
     */
-  var OnDemandCost: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandCost] = js.native
+  var OnDemandCost: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandCost] = js.undefined
 }
 object CoverageCost {
   

@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.iot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionStepFunctions extends StObject {
   
   /**
     * The prefix used to generate, along with a UUID, the unique state machine execution name.
     */
-  var executionNamePrefix: js.UndefOr[String] = js.native
+  var executionNamePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access to start execution of the state machine.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * The name of the Step Functions state machine whose execution will be started.
     */
-  var stateMachineName: String = js.native
+  var stateMachineName: String
 }
 object TopicRuleErrorActionStepFunctions {
   

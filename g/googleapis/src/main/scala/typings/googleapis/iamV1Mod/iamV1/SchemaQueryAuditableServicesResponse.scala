@@ -2,19 +2,17 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response containing a list of auditable services for a resource.
   */
-@js.native
 trait SchemaQueryAuditableServicesResponse extends StObject {
   
   /**
     * The auditable services for a resource.
     */
-  var services: js.UndefOr[js.Array[SchemaAuditableService]] = js.native
+  var services: js.UndefOr[js.Array[SchemaAuditableService]] = js.undefined
 }
 object SchemaQueryAuditableServicesResponse {
   

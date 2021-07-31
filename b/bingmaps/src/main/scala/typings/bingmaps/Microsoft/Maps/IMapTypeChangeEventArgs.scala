@@ -2,23 +2,21 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMapTypeChangeEventArgs extends StObject {
   
   /** The map type that map has changed to. */
-  var newMapTypeId: MapTypeId = js.native
+  var newMapTypeId: MapTypeId
   
   /** The map type that the map has changed from. */
-  var oldMapTypeId: MapTypeId = js.native
+  var oldMapTypeId: MapTypeId
   
   /** The map instance the event occured on */
-  var target: Map = js.native
+  var target: Map
   
   /** The type of object the event was attached to. Should always be "map" */
-  var targetType: String = js.native
+  var targetType: String
 }
 object IMapTypeChangeEventArgs {
   

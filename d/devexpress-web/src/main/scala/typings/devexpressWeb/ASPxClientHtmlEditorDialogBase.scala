@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for dialogs within the  ASPxHtmlEditor.
   */
-@js.native
 trait ASPxClientHtmlEditorDialogBase extends StObject {
   
   /**
     * Provides access to the client object of the "Cancel" button in the Html Editor's dialogs.
     */
-  def GetCancelButton(): ASPxClientButton = js.native
+  def GetCancelButton(): ASPxClientButton
   
   /**
     * Provides access to the client ASPxFormLayout object that arranges all editors in the Html Editor's dialogs.
     */
-  def GetFormLayout(): ASPxClientFormLayout = js.native
+  def GetFormLayout(): ASPxClientFormLayout
   
   /**
     * Provides access to the client object of the "OK" button in the Html Editor's dialogs.
     */
-  def GetOkButton(): ASPxClientButton = js.native
+  def GetOkButton(): ASPxClientButton
 }
 object ASPxClientHtmlEditorDialogBase {
   

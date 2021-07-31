@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketObjectLockConfigurationRule extends StObject {
   
   /**
     * The default retention period that you want to apply to new objects placed in this bucket.
     */
-  var defaultRetention: BucketObjectLockConfigurationRuleDefaultRetention = js.native
+  var defaultRetention: BucketObjectLockConfigurationRuleDefaultRetention
 }
 object BucketObjectLockConfigurationRule {
   

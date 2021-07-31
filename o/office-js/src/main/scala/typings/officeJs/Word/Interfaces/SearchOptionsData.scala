@@ -2,11 +2,9 @@ package typings.officeJs.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `searchOptions.toJSON()`. */
-@js.native
 trait SearchOptionsData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SearchOptionsData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var ignorePunct: js.UndefOr[Boolean] = js.native
+  var ignorePunct: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait SearchOptionsData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var ignoreSpace: js.UndefOr[Boolean] = js.native
+  var ignoreSpace: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait SearchOptionsData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait SearchOptionsData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var matchPrefix: js.UndefOr[Boolean] = js.native
+  var matchPrefix: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait SearchOptionsData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var matchSuffix: js.UndefOr[Boolean] = js.native
+  var matchSuffix: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait SearchOptionsData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var matchWholeWord: js.UndefOr[Boolean] = js.native
+  var matchWholeWord: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait SearchOptionsData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var matchWildcards: js.UndefOr[Boolean] = js.native
+  var matchWildcards: js.UndefOr[Boolean] = js.undefined
 }
 object SearchOptionsData {
   

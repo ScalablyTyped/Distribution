@@ -2,28 +2,26 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaResourcePolicyWeeklyCycleDayOfWeek extends StObject {
   
   /**
     * Allows to define schedule that runs specified day of the week.
     */
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Duration of the time window, automatically chosen to be
     * smallest possible in the given scenario.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * Time within the window to start the operations. It must be in format
     * &quot;HH:MM&quot;, where HH : [00-23] and MM : [00-00] GMT.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaResourcePolicyWeeklyCycleDayOfWeek {
   

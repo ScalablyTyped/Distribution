@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextTrackCueEventMap extends StObject {
   
-  var enter: Event = js.native
+  var enter: Event
   
-  var exit: Event = js.native
+  var exit: Event
 }
 object TextTrackCueEventMap {
   

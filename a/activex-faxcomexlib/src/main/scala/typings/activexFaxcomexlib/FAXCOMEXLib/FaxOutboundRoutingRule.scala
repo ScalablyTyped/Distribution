@@ -2,39 +2,37 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutboundRoutingRule Class */
-@js.native
 trait FaxOutboundRoutingRule extends StObject {
   
   /** Area code */
-  val AreaCode: Double = js.native
+  val AreaCode: Double
   
   /** Country code */
-  val CountryCode: Double = js.native
+  val CountryCode: Double
   
   /** Destination device */
-  var DeviceId: Double = js.native
+  var DeviceId: Double
   
   @JSName("FAXCOMEXLib.FaxOutboundRoutingRule_typekey")
-  var FAXCOMEXLibDotFaxOutboundRoutingRule_typekey: FaxOutboundRoutingRule = js.native
+  var FAXCOMEXLibDotFaxOutboundRoutingRule_typekey: FaxOutboundRoutingRule
   
   /** Group name */
-  var GroupName: String = js.native
+  var GroupName: String
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
   
   /** Status */
-  val Status: FAX_RULE_STATUS_ENUM = js.native
+  val Status: FAX_RULE_STATUS_ENUM
   
   /** Uses single device or group */
-  var UseDevice: Boolean = js.native
+  var UseDevice: Boolean
 }
 object FaxOutboundRoutingRule {
   

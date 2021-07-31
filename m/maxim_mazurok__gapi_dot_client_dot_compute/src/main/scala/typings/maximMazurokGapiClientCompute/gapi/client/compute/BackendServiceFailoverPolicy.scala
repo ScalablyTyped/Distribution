@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackendServiceFailoverPolicy extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait BackendServiceFailoverPolicy extends StObject {
     *
     * The default is false.
     */
-  var disableConnectionDrainOnFailover: js.UndefOr[Boolean] = js.native
+  var disableConnectionDrainOnFailover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Applicable only to Failover for Internal TCP/UDP Load Balancing. If set to true, connections to the load balancer are dropped when all primary and all backup backend VMs are
@@ -21,13 +19,13 @@ trait BackendServiceFailoverPolicy extends StObject {
     *
     * The default is false.
     */
-  var dropTrafficIfUnhealthy: js.UndefOr[Boolean] = js.native
+  var dropTrafficIfUnhealthy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Applicable only to Failover for Internal TCP/UDP Load Balancing. The value of the field must be in the range [0, 1]. If the value is 0, the load balancer performs a failover when
     * the number of healthy primary VMs equals zero. For all other values, the load balancer performs a failover when the total number of healthy primary VMs is less than this ratio.
     */
-  var failoverRatio: js.UndefOr[Double] = js.native
+  var failoverRatio: js.UndefOr[Double] = js.undefined
 }
 object BackendServiceFailoverPolicy {
   

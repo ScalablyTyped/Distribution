@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1PredictRequest extends StObject {
   
   /**
     * Optional. Use dryRun mode for this prediction query. If set to true, a dummy model will be used that returns arbitrary catalog items. Note that the dryRun mode should only be used
     * for testing the API, or if the model is not ready.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. Filter for restricting prediction results. Accepts values for tags and the `filterOutOfStockItems` flag. * Tag expressions. Restricts predictions to items that match all
@@ -23,7 +21,7 @@ trait GoogleCloudRecommendationengineV1beta1PredictRequest extends StObject {
     * tag=(-"promotional") * filterOutOfStockItems If your filter blocks all prediction results, nothing will be returned. If you want generic (unfiltered) popular items to be returned
     * instead, set `strictFiltering` to false in `PredictRequest.params`.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The labels for the predict request. * Label keys can contain lowercase letters, digits and hyphens, must start with a letter, and must end with a letter or digit. *
@@ -33,14 +31,14 @@ trait GoogleCloudRecommendationengineV1beta1PredictRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Optional. Maximum number of results to return per page. Set this property to the number of prediction results required. If zero, the service will choose a reasonable default. */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** Optional. The previous PredictResponse.next_page_token. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Additional domain specific parameters for the predictions. Allowed values: * `returnCatalogItem`: Boolean. If set to true, the associated catalogItem object will be
@@ -52,14 +50,14 @@ trait GoogleCloudRecommendationengineV1beta1PredictRequest extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Required. Context about the user, what they are looking at and what action they took to trigger the predict request. Note that this user event detail won't be ingested to userEvent
     * logs. Thus, a separate userEvent write request is required for event logging.
     */
-  var userEvent: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserEvent] = js.native
+  var userEvent: js.UndefOr[GoogleCloudRecommendationengineV1beta1UserEvent] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PredictRequest {
   
@@ -88,7 +86,7 @@ object GoogleCloudRecommendationengineV1beta1PredictRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -110,7 +108,7 @@ object GoogleCloudRecommendationengineV1beta1PredictRequest {
     def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline

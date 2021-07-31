@@ -3,93 +3,93 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxDateEdit control.
   */
-@js.native
-trait ASPxClientDateEdit extends ASPxClientDropDownEditBase {
+trait ASPxClientDateEdit
+  extends StObject
+     with ASPxClientDropDownEditBase {
   
   /**
     * Occurs when an end user clicks a calendar date cell.
     */
-  var CalendarCellClick: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientDateEdit]] = js.native
+  var CalendarCellClick: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientDateEdit]]
   
   /**
     * Allows you to disable the calendar's days.
     */
-  var CalendarCustomDisabledDate: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientDateEdit]] = js.native
+  var CalendarCustomDisabledDate: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientDateEdit]]
   
   /**
     * Fires after the selected date has been changed within the date editor.
     */
-  var DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]] = js.native
+  var DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]
   
   /**
     * Returns the calendar of the date editor.
     */
-  def GetCalendar(): ASPxClientCalendar = js.native
+  def GetCalendar(): ASPxClientCalendar
   
   /**
     * Gets the date that is the editor's value.
     */
-  def GetDate(): Date = js.native
+  def GetDate(): Date
   
   /**
     * Gets the maximum date of the editor.
     */
-  def GetMaxDate(): Date = js.native
+  def GetMaxDate(): Date
   
   /**
     * Gets the minimum date of the editor.
     */
-  def GetMinDate(): Date = js.native
+  def GetMinDate(): Date
   
   /**
     * Returns the number of days in a range selected within a date edit.
     */
-  def GetRangeDayCount(): Double = js.native
+  def GetRangeDayCount(): Double
   
   /**
     * Gets the range's length.
     */
-  def GetRangeLength(): Double = js.native
+  def GetRangeLength(): Double
   
   /**
     * Returns the built-in time edit control.
     */
-  def GetTimeEdit(): ASPxClientTimeEdit = js.native
+  def GetTimeEdit(): ASPxClientTimeEdit
   
   /**
     * Enables you to convert the value entered by an end user into the value that will be stored by the date editor.
     */
-  var ParseDate: ASPxClientEvent[ASPxClientParseDateEventHandler[ASPxClientDateEdit]] = js.native
+  var ParseDate: ASPxClientEvent[ASPxClientParseDateEventHandler[ASPxClientDateEdit]]
   
   /**
     * Specifies the date for the editor.
     * @param date The date.
     */
-  def SetDate(date: Date): Unit = js.native
+  def SetDate(date: Date): Unit
   
   /**
     * Sets the maximum date of the editor.
     * @param date A DateTime object representing the maximum date.
     */
-  def SetMaxDate(date: Date): Unit = js.native
+  def SetMaxDate(date: Date): Unit
   
   /**
     * Sets the minimum date of the editor.
     * @param date A DateTime object representing the minimum date.
     */
-  def SetMinDate(date: Date): Unit = js.native
+  def SetMinDate(date: Date): Unit
   
   /**
     * This event is not in effect for the ASPxClientDateEdit. Use the ASPxClientDateEdit.DateChanged event instead.
     */
   @JSName("TextChanged")
-  var TextChanged_ASPxClientDateEdit: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]] = js.native
+  var TextChanged_ASPxClientDateEdit: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]
 }
 object ASPxClientDateEdit {
   

@@ -2,17 +2,15 @@ package typings.multimap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Done extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Done {
     
@@ -37,7 +35,7 @@ object anon {
   trait Iterator extends StObject {
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[_] = js.native
+    var iterator: js.Function0[js.Any] = js.native
     
     def next(): Done = js.native
   }

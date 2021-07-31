@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,7 +28,7 @@ trait IoT1ClickDevicesService extends Service {
   ): Request[ClaimDevicesByClaimCodeResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_IoT1ClickDevicesService: ConfigBase with ClientConfiguration = js.native
+  var config_IoT1ClickDevicesService: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Given a device ID, returns a DescribeDeviceResponse object describing the

@@ -10,9 +10,9 @@ Predicate that returns true if base64 string.
 | ------------------ | :-------------: |
 | Full name          | is-base64 |
 | Keywords           | predicate, base64, mime |
-| # releases         | 4 |
-| # dependents       | 53 |
-| # downloads        | 5205143 |
+| # releases         | 3 |
+| # dependents       | 58 |
+| # downloads        | 7466546 |
 | # stars            | 0 |
 
 ## Links

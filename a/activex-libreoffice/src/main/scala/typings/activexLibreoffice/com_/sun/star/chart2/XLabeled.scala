@@ -5,35 +5,33 @@ import typings.activexLibreoffice.com_.sun.star.drawing.RectanglePoint
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XLabeled extends StObject {
   
-  var Label: XTitle = js.native
+  var Label: XTitle
   
-  var LabelAnchor: RectanglePoint = js.native
+  var LabelAnchor: RectanglePoint
   
-  var Offset: SafeArray[Double] = js.native
+  var Offset: SafeArray[Double]
   
-  var OwnAnchor: RectanglePoint = js.native
+  var OwnAnchor: RectanglePoint
   
-  def getLabel(): XTitle = js.native
+  def getLabel(): XTitle
   
-  def getLabelAnchor(): RectanglePoint = js.native
+  def getLabelAnchor(): RectanglePoint
   
-  def getOffset(): SafeArray[Double] = js.native
+  def getOffset(): SafeArray[Double]
   
-  def getOwnAnchor(): RectanglePoint = js.native
+  def getOwnAnchor(): RectanglePoint
   
-  def setLabel(xTitle: XTitle): Unit = js.native
+  def setLabel(xTitle: XTitle): Unit
   
-  def setLabelAnchor(aAnchorPoint: RectanglePoint): Unit = js.native
+  def setLabelAnchor(aAnchorPoint: RectanglePoint): Unit
   
-  def setOffset(aOffsetVector: SeqEquiv[Double]): Unit = js.native
+  def setOffset(aOffsetVector: SeqEquiv[Double]): Unit
   
-  def setOwnAnchor(aAnchorPoint: RectanglePoint): Unit = js.native
+  def setOwnAnchor(aAnchorPoint: RectanglePoint): Unit
 }
 object XLabeled {
   

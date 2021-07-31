@@ -3,34 +3,34 @@ package typings.saveCsv
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("save-csv", JSImport.Namespace)
-  @js.native
-  def apply(array: js.Array[_]): Unit = js.native
-  @JSImport("save-csv", JSImport.Namespace)
-  @js.native
-  def apply(array: js.Array[_], options: SaveCsvProps): Unit = js.native
+  @scala.inline
+  def apply(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(array: js.Array[js.Any], options: SaveCsvProps): Unit = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("save-csv", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait SaveCsvProps extends StObject {
     
-    var bom: js.UndefOr[Boolean] = js.native
+    var bom: js.UndefOr[Boolean] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var filename: String = js.native
+    var filename: String
     
-    var formatter: js.UndefOr[js.Function1[/* value */ String | JSON, Unit]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* value */ String | JSON, Unit]] = js.undefined
     
-    var mime: js.UndefOr[String] = js.native
+    var mime: js.UndefOr[String] = js.undefined
     
-    var quote: js.UndefOr[String] = js.native
+    var quote: js.UndefOr[String] = js.undefined
     
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object SaveCsvProps {
     

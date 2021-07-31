@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberFrameworkAttributes extends StObject {
   
   /**
     * Attributes of Hyperledger Fabric relevant to a member on a Managed Blockchain network that uses Hyperledger Fabric.
     */
-  var Fabric: js.UndefOr[MemberFabricAttributes] = js.native
+  var Fabric: js.UndefOr[MemberFabricAttributes] = js.undefined
 }
 object MemberFrameworkAttributes {
   

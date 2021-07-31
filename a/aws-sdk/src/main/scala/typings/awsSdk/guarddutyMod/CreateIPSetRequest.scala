@@ -2,46 +2,44 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIPSetRequest extends StObject {
   
   /**
     * A Boolean value that indicates whether GuardDuty is to start using the uploaded IPSet.
     */
-  var Activate: Boolean = js.native
+  var Activate: Boolean
   
   /**
     * The idempotency token for the create request.
     */
-  var ClientToken: js.UndefOr[typings.awsSdk.guarddutyMod.ClientToken] = js.native
+  var ClientToken: js.UndefOr[typings.awsSdk.guarddutyMod.ClientToken] = js.undefined
   
   /**
     * The unique ID of the detector of the GuardDuty account that you want to create an IPSet for.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The format of the file that contains the IPSet.
     */
-  var Format: IpSetFormat = js.native
+  var Format: IpSetFormat
   
   /**
     * The URI of the file that contains the IPSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
     */
-  var Location: typings.awsSdk.guarddutyMod.Location = js.native
+  var Location: typings.awsSdk.guarddutyMod.Location
   
   /**
     * The user-friendly name to identify the IPSet.  Allowed characters are alphanumerics, spaces, hyphens (-), and underscores (_).
     */
-  var Name: typings.awsSdk.guarddutyMod.Name = js.native
+  var Name: typings.awsSdk.guarddutyMod.Name
   
   /**
     * The tags to be added to a new IP set resource.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateIPSetRequest {
   

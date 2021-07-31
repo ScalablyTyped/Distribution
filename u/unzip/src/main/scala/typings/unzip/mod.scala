@@ -7,18 +7,19 @@ import typings.unzip.unzipStrings.Directory
 import typings.unzip.unzipStrings.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("unzip", "Extract")
+  @JSImport("unzip", JSImport.Namespace)
   @js.native
-  def Extract(options: Path): WritableStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("unzip", "Parse")
-  @js.native
-  def Parse(): WritableStream = js.native
+  @scala.inline
+  def Extract(options: Path): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
+  
+  @scala.inline
+  def Parse(): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[WritableStream]
   
   @js.native
   trait Entry extends PassThrough {

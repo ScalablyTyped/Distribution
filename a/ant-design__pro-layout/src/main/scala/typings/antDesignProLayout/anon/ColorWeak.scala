@@ -2,15 +2,13 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorWeak extends StObject {
   
-  var colorWeak: js.UndefOr[Boolean] = js.native
+  var colorWeak: js.UndefOr[Boolean] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.undefined
 }
 object ColorWeak {
   

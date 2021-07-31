@@ -3,15 +3,13 @@ package typings.winrt.Windows.Storage.Search
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQueryOptionsFactory extends StObject {
   
-  def createCommonFileQuery(query: CommonFileQuery, fileTypeFilter: IIterable[String]): QueryOptions = js.native
+  def createCommonFileQuery(query: CommonFileQuery, fileTypeFilter: IIterable[String]): QueryOptions
   
-  def createCommonFolderQuery(query: CommonFolderQuery): QueryOptions = js.native
+  def createCommonFolderQuery(query: CommonFolderQuery): QueryOptions
 }
 object IQueryOptionsFactory {
   

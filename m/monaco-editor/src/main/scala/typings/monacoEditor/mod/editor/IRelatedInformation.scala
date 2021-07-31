@@ -3,23 +3,21 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRelatedInformation extends StObject {
   
-  var endColumn: Double = js.native
+  var endColumn: Double
   
-  var endLineNumber: Double = js.native
+  var endLineNumber: Double
   
-  var message: String = js.native
+  var message: String
   
-  var resource: Uri = js.native
+  var resource: Uri
   
-  var startColumn: Double = js.native
+  var startColumn: Double
   
-  var startLineNumber: Double = js.native
+  var startLineNumber: Double
 }
 object IRelatedInformation {
   

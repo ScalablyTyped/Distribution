@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSchemasResponse extends StObject {
   
   /**
     * A continuation token for paginating the returned list of tokens, returned if the current segment of the list is not the last.
     */
-  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.native
+  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.undefined
   
   /**
     * An array of SchemaListItem objects containing details of each schema.
     */
-  var Schemas: js.UndefOr[SchemaListDefinition] = js.native
+  var Schemas: js.UndefOr[SchemaListDefinition] = js.undefined
 }
 object ListSchemasResponse {
   

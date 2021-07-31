@@ -2,17 +2,15 @@ package typings.inputmask
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Back extends StObject {
     
-    var back: String = js.native
+    var back: String
     
-    var front: String = js.native
+    var front: String
   }
   object Back {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait C extends StObject {
     
-    var c: String = js.native
+    var c: String
     
-    var pos: Double = js.native
+    var pos: Double
   }
   object C {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: String = js.native
+    var end: String
     
-    var start: String = js.native
+    var start: String
   }
   object End {
     
@@ -85,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Start extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Start {
     

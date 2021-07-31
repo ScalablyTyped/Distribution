@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureLayerView extends LayerView {
+trait FeatureLayerView
+  extends StObject
+     with LayerView {
   
   /**
     * A list of attribute fields fetched for each feature including fields required for layer [rendering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer), [labeling](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelingInfo), [elevation info](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#elevationInfo), and additional fields defined on the [FeatureLayer.outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields).
@@ -73,12 +74,12 @@ trait FeatureLayerView extends LayerView {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryExtent)
     */
-  def queryExtent(): js.Promise[_] = js.native
-  def queryExtent(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties, options: FeatureLayerViewQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query, options: FeatureLayerViewQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(): js.Promise[js.Any] = js.native
+  def queryExtent(query: Unit, options: FeatureLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties, options: FeatureLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query, options: FeatureLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the number of features that satisfy the query.
@@ -86,7 +87,7 @@ trait FeatureLayerView extends LayerView {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatureCount)
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
-  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Unit, options: FeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: FeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -98,7 +99,7 @@ trait FeatureLayerView extends LayerView {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Unit, options: FeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: FeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -110,7 +111,7 @@ trait FeatureLayerView extends LayerView {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryObjectIds)
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Unit, options: FeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: FeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

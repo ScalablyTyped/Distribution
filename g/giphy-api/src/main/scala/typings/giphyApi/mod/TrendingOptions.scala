@@ -2,13 +2,13 @@ package typings.giphyApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrendingOptions extends BaseOptions {
+trait TrendingOptions
+  extends StObject
+     with BaseOptions {
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
 }
 object TrendingOptions {
   

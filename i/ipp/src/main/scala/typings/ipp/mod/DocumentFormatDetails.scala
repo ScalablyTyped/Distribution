@@ -2,27 +2,25 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentFormatDetails extends StObject {
   
-  var `document-format`: js.UndefOr[MimeMediaType] = js.native
+  var `document-format`: js.UndefOr[MimeMediaType] = js.undefined
   
-  var `document-format-device-id`: js.UndefOr[String] = js.native
+  var `document-format-device-id`: js.UndefOr[String] = js.undefined
   
-  var `document-format-version`: js.UndefOr[String] = js.native
+  var `document-format-version`: js.UndefOr[String] = js.undefined
   
-  var `document-natural-language`: js.UndefOr[js.Array[String]] = js.native
+  var `document-natural-language`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `document-source-application-name`: js.UndefOr[String] = js.native
+  var `document-source-application-name`: js.UndefOr[String] = js.undefined
   
-  var `document-source-application-version`: js.UndefOr[String] = js.native
+  var `document-source-application-version`: js.UndefOr[String] = js.undefined
   
-  var `document-source-os-name`: js.UndefOr[String] = js.native
+  var `document-source-os-name`: js.UndefOr[String] = js.undefined
   
-  var `document-source-os-version`: js.UndefOr[String] = js.native
+  var `document-source-os-version`: js.UndefOr[String] = js.undefined
 }
 object DocumentFormatDetails {
   

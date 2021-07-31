@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaMeasurement2DViewModelMeasurement extends Object {
+trait AreaMeasurement2DViewModelMeasurement
+  extends StObject
+     with Object {
   
   /**
     * The area (m²).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
     */
-  var area: Double = js.native
+  var area: Double
   
   /**
     * Measurement area.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
     */
-  var geometry: js.Any = js.native
+  var geometry: js.Any
   
   /**
     * The perimeter (m).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
     */
-  var perimeter: Double = js.native
+  var perimeter: Double
 }
 object AreaMeasurement2DViewModelMeasurement {
   

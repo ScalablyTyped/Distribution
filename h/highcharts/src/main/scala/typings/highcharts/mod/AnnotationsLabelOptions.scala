@@ -2,78 +2,76 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsLabelOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for an
     * annotation label.
     */
-  var accessibility: js.UndefOr[AnnotationLabelAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[AnnotationLabelAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The alignment of the
     * annotation's label. If right, the right side of the label should be
     * touching the point.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow the
     * annotation's labels to overlap. To make the labels less sensitive for
     * overlapping, the can be set to 0.
     */
-  var allowOverlap: js.UndefOr[Boolean] = js.native
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the annotation's label.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border color for the
     * annotation's label.
     */
-  var borderColor: js.UndefOr[ColorString] = js.native
+  var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border radius in pixels for
     * the annotaiton's label.
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border width in pixels for
     * the annotation's label
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A class name for styling by CSS.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide the annotation's
     * label that is outside the plot area.
     */
-  var crop: js.UndefOr[Boolean] = js.native
+  var crop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The label's pixel distance from
     * the point.
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A format string for the data
     * label.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function to
@@ -81,77 +79,77 @@ trait AnnotationsLabelOptions extends StObject {
     * defined, the format or text take precedence and the formatter is ignored.
     * `This` refers to a point object.
     */
-  var formatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.native
+  var formatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the annotation is
     * visible in the exported data table.
     */
-  var includeInDataExport: js.UndefOr[Boolean] = js.native
+  var includeInDataExport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How to handle the annotation's
     * label that flow outside the plot area. The justify option aligns the
     * label inside the plot area.
     */
-  var overflow: js.UndefOr[OptionsOverflowValue] = js.native
+  var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When either the borderWidth or
     * the backgroundColor is set, this is the padding within the box.
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The shadow of the box. The
     * shadow can be an object configuration containing `color`, `offsetX`,
     * `offsetY`, `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.native
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
     * the border around the label. Symbols are predefined functions on the
     * Renderer object.
     */
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Styles for the annotation's
     * label.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alias for the format option.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use HTML to render
     * the annotation's label.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
     * annotation's label.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of the
     * label relative to the point. Note that if a `distance` is defined, the
     * distance takes precedence over `x` and `y` options.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position offset of the
     * label relative to the point. Note that if a `distance` is defined, the
     * distance takes precedence over `x` and `y` options.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsLabelOptions {
   

@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.WhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `11` extends StObject {
   
-  var `type`: WhileStatement = js.native
+  var `type`: WhileStatement
 }
 object `11` {
   
   @scala.inline
-  def apply(`type`: WhileStatement): `11` = {
+  def apply(): `11` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[`11`]
   }
   

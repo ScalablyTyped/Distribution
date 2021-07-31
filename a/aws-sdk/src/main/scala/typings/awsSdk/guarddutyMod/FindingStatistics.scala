@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingStatistics extends StObject {
   
   /**
     * Represents a map of severity to count statistics for a set of findings.
     */
-  var CountBySeverity: js.UndefOr[typings.awsSdk.guarddutyMod.CountBySeverity] = js.native
+  var CountBySeverity: js.UndefOr[typings.awsSdk.guarddutyMod.CountBySeverity] = js.undefined
 }
 object FindingStatistics {
   

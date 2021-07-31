@@ -2,21 +2,19 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrimParams extends StObject {
   
-  var trim: js.UndefOr[ImgixParamType] = js.native
+  var trim: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `trim-color`: js.UndefOr[ImgixParamType] = js.native
+  var `trim-color`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `trim-md`: js.UndefOr[ImgixParamType] = js.native
+  var `trim-md`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `trim-sd`: js.UndefOr[ImgixParamType] = js.native
+  var `trim-sd`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `trim-tol`: js.UndefOr[ImgixParamType] = js.native
+  var `trim-tol`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object TrimParams {
   

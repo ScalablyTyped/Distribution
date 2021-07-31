@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object availabilityZoneGroupMod {
@@ -38,6 +37,10 @@ object availabilityZoneGroupMod {
   /* static members */
   object AvailabilityZoneGroup {
     
+    @JSImport("@pulumi/aws/ec2/availabilityZoneGroup", "AvailabilityZoneGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AvailabilityZoneGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object availabilityZoneGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/availabilityZoneGroup", "AvailabilityZoneGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AvailabilityZoneGroup = js.native
-    @JSImport("@pulumi/aws/ec2/availabilityZoneGroup", "AvailabilityZoneGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AvailabilityZoneGroup = js.native
-    @JSImport("@pulumi/aws/ec2/availabilityZoneGroup", "AvailabilityZoneGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState): AvailabilityZoneGroup = js.native
-    @JSImport("@pulumi/aws/ec2/availabilityZoneGroup", "AvailabilityZoneGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState, opts: CustomResourceOptions): AvailabilityZoneGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState, opts: CustomResourceOptions): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
     
     /**
       * Returns true if the given object is an instance of AvailabilityZoneGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/availabilityZoneGroup", "AvailabilityZoneGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/availabilityZoneGroup.AvailabilityZoneGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/availabilityZoneGroup.AvailabilityZoneGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/availabilityZoneGroup.AvailabilityZoneGroup */ Boolean]
   }
   
-  @js.native
   trait AvailabilityZoneGroupArgs extends StObject {
     
     /**
       * Name of the Availability Zone Group.
       */
-    val groupName: Input[String] = js.native
+    val groupName: Input[String]
     
     /**
       * Indicates whether to enable or disable Availability Zone Group. Valid values: `opted-in` or `not-opted-in`.
       */
-    val optInStatus: Input[String] = js.native
+    val optInStatus: Input[String]
   }
   object AvailabilityZoneGroupArgs {
     
@@ -101,18 +98,17 @@ object availabilityZoneGroupMod {
     }
   }
   
-  @js.native
   trait AvailabilityZoneGroupState extends StObject {
     
     /**
       * Name of the Availability Zone Group.
       */
-    val groupName: js.UndefOr[Input[String]] = js.native
+    val groupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether to enable or disable Availability Zone Group. Valid values: `opted-in` or `not-opted-in`.
       */
-    val optInStatus: js.UndefOr[Input[String]] = js.native
+    val optInStatus: js.UndefOr[Input[String]] = js.undefined
   }
   object AvailabilityZoneGroupState {
     

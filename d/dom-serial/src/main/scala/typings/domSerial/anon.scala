@@ -2,32 +2,30 @@ package typings.domSerial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<dom-serial.SerialPortInfo> */
-  @js.native
   trait PartialSerialPortInfo extends StObject {
     
-    var locationId: js.UndefOr[String] = js.native
+    var locationId: js.UndefOr[String] = js.undefined
     
-    var manufacturer: js.UndefOr[String] = js.native
+    var manufacturer: js.UndefOr[String] = js.undefined
     
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
     
-    var productId: js.UndefOr[String] = js.native
+    var productId: js.UndefOr[String] = js.undefined
     
-    var serialNumber: js.UndefOr[String] = js.native
+    var serialNumber: js.UndefOr[String] = js.undefined
     
-    var usbProductId: js.UndefOr[Double] = js.native
+    var usbProductId: js.UndefOr[Double] = js.undefined
     
-    var usbVendorId: js.UndefOr[Double] = js.native
+    var usbVendorId: js.UndefOr[Double] = js.undefined
     
-    var vendor: js.UndefOr[String] = js.native
+    var vendor: js.UndefOr[String] = js.undefined
     
-    var vendorId: js.UndefOr[String] = js.native
+    var vendorId: js.UndefOr[String] = js.undefined
   }
   object PartialSerialPortInfo {
     

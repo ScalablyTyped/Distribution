@@ -2,31 +2,29 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IShadowOptions extends StObject {
   
   /**
     * Whether the shadow should affect stroke operations
     */
-  var affectStroke: js.UndefOr[Boolean] = js.native
+  var affectStroke: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shadow blur
     */
-  var blur: js.UndefOr[Double] = js.native
+  var blur: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow color
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether toObject should include default values
     */
-  var includeDefaultValues: js.UndefOr[Boolean] = js.native
+  var includeDefaultValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `false`, the shadow will scale with the object.
@@ -35,17 +33,17 @@ trait IShadowOptions extends StObject {
     * @type Boolean
     * @default
     */
-  var nonScaling: js.UndefOr[Boolean] = js.native
+  var nonScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shadow horizontal offset
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow vertical offset
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
 }
 object IShadowOptions {
   

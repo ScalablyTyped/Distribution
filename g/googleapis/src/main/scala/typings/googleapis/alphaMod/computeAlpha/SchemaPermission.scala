@@ -2,61 +2,59 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * All fields defined in a permission are ANDed.
   */
-@js.native
 trait SchemaPermission extends StObject {
   
   /**
     * Extra custom constraints. The constraints are ANDed together.
     */
-  var constraints: js.UndefOr[js.Array[SchemaPermissionConstraint]] = js.native
+  var constraints: js.UndefOr[js.Array[SchemaPermissionConstraint]] = js.undefined
   
   /**
     * Used in Ingress or Egress Gateway cases to specify hosts that the policy
     * applies to. Exact match, prefix match, and suffix match are supported.
     */
-  var hosts: js.UndefOr[js.Array[String]] = js.native
+  var hosts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * HTTP method.
     */
-  var methods: js.UndefOr[js.Array[String]] = js.native
+  var methods: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of hosts. Specifies exclusions.
     */
-  var notHosts: js.UndefOr[js.Array[String]] = js.native
+  var notHosts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of methods. Specifies exclusions.
     */
-  var notMethods: js.UndefOr[js.Array[String]] = js.native
+  var notMethods: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of paths. Specifies exclusions.
     */
-  var notPaths: js.UndefOr[js.Array[String]] = js.native
+  var notPaths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Negate of ports. Specifies exclusions.
     */
-  var notPorts: js.UndefOr[js.Array[String]] = js.native
+  var notPorts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * HTTP request paths or gRPC methods. Exact match, prefix match, and suffix
     * match are supported.
     */
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Port names or numbers.
     */
-  var ports: js.UndefOr[js.Array[String]] = js.native
+  var ports: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPermission {
   

@@ -4,7 +4,6 @@ import typings.socketclusterClient.clientsocketMod.AuthStates
 import typings.socketclusterClient.clientsocketMod.States
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socketclusterClientStrings {
@@ -20,7 +19,9 @@ object socketclusterClientStrings {
   def authenticate: authenticate = "authenticate".asInstanceOf[authenticate]
   
   @js.native
-  sealed trait authenticated extends AuthStates
+  sealed trait authenticated
+    extends StObject
+       with AuthStates
   @scala.inline
   def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
   
@@ -30,7 +31,9 @@ object socketclusterClientStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait closed extends States
+  sealed trait closed
+    extends StObject
+       with States
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   
@@ -45,7 +48,9 @@ object socketclusterClientStrings {
   def connectAbort: connectAbort = "connectAbort".asInstanceOf[connectAbort]
   
   @js.native
-  sealed trait connecting extends States
+  sealed trait connecting
+    extends StObject
+       with States
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   
@@ -70,7 +75,9 @@ object socketclusterClientStrings {
   def kickOut: kickOut = "kickOut".asInstanceOf[kickOut]
   
   @js.native
-  sealed trait open extends States
+  sealed trait open
+    extends StObject
+       with States
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   
@@ -110,7 +117,9 @@ object socketclusterClientStrings {
   def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
   
   @js.native
-  sealed trait unauthenticated extends AuthStates
+  sealed trait unauthenticated
+    extends StObject
+       with AuthStates
   @scala.inline
   def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
   

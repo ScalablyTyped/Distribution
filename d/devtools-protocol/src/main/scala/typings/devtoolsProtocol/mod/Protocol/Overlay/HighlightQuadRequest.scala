@@ -4,26 +4,24 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.Quad
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightQuadRequest extends StObject {
   
   /**
     * The highlight fill color (default: transparent).
     */
-  var color: js.UndefOr[RGBA] = js.native
+  var color: js.UndefOr[RGBA] = js.undefined
   
   /**
     * The highlight outline color (default: transparent).
     */
-  var outlineColor: js.UndefOr[RGBA] = js.native
+  var outlineColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Quad to highlight
     */
-  var quad: Quad = js.native
+  var quad: Quad
 }
 object HighlightQuadRequest {
   

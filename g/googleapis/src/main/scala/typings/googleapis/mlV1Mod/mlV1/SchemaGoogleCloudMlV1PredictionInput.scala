@@ -2,13 +2,11 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents input parameters for a prediction job.
   */
-@js.native
 trait SchemaGoogleCloudMlV1PredictionInput extends StObject {
   
   /**
@@ -17,42 +15,42 @@ trait SchemaGoogleCloudMlV1PredictionInput extends StObject {
     * Tensorflow prediction call internally. So take the record size and memory
     * available into consideration when setting this parameter.
     */
-  var batchSize: js.UndefOr[String] = js.native
+  var batchSize: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The format of the input data files.
     */
-  var dataFormat: js.UndefOr[String] = js.native
+  var dataFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Google Cloud Storage location of the input data files. May
     * contain wildcards. See &lt;a
     * href=&quot;https://cloud.google.com/storage/docs/gsutil/addlhelp/WildcardNames&lt;/a&gt;
     */
-  var inputPaths: js.UndefOr[js.Array[String]] = js.native
+  var inputPaths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The maximum number of workers to be used for parallel
     * processing. Defaults to 10 if not specified.
     */
-  var maxWorkerCount: js.UndefOr[String] = js.native
+  var maxWorkerCount: js.UndefOr[String] = js.undefined
   
   /**
     * Use this field if you want to use the default version for the specified
     * model. The string must use the following format:
     * `&quot;projects/YOUR_PROJECT/models/YOUR_MODEL&quot;`
     */
-  var modelName: js.UndefOr[String] = js.native
+  var modelName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Format of the output data files, defaults to JSON.
     */
-  var outputDataFormat: js.UndefOr[String] = js.native
+  var outputDataFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The output Google Cloud Storage location.
     */
-  var outputPath: js.UndefOr[String] = js.native
+  var outputPath: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Google Compute Engine region to run the prediction job in.
@@ -60,7 +58,7 @@ trait SchemaGoogleCloudMlV1PredictionInput extends StObject {
     * href=&quot;/ml-engine/docs/tensorflow/regions&quot;&gt;available
     * regions&lt;/a&gt; for ML Engine services.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Cloud ML Engine runtime version to use for this batch
@@ -69,7 +67,7 @@ trait SchemaGoogleCloudMlV1PredictionInput extends StObject {
     * the latest stable version when model version information is not available
     * such as when the model is specified by uri.
     */
-  var runtimeVersion: js.UndefOr[String] = js.native
+  var runtimeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the signature defined in the SavedModel to use for
@@ -79,13 +77,13 @@ trait SchemaGoogleCloudMlV1PredictionInput extends StObject {
     * [DEFAULT_SERVING_SIGNATURE_DEF_KEY](https://www.tensorflow.org/api_docs/python/tf/saved_model/signature_constants)
     * , which is &quot;serving_default&quot;.
     */
-  var signatureName: js.UndefOr[String] = js.native
+  var signatureName: js.UndefOr[String] = js.undefined
   
   /**
     * Use this field if you want to specify a Google Cloud Storage path for the
     * model to use.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * Use this field if you want to specify a version of the model to use. The
@@ -93,7 +91,7 @@ trait SchemaGoogleCloudMlV1PredictionInput extends StObject {
     * the version information:
     * `&quot;projects/YOUR_PROJECT/models/YOUR_MODEL/versions/YOUR_VERSION&quot;`
     */
-  var versionName: js.UndefOr[String] = js.native
+  var versionName: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1PredictionInput {
   

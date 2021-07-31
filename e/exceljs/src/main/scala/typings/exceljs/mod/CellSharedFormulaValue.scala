@@ -4,19 +4,19 @@ import typings.exceljs.anon.Error
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellSharedFormulaValue extends _CellValue {
+trait CellSharedFormulaValue
+  extends StObject
+     with _CellValue {
   
-  var date1904: Boolean = js.native
+  var date1904: Boolean
   
-  val formula: js.UndefOr[String] = js.native
+  val formula: js.UndefOr[String] = js.undefined
   
-  var result: js.UndefOr[Double | String | Date | Error] = js.native
+  var result: js.UndefOr[Double | String | Date | Error] = js.undefined
   
-  var sharedFormula: String = js.native
+  var sharedFormula: String
 }
 object CellSharedFormulaValue {
   

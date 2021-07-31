@@ -8,137 +8,81 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publishReplayMod {
   
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
+  @JSImport("rxjs/internal/operators/publishReplay", JSImport.Namespace)
   @js.native
-  def publishReplay[T](): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T](bufferSize: Double): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T](bufferSize: Double, windowTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T](bufferSize: Double, windowTime: Double): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T](bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: js.UndefOr[scala.Nothing],
-    selector: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: js.UndefOr[scala.Nothing],
-    selector: js.Function1[/* shared */ Observable[T], O]
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: js.UndefOr[scala.Nothing],
-    selector: js.Function1[/* shared */ Observable[T], O],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: Double,
-    selector: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: Double,
-    selector: js.Function1[/* shared */ Observable[T], O]
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: js.UndefOr[scala.Nothing],
-    windowTime: Double,
-    selector: js.Function1[/* shared */ Observable[T], O],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: Double,
-    windowTime: js.UndefOr[scala.Nothing],
-    selector: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: Double,
-    windowTime: js.UndefOr[scala.Nothing],
-    selector: js.Function1[/* shared */ Observable[T], O]
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: Double,
-    windowTime: js.UndefOr[scala.Nothing],
-    selector: js.Function1[/* shared */ Observable[T], O],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
-    bufferSize: Double,
-    windowTime: Double,
-    selector: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](bufferSize: Double, windowTime: Double, selector: js.Function1[/* shared */ Observable[T], O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay[T, O /* <: ObservableInput[_] */](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def publishReplay[T](): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")().asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T](bufferSize: Double): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T](bufferSize: Double, windowTime: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T](bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T](bufferSize: Double, windowTime: Unit, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T](bufferSize: Unit, windowTime: Double): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T](bufferSize: Unit, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T](bufferSize: Unit, windowTime: Unit, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Double, windowTime: Double, selector: js.Function1[/* shared */ Observable[T], O]): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](
     bufferSize: Double,
     windowTime: Double,
     selector: js.Function1[/* shared */ Observable[T], O],
     scheduler: SchedulerLike
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](bufferSize: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/publishReplay", "publishReplay")
-  @js.native
-  def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](bufferSize: Double, windowTime: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  ): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Double, windowTime: Double, selector: Unit, scheduler: SchedulerLike): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Double, windowTime: Unit, selector: js.Function1[/* shared */ Observable[T], O]): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](
+    bufferSize: Double,
+    windowTime: Unit,
+    selector: js.Function1[/* shared */ Observable[T], O],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Double, windowTime: Unit, selector: Unit, scheduler: SchedulerLike): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Unit, windowTime: Double, selector: js.Function1[/* shared */ Observable[T], O]): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](
+    bufferSize: Unit,
+    windowTime: Double,
+    selector: js.Function1[/* shared */ Observable[T], O],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Unit, windowTime: Double, selector: Unit, scheduler: SchedulerLike): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Unit, windowTime: Unit, selector: js.Function1[/* shared */ Observable[T], O]): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](
+    bufferSize: Unit,
+    windowTime: Unit,
+    selector: js.Function1[/* shared */ Observable[T], O],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay[T, O /* <: ObservableInput[js.Any] */](bufferSize: Unit, windowTime: Unit, selector: Unit, scheduler: SchedulerLike): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  
+  @scala.inline
+  def publishReplay_TO_ObservableInputAny_OperatorFunction[T, O /* <: ObservableInput[js.Any] */](): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")().asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay_TO_ObservableInputAny_OperatorFunction[T, O /* <: ObservableInput[js.Any] */](bufferSize: Double): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay_TO_ObservableInputAny_OperatorFunction[T, O /* <: ObservableInput[js.Any] */](bufferSize: Double, windowTime: Double): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def publishReplay_TO_ObservableInputAny_OperatorFunction[T, O /* <: ObservableInput[js.Any] */](bufferSize: Unit, windowTime: Double): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("publishReplay")(bufferSize.asInstanceOf[js.Any], windowTime.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
 }

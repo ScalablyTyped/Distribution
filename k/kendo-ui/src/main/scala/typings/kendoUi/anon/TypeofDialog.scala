@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Dialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDialog extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Dialog = js.native
+  def extend(proto: js.Object): Dialog
   
   /* static member */
-  var fn: Dialog = js.native
+  var fn: Dialog
 }
 object TypeofDialog {
   

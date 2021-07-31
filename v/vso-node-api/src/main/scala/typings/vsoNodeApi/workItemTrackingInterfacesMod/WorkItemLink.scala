@@ -2,26 +2,24 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemLink extends StObject {
   
   /**
     * The type of link.
     */
-  var rel: String = js.native
+  var rel: String
   
   /**
     * The source work item.
     */
-  var source: WorkItemReference = js.native
+  var source: WorkItemReference
   
   /**
     * The target work item.
     */
-  var target: WorkItemReference = js.native
+  var target: WorkItemReference
 }
 object WorkItemLink {
   

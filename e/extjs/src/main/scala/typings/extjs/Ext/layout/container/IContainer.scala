@@ -6,17 +6,17 @@ import typings.extjs.Ext.layout.IContextItem
 import typings.extjs.Ext.layout.ILayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.util.IElementContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined addChildEls, removeChildEls */ @js.native
-trait IContainer extends ILayout {
+- typings.extjs.Ext.util.IElementContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined addChildEls, removeChildEls */ trait IContainer
+  extends StObject
+     with ILayout {
   
   /** [Method] Adds each argument passed to this method to the childEls array  */
-  var addChildEls: js.UndefOr[js.Function0[Unit]] = js.native
+  var addChildEls: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
     * @param ownerContext Object
@@ -25,19 +25,19 @@ trait IContainer extends ILayout {
   @JSName("beginLayoutCycle")
   var beginLayoutCycle_IContainer: js.UndefOr[
     js.Function2[/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] In addition to work done by our base classes containers benefit from some extra cached data
     * @param ownerContext Object
     */
   @JSName("beginLayout")
-  var beginLayout_IContainer: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayout_IContainer: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Adds layout s itemCls and owning Container s itemCls
     * @param item Object
     */
   @JSName("configureItem")
-  var configureItem_IContainer: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
+  var configureItem_IContainer: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Returns the container size that of the target
     * @param ownerContext Ext.layout.ContextItem The owner's context item.
@@ -45,50 +45,50 @@ trait IContainer extends ILayout {
     * @returns Object The size
     */
   var getContainerSize: js.UndefOr[
-    js.Function2[/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], _]
-  ] = js.native
+    js.Function2[/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], js.Any]
+  ] = js.undefined
   
   /** [Method] Returns the element into which extra functional DOM elements can be inserted
     * @returns Ext.Element
     */
-  var getElementTarget: js.UndefOr[js.Function0[IElement]] = js.native
+  var getElementTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Returns an array of child components either for a render phase Performed in the beforeLayout method of the layout s
     * @returns Ext.Component[] of child components
     */
   @JSName("getLayoutItems")
-  var getLayoutItems_IContainer: js.UndefOr[js.Function0[Array]] = js.native
+  var getLayoutItems_IContainer: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the element into which rendering must take place
     * @returns Ext.Element
     */
-  var getRenderTarget: js.UndefOr[js.Function0[IElement]] = js.native
+  var getRenderTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Returns all items that are rendered
     * @returns Array All matching items
     */
-  var getRenderedItems: js.UndefOr[js.Function0[Array]] = js.native
+  var getRenderedItems: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the owner component s resize element
     * @returns Ext.Element
     */
-  var getTarget: js.UndefOr[js.Function0[IElement]] = js.native
+  var getTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Returns all items that are both rendered and visible
     * @returns Array All matching items
     */
-  var getVisibleItems: js.UndefOr[js.Function0[Array]] = js.native
+  var getVisibleItems: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Config Option] (String) */
-  var itemCls: js.UndefOr[String] = js.native
+  var itemCls: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var overflowPadderEl: js.UndefOr[IElement] = js.native
+  var overflowPadderEl: js.UndefOr[IElement] = js.undefined
   
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
     * @param testFn Function The test function.
     */
-  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IContainer {
   
@@ -126,7 +126,7 @@ object IContainer {
     def setConfigureItemUndefined: Self = StObject.set(x, "configureItem", js.undefined)
     
     @scala.inline
-    def setGetContainerSize(value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "getContainerSize", js.Any.fromFunction2(value))
+    def setGetContainerSize(value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getContainerSize", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetContainerSizeUndefined: Self = StObject.set(x, "getContainerSize", js.undefined)

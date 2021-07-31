@@ -6,23 +6,21 @@ import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import typings.octokitTypes.urlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestOptionsMod {
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: RequestHeaders = js.native
+    var headers: RequestHeaders
     
-    var method: RequestMethod = js.native
+    var method: RequestMethod
     
-    var request: js.UndefOr[RequestRequestOptions] = js.native
+    var request: js.UndefOr[RequestRequestOptions] = js.undefined
     
-    var url: Url = js.native
+    var url: Url
   }
   object RequestOptions {
     

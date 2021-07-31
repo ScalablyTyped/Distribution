@@ -10,9 +10,9 @@ JavaScript SDK for [LogRocket](https://logrocket.com/)
 | ------------------ | :-------------: |
 | Full name          | logrocket |
 | Keywords           | redux, reducer, state, logging, exceptions, replay, record |
-| # releases         | 24 |
-| # dependents       | 23 |
-| # downloads        | 4854289 |
+| # releases         | 25 |
+| # dependents       | 29 |
+| # downloads        | 5969995 |
 | # stars            | 1 |
 
 ## Links

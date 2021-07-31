@@ -2,26 +2,24 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResendContactReachabilityEmailResponse extends StObject {
   
   /**
     * The domain name for which you requested a confirmation email.
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     * The email address for the registrant contact at the time that we sent the verification email.
     */
-  var emailAddress: js.UndefOr[Email] = js.native
+  var emailAddress: js.UndefOr[Email] = js.undefined
   
   /**
     *  True if the email address for the registrant contact has already been verified, and false otherwise. If the email address has already been verified, we don't send another confirmation email.
     */
-  var isAlreadyVerified: js.UndefOr[Boolean] = js.native
+  var isAlreadyVerified: js.UndefOr[Boolean] = js.undefined
 }
 object ResendContactReachabilityEmailResponse {
   

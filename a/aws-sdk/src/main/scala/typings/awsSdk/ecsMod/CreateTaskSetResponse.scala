@@ -2,13 +2,11 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTaskSetResponse extends StObject {
   
-  var taskSet: js.UndefOr[TaskSet] = js.native
+  var taskSet: js.UndefOr[TaskSet] = js.undefined
 }
 object CreateTaskSetResponse {
   

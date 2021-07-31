@@ -2,39 +2,37 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response message for Capabilities.GetCapabilities.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2ServerCapabilities extends StObject {
   
   /**
     * Capabilities of the remote cache system.
     */
-  var cacheCapabilities: js.UndefOr[SchemaBuildBazelRemoteExecutionV2CacheCapabilities] = js.native
+  var cacheCapabilities: js.UndefOr[SchemaBuildBazelRemoteExecutionV2CacheCapabilities] = js.undefined
   
   /**
     * Earliest RE API version supported, including deprecated versions.
     */
-  var deprecatedApiVersion: js.UndefOr[SchemaBuildBazelSemverSemVer] = js.native
+  var deprecatedApiVersion: js.UndefOr[SchemaBuildBazelSemverSemVer] = js.undefined
   
   /**
     * Capabilities of the remote execution system.
     */
-  var executionCapabilities: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities] = js.native
+  var executionCapabilities: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities] = js.undefined
   
   /**
     * Latest RE API version supported.
     */
-  var highApiVersion: js.UndefOr[SchemaBuildBazelSemverSemVer] = js.native
+  var highApiVersion: js.UndefOr[SchemaBuildBazelSemverSemVer] = js.undefined
   
   /**
     * Earliest non-deprecated RE API version supported.
     */
-  var lowApiVersion: js.UndefOr[SchemaBuildBazelSemverSemVer] = js.native
+  var lowApiVersion: js.UndefOr[SchemaBuildBazelSemverSemVer] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ServerCapabilities {
   

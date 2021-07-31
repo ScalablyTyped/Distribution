@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConformancePackStatusResponse extends StObject {
   
   /**
     * A list of ConformancePackStatusDetail objects.
     */
-  var ConformancePackStatusDetails: js.UndefOr[ConformancePackStatusDetailsList] = js.native
+  var ConformancePackStatusDetails: js.UndefOr[ConformancePackStatusDetailsList] = js.undefined
   
   /**
     * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object DescribeConformancePackStatusResponse {
   

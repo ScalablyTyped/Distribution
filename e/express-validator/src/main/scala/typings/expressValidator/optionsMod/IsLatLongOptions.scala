@@ -2,13 +2,11 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsLatLongOptions extends StObject {
   
-  var checkDMS: js.UndefOr[Boolean] = js.native
+  var checkDMS: js.UndefOr[Boolean] = js.undefined
 }
 object IsLatLongOptions {
   

@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,8 @@ object ActionActivityDefaultColor {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ActionActivityDefaultColor.create")
-  @js.native
-  def create(model: IModel): ActionActivityDefaultColor = js.native
+  @scala.inline
+  def create(model: IModel): ActionActivityDefaultColor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ActionActivityDefaultColor]
   
   /**
     * Creates and returns a new ActionActivityDefaultColor instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object ActionActivityDefaultColor {
     *  8.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ActionActivityDefaultColor.createIn")
-  @js.native
-  def createIn(container: ModelerSettings): ActionActivityDefaultColor = js.native
+  @scala.inline
+  def createIn(container: ModelerSettings): ActionActivityDefaultColor = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ActionActivityDefaultColor]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ActionActivityDefaultColor.structureTypeName")

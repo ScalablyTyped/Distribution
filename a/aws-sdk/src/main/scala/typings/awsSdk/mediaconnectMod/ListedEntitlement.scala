@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListedEntitlement extends StObject {
   
   /**
     * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
     */
-  var DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.native
+  var DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined
   
   /**
     * The ARN of the entitlement.
     */
-  var EntitlementArn: string = js.native
+  var EntitlementArn: string
   
   /**
     * The name of the entitlement.
     */
-  var EntitlementName: string = js.native
+  var EntitlementName: string
 }
 object ListedEntitlement {
   

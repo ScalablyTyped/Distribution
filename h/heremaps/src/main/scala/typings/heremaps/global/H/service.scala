@@ -6,7 +6,6 @@ import typings.heremaps.H.service.AbstractRestService.Options
 import typings.heremaps.H.service.ServiceParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** places *****/
@@ -23,7 +22,8 @@ object service {
     * @param opt_options {H.service.AbstractRestService.Options=}
     */
   class AbstractRestService ()
-    extends typings.heremaps.H.service.AbstractRestService {
+    extends StObject
+       with typings.heremaps.H.service.AbstractRestService {
     def this(opt_options: Options) = this()
   }
   
@@ -38,7 +38,8 @@ object service {
     * @param opt_options {H.service.EnterpriseRoutingService.Options=}
     */
   class EnterpriseRoutingService ()
-    extends typings.heremaps.H.service.EnterpriseRoutingService {
+    extends StObject
+       with typings.heremaps.H.service.EnterpriseRoutingService {
     def this(opt_options: typings.heremaps.H.service.EnterpriseRoutingService.Options) = this()
   }
   
@@ -52,7 +53,8 @@ object service {
     * @param opt_options {H.service.GeocodingService.Options=}
     */
   class GeocodingService ()
-    extends typings.heremaps.H.service.GeocodingService {
+    extends StObject
+       with typings.heremaps.H.service.GeocodingService {
     def this(opt_options: typings.heremaps.H.service.GeocodingService.Options) = this()
   }
   
@@ -66,7 +68,8 @@ object service {
     * @param opt_options {H.service.MapTileService.Options=}
     */
   class MapTileService ()
-    extends typings.heremaps.H.service.MapTileService {
+    extends StObject
+       with typings.heremaps.H.service.MapTileService {
     def this(opt_options: typings.heremaps.H.service.MapTileService.Options) = this()
   }
   
@@ -80,7 +83,8 @@ object service {
     * @param opt_options {H.service.PlacesService.Options=}
     */
   class PlacesService ()
-    extends typings.heremaps.H.service.PlacesService {
+    extends StObject
+       with typings.heremaps.H.service.PlacesService {
     def this(opt_options: typings.heremaps.H.service.PlacesService.Options) = this()
   }
   object PlacesService {
@@ -93,19 +97,19 @@ object service {
     object EntryPoint extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.service.PlacesService.EntryPoint with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.service.PlacesService.EntryPoint & Double] = js.native
       
-      /* 3 */ val AROUND: typings.heremaps.H.service.PlacesService.EntryPoint.AROUND with Double = js.native
+      /* 3 */ val AROUND: typings.heremaps.H.service.PlacesService.EntryPoint.AROUND & Double = js.native
       
-      /* 5 */ val CATEGORIES: typings.heremaps.H.service.PlacesService.EntryPoint.CATEGORIES with Double = js.native
+      /* 5 */ val CATEGORIES: typings.heremaps.H.service.PlacesService.EntryPoint.CATEGORIES & Double = js.native
       
-      /* 2 */ val EXPLORE: typings.heremaps.H.service.PlacesService.EntryPoint.EXPLORE with Double = js.native
+      /* 2 */ val EXPLORE: typings.heremaps.H.service.PlacesService.EntryPoint.EXPLORE & Double = js.native
       
-      /* 4 */ val HERE: typings.heremaps.H.service.PlacesService.EntryPoint.HERE with Double = js.native
+      /* 4 */ val HERE: typings.heremaps.H.service.PlacesService.EntryPoint.HERE & Double = js.native
       
-      /* 0 */ val SEARCH: typings.heremaps.H.service.PlacesService.EntryPoint.SEARCH with Double = js.native
+      /* 0 */ val SEARCH: typings.heremaps.H.service.PlacesService.EntryPoint.SEARCH & Double = js.native
       
-      /* 1 */ val SUGGEST: typings.heremaps.H.service.PlacesService.EntryPoint.SUGGEST with Double = js.native
+      /* 1 */ val SUGGEST: typings.heremaps.H.service.PlacesService.EntryPoint.SUGGEST & Double = js.native
     }
   }
   
@@ -116,7 +120,8 @@ object service {
   @JSGlobal("H.service.Platform")
   @js.native
   class Platform protected ()
-    extends typings.heremaps.H.service.Platform {
+    extends StObject
+       with typings.heremaps.H.service.Platform {
     /**
       * Constructor
       * @param options {H.service.Platform.Options}
@@ -135,7 +140,8 @@ object service {
     * @param opt_options {H.service.RoutingService.Options=}
     */
   class RoutingService ()
-    extends typings.heremaps.H.service.RoutingService {
+    extends StObject
+       with typings.heremaps.H.service.RoutingService {
     def this(opt_options: typings.heremaps.H.service.RoutingService.Options) = this()
   }
   
@@ -146,7 +152,8 @@ object service {
   @JSGlobal("H.service.Url")
   @js.native
   class Url protected ()
-    extends typings.heremaps.H.service.Url {
+    extends StObject
+       with typings.heremaps.H.service.Url {
     /**
       * Constructor
       * @param scheme {string} - the URL scheme (e.g. "http" or "https" or "mailto")
@@ -158,86 +165,12 @@ object service {
       */
     def this(scheme: String, host: String) = this()
     def this(scheme: String, host: String, opt_path: String) = this()
-    def this(scheme: String, host: String, opt_path: js.UndefOr[scala.Nothing], opt_params: js.Object) = this()
     def this(scheme: String, host: String, opt_path: String, opt_params: js.Object) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: js.UndefOr[scala.Nothing],
-      opt_params: js.UndefOr[scala.Nothing],
-      opt_port: Double
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: js.UndefOr[scala.Nothing],
-      opt_params: js.Object,
-      opt_port: Double
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: String,
-      opt_params: js.UndefOr[scala.Nothing],
-      opt_port: Double
-    ) = this()
+    def this(scheme: String, host: String, opt_path: Unit, opt_params: js.Object) = this()
     def this(scheme: String, host: String, opt_path: String, opt_params: js.Object, opt_port: Double) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: js.UndefOr[scala.Nothing],
-      opt_params: js.UndefOr[scala.Nothing],
-      opt_port: js.UndefOr[scala.Nothing],
-      opt_anchor: String
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: js.UndefOr[scala.Nothing],
-      opt_params: js.UndefOr[scala.Nothing],
-      opt_port: Double,
-      opt_anchor: String
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: js.UndefOr[scala.Nothing],
-      opt_params: js.Object,
-      opt_port: js.UndefOr[scala.Nothing],
-      opt_anchor: String
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: js.UndefOr[scala.Nothing],
-      opt_params: js.Object,
-      opt_port: Double,
-      opt_anchor: String
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: String,
-      opt_params: js.UndefOr[scala.Nothing],
-      opt_port: js.UndefOr[scala.Nothing],
-      opt_anchor: String
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: String,
-      opt_params: js.UndefOr[scala.Nothing],
-      opt_port: Double,
-      opt_anchor: String
-    ) = this()
-    def this(
-      scheme: String,
-      host: String,
-      opt_path: String,
-      opt_params: js.Object,
-      opt_port: js.UndefOr[scala.Nothing],
-      opt_anchor: String
-    ) = this()
+    def this(scheme: String, host: String, opt_path: String, opt_params: Unit, opt_port: Double) = this()
+    def this(scheme: String, host: String, opt_path: Unit, opt_params: js.Object, opt_port: Double) = this()
+    def this(scheme: String, host: String, opt_path: Unit, opt_params: Unit, opt_port: Double) = this()
     def this(
       scheme: String,
       host: String,
@@ -246,8 +179,61 @@ object service {
       opt_port: Double,
       opt_anchor: String
     ) = this()
+    def this(
+      scheme: String,
+      host: String,
+      opt_path: String,
+      opt_params: js.Object,
+      opt_port: Unit,
+      opt_anchor: String
+    ) = this()
+    def this(
+      scheme: String,
+      host: String,
+      opt_path: String,
+      opt_params: Unit,
+      opt_port: Double,
+      opt_anchor: String
+    ) = this()
+    def this(
+      scheme: String,
+      host: String,
+      opt_path: String,
+      opt_params: Unit,
+      opt_port: Unit,
+      opt_anchor: String
+    ) = this()
+    def this(
+      scheme: String,
+      host: String,
+      opt_path: Unit,
+      opt_params: js.Object,
+      opt_port: Double,
+      opt_anchor: String
+    ) = this()
+    def this(
+      scheme: String,
+      host: String,
+      opt_path: Unit,
+      opt_params: js.Object,
+      opt_port: Unit,
+      opt_anchor: String
+    ) = this()
+    def this(
+      scheme: String,
+      host: String,
+      opt_path: Unit,
+      opt_params: Unit,
+      opt_port: Double,
+      opt_anchor: String
+    ) = this()
+    def this(scheme: String, host: String, opt_path: Unit, opt_params: Unit, opt_port: Unit, opt_anchor: String) = this()
   }
   object Url {
+    
+    @JSGlobal("H.service.Url")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This function parses a URL string and returns a H.service.Url object. The URL string must contain at least a scheme and a host.
@@ -256,12 +242,10 @@ object service {
       * @returns {H.service.Url} - the parsed URL object
       */
     /* static member */
-    @JSGlobal("H.service.Url.parse")
-    @js.native
-    def parse(url: String): typings.heremaps.H.service.Url = js.native
-    @JSGlobal("H.service.Url.parse")
-    @js.native
-    def parse(url: String, opt_baseURL: String): typings.heremaps.H.service.Url = js.native
+    @scala.inline
+    def parse(url: String): typings.heremaps.H.service.Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.service.Url]
+    @scala.inline
+    def parse(url: String, opt_baseURL: String): typings.heremaps.H.service.Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], opt_baseURL.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.service.Url]
   }
   
   object metaInfo {
@@ -276,7 +260,8 @@ object service {
       * @param opt_options {H.service.metaInfo.Service.Options=} - additional service parameters
       */
     class Service ()
-      extends typings.heremaps.H.service.metaInfo.Service {
+      extends StObject
+         with typings.heremaps.H.service.metaInfo.Service {
       def this(opt_options: typings.heremaps.H.service.metaInfo.Service.Options) = this()
     }
     
@@ -285,7 +270,9 @@ object service {
       */
     @JSGlobal("H.service.metaInfo.TileProvider")
     @js.native
-    class TileProvider protected () extends RemoteTileProvider {
+    class TileProvider protected ()
+      extends StObject
+         with RemoteTileProvider {
       def this(service: typings.heremaps.H.service.MapTileService) = this()
       /**
         * Constructor
@@ -298,7 +285,7 @@ object service {
       def this(service: typings.heremaps.H.service.metaInfo.Service, opt_params: ServiceParameters) = this()
       def this(
         service: typings.heremaps.H.service.MapTileService,
-        opt_params: js.UndefOr[scala.Nothing],
+        opt_params: Unit,
         opt_options: typings.heremaps.H.service.metaInfo.TileProvider.Options
       ) = this()
       def this(
@@ -308,7 +295,7 @@ object service {
       ) = this()
       def this(
         service: typings.heremaps.H.service.metaInfo.Service,
-        opt_params: js.UndefOr[scala.Nothing],
+        opt_params: Unit,
         opt_options: typings.heremaps.H.service.metaInfo.TileProvider.Options
       ) = this()
       def this(
@@ -332,7 +319,8 @@ object service {
       * @param opt_options {H.service.Service.Options=}
       */
     class Service ()
-      extends typings.heremaps.H.service.traffic.Service {
+      extends StObject
+         with typings.heremaps.H.service.traffic.Service {
       def this(opt_options: typings.heremaps.H.service.traffic.Service.Options) = this()
     }
   }
@@ -345,7 +333,8 @@ object service {
     @JSGlobal("H.service.venues.Building")
     @js.native
     class Building protected ()
-      extends typings.heremaps.H.service.venues.Building {
+      extends StObject
+         with typings.heremaps.H.service.venues.Building {
       /**
         * Constructor
         * @param provider {H.map.provider.ObjectProvider} - The object provider of this venue building
@@ -363,7 +352,8 @@ object service {
     @JSGlobal("H.service.venues.Floor")
     @js.native
     class Floor protected ()
-      extends typings.heremaps.H.service.venues.Floor {
+      extends StObject
+         with typings.heremaps.H.service.venues.Floor {
       /**
         * Constructor
         * @param provider {H.map.provider.ObjectProvider} - The object provider of this venue floor
@@ -383,7 +373,8 @@ object service {
       * @param opt_options {H.service.venues.Service.Options=} - additional service parameters
       */
     class Service ()
-      extends typings.heremaps.H.service.venues.Service {
+      extends StObject
+         with typings.heremaps.H.service.venues.Service {
       def this(opt_options: typings.heremaps.H.service.venues.Service.Options) = this()
     }
     object Service {
@@ -396,13 +387,13 @@ object service {
       object State extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.heremaps.H.service.venues.Service.State with Double] = js.native
+        def apply(value: Double): js.UndefOr[typings.heremaps.H.service.venues.Service.State & Double] = js.native
         
-        /* 0 */ val ERROR: typings.heremaps.H.service.venues.Service.State.ERROR with Double = js.native
+        /* 0 */ val ERROR: typings.heremaps.H.service.venues.Service.State.ERROR & Double = js.native
         
-        /* 1 */ val INIT: typings.heremaps.H.service.venues.Service.State.INIT with Double = js.native
+        /* 1 */ val INIT: typings.heremaps.H.service.venues.Service.State.INIT & Double = js.native
         
-        /* 2 */ val READY: typings.heremaps.H.service.venues.Service.State.READY with Double = js.native
+        /* 2 */ val READY: typings.heremaps.H.service.venues.Service.State.READY & Double = js.native
       }
     }
     
@@ -412,7 +403,8 @@ object service {
     @JSGlobal("H.service.venues.Space")
     @js.native
     class Space protected ()
-      extends typings.heremaps.H.service.venues.Space {
+      extends StObject
+         with typings.heremaps.H.service.venues.Space {
       /**
         * Constructor
         * @param provider {H.map.provider.ObjectProvider} - The provider of this object.
@@ -422,8 +414,8 @@ object service {
         */
       def this(provider: ObjectProvider, uid: String) = this()
       def this(provider: ObjectProvider, uid: String, data: js.Any) = this()
-      def this(provider: ObjectProvider, uid: String, data: js.UndefOr[scala.Nothing], opt_isFloorSpace: Boolean) = this()
       def this(provider: ObjectProvider, uid: String, data: js.Any, opt_isFloorSpace: Boolean) = this()
+      def this(provider: ObjectProvider, uid: String, data: Unit, opt_isFloorSpace: Boolean) = this()
     }
     
     /**
@@ -432,7 +424,8 @@ object service {
     @JSGlobal("H.service.venues.TileProvider")
     @js.native
     class TileProvider protected ()
-      extends typings.heremaps.H.service.venues.TileProvider {
+      extends StObject
+         with typings.heremaps.H.service.venues.TileProvider {
       /**
         * Constructor
         * @param service {H.service.venues.Service}
@@ -453,7 +446,8 @@ object service {
     @JSGlobal("H.service.venues.Venue")
     @js.native
     class Venue protected ()
-      extends typings.heremaps.H.service.venues.Venue {
+      extends StObject
+         with typings.heremaps.H.service.venues.Venue {
       /**
         * Constructor
         * @param provider {H.map.provider.ObjectProvider} - The object provider of this venue

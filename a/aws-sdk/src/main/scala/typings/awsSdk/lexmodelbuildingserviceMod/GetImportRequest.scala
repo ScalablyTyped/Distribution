@@ -2,16 +2,14 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImportRequest extends StObject {
   
   /**
     * The identifier of the import job information to return.
     */
-  var importId: String = js.native
+  var importId: String
 }
 object GetImportRequest {
   

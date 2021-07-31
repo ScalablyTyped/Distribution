@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AndroidMobileAppIdentifier extends MobileAppIdentifier {
+trait AndroidMobileAppIdentifier
+  extends StObject
+     with MobileAppIdentifier {
   
   // The identifier for an app, as specified in the play store.
-  var packageId: js.UndefOr[String] = js.native
+  var packageId: js.UndefOr[String] = js.undefined
 }
 object AndroidMobileAppIdentifier {
   

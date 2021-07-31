@@ -4,22 +4,20 @@ import typings.intercomClient.companyMod.Company
 import typings.intercomClient.intercomClientStrings.companyDotlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Companies extends StObject {
   
-  var companies: js.Array[Company] = js.native
+  var companies: js.Array[Company]
   
-  var `type`: companyDotlist = js.native
+  var `type`: companyDotlist
 }
 object Companies {
   
   @scala.inline
-  def apply(companies: js.Array[Company], `type`: companyDotlist): Companies = {
+  def apply(companies: js.Array[Company]): Companies = {
     val __obj = js.Dynamic.literal(companies = companies.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("company.list")
     __obj.asInstanceOf[Companies]
   }
   

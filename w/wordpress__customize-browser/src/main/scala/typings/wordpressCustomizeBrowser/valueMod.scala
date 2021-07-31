@@ -5,7 +5,6 @@ import typings.jquery.JQuery.TypeOrArray
 import typings.wordpressCustomizeBrowser.classMod.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueMod {
@@ -34,9 +33,9 @@ object valueMod {
     def initialize(): Unit = js.native
     def initialize(initial: T): Unit = js.native
     def initialize(initial: T, options: js.Object): Unit = js.native
-    def initialize(initial: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
     def initialize(initial: String): Unit = js.native
     def initialize(initial: String, options: js.Object): Unit = js.native
+    def initialize(initial: Unit, options: js.Object): Unit = js.native
     
     def instance(args: T): this.type | T = js.native
     

@@ -2,35 +2,33 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aperture extends StObject {
   
-  var aperture: String = js.native
+  var aperture: String
   
-  var camera: String = js.native
+  var camera: String
   
-  var caption: String = js.native
+  var caption: String
   
-  var copyright: String = js.native
+  var copyright: String
   
-  var created_timestamp: String = js.native
+  var created_timestamp: String
   
-  var credit: String = js.native
+  var credit: String
   
-  var focal_length: String = js.native
+  var focal_length: String
   
-  var iso: String = js.native
+  var iso: String
   
-  var keywords: js.Array[String] = js.native
+  var keywords: js.Array[String]
   
-  var orientation: String = js.native
+  var orientation: String
   
-  var shutter_speed: String = js.native
+  var shutter_speed: String
   
-  var title: String = js.native
+  var title: String
 }
 object Aperture {
   

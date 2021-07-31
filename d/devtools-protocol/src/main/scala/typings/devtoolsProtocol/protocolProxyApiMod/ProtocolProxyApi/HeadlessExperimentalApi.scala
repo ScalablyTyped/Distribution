@@ -6,10 +6,8 @@ import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.BeginFrameResp
 import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadlessExperimentalApi extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait HeadlessExperimentalApi extends StObject {
     * BeginFrameControl. Designed for use with --run-all-compositor-stages-before-draw, see also
     * https://goo.gl/3zHXhB for more background.
     */
-  def beginFrame(params: BeginFrameRequest): js.Promise[BeginFrameResponse] = js.native
+  def beginFrame(params: BeginFrameRequest): js.Promise[BeginFrameResponse]
   
   /**
     * Disables headless events for the target.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables headless events for the target.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Issued when the target starts or stops needing BeginFrames.
@@ -39,7 +37,7 @@ trait HeadlessExperimentalApi extends StObject {
   def on_needsBeginFramesChanged(
     event: needsBeginFramesChanged,
     listener: js.Function1[/* params */ NeedsBeginFramesChangedEvent, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object HeadlessExperimentalApi {
   

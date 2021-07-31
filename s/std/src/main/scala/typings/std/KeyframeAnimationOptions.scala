@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyframeAnimationOptions extends KeyframeEffectOptions {
+trait KeyframeAnimationOptions
+  extends StObject
+     with KeyframeEffectOptions {
   
-  var id: js.UndefOr[java.lang.String] = js.native
+  var id: js.UndefOr[java.lang.String] = js.undefined
 }
 object KeyframeAnimationOptions {
   

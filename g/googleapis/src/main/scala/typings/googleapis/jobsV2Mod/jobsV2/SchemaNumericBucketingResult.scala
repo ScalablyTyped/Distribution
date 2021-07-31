@@ -2,32 +2,30 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Custom numeric bucketing result.
   */
-@js.native
 trait SchemaNumericBucketingResult extends StObject {
   
   /**
     * Count within each bucket. Its size is the length of
     * NumericBucketingOption.bucket_bounds plus 1.
     */
-  var counts: js.UndefOr[js.Array[SchemaBucketizedCount]] = js.native
+  var counts: js.UndefOr[js.Array[SchemaBucketizedCount]] = js.undefined
   
   /**
     * Stores the maximum value of the numeric field. Will be populated only if
     * [NumericBucketingOption.requires_min_max] is set to true.
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Stores the minimum value of the numeric field. Will be populated only if
     * [NumericBucketingOption.requires_min_max] is set to true.
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
 }
 object SchemaNumericBucketingResult {
   

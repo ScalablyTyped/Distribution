@@ -2,46 +2,44 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationAggregator extends StObject {
   
   /**
     * Provides a list of source accounts and regions to be aggregated.
     */
-  var AccountAggregationSources: js.UndefOr[AccountAggregationSourceList] = js.native
+  var AccountAggregationSources: js.UndefOr[AccountAggregationSourceList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the aggregator.
     */
-  var ConfigurationAggregatorArn: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationAggregatorArn] = js.native
+  var ConfigurationAggregatorArn: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationAggregatorArn] = js.undefined
   
   /**
     * The name of the aggregator.
     */
-  var ConfigurationAggregatorName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationAggregatorName] = js.native
+  var ConfigurationAggregatorName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationAggregatorName] = js.undefined
   
   /**
     * AWS service that created the configuration aggregator.
     */
-  var CreatedBy: js.UndefOr[StringWithCharLimit256] = js.native
+  var CreatedBy: js.UndefOr[StringWithCharLimit256] = js.undefined
   
   /**
     * The time stamp when the configuration aggregator was created.
     */
-  var CreationTime: js.UndefOr[Date] = js.native
+  var CreationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time of the last update.
     */
-  var LastUpdatedTime: js.UndefOr[Date] = js.native
+  var LastUpdatedTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Provides an organization and list of regions to be aggregated.
     */
-  var OrganizationAggregationSource: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationAggregationSource] = js.native
+  var OrganizationAggregationSource: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationAggregationSource] = js.undefined
 }
 object ConfigurationAggregator {
   

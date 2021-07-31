@@ -4,7 +4,6 @@ import typings.agSimpleBroker.mod.PublishData
 import typings.agSimpleBroker.mod.SubscribeData
 import typings.agSimpleBroker.mod.UnsubscribeData
 import typings.jsonwebtoken.mod.Secret
-import typings.sccBrokerClient.clusterBrokerClientMod.^
 import typings.sccBrokerClient.sccBrokerClientStrings.publish
 import typings.sccBrokerClient.sccBrokerClientStrings.simple
 import typings.sccBrokerClient.sccBrokerClientStrings.skeletonRendezvous
@@ -12,14 +11,16 @@ import typings.sccBrokerClient.sccBrokerClientStrings.subscribe
 import typings.sccBrokerClient.sccBrokerClientStrings.unsubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scc-broker-client", "attach")
+  @JSImport("scc-broker-client", JSImport.Namespace)
   @js.native
-  def attach(broker: Broker, options: SCCBrokerClientOptions): ^ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def attach(broker: Broker, options: SCCBrokerClientOptions): typings.sccBrokerClient.clusterBrokerClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(broker.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.sccBrokerClient.clusterBrokerClientMod.^]
   
   @js.native
   trait Broker extends StObject {
@@ -36,14 +37,13 @@ object mod {
     def subscriptions(): js.Array[String] = js.native
   }
   
-  @js.native
   trait MappingEngine extends StObject {
     
-    def findSite(key: String): String = js.native
+    def findSite(key: String): String
     
-    def getSites(): js.Array[String] = js.native
+    def getSites(): js.Array[String]
     
-    def setSites(sites: js.Array[String]): Unit = js.native
+    def setSites(sites: js.Array[String]): Unit
   }
   object MappingEngine {
     
@@ -67,38 +67,37 @@ object mod {
     }
   }
   
-  @js.native
   trait SCCBrokerClientOptions extends StObject {
     
-    var authKey: js.UndefOr[Secret] = js.native
+    var authKey: js.UndefOr[Secret] = js.undefined
     
-    var brokerRetryDelay: js.UndefOr[Double] = js.native
+    var brokerRetryDelay: js.UndefOr[Double] = js.undefined
     
-    var clientPoolSize: js.UndefOr[Double] = js.native
+    var clientPoolSize: js.UndefOr[Double] = js.undefined
     
-    var instanceId: js.UndefOr[String] = js.native
+    var instanceId: js.UndefOr[String] = js.undefined
     
-    var instanceIp: js.UndefOr[String] = js.native
+    var instanceIp: js.UndefOr[String] = js.undefined
     
-    var instanceIpFamily: js.UndefOr[String] = js.native
+    var instanceIpFamily: js.UndefOr[String] = js.undefined
     
-    var instancePort: js.UndefOr[Double] = js.native
+    var instancePort: js.UndefOr[Double] = js.undefined
     
-    var mappingEngine: js.UndefOr[skeletonRendezvous | simple | MappingEngine] = js.native
+    var mappingEngine: js.UndefOr[skeletonRendezvous | simple | MappingEngine] = js.undefined
     
-    var noErrorLogging: js.UndefOr[Boolean] = js.native
+    var noErrorLogging: js.UndefOr[Boolean] = js.undefined
     
-    var pubSubBatchDuration: js.UndefOr[Double] = js.native
+    var pubSubBatchDuration: js.UndefOr[Double] = js.undefined
     
-    var stateServerAckTimeout: js.UndefOr[Double] = js.native
+    var stateServerAckTimeout: js.UndefOr[Double] = js.undefined
     
-    var stateServerConnectTimeout: js.UndefOr[Double] = js.native
+    var stateServerConnectTimeout: js.UndefOr[Double] = js.undefined
     
-    var stateServerHost: String = js.native
+    var stateServerHost: String
     
-    var stateServerPort: js.UndefOr[Double] = js.native
+    var stateServerPort: js.UndefOr[Double] = js.undefined
     
-    var stateServerReconnectRandomness: js.UndefOr[Double] = js.native
+    var stateServerReconnectRandomness: js.UndefOr[Double] = js.undefined
   }
   object SCCBrokerClientOptions {
     

@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Local
 import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait LinkedDataTypeAddedEventArgs extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait LinkedDataTypeAddedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var serviceId: Double = js.native
+  var serviceId: Double
   
   /**
     *
@@ -34,7 +32,7 @@ trait LinkedDataTypeAddedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -43,14 +41,14 @@ trait LinkedDataTypeAddedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var `type`: LinkedDataTypeLinkedDataTypeAdded = js.native
+  var `type`: LinkedDataTypeLinkedDataTypeAdded
 }
 object LinkedDataTypeAddedEventArgs {
   
   @scala.inline
-  def apply(serviceId: Double, source: EventSource | Local | Remote, `type`: LinkedDataTypeLinkedDataTypeAdded): LinkedDataTypeAddedEventArgs = {
+  def apply(serviceId: Double, source: EventSource | Local | Remote): LinkedDataTypeAddedEventArgs = {
     val __obj = js.Dynamic.literal(serviceId = serviceId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LinkedDataTypeLinkedDataTypeAdded")
     __obj.asInstanceOf[LinkedDataTypeAddedEventArgs]
   }
   

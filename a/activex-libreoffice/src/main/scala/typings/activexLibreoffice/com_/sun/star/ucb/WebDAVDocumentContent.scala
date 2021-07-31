@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,11 +24,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.ucb.WebDAVContentProvider
   * @see com.sun.star.ucb.WebDAVFolderContent
   */
-@js.native
 trait WebDAVDocumentContent
-  extends XCommandProcessor2
+  extends StObject
      with XComponent
      with XContent
+     with XCommandProcessor2
      with XPropertiesChangeNotifier
      with XPropertyContainer
      with XPropertySetInfoChangeNotifier

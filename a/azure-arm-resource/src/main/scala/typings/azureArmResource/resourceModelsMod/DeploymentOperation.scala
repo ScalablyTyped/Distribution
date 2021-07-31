@@ -2,26 +2,24 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentOperation extends StObject {
   
   /**
     * Full deployment operation ID.
     */
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
   /**
     * Deployment operation ID.
     */
-  val operationId: js.UndefOr[String] = js.native
+  val operationId: js.UndefOr[String] = js.undefined
   
   /**
     * Deployment properties.
     */
-  var properties: js.UndefOr[DeploymentOperationProperties] = js.native
+  var properties: js.UndefOr[DeploymentOperationProperties] = js.undefined
 }
 object DeploymentOperation {
   

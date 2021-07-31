@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data about how to display a mini contact card. */
-@js.native
 trait ContactCardOptions extends StObject {
   
   /** Gets or sets a value that specifies the type of header to display on the contact card. */
-  var headerKind: ContactCardHeaderKind = js.native
+  var headerKind: ContactCardHeaderKind
   
   /** Gets or sets a value that indicates which tab to display first on a mini contact card. */
-  var initialTabKind: ContactCardTabKind = js.native
+  var initialTabKind: ContactCardTabKind
   
   /** Gets a list to which you can add ContactList.Id values to search for on the server. */
-  var serverSearchContactListIds: IVector[String] = js.native
+  var serverSearchContactListIds: IVector[String]
 }
 object ContactCardOptions {
   

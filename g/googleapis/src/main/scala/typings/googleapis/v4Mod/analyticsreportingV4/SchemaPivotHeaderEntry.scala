@@ -2,30 +2,28 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The headers for the each of the metric column corresponding to the metrics
   * requested in the pivots section of the response.
   */
-@js.native
 trait SchemaPivotHeaderEntry extends StObject {
   
   /**
     * The name of the dimensions in the pivot response.
     */
-  var dimensionNames: js.UndefOr[js.Array[String]] = js.native
+  var dimensionNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The values for the dimensions in the pivot.
     */
-  var dimensionValues: js.UndefOr[js.Array[String]] = js.native
+  var dimensionValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The metric header for the metric in the pivot.
     */
-  var metric: js.UndefOr[SchemaMetricHeaderEntry] = js.native
+  var metric: js.UndefOr[SchemaMetricHeaderEntry] = js.undefined
 }
 object SchemaPivotHeaderEntry {
   

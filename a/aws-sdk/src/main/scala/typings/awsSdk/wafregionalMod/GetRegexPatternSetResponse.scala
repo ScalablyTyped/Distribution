@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRegexPatternSetResponse extends StObject {
   
   /**
     * Information about the RegexPatternSet that you specified in the GetRegexPatternSet request, including the identifier of the pattern set and the regular expression patterns you want AWS WAF to search for. 
     */
-  var RegexPatternSet: js.UndefOr[typings.awsSdk.wafregionalMod.RegexPatternSet] = js.native
+  var RegexPatternSet: js.UndefOr[typings.awsSdk.wafregionalMod.RegexPatternSet] = js.undefined
 }
 object GetRegexPatternSetResponse {
   

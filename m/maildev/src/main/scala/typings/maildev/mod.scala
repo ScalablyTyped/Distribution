@@ -4,7 +4,6 @@ import typings.node.fsMod.ReadStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,9 @@ object mod {
   /* was `typeof MailDev` */
   @JSImport("maildev", JSImport.Namespace)
   @js.native
-  class ^ protected () extends MailDev {
+  class ^ protected ()
+    extends StObject
+       with MailDev {
     /**
       * Constructor.
       *

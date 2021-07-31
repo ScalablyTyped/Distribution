@@ -2,17 +2,15 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstraintData extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var order: Double = js.native
+  var order: Double
   
-  var skinRequired: Boolean = js.native
+  var skinRequired: Boolean
 }
 object ConstraintData {
   

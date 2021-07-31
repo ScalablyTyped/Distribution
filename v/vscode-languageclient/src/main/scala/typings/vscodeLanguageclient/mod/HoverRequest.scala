@@ -6,7 +6,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.HoverParams
 import typings.vscodeLanguageserverProtocol.protocolMod.HoverRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HoverRequest {

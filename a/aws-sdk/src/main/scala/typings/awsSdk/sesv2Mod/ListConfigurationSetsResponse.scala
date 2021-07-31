@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigurationSetsResponse extends StObject {
   
   /**
     * An array that contains all of the configuration sets in your Amazon SES account in the current AWS Region.
     */
-  var ConfigurationSets: js.UndefOr[ConfigurationSetNameList] = js.native
+  var ConfigurationSets: js.UndefOr[ConfigurationSetNameList] = js.undefined
   
   /**
     * A token that indicates that there are additional configuration sets to list. To view additional configuration sets, issue another request to ListConfigurationSets, and pass this token in the NextToken parameter.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
 }
 object ListConfigurationSetsResponse {
   

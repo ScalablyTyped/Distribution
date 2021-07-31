@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Declares client constants that specify the task title position.
   */
-@js.native
 trait ASPxClientGanttTaskTitlePosition extends StObject {
   
   /**
     * Displays the title inside the task.
     */
-  var Inside: Double = js.native
+  var Inside: Double
   
   /**
     * The title is hidden.
     */
-  var None: Double = js.native
+  var None: Double
   
   /**
     * Displays the title outside the task.
     */
-  var Outside: Double = js.native
+  var Outside: Double
 }
 object ASPxClientGanttTaskTitlePosition {
   

@@ -2,7 +2,6 @@ package typings.agGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlFactoryMod {
@@ -17,12 +16,11 @@ object xmlFactoryMod {
     /* private */ def returnAttributeIfPopulated(key: js.Any, value: js.Any, booleanTransformer: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait PrefixedXmlAttributes extends StObject {
     
-    var map: js.Any = js.native
+    var map: js.Any
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object PrefixedXmlAttributes {
     
@@ -43,12 +41,11 @@ object xmlFactoryMod {
     }
   }
   
-  @js.native
   trait XmlAttributes extends StObject {
     
-    var prefixedAttributes: js.UndefOr[js.Array[PrefixedXmlAttributes]] = js.native
+    var prefixedAttributes: js.UndefOr[js.Array[PrefixedXmlAttributes]] = js.undefined
     
-    var rawMap: js.UndefOr[js.Any] = js.native
+    var rawMap: js.UndefOr[js.Any] = js.undefined
   }
   object XmlAttributes {
     
@@ -78,16 +75,15 @@ object xmlFactoryMod {
     }
   }
   
-  @js.native
   trait XmlElement extends StObject {
     
-    var children: js.UndefOr[js.Array[XmlElement]] = js.native
+    var children: js.UndefOr[js.Array[XmlElement]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var properties: js.UndefOr[XmlAttributes] = js.native
+    var properties: js.UndefOr[XmlAttributes] = js.undefined
     
-    var textNode: js.UndefOr[String] = js.native
+    var textNode: js.UndefOr[String] = js.undefined
   }
   object XmlElement {
     

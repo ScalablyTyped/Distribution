@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsDeidentifytemplatesList extends StandardParameters {
+trait ParamsResourceProjectsDeidentifytemplatesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional comma separated list of fields to order by, followed by `asc` or
@@ -27,25 +27,25 @@ trait ParamsResourceProjectsDeidentifytemplatesList extends StandardParameters {
     * `name`: corresponds to template's name. - `display_name`: corresponds to
     * template's display name.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Optional size of the page, can be limited by server. If zero server
     * returns a page of max size 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional page token to continue retrieval. Comes from previous call to
     * `ListDeidentifyTemplates`.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The parent resource name, for example projects/my-project-id or
     * organizations/my-org-id.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsDeidentifytemplatesList {
   

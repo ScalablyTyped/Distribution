@@ -2,17 +2,15 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamFileInput extends StObject {
   
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var stream: js.Any = js.native
+  var stream: js.Any
 }
 object StreamFileInput {
   

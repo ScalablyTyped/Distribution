@@ -3,21 +3,22 @@ package typings.ecmarkdown
 import typings.ecmarkdown.nodeTypesMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visitorMod {
   
-  @JSImport("ecmarkdown/dist/visitor", "visit")
+  @JSImport("ecmarkdown/dist/visitor", JSImport.Namespace)
   @js.native
-  def visit(node: Node, observer: Observer): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def visit(node: Node, observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Observer extends StObject {
     
-    var enter: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var enter: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
     
-    var exit: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var exit: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   }
   object Observer {
     

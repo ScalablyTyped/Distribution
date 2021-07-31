@@ -2,27 +2,25 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ParagraphElement representing an equation.
   */
-@js.native
 trait SchemaEquation extends StObject {
   
   /**
     * The suggested deletion IDs. If empty, then there are no suggested
     * deletions of this content.
     */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The suggested insertion IDs. A Equation may have multiple insertion IDs
     * if it is a nested suggested change. If empty, then this is not a
     * suggested insertion.
     */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaEquation {
   

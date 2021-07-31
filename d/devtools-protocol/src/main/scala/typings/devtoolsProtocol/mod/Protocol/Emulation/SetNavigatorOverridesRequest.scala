@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetNavigatorOverridesRequest extends StObject {
   
   /**
     * The platform navigator.platform should return.
     */
-  var platform: String = js.native
+  var platform: String
 }
 object SetNavigatorOverridesRequest {
   

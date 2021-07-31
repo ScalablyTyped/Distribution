@@ -6,7 +6,6 @@ import typings.openfin.externalApplicationMod.ExternalApplicationEvents
 import typings.openfin.identityMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalApplicationExternalApplicationMod {
@@ -105,10 +104,9 @@ object externalApplicationExternalApplicationMod {
     def getInfo(): js.Promise[ExternalApplicationInfo] = js.native
   }
   
-  @js.native
   trait ExternalApplicationInfo extends StObject {
     
-    var parent: Identity = js.native
+    var parent: Identity
   }
   object ExternalApplicationInfo {
     

@@ -6,7 +6,6 @@ import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packageBuildMod {
@@ -29,16 +28,15 @@ object packageBuildMod {
     def tailBuildLog(appflowId: String, buildId: Double, token: String): js.Promise[PackageBuild] = js.native
   }
   
-  @js.native
   trait DownloadUrl extends StObject {
     
-    var url: String | Null = js.native
+    var url: String | Null
   }
   object DownloadUrl {
     
     @scala.inline
     def apply(): DownloadUrl = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(url = null)
       __obj.asInstanceOf[DownloadUrl]
     }
     
@@ -53,44 +51,43 @@ object packageBuildMod {
     }
   }
   
-  @js.native
   trait PackageBuild extends StObject {
     
-    var automation_id: Double = js.native
+    var automation_id: Double
     
-    var automation_name: String = js.native
+    var automation_name: String
     
-    var build_type: String = js.native
+    var build_type: String
     
-    var caller_id: Double = js.native
+    var caller_id: Double
     
-    var commit: js.Any = js.native
+    var commit: js.Any
     
-    var created: String = js.native
+    var created: String
     
-    var environment_id: Double = js.native
+    var environment_id: Double
     
-    var environment_name: String = js.native
+    var environment_name: String
     
-    var finished: String = js.native
+    var finished: String
     
-    var id: String = js.native
+    var id: String
     
-    var job: js.Any = js.native
+    var job: js.Any
     
-    var job_id: Double = js.native
+    var job_id: Double
     
-    var native_config_id: Double = js.native
+    var native_config_id: Double
     
-    var native_config_name: String = js.native
+    var native_config_name: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var profile_tag: String = js.native
+    var profile_tag: String
     
-    var stack: js.Any = js.native
+    var stack: js.Any
     
-    var state: String = js.native
+    var state: String
   }
   object PackageBuild {
     

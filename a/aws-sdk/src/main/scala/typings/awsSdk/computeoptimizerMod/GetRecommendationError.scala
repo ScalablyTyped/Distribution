@@ -2,26 +2,24 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecommendationError extends StObject {
   
   /**
     * The error code.
     */
-  var code: js.UndefOr[Code] = js.native
+  var code: js.UndefOr[Code] = js.undefined
   
   /**
     * The ID of the error.
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * The message, or reason, for the error.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
 }
 object GetRecommendationError {
   

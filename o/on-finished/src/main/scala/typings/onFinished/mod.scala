@@ -5,28 +5,27 @@ import typings.node.httpMod.OutgoingMessage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("on-finished", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     msg: IncomingMessage,
     listener: js.Function2[/* err */ Error | Null, /* msg */ IncomingMessage, Unit]
-  ): IncomingMessage = js.native
-  @JSImport("on-finished", JSImport.Namespace)
-  @js.native
+  ): IncomingMessage = (^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[IncomingMessage]
+  @scala.inline
   def apply(
     msg: OutgoingMessage,
     listener: js.Function2[/* err */ Error | Null, /* msg */ OutgoingMessage, Unit]
-  ): OutgoingMessage = js.native
+  ): OutgoingMessage = (^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[OutgoingMessage]
   
-  @JSImport("on-finished", "isFinished")
+  @JSImport("on-finished", JSImport.Namespace)
   @js.native
-  def isFinished(msg: IncomingMessage): Boolean = js.native
-  @JSImport("on-finished", "isFinished")
-  @js.native
-  def isFinished(msg: OutgoingMessage): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isFinished(msg: IncomingMessage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinished")(msg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isFinished(msg: OutgoingMessage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinished")(msg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -19,7 +19,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractButtonMod {
@@ -27,9 +26,9 @@ object abstractButtonMod {
   @JSImport("@blueprintjs/core/lib/esm/components/button/abstractButton", "AbstractButton")
   @js.native
   abstract class AbstractButton[H /* <: HTMLAttributes[HTMLElement] */] protected ()
-    extends AbstractPureComponent2[IButtonProps with H, IButtonState, js.Object] {
-    def this(props: IButtonProps with H) = this()
-    def this(props: IButtonProps with H, context: js.Any) = this()
+    extends AbstractPureComponent2[IButtonProps & H, IButtonState, js.Object] {
+    def this(props: IButtonProps & H) = this()
+    def this(props: IButtonProps & H, context: js.Any) = this()
     
     var buttonRef: HTMLElement | IRefObject[HTMLElement] | Null = js.native
     
@@ -37,11 +36,11 @@ object abstractButtonMod {
     
     /* protected */ def getCommonButtonProps(): ClassName[H] = js.native
     
-    /* protected */ def handleBlur(e: FocusEvent[_]): Unit = js.native
+    /* protected */ def handleBlur(e: FocusEvent[js.Any]): Unit = js.native
     
-    /* protected */ def handleKeyDown(e: KeyboardEvent[_]): Unit = js.native
+    /* protected */ def handleKeyDown(e: KeyboardEvent[js.Any]): Unit = js.native
     
-    /* protected */ def handleKeyUp(e: KeyboardEvent[_]): Unit = js.native
+    /* protected */ def handleKeyUp(e: KeyboardEvent[js.Any]): Unit = js.native
     
     /* protected */ def renderChildren(): ReactNode = js.native
     
@@ -49,9 +48,9 @@ object abstractButtonMod {
     var state_AbstractButton: IsActive = js.native
   }
   
-  @js.native
   trait IButtonProps
-    extends IActionProps
+    extends StObject
+       with IActionProps
        with IElementRefProps[js.Any] {
     
     /**
@@ -59,7 +58,7 @@ object abstractButtonMod {
       * This is equivalent to setting `className={Classes.ACTIVE}`.
       * @default false
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text alignment within button. By default, icons and text will be centered
@@ -68,39 +67,39 @@ object abstractButtonMod {
       * `"center"` will center the text and icons together.
       * @default Alignment.CENTER
       */
-    var alignText: js.UndefOr[Alignment] = js.native
+    var alignText: js.UndefOr[Alignment] = js.undefined
     
     /** Whether this button should expand to fill its container. */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /** Whether this button should use large styles. */
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, the button will display a centered loading spinner instead of its contents.
       * The width of the button is not affected by the value of this prop.
       * @default false
       */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /** Whether this button should use minimal styles. */
-    var minimal: js.UndefOr[Boolean] = js.native
+    var minimal: js.UndefOr[Boolean] = js.undefined
     
     /** Whether this button should use outlined styles. */
-    var outlined: js.UndefOr[Boolean] = js.native
+    var outlined: js.UndefOr[Boolean] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render after the text. */
-    var rightIcon: js.UndefOr[IconName | MaybeElement] = js.native
+    var rightIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /** Whether this button should use small styles. */
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
     
     /**
       * HTML `type` attribute of button. Accepted values are `"button"`, `"submit"`, and `"reset"`.
       * Note that this prop has no effect on `AnchorButton`; it only affects `Button`.
       * @default "button"
       */
-    var `type`: js.UndefOr[submit | reset | button] = js.native
+    var `type`: js.UndefOr[submit | reset | button] = js.undefined
   }
   object IButtonProps {
     
@@ -178,10 +177,9 @@ object abstractButtonMod {
     }
   }
   
-  @js.native
   trait IButtonState extends StObject {
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
   }
   object IButtonState {
     

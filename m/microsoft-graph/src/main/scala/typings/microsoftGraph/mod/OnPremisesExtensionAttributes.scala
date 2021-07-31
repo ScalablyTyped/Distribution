@@ -2,56 +2,54 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPremisesExtensionAttributes extends StObject {
   
   // First customizable extension attribute.
-  var extensionAttribute1: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute1: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Tenth customizable extension attribute.
-  var extensionAttribute10: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute10: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Eleventh customizable extension attribute.
-  var extensionAttribute11: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute11: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Twelfth customizable extension attribute.
-  var extensionAttribute12: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute12: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Thirteenth customizable extension attribute.
-  var extensionAttribute13: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute13: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Fourteenth customizable extension attribute.
-  var extensionAttribute14: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute14: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Fifteenth customizable extension attribute.
-  var extensionAttribute15: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute15: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Second customizable extension attribute.
-  var extensionAttribute2: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute2: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Third customizable extension attribute.
-  var extensionAttribute3: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute3: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Fourth customizable extension attribute.
-  var extensionAttribute4: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute4: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Fifth customizable extension attribute.
-  var extensionAttribute5: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute5: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Sixth customizable extension attribute.
-  var extensionAttribute6: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute6: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Seventh customizable extension attribute.
-  var extensionAttribute7: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute7: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Eighth customizable extension attribute.
-  var extensionAttribute8: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute8: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Ninth customizable extension attribute.
-  var extensionAttribute9: js.UndefOr[NullableOption[String]] = js.native
+  var extensionAttribute9: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnPremisesExtensionAttributes {
   

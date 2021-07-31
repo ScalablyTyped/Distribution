@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,26 +14,42 @@ sealed trait HorizontalAlignment extends StObject
 object HorizontalAlignment extends StObject {
   
   @js.native
-  sealed trait center extends HorizontalAlignment
+  sealed trait center
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait centerAcrossSelection extends HorizontalAlignment
+  sealed trait centerAcrossSelection
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait distributed extends HorizontalAlignment
+  sealed trait distributed
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait fill extends HorizontalAlignment
+  sealed trait fill
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait general extends HorizontalAlignment
+  sealed trait general
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait justify extends HorizontalAlignment
+  sealed trait justify
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait left extends HorizontalAlignment
+  sealed trait left
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait right extends HorizontalAlignment
+  sealed trait right
+    extends StObject
+       with HorizontalAlignment
 }

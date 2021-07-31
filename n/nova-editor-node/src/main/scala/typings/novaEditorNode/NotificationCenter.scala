@@ -2,16 +2,14 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/notification-center/
-@js.native
 trait NotificationCenter extends StObject {
   
-  def add(request: NotificationRequest): js.Promise[NotificationResponse] = js.native
+  def add(request: NotificationRequest): js.Promise[NotificationResponse]
   
-  def cancel(identifier: String): Unit = js.native
+  def cancel(identifier: String): Unit
 }
 object NotificationCenter {
   

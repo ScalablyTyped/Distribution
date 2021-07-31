@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SortableCancelEvent extends SortableEvent {
+trait SortableCancelEvent
+  extends StObject
+     with SortableEvent {
   
-  var item: js.UndefOr[JQuery] = js.native
+  var item: js.UndefOr[JQuery] = js.undefined
 }
 object SortableCancelEvent {
   

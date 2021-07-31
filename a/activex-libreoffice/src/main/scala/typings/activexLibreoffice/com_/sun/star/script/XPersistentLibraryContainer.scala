@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,16 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The actual libraries are stored in some object - a sub folder, or a sub storage, for example - below the root location.
   * @since OOo 2.3
   */
-@js.native
 trait XPersistentLibraryContainer
-  extends XLibraryContainer2
-     with XModifiable {
+  extends StObject
+     with XModifiable
+     with XLibraryContainer2 {
   
   /**
     * denotes the name of the sub location where the container elements are actually stored.
     * @see RootLocation
     */
-  var ContainerLocationName: String = js.native
+  var ContainerLocationName: String
   
   /**
     * denotes the root location associated with the container.
@@ -40,7 +39,7 @@ trait XPersistentLibraryContainer
     * {@link ContainerLocationName} .
     * @see ContainerLocationName
     */
-  var RootLocation: js.Any = js.native
+  var RootLocation: js.Any
   
   /**
     * stores the libraries to the current location.
@@ -48,7 +47,7 @@ trait XPersistentLibraryContainer
     * @see ContainerLocationName
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs during storing.
     */
-  def storeLibraries(): Unit = js.native
+  def storeLibraries(): Unit
 }
 object XPersistentLibraryContainer {
   

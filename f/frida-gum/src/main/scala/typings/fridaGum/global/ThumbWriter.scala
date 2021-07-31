@@ -4,7 +4,6 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.ThumbWriterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ThumbWriter")
 @js.native
 class ThumbWriter protected ()
-  extends typings.fridaGum.ThumbWriter {
+  extends StObject
+     with typings.fridaGum.ThumbWriter {
   /**
     * Creates a new code writer for generating ARM machine code
     * written directly to memory at `codeAddress`.

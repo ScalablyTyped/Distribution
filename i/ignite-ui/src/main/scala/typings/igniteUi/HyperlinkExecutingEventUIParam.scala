@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperlinkExecutingEventUIParam extends StObject {
   
   /**
     * Get the [hyperlink](ig.excel.WorksheetHyperlink) to be executed.
     */
-  var hyperlink: js.UndefOr[js.Any] = js.native
+  var hyperlink: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object HyperlinkExecutingEventUIParam {
   

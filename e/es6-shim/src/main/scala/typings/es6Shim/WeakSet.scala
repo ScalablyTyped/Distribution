@@ -2,17 +2,15 @@ package typings.es6Shim
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeakSet[T] extends StObject {
   
-  def add(value: T): WeakSet[T] = js.native
+  def add(value: T): WeakSet[T]
   
-  def delete(value: T): Boolean = js.native
+  def delete(value: T): Boolean
   
-  def has(value: T): Boolean = js.native
+  def has(value: T): Boolean
 }
 object WeakSet {
   
@@ -23,7 +21,7 @@ object WeakSet {
   }
   
   @scala.inline
-  implicit class WeakSetMutableBuilder[Self <: WeakSet[_], T] (val x: Self with WeakSet[T]) extends AnyVal {
+  implicit class WeakSetMutableBuilder[Self <: WeakSet[?], T] (val x: Self & WeakSet[T]) extends AnyVal {
     
     @scala.inline
     def setAdd(value: T => WeakSet[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

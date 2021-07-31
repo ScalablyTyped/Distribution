@@ -2,17 +2,15 @@ package typings.carbonMotion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Expressive extends StObject {
     
-    var expressive: String = js.native
+    var expressive: String
     
-    var productive: String = js.native
+    var productive: String
   }
   object Expressive {
     

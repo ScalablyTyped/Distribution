@@ -7,10 +7,8 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
   /**
@@ -35,15 +33,15 @@ trait Code extends StObject {
     */
   def code(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/code']['response'] */ js.Any
-  ] = js.native
+  ]
   def code(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/code']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/code']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Searches for query terms inside of a file. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -65,7 +63,7 @@ trait Code extends StObject {
     * language:go`](https://github.com/search?utf8=%E2%9C%93&q=amazing+language%3Ago&type=Code) is.
     */
   @JSName("code")
-  var code_Original: `478` = js.native
+  var code_Original: `478`
   
   /**
     * Find commits via various criteria on the default branch (usually `master`). This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
@@ -79,15 +77,15 @@ trait Code extends StObject {
     */
   def commits(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/commits']['response'] */ js.Any
-  ] = js.native
+  ]
   def commits(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/commits']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/commits']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Find commits via various criteria on the default branch (usually `master`). This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -99,7 +97,7 @@ trait Code extends StObject {
     * `q=repo:octocat/Spoon-Knife+css`
     */
   @JSName("commits")
-  var commits_Original: `479` = js.native
+  var commits_Original: `479`
   
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
@@ -115,15 +113,15 @@ trait Code extends StObject {
     */
   def issuesAndPullRequests(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/issues']['response'] */ js.Any
-  ] = js.native
+  ]
   def issuesAndPullRequests(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/issues']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/issues']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -137,7 +135,7 @@ trait Code extends StObject {
     * This query searches for the keyword `windows`, within any open issue that is labeled as `bug`. The search runs across repositories whose primary language is Python. The results are sorted by creation date in ascending order, whick means the oldest issues appear first in the search results.
     */
   @JSName("issuesAndPullRequests")
-  var issuesAndPullRequests_Original: `480` = js.native
+  var issuesAndPullRequests_Original: `480`
   
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
@@ -152,15 +150,15 @@ trait Code extends StObject {
     */
   def labels(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/labels']['response'] */ js.Any
-  ] = js.native
+  ]
   def labels(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/labels']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/labels']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -173,7 +171,7 @@ trait Code extends StObject {
     * The labels that best match the query appear first in the search results.
     */
   @JSName("labels")
-  var labels_Original: `481` = js.native
+  var labels_Original: `481`
   
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
@@ -192,15 +190,15 @@ trait Code extends StObject {
     */
   def repos(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/repositories']['response'] */ js.Any
-  ] = js.native
+  ]
   def repos(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/repositories']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/repositories']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -217,7 +215,7 @@ trait Code extends StObject {
     * `q=topic:ruby+topic:rails`
     */
   @JSName("repos")
-  var repos_Original: `482` = js.native
+  var repos_Original: `482`
   
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination). See "[Searching topics](https://docs.github.com/articles/searching-topics/)" for a detailed list of qualifiers.
@@ -232,15 +230,15 @@ trait Code extends StObject {
     */
   def topics(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/topics']['response'] */ js.Any
-  ] = js.native
+  ]
   def topics(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/topics']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/topics']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination). See "[Searching topics](https://docs.github.com/articles/searching-topics/)" for a detailed list of qualifiers.
     *
@@ -253,7 +251,7 @@ trait Code extends StObject {
     * This query searches for topics with the keyword `ruby` and limits the results to find only topics that are featured. The topics that are the best match for the query appear first in the search results.
     */
   @JSName("topics")
-  var topics_Original: `483` = js.native
+  var topics_Original: `483`
   
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
@@ -268,15 +266,15 @@ trait Code extends StObject {
     */
   def users(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/users']['response'] */ js.Any
-  ] = js.native
+  ]
   def users(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/users']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/users']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -289,5 +287,46 @@ trait Code extends StObject {
     * This query searches for users with the name `tom`. The results are restricted to users with more than 42 repositories and over 1,000 followers.
     */
   @JSName("users")
-  var users_Original: `484` = js.native
+  var users_Original: `484`
+}
+object Code {
+  
+  @scala.inline
+  def apply(
+    code: `478`,
+    commits: `479`,
+    issuesAndPullRequests: `480`,
+    labels: `481`,
+    repos: `482`,
+    topics: `483`,
+    users: `484`
+  ): Code = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], issuesAndPullRequests = issuesAndPullRequests.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Code]
+  }
+  
+  @scala.inline
+  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCode(value: `478`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCommits(value: `479`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIssuesAndPullRequests(value: `480`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLabels(value: `481`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRepos(value: `482`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTopics(value: `483`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUsers(value: `484`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+  }
 }

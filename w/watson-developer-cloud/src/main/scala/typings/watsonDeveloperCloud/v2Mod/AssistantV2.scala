@@ -3,7 +3,6 @@ package typings.watsonDeveloperCloud.v2Mod
 import typings.ibmCloudSdkCore.mod.BaseService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,8 +30,8 @@ trait AssistantV2 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createSession(params: CreateSessionParams): js.Promise[_] | Unit = js.native
-  def createSession(params: CreateSessionParams, callback: Callback[SessionResponse]): js.Promise[_] | Unit = js.native
+  def createSession(params: CreateSessionParams): js.Promise[js.Any] | Unit = js.native
+  def createSession(params: CreateSessionParams, callback: Callback[SessionResponse]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete session.
@@ -50,8 +49,8 @@ trait AssistantV2 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteSession(params: DeleteSessionParams): js.Promise[_] | Unit = js.native
-  def deleteSession(params: DeleteSessionParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteSession(params: DeleteSessionParams): js.Promise[js.Any] | Unit = js.native
+  def deleteSession(params: DeleteSessionParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * message
@@ -78,6 +77,6 @@ trait AssistantV2 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def message(params: MessageParams): js.Promise[_] | Unit = js.native
-  def message(params: MessageParams, callback: Callback[MessageResponse]): js.Promise[_] | Unit = js.native
+  def message(params: MessageParams): js.Promise[js.Any] | Unit = js.native
+  def message(params: MessageParams, callback: Callback[MessageResponse]): js.Promise[js.Any] | Unit = js.native
 }

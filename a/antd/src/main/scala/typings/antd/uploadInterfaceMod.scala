@@ -33,7 +33,6 @@ import typings.std.Error
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadInterfaceMod {
@@ -63,9 +62,9 @@ object uploadInterfaceMod {
     var headers: js.Object = js.native
     
     def onError(error: Error): Unit = js.native
-    def onError(error: Error, response: js.UndefOr[scala.Nothing], file: RcFile): Unit = js.native
     def onError(error: Error, response: js.Any): Unit = js.native
     def onError(error: Error, response: js.Any, file: RcFile): Unit = js.native
+    def onError(error: Error, response: Unit, file: RcFile): Unit = js.native
     
     def onProgress(event: PercentNumber, file: RcFile): Unit = js.native
     
@@ -75,7 +74,9 @@ object uploadInterfaceMod {
   }
   
   @js.native
-  trait RcFile extends File {
+  trait RcFile
+    extends StObject
+       with File {
     
     val lastModifiedDate: Date = js.native
     
@@ -84,18 +85,17 @@ object uploadInterfaceMod {
     val webkitRelativePath: String = js.native
   }
   
-  @js.native
   trait ShowUploadListInterface extends StObject {
     
-    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])] = js.native
+    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.undefined
     
-    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])] = js.native
+    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.undefined
     
-    var showDownloadIcon: js.UndefOr[Boolean] = js.native
+    var showDownloadIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showPreviewIcon: js.UndefOr[Boolean] = js.native
+    var showPreviewIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showRemoveIcon: js.UndefOr[Boolean] = js.native
+    var showRemoveIcon: js.UndefOr[Boolean] = js.undefined
   }
   object ShowUploadListInterface {
     
@@ -109,19 +109,19 @@ object uploadInterfaceMod {
     implicit class ShowUploadListInterfaceMutableBuilder[Self <: ShowUploadListInterface] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDownloadIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
+      def setDownloadIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDownloadIconFunction1(value: /* file */ UploadFile[_] => ReactNode): Self = StObject.set(x, "downloadIcon", js.Any.fromFunction1(value))
+      def setDownloadIconFunction1(value: /* file */ UploadFile[js.Any] => ReactNode): Self = StObject.set(x, "downloadIcon", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownloadIconUndefined: Self = StObject.set(x, "downloadIcon", js.undefined)
       
       @scala.inline
-      def setRemoveIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      def setRemoveIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRemoveIconFunction1(value: /* file */ UploadFile[_] => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
+      def setRemoveIconFunction1(value: /* file */ UploadFile[js.Any] => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
@@ -148,25 +148,24 @@ object uploadInterfaceMod {
   
   type TransformFileHandler = js.Function1[/* file */ RcFile, String | Blob | File | (js.Thenable[String | Blob | File])]
   
-  @js.native
   trait UploadChangeParam[T /* <: js.Object */] extends StObject {
     
-    var event: js.UndefOr[PercentNumber] = js.native
+    var event: js.UndefOr[PercentNumber] = js.undefined
     
-    var file: T = js.native
+    var file: T
     
-    var fileList: js.Array[UploadFile[_]] = js.native
+    var fileList: js.Array[UploadFile[js.Any]]
   }
   object UploadChangeParam {
     
     @scala.inline
-    def apply[T /* <: js.Object */](file: T, fileList: js.Array[UploadFile[_]]): UploadChangeParam[T] = {
+    def apply[T /* <: js.Object */](file: T, fileList: js.Array[UploadFile[js.Any]]): UploadChangeParam[T] = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadChangeParam[T]]
     }
     
     @scala.inline
-    implicit class UploadChangeParamMutableBuilder[Self <: UploadChangeParam[_], T /* <: js.Object */] (val x: Self with UploadChangeParam[T]) extends AnyVal {
+    implicit class UploadChangeParamMutableBuilder[Self <: UploadChangeParam[?], T /* <: js.Object */] (val x: Self & UploadChangeParam[T]) extends AnyVal {
       
       @scala.inline
       def setEvent(value: PercentNumber): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
@@ -178,49 +177,48 @@ object uploadInterfaceMod {
       def setFile(value: T): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFileList(value: js.Array[UploadFile[_]]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+      def setFileList(value: js.Array[UploadFile[js.Any]]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFileListVarargs(value: UploadFile[js.Any]*): Self = StObject.set(x, "fileList", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait UploadFile[T] extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var lastModified: js.UndefOr[Double] = js.native
+    var lastModified: js.UndefOr[Double] = js.undefined
     
-    var lastModifiedDate: js.UndefOr[Date] = js.native
+    var lastModifiedDate: js.UndefOr[Date] = js.undefined
     
-    var linkProps: js.UndefOr[js.Any] = js.native
+    var linkProps: js.UndefOr[js.Any] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var originFileObj: js.UndefOr[File | Blob] = js.native
+    var originFileObj: js.UndefOr[File | Blob] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var preview: js.UndefOr[String] = js.native
+    var preview: js.UndefOr[String] = js.undefined
     
-    var response: js.UndefOr[T] = js.native
+    var response: js.UndefOr[T] = js.undefined
     
-    var size: Double = js.native
+    var size: Double
     
-    var status: js.UndefOr[UploadFileStatus] = js.native
+    var status: js.UndefOr[UploadFileStatus] = js.undefined
     
-    var thumbUrl: js.UndefOr[String] = js.native
+    var thumbUrl: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var uid: String = js.native
+    var uid: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var xhr: js.UndefOr[T] = js.native
+    var xhr: js.UndefOr[T] = js.undefined
   }
   object UploadFile {
     
@@ -232,7 +230,7 @@ object uploadInterfaceMod {
     }
     
     @scala.inline
-    implicit class UploadFileMutableBuilder[Self <: UploadFile[_], T] (val x: Self with UploadFile[T]) extends AnyVal {
+    implicit class UploadFileMutableBuilder[Self <: UploadFile[?], T] (val x: Self & UploadFile[T]) extends AnyVal {
       
       @scala.inline
       def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
@@ -353,44 +351,43 @@ object uploadInterfaceMod {
   }
   
   /* Inlined std.Omit<antd.antd/lib/progress.ProgressProps, 'percent' | 'type'> */
-  @js.native
   trait UploadListProgressProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     var format: js.UndefOr[
         js.Function2[/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double], ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var gapDegree: js.UndefOr[Double] = js.native
+    var gapDegree: js.UndefOr[Double] = js.undefined
     
-    var gapPosition: js.UndefOr[top | bottom | left | right] = js.native
+    var gapPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showInfo: js.UndefOr[Boolean] = js.native
+    var showInfo: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[ProgressSize] = js.native
+    var size: js.UndefOr[ProgressSize] = js.undefined
     
-    var status: js.UndefOr[normal | exception | active | success] = js.native
+    var status: js.UndefOr[normal | exception | active | success] = js.undefined
     
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String | ProgressGradient] = js.native
+    var strokeColor: js.UndefOr[String | ProgressGradient] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | square | round] = js.native
+    var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var success: js.UndefOr[SuccessProps] = js.native
+    var success: js.UndefOr[SuccessProps] = js.undefined
     
-    var successPercent: js.UndefOr[Double] = js.native
+    var successPercent: js.UndefOr[Double] = js.undefined
     
-    var trailColor: js.UndefOr[String] = js.native
+    var trailColor: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object UploadListProgressProps {
     
@@ -507,46 +504,45 @@ object uploadInterfaceMod {
     }
   }
   
-  @js.native
   trait UploadListProps[T] extends StObject {
     
-    var appendAction: js.UndefOr[ReactNode] = js.native
+    var appendAction: js.UndefOr[ReactNode] = js.undefined
     
-    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])] = js.native
+    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.undefined
     
     var iconRender: js.UndefOr[
         js.Function2[/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType], ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var isImageUrl: js.UndefOr[js.Function1[/* file */ UploadFile[_], Boolean]] = js.native
+    var isImageUrl: js.UndefOr[js.Function1[/* file */ UploadFile[js.Any], Boolean]] = js.undefined
     
-    var itemRender: js.UndefOr[ItemRender[T]] = js.native
+    var itemRender: js.UndefOr[ItemRender[T]] = js.undefined
     
-    var items: js.UndefOr[js.Array[UploadFile[T]]] = js.native
+    var items: js.UndefOr[js.Array[UploadFile[T]]] = js.undefined
     
-    var listType: js.UndefOr[UploadListType] = js.native
+    var listType: js.UndefOr[UploadListType] = js.undefined
     
-    var locale: UploadLocale = js.native
+    var locale: UploadLocale
     
-    var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.native
+    var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
     
-    var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.native
+    var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
     
-    var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit | Boolean]] = js.native
+    var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit | Boolean]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var previewFile: js.UndefOr[PreviewFileHandler] = js.native
+    var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
     
-    var progress: js.UndefOr[UploadListProgressProps] = js.native
+    var progress: js.UndefOr[UploadListProgressProps] = js.undefined
     
-    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])] = js.native
+    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.undefined
     
-    var showDownloadIcon: js.UndefOr[Boolean] = js.native
+    var showDownloadIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showPreviewIcon: js.UndefOr[Boolean] = js.native
+    var showPreviewIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showRemoveIcon: js.UndefOr[Boolean] = js.native
+    var showRemoveIcon: js.UndefOr[Boolean] = js.undefined
   }
   object UploadListProps {
     
@@ -557,7 +553,7 @@ object uploadInterfaceMod {
     }
     
     @scala.inline
-    implicit class UploadListPropsMutableBuilder[Self <: UploadListProps[_], T] (val x: Self with UploadListProps[T]) extends AnyVal {
+    implicit class UploadListPropsMutableBuilder[Self <: UploadListProps[?], T] (val x: Self & UploadListProps[T]) extends AnyVal {
       
       @scala.inline
       def setAppendAction(value: ReactNode): Self = StObject.set(x, "appendAction", value.asInstanceOf[js.Any])
@@ -566,10 +562,10 @@ object uploadInterfaceMod {
       def setAppendActionUndefined: Self = StObject.set(x, "appendAction", js.undefined)
       
       @scala.inline
-      def setDownloadIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
+      def setDownloadIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDownloadIconFunction1(value: /* file */ UploadFile[_] => ReactNode): Self = StObject.set(x, "downloadIcon", js.Any.fromFunction1(value))
+      def setDownloadIconFunction1(value: /* file */ UploadFile[js.Any] => ReactNode): Self = StObject.set(x, "downloadIcon", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownloadIconUndefined: Self = StObject.set(x, "downloadIcon", js.undefined)
@@ -581,7 +577,7 @@ object uploadInterfaceMod {
       def setIconRenderUndefined: Self = StObject.set(x, "iconRender", js.undefined)
       
       @scala.inline
-      def setIsImageUrl(value: /* file */ UploadFile[_] => Boolean): Self = StObject.set(x, "isImageUrl", js.Any.fromFunction1(value))
+      def setIsImageUrl(value: /* file */ UploadFile[js.Any] => Boolean): Self = StObject.set(x, "isImageUrl", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIsImageUrlUndefined: Self = StObject.set(x, "isImageUrl", js.undefined)
@@ -649,10 +645,10 @@ object uploadInterfaceMod {
       def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
       @scala.inline
-      def setRemoveIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      def setRemoveIcon(value: ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRemoveIconFunction1(value: /* file */ UploadFile[_] => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
+      def setRemoveIconFunction1(value: /* file */ UploadFile[js.Any] => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
@@ -695,18 +691,17 @@ object uploadInterfaceMod {
     def text: text_ = "text".asInstanceOf[text_]
   }
   
-  @js.native
   trait UploadLocale extends StObject {
     
-    var downloadFile: js.UndefOr[String] = js.native
+    var downloadFile: js.UndefOr[String] = js.undefined
     
-    var previewFile: js.UndefOr[String] = js.native
+    var previewFile: js.UndefOr[String] = js.undefined
     
-    var removeFile: js.UndefOr[String] = js.native
+    var removeFile: js.UndefOr[String] = js.undefined
     
-    var uploadError: js.UndefOr[String] = js.native
+    var uploadError: js.UndefOr[String] = js.undefined
     
-    var uploading: js.UndefOr[String] = js.native
+    var uploading: js.UndefOr[String] = js.undefined
   }
   object UploadLocale {
     
@@ -751,82 +746,81 @@ object uploadInterfaceMod {
     }
   }
   
-  @js.native
   trait UploadProps[T] extends StObject {
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])] = js.native
+    var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])] = js.undefined
     
     var beforeUpload: js.UndefOr[
         js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], Boolean | js.Thenable[Unit]]
-      ] = js.native
+      ] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var customRequest: js.UndefOr[js.Function1[/* options */ RcCustomRequestOptions, Unit]] = js.native
+    var customRequest: js.UndefOr[js.Function1[/* options */ RcCustomRequestOptions, Unit]] = js.undefined
     
-    var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile[T], js.Object])] = js.native
+    var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile[T], js.Object])] = js.undefined
     
-    var defaultFileList: js.UndefOr[js.Array[UploadFile[T]]] = js.native
+    var defaultFileList: js.UndefOr[js.Array[UploadFile[T]]] = js.undefined
     
-    var directory: js.UndefOr[Boolean] = js.native
+    var directory: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fileList: js.UndefOr[js.Array[UploadFile[T]]] = js.native
+    var fileList: js.UndefOr[js.Array[UploadFile[T]]] = js.undefined
     
-    var headers: js.UndefOr[HttpRequestHeader] = js.native
+    var headers: js.UndefOr[HttpRequestHeader] = js.undefined
     
     var iconRender: js.UndefOr[
         js.Function2[/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType], ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isImageUrl: js.UndefOr[js.Function1[/* file */ UploadFile[_], Boolean]] = js.native
+    var isImageUrl: js.UndefOr[js.Function1[/* file */ UploadFile[js.Any], Boolean]] = js.undefined
     
-    var itemRender: js.UndefOr[ItemRender[T]] = js.native
+    var itemRender: js.UndefOr[ItemRender[T]] = js.undefined
     
-    var listType: js.UndefOr[UploadListType] = js.native
+    var listType: js.UndefOr[UploadListType] = js.undefined
     
-    var locale: js.UndefOr[UploadLocale] = js.native
+    var locale: js.UndefOr[UploadLocale] = js.undefined
     
-    var method: js.UndefOr[POST | PUT | PATCH | post_ | put_ | patch_] = js.native
+    var method: js.UndefOr[POST | PUT | PATCH | post_ | put_ | patch_] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile[_]], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile[js.Any]], Unit]] = js.undefined
     
-    var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.native
+    var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
     
-    var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.native
+    var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
     
     var onRemove: js.UndefOr[
         js.Function1[/* file */ UploadFile[T], Unit | Boolean | (js.Promise[Unit | Boolean])]
-      ] = js.native
+      ] = js.undefined
     
-    var openFileDialogOnClick: js.UndefOr[Boolean] = js.native
+    var openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var previewFile: js.UndefOr[PreviewFileHandler] = js.native
+    var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
     
-    var progress: js.UndefOr[UploadListProgressProps] = js.native
+    var progress: js.UndefOr[UploadListProgressProps] = js.undefined
     
-    var showUploadList: js.UndefOr[Boolean | ShowUploadListInterface] = js.native
+    var showUploadList: js.UndefOr[Boolean | ShowUploadListInterface] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var supportServerRender: js.UndefOr[Boolean] = js.native
+    var supportServerRender: js.UndefOr[Boolean] = js.undefined
     
-    var transformFile: js.UndefOr[TransformFileHandler] = js.native
+    var transformFile: js.UndefOr[TransformFileHandler] = js.undefined
     
-    var `type`: js.UndefOr[UploadType] = js.native
+    var `type`: js.UndefOr[UploadType] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object UploadProps {
     
@@ -837,7 +831,7 @@ object uploadInterfaceMod {
     }
     
     @scala.inline
-    implicit class UploadPropsMutableBuilder[Self <: UploadProps[_], T] (val x: Self with UploadProps[T]) extends AnyVal {
+    implicit class UploadPropsMutableBuilder[Self <: UploadProps[?], T] (val x: Self & UploadProps[T]) extends AnyVal {
       
       @scala.inline
       def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
@@ -930,7 +924,7 @@ object uploadInterfaceMod {
       def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       @scala.inline
-      def setIsImageUrl(value: /* file */ UploadFile[_] => Boolean): Self = StObject.set(x, "isImageUrl", js.Any.fromFunction1(value))
+      def setIsImageUrl(value: /* file */ UploadFile[js.Any] => Boolean): Self = StObject.set(x, "isImageUrl", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIsImageUrlUndefined: Self = StObject.set(x, "isImageUrl", js.undefined)
@@ -974,7 +968,7 @@ object uploadInterfaceMod {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* info */ UploadChangeParam[UploadFile[_]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* info */ UploadChangeParam[UploadFile[js.Any]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -1059,12 +1053,11 @@ object uploadInterfaceMod {
     }
   }
   
-  @js.native
   trait UploadState[T] extends StObject {
     
-    var dragState: String = js.native
+    var dragState: String
     
-    var fileList: js.Array[UploadFile[T]] = js.native
+    var fileList: js.Array[UploadFile[T]]
   }
   object UploadState {
     
@@ -1075,7 +1068,7 @@ object uploadInterfaceMod {
     }
     
     @scala.inline
-    implicit class UploadStateMutableBuilder[Self <: UploadState[_], T] (val x: Self with UploadState[T]) extends AnyVal {
+    implicit class UploadStateMutableBuilder[Self <: UploadState[?], T] (val x: Self & UploadState[T]) extends AnyVal {
       
       @scala.inline
       def setDragState(value: String): Self = StObject.set(x, "dragState", value.asInstanceOf[js.Any])

@@ -10,7 +10,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconBaseMod extends Shortcut {
@@ -20,29 +19,30 @@ object iconBaseMod extends Shortcut {
   val default: IconBaseComponent[IconProps] = js.native
   
   @js.native
-  trait IconBaseComponent[P] extends FunctionComponent[P] {
+  trait IconBaseComponent[P]
+    extends StObject
+       with FunctionComponent[P] {
     
     var getTwoToneColors: js.Function0[TwoToneColorPalette] = js.native
     
     var setTwoToneColors: js.Function1[/* hasPrimaryColorSecondaryColor */ TwoToneColorPaletteSetter, Unit] = js.native
   }
   
-  @js.native
   trait IconProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var focusable: js.UndefOr[String] = js.native
+    var focusable: js.UndefOr[String] = js.undefined
     
-    var icon: IconDefinition = js.native
+    var icon: IconDefinition
     
-    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[SVGSVGElement]] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object IconProps {
     
@@ -96,10 +96,11 @@ object iconBaseMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait TwoToneColorPalette extends TwoToneColorPaletteSetter {
+  trait TwoToneColorPalette
+    extends StObject
+       with TwoToneColorPaletteSetter {
     
-    var calculated: js.UndefOr[Boolean] = js.native
+    var calculated: js.UndefOr[Boolean] = js.undefined
   }
   object TwoToneColorPalette {
     
@@ -120,12 +121,11 @@ object iconBaseMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TwoToneColorPaletteSetter extends StObject {
     
-    var primaryColor: String = js.native
+    var primaryColor: String
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
   }
   object TwoToneColorPaletteSetter {
     

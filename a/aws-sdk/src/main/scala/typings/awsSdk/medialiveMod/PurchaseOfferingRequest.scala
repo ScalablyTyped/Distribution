@@ -2,41 +2,39 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseOfferingRequest extends StObject {
   
   /**
     * Number of resources
     */
-  var Count: integerMin1 = js.native
+  var Count: integerMin1
   
   /**
     * Name for the new reservation
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Offering to purchase, e.g. '87654321'
     */
-  var OfferingId: string = js.native
+  var OfferingId: string
   
   /**
     * Unique request ID to be specified. This is needed to prevent retries from creating multiple resources.
     */
-  var RequestId: js.UndefOr[string] = js.native
+  var RequestId: js.UndefOr[string] = js.undefined
   
   /**
     * Requested reservation start time (UTC) in ISO-8601 format. The specified time must be between the first day of the current month and one year from now. If no value is given, the default is now.
     */
-  var Start: js.UndefOr[string] = js.native
+  var Start: js.UndefOr[string] = js.undefined
   
   /**
     * A collection of key-value pairs
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
 }
 object PurchaseOfferingRequest {
   

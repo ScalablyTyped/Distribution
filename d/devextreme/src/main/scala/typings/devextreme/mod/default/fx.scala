@@ -6,20 +6,20 @@ import typings.devextreme.mod.global.Promise
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fx {
   
-  @JSImport("devextreme", "default.fx.animate")
+  @JSImport("devextreme", "default.fx")
   @js.native
-  def animate(element: Element, config: animationConfig): Promise[Unit] with JQueryPromise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("devextreme", "default.fx.isAnimating")
-  @js.native
-  def isAnimating(element: Element): Boolean = js.native
+  @scala.inline
+  def animate(element: Element, config: animationConfig): Promise[Unit] & JQueryPromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit] & JQueryPromise[Unit]]
   
-  @JSImport("devextreme", "default.fx.stop")
-  @js.native
-  def stop(element: Element, jumpToEnd: Boolean): Unit = js.native
+  @scala.inline
+  def isAnimating(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnimating")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def stop(element: Element, jumpToEnd: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(element.asInstanceOf[js.Any], jumpToEnd.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

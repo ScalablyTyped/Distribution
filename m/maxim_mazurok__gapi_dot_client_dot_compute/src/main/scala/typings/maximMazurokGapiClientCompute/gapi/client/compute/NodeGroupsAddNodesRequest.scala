@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupsAddNodesRequest extends StObject {
   
   /** Count of additional nodes to be added to the node group. */
-  var additionalNodeCount: js.UndefOr[Double] = js.native
+  var additionalNodeCount: js.UndefOr[Double] = js.undefined
 }
 object NodeGroupsAddNodesRequest {
   

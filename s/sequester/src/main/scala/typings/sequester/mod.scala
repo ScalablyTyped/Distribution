@@ -2,31 +2,32 @@ package typings.sequester
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sequester", "createLock")
+  @JSImport("sequester", JSImport.Namespace)
   @js.native
-  def createLock(): Lock = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createLock(): Lock = ^.asInstanceOf[js.Dynamic].applyDynamic("createLock")().asInstanceOf[Lock]
   
   type Callback = js.Function0[Unit]
   
-  @js.native
   trait Lock extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    def downgrade(): Unit = js.native
+    def downgrade(): Unit
     
-    def exclude(cb: Callback): Unit = js.native
+    def exclude(cb: Callback): Unit
     
-    def share(cb: Callback): Unit = js.native
+    def share(cb: Callback): Unit
     
-    def unlock(): Unit = js.native
+    def unlock(): Unit
   }
   object Lock {
     

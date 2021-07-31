@@ -5,83 +5,81 @@ import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Outlook TextBox */
-@js.native
 trait OlkTextBox extends StObject {
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  var AutoTab: Boolean = js.native
+  var AutoTab: Boolean
   
-  var AutoWordSelect: Boolean = js.native
+  var AutoWordSelect: Boolean
   
-  var BackColor: OLE_COLOR = js.native
+  var BackColor: OLE_COLOR
   
-  var BorderStyle: OlBorderStyle = js.native
+  var BorderStyle: OlBorderStyle
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  var DragBehavior: OlDragBehavior = js.native
+  var DragBehavior: OlDragBehavior
   
-  var EnableRichText: Boolean = js.native
+  var EnableRichText: Boolean
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var EnterFieldBehavior: OlEnterFieldBehavior = js.native
+  var EnterFieldBehavior: OlEnterFieldBehavior
   
-  var EnterKeyBehavior: Boolean = js.native
+  var EnterKeyBehavior: Boolean
   
-  val Font: StdFont = js.native
+  val Font: StdFont
   
-  var ForeColor: OLE_COLOR = js.native
+  var ForeColor: OLE_COLOR
   
-  var HideSelection: Boolean = js.native
+  var HideSelection: Boolean
   
-  var IntegralHeight: Boolean = js.native
+  var IntegralHeight: Boolean
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  var MaxLength: Double = js.native
+  var MaxLength: Double
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
-  var MultiLine: Boolean = js.native
+  var MultiLine: Boolean
   
   @JSName("Outlook.OlkTextBox_typekey")
-  var OutlookDotOlkTextBox_typekey: OlkTextBox = js.native
+  var OutlookDotOlkTextBox_typekey: OlkTextBox
   
-  var PasswordChar: String = js.native
+  var PasswordChar: String
   
-  def Paste(): Unit = js.native
+  def Paste(): Unit
   
-  var Scrollbars: OlScrollBars = js.native
+  var Scrollbars: OlScrollBars
   
-  var SelLength: Double = js.native
+  var SelLength: Double
   
-  var SelStart: Double = js.native
+  var SelStart: Double
   
-  val SelText: String = js.native
+  val SelText: String
   
-  var SelectionMargin: Boolean = js.native
+  var SelectionMargin: Boolean
   
-  var TabKeyBehavior: Boolean = js.native
+  var TabKeyBehavior: Boolean
   
-  var Text: String = js.native
+  var Text: String
   
-  var TextAlign: OlTextAlign = js.native
+  var TextAlign: OlTextAlign
   
-  var Value: js.Any = js.native
+  var Value: js.Any
   
-  var WordWrap: Boolean = js.native
+  var WordWrap: Boolean
 }
 object OlkTextBox {
   

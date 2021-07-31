@@ -2,39 +2,37 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var displayNameLastFirst: String = js.native
+  var displayNameLastFirst: String
   
-  var familyName: String = js.native
+  var familyName: String
   
-  var givenName: String = js.native
+  var givenName: String
   
-  var honorificPrefix: String = js.native
+  var honorificPrefix: String
   
-  var honorificSuffix: String = js.native
+  var honorificSuffix: String
   
-  var metadata: FieldMetadata = js.native
+  var metadata: FieldMetadata
   
-  var middleName: String = js.native
+  var middleName: String
   
-  var phoneticFamilyName: String = js.native
+  var phoneticFamilyName: String
   
-  var phoneticFullName: String = js.native
+  var phoneticFullName: String
   
-  var phoneticGivenName: String = js.native
+  var phoneticGivenName: String
   
-  var phoneticHonorificPrefix: String = js.native
+  var phoneticHonorificPrefix: String
   
-  var phoneticHonorificSuffix: String = js.native
+  var phoneticHonorificSuffix: String
   
-  var phoneticMiddleName: String = js.native
+  var phoneticMiddleName: String
 }
 object Name {
   

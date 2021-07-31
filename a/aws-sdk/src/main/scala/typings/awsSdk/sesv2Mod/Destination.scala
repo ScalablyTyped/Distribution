@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * An array that contains the email addresses of the "BCC" (blind carbon copy) recipients for the email.
     */
-  var BccAddresses: js.UndefOr[EmailAddressList] = js.native
+  var BccAddresses: js.UndefOr[EmailAddressList] = js.undefined
   
   /**
     * An array that contains the email addresses of the "CC" (carbon copy) recipients for the email.
     */
-  var CcAddresses: js.UndefOr[EmailAddressList] = js.native
+  var CcAddresses: js.UndefOr[EmailAddressList] = js.undefined
   
   /**
     * An array that contains the email addresses of the "To" recipients for the email.
     */
-  var ToAddresses: js.UndefOr[EmailAddressList] = js.native
+  var ToAddresses: js.UndefOr[EmailAddressList] = js.undefined
 }
 object Destination {
   

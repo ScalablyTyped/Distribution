@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePermissionPolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule group from which you want to delete the policy. You must be the owner of the rule group to perform this operation.
     */
-  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn
 }
 object DeletePermissionPolicyRequest {
   

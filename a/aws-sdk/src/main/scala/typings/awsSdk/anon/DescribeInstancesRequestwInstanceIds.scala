@@ -5,30 +5,28 @@ import typings.awsSdk.opsworksMod.Strings
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/opsworks.DescribeInstancesRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeInstancesRequestwInstanceIds extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * An array of instance IDs to be described. If you use this parameter, DescribeInstances returns a description of the specified instances. Otherwise, it returns a description of every instance.
     */
-  var InstanceIds: js.UndefOr[Strings] = js.native
+  var InstanceIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * A layer ID. If you use this parameter, DescribeInstances returns descriptions of the instances associated with the specified layer.
     */
-  var LayerId: js.UndefOr[String] = js.native
+  var LayerId: js.UndefOr[String] = js.undefined
   
   /**
     * A stack ID. If you use this parameter, DescribeInstances returns descriptions of the instances associated with the specified stack.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
 }
 object DescribeInstancesRequestwInstanceIds {
   

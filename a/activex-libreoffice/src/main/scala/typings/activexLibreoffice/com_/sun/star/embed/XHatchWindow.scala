@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,13 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resizing/moving in a specific way: after user have selected the new size/placement the hatching window sends request to owner for resizing/moving.
   * Thus the window can not resize/move itself.
   */
-@js.native
-trait XHatchWindow extends XComponent {
+trait XHatchWindow
+  extends StObject
+     with XComponent {
   
-  var HatchBorderSize: Size = js.native
+  var HatchBorderSize: Size
   
   /** sets the object that will control resizing/moving, if the object is not set the window can not be resized/moved. */
-  def setController(xController: XHatchWindowController): Unit = js.native
+  def setController(xController: XHatchWindowController): Unit
 }
 object XHatchWindow {
   

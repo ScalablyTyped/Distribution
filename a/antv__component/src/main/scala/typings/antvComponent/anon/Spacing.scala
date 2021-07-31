@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spacing extends StObject {
   
-  var spacing: Double = js.native
+  var spacing: Double
   
-  var style: FillFontSize = js.native
+  var style: FillFontSize
 }
 object Spacing {
   

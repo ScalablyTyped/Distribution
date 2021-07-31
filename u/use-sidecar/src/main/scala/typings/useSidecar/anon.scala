@@ -6,38 +6,35 @@ import typings.useSidecar.typesMod.MediumCallback
 import typings.useSidecar.typesMod.removeCb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Children[T /* <: js.Array[_] */] extends StObject {
+  trait Children[T /* <: js.Array[js.Any] */] extends StObject {
     
     def children(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param prop because its type T is not an array type */ prop: T
-    ): js.Any = js.native
+    ): js.Any
   }
   object Children {
     
     @scala.inline
-    def apply[T /* <: js.Array[_] */](children: T => js.Any): Children[T] = {
+    def apply[T /* <: js.Array[js.Any] */](children: T => js.Any): Children[T] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Children[T]]
     }
     
     @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children[_], T /* <: js.Array[_] */] (val x: Self with Children[T]) extends AnyVal {
+    implicit class ChildrenMutableBuilder[Self <: Children[?], T /* <: js.Array[js.Any] */] (val x: Self & Children[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: T => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Default[T] extends StObject {
     
-    var default: T = js.native
+    var default: T
   }
   object Default {
     
@@ -48,7 +45,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[_], T] (val x: Self with Default[T]) extends AnyVal {
+    implicit class DefaultMutableBuilder[Self <: Default[?], T] (val x: Self & Default[T]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
@@ -56,10 +53,9 @@ object anon {
   }
   
   /* Inlined std.Partial<use-sidecar.use-sidecar/dist/es5/config.IConfig> */
-  @js.native
   trait PartialIConfig extends StObject {
     
-    var onError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
   }
   object PartialIConfig {
     
@@ -81,18 +77,17 @@ object anon {
   }
   
   /* Inlined std.Readonly<use-sidecar.use-sidecar/dist/es5/types.SideCarMedium> */
-  @js.native
   trait ReadonlySideCarMedium extends StObject {
     
-    val assignMedium: js.Function1[/* handler */ MediumCallback[ComponentType[js.Object]], Unit] = js.native
+    val assignMedium: js.Function1[/* handler */ MediumCallback[ComponentType[js.Object]], Unit]
     
-    val assignSyncMedium: js.Function1[/* handler */ MediumCallback[ComponentType[js.Object]], Unit] = js.native
+    val assignSyncMedium: js.Function1[/* handler */ MediumCallback[ComponentType[js.Object]], Unit]
     
-    val options: js.UndefOr[js.Object] = js.native
+    val options: js.UndefOr[js.Object] = js.undefined
     
-    val read: js.Function0[js.UndefOr[ComponentType[js.Object]]] = js.native
+    val read: js.Function0[js.UndefOr[ComponentType[js.Object]]]
     
-    val useMedium: js.Function1[/* effect */ ComponentType[js.Object], removeCb] = js.native
+    val useMedium: js.Function1[/* effect */ ComponentType[js.Object], removeCb]
   }
   object ReadonlySideCarMedium {
     

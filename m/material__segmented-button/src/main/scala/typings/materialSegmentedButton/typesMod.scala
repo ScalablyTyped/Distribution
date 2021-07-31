@@ -3,25 +3,25 @@ package typings.materialSegmentedButton
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCSegmentedButtonEvent extends Event {
+  trait MDCSegmentedButtonEvent
+    extends StObject
+       with Event {
     
     val detail: SegmentDetail = js.native
   }
   
-  @js.native
   trait SegmentDetail extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var segmentId: js.UndefOr[String] = js.native
+    var segmentId: js.UndefOr[String] = js.undefined
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object SegmentDetail {
     

@@ -10,33 +10,31 @@ import typings.openlayers.mod.layer.Layer
 import typings.openlayers.mod.style.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectOptions extends StObject {
   
-  var addCondition: js.UndefOr[EventsConditionType] = js.native
+  var addCondition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var condition: js.UndefOr[EventsConditionType] = js.native
+  var condition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var features: js.UndefOr[Collection[Feature]] = js.native
+  var features: js.UndefOr[Collection[Feature]] = js.undefined
   
-  var filter: js.UndefOr[SelectFilterFunction] = js.native
+  var filter: js.UndefOr[SelectFilterFunction] = js.undefined
   
-  var hitTolerance: js.UndefOr[Double] = js.native
+  var hitTolerance: js.UndefOr[Double] = js.undefined
   
-  var layers: js.UndefOr[js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])] = js.native
+  var layers: js.UndefOr[js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var removeCondition: js.UndefOr[EventsConditionType] = js.native
+  var removeCondition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
   
-  var toggleCondition: js.UndefOr[EventsConditionType] = js.native
+  var toggleCondition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object SelectOptions {
   

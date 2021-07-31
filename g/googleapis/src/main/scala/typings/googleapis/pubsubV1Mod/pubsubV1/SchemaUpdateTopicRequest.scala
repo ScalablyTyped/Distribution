@@ -2,19 +2,17 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the UpdateTopic method.
   */
-@js.native
 trait SchemaUpdateTopicRequest extends StObject {
   
   /**
     * The updated topic object.
     */
-  var topic: js.UndefOr[SchemaTopic] = js.native
+  var topic: js.UndefOr[SchemaTopic] = js.undefined
   
   /**
     * Indicates which fields in the provided topic to update. Must be specified
@@ -23,7 +21,7 @@ trait SchemaUpdateTopicRequest extends StObject {
     * based on the policy configured at the project or organization level. The
     * `message_storage_policy` must not be set in the `topic` provided above.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateTopicRequest {
   

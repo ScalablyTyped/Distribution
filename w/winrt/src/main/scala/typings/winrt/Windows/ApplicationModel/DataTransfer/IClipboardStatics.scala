@@ -2,21 +2,19 @@ package typings.winrt.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClipboardStatics extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def flush(): Unit = js.native
+  def flush(): Unit
   
-  def getContent(): DataPackageView = js.native
+  def getContent(): DataPackageView
   
-  var oncontentchanged: js.Any = js.native
+  var oncontentchanged: js.Any
   
-  def setContent(content: DataPackage): Unit = js.native
+  def setContent(content: DataPackage): Unit
 }
 object IClipboardStatics {
   

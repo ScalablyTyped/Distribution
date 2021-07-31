@@ -2,25 +2,23 @@ package typings.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideTime extends StObject {
   
-  def getByFormat(format: String): String = js.native
+  def getByFormat(format: String): String
   
-  def getDisplayValue(): String = js.native
+  def getDisplayValue(): String
   
-  def getDisplayValueinternal(): String = js.native
+  def getDisplayValueinternal(): String
   
-  def getValue(): String = js.native
+  def getValue(): String
   
-  def setDisplayValue(asDisplayed: String): Unit = js.native
+  def setDisplayValue(asDisplayed: String): Unit
   
-  def setValue(o: String): Unit = js.native
+  def setValue(o: String): Unit
   
-  def subtract(start: GlideTime, end: GlideTime): GlideDuration = js.native
+  def subtract(start: GlideTime, end: GlideTime): GlideDuration
 }
 object GlideTime {
   

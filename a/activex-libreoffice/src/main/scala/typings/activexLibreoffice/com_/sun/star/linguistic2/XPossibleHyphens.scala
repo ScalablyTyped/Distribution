@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,38 +16,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * hyphenate it at position 9 you will get an additional "f" before the hyphen character.
   * @see com.sun.star.linguistic2.XHyphenator
   */
-@js.native
-trait XPossibleHyphens extends XInterface {
+trait XPossibleHyphens
+  extends StObject
+     with XInterface {
   
   /** @returns an ascending sequence of numbers where each number is an offset within the original word which denotes a hyphenation position corresponding to on */
-  val HyphenationPositions: SafeArray[Double] = js.native
+  val HyphenationPositions: SafeArray[Double]
   
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
     */
-  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns a string depicting the word with all hyphen positions which are represented by "=" characters. If there are any alternative spellings, the word w */
-  val PossibleHyphens: String = js.native
+  val PossibleHyphens: String
   
   /** @returns the word for which the information of possible hyphenation points was obtained. */
-  val Word: String = js.native
+  val Word: String
   
   /** @returns an ascending sequence of numbers where each number is an offset within the original word which denotes a hyphenation position corresponding to on */
-  def getHyphenationPositions(): SafeArray[Double] = js.native
+  def getHyphenationPositions(): SafeArray[Double]
   
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
     */
-  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns a string depicting the word with all hyphen positions which are represented by "=" characters. If there are any alternative spellings, the word w */
-  def getPossibleHyphens(): String = js.native
+  def getPossibleHyphens(): String
   
   /** @returns the word for which the information of possible hyphenation points was obtained. */
-  def getWord(): String = js.native
+  def getWord(): String
 }
 object XPossibleHyphens {
   

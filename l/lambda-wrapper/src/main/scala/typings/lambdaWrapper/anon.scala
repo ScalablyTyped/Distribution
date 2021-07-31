@@ -5,15 +5,13 @@ import typings.awsLambda.handlerMod.CognitoIdentity
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Handler[THandlerName /* <: String */] extends StObject {
     
-    var handler: js.UndefOr[THandlerName] = js.native
+    var handler: js.UndefOr[THandlerName] = js.undefined
   }
   object Handler {
     
@@ -24,7 +22,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class HandlerMutableBuilder[Self <: Handler[_], THandlerName /* <: String */] (val x: Self with Handler[THandlerName]) extends AnyVal {
+    implicit class HandlerMutableBuilder[Self <: Handler[?], THandlerName /* <: String */] (val x: Self & Handler[THandlerName]) extends AnyVal {
       
       @scala.inline
       def setHandler(value: THandlerName): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LambdaFunction extends StObject {
     
-    var lambdaFunction: String = js.native
+    var lambdaFunction: String
     
-    var region: String = js.native
+    var region: String
   }
   object LambdaFunction {
     
@@ -61,36 +58,35 @@ object anon {
   }
   
   /* Inlined std.Partial<aws-lambda.aws-lambda.Context> */
-  @js.native
   trait PartialContext extends StObject {
     
-    var awsRequestId: js.UndefOr[String] = js.native
+    var awsRequestId: js.UndefOr[String] = js.undefined
     
-    var callbackWaitsForEmptyEventLoop: js.UndefOr[Boolean] = js.native
+    var callbackWaitsForEmptyEventLoop: js.UndefOr[Boolean] = js.undefined
     
-    var clientContext: js.UndefOr[ClientContext] = js.native
+    var clientContext: js.UndefOr[ClientContext] = js.undefined
     
-    var done: js.UndefOr[js.Function0[Unit]] = js.native
+    var done: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var fail: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var fail: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
-    var functionVersion: js.UndefOr[String] = js.native
+    var functionVersion: js.UndefOr[String] = js.undefined
     
-    var getRemainingTimeInMillis: js.UndefOr[js.Function0[Double]] = js.native
+    var getRemainingTimeInMillis: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var identity: js.UndefOr[CognitoIdentity] = js.native
+    var identity: js.UndefOr[CognitoIdentity] = js.undefined
     
-    var invokedFunctionArn: js.UndefOr[String] = js.native
+    var invokedFunctionArn: js.UndefOr[String] = js.undefined
     
-    var logGroupName: js.UndefOr[String] = js.native
+    var logGroupName: js.UndefOr[String] = js.undefined
     
-    var logStreamName: js.UndefOr[String] = js.native
+    var logStreamName: js.UndefOr[String] = js.undefined
     
-    var memoryLimitInMB: js.UndefOr[String] = js.native
+    var memoryLimitInMB: js.UndefOr[String] = js.undefined
     
-    var succeed: js.UndefOr[js.Function1[/* messageOrObject */ js.Any, Unit]] = js.native
+    var succeed: js.UndefOr[js.Function1[/* messageOrObject */ js.Any, Unit]] = js.undefined
   }
   object PartialContext {
     

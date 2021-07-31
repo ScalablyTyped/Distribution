@@ -3,18 +3,16 @@ package typings.inboxsdk.mod.Router
 import typings.inboxsdk.inboxsdkStrings.destroy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SectionView extends StObject {
   
-  var destroyed: Boolean = js.native
+  var destroyed: Boolean
   
   @JSName("on")
-  def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+  def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object SectionView {
   

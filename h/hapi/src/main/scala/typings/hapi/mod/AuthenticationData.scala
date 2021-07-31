@@ -2,15 +2,13 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationData extends StObject {
   
-  var artifacts: js.UndefOr[js.Object] = js.native
+  var artifacts: js.UndefOr[js.Object] = js.undefined
   
-  var credentials: AuthCredentials = js.native
+  var credentials: AuthCredentials
 }
 object AuthenticationData {
   

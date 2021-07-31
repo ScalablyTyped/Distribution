@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadValidation extends StObject {
   
-  var allowedExtensions: js.UndefOr[js.Any] = js.native
+  var allowedExtensions: js.UndefOr[js.Any] = js.undefined
   
-  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.undefined
   
-  var minFileSize: js.UndefOr[Double] = js.native
+  var minFileSize: js.UndefOr[Double] = js.undefined
 }
 object UploadValidation {
   

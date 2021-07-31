@@ -3,43 +3,42 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.layoutGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchMSLayoutGrid extends SketchMSLayout {
+trait SketchMSLayoutGrid
+  extends StObject
+     with SketchMSLayout {
   
-  var _class: layoutGrid = js.native
+  var _class: layoutGrid
   
-  var columnWidth: Double = js.native
+  var columnWidth: Double
   
-  var drawHorizontal: Boolean = js.native
+  var drawHorizontal: Boolean
   
-  var drawHorizontalLines: Boolean = js.native
+  var drawHorizontalLines: Boolean
   
-  var drawVertical: Boolean = js.native
+  var drawVertical: Boolean
   
-  var gutterHeight: Double = js.native
+  var gutterHeight: Double
   
-  var gutterWidth: Double = js.native
+  var gutterWidth: Double
   
-  var guttersOutside: Boolean = js.native
+  var guttersOutside: Boolean
   
-  var horizontalOffset: Double = js.native
+  var horizontalOffset: Double
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var numberOfColumns: Double = js.native
+  var numberOfColumns: Double
   
-  var rowHeightMultiplication: Double = js.native
+  var rowHeightMultiplication: Double
   
-  var totalWidth: Double = js.native
+  var totalWidth: Double
 }
 object SketchMSLayoutGrid {
   
   @scala.inline
   def apply(
-    _class: layoutGrid,
     columnWidth: Double,
     drawHorizontal: Boolean,
     drawHorizontalLines: Boolean,
@@ -53,7 +52,7 @@ object SketchMSLayoutGrid {
     rowHeightMultiplication: Double,
     totalWidth: Double
   ): SketchMSLayoutGrid = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any], drawHorizontal = drawHorizontal.asInstanceOf[js.Any], drawHorizontalLines = drawHorizontalLines.asInstanceOf[js.Any], drawVertical = drawVertical.asInstanceOf[js.Any], gutterHeight = gutterHeight.asInstanceOf[js.Any], gutterWidth = gutterWidth.asInstanceOf[js.Any], guttersOutside = guttersOutside.asInstanceOf[js.Any], horizontalOffset = horizontalOffset.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], numberOfColumns = numberOfColumns.asInstanceOf[js.Any], rowHeightMultiplication = rowHeightMultiplication.asInstanceOf[js.Any], totalWidth = totalWidth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "layoutGrid", columnWidth = columnWidth.asInstanceOf[js.Any], drawHorizontal = drawHorizontal.asInstanceOf[js.Any], drawHorizontalLines = drawHorizontalLines.asInstanceOf[js.Any], drawVertical = drawVertical.asInstanceOf[js.Any], gutterHeight = gutterHeight.asInstanceOf[js.Any], gutterWidth = gutterWidth.asInstanceOf[js.Any], guttersOutside = guttersOutside.asInstanceOf[js.Any], horizontalOffset = horizontalOffset.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], numberOfColumns = numberOfColumns.asInstanceOf[js.Any], rowHeightMultiplication = rowHeightMultiplication.asInstanceOf[js.Any], totalWidth = totalWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSLayoutGrid]
   }
   

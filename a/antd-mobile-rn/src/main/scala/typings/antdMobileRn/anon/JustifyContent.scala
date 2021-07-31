@@ -2,31 +2,29 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JustifyContent extends StObject {
   
-  var alignItems: String = js.native
+  var alignItems: String
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var borderRadius: Double = js.native
+  var borderRadius: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var justifyContent: String = js.native
+  var justifyContent: String
   
-  var overflow: String = js.native
+  var overflow: String
   
-  var position: String = js.native
+  var position: String
   
-  var right: Double = js.native
+  var right: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object JustifyContent {
   

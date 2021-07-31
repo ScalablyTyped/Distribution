@@ -5,7 +5,6 @@ import typings.ledgerhqHwTransport.mod.Observer
 import typings.ledgerhqHwTransport.mod.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,25 +17,25 @@ object mod {
   }
   object default {
     
-    /* static member */
-    @JSImport("@ledgerhq/hw-transport-webusb", "default.listen")
+    @JSImport("@ledgerhq/hw-transport-webusb", JSImport.Default)
     @js.native
-    def listen(observer: Observer[DescriptorEvent[String]]): Subscription = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ledgerhq/hw-transport-webusb", "default.open")
-    @js.native
-    def open(device: String): js.Promise[TransportWebUSB] = js.native
+    @scala.inline
+    def listen(observer: Observer[DescriptorEvent[String]]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(observer.asInstanceOf[js.Any]).asInstanceOf[Subscription]
     
     /* static member */
-    @JSImport("@ledgerhq/hw-transport-webusb", "default.openConnection")
-    @js.native
-    def openConnection(): js.Promise[TransportWebUSB] = js.native
+    @scala.inline
+    def open(device: String): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransportWebUSB]]
     
     /* static member */
-    @JSImport("@ledgerhq/hw-transport-webusb", "default.request")
-    @js.native
-    def request(): js.Promise[TransportWebUSB] = js.native
+    @scala.inline
+    def openConnection(): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("openConnection")().asInstanceOf[js.Promise[TransportWebUSB]]
+    
+    /* static member */
+    @scala.inline
+    def request(): js.Promise[TransportWebUSB] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[js.Promise[TransportWebUSB]]
   }
   
   type TransportWebUSB = typings.ledgerhqHwTransport.mod.default[String]

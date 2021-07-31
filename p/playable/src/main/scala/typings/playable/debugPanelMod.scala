@@ -8,15 +8,61 @@ import typings.playable.playbackEngineTypesMod.IEngineDebugInfo
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debugPanelMod {
   
   @JSImport("playable/dist/src/modules/ui/debug-panel/debug-panel", JSImport.Default)
   @js.native
-  class default protected () extends DebugPanel {
+  class default protected ()
+    extends StObject
+       with DebugPanel {
     def this(hasEngineRootContainerKeyboardControl: KeyboardControl) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _interval: js.Any = js.native
+    
+    /* CompleteClass */
+    var _keyControlCallback: js.Any = js.native
+    
+    /* CompleteClass */
+    override def clearUpdateInterval(): Unit = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getDebugInfo(): IEngineDebugInfo | CurrentBitrate = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setUpdateInterval(): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateInfo(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.debugPanelViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -44,38 +90,37 @@ object debugPanelMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait DebugPanel extends StObject {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _interval: js.Any = js.native
+    var _interval: js.Any
     
-    var _keyControlCallback: js.Any = js.native
+    var _keyControlCallback: js.Any
     
-    def clearUpdateInterval(): Unit = js.native
+    def clearUpdateInterval(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getDebugInfo(): IEngineDebugInfo | CurrentBitrate = js.native
+    def getDebugInfo(): IEngineDebugInfo | CurrentBitrate
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    def setUpdateInterval(): Unit = js.native
+    def setUpdateInterval(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def updateInfo(): Unit = js.native
+    def updateInfo(): Unit
     
-    var view: typings.playable.debugPanelViewMod.default = js.native
+    var view: typings.playable.debugPanelViewMod.default
   }
   object DebugPanel {
     

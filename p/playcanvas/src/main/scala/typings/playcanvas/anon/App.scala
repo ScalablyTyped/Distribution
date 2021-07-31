@@ -4,15 +4,13 @@ import typings.playcanvas.pc.Application
 import typings.playcanvas.pc.Entity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
-  var app: Application = js.native
+  var app: Application
   
-  var entity: Entity = js.native
+  var entity: Entity
 }
 object App {
   

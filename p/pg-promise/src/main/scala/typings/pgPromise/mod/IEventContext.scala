@@ -3,25 +3,23 @@ package typings.pgPromise.mod
 import typings.pgPromise.pgSubsetMod.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Generic Event Context interface;
 // See: http://vitaly-t.github.io/pg-promise/global.html#EventContext
-@js.native
 trait IEventContext[C /* <: IClient */] extends StObject {
   
-  var client: C = js.native
+  var client: C
   
-  var cn: js.Any = js.native
+  var cn: js.Any
   
-  var ctx: ITaskContext = js.native
+  var ctx: ITaskContext
   
-  var dc: js.Any = js.native
+  var dc: js.Any
   
-  var params: js.Any = js.native
+  var params: js.Any
   
-  var query: js.Any = js.native
+  var query: js.Any
 }
 object IEventContext {
   
@@ -32,7 +30,7 @@ object IEventContext {
   }
   
   @scala.inline
-  implicit class IEventContextMutableBuilder[Self <: IEventContext[_], C /* <: IClient */] (val x: Self with IEventContext[C]) extends AnyVal {
+  implicit class IEventContextMutableBuilder[Self <: IEventContext[?], C /* <: IClient */] (val x: Self & IEventContext[C]) extends AnyVal {
     
     @scala.inline
     def setClient(value: C): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])

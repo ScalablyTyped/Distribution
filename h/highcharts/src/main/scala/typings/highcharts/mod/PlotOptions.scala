@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotOptions extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var abands: js.UndefOr[PlotAbandsOptions] = js.native
+  var abands: js.UndefOr[PlotAbandsOptions] = js.undefined
   
   /**
     * (Highstock) Accumulation Distribution (AD). This series requires
@@ -43,7 +41,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var ad: js.UndefOr[PlotAdOptions] = js.native
+  var ad: js.UndefOr[PlotAdOptions] = js.undefined
   
   /**
     * (Highstock) Awesome Oscillator. This series requires the `linkedTo`
@@ -62,7 +60,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var ao: js.UndefOr[PlotAoOptions] = js.native
+  var ao: js.UndefOr[PlotAoOptions] = js.undefined
   
   /**
     * (Highstock) Absolute Price Oscillator. This series requires the
@@ -81,7 +79,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var apo: js.UndefOr[PlotApoOptions] = js.native
+  var apo: js.UndefOr[PlotApoOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The area series type.
@@ -98,7 +96,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var area: js.UndefOr[PlotAreaOptions] = js.native
+  var area: js.UndefOr[PlotAreaOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The area range series is a carteseian series with
@@ -118,7 +116,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var arearange: js.UndefOr[PlotArearangeOptions] = js.native
+  var arearange: js.UndefOr[PlotArearangeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The area spline series is an area series where
@@ -137,7 +135,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var areaspline: js.UndefOr[PlotAreasplineOptions] = js.native
+  var areaspline: js.UndefOr[PlotAreasplineOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The area spline range is a cartesian series type
@@ -157,7 +155,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var areasplinerange: js.UndefOr[PlotAreasplinerangeOptions] = js.native
+  var areasplinerange: js.UndefOr[PlotAreasplinerangeOptions] = js.undefined
   
   /**
     * (Highstock) Aroon. This series requires the `linkedTo` option to be set
@@ -175,7 +173,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var aroon: js.UndefOr[PlotAroonOptions] = js.native
+  var aroon: js.UndefOr[PlotAroonOptions] = js.undefined
   
   /**
     * (Highstock) Aroon Oscillator. This series requires the `linkedTo` option
@@ -195,7 +193,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var aroonoscillator: js.UndefOr[PlotAroonoscillatorOptions] = js.native
+  var aroonoscillator: js.UndefOr[PlotAroonoscillatorOptions] = js.undefined
   
   /**
     * (Highstock) Average true range indicator (ATR). This series requires
@@ -213,7 +211,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var atr: js.UndefOr[PlotAtrOptions] = js.native
+  var atr: js.UndefOr[PlotAtrOptions] = js.undefined
   
   /**
     * (Highcharts) A bar series is a special type of column series where the
@@ -231,7 +229,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var bar: js.UndefOr[PlotBarOptions] = js.native
+  var bar: js.UndefOr[PlotBarOptions] = js.undefined
   
   /**
     * (Highstock) Bollinger bands (BB). This series requires the `linkedTo`
@@ -250,7 +248,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var bb: js.UndefOr[PlotBbOptions] = js.native
+  var bb: js.UndefOr[PlotBbOptions] = js.undefined
   
   /**
     * (Highcharts) A bell curve is an areaspline series which represents the
@@ -271,7 +269,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var bellcurve: js.UndefOr[PlotBellcurveOptions] = js.native
+  var bellcurve: js.UndefOr[PlotBellcurveOptions] = js.undefined
   
   /**
     * (Highcharts) A box plot is a convenient way of depicting groups of data
@@ -291,7 +289,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var boxplot: js.UndefOr[PlotBoxplotOptions] = js.native
+  var boxplot: js.UndefOr[PlotBoxplotOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A bubble series is a three dimensional series
@@ -311,7 +309,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var bubble: js.UndefOr[PlotBubbleOptions] = js.native
+  var bubble: js.UndefOr[PlotBubbleOptions] = js.undefined
   
   /**
     * (Highcharts) A bullet graph is a variation of a bar graph. The bullet
@@ -331,7 +329,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var bullet: js.UndefOr[PlotBulletOptions] = js.native
+  var bullet: js.UndefOr[PlotBulletOptions] = js.undefined
   
   /**
     * (Highstock) A candlestick chart is a style of financial chart used to
@@ -350,7 +348,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var candlestick: js.UndefOr[PlotCandlestickOptions] = js.native
+  var candlestick: js.UndefOr[PlotCandlestickOptions] = js.undefined
   
   /**
     * (Highstock) Commodity Channel Index (CCI). This series requires
@@ -368,7 +366,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var cci: js.UndefOr[PlotCciOptions] = js.native
+  var cci: js.UndefOr[PlotCciOptions] = js.undefined
   
   /**
     * (Highstock) Chaikin Oscillator. This series requires the `linkedTo`
@@ -387,7 +385,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var chaikin: js.UndefOr[PlotChaikinOptions] = js.native
+  var chaikin: js.UndefOr[PlotChaikinOptions] = js.undefined
   
   /**
     * (Highstock) Chaikin Money Flow indicator (cmf).
@@ -404,7 +402,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var cmf: js.UndefOr[PlotCmfOptions] = js.native
+  var cmf: js.UndefOr[PlotCmfOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Column series display one column per value along
@@ -422,7 +420,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var column: js.UndefOr[PlotColumnOptions] = js.native
+  var column: js.UndefOr[PlotColumnOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Column pyramid series display one pyramid per
@@ -442,7 +440,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var columnpyramid: js.UndefOr[PlotColumnpyramidOptions] = js.native
+  var columnpyramid: js.UndefOr[PlotColumnpyramidOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The column range is a cartesian series type with
@@ -462,7 +460,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var columnrange: js.UndefOr[PlotColumnrangeOptions] = js.native
+  var columnrange: js.UndefOr[PlotColumnrangeOptions] = js.undefined
   
   /**
     * (Highcharts) A cylinder graph is a variation of a 3d column graph. The
@@ -480,7 +478,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var cylinder: js.UndefOr[PlotCylinderOptions] = js.native
+  var cylinder: js.UndefOr[PlotCylinderOptions] = js.undefined
   
   /**
     * (Highstock) Double exponential moving average (DEMA) indicator. This
@@ -499,7 +497,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var dema: js.UndefOr[PlotDemaOptions] = js.native
+  var dema: js.UndefOr[PlotDemaOptions] = js.undefined
   
   /**
     * (Highcharts) A dependency wheel chart is a type of flow diagram, where
@@ -519,7 +517,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var dependencywheel: js.UndefOr[PlotDependencywheelOptions] = js.native
+  var dependencywheel: js.UndefOr[PlotDependencywheelOptions] = js.undefined
   
   /**
     * (Highstock) Detrended Price Oscillator. This series requires the
@@ -538,7 +536,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var dpo: js.UndefOr[PlotDpoOptions] = js.native
+  var dpo: js.UndefOr[PlotDpoOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The dumbbell series is a cartesian series with
@@ -558,7 +556,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var dumbbell: js.UndefOr[PlotDumbbellOptions] = js.native
+  var dumbbell: js.UndefOr[PlotDumbbellOptions] = js.undefined
   
   /**
     * (Highstock) Exponential moving average indicator (EMA). This series
@@ -576,7 +574,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var ema: js.UndefOr[PlotEmaOptions] = js.native
+  var ema: js.UndefOr[PlotEmaOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Error bars are a graphical representation of the
@@ -595,7 +593,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var errorbar: js.UndefOr[PlotErrorbarOptions] = js.native
+  var errorbar: js.UndefOr[PlotErrorbarOptions] = js.undefined
   
   /**
     * (Highstock) Flags are used to mark events in stock charts. They can be
@@ -613,7 +611,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var flags: js.UndefOr[PlotFlagsOptions] = js.native
+  var flags: js.UndefOr[PlotFlagsOptions] = js.undefined
   
   /**
     * (Highcharts) Funnel charts are a type of chart often used to visualize
@@ -632,7 +630,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var funnel: js.UndefOr[PlotFunnelOptions] = js.native
+  var funnel: js.UndefOr[PlotFunnelOptions] = js.undefined
   
   /**
     * (Highcharts) A funnel3d is a 3d version of funnel series type. Funnel
@@ -654,7 +652,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var funnel3d: js.UndefOr[PlotFunnel3dOptions] = js.native
+  var funnel3d: js.UndefOr[PlotFunnel3dOptions] = js.undefined
   
   /**
     * (Gantt) A `gantt` series. If the type option is not specified, it is
@@ -672,7 +670,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var gantt: js.UndefOr[PlotGanttOptions] = js.native
+  var gantt: js.UndefOr[PlotGanttOptions] = js.undefined
   
   /**
     * (Highcharts) Gauges are circular plots displaying one or more values with
@@ -690,7 +688,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var gauge: js.UndefOr[PlotGaugeOptions] = js.native
+  var gauge: js.UndefOr[PlotGaugeOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) A heatmap is a graphical representation of data
@@ -709,7 +707,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var heatmap: js.UndefOr[PlotHeatmapOptions] = js.native
+  var heatmap: js.UndefOr[PlotHeatmapOptions] = js.undefined
   
   /**
     * (Highcharts) A histogram is a column series which represents the
@@ -729,7 +727,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var histogram: js.UndefOr[PlotHistogramOptions] = js.native
+  var histogram: js.UndefOr[PlotHistogramOptions] = js.undefined
   
   /**
     * (Highstock) Ichimoku Kinko Hyo (IKH). This series requires `linkedTo`
@@ -747,7 +745,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var ikh: js.UndefOr[PlotIkhOptions] = js.native
+  var ikh: js.UndefOr[PlotIkhOptions] = js.undefined
   
   /**
     * (Highcharts) An item chart is an infographic chart where a number of
@@ -771,7 +769,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var item: js.UndefOr[PlotItemOptions] = js.native
+  var item: js.UndefOr[PlotItemOptions] = js.undefined
   
   /**
     * (Highstock) Keltner Channels. This series requires the `linkedTo` option
@@ -792,7 +790,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var keltnerchannels: js.UndefOr[PlotKeltnerchannelsOptions] = js.native
+  var keltnerchannels: js.UndefOr[PlotKeltnerchannelsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A line series displays information as a series of
@@ -810,7 +808,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var line: js.UndefOr[PlotLineOptions] = js.native
+  var line: js.UndefOr[PlotLineOptions] = js.undefined
   
   /**
     * (Highstock) Linear regression indicator. This series requires `linkedTo`
@@ -829,7 +827,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var linearregression: js.UndefOr[PlotLinearregressionOptions] = js.native
+  var linearregression: js.UndefOr[PlotLinearregressionOptions] = js.undefined
   
   /**
     * (Highstock) Linear regression angle indicator. This series requires
@@ -848,7 +846,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var linearregressionangle: js.UndefOr[PlotLinearregressionangleOptions] = js.native
+  var linearregressionangle: js.UndefOr[PlotLinearregressionangleOptions] = js.undefined
   
   /**
     * (Highstock) Linear regression intercept indicator. This series requires
@@ -867,7 +865,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var linearregressionintercept: js.UndefOr[PlotLinearregressioninterceptOptions] = js.native
+  var linearregressionintercept: js.UndefOr[PlotLinearregressioninterceptOptions] = js.undefined
   
   /**
     * (Highstock) Linear regression slope indicator. This series requires
@@ -886,7 +884,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var linearregressionslope: js.UndefOr[PlotLinearregressionslopeOptions] = js.native
+  var linearregressionslope: js.UndefOr[PlotLinearregressionslopeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) The lollipop series is a carteseian series with a
@@ -906,7 +904,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var lollipop: js.UndefOr[PlotLollipopOptions] = js.native
+  var lollipop: js.UndefOr[PlotLollipopOptions] = js.undefined
   
   /**
     * (Highstock) Moving Average Convergence Divergence (MACD). This series
@@ -925,7 +923,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var macd: js.UndefOr[PlotMacdOptions] = js.native
+  var macd: js.UndefOr[PlotMacdOptions] = js.undefined
   
   /**
     * (Highmaps) The map series is used for basic choropleth maps, where each
@@ -943,7 +941,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var map: js.UndefOr[PlotMapOptions] = js.native
+  var map: js.UndefOr[PlotMapOptions] = js.undefined
   
   /**
     * (Highmaps) A map bubble series is a bubble series laid out on top of a
@@ -962,7 +960,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var mapbubble: js.UndefOr[PlotMapbubbleOptions] = js.native
+  var mapbubble: js.UndefOr[PlotMapbubbleOptions] = js.undefined
   
   /**
     * (Highmaps) A mapline series is a special case of the map series where the
@@ -981,7 +979,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var mapline: js.UndefOr[PlotMaplineOptions] = js.native
+  var mapline: js.UndefOr[PlotMaplineOptions] = js.undefined
   
   /**
     * (Highmaps) A mappoint series is a special form of scatter series where
@@ -999,7 +997,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var mappoint: js.UndefOr[PlotMappointOptions] = js.native
+  var mappoint: js.UndefOr[PlotMappointOptions] = js.undefined
   
   /**
     * (Highstock) Money Flow Index. This series requires `linkedTo` option to
@@ -1018,7 +1016,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var mfi: js.UndefOr[PlotMfiOptions] = js.native
+  var mfi: js.UndefOr[PlotMfiOptions] = js.undefined
   
   /**
     * (Highstock) Momentum. This series requires `linkedTo` option to be set.
@@ -1035,7 +1033,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var momentum: js.UndefOr[PlotMomentumOptions] = js.native
+  var momentum: js.UndefOr[PlotMomentumOptions] = js.undefined
   
   /**
     * (Highstock) Normalized average true range indicator (NATR). This series
@@ -1054,7 +1052,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var natr: js.UndefOr[PlotNatrOptions] = js.native
+  var natr: js.UndefOr[PlotNatrOptions] = js.undefined
   
   /**
     * (Highcharts) A networkgraph is a type of relationship chart, where
@@ -1074,7 +1072,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var networkgraph: js.UndefOr[PlotNetworkgraphOptions] = js.native
+  var networkgraph: js.UndefOr[PlotNetworkgraphOptions] = js.undefined
   
   /**
     * (Highstock) An OHLC chart is a style of financial chart used to describe
@@ -1093,7 +1091,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var ohlc: js.UndefOr[PlotOhlcOptions] = js.native
+  var ohlc: js.UndefOr[PlotOhlcOptions] = js.undefined
   
   /**
     * (Highcharts) An organization chart is a diagram that shows the structure
@@ -1113,7 +1111,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var organization: js.UndefOr[PlotOrganizationOptions] = js.native
+  var organization: js.UndefOr[PlotOrganizationOptions] = js.undefined
   
   /**
     * (Highcharts) A packed bubble series is a two dimensional series type,
@@ -1134,7 +1132,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var packedbubble: js.UndefOr[PlotPackedbubbleOptions] = js.native
+  var packedbubble: js.UndefOr[PlotPackedbubbleOptions] = js.undefined
   
   /**
     * (Highcharts) A pareto diagram is a type of chart that contains both bars
@@ -1153,7 +1151,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var pareto: js.UndefOr[PlotParetoOptions] = js.native
+  var pareto: js.UndefOr[PlotParetoOptions] = js.undefined
   
   /**
     * (Highstock) Price channel (PC). This series requires the `linkedTo`
@@ -1172,7 +1170,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var pc: js.UndefOr[PlotPcOptions] = js.native
+  var pc: js.UndefOr[PlotPcOptions] = js.undefined
   
   /**
     * (Highcharts) A pie chart is a circular graphic which is divided into
@@ -1190,7 +1188,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var pie: js.UndefOr[PlotPieOptions] = js.native
+  var pie: js.UndefOr[PlotPieOptions] = js.undefined
   
   /**
     * (Highstock) Pivot points indicator. This series requires the `linkedTo`
@@ -1210,7 +1208,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var pivotpoints: js.UndefOr[PlotPivotpointsOptions] = js.native
+  var pivotpoints: js.UndefOr[PlotPivotpointsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A polygon series can be used to draw any freeform
@@ -1230,7 +1228,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var polygon: js.UndefOr[PlotPolygonOptions] = js.native
+  var polygon: js.UndefOr[PlotPolygonOptions] = js.undefined
   
   /**
     * (Highstock) Percentage Price Oscillator. This series requires the
@@ -1249,7 +1247,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var ppo: js.UndefOr[PlotPpoOptions] = js.native
+  var ppo: js.UndefOr[PlotPpoOptions] = js.undefined
   
   /**
     * (Highstock) Price envelopes indicator based on SMA calculations. This
@@ -1269,7 +1267,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var priceenvelopes: js.UndefOr[PlotPriceenvelopesOptions] = js.native
+  var priceenvelopes: js.UndefOr[PlotPriceenvelopesOptions] = js.undefined
   
   /**
     * (Highstock) Parabolic SAR. This series requires `linkedTo` option to be
@@ -1287,7 +1285,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var psar: js.UndefOr[PlotPsarOptions] = js.native
+  var psar: js.UndefOr[PlotPsarOptions] = js.undefined
   
   /**
     * (Highcharts) A pyramid series is a special type of funnel, without neck
@@ -1305,7 +1303,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var pyramid: js.UndefOr[PlotPyramidOptions] = js.native
+  var pyramid: js.UndefOr[PlotPyramidOptions] = js.undefined
   
   /**
     * (Highcharts) A pyramid3d is a 3d version of pyramid series type. Pyramid
@@ -1325,7 +1323,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var pyramid3d: js.UndefOr[PlotPyramid3dOptions] = js.native
+  var pyramid3d: js.UndefOr[PlotPyramid3dOptions] = js.undefined
   
   /**
     * (Highstock) Rate of change indicator (ROC). The indicator value for each
@@ -1351,7 +1349,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var roc: js.UndefOr[PlotRocOptions] = js.native
+  var roc: js.UndefOr[PlotRocOptions] = js.undefined
   
   /**
     * (Highstock) Relative strength index (RSI) technical indicator. This
@@ -1370,7 +1368,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var rsi: js.UndefOr[PlotRsiOptions] = js.native
+  var rsi: js.UndefOr[PlotRsiOptions] = js.undefined
   
   /**
     * (Highcharts) A sankey diagram is a type of flow diagram, in which the
@@ -1389,7 +1387,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var sankey: js.UndefOr[PlotSankeyOptions] = js.native
+  var sankey: js.UndefOr[PlotSankeyOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A scatter plot uses cartesian coordinates to
@@ -1407,7 +1405,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var scatter: js.UndefOr[PlotScatterOptions] = js.native
+  var scatter: js.UndefOr[PlotScatterOptions] = js.undefined
   
   /**
     * (Highcharts) A 3D scatter plot uses x, y and z coordinates to display
@@ -1426,7 +1424,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var scatter3d: js.UndefOr[PlotScatter3dOptions] = js.native
+  var scatter3d: js.UndefOr[PlotScatter3dOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) General options for all series
@@ -1444,7 +1442,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var series: js.UndefOr[PlotSeriesOptions] = js.native
+  var series: js.UndefOr[PlotSeriesOptions] = js.undefined
   
   /**
     * (Highstock) Slow Stochastic oscillator. This series requires the
@@ -1465,7 +1463,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var slowstochastic: js.UndefOr[PlotSlowstochasticOptions] = js.native
+  var slowstochastic: js.UndefOr[PlotSlowstochasticOptions] = js.undefined
   
   /**
     * (Highstock) Simple moving average indicator (SMA). This series requires
@@ -1483,7 +1481,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var sma: js.UndefOr[PlotSmaOptions] = js.native
+  var sma: js.UndefOr[PlotSmaOptions] = js.undefined
   
   /**
     * (Highcharts) A solid gauge is a circular gauge where the value is
@@ -1503,7 +1501,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var solidgauge: js.UndefOr[PlotSolidgaugeOptions] = js.native
+  var solidgauge: js.UndefOr[PlotSolidgaugeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A spline series is a special type of line series,
@@ -1521,7 +1519,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var spline: js.UndefOr[PlotSplineOptions] = js.native
+  var spline: js.UndefOr[PlotSplineOptions] = js.undefined
   
   /**
     * (Highstock) Stochastic oscillator. This series requires the `linkedTo`
@@ -1541,7 +1539,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var stochastic: js.UndefOr[PlotStochasticOptions] = js.native
+  var stochastic: js.UndefOr[PlotStochasticOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A streamgraph is a type of stacked area graph
@@ -1561,7 +1559,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var streamgraph: js.UndefOr[PlotStreamgraphOptions] = js.native
+  var streamgraph: js.UndefOr[PlotStreamgraphOptions] = js.undefined
   
   /**
     * (Highcharts) A Sunburst displays hierarchical data, where a level in the
@@ -1581,7 +1579,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var sunburst: js.UndefOr[PlotSunburstOptions] = js.native
+  var sunburst: js.UndefOr[PlotSunburstOptions] = js.undefined
   
   /**
     * (Highstock) Supertrend indicator. This series requires the `linkedTo`
@@ -1601,7 +1599,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var supertrend: js.UndefOr[PlotSupertrendOptions] = js.native
+  var supertrend: js.UndefOr[PlotSupertrendOptions] = js.undefined
   
   /**
     * (Highstock) Triple exponential moving average (TEMA) indicator. This
@@ -1620,7 +1618,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var tema: js.UndefOr[PlotTemaOptions] = js.native
+  var tema: js.UndefOr[PlotTemaOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) A tilemap series is a type of heatmap where the
@@ -1638,7 +1636,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var tilemap: js.UndefOr[PlotTilemapOptions] = js.native
+  var tilemap: js.UndefOr[PlotTilemapOptions] = js.undefined
   
   /**
     * (Highcharts) The timeline series presents given events along a drawn
@@ -1656,7 +1654,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var timeline: js.UndefOr[PlotTimelineOptions] = js.native
+  var timeline: js.UndefOr[PlotTimelineOptions] = js.undefined
   
   /**
     * (Highcharts) A treemap displays hierarchical data using nested
@@ -1675,7 +1673,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var treemap: js.UndefOr[PlotTreemapOptions] = js.native
+  var treemap: js.UndefOr[PlotTreemapOptions] = js.undefined
   
   /**
     * (Highstock) Trendline (linear regression) fits a straight line to the
@@ -1695,7 +1693,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var trendline: js.UndefOr[PlotTrendlineOptions] = js.native
+  var trendline: js.UndefOr[PlotTrendlineOptions] = js.undefined
   
   /**
     * (Highstock) Triple exponential average (TRIX) oscillator. This series
@@ -1716,7 +1714,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var trix: js.UndefOr[PlotTrixOptions] = js.native
+  var trix: js.UndefOr[PlotTrixOptions] = js.undefined
   
   /**
     * (Highcharts) A variable pie series is a two dimensional series type,
@@ -1737,7 +1735,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var variablepie: js.UndefOr[PlotVariablepieOptions] = js.native
+  var variablepie: js.UndefOr[PlotVariablepieOptions] = js.undefined
   
   /**
     * (Highcharts) A variwide chart (related to marimekko chart) is a column
@@ -1755,7 +1753,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var variwide: js.UndefOr[PlotVariwideOptions] = js.native
+  var variwide: js.UndefOr[PlotVariwideOptions] = js.undefined
   
   /**
     * (Highstock) Volume By Price indicator.
@@ -1774,7 +1772,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var vbp: js.UndefOr[PlotVbpOptions] = js.native
+  var vbp: js.UndefOr[PlotVbpOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) A vector plot is a type of cartesian chart where
@@ -1793,7 +1791,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var vector: js.UndefOr[PlotVectorOptions] = js.native
+  var vector: js.UndefOr[PlotVectorOptions] = js.undefined
   
   /**
     * (Highcharts) A Venn diagram displays all possible logical relations
@@ -1814,7 +1812,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var venn: js.UndefOr[PlotVennOptions] = js.native
+  var venn: js.UndefOr[PlotVennOptions] = js.undefined
   
   /**
     * (Highstock) Volume Weighted Average Price indicator.
@@ -1833,7 +1831,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var vwap: js.UndefOr[PlotVwapOptions] = js.native
+  var vwap: js.UndefOr[PlotVwapOptions] = js.undefined
   
   /**
     * (Highcharts) A waterfall chart displays sequentially introduced positive
@@ -1852,7 +1850,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var waterfall: js.UndefOr[PlotWaterfallOptions] = js.native
+  var waterfall: js.UndefOr[PlotWaterfallOptions] = js.undefined
   
   /**
     * (Highstock) Williams %R. This series requires the `linkedTo` option to be
@@ -1871,7 +1869,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var williamsr: js.UndefOr[PlotWilliamsrOptions] = js.native
+  var williamsr: js.UndefOr[PlotWilliamsrOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Wind barbs are a convenient way to represent wind
@@ -1890,7 +1888,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var windbarb: js.UndefOr[PlotWindbarbOptions] = js.native
+  var windbarb: js.UndefOr[PlotWindbarbOptions] = js.undefined
   
   /**
     * (Highstock) Weighted moving average indicator (WMA). This series requires
@@ -1908,7 +1906,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var wma: js.UndefOr[PlotWmaOptions] = js.native
+  var wma: js.UndefOr[PlotWmaOptions] = js.undefined
   
   /**
     * (Highcharts) A word cloud is a visualization of a set of words, where the
@@ -1927,7 +1925,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var wordcloud: js.UndefOr[PlotWordcloudOptions] = js.native
+  var wordcloud: js.UndefOr[PlotWordcloudOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The X-range series displays ranges on the
@@ -1945,7 +1943,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var xrange: js.UndefOr[PlotXrangeOptions] = js.native
+  var xrange: js.UndefOr[PlotXrangeOptions] = js.undefined
   
   /**
     * (Highstock) Zig Zag indicator.
@@ -1964,7 +1962,7 @@ trait PlotOptions extends StObject {
     * 3. Options for one single series are given in the series instance array.
     * (see online documentation for example)
     */
-  var zigzag: js.UndefOr[PlotZigzagOptions] = js.native
+  var zigzag: js.UndefOr[PlotZigzagOptions] = js.undefined
 }
 object PlotOptions {
   

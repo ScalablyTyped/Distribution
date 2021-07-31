@@ -2,13 +2,11 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentTemplateList extends StObject {
   
-  var documentTemplates: js.UndefOr[js.Array[DocumentTemplate]] = js.native
+  var documentTemplates: js.UndefOr[js.Array[DocumentTemplate]] = js.undefined
 }
 object DocumentTemplateList {
   

@@ -9,38 +9,38 @@ import typings.columnify.columnifyStrings.right
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("columnify", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Array[_]): String = js.native
-  @JSImport("columnify", JSImport.Namespace)
-  @js.native
-  def apply(data: js.Array[_], options: GlobalOptions): String = js.native
-  @JSImport("columnify", JSImport.Namespace)
-  @js.native
-  def apply(data: Record[String, _]): String = js.native
-  @JSImport("columnify", JSImport.Namespace)
-  @js.native
-  def apply(data: Record[String, _], options: GlobalOptions): String = js.native
+  @scala.inline
+  def apply(data: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(data: js.Array[js.Any], options: GlobalOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(data: Record[String, js.Any]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(data: Record[String, js.Any], options: GlobalOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("columnify", JSImport.Namespace)
   @js.native
-  trait GlobalOptions extends Options {
+  val ^ : js.Any = js.native
+  
+  trait GlobalOptions
+    extends StObject
+       with Options {
     
-    var columnSplitter: js.UndefOr[String] = js.native
+    var columnSplitter: js.UndefOr[String] = js.undefined
     
-    var columns: js.UndefOr[js.Array[String]] = js.native
+    var columns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var config: js.UndefOr[StringDictionary[Options]] = js.native
+    var config: js.UndefOr[StringDictionary[Options]] = js.undefined
     
-    var maxLineWidth: js.UndefOr[Double] = js.native
+    var maxLineWidth: js.UndefOr[Double] = js.undefined
     
-    var truncate: js.UndefOr[Boolean] = js.native
+    var truncate: js.UndefOr[Boolean] = js.undefined
     
-    var widths: js.UndefOr[StringDictionary[PickOptionsminWidthmaxWid]] = js.native
+    var widths: js.UndefOr[StringDictionary[PickOptionsminWidthmaxWid]] = js.undefined
   }
   object GlobalOptions {
     
@@ -94,26 +94,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var align: js.UndefOr[left | center | centre | right] = js.native
+    var align: js.UndefOr[left | center | centre | right] = js.undefined
     
-    var dataTransform: js.UndefOr[js.Function1[/* data */ String, String]] = js.native
+    var dataTransform: js.UndefOr[js.Function1[/* data */ String, String]] = js.undefined
     
-    var headingTransform: js.UndefOr[js.Function1[/* data */ String, String]] = js.native
+    var headingTransform: js.UndefOr[js.Function1[/* data */ String, String]] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var paddingChr: js.UndefOr[String] = js.native
+    var paddingChr: js.UndefOr[String] = js.undefined
     
-    var preserveNewLines: js.UndefOr[Boolean] = js.native
+    var preserveNewLines: js.UndefOr[Boolean] = js.undefined
     
-    var showHeaders: js.UndefOr[Boolean] = js.native
+    var showHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var truncateMarker: js.UndefOr[String] = js.native
+    var truncateMarker: js.UndefOr[String] = js.undefined
   }
   object Options {
     

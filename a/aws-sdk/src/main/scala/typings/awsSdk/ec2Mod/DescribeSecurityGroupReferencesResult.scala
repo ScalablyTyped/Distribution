@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSecurityGroupReferencesResult extends StObject {
   
   /**
     * Information about the VPCs with the referencing security groups.
     */
-  var SecurityGroupReferenceSet: js.UndefOr[SecurityGroupReferences] = js.native
+  var SecurityGroupReferenceSet: js.UndefOr[SecurityGroupReferences] = js.undefined
 }
 object DescribeSecurityGroupReferencesResult {
   

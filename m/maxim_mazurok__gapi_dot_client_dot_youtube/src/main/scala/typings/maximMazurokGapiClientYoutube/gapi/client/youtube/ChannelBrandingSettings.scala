@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelBrandingSettings extends StObject {
   
   /** Branding properties for the channel view. */
-  var channel: js.UndefOr[ChannelSettings] = js.native
+  var channel: js.UndefOr[ChannelSettings] = js.undefined
   
   /** Additional experimental branding properties. */
-  var hints: js.UndefOr[js.Array[PropertyValue]] = js.native
+  var hints: js.UndefOr[js.Array[PropertyValue]] = js.undefined
   
   /** Branding properties for branding images. */
-  var image: js.UndefOr[ImageSettings] = js.native
+  var image: js.UndefOr[ImageSettings] = js.undefined
   
   /** Branding properties for the watch page. */
-  var watch: js.UndefOr[WatchSettings] = js.native
+  var watch: js.UndefOr[WatchSettings] = js.undefined
 }
 object ChannelBrandingSettings {
   

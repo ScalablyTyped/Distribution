@@ -24,7 +24,6 @@ import typings.testingLibraryDom.queriesMod.QueryByRole_
 import typings.testingLibraryDom.queriesMod.QueryByText_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenMod {
@@ -40,58 +39,38 @@ object screenMod {
       * Convenience function for `pretty-dom` which also allows an array
       * of elements
       */
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(
-      element: js.Array[Element | HTMLDocument],
-      maxLength: js.UndefOr[scala.Nothing],
-      options: OptionsReceived
-    ): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: Element): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
+    @scala.inline
+    def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@testing-library/dom/types/screen", "screen.findAllByAltText")
     @js.native
@@ -289,15 +268,12 @@ object screenMod {
       * Convenience function for `Testing Playground` which logs URL that
       * can be opened in a browser
       */
-    @JSImport("@testing-library/dom/types/screen", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(element: Element): Unit = js.native
-    @JSImport("@testing-library/dom/types/screen", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(element: HTMLDocument): Unit = js.native
+    @scala.inline
+    def logTestingPlaygroundURL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")().asInstanceOf[Unit]
+    @scala.inline
+    def logTestingPlaygroundURL(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def logTestingPlaygroundURL(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@testing-library/dom/types/screen", "screen.queryAllByAltText")
     @js.native
@@ -396,5 +372,5 @@ object screenMod {
     def queryByTitle_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTitle")(x.asInstanceOf[js.Any])
   }
   
-  type Screen_[Q /* <: Queries */] = BoundFunctions[Q] with Debug
+  type Screen_[Q /* <: Queries */] = BoundFunctions[Q] & Debug
 }

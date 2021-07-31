@@ -4,17 +4,15 @@ import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.bufferGeometryMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofBufferGeometryUtils extends StObject {
   
-  def computeTangents(geometry: BufferGeometry): Null = js.native
+  def computeTangents(geometry: BufferGeometry): Null
   
-  def mergeBufferAttributes(attributes: js.Array[BufferAttribute]): BufferAttribute = js.native
+  def mergeBufferAttributes(attributes: js.Array[BufferAttribute]): BufferAttribute
   
-  def mergeBufferGeometries(geometries: js.Array[BufferGeometry]): BufferGeometry = js.native
+  def mergeBufferGeometries(geometries: js.Array[BufferGeometry]): BufferGeometry
 }
 object TypeofBufferGeometryUtils {
   

@@ -10,8 +10,8 @@ IO using Q promises
 | Full name          | q-io |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 206 |
-| # downloads        | 1540519 |
+| # dependents       | 205 |
+| # downloads        | 1590759 |
 | # stars            | 26 |
 
 ## Links

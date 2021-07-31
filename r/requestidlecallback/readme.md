@@ -10,9 +10,9 @@ A polyfill for the requestIdleCallback.
 | ------------------ | :-------------: |
 | Full name          | requestidlecallback |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 15 |
-| # downloads        | 3652858 |
+| # releases         | 0 |
+| # dependents       | 14 |
+| # downloads        | 4873003 |
 | # stars            | 2 |
 
 ## Links

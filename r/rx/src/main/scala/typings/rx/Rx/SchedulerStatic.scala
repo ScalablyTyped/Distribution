@@ -2,32 +2,30 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerStatic extends StObject {
   
-  var default: IScheduler = js.native
+  var default: IScheduler
   
-  var async: IScheduler = js.native
+  var async: IScheduler
   
-  var currentThread: ICurrentThreadScheduler = js.native
+  var currentThread: ICurrentThreadScheduler
   
-  var immediate: IScheduler = js.native
+  var immediate: IScheduler
   
   /** Determines whether the given object is a scheduler */
-  def isScheduler(s: js.Any): Boolean = js.native
+  def isScheduler(s: js.Any): Boolean
   
   /**
     * Normalizes the specified TimeSpan value to a positive value.
     * @param {Number} timeSpan The time span value to normalize.
     * @returns {Number} The specified TimeSpan value if it is zero or positive; otherwise, 0
     */
-  def normalize(timeSpan: Double): Double = js.native
+  def normalize(timeSpan: Double): Double
   
   /** Gets the current time according to the local machine's system clock. */
-  def now(): Double = js.native
+  def now(): Double
 }
 object SchedulerStatic {
   

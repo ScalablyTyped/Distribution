@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlookBarShortcut extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.OutlookBarShortcut_typekey")
-  var OutlookDotOutlookBarShortcut_typekey: OutlookBarShortcut = js.native
+  var OutlookDotOutlookBarShortcut_typekey: OutlookBarShortcut
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def SetIcon(Icon: js.Any): Unit = js.native
+  def SetIcon(Icon: js.Any): Unit
   
-  val Target: js.Any = js.native
+  val Target: js.Any
 }
 object OutlookBarShortcut {
   

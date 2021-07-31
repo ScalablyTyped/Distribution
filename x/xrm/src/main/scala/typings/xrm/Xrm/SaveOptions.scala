@@ -2,7 +2,6 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data/save External Link: save(Client API reference)}
   */
-@js.native
 trait SaveOptions extends StObject {
   
   /**
     * Indicates whether to use the Book or Reschedule messages rather than the Create or Update messages.
     * Applicable to appointment, recurring appointment, or service activity records.
     */
-  var UseSchedulingEngine: js.UndefOr[Boolean] = js.native
+  var UseSchedulingEngine: js.UndefOr[Boolean] = js.undefined
 }
 object SaveOptions {
   

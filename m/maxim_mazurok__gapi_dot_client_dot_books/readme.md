@@ -10,9 +10,9 @@ TypeScript typings for Books API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.books |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 21 |
 | # dependents       | 1 |
-| # downloads        | 56 |
+| # downloads        | 1634 |
 | # stars            | 0 |
 
 ## Links

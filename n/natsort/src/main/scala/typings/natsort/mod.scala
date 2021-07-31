@@ -2,24 +2,24 @@ package typings.natsort
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("natsort", JSImport.Default)
+  @JSImport("natsort", JSImport.Namespace)
   @js.native
-  def default(): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = js.native
-  @JSImport("natsort", JSImport.Default)
-  @js.native
-  def default(options: OptionsType): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function2[/* a */ String | Double, /* b */ String | Double, Double]]
+  @scala.inline
+  def default(options: OptionsType): js.Function2[/* a */ String | Double, /* b */ String | Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ String | Double, /* b */ String | Double, Double]]
+  
   trait OptionsType extends StObject {
     
-    var desc: js.UndefOr[Boolean] = js.native
+    var desc: js.UndefOr[Boolean] = js.undefined
     
-    var insensitive: js.UndefOr[Boolean] = js.native
+    var insensitive: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsType {
     

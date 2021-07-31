@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DnsProperties extends StObject {
   
   /**
     * The ID for the Route 53 hosted zone that AWS Cloud Map creates when you create a namespace.
     */
-  var HostedZoneId: js.UndefOr[ResourceId] = js.native
+  var HostedZoneId: js.UndefOr[ResourceId] = js.undefined
 }
 object DnsProperties {
   

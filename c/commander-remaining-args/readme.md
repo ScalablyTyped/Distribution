@@ -12,7 +12,7 @@ Get the remaining unknown arguments after parsing the CLI with commander.js
 | Keywords           | commander.js, commander, remaining, unknown, arguments, args, options, pass |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 125118 |
+| # downloads        | 123078 |
 | # stars            | 0 |
 
 ## Links

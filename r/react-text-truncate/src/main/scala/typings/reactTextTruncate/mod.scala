@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,30 +15,29 @@ object mod {
   
   type TextTruncate = Component[TextTruncateProps, js.Object, js.Any]
   
-  @js.native
   trait TextTruncateProps extends StObject {
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var line: js.UndefOr[Double | Boolean] = js.native
+    var line: js.UndefOr[Double | Boolean] = js.undefined
     
-    var maxCalculateTimes: js.UndefOr[Double] = js.native
+    var maxCalculateTimes: js.UndefOr[Double] = js.undefined
     
-    var onCalculated: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCalculated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onToggled: js.UndefOr[js.Function1[/* truncated */ Boolean, Unit]] = js.native
+    var onToggled: js.UndefOr[js.Function1[/* truncated */ Boolean, Unit]] = js.undefined
     
-    var onTruncated: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTruncated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var textElement: js.UndefOr[ReactNode] = js.native
+    var textElement: js.UndefOr[ReactNode] = js.undefined
     
-    var textTruncateChild: js.UndefOr[ReactNode] = js.native
+    var textTruncateChild: js.UndefOr[ReactNode] = js.undefined
     
-    var truncateText: js.UndefOr[String] = js.native
+    var truncateText: js.UndefOr[String] = js.undefined
   }
   object TextTruncateProps {
     

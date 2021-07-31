@@ -2,17 +2,15 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormRegionStartup extends StObject {
   
-  def BeforeFormRegionShow(FormRegion: FormRegion): Unit = js.native
+  def BeforeFormRegionShow(FormRegion: FormRegion): Unit
   
-  def GetFormRegionIcon(FormRegionName: String, LCID: Double, Icon: OlFormRegionIcon): js.Any = js.native
+  def GetFormRegionIcon(FormRegionName: String, LCID: Double, Icon: OlFormRegionIcon): js.Any
   
-  def GetFormRegionManifest(FormRegionName: String, LCID: Double): js.Any = js.native
+  def GetFormRegionManifest(FormRegionName: String, LCID: Double): js.Any
   
   def GetFormRegionStorage(
     FormRegionName: String,
@@ -20,10 +18,10 @@ trait FormRegionStartup extends StObject {
     LCID: Double,
     FormRegionMode: OlFormRegionMode,
     FormRegionSize: OlFormRegionSize
-  ): js.Any = js.native
+  ): js.Any
   
   @JSName("Outlook.FormRegionStartup_typekey")
-  var OutlookDotFormRegionStartup_typekey: FormRegionStartup = js.native
+  var OutlookDotFormRegionStartup_typekey: FormRegionStartup
 }
 object FormRegionStartup {
   

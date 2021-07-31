@@ -14,7 +14,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -79,7 +78,7 @@ trait IoTSiteWise extends Service {
   ): Request[BatchPutAssetPropertyValueResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_IoTSiteWise: ConfigBase with ClientConfiguration = js.native
+  var config_IoTSiteWise: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an access policy that grants the specified identity (AWS SSO user, AWS SSO group, or IAM user) access to the specified AWS IoT SiteWise Monitor portal or project resource.

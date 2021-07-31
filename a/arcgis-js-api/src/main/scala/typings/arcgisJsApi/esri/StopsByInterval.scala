@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StopsByInterval extends Object {
+trait StopsByInterval
+  extends StObject
+     with Object {
   
   /**
     * Specifies a granularity of temporal data and allows you to visualize the data at specified intervals.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
     */
-  var interval: TimeInterval = js.native
+  var interval: TimeInterval
   
   /**
     * A period of time with definitive start and end dates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
     */
-  var timeExtent: js.UndefOr[TimeExtent] = js.native
+  var timeExtent: js.UndefOr[TimeExtent] = js.undefined
 }
 object StopsByInterval {
   

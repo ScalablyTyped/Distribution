@@ -2,29 +2,27 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMRectReadOnly extends StObject {
   
-  val bottom: Double = js.native
+  val bottom: Double
   
-  val height: Double = js.native
+  val height: Double
   
-  val left: Double = js.native
+  val left: Double
   
-  val right: Double = js.native
+  val right: Double
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
   
-  val top: Double = js.native
+  val top: Double
   
-  val width: Double = js.native
+  val width: Double
   
-  val x: Double = js.native
+  val x: Double
   
-  val y: Double = js.native
+  val y: Double
 }
 object DOMRectReadOnly {
   

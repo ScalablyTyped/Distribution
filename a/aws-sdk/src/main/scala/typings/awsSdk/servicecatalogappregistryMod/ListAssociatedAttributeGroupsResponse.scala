@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAssociatedAttributeGroupsResponse extends StObject {
   
   /**
     * A list of attribute group IDs.
     */
-  var attributeGroups: js.UndefOr[AttributeGroupIds] = js.native
+  var attributeGroups: js.UndefOr[AttributeGroupIds] = js.undefined
   
   /**
     * The token to use to get the next page of results after a previous API call. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListAssociatedAttributeGroupsResponse {
   

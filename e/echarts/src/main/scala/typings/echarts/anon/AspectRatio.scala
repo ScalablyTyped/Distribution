@@ -1,29 +1,28 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AspectRatio extends js.Object {
+trait AspectRatio extends StObject {
   
-  var aspectRatio: js.UndefOr[Double] = js.native
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var maxAspectRatio: js.UndefOr[Double] = js.native
+  var maxAspectRatio: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minAspectRatio: js.UndefOr[Double] = js.native
+  var minAspectRatio: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AspectRatio {
   
@@ -34,72 +33,60 @@ object AspectRatio {
   }
   
   @scala.inline
-  implicit class AspectRatioOps[Self <: AspectRatio] (val x: Self) extends AnyVal {
+  implicit class AspectRatioMutableBuilder[Self <: AspectRatio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: Double): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    def setMaxAspectRatio(value: Double): Self = StObject.set(x, "maxAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaxAspectRatioUndefined: Self = StObject.set(x, "maxAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAspectRatio(value: Double): Self = this.set("maxAspectRatio", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteMaxAspectRatio: Self = this.set("maxAspectRatio", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMinAspectRatio(value: Double): Self = StObject.set(x, "minAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMinAspectRatioUndefined: Self = StObject.set(x, "minAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinAspectRatio(value: Double): Self = this.set("minAspectRatio", value.asInstanceOf[js.Any])
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteMinAspectRatio: Self = this.set("minAspectRatio", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

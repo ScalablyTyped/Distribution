@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEntitlementsPatch extends StandardParameters {
+trait ParamsResourceEntitlementsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the enterprise.
     */
-  var enterpriseId: js.UndefOr[String] = js.native
+  var enterpriseId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the entitlement (a product ID), e.g.
     * "app:com.google.android.gm".
     */
-  var entitlementId: js.UndefOr[String] = js.native
+  var entitlementId: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to also install the product on all the user's devices where
@@ -34,17 +34,17 @@ trait ParamsResourceEntitlementsPatch extends StandardParameters {
     * operation from returning successfully, as long as the entitlement was
     * successfully assigned to the user.
     */
-  var install: js.UndefOr[Boolean] = js.native
+  var install: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaEntitlement] = js.native
+  var requestBody: js.UndefOr[SchemaEntitlement] = js.undefined
   
   /**
     * The ID of the user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEntitlementsPatch {
   

@@ -2,7 +2,6 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `nextPageToken` will be populated and should be used as the `pageToken`
   * argument to a subsequent ListPipelines request.
   */
-@js.native
 trait SchemaListPipelinesResponse extends StObject {
   
   /**
     * The token to use to get the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The matched pipelines.
     */
-  var pipelines: js.UndefOr[js.Array[SchemaPipeline]] = js.native
+  var pipelines: js.UndefOr[js.Array[SchemaPipeline]] = js.undefined
 }
 object SchemaListPipelinesResponse {
   

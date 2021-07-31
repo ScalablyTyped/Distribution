@@ -2,15 +2,13 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Collator extends StObject {
   
-  def compare(x: String, y: String): Double = js.native
+  def compare(x: String, y: String): Double
   
-  def resolvedOptions(): ResolvedCollatorOptions = js.native
+  def resolvedOptions(): ResolvedCollatorOptions
 }
 object Collator {
   

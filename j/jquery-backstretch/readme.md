@@ -10,9 +10,9 @@ A simple jQuery plugin that allows you to add a dynamically-resized, slideshow-c
 | ------------------ | :-------------: |
 | Full name          | jquery-backstretch |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 60045 |
+| # downloads        | 59466 |
 | # stars            | 2 |
 
 ## Links

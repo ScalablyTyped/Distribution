@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PortalQueryParamsConstructor
-  extends Instantiable0[PortalQueryParams]
+  extends StObject
+     with Instantiable0[PortalQueryParams]
      with Instantiable1[/* properties */ PortalQueryParamsProperties, PortalQueryParams]

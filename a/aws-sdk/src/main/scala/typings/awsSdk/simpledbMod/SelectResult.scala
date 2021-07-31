@@ -2,21 +2,19 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectResult extends StObject {
   
   /**
     * A list of items that match the select expression.
     */
-  var Items: js.UndefOr[ItemList] = js.native
+  var Items: js.UndefOr[ItemList] = js.undefined
   
   /**
     * An opaque token indicating that more items than MaxNumberOfItems were matched, the response size exceeded 1 megabyte, or the execution time exceeded 5 seconds.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object SelectResult {
   

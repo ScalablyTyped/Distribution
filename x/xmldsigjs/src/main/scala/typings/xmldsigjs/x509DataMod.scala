@@ -9,7 +9,6 @@ import typings.xmldsigjs.pkiMod.X509Certificate
 import typings.xmldsigjs.xmlObjectMod.XmlSignatureObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object x509DataMod {
@@ -93,13 +92,13 @@ object x509DataMod {
     
     var X509CertificateList: js.Any = js.native
     
-    def exportKey(alg: EcKeyImportParams): js.Promise[_] = js.native
+    def exportKey(alg: EcKeyImportParams): js.Promise[js.Any] = js.native
     /**
       * Exports key from X509Data object
       * @param  {Algorithm} alg
       * @returns Promise
       */
-    def exportKey(alg: RsaHashedImportParams): js.Promise[_] = js.native
+    def exportKey(alg: RsaHashedImportParams): js.Promise[js.Any] = js.native
     
     var key: js.Any = js.native
     
@@ -113,23 +112,31 @@ object x509DataMod {
   object X509IncludeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[X509IncludeOption with Double] = js.native
+    def apply(value: Double): js.UndefOr[X509IncludeOption & Double] = js.native
     
     @js.native
-    sealed trait EndCertOnly extends X509IncludeOption
-    /* 1 */ val EndCertOnly: typings.xmldsigjs.x509DataMod.X509IncludeOption.EndCertOnly with Double = js.native
+    sealed trait EndCertOnly
+      extends StObject
+         with X509IncludeOption
+    /* 1 */ val EndCertOnly: typings.xmldsigjs.x509DataMod.X509IncludeOption.EndCertOnly & Double = js.native
     
     @js.native
-    sealed trait ExcludeRoot extends X509IncludeOption
-    /* 2 */ val ExcludeRoot: typings.xmldsigjs.x509DataMod.X509IncludeOption.ExcludeRoot with Double = js.native
+    sealed trait ExcludeRoot
+      extends StObject
+         with X509IncludeOption
+    /* 2 */ val ExcludeRoot: typings.xmldsigjs.x509DataMod.X509IncludeOption.ExcludeRoot & Double = js.native
     
     @js.native
-    sealed trait None extends X509IncludeOption
-    /* 0 */ val None: typings.xmldsigjs.x509DataMod.X509IncludeOption.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with X509IncludeOption
+    /* 0 */ val None: typings.xmldsigjs.x509DataMod.X509IncludeOption.None & Double = js.native
     
     @js.native
-    sealed trait WholeChain extends X509IncludeOption
-    /* 3 */ val WholeChain: typings.xmldsigjs.x509DataMod.X509IncludeOption.WholeChain with Double = js.native
+    sealed trait WholeChain
+      extends StObject
+         with X509IncludeOption
+    /* 3 */ val WholeChain: typings.xmldsigjs.x509DataMod.X509IncludeOption.WholeChain & Double = js.native
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/x509_data", "X509IssuerSerial")
@@ -142,12 +149,11 @@ object x509DataMod {
     var X509SerialNumber: String = js.native
   }
   
-  @js.native
   trait IX509IssuerSerial extends StObject {
     
-    var issuerName: String = js.native
+    var issuerName: String
     
-    var serialNumber: String = js.native
+    var serialNumber: String
   }
   object IX509IssuerSerial {
     

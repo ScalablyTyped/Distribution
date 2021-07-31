@@ -2,30 +2,30 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a base for client editor objects realizing the dropdown editor functionality.
   */
-@js.native
-trait ASPxClientDropDownEdit extends ASPxClientDropDownEditBase {
+trait ASPxClientDropDownEdit
+  extends StObject
+     with ASPxClientDropDownEditBase {
   
   /**
     * Allows you to handle a click on 'Ok' and 'Cancel' buttons in the drop-down window.
     */
-  var DropDownCommandButtonClick: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]] = js.native
+  var DropDownCommandButtonClick: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]
   
   /**
     * Obtains the key value associated with the text displayed within the editor's edit box.
     */
-  def GetKeyValue(): String = js.native
+  def GetKeyValue(): String
   
   /**
     * Specifies the key value associated with the text displayed within the editor's edit box.
     * @param keyValue A string specifying the key value associated with the editor's value (displayed text).
     */
-  def SetKeyValue(keyValue: String): Unit = js.native
+  def SetKeyValue(keyValue: String): Unit
 }
 object ASPxClientDropDownEdit {
   

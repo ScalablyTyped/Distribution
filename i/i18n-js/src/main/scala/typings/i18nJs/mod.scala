@@ -11,7 +11,6 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,9 +19,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("i18n-js", "currentLocale")
-  @js.native
-  def currentLocale(): String = js.native
+  @scala.inline
+  def currentLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLocale")().asInstanceOf[String]
   
   @JSImport("i18n-js", "defaultLocale")
   @js.native
@@ -59,42 +57,33 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getFullScope")(x.asInstanceOf[js.Any])
   
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l(scope: Scope, value: String): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l(scope: Scope, value: String, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l(scope: Scope, value: Double): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l(scope: Scope, value: Double, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l(scope: Scope, value: Date): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l(scope: Scope, value: Date, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l_currency(scope: currency, value: Double): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l_currency(scope: currency, value: Double, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l_number(scope: number, value: Double): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l_number(scope: number, value: Double, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l_percentage(scope: percentage, value: Double): String = js.native
-  @JSImport("i18n-js", "l")
-  @js.native
-  def l_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = js.native
+  @scala.inline
+  def l(scope: Scope, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l(scope: Scope, value: String, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l(scope: Scope, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l(scope: Scope, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l(scope: Scope, value: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l(scope: Scope, value: Date, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def l_currency(scope: currency, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l_currency(scope: currency, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def l_number(scope: number, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l_number(scope: number, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def l_percentage(scope: percentage, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def l_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("l")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("i18n-js", "locale")
   @js.native
@@ -102,42 +91,33 @@ object mod {
   @scala.inline
   def locale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locale")(x.asInstanceOf[js.Any])
   
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize(scope: Scope, value: String): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize(scope: Scope, value: String, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize(scope: Scope, value: Double): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize(scope: Scope, value: Double, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize(scope: Scope, value: Date): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize(scope: Scope, value: Date, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize_currency(scope: currency, value: Double): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize_currency(scope: currency, value: Double, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize_number(scope: number, value: Double): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize_number(scope: number, value: Double, options: InterpolateOptions): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize_percentage(scope: percentage, value: Double): String = js.native
-  @JSImport("i18n-js", "localize")
-  @js.native
-  def localize_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = js.native
+  @scala.inline
+  def localize(scope: Scope, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize(scope: Scope, value: String, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize(scope: Scope, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize(scope: Scope, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize(scope: Scope, value: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize(scope: Scope, value: Date, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def localize_currency(scope: currency, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize_currency(scope: currency, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def localize_number(scope: number, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize_number(scope: number, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def localize_percentage(scope: percentage, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def localize_percentage(scope: percentage, value: Double, options: InterpolateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("localize")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("i18n-js", "missingBehaviour")
   @js.native
@@ -213,78 +193,62 @@ object mod {
   @scala.inline
   def placeholder_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placeholder")(x.asInstanceOf[js.Any])
   
-  @JSImport("i18n-js", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @JSImport("i18n-js", "strftime")
-  @js.native
-  def strftime(date: Date, format: String): String = js.native
+  @scala.inline
+  def strftime(date: Date, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-js", "t")
-  @js.native
-  def t(scope: Scope): String = js.native
-  @JSImport("i18n-js", "t")
-  @js.native
-  def t(scope: Scope, options: TranslateOptions): String = js.native
+  @scala.inline
+  def t(scope: Scope): String = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def t(scope: Scope, options: TranslateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-js", "toCurrency")
-  @js.native
-  def toCurrency(num: Double): String = js.native
-  @JSImport("i18n-js", "toCurrency")
-  @js.native
-  def toCurrency(num: Double, options: ToCurrencyOptions): String = js.native
+  @scala.inline
+  def toCurrency(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toCurrency")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toCurrency(num: Double, options: ToCurrencyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toCurrency")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-js", "toHumanSize")
-  @js.native
-  def toHumanSize(num: Double): String = js.native
-  @JSImport("i18n-js", "toHumanSize")
-  @js.native
-  def toHumanSize(num: Double, options: ToHumanSizeOptions): String = js.native
+  @scala.inline
+  def toHumanSize(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHumanSize")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toHumanSize(num: Double, options: ToHumanSizeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHumanSize")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-js", "toNumber")
-  @js.native
-  def toNumber(num: Double): String = js.native
-  @JSImport("i18n-js", "toNumber")
-  @js.native
-  def toNumber(num: Double, options: ToNumberOptions): String = js.native
+  @scala.inline
+  def toNumber(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toNumber(num: Double, options: ToNumberOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-js", "toPercentage")
-  @js.native
-  def toPercentage(num: Double): String = js.native
-  @JSImport("i18n-js", "toPercentage")
-  @js.native
-  def toPercentage(num: Double, options: ToPercentageOptions): String = js.native
+  @scala.inline
+  def toPercentage(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPercentage")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toPercentage(num: Double, options: ToPercentageOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toPercentage")(num.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-js", "toTime")
-  @js.native
-  def toTime(scope: Scope, value: String): String = js.native
-  @JSImport("i18n-js", "toTime")
-  @js.native
-  def toTime(scope: Scope, value: Double): String = js.native
-  @JSImport("i18n-js", "toTime")
-  @js.native
-  def toTime(scope: Scope, value: Date): String = js.native
+  @scala.inline
+  def toTime(scope: Scope, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTime")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toTime(scope: Scope, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTime")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toTime(scope: Scope, value: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTime")(scope.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("i18n-js", "translate")
-  @js.native
-  def translate(scope: Scope): String = js.native
-  @JSImport("i18n-js", "translate")
-  @js.native
-  def translate(scope: Scope, options: TranslateOptions): String = js.native
+  @scala.inline
+  def translate(scope: Scope): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def translate(scope: Scope, options: TranslateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type InterpolateOptions = StringDictionary[js.Any]
   
   type Scope = String | js.Array[String]
   
-  @js.native
-  trait ToCurrencyOptions extends ToNumberOptions {
+  trait ToCurrencyOptions
+    extends StObject
+       with ToNumberOptions {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var sign_first: js.UndefOr[Boolean] = js.native
+    var sign_first: js.UndefOr[Boolean] = js.undefined
     
-    var unit: js.UndefOr[String] = js.native
+    var unit: js.UndefOr[String] = js.undefined
   }
   object ToCurrencyOptions {
     
@@ -317,10 +281,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ToHumanSizeOptions extends ToNumberOptions {
+  trait ToHumanSizeOptions
+    extends StObject
+       with ToNumberOptions {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object ToHumanSizeOptions {
     
@@ -341,16 +306,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ToNumberOptions extends StObject {
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var strip_insignificant_zeros: js.UndefOr[Boolean] = js.native
+    var strip_insignificant_zeros: js.UndefOr[Boolean] = js.undefined
   }
   object ToNumberOptions {
     
@@ -391,16 +355,17 @@ object mod {
   
   type ToPercentageOptions = ToNumberOptions
   
-  @js.native
-  trait TranslateOptions extends InterpolateOptions {
+  trait TranslateOptions
+    extends StObject
+       with InterpolateOptions {
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var defaults: js.UndefOr[js.Array[Message | typings.i18nJs.anon.Scope]] = js.native
+    var defaults: js.UndefOr[js.Array[Message | typings.i18nJs.anon.Scope]] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[Scope] = js.native
+    var scope: js.UndefOr[Scope] = js.undefined
   }
   object TranslateOptions {
     

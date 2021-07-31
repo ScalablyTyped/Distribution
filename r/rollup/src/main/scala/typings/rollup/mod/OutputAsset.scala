@@ -1,27 +1,26 @@
 package typings.rollup.mod
 
 import typings.rollup.rollupBooleans.`true`
-import typings.rollup.rollupStrings.asset
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutputAsset extends PreRenderedAsset {
+trait OutputAsset
+  extends StObject
+     with PreRenderedAsset {
   
-  var fileName: String = js.native
+  var fileName: String
   
   /** @deprecated Accessing "isAsset" on files in the bundle is deprecated, please use "type === \'asset\'" instead */
-  var isAsset: `true` = js.native
+  var isAsset: `true`
 }
 object OutputAsset {
   
   @scala.inline
-  def apply(fileName: String, isAsset: `true`, source: String | Uint8Array, `type`: asset): OutputAsset = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isAsset = isAsset.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(fileName: String, source: String | Uint8Array): OutputAsset = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isAsset = true, source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("asset")
     __obj.asInstanceOf[OutputAsset]
   }
   

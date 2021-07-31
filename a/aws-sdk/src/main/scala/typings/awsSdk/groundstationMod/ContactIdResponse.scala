@@ -2,16 +2,14 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactIdResponse extends StObject {
   
   /**
     * UUID of a contact.
     */
-  var contactId: js.UndefOr[String] = js.native
+  var contactId: js.UndefOr[String] = js.undefined
 }
 object ContactIdResponse {
   

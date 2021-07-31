@@ -4,49 +4,49 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptio
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReadDirectoryRequestedEventOptions extends RequestedEventOptions {
+trait ReadDirectoryRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** The path of the directory which is to be operated on. */
-  var directoryPath: String = js.native
+  var directoryPath: String
   
   /**
     * Set to true if is_directory value is requested
     * @since Chrome 49.
     */
-  var isDirectory: Boolean = js.native
+  var isDirectory: Boolean
   
   /**
     * Set to true if mimeType value is requested.
     * @since Chrome 49.
     */
-  var mimeType: Boolean = js.native
+  var mimeType: Boolean
   
   /**
     * Set to true if modificationTime value is requested
     * @since Chrome 49.
     */
-  var modificationTime: Boolean = js.native
+  var modificationTime: Boolean
   
   /**
     * Set to true if is_directory value is requested.
     * @since Chrome 49.
     */
-  var name: Boolean = js.native
+  var name: Boolean
   
   /**
     * Set to true if size value is requested.
     * @since Chrome 49.
     */
-  var size: Boolean = js.native
+  var size: Boolean
   
   /**
     * Set to true if the thumbnail is requested.
     */
-  var thumbnail: Boolean = js.native
+  var thumbnail: Boolean
 }
 object ReadDirectoryRequestedEventOptions {
   

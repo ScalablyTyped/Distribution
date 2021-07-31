@@ -5,35 +5,33 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topBlockTypesMod {
   
-  @js.native
   trait ITopBlock extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def hideContent(): Unit = js.native
+    def hideContent(): Unit
     
-    def hideLiveIndicator(): Unit = js.native
+    def hideLiveIndicator(): Unit
     
-    def hideTitle(): Unit = js.native
+    def hideTitle(): Unit
     
-    var isFocused: Boolean = js.native
+    var isFocused: Boolean
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def showContent(): Unit = js.native
+    def showContent(): Unit
     
-    def showLiveIndicator(): Unit = js.native
+    def showLiveIndicator(): Unit
     
-    def showTitle(): Unit = js.native
+    def showTitle(): Unit
   }
   object ITopBlock {
     
@@ -93,16 +91,15 @@ object topBlockTypesMod {
     }
   }
   
-  @js.native
   trait ITopBlockAPI extends StObject {
     
-    var hideLiveIndicator: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideLiveIndicator: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hideTitle: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideTitle: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showLiveIndicator: js.UndefOr[js.Function0[Unit]] = js.native
+    var showLiveIndicator: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showTitle: js.UndefOr[js.Function0[Unit]] = js.native
+    var showTitle: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ITopBlockAPI {
     
@@ -141,12 +138,11 @@ object topBlockTypesMod {
     }
   }
   
-  @js.native
   trait ITopBlockViewCallbacks extends StObject {
     
-    var onBlockMouseMove: EventListenerOrEventListenerObject = js.native
+    var onBlockMouseMove: EventListenerOrEventListenerObject
     
-    var onBlockMouseOut: EventListenerOrEventListenerObject = js.native
+    var onBlockMouseOut: EventListenerOrEventListenerObject
   }
   object ITopBlockViewCallbacks {
     
@@ -176,12 +172,11 @@ object topBlockTypesMod {
     }
   }
   
-  @js.native
   trait ITopBlockViewConfig extends StObject {
     
-    var callbacks: ITopBlockViewCallbacks = js.native
+    var callbacks: ITopBlockViewCallbacks
     
-    var elements: ITopBlockViewElements = js.native
+    var elements: ITopBlockViewElements
   }
   object ITopBlockViewConfig {
     
@@ -202,12 +197,11 @@ object topBlockTypesMod {
     }
   }
   
-  @js.native
   trait ITopBlockViewElements extends StObject {
     
-    var liveIndicator: HTMLElement = js.native
+    var liveIndicator: HTMLElement
     
-    var title: HTMLElement = js.native
+    var title: HTMLElement
   }
   object ITopBlockViewElements {
     
@@ -228,20 +222,19 @@ object topBlockTypesMod {
     }
   }
   
-  @js.native
   trait ITopBlockViewStyles extends StObject {
     
-    var activated: String = js.native
+    var activated: String
     
-    var elementsContainer: String = js.native
+    var elementsContainer: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var liveIndicatorContainer: String = js.native
+    var liveIndicatorContainer: String
     
-    var titleContainer: String = js.native
+    var titleContainer: String
     
-    var topBlock: String = js.native
+    var topBlock: String
   }
   object ITopBlockViewStyles {
     

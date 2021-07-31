@@ -3,7 +3,6 @@ package typings.blueprintjsTimezone
 import typings.blueprintjsTimezone.timezoneDisplayFormatMod.TimezoneDisplayFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blueprintjsTimezoneStrings {
@@ -19,7 +18,9 @@ object blueprintjsTimezoneStrings {
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
-  sealed trait abbreviation extends TimezoneDisplayFormat
+  sealed trait abbreviation
+    extends StObject
+       with TimezoneDisplayFormat
   @scala.inline
   def abbreviation: abbreviation = "abbreviation".asInstanceOf[abbreviation]
   
@@ -149,7 +150,9 @@ object blueprintjsTimezoneStrings {
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait composite extends TimezoneDisplayFormat
+  sealed trait composite
+    extends StObject
+       with TimezoneDisplayFormat
   @scala.inline
   def composite: composite = "composite".asInstanceOf[composite]
   
@@ -574,7 +577,9 @@ object blueprintjsTimezoneStrings {
   def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
-  sealed trait name extends TimezoneDisplayFormat
+  sealed trait name
+    extends StObject
+       with TimezoneDisplayFormat
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
@@ -599,7 +604,9 @@ object blueprintjsTimezoneStrings {
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait offset extends TimezoneDisplayFormat
+  sealed trait offset
+    extends StObject
+       with TimezoneDisplayFormat
   @scala.inline
   def offset: offset = "offset".asInstanceOf[offset]
   

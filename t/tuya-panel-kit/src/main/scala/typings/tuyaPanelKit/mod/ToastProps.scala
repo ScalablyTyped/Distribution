@@ -10,31 +10,29 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var image: js.UndefOr[Double] = js.native
+  var image: js.UndefOr[Double] = js.undefined
   
-  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   
-  def onFinish(): Unit = js.native
+  def onFinish(): Unit
   
-  var show: Boolean = js.native
+  var show: Boolean
   
-  var showPosition: js.UndefOr[top | bottom | center] = js.native
+  var showPosition: js.UndefOr[top | bottom | center] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object ToastProps {
   

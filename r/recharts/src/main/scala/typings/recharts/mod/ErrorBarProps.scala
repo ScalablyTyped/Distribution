@@ -3,32 +3,30 @@ package typings.recharts.mod
 import typings.recharts.anon.ErrorVal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorBarProps extends StObject {
   
   // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var dataKey: DataKey = js.native
+  var dataKey: DataKey
   
-  var dataPointFormatter: js.UndefOr[DataPointFormatter] = js.native
+  var dataPointFormatter: js.UndefOr[DataPointFormatter] = js.undefined
   
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var xAxis: js.UndefOr[js.Object] = js.native
+  var xAxis: js.UndefOr[js.Object] = js.undefined
   
-  var yAxis: js.UndefOr[js.Object] = js.native
+  var yAxis: js.UndefOr[js.Object] = js.undefined
 }
 object ErrorBarProps {
   
@@ -42,7 +40,7 @@ object ErrorBarProps {
   implicit class ErrorBarPropsMutableBuilder[Self <: ErrorBarProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])

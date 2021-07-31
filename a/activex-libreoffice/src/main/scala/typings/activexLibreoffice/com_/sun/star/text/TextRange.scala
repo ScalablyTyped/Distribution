@@ -34,7 +34,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * implementations of this service.
   * @see Text
   */
-@js.native
 trait TextRange
-  extends XTextRange
+  extends StObject
+     with XTextRange
      with XPropertySet
      with XPropertyState
      with XContentEnumerationAccess

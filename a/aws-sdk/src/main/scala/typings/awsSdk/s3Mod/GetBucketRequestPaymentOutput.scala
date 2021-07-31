@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketRequestPaymentOutput extends StObject {
   
   /**
     * Specifies who pays for the download and request fees.
     */
-  var Payer: js.UndefOr[typings.awsSdk.s3Mod.Payer] = js.native
+  var Payer: js.UndefOr[typings.awsSdk.s3Mod.Payer] = js.undefined
 }
 object GetBucketRequestPaymentOutput {
   

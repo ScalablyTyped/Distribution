@@ -10,7 +10,6 @@ import typings.react.mod.StatelessComponent
 import typings.reactBreadcrumbs.anon.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,17 +38,16 @@ object mod {
     def this(props: BreadcrumbsProps, context: js.Any) = this()
   }
   
-  @js.native
   trait BreadcrumbProps extends StObject {
     
-    var data: LocationDescriptor[LocationState] with Title = js.native
+    var data: LocationDescriptor[LocationState] & Title
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
   }
   object BreadcrumbProps {
     
     @scala.inline
-    def apply(data: LocationDescriptor[LocationState] with Title): BreadcrumbProps = {
+    def apply(data: LocationDescriptor[LocationState] & Title): BreadcrumbProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreadcrumbProps]
     }
@@ -58,7 +56,7 @@ object mod {
     implicit class BreadcrumbPropsMutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: LocationDescriptor[LocationState] with Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: LocationDescriptor[LocationState] & Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
@@ -68,18 +66,17 @@ object mod {
     }
   }
   
-  @js.native
   trait BreadcrumbsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[ReactNode] = js.native
+    var separator: js.UndefOr[ReactNode] = js.undefined
     
-    var setCrumbs: js.UndefOr[js.Function1[/* crumbs */ Crumbs, ReactNode]] = js.native
+    var setCrumbs: js.UndefOr[js.Function1[/* crumbs */ Crumbs, ReactNode]] = js.undefined
     
-    var wrapper: js.UndefOr[StatelessComponent[js.Object] | (ComponentClass[js.Object, ComponentState])] = js.native
+    var wrapper: js.UndefOr[StatelessComponent[js.Object] | (ComponentClass[js.Object, ComponentState])] = js.undefined
   }
   object BreadcrumbsProps {
     
@@ -124,6 +121,5 @@ object mod {
     }
   }
   
-  @js.native
   trait Crumbs extends StObject
 }

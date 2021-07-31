@@ -3,17 +3,16 @@ package typings.antDesignIconsVue.iconsMod
 import typings.antDesignIconsVue.antdIconMod.AntdIconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FallOutlined {
   
-  @JSImport("@ant-design/icons-vue/lib/icons", "FallOutlined")
-  @js.native
+  @scala.inline
   def apply(
     props: AntdIconProps,
     context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("@ant-design/icons-vue/lib/icons", "FallOutlined")
   @js.native
   val ^ : js.Any = js.native

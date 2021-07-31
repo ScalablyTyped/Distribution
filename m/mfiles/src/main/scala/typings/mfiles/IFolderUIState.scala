@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFolderUIState extends StObject {
   
-  var BottomPaneBarMinimized: Boolean = js.native
+  var BottomPaneBarMinimized: Boolean
   
-  var HitHighlightingEnabled: Boolean = js.native
+  var HitHighlightingEnabled: Boolean
   
-  val ListingUIState: IFolderListingUIState = js.native
+  val ListingUIState: IFolderListingUIState
   
-  var MetadataEditorInRightPane: Boolean = js.native
+  var MetadataEditorInRightPane: Boolean
   
-  var RelativeBottomPaneHeight: Double = js.native
+  var RelativeBottomPaneHeight: Double
   
-  var RelativeRightPaneWidth: Double = js.native
+  var RelativeRightPaneWidth: Double
   
-  var RightPaneBarMinimized: Boolean = js.native
+  var RightPaneBarMinimized: Boolean
   
-  var ShowBottomPaneBar: Boolean = js.native
+  var ShowBottomPaneBar: Boolean
   
-  var ShowRightPaneBar: Boolean = js.native
+  var ShowRightPaneBar: Boolean
 }
 object IFolderUIState {
   

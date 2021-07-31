@@ -13,21 +13,22 @@ import typings.node.streamMod.Transform
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mem-fs-editor", "create")
+  @JSImport("mem-fs-editor", JSImport.Namespace)
   @js.native
-  def create(store: Store): Editor = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(store: Store): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any]).asInstanceOf[Editor]
+  
   trait AppendOptions extends StObject {
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var trimEnd: js.UndefOr[Boolean] = js.native
+    var trimEnd: js.UndefOr[Boolean] = js.undefined
   }
   object AppendOptions {
     
@@ -58,14 +59,15 @@ object mod {
   //#region Editor#commit
   type CommitCallback = js.Function1[/* err */ js.Any, Unit]
   
-  @js.native
-  trait CopyOptions extends WithGlobOptions {
+  trait CopyOptions
+    extends StObject
+       with WithGlobOptions {
     
-    var ignoreNoMatch: js.UndefOr[Boolean] = js.native
+    var ignoreNoMatch: js.UndefOr[Boolean] = js.undefined
     
-    var process: js.UndefOr[ProcessingFunction] = js.native
+    var process: js.UndefOr[ProcessingFunction] = js.undefined
     
-    var processDestinationPath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
+    var processDestinationPath: js.UndefOr[js.Function1[/* path */ String, String]] = js.undefined
   }
   object CopyOptions {
     
@@ -108,56 +110,20 @@ object mod {
     def commit(filters: js.Array[Transform], callback: CommitCallback): Unit = js.native
     
     def copy(from: FilePaths, to: String): Unit = js.native
-    def copy(
-      from: FilePaths,
-      to: String,
-      options: js.UndefOr[scala.Nothing],
-      context: js.UndefOr[scala.Nothing],
-      templateOptions: Options
-    ): Unit = js.native
-    def copy(from: FilePaths, to: String, options: js.UndefOr[scala.Nothing], context: Data): Unit = js.native
-    def copy(
-      from: FilePaths,
-      to: String,
-      options: js.UndefOr[scala.Nothing],
-      context: Data,
-      templateOptions: Options
-    ): Unit = js.native
+    def copy(from: FilePaths, to: String, options: Unit, context: Unit, templateOptions: Options): Unit = js.native
+    def copy(from: FilePaths, to: String, options: Unit, context: Data): Unit = js.native
+    def copy(from: FilePaths, to: String, options: Unit, context: Data, templateOptions: Options): Unit = js.native
     def copy(from: FilePaths, to: String, options: CopyOptions): Unit = js.native
-    def copy(
-      from: FilePaths,
-      to: String,
-      options: CopyOptions,
-      context: js.UndefOr[scala.Nothing],
-      templateOptions: Options
-    ): Unit = js.native
+    def copy(from: FilePaths, to: String, options: CopyOptions, context: Unit, templateOptions: Options): Unit = js.native
     def copy(from: FilePaths, to: String, options: CopyOptions, context: Data): Unit = js.native
     def copy(from: FilePaths, to: String, options: CopyOptions, context: Data, templateOptions: Options): Unit = js.native
     
     def copyTpl(from: FilePaths, to: String): Unit = js.native
-    def copyTpl(
-      from: FilePaths,
-      to: String,
-      context: js.UndefOr[scala.Nothing],
-      templateOptions: js.UndefOr[scala.Nothing],
-      copyOptions: CopyOptions
-    ): Unit = js.native
-    def copyTpl(from: FilePaths, to: String, context: js.UndefOr[scala.Nothing], templateOptions: Options): Unit = js.native
-    def copyTpl(
-      from: FilePaths,
-      to: String,
-      context: js.UndefOr[scala.Nothing],
-      templateOptions: Options,
-      copyOptions: CopyOptions
-    ): Unit = js.native
+    def copyTpl(from: FilePaths, to: String, context: Unit, templateOptions: Unit, copyOptions: CopyOptions): Unit = js.native
+    def copyTpl(from: FilePaths, to: String, context: Unit, templateOptions: Options): Unit = js.native
+    def copyTpl(from: FilePaths, to: String, context: Unit, templateOptions: Options, copyOptions: CopyOptions): Unit = js.native
     def copyTpl(from: FilePaths, to: String, context: Data): Unit = js.native
-    def copyTpl(
-      from: FilePaths,
-      to: String,
-      context: Data,
-      templateOptions: js.UndefOr[scala.Nothing],
-      copyOptions: CopyOptions
-    ): Unit = js.native
+    def copyTpl(from: FilePaths, to: String, context: Data, templateOptions: Unit, copyOptions: CopyOptions): Unit = js.native
     def copyTpl(from: FilePaths, to: String, context: Data, templateOptions: Options): Unit = js.native
     def copyTpl(from: FilePaths, to: String, context: Data, templateOptions: Options, copyOptions: CopyOptions): Unit = js.native
     
@@ -167,8 +133,9 @@ object mod {
     def exists(filepath: String): Boolean = js.native
     
     def extendJSON(filepath: String, contents: js.Any): Unit = js.native
-    def extendJSON(filepath: String, contents: js.Any, replacer: js.UndefOr[WriteJsonReplacer], space: WriteJsonSpace): Unit = js.native
+    def extendJSON(filepath: String, contents: js.Any, replacer: Unit, space: WriteJsonSpace): Unit = js.native
     def extendJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer): Unit = js.native
+    def extendJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): Unit = js.native
     
     def move(from: FilePaths, to: String): Unit = js.native
     def move(from: FilePaths, to: String, options: WithGlobOptions): Unit = js.native
@@ -183,8 +150,9 @@ object mod {
     def write(filepath: String, contents: WriteContents): String = js.native
     
     def writeJSON(filepath: String, contents: js.Any): String = js.native
-    def writeJSON(filepath: String, contents: js.Any, replacer: js.UndefOr[WriteJsonReplacer], space: WriteJsonSpace): String = js.native
+    def writeJSON(filepath: String, contents: js.Any, replacer: Unit, space: WriteJsonSpace): String = js.native
     def writeJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer): String = js.native
+    def writeJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): String = js.native
   }
   
   type FilePaths = String | js.Array[String]
@@ -193,18 +161,17 @@ object mod {
   
   type ReadRawContents = Exclude[Buffer | ReadableStream | Null, Null]
   
-  @js.native
   trait ReadRawOptions extends StObject {
     
-    var defaults: js.UndefOr[ReadRawContents] = js.native
+    var defaults: js.UndefOr[ReadRawContents] = js.undefined
     
-    var raw: `true` = js.native
+    var raw: `true`
   }
   object ReadRawOptions {
     
     @scala.inline
-    def apply(raw: `true`): ReadRawOptions = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+    def apply(): ReadRawOptions = {
+      val __obj = js.Dynamic.literal(raw = true)
       __obj.asInstanceOf[ReadRawOptions]
     }
     
@@ -225,12 +192,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ReadStringOptions extends StObject {
     
-    var defaults: js.UndefOr[String] = js.native
+    var defaults: js.UndefOr[String] = js.undefined
     
-    var raw: js.UndefOr[`false`] = js.native
+    var raw: js.UndefOr[`false`] = js.undefined
   }
   object ReadStringOptions {
     
@@ -257,10 +223,9 @@ object mod {
     }
   }
   
-  @js.native
   trait WithGlobOptions extends StObject {
     
-    var globOptions: js.UndefOr[IOptions] = js.native
+    var globOptions: js.UndefOr[IOptions] = js.undefined
   }
   object WithGlobOptions {
     

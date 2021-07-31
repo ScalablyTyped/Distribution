@@ -23,7 +23,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined protobufjs.protobufjs.Type & {  Label :protobufjs.protobufjs.Enum,   Type :protobufjs.protobufjs.Enum} */
@@ -52,18 +51,16 @@ object FieldDescriptorProto {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If there is already a nested object with this name
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.add")
-  @js.native
-  def add(`object`: ReflectionObject): Namespace = js.native
+  @scala.inline
+  def add(`object`: ReflectionObject): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(`object`.asInstanceOf[js.Any]).asInstanceOf[Namespace]
   
   /**
     * Adds nested objects to this namespace from nested object descriptors.
     * @param nestedJson Any nested object descriptors
     * @returns `this`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.addJSON")
-  @js.native
-  def addJSON(nestedJson: StringDictionary[AnyNestedObject]): Namespace = js.native
+  @scala.inline
+  def addJSON(nestedJson: StringDictionary[AnyNestedObject]): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("addJSON")(nestedJson.asInstanceOf[js.Any]).asInstanceOf[Namespace]
   
   /**
     * Adds a nested object to this type.
@@ -72,9 +69,8 @@ object FieldDescriptorProto {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If there is already a nested object with this name or, if a field, when there is already a field with this id
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.add")
-  @js.native
-  def add_Type(`object`: ReflectionObject): Type = js.native
+  @scala.inline
+  def add_Type(`object`: ReflectionObject): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(`object`.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   /** Comment text, if any. */
   @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.comment")
@@ -88,24 +84,20 @@ object FieldDescriptorProto {
     * @param name Message name
     * @param [options] Declared options
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.constructor")
-  @js.native
-  def constructor(name: String): js.Any = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.constructor")
-  @js.native
-  def constructor(name: String, options: StringDictionary[js.Any]): js.Any = js.native
+  @scala.inline
+  def constructor(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def constructor(name: String, options: StringDictionary[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Creates a new message of this type using the specified properties.
     * @param [properties] Properties to set
     * @returns Message instance
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.create")
-  @js.native
-  def create(): Message[js.Object] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.create")
-  @js.native
-  def create(properties: StringDictionary[js.Any]): Message[js.Object] = js.native
+  @scala.inline
+  def create(): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Message[js.Object]]
+  @scala.inline
+  def create(properties: StringDictionary[js.Any]): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   
   /**
     * The registered constructor, if any registered, otherwise a generic constructor.
@@ -122,12 +114,10 @@ object FieldDescriptorProto {
     * @param [typeName] Type name, defaults to the constructor's name
     * @returns Decorator function
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.d")
-  @js.native
-  def d[T /* <: Message[T] */](): TypeDecorator[T] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.d")
-  @js.native
-  def d[T /* <: Message[T] */](typeName: String): TypeDecorator[T] = js.native
+  @scala.inline
+  def d[T /* <: Message[T] */](): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")().asInstanceOf[TypeDecorator[T]]
+  @scala.inline
+  def d[T /* <: Message[T] */](typeName: String): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(typeName.asInstanceOf[js.Any]).asInstanceOf[TypeDecorator[T]]
   
   /**
     * Decodes a message of this type.
@@ -137,18 +127,14 @@ object FieldDescriptorProto {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {util.ProtocolError<{}>} If required fields are missing
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader): Message[js.Object] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Message[js.Object] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array): Message[js.Object] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Message[js.Object] = js.native
+  @scala.inline
+  def decode(reader: Reader): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Message[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message[js.Object]]
+  @scala.inline
+  def decode(reader: Uint8Array): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Message[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message[js.Object]]
   
   /**
     * Decodes a message of this type preceeded by its byte length as a varint.
@@ -157,12 +143,10 @@ object FieldDescriptorProto {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {util.ProtocolError} If required fields are missing
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Message[js.Object] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Message[js.Object] = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   
   /**
     * Defines additial namespaces within this one if not yet existing.
@@ -170,56 +154,44 @@ object FieldDescriptorProto {
     * @param [json] Nested types to create from JSON
     * @returns Pointer to the last namespace created or `this` if path is empty
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.define")
-  @js.native
-  def define(path: String): Namespace = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.define")
-  @js.native
-  def define(path: String, json: js.Any): Namespace = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.define")
-  @js.native
-  def define(path: js.Array[String]): Namespace = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.define")
-  @js.native
-  def define(path: js.Array[String], json: js.Any): Namespace = js.native
+  @scala.inline
+  def define(path: String): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any]).asInstanceOf[Namespace]
+  @scala.inline
+  def define(path: String, json: js.Any): Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Namespace]
+  @scala.inline
+  def define(path: js.Array[String]): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any]).asInstanceOf[Namespace]
+  @scala.inline
+  def define(path: js.Array[String], json: js.Any): Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Namespace]
   
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: StringDictionary[js.Any]): Writer = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: StringDictionary[js.Any], writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: StringDictionary[js.Any]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: StringDictionary[js.Any], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   /**
     * Encodes a message of this type. Does not implicitly {@link Type#verify|verify} messages.
     * @param message Message instance or plain object
     * @param [writer] Writer to encode to
     * @returns writer
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: Message[js.Object]): Writer = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: Message[js.Object], writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: Message[js.Object]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: Message[js.Object], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: StringDictionary[js.Any]): Writer = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: StringDictionary[js.Any], writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: StringDictionary[js.Any]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: StringDictionary[js.Any], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   /**
     * Encodes a message of this type preceeded by its byte length as a varint. Does not implicitly {@link Type#verify|verify} messages.
     * @param message Message instance or plain object
     * @param [writer] Writer to encode to
     * @returns writer
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: Message[js.Object]): Writer = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: Message[js.Object], writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: Message[js.Object]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: Message[js.Object], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /** Extension ranges, if any. */
   @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.extensions")
@@ -246,18 +218,16 @@ object FieldDescriptorProto {
     * @param json Message type descriptor
     * @returns Created message type
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.fromJSON")
-  @js.native
-  def fromJSON(name: String, json: IType): Type = js.native
+  @scala.inline
+  def fromJSON(name: String, json: IType): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Type]
   
   /**
     * Creates a new message of this type from a plain object. Also converts values to their respective internal types.
     * @param object Plain object to convert
     * @returns Message instance
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Message[js.Object] = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   
   /** Full name including leading dot. */
   @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.fullName")
@@ -269,18 +239,16 @@ object FieldDescriptorProto {
     * @param mtype Message type
     * @returns Codegen instance
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.generateConstructor")
-  @js.native
-  def generateConstructor(mtype: Type): Codegen = js.native
+  @scala.inline
+  def generateConstructor(mtype: Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("generateConstructor")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
   
   /**
     * Gets the nested object of the specified name.
     * @param name Nested object name
     * @returns The reflection object or `null` if it doesn't exist
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.get")
-  @js.native
-  def get(name: String): ReflectionObject | Null = js.native
+  @scala.inline
+  def get(name: String): ReflectionObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject | Null]
   
   /**
     * Gets the values of the nested {@link Enum|enum} of the specified name.
@@ -289,36 +257,32 @@ object FieldDescriptorProto {
     * @returns Enum values
     * @throws {Error} If there is no such enum
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.getEnum")
-  @js.native
-  def getEnum(name: String): StringDictionary[Double] = js.native
+  @scala.inline
+  def getEnum(name: String): StringDictionary[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnum")(name.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Double]]
   
   /**
     * Gets an option value.
     * @param name Option name
     * @returns Option value or `undefined` if not set
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.getOption")
-  @js.native
-  def getOption(name: String): js.Any = js.native
+  @scala.inline
+  def getOption(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Tests if the specified id is reserved.
     * @param id Id to test
     * @returns `true` if reserved, otherwise `false`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.isReservedId")
-  @js.native
-  def isReservedId(id: Double): Boolean = js.native
+  @scala.inline
+  def isReservedId(id: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReservedId")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Tests if the specified name is reserved.
     * @param name Name to test
     * @returns `true` if reserved, otherwise `false`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.isReservedName")
-  @js.native
-  def isReservedName(name: String): Boolean = js.native
+  @scala.inline
+  def isReservedName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReservedName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Looks up the reflection object at the specified path, relative to this namespace.
@@ -326,9 +290,8 @@ object FieldDescriptorProto {
     * @param [parentAlreadyChecked=false] Whether the parent has already been checked
     * @returns Looked up object or `null` if none could be found
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: String): ReflectionObject | Null = js.native
+  @scala.inline
+  def lookup(path: String): ReflectionObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject | Null]
   /**
     * Recursively looks up the reflection object matching the specified path in the scope of this namespace.
     * @param path Path to look up
@@ -336,39 +299,28 @@ object FieldDescriptorProto {
     * @param [parentAlreadyChecked=false] If known, whether the parent has already been checked
     * @returns Looked up object or `null` if none could be found
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: String, filterTypes: js.Any): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: String, filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: String, filterTypes: js.Array[_]): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: String, filterTypes: js.Array[_], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: String, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: js.Array[String]): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: js.Array[String], filterTypes: js.Any): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: js.Array[String], filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[_]): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: js.Array[String], filterTypes: js.Array[_], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookup")
-  @js.native
-  def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  @scala.inline
+  def lookup(path: String, filterTypes: js.Any): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: String, filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: String, filterTypes: js.Array[js.Any]): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: String, filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: String, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: js.Array[String]): ReflectionObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: js.Array[String], filterTypes: js.Any): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: js.Array[String], filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any]): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: js.Array[String], filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  @scala.inline
+  def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
   
   /**
     * Looks up the values of the {@link Enum|enum} at the specified path, relative to this namespace.
@@ -377,12 +329,10 @@ object FieldDescriptorProto {
     * @returns Looked up enum
     * @throws {Error} If `path` does not point to an enum
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupEnum")
-  @js.native
-  def lookupEnum(path: String): Enum = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupEnum")
-  @js.native
-  def lookupEnum(path: js.Array[String]): Enum = js.native
+  @scala.inline
+  def lookupEnum(path: String): Enum = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupEnum")(path.asInstanceOf[js.Any]).asInstanceOf[Enum]
+  @scala.inline
+  def lookupEnum(path: js.Array[String]): Enum = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupEnum")(path.asInstanceOf[js.Any]).asInstanceOf[Enum]
   
   /**
     * Looks up the {@link Service|service} at the specified path, relative to this namespace.
@@ -391,12 +341,10 @@ object FieldDescriptorProto {
     * @returns Looked up service
     * @throws {Error} If `path` does not point to a service
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupService")
-  @js.native
-  def lookupService(path: String): Service = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupService")
-  @js.native
-  def lookupService(path: js.Array[String]): Service = js.native
+  @scala.inline
+  def lookupService(path: String): Service = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupService")(path.asInstanceOf[js.Any]).asInstanceOf[Service]
+  @scala.inline
+  def lookupService(path: js.Array[String]): Service = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupService")(path.asInstanceOf[js.Any]).asInstanceOf[Service]
   
   /**
     * Looks up the {@link Type|type} at the specified path, relative to this namespace.
@@ -405,12 +353,10 @@ object FieldDescriptorProto {
     * @returns Looked up type
     * @throws {Error} If `path` does not point to a type
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupType")
-  @js.native
-  def lookupType(path: String): Type = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupType")
-  @js.native
-  def lookupType(path: js.Array[String]): Type = js.native
+  @scala.inline
+  def lookupType(path: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupType")(path.asInstanceOf[js.Any]).asInstanceOf[Type]
+  @scala.inline
+  def lookupType(path: js.Array[String]): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupType")(path.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   /**
     * Looks up the {@link Type|type} or {@link Enum|enum} at the specified path, relative to this namespace.
@@ -419,12 +365,10 @@ object FieldDescriptorProto {
     * @returns Looked up type or enum
     * @throws {Error} If `path` does not point to a type or enum
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupTypeOrEnum")
-  @js.native
-  def lookupTypeOrEnum(path: String): Type = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.lookupTypeOrEnum")
-  @js.native
-  def lookupTypeOrEnum(path: js.Array[String]): Type = js.native
+  @scala.inline
+  def lookupTypeOrEnum(path: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupTypeOrEnum")(path.asInstanceOf[js.Any]).asInstanceOf[Type]
+  @scala.inline
+  def lookupTypeOrEnum(path: js.Array[String]): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupTypeOrEnum")(path.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   /** Unique name within its namespace. */
   @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.name")
@@ -450,17 +394,15 @@ object FieldDescriptorProto {
     * Called when this object is added to a parent.
     * @param parent Parent added to
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.onAdd")
-  @js.native
-  def onAdd(parent: ReflectionObject): Unit = js.native
+  @scala.inline
+  def onAdd(parent: ReflectionObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAdd")(parent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Called when this object is removed from a parent.
     * @param parent Parent removed from
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.onRemove")
-  @js.native
-  def onRemove(parent: ReflectionObject): Unit = js.native
+  @scala.inline
+  def onRemove(parent: ReflectionObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRemove")(parent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Oneofs of this message as an array for iteration. */
   @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.oneofsArray")
@@ -495,9 +437,9 @@ object FieldDescriptorProto {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If `object` is not a member of this namespace
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.remove")
-  @js.native
-  def remove(`object`: ReflectionObject): Namespace = js.native
+  @scala.inline
+  def remove(`object`: ReflectionObject): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(`object`.asInstanceOf[js.Any]).asInstanceOf[Namespace]
+  
   /**
     * Removes a nested object from this type.
     * @param object Nested object to remove
@@ -505,9 +447,8 @@ object FieldDescriptorProto {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If `object` is not a member of this type
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.remove")
-  @js.native
-  def remove_Type(`object`: ReflectionObject): Type = js.native
+  @scala.inline
+  def remove_Type(`object`: ReflectionObject): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(`object`.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   /** Reserved ranges, if any. */
   @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.reserved")
@@ -520,17 +461,15 @@ object FieldDescriptorProto {
     * Resolves this objects type references.
     * @returns `this`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.resolve")
-  @js.native
-  def resolve(): ReflectionObject = js.native
+  @scala.inline
+  def resolve(): ReflectionObject = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[ReflectionObject]
   
   /**
     * Resolves this namespace's and all its nested objects' type references. Useful to validate a reflection tree, but comes at a cost.
     * @returns `this`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.resolveAll")
-  @js.native
-  def resolveAll(): Namespace = js.native
+  @scala.inline
+  def resolveAll(): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAll")().asInstanceOf[Namespace]
   
   /** Whether already resolved or not. */
   @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.resolved")
@@ -551,12 +490,10 @@ object FieldDescriptorProto {
     * @param [ifNotSet] Sets the option only if it isn't currently set
     * @returns `this`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.setOption")
-  @js.native
-  def setOption(name: String, value: js.Any): ReflectionObject = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.setOption")
-  @js.native
-  def setOption(name: String, value: js.Any, ifNotSet: Boolean): ReflectionObject = js.native
+  @scala.inline
+  def setOption(name: String, value: js.Any): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
+  @scala.inline
+  def setOption(name: String, value: js.Any, ifNotSet: Boolean): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
   
   /**
     * Sets multiple options.
@@ -564,12 +501,10 @@ object FieldDescriptorProto {
     * @param [ifNotSet] Sets an option only if it isn't currently set
     * @returns `this`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.setOptions")
-  @js.native
-  def setOptions(options: StringDictionary[js.Any]): ReflectionObject = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.setOptions")
-  @js.native
-  def setOptions(options: StringDictionary[js.Any], ifNotSet: Boolean): ReflectionObject = js.native
+  @scala.inline
+  def setOptions(options: StringDictionary[js.Any]): ReflectionObject = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject]
+  @scala.inline
+  def setOptions(options: StringDictionary[js.Any], ifNotSet: Boolean): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
   
   /**
     * Sets a parsed option.
@@ -578,47 +513,42 @@ object FieldDescriptorProto {
     * @param propName dot '.' delimited full path of property within the option to set. if undefined\empty, will add a new option with that value
     * @returns `this`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.setParsedOption")
-  @js.native
-  def setParsedOption(name: String, value: js.Any, propName: String): ReflectionObject = js.native
+  @scala.inline
+  def setParsedOption(name: String, value: js.Any, propName: String): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setParsedOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
   
   /**
     * Sets up {@link Type#encode|encode}, {@link Type#decode|decode} and {@link Type#verify|verify}.
     * @returns `this`
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.setup")
-  @js.native
-  def setup(): Type = js.native
+  @scala.inline
+  def setup(): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Type]
   
   /**
     * Converts this reflection object to its descriptor representation.
     * @returns Descriptor
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toJSON")
-  @js.native
-  def toJSON(): StringDictionary[js.Any] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toJSON")
-  @js.native
-  def toJSON(toJSONOptions: IToJSONOptions): INamespace = js.native
+  @scala.inline
+  def toJSON(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toJSON(toJSONOptions: IToJSONOptions): INamespace = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(toJSONOptions.asInstanceOf[js.Any]).asInstanceOf[INamespace]
+  
   /**
     * Converts this namespace to a namespace descriptor.
     * @param [toJSONOptions] JSON conversion options
     * @returns Namespace descriptor
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toJSON")
-  @js.native
-  def toJSON_INamespace(): INamespace = js.native
+  @scala.inline
+  def toJSON_INamespace(): INamespace = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[INamespace]
+  
   /**
     * Converts this message type to a message type descriptor.
     * @param [toJSONOptions] JSON conversion options
     * @returns Message type descriptor
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toJSON")
-  @js.native
-  def toJSON_IType(): IType = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toJSON")
-  @js.native
-  def toJSON_IType(toJSONOptions: IToJSONOptions): IType = js.native
+  @scala.inline
+  def toJSON_IType(): IType = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[IType]
+  @scala.inline
+  def toJSON_IType(toJSONOptions: IToJSONOptions): IType = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(toJSONOptions.asInstanceOf[js.Any]).asInstanceOf[IType]
   
   /**
     * Creates a plain object from a message of this type. Also converts values to other types if specified.
@@ -626,29 +556,25 @@ object FieldDescriptorProto {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toObject")
-  @js.native
-  def toObject(message: Message[js.Object]): StringDictionary[js.Any] = js.native
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toObject")
-  @js.native
-  def toObject(message: Message[js.Object], options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Message[js.Object]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Message[js.Object], options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Converts this instance to its string representation.
     * @returns Class name[, space, full name]
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.toString")
-  @js.native
-  def toString_(): String = js.native
+  @scala.inline
+  def toString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[String]
   
   /**
     * Verifies that field values are valid and that required fields are present.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("protobufjs/ext/descriptor", "FieldDescriptorProto.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): Null | String = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): Null | String = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[Null | String]
   
   /** Message fields. */
   object fields

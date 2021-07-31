@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecutionCompletedEventAttributes extends StObject {
   
   /**
     * The ID of the DecisionTaskCompleted event corresponding to the decision task that resulted in the CompleteWorkflowExecution decision to complete this execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var decisionTaskCompletedEventId: EventId = js.native
+  var decisionTaskCompletedEventId: EventId
   
   /**
     * The result produced by the workflow execution upon successful completion.
     */
-  var result: js.UndefOr[Data] = js.native
+  var result: js.UndefOr[Data] = js.undefined
 }
 object WorkflowExecutionCompletedEventAttributes {
   

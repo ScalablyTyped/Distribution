@@ -7,15 +7,13 @@ import typings.contentfulManagement.organizationMod.Organization
 import typings.contentfulManagement.organizationMod.OrganizationProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeoforganization extends StObject {
   
-  def wrapOrganization(http: AxiosInstance, data: OrganizationProp): Organization = js.native
+  def wrapOrganization(http: AxiosInstance, data: OrganizationProp): Organization
   
-  def wrapOrganizationCollection(http: AxiosInstance, data: CollectionProp[OrganizationProp]): Collection[Organization, OrganizationProp] = js.native
+  def wrapOrganizationCollection(http: AxiosInstance, data: CollectionProp[OrganizationProp]): Collection[Organization, OrganizationProp]
 }
 object Typeoforganization {
   

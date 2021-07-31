@@ -6,18 +6,19 @@ import typings.geojson.mod.MultiPolygon
 import typings.geojson.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-contour", "contourDensity")
+  @JSImport("d3-contour", JSImport.Namespace)
   @js.native
-  def contourDensity[Datum](): ContourDensity_[Datum] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-contour", "contours")
-  @js.native
-  def contours(): Contours_ = js.native
+  @scala.inline
+  def contourDensity[Datum](): ContourDensity_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("contourDensity")().asInstanceOf[ContourDensity_[Datum]]
+  
+  @scala.inline
+  def contours(): Contours_ = ^.asInstanceOf[js.Dynamic].applyDynamic("contours")().asInstanceOf[Contours_]
   
   @js.native
   trait ContourDensity_[Datum] extends StObject {
@@ -149,24 +150,21 @@ object mod {
     def y(y: js.Function1[/* d */ Datum, Double]): this.type = js.native
   }
   
-  @js.native
-  trait ContourMultiPolygon extends MultiPolygon {
+  trait ContourMultiPolygon
+    extends StObject
+       with MultiPolygon {
     
     /**
       * Threshold value of the contour.
       */
-    var value: Double = js.native
+    var value: Double
   }
   object ContourMultiPolygon {
     
     @scala.inline
-    def apply(
-      coordinates: js.Array[js.Array[js.Array[Position]]],
-      `type`: typings.geojson.geojsonStrings.MultiPolygon,
-      value: Double
-    ): ContourMultiPolygon = {
+    def apply(coordinates: js.Array[js.Array[js.Array[Position]]], value: Double): ContourMultiPolygon = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("MultiPolygon")
       __obj.asInstanceOf[ContourMultiPolygon]
     }
     

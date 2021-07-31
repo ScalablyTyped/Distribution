@@ -24,10 +24,13 @@ import typings.ckeditorCkeditor5Engine.mod.view.View
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devUtils {
+  
+  @JSImport("@ckeditor/ckeditor5-engine", "devUtils")
+  @js.native
+  val ^ : js.Any = js.native
   
   // engine/dev-utils/enableenginedebug
   @JSImport("@ckeditor/ckeditor5-engine", "devUtils.DebugPlugin")
@@ -42,296 +45,241 @@ object devUtils {
   // engine/dev-utils/model
   object devmodel {
     
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.getData")
+    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel")
     @js.native
-    def getData(model: Model): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.getData")
-    @js.native
-    def getData(model: Model, options: ConvertMarkers): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.parse")
-    @js.native
-    def parse(data: String, schema: Schema, batch: Batch): Element | Text | DocumentFragment | js.Object = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.parse")
-    @js.native
-    def parse(data: String, schema: Schema, batch: Batch, options: Context): Element | Text | DocumentFragment | js.Object = js.native
+    @scala.inline
+    def getData(model: Model): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(model.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getData(model: Model, options: ConvertMarkers): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.setData")
-    @js.native
-    def setData(model: String, data: js.Object, options: BatchType): Unit = js.native
+    @scala.inline
+    def parse(data: String, schema: Schema, batch: Batch): Element | Text | DocumentFragment | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], batch.asInstanceOf[js.Any])).asInstanceOf[Element | Text | DocumentFragment | js.Object]
+    @scala.inline
+    def parse(data: String, schema: Schema, batch: Batch, options: Context): Element | Text | DocumentFragment | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], batch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element | Text | DocumentFragment | js.Object]
     
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: DocumentFragment, selectionOrPositionOrRange: Position): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    @scala.inline
+    def setData(model: String, data: js.Object, options: BatchType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(model.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def stringify(node: DocumentFragment, selectionOrPositionOrRange: Position): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       node: DocumentFragment,
       selectionOrPositionOrRange: Position,
       // TODO optional
     markers: Iterable[Marker]
-    ): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: DocumentFragment, selectionOrPositionOrRange: Range): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: DocumentFragment, selectionOrPositionOrRange: Range): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       node: DocumentFragment,
       selectionOrPositionOrRange: Range,
       // TODO optional
     markers: Iterable[Marker]
-    ): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: DocumentFragment, selectionOrPositionOrRange: Selection): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: DocumentFragment, selectionOrPositionOrRange: Selection): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       node: DocumentFragment,
       selectionOrPositionOrRange: Selection,
       // TODO optional
     markers: Iterable[Marker]
-    ): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: Element, selectionOrPositionOrRange: Position): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: Element, selectionOrPositionOrRange: Position): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(node: Element, selectionOrPositionOrRange: Position, // TODO optional
-    markers: Iterable[Marker]): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: Element, selectionOrPositionOrRange: Range): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    markers: Iterable[Marker]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: Element, selectionOrPositionOrRange: Range): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(node: Element, selectionOrPositionOrRange: Range, // TODO optional
-    markers: Iterable[Marker]): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: Element, selectionOrPositionOrRange: Selection): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    markers: Iterable[Marker]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: Element, selectionOrPositionOrRange: Selection): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(node: Element, selectionOrPositionOrRange: Selection, // TODO optional
-    markers: Iterable[Marker]): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: RootElement, selectionOrPositionOrRange: Position): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    markers: Iterable[Marker]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: RootElement, selectionOrPositionOrRange: Position): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       node: RootElement,
       selectionOrPositionOrRange: Position,
       // TODO optional
     markers: Iterable[Marker]
-    ): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: RootElement, selectionOrPositionOrRange: Range): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: RootElement, selectionOrPositionOrRange: Range): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(node: RootElement, selectionOrPositionOrRange: Range, // TODO optional
-    markers: Iterable[Marker]): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: RootElement, selectionOrPositionOrRange: Selection): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    markers: Iterable[Marker]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: RootElement, selectionOrPositionOrRange: Selection): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       node: RootElement,
       selectionOrPositionOrRange: Selection,
       // TODO optional
     markers: Iterable[Marker]
-    ): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: Text, selectionOrPositionOrRange: Position): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: Text, selectionOrPositionOrRange: Position): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(node: Text, selectionOrPositionOrRange: Position, // TODO optional
-    markers: Iterable[Marker]): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: Text, selectionOrPositionOrRange: Range): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    markers: Iterable[Marker]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: Text, selectionOrPositionOrRange: Range): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(node: Text, selectionOrPositionOrRange: Range, // TODO optional
-    markers: Iterable[Marker]): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
-    def stringify(node: Text, selectionOrPositionOrRange: Selection): String = js.native
-    @JSImport("@ckeditor/ckeditor5-engine", "devUtils.devmodel.stringify")
-    @js.native
+    markers: Iterable[Marker]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(node: Text, selectionOrPositionOrRange: Selection): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(node: Text, selectionOrPositionOrRange: Selection, // TODO optional
-    markers: Iterable[Marker]): String = js.native
+    markers: Iterable[Marker]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.disableEngineDebug")
-  @js.native
-  def disableEngineDebug(): Unit = js.native
+  @scala.inline
+  def disableEngineDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableEngineDebug")().asInstanceOf[Unit]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.enableEngineDebug")
-  @js.native
-  def enableEngineDebug(_logger: Error): DebugPlugin = js.native
+  @scala.inline
+  def enableEngineDebug(_logger: Error): DebugPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("enableEngineDebug")(_logger.asInstanceOf[js.Any]).asInstanceOf[DebugPlugin]
   
   // engine/dev-utils/view
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.getData")
-  @js.native
-  def getData(view: View): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.getData")
-  @js.native
-  def getData(view: View, options: RenderUIElements): String = js.native
+  @scala.inline
+  def getData(view: View): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(view.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getData(view: View, options: RenderUIElements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.parse")
-  @js.native
-  def parse(data: String, options: LastRangeBackward): typings.ckeditorCkeditor5Engine.mod.view.Text | typings.ckeditorCkeditor5Engine.mod.view.Element | typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment | js.Object = js.native
+  @scala.inline
+  def parse(data: String, options: LastRangeBackward): typings.ckeditorCkeditor5Engine.mod.view.Text | typings.ckeditorCkeditor5Engine.mod.view.Element | typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditorCkeditor5Engine.mod.view.Text | typings.ckeditorCkeditor5Engine.mod.view.Element | typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment | js.Object]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.setData")
-  @js.native
-  def setData(view: View, data: String, options: RootName): Unit = js.native
+  @scala.inline
+  def setData(view: View, data: String, options: RootName): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(view.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
-  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  @scala.inline
+  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment,
-    selectionOrPositionOrRange: js.UndefOr[scala.Nothing],
+    selectionOrPositionOrRange: Unit,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment,
     selectionOrPositionOrRange: DocumentSelection
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment,
     selectionOrPositionOrRange: DocumentSelection,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Position
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Position,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Range
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.DocumentFragment,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Range,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
-  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.Element): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Element,
-    selectionOrPositionOrRange: js.UndefOr[scala.Nothing],
+    selectionOrPositionOrRange: Unit,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Element,
     selectionOrPositionOrRange: DocumentSelection
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Element,
     selectionOrPositionOrRange: DocumentSelection,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Element,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Position
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Element,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Position,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Element,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Range
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Element,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Range,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
-  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.Text): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.Text): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Text,
-    selectionOrPositionOrRange: js.UndefOr[scala.Nothing],
+    selectionOrPositionOrRange: Unit,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
-  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.Text, selectionOrPositionOrRange: DocumentSelection): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(node: typings.ckeditorCkeditor5Engine.mod.view.Text, selectionOrPositionOrRange: DocumentSelection): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Text,
     selectionOrPositionOrRange: DocumentSelection,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Text,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Position
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Text,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Position,
     options: IgnoreRoot
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Text,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Range
-  ): String = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "devUtils.stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     node: typings.ckeditorCkeditor5Engine.mod.view.Text,
     selectionOrPositionOrRange: typings.ckeditorCkeditor5Engine.mod.view.Range,
     options: IgnoreRoot
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any], selectionOrPositionOrRange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

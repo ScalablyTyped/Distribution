@@ -2,36 +2,34 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionalBucket extends StObject {
   
   /**
     * 
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The Amazon Resource Name (ARN) for the regional bucket.
     */
-  var BucketArn: js.UndefOr[S3RegionalBucketArn] = js.native
+  var BucketArn: js.UndefOr[S3RegionalBucketArn] = js.undefined
   
   /**
     * The creation date of the regional bucket
     */
-  var CreationDate: typings.awsSdk.s3controlMod.CreationDate = js.native
+  var CreationDate: typings.awsSdk.s3controlMod.CreationDate
   
   /**
     * The AWS Outposts ID of the regional bucket.
     */
-  var OutpostId: js.UndefOr[NonEmptyMaxLength64String] = js.native
+  var OutpostId: js.UndefOr[NonEmptyMaxLength64String] = js.undefined
   
   /**
     * 
     */
-  var PublicAccessBlockEnabled: typings.awsSdk.s3controlMod.PublicAccessBlockEnabled = js.native
+  var PublicAccessBlockEnabled: typings.awsSdk.s3controlMod.PublicAccessBlockEnabled
 }
 object RegionalBucket {
   

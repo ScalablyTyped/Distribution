@@ -2,18 +2,16 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  errMsg :string} & weixin-app.wx.ExtConfig */
-@js.native
 trait errMsgstringExtConfig extends StObject {
   
   /* 调用结果 */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 第三方平台自定义的数据 */
-  var extConfig: js.Any = js.native
+  var extConfig: js.Any
 }
 object errMsgstringExtConfig {
   

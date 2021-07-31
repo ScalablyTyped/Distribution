@@ -4,67 +4,67 @@ import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.sequential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureFormProperties extends WidgetProperties {
+trait FeatureFormProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The description of the form.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The associated feature containing the editable attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#feature)
     */
-  var feature: js.UndefOr[GraphicProperties] = js.native
+  var feature: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
     * Array of individual or grouped field configuration objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#fieldConfig)
     */
-  var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties | FieldGroupConfigProperties]] = js.native
+  var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties | FieldGroupConfigProperties]] = js.undefined
   
   /**
     * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used for the form.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#formTemplate)
     */
-  var formTemplate: js.UndefOr[FormTemplateProperties] = js.native
+  var formTemplate: js.UndefOr[FormTemplateProperties] = js.undefined
   
   /**
     * Defines how groups will be displayed to the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#groupDisplay)
     */
-  var groupDisplay: js.UndefOr[all | sequential] = js.native
+  var groupDisplay: js.UndefOr[all | sequential] = js.undefined
   
   /**
     * Layer containing the editable feature attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#layer)
     */
-  var layer: js.UndefOr[FeatureLayerProperties] = js.native
+  var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
   
   /**
     * The title of the form.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#viewModel)
     */
-  var viewModel: js.UndefOr[FeatureFormViewModelProperties] = js.native
+  var viewModel: js.UndefOr[FeatureFormViewModelProperties] = js.undefined
 }
 object FeatureFormProperties {
   

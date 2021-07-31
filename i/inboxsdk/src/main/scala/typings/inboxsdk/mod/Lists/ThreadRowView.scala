@@ -4,53 +4,51 @@ import typings.inboxsdk.inboxsdkStrings.destroy
 import typings.inboxsdk.mod.Common.Contact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadRowView extends StObject {
   
   // addButton(buttonDescriptor: Stream<ThreadRowButtonDescriptor>): void;
-  def addActionButton(buttonDescriptor: ThreadRowActionButtonDescriptor): Unit = js.native
+  def addActionButton(buttonDescriptor: ThreadRowActionButtonDescriptor): Unit
   
   // addActionButton(buttonDescriptor: Stream<ThreadRowActionButtonDescriptor>): void;
-  def addAttachmentIcon(threadRowAttachmentIconDescriptor: ThreadRowAttachmentIconDescriptor): Unit = js.native
+  def addAttachmentIcon(threadRowAttachmentIconDescriptor: ThreadRowAttachmentIconDescriptor): Unit
   
   // addImage(imageDescriptor: Stream<ImageDescriptor>): void;
-  def addButton(buttonDescriptor: ThreadRowButtonDescriptor): Unit = js.native
+  def addButton(buttonDescriptor: ThreadRowButtonDescriptor): Unit
   
   // addLabel(labelDescriptor: Stream<LabelDescriptor>): void;
-  def addImage(imageDescriptor: ImageDescriptor): Unit = js.native
+  def addImage(imageDescriptor: ImageDescriptor): Unit
   
-  def addLabel(labelDescriptor: LabelDescriptor): Unit = js.native
+  def addLabel(labelDescriptor: LabelDescriptor): Unit
   
-  var destroyed: Boolean = js.native
+  var destroyed: Boolean
   
-  def getContacts(): js.Array[Contact] = js.native
+  def getContacts(): js.Array[Contact]
   
-  def getDateString(): String = js.native
+  def getDateString(): String
   
-  def getDraftID(): js.Promise[String] = js.native
+  def getDraftID(): js.Promise[String]
   
   // replaceDraftLabel(draftLabelDescriptor: Stream<ThreadRowDraftLabelDescriptor>): void;
-  def getSubject(): String = js.native
+  def getSubject(): String
   
-  def getThreadIDAsync(): js.Promise[String] = js.native
+  def getThreadIDAsync(): js.Promise[String]
   
-  def getThreadIDIfStableAsync(): js.Promise[String | Null] = js.native
+  def getThreadIDIfStableAsync(): js.Promise[String | Null]
   
-  def getVisibleDraftCount(): Double = js.native
+  def getVisibleDraftCount(): Double
   
-  def getVisibleMessageCount(): Double = js.native
+  def getVisibleMessageCount(): Double
   
   @JSName("on")
-  def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+  def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit
   
   // addAttachmentIcon(threadRowAttachmentIconDescriptor: stream<ThreadRowAttachmentIconDescriptor>): void
-  def replaceDate(threadRowDateDescriptor: ThreadRowDateDescriptor): Unit = js.native
+  def replaceDate(threadRowDateDescriptor: ThreadRowDateDescriptor): Unit
   
   // replaceDate(threadRowDateDescriptor: Stream<ThreadRowDateDescriptor>): void;
-  def replaceDraftLabel(draftLabelDescriptor: ThreadRowDraftLabelDescriptor): Unit = js.native
+  def replaceDraftLabel(draftLabelDescriptor: ThreadRowDraftLabelDescriptor): Unit
 }
 object ThreadRowView {
   

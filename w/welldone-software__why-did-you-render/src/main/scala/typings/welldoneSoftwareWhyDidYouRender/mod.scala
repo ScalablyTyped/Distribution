@@ -5,19 +5,20 @@ import typings.std.RegExp
 import typings.welldoneSoftwareWhyDidYouRender.anon.TypeofReact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
+    @scala.inline
+    def apply(react: TypeofReact): TypeofReact = ^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any]).asInstanceOf[TypeofReact]
+    @scala.inline
+    def apply(react: TypeofReact, options: WhyDidYouRenderOptions): TypeofReact = (^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TypeofReact]
+    
     @JSImport("@welldone-software/why-did-you-render", JSImport.Default)
     @js.native
-    def apply(react: TypeofReact): TypeofReact = js.native
-    @JSImport("@welldone-software/why-did-you-render", JSImport.Default)
-    @js.native
-    def apply(react: TypeofReact, options: WhyDidYouRenderOptions): TypeofReact = js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@welldone-software/why-did-you-render", "default.defaultNotifier")
     @js.native
@@ -34,10 +35,9 @@ object mod {
       val whyDidYouRender: WhyDidYouRenderComponentMember = js.native
     }
     
-    @js.native
     trait ExoticComponent[P] extends StObject {
       
-      var whyDidYouRender: js.UndefOr[WhyDidYouRenderComponentMember] = js.native
+      var whyDidYouRender: js.UndefOr[WhyDidYouRenderComponentMember] = js.undefined
     }
     object ExoticComponent {
       
@@ -48,7 +48,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class ExoticComponentMutableBuilder[Self <: ExoticComponent[_], P] (val x: Self with ExoticComponent[P]) extends AnyVal {
+      implicit class ExoticComponentMutableBuilder[Self <: ExoticComponent[?], P] (val x: Self & ExoticComponent[P]) extends AnyVal {
         
         @scala.inline
         def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
@@ -58,10 +58,9 @@ object mod {
       }
     }
     
-    @js.native
     trait FunctionComponent[P] extends StObject {
       
-      var whyDidYouRender: js.UndefOr[WhyDidYouRenderComponentMember] = js.native
+      var whyDidYouRender: js.UndefOr[WhyDidYouRenderComponentMember] = js.undefined
     }
     object FunctionComponent {
       
@@ -72,7 +71,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class FunctionComponentMutableBuilder[Self <: FunctionComponent[_], P] (val x: Self with FunctionComponent[P]) extends AnyVal {
+      implicit class FunctionComponentMutableBuilder[Self <: FunctionComponent[?], P] (val x: Self & FunctionComponent[P]) extends AnyVal {
         
         @scala.inline
         def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
@@ -85,16 +84,15 @@ object mod {
   
   type ExtraHookToTrack = js.Tuple2[js.Any, String]
   
-  @js.native
   trait HookDifference extends StObject {
     
-    var diffType: String = js.native
+    var diffType: String
     
-    var nextValue: js.Any = js.native
+    var nextValue: js.Any
     
-    var pathString: String = js.native
+    var pathString: String
     
-    var prevValue: js.Any = js.native
+    var prevValue: js.Any
   }
   object HookDifference {
     
@@ -123,14 +121,13 @@ object mod {
   
   type Notifier = js.Function1[/* options */ UpdateInfo, Unit]
   
-  @js.native
   trait ReasonForUpdate extends StObject {
     
-    var hookDifferences: js.Array[HookDifference] = js.native
+    var hookDifferences: js.Array[HookDifference]
     
-    var propsDifferences: Boolean = js.native
+    var propsDifferences: Boolean
     
-    var stateDifferences: Boolean = js.native
+    var stateDifferences: Boolean
   }
   object ReasonForUpdate {
     
@@ -157,36 +154,35 @@ object mod {
     }
   }
   
-  @js.native
   trait UpdateInfo extends StObject {
     
-    var Component: typings.react.mod.Component[js.Object, js.Object, _] = js.native
+    var Component: typings.react.mod.Component[js.Object, js.Object, js.Any]
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var hookName: js.UndefOr[String] = js.native
+    var hookName: js.UndefOr[String] = js.undefined
     
-    var nextHook: js.Any = js.native
+    var nextHook: js.Any
     
-    var nextProps: js.Any = js.native
+    var nextProps: js.Any
     
-    var nextState: js.Any = js.native
+    var nextState: js.Any
     
-    var options: WhyDidYouRenderOptions = js.native
+    var options: WhyDidYouRenderOptions
     
-    var prevHook: js.Any = js.native
+    var prevHook: js.Any
     
-    var prevProps: js.Any = js.native
+    var prevProps: js.Any
     
-    var prevState: js.Any = js.native
+    var prevState: js.Any
     
-    var reason: ReasonForUpdate = js.native
+    var reason: ReasonForUpdate
   }
   object UpdateInfo {
     
     @scala.inline
     def apply(
-      Component: Component[js.Object, js.Object, _],
+      Component: Component[js.Object, js.Object, js.Any],
       displayName: String,
       nextHook: js.Any,
       nextProps: js.Any,
@@ -205,7 +201,7 @@ object mod {
     implicit class UpdateInfoMutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: Component[js.Object, js.Object, _]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      def setComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
@@ -244,38 +240,37 @@ object mod {
   
   type WhyDidYouRenderComponentMember = WhyDidYouRenderOptions | Boolean
   
-  @js.native
   trait WhyDidYouRenderOptions extends StObject {
     
-    var collapseGroups: js.UndefOr[Boolean] = js.native
+    var collapseGroups: js.UndefOr[Boolean] = js.undefined
     
-    var customName: js.UndefOr[String] = js.native
+    var customName: js.UndefOr[String] = js.undefined
     
-    var diffNameColor: js.UndefOr[String] = js.native
+    var diffNameColor: js.UndefOr[String] = js.undefined
     
-    var diffPathColor: js.UndefOr[String] = js.native
+    var diffPathColor: js.UndefOr[String] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[RegExp]] = js.native
+    var exclude: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var hotReloadBufferMs: js.UndefOr[Double] = js.native
+    var hotReloadBufferMs: js.UndefOr[Double] = js.undefined
     
-    var include: js.UndefOr[js.Array[RegExp]] = js.native
+    var include: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var logOnDifferentValues: js.UndefOr[Boolean] = js.native
+    var logOnDifferentValues: js.UndefOr[Boolean] = js.undefined
     
-    var logOwnerReasons: js.UndefOr[Boolean] = js.native
+    var logOwnerReasons: js.UndefOr[Boolean] = js.undefined
     
-    var notifier: js.UndefOr[Notifier] = js.native
+    var notifier: js.UndefOr[Notifier] = js.undefined
     
-    var onlyLogs: js.UndefOr[Boolean] = js.native
+    var onlyLogs: js.UndefOr[Boolean] = js.undefined
     
-    var titleColor: js.UndefOr[String] = js.native
+    var titleColor: js.UndefOr[String] = js.undefined
     
-    var trackAllPureComponents: js.UndefOr[Boolean] = js.native
+    var trackAllPureComponents: js.UndefOr[Boolean] = js.undefined
     
-    var trackExtraHooks: js.UndefOr[js.Array[ExtraHookToTrack]] = js.native
+    var trackExtraHooks: js.UndefOr[js.Array[ExtraHookToTrack]] = js.undefined
     
-    var trackHooks: js.UndefOr[Boolean] = js.native
+    var trackHooks: js.UndefOr[Boolean] = js.undefined
   }
   object WhyDidYouRenderOptions {
     

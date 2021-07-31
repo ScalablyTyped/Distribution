@@ -7,57 +7,47 @@ import typings.docxTemplates.typesMod.NonTextNode
 import typings.docxTemplates.typesMod.TextNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reportUtilsMod {
   
-  @JSImport("docx-templates/lib/reportUtils", "addChild")
+  @JSImport("docx-templates/lib/reportUtils", JSImport.Namespace)
   @js.native
-  def addChild(parent: Node, child: Node): Node = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("docx-templates/lib/reportUtils", "cloneNodeForLogging")
-  @js.native
-  def cloneNodeForLogging(node: Node): js.Object = js.native
+  @scala.inline
+  def addChild(parent: Node, child: Node): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("addChild")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("docx-templates/lib/reportUtils", "cloneNodeWithoutChildren")
-  @js.native
-  def cloneNodeWithoutChildren(node: Node): Node = js.native
+  @scala.inline
+  def cloneNodeForLogging(node: Node): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNodeForLogging")(node.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("docx-templates/lib/reportUtils", "getCurLoop")
-  @js.native
-  def getCurLoop(ctx: Context): LoopStatus | Null = js.native
+  @scala.inline
+  def cloneNodeWithoutChildren(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNodeWithoutChildren")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
   
-  @JSImport("docx-templates/lib/reportUtils", "getNextSibling")
-  @js.native
-  def getNextSibling(node: Node): Node | Null = js.native
+  @scala.inline
+  def getCurLoop(ctx: Context): LoopStatus | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurLoop")(ctx.asInstanceOf[js.Any]).asInstanceOf[LoopStatus | Null]
   
-  @JSImport("docx-templates/lib/reportUtils", "insertTextSiblingAfter")
-  @js.native
-  def insertTextSiblingAfter(textNode: TextNode): TextNode = js.native
+  @scala.inline
+  def getNextSibling(node: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextSibling")(node.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
   
-  @JSImport("docx-templates/lib/reportUtils", "isLoopExploring")
-  @js.native
-  def isLoopExploring(ctx: Context): Boolean = js.native
+  @scala.inline
+  def insertTextSiblingAfter(textNode: TextNode): TextNode = ^.asInstanceOf[js.Dynamic].applyDynamic("insertTextSiblingAfter")(textNode.asInstanceOf[js.Any]).asInstanceOf[TextNode]
   
-  @JSImport("docx-templates/lib/reportUtils", "logLoop")
-  @js.native
-  def logLoop(loops: js.Array[LoopStatus]): Unit = js.native
+  @scala.inline
+  def isLoopExploring(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoopExploring")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("docx-templates/lib/reportUtils", "newNonTextNode")
-  @js.native
-  def newNonTextNode(tag: String): NonTextNode = js.native
-  @JSImport("docx-templates/lib/reportUtils", "newNonTextNode")
-  @js.native
-  def newNonTextNode(tag: String, attrs: js.UndefOr[scala.Nothing], children: js.Array[Node]): NonTextNode = js.native
-  @JSImport("docx-templates/lib/reportUtils", "newNonTextNode")
-  @js.native
-  def newNonTextNode(tag: String, attrs: js.Object): NonTextNode = js.native
-  @JSImport("docx-templates/lib/reportUtils", "newNonTextNode")
-  @js.native
-  def newNonTextNode(tag: String, attrs: js.Object, children: js.Array[Node]): NonTextNode = js.native
+  @scala.inline
+  def logLoop(loops: js.Array[LoopStatus]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLoop")(loops.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("docx-templates/lib/reportUtils", "newTextNode")
-  @js.native
-  def newTextNode(text: String): TextNode = js.native
+  @scala.inline
+  def newNonTextNode(tag: String): NonTextNode = ^.asInstanceOf[js.Dynamic].applyDynamic("newNonTextNode")(tag.asInstanceOf[js.Any]).asInstanceOf[NonTextNode]
+  @scala.inline
+  def newNonTextNode(tag: String, attrs: js.Object): NonTextNode = (^.asInstanceOf[js.Dynamic].applyDynamic("newNonTextNode")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[NonTextNode]
+  @scala.inline
+  def newNonTextNode(tag: String, attrs: js.Object, children: js.Array[Node]): NonTextNode = (^.asInstanceOf[js.Dynamic].applyDynamic("newNonTextNode")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[NonTextNode]
+  @scala.inline
+  def newNonTextNode(tag: String, attrs: Unit, children: js.Array[Node]): NonTextNode = (^.asInstanceOf[js.Dynamic].applyDynamic("newNonTextNode")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[NonTextNode]
+  
+  @scala.inline
+  def newTextNode(text: String): TextNode = ^.asInstanceOf[js.Dynamic].applyDynamic("newTextNode")(text.asInstanceOf[js.Any]).asInstanceOf[TextNode]
 }

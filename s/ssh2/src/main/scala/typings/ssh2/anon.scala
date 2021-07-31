@@ -2,19 +2,17 @@ package typings.ssh2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var family: String = js.native
+    var family: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object Address {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fd extends StObject {
     
-    var fd: Double = js.native
+    var fd: Double
   }
   object Fd {
     

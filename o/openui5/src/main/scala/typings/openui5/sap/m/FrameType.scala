@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait FrameType extends StObject
 object FrameType extends StObject {
   
   @js.native
-  sealed trait Auto extends FrameType
+  sealed trait Auto
+    extends StObject
+       with FrameType
   
   @js.native
-  sealed trait OneByOne extends FrameType
+  sealed trait OneByOne
+    extends StObject
+       with FrameType
   
   @js.native
-  sealed trait TwoByOne extends FrameType
+  sealed trait TwoByOne
+    extends StObject
+       with FrameType
   
   @js.native
-  sealed trait TwoThirds extends FrameType
+  sealed trait TwoThirds
+    extends StObject
+       with FrameType
 }

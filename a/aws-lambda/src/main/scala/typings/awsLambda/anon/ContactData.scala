@@ -3,15 +3,13 @@ package typings.awsLambda.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactData extends StObject {
   
-  var ContactData: Attributes = js.native
+  var ContactData: Attributes
   
-  var Parameters: StringDictionary[String] = js.native
+  var Parameters: StringDictionary[String]
 }
 object ContactData {
   

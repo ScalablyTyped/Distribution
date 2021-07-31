@@ -3,13 +3,13 @@ package typings.seleniumWebdriver.anon
 import typings.seleniumWebdriver.byMod.ByHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkText extends ByHash {
+trait LinkText
+  extends StObject
+     with ByHash {
   
-  var linkText: String = js.native
+  var linkText: String
 }
 object LinkText {
   

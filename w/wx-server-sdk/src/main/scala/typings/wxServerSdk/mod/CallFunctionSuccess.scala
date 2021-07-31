@@ -2,17 +2,15 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallFunctionSuccess extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var requestID: String = js.native
+  var requestID: String
   
-  var result: String = js.native
+  var result: String
 }
 object CallFunctionSuccess {
   

@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CcrDeleteAutoFollowPattern extends Generic {
+trait CcrDeleteAutoFollowPattern
+  extends StObject
+     with Generic {
   
-  var name: String = js.native
+  var name: String
 }
 object CcrDeleteAutoFollowPattern {
   

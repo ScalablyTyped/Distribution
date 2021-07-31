@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobRequest extends StObject {
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
 }
 object DescribeJobRequest {
   

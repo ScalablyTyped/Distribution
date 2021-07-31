@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetLaunchTemplateConfigOverride extends StObject {
   
   /**
     * Availability Zone in which to launch the instances.
     */
-  var availabilityZone: js.UndefOr[Input[String]] = js.native
+  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Instance type.
     */
-  var instanceType: js.UndefOr[Input[String]] = js.native
+  var instanceType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Maximum price per unit hour that you are willing to pay for a Spot Instance.
     */
-  var maxPrice: js.UndefOr[Input[String]] = js.native
+  var maxPrice: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Priority for the launch template override. If `onDemandOptions` `allocationStrategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
     */
-  var priority: js.UndefOr[Input[Double]] = js.native
+  var priority: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * ID of the subnet in which to launch the instances.
     */
-  var subnetId: js.UndefOr[Input[String]] = js.native
+  var subnetId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Number of units provided by the specified instance type.
     */
-  var weightedCapacity: js.UndefOr[Input[Double]] = js.native
+  var weightedCapacity: js.UndefOr[Input[Double]] = js.undefined
 }
 object FleetLaunchTemplateConfigOverride {
   

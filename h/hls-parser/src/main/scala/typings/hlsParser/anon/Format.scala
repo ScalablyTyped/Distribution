@@ -3,21 +3,19 @@ package typings.hlsParser.anon
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var formatVersion: js.UndefOr[String] = js.native
+  var formatVersion: js.UndefOr[String] = js.undefined
   
-  var iv: js.UndefOr[Buffer] = js.native
+  var iv: js.UndefOr[Buffer] = js.undefined
   
-  var method: String = js.native
+  var method: String
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Format {
   

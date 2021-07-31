@@ -2,26 +2,24 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateAuthorityConfiguration extends StObject {
   
   /**
     * Type of the public key algorithm and size, in bits, of the key pair that your CA creates when it issues a certificate. When you create a subordinate CA, you must use a key algorithm supported by the parent CA.
     */
-  var KeyAlgorithm: typings.awsSdk.acmpcaMod.KeyAlgorithm = js.native
+  var KeyAlgorithm: typings.awsSdk.acmpcaMod.KeyAlgorithm
   
   /**
     * Name of the algorithm your private CA uses to sign certificate requests. This parameter should not be confused with the SigningAlgorithm parameter used to sign certificates when they are issued.
     */
-  var SigningAlgorithm: typings.awsSdk.acmpcaMod.SigningAlgorithm = js.native
+  var SigningAlgorithm: typings.awsSdk.acmpcaMod.SigningAlgorithm
   
   /**
     * Structure that contains X.500 distinguished name information for your private CA.
     */
-  var Subject: ASN1Subject = js.native
+  var Subject: ASN1Subject
 }
 object CertificateAuthorityConfiguration {
   

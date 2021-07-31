@@ -2,431 +2,429 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSecurityFindingFilters extends StObject {
   
   /**
     * The AWS account ID that a finding is generated in.
     */
-  var AwsAccountId: js.UndefOr[StringFilterList] = js.native
+  var AwsAccountId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The name of the findings provider (company) that owns the solution (product) that generates findings.
     */
-  var CompanyName: js.UndefOr[StringFilterList] = js.native
+  var CompanyName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains security standard-related finding details.
     */
-  var ComplianceStatus: js.UndefOr[StringFilterList] = js.native
+  var ComplianceStatus: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * A finding's confidence. Confidence is defined as the likelihood that a finding accurately identifies the behavior or issue that it was intended to identify. Confidence is scored on a 0-100 basis using a ratio scale, where 0 means zero percent confidence and 100 means 100 percent confidence.
     */
-  var Confidence: js.UndefOr[NumberFilterList] = js.native
+  var Confidence: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * An ISO8601-formatted timestamp that indicates when the security-findings provider captured the potential security issue that a finding captured.
     */
-  var CreatedAt: js.UndefOr[DateFilterList] = js.native
+  var CreatedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The level of importance assigned to the resources associated with the finding. A score of 0 means that the underlying resources have no criticality, and a score of 100 is reserved for the most critical resources.
     */
-  var Criticality: js.UndefOr[NumberFilterList] = js.native
+  var Criticality: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * A finding's description.
     */
-  var Description: js.UndefOr[StringFilterList] = js.native
+  var Description: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * An ISO8601-formatted timestamp that indicates when the security-findings provider first observed the potential security issue that a finding captured.
     */
-  var FirstObservedAt: js.UndefOr[DateFilterList] = js.native
+  var FirstObservedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc.
     */
-  var GeneratorId: js.UndefOr[StringFilterList] = js.native
+  var GeneratorId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The security findings provider-specific identifier for a finding.
     */
-  var Id: js.UndefOr[StringFilterList] = js.native
+  var Id: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * A keyword for a finding.
     */
-  var Keyword: js.UndefOr[KeywordFilterList] = js.native
+  var Keyword: js.UndefOr[KeywordFilterList] = js.undefined
   
   /**
     * An ISO8601-formatted timestamp that indicates when the security-findings provider most recently observed the potential security issue that a finding captured.
     */
-  var LastObservedAt: js.UndefOr[DateFilterList] = js.native
+  var LastObservedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The name of the malware that was observed.
     */
-  var MalwareName: js.UndefOr[StringFilterList] = js.native
+  var MalwareName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The filesystem path of the malware that was observed.
     */
-  var MalwarePath: js.UndefOr[StringFilterList] = js.native
+  var MalwarePath: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The state of the malware that was observed.
     */
-  var MalwareState: js.UndefOr[StringFilterList] = js.native
+  var MalwareState: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The type of the malware that was observed.
     */
-  var MalwareType: js.UndefOr[StringFilterList] = js.native
+  var MalwareType: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The destination domain of network-related information about a finding.
     */
-  var NetworkDestinationDomain: js.UndefOr[StringFilterList] = js.native
+  var NetworkDestinationDomain: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The destination IPv4 address of network-related information about a finding.
     */
-  var NetworkDestinationIpV4: js.UndefOr[IpFilterList] = js.native
+  var NetworkDestinationIpV4: js.UndefOr[IpFilterList] = js.undefined
   
   /**
     * The destination IPv6 address of network-related information about a finding.
     */
-  var NetworkDestinationIpV6: js.UndefOr[IpFilterList] = js.native
+  var NetworkDestinationIpV6: js.UndefOr[IpFilterList] = js.undefined
   
   /**
     * The destination port of network-related information about a finding.
     */
-  var NetworkDestinationPort: js.UndefOr[NumberFilterList] = js.native
+  var NetworkDestinationPort: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * Indicates the direction of network traffic associated with a finding.
     */
-  var NetworkDirection: js.UndefOr[StringFilterList] = js.native
+  var NetworkDirection: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The protocol of network-related information about a finding.
     */
-  var NetworkProtocol: js.UndefOr[StringFilterList] = js.native
+  var NetworkProtocol: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The source domain of network-related information about a finding.
     */
-  var NetworkSourceDomain: js.UndefOr[StringFilterList] = js.native
+  var NetworkSourceDomain: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The source IPv4 address of network-related information about a finding.
     */
-  var NetworkSourceIpV4: js.UndefOr[IpFilterList] = js.native
+  var NetworkSourceIpV4: js.UndefOr[IpFilterList] = js.undefined
   
   /**
     * The source IPv6 address of network-related information about a finding.
     */
-  var NetworkSourceIpV6: js.UndefOr[IpFilterList] = js.native
+  var NetworkSourceIpV6: js.UndefOr[IpFilterList] = js.undefined
   
   /**
     * The source media access control (MAC) address of network-related information about a finding.
     */
-  var NetworkSourceMac: js.UndefOr[StringFilterList] = js.native
+  var NetworkSourceMac: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The source port of network-related information about a finding.
     */
-  var NetworkSourcePort: js.UndefOr[NumberFilterList] = js.native
+  var NetworkSourcePort: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * The text of a note.
     */
-  var NoteText: js.UndefOr[StringFilterList] = js.native
+  var NoteText: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The timestamp of when the note was updated.
     */
-  var NoteUpdatedAt: js.UndefOr[DateFilterList] = js.native
+  var NoteUpdatedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The principal that created a note.
     */
-  var NoteUpdatedBy: js.UndefOr[StringFilterList] = js.native
+  var NoteUpdatedBy: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The date/time that the process was launched.
     */
-  var ProcessLaunchedAt: js.UndefOr[DateFilterList] = js.native
+  var ProcessLaunchedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The name of the process.
     */
-  var ProcessName: js.UndefOr[StringFilterList] = js.native
+  var ProcessName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The parent process ID.
     */
-  var ProcessParentPid: js.UndefOr[NumberFilterList] = js.native
+  var ProcessParentPid: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * The path to the process executable.
     */
-  var ProcessPath: js.UndefOr[StringFilterList] = js.native
+  var ProcessPath: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The process ID.
     */
-  var ProcessPid: js.UndefOr[NumberFilterList] = js.native
+  var ProcessPid: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * The date/time that the process was terminated.
     */
-  var ProcessTerminatedAt: js.UndefOr[DateFilterList] = js.native
+  var ProcessTerminatedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The ARN generated by Security Hub that uniquely identifies a third-party company (security findings provider) after this provider's product (solution that generates findings) is registered with Security Hub.
     */
-  var ProductArn: js.UndefOr[StringFilterList] = js.native
+  var ProductArn: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * A data type where security-findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format.
     */
-  var ProductFields: js.UndefOr[MapFilterList] = js.native
+  var ProductFields: js.UndefOr[MapFilterList] = js.undefined
   
   /**
     * The name of the solution (product) that generates findings.
     */
-  var ProductName: js.UndefOr[StringFilterList] = js.native
+  var ProductName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The recommendation of what to do about the issue described in a finding.
     */
-  var RecommendationText: js.UndefOr[StringFilterList] = js.native
+  var RecommendationText: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The updated record state for the finding.
     */
-  var RecordState: js.UndefOr[StringFilterList] = js.native
+  var RecordState: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The solution-generated identifier for a related finding.
     */
-  var RelatedFindingsId: js.UndefOr[StringFilterList] = js.native
+  var RelatedFindingsId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The ARN of the solution that generated a related finding.
     */
-  var RelatedFindingsProductArn: js.UndefOr[StringFilterList] = js.native
+  var RelatedFindingsProductArn: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The IAM profile ARN of the instance.
     */
-  var ResourceAwsEc2InstanceIamInstanceProfileArn: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsEc2InstanceIamInstanceProfileArn: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The Amazon Machine Image (AMI) ID of the instance.
     */
-  var ResourceAwsEc2InstanceImageId: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsEc2InstanceImageId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The IPv4 addresses associated with the instance.
     */
-  var ResourceAwsEc2InstanceIpV4Addresses: js.UndefOr[IpFilterList] = js.native
+  var ResourceAwsEc2InstanceIpV4Addresses: js.UndefOr[IpFilterList] = js.undefined
   
   /**
     * The IPv6 addresses associated with the instance.
     */
-  var ResourceAwsEc2InstanceIpV6Addresses: js.UndefOr[IpFilterList] = js.native
+  var ResourceAwsEc2InstanceIpV6Addresses: js.UndefOr[IpFilterList] = js.undefined
   
   /**
     * The key name associated with the instance.
     */
-  var ResourceAwsEc2InstanceKeyName: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsEc2InstanceKeyName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The date and time the instance was launched.
     */
-  var ResourceAwsEc2InstanceLaunchedAt: js.UndefOr[DateFilterList] = js.native
+  var ResourceAwsEc2InstanceLaunchedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The identifier of the subnet that the instance was launched in.
     */
-  var ResourceAwsEc2InstanceSubnetId: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsEc2InstanceSubnetId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The instance type of the instance.
     */
-  var ResourceAwsEc2InstanceType: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsEc2InstanceType: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The identifier of the VPC that the instance was launched in.
     */
-  var ResourceAwsEc2InstanceVpcId: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsEc2InstanceVpcId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The creation date/time of the IAM access key related to a finding.
     */
-  var ResourceAwsIamAccessKeyCreatedAt: js.UndefOr[DateFilterList] = js.native
+  var ResourceAwsIamAccessKeyCreatedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The status of the IAM access key related to a finding.
     */
-  var ResourceAwsIamAccessKeyStatus: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsIamAccessKeyStatus: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The user associated with the IAM access key related to a finding.
     */
-  var ResourceAwsIamAccessKeyUserName: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsIamAccessKeyUserName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The canonical user ID of the owner of the S3 bucket.
     */
-  var ResourceAwsS3BucketOwnerId: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsS3BucketOwnerId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The display name of the owner of the S3 bucket.
     */
-  var ResourceAwsS3BucketOwnerName: js.UndefOr[StringFilterList] = js.native
+  var ResourceAwsS3BucketOwnerName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The identifier of the image related to a finding.
     */
-  var ResourceContainerImageId: js.UndefOr[StringFilterList] = js.native
+  var ResourceContainerImageId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The name of the image related to a finding.
     */
-  var ResourceContainerImageName: js.UndefOr[StringFilterList] = js.native
+  var ResourceContainerImageName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The date/time that the container was started.
     */
-  var ResourceContainerLaunchedAt: js.UndefOr[DateFilterList] = js.native
+  var ResourceContainerLaunchedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The name of the container related to a finding.
     */
-  var ResourceContainerName: js.UndefOr[StringFilterList] = js.native
+  var ResourceContainerName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The details of a resource that doesn't have a specific subfield for the resource type defined.
     */
-  var ResourceDetailsOther: js.UndefOr[MapFilterList] = js.native
+  var ResourceDetailsOther: js.UndefOr[MapFilterList] = js.undefined
   
   /**
     * The canonical identifier for the given resource type.
     */
-  var ResourceId: js.UndefOr[StringFilterList] = js.native
+  var ResourceId: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The canonical AWS partition name that the Region is assigned to.
     */
-  var ResourcePartition: js.UndefOr[StringFilterList] = js.native
+  var ResourcePartition: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The canonical AWS external Region name where this resource is located.
     */
-  var ResourceRegion: js.UndefOr[StringFilterList] = js.native
+  var ResourceRegion: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * A list of AWS tags associated with a resource at the time the finding was processed.
     */
-  var ResourceTags: js.UndefOr[MapFilterList] = js.native
+  var ResourceTags: js.UndefOr[MapFilterList] = js.undefined
   
   /**
     * Specifies the type of the resource that details are provided for.
     */
-  var ResourceType: js.UndefOr[StringFilterList] = js.native
+  var ResourceType: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The label of a finding's severity.
     */
-  var SeverityLabel: js.UndefOr[StringFilterList] = js.native
+  var SeverityLabel: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The normalized severity of a finding.
     */
-  var SeverityNormalized: js.UndefOr[NumberFilterList] = js.native
+  var SeverityNormalized: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * The native severity as defined by the security-findings provider's solution that generated the finding.
     */
-  var SeverityProduct: js.UndefOr[NumberFilterList] = js.native
+  var SeverityProduct: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
     * A URL that links to a page about the current finding in the security-findings provider's solution.
     */
-  var SourceUrl: js.UndefOr[StringFilterList] = js.native
+  var SourceUrl: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The category of a threat intelligence indicator.
     */
-  var ThreatIntelIndicatorCategory: js.UndefOr[StringFilterList] = js.native
+  var ThreatIntelIndicatorCategory: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The date/time of the last observation of a threat intelligence indicator.
     */
-  var ThreatIntelIndicatorLastObservedAt: js.UndefOr[DateFilterList] = js.native
+  var ThreatIntelIndicatorLastObservedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * The source of the threat intelligence.
     */
-  var ThreatIntelIndicatorSource: js.UndefOr[StringFilterList] = js.native
+  var ThreatIntelIndicatorSource: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The URL for more details from the source of the threat intelligence.
     */
-  var ThreatIntelIndicatorSourceUrl: js.UndefOr[StringFilterList] = js.native
+  var ThreatIntelIndicatorSourceUrl: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The type of a threat intelligence indicator.
     */
-  var ThreatIntelIndicatorType: js.UndefOr[StringFilterList] = js.native
+  var ThreatIntelIndicatorType: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The value of a threat intelligence indicator.
     */
-  var ThreatIntelIndicatorValue: js.UndefOr[StringFilterList] = js.native
+  var ThreatIntelIndicatorValue: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * A finding's title.
     */
-  var Title: js.UndefOr[StringFilterList] = js.native
+  var Title: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * A finding type in the format of namespace/category/classifier that classifies a finding.
     */
-  var Type: js.UndefOr[StringFilterList] = js.native
+  var Type: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * An ISO8601-formatted timestamp that indicates when the security-findings provider last updated the finding record. 
     */
-  var UpdatedAt: js.UndefOr[DateFilterList] = js.native
+  var UpdatedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
     * A list of name/value string pairs associated with the finding. These are custom, user-defined fields added to a finding. 
     */
-  var UserDefinedFields: js.UndefOr[MapFilterList] = js.native
+  var UserDefinedFields: js.UndefOr[MapFilterList] = js.undefined
   
   /**
     * The veracity of a finding.
     */
-  var VerificationState: js.UndefOr[StringFilterList] = js.native
+  var VerificationState: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The workflow state of a finding. Note that this field is deprecated. To search for a finding based on its workflow status, use WorkflowStatus.
     */
-  var WorkflowState: js.UndefOr[StringFilterList] = js.native
+  var WorkflowState: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * The status of the investigation into a finding. Allowed values are the following.    NEW - The initial state of a finding, before it is reviewed.    NOTIFIED - Indicates that the resource owner has been notified about the security issue. Used when the initial reviewer is not the resource owner, and needs intervention from the resource owner.    SUPPRESSED - The finding will not be reviewed again and will not be acted upon.    RESOLVED - The finding was reviewed and remediated and is now considered resolved.   
     */
-  var WorkflowStatus: js.UndefOr[StringFilterList] = js.native
+  var WorkflowStatus: js.UndefOr[StringFilterList] = js.undefined
 }
 object AwsSecurityFindingFilters {
   

@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISharedLinkInfo extends StObject {
   
-  val AccessKey: String = js.native
+  val AccessKey: String
   
-  def Clone(): ISharedLinkInfo = js.native
+  def Clone(): ISharedLinkInfo
   
-  val CreatedByUser: Double = js.native
+  val CreatedByUser: Double
   
-  val CreationTime: ITimestamp = js.native
+  val CreationTime: ITimestamp
   
-  var Description: String = js.native
+  var Description: String
   
-  var ExpirationTime: ITimestamp = js.native
+  var ExpirationTime: ITimestamp
   
-  var FileVer: IFileVer = js.native
+  var FileVer: IFileVer
   
-  var ObjVer: IObjVer = js.native
+  var ObjVer: IObjVer
   
-  def Set(ObjVer: IObjVer, FileVer: IFileVer): Unit = js.native
+  def Set(ObjVer: IObjVer, FileVer: IFileVer): Unit
 }
 object ISharedLinkInfo {
   

@@ -11,8 +11,8 @@ Screen-reader-friendly alert messages.
 | Full name          | @reach/alert |
 | Keywords           | - |
 | # releases         | 38 |
-| # dependents       | 24 |
-| # downloads        | 2397678 |
+| # dependents       | 33 |
+| # downloads        | 7043876 |
 | # stars            | 0 |
 
 ## Links

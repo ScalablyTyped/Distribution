@@ -2,41 +2,39 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFlowExecutionsRequest extends StObject {
   
   /**
     * The date and time of the latest flow execution to return.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of a flow execution.
     */
-  var flowExecutionId: js.UndefOr[FlowExecutionId] = js.native
+  var flowExecutionId: js.UndefOr[FlowExecutionId] = js.undefined
   
   /**
     * The maximum number of results to return in the response.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The string that specifies the next page of results. Use this when you're paginating results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The date and time of the earliest flow execution to return.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the system instance that contains the flow.
     */
-  var systemInstanceId: Urn = js.native
+  var systemInstanceId: Urn
 }
 object SearchFlowExecutionsRequest {
   

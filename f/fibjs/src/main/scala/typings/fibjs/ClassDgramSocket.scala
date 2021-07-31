@@ -2,11 +2,12 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassDgramSocket extends ClassEventEmitter {
+trait ClassDgramSocket
+  extends StObject
+     with ClassEventEmitter {
   
   /**
     * 
@@ -37,9 +38,9 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * @async
     */
   def bind(opts: js.Object): Unit = js.native
-  def bind(port: js.UndefOr[scala.Nothing], addr: String): Unit = js.native
   def bind(port: Double): Unit = js.native
   def bind(port: Double, addr: String): Unit = js.native
+  def bind(port: Unit, addr: String): Unit = js.native
   
   /**
     * 

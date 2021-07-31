@@ -2,39 +2,37 @@ package typings.watsonDeveloperCloud.v3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Profile. */
-@js.native
 trait Profile extends StObject {
   
   /** For JSON content that is timestamped, detailed results about the social behavior disclosed by the input in terms of temporal characteristics. The results include information about the distribution of the content over the days of the week and the hours of the day. */
-  var behavior: js.UndefOr[js.Array[Behavior]] = js.native
+  var behavior: js.UndefOr[js.Array[Behavior]] = js.undefined
   
   /** If the **consumption_preferences** parameter is `true`, detailed results for each category of consumption preferences. Each element of the array provides information inferred from the input text for the individual preferences of that category. */
-  var consumption_preferences: js.UndefOr[js.Array[ConsumptionPreferencesCategory]] = js.native
+  var consumption_preferences: js.UndefOr[js.Array[ConsumptionPreferencesCategory]] = js.undefined
   
   /** Detailed results for the Needs characteristics inferred from the input text. */
-  var needs: js.Array[Trait] = js.native
+  var needs: js.Array[Trait]
   
   /** A recursive array of `Trait` objects that provides detailed results for the Big Five personality characteristics (dimensions and facets) inferred from the input text. */
-  var personality: js.Array[Trait] = js.native
+  var personality: js.Array[Trait]
   
   /** The language model that was used to process the input. */
-  var processed_language: String = js.native
+  var processed_language: String
   
   /** Detailed results for the Values characteristics inferred from the input text. */
-  var values: js.Array[Trait] = js.native
+  var values: js.Array[Trait]
   
   /** Warning messages associated with the input text submitted with the request. The array is empty if the input generated no warnings. */
-  var warnings: js.Array[Warning] = js.native
+  var warnings: js.Array[Warning]
   
   /** The number of words from the input that were used to produce the profile. */
-  var word_count: Double = js.native
+  var word_count: Double
   
   /** When guidance is appropriate, a string that provides a message that indicates the number of words found and where that value falls in the range of required or suggested number of words. */
-  var word_count_message: js.UndefOr[String] = js.native
+  var word_count_message: js.UndefOr[String] = js.undefined
 }
 object Profile {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectorVersionSummary extends StObject {
   
   /**
     * The detector version description. 
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The detector version ID. 
     */
-  var detectorVersionId: js.UndefOr[nonEmptyString] = js.native
+  var detectorVersionId: js.UndefOr[nonEmptyString] = js.undefined
   
   /**
     * Timestamp of when the detector version was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The detector version status. 
     */
-  var status: js.UndefOr[DetectorVersionStatus] = js.native
+  var status: js.UndefOr[DetectorVersionStatus] = js.undefined
 }
 object DetectorVersionSummary {
   

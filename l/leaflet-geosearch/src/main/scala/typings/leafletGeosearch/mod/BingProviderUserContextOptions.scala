@@ -2,25 +2,23 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BingProviderUserContextOptions extends StObject {
   
-  var ul: js.UndefOr[String] = js.native
+  var ul: js.UndefOr[String] = js.undefined
   
-  var umv: js.UndefOr[String] = js.native
+  var umv: js.UndefOr[String] = js.undefined
   
-  var ur: js.UndefOr[String] = js.native
+  var ur: js.UndefOr[String] = js.undefined
   
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
   
-  var userLocation: js.UndefOr[String] = js.native
+  var userLocation: js.UndefOr[String] = js.undefined
   
-  var userMapView: js.UndefOr[String] = js.native
+  var userMapView: js.UndefOr[String] = js.undefined
   
-  var userRegion: js.UndefOr[String] = js.native
+  var userRegion: js.UndefOr[String] = js.undefined
 }
 object BingProviderUserContextOptions {
   

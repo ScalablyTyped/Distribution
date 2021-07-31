@@ -2,24 +2,22 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details for the tool used to call the API.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2ToolDetails extends StObject {
   
   /**
     * Name of the tool, e.g. bazel.
     */
-  var toolName: js.UndefOr[String] = js.native
+  var toolName: js.UndefOr[String] = js.undefined
   
   /**
     * Version of the tool used for the request, e.g. 5.0.3.
     */
-  var toolVersion: js.UndefOr[String] = js.native
+  var toolVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ToolDetails {
   

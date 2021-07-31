@@ -2,31 +2,29 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventLoopDelay extends StObject {
   
   /**
     * Max concurrent requests.
     */
-  var concurrent: Double = js.native
+  var concurrent: Double
   
   /**
     * event loop delay milliseconds.
     */
-  var eventLoopDelay: Double = js.native
+  var eventLoopDelay: Double
   
   /**
     * V8 heap usage.
     */
-  var heapUsed: Double = js.native
+  var heapUsed: Double
   
   /**
     * RSS memory usage.
     */
-  var rss: Double = js.native
+  var rss: Double
 }
 object EventLoopDelay {
   

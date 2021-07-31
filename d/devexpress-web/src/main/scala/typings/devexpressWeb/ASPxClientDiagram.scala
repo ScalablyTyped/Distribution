@@ -2,94 +2,94 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxDiagram control.
   */
-@js.native
-trait ASPxClientDiagram extends ASPxClientControl {
+trait ASPxClientDiagram
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
-  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientDiagram]] = js.native
+  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientDiagram]]
   
   /**
     * Fires after a diagram model's data (mapped to a data source) is changed and the client-server synchronization starts to apply the change on the server.
     */
-  var BeginSynchronization: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]] = js.native
+  var BeginSynchronization: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]
   
   /**
     * Fires on the client if any unhandled server error occurs during server-side processing of a callback sent by the ASPxClientDiagram.
     */
-  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientDiagram]] = js.native
+  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientDiagram]]
   
   /**
     * Allows you to create a template for custom shapes.
     */
-  var CustomShapeCreateTemplate: ASPxClientEvent[ASPxClientDiagramCustomShapeCreateTemplateEventHandler[ASPxClientDiagram]] = js.native
+  var CustomShapeCreateTemplate: ASPxClientEvent[ASPxClientDiagramCustomShapeCreateTemplateEventHandler[ASPxClientDiagram]]
   
   /**
     * Fires when the diagram's data is changed.
     */
-  var DiagramChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]] = js.native
+  var DiagramChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]
   
   /**
     * Occurs on the client side after a callback's server-side processing has been completed.
     */
-  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientDiagram]] = js.native
+  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientDiagram]]
   
   /**
     * Fires after a diagram model's data change is applied to the server and server and client document models have been synchronized.
     */
-  var EndSynchronization: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]] = js.native
+  var EndSynchronization: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]
   
   /**
     * Exports the diagram data in JSON format.
     */
-  def Export(): String = js.native
+  def Export(): String
   
   /**
     * Exports the diagram to an image format.
     * @param format The image format. Acceptable values: svg, png, jpg.
     * @param callback A function to be executed after a diagram image is prepared and allows you to save the image.
     */
-  def ExportTo(format: String, callback: js.Function1[/* arg */ String, Unit]): Unit = js.native
+  def ExportTo(format: String, callback: js.Function1[/* arg */ String, Unit]): Unit
   
   /**
     * Imports the diagram data.
     * @param data The diagram data in JSON format.
     */
-  def Import(data: String): Unit = js.native
+  def Import(data: String): Unit
   
   /**
     * Fires after a shape or connector is clicked.
     */
-  var ItemClick: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]] = js.native
+  var ItemClick: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]]
   
   /**
     * Fires after a shape or connector is double-clicked.
     */
-  var ItemDblClick: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]] = js.native
+  var ItemDblClick: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]]
   
   /**
     * Fires after the selection changes in the Diagram.
     */
-  var SelectionChanged: ASPxClientEvent[ASPxClientDiagramSelectionChangedEventHandler[ASPxClientDiagram]] = js.native
+  var SelectionChanged: ASPxClientEvent[ASPxClientDiagramSelectionChangedEventHandler[ASPxClientDiagram]]
   
   /**
     * Allows you to enable/disable full-screen mode.
     * @param fullscreen true to activate full-screen mode; false to deactivate full-screen mode.
     */
-  def SetFullscreenMode(fullscreen: Boolean): Unit = js.native
+  def SetFullscreenMode(fullscreen: Boolean): Unit
   
   /**
     * Allows you to enable/disable read-only mode.
     * @param readOnly true to make the diagram read-only; otherwise, false.
     */
-  def SetReadOnly(readOnly: Boolean): Unit = js.native
+  def SetReadOnly(readOnly: Boolean): Unit
 }
 object ASPxClientDiagram {
   

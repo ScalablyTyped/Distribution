@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleLoaderCheckMod extends Shortcut {
@@ -15,10 +14,11 @@ object circleLoaderCheckMod extends Shortcut {
   @js.native
   val default: SFC[CircleLoaderCheckProps] = js.native
   
-  @js.native
-  trait CircleLoaderCheckProps extends SVGAttributes[SVGElement] {
+  trait CircleLoaderCheckProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object CircleLoaderCheckProps {
     

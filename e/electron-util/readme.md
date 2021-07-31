@@ -10,9 +10,9 @@ Useful utilities for Electron apps and modules
 | ------------------ | :-------------: |
 | Full name          | electron-util |
 | Keywords           | electron, app, dev, development, utility, utilities, util, utils, useful |
-| # releases         | 14 |
-| # dependents       | 37 |
-| # downloads        | 186022 |
+| # releases         | 10 |
+| # dependents       | 44 |
+| # downloads        | 311769 |
 | # stars            | 1 |
 
 ## Links

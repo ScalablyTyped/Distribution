@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1ContainerSpec extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait GoogleCloudMlV1ContainerSpec extends StObject {
     * string is used unchanged. To avoid variable expansion, you can escape this syntax with `$$`; for example: $$(VARIABLE_NAME) This field corresponds to the `args` field of the
     * [Kubernetes Containers v1 core API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#container-v1-core).
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Immutable. Specifies the command that runs when the container starts. This overrides the container's [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#entrypoint).
@@ -37,7 +35,7 @@ trait GoogleCloudMlV1ContainerSpec extends StObject {
     * used unchanged. To avoid variable expansion, you can escape this syntax with `$$`; for example: $$(VARIABLE_NAME) This field corresponds to the `command` field of the [Kubernetes
     * Containers v1 core API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#container-v1-core).
     */
-  var command: js.UndefOr[js.Array[String]] = js.native
+  var command: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Immutable. List of environment variables to set in the container. After the container starts running, code running in the container can read these environment variables.
@@ -46,7 +44,7 @@ trait GoogleCloudMlV1ContainerSpec extends StObject {
     * variables in the example, then the expansion does not occur. This field corresponds to the `env` field of the [Kubernetes Containers v1 core
     * API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#container-v1-core).
     */
-  var env: js.UndefOr[js.Array[GoogleCloudMlV1EnvVar]] = js.native
+  var env: js.UndefOr[js.Array[GoogleCloudMlV1EnvVar]] = js.undefined
   
   /**
     * URI of the Docker image to be used as the custom container for serving predictions. This URI must identify [an image in Artifact Registry](/artifact-registry/docs/overview) and
@@ -60,7 +58,7 @@ trait GoogleCloudMlV1ContainerSpec extends StObject {
     * repository](/artifact-registry/docs/access-control#grant-repo) to your projet's AI Platform Google-managed service account. To learn about the requirements for the Docker image
     * itself, read [Custom container requirements](/ai-platform/prediction/docs/custom-container-requirements).
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable. List of ports to expose from the container. AI Platform Prediction sends any prediction requests that it receives to the first port on this list. AI Platform Prediction
@@ -68,7 +66,7 @@ trait GoogleCloudMlV1ContainerSpec extends StObject {
     * value: ```json [ { "containerPort": 8080 } ] ``` AI Platform Prediction does not use ports other than the first one listed. This field corresponds to the `ports` field of the
     * [Kubernetes Containers v1 core API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#container-v1-core).
     */
-  var ports: js.UndefOr[js.Array[GoogleCloudMlV1ContainerPort]] = js.native
+  var ports: js.UndefOr[js.Array[GoogleCloudMlV1ContainerPort]] = js.undefined
 }
 object GoogleCloudMlV1ContainerSpec {
   

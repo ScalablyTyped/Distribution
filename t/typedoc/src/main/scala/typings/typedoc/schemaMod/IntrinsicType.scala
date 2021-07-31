@@ -2,18 +2,18 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.IntrinsicType, 'type' | 'name'> */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ @js.native
-trait IntrinsicType extends SomeType {
+- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait IntrinsicType
+  extends StObject
+     with SomeType {
   
-  var name: ModelToObject[String] | String = js.native
+  var name: ModelToObject[String] | String
   
-  var `type`: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String) = js.native
+  var `type`: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String)
 }
 object IntrinsicType {
   

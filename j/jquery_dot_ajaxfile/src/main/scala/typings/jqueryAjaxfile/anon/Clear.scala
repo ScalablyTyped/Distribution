@@ -2,19 +2,17 @@ package typings.jqueryAjaxfile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clear extends StObject {
   
-  def clear(node: typings.std.Element): Boolean = js.native
+  def clear(node: typings.std.Element): Boolean
   
-  def get(node: typings.std.Element, key: String): js.Any = js.native
+  def get(node: typings.std.Element, key: String): js.Any
   
-  def getAll(node: typings.std.Element, createIfNotFound: Boolean): js.Any = js.native
+  def getAll(node: typings.std.Element, createIfNotFound: Boolean): js.Any
   
-  def set(node: typings.std.Element, key: String, value: js.Any): Unit = js.native
+  def set(node: typings.std.Element, key: String, value: js.Any): Unit
 }
 object Clear {
   

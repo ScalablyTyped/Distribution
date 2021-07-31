@@ -2,16 +2,14 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTextTranslationJobResponse extends StObject {
   
   /**
     * An object that contains the properties associated with an asynchronous batch translation job.
     */
-  var TextTranslationJobProperties: js.UndefOr[typings.awsSdk.translateMod.TextTranslationJobProperties] = js.native
+  var TextTranslationJobProperties: js.UndefOr[typings.awsSdk.translateMod.TextTranslationJobProperties] = js.undefined
 }
 object DescribeTextTranslationJobResponse {
   

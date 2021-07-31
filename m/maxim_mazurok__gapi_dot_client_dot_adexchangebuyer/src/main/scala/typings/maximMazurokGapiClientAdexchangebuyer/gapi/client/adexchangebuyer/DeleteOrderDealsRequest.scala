@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOrderDealsRequest extends StObject {
   
   /** List of deals to delete for a given proposal */
-  var dealIds: js.UndefOr[js.Array[String]] = js.native
+  var dealIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The last known proposal revision number. */
-  var proposalRevisionNumber: js.UndefOr[String] = js.native
+  var proposalRevisionNumber: js.UndefOr[String] = js.undefined
   
   /** Indicates an optional action to take on the proposal */
-  var updateAction: js.UndefOr[String] = js.native
+  var updateAction: js.UndefOr[String] = js.undefined
 }
 object DeleteOrderDealsRequest {
   

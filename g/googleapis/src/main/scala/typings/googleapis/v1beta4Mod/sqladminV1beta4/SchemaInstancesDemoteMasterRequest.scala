@@ -2,19 +2,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database demote master request.
   */
-@js.native
 trait SchemaInstancesDemoteMasterRequest extends StObject {
   
   /**
     * Contains details about the demoteMaster operation.
     */
-  var demoteMasterContext: js.UndefOr[SchemaDemoteMasterContext] = js.native
+  var demoteMasterContext: js.UndefOr[SchemaDemoteMasterContext] = js.undefined
 }
 object SchemaInstancesDemoteMasterRequest {
   

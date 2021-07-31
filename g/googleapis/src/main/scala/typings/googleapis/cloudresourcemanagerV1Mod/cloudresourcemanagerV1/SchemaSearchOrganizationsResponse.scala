@@ -2,13 +2,11 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response returned from the `SearchOrganizations` method.
   */
-@js.native
 trait SchemaSearchOrganizationsResponse extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaSearchOrganizationsResponse extends StObject {
     * the next page of results. If this field is empty, it indicates that this
     * response contains the last page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of Organizations that matched the search query, possibly
     * paginated.
     */
-  var organizations: js.UndefOr[js.Array[SchemaOrganization]] = js.native
+  var organizations: js.UndefOr[js.Array[SchemaOrganization]] = js.undefined
 }
 object SchemaSearchOrganizationsResponse {
   

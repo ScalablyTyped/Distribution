@@ -3,18 +3,17 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueDescriptionBoolean
-  extends AbstractValueDescription
+  extends StObject
+     with AbstractValueDescription
      with ValueDescription {
   
   @JSName("type")
-  var type_ValueDescriptionBoolean: boolean = js.native
+  var type_ValueDescriptionBoolean: boolean
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object ValueDescriptionBoolean {
   
@@ -22,11 +21,10 @@ object ValueDescriptionBoolean {
   def apply(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
-    `type`: boolean,
     value: Boolean
   ): ValueDescriptionBoolean = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[ValueDescriptionBoolean]
   }
   

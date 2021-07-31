@@ -6,10 +6,8 @@ import typings.activexDiskquota.activexDiskquotaStrings.pUser
 import typings.activexDiskquota.anon.PUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObject extends StObject {
   
   def on(
@@ -17,7 +15,7 @@ trait ActiveXObject extends StObject {
     event: OnUserNameChanged,
     argNames: js.Array[pUser],
     handler: js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ PUser, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object ActiveXObject {
   

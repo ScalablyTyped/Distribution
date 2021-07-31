@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledAuditMetadata extends StObject {
   
   /**
     * The day of the month on which the scheduled audit is run (if the frequency is "MONTHLY"). If days 29-31 are specified, and the month does not have that many days, the audit takes place on the "LAST" day of the month.
     */
-  var dayOfMonth: js.UndefOr[DayOfMonth] = js.native
+  var dayOfMonth: js.UndefOr[DayOfMonth] = js.undefined
   
   /**
     * The day of the week on which the scheduled audit is run (if the frequency is "WEEKLY" or "BIWEEKLY").
     */
-  var dayOfWeek: js.UndefOr[DayOfWeek] = js.native
+  var dayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
   
   /**
     * How often the scheduled audit occurs.
     */
-  var frequency: js.UndefOr[AuditFrequency] = js.native
+  var frequency: js.UndefOr[AuditFrequency] = js.undefined
   
   /**
     * The ARN of the scheduled audit.
     */
-  var scheduledAuditArn: js.UndefOr[ScheduledAuditArn] = js.native
+  var scheduledAuditArn: js.UndefOr[ScheduledAuditArn] = js.undefined
   
   /**
     * The name of the scheduled audit.
     */
-  var scheduledAuditName: js.UndefOr[ScheduledAuditName] = js.native
+  var scheduledAuditName: js.UndefOr[ScheduledAuditName] = js.undefined
 }
 object ScheduledAuditMetadata {
   

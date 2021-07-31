@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use this to have a random data crypto key generated. It will be discarded
   * after the request finishes.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2TransientCryptoKey extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaGooglePrivacyDlpV2TransientCryptoKey extends StObject {
     * name is not used in any way (repeating the api call will result in a
     * different key being generated).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TransientCryptoKey {
   

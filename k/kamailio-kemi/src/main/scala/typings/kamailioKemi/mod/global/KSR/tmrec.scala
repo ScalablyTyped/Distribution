@@ -2,32 +2,29 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tmrec {
   
-  @JSGlobal("KSR.tmrec.is_leap_year")
+  @JSGlobal("KSR.tmrec")
   @js.native
-  def isLeapYear(y: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.tmrec.is_leap_year_now")
-  @js.native
-  def isLeapYearNow(): Double = js.native
+  @scala.inline
+  def isLeapYear(y: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_leap_year")(y.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tmrec.match_timestamp")
-  @js.native
-  def matchTimestamp(rv: String, ti: Double): Double = js.native
+  @scala.inline
+  def isLeapYearNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_leap_year_now")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tmrec.time_period_match")
-  @js.native
-  def timePeriodMatch(period: String): Double = js.native
+  @scala.inline
+  def `match`(rv: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(rv.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tmrec.time_period_match_timestamp")
-  @js.native
-  def timePeriodMatchTimestamp(period: String, ti: Double): Double = js.native
+  @scala.inline
+  def matchTimestamp(rv: String, ti: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("match_timestamp")(rv.asInstanceOf[js.Any], ti.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tmrec.match")
-  @js.native
-  def `match`(rv: String): Double = js.native
+  @scala.inline
+  def timePeriodMatch(period: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time_period_match")(period.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def timePeriodMatchTimestamp(period: String, ti: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("time_period_match_timestamp")(period.asInstanceOf[js.Any], ti.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

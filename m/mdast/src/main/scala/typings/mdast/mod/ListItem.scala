@@ -3,28 +3,28 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.listItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListItem extends Parent {
+trait ListItem
+  extends StObject
+     with Parent {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   @JSName("children")
-  var children_ListItem: js.Array[BlockContent] = js.native
+  var children_ListItem: js.Array[BlockContent]
   
-  var spread: js.UndefOr[Boolean] = js.native
+  var spread: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_ListItem: listItem = js.native
+  var type_ListItem: listItem
 }
 object ListItem {
   
   @scala.inline
-  def apply(children: js.Array[BlockContent], `type`: listItem): ListItem = {
+  def apply(children: js.Array[BlockContent]): ListItem = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("listItem")
     __obj.asInstanceOf[ListItem]
   }
   

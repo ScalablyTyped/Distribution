@@ -4,22 +4,22 @@ import typings.prosemirrorDevTools.anon.TypeofEditorState
 import typings.prosemirrorView.mod.EditorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("prosemirror-dev-tools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Wraps the EditorView instance in the applyDevTools.
     */
-  @JSImport("prosemirror-dev-tools", JSImport.Default)
-  @js.native
-  def default(view: EditorView[_]): Unit = js.native
-  @JSImport("prosemirror-dev-tools", JSImport.Default)
-  @js.native
-  def default(view: EditorView[_], options: ApplyDevToolsOptions): Unit = js.native
+  @scala.inline
+  def default(view: EditorView[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(view: EditorView[js.Any], options: ApplyDevToolsOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait ApplyDevToolsOptions extends StObject {
     
     /**
@@ -31,7 +31,7 @@ object mod {
       * snapshot due to EditorState classes were different in UMD bundle and in
       * actual client code.
       */
-    var EditorState: TypeofEditorState = js.native
+    var EditorState: TypeofEditorState
   }
   object ApplyDevToolsOptions {
     

@@ -2,23 +2,21 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Property dialog options object
   */
-@js.native
 trait IPropertyDialogOptions extends StObject {
   
   /*callback function*/
-  var callback: js.Function = js.native
+  var callback: js.Function
   
   /*editor to use to edit a given value and return on callback*/
-  var editor: String = js.native
+  var editor: String
   
   /*value sent to the property editor*/
-  var value: js.Object = js.native
+  var value: js.Object
 }
 object IPropertyDialogOptions {
   

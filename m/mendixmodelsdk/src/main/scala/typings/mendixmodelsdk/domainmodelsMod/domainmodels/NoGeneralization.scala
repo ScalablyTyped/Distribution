@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -94,9 +93,8 @@ object NoGeneralization {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NoGeneralization.create")
-  @js.native
-  def create(model: IModel): NoGeneralization = js.native
+  @scala.inline
+  def create(model: IModel): NoGeneralization = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NoGeneralization]
   
   /**
     * Creates and returns a new NoGeneralization instance in the SDK and on the server.
@@ -104,9 +102,8 @@ object NoGeneralization {
     * of the parent Entity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NoGeneralization.createIn")
-  @js.native
-  def createIn(container: Entity): NoGeneralization = js.native
+  @scala.inline
+  def createIn(container: Entity): NoGeneralization = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NoGeneralization]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NoGeneralization.structureTypeName")

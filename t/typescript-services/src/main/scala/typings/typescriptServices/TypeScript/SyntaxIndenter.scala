@@ -2,29 +2,29 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyntaxIndenter extends SyntaxRewriter {
+trait SyntaxIndenter
+  extends StObject
+     with SyntaxRewriter {
   
-  /* private */ def indentMultiLineComment(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
+  /* private */ def indentMultiLineComment(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any
   
-  /* private */ def indentSegment(segment: js.Any): js.Any = js.native
+  /* private */ def indentSegment(segment: js.Any): js.Any
   
-  /* private */ def indentSingleLineOrSkippedText(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
+  /* private */ def indentSingleLineOrSkippedText(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any
   
-  def indentTriviaList(triviaList: ISyntaxTriviaList): ISyntaxTriviaList = js.native
+  def indentTriviaList(triviaList: ISyntaxTriviaList): ISyntaxTriviaList
   
-  /* private */ def indentWhitespace(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
+  /* private */ def indentWhitespace(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any
   
-  var indentationAmount: js.Any = js.native
+  var indentationAmount: js.Any
   
-  var indentationTrivia: js.Any = js.native
+  var indentationTrivia: js.Any
   
-  var lastTriviaWasNewLine: js.Any = js.native
+  var lastTriviaWasNewLine: js.Any
   
-  var options: js.Any = js.native
+  var options: js.Any
 }
 object SyntaxIndenter {
   

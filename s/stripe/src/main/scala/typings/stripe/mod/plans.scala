@@ -17,7 +17,6 @@ import typings.stripe.stripeStrings.up
 import typings.stripe.stripeStrings.volume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plans {
@@ -26,104 +25,105 @@ object plans {
     * A subscription plan contains the pricing information for different products and feature levels on your site.
     * For example, you might have a $10/month plan for basic features and a different $20/month plan for premium features.
     */
-  @js.native
-  trait IPlan extends IResourceObject {
+  trait IPlan
+    extends StObject
+       with IResourceObject {
     
     /**
       * Whether the plan is currently available for new subscriptions.
       */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /**
       * Specifies a usage aggregation strategy for plans of `usage_type=metered`. Allowed values are `sum` for summing up all usage during a period, `last_during_period` for picking the last usage record reported within a period, `last_ever` for picking the last usage record ever (across period bounds) or `max` which picks the usage record with the maximum reported usage during a period. Defaults to `sum`.
       */
-    var aggregate_usage: sum | last_during_period | last_ever | max | Null = js.native
+    var aggregate_usage: sum | last_during_period | last_ever | max | Null
     
     /**
       * The amount in cents to be charged on the interval specified
       */
-    var amount: Double | Null = js.native
+    var amount: Double | Null
     
     /**
       * Same as `amount`, but contains a decimal value with at most 12 decimal places.
       */
-    var amount_decimal: String | Null = js.native
+    var amount_decimal: String | Null
     
     /**
       * Describes how to compute the price per period. Either `per_unit` or `tiered`. `per_unit` indicates that the fixed amount (specified in `amount`) will be charged per unit in `quantity` (for plans with `usage_type=licensed`), or per unit of total usage (for plans with `usage_type=metered`). `tiered` indicates that the unit pricing will be computed using a tiering strategy as defined using the `tiers` and `tiers_mode` attributes.
       */
-    var billing_scheme: per_unit | tiered = js.native
+    var billing_scheme: per_unit | tiered
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * One of `day`, `week`, `month` or `year`. The frequency with which a subscription should be billed.
       */
-    var interval: IntervalUnit = js.native
+    var interval: IntervalUnit
     
     /**
       * The number of intervals (specified in the `interval` property) between subscription billings. For example, `interval=month` and `interval_count=3` bills every 3 months.
       */
-    var interval_count: Double = js.native
+    var interval_count: Double
     
     /**
       * Has the value `true` if the object exists in live mode or the value `false` if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * A brief description of the plan, hidden from customers.
       */
-    var nickname: String | Null = js.native
+    var nickname: String | Null
     
     /**
       * Value is "plan"
       */
     @JSName("object")
-    var object_IPlan: plan = js.native
+    var object_IPlan: plan
     
     /**
       * The product whose pricing this plan determines. [Expandable]
       */
-    var product: js.UndefOr[String | IProduct] = js.native
+    var product: js.UndefOr[String | IProduct] = js.undefined
     
     /**
       * Each element represents a pricing tier. This parameter requires `billing_scheme` to be set to `tiered`. See also the documentation for `billing_scheme`.
       */
-    var tiers: js.Array[ITier] | Null = js.native
+    var tiers: js.Array[ITier] | Null
     
     /**
       * Defines if the tiering price should be `graduated` or `volume` based. In `volume`-based tiering, the maximum quantity within a period determines the per unit price, in `graduated` tiering pricing can successively change as the quantity grows.
       */
-    var tiers_mode: graduated | volume | Null = js.native
+    var tiers_mode: graduated | volume | Null
     
     /**
       * Apply a transformation to the reported usage or set quantity before computing the billed price. Cannot be combined with `tiers`.
       */
-    var transform_usage: ITransformUsage | Null = js.native
+    var transform_usage: ITransformUsage | Null
     
     /**
       * Default number of trial days when subscribing a customer to this plan using `trial_from_plan=true`.
       */
-    var trial_period_days: Double | Null = js.native
+    var trial_period_days: Double | Null
     
     /**
       * Configures how the quantity per period should be determined, can be either `metered` or `licensed`. `licensed` will automatically bill the `quantity` set for a plan when adding it to a subscription, `metered` will aggregate the total usage based on usage records. Defaults to `licensed`.
       */
-    var usage_type: metered | licensed = js.native
+    var usage_type: metered | licensed
   }
   object IPlan {
     
@@ -138,11 +138,10 @@ object plans {
       interval_count: Double,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: plan,
       usage_type: metered | licensed
     ): IPlan = {
-      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], interval_count = interval_count.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], usage_type = usage_type.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], interval_count = interval_count.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], usage_type = usage_type.asInstanceOf[js.Any], aggregate_usage = null, amount = null, amount_decimal = null, nickname = null, tiers = null, tiers_mode = null, transform_usage = null, trial_period_days = null)
+      __obj.updateDynamic("object")("plan")
       __obj.asInstanceOf[IPlan]
     }
     
@@ -238,98 +237,99 @@ object plans {
     }
   }
   
-  @js.native
-  trait IPlanCreationOptions extends IDataOptionsWithMetadata {
+  trait IPlanCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Whether the plan is currently available for new subscriptions. Defaults to `true`.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a usage aggregation strategy for plans of `usage_type=metered`. Allowed values are `sum` for summing up all usage during a period, `last_during_period` for picking the last usage record reported within a period, `last_ever` for picking the last usage record ever (across period bounds) or `max` which picks the usage record with the maximum reported usage during a period. Defaults to `sum`.
       */
-    var aggregate_usage: js.UndefOr[sum | last_during_period | last_ever | max] = js.native
+    var aggregate_usage: js.UndefOr[sum | last_during_period | last_ever | max] = js.undefined
     
     /**
       * A positive integer in cents (or 0 for a free plan) representing how much to charge on a recurring basis.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * Same as `amount`, but accepts a decimal value with at most 12 decimal places. Only one of `amount` and `amount_decimal` can be set.
       */
-    var amount_decimal: js.UndefOr[Double] = js.native
+    var amount_decimal: js.UndefOr[Double] = js.undefined
     
     /**
       * Describes how to compute the price per period. Either `per_unit` or `tiered`. `per_unit` indicates that the fixed amount (specified in `amount`) will be charged per unit in `quantity` (for plans with `usage_type=licensed`), or per unit of total usage (for plans with `usage_type=metered`). `tiered` indicates that the unit pricing will be computed using a tiering strategy as defined using the `tiers` and `tiers_mode` attributes.
       */
-    var billing_scheme: js.UndefOr[per_unit | tiered] = js.native
+    var billing_scheme: js.UndefOr[per_unit | tiered] = js.undefined
     
     /**
       * 3-letter ISO code for currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * An identifier randomly generated by Stripe. Used to identify this plan when subscribing a customer. You can optionally override this
       * ID, but the ID must be unique across all plans in your Stripe account. You can, however, use the same plan ID in both live and test
       * modes.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies billing frequency. Either "day", "week", "month" or "year".
       */
-    var interval: IntervalUnit = js.native
+    var interval: IntervalUnit
     
     /**
       * The number of intervals between each subscription billing. For example, interval=month and interval_count=3 bills every 3 months.
       * Maximum of one year interval allowed (1 year, 12 months, or 52 weeks).
       */
-    var interval_count: js.UndefOr[Double] = js.native
+    var interval_count: js.UndefOr[Double] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
     @JSName("metadata")
-    var metadata_IPlanCreationOptions: js.UndefOr[IMetadata] = js.native
+    var metadata_IPlanCreationOptions: js.UndefOr[IMetadata] = js.undefined
     
     /**
       * A brief description of the plan, hidden from customers.
       */
-    var nickname: js.UndefOr[String] = js.native
+    var nickname: js.UndefOr[String] = js.undefined
     
     /**
       * The product whose pricing the created plan will represent. This can either be the ID of an existing product, or a dictionary containing
       * fields used to create a service product.
       */
-    var product: String | IPlanCreationOptionsProductHash = js.native
+    var product: String | IPlanCreationOptionsProductHash
     
     /**
       * Each element represents a pricing tier. This parameter requires `billing_scheme` to be set to `tiered`. See also the documentation for `billing_scheme`.
       */
-    var tiers: js.UndefOr[js.Array[ITier]] = js.native
+    var tiers: js.UndefOr[js.Array[ITier]] = js.undefined
     
     /**
       * Defines if the tiering price should be `graduated` or `volume` based. In `volume`-based tiering, the maximum quantity within a period determines the per unit price, in `graduated` tiering pricing can successively change as the quantity grows.
       */
-    var tiers_mode: js.UndefOr[graduated | volume] = js.native
+    var tiers_mode: js.UndefOr[graduated | volume] = js.undefined
     
     /**
       * Apply a transformation to the reported usage or set quantity before computing the billed price. Cannot be combined with `tiers`.
       */
-    var transform_usage: js.UndefOr[ITransformUsage] = js.native
+    var transform_usage: js.UndefOr[ITransformUsage] = js.undefined
     
     /**
       * Default number of trial days when subscribing a customer to this plan using `trial_from_plan=true`.
       */
-    var trial_period_days: js.UndefOr[Double] = js.native
+    var trial_period_days: js.UndefOr[Double] = js.undefined
     
     /**
       * Configures how the quantity per period should be determined, can be either `metered` or `licensed`. `licensed` will automatically bill the `quantity` set for a plan when adding it to a subscription, `metered` will aggregate the total usage based on usage records. Defaults to `licensed`.
       */
-    var usage_type: js.UndefOr[metered | licensed] = js.native
+    var usage_type: js.UndefOr[metered | licensed] = js.undefined
   }
   object IPlanCreationOptions {
     
@@ -440,31 +440,30 @@ object plans {
     }
   }
   
-  @js.native
   trait IPlanCreationOptionsProductHash extends StObject {
     
     /**
       * The identifier for the product. Must be unique. If not provided, an identifier will be randomly generated.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Set of key/value pairs that you can attach to an object. It can be useful for storing additional information about the object in a structured
       * format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata.
       */
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
     
     /**
       * The product’s name, meant to be displayable to the customer.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An arbitrary string to be displayed on your customer’s credit card statement. This may be up to 22 characters. The statement description may not
       * include <>”’ characters, and will appear on your customer’s statement in capital letters. Non-ASCII characters are automatically stripped. While
       * most banks display this information consistently, some may display it incorrectly or not at all.
       */
-    var statement_descriptor: js.UndefOr[String] = js.native
+    var statement_descriptor: js.UndefOr[String] = js.undefined
   }
   object IPlanCreationOptionsProductHash {
     
@@ -500,29 +499,30 @@ object plans {
     }
   }
   
-  @js.native
-  trait IPlanUpdateOptions extends IDataOptionsWithMetadata {
+  trait IPlanUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * Whether the plan is currently available for new subscriptions.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A brief description of the plan, hidden from customers. This can be unset by updating the value to null and then saving.
       */
-    var nickname: js.UndefOr[String] = js.native
+    var nickname: js.UndefOr[String] = js.undefined
     
     /**
       * The product the plan belongs to. Note that after updating, statement descriptors and line items of the plan in active subscriptions will
       * be affected.
       */
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
     
     /**
       * Default number of trial days when subscribing a customer to this plan using `trial_from_plan=true`.
       */
-    var trial_period_days: js.UndefOr[Double] = js.native
+    var trial_period_days: js.UndefOr[Double] = js.undefined
   }
   object IPlanUpdateOptions {
     
@@ -561,39 +561,38 @@ object plans {
     }
   }
   
-  @js.native
   trait ITier extends StObject {
     
     /**
       * Price for the entire tier.
       */
-    var flat_amount: js.UndefOr[Double | Null] = js.native
+    var flat_amount: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Same as `flat_amount`, but contains a decimal value with at most 12 decimal places.
       */
-    var flat_amount_decimal: js.UndefOr[Double | Null] = js.native
+    var flat_amount_decimal: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Per unit price for units relevant to the tier.
       */
-    var unit_amount: js.UndefOr[Double | Null] = js.native
+    var unit_amount: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Same as `unit_amount`, but contains a decimal value with at most 12 decimal places.
       */
-    var unit_amount_decimal: js.UndefOr[Double | Null] = js.native
+    var unit_amount_decimal: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Up to and including to this quantity will be contained in the tier.
       */
-    var up_to: Double | Null | inf = js.native
+    var up_to: Double | Null | inf
   }
   object ITier {
     
     @scala.inline
     def apply(): ITier = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(up_to = null)
       __obj.asInstanceOf[ITier]
     }
     
@@ -644,18 +643,17 @@ object plans {
     }
   }
   
-  @js.native
   trait ITransformUsage extends StObject {
     
     /**
       * Divide usage by this number.
       */
-    var divide_by: Double = js.native
+    var divide_by: Double
     
     /**
       * After division, either round the result `up` or `down`.
       */
-    var round: up | down = js.native
+    var round: up | down
   }
   object ITransformUsage {
     

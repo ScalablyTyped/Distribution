@@ -10,9 +10,9 @@ A parameter verify tools.
 | ------------------ | :-------------: |
 | Full name          | parameter |
 | Keywords           | parameter, verify, univ |
-| # releases         | 7 |
-| # dependents       | 31 |
-| # downloads        | 138564 |
+| # releases         | 2 |
+| # dependents       | 38 |
+| # downloads        | 215453 |
 | # stars            | 6 |
 
 ## Links

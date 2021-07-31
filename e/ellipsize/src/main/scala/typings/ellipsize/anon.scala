@@ -2,29 +2,27 @@ package typings.ellipsize
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Chars extends StObject {
     
     /**
       * after this char(s) the text can be ellipsized and the ellipse
       * rendered. (default: [' ', '-'])
       */
-    var chars: js.UndefOr[js.Array[String]] = js.native
+    var chars: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * ellipse element (default: '...')
       */
-    var ellipse: js.UndefOr[String] = js.native
+    var ellipse: js.UndefOr[String] = js.undefined
     
     /**
       * truncate the text or not (default: true)
       */
-    var truncate: js.UndefOr[Boolean] = js.native
+    var truncate: js.UndefOr[Boolean] = js.undefined
   }
   object Chars {
     

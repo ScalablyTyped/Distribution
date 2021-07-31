@@ -2,33 +2,31 @@ package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAudience extends StObject {
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The access control list entry.
     */
-  var item: js.UndefOr[SchemaPlusDomainsAclentryResource] = js.native
+  var item: js.UndefOr[SchemaPlusDomainsAclentryResource] = js.undefined
   
   /**
     * Identifies this resource as an audience. Value:
     * &quot;plus#audience&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The number of people in this circle. This only applies if entity_type is
     * CIRCLE.
     */
-  var memberCount: js.UndefOr[Double] = js.native
+  var memberCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The circle members&#39; visibility as chosen by the owner of the circle.
@@ -38,7 +36,7 @@ trait SchemaAudience extends StObject {
     * to a limited audience.  - &quot;private&quot; - Members are visible to
     * the owner only.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaAudience {
   

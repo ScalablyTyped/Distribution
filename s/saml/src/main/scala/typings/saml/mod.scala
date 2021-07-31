@@ -5,38 +5,40 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object Saml11 {
     
-    @JSImport("saml", "Saml11.create")
+    @JSImport("saml", "Saml11")
     @js.native
-    def create(opts: SamlOpts): js.Any = js.native
-    @JSImport("saml", "Saml11.create")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(opts: SamlOpts): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
     def create(
       opts: SamlOpts,
-      cb: js.Function3[/* err */ Error | Null, /* result */ js.Array[_], /* proofSecret */ Buffer, Unit]
-    ): js.Any = js.native
+      cb: js.Function3[/* err */ Error | Null, /* result */ js.Array[js.Any], /* proofSecret */ Buffer, Unit]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object Saml20 {
     
-    @JSImport("saml", "Saml20.create")
+    @JSImport("saml", "Saml20")
     @js.native
-    def create(opts: SamlOpts): js.Any = js.native
-    @JSImport("saml", "Saml20.create")
-    @js.native
-    def create(opts: SamlOpts, cb: js.Function2[/* err */ Error | Null, /* signed */ String, Unit]): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(opts: SamlOpts): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def create(opts: SamlOpts, cb: js.Function2[/* err */ Error | Null, /* signed */ String, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait KeyInfoProvider extends StObject {
     
-    def getKeyInfo(key: String, prefix: String): String = js.native
+    def getKeyInfo(key: String, prefix: String): String
   }
   object KeyInfoProvider {
     
@@ -56,63 +58,62 @@ object mod {
   
   type SamlAttributes = StringDictionary[String]
   
-  @js.native
   trait SamlOpts extends StObject {
     
-    var attributes: js.UndefOr[SamlAttributes] = js.native
+    var attributes: js.UndefOr[SamlAttributes] = js.undefined
     
-    var audiences: js.UndefOr[String | js.Array[String]] = js.native
+    var audiences: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var authnContextClassRef: js.UndefOr[String] = js.native
+    var authnContextClassRef: js.UndefOr[String] = js.undefined
     
-    var cert: Buffer = js.native
+    var cert: Buffer
     
-    var digestAlgorithm: js.UndefOr[String] = js.native
+    var digestAlgorithm: js.UndefOr[String] = js.undefined
     
-    var encryptionAlgorithm: js.UndefOr[String] = js.native
+    var encryptionAlgorithm: js.UndefOr[String] = js.undefined
     
-    var encryptionCert: js.UndefOr[Buffer] = js.native
+    var encryptionCert: js.UndefOr[Buffer] = js.undefined
     
-    var encryptionPublicKey: js.UndefOr[Buffer] = js.native
+    var encryptionPublicKey: js.UndefOr[Buffer] = js.undefined
     
-    var holderOfKeyProofSecret: js.UndefOr[String] = js.native
+    var holderOfKeyProofSecret: js.UndefOr[String] = js.undefined
     
-    var inResponseTo: js.UndefOr[String] = js.native
+    var inResponseTo: js.UndefOr[String] = js.undefined
     
-    var includeAttributeNameFormat: js.UndefOr[Boolean] = js.native
+    var includeAttributeNameFormat: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
     
-    var key: Buffer = js.native
+    var key: Buffer
     
-    var keyEncryptionAlgorighm: js.UndefOr[String] = js.native
+    var keyEncryptionAlgorighm: js.UndefOr[String] = js.undefined
     
     // sic https://github.com/auth0/node-xml-encryption/issues/17
-    var keyInfoProvider: js.UndefOr[KeyInfoProvider] = js.native
+    var keyInfoProvider: js.UndefOr[KeyInfoProvider] = js.undefined
     
-    var lifetimeInSeconds: js.UndefOr[Double] = js.native
+    var lifetimeInSeconds: js.UndefOr[Double] = js.undefined
     
-    var nameIdentifier: js.UndefOr[String] = js.native
+    var nameIdentifier: js.UndefOr[String] = js.undefined
     
-    var nameIdentifierFormat: js.UndefOr[String] = js.native
+    var nameIdentifierFormat: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var recipient: js.UndefOr[String] = js.native
+    var recipient: js.UndefOr[String] = js.undefined
     
-    var sessionIndex: js.UndefOr[String] = js.native
+    var sessionIndex: js.UndefOr[String] = js.undefined
     
-    var signatureAlgorithm: js.UndefOr[String] = js.native
+    var signatureAlgorithm: js.UndefOr[String] = js.undefined
     
-    var signatureNamespacePrefix: js.UndefOr[String] = js.native
+    var signatureNamespacePrefix: js.UndefOr[String] = js.undefined
     
-    var subjectConfirmationMethod: js.UndefOr[String] = js.native
+    var subjectConfirmationMethod: js.UndefOr[String] = js.undefined
     
-    var typedAttributes: js.UndefOr[Boolean] = js.native
+    var typedAttributes: js.UndefOr[Boolean] = js.undefined
     
-    var uid: js.UndefOr[String] = js.native
+    var uid: js.UndefOr[String] = js.undefined
     
-    var xpathToNodeBeforeSignature: js.UndefOr[String] = js.native
+    var xpathToNodeBeforeSignature: js.UndefOr[String] = js.undefined
   }
   object SamlOpts {
     

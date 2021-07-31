@@ -3,7 +3,6 @@ package typings.cordovaPluginContacts
 import typings.cordovaPluginContacts.anon.Addresses
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,18 +38,18 @@ trait Contacts extends StObject {
   def find(
     fields: js.Array[String],
     onSuccess: js.Function1[/* contacts */ js.Array[Contact], Unit],
-    onError: js.UndefOr[scala.Nothing],
-    options: ContactFindOptions
-  ): Unit = js.native
-  def find(
-    fields: js.Array[String],
-    onSuccess: js.Function1[/* contacts */ js.Array[Contact], Unit],
     onError: js.Function1[/* error */ ContactError, Unit]
   ): Unit = js.native
   def find(
     fields: js.Array[String],
     onSuccess: js.Function1[/* contacts */ js.Array[Contact], Unit],
     onError: js.Function1[/* error */ ContactError, Unit],
+    options: ContactFindOptions
+  ): Unit = js.native
+  def find(
+    fields: js.Array[String],
+    onSuccess: js.Function1[/* contacts */ js.Array[Contact], Unit],
+    onError: Unit,
     options: ContactFindOptions
   ): Unit = js.native
   

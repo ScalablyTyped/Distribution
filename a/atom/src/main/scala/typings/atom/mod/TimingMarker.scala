@@ -2,15 +2,13 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimingMarker extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var time: Double = js.native
+  var time: Double
 }
 object TimingMarker {
   

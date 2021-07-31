@@ -2,21 +2,19 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayRegistrationStateReason extends StObject {
   
   /**
     * The code for the state reason.
     */
-  var Code: js.UndefOr[TransitGatewayRegistrationState] = js.native
+  var Code: js.UndefOr[TransitGatewayRegistrationState] = js.undefined
   
   /**
     * The message for the state reason.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayRegistrationStateReason {
   

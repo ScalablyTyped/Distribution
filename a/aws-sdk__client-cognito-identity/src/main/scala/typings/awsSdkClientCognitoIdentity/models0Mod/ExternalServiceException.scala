@@ -6,40 +6,38 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalServiceException
-  extends SmithyException
+  extends StObject
+     with SmithyException
      with MetadataBearer {
   
   @JSName("$fault")
-  var $fault_ExternalServiceException: client = js.native
+  var $fault_ExternalServiceException: client
   
   /**
     * <p>The message returned by an ExternalServiceException</p>
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   @JSName("name")
-  var name_ExternalServiceException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ExternalServiceException = js.native
+  var name_ExternalServiceException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ExternalServiceException
 }
 object ExternalServiceException {
   
   @scala.inline
-  def apply(
-    $fault: client,
-    $metadata: ResponseMetadata,
-    name: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ExternalServiceException
-  ): ExternalServiceException = {
-    val __obj = js.Dynamic.literal($fault = $fault.asInstanceOf[js.Any], $metadata = $metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply($metadata: ResponseMetadata): ExternalServiceException = {
+    val __obj = js.Dynamic.literal($fault = "client", $metadata = $metadata.asInstanceOf[js.Any], name = "ExternalServiceException")
     __obj.asInstanceOf[ExternalServiceException]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ExternalServiceException.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ExternalServiceException")
   @js.native
-  def filterSensitiveLog(obj: ExternalServiceException): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: ExternalServiceException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class ExternalServiceExceptionMutableBuilder[Self <: ExternalServiceException] (val x: Self) extends AnyVal {

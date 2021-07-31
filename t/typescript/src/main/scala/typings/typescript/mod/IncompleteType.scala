@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IncompleteType extends FlowType {
+trait IncompleteType
+  extends StObject
+     with FlowType {
   
-  var flags: TypeFlags = js.native
+  var flags: TypeFlags
   
-  var `type`: Type = js.native
+  var `type`: Type
 }
 object IncompleteType {
   

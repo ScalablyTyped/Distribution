@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubereporting/v1", "youtubereporting_v1.Resource$Jobs$Reports")
@@ -32,7 +31,7 @@ class ResourceJobsReports protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaReport] = js.native
   def get(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def get(params: ParamsResourceJobsReportsGet): GaxiosPromise[SchemaReport] = js.native
   def get(params: ParamsResourceJobsReportsGet, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def get(
@@ -68,7 +67,7 @@ class ResourceJobsReports protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListReportsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListReportsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListReportsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListReportsResponse] = js.native
   def list(params: ParamsResourceJobsReportsList): GaxiosPromise[SchemaListReportsResponse] = js.native
   def list(params: ParamsResourceJobsReportsList, callback: BodyResponseCallback[SchemaListReportsResponse]): Unit = js.native
   def list(

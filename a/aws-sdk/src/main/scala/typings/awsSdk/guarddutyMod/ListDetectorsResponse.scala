@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDetectorsResponse extends StObject {
   
   /**
     * A list of detector IDs.
     */
-  var DetectorIds: typings.awsSdk.guarddutyMod.DetectorIds = js.native
+  var DetectorIds: typings.awsSdk.guarddutyMod.DetectorIds
   
   /**
     * The pagination parameter to be used on the next list operation to retrieve more items.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListDetectorsResponse {
   

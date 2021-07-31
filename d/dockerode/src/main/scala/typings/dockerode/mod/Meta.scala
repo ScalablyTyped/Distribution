@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Meta extends StObject {
   
-  var CreatedAt: js.UndefOr[String] = js.native
+  var CreatedAt: js.UndefOr[String] = js.undefined
   
-  var UpdatedAt: js.UndefOr[String] = js.native
+  var UpdatedAt: js.UndefOr[String] = js.undefined
   
-  var Version: js.UndefOr[typings.dockerode.mod.Version] = js.native
+  var Version: js.UndefOr[typings.dockerode.mod.Version] = js.undefined
 }
 object Meta {
   

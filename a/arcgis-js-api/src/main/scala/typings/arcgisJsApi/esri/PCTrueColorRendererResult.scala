@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PCTrueColorRendererResult extends Object {
+trait PCTrueColorRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The renderer object configured to represent the true color of each point in the point cloud.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCTrueColorRendererResult)
     */
-  var renderer: PointCloudRGBRenderer = js.native
+  var renderer: PointCloudRGBRenderer
 }
 object PCTrueColorRendererResult {
   

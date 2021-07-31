@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.LoadNetworkResourceRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.LoadNetworkResourceResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeLoadNetworkResourceResponse extends StObject {
   
-  var paramsType: js.Array[LoadNetworkResourceRequest] = js.native
+  var paramsType: js.Array[LoadNetworkResourceRequest]
   
-  var returnType: LoadNetworkResourceResponse = js.native
+  var returnType: LoadNetworkResourceResponse
 }
 object ReturnTypeLoadNetworkResourceResponse {
   

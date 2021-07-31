@@ -2,42 +2,40 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFlowRequest extends StObject {
   
   /**
     * The Availability Zone that you want to create the flow in. These options are limited to the Availability Zones within the current AWS Region.
     */
-  var AvailabilityZone: js.UndefOr[string] = js.native
+  var AvailabilityZone: js.UndefOr[string] = js.undefined
   
   /**
     * The entitlements that you want to grant on a flow.
     */
-  var Entitlements: js.UndefOr[listOfGrantEntitlementRequest] = js.native
+  var Entitlements: js.UndefOr[listOfGrantEntitlementRequest] = js.undefined
   
   /**
     * The name of the flow.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * The outputs that you want to add to this flow.
     */
-  var Outputs: js.UndefOr[listOfAddOutputRequest] = js.native
+  var Outputs: js.UndefOr[listOfAddOutputRequest] = js.undefined
   
-  var Source: js.UndefOr[SetSourceRequest] = js.native
+  var Source: js.UndefOr[SetSourceRequest] = js.undefined
   
-  var SourceFailoverConfig: js.UndefOr[FailoverConfig] = js.native
+  var SourceFailoverConfig: js.UndefOr[FailoverConfig] = js.undefined
   
-  var Sources: js.UndefOr[listOfSetSourceRequest] = js.native
+  var Sources: js.UndefOr[listOfSetSourceRequest] = js.undefined
   
   /**
     * The VPC interfaces you want on the flow.
     */
-  var VpcInterfaces: js.UndefOr[listOfVpcInterfaceRequest] = js.native
+  var VpcInterfaces: js.UndefOr[listOfVpcInterfaceRequest] = js.undefined
 }
 object CreateFlowRequest {
   

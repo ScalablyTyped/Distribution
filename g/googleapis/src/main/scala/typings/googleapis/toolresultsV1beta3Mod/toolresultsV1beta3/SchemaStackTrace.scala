@@ -2,19 +2,17 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A stacktrace.
   */
-@js.native
 trait SchemaStackTrace extends StObject {
   
   /**
     * The stack trace message.  Required
     */
-  var exception: js.UndefOr[String] = js.native
+  var exception: js.UndefOr[String] = js.undefined
 }
 object SchemaStackTrace {
   

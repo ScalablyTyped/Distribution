@@ -2,45 +2,43 @@ package typings.clockpicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClockPickerOptions extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
-  var afterDone: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterDone: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var afterHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var afterHourSelect: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterHourSelect: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var afterShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var autoclose: js.UndefOr[Boolean] = js.native
+  var autoclose: js.UndefOr[Boolean] = js.undefined
   
-  var beforeDone: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeDone: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var beforeHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var beforeHourSelect: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeHourSelect: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var beforeShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var donetext: js.UndefOr[String] = js.native
+  var donetext: js.UndefOr[String] = js.undefined
   
-  var fromnow: js.UndefOr[Double] = js.native
+  var fromnow: js.UndefOr[Double] = js.undefined
   
-  var init: js.UndefOr[js.Function0[Unit]] = js.native
+  var init: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
-  var twelvehour: js.UndefOr[Boolean] = js.native
+  var twelvehour: js.UndefOr[Boolean] = js.undefined
   
-  var vibrate: js.UndefOr[Boolean] = js.native
+  var vibrate: js.UndefOr[Boolean] = js.undefined
 }
 object ClockPickerOptions {
   

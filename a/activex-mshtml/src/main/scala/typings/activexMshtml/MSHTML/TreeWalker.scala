@@ -2,38 +2,36 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeWalker extends StObject {
   
   @JSName("MSHTML.TreeWalker_typekey")
-  var MSHTMLDotTreeWalker_typekey: TreeWalker = js.native
+  var MSHTMLDotTreeWalker_typekey: TreeWalker
   
-  var currentNode: js.Any = js.native
+  var currentNode: js.Any
   
-  val expandEntityReferences: Boolean = js.native
+  val expandEntityReferences: Boolean
   
-  val filter: js.Any = js.native
+  val filter: js.Any
   
-  def firstChild(): js.Any = js.native
+  def firstChild(): js.Any
   
-  def lastChild(): js.Any = js.native
+  def lastChild(): js.Any
   
-  def nextNode(): js.Any = js.native
+  def nextNode(): js.Any
   
-  def nextSibling(): js.Any = js.native
+  def nextSibling(): js.Any
   
-  def parentNode(): js.Any = js.native
+  def parentNode(): js.Any
   
-  def previousNode(): js.Any = js.native
+  def previousNode(): js.Any
   
-  def previousSibling(): js.Any = js.native
+  def previousSibling(): js.Any
   
-  val root: js.Any = js.native
+  val root: js.Any
   
-  val whatToShow: Double = js.native
+  val whatToShow: Double
 }
 object TreeWalker {
   

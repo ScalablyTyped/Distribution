@@ -2,37 +2,37 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputBoxProperties extends ComponentProperties {
+trait InputBoxProperties
+  extends StObject
+     with ComponentProperties {
   
-  var ariaLive: js.UndefOr[String] = js.native
+  var ariaLive: js.UndefOr[String] = js.undefined
   
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
-  var inputType: js.UndefOr[InputBoxInputType] = js.native
+  var inputType: js.UndefOr[InputBoxInputType] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var multiline: js.UndefOr[Boolean] = js.native
+  var multiline: js.UndefOr[Boolean] = js.undefined
   
-  var placeHolder: js.UndefOr[String] = js.native
+  var placeHolder: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to stop key event propagation when enter is pressed in the input box. Leaving this as false
     * means the event will propagate up to any parents that have handlers (such as validate on Dialogs)
     */
-  var stopEnterPropagation: js.UndefOr[Boolean] = js.native
+  var stopEnterPropagation: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object InputBoxProperties {
   

@@ -8,15 +8,13 @@ import typings.dateFns.dateFnsNumbers.`5`
 import typings.dateFns.dateFnsNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale extends StObject {
   
-  var locale: js.UndefOr[typings.dateFns.mod.Locale] = js.native
+  var locale: js.UndefOr[typings.dateFns.mod.Locale] = js.undefined
   
-  var weekStartsOn: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+  var weekStartsOn: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
 }
 object Locale {
   

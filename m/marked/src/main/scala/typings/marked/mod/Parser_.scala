@@ -3,7 +3,6 @@ package typings.marked.mod
 import typings.marked.markedNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "Parser")
@@ -33,11 +32,13 @@ class Parser_ () extends StObject {
 }
 object Parser_ {
   
+  @JSImport("marked", "Parser")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  @JSImport("marked", "Parser.parse")
-  @js.native
-  def parse(src: TokensList): String = js.native
-  @JSImport("marked", "Parser.parse")
-  @js.native
-  def parse(src: TokensList, options: MarkedOptions): String = js.native
+  @scala.inline
+  def parse(src: TokensList): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def parse(src: TokensList, options: MarkedOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

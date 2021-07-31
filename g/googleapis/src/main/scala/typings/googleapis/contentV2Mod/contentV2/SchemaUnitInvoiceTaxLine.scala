@@ -2,27 +2,25 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUnitInvoiceTaxLine extends StObject {
   
   /**
     * [required] Tax amount for the tax type.
     */
-  var taxAmount: js.UndefOr[SchemaPrice] = js.native
+  var taxAmount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Optional name of the tax type. This should only be provided if taxType is
     * otherFeeTax.
     */
-  var taxName: js.UndefOr[String] = js.native
+  var taxName: js.UndefOr[String] = js.undefined
   
   /**
     * [required] Type of the tax.
     */
-  var taxType: js.UndefOr[String] = js.native
+  var taxType: js.UndefOr[String] = js.undefined
 }
 object SchemaUnitInvoiceTaxLine {
   

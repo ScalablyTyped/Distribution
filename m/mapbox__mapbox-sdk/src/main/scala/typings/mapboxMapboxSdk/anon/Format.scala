@@ -4,19 +4,17 @@ import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.json
 import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var format: js.UndefOr[json | png] = js.native
+  var format: js.UndefOr[json | png] = js.undefined
   
-  var highRes: js.UndefOr[Boolean] = js.native
+  var highRes: js.UndefOr[Boolean] = js.undefined
   
-  var ownerId: js.UndefOr[String] = js.native
+  var ownerId: js.UndefOr[String] = js.undefined
   
-  var styleId: String = js.native
+  var styleId: String
 }
 object Format {
   

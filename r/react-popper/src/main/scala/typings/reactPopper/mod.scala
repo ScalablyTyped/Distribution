@@ -27,10 +27,13 @@ import typings.std.NonNullable
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-popper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-popper", "Manager")
   @js.native
@@ -68,116 +71,96 @@ object mod {
     def this(props: ReferenceProps, context: js.Any) = this()
   }
   
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](
-    referenceElement: js.UndefOr[scala.Nothing],
-    popperElement: js.UndefOr[scala.Nothing],
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](
-    referenceElement: js.UndefOr[scala.Nothing],
-    popperElement: Null,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](referenceElement: js.UndefOr[scala.Nothing], popperElement: HTMLElement): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](
-    referenceElement: js.UndefOr[scala.Nothing],
-    popperElement: HTMLElement,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](
-    referenceElement: Null,
-    popperElement: js.UndefOr[scala.Nothing],
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
+  @scala.inline
+  def usePopper[Modifiers](): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")().asInstanceOf[Attributes]
+  @scala.inline
   def usePopper[Modifiers](
     referenceElement: Null,
     popperElement: Null,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](referenceElement: Null, popperElement: HTMLElement): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](
+    referenceElement: Null,
+    popperElement: Unit,
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](referenceElement: Null, popperElement: HTMLElement): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
   def usePopper[Modifiers](
     referenceElement: Null,
     popperElement: HTMLElement,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](referenceElement: VirtualElement): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
   def usePopper[Modifiers](
-    referenceElement: VirtualElement,
-    popperElement: js.UndefOr[scala.Nothing],
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
+    referenceElement: Unit,
+    popperElement: Null,
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](
+    referenceElement: Unit,
+    popperElement: Unit,
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](referenceElement: Unit, popperElement: HTMLElement): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](
+    referenceElement: Unit,
+    popperElement: HTMLElement,
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](referenceElement: VirtualElement): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any]).asInstanceOf[Attributes]
+  @scala.inline
   def usePopper[Modifiers](
     referenceElement: VirtualElement,
     popperElement: Null,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](referenceElement: VirtualElement, popperElement: HTMLElement): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](
+    referenceElement: VirtualElement,
+    popperElement: Unit,
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](referenceElement: VirtualElement, popperElement: HTMLElement): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
   def usePopper[Modifiers](
     referenceElement: VirtualElement,
     popperElement: HTMLElement,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](referenceElement: Element): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](
-    referenceElement: Element,
-    popperElement: js.UndefOr[scala.Nothing],
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](referenceElement: Element): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any]).asInstanceOf[Attributes]
+  @scala.inline
   def usePopper[Modifiers](
     referenceElement: Element,
     popperElement: Null,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
-  def usePopper[Modifiers](referenceElement: Element, popperElement: HTMLElement): Attributes = js.native
-  @JSImport("react-popper", "usePopper")
-  @js.native
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](
+    referenceElement: Element,
+    popperElement: Unit,
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
+  def usePopper[Modifiers](referenceElement: Element, popperElement: HTMLElement): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[Attributes]
+  @scala.inline
   def usePopper[Modifiers](
     referenceElement: Element,
     popperElement: HTMLElement,
-    options: OmitPartialOptionsmodifie with CreatePopper[Modifiers]
-  ): Attributes = js.native
+    options: OmitPartialOptionsmodifie & CreatePopper[Modifiers]
+  ): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopper")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Attributes]
   
-  @js.native
   trait ManagerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object ManagerProps {
     
@@ -200,18 +183,17 @@ object mod {
   
   type Modifier[Name, Options /* <: js.Object */] = (Partial[typings.popperjsCore.typesMod.Modifier[Name, Options]]) | StrictModifier[Name]
   
-  @js.native
   trait PopperArrowProps extends StObject {
     
-    var ref: Ref[_] = js.native
+    var ref: Ref[js.Any]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object PopperArrowProps {
     
     @scala.inline
     def apply(style: CSSProperties): PopperArrowProps = {
-      val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], ref = null)
       __obj.asInstanceOf[PopperArrowProps]
     }
     
@@ -219,10 +201,10 @@ object mod {
     implicit class PopperArrowPropsMutableBuilder[Self <: PopperArrowProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)
@@ -232,24 +214,23 @@ object mod {
     }
   }
   
-  @js.native
   trait PopperChildrenProps extends StObject {
     
-    var arrowProps: PopperArrowProps = js.native
+    var arrowProps: PopperArrowProps
     
-    def forceUpdate(): PartialState = js.native
+    def forceUpdate(): PartialState
     
-    var hasPopperEscaped: js.UndefOr[Boolean] = js.native
+    var hasPopperEscaped: js.UndefOr[Boolean] = js.undefined
     
-    var isReferenceHidden: js.UndefOr[Boolean] = js.native
+    var isReferenceHidden: js.UndefOr[Boolean] = js.undefined
     
-    var placement: Placement = js.native
+    var placement: Placement
     
-    var ref: Ref[_] = js.native
+    var ref: Ref[js.Any]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    def update(): js.Promise[Null | PartialState] = js.native
+    def update(): js.Promise[Null | PartialState]
   }
   object PopperChildrenProps {
     
@@ -261,7 +242,7 @@ object mod {
       style: CSSProperties,
       update: () => js.Promise[Null | PartialState]
     ): PopperChildrenProps = {
-      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], forceUpdate = js.Any.fromFunction0(forceUpdate), placement = placement.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
+      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], forceUpdate = js.Any.fromFunction0(forceUpdate), placement = placement.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], update = js.Any.fromFunction0(update), ref = null)
       __obj.asInstanceOf[PopperChildrenProps]
     }
     
@@ -290,10 +271,10 @@ object mod {
       def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)
@@ -306,22 +287,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PopperProps[Modifiers] extends StObject {
     
-    def children(props: PopperChildrenProps): ReactNode = js.native
+    def children(props: PopperChildrenProps): ReactNode
     
-    var innerRef: js.UndefOr[Ref[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var modifiers: js.UndefOr[js.Array[Modifier[Modifiers, js.Object]]] = js.native
+    var modifiers: js.UndefOr[js.Array[Modifier[Modifiers, js.Object]]] = js.undefined
     
-    var onFirstUpdate: js.UndefOr[js.Function1[/* state */ PartialState, Unit]] = js.native
+    var onFirstUpdate: js.UndefOr[js.Function1[/* state */ PartialState, Unit]] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var referenceElement: js.UndefOr[HTMLElement | VirtualElement] = js.native
+    var referenceElement: js.UndefOr[HTMLElement | VirtualElement] = js.undefined
     
-    var strategy: js.UndefOr[PositioningStrategy] = js.native
+    var strategy: js.UndefOr[PositioningStrategy] = js.undefined
   }
   object PopperProps {
     
@@ -332,16 +312,16 @@ object mod {
     }
     
     @scala.inline
-    implicit class PopperPropsMutableBuilder[Self <: PopperProps[_], Modifiers] (val x: Self with PopperProps[Modifiers]) extends AnyVal {
+    implicit class PopperPropsMutableBuilder[Self <: PopperProps[?], Modifiers] (val x: Self & PopperProps[Modifiers]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: PopperChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
@@ -386,19 +366,18 @@ object mod {
   
   type RefHandler = js.Function1[/* ref */ HTMLElement | Null, Unit]
   
-  @js.native
   trait ReferenceChildrenProps extends StObject {
     
     // React refs are supposed to be contravariant (allows a more general type to be passed rather than a more specific one)
     // However, Typescript currently can't infer that fact for refs
     // See https://github.com/microsoft/TypeScript/issues/30748 for more information
-    var ref: Ref[_] = js.native
+    var ref: Ref[js.Any]
   }
   object ReferenceChildrenProps {
     
     @scala.inline
     def apply(): ReferenceChildrenProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(ref = null)
       __obj.asInstanceOf[ReferenceChildrenProps]
     }
     
@@ -406,22 +385,21 @@ object mod {
     implicit class ReferenceChildrenPropsMutableBuilder[Self <: ReferenceChildrenProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)
     }
   }
   
-  @js.native
   trait ReferenceProps extends StObject {
     
-    def children(props: ReferenceChildrenProps): ReactNode = js.native
+    def children(props: ReferenceChildrenProps): ReactNode
     
-    var innerRef: js.UndefOr[Ref[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
   }
   object ReferenceProps {
     
@@ -438,10 +416,10 @@ object mod {
       def setChildren(value: ReferenceChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)

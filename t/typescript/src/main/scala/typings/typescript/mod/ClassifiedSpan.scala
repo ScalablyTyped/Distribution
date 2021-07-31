@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassifiedSpan extends StObject {
   
-  var classificationType: ClassificationTypeNames = js.native
+  var classificationType: ClassificationTypeNames
   
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object ClassifiedSpan {
   

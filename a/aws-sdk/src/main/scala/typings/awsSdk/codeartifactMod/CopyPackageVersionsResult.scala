@@ -2,21 +2,19 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyPackageVersionsResult extends StObject {
   
   /**
     *  A map of package versions that failed to copy and their error codes. The possible error codes are in the PackageVersionError data type. They are:     ALREADY_EXISTS     MISMATCHED_REVISION     MISMATCHED_STATUS     NOT_ALLOWED     NOT_FOUND     SKIPPED   
     */
-  var failedVersions: js.UndefOr[PackageVersionErrorMap] = js.native
+  var failedVersions: js.UndefOr[PackageVersionErrorMap] = js.undefined
   
   /**
     *  A list of the package versions that were successfully copied to your repository. 
     */
-  var successfulVersions: js.UndefOr[SuccessfulPackageVersionInfoMap] = js.native
+  var successfulVersions: js.UndefOr[SuccessfulPackageVersionInfoMap] = js.undefined
 }
 object CopyPackageVersionsResult {
   

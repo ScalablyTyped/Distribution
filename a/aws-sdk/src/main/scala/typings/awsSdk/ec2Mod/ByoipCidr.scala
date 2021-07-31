@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByoipCidr extends StObject {
   
   /**
     * The address range, in CIDR notation.
     */
-  var Cidr: js.UndefOr[String] = js.native
+  var Cidr: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the address range.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the address pool.
     */
-  var State: js.UndefOr[ByoipCidrState] = js.native
+  var State: js.UndefOr[ByoipCidrState] = js.undefined
   
   /**
     * Upon success, contains the ID of the address pool. Otherwise, contains an error message.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
 }
 object ByoipCidr {
   

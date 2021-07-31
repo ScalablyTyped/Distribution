@@ -2,24 +2,23 @@ package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait IColor
-    extends IRGB
+    extends StObject
+       with IRGB
        with IHSV {
     
     /** Hex string for the color (excluding alpha component), *not* prefixed with #. */
-    var hex: String = js.native
+    var hex: String
     
     /** CSS color string. If a hex value, it must be prefixed with #. */
-    var str: String = js.native
+    var str: String
     
     /** Transparency value, range 0 (opaque) to 100 (transparent). Usually assumed to be 0 if not specified. */
-    var t: js.UndefOr[Double] = js.native
+    var t: js.UndefOr[Double] = js.undefined
   }
   object IColor {
     
@@ -46,17 +45,16 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IHSL extends StObject {
     
     /** Hue, range 0-359. */
-    var h: Double = js.native
+    var h: Double
     
     /** Lightness, range 0-100. */
-    var l: Double = js.native
+    var l: Double
     
     /** Saturation, range 0-100. */
-    var s: Double = js.native
+    var s: Double
   }
   object IHSL {
     
@@ -80,17 +78,16 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IHSV extends StObject {
     
     /** Hue, range 0-359. */
-    var h: Double = js.native
+    var h: Double
     
     /** Saturation, range 0-100. */
-    var s: Double = js.native
+    var s: Double
     
     /** Value, range 0-100. */
-    var v: Double = js.native
+    var v: Double
   }
   object IHSV {
     
@@ -114,20 +111,19 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IRGB extends StObject {
     
     /** Alpha, range 0 (transparent)-100. Usually assumed to be 100 if not specified. */
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
     /** Blue, range 0-255. */
-    var b: Double = js.native
+    var b: Double
     
     /** Green, range 0-255. */
-    var g: Double = js.native
+    var g: Double
     
     /** Red, range 0-255. */
-    var r: Double = js.native
+    var r: Double
   }
   object IRGB {
     

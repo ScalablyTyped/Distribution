@@ -7,7 +7,6 @@ import typings.typeorm.mod.SelectQueryBuilder
 import typings.typeorm.optionsViewOptionsMod.ViewOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewViewMod {
@@ -20,7 +19,7 @@ object viewViewMod {
     /**
       * View definition.
       */
-    var expression: String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[_]]) = js.native
+    var expression: String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[js.Any]]) = js.native
     
     /**
       * Indicates if view is materialized.
@@ -36,11 +35,14 @@ object viewViewMod {
   /* static members */
   object View {
     
+    @JSImport("typeorm/schema-builder/view/View", "View")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates view from a given entity metadata.
       */
-    @JSImport("typeorm/schema-builder/view/View", "View.create")
-    @js.native
-    def create(entityMetadata: EntityMetadata, driver: Driver): View = js.native
+    @scala.inline
+    def create(entityMetadata: EntityMetadata, driver: Driver): View = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[View]
   }
 }

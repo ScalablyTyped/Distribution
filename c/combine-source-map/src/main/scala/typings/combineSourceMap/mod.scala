@@ -3,18 +3,22 @@ package typings.combineSourceMap
 import typings.combineSourceMap.anon.Source
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("combine-source-map", JSImport.Namespace)
   @js.native
-  class ^ () extends Combiner {
+  class ^ ()
+    extends StObject
+       with Combiner {
     def this(file: String) = this()
-    def this(file: js.UndefOr[scala.Nothing], sourceRoot: String) = this()
     def this(file: String, sourceRoot: String) = this()
+    def this(file: Unit, sourceRoot: String) = this()
   }
+  @JSImport("combine-source-map", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create a source map combiner that accepts multiple files, offsets them and then combines them into one source map.
@@ -22,25 +26,20 @@ object mod {
     * @param sourceRoot optional sourceRoot of the map to be generated
     * @return Combiner instance to which source maps can be added and later combined
     */
-  @JSImport("combine-source-map", "create")
-  @js.native
-  def create(): Combiner = js.native
-  @JSImport("combine-source-map", "create")
-  @js.native
-  def create(file: js.UndefOr[scala.Nothing], sourceRoot: String): Combiner = js.native
-  @JSImport("combine-source-map", "create")
-  @js.native
-  def create(file: String): Combiner = js.native
-  @JSImport("combine-source-map", "create")
-  @js.native
-  def create(file: String, sourceRoot: String): Combiner = js.native
+  @scala.inline
+  def create(): Combiner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Combiner]
+  @scala.inline
+  def create(file: String): Combiner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any]).asInstanceOf[Combiner]
+  @scala.inline
+  def create(file: String, sourceRoot: String): Combiner = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], sourceRoot.asInstanceOf[js.Any])).asInstanceOf[Combiner]
+  @scala.inline
+  def create(file: Unit, sourceRoot: String): Combiner = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], sourceRoot.asInstanceOf[js.Any])).asInstanceOf[Combiner]
   
   /**
     * @return src with all sourceMappingUrl comments removed
     */
-  @JSImport("combine-source-map", "removeComments")
-  @js.native
-  def removeComments(src: String): String = js.native
+  @scala.inline
+  def removeComments(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeComments")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait Combiner extends StObject {
@@ -76,12 +75,11 @@ object mod {
   }
   
   /** An offset line and column number */
-  @js.native
   trait Offset extends StObject {
     
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
   }
   object Offset {
     

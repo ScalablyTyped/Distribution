@@ -2,55 +2,53 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinegapsizeLinesegmentsize extends StObject {
   
   /**
     * Sets the transparency of the scale-x minor-tick. See the red lines across the bottom between the ticks. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the line color of the object. See the red lines across the bottom between the ticks. "none" | "transparent" | "#f00" | "#f00
     * #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `line-color`: js.UndefOr[String] = js.native
+  var `line-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Can be used to create custom dashed or dotted lines when used with line-segment-size. This will control the size of the gaps betwe
     * en each line segment. See the red lines across the bottom between the ticks. 4 | "6px" | ...
     */
-  var `line-gap-size`: js.UndefOr[js.Any] = js.native
+  var `line-gap-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Can be used to create custom dashed or dotted lines when used with line-gap-size. This will control the size of the visible segmen
     * t of line. See the red lines across the bottom between the ticks. 4 | "6px" | ...
     */
-  var `line-segment-size`: js.UndefOr[js.Any] = js.native
+  var `line-segment-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the style applied to lines and borders of the object. See the red lines across the bottom between the ticks. "solid" | "dotte
     * d" | "dashed" | "dashdot"
     */
-  var `line-style`: js.UndefOr[String] = js.native
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the line width of the object. See the red lines across the bottom between the ticks. 4 | "6px" | ...
     */
-  var `line-width`: js.UndefOr[js.Any] = js.native
+  var `line-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Determines the placement of minor tick marks along an axis line. inner | cross | outer
     */
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of the object. See the red lines across the bottom between the ticks. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object LinegapsizeLinesegmentsize {
   

@@ -3,12 +3,12 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.networkgraph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ @js.native
-trait SeriesNetworkgraphOptions extends PlotNetworkgraphOptions {
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesNetworkgraphOptions
+  extends StObject
+     with PlotNetworkgraphOptions {
   
   /**
     * (Highcharts) An array of data points for the series. For the
@@ -19,40 +19,40 @@ trait SeriesNetworkgraphOptions extends PlotNetworkgraphOptions {
     * data points exceeds the series' turboThreshold, this option is not
     * available. (see online documentation for example)
     */
-  var data: js.UndefOr[PointOptionsObject | (js.Array[js.Object | js.Array[_] | Double])] = js.native
+  var data: js.UndefOr[PointOptionsObject | (js.Array[js.Object | js.Array[js.Any] | Double])] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.native
+  var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) A collection of options for the individual nodes. The nodes
@@ -60,29 +60,29 @@ trait SeriesNetworkgraphOptions extends PlotNetworkgraphOptions {
     * `Highcharts.Point`, but options can be applied here and linked by the
     * `id`.
     */
-  var nodes: js.UndefOr[js.Array[SeriesNetworkgraphNodesOptions]] = js.native
+  var nodes: js.UndefOr[js.Array[SeriesNetworkgraphNodesOptions]] = js.undefined
   
   /**
     * Not available
     */
-  var stack: js.UndefOr[Double | String] = js.native
+  var stack: js.UndefOr[Double | String | Unit]
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | networkgraph = js.native
+  var `type`: String | networkgraph
   
   /**
     * Not available
     */
-  var xAxis: js.UndefOr[Double | String] = js.native
+  var xAxis: js.UndefOr[Double | String | Unit]
   
   /**
     * Not available
     */
-  var yAxis: js.UndefOr[Double | String] = js.native
+  var yAxis: js.UndefOr[Double | String | Unit]
 }
 object SeriesNetworkgraphOptions {
   
@@ -97,7 +97,7 @@ object SeriesNetworkgraphOptions {
   implicit class SeriesNetworkgraphOptionsMutableBuilder[Self <: SeriesNetworkgraphOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: PointOptionsObject | (js.Array[js.Object | js.Array[_] | Double])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: PointOptionsObject | (js.Array[js.Object | js.Array[js.Any] | Double])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -148,7 +148,7 @@ object SeriesNetworkgraphOptions {
     def setNodesVarargs(value: SeriesNetworkgraphNodesOptions*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setStack(value: Double | scala.Nothing | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
@@ -157,13 +157,13 @@ object SeriesNetworkgraphOptions {
     def setType(value: String | networkgraph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: Double | scala.Nothing | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    def setXAxis(value: Double | String | Unit): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def setYAxis(value: Double | scala.Nothing | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    def setYAxis(value: Double | String | Unit): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)

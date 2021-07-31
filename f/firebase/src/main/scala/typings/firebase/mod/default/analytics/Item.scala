@@ -2,67 +2,65 @@ package typings.firebase.mod.default.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var affiliation: js.UndefOr[String] = js.native
+  var affiliation: js.UndefOr[String] = js.undefined
   
   /** @deprecated Use item_brand instead. */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /** @deprecated Use item_category instead. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var coupon: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.undefined
   
-  var creative_name: js.UndefOr[String] = js.native
+  var creative_name: js.UndefOr[String] = js.undefined
   
-  var creative_slot: js.UndefOr[String] = js.native
+  var creative_slot: js.UndefOr[String] = js.undefined
   
-  var discount: js.UndefOr[typings.firebase.mod.firebase.analytics.Currency] = js.native
+  var discount: js.UndefOr[typings.firebase.mod.firebase.analytics.Currency] = js.undefined
   
   /** @deprecated Use item_id instead. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var item_brand: js.UndefOr[String] = js.native
+  var item_brand: js.UndefOr[String] = js.undefined
   
-  var item_category: js.UndefOr[String] = js.native
+  var item_category: js.UndefOr[String] = js.undefined
   
-  var item_category2: js.UndefOr[String] = js.native
+  var item_category2: js.UndefOr[String] = js.undefined
   
-  var item_category3: js.UndefOr[String] = js.native
+  var item_category3: js.UndefOr[String] = js.undefined
   
-  var item_category4: js.UndefOr[String] = js.native
+  var item_category4: js.UndefOr[String] = js.undefined
   
-  var item_category5: js.UndefOr[String] = js.native
+  var item_category5: js.UndefOr[String] = js.undefined
   
-  var item_id: js.UndefOr[String] = js.native
+  var item_id: js.UndefOr[String] = js.undefined
   
-  var item_list_id: js.UndefOr[String] = js.native
+  var item_list_id: js.UndefOr[String] = js.undefined
   
-  var item_list_name: js.UndefOr[String] = js.native
+  var item_list_name: js.UndefOr[String] = js.undefined
   
-  var item_name: js.UndefOr[String] = js.native
+  var item_name: js.UndefOr[String] = js.undefined
   
-  var item_variant: js.UndefOr[String] = js.native
+  var item_variant: js.UndefOr[String] = js.undefined
   
-  var location_id: js.UndefOr[String] = js.native
+  var location_id: js.UndefOr[String] = js.undefined
   
   /** @deprecated Use item_name instead. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var price: js.UndefOr[typings.firebase.mod.firebase.analytics.Currency] = js.native
+  var price: js.UndefOr[typings.firebase.mod.firebase.analytics.Currency] = js.undefined
   
-  var promotion_id: js.UndefOr[String] = js.native
+  var promotion_id: js.UndefOr[String] = js.undefined
   
-  var promotion_name: js.UndefOr[String] = js.native
+  var promotion_name: js.UndefOr[String] = js.undefined
   
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
 }
 object Item {
   

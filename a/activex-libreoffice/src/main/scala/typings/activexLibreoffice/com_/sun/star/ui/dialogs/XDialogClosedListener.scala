@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAsynchronousExecutableDialog
   * @see DialogClosedEvent
   */
-@js.native
-trait XDialogClosedListener extends XEventListener {
+trait XDialogClosedListener
+  extends StObject
+     with XEventListener {
   
   /**
     * A client receives this event if a dialog is closed.
     * @param aEvent of type {@link DialogClosedEvent} that describes the event
     * @see EndDialogEvent
     */
-  def dialogClosed(aEvent: DialogClosedEvent): Unit = js.native
+  def dialogClosed(aEvent: DialogClosedEvent): Unit
 }
 object XDialogClosedListener {
   

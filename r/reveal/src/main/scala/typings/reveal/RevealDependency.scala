@@ -2,20 +2,18 @@ package typings.reveal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/hakimel/reveal.js/#dependencies
-@js.native
 trait RevealDependency extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var condition: js.UndefOr[js.Function0[Boolean]] = js.native
+  var condition: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var src: String = js.native
+  var src: String
 }
 object RevealDependency {
   

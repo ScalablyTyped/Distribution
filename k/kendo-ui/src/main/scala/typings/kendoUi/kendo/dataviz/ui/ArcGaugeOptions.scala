@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcGaugeOptions extends StObject {
   
-  var centerTemplate: js.UndefOr[String | js.Function] = js.native
+  var centerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var colors: js.UndefOr[js.Array[ArcGaugeColor]] = js.native
+  var colors: js.UndefOr[js.Array[ArcGaugeColor]] = js.undefined
   
-  var gaugeArea: js.UndefOr[ArcGaugeGaugeArea] = js.native
+  var gaugeArea: js.UndefOr[ArcGaugeGaugeArea] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var renderAs: js.UndefOr[String] = js.native
+  var renderAs: js.UndefOr[String] = js.undefined
   
-  var scale: js.UndefOr[ArcGaugeScale] = js.native
+  var scale: js.UndefOr[ArcGaugeScale] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var transitions: js.UndefOr[Boolean] = js.native
+  var transitions: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object ArcGaugeOptions {
   

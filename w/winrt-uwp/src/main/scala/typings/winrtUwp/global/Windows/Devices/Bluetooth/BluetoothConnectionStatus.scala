@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the connection status of the device. */
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object BluetoothConnectionStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus & Double] = js.native
   
-  /* 1 */ val connected: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus.connected with Double = js.native
+  /* 1 */ val connected: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus.connected & Double = js.native
   
-  /* 0 */ val disconnected: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus.disconnected with Double = js.native
+  /* 0 */ val disconnected: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus.disconnected & Double = js.native
 }

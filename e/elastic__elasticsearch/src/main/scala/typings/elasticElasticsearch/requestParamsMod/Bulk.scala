@@ -3,39 +3,39 @@ package typings.elasticElasticsearch.requestParamsMod
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Bulk[T] extends Generic {
+trait Bulk[T]
+  extends StObject
+     with Generic {
   
-  var _source: js.UndefOr[String | js.Array[String]] = js.native
+  var _source: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_include: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_include: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_includes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var pipeline: js.UndefOr[String] = js.native
+  var pipeline: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
   
-  var require_alias: js.UndefOr[Boolean] = js.native
+  var require_alias: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object Bulk {
   
@@ -46,7 +46,7 @@ object Bulk {
   }
   
   @scala.inline
-  implicit class BulkMutableBuilder[Self <: Bulk[_], T] (val x: Self with Bulk[T]) extends AnyVal {
+  implicit class BulkMutableBuilder[Self <: Bulk[?], T] (val x: Self & Bulk[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

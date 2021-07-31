@@ -2,24 +2,22 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleArgs extends StObject {
   
-  var assert: js.UndefOr[(js.Function1[/* value */ js.Any, Boolean]) | AnySchema] = js.native
+  var assert: js.UndefOr[(js.Function1[/* value */ js.Any, Boolean]) | AnySchema] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   /**
     * Undocumented properties
     */
-  var normalize: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+  var normalize: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
   
-  var ref: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[Boolean] = js.undefined
 }
 object RuleArgs {
   
@@ -51,7 +49,7 @@ object RuleArgs {
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalize(value: /* value */ js.Any => _): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    def setNormalize(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
     @scala.inline
     def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)

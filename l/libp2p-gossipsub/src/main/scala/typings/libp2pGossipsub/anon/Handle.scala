@@ -2,17 +2,15 @@ package typings.libp2pGossipsub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Handle extends StObject {
   
-  var handle: js.Function = js.native
+  var handle: js.Function
   
-  var register: js.Function = js.native
+  var register: js.Function
   
-  var unregister: js.Function = js.native
+  var unregister: js.Function
 }
 object Handle {
   

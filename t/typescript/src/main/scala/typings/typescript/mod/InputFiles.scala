@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputFiles extends Node {
+trait InputFiles
+  extends StObject
+     with Node {
   
   var declarationMapPath: js.UndefOr[java.lang.String] = js.native
   

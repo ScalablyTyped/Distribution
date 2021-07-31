@@ -2,33 +2,31 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNodeGroupNode extends StObject {
   
   /**
     * Instances scheduled on this node.
     */
-  var instances: js.UndefOr[js.Array[String]] = js.native
+  var instances: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the node.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this node.
     */
-  var nodeType: js.UndefOr[String] = js.native
+  var nodeType: js.UndefOr[String] = js.undefined
   
   /**
     * Binding properties for the physical server.
     */
-  var serverBinding: js.UndefOr[SchemaServerBinding] = js.native
+  var serverBinding: js.UndefOr[SchemaServerBinding] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaNodeGroupNode {
   

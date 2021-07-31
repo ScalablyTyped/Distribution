@@ -2,52 +2,50 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a player leaderboard score object.
   */
-@js.native
 trait SchemaPlayerLeaderboardScore extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerLeaderboardScore.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the leaderboard this score is in.
     */
-  var leaderboard_id: js.UndefOr[String] = js.native
+  var leaderboard_id: js.UndefOr[String] = js.undefined
   
   /**
     * The public rank of the score in this leaderboard. This object will not be
     * present if the user is not sharing their scores publicly.
     */
-  var publicRank: js.UndefOr[SchemaLeaderboardScoreRank] = js.native
+  var publicRank: js.UndefOr[SchemaLeaderboardScoreRank] = js.undefined
   
   /**
     * The formatted value of this score.
     */
-  var scoreString: js.UndefOr[String] = js.native
+  var scoreString: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information about the score. Values must contain no more than
     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
     */
-  var scoreTag: js.UndefOr[String] = js.native
+  var scoreTag: js.UndefOr[String] = js.undefined
   
   /**
     * The numerical value of this score.
     */
-  var scoreValue: js.UndefOr[String] = js.native
+  var scoreValue: js.UndefOr[String] = js.undefined
   
   /**
     * The social rank of the score in this leaderboard.
     */
-  var socialRank: js.UndefOr[SchemaLeaderboardScoreRank] = js.native
+  var socialRank: js.UndefOr[SchemaLeaderboardScoreRank] = js.undefined
   
   /**
     * The time span of this score. Possible values are:   -
@@ -55,13 +53,13 @@ trait SchemaPlayerLeaderboardScore extends StObject {
     * &quot;WEEKLY&quot; - The score is a weekly score.  - &quot;DAILY&quot; -
     * The score is a daily score.
     */
-  var timeSpan: js.UndefOr[String] = js.native
+  var timeSpan: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp at which this score was recorded, in milliseconds since the
     * epoch in UTC.
     */
-  var writeTimestamp: js.UndefOr[String] = js.native
+  var writeTimestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaPlayerLeaderboardScore {
   

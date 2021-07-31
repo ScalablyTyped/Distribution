@@ -2,16 +2,14 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelSettings extends StObject {
   
   /**
     * The name of your custom language model.
     */
-  var LanguageModelName: js.UndefOr[ModelName] = js.native
+  var LanguageModelName: js.UndefOr[ModelName] = js.undefined
 }
 object ModelSettings {
   

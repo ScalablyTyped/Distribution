@@ -4,7 +4,6 @@ import typings.msRestAzure.mod.CloudErrorParameters
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionModelsMod {
@@ -21,39 +20,38 @@ object subscriptionModelsMod {
     def this(parameters: CloudErrorParameters) = this()
   }
   
-  @js.native
   trait Location extends StObject {
     
     /**
       * The display name of the location.
       */
-    val displayName: js.UndefOr[String] = js.native
+    val displayName: js.UndefOr[String] = js.undefined
     
     /**
       * The fully qualified ID of the location. For example,
       * /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The latitude of the location.
       */
-    val latitude: js.UndefOr[String] = js.native
+    val latitude: js.UndefOr[String] = js.undefined
     
     /**
       * The longitude of the location.
       */
-    val longitude: js.UndefOr[String] = js.native
+    val longitude: js.UndefOr[String] = js.undefined
     
     /**
       * The location name.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * The subscription ID.
       */
-    val subscriptionId: js.UndefOr[String] = js.native
+    val subscriptionId: js.UndefOr[String] = js.undefined
   }
   object Location {
     
@@ -106,18 +104,17 @@ object subscriptionModelsMod {
   
   type LocationListResult = js.Array[Location]
   
-  @js.native
   trait Operation extends StObject {
     
     /**
       * The object that represents the operation.
       */
-    var display: js.UndefOr[OperationDisplay] = js.native
+    var display: js.UndefOr[OperationDisplay] = js.undefined
     
     /**
       * Operation name: {provider}/{resource}/{operation}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Operation {
     
@@ -144,28 +141,27 @@ object subscriptionModelsMod {
     }
   }
   
-  @js.native
   trait OperationDisplay extends StObject {
     
     /**
       * Description of the operation.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Operation type: Read, write, delete, etc.
       */
-    var operation: js.UndefOr[String] = js.native
+    var operation: js.UndefOr[String] = js.undefined
     
     /**
       * Service provider: Microsoft.Resources
       */
-    var provider: js.UndefOr[String] = js.native
+    var provider: js.UndefOr[String] = js.undefined
     
     /**
       * Resource on which the operation is performed: Profile, endpoint, etc.
       */
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
   }
   object OperationDisplay {
     
@@ -205,7 +201,9 @@ object subscriptionModelsMod {
   }
   
   @js.native
-  trait OperationListResult extends Array[Operation] {
+  trait OperationListResult
+    extends StObject
+       with Array[Operation] {
     
     /**
       * URL to get the next set of operation list results if there are any.
@@ -213,41 +211,40 @@ object subscriptionModelsMod {
     var nextLink: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Subscription extends StObject {
     
     /**
       * The authorization source of the request. Valid values are one or more combinations of Legacy,
       * RoleBased, Bypassed, Direct and Management. For example, 'Legacy, RoleBased'.
       */
-    var authorizationSource: js.UndefOr[String] = js.native
+    var authorizationSource: js.UndefOr[String] = js.undefined
     
     /**
       * The subscription display name.
       */
-    val displayName: js.UndefOr[String] = js.native
+    val displayName: js.UndefOr[String] = js.undefined
     
     /**
       * The fully qualified ID for the subscription. For example,
       * /subscriptions/00000000-0000-0000-0000-000000000000.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.
       * Possible values include: 'Enabled', 'Warned', 'PastDue', 'Disabled', 'Deleted'
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * The subscription ID.
       */
-    val subscriptionId: js.UndefOr[String] = js.native
+    val subscriptionId: js.UndefOr[String] = js.undefined
     
     /**
       * The subscription policies.
       */
-    var subscriptionPolicies: js.UndefOr[SubscriptionPolicies] = js.native
+    var subscriptionPolicies: js.UndefOr[SubscriptionPolicies] = js.undefined
   }
   object Subscription {
     
@@ -299,7 +296,9 @@ object subscriptionModelsMod {
   }
   
   @js.native
-  trait SubscriptionListResult extends Array[Subscription] {
+  trait SubscriptionListResult
+    extends StObject
+       with Array[Subscription] {
     
     /**
       * The URL to get the next set of results.
@@ -307,7 +306,6 @@ object subscriptionModelsMod {
     var nextLink: String = js.native
   }
   
-  @js.native
   trait SubscriptionPolicies extends StObject {
     
     /**
@@ -315,17 +313,17 @@ object subscriptionModelsMod {
       * subscription. For example, a subscription with a location placement Id of Public_2014-09-01
       * has access to Azure public regions.
       */
-    val locationPlacementId: js.UndefOr[String] = js.native
+    val locationPlacementId: js.UndefOr[String] = js.undefined
     
     /**
       * The subscription quota ID.
       */
-    val quotaId: js.UndefOr[String] = js.native
+    val quotaId: js.UndefOr[String] = js.undefined
     
     /**
       * The subscription spending limit. Possible values include: 'On', 'Off', 'CurrentPeriodOff'
       */
-    val spendingLimit: js.UndefOr[String] = js.native
+    val spendingLimit: js.UndefOr[String] = js.undefined
   }
   object SubscriptionPolicies {
     
@@ -358,19 +356,18 @@ object subscriptionModelsMod {
     }
   }
   
-  @js.native
   trait TenantIdDescription extends StObject {
     
     /**
       * The fully qualified ID of the tenant. For example,
       * /tenants/00000000-0000-0000-0000-000000000000.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The tenant ID. For example, 00000000-0000-0000-0000-000000000000.
       */
-    val tenantId: js.UndefOr[String] = js.native
+    val tenantId: js.UndefOr[String] = js.undefined
   }
   object TenantIdDescription {
     
@@ -398,7 +395,9 @@ object subscriptionModelsMod {
   }
   
   @js.native
-  trait TenantListResult extends Array[TenantIdDescription] {
+  trait TenantListResult
+    extends StObject
+       with Array[TenantIdDescription] {
     
     /**
       * The URL to use for getting the next set of results.

@@ -2,33 +2,31 @@ package typings.nodeOpenload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Added extends StObject {
     
-    var added: String = js.native
+    var added: String
     
-    var bytes_loaded: String = js.native
+    var bytes_loaded: String
     
-    var bytes_total: String = js.native
+    var bytes_total: String
     
-    var extid: String | Boolean = js.native
+    var extid: String | Boolean
     
-    var folderid: String = js.native
+    var folderid: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var last_update: String = js.native
+    var last_update: String
     
-    var remoteurl: String = js.native
+    var remoteurl: String
     
-    var status: String = js.native
+    var status: String
     
-    var url: String | Boolean = js.native
+    var url: String | Boolean
   }
   object Added {
     
@@ -84,20 +82,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Contenttype extends StObject {
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var sha1: String = js.native
+    var sha1: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var status: Double = js.native
+    var status: Double
   }
   object Contenttype {
     
@@ -130,30 +127,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Cstatus extends StObject {
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var cstatus: String = js.native
+    var cstatus: String
     
-    var download_count: String = js.native
+    var download_count: String
     
-    var folderid: String = js.native
+    var folderid: String
     
-    var link: String = js.native
+    var link: String
     
-    var linkextid: String = js.native
+    var linkextid: String
     
-    var name: String = js.native
+    var name: String
     
-    var sha1: String = js.native
+    var sha1: String
     
-    var size: String = js.native
+    var size: String
     
-    var status: String = js.native
+    var status: String
     
-    var upload_at: String = js.native
+    var upload_at: String
   }
   object Cstatus {
     
@@ -213,12 +209,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object Id {
     
@@ -239,12 +234,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var used_24h: Double = js.native
+    var used_24h: Double
   }
   object Left {
     

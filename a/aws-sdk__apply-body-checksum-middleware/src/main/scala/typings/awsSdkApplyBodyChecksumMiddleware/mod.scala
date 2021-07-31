@@ -6,20 +6,21 @@ import typings.awsSdkTypes.middlewareMod.BuildMiddleware
 import typings.awsSdkTypes.utilMod.Encoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/apply-body-checksum-middleware", "applyBodyChecksumMiddleware")
+  @JSImport("@aws-sdk/apply-body-checksum-middleware", JSImport.Namespace)
   @js.native
-  def applyBodyChecksumMiddleware[StreamType](headerName: String, hashCtor: Instantiable, encoder: Encoder): BuildMiddleware[_, _] = js.native
-  @JSImport("@aws-sdk/apply-body-checksum-middleware", "applyBodyChecksumMiddleware")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def applyBodyChecksumMiddleware[StreamType](headerName: String, hashCtor: Instantiable, encoder: Encoder): BuildMiddleware[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBodyChecksumMiddleware")(headerName.asInstanceOf[js.Any], hashCtor.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  @scala.inline
   def applyBodyChecksumMiddleware[StreamType](
     headerName: String,
     hashCtor: Instantiable,
     encoder: Encoder,
     streamHasher: StreamHasher[StreamType]
-  ): BuildMiddleware[_, _] = js.native
+  ): BuildMiddleware[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBodyChecksumMiddleware")(headerName.asInstanceOf[js.Any], hashCtor.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any], streamHasher.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
 }

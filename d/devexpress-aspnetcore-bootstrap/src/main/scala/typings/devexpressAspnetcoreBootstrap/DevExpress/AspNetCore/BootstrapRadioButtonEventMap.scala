@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapRadioButtonEventMap extends BootstrapClientEditEventMap {
+trait BootstrapRadioButtonEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
   
-  var checkedChanged: ProcessingModeEventArgs = js.native
+  var checkedChanged: ProcessingModeEventArgs
 }
 object BootstrapRadioButtonEventMap {
   

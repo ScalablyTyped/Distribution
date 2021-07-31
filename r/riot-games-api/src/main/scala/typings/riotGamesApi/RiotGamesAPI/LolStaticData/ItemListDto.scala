@@ -3,23 +3,21 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemListDto extends StObject {
   
-  var basic: BasicDataDto = js.native
+  var basic: BasicDataDto
   
-  var data: js.Array[StringDictionary[ItemDto]] = js.native
+  var data: js.Array[StringDictionary[ItemDto]]
   
-  var groups: js.Array[GroupDto] = js.native
+  var groups: js.Array[GroupDto]
   
-  var tree: js.Array[ItemTreeDto] = js.native
+  var tree: js.Array[ItemTreeDto]
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var version: String = js.native
+  var version: String
 }
 object ItemListDto {
   

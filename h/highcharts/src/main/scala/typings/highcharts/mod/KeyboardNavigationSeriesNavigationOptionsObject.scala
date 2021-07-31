@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardNavigationSeriesNavigationOptionsObject extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait KeyboardNavigationSeriesNavigationOptionsObject extends StObject {
     * like left/right. This can be useful for unifying navigation behavior
     * with/without screen readers enabled.
     */
-  var mode: js.UndefOr[OptionsModeValue] = js.native
+  var mode: js.UndefOr[OptionsModeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When a series contains more
@@ -28,13 +26,13 @@ trait KeyboardNavigationSeriesNavigationOptionsObject extends StObject {
     *
     * Set to `false` to disable.
     */
-  var pointNavigationEnabledThreshold: js.UndefOr[Boolean | Double] = js.native
+  var pointNavigationEnabledThreshold: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Skip null points when navigating
     * through points with the keyboard.
     */
-  var skipNullPoints: js.UndefOr[Boolean] = js.native
+  var skipNullPoints: js.UndefOr[Boolean] = js.undefined
 }
 object KeyboardNavigationSeriesNavigationOptionsObject {
   

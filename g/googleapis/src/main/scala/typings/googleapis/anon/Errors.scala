@@ -3,15 +3,13 @@ package typings.googleapis.anon
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaErrorProto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errors extends StObject {
   
-  var errors: js.UndefOr[js.Array[SchemaErrorProto]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaErrorProto]] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object Errors {
   

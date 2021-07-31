@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWorkflowAssignment extends StObject {
   
-  var AssignedTo_DEPRECATED: IPropertyValue = js.native
+  var AssignedTo_DEPRECATED: IPropertyValue
   
-  def Clone_DEPRECATED(): IWorkflowAssignment = js.native
+  def Clone_DEPRECATED(): IWorkflowAssignment
   
-  var CompletedBy_DEPRECATED: IPropertyValue = js.native
+  var CompletedBy_DEPRECATED: IPropertyValue
   
-  var Deadline_DEPRECATED: IPropertyValue = js.native
+  var Deadline_DEPRECATED: IPropertyValue
   
-  var Description_DEPRECATED: IPropertyValue = js.native
+  var Description_DEPRECATED: IPropertyValue
   
-  var MonitoredBy_DEPRECATED: IPropertyValue = js.native
+  var MonitoredBy_DEPRECATED: IPropertyValue
 }
 object IWorkflowAssignment {
   

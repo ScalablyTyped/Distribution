@@ -7,14 +7,15 @@ import typings.std.Event
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("a11y-dialog", JSImport.Namespace)
   @js.native
-  class ^ protected () extends A11yDialog {
+  class ^ protected ()
+    extends StObject
+       with A11yDialog {
     def this(node: Element) = this()
     def this(node: Element, targets: Targets) = this()
   }

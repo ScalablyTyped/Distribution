@@ -2,27 +2,25 @@ package typings.popperjsCore.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientRectObject extends StObject {
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var right: Double = js.native
+  var right: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object ClientRectObject {
   

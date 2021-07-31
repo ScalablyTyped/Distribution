@@ -2,19 +2,17 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionHistory extends StObject {
   
-  var balance: String = js.native
+  var balance: String
   
-  var price: String = js.native
+  var price: String
   
-  var status: SubscriptionStatus = js.native
+  var status: SubscriptionStatus
   
-  var subscriptionSource: SubscriptionSource = js.native
+  var subscriptionSource: SubscriptionSource
 }
 object SubscriptionHistory {
   

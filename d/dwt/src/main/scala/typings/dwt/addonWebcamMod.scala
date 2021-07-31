@@ -6,23 +6,21 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTVideoRotateMode
 import typings.dwt.webTwainMod.WebTwain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonWebcamMod {
   
-  @js.native
   trait CameraControlProperty extends StObject {
     
     /**
       * Return whether the property is set autmatically or not.
       */
-    def GetIfAuto(): Boolean = js.native
+    def GetIfAuto(): Boolean
     
     /**
       * Return the value of the property.
       */
-    def GetValue(): Double = js.native
+    def GetValue(): Double
   }
   object CameraControlProperty {
     
@@ -43,33 +41,32 @@ object addonWebcamMod {
     }
   }
   
-  @js.native
   trait CameraControlPropertyExtra extends StObject {
     
     /**
       * Return the default value of the property.
       */
-    def GetDefaultValue(): Double = js.native
+    def GetDefaultValue(): Double
     
     /**
       * Return whether the property is set autmatically or not.
       */
-    def GetIfAuto(): Boolean = js.native
+    def GetIfAuto(): Boolean
     
     /**
       * Return the maximum value of the property.
       */
-    def GetMaxValue(): Double = js.native
+    def GetMaxValue(): Double
     
     /**
       * Return the minimum value of the property.
       */
-    def GetMinValue(): Double = js.native
+    def GetMinValue(): Double
     
     /**
       * Return the smallest increment by which the property can change.
       */
-    def GetSteppingDelta(): Double = js.native
+    def GetSteppingDelta(): Double
   }
   object CameraControlPropertyExtra {
     
@@ -105,23 +102,22 @@ object addonWebcamMod {
     }
   }
   
-  @js.native
   trait FrameRate extends StObject {
     
     /**
       * Return the specified frame rate.
       */
-    def Get(index: Double): Double = js.native
+    def Get(index: Double): Double
     
     /**
       * Return the number of available frame rates.
       */
-    def GetCount(): Double = js.native
+    def GetCount(): Double
     
     /**
       * Return the current frame rate.
       */
-    def GetCurrent(): Double = js.native
+    def GetCurrent(): Double
   }
   object FrameRate {
     
@@ -145,28 +141,27 @@ object addonWebcamMod {
     }
   }
   
-  @js.native
   trait MediaType extends StObject {
     
     /**
       * Return the specified media type.
       */
-    def Get(index: Double): String = js.native
+    def Get(index: Double): String
     
     /**
       * Return the number of available media types.
       */
-    def GetCount(): Double = js.native
+    def GetCount(): Double
     
     /**
       * Return the current media type.
       */
-    def GetCurrent(): String = js.native
+    def GetCurrent(): String
     
     /**
       * internal use
       */
-    var _resultlist: js.Any = js.native
+    var _resultlist: js.Any
   }
   object MediaType {
     
@@ -193,23 +188,22 @@ object addonWebcamMod {
     }
   }
   
-  @js.native
   trait Resolution extends StObject {
     
     /**
       * Return the specified resolution.
       */
-    def Get(index: Double): String = js.native
+    def Get(index: Double): String
     
     /**
       * Return the number of available resolutions.
       */
-    def GetCount(): Double = js.native
+    def GetCount(): Double
     
     /**
       * Return the current resolution.
       */
-    def GetCurrent(): String = js.native
+    def GetCurrent(): String
   }
   object Resolution {
     
@@ -233,18 +227,17 @@ object addonWebcamMod {
     }
   }
   
-  @js.native
   trait VideoControlProperty extends StObject {
     
     /**
       * Return whether the property is set autmatically or not.
       */
-    def GetIfAuto(): Boolean = js.native
+    def GetIfAuto(): Boolean
     
     /**
       * Return the value of the property.
       */
-    def GetValue(): Double = js.native
+    def GetValue(): Double
   }
   object VideoControlProperty {
     
@@ -265,33 +258,32 @@ object addonWebcamMod {
     }
   }
   
-  @js.native
   trait VideoControlPropertyExtra extends StObject {
     
     /**
       * Return the default value of the property.
       */
-    def GetDefaultValue(): Double = js.native
+    def GetDefaultValue(): Double
     
     /**
       * Return whether the property is set autmatically or not.
       */
-    def GetIfAuto(): Boolean = js.native
+    def GetIfAuto(): Boolean
     
     /**
       * Return the maximum value of the property.
       */
-    def GetMaxValue(): Double = js.native
+    def GetMaxValue(): Double
     
     /**
       * Return the minimum value of the property.
       */
-    def GetMinValue(): Double = js.native
+    def GetMinValue(): Double
     
     /**
       * Return the smallest increment by which the property can change.
       */
-    def GetSteppingDelta(): Double = js.native
+    def GetSteppingDelta(): Double
   }
   object VideoControlPropertyExtra {
     

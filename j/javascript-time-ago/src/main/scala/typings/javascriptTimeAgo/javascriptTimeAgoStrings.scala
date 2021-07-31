@@ -8,7 +8,6 @@ import typings.javascriptTimeAgo.localeMod.TimeUnit
 import typings.javascriptTimeAgo.styleMod.Flavour
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object javascriptTimeAgoStrings {
@@ -115,7 +114,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait day
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def day: day = "day".asInstanceOf[day]
@@ -262,7 +262,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait hour
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
@@ -394,7 +395,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait long
-    extends DefaultFormats
+    extends StObject
+       with DefaultFormats
        with Flavour
        with Formats
   @scala.inline
@@ -402,14 +404,16 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait `long-convenient`
-    extends ExtendedFormats
+    extends StObject
+       with ExtendedFormats
        with Formats
   @scala.inline
   def `long-convenient`: `long-convenient` = "long-convenient".asInstanceOf[`long-convenient`]
   
   @js.native
   sealed trait `long-time`
-    extends ExtendedFormats
+    extends StObject
+       with ExtendedFormats
        with Formats
   @scala.inline
   def `long-time`: `long-time` = "long-time".asInstanceOf[`long-time`]
@@ -426,7 +430,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait minute
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
@@ -448,7 +453,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait month
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def month: month = "month".asInstanceOf[month]
@@ -480,7 +486,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait narrow
-    extends DefaultFormats
+    extends StObject
+       with DefaultFormats
        with Flavour
        with Formats
   @scala.inline
@@ -508,7 +515,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait now
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def now: now = "now".asInstanceOf[now]
@@ -554,7 +562,9 @@ object javascriptTimeAgoStrings {
   def qu: qu = "qu".asInstanceOf[qu]
   
   @js.native
-  sealed trait quarter extends TimeUnit
+  sealed trait quarter
+    extends StObject
+       with TimeUnit
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   
@@ -590,14 +600,16 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait second
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait short
-    extends DefaultFormats
+    extends StObject
+       with DefaultFormats
        with Flavour
        with Formats
   @scala.inline
@@ -605,14 +617,16 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait `short-convenient`
-    extends ExtendedFormats
+    extends StObject
+       with ExtendedFormats
        with Formats
   @scala.inline
   def `short-convenient`: `short-convenient` = "short-convenient".asInstanceOf[`short-convenient`]
   
   @js.native
   sealed trait `short-time`
-    extends ExtendedFormats
+    extends StObject
+       with ExtendedFormats
        with Flavour
        with Formats
   @scala.inline
@@ -685,7 +699,8 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait tiny
-    extends ExtendedFormats
+    extends StObject
+       with ExtendedFormats
        with Flavour
        with Formats
   @scala.inline
@@ -753,14 +768,16 @@ object javascriptTimeAgoStrings {
   
   @js.native
   sealed trait week
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
   @js.native
   sealed trait year
-    extends TimeUnit
+    extends StObject
+       with TimeUnit
        with Unit
   @scala.inline
   def year: year = "year".asInstanceOf[year]

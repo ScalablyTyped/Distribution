@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HttpRouteRuleMatch criteria for a request&#39;s query parameter.
   */
-@js.native
 trait SchemaHttpQueryParameterMatch extends StObject {
   
   /**
@@ -16,20 +14,20 @@ trait SchemaHttpQueryParameterMatch extends StObject {
     * matches the contents of exactMatch. Only one of presentMatch, exactMatch
     * and regexMatch must be set.
     */
-  var exactMatch: js.UndefOr[String] = js.native
+  var exactMatch: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the query parameter to match. The query parameter must exist
     * in the request, in the absence of which the request match fails.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies that the queryParameterMatch matches if the request contains
     * the query parameter, irrespective of whether the parameter has a value or
     * not. Only one of presentMatch, exactMatch and regexMatch must be set.
     */
-  var presentMatch: js.UndefOr[Boolean] = js.native
+  var presentMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The queryParameterMatch matches if the value of the parameter matches the
@@ -37,7 +35,7 @@ trait SchemaHttpQueryParameterMatch extends StObject {
     * grammar, please see en.cppreference.com/w/cpp/regex/ecmascript  Only one
     * of presentMatch, exactMatch and regexMatch must be set.
     */
-  var regexMatch: js.UndefOr[String] = js.native
+  var regexMatch: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpQueryParameterMatch {
   

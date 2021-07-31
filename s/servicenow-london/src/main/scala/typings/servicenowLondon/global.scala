@@ -2,7 +2,6 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -115,14 +114,6 @@ object global {
       retroactiveMSecs: Double,
       current: ScopedGlideRecord,
       operation: GlideRecordOperation,
-      vars: js.UndefOr[scala.Nothing],
-      withSchedule: js.Any
-    ): ScopedGlideRecord = js.native
-    def startFlowRetroactive(
-      workflowID: String,
-      retroactiveMSecs: Double,
-      current: ScopedGlideRecord,
-      operation: GlideRecordOperation,
       vars: js.Object
     ): ScopedGlideRecord = js.native
     def startFlowRetroactive(
@@ -131,6 +122,14 @@ object global {
       current: ScopedGlideRecord,
       operation: GlideRecordOperation,
       vars: js.Object,
+      withSchedule: js.Any
+    ): ScopedGlideRecord = js.native
+    def startFlowRetroactive(
+      workflowID: String,
+      retroactiveMSecs: Double,
+      current: ScopedGlideRecord,
+      operation: GlideRecordOperation,
+      vars: Unit,
       withSchedule: js.Any
     ): ScopedGlideRecord = js.native
   }

@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColorPosition extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var position: String = js.native
+  var position: String
 }
 object BackgroundColorPosition {
   

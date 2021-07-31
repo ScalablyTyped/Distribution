@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeBasedCanary extends StObject {
   
   /**
     * The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.
     */
-  var canaryInterval: js.UndefOr[WaitTimeInMins] = js.native
+  var canaryInterval: js.UndefOr[WaitTimeInMins] = js.undefined
   
   /**
     * The percentage of traffic to shift in the first increment of a TimeBasedCanary deployment.
     */
-  var canaryPercentage: js.UndefOr[Percentage] = js.native
+  var canaryPercentage: js.UndefOr[Percentage] = js.undefined
 }
 object TimeBasedCanary {
   

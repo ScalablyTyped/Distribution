@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetLocation extends StObject {
   
   /**
     * The AWS accounts targeted by the current Automation execution.
     */
-  var Accounts: js.UndefOr[typings.awsSdk.ssmMod.Accounts] = js.native
+  var Accounts: js.UndefOr[typings.awsSdk.ssmMod.Accounts] = js.undefined
   
   /**
     * The Automation execution role used by the currently running Automation.
     */
-  var ExecutionRoleName: js.UndefOr[typings.awsSdk.ssmMod.ExecutionRoleName] = js.native
+  var ExecutionRoleName: js.UndefOr[typings.awsSdk.ssmMod.ExecutionRoleName] = js.undefined
   
   /**
     * The AWS Regions targeted by the current Automation execution.
     */
-  var Regions: js.UndefOr[typings.awsSdk.ssmMod.Regions] = js.native
+  var Regions: js.UndefOr[typings.awsSdk.ssmMod.Regions] = js.undefined
   
   /**
     * The maximum number of AWS accounts and AWS regions allowed to run the Automation concurrently 
     */
-  var TargetLocationMaxConcurrency: js.UndefOr[MaxConcurrency] = js.native
+  var TargetLocationMaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
   
   /**
     * The maximum number of errors allowed before the system stops queueing additional Automation executions for the currently running Automation. 
     */
-  var TargetLocationMaxErrors: js.UndefOr[MaxErrors] = js.native
+  var TargetLocationMaxErrors: js.UndefOr[MaxErrors] = js.undefined
 }
 object TargetLocation {
   

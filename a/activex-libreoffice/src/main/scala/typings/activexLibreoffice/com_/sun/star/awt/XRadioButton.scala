@@ -4,30 +4,30 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the state of a radio button and makes it possible to register item event listeners. */
-@js.native
-trait XRadioButton extends XInterface {
+trait XRadioButton
+  extends StObject
+     with XInterface {
   
   /** returns `TRUE` if the button is checked, `FALSE` otherwise. */
-  var State: Boolean = js.native
+  var State: Boolean
   
   /** registers a listener for item events. */
-  def addItemListener(l: XItemListener): Unit = js.native
+  def addItemListener(l: XItemListener): Unit
   
   /** returns `TRUE` if the button is checked, `FALSE` otherwise. */
-  def getState(): Boolean = js.native
+  def getState(): Boolean
   
   /** unregisters a listener for item events. */
-  def removeItemListener(l: XItemListener): Unit = js.native
+  def removeItemListener(l: XItemListener): Unit
   
   /** sets the label of the radio button. */
-  def setLabel(Label: String): Unit = js.native
+  def setLabel(Label: String): Unit
   
   /** sets the state of the radio button. */
-  def setState(b: Boolean): Unit = js.native
+  def setState(b: Boolean): Unit
 }
 object XRadioButton {
   

@@ -16,7 +16,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,9 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.accessibility.XAccessibleText
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleTextField
-  extends AccessibleContext
+  extends StObject
+     with AccessibleContext
      with XAccessibleText
      with XAccessibleExtendedComponent
 object AccessibleTextField {

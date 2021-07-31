@@ -10,7 +10,6 @@ import typings.twilioSync.syncmapMod.SyncMap
 import typings.twilioSync.syncstreamMod.SyncStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -328,10 +327,11 @@ object clientMod {
     def error: typings.twilioSync.twilioSyncStrings.error = "error".asInstanceOf[typings.twilioSync.twilioSyncStrings.error]
   }
   
-  @js.native
-  trait OpenDocumentOptions extends OpenOptions {
+  trait OpenDocumentOptions
+    extends StObject
+       with OpenOptions {
     
-    var value: js.UndefOr[json] = js.native
+    var value: js.UndefOr[json] = js.undefined
   }
   object OpenDocumentOptions {
     
@@ -352,14 +352,15 @@ object clientMod {
     }
   }
   
-  @js.native
-  trait OpenListOptions extends OpenOptions {
+  trait OpenListOptions
+    extends StObject
+       with OpenOptions {
     
-    var context: js.UndefOr[json] = js.native
+    var context: js.UndefOr[json] = js.undefined
     
-    var includeItems: js.UndefOr[Boolean] = js.native
+    var includeItems: js.UndefOr[Boolean] = js.undefined
     
-    var purpose: js.UndefOr[String] = js.native
+    var purpose: js.UndefOr[String] = js.undefined
   }
   object OpenListOptions {
     
@@ -392,10 +393,11 @@ object clientMod {
     }
   }
   
-  @js.native
-  trait OpenMapOptions extends OpenOptions {
+  trait OpenMapOptions
+    extends StObject
+       with OpenOptions {
     
-    var includeItems: js.UndefOr[Boolean] = js.native
+    var includeItems: js.UndefOr[Boolean] = js.undefined
   }
   object OpenMapOptions {
     
@@ -434,14 +436,13 @@ object clientMod {
     def open_or_create: typings.twilioSync.twilioSyncStrings.open_or_create = "open_or_create".asInstanceOf[typings.twilioSync.twilioSyncStrings.open_or_create]
   }
   
-  @js.native
   trait OpenOptions extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[OpenMode] = js.native
+    var mode: js.UndefOr[OpenMode] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object OpenOptions {
     

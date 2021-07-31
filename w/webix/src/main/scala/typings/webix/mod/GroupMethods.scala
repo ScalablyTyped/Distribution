@@ -2,23 +2,21 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupMethods extends StObject {
   
-  def any(property: String, data: js.Any): Unit = js.native
+  def any(property: String, data: js.Any): Unit
   
-  def count(property: String, data: js.Any): Unit = js.native
+  def count(property: String, data: js.Any): Unit
   
-  def max(property: String, data: js.Any): Unit = js.native
+  def max(property: String, data: js.Any): Unit
   
-  def min(property: String, data: js.Any): Unit = js.native
+  def min(property: String, data: js.Any): Unit
   
-  def string(property: String, data: js.Any): Unit = js.native
+  def string(property: String, data: js.Any): Unit
   
-  def sum(property: String, data: js.Any): Unit = js.native
+  def sum(property: String, data: js.Any): Unit
 }
 object GroupMethods {
   

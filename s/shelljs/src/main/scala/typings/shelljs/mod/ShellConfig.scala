@@ -3,49 +3,47 @@ package typings.shelljs.mod
 import typings.glob.mod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShellConfig extends StObject {
   
   /**
     * Absolute path of the Node binary. Default is null (inferred).
     */
-  var execPath: String | Null = js.native
+  var execPath: String | Null
   
   /**
     * If true the script will die on errors. Default is false.
     */
-  var fatal: Boolean = js.native
+  var fatal: Boolean
   
   /**
     * Passed to glob.sync() instead of the default options ({}).
     */
-  var globOptions: IOptions = js.native
+  var globOptions: IOptions
   
   /**
     * Reset shell.config to the defaults.
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * Suppresses all command output if true, except for echo() calls. Default is false.
     */
-  var silent: Boolean = js.native
+  var silent: Boolean
   
   /**
     * Will print each executed command to the screen.
     *
     * @default false
     */
-  var verbose: Boolean = js.native
+  var verbose: Boolean
 }
 object ShellConfig {
   
   @scala.inline
   def apply(fatal: Boolean, globOptions: IOptions, reset: () => Unit, silent: Boolean, verbose: Boolean): ShellConfig = {
-    val __obj = js.Dynamic.literal(fatal = fatal.asInstanceOf[js.Any], globOptions = globOptions.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fatal = fatal.asInstanceOf[js.Any], globOptions = globOptions.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], execPath = null)
     __obj.asInstanceOf[ShellConfig]
   }
   

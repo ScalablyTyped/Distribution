@@ -2,26 +2,24 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The protocol for the ListAlertPolicies response.
   */
-@js.native
 trait SchemaListAlertPoliciesResponse extends StObject {
   
   /**
     * The returned alert policies.
     */
-  var alertPolicies: js.UndefOr[js.Array[SchemaAlertPolicy]] = js.native
+  var alertPolicies: js.UndefOr[js.Array[SchemaAlertPolicy]] = js.undefined
   
   /**
     * If there might be more results than were returned, then this field is set
     * to a non-empty value. To see the additional results, use that value as
     * pageToken in the next call to this method.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAlertPoliciesResponse {
   

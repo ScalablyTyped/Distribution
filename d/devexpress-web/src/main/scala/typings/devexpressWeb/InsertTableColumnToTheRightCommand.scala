@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a table column to the right of the current position in the table.
   */
-@js.native
-trait InsertTableColumnToTheRightCommand extends CommandWithSimpleStateBase {
+trait InsertTableColumnToTheRightCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertTableColumnToTheRightCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object InsertTableColumnToTheRightCommand {
   

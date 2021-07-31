@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.awt.XControlModel
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a view of a standard office document. */
-@js.native
 trait OfficeDocumentView
-  extends XSelectionSupplier
+  extends StObject
+     with XSelectionSupplier
      with XViewSettingsSupplier
      with XControlAccess
 object OfficeDocumentView {

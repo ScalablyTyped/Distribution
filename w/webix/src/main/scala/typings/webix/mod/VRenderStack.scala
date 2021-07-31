@@ -1,9 +1,9 @@
 package typings.webix.mod
 
 import typings.std.HTMLElement
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,4 +20,9 @@ trait VRenderStack extends StObject {
   
   def showItem(id: String): Unit = js.native
   def showItem(id: Double): Unit = js.native
+}
+object VRenderStack {
+  
+  @scala.inline
+  def apply: VRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VRenderStack").asInstanceOf[VRenderStack]
 }

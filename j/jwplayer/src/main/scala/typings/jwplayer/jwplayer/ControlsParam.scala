@@ -2,13 +2,11 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlsParam extends StObject {
   
-  var controls: Boolean = js.native
+  var controls: Boolean
 }
 object ControlsParam {
   

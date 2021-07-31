@@ -2,27 +2,25 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemixSettings extends StObject {
   
   /**
     * Mapping of input channels to output channels, with appropriate gain adjustments.
     */
-  var ChannelMappings: listOfAudioChannelMapping = js.native
+  var ChannelMappings: listOfAudioChannelMapping
   
   /**
     * Number of input channels to be used.
     */
-  var ChannelsIn: js.UndefOr[integerMin1Max16] = js.native
+  var ChannelsIn: js.UndefOr[integerMin1Max16] = js.undefined
   
   /**
     * Number of output channels to be produced.
   Valid values: 1, 2, 4, 6, 8
     */
-  var ChannelsOut: js.UndefOr[integerMin1Max8] = js.native
+  var ChannelsOut: js.UndefOr[integerMin1Max8] = js.undefined
 }
 object RemixSettings {
   

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePeopleGet extends StandardParameters {
+trait ParamsResourcePeopleGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * **Required.** A field mask to restrict which fields on the person are
@@ -27,7 +27,7 @@ trait ParamsResourcePeopleGet extends StandardParameters {
     * relations * relationshipInterests * relationshipStatuses * residences *
     * sipAddresses * skills * taglines * urls * userDefined
     */
-  var personFields: js.UndefOr[String] = js.native
+  var personFields: js.UndefOr[String] = js.undefined
   
   /**
     * **Required.** Comma-separated list of person fields to be included in the
@@ -35,7 +35,7 @@ trait ParamsResourcePeopleGet extends StandardParameters {
     * `person.names` or `person.photos`.
     */
   @JSName("requestMask.includeField")
-  var requestMaskDotincludeField: js.UndefOr[String] = js.native
+  var requestMaskDotincludeField: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the person to provide information about.  - To get
@@ -45,7 +45,7 @@ trait ParamsResourcePeopleGet extends StandardParameters {
     * specify the resource name that   identifies the contact as returned by
     * [`people.connections.list`](/people/api/rest/v1/people.connections/list).
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePeopleGet {
   

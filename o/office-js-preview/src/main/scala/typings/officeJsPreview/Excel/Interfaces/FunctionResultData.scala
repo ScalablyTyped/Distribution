@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `functionResult.toJSON()`. */
-@js.native
 trait FunctionResultData[T] extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FunctionResultData[T] extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait FunctionResultData[T] extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var value: js.UndefOr[T] = js.native
+  var value: js.UndefOr[T] = js.undefined
 }
 object FunctionResultData {
   
@@ -34,7 +32,7 @@ object FunctionResultData {
   }
   
   @scala.inline
-  implicit class FunctionResultDataMutableBuilder[Self <: FunctionResultData[_], T] (val x: Self with FunctionResultData[T]) extends AnyVal {
+  implicit class FunctionResultDataMutableBuilder[Self <: FunctionResultData[?], T] (val x: Self & FunctionResultData[T]) extends AnyVal {
     
     @scala.inline
     def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

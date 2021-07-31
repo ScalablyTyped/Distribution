@@ -2,19 +2,17 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for BigtableInstanceAdmin.ListAppProfiles.
   */
-@js.native
 trait SchemaListAppProfilesResponse extends StObject {
   
   /**
     * The list of requested app profiles.
     */
-  var appProfiles: js.UndefOr[js.Array[SchemaAppProfile]] = js.native
+  var appProfiles: js.UndefOr[js.Array[SchemaAppProfile]] = js.undefined
   
   /**
     * Locations from which AppProfile information could not be retrieved, due
@@ -22,14 +20,14 @@ trait SchemaListAppProfilesResponse extends StObject {
     * locations may be missing from `app_profiles`. Values are of the form
     * `projects/&lt;project&gt;/locations/&lt;zone_id&gt;`
     */
-  var failedLocations: js.UndefOr[js.Array[String]] = js.native
+  var failedLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Set if not all app profiles could be returned in a single response. Pass
     * this value to `page_token` in another request to get the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAppProfilesResponse {
   

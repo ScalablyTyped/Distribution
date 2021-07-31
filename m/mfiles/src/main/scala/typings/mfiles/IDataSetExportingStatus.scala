@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataSetExportingStatus extends StObject {
   
-  val CurrentServerTime: ITimestamp = js.native
+  val CurrentServerTime: ITimestamp
   
-  val IsExporting: Boolean = js.native
+  val IsExporting: Boolean
   
-  val LatestActivity: ITimestamp = js.native
+  val LatestActivity: ITimestamp
 }
 object IDataSetExportingStatus {
   

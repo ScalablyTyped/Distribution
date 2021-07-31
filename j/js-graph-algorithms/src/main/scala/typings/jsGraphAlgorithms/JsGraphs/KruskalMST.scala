@@ -2,13 +2,11 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KruskalMST extends StObject {
   
-  var mst: js.Array[Edge] = js.native
+  var mst: js.Array[Edge]
 }
 object KruskalMST {
   

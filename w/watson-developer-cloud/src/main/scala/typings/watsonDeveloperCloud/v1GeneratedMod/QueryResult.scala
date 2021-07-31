@@ -3,29 +3,28 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryResult. */
-@js.native
 trait QueryResult
-  extends /** DialogNodeOutput accepts additional properties. */
+  extends StObject
+     with /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   
   /** The collection ID of the collection containing the document for this result. */
-  var collection_id: js.UndefOr[String] = js.native
+  var collection_id: js.UndefOr[String] = js.undefined
   
   /** The unique identifier of the document. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Metadata of the document. */
-  var metadata: js.UndefOr[js.Object] = js.native
+  var metadata: js.UndefOr[js.Object] = js.undefined
   
   /** Metadata of a query result. */
-  var result_metadata: js.UndefOr[QueryResultMetadata] = js.native
+  var result_metadata: js.UndefOr[QueryResultMetadata] = js.undefined
   
   /** Automatically extracted result title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object QueryResult {
   

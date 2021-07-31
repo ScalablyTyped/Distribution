@@ -15,10 +15,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.long
 import typings.arcgisJsApi.arcgisJsApiStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterValueProperties extends StObject {
   
   /**
@@ -28,14 +26,14 @@ trait ParameterValueProperties extends StObject {
     */
   var dataType: js.UndefOr[
     boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string | `multi-value`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The value of the parameter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html#value)
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ParameterValueProperties {
   

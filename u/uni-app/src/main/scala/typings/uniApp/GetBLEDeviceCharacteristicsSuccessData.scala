@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBLEDeviceCharacteristicsSuccessData extends StObject {
   
   /**
     * 该特征值支持的操作类型
     */
-  var properties: js.UndefOr[js.Any] = js.native
+  var properties: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 蓝牙设备服务的 uuid
     */
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object GetBLEDeviceCharacteristicsSuccessData {
   

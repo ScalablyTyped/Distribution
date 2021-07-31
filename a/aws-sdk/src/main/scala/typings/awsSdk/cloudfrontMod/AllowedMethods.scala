@@ -2,23 +2,21 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowedMethods extends StObject {
   
-  var CachedMethods: js.UndefOr[typings.awsSdk.cloudfrontMod.CachedMethods] = js.native
+  var CachedMethods: js.UndefOr[typings.awsSdk.cloudfrontMod.CachedMethods] = js.undefined
   
   /**
     * A complex type that contains the HTTP methods that you want CloudFront to process and forward to your origin.
     */
-  var Items: MethodsList = js.native
+  var Items: MethodsList
   
   /**
     * The number of HTTP methods that you want CloudFront to forward to your origin. Valid values are 2 (for GET and HEAD requests), 3 (for GET, HEAD, and OPTIONS requests) and 7 (for GET, HEAD, OPTIONS, PUT, PATCH, POST, and DELETE requests).
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object AllowedMethods {
   

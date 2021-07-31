@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Participants in producing the report
   */
-@js.native
-trait DiagnosticReportPerformer extends BackboneElement {
+trait DiagnosticReportPerformer
+  extends StObject
+     with BackboneElement {
   
   /**
     * Practitioner or Organization  participant
     */
-  var actor: Reference = js.native
+  var actor: Reference
   
   /**
     * Type of performer
     */
-  var role: js.UndefOr[CodeableConcept] = js.native
+  var role: js.UndefOr[CodeableConcept] = js.undefined
 }
 object DiagnosticReportPerformer {
   

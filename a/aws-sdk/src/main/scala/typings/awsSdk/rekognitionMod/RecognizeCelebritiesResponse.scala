@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecognizeCelebritiesResponse extends StObject {
   
   /**
     * Details about each celebrity found in the image. Amazon Rekognition can detect a maximum of 64 celebrities in an image.
     */
-  var CelebrityFaces: js.UndefOr[CelebrityList] = js.native
+  var CelebrityFaces: js.UndefOr[CelebrityList] = js.undefined
   
   /**
     * The orientation of the input image (counterclockwise direction). If your application displays the image, you can use this value to correct the orientation. The bounding box coordinates returned in CelebrityFaces and UnrecognizedFaces represent face locations before the image orientation is corrected.   If the input image is in .jpeg format, it might contain exchangeable image (Exif) metadata that includes the image's orientation. If so, and the Exif metadata for the input image populates the orientation field, the value of OrientationCorrection is null. The CelebrityFaces and UnrecognizedFaces bounding box coordinates represent face locations after Exif metadata is used to correct the image orientation. Images in .png format don't contain Exif metadata.  
     */
-  var OrientationCorrection: js.UndefOr[typings.awsSdk.rekognitionMod.OrientationCorrection] = js.native
+  var OrientationCorrection: js.UndefOr[typings.awsSdk.rekognitionMod.OrientationCorrection] = js.undefined
   
   /**
     * Details about each unrecognized face in the image.
     */
-  var UnrecognizedFaces: js.UndefOr[ComparedFaceList] = js.native
+  var UnrecognizedFaces: js.UndefOr[ComparedFaceList] = js.undefined
 }
 object RecognizeCelebritiesResponse {
   

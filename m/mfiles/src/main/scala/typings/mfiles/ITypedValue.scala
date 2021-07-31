@@ -3,29 +3,27 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFDataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITypedValue extends StObject {
   
-  def Clone(): ITypedValue = js.native
+  def Clone(): ITypedValue
   
-  def CloneFrom(TypedValue: ITypedValue): Unit = js.native
+  def CloneFrom(TypedValue: ITypedValue): Unit
   
-  def CompareTo(TypedValue: ITypedValue): Double = js.native
+  def CompareTo(TypedValue: ITypedValue): Double
   
-  val DataType: MFDataType = js.native
+  val DataType: MFDataType
   
-  val DisplayValue: String = js.native
+  val DisplayValue: String
   
-  def GetLookupID(): Double = js.native
+  def GetLookupID(): Double
   
-  def GetValueAsLocalizedText(): String = js.native
+  def GetValueAsLocalizedText(): String
   
-  def GetValueAsLookup(): ILookup = js.native
+  def GetValueAsLookup(): ILookup
   
-  def GetValueAsLookups(): ILookups = js.native
+  def GetValueAsLookups(): ILookups
   
   def GetValueAsText(
     Localized: Boolean,
@@ -34,31 +32,31 @@ trait ITypedValue extends StObject {
     LongDateFormat: Boolean,
     NoSeconds: Boolean,
     NumericValueAsKilobytes: Boolean
-  ): String = js.native
+  ): String
   
-  def GetValueAsTextWithExpression(Expression: IExpression, Locale: Double): String = js.native
+  def GetValueAsTextWithExpression(Expression: IExpression, Locale: Double): String
   
-  def GetValueAsTimestamp(): ITimestamp = js.native
+  def GetValueAsTimestamp(): ITimestamp
   
-  def GetValueAsUnlocalizedText(): String = js.native
+  def GetValueAsUnlocalizedText(): String
   
-  def IsNULL(): Boolean = js.native
+  def IsNULL(): Boolean
   
-  def IsUninitialized(): Boolean = js.native
+  def IsUninitialized(): Boolean
   
-  def Serialize(): js.Array[Double] = js.native
+  def Serialize(): js.Array[Double]
   
-  def SetValue(DataType: MFDataType, Value: js.Any): Unit = js.native
+  def SetValue(DataType: MFDataType, Value: js.Any): Unit
   
-  def SetValueToLookup(Lookup: ILookup): Unit = js.native
+  def SetValueToLookup(Lookup: ILookup): Unit
   
-  def SetValueToMultiSelectLookup(MultiSelectLookup: ILookups): Unit = js.native
+  def SetValueToMultiSelectLookup(MultiSelectLookup: ILookups): Unit
   
-  def SetValueToNULL(DataType: MFDataType): Unit = js.native
+  def SetValueToNULL(DataType: MFDataType): Unit
   
-  def Unserialize(Bytes: js.Array[Double], ReadFromOldSerializingFormat: Boolean): Unit = js.native
+  def Unserialize(Bytes: js.Array[Double], ReadFromOldSerializingFormat: Boolean): Unit
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object ITypedValue {
   

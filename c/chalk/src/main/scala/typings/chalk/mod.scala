@@ -6,7 +6,6 @@ import typings.chalk.chalkBooleans.`false`
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,8 @@ This simply means that `chalk.red.yellow.green` is equivalent to `chalk.green`.
 /* Inlined chalk.chalk.Chalk & chalk.chalk.ChalkFunction & {  supportsColor :chalk.chalk.ColorSupport | false,   Level :chalk.chalk.Level,   Color :chalk.chalk.Color,   ForegroundColor :chalk.chalk.ForegroundColor,   BackgroundColor :chalk.chalk.BackgroundColor,   Modifiers :chalk.chalk.Modifiers,   stderr :chalk.chalk.Chalk & {  supportsColor :chalk.chalk.ColorSupport | false}} */
 object mod {
   
-  @JSImport("chalk", JSImport.Namespace)
-  @js.native
-  def apply(text: js.Any*): String = js.native
+  @scala.inline
+  def apply(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -39,9 +37,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", JSImport.Namespace)
-  @js.native
-  def apply(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def apply(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", JSImport.Namespace)
   @js.native
@@ -390,7 +387,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("chalk", "Instance")
   @js.native
-  class InstanceCls () extends Chalk {
+  class InstanceCls ()
+    extends StObject
+       with Chalk {
     def this(options: Options) = this()
   }
   
@@ -455,16 +454,14 @@ object mod {
   		30 <= code && code < 38 || 90 <= code && code < 98
   		For example, 31 for red, 91 for redBright.
   		*/
-  @JSImport("chalk", "ansi")
-  @js.native
-  def ansi(code: Double): Chalk = js.native
+  @scala.inline
+  def ansi(code: Double): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi")(code.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   /**
   		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
   		*/
-  @JSImport("chalk", "ansi256")
-  @js.native
-  def ansi256(index: Double): Chalk = js.native
+  @scala.inline
+  def ansi256(index: Double): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi256")(index.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   /**
   		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set background color.
@@ -472,23 +469,20 @@ object mod {
   		For example, 31 for red, 91 for redBright.
   		Use the foreground code, not the background code (for example, not 41, nor 101).
   		*/
-  @JSImport("chalk", "bgAnsi")
-  @js.native
-  def bgAnsi(code: Double): Chalk = js.native
+  @scala.inline
+  def bgAnsi(code: Double): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("bgAnsi")(code.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   /**
   		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
   		*/
-  @JSImport("chalk", "bgAnsi256")
-  @js.native
-  def bgAnsi256(index: Double): Chalk = js.native
+  @scala.inline
+  def bgAnsi256(index: Double): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("bgAnsi256")(index.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   @JSImport("chalk", "bgBlack")
   @js.native
   val bgBlack: Chalk = js.native
-  @JSImport("chalk", "bgBlack")
-  @js.native
-  def bgBlack(text: js.Any*): String = js.native
+  @scala.inline
+  def bgBlack(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -507,16 +501,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgBlack")
-  @js.native
-  def bgBlack(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgBlack(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgBlackBright")
   @js.native
   val bgBlackBright: Chalk = js.native
-  @JSImport("chalk", "bgBlackBright")
-  @js.native
-  def bgBlackBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgBlackBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlackBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -535,16 +527,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgBlackBright")
-  @js.native
-  def bgBlackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgBlackBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgBlackBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgBlue")
   @js.native
   val bgBlue: Chalk = js.native
-  @JSImport("chalk", "bgBlue")
-  @js.native
-  def bgBlue(text: js.Any*): String = js.native
+  @scala.inline
+  def bgBlue(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -563,16 +553,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgBlue")
-  @js.native
-  def bgBlue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgBlue(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgBlueBright")
   @js.native
   val bgBlueBright: Chalk = js.native
-  @JSImport("chalk", "bgBlueBright")
-  @js.native
-  def bgBlueBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgBlueBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlueBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -591,16 +579,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgBlueBright")
-  @js.native
-  def bgBlueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgBlueBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgBlueBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgCyan")
   @js.native
   val bgCyan: Chalk = js.native
-  @JSImport("chalk", "bgCyan")
-  @js.native
-  def bgCyan(text: js.Any*): String = js.native
+  @scala.inline
+  def bgCyan(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -619,16 +605,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgCyan")
-  @js.native
-  def bgCyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgCyan(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgCyanBright")
   @js.native
   val bgCyanBright: Chalk = js.native
-  @JSImport("chalk", "bgCyanBright")
-  @js.native
-  def bgCyanBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgCyanBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyanBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -647,9 +631,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgCyanBright")
-  @js.native
-  def bgCyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgCyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgCyanBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /*
   		Alias for `bgBlackBright`.
@@ -660,9 +643,8 @@ object mod {
   /*
   		Alias for `bgBlackBright`.
   		*/
-  @JSImport("chalk", "bgGray")
-  @js.native
-  def bgGray(text: js.Any*): String = js.native
+  @scala.inline
+  def bgGray(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGray")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -684,16 +666,14 @@ object mod {
   /*
   		Alias for `bgBlackBright`.
   		*/
-  @JSImport("chalk", "bgGray")
-  @js.native
-  def bgGray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgGray(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgGray")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgGreen")
   @js.native
   val bgGreen: Chalk = js.native
-  @JSImport("chalk", "bgGreen")
-  @js.native
-  def bgGreen(text: js.Any*): String = js.native
+  @scala.inline
+  def bgGreen(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -712,16 +692,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgGreen")
-  @js.native
-  def bgGreen(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgGreen(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgGreenBright")
   @js.native
   val bgGreenBright: Chalk = js.native
-  @JSImport("chalk", "bgGreenBright")
-  @js.native
-  def bgGreenBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgGreenBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreenBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -740,9 +718,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgGreenBright")
-  @js.native
-  def bgGreenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgGreenBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgGreenBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /*
   		Alias for `bgBlackBright`.
@@ -753,9 +730,8 @@ object mod {
   /*
   		Alias for `bgBlackBright`.
   		*/
-  @JSImport("chalk", "bgGrey")
-  @js.native
-  def bgGrey(text: js.Any*): String = js.native
+  @scala.inline
+  def bgGrey(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGrey")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -777,9 +753,8 @@ object mod {
   /*
   		Alias for `bgBlackBright`.
   		*/
-  @JSImport("chalk", "bgGrey")
-  @js.native
-  def bgGrey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgGrey(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgGrey")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Use HEX value to set background color.
@@ -790,30 +765,26 @@ object mod {
   		chalk.bgHex('#DEADED');
   		```
   		*/
-  @JSImport("chalk", "bgHex")
-  @js.native
-  def bgHex(color: String): Chalk = js.native
+  @scala.inline
+  def bgHex(color: String): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("bgHex")(color.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   /**
   		Use HSL values to set background color.
   		*/
-  @JSImport("chalk", "bgHsl")
-  @js.native
-  def bgHsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+  @scala.inline
+  def bgHsl(hue: Double, saturation: Double, lightness: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("bgHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   /**
   		Use HSV values to set background color.
   		*/
-  @JSImport("chalk", "bgHsv")
-  @js.native
-  def bgHsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+  @scala.inline
+  def bgHsv(hue: Double, saturation: Double, value: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("bgHsv")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   /**
   		Use HWB values to set background color.
   		*/
-  @JSImport("chalk", "bgHwb")
-  @js.native
-  def bgHwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
+  @scala.inline
+  def bgHwb(hue: Double, whiteness: Double, blackness: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("bgHwb")(hue.asInstanceOf[js.Any], whiteness.asInstanceOf[js.Any], blackness.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   /**
   		Use keyword color value to set background color.
@@ -824,16 +795,14 @@ object mod {
   		chalk.bgKeyword('orange');
   		```
   		*/
-  @JSImport("chalk", "bgKeyword")
-  @js.native
-  def bgKeyword(color: String): Chalk = js.native
+  @scala.inline
+  def bgKeyword(color: String): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("bgKeyword")(color.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   @JSImport("chalk", "bgMagenta")
   @js.native
   val bgMagenta: Chalk = js.native
-  @JSImport("chalk", "bgMagenta")
-  @js.native
-  def bgMagenta(text: js.Any*): String = js.native
+  @scala.inline
+  def bgMagenta(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -852,16 +821,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgMagenta")
-  @js.native
-  def bgMagenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgMagenta(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgMagentaBright")
   @js.native
   val bgMagentaBright: Chalk = js.native
-  @JSImport("chalk", "bgMagentaBright")
-  @js.native
-  def bgMagentaBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgMagentaBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagentaBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -880,16 +847,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgMagentaBright")
-  @js.native
-  def bgMagentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgMagentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgMagentaBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgRed")
   @js.native
   val bgRed: Chalk = js.native
-  @JSImport("chalk", "bgRed")
-  @js.native
-  def bgRed(text: js.Any*): String = js.native
+  @scala.inline
+  def bgRed(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -908,16 +873,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgRed")
-  @js.native
-  def bgRed(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgRed(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgRedBright")
   @js.native
   val bgRedBright: Chalk = js.native
-  @JSImport("chalk", "bgRedBright")
-  @js.native
-  def bgRedBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgRedBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRedBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -936,23 +899,20 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgRedBright")
-  @js.native
-  def bgRedBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgRedBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgRedBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Use RGB values to set background color.
   		*/
-  @JSImport("chalk", "bgRgb")
-  @js.native
-  def bgRgb(red: Double, green: Double, blue: Double): Chalk = js.native
+  @scala.inline
+  def bgRgb(red: Double, green: Double, blue: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("bgRgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   @JSImport("chalk", "bgWhite")
   @js.native
   val bgWhite: Chalk = js.native
-  @JSImport("chalk", "bgWhite")
-  @js.native
-  def bgWhite(text: js.Any*): String = js.native
+  @scala.inline
+  def bgWhite(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -971,16 +931,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgWhite")
-  @js.native
-  def bgWhite(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgWhite(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgWhiteBright")
   @js.native
   val bgWhiteBright: Chalk = js.native
-  @JSImport("chalk", "bgWhiteBright")
-  @js.native
-  def bgWhiteBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgWhiteBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhiteBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -999,16 +957,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgWhiteBright")
-  @js.native
-  def bgWhiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgWhiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgWhiteBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgYellow")
   @js.native
   val bgYellow: Chalk = js.native
-  @JSImport("chalk", "bgYellow")
-  @js.native
-  def bgYellow(text: js.Any*): String = js.native
+  @scala.inline
+  def bgYellow(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1027,16 +983,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgYellow")
-  @js.native
-  def bgYellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgYellow(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "bgYellowBright")
   @js.native
   val bgYellowBright: Chalk = js.native
-  @JSImport("chalk", "bgYellowBright")
-  @js.native
-  def bgYellowBright(text: js.Any*): String = js.native
+  @scala.inline
+  def bgYellowBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellowBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1055,16 +1009,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "bgYellowBright")
-  @js.native
-  def bgYellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bgYellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bgYellowBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "black")
   @js.native
   val black: Chalk = js.native
-  @JSImport("chalk", "black")
-  @js.native
-  def black(text: js.Any*): String = js.native
+  @scala.inline
+  def black(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("black")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1083,16 +1035,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "black")
-  @js.native
-  def black(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def black(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("black")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "blackBright")
   @js.native
   val blackBright: Chalk = js.native
-  @JSImport("chalk", "blackBright")
-  @js.native
-  def blackBright(text: js.Any*): String = js.native
+  @scala.inline
+  def blackBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blackBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1111,16 +1061,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "blackBright")
-  @js.native
-  def blackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def blackBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("blackBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "blue")
   @js.native
   val blue: Chalk = js.native
-  @JSImport("chalk", "blue")
-  @js.native
-  def blue(text: js.Any*): String = js.native
+  @scala.inline
+  def blue(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1139,16 +1087,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "blue")
-  @js.native
-  def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def blue(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("blue")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "blueBright")
   @js.native
   val blueBright: Chalk = js.native
-  @JSImport("chalk", "blueBright")
-  @js.native
-  def blueBright(text: js.Any*): String = js.native
+  @scala.inline
+  def blueBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blueBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1167,9 +1113,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "blueBright")
-  @js.native
-  def blueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def blueBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("blueBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Modifier: Make text bold.
@@ -1180,9 +1125,8 @@ object mod {
   /**
   		Modifier: Make text bold.
   		*/
-  @JSImport("chalk", "bold")
-  @js.native
-  def bold(text: js.Any*): String = js.native
+  @scala.inline
+  def bold(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bold")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1204,16 +1148,14 @@ object mod {
   /**
   		Modifier: Make text bold.
   		*/
-  @JSImport("chalk", "bold")
-  @js.native
-  def bold(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def bold(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bold")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "cyan")
   @js.native
   val cyan: Chalk = js.native
-  @JSImport("chalk", "cyan")
-  @js.native
-  def cyan(text: js.Any*): String = js.native
+  @scala.inline
+  def cyan(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1232,16 +1174,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "cyan")
-  @js.native
-  def cyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def cyan(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cyan")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "cyanBright")
   @js.native
   val cyanBright: Chalk = js.native
-  @JSImport("chalk", "cyanBright")
-  @js.native
-  def cyanBright(text: js.Any*): String = js.native
+  @scala.inline
+  def cyanBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cyanBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1260,9 +1200,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "cyanBright")
-  @js.native
-  def cyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def cyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cyanBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Modifier: Emitting only a small amount of light.
@@ -1273,9 +1212,8 @@ object mod {
   /**
   		Modifier: Emitting only a small amount of light.
   		*/
-  @JSImport("chalk", "dim")
-  @js.native
-  def dim(text: js.Any*): String = js.native
+  @scala.inline
+  def dim(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dim")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1297,9 +1235,8 @@ object mod {
   /**
   		Modifier: Emitting only a small amount of light.
   		*/
-  @JSImport("chalk", "dim")
-  @js.native
-  def dim(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def dim(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dim")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /*
   		Alias for `blackBright`.
@@ -1310,9 +1247,8 @@ object mod {
   /*
   		Alias for `blackBright`.
   		*/
-  @JSImport("chalk", "gray")
-  @js.native
-  def gray(text: js.Any*): String = js.native
+  @scala.inline
+  def gray(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1334,16 +1270,14 @@ object mod {
   /*
   		Alias for `blackBright`.
   		*/
-  @JSImport("chalk", "gray")
-  @js.native
-  def gray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def gray(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gray")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "green")
   @js.native
   val green: Chalk = js.native
-  @JSImport("chalk", "green")
-  @js.native
-  def green(text: js.Any*): String = js.native
+  @scala.inline
+  def green(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("green")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1362,16 +1296,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "green")
-  @js.native
-  def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def green(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("green")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "greenBright")
   @js.native
   val greenBright: Chalk = js.native
-  @JSImport("chalk", "greenBright")
-  @js.native
-  def greenBright(text: js.Any*): String = js.native
+  @scala.inline
+  def greenBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("greenBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1390,9 +1322,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "greenBright")
-  @js.native
-  def greenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def greenBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("greenBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /*
   		Alias for `blackBright`.
@@ -1403,9 +1334,8 @@ object mod {
   /*
   		Alias for `blackBright`.
   		*/
-  @JSImport("chalk", "grey")
-  @js.native
-  def grey(text: js.Any*): String = js.native
+  @scala.inline
+  def grey(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("grey")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1427,9 +1357,8 @@ object mod {
   /*
   		Alias for `blackBright`.
   		*/
-  @JSImport("chalk", "grey")
-  @js.native
-  def grey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def grey(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("grey")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Use HEX value to set text color.
@@ -1440,9 +1369,8 @@ object mod {
   		chalk.hex('#DEADED');
   		```
   		*/
-  @JSImport("chalk", "hex")
-  @js.native
-  def hex(color: String): Chalk = js.native
+  @scala.inline
+  def hex(color: String): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(color.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   /**
   		Modifier: Prints the text, but makes it invisible.
@@ -1453,9 +1381,8 @@ object mod {
   /**
   		Modifier: Prints the text, but makes it invisible.
   		*/
-  @JSImport("chalk", "hidden")
-  @js.native
-  def hidden(text: js.Any*): String = js.native
+  @scala.inline
+  def hidden(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1477,30 +1404,26 @@ object mod {
   /**
   		Modifier: Prints the text, but makes it invisible.
   		*/
-  @JSImport("chalk", "hidden")
-  @js.native
-  def hidden(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def hidden(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hidden")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Use HSL values to set text color.
   		*/
-  @JSImport("chalk", "hsl")
-  @js.native
-  def hsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+  @scala.inline
+  def hsl(hue: Double, saturation: Double, lightness: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   /**
   		Use HSV values to set text color.
   		*/
-  @JSImport("chalk", "hsv")
-  @js.native
-  def hsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+  @scala.inline
+  def hsv(hue: Double, saturation: Double, value: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   /**
   		Use HWB values to set text color.
   		*/
-  @JSImport("chalk", "hwb")
-  @js.native
-  def hwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
+  @scala.inline
+  def hwb(hue: Double, whiteness: Double, blackness: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(hue.asInstanceOf[js.Any], whiteness.asInstanceOf[js.Any], blackness.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   /**
   		Modifier: Inverse background and foreground colors.
@@ -1511,9 +1434,8 @@ object mod {
   /**
   		Modifier: Inverse background and foreground colors.
   		*/
-  @JSImport("chalk", "inverse")
-  @js.native
-  def inverse(text: js.Any*): String = js.native
+  @scala.inline
+  def inverse(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inverse")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1535,9 +1457,8 @@ object mod {
   /**
   		Modifier: Inverse background and foreground colors.
   		*/
-  @JSImport("chalk", "inverse")
-  @js.native
-  def inverse(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def inverse(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inverse")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Modifier: Make text italic. (Not widely supported)
@@ -1548,9 +1469,8 @@ object mod {
   /**
   		Modifier: Make text italic. (Not widely supported)
   		*/
-  @JSImport("chalk", "italic")
-  @js.native
-  def italic(text: js.Any*): String = js.native
+  @scala.inline
+  def italic(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("italic")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1572,9 +1492,8 @@ object mod {
   /**
   		Modifier: Make text italic. (Not widely supported)
   		*/
-  @JSImport("chalk", "italic")
-  @js.native
-  def italic(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def italic(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("italic")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Use keyword color value to set text color.
@@ -1585,9 +1504,8 @@ object mod {
   		chalk.keyword('orange');
   		```
   		*/
-  @JSImport("chalk", "keyword")
-  @js.native
-  def keyword(color: String): Chalk = js.native
+  @scala.inline
+  def keyword(color: String): Chalk = ^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(color.asInstanceOf[js.Any]).asInstanceOf[Chalk]
   
   /**
   		The color support for Chalk.
@@ -1607,9 +1525,8 @@ object mod {
   @JSImport("chalk", "magenta")
   @js.native
   val magenta: Chalk = js.native
-  @JSImport("chalk", "magenta")
-  @js.native
-  def magenta(text: js.Any*): String = js.native
+  @scala.inline
+  def magenta(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1628,16 +1545,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "magenta")
-  @js.native
-  def magenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def magenta(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("magenta")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "magentaBright")
   @js.native
   val magentaBright: Chalk = js.native
-  @JSImport("chalk", "magentaBright")
-  @js.native
-  def magentaBright(text: js.Any*): String = js.native
+  @scala.inline
+  def magentaBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("magentaBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1656,16 +1571,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "magentaBright")
-  @js.native
-  def magentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def magentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("magentaBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "red")
   @js.native
   val red: Chalk = js.native
-  @JSImport("chalk", "red")
-  @js.native
-  def red(text: js.Any*): String = js.native
+  @scala.inline
+  def red(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1684,16 +1597,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "red")
-  @js.native
-  def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def red(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("red")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "redBright")
   @js.native
   val redBright: Chalk = js.native
-  @JSImport("chalk", "redBright")
-  @js.native
-  def redBright(text: js.Any*): String = js.native
+  @scala.inline
+  def redBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("redBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1712,9 +1623,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "redBright")
-  @js.native
-  def redBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def redBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("redBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Modifier: Resets the current color chain.
@@ -1725,9 +1635,8 @@ object mod {
   /**
   		Modifier: Resets the current color chain.
   		*/
-  @JSImport("chalk", "reset")
-  @js.native
-  def reset(text: js.Any*): String = js.native
+  @scala.inline
+  def reset(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1749,23 +1658,20 @@ object mod {
   /**
   		Modifier: Resets the current color chain.
   		*/
-  @JSImport("chalk", "reset")
-  @js.native
-  def reset(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def reset(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Use RGB values to set text color.
   		*/
-  @JSImport("chalk", "rgb")
-  @js.native
-  def rgb(red: Double, green: Double, blue: Double): Chalk = js.native
+  @scala.inline
+  def rgb(red: Double, green: Double, blue: Double): Chalk = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Chalk]
   
   @JSImport("chalk", "stderr")
   @js.native
   def stderr: ChalksupportsColorColorSu = js.native
-  @JSImport("chalk", "stderr")
-  @js.native
-  def stderr(text: js.Any*): String = js.native
+  @scala.inline
+  def stderr(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1784,9 +1690,8 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "stderr")
-  @js.native
-  def stderr(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def stderr(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   @scala.inline
   def stderr_=(x: ChalksupportsColorColorSu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stderr")(x.asInstanceOf[js.Any])
   
@@ -1799,9 +1704,8 @@ object mod {
   /**
   		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
   		*/
-  @JSImport("chalk", "strikethrough")
-  @js.native
-  def strikethrough(text: js.Any*): String = js.native
+  @scala.inline
+  def strikethrough(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1823,9 +1727,8 @@ object mod {
   /**
   		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
   		*/
-  @JSImport("chalk", "strikethrough")
-  @js.native
-  def strikethrough(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def strikethrough(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "supportsColor")
   @js.native
@@ -1842,9 +1745,8 @@ object mod {
   /**
   		Modifier: Make text underline. (Not widely supported)
   		*/
-  @JSImport("chalk", "underline")
-  @js.native
-  def underline(text: js.Any*): String = js.native
+  @scala.inline
+  def underline(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("underline")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1866,9 +1768,8 @@ object mod {
   /**
   		Modifier: Make text underline. (Not widely supported)
   		*/
-  @JSImport("chalk", "underline")
-  @js.native
-  def underline(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def underline(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("underline")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   		Modifier: Prints the text only when Chalk has a color support level > 0.
@@ -1881,9 +1782,8 @@ object mod {
   		Modifier: Prints the text only when Chalk has a color support level > 0.
   		Can be useful for things that are purely cosmetic.
   		*/
-  @JSImport("chalk", "visible")
-  @js.native
-  def visible(text: js.Any*): String = js.native
+  @scala.inline
+  def visible(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("visible")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1906,16 +1806,14 @@ object mod {
   		Modifier: Prints the text only when Chalk has a color support level > 0.
   		Can be useful for things that are purely cosmetic.
   		*/
-  @JSImport("chalk", "visible")
-  @js.native
-  def visible(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def visible(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("visible")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "white")
   @js.native
   val white: Chalk = js.native
-  @JSImport("chalk", "white")
-  @js.native
-  def white(text: js.Any*): String = js.native
+  @scala.inline
+  def white(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("white")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1934,16 +1832,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "white")
-  @js.native
-  def white(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def white(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("white")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "whiteBright")
   @js.native
   val whiteBright: Chalk = js.native
-  @JSImport("chalk", "whiteBright")
-  @js.native
-  def whiteBright(text: js.Any*): String = js.native
+  @scala.inline
+  def whiteBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("whiteBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1962,16 +1858,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "whiteBright")
-  @js.native
-  def whiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def whiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("whiteBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "yellow")
   @js.native
   val yellow: Chalk = js.native
-  @JSImport("chalk", "yellow")
-  @js.native
-  def yellow(text: js.Any*): String = js.native
+  @scala.inline
+  def yellow(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -1990,16 +1884,14 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "yellow")
-  @js.native
-  def yellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def yellow(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("yellow")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("chalk", "yellowBright")
   @js.native
   val yellowBright: Chalk = js.native
-  @JSImport("chalk", "yellowBright")
-  @js.native
-  def yellowBright(text: js.Any*): String = js.native
+  @scala.inline
+  def yellowBright(text: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yellowBright")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
   		Use a template string.
   		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -2018,12 +1910,13 @@ object mod {
   		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
   		```
   		*/
-  @JSImport("chalk", "yellowBright")
-  @js.native
-  def yellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+  @scala.inline
+  def yellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("yellowBright")(text.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
-  trait Chalk extends ChalkFunction {
+  trait Chalk
+    extends StObject
+       with ChalkFunction {
     
     /**
     		Return a new Chalk instance.
@@ -3350,28 +3243,27 @@ object mod {
   /**
   	Detect whether the terminal supports color.
   	*/
-  @js.native
   trait ColorSupport extends StObject {
     
     /**
     		Return whether Chalk supports Truecolor 16 million colors.
     		*/
-    var has16m: Boolean = js.native
+    var has16m: Boolean
     
     /**
     		Return whether Chalk supports ANSI 256 colors.
     		*/
-    var has256: Boolean = js.native
+    var has256: Boolean
     
     /**
     		Return whether Chalk supports basic 16 colors.
     		*/
-    var hasBasic: Boolean = js.native
+    var hasBasic: Boolean
     
     /**
     		The color level used by Chalk.
     		*/
-    var level: Level = js.native
+    var level: Level
   }
   object ColorSupport {
     
@@ -3427,7 +3319,6 @@ object mod {
     def `3`: typings.chalk.chalkNumbers.`3` = 3.asInstanceOf[typings.chalk.chalkNumbers.`3`]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -3439,7 +3330,7 @@ object mod {
     		- `2` - ANSI 256 colors support.
     		- `3` - Truecolor 16 million colors support.
     		*/
-    var level: js.UndefOr[Level] = js.native
+    var level: js.UndefOr[Level] = js.undefined
   }
   object Options {
     

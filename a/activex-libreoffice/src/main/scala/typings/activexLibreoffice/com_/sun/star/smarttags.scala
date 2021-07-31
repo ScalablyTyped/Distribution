@@ -15,7 +15,6 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextMarkup
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smarttags {
@@ -65,8 +64,9 @@ object smarttags {
   }
   
   /** provides access to a range based smart tag recognizer. */
-  @js.native
-  trait XRangeBasedSmartTagRecognizer extends XInitialization {
+  trait XRangeBasedSmartTagRecognizer
+    extends StObject
+       with XInitialization {
     
     /**
       * recognizes smart tags.
@@ -82,14 +82,14 @@ object smarttags {
       xTextMarkup: XTextMarkup,
       aApplicationName: String,
       xController: XController
-    ): Unit = js.native
+    ): Unit
   }
   object XRangeBasedSmartTagRecognizer {
     
     @scala.inline
     def apply(
       acquire: () => Unit,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       recognizeTextRange: (XTextRange, SmartTagRecognizerMode, XTextMarkup, String, XController) => Unit,
       release: () => Unit
@@ -110,11 +110,12 @@ object smarttags {
     * provides access to smart tag actions.
     * @since OOo 2.3
     */
-  @js.native
-  trait XSmartTagAction extends XInitialization {
+  trait XSmartTagAction
+    extends StObject
+       with XInitialization {
     
     /** the number of smart tag types supported by this action component. */
-    var SmartTagCount: Double = js.native
+    var SmartTagCount: Double
     
     /**
       * obtains a caption for a specified action for use in user interfaces.
@@ -138,7 +139,7 @@ object smarttags {
       aXML: String,
       xController: XController,
       xTarget: XTextRange
-    ): String = js.native
+    ): String
     
     /**
       * obtains the number of actions provided for a specified smart tag type.
@@ -147,7 +148,7 @@ object smarttags {
       * @param xProperties Contains the smart tag properties collected by the smart tag recognizer.
       * @returns the number of actions available for the given smart tag type.
       */
-    def getActionCount(aSmartTagName: String, xController: XController, xProperties: XStringKeyMap): Double = js.native
+    def getActionCount(aSmartTagName: String, xController: XController, xProperties: XStringKeyMap): Double
     
     /**
       * obtains a unique integer identifier for an action.
@@ -157,7 +158,7 @@ object smarttags {
       * @returns the unique integer identifier for the requested action.
       * @throws com::sun::star::lang::IllegalArgumentException if the specified nActionIndex is greater than the number of available actions for the specified sm
       */
-    def getActionID(aSmartTagName: String, nActionIndex: Double, xController: XController): Double = js.native
+    def getActionID(aSmartTagName: String, nActionIndex: Double, xController: XController): Double
     
     /**
       * obtains a language independent name of an action.
@@ -166,21 +167,21 @@ object smarttags {
       * @returns the language independent name of the specified action.
       * @throws com::sun::star::lang::IllegalArgumentException if the ActionID is not recognized.
       */
-    def getActionNameFromID(nActionID: Double, xController: XController): String = js.native
+    def getActionNameFromID(nActionID: Double, xController: XController): String
     
     /**
       * obtains a detailed description of this action component.
       * @param aLocale Is used for localization of the description.
       * @returns the description of the action component.
       */
-    def getDescription(aLocale: Locale): String = js.native
+    def getDescription(aLocale: Locale): String
     
     /**
       * obtains a name that describes this action component.
       * @param aLocale Is used for localization of the name.
       * @returns the name describing the action component.
       */
-    def getName(aLocale: Locale): String = js.native
+    def getName(aLocale: Locale): String
     
     /**
       * obtains the caption of the smart tag type for using in user interfaces.
@@ -189,7 +190,7 @@ object smarttags {
       * @returns the caption associated with the smart tag type.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount
       */
-    def getSmartTagCaption(nSmartTagIndex: Double, aLocale: Locale): String = js.native
+    def getSmartTagCaption(nSmartTagIndex: Double, aLocale: Locale): String
     
     /**
       * obtains the name of one specific smart tag type supported by this action component.
@@ -197,7 +198,7 @@ object smarttags {
       * @returns an unique name of the smart tag type. Smart tag type names are always in the format of namespaceURI::tagname.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount.
       */
-    def getSmartTagName(nSmartTagIndex: Double): String = js.native
+    def getSmartTagName(nSmartTagIndex: Double): String
     
     /**
       * invokes an action.
@@ -220,7 +221,7 @@ object smarttags {
       aText: String,
       aXML: String,
       aLocale: Locale
-    ): Unit = js.native
+    ): Unit
     
     /**
       * determines whether a caption is dynamic.
@@ -231,7 +232,7 @@ object smarttags {
       * @returns a boolean indicating whether the caption is dynamic.
       * @throws com::sun::star::lang::IllegalArgumentException if the ActionID is not recognized.
       */
-    def isCaptionDynamic(nActionID: Double, aApplicationName: String, xController: XController, aLocale: Locale): Boolean = js.native
+    def isCaptionDynamic(nActionID: Double, aApplicationName: String, xController: XController, aLocale: Locale): Boolean
     
     /**
       * determines whether the smart tag indicator should be visible.
@@ -242,7 +243,7 @@ object smarttags {
       * @returns a boolean indicating whether the smart tag indicator should be visible.
       * @throws com::sun::star::lang::IllegalArgumentException if the ActionID is not recognized.
       */
-    def isShowSmartTagIndicator(nActionID: Double, aApplicationName: String, xController: XController, aLocale: Locale): Boolean = js.native
+    def isShowSmartTagIndicator(nActionID: Double, aApplicationName: String, xController: XController, aLocale: Locale): Boolean
   }
   object XSmartTagAction {
     
@@ -258,7 +259,7 @@ object smarttags {
       getName: Locale => String,
       getSmartTagCaption: (Double, Locale) => String,
       getSmartTagName: Double => String,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       invokeAction: (Double, String, XController, XTextRange, XStringKeyMap, String, String, Locale) => Unit,
       isCaptionDynamic: (Double, String, XController, Locale) => Boolean,
       isShowSmartTagIndicator: (Double, String, XController, Locale) => Boolean,
@@ -314,11 +315,12 @@ object smarttags {
     * provides access to a smart tag recognizer.
     * @since OOo 2.3
     */
-  @js.native
-  trait XSmartTagRecognizer extends XInitialization {
+  trait XSmartTagRecognizer
+    extends StObject
+       with XInitialization {
     
     /** The number of smart tag types supported by this recognizer component. */
-    var SmartTagCount: Double = js.native
+    var SmartTagCount: Double
     
     /**
       * launches the property page for a smart tag type.
@@ -326,21 +328,21 @@ object smarttags {
       * @param aLocale Is used for localization of the property page.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount
       */
-    def displayPropertyPage(nSmartTagIndex: Double, aLocale: Locale): Unit = js.native
+    def displayPropertyPage(nSmartTagIndex: Double, aLocale: Locale): Unit
     
     /**
       * obtains a detailed description of this recognizer component.
       * @param aLocale Is used for localization of the description.
       * @returns the description of the recognizer component.
       */
-    def getDescription(aLocale: Locale): String = js.native
+    def getDescription(aLocale: Locale): String
     
     /**
       * obtains a name that describes this recognizer component.
       * @param aLocale Is used for localization of the name.
       * @returns the name of the recognizer component.
       */
-    def getName(aLocale: Locale): String = js.native
+    def getName(aLocale: Locale): String
     
     /**
       * obtains the URL that can be used to download new or updated recognizers.
@@ -348,7 +350,7 @@ object smarttags {
       * @returns the download URL.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount
       */
-    def getSmartTagDownloadURL(nSmartTagIndex: Double): String = js.native
+    def getSmartTagDownloadURL(nSmartTagIndex: Double): String
     
     /**
       * obtains the name of one specific smart tag type supported by this recognizer component.
@@ -356,7 +358,7 @@ object smarttags {
       * @returns the unique name of the smart tag type. Smart tag type names are always in the format of namespaceURI::tagname.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount
       */
-    def getSmartTagName(nSmartTagIndex: Double): String = js.native
+    def getSmartTagName(nSmartTagIndex: Double): String
     
     /**
       * indicates whether there is a property page for a smart tag type.
@@ -365,7 +367,7 @@ object smarttags {
       * @returns true if there is a property page matching the requested smart tag type and locale.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if nSmartTagIndex is greater than SmartTagCount
       */
-    def hasPropertyPage(nSmartTagIndex: Double, aLocale: Locale): Boolean = js.native
+    def hasPropertyPage(nSmartTagIndex: Double, aLocale: Locale): Boolean
     
     /**
       * recognizes smart tags.
@@ -389,7 +391,7 @@ object smarttags {
       aApplicationName: String,
       xController: XController,
       xTokenizer: XBreakIterator
-    ): Unit = js.native
+    ): Unit
   }
   object XSmartTagRecognizer {
     
@@ -403,7 +405,7 @@ object smarttags {
       getSmartTagDownloadURL: Double => String,
       getSmartTagName: Double => String,
       hasPropertyPage: (Double, Locale) => Boolean,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       recognize: (String, Double, Double, SmartTagRecognizerMode, Locale, XTextMarkup, String, XController, XBreakIterator) => Unit,
       release: () => Unit

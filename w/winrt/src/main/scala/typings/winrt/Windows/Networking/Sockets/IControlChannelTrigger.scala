@@ -4,31 +4,31 @@ import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
 import typings.winrt.Windows.Foundation.IClosable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IControlChannelTrigger extends IClosable {
+trait IControlChannelTrigger
+  extends StObject
+     with IClosable {
   
-  var controlChannelTriggerId: String = js.native
+  var controlChannelTriggerId: String
   
-  var currentKeepAliveIntervalInMinutes: Double = js.native
+  var currentKeepAliveIntervalInMinutes: Double
   
-  def decreaseNetworkKeepAliveInterval(): Unit = js.native
+  def decreaseNetworkKeepAliveInterval(): Unit
   
-  def flushTransport(): Unit = js.native
+  def flushTransport(): Unit
   
-  var keepAliveTrigger: IBackgroundTrigger = js.native
+  var keepAliveTrigger: IBackgroundTrigger
   
-  var pushNotificationTrigger: IBackgroundTrigger = js.native
+  var pushNotificationTrigger: IBackgroundTrigger
   
-  var serverKeepAliveIntervalInMinutes: Double = js.native
+  var serverKeepAliveIntervalInMinutes: Double
   
-  var transportObject: js.Any = js.native
+  var transportObject: js.Any
   
-  def usingTransport(transport: js.Any): Unit = js.native
+  def usingTransport(transport: js.Any): Unit
   
-  def waitForPushEnabled(): ControlChannelTriggerStatus = js.native
+  def waitForPushEnabled(): ControlChannelTriggerStatus
 }
 object IControlChannelTrigger {
   

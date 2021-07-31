@@ -2,49 +2,49 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Video {
   
-  @js.native
-  trait EmbedCodeConfiguration extends ClientValueObject {
+  trait EmbedCodeConfiguration
+    extends StObject
+       with ClientValueObject {
     
-    def get_autoPlay(): Boolean = js.native
+    def get_autoPlay(): Boolean
     
-    def get_displayTitle(): Boolean = js.native
+    def get_displayTitle(): Boolean
     
-    def get_linkToOwnerProfilePage(): Boolean = js.native
+    def get_linkToOwnerProfilePage(): Boolean
     
-    def get_linkToVideoHomePage(): Boolean = js.native
+    def get_linkToVideoHomePage(): Boolean
     
-    def get_loop(): Boolean = js.native
+    def get_loop(): Boolean
     
-    def get_pixelHeight(): Double = js.native
+    def get_pixelHeight(): Double
     
-    def get_pixelWidth(): Double = js.native
+    def get_pixelWidth(): Double
     
-    def get_previewImagePath(): String = js.native
+    def get_previewImagePath(): String
     
-    def get_startTime(): Double = js.native
+    def get_startTime(): Double
     
-    def set_autoPlay(value: Boolean): Boolean = js.native
+    def set_autoPlay(value: Boolean): Boolean
     
-    def set_displayTitle(value: Boolean): Boolean = js.native
+    def set_displayTitle(value: Boolean): Boolean
     
-    def set_linkToOwnerProfilePage(value: Boolean): Boolean = js.native
+    def set_linkToOwnerProfilePage(value: Boolean): Boolean
     
-    def set_linkToVideoHomePage(value: Boolean): Boolean = js.native
+    def set_linkToVideoHomePage(value: Boolean): Boolean
     
-    def set_loop(value: Boolean): Boolean = js.native
+    def set_loop(value: Boolean): Boolean
     
-    def set_pixelHeight(value: Double): Double = js.native
+    def set_pixelHeight(value: Double): Double
     
-    def set_pixelWidth(value: Double): Double = js.native
+    def set_pixelWidth(value: Double): Double
     
-    def set_previewImagePath(value: String): String = js.native
+    def set_previewImagePath(value: String): String
     
-    def set_startTime(value: Double): Double = js.native
+    def set_startTime(value: Double): Double
   }
   object EmbedCodeConfiguration {
     

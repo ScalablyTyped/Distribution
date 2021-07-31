@@ -6,15 +6,13 @@ import typings.rbx.rbxStrings.left
 import typings.rbx.rbxStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var only: js.UndefOr[Boolean] = js.native
+  var only: js.UndefOr[Boolean] = js.undefined
   
-  var value: centered | justified | left | right = js.native
+  var value: centered | justified | left | right
 }
 object `3` {
   

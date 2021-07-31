@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDatastoreRequest extends StObject {
   
   /**
     * The name of the data store to delete.
     */
-  var datastoreName: DatastoreName = js.native
+  var datastoreName: DatastoreName
 }
 object DeleteDatastoreRequest {
   

@@ -2,16 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandMetadataOption
-  extends typings.ionicCliFramework.definitionsMod.CommandMetadataOption {
+  extends StObject
+     with typings.ionicCliFramework.definitionsMod.CommandMetadataOption {
   
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
-  var `private`: js.UndefOr[Boolean] = js.native
+  var `private`: js.UndefOr[Boolean] = js.undefined
 }
 object CommandMetadataOption {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Principal extends StObject {
   
   /**
     * The ID of the resource.
     */
-  var Id: js.UndefOr[IdType] = js.native
+  var Id: js.UndefOr[IdType] = js.undefined
   
   /**
     * The permission information for the resource.
     */
-  var Roles: js.UndefOr[PermissionInfoList] = js.native
+  var Roles: js.UndefOr[PermissionInfoList] = js.undefined
   
   /**
     * The type of resource.
     */
-  var Type: js.UndefOr[PrincipalType] = js.native
+  var Type: js.UndefOr[PrincipalType] = js.undefined
 }
 object Principal {
   

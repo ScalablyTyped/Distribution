@@ -2,46 +2,44 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
   /**
     * The Amazon Resource Name that uniquely identifies this table.
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the Timestream table was created. 
     */
-  var CreationTime: js.UndefOr[Date] = js.native
+  var CreationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the Timestream database that contains this table.
     */
-  var DatabaseName: js.UndefOr[ResourceName] = js.native
+  var DatabaseName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The time when the Timestream table was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Date] = js.native
+  var LastUpdatedTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The retention duration for the memory store and magnetic store.
     */
-  var RetentionProperties: js.UndefOr[typings.awsSdk.timestreamwriteMod.RetentionProperties] = js.native
+  var RetentionProperties: js.UndefOr[typings.awsSdk.timestreamwriteMod.RetentionProperties] = js.undefined
   
   /**
     * The name of the Timestream table.
     */
-  var TableName: js.UndefOr[ResourceName] = js.native
+  var TableName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The current state of the table:    DELETING - The table is being deleted.    ACTIVE - The table is ready for use.  
     */
-  var TableStatus: js.UndefOr[typings.awsSdk.timestreamwriteMod.TableStatus] = js.native
+  var TableStatus: js.UndefOr[typings.awsSdk.timestreamwriteMod.TableStatus] = js.undefined
 }
 object Table {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnDemandProvisioningSpecification extends StObject {
   
   /**
     *  Specifies the strategy to use in launching On-Demand instance fleets. Currently, the only option is lowest-price (the default), which launches the lowest price first. 
     */
-  var AllocationStrategy: OnDemandProvisioningAllocationStrategy = js.native
+  var AllocationStrategy: OnDemandProvisioningAllocationStrategy
 }
 object OnDemandProvisioningSpecification {
   

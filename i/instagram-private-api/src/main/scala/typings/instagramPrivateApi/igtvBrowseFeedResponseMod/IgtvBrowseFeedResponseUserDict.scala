@@ -2,63 +2,61 @@ package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvBrowseFeedResponseUserDict extends StObject {
   
-  var allowed_commenter_type: String = js.native
+  var allowed_commenter_type: String
   
-  var biography: String = js.native
+  var biography: String
   
-  var biography_with_entities: IgtvBrowseFeedResponseBiographyWithEntities = js.native
+  var biography_with_entities: IgtvBrowseFeedResponseBiographyWithEntities
   
-  var can_boost_post: Boolean = js.native
+  var can_boost_post: Boolean
   
-  var can_link_entities_in_bio: Boolean = js.native
+  var can_link_entities_in_bio: Boolean
   
-  var can_see_organic_insights: Boolean = js.native
+  var can_see_organic_insights: Boolean
   
-  var external_lynx_url: String = js.native
+  var external_lynx_url: String
   
-  var external_url: String = js.native
+  var external_url: String
   
-  var follower_count: Double = js.native
+  var follower_count: Double
   
-  var following_count: Double = js.native
+  var following_count: Double
   
-  var following_tag_count: Double = js.native
+  var following_tag_count: Double
   
-  var friendship_status: IgtvBrowseFeedResponseFriendshipStatus = js.native
+  var friendship_status: IgtvBrowseFeedResponseFriendshipStatus
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var has_anonymous_profile_picture: Boolean = js.native
+  var has_anonymous_profile_picture: Boolean
   
-  var has_biography_translation: Boolean = js.native
+  var has_biography_translation: Boolean
   
-  var has_placed_orders: Boolean = js.native
+  var has_placed_orders: Boolean
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var media_count: Double = js.native
+  var media_count: Double
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: String = js.native
+  var profile_pic_id: String
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var reel_auto_archive: String = js.native
+  var reel_auto_archive: String
   
-  var show_insights_terms: Boolean = js.native
+  var show_insights_terms: Boolean
   
-  var total_igtv_videos: Double = js.native
+  var total_igtv_videos: Double
   
-  var username: String = js.native
+  var username: String
 }
 object IgtvBrowseFeedResponseUserDict {
   

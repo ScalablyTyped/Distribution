@@ -5,17 +5,15 @@ import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentHighlightProvider extends StObject {
   
   /**
     * Provide a set of document highlights, like all occurrences of a variable or
     * all exit-points of a function.
     */
-  def provideDocumentHighlights(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[js.Array[DocumentHighlight]] = js.native
+  def provideDocumentHighlights(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[js.Array[DocumentHighlight]]
 }
 object DocumentHighlightProvider {
   

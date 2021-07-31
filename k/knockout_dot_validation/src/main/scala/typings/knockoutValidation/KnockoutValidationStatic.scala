@@ -3,7 +3,6 @@ package typings.knockoutValidation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,7 +28,7 @@ trait KnockoutValidationStatic extends StObject {
   def group(obj: js.Any, options: js.Any): KnockoutValidationErrors = js.native
   
   def init(): Unit = js.native
-  def init(options: js.UndefOr[scala.Nothing], force: Boolean): Unit = js.native
+  def init(options: Unit, force: Boolean): Unit = js.native
   def init(options: KnockoutValidationConfiguration): Unit = js.native
   def init(options: KnockoutValidationConfiguration, force: Boolean): Unit = js.native
   
@@ -42,7 +41,7 @@ trait KnockoutValidationStatic extends StObject {
   def parseInputValidationAttributes(
     element: Element,
     valueAccessor: js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
     ]
   ): Unit = js.native
   

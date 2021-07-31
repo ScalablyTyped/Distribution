@@ -2,7 +2,6 @@ package typings.bingmaps.global.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Microsoft.Maps.Layer")
@@ -12,6 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param id Unique string identifier for the layer.
   */
 class Layer ()
-  extends typings.bingmaps.Microsoft.Maps.Layer {
+  extends StObject
+     with typings.bingmaps.Microsoft.Maps.Layer {
   def this(id: String) = this()
+  
+  /** Clears all data in the layer. */
+  /* CompleteClass */
+  override def clear(): Unit = js.native
 }

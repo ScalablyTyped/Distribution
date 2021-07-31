@@ -1,11 +1,8 @@
-package typings.vkOpenapi.vk
+package typings.vkOpenapi.vk.OpenAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object OpenAPI {
-  
-  type Nullable[T] = js.UndefOr[T | scala.Null]
-}
+
+type Nullable[T] = js.UndefOr[T | scala.Null]

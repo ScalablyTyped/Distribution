@@ -10,30 +10,30 @@ import typings.xmlcreate.xmlEntityRefMod.IXmlEntityRefOptions
 import typings.xmlcreate.xmlProcInstMod.IXmlProcInstOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlElementMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlElement", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlElement[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlElement[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlElementOptions) = this()
   }
   
-  @js.native
   trait IXmlElementOptions extends StObject {
     
     /**
       * The name of the element.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Whether to replace any invalid characters in the name of the element
       * with the Unicode replacement character. By default, this is disabled.
       */
-    var replaceInvalidCharsInName: js.UndefOr[Boolean] = js.native
+    var replaceInvalidCharsInName: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use a self-closing tag if this element is empty.
@@ -49,7 +49,7 @@ object xmlElementMod {
       *
       * By default, this is enabled.
       */
-    var useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.native
+    var useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object IXmlElementOptions {
     

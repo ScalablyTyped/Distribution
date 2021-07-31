@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructuredQuery extends StObject {
   
   /** A end point for the query results. */
-  var endAt: js.UndefOr[Cursor] = js.native
+  var endAt: js.UndefOr[Cursor] = js.undefined
   
   /** The collections to query. */
-  var from: js.UndefOr[js.Array[CollectionSelector]] = js.native
+  var from: js.UndefOr[js.Array[CollectionSelector]] = js.undefined
   
   /** The maximum number of results to return. Applies after all other constraints. Must be >= 0 if specified. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** The number of results to skip. Applies before limit, but after all other constraints. Must be >= 0 if specified. */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The order to apply to the query results. Firestore guarantees a stable ordering through the following rules: * Any field required to appear in `order_by`, that is not already
@@ -27,16 +25,16 @@ trait StructuredQuery extends StObject {
     * __name__` * `SELECT * FROM Foo ORDER BY A DESC` becomes `SELECT * FROM Foo ORDER BY A DESC, __name__ DESC` * `SELECT * FROM Foo WHERE A > 1` becomes `SELECT * FROM Foo WHERE A > 1
     * ORDER BY A, __name__`
     */
-  var orderBy: js.UndefOr[js.Array[Order]] = js.native
+  var orderBy: js.UndefOr[js.Array[Order]] = js.undefined
   
   /** The projection to return. */
-  var select: js.UndefOr[Projection] = js.native
+  var select: js.UndefOr[Projection] = js.undefined
   
   /** A starting point for the query results. */
-  var startAt: js.UndefOr[Cursor] = js.native
+  var startAt: js.UndefOr[Cursor] = js.undefined
   
   /** The filter to apply. */
-  var where: js.UndefOr[Filter] = js.native
+  var where: js.UndefOr[Filter] = js.undefined
 }
 object StructuredQuery {
   

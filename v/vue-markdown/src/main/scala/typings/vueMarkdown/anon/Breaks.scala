@@ -2,29 +2,27 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Breaks extends StObject {
   
-  var breaks: Boolean = js.native
+  var breaks: Boolean
   
-  var highlight: js.Any = js.native
+  var highlight: js.Any
   
-  var html: Boolean = js.native
+  var html: Boolean
   
-  var langPrefix: String = js.native
+  var langPrefix: String
   
-  var linkify: Boolean = js.native
+  var linkify: Boolean
   
-  var maxNesting: Double = js.native
+  var maxNesting: Double
   
-  var quotes: String = js.native
+  var quotes: String
   
-  var typographer: Boolean = js.native
+  var typographer: Boolean
   
-  var xhtmlOut: Boolean = js.native
+  var xhtmlOut: Boolean
 }
 object Breaks {
   

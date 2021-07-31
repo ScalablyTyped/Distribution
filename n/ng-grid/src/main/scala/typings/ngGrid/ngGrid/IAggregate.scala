@@ -2,54 +2,52 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAggregate extends StObject {
   
-  var aggChildren: js.Array[_] = js.native
+  var aggChildren: js.Array[js.Any]
   
-  var aggIndex: Double = js.native
+  var aggIndex: Double
   
-  var aggLabelFilter: js.Any = js.native
+  var aggLabelFilter: js.Any
   
-  var children: js.Array[_] = js.native
+  var children: js.Array[js.Any]
   
-  var collapsed: Boolean = js.native
+  var collapsed: Boolean
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var entity: js.Any = js.native
+  var entity: js.Any
   
-  var field: String = js.native
+  var field: String
   
-  var groupInitState: Boolean = js.native
+  var groupInitState: Boolean
   
-  var isAggRow: Boolean = js.native
+  var isAggRow: Boolean
   
-  var label: String = js.native
+  var label: String
   
-  var offsetLeft: Double = js.native
+  var offsetLeft: Double
   
-  var offsetTop: Double = js.native
+  var offsetTop: Double
   
-  var parent: js.Any = js.native
+  var parent: js.Any
   
-  var rowFactory: IRowFactory = js.native
+  var rowFactory: IRowFactory
   
-  var rowHeight: Double = js.native
+  var rowHeight: Double
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
 }
 object IAggregate {
   
   @scala.inline
   def apply(
-    aggChildren: js.Array[_],
+    aggChildren: js.Array[js.Any],
     aggIndex: Double,
     aggLabelFilter: js.Any,
-    children: js.Array[_],
+    children: js.Array[js.Any],
     collapsed: Boolean,
     depth: Double,
     entity: js.Any,
@@ -72,7 +70,7 @@ object IAggregate {
   implicit class IAggregateMutableBuilder[Self <: IAggregate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAggChildren(value: js.Array[_]): Self = StObject.set(x, "aggChildren", value.asInstanceOf[js.Any])
+    def setAggChildren(value: js.Array[js.Any]): Self = StObject.set(x, "aggChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAggChildrenVarargs(value: js.Any*): Self = StObject.set(x, "aggChildren", js.Array(value :_*))
@@ -84,7 +82,7 @@ object IAggregate {
     def setAggLabelFilter(value: js.Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))

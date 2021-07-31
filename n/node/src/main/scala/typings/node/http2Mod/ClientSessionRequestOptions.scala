@@ -2,21 +2,19 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientSessionRequestOptions extends StObject {
   
-  var endStream: js.UndefOr[Boolean] = js.native
+  var endStream: js.UndefOr[Boolean] = js.undefined
   
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
-  var parent: js.UndefOr[Double] = js.native
+  var parent: js.UndefOr[Double] = js.undefined
   
-  var waitForTrailers: js.UndefOr[Boolean] = js.native
+  var waitForTrailers: js.UndefOr[Boolean] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object ClientSessionRequestOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAppInstanceRetentionSettingsResponse extends StObject {
   
   /**
     * The retention settings for the app instance.
     */
-  var AppInstanceRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceRetentionSettings] = js.native
+  var AppInstanceRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceRetentionSettings] = js.undefined
   
   /**
     * The timestamp representing the time at which the specified items are retained, in Epoch Seconds.
     */
-  var InitiateDeletionTimestamp: js.UndefOr[Timestamp] = js.native
+  var InitiateDeletionTimestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object GetAppInstanceRetentionSettingsResponse {
   

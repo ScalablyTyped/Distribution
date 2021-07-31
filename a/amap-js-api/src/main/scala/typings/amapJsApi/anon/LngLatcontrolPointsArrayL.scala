@@ -3,7 +3,6 @@ package typings.amapJsApi.anon
 import typings.amapJsApi.AMap.LngLat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined amap-js-api.AMap.LngLat & {  controlPoints :std.Array<amap-js-api.AMap.LngLat>} */

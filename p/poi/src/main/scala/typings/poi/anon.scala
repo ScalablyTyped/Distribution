@@ -16,17 +16,15 @@ import typings.poi.poiStrings.head
 import typings.poi.poiStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CacheDirectory extends StObject {
     
-    var cacheDirectory: String = js.native
+    var cacheDirectory: String
     
-    var cacheIdentifier: String = js.native
+    var cacheIdentifier: String
   }
   object CacheDirectory {
     
@@ -48,46 +46,45 @@ object anon {
   }
   
   /* Inlined std.Partial<html-webpack-plugin.html-webpack-plugin.Options> & {  entry :string,   chunks :std.Array<string> | undefined} */
-  @js.native
   trait PartialOptionsentrystring extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var chunks: (js.UndefOr[all | js.Array[String]]) with js.UndefOr[js.Array[String]] = js.native
+    var chunks: (js.UndefOr[all | js.Array[String]]) & js.UndefOr[js.Array[String]]
     
     var chunksSortMode: js.UndefOr[
         auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])
-      ] = js.native
+      ] = js.undefined
     
-    var entry: String = js.native
+    var entry: String
     
-    var excludeChunks: js.UndefOr[js.Array[String]] = js.native
+    var excludeChunks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var favicon: js.UndefOr[`false` | String] = js.native
+    var favicon: js.UndefOr[`false` | String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[Boolean] = js.native
+    var hash: js.UndefOr[Boolean] = js.undefined
     
-    var inject: js.UndefOr[`false` | `true` | body | head] = js.native
+    var inject: js.UndefOr[`false` | `true` | body | head] = js.undefined
     
     var meta: js.UndefOr[
         `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])])
-      ] = js.native
+      ] = js.undefined
     
-    var minify: js.UndefOr[auto | Boolean | MinifyOptions] = js.native
+    var minify: js.UndefOr[auto | Boolean | MinifyOptions] = js.undefined
     
-    var publicPath: js.UndefOr[String | auto] = js.native
+    var publicPath: js.UndefOr[String | auto] = js.undefined
     
-    var scriptLoading: js.UndefOr[blocking | defer] = js.native
+    var scriptLoading: js.UndefOr[blocking | defer] = js.undefined
     
-    var showErrors: js.UndefOr[Boolean] = js.native
+    var showErrors: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     var templateContent: js.UndefOr[
         `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
-      ] = js.native
+      ] = js.undefined
     
     var templateParameters: js.UndefOr[
         `false` | (js.Function4[
@@ -95,18 +92,18 @@ object anon {
           /* assets */ Css, 
           /* assetTags */ BodyTags, 
           /* options */ ProcessedOptions, 
-          StringDictionary[_] | js.Promise[StringDictionary[_]]
+          StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
         ]) | StringDictionary[js.Any]
-      ] = js.native
+      ] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var xhtml: js.UndefOr[Boolean] = js.native
+    var xhtml: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptionsentrystring {
     
     @scala.inline
-    def apply(chunks: (js.UndefOr[all | js.Array[String]]) with js.UndefOr[js.Array[String]], entry: String): PartialOptionsentrystring = {
+    def apply(chunks: (js.UndefOr[all | js.Array[String]]) & js.UndefOr[js.Array[String]], entry: String): PartialOptionsentrystring = {
       val __obj = js.Dynamic.literal(chunks = chunks.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialOptionsentrystring]
     }
@@ -121,7 +118,7 @@ object anon {
       def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
       @scala.inline
-      def setChunks(value: (js.UndefOr[all | js.Array[String]]) with js.UndefOr[js.Array[String]]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      def setChunks(value: (js.UndefOr[all | js.Array[String]]) & js.UndefOr[js.Array[String]]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChunksSortMode(value: auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])): Self = StObject.set(x, "chunksSortMode", value.asInstanceOf[js.Any])
@@ -219,13 +216,13 @@ object anon {
               /* assets */ Css, 
               /* assetTags */ BodyTags, 
               /* options */ ProcessedOptions, 
-              StringDictionary[_] | js.Promise[StringDictionary[_]]
+              StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
             ]) | StringDictionary[js.Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTemplateParametersFunction4(
-        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[_] | js.Promise[StringDictionary[_]]
+        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       @scala.inline

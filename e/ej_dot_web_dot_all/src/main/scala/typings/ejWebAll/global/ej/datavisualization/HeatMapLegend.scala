@@ -5,13 +5,13 @@ import typings.ejWebAll.ej.Model
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.datavisualization.HeatMapLegend")
 @js.native
 class HeatMapLegend protected ()
-  extends typings.ejWebAll.ej.datavisualization.HeatMapLegend {
+  extends StObject
+     with typings.ejWebAll.ej.datavisualization.HeatMapLegend {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: Model) = this()

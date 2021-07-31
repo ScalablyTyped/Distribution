@@ -24,11 +24,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Tags
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `contentControl.toJSON()`. */
-@js.native
 trait ContentControlData extends StObject {
   
   /**
@@ -37,7 +35,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var appearance: js.UndefOr[ContentControlAppearance | BoundingBox | Tags | Hidden] = js.native
+  var appearance: js.UndefOr[ContentControlAppearance | BoundingBox | Tags | Hidden] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var cannotDelete: js.UndefOr[Boolean] = js.native
+  var cannotDelete: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -53,7 +51,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var cannotEdit: js.UndefOr[Boolean] = js.native
+  var cannotEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -61,7 +59,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.native
+  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontData] = js.native
+  var font: js.UndefOr[FontData] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -93,7 +91,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.native
+  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
     *
@@ -101,7 +99,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lists: js.UndefOr[js.Array[ListData]] = js.native
+  var lists: js.UndefOr[js.Array[ListData]] = js.undefined
   
   /**
     *
@@ -109,7 +107,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.native
+  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   
   /**
     *
@@ -117,7 +115,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var placeholderText: js.UndefOr[String] = js.native
+  var placeholderText: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -125,7 +123,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var removeWhenEdited: js.UndefOr[Boolean] = js.native
+  var removeWhenEdited: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -133,7 +131,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -143,7 +141,7 @@ trait ContentControlData extends StObject {
     */
   var styleBuiltIn: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -153,7 +151,7 @@ trait ContentControlData extends StObject {
     */
   var subtype: js.UndefOr[
     ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -161,7 +159,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var tables: js.UndefOr[js.Array[TableData]] = js.native
+  var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
     *
@@ -169,7 +167,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -177,7 +175,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -185,7 +183,7 @@ trait ContentControlData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -195,7 +193,7 @@ trait ContentControlData extends StObject {
     */
   var `type`: js.UndefOr[
     ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText
-  ] = js.native
+  ] = js.undefined
 }
 object ContentControlData {
   

@@ -2,14 +2,12 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Subnetwork resource. (== resource_for beta.subnetworks ==) (==
   * resource_for v1.subnetworks ==)
   */
-@js.native
 trait SchemaSubnetwork extends StObject {
   
   /**
@@ -25,26 +23,26 @@ trait SchemaSubnetwork extends StObject {
     * subnetworks and automatically created subnetworks.  This field cannot be
     * set to true at resource creation time.
     */
-  var allowSubnetCidrRoutesOverlap: js.UndefOr[Boolean] = js.native
+  var allowSubnetCidrRoutesOverlap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource. This field can be set only at resource creation
     * time.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to enable flow logging for this subnetwork. If this field is not
     * explicitly set, it will not appear in get listings. If not set the
     * default behavior is to disable flow logging.
     */
-  var enableFlowLogs: js.UndefOr[Boolean] = js.native
+  var enableFlowLogs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this
@@ -54,19 +52,19 @@ trait SchemaSubnetwork extends StObject {
     * fail with error 412 conditionNotMet.  To see the latest fingerprint, make
     * a get() request to retrieve a Subnetwork.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The gateway address for default routes to reach destination
     * addresses outside this subnetwork.
     */
-  var gatewayAddress: js.UndefOr[String] = js.native
+  var gatewayAddress: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The range of internal addresses that are owned by this subnetwork.
@@ -75,20 +73,20 @@ trait SchemaSubnetwork extends StObject {
     * non-overlapping within a network. Only IPv4 is supported. This field can
     * be set only at resource creation time.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#subnetwork for
     * Subnetwork resources.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * This field denotes the logging options for the load balancer traffic
     * served by this backend service. If logging is enabled, logs will be
     * exported to Stackdriver.
     */
-  var logConfig: js.UndefOr[SchemaSubnetworkLogConfig] = js.native
+  var logConfig: js.UndefOr[SchemaSubnetworkLogConfig] = js.undefined
   
   /**
     * The name of the resource, provided by the client when initially creating
@@ -99,7 +97,7 @@ trait SchemaSubnetwork extends StObject {
     * be a dash, lowercase letter, or digit, except the last character, which
     * cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the network to which this subnetwork belongs, provided by the
@@ -107,20 +105,20 @@ trait SchemaSubnetwork extends StObject {
     * the distributed mode can have subnetworks. This field can be set only at
     * resource creation time.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the VMs in this subnet can access Google services without
     * assigned external IP addresses. This field can be both set at resource
     * creation time and updated using setPrivateIpGoogleAccess.
     */
-  var privateIpGoogleAccess: js.UndefOr[Boolean] = js.native
+  var privateIpGoogleAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * URL of the region where the Subnetwork resides. This field can be set
     * only at resource creation time.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * An array of configurations for secondary IP ranges for VM instances
@@ -129,12 +127,12 @@ trait SchemaSubnetwork extends StObject {
     * either primary or secondary ranges. This field can be updated with a
     * patch request.
     */
-  var secondaryIpRanges: js.UndefOr[js.Array[SchemaSubnetworkSecondaryRange]] = js.native
+  var secondaryIpRanges: js.UndefOr[js.Array[SchemaSubnetworkSecondaryRange]] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaSubnetwork {
   

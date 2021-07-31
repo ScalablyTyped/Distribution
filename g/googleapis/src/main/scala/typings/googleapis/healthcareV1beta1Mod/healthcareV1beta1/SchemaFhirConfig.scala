@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies how de-identification of a FHIR store should be handled.
   */
-@js.native
 trait SchemaFhirConfig extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaFhirConfig extends StObject {
     * is not matched by a FieldMetadata will be passed through to the output
     * dataset unmodified. All extensions are removed in the output.
     */
-  var fieldMetadataList: js.UndefOr[js.Array[SchemaFieldMetadata]] = js.native
+  var fieldMetadataList: js.UndefOr[js.Array[SchemaFieldMetadata]] = js.undefined
 }
 object SchemaFhirConfig {
   

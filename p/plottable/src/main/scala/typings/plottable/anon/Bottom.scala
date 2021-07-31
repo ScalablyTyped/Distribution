@@ -6,25 +6,23 @@ import typings.plottable.plottableStrings.right
 import typings.plottable.plottableStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: typings.plottable.plottableStrings.bottom = js.native
+  var bottom: typings.plottable.plottableStrings.bottom
   
-  var left: typings.plottable.plottableStrings.left = js.native
+  var left: typings.plottable.plottableStrings.left
   
-  var right: typings.plottable.plottableStrings.right = js.native
+  var right: typings.plottable.plottableStrings.right
   
-  var top: typings.plottable.plottableStrings.top = js.native
+  var top: typings.plottable.plottableStrings.top
 }
 object Bottom {
   
   @scala.inline
-  def apply(bottom: bottom, left: left, right: right, top: top): Bottom = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+  def apply(): Bottom = {
+    val __obj = js.Dynamic.literal(bottom = "bottom", left = "left", right = "right", top = "top")
     __obj.asInstanceOf[Bottom]
   }
   

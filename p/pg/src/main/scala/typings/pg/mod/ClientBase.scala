@@ -11,7 +11,6 @@ import typings.pg.pgStrings.notification
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pg", "ClientBase")
@@ -48,27 +47,27 @@ class ClientBase () extends EventEmitter {
   
   def query[T /* <: Submittable */](queryStream: T): T = js.native
   // tslint:disable:no-unnecessary-generics
-  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](queryConfig: QueryArrayConfig[I]): js.Promise[QueryArrayResult[R]] = js.native
-  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](
+  def query[R /* <: js.Array[js.Any] */, I /* <: js.Array[js.Any] */](queryConfig: QueryArrayConfig[I]): js.Promise[QueryArrayResult[R]] = js.native
+  def query[R /* <: js.Array[js.Any] */, I /* <: js.Array[js.Any] */](
     queryConfig: QueryArrayConfig[I],
     callback: js.Function2[/* err */ Error, /* result */ QueryArrayResult[R], Unit]
   ): Unit = js.native
-  def query[R /* <: js.Array[_] */, I /* <: js.Array[_] */](queryConfig: QueryArrayConfig[I], values: I): js.Promise[QueryArrayResult[R]] = js.native
-  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryConfig: QueryConfig[I]): js.Promise[QueryResult[R]] = js.native
-  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: String): js.Promise[QueryResult[R]] = js.native
-  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+  def query[R /* <: js.Array[js.Any] */, I /* <: js.Array[js.Any] */](queryConfig: QueryArrayConfig[I], values: I): js.Promise[QueryArrayResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */](queryConfig: QueryConfig[I]): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */](queryTextOrConfig: String): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */](
     queryTextOrConfig: String,
     callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
   ): Unit = js.native
-  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: String, values: I): js.Promise[QueryResult[R]] = js.native
-  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */](queryTextOrConfig: String, values: I): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */](
     queryTextOrConfig: QueryConfig[I],
     callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
   ): Unit = js.native
-  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](queryTextOrConfig: QueryConfig[I], values: I): js.Promise[QueryResult[R]] = js.native
-  def query[R /* <: QueryResultRow */, I /* <: js.Array[_] */](
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */](queryTextOrConfig: QueryConfig[I], values: I): js.Promise[QueryResult[R]] = js.native
+  def query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */](
     queryText: String,
-    values: js.Array[_],
+    values: js.Array[js.Any],
     callback: js.Function2[/* err */ Error, /* result */ QueryResult[R], Unit]
   ): Unit = js.native
   

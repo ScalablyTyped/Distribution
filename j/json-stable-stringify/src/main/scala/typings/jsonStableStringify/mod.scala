@@ -2,29 +2,28 @@ package typings.jsonStableStringify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, opts: Comparator): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("json-stable-stringify", JSImport.Namespace)
   @js.native
-  def apply(obj: js.Any): String = js.native
-  @JSImport("json-stable-stringify", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, opts: Comparator): String = js.native
-  @JSImport("json-stable-stringify", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, opts: Options): String = js.native
+  val ^ : js.Any = js.native
   
   type Comparator = js.Function2[/* a */ Element, /* b */ Element, Double]
   
-  @js.native
   trait Element extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Element {
     
@@ -45,14 +44,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var cmp: js.UndefOr[Comparator] = js.native
+    var cmp: js.UndefOr[Comparator] = js.undefined
     
-    var replacer: js.UndefOr[Replacer] = js.native
+    var replacer: js.UndefOr[Replacer] = js.undefined
     
-    var space: js.UndefOr[Double | String] = js.native
+    var space: js.UndefOr[Double | String] = js.undefined
   }
   object Options {
     

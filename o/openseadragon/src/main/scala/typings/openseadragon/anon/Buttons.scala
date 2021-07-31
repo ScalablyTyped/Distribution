@@ -3,15 +3,13 @@ package typings.openseadragon.anon
 import typings.openseadragon.mod.Button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buttons extends StObject {
   
-  var buttons: js.Array[Button] = js.native
+  var buttons: js.Array[Button]
   
-  var element: js.UndefOr[typings.std.Element] = js.native
+  var element: js.UndefOr[typings.std.Element] = js.undefined
 }
 object Buttons {
   

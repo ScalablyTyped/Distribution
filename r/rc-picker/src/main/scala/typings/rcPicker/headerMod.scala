@@ -4,43 +4,44 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod {
   
-  @JSImport("rc-picker/es/panels/Header", JSImport.Default)
+  @JSImport("rc-picker/es/panels/Header", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     hasPrefixClsPrevIconNextIconSuperPrevIconSuperNextIconOnSuperPrevOnSuperNextOnPrevOnNextChildren: HeaderProps
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsPrevIconNextIconSuperPrevIconSuperNextIconOnSuperPrevOnSuperNextOnPrevOnNextChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait HeaderProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var nextIcon: js.UndefOr[ReactNode] = js.native
+    var nextIcon: js.UndefOr[ReactNode] = js.undefined
     
     /** Next one step */
-    var onNext: js.UndefOr[js.Function0[Unit]] = js.native
+    var onNext: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Last one step */
-    var onPrev: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPrev: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Next multiple steps */
-    var onSuperNext: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSuperNext: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Last multiple steps */
-    var onSuperPrev: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSuperPrev: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var prevIcon: js.UndefOr[ReactNode] = js.native
+    var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superNextIcon: js.UndefOr[ReactNode] = js.native
+    var superNextIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var superPrevIcon: js.UndefOr[ReactNode] = js.native
+    var superPrevIcon: js.UndefOr[ReactNode] = js.undefined
   }
   object HeaderProps {
     

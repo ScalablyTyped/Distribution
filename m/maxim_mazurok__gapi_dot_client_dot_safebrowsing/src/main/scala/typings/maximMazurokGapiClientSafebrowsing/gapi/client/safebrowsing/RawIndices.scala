@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawIndices extends StObject {
   
   /** The indices to remove from a lexicographically-sorted local list. */
-  var indices: js.UndefOr[js.Array[Double]] = js.native
+  var indices: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object RawIndices {
   

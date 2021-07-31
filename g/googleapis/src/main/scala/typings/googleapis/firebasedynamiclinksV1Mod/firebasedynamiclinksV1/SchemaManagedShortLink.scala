@@ -2,45 +2,43 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Managed Short Link.
   */
-@js.native
 trait SchemaManagedShortLink extends StObject {
   
   /**
     * Creation timestamp of the short link.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Attributes that have been flagged about this short url.
     */
-  var flaggedAttribute: js.UndefOr[js.Array[String]] = js.native
+  var flaggedAttribute: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Full Dyamic Link info
     */
-  var info: js.UndefOr[SchemaDynamicLinkInfo] = js.native
+  var info: js.UndefOr[SchemaDynamicLinkInfo] = js.undefined
   
   /**
     * Short durable link url, for example,
     * &quot;https://sample.app.goo.gl/xyz123&quot;.  Required.
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Link name defined by the creator.  Required.
     */
-  var linkName: js.UndefOr[String] = js.native
+  var linkName: js.UndefOr[String] = js.undefined
   
   /**
     * Visibility status of link.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedShortLink {
   

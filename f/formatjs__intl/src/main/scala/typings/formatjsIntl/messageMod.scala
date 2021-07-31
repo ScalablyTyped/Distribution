@@ -8,31 +8,30 @@ import typings.intlMessageformat.srcFormattersMod.PrimitiveType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
   
-  @JSImport("@formatjs/intl/lib/src/message", "formatMessage")
+  @JSImport("@formatjs/intl/lib/src/message", JSImport.Namespace)
   @js.native
-  def formatMessage(config: DefaultLocale, state: Formatters): String = js.native
-  @JSImport("@formatjs/intl/lib/src/message", "formatMessage")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def formatMessage(config: DefaultLocale, state: Formatters): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def formatMessage(
     config: DefaultLocale,
     state: Formatters,
-    messageDescriptor: js.UndefOr[scala.Nothing],
+    messageDescriptor: Unit,
     values: Record[String, PrimitiveType | (FormatXMLElementFn[String, String])]
-  ): String = js.native
-  @JSImport("@formatjs/intl/lib/src/message", "formatMessage")
-  @js.native
-  def formatMessage(config: DefaultLocale, state: Formatters, messageDescriptor: MessageDescriptor): String = js.native
-  @JSImport("@formatjs/intl/lib/src/message", "formatMessage")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any], messageDescriptor.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatMessage(config: DefaultLocale, state: Formatters, messageDescriptor: MessageDescriptor): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any], messageDescriptor.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def formatMessage(
     config: DefaultLocale,
     state: Formatters,
     messageDescriptor: MessageDescriptor,
     values: Record[String, PrimitiveType | (FormatXMLElementFn[String, String])]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(config.asInstanceOf[js.Any], state.asInstanceOf[js.Any], messageDescriptor.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
 }

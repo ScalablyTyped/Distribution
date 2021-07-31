@@ -3,26 +3,24 @@ package typings.pulumiAws.outputMod.glue
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionStorageDescriptorSerDeInfo extends StObject {
   
   /**
     * Name of the SerDe.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A map of initialization parameters for the SerDe, in key-value form.
     */
-  var parameters: js.UndefOr[StringDictionary[String]] = js.native
+  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Usually the class that implements the SerDe. An example is: org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe.
     */
-  var serializationLibrary: js.UndefOr[String] = js.native
+  var serializationLibrary: js.UndefOr[String] = js.undefined
 }
 object PartitionStorageDescriptorSerDeInfo {
   

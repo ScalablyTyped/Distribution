@@ -2,111 +2,109 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePredictorResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the algorithm used for model training.
     */
-  var AlgorithmArn: js.UndefOr[Arn] = js.native
+  var AlgorithmArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * When PerformAutoML is specified, the ARN of the chosen algorithm.
     */
-  var AutoMLAlgorithmArns: js.UndefOr[ArnList] = js.native
+  var AutoMLAlgorithmArns: js.UndefOr[ArnList] = js.undefined
   
   /**
     * When the model training task was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * An array of the ARNs of the dataset import jobs used to import training data for the predictor.
     */
-  var DatasetImportJobArns: js.UndefOr[ArnList] = js.native
+  var DatasetImportJobArns: js.UndefOr[ArnList] = js.undefined
   
   /**
     * An AWS Key Management Service (KMS) key and the AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the key.
     */
-  var EncryptionConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.EncryptionConfig] = js.native
+  var EncryptionConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.EncryptionConfig] = js.undefined
   
   /**
     * Used to override the default evaluation parameters of the specified algorithm. Amazon Forecast evaluates a predictor by splitting a dataset into training data and testing data. The evaluation parameters define how to perform the split and the number of iterations.
     */
-  var EvaluationParameters: js.UndefOr[typings.awsSdk.forecastserviceMod.EvaluationParameters] = js.native
+  var EvaluationParameters: js.UndefOr[typings.awsSdk.forecastserviceMod.EvaluationParameters] = js.undefined
   
   /**
     * The featurization configuration.
     */
-  var FeaturizationConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.FeaturizationConfig] = js.native
+  var FeaturizationConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.FeaturizationConfig] = js.undefined
   
   /**
     * The number of time-steps of the forecast. The forecast horizon is also called the prediction length.
     */
-  var ForecastHorizon: js.UndefOr[Integer] = js.native
+  var ForecastHorizon: js.UndefOr[Integer] = js.undefined
   
   /**
     * The forecast types used during predictor training. Default value is ["0.1","0.5","0.9"] 
     */
-  var ForecastTypes: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastTypes] = js.native
+  var ForecastTypes: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastTypes] = js.undefined
   
   /**
     * The hyperparameter override values for the algorithm.
     */
-  var HPOConfig: js.UndefOr[HyperParameterTuningJobConfig] = js.native
+  var HPOConfig: js.UndefOr[HyperParameterTuningJobConfig] = js.undefined
   
   /**
     * Describes the dataset group that contains the data to use to train the predictor.
     */
-  var InputDataConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.InputDataConfig] = js.native
+  var InputDataConfig: js.UndefOr[typings.awsSdk.forecastserviceMod.InputDataConfig] = js.undefined
   
   /**
     * Initially, the same as CreationTime (when the status is CREATE_PENDING). This value is updated when training starts (when the status changes to CREATE_IN_PROGRESS), and when training has completed (when the status changes to ACTIVE) or fails (when the status changes to CREATE_FAILED).
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.native
+  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
     */
-  var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.undefined
   
   /**
     * Whether the predictor is set to perform AutoML.
     */
-  var PerformAutoML: js.UndefOr[Boolean] = js.native
+  var PerformAutoML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the predictor is set to perform hyperparameter optimization (HPO).
     */
-  var PerformHPO: js.UndefOr[Boolean] = js.native
+  var PerformHPO: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the predictor.
     */
-  var PredictorArn: js.UndefOr[Name] = js.native
+  var PredictorArn: js.UndefOr[Name] = js.undefined
   
   /**
     * Details on the the status and results of the backtests performed to evaluate the accuracy of the predictor. You specify the number of backtests to perform when you call the operation.
     */
-  var PredictorExecutionDetails: js.UndefOr[typings.awsSdk.forecastserviceMod.PredictorExecutionDetails] = js.native
+  var PredictorExecutionDetails: js.UndefOr[typings.awsSdk.forecastserviceMod.PredictorExecutionDetails] = js.undefined
   
   /**
     * The name of the predictor.
     */
-  var PredictorName: js.UndefOr[Name] = js.native
+  var PredictorName: js.UndefOr[Name] = js.undefined
   
   /**
     * The status of the predictor. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     UPDATE_PENDING, UPDATE_IN_PROGRESS, UPDATE_FAILED     The Status of the predictor must be ACTIVE before you can use the predictor to create a forecast. 
     */
-  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
   
   /**
     * The default training parameters or overrides selected during model training. When running AutoML or choosing HPO with CNN-QR or DeepAR+, the optimized values for the chosen hyperparameters are returned. For more information, see aws-forecast-choosing-recipes.
     */
-  var TrainingParameters: js.UndefOr[typings.awsSdk.forecastserviceMod.TrainingParameters] = js.native
+  var TrainingParameters: js.UndefOr[typings.awsSdk.forecastserviceMod.TrainingParameters] = js.undefined
 }
 object DescribePredictorResponse {
   

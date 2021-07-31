@@ -2,29 +2,29 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationSequenceMetadata extends AnimationMetadata {
+trait AnimationSequenceMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * An options object containing a delay and
     * developer-defined parameters that provide styling defaults and
     * can be overridden on invocation. Default delay is 0.
     */
-  var options: AnimationOptions | Null = js.native
+  var options: AnimationOptions | Null
   
   /**
     *  An array of animation step objects.
     */
-  var steps: js.Array[AnimationMetadata] = js.native
+  var steps: js.Array[AnimationMetadata]
 }
 object AnimationSequenceMetadata {
   
   @scala.inline
   def apply(steps: js.Array[AnimationMetadata], `type`: AnimationMetadataType): AnimationSequenceMetadata = {
-    val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any], options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationSequenceMetadata]
   }

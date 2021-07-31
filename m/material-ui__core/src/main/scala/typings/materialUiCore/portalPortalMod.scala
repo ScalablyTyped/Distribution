@@ -5,7 +5,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalPortalMod {
@@ -17,16 +16,15 @@ object portalPortalMod {
   
   type Portal = Component[PortalProps, js.Object, js.Any]
   
-  @js.native
   trait PortalProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.native
+    var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.undefined
     
-    var disablePortal: js.UndefOr[Boolean] = js.native
+    var disablePortal: js.UndefOr[Boolean] = js.undefined
     
-    var onRendered: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRendered: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PortalProps {
     

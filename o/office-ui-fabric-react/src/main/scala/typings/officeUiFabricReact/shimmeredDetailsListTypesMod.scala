@@ -9,30 +9,28 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimmeredDetailsListTypesMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleSet.Diff<keyof office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'styles'> ]: office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps[P]} */ @js.native
-  trait IShimmeredDetailsListProps extends StObject {
+  - Dropped {[ P in @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleSet.Diff<keyof office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'styles'> ]: office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps[P]} */ trait IShimmeredDetailsListProps extends StObject {
     
     /**
       * Aria label for shimmer. Set on grid while shimmer is enabled.
       */
-    var ariaLabelForShimmer: js.UndefOr[String] = js.native
+    var ariaLabelForShimmer: js.UndefOr[String] = js.undefined
     
     /**
       * DetailsList styles to pass through.
       */
-    var detailsListStyles: js.UndefOr[IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]] = js.native
+    var detailsListStyles: js.UndefOr[IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]] = js.undefined
     
     /**
       * Boolean flag to control when to render placeholders vs real items.
       * It's up to the consumer app to know when fetching of the data is done to toggle this prop.
       */
-    var enableShimmer: js.UndefOr[Boolean] = js.native
+    var enableShimmer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom placeholder renderer to be used when in need to override the default placeholder of a DetailsRow.
@@ -47,19 +45,19 @@ object shimmeredDetailsListTypesMod {
           /* defaultRender */ js.UndefOr[js.Function1[/* props */ IDetailsRowProps, ReactNode]], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Determines whether to remove a fading out to bottom overlay over the shimmering items
       * used to further emphasize the unknown number of items that will be fetched.
       */
-    var removeFadingOverlay: js.UndefOr[Boolean] = js.native
+    var removeFadingOverlay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of shimmer placeholder lines to render.
       * @defaultvalue 10
       */
-    var shimmerLines: js.UndefOr[Double] = js.native
+    var shimmerLines: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom styles to override the styles specific to the ShimmeredDetailsList root area.
@@ -67,14 +65,14 @@ object shimmeredDetailsListTypesMod {
       */
     var shimmerOverlayStyles: js.UndefOr[
         IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom styles to override the styles specific to the ShimmeredDetailsList root area.
       */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]
-      ] = js.native
+      ] = js.undefined
   }
   object IShimmeredDetailsListProps {
     
@@ -149,10 +147,9 @@ object shimmeredDetailsListTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/ShimmeredDetailsList.types.IShimmeredDetailsListProps, 'theme'>> */
-  @js.native
   trait IShimmeredDetailsListStyleProps extends StObject {
     
-    var theme: js.Any = js.native
+    var theme: js.Any
   }
   object IShimmeredDetailsListStyleProps {
     
@@ -170,13 +167,12 @@ object shimmeredDetailsListTypesMod {
     }
   }
   
-  @js.native
   trait IShimmeredDetailsListStyles extends StObject {
     
     /**
       * Represents styles passed to the `List` component for creating a fade-out to the bottom overlay.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IShimmeredDetailsListStyles {
     

@@ -2,24 +2,22 @@ package typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Write a Cloud Audit log
   */
-@js.native
 trait SchemaLogConfigCloudAuditOptions extends StObject {
   
   /**
     * Information used by the Cloud Audit Logging pipeline.
     */
-  var authorizationLoggingOptions: js.UndefOr[SchemaAuthorizationLoggingOptions] = js.native
+  var authorizationLoggingOptions: js.UndefOr[SchemaAuthorizationLoggingOptions] = js.undefined
   
   /**
     * The log_name to populate in the Cloud Audit Record.
     */
-  var logName: js.UndefOr[String] = js.native
+  var logName: js.UndefOr[String] = js.undefined
 }
 object SchemaLogConfigCloudAuditOptions {
   

@@ -2,19 +2,17 @@ package typings.reactNativeWebrtc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCOfferOptions extends StObject {
   
-  var iceRestart: js.UndefOr[Boolean] = js.native
+  var iceRestart: js.UndefOr[Boolean] = js.undefined
   
-  var offerToReceiveAudio: js.UndefOr[Boolean] = js.native
+  var offerToReceiveAudio: js.UndefOr[Boolean] = js.undefined
   
-  var offerToReceiveVideo: js.UndefOr[Boolean] = js.native
+  var offerToReceiveVideo: js.UndefOr[Boolean] = js.undefined
   
-  var voiceActivityDetection: js.UndefOr[Boolean] = js.native
+  var voiceActivityDetection: js.UndefOr[Boolean] = js.undefined
 }
 object RTCOfferOptions {
   

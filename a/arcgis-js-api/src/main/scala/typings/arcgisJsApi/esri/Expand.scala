@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.floating
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expand extends Widget_ {
+trait Expand
+  extends StObject
+     with Widget_ {
   
   /**
     * Automatically collapses the expand widget instance when the view's viewpoint updates.

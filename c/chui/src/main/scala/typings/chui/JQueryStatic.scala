@@ -13,7 +13,6 @@ import typings.chui.anon.Id
 import typings.chui.anon.Pagination
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -269,8 +268,8 @@ trait JQueryStatic extends StObject {
     * @param callback A callback to execute on each loop.
     * @param args Any arguments you need to pass to the callback.
     */
-  def forEach(obj: js.Array[_], callback: js.Function): js.Any = js.native
-  def forEach(obj: js.Array[_], callback: js.Function, args: js.Any): js.Any = js.native
+  def forEach(obj: js.Array[js.Any], callback: js.Function): js.Any = js.native
+  def forEach(obj: js.Array[js.Any], callback: js.Function, args: js.Any): js.Any = js.native
   
   /**
     * Whether OS is Android

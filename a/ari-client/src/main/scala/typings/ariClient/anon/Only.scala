@@ -2,13 +2,11 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Only extends StObject {
   
-  var only: js.UndefOr[String | js.Array[String]] = js.native
+  var only: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object Only {
   

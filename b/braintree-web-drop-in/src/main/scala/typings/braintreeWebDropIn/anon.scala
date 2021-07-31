@@ -12,17 +12,15 @@ import typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption
 import typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllowVaultCardOverride extends StObject {
     
-    var allowVaultCardOverride: js.UndefOr[Boolean] = js.native
+    var allowVaultCardOverride: js.UndefOr[Boolean] = js.undefined
     
-    var vaultCard: js.UndefOr[Boolean] = js.native
+    var vaultCard: js.UndefOr[Boolean] = js.undefined
   }
   object AllowVaultCardOverride {
     
@@ -49,24 +47,23 @@ object anon {
     }
   }
   
-  @js.native
   trait BillingAddress extends StObject {
     
-    var billingAddress: js.UndefOr[Address] = js.native
+    var billingAddress: js.UndefOr[Address] = js.undefined
     
-    var countryCode: js.UndefOr[String] = js.native
+    var countryCode: js.UndefOr[String] = js.undefined
     
-    var email: String = js.native
+    var email: String
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var lastName: String = js.native
+    var lastName: String
     
-    var payerId: String = js.native
+    var payerId: String
     
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
-    var shippingAddress: js.UndefOr[Address] = js.native
+    var shippingAddress: js.UndefOr[Address] = js.undefined
   }
   object BillingAddress {
     
@@ -117,22 +114,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Bin extends StObject {
     
-    var bin: String = js.native
+    var bin: String
     
-    var cardType: String = js.native
+    var cardType: String
     
-    var cardholderName: String = js.native
+    var cardholderName: String
     
-    var expirationMonth: String = js.native
+    var expirationMonth: String
     
-    var expirationYear: String = js.native
+    var expirationYear: String
     
-    var lastFour: String = js.native
+    var lastFour: String
     
-    var lastTwo: String = js.native
+    var lastTwo: String
   }
   object Bin {
     
@@ -176,16 +172,15 @@ object anon {
     }
   }
   
-  @js.native
   trait CardHolderName extends StObject {
     
-    var cardHolderName: String = js.native
+    var cardHolderName: String
     
-    var cardType: String = js.native
+    var cardType: String
     
-    var dpanLastTwo: String = js.native
+    var dpanLastTwo: String
     
-    var rawPaymentData: ApplePayPayment = js.native
+    var rawPaymentData: ApplePayPayment
   }
   object CardHolderName {
     
@@ -212,20 +207,19 @@ object anon {
     }
   }
   
-  @js.native
   trait CardType extends StObject {
     
-    var bin: String = js.native
+    var bin: String
     
-    var cardType: String = js.native
+    var cardType: String
     
-    var isNetworkTokenized: Boolean = js.native
+    var isNetworkTokenized: Boolean
     
-    var lastFour: String = js.native
+    var lastFour: String
     
-    var lastTwo: String = js.native
+    var lastTwo: String
     
-    var rawPaymentData: PaymentData = js.native
+    var rawPaymentData: PaymentData
   }
   object CardType {
     
@@ -275,16 +269,15 @@ object anon {
     ): Unit = js.native
   }
   
-  @js.native
   trait Cvv extends StObject {
     
-    var cvv: js.UndefOr[HostedFieldsField] = js.native
+    var cvv: js.UndefOr[HostedFieldsField] = js.undefined
     
-    var expirationDate: js.UndefOr[HostedFieldsField] = js.native
+    var expirationDate: js.UndefOr[HostedFieldsField] = js.undefined
     
-    var number: js.UndefOr[HostedFieldsField] = js.native
+    var number: js.UndefOr[HostedFieldsField] = js.undefined
     
-    var postalCode: js.UndefOr[HostedFieldsField] = js.native
+    var postalCode: js.UndefOr[HostedFieldsField] = js.undefined
   }
   object Cvv {
     
@@ -323,12 +316,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.UndefOr[Cvv] = js.native
+    var fields: js.UndefOr[Cvv] = js.undefined
     
-    var styles: js.UndefOr[js.Object] = js.native
+    var styles: js.UndefOr[js.Object] = js.undefined
   }
   object Fields {
     
@@ -356,18 +348,17 @@ object anon {
   }
   
   /* Inlined std.Partial<paypal-checkout-components.paypal-checkout-components.ButtonStyle> */
-  @js.native
   trait PartialButtonStyle extends StObject {
     
-    var color: js.UndefOr[ButtonColorOption] = js.native
+    var color: js.UndefOr[ButtonColorOption] = js.undefined
     
-    var label: js.UndefOr[ButtonLabelOption] = js.native
+    var label: js.UndefOr[ButtonLabelOption] = js.undefined
     
-    var shape: js.UndefOr[ButtonShapeOption] = js.native
+    var shape: js.UndefOr[ButtonShapeOption] = js.undefined
     
-    var size: js.UndefOr[ButtonSizeOption] = js.native
+    var size: js.UndefOr[ButtonSizeOption] = js.undefined
     
-    var tagline: js.UndefOr[Boolean] = js.native
+    var tagline: js.UndefOr[Boolean] = js.undefined
   }
   object PartialButtonStyle {
     
@@ -412,10 +403,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Required extends StObject {
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object Required {
     
@@ -436,10 +426,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Username extends StObject {
     
-    var username: String = js.native
+    var username: String
   }
   object Username {
     

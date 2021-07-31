@@ -2,109 +2,107 @@ package typings.accWizard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccWizardOptions extends StObject {
   
   /**
     * @summary Class to indicate the active task in sidebar.
     * @type {string}
     */
-  var activeClass: String = js.native
+  var activeClass: String
   
   /**
     * @summary Add next/prev buttons to panels.
     * @type {boolean}
     */
-  var addButtons: Boolean = js.native
+  var addButtons: Boolean
   
   /**
     * @summary Auto-scrolling.
     * @type {boolean}
     */
-  var autoScrolling: Boolean = js.native
+  var autoScrolling: Boolean
   
   /**
     * @summary Class(es) for back button.
     * @type {string}
     */
-  var backClasses: String = js.native
+  var backClasses: String
   
   /**
     * @summary Text for back button.
     * @type {string}
     */
-  var backText: String = js.native
+  var backText: String
   
   /**
     * @summary HTML input type for back button. (default: "reset")
     * @type {string}
     */
-  var backType: String = js.native
+  var backType: String
   
   /**
     * @summary Class to indicate task is complete.
     * @type {string}
     */
-  var completedClass: String = js.native
+  var completedClass: String
   
   /**
     * @summary Class(es) for next button.
     * @type {string}
     */
-  var nextClasses: String = js.native
+  var nextClasses: String
   
   /**
     * @summary Text for next button.
     * @type {string}
     */
-  var nextText: String = js.native
+  var nextText: String
   
   /**
     * @summary HTML input type for next button. (default: "submit")
     * @type {string}
     */
-  var nextType: String = js.native
+  var nextType: String
   
   /**
     * @summary Function to call on back up.
     */
-  var onBack: js.Function = js.native
+  var onBack: js.Function
   
   /**
     * @summary A chance to hook destruction.
     */
-  var onDestroy: js.Function = js.native
+  var onDestroy: js.Function
   
   /**
     * @summary A chance to hook initialization.
     */
-  var onInit: js.Function = js.native
+  var onInit: js.Function
   
   /**
     * @summary Function to call on next step.
     */
-  var onNext: js.Function = js.native
+  var onNext: js.Function
   
   /**
     * @summary Selector for task sidebar.
     * @type {string}
     */
-  var sidebar: String = js.native
+  var sidebar: String
   
   /**
     * @summary Class for step buttons within panels.
     * @type {string}
     */
-  var stepClass: String = js.native
+  var stepClass: String
   
   /**
     * @summary Class to indicate task is still pending.
     * @type {string}
     */
-  var todoClass: String = js.native
+  var todoClass: String
 }
 object AccWizardOptions {
   

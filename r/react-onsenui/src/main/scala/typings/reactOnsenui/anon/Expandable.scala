@@ -5,25 +5,23 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expandable extends StObject {
   
-  var expandable: js.UndefOr[Boolean] = js.native
+  var expandable: js.UndefOr[Boolean] = js.undefined
   
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
-  var lockOnDrag: js.UndefOr[Boolean] = js.native
+  var lockOnDrag: js.UndefOr[Boolean] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   
-  var tapBackgroundColor: js.UndefOr[String] = js.native
+  var tapBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var tappable: js.UndefOr[Boolean] = js.native
+  var tappable: js.UndefOr[Boolean] = js.undefined
 }
 object Expandable {
   
@@ -61,7 +59,7 @@ object Expandable {
     def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def setOnClick(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

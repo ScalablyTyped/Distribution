@@ -5,10 +5,13 @@ import typings.opentelemetryApi.spanMod.Span
 import typings.opentelemetryContextBase.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
+  
+  @JSImport("@opentelemetry/core/build/src/context/context", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@opentelemetry/core/build/src/context/context", "ACTIVE_SPAN_KEY")
   @js.native
@@ -18,35 +21,27 @@ object contextMod {
   @js.native
   val SUPPRESS_INSTRUMENTATION_KEY: js.Symbol = js.native
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "getActiveSpan")
-  @js.native
-  def getActiveSpan(context: Context): js.UndefOr[Span] = js.native
+  @scala.inline
+  def getActiveSpan(context: Context): js.UndefOr[Span] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveSpan")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Span]]
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "getExtractedSpanContext")
-  @js.native
-  def getExtractedSpanContext(context: Context): js.UndefOr[SpanContext] = js.native
+  @scala.inline
+  def getExtractedSpanContext(context: Context): js.UndefOr[SpanContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractedSpanContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SpanContext]]
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "getParentSpanContext")
-  @js.native
-  def getParentSpanContext(context: Context): js.UndefOr[SpanContext] = js.native
+  @scala.inline
+  def getParentSpanContext(context: Context): js.UndefOr[SpanContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentSpanContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SpanContext]]
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "isInstrumentationSuppressed")
-  @js.native
-  def isInstrumentationSuppressed(context: Context): Boolean = js.native
+  @scala.inline
+  def isInstrumentationSuppressed(context: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstrumentationSuppressed")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "setActiveSpan")
-  @js.native
-  def setActiveSpan(context: Context, span: Span): Context = js.native
+  @scala.inline
+  def setActiveSpan(context: Context, span: Span): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setActiveSpan")(context.asInstanceOf[js.Any], span.asInstanceOf[js.Any])).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "setExtractedSpanContext")
-  @js.native
-  def setExtractedSpanContext(context: Context, spanContext: SpanContext): Context = js.native
+  @scala.inline
+  def setExtractedSpanContext(context: Context, spanContext: SpanContext): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtractedSpanContext")(context.asInstanceOf[js.Any], spanContext.asInstanceOf[js.Any])).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "suppressInstrumentation")
-  @js.native
-  def suppressInstrumentation(context: Context): Context = js.native
+  @scala.inline
+  def suppressInstrumentation(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressInstrumentation")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core/build/src/context/context", "unsuppressInstrumentation")
-  @js.native
-  def unsuppressInstrumentation(context: Context): Context = js.native
+  @scala.inline
+  def unsuppressInstrumentation(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("unsuppressInstrumentation")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
 }

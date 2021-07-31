@@ -6,30 +6,28 @@ import typings.firebaseMessaging.appConfigMod.AppConfig
 import typings.firebaseMessaging.mod.FirebaseApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalDependenciesMod {
   
-  @js.native
   trait FirebaseInternalDependencies extends StObject {
     
     var analyticsProvider: Provider[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ js.Any
+      ]
     
-    var app: FirebaseApp = js.native
+    var app: FirebaseApp
     
-    var appConfig: AppConfig = js.native
+    var appConfig: AppConfig
     
-    var installations: FirebaseInstallations = js.native
+    var installations: FirebaseInstallations
   }
   object FirebaseInternalDependencies {
     
     @scala.inline
     def apply(
       analyticsProvider: Provider[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ js.Any
         ],
       app: FirebaseApp,
       appConfig: AppConfig,
@@ -45,7 +43,7 @@ object internalDependenciesMod {
       @scala.inline
       def setAnalyticsProvider(
         value: Provider[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAnalyticsInternalName */ js.Any
             ]
       ): Self = StObject.set(x, "analyticsProvider", value.asInstanceOf[js.Any])
       

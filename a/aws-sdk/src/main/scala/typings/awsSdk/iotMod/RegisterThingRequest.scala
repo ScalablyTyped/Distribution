@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterThingRequest extends StObject {
   
   /**
     * The parameters for provisioning a thing. See Provisioning Templates for more information.
     */
-  var parameters: js.UndefOr[Parameters] = js.native
+  var parameters: js.UndefOr[Parameters] = js.undefined
   
   /**
     * The provisioning template. See Provisioning Devices That Have Device Certificates for more information.
     */
-  var templateBody: TemplateBody = js.native
+  var templateBody: TemplateBody
 }
 object RegisterThingRequest {
   

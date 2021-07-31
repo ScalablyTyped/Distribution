@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1WebhookRequest extends StObject {
   
   /** Alternative query results from KnowledgeService. */
-  var alternativeQueryResults: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1QueryResult]] = js.native
+  var alternativeQueryResults: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1QueryResult]] = js.undefined
   
   /** Optional. The contents of the original request that was passed to `[Streaming]DetectIntent` call. */
-  var originalDetectIntentRequest: js.UndefOr[GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest] = js.native
+  var originalDetectIntentRequest: js.UndefOr[GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest] = js.undefined
   
   /** The result of the conversational query or event processing. Contains the same value as `[Streaming]DetectIntentResponse.query_result`. */
-  var queryResult: js.UndefOr[GoogleCloudDialogflowV2beta1QueryResult] = js.native
+  var queryResult: js.UndefOr[GoogleCloudDialogflowV2beta1QueryResult] = js.undefined
   
   /** The unique identifier of the response. Contains the same value as `[Streaming]DetectIntentResponse.response_id`. */
-  var responseId: js.UndefOr[String] = js.native
+  var responseId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of detectIntent request session. Can be used to identify end-user inside webhook implementation. Supported formats: - `projects//agent/sessions/, -
     * `projects//locations//agent/sessions/`, - `projects//agent/environments//users//sessions/`, - `projects//locations//agent/environments//users//sessions/`,
     */
-  var session: js.UndefOr[String] = js.native
+  var session: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1WebhookRequest {
   

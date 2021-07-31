@@ -4,21 +4,19 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineHeadersProps extends StObject {
   
-  var calendarHeaderClassName: js.UndefOr[String] = js.native
+  var calendarHeaderClassName: js.UndefOr[String] = js.undefined
   
-  var calendarHeaderStyle: js.UndefOr[CSSProperties] = js.native
+  var calendarHeaderStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var headerRef: js.UndefOr[Ref[_]] = js.native
+  var headerRef: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object TimelineHeadersProps {
   
@@ -50,10 +48,10 @@ object TimelineHeadersProps {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setHeaderRef(value: Ref[_]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
+    def setHeaderRef(value: Ref[js.Any]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRefFunction1(value: /* instance */ _ | Null => scala.Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
+    def setHeaderRefFunction1(value: /* instance */ js.Any | Null => scala.Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHeaderRefNull: Self = StObject.set(x, "headerRef", null)

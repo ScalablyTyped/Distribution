@@ -4,7 +4,6 @@ import typings.agGrid.gridCellMod.GridCell
 import typings.agGrid.gridRowMod.GridRow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cellNavigationServiceMod {

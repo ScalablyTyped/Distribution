@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * structures
   * @see PropertyInfo
   */
-@js.native
-trait XLayerContentDescriber extends XInterface {
+trait XLayerContentDescriber
+  extends StObject
+     with XInterface {
   
   /**
     * describes the contents of the layer to an {@link XLayerHandler} .
@@ -23,7 +23,7 @@ trait XLayerContentDescriber extends XInterface {
     * @throws com::sun::star::lang::NullPointerException if a `NULL` handler is passed.
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XLayerHandler} .
     */
-  def describeLayer(aHandler: XLayerHandler, aPropertyInfos: SeqEquiv[PropertyInfo]): Unit = js.native
+  def describeLayer(aHandler: XLayerHandler, aPropertyInfos: SeqEquiv[PropertyInfo]): Unit
 }
 object XLayerContentDescriber {
   

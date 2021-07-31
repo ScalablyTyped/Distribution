@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationOptions extends StObject {
   
   /**
@@ -15,19 +13,19 @@ trait ValidationOptions extends StObject {
     *
     * @default `null`
     */
-  var acceptFiles: js.UndefOr[js.Any] = js.native
+  var acceptFiles: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specify file valid file extensions here to restrict uploads to specific types
     *
     * @default `[]`
     */
-  var allowedExtensions: js.UndefOr[js.Array[String]] = js.native
+  var allowedExtensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * ImageOptions
     */
-  var image: js.UndefOr[ImageOptions] = js.native
+  var image: js.UndefOr[ImageOptions] = js.undefined
   
   /**
     * Maximum number of items that can be potentially uploaded in this session.
@@ -36,28 +34,28 @@ trait ValidationOptions extends StObject {
     *
     * @default `0`
     */
-  var itemLimit: js.UndefOr[Double] = js.native
+  var itemLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum allowable size, in bytes, for an item
     *
     * @default `0`
     */
-  var minSizeLimit: js.UndefOr[Double] = js.native
+  var minSizeLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowable size, in bytes, for an item
     *
     * @default `0`
     */
-  var sizeLimit: js.UndefOr[Double] = js.native
+  var sizeLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * When `true` the first invalid item will stop processing further files
     *
     * @default `true`
     */
-  var stopOnFirstInvalidFile: js.UndefOr[Boolean] = js.native
+  var stopOnFirstInvalidFile: js.UndefOr[Boolean] = js.undefined
 }
 object ValidationOptions {
   

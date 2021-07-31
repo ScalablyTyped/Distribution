@@ -10,7 +10,6 @@ import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overflowListMod {
@@ -65,13 +64,13 @@ object overflowListMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/overflow-list/overflowList", "OverflowList.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ IOverflowListProps[U], OverflowList[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ IOverflowListProps[U], OverflowList[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOverflowListProps[U], OverflowList[U]]]
   }
   
-  @js.native
-  trait IOverflowListProps[T] extends IProps {
+  trait IOverflowListProps[T]
+    extends StObject
+       with IProps {
     
     /**
       * Which direction the items should collapse from: start or end of the
@@ -79,20 +78,20 @@ object overflowListMod {
       * (`START`) or after (`END`) the visible items.
       * @default Boundary.START
       */
-    var collapseFrom: js.UndefOr[Boundary] = js.native
+    var collapseFrom: js.UndefOr[Boundary] = js.undefined
     
     /**
       * All items to display in the list. Items that do not fit in the container
       * will be rendered in the overflow instead.
       */
-    var items: js.Array[T] = js.native
+    var items: js.Array[T]
     
     /**
       * The minimum number of visible items that should never collapse into the
       * overflow menu, regardless of DOM dimensions.
       * @default 0
       */
-    var minVisibleItems: js.UndefOr[Double] = js.native
+    var minVisibleItems: js.UndefOr[Double] = js.undefined
     
     /**
       * If `true`, all parent DOM elements of the container will also be
@@ -104,14 +103,14 @@ object overflowListMod {
       * `OverflowList` to resize.
       * @default false
       */
-    var observeParents: js.UndefOr[Boolean] = js.native
+    var observeParents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback invoked when the overflowed items change. This is called once
       * after the DOM has settled, rather that on every intermediate change. It
       * is not invoked if resizing produces an unchanged overflow state.
       */
-    var onOverflow: js.UndefOr[js.Function1[/* overflowItems */ js.Array[T], Unit]] = js.native
+    var onOverflow: js.UndefOr[js.Function1[/* overflowItems */ js.Array[T], Unit]] = js.undefined
     
     /**
       * Callback invoked to render the overflowed items. Unlike
@@ -121,10 +120,10 @@ object overflowListMod {
       * Typical use cases for this prop will put overflowed items in a dropdown
       * menu or display a "+X items" label.
       */
-    def overflowRenderer(overflowItems: js.Array[T]): ReactNode = js.native
+    def overflowRenderer(overflowItems: js.Array[T]): ReactNode
     
     /** CSS properties to apply to the root element. */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * HTML tag name for the container element.
@@ -132,13 +131,13 @@ object overflowListMod {
       */
     var tagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback invoked to render each visible item.
       * Remember to set a `key` on the rendered element!
       */
-    def visibleItemRenderer(item: T, index: Double): ReactChild = js.native
+    def visibleItemRenderer(item: T, index: Double): ReactChild
   }
   object IOverflowListProps {
     
@@ -153,7 +152,7 @@ object overflowListMod {
     }
     
     @scala.inline
-    implicit class IOverflowListPropsMutableBuilder[Self <: IOverflowListProps[_], T] (val x: Self with IOverflowListProps[T]) extends AnyVal {
+    implicit class IOverflowListPropsMutableBuilder[Self <: IOverflowListProps[?], T] (val x: Self & IOverflowListProps[T]) extends AnyVal {
       
       @scala.inline
       def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
@@ -205,15 +204,14 @@ object overflowListMod {
     }
   }
   
-  @js.native
   trait IOverflowListState[T] extends StObject {
     
     /** Length of last overflow to dedupe `onOverflow` calls during smooth resizing. */
-    var lastOverflowCount: Double = js.native
+    var lastOverflowCount: Double
     
-    var overflow: js.Array[T] = js.native
+    var overflow: js.Array[T]
     
-    var visible: js.Array[T] = js.native
+    var visible: js.Array[T]
   }
   object IOverflowListState {
     
@@ -224,7 +222,7 @@ object overflowListMod {
     }
     
     @scala.inline
-    implicit class IOverflowListStateMutableBuilder[Self <: IOverflowListState[_], T] (val x: Self with IOverflowListState[T]) extends AnyVal {
+    implicit class IOverflowListStateMutableBuilder[Self <: IOverflowListState[?], T] (val x: Self & IOverflowListState[T]) extends AnyVal {
       
       @scala.inline
       def setLastOverflowCount(value: Double): Self = StObject.set(x, "lastOverflowCount", value.asInstanceOf[js.Any])

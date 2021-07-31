@@ -2,56 +2,54 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuantumTaskSummary extends StObject {
   
   /**
     * The time at which the task was created.
     */
-  var createdAt: SyntheticTimestampDateTime = js.native
+  var createdAt: SyntheticTimestampDateTime
   
   /**
     * The ARN of the device the task ran on.
     */
-  var deviceArn: DeviceArn = js.native
+  var deviceArn: DeviceArn
   
   /**
     * The time at which the task finished.
     */
-  var endedAt: js.UndefOr[SyntheticTimestampDateTime] = js.native
+  var endedAt: js.UndefOr[SyntheticTimestampDateTime] = js.undefined
   
   /**
     * The S3 bucket where the task result file is stored..
     */
-  var outputS3Bucket: String = js.native
+  var outputS3Bucket: String
   
   /**
     * The folder in the S3 bucket where the task result file is stored.
     */
-  var outputS3Directory: String = js.native
+  var outputS3Directory: String
   
   /**
     * The ARN of the task.
     */
-  var quantumTaskArn: QuantumTaskArn = js.native
+  var quantumTaskArn: QuantumTaskArn
   
   /**
     * The shots used for the task.
     */
-  var shots: Long = js.native
+  var shots: Long
   
   /**
     * The status of the task.
     */
-  var status: QuantumTaskStatus = js.native
+  var status: QuantumTaskStatus
   
   /**
     * Displays the key, value pairs of tags associated with this quantum task.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object QuantumTaskSummary {
   

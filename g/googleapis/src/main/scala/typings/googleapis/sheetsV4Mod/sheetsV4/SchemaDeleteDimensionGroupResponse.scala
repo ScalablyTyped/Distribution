@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of deleting a group.
   */
-@js.native
 trait SchemaDeleteDimensionGroupResponse extends StObject {
   
   /**
     * All groups of a dimension after deleting a group from that dimension.
     */
-  var dimensionGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.native
+  var dimensionGroups: js.UndefOr[js.Array[SchemaDimensionGroup]] = js.undefined
 }
 object SchemaDeleteDimensionGroupResponse {
   

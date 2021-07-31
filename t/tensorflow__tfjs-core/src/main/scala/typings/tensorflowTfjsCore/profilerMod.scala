@@ -16,10 +16,13 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object profilerMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/profiler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/profiler", "Logger")
   @js.native
@@ -60,34 +63,32 @@ object profilerMod {
     def profileKernel(kernelName: String, inputs: NamedTensorMap, f: js.Function0[js.Array[Tensor[Rank]]]): KernelProfile = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/profiler", "checkComputationForErrors")
-  @js.native
-  def checkComputationForErrors_bool(vals: Uint8Array, dtype: bool, kernelName: String): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/profiler", "checkComputationForErrors")
-  @js.native
-  def checkComputationForErrors_complex64(vals: Float32Array, dtype: complex64, kernelName: String): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/profiler", "checkComputationForErrors")
-  @js.native
-  def checkComputationForErrors_float32(vals: Float32Array, dtype: float32, kernelName: String): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/profiler", "checkComputationForErrors")
-  @js.native
-  def checkComputationForErrors_int32(vals: Int32Array, dtype: int32, kernelName: String): Boolean = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/profiler", "checkComputationForErrors")
-  @js.native
-  def checkComputationForErrors_string(vals: js.Array[String], dtype: string, kernelName: String): Boolean = js.native
+  @scala.inline
+  def checkComputationForErrors_bool(vals: Uint8Array, dtype: bool, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def checkComputationForErrors_complex64(vals: Float32Array, dtype: complex64, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def checkComputationForErrors_float32(vals: Float32Array, dtype: float32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def checkComputationForErrors_int32(vals: Int32Array, dtype: int32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def checkComputationForErrors_string(vals: js.Array[String], dtype: string, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait KernelProfile extends StObject {
     
-    var extraInfo: js.Promise[String] = js.native
+    var extraInfo: js.Promise[String]
     
-    var inputs: NamedTensorMap = js.native
+    var inputs: NamedTensorMap
     
-    var kernelName: String = js.native
+    var kernelName: String
     
-    var outputs: js.Array[Tensor[Rank]] = js.native
+    var outputs: js.Array[Tensor[Rank]]
     
-    var timeMs: js.Promise[Double | Error] = js.native
+    var timeMs: js.Promise[Double | Error]
   }
   object KernelProfile {
     

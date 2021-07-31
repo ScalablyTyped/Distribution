@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsGetSubscriptionPlanForAccountStubbedRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: GET = js.native
+  var method: GET
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: Slashmarketplace_listingSlashstubbedSlashaccountsSlashColonaccount_id = js.native
+  var url: Slashmarketplace_listingSlashstubbedSlashaccountsSlashColonaccount_id
 }
 object AppsGetSubscriptionPlanForAccountStubbedRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: GET,
-    request: RequestRequestOptions,
-    url: Slashmarketplace_listingSlashstubbedSlashaccountsSlashColonaccount_id
-  ): AppsGetSubscriptionPlanForAccountStubbedRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsGetSubscriptionPlanForAccountStubbedRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/marketplace_listing/stubbed/accounts/:account_id")
     __obj.asInstanceOf[AppsGetSubscriptionPlanForAccountStubbedRequestOptions]
   }
   

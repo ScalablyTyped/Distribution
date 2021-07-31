@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigatewayDomainNameMod {
@@ -126,6 +125,10 @@ object apigatewayDomainNameMod {
   /* static members */
   object DomainName {
     
+    @JSImport("@pulumi/aws/apigateway/domainName", "DomainName")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DomainName resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -135,42 +138,36 @@ object apigatewayDomainNameMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DomainName = js.native
-    @JSImport("@pulumi/aws/apigateway/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainName = js.native
-    @JSImport("@pulumi/aws/apigateway/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainNameState): DomainName = js.native
-    @JSImport("@pulumi/aws/apigateway/domainName", "DomainName.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): DomainName = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainNameState): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainName]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): DomainName = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainName]
     
     /**
       * Returns true if the given object is an instance of DomainName.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/domainName", "DomainName.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/domainName.DomainName */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/domainName.DomainName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/domainName.DomainName */ Boolean]
   }
   
-  @js.native
   trait DomainNameArgs extends StObject {
     
     /**
       * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificateName`, `certificateBody`, `certificateChain`, `certificatePrivateKey`, `regionalCertificateArn`, and `regionalCertificateName`.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate issued for the domain name
       * being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and
       * `regionalCertificateName`.
       */
-    val certificateBody: js.UndefOr[Input[String]] = js.native
+    val certificateBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate for the CA that issued the
@@ -178,51 +175,51 @@ object apigatewayDomainNameMod {
       * create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`,
       * `regionalCertificateArn`, and `regionalCertificateName`.
       */
-    val certificateChain: js.UndefOr[Input[String]] = js.native
+    val certificateChain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unique name to use when registering this
       * certificate as an IAM server certificate. Conflicts with `certificateArn`, `regionalCertificateArn`, and
       * `regionalCertificateName`. Required if `certificateArn` is not set.
       */
-    val certificateName: js.UndefOr[Input[String]] = js.native
+    val certificateName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private key associated with the
       * domain certificate given in `certificateBody`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and `regionalCertificateName`.
       */
-    val certificatePrivateKey: js.UndefOr[Input[String]] = js.native
+    val certificatePrivateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fully-qualified domain name to register
       */
-    val domainName: Input[String] = js.native
+    val domainName: Input[String]
     
     /**
       * Configuration block defining API endpoint information including type. Defined below.
       */
-    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.DomainNameEndpointConfiguration]] = js.native
+    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.DomainNameEndpointConfiguration]] = js.undefined
     
     /**
       * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and `certificatePrivateKey`.
       */
-    val regionalCertificateArn: js.UndefOr[Input[String]] = js.native
+    val regionalCertificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and
       * `certificatePrivateKey`.
       */
-    val regionalCertificateName: js.UndefOr[Input[String]] = js.native
+    val regionalCertificateName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
       */
-    val securityPolicy: js.UndefOr[Input[String]] = js.native
+    val securityPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DomainNameArgs {
     
@@ -300,25 +297,24 @@ object apigatewayDomainNameMod {
     }
   }
   
-  @js.native
   trait DomainNameState extends StObject {
     
     /**
       * Amazon Resource Name (ARN)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificateName`, `certificateBody`, `certificateChain`, `certificatePrivateKey`, `regionalCertificateArn`, and `regionalCertificateName`.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate issued for the domain name
       * being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and
       * `regionalCertificateName`.
       */
-    val certificateBody: js.UndefOr[Input[String]] = js.native
+    val certificateBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate for the CA that issued the
@@ -326,78 +322,78 @@ object apigatewayDomainNameMod {
       * create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`,
       * `regionalCertificateArn`, and `regionalCertificateName`.
       */
-    val certificateChain: js.UndefOr[Input[String]] = js.native
+    val certificateChain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unique name to use when registering this
       * certificate as an IAM server certificate. Conflicts with `certificateArn`, `regionalCertificateArn`, and
       * `regionalCertificateName`. Required if `certificateArn` is not set.
       */
-    val certificateName: js.UndefOr[Input[String]] = js.native
+    val certificateName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private key associated with the
       * domain certificate given in `certificateBody`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and `regionalCertificateName`.
       */
-    val certificatePrivateKey: js.UndefOr[Input[String]] = js.native
+    val certificatePrivateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The upload date associated with the domain certificate.
       */
-    val certificateUploadDate: js.UndefOr[Input[String]] = js.native
+    val certificateUploadDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The hostname created by Cloudfront to represent
       * the distribution that implements this domain name mapping.
       */
-    val cloudfrontDomainName: js.UndefOr[Input[String]] = js.native
+    val cloudfrontDomainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
       * that can be used to create a Route53 alias record for the distribution.
       */
-    val cloudfrontZoneId: js.UndefOr[Input[String]] = js.native
+    val cloudfrontZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fully-qualified domain name to register
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block defining API endpoint information including type. Defined below.
       */
-    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.DomainNameEndpointConfiguration]] = js.native
+    val endpointConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.DomainNameEndpointConfiguration]] = js.undefined
     
     /**
       * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and `certificatePrivateKey`.
       */
-    val regionalCertificateArn: js.UndefOr[Input[String]] = js.native
+    val regionalCertificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and
       * `certificatePrivateKey`.
       */
-    val regionalCertificateName: js.UndefOr[Input[String]] = js.native
+    val regionalCertificateName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The hostname for the custom domain's regional endpoint.
       */
-    val regionalDomainName: js.UndefOr[Input[String]] = js.native
+    val regionalDomainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
       */
-    val regionalZoneId: js.UndefOr[Input[String]] = js.native
+    val regionalZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
       */
-    val securityPolicy: js.UndefOr[Input[String]] = js.native
+    val securityPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DomainNameState {
     

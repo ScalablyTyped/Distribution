@@ -3,23 +3,21 @@ package typings.baseui.menuMod
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderItemProps extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var isHighlighted: js.UndefOr[Boolean] = js.native
+  var isHighlighted: js.UndefOr[Boolean] = js.undefined
   
-  var ref: js.UndefOr[Ref[_]] = js.native
+  var ref: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var resetMenu: js.UndefOr[js.Function0[_]] = js.native
+  var resetMenu: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object RenderItemProps {
   
@@ -57,10 +55,10 @@ object RenderItemProps {
     def setIsHighlightedUndefined: Self = StObject.set(x, "isHighlighted", js.undefined)
     
     @scala.inline
-    def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)
@@ -69,7 +67,7 @@ object RenderItemProps {
     def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setResetMenu(value: () => _): Self = StObject.set(x, "resetMenu", js.Any.fromFunction0(value))
+    def setResetMenu(value: () => js.Any): Self = StObject.set(x, "resetMenu", js.Any.fromFunction0(value))
     
     @scala.inline
     def setResetMenuUndefined: Self = StObject.set(x, "resetMenu", js.undefined)

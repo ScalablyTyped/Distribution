@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object MediaPlayerState extends StObject {
   
   /** The media player is buffering content. */
   @js.native
-  sealed trait buffering extends MediaPlayerState
+  sealed trait buffering
+    extends StObject
+       with MediaPlayerState
   
   /** The media player is closed. */
   @js.native
-  sealed trait closed extends MediaPlayerState
+  sealed trait closed
+    extends StObject
+       with MediaPlayerState
   
   /** The media player is opening. */
   @js.native
-  sealed trait opening extends MediaPlayerState
+  sealed trait opening
+    extends StObject
+       with MediaPlayerState
   
   /** The media player is paused. */
   @js.native
-  sealed trait paused extends MediaPlayerState
+  sealed trait paused
+    extends StObject
+       with MediaPlayerState
   
   /** The media player is playing. */
   @js.native
-  sealed trait playing extends MediaPlayerState
+  sealed trait playing
+    extends StObject
+       with MediaPlayerState
   
   /** Not implemented. */
   @js.native
-  sealed trait stopped extends MediaPlayerState
+  sealed trait stopped
+    extends StObject
+       with MediaPlayerState
 }

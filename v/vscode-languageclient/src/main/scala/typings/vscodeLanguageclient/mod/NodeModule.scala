@@ -2,21 +2,21 @@ package typings.vscodeLanguageclient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodeModule extends _ServerOptions {
+trait NodeModule
+  extends StObject
+     with _ServerOptions {
   
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
-  var module: String = js.native
+  var module: String
   
-  var options: js.UndefOr[ForkOptions] = js.native
+  var options: js.UndefOr[ForkOptions] = js.undefined
   
-  var runtime: js.UndefOr[String] = js.native
+  var runtime: js.UndefOr[String] = js.undefined
   
-  var transport: js.UndefOr[Transport] = js.native
+  var transport: js.UndefOr[Transport] = js.undefined
 }
 object NodeModule {
   

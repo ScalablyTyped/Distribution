@@ -2,26 +2,24 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemRelationUpdates extends StObject {
   
   /**
     * List of newly added relations.
     */
-  var added: js.Array[WorkItemRelation] = js.native
+  var added: js.Array[WorkItemRelation]
   
   /**
     * List of removed relations.
     */
-  var removed: js.Array[WorkItemRelation] = js.native
+  var removed: js.Array[WorkItemRelation]
   
   /**
     * List of updated relations.
     */
-  var updated: js.Array[WorkItemRelation] = js.native
+  var updated: js.Array[WorkItemRelation]
 }
 object WorkItemRelationUpdates {
   

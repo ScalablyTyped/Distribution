@@ -2,51 +2,49 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the format of a video stream. */
-@js.native
 trait VideoEncodingProperties extends StObject {
   
   /** Gets or sets the video bit rate. */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /** Gets or sets the video frame rate. */
-  var frameRate: MediaRatio = js.native
+  var frameRate: MediaRatio
   
   /**
     * Gets the media format user data.
     * @return Receives the media format data.
     */
-  def getFormatUserData(): js.Array[Double] = js.native
+  def getFormatUserData(): js.Array[Double]
   
   /** Gets or sets the video image height. */
-  var height: Double = js.native
+  var height: Double
   
   /** Gets or sets the pixel aspect ratio. */
-  var pixelAspectRatio: MediaRatio = js.native
+  var pixelAspectRatio: MediaRatio
   
   /** Gets or sets the media format profile. */
-  var profileId: Double = js.native
+  var profileId: Double
   
   /** Gets additional format properties for the video stream. */
-  var properties: MediaPropertySet = js.native
+  var properties: MediaPropertySet
   
   /**
     * Sets the media format user data.
     * @param value The media data to set.
     */
-  def setFormatUserData(value: js.Array[Double]): Unit = js.native
+  def setFormatUserData(value: js.Array[Double]): Unit
   
   /** Gets or sets the subtype of the format. */
-  var subtype: String = js.native
+  var subtype: String
   
   /** Gets the format type. */
-  var `type`: String = js.native
+  var `type`: String
   
   /** Gets or sets the video image width. */
-  var width: Double = js.native
+  var width: Double
 }
 object VideoEncodingProperties {
   

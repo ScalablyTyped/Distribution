@@ -9,7 +9,6 @@ import typings.grpc.mod.ServerWriteableStream
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,16 +17,16 @@ object mod {
   @js.native
   class ^ () extends Mali {
     def this(path: js.Any) = this()
-    def this(path: js.UndefOr[scala.Nothing], name: String) = this()
-    def this(path: js.UndefOr[scala.Nothing], name: js.Array[String]) = this()
     def this(path: js.Any, name: String) = this()
     def this(path: js.Any, name: js.Array[String]) = this()
-    def this(path: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], options: js.Any) = this()
-    def this(path: js.UndefOr[scala.Nothing], name: String, options: js.Any) = this()
-    def this(path: js.UndefOr[scala.Nothing], name: js.Array[String], options: js.Any) = this()
-    def this(path: js.Any, name: js.UndefOr[scala.Nothing], options: js.Any) = this()
+    def this(path: Unit, name: String) = this()
+    def this(path: Unit, name: js.Array[String]) = this()
     def this(path: js.Any, name: String, options: js.Any) = this()
     def this(path: js.Any, name: js.Array[String], options: js.Any) = this()
+    def this(path: js.Any, name: Unit, options: js.Any) = this()
+    def this(path: Unit, name: String, options: js.Any) = this()
+    def this(path: Unit, name: js.Array[String], options: js.Any) = this()
+    def this(path: Unit, name: Unit, options: js.Any) = this()
   }
   
   @JSImport("mali", "Request")
@@ -151,23 +150,23 @@ object mod {
     var silent: Boolean = js.native
     
     def start(port: String): Server = js.native
-    def start(port: String, creds: js.UndefOr[scala.Nothing], options: js.Any): Server = js.native
     def start(port: String, creds: js.Any): Server = js.native
     def start(port: String, creds: js.Any, options: js.Any): Server = js.native
+    def start(port: String, creds: Unit, options: js.Any): Server = js.native
     def start(port: Double): Server = js.native
-    def start(port: Double, creds: js.UndefOr[scala.Nothing], options: js.Any): Server = js.native
     def start(port: Double, creds: js.Any): Server = js.native
     def start(port: Double, creds: js.Any, options: js.Any): Server = js.native
+    def start(port: Double, creds: Unit, options: js.Any): Server = js.native
     
     def toJSON(): js.Any = js.native
     
     def use(): Unit = js.native
-    def use(service: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], fns: js.Any): Unit = js.native
-    def use(service: js.UndefOr[scala.Nothing], name: js.Any): Unit = js.native
-    def use(service: js.UndefOr[scala.Nothing], name: js.Any, fns: js.Any): Unit = js.native
     def use(service: js.Any): Unit = js.native
-    def use(service: js.Any, name: js.UndefOr[scala.Nothing], fns: js.Any): Unit = js.native
     def use(service: js.Any, name: js.Any): Unit = js.native
     def use(service: js.Any, name: js.Any, fns: js.Any): Unit = js.native
+    def use(service: js.Any, name: Unit, fns: js.Any): Unit = js.native
+    def use(service: Unit, name: js.Any): Unit = js.native
+    def use(service: Unit, name: js.Any, fns: js.Any): Unit = js.native
+    def use(service: Unit, name: Unit, fns: js.Any): Unit = js.native
   }
 }

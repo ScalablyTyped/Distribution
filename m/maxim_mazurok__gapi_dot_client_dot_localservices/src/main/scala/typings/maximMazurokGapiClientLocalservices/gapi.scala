@@ -4,7 +4,6 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientLocalservices.anon.Accesstoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -35,59 +34,58 @@ object gapi {
         def search(request: Accesstoken): Request[GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse] = js.native
       }
       
-      @js.native
       trait GoogleAdsHomeservicesLocalservicesV1AccountReport extends StObject {
         
         /** Unique identifier of the GLS account. */
-        var accountId: js.UndefOr[String] = js.native
+        var accountId: js.UndefOr[String] = js.undefined
         
         /** Aggregator specific information related to the account. */
-        var aggregatorInfo: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1AggregatorInfo] = js.native
+        var aggregatorInfo: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1AggregatorInfo] = js.undefined
         
         /** Average review rating score from 1-5 stars. */
-        var averageFiveStarRating: js.UndefOr[Double] = js.native
+        var averageFiveStarRating: js.UndefOr[Double] = js.undefined
         
         /** Average weekly budget in the currency code of the account. */
-        var averageWeeklyBudget: js.UndefOr[Double] = js.native
+        var averageWeeklyBudget: js.UndefOr[Double] = js.undefined
         
         /** Business name of the account. */
-        var businessName: js.UndefOr[String] = js.native
+        var businessName: js.UndefOr[String] = js.undefined
         
         /** Currency code of the account. */
-        var currencyCode: js.UndefOr[String] = js.native
+        var currencyCode: js.UndefOr[String] = js.undefined
         
         /** Number of charged leads the account received in current specified period. */
-        var currentPeriodChargedLeads: js.UndefOr[String] = js.native
+        var currentPeriodChargedLeads: js.UndefOr[String] = js.undefined
         
         /** Number of connected phone calls (duration over 30s) in current specified period. */
-        var currentPeriodConnectedPhoneCalls: js.UndefOr[String] = js.native
+        var currentPeriodConnectedPhoneCalls: js.UndefOr[String] = js.undefined
         
         /** Number of phone calls in current specified period, including both connected and unconnected calls. */
-        var currentPeriodPhoneCalls: js.UndefOr[String] = js.native
+        var currentPeriodPhoneCalls: js.UndefOr[String] = js.undefined
         
         /** Total cost of the account in current specified period in the account's specified currency. */
-        var currentPeriodTotalCost: js.UndefOr[Double] = js.native
+        var currentPeriodTotalCost: js.UndefOr[Double] = js.undefined
         
         /**
           * Phone lead responsiveness of the account for the past 90 days from current date. This is computed by taking the total number of connected calls from charged phone leads and dividing
           * by the total number of calls received.
           */
-        var phoneLeadResponsiveness: js.UndefOr[Double] = js.native
+        var phoneLeadResponsiveness: js.UndefOr[Double] = js.undefined
         
         /** Number of charged leads the account received in previous specified period. */
-        var previousPeriodChargedLeads: js.UndefOr[String] = js.native
+        var previousPeriodChargedLeads: js.UndefOr[String] = js.undefined
         
         /** Number of connected phone calls (duration over 30s) in previous specified period. */
-        var previousPeriodConnectedPhoneCalls: js.UndefOr[String] = js.native
+        var previousPeriodConnectedPhoneCalls: js.UndefOr[String] = js.undefined
         
         /** Number of phone calls in previous specified period, including both connected and unconnected calls. */
-        var previousPeriodPhoneCalls: js.UndefOr[String] = js.native
+        var previousPeriodPhoneCalls: js.UndefOr[String] = js.undefined
         
         /** Total cost of the account in previous specified period in the account's specified currency. */
-        var previousPeriodTotalCost: js.UndefOr[Double] = js.native
+        var previousPeriodTotalCost: js.UndefOr[Double] = js.undefined
         
         /** Total number of reviews the account has up to current date. */
-        var totalReview: js.UndefOr[Double] = js.native
+        var totalReview: js.UndefOr[Double] = js.undefined
       }
       object GoogleAdsHomeservicesLocalservicesV1AccountReport {
         
@@ -198,11 +196,10 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleAdsHomeservicesLocalservicesV1AggregatorInfo extends StObject {
         
         /** Provider id (listed in aggregator system) which maps to a account id in GLS system. */
-        var aggregatorProviderId: js.UndefOr[String] = js.native
+        var aggregatorProviderId: js.UndefOr[String] = js.undefined
       }
       object GoogleAdsHomeservicesLocalservicesV1AggregatorInfo {
         
@@ -223,53 +220,52 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport extends StObject {
         
         /** Identifies account that received the lead. */
-        var accountId: js.UndefOr[String] = js.native
+        var accountId: js.UndefOr[String] = js.undefined
         
         /** Aggregator specific information related to the lead. */
-        var aggregatorInfo: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1AggregatorInfo] = js.native
+        var aggregatorInfo: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1AggregatorInfo] = js.undefined
         
         /** Business name associated to the account. */
-        var businessName: js.UndefOr[String] = js.native
+        var businessName: js.UndefOr[String] = js.undefined
         
         /** Whether the lead has been charged. */
-        var chargeStatus: js.UndefOr[String] = js.native
+        var chargeStatus: js.UndefOr[String] = js.undefined
         
         /** Currency code. */
-        var currencyCode: js.UndefOr[String] = js.native
+        var currencyCode: js.UndefOr[String] = js.undefined
         
         /** Dispute status related to the lead. */
-        var disputeStatus: js.UndefOr[String] = js.native
+        var disputeStatus: js.UndefOr[String] = js.undefined
         
         /** Location of the associated account's home city. */
-        var geo: js.UndefOr[String] = js.native
+        var geo: js.UndefOr[String] = js.undefined
         
         /** Lead category (e.g. hvac, plumber) */
-        var leadCategory: js.UndefOr[String] = js.native
+        var leadCategory: js.UndefOr[String] = js.undefined
         
         /** Timestamp of when the lead was created. */
-        var leadCreationTimestamp: js.UndefOr[String] = js.native
+        var leadCreationTimestamp: js.UndefOr[String] = js.undefined
         
         /** Unique identifier of a Detailed Lead Report. */
-        var leadId: js.UndefOr[String] = js.native
+        var leadId: js.UndefOr[String] = js.undefined
         
         /** Price of the lead (available only after it has been charged). */
-        var leadPrice: js.UndefOr[Double] = js.native
+        var leadPrice: js.UndefOr[Double] = js.undefined
         
         /** Lead type. */
-        var leadType: js.UndefOr[String] = js.native
+        var leadType: js.UndefOr[String] = js.undefined
         
         /** More information associated to only message leads. */
-        var messageLead: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1MessageLead] = js.native
+        var messageLead: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1MessageLead] = js.undefined
         
         /** More information associated to only phone leads. */
-        var phoneLead: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1PhoneLead] = js.native
+        var phoneLead: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1PhoneLead] = js.undefined
         
         /** Timezone of the particular provider associated to a lead. */
-        var timezone: js.UndefOr[GoogleTypeTimeZone] = js.native
+        var timezone: js.UndefOr[GoogleTypeTimeZone] = js.undefined
       }
       object GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport {
         
@@ -374,20 +370,19 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleAdsHomeservicesLocalservicesV1MessageLead extends StObject {
         
         /** Consumer phone number associated with the message lead. */
-        var consumerPhoneNumber: js.UndefOr[String] = js.native
+        var consumerPhoneNumber: js.UndefOr[String] = js.undefined
         
         /** Name of the customer who created the lead. */
-        var customerName: js.UndefOr[String] = js.native
+        var customerName: js.UndefOr[String] = js.undefined
         
         /** The job type of the specified lead. */
-        var jobType: js.UndefOr[String] = js.native
+        var jobType: js.UndefOr[String] = js.undefined
         
         /** The postal code of the customer who created the lead. */
-        var postalCode: js.UndefOr[String] = js.native
+        var postalCode: js.UndefOr[String] = js.undefined
       }
       object GoogleAdsHomeservicesLocalservicesV1MessageLead {
         
@@ -426,17 +421,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleAdsHomeservicesLocalservicesV1PhoneLead extends StObject {
         
         /** Timestamp of the phone call which resulted in a charged phone lead. */
-        var chargedCallTimestamp: js.UndefOr[String] = js.native
+        var chargedCallTimestamp: js.UndefOr[String] = js.undefined
         
         /** Duration of the charged phone call in seconds. */
-        var chargedConnectedCallDurationSeconds: js.UndefOr[String] = js.native
+        var chargedConnectedCallDurationSeconds: js.UndefOr[String] = js.undefined
         
         /** Consumer phone number associated with the phone lead. */
-        var consumerPhoneNumber: js.UndefOr[String] = js.native
+        var consumerPhoneNumber: js.UndefOr[String] = js.undefined
       }
       object GoogleAdsHomeservicesLocalservicesV1PhoneLead {
         
@@ -469,14 +463,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse extends StObject {
         
         /** List of account reports which maps 1:1 to a particular linked GLS account. */
-        var accountReports: js.UndefOr[js.Array[GoogleAdsHomeservicesLocalservicesV1AccountReport]] = js.native
+        var accountReports: js.UndefOr[js.Array[GoogleAdsHomeservicesLocalservicesV1AccountReport]] = js.undefined
         
         /** Pagination token to retrieve the next page of results. When `next_page_token` is not filled in, there is no next page and the list returned is the last page in the result set. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse {
         
@@ -506,14 +499,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse extends StObject {
         
         /** List of detailed lead reports uniquely identified by external lead id. */
-        var detailedLeadReports: js.UndefOr[js.Array[GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport]] = js.native
+        var detailedLeadReports: js.UndefOr[js.Array[GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport]] = js.undefined
         
         /** Pagination token to retrieve the next page of results. When `next_page_token` is not filled in, there is no next page and the list returned is the last page in the result set. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse {
         
@@ -543,14 +535,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait GoogleTypeTimeZone extends StObject {
         
         /** IANA Time Zone Database time zone, e.g. "America/New_York". */
-        var id: js.UndefOr[String] = js.native
+        var id: js.UndefOr[String] = js.undefined
         
         /** Optional. IANA Time Zone Database version number, e.g. "2019a". */
-        var version: js.UndefOr[String] = js.native
+        var version: js.UndefOr[String] = js.undefined
       }
       object GoogleTypeTimeZone {
         

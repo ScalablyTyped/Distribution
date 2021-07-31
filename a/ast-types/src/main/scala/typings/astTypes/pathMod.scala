@@ -7,14 +7,16 @@ import typings.astTypes.astTypesMod.Fork
 import typings.astTypes.typesMod.ASTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
   
-  @JSImport("ast-types/lib/path", JSImport.Default)
+  @JSImport("ast-types/lib/path", JSImport.Namespace)
   @js.native
-  def default(fork: Fork): PathConstructor = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(fork: Fork): PathConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[PathConstructor]
   
   @js.native
   trait Path[V] extends StObject {
@@ -45,7 +47,7 @@ object pathMod {
     
     def push(args: js.Any*): js.Any = js.native
     
-    def replace(replacement: js.UndefOr[scala.Nothing], args: ASTNode*): js.Any = js.native
+    def replace(replacement: Unit, args: ASTNode*): js.Any = js.native
     def replace(replacement: ASTNode, args: ASTNode*): js.Any = js.native
     
     def shift(): js.Any = js.native
@@ -57,11 +59,12 @@ object pathMod {
   
   @js.native
   trait PathConstructor
-    extends Instantiable1[/* value */ js.Any, Path[js.Object]]
+    extends StObject
+       with Instantiable1[/* value */ js.Any, Path[js.Object]]
        with Instantiable2[/* value */ js.Any, /* parentPath */ js.Any, Path[js.Object]]
        with Instantiable3[
           /* value */ js.Any, 
-          js.UndefOr[/* parentPath */ js.Any], 
+          (/* parentPath */ js.Any) | (/* parentPath */ Unit), 
           /* name */ js.Any, 
           Path[js.Object]
         ]

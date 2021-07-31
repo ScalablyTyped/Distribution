@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateContactFlowResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the contact flow.
     */
-  var ContactFlowArn: js.UndefOr[ARN] = js.native
+  var ContactFlowArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the contact flow.
     */
-  var ContactFlowId: js.UndefOr[typings.awsSdk.connectMod.ContactFlowId] = js.native
+  var ContactFlowId: js.UndefOr[typings.awsSdk.connectMod.ContactFlowId] = js.undefined
 }
 object CreateContactFlowResponse {
   

@@ -4,19 +4,17 @@ import typings.std.Event
 import typings.workboxWindow.workboxMod.Workbox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workboxEventMod {
   
-  @js.native
   trait WorkboxEvent extends StObject {
     
-    val originalEvent: Event = js.native
+    val originalEvent: Event
     
-    val target: Workbox = js.native
+    val target: Workbox
     
-    val `type`: String = js.native
+    val `type`: String
   }
   object WorkboxEvent {
     

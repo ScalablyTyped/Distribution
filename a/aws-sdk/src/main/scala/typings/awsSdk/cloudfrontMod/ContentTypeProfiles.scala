@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentTypeProfiles extends StObject {
   
   /**
     * Items in a field-level encryption content type-profile mapping. 
     */
-  var Items: js.UndefOr[ContentTypeProfileList] = js.native
+  var Items: js.UndefOr[ContentTypeProfileList] = js.undefined
   
   /**
     * The number of field-level encryption content type-profile mappings. 
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object ContentTypeProfiles {
   

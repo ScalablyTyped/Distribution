@@ -2,43 +2,44 @@ package typings.callsite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Array[CallSite] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[CallSite]]
+  
   @JSImport("callsite", JSImport.Namespace)
   @js.native
-  def apply(): js.Array[CallSite] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait CallSite extends StObject {
     
-    def getColumnNumber(): Double = js.native
+    def getColumnNumber(): Double
     
-    def getEvalOrigin(): String = js.native
+    def getEvalOrigin(): String
     
-    def getFileName(): String = js.native
+    def getFileName(): String
     
-    def getFunction(): js.Function = js.native
+    def getFunction(): js.Function
     
-    def getFunctionName(): String = js.native
+    def getFunctionName(): String
     
-    def getLineNumber(): Double = js.native
+    def getLineNumber(): Double
     
-    def getMethodName(): String = js.native
+    def getMethodName(): String
     
-    def getThis(): js.Any = js.native
+    def getThis(): js.Any
     
-    def getTypeName(): String = js.native
+    def getTypeName(): String
     
-    def isConstructor(): Boolean = js.native
+    def isConstructor(): Boolean
     
-    def isEval(): Boolean = js.native
+    def isEval(): Boolean
     
-    def isNative(): Boolean = js.native
+    def isNative(): Boolean
     
-    def isToplevel(): Boolean = js.native
+    def isToplevel(): Boolean
   }
   object CallSite {
     

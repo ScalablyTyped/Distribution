@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSubscriptionsResponse extends StObject {
   
   /** If not empty, indicates that there may be more subscriptions that match the request; this value should be passed in a new `ListSubscriptionsRequest` to get more subscriptions. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The subscriptions that match the request. */
-  var subscriptions: js.UndefOr[js.Array[Subscription]] = js.native
+  var subscriptions: js.UndefOr[js.Array[Subscription]] = js.undefined
 }
 object ListSubscriptionsResponse {
   

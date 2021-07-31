@@ -9,36 +9,34 @@ import typings.tinajsTina.mod.Page
 import typings.tinajsTina.mod.PageDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@tinajs/tina.@tinajs/tina.ComponentDefinitions> */
-  @js.native
   trait PartialComponentDefinitio extends StObject {
     
-    var attached: js.UndefOr[js.Function0[Unit]] = js.native
+    var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[_]]] = js.native
+    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[js.Any]]] = js.undefined
     
-    var created: js.UndefOr[js.Function0[Unit]] = js.native
+    var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var detached: js.UndefOr[js.Function0[Unit]] = js.native
+    var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var methods: js.UndefOr[
-        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]
-      ] = js.native
+        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
+      ] = js.undefined
     
-    var mixins: js.UndefOr[js.Array[Partial[ComponentDefinitions]]] = js.native
+    var mixins: js.UndefOr[js.Array[Partial[ComponentDefinitions]]] = js.undefined
     
-    var moved: js.UndefOr[js.Function0[Unit]] = js.native
+    var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var properties: js.UndefOr[ComponentProperties] = js.native
+    var properties: js.UndefOr[ComponentProperties] = js.undefined
     
-    var ready: js.UndefOr[js.Function0[Unit]] = js.native
+    var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PartialComponentDefinitio {
     
@@ -58,7 +56,7 @@ object anon {
       def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
       @scala.inline
-      def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[_]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
       @scala.inline
       def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
@@ -82,7 +80,7 @@ object anon {
       def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
       @scala.inline
-      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
@@ -117,50 +115,49 @@ object anon {
   }
   
   /* Inlined std.Partial<@tinajs/tina.@tinajs/tina.PageDefinitions> */
-  @js.native
   trait PartialPageDefinitions extends StObject {
     
-    var attached: js.UndefOr[js.Function0[Unit]] = js.native
+    var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+    var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
     
-    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[_]]] = js.native
+    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[js.Any]]] = js.undefined
     
-    var created: js.UndefOr[js.Function0[Unit]] = js.native
+    var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var detached: js.UndefOr[js.Function0[Unit]] = js.native
+    var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var methods: js.UndefOr[
-        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]
-      ] = js.native
+        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
+      ] = js.undefined
     
-    var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.native
+    var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.undefined
     
-    var moved: js.UndefOr[js.Function0[Unit]] = js.native
+    var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+    var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]] = js.native
+    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onPageScroll: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+    var onPageScroll: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
     
-    var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+    var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
     
-    var onReachBottom: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+    var onReachBottom: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
     
-    var onReady: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+    var onReady: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
     
-    var onShareAppMessage: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+    var onShareAppMessage: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+    var onShow: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
     
-    var onUnload: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+    var onUnload: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
     
-    var properties: js.UndefOr[ComponentProperties] = js.native
+    var properties: js.UndefOr[ComponentProperties] = js.undefined
     
-    var ready: js.UndefOr[js.Function0[Unit]] = js.native
+    var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PartialPageDefinitions {
     
@@ -186,7 +183,7 @@ object anon {
       def setBeforeLoadUndefined: Self = StObject.set(x, "beforeLoad", js.undefined)
       
       @scala.inline
-      def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[_]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
       @scala.inline
       def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
@@ -210,7 +207,7 @@ object anon {
       def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
       @scala.inline
-      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
@@ -299,50 +296,49 @@ object anon {
   }
   
   /* Inlined std.Partial<@tinajs/tina.@tinajs/tina.PageDefinitions> */
-  @js.native
   trait PartialPageDefinitionsAttached extends StObject {
     
-    var attached: js.UndefOr[js.Function0[Unit]] = js.native
+    var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.native
+    var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[_]]] = js.native
+    var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[js.Any]]] = js.undefined
     
-    var created: js.UndefOr[js.Function0[Unit]] = js.native
+    var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var detached: js.UndefOr[js.Function0[Unit]] = js.native
+    var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var methods: js.UndefOr[
-        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]
-      ] = js.native
+        StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
+      ] = js.undefined
     
-    var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.native
+    var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.undefined
     
-    var moved: js.UndefOr[js.Function0[Unit]] = js.native
+    var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.native
+    var onHide: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* options */ js.UndefOr[js.Any], Unit]] = js.native
+    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onPageScroll: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.native
+    var onPageScroll: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
     
-    var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.native
+    var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
     
-    var onReachBottom: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.native
+    var onReachBottom: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
     
-    var onReady: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.native
+    var onReady: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var onShareAppMessage: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.native
+    var onShareAppMessage: js.UndefOr[js.Function1[/* event */ this.type, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.native
+    var onShow: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var onUnload: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.native
+    var onUnload: js.UndefOr[js.ThisFunction0[/* this */ this.type, Unit]] = js.undefined
     
-    var properties: js.UndefOr[ComponentProperties] = js.native
+    var properties: js.UndefOr[ComponentProperties] = js.undefined
     
-    var ready: js.UndefOr[js.Function0[Unit]] = js.native
+    var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PartialPageDefinitionsAttached {
     
@@ -368,7 +364,7 @@ object anon {
       def setBeforeLoadUndefined: Self = StObject.set(x, "beforeLoad", js.undefined)
       
       @scala.inline
-      def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[_]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
       @scala.inline
       def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
@@ -392,7 +388,7 @@ object anon {
       def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
       @scala.inline
-      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)

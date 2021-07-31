@@ -22,14 +22,15 @@ import typings.storybookApi.versionsMod.Versions
 import typings.storybookTheming.typesMod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storeMod {
   
   @JSImport("@storybook/api/dist/store", JSImport.Default)
   @js.native
-  class default protected () extends Store {
+  class default protected ()
+    extends StObject
+       with Store {
     def this(hasSetStateGetState: Upstream) = this()
   }
   
@@ -45,10 +46,9 @@ object storeMod {
   
   type InputPatch = Patch | InputFnPatch
   
-  @js.native
   trait Options extends StObject {
     
-    var persistence: none | session | String = js.native
+    var persistence: none | session | String
   }
   object Options {
     
@@ -67,56 +67,55 @@ object storeMod {
   }
   
   /* Inlined std.Partial<@storybook/api.@storybook/api.State> */
-  @js.native
   trait Patch extends StObject {
     
-    var customQueryParams: js.UndefOr[QueryParams] = js.native
+    var customQueryParams: js.UndefOr[QueryParams] = js.undefined
     
-    var dismissedVersionNotification: js.UndefOr[String] = js.native
+    var dismissedVersionNotification: js.UndefOr[String] = js.undefined
     
-    var globals: js.UndefOr[Args] = js.native
+    var globals: js.UndefOr[Args] = js.undefined
     
-    var lastVersionCheck: js.UndefOr[Double] = js.native
+    var lastVersionCheck: js.UndefOr[Double] = js.undefined
     
-    var layout: js.UndefOr[Layout] = js.native
+    var layout: js.UndefOr[Layout] = js.undefined
     
-    var location: js.UndefOr[WindowLocation[LocationState]] = js.native
+    var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
     
-    var navigate: js.UndefOr[NavigateFn] = js.native
+    var navigate: js.UndefOr[NavigateFn] = js.undefined
     
-    var notifications: js.UndefOr[js.Array[Notification]] = js.native
+    var notifications: js.UndefOr[js.Array[Notification]] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
     
-    var refs: js.UndefOr[Refs] = js.native
+    var refs: js.UndefOr[Refs] = js.undefined
     
-    var releaseNotesViewed: js.UndefOr[js.Array[String]] = js.native
+    var releaseNotesViewed: js.UndefOr[js.Array[String]] = js.undefined
     
-    var selectedPanel: js.UndefOr[String] = js.native
+    var selectedPanel: js.UndefOr[String] = js.undefined
     
-    var settings: js.UndefOr[Settings] = js.native
+    var settings: js.UndefOr[Settings] = js.undefined
     
-    var shortcuts: js.UndefOr[Shortcuts] = js.native
+    var shortcuts: js.UndefOr[Shortcuts] = js.undefined
     
-    var storiesConfigured: js.UndefOr[Boolean] = js.native
+    var storiesConfigured: js.UndefOr[Boolean] = js.undefined
     
-    var storiesFailed: js.UndefOr[Error] = js.native
+    var storiesFailed: js.UndefOr[Error] = js.undefined
     
-    var storiesHash: js.UndefOr[StoriesHash] = js.native
+    var storiesHash: js.UndefOr[StoriesHash] = js.undefined
     
     var storyId: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var theme: js.UndefOr[ThemeVars] = js.native
+    var theme: js.UndefOr[ThemeVars] = js.undefined
     
-    var ui: js.UndefOr[UI] = js.native
+    var ui: js.UndefOr[UI] = js.undefined
     
-    var versions: js.UndefOr[Versions with UnknownEntries] = js.native
+    var versions: js.UndefOr[Versions & UnknownEntries] = js.undefined
     
-    var viewMode: js.UndefOr[ViewMode] = js.native
+    var viewMode: js.UndefOr[ViewMode] = js.undefined
   }
   object Patch {
     
@@ -264,7 +263,7 @@ object storeMod {
       def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
       
       @scala.inline
-      def setVersions(value: Versions with UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      def setVersions(value: Versions & UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
@@ -287,7 +286,7 @@ object storeMod {
     def getState(): State = js.native
     
     def setState(inputPatch: InputPatch): js.Promise[State] = js.native
-    def setState(inputPatch: InputPatch, callback: js.UndefOr[scala.Nothing], options: Options): js.Promise[State] = js.native
+    def setState(inputPatch: InputPatch, callback: Unit, options: Options): js.Promise[State] = js.native
     def setState(inputPatch: InputPatch, callback: CallBack): js.Promise[State] = js.native
     def setState(inputPatch: InputPatch, callback: CallBack, options: Options): js.Promise[State] = js.native
     def setState(inputPatch: InputPatch, options: Options): js.Promise[State] = js.native
@@ -297,12 +296,11 @@ object storeMod {
     var upstreamSetState: SetState = js.native
   }
   
-  @js.native
   trait Upstream extends StObject {
     
-    var getState: GetState = js.native
+    var getState: GetState
     
-    var setState: SetState = js.native
+    var setState: SetState
   }
   object Upstream {
     

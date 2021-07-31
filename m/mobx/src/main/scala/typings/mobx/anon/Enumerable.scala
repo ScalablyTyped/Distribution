@@ -3,21 +3,19 @@ package typings.mobx.anon
 import typings.mobx.coreActionMod.IAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enumerable extends StObject {
   
-  var configurable: Boolean = js.native
+  var configurable: Boolean
   
-  var enumerable: Boolean = js.native
+  var enumerable: Boolean
   
-  def initializer(): js.Function with IAction = js.native
+  def initializer(): js.Function & IAction
   
-  var value: js.UndefOr[scala.Nothing] = js.native
+  var value: Unit
   
-  var writable: Boolean = js.native
+  var writable: Boolean
 }
 object Enumerable {
   
@@ -25,10 +23,11 @@ object Enumerable {
   def apply(
     configurable: Boolean,
     enumerable: Boolean,
-    initializer: () => js.Function with IAction,
+    initializer: () => js.Function & IAction,
+    value: Unit,
     writable: Boolean
   ): Enumerable = {
-    val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], initializer = js.Any.fromFunction0(initializer), writable = writable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], initializer = js.Any.fromFunction0(initializer), value = value.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enumerable]
   }
   
@@ -42,7 +41,10 @@ object Enumerable {
     def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializer(value: () => js.Function with IAction): Self = StObject.set(x, "initializer", js.Any.fromFunction0(value))
+    def setInitializer(value: () => js.Function & IAction): Self = StObject.set(x, "initializer", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])

@@ -2,23 +2,23 @@ package typings.plugapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object User {
   
-  @js.native
-  trait Audience extends DJ {
+  trait Audience
+    extends StObject
+       with DJ {
     
-    var ignores: js.Array[_] = js.native
+    var ignores: js.Array[js.Any]
     
-    var notifications: js.Array[Notification] = js.native
+    var notifications: js.Array[Notification]
     
-    var pp: Double = js.native
+    var pp: Double
     
-    var pw: Double = js.native
+    var pw: Double
     
-    var xp: Double = js.native
+    var xp: Double
   }
   object Audience {
     
@@ -30,7 +30,7 @@ object User {
       gRole: Double,
       grab: Boolean,
       id: Double,
-      ignores: js.Array[_],
+      ignores: js.Array[js.Any],
       joined: String,
       language: String,
       level: Double,
@@ -53,7 +53,7 @@ object User {
     implicit class AudienceMutableBuilder[Self <: Audience] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIgnores(value: js.Array[_]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
+      def setIgnores(value: js.Array[js.Any]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIgnoresVarargs(value: js.Any*): Self = StObject.set(x, "ignores", js.Array(value :_*))
@@ -75,16 +75,17 @@ object User {
     }
   }
   
-  @js.native
-  trait DJ extends Room {
+  trait DJ
+    extends StObject
+       with Room {
     
-    var blurp: js.Any = js.native
+    var blurp: js.Any
     
-    var grab: Boolean = js.native
+    var grab: Boolean
     
-    var status: Double = js.native
+    var status: Double
     
-    var vote: Double = js.native
+    var vote: Double
   }
   object DJ {
     
@@ -127,14 +128,13 @@ object User {
     }
   }
   
-  @js.native
   trait Default extends StObject {
     
-    var avatarID: String = js.native
+    var avatarID: String
     
-    var language: String = js.native
+    var language: String
     
-    var username: String = js.native
+    var username: String
   }
   object Default {
     
@@ -158,20 +158,21 @@ object User {
     }
   }
   
-  @js.native
-  trait Extended extends Default {
+  trait Extended
+    extends StObject
+       with Default {
     
-    var curatorPoints: Double = js.native
+    var curatorPoints: Double
     
-    var djPoints: Double = js.native
+    var djPoints: Double
     
-    var fans: Double = js.native
+    var fans: Double
     
-    var id: String = js.native
+    var id: String
     
-    var listenerPoints: Double = js.native
+    var listenerPoints: Double
     
-    var status: Double = js.native
+    var status: Double
   }
   object Extended {
     
@@ -214,24 +215,25 @@ object User {
     }
   }
   
-  @js.native
-  trait Room extends Default {
+  trait Room
+    extends StObject
+       with Default {
     
-    var badge: String = js.native
+    var badge: String
     
-    var gRole: Double = js.native
+    var gRole: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var joined: String = js.native
+    var joined: String
     
-    var level: Double = js.native
+    var level: Double
     
-    var role: Double = js.native
+    var role: Double
     
-    var slug: String = js.native
+    var slug: String
     
-    var sub: Double = js.native
+    var sub: Double
   }
   object Room {
     
@@ -282,10 +284,11 @@ object User {
     }
   }
   
-  @js.native
-  trait Update extends Extended {
+  trait Update
+    extends StObject
+       with Extended {
     
-    var dateJoined: String = js.native
+    var dateJoined: String
   }
   object Update {
     
@@ -314,12 +317,13 @@ object User {
     }
   }
   
-  @js.native
-  trait User extends Room {
+  trait User
+    extends StObject
+       with Room {
     
-    var guest: Boolean = js.native
+    var guest: Boolean
     
-    var silver: Boolean = js.native
+    var silver: Boolean
   }
   object User {
     

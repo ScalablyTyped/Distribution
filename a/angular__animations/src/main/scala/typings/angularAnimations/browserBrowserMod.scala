@@ -11,10 +11,13 @@ import typings.angularAnimations.mod.ɵStyleData
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserBrowserMod {
+  
+  @JSImport("@angular/animations/browser/browser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/animations/browser/browser", "AnimationDriver")
   @js.native
@@ -31,32 +34,6 @@ object browserBrowserMod {
       keyframes: js.Array[StringDictionary[String | Double]],
       duration: Double,
       delay: Double,
-      easing: js.UndefOr[scala.Nothing],
-      previousPlayers: js.UndefOr[scala.Nothing],
-      scrubberAccessRequested: Boolean
-    ): js.Any = js.native
-    def animate(
-      element: js.Any,
-      keyframes: js.Array[StringDictionary[String | Double]],
-      duration: Double,
-      delay: Double,
-      easing: js.UndefOr[scala.Nothing],
-      previousPlayers: js.Array[_]
-    ): js.Any = js.native
-    def animate(
-      element: js.Any,
-      keyframes: js.Array[StringDictionary[String | Double]],
-      duration: Double,
-      delay: Double,
-      easing: js.UndefOr[scala.Nothing],
-      previousPlayers: js.Array[_],
-      scrubberAccessRequested: Boolean
-    ): js.Any = js.native
-    def animate(
-      element: js.Any,
-      keyframes: js.Array[StringDictionary[String | Double]],
-      duration: Double,
-      delay: Double,
       easing: String
     ): js.Any = js.native
     def animate(
@@ -65,7 +42,15 @@ object browserBrowserMod {
       duration: Double,
       delay: Double,
       easing: String,
-      previousPlayers: js.UndefOr[scala.Nothing],
+      previousPlayers: js.Array[js.Any]
+    ): js.Any = js.native
+    def animate(
+      element: js.Any,
+      keyframes: js.Array[StringDictionary[String | Double]],
+      duration: Double,
+      delay: Double,
+      easing: String,
+      previousPlayers: js.Array[js.Any],
       scrubberAccessRequested: Boolean
     ): js.Any = js.native
     def animate(
@@ -74,15 +59,7 @@ object browserBrowserMod {
       duration: Double,
       delay: Double,
       easing: String,
-      previousPlayers: js.Array[_]
-    ): js.Any = js.native
-    def animate(
-      element: js.Any,
-      keyframes: js.Array[StringDictionary[String | Double]],
-      duration: Double,
-      delay: Double,
-      easing: String,
-      previousPlayers: js.Array[_],
+      previousPlayers: Unit,
       scrubberAccessRequested: Boolean
     ): js.Any = js.native
     def animate(
@@ -91,7 +68,15 @@ object browserBrowserMod {
       duration: Double,
       delay: Double,
       easing: Null,
-      previousPlayers: js.UndefOr[scala.Nothing],
+      previousPlayers: js.Array[js.Any]
+    ): js.Any = js.native
+    def animate(
+      element: js.Any,
+      keyframes: js.Array[StringDictionary[String | Double]],
+      duration: Double,
+      delay: Double,
+      easing: Null,
+      previousPlayers: js.Array[js.Any],
       scrubberAccessRequested: Boolean
     ): js.Any = js.native
     def animate(
@@ -100,15 +85,33 @@ object browserBrowserMod {
       duration: Double,
       delay: Double,
       easing: Null,
-      previousPlayers: js.Array[_]
+      previousPlayers: Unit,
+      scrubberAccessRequested: Boolean
     ): js.Any = js.native
     def animate(
       element: js.Any,
       keyframes: js.Array[StringDictionary[String | Double]],
       duration: Double,
       delay: Double,
-      easing: Null,
-      previousPlayers: js.Array[_],
+      easing: Unit,
+      previousPlayers: js.Array[js.Any]
+    ): js.Any = js.native
+    def animate(
+      element: js.Any,
+      keyframes: js.Array[StringDictionary[String | Double]],
+      duration: Double,
+      delay: Double,
+      easing: Unit,
+      previousPlayers: js.Array[js.Any],
+      scrubberAccessRequested: Boolean
+    ): js.Any = js.native
+    def animate(
+      element: js.Any,
+      keyframes: js.Array[StringDictionary[String | Double]],
+      duration: Double,
+      delay: Double,
+      easing: Unit,
+      previousPlayers: Unit,
       scrubberAccessRequested: Boolean
     ): js.Any = js.native
     
@@ -119,7 +122,7 @@ object browserBrowserMod {
     
     def matchesElement(element: js.Any, selector: String): Boolean = js.native
     
-    def query(element: js.Any, selector: String, multi: Boolean): js.Array[_] = js.native
+    def query(element: js.Any, selector: String, multi: Boolean): js.Array[js.Any] = js.native
     
     def validateStyleProperty(prop: String): Boolean = js.native
   }
@@ -228,8 +231,8 @@ object browserBrowserMod {
       element: js.Any,
       eventName: String,
       eventPhase: String,
-      callback: js.Function1[/* event */ js.Any, _]
-    ): js.Function0[_] = js.native
+      callback: js.Function1[/* event */ js.Any, js.Any]
+    ): js.Function0[js.Any] = js.native
     
     def onInsert(namespaceId: String, element: js.Any, parent: js.Any, insertBefore: Boolean): Unit = js.native
     
@@ -252,7 +255,7 @@ object browserBrowserMod {
       metadata: AnimationTriggerMetadata
     ): Unit = js.native
     
-    def whenRenderingDone(): js.Promise[_] = js.native
+    def whenRenderingDone(): js.Promise[js.Any] = js.native
   }
   
   @JSImport("@angular/animations/browser/browser", "\u0275AnimationStyleNormalizer")
@@ -277,12 +280,14 @@ object browserBrowserMod {
     
     var _warningIssued: js.Any = js.native
     
-    def buildKeyframeElement(element: js.Any, name: String, keyframes: js.Array[StringDictionary[_]]): js.Any = js.native
+    def buildKeyframeElement(element: js.Any, name: String, keyframes: js.Array[StringDictionary[js.Any]]): js.Any = js.native
   }
   
   @JSImport("@angular/animations/browser/browser", "\u0275CssKeyframesPlayer")
   @js.native
-  class ɵCssKeyframesPlayer protected () extends AnimationPlayer {
+  class ɵCssKeyframesPlayer protected ()
+    extends StObject
+       with AnimationPlayer {
     def this(
       element: js.Any,
       keyframes: js.Array[StringDictionary[String | Double]],
@@ -336,16 +341,115 @@ object browserBrowserMod {
     
     var currentSnapshot: StringDictionary[String] = js.native
     
+    /**
+      * Destroys the animation, after invoking the `beforeDestroy()` callback.
+      * Calls the `onDestroy()` callback when destruction is completed.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
     val easing: String = js.native
     
     val element: js.Any = js.native
     
+    /**
+      * Ends the animation, invoking the `onDone()` callback.
+      */
+    /* CompleteClass */
+    override def finish(): Unit = js.native
+    
+    /**
+      * Reports the current position of the animation.
+      * @returns A 0-based offset into the duration, in milliseconds.
+      */
+    /* CompleteClass */
+    override def getPosition(): Double = js.native
+    
+    /**
+      * Reports whether the animation has started.
+      * @returns True if the animation has started, false otherwise.
+      */
+    /* CompleteClass */
+    override def hasStarted(): Boolean = js.native
+    
+    /**
+      * Initializes the animation.
+      */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
     val keyframes: js.Array[StringDictionary[String | Double]] = js.native
     
+    /**
+      * Provides a callback to invoke after the animation is destroyed.
+      * @param fn The callback function.
+      * @see `destroy()`
+      * @see `beforeDestroy()`
+      */
+    /* CompleteClass */
+    override def onDestroy(fn: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Provides a callback to invoke when the animation finishes.
+      * @param fn The callback function.
+      * @see `finish()`
+      */
+    /* CompleteClass */
+    override def onDone(fn: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Provides a callback to invoke when the animation starts.
+      * @param fn The callback function.
+      * @see `run()`
+      */
+    /* CompleteClass */
+    override def onStart(fn: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * The parent of this player, if any.
+      */
+    /* CompleteClass */
+    var parentPlayer: AnimationPlayer | Null = js.native
     @JSName("parentPlayer")
     var parentPlayer_ɵCssKeyframesPlayer: AnimationPlayer = js.native
     
+    /**
+      * Pauses the animation.
+      */
+    /* CompleteClass */
+    override def pause(): Unit = js.native
+    
+    /**
+      * Runs the animation, invoking the `onStart()` callback.
+      */
+    /* CompleteClass */
+    override def play(): Unit = js.native
+    
+    /**
+      * Resets the animation to its initial state.
+      */
+    /* CompleteClass */
+    override def reset(): Unit = js.native
+    
+    /**
+      * Restarts the paused animation.
+      */
+    /* CompleteClass */
+    override def restart(): Unit = js.native
+    
+    /**
+      * Sets the position of the animation.
+      * @param position A 0-based offset into the duration, in milliseconds.
+      */
+    /* CompleteClass */
+    override def setPosition(position: js.Any): Unit = js.native
     def setPosition(value: Double): Unit = js.native
+    
+    /**
+      * The total run time of the animation, in milliseconds.
+      */
+    /* CompleteClass */
+    override val totalTime: Double = js.native
   }
   
   @JSImport("@angular/animations/browser/browser", "\u0275NoopAnimationDriver")
@@ -375,7 +479,9 @@ object browserBrowserMod {
   
   @JSImport("@angular/animations/browser/browser", "\u0275WebAnimationsPlayer")
   @js.native
-  class ɵWebAnimationsPlayer protected () extends AnimationPlayer {
+  class ɵWebAnimationsPlayer protected ()
+    extends StObject
+       with AnimationPlayer {
     def this(
       element: js.Any,
       keyframes: js.Array[StringDictionary[String | Double]],
@@ -423,18 +529,117 @@ object browserBrowserMod {
     
     var currentSnapshot: StringDictionary[String | Double] = js.native
     
+    /**
+      * Destroys the animation, after invoking the `beforeDestroy()` callback.
+      * Calls the `onDestroy()` callback when destruction is completed.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
     val domPlayer: DOMAnimation = js.native
     
     var element: js.Any = js.native
     
+    /**
+      * Ends the animation, invoking the `onDone()` callback.
+      */
+    /* CompleteClass */
+    override def finish(): Unit = js.native
+    
+    /**
+      * Reports the current position of the animation.
+      * @returns A 0-based offset into the duration, in milliseconds.
+      */
+    /* CompleteClass */
+    override def getPosition(): Double = js.native
+    
+    /**
+      * Reports whether the animation has started.
+      * @returns True if the animation has started, false otherwise.
+      */
+    /* CompleteClass */
+    override def hasStarted(): Boolean = js.native
+    
+    /**
+      * Initializes the animation.
+      */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
     var keyframes: js.Array[StringDictionary[String | Double]] = js.native
+    
+    /**
+      * Provides a callback to invoke after the animation is destroyed.
+      * @param fn The callback function.
+      * @see `destroy()`
+      * @see `beforeDestroy()`
+      */
+    /* CompleteClass */
+    override def onDestroy(fn: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Provides a callback to invoke when the animation finishes.
+      * @param fn The callback function.
+      * @see `finish()`
+      */
+    /* CompleteClass */
+    override def onDone(fn: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Provides a callback to invoke when the animation starts.
+      * @param fn The callback function.
+      * @see `run()`
+      */
+    /* CompleteClass */
+    override def onStart(fn: js.Function0[Unit]): Unit = js.native
     
     var options: StringDictionary[String | Double] = js.native
     
+    /**
+      * The parent of this player, if any.
+      */
+    /* CompleteClass */
+    var parentPlayer: AnimationPlayer | Null = js.native
+    
+    /**
+      * Pauses the animation.
+      */
+    /* CompleteClass */
+    override def pause(): Unit = js.native
+    
+    /**
+      * Runs the animation, invoking the `onStart()` callback.
+      */
+    /* CompleteClass */
+    override def play(): Unit = js.native
+    
+    /**
+      * Resets the animation to its initial state.
+      */
+    /* CompleteClass */
+    override def reset(): Unit = js.native
+    
+    /**
+      * Restarts the paused animation.
+      */
+    /* CompleteClass */
+    override def restart(): Unit = js.native
+    
+    /**
+      * Sets the position of the animation.
+      * @param position A 0-based offset into the duration, in milliseconds.
+      */
+    /* CompleteClass */
+    override def setPosition(position: js.Any): Unit = js.native
     def setPosition(p: Double): Unit = js.native
     
     var time: Double = js.native
     
+    /**
+      * The total run time of the animation, in milliseconds.
+      */
+    /* CompleteClass */
+    override val totalTime: Double = js.native
     @JSName("totalTime")
     def totalTime_MɵWebAnimationsPlayer: Double = js.native
   }
@@ -443,9 +648,8 @@ object browserBrowserMod {
   @js.native
   class ɵWebAnimationsStyleNormalizer () extends ɵAnimationStyleNormalizer
   
-  @JSImport("@angular/animations/browser/browser", "\u0275allowPreviousPlayerStylesMerge")
-  @js.native
-  def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = js.native
+  @scala.inline
+  def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowPreviousPlayerStylesMerge")(duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@angular/animations/browser/browser", "\u0275angular_packages_animations_browser_browser_a")
   @js.native
@@ -485,30 +689,24 @@ object browserBrowserMod {
     def initialStylesByElement_=(x: WeakMap[js.Any, StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialStylesByElement")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@angular/animations/browser/browser", "\u0275containsElement")
-  @js.native
-  def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = js.native
+  @scala.inline
+  def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275containsElement")(elm1.asInstanceOf[js.Any], elm2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@angular/animations/browser/browser", "\u0275invokeQuery")
-  @js.native
-  def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[_] = js.native
+  @scala.inline
+  def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275invokeQuery")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], multi.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@angular/animations/browser/browser", "\u0275matchesElement")
-  @js.native
-  def ɵmatchesElement(element: js.Any, selector: String): Boolean = js.native
+  @scala.inline
+  def ɵmatchesElement(element: js.Any, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275matchesElement")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@angular/animations/browser/browser", "\u0275supportsWebAnimations")
-  @js.native
-  def ɵsupportsWebAnimations(): Boolean = js.native
+  @scala.inline
+  def ɵsupportsWebAnimations(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275supportsWebAnimations")().asInstanceOf[Boolean]
   
-  @JSImport("@angular/animations/browser/browser", "\u0275validateStyleProperty")
-  @js.native
-  def ɵvalidateStyleProperty(prop: String): Boolean = js.native
+  @scala.inline
+  def ɵvalidateStyleProperty(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275validateStyleProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait AnimationEngineInstruction extends StObject {
     
-    var `type`: AnimationTransitionInstructionType = js.native
+    var `type`: AnimationTransitionInstructionType
   }
   object AnimationEngineInstruction {
     
@@ -527,28 +725,29 @@ object browserBrowserMod {
     }
   }
   
-  @js.native
-  trait AnimationTimelineInstruction extends AnimationEngineInstruction {
+  trait AnimationTimelineInstruction
+    extends StObject
+       with AnimationEngineInstruction {
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var easing: String | Null = js.native
+    var easing: String | Null
     
-    var element: js.Any = js.native
+    var element: js.Any
     
-    var keyframes: js.Array[ɵStyleData] = js.native
+    var keyframes: js.Array[ɵStyleData]
     
-    var postStyleProps: js.Array[String] = js.native
+    var postStyleProps: js.Array[String]
     
-    var preStyleProps: js.Array[String] = js.native
+    var preStyleProps: js.Array[String]
     
-    var stretchStartingKeyframe: js.UndefOr[Boolean] = js.native
+    var stretchStartingKeyframe: js.UndefOr[Boolean] = js.undefined
     
-    var subTimeline: Boolean = js.native
+    var subTimeline: Boolean
     
-    var totalTime: Double = js.native
+    var totalTime: Double
   }
   object AnimationTimelineInstruction {
     
@@ -564,7 +763,7 @@ object browserBrowserMod {
       totalTime: Double,
       `type`: AnimationTransitionInstructionType
     ): AnimationTimelineInstruction = {
-      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], keyframes = keyframes.asInstanceOf[js.Any], postStyleProps = postStyleProps.asInstanceOf[js.Any], preStyleProps = preStyleProps.asInstanceOf[js.Any], subTimeline = subTimeline.asInstanceOf[js.Any], totalTime = totalTime.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], keyframes = keyframes.asInstanceOf[js.Any], postStyleProps = postStyleProps.asInstanceOf[js.Any], preStyleProps = preStyleProps.asInstanceOf[js.Any], subTimeline = subTimeline.asInstanceOf[js.Any], totalTime = totalTime.asInstanceOf[js.Any], easing = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationTimelineInstruction]
     }
@@ -641,32 +840,31 @@ object browserBrowserMod {
     *
     * @see https://developer.mozilla.org/de/docs/Web/API/Animation
     */
-  @js.native
   trait DOMAnimation extends StObject {
     
-    def addEventListener(eventName: String, handler: js.Function1[/* event */ js.Any, _]): js.Any = js.native
+    def addEventListener(eventName: String, handler: js.Function1[/* event */ js.Any, js.Any]): js.Any
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    var currentTime: Double = js.native
+    var currentTime: Double
     
-    def dispatchEvent(eventName: String): js.Any = js.native
+    def dispatchEvent(eventName: String): js.Any
     
-    def finish(): Unit = js.native
+    def finish(): Unit
     
-    var onfinish: js.Function = js.native
+    var onfinish: js.Function
     
-    def pause(): Unit = js.native
+    def pause(): Unit
     
-    def play(): Unit = js.native
+    def play(): Unit
     
-    var position: Double = js.native
+    var position: Double
   }
   object DOMAnimation {
     
     @scala.inline
     def apply(
-      addEventListener: (String, js.Function1[/* event */ js.Any, _]) => js.Any,
+      addEventListener: (String, js.Function1[/* event */ js.Any, js.Any]) => js.Any,
       cancel: () => Unit,
       currentTime: Double,
       dispatchEvent: String => js.Any,
@@ -684,7 +882,7 @@ object browserBrowserMod {
     implicit class DOMAnimationMutableBuilder[Self <: DOMAnimation] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAddEventListener(value: (String, js.Function1[/* event */ js.Any, _]) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      def setAddEventListener(value: (String, js.Function1[/* event */ js.Any, js.Any]) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
@@ -712,18 +910,17 @@ object browserBrowserMod {
     }
   }
   
-  @js.native
   trait ElementInstructionMap extends StObject {
     
-    var _map: js.Any = js.native
+    var _map: js.Any
     
-    def append(element: js.Any, instructions: js.Array[AnimationTimelineInstruction]): Unit = js.native
+    def append(element: js.Any, instructions: js.Array[AnimationTimelineInstruction]): Unit
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def consume(element: js.Any): js.Array[AnimationTimelineInstruction] = js.native
+    def consume(element: js.Any): js.Array[AnimationTimelineInstruction]
     
-    def has(element: js.Any): Boolean = js.native
+    def has(element: js.Any): Boolean
   }
   object ElementInstructionMap {
     

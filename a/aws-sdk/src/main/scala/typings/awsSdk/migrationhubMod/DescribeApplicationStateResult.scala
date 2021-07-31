@@ -2,21 +2,19 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeApplicationStateResult extends StObject {
   
   /**
     * Status of the application - Not Started, In-Progress, Complete.
     */
-  var ApplicationStatus: js.UndefOr[typings.awsSdk.migrationhubMod.ApplicationStatus] = js.native
+  var ApplicationStatus: js.UndefOr[typings.awsSdk.migrationhubMod.ApplicationStatus] = js.undefined
   
   /**
     * The timestamp when the application status was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[UpdateDateTime] = js.native
+  var LastUpdatedTime: js.UndefOr[UpdateDateTime] = js.undefined
 }
 object DescribeApplicationStateResult {
   

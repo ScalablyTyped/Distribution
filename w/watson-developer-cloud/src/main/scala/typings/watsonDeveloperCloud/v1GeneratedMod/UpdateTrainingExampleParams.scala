@@ -2,34 +2,32 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateTrainingExample` operation. */
-@js.native
 trait UpdateTrainingExampleParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** The example to add. */
-  var cross_reference: js.UndefOr[String] = js.native
+  var cross_reference: js.UndefOr[String] = js.undefined
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
   /** The ID of the document as it is indexed. */
-  var example_id: String = js.native
+  var example_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The ID of the query used for training. */
-  var query_id: String = js.native
+  var query_id: String
   
   /** The relevance value for this example. */
-  var relevance: js.UndefOr[Double] = js.native
+  var relevance: js.UndefOr[Double] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateTrainingExampleParams {
   

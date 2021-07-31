@@ -7,10 +7,8 @@ import typings.vegaLite.vegaLiteStrings.topojson
 import typings.vegaLite.vegaLiteStrings.tsv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataFormatBase extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait DataFormatBase extends StObject {
     * For `"date"`, we parse data based using Javascript's [`Date.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse).
     * For Specific date formats can be provided (e.g., `{foo: "date:'%m%d%Y'"}`), using the [d3-time-format syntax](https://github.com/d3/d3-time-format#locale_format). UTC date format parsing is supported similarly (e.g., `{foo: "utc:'%m%d%Y'"}`). See more about [UTC time](https://vega.github.io/vega-lite/docs/timeunit.html#utc)
     */
-  var parse: js.UndefOr[Parse | Null] = js.native
+  var parse: js.UndefOr[Parse | Null] = js.undefined
   
   /**
     * Type of input data: `"json"`, `"csv"`, `"tsv"`, `"dsv"`.
@@ -29,7 +27,7 @@ trait DataFormatBase extends StObject {
     * __Default value:__  The default format type is determined by the extension of the file URL.
     * If no extension is detected, `"json"` will be used by default.
     */
-  var `type`: js.UndefOr[csv | tsv | dsv | json | topojson] = js.native
+  var `type`: js.UndefOr[csv | tsv | dsv | json | topojson] = js.undefined
 }
 object DataFormatBase {
   

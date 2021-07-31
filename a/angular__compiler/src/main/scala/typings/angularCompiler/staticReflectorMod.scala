@@ -10,7 +10,6 @@ import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staticReflectorMod {
@@ -27,26 +26,19 @@ object staticReflectorMod {
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
-      knownMetadataClasses: js.UndefOr[scala.Nothing],
-      knownMetadataFunctions: js.Array[FilePath]
-    ) = this()
-    def this(
-      summaryResolver: SummaryResolver[StaticSymbol],
-      symbolResolver: StaticSymbolResolver,
       knownMetadataClasses: js.Array[Ctor],
       knownMetadataFunctions: js.Array[FilePath]
     ) = this()
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
-      knownMetadataClasses: js.UndefOr[scala.Nothing],
-      knownMetadataFunctions: js.UndefOr[scala.Nothing],
-      errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
+      knownMetadataClasses: Unit,
+      knownMetadataFunctions: js.Array[FilePath]
     ) = this()
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
-      knownMetadataClasses: js.UndefOr[scala.Nothing],
+      knownMetadataClasses: js.Array[Ctor],
       knownMetadataFunctions: js.Array[FilePath],
       errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
     ) = this()
@@ -54,14 +46,21 @@ object staticReflectorMod {
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
       knownMetadataClasses: js.Array[Ctor],
-      knownMetadataFunctions: js.UndefOr[scala.Nothing],
+      knownMetadataFunctions: Unit,
       errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
     ) = this()
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
-      knownMetadataClasses: js.Array[Ctor],
+      knownMetadataClasses: Unit,
       knownMetadataFunctions: js.Array[FilePath],
+      errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
+    ) = this()
+    def this(
+      summaryResolver: SummaryResolver[StaticSymbol],
+      symbolResolver: StaticSymbolResolver,
+      knownMetadataClasses: Unit,
+      knownMetadataFunctions: Unit,
       errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
     ) = this()
     
@@ -83,7 +82,7 @@ object staticReflectorMod {
     
     var annotationForParentClassWithSummaryKind: js.Any = js.native
     
-    def annotations(`type`: StaticSymbol): js.Array[_] = js.native
+    def annotations(`type`: StaticSymbol): js.Array[js.Any] = js.native
     
     def componentModuleUrl(typeOrFunc: StaticSymbol): String = js.native
     
@@ -128,9 +127,9 @@ object staticReflectorMod {
     
     var parameterCache: js.Any = js.native
     
-    def parameters(`type`: StaticSymbol): js.Array[_] = js.native
+    def parameters(`type`: StaticSymbol): js.Array[js.Any] = js.native
     
-    def propMetadata(`type`: StaticSymbol): StringDictionary[js.Array[_]] = js.native
+    def propMetadata(`type`: StaticSymbol): StringDictionary[js.Array[js.Any]] = js.native
     
     var propertyCache: js.Any = js.native
     
@@ -142,7 +141,7 @@ object staticReflectorMod {
     
     var shallowAnnotationCache: js.Any = js.native
     
-    def shallowAnnotations(`type`: StaticSymbol): js.Array[_] = js.native
+    def shallowAnnotations(`type`: StaticSymbol): js.Array[js.Any] = js.native
     
     var staticCache: js.Any = js.native
     
@@ -150,7 +149,7 @@ object staticReflectorMod {
     
     var symbolResolver: js.Any = js.native
     
-    def tryAnnotations(`type`: StaticSymbol): js.Array[_] = js.native
+    def tryAnnotations(`type`: StaticSymbol): js.Array[js.Any] = js.native
     
     def tryFindDeclaration(moduleUrl: String, name: String): StaticSymbol = js.native
     def tryFindDeclaration(moduleUrl: String, name: String, containingFile: String): StaticSymbol = js.native

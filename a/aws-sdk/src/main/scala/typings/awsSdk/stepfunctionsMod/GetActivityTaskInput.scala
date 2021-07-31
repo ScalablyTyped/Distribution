@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetActivityTaskInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the activity to retrieve tasks from (assigned when you create the task using CreateActivity.)
     */
-  var activityArn: Arn = js.native
+  var activityArn: Arn
   
   /**
     * You can provide an arbitrary name in order to identify the worker that the task is assigned to. This name is used when it is logged in the execution history.
     */
-  var workerName: js.UndefOr[Name] = js.native
+  var workerName: js.UndefOr[Name] = js.undefined
 }
 object GetActivityTaskInput {
   

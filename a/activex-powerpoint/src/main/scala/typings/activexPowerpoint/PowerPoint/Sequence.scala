@@ -4,7 +4,6 @@ import typings.activexOffice.Office.MsoRGBType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,34 +15,11 @@ trait Sequence extends StObject {
     * @param number [Index=-1]
     */
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect): Effect = js.native
-  def AddEffect(
-    Shape: Shape,
-    effectId: MsoAnimEffect,
-    Level: js.UndefOr[scala.Nothing],
-    trigger: js.UndefOr[scala.Nothing],
-    Index: Double
-  ): Effect = js.native
-  def AddEffect(
-    Shape: Shape,
-    effectId: MsoAnimEffect,
-    Level: js.UndefOr[scala.Nothing],
-    trigger: MsoAnimTriggerType
-  ): Effect = js.native
-  def AddEffect(
-    Shape: Shape,
-    effectId: MsoAnimEffect,
-    Level: js.UndefOr[scala.Nothing],
-    trigger: MsoAnimTriggerType,
-    Index: Double
-  ): Effect = js.native
+  def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: Unit, trigger: Unit, Index: Double): Effect = js.native
+  def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: Unit, trigger: MsoAnimTriggerType): Effect = js.native
+  def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: Unit, trigger: MsoAnimTriggerType, Index: Double): Effect = js.native
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: MsoAnimateByLevel): Effect = js.native
-  def AddEffect(
-    Shape: Shape,
-    effectId: MsoAnimEffect,
-    Level: MsoAnimateByLevel,
-    trigger: js.UndefOr[scala.Nothing],
-    Index: Double
-  ): Effect = js.native
+  def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: MsoAnimateByLevel, trigger: Unit, Index: Double): Effect = js.native
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: MsoAnimateByLevel, trigger: MsoAnimTriggerType): Effect = js.native
   def AddEffect(
     Shape: Shape,
@@ -63,14 +39,6 @@ trait Sequence extends StObject {
     effectId: MsoAnimEffect,
     trigger: MsoAnimTriggerType,
     pTriggerShape: Shape,
-    bookmark: js.UndefOr[scala.Nothing],
-    Level: MsoAnimateByLevel
-  ): Effect = js.native
-  def AddTriggerEffect(
-    pShape: Shape,
-    effectId: MsoAnimEffect,
-    trigger: MsoAnimTriggerType,
-    pTriggerShape: Shape,
     bookmark: String
   ): Effect = js.native
   def AddTriggerEffect(
@@ -79,6 +47,14 @@ trait Sequence extends StObject {
     trigger: MsoAnimTriggerType,
     pTriggerShape: Shape,
     bookmark: String,
+    Level: MsoAnimateByLevel
+  ): Effect = js.native
+  def AddTriggerEffect(
+    pShape: Shape,
+    effectId: MsoAnimEffect,
+    trigger: MsoAnimTriggerType,
+    pTriggerShape: Shape,
+    bookmark: Unit,
     Level: MsoAnimateByLevel
   ): Effect = js.native
   
@@ -93,12 +69,7 @@ trait Sequence extends StObject {
     * @param PowerPoint.PpColorSchemeIndex [DimSchemeColor=0]
     */
   def ConvertToAfterEffect(Effect: Effect, After: MsoAnimAfterEffect): Effect = js.native
-  def ConvertToAfterEffect(
-    Effect: Effect,
-    After: MsoAnimAfterEffect,
-    DimColor: js.UndefOr[scala.Nothing],
-    DimSchemeColor: PpColorSchemeIndex
-  ): Effect = js.native
+  def ConvertToAfterEffect(Effect: Effect, After: MsoAnimAfterEffect, DimColor: Unit, DimSchemeColor: PpColorSchemeIndex): Effect = js.native
   def ConvertToAfterEffect(Effect: Effect, After: MsoAnimAfterEffect, DimColor: MsoRGBType): Effect = js.native
   def ConvertToAfterEffect(
     Effect: Effect,

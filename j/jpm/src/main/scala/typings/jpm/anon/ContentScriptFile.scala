@@ -8,45 +8,43 @@ import typings.std.Error
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentScriptFile extends StObject {
   
-  var allow: js.UndefOr[`0`] = js.native
+  var allow: js.UndefOr[`0`] = js.undefined
   
-  var contentScript: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScript: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptOptions: js.UndefOr[js.Any] = js.native
+  var contentScriptOptions: js.UndefOr[js.Any] = js.undefined
   
-  var contentScriptWhen: js.UndefOr[start | ready | end] = js.native
+  var contentScriptWhen: js.UndefOr[start | ready | end] = js.undefined
   
-  var contentStyle: js.UndefOr[String | js.Array[String]] = js.native
+  var contentStyle: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentStyleFile: js.UndefOr[String | js.Array[String]] = js.native
+  var contentStyleFile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentURL: js.UndefOr[String | URL] = js.native
+  var contentURL: js.UndefOr[String | URL] = js.undefined
   
-  var contextMenu: js.UndefOr[Boolean] = js.native
+  var contextMenu: js.UndefOr[Boolean] = js.undefined
   
-  var focus: js.UndefOr[Boolean] = js.native
+  var focus: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ Error, _]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[_]] = js.native
+  var onHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onMessage: js.UndefOr[js.Function1[/* message */ String, _]] = js.native
+  var onMessage: js.UndefOr[js.Function1[/* message */ String, js.Any]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[_]] = js.native
+  var onShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var position: js.UndefOr[PanelPosition] = js.native
+  var position: js.UndefOr[PanelPosition] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ContentScriptFile {
   
@@ -138,25 +136,25 @@ object ContentScriptFile {
     def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setOnError(value: /* error */ Error => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setOnHide(value: () => _): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def setOnMessage(value: /* message */ String => _): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    def setOnMessage(value: /* message */ String => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
     
     @scala.inline
-    def setOnShow(value: () => _): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)

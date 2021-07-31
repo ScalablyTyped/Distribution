@@ -11,7 +11,6 @@ import typings.typeorm.relationCountLoadResultMod.RelationCountLoadResult
 import typings.typeorm.relationIdLoadResultMod.RelationIdLoadResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rawSqlResultsToEntityTransformerMod {
@@ -44,7 +43,7 @@ object rawSqlResultsToEntityTransformerMod {
     /**
       * Groups given raw results by ids of given alias.
       */
-    /* protected */ def group(rawResults: js.Array[_], alias: Alias): Map[String, js.Array[_]] = js.native
+    /* protected */ def group(rawResults: js.Array[js.Any], alias: Alias): Map[String, js.Array[js.Any]] = js.native
     
     var queryRunner: js.UndefOr[QueryRunner] = js.native
     
@@ -56,22 +55,22 @@ object rawSqlResultsToEntityTransformerMod {
       * Since db returns a duplicated rows of the data where accuracies of the same object can be duplicated
       * we need to group our result and we must have some unique id (primary key in our case)
       */
-    def transform(rawResults: js.Array[_], alias: Alias): js.Array[_] = js.native
+    def transform(rawResults: js.Array[js.Any], alias: Alias): js.Array[js.Any] = js.native
     
-    /* protected */ def transformColumns(rawResults: js.Array[_], alias: Alias, entity: ObjectLiteral, metadata: EntityMetadata): Boolean = js.native
+    /* protected */ def transformColumns(rawResults: js.Array[js.Any], alias: Alias, entity: ObjectLiteral, metadata: EntityMetadata): Boolean = js.native
     
     /**
       * Transforms joined entities in the given raw results by a given alias and stores to the given (parent) entity
       */
-    /* protected */ def transformJoins(rawResults: js.Array[_], entity: ObjectLiteral, alias: Alias, metadata: EntityMetadata): Boolean = js.native
+    /* protected */ def transformJoins(rawResults: js.Array[js.Any], entity: ObjectLiteral, alias: Alias, metadata: EntityMetadata): Boolean = js.native
     
     /**
       * Transforms set of data results into single entity.
       */
-    /* protected */ def transformRawResultsGroup(rawResults: js.Array[_], alias: Alias): js.UndefOr[ObjectLiteral] = js.native
+    /* protected */ def transformRawResultsGroup(rawResults: js.Array[js.Any], alias: Alias): js.UndefOr[ObjectLiteral] = js.native
     
-    /* protected */ def transformRelationCounts(rawSqlResults: js.Array[_], alias: Alias, entity: ObjectLiteral): Boolean = js.native
+    /* protected */ def transformRelationCounts(rawSqlResults: js.Array[js.Any], alias: Alias, entity: ObjectLiteral): Boolean = js.native
     
-    /* protected */ def transformRelationIds(rawSqlResults: js.Array[_], alias: Alias, entity: ObjectLiteral, metadata: EntityMetadata): Boolean = js.native
+    /* protected */ def transformRelationIds(rawSqlResults: js.Array[js.Any], alias: Alias, entity: ObjectLiteral, metadata: EntityMetadata): Boolean = js.native
   }
 }

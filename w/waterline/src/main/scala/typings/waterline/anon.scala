@@ -4,15 +4,13 @@ import typings.waterline.mod.CollectionClass
 import typings.waterline.mod.CollectionDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Extend extends StObject {
     
-    def extend(params: CollectionDefinition): CollectionClass = js.native
+    def extend(params: CollectionDefinition): CollectionClass
   }
   object Extend {
     
@@ -30,12 +28,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Limit extends StObject {
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var page: Double = js.native
+    var page: Double
   }
   object Limit {
     

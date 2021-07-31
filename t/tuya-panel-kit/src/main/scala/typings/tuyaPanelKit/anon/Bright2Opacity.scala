@@ -2,7 +2,6 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,9 +10,9 @@ trait Bright2Opacity extends StObject {
   def bright2Opacity(bright: Double, option: Max): Double = js.native
   
   def brightKelvin2rgb(bright: Double): String = js.native
-  def brightKelvin2rgb(bright: Double, kelvin: js.UndefOr[scala.Nothing], option: TemperatureMax): String = js.native
   def brightKelvin2rgb(bright: Double, kelvin: Double): String = js.native
   def brightKelvin2rgb(bright: Double, kelvin: Double, option: TemperatureMax): String = js.native
+  def brightKelvin2rgb(bright: Double, kelvin: Unit, option: TemperatureMax): String = js.native
   
   def brightKelvin2rgba(bright: Double, kelvin: Double): String = js.native
   

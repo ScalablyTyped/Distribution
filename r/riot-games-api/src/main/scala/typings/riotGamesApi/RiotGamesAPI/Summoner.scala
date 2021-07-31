@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Summoner {
   
-  @js.native
   trait MasteryDto extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var rank: Double = js.native
+    var rank: Double
   }
   object MasteryDto {
     
@@ -36,16 +34,15 @@ object Summoner {
     }
   }
   
-  @js.native
   trait MasteryPageDto extends StObject {
     
-    var current: Boolean = js.native
+    var current: Boolean
     
-    var id: Double = js.native
+    var id: Double
     
-    var masteries: js.Array[MasteryDto] = js.native
+    var masteries: js.Array[MasteryDto]
     
-    var name: String = js.native
+    var name: String
   }
   object MasteryPageDto {
     
@@ -75,12 +72,11 @@ object Summoner {
     }
   }
   
-  @js.native
   trait MasteryPagesDto extends StObject {
     
-    var pages: js.Array[MasteryPageDto] = js.native
+    var pages: js.Array[MasteryPageDto]
     
-    var summonerId: Double = js.native
+    var summonerId: Double
   }
   object MasteryPagesDto {
     
@@ -104,16 +100,15 @@ object Summoner {
     }
   }
   
-  @js.native
   trait RunePageDto extends StObject {
     
-    var current: Boolean = js.native
+    var current: Boolean
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var slots: js.Array[RuneSlotDto] = js.native
+    var slots: js.Array[RuneSlotDto]
   }
   object RunePageDto {
     
@@ -143,12 +138,11 @@ object Summoner {
     }
   }
   
-  @js.native
   trait RunePagesDto extends StObject {
     
-    var pages: js.Array[RunePageDto] = js.native
+    var pages: js.Array[RunePageDto]
     
-    var summonerId: Double = js.native
+    var summonerId: Double
   }
   object RunePagesDto {
     
@@ -172,12 +166,11 @@ object Summoner {
     }
   }
   
-  @js.native
   trait RuneSlotDto extends StObject {
     
-    var runeId: Double = js.native
+    var runeId: Double
     
-    var runeSlotId: Double = js.native
+    var runeSlotId: Double
   }
   object RuneSlotDto {
     
@@ -198,18 +191,17 @@ object Summoner {
     }
   }
   
-  @js.native
   trait SummonerDto extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var profileIconId: Double = js.native
+    var profileIconId: Double
     
-    var revisionDate: Double = js.native
+    var revisionDate: Double
     
-    var summonerLevel: Double = js.native
+    var summonerLevel: Double
   }
   object SummonerDto {
     

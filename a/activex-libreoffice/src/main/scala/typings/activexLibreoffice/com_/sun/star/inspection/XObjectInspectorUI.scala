@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link ObjectInspector} will not **have** any UI for it. In this case, the call to `enablePropertyUI( "Foo" )` will simply be ignored.
   * @since OOo 2.0.3
   */
-@js.native
 trait XObjectInspectorUI extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait XObjectInspectorUI extends StObject {
     * @param PropertyName denotes the name of the property whose UI is to be enabled or disabled.
     * @param Enable `TRUE` if and only if the UI should be disabled, `FALSE` otherwise.
     */
-  def enablePropertyUI(PropertyName: String, Enable: Boolean): Unit = js.native
+  def enablePropertyUI(PropertyName: String, Enable: Boolean): Unit
   
   /**
     * enables or disables the single elements which can be part of the UI representation of a property
@@ -36,20 +34,20 @@ trait XObjectInspectorUI extends StObject {
     * @param Elements a combination of {@link PropertyLineElement} flags specifying which elements are to be enabled or disabled. ;  Note that if you don't se
     * @param Enable `TRUE` if the elements denoted by _nElements should be enabled, `FALSE` if they should be disabled.
     */
-  def enablePropertyUIElements(PropertyName: String, Elements: Double, Enable: Boolean): Unit = js.native
+  def enablePropertyUIElements(PropertyName: String, Elements: Double, Enable: Boolean): Unit
   
   /**
     * retrieves the control currently used to display a given property
     * @param PropertyName the name of the property whose control should be retrieved
     * @returns the {@link XPropertyControl} representing the given property, or `NULL` if there is no such property control.
     */
-  def getPropertyControl(PropertyName: String): XPropertyControl = js.native
+  def getPropertyControl(PropertyName: String): XPropertyControl
   
   /**
     * hides the UI for a given property
     * @param PropertyName the name of the property whose UI is to be hidden
     */
-  def hidePropertyUI(PropertyName: String): Unit = js.native
+  def hidePropertyUI(PropertyName: String): Unit
   
   /**
     * completely rebuilds the UI for the given property.
@@ -64,7 +62,7 @@ trait XObjectInspectorUI extends StObject {
     * XPropertyHandler.describePropertyLine()}
     * @param PropertyName the name of the property whose UI is to be completely rebuilt.
     */
-  def rebuildPropertyUI(PropertyName: String): Unit = js.native
+  def rebuildPropertyUI(PropertyName: String): Unit
   
   /**
     * registers an observer for all property controls
@@ -73,34 +71,34 @@ trait XObjectInspectorUI extends StObject {
     * @see revokeControlObserver
     * @since OOo 2.2
     */
-  def registerControlObserver(Observer: XPropertyControlObserver): Unit = js.native
+  def registerControlObserver(Observer: XPropertyControlObserver): Unit
   
   /**
     * revokes a previously registered control observer
     * @see registerControlObserver
     * @since OOo 2.2
     */
-  def revokeControlObserver(Observer: XPropertyControlObserver): Unit = js.native
+  def revokeControlObserver(Observer: XPropertyControlObserver): Unit
   
   /**
     * sets the text of the help section, if the object inspector contains one.
     * @since OOo 2.2
     * @throws NoSupportException if the {@link XObjectInspectorModel.HasHelpSection} property requires the help section to be unavailable.
     */
-  def setHelpSectionText(HelpText: String): Unit = js.native
+  def setHelpSectionText(HelpText: String): Unit
   
   /**
     * shows or hides all properties belonging to a given category
     * @see LineDescriptor.Category
     * @see XObjectInspectorModel.describeCategories
     */
-  def showCategory(Category: String, Show: Boolean): Unit = js.native
+  def showCategory(Category: String, Show: Boolean): Unit
   
   /**
     * shows the UI for a given property
     * @param PropertyName the name of the property whose UI is to be shown
     */
-  def showPropertyUI(PropertyName: String): Unit = js.native
+  def showPropertyUI(PropertyName: String): Unit
 }
 object XObjectInspectorUI {
   

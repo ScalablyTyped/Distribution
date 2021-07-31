@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'defaultData'> */
-@js.native
 trait PickImpldefaultData extends StObject {
   
-  var defaultData: Boolean = js.native
+  var defaultData: Boolean
 }
 object PickImpldefaultData {
   

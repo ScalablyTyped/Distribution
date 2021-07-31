@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientHtmlEditor.ActiveTabChanged event that concerns manipulations on tabs.
   */
-@js.native
-trait ASPxClientHtmlEditorTabEventArgs extends ASPxClientEventArgs {
+trait ASPxClientHtmlEditorTabEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name that uniquely identifies an editor tab.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientHtmlEditorTabEventArgs {
   

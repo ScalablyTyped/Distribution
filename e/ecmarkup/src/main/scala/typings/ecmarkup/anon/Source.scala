@@ -2,15 +2,13 @@ package typings.ecmarkup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var element: typings.std.Element = js.native
+  var element: typings.std.Element
   
-  var source: String = js.native
+  var source: String
 }
 object Source {
   

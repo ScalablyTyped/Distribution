@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePackageRequest extends StObject {
   
   /**
     * Internal ID of the package that you want to delete. Use DescribePackages to find this value.
     */
-  var PackageID: typings.awsSdk.esMod.PackageID = js.native
+  var PackageID: typings.awsSdk.esMod.PackageID
 }
 object DeletePackageRequest {
   

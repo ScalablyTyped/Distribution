@@ -12,28 +12,26 @@ import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-intl.react-intl/src/types.IntlConfig, 'timeZone' | 'formats' | 'messages' | 'defaultLocale' | 'defaultFormats' | 'onError' | 'textComponent'> */
-@js.native
 trait PickIntlConfigtimeZonefor extends StObject {
   
-  var defaultFormats: CustomFormats = js.native
+  var defaultFormats: CustomFormats
   
-  var defaultLocale: String = js.native
+  var defaultLocale: String
   
-  var formats: CustomFormats = js.native
+  var formats: CustomFormats
   
-  var messages: Record[String, js.Array[MessageFormatElement] | String] = js.native
+  var messages: Record[String, js.Array[MessageFormatElement] | String]
   
-  var onError: OnErrorFn = js.native
+  var onError: OnErrorFn
   
   var textComponent: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object PickIntlConfigtimeZonefor {
   

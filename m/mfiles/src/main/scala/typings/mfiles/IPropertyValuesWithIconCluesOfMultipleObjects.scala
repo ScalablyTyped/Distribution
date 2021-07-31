@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValuesWithIconCluesOfMultipleObjects extends StObject {
   
-  def Clone(): IPropertyValuesWithIconCluesOfMultipleObjects = js.native
+  def Clone(): IPropertyValuesWithIconCluesOfMultipleObjects
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IPropertyValuesWithIconClues = js.native
+  def Item(Index: Double): IPropertyValuesWithIconClues
 }
 object IPropertyValuesWithIconCluesOfMultipleObjects {
   

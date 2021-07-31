@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourcePolicyOutput extends StObject {
   
   /**
     *  The resource policy for the resource identified by the input ARN parameter. 
     */
-  var policy: js.UndefOr[NonEmptyString] = js.native
+  var policy: js.UndefOr[NonEmptyString] = js.undefined
 }
 object GetResourcePolicyOutput {
   

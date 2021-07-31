@@ -5,45 +5,45 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the basic operations for a tab controller. */
-@js.native
-trait XTabController extends XInterface {
+trait XTabController
+  extends StObject
+     with XInterface {
   
   /** returns the control container. */
-  var Container: XControlContainer = js.native
+  var Container: XControlContainer
   
   /** returns all controls of the control container. */
-  val Controls: SafeArray[XControl] = js.native
+  val Controls: SafeArray[XControl]
   
   /** sets the focus to the first control that can be reached with the TAB key. */
-  def activateFirst(): Unit = js.native
+  def activateFirst(): Unit
   
   /** sets the focus to the last control that can be reached with the TAB key. */
-  def activateLast(): Unit = js.native
+  def activateLast(): Unit
   
   /** activates tab order. */
-  def activateTabOrder(): Unit = js.native
+  def activateTabOrder(): Unit
   
   /** enables automatic tab order. */
-  def autoTabOrder(): Unit = js.native
+  def autoTabOrder(): Unit
   
   /** returns the control container. */
-  def getContainer(): XControlContainer = js.native
+  def getContainer(): XControlContainer
   
   /** returns all controls of the control container. */
-  def getControls(): SafeArray[XControl] = js.native
+  def getControls(): SafeArray[XControl]
   
   /** returns the tab controller model. */
-  def getModel(): XTabControllerModel = js.native
+  def getModel(): XTabControllerModel
   
   /** set the control container. */
-  def setContainer(Container: XControlContainer): Unit = js.native
+  def setContainer(Container: XControlContainer): Unit
   
   /** sets the tab controller model. */
-  def setModel(Model: XTabControllerModel): Unit = js.native
+  def setModel(Model: XTabControllerModel): Unit
 }
 object XTabController {
   

@@ -2,17 +2,15 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceDynamoDb extends StObject {
   
   // AWS region name of DynamoDB table, by default us-west-2 is used
-  var aws_region: js.UndefOr[String] = js.native
+  var aws_region: js.UndefOr[String] = js.undefined
   
   // name of DynamoDB table containing data
-  var table_name: String = js.native
+  var table_name: String
 }
 object SourceDynamoDb {
   

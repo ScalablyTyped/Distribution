@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait canSetBidModifier extends StObject {
   
-  def getBidModifier(): Double = js.native
+  def getBidModifier(): Double
   
-  def setBidModifier(modifier: Double): Unit = js.native
+  def setBidModifier(modifier: Double): Unit
 }
 object canSetBidModifier {
   

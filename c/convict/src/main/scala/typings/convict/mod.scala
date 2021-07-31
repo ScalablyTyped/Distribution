@@ -8,7 +8,6 @@ import typings.std.Number
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -119,14 +118,13 @@ object mod extends Shortcut {
     def validate(options: ValidateOptions): Config[T] = js.native
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var coerce: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+    var coerce: js.UndefOr[js.Function1[/* val */ js.Any, js.Any]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var validate: js.UndefOr[js.Function1[/* val */ js.Any, Unit]] = js.native
+    var validate: js.UndefOr[js.Function1[/* val */ js.Any, Unit]] = js.undefined
   }
   object Format {
     
@@ -140,7 +138,7 @@ object mod extends Shortcut {
     implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCoerce(value: /* val */ js.Any => _): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+      def setCoerce(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
@@ -159,12 +157,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait InternalSchema[T] extends StObject {
     
     var properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
-      */ typings.convict.convictStrings.InternalSchema with TopLevel[js.Any] = js.native
+      */ typings.convict.convictStrings.InternalSchema & TopLevel[js.Any]
   }
   object InternalSchema {
     
@@ -172,30 +169,29 @@ object mod extends Shortcut {
     def apply[T](
       properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
-      */ typings.convict.convictStrings.InternalSchema with TopLevel[js.Any]
+      */ typings.convict.convictStrings.InternalSchema & TopLevel[js.Any]
     ): InternalSchema[T] = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalSchema[T]]
     }
     
     @scala.inline
-    implicit class InternalSchemaMutableBuilder[Self <: InternalSchema[_], T] (val x: Self with InternalSchema[T]) extends AnyVal {
+    implicit class InternalSchemaMutableBuilder[Self <: InternalSchema[?], T] (val x: Self & InternalSchema[T]) extends AnyVal {
       
       @scala.inline
       def setProperties(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: T[K] extends object? convict.convict.InternalSchema<T[K]> : {  default :T[K]}}
-        */ typings.convict.convictStrings.InternalSchema with TopLevel[js.Any]
+        */ typings.convict.convictStrings.InternalSchema & TopLevel[js.Any]
       ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
   }
   object Options {
     
@@ -226,20 +222,20 @@ object mod extends Shortcut {
   }
   
   // Taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-307871458
-  type Overwrite[T, U] = typings.convict.convictStrings.Overwrite with TopLevel[T] with U
+  type Overwrite[T, U] = typings.convict.convictStrings.Overwrite & TopLevel[T] & U
   
-  @js.native
   trait Parser extends StObject {
     
-    var extension: String | js.Array[String] = js.native
+    var `extension`: String | js.Array[String]
     
-    def parse(content: String): js.Any = js.native
+    def parse(content: String): js.Any
   }
   object Parser {
     
     @scala.inline
-    def apply(extension: String | js.Array[String], parse: String => js.Any): Parser = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
+    def apply(`extension`: String | js.Array[String], parse: String => js.Any): Parser = {
+      val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parser]
     }
     
@@ -279,22 +275,21 @@ object mod extends Shortcut {
   
   type Schema[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias convict.convict.Schema<T[P]> * / object | convict.convict.SchemaObj<T[P]>}
-    */ typings.convict.convictStrings.Schema with TopLevel[T]
+    */ typings.convict.convictStrings.Schema & TopLevel[T]
   
-  @js.native
   trait SchemaObj[T] extends StObject {
     
     /**
       * You can define a configuration property as "required" without providing a default value.
       * Set its default to null and if your format doesn't accept null it will throw an error.
       */
-    var default: T | Null = js.native
+    var default: T | Null
     
-    var arg: js.UndefOr[String] = js.native
+    var arg: js.UndefOr[String] = js.undefined
     
-    var doc: js.UndefOr[String] = js.native
+    var doc: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
     /**
       * From the implementation:
@@ -308,20 +303,20 @@ object mod extends Shortcut {
       * If omitted, format will be set to the value of Object.prototype.toString.call
       * for the default value
       */
-    var format: js.UndefOr[PredefinedFormat | js.Array[_] | (js.Function1[/* val */ js.Any, Unit])] = js.native
+    var format: js.UndefOr[PredefinedFormat | js.Array[js.Any] | (js.Function1[/* val */ js.Any, Unit])] = js.undefined
     
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
   }
   object SchemaObj {
     
     @scala.inline
     def apply[T](): SchemaObj[T] = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(default = null)
       __obj.asInstanceOf[SchemaObj[T]]
     }
     
     @scala.inline
-    implicit class SchemaObjMutableBuilder[Self <: SchemaObj[_], T] (val x: Self with SchemaObj[T]) extends AnyVal {
+    implicit class SchemaObjMutableBuilder[Self <: SchemaObj[?], T] (val x: Self & SchemaObj[T]) extends AnyVal {
       
       @scala.inline
       def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
@@ -348,7 +343,7 @@ object mod extends Shortcut {
       def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
       @scala.inline
-      def setFormat(value: PredefinedFormat | js.Array[_] | (js.Function1[/* val */ js.Any, Unit])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      def setFormat(value: PredefinedFormat | js.Array[js.Any] | (js.Function1[/* val */ js.Any, Unit])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFormatFunction1(value: /* val */ js.Any => Unit): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
@@ -367,7 +362,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ValidateOptions extends StObject {
     
     /**
@@ -376,10 +370,10 @@ object mod extends Shortcut {
       * any properties specified in config files that are not declared in the schema will
       * throw errors. This is to ensure that the schema and the config files are in sync.
       */
-    var allowed: js.UndefOr[ValidationMethod] = js.native
+    var allowed: js.UndefOr[ValidationMethod] = js.undefined
     
     /** @deprecated use allowed instead */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object ValidateOptions {
     

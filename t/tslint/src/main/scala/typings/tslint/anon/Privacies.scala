@@ -2,19 +2,17 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Privacies extends StObject {
   
-  var locations: Enum = js.native
+  var locations: Enum
   
-  var overloads: Type = js.native
+  var overloads: Type
   
-  var privacies: Enum = js.native
+  var privacies: Enum
   
-  var tags: Properties = js.native
+  var tags: Properties
 }
 object Privacies {
   

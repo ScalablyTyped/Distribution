@@ -2,44 +2,44 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGlobalEvents.ValidationCompleted client event that allows you to centrally validate user input within all DevExpress web controls to which validation is applied.
   */
-@js.native
-trait ASPxClientValidationCompletedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientValidationCompletedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a container object that holds the validated control(s).
     */
-  var container: js.Any = js.native
+  var container: js.Any
   
   /**
     * Gets the first control (either visible or invisible) that hasn't passed the validation applied.
     */
-  var firstInvalidControl: ASPxClientControl = js.native
+  var firstInvalidControl: ASPxClientControl
   
   /**
     * Gets the first visible control that hasn't passed the validation applied.
     */
-  var firstVisibleInvalidControl: ASPxClientControl = js.native
+  var firstVisibleInvalidControl: ASPxClientControl
   
   /**
     * Gets a value that indicates whether validation has been applied to both visible and invisible controls.
     */
-  var invisibleControlsValidated: Boolean = js.native
+  var invisibleControlsValidated: Boolean
   
   /**
     * Gets a value specifying whether the validation has been completed successfully.
     */
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
   /**
     * Gets the name of the validation group name to which validation has been applied.
     */
-  var validationGroup: String = js.native
+  var validationGroup: String
 }
 object ASPxClientValidationCompletedEventArgs {
   

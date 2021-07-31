@@ -2,16 +2,17 @@ package typings.abab
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("abab", "atob")
+  @JSImport("abab", JSImport.Namespace)
   @js.native
-  def atob(encodedData: String): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("abab", "btoa")
-  @js.native
-  def btoa(stringToEncode: String): String | Null = js.native
+  @scala.inline
+  def atob(encodedData: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(encodedData.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  @scala.inline
+  def btoa(stringToEncode: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

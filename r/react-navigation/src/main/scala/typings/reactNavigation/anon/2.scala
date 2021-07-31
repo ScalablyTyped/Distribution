@@ -1,30 +1,39 @@
 package typings.reactNavigation.anon
 
+import typings.react.mod.Component
+import typings.react.mod.Ref
+import typings.reactNavigation.mod.NavigationInjectedProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `2`[P] extends StObject {
+trait `2`[T, P] extends StObject {
   
-  var params: js.UndefOr[P] = js.native
+  var onRef: js.UndefOr[Ref[Component[T & NavigationInjectedProps[P], js.Object, js.Any]]] = js.undefined
 }
 object `2` {
   
   @scala.inline
-  def apply[P](): `2`[P] = {
+  def apply[T, P](): `2`[T, P] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`2`[P]]
+    __obj.asInstanceOf[`2`[T, P]]
   }
   
   @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`[_], P] (val x: Self with `2`[P]) extends AnyVal {
+  implicit class `2MutableBuilder`[Self <: `2`[?, ?], T, P] (val x: Self & (`2`[T, P])) extends AnyVal {
     
     @scala.inline
-    def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    def setOnRef(value: Ref[Component[T & NavigationInjectedProps[P], js.Object, js.Any]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    def setOnRefFunction1(
+      value: /* instance */ (Component[T & NavigationInjectedProps[P], js.Object, js.Any]) | Null => Unit
+    ): Self = StObject.set(x, "onRef", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnRefNull: Self = StObject.set(x, "onRef", null)
+    
+    @scala.inline
+    def setOnRefUndefined: Self = StObject.set(x, "onRef", js.undefined)
   }
 }

@@ -2,61 +2,59 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositoryMetadata extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the repository.
     */
-  var Arn: js.UndefOr[typings.awsSdk.codecommitMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.codecommitMod.Arn] = js.undefined
   
   /**
     * The ID of the AWS account associated with the repository.
     */
-  var accountId: js.UndefOr[AccountId] = js.native
+  var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The URL to use for cloning the repository over HTTPS.
     */
-  var cloneUrlHttp: js.UndefOr[CloneUrlHttp] = js.native
+  var cloneUrlHttp: js.UndefOr[CloneUrlHttp] = js.undefined
   
   /**
     * The URL to use for cloning the repository over SSH.
     */
-  var cloneUrlSsh: js.UndefOr[CloneUrlSsh] = js.native
+  var cloneUrlSsh: js.UndefOr[CloneUrlSsh] = js.undefined
   
   /**
     * The date and time the repository was created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The repository's default branch name.
     */
-  var defaultBranch: js.UndefOr[BranchName] = js.native
+  var defaultBranch: js.UndefOr[BranchName] = js.undefined
   
   /**
     * The date and time the repository was last modified, in timestamp format.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.native
+  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
   
   /**
     * A comment or description about the repository.
     */
-  var repositoryDescription: js.UndefOr[RepositoryDescription] = js.native
+  var repositoryDescription: js.UndefOr[RepositoryDescription] = js.undefined
   
   /**
     * The ID of the repository.
     */
-  var repositoryId: js.UndefOr[RepositoryId] = js.native
+  var repositoryId: js.UndefOr[RepositoryId] = js.undefined
   
   /**
     * The repository's name.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object RepositoryMetadata {
   

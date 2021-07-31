@@ -2,16 +2,14 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGraphResponse extends StObject {
   
   /**
     * The ARN of the new behavior graph.
     */
-  var GraphArn: js.UndefOr[typings.awsSdk.detectiveMod.GraphArn] = js.native
+  var GraphArn: js.UndefOr[typings.awsSdk.detectiveMod.GraphArn] = js.undefined
 }
 object CreateGraphResponse {
   

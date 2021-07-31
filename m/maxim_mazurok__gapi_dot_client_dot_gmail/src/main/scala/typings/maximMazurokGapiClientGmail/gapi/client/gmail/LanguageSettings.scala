@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageSettings extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait LanguageSettings extends StObject {
     * help article. A table of sample values is also provided in the Managing Language Settings guide Not all Gmail clients can display the same set of languages. In the case that a
     * user's display language is not available for use on a particular client, said client automatically chooses to display in the closest supported variant (or a reasonable default).
     */
-  var displayLanguage: js.UndefOr[String] = js.native
+  var displayLanguage: js.UndefOr[String] = js.undefined
 }
 object LanguageSettings {
   

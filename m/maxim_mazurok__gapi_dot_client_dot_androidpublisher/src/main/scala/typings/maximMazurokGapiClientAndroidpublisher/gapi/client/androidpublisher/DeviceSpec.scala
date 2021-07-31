@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceSpec extends StObject {
   
   /** Screen dpi. */
-  var screenDensity: js.UndefOr[Double] = js.native
+  var screenDensity: js.UndefOr[Double] = js.undefined
   
   /** Supported ABI architectures in the order of preference. The values should be the string as reported by the platform, e.g. "armeabi-v7a", "x86_64". */
-  var supportedAbis: js.UndefOr[js.Array[String]] = js.native
+  var supportedAbis: js.UndefOr[js.Array[String]] = js.undefined
   
   /** All installed locales represented as BCP-47 strings, e.g. "en-US". */
-  var supportedLocales: js.UndefOr[js.Array[String]] = js.native
+  var supportedLocales: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DeviceSpec {
   

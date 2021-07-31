@@ -2,7 +2,6 @@ package typings.officeJs.OneNote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait ImageOcrData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ImageOcrData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var ocrLanguageId: String = js.native
+  var ocrLanguageId: String
   
   /**
     *
@@ -28,7 +26,7 @@ trait ImageOcrData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var ocrText: String = js.native
+  var ocrText: String
 }
 object ImageOcrData {
   

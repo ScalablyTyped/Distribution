@@ -3,21 +3,19 @@ package typings.pubnub.mod
 import typings.pubnub.anon.CustomFields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpaceInputParameters extends StObject {
   
-  var custom: js.UndefOr[js.Object | Null] = js.native
+  var custom: js.UndefOr[js.Object | Null] = js.undefined
   
-  var description: js.UndefOr[String | Null] = js.native
+  var description: js.UndefOr[String | Null] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var include: js.UndefOr[CustomFields] = js.native
+  var include: js.UndefOr[CustomFields] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object SpaceInputParameters {
   

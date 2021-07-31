@@ -2,23 +2,21 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * History item
   */
-@js.native
 trait IHistoryItem extends StObject {
   
   //css class for the list, ex: "icon-image", "icon-doc"
-  var icon: String = js.native
+  var icon: String
   
   //route to the editor, ex: "/content/edit/1234"
-  var link: String = js.native
+  var link: String
   
   //friendly name for the history listing
-  var name: String = js.native
+  var name: String
 }
 object IHistoryItem {
   

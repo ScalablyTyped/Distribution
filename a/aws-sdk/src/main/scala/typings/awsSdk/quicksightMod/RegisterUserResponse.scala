@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterUserResponse extends StObject {
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
   
   /**
     * The user's user name.
     */
-  var User: js.UndefOr[typings.awsSdk.quicksightMod.User] = js.native
+  var User: js.UndefOr[typings.awsSdk.quicksightMod.User] = js.undefined
   
   /**
     * The URL the user visits to complete registration and provide a password. This is returned only for users with an identity type of QUICKSIGHT.
     */
-  var UserInvitationUrl: js.UndefOr[String] = js.native
+  var UserInvitationUrl: js.UndefOr[String] = js.undefined
 }
 object RegisterUserResponse {
   

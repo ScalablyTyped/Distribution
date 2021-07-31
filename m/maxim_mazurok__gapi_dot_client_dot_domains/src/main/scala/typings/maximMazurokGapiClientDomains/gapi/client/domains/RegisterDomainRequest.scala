@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterDomainRequest extends StObject {
   
   /** The list of contact notices that the caller acknowledges. The notices required here depend on the values specified in `registration.contact_settings`. */
-  var contactNotices: js.UndefOr[js.Array[String]] = js.native
+  var contactNotices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of domain notices that you acknowledge. Call `RetrieveRegisterParameters` to see the notices that need acknowledgement. */
-  var domainNotices: js.UndefOr[js.Array[String]] = js.native
+  var domainNotices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The complete `Registration` resource to be created. */
-  var registration: js.UndefOr[Registration] = js.native
+  var registration: js.UndefOr[Registration] = js.undefined
   
   /** When true, only validation will be performed, without actually registering the domain. Follows: https://cloud.google.com/apis/design/design_patterns#request_validation */
-  var validateOnly: js.UndefOr[Boolean] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
   
   /** Required. Yearly price to register or renew the domain. The value that should be put here can be obtained from RetrieveRegisterParameters or SearchDomains calls. */
-  var yearlyPrice: js.UndefOr[Money] = js.native
+  var yearlyPrice: js.UndefOr[Money] = js.undefined
 }
 object RegisterDomainRequest {
   

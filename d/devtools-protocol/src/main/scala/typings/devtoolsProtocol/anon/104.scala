@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Input.SynthesizeScrollGestureRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `104` extends StObject {
   
-  var paramsType: js.Array[SynthesizeScrollGestureRequest] = js.native
+  var paramsType: js.Array[SynthesizeScrollGestureRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `104` {
   

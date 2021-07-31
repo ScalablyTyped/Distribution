@@ -5,39 +5,33 @@ import typings.babelTypes.babelTypesBooleans.`true`
 import typings.babelTypes.babelTypesStrings.MemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait MemberExpression_
-  extends Expression
+- typings.babelTypes.mod._Node because Already inherited */ trait MemberExpression_
+  extends StObject
      with BaseNode
+     with Expression
      with LVal {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var `object`: Expression = js.native
+  var `object`: Expression
   
-  var optional: `true` | `false` | Null = js.native
+  var optional: `true` | `false` | Null
   
-  var property: Expression | Identifier_ | PrivateName_ = js.native
+  var property: Expression | Identifier_ | PrivateName_
   
   @JSName("type")
-  var type_MemberExpression_ : MemberExpression = js.native
+  var type_MemberExpression_ : MemberExpression
 }
 object MemberExpression_ {
   
   @scala.inline
-  def apply(
-    computed: Boolean,
-    `object`: Expression,
-    property: Expression | Identifier_ | PrivateName_,
-    `type`: MemberExpression
-  ): MemberExpression_ = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+  def apply(computed: Boolean, `object`: Expression, property: Expression | Identifier_ | PrivateName_): MemberExpression_ = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[MemberExpression_]
   }
   

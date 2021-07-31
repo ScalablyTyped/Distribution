@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceStateChange extends StObject {
   
   /**
     * The current state of the instance.
     */
-  var CurrentState: js.UndefOr[InstanceState] = js.native
+  var CurrentState: js.UndefOr[InstanceState] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The previous state of the instance.
     */
-  var PreviousState: js.UndefOr[InstanceState] = js.native
+  var PreviousState: js.UndefOr[InstanceState] = js.undefined
 }
 object InstanceStateChange {
   

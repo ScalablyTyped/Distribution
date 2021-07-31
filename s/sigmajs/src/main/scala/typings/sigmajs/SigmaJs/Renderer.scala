@@ -3,21 +3,19 @@ package typings.sigmajs.SigmaJs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Renderer extends StObject {
   
-  var container: HTMLElement = js.native
+  var container: HTMLElement
   
-  def refresh(): Sigma = js.native
+  def refresh(): Sigma
   
-  def render(): Sigma = js.native
+  def render(): Sigma
   
-  def resize(): Sigma = js.native
+  def resize(): Sigma
   
-  def settings(settings: Settings): Unit = js.native
+  def settings(settings: Settings): Unit
 }
 object Renderer {
   

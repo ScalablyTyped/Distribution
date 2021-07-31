@@ -6,7 +6,6 @@ import typings.onfleetNodeOnfleet.metadataMod.MetadataVisibility
 import typings.onfleetNodeOnfleet.recipientsMod.RecipientQueryKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onfleetNodeOnfleetStrings {
@@ -47,42 +46,53 @@ object onfleetNodeOnfleetStrings {
   def WORKER: WORKER = "WORKER".asInstanceOf[WORKER]
   
   @js.native
-  sealed trait api extends MetadataVisibility
+  sealed trait api
+    extends StObject
+       with MetadataVisibility
   @scala.inline
   def api: api = "api".asInstanceOf[api]
   
   @js.native
-  sealed trait array extends MetadataType
+  sealed trait array
+    extends StObject
+       with MetadataType
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait boolean
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait dashboard extends MetadataVisibility
+  sealed trait dashboard
+    extends StObject
+       with MetadataVisibility
   @scala.inline
   def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   
   @js.native
-  sealed trait name extends RecipientQueryKey
+  sealed trait name
+    extends StObject
+       with RecipientQueryKey
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait number
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait `object`
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
@@ -93,7 +103,9 @@ object onfleetNodeOnfleetStrings {
   def organizations: organizations = "organizations".asInstanceOf[organizations]
   
   @js.native
-  sealed trait phone extends RecipientQueryKey
+  sealed trait phone
+    extends StObject
+       with RecipientQueryKey
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   
@@ -109,7 +121,8 @@ object onfleetNodeOnfleetStrings {
   
   @js.native
   sealed trait string
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
@@ -125,7 +138,9 @@ object onfleetNodeOnfleetStrings {
   def teams: teams = "teams".asInstanceOf[teams]
   
   @js.native
-  sealed trait worker_ extends MetadataVisibility
+  sealed trait worker_
+    extends StObject
+       with MetadataVisibility
   @scala.inline
   def worker_ : worker_ = "worker".asInstanceOf[worker_]
   

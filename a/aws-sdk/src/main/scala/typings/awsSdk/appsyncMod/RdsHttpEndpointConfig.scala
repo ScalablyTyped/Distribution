@@ -2,36 +2,34 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RdsHttpEndpointConfig extends StObject {
   
   /**
     * AWS Region for RDS HTTP endpoint.
     */
-  var awsRegion: js.UndefOr[String] = js.native
+  var awsRegion: js.UndefOr[String] = js.undefined
   
   /**
     * AWS secret store ARN for database credentials.
     */
-  var awsSecretStoreArn: js.UndefOr[String] = js.native
+  var awsSecretStoreArn: js.UndefOr[String] = js.undefined
   
   /**
     * Logical database name.
     */
-  var databaseName: js.UndefOr[String] = js.native
+  var databaseName: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon RDS cluster ARN.
     */
-  var dbClusterIdentifier: js.UndefOr[String] = js.native
+  var dbClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Logical schema name.
     */
-  var schema: js.UndefOr[String] = js.native
+  var schema: js.UndefOr[String] = js.undefined
 }
 object RdsHttpEndpointConfig {
   

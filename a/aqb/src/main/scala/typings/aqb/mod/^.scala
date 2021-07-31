@@ -3,9 +3,10 @@ package typings.aqb.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aqb", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[AQLfunctions with QBfunc]
+object ^
+  extends StObject
+     with TopLevel[AQLfunctions & QBfunc]

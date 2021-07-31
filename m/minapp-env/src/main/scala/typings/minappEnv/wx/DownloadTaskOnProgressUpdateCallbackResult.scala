@@ -2,20 +2,18 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadTaskOnProgressUpdateCallbackResult extends StObject {
   
   /** 下载进度百分比 */
-  var progress: Double = js.native
+  var progress: Double
   
   /** 预期需要下载的数据总长度，单位 Bytes */
-  var totalBytesExpectedToWrite: Double = js.native
+  var totalBytesExpectedToWrite: Double
   
   /** 已经下载的数据长度，单位 Bytes */
-  var totalBytesWritten: Double = js.native
+  var totalBytesWritten: Double
 }
 object DownloadTaskOnProgressUpdateCallbackResult {
   

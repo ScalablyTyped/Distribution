@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codedeploy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentConfigTrafficRoutingConfigTimeBasedCanary extends StObject {
   
   /**
     * The number of minutes between the first and second traffic shifts of a `TimeBasedCanary` deployment.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * The percentage of traffic to shift in the first increment of a `TimeBasedCanary` deployment.
     */
-  var percentage: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.undefined
 }
 object DeploymentConfigTrafficRoutingConfigTimeBasedCanary {
   

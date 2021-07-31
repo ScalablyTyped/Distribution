@@ -15,28 +15,28 @@ import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Contents[T] extends Loadable[T] {
+  trait Contents[T]
+    extends StObject
+       with Loadable[T] {
     
-    var contents: T = js.native
+    var contents: T
     
-    var state: hasValue = js.native
+    var state: hasValue
   }
   object Contents {
     
     @scala.inline
-    def apply[T](contents: T, state: hasValue): Contents[T] = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def apply[T](contents: T): Contents[T] = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "hasValue")
       __obj.asInstanceOf[Contents[T]]
     }
     
     @scala.inline
-    implicit class ContentsMutableBuilder[Self <: Contents[_], T] (val x: Self with Contents[T]) extends AnyVal {
+    implicit class ContentsMutableBuilder[Self <: Contents[?], T] (val x: Self & Contents[T]) extends AnyVal {
       
       @scala.inline
       def setContents(value: T): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
@@ -46,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Get extends StObject {
     
-    var get: GetRecoilValue = js.native
+    var get: GetRecoilValue
   }
   object Get {
     
@@ -68,19 +67,19 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  state :'hasError',   contents :std.Error}> */
-  @js.native
   trait ReadonlystatehasErrorcont
-    extends Loadable[js.Any] {
+    extends StObject
+       with Loadable[js.Any] {
     
-    val contents: Error = js.native
+    val contents: Error
     
-    val state: hasError = js.native
+    val state: hasError
   }
   object ReadonlystatehasErrorcont {
     
     @scala.inline
-    def apply(contents: Error, state: hasError): ReadonlystatehasErrorcont = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def apply(contents: Error): ReadonlystatehasErrorcont = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "hasError")
       __obj.asInstanceOf[ReadonlystatehasErrorcont]
     }
     
@@ -95,14 +94,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Reset extends StObject {
     
-    var get: GetRecoilValue = js.native
+    var get: GetRecoilValue
     
-    var reset: ResetRecoilState = js.native
+    var reset: ResetRecoilState
     
-    var set: SetRecoilState = js.native
+    var set: SetRecoilState
   }
   object Reset {
     
@@ -132,17 +130,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Set extends StObject {
     
-    def set[T](recoilVal: RecoilState[T], newVal: T): Unit = js.native
+    def set[T](recoilVal: RecoilState[T], newVal: T): Unit
     
-    def setUnvalidatedAtomValues(atomMap: Map[String, _]): Unit = js.native
+    def setUnvalidatedAtomValues(atomMap: Map[String, js.Any]): Unit
   }
   object Set {
     
     @scala.inline
-    def apply(set: (RecoilState[js.Any], js.Any) => Unit, setUnvalidatedAtomValues: Map[String, _] => Unit): Set = {
+    def apply(set: (RecoilState[js.Any], js.Any) => Unit, setUnvalidatedAtomValues: Map[String, js.Any] => Unit): Set = {
       val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set), setUnvalidatedAtomValues = js.Any.fromFunction1(setUnvalidatedAtomValues))
       __obj.asInstanceOf[Set]
     }
@@ -154,27 +151,28 @@ object anon {
       def setSet(value: (RecoilState[js.Any], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setSetUnvalidatedAtomValues(value: Map[String, _] => Unit): Self = StObject.set(x, "setUnvalidatedAtomValues", js.Any.fromFunction1(value))
+      def setSetUnvalidatedAtomValues(value: Map[String, js.Any] => Unit): Self = StObject.set(x, "setUnvalidatedAtomValues", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
-  trait State[T] extends Loadable[T] {
+  trait State[T]
+    extends StObject
+       with Loadable[T] {
     
-    var contents: LoadablePromise[T] = js.native
+    var contents: LoadablePromise[T]
     
-    var state: loading = js.native
+    var state: loading
   }
   object State {
     
     @scala.inline
-    def apply[T](contents: LoadablePromise[T], state: loading): State[T] = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def apply[T](contents: LoadablePromise[T]): State[T] = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "loading")
       __obj.asInstanceOf[State[T]]
     }
     
     @scala.inline
-    implicit class StateMutableBuilder[Self <: State[_], T] (val x: Self with State[T]) extends AnyVal {
+    implicit class StateMutableBuilder[Self <: State[?], T] (val x: Self & State[T]) extends AnyVal {
       
       @scala.inline
       def setContents(value: LoadablePromise[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])

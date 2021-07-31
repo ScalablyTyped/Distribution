@@ -2,10 +2,8 @@ package typings.vegaLite.srcMarkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RectBinSpacingMixins extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RectBinSpacingMixins extends StObject {
     *
     * @minimum 0
     */
-  var binSpacing: js.UndefOr[Double] = js.native
+  var binSpacing: js.UndefOr[Double] = js.undefined
 }
 object RectBinSpacingMixins {
   

@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFDependencyRelation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOwnerPropertyDef extends StObject {
   
-  var DependencyRelation: MFDependencyRelation = js.native
+  var DependencyRelation: MFDependencyRelation
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var IndexForAutomaticFilling: Double = js.native
+  var IndexForAutomaticFilling: Double
   
-  val IsRelationFiltering: Boolean = js.native
+  val IsRelationFiltering: Boolean
 }
 object IOwnerPropertyDef {
   

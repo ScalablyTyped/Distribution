@@ -4,11 +4,12 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Manifest extends Object {
+trait Manifest
+  extends StObject
+     with Object {
   
   /**
     * Returns the Component name which is defined in the manifest as<code>sap.ui5/componentName</code> or
@@ -50,5 +51,5 @@ trait Manifest extends Object {
     * @param mOptions the configuration options
     * @returns Manifest object or for asynchronous calls an ECMA Script 6 Promise object will be returned.
     */
-  def load(mOptions: js.Any): Manifest | JQueryPromise[_] = js.native
+  def load(mOptions: js.Any): Manifest | JQueryPromise[js.Any] = js.native
 }

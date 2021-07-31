@@ -12,7 +12,7 @@ Encode and decode quoted-printable strings according to rfc2045
 | Keywords           | quoted-printable, mime |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 18903970 |
+| # downloads        | 20665267 |
 | # stars            | 1 |
 
 ## Links

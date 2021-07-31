@@ -2,27 +2,25 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitUpdateRefEndpoint extends StObject {
   
   /**
     * Indicates whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to `false` will make sure you're not overwriting work.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var ref: String = js.native
+  var ref: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The SHA1 value to set this reference to
     */
-  var sha: String = js.native
+  var sha: String
 }
 object GitUpdateRefEndpoint {
   

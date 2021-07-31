@@ -13,7 +13,6 @@ import typings.pegjs.pegjsStrings.umd
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,24 +28,18 @@ object mod {
   @scala.inline
   def GrammarError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrammarError")(x.asInstanceOf[js.Any])
   
-  @JSImport("pegjs", "generate")
-  @js.native
-  def generate(grammar: String): Parser_ = js.native
-  @JSImport("pegjs", "generate")
-  @js.native
-  def generate(grammar: String, options: OutputFormatAmdCommonjs): String = js.native
-  @JSImport("pegjs", "generate")
-  @js.native
-  def generate(grammar: String, options: OutputFormatBare): String = js.native
-  @JSImport("pegjs", "generate")
-  @js.native
-  def generate(grammar: String, options: OutputFormatGlobals): String = js.native
-  @JSImport("pegjs", "generate")
-  @js.native
-  def generate(grammar: String, options: OutputFormatUmd): String = js.native
-  @JSImport("pegjs", "generate")
-  @js.native
-  def generate(grammar: String, options: ParserBuildOptions): Parser_ = js.native
+  @scala.inline
+  def generate(grammar: String): Parser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any]).asInstanceOf[Parser_]
+  @scala.inline
+  def generate(grammar: String, options: OutputFormatAmdCommonjs): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generate(grammar: String, options: OutputFormatBare): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generate(grammar: String, options: OutputFormatGlobals): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generate(grammar: String, options: OutputFormatUmd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generate(grammar: String, options: ParserBuildOptions): Parser_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parser_]
   
   object parser {
     
@@ -62,23 +55,22 @@ object mod {
     def SyntaxError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait BuildOptionsBase extends StObject {
     
     /** rules the parser will be allowed to start parsing from (default: the first rule in the grammar) */
-    var allowedStartRules: js.UndefOr[js.Array[String]] = js.native
+    var allowedStartRules: js.UndefOr[js.Array[String]] = js.undefined
     
     /** if `true`, makes the parser cache results, avoiding exponential parsing time in pathological cases but making the parser slower (default: `false`) */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** selects between optimizing the generated parser for parsing speed (`"speed"`) or code size (`"size"`) (default: `"speed"`) */
-    var optimize: js.UndefOr[speed | size] = js.native
+    var optimize: js.UndefOr[speed | size] = js.undefined
     
     /** plugins to use */
-    var plugins: js.UndefOr[js.Array[_]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** makes the parser trace its progress (default: `false`) */
-    var trace: js.UndefOr[Boolean] = js.native
+    var trace: js.UndefOr[Boolean] = js.undefined
   }
   object BuildOptionsBase {
     
@@ -113,7 +105,7 @@ object mod {
       def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
@@ -129,14 +121,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ExpectedItem extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ExpectedItem {
     
@@ -168,23 +159,24 @@ object mod {
   
   type LocationRange = typings.pegjs.mod.PEG.LocationRange
   
-  @js.native
-  trait OutputFormatAmdCommonjs extends BuildOptionsBase {
+  trait OutputFormatAmdCommonjs
+    extends StObject
+       with BuildOptionsBase {
     
     /** parser dependencies, the value is an object which maps variables used to access the dependencies in the parser to module IDs used to load them; valid only when `format` is set to `"amd"`, `"commonjs"`, or `"umd"` (default: `{}`) */
-    var dependencies: js.UndefOr[js.Any] = js.native
+    var dependencies: js.UndefOr[js.Any] = js.undefined
     
     /** format of the genreated parser (`"amd"`, `"bare"`, `"commonjs"`, `"globals"`, or `"umd"`); valid only when `output` is set to `"source"` (default: `"bare"`) */
-    var format: amd | commonjs = js.native
+    var format: amd | commonjs
     
     /** if set to `"parser"`, the method will return generated parser object; if set to `"source"`, it will return parser source code as a string (default: `"parser"`) */
-    var output: source = js.native
+    var output: source
   }
   object OutputFormatAmdCommonjs {
     
     @scala.inline
-    def apply(format: amd | commonjs, output: source): OutputFormatAmdCommonjs = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    def apply(format: amd | commonjs): OutputFormatAmdCommonjs = {
+      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], output = "source")
       __obj.asInstanceOf[OutputFormatAmdCommonjs]
     }
     
@@ -205,20 +197,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait OutputFormatBare extends BuildOptionsBase {
+  trait OutputFormatBare
+    extends StObject
+       with BuildOptionsBase {
     
     /** format of the genreated parser (`"amd"`, `"bare"`, `"commonjs"`, `"globals"`, or `"umd"`); valid only when `output` is set to `"source"` (default: `"bare"`) */
-    var format: js.UndefOr[bare] = js.native
+    var format: js.UndefOr[bare] = js.undefined
     
     /** if set to `"parser"`, the method will return generated parser object; if set to `"source"`, it will return parser source code as a string (default: `"parser"`) */
-    var output: source = js.native
+    var output: source
   }
   object OutputFormatBare {
     
     @scala.inline
-    def apply(output: source): OutputFormatBare = {
-      val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
+    def apply(): OutputFormatBare = {
+      val __obj = js.Dynamic.literal(output = "source")
       __obj.asInstanceOf[OutputFormatBare]
     }
     
@@ -236,23 +229,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait OutputFormatGlobals extends BuildOptionsBase {
+  trait OutputFormatGlobals
+    extends StObject
+       with BuildOptionsBase {
     
     /** name of a global variable into which the parser object is assigned to when no module loader is detected; valid only when `format` is set to `"globals"` or `"umd"` (default: `null`) */
-    var exportVar: js.UndefOr[js.Any] = js.native
+    var exportVar: js.UndefOr[js.Any] = js.undefined
     
     /** format of the genreated parser (`"amd"`, `"bare"`, `"commonjs"`, `"globals"`, or `"umd"`); valid only when `output` is set to `"source"` (default: `"bare"`) */
-    var format: globals = js.native
+    var format: globals
     
     /** if set to `"parser"`, the method will return generated parser object; if set to `"source"`, it will return parser source code as a string (default: `"parser"`) */
-    var output: source = js.native
+    var output: source
   }
   object OutputFormatGlobals {
     
     @scala.inline
-    def apply(format: globals, output: source): OutputFormatGlobals = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    def apply(): OutputFormatGlobals = {
+      val __obj = js.Dynamic.literal(format = "globals", output = "source")
       __obj.asInstanceOf[OutputFormatGlobals]
     }
     
@@ -273,26 +267,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait OutputFormatUmd extends BuildOptionsBase {
+  trait OutputFormatUmd
+    extends StObject
+       with BuildOptionsBase {
     
     /** parser dependencies, the value is an object which maps variables used to access the dependencies in the parser to module IDs used to load them; valid only when `format` is set to `"amd"`, `"commonjs"`, or `"umd"` (default: `{}`) */
-    var dependencies: js.UndefOr[js.Any] = js.native
+    var dependencies: js.UndefOr[js.Any] = js.undefined
     
     /** name of a global variable into which the parser object is assigned to when no module loader is detected; valid only when `format` is set to `"globals"` or `"umd"` (default: `null`) */
-    var exportVar: js.UndefOr[js.Any] = js.native
+    var exportVar: js.UndefOr[js.Any] = js.undefined
     
     /** format of the genreated parser (`"amd"`, `"bare"`, `"commonjs"`, `"globals"`, or `"umd"`); valid only when `output` is set to `"source"` (default: `"bare"`) */
-    var format: umd = js.native
+    var format: umd
     
     /** if set to `"parser"`, the method will return generated parser object; if set to `"source"`, it will return parser source code as a string (default: `"parser"`) */
-    var output: source = js.native
+    var output: source
   }
   object OutputFormatUmd {
     
     @scala.inline
-    def apply(format: umd, output: source): OutputFormatUmd = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    def apply(): OutputFormatUmd = {
+      val __obj = js.Dynamic.literal(format = "umd", output = "source")
       __obj.asInstanceOf[OutputFormatUmd]
     }
     
@@ -321,14 +316,13 @@ object mod {
   
   object PEG {
     
-    @js.native
     trait Location extends StObject {
       
-      var column: Double = js.native
+      var column: Double
       
-      var line: Double = js.native
+      var line: Double
       
-      var offset: Double = js.native
+      var offset: Double
     }
     object Location {
       
@@ -352,12 +346,11 @@ object mod {
       }
     }
     
-    @js.native
     trait LocationRange extends StObject {
       
-      var end: typings.pegjs.mod.PEG.Location = js.native
+      var end: typings.pegjs.mod.PEG.Location
       
-      var start: typings.pegjs.mod.PEG.Location = js.native
+      var start: typings.pegjs.mod.PEG.Location
     }
     object LocationRange {
       
@@ -378,31 +371,30 @@ object mod {
       }
     }
     
-    @js.native
     trait SyntaxError extends StObject {
       
-      var column: Double = js.native
+      var column: Double
       
-      var expected: js.Array[_] = js.native
+      var expected: js.Array[js.Any]
       
-      var found: js.Any = js.native
+      var found: js.Any
       
-      var line: Double = js.native
+      var line: Double
       
-      var location: typings.pegjs.mod.PEG.LocationRange = js.native
+      var location: typings.pegjs.mod.PEG.LocationRange
       
-      var message: String = js.native
+      var message: String
       
-      var name: String = js.native
+      var name: String
       
-      var offset: Double = js.native
+      var offset: Double
     }
     object SyntaxError {
       
       @scala.inline
       def apply(
         column: Double,
-        expected: js.Array[_],
+        expected: js.Array[js.Any],
         found: js.Any,
         line: Double,
         location: typings.pegjs.mod.PEG.LocationRange,
@@ -421,7 +413,7 @@ object mod {
         def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setExpected(value: js.Array[_]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+        def setExpected(value: js.Array[js.Any]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setExpectedVarargs(value: js.Any*): Self = StObject.set(x, "expected", js.Array(value :_*))
@@ -447,11 +439,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait ParserBuildOptions extends BuildOptionsBase {
+  trait ParserBuildOptions
+    extends StObject
+       with BuildOptionsBase {
     
     /** if set to `"parser"`, the method will return generated parser object; if set to `"source"`, it will return parser source code as a string (default: `"parser"`) */
-    var output: js.UndefOr[parser] = js.native
+    var output: js.UndefOr[parser] = js.undefined
   }
   object ParserBuildOptions {
     
@@ -472,13 +465,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var startRule: js.UndefOr[String] = js.native
+    var startRule: js.UndefOr[String] = js.undefined
     
-    var tracer: js.UndefOr[js.Any] = js.native
+    var tracer: js.UndefOr[js.Any] = js.undefined
   }
   object ParserOptions {
     
@@ -514,17 +507,18 @@ object mod {
     def parse(input: String, options: ParserOptions): js.Any = js.native
   }
   
-  @js.native
-  trait PegjsError extends Error {
+  trait PegjsError
+    extends StObject
+       with Error {
     
-    var expected: js.UndefOr[js.Array[ExpectedItem]] = js.native
+    var expected: js.UndefOr[js.Array[ExpectedItem]] = js.undefined
     
-    var found: js.UndefOr[js.Any] = js.native
+    var found: js.UndefOr[js.Any] = js.undefined
     
-    var location: LocationRange = js.native
+    var location: LocationRange
     
     @JSName("stack")
-    var stack_PegjsError: js.UndefOr[js.Any] = js.native
+    var stack_PegjsError: js.UndefOr[js.Any] = js.undefined
   }
   object PegjsError {
     

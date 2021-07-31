@@ -4,19 +4,18 @@ import typings.leaflet.mod.PathOptions
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typings.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ @js.native
-trait PathProps
-  extends PathOptions
-     with PathEvents {
+- typings.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait PathProps
+  extends StObject
+     with PathEvents
+     with PathOptions {
   
-  var children: js.UndefOr[Children] = js.native
+  var children: js.UndefOr[Children] = js.undefined
   
-  var leaflet: js.UndefOr[LeafletContext] = js.native
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
 }
 object PathProps {
   

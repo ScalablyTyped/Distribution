@@ -2,39 +2,39 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
-- typings.yandexMaps.mod.ILineStringGeometryAccess because var conflicts: events. Inlined get, getChildGeometry, getClosest, getCoordinates, getLength, insert, remove, set, setCoordinates, splice */ @js.native
-trait IBaseLineStringGeometry extends IBaseGeometry {
+- typings.yandexMaps.mod.ILineStringGeometryAccess because var conflicts: events. Inlined get, getChildGeometry, getClosest, getCoordinates, getLength, insert, remove, set, setCoordinates, splice */ trait IBaseLineStringGeometry
+  extends StObject
+     with IBaseGeometry {
   
-  def freeze(): IFreezable = js.native
+  def freeze(): IFreezable
   
-  def get(index: Double): js.Array[Double] = js.native
+  def get(index: Double): js.Array[Double]
   
-  def getChildGeometry(index: Double): IPointGeometryAccess = js.native
+  def getChildGeometry(index: Double): IPointGeometryAccess
   
-  def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+  def getClosest(anchorPosition: js.Array[Double]): js.Object
   
-  def getCoordinates(): js.Array[js.Array[Double]] = js.native
+  def getCoordinates(): js.Array[js.Array[Double]]
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
+  def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess
   
-  def isFrozen(): Boolean = js.native
+  def isFrozen(): Boolean
   
-  def remove(index: Double): js.Array[Double] = js.native
+  def remove(index: Double): js.Array[Double]
   
-  def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess = js.native
+  def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess
   
-  def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
+  def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess
   
-  def splice(index: Double, length: Double): js.Array[js.Array[Double]] = js.native
+  def splice(index: Double, length: Double): js.Array[js.Array[Double]]
   
-  def unfreeze(): IFreezable = js.native
+  def unfreeze(): IFreezable
 }
 object IBaseLineStringGeometry {
   

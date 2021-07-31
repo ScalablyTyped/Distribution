@@ -14,7 +14,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crawlerMod {
@@ -117,6 +116,10 @@ object crawlerMod {
   /* static members */
   object Crawler {
     
+    @JSImport("@pulumi/aws/glue/crawler", "Crawler")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Crawler resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -126,107 +129,101 @@ object crawlerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/crawler", "Crawler.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Crawler = js.native
-    @JSImport("@pulumi/aws/glue/crawler", "Crawler.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Crawler = js.native
-    @JSImport("@pulumi/aws/glue/crawler", "Crawler.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CrawlerState): Crawler = js.native
-    @JSImport("@pulumi/aws/glue/crawler", "Crawler.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CrawlerState, opts: CustomResourceOptions): Crawler = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Crawler]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Crawler]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CrawlerState): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Crawler]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CrawlerState, opts: CustomResourceOptions): Crawler = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Crawler]
     
     /**
       * Returns true if the given object is an instance of Crawler.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/crawler", "Crawler.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ Boolean]
   }
   
-  @js.native
   trait CrawlerArgs extends StObject {
     
-    val catalogTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]] = js.native
+    val catalogTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]] = js.undefined
     
     /**
       * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
       */
-    val classifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val classifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * JSON string of configuration information.
       */
-    val configuration: js.UndefOr[Input[String]] = js.native
+    val configuration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Glue database where results are written.
       */
-    val databaseName: Input[String] = js.native
+    val databaseName: Input[String]
     
     /**
       * Description of the crawler.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of nested DynamoDB target arguments. See below.
       */
-    val dynamodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]] = js.native
+    val dynamodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]] = js.undefined
     
     /**
       * List of nested JBDC target arguments. See below.
       */
-    val jdbcTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]] = js.native
+    val jdbcTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]] = js.undefined
     
     /**
       * List nested MongoDB target arguments. See below.
       */
-    val mongodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]] = js.native
+    val mongodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]] = js.undefined
     
     /**
       * Name of the crawler.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
       */
-    val role: Input[String] = js.native
+    val role: Input[String]
     
     /**
       * List nested Amazon S3 target arguments. See below.
       */
-    val s3Targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]] = js.native
+    val s3Targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]] = js.undefined
     
     /**
       * A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
       */
-    val schedule: js.UndefOr[Input[String]] = js.native
+    val schedule: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Policy for the crawler's update and deletion behavior.
       */
-    val schemaChangePolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]] = js.native
+    val schemaChangePolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]] = js.undefined
     
     /**
       * The name of Security Configuration to be used by the crawler
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The table prefix used for catalog tables that are created.
       */
-    val tablePrefix: js.UndefOr[Input[String]] = js.native
+    val tablePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object CrawlerArgs {
     
@@ -349,90 +346,89 @@ object crawlerMod {
     }
   }
   
-  @js.native
   trait CrawlerState extends StObject {
     
     /**
       * The ARN of the crawler
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
-    val catalogTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]] = js.native
+    val catalogTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerCatalogTarget]]]] = js.undefined
     
     /**
       * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
       */
-    val classifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val classifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * JSON string of configuration information.
       */
-    val configuration: js.UndefOr[Input[String]] = js.native
+    val configuration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Glue database where results are written.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the crawler.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of nested DynamoDB target arguments. See below.
       */
-    val dynamodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]] = js.native
+    val dynamodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerDynamodbTarget]]]] = js.undefined
     
     /**
       * List of nested JBDC target arguments. See below.
       */
-    val jdbcTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]] = js.native
+    val jdbcTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerJdbcTarget]]]] = js.undefined
     
     /**
       * List nested MongoDB target arguments. See below.
       */
-    val mongodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]] = js.native
+    val mongodbTargets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerMongodbTarget]]]] = js.undefined
     
     /**
       * Name of the crawler.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
       */
-    val role: js.UndefOr[Input[String]] = js.native
+    val role: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List nested Amazon S3 target arguments. See below.
       */
-    val s3Targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]] = js.native
+    val s3Targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glue.CrawlerS3Target]]]] = js.undefined
     
     /**
       * A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
       */
-    val schedule: js.UndefOr[Input[String]] = js.native
+    val schedule: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Policy for the crawler's update and deletion behavior.
       */
-    val schemaChangePolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]] = js.native
+    val schemaChangePolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.CrawlerSchemaChangePolicy]] = js.undefined
     
     /**
       * The name of Security Configuration to be used by the crawler
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The table prefix used for catalog tables that are created.
       */
-    val tablePrefix: js.UndefOr[Input[String]] = js.native
+    val tablePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object CrawlerState {
     

@@ -2,7 +2,6 @@ package typings.activexDao.DAO
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,9 +14,9 @@ trait Connection extends StObject {
   val Connect: String = js.native
   
   def CreateQueryDef(): QueryDef = js.native
-  def CreateQueryDef(Name: js.UndefOr[scala.Nothing], SQLText: String): QueryDef = js.native
   def CreateQueryDef(Name: String): QueryDef = js.native
   def CreateQueryDef(Name: String, SQLText: String): QueryDef = js.native
+  def CreateQueryDef(Name: Unit, SQLText: String): QueryDef = js.native
   
   @JSName("DAO.Connection_typekey")
   var DAODotConnection_typekey: Connection = js.native
@@ -30,21 +29,11 @@ trait Connection extends StObject {
   val Name: String = js.native
   
   def OpenRecordset(Name: String): Recordset = js.native
-  def OpenRecordset(
-    Name: String,
-    Type: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    LockEdit: LockTypeEnum
-  ): Recordset = js.native
-  def OpenRecordset(Name: String, Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
-  def OpenRecordset(
-    Name: String,
-    Type: js.UndefOr[scala.Nothing],
-    Options: RecordsetOptionEnum,
-    LockEdit: LockTypeEnum
-  ): Recordset = js.native
+  def OpenRecordset(Name: String, Type: Unit, Options: Unit, LockEdit: LockTypeEnum): Recordset = js.native
+  def OpenRecordset(Name: String, Type: Unit, Options: RecordsetOptionEnum): Recordset = js.native
+  def OpenRecordset(Name: String, Type: Unit, Options: RecordsetOptionEnum, LockEdit: LockTypeEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum): Recordset = js.native
-  def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: js.UndefOr[scala.Nothing], LockEdit: LockTypeEnum): Recordset = js.native
+  def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: Unit, LockEdit: LockTypeEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: RecordsetOptionEnum, LockEdit: LockTypeEnum): Recordset = js.native
   

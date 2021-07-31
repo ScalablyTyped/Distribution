@@ -2,20 +2,18 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration for forwarding telemetry events.
   */
-@js.native
 trait SchemaEventNotificationConfig extends StObject {
   
   /**
     * A Cloud Pub/Sub topic name. For example,
     * `projects/myProject/topics/deviceEvents`.
     */
-  var pubsubTopicName: js.UndefOr[String] = js.native
+  var pubsubTopicName: js.UndefOr[String] = js.undefined
   
   /**
     * If the subfolder name matches this string exactly, this configuration
@@ -23,7 +21,7 @@ trait SchemaEventNotificationConfig extends StObject {
     * character. If empty, all strings are matched. This field is used only for
     * telemetry events; subfolders are not supported for state changes.
     */
-  var subfolderMatches: js.UndefOr[String] = js.native
+  var subfolderMatches: js.UndefOr[String] = js.undefined
 }
 object SchemaEventNotificationConfig {
   

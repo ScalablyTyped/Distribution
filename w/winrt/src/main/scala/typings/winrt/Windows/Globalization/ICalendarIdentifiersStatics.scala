@@ -2,29 +2,27 @@ package typings.winrt.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICalendarIdentifiersStatics extends StObject {
   
-  var gregorian: String = js.native
+  var gregorian: String
   
-  var hebrew: String = js.native
+  var hebrew: String
   
-  var hijri: String = js.native
+  var hijri: String
   
-  var japanese: String = js.native
+  var japanese: String
   
-  var julian: String = js.native
+  var julian: String
   
-  var korean: String = js.native
+  var korean: String
   
-  var taiwan: String = js.native
+  var taiwan: String
   
-  var thai: String = js.native
+  var thai: String
   
-  var umAlQura: String = js.native
+  var umAlQura: String
 }
 object ICalendarIdentifiersStatics {
   

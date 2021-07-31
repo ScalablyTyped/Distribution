@@ -8,7 +8,6 @@ import typings.blueprintjsSelect.anon.PartialIPopoverProps
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
@@ -64,13 +63,14 @@ object selectMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/select/lib/esm/components/select/select", "Select.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ ISelectProps[U], Select[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ ISelectProps[U], Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISelectProps[U], Select[U]]]
   }
   
   @js.native
-  trait ISelectProps[T] extends IListItemsProps[T] {
+  trait ISelectProps[T]
+    extends StObject
+       with IListItemsProps[T] {
     
     /**
       * Whether the component is non-interactive.
@@ -92,10 +92,10 @@ object selectMod {
       * `onQueryChange` instead of `inputProps.value` and `inputProps.onChange`
       * to control this input.
       */
-    var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.native
     
     /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-    var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
     
     /**
       * Whether the active item should be reset to the first matching item _when
@@ -105,10 +105,9 @@ object selectMod {
     var resetOnClose: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait ISelectState extends StObject {
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
   }
   object ISelectState {
     

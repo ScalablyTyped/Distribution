@@ -18,7 +18,6 @@ import typings.ngTable.resultsMod.DataResult
 import typings.ngTable.sortingMod.ISortingValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableParamsMod {
@@ -28,8 +27,8 @@ object ngTableParamsMod {
   class NgTableParams[T] () extends StObject {
     def this(baseParameters: Boolean) = this()
     def this(baseParameters: IParamValues[T]) = this()
-    def this(baseParameters: js.UndefOr[scala.Nothing], baseSettings: ISettings[T]) = this()
     def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
+    def this(baseParameters: Unit, baseSettings: ISettings[T]) = this()
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
     
     var _params: js.Any = js.native
@@ -80,41 +79,21 @@ object ngTableParamsMod {
       * @returns Array of pages
       */
     def generatePagesArray(): js.Array[IPageButton] = js.native
-    def generatePagesArray(
-      currentPage: js.UndefOr[scala.Nothing],
-      totalItems: js.UndefOr[scala.Nothing],
-      pageSize: js.UndefOr[scala.Nothing],
-      maxBlocks: Double
-    ): js.Array[IPageButton] = js.native
-    def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: js.UndefOr[scala.Nothing], pageSize: Double): js.Array[IPageButton] = js.native
-    def generatePagesArray(
-      currentPage: js.UndefOr[scala.Nothing],
-      totalItems: js.UndefOr[scala.Nothing],
-      pageSize: Double,
-      maxBlocks: Double
-    ): js.Array[IPageButton] = js.native
-    def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: Double): js.Array[IPageButton] = js.native
-    def generatePagesArray(
-      currentPage: js.UndefOr[scala.Nothing],
-      totalItems: Double,
-      pageSize: js.UndefOr[scala.Nothing],
-      maxBlocks: Double
-    ): js.Array[IPageButton] = js.native
-    def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: Double, pageSize: Double): js.Array[IPageButton] = js.native
-    def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: Double, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
     def generatePagesArray(currentPage: Double): js.Array[IPageButton] = js.native
-    def generatePagesArray(
-      currentPage: Double,
-      totalItems: js.UndefOr[scala.Nothing],
-      pageSize: js.UndefOr[scala.Nothing],
-      maxBlocks: Double
-    ): js.Array[IPageButton] = js.native
-    def generatePagesArray(currentPage: Double, totalItems: js.UndefOr[scala.Nothing], pageSize: Double): js.Array[IPageButton] = js.native
-    def generatePagesArray(currentPage: Double, totalItems: js.UndefOr[scala.Nothing], pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
     def generatePagesArray(currentPage: Double, totalItems: Double): js.Array[IPageButton] = js.native
-    def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: js.UndefOr[scala.Nothing], maxBlocks: Double): js.Array[IPageButton] = js.native
     def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: Double): js.Array[IPageButton] = js.native
     def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: Unit, maxBlocks: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Double, totalItems: Unit, pageSize: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Double, totalItems: Unit, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Double, totalItems: Unit, pageSize: Unit, maxBlocks: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Unit, totalItems: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Unit, totalItems: Double, pageSize: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Unit, totalItems: Double, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Unit, totalItems: Double, pageSize: Unit, maxBlocks: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Unit, totalItems: Unit, pageSize: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Unit, totalItems: Unit, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
+    def generatePagesArray(currentPage: Unit, totalItems: Unit, pageSize: Unit, maxBlocks: Double): js.Array[IPageButton] = js.native
     
     /**
       * Returns the current grouping used to group the data rows
@@ -220,9 +199,9 @@ object ngTableParamsMod {
       * Set new parameters
       */
     def parameters(): this.type = js.native
-    def parameters(newParameters: js.UndefOr[scala.Nothing], parseParamsFromUrl: Boolean): this.type = js.native
     def parameters(newParameters: StringDictionary[String]): this.type = js.native
     def parameters(newParameters: StringDictionary[String], parseParamsFromUrl: Boolean): this.type = js.native
+    def parameters(newParameters: Unit, parseParamsFromUrl: Boolean): this.type = js.native
     def parameters(newParameters: IParamValues[T]): this.type = js.native
     def parameters(newParameters: IParamValues[T], parseParamsFromUrl: Boolean): this.type = js.native
     @JSName("parameters")
@@ -314,15 +293,14 @@ object ngTableParamsMod {
     @scala.inline
     def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
     
-    @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.init")
-    @js.native
+    @scala.inline
     def init(
       $q: IQService,
       $log: ILogService,
       ngTableDefaults: IDefaults,
       ngTableEventsChannel: NgTableEventsChannel,
       ngTableSettings: NgTableSettings
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")($q.asInstanceOf[js.Any], $log.asInstanceOf[js.Any], ngTableDefaults.asInstanceOf[js.Any], ngTableEventsChannel.asInstanceOf[js.Any], ngTableSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.ngTableDefaults")
     @js.native
@@ -343,33 +321,32 @@ object ngTableParamsMod {
     def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IParamValues[T] extends StObject {
     
     /**
       * The number of data rows per page
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * The filter that should be applied to restrict the set of data rows
       */
-    var filter: js.UndefOr[IFilterValues] = js.native
+    var filter: js.UndefOr[IFilterValues] = js.undefined
     
     /**
       * The grouping that should be applied to the data rows
       */
-    var group: js.UndefOr[String | Grouping[T]] = js.native
+    var group: js.UndefOr[String | Grouping[T]] = js.undefined
     
     /**
       * The index of the "slice" of data rows, starting at 1, to be displayed by the table.
       */
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
     /**
       * The sort order that should be applied to the data rows.
       */
-    var sorting: js.UndefOr[ISortingValues] = js.native
+    var sorting: js.UndefOr[ISortingValues] = js.undefined
   }
   object IParamValues {
     
@@ -380,7 +357,7 @@ object ngTableParamsMod {
     }
     
     @scala.inline
-    implicit class IParamValuesMutableBuilder[Self <: IParamValues[_], T] (val x: Self with IParamValues[T]) extends AnyVal {
+    implicit class IParamValuesMutableBuilder[Self <: IParamValues[?], T] (val x: Self & IParamValues[T]) extends AnyVal {
       
       @scala.inline
       def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])

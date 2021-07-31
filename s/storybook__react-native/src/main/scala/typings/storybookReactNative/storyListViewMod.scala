@@ -3,7 +3,6 @@ package typings.storybookReactNative
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyListViewMod {
@@ -14,10 +13,9 @@ object storyListViewMod {
     def this(props: Props) = this()
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var stories: js.Any = js.native
+    var stories: js.Any
   }
   object Props {
     
@@ -35,17 +33,16 @@ object storyListViewMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
-    var originalData: js.Array[_] = js.native
+    var originalData: js.Array[js.Any]
   }
   object State {
     
     @scala.inline
-    def apply(data: js.Array[_], originalData: js.Array[_]): State = {
+    def apply(data: js.Array[js.Any], originalData: js.Array[js.Any]): State = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalData = originalData.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
@@ -54,13 +51,13 @@ object storyListViewMod {
     implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
       @scala.inline
-      def setOriginalData(value: js.Array[_]): Self = StObject.set(x, "originalData", value.asInstanceOf[js.Any])
+      def setOriginalData(value: js.Array[js.Any]): Self = StObject.set(x, "originalData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOriginalDataVarargs(value: js.Any*): Self = StObject.set(x, "originalData", js.Array(value :_*))

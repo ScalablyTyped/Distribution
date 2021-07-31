@@ -2,21 +2,19 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocoderComponentRestrictions extends StObject {
   
-  var administrativeArea: js.UndefOr[String] = js.native
+  var administrativeArea: js.UndefOr[String] = js.undefined
   
-  var country: js.UndefOr[String | js.Array[String]] = js.native
+  var country: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
-  var route: js.UndefOr[String] = js.native
+  var route: js.UndefOr[String] = js.undefined
 }
 object GeocoderComponentRestrictions {
   

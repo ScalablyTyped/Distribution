@@ -5,17 +5,15 @@ import typings.chrome.chrome.devtools.network.NavigatedEvent
 import typings.chrome.chrome.devtools.network.RequestFinishedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofnetwork extends StObject {
   
-  def getHAR(callback: js.Function1[/* harLog */ HARLog, Unit]): Unit = js.native
+  def getHAR(callback: js.Function1[/* harLog */ HARLog, Unit]): Unit
   
-  var onNavigated: NavigatedEvent = js.native
+  var onNavigated: NavigatedEvent
   
-  var onRequestFinished: RequestFinishedEvent = js.native
+  var onRequestFinished: RequestFinishedEvent
 }
 object Typeofnetwork {
   

@@ -6,7 +6,6 @@ import typings.swiper.mod.SwiperOptions
 import typings.swiper.swiperEsmMod.Swiper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swiperInterfaceMod {
@@ -26,11 +25,14 @@ object swiperInterfaceMod {
   /* static members */
   object SwiperInterface {
     
+    @JSImport("@ionic/core/dist/types/components/slides/swiper/swiper-interface", "SwiperInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Installs modules on Swiper in runtime.
       */
-    @JSImport("@ionic/core/dist/types/components/slides/swiper/swiper-interface", "SwiperInterface.use")
-    @js.native
-    def use(modules: js.Array[SwiperModule]): Unit = js.native
+    @scala.inline
+    def use(modules: js.Array[SwiperModule]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(modules.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

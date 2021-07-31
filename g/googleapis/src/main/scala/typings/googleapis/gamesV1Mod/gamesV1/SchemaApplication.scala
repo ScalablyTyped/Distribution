@@ -2,82 +2,80 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the Application resource.
   */
-@js.native
 trait SchemaApplication extends StObject {
   
   /**
     * The number of achievements visible to the currently authenticated player.
     */
-  var achievement_count: js.UndefOr[Double] = js.native
+  var achievement_count: js.UndefOr[Double] = js.undefined
   
   /**
     * The assets of the application.
     */
-  var assets: js.UndefOr[js.Array[SchemaImageAsset]] = js.native
+  var assets: js.UndefOr[js.Array[SchemaImageAsset]] = js.undefined
   
   /**
     * The author of the application.
     */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
   /**
     * The category of the application.
     */
-  var category: js.UndefOr[SchemaApplicationCategory] = js.native
+  var category: js.UndefOr[SchemaApplicationCategory] = js.undefined
   
   /**
     * The description of the application.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A list of features that have been enabled for the application. Possible
     * values are:   - &quot;SNAPSHOTS&quot; - Snapshots has been enabled
     */
-  var enabledFeatures: js.UndefOr[js.Array[String]] = js.native
+  var enabledFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID of the application.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The instances of the application.
     */
-  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#application.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The last updated timestamp of the application.
     */
-  var lastUpdatedTimestamp: js.UndefOr[String] = js.native
+  var lastUpdatedTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The number of leaderboards visible to the currently authenticated player.
     */
-  var leaderboard_count: js.UndefOr[Double] = js.native
+  var leaderboard_count: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the application.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A hint to the client UI for what color to use as an app-themed color. The
     * color is given as an RGB triplet (e.g. &quot;E0E0E0&quot;).
     */
-  var themeColor: js.UndefOr[String] = js.native
+  var themeColor: js.UndefOr[String] = js.undefined
 }
 object SchemaApplication {
   

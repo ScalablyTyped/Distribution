@@ -2,35 +2,33 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextureRegion extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var originalHeight: Double = js.native
+  var originalHeight: Double
   
-  var originalWidth: Double = js.native
+  var originalWidth: Double
   
-  var renderObject: js.Any = js.native
+  var renderObject: js.Any
   
-  var rotate: Boolean = js.native
+  var rotate: Boolean
   
-  var u: Double = js.native
+  var u: Double
   
-  var u2: Double = js.native
+  var u2: Double
   
-  var v: Double = js.native
+  var v: Double
   
-  var v2: Double = js.native
+  var v2: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object TextureRegion {
   

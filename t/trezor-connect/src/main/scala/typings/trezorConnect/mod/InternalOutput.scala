@@ -2,17 +2,17 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InternalOutput extends Output {
+trait InternalOutput
+  extends StObject
+     with Output {
   
-  var address_n: js.Array[Double] = js.native
+  var address_n: js.Array[Double]
   
-  var amount: String = js.native
+  var amount: String
   
-  var script_type: js.UndefOr[String] = js.native
+  var script_type: js.UndefOr[String] = js.undefined
 }
 object InternalOutput {
   

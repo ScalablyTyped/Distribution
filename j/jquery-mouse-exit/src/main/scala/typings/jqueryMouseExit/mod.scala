@@ -5,18 +5,16 @@ import typings.jqueryMouseExit.jqueryMouseExitStrings.mouseExit
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Partial<{  lostFocus :std.HTMLElement,   gainedFocus :std.HTMLElement}> */
-  @js.native
   trait FocusElements extends StObject {
     
-    var gainedFocus: js.UndefOr[HTMLElement] = js.native
+    var gainedFocus: js.UndefOr[HTMLElement] = js.undefined
     
-    var lostFocus: js.UndefOr[HTMLElement] = js.native
+    var lostFocus: js.UndefOr[HTMLElement] = js.undefined
   }
   object FocusElements {
     
@@ -44,10 +42,9 @@ object mod {
   }
   
   /* Inlined std.Partial<{  delay :number}> */
-  @js.native
   trait Options extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -79,7 +76,11 @@ object mod {
       @JSName("on")
       def on_mouseExit(
         event: mouseExit,
-        handler: js.Function2[/* event */ TriggeredEvent[HTMLElement, _, _, _], /* data */ FocusElements, Unit]
+        handler: js.Function2[
+              /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
+              /* data */ FocusElements, 
+              Unit
+            ]
       ): JQuery = js.native
     }
   }

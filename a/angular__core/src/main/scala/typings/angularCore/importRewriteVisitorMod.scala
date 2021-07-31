@@ -10,7 +10,6 @@ import typings.typescript.mod.Transformer
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object importRewriteVisitorMod {
@@ -44,5 +43,14 @@ object importRewriteVisitorMod {
   
   @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/import_rewrite_visitor", "UnresolvedIdentifierError")
   @js.native
-  class UnresolvedIdentifierError () extends Error
+  class UnresolvedIdentifierError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
 }

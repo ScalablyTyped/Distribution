@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskDefinitionMod {
@@ -124,6 +123,10 @@ object taskDefinitionMod {
   /* static members */
   object TaskDefinition {
     
+    @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TaskDefinition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -133,29 +136,23 @@ object taskDefinitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TaskDefinition = js.native
-    @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TaskDefinition = js.native
-    @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TaskDefinitionState): TaskDefinition = js.native
-    @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TaskDefinitionState, opts: CustomResourceOptions): TaskDefinition = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TaskDefinitionState): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TaskDefinitionState, opts: CustomResourceOptions): TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TaskDefinition]
     
     /**
       * Returns true if the given object is an instance of TaskDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean]
   }
   
-  @js.native
   trait TaskDefinitionArgs extends StObject {
     
     /**
@@ -167,22 +164,22 @@ object taskDefinitionMod {
       * Parameters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html)
       * section from the official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
       */
-    val containerDefinitions: Input[String] = js.native
+    val containerDefinitions: Input[String]
     
     /**
       * The number of cpu units used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
       */
-    val cpu: js.UndefOr[Input[String]] = js.native
+    val cpu: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
       */
-    val executionRoleArn: js.UndefOr[Input[String]] = js.native
+    val executionRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for your task definition.
       */
-    val family: Input[String] = js.native
+    val family: Input[String]
     
     /**
       * Configuration block(s) with Inference Accelerators settings. Detailed below.
@@ -191,27 +188,27 @@ object taskDefinitionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
       */
-    val ipcMode: js.UndefOr[Input[String]] = js.native
+    val ipcMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount (in MiB) of memory used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
       */
-    val memory: js.UndefOr[Input[String]] = js.native
+    val memory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
       */
-    val networkMode: js.UndefOr[Input[String]] = js.native
+    val networkMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The process namespace to use for the containers in the task. The valid values are `host` and `task`.
       */
-    val pidMode: js.UndefOr[Input[String]] = js.native
+    val pidMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placementConstraints` is `10`.
@@ -220,32 +217,32 @@ object taskDefinitionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The proxy configuration details for the App Mesh proxy.
       */
-    val proxyConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]] = js.native
+    val proxyConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]] = js.undefined
     
     /**
       * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
       */
-    val requiresCompatibilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val requiresCompatibilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
       */
-    val taskRoleArn: js.UndefOr[Input[String]] = js.native
+    val taskRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of volume blocks that containers in your task may use.
       */
-    val volumes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]] = js.native
+    val volumes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]] = js.undefined
   }
   object TaskDefinitionArgs {
     
@@ -364,13 +361,12 @@ object taskDefinitionMod {
     }
   }
   
-  @js.native
   trait TaskDefinitionState extends StObject {
     
     /**
       * Full ARN of the Task Definition (including both `family` and `revision`).
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of valid [container
@@ -381,22 +377,22 @@ object taskDefinitionMod {
       * Parameters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html)
       * section from the official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
       */
-    val containerDefinitions: js.UndefOr[Input[String]] = js.native
+    val containerDefinitions: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of cpu units used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
       */
-    val cpu: js.UndefOr[Input[String]] = js.native
+    val cpu: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
       */
-    val executionRoleArn: js.UndefOr[Input[String]] = js.native
+    val executionRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for your task definition.
       */
-    val family: js.UndefOr[Input[String]] = js.native
+    val family: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block(s) with Inference Accelerators settings. Detailed below.
@@ -405,27 +401,27 @@ object taskDefinitionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
       */
-    val ipcMode: js.UndefOr[Input[String]] = js.native
+    val ipcMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount (in MiB) of memory used by the task. If the `requiresCompatibilities` is `FARGATE` this field is required.
       */
-    val memory: js.UndefOr[Input[String]] = js.native
+    val memory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
       */
-    val networkMode: js.UndefOr[Input[String]] = js.native
+    val networkMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The process namespace to use for the containers in the task. The valid values are `host` and `task`.
       */
-    val pidMode: js.UndefOr[Input[String]] = js.native
+    val pidMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placementConstraints` is `10`.
@@ -434,37 +430,37 @@ object taskDefinitionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The proxy configuration details for the App Mesh proxy.
       */
-    val proxyConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]] = js.native
+    val proxyConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration]] = js.undefined
     
     /**
       * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
       */
-    val requiresCompatibilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val requiresCompatibilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The revision of the task in a particular family.
       */
-    val revision: js.UndefOr[Input[Double]] = js.native
+    val revision: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
       */
-    val taskRoleArn: js.UndefOr[Input[String]] = js.native
+    val taskRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of volume blocks that containers in your task may use.
       */
-    val volumes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]] = js.native
+    val volumes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume]]]] = js.undefined
   }
   object TaskDefinitionState {
     

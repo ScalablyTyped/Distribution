@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Schemes extends Object {
+trait Schemes
+  extends StObject
+     with Object {
   
   /**
     * Includes the primary labeling scheme suggested for the input layer's clusters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#Schemes)
     */
-  var primaryScheme: Scheme = js.native
+  var primaryScheme: Scheme
   
   /**
     * Includes secondary labeling schemes suggested for the input layer's clusters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#Schemes)
     */
-  var secondarySchemes: js.Array[Scheme] = js.native
+  var secondarySchemes: js.Array[Scheme]
 }
 object Schemes {
   

@@ -7,27 +7,28 @@ import typings.awsSdkTypes.utilMod.RegionInfoProvider
 import typings.awsSdkTypes.utilMod.UrlParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointsConfigMod {
   
-  @JSImport("@aws-sdk/config-resolver/dist/cjs/EndpointsConfig", "resolveEndpointsConfig")
+  @JSImport("@aws-sdk/config-resolver/dist/cjs/EndpointsConfig", JSImport.Namespace)
   @js.native
-  def resolveEndpointsConfig[T](input: T with EndpointsInputConfig with PreviouslyResolved): T with EndpointsResolvedConfig = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def resolveEndpointsConfig[T](input: T & EndpointsInputConfig & PreviouslyResolved): T & EndpointsResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveEndpointsConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & EndpointsResolvedConfig]
+  
   trait EndpointsInputConfig extends StObject {
     
     /**
       * The fully qualified endpoint of the webservice. This is only required when using a custom endpoint (for example, when using a local version of S3).
       */
-    var endpoint: js.UndefOr[String | Endpoint | Provider[Endpoint]] = js.native
+    var endpoint: js.UndefOr[String | Endpoint | Provider[Endpoint]] = js.undefined
     
     /**
       * Whether TLS is enabled for requests.
       */
-    var tls: js.UndefOr[Boolean] = js.native
+    var tls: js.UndefOr[Boolean] = js.undefined
   }
   object EndpointsInputConfig {
     
@@ -58,33 +59,79 @@ object endpointsConfigMod {
   }
   
   /* Inlined parent std.Required<@aws-sdk/config-resolver.@aws-sdk/config-resolver/dist/cjs/EndpointsConfig.EndpointsInputConfig> */
-  @js.native
   trait EndpointsResolvedConfig extends StObject {
     
-    def endpoint(): js.Promise[Endpoint] = js.native
+    def endpoint(): js.Promise[Endpoint]
     @JSName("endpoint")
-    var endpoint_Original: Provider[Endpoint] = js.native
+    var endpoint_Original: Provider[Endpoint]
     
-    var isCustomEndpoint: Boolean = js.native
+    var isCustomEndpoint: Boolean
     
-    var tls: Boolean = js.native
+    var tls: Boolean
+  }
+  object EndpointsResolvedConfig {
+    
+    @scala.inline
+    def apply(endpoint: () => js.Promise[Endpoint], isCustomEndpoint: Boolean, tls: Boolean): EndpointsResolvedConfig = {
+      val __obj = js.Dynamic.literal(endpoint = js.Any.fromFunction0(endpoint), isCustomEndpoint = isCustomEndpoint.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EndpointsResolvedConfig]
+    }
+    
+    @scala.inline
+    implicit class EndpointsResolvedConfigMutableBuilder[Self <: EndpointsResolvedConfig] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait PreviouslyResolved extends StObject {
     
-    def region(): js.Promise[String] = js.native
+    def region(): js.Promise[String]
     
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = js.native
-    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = js.native
+    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]]
+    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]]
     @JSName("regionInfoProvider")
-    var regionInfoProvider_Original: RegionInfoProvider = js.native
+    var regionInfoProvider_Original: RegionInfoProvider
     
     @JSName("region")
-    var region_Original: Provider[String] = js.native
+    var region_Original: Provider[String]
     
-    def urlParser(url: String): Endpoint = js.native
+    def urlParser(url: String): Endpoint
     @JSName("urlParser")
-    var urlParser_Original: UrlParser = js.native
+    var urlParser_Original: UrlParser
+  }
+  object PreviouslyResolved {
+    
+    @scala.inline
+    def apply(
+      region: () => js.Promise[String],
+      regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]],
+      urlParser: /* url */ String => Endpoint
+    ): PreviouslyResolved = {
+      val __obj = js.Dynamic.literal(region = js.Any.fromFunction0(region), regionInfoProvider = js.Any.fromFunction2(regionInfoProvider), urlParser = js.Any.fromFunction1(urlParser))
+      __obj.asInstanceOf[PreviouslyResolved]
+    }
+    
+    @scala.inline
+    implicit class PreviouslyResolvedMutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setRegionInfoProvider(
+        value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
+      ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+    }
   }
 }

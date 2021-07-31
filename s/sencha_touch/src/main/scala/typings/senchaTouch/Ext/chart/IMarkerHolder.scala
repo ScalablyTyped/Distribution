@@ -3,11 +3,11 @@ package typings.senchaTouch.Ext.chart
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMarkerHolder extends IBase {
+trait IMarkerHolder
+  extends StObject
+     with IBase {
   
   /** [Method]
     * @param name String
@@ -15,7 +15,7 @@ trait IMarkerHolder extends IBase {
     */
   var bindMarker: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[String], /* marker */ js.UndefOr[IMarkers], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object IMarkerHolder {
   

@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationReferenceDataSources extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The S3 configuration for the reference data source. See S3 Reference below for more details.
     */
-  var s3: AnalyticsApplicationReferenceDataSourcesS3 = js.native
+  var s3: AnalyticsApplicationReferenceDataSourcesS3
   
   /**
     * The Schema format of the data in the streaming source. See Source Schema below for more details.
     */
-  var schema: AnalyticsApplicationReferenceDataSourcesSchema = js.native
+  var schema: AnalyticsApplicationReferenceDataSourcesSchema
   
   /**
     * The in-application Table Name.
     */
-  var tableName: String = js.native
+  var tableName: String
 }
 object AnalyticsApplicationReferenceDataSources {
   

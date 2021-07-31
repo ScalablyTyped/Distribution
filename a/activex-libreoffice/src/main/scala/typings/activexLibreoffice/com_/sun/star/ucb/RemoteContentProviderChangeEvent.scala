@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Stephan Bergmann
   * @version 1.0
   */
-@js.native
-trait RemoteContentProviderChangeEvent extends EventObject {
+trait RemoteContentProviderChangeEvent
+  extends StObject
+     with EventObject {
   
   /** An indicator whether a remote content provider has been added or removed. */
-  var Action: RemoteContentProviderChangeAction = js.native
+  var Action: RemoteContentProviderChangeAction
   
   /** The identifier with which the remote content provider is registered at the {@link com.sun.star.ucb.XRemoteContentProviderSupplier} . */
-  var Identifier: String = js.native
+  var Identifier: String
 }
 object RemoteContentProviderChangeEvent {
   

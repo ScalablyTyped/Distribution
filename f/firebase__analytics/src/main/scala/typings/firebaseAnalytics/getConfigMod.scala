@@ -7,10 +7,13 @@ import typings.firebaseAnalyticsTypes.mod.ThrottleMetadata
 import typings.firebaseAppTypes.mod.FirebaseApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getConfigMod {
+  
+  @JSImport("@firebase/analytics/dist/src/get-config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/analytics/dist/src/get-config", "AnalyticsAbortSignal")
   @js.native
@@ -27,31 +30,25 @@ object getConfigMod {
   @js.native
   val LONG_RETRY_FACTOR: /* 30 */ Double = js.native
   
-  @JSImport("@firebase/analytics/dist/src/get-config", "fetchDynamicConfig")
-  @js.native
-  def fetchDynamicConfig(appFields: AppFields): js.Promise[DynamicConfig] = js.native
+  @scala.inline
+  def fetchDynamicConfig(appFields: AppFields): js.Promise[DynamicConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfig")(appFields.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DynamicConfig]]
   
-  @JSImport("@firebase/analytics/dist/src/get-config", "fetchDynamicConfigWithRetry")
-  @js.native
-  def fetchDynamicConfigWithRetry(app: FirebaseApp): js.Promise[DynamicConfig | MinimalDynamicConfig] = js.native
-  @JSImport("@firebase/analytics/dist/src/get-config", "fetchDynamicConfigWithRetry")
-  @js.native
-  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: js.UndefOr[scala.Nothing], timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = js.native
-  @JSImport("@firebase/analytics/dist/src/get-config", "fetchDynamicConfigWithRetry")
-  @js.native
-  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData): js.Promise[DynamicConfig | MinimalDynamicConfig] = js.native
-  @JSImport("@firebase/analytics/dist/src/get-config", "fetchDynamicConfigWithRetry")
-  @js.native
-  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData, timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = js.native
+  @scala.inline
+  def fetchDynamicConfigWithRetry(app: FirebaseApp): js.Promise[DynamicConfig | MinimalDynamicConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
+  @scala.inline
+  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: Unit, timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
+  @scala.inline
+  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
+  @scala.inline
+  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData, timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
   
-  @js.native
   trait AppFields extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var appId: String = js.native
+    var appId: String
     
-    var measurementId: js.UndefOr[String] = js.native
+    var measurementId: js.UndefOr[String] = js.undefined
   }
   object AppFields {
     
@@ -81,18 +78,17 @@ object getConfigMod {
   /**
     * Stubbable retry data storage class.
     */
-  @js.native
   trait RetryData extends StObject {
     
-    def deleteThrottleMetadata(appId: String): Unit = js.native
+    def deleteThrottleMetadata(appId: String): Unit
     
-    def getThrottleMetadata(appId: String): ThrottleMetadata = js.native
+    def getThrottleMetadata(appId: String): ThrottleMetadata
     
-    var intervalMillis: Double = js.native
+    var intervalMillis: Double
     
-    def setThrottleMetadata(appId: String, metadata: ThrottleMetadata): Unit = js.native
+    def setThrottleMetadata(appId: String, metadata: ThrottleMetadata): Unit
     
-    var throttleMetadata: StringDictionary[ThrottleMetadata] = js.native
+    var throttleMetadata: StringDictionary[ThrottleMetadata]
   }
   object RetryData {
     

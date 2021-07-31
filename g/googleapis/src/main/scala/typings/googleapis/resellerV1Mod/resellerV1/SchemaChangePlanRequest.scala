@@ -2,13 +2,11 @@ package typings.googleapis.resellerV1Mod.resellerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for the ChangePlan rpc request.
   */
-@js.native
 trait SchemaChangePlanRequest extends StObject {
   
   /**
@@ -21,13 +19,13 @@ trait SchemaChangePlanRequest extends StObject {
     * code has never been added to a subscription and this property is left
     * blank, regular pricing will apply.
     */
-  var dealCode: js.UndefOr[String] = js.native
+  var dealCode: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a subscription change plan request. Value:
     * subscriptions#changePlanRequest
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The planName property is required. This is the name of the
@@ -38,7 +36,7 @@ trait SchemaChangePlanRequest extends StObject {
     * - ANNUAL_YEARLY_PAY - The annual commitment plan with yearly payments   -
     * FLEXIBLE - The flexible plan   - TRIAL - The 30-day free trial plan
     */
-  var planName: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.undefined
   
   /**
     * This is an optional property. This purchase order (PO) information is for
@@ -46,13 +44,13 @@ trait SchemaChangePlanRequest extends StObject {
     * value is given it appears in the API responses and shows up in the
     * invoice. The property accepts up to 80 plain text characters.
     */
-  var purchaseOrderId: js.UndefOr[String] = js.native
+  var purchaseOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * This is a required property. The seats property is the number of user
     * seat licenses.
     */
-  var seats: js.UndefOr[SchemaSeats] = js.native
+  var seats: js.UndefOr[SchemaSeats] = js.undefined
 }
 object SchemaChangePlanRequest {
   

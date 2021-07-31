@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object SystemIdDataAttribute {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "webservices.SystemIdDataAttribute.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.SystemIdDataAttribute = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.SystemIdDataAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.SystemIdDataAttribute]
   
   /**
     * Creates and returns a new SystemIdDataAttribute instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object SystemIdDataAttribute {
     *  6.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "webservices.SystemIdDataAttribute.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.DataEntityBase): typings.mendixmodelsdk.webservicesMod.webservices.SystemIdDataAttribute = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.DataEntityBase): typings.mendixmodelsdk.webservicesMod.webservices.SystemIdDataAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.SystemIdDataAttribute]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.SystemIdDataAttribute.structureTypeName")

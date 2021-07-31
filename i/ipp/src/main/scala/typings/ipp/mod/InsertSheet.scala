@@ -2,19 +2,17 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertSheet extends StObject {
   
-  var `insert-after-page-number`: js.UndefOr[Double] = js.native
+  var `insert-after-page-number`: js.UndefOr[Double] = js.undefined
   
-  var `insert-count`: js.UndefOr[Double] = js.native
+  var `insert-count`: js.UndefOr[Double] = js.undefined
   
-  var media: js.UndefOr[Media] = js.native
+  var media: js.UndefOr[Media] = js.undefined
   
-  var `media-col`: js.UndefOr[MediaInterface] = js.native
+  var `media-col`: js.UndefOr[MediaInterface] = js.undefined
 }
 object InsertSheet {
   

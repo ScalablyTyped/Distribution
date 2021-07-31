@@ -3,12 +3,13 @@ package typings.sharepoint.SP
 import typings.sharepoint.SP.Utilities.SPWOPIFrameAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an item or row in a list. */
 @js.native
-trait ListItem[T] extends SecurableObject {
+trait ListItem[T]
+  extends StObject
+     with SecurableObject {
   
   /** Deletes the list item */
   def deleteObject(): Unit = js.native
@@ -61,7 +62,7 @@ trait ListItem[T] extends SecurableObject {
   def get_item[K /* <: /* keyof T */ String */](fieldInternalName: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   
   /** Get the list in which the item resides. */
-  def get_parentList(): List[_] = js.native
+  def get_parentList(): List[js.Any] = js.native
   
   /** Sets the value of the field for the list item based on an implementation specific transformation of the value. */
   def parseAndSetFieldValue(fieldInternalName: String, value: String): Unit = js.native

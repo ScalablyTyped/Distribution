@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Storage.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the language of a property, as a BCP-47 language code. */
-@js.native
 trait ValueAndLanguage extends StObject {
   
   /** Gets or sets the language of the property value, specified as a BCP-47 language code. */
-  var language: String = js.native
+  var language: String
   
   /** Gets or sets the property value for the current ValueAndLanguage . */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ValueAndLanguage {
   

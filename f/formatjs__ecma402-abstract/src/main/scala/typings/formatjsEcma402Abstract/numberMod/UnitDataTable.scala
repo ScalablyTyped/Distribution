@@ -3,15 +3,13 @@ package typings.formatjsEcma402Abstract.numberMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnitDataTable extends StObject {
   
-  var compound: Record[String, CompoundUnitData] = js.native
+  var compound: Record[String, CompoundUnitData]
   
-  var simple: Record[String, UnitData] = js.native
+  var simple: Record[String, UnitData]
 }
 object UnitDataTable {
   

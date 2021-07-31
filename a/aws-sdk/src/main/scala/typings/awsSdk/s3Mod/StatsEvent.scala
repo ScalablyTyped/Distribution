@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatsEvent extends StObject {
   
   /**
     * The Stats event details.
     */
-  var Details: js.UndefOr[Stats] = js.native
+  var Details: js.UndefOr[Stats] = js.undefined
 }
 object StatsEvent {
   

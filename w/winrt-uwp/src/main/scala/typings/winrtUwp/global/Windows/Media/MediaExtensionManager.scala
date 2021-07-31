@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Registers a media parser or codec. */
@@ -10,4 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Creates a new MediaExtensionManager object that is used to register a media parser or codec. */
 class MediaExtensionManager ()
-  extends typings.winrtUwp.Windows.Media.MediaExtensionManager
+  extends StObject
+     with typings.winrtUwp.Windows.Media.MediaExtensionManager

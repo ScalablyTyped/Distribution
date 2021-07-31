@@ -5,33 +5,33 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface to access the palette of a color-indexed bitmap.
   * @since OOo 2.0
   */
-@js.native
-trait XBitmapPalette extends XInterface {
+trait XBitmapPalette
+  extends StObject
+     with XInterface {
   
   /**
     * Query associated color space.
     * @returns the color space that is associated with this palette.
     */
-  val ColorSpace: XColorSpace = js.native
+  val ColorSpace: XColorSpace
   
   /**
     * Request the number of palette entries available.
     * @returns the number of entries in this palette.
     */
-  val NumberOfEntries: Double = js.native
+  val NumberOfEntries: Double
   
   /**
     * Query associated color space.
     * @returns the color space that is associated with this palette.
     */
-  def getColorSpace(): XColorSpace = js.native
+  def getColorSpace(): XColorSpace
   
   /**
     * Request the color for the given palette entry.
@@ -40,13 +40,13 @@ trait XBitmapPalette extends XInterface {
     * @returns `TRUE` , if the given palette entry should be displayed opaque, and `FALSE` if the entry should be displayed transparent. This is sometimes used
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is smaller than zero or larger than {@link XBitmapPalette.getNumberOfEntries()} -1.
     */
-  def getIndex(entry: js.Array[SeqEquiv[ColorComponent]], nIndex: Double): Boolean = js.native
+  def getIndex(entry: js.Array[SeqEquiv[ColorComponent]], nIndex: Double): Boolean
   
   /**
     * Request the number of palette entries available.
     * @returns the number of entries in this palette.
     */
-  def getNumberOfEntries(): Double = js.native
+  def getNumberOfEntries(): Double
   
   /**
     * Set the color for the given palette entry.
@@ -57,7 +57,7 @@ trait XBitmapPalette extends XInterface {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is smaller than zero or larger than {@link XBitmapPalette.getNumberOfEntries()} -1.
     * @throws com::sun::star::lang::IllegalArgumentException if the given sequence of color components does not match the associated bitmap's device color format.
     */
-  def setIndex(color: SeqEquiv[ColorComponent], transparency: Boolean, nIndex: Double): Boolean = js.native
+  def setIndex(color: SeqEquiv[ColorComponent], transparency: Boolean, nIndex: Double): Boolean
 }
 object XBitmapPalette {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStreamingDistributionWithTagsRequest extends StObject {
   
   /**
     *  The streaming distribution's configuration information. 
     */
-  var StreamingDistributionConfigWithTags: typings.awsSdk.cloudfrontMod.StreamingDistributionConfigWithTags = js.native
+  var StreamingDistributionConfigWithTags: typings.awsSdk.cloudfrontMod.StreamingDistributionConfigWithTags
 }
 object CreateStreamingDistributionWithTagsRequest {
   

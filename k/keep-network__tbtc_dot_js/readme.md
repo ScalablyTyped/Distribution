@@ -10,9 +10,9 @@ tbtc.js provides JS bindings to the tBTC system that establishes a TBTC ERC20 to
 | ------------------ | :-------------: |
 | Full name          | @keep-network/tbtc.js |
 | Keywords           | - |
-| # releases         | 75 |
+| # releases         | 84 |
 | # dependents       | 0 |
-| # downloads        | 8053 |
+| # downloads        | 10108 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEndpointAttributesInput extends StObject {
   
   /**
     * EndpointArn for GetEndpointAttributes input.
     */
-  var EndpointArn: String = js.native
+  var EndpointArn: String
 }
 object GetEndpointAttributesInput {
   

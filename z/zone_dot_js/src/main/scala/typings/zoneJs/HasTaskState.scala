@@ -2,19 +2,17 @@ package typings.zoneJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasTaskState extends StObject {
   
-  var change: TaskType = js.native
+  var change: TaskType
   
-  var eventTask: Boolean = js.native
+  var eventTask: Boolean
   
-  var macroTask: Boolean = js.native
+  var macroTask: Boolean
   
-  var microTask: Boolean = js.native
+  var microTask: Boolean
 }
 object HasTaskState {
   

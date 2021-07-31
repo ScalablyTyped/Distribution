@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditSpecificationRequest extends StObject {
   
   /**
     * The credit option for CPU usage of a T2, T3, or T3a instance. Valid values are standard and unlimited.
     */
-  var CpuCredits: String = js.native
+  var CpuCredits: String
 }
 object CreditSpecificationRequest {
   

@@ -3,23 +3,21 @@ package typings.materialIconButton
 import typings.materialIconButton.typesMod.MDCIconButtonToggleEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ARIALABEL extends StObject {
     
-    var ARIA_LABEL: String = js.native
+    var ARIA_LABEL: String
     
-    var ARIA_PRESSED: String = js.native
+    var ARIA_PRESSED: String
     
-    var CHANGE_EVENT: String = js.native
+    var CHANGE_EVENT: String
     
-    var DATA_ARIA_LABEL_OFF: String = js.native
+    var DATA_ARIA_LABEL_OFF: String
     
-    var DATA_ARIA_LABEL_ON: String = js.native
+    var DATA_ARIA_LABEL_ON: String
   }
   object ARIALABEL {
     
@@ -55,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ICONBUTTONON extends StObject {
     
-    var ICON_BUTTON_ON: String = js.native
+    var ICON_BUTTON_ON: String
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object ICONBUTTONON {
     
@@ -82,20 +79,19 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/icon-button.@material/icon-button/adapter.MDCIconButtonToggleAdapter> */
-  @js.native
   trait PartialMDCIconButtonToggl extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var getAttr: js.UndefOr[js.Function1[/* attrName */ String, String | Null]] = js.native
+    var getAttr: js.UndefOr[js.Function1[/* attrName */ String, String | Null]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var notifyChange: js.UndefOr[js.Function1[/* evtData */ MDCIconButtonToggleEventDetail, Unit]] = js.native
+    var notifyChange: js.UndefOr[js.Function1[/* evtData */ MDCIconButtonToggleEventDetail, Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setAttr: js.UndefOr[js.Function2[/* attrName */ String, /* attrValue */ String, Unit]] = js.native
+    var setAttr: js.UndefOr[js.Function2[/* attrName */ String, /* attrValue */ String, Unit]] = js.undefined
   }
   object PartialMDCIconButtonToggl {
     

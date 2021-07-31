@@ -2,26 +2,24 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateReportGroupInput extends StObject {
   
   /**
     *  The ARN of the report group to update. 
     */
-  var arn: NonEmptyString = js.native
+  var arn: NonEmptyString
   
   /**
     *  Used to specify an updated export type. Valid values are:     S3: The report results are exported to an S3 bucket.     NO_EXPORT: The report results are not exported.   
     */
-  var exportConfig: js.UndefOr[ReportExportConfig] = js.native
+  var exportConfig: js.UndefOr[ReportExportConfig] = js.undefined
   
   /**
     *  An updated list of tag key and value pairs associated with this report group.  These tags are available for use by AWS services that support AWS CodeBuild report group tags.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object UpdateReportGroupInput {
   

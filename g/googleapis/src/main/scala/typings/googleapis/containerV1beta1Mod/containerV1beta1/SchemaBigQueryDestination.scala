@@ -2,19 +2,17 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters for using BigQuery as the destination of resource usage export.
   */
-@js.native
 trait SchemaBigQueryDestination extends StObject {
   
   /**
     * The ID of a BigQuery Dataset.
     */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
 }
 object SchemaBigQueryDestination {
   

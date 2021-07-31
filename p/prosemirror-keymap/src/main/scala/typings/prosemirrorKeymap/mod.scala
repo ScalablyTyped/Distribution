@@ -7,16 +7,17 @@ import typings.prosemirrorView.mod.EditorView
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("prosemirror-keymap", "keydownHandler")
+  @JSImport("prosemirror-keymap", JSImport.Namespace)
   @js.native
-  def keydownHandler[S /* <: Schema[_, _] */](bindings: Keymap[S]): js.Function2[/* view */ EditorView[_], /* event */ KeyboardEvent, Boolean] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("prosemirror-keymap", "keymap")
-  @js.native
-  def keymap[S /* <: Schema[_, _] */](bindings: Keymap[S]): Plugin[_, _] = js.native
+  @scala.inline
+  def keydownHandler[S /* <: Schema[js.Any, js.Any] */](bindings: Keymap[S]): js.Function2[/* view */ EditorView[js.Any], /* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("keydownHandler")(bindings.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* view */ EditorView[js.Any], /* event */ KeyboardEvent, Boolean]]
+  
+  @scala.inline
+  def keymap[S /* <: Schema[js.Any, js.Any] */](bindings: Keymap[S]): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("keymap")(bindings.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Any, js.Any]]
 }

@@ -3,75 +3,61 @@ package typings.findConfig
 import typings.findConfig.anon.Cwd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): String | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String | Null]
+  @scala.inline
+  def apply(filename: String): String | Null = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def apply(filename: String, options: Options): String | Null = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def apply(filename: Unit, options: Options): String | Null = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  
   @JSImport("find-config", JSImport.Namespace)
   @js.native
-  def apply(): String | Null = js.native
-  @JSImport("find-config", JSImport.Namespace)
-  @js.native
-  def apply(filename: js.UndefOr[scala.Nothing], options: Options): String | Null = js.native
-  @JSImport("find-config", JSImport.Namespace)
-  @js.native
-  def apply(filename: String): String | Null = js.native
-  @JSImport("find-config", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, options: Options): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("find-config", "obj")
-  @js.native
-  def obj(): Cwd | Null = js.native
-  @JSImport("find-config", "obj")
-  @js.native
-  def obj(filename: js.UndefOr[scala.Nothing], options: Options): Cwd | Null = js.native
-  @JSImport("find-config", "obj")
-  @js.native
-  def obj(filename: String): Cwd | Null = js.native
-  @JSImport("find-config", "obj")
-  @js.native
-  def obj(filename: String, options: Options): Cwd | Null = js.native
+  @scala.inline
+  def obj(): Cwd | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")().asInstanceOf[Cwd | Null]
+  @scala.inline
+  def obj(filename: String): Cwd | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(filename.asInstanceOf[js.Any]).asInstanceOf[Cwd | Null]
+  @scala.inline
+  def obj(filename: String, options: Options): Cwd | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cwd | Null]
+  @scala.inline
+  def obj(filename: Unit, options: Options): Cwd | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cwd | Null]
   
-  @JSImport("find-config", "read")
-  @js.native
-  def read(): String | Null = js.native
-  @JSImport("find-config", "read")
-  @js.native
-  def read(filename: js.UndefOr[scala.Nothing], options: ReadOptions): String | Null = js.native
-  @JSImport("find-config", "read")
-  @js.native
-  def read(filename: String): String | Null = js.native
-  @JSImport("find-config", "read")
-  @js.native
-  def read(filename: String, options: ReadOptions): String | Null = js.native
+  @scala.inline
+  def read(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[String | Null]
+  @scala.inline
+  def read(filename: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(filename.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def read(filename: String, options: ReadOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def read(filename: Unit, options: ReadOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("find-config", "require")
-  @js.native
-  def require(): js.Any = js.native
-  @JSImport("find-config", "require")
-  @js.native
-  def require(filename: js.UndefOr[scala.Nothing], options: Options): js.Any = js.native
-  @JSImport("find-config", "require")
-  @js.native
-  def require(filename: String): js.Any = js.native
-  @JSImport("find-config", "require")
-  @js.native
-  def require(filename: String, options: Options): js.Any = js.native
+  @scala.inline
+  def require(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")().asInstanceOf[js.Any]
+  @scala.inline
+  def require(filename: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def require(filename: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def require(filename: Unit, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var home: js.UndefOr[Boolean] = js.native
+    var home: js.UndefOr[Boolean] = js.undefined
     
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -116,12 +102,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait ReadOptions extends Options {
+  trait ReadOptions
+    extends StObject
+       with Options {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object ReadOptions {
     

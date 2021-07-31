@@ -3,16 +3,16 @@ package typings.jestMessageUtil
 import typings.stackUtils.mod.StackData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
-  trait Frame extends StackData {
+  trait Frame
+    extends StObject
+       with StackData {
     
     @JSName("file")
-    var file_Frame: String = js.native
+    var file_Frame: String
   }
   object Frame {
     

@@ -5,7 +5,6 @@ import typings.cathoQuantum.anon.Content
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionMod {
@@ -17,14 +16,13 @@ object accordionMod {
   
   type Accordion = Component[AccordionProps, js.Object, js.Any]
   
-  @js.native
   trait AccordionProps extends StObject {
     
-    var items: js.Array[Content] = js.native
+    var items: js.Array[Content]
     
-    var keepOnlyOneOpen: js.UndefOr[Boolean] = js.native
+    var keepOnlyOneOpen: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[BaseFontSize] = js.native
+    var theme: js.UndefOr[BaseFontSize] = js.undefined
   }
   object AccordionProps {
     

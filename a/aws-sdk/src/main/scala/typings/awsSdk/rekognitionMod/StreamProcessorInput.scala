@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamProcessorInput extends StObject {
   
   /**
     * The Kinesis video stream input stream for the source streaming video.
     */
-  var KinesisVideoStream: js.UndefOr[typings.awsSdk.rekognitionMod.KinesisVideoStream] = js.native
+  var KinesisVideoStream: js.UndefOr[typings.awsSdk.rekognitionMod.KinesisVideoStream] = js.undefined
 }
 object StreamProcessorInput {
   

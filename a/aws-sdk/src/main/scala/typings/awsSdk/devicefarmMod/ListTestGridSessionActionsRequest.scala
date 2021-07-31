@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTestGridSessionActionsRequest extends StObject {
   
   /**
     * The maximum number of sessions to return per response.
     */
-  var maxResult: js.UndefOr[MaxPageSize] = js.native
+  var maxResult: js.UndefOr[MaxPageSize] = js.undefined
   
   /**
     * Pagination token.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The ARN of the session to retrieve.
     */
-  var sessionArn: DeviceFarmArn = js.native
+  var sessionArn: DeviceFarmArn
 }
 object ListTestGridSessionActionsRequest {
   

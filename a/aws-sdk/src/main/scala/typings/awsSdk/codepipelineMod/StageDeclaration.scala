@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StageDeclaration extends StObject {
   
   /**
     * The actions included in a stage.
     */
-  var actions: StageActionDeclarationList = js.native
+  var actions: StageActionDeclarationList
   
   /**
     * Reserved for future use.
     */
-  var blockers: js.UndefOr[StageBlockerDeclarationList] = js.native
+  var blockers: js.UndefOr[StageBlockerDeclarationList] = js.undefined
   
   /**
     * The name of the stage.
     */
-  var name: StageName = js.native
+  var name: StageName
 }
 object StageDeclaration {
   

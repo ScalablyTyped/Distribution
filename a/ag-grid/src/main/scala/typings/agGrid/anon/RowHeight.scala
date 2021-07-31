@@ -2,15 +2,13 @@ package typings.agGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowHeight extends StObject {
   
-  var rowHeight: Double = js.native
+  var rowHeight: Double
   
-  var rowTop: Double = js.native
+  var rowTop: Double
 }
 object RowHeight {
   

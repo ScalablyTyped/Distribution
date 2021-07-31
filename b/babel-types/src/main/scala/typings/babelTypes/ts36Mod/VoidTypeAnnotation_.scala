@@ -3,25 +3,24 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.VoidTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoidTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowBaseAnnotation
      with FlowTypeAnnotation {
   
   @JSName("type")
-  var type_VoidTypeAnnotation_ : VoidTypeAnnotation = js.native
+  var type_VoidTypeAnnotation_ : VoidTypeAnnotation
 }
 object VoidTypeAnnotation_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, `type`: VoidTypeAnnotation): VoidTypeAnnotation_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double): VoidTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VoidTypeAnnotation")
     __obj.asInstanceOf[VoidTypeAnnotation_]
   }
   

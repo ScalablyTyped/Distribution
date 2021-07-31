@@ -3,21 +3,19 @@ package typings.winrt.Windows.Media.PlayTo
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlayToSourceSelectedEventArgs extends StObject {
   
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  var icon: IRandomAccessStreamWithContentType = js.native
+  var icon: IRandomAccessStreamWithContentType
   
-  var supportsAudio: Boolean = js.native
+  var supportsAudio: Boolean
   
-  var supportsImage: Boolean = js.native
+  var supportsImage: Boolean
   
-  var supportsVideo: Boolean = js.native
+  var supportsVideo: Boolean
 }
 object IPlayToSourceSelectedEventArgs {
   

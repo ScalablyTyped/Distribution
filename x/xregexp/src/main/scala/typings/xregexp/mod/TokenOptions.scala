@@ -2,7 +2,6 @@ package typings.xregexp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The options object for adding a token to XRegExp.
   */
-@js.native
 trait TokenOptions extends StObject {
   
   /**
     * Single-character flag that triggers the token. This also registers the
     * flag, which prevents XRegExp from throwing an 'unknown flag' error when the flag is used.
     */
-  var flag: js.UndefOr[TokenFlag] = js.native
+  var flag: js.UndefOr[TokenFlag] = js.undefined
   
   /**
     * Single character that occurs at the beginning of any successful match
@@ -25,26 +23,26 @@ trait TokenOptions extends StObject {
     * you provide an erroneous value. However, providing it can increase the token's performance
     * since the token can be skipped at any positions where this character doesn't appear.
     */
-  var leadChar: js.UndefOr[String] = js.native
+  var leadChar: js.UndefOr[String] = js.undefined
   
   /**
     * Any custom flags checked for within the token `handler` that are
     * not required to trigger the token. This registers the flags, to prevent XRegExp from
     * throwing an 'unknown flag' error when any of the flags are used.
     */
-  var optionalFlags: js.UndefOr[String] = js.native
+  var optionalFlags: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the `handler` function's output should not be treated as
     * final, and instead be reparseable by other tokens (including the current token). Allows
     * token chaining or deferring.
     */
-  var reparse: js.UndefOr[Boolean] = js.native
+  var reparse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Scope where the token applies: `default`, `class`, or `all`.
     */
-  var scope: js.UndefOr[TokenScopeOption] = js.native
+  var scope: js.UndefOr[TokenScopeOption] = js.undefined
 }
 object TokenOptions {
   

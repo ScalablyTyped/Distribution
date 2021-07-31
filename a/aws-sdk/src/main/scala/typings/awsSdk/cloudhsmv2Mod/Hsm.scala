@@ -2,51 +2,49 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hsm extends StObject {
   
   /**
     * The Availability Zone that contains the HSM.
     */
-  var AvailabilityZone: js.UndefOr[ExternalAz] = js.native
+  var AvailabilityZone: js.UndefOr[ExternalAz] = js.undefined
   
   /**
     * The identifier (ID) of the cluster that contains the HSM.
     */
-  var ClusterId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.ClusterId] = js.native
+  var ClusterId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.ClusterId] = js.undefined
   
   /**
     * The identifier (ID) of the HSM's elastic network interface (ENI).
     */
-  var EniId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.EniId] = js.native
+  var EniId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.EniId] = js.undefined
   
   /**
     * The IP address of the HSM's elastic network interface (ENI).
     */
-  var EniIp: js.UndefOr[IpAddress] = js.native
+  var EniIp: js.UndefOr[IpAddress] = js.undefined
   
   /**
     * The HSM's identifier (ID).
     */
-  var HsmId: typings.awsSdk.cloudhsmv2Mod.HsmId = js.native
+  var HsmId: typings.awsSdk.cloudhsmv2Mod.HsmId
   
   /**
     * The HSM's state.
     */
-  var State: js.UndefOr[HsmState] = js.native
+  var State: js.UndefOr[HsmState] = js.undefined
   
   /**
     * A description of the HSM's state.
     */
-  var StateMessage: js.UndefOr[String] = js.native
+  var StateMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The subnet that contains the HSM's elastic network interface (ENI).
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.SubnetId] = js.undefined
 }
 object Hsm {
   

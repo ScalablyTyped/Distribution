@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Regex extends StObject {
   
-  var regex: scala.Double = js.native
+  var regex: scala.Double
   
-  var variable: scala.Double = js.native
+  var variable: scala.Double
 }
 object Regex {
   

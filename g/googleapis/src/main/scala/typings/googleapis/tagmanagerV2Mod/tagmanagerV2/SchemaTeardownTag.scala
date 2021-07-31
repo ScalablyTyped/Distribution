@@ -2,14 +2,12 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a tag that fires after another tag in order to tear down
   * dependencies.
   */
-@js.native
 trait SchemaTeardownTag extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaTeardownTag extends StObject {
     * successfully. If false, fire the teardown tag regardless of main tag
     * firing status.
     */
-  var stopTeardownOnFailure: js.UndefOr[Boolean] = js.native
+  var stopTeardownOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the teardown tag.
     */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object SchemaTeardownTag {
   

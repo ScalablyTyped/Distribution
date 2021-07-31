@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,73 +9,72 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * locations, and various options for computing metrics.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest Maps JavaScript API}
   */
-@js.native
 trait DistanceMatrixRequest extends StObject {
   
   /**
     * If true, instructs the Distance Matrix service to avoid ferries where possible.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.avoidFerries Maps JavaScript API}
     */
-  var avoidFerries: js.UndefOr[Boolean] = js.native
+  var avoidFerries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, instructs the Distance Matrix service to avoid highways where possible.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.avoidHighways Maps JavaScript API}
     */
-  var avoidHighways: js.UndefOr[Boolean] = js.native
+  var avoidHighways: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, instructs the Distance Matrix service to avoid toll roads where possible.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.avoidTolls Maps JavaScript API}
     */
-  var avoidTolls: js.UndefOr[Boolean] = js.native
+  var avoidTolls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array containing destination address strings, or {@link LatLng}, or {@link Place} objects, to which to
     * calculate distance and time.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.destinations Maps JavaScript API}
     */
-  var destinations: js.Array[String | LatLng | LatLngLiteral | Place] = js.native
+  var destinations: js.Array[String | LatLng | LatLngLiteral | Place]
   
   /**
     * Settings that apply only to requests where {@link travelMode} is {@link TravelMode.DRIVING DRIVING}. This
     * object will have no effect for other travel modes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.drivingOptions Maps JavaScript API}
     */
-  var drivingOptions: js.UndefOr[DrivingOptions] = js.native
+  var drivingOptions: js.UndefOr[DrivingOptions] = js.undefined
   
   /**
     * An array containing origin address strings, or {@link LatLng}, or {@link Place} objects, from which to
     * calculate distance and time.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.origins Maps JavaScript API}
     */
-  var origins: js.Array[String | LatLng | LatLngLiteral | Place] = js.native
+  var origins: js.Array[String | LatLng | LatLngLiteral | Place]
   
   /**
     * Region code used as a bias for geocoding requests.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.region Maps JavaScript API}
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Settings that apply only to requests where {@link travelMode} is {@link TravelMode.TRANSIT TRANSIT}. This
     * object will have no effect for other travel modes.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.transitOptions Maps JavaScript API}
     */
-  var transitOptions: js.UndefOr[TransitOptions] = js.native
+  var transitOptions: js.UndefOr[TransitOptions] = js.undefined
   
   /**
     * Type of routing requested.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.travelMode Maps JavaScript API}
     */
-  var travelMode: TravelMode = js.native
+  var travelMode: TravelMode
   
   /**
     * Preferred unit system to use when displaying distance.
     * @default UnitSystem.METRIC
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest.unitSystem Maps JavaScript API}
     */
-  var unitSystem: js.UndefOr[UnitSystem] = js.native
+  var unitSystem: js.UndefOr[UnitSystem] = js.undefined
 }
 object DistanceMatrixRequest {
   

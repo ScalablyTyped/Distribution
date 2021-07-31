@@ -2,15 +2,13 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelaunchOptions extends StObject {
   
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
-  var execPath: js.UndefOr[String] = js.native
+  var execPath: js.UndefOr[String] = js.undefined
 }
 object RelaunchOptions {
   

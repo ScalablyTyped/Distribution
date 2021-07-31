@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppearTransition extends StObject {
   
-  var appearTransition: Boolean = js.native
+  var appearTransition: Boolean
   
-  var percent: Double = js.native
+  var percent: Double
   
-  var position: String = js.native
+  var position: String
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
   
-  var unfilled: Boolean = js.native
+  var unfilled: Boolean
 }
 object AppearTransition {
   
@@ -27,7 +25,7 @@ object AppearTransition {
     appearTransition: Boolean,
     percent: Double,
     position: String,
-    styles: StringDictionary[RegisteredStyle[_]],
+    styles: StringDictionary[RegisteredStyle[js.Any]],
     unfilled: Boolean
   ): AppearTransition = {
     val __obj = js.Dynamic.literal(appearTransition = appearTransition.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], unfilled = unfilled.asInstanceOf[js.Any])
@@ -47,7 +45,7 @@ object AppearTransition {
     def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnfilled(value: Boolean): Self = StObject.set(x, "unfilled", value.asInstanceOf[js.Any])

@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sort extends StObject {
   
   /**
     * For ListEntities, supported attributes include LastModifiedDate (default), Visibility, EntityId, and Name. For ListChangeSets, supported attributes include StartTime and EndTime.
     */
-  var SortBy: js.UndefOr[typings.awsSdk.marketplacecatalogMod.SortBy] = js.native
+  var SortBy: js.UndefOr[typings.awsSdk.marketplacecatalogMod.SortBy] = js.undefined
   
   /**
     * The sorting order. Can be ASCENDING or DESCENDING. The default value is DESCENDING.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.marketplacecatalogMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.marketplacecatalogMod.SortOrder] = js.undefined
 }
 object Sort {
   

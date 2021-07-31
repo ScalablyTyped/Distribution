@@ -2,25 +2,23 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response containing the roles defined under a resource.
   */
-@js.native
 trait SchemaListRolesResponse extends StObject {
   
   /**
     * To retrieve the next page of results, set `ListRolesRequest.page_token`
     * to this value.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The Roles defined on this resource.
     */
-  var roles: js.UndefOr[js.Array[SchemaRole]] = js.native
+  var roles: js.UndefOr[js.Array[SchemaRole]] = js.undefined
 }
 object SchemaListRolesResponse {
   

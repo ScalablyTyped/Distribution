@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends StObject {
   
   /** The carrier handling the shipment. See `shipments[].carrier` in the Orders resource representation for a list of acceptable values. */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /** Required. The ID of the shipment. This is assigned by the merchant and is unique to each shipment. */
-  var shipmentId: js.UndefOr[String] = js.native
+  var shipmentId: js.UndefOr[String] = js.undefined
   
   /** The tracking ID for the shipment. */
-  var trackingId: js.UndefOr[String] = js.native
+  var trackingId: js.UndefOr[String] = js.undefined
 }
 object OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo {
   

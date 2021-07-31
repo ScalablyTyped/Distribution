@@ -3,23 +3,21 @@ package typings.braintree.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationAdjustment extends StObject {
   
-  var amount: String = js.native
+  var amount: String
   
-  var processorResponseCode: String = js.native
+  var processorResponseCode: String
   
-  var processorResponseText: String = js.native
+  var processorResponseText: String
   
-  var processorResponseType: String = js.native
+  var processorResponseType: String
   
-  var success: Boolean = js.native
+  var success: Boolean
   
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object AuthorizationAdjustment {
   

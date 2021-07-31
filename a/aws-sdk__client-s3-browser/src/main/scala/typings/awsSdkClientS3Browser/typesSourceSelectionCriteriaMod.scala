@@ -4,12 +4,10 @@ import typings.awsSdkClientS3Browser.typesSseKmsEncryptedObjectsMod.SseKmsEncryp
 import typings.awsSdkClientS3Browser.typesSseKmsEncryptedObjectsMod.UnmarshalledSseKmsEncryptedObjects
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSourceSelectionCriteriaMod {
   
-  @js.native
   trait SourceSelectionCriteria extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object typesSourceSelectionCriteriaMod {
       */
     var SseKmsEncryptedObjects: js.UndefOr[
         typings.awsSdkClientS3Browser.typesSseKmsEncryptedObjectsMod.SseKmsEncryptedObjects
-      ] = js.native
+      ] = js.undefined
   }
   object SourceSelectionCriteria {
     
@@ -38,14 +36,15 @@ object typesSourceSelectionCriteriaMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSourceSelectionCriteria extends SourceSelectionCriteria {
+  trait UnmarshalledSourceSelectionCriteria
+    extends StObject
+       with SourceSelectionCriteria {
     
     /**
       * <p> Container for filter information of selection of KMS Encrypted S3 objects. The element is required if you include <code>SourceSelectionCriteria</code> in the replication configuration. </p>
       */
     @JSName("SseKmsEncryptedObjects")
-    var SseKmsEncryptedObjects_UnmarshalledSourceSelectionCriteria: js.UndefOr[UnmarshalledSseKmsEncryptedObjects] = js.native
+    var SseKmsEncryptedObjects_UnmarshalledSourceSelectionCriteria: js.UndefOr[UnmarshalledSseKmsEncryptedObjects] = js.undefined
   }
   object UnmarshalledSourceSelectionCriteria {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMitigationActionRequest extends StObject {
   
   /**
     * The friendly name for the mitigation action. You can't change the name by using UpdateMitigationAction. Instead, you must delete and re-create the mitigation action with the new name.
     */
-  var actionName: MitigationActionName = js.native
+  var actionName: MitigationActionName
   
   /**
     * Defines the type of action and the parameters for that action.
     */
-  var actionParams: js.UndefOr[MitigationActionParams] = js.native
+  var actionParams: js.UndefOr[MitigationActionParams] = js.undefined
   
   /**
     * The ARN of the IAM role that is used to apply the mitigation action.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object UpdateMitigationActionRequest {
   

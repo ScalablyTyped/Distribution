@@ -7,7 +7,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,9 +18,9 @@ object mod extends Shortcut {
   @js.native
   trait AbsoluteUrl extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
-    def attach(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
+    def attach(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
   }
   
   type _To = AbsoluteUrl
@@ -31,10 +30,9 @@ object mod extends Shortcut {
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      def absoluteUrl(): String = js.native
+      def absoluteUrl(): String
     }
     object Request {
       

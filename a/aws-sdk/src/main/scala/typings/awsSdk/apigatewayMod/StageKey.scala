@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StageKey extends StObject {
   
   /**
     * The string identifier of the associated RestApi.
     */
-  var restApiId: js.UndefOr[String] = js.native
+  var restApiId: js.UndefOr[String] = js.undefined
   
   /**
     * The stage name associated with the stage key.
     */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
 }
 object StageKey {
   

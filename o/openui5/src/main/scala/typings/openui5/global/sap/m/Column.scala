@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.Column")
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param mSettings initial settings for the new control
   */
 class Column ()
-  extends typings.openui5.sap.m.Column {
+  extends StObject
+     with typings.openui5.sap.m.Column {
   def this(mSettings: js.Any) = this()
   /**
     * Constructor for a new Column.Accepts an object literal <code>mSettings</code> that defines

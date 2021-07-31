@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicemanagementMod {
+  
+  @JSImport("googleapis/build/src/apis/servicemanagement", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object servicemanagementMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/servicemanagement", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/servicemanagement", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object servicemanagementMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/servicemanagement", "servicemanagement")
-  @js.native
-  def servicemanagement(options: Options): Servicemanagement = js.native
-  @JSImport("googleapis/build/src/apis/servicemanagement", "servicemanagement")
-  @js.native
-  def servicemanagement_v1(version: v1): Servicemanagement = js.native
+  @scala.inline
+  def servicemanagement(options: Options): Servicemanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("servicemanagement")(options.asInstanceOf[js.Any]).asInstanceOf[Servicemanagement]
+  
+  @scala.inline
+  def servicemanagement_v1(version: v1): Servicemanagement = ^.asInstanceOf[js.Dynamic].applyDynamic("servicemanagement")(version.asInstanceOf[js.Any]).asInstanceOf[Servicemanagement]
 }

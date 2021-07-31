@@ -6,12 +6,12 @@ import typings.echarts.anon.ExcludeComponents
 import typings.echarts.echarts.EChartOption.Series
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECharts extends js.Object {
+trait ECharts extends StObject {
   
   /**
     * The method is used in rendering millions of data
@@ -41,9 +41,9 @@ trait ECharts extends js.Object {
     * @param {string | any[]} value The value to be judged, in pixel
     *     coordinate system.
     */
-  def containPixel(finder: EChartsConvertFinder, value: js.Array[_]): Boolean = js.native
+  def containPixel(finder: EChartsConvertFinder, value: js.Array[js.Any]): Boolean = js.native
   
-  def convertFromPixel(finder: EChartsConvertFinder, value: String): js.Array[_] | String = js.native
+  def convertFromPixel(finder: EChartsConvertFinder, value: String): js.Array[js.Any] | String = js.native
   /**
     * Convert a point from pixel coordinate to logical coordinate
     *     (e.g., in geo, cartesian, graph, ...).
@@ -54,7 +54,7 @@ trait ECharts extends js.Object {
     *     coordinate system.
     * @param {string | any[]} value The value to be converted.
     */
-  def convertFromPixel(finder: EChartsConvertFinder, value: js.Array[_]): js.Array[_] | String = js.native
+  def convertFromPixel(finder: EChartsConvertFinder, value: js.Array[js.Any]): js.Array[js.Any] | String = js.native
   
   /**
     * Convert a point from logical coordinate (e.g., in geo, cartesian,
@@ -66,8 +66,8 @@ trait ECharts extends js.Object {
     *     coordinate system.
     * @param {string | any[]} value The value to be converted.
     */
-  def convertToPixel(finder: EChartsConvertFinder, value: String): String | js.Array[_] = js.native
-  def convertToPixel(finder: EChartsConvertFinder, value: js.Array[_]): String | js.Array[_] = js.native
+  def convertToPixel(finder: EChartsConvertFinder, value: String): String | js.Array[js.Any] = js.native
+  def convertToPixel(finder: EChartsConvertFinder, value: js.Array[js.Any]): String | js.Array[js.Any] = js.native
   
   /**
     * Triggers chart action, like chart switch `legendToggleSelect`,
@@ -316,14 +316,14 @@ trait ECharts extends js.Object {
     *     immediately
     */
   def setOption(option: EChartOption[Series]): Unit = js.native
-  def setOption(option: EChartOption[Series], notMerge: js.UndefOr[scala.Nothing], lazyUpdate: Boolean): Unit = js.native
   def setOption(option: EChartOption[Series], notMerge: Boolean): Unit = js.native
   def setOption(option: EChartOption[Series], notMerge: Boolean, lazyUpdate: Boolean): Unit = js.native
+  def setOption(option: EChartOption[Series], notMerge: Unit, lazyUpdate: Boolean): Unit = js.native
   def setOption(option: EChartOption[Series], opts: EChartsOptionConfig): Unit = js.native
   def setOption(option: EChartsResponsiveOption): Unit = js.native
-  def setOption(option: EChartsResponsiveOption, notMerge: js.UndefOr[scala.Nothing], lazyUpdate: Boolean): Unit = js.native
   def setOption(option: EChartsResponsiveOption, notMerge: Boolean): Unit = js.native
   def setOption(option: EChartsResponsiveOption, notMerge: Boolean, lazyUpdate: Boolean): Unit = js.native
+  def setOption(option: EChartsResponsiveOption, notMerge: Unit, lazyUpdate: Boolean): Unit = js.native
   
   /**
     * Shows loading animation. You can call this interface manually before
@@ -334,7 +334,7 @@ trait ECharts extends js.Object {
     * @param {EChartsLoadingOption} [opts]
     */
   def showLoading(): Unit = js.native
-  def showLoading(`type`: js.UndefOr[scala.Nothing], opts: EChartsLoadingOption): Unit = js.native
   def showLoading(`type`: String): Unit = js.native
   def showLoading(`type`: String, opts: EChartsLoadingOption): Unit = js.native
+  def showLoading(`type`: Unit, opts: EChartsLoadingOption): Unit = js.native
 }

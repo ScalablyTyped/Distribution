@@ -2,37 +2,37 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Mget[T] extends Generic {
+trait Mget[T]
+  extends StObject
+     with Generic {
   
-  var _source: js.UndefOr[String | js.Array[String]] = js.native
+  var _source: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_include: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_include: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_includes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var realtime: js.UndefOr[Boolean] = js.native
+  var realtime: js.UndefOr[Boolean] = js.undefined
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var stored_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var stored_fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Mget {
   
@@ -43,7 +43,7 @@ object Mget {
   }
   
   @scala.inline
-  implicit class MgetMutableBuilder[Self <: Mget[_], T] (val x: Self with Mget[T]) extends AnyVal {
+  implicit class MgetMutableBuilder[Self <: Mget[?], T] (val x: Self & Mget[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

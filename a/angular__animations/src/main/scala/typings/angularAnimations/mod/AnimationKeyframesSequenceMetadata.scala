@@ -2,16 +2,16 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationKeyframesSequenceMetadata extends AnimationMetadata {
+trait AnimationKeyframesSequenceMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * An array of animation styles.
     */
-  var steps: js.Array[AnimationStyleMetadata] = js.native
+  var steps: js.Array[AnimationStyleMetadata]
 }
 object AnimationKeyframesSequenceMetadata {
   

@@ -2,21 +2,19 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserParams[T] extends StObject {
   
-  var connection: String = js.native
+  var connection: String
   
-  var email: String = js.native
+  var email: String
   
-  var metadata: js.UndefOr[T] = js.native
+  var metadata: js.UndefOr[T] = js.undefined
   
-  var password: String = js.native
+  var password: String
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object CreateUserParams {
   
@@ -27,7 +25,7 @@ object CreateUserParams {
   }
   
   @scala.inline
-  implicit class CreateUserParamsMutableBuilder[Self <: CreateUserParams[_], T] (val x: Self with CreateUserParams[T]) extends AnyVal {
+  implicit class CreateUserParamsMutableBuilder[Self <: CreateUserParams[?], T] (val x: Self & CreateUserParams[T]) extends AnyVal {
     
     @scala.inline
     def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])

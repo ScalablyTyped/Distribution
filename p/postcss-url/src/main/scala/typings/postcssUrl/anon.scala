@@ -6,43 +6,41 @@ import typings.postcssUrl.postcssUrlStrings.xxhash32
 import typings.postcssUrl.postcssUrlStrings.xxhash64
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AbsolutePath extends StObject {
     
     /**
       * Absolute path to asset.
       */
-    var absolutePath: js.UndefOr[String] = js.native
+    var absolutePath: js.UndefOr[String] = js.undefined
     
     /**
       * Hash from URL.
       */
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
     /**
       * URL pathname.
       */
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
     /**
       * Current relative path to asset.
       */
-    var relativePath: js.UndefOr[String] = js.native
+    var relativePath: js.UndefOr[String] = js.undefined
     
     /**
       * Querystring from URL.
       */
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
     /**
       * Original URL.
       */
-    var url: String = js.native
+    var url: String
   }
   object AbsolutePath {
     
@@ -90,23 +88,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Append extends StObject {
     
     /**
       * Append the original filename in resulting filename.
       */
-    var append: js.UndefOr[Boolean] = js.native
+    var append: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hashing method or custom function.
       */
-    var method: js.UndefOr[xxhash32 | xxhash64 | CustomHashFunction] = js.native
+    var method: js.UndefOr[xxhash32 | xxhash64 | CustomHashFunction] = js.undefined
     
     /**
       * Shrink hast to certain length.
       */
-    var shrink: js.UndefOr[Double] = js.native
+    var shrink: js.UndefOr[Double] = js.undefined
   }
   object Append {
     
@@ -142,23 +139,22 @@ object anon {
     }
   }
   
-  @js.native
   trait File extends StObject {
     
     /**
       * File path.
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * PostCSS from option.
       */
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
     /**
       * PostCSS to option.
       */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object File {
     

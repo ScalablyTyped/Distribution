@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "AnimationAction")
@@ -21,7 +20,7 @@ class AnimationAction protected ()
   def this(
     mixer: typings.three.animationMixerMod.AnimationMixer,
     clip: typings.three.animationClipMod.AnimationClip,
-    localRoot: js.UndefOr[scala.Nothing],
+    localRoot: Unit,
     blendMode: typings.three.constantsMod.AnimationBlendMode
   ) = this()
   def this(

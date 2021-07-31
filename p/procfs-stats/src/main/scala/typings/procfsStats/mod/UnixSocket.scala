@@ -2,27 +2,25 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnixSocket extends StObject {
   
-  var Flags: String = js.native
+  var Flags: String
   
-  var Inode: String = js.native
+  var Inode: String
   
-  var Num: String = js.native
+  var Num: String
   
-  var Path: String = js.native
+  var Path: String
   
-  var Protocol: String = js.native
+  var Protocol: String
   
-  var RefCount: String = js.native
+  var RefCount: String
   
-  var St: String = js.native
+  var St: String
   
-  var Type: String = js.native
+  var Type: String
 }
 object UnixSocket {
   

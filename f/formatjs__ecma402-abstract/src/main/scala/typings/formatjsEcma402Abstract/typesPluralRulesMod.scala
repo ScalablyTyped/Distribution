@@ -8,7 +8,6 @@ import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatDigitInternalS
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatRoundingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPluralRulesMod {
@@ -54,14 +53,15 @@ object typesPluralRulesMod {
     def fn(`val`: Double, ord: Boolean): LDMLPluralRule = js.native
   }
   
-  @js.native
-  trait PluralRulesInternal extends NumberFormatDigitInternalSlots {
+  trait PluralRulesInternal
+    extends StObject
+       with NumberFormatDigitInternalSlots {
     
-    var initializedPluralRules: Boolean = js.native
+    var initializedPluralRules: Boolean
     
-    var locale: String = js.native
+    var locale: String
     
-    var `type`: cardinal | ordinal = js.native
+    var `type`: cardinal | ordinal
   }
   object PluralRulesInternal {
     

@@ -8,7 +8,6 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateMod {
@@ -48,11 +47,13 @@ object templateMod {
     
     def renderToString(): String = js.native
     def renderToString(data: js.Any): String = js.native
-    def renderToString(data: js.Any, callback: js.Function2[/* err */ Error | Null, /* result */ String, Unit]): js.UndefOr[scala.Nothing] = js.native
+    def renderToString(data: js.Any, callback: js.Function2[/* err */ Error | Null, /* result */ String, Unit]): Unit = js.native
   }
   
   @js.native
-  trait Template extends Renderable {
+  trait Template
+    extends StObject
+       with Renderable {
     
     def apply(path: String, renderFunc: js.Any, options: js.Any): Template = js.native
     
@@ -64,55 +65,35 @@ object templateMod {
     @JSName("createOut")
     def createOut_MTemplate(): AsyncStream = js.native
     @JSName("createOut")
-    def createOut_MTemplate(
-      globalData: js.UndefOr[scala.Nothing],
-      writer: js.UndefOr[scala.Nothing],
-      parentOut: js.UndefOr[scala.Nothing],
-      buffer: js.Any
-    ): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(globalData: js.UndefOr[scala.Nothing], writer: js.UndefOr[scala.Nothing], parentOut: js.Any): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(
-      globalData: js.UndefOr[scala.Nothing],
-      writer: js.UndefOr[scala.Nothing],
-      parentOut: js.Any,
-      buffer: js.Any
-    ): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(globalData: js.UndefOr[scala.Nothing], writer: js.Any): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(
-      globalData: js.UndefOr[scala.Nothing],
-      writer: js.Any,
-      parentOut: js.UndefOr[scala.Nothing],
-      buffer: js.Any
-    ): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(globalData: js.UndefOr[scala.Nothing], writer: js.Any, parentOut: js.Any): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(globalData: js.UndefOr[scala.Nothing], writer: js.Any, parentOut: js.Any, buffer: js.Any): AsyncStream = js.native
-    @JSName("createOut")
     def createOut_MTemplate(globalData: js.Any): AsyncStream = js.native
     @JSName("createOut")
-    def createOut_MTemplate(
-      globalData: js.Any,
-      writer: js.UndefOr[scala.Nothing],
-      parentOut: js.UndefOr[scala.Nothing],
-      buffer: js.Any
-    ): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(globalData: js.Any, writer: js.UndefOr[scala.Nothing], parentOut: js.Any): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(globalData: js.Any, writer: js.UndefOr[scala.Nothing], parentOut: js.Any, buffer: js.Any): AsyncStream = js.native
-    @JSName("createOut")
     def createOut_MTemplate(globalData: js.Any, writer: js.Any): AsyncStream = js.native
-    @JSName("createOut")
-    def createOut_MTemplate(globalData: js.Any, writer: js.Any, parentOut: js.UndefOr[scala.Nothing], buffer: js.Any): AsyncStream = js.native
     @JSName("createOut")
     def createOut_MTemplate(globalData: js.Any, writer: js.Any, parentOut: js.Any): AsyncStream = js.native
     @JSName("createOut")
     def createOut_MTemplate(globalData: js.Any, writer: js.Any, parentOut: js.Any, buffer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: js.Any, writer: js.Any, parentOut: Unit, buffer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: js.Any, writer: Unit, parentOut: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: js.Any, writer: Unit, parentOut: js.Any, buffer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: js.Any, writer: Unit, parentOut: Unit, buffer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: Unit, writer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: Unit, writer: js.Any, parentOut: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: Unit, writer: js.Any, parentOut: js.Any, buffer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: Unit, writer: js.Any, parentOut: Unit, buffer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: Unit, writer: Unit, parentOut: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: Unit, writer: Unit, parentOut: js.Any, buffer: js.Any): AsyncStream = js.native
+    @JSName("createOut")
+    def createOut_MTemplate(globalData: Unit, writer: Unit, parentOut: Unit, buffer: js.Any): AsyncStream = js.native
     
     var meta: js.Any = js.native
     

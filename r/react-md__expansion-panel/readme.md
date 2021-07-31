@@ -10,9 +10,9 @@ Create accessible expansion components for accordions and disclosures.
 | ------------------ | :-------------: |
 | Full name          | @react-md/expansion-panel |
 | Keywords           | react-md, material design, react, expansion panel, accordion, disclosure, component, components |
-| # releases         | 20 |
+| # releases         | 27 |
 | # dependents       | 1 |
-| # downloads        | 5069 |
+| # downloads        | 16733 |
 | # stars            | 0 |
 
 ## Links

@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a network device service notification. */
-@js.native
 trait MobileBroadbandDeviceServiceTriggerDetails extends StObject {
   
   /** Gets the device ID of the device that triggered a broadband device service event. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets the device service identifier for the device service trigger event. */
-  var deviceServiceId: String = js.native
+  var deviceServiceId: String
   
   /** Gets the received data associated with the triggered event. */
-  var receivedData: IBuffer = js.native
+  var receivedData: IBuffer
 }
 object MobileBroadbandDeviceServiceTriggerDetails {
   

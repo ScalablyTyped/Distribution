@@ -2,15 +2,13 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pages extends StObject {
   
-  var `full-color`: js.UndefOr[Double] = js.native
+  var `full-color`: js.UndefOr[Double] = js.undefined
   
-  var monochrome: js.UndefOr[Double] = js.native
+  var monochrome: js.UndefOr[Double] = js.undefined
 }
 object Pages {
   

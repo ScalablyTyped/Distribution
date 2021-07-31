@@ -2,21 +2,19 @@ package typings.reactNativeWebrtc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceInfo extends StObject {
   
-  var deviceId: String = js.native
+  var deviceId: String
   
-  var facing: String = js.native
+  var facing: String
   
-  var id: String = js.native
+  var id: String
   
-  var kind: String = js.native
+  var kind: String
   
-  var label: String = js.native
+  var label: String
 }
 object SourceInfo {
   

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientSchedulerStorageReminderAlertEventArgs")
 @js.native
 class ASPxClientSchedulerStorageReminderAlertEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientSchedulerStorageReminderAlertEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientSchedulerStorageReminderAlertEventArgs {
   /**
     * Initializes a new instance of the ASPxClientSchedulerStorageReminderAlertEventArgs class.
     * @param completedNotifications An array of ASPxClientReminderAlertNotification objects.
@@ -21,4 +21,10 @@ class ASPxClientSchedulerStorageReminderAlertEventArgs protected ()
     completedNotifications: js.Array[typings.devexpressWeb.ASPxClientReminderAlertNotification],
     previousNotifications: js.Array[typings.devexpressWeb.ASPxClientReminderAlertNotification]
   ) = this()
+  
+  /**
+    * Returns an array of currently triggered reminders.
+    */
+  /* CompleteClass */
+  var alertNotifications: js.Array[typings.devexpressWeb.ASPxClientReminderAlertNotification] = js.native
 }

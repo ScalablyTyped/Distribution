@@ -10,12 +10,12 @@ import typings.browserfs.xmlHttpRequestMod.XmlHttpRequestOptions
 import typings.browserfs.xmlHttpRequestMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofXmlHttpRequest
-  extends Instantiable1[(/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), default]
+  extends StObject
+     with Instantiable1[(/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), default]
      with Instantiable2[
       (/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), 
       /* prefixUrl */ String, 
@@ -23,7 +23,7 @@ trait TypeofXmlHttpRequest
     ]
      with Instantiable3[
       (/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), 
-      js.UndefOr[/* prefixUrl */ String], 
+      (/* prefixUrl */ String) | (/* prefixUrl */ Unit), 
       /* deprecateMsg */ Boolean, 
       default
     ] {
@@ -41,14 +41,9 @@ trait TypeofXmlHttpRequest
     * @param cb Called when the file system has been instantiated, or if an error occurs.
     */
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest]): Unit = js.native
-  def FromURL(
-    url: String,
-    cb: BFSCallback[XmlHttpRequest],
-    baseUrl: js.UndefOr[scala.Nothing],
-    deprecateMsg: Boolean
-  ): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = js.native
+  def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: Unit, deprecateMsg: Boolean): Unit = js.native
   
   val Name: String = js.native
   

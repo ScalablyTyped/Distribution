@@ -3,67 +3,56 @@ package typings.htmlParser
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("html-parser", "parse")
+  @JSImport("html-parser", JSImport.Namespace)
   @js.native
-  def parse(htmlString: String): Unit = js.native
-  @JSImport("html-parser", "parse")
-  @js.native
-  def parse(htmlString: String, callbacks: js.UndefOr[scala.Nothing], regex: RegExpOptions): Unit = js.native
-  @JSImport("html-parser", "parse")
-  @js.native
-  def parse(htmlString: String, callbacks: CallbacksOption): Unit = js.native
-  @JSImport("html-parser", "parse")
-  @js.native
-  def parse(htmlString: String, callbacks: CallbacksOption, regex: RegExpOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("html-parser", "parseFile")
-  @js.native
-  def parseFile(
-    fileName: String,
-    encoding: js.UndefOr[scala.Nothing],
-    callbacks: CallbacksOption,
-    callback: Callback
-  ): Unit = js.native
-  @JSImport("html-parser", "parseFile")
-  @js.native
-  def parseFile(fileName: String, encoding: String, callbacks: CallbacksOption, callback: Callback): Unit = js.native
+  @scala.inline
+  def parse(htmlString: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(htmlString.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def parse(htmlString: String, callbacks: Unit, regex: RegExpOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(htmlString.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(htmlString: String, callbacks: CallbacksOption): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(htmlString.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(htmlString: String, callbacks: CallbacksOption, regex: RegExpOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(htmlString.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("html-parser", "sanitize")
-  @js.native
-  def sanitize(htmlString: String): String = js.native
-  @JSImport("html-parser", "sanitize")
-  @js.native
-  def sanitize(htmlString: String, removalCallbacks: RemovalCallback): String = js.native
+  @scala.inline
+  def parseFile(fileName: String, encoding: String, callbacks: CallbacksOption, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(fileName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parseFile(fileName: String, encoding: Unit, callbacks: CallbacksOption, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(fileName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def sanitize(htmlString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(htmlString.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sanitize(htmlString: String, removalCallbacks: RemovalCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(htmlString.asInstanceOf[js.Any], removalCallbacks.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Callback = js.Function1[/* arg */ js.Any, js.Any]
   
-  @js.native
   trait CallbacksOption extends StObject {
     
-    var attribute: js.UndefOr[js.Function2[/* name */ String, /* value */ js.Any, Unit]] = js.native
+    var attribute: js.UndefOr[js.Function2[/* name */ String, /* value */ js.Any, Unit]] = js.undefined
     
-    var cdata: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+    var cdata: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
     
-    var closeElement: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.native
+    var closeElement: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
     
     var closeOpenedElement: js.UndefOr[
         js.Function3[/* tagName */ String, /* token */ Token, /* isUnary */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var comment: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+    var comment: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
     
-    var docType: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+    var docType: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
     
-    var openElement: js.UndefOr[js.Function1[/* tagName */ String, Unit]] = js.native
+    var openElement: js.UndefOr[js.Function1[/* tagName */ String, Unit]] = js.undefined
     
-    var text: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var text: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var xmlProlog: js.UndefOr[js.Function0[Unit]] = js.native
+    var xmlProlog: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object CallbacksOption {
     
@@ -132,12 +121,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RegExpOptions extends StObject {
     
-    var attribute: js.UndefOr[RegExp] = js.native
+    var attribute: js.UndefOr[RegExp] = js.undefined
     
-    var name: js.UndefOr[RegExp] = js.native
+    var name: js.UndefOr[RegExp] = js.undefined
   }
   object RegExpOptions {
     
@@ -164,16 +152,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RemovalCallback extends StObject {
     
-    var attributes: Callback | js.Array[String] = js.native
+    var attributes: Callback | js.Array[String]
     
-    var comments: Callback | Boolean = js.native
+    var comments: Callback | Boolean
     
-    var docTypes: Callback | Boolean = js.native
+    var docTypes: Callback | Boolean
     
-    var elements: Callback | js.Array[String] = js.native
+    var elements: Callback | js.Array[String]
   }
   object RemovalCallback {
     

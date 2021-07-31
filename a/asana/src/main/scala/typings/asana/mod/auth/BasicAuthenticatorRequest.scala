@@ -3,13 +3,11 @@ package typings.asana.mod.auth
 import typings.asana.anon.Password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicAuthenticatorRequest extends StObject {
   
-  var auth: Password = js.native
+  var auth: Password
 }
 object BasicAuthenticatorRequest {
   

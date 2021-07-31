@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object CameraCaptureUIVideoFormat extends StObject {
   
   /** MP4/H.264/AAC format. */
   @js.native
-  sealed trait mp4 extends CameraCaptureUIVideoFormat
+  sealed trait mp4
+    extends StObject
+       with CameraCaptureUIVideoFormat
   
   /** WMV format. */
   @js.native
-  sealed trait wmv extends CameraCaptureUIVideoFormat
+  sealed trait wmv
+    extends StObject
+       with CameraCaptureUIVideoFormat
 }

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidVersion extends StObject {
   
   /** The API level for this Android version. Examples: 18, 19. */
-  var apiLevel: js.UndefOr[Double] = js.native
+  var apiLevel: js.UndefOr[Double] = js.undefined
   
   /** The code name for this Android version. Examples: "JellyBean", "KitKat". */
-  var codeName: js.UndefOr[String] = js.native
+  var codeName: js.UndefOr[String] = js.undefined
   
   /** Market share for this version. */
-  var distribution: js.UndefOr[Distribution] = js.native
+  var distribution: js.UndefOr[Distribution] = js.undefined
   
   /** An opaque id for this Android version. Use this id to invoke the TestExecutionService. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The date this Android version became available in the market. */
-  var releaseDate: js.UndefOr[Date] = js.native
+  var releaseDate: js.UndefOr[Date] = js.undefined
   
   /** Tags for this dimension. Examples: "default", "preview", "deprecated". */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A string representing this version of the Android OS. Examples: "4.3", "4.4". */
-  var versionString: js.UndefOr[String] = js.native
+  var versionString: js.UndefOr[String] = js.undefined
 }
 object AndroidVersion {
   

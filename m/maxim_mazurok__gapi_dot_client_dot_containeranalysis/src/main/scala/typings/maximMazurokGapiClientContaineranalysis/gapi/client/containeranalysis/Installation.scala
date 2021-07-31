@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Installation extends StObject {
   
   /** Required. All of the places within the filesystem versions of this package have been found. */
-  var location: js.UndefOr[js.Array[Location]] = js.native
+  var location: js.UndefOr[js.Array[Location]] = js.undefined
   
   /** Output only. The name of the installed package. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Installation {
   

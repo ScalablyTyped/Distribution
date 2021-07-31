@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisAccessibilityOptionsObject extends StObject {
   
   /**
     * (Highcharts) Description for an axis to expose to screen reader users.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Enable axis accessibility features, including axis
@@ -19,13 +17,13 @@ trait AxisAccessibilityOptionsObject extends StObject {
     * on the xAxis, the x values are not exposed to screen readers for the
     * individual data points by default.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Range description for an axis. Overrides the default range
     * description. Set to empty to disable range description for this axis.
     */
-  var rangeDescription: js.UndefOr[String] = js.native
+  var rangeDescription: js.UndefOr[String] = js.undefined
 }
 object AxisAccessibilityOptionsObject {
   

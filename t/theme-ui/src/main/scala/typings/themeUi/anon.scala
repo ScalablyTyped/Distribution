@@ -7,15 +7,13 @@ import typings.themeUi.mod.ColorMode
 import typings.themeUi.mod.ObjectOrArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait As extends StObject {
     
-    var as: js.UndefOr[ElementType[_]] = js.native
+    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object As {
     
@@ -29,7 +27,7 @@ object anon {
     implicit class AsMutableBuilder[Self <: As] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAs(value: ElementType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -37,11 +35,11 @@ object anon {
   }
   
   /* Inlined theme-ui.theme-ui.ColorMode & {  modes :{[k: string] : theme-ui.theme-ui.ColorMode} | undefined} */
-  @js.native
   trait ColorModemodeskstringColo
-    extends /* k */ StringDictionary[
+    extends StObject
+       with /* k */ StringDictionary[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any) | (ObjectOrArray[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ _
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
           ])
         ] {
     
@@ -50,25 +48,25 @@ object anon {
       */
     var accent: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Body background color
       */
-    var background: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any = js.native
+    var background: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
     
     /**
       * A background color for highlighting text
       */
     var highlight: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Nested color modes can provide overrides when used in conjunction with
       * `Theme.initialColorModeName and `useColorMode()`
       */
-    var modes: js.UndefOr[StringDictionary[ColorMode]] = js.native
+    var modes: js.UndefOr[StringDictionary[ColorMode]] = js.undefined
     
     /**
       * A faint color for backgrounds, borders, and accents that do not require
@@ -76,26 +74,26 @@ object anon {
       */
     var muted: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Primary brand color for links, buttons, etc.
       */
     var primary: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A secondary brand color for alternative styling
       */
     var secondary: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Body foreground color
       */
-    var text: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any = js.native
+    var text: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
   }
   object ColorModemodeskstringColo {
     
@@ -170,66 +168,65 @@ object anon {
   }
   
   /* Inlined {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject} */
-  @js.native
   trait PinStyledTagsSystemStyleO extends StObject {
     
-    var a: js.UndefOr[SystemStyleObject] = js.native
+    var a: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var b: js.UndefOr[SystemStyleObject] = js.native
+    var b: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var blockquote: js.UndefOr[SystemStyleObject] = js.native
+    var blockquote: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var code: js.UndefOr[SystemStyleObject] = js.native
+    var code: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var delete: js.UndefOr[SystemStyleObject] = js.native
+    var delete: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var div: js.UndefOr[SystemStyleObject] = js.native
+    var div: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var em: js.UndefOr[SystemStyleObject] = js.native
+    var em: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var h1: js.UndefOr[SystemStyleObject] = js.native
+    var h1: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var h2: js.UndefOr[SystemStyleObject] = js.native
+    var h2: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var h3: js.UndefOr[SystemStyleObject] = js.native
+    var h3: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var h4: js.UndefOr[SystemStyleObject] = js.native
+    var h4: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var h5: js.UndefOr[SystemStyleObject] = js.native
+    var h5: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var h6: js.UndefOr[SystemStyleObject] = js.native
+    var h6: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var hr: js.UndefOr[SystemStyleObject] = js.native
+    var hr: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var i: js.UndefOr[SystemStyleObject] = js.native
+    var i: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var img: js.UndefOr[SystemStyleObject] = js.native
+    var img: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var inlineCode: js.UndefOr[SystemStyleObject] = js.native
+    var inlineCode: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var li: js.UndefOr[SystemStyleObject] = js.native
+    var li: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var ol: js.UndefOr[SystemStyleObject] = js.native
+    var ol: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var p: js.UndefOr[SystemStyleObject] = js.native
+    var p: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var pre: js.UndefOr[SystemStyleObject] = js.native
+    var pre: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var root: js.UndefOr[SystemStyleObject] = js.native
+    var root: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var strong: js.UndefOr[SystemStyleObject] = js.native
+    var strong: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var table: js.UndefOr[SystemStyleObject] = js.native
+    var table: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var td: js.UndefOr[SystemStyleObject] = js.native
+    var td: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var th: js.UndefOr[SystemStyleObject] = js.native
+    var th: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var thematicBreak: js.UndefOr[SystemStyleObject] = js.native
+    var thematicBreak: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var tr: js.UndefOr[SystemStyleObject] = js.native
+    var tr: js.UndefOr[SystemStyleObject] = js.undefined
     
-    var ul: js.UndefOr[SystemStyleObject] = js.native
+    var ul: js.UndefOr[SystemStyleObject] = js.undefined
   }
   object PinStyledTagsSystemStyleO {
     

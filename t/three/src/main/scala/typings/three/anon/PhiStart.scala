@@ -2,25 +2,23 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhiStart extends StObject {
   
-  var heightSegments: Double = js.native
+  var heightSegments: Double
   
-  var phiLength: Double = js.native
+  var phiLength: Double
   
-  var phiStart: Double = js.native
+  var phiStart: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var thetaLength: Double = js.native
+  var thetaLength: Double
   
-  var thetaStart: Double = js.native
+  var thetaStart: Double
   
-  var widthSegments: Double = js.native
+  var widthSegments: Double
 }
 object PhiStart {
   

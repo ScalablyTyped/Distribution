@@ -2,36 +2,34 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentParsingFlags extends StObject {
   
-  var charsLeftOver: Double = js.native
+  var charsLeftOver: Double
   
-  var empty: Boolean = js.native
+  var empty: Boolean
   
   // null
-  var invalidFormat: Boolean = js.native
+  var invalidFormat: Boolean
   
-  var invalidMonth: String | Unit = js.native
+  var invalidMonth: String | Unit
   
-  var iso: Boolean = js.native
+  var iso: Boolean
   
-  var meridiem: String | Unit = js.native
+  var meridiem: String | Unit
   
-  var nullInput: Boolean = js.native
+  var nullInput: Boolean
   
-  var overflow: Double = js.native
+  var overflow: Double
   
-  var parsedDateParts: js.Array[_] = js.native
+  var parsedDateParts: js.Array[js.Any]
   
-  var unusedInput: js.Array[String] = js.native
+  var unusedInput: js.Array[String]
   
-  var unusedTokens: js.Array[String] = js.native
+  var unusedTokens: js.Array[String]
   
-  var userInvalidated: Boolean = js.native
+  var userInvalidated: Boolean
 }
 object MomentParsingFlags {
   
@@ -45,7 +43,7 @@ object MomentParsingFlags {
     meridiem: String | Unit,
     nullInput: Boolean,
     overflow: Double,
-    parsedDateParts: js.Array[_],
+    parsedDateParts: js.Array[js.Any],
     unusedInput: js.Array[String],
     unusedTokens: js.Array[String],
     userInvalidated: Boolean
@@ -82,7 +80,7 @@ object MomentParsingFlags {
     def setOverflow(value: Double): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsedDateParts(value: js.Array[_]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
+    def setParsedDateParts(value: js.Array[js.Any]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParsedDatePartsVarargs(value: js.Any*): Self = StObject.set(x, "parsedDateParts", js.Array(value :_*))

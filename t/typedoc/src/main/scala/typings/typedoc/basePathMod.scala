@@ -2,7 +2,6 @@ package typings.typedoc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basePathMod {
@@ -22,8 +21,11 @@ object basePathMod {
   /* static members */
   object BasePath {
     
-    @JSImport("typedoc/dist/lib/converter/utils/base-path", "BasePath.normalize")
+    @JSImport("typedoc/dist/lib/converter/utils/base-path", "BasePath")
     @js.native
-    def normalize(path: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

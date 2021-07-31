@@ -15,61 +15,59 @@ import typings.devextreme.devextremeStrings.top
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait animationConfig extends StObject {
   
   /**
     * [descr:animationConfig.complete]
     */
-  var complete: js.UndefOr[js.Function2[/* $element */ dxElement, /* config */ js.Any, _]] = js.native
+  var complete: js.UndefOr[js.Function2[/* $element */ dxElement, /* config */ js.Any, js.Any]] = js.undefined
   
   /**
     * [descr:animationConfig.delay]
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:animationConfig.direction]
     */
-  var direction: js.UndefOr[bottom | left | right | top] = js.native
+  var direction: js.UndefOr[bottom | left | right | top] = js.undefined
   
   /**
     * [descr:animationConfig.duration]
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:animationConfig.easing]
     */
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:animationConfig.from]
     */
-  var from: js.UndefOr[Double | String | js.Any] = js.native
+  var from: js.UndefOr[Double | String | js.Any] = js.undefined
   
   /**
     * [descr:animationConfig.staggerDelay]
     */
-  var staggerDelay: js.UndefOr[Double] = js.native
+  var staggerDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:animationConfig.start]
     */
-  var start: js.UndefOr[js.Function2[/* $element */ dxElement, /* config */ js.Any, _]] = js.native
+  var start: js.UndefOr[js.Function2[/* $element */ dxElement, /* config */ js.Any, js.Any]] = js.undefined
   
   /**
     * [descr:animationConfig.to]
     */
-  var to: js.UndefOr[Double | String | js.Any] = js.native
+  var to: js.UndefOr[Double | String | js.Any] = js.undefined
   
   /**
     * [descr:animationConfig.type]
     */
-  var `type`: js.UndefOr[css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut] = js.native
+  var `type`: js.UndefOr[css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut] = js.undefined
 }
 object animationConfig {
   
@@ -83,7 +81,7 @@ object animationConfig {
   implicit class animationConfigMutableBuilder[Self <: animationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setComplete(value: (/* $element */ dxElement, /* config */ js.Any) => _): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
+    def setComplete(value: (/* $element */ dxElement, /* config */ js.Any) => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
     
     @scala.inline
     def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
@@ -125,7 +123,7 @@ object animationConfig {
     def setStaggerDelayUndefined: Self = StObject.set(x, "staggerDelay", js.undefined)
     
     @scala.inline
-    def setStart(value: (/* $element */ dxElement, /* config */ js.Any) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    def setStart(value: (/* $element */ dxElement, /* config */ js.Any) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
     def setStartUndefined: Self = StObject.set(x, "start", js.undefined)

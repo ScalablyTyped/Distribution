@@ -2,26 +2,24 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ k in keyof std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'> ]: string} */
-@js.native
 trait kinkeyofPickIDetailsRowSt extends StObject {
   
-  var cell: String = js.native
+  var cell: String
   
-  var cellAnimation: String = js.native
+  var cellAnimation: String
   
-  var cellPadded: String = js.native
+  var cellPadded: String
   
-  var cellUnpadded: String = js.native
+  var cellUnpadded: String
   
-  var fields: String = js.native
+  var fields: String
   
-  var isMultiline: String = js.native
+  var isMultiline: String
   
-  var isRowHeader: String = js.native
+  var isRowHeader: String
 }
 object kinkeyofPickIDetailsRowSt {
   

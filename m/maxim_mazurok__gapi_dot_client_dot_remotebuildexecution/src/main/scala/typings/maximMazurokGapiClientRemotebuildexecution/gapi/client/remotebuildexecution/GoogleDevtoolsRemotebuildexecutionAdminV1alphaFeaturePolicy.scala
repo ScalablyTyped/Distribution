@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy extends StObject {
   
   /**
@@ -13,34 +11,34 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy extends StObje
     * E.g. container_image_sources { policy: RESTRICTED allowed_values: [ "gcr.io/project-foo", "gcr.io/project-bar/repo-baz", ] } will allow any repositories under "gcr.io/project-foo"
     * plus the repository "gcr.io/project-bar/repo-baz". Default (UNSPECIFIED) is equivalent to any source is allowed.
     */
-  var containerImageSources: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var containerImageSources: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /** Whether dockerAddCapabilities can be used or what capabilities are allowed. */
-  var dockerAddCapabilities: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var dockerAddCapabilities: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /** Whether dockerChrootPath can be used. */
-  var dockerChrootPath: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var dockerChrootPath: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /** Whether dockerNetwork can be used or what network modes are allowed. E.g. one may allow `off` value only via `allowed_values`. */
-  var dockerNetwork: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var dockerNetwork: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /** Whether dockerPrivileged can be used. */
-  var dockerPrivileged: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var dockerPrivileged: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /** Whether dockerRunAsRoot can be used. */
-  var dockerRunAsRoot: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var dockerRunAsRoot: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /**
     * Whether dockerRuntime is allowed to be set or what runtimes are allowed. Note linux_isolation takes precedence, and if set, docker_runtime values may be rejected if they are
     * incompatible with the selected isolation.
     */
-  var dockerRuntime: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var dockerRuntime: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /** Whether dockerSiblingContainers can be used. */
-  var dockerSiblingContainers: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.native
+  var dockerSiblingContainers: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature] = js.undefined
   
   /** linux_isolation allows overriding the docker runtime used for containers started on Linux. */
-  var linuxIsolation: js.UndefOr[String] = js.native
+  var linuxIsolation: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferOptions extends StObject {
   
   /** Whether objects should be deleted from the source after they are transferred to the sink. **Note:** This option and delete_objects_unique_in_sink are mutually exclusive. */
-  var deleteObjectsFromSourceAfterTransfer: js.UndefOr[Boolean] = js.native
+  var deleteObjectsFromSourceAfterTransfer: js.UndefOr[Boolean] = js.undefined
   
   /** Whether objects that exist only in the sink should be deleted. **Note:** This option and delete_objects_from_source_after_transfer are mutually exclusive. */
-  var deleteObjectsUniqueInSink: js.UndefOr[Boolean] = js.native
+  var deleteObjectsUniqueInSink: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When to overwrite objects that already exist in the sink. The default is that only objects that are different from the source are ovewritten. If true, all objects in the sink whose
     * name matches an object in the source will be overwritten with the source object.
     */
-  var overwriteObjectsAlreadyExistingInSink: js.UndefOr[Boolean] = js.native
+  var overwriteObjectsAlreadyExistingInSink: js.UndefOr[Boolean] = js.undefined
 }
 object TransferOptions {
   

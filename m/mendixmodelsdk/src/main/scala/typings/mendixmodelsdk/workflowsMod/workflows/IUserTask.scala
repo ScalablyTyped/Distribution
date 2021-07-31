@@ -3,7 +3,6 @@ package typings.mendixmodelsdk.workflowsMod.workflows
 import typings.mendixmodelsdk.pagesMod.pages.IPage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 8.15.0: introduced
   */
 @js.native
-trait IUserTask extends IWorkflowTask {
+trait IUserTask
+  extends StObject
+     with IWorkflowTask {
   
   val page: IPage | Null = js.native
   

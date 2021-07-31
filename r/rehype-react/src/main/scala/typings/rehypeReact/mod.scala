@@ -6,27 +6,30 @@ import typings.rehypeReact.anon.Children
 import typings.rehypeReact.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("rehype-react", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RehypeReact {
+  class ^ protected ()
+    extends StObject
+       with RehypeReact {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def Compiler(node: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var Fragment: js.UndefOr[ComponentType[Children]] = js.native
+    var Fragment: js.UndefOr[ComponentType[Children]] = js.undefined
     
-    var components: js.UndefOr[StringDictionary[ComponentType[_]]] = js.native
+    var components: js.UndefOr[StringDictionary[ComponentType[js.Any]]] = js.undefined
     
-    var createElement: FnCall = js.native
+    var createElement: FnCall
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -40,7 +43,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponents(value: StringDictionary[ComponentType[_]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      def setComponents(value: StringDictionary[ComponentType[js.Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
@@ -62,10 +65,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RehypeReact extends StObject {
     
-    def Compiler(node: js.Any): js.Any = js.native
+    def Compiler(node: js.Any): js.Any
   }
   object RehypeReact {
     

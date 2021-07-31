@@ -3,7 +3,6 @@ package typings.victory.mod
 import typings.victory.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that additional properties here like `scale`, `x`, `y`, etc are resolved
   * values of properties from the VictoryXXXProps for each component.
   */
-@js.native
 trait CallbackArgs extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var datum: js.Any = js.native
+  var datum: js.Any
   
-  var horizontal: Boolean = js.native
+  var horizontal: Boolean
   
-  var scale: js.UndefOr[`1`] = js.native
+  var scale: js.UndefOr[`1`] = js.undefined
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object CallbackArgs {
   

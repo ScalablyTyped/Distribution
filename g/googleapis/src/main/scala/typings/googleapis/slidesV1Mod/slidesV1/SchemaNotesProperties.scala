@@ -2,14 +2,12 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of Page that are only relevant for pages with page_type
   * NOTES.
   */
-@js.native
 trait SchemaNotesProperties extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaNotesProperties extends StObject {
     * object ID. The `GetPresentation` or `GetPage` action will always return
     * the latest object ID.
     */
-  var speakerNotesObjectId: js.UndefOr[String] = js.native
+  var speakerNotesObjectId: js.UndefOr[String] = js.undefined
 }
 object SchemaNotesProperties {
   

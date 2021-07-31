@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DelegatedPermissionClassification extends Entity {
+trait DelegatedPermissionClassification
+  extends StObject
+     with Entity {
   
-  var classification: js.UndefOr[NullableOption[PermissionClassificationType]] = js.native
+  var classification: js.UndefOr[NullableOption[PermissionClassificationType]] = js.undefined
   
-  var permissionId: js.UndefOr[NullableOption[String]] = js.native
+  var permissionId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var permissionName: js.UndefOr[NullableOption[String]] = js.native
+  var permissionName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DelegatedPermissionClassification {
   

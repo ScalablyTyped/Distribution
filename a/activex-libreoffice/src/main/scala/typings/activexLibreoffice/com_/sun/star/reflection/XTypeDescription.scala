@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,32 +23,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPropertyTypeDescription2
   * @see XSingletonTypeDescription2
   */
-@js.native
-trait XTypeDescription extends XInterface {
+trait XTypeDescription
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the fully qualified name of the UNOIDL entity.
     * @returns fully qualified name of the entity
     */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * Returns the type class of the reflected UNOIDL entity.
     * @returns type class of the entity
     */
-  val TypeClass: typings.activexLibreoffice.com_.sun.star.uno.TypeClass = js.native
+  val TypeClass: typings.activexLibreoffice.com_.sun.star.uno.TypeClass
   
   /**
     * Returns the fully qualified name of the UNOIDL entity.
     * @returns fully qualified name of the entity
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Returns the type class of the reflected UNOIDL entity.
     * @returns type class of the entity
     */
-  def getTypeClass(): typings.activexLibreoffice.com_.sun.star.uno.TypeClass = js.native
+  def getTypeClass(): typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 }
 object XTypeDescription {
   

@@ -2,40 +2,38 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch accountstatuses request.
   */
-@js.native
 trait SchemaAccountstatusesCustomBatchRequestEntry extends StObject {
   
   /**
     * The ID of the (sub-)account whose status to get.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * If set, only issues for the specified destinations are returned,
     * otherwise only issues for the Shopping destination.
     */
-  var destinations: js.UndefOr[js.Array[String]] = js.native
+  var destinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * The method (get).
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountstatusesCustomBatchRequestEntry {
   

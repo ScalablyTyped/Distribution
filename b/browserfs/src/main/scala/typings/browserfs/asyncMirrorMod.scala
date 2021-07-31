@@ -12,7 +12,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMirrorMod {
@@ -35,12 +34,15 @@ object asyncMirrorMod {
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/backend/AsyncMirror", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Constructs and initializes an AsyncMirror file system with the given options.
       */
-    @JSImport("browserfs/dist/node/backend/AsyncMirror", "default.Create")
-    @js.native
-    def Create(opts: AsyncMirrorOptions, cb: BFSCallback[AsyncMirror]): Unit = js.native
+    @scala.inline
+    def Create(opts: AsyncMirrorOptions, cb: BFSCallback[AsyncMirror]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/AsyncMirror", "default.Name")
     @js.native
@@ -50,9 +52,8 @@ object asyncMirrorMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @JSImport("browserfs/dist/node/backend/AsyncMirror", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -75,7 +76,7 @@ object asyncMirrorMod {
     
     var _sync: js.Any = js.native
     
-    def _syncSync(fd: typings.browserfs.preloadFileMod.default[_]): Unit = js.native
+    def _syncSync(fd: typings.browserfs.preloadFileMod.default[js.Any]): Unit = js.native
     
     /* private */ def checkInitialized(): js.Any = js.native
     
@@ -92,7 +93,7 @@ object asyncMirrorMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     /* private */ def enqueueOp(op: js.Any): js.Any = js.native
     
@@ -212,12 +213,11 @@ object asyncMirrorMod {
     override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
-  @js.native
   trait AsyncMirrorOptions extends StObject {
     
-    var async: FileSystem = js.native
+    var async: FileSystem
     
-    var sync: FileSystem = js.native
+    var sync: FileSystem
   }
   object AsyncMirrorOptions {
     

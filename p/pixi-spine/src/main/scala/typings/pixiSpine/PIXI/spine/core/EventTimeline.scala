@@ -2,19 +2,19 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventTimeline extends Timeline {
+trait EventTimeline
+  extends StObject
+     with Timeline {
   
-  var events: js.Array[Event] = js.native
+  var events: js.Array[Event]
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  def getFrameCount(): Double = js.native
+  def getFrameCount(): Double
   
-  def setFrame(frameIndex: Double, event: Event): Unit = js.native
+  def setFrame(frameIndex: Double, event: Event): Unit
 }
 object EventTimeline {
   

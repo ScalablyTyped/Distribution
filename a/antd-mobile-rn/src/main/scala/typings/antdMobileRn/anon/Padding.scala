@@ -2,17 +2,15 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Padding extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var borderRadius: Double = js.native
+  var borderRadius: Double
   
-  var padding: Double = js.native
+  var padding: Double
 }
 object Padding {
   

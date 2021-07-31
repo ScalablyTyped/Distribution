@@ -5,7 +5,6 @@ import typings.inversify.interfacesMod.interfaces.Context
 import typings.inversify.interfacesMod.interfaces.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -17,12 +16,14 @@ object interfacesMod {
     @js.native
     trait ProvideDoneSyntax extends StObject {
       
-      def done(): js.Function1[/* target */ js.Any, _] = js.native
-      def done(force: Boolean): js.Function1[/* target */ js.Any, _] = js.native
+      def done(): js.Function1[/* target */ js.Any, js.Any] = js.native
+      def done(force: Boolean): js.Function1[/* target */ js.Any, js.Any] = js.native
     }
     
     @js.native
-    trait ProvideInSyntax[T] extends ProvideDoneSyntax {
+    trait ProvideInSyntax[T]
+      extends StObject
+         with ProvideDoneSyntax {
       
       def inSingletonScope(): ProvideWhenOnSyntax[T] = js.native
       
@@ -31,33 +32,56 @@ object interfacesMod {
     
     @js.native
     trait ProvideInWhenOnSyntax[T]
-      extends ProvideInSyntax[T]
+      extends StObject
+         with ProvideInSyntax[T]
          with ProvideWhenSyntax[T]
          with ProvideOnSyntax[T]
     
     @js.native
-    trait ProvideOnSyntax[T] extends ProvideDoneSyntax {
+    trait ProvideOnSyntax[T]
+      extends StObject
+         with ProvideDoneSyntax {
       
       def onActivation(fn: js.Function2[/* context */ Context, /* injectable */ T, T]): ProvideWhenSyntax[T] = js.native
     }
     
-    @js.native
     trait ProvideSyntax extends StObject {
       
-      def constraint(bind: Bind, target: js.Any): js.Any = js.native
+      def constraint(bind: Bind, target: js.Any): js.Any
       @JSName("constraint")
-      var constraint_Original: BindConstraint = js.native
+      var constraint_Original: BindConstraint
       
-      var implementationType: js.Any = js.native
+      var implementationType: js.Any
+    }
+    object ProvideSyntax {
+      
+      @scala.inline
+      def apply(constraint: (/* bind */ Bind, /* target */ js.Any) => js.Any, implementationType: js.Any): ProvideSyntax = {
+        val __obj = js.Dynamic.literal(constraint = js.Any.fromFunction2(constraint), implementationType = implementationType.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ProvideSyntax]
+      }
+      
+      @scala.inline
+      implicit class ProvideSyntaxMutableBuilder[Self <: ProvideSyntax] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setConstraint(value: (/* bind */ Bind, /* target */ js.Any) => js.Any): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setImplementationType(value: js.Any): Self = StObject.set(x, "implementationType", value.asInstanceOf[js.Any])
+      }
     }
     
     @js.native
     trait ProvideWhenOnSyntax[T]
-      extends ProvideWhenSyntax[T]
+      extends StObject
+         with ProvideWhenSyntax[T]
          with ProvideOnSyntax[T]
     
     @js.native
-    trait ProvideWhenSyntax[T] extends ProvideDoneSyntax {
+    trait ProvideWhenSyntax[T]
+      extends StObject
+         with ProvideDoneSyntax {
       
       def when(constraint: js.Function1[/* request */ Request, Boolean]): ProvideOnSyntax[T] = js.native
       

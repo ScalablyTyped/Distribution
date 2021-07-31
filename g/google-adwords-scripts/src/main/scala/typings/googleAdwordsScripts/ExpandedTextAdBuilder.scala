@@ -2,21 +2,21 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExpandedTextAdBuilder[ExpandedTextAd] extends AdBuilder[ExpandedTextAdBuilder[ExpandedTextAd]] {
+trait ExpandedTextAdBuilder[ExpandedTextAd]
+  extends StObject
+     with AdBuilder[ExpandedTextAdBuilder[ExpandedTextAd]] {
   
-  def withDescription(descriptions: String): ExpandedTextAdBuilder[ExpandedTextAd] = js.native
+  def withDescription(descriptions: String): ExpandedTextAdBuilder[ExpandedTextAd]
   
-  def withHeadlinePart1(headline1: String): ExpandedTextAdBuilder[ExpandedTextAd] = js.native
+  def withHeadlinePart1(headline1: String): ExpandedTextAdBuilder[ExpandedTextAd]
   
-  def withHeadlinePart2(headline2: String): ExpandedTextAdBuilder[ExpandedTextAd] = js.native
+  def withHeadlinePart2(headline2: String): ExpandedTextAdBuilder[ExpandedTextAd]
   
-  def withPath1(path1: String): ExpandedTextAdBuilder[ExpandedTextAd] = js.native
+  def withPath1(path1: String): ExpandedTextAdBuilder[ExpandedTextAd]
   
-  def withPath2(path2: String): ExpandedTextAdBuilder[ExpandedTextAd] = js.native
+  def withPath2(path2: String): ExpandedTextAdBuilder[ExpandedTextAd]
 }
 object ExpandedTextAdBuilder {
   
@@ -38,7 +38,7 @@ object ExpandedTextAdBuilder {
   }
   
   @scala.inline
-  implicit class ExpandedTextAdBuilderMutableBuilder[Self <: ExpandedTextAdBuilder[_], ExpandedTextAd] (val x: Self with ExpandedTextAdBuilder[ExpandedTextAd]) extends AnyVal {
+  implicit class ExpandedTextAdBuilderMutableBuilder[Self <: ExpandedTextAdBuilder[?], ExpandedTextAd] (val x: Self & ExpandedTextAdBuilder[ExpandedTextAd]) extends AnyVal {
     
     @scala.inline
     def setWithDescription(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))

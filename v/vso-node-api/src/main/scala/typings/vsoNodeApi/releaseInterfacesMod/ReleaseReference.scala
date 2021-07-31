@@ -4,65 +4,63 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseReference extends StObject {
   
   /**
     * Gets links to access the release.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Gets list of artifacts.
     */
-  var artifacts: js.Array[Artifact] = js.native
+  var artifacts: js.Array[Artifact]
   
   /**
     * Gets the identity who created.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Gets the unique identifier of this field.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets the identity who modified.
     */
-  var modifiedBy: IdentityRef = js.native
+  var modifiedBy: IdentityRef
   
   /**
     * Gets name of release.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets reason for release.
     */
-  var reason: ReleaseReason = js.native
+  var reason: ReleaseReason
   
   /**
     * Gets release definition shallow reference.
     */
-  var releaseDefinition: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinition: ReleaseDefinitionShallowReference
   
-  var url: String = js.native
+  var url: String
   
-  var webAccessUri: String = js.native
+  var webAccessUri: String
 }
 object ReleaseReference {
   

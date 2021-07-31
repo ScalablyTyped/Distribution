@@ -2,76 +2,74 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMaintenanceWindowTaskResult extends StObject {
   
   /**
     * The updated task description.
     */
-  var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
+  var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   
   /**
     * The updated logging information in Amazon S3.   LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
     */
-  var LoggingInfo: js.UndefOr[typings.awsSdk.ssmMod.LoggingInfo] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.ssmMod.LoggingInfo] = js.undefined
   
   /**
     * The updated MaxConcurrency value.
     */
-  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.native
+  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.undefined
   
   /**
     * The updated MaxErrors value.
     */
-  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.native
+  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.undefined
   
   /**
     * The updated task name.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
     * The updated priority value.
     */
-  var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.native
+  var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined
   
   /**
     * The ARN of the IAM service role to use to publish Amazon Simple Notification Service (Amazon SNS) notifications for maintenance window Run Command tasks.
     */
-  var ServiceRoleArn: js.UndefOr[ServiceRole] = js.native
+  var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   
   /**
     * The updated target values.
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
   /**
     * The updated task ARN value.
     */
-  var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.native
+  var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   
   /**
     * The updated parameter values.
     */
-  var TaskInvocationParameters: js.UndefOr[MaintenanceWindowTaskInvocationParameters] = js.native
+  var TaskInvocationParameters: js.UndefOr[MaintenanceWindowTaskInvocationParameters] = js.undefined
   
   /**
     * The updated parameter values.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
     */
-  var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.native
+  var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.undefined
   
   /**
     * The ID of the maintenance window that was updated.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   
   /**
     * The task ID of the maintenance window that was updated.
     */
-  var WindowTaskId: js.UndefOr[MaintenanceWindowTaskId] = js.native
+  var WindowTaskId: js.UndefOr[MaintenanceWindowTaskId] = js.undefined
 }
 object UpdateMaintenanceWindowTaskResult {
   

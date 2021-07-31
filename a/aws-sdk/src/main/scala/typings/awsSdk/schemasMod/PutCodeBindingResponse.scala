@@ -2,31 +2,29 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutCodeBindingResponse extends StObject {
   
   /**
     * The time and date that the code binding was created.
     */
-  var CreationDate: js.UndefOr[timestampIso8601] = js.native
+  var CreationDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The date and time that code bindings were modified.
     */
-  var LastModified: js.UndefOr[timestampIso8601] = js.native
+  var LastModified: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The version number of the schema.
     */
-  var SchemaVersion: js.UndefOr[string] = js.native
+  var SchemaVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The current status of code binding generation.
     */
-  var Status: js.UndefOr[CodeGenerationStatus] = js.native
+  var Status: js.UndefOr[CodeGenerationStatus] = js.undefined
 }
 object PutCodeBindingResponse {
   

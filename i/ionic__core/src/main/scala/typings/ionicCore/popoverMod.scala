@@ -10,7 +10,6 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -18,7 +17,8 @@ object popoverMod {
   @JSImport("@ionic/core/dist/types/components/popover/popover", "Popover")
   @js.native
   class Popover ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with OverlayInterface {
     
     /**

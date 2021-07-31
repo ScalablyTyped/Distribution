@@ -4,21 +4,19 @@ import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The argument for the command "search".
   * @see XCommandProcessor
   */
-@js.native
 trait SearchCommandArgument extends StObject {
   
   /** the search criteria. */
-  var Info: SearchInfo = js.native
+  var Info: SearchInfo
   
   /** the properties for which values shall be provided through the {@link ContentResultSet} returned by the search command. */
-  var Properties: SafeArray[Property] = js.native
+  var Properties: SafeArray[Property]
 }
 object SearchCommandArgument {
   

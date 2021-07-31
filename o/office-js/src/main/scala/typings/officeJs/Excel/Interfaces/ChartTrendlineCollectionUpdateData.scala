@@ -2,14 +2,12 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartTrendlineCollection object, for use in `chartTrendlineCollection.set({ ... })`. */
-@js.native
 trait ChartTrendlineCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[ChartTrendlineData]] = js.native
+  var items: js.UndefOr[js.Array[ChartTrendlineData]] = js.undefined
 }
 object ChartTrendlineCollectionUpdateData {
   

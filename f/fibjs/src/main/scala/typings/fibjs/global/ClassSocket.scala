@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_Socket")
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   */
 class ClassSocket ()
-  extends typings.fibjs.ClassSocket {
+  extends StObject
+     with typings.fibjs.ClassSocket {
   def this(family: Double) = this()
-  def this(family: js.UndefOr[scala.Nothing], `type`: Double) = this()
   def this(family: Double, `type`: Double) = this()
+  def this(family: Unit, `type`: Double) = this()
 }

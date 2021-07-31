@@ -5,15 +5,13 @@ import typings.spotifyApi.spotifyApiStrings.off
 import typings.spotifyApi.spotifyApiStrings.track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaybackObject extends StObject {
   
-  var repeat_state: off | track | context = js.native
+  var repeat_state: off | track | context
   
-  var shuffle_state: Boolean = js.native
+  var shuffle_state: Boolean
 }
 object PlaybackObject {
   

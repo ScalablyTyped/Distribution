@@ -4,13 +4,13 @@ import typings.vegaTypings.scaleMod._RangeBand
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Step extends _RangeBand {
+trait Step
+  extends StObject
+     with _RangeBand {
   
-  var step: Double | SignalRef = js.native
+  var step: Double | SignalRef
 }
 object Step {
   

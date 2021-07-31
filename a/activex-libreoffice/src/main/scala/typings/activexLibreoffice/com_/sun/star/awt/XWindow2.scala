@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,32 +12,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A window is a rectangular region on an output device with its own position, size, and internal coordinate system. A window is used for displaying
   * data. In addition, the window receives events from the user.
   */
-@js.native
-trait XWindow2 extends XWindow {
+trait XWindow2
+  extends StObject
+     with XWindow {
   
   /** returns the inner bounds of the window, also known as the client size. */
-  var OutputSize: Size = js.native
+  var OutputSize: Size
   
   /** returns the inner bounds of the window, also known as the client size. */
-  def getOutputSize(): Size = js.native
+  def getOutputSize(): Size
   
   /** returns the focus state of the window */
-  def hasFocus(): Boolean = js.native
+  def hasFocus(): Boolean
   
   /** returns the activation state of the window */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /** returns the enabled state of the window */
-  def isEnabled(): Boolean = js.native
+  def isEnabled(): Boolean
   
   /** returns the visibility state of the window */
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
   /**
     * sets the inner bounds of the window, also known as the client size
     * @param Size the inner width and height of the window.
     */
-  def setOutputSize(Size: Size): Unit = js.native
+  def setOutputSize(Size: Size): Unit
 }
 object XWindow2 {
   

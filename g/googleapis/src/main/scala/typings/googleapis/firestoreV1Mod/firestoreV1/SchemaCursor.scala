@@ -2,27 +2,25 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A position in a query result set.
   */
-@js.native
 trait SchemaCursor extends StObject {
   
   /**
     * If the position is just before or just after the given values, relative
     * to the sort order defined by the query.
     */
-  var before: js.UndefOr[Boolean] = js.native
+  var before: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The values that represent a position, in the order they appear in the
     * order by clause of a query.  Can contain fewer values than specified in
     * the order by clause.
     */
-  var values: js.UndefOr[js.Array[SchemaValue]] = js.native
+  var values: js.UndefOr[js.Array[SchemaValue]] = js.undefined
 }
 object SchemaCursor {
   

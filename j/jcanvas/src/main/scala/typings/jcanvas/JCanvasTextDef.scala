@@ -2,27 +2,25 @@ package typings.jcanvas
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JCanvasTextDef extends StObject {
   
-  var fillStyle: String = js.native
+  var fillStyle: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var strokeStyle: String = js.native
+  var strokeStyle: String
   
-  var strokeWidth: Double = js.native
+  var strokeWidth: Double
   
-  var text: String = js.native
+  var text: String
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object JCanvasTextDef {
   

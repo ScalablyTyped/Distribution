@@ -2,23 +2,21 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowShareMenuOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ShowShareMenuCompleteCallback] = js.native
+  var complete: js.UndefOr[ShowShareMenuCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ShowShareMenuFailCallback] = js.native
+  var fail: js.UndefOr[ShowShareMenuFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ShowShareMenuSuccessCallback] = js.native
+  var success: js.UndefOr[ShowShareMenuSuccessCallback] = js.undefined
   
   /** 是否使用带 shareTicket 的转发[详情]((转发#获取更多转发信息)) */
-  var withShareTicket: js.UndefOr[Boolean] = js.native
+  var withShareTicket: js.UndefOr[Boolean] = js.undefined
 }
 object ShowShareMenuOption {
   

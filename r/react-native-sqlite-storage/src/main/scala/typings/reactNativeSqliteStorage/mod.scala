@@ -2,14 +2,16 @@ package typings.reactNativeSqliteStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-sqlite-storage", "DEBUG")
+  @JSImport("react-native-sqlite-storage", JSImport.Namespace)
   @js.native
-  def DEBUG(isDebug: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def DEBUG(isDebug: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DEBUG")(isDebug.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   sealed trait SQLErrors extends StObject
@@ -18,94 +20,92 @@ object mod {
   object SQLErrors extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SQLErrors with Double] = js.native
+    def apply(value: Double): js.UndefOr[SQLErrors & Double] = js.native
     
     @js.native
-    sealed trait CONSTRAINT_ERR extends SQLErrors
-    /* 6 */ val CONSTRAINT_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.CONSTRAINT_ERR with Double = js.native
+    sealed trait CONSTRAINT_ERR
+      extends StObject
+         with SQLErrors
+    /* 6 */ val CONSTRAINT_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.CONSTRAINT_ERR & Double = js.native
     
     @js.native
-    sealed trait DATABASE_ERR extends SQLErrors
-    /* 1 */ val DATABASE_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.DATABASE_ERR with Double = js.native
+    sealed trait DATABASE_ERR
+      extends StObject
+         with SQLErrors
+    /* 1 */ val DATABASE_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.DATABASE_ERR & Double = js.native
     
     @js.native
-    sealed trait QUOTA_ERR extends SQLErrors
-    /* 4 */ val QUOTA_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.QUOTA_ERR with Double = js.native
+    sealed trait QUOTA_ERR
+      extends StObject
+         with SQLErrors
+    /* 4 */ val QUOTA_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.QUOTA_ERR & Double = js.native
     
     @js.native
-    sealed trait SYNTAX_ERR extends SQLErrors
-    /* 5 */ val SYNTAX_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.SYNTAX_ERR with Double = js.native
+    sealed trait SYNTAX_ERR
+      extends StObject
+         with SQLErrors
+    /* 5 */ val SYNTAX_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.SYNTAX_ERR & Double = js.native
     
     @js.native
-    sealed trait TIMEOUT_ERR extends SQLErrors
-    /* 7 */ val TIMEOUT_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.TIMEOUT_ERR with Double = js.native
+    sealed trait TIMEOUT_ERR
+      extends StObject
+         with SQLErrors
+    /* 7 */ val TIMEOUT_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.TIMEOUT_ERR & Double = js.native
     
     @js.native
-    sealed trait TOO_LARGE_ERR extends SQLErrors
-    /* 3 */ val TOO_LARGE_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.TOO_LARGE_ERR with Double = js.native
+    sealed trait TOO_LARGE_ERR
+      extends StObject
+         with SQLErrors
+    /* 3 */ val TOO_LARGE_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.TOO_LARGE_ERR & Double = js.native
     
     @js.native
-    sealed trait UNKNOWN_ERR extends SQLErrors
-    /* 0 */ val UNKNOWN_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.UNKNOWN_ERR with Double = js.native
+    sealed trait UNKNOWN_ERR
+      extends StObject
+         with SQLErrors
+    /* 0 */ val UNKNOWN_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.UNKNOWN_ERR & Double = js.native
     
     @js.native
-    sealed trait VERSION_ERR extends SQLErrors
-    /* 2 */ val VERSION_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.VERSION_ERR with Double = js.native
+    sealed trait VERSION_ERR
+      extends StObject
+         with SQLErrors
+    /* 2 */ val VERSION_ERR: typings.reactNativeSqliteStorage.mod.SQLErrors.VERSION_ERR & Double = js.native
   }
   
-  @JSImport("react-native-sqlite-storage", "deleteDatabase")
-  @js.native
-  def deleteDatabase(params: DatabaseParams): Unit = js.native
-  @JSImport("react-native-sqlite-storage", "deleteDatabase")
-  @js.native
-  def deleteDatabase(
-    params: DatabaseParams,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* err */ SQLError, Unit]
-  ): Unit = js.native
-  @JSImport("react-native-sqlite-storage", "deleteDatabase")
-  @js.native
-  def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit]): Unit = js.native
-  @JSImport("react-native-sqlite-storage", "deleteDatabase")
-  @js.native
-  def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
-  @JSImport("react-native-sqlite-storage", "deleteDatabase")
-  @js.native
-  def deleteDatabase_Promise(params: DatabaseParams): js.Promise[Unit] = js.native
+  @scala.inline
+  def deleteDatabase(params: DatabaseParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deleteDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deleteDatabase(params: DatabaseParams, success: Unit, error: js.Function1[/* err */ SQLError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-native-sqlite-storage", "enablePromise")
-  @js.native
-  def enablePromise(enablePromise: Boolean): Unit = js.native
+  @scala.inline
+  def deleteDatabase_Promise(params: DatabaseParams): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("react-native-sqlite-storage", "openDatabase")
-  @js.native
-  def openDatabase(params: DatabaseParams): SQLiteDatabase = js.native
-  @JSImport("react-native-sqlite-storage", "openDatabase")
-  @js.native
-  def openDatabase(
-    params: DatabaseParams,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* e */ SQLError, Unit]
-  ): SQLiteDatabase = js.native
-  @JSImport("react-native-sqlite-storage", "openDatabase")
-  @js.native
-  def openDatabase(params: DatabaseParams, success: js.Function0[Unit]): SQLiteDatabase = js.native
-  @JSImport("react-native-sqlite-storage", "openDatabase")
-  @js.native
-  def openDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* e */ SQLError, Unit]): SQLiteDatabase = js.native
-  @JSImport("react-native-sqlite-storage", "openDatabase")
-  @js.native
-  def openDatabase_Promise(params: DatabaseParams): js.Promise[SQLiteDatabase] = js.native
+  @scala.inline
+  def enablePromise(enablePromise: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePromise")(enablePromise.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def openDatabase(params: DatabaseParams): SQLiteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[SQLiteDatabase]
+  @scala.inline
+  def openDatabase(params: DatabaseParams, success: js.Function0[Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
+  @scala.inline
+  def openDatabase(params: DatabaseParams, success: js.Function0[Unit], error: js.Function1[/* e */ SQLError, Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
+  @scala.inline
+  def openDatabase(params: DatabaseParams, success: Unit, error: js.Function1[/* e */ SQLError, Unit]): SQLiteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any], success.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SQLiteDatabase]
+  
+  @scala.inline
+  def openDatabase_Promise(params: DatabaseParams): js.Promise[SQLiteDatabase] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SQLiteDatabase]]
+  
   trait DatabaseOptionalParams extends StObject {
     
-    var createFromLocation: js.UndefOr[Double | String] = js.native
+    var createFromLocation: js.UndefOr[Double | String] = js.undefined
     
     // Database encryption pass phrase
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
   }
   object DatabaseOptionalParams {
     
@@ -138,8 +138,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait DatabaseParams extends DatabaseOptionalParams {
+  trait DatabaseParams
+    extends StObject
+       with DatabaseOptionalParams {
     
     /**
       * Affects iOS database file location
@@ -147,9 +148,9 @@ object mod {
       * 'Library': Library subdirectory - backed up by iCloud, NOT visible to iTunes
       * 'Documents': Documents subdirectory - visible to iTunes and backed up by iCloud
       */
-    var location: Location = js.native
+    var location: Location
     
-    var name: String = js.native
+    var name: String
   }
   object DatabaseParams {
     
@@ -192,14 +193,13 @@ object mod {
     def Shared: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Shared = "Shared".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Shared]
   }
   
-  @js.native
   trait ResultSet extends StObject {
     
-    var insertId: Double = js.native
+    var insertId: Double
     
-    var rows: ResultSetRowList = js.native
+    var rows: ResultSetRowList
     
-    var rowsAffected: Double = js.native
+    var rowsAffected: Double
   }
   object ResultSet {
     
@@ -223,19 +223,18 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultSetRowList extends StObject {
     
-    def item(index: Double): js.Any = js.native
+    def item(index: Double): js.Any
     
-    var length: Double = js.native
+    var length: Double
     
-    def raw(): js.Array[_] = js.native
+    def raw(): js.Array[js.Any]
   }
   object ResultSetRowList {
     
     @scala.inline
-    def apply(item: Double => js.Any, length: Double, raw: () => js.Array[_]): ResultSetRowList = {
+    def apply(item: Double => js.Any, length: Double, raw: () => js.Array[js.Any]): ResultSetRowList = {
       val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any], raw = js.Any.fromFunction0(raw))
       __obj.asInstanceOf[ResultSetRowList]
     }
@@ -250,16 +249,15 @@ object mod {
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRaw(value: () => js.Array[_]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      def setRaw(value: () => js.Array[js.Any]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait SQLError extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
   }
   object SQLError {
     
@@ -284,12 +282,6 @@ object mod {
   trait SQLiteDatabase extends StObject {
     
     def attach(nameToAttach: String, alias: String): Unit = js.native
-    def attach(
-      nameToAttach: String,
-      alias: String,
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* err */ SQLError, Unit]
-    ): Unit = js.native
     def attach(nameToAttach: String, alias: String, success: js.Function0[Unit]): Unit = js.native
     def attach(
       nameToAttach: String,
@@ -297,6 +289,7 @@ object mod {
       success: js.Function0[Unit],
       error: js.Function1[/* err */ SQLError, Unit]
     ): Unit = js.native
+    def attach(nameToAttach: String, alias: String, success: Unit, error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
     @JSName("attach")
     def attach_Promise(nameToAttach: String, alias: String): js.Promise[Unit] = js.native
     
@@ -304,46 +297,32 @@ object mod {
     def close(success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
     
     def dettach(alias: String): Unit = js.native
-    def dettach(alias: String, success: js.UndefOr[scala.Nothing], error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
     def dettach(alias: String, success: js.Function0[Unit]): Unit = js.native
     def dettach(alias: String, success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
+    def dettach(alias: String, success: Unit, error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
     @JSName("dettach")
     def dettach_Promise(alias: String): js.Promise[Unit] = js.native
     
     def executeSql(statement: String): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any]): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any], success: Unit, error: StatementErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: js.Array[js.Any], success: StatementCallback): Unit = js.native
     def executeSql(
       statement: String,
-      params: js.UndefOr[scala.Nothing],
-      success: js.UndefOr[scala.Nothing],
-      error: StatementErrorCallback
-    ): Unit = js.native
-    def executeSql(statement: String, params: js.UndefOr[scala.Nothing], success: StatementCallback): Unit = js.native
-    def executeSql(
-      statement: String,
-      params: js.UndefOr[scala.Nothing],
+      params: js.Array[js.Any],
       success: StatementCallback,
       error: StatementErrorCallback
     ): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_]): Unit = js.native
-    def executeSql(
-      statement: String,
-      params: js.Array[_],
-      success: js.UndefOr[scala.Nothing],
-      error: StatementErrorCallback
-    ): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_], success: StatementCallback): Unit = js.native
-    def executeSql(statement: String, params: js.Array[_], success: StatementCallback, error: StatementErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: Unit, error: StatementErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: StatementCallback): Unit = js.native
+    def executeSql(statement: String, params: Unit, success: StatementCallback, error: StatementErrorCallback): Unit = js.native
     @JSName("executeSql")
     def executeSql_Promise(statement: String): js.Promise[js.Array[ResultSet]] = js.native
     @JSName("executeSql")
-    def executeSql_Promise(statement: String, params: js.Array[_]): js.Promise[js.Array[ResultSet]] = js.native
+    def executeSql_Promise(statement: String, params: js.Array[js.Any]): js.Promise[js.Array[ResultSet]] = js.native
     
     def readTransaction(scope: js.Function1[/* tx */ Transaction, Unit]): Unit = js.native
-    def readTransaction(
-      scope: js.Function1[/* tx */ Transaction, Unit],
-      error: js.UndefOr[scala.Nothing],
-      success: TransactionCallback
-    ): Unit = js.native
+    def readTransaction(scope: js.Function1[/* tx */ Transaction, Unit], error: Unit, success: TransactionCallback): Unit = js.native
     def readTransaction(scope: js.Function1[/* tx */ Transaction, Unit], error: TransactionErrorCallback): Unit = js.native
     def readTransaction(
       scope: js.Function1[/* tx */ Transaction, Unit],
@@ -354,11 +333,7 @@ object mod {
     def readTransaction_Promise(scope: js.Function1[/* tx */ Transaction, Unit]): js.Promise[TransactionCallback] = js.native
     
     def transaction(scope: js.Function1[/* tx */ Transaction, Unit]): Unit = js.native
-    def transaction(
-      scope: js.Function1[/* tx */ Transaction, Unit],
-      error: js.UndefOr[scala.Nothing],
-      success: TransactionCallback
-    ): Unit = js.native
+    def transaction(scope: js.Function1[/* tx */ Transaction, Unit], error: Unit, success: TransactionCallback): Unit = js.native
     def transaction(scope: js.Function1[/* tx */ Transaction, Unit], error: TransactionErrorCallback): Unit = js.native
     def transaction(
       scope: js.Function1[/* tx */ Transaction, Unit],
@@ -377,37 +352,32 @@ object mod {
   trait Transaction extends StObject {
     
     def executeSql(sqlStatement: String): Unit = js.native
+    def executeSql(sqlStatement: String, arguments: js.Array[js.Any]): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      arguments: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
+      arguments: js.Array[js.Any],
+      callback: Unit,
       errorCallback: StatementErrorCallback
     ): Unit = js.native
-    def executeSql(sqlStatement: String, arguments: js.UndefOr[scala.Nothing], callback: StatementCallback): Unit = js.native
+    def executeSql(sqlStatement: String, arguments: js.Array[js.Any], callback: StatementCallback): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      arguments: js.UndefOr[scala.Nothing],
+      arguments: js.Array[js.Any],
       callback: StatementCallback,
       errorCallback: StatementErrorCallback
     ): Unit = js.native
-    def executeSql(sqlStatement: String, arguments: js.Array[_]): Unit = js.native
+    def executeSql(sqlStatement: String, arguments: Unit, callback: Unit, errorCallback: StatementErrorCallback): Unit = js.native
+    def executeSql(sqlStatement: String, arguments: Unit, callback: StatementCallback): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      arguments: js.Array[_],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: StatementErrorCallback
-    ): Unit = js.native
-    def executeSql(sqlStatement: String, arguments: js.Array[_], callback: StatementCallback): Unit = js.native
-    def executeSql(
-      sqlStatement: String,
-      arguments: js.Array[_],
+      arguments: Unit,
       callback: StatementCallback,
       errorCallback: StatementErrorCallback
     ): Unit = js.native
     @JSName("executeSql")
     def executeSql_Promise(sqlStatement: String): js.Promise[js.Tuple2[Transaction, ResultSet]] = js.native
     @JSName("executeSql")
-    def executeSql_Promise(sqlStatement: String, arguments: js.Array[_]): js.Promise[js.Tuple2[Transaction, ResultSet]] = js.native
+    def executeSql_Promise(sqlStatement: String, arguments: js.Array[js.Any]): js.Promise[js.Tuple2[Transaction, ResultSet]] = js.native
   }
   
   type TransactionCallback = js.Function1[/* transaction */ Transaction, Unit]

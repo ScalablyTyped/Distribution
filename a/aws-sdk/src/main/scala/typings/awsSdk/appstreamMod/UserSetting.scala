@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSetting extends StObject {
   
   /**
     * The action that is enabled or disabled.
     */
-  var Action: typings.awsSdk.appstreamMod.Action = js.native
+  var Action: typings.awsSdk.appstreamMod.Action
   
   /**
     * Indicates whether the action is enabled or disabled.
     */
-  var Permission: typings.awsSdk.appstreamMod.Permission = js.native
+  var Permission: typings.awsSdk.appstreamMod.Permission
 }
 object UserSetting {
   

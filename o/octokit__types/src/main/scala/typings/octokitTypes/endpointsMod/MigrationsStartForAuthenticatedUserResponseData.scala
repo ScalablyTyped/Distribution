@@ -4,31 +4,29 @@ import typings.octokitTypes.anon.Allowmergecommit
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsStartForAuthenticatedUserResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var exclude_attachments: Boolean = js.native
+  var exclude_attachments: Boolean
   
-  var guid: String = js.native
+  var guid: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var lock_repositories: Boolean = js.native
+  var lock_repositories: Boolean
   
-  var owner: Avatarurl = js.native
+  var owner: Avatarurl
   
-  var repositories: js.Array[Allowmergecommit] = js.native
+  var repositories: js.Array[Allowmergecommit]
   
-  var state: String = js.native
+  var state: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object MigrationsStartForAuthenticatedUserResponseData {
   

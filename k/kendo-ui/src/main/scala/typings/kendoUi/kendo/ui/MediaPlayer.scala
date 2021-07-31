@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaPlayer extends Widget {
+trait MediaPlayer
+  extends StObject
+     with Widget {
   
   def fullScreen(): Boolean = js.native
   def fullScreen(value: Boolean): Unit = js.native

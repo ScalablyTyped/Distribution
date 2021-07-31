@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Global settings for the workspace. */
-@js.native
 trait WorkspaceSystemSettings extends StObject {
   
   /** Workspace settings related to the disambiguation feature. **Note:** This feature is available only to Premium users. */
-  var disambiguation: js.UndefOr[WorkspaceSystemSettingsDisambiguation] = js.native
+  var disambiguation: js.UndefOr[WorkspaceSystemSettingsDisambiguation] = js.undefined
   
   /** For internal use only. */
-  var human_agent_assist: js.UndefOr[js.Object] = js.native
+  var human_agent_assist: js.UndefOr[js.Object] = js.undefined
   
   /** Workspace settings related to the Watson Assistant tool. */
-  var tooling: js.UndefOr[WorkspaceSystemSettingsTooling] = js.native
+  var tooling: js.UndefOr[WorkspaceSystemSettingsTooling] = js.undefined
 }
 object WorkspaceSystemSettings {
   

@@ -47,7 +47,6 @@ import typings.rbx.rbxStrings.white
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpMod {
@@ -56,12 +55,11 @@ object helpMod {
   @js.native
   val Help: ForwardRefAsExoticComponent[HelpProps, ElementType[js.Any]] = js.native
   
-  @js.native
   trait HelpModifierProps extends StObject {
     
     var color: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
   }
   object HelpModifierProps {
     
@@ -83,86 +81,85 @@ object helpMod {
   }
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps & rbx.rbx/elements/form/help.HelpModifierProps */
-  @js.native
   trait HelpProps extends StObject {
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var badge: js.UndefOr[Double | String] = js.native
+    var badge: js.UndefOr[Double | String] = js.undefined
     
     var badgeColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var badgeOutlined: js.UndefOr[Boolean] = js.native
+    var badgeOutlined: js.UndefOr[Boolean] = js.undefined
     
-    var badgeRounded: js.UndefOr[Boolean] = js.native
+    var badgeRounded: js.UndefOr[Boolean] = js.undefined
     
-    var badgeSize: js.UndefOr[small | medium | large] = js.native
+    var badgeSize: js.UndefOr[small | medium | large] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearfix: js.UndefOr[Boolean] = js.native
+    var clearfix: js.UndefOr[Boolean] = js.undefined
     
-    var clipped: js.UndefOr[Boolean] = js.native
+    var clipped: js.UndefOr[Boolean] = js.undefined
     
     var color: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var invisible: js.UndefOr[Boolean] = js.native
+    var invisible: js.UndefOr[Boolean] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var marginless: js.UndefOr[Boolean] = js.native
+    var marginless: js.UndefOr[Boolean] = js.undefined
     
-    var overlay: js.UndefOr[Boolean] = js.native
+    var overlay: js.UndefOr[Boolean] = js.undefined
     
-    var paddingless: js.UndefOr[Boolean] = js.native
+    var paddingless: js.UndefOr[Boolean] = js.undefined
     
-    var pull: js.UndefOr[left | right] = js.native
+    var pull: js.UndefOr[left | right] = js.undefined
     
-    var radiusless: js.UndefOr[Boolean] = js.native
+    var radiusless: js.UndefOr[Boolean] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.native
+    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.undefined
     
-    var shadowless: js.UndefOr[Boolean] = js.native
+    var shadowless: js.UndefOr[Boolean] = js.undefined
     
-    var srOnly: js.UndefOr[Boolean] = js.native
+    var srOnly: js.UndefOr[Boolean] = js.undefined
     
-    var textAlign: js.UndefOr[centered | justified | left | right] = js.native
+    var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
     
     var textColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.native
+    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
     
-    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
     
-    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
     
-    var tooltip: js.UndefOr[Double | String] = js.native
+    var tooltip: js.UndefOr[Double | String] = js.undefined
     
-    var tooltipActive: js.UndefOr[Boolean] = js.native
+    var tooltipActive: js.UndefOr[Boolean] = js.undefined
     
     var tooltipColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var tooltipMultiline: js.UndefOr[Boolean] = js.native
+    var tooltipMultiline: js.UndefOr[Boolean] = js.undefined
     
-    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.native
+    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.native
+    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.undefined
     
-    var unselectable: js.UndefOr[Boolean] = js.native
+    var unselectable: js.UndefOr[Boolean] = js.undefined
   }
   object HelpProps {
     

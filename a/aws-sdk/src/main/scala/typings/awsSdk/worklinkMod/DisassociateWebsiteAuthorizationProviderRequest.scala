@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateWebsiteAuthorizationProviderRequest extends StObject {
   
   /**
     * A unique identifier for the authorization provider.
     */
-  var AuthorizationProviderId: Id = js.native
+  var AuthorizationProviderId: Id
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
 }
 object DisassociateWebsiteAuthorizationProviderRequest {
   

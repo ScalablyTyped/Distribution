@@ -2,16 +2,16 @@ package typings.youtube.YT
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnErrorEvent extends PlayerEvent {
+trait OnErrorEvent
+  extends StObject
+     with PlayerEvent {
   
   /**
     * Which type of error occurred.
     */
-  var data: PlayerError = js.native
+  var data: PlayerError
 }
 object OnErrorEvent {
   

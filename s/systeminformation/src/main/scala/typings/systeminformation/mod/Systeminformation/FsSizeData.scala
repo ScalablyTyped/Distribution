@@ -2,24 +2,22 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 5. File System
-@js.native
 trait FsSizeData extends StObject {
   
-  var fs: String = js.native
+  var fs: String
   
-  var mount: String = js.native
+  var mount: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var use: Double = js.native
+  var use: Double
   
-  var used: Double = js.native
+  var used: Double
 }
 object FsSizeData {
   

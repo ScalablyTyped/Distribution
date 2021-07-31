@@ -1,18 +1,20 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "EventDispatcherFactory")
 @js.native
 class EventDispatcherFactory ()
   extends typings.wonderJs.eventDispatcherFactoryMod.EventDispatcherFactory
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "EventDispatcherFactory")
-@js.native
-object EventDispatcherFactory extends js.Object {
-  def createEventDispatcher(event: typings.wonderJs.eventMod.Event): js.Any = js.native
+object EventDispatcherFactory {
+  
+  @JSImport("wonder.js/dist/es2015", "EventDispatcherFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createEventDispatcher(event: typings.wonderJs.eventMod.Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventDispatcher")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }
-

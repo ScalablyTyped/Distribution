@@ -6,18 +6,18 @@ import typings.std.HTMLElement
 import typings.webcomponentsJs.mod.global.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @js.native
-  trait CustomElementConstructor extends Instantiable0[HTMLElement]
+  trait CustomElementConstructor
+    extends StObject
+       with Instantiable0[HTMLElement]
   
-  @js.native
   trait CustomElementInit extends StObject {
     
-    var `extends`: js.UndefOr[String] = js.native
+    var `extends`: js.UndefOr[String] = js.undefined
   }
   object CustomElementInit {
     
@@ -38,16 +38,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomElementsPolyfill extends StObject {
     
-    var flags: js.Any = js.native
+    var flags: js.Any
     
-    var hasNative: Boolean = js.native
+    var hasNative: Boolean
     
-    var ready: Boolean = js.native
+    var ready: Boolean
     
-    var useNative: Boolean = js.native
+    var useNative: Boolean
   }
   object CustomElementsPolyfill {
     
@@ -74,22 +73,21 @@ object mod {
     }
   }
   
-  @js.native
   trait HTMLImportsPolyfill extends StObject {
     
-    var IMPORT_LINK_TYPE: String = js.native
+    var IMPORT_LINK_TYPE: String
     
-    var flags: js.Any = js.native
+    var flags: js.Any
     
-    var isIE: Boolean = js.native
+    var isIE: Boolean
     
-    var ready: Boolean = js.native
+    var ready: Boolean
     
-    var rootDocument: Document = js.native
+    var rootDocument: Document
     
-    var useNative: Boolean = js.native
+    var useNative: Boolean
     
-    def whenReady(callback: js.Function0[Unit]): Unit = js.native
+    def whenReady(callback: js.Function0[Unit]): Unit
   }
   object HTMLImportsPolyfill {
     
@@ -133,10 +131,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Polyfill extends StObject {
     
-    var flags: js.Any = js.native
+    var flags: js.Any
   }
   object Polyfill {
     
@@ -167,10 +164,9 @@ object mod {
       def whenDefined(name: String): js.Thenable[Unit] = js.native
     }
     
-    @js.native
     trait Document extends StObject {
       
-      def registerElement(name: String, prototype: CustomElementInit): CustomElementConstructor = js.native
+      def registerElement(name: String, prototype: CustomElementInit): CustomElementConstructor
     }
     object Document {
       
@@ -188,18 +184,17 @@ object mod {
       }
     }
     
-    @js.native
     trait Element extends StObject {
       
-      def createShadowRoot(): ShadowRoot = js.native
+      def createShadowRoot(): ShadowRoot
       
-      val shadowRoot: ShadowRoot | Null = js.native
+      val shadowRoot: ShadowRoot | Null
     }
     object Element {
       
       @scala.inline
       def apply(createShadowRoot: () => ShadowRoot): Element = {
-        val __obj = js.Dynamic.literal(createShadowRoot = js.Any.fromFunction0(createShadowRoot))
+        val __obj = js.Dynamic.literal(createShadowRoot = js.Any.fromFunction0(createShadowRoot), shadowRoot = null)
         __obj.asInstanceOf[Element]
       }
       
@@ -218,10 +213,9 @@ object mod {
     }
     
     // This contains duplicates of some types in lib.dom.d.ts in order to support typescript 2.0
-    @js.native
     trait ElementDefinitionOptions extends StObject {
       
-      var `extends`: js.UndefOr[String] = js.native
+      var `extends`: js.UndefOr[String] = js.undefined
     }
     object ElementDefinitionOptions {
       
@@ -243,23 +237,24 @@ object mod {
     }
     
     @js.native
-    trait ShadowRoot extends DocumentFragment {
+    trait ShadowRoot
+      extends StObject
+         with DocumentFragment {
       
       val host: Element = js.native
       
       var innerHTML: String = js.native
     }
     
-    @js.native
     trait Window extends StObject {
       
-      var CustomElements: CustomElementsPolyfill = js.native
+      var CustomElements: CustomElementsPolyfill
       
-      var HTMLImports: HTMLImportsPolyfill = js.native
+      var HTMLImports: HTMLImportsPolyfill
       
-      var WebComponents: Polyfill = js.native
+      var WebComponents: Polyfill
       
-      var customElements: CustomElementRegistry = js.native
+      var customElements: CustomElementRegistry
     }
     object Window {
       

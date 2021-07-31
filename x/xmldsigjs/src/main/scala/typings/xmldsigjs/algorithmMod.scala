@@ -9,7 +9,6 @@ import typings.std.Node
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algorithmMod {
@@ -45,18 +44,29 @@ object algorithmMod {
   
   @JSImport("xmldsigjs/build/types/algorithm", "XmlAlgorithm")
   @js.native
-  abstract class XmlAlgorithm () extends IAlgorithm
+  abstract class XmlAlgorithm ()
+    extends StObject
+       with IAlgorithm {
+    
+    /* CompleteClass */
+    var algorithm: Algorithm = js.native
+    
+    /* CompleteClass */
+    override def getAlgorithmName(): String = js.native
+    
+    /* CompleteClass */
+    var namespaceURI: String = js.native
+  }
   
   type BASE64 = String
   
-  @js.native
   trait IAlgorithm extends StObject {
     
-    var algorithm: Algorithm = js.native
+    var algorithm: Algorithm
     
-    def getAlgorithmName(): String = js.native
+    def getAlgorithmName(): String
     
-    var namespaceURI: String = js.native
+    var namespaceURI: String
   }
   object IAlgorithm {
     
@@ -81,7 +91,9 @@ object algorithmMod {
   }
   
   @js.native
-  trait IHashAlgorithm extends IAlgorithm {
+  trait IHashAlgorithm
+    extends StObject
+       with IAlgorithm {
     
     def Digest(xml: String): js.Promise[Uint8Array] = js.native
     def Digest(xml: BufferSource): js.Promise[Uint8Array] = js.native
@@ -91,7 +103,9 @@ object algorithmMod {
   type IHashAlgorithmConstructable = Instantiable0[IHashAlgorithm]
   
   @js.native
-  trait ISignatureAlgorithm extends IAlgorithm {
+  trait ISignatureAlgorithm
+    extends StObject
+       with IAlgorithm {
     
     def Sign(signedInfo: String, signingKey: CryptoKey, algorithm: Algorithm): js.Promise[ArrayBuffer] = js.native
     

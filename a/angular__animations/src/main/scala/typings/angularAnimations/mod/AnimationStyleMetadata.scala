@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularAnimations.angularAnimationsStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationStyleMetadata extends AnimationMetadata {
+trait AnimationStyleMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * A percentage of the total animate time at which the style is to be applied.
     */
-  var offset: Double | Null = js.native
+  var offset: Double | Null
   
   /**
     * A set of CSS style properties.
     */
-  var styles: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk]) = js.native
+  var styles: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk])
 }
 object AnimationStyleMetadata {
   
@@ -27,7 +27,7 @@ object AnimationStyleMetadata {
     styles: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk]),
     `type`: AnimationMetadataType
   ): AnimationStyleMetadata = {
-    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any], offset = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationStyleMetadata]
   }

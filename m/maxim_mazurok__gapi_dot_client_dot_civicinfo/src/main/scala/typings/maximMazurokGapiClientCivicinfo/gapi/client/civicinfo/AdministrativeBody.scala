@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdministrativeBody extends StObject {
   
   /** A URL provided by this administrative body for information on absentee voting. */
-  var absenteeVotingInfoUrl: js.UndefOr[String] = js.native
+  var absenteeVotingInfoUrl: js.UndefOr[String] = js.undefined
   
   /** A URL provided by this administrative body to give contest information to the voter. */
-  var ballotInfoUrl: js.UndefOr[String] = js.native
+  var ballotInfoUrl: js.UndefOr[String] = js.undefined
   
   /** The mailing address of this administrative body. */
-  var correspondenceAddress: js.UndefOr[SimpleAddressType] = js.native
+  var correspondenceAddress: js.UndefOr[SimpleAddressType] = js.undefined
   
   /** A URL provided by this administrative body for looking up general election information. */
-  var electionInfoUrl: js.UndefOr[String] = js.native
+  var electionInfoUrl: js.UndefOr[String] = js.undefined
   
   /** A last minute or emergency notification text provided by this administrative body. */
-  var electionNoticeText: js.UndefOr[String] = js.native
+  var electionNoticeText: js.UndefOr[String] = js.undefined
   
   /** A URL provided by this administrative body for additional information related to the last minute or emergency notification. */
-  var electionNoticeUrl: js.UndefOr[String] = js.native
+  var electionNoticeUrl: js.UndefOr[String] = js.undefined
   
   /** The election officials for this election administrative body. */
-  var electionOfficials: js.UndefOr[js.Array[ElectionOfficial]] = js.native
+  var electionOfficials: js.UndefOr[js.Array[ElectionOfficial]] = js.undefined
   
   /** A URL provided by this administrative body for confirming that the voter is registered to vote. */
-  var electionRegistrationConfirmationUrl: js.UndefOr[String] = js.native
+  var electionRegistrationConfirmationUrl: js.UndefOr[String] = js.undefined
   
   /** A URL provided by this administrative body for looking up how to register to vote. */
-  var electionRegistrationUrl: js.UndefOr[String] = js.native
+  var electionRegistrationUrl: js.UndefOr[String] = js.undefined
   
   /** A URL provided by this administrative body describing election rules to the voter. */
-  var electionRulesUrl: js.UndefOr[String] = js.native
+  var electionRulesUrl: js.UndefOr[String] = js.undefined
   
   /** A description of the hours of operation for this administrative body. */
-  var hoursOfOperation: js.UndefOr[String] = js.native
+  var hoursOfOperation: js.UndefOr[String] = js.undefined
   
   /** The name of this election administrative body. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The physical address of this administrative body. */
-  var physicalAddress: js.UndefOr[SimpleAddressType] = js.native
+  var physicalAddress: js.UndefOr[SimpleAddressType] = js.undefined
   
   /** A description of the services this administrative body may provide. */
-  var voter_services: js.UndefOr[js.Array[String]] = js.native
+  var voter_services: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A URL provided by this administrative body for looking up where to vote. */
-  var votingLocationFinderUrl: js.UndefOr[String] = js.native
+  var votingLocationFinderUrl: js.UndefOr[String] = js.undefined
 }
 object AdministrativeBody {
   

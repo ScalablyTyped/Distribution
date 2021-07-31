@@ -2,19 +2,17 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to search the resources in the specified FHIR store.
   */
-@js.native
 trait SchemaSearchResourcesRequest extends StObject {
   
   /**
     * The type of the resource to search.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchResourcesRequest {
   

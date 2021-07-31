@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyDomainDkimRequest extends StObject {
   
   /**
     * The name of the domain to be verified for Easy DKIM signing.
     */
-  var Domain: typings.awsSdk.sesMod.Domain = js.native
+  var Domain: typings.awsSdk.sesMod.Domain
 }
 object VerifyDomainDkimRequest {
   

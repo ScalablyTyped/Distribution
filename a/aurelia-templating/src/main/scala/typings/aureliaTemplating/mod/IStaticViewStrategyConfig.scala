@@ -3,15 +3,13 @@ package typings.aureliaTemplating.mod
 import typings.std.HTMLTemplateElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStaticViewStrategyConfig extends StObject {
   
-  var dependencies: js.UndefOr[js.Array[js.Function] | js.Object] = js.native
+  var dependencies: js.UndefOr[js.Array[js.Function] | js.Object] = js.undefined
   
-  var template: String | HTMLTemplateElement = js.native
+  var template: String | HTMLTemplateElement
 }
 object IStaticViewStrategyConfig {
   

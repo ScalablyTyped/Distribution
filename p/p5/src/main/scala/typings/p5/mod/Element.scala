@@ -4,7 +4,6 @@ import typings.p5.anon.X
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -97,7 +96,7 @@ trait Element extends StObject {
     *   passed instead, the previously firing function
     *   will no longer fire.
     */
-  def doubleClicked(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def doubleClicked(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def doubleClicked(fxn: Boolean): Element = js.native
   
   /**
@@ -111,7 +110,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def dragLeave(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def dragLeave(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def dragLeave(fxn: Boolean): Element = js.native
   
   /**
@@ -125,7 +124,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def dragOver(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def dragOver(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def dragOver(fxn: Boolean): Element = js.native
   
   /**
@@ -148,8 +147,11 @@ trait Element extends StObject {
     *   are dropped with the drop event.
     *   @chainable
     */
-  def drop(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
-  def drop(callback: js.Function1[/* repeated */ js.Any, _], fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def drop(callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def drop(
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    fxn: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Element = js.native
   
   /**
     *   Underlying HTML element. All normal HTML methods
@@ -182,9 +184,9 @@ trait Element extends StObject {
     *   @return the inner HTML of the element
     */
   def html(): String = js.native
-  def html(html: js.UndefOr[scala.Nothing], append: Boolean): Element = js.native
   def html(html: String): Element = js.native
   def html(html: String, append: Boolean): Element = js.native
+  def html(html: Unit, append: Boolean): Element = js.native
   /**
     *   If an argument is given, sets the inner HTML of
     *   the element, replacing any existing html. If true
@@ -235,7 +237,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mouseClicked(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseClicked(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def mouseClicked(fxn: Boolean): Element = js.native
   
   /**
@@ -247,7 +249,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseMoved(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseMoved(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def mouseMoved(fxn: Boolean): Element = js.native
   
   /**
@@ -260,7 +262,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseOut(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseOut(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def mouseOut(fxn: Boolean): Element = js.native
   
   /**
@@ -273,7 +275,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseOver(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseOver(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def mouseOver(fxn: Boolean): Element = js.native
   
   /**
@@ -289,7 +291,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mousePressed(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mousePressed(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def mousePressed(fxn: Boolean): Element = js.native
   
   /**
@@ -305,7 +307,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mouseReleased(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseReleased(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def mouseReleased(fxn: Boolean): Element = js.native
   
   /**
@@ -332,7 +334,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def mouseWheel(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseWheel(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def mouseWheel(fxn: Boolean): Element = js.native
   
   /**
@@ -377,9 +379,9 @@ trait Element extends StObject {
     *   object
     */
   def position(): X = js.native
-  def position(x: js.UndefOr[scala.Nothing], y: Double): Element = js.native
   def position(x: Double): Element = js.native
   def position(x: Double, y: Double): Element = js.native
+  def position(x: Unit, y: Double): Element = js.native
   /**
     *   Sets the position of the element relative to (0,
     *   0) of the window. Essentially, sets
@@ -498,7 +500,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def touchEnded(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def touchEnded(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def touchEnded(fxn: Boolean): Element = js.native
   
   /**
@@ -510,7 +512,7 @@ trait Element extends StObject {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def touchMoved(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def touchMoved(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def touchMoved(fxn: Boolean): Element = js.native
   
   /**
@@ -523,7 +525,7 @@ trait Element extends StObject {
     *   longer fire.
     *   @chainable
     */
-  def touchStarted(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def touchStarted(fxn: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   def touchStarted(fxn: Boolean): Element = js.native
   
   /**

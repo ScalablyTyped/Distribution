@@ -6,23 +6,20 @@ import typings.angularCompiler.i18nAstMod.Message
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mlParserAstMod {
+  
+  @JSImport("@angular/compiler/src/ml_parser/ast", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/ml_parser/ast", "Attribute")
   @js.native
   class Attribute protected () extends NodeWithI18n {
     def this(name: String, value: String, sourceSpan: ParseSourceSpan) = this()
     def this(name: String, value: String, sourceSpan: ParseSourceSpan, valueSpan: ParseSourceSpan) = this()
-    def this(
-      name: String,
-      value: String,
-      sourceSpan: ParseSourceSpan,
-      valueSpan: js.UndefOr[scala.Nothing],
-      i18n: I18nMeta
-    ) = this()
+    def this(name: String, value: String, sourceSpan: ParseSourceSpan, valueSpan: Unit, i18n: I18nMeta) = this()
     def this(
       name: String,
       value: String,
@@ -40,11 +37,19 @@ object mlParserAstMod {
   
   @JSImport("@angular/compiler/src/ml_parser/ast", "Comment")
   @js.native
-  class Comment protected () extends Node {
+  class Comment protected ()
+    extends StObject
+       with Node {
     def this(value: String, sourceSpan: ParseSourceSpan) = this()
     def this(value: Null, sourceSpan: ParseSourceSpan) = this()
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String | Null = js.native
+    
+    /* CompleteClass */
+    override def visit(visitor: Visitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/ml_parser/ast", "Element")
@@ -71,7 +76,7 @@ object mlParserAstMod {
       children: js.Array[Node],
       sourceSpan: ParseSourceSpan,
       startSourceSpan: ParseSourceSpan,
-      endSourceSpan: js.UndefOr[scala.Nothing],
+      endSourceSpan: Null,
       i18n: I18nMeta
     ) = this()
     def this(
@@ -80,7 +85,7 @@ object mlParserAstMod {
       children: js.Array[Node],
       sourceSpan: ParseSourceSpan,
       startSourceSpan: ParseSourceSpan,
-      endSourceSpan: Null,
+      endSourceSpan: Unit,
       i18n: I18nMeta
     ) = this()
     def this(
@@ -134,7 +139,9 @@ object mlParserAstMod {
   
   @JSImport("@angular/compiler/src/ml_parser/ast", "ExpansionCase")
   @js.native
-  class ExpansionCase protected () extends Node {
+  class ExpansionCase protected ()
+    extends StObject
+       with Node {
     def this(
       value: String,
       expression: js.Array[Node],
@@ -147,26 +154,60 @@ object mlParserAstMod {
     
     var expression: js.Array[Node] = js.native
     
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String = js.native
     
     var valueSourceSpan: ParseSourceSpan = js.native
+    
+    /* CompleteClass */
+    override def visit(visitor: Visitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/ml_parser/ast", "NodeWithI18n")
   @js.native
-  abstract class NodeWithI18n protected () extends Node {
+  abstract class NodeWithI18n protected ()
+    extends StObject
+       with Node {
     def this(sourceSpan: ParseSourceSpan) = this()
     def this(sourceSpan: ParseSourceSpan, i18n: Message) = this()
     def this(sourceSpan: ParseSourceSpan, i18n: typings.angularCompiler.i18nAstMod.Node) = this()
     
     var i18n: js.UndefOr[Message | typings.angularCompiler.i18nAstMod.Node] = js.native
+    
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
+    /* CompleteClass */
+    override def visit(visitor: Visitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/ml_parser/ast", "RecursiveVisitor")
   @js.native
-  class RecursiveVisitor () extends Visitor {
+  class RecursiveVisitor ()
+    extends StObject
+       with Visitor {
+    
+    /* CompleteClass */
+    override def visitAttribute(attribute: Attribute, context: js.Any): js.Any = js.native
     
     var visitChildren: js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitComment(comment: Comment, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitElement(element: Element, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitExpansion(expansion: Expansion, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitExpansionCase(expansionCase: ExpansionCase, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitText(text: Text, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/ml_parser/ast", "Text")
@@ -178,25 +219,21 @@ object mlParserAstMod {
     var value: String = js.native
   }
   
-  @JSImport("@angular/compiler/src/ml_parser/ast", "findNode")
-  @js.native
-  def findNode(nodes: js.Array[Node], position: Double): HtmlAstPath = js.native
+  @scala.inline
+  def findNode(nodes: js.Array[Node], position: Double): HtmlAstPath = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(nodes.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[HtmlAstPath]
   
-  @JSImport("@angular/compiler/src/ml_parser/ast", "visitAll")
-  @js.native
-  def visitAll(visitor: Visitor, nodes: js.Array[Node]): js.Array[_] = js.native
-  @JSImport("@angular/compiler/src/ml_parser/ast", "visitAll")
-  @js.native
-  def visitAll(visitor: Visitor, nodes: js.Array[Node], context: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def visitAll(visitor: Visitor, nodes: js.Array[Node]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def visitAll(visitor: Visitor, nodes: js.Array[Node], context: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   type HtmlAstPath = AstPath[Node]
   
-  @js.native
   trait Node extends StObject {
     
-    var sourceSpan: ParseSourceSpan = js.native
+    var sourceSpan: ParseSourceSpan
     
-    def visit(visitor: Visitor, context: js.Any): js.Any = js.native
+    def visit(visitor: Visitor, context: js.Any): js.Any
   }
   object Node {
     
@@ -217,22 +254,21 @@ object mlParserAstMod {
     }
   }
   
-  @js.native
   trait Visitor extends StObject {
     
-    var visit: js.UndefOr[js.Function2[/* node */ Node, /* context */ js.Any, _]] = js.native
+    var visit: js.UndefOr[js.Function2[/* node */ Node, /* context */ js.Any, js.Any]] = js.undefined
     
-    def visitAttribute(attribute: Attribute, context: js.Any): js.Any = js.native
+    def visitAttribute(attribute: Attribute, context: js.Any): js.Any
     
-    def visitComment(comment: Comment, context: js.Any): js.Any = js.native
+    def visitComment(comment: Comment, context: js.Any): js.Any
     
-    def visitElement(element: Element, context: js.Any): js.Any = js.native
+    def visitElement(element: Element, context: js.Any): js.Any
     
-    def visitExpansion(expansion: Expansion, context: js.Any): js.Any = js.native
+    def visitExpansion(expansion: Expansion, context: js.Any): js.Any
     
-    def visitExpansionCase(expansionCase: ExpansionCase, context: js.Any): js.Any = js.native
+    def visitExpansionCase(expansionCase: ExpansionCase, context: js.Any): js.Any
     
-    def visitText(text: Text, context: js.Any): js.Any = js.native
+    def visitText(text: Text, context: js.Any): js.Any
   }
   object Visitor {
     
@@ -253,7 +289,7 @@ object mlParserAstMod {
     implicit class VisitorMutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setVisit(value: (/* node */ Node, /* context */ js.Any) => _): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      def setVisit(value: (/* node */ Node, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
       
       @scala.inline
       def setVisitAttribute(value: (Attribute, js.Any) => js.Any): Self = StObject.set(x, "visitAttribute", js.Any.fromFunction2(value))

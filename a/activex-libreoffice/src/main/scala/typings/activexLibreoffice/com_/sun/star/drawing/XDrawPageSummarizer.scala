@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is implemented by documents that can create summaries of their {@link DrawPages} .
   * @deprecated Deprecated
   */
-@js.native
-trait XDrawPageSummarizer extends XInterface {
+trait XDrawPageSummarizer
+  extends StObject
+     with XInterface {
   
   /** creates a new {@link DrawPage} with a summary of all {@link DrawPages} in the given collection. */
-  def summarize(xPages: XDrawPages): XDrawPage = js.native
+  def summarize(xPages: XDrawPages): XDrawPage
 }
 object XDrawPageSummarizer {
   

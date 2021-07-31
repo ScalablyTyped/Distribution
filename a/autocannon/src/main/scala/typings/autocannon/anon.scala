@@ -2,78 +2,76 @@ package typings.autocannon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined autocannon.autocannon.Histogram & {  sent :number} */
-  @js.native
   trait Histogramsentnumber extends StObject {
     
     /** The average (mean) value. */
-    var average: Double = js.native
+    var average: Double
     
     /** The highest value for this statistic. */
-    var max: Double = js.native
+    var max: Double
     
     /** The average (mean) value */
-    var mean: Double = js.native
+    var mean: Double
     
     /** The lowest value for this statistic. */
-    var min: Double = js.native
+    var min: Double
     
     /** The 0.001st percentile value for this statistic. */
-    var p0_001: Double = js.native
+    var p0_001: Double
     
     /** The 0.01st percentile value for this statistic. */
-    var p0_01: Double = js.native
+    var p0_01: Double
     
     /** The 0.1st percentile value for this statistic. */
-    var p0_1: Double = js.native
+    var p0_1: Double
     
     /** The 1st percentile value for this statistic. */
-    var p1: Double = js.native
+    var p1: Double
     
     /** The 10th percentile value for this statistic. */
-    var p10: Double = js.native
+    var p10: Double
     
     /** The 25th percentile value for this statistic. */
-    var p25: Double = js.native
+    var p25: Double
     
     /** The 2.5th percentile value for this statistic. */
-    var p2_5: Double = js.native
+    var p2_5: Double
     
     /** The 50th percentile value for this statistic. */
-    var p50: Double = js.native
+    var p50: Double
     
     /** The 75th percentile value for this statistic. */
-    var p75: Double = js.native
+    var p75: Double
     
     /** The 90th percentile value for this statistic. */
-    var p90: Double = js.native
+    var p90: Double
     
     /** The 97.5th percentile value for this statistic. */
-    var p97_5: Double = js.native
+    var p97_5: Double
     
     /** The 99th percentile value for this statistic. */
-    var p99: Double = js.native
+    var p99: Double
     
     /** The 99.9th percentile value for this statistic. */
-    var p99_9: Double = js.native
+    var p99_9: Double
     
     /** The 99.99th percentile value for this statistic. */
-    var p99_99: Double = js.native
+    var p99_99: Double
     
     /** The 99.999th percentile value for this statistic. */
-    var p99_999: Double = js.native
+    var p99_999: Double
     
-    var sent: Double = js.native
+    var sent: Double
     
     /** The standard deviation. */
-    var stddev: Double = js.native
+    var stddev: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Histogramsentnumber {
     

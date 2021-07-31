@@ -6,26 +6,24 @@ import typings.uniApp.uniAppStrings.weixin
 import typings.uniApp.uniAppStrings.xiaomi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserInfoOptions extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。默认为en，仅微信小程序生效。
     */
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     * 授权登录服务提供商，通过uni.getProvider获取
@@ -34,22 +32,22 @@ trait GetUserInfoOptions extends StObject {
     * - sinaweibo: 新浪微博登录
     * - xiaomi: 小米登录
     */
-  var provider: js.UndefOr[weixin | qq | sinaweibo | xiaomi] = js.native
+  var provider: js.UndefOr[weixin | qq | sinaweibo | xiaomi] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function1[/* result */ GetUserInfoRes, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ GetUserInfoRes, Unit]] = js.undefined
   
   /**
     * 超时时间，单位 ms
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * 是否带上登录态信息，仅微信小程序生效。
     */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object GetUserInfoOptions {
   

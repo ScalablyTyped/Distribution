@@ -6,28 +6,23 @@ import typings.luaparse.luaparseStrings.`-_`
 import typings.luaparse.luaparseStrings.not
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnaryExpression
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.UnaryExpression] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.UnaryExpression]
+     with Expression {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
-  var operator: not | `-_` | Tilde | Numbersign = js.native
+  var operator: not | `-_` | Tilde | Numbersign
 }
 object UnaryExpression {
   
   @scala.inline
-  def apply(
-    argument: Expression,
-    operator: not | `-_` | Tilde | Numbersign,
-    `type`: typings.luaparse.luaparseStrings.UnaryExpression
-  ): UnaryExpression = {
+  def apply(argument: Expression, operator: not | `-_` | Tilde | Numbersign): UnaryExpression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[UnaryExpression]
   }
   

@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod.CallRecords
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientUserAgent extends UserAgent {
+trait ClientUserAgent
+  extends StObject
+     with UserAgent {
   
   /**
     * Identifies the platform used by this endpoint. Possible values are: unknown, windows, macOS, iOS, android, web,
     * ipPhone, roomSystem, surfaceHub, holoLens, unknownFutureValue.
     */
-  var platform: js.UndefOr[ClientPlatform] = js.native
+  var platform: js.UndefOr[ClientPlatform] = js.undefined
   
   /**
     * Identifies the family of application software used by this endpoint. Possible values are: unknown, teams,
     * skypeForBusiness, lync, unknownFutureValue.
     */
-  var productFamily: js.UndefOr[ProductFamily] = js.native
+  var productFamily: js.UndefOr[ProductFamily] = js.undefined
 }
 object ClientUserAgent {
   

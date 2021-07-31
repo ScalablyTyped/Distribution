@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,26 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object history {
   
-  @js.native
   trait HistoryItem extends StObject {
     
     /** The unique identifier for the item. */
-    var id: String = js.native
+    var id: String
     
     /** Optional. When this page was last loaded, represented in milliseconds since the epoch. */
-    var lastVisitTime: js.UndefOr[Double] = js.native
+    var lastVisitTime: js.UndefOr[Double] = js.undefined
     
     /** Optional. The title of the page when it was last loaded. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Optional. The number of times the user has navigated to this page by typing in the address. */
-    var typedCount: js.UndefOr[Double] = js.native
+    var typedCount: js.UndefOr[Double] = js.undefined
     
     /** Optional. The URL navigated to by a user. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** Optional. The number of times the user has navigated to this page. */
-    var visitCount: js.UndefOr[Double] = js.native
+    var visitCount: js.UndefOr[Double] = js.undefined
   }
   object HistoryItem {
     
@@ -83,20 +81,19 @@ object history {
     }
   }
   
-  @js.native
   trait HistoryQuery extends StObject {
     
     /** Optional. Limit results to those visited before this date, represented in milliseconds since the epoch. */
-    var endTime: js.UndefOr[Double] = js.native
+    var endTime: js.UndefOr[Double] = js.undefined
     
     /** Optional. The maximum number of results to retrieve. Defaults to 100. */
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
     
     /** Optional. Limit results to those visited after this date, represented in milliseconds since the epoch. */
-    var startTime: js.UndefOr[Double] = js.native
+    var startTime: js.UndefOr[Double] = js.undefined
     
     /** A free-text query to the history service. Leave empty to retrieve all pages. */
-    var text: String = js.native
+    var text: String
   }
   object HistoryQuery {
     
@@ -136,14 +133,13 @@ object history {
   
   type HistoryVisitedEvent = Event[js.Function1[/* result */ HistoryItem, Unit]]
   
-  @js.native
   trait Range extends StObject {
     
     /** Items added to history before this date, represented in milliseconds since the epoch. */
-    var endTime: Double = js.native
+    var endTime: Double
     
     /** Items added to history after this date, represented in milliseconds since the epoch. */
-    var startTime: Double = js.native
+    var startTime: Double
   }
   object Range {
     
@@ -164,14 +160,13 @@ object history {
     }
   }
   
-  @js.native
   trait RemovedResult extends StObject {
     
     /** True if all history was removed. If true, then urls will be empty. */
-    var allHistory: Boolean = js.native
+    var allHistory: Boolean
     
     /** Optional. */
-    var urls: js.UndefOr[js.Array[String]] = js.native
+    var urls: js.UndefOr[js.Array[String]] = js.undefined
   }
   object RemovedResult {
     
@@ -198,11 +193,10 @@ object history {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
     /** The URL for the operation. It must be in the format as returned from a call to history.search. */
-    var url: String = js.native
+    var url: String
   }
   object Url {
     
@@ -220,23 +214,22 @@ object history {
     }
   }
   
-  @js.native
   trait VisitItem extends StObject {
     
     /** The unique identifier for the item. */
-    var id: String = js.native
+    var id: String
     
     /** The visit ID of the referrer. */
-    var referringVisitId: String = js.native
+    var referringVisitId: String
     
     /** The transition type for this visit from its referrer. */
-    var transition: String = js.native
+    var transition: String
     
     /** The unique identifier for this visit. */
-    var visitId: String = js.native
+    var visitId: String
     
     /** Optional. When this visit occurred, represented in milliseconds since the epoch. */
-    var visitTime: js.UndefOr[Double] = js.native
+    var visitTime: js.UndefOr[Double] = js.undefined
   }
   object VisitItem {
     

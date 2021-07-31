@@ -27,10 +27,13 @@ import typings.openlayers.mod.proj.Projection
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interaction {
+  
+  @JSImport("openlayers", "interaction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @classdesc
@@ -53,6 +56,10 @@ object interaction {
   }
   object DoubleClickZoom {
     
+    @JSImport("openlayers", "interaction.DoubleClickZoom")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Handles the {@link ol.MapBrowserEvent map browser event} (if it was a
       * doubleclick) and eventually zooms the map.
@@ -61,9 +68,8 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.DoubleClickZoom.handleEvent")
-    @js.native
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -122,15 +128,10 @@ object interaction {
       def this(
         `type`: DragAndDropEventType,
         file: File,
-        opt_features: js.UndefOr[scala.Nothing],
-        opt_projection: Projection
-      ) = this()
-      def this(
-        `type`: DragAndDropEventType,
-        file: File,
         opt_features: js.Array[Feature],
         opt_projection: Projection
       ) = this()
+      def this(`type`: DragAndDropEventType, file: File, opt_features: Unit, opt_projection: Projection) = this()
       
       /**
         * The features parsed from dropped data.
@@ -405,6 +406,10 @@ object interaction {
   }
   object Draw {
     
+    @JSImport("openlayers", "interaction.Draw")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @classdesc
       * Events emitted by {@link ol.interaction.Draw} instances are instances of
@@ -442,9 +447,8 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.Draw.createBox")
-    @js.native
-    def createBox(): DrawGeometryFunctionType = js.native
+    @scala.inline
+    def createBox(): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createBox")().asInstanceOf[DrawGeometryFunctionType]
     
     /**
       * Create a `geometryFunction` for `mode: 'Circle'` that will create a regular
@@ -460,18 +464,14 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.Draw.createRegularPolygon")
-    @js.native
-    def createRegularPolygon(): DrawGeometryFunctionType = js.native
-    @JSImport("openlayers", "interaction.Draw.createRegularPolygon")
-    @js.native
-    def createRegularPolygon(opt_sides: js.UndefOr[scala.Nothing], opt_angle: Double): DrawGeometryFunctionType = js.native
-    @JSImport("openlayers", "interaction.Draw.createRegularPolygon")
-    @js.native
-    def createRegularPolygon(opt_sides: Double): DrawGeometryFunctionType = js.native
-    @JSImport("openlayers", "interaction.Draw.createRegularPolygon")
-    @js.native
-    def createRegularPolygon(opt_sides: Double, opt_angle: Double): DrawGeometryFunctionType = js.native
+    @scala.inline
+    def createRegularPolygon(): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")().asInstanceOf[DrawGeometryFunctionType]
+    @scala.inline
+    def createRegularPolygon(opt_sides: Double): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any]).asInstanceOf[DrawGeometryFunctionType]
+    @scala.inline
+    def createRegularPolygon(opt_sides: Double, opt_angle: Double): DrawGeometryFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[DrawGeometryFunctionType]
+    @scala.inline
+    def createRegularPolygon(opt_sides: Unit, opt_angle: Double): DrawGeometryFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[DrawGeometryFunctionType]
   }
   
   /**
@@ -642,6 +642,10 @@ object interaction {
   }
   object KeyboardPan {
     
+    @JSImport("openlayers", "interaction.KeyboardPan")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Handles the {@link ol.MapBrowserEvent map browser event} if it was a
       * `KeyEvent`, and decides the direction to pan to (if an arrow key was
@@ -651,9 +655,8 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.KeyboardPan.handleEvent")
-    @js.native
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -693,6 +696,10 @@ object interaction {
   }
   object KeyboardZoom {
     
+    @JSImport("openlayers", "interaction.KeyboardZoom")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Handles the {@link ol.MapBrowserEvent map browser event} if it was a
       * `KeyEvent`, and decides whether to zoom in or out (depending on whether the
@@ -702,9 +709,8 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.KeyboardZoom.handleEvent")
-    @js.native
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -810,6 +816,10 @@ object interaction {
   }
   object MouseWheelZoom {
     
+    @JSImport("openlayers", "interaction.MouseWheelZoom")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Handles the {@link ol.MapBrowserEvent map browser event} (if it was a
       * mousewheel-event) and eventually zooms the map.
@@ -818,9 +828,8 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.MouseWheelZoom.handleEvent")
-    @js.native
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -900,6 +909,10 @@ object interaction {
   }
   object Pointer {
     
+    @JSImport("openlayers", "interaction.Pointer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Handles the {@link ol.MapBrowserEvent map browser event} and may call into
       * other functions, if event sequences like e.g. 'drag' or 'down-up' etc. are
@@ -909,9 +922,8 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.Pointer.handleEvent")
-    @js.native
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -980,6 +992,10 @@ object interaction {
   }
   object Select {
     
+    @JSImport("openlayers", "interaction.Select")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @classdesc
       * Events emitted by {@link ol.interaction.Select} instances are instances of
@@ -1040,9 +1056,8 @@ object interaction {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "interaction.Select.handleEvent")
-    @js.native
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -1196,12 +1211,10 @@ object interaction {
     * interactions to be used with the ol.Map constructor's interactions option.
     * @api stable
     */
-  @JSImport("openlayers", "interaction.defaults")
-  @js.native
-  def defaults(): Collection[Interaction] = js.native
-  @JSImport("openlayers", "interaction.defaults")
-  @js.native
-  def defaults(opt_options: DefaultsOptions): Collection[Interaction] = js.native
+  @scala.inline
+  def defaults(): Collection[Interaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Collection[Interaction]]
+  @scala.inline
+  def defaults(opt_options: DefaultsOptions): Collection[Interaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Collection[Interaction]]
   
   type DragAndDropEventType = String
   

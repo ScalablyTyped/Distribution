@@ -2,18 +2,16 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineWidget extends StObject {
   
   /** Call this if you made some change to the widget's DOM node that might affect its height.
     It'll force CodeMirror to update the height of the line that contains the widget. */
-  def changed(): Unit = js.native
+  def changed(): Unit
   
   /** Removes the widget. */
-  def clear(): Unit = js.native
+  def clear(): Unit
 }
 object LineWidget {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InAppPurchasesFound extends StObject {
   
   /** The total number of in-app purchases flows explored: how many times the robo tries to buy a SKU. */
-  var inAppPurchasesFlowsExplored: js.UndefOr[Double] = js.native
+  var inAppPurchasesFlowsExplored: js.UndefOr[Double] = js.undefined
   
   /** The total number of in-app purchases flows started. */
-  var inAppPurchasesFlowsStarted: js.UndefOr[Double] = js.native
+  var inAppPurchasesFlowsStarted: js.UndefOr[Double] = js.undefined
 }
 object InAppPurchasesFound {
   

@@ -6,19 +6,19 @@ import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Range
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SheetsOnEdit extends AppsScriptEvent {
+trait SheetsOnEdit
+  extends StObject
+     with AppsScriptEvent {
   
-  var oldValue: String = js.native
+  var oldValue: String
   
-  var range: Range = js.native
+  var range: Range
   
-  var source: Spreadsheet = js.native
+  var source: Spreadsheet
   
-  var value: String = js.native
+  var value: String
 }
 object SheetsOnEdit {
   

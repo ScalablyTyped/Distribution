@@ -3,27 +3,27 @@ package typings.webicon
 import typings.webicon.sizeableMod.Sizeable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sizeableOptionsMod {
   
-  @js.native
-  trait SizeableOptions extends Sizeable {
+  trait SizeableOptions
+    extends StObject
+       with Sizeable {
     
     /**
       * An alias of the `iconSize`-property.
       */
     var size: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An alias of the `iconSize`-property.
       */
     var svgIconSize: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SizeableOptions {
     

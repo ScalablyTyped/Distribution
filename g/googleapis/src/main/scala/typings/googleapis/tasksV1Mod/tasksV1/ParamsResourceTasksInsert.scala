@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTasksInsert extends StandardParameters {
+trait ParamsResourceTasksInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Parent task identifier. If the task is created at the top level, this
     * parameter is omitted. Optional.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Previous sibling task identifier. If the task is created at the first
     * position among its siblings, this parameter is omitted. Optional.
     */
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaTask] = js.native
+  var requestBody: js.UndefOr[SchemaTask] = js.undefined
   
   /**
     * Task list identifier.
     */
-  var tasklist: js.UndefOr[String] = js.native
+  var tasklist: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTasksInsert {
   

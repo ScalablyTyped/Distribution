@@ -3,35 +3,33 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowPropTypesIOSStatic extends StObject {
   
   /**
     * Sets the drop shadow color
     * @platform ios
     */
-  var shadowColor: ColorValue = js.native
+  var shadowColor: ColorValue
   
   /**
     * Sets the drop shadow offset
     * @platform ios
     */
-  var shadowOffset: Height = js.native
+  var shadowOffset: Height
   
   /**
     * Sets the drop shadow opacity (multiplied by the color's alpha component)
     * @platform ios
     */
-  var shadowOpacity: Double = js.native
+  var shadowOpacity: Double
   
   /**
     * Sets the drop shadow blur radius
     * @platform ios
     */
-  var shadowRadius: Double = js.native
+  var shadowRadius: Double
 }
 object ShadowPropTypesIOSStatic {
   

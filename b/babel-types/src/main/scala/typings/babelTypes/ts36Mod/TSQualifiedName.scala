@@ -2,20 +2,19 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSQualifiedName
-  extends Node
+  extends StObject
+     with Node
      with TSEntityName {
   
-  var left: TSEntityName = js.native
+  var left: TSEntityName
   
-  var right: Identifier_ = js.native
+  var right: Identifier_
   
   @JSName("type")
-  var type_TSQualifiedName: typings.babelTypes.babelTypesStrings.TSQualifiedName = js.native
+  var type_TSQualifiedName: typings.babelTypes.babelTypesStrings.TSQualifiedName
 }
 object TSQualifiedName {
   

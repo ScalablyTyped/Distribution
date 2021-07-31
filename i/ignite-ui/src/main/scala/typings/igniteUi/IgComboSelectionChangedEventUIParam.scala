@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgComboSelectionChangedEventUIParam extends StObject {
   
   /**
     * Used to obtain reference to array of new selected items. That can be null.
     */
-  var items: js.UndefOr[js.Any] = js.native
+  var items: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to array of old selected items. That can be null.
     */
-  var oldItems: js.UndefOr[js.Any] = js.native
+  var oldItems: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to igCombo.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object IgComboSelectionChangedEventUIParam {
   

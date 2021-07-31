@@ -2,31 +2,29 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResolverQueryLogConfigsResponse extends StObject {
   
   /**
     * If there are more than MaxResults query logging configurations, you can submit another ListResolverQueryLogConfigs request to get the next group of configurations. In the next request, specify the value of NextToken from the previous response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.route53resolverMod.NextToken] = js.undefined
   
   /**
     * A list that contains one ResolverQueryLogConfig element for each query logging configuration that matches the values that you specified for Filter.
     */
-  var ResolverQueryLogConfigs: js.UndefOr[ResolverQueryLogConfigList] = js.native
+  var ResolverQueryLogConfigs: js.UndefOr[ResolverQueryLogConfigList] = js.undefined
   
   /**
     * The total number of query logging configurations that were created by the current account in the specified Region. This count can differ from the number of query logging configurations that are returned in a ListResolverQueryLogConfigs response, depending on the values that you specify in the request.
     */
-  var TotalCount: js.UndefOr[Count] = js.native
+  var TotalCount: js.UndefOr[Count] = js.undefined
   
   /**
     * The total number of query logging configurations that were created by the current account in the specified Region and that match the filters that were specified in the ListResolverQueryLogConfigs request. For the total number of query logging configurations that were created by the current account in the specified Region, see TotalCount.
     */
-  var TotalFilteredCount: js.UndefOr[Count] = js.native
+  var TotalFilteredCount: js.UndefOr[Count] = js.undefined
 }
 object ListResolverQueryLogConfigsResponse {
   

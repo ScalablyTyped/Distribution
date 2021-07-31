@@ -2,19 +2,17 @@ package typings.polished
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluidRangeConfigurationMod {
   
-  @js.native
   trait FluidRangeConfiguration extends StObject {
     
-    var fromSize: String | Double = js.native
+    var fromSize: String | Double
     
-    var prop: String = js.native
+    var prop: String
     
-    var toSize: String | Double = js.native
+    var toSize: String | Double
   }
   object FluidRangeConfiguration {
     

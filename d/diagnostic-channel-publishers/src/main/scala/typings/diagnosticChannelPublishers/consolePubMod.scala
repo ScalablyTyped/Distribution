@@ -3,25 +3,26 @@ package typings.diagnosticChannelPublishers
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object consolePubMod {
+  
+  @JSImport("diagnostic-channel-publishers/dist/src/console.pub", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("diagnostic-channel-publishers/dist/src/console.pub", "console")
   @js.native
   val console: IModulePatcher = js.native
   
-  @JSImport("diagnostic-channel-publishers/dist/src/console.pub", "enable")
-  @js.native
-  def enable(): Unit = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
-  @js.native
   trait IConsoleData extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var stderr: js.UndefOr[Boolean] = js.native
+    var stderr: js.UndefOr[Boolean] = js.undefined
   }
   object IConsoleData {
     

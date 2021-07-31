@@ -12,7 +12,7 @@ ES6 template string helper for deindentation
 | Keywords           | es6, template, strings, indendation, dedent |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 333906 |
+| # downloads        | 428149 |
 | # stars            | 1 |
 
 ## Links

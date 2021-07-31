@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTestGridSessionRequest extends StObject {
   
   /**
     * The ARN for the project that this session belongs to. See CreateTestGridProject and ListTestGridProjects.
     */
-  var projectArn: js.UndefOr[DeviceFarmArn] = js.native
+  var projectArn: js.UndefOr[DeviceFarmArn] = js.undefined
   
   /**
     * An ARN that uniquely identifies a TestGridSession.
     */
-  var sessionArn: js.UndefOr[DeviceFarmArn] = js.native
+  var sessionArn: js.UndefOr[DeviceFarmArn] = js.undefined
   
   /**
     * An ID associated with this session.
     */
-  var sessionId: js.UndefOr[ResourceId] = js.native
+  var sessionId: js.UndefOr[ResourceId] = js.undefined
 }
 object GetTestGridSessionRequest {
   

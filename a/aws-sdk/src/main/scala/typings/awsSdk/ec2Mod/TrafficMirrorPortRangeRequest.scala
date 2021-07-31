@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficMirrorPortRangeRequest extends StObject {
   
   /**
     * The first port in the Traffic Mirror port range. This applies to the TCP and UDP protocols.
     */
-  var FromPort: js.UndefOr[Integer] = js.native
+  var FromPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The last port in the Traffic Mirror port range. This applies to the TCP and UDP protocols.
     */
-  var ToPort: js.UndefOr[Integer] = js.native
+  var ToPort: js.UndefOr[Integer] = js.undefined
 }
 object TrafficMirrorPortRangeRequest {
   

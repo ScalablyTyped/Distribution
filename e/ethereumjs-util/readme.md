@@ -10,9 +10,9 @@ a collection of utility functions for Ethereum
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-util |
 | Keywords           | ethereum, utilties |
-| # releases         | 11 |
-| # dependents       | 976 |
-| # downloads        | 10864382 |
+| # releases         | 13 |
+| # dependents       | 1097 |
+| # downloads        | 13760958 |
 | # stars            | 4 |
 
 ## Links

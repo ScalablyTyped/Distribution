@@ -5,39 +5,39 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** has to be supported by charts providing the capabilities of a horizontal axis, i.e., an **x** -axis. */
-@js.native
-trait ChartAxisXSupplier extends XAxisXSupplier {
+trait ChartAxisXSupplier
+  extends StObject
+     with XAxisXSupplier {
   
   /**
     * This property determines if the x-axis is shown or hidden.
     * @see ChartAxis
     */
-  var HasXAxis: Boolean = js.native
+  var HasXAxis: Boolean
   
   /** Determines if the description of the x-axis is shown or hidden. */
-  var HasXAxisDescription: Boolean = js.native
+  var HasXAxisDescription: Boolean
   
   /**
     * Determines if the major grid of the x-axis is shown or hidden.
     * @see ChartGrid
     */
-  var HasXAxisGrid: Boolean = js.native
+  var HasXAxisGrid: Boolean
   
   /**
     * Determines if the minor grid of the x-axis is shown or hidden.
     * @see ChartGrid
     */
-  var HasXAxisHelpGrid: Boolean = js.native
+  var HasXAxisHelpGrid: Boolean
   
   /**
     * Determines if the title of the x-axis is shown or hidden.
     * @see ChartTitle
     */
-  var HasXAxisTitle: Boolean = js.native
+  var HasXAxisTitle: Boolean
 }
 object ChartAxisXSupplier {
   

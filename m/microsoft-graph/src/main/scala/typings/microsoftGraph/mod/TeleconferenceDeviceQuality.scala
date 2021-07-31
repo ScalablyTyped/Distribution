@@ -2,53 +2,51 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeleconferenceDeviceQuality extends StObject {
   
   /**
     * A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in
     * P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
     */
-  var callChainId: js.UndefOr[String] = js.native
+  var callChainId: js.UndefOr[String] = js.undefined
   
   // A geo-region where the service is deployed, such as ProdNoam.
-  var cloudServiceDeploymentEnvironment: js.UndefOr[NullableOption[String]] = js.native
+  var cloudServiceDeploymentEnvironment: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A unique deployment identifier assigned by Azure.
-  var cloudServiceDeploymentId: js.UndefOr[NullableOption[String]] = js.native
+  var cloudServiceDeploymentId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Azure deployed cloud service instance name, such as FrontEnd_IN_3.
-  var cloudServiceInstanceName: js.UndefOr[NullableOption[String]] = js.native
+  var cloudServiceInstanceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Azure deployed cloud service name, such as contoso.cloudapp.net.
-  var cloudServiceName: js.UndefOr[NullableOption[String]] = js.native
+  var cloudServiceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Any additional description, such as VTC Bldg 30/21.
-  var deviceDescription: js.UndefOr[String] = js.native
+  var deviceDescription: js.UndefOr[String] = js.undefined
   
   // The user media agent name, such as Cisco SX80.
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for a specific media leg of a participant in a conference. One participant can have multiple media
     * leg identifiers if retargeting happens. CVI partner assigns this value.
     */
-  var mediaLegId: js.UndefOr[String] = js.native
+  var mediaLegId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of media qualities in a media session (call), such as audio quality, video quality, and/or screen sharing
     * quality.
     */
-  var mediaQualityList: js.UndefOr[js.Array[TeleconferenceDeviceMediaQuality]] = js.native
+  var mediaQualityList: js.UndefOr[js.Array[TeleconferenceDeviceMediaQuality]] = js.undefined
   
   /**
     * A unique identifier for a specific participant in a conference. The CVI partner needs to copy over Call.MyParticipantId
     * to this property.
     */
-  var participantId: js.UndefOr[String] = js.native
+  var participantId: js.UndefOr[String] = js.undefined
 }
 object TeleconferenceDeviceQuality {
   

@@ -5,23 +5,21 @@ import typings.ckeditorCkeditor5Engine.mod.view.Range
 import typings.ckeditorCkeditor5Engine.mod.view.TreeWalkerDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shallow extends StObject {
   
-  var boundaries: js.UndefOr[Range] = js.native
+  var boundaries: js.UndefOr[Range] = js.undefined
   
-  var direction: js.UndefOr[TreeWalkerDirection] = js.native
+  var direction: js.UndefOr[TreeWalkerDirection] = js.undefined
   
-  var ignoreElementEnd: js.UndefOr[Boolean] = js.native
+  var ignoreElementEnd: js.UndefOr[Boolean] = js.undefined
   
-  var shallow: js.UndefOr[Boolean] = js.native
+  var shallow: js.UndefOr[Boolean] = js.undefined
   
-  var singleCharacters: js.UndefOr[Boolean] = js.native
+  var singleCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var startPosition: js.UndefOr[Position] = js.native
+  var startPosition: js.UndefOr[Position] = js.undefined
 }
 object Shallow {
   

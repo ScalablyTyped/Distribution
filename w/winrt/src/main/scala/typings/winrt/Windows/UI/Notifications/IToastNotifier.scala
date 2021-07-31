@@ -3,23 +3,21 @@ package typings.winrt.Windows.UI.Notifications
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToastNotifier extends StObject {
   
-  def addToSchedule(scheduledToast: ScheduledToastNotification): Unit = js.native
+  def addToSchedule(scheduledToast: ScheduledToastNotification): Unit
   
-  def getScheduledToastNotifications(): IVectorView[ScheduledToastNotification] = js.native
+  def getScheduledToastNotifications(): IVectorView[ScheduledToastNotification]
   
-  def hide(notification: ToastNotification): Unit = js.native
+  def hide(notification: ToastNotification): Unit
   
-  def removeFromSchedule(scheduledToast: ScheduledToastNotification): Unit = js.native
+  def removeFromSchedule(scheduledToast: ScheduledToastNotification): Unit
   
-  var setting: NotificationSetting = js.native
+  var setting: NotificationSetting
   
-  def show(notification: ToastNotification): Unit = js.native
+  def show(notification: ToastNotification): Unit
 }
 object IToastNotifier {
   

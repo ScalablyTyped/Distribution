@@ -5,43 +5,41 @@ import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.NONE
 import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.USE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCsvinputMod {
   
-  @js.native
   trait CSVInput extends StObject {
     
     /**
       * <p>A single character used to indicate that a row should be ignored when the character is present at the start of that row.</p>
       */
-    var Comments: js.UndefOr[String] = js.native
+    var Comments: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A value used to separate individual fields from each other within a record.</p>
       */
-    var FieldDelimiter: js.UndefOr[String] = js.native
+    var FieldDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Describes the first line of input. Valid values are <code>None</code>, <code>Ignore</code>, and <code>Use</code>.</p>
       */
-    var FileHeaderInfo: js.UndefOr[USE | IGNORE | NONE | String] = js.native
+    var FileHeaderInfo: js.UndefOr[USE | IGNORE | NONE | String] = js.undefined
     
     /**
       * <p>A value used as an escape character where the field delimiter is part of the value.</p>
       */
-    var QuoteCharacter: js.UndefOr[String] = js.native
+    var QuoteCharacter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A single character used for escaping the quotation-mark character inside an already escaped value.</p>
       */
-    var QuoteEscapeCharacter: js.UndefOr[String] = js.native
+    var QuoteEscapeCharacter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A value used to separate individual records from each other.</p>
       */
-    var RecordDelimiter: js.UndefOr[String] = js.native
+    var RecordDelimiter: js.UndefOr[String] = js.undefined
   }
   object CSVInput {
     

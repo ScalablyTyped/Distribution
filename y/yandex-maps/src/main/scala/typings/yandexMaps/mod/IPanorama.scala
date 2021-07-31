@@ -2,35 +2,33 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanorama extends StObject {
   
-  def getAngularBBox(): js.Array[Double] = js.native
+  def getAngularBBox(): js.Array[Double]
   
-  def getConnectionArrows(): js.Array[IPanoramaConnectionArrow] = js.native
+  def getConnectionArrows(): js.Array[IPanoramaConnectionArrow]
   
-  def getConnectionMarkers(): js.Array[IPanoramaConnectionMarker] = js.native
+  def getConnectionMarkers(): js.Array[IPanoramaConnectionMarker]
   
-  def getCoordSystem(): ICoordSystem = js.native
+  def getCoordSystem(): ICoordSystem
   
-  def getDefaultDirection(): js.Array[Double] = js.native
+  def getDefaultDirection(): js.Array[Double]
   
-  def getDefaultSpan(): js.Array[Double] = js.native
+  def getDefaultSpan(): js.Array[Double]
   
-  def getGraph(): IPanoramaGraph | Null = js.native
+  def getGraph(): IPanoramaGraph | Null
   
-  def getMarkers(): js.Array[IPanoramaMarker] = js.native
+  def getMarkers(): js.Array[IPanoramaMarker]
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getPosition(): js.Array[Double] = js.native
+  def getPosition(): js.Array[Double]
   
-  def getTileLevels(): js.Array[IPanoramaTileLevel] = js.native
+  def getTileLevels(): js.Array[IPanoramaTileLevel]
   
-  def getTileSize(): js.Array[Double] = js.native
+  def getTileSize(): js.Array[Double]
 }
 object IPanorama {
   

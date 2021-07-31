@@ -10,9 +10,9 @@ Full List of Bad Words and Top Swear Words Banned by Google. As they closed the 
 | ------------------ | :-------------: |
 | Full name          | google-profanity-words |
 | Keywords           | node, google, profanity, words, machine learning |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1451 |
+| # downloads        | 2901 |
 | # stars            | 0 |
 
 ## Links

@@ -8,7 +8,6 @@ import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressEditPost.pluginSidebarMoreMenuItemMod.PluginSidebarMoreMenuItem.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginSidebarMoreMenuItemMod {
@@ -27,22 +26,21 @@ object pluginSidebarMoreMenuItemMod {
   
   object PluginSidebarMoreMenuItem {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * A Dashicon slug or a custom JSX element to be rendered to the left of the menu item
         * label.
         */
-      var icon: js.UndefOr[Icon | Element] = js.native
+      var icon: js.UndefOr[Icon | Element] = js.undefined
       
       /**
         * A string identifying the target sidebar you wish to be activated by this menu item. Must
         * be the same as the `name` prop you have given to that sidebar.
         */
-      var target: String = js.native
+      var target: String
     }
     object Props {
       

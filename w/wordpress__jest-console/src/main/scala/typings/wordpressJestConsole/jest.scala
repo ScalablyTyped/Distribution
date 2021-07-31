@@ -2,53 +2,51 @@ package typings.wordpressJestConsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jest {
   
-  @js.native
   trait Matchers[R, T] extends StObject {
     
     /**
       * Ensure that `console.error` function was called.
       */
-    def toHaveErrored(): R = js.native
+    def toHaveErrored(): R
     
     /**
       * Ensure that `console.error` function was called with specific arguments.
       */
-    def toHaveErroredWith(args: js.Any*): R = js.native
+    def toHaveErroredWith(args: js.Any*): R
     
     /**
       * Ensure that `console.info` function was called.
       */
-    def toHaveInformed(): R = js.native
+    def toHaveInformed(): R
     
     /**
       * Ensure that `console.info` function was called with specific arguments.
       */
-    def toHaveInformedWith(args: js.Any*): R = js.native
+    def toHaveInformedWith(args: js.Any*): R
     
     /**
       * Ensure that `console.log` function was called.
       */
-    def toHaveLogged(): R = js.native
+    def toHaveLogged(): R
     
     /**
       * Ensure that `console.log` function was called with specific arguments.
       */
-    def toHaveLoggedWith(args: js.Any*): R = js.native
+    def toHaveLoggedWith(args: js.Any*): R
     
     /**
       * Ensure that `console.warn` function was called.
       */
-    def toHaveWarned(): R = js.native
+    def toHaveWarned(): R
     
     /**
       * Ensure that `console.warn` function was called with specific arguments.
       */
-    def toHaveWarnedWith(args: js.Any*): R = js.native
+    def toHaveWarnedWith(args: js.Any*): R
   }
   object Matchers {
     
@@ -68,7 +66,7 @@ object jest {
     }
     
     @scala.inline
-    implicit class MatchersMutableBuilder[Self <: Matchers[_, _], R, T] (val x: Self with (Matchers[R, T])) extends AnyVal {
+    implicit class MatchersMutableBuilder[Self <: Matchers[?, ?], R, T] (val x: Self & (Matchers[R, T])) extends AnyVal {
       
       @scala.inline
       def setToHaveErrored(value: () => R): Self = StObject.set(x, "toHaveErrored", js.Any.fromFunction0(value))

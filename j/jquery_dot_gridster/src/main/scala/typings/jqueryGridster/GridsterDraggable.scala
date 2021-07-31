@@ -4,27 +4,25 @@ import typings.jqueryGridster.anon.Helper
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridsterDraggable extends StObject {
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var drag: js.UndefOr[js.Function2[/* event */ Event, /* ui */ GridsterUi, Unit]] = js.native
+  var drag: js.UndefOr[js.Function2[/* event */ Event, /* ui */ GridsterUi, Unit]] = js.undefined
   
-  var handle: js.UndefOr[String] = js.native
+  var handle: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Any] = js.native
+  var items: js.UndefOr[js.Any] = js.undefined
   
-  var limit: js.UndefOr[Boolean] = js.native
+  var limit: js.UndefOr[Boolean] = js.undefined
   
-  var offset_left: js.UndefOr[Double] = js.native
+  var offset_left: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[js.Function2[/* event */ Event, /* ui */ Helper, Unit]] = js.native
+  var start: js.UndefOr[js.Function2[/* event */ Event, /* ui */ Helper, Unit]] = js.undefined
   
-  var stop: js.UndefOr[js.Function2[/* event */ Event, /* ui */ Helper, Unit]] = js.native
+  var stop: js.UndefOr[js.Function2[/* event */ Event, /* ui */ Helper, Unit]] = js.undefined
 }
 object GridsterDraggable {
   

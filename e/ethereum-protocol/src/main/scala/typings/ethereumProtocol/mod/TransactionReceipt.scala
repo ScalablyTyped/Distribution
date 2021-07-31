@@ -4,33 +4,31 @@ import typings.ethereumProtocol.ethereumProtocolNumbers.`0`
 import typings.ethereumProtocol.ethereumProtocolNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionReceipt extends StObject {
   
-  var blockHash: String = js.native
+  var blockHash: String
   
-  var blockNumber: Double = js.native
+  var blockNumber: Double
   
-  var contractAddress: String | Null = js.native
+  var contractAddress: String | Null
   
-  var cumulativeGasUsed: Double = js.native
+  var cumulativeGasUsed: Double
   
-  var from: String = js.native
+  var from: String
   
-  var gasUsed: Double = js.native
+  var gasUsed: Double
   
-  var logs: js.Array[LogEntry] = js.native
+  var logs: js.Array[LogEntry]
   
-  var status: Null | String | `0` | `1` = js.native
+  var status: Null | String | `0` | `1`
   
-  var to: String = js.native
+  var to: String
   
-  var transactionHash: String = js.native
+  var transactionHash: String
   
-  var transactionIndex: Double = js.native
+  var transactionIndex: Double
 }
 object TransactionReceipt {
   
@@ -46,7 +44,7 @@ object TransactionReceipt {
     transactionHash: String,
     transactionIndex: Double
   ): TransactionReceipt = {
-    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any], contractAddress = null, status = null)
     __obj.asInstanceOf[TransactionReceipt]
   }
   

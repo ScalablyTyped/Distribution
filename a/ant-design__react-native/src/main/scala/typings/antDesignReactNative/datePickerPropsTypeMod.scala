@@ -11,48 +11,48 @@ import typings.react.mod.ReactNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerPropsTypeMod {
   
-  @js.native
-  trait DatePickerPropsType extends DatePickerProps {
+  trait DatePickerPropsType
+    extends StObject
+       with DatePickerProps {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     @JSName("defaultDate")
-    var defaultDate_DatePickerPropsType: js.UndefOr[Date] = js.native
+    var defaultDate_DatePickerPropsType: js.UndefOr[Date] = js.undefined
     
-    var dismissText: js.UndefOr[ReactNode] = js.native
+    var dismissText: js.UndefOr[ReactNode] = js.undefined
     
-    var extra: js.UndefOr[String] = js.native
+    var extra: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String | (js.Function1[/* value */ Date, String])] = js.native
+    var format: js.UndefOr[String | (js.Function1[/* value */ Date, String])] = js.undefined
     
     @JSName("locale")
-    var locale_DatePickerPropsType: js.UndefOr[DatePickerLocale] = js.native
+    var locale_DatePickerPropsType: js.UndefOr[DatePickerLocale] = js.undefined
     
     @JSName("maxDate")
-    var maxDate_DatePickerPropsType: js.UndefOr[Date] = js.native
+    var maxDate_DatePickerPropsType: js.UndefOr[Date] = js.undefined
     
     @JSName("minDate")
-    var minDate_DatePickerPropsType: js.UndefOr[Date] = js.native
+    var minDate_DatePickerPropsType: js.UndefOr[Date] = js.undefined
     
     @JSName("mode")
-    var mode_DatePickerPropsType: js.UndefOr[datetime | date | year | month | time] = js.native
+    var mode_DatePickerPropsType: js.UndefOr[datetime | date | year | month | time] = js.undefined
     
-    var okText: js.UndefOr[ReactNode] = js.native
+    var okText: js.UndefOr[ReactNode] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Date, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Date, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DatePickerPropsType {
     

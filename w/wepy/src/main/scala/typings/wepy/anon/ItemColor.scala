@@ -2,15 +2,13 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemColor extends StObject {
   
-  var itemColor: String = js.native
+  var itemColor: String
   
-  var itemList: js.Array[String] = js.native
+  var itemList: js.Array[String]
 }
 object ItemColor {
   

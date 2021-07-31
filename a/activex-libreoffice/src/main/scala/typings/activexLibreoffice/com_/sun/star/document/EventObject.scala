@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,16 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XEventBroadcaster
   * @see DocumentEvent
   */
-@js.native
 trait EventObject
-  extends typings.activexLibreoffice.com_.sun.star.lang.EventObject {
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.lang.EventObject {
   
   /**
     * specifies the name of the occurred event
     *
     * For a list of possible event names see {@link Events} .
     */
-  var EventName: String = js.native
+  var EventName: String
 }
 object EventObject {
   

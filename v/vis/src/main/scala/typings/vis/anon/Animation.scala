@@ -3,15 +3,13 @@ package typings.vis.anon
 import typings.vis.mod.TimelineAnimationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  var animation: TimelineAnimationOptions = js.native
+  var animation: TimelineAnimationOptions
   
-  var focus: Boolean = js.native
+  var focus: Boolean
 }
 object Animation {
   

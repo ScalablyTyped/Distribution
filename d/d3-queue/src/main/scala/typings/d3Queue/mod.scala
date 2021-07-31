@@ -2,19 +2,19 @@ package typings.d3Queue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-queue", "queue")
+  @JSImport("d3-queue", JSImport.Namespace)
   @js.native
-  def queue(): Queue_ = js.native
-  @JSImport("d3-queue", "queue")
-  @js.native
-  def queue(concurrency: Double): Queue_ = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def queue(): Queue_ = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")().asInstanceOf[Queue_]
+  @scala.inline
+  def queue(concurrency: Double): Queue_ = ^.asInstanceOf[js.Dynamic].applyDynamic("queue")(concurrency.asInstanceOf[js.Any]).asInstanceOf[Queue_]
+  
   trait Queue_ extends StObject {
     
     /**
@@ -22,7 +22,7 @@ object mod {
       * Also prevents any new tasks from starting, and immediately invokes the queue.await or
       * queue.awaitAll callback with an error indicating that the queue was aborted.
       */
-    def abort(): this.type = js.native
+    def abort(): this.type
     
     /**
       * Sets the callback to be invoked when all deferred tasks have finished (individual result arguments).
@@ -33,7 +33,7 @@ object mod {
       * Otherwise, the callback is passed each result as an additional argument.
       * @throws If called several times or after `awaitAll`, will throw an `Error`.
       */
-    def await(callback: js.Function2[/* error */ js.Any | Null, /* repeated */ js.Any, Unit]): this.type = js.native
+    def await(callback: js.Function2[/* error */ js.Any | Null, /* repeated */ js.Any, Unit]): this.type
     
     /**
       * Sets the callback to be invoked when all deferred tasks have finished (results array).
@@ -44,7 +44,9 @@ object mod {
       * Otherwise, the callback is also passed an array of results as the second argument.
       * @throws If called several times or after `await`, will throw an `Error`.
       */
-    def awaitAll(callback: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[_]], Unit]): this.type = js.native
+    def awaitAll(
+      callback: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[js.Any]], Unit]
+    ): this.type
     
     /**
       * Adds the specified asynchronous task callback to the queue, with any optional arguments.
@@ -57,7 +59,7 @@ object mod {
       * @param args Additional, optional arguments to be passed into deferred task on invocation.
       * @throws If called after an `await`, will throw an `Error`.
       */
-    def defer(task: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): this.type = js.native
+    def defer(task: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): this.type
   }
   object Queue_ {
     
@@ -65,7 +67,7 @@ object mod {
     def apply(
       abort: () => Queue_,
       await: js.Function2[/* error */ js.Any | Null, /* repeated */ js.Any, Unit] => Queue_,
-      awaitAll: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[_]], Unit] => Queue_,
+      awaitAll: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[js.Any]], Unit] => Queue_,
       defer: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Queue_
     ): Queue_ = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), await = js.Any.fromFunction1(await), awaitAll = js.Any.fromFunction1(awaitAll), defer = js.Any.fromFunction2(defer))
@@ -83,7 +85,7 @@ object mod {
       
       @scala.inline
       def setAwaitAll(
-        value: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[_]], Unit] => Queue_
+        value: js.Function2[/* error */ js.Any | Null, /* results */ js.UndefOr[js.Array[js.Any]], Unit] => Queue_
       ): Self = StObject.set(x, "awaitAll", js.Any.fromFunction1(value))
       
       @scala.inline

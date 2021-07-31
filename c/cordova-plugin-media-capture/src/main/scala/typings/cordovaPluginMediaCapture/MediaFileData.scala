@@ -2,27 +2,25 @@ package typings.cordovaPluginMediaCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates format information about a media file. */
-@js.native
 trait MediaFileData extends StObject {
   
   /** The average bitrate of the content. The value is zero for images. */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /** The actual format of the audio and video content. */
-  var codecs: String = js.native
+  var codecs: String
   
   /** The length of the video or sound clip in seconds. The value is zero for images. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** The height of the image or video in pixels. The value is zero for audio clips. */
-  var height: Double = js.native
+  var height: Double
   
   /** The width of the image or video in pixels. The value is zero for audio clips. */
-  var width: Double = js.native
+  var width: Double
 }
 object MediaFileData {
   

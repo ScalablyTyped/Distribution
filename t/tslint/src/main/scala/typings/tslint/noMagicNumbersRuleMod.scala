@@ -7,7 +7,6 @@ import typings.tslint.ruleMod.IRuleMetadata
 import typings.typescript.mod.SyntaxKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noMagicNumbersRuleMod {
@@ -36,9 +35,8 @@ object noMagicNumbersRuleMod {
     @scala.inline
     def DEFAULT_ALLOWED_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALLOWED")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/noMagicNumbersRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(num: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING(num: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(num.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noMagicNumbersRule", "Rule.metadata")
     @js.native

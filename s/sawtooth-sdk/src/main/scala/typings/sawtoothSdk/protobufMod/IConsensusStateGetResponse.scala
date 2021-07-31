@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ConsensusStateGetResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusStateGetResponse extends StObject {
   
   /** ConsensusStateGetResponse entries */
-  var entries: js.UndefOr[js.Array[IConsensusStateEntry] | Null] = js.native
+  var entries: js.UndefOr[js.Array[IConsensusStateEntry] | Null] = js.undefined
   
   /** ConsensusStateGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IConsensusStateGetResponse {
   

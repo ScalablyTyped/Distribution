@@ -3,18 +3,16 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.com_.sun.star.datatransfer.DataFlavor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** can contain a graphical representation in an arbitrary format. */
-@js.native
 trait VisualRepresentation extends StObject {
   
   /** The data in the format specified by {@link Flavor} . */
-  var Data: js.Any = js.native
+  var Data: js.Any
   
   /** The format of the visual representation. */
-  var Flavor: DataFlavor = js.native
+  var Flavor: DataFlavor
 }
 object VisualRepresentation {
   

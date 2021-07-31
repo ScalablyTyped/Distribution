@@ -3,28 +3,31 @@ package typings.xstate.typesMod
 import typings.xstate.xstateStrings.parallel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParallelMachineConfig[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends StateNodeConfig[TContext, TStateSchema, TEvent] {
+trait ParallelMachineConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */]
+  extends StObject
+     with StateNodeConfig[TContext, TStateSchema, TEvent] {
   
   @JSName("initial")
-  var initial_ParallelMachineConfig: js.UndefOr[scala.Nothing] = js.native
+  var initial_ParallelMachineConfig: Unit
   
   @JSName("type")
-  var type_ParallelMachineConfig: js.UndefOr[parallel] = js.native
+  var type_ParallelMachineConfig: js.UndefOr[parallel] = js.undefined
 }
 object ParallelMachineConfig {
   
   @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](): ParallelMachineConfig[TContext, TStateSchema, TEvent] = {
-    val __obj = js.Dynamic.literal()
+  def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](initial: Unit): ParallelMachineConfig[TContext, TStateSchema, TEvent] = {
+    val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelMachineConfig[TContext, TStateSchema, TEvent]]
   }
   
   @scala.inline
-  implicit class ParallelMachineConfigMutableBuilder[Self <: ParallelMachineConfig[_, _, _], TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] (val x: Self with (ParallelMachineConfig[TContext, TStateSchema, TEvent])) extends AnyVal {
+  implicit class ParallelMachineConfigMutableBuilder[Self <: ParallelMachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */] (val x: Self & (ParallelMachineConfig[TContext, TStateSchema, TEvent])) extends AnyVal {
+    
+    @scala.inline
+    def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(value: parallel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

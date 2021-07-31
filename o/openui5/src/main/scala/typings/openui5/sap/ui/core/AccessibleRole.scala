@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,176 +16,292 @@ sealed trait AccessibleRole extends StObject
 object AccessibleRole extends StObject {
   
   @js.native
-  sealed trait Alert extends AccessibleRole
+  sealed trait Alert
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait AlertDialog extends AccessibleRole
+  sealed trait AlertDialog
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Application extends AccessibleRole
+  sealed trait Application
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Banner extends AccessibleRole
+  sealed trait Banner
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Button extends AccessibleRole
+  sealed trait Button
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Checkbox extends AccessibleRole
+  sealed trait Checkbox
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait ColumnHeader extends AccessibleRole
+  sealed trait ColumnHeader
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Combobox extends AccessibleRole
+  sealed trait Combobox
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait ContentInfo extends AccessibleRole
+  sealed trait ContentInfo
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Definition extends AccessibleRole
+  sealed trait Definition
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Description extends AccessibleRole
+  sealed trait Description
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Dialog extends AccessibleRole
+  sealed trait Dialog
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Directory extends AccessibleRole
+  sealed trait Directory
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Document extends AccessibleRole
+  sealed trait Document
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Grid extends AccessibleRole
+  sealed trait Grid
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait GridCell extends AccessibleRole
+  sealed trait GridCell
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Group extends AccessibleRole
+  sealed trait Group
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Heading extends AccessibleRole
+  sealed trait Heading
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Img extends AccessibleRole
+  sealed trait Img
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Link extends AccessibleRole
+  sealed trait Link
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait List extends AccessibleRole
+  sealed trait List
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait ListItem extends AccessibleRole
+  sealed trait ListItem
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Listbox extends AccessibleRole
+  sealed trait Listbox
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Log extends AccessibleRole
+  sealed trait Log
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Main extends AccessibleRole
+  sealed trait Main
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Marquee extends AccessibleRole
+  sealed trait Marquee
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Menu extends AccessibleRole
+  sealed trait Menu
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait MenuItem extends AccessibleRole
+  sealed trait MenuItem
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait MenuItemCheckbox extends AccessibleRole
+  sealed trait MenuItemCheckbox
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait MenuItemRadio extends AccessibleRole
+  sealed trait MenuItemRadio
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Menubar extends AccessibleRole
+  sealed trait Menubar
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Navigation extends AccessibleRole
+  sealed trait Navigation
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Note extends AccessibleRole
+  sealed trait Note
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Option extends AccessibleRole
+  sealed trait Option
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Presentation extends AccessibleRole
+  sealed trait Presentation
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait ProgressBar extends AccessibleRole
+  sealed trait ProgressBar
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Radio extends AccessibleRole
+  sealed trait Radio
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait RadioGroup extends AccessibleRole
+  sealed trait RadioGroup
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Region extends AccessibleRole
+  sealed trait Region
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Row extends AccessibleRole
+  sealed trait Row
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait RowHeader extends AccessibleRole
+  sealed trait RowHeader
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Search extends AccessibleRole
+  sealed trait Search
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Secondary extends AccessibleRole
+  sealed trait Secondary
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait SeeAlso extends AccessibleRole
+  sealed trait SeeAlso
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Separator extends AccessibleRole
+  sealed trait Separator
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Slider extends AccessibleRole
+  sealed trait Slider
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait SpinButton extends AccessibleRole
+  sealed trait SpinButton
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Status extends AccessibleRole
+  sealed trait Status
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Tab extends AccessibleRole
+  sealed trait Tab
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Tablist extends AccessibleRole
+  sealed trait Tablist
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Tabpanel extends AccessibleRole
+  sealed trait Tabpanel
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Textbox extends AccessibleRole
+  sealed trait Textbox
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Timer extends AccessibleRole
+  sealed trait Timer
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Toolbar extends AccessibleRole
+  sealed trait Toolbar
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Tooltip extends AccessibleRole
+  sealed trait Tooltip
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait Tree extends AccessibleRole
+  sealed trait Tree
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait TreeGrid extends AccessibleRole
+  sealed trait TreeGrid
+    extends StObject
+       with AccessibleRole
   
   @js.native
-  sealed trait TreeItem extends AccessibleRole
+  sealed trait TreeItem
+    extends StObject
+       with AccessibleRole
 }

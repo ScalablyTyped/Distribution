@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpsItemRequest extends StObject {
   
   /**
     * The ID of the OpsItem that you want to get.
     */
-  var OpsItemId: typings.awsSdk.ssmMod.OpsItemId = js.native
+  var OpsItemId: typings.awsSdk.ssmMod.OpsItemId
 }
 object GetOpsItemRequest {
   

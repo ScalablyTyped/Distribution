@@ -3,12 +3,11 @@ package typings.kiiCloudSdk.KiiCloud
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KiiThingFields
-  extends /**
+  extends StObject
+     with /**
   * custom fields.
   */
 /* name */ StringDictionary[js.Any] {
@@ -16,87 +15,87 @@ trait KiiThingFields
   /**
     * firmware version given by thing vendor.
     */
-  var _firmwareVersion: js.UndefOr[String] = js.native
+  var _firmwareVersion: js.UndefOr[String] = js.undefined
   
   /**
     * lot identifier given by thing vendor.
     */
-  var _lot: js.UndefOr[String] = js.native
+  var _lot: js.UndefOr[String] = js.undefined
   
   /**
     * arbitrary number field.
     */
-  var _numberField1: js.UndefOr[Double] = js.native
+  var _numberField1: js.UndefOr[Double] = js.undefined
   
   /**
     * arbitrary number field.
     */
-  var _numberField2: js.UndefOr[Double] = js.native
+  var _numberField2: js.UndefOr[Double] = js.undefined
   
   /**
     * arbitrary number field.
     */
-  var _numberField3: js.UndefOr[Double] = js.native
+  var _numberField3: js.UndefOr[Double] = js.undefined
   
   /**
     * arbitrary number field.
     */
-  var _numberField4: js.UndefOr[Double] = js.native
+  var _numberField4: js.UndefOr[Double] = js.undefined
   
   /**
     * arbitrary number field.
     */
-  var _numberField5: js.UndefOr[Double] = js.native
+  var _numberField5: js.UndefOr[Double] = js.undefined
   
   /**
     * thing password given by thing vendor.
     */
-  var _password: String = js.native
+  var _password: String
   
   /**
     * product name given by thing vendor.
     */
-  var _productName: js.UndefOr[String] = js.native
+  var _productName: js.UndefOr[String] = js.undefined
   
   /**
     * arbitrary string field.
     */
-  var _stringField1: js.UndefOr[String] = js.native
+  var _stringField1: js.UndefOr[String] = js.undefined
   
   /**
     * arbitrary string field.
     */
-  var _stringField2: js.UndefOr[String] = js.native
+  var _stringField2: js.UndefOr[String] = js.undefined
   
   /**
     * arbitrary string field.
     */
-  var _stringField3: js.UndefOr[String] = js.native
+  var _stringField3: js.UndefOr[String] = js.undefined
   
   /**
     * arbitrary string field.
     */
-  var _stringField4: js.UndefOr[String] = js.native
+  var _stringField4: js.UndefOr[String] = js.undefined
   
   /**
     * arbitrary string field.
     */
-  var _stringField5: js.UndefOr[String] = js.native
+  var _stringField5: js.UndefOr[String] = js.undefined
   
   /**
     * thing type given by thing vendor.
     */
-  var _thingType: js.UndefOr[String] = js.native
+  var _thingType: js.UndefOr[String] = js.undefined
   
   /**
     * vendor identifier given by thing vendor.
     */
-  var _vendor: js.UndefOr[String] = js.native
+  var _vendor: js.UndefOr[String] = js.undefined
   
   /**
     * thing identifier given by thing vendor.
     */
-  var _vendorThingID: String = js.native
+  var _vendorThingID: String
 }
 object KiiThingFields {
   

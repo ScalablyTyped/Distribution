@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult extends StObject {
   
   /** ID of the recommended catalog item */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Additional item metadata / annotations. Possible values: * `catalogItem`: JSON representation of the catalogItem. Will be set if `returnCatalogItem` is set to true in
@@ -19,8 +17,8 @@ trait GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult exte
   var itemMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
   
@@ -43,7 +41,7 @@ object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
     def setItemMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[js.Any]
     ): Self = StObject.set(x, "itemMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline

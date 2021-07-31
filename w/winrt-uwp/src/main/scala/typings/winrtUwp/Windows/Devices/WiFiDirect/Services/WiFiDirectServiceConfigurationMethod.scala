@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object WiFiDirectServiceConfigurationMethod extends StObject {
   
   /** Do not require input at configuration. */
   @js.native
-  sealed trait default extends WiFiDirectServiceConfigurationMethod
+  sealed trait default
+    extends StObject
+       with WiFiDirectServiceConfigurationMethod
   
   /** Display a PIN at configuration. */
   @js.native
-  sealed trait pinDisplay extends WiFiDirectServiceConfigurationMethod
+  sealed trait pinDisplay
+    extends StObject
+       with WiFiDirectServiceConfigurationMethod
   
   /** Request PIN entry at configuration. */
   @js.native
-  sealed trait pinEntry extends WiFiDirectServiceConfigurationMethod
+  sealed trait pinEntry
+    extends StObject
+       with WiFiDirectServiceConfigurationMethod
 }

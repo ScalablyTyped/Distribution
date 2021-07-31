@@ -2,23 +2,21 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProximityObject extends StObject {
   
-  var address: js.UndefOr[AddressObject] = js.native
+  var address: js.UndefOr[AddressObject] = js.undefined
   
-  var bidModifier: js.UndefOr[Double] = js.native
+  var bidModifier: js.UndefOr[Double] = js.undefined
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var radiusUnits: RadiusUnits = js.native
+  var radiusUnits: RadiusUnits
 }
 object ProximityObject {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTableVersionsResponse extends StObject {
   
   /**
     * A continuation token, if the list of available versions does not include the last one.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of strings identifying available versions of the specified table.
     */
-  var TableVersions: js.UndefOr[GetTableVersionsList] = js.native
+  var TableVersions: js.UndefOr[GetTableVersionsList] = js.undefined
 }
 object GetTableVersionsResponse {
   

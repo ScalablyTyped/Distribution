@@ -9,7 +9,6 @@ import typings.wordpressComponents.iconMod.Icon.IconType
 import typings.wordpressComponents.placeholderMod.Placeholder.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object placeholderMod {
@@ -28,35 +27,36 @@ object placeholderMod {
   
   object Placeholder {
     
-    @js.native
-    trait Props extends HTMLProps[HTMLDivElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLDivElement] {
       
       /**
         * If provided, renders an icon next to the label.
         */
-      var icon: js.UndefOr[IconType[js.Object]] = js.native
+      var icon: js.UndefOr[IconType[js.Object]] = js.undefined
       
       /**
         * Renders instruction text below label.
         */
-      var instructions: js.UndefOr[String] = js.native
+      var instructions: js.UndefOr[String] = js.undefined
       
       /**
         * Changes placeholder children layout from `flex-row` to
         * `flex-column`.
         */
-      var isColumnLayout: js.UndefOr[Boolean] = js.native
+      var isColumnLayout: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Optionally pass in `noticeUI` obtained from `withNotices` HOC.
         */
-      var notices: js.UndefOr[Element] = js.native
+      var notices: js.UndefOr[Element] = js.undefined
       
       /**
         * Used internally to display a preview.
         * See {@link https://github.com/WordPress/gutenberg/tree/master/packages/block-editor/src/components/media-placeholder | MediaPlaceholder}
         */
-      var preview: js.UndefOr[Element] = js.native
+      var preview: js.UndefOr[Element] = js.undefined
     }
     object Props {
       

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activeReceiptRuleSetMod {
@@ -33,6 +32,10 @@ object activeReceiptRuleSetMod {
   /* static members */
   object ActiveReceiptRuleSet {
     
+    @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ActiveReceiptRuleSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,35 +45,29 @@ object activeReceiptRuleSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ActiveReceiptRuleSet = js.native
-    @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ActiveReceiptRuleSet = js.native
-    @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ActiveReceiptRuleSetState): ActiveReceiptRuleSet = js.native
-    @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ActiveReceiptRuleSetState, opts: CustomResourceOptions): ActiveReceiptRuleSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ActiveReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ActiveReceiptRuleSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ActiveReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ActiveReceiptRuleSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ActiveReceiptRuleSetState): ActiveReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActiveReceiptRuleSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ActiveReceiptRuleSetState, opts: CustomResourceOptions): ActiveReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ActiveReceiptRuleSet]
     
     /**
       * Returns true if the given object is an instance of ActiveReceiptRuleSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/activeReceiptRuleSet.ActiveReceiptRuleSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/activeReceiptRuleSet.ActiveReceiptRuleSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/activeReceiptRuleSet.ActiveReceiptRuleSet */ Boolean]
   }
   
-  @js.native
   trait ActiveReceiptRuleSetArgs extends StObject {
     
     /**
       * The name of the rule set
       */
-    val ruleSetName: Input[String] = js.native
+    val ruleSetName: Input[String]
   }
   object ActiveReceiptRuleSetArgs {
     
@@ -88,13 +85,12 @@ object activeReceiptRuleSetMod {
     }
   }
   
-  @js.native
   trait ActiveReceiptRuleSetState extends StObject {
     
     /**
       * The name of the rule set
       */
-    val ruleSetName: js.UndefOr[Input[String]] = js.native
+    val ruleSetName: js.UndefOr[Input[String]] = js.undefined
   }
   object ActiveReceiptRuleSetState {
     

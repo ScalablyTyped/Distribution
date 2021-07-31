@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountPasswordRules extends StObject {
   
   /**
     * When set to **true**, passwords expire. The default value is `false`.
     */
-  var expirePassword: js.UndefOr[String] = js.native
+  var expirePassword: js.UndefOr[String] = js.undefined
   
   /**
     * The number of days before passwords expire. To use this property, the `expirePassword` property must be set to **true**.
     */
-  var expirePasswordDays: js.UndefOr[String] = js.native
+  var expirePasswordDays: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `expirePasswordDays` property is editable.
     *
     */
-  var expirePasswordDaysMetadata: js.UndefOr[AccountPasswordExpirePasswordDays] = js.native
+  var expirePasswordDaysMetadata: js.UndefOr[AccountPasswordExpirePasswordDays] = js.undefined
   
   /**
     * The number of minutes a user is locked out of the system after three (?) failed login attempts. The default value is `2`.
     */
-  var lockoutDurationMinutes: js.UndefOr[String] = js.native
+  var lockoutDurationMinutes: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `lockoutDurationMinutes` property is editable.
     *
     */
-  var lockoutDurationMinutesMetadata: js.UndefOr[AccountPasswordLockoutDurationMinutes] = js.native
+  var lockoutDurationMinutesMetadata: js.UndefOr[AccountPasswordLockoutDurationMinutes] = js.undefined
   
   /**
     * The interval associated with the user lockout after a failed login attempt.
@@ -44,64 +42,64 @@ trait AccountPasswordRules extends StObject {
     * - `hours`
     * - `days`
     */
-  var lockoutDurationType: js.UndefOr[String] = js.native
+  var lockoutDurationType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `lockoutDurationType` property is editable.
     *
     */
-  var lockoutDurationTypeMetadata: js.UndefOr[AccountPasswordLockoutDurationType] = js.native
+  var lockoutDurationTypeMetadata: js.UndefOr[AccountPasswordLockoutDurationType] = js.undefined
   
   /**
     * The minimum number of days after a password is set before it can be changed. This value can be `0` or more days. The default value is `0`.
     */
-  var minimumPasswordAgeDays: js.UndefOr[String] = js.native
+  var minimumPasswordAgeDays: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `minimumPasswordAgeDays` property is editable.
     *
     */
-  var minimumPasswordAgeDaysMetadata: js.UndefOr[AccountPasswordMinimumPasswordAgeDays] = js.native
+  var minimumPasswordAgeDaysMetadata: js.UndefOr[AccountPasswordMinimumPasswordAgeDays] = js.undefined
   
   /**
     * The minimum number of characters in the password. This value must be a number between `6` and `15`. The default value is `6`.
     */
-  var minimumPasswordLength: js.UndefOr[String] = js.native
+  var minimumPasswordLength: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `minimumPasswordLength` property is editable.
     *
     */
-  var minimumPasswordLengthMetadata: js.UndefOr[AccountMinimumPasswordLength] = js.native
+  var minimumPasswordLengthMetadata: js.UndefOr[AccountMinimumPasswordLength] = js.undefined
   
   /**
     * When set to **true**, passwords must include a digit. The default value is `false`.
     */
-  var passwordIncludeDigit: js.UndefOr[String] = js.native
+  var passwordIncludeDigit: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include either a digit or a special character. The default value is `false`.
     *
     * **Note**: Passwords cannot include angle brackets (`<` `>`) or spaces.
     */
-  var passwordIncludeDigitOrSpecialCharacter: js.UndefOr[String] = js.native
+  var passwordIncludeDigitOrSpecialCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include a lowercase letter. The default value is `false`.
     */
-  var passwordIncludeLowerCase: js.UndefOr[String] = js.native
+  var passwordIncludeLowerCase: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include a special character. The default value is `false`.
     *
     * **Note**: Passwords cannot include angle brackets (`<` `>`) or spaces.
     */
-  var passwordIncludeSpecialCharacter: js.UndefOr[String] = js.native
+  var passwordIncludeSpecialCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, passwords must include an uppercase letter. The default value is `false`.
     */
-  var passwordIncludeUpperCase: js.UndefOr[String] = js.native
+  var passwordIncludeUpperCase: js.UndefOr[String] = js.undefined
   
   /**
     * The type of password strength. Possible values are:
@@ -120,18 +118,18 @@ trait AccountPasswordRules extends StObject {
     *    - `passwordIncludeUpperCase`
     *    - `questionsRequired`
     */
-  var passwordStrengthType: js.UndefOr[String] = js.native
+  var passwordStrengthType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `passwordStrengthType` property is editable.
     *
     */
-  var passwordStrengthTypeMetadata: js.UndefOr[AccountPasswordStrengthType] = js.native
+  var passwordStrengthTypeMetadata: js.UndefOr[AccountPasswordStrengthType] = js.undefined
   
   /**
     * The number of security questions required to confirm the user’s identity before the user can reset their password. The default value is `0`.
     */
-  var questionsRequired: js.UndefOr[String] = js.native
+  var questionsRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `questionsRequired` property is editable.
@@ -140,7 +138,7 @@ trait AccountPasswordRules extends StObject {
   var questionsRequiredMetadata: js.UndefOr[
     /* Information about the number of password questions required (0 to 4) to confirm a user's identity when a user needs to reset their password.
     */ AccountPasswordQuestionsRequired
-  ] = js.native
+  ] = js.undefined
 }
 object AccountPasswordRules {
   

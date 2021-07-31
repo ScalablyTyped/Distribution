@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Storage.Streams
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables a Windows Runtime component to provide sequential read access to an encapsulated stream. */
-@js.native
 trait IInputStreamReference extends StObject {
   
   /**
     * Opens a stream for sequential read access.
     * @return The asynchronous operation.
     */
-  def openSequentialReadAsync(): IPromiseWithIAsyncOperation[IInputStream] = js.native
+  def openSequentialReadAsync(): IPromiseWithIAsyncOperation[IInputStream]
 }
 object IInputStreamReference {
   

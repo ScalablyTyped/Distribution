@@ -2,26 +2,24 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveStreamHealthStatus extends StObject {
   
   /**
     * The configurations issues on this stream
     */
-  var configurationIssues: js.UndefOr[js.Array[SchemaLiveStreamConfigurationIssue]] = js.native
+  var configurationIssues: js.UndefOr[js.Array[SchemaLiveStreamConfigurationIssue]] = js.undefined
   
   /**
     * The last time this status was updated (in seconds)
     */
-  var lastUpdateTimeSeconds: js.UndefOr[String] = js.native
+  var lastUpdateTimeSeconds: js.UndefOr[String] = js.undefined
   
   /**
     * The status code of this stream
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveStreamHealthStatus {
   

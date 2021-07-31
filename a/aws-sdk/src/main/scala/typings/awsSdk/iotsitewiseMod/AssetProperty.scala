@@ -2,41 +2,39 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetProperty extends StObject {
   
   /**
     * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
     */
-  var alias: js.UndefOr[PropertyAlias] = js.native
+  var alias: js.UndefOr[PropertyAlias] = js.undefined
   
   /**
     * The data type of the asset property.
     */
-  var dataType: PropertyDataType = js.native
+  var dataType: PropertyDataType
   
   /**
     * The ID of the asset property.
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The name of the property.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The asset property's notification topic and state. For more information, see UpdateAssetProperty.
     */
-  var notification: js.UndefOr[PropertyNotification] = js.native
+  var notification: js.UndefOr[PropertyNotification] = js.undefined
   
   /**
     * The unit (such as Newtons or RPM) of the asset property.
     */
-  var unit: js.UndefOr[PropertyUnit] = js.native
+  var unit: js.UndefOr[PropertyUnit] = js.undefined
 }
 object AssetProperty {
   

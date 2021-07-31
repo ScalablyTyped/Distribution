@@ -6,32 +6,34 @@ import typings.latlonGeohash.mod.Geohash.Neighbours
 import typings.latlonGeohash.mod.Geohash.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
+    @JSImport("latlon-geohash", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("latlon-geohash", "default.Direction")
     @js.native
     object Direction extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.latlonGeohash.mod.Geohash.Direction with String] = js.native
+      def apply(value: String): js.UndefOr[typings.latlonGeohash.mod.Geohash.Direction & String] = js.native
       
-      /* "E" */ val East: typings.latlonGeohash.mod.Geohash.Direction.East with String = js.native
+      /* "E" */ val East: typings.latlonGeohash.mod.Geohash.Direction.East & String = js.native
       
-      /* "N" */ val North: typings.latlonGeohash.mod.Geohash.Direction.North with String = js.native
+      /* "N" */ val North: typings.latlonGeohash.mod.Geohash.Direction.North & String = js.native
       
-      /* "S" */ val South: typings.latlonGeohash.mod.Geohash.Direction.South with String = js.native
+      /* "S" */ val South: typings.latlonGeohash.mod.Geohash.Direction.South & String = js.native
       
-      /* "W" */ val West: typings.latlonGeohash.mod.Geohash.Direction.West with String = js.native
+      /* "W" */ val West: typings.latlonGeohash.mod.Geohash.Direction.West & String = js.native
     }
     
-    @JSImport("latlon-geohash", "default.adjacent")
-    @js.native
-    def adjacent(geohash: String, direction: String): String = js.native
+    @scala.inline
+    def adjacent(geohash: String, direction: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjacent")(geohash.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Determines adjacent cell in given direction.
       *
@@ -40,9 +42,8 @@ object mod {
       * @returns Geocode of adjacent cell.
       * @throws  Invalid geohash.
       */
-    @JSImport("latlon-geohash", "default.adjacent")
-    @js.native
-    def adjacent(geohash: String, direction: Direction): String = js.native
+    @scala.inline
+    def adjacent(geohash: String, direction: Direction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjacent")(geohash.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns SW/NE latitude/longitude bounds of specified geohash.
@@ -51,9 +52,8 @@ object mod {
       * @returns The Bounds
       * @throws  Invalid geohash.
       */
-    @JSImport("latlon-geohash", "default.bounds")
-    @js.native
-    def bounds(geohash: String): Bounds = js.native
+    @scala.inline
+    def bounds(geohash: String): Bounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(geohash.asInstanceOf[js.Any]).asInstanceOf[Bounds]
     
     /**
       * Decode geohash to latitude/longitude (location is approximate centre of geohash cell,
@@ -66,9 +66,8 @@ object mod {
       * @example
       *     var latlon = Geohash.decode('u120fxw'); // latlon: { lat: 52.205, lon: 0.1188 }
       */
-    @JSImport("latlon-geohash", "default.decode")
-    @js.native
-    def decode(geohash: String): Point = js.native
+    @scala.inline
+    def decode(geohash: String): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(geohash.asInstanceOf[js.Any]).asInstanceOf[Point]
     
     /**
       * Encodes latitude/longitude to geohash, either to specified precision or to automatically
@@ -83,12 +82,10 @@ object mod {
       * @example
       *     var geohash = Geohash.encode(52.205, 0.119, 7); // geohash: 'u120fxw'
       */
-    @JSImport("latlon-geohash", "default.encode")
-    @js.native
-    def encode(latitude: Double, longitude: Double): String = js.native
-    @JSImport("latlon-geohash", "default.encode")
-    @js.native
-    def encode(latitude: Double, longitude: Double, precision: Double): String = js.native
+    @scala.inline
+    def encode(latitude: Double, longitude: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def encode(latitude: Double, longitude: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns all 8 adjacent cells to specified geohash.
@@ -97,9 +94,8 @@ object mod {
       * @returns The neighbours
       * @throws  Invalid geohash.
       */
-    @JSImport("latlon-geohash", "default.neighbours")
-    @js.native
-    def neighbours(geohash: String): Neighbours = js.native
+    @scala.inline
+    def neighbours(geohash: String): Neighbours = ^.asInstanceOf[js.Dynamic].applyDynamic("neighbours")(geohash.asInstanceOf[js.Any]).asInstanceOf[Neighbours]
   }
   
   object Geohash {
@@ -111,25 +107,32 @@ object mod {
     object Direction extends StObject {
       
       @js.native
-      sealed trait East extends Direction
+      sealed trait East
+        extends StObject
+           with Direction
       
       @js.native
-      sealed trait North extends Direction
+      sealed trait North
+        extends StObject
+           with Direction
       
       @js.native
-      sealed trait South extends Direction
+      sealed trait South
+        extends StObject
+           with Direction
       
       @js.native
-      sealed trait West extends Direction
+      sealed trait West
+        extends StObject
+           with Direction
     }
     
-    @js.native
     trait Bounds extends StObject {
       
       @JSName("ne")
-      var ne_FBounds: Point = js.native
+      var ne_FBounds: Point
       
-      var sw: Point = js.native
+      var sw: Point
     }
     object Bounds {
       
@@ -151,25 +154,24 @@ object mod {
       }
     }
     
-    @js.native
     trait Neighbours extends StObject {
       
-      var e: String = js.native
+      var e: String
       
-      var n: String = js.native
+      var n: String
       
       @JSName("ne")
-      var ne_FNeighbours: String = js.native
+      var ne_FNeighbours: String
       
-      var nw: String = js.native
+      var nw: String
       
-      var s: String = js.native
+      var s: String
       
-      var se: String = js.native
+      var se: String
       
-      var sw: String = js.native
+      var sw: String
       
-      var w: String = js.native
+      var w: String
     }
     object Neighbours {
       
@@ -209,12 +211,11 @@ object mod {
       }
     }
     
-    @js.native
     trait Point extends StObject {
       
-      var lat: Double = js.native
+      var lat: Double
       
-      var lon: Double = js.native
+      var lon: Double
     }
     object Point {
       

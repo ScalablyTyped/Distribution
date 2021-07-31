@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An image consumer is a component which wants to display or just receive an image from an image producer.
   * @see XImageProducer
   */
-@js.native
-trait XImageConsumer extends XInterface {
+trait XImageConsumer
+  extends StObject
+     with XInterface {
   
   /**
     * is called for the notification of the degree to which the image is delivered.
@@ -24,10 +24,10 @@ trait XImageConsumer extends XInterface {
     * of a multi-frame animation has been completed, or when an error in loading or producing the image has occurred. The image consumer should remove
     * itself from the list of consumers registered with the image producer at this time, unless it is interested in successive frames.
     */
-  def complete(Status: Double, xProducer: XImageProducer): Unit = js.native
+  def complete(Status: Double, xProducer: XImageProducer): Unit
   
   /** initializes the consumer with image dimensions. */
-  def init(Width: Double, Height: Double): Unit = js.native
+  def init(Width: Double, Height: Double): Unit
   
   /** changes color model for next pixels typically called once after initialization. */
   def setColorModel(
@@ -37,7 +37,7 @@ trait XImageConsumer extends XInterface {
     GreenMask: Double,
     BlueMask: Double,
     AlphaMask: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * delivers a chunk of pixels as `long` values.
@@ -54,7 +54,7 @@ trait XImageConsumer extends XInterface {
     aProducerData: SeqEquiv[Double],
     nOffset: Double,
     nScanSize: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * delivers a chunk of pixels as `byte` values.
@@ -71,7 +71,7 @@ trait XImageConsumer extends XInterface {
     aProducerData: SeqEquiv[Double],
     nOffset: Double,
     nScanSize: Double
-  ): Unit = js.native
+  ): Unit
 }
 object XImageConsumer {
   

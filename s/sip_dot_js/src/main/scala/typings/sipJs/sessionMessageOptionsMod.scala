@@ -4,19 +4,17 @@ import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionMessageOptionsMod {
   
-  @js.native
   trait SessionMessageOptions extends StObject {
     
     /** See `core` API. */
-    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.native
+    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.undefined
     
     /** See `core` API. */
-    var requestOptions: js.UndefOr[RequestOptions] = js.native
+    var requestOptions: js.UndefOr[RequestOptions] = js.undefined
   }
   object SessionMessageOptions {
     

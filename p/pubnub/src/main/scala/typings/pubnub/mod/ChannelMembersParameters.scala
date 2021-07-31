@@ -4,21 +4,19 @@ import typings.pubnub.anon.ChannelFields
 import typings.pubnub.anon.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelMembersParameters extends StObject {
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var include: js.UndefOr[ChannelFields] = js.native
+  var include: js.UndefOr[ChannelFields] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var page: js.UndefOr[Next] = js.native
+  var page: js.UndefOr[Next] = js.undefined
   
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
 }
 object ChannelMembersParameters {
   

@@ -12,7 +12,7 @@ Foundation as React components.
 | Keywords           | badge, button, callout, video, grid, icon, label, media-object, menu, progress-bar, responsive, switch, top-bar, react, foundation, react-component |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 165462 |
+| # downloads        | 209190 |
 | # stars            | 11 |
 
 ## Links

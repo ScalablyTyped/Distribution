@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CancelEventArgs extends EventArgs {
+trait CancelEventArgs
+  extends StObject
+     with EventArgs {
   
-  var cancel: Boolean = js.native
+  var cancel: Boolean
 }
 object CancelEventArgs {
   

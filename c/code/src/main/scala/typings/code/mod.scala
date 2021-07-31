@@ -4,59 +4,77 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("code", "count")
+  @JSImport("code", JSImport.Namespace)
   @js.native
-  def count(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("code", "expect")
-  @js.native
-  def expect[T](value: T): AssertionChain[T] = js.native
-  @JSImport("code", "expect")
-  @js.native
-  def expect[T](value: T, prefix: String): AssertionChain[T] = js.native
-  @JSImport("code", "expect")
-  @js.native
-  def expect[T](value: js.Array[T]): AssertionChain[T] = js.native
-  @JSImport("code", "expect")
-  @js.native
-  def expect[T](value: js.Array[T], prefix: String): AssertionChain[T] = js.native
+  @scala.inline
+  def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
   
-  @JSImport("code", "fail")
-  @js.native
-  def fail(message: String): Unit = js.native
+  @scala.inline
+  def expect[T](value: T): AssertionChain[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionChain[T]]
+  @scala.inline
+  def expect[T](value: T, prefix: String): AssertionChain[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[AssertionChain[T]]
+  @scala.inline
+  def expect[T](value: js.Array[T]): AssertionChain[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[AssertionChain[T]]
+  @scala.inline
+  def expect[T](value: js.Array[T], prefix: String): AssertionChain[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[AssertionChain[T]]
   
-  @JSImport("code", "incomplete")
-  @js.native
-  def incomplete(): js.Array[String] | Null = js.native
+  @scala.inline
+  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
   
   @JSImport("code", "settings")
   @js.native
   val settings: Settings_ = js.native
   
-  @JSImport("code", "thrownAt")
-  @js.native
-  def thrownAt(): CodeError = js.native
-  @JSImport("code", "thrownAt")
-  @js.native
-  def thrownAt(error: Error): CodeError = js.native
+  @scala.inline
+  def thrownAt(): CodeError = ^.asInstanceOf[js.Dynamic].applyDynamic("thrownAt")().asInstanceOf[CodeError]
+  @scala.inline
+  def thrownAt(error: Error): CodeError = ^.asInstanceOf[js.Dynamic].applyDynamic("thrownAt")(error.asInstanceOf[js.Any]).asInstanceOf[CodeError]
   
-  type Assertion[T] = Grammar[T] with Flags[T]
+  trait Assertion[T]
+    extends StObject
+       with Grammar[T]
+       with Flags[T]
+  object Assertion {
+    
+    @scala.inline
+    def apply[T](
+      a: AssertionChain[T],
+      an: AssertionChain[T],
+      and: AssertionChain[T],
+      at: AssertionChain[T],
+      be: AssertionChain[T],
+      have: AssertionChain[T],
+      in: AssertionChain[T],
+      not: AssertionChain[T],
+      once: AssertionChain[T],
+      only: AssertionChain[T],
+      part: AssertionChain[T],
+      shallow: AssertionChain[T],
+      to: AssertionChain[T]
+    ): Assertion[T] = {
+      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], an = an.asInstanceOf[js.Any], and = and.asInstanceOf[js.Any], at = at.asInstanceOf[js.Any], be = be.asInstanceOf[js.Any], have = have.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], not = not.asInstanceOf[js.Any], once = once.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any], shallow = shallow.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Assertion[T]]
+    }
+  }
   
-  type AssertionChain[T] = Assertion[T] with Expectation[T]
+  type AssertionChain[T] = Assertion[T] & Expectation[T]
   
-  @js.native
   trait CodeError extends StObject {
     
-    var column: String = js.native
+    var column: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var line: String = js.native
+    var line: String
   }
   object CodeError {
     
@@ -80,37 +98,40 @@ object mod {
     }
   }
   
-  type Expectation[T] = Types[T] with Values[T]
-  
   @js.native
+  trait Expectation[T]
+    extends StObject
+       with Types[T]
+       with Values[T]
+  
   trait Flags[T] extends StObject {
     
     /** Inverses the expected result of any assertion */
-    var not: AssertionChain[T] = js.native
+    var not: AssertionChain[T]
     
     /**
       * Requires that inclusion matches appear only once in the provided value.
       * Used by include().
       */
-    var once: AssertionChain[T] = js.native
+    var once: AssertionChain[T]
     
     /**
       * Requires that only the provided elements appear in the provided value.
       * Used by include().
       */
-    var only: AssertionChain[T] = js.native
+    var only: AssertionChain[T]
     
     /**
       * Allows a partial match when asserting inclusion
       * Used by include(). Defaults to false.
       */
-    var part: AssertionChain[T] = js.native
+    var part: AssertionChain[T]
     
     /**
       * Performs a comparison using strict equality (===).
       * Code defaults to deep comparison. Used by equal() and include().
       */
-    var shallow: AssertionChain[T] = js.native
+    var shallow: AssertionChain[T]
   }
   object Flags {
     
@@ -127,7 +148,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FlagsMutableBuilder[Self <: Flags[_], T] (val x: Self with Flags[T]) extends AnyVal {
+    implicit class FlagsMutableBuilder[Self <: Flags[?], T] (val x: Self & Flags[T]) extends AnyVal {
       
       @scala.inline
       def setNot(value: AssertionChain[T]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
@@ -146,32 +167,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Grammar[T] extends StObject {
     
     /** Connecting word. */
-    var a: AssertionChain[T] = js.native
+    var a: AssertionChain[T]
     
     /** Connecting word. */
-    var an: AssertionChain[T] = js.native
+    var an: AssertionChain[T]
     
     /** Connecting word. */
-    var and: AssertionChain[T] = js.native
+    var and: AssertionChain[T]
     
     /** Connecting word. */
-    var at: AssertionChain[T] = js.native
+    var at: AssertionChain[T]
     
     /** Connecting word. */
-    var be: AssertionChain[T] = js.native
+    var be: AssertionChain[T]
     
     /** Connecting word. */
-    var have: AssertionChain[T] = js.native
+    var have: AssertionChain[T]
     
     /** Connecting word. */
-    var in: AssertionChain[T] = js.native
+    var in: AssertionChain[T]
     
     /** Connecting word. */
-    var to: AssertionChain[T] = js.native
+    var to: AssertionChain[T]
   }
   object Grammar {
     
@@ -191,7 +211,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GrammarMutableBuilder[Self <: Grammar[_], T] (val x: Self with Grammar[T]) extends AnyVal {
+    implicit class GrammarMutableBuilder[Self <: Grammar[?], T] (val x: Self & Grammar[T]) extends AnyVal {
       
       @scala.inline
       def setA(value: AssertionChain[T]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
@@ -219,20 +239,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Settings_ extends StObject {
     
     /**
       * Ignore object prototypes when doing a deep comparison?
       * Defaults to false.
       */
-    var comparePrototypes: js.UndefOr[Boolean] = js.native
+    var comparePrototypes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Truncate long assertion error messages for readability?
       * Defaults to true.
       */
-    var truncateMessages: js.UndefOr[Boolean] = js.native
+    var truncateMessages: js.UndefOr[Boolean] = js.undefined
   }
   object Settings_ {
     
@@ -279,11 +298,11 @@ object mod {
     
     /** Asserts that the reference value is an error. */
     def error(): AssertionChain[T] = js.native
-    def error(`type`: js.UndefOr[scala.Nothing], message: String): AssertionChain[T] = js.native
-    def error(`type`: js.UndefOr[scala.Nothing], message: RegExp): AssertionChain[T] = js.native
     def error(`type`: js.Any): AssertionChain[T] = js.native
     def error(`type`: js.Any, message: String): AssertionChain[T] = js.native
     def error(`type`: js.Any, message: RegExp): AssertionChain[T] = js.native
+    def error(`type`: Unit, message: String): AssertionChain[T] = js.native
+    def error(`type`: Unit, message: RegExp): AssertionChain[T] = js.native
     
     /** Asserts that the reference value is a function. */
     def function(): AssertionChain[T] = js.native
@@ -405,19 +424,19 @@ object mod {
     
     /** Asserts that the Promise reference value rejects with an exception when called */
     def reject(): AssertionChain[T] = js.native
-    def reject(`type`: js.UndefOr[scala.Nothing], message: String): AssertionChain[T] = js.native
-    def reject(`type`: js.UndefOr[scala.Nothing], message: RegExp): AssertionChain[T] = js.native
     def reject(`type`: js.Any): AssertionChain[T] = js.native
     def reject(`type`: js.Any, message: String): AssertionChain[T] = js.native
     def reject(`type`: js.Any, message: RegExp): AssertionChain[T] = js.native
+    def reject(`type`: Unit, message: String): AssertionChain[T] = js.native
+    def reject(`type`: Unit, message: RegExp): AssertionChain[T] = js.native
     
     /** Asserts that the Promise reference value rejects with an exception when called */
     def rejects(): AssertionChain[T] = js.native
-    def rejects(`type`: js.UndefOr[scala.Nothing], message: String): AssertionChain[T] = js.native
-    def rejects(`type`: js.UndefOr[scala.Nothing], message: RegExp): AssertionChain[T] = js.native
     def rejects(`type`: js.Any): AssertionChain[T] = js.native
     def rejects(`type`: js.Any, message: String): AssertionChain[T] = js.native
     def rejects(`type`: js.Any, message: RegExp): AssertionChain[T] = js.native
+    def rejects(`type`: Unit, message: String): AssertionChain[T] = js.native
+    def rejects(`type`: Unit, message: RegExp): AssertionChain[T] = js.native
     
     /** Asserts that the reference value satisfies the provided validator function. */
     def satisfies(validator: js.Function1[/* value */ T, Boolean]): AssertionChain[T] = js.native
@@ -433,19 +452,19 @@ object mod {
     
     /** Asserts that the function reference value throws an exception when called. */
     def `throw`(): AssertionChain[T] = js.native
-    def `throw`(`type`: js.UndefOr[scala.Nothing], message: String): AssertionChain[T] = js.native
-    def `throw`(`type`: js.UndefOr[scala.Nothing], message: RegExp): AssertionChain[T] = js.native
     def `throw`(`type`: js.Any): AssertionChain[T] = js.native
     def `throw`(`type`: js.Any, message: String): AssertionChain[T] = js.native
     def `throw`(`type`: js.Any, message: RegExp): AssertionChain[T] = js.native
+    def `throw`(`type`: Unit, message: String): AssertionChain[T] = js.native
+    def `throw`(`type`: Unit, message: RegExp): AssertionChain[T] = js.native
     
     /** Asserts that the function reference value throws an exception when called. */
     def throws(): AssertionChain[T] = js.native
-    def throws(`type`: js.UndefOr[scala.Nothing], message: String): AssertionChain[T] = js.native
-    def throws(`type`: js.UndefOr[scala.Nothing], message: RegExp): AssertionChain[T] = js.native
     def throws(`type`: js.Any): AssertionChain[T] = js.native
     def throws(`type`: js.Any, message: String): AssertionChain[T] = js.native
     def throws(`type`: js.Any, message: RegExp): AssertionChain[T] = js.native
+    def throws(`type`: Unit, message: String): AssertionChain[T] = js.native
+    def throws(`type`: Unit, message: RegExp): AssertionChain[T] = js.native
     
     /** Asserts that the reference value is true. */
     def `true`(): AssertionChain[T] = js.native

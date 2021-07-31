@@ -18,12 +18,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RasterInfo
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**
@@ -73,7 +73,7 @@ trait RasterInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
     */
-  var histograms: js.Array[_] = js.native
+  var histograms: js.Array[js.Any] = js.native
   
   /**
     * Raster key properties.

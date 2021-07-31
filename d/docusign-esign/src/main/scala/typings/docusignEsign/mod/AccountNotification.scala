@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountNotification extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait AccountNotification extends StObject {
     */
   var expirations: js.UndefOr[
     /* A complex element that specifies the expiration settings for the envelope. */ Expirations
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A complex element that specifies reminder settings for the envelope
     */
   var reminders: js.UndefOr[
     /* A complex element that specifies reminder settings for the envelope. */ Reminders
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, the user can override envelope expirations.
     */
-  var userOverrideEnabled: js.UndefOr[String] = js.native
+  var userOverrideEnabled: js.UndefOr[String] = js.undefined
 }
 object AccountNotification {
   

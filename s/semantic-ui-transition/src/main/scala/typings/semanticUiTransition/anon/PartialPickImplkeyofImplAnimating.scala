@@ -2,30 +2,28 @@ package typings.semanticUiTransition.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-transition.SemanticUI.Transition.ClassNameSettings._Impl, keyof semantic-ui-transition.SemanticUI.Transition.ClassNameSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplAnimating extends StObject {
   
-  var animating: js.UndefOr[String] = js.native
+  var animating: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[String] = js.native
+  var hidden: js.UndefOr[String] = js.undefined
   
-  var inward: js.UndefOr[String] = js.native
+  var inward: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
-  var looping: js.UndefOr[String] = js.native
+  var looping: js.UndefOr[String] = js.undefined
   
-  var outward: js.UndefOr[String] = js.native
+  var outward: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplAnimating {
   

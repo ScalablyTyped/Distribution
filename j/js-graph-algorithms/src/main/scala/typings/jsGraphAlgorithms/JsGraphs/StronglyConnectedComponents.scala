@@ -2,23 +2,21 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StronglyConnectedComponents extends StObject {
   
-  def componentCount(): Double = js.native
+  def componentCount(): Double
   
-  def componentId(v: Double): Double = js.native
+  def componentId(v: Double): Double
   
-  var count: js.Any = js.native
+  var count: js.Any
   
-  def dfs(G: DiGraph, v: Double): Unit = js.native
+  def dfs(G: DiGraph, v: Double): Unit
   
-  var id: js.Any = js.native
+  var id: js.Any
   
-  var marked: js.Any = js.native
+  var marked: js.Any
 }
 object StronglyConnectedComponents {
   

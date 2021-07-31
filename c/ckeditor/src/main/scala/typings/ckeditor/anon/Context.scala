@@ -3,17 +3,15 @@ package typings.ckeditor.anon
 import typings.ckeditor.CKEDITOR.filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var enterMode: js.UndefOr[Double] = js.native
+  var enterMode: js.UndefOr[Double] = js.undefined
   
-  var filter: js.UndefOr[typings.ckeditor.CKEDITOR.filter] = js.native
+  var filter: js.UndefOr[typings.ckeditor.CKEDITOR.filter] = js.undefined
 }
 object Context {
   

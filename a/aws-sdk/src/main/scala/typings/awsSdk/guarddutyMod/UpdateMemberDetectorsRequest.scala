@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMemberDetectorsRequest extends StObject {
   
   /**
     * A list of member account IDs to be updated.
     */
-  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds = js.native
+  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
   
   /**
     * An object describes which data sources will be updated.
     */
-  var DataSources: js.UndefOr[DataSourceConfigurations] = js.native
+  var DataSources: js.UndefOr[DataSourceConfigurations] = js.undefined
   
   /**
     * The detector ID of the master account.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
 object UpdateMemberDetectorsRequest {
   

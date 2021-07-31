@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userPoolDomainMod {
@@ -63,6 +62,10 @@ object userPoolDomainMod {
   /* static members */
   object UserPoolDomain {
     
+    @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing UserPoolDomain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,45 +75,39 @@ object userPoolDomainMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID]): UserPoolDomain = js.native
-    @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserPoolDomain = js.native
-    @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolDomainState): UserPoolDomain = js.native
-    @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): UserPoolDomain = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolDomainState): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): UserPoolDomain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPoolDomain]
     
     /**
       * Returns true if the given object is an instance of UserPoolDomain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ Boolean]
   }
   
-  @js.native
   trait UserPoolDomainArgs extends StObject {
     
     /**
       * The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain string.
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
     
     /**
       * The user pool ID.
       */
-    val userPoolId: Input[String] = js.native
+    val userPoolId: Input[String]
   }
   object UserPoolDomainArgs {
     
@@ -137,43 +134,42 @@ object userPoolDomainMod {
     }
   }
   
-  @js.native
   trait UserPoolDomainState extends StObject {
     
     /**
       * The AWS account ID for the user pool owner.
       */
-    val awsAccountId: js.UndefOr[Input[String]] = js.native
+    val awsAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL of the CloudFront distribution. This is required to generate the ALIAS `aws.route53.Record`
       */
-    val cloudfrontDistributionArn: js.UndefOr[Input[String]] = js.native
+    val cloudfrontDistributionArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain string.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 bucket where the static files for this domain are stored.
       */
-    val s3Bucket: js.UndefOr[Input[String]] = js.native
+    val s3Bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user pool ID.
       */
-    val userPoolId: js.UndefOr[Input[String]] = js.native
+    val userPoolId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The app version.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object UserPoolDomainState {
     

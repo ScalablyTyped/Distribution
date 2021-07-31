@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditAssignedInventorySourcesRequest extends StObject {
   
   /** The ID of the advertiser that owns the parent inventory source group. The parent partner does not have access to these assigned inventory sources. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** The assigned inventory sources to create in bulk, specified as a list of AssignedInventorySources. */
-  var createdAssignedInventorySources: js.UndefOr[js.Array[AssignedInventorySource]] = js.native
+  var createdAssignedInventorySources: js.UndefOr[js.Array[AssignedInventorySource]] = js.undefined
   
   /** The IDs of the assigned inventory sources to delete in bulk, specified as a list of assigned_inventory_source_ids. */
-  var deletedAssignedInventorySources: js.UndefOr[js.Array[String]] = js.native
+  var deletedAssignedInventorySources: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The ID of the partner that owns the inventory source group. Only this partner has write access to these assigned inventory sources. */
-  var partnerId: js.UndefOr[String] = js.native
+  var partnerId: js.UndefOr[String] = js.undefined
 }
 object BulkEditAssignedInventorySourcesRequest {
   

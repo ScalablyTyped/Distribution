@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.7
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/service-error-classification/rc.svg)](https://www.npmjs.com/package/@aws-sdk/service-error-classification) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/service-error-classification.svg)](ht
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/service-error-classification/latest.svg)](https://www.npmjs.com/package/@aws-sdk/service-error-classification) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/service-error-classification.svg)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/service-error-classification |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 2 |
-| # downloads        | 3788797 |
+| # releases         | 33 |
+| # dependents       | 1 |
+| # downloads        | 7059456 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/service-error-classification)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/service-error-classification)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fservice-error-classification)

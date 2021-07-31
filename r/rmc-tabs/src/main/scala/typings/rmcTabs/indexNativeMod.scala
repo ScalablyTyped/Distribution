@@ -4,7 +4,6 @@ import typings.rmcTabs.anon.TypeofDefaultTabBar
 import typings.rmcTabs.defaultTabBarNativeMod.PropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexNativeMod {

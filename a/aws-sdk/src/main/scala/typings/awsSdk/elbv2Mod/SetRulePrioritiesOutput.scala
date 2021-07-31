@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRulePrioritiesOutput extends StObject {
   
   /**
     * Information about the rules.
     */
-  var Rules: js.UndefOr[typings.awsSdk.elbv2Mod.Rules] = js.native
+  var Rules: js.UndefOr[typings.awsSdk.elbv2Mod.Rules] = js.undefined
 }
 object SetRulePrioritiesOutput {
   

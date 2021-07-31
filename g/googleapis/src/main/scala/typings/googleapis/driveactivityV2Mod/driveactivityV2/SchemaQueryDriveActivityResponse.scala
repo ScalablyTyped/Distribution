@@ -2,25 +2,23 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for querying Drive activity.
   */
-@js.native
 trait SchemaQueryDriveActivityResponse extends StObject {
   
   /**
     * List of activity requested.
     */
-  var activities: js.UndefOr[js.Array[SchemaDriveActivity]] = js.native
+  var activities: js.UndefOr[js.Array[SchemaDriveActivity]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaQueryDriveActivityResponse {
   

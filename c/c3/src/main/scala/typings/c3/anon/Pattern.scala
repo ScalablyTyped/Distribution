@@ -2,21 +2,19 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pattern extends StObject {
   
   /**
     * Set custom color pattern. Order matches the order of the data.
     */
-  var pattern: js.UndefOr[js.Array[String]] = js.native
+  var pattern: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * **Experimental.**
     */
-  var threshold: js.UndefOr[Max] = js.native
+  var threshold: js.UndefOr[Max] = js.undefined
 }
 object Pattern {
   

@@ -3,7 +3,6 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://www.hl7.org/implement/standards/index.cfm?ref=common for details on
   * the standard.
   */
-@js.native
 trait SchemaMessage extends StObject {
   
   /**
     * The datetime when the message was created. Set by the server.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Raw message bytes.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * User-supplied key-value pairs used to organize HL7v2 stores.  Label keys
@@ -34,40 +32,40 @@ trait SchemaMessage extends StObject {
     * [\p{Ll}\p{Lo}\p{N}_-]{0,63}  No more than 64 labels can be associated
     * with a given store.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The message type and trigger event for this message. MSH-9.
     */
-  var messageType: js.UndefOr[String] = js.native
+  var messageType: js.UndefOr[String] = js.undefined
   
   /**
     * Resource name of the Message, of the form
     * `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_id}/messages/{message_id}`.
     * Assigned by the server.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The parsed version of the raw message data.
     */
-  var parsedData: js.UndefOr[SchemaParsedData] = js.native
+  var parsedData: js.UndefOr[SchemaParsedData] = js.undefined
   
   /**
     * All patient IDs listed in the PID-2, PID-3, and PID-4 segments of this
     * message.
     */
-  var patientIds: js.UndefOr[js.Array[SchemaPatientId]] = js.native
+  var patientIds: js.UndefOr[js.Array[SchemaPatientId]] = js.undefined
   
   /**
     * The hospital that this message came from. MSH-4.
     */
-  var sendFacility: js.UndefOr[String] = js.native
+  var sendFacility: js.UndefOr[String] = js.undefined
   
   /**
     * The datetime the sending application sent this message. MSH-7.
     */
-  var sendTime: js.UndefOr[String] = js.native
+  var sendTime: js.UndefOr[String] = js.undefined
 }
 object SchemaMessage {
   

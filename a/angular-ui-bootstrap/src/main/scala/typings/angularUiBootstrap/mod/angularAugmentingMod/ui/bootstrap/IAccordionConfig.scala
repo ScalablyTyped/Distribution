@@ -2,10 +2,8 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccordionConfig extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait IAccordionConfig extends StObject {
     *
     * @default true
     */
-  var closeOthers: js.UndefOr[Boolean] = js.native
+  var closeOthers: js.UndefOr[Boolean] = js.undefined
 }
 object IAccordionConfig {
   

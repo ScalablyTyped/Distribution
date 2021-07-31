@@ -2,59 +2,59 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Color extends Value {
+trait Color
+  extends StObject
+     with Value {
   
   /**
     * Get the alpha transparency component of the color.
     * @returns number between 0 and 1 inclusive;
     */
-  def getA(): Double = js.native
+  def getA(): Double
   
   /**
     * Get the blue component of the color.
     * @returns integer between 0 and 255 inclusive;
     */
-  def getB(): Double = js.native
+  def getB(): Double
   
   /**
     * Get the green component of the color.
     * @returns integer between 0 and 255 inclusive;
     */
-  def getG(): Double = js.native
+  def getG(): Double
   
   /**
     * Get the red component of the color.
     * @returns integer between 0 and 255 inclusive;
     */
-  def getR(): Double = js.native
+  def getR(): Double
   
   /**
     * Set the alpha component of the color.
     * @param a number between 0 and 1 inclusive;
     */
-  def setA(a: Double): Unit = js.native
+  def setA(a: Double): Unit
   
   /**
     * Set the blue component of the color.
     * @param b integer between 0 and 255 inclusive;
     */
-  def setB(b: Double): Unit = js.native
+  def setB(b: Double): Unit
   
   /**
     * Set the green component of the color.
     * @param g integer between 0 and 255 inclusive;
     */
-  def setG(g: Double): Unit = js.native
+  def setG(g: Double): Unit
   
   /**
     * Set the red component of the color.
     * @returns integer between 0 and 255 inclusive;
     */
-  def setR(r: Double): Unit = js.native
+  def setR(r: Double): Unit
 }
 object Color {
   

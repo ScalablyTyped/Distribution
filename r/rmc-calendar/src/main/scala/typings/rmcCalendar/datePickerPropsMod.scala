@@ -9,57 +9,55 @@ import typings.rmcCalendar.rmcCalendarStrings.xl
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerPropsMod {
   
-  @js.native
   trait PropsType extends StObject {
     
     /** 默认日期，default: today */
-    var defaultDate: js.UndefOr[Date] = js.native
+    var defaultDate: js.UndefOr[Date] = js.undefined
     
     /** 选择值 */
-    var endDate: js.UndefOr[Date] = js.native
+    var endDate: js.UndefOr[Date] = js.undefined
     
     /** 日期扩展数据 */
-    var getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.native
+    var getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.undefined
     
     /** 无限滚动优化（大范围选择），default: false */
-    var infiniteOpt: js.UndefOr[Boolean] = js.native
+    var infiniteOpt: js.UndefOr[Boolean] = js.undefined
     
     /** 初始化月个数，default: 6 */
-    var initalMonths: js.UndefOr[Double] = js.native
+    var initalMonths: js.UndefOr[Double] = js.undefined
     
     /** 本地化 */
-    var locale: js.UndefOr[Locale] = js.native
+    var locale: js.UndefOr[Locale] = js.undefined
     
     /** 最大日期 */
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
     /** 最小日期 */
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
     /** 日期点击回调 */
-    var onCellClick: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+    var onCellClick: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
     
-    var onLayout: js.UndefOr[js.Function1[/* clientHight */ Double, Unit]] = js.native
+    var onLayout: js.UndefOr[js.Function1[/* clientHight */ Double, Unit]] = js.undefined
     
     /** 选择区间包含不可用日期 */
-    var onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[Date], Unit]] = js.native
+    var onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[Date], Unit]] = js.undefined
     
     /** (web only) 样式前缀 */
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
     /** 行大小 */
-    var rowSize: js.UndefOr[normal | xl] = js.native
+    var rowSize: js.UndefOr[normal | xl] = js.undefined
     
     /** 选择值 */
-    var startDate: js.UndefOr[Date] = js.native
+    var startDate: js.UndefOr[Date] = js.undefined
     
     /** 选择类型，default: range，one: 单日，range: 日期区间 */
-    var `type`: js.UndefOr[one | range] = js.native
+    var `type`: js.UndefOr[one | range] = js.undefined
   }
   object PropsType {
     

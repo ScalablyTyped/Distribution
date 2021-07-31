@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsesPermission extends StObject {
   
   /** Optionally, the maximum SDK version for which the permission is required. */
-  var maxSdkVersion: js.UndefOr[Double] = js.native
+  var maxSdkVersion: js.UndefOr[Double] = js.undefined
   
   /** The name of the permission requested. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object UsesPermission {
   

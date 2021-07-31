@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,11 +21,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ENV extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.ENV with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.ENV & Double] = js.native
   
-  /* 1 */ val WEBGL: typings.pixiJs.PIXI.ENV.WEBGL with Double = js.native
+  /* 1 */ val WEBGL: typings.pixiJs.PIXI.ENV.WEBGL & Double = js.native
   
-  /* 2 */ val WEBGL2: typings.pixiJs.PIXI.ENV.WEBGL2 with Double = js.native
+  /* 2 */ val WEBGL2: typings.pixiJs.PIXI.ENV.WEBGL2 & Double = js.native
   
-  /* 0 */ val WEBGL_LEGACY: typings.pixiJs.PIXI.ENV.WEBGL_LEGACY with Double = js.native
+  /* 0 */ val WEBGL_LEGACY: typings.pixiJs.PIXI.ENV.WEBGL_LEGACY & Double = js.native
 }

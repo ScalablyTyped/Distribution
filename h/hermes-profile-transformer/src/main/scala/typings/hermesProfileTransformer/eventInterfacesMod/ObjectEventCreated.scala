@@ -3,18 +3,17 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.OBJECT_EVENTS_CREATED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectEventCreated
-  extends ObjectEvent
-     with SharedEventProperties {
+  extends StObject
+     with SharedEventProperties
+     with ObjectEvent {
   
   @JSName("ph")
-  var ph_ObjectEventCreated: OBJECT_EVENTS_CREATED = js.native
+  var ph_ObjectEventCreated: OBJECT_EVENTS_CREATED
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object ObjectEventCreated {
   

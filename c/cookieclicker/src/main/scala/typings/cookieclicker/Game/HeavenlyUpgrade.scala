@@ -3,11 +3,12 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.cookieclickerStrings.prestige
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeavenlyUpgrade extends Upgrade {
+trait HeavenlyUpgrade
+  extends StObject
+     with Upgrade {
   
   @JSName("pool")
   var pool_HeavenlyUpgrade: prestige = js.native

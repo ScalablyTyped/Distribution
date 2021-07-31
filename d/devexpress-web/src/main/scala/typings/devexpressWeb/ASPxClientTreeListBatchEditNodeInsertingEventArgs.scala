@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.BatchEditNodeInserting event.
   */
-@js.native
-trait ASPxClientTreeListBatchEditNodeInsertingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientTreeListBatchEditNodeInsertingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the processed node's key value.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
   
   /**
     * Gets the parent node key.
     */
-  var parentNodeKey: String = js.native
+  var parentNodeKey: String
 }
 object ASPxClientTreeListBatchEditNodeInsertingEventArgs {
   

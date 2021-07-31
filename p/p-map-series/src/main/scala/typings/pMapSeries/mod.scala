@@ -4,7 +4,6 @@ import typings.pMapSeries.anon.Call
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -47,8 +46,7 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-map-series", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ValueType, MappedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     mapper: js.Function2[
@@ -56,7 +54,7 @@ object mod {
       /* index */ Double, 
       js.Thenable[MappedValueType] | MappedValueType
     ]
-  ): js.Promise[js.Array[MappedValueType]] = js.native
+  ): js.Promise[js.Array[MappedValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MappedValueType]]]
   
   @JSImport("p-map-series", JSImport.Namespace)
   @js.native
@@ -121,8 +119,7 @@ object mod {
   // 	) => PromiseLike<MappedValueType> | MappedValueType
   // ): Promise<MappedValueType[]>;
   // export = pMapSeries;
-  @JSImport("p-map-series", "default")
-  @js.native
+  @scala.inline
   def default[ValueType, MappedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     mapper: js.Function2[
@@ -130,7 +127,7 @@ object mod {
       /* index */ Double, 
       js.Thenable[MappedValueType] | MappedValueType
     ]
-  ): js.Promise[js.Array[MappedValueType]] = js.native
+  ): js.Promise[js.Array[MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[MappedValueType]]]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

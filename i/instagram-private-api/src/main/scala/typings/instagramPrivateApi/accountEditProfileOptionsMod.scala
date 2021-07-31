@@ -2,27 +2,25 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountEditProfileOptionsMod {
   
-  @js.native
   trait AccountEditProfileOptions extends StObject {
     
-    var biography: String = js.native
+    var biography: String
     
-    var email: String = js.native
+    var email: String
     
-    var external_url: String = js.native
+    var external_url: String
     
-    var first_name: String = js.native
+    var first_name: String
     
-    var gender: String = js.native
+    var gender: String
     
-    var phone_number: String = js.native
+    var phone_number: String
     
-    var username: String = js.native
+    var username: String
   }
   object AccountEditProfileOptions {
     

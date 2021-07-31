@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountPermissionProfiles extends StObject {
   
   /**
     * The username of the user who last modified the permission profile.
     */
-  var modifiedByUsername: js.UndefOr[String] = js.native
+  var modifiedByUsername: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the permission profile was last modified.
     */
-  var modifiedDateTime: js.UndefOr[String] = js.native
+  var modifiedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the permission profile. Possible values include:
@@ -27,31 +25,31 @@ trait AccountPermissionProfiles extends StObject {
     *
     * In addition, any custom permission profiles associated with your account will have an automatically generated `permissionProfileId`.
     */
-  var permissionProfileId: js.UndefOr[String] = js.native
+  var permissionProfileId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the account permission profile.
     *
     * Example: `Account Administrator`
     */
-  var permissionProfileName: js.UndefOr[String] = js.native
+  var permissionProfileName: js.UndefOr[String] = js.undefined
   
   /**
     * This object specifies the permissions that are associated with the account permission profile.
     */
   var settings: js.UndefOr[
     /* This object defines account permissions for users who are associated with the account permission profile.  */ AccountRoleSettings
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The total number of users in the group associated with the account permission profile.
     */
-  var userCount: js.UndefOr[String] = js.native
+  var userCount: js.UndefOr[String] = js.undefined
   
   /**
     * A list of user objects containing information about the users who are associated with the account permission profile.
     */
-  var users: js.UndefOr[js.Array[UserInformation]] = js.native
+  var users: js.UndefOr[js.Array[UserInformation]] = js.undefined
 }
 object AccountPermissionProfiles {
   

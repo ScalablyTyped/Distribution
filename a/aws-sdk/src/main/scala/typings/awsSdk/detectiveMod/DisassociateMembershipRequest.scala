@@ -2,16 +2,14 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateMembershipRequest extends StObject {
   
   /**
     * The ARN of the behavior graph to remove the member account from. The member account's member status in the behavior graph must be ENABLED.
     */
-  var GraphArn: typings.awsSdk.detectiveMod.GraphArn = js.native
+  var GraphArn: typings.awsSdk.detectiveMod.GraphArn
 }
 object DisassociateMembershipRequest {
   

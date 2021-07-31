@@ -4,19 +4,17 @@ import typings.devextreme.devextremeStrings.easeOutCubic
 import typings.devextreme.devextremeStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[easeOutCubic | linear] = js.native
+  var easing: js.UndefOr[easeOutCubic | linear] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var maxPointCountSupported: js.UndefOr[Double] = js.native
+  var maxPointCountSupported: js.UndefOr[Double] = js.undefined
 }
 object Duration {
   

@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,14 +15,22 @@ sealed trait ImeMode extends StObject
 object ImeMode extends StObject {
   
   @js.native
-  sealed trait Active extends ImeMode
+  sealed trait Active
+    extends StObject
+       with ImeMode
   
   @js.native
-  sealed trait Auto extends ImeMode
+  sealed trait Auto
+    extends StObject
+       with ImeMode
   
   @js.native
-  sealed trait Disabled extends ImeMode
+  sealed trait Disabled
+    extends StObject
+       with ImeMode
   
   @js.native
-  sealed trait Inactive extends ImeMode
+  sealed trait Inactive
+    extends StObject
+       with ImeMode
 }

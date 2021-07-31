@@ -2,35 +2,33 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for 1P/3P metadata about a user&#39;s level.
   */
-@js.native
 trait SchemaPlayerLevel extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerLevel.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The level for the user.
     */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum experience points for this level.
     */
-  var maxExperiencePoints: js.UndefOr[String] = js.native
+  var maxExperiencePoints: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum experience points for this level.
     */
-  var minExperiencePoints: js.UndefOr[String] = js.native
+  var minExperiencePoints: js.UndefOr[String] = js.undefined
 }
 object SchemaPlayerLevel {
   

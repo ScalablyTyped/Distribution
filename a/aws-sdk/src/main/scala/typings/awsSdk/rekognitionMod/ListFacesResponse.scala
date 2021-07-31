@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFacesResponse extends StObject {
   
   /**
     * Version number of the face detection model associated with the input collection (CollectionId).
     */
-  var FaceModelVersion: js.UndefOr[String] = js.native
+  var FaceModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * An array of Face objects. 
     */
-  var Faces: js.UndefOr[FaceList] = js.native
+  var Faces: js.UndefOr[FaceList] = js.undefined
   
   /**
     * If the response is truncated, Amazon Rekognition returns this token that you can use in the subsequent request to retrieve the next set of faces.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListFacesResponse {
   

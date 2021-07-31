@@ -6,7 +6,6 @@ import typings.agGrid.iFrameworkFactoryMod.IFrameworkFactory
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -58,35 +57,31 @@ object gridMod {
     @scala.inline
     def frameworkBeans_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameworkBeans")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/grid", "Grid.setEnterpriseBeans")
-    @js.native
-    def setEnterpriseBeans(enterpriseBeans: js.Array[_], rowModelClasses: js.Any): Unit = js.native
+    @scala.inline
+    def setEnterpriseBeans(enterpriseBeans: js.Array[js.Any], rowModelClasses: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseBeans")(enterpriseBeans.asInstanceOf[js.Any], rowModelClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/grid", "Grid.setEnterpriseComponents")
-    @js.native
-    def setEnterpriseComponents(components: js.Array[_]): Unit = js.native
+    @scala.inline
+    def setEnterpriseComponents(components: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnterpriseComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/grid", "Grid.setFrameworkBeans")
-    @js.native
-    def setFrameworkBeans(frameworkBeans: js.Array[_]): Unit = js.native
+    @scala.inline
+    def setFrameworkBeans(frameworkBeans: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrameworkBeans")(frameworkBeans.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait GridParams extends StObject {
     
     @JSName("$compile")
-    var $compile: js.UndefOr[js.Any] = js.native
+    var $compile: js.UndefOr[js.Any] = js.undefined
     
     @JSName("$scope")
-    var $scope: js.UndefOr[js.Any] = js.native
+    var $scope: js.UndefOr[js.Any] = js.undefined
     
-    var frameworkFactory: js.UndefOr[IFrameworkFactory] = js.native
+    var frameworkFactory: js.UndefOr[IFrameworkFactory] = js.undefined
     
-    var globalEventListener: js.UndefOr[js.Function] = js.native
+    var globalEventListener: js.UndefOr[js.Function] = js.undefined
     
-    var quickFilterOnScope: js.UndefOr[js.Any] = js.native
+    var quickFilterOnScope: js.UndefOr[js.Any] = js.undefined
     
-    var seedBeanInstances: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var seedBeanInstances: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object GridParams {
     

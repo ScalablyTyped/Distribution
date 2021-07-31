@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewsReplyResponse extends StObject {
   
   /** The result of replying/updating a reply to review. */
-  var result: js.UndefOr[ReviewReplyResult] = js.native
+  var result: js.UndefOr[ReviewReplyResult] = js.undefined
 }
 object ReviewsReplyResponse {
   

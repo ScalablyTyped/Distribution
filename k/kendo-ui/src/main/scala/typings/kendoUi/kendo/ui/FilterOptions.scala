@@ -3,31 +3,29 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOptions extends StObject {
   
-  var applyButton: js.UndefOr[Boolean] = js.native
+  var applyButton: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ FilterChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ FilterChangeEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource] = js.native
+  var dataSource: js.UndefOr[DataSource] = js.undefined
   
-  var expression: js.UndefOr[js.Any] = js.native
+  var expression: js.UndefOr[js.Any] = js.undefined
   
-  var expressionPreview: js.UndefOr[Boolean] = js.native
+  var expressionPreview: js.UndefOr[Boolean] = js.undefined
   
-  var fields: js.UndefOr[js.Array[FilterField]] = js.native
+  var fields: js.UndefOr[js.Array[FilterField]] = js.undefined
   
-  var mainLogic: js.UndefOr[String] = js.native
+  var mainLogic: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[FilterMessages] = js.native
+  var messages: js.UndefOr[FilterMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var operators: js.UndefOr[FilterOperators] = js.native
+  var operators: js.UndefOr[FilterOperators] = js.undefined
 }
 object FilterOptions {
   

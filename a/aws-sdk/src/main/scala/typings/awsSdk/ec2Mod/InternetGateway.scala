@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternetGateway extends StObject {
   
   /**
     * Any VPCs attached to the internet gateway.
     */
-  var Attachments: js.UndefOr[InternetGatewayAttachmentList] = js.native
+  var Attachments: js.UndefOr[InternetGatewayAttachmentList] = js.undefined
   
   /**
     * The ID of the internet gateway.
     */
-  var InternetGatewayId: js.UndefOr[String] = js.native
+  var InternetGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that owns the internet gateway.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the internet gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object InternetGateway {
   

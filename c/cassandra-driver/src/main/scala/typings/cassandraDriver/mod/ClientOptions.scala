@@ -14,39 +14,37 @@ import typings.node.tlsMod.ConnectionOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientOptions extends StObject {
   
-  var authProvider: js.UndefOr[AuthProvider] = js.native
+  var authProvider: js.UndefOr[AuthProvider] = js.undefined
   
-  var cloud: js.UndefOr[SecureConnectBundle] = js.native
+  var cloud: js.UndefOr[SecureConnectBundle] = js.undefined
   
-  var contactPoints: js.UndefOr[js.Array[String]] = js.native
+  var contactPoints: js.UndefOr[js.Array[String]] = js.undefined
   
-  var credentials: js.UndefOr[Password] = js.native
+  var credentials: js.UndefOr[Password] = js.undefined
   
-  var encoding: js.UndefOr[CopyBuffer] = js.native
+  var encoding: js.UndefOr[CopyBuffer] = js.undefined
   
-  var isMetadataSyncEnabled: js.UndefOr[Boolean] = js.native
+  var isMetadataSyncEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var keyspace: js.UndefOr[String] = js.native
+  var keyspace: js.UndefOr[String] = js.undefined
   
-  var localDataCenter: js.UndefOr[String] = js.native
+  var localDataCenter: js.UndefOr[String] = js.undefined
   
-  var maxPrepared: js.UndefOr[Double] = js.native
+  var maxPrepared: js.UndefOr[Double] = js.undefined
   
-  var metrics: js.UndefOr[ClientMetrics] = js.native
+  var metrics: js.UndefOr[ClientMetrics] = js.undefined
   
-  var policies: js.UndefOr[AddressResolution] = js.native
+  var policies: js.UndefOr[AddressResolution] = js.undefined
   
-  var pooling: js.UndefOr[CoreConnectionsPerHost] = js.native
+  var pooling: js.UndefOr[CoreConnectionsPerHost] = js.undefined
   
-  var prepareOnAllHosts: js.UndefOr[Boolean] = js.native
+  var prepareOnAllHosts: js.UndefOr[Boolean] = js.undefined
   
-  var profiles: js.UndefOr[js.Array[ExecutionProfile]] = js.native
+  var profiles: js.UndefOr[js.Array[ExecutionProfile]] = js.undefined
   
   var promiseFactory: js.UndefOr[
     js.Function1[
@@ -54,23 +52,23 @@ trait ClientOptions extends StObject {
         /* callback */ js.Function2[/* err */ Error, /* result */ js.UndefOr[js.Any], Unit], 
         Unit
       ], 
-      js.Promise[_]
+      js.Promise[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var protocolOptions: js.UndefOr[MaxSchemaAgreementWaitSeconds] = js.native
+  var protocolOptions: js.UndefOr[MaxSchemaAgreementWaitSeconds] = js.undefined
   
-  var queryOptions: js.UndefOr[QueryOptions] = js.native
+  var queryOptions: js.UndefOr[QueryOptions] = js.undefined
   
-  var rePrepareOnUp: js.UndefOr[Boolean] = js.native
+  var rePrepareOnUp: js.UndefOr[Boolean] = js.undefined
   
-  var refreshSchemaDelay: js.UndefOr[Double] = js.native
+  var refreshSchemaDelay: js.UndefOr[Double] = js.undefined
   
-  var requestTracker: js.UndefOr[RequestTracker] = js.native
+  var requestTracker: js.UndefOr[RequestTracker] = js.undefined
   
-  var socketOptions: js.UndefOr[CoalescingThreshold] = js.native
+  var socketOptions: js.UndefOr[CoalescingThreshold] = js.undefined
   
-  var sslOptions: js.UndefOr[ConnectionOptions] = js.native
+  var sslOptions: js.UndefOr[ConnectionOptions] = js.undefined
 }
 object ClientOptions {
   
@@ -178,7 +176,7 @@ object ClientOptions {
       value: /* handler */ js.Function1[
           /* callback */ js.Function2[/* err */ Error, /* result */ js.UndefOr[js.Any], Unit], 
           Unit
-        ] => js.Promise[_]
+        ] => js.Promise[js.Any]
     ): Self = StObject.set(x, "promiseFactory", js.Any.fromFunction1(value))
     
     @scala.inline

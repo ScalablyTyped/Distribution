@@ -11,8 +11,8 @@ Promised First-In-First-Out buffer. Await on push to be told when a value is con
 | Full name          | p-fifo |
 | Keywords           | fifo, buffer, queue, promise, push, shift, array |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 322591 |
+| # dependents       | 5 |
+| # downloads        | 638413 |
 | # stars            | 0 |
 
 ## Links

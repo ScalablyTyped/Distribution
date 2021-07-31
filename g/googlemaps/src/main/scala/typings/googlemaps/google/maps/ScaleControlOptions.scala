@@ -2,15 +2,13 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for the rendering of the scale control. */
-@js.native
 trait ScaleControlOptions extends StObject {
   
   /** Style id. Used to select what style of scale control to display. */
-  var style: js.UndefOr[ScaleControlStyle] = js.native
+  var style: js.UndefOr[ScaleControlStyle] = js.undefined
 }
 object ScaleControlOptions {
   

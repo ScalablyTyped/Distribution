@@ -6,22 +6,20 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined jpeg-js.jpeg-js.BufferRet & {  comments :std.Array<string> | undefined} */
-  @js.native
   trait BufferRetcommentsArraystr extends StObject {
     
-    var comments: js.UndefOr[js.Array[String]] = js.native
+    var comments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object BufferRetcommentsArraystr {
     
@@ -54,26 +52,25 @@ object anon {
     }
   }
   
-  @js.native
   trait ColorTransform extends StObject {
     
-    var colorTransform: js.UndefOr[Boolean] = js.native
+    var colorTransform: js.UndefOr[Boolean] = js.undefined
     
-    var formatAsRGBA: js.UndefOr[Boolean] = js.native
+    var formatAsRGBA: js.UndefOr[Boolean] = js.undefined
     
-    var maxMemoryUsageInMB: js.UndefOr[Double] = js.native
+    var maxMemoryUsageInMB: js.UndefOr[Double] = js.undefined
     
-    var maxResolutionInMP: js.UndefOr[Double] = js.native
+    var maxResolutionInMP: js.UndefOr[Double] = js.undefined
     
-    var tolerantDecoding: js.UndefOr[Boolean] = js.native
+    var tolerantDecoding: js.UndefOr[Boolean] = js.undefined
     
-    var useTArray: `true` = js.native
+    var useTArray: `true`
   }
   object ColorTransform {
     
     @scala.inline
-    def apply(useTArray: `true`): ColorTransform = {
-      val __obj = js.Dynamic.literal(useTArray = useTArray.asInstanceOf[js.Any])
+    def apply(): ColorTransform = {
+      val __obj = js.Dynamic.literal(useTArray = true)
       __obj.asInstanceOf[ColorTransform]
     }
     
@@ -115,20 +112,19 @@ object anon {
     }
   }
   
-  @js.native
   trait FormatAsRGBA extends StObject {
     
-    var colorTransform: js.UndefOr[Boolean] = js.native
+    var colorTransform: js.UndefOr[Boolean] = js.undefined
     
-    var formatAsRGBA: js.UndefOr[Boolean] = js.native
+    var formatAsRGBA: js.UndefOr[Boolean] = js.undefined
     
-    var maxMemoryUsageInMB: js.UndefOr[Double] = js.native
+    var maxMemoryUsageInMB: js.UndefOr[Double] = js.undefined
     
-    var maxResolutionInMP: js.UndefOr[Double] = js.native
+    var maxResolutionInMP: js.UndefOr[Double] = js.undefined
     
-    var tolerantDecoding: js.UndefOr[Boolean] = js.native
+    var tolerantDecoding: js.UndefOr[Boolean] = js.undefined
     
-    var useTArray: js.UndefOr[`false`] = js.native
+    var useTArray: js.UndefOr[`false`] = js.undefined
   }
   object FormatAsRGBA {
     
@@ -180,16 +176,15 @@ object anon {
   }
   
   /* Inlined jpeg-js.jpeg-js.UintArrRet & {  comments :std.Array<string> | undefined} */
-  @js.native
   trait UintArrRetcommentsArrayst extends StObject {
     
-    var comments: js.UndefOr[js.Array[String]] = js.native
+    var comments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var data: Uint8Array = js.native
+    var data: Uint8Array
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object UintArrRetcommentsArrayst {
     

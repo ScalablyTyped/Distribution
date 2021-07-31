@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BookmarksProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
   
   /**
@@ -15,56 +14,56 @@ trait BookmarksProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarkCreationOptions)
     */
-  var bookmarkCreationOptions: js.UndefOr[BookmarkCreationOptions] = js.native
+  var bookmarkCreationOptions: js.UndefOr[BookmarkCreationOptions] = js.undefined
   
   /**
     * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarks)
     */
-  var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.native
+  var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
   
   /**
     * When true, the widget is visually withdrawn and cannot be interacted with.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#disabled)
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the bookmarks are able to be edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
     */
-  var editingEnabled: js.UndefOr[Boolean] = js.native
+  var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#viewModel)
     */
-  var viewModel: js.UndefOr[BookmarksViewModelProperties] = js.native
+  var viewModel: js.UndefOr[BookmarksViewModelProperties] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[BookmarksVisibleElements] = js.native
+  var visibleElements: js.UndefOr[BookmarksVisibleElements] = js.undefined
 }
 object BookmarksProperties {
   

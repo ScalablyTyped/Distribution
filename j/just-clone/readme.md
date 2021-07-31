@@ -12,7 +12,7 @@ deep copies objects and arrays
 | Keywords           | object, clone, copy, deep-copy, extend, no-dependencies, just |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 320910 |
+| # downloads        | 404383 |
 | # stars            | 0 |
 
 ## Links

@@ -2,19 +2,17 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImpersonateSettingOptions extends StObject {
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var impersonator_id: String = js.native
+  var impersonator_id: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var token: String = js.native
+  var token: String
 }
 object ImpersonateSettingOptions {
   

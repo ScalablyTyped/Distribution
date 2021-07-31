@@ -3,27 +3,25 @@ package typings.phaser.Phaser.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpineFileConfig extends StObject {
   
-  var atlasExtension: js.UndefOr[String] = js.native
+  var atlasExtension: js.UndefOr[String] = js.undefined
   
-  var atlasURL: js.UndefOr[String] = js.native
+  var atlasURL: js.UndefOr[String] = js.undefined
   
-  var atlasXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var atlasXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var normalMap: js.UndefOr[String] = js.native
+  var normalMap: js.UndefOr[String] = js.undefined
   
-  var textureExtension: js.UndefOr[String] = js.native
+  var textureExtension: js.UndefOr[String] = js.undefined
   
-  var textureURL: js.UndefOr[String] = js.native
+  var textureURL: js.UndefOr[String] = js.undefined
   
-  var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object SpineFileConfig {
   

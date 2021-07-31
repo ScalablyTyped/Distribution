@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintHandlers extends StObject {
   
   /**
     * A hook used by the Printer when generating unique names to avoid collisions with
     * globally defined names that exist outside of the current source file.
     */
-  var hasGlobalName: js.UndefOr[js.Function1[/* name */ java.lang.String, Boolean]] = js.native
+  var hasGlobalName: js.UndefOr[js.Function1[/* name */ java.lang.String, Boolean]] = js.undefined
   
   /**
     * A hook used to check if an emit notification is required for a node.
     * @param node The node to emit.
     */
-  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ js.UndefOr[Node], Boolean]] = js.native
+  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ js.UndefOr[Node], Boolean]] = js.undefined
   
   /**
     * A hook used by the Printer to provide notifications prior to emitting a node. A
@@ -45,7 +43,7 @@ trait PrintHandlers extends StObject {
       /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A hook used by the Printer to perform just-in-time substitution of a node. This is
@@ -63,7 +61,7 @@ trait PrintHandlers extends StObject {
     * });
     * ```
     */
-  var substituteNode: js.UndefOr[js.Function2[/* hint */ EmitHint, /* node */ Node, Node]] = js.native
+  var substituteNode: js.UndefOr[js.Function2[/* hint */ EmitHint, /* node */ Node, Node]] = js.undefined
 }
 object PrintHandlers {
   

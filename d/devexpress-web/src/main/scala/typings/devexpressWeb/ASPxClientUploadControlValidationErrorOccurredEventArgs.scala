@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientUploadControl.ValidationErrorOccurred event.
   */
-@js.native
-trait ASPxClientUploadControlValidationErrorOccurredEventArgs extends ASPxClientEventArgs {
+trait ASPxClientUploadControlValidationErrorOccurredEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets the error text.
     */
-  var errorText: String = js.native
+  var errorText: String
   
   /**
     * Returns an array of invalid files.
     */
-  var invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo] = js.native
+  var invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo]
   
   /**
     * Gets or sets a value specifying whether an alert message is displayed when the ASPxClientUploadControl.ValidationErrorOccurred event fires.
     */
-  var showAlert: Boolean = js.native
+  var showAlert: Boolean
   
   /**
     * Gets the validation settings for the selected files.
     */
-  var validationSettings: ASPxClientUploadControlValidationSettings = js.native
+  var validationSettings: ASPxClientUploadControlValidationSettings
 }
 object ASPxClientUploadControlValidationErrorOccurredEventArgs {
   

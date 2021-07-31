@@ -4,7 +4,6 @@ import typings.expectations.Expectations.IAssertions
 import typings.expectations.Expectations.IExpectations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -14,33 +13,24 @@ object global {
     @JSGlobal("Expectations.Expect")
     @js.native
     class Expect protected ()
-      extends typings.expectations.Expectations.Expect {
+      extends StObject
+         with typings.expectations.Expectations.Expect {
       def this(value: js.Any) = this()
       def this(value: js.Any, assertions: IAssertions) = this()
-      def this(value: js.Any, assertions: js.UndefOr[scala.Nothing], expr: js.Any) = this()
+      def this(value: js.Any, assertions: Unit, expr: js.Any) = this()
       def this(value: js.Any, assertions: IAssertions, expr: js.Any) = this()
+      def this(value: js.Any, assertions: Unit, expr: js.Any, parent: typings.expectations.Expectations.Expect) = this()
+      def this(value: js.Any, assertions: Unit, expr: Unit, parent: typings.expectations.Expectations.Expect) = this()
       def this(
         value: js.Any,
-        assertions: js.UndefOr[scala.Nothing],
-        expr: js.UndefOr[scala.Nothing],
-        parent: typings.expectations.Expectations.Expect
-      ) = this()
-      def this(
-        value: js.Any,
-        assertions: js.UndefOr[scala.Nothing],
+        assertions: IAssertions,
         expr: js.Any,
         parent: typings.expectations.Expectations.Expect
       ) = this()
       def this(
         value: js.Any,
         assertions: IAssertions,
-        expr: js.UndefOr[scala.Nothing],
-        parent: typings.expectations.Expectations.Expect
-      ) = this()
-      def this(
-        value: js.Any,
-        assertions: IAssertions,
-        expr: js.Any,
+        expr: Unit,
         parent: typings.expectations.Expectations.Expect
       ) = this()
     }

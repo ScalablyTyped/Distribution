@@ -5,32 +5,28 @@ import typings.forkTsCheckerWebpackPlugin.rpcMessageChannelMod.RpcMessageChannel
 import typings.forkTsCheckerWebpackPlugin.rpcMessagePortMod.RpcMessagePort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpcIpcMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", "createRpcIpcForkedProcessMessagePort")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", JSImport.Namespace)
   @js.native
-  def createRpcIpcForkedProcessMessagePort(filePath: String): RpcMessagePort = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", "createRpcIpcForkedProcessMessagePort")
-  @js.native
-  def createRpcIpcForkedProcessMessagePort(filePath: String, memoryLimit: js.UndefOr[scala.Nothing], autoRecreate: Boolean): RpcMessagePort = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", "createRpcIpcForkedProcessMessagePort")
-  @js.native
-  def createRpcIpcForkedProcessMessagePort(filePath: String, memoryLimit: Double): RpcMessagePort = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", "createRpcIpcForkedProcessMessagePort")
-  @js.native
-  def createRpcIpcForkedProcessMessagePort(filePath: String, memoryLimit: Double, autoRecreate: Boolean): RpcMessagePort = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", "createRpcIpcMessageChannel")
-  @js.native
-  def createRpcIpcMessageChannel(servicePath: String): RpcMessageChannel = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", "createRpcIpcMessageChannel")
-  @js.native
-  def createRpcIpcMessageChannel(servicePath: String, memoryLimit: Double): RpcMessageChannel = js.native
+  @scala.inline
+  def createRpcIpcForkedProcessMessagePort(filePath: String): RpcMessagePort = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcForkedProcessMessagePort")(filePath.asInstanceOf[js.Any]).asInstanceOf[RpcMessagePort]
+  @scala.inline
+  def createRpcIpcForkedProcessMessagePort(filePath: String, memoryLimit: Double): RpcMessagePort = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcForkedProcessMessagePort")(filePath.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any])).asInstanceOf[RpcMessagePort]
+  @scala.inline
+  def createRpcIpcForkedProcessMessagePort(filePath: String, memoryLimit: Double, autoRecreate: Boolean): RpcMessagePort = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcForkedProcessMessagePort")(filePath.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any], autoRecreate.asInstanceOf[js.Any])).asInstanceOf[RpcMessagePort]
+  @scala.inline
+  def createRpcIpcForkedProcessMessagePort(filePath: String, memoryLimit: Unit, autoRecreate: Boolean): RpcMessagePort = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcForkedProcessMessagePort")(filePath.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any], autoRecreate.asInstanceOf[js.Any])).asInstanceOf[RpcMessagePort]
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc", "createRpcIpcMessagePort")
-  @js.native
-  def createRpcIpcMessagePort(process: ProcessLike): RpcMessagePort = js.native
+  @scala.inline
+  def createRpcIpcMessageChannel(servicePath: String): RpcMessageChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any]).asInstanceOf[RpcMessageChannel]
+  @scala.inline
+  def createRpcIpcMessageChannel(servicePath: String, memoryLimit: Double): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  
+  @scala.inline
+  def createRpcIpcMessagePort(process: ProcessLike): RpcMessagePort = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessagePort")(process.asInstanceOf[js.Any]).asInstanceOf[RpcMessagePort]
 }

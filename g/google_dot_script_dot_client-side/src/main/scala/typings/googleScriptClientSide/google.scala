@@ -6,7 +6,6 @@ import typings.std.Error
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object google {
@@ -21,9 +20,9 @@ object google {
         ]) | Null
       ]
     
-    @js.native
     trait Runner
-      extends /**
+      extends StObject
+         with /**
       * Executes the server-side Apps Script function with the corresponding name.
       */
     /* functionName */ StringDictionary[
@@ -37,14 +36,14 @@ object google {
         * @param handler a client-side callback function to run if the server-side function throws an exception;
         * the Error object is passed to the function as the first argument, and the user object (if any) is passed as a second argument
         */
-      def withFailureHandler(handler: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit]): Runner = js.native
+      def withFailureHandler(handler: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit]): Runner
       
       /**
         * Sets a callback function to run if the server-side function returns successfully.
         * @param handler a client-side callback function to run if the server-side function returns successfully;
         * the server's return value is passed to the function as the first argument, and the user object (if any) is passed as a second argument
         */
-      def withSuccessHandler(handler: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], Unit]): Runner = js.native
+      def withSuccessHandler(handler: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], Unit]): Runner
       
       /**
         * Sets an object to pass as a second parameter to the success and failure handlers.
@@ -52,7 +51,7 @@ object google {
         * because user objects are not sent to the server, they are not subject to the restrictions on parameters and return values for server calls.
         * User objects cannot, however, be objects constructed with the new operator
         */
-      def withUserObject(`object`: js.Any): Runner = js.native
+      def withUserObject(`object`: js.Any): Runner
     }
     object Runner {
       
@@ -82,26 +81,25 @@ object google {
       }
     }
     
-    @js.native
     trait UrlLocation extends StObject {
       
       /**
         * The string value of URL fragment after the # character, or an emptry string if no URL fragment is present
         */
-      var hash: String = js.native
+      var hash: String
       
       /**
         * An object of key/value pairs that correspond to the URL request parameters.
         * Only the first value will be returned for parameters that have multiple values.
         * If no parameters are present, this will be an empty object.
         */
-      var parameter: StringDictionary[String] = js.native
+      var parameter: StringDictionary[String]
       
       /**
         * An object similar to location.parameter, but with an array of values for each key.
         * If no parameters are present, this will be an empty object.
         */
-      var parameters: StringDictionary[js.Array[String]] = js.native
+      var parameters: StringDictionary[js.Array[String]]
     }
     object UrlLocation {
       
@@ -127,25 +125,24 @@ object google {
     
     object history {
       
-      @js.native
       trait HistoryChangeEvent extends StObject {
         
         /**
           * A location object associated with the popped event
           */
-        var location: UrlLocation = js.native
+        var location: UrlLocation
         
         /**
           * The state object associated with the popped event.
           * This object is identical to the state object that used in the corresponding push() or replace() method that added the popped state to the history stack.
           */
-        var state: State = js.native
+        var state: State
       }
       object HistoryChangeEvent {
         
         @scala.inline
         def apply(location: UrlLocation): HistoryChangeEvent = {
-          val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], state = null)
           __obj.asInstanceOf[HistoryChangeEvent]
         }
         

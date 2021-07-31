@@ -2,21 +2,19 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntrospectionSchema extends StObject {
   
-  var directives: js.Array[IntrospectionDirective] = js.native
+  var directives: js.Array[IntrospectionDirective]
   
-  var mutationType: js.UndefOr[IntrospectionNamedTypeRef] = js.native
+  var mutationType: js.UndefOr[IntrospectionNamedTypeRef] = js.undefined
   
-  var queryType: IntrospectionNamedTypeRef = js.native
+  var queryType: IntrospectionNamedTypeRef
   
-  var subscriptionType: js.UndefOr[IntrospectionNamedTypeRef] = js.native
+  var subscriptionType: js.UndefOr[IntrospectionNamedTypeRef] = js.undefined
   
-  var types: js.Array[IntrospectionType] = js.native
+  var types: js.Array[IntrospectionType]
 }
 object IntrospectionSchema {
   

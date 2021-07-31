@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlScore extends StObject {
   
   // Control action category (Identity, Data, Device, Apps, Infrastructure).
-  var controlCategory: js.UndefOr[NullableOption[String]] = js.native
+  var controlCategory: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Control unique name.
-  var controlName: js.UndefOr[NullableOption[String]] = js.native
+  var controlName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Description of the control.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
-  var score: js.UndefOr[NullableOption[Double]] = js.native
+  var score: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object ControlScore {
   

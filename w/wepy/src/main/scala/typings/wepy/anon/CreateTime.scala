@@ -2,17 +2,15 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTime extends StObject {
   
-  var createTime: Double = js.native
+  var createTime: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object CreateTime {
   

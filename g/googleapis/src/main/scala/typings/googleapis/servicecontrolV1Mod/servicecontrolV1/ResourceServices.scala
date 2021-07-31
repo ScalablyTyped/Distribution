@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/servicecontrol/v1", "servicecontrol_v1.Resource$Services")
@@ -36,7 +35,7 @@ class ResourceServices protected () extends StObject {
     */
   def allocateQuota(): GaxiosPromise[SchemaAllocateQuotaResponse] = js.native
   def allocateQuota(callback: BodyResponseCallback[SchemaAllocateQuotaResponse]): Unit = js.native
-  def allocateQuota(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAllocateQuotaResponse] = js.native
+  def allocateQuota(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAllocateQuotaResponse] = js.native
   def allocateQuota(params: ParamsResourceServicesAllocatequota): GaxiosPromise[SchemaAllocateQuotaResponse] = js.native
   def allocateQuota(
     params: ParamsResourceServicesAllocatequota,
@@ -79,7 +78,7 @@ class ResourceServices protected () extends StObject {
     */
   def check(): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
-  def check(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckResponse] = js.native
+  def check(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(params: ParamsResourceServicesCheck): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(params: ParamsResourceServicesCheck, callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
   def check(
@@ -121,7 +120,7 @@ class ResourceServices protected () extends StObject {
     */
   def report(): GaxiosPromise[SchemaReportResponse] = js.native
   def report(callback: BodyResponseCallback[SchemaReportResponse]): Unit = js.native
-  def report(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReportResponse] = js.native
+  def report(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReportResponse] = js.native
   def report(params: ParamsResourceServicesReport): GaxiosPromise[SchemaReportResponse] = js.native
   def report(params: ParamsResourceServicesReport, callback: BodyResponseCallback[SchemaReportResponse]): Unit = js.native
   def report(

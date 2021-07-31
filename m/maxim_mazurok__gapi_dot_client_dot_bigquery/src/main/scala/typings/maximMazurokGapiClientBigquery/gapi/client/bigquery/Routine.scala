@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Routine extends StObject {
   
   /** Optional. */
-  var arguments: js.UndefOr[js.Array[Argument]] = js.native
+  var arguments: js.UndefOr[js.Array[Argument]] = js.undefined
   
   /** Output only. The time when this routine was created, in milliseconds since the epoch. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The body of the routine. For functions, this is the expression in the AS clause. If language=SQL, it is the substring inside (but excluding) the parentheses. For example,
@@ -20,25 +18,25 @@ trait Routine extends StObject {
     * replaced with linebreak). If language=JAVASCRIPT, it is the evaluated string in the AS clause. For example, for the function created with the following statement: `CREATE FUNCTION
     * f() RETURNS STRING LANGUAGE js AS 'return "\n";\n'` The definition_body is `return "\n";\n` Note that both \n are replaced with linebreaks.
     */
-  var definitionBody: js.UndefOr[String] = js.native
+  var definitionBody: js.UndefOr[String] = js.undefined
   
   /** Optional. [Experimental] The description of the routine if defined. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Optional. [Experimental] The determinism level of the JavaScript UDF if defined. */
-  var determinismLevel: js.UndefOr[String] = js.native
+  var determinismLevel: js.UndefOr[String] = js.undefined
   
   /** Output only. A hash of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Optional. If language = "JAVASCRIPT", this field stores the path of the imported JAVASCRIPT libraries. */
-  var importedLibraries: js.UndefOr[js.Array[String]] = js.native
+  var importedLibraries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. Defaults to "SQL". */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** Output only. The time when this routine was last modified, in milliseconds since the epoch. */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional if language = "SQL"; required otherwise. If absent, the return type is inferred from definition_body at query time in each query that references this routine. If present,
@@ -48,13 +46,13 @@ trait Routine extends StObject {
     * `CREATE OR REPLACE FUNCTION Add(x INT64, y INT64) AS (x + y);` Then the inferred return type of `Increment` is automatically changed to INT64 at query time, while the return type of
     * `Decrement` remains FLOAT64.
     */
-  var returnType: js.UndefOr[StandardSqlDataType] = js.native
+  var returnType: js.UndefOr[StandardSqlDataType] = js.undefined
   
   /** Required. Reference describing the ID of this routine. */
-  var routineReference: js.UndefOr[RoutineReference] = js.native
+  var routineReference: js.UndefOr[RoutineReference] = js.undefined
   
   /** Required. The type of routine. */
-  var routineType: js.UndefOr[String] = js.native
+  var routineType: js.UndefOr[String] = js.undefined
 }
 object Routine {
   

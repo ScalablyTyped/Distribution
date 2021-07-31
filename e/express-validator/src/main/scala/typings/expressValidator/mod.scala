@@ -15,10 +15,13 @@ import typings.expressValidator.validationResultMod.ResultFactory
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("express-validator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-validator", "Result")
   @js.native
@@ -27,207 +30,151 @@ object mod {
     def this(formatter: ErrorFormatter[T], errors: js.Array[ValidationError]) = this()
   }
   
-  @JSImport("express-validator", "body")
-  @js.native
-  def body(): ValidationChain = js.native
-  @JSImport("express-validator", "body")
-  @js.native
-  def body(fields: js.UndefOr[scala.Nothing], message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "body")
-  @js.native
-  def body(fields: String): ValidationChain = js.native
-  @JSImport("express-validator", "body")
-  @js.native
-  def body(fields: String, message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "body")
-  @js.native
-  def body(fields: js.Array[String]): ValidationChain = js.native
-  @JSImport("express-validator", "body")
-  @js.native
-  def body(fields: js.Array[String], message: js.Any): ValidationChain = js.native
+  @scala.inline
+  def body(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("body")().asInstanceOf[ValidationChain]
+  @scala.inline
+  def body(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def body(fields: String, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def body(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def body(fields: js.Array[String], message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def body(fields: Unit, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
-  @JSImport("express-validator", "buildCheckFunction")
-  @js.native
+  @scala.inline
   def buildCheckFunction(locations: js.Array[Location]): js.Function2[
     /* fields */ js.UndefOr[String | js.Array[String]], 
     /* message */ js.UndefOr[js.Any], 
     ValidationChain
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildCheckFunction")(locations.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* fields */ js.UndefOr[String | js.Array[String]], 
+    /* message */ js.UndefOr[js.Any], 
+    ValidationChain
+  ]]
   
-  @JSImport("express-validator", "buildSanitizeFunction")
-  @js.native
-  def buildSanitizeFunction(locations: js.Array[Location]): js.Function1[/* fields */ js.UndefOr[String | js.Array[String]], SanitizationChain] = js.native
+  @scala.inline
+  def buildSanitizeFunction(locations: js.Array[Location]): js.Function1[/* fields */ js.UndefOr[String | js.Array[String]], SanitizationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSanitizeFunction")(locations.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fields */ js.UndefOr[String | js.Array[String]], SanitizationChain]]
   
-  @JSImport("express-validator", "check")
-  @js.native
-  def check(): ValidationChain = js.native
-  @JSImport("express-validator", "check")
-  @js.native
-  def check(fields: js.UndefOr[scala.Nothing], message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "check")
-  @js.native
-  def check(fields: String): ValidationChain = js.native
-  @JSImport("express-validator", "check")
-  @js.native
-  def check(fields: String, message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "check")
-  @js.native
-  def check(fields: js.Array[String]): ValidationChain = js.native
-  @JSImport("express-validator", "check")
-  @js.native
-  def check(fields: js.Array[String], message: js.Any): ValidationChain = js.native
+  @scala.inline
+  def check(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("check")().asInstanceOf[ValidationChain]
+  @scala.inline
+  def check(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def check(fields: String, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def check(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def check(fields: js.Array[String], message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def check(fields: Unit, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
-  @JSImport("express-validator", "checkSchema")
-  @js.native
-  def checkSchema(schema: Schema): js.Array[ValidationChain] = js.native
-  @JSImport("express-validator", "checkSchema")
-  @js.native
-  def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): js.Array[ValidationChain] = js.native
+  @scala.inline
+  def checkSchema(schema: Schema): js.Array[ValidationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[ValidationChain]]
+  @scala.inline
+  def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): js.Array[ValidationChain] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationChain]]
   
-  @JSImport("express-validator", "cookie")
-  @js.native
-  def cookie(): ValidationChain = js.native
-  @JSImport("express-validator", "cookie")
-  @js.native
-  def cookie(fields: js.UndefOr[scala.Nothing], message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "cookie")
-  @js.native
-  def cookie(fields: String): ValidationChain = js.native
-  @JSImport("express-validator", "cookie")
-  @js.native
-  def cookie(fields: String, message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "cookie")
-  @js.native
-  def cookie(fields: js.Array[String]): ValidationChain = js.native
-  @JSImport("express-validator", "cookie")
-  @js.native
-  def cookie(fields: js.Array[String], message: js.Any): ValidationChain = js.native
+  @scala.inline
+  def cookie(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("cookie")().asInstanceOf[ValidationChain]
+  @scala.inline
+  def cookie(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def cookie(fields: String, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def cookie(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def cookie(fields: js.Array[String], message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def cookie(fields: Unit, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
-  @JSImport("express-validator", "header")
-  @js.native
-  def header(): ValidationChain = js.native
-  @JSImport("express-validator", "header")
-  @js.native
-  def header(fields: js.UndefOr[scala.Nothing], message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "header")
-  @js.native
-  def header(fields: String): ValidationChain = js.native
-  @JSImport("express-validator", "header")
-  @js.native
-  def header(fields: String, message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "header")
-  @js.native
-  def header(fields: js.Array[String]): ValidationChain = js.native
-  @JSImport("express-validator", "header")
-  @js.native
-  def header(fields: js.Array[String], message: js.Any): ValidationChain = js.native
+  @scala.inline
+  def header(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("header")().asInstanceOf[ValidationChain]
+  @scala.inline
+  def header(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def header(fields: String, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def header(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def header(fields: js.Array[String], message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def header(fields: Unit, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
-  @JSImport("express-validator", "matchedData")
-  @js.native
-  def matchedData(req: Request): Record[String, _] = js.native
-  @JSImport("express-validator", "matchedData")
-  @js.native
-  def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, _] = js.native
+  @scala.inline
+  def matchedData(req: Request): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("express-validator", "oneOf")
-  @js.native
-  def oneOf(chains: js.Array[js.Array[ValidationChain] | ValidationChain]): Middleware = js.native
-  @JSImport("express-validator", "oneOf")
-  @js.native
-  def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: js.Any): Middleware = js.native
-  @JSImport("express-validator", "oneOf")
-  @js.native
-  def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: OneOfCustomMessageBuilder): Middleware = js.native
+  @scala.inline
+  def oneOf(chains: js.Array[js.Array[ValidationChain] | ValidationChain]): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  @scala.inline
+  def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: js.Any): Middleware = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  @scala.inline
+  def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: OneOfCustomMessageBuilder): Middleware = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Middleware]
   
-  @JSImport("express-validator", "param")
-  @js.native
-  def param(): ValidationChain = js.native
-  @JSImport("express-validator", "param")
-  @js.native
-  def param(fields: js.UndefOr[scala.Nothing], message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "param")
-  @js.native
-  def param(fields: String): ValidationChain = js.native
-  @JSImport("express-validator", "param")
-  @js.native
-  def param(fields: String, message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "param")
-  @js.native
-  def param(fields: js.Array[String]): ValidationChain = js.native
-  @JSImport("express-validator", "param")
-  @js.native
-  def param(fields: js.Array[String], message: js.Any): ValidationChain = js.native
+  @scala.inline
+  def param(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("param")().asInstanceOf[ValidationChain]
+  @scala.inline
+  def param(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def param(fields: String, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def param(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def param(fields: js.Array[String], message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def param(fields: Unit, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
-  @JSImport("express-validator", "query")
-  @js.native
-  def query(): ValidationChain = js.native
-  @JSImport("express-validator", "query")
-  @js.native
-  def query(fields: js.UndefOr[scala.Nothing], message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "query")
-  @js.native
-  def query(fields: String): ValidationChain = js.native
-  @JSImport("express-validator", "query")
-  @js.native
-  def query(fields: String, message: js.Any): ValidationChain = js.native
-  @JSImport("express-validator", "query")
-  @js.native
-  def query(fields: js.Array[String]): ValidationChain = js.native
-  @JSImport("express-validator", "query")
-  @js.native
-  def query(fields: js.Array[String], message: js.Any): ValidationChain = js.native
+  @scala.inline
+  def query(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("query")().asInstanceOf[ValidationChain]
+  @scala.inline
+  def query(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def query(fields: String, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def query(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
+  @scala.inline
+  def query(fields: js.Array[String], message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  @scala.inline
+  def query(fields: Unit, message: js.Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
-  @JSImport("express-validator", "sanitize")
-  @js.native
-  def sanitize(): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitize")
-  @js.native
-  def sanitize(fields: String): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitize")
-  @js.native
-  def sanitize(fields: js.Array[String]): SanitizationChain = js.native
+  @scala.inline
+  def sanitize(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")().asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitize(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitize(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
   
-  @JSImport("express-validator", "sanitizeBody")
-  @js.native
-  def sanitizeBody(): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeBody")
-  @js.native
-  def sanitizeBody(fields: String): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeBody")
-  @js.native
-  def sanitizeBody(fields: js.Array[String]): SanitizationChain = js.native
+  @scala.inline
+  def sanitizeBody(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeBody")().asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeBody(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeBody")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeBody(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeBody")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
   
-  @JSImport("express-validator", "sanitizeCookie")
-  @js.native
-  def sanitizeCookie(): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeCookie")
-  @js.native
-  def sanitizeCookie(fields: String): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeCookie")
-  @js.native
-  def sanitizeCookie(fields: js.Array[String]): SanitizationChain = js.native
+  @scala.inline
+  def sanitizeCookie(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeCookie")().asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeCookie(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeCookie")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeCookie(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeCookie")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
   
-  @JSImport("express-validator", "sanitizeParam")
-  @js.native
-  def sanitizeParam(): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeParam")
-  @js.native
-  def sanitizeParam(fields: String): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeParam")
-  @js.native
-  def sanitizeParam(fields: js.Array[String]): SanitizationChain = js.native
+  @scala.inline
+  def sanitizeParam(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeParam")().asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeParam(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeParam")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeParam(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeParam")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
   
-  @JSImport("express-validator", "sanitizeQuery")
-  @js.native
-  def sanitizeQuery(): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeQuery")
-  @js.native
-  def sanitizeQuery(fields: String): SanitizationChain = js.native
-  @JSImport("express-validator", "sanitizeQuery")
-  @js.native
-  def sanitizeQuery(fields: js.Array[String]): SanitizationChain = js.native
+  @scala.inline
+  def sanitizeQuery(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeQuery")().asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeQuery(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeQuery")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
+  @scala.inline
+  def sanitizeQuery(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeQuery")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
   
   @JSImport("express-validator", "validationResult")
   @js.native
-  val validationResult: ResultFactory[ValidationError] with WithDefaults = js.native
+  val validationResult: ResultFactory[ValidationError] & WithDefaults = js.native
 }

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,26 +18,34 @@ object HeaderFooterState extends StObject {
     *
     */
   @js.native
-  sealed trait default extends HeaderFooterState
+  sealed trait default
+    extends StObject
+       with HeaderFooterState
   
   /**
     * There is a separate first page header/footer, and a general header/footer used for all other pages.
     *
     */
   @js.native
-  sealed trait firstAndDefault extends HeaderFooterState
+  sealed trait firstAndDefault
+    extends StObject
+       with HeaderFooterState
   
   /**
     * There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.
     *
     */
   @js.native
-  sealed trait firstOddAndEven extends HeaderFooterState
+  sealed trait firstOddAndEven
+    extends StObject
+       with HeaderFooterState
   
   /**
     * There is a different header/footer for odd and even pages.
     *
     */
   @js.native
-  sealed trait oddAndEven extends HeaderFooterState
+  sealed trait oddAndEven
+    extends StObject
+       with HeaderFooterState
 }

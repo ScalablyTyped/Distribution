@@ -4,13 +4,13 @@ import typings.node.Buffer
 import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DetailedPeerCertificate extends PeerCertificate {
+trait DetailedPeerCertificate
+  extends StObject
+     with PeerCertificate {
   
-  var issuerCertificate: DetailedPeerCertificate = js.native
+  var issuerCertificate: DetailedPeerCertificate
 }
 object DetailedPeerCertificate {
   

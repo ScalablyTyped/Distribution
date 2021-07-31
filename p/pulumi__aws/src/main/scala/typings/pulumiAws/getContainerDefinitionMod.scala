@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getContainerDefinitionMod {
   
-  @JSImport("@pulumi/aws/ecs/getContainerDefinition", "getContainerDefinition")
+  @JSImport("@pulumi/aws/ecs/getContainerDefinition", JSImport.Namespace)
   @js.native
-  def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] = js.native
-  @JSImport("@pulumi/aws/ecs/getContainerDefinition", "getContainerDefinition")
-  @js.native
-  def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
+  @scala.inline
+  def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
+  
   trait GetContainerDefinitionArgs extends StObject {
     
     /**
       * The name of the container definition
       */
-    val containerName: String = js.native
+    val containerName: String
     
     /**
       * The ARN of the task definition which contains the container
       */
-    val taskDefinition: String = js.native
+    val taskDefinition: String
   }
   object GetContainerDefinitionArgs {
     
@@ -48,57 +48,56 @@ object getContainerDefinitionMod {
     }
   }
   
-  @js.native
   trait GetContainerDefinitionResult extends StObject {
     
-    val containerName: String = js.native
+    val containerName: String
     
     /**
       * The CPU limit for this container definition
       */
-    val cpu: Double = js.native
+    val cpu: Double
     
     /**
       * Indicator if networking is disabled
       */
-    val disableNetworking: Boolean = js.native
+    val disableNetworking: Boolean
     
     /**
       * Set docker labels
       */
-    val dockerLabels: StringDictionary[String] = js.native
+    val dockerLabels: StringDictionary[String]
     
     /**
       * The environment in use
       */
-    val environment: StringDictionary[String] = js.native
+    val environment: StringDictionary[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The docker image in use, including the digest
       */
-    val image: String = js.native
+    val image: String
     
     /**
       * The digest of the docker image in use
       */
-    val imageDigest: String = js.native
+    val imageDigest: String
     
     /**
       * The memory limit for this container definition
       */
-    val memory: Double = js.native
+    val memory: Double
     
     /**
       * The soft limit (in MiB) of memory to reserve for the container. When system memory is under contention, Docker attempts to keep the container memory to this soft limit
       */
-    val memoryReservation: Double = js.native
+    val memoryReservation: Double
     
-    val taskDefinition: String = js.native
+    val taskDefinition: String
   }
   object GetContainerDefinitionResult {
     

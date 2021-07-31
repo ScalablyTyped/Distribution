@@ -3,35 +3,33 @@ package typings.vueCompilerSfc.mod
 import typings.sourceMap.mod.RawSourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCStyleCompileOptions extends StObject {
   
-  var filename: String = js.native
+  var filename: String
   
-  var id: String = js.native
+  var id: String
   
-  var map: js.UndefOr[RawSourceMap] = js.native
+  var map: js.UndefOr[RawSourceMap] = js.undefined
   
-  var postcssOptions: js.UndefOr[js.Any] = js.native
+  var postcssOptions: js.UndefOr[js.Any] = js.undefined
   
-  var postcssPlugins: js.UndefOr[js.Array[_]] = js.native
+  var postcssPlugins: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var preprocessCustomRequire: js.UndefOr[js.Function1[/* id */ String, _]] = js.native
+  var preprocessCustomRequire: js.UndefOr[js.Function1[/* id */ String, js.Any]] = js.undefined
   
-  var preprocessLang: js.UndefOr[PreprocessLang] = js.native
+  var preprocessLang: js.UndefOr[PreprocessLang] = js.undefined
   
-  var preprocessOptions: js.UndefOr[js.Any] = js.native
+  var preprocessOptions: js.UndefOr[js.Any] = js.undefined
   
-  var scoped: js.UndefOr[Boolean] = js.native
+  var scoped: js.UndefOr[Boolean] = js.undefined
   
-  var source: String = js.native
+  var source: String
   
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
   
-  var vars: js.UndefOr[Boolean] = js.native
+  var vars: js.UndefOr[Boolean] = js.undefined
 }
 object SFCStyleCompileOptions {
   
@@ -63,7 +61,7 @@ object SFCStyleCompileOptions {
     def setPostcssOptionsUndefined: Self = StObject.set(x, "postcssOptions", js.undefined)
     
     @scala.inline
-    def setPostcssPlugins(value: js.Array[_]): Self = StObject.set(x, "postcssPlugins", value.asInstanceOf[js.Any])
+    def setPostcssPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "postcssPlugins", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPostcssPluginsUndefined: Self = StObject.set(x, "postcssPlugins", js.undefined)
@@ -72,7 +70,7 @@ object SFCStyleCompileOptions {
     def setPostcssPluginsVarargs(value: js.Any*): Self = StObject.set(x, "postcssPlugins", js.Array(value :_*))
     
     @scala.inline
-    def setPreprocessCustomRequire(value: /* id */ String => _): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
+    def setPreprocessCustomRequire(value: /* id */ String => js.Any): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPreprocessCustomRequireUndefined: Self = StObject.set(x, "preprocessCustomRequire", js.undefined)

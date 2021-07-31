@@ -17,7 +17,6 @@ import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -62,7 +61,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Graphics
-  extends GameObject
+  extends StObject
+     with GameObject
      with AlphaSingle
      with BlendMode
      with Depth
@@ -95,15 +95,6 @@ trait Graphics
     * @param overshoot This value allows you to increase the segment iterations in WebGL rendering. Useful if the arc has a thick stroke and needs to overshoot to join-up cleanly. Use small numbers such as 0.01 to start with and increase as needed. Default 0.
     */
   def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double): this.type = js.native
-  def arc(
-    x: Double,
-    y: Double,
-    radius: Double,
-    startAngle: Double,
-    endAngle: Double,
-    anticlockwise: js.UndefOr[scala.Nothing],
-    overshoot: Double
-  ): this.type = js.native
   def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Boolean): this.type = js.native
   def arc(
     x: Double,
@@ -112,6 +103,15 @@ trait Graphics
     startAngle: Double,
     endAngle: Double,
     anticlockwise: Boolean,
+    overshoot: Double
+  ): this.type = js.native
+  def arc(
+    x: Double,
+    y: Double,
+    radius: Double,
+    startAngle: Double,
+    endAngle: Double,
+    anticlockwise: Unit,
     overshoot: Double
   ): this.type = js.native
   
@@ -133,7 +133,7 @@ trait Graphics
   /**
     * The array of commands used to render the Graphics.
     */
-  var commandBuffer: js.Array[_] = js.native
+  var commandBuffer: js.Array[js.Any] = js.native
   
   /**
     * The default fill alpha for shapes rendered by this Graphics object.
@@ -275,29 +275,14 @@ trait Graphics
     * @param closePath When `true`, the path is closed before being stroked. Default false.
     * @param endIndex The index of `points` to stop at. Defaults to `points.length`.
     */
-  def fillPoints(points: js.Array[_ | Point]): this.type = js.native
-  def fillPoints(
-    points: js.Array[_ | Point],
-    closeShape: js.UndefOr[scala.Nothing],
-    closePath: js.UndefOr[scala.Nothing],
-    endIndex: integer
-  ): this.type = js.native
-  def fillPoints(points: js.Array[_ | Point], closeShape: js.UndefOr[scala.Nothing], closePath: Boolean): this.type = js.native
-  def fillPoints(
-    points: js.Array[_ | Point],
-    closeShape: js.UndefOr[scala.Nothing],
-    closePath: Boolean,
-    endIndex: integer
-  ): this.type = js.native
-  def fillPoints(points: js.Array[_ | Point], closeShape: Boolean): this.type = js.native
-  def fillPoints(
-    points: js.Array[_ | Point],
-    closeShape: Boolean,
-    closePath: js.UndefOr[scala.Nothing],
-    endIndex: integer
-  ): this.type = js.native
-  def fillPoints(points: js.Array[_ | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
-  def fillPoints(points: js.Array[_ | Point], closeShape: Boolean, closePath: Boolean, endIndex: integer): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point]): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean, endIndex: integer): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Unit, endIndex: integer): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean, endIndex: integer): this.type = js.native
+  def fillPoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Unit, endIndex: integer): this.type = js.native
   
   /**
     * Fill a rectangle with the given position and size.
@@ -364,11 +349,11 @@ trait Graphics
     * @param height The height of the graphics to generate.
     */
   def generateTexture(key: String): this.type = js.native
-  def generateTexture(key: String, width: js.UndefOr[scala.Nothing], height: integer): this.type = js.native
+  def generateTexture(key: String, width: Unit, height: integer): this.type = js.native
   def generateTexture(key: String, width: integer): this.type = js.native
   def generateTexture(key: String, width: integer, height: integer): this.type = js.native
   def generateTexture(key: HTMLCanvasElement): this.type = js.native
-  def generateTexture(key: HTMLCanvasElement, width: js.UndefOr[scala.Nothing], height: integer): this.type = js.native
+  def generateTexture(key: HTMLCanvasElement, width: Unit, height: integer): this.type = js.native
   def generateTexture(key: HTMLCanvasElement, width: integer): this.type = js.native
   def generateTexture(key: HTMLCanvasElement, width: integer, height: integer): this.type = js.native
   
@@ -505,17 +490,17 @@ trait Graphics
     * @param mode The texture tint mode. 0 is multiply, 1 is alpha only and 2 is texture only. Default 0.
     */
   def setTexture(): this.type = js.native
-  def setTexture(key: js.UndefOr[scala.Nothing], frame: js.UndefOr[scala.Nothing], mode: Double): this.type = js.native
-  def setTexture(key: js.UndefOr[scala.Nothing], frame: String): this.type = js.native
-  def setTexture(key: js.UndefOr[scala.Nothing], frame: String, mode: Double): this.type = js.native
-  def setTexture(key: js.UndefOr[scala.Nothing], frame: integer): this.type = js.native
-  def setTexture(key: js.UndefOr[scala.Nothing], frame: integer, mode: Double): this.type = js.native
   def setTexture(key: String): this.type = js.native
-  def setTexture(key: String, frame: js.UndefOr[scala.Nothing], mode: Double): this.type = js.native
   def setTexture(key: String, frame: String): this.type = js.native
   def setTexture(key: String, frame: String, mode: Double): this.type = js.native
+  def setTexture(key: String, frame: Unit, mode: Double): this.type = js.native
   def setTexture(key: String, frame: integer): this.type = js.native
   def setTexture(key: String, frame: integer, mode: Double): this.type = js.native
+  def setTexture(key: Unit, frame: String): this.type = js.native
+  def setTexture(key: Unit, frame: String, mode: Double): this.type = js.native
+  def setTexture(key: Unit, frame: Unit, mode: Double): this.type = js.native
+  def setTexture(key: Unit, frame: integer): this.type = js.native
+  def setTexture(key: Unit, frame: integer, mode: Double): this.type = js.native
   
   /**
     * Creates a pie-chart slice shape centered at `x`, `y` with the given radius.
@@ -535,15 +520,6 @@ trait Graphics
     * @param overshoot This value allows you to overshoot the endAngle by this amount. Useful if the arc has a thick stroke and needs to overshoot to join-up cleanly. Default 0.
     */
   def slice(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double): this.type = js.native
-  def slice(
-    x: Double,
-    y: Double,
-    radius: Double,
-    startAngle: Double,
-    endAngle: Double,
-    anticlockwise: js.UndefOr[scala.Nothing],
-    overshoot: Double
-  ): this.type = js.native
   def slice(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Boolean): this.type = js.native
   def slice(
     x: Double,
@@ -552,6 +528,15 @@ trait Graphics
     startAngle: Double,
     endAngle: Double,
     anticlockwise: Boolean,
+    overshoot: Double
+  ): this.type = js.native
+  def slice(
+    x: Double,
+    y: Double,
+    radius: Double,
+    startAngle: Double,
+    endAngle: Double,
+    anticlockwise: Unit,
     overshoot: Double
   ): this.type = js.native
   
@@ -618,29 +603,14 @@ trait Graphics
     * @param closePath When `true`, the path is closed before being stroked. Default false.
     * @param endIndex The index of `points` to stop drawing at. Defaults to `points.length`.
     */
-  def strokePoints(points: js.Array[_ | Point]): this.type = js.native
-  def strokePoints(
-    points: js.Array[_ | Point],
-    closeShape: js.UndefOr[scala.Nothing],
-    closePath: js.UndefOr[scala.Nothing],
-    endIndex: integer
-  ): this.type = js.native
-  def strokePoints(points: js.Array[_ | Point], closeShape: js.UndefOr[scala.Nothing], closePath: Boolean): this.type = js.native
-  def strokePoints(
-    points: js.Array[_ | Point],
-    closeShape: js.UndefOr[scala.Nothing],
-    closePath: Boolean,
-    endIndex: integer
-  ): this.type = js.native
-  def strokePoints(points: js.Array[_ | Point], closeShape: Boolean): this.type = js.native
-  def strokePoints(
-    points: js.Array[_ | Point],
-    closeShape: Boolean,
-    closePath: js.UndefOr[scala.Nothing],
-    endIndex: integer
-  ): this.type = js.native
-  def strokePoints(points: js.Array[_ | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
-  def strokePoints(points: js.Array[_ | Point], closeShape: Boolean, closePath: Boolean, endIndex: integer): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point]): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean, endIndex: integer): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Unit, endIndex: integer): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean, endIndex: integer): this.type = js.native
+  def strokePoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Unit, endIndex: integer): this.type = js.native
   
   /**
     * Stroke a rectangle with the given position and size.

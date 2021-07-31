@@ -7,25 +7,23 @@ import typings.jsDataHttp.mod.IBaseHttpAdapter
 import typings.jsDataHttp.mod.IDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alpha extends StObject {
     
-    var alpha: js.UndefOr[String | Boolean] = js.native
+    var alpha: js.UndefOr[String | Boolean] = js.undefined
     
-    var beta: js.UndefOr[String | Boolean] = js.native
+    var beta: js.UndefOr[String | Boolean] = js.undefined
     
-    var full: js.UndefOr[String] = js.native
+    var full: js.UndefOr[String] = js.undefined
     
-    var major: js.UndefOr[String] = js.native
+    var major: js.UndefOr[String] = js.undefined
     
-    var minor: js.UndefOr[String] = js.native
+    var minor: js.UndefOr[String] = js.undefined
     
-    var patch: js.UndefOr[String] = js.native
+    var patch: js.UndefOr[String] = js.undefined
   }
   object Alpha {
     
@@ -78,11 +76,12 @@ object anon {
   
   @js.native
   trait TypeofHttpAdapter
-    extends Instantiable0[HttpAdapter]
+    extends StObject
+       with Instantiable0[HttpAdapter]
        with Instantiable1[/* opts */ IBaseHttpAdapter, HttpAdapter] {
     
     def extend(): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
-    def extend(instanceProps: js.UndefOr[scala.Nothing], classProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
+    def extend(instanceProps: Unit, classProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
     def extend(instanceProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
     def extend(instanceProps: IDict, classProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
     

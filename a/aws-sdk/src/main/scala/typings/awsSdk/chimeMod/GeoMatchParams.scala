@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoMatchParams extends StObject {
   
   /**
     * The area code.
     */
-  var AreaCode: typings.awsSdk.chimeMod.AreaCode = js.native
+  var AreaCode: typings.awsSdk.chimeMod.AreaCode
   
   /**
     * The country.
     */
-  var Country: typings.awsSdk.chimeMod.Country = js.native
+  var Country: typings.awsSdk.chimeMod.Country
 }
 object GeoMatchParams {
   

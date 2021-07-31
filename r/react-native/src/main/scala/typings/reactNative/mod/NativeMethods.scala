@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -69,12 +68,12 @@ trait NativeMethods extends StObject {
     * _Can also be called with a relativeNativeNodeHandle but is deprecated._
     */
   def measureLayout(
-    relativeToNativeComponentRef: HostComponent[_],
+    relativeToNativeComponentRef: HostComponent[js.Any],
     onSuccess: MeasureLayoutOnSuccessCallback,
     onFail: js.Function0[Unit]
   ): Unit = js.native
   
-  var refs: StringDictionary[Component[_, _, _]] = js.native
+  var refs: StringDictionary[Component[js.Any, js.Any, js.Any]] = js.native
   
   /**
     * This function sends props straight to native. They will not participate in

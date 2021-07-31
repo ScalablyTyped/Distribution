@@ -8,29 +8,28 @@ import typings.keygrip.mod.Keygrip
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CookieSessionInterfaces {
   
-  @js.native
   trait CookieSessionObject
-    extends /* propertyName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* propertyName */ StringDictionary[js.Any] {
     
     /**
       * Is true if the session has been changed during the request.
       */
-    var isChanged: js.UndefOr[Boolean] = js.native
+    var isChanged: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is true if the session is new.
       */
-    var isNew: js.UndefOr[Boolean] = js.native
+    var isNew: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determine if the session has been populated with data or is empty.
       */
-    var isPopulated: js.UndefOr[Boolean] = js.native
+    var isPopulated: js.UndefOr[Boolean] = js.undefined
   }
   object CookieSessionObject {
     
@@ -63,74 +62,73 @@ object CookieSessionInterfaces {
     }
   }
   
-  @js.native
   trait CookieSessionOptions extends StObject {
     
     /**
       * a string indicating the domain of the cookie (no default).
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * a Date object indicating the cookie's expiration date (expires at the end of session by default).
       */
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is only to be sent over HTTP(S), and not made available to client JavaScript (true by default).
       */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The list of keys to use to sign & verify cookie values. Set cookies are always signed with keys[0], while the other keys are valid for verification, allowing for key rotation.
       */
-    var keys: js.UndefOr[js.Array[String] | Keygrip] = js.native
+    var keys: js.UndefOr[js.Array[String] | Keygrip] = js.undefined
     
     /**
       * a number representing the milliseconds from Date.now() for expiry.
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the cookie to set, defaults to session.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * a boolean indicating whether to overwrite previously set cookies of the same name (true by default). If this is true, all cookies set during the same request with the same name (regardless of path or domain) are filtered out of the Set-Cookie header when setting this cookie.
       */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a string indicating the path of the cookie (/ by default).
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * a boolean or string indicating whether the cookie is a "same site" cookie (false by default). This can be set to 'strict', 'lax', 'none', or true (which maps to 'strict').
       */
-    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.native
+    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.undefined
     
     /**
       * A string which will be used as single key if keys is not provided.
       */
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is only to be sent over HTTPS (false by default for HTTP, true by default for HTTPS).
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is only to be sent over HTTPS (use this if you handle SSL not in your node process).
       */
-    var secureProxy: js.UndefOr[Boolean] = js.native
+    var secureProxy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a boolean indicating whether the cookie is to be signed (true by default). If this is true, another cookie of the same name with the .sig suffix appended will also be sent, with a 27-byte url-safe base64 SHA1 value representing the hash of cookie-name=cookie-value against the
       * first Keygrip key. This signature key is used to detect tampering the next time a cookie is received.
       */
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object CookieSessionOptions {
     
@@ -226,24 +224,23 @@ object CookieSessionInterfaces {
     }
   }
   
-  @js.native
   trait CookieSessionRequest extends StObject {
     
     /**
       * Represents the session for the given request.
       */
-    var session: CookieSessionObject | Null = js.native
+    var session: CookieSessionObject | Null
     
     /**
       * Represents the session options for the current request. These options are a shallow clone of what was provided at middleware construction and can be altered to change cookie setting behavior on a per-request basis.
       */
-    var sessionOptions: CookieSessionOptions = js.native
+    var sessionOptions: CookieSessionOptions
   }
   object CookieSessionRequest {
     
     @scala.inline
     def apply(sessionOptions: CookieSessionOptions): CookieSessionRequest = {
-      val __obj = js.Dynamic.literal(sessionOptions = sessionOptions.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(sessionOptions = sessionOptions.asInstanceOf[js.Any], session = null)
       __obj.asInstanceOf[CookieSessionRequest]
     }
     

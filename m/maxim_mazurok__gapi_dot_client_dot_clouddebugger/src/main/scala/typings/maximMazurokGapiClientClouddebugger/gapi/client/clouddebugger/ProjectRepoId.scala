@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectRepoId extends StObject {
   
   /** The ID of the project. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** The name of the repo. Leave empty for the default repo. */
-  var repoName: js.UndefOr[String] = js.native
+  var repoName: js.UndefOr[String] = js.undefined
 }
 object ProjectRepoId {
   

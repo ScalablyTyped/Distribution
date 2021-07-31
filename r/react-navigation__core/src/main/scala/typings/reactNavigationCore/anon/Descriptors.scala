@@ -9,30 +9,28 @@ import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Descriptors[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, _] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */] extends StObject {
+trait Descriptors[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, js.Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */] extends StObject {
   
   var descriptors: Record[
     String, 
     Descriptor[Record[String, js.UndefOr[js.Object]], String, State, ScreenOptions, js.Object]
-  ] = js.native
+  ]
   
-  var navigation: CanGoBack with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) with EventEmitter[EventMap] with EventConsumer[_] with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, _]) with ActionHelpers = js.native
+  var navigation: CanGoBack & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers
   
-  var state: State = js.native
+  var state: State
 }
 object Descriptors {
   
   @scala.inline
-  def apply[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, _] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */](
+  def apply[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, js.Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */](
     descriptors: Record[
       String, 
       Descriptor[Record[String, js.UndefOr[js.Object]], String, State, ScreenOptions, js.Object]
     ],
-    navigation: CanGoBack with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) with EventEmitter[EventMap] with EventConsumer[_] with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, _]) with ActionHelpers,
+    navigation: CanGoBack & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers,
     state: State
   ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = {
     val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
@@ -40,7 +38,7 @@ object Descriptors {
   }
   
   @scala.inline
-  implicit class DescriptorsMutableBuilder[Self <: Descriptors[_, _, _, _], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, _] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */] (val x: Self with (Descriptors[State, EventMap, ActionHelpers, ScreenOptions])) extends AnyVal {
+  implicit class DescriptorsMutableBuilder[Self <: Descriptors[?, ?, ?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, js.Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */] (val x: Self & (Descriptors[State, EventMap, ActionHelpers, ScreenOptions])) extends AnyVal {
     
     @scala.inline
     def setDescriptors(
@@ -52,7 +50,7 @@ object Descriptors {
     
     @scala.inline
     def setNavigation(
-      value: CanGoBack with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) with EventEmitter[EventMap] with EventConsumer[_] with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, _]) with ActionHelpers
+      value: CanGoBack & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers
     ): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline

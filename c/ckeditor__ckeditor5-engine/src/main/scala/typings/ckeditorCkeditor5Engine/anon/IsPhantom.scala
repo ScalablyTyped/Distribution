@@ -2,13 +2,11 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsPhantom extends StObject {
   
-  var isPhantom: Boolean = js.native
+  var isPhantom: Boolean
 }
 object IsPhantom {
   

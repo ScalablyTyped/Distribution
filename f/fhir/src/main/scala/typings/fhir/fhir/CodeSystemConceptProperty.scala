@@ -2,79 +2,79 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Property value for the concept
   */
-@js.native
-trait CodeSystemConceptProperty extends BackboneElement {
+trait CodeSystemConceptProperty
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueBoolean'.
     */
-  var _valueBoolean: js.UndefOr[Element] = js.native
+  var _valueBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueCode'.
     */
-  var _valueCode: js.UndefOr[Element] = js.native
+  var _valueCode: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueDateTime'.
     */
-  var _valueDateTime: js.UndefOr[Element] = js.native
+  var _valueDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueInteger'.
     */
-  var _valueInteger: js.UndefOr[Element] = js.native
+  var _valueInteger: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueString'.
     */
-  var _valueString: js.UndefOr[Element] = js.native
+  var _valueString: js.UndefOr[Element] = js.undefined
   
   /**
     * Reference to CodeSystem.property.code
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Value of the property for this concept
     */
-  var valueBoolean: js.UndefOr[Boolean] = js.native
+  var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Value of the property for this concept
     */
-  var valueCode: js.UndefOr[code] = js.native
+  var valueCode: js.UndefOr[code] = js.undefined
   
   /**
     * Value of the property for this concept
     */
-  var valueCoding: js.UndefOr[Coding] = js.native
+  var valueCoding: js.UndefOr[Coding] = js.undefined
   
   /**
     * Value of the property for this concept
     */
-  var valueDateTime: js.UndefOr[dateTime] = js.native
+  var valueDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Value of the property for this concept
     */
-  var valueInteger: js.UndefOr[integer] = js.native
+  var valueInteger: js.UndefOr[integer] = js.undefined
   
   /**
     * Value of the property for this concept
     */
-  var valueString: js.UndefOr[String] = js.native
+  var valueString: js.UndefOr[String] = js.undefined
 }
 object CodeSystemConceptProperty {
   

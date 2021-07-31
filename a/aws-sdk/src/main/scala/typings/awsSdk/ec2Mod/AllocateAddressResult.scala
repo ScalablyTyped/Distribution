@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocateAddressResult extends StObject {
   
   /**
     * [EC2-VPC] The ID that AWS assigns to represent the allocation of the Elastic IP address for use with instances in a VPC.
     */
-  var AllocationId: js.UndefOr[String] = js.native
+  var AllocationId: js.UndefOr[String] = js.undefined
   
   /**
     * The carrier IP address. This option is only available for network interfaces which reside in a subnet in a Wavelength Zone (for example an EC2 instance). 
     */
-  var CarrierIp: js.UndefOr[String] = js.native
+  var CarrierIp: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-owned IP address.
     */
-  var CustomerOwnedIp: js.UndefOr[String] = js.native
+  var CustomerOwnedIp: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the customer-owned address pool.
     */
-  var CustomerOwnedIpv4Pool: js.UndefOr[String] = js.native
+  var CustomerOwnedIpv4Pool: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the Elastic IP address is for use with instances in a VPC (vpc) or instances in EC2-Classic (standard).
     */
-  var Domain: js.UndefOr[DomainType] = js.native
+  var Domain: js.UndefOr[DomainType] = js.undefined
   
   /**
     * The set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses.
     */
-  var NetworkBorderGroup: js.UndefOr[String] = js.native
+  var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The Elastic IP address.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of an address pool.
     */
-  var PublicIpv4Pool: js.UndefOr[String] = js.native
+  var PublicIpv4Pool: js.UndefOr[String] = js.undefined
 }
 object AllocateAddressResult {
   

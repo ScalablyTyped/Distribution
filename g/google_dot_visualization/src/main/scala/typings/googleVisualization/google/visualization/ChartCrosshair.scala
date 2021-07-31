@@ -3,23 +3,21 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.anon.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartCrosshair extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var focused: js.UndefOr[Color] = js.native
+  var focused: js.UndefOr[Color] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[ChartOrientation] = js.native
+  var orientation: js.UndefOr[ChartOrientation] = js.undefined
   
-  var selected: js.UndefOr[Color] = js.native
+  var selected: js.UndefOr[Color] = js.undefined
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
 }
 object ChartCrosshair {
   

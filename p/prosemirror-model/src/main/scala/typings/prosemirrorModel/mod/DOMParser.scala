@@ -2,12 +2,11 @@ package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "DOMParser")
 @js.native
-class DOMParser[S /* <: Schema[_, _] */] protected () extends StObject {
+class DOMParser[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
   /**
     * Create a parser that targets the given schema, using the given
     * parsing rules.
@@ -45,12 +44,15 @@ class DOMParser[S /* <: Schema[_, _] */] protected () extends StObject {
 /* static members */
 object DOMParser {
   
+  @JSImport("prosemirror-model", "DOMParser")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Construct a DOM parser using the parsing rules listed in a
     * schema's [node specs](#model.NodeSpec.parseDOM), reordered by
     * [priority](#model.ParseRule.priority).
     */
-  @JSImport("prosemirror-model", "DOMParser.fromSchema")
-  @js.native
-  def fromSchema[S /* <: Schema[_, _] */](schema: S): DOMParser[S] = js.native
+  @scala.inline
+  def fromSchema[S /* <: Schema[js.Any, js.Any] */](schema: S): DOMParser[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMParser[S]]
 }

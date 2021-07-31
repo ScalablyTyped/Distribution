@@ -7,7 +7,6 @@ import typings.fundamentalReact.fundamentalReactStrings.menu_
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod extends Shortcut {
@@ -2506,17 +2505,17 @@ object iconMod extends Shortcut {
     def `zoom-out`: typings.fundamentalReact.fundamentalReactStrings.`zoom-out` = "zoom-out".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`zoom-out`]
   }
   
-  @js.native
   trait IconProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var glyph: IconGlyph = js.native
+    var glyph: IconGlyph
     
-    var size: js.UndefOr[IconSize] = js.native
+    var size: js.UndefOr[IconSize] = js.undefined
   }
   object IconProps {
     

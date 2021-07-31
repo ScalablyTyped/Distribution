@@ -5,64 +5,62 @@ import typings.hoganJs.anon.HoganOptionsasStringfalse
 import typings.hoganJs.anon.HoganOptionsasStringtrue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("hogan.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("hogan.js", "Template")
   @js.native
-  class Template_ () extends HoganTemplate
+  class Template_ ()
+    extends StObject
+       with HoganTemplate
   
-  @JSImport("hogan.js", "compile")
-  @js.native
-  def compile(text: String): String = js.native
-  @JSImport("hogan.js", "compile")
-  @js.native
-  def compile(text: String, options: HoganOptionsasStringfalse): HoganTemplate = js.native
-  @JSImport("hogan.js", "compile")
-  @js.native
-  def compile(text: String, options: HoganOptionsasStringtrue): String = js.native
-  @JSImport("hogan.js", "compile")
-  @js.native
-  def compile(text: String, options: HoganOptions): HoganTemplate | String = js.native
-  @JSImport("hogan.js", "compile")
-  @js.native
-  def compile_HoganTemplate(text: String): HoganTemplate = js.native
-  @JSImport("hogan.js", "compile")
-  @js.native
-  def compile_Union(text: String): HoganTemplate | String = js.native
+  @scala.inline
+  def compile(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def compile(text: String, options: HoganOptionsasStringfalse): HoganTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HoganTemplate]
+  @scala.inline
+  def compile(text: String, options: HoganOptionsasStringtrue): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def compile(text: String, options: HoganOptions): HoganTemplate | String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HoganTemplate | String]
   
-  @JSImport("hogan.js", "parse")
-  @js.native
-  def parse(tokens: js.Array[Token]): Tree = js.native
-  @JSImport("hogan.js", "parse")
-  @js.native
-  def parse(tokens: js.Array[Token], text: js.UndefOr[scala.Nothing], options: HoganOptions): Tree = js.native
+  @scala.inline
+  def compile_HoganTemplate(text: String): HoganTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(text.asInstanceOf[js.Any]).asInstanceOf[HoganTemplate]
   
-  @JSImport("hogan.js", "scan")
-  @js.native
-  def scan(text: String): js.Array[Token] = js.native
-  @JSImport("hogan.js", "scan")
-  @js.native
-  def scan(text: String, delimiters: String): js.Array[Token] = js.native
+  @scala.inline
+  def compile_Union(text: String): HoganTemplate | String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(text.asInstanceOf[js.Any]).asInstanceOf[HoganTemplate | String]
+  
+  @scala.inline
+  def parse(tokens: js.Array[Token]): Tree = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tokens.asInstanceOf[js.Any]).asInstanceOf[Tree]
+  @scala.inline
+  def parse(tokens: js.Array[Token], text: Unit, options: HoganOptions): Tree = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tokens.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Tree]
+  
+  @scala.inline
+  def scan(text: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  @scala.inline
+  def scan(text: String, delimiters: String): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(text.asInstanceOf[js.Any], delimiters.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
   @JSImport("hogan.js", "template")
   @js.native
-  class template () extends HoganTemplate
+  class template ()
+    extends StObject
+       with HoganTemplate
   
   type Context = StringDictionary[js.Any]
   
-  @js.native
   trait HoganOptions extends StObject {
     
-    var asString: js.UndefOr[Boolean] = js.native
+    var asString: js.UndefOr[Boolean] = js.undefined
     
-    var delimiters: js.UndefOr[String] = js.native
+    var delimiters: js.UndefOr[String] = js.undefined
     
-    var disableLambda: js.UndefOr[Boolean] = js.native
+    var disableLambda: js.UndefOr[Boolean] = js.undefined
     
-    var sectionTags: js.UndefOr[js.Array[SectionTags]] = js.native
+    var sectionTags: js.UndefOr[js.Array[SectionTags]] = js.undefined
   }
   object HoganOptions {
     
@@ -116,17 +114,18 @@ object mod {
       * @returns A rendered template.
       */
     def render(context: Context): String = js.native
-    def render(context: Context, partials: js.UndefOr[scala.Nothing], indent: String): String = js.native
+    def render(context: Context, partials: Unit, indent: String): String = js.native
     def render(context: Context, partials: Partials): String = js.native
     def render(context: Context, partials: Partials, indent: String): String = js.native
   }
   
-  @js.native
-  trait Leaf extends Token {
+  trait Leaf
+    extends StObject
+       with Token {
     
-    var end: Double = js.native
+    var end: Double
     
-    var nodes: js.Array[Token] = js.native
+    var nodes: js.Array[Token]
   }
   object Leaf {
     
@@ -152,12 +151,11 @@ object mod {
   
   type Partials = StringDictionary[HoganTemplate]
   
-  @js.native
   trait SectionTags extends StObject {
     
-    var c: String = js.native
+    var c: String
     
-    var o: String = js.native
+    var o: String
   }
   object SectionTags {
     
@@ -178,20 +176,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var ctag: js.UndefOr[String] = js.native
+    var ctag: js.UndefOr[String] = js.undefined
     
-    var i: js.UndefOr[Double] = js.native
+    var i: js.UndefOr[Double] = js.undefined
     
-    var n: js.UndefOr[String] = js.native
+    var n: js.UndefOr[String] = js.undefined
     
-    var otag: js.UndefOr[String] = js.native
+    var otag: js.UndefOr[String] = js.undefined
     
-    var tag: String = js.native
+    var tag: String
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Token {
     

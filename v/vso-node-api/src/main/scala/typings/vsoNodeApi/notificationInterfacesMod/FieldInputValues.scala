@@ -5,13 +5,13 @@ import typings.vsoNodeApi.formInputInterfacesMod.InputValues
 import typings.vsoNodeApi.formInputInterfacesMod.InputValuesError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldInputValues extends InputValues {
+trait FieldInputValues
+  extends StObject
+     with InputValues {
   
-  var operators: js.Array[Double] = js.native
+  var operators: js.Array[Double]
 }
 object FieldInputValues {
   

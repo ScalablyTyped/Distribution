@@ -3,36 +3,31 @@ package typings.dateFns
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFnsIsSameWeekMod {
   
   object default {
     
+    @scala.inline
+    def apply(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(dateLeft: Double, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(dateLeft: Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(dateLeft: Date, dateRight: Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def apply(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
     @JSImport("date-fns/isSameWeek", JSImport.Default)
     @js.native
-    def apply(dateLeft: Double, dateRight: Double): Boolean = js.native
-    @JSImport("date-fns/isSameWeek", JSImport.Default)
-    @js.native
-    def apply(dateLeft: Double, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
-    @JSImport("date-fns/isSameWeek", JSImport.Default)
-    @js.native
-    def apply(dateLeft: Double, dateRight: Date): Boolean = js.native
-    @JSImport("date-fns/isSameWeek", JSImport.Default)
-    @js.native
-    def apply(dateLeft: Double, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
-    @JSImport("date-fns/isSameWeek", JSImport.Default)
-    @js.native
-    def apply(dateLeft: Date, dateRight: Double): Boolean = js.native
-    @JSImport("date-fns/isSameWeek", JSImport.Default)
-    @js.native
-    def apply(dateLeft: Date, dateRight: Double, options: typings.dateFns.anon.Locale): Boolean = js.native
-    @JSImport("date-fns/isSameWeek", JSImport.Default)
-    @js.native
-    def apply(dateLeft: Date, dateRight: Date): Boolean = js.native
-    @JSImport("date-fns/isSameWeek", JSImport.Default)
-    @js.native
-    def apply(dateLeft: Date, dateRight: Date, options: typings.dateFns.anon.Locale): Boolean = js.native
+    val ^ : js.Any = js.native
   }
 }

@@ -2,28 +2,26 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
 trait ExecutionArgs extends StObject {
   
-  var contextValue: js.UndefOr[js.Any] = js.native
+  var contextValue: js.UndefOr[js.Any] = js.undefined
   
-  var document: js.Any = js.native
+  var document: js.Any
   
-  var fieldResolver: js.UndefOr[js.Any] = js.native
+  var fieldResolver: js.UndefOr[js.Any] = js.undefined
   
-  var operationName: js.UndefOr[String] = js.native
+  var operationName: js.UndefOr[String] = js.undefined
   
-  var rootValue: js.UndefOr[js.Any] = js.native
+  var rootValue: js.UndefOr[js.Any] = js.undefined
   
-  var schema: js.Any = js.native
+  var schema: js.Any
   
-  var typeResolver: js.UndefOr[js.Any] = js.native
+  var typeResolver: js.UndefOr[js.Any] = js.undefined
   
-  var variableValues: js.UndefOr[js.Any] = js.native
+  var variableValues: js.UndefOr[js.Any] = js.undefined
 }
 object ExecutionArgs {
   

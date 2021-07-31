@@ -2,51 +2,49 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBusinessReportScheduleRequest extends StObject {
   
   /**
     * The client request token.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
     * The content range of the reports.
     */
-  var ContentRange: BusinessReportContentRange = js.native
+  var ContentRange: BusinessReportContentRange
   
   /**
     * The format of the generated report (individual CSV files or zipped files of individual files).
     */
-  var Format: BusinessReportFormat = js.native
+  var Format: BusinessReportFormat
   
   /**
     * The recurrence of the reports. If this isn't specified, the report will only be delivered one time when the API is called. 
     */
-  var Recurrence: js.UndefOr[BusinessReportRecurrence] = js.native
+  var Recurrence: js.UndefOr[BusinessReportRecurrence] = js.undefined
   
   /**
     * The S3 bucket name of the output reports. If this isn't specified, the report can be retrieved from a download link by calling ListBusinessReportSchedule. 
     */
-  var S3BucketName: js.UndefOr[CustomerS3BucketName] = js.native
+  var S3BucketName: js.UndefOr[CustomerS3BucketName] = js.undefined
   
   /**
     * The S3 key where the report is delivered.
     */
-  var S3KeyPrefix: js.UndefOr[typings.awsSdk.alexaforbusinessMod.S3KeyPrefix] = js.native
+  var S3KeyPrefix: js.UndefOr[typings.awsSdk.alexaforbusinessMod.S3KeyPrefix] = js.undefined
   
   /**
     * The name identifier of the schedule.
     */
-  var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.native
+  var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.undefined
   
   /**
     * The tags for the business report schedule.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateBusinessReportScheduleRequest {
   

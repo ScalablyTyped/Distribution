@@ -4,23 +4,21 @@ import typings.firebaseComponent.firebaseComponentBooleans.`false`
 import typings.firebaseComponent.firebaseComponentBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Identifier extends StObject {
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var optional: `true` = js.native
+    var optional: `true`
   }
   object Identifier {
     
     @scala.inline
-    def apply(optional: `true`): Identifier = {
-      val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any])
+    def apply(): Identifier = {
+      val __obj = js.Dynamic.literal(optional = true)
       __obj.asInstanceOf[Identifier]
     }
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Optional extends StObject {
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var optional: js.UndefOr[`false`] = js.native
+    var optional: js.UndefOr[`false`] = js.undefined
   }
   object Optional {
     

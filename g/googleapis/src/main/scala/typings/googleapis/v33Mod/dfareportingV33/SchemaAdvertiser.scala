@@ -2,44 +2,42 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a Campaign Manager advertiser.
   */
-@js.native
 trait SchemaAdvertiser extends StObject {
   
   /**
     * Account ID of this advertiser.This is a read-only field that can be left
     * blank.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the advertiser group this advertiser belongs to. You can group
     * advertisers for reporting purposes, allowing you to see aggregated
     * information for all advertisers in each group.
     */
-  var advertiserGroupId: js.UndefOr[String] = js.native
+  var advertiserGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Suffix added to click-through URL of ad creative associations under this
     * advertiser. Must be less than 129 characters long.
     */
-  var clickThroughUrlSuffix: js.UndefOr[String] = js.native
+  var clickThroughUrlSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the click-through event tag to apply by default to the landing
     * pages of this advertiser&#39;s campaigns.
     */
-  var defaultClickThroughEventTagId: js.UndefOr[String] = js.native
+  var defaultClickThroughEventTagId: js.UndefOr[String] = js.undefined
   
   /**
     * Default email address used in sender field for tag emails.
     */
-  var defaultEmail: js.UndefOr[String] = js.native
+  var defaultEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Floodlight configuration ID of this advertiser. The floodlight
@@ -52,36 +50,36 @@ trait SchemaAdvertiser extends StObject {
     * This advertiser&#39;s original floodlight configuration is not already
     * shared with another advertiser.
     */
-  var floodlightConfigurationId: js.UndefOr[String] = js.native
+  var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the floodlight configuration. This is a
     * read-only, auto-generated field.
     */
-  var floodlightConfigurationIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var floodlightConfigurationIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * ID of this advertiser. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of this advertiser. This is a read-only,
     * auto-generated field.
     */
-  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#advertiser&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this advertiser. This is a required field and must be less than
     * 256 characters long and unique among advertisers of the same account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Original floodlight configuration before any sharing occurred. Set the
@@ -91,23 +89,23 @@ trait SchemaAdvertiser extends StObject {
     * floodlight configuration if the shared configuration has activities
     * associated with any campaign or placement.
     */
-  var originalFloodlightConfigurationId: js.UndefOr[String] = js.native
+  var originalFloodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Status of this advertiser.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount ID of this advertiser.This is a read-only field that can be
     * left blank.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Suspension status of this advertiser.
     */
-  var suspended: js.UndefOr[Boolean] = js.native
+  var suspended: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAdvertiser {
   

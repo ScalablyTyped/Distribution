@@ -2,17 +2,15 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DtlEnvironmentDetails extends StObject {
   
-  var csmContent: String = js.native
+  var csmContent: String
   
-  var csmParameters: String = js.native
+  var csmParameters: String
   
-  var subscriptionName: String = js.native
+  var subscriptionName: String
 }
 object DtlEnvironmentDetails {
   

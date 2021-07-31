@@ -2,19 +2,17 @@ package typings.reactNativeMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var latitudeDelta: Double = js.native
+  var latitudeDelta: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var longitudeDelta: Double = js.native
+  var longitudeDelta: Double
 }
 object Region {
   

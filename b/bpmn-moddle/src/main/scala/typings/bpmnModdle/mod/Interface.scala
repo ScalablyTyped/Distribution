@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Interface extends BaseElement {
+trait Interface
+  extends StObject
+     with BaseElement {
   
-  var implementationRef: String = js.native
+  var implementationRef: String
   
-  var name: String = js.native
+  var name: String
   
-  var operations: js.Array[Operation] = js.native
+  var operations: js.Array[Operation]
 }
 object Interface {
   

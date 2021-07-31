@@ -3,21 +3,21 @@ package typings.materialTabs
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCTabBarChangeEvent extends Event {
+  trait MDCTabBarChangeEvent
+    extends StObject
+       with Event {
     
     val detail: MDCTabBarChangeEventDetail = js.native
   }
   
-  @js.native
   trait MDCTabBarChangeEventDetail extends StObject {
     
-    var activeTabIndex: Double = js.native
+    var activeTabIndex: Double
   }
   object MDCTabBarChangeEventDetail {
     

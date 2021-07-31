@@ -5,40 +5,37 @@ import typings.postcss.mod.Container
 import typings.postcss.mod.Rule_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("icss-utils", "createICSSRules")
+  @JSImport("icss-utils", JSImport.Namespace)
   @js.native
-  def createICSSRules(imports: CSSImports, exports: CSSExports): js.Array[Rule_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("icss-utils", "extractICSS")
-  @js.native
-  def extractICSS(css: Container): ExtractedICSS = js.native
-  @JSImport("icss-utils", "extractICSS")
-  @js.native
-  def extractICSS(css: Container, removeRules: Boolean): ExtractedICSS = js.native
+  @scala.inline
+  def createICSSRules(imports: CSSImports, exports: CSSExports): js.Array[Rule_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createICSSRules")(imports.asInstanceOf[js.Any], exports.asInstanceOf[js.Any])).asInstanceOf[js.Array[Rule_]]
   
-  @JSImport("icss-utils", "replaceSymbols")
-  @js.native
-  def replaceSymbols(css: Container, replacements: Replacements): Unit = js.native
+  @scala.inline
+  def extractICSS(css: Container): ExtractedICSS = ^.asInstanceOf[js.Dynamic].applyDynamic("extractICSS")(css.asInstanceOf[js.Any]).asInstanceOf[ExtractedICSS]
+  @scala.inline
+  def extractICSS(css: Container, removeRules: Boolean): ExtractedICSS = (^.asInstanceOf[js.Dynamic].applyDynamic("extractICSS")(css.asInstanceOf[js.Any], removeRules.asInstanceOf[js.Any])).asInstanceOf[ExtractedICSS]
   
-  @JSImport("icss-utils", "replaceValueSymbols")
-  @js.native
-  def replaceValueSymbols(value: String, replacements: Replacements): String = js.native
+  @scala.inline
+  def replaceSymbols(css: Container, replacements: Replacements): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSymbols")(css.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def replaceValueSymbols(value: String, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceValueSymbols")(value.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type CSSExports = StringDictionary[String]
   
   type CSSImports = StringDictionary[StringDictionary[String]]
   
-  @js.native
   trait ExtractedICSS extends StObject {
     
-    var icssExports: CSSExports = js.native
+    var icssExports: CSSExports
     
-    var icssImports: CSSImports = js.native
+    var icssImports: CSSImports
   }
   object ExtractedICSS {
     

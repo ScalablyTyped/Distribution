@@ -7,31 +7,31 @@ import typings.beanstalkdWorker.beanstalkdWorkerNumbers.`1`
 import typings.beanstalkdWorker.beanstalkdWorkerStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("beanstalkd-worker", JSImport.Namespace)
   @js.native
-  class ^ () extends BeanstalkdWorker {
+  class ^ ()
+    extends StObject
+       with BeanstalkdWorker {
     def this(host: String) = this()
-    def this(host: js.UndefOr[scala.Nothing], port: Double) = this()
     def this(host: String, port: Double) = this()
-    def this(host: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], options: js.Object) = this()
-    def this(host: js.UndefOr[scala.Nothing], port: Double, options: js.Object) = this()
-    def this(host: String, port: js.UndefOr[scala.Nothing], options: js.Object) = this()
+    def this(host: Unit, port: Double) = this()
     def this(host: String, port: Double, options: js.Object) = this()
+    def this(host: String, port: Unit, options: js.Object) = this()
+    def this(host: Unit, port: Double, options: js.Object) = this()
+    def this(host: Unit, port: Unit, options: js.Object) = this()
   }
   
-  @js.native
   trait BeanstalkdHandleBackoff extends StObject {
     
     /** Multiple backoff by N each try. */
-    var exponential: js.UndefOr[Double] = js.native
+    var exponential: js.UndefOr[Double] = js.undefined
     
     /** Initial time to wait (in milliseconds). */
-    var initial: js.UndefOr[Double] = js.native
+    var initial: js.UndefOr[Double] = js.undefined
   }
   object BeanstalkdHandleBackoff {
     
@@ -58,17 +58,16 @@ object mod {
     }
   }
   
-  @js.native
   trait BeanstalkdHandleOptions extends StObject {
     
     /** Backoff handling options */
-    var backoff: js.UndefOr[BeanstalkdHandleBackoff] = js.native
+    var backoff: js.UndefOr[BeanstalkdHandleBackoff] = js.undefined
     
     /** Total amount of tries including the first one. */
-    var tries: js.UndefOr[Double] = js.native
+    var tries: js.UndefOr[Double] = js.undefined
     
     /** Total number of watcher handling this Tube simultaneously. */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object BeanstalkdHandleOptions {
     
@@ -101,17 +100,16 @@ object mod {
     }
   }
   
-  @js.native
   trait BeanstalkdSpawnOptions extends StObject {
     
     /** The delay before making the new Job visible (in milliseconds). */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /** The priority for the new Job. */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** The timeout for the new Job (in milliseconds). */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object BeanstalkdSpawnOptions {
     
@@ -237,7 +235,7 @@ object mod {
       * @param command The command to execute.
       * @param args The arguments for the command.
       */
-    def command(command: String, args: js.Any*): js.Promise[_] = js.native
+    def command(command: String, args: js.Any*): js.Promise[js.Any] = js.native
     
     /**
       * Wait for this job to be done.
@@ -278,7 +276,7 @@ object mod {
       * @param command The command to execute.
       * @param args The arguments for the command.
       */
-    def command(command: String, args: js.Any*): js.Promise[_] = js.native
+    def command(command: String, args: js.Any*): js.Promise[js.Any] = js.native
     
     /**
       * Gets or creates a new Client for given id.
@@ -309,7 +307,9 @@ object mod {
   type TubeHandler = js.ThisFunction1[/* this */ WatcherJob, /* payload */ js.UndefOr[js.Any], js.Any]
   
   @js.native
-  trait WatcherJob extends Job {
+  trait WatcherJob
+    extends StObject
+       with Job {
     
     /**
       * Advanced use only! Mainly internal usage.
@@ -335,9 +335,9 @@ object mod {
       * @param exponent The exponent to for calculating the final delay (delay^exponent).
       */
     def delay(): js.Promise[`1`] = js.native
-    def delay(delay: js.UndefOr[scala.Nothing], exponent: Double): js.Promise[`1`] = js.native
     def delay(delay: Double): js.Promise[`1`] = js.native
     def delay(delay: Double, exponent: Double): js.Promise[`1`] = js.native
+    def delay(delay: Unit, exponent: Double): js.Promise[`1`] = js.native
     
     /**
       * Advanced use only! Mainly internal usage.

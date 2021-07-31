@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslSettings extends StObject {
   
   /**
@@ -13,20 +11,20 @@ trait SslSettings extends StObject {
     * for every domain mapping. To omit SSL support or to configure SSL manually, specify SslManagementType.MANUAL on a CREATE or UPDATE request. You must be authorized to administer the
     * AuthorizedCertificate resource to manually map it to a DomainMapping resource. Example: 12345.
     */
-  var certificateId: js.UndefOr[String] = js.native
+  var certificateId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the managed AuthorizedCertificate resource currently being provisioned, if applicable. Until the new managed certificate has been successfully provisioned, the previous SSL
     * state will be preserved. Once the provisioning process completes, the certificate_id field will reflect the new managed certificate and this field will be left empty. To remove SSL
     * support while there is still a pending managed certificate, clear the certificate_id field with an UpdateDomainMappingRequest.@OutputOnly
     */
-  var pendingManagedCertificateId: js.UndefOr[String] = js.native
+  var pendingManagedCertificateId: js.UndefOr[String] = js.undefined
   
   /**
     * SSL management type for this domain. If AUTOMATIC, a managed certificate is automatically provisioned. If MANUAL, certificate_id must be manually specified in order to configure SSL
     * for this domain.
     */
-  var sslManagementType: js.UndefOr[String] = js.native
+  var sslManagementType: js.UndefOr[String] = js.undefined
 }
 object SslSettings {
   

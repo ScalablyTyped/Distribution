@@ -38,29 +38,27 @@ import typings.three.webGLObjectsMod.WebGLObjects
 import typings.three.webGLRendererMod.WebGLRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Camera[T] extends StObject {
     
-    var camera: typings.reactThreeFiber.canvasMod.Camera = js.native
+    var camera: typings.reactThreeFiber.canvasMod.Camera
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var intersections: js.Array[Intersection] = js.native
+    var intersections: js.Array[Intersection]
     
-    var ray: Ray = js.native
+    var ray: Ray
     
-    var sourceEvent: T = js.native
+    var sourceEvent: T
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var stopped: Boolean = js.native
+    var stopped: Boolean
     
-    var unprojectedPoint: Vector3 = js.native
+    var unprojectedPoint: Vector3
   }
   object Camera {
     
@@ -80,7 +78,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CameraMutableBuilder[Self <: Camera[_], T] (val x: Self with Camera[T]) extends AnyVal {
+    implicit class CameraMutableBuilder[Self <: Camera[?], T] (val x: Self & Camera[T]) extends AnyVal {
       
       @scala.inline
       def setCamera(value: typings.reactThreeFiber.canvasMod.Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
@@ -111,25 +109,24 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
     @JSName("$$typeof")
-    var DollarDollartypeof: Double | js.Symbol = js.native
+    var DollarDollartypeof: Double | js.Symbol
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var containerInfo: js.Any = js.native
+    var containerInfo: js.Any
     
-    var implementation: js.Any = js.native
+    var implementation: js.Any
     
-    var key: String | Null = js.native
+    var key: String | Null
   }
   object Children {
     
     @scala.inline
     def apply(DollarDollartypeof: Double | js.Symbol, containerInfo: js.Any, implementation: js.Any): Children = {
-      val __obj = js.Dynamic.literal(containerInfo = containerInfo.asInstanceOf[js.Any], implementation = implementation.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(containerInfo = containerInfo.asInstanceOf[js.Any], implementation = implementation.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
@@ -160,10 +157,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Color] = js.native
+    var color: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Color] = js.undefined
   }
   object Color {
     
@@ -184,24 +180,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Dispose extends StObject {
     
-    var dispose: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var dispose: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var layers: js.UndefOr[Layers] = js.native
+    var layers: js.UndefOr[Layers] = js.undefined
     
-    var matrix: js.UndefOr[Matrix4] = js.native
+    var matrix: js.UndefOr[Matrix4] = js.undefined
     
-    var position: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Vector3] = js.native
+    var position: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Vector3] = js.undefined
     
-    var quaternion: js.UndefOr[Quaternion] = js.native
+    var quaternion: js.UndefOr[Quaternion] = js.undefined
     
-    var rotation: js.UndefOr[Euler] = js.native
+    var rotation: js.UndefOr[Euler] = js.undefined
     
-    var scale: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Vector3] = js.native
+    var scale: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Vector3] = js.undefined
     
-    var up: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Vector3] = js.native
+    var up: js.UndefOr[typings.reactThreeFiber.threeTypesMod.Vector3] = js.undefined
   }
   object Dispose {
     
@@ -288,12 +283,11 @@ object anon {
     def apply(x: Double, y: Double, z: Double): this.type = js.native
   }
   
-  @js.native
   trait OffsetX extends StObject {
     
-    var offsetX: Double = js.native
+    var offsetX: Double
     
-    var offsetY: Double = js.native
+    var offsetY: Double
   }
   object OffsetX {
     
@@ -315,37 +309,36 @@ object anon {
   }
   
   /* Inlined std.Partial<three.three.Raycaster> & {  filter :react-three-fiber.react-three-fiber/canvas.FilterFunction | undefined,   computeOffsets :react-three-fiber.react-three-fiber/canvas.ComputeOffsetsFunction | undefined} */
-  @js.native
   trait PartialRaycasterfilterFil extends StObject {
     
-    var camera: js.UndefOr[typings.three.cameraMod.Camera] = js.native
+    var camera: js.UndefOr[typings.three.cameraMod.Camera] = js.undefined
     
-    var computeOffsets: js.UndefOr[ComputeOffsetsFunction] = js.native
+    var computeOffsets: js.UndefOr[ComputeOffsetsFunction] = js.undefined
     
-    var constructor: js.UndefOr[js.Function0[js.Any]] = js.native
+    var constructor: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var far: js.UndefOr[Double] = js.native
+    var far: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[FilterFunction] = js.native
+    var filter: js.UndefOr[FilterFunction] = js.undefined
     
     var intersectObject: js.UndefOr[
         js.Function1[/* object */ Object3D, js.Array[typings.three.raycasterMod.Intersection]]
-      ] = js.native
+      ] = js.undefined
     
     var intersectObjects: js.UndefOr[
         js.Function1[
           /* objects */ js.Array[Object3D], 
           js.Array[typings.three.raycasterMod.Intersection]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var layers: js.UndefOr[typings.three.layersMod.Layers] = js.native
+    var layers: js.UndefOr[typings.three.layersMod.Layers] = js.undefined
     
-    var near: js.UndefOr[Double] = js.native
+    var near: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[RaycasterParameters] = js.native
+    var params: js.UndefOr[RaycasterParameters] = js.undefined
     
-    var ray: js.UndefOr[typings.three.rayMod.Ray] = js.native
+    var ray: js.UndefOr[typings.three.rayMod.Ray] = js.undefined
     
     var set: js.UndefOr[
         js.Function2[
@@ -353,9 +346,9 @@ object anon {
           /* direction */ typings.three.vector3Mod.Vector3, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var setFromCamera: js.UndefOr[js.Function2[/* coords */ X, /* camera */ typings.three.cameraMod.Camera, Unit]] = js.native
+    var setFromCamera: js.UndefOr[js.Function2[/* coords */ X, /* camera */ typings.three.cameraMod.Camera, Unit]] = js.undefined
   }
   object PartialRaycasterfilterFil {
     
@@ -453,30 +446,29 @@ object anon {
   }
   
   /* Inlined std.Partial<three.three.WebGLRendererParameters> */
-  @js.native
   trait PartialWebGLRendererParam extends StObject {
     
-    var alpha: js.UndefOr[Boolean] = js.native
+    var alpha: js.UndefOr[Boolean] = js.undefined
     
-    var antialias: js.UndefOr[Boolean] = js.native
+    var antialias: js.UndefOr[Boolean] = js.undefined
     
-    var canvas: js.UndefOr[HTMLCanvasElement | OffscreenCanvas] = js.native
+    var canvas: js.UndefOr[HTMLCanvasElement | OffscreenCanvas] = js.undefined
     
-    var context: js.UndefOr[WebGLRenderingContext] = js.native
+    var context: js.UndefOr[WebGLRenderingContext] = js.undefined
     
-    var depth: js.UndefOr[Boolean] = js.native
+    var depth: js.UndefOr[Boolean] = js.undefined
     
-    var logarithmicDepthBuffer: js.UndefOr[Boolean] = js.native
+    var logarithmicDepthBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var powerPreference: js.UndefOr[String] = js.native
+    var powerPreference: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[String] = js.native
+    var precision: js.UndefOr[String] = js.undefined
     
-    var premultipliedAlpha: js.UndefOr[Boolean] = js.native
+    var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
     
-    var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+    var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var stencil: js.UndefOr[Boolean] = js.native
+    var stencil: js.UndefOr[Boolean] = js.undefined
   }
   object PartialWebGLRendererParam {
     
@@ -558,10 +550,9 @@ object anon {
   }
   
   /* Inlined std.Partial<three.three.WebGLShadowMap> */
-  @js.native
   trait PartialWebGLShadowMap extends StObject {
     
-    var autoUpdate: js.UndefOr[Boolean] = js.native
+    var autoUpdate: js.UndefOr[Boolean] = js.undefined
     
     var constructor: js.UndefOr[
         js.Function3[
@@ -570,13 +561,13 @@ object anon {
           /* maxTextureSize */ Double, 
           js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var cullFace: js.UndefOr[js.Any] = js.native
+    var cullFace: js.UndefOr[js.Any] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var needsUpdate: js.UndefOr[Boolean] = js.native
+    var needsUpdate: js.UndefOr[Boolean] = js.undefined
     
     var render: js.UndefOr[
         js.Function3[
@@ -585,9 +576,9 @@ object anon {
           /* camera */ typings.three.cameraMod.Camera, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var `type`: js.UndefOr[ShadowMapType] = js.native
+    var `type`: js.UndefOr[ShadowMapType] = js.undefined
   }
   object PartialWebGLShadowMap {
     
@@ -648,12 +639,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Resize extends StObject {
     
-    var resize: Double = js.native
+    var resize: Double
     
-    var scroll: Double = js.native
+    var scroll: Double
   }
   object Resize {
     
@@ -675,14 +665,17 @@ object anon {
   }
   
   @js.native
-  trait TypeofBufferGeometry extends Instantiable0[BufferGeometry] {
+  trait TypeofBufferGeometry
+    extends StObject
+       with Instantiable0[BufferGeometry] {
     
     var MaxIndex: Double = js.native
   }
   
   @js.native
   trait TypeofColor
-    extends Instantiable0[typings.three.mod.Color] {
+    extends StObject
+       with Instantiable0[typings.three.mod.Color] {
     
     /**
     	 * List of X11 color names.
@@ -692,7 +685,8 @@ object anon {
   
   @js.native
   trait TypeofEuler
-    extends Instantiable0[typings.three.mod.Euler] {
+    extends StObject
+       with Instantiable0[typings.three.mod.Euler] {
     
     var DefaultOrder: String = js.native
     
@@ -701,7 +695,8 @@ object anon {
   
   @js.native
   trait TypeofQuaternion
-    extends Instantiable0[typings.three.mod.Quaternion] {
+    extends StObject
+       with Instantiable0[typings.three.mod.Quaternion] {
     
     def multiplyQuaternionsFlat(
       dst: js.Array[Double],
@@ -735,7 +730,8 @@ object anon {
   
   @js.native
   trait TypeofTexture
-    extends Instantiable10[
+    extends StObject
+       with Instantiable10[
           /* image */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | HTMLVideoElement], 
           /* mapping */ js.UndefOr[Mapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
@@ -754,10 +750,9 @@ object anon {
     var DEFAULT_MAPPING: js.Any = js.native
   }
   
-  @js.native
   trait Vertices extends StObject {
     
-    var vertices: js.UndefOr[js.Array[typings.reactThreeFiber.threeTypesMod.Vector3]] = js.native
+    var vertices: js.UndefOr[js.Array[typings.reactThreeFiber.threeTypesMod.Vector3]] = js.undefined
   }
   object Vertices {
     

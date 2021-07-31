@@ -3,27 +3,25 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsCreateInvitationResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var email: String = js.native
+  var email: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var invitation_team_url: String = js.native
+  var invitation_team_url: String
   
-  var inviter: Avatarurl = js.native
+  var inviter: Avatarurl
   
-  var login: String = js.native
+  var login: String
   
-  var role: String = js.native
+  var role: String
   
-  var team_count: Double = js.native
+  var team_count: Double
 }
 object OrgsCreateInvitationResponseData {
   

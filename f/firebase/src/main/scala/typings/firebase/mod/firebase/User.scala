@@ -15,14 +15,15 @@ import typings.firebase.mod.firebase.auth.UserCredential
 import typings.firebase.mod.firebase.auth.UserMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A user account.
   */
 @js.native
-trait User extends UserInfo {
+trait User
+  extends StObject
+     with UserInfo {
   
   /**
     * Deletes and signs out the user.

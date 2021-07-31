@@ -13,33 +13,31 @@ import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import typings.astTypes.kindsMod.TypeParameterInstantiationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Implements extends StObject {
   
-  var body: ClassBodyKind = js.native
+  var body: ClassBodyKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind | Null = js.native
+  var id: IdentifierKind | Null
   
-  var implements: js.UndefOr[js.Array[ClassImplementsKind | TSExpressionWithTypeArgumentsKind]] = js.native
+  var implements: js.UndefOr[js.Array[ClassImplementsKind | TSExpressionWithTypeArgumentsKind]] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var superClass: js.UndefOr[ExpressionKind | Null] = js.native
+  var superClass: js.UndefOr[ExpressionKind | Null] = js.undefined
   
-  var superTypeParameters: js.UndefOr[TypeParameterInstantiationKind | TSTypeParameterInstantiationKind | Null] = js.native
+  var superTypeParameters: js.UndefOr[TypeParameterInstantiationKind | TSTypeParameterInstantiationKind | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.undefined
 }
 object Implements {
   
   @scala.inline
   def apply(body: ClassBodyKind): Implements = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = null)
     __obj.asInstanceOf[Implements]
   }
   

@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `946` extends StObject {
   
-  var parameters: RequestParameters with (Omit[ReposGetCodeFrequencyStatsEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[ReposGetCodeFrequencyStatsEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[ReposGetCodeFrequencyStatsResponseData] = js.native
+  var response: OctokitResponse[ReposGetCodeFrequencyStatsResponseData]
 }
 object `946` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ReposGetCodeFrequencyStatsEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[ReposGetCodeFrequencyStatsEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ReposGetCodeFrequencyStatsResponseData]
   ): `946` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,7 +34,7 @@ object `946` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[ReposGetCodeFrequencyStatsEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[ReposGetCodeFrequencyStatsEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

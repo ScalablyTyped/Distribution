@@ -3,23 +3,23 @@ package typings.esquery.mod
 import typings.esquery.esqueryStrings.literal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LiteralAtom extends Atom {
+trait LiteralAtom
+  extends StObject
+     with Atom {
   
   @JSName("type")
-  var type_LiteralAtom: literal = js.native
+  var type_LiteralAtom: literal
   
-  var value: String | Double = js.native
+  var value: String | Double
 }
 object LiteralAtom {
   
   @scala.inline
-  def apply(`type`: literal, value: String | Double): LiteralAtom = {
+  def apply(value: String | Double): LiteralAtom = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("literal")
     __obj.asInstanceOf[LiteralAtom]
   }
   

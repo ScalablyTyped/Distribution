@@ -3,58 +3,56 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the parameters of the conversational query.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1QueryParameters extends StObject {
   
   /**
     * Optional. The collection of contexts to be activated before this query is
     * executed.
     */
-  var contexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1Context]] = js.native
+  var contexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1Context]] = js.undefined
   
   /**
     * Optional. The geo location of this conversational query.
     */
-  var geoLocation: js.UndefOr[SchemaGoogleTypeLatLng] = js.native
+  var geoLocation: js.UndefOr[SchemaGoogleTypeLatLng] = js.undefined
   
   /**
     * Optional. KnowledgeBases to get alternative results from. If not set, the
     * KnowledgeBases enabled in the agent (through UI) will be used. Format:
     * `projects/&lt;Project ID&gt;/knowledgeBases/&lt;Knowledge Base ID&gt;`.
     */
-  var knowledgeBaseNames: js.UndefOr[js.Array[String]] = js.native
+  var knowledgeBaseNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. This field can be used to pass custom data into the webhook
     * associated with the agent. Arbitrary JSON objects are supported.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Optional. Specifies whether to delete all contexts in the current session
     * before the new ones are activated.
     */
-  var resetContexts: js.UndefOr[Boolean] = js.native
+  var resetContexts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. Configures the type of sentiment analysis to perform. If not
     * provided, sentiment analysis is not performed. Note: Sentiment Analysis
     * is only currently available for Enterprise Edition agents.
     */
-  var sentimentAnalysisRequestConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisRequestConfig] = js.native
+  var sentimentAnalysisRequestConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisRequestConfig] = js.undefined
   
   /**
     * Optional. Additional session entity types to replace or extend developer
     * entity types with. The entity synonyms apply to all languages and persist
     * for the session of this query.
     */
-  var sessionEntityTypes: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]] = js.native
+  var sessionEntityTypes: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]] = js.undefined
   
   /**
     * Optional. The time zone of this conversational query from the [time zone
@@ -62,7 +60,7 @@ trait SchemaGoogleCloudDialogflowV2beta1QueryParameters extends StObject {
     * Europe/Paris. If not provided, the time zone specified in agent settings
     * is used.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1QueryParameters {
   

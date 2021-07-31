@@ -10,9 +10,9 @@ redux-saga HOC for Next.js
 | ------------------ | :-------------: |
 | Full name          | next-redux-saga |
 | Keywords           | next, nextjs, Next.js, next-redux, next-redux-wrapper, react, react-redux, redux, redux-saga |
-| # releases         | 8 |
-| # dependents       | 7 |
-| # downloads        | 849644 |
+| # releases         | 9 |
+| # dependents       | 3 |
+| # downloads        | 833864 |
 | # stars            | 0 |
 
 ## Links

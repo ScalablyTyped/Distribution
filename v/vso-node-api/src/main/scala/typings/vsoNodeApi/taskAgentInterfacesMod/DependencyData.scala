@@ -3,15 +3,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.vsoNodeApi.anon.KeyString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DependencyData extends StObject {
   
-  var input: String = js.native
+  var input: String
   
-  var map: js.Array[KeyString] = js.native
+  var map: js.Array[KeyString]
 }
 object DependencyData {
   

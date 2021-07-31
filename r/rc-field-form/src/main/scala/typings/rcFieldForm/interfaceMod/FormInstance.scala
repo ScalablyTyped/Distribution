@@ -3,7 +3,6 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.rcFieldFormBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,9 +29,9 @@ trait FormInstance[Values] extends StObject {
   
   def isFieldsTouched(): Boolean = js.native
   def isFieldsTouched(allFieldsTouched: Boolean): Boolean = js.native
-  def isFieldsTouched(nameList: js.UndefOr[scala.Nothing], allFieldsTouched: Boolean): Boolean = js.native
   def isFieldsTouched(nameList: js.Array[NamePath]): Boolean = js.native
   def isFieldsTouched(nameList: js.Array[NamePath], allFieldsTouched: Boolean): Boolean = js.native
+  def isFieldsTouched(nameList: Unit, allFieldsTouched: Boolean): Boolean = js.native
   
   def isFieldsValidating(nameList: js.Array[NamePath]): Boolean = js.native
   

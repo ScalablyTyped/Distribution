@@ -2,17 +2,15 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layout extends StObject {
   
-  var qHyperCube: HyperCube = js.native
+  var qHyperCube: HyperCube
   
-  var qInfo: NxInfo = js.native
+  var qInfo: NxInfo
   
-  var qSelectionInfo: Selectionobject = js.native
+  var qSelectionInfo: Selectionobject
 }
 object Layout {
   

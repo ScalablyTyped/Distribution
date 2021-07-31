@@ -5,16 +5,15 @@ import typings.saucelabs.saucelabsStrings.baseline
 import typings.saucelabs.saucelabsStrings.new_regime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlierDetails
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var reason: js.UndefOr[baseline | new_regime] = js.native
+  var reason: js.UndefOr[baseline | new_regime] = js.undefined
   
-  var status: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.undefined
 }
 object OutlierDetails {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryInfo extends StObject {
   
   /** Includes an entry for each satisfied QueryProperty. */
-  var queryProperty: js.UndefOr[js.Array[String]] = js.native
+  var queryProperty: js.UndefOr[js.Array[String]] = js.undefined
 }
 object QueryInfo {
   

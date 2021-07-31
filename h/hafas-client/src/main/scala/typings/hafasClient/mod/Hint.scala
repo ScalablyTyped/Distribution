@@ -9,21 +9,19 @@ import typings.hafasClient.hafasClientStrings.hint
 import typings.hafasClient.hafasClientStrings.status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hint extends StObject {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var tripId: js.UndefOr[String] = js.native
+  var tripId: js.UndefOr[String] = js.undefined
   
-  var `type`: hint | status | `foreign-id` | `local-fare-zone` | `stop-website` | `stop-dhid` | `transit-authority` = js.native
+  var `type`: hint | status | `foreign-id` | `local-fare-zone` | `stop-website` | `stop-dhid` | `transit-authority`
 }
 object Hint {
   

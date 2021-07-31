@@ -6,12 +6,12 @@ import typings.asana.mod.resources.Sections.SectionsParams
 import typings.asana.mod.resources.Sections.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sections
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * * Adds the specified task to a specific section of project. Returns empty object.
@@ -36,11 +36,11 @@ trait Sections
     * @return {Promise} The requested resource
     */
   def findById(section: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(section: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(section: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(section: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(section: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(section: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(section: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(section: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
@@ -52,11 +52,11 @@ trait Sections
     * @return {Promise} The response from the API
     */
   def findByProject(project: String): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
+  def findByProject(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
   def findByProject(project: String, params: Params): typings.bluebird.mod.^[js.Array[Type]] = js.native
   def findByProject(project: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
   def findByProject(project: Double): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
+  def findByProject(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
   def findByProject(project: Double, params: Params): typings.bluebird.mod.^[js.Array[Type]] = js.native
   def findByProject(project: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
 }
@@ -65,7 +65,9 @@ object Sections extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Sections")
   @js.native
-  class ^ protected () extends Sections {
+  class ^ protected ()
+    extends StObject
+       with Sections {
     /**
       * @param dispatcher
       */
@@ -76,14 +78,13 @@ object Sections extends Shortcut {
   @js.native
   val ^ : SectionsStatic = js.native
   
-  @js.native
   trait SectionsParams extends StObject {
     
-    var insert_after: js.UndefOr[String] = js.native
+    var insert_after: js.UndefOr[String] = js.undefined
     
-    var insert_before: js.UndefOr[String] = js.native
+    var insert_before: js.UndefOr[String] = js.undefined
     
-    var task: Double | String = js.native
+    var task: Double | String
   }
   object SectionsParams {
     
@@ -115,7 +116,8 @@ object Sections extends Shortcut {
   
   @js.native
   trait Type
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     var created_at: String = js.native
   }

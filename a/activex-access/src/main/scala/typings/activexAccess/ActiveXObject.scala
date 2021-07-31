@@ -191,7 +191,6 @@ import typings.activexAccess.anon.FieldListKeyAscii
 import typings.activexAccess.anon.PDisp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -3009,7 +3008,7 @@ trait ActiveXObject extends StObject {
   def set(
     obj: CheckBoxInOption | ChildLabel | CustomControlInReport | OptionButtonInOption | ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexAccess.Access.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
     propertyName: accName | accValue,
-    parameterTypes: js.Array[_],
+    parameterTypes: js.Array[js.Any],
     newValue: String
   ): Unit = js.native
   @JSName("set")

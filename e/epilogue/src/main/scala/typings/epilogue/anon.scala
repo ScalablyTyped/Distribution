@@ -2,15 +2,13 @@ package typings.epilogue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Model extends StObject {
     
-    var model: js.Any = js.native
+    var model: js.Any
   }
   object Model {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Plural extends StObject {
     
-    var plural: String = js.native
+    var plural: String
     
-    var singular: String = js.native
+    var singular: String
   }
   object Plural {
     

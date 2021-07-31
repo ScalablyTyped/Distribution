@@ -13,43 +13,43 @@ import typings.awsSdkClientPinpointBrowser.typesWriteTreatmentResourceMod.WriteT
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesWriteCampaignRequestMod {
   
-  @js.native
-  trait UnmarshalledWriteCampaignRequest extends WriteCampaignRequest {
+  trait UnmarshalledWriteCampaignRequest
+    extends StObject
+       with WriteCampaignRequest {
     
     /**
       * Treatments that are defined in addition to the default treatment.
       */
     @JSName("AdditionalTreatments")
-    var AdditionalTreatments_UnmarshalledWriteCampaignRequest: js.UndefOr[js.Array[UnmarshalledWriteTreatmentResource]] = js.native
+    var AdditionalTreatments_UnmarshalledWriteCampaignRequest: js.UndefOr[js.Array[UnmarshalledWriteTreatmentResource]] = js.undefined
     
     /**
       * Campaign hook information.
       */
     @JSName("Hook")
-    var Hook_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledCampaignHook] = js.native
+    var Hook_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledCampaignHook] = js.undefined
     
     /**
       * The campaign limits settings.
       */
     @JSName("Limits")
-    var Limits_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledCampaignLimits] = js.native
+    var Limits_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledCampaignLimits] = js.undefined
     
     /**
       * The message configuration settings.
       */
     @JSName("MessageConfiguration")
-    var MessageConfiguration_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledMessageConfiguration] = js.native
+    var MessageConfiguration_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledMessageConfiguration] = js.undefined
     
     /**
       * The campaign schedule.
       */
     @JSName("Schedule")
-    var Schedule_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledSchedule] = js.native
+    var Schedule_UnmarshalledWriteCampaignRequest: js.UndefOr[UnmarshalledSchedule] = js.undefined
   }
   object UnmarshalledWriteCampaignRequest {
     
@@ -97,75 +97,74 @@ object typesWriteCampaignRequestMod {
     }
   }
   
-  @js.native
   trait WriteCampaignRequest extends StObject {
     
     /**
       * Treatments that are defined in addition to the default treatment.
       */
-    var AdditionalTreatments: js.UndefOr[js.Array[WriteTreatmentResource] | Iterable[WriteTreatmentResource]] = js.native
+    var AdditionalTreatments: js.UndefOr[js.Array[WriteTreatmentResource] | Iterable[WriteTreatmentResource]] = js.undefined
     
     /**
       * A description of the campaign.
       */
-    var Description: js.UndefOr[String] = js.native
+    var Description: js.UndefOr[String] = js.undefined
     
     /**
       * The allocated percentage of end users who will not receive messages from this campaign.
       */
-    var HoldoutPercent: js.UndefOr[Double] = js.native
+    var HoldoutPercent: js.UndefOr[Double] = js.undefined
     
     /**
       * Campaign hook information.
       */
-    var Hook: js.UndefOr[CampaignHook] = js.native
+    var Hook: js.UndefOr[CampaignHook] = js.undefined
     
     /**
       * Indicates whether the campaign is paused. A paused campaign does not send messages unless you resume it by setting IsPaused to false.
       */
-    var IsPaused: js.UndefOr[Boolean] = js.native
+    var IsPaused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The campaign limits settings.
       */
-    var Limits: js.UndefOr[CampaignLimits] = js.native
+    var Limits: js.UndefOr[CampaignLimits] = js.undefined
     
     /**
       * The message configuration settings.
       */
     var MessageConfiguration: js.UndefOr[
         typings.awsSdkClientPinpointBrowser.typesMessageConfigurationMod.MessageConfiguration
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The custom name of the campaign.
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * The campaign schedule.
       */
-    var Schedule: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule] = js.native
+    var Schedule: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesScheduleMod.Schedule] = js.undefined
     
     /**
       * The ID of the segment to which the campaign sends messages.
       */
-    var SegmentId: js.UndefOr[String] = js.native
+    var SegmentId: js.UndefOr[String] = js.undefined
     
     /**
       * The version of the segment to which the campaign sends messages.
       */
-    var SegmentVersion: js.UndefOr[Double] = js.native
+    var SegmentVersion: js.UndefOr[Double] = js.undefined
     
     /**
       * A custom description for the treatment.
       */
-    var TreatmentDescription: js.UndefOr[String] = js.native
+    var TreatmentDescription: js.UndefOr[String] = js.undefined
     
     /**
       * The custom name of a variation of the campaign used for A/B testing.
       */
-    var TreatmentName: js.UndefOr[String] = js.native
+    var TreatmentName: js.UndefOr[String] = js.undefined
   }
   object WriteCampaignRequest {
     

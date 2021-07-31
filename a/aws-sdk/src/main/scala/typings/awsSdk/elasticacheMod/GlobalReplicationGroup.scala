@@ -2,76 +2,74 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalReplicationGroup extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) of the global replication group.
     */
-  var ARN: js.UndefOr[String] = js.native
+  var ARN: js.UndefOr[String] = js.undefined
   
   /**
     * A flag that enables encryption at rest when set to true. You cannot modify the value of AtRestEncryptionEnabled after the replication group is created. To enable encryption at rest on a replication group you must set AtRestEncryptionEnabled to true when you create the replication group.   Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later.
     */
-  var AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.native
+  var AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * A flag that enables using an AuthToken (password) when issuing Redis commands. Default: false 
     */
-  var AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.native
+  var AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The cache node type of the Global Datastore
     */
-  var CacheNodeType: js.UndefOr[String] = js.native
+  var CacheNodeType: js.UndefOr[String] = js.undefined
   
   /**
     * A flag that indicates whether the Global Datastore is cluster enabled.
     */
-  var ClusterEnabled: js.UndefOr[BooleanOptional] = js.native
+  var ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The Elasticache engine. For Redis only.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The Elasticache Redis engine version.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the slot configuration and global identifier for each slice group.
     */
-  var GlobalNodeGroups: js.UndefOr[GlobalNodeGroupList] = js.native
+  var GlobalNodeGroups: js.UndefOr[GlobalNodeGroupList] = js.undefined
   
   /**
     * The optional description of the Global Datastore
     */
-  var GlobalReplicationGroupDescription: js.UndefOr[String] = js.native
+  var GlobalReplicationGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Global Datastore
     */
-  var GlobalReplicationGroupId: js.UndefOr[String] = js.native
+  var GlobalReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The replication groups that comprise the Global Datastore.
     */
-  var Members: js.UndefOr[GlobalReplicationGroupMemberList] = js.native
+  var Members: js.UndefOr[GlobalReplicationGroupMemberList] = js.undefined
   
   /**
     * The status of the Global Datastore
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster. 
     */
-  var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.native
+  var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
 }
 object GlobalReplicationGroup {
   

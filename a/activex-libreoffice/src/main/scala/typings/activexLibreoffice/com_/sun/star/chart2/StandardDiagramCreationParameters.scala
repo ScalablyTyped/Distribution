@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** parameters that may be passed to {@link XChartTypeTemplate.createDiagramByDataSource()} . */
-@js.native
 trait StandardDiagramCreationParameters extends StObject {
   
   /** States whether the first XLabeledDataSequence in a data-source is used as categories. */
-  var HasCategories: Boolean = js.native
+  var HasCategories: Boolean
   
   /** If categories are given they should be used as x values also if a chart type requires x values. Default is true. */
-  var UseCategoriesAsX: Boolean = js.native
+  var UseCategoriesAsX: Boolean
 }
 object StandardDiagramCreationParameters {
   

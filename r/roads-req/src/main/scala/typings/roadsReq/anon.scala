@@ -3,15 +3,13 @@ package typings.roadsReq
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: BufferEncoding = js.native
+    var encoding: BufferEncoding
   }
   object Encoding {
     
@@ -29,12 +27,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Pw extends StObject {
     
-    var pw: String = js.native
+    var pw: String
     
-    var un: String = js.native
+    var un: String
   }
   object Pw {
     

@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -100,9 +99,9 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
     * @param rowFieldNameOrId A string value that identifies the row by the name of the data source field to which the row is bound, or by the row's name.
     */
   def HasChanges(): Boolean = js.native
-  def HasChanges(visibleIndex: js.UndefOr[scala.Nothing], rowFieldNameOrId: String): Boolean = js.native
   def HasChanges(visibleIndex: Double): Boolean = js.native
   def HasChanges(visibleIndex: Double, rowFieldNameOrId: String): Boolean = js.native
+  def HasChanges(visibleIndex: Unit, rowFieldNameOrId: String): Boolean = js.native
   
   /**
     * Indicates if the record with the specified visible index is deleted. true, if the record is deleted; otherwise, false.
@@ -155,19 +154,19 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValue(visibleIndex: Double, rowFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValue(
-    visibleIndex: Double,
-    rowFieldNameOrId: String,
-    value: js.Any,
-    displayText: js.UndefOr[scala.Nothing],
-    cancelCellHighlighting: Boolean
-  ): Unit = js.native
   def SetCellValue(visibleIndex: Double, rowFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     rowFieldNameOrId: String,
     value: js.Any,
     displayText: String,
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
+  def SetCellValue(
+    visibleIndex: Double,
+    rowFieldNameOrId: String,
+    value: js.Any,
+    displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   

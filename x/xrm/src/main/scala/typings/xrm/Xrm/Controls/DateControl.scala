@@ -2,7 +2,6 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link StandardControl}
   */
 @js.native
-trait DateControl extends StandardControl {
+trait DateControl
+  extends StObject
+     with StandardControl {
   
   /**
     * Gets the status of the time-of-day component of the Date control.

@@ -2,11 +2,9 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "shape.toJSON()". */
-@js.native
 trait ShapeData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var comments: js.UndefOr[js.Array[CommentData]] = js.native
+  var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var hyperlinks: js.UndefOr[js.Array[HyperlinkData]] = js.native
+  var hyperlinks: js.UndefOr[js.Array[HyperlinkData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var select: js.UndefOr[Boolean] = js.native
+  var select: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var shapeDataItems: js.UndefOr[js.Array[ShapeDataItemData]] = js.native
+  var shapeDataItems: js.UndefOr[js.Array[ShapeDataItemData]] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var subShapes: js.UndefOr[js.Array[ShapeData]] = js.native
+  var subShapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait ShapeData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[ShapeViewData] = js.native
+  var view: js.UndefOr[ShapeViewData] = js.undefined
 }
 object ShapeData {
   

@@ -2,15 +2,15 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReindexRethrottleParams extends GenericParams {
+trait ReindexRethrottleParams
+  extends StObject
+     with GenericParams {
   
-  var requestsPerSecond: Double = js.native
+  var requestsPerSecond: Double
   
-  var taskId: String = js.native
+  var taskId: String
 }
 object ReindexRethrottleParams {
   

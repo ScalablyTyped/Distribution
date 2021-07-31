@@ -5,17 +5,15 @@ import typings.webPush.mod.Headers
 import typings.webPush.webPushStrings.POST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Auth extends StObject {
     
-    var auth: String = js.native
+    var auth: String
     
-    var p256dh: String = js.native
+    var p256dh: String
   }
   object Auth {
     
@@ -36,10 +34,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Authorization extends StObject {
     
-    var Authorization: String = js.native
+    var Authorization: String
   }
   object Authorization {
     
@@ -57,12 +54,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AuthorizationCryptoKey extends StObject {
     
-    var Authorization: String = js.native
+    var Authorization: String
     
-    var `Crypto-Key`: js.UndefOr[String] = js.native
+    var `Crypto-Key`: js.UndefOr[String] = js.undefined
   }
   object AuthorizationCryptoKey {
     
@@ -86,12 +82,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CryptoKey extends StObject {
     
-    var Authorization: String = js.native
+    var Authorization: String
     
-    var `Crypto-Key`: String = js.native
+    var `Crypto-Key`: String
   }
   object CryptoKey {
     
@@ -113,15 +108,14 @@ object anon {
     }
   }
   
-  @js.native
   trait PrivateKey extends StObject {
     
-    var privateKey: String = js.native
+    var privateKey: String
     
-    var publicKey: String = js.native
+    var publicKey: String
     
     // should be an object with subject, publicKey and privateKey values defined. These values should follow the VAPID Spec. (https://tools.ietf.org/html/draft-thomson-webpush-vapid)
-    var subject: String = js.native
+    var subject: String
   }
   object PrivateKey {
     
@@ -146,24 +140,23 @@ object anon {
   }
   
   /* Inlined web-push.web-push.RequestDetails & {  body :node.Buffer} */
-  @js.native
   trait RequestDetailsbodyBuffer extends StObject {
     
-    var body: (Buffer | Null) with Buffer = js.native
+    var body: (Buffer | Null) & Buffer
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var method: POST = js.native
+    var method: POST
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
   }
   object RequestDetailsbodyBuffer {
     
     @scala.inline
-    def apply(body: (Buffer | Null) with Buffer, endpoint: String, headers: Headers, method: POST): RequestDetailsbodyBuffer = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    def apply(body: (Buffer | Null) & Buffer, endpoint: String, headers: Headers): RequestDetailsbodyBuffer = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST")
       __obj.asInstanceOf[RequestDetailsbodyBuffer]
     }
     
@@ -171,7 +164,7 @@ object anon {
     implicit class RequestDetailsbodyBufferMutableBuilder[Self <: RequestDetailsbodyBuffer] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBody(value: (Buffer | Null) with Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: (Buffer | Null) & Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
@@ -191,24 +184,23 @@ object anon {
   }
   
   /* Inlined web-push.web-push.RequestDetails & {  body :null} */
-  @js.native
   trait RequestDetailsbodynull extends StObject {
     
-    var body: (Buffer | Null) with Null = js.native
+    var body: (Buffer | Null) & Null
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var method: POST = js.native
+    var method: POST
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
   }
   object RequestDetailsbodynull {
     
     @scala.inline
-    def apply(body: (Buffer | Null) with Null, endpoint: String, headers: Headers, method: POST): RequestDetailsbodynull = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    def apply(body: (Buffer | Null) & Null, endpoint: String, headers: Headers): RequestDetailsbodynull = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST")
       __obj.asInstanceOf[RequestDetailsbodynull]
     }
     
@@ -216,7 +208,7 @@ object anon {
     implicit class RequestDetailsbodynullMutableBuilder[Self <: RequestDetailsbodynull] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBody(value: (Buffer | Null) with Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: (Buffer | Null) & Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])

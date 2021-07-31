@@ -6,24 +6,22 @@ import typings.dva.dvaStrings.slash
 import typings.dva.mod.EffectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<react-router-dom.react-router-dom.BrowserRouterProps> */
-  @js.native
   trait ReadonlyBrowserRouterProp extends StObject {
     
-    val basename: js.UndefOr[String] = js.native
+    val basename: js.UndefOr[String] = js.undefined
     
-    val forceRefresh: js.UndefOr[Boolean] = js.native
+    val forceRefresh: js.UndefOr[Boolean] = js.undefined
     
     val getUserConfirmation: js.UndefOr[
         js.Function2[/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    val keyLength: js.UndefOr[Double] = js.native
+    val keyLength: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyBrowserRouterProp {
     
@@ -63,16 +61,15 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router-dom.react-router-dom.HashRouterProps> */
-  @js.native
   trait ReadonlyHashRouterProps extends StObject {
     
-    val basename: js.UndefOr[String] = js.native
+    val basename: js.UndefOr[String] = js.undefined
     
     val getUserConfirmation: js.UndefOr[
         js.Function2[/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    val hashType: js.UndefOr[slash | noslash | hashbang] = js.native
+    val hashType: js.UndefOr[slash | noslash | hashbang] = js.undefined
   }
   object ReadonlyHashRouterProps {
     
@@ -105,10 +102,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: EffectType = js.native
+    var `type`: EffectType
   }
   object Type {
     

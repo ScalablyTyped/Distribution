@@ -7,19 +7,17 @@ import typings.googleapisCommon.endpointMod.Endpoint
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
   
-  type APIEndpoint = Endpoint with js.Any
+  type APIEndpoint = Endpoint & js.Any
   
-  @js.native
   trait APIRequestContext extends StObject {
     
-    var _options: GlobalOptions = js.native
+    var _options: GlobalOptions
     
-    var google: js.UndefOr[GoogleConfigurable] = js.native
+    var google: js.UndefOr[GoogleConfigurable] = js.undefined
   }
   object APIRequestContext {
     
@@ -43,20 +41,19 @@ object apiMod {
     }
   }
   
-  @js.native
   trait APIRequestParams[T] extends StObject {
     
-    var context: APIRequestContext = js.native
+    var context: APIRequestContext
     
-    var mediaUrl: js.UndefOr[String | Null] = js.native
+    var mediaUrl: js.UndefOr[String | Null] = js.undefined
     
-    var options: MethodOptions = js.native
+    var options: MethodOptions
     
-    var params: T = js.native
+    var params: T
     
-    var pathParams: js.Array[String] = js.native
+    var pathParams: js.Array[String]
     
-    var requiredParams: js.Array[String] = js.native
+    var requiredParams: js.Array[String]
   }
   object APIRequestParams {
     
@@ -73,7 +70,7 @@ object apiMod {
     }
     
     @scala.inline
-    implicit class APIRequestParamsMutableBuilder[Self <: APIRequestParams[_], T] (val x: Self with APIRequestParams[T]) extends AnyVal {
+    implicit class APIRequestParamsMutableBuilder[Self <: APIRequestParams[?], T] (val x: Self & APIRequestParams[T]) extends AnyVal {
       
       @scala.inline
       def setContext(value: APIRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -109,10 +106,11 @@ object apiMod {
   
   type BodyResponseCallback[T] = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[GaxiosResponse[T] | Null], Unit]
   
-  @js.native
-  trait GlobalOptions extends MethodOptions {
+  trait GlobalOptions
+    extends StObject
+       with MethodOptions {
     
-    var auth: js.UndefOr[OAuth2Client | String] = js.native
+    var auth: js.UndefOr[OAuth2Client | String] = js.undefined
   }
   object GlobalOptions {
     
@@ -133,10 +131,9 @@ object apiMod {
     }
   }
   
-  @js.native
   trait GoogleConfigurable extends StObject {
     
-    var _options: GlobalOptions = js.native
+    var _options: GlobalOptions
   }
   object GoogleConfigurable {
     
@@ -154,12 +151,13 @@ object apiMod {
     }
   }
   
-  @js.native
-  trait MethodOptions extends GaxiosOptions {
+  trait MethodOptions
+    extends StObject
+       with GaxiosOptions {
     
-    var rootUrl: js.UndefOr[String] = js.native
+    var rootUrl: js.UndefOr[String] = js.undefined
     
-    var userAgentDirectives: js.UndefOr[js.Array[UserAgentDirective]] = js.native
+    var userAgentDirectives: js.UndefOr[js.Array[UserAgentDirective]] = js.undefined
   }
   object MethodOptions {
     
@@ -189,10 +187,11 @@ object apiMod {
     }
   }
   
-  @js.native
-  trait ServiceOptions extends GlobalOptions {
+  trait ServiceOptions
+    extends StObject
+       with GlobalOptions {
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ServiceOptions {
     
@@ -213,14 +212,13 @@ object apiMod {
     }
   }
   
-  @js.native
   trait UserAgentDirective extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var product: String = js.native
+    var product: String
     
-    var version: String = js.native
+    var version: String
   }
   object UserAgentDirective {
     

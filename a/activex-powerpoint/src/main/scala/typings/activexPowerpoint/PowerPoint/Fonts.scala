@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fonts extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): Font = js.native
+  def Item(Index: js.Any): Font
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Fonts_typekey")
-  var PowerPointDotFonts_typekey: Fonts = js.native
+  var PowerPointDotFonts_typekey: Fonts
   
-  def Replace(Original: String, Replacement: String): Unit = js.native
+  def Replace(Original: String, Replacement: String): Unit
 }
 object Fonts {
   

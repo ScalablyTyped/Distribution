@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyGroupSummary extends StObject {
   
   /**
     * A key group.
     */
-  var KeyGroup: typings.awsSdk.cloudfrontMod.KeyGroup = js.native
+  var KeyGroup: typings.awsSdk.cloudfrontMod.KeyGroup
 }
 object KeyGroupSummary {
   

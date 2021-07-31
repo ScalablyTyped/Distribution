@@ -47,10 +47,13 @@ import typings.std.PromiseConstructorLike
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rxjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rxjs", "ArgumentOutOfRangeError")
   @js.native
@@ -59,7 +62,16 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs", "ArgumentOutOfRangeError")
   @js.native
-  class ArgumentOutOfRangeErrorCls () extends Error
+  class ArgumentOutOfRangeErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs", "AsyncSubject")
   @js.native
@@ -91,7 +103,16 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs", "EmptyError")
   @js.native
-  class EmptyErrorCls () extends Error
+  class EmptyErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs", "GroupedObservable")
   @js.native
@@ -121,11 +142,11 @@ object mod {
     def this(kind: E, value: T) = this()
     def this(kind: N, value: T) = this()
     def this(kind: C, value: T, error: js.Any) = this()
-    def this(kind: C, value: js.UndefOr[scala.Nothing], error: js.Any) = this()
+    def this(kind: C, value: Unit, error: js.Any) = this()
     def this(kind: E, value: T, error: js.Any) = this()
-    def this(kind: E, value: js.UndefOr[scala.Nothing], error: js.Any) = this()
+    def this(kind: E, value: Unit, error: js.Any) = this()
     def this(kind: N, value: T, error: js.Any) = this()
-    def this(kind: N, value: js.UndefOr[scala.Nothing], error: js.Any) = this()
+    def this(kind: N, value: Unit, error: js.Any) = this()
   }
   /* static members */
   object Notification {
@@ -145,9 +166,8 @@ object mod {
       * @return {Notification<any>} The valueless "complete" Notification.
       * @nocollapse
       */
-    @JSImport("rxjs", "Notification.createComplete")
-    @js.native
-    def createComplete(): typings.rxjs.notificationMod.Notification[_] = js.native
+    @scala.inline
+    def createComplete(): typings.rxjs.notificationMod.Notification[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplete")().asInstanceOf[typings.rxjs.notificationMod.Notification[js.Any]]
     
     /**
       * A shortcut to create a Notification instance of the type `error` from a
@@ -157,12 +177,10 @@ object mod {
       * argument.
       * @nocollapse
       */
-    @JSImport("rxjs", "Notification.createError")
-    @js.native
-    def createError[T](): typings.rxjs.notificationMod.Notification[T] = js.native
-    @JSImport("rxjs", "Notification.createError")
-    @js.native
-    def createError[T](err: js.Any): typings.rxjs.notificationMod.Notification[T] = js.native
+    @scala.inline
+    def createError[T](): typings.rxjs.notificationMod.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")().asInstanceOf[typings.rxjs.notificationMod.Notification[T]]
+    @scala.inline
+    def createError[T](err: js.Any): typings.rxjs.notificationMod.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")(err.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.notificationMod.Notification[T]]
     
     /**
       * A shortcut to create a Notification instance of the type `next` from a
@@ -172,9 +190,8 @@ object mod {
       * argument.
       * @nocollapse
       */
-    @JSImport("rxjs", "Notification.createNext")
-    @js.native
-    def createNext[T](value: T): typings.rxjs.notificationMod.Notification[T] = js.native
+    @scala.inline
+    def createNext[T](value: T): typings.rxjs.notificationMod.Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNext")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.notificationMod.Notification[T]]
     
     @JSImport("rxjs", "Notification.undefinedValueNotification")
     @js.native
@@ -188,13 +205,13 @@ object mod {
   object NotificationKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.rxjs.notificationMod.NotificationKind with String] = js.native
+    def apply(value: String): js.UndefOr[typings.rxjs.notificationMod.NotificationKind & String] = js.native
     
-    /* "C" */ val COMPLETE: typings.rxjs.notificationMod.NotificationKind.COMPLETE with String = js.native
+    /* "C" */ val COMPLETE: typings.rxjs.notificationMod.NotificationKind.COMPLETE & String = js.native
     
-    /* "E" */ val ERROR: typings.rxjs.notificationMod.NotificationKind.ERROR with String = js.native
+    /* "E" */ val ERROR: typings.rxjs.notificationMod.NotificationKind.ERROR & String = js.native
     
-    /* "N" */ val NEXT: typings.rxjs.notificationMod.NotificationKind.NEXT with String = js.native
+    /* "N" */ val NEXT: typings.rxjs.notificationMod.NotificationKind.NEXT & String = js.native
   }
   
   @JSImport("rxjs", "ObjectUnsubscribedError")
@@ -204,7 +221,16 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs", "ObjectUnsubscribedError")
   @js.native
-  class ObjectUnsubscribedErrorCls () extends Error
+  class ObjectUnsubscribedErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs", "Observable")
   @js.native
@@ -256,19 +282,18 @@ object mod {
       * @nocollapse
       * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
       */
-    @JSImport("rxjs", "Observable.if")
-    @js.native
-    def `if`[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
-    @JSImport("rxjs", "Observable.if")
-    @js.native
+    @scala.inline
+    def `if`[T, F](condition: js.Function0[Boolean]): Observable[T | F] = ^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any]).asInstanceOf[Observable[T | F]]
+    @scala.inline
+    def `if`[T, F](condition: js.Function0[Boolean], trueResult: Unit, falseResult: SubscribableOrPromise[F]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+    @scala.inline
+    def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+    @scala.inline
     def `if`[T, F](
       condition: js.Function0[Boolean],
-      trueResult: js.UndefOr[SubscribableOrPromise[T]],
+      trueResult: SubscribableOrPromise[T],
       falseResult: SubscribableOrPromise[F]
-    ): Observable[T | F] = js.native
-    @JSImport("rxjs", "Observable.if")
-    @js.native
-    def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
+    ): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
     
     /**
       * @nocollapse
@@ -285,12 +310,10 @@ object mod {
       * @nocollapse
       * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
       */
-    @JSImport("rxjs", "Observable.throw")
-    @js.native
-    def `throw`(error: js.Any): Observable[scala.Nothing] = js.native
-    @JSImport("rxjs", "Observable.throw")
-    @js.native
-    def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
+    @scala.inline
+    def `throw`(error: js.Any): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Observable[scala.Nothing]]
+    @scala.inline
+    def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[scala.Nothing]]
   }
   
   @JSImport("rxjs", "ReplaySubject")
@@ -298,16 +321,12 @@ object mod {
   class ReplaySubject[T] ()
     extends typings.rxjs.replaySubjectMod.ReplaySubject[T] {
     def this(bufferSize: Double) = this()
-    def this(bufferSize: js.UndefOr[scala.Nothing], windowTime: Double) = this()
     def this(bufferSize: Double, windowTime: Double) = this()
-    def this(
-      bufferSize: js.UndefOr[scala.Nothing],
-      windowTime: js.UndefOr[scala.Nothing],
-      scheduler: SchedulerLike
-    ) = this()
-    def this(bufferSize: js.UndefOr[scala.Nothing], windowTime: Double, scheduler: SchedulerLike) = this()
-    def this(bufferSize: Double, windowTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike) = this()
+    def this(bufferSize: Unit, windowTime: Double) = this()
     def this(bufferSize: Double, windowTime: Double, scheduler: SchedulerLike) = this()
+    def this(bufferSize: Double, windowTime: Unit, scheduler: SchedulerLike) = this()
+    def this(bufferSize: Unit, windowTime: Double, scheduler: SchedulerLike) = this()
+    def this(bufferSize: Unit, windowTime: Unit, scheduler: SchedulerLike) = this()
   }
   
   @JSImport("rxjs", "Scheduler")
@@ -339,14 +358,17 @@ object mod {
   /* static members */
   object Scheduler {
     
+    @JSImport("rxjs", "Scheduler")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Note: the extra arrow function wrapper is to make testing by overriding
       * Date.now easier.
       * @nocollapse
       */
-    @JSImport("rxjs", "Scheduler.now")
-    @js.native
-    def now(): Double = js.native
+    @scala.inline
+    def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   }
   
   @JSImport("rxjs", "Subject")
@@ -383,49 +405,38 @@ object mod {
   class Subscriber[T] ()
     extends typings.rxjs.subscriberMod.Subscriber[T] {
     def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
-    def this(destinationOrNext: PartialObserver[_]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
-    def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.Function1[/* value */ T, Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
+    def this(destinationOrNext: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]) = this()
     def this(
-      destinationOrNext: PartialObserver[_],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: PartialObserver[_],
+      destinationOrNext: Unit,
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: Unit, error: Unit, complete: js.Function0[Unit]) = this()
+    def this(
+      destinationOrNext: PartialObserver[js.Any],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: Unit, complete: js.Function0[Unit]) = this()
   }
   /* static members */
   object Subscriber {
+    
+    @JSImport("rxjs", "Subscriber")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A static factory for a Subscriber, given a (potentially partial) definition
@@ -439,45 +450,29 @@ object mod {
       * Observer represented by the given arguments.
       * @nocollapse
       */
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
-    def create[T](): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
-    def create[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
-    def create[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
-    def create[T](
-      next: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
-    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
-    def create[T](
-      next: js.Function1[/* x */ js.UndefOr[T], Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
+    @scala.inline
+    def create[T](): typings.rxjs.subscriberMod.Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs", "Subscriber.create")
-    @js.native
+    ): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
+    ): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit], error: Unit, complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit], complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: Unit, complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
   }
   
   @JSImport("rxjs", "Subscription")
@@ -512,7 +507,16 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs", "TimeoutError")
   @js.native
-  class TimeoutErrorCls () extends Error
+  class TimeoutErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs", "UnsubscriptionError")
   @js.native
@@ -522,8 +526,18 @@ object mod {
   @JSImport("rxjs", "UnsubscriptionError")
   @js.native
   class UnsubscriptionErrorCls protected ()
-    extends typings.rxjs.unsubscriptionErrorMod.UnsubscriptionError {
-    def this(errors: js.Array[_]) = this()
+    extends StObject
+       with typings.rxjs.unsubscriptionErrorMod.UnsubscriptionError {
+    def this(errors: js.Array[js.Any]) = this()
+    
+    /* CompleteClass */
+    override val errors: js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("rxjs", "VirtualAction")
@@ -543,12 +557,15 @@ object mod {
   /* static members */
   object VirtualAction {
     
-    @JSImport("rxjs", "VirtualAction.sortActions")
+    @JSImport("rxjs", "VirtualAction")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def sortActions[T](
       a: typings.rxjs.virtualTimeSchedulerMod.VirtualAction[T],
       b: typings.rxjs.virtualTimeSchedulerMod.VirtualAction[T]
-    ): `1` | `0` | `-1` = js.native
+    ): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("sortActions")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   }
   
   @JSImport("rxjs", "VirtualTimeScheduler")
@@ -564,7 +581,6 @@ object mod {
             ], 
             AsyncAction[js.Object]
           ]) = this()
-    def this(SchedulerAction: js.UndefOr[scala.Nothing], maxFrames: Double) = this()
     def this(
       SchedulerAction: Instantiable2[
             /* scheduler */ AsyncScheduler, 
@@ -577,6 +593,7 @@ object mod {
           ],
       maxFrames: Double
     ) = this()
+    def this(SchedulerAction: Unit, maxFrames: Double) = this()
   }
   /* static members */
   object VirtualTimeScheduler {
@@ -616,80 +633,67 @@ object mod {
   @js.native
   val asyncScheduler: AsyncScheduler = js.native
   
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, Observable[_]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback(callbackFunc: js.Function1[/* callback */ js.Function0[_], _]): js.Function0[Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback(callbackFunc: js.Function1[/* callback */ js.Function0[_], _], scheduler: SchedulerLike): js.Function0[Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback(callbackFunc: js.Function, resultSelector: js.Function): js.Function1[/* repeated */ js.Any, Observable[_]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback(callbackFunc: js.Function, resultSelector: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[_]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback(callbackFunc: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[_]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback[A1](callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function0[_], _]): js.Function1[/* arg1 */ A1, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  @scala.inline
+  def bindCallback(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, Observable[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Any]]]
+  @scala.inline
+  def bindCallback(callbackFunc: js.Function1[/* callback */ js.Function0[js.Any], js.Any]): js.Function0[Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[Unit]]]
+  @scala.inline
+  def bindCallback(callbackFunc: js.Function1[/* callback */ js.Function0[js.Any], js.Any], scheduler: SchedulerLike): js.Function0[Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[Unit]]]
+  @scala.inline
+  def bindCallback(callbackFunc: js.Function, resultSelector: js.Function): js.Function1[/* repeated */ js.Any, Observable[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Any]]]
+  @scala.inline
+  def bindCallback(callbackFunc: js.Function, resultSelector: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Any]]]
+  @scala.inline
+  def bindCallback(callbackFunc: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Any]]]
+  @scala.inline
+  def bindCallback[A1](callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function0[js.Any], js.Any]): js.Function1[/* arg1 */ A1, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[Unit]]]
+  @scala.inline
   def bindCallback[A1](
-    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function0[_], _],
+    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function0[js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback[A1, A2](callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function0[_], _]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[Unit]]]
+  @scala.inline
   def bindCallback[A1, A2](
-    callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function0[_], _],
+    callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function0[js.Any], js.Any]
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]]]
+  @scala.inline
+  def bindCallback[A1, A2](
+    callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function0[js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]]]
+  @scala.inline
   def bindCallback[A1, A2, A3](
-    callbackFunc: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* callback */ js.Function0[_], _]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+    callbackFunc: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* callback */ js.Function0[js.Any], js.Any]
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]]]
+  @scala.inline
   def bindCallback[A1, A2, A3](
-    callbackFunc: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* callback */ js.Function0[_], _],
+    callbackFunc: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* callback */ js.Function0[js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]]]
+  @scala.inline
   def bindCallback[A1, A2, A3, A4](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function0[_], 
-      _
+      /* callback */ js.Function0[js.Any], 
+      js.Any
     ]
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]]]
+  @scala.inline
   def bindCallback[A1, A2, A3, A4](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function0[_], 
-      _
+      /* callback */ js.Function0[js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]]]
+  @scala.inline
   def bindCallback[A1, A2, A3, A4, A5](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -697,8 +701,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function0[_], 
-      _
+      /* callback */ js.Function0[js.Any], 
+      js.Any
     ]
   ): js.Function5[
     /* arg1 */ A1, 
@@ -707,9 +711,15 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[Unit]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[Unit]
+  ]]
+  @scala.inline
   def bindCallback[A1, A2, A3, A4, A5](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -717,8 +727,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function0[_], 
-      _
+      /* callback */ js.Function0[js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
   ): js.Function5[
@@ -728,9 +738,16 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[Unit]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[Unit]
+  ]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1[A1, A2, A3, A4, A5, R1](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -738,12 +755,11 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function1[/* res1 */ R1, _], 
-      _
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
     ]
-  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]]]
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1[A1, A2, A3, A4, A5, R1](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -751,13 +767,13 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function1[/* res1 */ R1, _], 
-      _
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1R2[A1, A2, A3, A4, A5, R1, R2](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -765,8 +781,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ]
   ): js.Function5[
     /* arg1 */ A1, 
@@ -775,9 +791,15 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1R2[A1, A2, A3, A4, A5, R1, R2](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -785,8 +807,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
   ): js.Function5[
@@ -796,9 +818,16 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1R2R3[A1, A2, A3, A4, A5, R1, R2, R3](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -806,8 +835,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
   ): js.Function5[
     /* arg1 */ A1, 
@@ -816,9 +845,15 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1R2R3[A1, A2, A3, A4, A5, R1, R2, R3](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -826,8 +861,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
   ): js.Function5[
@@ -837,9 +872,16 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1R2R3R4[A1, A2, A3, A4, A5, R1, R2, R3, R4](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -847,8 +889,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ]
   ): js.Function5[
     /* arg1 */ A1, 
@@ -856,10 +898,16 @@ object mod {
     /* arg3 */ A3, 
     /* arg4 */ A4, 
     /* arg5 */ A5, 
-    Observable[js.Array[_]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+    Observable[js.Array[js.Any]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Array[js.Any]]
+  ]]
+  @scala.inline
   def bindCallback_A1A2A3A4A5R1R2R3R4[A1, A2, A3, A4, A5, R1, R2, R3, R4](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -867,8 +915,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
   ): js.Function5[
@@ -877,43 +925,49 @@ object mod {
     /* arg3 */ A3, 
     /* arg4 */ A4, 
     /* arg5 */ A5, 
-    Observable[js.Array[_]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+    Observable[js.Array[js.Any]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Array[js.Any]]
+  ]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4R1[A1, A2, A3, A4, R1](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function1[/* res1 */ R1, _], 
-      _
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
     ]
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]]]
+  @scala.inline
   def bindCallback_A1A2A3A4R1[A1, A2, A3, A4, R1](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function1[/* res1 */ R1, _], 
-      _
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4R1R2[A1, A2, A3, A4, R1, R2](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ]
   ): js.Function4[
     /* arg1 */ A1, 
@@ -921,17 +975,22 @@ object mod {
     /* arg3 */ A3, 
     /* arg4 */ A4, 
     Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  @scala.inline
   def bindCallback_A1A2A3A4R1R2[A1, A2, A3, A4, R1, R2](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
   ): js.Function4[
@@ -940,17 +999,23 @@ object mod {
     /* arg3 */ A3, 
     /* arg4 */ A4, 
     Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4R1R2R3[A1, A2, A3, A4, R1, R2, R3](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
   ): js.Function4[
     /* arg1 */ A1, 
@@ -958,17 +1023,22 @@ object mod {
     /* arg3 */ A3, 
     /* arg4 */ A4, 
     Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  @scala.inline
   def bindCallback_A1A2A3A4R1R2R3[A1, A2, A3, A4, R1, R2, R3](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
   ): js.Function4[
@@ -977,400 +1047,416 @@ object mod {
     /* arg3 */ A3, 
     /* arg4 */ A4, 
     Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  
+  @scala.inline
   def bindCallback_A1A2A3A4R1R2R3R4[A1, A2, A3, A4, R1, R2, R3, R4](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ]
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[js.Array[js.Any]]]]
+  @scala.inline
   def bindCallback_A1A2A3A4R1R2R3R4[A1, A2, A3, A4, R1, R2, R3, R4](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
   def bindCallback_A1A2A3R1[A1, A2, A3, R1](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function1[/* res1 */ R1, _], 
-      _
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
     ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]]]
+  @scala.inline
   def bindCallback_A1A2A3R1[A1, A2, A3, R1](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function1[/* res1 */ R1, _], 
-      _
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]]]
+  
+  @scala.inline
   def bindCallback_A1A2A3R1R2[A1, A2, A3, R1, R2](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
   def bindCallback_A1A2A3R1R2[A1, A2, A3, R1, R2](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
   def bindCallback_A1A2A3R1R2R3[A1, A2, A3, R1, R2, R3](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
   def bindCallback_A1A2A3R1R2R3[A1, A2, A3, R1, R2, R3](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]]]
+  
+  @scala.inline
   def bindCallback_A1A2A3R1R2R3R4[A1, A2, A3, R1, R2, R3, R4](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Array[js.Any]]]]
+  @scala.inline
   def bindCallback_A1A2A3R1R2R3R4[A1, A2, A3, R1, R2, R3, R4](
     callbackFunc: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
   def bindCallback_A1A2R1[A1, A2, R1](
-    callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function1[/* res1 */ R1, _], _]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
+    ]
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]]]
+  @scala.inline
   def bindCallback_A1A2R1[A1, A2, R1](
-    callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function1[/* res1 */ R1, _], _],
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function1[/* res1 */ R1, js.Any], 
+      js.Any
+    ],
     scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]]]
+  
+  @scala.inline
   def bindCallback_A1A2R1R2[A1, A2, R1, R2](
     callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
   def bindCallback_A1A2R1R2[A1, A2, R1, R2](
     callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], 
-      _
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
   def bindCallback_A1A2R1R2R3[A1, A2, R1, R2, R3](
     callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
   def bindCallback_A1A2R1R2R3[A1, A2, R1, R2, R3](
     callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]]]
+  
+  @scala.inline
   def bindCallback_A1A2R1R2R3R4[A1, A2, R1, R2, R3, R4](
     callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Array[js.Any]]]]
+  @scala.inline
   def bindCallback_A1A2R1R2R3R4[A1, A2, R1, R2, R3, R4](
     callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_A1R1[A1, R1](callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* res1 */ R1, _], _]): js.Function1[/* arg1 */ A1, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
   def bindCallback_A1R1[A1, R1](
-    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* res1 */ R1, _], _],
+    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* res1 */ R1, js.Any], js.Any]
+  ): js.Function1[/* arg1 */ A1, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[R1]]]
+  @scala.inline
+  def bindCallback_A1R1[A1, R1](
+    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* res1 */ R1, js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[R1]]]
+  
+  @scala.inline
   def bindCallback_A1R1R2[A1, R1, R2](
-    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], _]
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ]
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
   def bindCallback_A1R1R2[A1, R1, R2](
-    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], _],
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ],
     scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
   def bindCallback_A1R1R2R3[A1, R1, R2, R3](
     callbackFunc: js.Function2[
       /* arg1 */ A1, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
   def bindCallback_A1R1R2R3[A1, R1, R2, R3](
     callbackFunc: js.Function2[
       /* arg1 */ A1, 
-      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]]]
+  
+  @scala.inline
   def bindCallback_A1R1R2R3R4[A1, R1, R2, R3, R4](
     callbackFunc: js.Function2[
       /* arg1 */ A1, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ]
-  ): js.Function1[/* arg1 */ A1, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Array[js.Any]]]]
+  @scala.inline
   def bindCallback_A1R1R2R3R4[A1, R1, R2, R3, R4](
     callbackFunc: js.Function2[
       /* arg1 */ A1, 
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_AR_Function1[A, R](callbackFunc: js.Function1[A | (js.Function1[/* repeated */ R, _]), _]): js.Function1[/* repeated */ A, Observable[js.Array[R]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_AR_Function1[A, R](callbackFunc: js.Function1[A | (js.Function1[/* repeated */ R, _]), _], scheduler: SchedulerLike): js.Function1[/* repeated */ A, Observable[js.Array[R]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_R1[R1](callbackFunc: js.Function1[/* callback */ js.Function1[/* res1 */ R1, _], _]): js.Function0[Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def bindCallback_AR_Function1[A, R](callbackFunc: js.Function1[A | (js.Function1[/* repeated */ R, js.Any]), js.Any]): js.Function1[/* repeated */ A, Observable[js.Array[R]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ A, Observable[js.Array[R]]]]
+  @scala.inline
+  def bindCallback_AR_Function1[A, R](
+    callbackFunc: js.Function1[A | (js.Function1[/* repeated */ R, js.Any]), js.Any],
+    scheduler: SchedulerLike
+  ): js.Function1[/* repeated */ A, Observable[js.Array[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ A, Observable[js.Array[R]]]]
+  
+  @scala.inline
+  def bindCallback_R1[R1](callbackFunc: js.Function1[/* callback */ js.Function1[/* res1 */ R1, js.Any], js.Any]): js.Function0[Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[R1]]]
+  @scala.inline
   def bindCallback_R1[R1](
-    callbackFunc: js.Function1[/* callback */ js.Function1[/* res1 */ R1, _], _],
+    callbackFunc: js.Function1[/* callback */ js.Function1[/* res1 */ R1, js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function0[Observable[R1]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_R1R2[R1, R2](callbackFunc: js.Function1[/* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], _]): js.Function0[Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function0[Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[R1]]]
+  
+  @scala.inline
   def bindCallback_R1R2[R1, R2](
-    callbackFunc: js.Function1[/* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, _], _],
+    callbackFunc: js.Function1[/* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], js.Any]
+  ): js.Function0[Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
+  def bindCallback_R1R2[R1, R2](
+    callbackFunc: js.Function1[/* callback */ js.Function2[/* res1 */ R1, /* res2 */ R2, js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function0[Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
+  ): js.Function0[Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
   def bindCallback_R1R2R3[R1, R2, R3](
-    callbackFunc: js.Function1[/* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], _]
-  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_R1R2R3[R1, R2, R3](
-    callbackFunc: js.Function1[/* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], _],
-    scheduler: SchedulerLike
-  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_R1R2R3R4[R1, R2, R3, R4](
     callbackFunc: js.Function1[
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
-  ): js.Function0[Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindCallback")
-  @js.native
-  def bindCallback_R1R2R3R4[R1, R2, R3, R4](
+  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
+  def bindCallback_R1R2R3[R1, R2, R3](
     callbackFunc: js.Function1[
-      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, _], 
-      _
+      /* callback */ js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function0[Observable[js.Array[_]]] = js.native
+  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[js.Tuple3[R1, R2, R3]]]]
   
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback(callbackFunc: js.Function1[/* callback */ js.Function1[/* err */ js.Any, _], _]): js.Function0[Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
+  @scala.inline
+  def bindCallback_R1R2R3R4[R1, R2, R3, R4](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
+    ]
+  ): js.Function0[Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindCallback_R1R2R3R4[R1, R2, R3, R4](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* repeated */ js.Any, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function0[Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def bindNodeCallback(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindNodeCallback(callbackFunc: js.Function1[/* callback */ js.Function1[/* err */ js.Any, js.Any], js.Any]): js.Function0[Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[Unit]]]
+  @scala.inline
   def bindNodeCallback(
-    callbackFunc: js.Function1[/* callback */ js.Function1[/* err */ js.Any, _], _],
+    callbackFunc: js.Function1[/* callback */ js.Function1[/* err */ js.Any, js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function0[Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback(callbackFunc: js.Function, resultSelector: js.Function): js.Function1[/* repeated */ js.Any, Observable[_]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback(callbackFunc: js.Function, resultSelector: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[_]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback(callbackFunc: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback[A1](callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* err */ js.Any, _], _]): js.Function1[/* arg1 */ A1, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
+  ): js.Function0[Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[Unit]]]
+  @scala.inline
+  def bindNodeCallback(callbackFunc: js.Function, resultSelector: js.Function): js.Function1[/* repeated */ js.Any, Observable[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Any]]]
+  @scala.inline
+  def bindNodeCallback(callbackFunc: js.Function, resultSelector: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Any]]]
+  @scala.inline
+  def bindNodeCallback(callbackFunc: js.Function, scheduler: SchedulerLike): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
   def bindNodeCallback[A1](
-    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* err */ js.Any, _], _],
+    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* err */ js.Any, js.Any], js.Any]
+  ): js.Function1[/* arg1 */ A1, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[Unit]]]
+  @scala.inline
+  def bindNodeCallback[A1](
+    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* err */ js.Any, js.Any], js.Any],
     scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
+  ): js.Function1[/* arg1 */ A1, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[Unit]]]
+  @scala.inline
   def bindNodeCallback[A1, A2](
-    callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function1[/* err */ js.Any, _], _]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback[A1, A2](
-    callbackFunc: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* callback */ js.Function1[/* err */ js.Any, _], _],
-    scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback[A1, A2, A3](
-    callbackFunc: js.Function4[
+    callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function1[/* err */ js.Any, _], 
-      _
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
     ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback[A1, A2, A3](
-    callbackFunc: js.Function4[
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]]]
+  @scala.inline
+  def bindNodeCallback[A1, A2](
+    callbackFunc: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function1[/* err */ js.Any, _], 
-      _
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[Unit]]]
+  @scala.inline
+  def bindNodeCallback[A1, A2, A3](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
+    ]
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]]]
+  @scala.inline
+  def bindNodeCallback[A1, A2, A3](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[Unit]]]
+  @scala.inline
   def bindNodeCallback[A1, A2, A3, A4](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function1[/* err */ js.Any, _], 
-      _
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
     ]
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]]]
+  @scala.inline
   def bindNodeCallback[A1, A2, A3, A4](
     callbackFunc: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
-      /* callback */ js.Function1[/* err */ js.Any, _], 
-      _
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[Unit]]]
+  @scala.inline
   def bindNodeCallback[A1, A2, A3, A4, A5](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -1378,8 +1464,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function1[/* err */ js.Any, _], 
-      _
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
     ]
   ): js.Function5[
     /* arg1 */ A1, 
@@ -1388,9 +1474,15 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[Unit]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[Unit]
+  ]]
+  @scala.inline
   def bindNodeCallback[A1, A2, A3, A4, A5](
     callbackFunc: js.Function6[
       /* arg1 */ A1, 
@@ -1398,8 +1490,8 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      /* callback */ js.Function1[/* err */ js.Any, _], 
-      _
+      /* callback */ js.Function1[/* err */ js.Any, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
   ): js.Function5[
@@ -1409,1160 +1501,1221 @@ object mod {
     /* arg4 */ A4, 
     /* arg5 */ A5, 
     Observable[Unit]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1[A1, A2, A3, A4, A5, R1](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ]
-  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1[A1, A2, A3, A4, A5, R1](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1R2[A1, A2, A3, A4, A5, R1, R2](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ]
-  ): js.Function5[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
     /* arg3 */ A3, 
     /* arg4 */ A4, 
     /* arg5 */ A5, 
-    Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1R2[A1, A2, A3, A4, A5, R1, R2](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function5[
-    /* arg1 */ A1, 
-    /* arg2 */ A2, 
-    /* arg3 */ A3, 
-    /* arg4 */ A4, 
-    /* arg5 */ A5, 
-    Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1R2R3[A1, A2, A3, A4, A5, R1, R2, R3](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ]
-  ): js.Function5[
-    /* arg1 */ A1, 
-    /* arg2 */ A2, 
-    /* arg3 */ A3, 
-    /* arg4 */ A4, 
-    /* arg5 */ A5, 
-    Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1R2R3[A1, A2, A3, A4, A5, R1, R2, R3](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function5[
-    /* arg1 */ A1, 
-    /* arg2 */ A2, 
-    /* arg3 */ A3, 
-    /* arg4 */ A4, 
-    /* arg5 */ A5, 
-    Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1R2R3R4_Function1[A1, A2, A3, A4, A5, R1, R2, R3, R4](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ]
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4A5R1R2R3R4_Function1[A1, A2, A3, A4, A5, R1, R2, R3, R4](
-    callbackFunc: js.Function6[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1[A1, A2, A3, A4, R1](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ]
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1[A1, A2, A3, A4, R1](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1R2[A1, A2, A3, A4, R1, R2](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ]
-  ): js.Function4[
-    /* arg1 */ A1, 
-    /* arg2 */ A2, 
-    /* arg3 */ A3, 
-    /* arg4 */ A4, 
-    Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1R2[A1, A2, A3, A4, R1, R2](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function4[
-    /* arg1 */ A1, 
-    /* arg2 */ A2, 
-    /* arg3 */ A3, 
-    /* arg4 */ A4, 
-    Observable[js.Tuple2[R1, R2]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1R2R3[A1, A2, A3, A4, R1, R2, R3](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ]
-  ): js.Function4[
-    /* arg1 */ A1, 
-    /* arg2 */ A2, 
-    /* arg3 */ A3, 
-    /* arg4 */ A4, 
-    Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1R2R3[A1, A2, A3, A4, R1, R2, R3](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function4[
-    /* arg1 */ A1, 
-    /* arg2 */ A2, 
-    /* arg3 */ A3, 
-    /* arg4 */ A4, 
-    Observable[js.Tuple3[R1, R2, R3]]
-  ] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1R2R3R4_Function1[A1, A2, A3, A4, R1, R2, R3, R4](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ]
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3A4R1R2R3R4_Function1[A1, A2, A3, A4, R1, R2, R3, R4](
-    callbackFunc: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1[A1, A2, A3, R1](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1[A1, A2, A3, R1](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1R2[A1, A2, A3, R1, R2](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1R2[A1, A2, A3, R1, R2](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1R2R3[A1, A2, A3, R1, R2, R3](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ]
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1R2R3[A1, A2, A3, R1, R2, R3](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1R2R3R4_Function1[A1, A2, A3, R1, R2, R3, R4](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ]
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2A3R1R2R3R4_Function1[A1, A2, A3, R1, R2, R3, R4](
-    callbackFunc: js.Function4[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1[A1, A2, R1](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1[A1, A2, R1](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1R2[A1, A2, R1, R2](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1R2[A1, A2, R1, R2](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1R2R3[A1, A2, R1, R2, R3](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ]
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1R2R3[A1, A2, R1, R2, R3](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1R2R3R4_Function1[A1, A2, R1, R2, R3, R4](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ]
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1A2R1R2R3R4_Function1[A1, A2, R1, R2, R3, R4](
-    callbackFunc: js.Function3[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1[A1, R1](
-    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], _]
-  ): js.Function1[/* arg1 */ A1, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1[A1, R1](
-    callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], _],
-    scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1R2[A1, R1, R2](
-    callbackFunc: js.Function2[
-      /* arg1 */ A1, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ]
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1R2[A1, R1, R2](
-    callbackFunc: js.Function2[
-      /* arg1 */ A1, 
-      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1R2R3[A1, R1, R2, R3](
-    callbackFunc: js.Function2[
-      /* arg1 */ A1, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ]
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1R2R3[A1, R1, R2, R3](
-    callbackFunc: js.Function2[
-      /* arg1 */ A1, 
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1R2R3R4[A1, R1, R2, R3, R4](
-    callbackFunc: js.Function2[
-      /* arg1 */ A1, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ]
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_A1R1R2R3R4[A1, R1, R2, R3, R4](
-    callbackFunc: js.Function2[
-      /* arg1 */ A1, 
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1[R1](callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], _]): js.Function0[Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1[R1](
-    callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], _],
-    scheduler: SchedulerLike
-  ): js.Function0[Observable[R1]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1R2[R1, R2](
-    callbackFunc: js.Function1[/* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], _]
-  ): js.Function0[Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1R2[R1, R2](
-    callbackFunc: js.Function1[/* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, _], _],
-    scheduler: SchedulerLike
-  ): js.Function0[Observable[js.Tuple2[R1, R2]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1R2R3[R1, R2, R3](
-    callbackFunc: js.Function1[
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ]
-  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1R2R3[R1, R2, R3](
-    callbackFunc: js.Function1[
-      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, _], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1R2R3R4_Function1[R1, R2, R3, R4](
-    callbackFunc: js.Function1[
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ]
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
-  @JSImport("rxjs", "bindNodeCallback")
-  @js.native
-  def bindNodeCallback_R1R2R3R4_Function1[R1, R2, R3, R4](
-    callbackFunc: js.Function1[
-      /* callback */ js.Function6[
-        /* err */ js.Any, 
-        /* res1 */ R1, 
-        /* res2 */ R2, 
-        /* res3 */ R3, 
-        /* res4 */ R4, 
-        /* repeated */ js.Any, 
-        _
-      ], 
-      _
-    ],
-    scheduler: SchedulerLike
-  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[_]]] = js.native
+    Observable[Unit]
+  ]]
   
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O /* <: ObservableInput[_] */](observables: (O | SchedulerLike)*): Observable[js.Array[_]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O /* <: ObservableInput[_] */](sources: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O /* <: ObservableInput[_] */](sources: js.Array[O], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */](v1: O1): Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */](v1: O1, scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O /* <: ObservableInput[_] */, R](sources: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O /* <: ObservableInput[_] */, R](
-    sources: js.Array[O],
-    resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R],
-    scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](sources: js.Tuple2[O1, O2]): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](sources: js.Tuple2[O1, O2], scheduler: SchedulerLike): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R], scheduler: SchedulerLike): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2, scheduler: SchedulerLike): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple2[O1, O2],
-    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple2[O1, O2],
-    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R],
-    scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](sources: js.Tuple3[O1, O2, O3]): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](sources: js.Tuple3[O1, O2, O3], scheduler: SchedulerLike): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R],
-    scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, scheduler: SchedulerLike): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple3[O1, O2, O3],
-    resultSelector: js.Function3[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      R
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1[A1, A2, A3, A4, A5, R1](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple3[O1, O2, O3],
-    resultSelector: js.Function3[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      R
+  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1[A1, A2, A3, A4, A5, R1](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](sources: js.Tuple4[O1, O2, O3, O4]): Observable[
-    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](sources: js.Tuple4[O1, O2, O3, O4], scheduler: SchedulerLike): Observable[
-    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    resultSelector: js.Function3[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      R
+  ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Observable[R1]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1R2[A1, A2, A3, A4, A5, R1, R2](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    resultSelector: js.Function3[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      R
+  ): js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple2[R1, R2]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1R2[A1, A2, A3, A4, A5, R1, R2](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[
-    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, scheduler: SchedulerLike): Observable[
-    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple4[O1, O2, O3, O4],
-    resultSelector: js.Function4[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      R
+  ): js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple2[R1, R2]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1R2R3[A1, A2, A3, A4, A5, R1, R2, R3](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple4[O1, O2, O3, O4],
-    resultSelector: js.Function4[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      R
+  ): js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1R2R3[A1, A2, A3, A4, A5, R1, R2, R3](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](sources: js.Tuple5[O1, O2, O3, O4, O5]): Observable[
-    js.Tuple5[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5]
+  ): js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    /* arg5 */ A5, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1R2R3R4_Function1[A1, A2, A3, A4, A5, R1, R2, R3, R4](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
     ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](sources: js.Tuple5[O1, O2, O3, O4, O5], scheduler: SchedulerLike): Observable[
-    js.Tuple5[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5]
-    ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    v4: O4,
-    resultSelector: js.Function4[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      R
-    ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    v4: O4,
-    resultSelector: js.Function4[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      R
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4A5R1R2R3R4_Function1[A1, A2, A3, A4, A5, R1, R2, R3, R4](
+    callbackFunc: js.Function6[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[
-    js.Tuple5[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5]
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1[A1, A2, A3, A4, R1](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
     ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, scheduler: SchedulerLike): Observable[
-    js.Tuple5[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5]
-    ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple5[O1, O2, O3, O4, O5],
-    resultSelector: js.Function5[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      R
-    ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple5[O1, O2, O3, O4, O5],
-    resultSelector: js.Function5[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      R
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1[A1, A2, A3, A4, R1](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](sources: js.Tuple6[O1, O2, O3, O4, O5, O6]): Observable[
-    js.Tuple6[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5], 
-      ObservedValueOf[O6]
+  ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Observable[R1]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1R2[A1, A2, A3, A4, R1, R2](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](sources: js.Tuple6[O1, O2, O3, O4, O5, O6], scheduler: SchedulerLike): Observable[
-    js.Tuple6[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5], 
-      ObservedValueOf[O6]
-    ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    v4: O4,
-    v5: O5,
-    resultSelector: js.Function5[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      R
-    ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    v4: O4,
-    v5: O5,
-    resultSelector: js.Function5[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      R
+  ): js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple2[R1, R2]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1R2[A1, A2, A3, A4, R1, R2](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[
-    js.Tuple6[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5], 
-      ObservedValueOf[O6]
+  ): js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple2[R1, R2]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple2[R1, R2]]
+  ]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1R2R3[A1, A2, A3, A4, R1, R2, R3](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6, scheduler: SchedulerLike): Observable[
-    js.Tuple6[
-      ObservedValueOf[O1], 
-      ObservedValueOf[O2], 
-      ObservedValueOf[O3], 
-      ObservedValueOf[O4], 
-      ObservedValueOf[O5], 
-      ObservedValueOf[O6]
-    ]
-  ] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple6[O1, O2, O3, O4, O5, O6],
-    resultSelector: js.Function6[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      /* v6 */ ObservedValueOf[O6], 
-      R
-    ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */, R](
-    sources: js.Tuple6[O1, O2, O3, O4, O5, O6],
-    resultSelector: js.Function6[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      /* v6 */ ObservedValueOf[O6], 
-      R
+  ): js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1R2R3[A1, A2, A3, A4, R1, R2, R3](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    v4: O4,
-    v5: O5,
-    v6: O6,
-    resultSelector: js.Function6[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      /* v6 */ ObservedValueOf[O6], 
-      R
+  ): js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+    /* arg1 */ A1, 
+    /* arg2 */ A2, 
+    /* arg3 */ A3, 
+    /* arg4 */ A4, 
+    Observable[js.Tuple3[R1, R2, R3]]
+  ]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1R2R3R4_Function1[A1, A2, A3, A4, R1, R2, R3, R4](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */, R](
-    v1: O1,
-    v2: O2,
-    v3: O3,
-    v4: O4,
-    v5: O5,
-    v6: O6,
-    resultSelector: js.Function6[
-      /* v1 */ ObservedValueOf[O1], 
-      /* v2 */ ObservedValueOf[O2], 
-      /* v3 */ ObservedValueOf[O3], 
-      /* v4 */ ObservedValueOf[O4], 
-      /* v5 */ ObservedValueOf[O5], 
-      /* v6 */ ObservedValueOf[O6], 
-      R
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3A4R1R2R3R4_Function1[A1, A2, A3, A4, R1, R2, R3, R4](
+    callbackFunc: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
     ],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest_O1_ObservableInputWildcard[O1 /* <: ObservableInput[_] */](sources: js.Array[O1]): Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest_O1_ObservableInputWildcard[O1 /* <: ObservableInput[_] */](sources: js.Array[O1], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest_O1_ObservableInputWildcardR[O1 /* <: ObservableInput[_] */, R](sources: js.Array[O1], resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest_O1_ObservableInputWildcardR[O1 /* <: ObservableInput[_] */, R](
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1[A1, A2, A3, R1](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
+    ]
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1[A1, A2, A3, R1](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[R1]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1R2[A1, A2, A3, R1, R2](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ]
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1R2[A1, A2, A3, R1, R2](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1R2R3[A1, A2, A3, R1, R2, R3](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ]
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1R2R3[A1, A2, A3, R1, R2, R3](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Observable[js.Tuple3[R1, R2, R3]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1R2R3R4_Function1[A1, A2, A3, R1, R2, R3, R4](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ]
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2A3R1R2R3R4_Function1[A1, A2, A3, R1, R2, R3, R4](
+    callbackFunc: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2R1[A1, A2, R1](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
+    ]
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]]]
+  @scala.inline
+  def bindNodeCallback_A1A2R1[A1, A2, R1](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[R1]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2R1R2[A1, A2, R1, R2](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ]
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2R1R2[A1, A2, R1, R2](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2R1R2R3[A1, A2, R1, R2, R3](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ]
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2R1R2R3[A1, A2, R1, R2, R3](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Observable[js.Tuple3[R1, R2, R3]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1A2R1R2R3R4_Function1[A1, A2, R1, R2, R3, R4](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ]
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindNodeCallback_A1A2R1R2R3R4_Function1[A1, A2, R1, R2, R3, R4](
+    callbackFunc: js.Function3[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1R1[A1, R1](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
+    ]
+  ): js.Function1[/* arg1 */ A1, Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[R1]]]
+  @scala.inline
+  def bindNodeCallback_A1R1[A1, R1](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function1[/* arg1 */ A1, Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[R1]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1R1R2[A1, R1, R2](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ]
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
+  def bindNodeCallback_A1R1R2[A1, R1, R2](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1R1R2R3[A1, R1, R2, R3](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ]
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
+  def bindNodeCallback_A1R1R2R3[A1, R1, R2, R3](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Observable[js.Tuple3[R1, R2, R3]]]]
+  
+  @scala.inline
+  def bindNodeCallback_A1R1R2R3R4[A1, R1, R2, R3, R4](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ]
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindNodeCallback_A1R1R2R3R4[A1, R1, R2, R3, R4](
+    callbackFunc: js.Function2[
+      /* arg1 */ A1, 
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def bindNodeCallback_R1[R1](
+    callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], js.Any]
+  ): js.Function0[Observable[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[R1]]]
+  @scala.inline
+  def bindNodeCallback_R1[R1](
+    callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, js.Any], js.Any],
+    scheduler: SchedulerLike
+  ): js.Function0[Observable[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[R1]]]
+  
+  @scala.inline
+  def bindNodeCallback_R1R2[R1, R2](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ]
+  ): js.Function0[Observable[js.Tuple2[R1, R2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[js.Tuple2[R1, R2]]]]
+  @scala.inline
+  def bindNodeCallback_R1R2[R1, R2](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function3[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function0[Observable[js.Tuple2[R1, R2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[js.Tuple2[R1, R2]]]]
+  
+  @scala.inline
+  def bindNodeCallback_R1R2R3[R1, R2, R3](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ]
+  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Observable[js.Tuple3[R1, R2, R3]]]]
+  @scala.inline
+  def bindNodeCallback_R1R2R3[R1, R2, R3](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function4[/* err */ js.Any, /* res1 */ R1, /* res2 */ R2, /* res3 */ R3, js.Any], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function0[Observable[js.Tuple3[R1, R2, R3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Observable[js.Tuple3[R1, R2, R3]]]]
+  
+  @scala.inline
+  def bindNodeCallback_R1R2R3R4_Function1[R1, R2, R3, R4](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ]
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  @scala.inline
+  def bindNodeCallback_R1R2R3R4_Function1[R1, R2, R3, R4](
+    callbackFunc: js.Function1[
+      /* callback */ js.Function6[
+        /* err */ js.Any, 
+        /* res1 */ R1, 
+        /* res2 */ R2, 
+        /* res3 */ R3, 
+        /* res4 */ R4, 
+        /* repeated */ js.Any, 
+        js.Any
+      ], 
+      js.Any
+    ],
+    scheduler: SchedulerLike
+  ): js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNodeCallback")(callbackFunc.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Observable[js.Array[js.Any]]]]
+  
+  @scala.inline
+  def combineLatest[R](observables: (ObservableInput[js.Any] | (js.Function1[/* repeated */ js.Any, R]) | SchedulerLike)*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */](sources: js.Array[O1]): Observable[js.Array[ObservedValueOf[O1]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O1]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */](sources: js.Array[O1], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Array[ObservedValueOf[O1]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */](v1: O1): Observable[js.Array[ObservedValueOf[O1]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O1]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */](v1: O1, scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Array[ObservedValueOf[O1]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, R](sources: js.Array[O1], resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, R](
     sources: js.Array[O1],
     resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R],
     scheduler: SchedulerLike
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest_O_ObservableInputWildcardR[O /* <: ObservableInput[_] */, R](
-    observables: ((js.Function1[(/* repeated */ js.Any) | (/* repeated */ ObservedValueOf[O]), R]) | O | ObservableInput[_] | SchedulerLike)*
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "combineLatest")
-  @js.native
-  def combineLatest_R[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]) | SchedulerLike)*): Observable[R] = js.native
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](sources: js.Tuple2[O1, O2]): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](sources: js.Tuple2[O1, O2], scheduler: SchedulerLike): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R], scheduler: SchedulerLike): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, scheduler: SchedulerLike): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple2[O1, O2],
+    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple2[O1, O2],
+    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](sources: js.Tuple3[O1, O2, O3]): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](sources: js.Tuple3[O1, O2, O3], scheduler: SchedulerLike): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, scheduler: SchedulerLike): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple3[O1, O2, O3],
+    resultSelector: js.Function3[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple3[O1, O2, O3],
+    resultSelector: js.Function3[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](sources: js.Tuple4[O1, O2, O3, O4]): Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](sources: js.Tuple4[O1, O2, O3, O4], scheduler: SchedulerLike): Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    resultSelector: js.Function3[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    resultSelector: js.Function3[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, scheduler: SchedulerLike): Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple4[O1, O2, O3, O4],
+    resultSelector: js.Function4[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple4[O1, O2, O3, O4],
+    resultSelector: js.Function4[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](sources: js.Tuple5[O1, O2, O3, O4, O5]): Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](sources: js.Tuple5[O1, O2, O3, O4, O5], scheduler: SchedulerLike): Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    v4: O4,
+    resultSelector: js.Function4[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    v4: O4,
+    resultSelector: js.Function4[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, scheduler: SchedulerLike): Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple5[O1, O2, O3, O4, O5],
+    resultSelector: js.Function5[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple5[O1, O2, O3, O4, O5],
+    resultSelector: js.Function5[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](sources: js.Tuple6[O1, O2, O3, O4, O5, O6]): Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](sources: js.Tuple6[O1, O2, O3, O4, O5, O6], scheduler: SchedulerLike): Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    v4: O4,
+    v5: O5,
+    resultSelector: js.Function5[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    v4: O4,
+    v5: O5,
+    resultSelector: js.Function5[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6, scheduler: SchedulerLike): Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple6[O1, O2, O3, O4, O5, O6],
+    resultSelector: js.Function6[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      /* v6 */ ObservedValueOf[O6], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
+    sources: js.Tuple6[O1, O2, O3, O4, O5, O6],
+    resultSelector: js.Function6[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      /* v6 */ ObservedValueOf[O6], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    v4: O4,
+    v5: O5,
+    v6: O6,
+    resultSelector: js.Function6[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      /* v6 */ ObservedValueOf[O6], 
+      R
+    ]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
+    v1: O1,
+    v2: O2,
+    v3: O3,
+    v4: O4,
+    v5: O5,
+    v6: O6,
+    resultSelector: js.Function6[
+      /* v1 */ ObservedValueOf[O1], 
+      /* v2 */ ObservedValueOf[O2], 
+      /* v3 */ ObservedValueOf[O3], 
+      /* v4 */ ObservedValueOf[O4], 
+      /* v5 */ ObservedValueOf[O5], 
+      /* v6 */ ObservedValueOf[O6], 
+      R
+    ],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
   
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O /* <: ObservableInput[_] */](observables: (O | SchedulerLike)*): Observable[ObservedValueOf[O]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */](v1: O1): Observable[ObservedValueOf[O1]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */](v1: O1, scheduler: SchedulerLike): Observable[ObservedValueOf[O1]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2): Observable[ObservedValueOf[O1 | O2]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3): Observable[ObservedValueOf[O1 | O2 | O3]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = js.native
-  @JSImport("rxjs", "concat")
-  @js.native
-  def concat_R[R](observables: (ObservableInput[_] | SchedulerLike)*): Observable[R] = js.native
+  @scala.inline
+  def combineLatest_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](observables: (O | SchedulerLike)*): Observable[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[js.Any]]]
+  @scala.inline
+  def combineLatest_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](sources: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
+  @scala.inline
+  def combineLatest_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](sources: js.Array[O], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
+  
+  @scala.inline
+  def combineLatest_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](
+    observables: ((js.Function1[(/* repeated */ js.Any) | (/* repeated */ ObservedValueOf[O]), R]) | O | ObservableInput[js.Any] | SchedulerLike)*
+  ): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](sources: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def combineLatest_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](
+    sources: js.Array[O],
+    resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R],
+    scheduler: SchedulerLike
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineLatest")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  
+  @scala.inline
+  def concat[R](observables: (ObservableInput[js.Any] | SchedulerLike)*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */](v1: O1): Observable[ObservedValueOf[O1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[O1]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */](v1: O1, scheduler: SchedulerLike): Observable[ObservedValueOf[O1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2): Observable[ObservedValueOf[O1 | O2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3): Observable[ObservedValueOf[O1 | O2 | O3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]]]
+  @scala.inline
+  def concat[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6, scheduler: SchedulerLike): Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O1 | O2 | O3 | O4 | O5 | O6]]]
+  
+  @scala.inline
+  def concat_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](observables: (O | SchedulerLike)*): Observable[ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[O]]]
   
   object config {
     
@@ -2577,7 +2730,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rxjs", "config.Promise")
     @js.native
-    class Promise[T] protected () extends PromiseLike[T] {
+    class Promise[T] protected ()
+      extends StObject
+         with PromiseLike[T] {
       def this(executor: js.Function2[
                 /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
                 /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
@@ -2609,52 +2764,35 @@ object mod {
     def useDeprecatedSynchronousErrorHandling_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useDeprecatedSynchronousErrorHandling")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("rxjs", "defer")
-  @js.native
-  def defer[R /* <: ObservableInput[_] | Unit */](observableFactory: js.Function0[R]): Observable[ObservedValueOf[R]] = js.native
+  @scala.inline
+  def defer[R /* <: ObservableInput[js.Any] | Unit */](observableFactory: js.Function0[R]): Observable[ObservedValueOf[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(observableFactory.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[R]]]
   
-  @JSImport("rxjs", "empty")
-  @js.native
-  def empty(): Observable[scala.Nothing] = js.native
-  @JSImport("rxjs", "empty")
-  @js.native
-  def empty(scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
+  @scala.inline
+  def empty(): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Observable[scala.Nothing]]
+  @scala.inline
+  def empty(scheduler: SchedulerLike): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Observable[scala.Nothing]]
   
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin(args: (ObservableInput[_] | js.Function)*): Observable[_] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin(sourcesObject: js.Object): Observable[scala.Nothing] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[A /* <: js.Array[ObservableInput[_]] */](sources: A): Observable[js.Array[ObservedValuesFromArray[A]]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[A](sources: js.Array[ObservableInput[A]]): Observable[js.Array[A]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[T](v1: SubscribableOrPromise[T]): Observable[js.Array[T]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[A, B](sources: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[js.Tuple2[A, B]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2]): Observable[js.Tuple2[T, T2]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[A, B, C](sources: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[js.Tuple3[A, B, C]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[js.Tuple3[T, T2, T3]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[A, B, C, D](sources: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[js.Tuple4[A, B, C, D]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin[T, T2, T3, T4](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[js.Tuple4[T, T2, T3, T4]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
+  @scala.inline
+  def forkJoin(args: (ObservableInput[js.Any] | js.Function)*): Observable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(args.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Any]]
+  @scala.inline
+  def forkJoin(sourcesObject: js.Object): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sourcesObject.asInstanceOf[js.Any]).asInstanceOf[Observable[scala.Nothing]]
+  @scala.inline
+  def forkJoin[A /* <: js.Array[ObservableInput[js.Any]] */](sources: A): Observable[js.Array[ObservedValuesFromArray[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValuesFromArray[A]]]]
+  @scala.inline
+  def forkJoin[A](sources: js.Array[ObservableInput[A]]): Observable[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[A]]]
+  @scala.inline
+  def forkJoin[A, B](sources: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[js.Tuple2[A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple2[A, B]]]
+  @scala.inline
+  def forkJoin[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2]): Observable[js.Tuple2[T, T2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[T, T2]]]
+  @scala.inline
+  def forkJoin[A, B, C](sources: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[js.Tuple3[A, B, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple3[A, B, C]]]
+  @scala.inline
+  def forkJoin[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[js.Tuple3[T, T2, T3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[T, T2, T3]]]
+  @scala.inline
+  def forkJoin[A, B, C, D](sources: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[js.Tuple4[A, B, C, D]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple4[A, B, C, D]]]
+  @scala.inline
+  def forkJoin[T, T2, T3, T4](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[js.Tuple4[T, T2, T3, T4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple4[T, T2, T3, T4]]]
+  @scala.inline
   def forkJoin[A, B, C, D, E](
     sources: js.Tuple5[
       ObservableInput[A], 
@@ -2663,18 +2801,16 @@ object mod {
       ObservableInput[D], 
       ObservableInput[E]
     ]
-  ): Observable[js.Tuple5[A, B, C, D, E]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple5[A, B, C, D, E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple5[A, B, C, D, E]]]
+  @scala.inline
   def forkJoin[T, T2, T3, T4, T5](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
     v5: ObservableInput[T5]
-  ): Observable[js.Tuple5[T, T2, T3, T4, T5]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple5[T, T2, T3, T4, T5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple5[T, T2, T3, T4, T5]]]
+  @scala.inline
   def forkJoin[A, B, C, D, E, F](
     sources: js.Tuple6[
       ObservableInput[A], 
@@ -2684,9 +2820,8 @@ object mod {
       ObservableInput[E], 
       ObservableInput[F]
     ]
-  ): Observable[js.Tuple6[A, B, C, D, E, F]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple6[A, B, C, D, E, F]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple6[A, B, C, D, E, F]]]
+  @scala.inline
   def forkJoin[T, T2, T3, T4, T5, T6](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2694,195 +2829,162 @@ object mod {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     v6: ObservableInput[T6]
-  ): Observable[js.Tuple6[T, T2, T3, T4, T5, T6]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
-  def forkJoin_T[T](sources: ObservableInput[T]*): Observable[js.Array[T]] = js.native
-  @JSImport("rxjs", "forkJoin")
-  @js.native
+  ): Observable[js.Tuple6[T, T2, T3, T4, T5, T6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple6[T, T2, T3, T4, T5, T6]]]
+  
+  @scala.inline
+  def forkJoin_T[T](sources: ObservableInput[T]*): Observable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sources.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[T]]]
+  @scala.inline
+  def forkJoin_T[T](v1: SubscribableOrPromise[T]): Observable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(v1.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[T]]]
+  
+  @scala.inline
   def forkJoin_TK_String[T, K /* <: /* keyof T */ String */](sourcesObject: T): Observable[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: rxjs.rxjs/internal/types.ObservedValueOf<T[K]>}
-    */ forkJoin with TopLevel[T]
-  ] = js.native
+    */ forkJoin & TopLevel[T]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("forkJoin")(sourcesObject.asInstanceOf[js.Any]).asInstanceOf[Observable[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: rxjs.rxjs/internal/types.ObservedValueOf<T[K]>}
+    */ forkJoin & TopLevel[T]
+  ]]
   
-  @JSImport("rxjs", "from")
-  @js.native
-  def from[O /* <: ObservableInput[_] */](input: O): Observable[ObservedValueOf[O]] = js.native
-  @JSImport("rxjs", "from")
-  @js.native
-  def from[O /* <: ObservableInput[_] */](input: O, scheduler: SchedulerLike): Observable[ObservedValueOf[O]] = js.native
+  @scala.inline
+  def from[O /* <: ObservableInput[js.Any] */](input: O): Observable[ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[ObservedValueOf[O]]]
+  @scala.inline
+  def from[O /* <: ObservableInput[js.Any] */](input: O, scheduler: SchedulerLike): Observable[ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[ObservedValueOf[O]]]
   
-  @JSImport("rxjs", "fromEvent")
-  @js.native
-  def fromEvent[T](target: FromEventTarget[T], eventName: String): Observable[T] = js.native
-  @JSImport("rxjs", "fromEvent")
-  @js.native
-  def fromEvent[T](target: FromEventTarget[T], eventName: String, options: EventListenerOptions): Observable[T] = js.native
-  @JSImport("rxjs", "fromEvent")
-  @js.native
+  @scala.inline
+  def fromEvent[T](target: FromEventTarget[T], eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromEvent[T](target: FromEventTarget[T], eventName: String, options: EventListenerOptions): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
   def fromEvent[T](
     target: FromEventTarget[T],
     eventName: String,
     options: EventListenerOptions,
     resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = js.native
-  @JSImport("rxjs", "fromEvent")
-  @js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
   def fromEvent[T](
     target: FromEventTarget[T],
     eventName: String,
     resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs", "fromEventPattern")
-  @js.native
-  def fromEventPattern[T](addHandler: js.Function1[/* handler */ NodeEventHandler, _]): Observable[T] = js.native
-  @JSImport("rxjs", "fromEventPattern")
-  @js.native
+  @scala.inline
+  def fromEventPattern[T](addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
   def fromEventPattern[T](
-    addHandler: js.Function1[/* handler */ NodeEventHandler, _],
-    removeHandler: js.UndefOr[scala.Nothing],
-    resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = js.native
-  @JSImport("rxjs", "fromEventPattern")
-  @js.native
-  def fromEventPattern[T](
-    addHandler: js.Function1[/* handler */ NodeEventHandler, _],
+    addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any],
     removeHandler: js.Function2[/* handler */ NodeEventHandler, js.UndefOr[js.Any], Unit]
-  ): Observable[T] = js.native
-  @JSImport("rxjs", "fromEventPattern")
-  @js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
   def fromEventPattern[T](
-    addHandler: js.Function1[/* handler */ NodeEventHandler, _],
+    addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any],
     removeHandler: js.Function2[/* handler */ NodeEventHandler, /* signal */ js.UndefOr[js.Any], Unit],
     resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromEventPattern[T](
+    addHandler: js.Function1[/* handler */ NodeEventHandler, js.Any],
+    removeHandler: Unit,
+    resultSelector: js.Function1[/* repeated */ js.Any, T]
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventPattern")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs", "generate")
-  @js.native
-  def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S]): Observable[S] = js.native
-  @JSImport("rxjs", "generate")
-  @js.native
-  def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S], scheduler: SchedulerLike): Observable[S] = js.native
-  @JSImport("rxjs", "generate")
-  @js.native
-  def generate[S](options: GenerateBaseOptions[S]): Observable[S] = js.native
-  @JSImport("rxjs", "generate")
-  @js.native
+  @scala.inline
+  def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S]): Observable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any])).asInstanceOf[Observable[S]]
+  @scala.inline
+  def generate[S](initialState: S, condition: ConditionFunc[S], iterate: IterateFunc[S], scheduler: SchedulerLike): Observable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[S]]
+  @scala.inline
+  def generate[S](options: GenerateBaseOptions[S]): Observable[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Observable[S]]
+  @scala.inline
   def generate[T, S](
     initialState: S,
     condition: ConditionFunc[S],
     iterate: IterateFunc[S],
     resultSelector: ResultFunc[S, T]
-  ): Observable[T] = js.native
-  @JSImport("rxjs", "generate")
-  @js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
   def generate[T, S](
     initialState: S,
     condition: ConditionFunc[S],
     iterate: IterateFunc[S],
     resultSelector: ResultFunc[S, T],
     scheduler: SchedulerLike
-  ): Observable[T] = js.native
-  @JSImport("rxjs", "generate")
-  @js.native
-  def generate[T, S](options: GenerateOptions[T, S]): Observable[T] = js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(initialState.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], iterate.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def generate[T, S](options: GenerateOptions[T, S]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs", "identity")
-  @js.native
-  def identity[T](x: T): T = js.native
+  @scala.inline
+  def identity[T](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("rxjs", "iif")
-  @js.native
-  def iif[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
-  @JSImport("rxjs", "iif")
-  @js.native
+  @scala.inline
+  def iif[T, F](condition: js.Function0[Boolean]): Observable[T | F] = ^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any]).asInstanceOf[Observable[T | F]]
+  @scala.inline
+  def iif[T, F](condition: js.Function0[Boolean], trueResult: Unit, falseResult: SubscribableOrPromise[F]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+  @scala.inline
+  def iif[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+  @scala.inline
   def iif[T, F](
     condition: js.Function0[Boolean],
-    trueResult: js.UndefOr[SubscribableOrPromise[T]],
+    trueResult: SubscribableOrPromise[T],
     falseResult: SubscribableOrPromise[F]
-  ): Observable[T | F] = js.native
-  @JSImport("rxjs", "iif")
-  @js.native
-  def iif[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
+  ): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
   
-  @JSImport("rxjs", "interval")
-  @js.native
-  def interval(): Observable[Double] = js.native
-  @JSImport("rxjs", "interval")
-  @js.native
-  def interval(period: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "interval")
-  @js.native
-  def interval(period: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "interval")
-  @js.native
-  def interval(period: Double, scheduler: SchedulerLike): Observable[Double] = js.native
+  @scala.inline
+  def interval(): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")().asInstanceOf[Observable[Double]]
+  @scala.inline
+  def interval(period: Double): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(period.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def interval(period: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(period.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def interval(period: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(period.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
   
-  @JSImport("rxjs", "isObservable")
-  @js.native
-  def isObservable[T](obj: js.Any): /* is rxjs.rxjs/internal/Observable.Observable<T> */ Boolean = js.native
+  @scala.inline
+  def isObservable[T](obj: js.Any): /* is rxjs.rxjs/internal/Observable.Observable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/internal/Observable.Observable<T> */ Boolean]
   
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T](observables: (Double | ObservableInput[T] | SchedulerLike)*): Observable[T] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T](v1: ObservableInput[T]): Observable[T] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T](v1: ObservableInput[T], concurrent: Double): Observable[T] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T](v1: ObservableInput[T], concurrent: Double, scheduler: SchedulerLike): Observable[T] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T](v1: ObservableInput[T], scheduler: SchedulerLike): Observable[T] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2]): Observable[T | T2] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2], concurrent: Double): Observable[T | T2] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2], concurrent: Double, scheduler: SchedulerLike): Observable[T | T2] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2], scheduler: SchedulerLike): Observable[T | T2] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[T | T2 | T3] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], concurrent: Double): Observable[T | T2 | T3] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  @scala.inline
+  def merge[T](observables: (Double | ObservableInput[T] | SchedulerLike)*): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def merge[T](v1: ObservableInput[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def merge[T](v1: ObservableInput[T], concurrent: Double): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def merge[T](v1: ObservableInput[T], concurrent: Double, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def merge[T](v1: ObservableInput[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2]): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
+  @scala.inline
+  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2], concurrent: Double): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
+  @scala.inline
+  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2], concurrent: Double, scheduler: SchedulerLike): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
+  @scala.inline
+  def merge[T, T2](v1: ObservableInput[T], v2: ObservableInput[T2], scheduler: SchedulerLike): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
+  @scala.inline
+  def merge[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
+  @scala.inline
+  def merge[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], concurrent: Double): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
+  @scala.inline
   def merge[T, T2, T3](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     concurrent: Double,
     scheduler: SchedulerLike
-  ): Observable[T | T2 | T3] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], scheduler: SchedulerLike): Observable[T | T2 | T3] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge[T, T2, T3, T4](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[T | T2 | T3 | T4] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
+  @scala.inline
+  def merge[T, T2, T3](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], scheduler: SchedulerLike): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
+  @scala.inline
+  def merge[T, T2, T3, T4](v1: ObservableInput[T], v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
+  @scala.inline
   def merge[T, T2, T3, T4](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
     concurrent: Double
-  ): Observable[T | T2 | T3 | T4] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
+  @scala.inline
   def merge[T, T2, T3, T4](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2890,27 +2992,24 @@ object mod {
     v4: ObservableInput[T4],
     concurrent: Double,
     scheduler: SchedulerLike
-  ): Observable[T | T2 | T3 | T4] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
+  @scala.inline
   def merge[T, T2, T3, T4](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
     scheduler: SchedulerLike
-  ): Observable[T | T2 | T3 | T4] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
     v5: ObservableInput[T5]
-  ): Observable[T | T2 | T3 | T4 | T5] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2918,9 +3017,8 @@ object mod {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     concurrent: Double
-  ): Observable[T | T2 | T3 | T4 | T5] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2929,9 +3027,8 @@ object mod {
     v5: ObservableInput[T5],
     concurrent: Double,
     scheduler: SchedulerLike
-  ): Observable[T | T2 | T3 | T4 | T5] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2939,9 +3036,8 @@ object mod {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     scheduler: SchedulerLike
-  ): Observable[T | T2 | T3 | T4 | T5] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5, T6](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2949,9 +3045,8 @@ object mod {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     v6: ObservableInput[T6]
-  ): Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5, T6](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2960,9 +3055,8 @@ object mod {
     v5: ObservableInput[T5],
     v6: ObservableInput[T6],
     concurrent: Double
-  ): Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5, T6](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2972,9 +3066,8 @@ object mod {
     v6: ObservableInput[T6],
     concurrent: Double,
     scheduler: SchedulerLike
-  ): Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
+  ): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
+  @scala.inline
   def merge[T, T2, T3, T4, T5, T6](
     v1: ObservableInput[T],
     v2: ObservableInput[T2],
@@ -2983,158 +3076,119 @@ object mod {
     v5: ObservableInput[T5],
     v6: ObservableInput[T6],
     scheduler: SchedulerLike
-  ): Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
-  @JSImport("rxjs", "merge")
-  @js.native
-  def merge_TR[T, R](observables: (Double | ObservableInput[_] | SchedulerLike)*): Observable[R] = js.native
+  ): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
   
-  @JSImport("rxjs", "never")
-  @js.native
-  def never(): Observable[scala.Nothing] = js.native
+  @scala.inline
+  def merge_TR[T, R](observables: (Double | ObservableInput[js.Any] | SchedulerLike)*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   
-  @JSImport("rxjs", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def never(): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Observable[scala.Nothing]]
+  
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
   @JSImport("rxjs", "observable")
   @js.native
   val observable: String | js.Symbol = js.native
   
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T](a: T): Observable[T] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T](a: T, scheduler: SchedulerLike): Observable[T] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T](args: (SchedulerLike | T)*): Observable[T] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2](a: T, b: T2): Observable[T | T2] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2](a: T, b: T2, scheduler: SchedulerLike): Observable[T | T2] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3](a: T, b: T2, c: T3): Observable[T | T2 | T3] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3](a: T, b: T2, c: T3, scheduler: SchedulerLike): Observable[T | T2 | T3] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4](a: T, b: T2, c: T3, d: T4): Observable[T | T2 | T3 | T4] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4](a: T, b: T2, c: T3, d: T4, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5](a: T, b: T2, c: T3, d: T4, e: T5): Observable[T | T2 | T3 | T4 | T5] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5](a: T, b: T2, c: T3, d: T4, e: T5, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6](a: T, b: T2, c: T3, d: T4, e: T5, f: T6): Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6, T7](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7): Observable[T | T2 | T3 | T4 | T5 | T6 | T7] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6, T7](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6, T7, T8](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6, T7, T8](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = js.native
-  @JSImport("rxjs", "of")
-  @js.native
-  def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = js.native
+  @scala.inline
+  def of[T](a: T): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def of[T](a: T, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def of[T](args: (SchedulerLike | T)*): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(args.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def of[T, T2](a: T, b: T2): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
+  @scala.inline
+  def of[T, T2](a: T, b: T2, scheduler: SchedulerLike): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
+  @scala.inline
+  def of[T, T2, T3](a: T, b: T2, c: T3): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
+  @scala.inline
+  def of[T, T2, T3](a: T, b: T2, c: T3, scheduler: SchedulerLike): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
+  @scala.inline
+  def of[T, T2, T3, T4](a: T, b: T2, c: T3, d: T4): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
+  @scala.inline
+  def of[T, T2, T3, T4](a: T, b: T2, c: T3, d: T4, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5](a: T, b: T2, c: T3, d: T4, e: T5): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5](a: T, b: T2, c: T3, d: T4, e: T5, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6](a: T, b: T2, c: T3, d: T4, e: T5, f: T6): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6, T7](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7): Observable[T | T2 | T3 | T4 | T5 | T6 | T7] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6, T7](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6, T7, T8](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6, T7, T8](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9]]
+  @scala.inline
+  def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any], i.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9]]
   
-  @JSImport("rxjs", "onErrorResumeNext")
-  @js.native
-  def onErrorResumeNext[R](array: js.Array[ObservableInput[_]]): Observable[R] = js.native
-  @JSImport("rxjs", "onErrorResumeNext")
-  @js.native
-  def onErrorResumeNext[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = js.native
-  @JSImport("rxjs", "onErrorResumeNext")
-  @js.native
-  def onErrorResumeNext[R](v: ObservableInput[R]): Observable[R] = js.native
-  @JSImport("rxjs", "onErrorResumeNext")
-  @js.native
-  def onErrorResumeNext[T2, T3, R](v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[R] = js.native
-  @JSImport("rxjs", "onErrorResumeNext")
-  @js.native
-  def onErrorResumeNext[T2, T3, T4, R](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[R] = js.native
-  @JSImport("rxjs", "onErrorResumeNext")
-  @js.native
-  def onErrorResumeNext[T2, T3, T4, T5, R](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): Observable[R] = js.native
-  @JSImport("rxjs", "onErrorResumeNext")
-  @js.native
+  @scala.inline
+  def onErrorResumeNext[R](array: js.Array[ObservableInput[js.Any]]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("onErrorResumeNext")(array.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def onErrorResumeNext[R](observables: (ObservableInput[js.Any] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("onErrorResumeNext")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def onErrorResumeNext[R](v: ObservableInput[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("onErrorResumeNext")(v.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def onErrorResumeNext[T2, T3, R](v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("onErrorResumeNext")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def onErrorResumeNext[T2, T3, T4, R](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("onErrorResumeNext")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def onErrorResumeNext[T2, T3, T4, T5, R](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("onErrorResumeNext")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
   def onErrorResumeNext[T2, T3, T4, T5, T6, R](
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     v6: ObservableInput[T6]
-  ): Observable[R] = js.native
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("onErrorResumeNext")(v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
   
-  @JSImport("rxjs", "pairs")
-  @js.native
-  def pairs[T](obj: js.Object): Observable[js.Tuple2[String, T]] = js.native
-  @JSImport("rxjs", "pairs")
-  @js.native
-  def pairs[T](obj: js.Object, scheduler: SchedulerLike): Observable[js.Tuple2[String, T]] = js.native
+  @scala.inline
+  def pairs[T](obj: js.Object): Observable[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(obj.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Tuple2[String, T]]]
+  @scala.inline
+  def pairs[T](obj: js.Object, scheduler: SchedulerLike): Observable[js.Tuple2[String, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(obj.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[String, T]]]
   
-  @JSImport("rxjs", "partition")
-  @js.native
-  def partition[T](source: ObservableInput[T], predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Tuple2[Observable[T], Observable[T]] = js.native
-  @JSImport("rxjs", "partition")
-  @js.native
+  @scala.inline
+  def partition[T](source: ObservableInput[T], predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Tuple2[Observable[T], Observable[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Observable[T], Observable[T]]]
+  @scala.inline
   def partition[T](
     source: ObservableInput[T],
     predicate: js.Function2[/* value */ T, /* index */ Double, Boolean],
     thisArg: js.Any
-  ): js.Tuple2[Observable[T], Observable[T]] = js.native
+  ): js.Tuple2[Observable[T], Observable[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Observable[T], Observable[T]]]
   
-  @JSImport("rxjs", "pipe")
-  @js.native
-  def pipe[T](): UnaryFunction[T, T] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
-  def pipe[T, A](fn1: UnaryFunction[T, A]): UnaryFunction[T, A] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
-  def pipe[T, A, B](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B]): UnaryFunction[T, B] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
-  def pipe[T, A, B, C](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B], fn3: UnaryFunction[B, C]): UnaryFunction[T, C] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
+  @scala.inline
+  def pipe[T](): UnaryFunction[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")().asInstanceOf[UnaryFunction[T, T]]
+  @scala.inline
+  def pipe[T, A](fn1: UnaryFunction[T, A]): UnaryFunction[T, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[T, A]]
+  @scala.inline
+  def pipe[T, A, B](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B]): UnaryFunction[T, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, B]]
+  @scala.inline
+  def pipe[T, A, B, C](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B], fn3: UnaryFunction[B, C]): UnaryFunction[T, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, C]]
+  @scala.inline
   def pipe[T, A, B, C, D](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
     fn3: UnaryFunction[B, C],
     fn4: UnaryFunction[C, D]
-  ): UnaryFunction[T, D] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
+  ): UnaryFunction[T, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, D]]
+  @scala.inline
   def pipe[T, A, B, C, D, E](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
     fn3: UnaryFunction[B, C],
     fn4: UnaryFunction[C, D],
     fn5: UnaryFunction[D, E]
-  ): UnaryFunction[T, E] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
+  ): UnaryFunction[T, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, E]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -3142,9 +3196,8 @@ object mod {
     fn4: UnaryFunction[C, D],
     fn5: UnaryFunction[D, E],
     fn6: UnaryFunction[E, F]
-  ): UnaryFunction[T, F] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
+  ): UnaryFunction[T, F] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, F]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -3153,9 +3206,8 @@ object mod {
     fn5: UnaryFunction[D, E],
     fn6: UnaryFunction[E, F],
     fn7: UnaryFunction[F, G]
-  ): UnaryFunction[T, G] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
+  ): UnaryFunction[T, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, G]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G, H](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -3165,9 +3217,8 @@ object mod {
     fn6: UnaryFunction[E, F],
     fn7: UnaryFunction[F, G],
     fn8: UnaryFunction[G, H]
-  ): UnaryFunction[T, H] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
+  ): UnaryFunction[T, H] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, H]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G, H, I](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -3178,9 +3229,8 @@ object mod {
     fn7: UnaryFunction[F, G],
     fn8: UnaryFunction[G, H],
     fn9: UnaryFunction[H, I]
-  ): UnaryFunction[T, I] = js.native
-  @JSImport("rxjs", "pipe")
-  @js.native
+  ): UnaryFunction[T, I] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, I]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G, H, I](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -3191,8 +3241,8 @@ object mod {
     fn7: UnaryFunction[F, G],
     fn8: UnaryFunction[G, H],
     fn9: UnaryFunction[H, I],
-    fns: (UnaryFunction[_, _])*
-  ): UnaryFunction[T, js.Object] = js.native
+    fns: (UnaryFunction[js.Any, js.Any])*
+  ): UnaryFunction[T, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any], fns.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, js.Object]]
   
   @JSImport("rxjs", "queue")
   @js.native
@@ -3202,35 +3252,25 @@ object mod {
   @js.native
   val queueScheduler: QueueScheduler = js.native
   
-  @JSImport("rxjs", "race")
-  @js.native
-  def race(arg: js.Array[ObservableInput[_]]): Observable[js.Object] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race(observables: ObservableInput[_]*): Observable[js.Object] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race[A](a: ObservableInput[A]): Observable[A] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race[A, B](arg: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[A | B] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race[A, B](a: ObservableInput[A], b: ObservableInput[B]): Observable[A | B] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race[A, B, C](arg: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[A | B | C] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race[A, B, C](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C]): Observable[A | B | C] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race[A, B, C, D](arg: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[A | B | C | D] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race[A, B, C, D](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C], d: ObservableInput[D]): Observable[A | B | C | D] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
+  @scala.inline
+  def race(arg: js.Array[ObservableInput[js.Any]]): Observable[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Object]]
+  @scala.inline
+  def race(observables: ObservableInput[js.Any]*): Observable[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Object]]
+  @scala.inline
+  def race[A](a: ObservableInput[A]): Observable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any]).asInstanceOf[Observable[A]]
+  @scala.inline
+  def race[A, B](arg: js.Tuple2[ObservableInput[A], ObservableInput[B]]): Observable[A | B] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B]]
+  @scala.inline
+  def race[A, B](a: ObservableInput[A], b: ObservableInput[B]): Observable[A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B]]
+  @scala.inline
+  def race[A, B, C](arg: js.Tuple3[ObservableInput[A], ObservableInput[B], ObservableInput[C]]): Observable[A | B | C] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C]]
+  @scala.inline
+  def race[A, B, C](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C]): Observable[A | B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C]]
+  @scala.inline
+  def race[A, B, C, D](arg: js.Tuple4[ObservableInput[A], ObservableInput[B], ObservableInput[C], ObservableInput[D]]): Observable[A | B | C | D] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C | D]]
+  @scala.inline
+  def race[A, B, C, D](a: ObservableInput[A], b: ObservableInput[B], c: ObservableInput[C], d: ObservableInput[D]): Observable[A | B | C | D] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C | D]]
+  @scala.inline
   def race[A, B, C, D, E](
     arg: js.Tuple5[
       ObservableInput[A], 
@@ -3239,156 +3279,112 @@ object mod {
       ObservableInput[D], 
       ObservableInput[E]
     ]
-  ): Observable[A | B | C | D | E] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
+  ): Observable[A | B | C | D | E] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A | B | C | D | E]]
+  @scala.inline
   def race[A, B, C, D, E](
     a: ObservableInput[A],
     b: ObservableInput[B],
     c: ObservableInput[C],
     d: ObservableInput[D],
     e: ObservableInput[E]
-  ): Observable[A | B | C | D | E] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race_A[A](arg: js.Array[ObservableInput[A]]): Observable[A] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race_T[T](arg: js.Array[ObservableInput[T]]): Observable[T] = js.native
-  @JSImport("rxjs", "race")
-  @js.native
-  def race_T[T](observables: ObservableInput[T]*): Observable[T] = js.native
+  ): Observable[A | B | C | D | E] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Observable[A | B | C | D | E]]
   
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(): Observable[Double] = js.native
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(start: js.UndefOr[scala.Nothing], count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(start: js.UndefOr[scala.Nothing], count: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(start: js.UndefOr[scala.Nothing], count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(start: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(start: Double, count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(start: Double, count: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "range")
-  @js.native
-  def range(start: Double, count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
+  @scala.inline
+  def race_A[A](arg: js.Array[ObservableInput[A]]): Observable[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[A]]
   
-  @JSImport("rxjs", "scheduled")
-  @js.native
-  def scheduled[T](input: ObservableInput[T], scheduler: SchedulerLike): Observable_[T] = js.native
+  @scala.inline
+  def race_T[T](arg: js.Array[ObservableInput[T]]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(arg.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def race_T[T](observables: ObservableInput[T]*): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs", "throwError")
-  @js.native
-  def throwError(error: js.Any): Observable[scala.Nothing] = js.native
-  @JSImport("rxjs", "throwError")
-  @js.native
-  def throwError(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
+  @scala.inline
+  def range(): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double, count: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double, count: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Double, count: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Unit, count: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Unit, count: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def range(start: Unit, count: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
   
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(
-    dueTime: js.UndefOr[scala.Nothing],
-    periodOrScheduler: js.UndefOr[scala.Nothing],
-    scheduler: SchedulerLike
-  ): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: js.UndefOr[scala.Nothing], periodOrScheduler: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: js.UndefOr[scala.Nothing], periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: js.UndefOr[scala.Nothing], periodOrScheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: js.UndefOr[scala.Nothing], periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Double, periodOrScheduler: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Double, periodOrScheduler: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Double, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Double, periodOrScheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Double, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Date): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Date, periodOrScheduler: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Date, periodOrScheduler: Double): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Date, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Date, periodOrScheduler: SchedulerLike): Observable[Double] = js.native
-  @JSImport("rxjs", "timer")
-  @js.native
-  def timer(dueTime: Date, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = js.native
+  @scala.inline
+  def scheduled[T](input: ObservableInput[T], scheduler: SchedulerLike): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduled")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
   
-  @JSImport("rxjs", "using")
-  @js.native
-  def using[T](
+  @scala.inline
+  def throwError(error: js.Any): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any]).asInstanceOf[Observable[scala.Nothing]]
+  @scala.inline
+  def throwError(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[scala.Nothing]]
+  
+  @scala.inline
+  def timer(): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")().asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Double): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Double, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Double, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Double, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Double, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Double, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Unit, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Unit, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Unit, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Unit, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Unit, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Date): Observable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any]).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Date, periodOrScheduler: Double): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Date, periodOrScheduler: Double, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Date, periodOrScheduler: Unit, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Date, periodOrScheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  @scala.inline
+  def timer(dueTime: Date, periodOrScheduler: SchedulerLike, scheduler: SchedulerLike): Observable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("timer")(dueTime.asInstanceOf[js.Any], periodOrScheduler.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[Double]]
+  
+  @scala.inline
+  def `using`[T](
     resourceFactory: js.Function0[Unsubscribable | Unit],
     observableFactory: js.Function1[/* resource */ Unsubscribable | Unit, ObservableInput[T] | Unit]
-  ): Observable[T] = js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(resourceFactory.asInstanceOf[js.Any], observableFactory.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O /* <: ObservableInput[_] */](array: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[R](array: js.Array[ObservableInput[_]], resultSelector: js.Function1[/* repeated */ js.Any, R]): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O /* <: ObservableInput[_] */](observables: O*): Observable[js.Array[ObservedValueOf[O]]] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](v1: O1, v2: O2): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, R](
+  @scala.inline
+  def zip[R](array: js.Array[ObservableInput[js.Any]]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[R](array: js.Array[ObservableInput[js.Any]], resultSelector: js.Function1[/* repeated */ js.Any, R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[R](observables: (ObservableInput[js.Any] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, R](
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -3398,15 +3394,15 @@ object mod {
       /* v3 */ ObservedValueOf[O3], 
       R
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[
     js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
-  ] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, R](
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
+  ]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -3418,10 +3414,9 @@ object mod {
       /* v4 */ ObservedValueOf[O4], 
       R
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[
     js.Tuple5[
       ObservedValueOf[O1], 
       ObservedValueOf[O2], 
@@ -3429,10 +3424,17 @@ object mod {
       ObservedValueOf[O4], 
       ObservedValueOf[O5]
     ]
-  ] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, R](
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple5[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5]
+    ]
+  ]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -3446,10 +3448,9 @@ object mod {
       /* v5 */ ObservedValueOf[O5], 
       R
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[
     js.Tuple6[
       ObservedValueOf[O1], 
       ObservedValueOf[O2], 
@@ -3458,10 +3459,18 @@ object mod {
       ObservedValueOf[O5], 
       ObservedValueOf[O6]
     ]
-  ] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */, O3 /* <: ObservableInput[_] */, O4 /* <: ObservableInput[_] */, O5 /* <: ObservableInput[_] */, O6 /* <: ObservableInput[_] */, R](
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any])).asInstanceOf[Observable[
+    js.Tuple6[
+      ObservedValueOf[O1], 
+      ObservedValueOf[O2], 
+      ObservedValueOf[O3], 
+      ObservedValueOf[O4], 
+      ObservedValueOf[O5], 
+      ObservedValueOf[O6]
+    ]
+  ]]
+  @scala.inline
+  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -3477,17 +3486,15 @@ object mod {
       /* v6 */ ObservedValueOf[O6], 
       R
     ]
-  ): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip_O_ObservableInputWildcardR[O /* <: ObservableInput[_] */, R](array: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip_O_ObservableInputWildcardR[O /* <: ObservableInput[_] */, R](observables: (O | (js.Function1[/* repeated */ ObservedValueOf[O], R]))*): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip_R[R](array: js.Array[ObservableInput[_]]): Observable[R] = js.native
-  @JSImport("rxjs", "zip")
-  @js.native
-  def zip_R[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = js.native
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  
+  @scala.inline
+  def zip_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](array: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
+  @scala.inline
+  def zip_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](observables: O*): Observable[js.Array[ObservedValueOf[O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
+  
+  @scala.inline
+  def zip_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](array: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  @scala.inline
+  def zip_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](observables: (O | (js.Function1[/* repeated */ ObservedValueOf[O], R]))*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
 }

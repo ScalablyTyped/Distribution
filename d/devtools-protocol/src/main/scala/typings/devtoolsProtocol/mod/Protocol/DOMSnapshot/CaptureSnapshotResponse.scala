@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptureSnapshotResponse extends StObject {
   
   /**
     * The nodes in the DOM tree. The DOMNode at index 0 corresponds to the root document.
     */
-  var documents: js.Array[DocumentSnapshot] = js.native
+  var documents: js.Array[DocumentSnapshot]
   
   /**
     * Shared string table that all string properties refer to with indexes.
     */
-  var strings: js.Array[String] = js.native
+  var strings: js.Array[String]
 }
 object CaptureSnapshotResponse {
   

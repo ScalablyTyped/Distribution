@@ -2,20 +2,18 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryParameter extends StObject {
   
   // name of the field
-  var name: String = js.native
+  var name: String
   
   // data type of the field
-  var `type`: String = js.native
+  var `type`: String
   
   // literal value of the field
-  var value: String = js.native
+  var value: String
 }
 object QueryParameter {
   

@@ -2,13 +2,11 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EXTFragDepth extends StObject {
   
-  val __EXT_frag_depth: Unit = js.native
+  val __EXT_frag_depth: Unit
 }
 object EXTFragDepth {
   

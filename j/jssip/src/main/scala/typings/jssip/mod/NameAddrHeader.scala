@@ -3,7 +3,6 @@ package typings.jssip.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jssip", "NameAddrHeader")
@@ -11,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class NameAddrHeader protected () extends StObject {
   def this(uri: URI) = this()
   def this(uri: URI, display_name: String) = this()
-  def this(uri: URI, display_name: js.UndefOr[scala.Nothing], parameters: StringDictionary[String]) = this()
   def this(uri: URI, display_name: String, parameters: StringDictionary[String]) = this()
+  def this(uri: URI, display_name: Unit, parameters: StringDictionary[String]) = this()
   
   def clearParams(): Unit = js.native
   
@@ -30,7 +29,10 @@ class NameAddrHeader protected () extends StObject {
 }
 object NameAddrHeader {
   
-  @JSImport("jssip", "NameAddrHeader.parse")
+  @JSImport("jssip", "NameAddrHeader")
   @js.native
-  def parse(nameAddrHeader: String): NameAddrHeader = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(nameAddrHeader: String): NameAddrHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(nameAddrHeader.asInstanceOf[js.Any]).asInstanceOf[NameAddrHeader]
 }

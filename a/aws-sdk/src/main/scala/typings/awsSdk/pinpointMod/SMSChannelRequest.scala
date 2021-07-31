@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SMSChannelRequest extends StObject {
   
   /**
     * Specifies whether to enable the SMS channel for the application.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * The identity that you want to display on recipients' devices when they receive messages from the SMS channel.
     */
-  var SenderId: js.UndefOr[string] = js.native
+  var SenderId: js.UndefOr[string] = js.undefined
   
   /**
     * The registered short code that you want to use when you send messages through the SMS channel.
     */
-  var ShortCode: js.UndefOr[string] = js.native
+  var ShortCode: js.UndefOr[string] = js.undefined
 }
 object SMSChannelRequest {
   

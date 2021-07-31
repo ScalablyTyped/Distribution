@@ -3,15 +3,15 @@ package typings.openfin
 import typings.openfin.entityTypeMod.EntityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapesIdentityMod {
   
-  @js.native
-  trait ClientIdentity extends Identity {
+  trait ClientIdentity
+    extends StObject
+       with Identity {
     
-    var endpointId: js.UndefOr[String] = js.native
+    var endpointId: js.UndefOr[String] = js.undefined
   }
   object ClientIdentity {
     
@@ -32,18 +32,17 @@ object shapesIdentityMod {
     }
   }
   
-  @js.native
   trait Identity extends StObject {
     
-    var entityType: js.UndefOr[EntityType] = js.native
+    var entityType: js.UndefOr[EntityType] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var parentFrame: js.UndefOr[String] = js.native
+    var parentFrame: js.UndefOr[String] = js.undefined
     
-    var runtimeUuid: js.UndefOr[String] = js.native
+    var runtimeUuid: js.UndefOr[String] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object Identity {
     
@@ -85,14 +84,15 @@ object shapesIdentityMod {
     }
   }
   
-  @js.native
-  trait ProviderIdentity extends Identity {
+  trait ProviderIdentity
+    extends StObject
+       with Identity {
     
-    var channelId: js.UndefOr[String] = js.native
+    var channelId: js.UndefOr[String] = js.undefined
     
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
-    var isExternal: js.UndefOr[Boolean] = js.native
+    var isExternal: js.UndefOr[Boolean] = js.undefined
   }
   object ProviderIdentity {
     
@@ -125,10 +125,11 @@ object shapesIdentityMod {
     }
   }
   
-  @js.native
-  trait ResourceFetchIdentity extends Identity {
+  trait ResourceFetchIdentity
+    extends StObject
+       with Identity {
     
-    var resourceFetch: js.UndefOr[Boolean] = js.native
+    var resourceFetch: js.UndefOr[Boolean] = js.undefined
   }
   object ResourceFetchIdentity {
     

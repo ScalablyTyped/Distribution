@@ -2,29 +2,27 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Instance.destroy method
   */
-@js.native
 trait InstanceDestroyOptions extends StObject {
   
   /**
     * If set to true, paranoid models will actually be deleted
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A function that gets executed while running the query to log the sql.
     */
-  var logging: js.UndefOr[Boolean | js.Function] = js.native
+  var logging: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
     * Transaction to run the query in
     */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
 }
 object InstanceDestroyOptions {
   

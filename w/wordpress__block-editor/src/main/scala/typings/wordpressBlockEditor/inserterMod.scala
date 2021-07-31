@@ -8,7 +8,6 @@ import typings.wordpressComponents.dropdownMod.Dropdown.RenderProps
 import typings.wordpressComponents.popoverMod.Popover.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inserterMod {
@@ -28,22 +27,21 @@ object inserterMod {
   object Inserter {
     
     /* Inlined parent std.Partial<std.Pick<@wordpress/components.@wordpress/components.Dropdown.Props, 'position' | 'renderToggle'>> */
-    @js.native
     trait Props extends StObject {
       
-      var clientId: js.UndefOr[String] = js.native
+      var clientId: js.UndefOr[String] = js.undefined
       
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var isAppender: js.UndefOr[Boolean] = js.native
+      var isAppender: js.UndefOr[Boolean] = js.undefined
       
-      var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.native
+      var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
       
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
       
-      var renderToggle: js.UndefOr[js.Function1[/* props */ RenderProps, Element]] = js.native
+      var renderToggle: js.UndefOr[js.Function1[/* props */ RenderProps, Element]] = js.undefined
       
-      var rootClientId: js.UndefOr[String] = js.native
+      var rootClientId: js.UndefOr[String] = js.undefined
     }
     object Props {
       

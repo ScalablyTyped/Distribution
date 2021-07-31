@@ -1,37 +1,35 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`5`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.mockingbird
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   issue_number :number,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'mockingbird'> */
-@js.native
-trait IssuesListEventsForTimelineEndpoint extends StObject {
+trait IssuesListEventsForTimelineEndpoint
+  extends StObject
+     with RequiredPreview[mockingbird] {
   
-  var issue_number: Double = js.native
+  var issue_number: Double
   
-  var mediaType: `5` = js.native
-  
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
 }
 object IssuesListEventsForTimelineEndpoint {
   
   @scala.inline
-  def apply(issue_number: Double, mediaType: `5`, owner: String, repo: String): IssuesListEventsForTimelineEndpoint = {
+  def apply(issue_number: Double, mediaType: `0`[mockingbird], owner: String, repo: String): IssuesListEventsForTimelineEndpoint = {
     val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesListEventsForTimelineEndpoint]
   }
@@ -41,9 +39,6 @@ object IssuesListEventsForTimelineEndpoint {
     
     @scala.inline
     def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `5`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

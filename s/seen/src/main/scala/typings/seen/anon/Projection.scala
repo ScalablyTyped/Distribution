@@ -3,13 +3,11 @@ package typings.seen.anon
 import typings.seen.mod.Matrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Projection extends StObject {
   
-  var projection: Matrix = js.native
+  var projection: Matrix
 }
 object Projection {
   

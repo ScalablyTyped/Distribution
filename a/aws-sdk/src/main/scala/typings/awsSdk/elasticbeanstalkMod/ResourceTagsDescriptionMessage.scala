@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceTagsDescriptionMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource for which a tag list was requested.
     */
-  var ResourceArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceArn] = js.native
+  var ResourceArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceArn] = js.undefined
   
   /**
     * A list of tag key-value pairs.
     */
-  var ResourceTags: js.UndefOr[TagList] = js.native
+  var ResourceTags: js.UndefOr[TagList] = js.undefined
 }
 object ResourceTagsDescriptionMessage {
   

@@ -2,17 +2,15 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOptions extends StObject {
   
-  var end_time: String = js.native
+  var end_time: String
   
-  var page_size: Double = js.native
+  var page_size: Double
   
-  var start_time: String = js.native
+  var start_time: String
 }
 object FilterOptions {
   

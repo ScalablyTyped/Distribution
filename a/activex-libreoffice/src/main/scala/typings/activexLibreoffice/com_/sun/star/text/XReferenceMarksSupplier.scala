@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A reference mark is used to refer to text positions in a text document.
   */
-@js.native
-trait XReferenceMarksSupplier extends XInterface {
+trait XReferenceMarksSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of reference marks. */
-  val ReferenceMarks: XNameAccess = js.native
+  val ReferenceMarks: XNameAccess
   
   /** @returns the collection of reference marks. */
-  def getReferenceMarks(): XNameAccess = js.native
+  def getReferenceMarks(): XNameAccess
 }
 object XReferenceMarksSupplier {
   

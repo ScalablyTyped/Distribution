@@ -2,20 +2,18 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Results for a product search request.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1ProductSearchResults extends StObject {
   
   /**
     * Timestamp of the index which provided these results. Changes made after
     * this time are not reflected in the current results.
     */
-  var indexTime: js.UndefOr[String] = js.native
+  var indexTime: js.UndefOr[String] = js.undefined
   
   /**
     * List of results grouped by products detected in the query image. Each
@@ -23,12 +21,12 @@ trait SchemaGoogleCloudVisionV1p1beta1ProductSearchResults extends StObject {
     * contains the matching products specific to that region. There may be
     * duplicate product matches in the union of all the per-product results.
     */
-  var productGroupedResults: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult]] = js.native
+  var productGroupedResults: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult]] = js.undefined
   
   /**
     * List of results, one for each product match.
     */
-  var results: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult]] = js.native
+  var results: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1ProductSearchResults {
   

@@ -11,14 +11,15 @@ import typings.typeorm.postgresPostgresConnectionOptionsMod.PostgresConnectionOp
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postgresPostgresDriverMod {
   
   @JSImport("typeorm/driver/postgres/PostgresDriver", "PostgresDriver")
   @js.native
-  class PostgresDriver () extends Driver {
+  class PostgresDriver ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     /* protected */ def checkMetadataForExtensions(): js.Promise[HasCitextColumns] = js.native
@@ -48,14 +49,14 @@ object postgresPostgresDriverMod {
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createPool(options: PostgresConnectionOptions, credentials: PostgresConnectionCredentialsOptions): js.Promise[_] = js.native
+    /* protected */ def createPool(options: PostgresConnectionOptions, credentials: PostgresConnectionCredentialsOptions): js.Promise[js.Any] = js.native
     
     /* protected */ def enableExtensions(extensionsMetadata: js.Any, connection: js.Any): js.Promise[Unit] = js.native
     
     /**
       * Executes given query.
       */
-    /* protected */ def executeQuery(connection: js.Any, query: String): js.Promise[_] = js.native
+    /* protected */ def executeQuery(connection: js.Any, query: String): js.Promise[js.Any] = js.native
     
     /**
       * If driver dependency is not given explicitly, then try to load it via "require".
@@ -101,7 +102,7 @@ object postgresPostgresDriverMod {
       * Pool for slave databases.
       * Used in replication.
       */
-    var slaves: js.Array[_] = js.native
+    var slaves: js.Array[js.Any] = js.native
     
     val uuidGenerator: String = js.native
   }

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity extends StObject {
   
   /** The recognized celebrity. */
-  var celebrity: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1Celebrity] = js.native
+  var celebrity: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1Celebrity] = js.undefined
   
   /** Recognition confidence. Range [0, 1]. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity {
   

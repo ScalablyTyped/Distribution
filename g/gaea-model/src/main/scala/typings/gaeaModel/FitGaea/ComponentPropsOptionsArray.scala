@@ -2,13 +2,13 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComponentPropsOptionsArray extends ComponentPropsGaeaEdit {
+trait ComponentPropsOptionsArray
+  extends StObject
+     with ComponentPropsGaeaEdit {
   
-  var key: String = js.native
+  var key: String
 }
 object ComponentPropsOptionsArray {
   

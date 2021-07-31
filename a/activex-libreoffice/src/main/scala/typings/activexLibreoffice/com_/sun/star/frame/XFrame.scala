@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The root node of the tree can be a {@link Desktop} implementation.
   * @see Desktop
   */
-@js.native
-trait XFrame extends XComponent {
+trait XFrame
+  extends StObject
+     with XComponent {
   
   /**
     * provides access to the component window
@@ -26,7 +26,7 @@ trait XFrame extends XComponent {
     * @returns the current visible component in this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  val ComponentWindow: XWindow = js.native
+  val ComponentWindow: XWindow
   
   /**
     * provides access to the container window of the frame.
@@ -35,7 +35,7 @@ trait XFrame extends XComponent {
     * @returns the container window of this frame
     * @see XFrame.initialize()
     */
-  val ContainerWindow: XWindow = js.native
+  val ContainerWindow: XWindow
   
   /**
     * provides access to the controller
@@ -45,21 +45,21 @@ trait XFrame extends XComponent {
     * @returns the current controller within this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  val Controller: XController = js.native
+  val Controller: XController
   
   /**
     * provides access to the creator (parent) of this frame
     * @returns the frame container that created and contains this frame.
     * @see XFrame.setCreator()
     */
-  var Creator: XFramesSupplier = js.native
+  var Creator: XFramesSupplier
   
   /**
     * access to the name property of this frame
     * @returns the programmatic name of this frame.
     * @see XFrame.setName()
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * activates this frame and thus the component within.
@@ -72,7 +72,7 @@ trait XFrame extends XComponent {
     * @see XFrame.deactivate()
     * @see XFrame.isActive()
     */
-  def activate(): Unit = js.native
+  def activate(): Unit
   
   /**
     * registers an event listener, which will be called when certain things happen to the components within this frame or within sub-frames of this frame.
@@ -81,7 +81,7 @@ trait XFrame extends XComponent {
     * @param xListener specifies the listener which will be informed
     * @see XFrame.removeFrameActionListener()
     */
-  def addFrameActionListener(xListener: XFrameActionListener): Unit = js.native
+  def addFrameActionListener(xListener: XFrameActionListener): Unit
   
   /**
     * notifies the frame that the context of the controller within this frame changed (i.e. the selection).
@@ -92,7 +92,7 @@ trait XFrame extends XComponent {
     * @see FrameAction
     * @see XFrame.addFrameActionListener()
     */
-  def contextChanged(): Unit = js.native
+  def contextChanged(): Unit
   
   /**
     * is called by the creator frame when another sub-frame gets activated.
@@ -101,7 +101,7 @@ trait XFrame extends XComponent {
     * @see XFrame.activate()
     * @see XFrame.isActive()
     */
-  def deactivate(): Unit = js.native
+  def deactivate(): Unit
   
   /**
     * searches for a frame with the specified name.
@@ -120,7 +120,7 @@ trait XFrame extends XComponent {
     * @param nSearchFlags optional parameter to regulate search if no special target was used for **TargetFrameName**
     * @see FrameSearchFlag
     */
-  def findFrame(aTargetFrameName: String, nSearchFlags: Double): XFrame = js.native
+  def findFrame(aTargetFrameName: String, nSearchFlags: Double): XFrame
   
   /**
     * provides access to the component window
@@ -129,7 +129,7 @@ trait XFrame extends XComponent {
     * @returns the current visible component in this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  def getComponentWindow(): XWindow = js.native
+  def getComponentWindow(): XWindow
   
   /**
     * provides access to the container window of the frame.
@@ -138,7 +138,7 @@ trait XFrame extends XComponent {
     * @returns the container window of this frame
     * @see XFrame.initialize()
     */
-  def getContainerWindow(): XWindow = js.native
+  def getContainerWindow(): XWindow
   
   /**
     * provides access to the controller
@@ -148,21 +148,21 @@ trait XFrame extends XComponent {
     * @returns the current controller within this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  def getController(): XController = js.native
+  def getController(): XController
   
   /**
     * provides access to the creator (parent) of this frame
     * @returns the frame container that created and contains this frame.
     * @see XFrame.setCreator()
     */
-  def getCreator(): XFramesSupplier = js.native
+  def getCreator(): XFramesSupplier
   
   /**
     * access to the name property of this frame
     * @returns the programmatic name of this frame.
     * @see XFrame.setName()
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * is called to initialize the frame within a window - the container window.
@@ -174,7 +174,7 @@ trait XFrame extends XComponent {
     * @param xWindow the new container window
     * @see XFrame.getContainerWindow()
     */
-  def initialize(xWindow: XWindow): Unit = js.native
+  def initialize(xWindow: XWindow): Unit
   
   /**
     * determines if the frame is active.
@@ -182,7 +182,7 @@ trait XFrame extends XComponent {
     * @see XFrame.activate()
     * @see XFrame.deactivate()
     */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /**
     * determines if the frame is a top frame.
@@ -191,14 +191,14 @@ trait XFrame extends XComponent {
     * search at such a frame unless the flag {@link FrameSearchFlag.TASKS} is set.
     * @returns `TRUE` if frame supports top frame specification ; `FALSE` otherwise
     */
-  def isTop(): Boolean = js.native
+  def isTop(): Boolean
   
   /**
     * unregisters an event listener
     * @param xListener specifies the listener which won't be informed any longer
     * @see XFrame.addFrameActionListener()
     */
-  def removeFrameActionListener(xListener: XFrameActionListener): Unit = js.native
+  def removeFrameActionListener(xListener: XFrameActionListener): Unit
   
   /**
     * sets a new component into the frame or release an existing one from a frame.
@@ -209,7 +209,7 @@ trait XFrame extends XComponent {
     * @see XFrame.getContainerWindow()
     * @see XFrame.getController()
     */
-  def setComponent(xComponentWindow: XWindow, xController: XController): Boolean = js.native
+  def setComponent(xComponentWindow: XWindow, xController: XController): Boolean
   
   /**
     * sets the frame container that created this frame.
@@ -220,7 +220,7 @@ trait XFrame extends XComponent {
     * @param Creator the creator (parent) of this frame
     * @see XFrame.getCreator()
     */
-  def setCreator(Creator: XFramesSupplier): Unit = js.native
+  def setCreator(Creator: XFramesSupplier): Unit
   
   /**
     * sets the name of the frame.
@@ -235,7 +235,7 @@ trait XFrame extends XComponent {
     * @see XDispatchProvider
     * @see XComponentLoader
     */
-  def setName(aName: String): Unit = js.native
+  def setName(aName: String): Unit
 }
 object XFrame {
   

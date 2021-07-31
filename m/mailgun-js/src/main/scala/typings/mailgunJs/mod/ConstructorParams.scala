@@ -3,33 +3,31 @@ package typings.mailgunJs.mod
 import typings.mailgunJs.anon.Interval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstructorParams extends StObject {
   
-  var apiKey: String = js.native
+  var apiKey: String
   
-  var domain: String = js.native
+  var domain: String
   
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var mute: js.UndefOr[Boolean] = js.native
+  var mute: js.UndefOr[Boolean] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
-  var publicApiKey: js.UndefOr[String] = js.native
+  var publicApiKey: js.UndefOr[String] = js.undefined
   
-  var retry: js.UndefOr[Double | Interval] = js.native
+  var retry: js.UndefOr[Double | Interval] = js.undefined
   
-  var testMode: js.UndefOr[Boolean] = js.native
+  var testMode: js.UndefOr[Boolean] = js.undefined
   
   var testModeLogger: js.UndefOr[
     js.Function3[
@@ -38,9 +36,9 @@ trait ConstructorParams extends StObject {
       /* form */ typings.formData.mod.^, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object ConstructorParams {
   

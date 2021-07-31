@@ -8,21 +8,19 @@ import typings.vegaLite.vegaSchemaMod.VgValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkDef extends StObject {
   
-  var channel: PositionChannel | PolarPositionChannel = js.native
+  var channel: PositionChannel | PolarPositionChannel
   
-  var config: typings.vegaLite.srcConfigMod.Config[SignalRef] = js.native
+  var config: typings.vegaLite.srcConfigMod.Config[SignalRef]
   
-  var fieldDef: typings.vegaLite.channeldefMod.FieldDef[String, _] = js.native
+  var fieldDef: typings.vegaLite.channeldefMod.FieldDef[String, js.Any]
   
-  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef] = js.native
+  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]
   
-  var ref: VgValueRef = js.native
+  var ref: VgValueRef
 }
 object MarkDef {
   
@@ -30,7 +28,7 @@ object MarkDef {
   def apply(
     channel: PositionChannel | PolarPositionChannel,
     config: typings.vegaLite.srcConfigMod.Config[SignalRef],
-    fieldDef: typings.vegaLite.channeldefMod.FieldDef[String, _],
+    fieldDef: typings.vegaLite.channeldefMod.FieldDef[String, js.Any],
     markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef],
     ref: VgValueRef
   ): MarkDef = {
@@ -48,7 +46,7 @@ object MarkDef {
     def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDef(value: typings.vegaLite.channeldefMod.FieldDef[String, _]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    def setFieldDef(value: typings.vegaLite.channeldefMod.FieldDef[String, js.Any]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])

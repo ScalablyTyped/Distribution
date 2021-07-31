@@ -10,9 +10,9 @@ Built-in support for popular icon fonts and the tooling to create your own Icon 
 | ------------------ | :-------------: |
 | Full name          | @expo/vector-icons |
 | Keywords           | expo |
-| # releases         | 24 |
-| # dependents       | 104 |
-| # downloads        | 4311596 |
+| # releases         | 26 |
+| # dependents       | 112 |
+| # downloads        | 4774332 |
 | # stars            | 1 |
 
 ## Links

@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridFeatureChooserPopover
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,7 +17,7 @@ trait IgGridFeatureChooserPopover
     * Sets the time popover fades in and out when showing/hiding
     *
     */
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls where the popover DOM should be attached to.
@@ -28,11 +27,11 @@ trait IgGridFeatureChooserPopover
     * "string" A valid jQuery selector for the element
     * "object" A reference to the parent jQuery object
     */
-  var appendTo: js.UndefOr[String | js.Object] = js.native
+  var appendTo: js.UndefOr[String | js.Object] = js.undefined
   
-  var closeOnBlur: js.UndefOr[Boolean] = js.native
+  var closeOnBlur: js.UndefOr[Boolean] = js.undefined
   
-  var containment: js.UndefOr[js.Any] = js.native
+  var containment: js.UndefOr[js.Any] = js.undefined
   
   /**
     * sets the content for the popover container. If left null the content will be get from the target.
@@ -42,7 +41,7 @@ trait IgGridFeatureChooserPopover
     * "string" String content of the popover container
     * "function" Function which is a callback that should return the content. Use the 'this' value to access the target DOM element.
     */
-  var contentTemplate: js.UndefOr[String | js.Function] = js.native
+  var contentTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * controls the direction in which the control shows relative to the target element
@@ -55,56 +54,56 @@ trait IgGridFeatureChooserPopover
     * "top" shows popover on the top of the target element
     * "bottom" shows popover on the bottom of the target element
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  var directionPriority: js.UndefOr[js.Array[_]] = js.native
+  var directionPriority: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var gridId: js.UndefOr[String] = js.native
+  var gridId: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the content for the popover header
     *
     */
-  var headerTemplate: js.UndefOr[IgPopoverHeaderTemplate] = js.native
+  var headerTemplate: js.UndefOr[IgPopoverHeaderTemplate] = js.undefined
   
   /**
     * defines height for the popover. leave null for auto
     *
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Event fired after popover is hidden.
     */
-  var hidden: js.UndefOr[HiddenEvent] = js.native
+  var hidden: js.UndefOr[HiddenEvent] = js.undefined
   
   /**
     * Event fired before popover is hidden.
     */
-  var hiding: js.UndefOr[HidingEvent] = js.native
+  var hiding: js.UndefOr[HidingEvent] = js.undefined
   
   /**
     * defines height the popover won't exceed even if no specific one is set.
     *
     */
-  var maxHeight: js.UndefOr[Double | String] = js.native
+  var maxHeight: js.UndefOr[Double | String] = js.undefined
   
   /**
     * defines width the popover won't exceed even if no specific one is set.
     *
     */
-  var maxWidth: js.UndefOr[Double | String] = js.native
+  var maxWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * defines width the popover won't go under the value even if no specific one is set.
     *
     */
-  var minWidth: js.UndefOr[Double | String] = js.native
+  var minWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area
@@ -116,13 +115,13 @@ trait IgGridFeatureChooserPopover
     * "start" the popover is positioned at the beginning of the target element
     * "end" the popover is positioned at the end of the target element
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Selectors indicating which items should show popovers. The predefined value is [title]. Customize if you're using something other then the title attribute for the popover content, or if you need a different selector for event delegation. When changing this option, you likely need to also change the contentTemplate option
     *
     */
-  var selectors: js.UndefOr[String] = js.native
+  var selectors: js.UndefOr[String] = js.undefined
   
   /**
     * sets the event on which the popover will be shown. Predefined values are "mouseenter", "click" and "focus"
@@ -133,25 +132,25 @@ trait IgGridFeatureChooserPopover
     * "click" the popover is shown on click on the target element
     * "focus" the popover is shown on focusing the target element
     */
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired before popover is shown.
     */
-  var showing: js.UndefOr[ShowingEvent] = js.native
+  var showing: js.UndefOr[ShowingEvent] = js.undefined
   
   /**
     * Event fired after popover is shown.
     */
-  var shown: js.UndefOr[ShownEvent] = js.native
+  var shown: js.UndefOr[ShownEvent] = js.undefined
   
-  var targetButton: js.UndefOr[js.Any] = js.native
+  var targetButton: js.UndefOr[js.Any] = js.undefined
   
   /**
     * defines width for the popover. leave null for auto.
     *
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object IgGridFeatureChooserPopover {
   
@@ -198,7 +197,7 @@ object IgGridFeatureChooserPopover {
     def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionPriority(value: js.Array[_]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
+    def setDirectionPriority(value: js.Array[js.Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDirectionPriorityUndefined: Self = StObject.set(x, "directionPriority", js.undefined)

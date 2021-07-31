@@ -2,61 +2,59 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSourceRequest extends StObject {
   
   /**
     * The API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The new description for the data source.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The new Amazon DynamoDB configuration.
     */
-  var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.native
+  var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.undefined
   
   /**
     * The new Elasticsearch Service configuration.
     */
-  var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.native
+  var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
   
   /**
     * The new HTTP endpoint configuration.
     */
-  var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.native
+  var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
   
   /**
     * The new AWS Lambda configuration.
     */
-  var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.native
+  var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.undefined
   
   /**
     * The new name for the data source.
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
   
   /**
     * The new relational database configuration.
     */
-  var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.native
+  var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.undefined
   
   /**
     * The new service role ARN for the data source.
     */
-  var serviceRoleArn: js.UndefOr[String] = js.native
+  var serviceRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The new data source type.
     */
-  var `type`: DataSourceType = js.native
+  var `type`: DataSourceType
 }
 object UpdateDataSourceRequest {
   

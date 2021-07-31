@@ -8,14 +8,13 @@ import typings.winrtUwp.winrtUwpStrings.hiding
 import typings.winrtUwp.winrtUwpStrings.showing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables an app to register to receive notifications when the input pane is about to be displayed or hidden, and to determine which portion of the application's window is being obscured by the input pane. */
 @js.native
 trait InputPane extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiding(`type`: hiding, listener: TypedEventHandler[InputPane, InputPaneVisibilityEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -25,18 +24,18 @@ trait InputPane extends StObject {
   var occludedRect: Rect = js.native
   
   /** Occurs when the input pane is about to be hidden by sliding out of view. */
-  def onhiding(ev: InputPaneVisibilityEventArgs with WinRTEvent[InputPane]): Unit = js.native
+  def onhiding(ev: InputPaneVisibilityEventArgs & WinRTEvent[InputPane]): Unit = js.native
   /** Occurs when the input pane is about to be hidden by sliding out of view. */
   @JSName("onhiding")
   var onhiding_Original: TypedEventHandler[InputPane, InputPaneVisibilityEventArgs] = js.native
   
   /** Occurs when the input pane is about to be displayed by sliding into view. */
-  def onshowing(ev: InputPaneVisibilityEventArgs with WinRTEvent[InputPane]): Unit = js.native
+  def onshowing(ev: InputPaneVisibilityEventArgs & WinRTEvent[InputPane]): Unit = js.native
   /** Occurs when the input pane is about to be displayed by sliding into view. */
   @JSName("onshowing")
   var onshowing_Original: TypedEventHandler[InputPane, InputPaneVisibilityEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_hiding(`type`: hiding, listener: TypedEventHandler[InputPane, InputPaneVisibilityEventArgs]): Unit = js.native
   @JSName("removeEventListener")

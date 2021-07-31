@@ -2,23 +2,21 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
-  var label: js.UndefOr[CustomizeTextFormat] = js.native
+  var label: js.UndefOr[CustomizeTextFormat] = js.undefined
   
-  var separatorHeight: js.UndefOr[Double] = js.native
+  var separatorHeight: js.UndefOr[Double] = js.undefined
   
-  var textLeftIndent: js.UndefOr[Double] = js.native
+  var textLeftIndent: js.UndefOr[Double] = js.undefined
   
-  var textTopIndent: js.UndefOr[Double] = js.native
+  var textTopIndent: js.UndefOr[Double] = js.undefined
   
-  var topIndent: js.UndefOr[Double] = js.native
+  var topIndent: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Label {
   

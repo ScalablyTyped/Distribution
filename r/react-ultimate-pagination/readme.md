@@ -11,8 +11,8 @@ React.js pagination component based on ultimate-pagination
 | Full name          | react-ultimate-pagination |
 | Keywords           | react, react.js, component, react-component, pagination, paginator, pager |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 553074 |
+| # dependents       | 23 |
+| # downloads        | 706509 |
 | # stars            | 1 |
 
 ## Links

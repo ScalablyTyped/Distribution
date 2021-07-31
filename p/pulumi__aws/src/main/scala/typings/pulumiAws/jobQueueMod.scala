@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jobQueueMod {
@@ -63,6 +62,10 @@ object jobQueueMod {
   /* static members */
   object JobQueue {
     
+    @JSImport("@pulumi/aws/batch/jobQueue", "JobQueue")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing JobQueue resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,29 +75,23 @@ object jobQueueMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/batch/jobQueue", "JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID]): JobQueue = js.native
-    @JSImport("@pulumi/aws/batch/jobQueue", "JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): JobQueue = js.native
-    @JSImport("@pulumi/aws/batch/jobQueue", "JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobQueueState): JobQueue = js.native
-    @JSImport("@pulumi/aws/batch/jobQueue", "JobQueue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobQueueState, opts: CustomResourceOptions): JobQueue = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobQueueState): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobQueueState, opts: CustomResourceOptions): JobQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobQueue]
     
     /**
       * Returns true if the given object is an instance of JobQueue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/batch/jobQueue", "JobQueue.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean]
   }
   
-  @js.native
   trait JobQueueArgs extends StObject {
     
     /**
@@ -103,28 +100,28 @@ object jobQueueMod {
       * in the list will dictate the order. You can associate up to 3 compute environments
       * with a job queue.
       */
-    val computeEnvironments: Input[js.Array[Input[String]]] = js.native
+    val computeEnvironments: Input[js.Array[Input[String]]]
     
     /**
       * Specifies the name of the job queue.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The priority of the job queue. Job queues with a higher priority
       * are evaluated first when associated with the same compute environment.
       */
-    val priority: Input[Double] = js.native
+    val priority: Input[Double]
     
     /**
       * The state of the job queue. Must be one of: `ENABLED` or `DISABLED`
       */
-    val state: Input[String] = js.native
+    val state: Input[String]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object JobQueueArgs {
     
@@ -163,13 +160,12 @@ object jobQueueMod {
     }
   }
   
-  @js.native
   trait JobQueueState extends StObject {
     
     /**
       * The Amazon Resource Name of the job queue.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the set of compute environments
@@ -177,28 +173,28 @@ object jobQueueMod {
       * in the list will dictate the order. You can associate up to 3 compute environments
       * with a job queue.
       */
-    val computeEnvironments: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val computeEnvironments: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Specifies the name of the job queue.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The priority of the job queue. Job queues with a higher priority
       * are evaluated first when associated with the same compute environment.
       */
-    val priority: js.UndefOr[Input[Double]] = js.native
+    val priority: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The state of the job queue. Must be one of: `ENABLED` or `DISABLED`
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object JobQueueState {
     

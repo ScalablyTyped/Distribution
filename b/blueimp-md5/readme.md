@@ -10,9 +10,9 @@ JavaScript MD5 implementation. Compatible with server-side environments like Nod
 | ------------------ | :-------------: |
 | Full name          | blueimp-md5 |
 | Keywords           | javascript, md5 |
-| # releases         | 8 |
-| # dependents       | 422 |
-| # downloads        | 21679611 |
+| # releases         | 10 |
+| # dependents       | 441 |
+| # downloads        | 28461252 |
 | # stars            | 11 |
 
 ## Links

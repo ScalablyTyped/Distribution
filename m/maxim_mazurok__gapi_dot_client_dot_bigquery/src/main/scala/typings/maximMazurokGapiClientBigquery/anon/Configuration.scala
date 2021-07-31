@@ -7,38 +7,36 @@ import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.JobStatistics
 import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.JobStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /** [Full-projection-only] Specifies the job configuration. */
-  var configuration: js.UndefOr[JobConfiguration] = js.native
+  var configuration: js.UndefOr[JobConfiguration] = js.undefined
   
   /** A result object that will be present only if the job has failed. */
-  var errorResult: js.UndefOr[ErrorProto] = js.native
+  var errorResult: js.UndefOr[ErrorProto] = js.undefined
   
   /** Unique opaque ID of the job. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Job reference uniquely identifying the job. */
-  var jobReference: js.UndefOr[JobReference] = js.native
+  var jobReference: js.UndefOr[JobReference] = js.undefined
   
   /** The resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Running state of the job. When the state is DONE, errorResult can be checked to determine whether the job succeeded or failed. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Information about the job, including starting time and ending time of the job. */
-  var statistics: js.UndefOr[JobStatistics] = js.native
+  var statistics: js.UndefOr[JobStatistics] = js.undefined
   
   /** [Full-projection-only] Describes the state of the job. */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
   
   /** [Full-projection-only] Email address of the user who ran the job. */
-  var user_email: js.UndefOr[String] = js.native
+  var user_email: js.UndefOr[String] = js.undefined
 }
 object Configuration {
   

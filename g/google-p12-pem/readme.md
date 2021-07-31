@@ -10,9 +10,9 @@ Convert Google .p12 keys to .pem keys.
 | ------------------ | :-------------: |
 | Full name          | google-p12-pem |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 132385128 |
+| # releases         | 11 |
+| # dependents       | 7 |
+| # downloads        | 161297293 |
 | # stars            | 1 |
 
 ## Links

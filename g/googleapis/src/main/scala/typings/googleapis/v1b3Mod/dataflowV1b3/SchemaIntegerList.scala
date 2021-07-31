@@ -2,19 +2,17 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A metric value representing a list of integers.
   */
-@js.native
 trait SchemaIntegerList extends StObject {
   
   /**
     * Elements of the list.
     */
-  var elements: js.UndefOr[js.Array[SchemaSplitInt64]] = js.native
+  var elements: js.UndefOr[js.Array[SchemaSplitInt64]] = js.undefined
 }
 object SchemaIntegerList {
   

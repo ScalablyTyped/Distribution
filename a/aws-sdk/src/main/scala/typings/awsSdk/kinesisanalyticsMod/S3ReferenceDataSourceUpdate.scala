@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3ReferenceDataSourceUpdate extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the S3 bucket.
     */
-  var BucketARNUpdate: js.UndefOr[BucketARN] = js.native
+  var BucketARNUpdate: js.UndefOr[BucketARN] = js.undefined
   
   /**
     * Object key name.
     */
-  var FileKeyUpdate: js.UndefOr[FileKey] = js.native
+  var FileKeyUpdate: js.UndefOr[FileKey] = js.undefined
   
   /**
     * ARN of the IAM role that Amazon Kinesis Analytics can assume to read the Amazon S3 object and populate the in-application.
     */
-  var ReferenceRoleARNUpdate: js.UndefOr[RoleARN] = js.native
+  var ReferenceRoleARNUpdate: js.UndefOr[RoleARN] = js.undefined
 }
 object S3ReferenceDataSourceUpdate {
   

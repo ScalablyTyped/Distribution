@@ -2,30 +2,30 @@ package typings.coverup
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("coverup", JSImport.Namespace)
-  @js.native
-  def apply(value: String): String = js.native
-  @JSImport("coverup", JSImport.Namespace)
-  @js.native
-  def apply(value: String, options: Options): String = js.native
+  @scala.inline
+  def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("coverup", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var char: js.UndefOr[String] = js.native
+    var char: js.UndefOr[String] = js.undefined
     
-    var compactTo: js.UndefOr[Double] = js.native
+    var compactTo: js.UndefOr[Double] = js.undefined
     
-    var keepLeft: js.UndefOr[Double] = js.native
+    var keepLeft: js.UndefOr[Double] = js.undefined
     
-    var keepRight: js.UndefOr[Double] = js.native
+    var keepRight: js.UndefOr[Double] = js.undefined
     
-    var keepSymbols: js.UndefOr[Boolean] = js.native
+    var keepSymbols: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

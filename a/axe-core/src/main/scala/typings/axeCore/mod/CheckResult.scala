@@ -2,21 +2,19 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckResult extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var impact: String = js.native
+  var impact: String
   
-  var message: String = js.native
+  var message: String
   
-  var relatedNodes: js.UndefOr[js.Array[RelatedNode]] = js.native
+  var relatedNodes: js.UndefOr[js.Array[RelatedNode]] = js.undefined
 }
 object CheckResult {
   

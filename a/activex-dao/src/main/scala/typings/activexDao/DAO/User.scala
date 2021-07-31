@@ -2,16 +2,15 @@ package typings.activexDao.DAO
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait User extends StObject {
   
   def CreateGroup(): Group = js.native
-  def CreateGroup(Name: js.UndefOr[scala.Nothing], PID: String): Group = js.native
   def CreateGroup(Name: String): Group = js.native
   def CreateGroup(Name: String, PID: String): Group = js.native
+  def CreateGroup(Name: Unit, PID: String): Group = js.native
   
   @JSName("DAO.User_typekey")
   var DAODotUser_typekey: User = js.native

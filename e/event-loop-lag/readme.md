@@ -12,7 +12,7 @@ Measure event loop lag
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 613814 |
+| # downloads        | 691910 |
 | # stars            | 1 |
 
 ## Links

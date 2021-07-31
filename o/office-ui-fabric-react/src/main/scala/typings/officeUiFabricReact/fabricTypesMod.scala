@@ -13,47 +13,47 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fabricTypesMod {
   
-  @js.native
-  trait IFabricProps extends HTMLAttributes[HTMLDivElement] {
+  trait IFabricProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Applies the current body background specified in the theme to the root element.
       */
-    var applyTheme: js.UndefOr[Boolean] = js.native
+    var applyTheme: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Applies the current body background specified in the theme to the body element.
       */
-    var applyThemeToBody: js.UndefOr[Boolean] = js.native
+    var applyThemeToBody: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Overrides the root element type, defaults to `div`.
       */
-    var as: js.UndefOr[ElementType[_]] = js.native
+    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.native
+    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
     
     /**
       * Specifies the direction of the content. Will inject a `dir` attribute, and also ensure that the `rtl` flag of the
       * contextual theme object is set correctly so that css registered with merge-styles can be auto flipped correctly.
       */
     @JSName("dir")
-    var dir_IFabricProps: js.UndefOr[rtl | ltr | auto] = js.native
+    var dir_IFabricProps: js.UndefOr[rtl | ltr | auto] = js.undefined
     
     /**
       * Overrides the styles for the component.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IFabricStyleProps, IFabricStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IFabricStyleProps, IFabricStyles]] = js.undefined
     
     /**
       * Injected by the `styled` HOC wrapper.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IFabricProps {
     
@@ -79,7 +79,7 @@ object fabricTypesMod {
       def setApplyThemeUndefined: Self = StObject.set(x, "applyTheme", js.undefined)
       
       @scala.inline
-      def setAs(value: ElementType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -116,11 +116,12 @@ object fabricTypesMod {
     }
   }
   
-  @js.native
-  trait IFabricStyleProps extends IFabricProps {
+  trait IFabricStyleProps
+    extends StObject
+       with IFabricProps {
     
     @JSName("theme")
-    var theme_IFabricStyleProps: ITheme = js.native
+    var theme_IFabricStyleProps: ITheme
   }
   object IFabricStyleProps {
     
@@ -138,12 +139,11 @@ object fabricTypesMod {
     }
   }
   
-  @js.native
   trait IFabricStyles extends StObject {
     
-    var bodyThemed: IStyle = js.native
+    var bodyThemed: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IFabricStyles {
     

@@ -2,29 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TryStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var block: BlockStatement = js.native
+  var block: BlockStatement
   
-  var finalizer: js.UndefOr[BlockStatement | Null] = js.native
+  var finalizer: js.UndefOr[BlockStatement | Null] = js.undefined
   
-  var handler: js.UndefOr[CatchClause | Null] = js.native
+  var handler: js.UndefOr[CatchClause | Null] = js.undefined
   
   @JSName("type")
-  var type_TryStatement: typings.estree.estreeStrings.TryStatement = js.native
+  var type_TryStatement: typings.estree.estreeStrings.TryStatement
 }
 object TryStatement {
   
   @scala.inline
-  def apply(block: BlockStatement, `type`: typings.estree.estreeStrings.TryStatement): TryStatement = {
+  def apply(block: BlockStatement): TryStatement = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TryStatement")
     __obj.asInstanceOf[TryStatement]
   }
   

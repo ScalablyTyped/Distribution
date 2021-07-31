@@ -11,8 +11,8 @@ Calculates the size of Javascript object.
 | Full name          | sizeof |
 | Keywords           | size, sizeof, js, object, array, memory |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 60599 |
+| # dependents       | 17 |
+| # downloads        | 80337 |
 | # stars            | 1 |
 
 ## Links

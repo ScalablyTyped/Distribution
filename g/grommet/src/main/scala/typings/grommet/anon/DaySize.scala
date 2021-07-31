@@ -2,19 +2,17 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DaySize extends StObject {
   
-  var daySize: js.UndefOr[String] = js.native
+  var daySize: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var slideDuration: js.UndefOr[String] = js.native
+  var slideDuration: js.UndefOr[String] = js.undefined
 }
 object DaySize {
   

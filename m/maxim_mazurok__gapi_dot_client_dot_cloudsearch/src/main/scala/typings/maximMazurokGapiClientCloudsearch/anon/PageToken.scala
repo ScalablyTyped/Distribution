@@ -2,46 +2,44 @@ package typings.maximMazurokGapiClientCloudsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageToken extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Number of sources to return in the response. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** If you are asked by Google to help with debugging, set this field. Otherwise, ignore this field. */
   @JSName("requestOptions.debugOptions.enableDebugging")
-  var requestOptionsDotdebugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.native
+  var requestOptionsDotdebugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. For translations. Set this
@@ -50,11 +48,11 @@ trait PageToken extends StObject {
     * in the query.
     */
   @JSName("requestOptions.languageCode")
-  var requestOptionsDotlanguageCode: js.UndefOr[String] = js.native
+  var requestOptionsDotlanguageCode: js.UndefOr[String] = js.undefined
   
   /** The ID generated when you create a search application using the [admin console](https://support.google.com/a/answer/9043922). */
   @JSName("requestOptions.searchApplicationId")
-  var requestOptionsDotsearchApplicationId: js.UndefOr[String] = js.native
+  var requestOptionsDotsearchApplicationId: js.UndefOr[String] = js.undefined
   
   /**
     * Current user's time zone id, such as "America/Los_Angeles" or "Australia/Sydney". These IDs are defined by [Unicode Common Locale Data Repository
@@ -62,13 +60,13 @@ trait PageToken extends StObject {
     * to correctly interpret date and time queries. If this field is not specified, the default time zone (UTC) is used.
     */
   @JSName("requestOptions.timeZone")
-  var requestOptionsDottimeZone: js.UndefOr[String] = js.native
+  var requestOptionsDottimeZone: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
 }
 object PageToken {
   

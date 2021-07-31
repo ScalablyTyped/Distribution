@@ -2,17 +2,17 @@ package typings.mithril.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RouteLinkAttrs extends Attributes {
+trait RouteLinkAttrs
+  extends StObject
+     with Attributes {
   
-  var href: String = js.native
+  var href: String
   
-  var options: js.UndefOr[RouteOptions] = js.native
+  var options: js.UndefOr[RouteOptions] = js.undefined
   
-  var selector: js.UndefOr[String | (ComponentTypes[_, js.Object])] = js.native
+  var selector: js.UndefOr[String | (ComponentTypes[js.Any, js.Object])] = js.undefined
 }
 object RouteLinkAttrs {
   
@@ -35,10 +35,10 @@ object RouteLinkAttrs {
     def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setSelector(value: String | (ComponentTypes[_, js.Object])): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    def setSelector(value: String | (ComponentTypes[js.Any, js.Object])): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectorFunction1(value: /* vnode */ Vnode[_, js.Object] => Component[_, js.Object]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+    def setSelectorFunction1(value: /* vnode */ Vnode[js.Any, js.Object] => Component[js.Any, js.Object]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)

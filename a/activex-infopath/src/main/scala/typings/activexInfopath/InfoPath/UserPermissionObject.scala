@@ -2,24 +2,22 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPermissionObject extends StObject {
   
-  var ExpirationDate: js.Any = js.native
+  var ExpirationDate: js.Any
   
   @JSName("InfoPath.UserPermissionObject_typekey")
-  var InfoPathDotUserPermissionObject_typekey: UserPermissionObject = js.native
+  var InfoPathDotUserPermissionObject_typekey: UserPermissionObject
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Permission: Double = js.native
+  var Permission: Double
   
-  def Remove(): Unit = js.native
+  def Remove(): Unit
   
-  val UserId: String = js.native
+  val UserId: String
 }
 object UserPermissionObject {
   

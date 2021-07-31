@@ -2,31 +2,29 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsteriskInfo extends StObject {
   
   /**
     * Info about how Asterisk was built.
     */
-  var build: js.UndefOr[BuildInfo] = js.native
+  var build: js.UndefOr[BuildInfo] = js.undefined
   
   /**
     * Info about Asterisk configuration.
     */
-  var config: js.UndefOr[ConfigInfo] = js.native
+  var config: js.UndefOr[ConfigInfo] = js.undefined
   
   /**
     * Info about Asterisk status.
     */
-  var status: js.UndefOr[StatusInfo] = js.native
+  var status: js.UndefOr[StatusInfo] = js.undefined
   
   /**
     * Info about the system running Asterisk.
     */
-  var system: js.UndefOr[SystemInfo] = js.native
+  var system: js.UndefOr[SystemInfo] = js.undefined
 }
 object AsteriskInfo {
   

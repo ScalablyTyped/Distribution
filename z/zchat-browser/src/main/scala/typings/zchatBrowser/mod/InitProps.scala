@@ -3,15 +3,13 @@ package typings.zchatBrowser.mod
 import typings.zchatBrowser.anon.Jwtfn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitProps extends StObject {
   
-  var account_key: String = js.native
+  var account_key: String
   
-  var authentication: js.UndefOr[Jwtfn] = js.native
+  var authentication: js.UndefOr[Jwtfn] = js.undefined
 }
 object InitProps {
   

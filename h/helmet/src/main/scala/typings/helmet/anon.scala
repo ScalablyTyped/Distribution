@@ -11,18 +11,16 @@ import typings.helmet.xFrameOptionsMod.XFrameOptionsOptions
 import typings.helmet.xPermittedCrossDomainPoliciesMod.XPermittedCrossDomainPoliciesOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<helmet.helmet/dist/middlewares/content-security-policy.ContentSecurityPolicyOptions> */
-  @js.native
   trait ReadonlyContentSecurityPo extends StObject {
     
-    val directives: js.UndefOr[ContentSecurityPolicyDirectives] = js.native
+    val directives: js.UndefOr[ContentSecurityPolicyDirectives] = js.undefined
     
-    val reportOnly: js.UndefOr[Boolean] = js.native
+    val reportOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyContentSecurityPo {
     
@@ -50,14 +48,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<helmet.helmet/dist/middlewares/expect-ct.ExpectCtOptions> */
-  @js.native
   trait ReadonlyExpectCtOptions extends StObject {
     
-    val enforce: js.UndefOr[Boolean] = js.native
+    val enforce: js.UndefOr[Boolean] = js.undefined
     
-    val maxAge: js.UndefOr[Double] = js.native
+    val maxAge: js.UndefOr[Double] = js.undefined
     
-    val reportUri: js.UndefOr[String] = js.native
+    val reportUri: js.UndefOr[String] = js.undefined
   }
   object ReadonlyExpectCtOptions {
     
@@ -91,30 +88,29 @@ object anon {
   }
   
   /* Inlined std.Readonly<helmet.helmet/dist.HelmetOptions> */
-  @js.native
   trait ReadonlyHelmetOptions extends StObject {
     
-    val contentSecurityPolicy: js.UndefOr[MiddlewareOption[ContentSecurityPolicyOptions]] = js.native
+    val contentSecurityPolicy: js.UndefOr[MiddlewareOption[ContentSecurityPolicyOptions]] = js.undefined
     
-    val dnsPrefetchControl: js.UndefOr[MiddlewareOption[XDnsPrefetchControlOptions]] = js.native
+    val dnsPrefetchControl: js.UndefOr[MiddlewareOption[XDnsPrefetchControlOptions]] = js.undefined
     
-    val expectCt: js.UndefOr[MiddlewareOption[ExpectCtOptions]] = js.native
+    val expectCt: js.UndefOr[MiddlewareOption[ExpectCtOptions]] = js.undefined
     
-    val frameguard: js.UndefOr[MiddlewareOption[XFrameOptionsOptions]] = js.native
+    val frameguard: js.UndefOr[MiddlewareOption[XFrameOptionsOptions]] = js.undefined
     
-    val hidePoweredBy: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    val hidePoweredBy: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
     
-    val hsts: js.UndefOr[MiddlewareOption[StrictTransportSecurityOptions]] = js.native
+    val hsts: js.UndefOr[MiddlewareOption[StrictTransportSecurityOptions]] = js.undefined
     
-    val ieNoOpen: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    val ieNoOpen: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
     
-    val noSniff: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    val noSniff: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
     
-    val permittedCrossDomainPolicies: js.UndefOr[MiddlewareOption[XPermittedCrossDomainPoliciesOptions]] = js.native
+    val permittedCrossDomainPolicies: js.UndefOr[MiddlewareOption[XPermittedCrossDomainPoliciesOptions]] = js.undefined
     
-    val referrerPolicy: js.UndefOr[MiddlewareOption[ReferrerPolicyOptions]] = js.native
+    val referrerPolicy: js.UndefOr[MiddlewareOption[ReferrerPolicyOptions]] = js.undefined
     
-    val xssFilter: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.native
+    val xssFilter: js.UndefOr[MiddlewareOption[scala.Nothing]] = js.undefined
   }
   object ReadonlyHelmetOptions {
     
@@ -196,10 +192,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<helmet.helmet/dist/middlewares/referrer-policy.ReferrerPolicyOptions> */
-  @js.native
   trait ReadonlyReferrerPolicyOpt extends StObject {
     
-    val policy: js.UndefOr[String | js.Array[String]] = js.native
+    val policy: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ReadonlyReferrerPolicyOpt {
     
@@ -224,14 +219,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<helmet.helmet/dist/middlewares/strict-transport-security.StrictTransportSecurityOptions> */
-  @js.native
   trait ReadonlyStrictTransportSe extends StObject {
     
-    val includeSubDomains: js.UndefOr[Boolean] = js.native
+    val includeSubDomains: js.UndefOr[Boolean] = js.undefined
     
-    val maxAge: js.UndefOr[Double] = js.native
+    val maxAge: js.UndefOr[Double] = js.undefined
     
-    val preload: js.UndefOr[Boolean] = js.native
+    val preload: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyStrictTransportSe {
     
@@ -265,10 +259,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<helmet.helmet/dist/middlewares/x-dns-prefetch-control.XDnsPrefetchControlOptions> */
-  @js.native
   trait ReadonlyXDnsPrefetchContr extends StObject {
     
-    val allow: js.UndefOr[Boolean] = js.native
+    val allow: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyXDnsPrefetchContr {
     
@@ -290,10 +283,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<helmet.helmet/dist/middlewares/x-frame-options.XFrameOptionsOptions> */
-  @js.native
   trait ReadonlyXFrameOptionsOpti extends StObject {
     
-    val action: js.UndefOr[String] = js.native
+    val action: js.UndefOr[String] = js.undefined
   }
   object ReadonlyXFrameOptionsOpti {
     
@@ -315,10 +307,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<helmet.helmet/dist/middlewares/x-permitted-cross-domain-policies.XPermittedCrossDomainPoliciesOptions> */
-  @js.native
   trait ReadonlyXPermittedCrossDo extends StObject {
     
-    val permittedPolicies: js.UndefOr[String] = js.native
+    val permittedPolicies: js.UndefOr[String] = js.undefined
   }
   object ReadonlyXPermittedCrossDo {
     

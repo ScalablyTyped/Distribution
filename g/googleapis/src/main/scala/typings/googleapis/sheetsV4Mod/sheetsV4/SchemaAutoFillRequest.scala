@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fills in more data based on existing data.
   */
-@js.native
 trait SchemaAutoFillRequest extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaAutoFillRequest extends StObject {
     * location that has data and automatically fill that data in to the rest of
     * the range.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
     * The source and destination areas to autofill. This explicitly lists the
     * source of the autofill and where to extend that data.
     */
-  var sourceAndDestination: js.UndefOr[SchemaSourceAndDestination] = js.native
+  var sourceAndDestination: js.UndefOr[SchemaSourceAndDestination] = js.undefined
   
   /**
     * True if we should generate data with the &quot;alternate&quot; series.
     * This differs based on the type and amount of source data.
     */
-  var useAlternateSeries: js.UndefOr[Boolean] = js.native
+  var useAlternateSeries: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAutoFillRequest {
   

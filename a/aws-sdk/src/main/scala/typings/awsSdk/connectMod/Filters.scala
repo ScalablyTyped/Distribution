@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filters extends StObject {
   
   /**
     * The channel to use to filter the metrics.
     */
-  var Channels: js.UndefOr[typings.awsSdk.connectMod.Channels] = js.native
+  var Channels: js.UndefOr[typings.awsSdk.connectMod.Channels] = js.undefined
   
   /**
     * The queues to use to filter the metrics. You can specify up to 100 queues per request.
     */
-  var Queues: js.UndefOr[typings.awsSdk.connectMod.Queues] = js.native
+  var Queues: js.UndefOr[typings.awsSdk.connectMod.Queues] = js.undefined
 }
 object Filters {
   

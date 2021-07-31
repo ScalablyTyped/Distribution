@@ -7,7 +7,6 @@ import typings.std.SVGSVGElement
 import typings.wordpressComponents.dashiconMod.Dashicon.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dashiconMod {
@@ -1188,19 +1187,20 @@ object dashiconMod {
       def `yes-alt`: typings.wordpressComponents.wordpressComponentsStrings.`yes-alt` = "yes-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`yes-alt`]
     }
     
-    @js.native
-    trait Props extends SVGProps[SVGSVGElement] {
+    trait Props
+      extends StObject
+         with SVGProps[SVGSVGElement] {
       
       /**
         * ID of the dashicon to use.
         */
-      var icon: Icon = js.native
+      var icon: Icon
       
       /**
         * Width of the icon (in pixels).
         * @defaultValue 20
         */
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
     }
     object Props {
       

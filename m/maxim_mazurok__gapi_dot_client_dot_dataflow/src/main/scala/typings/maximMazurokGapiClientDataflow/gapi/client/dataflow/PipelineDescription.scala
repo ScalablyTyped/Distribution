@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineDescription extends StObject {
   
   /** Pipeline level display data. */
-  var displayData: js.UndefOr[js.Array[DisplayData]] = js.native
+  var displayData: js.UndefOr[js.Array[DisplayData]] = js.undefined
   
   /** Description of each stage of execution of the pipeline. */
-  var executionPipelineStage: js.UndefOr[js.Array[ExecutionStageSummary]] = js.native
+  var executionPipelineStage: js.UndefOr[js.Array[ExecutionStageSummary]] = js.undefined
   
   /** Description of each transform in the pipeline and collections between them. */
-  var originalPipelineTransform: js.UndefOr[js.Array[TransformSummary]] = js.native
+  var originalPipelineTransform: js.UndefOr[js.Array[TransformSummary]] = js.undefined
 }
 object PipelineDescription {
   

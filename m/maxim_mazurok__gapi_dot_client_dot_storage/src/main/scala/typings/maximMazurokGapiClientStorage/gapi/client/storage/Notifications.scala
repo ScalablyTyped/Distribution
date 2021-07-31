@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notifications extends StObject {
   
   /** The list of items. */
-  var items: js.UndefOr[js.Array[Notification]] = js.native
+  var items: js.UndefOr[js.Array[Notification]] = js.undefined
   
   /** The kind of item this is. For lists of notifications, this is always storage#notifications. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Notifications {
   

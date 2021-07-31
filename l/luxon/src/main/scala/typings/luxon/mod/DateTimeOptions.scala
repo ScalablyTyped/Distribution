@@ -2,15 +2,15 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateTimeOptions extends LocaleOptions {
+trait DateTimeOptions
+  extends StObject
+     with LocaleOptions {
   
-  var setZone: js.UndefOr[Boolean] = js.native
+  var setZone: js.UndefOr[Boolean] = js.undefined
   
-  var zone: js.UndefOr[String | Zone] = js.native
+  var zone: js.UndefOr[String | Zone] = js.undefined
 }
 object DateTimeOptions {
   

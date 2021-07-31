@@ -4,24 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atlassianCrowdClient.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attributesMod {
   
   @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Attributes {
+  class ^ protected ()
+    extends StObject
+       with Attributes {
     def this(attributePairs: StringDictionary[js.Any]) = this()
   }
+  @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("atlassian-crowd-client/lib/models/attributes", "fromCrowd")
-  @js.native
-  def fromCrowd(attributesArr: js.Array[Name]): Attributes = js.native
-  @JSImport("atlassian-crowd-client/lib/models/attributes", "fromCrowd")
-  @js.native
-  def fromCrowd(attributesArr: js.Array[Name], parse: js.Function1[/* json */ String, _]): Attributes = js.native
+  @scala.inline
+  def fromCrowd(attributesArr: js.Array[Name]): Attributes = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any]).asInstanceOf[Attributes]
+  @scala.inline
+  def fromCrowd(attributesArr: js.Array[Name], parse: js.Function1[/* json */ String, js.Any]): Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(attributesArr.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[Attributes]
   
   @js.native
   trait Attributes extends StObject {

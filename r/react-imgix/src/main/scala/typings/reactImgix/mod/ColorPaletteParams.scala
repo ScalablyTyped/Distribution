@@ -2,17 +2,15 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorPaletteParams extends StObject {
   
-  var colors: js.UndefOr[ImgixParamType] = js.native
+  var colors: js.UndefOr[ImgixParamType] = js.undefined
   
-  var palette: js.UndefOr[ImgixParamType] = js.native
+  var palette: js.UndefOr[ImgixParamType] = js.undefined
   
-  var prefix: js.UndefOr[ImgixParamType] = js.native
+  var prefix: js.UndefOr[ImgixParamType] = js.undefined
 }
 object ColorPaletteParams {
   

@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgBaseChartMethods extends StObject {
   
   /**
@@ -13,46 +11,46 @@ trait IgBaseChartMethods extends StObject {
     *
     * @param item The item that we want to add to the data source.
     */
-  def addItem(item: js.Object): js.Object = js.native
+  def addItem(item: js.Object): js.Object
   
   /**
     * Get reference to chart object.
     */
-  def chart(): js.Object = js.native
+  def chart(): js.Object
   
   /**
     * Binds data to the chart
     */
-  def dataBind(): Unit = js.native
+  def dataBind(): Unit
   
   /**
     * Destroys widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Find index of item within actual data used by chart.
     *
     * @param item The reference to item.
     */
-  def findIndexOfItem(item: js.Object): Double = js.native
+  def findIndexOfItem(item: js.Object): Double
   
   /**
     * Forces any pending deferred work to render on the chart before continuing
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Get reference of actual data used by chart.
     */
-  def getData(): js.Array[_] = js.native
+  def getData(): js.Array[js.Any]
   
   /**
     * Get item within actual data used by chart. That is similar to this.getData()[ index ].
     *
     * @param index Index of data item.
     */
-  def getDataItem(index: js.Object): js.Object = js.native
+  def getDataItem(index: js.Object): js.Object
   
   /**
     * Inserts a new item to the data source and notifies the chart.
@@ -60,7 +58,7 @@ trait IgBaseChartMethods extends StObject {
     * @param item the new item that we want to insert in the data source.
     * @param index The index in the data source where the new item will be inserted.
     */
-  def insertItem(item: js.Object, index: Double): js.Object = js.native
+  def insertItem(item: js.Object, index: Double): js.Object
   
   /**
     * Notifies the chart that the items have been cleared from an associated data source.
@@ -68,7 +66,7 @@ trait IgBaseChartMethods extends StObject {
     *
     * @param dataSource The data source in which the change happened.
     */
-  def notifyClearItems(dataSource: js.Object): js.Object = js.native
+  def notifyClearItems(dataSource: js.Object): js.Object
   
   /**
     * Notifies the target axis or series that an item has been inserted at the specified index in its data source.
@@ -78,7 +76,7 @@ trait IgBaseChartMethods extends StObject {
     * @param index The index in the items source where the new item has been inserted.
     * @param newItem the new item that has been set in the collection.
     */
-  def notifyInsertItem(dataSource: js.Object, index: Double, newItem: js.Object): js.Object = js.native
+  def notifyInsertItem(dataSource: js.Object, index: Double, newItem: js.Object): js.Object
   
   /**
     * Notifies the target axis or series that an item has been removed from the specified index in its data source.
@@ -88,7 +86,7 @@ trait IgBaseChartMethods extends StObject {
     * @param index The index in the items source from where the old item has been removed.
     * @param oldItem the old item that has been removed from the collection.
     */
-  def notifyRemoveItem(dataSource: js.Object, index: Double, oldItem: js.Object): js.Object = js.native
+  def notifyRemoveItem(dataSource: js.Object, index: Double, oldItem: js.Object): js.Object
   
   /**
     * Notifies the chart that an item has been set in an associated data source.
@@ -98,14 +96,14 @@ trait IgBaseChartMethods extends StObject {
     * @param newItem the new item that has been set in the collection.
     * @param oldItem the old item that has been overwritten in the collection.
     */
-  def notifySetItem(dataSource: js.Object, index: Double, newItem: js.Object, oldItem: js.Object): js.Object = js.native
+  def notifySetItem(dataSource: js.Object, index: Double, newItem: js.Object, oldItem: js.Object): js.Object
   
   /**
     * Deletes an item from the data source and notifies the chart.
     *
     * @param index The index in the data source from where the item will be been removed.
     */
-  def removeItem(index: Double): js.Object = js.native
+  def removeItem(index: Double): js.Object
   
   /**
     * Updates an item in the data source and notifies the chart.
@@ -113,7 +111,7 @@ trait IgBaseChartMethods extends StObject {
     * @param index The index of the item in the data source that we want to change.
     * @param item The new item object that will be set in the data source.
     */
-  def setItem(index: Double, item: js.Object): js.Object = js.native
+  def setItem(index: Double, item: js.Object): js.Object
 }
 object IgBaseChartMethods {
   
@@ -125,7 +123,7 @@ object IgBaseChartMethods {
     destroy: () => Unit,
     findIndexOfItem: js.Object => Double,
     flush: () => Unit,
-    getData: () => js.Array[_],
+    getData: () => js.Array[js.Any],
     getDataItem: js.Object => js.Object,
     insertItem: (js.Object, Double) => js.Object,
     notifyClearItems: js.Object => js.Object,
@@ -161,7 +159,7 @@ object IgBaseChartMethods {
     def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetData(value: () => js.Array[_]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    def setGetData(value: () => js.Array[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDataItem(value: js.Object => js.Object): Self = StObject.set(x, "getDataItem", js.Any.fromFunction1(value))

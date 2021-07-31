@@ -2,36 +2,34 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDatafeedTarget extends StObject {
   
   /**
     * The country where the items in the feed will be included in the search
     * index, represented as a  CLDR territory code.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The list of destinations to exclude for this target (corresponds to
     * unchecked check boxes in Merchant Center).
     */
-  var excludedDestinations: js.UndefOr[js.Array[String]] = js.native
+  var excludedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of destinations to include for this target (corresponds to
     * checked check boxes in Merchant Center). Default destinations are always
     * included unless provided in the excluded_destination field.
     */
-  var includedDestinations: js.UndefOr[js.Array[String]] = js.native
+  var includedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The two-letter ISO 639-1 language of the items in the feed. Must be a
     * valid language for targets[].country.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object SchemaDatafeedTarget {
   

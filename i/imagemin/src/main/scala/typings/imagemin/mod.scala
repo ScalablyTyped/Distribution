@@ -3,29 +3,27 @@ package typings.imagemin
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(input: js.Array[String]): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
+  @scala.inline
+  def apply(input: js.Array[String], options: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
+  
   @JSImport("imagemin", JSImport.Namespace)
   @js.native
-  def apply(input: js.Array[String]): js.Promise[js.Array[Result]] = js.native
-  @JSImport("imagemin", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String], options: Options): js.Promise[js.Array[Result]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("imagemin", "buffer")
-  @js.native
-  def buffer(buffer: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("imagemin", "buffer")
-  @js.native
-  def buffer(buffer: Buffer, options: BufferOptions): js.Promise[Buffer] = js.native
+  @scala.inline
+  def buffer(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def buffer(buffer: Buffer, options: BufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @js.native
   trait BufferOptions extends StObject {
     
-    var plugins: js.Array[Plugin] = js.native
+    var plugins: js.Array[Plugin]
   }
   object BufferOptions {
     
@@ -46,14 +44,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var destination: js.UndefOr[String] = js.native
+    var destination: js.UndefOr[String] = js.undefined
     
-    var glob: js.UndefOr[Boolean] = js.native
+    var glob: js.UndefOr[Boolean] = js.undefined
     
-    var plugins: js.Array[Plugin] = js.native
+    var plugins: js.Array[Plugin]
   }
   object Options {
     
@@ -88,14 +85,13 @@ object mod {
   
   type Plugin = js.Function1[/* input */ Buffer, js.Promise[Buffer]]
   
-  @js.native
   trait Result extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var destinationPath: String = js.native
+    var destinationPath: String
     
-    var sourcePath: String = js.native
+    var sourcePath: String
   }
   object Result {
     

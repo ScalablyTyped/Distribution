@@ -2,24 +2,22 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/notification-response/
-@js.native
 trait NotificationResponse extends StObject {
   
-  val actionIdx: Double | Null = js.native
+  val actionIdx: Double | Null
   
-  val identifier: String = js.native
+  val identifier: String
   
-  val textInputValue: js.UndefOr[String] = js.native
+  val textInputValue: js.UndefOr[String] = js.undefined
 }
 object NotificationResponse {
   
   @scala.inline
   def apply(identifier: String): NotificationResponse = {
-    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], actionIdx = null)
     __obj.asInstanceOf[NotificationResponse]
   }
   

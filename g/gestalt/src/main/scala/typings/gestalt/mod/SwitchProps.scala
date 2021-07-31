@@ -3,21 +3,19 @@ package typings.gestalt.mod
 import typings.gestalt.anon.EventValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchProps extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  def onChange(args: EventValue): Unit = js.native
+  def onChange(args: EventValue): Unit
   
-  var switched: js.UndefOr[Boolean] = js.native
+  var switched: js.UndefOr[Boolean] = js.undefined
 }
 object SwitchProps {
   

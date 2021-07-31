@@ -2,13 +2,11 @@ package typings.winrt.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebUIBackgroundTaskInstance extends StObject {
   
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
 }
 object IWebUIBackgroundTaskInstance {
   

@@ -6,28 +6,26 @@ import typings.kurentoClient.mod.MediaType
 import typings.kurentoClient.mod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'MediaFlowOutStateChange', {  state :kurento-client.kurento-client.MediaFlowState,   mediaType :kurento-client.kurento-client.MediaType,   padName :string}> */
-@js.native
 trait EventMediaFlowOutStateCha extends StObject {
   
-  var mediaType: MediaType = js.native
+  var mediaType: MediaType
   
-  var padName: String = js.native
+  var padName: String
   
-  var source: String = js.native
+  var source: String
   
-  var state: MediaFlowState = js.native
+  var state: MediaFlowState
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var timestampMillis: String = js.native
+  var timestampMillis: String
   
-  var `type`: MediaFlowOutStateChange = js.native
+  var `type`: MediaFlowOutStateChange
 }
 object EventMediaFlowOutStateCha {
   
@@ -39,11 +37,10 @@ object EventMediaFlowOutStateCha {
     state: MediaFlowState,
     tags: js.Array[Tag],
     timestamp: String,
-    timestampMillis: String,
-    `type`: MediaFlowOutStateChange
+    timestampMillis: String
   ): EventMediaFlowOutStateCha = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], padName = padName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MediaFlowOutStateChange")
     __obj.asInstanceOf[EventMediaFlowOutStateCha]
   }
   

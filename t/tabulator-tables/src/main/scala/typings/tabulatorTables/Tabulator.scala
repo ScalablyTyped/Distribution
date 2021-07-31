@@ -109,7 +109,6 @@ import typings.tabulatorTables.tabulatorTablesStrings.weeks
 import typings.tabulatorTables.tabulatorTablesStrings.years
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Tabulator.prototype.(?!registerModule|helpers|_)\w+
@@ -124,23 +123,19 @@ trait Tabulator extends StObject {
   * 
     */
   def addColumn(definition: ColumnDefinition): js.Promise[Unit] = js.native
-  def addColumn(
-    definition: ColumnDefinition,
-    insertRightOfTarget: js.UndefOr[scala.Nothing],
-    positionTarget: ColumnLookup
-  ): js.Promise[Unit] = js.native
   def addColumn(definition: ColumnDefinition, insertRightOfTarget: Boolean): js.Promise[Unit] = js.native
   def addColumn(definition: ColumnDefinition, insertRightOfTarget: Boolean, positionTarget: ColumnLookup): js.Promise[Unit] = js.native
+  def addColumn(definition: ColumnDefinition, insertRightOfTarget: Unit, positionTarget: ColumnLookup): js.Promise[Unit] = js.native
   
   /** The addData method returns a promise, this can be used to run any other commands that have to be run after the data has been loaded into the table. By running them in the promise you ensure they are only run after the table has loaded the data. */
   def addData(): js.Promise[RowComponent] = js.native
-  def addData(data: js.UndefOr[scala.Nothing], addToTop: js.UndefOr[scala.Nothing], positionTarget: RowLookup): js.Promise[RowComponent] = js.native
-  def addData(data: js.UndefOr[scala.Nothing], addToTop: Boolean): js.Promise[RowComponent] = js.native
-  def addData(data: js.UndefOr[scala.Nothing], addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   def addData(data: js.Array[js.Object]): js.Promise[RowComponent] = js.native
-  def addData(data: js.Array[js.Object], addToTop: js.UndefOr[scala.Nothing], positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   def addData(data: js.Array[js.Object], addToTop: Boolean): js.Promise[RowComponent] = js.native
   def addData(data: js.Array[js.Object], addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  def addData(data: js.Array[js.Object], addToTop: Unit, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  def addData(data: Unit, addToTop: Boolean): js.Promise[RowComponent] = js.native
+  def addData(data: Unit, addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  def addData(data: Unit, addToTop: Unit, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   
   /** If you want to add another filter to the existing filters then you can call the addFilter function: */
   def addFilter(field: String, `type`: FilterType, value: js.Any): Unit = js.native
@@ -153,13 +148,13 @@ trait Tabulator extends StObject {
     The first argument should be a row data object. If you do not pass data for a column, it will be left empty. To create a blank row (ie for a user to fill in), pass an empty object to the function.
     The second argument is optional and determines whether the row is added to the top or bottom of the table. A value of true will add the row to the top of the table, a value of false will add the row to the bottom of the table. If the parameter is not set the row will be placed according to the addRowPos global option. */
   def addRow(): js.Promise[RowComponent] = js.native
-  def addRow(data: js.UndefOr[scala.Nothing], addToTop: js.UndefOr[scala.Nothing], positionTarget: RowLookup): js.Promise[RowComponent] = js.native
-  def addRow(data: js.UndefOr[scala.Nothing], addToTop: Boolean): js.Promise[RowComponent] = js.native
-  def addRow(data: js.UndefOr[scala.Nothing], addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   def addRow(data: js.Object): js.Promise[RowComponent] = js.native
-  def addRow(data: js.Object, addToTop: js.UndefOr[scala.Nothing], positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   def addRow(data: js.Object, addToTop: Boolean): js.Promise[RowComponent] = js.native
   def addRow(data: js.Object, addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  def addRow(data: js.Object, addToTop: Unit, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  def addRow(data: Unit, addToTop: Boolean): js.Promise[RowComponent] = js.native
+  def addRow(data: Unit, addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  def addRow(data: Unit, addToTop: Unit, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   
   /** Prevent actions from riggering an update of the Virtual DOM: */
   def blockRedraw(): Unit = js.native
@@ -221,7 +216,7 @@ trait Tabulator extends StObject {
       /* data */ js.Any, 
       /* options */ js.Any, 
       /* setFileContents */ js.Any, 
-      _
+      js.Any
     ],
     fileName: String
   ): Unit = js.native
@@ -231,10 +226,10 @@ trait Tabulator extends StObject {
       /* data */ js.Any, 
       /* options */ js.Any, 
       /* setFileContents */ js.Any, 
-      _
+      js.Any
     ],
     fileName: String,
-    params: js.UndefOr[scala.Nothing],
+    params: Unit,
     filter: RowRangeLookup
   ): Unit = js.native
   def download(
@@ -243,7 +238,7 @@ trait Tabulator extends StObject {
       /* data */ js.Any, 
       /* options */ js.Any, 
       /* setFileContents */ js.Any, 
-      _
+      js.Any
     ],
     fileName: String,
     params: DownloadOptions
@@ -254,7 +249,7 @@ trait Tabulator extends StObject {
       /* data */ js.Any, 
       /* options */ js.Any, 
       /* setFileContents */ js.Any, 
-      _
+      js.Any
     ],
     fileName: String,
     params: DownloadOptions,
@@ -272,12 +267,7 @@ trait Tabulator extends StObject {
     If you want to create a custom file type from the table data then you can pass a function to the type argument, instead of a string value. At the end of this function you must call the setFileContents function, passing the formatted data and the mime type.
     */
   def download(downloadType: DownloadType, fileName: String): Unit = js.native
-  def download(
-    downloadType: DownloadType,
-    fileName: String,
-    params: js.UndefOr[scala.Nothing],
-    filter: RowRangeLookup
-  ): Unit = js.native
+  def download(downloadType: DownloadType, fileName: String, params: Unit, filter: RowRangeLookup): Unit = js.native
   def download(downloadType: DownloadType, fileName: String, params: DownloadOptions): Unit = js.native
   def download(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: RowRangeLookup): Unit = js.native
   
@@ -325,8 +315,8 @@ trait Tabulator extends StObject {
   def getColumns(includeColumnGroups: Boolean): js.Array[ColumnComponent] = js.native
   
   /** You can retrieve the data stored in the table using the getData function. */
-  def getData(): js.Array[_] = js.native
-  def getData(activeOnly: RowRangeLookup): js.Array[_] = js.native
+  def getData(): js.Array[js.Any] = js.native
+  def getData(activeOnly: RowRangeLookup): js.Array[js.Any] = js.native
   
   def getDataCount(): Double = js.native
   def getDataCount(activeOnly: RowRangeLookup): Double = js.native
@@ -358,17 +348,13 @@ trait Tabulator extends StObject {
   
   /** Returns a table built of all active rows in the table (matching filters and sorts) */
   def getHtml(): js.Any = js.native
-  def getHtml(
-    rowRangeLookup: js.UndefOr[scala.Nothing],
-    style: js.UndefOr[scala.Nothing],
-    config: AddditionalExportOptions
-  ): js.Any = js.native
-  def getHtml(rowRangeLookup: js.UndefOr[scala.Nothing], style: Boolean): js.Any = js.native
-  def getHtml(rowRangeLookup: js.UndefOr[scala.Nothing], style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def getHtml(rowRangeLookup: Unit, style: Boolean): js.Any = js.native
+  def getHtml(rowRangeLookup: Unit, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def getHtml(rowRangeLookup: Unit, style: Unit, config: AddditionalExportOptions): js.Any = js.native
   def getHtml(rowRangeLookup: RowRangeLookup): js.Any = js.native
-  def getHtml(rowRangeLookup: RowRangeLookup, style: js.UndefOr[scala.Nothing], config: AddditionalExportOptions): js.Any = js.native
   def getHtml(rowRangeLookup: RowRangeLookup, style: Boolean): js.Any = js.native
   def getHtml(rowRangeLookup: RowRangeLookup, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def getHtml(rowRangeLookup: RowRangeLookup, style: Unit, config: AddditionalExportOptions): js.Any = js.native
   
   /**The getInvalidCells method returns an array of Cell Components for all cells flagged as invalid after a user edit. */
   def getInvalidCells(): js.Array[CellComponent] = js.native
@@ -411,7 +397,7 @@ trait Tabulator extends StObject {
   
   /** To get the data objects for the selected rows you can use the getSelectedData function.
     This will return an array of the selected rows data objects in the order in which they were selected */
-  def getSelectedData(): js.Array[_] = js.native
+  def getSelectedData(): js.Array[js.Any] = js.native
   
   /** To get the RowComponent's for the selected rows at any time you can use the getSelectedRows function.
     This will return an array of RowComponent's for the selected rows in the order in which they were selected. */
@@ -489,17 +475,13 @@ trait Tabulator extends StObject {
   
   /**You can use the print function to trigger a full page printing of the contents of the table without any other elements from the page */
   def print(): js.Any = js.native
-  def print(
-    rowRangeLookup: js.UndefOr[scala.Nothing],
-    style: js.UndefOr[scala.Nothing],
-    config: AddditionalExportOptions
-  ): js.Any = js.native
-  def print(rowRangeLookup: js.UndefOr[scala.Nothing], style: Boolean): js.Any = js.native
-  def print(rowRangeLookup: js.UndefOr[scala.Nothing], style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def print(rowRangeLookup: Unit, style: Boolean): js.Any = js.native
+  def print(rowRangeLookup: Unit, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def print(rowRangeLookup: Unit, style: Unit, config: AddditionalExportOptions): js.Any = js.native
   def print(rowRangeLookup: RowRangeLookup): js.Any = js.native
-  def print(rowRangeLookup: RowRangeLookup, style: js.UndefOr[scala.Nothing], config: AddditionalExportOptions): js.Any = js.native
   def print(rowRangeLookup: RowRangeLookup, style: Boolean): js.Any = js.native
   def print(rowRangeLookup: RowRangeLookup, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def print(rowRangeLookup: RowRangeLookup, style: Unit, config: AddditionalExportOptions): js.Any = js.native
   
   /**manually trigger recalculation of column calculations */
   def recalc(): Unit = js.native
@@ -523,17 +505,17 @@ trait Tabulator extends StObject {
   /** The replaceData function lets you silently replace all data in the table without updating scroll position, sort or filtering, and without triggering the ajax loading popup. This is great if you have a table you want to periodically update with new/updated information without alerting the user to a change.
     It takes the same arguments as the setData function, and behaves in the same way when loading data (ie, it can make ajax requests, parse JSON etc) */
   def replaceData(): js.Promise[Unit] = js.native
-  def replaceData(data: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], config: js.Any): js.Promise[Unit] = js.native
-  def replaceData(data: js.UndefOr[scala.Nothing], params: js.Any): js.Promise[Unit] = js.native
-  def replaceData(data: js.UndefOr[scala.Nothing], params: js.Any, config: js.Any): js.Promise[Unit] = js.native
   def replaceData(data: String): js.Promise[Unit] = js.native
-  def replaceData(data: String, params: js.UndefOr[scala.Nothing], config: js.Any): js.Promise[Unit] = js.native
   def replaceData(data: String, params: js.Any): js.Promise[Unit] = js.native
   def replaceData(data: String, params: js.Any, config: js.Any): js.Promise[Unit] = js.native
+  def replaceData(data: String, params: Unit, config: js.Any): js.Promise[Unit] = js.native
   def replaceData(data: js.Array[js.Object]): js.Promise[Unit] = js.native
-  def replaceData(data: js.Array[js.Object], params: js.UndefOr[scala.Nothing], config: js.Any): js.Promise[Unit] = js.native
   def replaceData(data: js.Array[js.Object], params: js.Any): js.Promise[Unit] = js.native
   def replaceData(data: js.Array[js.Object], params: js.Any, config: js.Any): js.Promise[Unit] = js.native
+  def replaceData(data: js.Array[js.Object], params: Unit, config: js.Any): js.Promise[Unit] = js.native
+  def replaceData(data: Unit, params: js.Any): js.Promise[Unit] = js.native
+  def replaceData(data: Unit, params: js.Any, config: js.Any): js.Promise[Unit] = js.native
+  def replaceData(data: Unit, params: Unit, config: js.Any): js.Promise[Unit] = js.native
   
   /** This will restore automatic table redrawing and trigger an appropriate redraw if one was needed as a result of any actions that happened while the redraw was blocked. */
   def restoreRedraw(): Unit = js.native
@@ -545,7 +527,7 @@ trait Tabulator extends StObject {
     The third argument is optional, and is a boolean used to set if the table should scroll if the column is already visible, true to scroll, false to not, if omitted it will be set to the value of the scrollToColumnIfVisible option, which defaults to true
     */
   def scrollToColumn(column: ColumnLookup): js.Promise[Unit] = js.native
-  def scrollToColumn(column: ColumnLookup, position: js.UndefOr[scala.Nothing], ifVisible: Boolean): js.Promise[Unit] = js.native
+  def scrollToColumn(column: ColumnLookup, position: Unit, ifVisible: Boolean): js.Promise[Unit] = js.native
   def scrollToColumn(column: ColumnLookup, position: ScrollToColumnPosition): js.Promise[Unit] = js.native
   def scrollToColumn(column: ColumnLookup, position: ScrollToColumnPosition, ifVisible: Boolean): js.Promise[Unit] = js.native
   
@@ -554,12 +536,12 @@ trait Tabulator extends StObject {
     The second argument is optional, and is used to set the position of the row, it should be a string with a value of either top, center, bottom or nearest, if omitted it will be set to the value of the scrollToRowPosition option which has a default value of top.
     The third argument is optional, and is a boolean used to set if the table should scroll if the row is already visible, true to scroll, false to not, if omitted it will be set to the value of the scrollToRowIfVisible option, which defaults to true */
   def scrollToRow(row: RowLookup): js.Promise[Unit] = js.native
-  def scrollToRow(row: RowLookup, position: js.UndefOr[scala.Nothing], ifVisible: Boolean): js.Promise[Unit] = js.native
+  def scrollToRow(row: RowLookup, position: Unit, ifVisible: Boolean): js.Promise[Unit] = js.native
   def scrollToRow(row: RowLookup, position: ScrollToRowPostition): js.Promise[Unit] = js.native
   def scrollToRow(row: RowLookup, position: ScrollToRowPostition, ifVisible: Boolean): js.Promise[Unit] = js.native
   
   /** The searchData function allows you to retreive an array of table row data that match any filters you pass in. it accepts the same arguments as the setFilter function. */
-  def searchData(field: String, `type`: FilterType, value: js.Any): js.Array[_] = js.native
+  def searchData(field: String, `type`: FilterType, value: js.Any): js.Array[js.Any] = js.native
   
   /** The searchRows function allows you to retreive an array of row components that match any filters you pass in. it accepts the same arguments as the setFilter function. */
   def searchRows(field: String, `type`: FilterType, value: js.Any): js.Array[RowComponent] = js.native
@@ -579,9 +561,9 @@ trait Tabulator extends StObject {
   def setColumns(definitions: js.Array[ColumnDefinition]): Unit = js.native
   
   def setData(data: js.Any): js.Promise[Unit] = js.native
-  def setData(data: js.Any, params: js.UndefOr[scala.Nothing], config: js.Any): js.Promise[Unit] = js.native
   def setData(data: js.Any, params: js.Any): js.Promise[Unit] = js.native
   def setData(data: js.Any, params: js.Any, config: js.Any): js.Promise[Unit] = js.native
+  def setData(data: js.Any, params: Unit, config: js.Any): js.Promise[Unit] = js.native
   
   /** By default Tabulator will only allow files with a .json extension to be loaded into the table.
     You can allow any other type of file into the file picker by passing the extension or mime type into the first argument of the setDataFromLocalFile function as a comma separated list. This argument will accept any of the values valid for the accept field of an input element */
@@ -593,95 +575,65 @@ trait Tabulator extends StObject {
     If you want to perform a more complicated filter then you can pass a callback function to the setFilter method, you can also pass an optional second argument, an object with parameters to be passed to the filter function.
     */
   def setFilter(p1: String): Unit = js.native
-  def setFilter(
-    p1: String,
-    p2: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    filterParams: FilterParams
-  ): Unit = js.native
-  def setFilter(p1: String, p2: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-  def setFilter(p1: String, p2: js.UndefOr[scala.Nothing], value: js.Any, filterParams: FilterParams): Unit = js.native
   def setFilter(p1: String, p2: js.Object): Unit = js.native
-  def setFilter(p1: String, p2: js.Object, value: js.UndefOr[scala.Nothing], filterParams: FilterParams): Unit = js.native
   def setFilter(p1: String, p2: js.Object, value: js.Any): Unit = js.native
   def setFilter(p1: String, p2: js.Object, value: js.Any, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: String, p2: js.Object, value: Unit, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: String, p2: Unit, value: js.Any): Unit = js.native
+  def setFilter(p1: String, p2: Unit, value: js.Any, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: String, p2: Unit, value: Unit, filterParams: FilterParams): Unit = js.native
   def setFilter(p1: String, p2: FilterType): Unit = js.native
-  def setFilter(p1: String, p2: FilterType, value: js.UndefOr[scala.Nothing], filterParams: FilterParams): Unit = js.native
   def setFilter(p1: String, p2: FilterType, value: js.Any): Unit = js.native
   def setFilter(p1: String, p2: FilterType, value: js.Any, filterParams: FilterParams): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter]): Unit = js.native
-  def setFilter(
-    p1: js.Array[_ | Filter],
-    p2: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    filterParams: FilterParams
-  ): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: js.UndefOr[scala.Nothing], value: js.Any, filterParams: FilterParams): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: js.Object): Unit = js.native
-  def setFilter(
-    p1: js.Array[_ | Filter],
-    p2: js.Object,
-    value: js.UndefOr[scala.Nothing],
-    filterParams: FilterParams
-  ): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: js.Object, value: js.Any): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: js.Object, value: js.Any, filterParams: FilterParams): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: FilterType): Unit = js.native
-  def setFilter(
-    p1: js.Array[_ | Filter],
-    p2: FilterType,
-    value: js.UndefOr[scala.Nothing],
-    filterParams: FilterParams
-  ): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: FilterType, value: js.Any): Unit = js.native
-  def setFilter(p1: js.Array[_ | Filter], p2: FilterType, value: js.Any, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: String, p2: FilterType, value: Unit, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter]): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: js.Object): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: js.Object, value: js.Any): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: js.Object, value: js.Any, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: js.Object, value: Unit, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: Unit, value: js.Any): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: Unit, value: js.Any, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: Unit, value: Unit, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: FilterType): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: FilterType, value: js.Any): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: FilterType, value: js.Any, filterParams: FilterParams): Unit = js.native
+  def setFilter(p1: js.Array[js.Any | Filter], p2: FilterType, value: Unit, filterParams: FilterParams): Unit = js.native
   def setFilter(p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean]): Unit = js.native
-  def setFilter(
-    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
-    p2: js.UndefOr[scala.Nothing],
-    value: js.UndefOr[scala.Nothing],
-    filterParams: FilterParams
-  ): Unit = js.native
-  def setFilter(
-    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
-    p2: js.UndefOr[scala.Nothing],
-    value: js.Any
-  ): Unit = js.native
-  def setFilter(
-    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
-    p2: js.UndefOr[scala.Nothing],
-    value: js.Any,
-    filterParams: FilterParams
-  ): Unit = js.native
   def setFilter(p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean], p2: js.Object): Unit = js.native
   def setFilter(
     p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
     p2: js.Object,
-    value: js.UndefOr[scala.Nothing],
-    filterParams: FilterParams
-  ): Unit = js.native
-  def setFilter(
-    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
-    p2: js.Object,
     value: js.Any
   ): Unit = js.native
   def setFilter(
     p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
     p2: js.Object,
     value: js.Any,
+    filterParams: FilterParams
+  ): Unit = js.native
+  def setFilter(
+    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
+    p2: js.Object,
+    value: Unit,
+    filterParams: FilterParams
+  ): Unit = js.native
+  def setFilter(p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean], p2: Unit, value: js.Any): Unit = js.native
+  def setFilter(
+    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
+    p2: Unit,
+    value: js.Any,
+    filterParams: FilterParams
+  ): Unit = js.native
+  def setFilter(
+    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
+    p2: Unit,
+    value: Unit,
     filterParams: FilterParams
   ): Unit = js.native
   def setFilter(p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean], p2: FilterType): Unit = js.native
   def setFilter(
     p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
     p2: FilterType,
-    value: js.UndefOr[scala.Nothing],
-    filterParams: FilterParams
-  ): Unit = js.native
-  def setFilter(
-    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
-    p2: FilterType,
     value: js.Any
   ): Unit = js.native
   def setFilter(
@@ -690,12 +642,18 @@ trait Tabulator extends StObject {
     value: js.Any,
     filterParams: FilterParams
   ): Unit = js.native
+  def setFilter(
+    p1: js.Function2[/* data */ js.Any, /* filterParams */ js.Any, Boolean],
+    p2: FilterType,
+    value: Unit,
+    filterParams: FilterParams
+  ): Unit = js.native
   
   /** You can use the setGroupBy function to change the fields that rows are grouped by. This function has one argument and takes the same values as passed to the groupBy setup option. */
   def setGroupBy(groups: String): Unit = js.native
-  def setGroupBy(groups: js.Function1[/* data */ js.Any, _]): Unit = js.native
+  def setGroupBy(groups: js.Function1[/* data */ js.Any, js.Any]): Unit = js.native
   
-  def setGroupHeader(values: js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]]): Unit = js.native
+  def setGroupHeader(values: js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]]): Unit = js.native
   /** You can use the setGroupHeader function to change the header generation function for each group. This function has one argument and takes the same values as passed to the groupHeader setup option. */
   def setGroupHeader(
     values: js.Function4[
@@ -817,21 +775,20 @@ trait Tabulator extends StObject {
 }
 object Tabulator {
   
-  @js.native
   trait AddditionalExportOptions extends StObject {
     
-    var columnCalcs: js.UndefOr[Boolean] = js.native
+    var columnCalcs: js.UndefOr[Boolean] = js.undefined
     
-    var columnGroups: js.UndefOr[Boolean] = js.native
+    var columnGroups: js.UndefOr[Boolean] = js.undefined
     
-    var columnHeaders: js.UndefOr[Boolean] = js.native
+    var columnHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var dataTree: js.UndefOr[Boolean] = js.native
+    var dataTree: js.UndefOr[Boolean] = js.undefined
     
     /**Show only raw unformatted cell values in the clipboard output */
-    var formatCells: js.UndefOr[Boolean] = js.native
+    var formatCells: js.UndefOr[Boolean] = js.undefined
     
-    var rowGroups: js.UndefOr[Boolean] = js.native
+    var rowGroups: js.UndefOr[Boolean] = js.undefined
   }
   object AddditionalExportOptions {
     
@@ -882,16 +839,15 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait AjaxConfig extends StObject {
     
-    var credentials: js.UndefOr[String] = js.native
+    var credentials: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[JSONRecord] = js.native
+    var headers: js.UndefOr[JSONRecord] = js.undefined
     
-    var method: js.UndefOr[HttpMethod] = js.native
+    var method: js.UndefOr[HttpMethod] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
   }
   object AjaxConfig {
     
@@ -930,12 +886,11 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait AjaxContentType extends StObject {
     
-    def body(url: String, config: js.Any, params: js.Any): js.Any = js.native
+    def body(url: String, config: js.Any, params: js.Any): js.Any
     
-    var headers: JSONRecord = js.native
+    var headers: JSONRecord
   }
   object AjaxContentType {
     
@@ -978,19 +933,19 @@ object Tabulator {
     def right: typings.tabulatorTables.tabulatorTablesStrings.right = "right".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.right]
   }
   
-  @js.native
   trait AutoCompleteParams
-    extends SharedEditorParams
+    extends StObject
+       with SharedEditorParams
        with SharedSelectAutoCompleteEditorParams
        with _EditorParams {
     
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var emptyPlaceholder: js.UndefOr[String | HTMLElement] = js.native
+    var emptyPlaceholder: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var freetext: js.UndefOr[Boolean] = js.native
+    var freetext: js.UndefOr[Boolean] = js.undefined
     
-    var listItemFormatter: js.UndefOr[js.Function2[/* value */ String, /* text */ String, String]] = js.native
+    var listItemFormatter: js.UndefOr[js.Function2[/* value */ String, /* text */ String, String]] = js.undefined
     
     var searchFunc: js.UndefOr[
         js.Function2[
@@ -998,22 +953,22 @@ object Tabulator {
           /* values */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**If you return a promise from the searchFunc callback then a "Searching..." placeholder will be displayed until the promise resolved.
       You can customise this placeholder using the searchingPlaceholder option. */
-    var searchingPlaceholder: js.UndefOr[String | HTMLElement] = js.native
+    var searchingPlaceholder: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var showListOnEmpty: js.UndefOr[Boolean] = js.native
+    var showListOnEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var values: `true` | (js.Array[_ | String]) | JSONRecord | String = js.native
+    var values: `true` | (js.Array[js.Any | String]) | JSONRecord | String
     
-    var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.native
+    var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.undefined
   }
   object AutoCompleteParams {
     
     @scala.inline
-    def apply(values: `true` | (js.Array[_ | String]) | JSONRecord | String): AutoCompleteParams = {
+    def apply(values: `true` | (js.Array[js.Any | String]) | JSONRecord | String): AutoCompleteParams = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoCompleteParams]
     }
@@ -1066,7 +1021,7 @@ object Tabulator {
       def setShowListOnEmptyUndefined: Self = StObject.set(x, "showListOnEmpty", js.undefined)
       
       @scala.inline
-      def setValues(value: `true` | (js.Array[_ | String]) | JSONRecord | String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: `true` | (js.Array[js.Any | String]) | JSONRecord | String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesVarargs(value: (js.Any | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
@@ -1100,52 +1055,51 @@ object Tabulator {
     def getTable(): Tabulator = js.native
   }
   
-  @js.native
   trait CellCallbacks extends StObject {
     
     // Cell Events
     /** callback for when user clicks on a cell in this column  */
-    var cellClick: js.UndefOr[CellEventCallback] = js.native
+    var cellClick: js.UndefOr[CellEventCallback] = js.undefined
     
     /** callback for when user right clicks on a cell in this column */
-    var cellContext: js.UndefOr[CellEventCallback] = js.native
+    var cellContext: js.UndefOr[CellEventCallback] = js.undefined
     
     /**  callback for when user double clicks on a cell in this column */
-    var cellDblClick: js.UndefOr[CellEventCallback] = js.native
+    var cellDblClick: js.UndefOr[CellEventCallback] = js.undefined
     
     /**  callback for when user double taps on a cell in this column, triggered in touch displays when a user taps the same cell twice in under 300ms.  */
-    var cellDblTap: js.UndefOr[CellEventCallback] = js.native
+    var cellDblTap: js.UndefOr[CellEventCallback] = js.undefined
     
     /**  callback for when an edit on a cell in this column is aborted by the user  */
-    var cellEditCancelled: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEditCancelled: js.UndefOr[CellEditEventCallback] = js.undefined
     
     /** callback for when a cell in this column has been edited by the user */
-    var cellEdited: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEdited: js.UndefOr[CellEditEventCallback] = js.undefined
     
     // Cell editing
     /** callback for when a cell in this column is being edited by the user */
-    var cellEditing: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEditing: js.UndefOr[CellEditEventCallback] = js.undefined
     
     /** callback for when the mouse pointer enters a cell */
-    var cellMouseEnter: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseEnter: js.UndefOr[CellEventCallback] = js.undefined
     
     /**  callback for when the mouse pointer leaves a cell */
-    var cellMouseLeave: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseLeave: js.UndefOr[CellEventCallback] = js.undefined
     
     /** callback for when the mouse pointer moves over a cell  */
-    var cellMouseMove: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseMove: js.UndefOr[CellEventCallback] = js.undefined
     
     /** callback for when the mouse pointer enters a cell or one of its child elements */
-    var cellMouseOut: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseOut: js.UndefOr[CellEventCallback] = js.undefined
     
     /**  callback for when the mouse pointer enters a cell or one of its child elements */
-    var cellMouseOver: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseOver: js.UndefOr[CellEventCallback] = js.undefined
     
     /** callback for when user taps on a cell in this column, triggered in touch displays.  */
-    var cellTap: js.UndefOr[CellEventCallback] = js.native
+    var cellTap: js.UndefOr[CellEventCallback] = js.undefined
     
     /**  callback for when user taps and holds on a cell in this column, triggered in touch displays when a user taps and holds the same cell for 1 second.*/
-    var cellTapHold: js.UndefOr[CellEventCallback] = js.native
+    var cellTapHold: js.UndefOr[CellEventCallback] = js.undefined
   }
   object CellCallbacks {
     
@@ -1316,26 +1270,25 @@ object Tabulator {
   type CellEventCallback = js.Function2[/* e */ UIEvent, /* cell */ CellComponent, Unit]
   
   // Components-------------------------------------------------------------------
-  @js.native
   trait CellNavigation extends StObject {
     
     /** down - move to the same cell in the row below */
-    def down(): Unit = js.native
+    def down(): Unit
     
     /** left - next editable cell on the left, return false if none available on row */
-    def left(): Boolean = js.native
+    def left(): Boolean
     
     /** next - next editable cell on the right, if none available move to left most editable cell on the row below */
-    def next(): Boolean = js.native
+    def next(): Boolean
     
     /** prev - next editable cell on the left, if none available move to the right most editable cell on the row above */
-    def prev(): Boolean = js.native
+    def prev(): Boolean
     
     /** right - next editable cell on the right, return false if none available on row */
-    def right(): Boolean = js.native
+    def right(): Boolean
     
     /** up - move to the same cell in the row above */
-    def up(): Unit = js.native
+    def up(): Unit
   }
   object CellNavigation {
     
@@ -1375,15 +1328,15 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait CheckboxParams
-    extends SharedEditorParams
+    extends StObject
+       with SharedEditorParams
        with _EditorParams {
     
-    var indeterminateValue: js.UndefOr[String] = js.native
+    var indeterminateValue: js.UndefOr[String] = js.undefined
     
     // tick
-    var tristate: js.UndefOr[Boolean] = js.native
+    var tristate: js.UndefOr[Boolean] = js.undefined
   }
   object CheckboxParams {
     
@@ -1435,7 +1388,9 @@ object Tabulator {
   type ColumnCalcParams = js.Function2[/* values */ js.Any, /* data */ js.Any, js.Any]
   
   @js.native
-  trait ColumnComponent extends _ColumnLookup {
+  trait ColumnComponent
+    extends StObject
+       with _ColumnLookup {
     
     /** The delete function deletes the column, removing it from the table*/
     def delete(): js.Promise[Unit] = js.native
@@ -1514,125 +1469,125 @@ object Tabulator {
     def validate(): `true` | js.Array[CellComponent] = js.native
   }
   
-  @js.native
   trait ColumnDefinition
-    extends ColumnLayout
+    extends StObject
+       with ColumnLayout
        with CellCallbacks
        with _ColumnLookup {
     
     /**  Accessors are used to alter data as it is extracted from the table, through commands, the clipboard, or download.
       You can set accessors on a per column basis using the accessor option in the column definition object.*/
-    var accessor: js.UndefOr[CustomAccessor] = js.native
+    var accessor: js.UndefOr[CustomAccessor] = js.undefined
     
     /** only called when data is being copied into the clipboard. */
-    var accessorClipboard: js.UndefOr[CustomAccessor] = js.native
+    var accessorClipboard: js.UndefOr[CustomAccessor] = js.undefined
     
     /**  additional parameters you can pass to the accessorClipboard*/
-    var accessorClipboardParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorClipboardParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
     /** only called when data is being converted into a downloadable file. */
-    var accessorDownload: js.UndefOr[CustomAccessor] = js.native
+    var accessorDownload: js.UndefOr[CustomAccessor] = js.undefined
     
     /** additional parameters you can pass to the accessorDownload */
-    var accessorDownloadParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorDownloadParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
     /**You can use the accessorHtmlOutput and accessorHtmlOutputParams options on a column definition to alter the value of data in a column before the html is generated. */
-    var accessorHtmlOutput: js.UndefOr[CustomAccessor] = js.native
+    var accessorHtmlOutput: js.UndefOr[CustomAccessor] = js.undefined
     
-    var accessorHtmlOutputParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorHtmlOutputParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
     /**  Each accessor function has its own matching params option, for example accessorDownload has accessorDownloadParams.*/
-    var accessorParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
     /**You can use the accessorPrint and accessorPrintParams options on a column definition to alter the value of data in a column before it is printed */
-    var accessorPrint: js.UndefOr[CustomAccessor] = js.native
+    var accessorPrint: js.UndefOr[CustomAccessor] = js.undefined
     
-    var accessorPrintParams: js.UndefOr[CustomAccessorParams] = js.native
+    var accessorPrintParams: js.UndefOr[CustomAccessorParams] = js.undefined
     
-    var bottomCalc: js.UndefOr[ColumnCalc] = js.native
+    var bottomCalc: js.UndefOr[ColumnCalc] = js.undefined
     
-    var bottomCalcFormatter: js.UndefOr[Formatter] = js.native
+    var bottomCalcFormatter: js.UndefOr[Formatter] = js.undefined
     
     /**  additional parameters you can pass to the bottomCalcFormatter function */
-    var bottomCalcFormatterParams: js.UndefOr[FormatterParams] = js.native
+    var bottomCalcFormatterParams: js.UndefOr[FormatterParams] = js.undefined
     
-    var bottomCalcParams: js.UndefOr[ColumnCalcParams] = js.native
+    var bottomCalcParams: js.UndefOr[ColumnCalcParams] = js.undefined
     
-    var clickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.native
+    var clickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
     
     /** If you don't want to show a particular column in the clipboard output you can set the clipboard property in its column definition object to false */
-    var clipboard: js.UndefOr[Boolean] = js.native
+    var clipboard: js.UndefOr[Boolean] = js.undefined
     
     /** A column can be a "group" of columns (Example: group header column -> Measurements, grouped column -> Length, Width, Height) */
-    var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
     
     /**You can add a right click context menu to any columns cells by passing an array of menu items to the contextMenu option in that columns definition. */
-    var contextMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.native
+    var contextMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
     
     /** sets css classes on header and cells in this column. (value should be a string containing space separated class names) */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** show or hide column in downloaded data */
-    var download: js.UndefOr[Boolean] = js.native
+    var download: js.UndefOr[Boolean] = js.undefined
     
     /**  There are some circumstances where you may want to block editibility of a cell for one reason or another. To meet this need you can use the editable option. This lets you set a callback that is executed before the editor is built, if this callback returns true the editor is added, if it returns false the edit is aborted and the cell remains a non editable cell. The function is passed one parameter, the CellComponent of the cell about to be edited. You can also pass a boolean value instead of a function to this property.*/
-    var editable: js.UndefOr[Boolean | (js.Function1[/* cell */ CellComponent, Boolean])] = js.native
+    var editable: js.UndefOr[Boolean | (js.Function1[/* cell */ CellComponent, Boolean])] = js.undefined
     
     /** allows the user to edit the header titles */
-    var editableTitle: js.UndefOr[Boolean] = js.native
+    var editableTitle: js.UndefOr[Boolean] = js.undefined
     
     /** When a user clicks on an editable column the will be able to edit the value for that cell.
       By default Tabulator will use an editor that matches the current formatter for that cell. if you wish to specify a specific editor, you can set them per column using the editor option in the column definition. Passing a value of true to this option will result in Tabulator applying the editor that best matches the columns formatter, if present.
       You can pass an optional additional parameter with the editor, editorParams that should contain an object with additional information for configuring the editor. */
-    var editor: js.UndefOr[Editor] = js.native
+    var editor: js.UndefOr[Editor] = js.undefined
     
     /** additional parameters you can pass to the editor   */
-    var editorParams: js.UndefOr[EditorParams] = js.native
+    var editorParams: js.UndefOr[EditorParams] = js.undefined
     
     /**  set how you would like the data to be formatted*/
-    var formatter: js.UndefOr[Formatter] = js.native
+    var formatter: js.UndefOr[Formatter] = js.undefined
     
     /**When copying to the clipboard you may want to apply a different formatter from the one usualy used to format the cell, you can do this using the formatterClipboard column definition option. You can use the formatterClipboardParams to pass in any additional params to the formatter */
-    var formatterClipboard: js.UndefOr[Formatter | `false`] = js.native
+    var formatterClipboard: js.UndefOr[Formatter | `false`] = js.undefined
     
-    var formatterClipboardParams: js.UndefOr[FormatterParams] = js.native
+    var formatterClipboardParams: js.UndefOr[FormatterParams] = js.undefined
     
     /**When the getHtml function is called you may want to apply a different formatter from the one usualy used to format the cell, you can do this using the formatterHtmlOutput column definition option */
-    var formatterHtmlOutput: js.UndefOr[Formatter | `false`] = js.native
+    var formatterHtmlOutput: js.UndefOr[Formatter | `false`] = js.undefined
     
-    var formatterHtmlOutputParams: js.UndefOr[FormatterParams] = js.native
+    var formatterHtmlOutputParams: js.UndefOr[FormatterParams] = js.undefined
     
     /**  You can pass an optional additional parameter with the formatter, formatterParams that should contain an object with additional information for configuring the formatter.*/
-    var formatterParams: js.UndefOr[FormatterParams] = js.native
+    var formatterParams: js.UndefOr[FormatterParams] = js.undefined
     
     /**When printing you may want to apply a different formatter from the one usualy used to format the cell, you can do this using the formatterPrint column definition option. You can use the formatterPrintParams to pass in any additional params to the formatter */
-    var formatterPrint: js.UndefOr[Formatter | `false`] = js.native
+    var formatterPrint: js.UndefOr[Formatter | `false`] = js.undefined
     
-    var formatterPrintParams: js.UndefOr[FormatterParams] = js.native
+    var formatterPrintParams: js.UndefOr[FormatterParams] = js.undefined
     
     /** You can freeze the position of columns on the left and right of the table using the frozen property in the column definition array. This will keep the column still when the table is scrolled horizontally. */
-    var frozen: js.UndefOr[Boolean] = js.native
+    var frozen: js.UndefOr[Boolean] = js.undefined
     
     /**   callback for when user clicks on the header for this column*/
-    var headerClick: js.UndefOr[ColumnEventCallback] = js.native
+    var headerClick: js.UndefOr[ColumnEventCallback] = js.undefined
     
     /** callback for when user right clicks on the header for this column  */
-    var headerContext: js.UndefOr[ColumnEventCallback] = js.native
+    var headerContext: js.UndefOr[ColumnEventCallback] = js.undefined
     
     /**You can add a right click context menu to any column by passing an array of menu items to the headerContextMenu option in that columns definition. */
-    var headerContextMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.native
+    var headerContextMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.undefined
     
     /**  callback for when user double clicks on the header for this column */
-    var headerDblClick: js.UndefOr[ColumnEventCallback] = js.native
+    var headerDblClick: js.UndefOr[ColumnEventCallback] = js.undefined
     
     /** callback for when user double taps on a header for this column, triggered in touch displays when a user taps the same header twice in under 300ms */
-    var headerDblTap: js.UndefOr[ColumnEventCallback] = js.native
+    var headerDblTap: js.UndefOr[ColumnEventCallback] = js.undefined
     
     /**  filtering of columns from elements in the header */
-    var headerFilter: js.UndefOr[Editor] = js.native
+    var headerFilter: js.UndefOr[Editor] = js.undefined
     
     /**  function to check when the header filter is empty */
-    var headerFilterEmptyCheck: js.UndefOr[ValueBooleanCallback] = js.native
+    var headerFilterEmptyCheck: js.UndefOr[ValueBooleanCallback] = js.undefined
     
     /**  By default Tabulator will try and match the comparison type to the type of element used for the header filter.
       Standard input elements will use the "like" filter, this allows for the matches to be displayed as the user types.
@@ -1646,98 +1601,98 @@ object Tabulator {
           /* filterparams */ js.Any, 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**  additional parameters object passed to the headerFilterFunc function  */
-    var headerFilterFuncParams: js.UndefOr[js.Any] = js.native
+    var headerFilterFuncParams: js.UndefOr[js.Any] = js.undefined
     
     /** disable live filtering of the table  */
-    var headerFilterLiveFilter: js.UndefOr[Boolean] = js.native
+    var headerFilterLiveFilter: js.UndefOr[Boolean] = js.undefined
     
     /** additional parameters you can pass to the header filter */
-    var headerFilterParams: js.UndefOr[EditorParams] = js.native
+    var headerFilterParams: js.UndefOr[EditorParams] = js.undefined
     
     /**  placeholder text for the header filter */
-    var headerFilterPlaceholder: js.UndefOr[String] = js.native
+    var headerFilterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var headerHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.native
+    var headerHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
     
     /**You can add a menu to any column by passing an array of menu items to the headerMenu option in that columns definition. */
-    var headerMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.native
+    var headerMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.undefined
     
     // Column Header
     /** By default all columns in a table are sortable by clicking on the column header, if you want to disable this behaviour, set the headerSort property to false in the column definition array: */
-    var headerSort: js.UndefOr[Boolean] = js.native
+    var headerSort: js.UndefOr[Boolean] = js.undefined
     
     /** set the starting sort direction when a user first clicks on a header */
-    var headerSortStartingDir: js.UndefOr[SortDirection] = js.native
+    var headerSortStartingDir: js.UndefOr[SortDirection] = js.undefined
     
     /** allow tristate toggling of column header sort direction */
-    var headerSortTristate: js.UndefOr[Boolean] = js.native
+    var headerSortTristate: js.UndefOr[Boolean] = js.undefined
     
     /**  callback for when user taps on a header for this column, triggered in touch displays. */
-    var headerTap: js.UndefOr[ColumnEventCallback] = js.native
+    var headerTap: js.UndefOr[ColumnEventCallback] = js.undefined
     
     /** callback for when user taps and holds on a header for this column, triggered in touch displays when a user taps and holds the same header for 1 second. */
-    var headerTapHold: js.UndefOr[ColumnEventCallback] = js.native
+    var headerTapHold: js.UndefOr[ColumnEventCallback] = js.undefined
     
     /** sets the on hover tooltip for the column header* * The tooltip headerTooltip can take three different types of value
       boolean - a value of false disables the tooltip, a value of true sets the tooltip of the column header to its title value.
       string - a string that will be displayed for the tooltip.
       function - a callback function that returns the string for the column header*
       */
-    var headerTooltip: js.UndefOr[Boolean | String | (js.Function1[/* column */ ColumnComponent, String])] = js.native
+    var headerTooltip: js.UndefOr[Boolean | String | (js.Function1[/* column */ ColumnComponent, String])] = js.undefined
     
     /** change the orientation of the column header to vertical* * The headerVertical property can take one of three values:
       false - vertical columns disabled (default value)
       true - vertical columns enabled
       "flip" - vertical columns enabled, with text direction flipped by 180 degrees*
       */
-    var headerVertical: js.UndefOr[Boolean | flip] = js.native
+    var headerVertical: js.UndefOr[Boolean | flip] = js.undefined
     
     /** When the getHtml function is called, hide the column from the output. */
-    var hideInHtml: js.UndefOr[Boolean] = js.native
+    var hideInHtml: js.UndefOr[Boolean] = js.undefined
     
     /**If you want to set the horizontal alignment on a column by column basis, */
-    var hozAlign: js.UndefOr[ColumnDefinitionAlign] = js.native
+    var hozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
     
     /** Show/Hide a particular column in the HTML output*/
-    var htmlOutput: js.UndefOr[Boolean] = js.native
+    var htmlOutput: js.UndefOr[Boolean] = js.undefined
     
     /** sets the minimum width of this column, this should be set in pixels (this takes priority over the global option of columnMinWidth) */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /** Mutators are used to alter data as it is parsed into Tabulator. For example if you wanted to convert a numeric column into a boolean based on its value, before the data is used to build the table.
       You can set mutators on a per column basis using the mutator option in the column definition object.
       You can pass an optional additional parameter with mutator, mutatorParams that should contain an object with additional information for configuring the mutator. */
-    var mutator: js.UndefOr[CustomMutator] = js.native
+    var mutator: js.UndefOr[CustomMutator] = js.undefined
     
     /** only called when data is changed via a user editing a cell. */
-    var mutatorClipboard: js.UndefOr[CustomMutator] = js.native
+    var mutatorClipboard: js.UndefOr[CustomMutator] = js.undefined
     
-    var mutatorClipboardParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorClipboardParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
     /**  only called when data is loaded via a command {eg. setData). */
-    var mutatorData: js.UndefOr[CustomMutator] = js.native
+    var mutatorData: js.UndefOr[CustomMutator] = js.undefined
     
-    var mutatorDataParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorDataParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
     /** only called when data is changed via a user editing a cell. */
-    var mutatorEdit: js.UndefOr[CustomMutator] = js.native
+    var mutatorEdit: js.UndefOr[CustomMutator] = js.undefined
     
-    var mutatorEditParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorEditParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
     /** You can pass an optional additional parameter with mutator, mutatorParams that should contain an object with additional information for configuring the mutator. */
-    var mutatorParams: js.UndefOr[CustomMutatorParams] = js.native
+    var mutatorParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
     /** set whether column can be resized by user dragging its edges */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /** an integer to determine when the column should be hidden in responsive mode */
-    var responsive: js.UndefOr[Double] = js.native
+    var responsive: js.UndefOr[Double] = js.undefined
     
     /** sets the column as a row handle, allowing it to be used to drag movable rows. */
-    var rowHandle: js.UndefOr[Boolean] = js.native
+    var rowHandle: js.UndefOr[Boolean] = js.undefined
     
     // Data Manipulation
     /**  By default Tabulator will attempt to guess which sorter should be applied to a column based on the data contained in the first row. It can determine sorters for strings, numbers, alphanumeric sequences and booleans, anything else will be treated as a string.
@@ -1754,28 +1709,28 @@ object Tabulator {
           /* sorterParams */ js.Object, 
           Double
         ])
-      ] = js.native
+      ] = js.undefined
     
     /** If you want to dynamically generate the sorterParams at the time the sort is called you can pass a function into the property that should return the params object. */
-    var sorterParams: js.UndefOr[ColumnDefinitionSorterParams | ColumnSorterParamLookupFunction] = js.native
+    var sorterParams: js.UndefOr[ColumnDefinitionSorterParams | ColumnSorterParamLookupFunction] = js.undefined
     
     /**When copying to clipboard you may want to apply a different columnheader title from the one usualy used in the table. You can now do this using the titleClipboard column definition option, which takes the same inputs as the standard title property. */
-    var titleClipboard: js.UndefOr[String] = js.native
+    var titleClipboard: js.UndefOr[String] = js.undefined
     
     /** set custom title for column in download */
-    var titleDownload: js.UndefOr[String] = js.native
+    var titleDownload: js.UndefOr[String] = js.undefined
     
     /**  formatter function for header title */
-    var titleFormatter: js.UndefOr[Formatter] = js.native
+    var titleFormatter: js.UndefOr[Formatter] = js.undefined
     
     /** additional parameters you can pass to the header title formatter */
-    var titleFormatterParams: js.UndefOr[FormatterParams] = js.native
+    var titleFormatterParams: js.UndefOr[FormatterParams] = js.undefined
     
     /**When the getHtml function is called you may want to apply a different columnheader title from the one usualy used in the table. You can now do this using the titleHtmlOutput column definition option, which takes the same inputs as the standard title property. */
-    var titleHtmlOutput: js.UndefOr[String] = js.native
+    var titleHtmlOutput: js.UndefOr[String] = js.undefined
     
     /**When printing you may want to apply a different columnheader title from the one usualy used in the table. You can now do this using the titlePrint column definition option, which takes the same inputs as the standard title property. */
-    var titlePrint: js.UndefOr[String] = js.native
+    var titlePrint: js.UndefOr[String] = js.undefined
     
     /** sets the on hover tooltip for each cell in this column * * The tooltip parameter can take three different types of value
       boolean - a value of false disables the tooltip, a value of true sets the tooltip of the cell to its value
@@ -1783,37 +1738,37 @@ object Tabulator {
       function - a callback function that returns the string for the cell
       * Note: setting a tooltip value on a column will override the global setting.
       */
-    var tooltip: js.UndefOr[String | GlobalTooltipOption] = js.native
+    var tooltip: js.UndefOr[String | GlobalTooltipOption] = js.undefined
     
     /**  the column calculation to be displayed at the top of this column(see Column Calculations for more details) */
-    var topCalc: js.UndefOr[ColumnCalc] = js.native
+    var topCalc: js.UndefOr[ColumnCalc] = js.undefined
     
     /** formatter for the topCalc calculation cell  */
-    var topCalcFormatter: js.UndefOr[Formatter] = js.native
+    var topCalcFormatter: js.UndefOr[Formatter] = js.undefined
     
     /**  additional parameters you can pass to the topCalcFormatter function */
-    var topCalcFormatterParams: js.UndefOr[FormatterParams] = js.native
+    var topCalcFormatterParams: js.UndefOr[FormatterParams] = js.undefined
     
     /** additional parameters you can pass to the topCalc calculation function (see Column Calculations for more details) */
-    var topCalcParams: js.UndefOr[ColumnCalcParams] = js.native
+    var topCalcParams: js.UndefOr[ColumnCalcParams] = js.undefined
     
     /** Validators are used to ensure that any user input into your editable cells matches your requirements.
       Validators can be applied by using the validator property in a columns definition object (see Define Columns for more details). */
     var validator: js.UndefOr[
         StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator | String
-      ] = js.native
+      ] = js.undefined
     
     /** alter the row height to fit the contents of the cell instead of hiding overflow */
-    var variableHeight: js.UndefOr[Boolean] = js.native
+    var variableHeight: js.UndefOr[Boolean] = js.undefined
     
     /**If you want to set the vertical alignment on a column by column basis */
-    var vertAlign: js.UndefOr[VerticalAlign] = js.native
+    var vertAlign: js.UndefOr[VerticalAlign] = js.undefined
     
     /** The widthGrow property should be used on columns without a width property set. The value is used to work out what fraction of the available will be allocated to the column. The value should be set to a number greater than 0, by default any columns with no width set have a widthGrow value of 1 */
-    var widthGrow: js.UndefOr[Double] = js.native
+    var widthGrow: js.UndefOr[Double] = js.undefined
     
     /** The widthShrink property should be used on columns with a width property set. The value is used to work out how to shrink columns with a fixed width when the table is too narrow to fit in all the columns. The value should be set to a number greater than 0, by default columns with a width set have a widthShrink value of 0, meaning they will not be shrunk if the table gets too narrow, and may cause the horizontal scrollbar to appear. */
-    var widthShrink: js.UndefOr[Double] = js.native
+    var widthShrink: js.UndefOr[Double] = js.undefined
   }
   object ColumnDefinition {
     
@@ -2572,16 +2527,15 @@ object Tabulator {
     def right: typings.tabulatorTables.tabulatorTablesStrings.right = "right".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.right]
   }
   
-  @js.native
   trait ColumnDefinitionSorterParams extends StObject {
     
-    var alignEmptyValues: js.UndefOr[top | bottom] = js.native
+    var alignEmptyValues: js.UndefOr[top | bottom] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String | Boolean] = js.native
+    var locale: js.UndefOr[String | Boolean] = js.undefined
     
-    var `type`: js.UndefOr[length | sum | max | min | avg] = js.native
+    var `type`: js.UndefOr[length | sum | max | min | avg] = js.undefined
   }
   object ColumnDefinitionSorterParams {
     
@@ -2622,20 +2576,19 @@ object Tabulator {
   
   type ColumnEventCallback = js.Function2[/* e */ UIEvent, /* column */ ColumnComponent, Unit]
   
-  @js.native
   trait ColumnLayout extends StObject {
     
     /** field - Required (not required in icon/button columns) this is the key for this column in the data array*/
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** title - Required This is the title that will be displayed in the header for this column */
-    var title: String = js.native
+    var title: String
     
     /** visible - (boolean, default - true) determines if the column is visible. (see Column Visibility for more details */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** sets the width of this column, this can be set in pixels or as a percentage of total table width (if not set the system will determine the best) */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object ColumnLayout {
     
@@ -2718,17 +2671,18 @@ object Tabulator {
   ])
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.tabulatorTables.Tabulator._FormatterParams because Already inherited */ @js.native
-  trait DateTimeDifferenceParams extends DateTimeParams {
+  - typings.tabulatorTables.Tabulator._FormatterParams because Already inherited */ trait DateTimeDifferenceParams
+    extends StObject
+       with DateTimeParams {
     
     // Date Time Difference
-    var date: js.UndefOr[js.Any] = js.native
+    var date: js.UndefOr[js.Any] = js.undefined
     
-    var humanize: js.UndefOr[Boolean] = js.native
+    var humanize: js.UndefOr[Boolean] = js.undefined
     
-    var suffix: js.UndefOr[Boolean] = js.native
+    var suffix: js.UndefOr[Boolean] = js.undefined
     
-    var unit: js.UndefOr[years | months | weeks | days | hours | minutes | seconds] = js.native
+    var unit: js.UndefOr[years | months | weeks | days | hours | minutes | seconds] = js.undefined
   }
   object DateTimeDifferenceParams {
     
@@ -2767,17 +2721,18 @@ object Tabulator {
     }
   }
   
-  @js.native
-  trait DateTimeParams extends _FormatterParams {
+  trait DateTimeParams
+    extends StObject
+       with _FormatterParams {
     
     // datetime
-    var inputFormat: js.UndefOr[String] = js.native
+    var inputFormat: js.UndefOr[String] = js.undefined
     
-    var invalidPlaceholder: js.UndefOr[`true` | String | Double | ValueStringCallback] = js.native
+    var invalidPlaceholder: js.UndefOr[`true` | String | Double | ValueStringCallback] = js.undefined
     
-    var outputFormat: js.UndefOr[String] = js.native
+    var outputFormat: js.UndefOr[String] = js.undefined
     
-    var timezone: js.UndefOr[String] = js.native
+    var timezone: js.UndefOr[String] = js.undefined
   }
   object DateTimeParams {
     
@@ -2819,14 +2774,13 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait DownloadCSV extends StObject {
     
     /** If you need the output CSV to include a byte order mark (BOM) to ensure that output with UTF-8 characters can be correctly interpereted across didfferent applications, you should set the bom option to true */
-    var bom: js.UndefOr[Boolean] = js.native
+    var bom: js.UndefOr[Boolean] = js.undefined
     
     /** By default CSV files are created using a comma (,) delimiter. If you need to change this for any reason the you can pass the options object with a delimiter property to the download function which will then use this delimiter instead of the comma. */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
   }
   object DownloadCSV {
     
@@ -2853,11 +2807,10 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait DownloadHTML extends StObject {
     
     /** By default the HTML output is a simple unstyled table. if you would like to match the current table styling you can set the style property to true  */
-    var style: js.UndefOr[Boolean] = js.native
+    var style: js.UndefOr[Boolean] = js.undefined
   }
   object DownloadHTML {
     
@@ -2879,23 +2832,23 @@ object Tabulator {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.tabulatorTables.Tabulator.DownloadPDF because var conflicts: documentProcessing. Inlined orientation, title, rowGroupStyles, rowCalcStyles, jsPDF, autoTable */ @js.native
-  trait DownloadOptions
-    extends DownloadCSV
+  - typings.tabulatorTables.Tabulator.DownloadPDF because var conflicts: documentProcessing. Inlined orientation, title, rowGroupStyles, rowCalcStyles, jsPDF, autoTable */ trait DownloadOptions
+    extends StObject
+       with DownloadCSV
        with DownloadXLXS
        with DownloadHTML {
     
-    var autoTable: js.UndefOr[js.Object | (js.Function1[/* doc */ js.Any, _])] = js.native
+    var autoTable: js.UndefOr[js.Object | (js.Function1[/* doc */ js.Any, js.Any])] = js.undefined
     
-    var jsPDF: js.UndefOr[js.Any] = js.native
+    var jsPDF: js.UndefOr[js.Any] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var rowCalcStyles: js.UndefOr[js.Any] = js.native
+    var rowCalcStyles: js.UndefOr[js.Any] = js.undefined
     
-    var rowGroupStyles: js.UndefOr[js.Any] = js.native
+    var rowGroupStyles: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object DownloadOptions {
     
@@ -2909,10 +2862,10 @@ object Tabulator {
     implicit class DownloadOptionsMutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAutoTable(value: js.Object | (js.Function1[/* doc */ js.Any, _])): Self = StObject.set(x, "autoTable", value.asInstanceOf[js.Any])
+      def setAutoTable(value: js.Object | (js.Function1[/* doc */ js.Any, js.Any])): Self = StObject.set(x, "autoTable", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAutoTableFunction1(value: /* doc */ js.Any => _): Self = StObject.set(x, "autoTable", js.Any.fromFunction1(value))
+      def setAutoTableFunction1(value: /* doc */ js.Any => js.Any): Self = StObject.set(x, "autoTable", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAutoTableUndefined: Self = StObject.set(x, "autoTable", js.undefined)
@@ -2949,23 +2902,22 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait DownloadPDF extends StObject {
     
-    var autoTable: js.UndefOr[js.Object | (js.Function1[/* doc */ js.Any, _])] = js.native
+    var autoTable: js.UndefOr[js.Object | (js.Function1[/* doc */ js.Any, js.Any])] = js.undefined
     
     /**An optional callback documentProcessing can be set on the download config object, that is passed the jsPDF document object after the auto-table creation to allow full customisation of the PDF */
-    var documentProcessing: js.UndefOr[js.Function1[/* doc */ js.Any, _]] = js.native
+    var documentProcessing: js.UndefOr[js.Function1[/* doc */ js.Any, js.Any]] = js.undefined
     
-    var jsPDF: js.UndefOr[js.Any] = js.native
+    var jsPDF: js.UndefOr[js.Any] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
-    var rowCalcStyles: js.UndefOr[js.Any] = js.native
+    var rowCalcStyles: js.UndefOr[js.Any] = js.undefined
     
-    var rowGroupStyles: js.UndefOr[js.Any] = js.native
+    var rowGroupStyles: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object DownloadPDF {
     
@@ -2979,16 +2931,16 @@ object Tabulator {
     implicit class DownloadPDFMutableBuilder[Self <: DownloadPDF] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAutoTable(value: js.Object | (js.Function1[/* doc */ js.Any, _])): Self = StObject.set(x, "autoTable", value.asInstanceOf[js.Any])
+      def setAutoTable(value: js.Object | (js.Function1[/* doc */ js.Any, js.Any])): Self = StObject.set(x, "autoTable", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAutoTableFunction1(value: /* doc */ js.Any => _): Self = StObject.set(x, "autoTable", js.Any.fromFunction1(value))
+      def setAutoTableFunction1(value: /* doc */ js.Any => js.Any): Self = StObject.set(x, "autoTable", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAutoTableUndefined: Self = StObject.set(x, "autoTable", js.undefined)
       
       @scala.inline
-      def setDocumentProcessing(value: /* doc */ js.Any => _): Self = StObject.set(x, "documentProcessing", js.Any.fromFunction1(value))
+      def setDocumentProcessing(value: /* doc */ js.Any => js.Any): Self = StObject.set(x, "documentProcessing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDocumentProcessingUndefined: Self = StObject.set(x, "documentProcessing", js.undefined)
@@ -3051,13 +3003,12 @@ object Tabulator {
     def xlsx: typings.tabulatorTables.tabulatorTablesStrings.xlsx = "xlsx".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.xlsx]
   }
   
-  @js.native
   trait DownloadXLXS extends StObject {
     
-    var documentProcessing: js.UndefOr[js.Function1[/* input */ js.Any, _]] = js.native
+    var documentProcessing: js.UndefOr[js.Function1[/* input */ js.Any, js.Any]] = js.undefined
     
     /** The sheet name must be a valid Excel sheet name, and cannot include any of the following characters \, /, *, [, ], :,  */
-    var sheetName: js.UndefOr[String] = js.native
+    var sheetName: js.UndefOr[String] = js.undefined
   }
   object DownloadXLXS {
     
@@ -3071,7 +3022,7 @@ object Tabulator {
     implicit class DownloadXLXSMutableBuilder[Self <: DownloadXLXS] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDocumentProcessing(value: /* input */ js.Any => _): Self = StObject.set(x, "documentProcessing", js.Any.fromFunction1(value))
+      def setDocumentProcessing(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "documentProcessing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDocumentProcessingUndefined: Self = StObject.set(x, "documentProcessing", js.undefined)
@@ -3124,14 +3075,13 @@ object Tabulator {
   
   type EmptyCallback = js.Function1[/* callback */ js.Function0[Unit], Unit]
   
-  @js.native
   trait Filter extends StObject {
     
-    var field: String = js.native
+    var field: String
     
-    var `type`: FilterType = js.native
+    var `type`: FilterType
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Filter {
     
@@ -3164,12 +3114,11 @@ object Tabulator {
     Unit
   ]
   
-  @js.native
   trait FilterParams extends StObject {
     
-    var matchAll: js.UndefOr[Boolean] = js.native
+    var matchAll: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object FilterParams {
     
@@ -3297,41 +3246,40 @@ object Tabulator {
   
   type GlobalTooltipOption = Boolean | (js.Function1[/* cell */ CellComponent, String])
   
-  @js.native
   trait GroupComponent extends StObject {
     
     /** The getElement function returns the DOM node for the group header. */
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
     /** Returns the string of the field that all rows in this group have been grouped by. (if a function is used to group the rows rather than a field, this function will return false) */
-    def getField(): String = js.native
+    def getField(): String
     
     /** The getKey function returns the unique key that is shared between all rows in this group. */
-    def getKey(): js.Any = js.native
+    def getKey(): js.Any
     
     /** The getParentGroup function returns the GroupComponent for the parent group of this group. if no parent exists, this function will return false */
-    def getParentGroup(): GroupComponent | `false` = js.native
+    def getParentGroup(): GroupComponent | `false`
     
     /** The getRows function returns an array of RowComponent objects, one for each row in the group */
-    def getRows(): js.Array[RowComponent] = js.native
+    def getRows(): js.Array[RowComponent]
     
     /** The getSubGroups function returns an array of GroupComponent objects, one for each sub group of this group. */
-    def getSubGroups(): js.Array[GroupComponent] = js.native
+    def getSubGroups(): js.Array[GroupComponent]
     
     /** The getTable function returns the Tabulator object for the table containing the group */
-    def getTable(): Tabulator = js.native
+    def getTable(): Tabulator
     
     /** The hide function hides the group if it is visible. */
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /**  The isVisible function returns a boolean to show if the group is visible, a value of true means it is visible.*/
-    def isVisible(): Boolean = js.native
+    def isVisible(): Boolean
     
     /** The show function shows the group if it is hidden. */
-    def show(): Unit = js.native
+    def show(): Unit
     
     /** The toggle function toggles the visibility of the group, switching between hidden and visible. */
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object GroupComponent {
     
@@ -3437,13 +3385,14 @@ object Tabulator {
     def POST: typings.tabulatorTables.tabulatorTablesStrings.POST = "POST".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.POST]
   }
   
-  @js.native
-  trait ImageParams extends _FormatterParams {
+  trait ImageParams
+    extends StObject
+       with _FormatterParams {
     
     // Image
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object ImageParams {
     
@@ -3470,13 +3419,13 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait InputParams
-    extends SharedEditorParams
+    extends StObject
+       with SharedEditorParams
        with _EditorParams {
     
     /**Changes input type to 'search' and shows an 'X' clear button to clear the cell value easily */
-    var search: js.UndefOr[Boolean] = js.native
+    var search: js.UndefOr[Boolean] = js.undefined
   }
   object InputParams {
     
@@ -3499,34 +3448,33 @@ object Tabulator {
   
   type JSONRecord = Record[String, String | Double | Boolean]
   
-  @js.native
   trait KeyBinding extends StObject {
     
-    var copyToClipboard: js.UndefOr[String | Boolean] = js.native
+    var copyToClipboard: js.UndefOr[String | Boolean] = js.undefined
     
-    var navDown: js.UndefOr[String | Boolean] = js.native
+    var navDown: js.UndefOr[String | Boolean] = js.undefined
     
-    var navLeft: js.UndefOr[String | Boolean] = js.native
+    var navLeft: js.UndefOr[String | Boolean] = js.undefined
     
-    var navNext: js.UndefOr[String | Boolean] = js.native
+    var navNext: js.UndefOr[String | Boolean] = js.undefined
     
-    var navPrev: js.UndefOr[String | Boolean] = js.native
+    var navPrev: js.UndefOr[String | Boolean] = js.undefined
     
-    var navRight: js.UndefOr[String | Boolean] = js.native
+    var navRight: js.UndefOr[String | Boolean] = js.undefined
     
-    var navUp: js.UndefOr[String | Boolean] = js.native
+    var navUp: js.UndefOr[String | Boolean] = js.undefined
     
-    var redo: js.UndefOr[String | Boolean] = js.native
+    var redo: js.UndefOr[String | Boolean] = js.undefined
     
-    var scrollPageDown: js.UndefOr[String | Boolean] = js.native
+    var scrollPageDown: js.UndefOr[String | Boolean] = js.undefined
     
-    var scrollPageUp: js.UndefOr[String | Boolean] = js.native
+    var scrollPageUp: js.UndefOr[String | Boolean] = js.undefined
     
-    var scrollToEnd: js.UndefOr[String | Boolean] = js.native
+    var scrollToEnd: js.UndefOr[String | Boolean] = js.undefined
     
-    var scrollToStart: js.UndefOr[String | Boolean] = js.native
+    var scrollToStart: js.UndefOr[String | Boolean] = js.undefined
     
-    var undo: js.UndefOr[String | Boolean] = js.native
+    var undo: js.UndefOr[String | Boolean] = js.undefined
   }
   object KeyBinding {
     
@@ -3619,23 +3567,24 @@ object Tabulator {
     }
   }
   
-  @js.native
-  trait LinkParams extends _FormatterParams {
+  trait LinkParams
+    extends StObject
+       with _FormatterParams {
     
-    var download: js.UndefOr[Boolean] = js.native
+    var download: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String | (js.Function1[/* cell */ CellComponent, String])] = js.native
+    var label: js.UndefOr[String | (js.Function1[/* cell */ CellComponent, String])] = js.undefined
     
     // Link
-    var labelField: js.UndefOr[String] = js.native
+    var labelField: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var urlField: js.UndefOr[String] = js.native
+    var urlField: js.UndefOr[String] = js.undefined
     
-    var urlPrefix: js.UndefOr[String] = js.native
+    var urlPrefix: js.UndefOr[String] = js.undefined
   }
   object LinkParams {
     
@@ -3695,14 +3644,13 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait MenuObject[T /* <: RowComponent | CellComponent | ColumnComponent | GroupComponent */] extends StObject {
     
-    def action(e: js.Any, component: T): js.Any = js.native
+    def action(e: js.Any, component: T): js.Any
     
-    var disabled: js.UndefOr[Boolean | (js.Function1[/* component */ T, Boolean])] = js.native
+    var disabled: js.UndefOr[Boolean | (js.Function1[/* component */ T, Boolean])] = js.undefined
     
-    var label: String | HTMLElement | (js.Function1[/* component */ T, String | HTMLElement]) = js.native
+    var label: String | HTMLElement | (js.Function1[/* component */ T, String | HTMLElement])
   }
   object MenuObject {
     
@@ -3716,7 +3664,7 @@ object Tabulator {
     }
     
     @scala.inline
-    implicit class MenuObjectMutableBuilder[Self <: MenuObject[_], T /* <: RowComponent | CellComponent | ColumnComponent | GroupComponent */] (val x: Self with MenuObject[T]) extends AnyVal {
+    implicit class MenuObjectMutableBuilder[Self <: MenuObject[?], T /* <: RowComponent | CellComponent | ColumnComponent | GroupComponent */] (val x: Self & MenuObject[T]) extends AnyVal {
       
       @scala.inline
       def setAction(value: (js.Any, T) => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
@@ -3738,10 +3686,9 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait MenuSeparator extends StObject {
     
-    var separator: js.UndefOr[Boolean] = js.native
+    var separator: js.UndefOr[Boolean] = js.undefined
   }
   object MenuSeparator {
     
@@ -3762,19 +3709,20 @@ object Tabulator {
     }
   }
   
-  @js.native
-  trait MoneyParams extends _FormatterParams {
+  trait MoneyParams
+    extends StObject
+       with _FormatterParams {
     
     // Money
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[Boolean | Double] = js.native
+    var precision: js.UndefOr[Boolean | Double] = js.undefined
     
-    var symbol: js.UndefOr[String] = js.native
+    var symbol: js.UndefOr[String] = js.undefined
     
-    var symbolAfter: js.UndefOr[Boolean] = js.native
+    var symbolAfter: js.UndefOr[Boolean] = js.undefined
     
-    var thousand: js.UndefOr[String] = js.native
+    var thousand: js.UndefOr[String] = js.undefined
   }
   object MoneyParams {
     
@@ -3819,19 +3767,19 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait NumberParams
-    extends SharedEditorParams
+    extends StObject
+       with SharedEditorParams
        with _EditorParams {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     // range,number
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var verticalNavigation: js.UndefOr[editor | table] = js.native
+    var verticalNavigation: js.UndefOr[editor | table] = js.undefined
   }
   object NumberParams {
     
@@ -3871,9 +3819,9 @@ object Tabulator {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.tabulatorTables.Tabulator.OptionsCell because var conflicts: cellClick, cellContext, cellDblClick, cellDblTap, cellEditCancelled, cellEdited, cellEditing, cellMouseEnter, cellMouseLeave, cellMouseMove, cellMouseOut, cellMouseOver, cellTap, cellTapHold. Inlined cellHozAlign, cellVertAlign */ @js.native
-  trait Options
-    extends OptionsCells
+  - typings.tabulatorTables.Tabulator.CellCallbacks because var conflicts: cellClick, cellContext, cellDblClick, cellDblTap, cellEditCancelled, cellEdited, cellEditing, cellMouseEnter, cellMouseLeave, cellMouseMove, cellMouseOut, cellMouseOver, cellTap, cellTapHold. Inlined 
+  - typings.tabulatorTables.Tabulator.OptionsCells because var conflicts: cellClick, cellContext, cellDblClick, cellDblTap, cellEditCancelled, cellEdited, cellEditing, cellMouseEnter, cellMouseLeave, cellMouseMove, cellMouseOut, cellMouseOver, cellTap, cellTapHold. Inlined validationFailed */ trait Options
+    extends StObject
        with OptionsGeneral
        with OptionsMenu
        with OptionsHistory
@@ -3889,11 +3837,18 @@ object Tabulator {
        with OptionsPersistentConfiguration
        with OptionsClipboard
        with OptionsDataTree
+       with OptionsCell
        with OptionsHTML {
     
-    var cellHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.native
-    
-    var cellVertAlign: js.UndefOr[VerticalAlign] = js.native
+    /** The validationFailed event is triggered when the value entered into a cell during an edit fails to pass validation. */
+    var validationFailed: js.UndefOr[
+        js.Function3[
+          /* cell */ CellComponent, 
+          /* value */ js.Any, 
+          /* validators */ js.Array[StandardValidatorType | Validator], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object Options {
     
@@ -3907,54 +3862,49 @@ object Tabulator {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCellHozAlign(value: ColumnDefinitionAlign): Self = StObject.set(x, "cellHozAlign", value.asInstanceOf[js.Any])
+      def setValidationFailed(
+        value: (/* cell */ CellComponent, /* value */ js.Any, /* validators */ js.Array[StandardValidatorType | Validator]) => Unit
+      ): Self = StObject.set(x, "validationFailed", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setCellHozAlignUndefined: Self = StObject.set(x, "cellHozAlign", js.undefined)
-      
-      @scala.inline
-      def setCellVertAlign(value: VerticalAlign): Self = StObject.set(x, "cellVertAlign", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCellVertAlignUndefined: Self = StObject.set(x, "cellVertAlign", js.undefined)
+      def setValidationFailedUndefined: Self = StObject.set(x, "validationFailed", js.undefined)
     }
   }
   
-  @js.native
   trait OptionsCell extends StObject {
     
     /** The cellClick callback is triggered when a user left clicks on a cell, it can be set on a per column basis using the option in the columns definition object. */
-    var cellClick: js.UndefOr[CellEventCallback] = js.native
+    var cellClick: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellContext: js.UndefOr[CellEventCallback] = js.native
+    var cellContext: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellDblClick: js.UndefOr[CellEventCallback] = js.native
+    var cellDblClick: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellDblTap: js.UndefOr[CellEventCallback] = js.native
+    var cellDblTap: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellEditCancelled: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEditCancelled: js.UndefOr[CellEditEventCallback] = js.undefined
     
-    var cellEdited: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEdited: js.UndefOr[CellEditEventCallback] = js.undefined
     
-    var cellEditing: js.UndefOr[CellEditEventCallback] = js.native
+    var cellEditing: js.UndefOr[CellEditEventCallback] = js.undefined
     
-    var cellHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.native
+    var cellHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
     
-    var cellMouseEnter: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseEnter: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseLeave: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseLeave: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseMove: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseMove: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseOut: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseOut: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellMouseOver: js.UndefOr[CellEventCallback] = js.native
+    var cellMouseOver: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellTap: js.UndefOr[CellEventCallback] = js.native
+    var cellTap: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellTapHold: js.UndefOr[CellEventCallback] = js.native
+    var cellTapHold: js.UndefOr[CellEventCallback] = js.undefined
     
-    var cellVertAlign: js.UndefOr[VerticalAlign] = js.native
+    var cellVertAlign: js.UndefOr[VerticalAlign] = js.undefined
   }
   object OptionsCell {
     
@@ -4065,8 +4015,9 @@ object Tabulator {
     }
   }
   
-  @js.native
-  trait OptionsCells extends CellCallbacks {
+  trait OptionsCells
+    extends StObject
+       with CellCallbacks {
     
     /** The validationFailed event is triggered when the value entered into a cell during an edit fails to pass validation. */
     var validationFailed: js.UndefOr[
@@ -4076,7 +4027,7 @@ object Tabulator {
           /* validators */ js.Array[StandardValidatorType | Validator], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object OptionsCells {
     
@@ -4099,7 +4050,6 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsClipboard extends StObject {
     
     /** You can enable clipboard functionality using the clipboard config option. It can take one of four possible values:
@@ -4107,45 +4057,45 @@ object Tabulator {
       "copy" - enable only copy functionality
       "paste" - enable only paste functionality
       false - disable all clipboard functionality (default) */
-    var clipboard: js.UndefOr[Boolean | copy | paste] = js.native
+    var clipboard: js.UndefOr[Boolean | copy | paste] = js.undefined
     
     /** The clipboardCopied event is triggered whenever data is copied to the clipboard. */
-    var clipboardCopied: js.UndefOr[js.Function0[Unit]] = js.native
+    var clipboardCopied: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** By default Tabulator includes column headers, row groups and column calculations in the clipboard output.
       You can choose to remove column headers groups, row groups or column calculations from the output data by setting the values in the clipboardCopyConfig option in the table definition: */
-    var clipboardCopyConfig: js.UndefOr[AddditionalExportOptions | Boolean] = js.native
+    var clipboardCopyConfig: js.UndefOr[AddditionalExportOptions | Boolean] = js.undefined
     
     /**You can alter the finished output to the clipboard using the clipboardCopyFormatter callback. The callback function receives two arguments, the first is a string representing the type of content to be formatted (either "plain" or "html" depending on the type of data entering the clipboard). The second argument is the string that is about to be insered into the clipboard. The function and should return a string that will be inserted into the clipboard */
-    var clipboardCopyFormatter: js.UndefOr[table | (js.Function2[/* type */ plain | html, /* output */ String, String])] = js.native
+    var clipboardCopyFormatter: js.UndefOr[table | (js.Function2[/* type */ plain | html, /* output */ String, String])] = js.undefined
     
     /** By default Tabulator will include the column header titles in any clipboard data, this can be turned off by passing a value of false to the clipboardCopyHeader property: */
-    var clipboardCopyHeader: js.UndefOr[Boolean] = js.native
+    var clipboardCopyHeader: js.UndefOr[Boolean] = js.undefined
     
     /**The clipboardCopyRowRange option takes a Row Range Lookup value and allows you to choose which rows are included in the clipboard output: */
-    var clipboardCopyRowRange: js.UndefOr[RowRangeLookup] = js.native
+    var clipboardCopyRowRange: js.UndefOr[RowRangeLookup] = js.undefined
     
     /** By default Tabulator will copy some of the tables styling along with the data to give a better visual appearance when pasted into other documents.
       If you want to only copy the unstyled data then you should set the clipboardCopyStyled option to false in the table options object:  */
-    var clipboardCopyStyled: js.UndefOr[Boolean] = js.native
+    var clipboardCopyStyled: js.UndefOr[Boolean] = js.undefined
     
     /** Once the data has been parsed into row data, it will be passed to a paste action to be added to the table. There are three inbuilt paste actions:
       insert - Inserts data into the table using the addRows function (default)
       update - Updates data in the table using the updateOrAddData function
       replace - replaces all data in the table using the setData function */
-    var clipboardPasteAction: js.UndefOr[insert | update | replace] = js.native
+    var clipboardPasteAction: js.UndefOr[insert | update | replace] = js.undefined
     
     /** The clipboardPasteError event is triggered whenever an atempt to paste data into the table has failed because it was rejected by the paste parser. */
-    var clipboardPasteError: js.UndefOr[js.Function0[Unit]] = js.native
+    var clipboardPasteError: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**  Tabulator has one built in paste parser, that is designed to take a table formatted text string from the clipboard and turn it into row data. it breaks the tada into rows on a newline character \n and breaks the rows down to columns on a tab character \t.
       It will then attempt to work out which columns in the data correspond to columns in the table. It tries three different ways to achieve this. First it checks the values of all columns in the first row of data to see if they match the titles of columns in the table. If any of the columns don't match it then tries the same approach but with the column fields. If either of those options match, Tabulator will map those columns to the incoming data and import it into rows. If there is no match then Tabulator will assume the columns in the data are in the same order as the visible columns in the table and import them that way.
       The inbuilt parser will reject any clipboard data that does not contain at least one row and two columns, in that case the clipboardPasteError will be triggered.
       If you extend the clipboard module to add your own parser, you can set it to be used as default with the clipboardPasteParser property.*/
-    var clipboardPasteParser: js.UndefOr[String | (js.Function1[/* clipboard */ js.Any, js.Array[_]])] = js.native
+    var clipboardPasteParser: js.UndefOr[String | (js.Function1[/* clipboard */ js.Any, js.Array[js.Any]])] = js.undefined
     
     /** The clipboardPasted event is triggered whenever data is successfuly pasted into the table. */
-    var clipboardPasted: js.UndefOr[js.Function0[Unit]] = js.native
+    var clipboardPasted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**When copying to clipboard you may want to apply a different group header from the one usualy used in the table. You can now do this using the groupHeaderClipboard table option, which takes the same inputs as the standard groupHeader property. */
     var groupHeaderClipboard: js.UndefOr[
@@ -4155,8 +4105,8 @@ object Tabulator {
           /* data */ js.Any, 
           /* group */ GroupComponent, 
           String
-        ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
-      ] = js.native
+        ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
+      ] = js.undefined
     
     /**When the getHtml function is called you may want to apply a different group header from the one usualy used in the table. You can now do this using the groupHeaderHtmlOutput table option, which takes the same inputs as the standard groupHeader property. */
     var groupHeaderHtmlOutput: js.UndefOr[
@@ -4166,8 +4116,8 @@ object Tabulator {
           /* data */ js.Any, 
           /* group */ GroupComponent, 
           String
-        ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
-      ] = js.native
+        ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
+      ] = js.undefined
   }
   object OptionsClipboard {
     
@@ -4235,10 +4185,10 @@ object Tabulator {
       def setClipboardPasteErrorUndefined: Self = StObject.set(x, "clipboardPasteError", js.undefined)
       
       @scala.inline
-      def setClipboardPasteParser(value: String | (js.Function1[/* clipboard */ js.Any, js.Array[_]])): Self = StObject.set(x, "clipboardPasteParser", value.asInstanceOf[js.Any])
+      def setClipboardPasteParser(value: String | (js.Function1[/* clipboard */ js.Any, js.Array[js.Any]])): Self = StObject.set(x, "clipboardPasteParser", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setClipboardPasteParserFunction1(value: /* clipboard */ js.Any => js.Array[_]): Self = StObject.set(x, "clipboardPasteParser", js.Any.fromFunction1(value))
+      def setClipboardPasteParserFunction1(value: /* clipboard */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "clipboardPasteParser", js.Any.fromFunction1(value))
       
       @scala.inline
       def setClipboardPasteParserUndefined: Self = StObject.set(x, "clipboardPasteParser", js.undefined)
@@ -4260,7 +4210,7 @@ object Tabulator {
               /* data */ js.Any, 
               /* group */ GroupComponent, 
               String
-            ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+            ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
       ): Self = StObject.set(x, "groupHeaderClipboard", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -4272,7 +4222,7 @@ object Tabulator {
       def setGroupHeaderClipboardUndefined: Self = StObject.set(x, "groupHeaderClipboard", js.undefined)
       
       @scala.inline
-      def setGroupHeaderClipboardVarargs(value: (js.Function3[js.Any, /* count */ Double, js.Any, String])*): Self = StObject.set(x, "groupHeaderClipboard", js.Array(value :_*))
+      def setGroupHeaderClipboardVarargs(value: (js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String])*): Self = StObject.set(x, "groupHeaderClipboard", js.Array(value :_*))
       
       @scala.inline
       def setGroupHeaderHtmlOutput(
@@ -4282,7 +4232,7 @@ object Tabulator {
               /* data */ js.Any, 
               /* group */ GroupComponent, 
               String
-            ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+            ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
       ): Self = StObject.set(x, "groupHeaderHtmlOutput", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -4294,24 +4244,23 @@ object Tabulator {
       def setGroupHeaderHtmlOutputUndefined: Self = StObject.set(x, "groupHeaderHtmlOutput", js.undefined)
       
       @scala.inline
-      def setGroupHeaderHtmlOutputVarargs(value: (js.Function3[js.Any, /* count */ Double, js.Any, String])*): Self = StObject.set(x, "groupHeaderHtmlOutput", js.Array(value :_*))
+      def setGroupHeaderHtmlOutputVarargs(value: (js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String])*): Self = StObject.set(x, "groupHeaderHtmlOutput", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait OptionsColumns extends StObject {
     
     /**
       * If you set the autoColumns option to true, every time data is loaded into the table through the data option or through the setData function, Tabulator will examine the first row of the data and build columns to match that data.
       */
-    var autoColumns: js.UndefOr[Boolean] = js.native
+    var autoColumns: js.UndefOr[Boolean] = js.undefined
     
     var autoColumnsDefinitions: js.UndefOr[
         (js.Function1[
           /* columnDefinitions */ js.UndefOr[js.Array[ColumnDefinition]], 
           js.Array[ColumnDefinition]
         ]) | js.Array[ColumnDefinition] | (Record[String, PartialColumnDefinition])
-      ] = js.native
+      ] = js.undefined
     
     /** By default column calculations are shown at the top and bottom of the table, unless row grouping is enabled, in which case they are shown at the top and bottom of each group.
       The columnCalcs option lets you decided where the calculations should be displayed, it can take one of four values:
@@ -4319,70 +4268,70 @@ object Tabulator {
       both - show calcs at top and bottom of the table and show in groups
       table - show calcs at top and bottom of the table only
       group - show calcs in groups only */
-    var columnCalcs: js.UndefOr[Boolean | both | table | group] = js.native
+    var columnCalcs: js.UndefOr[Boolean | both | table | group] = js.undefined
     
     /** multiple or single column sorting */
-    var columnHeaderSortMulti: js.UndefOr[Boolean] = js.native
+    var columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined
     
     /** You can use the columnHeaderVertAlign option to set how the text in your column headers should be vertically  */
-    var columnHeaderVertAlign: js.UndefOr[VerticalAlign] = js.native
+    var columnHeaderVertAlign: js.UndefOr[VerticalAlign] = js.undefined
     
     /** It is possible to set a minimum column width to prevent resizing columns from becoming too small.
       This can be set globally, by setting the columnMinWidth option to the column width when you create your Tabulator.
       This option can be overridden on a per column basis by setting the minWidth property on the column definition. */
-    var columnMinWidth: js.UndefOr[Double] = js.native
+    var columnMinWidth: js.UndefOr[Double] = js.undefined
     
     /** The columnMoved callback will be triggered when a column has been successfuly moved. */
-    var columnMoved: js.UndefOr[js.Function2[/* column */ ColumnComponent, /* columns */ js.Array[_], Unit]] = js.native
+    var columnMoved: js.UndefOr[js.Function2[/* column */ ColumnComponent, /* columns */ js.Array[js.Any], Unit]] = js.undefined
     
-    var columnResized: js.UndefOr[js.Function1[/* column */ ColumnComponent, Unit]] = js.native
+    var columnResized: js.UndefOr[js.Function1[/* column */ ColumnComponent, Unit]] = js.undefined
     
     /** The columnTitleChanged callback is triggered whenever a user edits a column title when the editableTitle parameter has been enabled in the column definition array. */
-    var columnTitleChanged: js.UndefOr[js.Function1[/* column */ ColumnComponent, Unit]] = js.native
+    var columnTitleChanged: js.UndefOr[js.Function1[/* column */ ColumnComponent, Unit]] = js.undefined
     
     /** The columnVisibilityChanged callback is triggered whenever a column changes between hidden and visible states. */
-    var columnVisibilityChanged: js.UndefOr[js.Function2[/* column */ ColumnComponent, /* visible */ Boolean, Unit]] = js.native
+    var columnVisibilityChanged: js.UndefOr[js.Function2[/* column */ ColumnComponent, /* visible */ Boolean, Unit]] = js.undefined
     
     /** The column definitions are provided to Tabluator in the columns property of the table constructor object and should take the format of an array of objects, with each object representing the configuration of one column. */
-    var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
     
     /** The default placeholder text used for input elements can be set using the headerFilterPlaceholder option in the table definition */
-    var headerFilterPlaceholder: js.UndefOr[String] = js.native
+    var headerFilterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var headerHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.native
+    var headerHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
     
     /** The headerSort option can now be set in the table options to affect all columns as well as in column definitions. */
-    var headerSort: js.UndefOr[Boolean] = js.native
+    var headerSort: js.UndefOr[Boolean] = js.undefined
     
-    var headerSortElement: js.UndefOr[String] = js.native
+    var headerSortElement: js.UndefOr[String] = js.undefined
     
     /** The headerSortTristate option can now be set in the table options to affect all columns as well as in column definitions.*/
-    var headerSortTristate: js.UndefOr[Boolean] = js.native
+    var headerSortTristate: js.UndefOr[Boolean] = js.undefined
     
     /**By setting the headerVisible option to false you can hide the column headers and present the table as a simple list if needed. */
-    var headerVisible: js.UndefOr[Boolean] = js.native
+    var headerVisible: js.UndefOr[Boolean] = js.undefined
     
     /** By default Tabulator will use the fitData layout mode, which will resize the tables columns to fit the data held in each column, unless you specify a width or minWidth in the column constructor. If the width of all columns exceeds the width of the containing element, a scroll bar will appear. */
-    var layout: js.UndefOr[fitData | fitColumns | fitDataFill | fitDataStretch | fitDataTable] = js.native
+    var layout: js.UndefOr[fitData | fitColumns | fitDataFill | fitDataStretch | fitDataTable] = js.undefined
     
     /** To keep the layout of the columns consistent, once the column widths have been set on the first data load (either from the data property in the constructor or the setData function) they will not be changed when new data is loaded.
       If you would prefer that the column widths adjust to the data each time you load it into the table you can set the layoutColumnsOnNewData property to true. */
-    var layoutColumnsOnNewData: js.UndefOr[Boolean] = js.native
+    var layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined
     
     /** To allow the user to move columns along the table, set the movableColumns parameter in the options: */
-    var movableColumns: js.UndefOr[Boolean] = js.native
+    var movableColumns: js.UndefOr[Boolean] = js.undefined
     
     /** If you need to use the . character as part of your field name, you can change the separator to any other character using the nestedFieldSeparator option
       * Set to false to disable nested data parsing
       */
-    var nestedFieldSeparator: js.UndefOr[String | Boolean] = js.native
+    var nestedFieldSeparator: js.UndefOr[String | Boolean] = js.undefined
     
     /**If you don't want to show a particular column in the print table you can set the print property in its column definition object to false */
-    var print: js.UndefOr[Boolean] = js.native
+    var print: js.UndefOr[Boolean] = js.undefined
     
     /** By default it is possible to manually resize columns by dragging the borders of the column in both the column headers and the cells of the column.
       If you want to alter this behaviour you can use the resizableColumns to choose where the resize handles are available.  */
-    var resizableColumns: js.UndefOr[`true` | `false` | header | cell] = js.native
+    var resizableColumns: js.UndefOr[`true` | `false` | header | cell] = js.undefined
     
     /** Responsive layout will automatically hide/show columns to fit the width of the Tabulator element. This allows for clean rendering of tables on smaller mobile devices, showing important data while avoiding horizontal scroll bars. You can enable responsive layouts using the responsiveLayout option.
       There are two responsive layout modes available:
@@ -4391,34 +4340,34 @@ object Tabulator {
       Hide Extra Columns
       By default, columns will be hidden from right to left as the width of the table decreases. You can choose exactlyhow columns are hidden using the responsive property in the column definition object.
       When responsive layout is enabled, all columns are given a default responsive value of 1. The higher you set this value the sooner that column will be hidden as the table width decreases. If two columns have the same responsive value then they are hidden from right to left (as defined in the column definition array, ignoring user moving of the columns). If you set the value to 0 then the column will never be hidden regardless of how narrow the table gets. */
-    var responsiveLayout: js.UndefOr[Boolean | hide | collapse] = js.native
+    var responsiveLayout: js.UndefOr[Boolean | hide | collapse] = js.undefined
     
     /** If you set the responsiveLayout option to collapse the values from hidden columns will be displayed in a title/value list under the row.
       In this mode an object containing the title of each hidden column and its value is generated and then used to generate a list displayed in a div .tabulator-responsive-collapse under the row data.
       The inbuilt collapse formatter creates a table to neatly display the hidden columns. If you would like to format the data in your own way you can use the responsiveLayoutCollapseFormatter, it take an object of the column values as an argument and must return the HTML content of the div.
       This function should return an empty string if there is no data to display. */
-    var responsiveLayoutCollapseFormatter: js.UndefOr[js.Function1[/* data */ js.Array[_], _]] = js.native
+    var responsiveLayoutCollapseFormatter: js.UndefOr[js.Function1[/* data */ js.Array[js.Any], js.Any]] = js.undefined
     
     /** Collapsed lists are displayed to the user by default, if you would prefer they start closed so the user can open them you can use the responsiveLayoutCollapseStartOpen option */
-    var responsiveLayoutCollapseStartOpen: js.UndefOr[Boolean] = js.native
+    var responsiveLayoutCollapseStartOpen: js.UndefOr[Boolean] = js.undefined
     
     /** By default any formatter set on the column is applied to the value that will appear in the list. while this works for most formatters it can cause issues with the progress formatter which relies on being inside a cell.
       If you would like to disable column formatting in the collapsed list, you can use the responsiveLayoutCollapseUseFormatters option: */
-    var responsiveLayoutCollapseUseFormatters: js.UndefOr[Boolean] = js.native
+    var responsiveLayoutCollapseUseFormatters: js.UndefOr[Boolean] = js.undefined
     
     /** The default option for triggering a ScrollTo on a visible element can be set using the scrollToColumnIfVisible option. It can take a boolean value:
       true - scroll to column, even if it is visible (default)
       false - scroll to column, unless it is currently visible, then don't move */
-    var scrollToColumnIfVisible: js.UndefOr[Boolean] = js.native
+    var scrollToColumnIfVisible: js.UndefOr[Boolean] = js.undefined
     
     /** The default ScrollTo position can be set using the scrollToColumnPosition option. It can take one of three possible values:
       left - position column with its left edge at the left of the table (default)
       center - position column with its left edge in the center of the table
       right - position column with its right edge at the right of the table */
-    var scrollToColumnPosition: js.UndefOr[ScrollToColumnPosition] = js.native
+    var scrollToColumnPosition: js.UndefOr[ScrollToColumnPosition] = js.undefined
     
     /** Header tooltips can be set globally using the tooltipsHeader options parameter */
-    var tooltipsHeader: js.UndefOr[Boolean] = js.native
+    var tooltipsHeader: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsColumns {
     
@@ -4481,7 +4430,7 @@ object Tabulator {
       def setColumnMinWidthUndefined: Self = StObject.set(x, "columnMinWidth", js.undefined)
       
       @scala.inline
-      def setColumnMoved(value: (/* column */ ColumnComponent, /* columns */ js.Array[_]) => Unit): Self = StObject.set(x, "columnMoved", js.Any.fromFunction2(value))
+      def setColumnMoved(value: (/* column */ ColumnComponent, /* columns */ js.Array[js.Any]) => Unit): Self = StObject.set(x, "columnMoved", js.Any.fromFunction2(value))
       
       @scala.inline
       def setColumnMovedUndefined: Self = StObject.set(x, "columnMoved", js.undefined)
@@ -4589,7 +4538,7 @@ object Tabulator {
       def setResponsiveLayout(value: Boolean | hide | collapse): Self = StObject.set(x, "responsiveLayout", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setResponsiveLayoutCollapseFormatter(value: /* data */ js.Array[_] => _): Self = StObject.set(x, "responsiveLayoutCollapseFormatter", js.Any.fromFunction1(value))
+      def setResponsiveLayoutCollapseFormatter(value: /* data */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "responsiveLayoutCollapseFormatter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setResponsiveLayoutCollapseFormatterUndefined: Self = StObject.set(x, "responsiveLayoutCollapseFormatter", js.undefined)
@@ -4629,77 +4578,78 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsData extends StObject {
     
     /** The HTTP request type for Ajax requests or config object for the request     */
-    var ajaxConfig: js.UndefOr[HttpMethod | AjaxConfig] = js.native
+    var ajaxConfig: js.UndefOr[HttpMethod | AjaxConfig] = js.undefined
     
     /** When using a request method other than "GET" Tabulator will send any parameters with a content type of form data. You can change the content type with the ajaxContentType option. This will ensure parameters are sent in the format you expect, with the correct headers. * * The ajaxContentType option can take one of two values:
       "form" - send parameters as form data (default option)
       "json" - send parameters as JSON encoded string
       If you want to use a custom content type then you can pass a content type formatter object into the ajaxContentType option. this object must have two properties, the headers property should contain all headers that should be sent with the request and the body property should contain a function that returns the body content of the request
       */
-    var ajaxContentType: js.UndefOr[form | json | AjaxContentType] = js.native
+    var ajaxContentType: js.UndefOr[form | json | AjaxContentType] = js.undefined
     
     /** The ajaxError callback is triggered there is an error response to an ajax request. */
     var ajaxError: js.UndefOr[
         js.Function3[/* xhr */ js.Any, /* textStatus */ js.Any, /* errorThrown */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** Send filter config to server instead of processing locally     */
-    var ajaxFiltering: js.UndefOr[Boolean] = js.native
+    var ajaxFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Show loader while data is loading, can also take a function that must return a boolean     */
-    var ajaxLoader: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var ajaxLoader: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
     /** html for the loader element in the event of an error     */
-    var ajaxLoaderError: js.UndefOr[String] = js.native
+    var ajaxLoaderError: js.UndefOr[String] = js.undefined
     
     /** html for loader element     */
-    var ajaxLoaderLoading: js.UndefOr[String] = js.native
+    var ajaxLoaderLoading: js.UndefOr[String] = js.undefined
     
     /** Parameters to be passed to remote Ajax data loading request     */
-    var ajaxParams: js.UndefOr[js.Object] = js.native
+    var ajaxParams: js.UndefOr[js.Object] = js.undefined
     
     /** If you are loading a lot of data from a remote source into your table in one go, it can sometimes take a long time for the server to return the request, which can slow down the user experience.
       To speed things up in this situation Tabulator has a progressive load mode, this uses the pagination module to make a series of requests for part of the data set, one at a time, appending it to the table as the data arrives. This mode can be enable using the ajaxProgressiveLoad option. No pagination controls will be visible on screen, it just reusues the functionality of the pagination module to sequentially load the data.
       With this mode enabled, all of the settings outlined in the Ajax Documentation are still available
       There are two different progressive loading modes, to give you a choice of how data is loaded into the table.     */
-    var ajaxProgressiveLoad: js.UndefOr[load | scroll] = js.native
+    var ajaxProgressiveLoad: js.UndefOr[load | scroll] = js.undefined
     
     /** By default tabulator will make the requests to fill the table as quickly as possible. On some servers these repeates requests from the same client may trigger rate limiting or security systems. In this case you can use the ajaxProgressiveLoadDelay option to add a delay in milliseconds between each page request. */
-    var ajaxProgressiveLoadDelay: js.UndefOr[Double] = js.native
+    var ajaxProgressiveLoadDelay: js.UndefOr[Double] = js.undefined
     
     /** The ajaxProgressiveLoadScrollMargin property determines how close to the bottom of the table in pixels, the scroll bar must be before the next page worth of data is loaded, by default it is set to twice the height of the table. */
-    var ajaxProgressiveLoadScrollMargin: js.UndefOr[Double] = js.native
+    var ajaxProgressiveLoadScrollMargin: js.UndefOr[Double] = js.undefined
     
     /** callback function to replace inbuilt ajax request functionality     */
     var ajaxRequestFunc: js.UndefOr[
-        js.Function3[/* url */ String, /* config */ js.Any, /* params */ js.Any, js.Promise[_]]
-      ] = js.native
+        js.Function3[/* url */ String, /* config */ js.Any, /* params */ js.Any, js.Promise[js.Any]]
+      ] = js.undefined
     
     /** The ajaxRequesting callback is triggered when ever an ajax request is made. */
-    var ajaxRequesting: js.UndefOr[js.Function2[/* url */ String, /* params */ js.Any, Boolean]] = js.native
+    var ajaxRequesting: js.UndefOr[js.Function2[/* url */ String, /* params */ js.Any, Boolean]] = js.undefined
     
     /** The ajaxResponse callback is triggered when a successful ajax request has been made. This callback can also be used to modify the received data before it is parsed by the table. If you use this callback it must return the data to be parsed by Tabulator, otherwise no data will be rendered */
-    var ajaxResponse: js.UndefOr[js.Function3[/* url */ String, /* params */ js.Any, /* response */ js.Any, _]] = js.native
+    var ajaxResponse: js.UndefOr[
+        js.Function3[/* url */ String, /* params */ js.Any, /* response */ js.Any, js.Any]
+      ] = js.undefined
     
     /** Send sorter config to server instead of processing locally     */
-    var ajaxSorting: js.UndefOr[Boolean] = js.native
+    var ajaxSorting: js.UndefOr[Boolean] = js.undefined
     
     /** If you wish to retrieve your data from a remote source you can set the URL for the request in the ajaxURL option. */
-    var ajaxURL: js.UndefOr[String] = js.native
+    var ajaxURL: js.UndefOr[String] = js.undefined
     
     /** If you need more control over the url of the request that you can get from the ajaxURL and ajaxParams properties, the you can use the ajaxURLGenerator property to pass in a callback that will generate the URL for you.
       The callback should return a string representing the URL to be requested. */
-    var ajaxURLGenerator: js.UndefOr[js.Function3[/* url */ String, /* config */ js.Any, /* params */ js.Any, String]] = js.native
+    var ajaxURLGenerator: js.UndefOr[js.Function3[/* url */ String, /* config */ js.Any, /* params */ js.Any, String]] = js.undefined
     
     /** Array to hold data that should be loaded on table creation     */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** A unique index value should be present for each row of data if you want to be able to programatically alter that data at a later point, this should be either numeric or a string. By default Tabulator will look for this value in the id field for the data. If you wish to use a different field as the index, set this using the index option parameter. */
-    var index: js.UndefOr[Double | String] = js.native
+    var index: js.UndefOr[Double | String] = js.undefined
   }
   object OptionsData {
     
@@ -4782,7 +4732,7 @@ object Tabulator {
       def setAjaxProgressiveLoadUndefined: Self = StObject.set(x, "ajaxProgressiveLoad", js.undefined)
       
       @scala.inline
-      def setAjaxRequestFunc(value: (/* url */ String, /* config */ js.Any, /* params */ js.Any) => js.Promise[_]): Self = StObject.set(x, "ajaxRequestFunc", js.Any.fromFunction3(value))
+      def setAjaxRequestFunc(value: (/* url */ String, /* config */ js.Any, /* params */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "ajaxRequestFunc", js.Any.fromFunction3(value))
       
       @scala.inline
       def setAjaxRequestFuncUndefined: Self = StObject.set(x, "ajaxRequestFunc", js.undefined)
@@ -4794,7 +4744,7 @@ object Tabulator {
       def setAjaxRequestingUndefined: Self = StObject.set(x, "ajaxRequesting", js.undefined)
       
       @scala.inline
-      def setAjaxResponse(value: (/* url */ String, /* params */ js.Any, /* response */ js.Any) => _): Self = StObject.set(x, "ajaxResponse", js.Any.fromFunction3(value))
+      def setAjaxResponse(value: (/* url */ String, /* params */ js.Any, /* response */ js.Any) => js.Any): Self = StObject.set(x, "ajaxResponse", js.Any.fromFunction3(value))
       
       @scala.inline
       def setAjaxResponseUndefined: Self = StObject.set(x, "ajaxResponse", js.undefined)
@@ -4818,7 +4768,7 @@ object Tabulator {
       def setAjaxURLUndefined: Self = StObject.set(x, "ajaxURL", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -4834,43 +4784,42 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsDataTree extends StObject {
     
     /** To enable data trees in your table, set the dataTree property to true in your table constructor: */
-    var dataTree: js.UndefOr[Boolean] = js.native
+    var dataTree: js.UndefOr[Boolean] = js.undefined
     
     /** Show tree branch icon     */
-    var dataTreeBranchElement: js.UndefOr[Boolean | String] = js.native
+    var dataTreeBranchElement: js.UndefOr[Boolean | String] = js.undefined
     
     /** By default Tabulator will look for child rows in the _children field of a row data object. You can change this to look in a different field using the dataTreeChildField property in your table constructor: */
-    var dataTreeChildField: js.UndefOr[String] = js.native
+    var dataTreeChildField: js.UndefOr[String] = js.undefined
     
     /** Tree level indent in pixels     */
-    var dataTreeChildIndent: js.UndefOr[Double] = js.native
+    var dataTreeChildIndent: js.UndefOr[Double] = js.undefined
     
     /** The toggle button that allows users to collapse and expand the column can be customised to meet your needs. There are two options, dataTreeExpandElement and dataTreeCollapseElement, that can be set to replace the default toggle elements with your own.
       Both options can take either an html string representing the contents of the toggle element */
-    var dataTreeCollapseElement: js.UndefOr[String | HTMLElement | Boolean] = js.native
+    var dataTreeCollapseElement: js.UndefOr[String | HTMLElement | Boolean] = js.undefined
     
     /**  By default the toggle element will be inserted into the first column on the table. If you want the toggle element to be inserted in a different column you can pass the feild name of the column to the dataTreeElementColumn setup option*/
-    var dataTreeElementColumn: js.UndefOr[Boolean | String] = js.native
+    var dataTreeElementColumn: js.UndefOr[Boolean | String] = js.undefined
     
     /** The toggle button that allows users to expand the column */
-    var dataTreeExpandElement: js.UndefOr[String | HTMLElement | Boolean] = js.native
+    var dataTreeExpandElement: js.UndefOr[String | HTMLElement | Boolean] = js.undefined
     
-    var dataTreeFilter: js.UndefOr[Boolean] = js.native
+    var dataTreeFilter: js.UndefOr[Boolean] = js.undefined
     
     /**Propagte selection events from parent rows to children */
-    var dataTreeSelectPropagate: js.UndefOr[Boolean] = js.native
+    var dataTreeSelectPropagate: js.UndefOr[Boolean] = js.undefined
     
-    var dataTreeSort: js.UndefOr[Boolean] = js.native
+    var dataTreeSort: js.UndefOr[Boolean] = js.undefined
     
     /**  By default all nodes on the tree will start collapsed, you can customize the initial expansion state of the tree using the dataTreeStartExpanded option.*
       This option can take one of three possible value types, either a boolean to indicate whether all nodes should start expanded or collapsed: */
     var dataTreeStartExpanded: js.UndefOr[
         Boolean | js.Array[Boolean] | (js.Function2[/* row */ RowComponent, /* level */ Double, Boolean])
-      ] = js.native
+      ] = js.undefined
   }
   object OptionsDataTree {
     
@@ -4959,23 +4908,22 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsDownload extends StObject {
     
     /** The downloadComplete callback is triggered when the user has been prompted to download the file. */
-    var downloadComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var downloadComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** By default Tabulator includes column headers, row groups and column calculations in the download output.
       You can choose to remove column headers groups, row groups or column calculations from the output data by setting the values in the downloadConfig option in the table definition: */
-    var downloadConfig: js.UndefOr[AddditionalExportOptions] = js.native
+    var downloadConfig: js.UndefOr[AddditionalExportOptions] = js.undefined
     
     /** The downloadReady callback allows you to intercept the download file data before the users is prompted to save the file.
       In order for the download to proceed the downloadReady callback is expected to return a blob of file to be downloaded.
       If you would prefer to abort the download you can return false from this callback. This could be useful for example if you want to send the created file to a server via ajax rather than allowing the user to download the file. */
-    var downloadReady: js.UndefOr[js.Function2[/* fileContents */ js.Any, /* blob */ js.Any, _]] = js.native
+    var downloadReady: js.UndefOr[js.Function2[/* fileContents */ js.Any, /* blob */ js.Any, js.Any]] = js.undefined
     
     /**By deafault, only the active rows (rows that have passed filtering) will be included in the download the downloadRowRange option takes a Row Range Lookup value and allows you to choose which rows are included in the download output */
-    var downloadRowRange: js.UndefOr[RowRangeLookup] = js.native
+    var downloadRowRange: js.UndefOr[RowRangeLookup] = js.undefined
   }
   object OptionsDownload {
     
@@ -5001,7 +4949,7 @@ object Tabulator {
       def setDownloadConfigUndefined: Self = StObject.set(x, "downloadConfig", js.undefined)
       
       @scala.inline
-      def setDownloadReady(value: (/* fileContents */ js.Any, /* blob */ js.Any) => _): Self = StObject.set(x, "downloadReady", js.Any.fromFunction2(value))
+      def setDownloadReady(value: (/* fileContents */ js.Any, /* blob */ js.Any) => js.Any): Self = StObject.set(x, "downloadReady", js.Any.fromFunction2(value))
       
       @scala.inline
       def setDownloadReadyUndefined: Self = StObject.set(x, "downloadReady", js.undefined)
@@ -5014,25 +4962,24 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsFiltering extends StObject {
     
     /** The dataFiltered callback is triggered after the table dataset is filtered. */
     var dataFiltered: js.UndefOr[
         js.Function2[/* filters */ js.Array[Filter], /* rows */ js.Array[RowComponent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** The dataFiltering callback is triggered whenever a filter event occurs, before the filter happens. */
-    var dataFiltering: js.UndefOr[js.Function1[/* filters */ js.Array[Filter], Unit]] = js.native
+    var dataFiltering: js.UndefOr[js.Function1[/* filters */ js.Array[Filter], Unit]] = js.undefined
     
     /**When using real time header filtering, Tabulator will wait 300 miliseconds after a keystroke before triggering the filter. You can customise this delay by using the headerFilterLiveFilterDelay table setup option */
-    var headerFilterLiveFilterDelay: js.UndefOr[Double] = js.native
+    var headerFilterLiveFilterDelay: js.UndefOr[Double] = js.undefined
     
     /** Array of filters to be applied on load.     */
-    var initialFilter: js.UndefOr[js.Array[Filter]] = js.native
+    var initialFilter: js.UndefOr[js.Array[Filter]] = js.undefined
     
     /** array of initial values for header filters.     */
-    var initialHeaderFilter: js.UndefOr[js.Array[PickFilterfieldvalue]] = js.native
+    var initialHeaderFilter: js.UndefOr[js.Array[PickFilterfieldvalue]] = js.undefined
   }
   object OptionsFiltering {
     
@@ -5083,68 +5030,67 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsGeneral extends StObject {
     
     // Not listed in options--------------------
     /** Tabulator will automatically attempt to redraw the data contained in the table if the containing element for the table is resized. To disable this functionality, set the autoResize property to false */
-    var autoResize: js.UndefOr[Boolean] = js.native
+    var autoResize: js.UndefOr[Boolean] = js.undefined
     
     /** The dataChanged callback is triggered whenever the table data is changed by the user. Triggers for this include editing any cell in the table, adding a row and deleting a row. */
-    var dataChanged: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var dataChanged: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /** The dataLoaded callback is triggered when a new set of data is loaded into the table. */
-    var dataLoaded: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var dataLoaded: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /** The dataLoading callback is triggered whenever new data is loaded into the table. */
-    var dataLoading: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var dataLoading: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /** The dataSorted callback is triggered after the table dataset is sorted. */
     var dataSorted: js.UndefOr[
         js.Function2[/* sorters */ js.Array[Sorter], /* rows */ js.Array[RowComponent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** The dataSorting callback is triggered whenever a sort event occurs, before sorting happens. */
-    var dataSorting: js.UndefOr[js.Function1[/* sorters */ js.Array[Sorter], Unit]] = js.native
+    var dataSorting: js.UndefOr[js.Function1[/* sorters */ js.Array[Sorter], Unit]] = js.undefined
     
     /** Footer  element to display for the table     */
-    var footerElement: js.UndefOr[String | HTMLElement] = js.native
+    var footerElement: js.UndefOr[String | HTMLElement] = js.undefined
     
     /** Sets the height of the containing element, can be set to any valid height css value. If set to false (the default), the height of the table will resize to fit the table data.     */
-    var height: js.UndefOr[String | Double | `false`] = js.native
+    var height: js.UndefOr[String | Double | `false`] = js.undefined
     
     /** The htmlImported callback is triggered when Tabulator finishes importing data from an HTML table. */
-    var htmlImported: js.UndefOr[EmptyCallback] = js.native
+    var htmlImported: js.UndefOr[EmptyCallback] = js.undefined
     
     /** The htmlImporting callback is triggered when Tabulator starts importing data from an HTML table. */
-    var htmlImporting: js.UndefOr[EmptyCallback] = js.native
+    var htmlImporting: js.UndefOr[EmptyCallback] = js.undefined
     
     /** Setting the invalidOptionWarnings option to false will disable console warning messages for invalid properties in the table constructor and column definition object */
-    var invalidOptionWarnings: js.UndefOr[Boolean] = js.native
+    var invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined
     
     /** Keybinding configuration object     */
-    var keybindings: js.UndefOr[`false` | KeyBinding] = js.native
+    var keybindings: js.UndefOr[`false` | KeyBinding] = js.undefined
     
     /** Can be set to any valid CSS value. By setting this you can allow your table to expand to fit the data, but not overflow its parent element. Whene there are too many rows to fit in the available space, the vertical scroll bar will be shown. This has the added benefit of improving load times on larger tables */
-    var maxHeight: js.UndefOr[String | Double] = js.native
+    var maxHeight: js.UndefOr[String | Double] = js.undefined
     
     /** With a variable table height you can set the minimum height of the table either defined in the min-height CSS property for the element or set it using the minHeight option in the table constructor, this can be set to any valid CSS value  */
-    var minHeight: js.UndefOr[String | Double] = js.native
+    var minHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Whenever a page has been loaded, the pageLoaded callback is called, passing the current page number as an argument. */
-    var pageLoaded: js.UndefOr[js.Function1[/* pageno */ Double, Unit]] = js.native
+    var pageLoaded: js.UndefOr[js.Function1[/* pageno */ Double, Unit]] = js.undefined
     
     /** placeholder element to display on empty table     */
-    var placeholder: js.UndefOr[String | HTMLElement] = js.native
+    var placeholder: js.UndefOr[String | HTMLElement] = js.undefined
     
     /** * The reactivity systems allow Tabulator to watch arrays and objects passed into the table for changes and then automatically update the table.
       This approach means you no longer need to worry about calling a number of different functions on the table to make changes, you simply update the array or object you originally passed into the table and Tabulator will take care of the rest.
       You can enable reactive data by setting the reactiveData option to true in the table constructor, and then passing your data array to the data option.
       Once the table is built any changes to the array will automatically be replicated to the table without needing to call any functions on the table itself*/
-    var reactiveData: js.UndefOr[Boolean] = js.native
+    var reactiveData: js.UndefOr[Boolean] = js.undefined
     
     /** The renderComplete callback is triggered after the table has been rendered */
-    var renderComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** The renderStarted callback is triggered whenever all the rows in the table are about to be rendered. This can include:
       Data is loaded into the table when setData is called
@@ -5154,27 +5100,27 @@ object Tabulator {
       The data is filtered
       The data is sorted
       The redraw function is called */
-    var renderStarted: js.UndefOr[js.Function0[Unit]] = js.native
+    var renderStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Callback is triggered when the table is horizontally scrolled. */
-    var scrollHorizontal: js.UndefOr[js.Function1[/* left */ js.Any, Unit]] = js.native
+    var scrollHorizontal: js.UndefOr[js.Function1[/* left */ js.Any, Unit]] = js.undefined
     
     /** Callback is triggered when the table is vertically scrolled. */
-    var scrollVertical: js.UndefOr[js.Function1[/* top */ js.Any, Unit]] = js.native
+    var scrollVertical: js.UndefOr[js.Function1[/* top */ js.Any, Unit]] = js.undefined
     
     /** When a the tabulator constructor is called, the tableBuilding callback will triggered */
-    var tableBuilding: js.UndefOr[js.Function0[Unit]] = js.native
+    var tableBuilding: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** When a the tabulator constructor is called and the table has finished being rendered, the tableBuilt callback will triggered: */
-    var tableBuilt: js.UndefOr[js.Function0[Unit]] = js.native
+    var tableBuilt: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var textDirection: js.UndefOr[TextDirection] = js.native
+    var textDirection: js.UndefOr[TextDirection] = js.undefined
     
     /** When to regenerate cell tooltip value     */
-    var tooltipGenerationMode: js.UndefOr[load | hover] = js.native
+    var tooltipGenerationMode: js.UndefOr[load | hover] = js.undefined
     
     /** Function to generate tooltips for cells     */
-    var tooltips: js.UndefOr[GlobalTooltipOption] = js.native
+    var tooltips: js.UndefOr[GlobalTooltipOption] = js.undefined
     
     /**There are now three different validation modes available to customise the validation experience:
       blocking - if a user enters an invalid value while editing, they are blocked from leaving the cell until a valid value is entered (default)
@@ -5182,15 +5128,15 @@ object Tabulator {
       highlight - if a user enters an invalid value, then the edit will complete as usual and they are allowed to exit the cell but a highlight is applied to the cell using the tabulator-validation-fail class
       
       manual - no vaildation is automatically performed on edit, but it can be triggered by calling the validate funtion on the table or any Component Object */
-    var validationMode: js.UndefOr[blocking | highlight | manual] = js.native
+    var validationMode: js.UndefOr[blocking | highlight | manual] = js.undefined
     
     /** Enable rendering using the Virtual DOM engine     */
-    var virtualDom: js.UndefOr[Boolean] = js.native
+    var virtualDom: js.UndefOr[Boolean] = js.undefined
     
     /** Manually set the size of the virtual DOM buffer     */
-    var virtualDomBuffer: js.UndefOr[Boolean | Double] = js.native
+    var virtualDomBuffer: js.UndefOr[Boolean | Double] = js.undefined
     
-    var virtualDomHoz: js.UndefOr[Boolean] = js.native
+    var virtualDomHoz: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsGeneral {
     
@@ -5388,7 +5334,6 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsHTML extends StObject {
     
     var groupHeaderDownload: js.UndefOr[
@@ -5398,10 +5343,10 @@ object Tabulator {
           /* data */ js.Any, 
           /* group */ GroupComponent, 
           String
-        ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
-      ] = js.native
+        ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
+      ] = js.undefined
     
-    var htmlOutputConfig: js.UndefOr[AddditionalExportOptions] = js.native
+    var htmlOutputConfig: js.UndefOr[AddditionalExportOptions] = js.undefined
     
     /**By Default when a page is printed that includes a Tabulator it will be rendered on the page exactly as the table is drawn. While this ise useful in most cases, some users prefer tohave more controll over the print output, for example showing all rows of the table, instead of just those visible with the current position of the scroll bar.
       Tabulator provides a print styling mode that will replace the Tabulator with an HTML table for the printout giving you much more control over the look and feel of the table for the print out., to enable this mode, set the printAsHtml option to true in the table constructor. 
@@ -5409,26 +5354,26 @@ object Tabulator {
       This will replace the table (in print outs only) with a simple HTML table with the class tabulator-print-table that you can use to style the table in any way you like.
       It also has the benifit that because it is an HTML table, if it corsses a page break your browser will uatomatically add the column headers in at the top of the next page.
       */
-    var printAsHtml: js.UndefOr[Boolean] = js.native
+    var printAsHtml: js.UndefOr[Boolean] = js.undefined
     
     /**The HTML table will contain column header groups, row groups, and column calculations.
       You can choose to remove any of these from the output data by setting the values in the printConfig option in the table definition */
-    var printConfig: js.UndefOr[AddditionalExportOptions] = js.native
+    var printConfig: js.UndefOr[AddditionalExportOptions] = js.undefined
     
     /**You can use the printFooter table setup option to define a footer to be displayed when the table is printed. */
-    var printFooter: js.UndefOr[StandardStringParam] = js.native
+    var printFooter: js.UndefOr[StandardStringParam] = js.undefined
     
     /**The printFormatter table setup option allows you to carry out any manipulation of the print output before it is displayed to the user for printing*/
-    var printFormatter: js.UndefOr[js.Function2[/* tableHolderElement */ js.Any, /* tableElement */ js.Any, _]] = js.native
+    var printFormatter: js.UndefOr[js.Function2[/* tableHolderElement */ js.Any, /* tableElement */ js.Any, js.Any]] = js.undefined
     
     /**You can use the printHeader table setup option to define a header to be displayed when the table is printed. */
-    var printHeader: js.UndefOr[StandardStringParam] = js.native
+    var printHeader: js.UndefOr[StandardStringParam] = js.undefined
     
     /**By default, only the rows currently visible in the Tabulator will be added to the HTML table. For custom row ranges it is also possible to pass a function into the printRowRange option that should return an array of Row Components */
-    var printRowRange: js.UndefOr[RowRangeLookup | js.Function0[js.Array[RowComponent]]] = js.native
+    var printRowRange: js.UndefOr[RowRangeLookup | js.Function0[js.Array[RowComponent]]] = js.undefined
     
     /**If you want your printed table to be styled to match your Tabulator you can set the printCopyStyle to true, this will copy key layout styling to the printed table */
-    var printStyled: js.UndefOr[Boolean] = js.native
+    var printStyled: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsHTML {
     
@@ -5449,7 +5394,7 @@ object Tabulator {
               /* data */ js.Any, 
               /* group */ GroupComponent, 
               String
-            ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+            ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
       ): Self = StObject.set(x, "groupHeaderDownload", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -5461,7 +5406,7 @@ object Tabulator {
       def setGroupHeaderDownloadUndefined: Self = StObject.set(x, "groupHeaderDownload", js.undefined)
       
       @scala.inline
-      def setGroupHeaderDownloadVarargs(value: (js.Function3[js.Any, /* count */ Double, js.Any, String])*): Self = StObject.set(x, "groupHeaderDownload", js.Array(value :_*))
+      def setGroupHeaderDownloadVarargs(value: (js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String])*): Self = StObject.set(x, "groupHeaderDownload", js.Array(value :_*))
       
       @scala.inline
       def setHtmlOutputConfig(value: AddditionalExportOptions): Self = StObject.set(x, "htmlOutputConfig", value.asInstanceOf[js.Any])
@@ -5491,7 +5436,7 @@ object Tabulator {
       def setPrintFooterUndefined: Self = StObject.set(x, "printFooter", js.undefined)
       
       @scala.inline
-      def setPrintFormatter(value: (/* tableHolderElement */ js.Any, /* tableElement */ js.Any) => _): Self = StObject.set(x, "printFormatter", js.Any.fromFunction2(value))
+      def setPrintFormatter(value: (/* tableHolderElement */ js.Any, /* tableElement */ js.Any) => js.Any): Self = StObject.set(x, "printFormatter", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPrintFormatterUndefined: Self = StObject.set(x, "printFormatter", js.undefined)
@@ -5522,11 +5467,10 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsHistory extends StObject {
     
     /** Enable user interaction history functionality     */
-    var history: js.UndefOr[Boolean] = js.native
+    var history: js.UndefOr[Boolean] = js.undefined
     
     /** The historyRedo event is triggered when the redo action is triggered. */
     var historyRedo: js.UndefOr[
@@ -5536,7 +5480,7 @@ object Tabulator {
           /* data */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** The historyUndo event is triggered when the undo action is triggered. */
     var historyUndo: js.UndefOr[
@@ -5546,7 +5490,7 @@ object Tabulator {
           /* data */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object OptionsHistory {
     
@@ -5583,19 +5527,18 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsLocale extends StObject {
     
     /** You can store as many languages as you like, creating an object inside the langs object with a property of the locale code for that language. A list of locale codes can be found here.
       At present there are three parts of the table that can be localised, the column headers, the header filter placeholder text and the pagination buttons. To localize the pagination buttons, create a pagination property inside your language object and give it the properties outlined below.
       If you wish you can also localize column titles by adding a columns property to your language object. You should store a property of the field name of the column you wish to change, with a value of its title. Any fields that match this will use this title instead of the one provided by the column definition array. */
-    var langs: js.UndefOr[js.Any] = js.native
+    var langs: js.UndefOr[js.Any] = js.undefined
     
     /** You can set the current local in one of two ways. If you want to set it when the table is created, simply include the locale option in your Tabulator constructor. You can either pass in a string matching one of the language options you have defined, or pass in the boolean true which will cause Tabulator to auto-detect the browsers language settings from the navigator.language object. */
-    var locale: js.UndefOr[Boolean | String] = js.native
+    var locale: js.UndefOr[Boolean | String] = js.undefined
     
     /** When a localization event has occurred , the localized callback will triggered, passing the current locale code and language object: */
-    var localized: js.UndefOr[js.Function2[/* locale */ String, /* lang */ js.Any, Unit]] = js.native
+    var localized: js.UndefOr[js.Function2[/* locale */ String, /* lang */ js.Any, Unit]] = js.undefined
   }
   object OptionsLocale {
     
@@ -5628,16 +5571,15 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsMenu extends StObject {
     
-    var groupClickMenu: js.UndefOr[GroupContextMenuSignature] = js.native
+    var groupClickMenu: js.UndefOr[GroupContextMenuSignature] = js.undefined
     
-    var groupContextMenu: js.UndefOr[js.Array[MenuObject[GroupComponent]]] = js.native
+    var groupContextMenu: js.UndefOr[js.Array[MenuObject[GroupComponent]]] = js.undefined
     
-    var rowClickMenu: js.UndefOr[RowContextMenuSignature] = js.native
+    var rowClickMenu: js.UndefOr[RowContextMenuSignature] = js.undefined
     
-    var rowContextMenu: js.UndefOr[RowContextMenuSignature] = js.native
+    var rowContextMenu: js.UndefOr[RowContextMenuSignature] = js.undefined
   }
   object OptionsMenu {
     
@@ -5703,20 +5645,19 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsPagination extends StObject {
     
     /** Choose pagination method, "local" or "remote"     */
-    var pagination: js.UndefOr[remote | local] = js.native
+    var pagination: js.UndefOr[remote | local] = js.undefined
     
     /** When using the addRow function on a paginated table, rows will be added relative to the current page (ie to the top or bottom of the current page), with overflowing rows being shifted onto the next page.
       If you would prefer rows to be added relative to the table (firs/last page) then you can use the paginationAddRow option. it can take one of two values:
       page - add rows relative to current page (default)
       table - add rows relative to the table */
-    var paginationAddRow: js.UndefOr[table | page] = js.native
+    var paginationAddRow: js.UndefOr[table | page] = js.undefined
     
     /**  The number of pagination page buttons shown in the footer using the paginationButtonCount option. By default this has a value of 5.*/
-    var paginationButtonCount: js.UndefOr[Double] = js.native
+    var paginationButtonCount: js.UndefOr[Double] = js.undefined
     
     /** Lookup list to link expected data feilds from the server to their function    * default* {
       "current_page":"current_page",
@@ -5724,7 +5665,7 @@ object Tabulator {
       "data":"data",
       }* *
       */
-    var paginationDataReceived: js.UndefOr[Record[String, String]] = js.native
+    var paginationDataReceived: js.UndefOr[Record[String, String]] = js.undefined
     
     /** Lookup list to link fields expected by the server to their function* default:* {
       "page":"page",
@@ -5733,20 +5674,20 @@ object Tabulator {
       "filters":"filters",
       }
       */
-    var paginationDataSent: js.UndefOr[Record[String, String]] = js.native
+    var paginationDataSent: js.UndefOr[Record[String, String]] = js.undefined
     
     /**  By default the pagination controls are added to the footer of the table. If you wish the controls to be created in another element pass a DOM node or a CSS selector for that element to the paginationElement option.*/
-    var paginationElement: js.UndefOr[HTMLElement | String] = js.native
+    var paginationElement: js.UndefOr[HTMLElement | String] = js.undefined
     
     /** Specify that a specific page should be loaded when the table first load */
-    var paginationInitialPage: js.UndefOr[Double] = js.native
+    var paginationInitialPage: js.UndefOr[Double] = js.undefined
     
     /** Set the number of rows in each page     */
-    var paginationSize: js.UndefOr[Double] = js.native
+    var paginationSize: js.UndefOr[Double] = js.undefined
     
     /**  Setting this option to true will cause Tabulator to create a list of page size options, that are multiples of the current page size. In the example below, the list will have the values of 5, 10, 15 and 20.
       When using the page size selector like this, if you use the setPageSize function to set the page size to a value not in the list, the list will be regenerated using the new page size as the starting valuer    */
-    var paginationSizeSelector: js.UndefOr[`true` | (js.Array[_ | Double])] = js.native
+    var paginationSizeSelector: js.UndefOr[`true` | (js.Array[js.Any | Double])] = js.undefined
   }
   object OptionsPagination {
     
@@ -5802,7 +5743,7 @@ object Tabulator {
       def setPaginationSize(value: Double): Self = StObject.set(x, "paginationSize", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPaginationSizeSelector(value: `true` | (js.Array[_ | Double])): Self = StObject.set(x, "paginationSizeSelector", value.asInstanceOf[js.Any])
+      def setPaginationSizeSelector(value: `true` | (js.Array[js.Any | Double])): Self = StObject.set(x, "paginationSizeSelector", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPaginationSizeSelectorUndefined: Self = StObject.set(x, "paginationSizeSelector", js.undefined)
@@ -5818,25 +5759,24 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsPersistentConfiguration extends StObject {
     
     /**By setting the persistence property to true the table will persist the sort, filter, group (groupBy, groupStartOpen, groupHeader), pagination (paginationSize), and column (title, width, visibility, order) configuration of the table */
-    var persistence: js.UndefOr[`true` | PersistenceOptions] = js.native
+    var persistence: js.UndefOr[`true` | PersistenceOptions] = js.undefined
     
     /** ID tag used to identify persistent storage information     */
-    var persistenceID: js.UndefOr[String] = js.native
+    var persistenceID: js.UndefOr[String] = js.undefined
     
     /**  Persistence information can either be stored in a cookie or in the localSotrage object, you can use the persistenceMode to choose which. It can take three possible values:
       local - (string) Store the persistence information in the localStorage object
       cookie - (string) Store the persistence information in a cookie
       true - (boolean) check if localStorage is available and store persistence information, otherwise store in cookie (Default option)    */
-    var persistenceMode: js.UndefOr[local | cookie | `true`] = js.native
+    var persistenceMode: js.UndefOr[local | cookie | `true`] = js.undefined
     
     /**The persistenceReaderFunc function will receive two arguments, the persistance id of the table, and the type of data to be written. This function must synchronously return the data in the format in which it was passed to the persistenceWriterFunc function. It should return a value of false if no data was present */
     var persistenceReaderFunc: js.UndefOr[
-        js.Function2[/* id */ String, /* type */ sort | filter | group | page | columns, _]
-      ] = js.native
+        js.Function2[/* id */ String, /* type */ sort | filter | group | page | columns, js.Any]
+      ] = js.undefined
     
     /**The persistenceWriterFunc function will receive three arguments, the persistance id of the table, the type of data to be written and an object or array representing the data */
     var persistenceWriterFunc: js.UndefOr[
@@ -5844,18 +5784,18 @@ object Tabulator {
           /* id */ String, 
           /* type */ sort | filter | group | page | columns, 
           /* data */ js.Any, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**  You can ensure the data filtering is stored for the next page load by setting the persistentFilter option to true*/
-    var persistentFilter: js.UndefOr[Boolean] = js.native
+    var persistentFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Enable persistsnt storage of column layout information     */
-    var persistentLayout: js.UndefOr[Boolean] = js.native
+    var persistentLayout: js.UndefOr[Boolean] = js.undefined
     
     /** You can ensure the data sorting is stored for the next page load by setting the persistentSort option to true */
-    var persistentSort: js.UndefOr[Boolean] = js.native
+    var persistentSort: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsPersistentConfiguration {
     
@@ -5884,7 +5824,7 @@ object Tabulator {
       def setPersistenceModeUndefined: Self = StObject.set(x, "persistenceMode", js.undefined)
       
       @scala.inline
-      def setPersistenceReaderFunc(value: (/* id */ String, /* type */ sort | filter | group | page | columns) => _): Self = StObject.set(x, "persistenceReaderFunc", js.Any.fromFunction2(value))
+      def setPersistenceReaderFunc(value: (/* id */ String, /* type */ sort | filter | group | page | columns) => js.Any): Self = StObject.set(x, "persistenceReaderFunc", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPersistenceReaderFuncUndefined: Self = StObject.set(x, "persistenceReaderFunc", js.undefined)
@@ -5894,7 +5834,7 @@ object Tabulator {
       
       @scala.inline
       def setPersistenceWriterFunc(
-        value: (/* id */ String, /* type */ sort | filter | group | page | columns, /* data */ js.Any) => _
+        value: (/* id */ String, /* type */ sort | filter | group | page | columns, /* data */ js.Any) => js.Any
       ): Self = StObject.set(x, "persistenceWriterFunc", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -5920,33 +5860,32 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsRowGrouping extends StObject {
     
     /** The dataGrouping callback is triggered whenever a data grouping event occurs, after grouping happens. */
-    var dataGrouped: js.UndefOr[js.Function0[Unit]] = js.native
+    var dataGrouped: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** The dataGrouping callback is triggered whenever a data grouping event occurs, before grouping happens. */
-    var dataGrouping: js.UndefOr[js.Function0[Unit]] = js.native
+    var dataGrouping: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** String/function to select field to group rows by     */
-    var groupBy: js.UndefOr[String | (js.Function1[/* data */ js.Any, _])] = js.native
+    var groupBy: js.UndefOr[String | (js.Function1[/* data */ js.Any, js.Any])] = js.undefined
     
     /** The groupClick callback is triggered when a user clicks on a group header. */
-    var groupClick: js.UndefOr[GroupEventCallback] = js.native
+    var groupClick: js.UndefOr[GroupEventCallback] = js.undefined
     
     /** show/hide column calculations when group is closed     */
-    var groupClosedShowCalcs: js.UndefOr[Boolean] = js.native
+    var groupClosedShowCalcs: js.UndefOr[Boolean] = js.undefined
     
     /** The groupContext callback is triggered when a user right clicks on a group header.
       If you want to prevent the browsers context menu being triggered in this event you will need to include the preventDefault() function in your callback. */
-    var groupContext: js.UndefOr[GroupEventCallback] = js.native
+    var groupContext: js.UndefOr[GroupEventCallback] = js.undefined
     
     /** The groupDblClick callback is triggered when a user double clicks on a group header. */
-    var groupDblClick: js.UndefOr[GroupEventCallback] = js.native
+    var groupDblClick: js.UndefOr[GroupEventCallback] = js.undefined
     
     /** The groupDblTap callback is triggered when a user taps on a group header on a touch display twice in under 300ms. */
-    var groupDblTap: js.UndefOr[GroupEventCallback] = js.native
+    var groupDblTap: js.UndefOr[GroupEventCallback] = js.undefined
     
     /** You can use the setGroupHeader function to change the header generation function for each group. This function has one argument and takes the same values as passed to the groupHeader setup option.     */
     var groupHeader: js.UndefOr[
@@ -5956,8 +5895,8 @@ object Tabulator {
           /* data */ js.Any, 
           /* group */ GroupComponent, 
           String
-        ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
-      ] = js.native
+        ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
+      ] = js.undefined
     
     /**When printing you may want to apply a different group header from the one usualy used in the table. You can now do this using the groupHeaderPrint table option, which takes the same inputs as the standard groupHeader property. */
     var groupHeaderPrint: js.UndefOr[
@@ -5967,8 +5906,8 @@ object Tabulator {
           /* data */ js.Any, 
           /* group */ GroupComponent, 
           String
-        ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
-      ] = js.native
+        ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
+      ] = js.undefined
     
     /** You can set the default open state of groups using the groupStartOpen property* * This can take one of three possible values:
       true - all groups start open (default value)
@@ -5985,29 +5924,29 @@ object Tabulator {
           /* group */ GroupComponent, 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
     /** The groupTap callback is triggered when a user taps on a group header on a touch display. */
-    var groupTap: js.UndefOr[GroupEventCallback] = js.native
+    var groupTap: js.UndefOr[GroupEventCallback] = js.undefined
     
     /** The groupTapHold callback is triggered when a user taps on a group header on a touch display and holds their finger down for over 1 second */
-    var groupTapHold: js.UndefOr[GroupEventCallback] = js.native
+    var groupTapHold: js.UndefOr[GroupEventCallback] = js.undefined
     
     /** By default Tabulator allows users to toggle a group open or closed by clicking on the arrow icon in the left of the group header. If you would prefer a different behaviour you can use the groupToggleElement option to choose a different option:* * The option can take one of three values:
       arrow - togggle group on arrow element click
       header - toggle group on click anywhere on the group header element
       false - prevent clicking anywhere in the group toggling the group
       */
-    var groupToggleElement: js.UndefOr[arrow | header | `false`] = js.native
+    var groupToggleElement: js.UndefOr[arrow | header | `false`] = js.undefined
     
-    var groupUpdateOnCellEdit: js.UndefOr[Boolean] = js.native
+    var groupUpdateOnCellEdit: js.UndefOr[Boolean] = js.undefined
     
     /** By default Tabulator will create groups for rows based on the values contained in the row data. if you want to explicitly define which field values groups should be created for at each level, you can use the groupValues option.
       This option takes an array of value arrays, each item in the first array should be a list of acceptable field values for groups at that level     */
-    var groupValues: js.UndefOr[GroupValuesArg] = js.native
+    var groupValues: js.UndefOr[GroupValuesArg] = js.undefined
     
     /** The groupVisibilityChanged callback is triggered whenever a group changes between hidden and visible states. */
-    var groupVisibilityChanged: js.UndefOr[js.Function2[/* group */ GroupComponent, /* visible */ Boolean, Unit]] = js.native
+    var groupVisibilityChanged: js.UndefOr[js.Function2[/* group */ GroupComponent, /* visible */ Boolean, Unit]] = js.undefined
   }
   object OptionsRowGrouping {
     
@@ -6033,10 +5972,10 @@ object Tabulator {
       def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
       
       @scala.inline
-      def setGroupBy(value: String | (js.Function1[/* data */ js.Any, _])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      def setGroupBy(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupByFunction1(value: /* data */ js.Any => _): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+      def setGroupByFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
@@ -6079,7 +6018,7 @@ object Tabulator {
               /* data */ js.Any, 
               /* group */ GroupComponent, 
               String
-            ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+            ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
       ): Self = StObject.set(x, "groupHeader", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -6095,7 +6034,7 @@ object Tabulator {
               /* data */ js.Any, 
               /* group */ GroupComponent, 
               String
-            ]) | (js.Array[js.Function3[/* value */ _, /* count */ Double, /* data */ _, String]])
+            ]) | (js.Array[js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String]])
       ): Self = StObject.set(x, "groupHeaderPrint", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -6107,13 +6046,13 @@ object Tabulator {
       def setGroupHeaderPrintUndefined: Self = StObject.set(x, "groupHeaderPrint", js.undefined)
       
       @scala.inline
-      def setGroupHeaderPrintVarargs(value: (js.Function3[js.Any, /* count */ Double, js.Any, String])*): Self = StObject.set(x, "groupHeaderPrint", js.Array(value :_*))
+      def setGroupHeaderPrintVarargs(value: (js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String])*): Self = StObject.set(x, "groupHeaderPrint", js.Array(value :_*))
       
       @scala.inline
       def setGroupHeaderUndefined: Self = StObject.set(x, "groupHeader", js.undefined)
       
       @scala.inline
-      def setGroupHeaderVarargs(value: (js.Function3[js.Any, /* count */ Double, js.Any, String])*): Self = StObject.set(x, "groupHeader", js.Array(value :_*))
+      def setGroupHeaderVarargs(value: (js.Function3[/* value */ js.Any, /* count */ Double, /* data */ js.Any, String])*): Self = StObject.set(x, "groupHeader", js.Array(value :_*))
       
       @scala.inline
       def setGroupStartOpen(
@@ -6175,40 +6114,39 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait OptionsRows extends StObject {
     
     /** The position in the table for new rows to be added, "bottom" or "top" */
-    var addRowPos: js.UndefOr[bottom | top] = js.native
+    var addRowPos: js.UndefOr[bottom | top] = js.undefined
     
     /** The dataTreeRowCollapsed callback is triggered when a row with child rows is collapsed to hide its children.*/
-    var dataTreeRowCollapsed: js.UndefOr[js.Function2[/* row */ RowComponent, /* level */ Double, Unit]] = js.native
+    var dataTreeRowCollapsed: js.UndefOr[js.Function2[/* row */ RowComponent, /* level */ Double, Unit]] = js.undefined
     
     /** The dataTreeRowExpanded callback is triggered when a row with child rows is expanded to reveal the children. */
-    var dataTreeRowExpanded: js.UndefOr[js.Function2[/* row */ RowComponent, /* level */ Double, Unit]] = js.native
+    var dataTreeRowExpanded: js.UndefOr[js.Function2[/* row */ RowComponent, /* level */ Double, Unit]] = js.undefined
     
     /** To allow the user to move rows up and down the table, set the movableRows parameter in the options: */
-    var movableRows: js.UndefOr[Boolean] = js.native
+    var movableRows: js.UndefOr[Boolean] = js.undefined
     
-    var movableRowsConnectedElements: js.UndefOr[String | HTMLElement] = js.native
+    var movableRowsConnectedElements: js.UndefOr[String | HTMLElement] = js.undefined
     
     /** Tabulator also allows you to move rows between tables. To enable this you should supply either a valid CSS selector string a DOM node for the table or the Tabuator object for the table to the movableRowsConnectedTables option. if you want to connect to multple tables then you can pass in an array of values to this option. */
-    var movableRowsConnectedTables: js.UndefOr[String | (js.Array[HTMLElement | String]) | HTMLElement] = js.native
+    var movableRowsConnectedTables: js.UndefOr[String | (js.Array[HTMLElement | String]) | HTMLElement] = js.undefined
     
     /**When a row is dropped on element from from the movableRowsConnectedElements option the movableRowsElementDrop callback will be triggered. You can use this callback to trigger any changes as a result of the drop */
     var movableRowsElementDrop: js.UndefOr[
-        js.Function3[/* e */ MouseEvent, /* element */ HTMLElement, /* row */ RowComponent, _]
-      ] = js.native
+        js.Function3[/* e */ MouseEvent, /* element */ HTMLElement, /* row */ RowComponent, js.Any]
+      ] = js.undefined
     
     /** The movableRowsReceived callback is triggered on a receiving table when a row has been successfuly received.*/
     var movableRowsReceived: js.UndefOr[
         js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ Tabulator, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** The movableRowsReceivedFailed callback is triggered on a receiving table when a row receiver has returned false.*/
     var movableRowsReceivedFailed: js.UndefOr[
         js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ Tabulator, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**  The movableRowsReceiver option should be set on the receiving tables, and sets the action that should be taken when the row is dropped into the table.
       There are several inbuilt receiver functions:
@@ -6217,14 +6155,19 @@ object Tabulator {
       update - updates the row it is dropped on with the sent rows data
       replace - replaces the row it is dropped on with the sent row*/
     var movableRowsReceiver: js.UndefOr[
-        insert | add | update | replace | (js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ Tabulator, _])
-      ] = js.native
+        insert | add | update | replace | (js.Function3[
+          /* fromRow */ RowComponent, 
+          /* toRow */ RowComponent, 
+          /* fromTable */ Tabulator, 
+          js.Any
+        ])
+      ] = js.undefined
     
     /** The movableRowsReceivingStart callback is triggered on a receiving table when a connection is established with a sending table. */
-    var movableRowsReceivingStart: js.UndefOr[js.Function2[/* fromRow */ RowComponent, /* toTable */ Tabulator, Unit]] = js.native
+    var movableRowsReceivingStart: js.UndefOr[js.Function2[/* fromRow */ RowComponent, /* toTable */ Tabulator, Unit]] = js.undefined
     
     /** The movableRowsReceivingStop callback is triggered on a receiving table after a row has been dropped and any senders and receivers have been handled.*/
-    var movableRowsReceivingStop: js.UndefOr[js.Function1[/* fromTable */ Tabulator, Unit]] = js.native
+    var movableRowsReceivingStop: js.UndefOr[js.Function1[/* fromTable */ Tabulator, Unit]] = js.undefined
     
     /** The movableRowsSender option should be set on the sending table, and sets the action that should be taken after the row has been successfuly dropped into the receiving table.
       There are several inbuilt sender functions:
@@ -6233,103 +6176,105 @@ object Tabulator {
       You can also pass a callback to the movableRowsSender option for custom sender functionality
       */
     var movableRowsSender: js.UndefOr[
-        `false` | delete | (js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator, _])
-      ] = js.native
+        `false` | delete | (js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator, js.Any])
+      ] = js.undefined
     
     /** The movableRowsSendingStart callback is triggered on the sending table when a row is picked up from a sending table. */
-    var movableRowsSendingStart: js.UndefOr[js.Function1[/* toTables */ js.Array[_], Unit]] = js.native
+    var movableRowsSendingStart: js.UndefOr[js.Function1[/* toTables */ js.Array[js.Any], Unit]] = js.undefined
     
     /** The movableRowsSendingStop callback is triggered on the sending table after a row has been dropped and any senders and receivers have been handled. */
-    var movableRowsSendingStop: js.UndefOr[js.Function1[/* toTables */ js.Array[_], Unit]] = js.native
+    var movableRowsSendingStop: js.UndefOr[js.Function1[/* toTables */ js.Array[js.Any], Unit]] = js.undefined
     
     /** The movableRowsSent callback is triggered on the sending table when a row has been successfuly received by a receiving table. */
     var movableRowsSent: js.UndefOr[
         js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** The movableRowsSentFailed callback is triggered on the sending table when a row has failed to be received by the receiving table.*/
     var movableRowsSentFailed: js.UndefOr[
         js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** You can allow the user to manually resize rows by dragging the top or bottom border of a row. To enable this functionality, set the resizableRows property to true */
-    var resizableRows: js.UndefOr[Boolean] = js.native
+    var resizableRows: js.UndefOr[Boolean] = js.undefined
     
     /** The rowAdded callback is triggered when a row is added to the table by the addRow and updateOrAddRow functions. */
-    var rowAdded: js.UndefOr[RowChangedCallback] = js.native
+    var rowAdded: js.UndefOr[RowChangedCallback] = js.undefined
     
     /** The rowClick callback is triggered when a user clicks on a row. */
-    var rowClick: js.UndefOr[RowEventCallback] = js.native
+    var rowClick: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowContext callback is triggered when a user right clicks on a row.
       If you want to prevent the browsers context menu being triggered in this event you will need to include the preventDefault() function in your callback. */
-    var rowContext: js.UndefOr[RowEventCallback] = js.native
+    var rowContext: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowDblClick callback is triggered when a user double clicks on a row. */
-    var rowDblClick: js.UndefOr[RowEventCallback] = js.native
+    var rowDblClick: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowDblTap callback is triggered when a user taps on a row on a touch display twice in under 300ms. */
-    var rowDblTap: js.UndefOr[RowEventCallback] = js.native
+    var rowDblTap: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowDeleted callback is triggered when a row is deleted from the table by the deleteRow function. */
-    var rowDeleted: js.UndefOr[RowChangedCallback] = js.native
+    var rowDeleted: js.UndefOr[RowChangedCallback] = js.undefined
     
     /** The rowDeselected event is triggered when a row is deselected, either by the user or programatically. */
-    var rowDeselected: js.UndefOr[RowChangedCallback] = js.native
+    var rowDeselected: js.UndefOr[RowChangedCallback] = js.undefined
     
     /** Tabulator also allows you to define a row level formatter using the rowFormatter option. this lets you alter each row of the table based on the data it contains.
       The function accepts one argument, the RowComponent for the row being formatted. */
-    var rowFormatter: js.UndefOr[js.Function1[/* row */ RowComponent, _]] = js.native
+    var rowFormatter: js.UndefOr[js.Function1[/* row */ RowComponent, js.Any]] = js.undefined
     
     /**When copying to the clipboard you may want to apply a different formatter may want to apply a different formatter from the one usualy used to format the row. You can now do this using the rowFormatterClipboard table option, which takes the same inputs as the standard rowFormatter property. Passing a value of false into the formatter prevent the default row formatter from being run when the table is copied to the clipboard*/
-    var rowFormatterClipboard: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, _])] = js.native
+    var rowFormatterClipboard: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, js.Any])] = js.undefined
     
     /**When the getHtml function is called you may want to apply a different formatter may want to apply a different formatter from the one usualy used to format the row */
-    var rowFormatterHtmlOutput: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, _])] = js.native
+    var rowFormatterHtmlOutput: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, js.Any])] = js.undefined
     
     /**When printing you may want to apply a different formatter may want to apply a different formatter from the one usualy used to format the row. */
-    var rowFormatterPrint: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, _])] = js.native
+    var rowFormatterPrint: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, js.Any])] = js.undefined
     
     /** The rowMouseEnter callback is triggered when the mouse pointer enters a row. */
-    var rowMouseEnter: js.UndefOr[RowEventCallback] = js.native
+    var rowMouseEnter: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowMouseLeave callback is triggered when the mouse pointer leaves a row. */
-    var rowMouseLeave: js.UndefOr[RowEventCallback] = js.native
+    var rowMouseLeave: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowMouseMove callback is triggered when the mouse pointer moves over a row. */
-    var rowMouseMove: js.UndefOr[RowEventCallback] = js.native
+    var rowMouseMove: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowMouseOut callback is triggered when the mouse pointer leaves a row or any of its child elements. */
-    var rowMouseOut: js.UndefOr[RowEventCallback] = js.native
+    var rowMouseOut: js.UndefOr[RowEventCallback] = js.undefined
     
     /**  The rowMouseOver callback is triggered when the mouse pointer enters a row or any of its child elements.*/
-    var rowMouseOver: js.UndefOr[RowEventCallback] = js.native
+    var rowMouseOver: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowMoved callback will be triggered when a row has been successfuly moved. */
-    var rowMoved: js.UndefOr[RowChangedCallback] = js.native
+    var rowMoved: js.UndefOr[RowChangedCallback] = js.undefined
     
     /** The rowResized callback will be triggered when a row has been resized by the user. */
-    var rowResized: js.UndefOr[RowChangedCallback] = js.native
+    var rowResized: js.UndefOr[RowChangedCallback] = js.undefined
     
     /** The rowSelected event is triggered when a row is selected, either by the user or programatically. */
-    var rowSelected: js.UndefOr[RowChangedCallback] = js.native
+    var rowSelected: js.UndefOr[RowChangedCallback] = js.undefined
     
     /** Whenever the number of selected rows changes, through selection or deselection, the rowSelectionChanged event is triggered. This passes an array of the data objects for each row in the order they were selected as the first argument, and an array of row components for each of the rows in order of selection as the second argument. */
-    var rowSelectionChanged: js.UndefOr[js.Function2[/* data */ js.Array[_], /* rows */ js.Array[RowComponent], Unit]] = js.native
+    var rowSelectionChanged: js.UndefOr[
+        js.Function2[/* data */ js.Array[js.Any], /* rows */ js.Array[RowComponent], Unit]
+      ] = js.undefined
     
     /** The rowTap callback is triggered when a user taps on a row on a touch display. */
-    var rowTap: js.UndefOr[RowEventCallback] = js.native
+    var rowTap: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowTapHold callback is triggered when a user taps on a row on a touch display and holds their finger down for over 1 second. */
-    var rowTapHold: js.UndefOr[RowEventCallback] = js.native
+    var rowTapHold: js.UndefOr[RowEventCallback] = js.undefined
     
     /** The rowUpdated callback is triggered when a row is updated by the updateRow, updateOrAddRow, updateData or updateOrAddData, functions. */
-    var rowUpdated: js.UndefOr[RowChangedCallback] = js.native
+    var rowUpdated: js.UndefOr[RowChangedCallback] = js.undefined
     
     /** The default option for triggering a ScrollTo on a visible element can be set using the scrollToRowIfVisible option. It can take a boolean value:
       true - scroll to row, even if it is visible (default)
       false - scroll to row, unless it is currently visible, then don't move */
-    var scrollToRowIfVisible: js.UndefOr[Boolean] = js.native
+    var scrollToRowIfVisible: js.UndefOr[Boolean] = js.undefined
     
     /** * The default ScrollTo position can be set using the scrollToRowPosition option. It can take one of four possible values:
       top - position row with its top edge at the top of the table (default)
@@ -6337,30 +6282,30 @@ object Tabulator {
       bottom - position row with its bottom edge at the bottom of the table
       nearest - position row on the edge of the table it is closest to
       */
-    var scrollToRowPosition: js.UndefOr[ScrollToRowPostition] = js.native
+    var scrollToRowPosition: js.UndefOr[ScrollToRowPostition] = js.undefined
     
     /** The selectable option can take one of a several values:
       false - selectable rows are disabled
       true - selectable rows are enabled, and you can select as many as you want
       integer - any integer value, this sets the maximum number of rows that can be selected (when the maximum number of selected rows is exeded, the first selected row will be deselected to allow the next row to be selected).
       "highlight" (default) - rows have the same hover stylings as selectable rows but do not change state when clicked. This is great for when you want to show that a row is clickable but don't want it to be selectable. */
-    var selectable: js.UndefOr[Boolean | Double | highlight] = js.native
+    var selectable: js.UndefOr[Boolean | Double | highlight] = js.undefined
     
     /** You many want to exclude certain rows from being selected. The selectableCheck options allows you to pass a function to check if the current row should be selectable, returning true will allow row selection, false will result in nothing happening. The function should accept a RowComponent as its first argument. */
-    var selectableCheck: js.UndefOr[js.Function1[/* row */ RowComponent, Boolean]] = js.native
+    var selectableCheck: js.UndefOr[js.Function1[/* row */ RowComponent, Boolean]] = js.undefined
     
     /** By default Tabulator will maintain selected rows when the table is filtered, sorted or paginated (but NOT when the setData function is used). If you want the selected rows to be cleared whenever the table view is updated then set the selectablePersistence option to false. */
-    var selectablePersistence: js.UndefOr[Boolean] = js.native
+    var selectablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** By default you can select a range of rows by holding down the shift key and click dragging over a number of rows to toggle the selected state state of all rows the cursor passes over.
       If you would prefere to select a range of row by clicking on the first row then holding down shift and clicking on the end row then you can acheive this by setting the selectableRangeMode to click */
-    var selectableRangeMode: js.UndefOr[click] = js.native
+    var selectableRangeMode: js.UndefOr[click] = js.undefined
     
     /** By default, row selection works on a rolling basis, if you set the selectable option to a numeric value then when you select past this number of rows, the first row to be selected will be deselected. If you want to disable this behaviour and instead prevent selection of new rows once the limit is reached you can set the selectableRollingSelection option to false. */
-    var selectableRollingSelection: js.UndefOr[Boolean] = js.native
+    var selectableRollingSelection: js.UndefOr[Boolean] = js.undefined
     
     /**  Allows you to specifcy the behaviour when the user tabs from the last editable cell on the last row of the table */
-    var tabEndNewRow: js.UndefOr[Boolean | JSONRecord | (js.Function1[/* row */ RowComponent, _])] = js.native
+    var tabEndNewRow: js.UndefOr[Boolean | JSONRecord | (js.Function1[/* row */ RowComponent, js.Any])] = js.undefined
   }
   object OptionsRows {
     
@@ -6410,7 +6355,7 @@ object Tabulator {
       def setMovableRowsConnectedTablesVarargs(value: (HTMLElement | String)*): Self = StObject.set(x, "movableRowsConnectedTables", js.Array(value :_*))
       
       @scala.inline
-      def setMovableRowsElementDrop(value: (/* e */ MouseEvent, /* element */ HTMLElement, /* row */ RowComponent) => _): Self = StObject.set(x, "movableRowsElementDrop", js.Any.fromFunction3(value))
+      def setMovableRowsElementDrop(value: (/* e */ MouseEvent, /* element */ HTMLElement, /* row */ RowComponent) => js.Any): Self = StObject.set(x, "movableRowsElementDrop", js.Any.fromFunction3(value))
       
       @scala.inline
       def setMovableRowsElementDropUndefined: Self = StObject.set(x, "movableRowsElementDrop", js.undefined)
@@ -6429,11 +6374,16 @@ object Tabulator {
       
       @scala.inline
       def setMovableRowsReceiver(
-        value: insert | add | update | replace | (js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ Tabulator, _])
+        value: insert | add | update | replace | (js.Function3[
+              /* fromRow */ RowComponent, 
+              /* toRow */ RowComponent, 
+              /* fromTable */ Tabulator, 
+              js.Any
+            ])
       ): Self = StObject.set(x, "movableRowsReceiver", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMovableRowsReceiverFunction3(value: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ Tabulator) => _): Self = StObject.set(x, "movableRowsReceiver", js.Any.fromFunction3(value))
+      def setMovableRowsReceiverFunction3(value: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ Tabulator) => js.Any): Self = StObject.set(x, "movableRowsReceiver", js.Any.fromFunction3(value))
       
       @scala.inline
       def setMovableRowsReceiverUndefined: Self = StObject.set(x, "movableRowsReceiver", js.undefined)
@@ -6452,23 +6402,23 @@ object Tabulator {
       
       @scala.inline
       def setMovableRowsSender(
-        value: `false` | delete | (js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator, _])
+        value: `false` | delete | (js.Function3[/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator, js.Any])
       ): Self = StObject.set(x, "movableRowsSender", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMovableRowsSenderFunction3(value: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator) => _): Self = StObject.set(x, "movableRowsSender", js.Any.fromFunction3(value))
+      def setMovableRowsSenderFunction3(value: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ Tabulator) => js.Any): Self = StObject.set(x, "movableRowsSender", js.Any.fromFunction3(value))
       
       @scala.inline
       def setMovableRowsSenderUndefined: Self = StObject.set(x, "movableRowsSender", js.undefined)
       
       @scala.inline
-      def setMovableRowsSendingStart(value: /* toTables */ js.Array[_] => Unit): Self = StObject.set(x, "movableRowsSendingStart", js.Any.fromFunction1(value))
+      def setMovableRowsSendingStart(value: /* toTables */ js.Array[js.Any] => Unit): Self = StObject.set(x, "movableRowsSendingStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMovableRowsSendingStartUndefined: Self = StObject.set(x, "movableRowsSendingStart", js.undefined)
       
       @scala.inline
-      def setMovableRowsSendingStop(value: /* toTables */ js.Array[_] => Unit): Self = StObject.set(x, "movableRowsSendingStop", js.Any.fromFunction1(value))
+      def setMovableRowsSendingStop(value: /* toTables */ js.Array[js.Any] => Unit): Self = StObject.set(x, "movableRowsSendingStop", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMovableRowsSendingStopUndefined: Self = StObject.set(x, "movableRowsSendingStop", js.undefined)
@@ -6537,31 +6487,31 @@ object Tabulator {
       def setRowDeselectedUndefined: Self = StObject.set(x, "rowDeselected", js.undefined)
       
       @scala.inline
-      def setRowFormatter(value: /* row */ RowComponent => _): Self = StObject.set(x, "rowFormatter", js.Any.fromFunction1(value))
+      def setRowFormatter(value: /* row */ RowComponent => js.Any): Self = StObject.set(x, "rowFormatter", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRowFormatterClipboard(value: `false` | (js.Function1[/* row */ RowComponent, _])): Self = StObject.set(x, "rowFormatterClipboard", value.asInstanceOf[js.Any])
+      def setRowFormatterClipboard(value: `false` | (js.Function1[/* row */ RowComponent, js.Any])): Self = StObject.set(x, "rowFormatterClipboard", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRowFormatterClipboardFunction1(value: /* row */ RowComponent => _): Self = StObject.set(x, "rowFormatterClipboard", js.Any.fromFunction1(value))
+      def setRowFormatterClipboardFunction1(value: /* row */ RowComponent => js.Any): Self = StObject.set(x, "rowFormatterClipboard", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRowFormatterClipboardUndefined: Self = StObject.set(x, "rowFormatterClipboard", js.undefined)
       
       @scala.inline
-      def setRowFormatterHtmlOutput(value: `false` | (js.Function1[/* row */ RowComponent, _])): Self = StObject.set(x, "rowFormatterHtmlOutput", value.asInstanceOf[js.Any])
+      def setRowFormatterHtmlOutput(value: `false` | (js.Function1[/* row */ RowComponent, js.Any])): Self = StObject.set(x, "rowFormatterHtmlOutput", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRowFormatterHtmlOutputFunction1(value: /* row */ RowComponent => _): Self = StObject.set(x, "rowFormatterHtmlOutput", js.Any.fromFunction1(value))
+      def setRowFormatterHtmlOutputFunction1(value: /* row */ RowComponent => js.Any): Self = StObject.set(x, "rowFormatterHtmlOutput", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRowFormatterHtmlOutputUndefined: Self = StObject.set(x, "rowFormatterHtmlOutput", js.undefined)
       
       @scala.inline
-      def setRowFormatterPrint(value: `false` | (js.Function1[/* row */ RowComponent, _])): Self = StObject.set(x, "rowFormatterPrint", value.asInstanceOf[js.Any])
+      def setRowFormatterPrint(value: `false` | (js.Function1[/* row */ RowComponent, js.Any])): Self = StObject.set(x, "rowFormatterPrint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRowFormatterPrintFunction1(value: /* row */ RowComponent => _): Self = StObject.set(x, "rowFormatterPrint", js.Any.fromFunction1(value))
+      def setRowFormatterPrintFunction1(value: /* row */ RowComponent => js.Any): Self = StObject.set(x, "rowFormatterPrint", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRowFormatterPrintUndefined: Self = StObject.set(x, "rowFormatterPrint", js.undefined)
@@ -6618,7 +6568,7 @@ object Tabulator {
       def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
       
       @scala.inline
-      def setRowSelectionChanged(value: (/* data */ js.Array[_], /* rows */ js.Array[RowComponent]) => Unit): Self = StObject.set(x, "rowSelectionChanged", js.Any.fromFunction2(value))
+      def setRowSelectionChanged(value: (/* data */ js.Array[js.Any], /* rows */ js.Array[RowComponent]) => Unit): Self = StObject.set(x, "rowSelectionChanged", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRowSelectionChangedUndefined: Self = StObject.set(x, "rowSelectionChanged", js.undefined)
@@ -6684,24 +6634,23 @@ object Tabulator {
       def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
       @scala.inline
-      def setTabEndNewRow(value: Boolean | JSONRecord | (js.Function1[/* row */ RowComponent, _])): Self = StObject.set(x, "tabEndNewRow", value.asInstanceOf[js.Any])
+      def setTabEndNewRow(value: Boolean | JSONRecord | (js.Function1[/* row */ RowComponent, js.Any])): Self = StObject.set(x, "tabEndNewRow", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTabEndNewRowFunction1(value: /* row */ RowComponent => _): Self = StObject.set(x, "tabEndNewRow", js.Any.fromFunction1(value))
+      def setTabEndNewRowFunction1(value: /* row */ RowComponent => js.Any): Self = StObject.set(x, "tabEndNewRow", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTabEndNewRowUndefined: Self = StObject.set(x, "tabEndNewRow", js.undefined)
     }
   }
   
-  @js.native
   trait OptionsSorting extends StObject {
     
     /** Array of sorters to be applied on load.     */
-    var initialSort: js.UndefOr[js.Array[Sorter]] = js.native
+    var initialSort: js.UndefOr[js.Array[Sorter]] = js.undefined
     
     /** reverse the order that multiple sorters are applied to the table.     */
-    var sortOrderReverse: js.UndefOr[Boolean] = js.native
+    var sortOrderReverse: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsSorting {
     
@@ -6731,14 +6680,13 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait PersistenceGroupOptions extends StObject {
     
-    var groupBy: js.UndefOr[Boolean] = js.native
+    var groupBy: js.UndefOr[Boolean] = js.undefined
     
-    var groupHeader: js.UndefOr[Boolean] = js.native
+    var groupHeader: js.UndefOr[Boolean] = js.undefined
     
-    var groupStartOpen: js.UndefOr[Boolean] = js.native
+    var groupStartOpen: js.UndefOr[Boolean] = js.undefined
   }
   object PersistenceGroupOptions {
     
@@ -6771,18 +6719,17 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait PersistenceOptions extends StObject {
     
-    var columns: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var columns: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[Boolean] = js.native
+    var filter: js.UndefOr[Boolean] = js.undefined
     
-    var group: js.UndefOr[Boolean | PersistenceGroupOptions] = js.native
+    var group: js.UndefOr[Boolean | PersistenceGroupOptions] = js.undefined
     
-    var page: js.UndefOr[Boolean | PersistencePageOptions] = js.native
+    var page: js.UndefOr[Boolean | PersistencePageOptions] = js.undefined
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
   }
   object PersistenceOptions {
     
@@ -6830,12 +6777,11 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait PersistencePageOptions extends StObject {
     
-    var page: js.UndefOr[Boolean] = js.native
+    var page: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Boolean] = js.native
+    var size: js.UndefOr[Boolean] = js.undefined
   }
   object PersistencePageOptions {
     
@@ -6862,15 +6808,16 @@ object Tabulator {
     }
   }
   
-  @js.native
-  trait ProgressBarParams extends TrafficParams {
+  trait ProgressBarParams
+    extends StObject
+       with TrafficParams {
     
     // Progress Bar
-    var legend: js.UndefOr[String | `true` | ValueStringCallback] = js.native
+    var legend: js.UndefOr[String | `true` | ValueStringCallback] = js.undefined
     
-    var legendAlign: js.UndefOr[Align] = js.native
+    var legendAlign: js.UndefOr[Align] = js.undefined
     
-    var legendColor: js.UndefOr[Color] = js.native
+    var legendColor: js.UndefOr[Color] = js.undefined
   }
   object ProgressBarParams {
     
@@ -6915,7 +6862,9 @@ object Tabulator {
   type RowChangedCallback = js.Function1[/* row */ RowComponent, Unit]
   
   @js.native
-  trait RowComponent extends CalculationComponent {
+  trait RowComponent
+    extends StObject
+       with CalculationComponent {
     
     /**Add child rows to a data tree row
       *
@@ -6926,9 +6875,9 @@ object Tabulator {
       * If you want to add the row next to an existing row you can pass an optional third argument to the function that will position the new row next to the specified row (above or below based on the value of the second argument). This argument will take any of the standard row component look up options. This must be a row that has the same parent as the row you want to add
       **/
     def addTreeChild(rowData: js.Object): Unit = js.native
-    def addTreeChild(rowData: js.Object, position: js.UndefOr[scala.Nothing], existingRow: RowComponent): Unit = js.native
     def addTreeChild(rowData: js.Object, position: Boolean): Unit = js.native
     def addTreeChild(rowData: js.Object, position: Boolean, existingRow: RowComponent): Unit = js.native
+    def addTreeChild(rowData: js.Object, position: Unit, existingRow: RowComponent): Unit = js.native
     
     /** The delete function deletes the row, removing its data from the table
       *
@@ -7052,10 +7001,11 @@ object Tabulator {
     def visible: typings.tabulatorTables.tabulatorTablesStrings.visible = "visible".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.visible]
   }
   
-  @js.native
-  trait RowSelectionParams extends _FormatterParams {
+  trait RowSelectionParams
+    extends StObject
+       with _FormatterParams {
     
-    var rowRange: js.UndefOr[RowRangeLookup] = js.native
+    var rowRange: js.UndefOr[RowRangeLookup] = js.undefined
   }
   object RowSelectionParams {
     
@@ -7120,12 +7070,11 @@ object Tabulator {
     def top: typings.tabulatorTables.tabulatorTablesStrings.top = "top".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.top]
   }
   
-  @js.native
   trait SelectLabelValue extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: String | Double | Boolean = js.native
+    var value: String | Double | Boolean
   }
   object SelectLabelValue {
     
@@ -7146,19 +7095,19 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait SelectParams
-    extends SharedEditorParams
+    extends StObject
+       with SharedEditorParams
        with SharedSelectAutoCompleteEditorParams
        with _EditorParams {
     
-    var listItemFormatter: js.UndefOr[js.Function2[/* value */ String, /* text */ String, String]] = js.native
+    var listItemFormatter: js.UndefOr[js.Function2[/* value */ String, /* text */ String, String]] = js.undefined
     
-    var multiselect: js.UndefOr[Boolean | Double] = js.native
+    var multiselect: js.UndefOr[Boolean | Double] = js.undefined
     
-    var values: `true` | (js.Array[SelectParamsGroup | String]) | JSONRecord | String = js.native
+    var values: `true` | (js.Array[SelectParamsGroup | String]) | JSONRecord | String
     
-    var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.native
+    var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.undefined
   }
   object SelectParams {
     
@@ -7197,16 +7146,15 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait SelectParamsGroup extends StObject {
     
-    var elementAttributes: js.UndefOr[js.Object] = js.native
+    var elementAttributes: js.UndefOr[js.Object] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var options: js.UndefOr[js.Array[SelectLabelValue]] = js.native
+    var options: js.UndefOr[js.Array[SelectLabelValue]] = js.undefined
     
-    var value: js.UndefOr[String | Double | Boolean] = js.native
+    var value: js.UndefOr[String | Double | Boolean] = js.undefined
   }
   object SelectParamsGroup {
     
@@ -7245,10 +7193,9 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait SharedEditorParams extends StObject {
     
-    var elementAttributes: js.UndefOr[JSONRecord] = js.native
+    var elementAttributes: js.UndefOr[JSONRecord] = js.undefined
     
     /**Built in editors based on input elements such as the input, number, textarea and autocomplete editors have the ability to mask the users input to restrict it to match a given pattern.
       This can be set by passing a string to the the mask option in the columns editorParams 
@@ -7260,16 +7207,16 @@ object Tabulator {
       For example, a mask string of "AAA-999" would require the user to enter three letters followed by a hyphen followed by three numbers
       
       f you want to use the characters A, 9 or * as fixed characters then it is possible to change the characters looked for in the mask by using the maskLetterChar, maskNumberChar and maskWildcardChar options in the editorParams*/
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
     /** you are using fixed characters in your mask (any character other that A, 9 or *), then you can get the mask to automatically fill in these characters for you as you type by setting the maskAutoFill option in the editorParams to true */
-    var maskAutoFill: js.UndefOr[Boolean] = js.native
+    var maskAutoFill: js.UndefOr[Boolean] = js.undefined
     
-    var maskLetterChar: js.UndefOr[String] = js.native
+    var maskLetterChar: js.UndefOr[String] = js.undefined
     
-    var maskNumberChar: js.UndefOr[String] = js.native
+    var maskNumberChar: js.UndefOr[String] = js.undefined
     
-    var maskWildcardChar: js.UndefOr[String] = js.native
+    var maskWildcardChar: js.UndefOr[String] = js.undefined
   }
   object SharedEditorParams {
     
@@ -7320,12 +7267,11 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait SharedSelectAutoCompleteEditorParams extends StObject {
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var sortValuesList: js.UndefOr[asc | desc] = js.native
+    var sortValuesList: js.UndefOr[asc | desc] = js.undefined
   }
   object SharedSelectAutoCompleteEditorParams {
     
@@ -7366,12 +7312,11 @@ object Tabulator {
     def desc: typings.tabulatorTables.tabulatorTablesStrings.desc = "desc".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.desc]
   }
   
-  @js.native
   trait Sorter extends StObject {
     
-    var column: String = js.native
+    var column: String
     
-    var dir: SortDirection = js.native
+    var dir: SortDirection
   }
   object Sorter {
     
@@ -7392,17 +7337,16 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait SorterFromTable extends StObject {
     
     /** The column component for the sorted column. */
-    var column: ColumnComponent = js.native
+    var column: ColumnComponent
     
     /** A string of either `asc` or `desc` indicating the direction of sort. */
-    var dir: SortDirection = js.native
+    var dir: SortDirection
     
     /** A string of the field name for the sorted column. */
-    var field: String = js.native
+    var field: String
   }
   object SorterFromTable {
     
@@ -7458,11 +7402,12 @@ object Tabulator {
     def unique: typings.tabulatorTables.tabulatorTablesStrings.unique = "unique".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.unique]
   }
   
-  @js.native
-  trait StarRatingParams extends _FormatterParams {
+  trait StarRatingParams
+    extends StObject
+       with _FormatterParams {
     
     // Star Rating
-    var stars: js.UndefOr[Double] = js.native
+    var stars: js.UndefOr[Double] = js.undefined
   }
   object StarRatingParams {
     
@@ -7483,12 +7428,12 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait TextAreaParams
-    extends SharedEditorParams
+    extends StObject
+       with SharedEditorParams
        with _EditorParams {
     
-    var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.native
+    var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.undefined
   }
   object TextAreaParams {
     
@@ -7527,17 +7472,18 @@ object Tabulator {
     def rtl: typings.tabulatorTables.tabulatorTablesStrings.rtl = "rtl".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.rtl]
   }
   
-  @js.native
-  trait TickCrossParams extends _FormatterParams {
+  trait TickCrossParams
+    extends StObject
+       with _FormatterParams {
     
     // Tick Cross
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var allowTruthy: js.UndefOr[Boolean] = js.native
+    var allowTruthy: js.UndefOr[Boolean] = js.undefined
     
-    var crossElement: js.UndefOr[Boolean | String] = js.native
+    var crossElement: js.UndefOr[Boolean | String] = js.undefined
     
-    var tickElement: js.UndefOr[Boolean | String] = js.native
+    var tickElement: js.UndefOr[Boolean | String] = js.undefined
   }
   object TickCrossParams {
     
@@ -7576,15 +7522,16 @@ object Tabulator {
     }
   }
   
-  @js.native
-  trait TrafficParams extends _FormatterParams {
+  trait TrafficParams
+    extends StObject
+       with _FormatterParams {
     
-    var color: js.UndefOr[Color] = js.native
+    var color: js.UndefOr[Color] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     // Traffic
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object TrafficParams {
     
@@ -7623,17 +7570,16 @@ object Tabulator {
     }
   }
   
-  @js.native
   trait Validator extends StObject {
     
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[js.Any] = js.undefined
     
     var `type`: StandardValidatorType | (js.Function3[
         /* cell */ CellComponent, 
         /* value */ js.Any, 
         /* parameters */ js.UndefOr[js.Any], 
         Boolean
-      ]) = js.native
+      ])
   }
   object Validator {
     
@@ -7711,7 +7657,7 @@ object Tabulator {
   object _EditorParams {
     
     @scala.inline
-    def AutoCompleteParams(values: `true` | (js.Array[_ | String]) | JSONRecord | String): typings.tabulatorTables.Tabulator.AutoCompleteParams = {
+    def AutoCompleteParams(values: `true` | (js.Array[js.Any | String]) | JSONRecord | String): typings.tabulatorTables.Tabulator.AutoCompleteParams = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tabulatorTables.Tabulator.AutoCompleteParams]
     }

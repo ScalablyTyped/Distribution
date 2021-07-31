@@ -2,51 +2,49 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartNotebookExecutionInput extends StObject {
   
   /**
     * The unique identifier of the EMR Notebook to use for notebook execution.
     */
-  var EditorId: XmlStringMaxLen256 = js.native
+  var EditorId: XmlStringMaxLen256
   
   /**
     * Specifies the execution engine (cluster) that runs the notebook execution.
     */
-  var ExecutionEngine: ExecutionEngineConfig = js.native
+  var ExecutionEngine: ExecutionEngineConfig
   
   /**
     * An optional name for the notebook execution.
     */
-  var NotebookExecutionName: js.UndefOr[XmlStringMaxLen256] = js.native
+  var NotebookExecutionName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The unique identifier of the Amazon EC2 security group to associate with the EMR Notebook for this notebook execution.
     */
-  var NotebookInstanceSecurityGroupId: js.UndefOr[XmlStringMaxLen256] = js.native
+  var NotebookInstanceSecurityGroupId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * Input parameters in JSON format passed to the EMR Notebook at runtime for execution.
     */
-  var NotebookParams: js.UndefOr[XmlString] = js.native
+  var NotebookParams: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The path and file name of the notebook file for this execution, relative to the path specified for the EMR Notebook. For example, if you specify a path of s3://MyBucket/MyNotebooks when you create an EMR Notebook for a notebook with an ID of e-ABCDEFGHIJK1234567890ABCD (the EditorID of this request), and you specify a RelativePath of my_notebook_executions/notebook_execution.ipynb, the location of the file for the notebook execution is s3://MyBucket/MyNotebooks/e-ABCDEFGHIJK1234567890ABCD/my_notebook_executions/notebook_execution.ipynb.
     */
-  var RelativePath: XmlString = js.native
+  var RelativePath: XmlString
   
   /**
     * The name or ARN of the IAM role that is used as the service role for Amazon EMR (the EMR role) for the notebook execution.
     */
-  var ServiceRole: XmlString = js.native
+  var ServiceRole: XmlString
   
   /**
     * A list of tags associated with a notebook execution. Tags are user-defined key value pairs that consist of a required key string with a maximum of 128 characters and an optional value string with a maximum of 256 characters.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object StartNotebookExecutionInput {
   

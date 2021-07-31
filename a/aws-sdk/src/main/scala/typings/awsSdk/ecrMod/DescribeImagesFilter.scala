@@ -2,16 +2,14 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImagesFilter extends StObject {
   
   /**
     * The tag status with which to filter your DescribeImages results. You can filter results based on whether they are TAGGED or UNTAGGED.
     */
-  var tagStatus: js.UndefOr[TagStatus] = js.native
+  var tagStatus: js.UndefOr[TagStatus] = js.undefined
 }
 object DescribeImagesFilter {
   

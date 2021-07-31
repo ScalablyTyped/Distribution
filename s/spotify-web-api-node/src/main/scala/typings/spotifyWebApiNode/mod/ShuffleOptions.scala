@@ -2,13 +2,13 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShuffleOptions extends DeviceOptions {
+trait ShuffleOptions
+  extends StObject
+     with DeviceOptions {
   
-  var state: js.UndefOr[Boolean] = js.native
+  var state: js.UndefOr[Boolean] = js.undefined
 }
 object ShuffleOptions {
   

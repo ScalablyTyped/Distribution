@@ -2,7 +2,6 @@ package typings.pTimes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,16 +21,14 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-times", JSImport.Namespace)
-  @js.native
-  def apply[ValueType](count: Double, mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[ValueType]] = js.native
-  @JSImport("p-times", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[ValueType](count: Double, mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
+  @scala.inline
   def apply[ValueType](
     count: Double,
     mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]],
     options: Options
-  ): js.Promise[js.Array[ValueType]] = js.native
+  ): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
   
   @JSImport("p-times", JSImport.Namespace)
   @js.native

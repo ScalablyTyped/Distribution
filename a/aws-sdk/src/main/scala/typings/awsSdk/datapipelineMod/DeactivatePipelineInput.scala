@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeactivatePipelineInput extends StObject {
   
   /**
     * Indicates whether to cancel any running objects. The default is true, which sets the state of any running objects to CANCELED. If this value is false, the pipeline is deactivated after all running objects finish.
     */
-  var cancelActive: js.UndefOr[typings.awsSdk.datapipelineMod.cancelActive] = js.native
+  var cancelActive: js.UndefOr[typings.awsSdk.datapipelineMod.cancelActive] = js.undefined
   
   /**
     * The ID of the pipeline.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
 }
 object DeactivatePipelineInput {
   

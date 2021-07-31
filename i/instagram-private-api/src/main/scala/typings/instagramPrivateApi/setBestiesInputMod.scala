@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object setBestiesInputMod {
   
-  @js.native
   trait SetBestiesInput extends StObject {
     
-    var add: js.UndefOr[js.Array[String | Double]] = js.native
+    var add: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var remove: js.UndefOr[js.Array[String | Double]] = js.native
+    var remove: js.UndefOr[js.Array[String | Double]] = js.undefined
   }
   object SetBestiesInput {
     

@@ -2,30 +2,28 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISVGElementInstance extends StObject {
   
   @JSName("MSHTML.ISVGElementInstance_typekey")
-  var MSHTMLDotISVGElementInstance_typekey: ISVGElementInstance = js.native
+  var MSHTMLDotISVGElementInstance_typekey: ISVGElementInstance
   
-  val childNodes: ISVGElementInstanceList = js.native
+  val childNodes: ISVGElementInstanceList
   
-  val correspondingElement: ISVGElement = js.native
+  val correspondingElement: ISVGElement
   
-  val correspondingUseElement: ISVGUseElement = js.native
+  val correspondingUseElement: ISVGUseElement
   
-  val firstChild: ISVGElementInstance = js.native
+  val firstChild: ISVGElementInstance
   
-  val lastChild: ISVGElementInstance = js.native
+  val lastChild: ISVGElementInstance
   
-  val nextSibling: ISVGElementInstance = js.native
+  val nextSibling: ISVGElementInstance
   
-  val parentNode: ISVGElementInstance = js.native
+  val parentNode: ISVGElementInstance
   
-  val previousSibling: ISVGElementInstance = js.native
+  val previousSibling: ISVGElementInstance
 }
 object ISVGElementInstance {
   

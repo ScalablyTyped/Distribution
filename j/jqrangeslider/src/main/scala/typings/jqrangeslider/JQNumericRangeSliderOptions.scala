@@ -2,22 +2,22 @@ package typings.jqrangeslider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQNumericRangeSliderOptions extends JQRangeSliderOptions {
+trait JQNumericRangeSliderOptions
+  extends StObject
+     with JQRangeSliderOptions {
   
-  var bounds: js.UndefOr[JQRangeSliderNumericRange] = js.native
+  var bounds: js.UndefOr[JQRangeSliderNumericRange] = js.undefined
   
   // min and max values of the slider
-  var defaultValues: js.UndefOr[JQRangeSliderNumericRange] = js.native
+  var defaultValues: js.UndefOr[JQRangeSliderNumericRange] = js.undefined
   
   // values selected by default on construction
-  var formatter: js.UndefOr[js.Function1[/* int */ Double, String]] = js.native
+  var formatter: js.UndefOr[js.Function1[/* int */ Double, String]] = js.undefined
   
   // customize displayed label text
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
 }
 object JQNumericRangeSliderOptions {
   

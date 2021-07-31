@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows access to a one-dimensional sequence of double precision floating-point numbers. */
-@js.native
-trait XNumericalDataSequence extends XInterface {
+trait XNumericalDataSequence
+  extends StObject
+     with XInterface {
   
   /** retrieves data as `double` values. */
-  val NumericalData: SafeArray[Double] = js.native
+  val NumericalData: SafeArray[Double]
   
   /** retrieves data as `double` values. */
-  def getNumericalData(): SafeArray[Double] = js.native
+  def getNumericalData(): SafeArray[Double]
 }
 object XNumericalDataSequence {
   

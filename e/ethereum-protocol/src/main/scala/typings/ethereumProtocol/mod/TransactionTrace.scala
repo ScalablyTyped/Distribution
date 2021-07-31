@@ -2,17 +2,15 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionTrace extends StObject {
   
-  var gas: Double = js.native
+  var gas: Double
   
-  var returnValue: js.Any = js.native
+  var returnValue: js.Any
   
-  var structLogs: js.Array[StructLog] = js.native
+  var structLogs: js.Array[StructLog]
 }
 object TransactionTrace {
   

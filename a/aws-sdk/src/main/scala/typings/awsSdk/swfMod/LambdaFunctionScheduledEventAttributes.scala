@@ -2,41 +2,39 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionScheduledEventAttributes extends StObject {
   
   /**
     * Data attached to the event that the decider can use in subsequent workflow tasks. This data isn't sent to the Lambda task.
     */
-  var control: js.UndefOr[Data] = js.native
+  var control: js.UndefOr[Data] = js.undefined
   
   /**
     * The ID of the LambdaFunctionCompleted event corresponding to the decision that resulted in scheduling this activity task. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var decisionTaskCompletedEventId: EventId = js.native
+  var decisionTaskCompletedEventId: EventId
   
   /**
     * The unique ID of the Lambda task.
     */
-  var id: FunctionId = js.native
+  var id: FunctionId
   
   /**
     * The input provided to the Lambda task.
     */
-  var input: js.UndefOr[FunctionInput] = js.native
+  var input: js.UndefOr[FunctionInput] = js.undefined
   
   /**
     * The name of the Lambda function.
     */
-  var name: FunctionName = js.native
+  var name: FunctionName
   
   /**
     * The maximum amount of time a worker can take to process the Lambda task.
     */
-  var startToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.native
+  var startToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
 }
 object LambdaFunctionScheduledEventAttributes {
   

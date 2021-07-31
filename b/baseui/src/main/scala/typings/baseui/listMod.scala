@@ -13,19 +13,17 @@ import typings.std.HTMLLIElement
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
   
-  @js.native
   trait ARTWORK_SIZES extends StObject {
     
-    var LARGE: typings.baseui.baseuiStrings.LARGE = js.native
+    var LARGE: typings.baseui.baseuiStrings.LARGE
     
-    var MEDIUM: typings.baseui.baseuiStrings.MEDIUM = js.native
+    var MEDIUM: typings.baseui.baseuiStrings.MEDIUM
     
-    var SMALL: typings.baseui.baseuiStrings.SMALL = js.native
+    var SMALL: typings.baseui.baseuiStrings.SMALL
   }
   object ARTWORK_SIZES {
     
@@ -49,7 +47,7 @@ object listMod {
   
   @JSImport("baseui/list", "ListItem")
   @js.native
-  val ListItem: ForwardRefExoticComponent[PropsT with RefAttributes[HTMLLIElement]] = js.native
+  val ListItem: ForwardRefExoticComponent[PropsT & RefAttributes[HTMLLIElement]] = js.native
   
   @JSImport("baseui/list", "ListItemLabel")
   @js.native
@@ -94,14 +92,13 @@ object listMod {
     def SMALL: typings.baseui.baseuiStrings.SMALL = "SMALL".asInstanceOf[typings.baseui.baseuiStrings.SMALL]
   }
   
-  @js.native
   trait LabelPropsT extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var sublist: js.UndefOr[Boolean] = js.native
+    var sublist: js.UndefOr[Boolean] = js.undefined
   }
   object LabelPropsT {
     
@@ -134,24 +131,23 @@ object listMod {
     }
   }
   
-  @js.native
   trait ListOverrides extends StObject {
     
     var ArtworkContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<StyledArtworkContainerPropsT> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Content: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<StyledContentPropsT> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var EndEnhancerContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ListOverrides {
     
@@ -198,24 +194,25 @@ object listMod {
     }
   }
   
-  @js.native
-  trait MenuAdapterPropsT extends PropsT {
+  trait MenuAdapterPropsT
+    extends StObject
+       with PropsT {
     
     @JSName("$disabled")
-    var $disabled: Boolean = js.native
+    var $disabled: Boolean
     
     @JSName("$isHighlighted")
-    var $isHighlighted: Boolean = js.native
+    var $isHighlighted: Boolean
     
     @JSName("$size")
-    var $size: String = js.native
+    var $size: String
     
     // eslint-disable-next-line flowtype/no-weak-types
-    var item: js.Any = js.native
+    var item: js.Any
     
-    def onClick(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any = js.native
+    def onClick(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any
     
-    def onMouseEnter(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any = js.native
+    def onMouseEnter(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any
   }
   object MenuAdapterPropsT {
     
@@ -255,20 +252,19 @@ object listMod {
     }
   }
   
-  @js.native
   trait PropsT extends StObject {
     
-    var artwork: js.UndefOr[ReactNode] = js.native
+    var artwork: js.UndefOr[ReactNode] = js.undefined
     
-    var artworkSize: js.UndefOr[ArtworkSizesT | Double] = js.native
+    var artworkSize: js.UndefOr[ArtworkSizesT | Double] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var endEnhancer: js.UndefOr[ReactNode] = js.native
+    var endEnhancer: js.UndefOr[ReactNode] = js.undefined
     
-    var overrides: js.UndefOr[ListOverrides] = js.native
+    var overrides: js.UndefOr[ListOverrides] = js.undefined
     
-    var sublist: js.UndefOr[Boolean] = js.native
+    var sublist: js.UndefOr[Boolean] = js.undefined
   }
   object PropsT {
     
@@ -319,14 +315,13 @@ object listMod {
     }
   }
   
-  @js.native
   trait StyledArtworkContainerPropsT extends StObject {
     
     @JSName("$artworkSize")
-    var $artworkSize: ArtworkSizesT = js.native
+    var $artworkSize: ArtworkSizesT
     
     @JSName("$sublist")
-    var $sublist: js.UndefOr[Boolean] = js.native
+    var $sublist: js.UndefOr[Boolean] = js.undefined
   }
   object StyledArtworkContainerPropsT {
     
@@ -350,14 +345,13 @@ object listMod {
     }
   }
   
-  @js.native
   trait StyledContentPropsT extends StObject {
     
     @JSName("$mLeft")
-    var $mLeft: Boolean = js.native
+    var $mLeft: Boolean
     
     @JSName("$sublist")
-    var $sublist: Boolean = js.native
+    var $sublist: Boolean
   }
   object StyledContentPropsT {
     

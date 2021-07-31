@@ -2,10 +2,8 @@ package typings.jquerySimplepagination
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimplePaginationOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {string}
     * @memberof SimplePaginationOptions
     */
-  var cssStyle: js.UndefOr[String] = js.native
+  var cssStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Which page will be selected immediately after init.
@@ -22,7 +20,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {number}
     * @memberof SimplePaginationOptions
     */
-  var currentPage: js.UndefOr[Double] = js.native
+  var currentPage: js.UndefOr[Double] = js.undefined
   
   /**
     * How many page numbers should be visible while navigating.
@@ -31,7 +29,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {number}
     * @memberof SimplePaginationOptions
     */
-  var displayedPages: js.UndefOr[Double] = js.native
+  var displayedPages: js.UndefOr[Double] = js.undefined
   
   /**
     * How many page numbers are visible at the beginning/ending of the pagination.
@@ -39,7 +37,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {number}
     * @memberof SimplePaginationOptions
     */
-  var edges: js.UndefOr[Double] = js.native
+  var edges: js.UndefOr[Double] = js.undefined
   
   /**
     * When this option is true,
@@ -49,9 +47,9 @@ trait SimplePaginationOptions extends StObject {
     * @type {boolean}
     * @memberof SimplePaginationOptions
     */
-  var ellipsePageSet: js.UndefOr[Boolean] = js.native
+  var ellipsePageSet: js.UndefOr[Boolean] = js.undefined
   
-  var ellipseText: js.UndefOr[String] = js.native
+  var ellipseText: js.UndefOr[String] = js.undefined
   
   /**
     * A string used to build the href attribute, added before the page number.
@@ -59,7 +57,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {string}
     * @memberof SimplePaginationOptions
     */
-  var hrefTextPrefix: js.UndefOr[String] = js.native
+  var hrefTextPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Another string used to build the href attribute, added after the page number.
@@ -67,9 +65,9 @@ trait SimplePaginationOptions extends StObject {
     * @type {string}
     * @memberof SimplePaginationOptions
     */
-  var hrefTextSuffix: js.UndefOr[String] = js.native
+  var hrefTextSuffix: js.UndefOr[String] = js.undefined
   
-  var invertPageOrder: js.UndefOr[Boolean] = js.native
+  var invertPageOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Total number of items that will be used to calculate the pages.
@@ -77,7 +75,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {number}
     * @memberof SimplePaginationOptions
     */
-  var items: js.UndefOr[Double] = js.native
+  var items: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of items displayed on each page.
@@ -85,7 +83,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {number}
     * @memberof SimplePaginationOptions
     */
-  var itemsOnPage: js.UndefOr[Double] = js.native
+  var itemsOnPage: js.UndefOr[Double] = js.undefined
   
   /**
     * A collection of labels that will be used to render the pagination items, replacing the numbers.
@@ -93,11 +91,11 @@ trait SimplePaginationOptions extends StObject {
     * @type {any[]}
     * @memberof SimplePaginationOptions
     */
-  var labelMap: js.UndefOr[js.Array[_]] = js.native
+  var labelMap: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var listStyle: js.UndefOr[Boolean] = js.native
+  var listStyle: js.UndefOr[Boolean] = js.undefined
   
-  var nextAtFront: js.UndefOr[Boolean] = js.native
+  var nextAtFront: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Text to be display on the next button.
@@ -105,14 +103,14 @@ trait SimplePaginationOptions extends StObject {
     * @type {string}
     * @memberof SimplePaginationOptions
     */
-  var nextText: js.UndefOr[String] = js.native
+  var nextText: js.UndefOr[String] = js.undefined
   
   /**
     * Function to call when the pagination is initialized.
     * 
     * @memberof SimplePaginationOptions
     */
-  var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+  var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Function to call when a page is clicked.
@@ -120,7 +118,7 @@ trait SimplePaginationOptions extends StObject {
     * 
     * @memberof SimplePaginationOptions
     */
-  var onPageClick: js.UndefOr[js.Function2[/* page */ Double, /* event */ js.Any, Unit]] = js.native
+  var onPageClick: js.UndefOr[js.Function2[/* page */ Double, /* event */ js.Any, Unit]] = js.undefined
   
   /**
     *     If specified, items and itemsOnPage will not be used to calculate the number of pages.
@@ -128,7 +126,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {number}
     * @memberof SimplePaginationOptions
     */
-  var pages: js.UndefOr[Double] = js.native
+  var pages: js.UndefOr[Double] = js.undefined
   
   /**
     * Text to be display on the previous button.
@@ -136,7 +134,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {string}
     * @memberof SimplePaginationOptions
     */
-  var prevText: js.UndefOr[String] = js.native
+  var prevText: js.UndefOr[String] = js.undefined
   
   /**
     * Set to false if you don't want to select the page immediately after click.
@@ -144,13 +142,13 @@ trait SimplePaginationOptions extends StObject {
     * @type {boolean}
     * @memberof SimplePaginationOptions
     */
-  var selectOnClick: js.UndefOr[Boolean] = js.native
+  var selectOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var useAnchors: js.UndefOr[Boolean] = js.native
+  var useAnchors: js.UndefOr[Boolean] = js.undefined
   
-  var useEndEdge: js.UndefOr[Boolean] = js.native
+  var useEndEdge: js.UndefOr[Boolean] = js.undefined
   
-  var useStartEdge: js.UndefOr[Boolean] = js.native
+  var useStartEdge: js.UndefOr[Boolean] = js.undefined
 }
 object SimplePaginationOptions {
   
@@ -230,7 +228,7 @@ object SimplePaginationOptions {
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setLabelMap(value: js.Array[_]): Self = StObject.set(x, "labelMap", value.asInstanceOf[js.Any])
+    def setLabelMap(value: js.Array[js.Any]): Self = StObject.set(x, "labelMap", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLabelMapUndefined: Self = StObject.set(x, "labelMap", js.undefined)

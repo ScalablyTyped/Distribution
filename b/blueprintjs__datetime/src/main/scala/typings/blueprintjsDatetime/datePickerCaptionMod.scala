@@ -7,7 +7,6 @@ import typings.reactDayPicker.propsMod.CaptionElementProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerCaptionMod {
@@ -38,21 +37,22 @@ object datePickerCaptionMod {
     var positionArrows: js.Any = js.native
   }
   
-  @js.native
-  trait IDatePickerCaptionProps extends CaptionElementProps {
+  trait IDatePickerCaptionProps
+    extends StObject
+       with CaptionElementProps {
     
-    var maxDate: Date = js.native
+    var maxDate: Date
     
-    var minDate: Date = js.native
+    var minDate: Date
     
     /** Callback invoked when the month or year `<select>` is changed. */
-    var onDateChange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+    var onDateChange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
     
-    var onMonthChange: js.UndefOr[js.Function1[/* month */ Double, Unit]] = js.native
+    var onMonthChange: js.UndefOr[js.Function1[/* month */ Double, Unit]] = js.undefined
     
-    var onYearChange: js.UndefOr[js.Function1[/* year */ Double, Unit]] = js.native
+    var onYearChange: js.UndefOr[js.Function1[/* year */ Double, Unit]] = js.undefined
     
-    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.native
+    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined
   }
   object IDatePickerCaptionProps {
     
@@ -104,10 +104,9 @@ object datePickerCaptionMod {
     }
   }
   
-  @js.native
   trait IDatePickerCaptionState extends StObject {
     
-    var monthRightOffset: Double = js.native
+    var monthRightOffset: Double
   }
   object IDatePickerCaptionState {
     

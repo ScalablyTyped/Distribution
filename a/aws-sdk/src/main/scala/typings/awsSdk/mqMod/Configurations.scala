@@ -2,26 +2,24 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configurations extends StObject {
   
   /**
     * The current configuration of the broker.
     */
-  var Current: js.UndefOr[ConfigurationId] = js.native
+  var Current: js.UndefOr[ConfigurationId] = js.undefined
   
   /**
     * The history of configurations applied to the broker.
     */
-  var History: js.UndefOr[listOfConfigurationId] = js.native
+  var History: js.UndefOr[listOfConfigurationId] = js.undefined
   
   /**
     * The pending configuration of the broker.
     */
-  var Pending: js.UndefOr[ConfigurationId] = js.native
+  var Pending: js.UndefOr[ConfigurationId] = js.undefined
 }
 object Configurations {
   

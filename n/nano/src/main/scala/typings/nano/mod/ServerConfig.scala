@@ -2,15 +2,13 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerConfig extends StObject {
   
-  var db: String = js.native
+  var db: String
   
-  var url: String = js.native
+  var url: String
 }
 object ServerConfig {
   

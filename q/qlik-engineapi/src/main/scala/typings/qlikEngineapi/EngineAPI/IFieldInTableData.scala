@@ -2,102 +2,100 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FieldInTableData...
   */
-@js.native
 trait IFieldInTableData extends StObject {
   
   /**
     * Comment related to the field.
     */
-  var qComment: String = js.native
+  var qComment: String
   
   /**
     * List of the derived fields.
     */
-  var qDerivedFields: IDerivedFieldsInTableData = js.native
+  var qDerivedFields: IDerivedFieldsInTableData
   
   /**
     * This property is set to true if the field contains some duplicate values.
     */
-  var qHasDuplicates: Boolean = js.native
+  var qHasDuplicates: Boolean
   
   /**
     * This property is set to true if the field contains some Null values.
     */
-  var qHasNull: Boolean = js.native
+  var qHasNull: Boolean
   
   /**
     * ...
     */
-  var qHasWild: Boolean = js.native
+  var qHasWild: Boolean
   
   /**
     * Number of records that have values (i.e. not NULL) in the field as compared to the total number of records in the table.
     */
-  var qInformationDensity: Double = js.native
+  var qInformationDensity: Double
   
   /**
     * This property is set to true if the field contains a synthetic key.
     */
-  var qIsSynthetic: Boolean = js.native
+  var qIsSynthetic: Boolean
   
   /**
     * Tells if the field is a key field.
     */
-  var qKeyType: TableRecordKeyType = js.native
+  var qKeyType: TableRecordKeyType
   
   /**
     * Name of the field.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Is shown for fixed records.
     * qOriginalFieldName and qName are identical if no field names are used in the file.
     * qOriginalFieldName differs from qName if embedded file names are used in the file.
     */
-  var qOriginalFields: js.Array[String] = js.native
+  var qOriginalFields: js.Array[String]
   
   /**
     * ...
     */
-  var qPresent: Boolean = js.native
+  var qPresent: Boolean
   
   /**
     * Number of distinct values in the field (in the current table) as
     * compared to the total number of distinct values of this field (in all tables).
     */
-  var qSubsetRatio: Double = js.native
+  var qSubsetRatio: Double
   
   /**
     * List of tags related to the field.
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
   
   /**
     * Number of values that are non Null.
     */
-  var qnNonNulls: Double = js.native
+  var qnNonNulls: Double
   
   /**
     * ...
     */
-  var qnPresentDistinctValues: Double = js.native
+  var qnPresentDistinctValues: Double
   
   /**
     * Number of rows in the field
     */
-  var qnRows: Double = js.native
+  var qnRows: Double
   
   /**
     * Number of distinct values in the field.
     */
-  var qnTotalDistinctValues: Double = js.native
+  var qnTotalDistinctValues: Double
 }
 object IFieldInTableData {
   

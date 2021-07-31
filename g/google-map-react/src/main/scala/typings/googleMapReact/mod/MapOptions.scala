@@ -2,83 +2,81 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
   // Any options from https://developers.google.com/maps/documentation/javascript/reference/3/#MapOptions
   // excluding 'zoom' and 'center' which get set via props.
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var clickableIcons: js.UndefOr[Boolean] = js.native
+  var clickableIcons: js.UndefOr[Boolean] = js.undefined
   
-  var controlSize: js.UndefOr[Double] = js.native
+  var controlSize: js.UndefOr[Double] = js.undefined
   
-  var disableDefaultUI: js.UndefOr[Boolean] = js.native
+  var disableDefaultUI: js.UndefOr[Boolean] = js.undefined
   
-  var disableDoubleClickZoom: js.UndefOr[Boolean] = js.native
+  var disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var draggableCursor: js.UndefOr[String] = js.native
+  var draggableCursor: js.UndefOr[String] = js.undefined
   
-  var draggingCursor: js.UndefOr[String] = js.native
+  var draggingCursor: js.UndefOr[String] = js.undefined
   
-  var fullscreenControl: js.UndefOr[Boolean] = js.native
+  var fullscreenControl: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreenControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.native
+  var fullscreenControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.undefined
   
-  var gestureHandling: js.UndefOr[String] = js.native
+  var gestureHandling: js.UndefOr[String] = js.undefined
   
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
-  var keyboardShortcuts: js.UndefOr[Boolean] = js.native
+  var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
-  var mapTypeControl: js.UndefOr[Boolean] = js.native
+  var mapTypeControl: js.UndefOr[Boolean] = js.undefined
   
-  var mapTypeControlOptions: js.UndefOr[js.Any] = js.native
+  var mapTypeControlOptions: js.UndefOr[js.Any] = js.undefined
   
-  var mapTypeId: js.UndefOr[String] = js.native
+  var mapTypeId: js.UndefOr[String] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoomOverride: js.UndefOr[Boolean] = js.native
+  var minZoomOverride: js.UndefOr[Boolean] = js.undefined
   
-  var noClear: js.UndefOr[Boolean] = js.native
+  var noClear: js.UndefOr[Boolean] = js.undefined
   
-  var options: js.UndefOr[js.Function1[/* maps */ Maps, Props]] = js.native
+  var options: js.UndefOr[js.Function1[/* maps */ Maps, Props]] = js.undefined
   
-  var panControl: js.UndefOr[Boolean] = js.native
+  var panControl: js.UndefOr[Boolean] = js.undefined
   
-  var panControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.native
+  var panControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.undefined
   
-  var rotateControl: js.UndefOr[Boolean] = js.native
+  var rotateControl: js.UndefOr[Boolean] = js.undefined
   
-  var rotateControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.native
+  var rotateControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.undefined
   
-  var scaleControl: js.UndefOr[Boolean] = js.native
+  var scaleControl: js.UndefOr[Boolean] = js.undefined
   
-  var scaleControlOptions: js.UndefOr[js.Any] = js.native
+  var scaleControlOptions: js.UndefOr[js.Any] = js.undefined
   
-  var scrollwheel: js.UndefOr[Boolean] = js.native
+  var scrollwheel: js.UndefOr[Boolean] = js.undefined
   
-  var streetView: js.UndefOr[js.Any] = js.native
+  var streetView: js.UndefOr[js.Any] = js.undefined
   
-  var streetViewControl: js.UndefOr[Boolean] = js.native
+  var streetViewControl: js.UndefOr[Boolean] = js.undefined
   
-  var streetViewControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.native
+  var streetViewControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.undefined
   
-  var styles: js.UndefOr[js.Array[MapTypeStyle]] = js.native
+  var styles: js.UndefOr[js.Array[MapTypeStyle]] = js.undefined
   
-  var tilt: js.UndefOr[Double] = js.native
+  var tilt: js.UndefOr[Double] = js.undefined
   
-  var zoomControl: js.UndefOr[Boolean] = js.native
+  var zoomControl: js.UndefOr[Boolean] = js.undefined
   
-  var zoomControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.native
+  var zoomControlOptions: js.UndefOr[typings.googleMapReact.anon.Position] = js.undefined
 }
 object MapOptions {
   

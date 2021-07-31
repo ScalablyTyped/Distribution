@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,19 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ShapeTextHorizontalAlignment extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment & String] = js.native
   
-  /* "Center" */ val center: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.center with String = js.native
+  /* "Center" */ val center: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.center & String = js.native
   
-  /* "Distributed" */ val distributed: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.distributed with String = js.native
+  /* "Distributed" */ val distributed: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.distributed & String = js.native
   
-  /* "Justify" */ val justify: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.justify with String = js.native
+  /* "Justify" */ val justify: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.justify & String = js.native
   
-  /* "JustifyLow" */ val justifyLow: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.justifyLow with String = js.native
+  /* "JustifyLow" */ val justifyLow: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.justifyLow & String = js.native
   
-  /* "Left" */ val left: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.left with String = js.native
+  /* "Left" */ val left: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.left & String = js.native
   
-  /* "Right" */ val right: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.right with String = js.native
+  /* "Right" */ val right: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.right & String = js.native
   
-  /* "ThaiDistributed" */ val thaiDistributed: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.thaiDistributed with String = js.native
+  /* "ThaiDistributed" */ val thaiDistributed: typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment.thaiDistributed & String = js.native
 }

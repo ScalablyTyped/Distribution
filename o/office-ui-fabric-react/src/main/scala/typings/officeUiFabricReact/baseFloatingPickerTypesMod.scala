@@ -12,7 +12,6 @@ import typings.std.HTMLInputElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseFloatingPickerTypesMod {
@@ -39,12 +38,13 @@ object baseFloatingPickerTypesMod {
     def showPicker(updateValue: Boolean): Unit = js.native
     
     /** Gets the suggestions */
-    var suggestions: js.Array[_] = js.native
+    var suggestions: js.Array[js.Any] = js.native
   }
   
   @js.native
   trait IBaseFloatingPickerProps[T]
-    extends ClassAttributes[js.Any] {
+    extends StObject
+       with ClassAttributes[js.Any] {
     
     /**
       * Width for the suggestions callout
@@ -172,16 +172,15 @@ object baseFloatingPickerTypesMod {
   }
   
   /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/Suggestions.types.ISuggestionsControlProps<any>, 'shouldSelectFirstItem' | 'headerItemsProps' | 'footerItemsProps' | 'showRemoveButtons'> */
-  @js.native
   trait IBaseFloatingPickerSuggestionProps extends StObject {
     
-    var footerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.native
+    var footerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.undefined
     
-    var headerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.native
+    var headerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.undefined
     
-    var shouldSelectFirstItem: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldSelectFirstItem: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var showRemoveButtons: js.UndefOr[Boolean] = js.native
+    var showRemoveButtons: js.UndefOr[Boolean] = js.undefined
   }
   object IBaseFloatingPickerSuggestionProps {
     

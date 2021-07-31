@@ -2,17 +2,17 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RotateTimeline extends CurveTimeline {
+trait RotateTimeline
+  extends StObject
+     with CurveTimeline {
   
-  var boneIndex: Double = js.native
+  var boneIndex: Double
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  def setFrame(frameIndex: Double, time: Double, degrees: Double): Unit = js.native
+  def setFrame(frameIndex: Double, time: Double, degrees: Double): Unit
 }
 object RotateTimeline {
   

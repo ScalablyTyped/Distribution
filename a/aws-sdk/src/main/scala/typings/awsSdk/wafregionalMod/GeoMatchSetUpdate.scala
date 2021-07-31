@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoMatchSetUpdate extends StObject {
   
   /**
     * Specifies whether to insert or delete a country with UpdateGeoMatchSet.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * The country from which web requests originate that you want AWS WAF to search for.
     */
-  var GeoMatchConstraint: typings.awsSdk.wafregionalMod.GeoMatchConstraint = js.native
+  var GeoMatchConstraint: typings.awsSdk.wafregionalMod.GeoMatchConstraint
 }
 object GeoMatchSetUpdate {
   

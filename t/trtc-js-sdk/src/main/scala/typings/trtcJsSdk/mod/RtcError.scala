@@ -3,14 +3,14 @@ package typings.trtcJsSdk.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RtcError extends Error {
+trait RtcError
+  extends StObject
+     with Error {
   
   /** 获取错误码, 详细错误码列表参见 [ErrorCode](https://trtc-1252463788.file.myqcloud.com/web/docs/module-ErrorCode.html) */
-  def getCode(): String = js.native
+  def getCode(): String
 }
 object RtcError {
   

@@ -2,23 +2,21 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Codeofconduct extends StObject {
   
-  var code_of_conduct: HtmlurlKey = js.native
+  var code_of_conduct: HtmlurlKey
   
-  var contributing: HtmlurlUrl = js.native
+  var contributing: HtmlurlUrl
   
-  var issue_template: HtmlurlUrl = js.native
+  var issue_template: HtmlurlUrl
   
-  var license: Spdxid = js.native
+  var license: Spdxid
   
-  var pull_request_template: HtmlurlUrl = js.native
+  var pull_request_template: HtmlurlUrl
   
-  var readme: HtmlurlUrl = js.native
+  var readme: HtmlurlUrl
 }
 object Codeofconduct {
   

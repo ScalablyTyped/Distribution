@@ -3,15 +3,13 @@ package typings.atom.anon
 import typings.atom.mod.FileEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopeDescriptorScopeDescriptor extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor = js.native
+  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
   
-  var value: FileEncoding = js.native
+  var value: FileEncoding
 }
 object ScopeDescriptorScopeDescriptor {
   

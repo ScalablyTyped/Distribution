@@ -12,7 +12,7 @@ typeahead component
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 134693 |
+| # downloads        | 156239 |
 | # stars            | 3 |
 
 ## Links

@@ -4,36 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.arg.anon.FlagSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T /* <: Spec */](spec: T): Result[T] = ^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any]).asInstanceOf[Result[T]]
+  @scala.inline
+  def apply[T /* <: Spec */](spec: T, options: Options): Result[T] = (^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[T]]
+  
   @JSImport("arg", JSImport.Namespace)
   @js.native
-  def apply[T /* <: Spec */](spec: T): Result[T] = js.native
-  @JSImport("arg", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Spec */](spec: T, options: Options): Result[T] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("arg", "COUNT")
   @js.native
-  val COUNT: Handler[Double] with FlagSymbol = js.native
+  val COUNT: Handler[Double] & FlagSymbol = js.native
   
-  @JSImport("arg", "flag")
-  @js.native
-  def flag[T](fn: T): T with FlagSymbol = js.native
+  @scala.inline
+  def flag[T](fn: T): T & FlagSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("flag")(fn.asInstanceOf[js.Any]).asInstanceOf[T & FlagSymbol]
   
   type Handler[T] = js.Function3[/* value */ String, /* name */ String, /* previousValue */ js.UndefOr[T], T]
   
-  @js.native
   trait Options extends StObject {
     
-    var argv: js.UndefOr[js.Array[String]] = js.native
+    var argv: js.UndefOr[js.Array[String]] = js.undefined
     
-    var permissive: js.UndefOr[Boolean] = js.native
+    var permissive: js.UndefOr[Boolean] = js.undefined
     
-    var stopAtPositional: js.UndefOr[Boolean] = js.native
+    var stopAtPositional: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

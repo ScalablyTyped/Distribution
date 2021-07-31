@@ -5,7 +5,6 @@ import typings.reactVirtualized.anon.CellGroupRenderer
 import typings.reactVirtualized.esCollectionMod.CollectionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-virtualized", "Collection")

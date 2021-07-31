@@ -2,19 +2,19 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CircleProps extends CommonPathProps {
+trait CircleProps
+  extends StObject
+     with CommonPathProps {
   
-  var cx: js.UndefOr[NumberProp] = js.native
+  var cx: js.UndefOr[NumberProp] = js.undefined
   
-  var cy: js.UndefOr[NumberProp] = js.native
+  var cy: js.UndefOr[NumberProp] = js.undefined
   
-  var opacity: js.UndefOr[NumberProp] = js.native
+  var opacity: js.UndefOr[NumberProp] = js.undefined
   
-  var r: js.UndefOr[NumberProp] = js.native
+  var r: js.UndefOr[NumberProp] = js.undefined
 }
 object CircleProps {
   

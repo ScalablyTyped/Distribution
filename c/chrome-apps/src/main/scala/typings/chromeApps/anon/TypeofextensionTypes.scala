@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofextensionTypes extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TypeofextensionTypes extends StObject {
     * @private
     * @internal
     */
-  val _internal_ : js.Any = js.native
+  val _internal_ : js.Any
 }
 object TypeofextensionTypes {
   

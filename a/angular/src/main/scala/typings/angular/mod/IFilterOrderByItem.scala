@@ -2,17 +2,15 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFilterOrderByItem extends StObject {
   
-  var index: js.Any = js.native
+  var index: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IFilterOrderByItem {
   

@@ -2,28 +2,26 @@ package typings.mlLevenbergMarquardt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<ml-levenberg-marquardt.ml-levenberg-marquardt.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
-    var errorTolerance: js.UndefOr[Double] = js.native
+    var errorTolerance: js.UndefOr[Double] = js.undefined
     
-    var gradientDifference: js.UndefOr[Double] = js.native
+    var gradientDifference: js.UndefOr[Double] = js.undefined
     
-    var initialValues: js.UndefOr[js.Array[Double]] = js.native
+    var initialValues: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var maxIterations: js.UndefOr[Double] = js.native
+    var maxIterations: js.UndefOr[Double] = js.undefined
     
-    var maxValue: js.UndefOr[js.Array[Double]] = js.native
+    var maxValue: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var minValue: js.UndefOr[js.Array[Double]] = js.native
+    var minValue: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object PartialOptions {
     

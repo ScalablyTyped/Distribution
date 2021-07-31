@@ -15,23 +15,23 @@ import typings.onfleetNodeOnfleet.recipientsMod.CreateRecipientProps
 import typings.onfleetNodeOnfleet.recipientsMod.OnfleetRecipient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tasksMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Tasks", JSImport.Namespace)
   @js.native
-  class ^ () extends Task
+  class ^ ()
+    extends StObject
+       with Task
   
-  @js.native
   trait Barcode extends StObject {
     
     /** Whether the worker must capture this data prior to task completion, defaults to false */
-    var blockCompletion: js.UndefOr[Boolean] = js.native
+    var blockCompletion: js.UndefOr[Boolean] = js.undefined
     
     /** Base64 representation of the data encoded within the barcode to be captured, max length of 500 characters */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
   }
   object Barcode {
     
@@ -58,26 +58,25 @@ object tasksMod {
     }
   }
   
-  @js.native
   trait CapturedBarcode extends StObject {
     
     /** The base64 string of the data contained in the captured barcode */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** The ID of the captured barcode */
-    var id: String = js.native
+    var id: String
     
     /** The [ lon, lat ] coordinates where the barcode capture took place */
-    var location: js.Tuple2[Double, Double] = js.native
+    var location: js.Tuple2[Double, Double]
     
     /** The symbology that was captured */
-    var symbology: String = js.native
+    var symbology: String
     
     /** The time at which the barcode capture happened */
-    var time: Double = js.native
+    var time: Double
     
     /** Whether the barcode was captured as a result of a barcode request */
-    var wasRequested: Boolean = js.native
+    var wasRequested: Boolean
   }
   object CapturedBarcode {
     
@@ -119,16 +118,15 @@ object tasksMod {
     }
   }
   
-  @js.native
   trait CloneTaskOptions extends StObject {
     
-    var includeBarCodes: Boolean = js.native
+    var includeBarCodes: Boolean
     
-    var includeDependencies: Boolean = js.native
+    var includeDependencies: Boolean
     
-    var includeMetadata: Boolean = js.native
+    var includeMetadata: Boolean
     
-    var overrides: js.UndefOr[CompleteAfter] = js.native
+    var overrides: js.UndefOr[CompleteAfter] = js.undefined
   }
   object CloneTaskOptions {
     
@@ -158,44 +156,43 @@ object tasksMod {
     }
   }
   
-  @js.native
   trait CreateTaskProps extends StObject {
     
-    var autoAssign: js.UndefOr[TaskAutoAssign] = js.native
+    var autoAssign: js.UndefOr[TaskAutoAssign] = js.undefined
     
-    var barcodes: js.UndefOr[js.Array[Barcode]] = js.native
+    var barcodes: js.UndefOr[js.Array[Barcode]] = js.undefined
     
-    var capacity: js.UndefOr[Double] = js.native
+    var capacity: js.UndefOr[Double] = js.undefined
     
-    var completeAfter: js.UndefOr[Double] = js.native
+    var completeAfter: js.UndefOr[Double] = js.undefined
     
-    var completeBefore: js.UndefOr[Double] = js.native
+    var completeBefore: js.UndefOr[Double] = js.undefined
     
-    var dependencies: js.UndefOr[js.Array[String]] = js.native
+    var dependencies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var destination: String | CreateDestinationProps = js.native
+    var destination: String | CreateDestinationProps
     
-    var executor: js.UndefOr[String] = js.native
+    var executor: js.UndefOr[String] = js.undefined
     
-    var merchant: js.UndefOr[String] = js.native
+    var merchant: js.UndefOr[String] = js.undefined
     
-    var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.native
+    var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.undefined
     
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
     
-    var pickupTask: js.UndefOr[Boolean] = js.native
+    var pickupTask: js.UndefOr[Boolean] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var recipientName: js.UndefOr[String] = js.native
+    var recipientName: js.UndefOr[String] = js.undefined
     
-    var recipientNotes: js.UndefOr[String] = js.native
+    var recipientNotes: js.UndefOr[String] = js.undefined
     
-    var recipientSkipSMSNotifications: js.UndefOr[Boolean] = js.native
+    var recipientSkipSMSNotifications: js.UndefOr[Boolean] = js.undefined
     
-    var recipients: js.Array[CreateRecipientProps | String] = js.native
+    var recipients: js.Array[CreateRecipientProps | String]
     
-    var requirements: js.UndefOr[TaskCompletionRequirements] = js.native
+    var requirements: js.UndefOr[TaskCompletionRequirements] = js.undefined
   }
   object CreateTaskProps {
     
@@ -324,66 +321,65 @@ object tasksMod {
     }
   }
   
-  @js.native
   trait OnfleetTask extends StObject {
     
-    var barcodes: js.UndefOr[Captured] = js.native
+    var barcodes: js.UndefOr[Captured] = js.undefined
     
-    var completeAfter: Double = js.native
+    var completeAfter: Double
     
-    var completeBefore: Double = js.native
+    var completeBefore: Double
     
-    var completionDetails: Actions = js.native
+    var completionDetails: Actions
     
-    var container: Organization = js.native
+    var container: Organization
     
-    var creator: String = js.native
+    var creator: String
     
-    var dependencies: js.Array[String] = js.native
+    var dependencies: js.Array[String]
     
-    var destination: OnfleetDestination = js.native
+    var destination: OnfleetDestination
     
-    var didAutoAssign: Boolean = js.native
+    var didAutoAssign: Boolean
     
-    var executor: String = js.native
+    var executor: String
     
-    var feedback: js.Array[_] = js.native
+    var feedback: js.Array[js.Any]
     
-    var id: String = js.native
+    var id: String
     
-    var identity: Checksum = js.native
+    var identity: Checksum
     
-    var merchant: String = js.native
+    var merchant: String
     
-    var metadata: js.Array[OnfleetMetadata] = js.native
+    var metadata: js.Array[OnfleetMetadata]
     
-    var notes: String = js.native
+    var notes: String
     
-    var organization: String = js.native
+    var organization: String
     
-    var overrides: RecipientName = js.native
+    var overrides: RecipientName
     
-    var pickupTask: Boolean = js.native
+    var pickupTask: Boolean
     
-    var quantity: Double = js.native
+    var quantity: Double
     
-    var recipients: js.Array[OnfleetRecipient] = js.native
+    var recipients: js.Array[OnfleetRecipient]
     
-    var serviceTime: Double = js.native
+    var serviceTime: Double
     
-    var shortId: String = js.native
+    var shortId: String
     
-    var state: Double = js.native
+    var state: Double
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
     
-    var trackingURL: String = js.native
+    var trackingURL: String
     
-    var trackingViewed: Boolean = js.native
+    var trackingViewed: Boolean
     
-    var worker: String | Null = js.native
+    var worker: String | Null
   }
   object OnfleetTask {
     
@@ -398,7 +394,7 @@ object tasksMod {
       destination: OnfleetDestination,
       didAutoAssign: Boolean,
       executor: String,
-      feedback: js.Array[_],
+      feedback: js.Array[js.Any],
       id: String,
       identity: Checksum,
       merchant: String,
@@ -417,7 +413,7 @@ object tasksMod {
       trackingURL: String,
       trackingViewed: Boolean
     ): OnfleetTask = {
-      val __obj = js.Dynamic.literal(completeAfter = completeAfter.asInstanceOf[js.Any], completeBefore = completeBefore.asInstanceOf[js.Any], completionDetails = completionDetails.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], didAutoAssign = didAutoAssign.asInstanceOf[js.Any], executor = executor.asInstanceOf[js.Any], feedback = feedback.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], merchant = merchant.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], overrides = overrides.asInstanceOf[js.Any], pickupTask = pickupTask.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], serviceTime = serviceTime.asInstanceOf[js.Any], shortId = shortId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], trackingURL = trackingURL.asInstanceOf[js.Any], trackingViewed = trackingViewed.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(completeAfter = completeAfter.asInstanceOf[js.Any], completeBefore = completeBefore.asInstanceOf[js.Any], completionDetails = completionDetails.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], didAutoAssign = didAutoAssign.asInstanceOf[js.Any], executor = executor.asInstanceOf[js.Any], feedback = feedback.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], merchant = merchant.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], overrides = overrides.asInstanceOf[js.Any], pickupTask = pickupTask.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], serviceTime = serviceTime.asInstanceOf[js.Any], shortId = shortId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], trackingURL = trackingURL.asInstanceOf[js.Any], trackingViewed = trackingViewed.asInstanceOf[js.Any], worker = null)
       __obj.asInstanceOf[OnfleetTask]
     }
     
@@ -461,7 +457,7 @@ object tasksMod {
       def setExecutor(value: String): Self = StObject.set(x, "executor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFeedback(value: js.Array[_]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+      def setFeedback(value: js.Array[js.Any]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFeedbackVarargs(value: js.Any*): Self = StObject.set(x, "feedback", js.Array(value :_*))
@@ -534,7 +530,7 @@ object tasksMod {
   @js.native
   trait Task extends StObject {
     
-    def autoAssign(tasks: js.Array[OnfleetTask]): js.Promise[_] = js.native
+    def autoAssign(tasks: js.Array[OnfleetTask]): js.Promise[js.Any] = js.native
     
     // TODO need to confirm response
     def batchCreate(tasks: js.Array[CreateTaskProps]): js.Promise[js.Array[OnfleetTask]] = js.native
@@ -555,18 +551,17 @@ object tasksMod {
     def update(id: String, task: PartialCreateTaskProps): js.Promise[UpdateTaskResult] = js.native
   }
   
-  @js.native
   trait TaskAutoAssign extends StObject {
     
-    var considerDependencies: js.UndefOr[Boolean] = js.native
+    var considerDependencies: js.UndefOr[Boolean] = js.undefined
     
-    var excludeWorkerIds: js.UndefOr[js.Array[String]] = js.native
+    var excludeWorkerIds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxAssignedTaskCount: js.UndefOr[Double] = js.native
+    var maxAssignedTaskCount: js.UndefOr[Double] = js.undefined
     
-    var mode: String = js.native
+    var mode: String
     
-    var team: js.UndefOr[String] = js.native
+    var team: js.UndefOr[String] = js.undefined
   }
   object TaskAutoAssign {
     
@@ -611,16 +606,15 @@ object tasksMod {
     }
   }
   
-  @js.native
   trait TaskCompletionRequirements extends StObject {
     
-    var minimumAge: js.UndefOr[Double] = js.native
+    var minimumAge: js.UndefOr[Double] = js.undefined
     
-    var notes: js.UndefOr[Boolean] = js.native
+    var notes: js.UndefOr[Boolean] = js.undefined
     
-    var photo: js.UndefOr[Boolean] = js.native
+    var photo: js.UndefOr[Boolean] = js.undefined
     
-    var signature: js.UndefOr[Boolean] = js.native
+    var signature: js.UndefOr[Boolean] = js.undefined
   }
   object TaskCompletionRequirements {
     
@@ -661,24 +655,23 @@ object tasksMod {
   
   type TaskQueryKey = shortId
   
-  @js.native
   trait TaskQueryParam extends StObject {
     
-    var completeAfterAfter: js.UndefOr[Double] = js.native
+    var completeAfterAfter: js.UndefOr[Double] = js.undefined
     
-    var completeBeforeBefore: js.UndefOr[Double] = js.native
+    var completeBeforeBefore: js.UndefOr[Double] = js.undefined
     
-    var dependencies: js.UndefOr[String] = js.native
+    var dependencies: js.UndefOr[String] = js.undefined
     
-    var from: Double = js.native
+    var from: Double
     
-    var lastId: js.UndefOr[String] = js.native
+    var lastId: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[Double] = js.native
+    var state: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
     
-    var worker: js.UndefOr[String] = js.native
+    var worker: js.UndefOr[String] = js.undefined
   }
   object TaskQueryParam {
     
@@ -738,14 +731,15 @@ object tasksMod {
     }
   }
   
-  @js.native
-  trait UpdateTaskResult extends OnfleetTask {
+  trait UpdateTaskResult
+    extends StObject
+       with OnfleetTask {
     
-    var estimatedArrivalTime: Double | Null = js.native
+    var estimatedArrivalTime: Double | Null
     
-    var estimatedCompletionTime: Double | Null = js.native
+    var estimatedCompletionTime: Double | Null
     
-    var eta: Double = js.native
+    var eta: Double
   }
   object UpdateTaskResult {
     
@@ -761,7 +755,7 @@ object tasksMod {
       didAutoAssign: Boolean,
       eta: Double,
       executor: String,
-      feedback: js.Array[_],
+      feedback: js.Array[js.Any],
       id: String,
       identity: Checksum,
       merchant: String,
@@ -780,7 +774,7 @@ object tasksMod {
       trackingURL: String,
       trackingViewed: Boolean
     ): UpdateTaskResult = {
-      val __obj = js.Dynamic.literal(completeAfter = completeAfter.asInstanceOf[js.Any], completeBefore = completeBefore.asInstanceOf[js.Any], completionDetails = completionDetails.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], didAutoAssign = didAutoAssign.asInstanceOf[js.Any], eta = eta.asInstanceOf[js.Any], executor = executor.asInstanceOf[js.Any], feedback = feedback.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], merchant = merchant.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], overrides = overrides.asInstanceOf[js.Any], pickupTask = pickupTask.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], serviceTime = serviceTime.asInstanceOf[js.Any], shortId = shortId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], trackingURL = trackingURL.asInstanceOf[js.Any], trackingViewed = trackingViewed.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(completeAfter = completeAfter.asInstanceOf[js.Any], completeBefore = completeBefore.asInstanceOf[js.Any], completionDetails = completionDetails.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], didAutoAssign = didAutoAssign.asInstanceOf[js.Any], eta = eta.asInstanceOf[js.Any], executor = executor.asInstanceOf[js.Any], feedback = feedback.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], merchant = merchant.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], overrides = overrides.asInstanceOf[js.Any], pickupTask = pickupTask.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], serviceTime = serviceTime.asInstanceOf[js.Any], shortId = shortId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], trackingURL = trackingURL.asInstanceOf[js.Any], trackingViewed = trackingViewed.asInstanceOf[js.Any], estimatedArrivalTime = null, estimatedCompletionTime = null, worker = null)
       __obj.asInstanceOf[UpdateTaskResult]
     }
     

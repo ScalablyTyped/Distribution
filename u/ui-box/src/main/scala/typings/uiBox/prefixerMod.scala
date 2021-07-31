@@ -2,21 +2,22 @@ package typings.uiBox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prefixerMod {
   
-  @JSImport("ui-box/dist/src/prefixer", JSImport.Default)
+  @JSImport("ui-box/dist/src/prefixer", JSImport.Namespace)
   @js.native
-  def default(property: String, value: String): js.Array[Rule] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(property: String, value: String): js.Array[Rule] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Rule]]
+  
   trait Rule extends StObject {
     
-    var property: String = js.native
+    var property: String
     
-    var value: String = js.native
+    var value: String
   }
   object Rule {
     

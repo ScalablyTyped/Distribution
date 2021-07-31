@@ -6,7 +6,6 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.rdsSignerMod.Signer.SignerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsSignerMod {
@@ -30,18 +29,17 @@ object rdsSignerMod {
   }
   object Signer {
     
-    @js.native
     trait SignerOptions extends StObject {
       
-      var credentials: js.UndefOr[Credentials | CredentialsOptions] = js.native
+      var credentials: js.UndefOr[Credentials | CredentialsOptions] = js.undefined
       
-      var hostname: js.UndefOr[String] = js.native
+      var hostname: js.UndefOr[String] = js.undefined
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object SignerOptions {
       

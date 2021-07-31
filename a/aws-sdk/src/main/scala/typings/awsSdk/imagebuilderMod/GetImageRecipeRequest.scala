@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetImageRecipeRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image recipe that you want to retrieve. 
     */
-  var imageRecipeArn: ImageRecipeArn = js.native
+  var imageRecipeArn: ImageRecipeArn
 }
 object GetImageRecipeRequest {
   

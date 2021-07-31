@@ -3,37 +3,35 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseEnvironmentCompletedEvent extends StObject {
   
-  var createdByName: String = js.native
+  var createdByName: String
   
-  var definitionId: Double = js.native
+  var definitionId: Double
   
-  var definitionName: String = js.native
+  var definitionName: String
   
-  var environment: ReleaseEnvironment = js.native
+  var environment: ReleaseEnvironment
   
-  var environmentId: Double = js.native
+  var environmentId: Double
   
-  var projectName: String = js.native
+  var projectName: String
   
-  var reason: DeploymentReason = js.native
+  var reason: DeploymentReason
   
-  var releaseCreatedBy: IdentityRef = js.native
+  var releaseCreatedBy: IdentityRef
   
-  var releaseLogsUri: String = js.native
+  var releaseLogsUri: String
   
-  var releaseName: String = js.native
+  var releaseName: String
   
-  var status: String = js.native
+  var status: String
   
-  var title: String = js.native
+  var title: String
   
-  var webAccessUri: String = js.native
+  var webAccessUri: String
 }
 object ReleaseEnvironmentCompletedEvent {
   

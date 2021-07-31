@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCheckerIpRangesResponse extends StObject {
   
   /**
     * A complex type that contains sorted list of IP ranges in CIDR format for Amazon Route 53 health checkers.
     */
-  var CheckerIpRanges: typings.awsSdk.route53Mod.CheckerIpRanges = js.native
+  var CheckerIpRanges: typings.awsSdk.route53Mod.CheckerIpRanges
 }
 object GetCheckerIpRangesResponse {
   

@@ -2,16 +2,14 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasStatus extends StObject {
   
   /**
     * The HTTP status of a response sent to the client.
     */
-  var status: Double = js.native
+  var status: Double
 }
 object HasStatus {
   

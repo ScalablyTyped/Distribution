@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugSessionOptions extends StObject {
   
   /**
@@ -13,26 +11,26 @@ trait DebugSessionOptions extends StObject {
     * By default, the debug session will never hide its parent.
     * If compact is true, debug sessions with a single child are hidden in the CALL STACK view to make the tree more compact.
     */
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls whether this session should have a separate debug console or share it
     * with the parent session. Has no effect for sessions which do not have a parent session.
     * Defaults to Separate.
     */
-  var consoleMode: js.UndefOr[DebugConsoleMode] = js.native
+  var consoleMode: js.UndefOr[DebugConsoleMode] = js.undefined
   
   /**
     * Controls whether this session should run without debugging, thus ignoring breakpoints.
     * When this property is not specified, the value from the parent session (if there is one) is used.
     */
-  var noDebug: js.UndefOr[Boolean] = js.native
+  var noDebug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When specified the newly created debug session is registered as a "child" session of this
     * "parent" debug session.
     */
-  var parentSession: js.UndefOr[DebugSession] = js.native
+  var parentSession: js.UndefOr[DebugSession] = js.undefined
 }
 object DebugSessionOptions {
   

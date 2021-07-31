@@ -3,28 +3,28 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Boolean extends Node {
+trait Boolean
+  extends StObject
+     with Node {
   
   /**
     * Return 'Boolean'.
     */
-  def inspect(): java.lang.String = js.native
+  def inspect(): java.lang.String
   
-  var isFalse: scala.Boolean = js.native
+  var isFalse: scala.Boolean
   
-  var isTrue: scala.Boolean = js.native
+  var isTrue: scala.Boolean
   
   /**
     * Negate the value.
     */
   // tslint:disable-next-line no-unnecessary-qualifier
-  def negate(): Boolean = js.native
+  def negate(): Boolean
   
-  var `val`: scala.Boolean = js.native
+  var `val`: scala.Boolean
 }
 object Boolean {
   

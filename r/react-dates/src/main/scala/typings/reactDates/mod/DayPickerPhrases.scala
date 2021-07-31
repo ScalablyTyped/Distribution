@@ -2,67 +2,65 @@ package typings.reactDates.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DayPickerPhrases extends StObject {
   
-  var calendarLabel: js.UndefOr[String] = js.native
+  var calendarLabel: js.UndefOr[String] = js.undefined
   
-  var chooseAvailableDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var chooseAvailableDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   
-  var chooseAvailableEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var chooseAvailableEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   
-  var chooseAvailableStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var chooseAvailableStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   
-  var dateIsSelected: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var dateIsSelected: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   
-  var dateIsSelectedAsEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var dateIsSelectedAsEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   
-  var dateIsSelectedAsStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var dateIsSelectedAsStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   
-  var dateIsUnavailable: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var dateIsUnavailable: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
   
-  var enterKey: js.UndefOr[String] = js.native
+  var enterKey: js.UndefOr[String] = js.undefined
   
-  var escape: js.UndefOr[String] = js.native
+  var escape: js.UndefOr[String] = js.undefined
   
-  var hideKeyboardShortcutsPanel: js.UndefOr[String] = js.native
+  var hideKeyboardShortcutsPanel: js.UndefOr[String] = js.undefined
   
-  var homeEnd: js.UndefOr[String] = js.native
+  var homeEnd: js.UndefOr[String] = js.undefined
   
-  var jumpToNextMonth: js.UndefOr[String] = js.native
+  var jumpToNextMonth: js.UndefOr[String] = js.undefined
   
-  var jumpToPrevMonth: js.UndefOr[String] = js.native
+  var jumpToPrevMonth: js.UndefOr[String] = js.undefined
   
-  var keyboardShortcuts: js.UndefOr[String] = js.native
+  var keyboardShortcuts: js.UndefOr[String] = js.undefined
   
-  var leftArrowRightArrow: js.UndefOr[String] = js.native
+  var leftArrowRightArrow: js.UndefOr[String] = js.undefined
   
-  var moveFocusByOneDay: js.UndefOr[String] = js.native
+  var moveFocusByOneDay: js.UndefOr[String] = js.undefined
   
-  var moveFocusByOneMonth: js.UndefOr[String] = js.native
+  var moveFocusByOneMonth: js.UndefOr[String] = js.undefined
   
-  var moveFocusByOneWeek: js.UndefOr[String] = js.native
+  var moveFocusByOneWeek: js.UndefOr[String] = js.undefined
   
-  var moveFocustoStartAndEndOfWeek: js.UndefOr[String] = js.native
+  var moveFocustoStartAndEndOfWeek: js.UndefOr[String] = js.undefined
   
-  var openThisPanel: js.UndefOr[String] = js.native
+  var openThisPanel: js.UndefOr[String] = js.undefined
   
-  var pageUpPageDown: js.UndefOr[String] = js.native
+  var pageUpPageDown: js.UndefOr[String] = js.undefined
   
-  var questionMark: js.UndefOr[String] = js.native
+  var questionMark: js.UndefOr[String] = js.undefined
   
-  var returnFocusToInput: js.UndefOr[String] = js.native
+  var returnFocusToInput: js.UndefOr[String] = js.undefined
   
-  var roleDescription: js.UndefOr[String] = js.native
+  var roleDescription: js.UndefOr[String] = js.undefined
   
-  var selectFocusedDate: js.UndefOr[String] = js.native
+  var selectFocusedDate: js.UndefOr[String] = js.undefined
   
-  var showKeyboardShortcutsPanel: js.UndefOr[String] = js.native
+  var showKeyboardShortcutsPanel: js.UndefOr[String] = js.undefined
   
-  var upArrowDownArrow: js.UndefOr[String] = js.native
+  var upArrowDownArrow: js.UndefOr[String] = js.undefined
 }
 object DayPickerPhrases {
   

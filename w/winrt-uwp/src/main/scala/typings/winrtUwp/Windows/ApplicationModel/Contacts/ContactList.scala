@@ -8,14 +8,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.contactchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a list of Contact objects. */
 @js.native
 trait ContactList extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactList, ContactChangedEventArgs]): Unit = js.native
   
@@ -77,7 +76,7 @@ trait ContactList extends StObject {
   var isHidden: Boolean = js.native
   
   /** Occurs when a Contact in this ContactList has been changed. */
-  def oncontactchanged(ev: ContactChangedEventArgs with WinRTEvent[ContactList]): Unit = js.native
+  def oncontactchanged(ev: ContactChangedEventArgs & WinRTEvent[ContactList]): Unit = js.native
   /** Occurs when a Contact in this ContactList has been changed. */
   @JSName("oncontactchanged")
   var oncontactchanged_Original: TypedEventHandler[ContactList, ContactChangedEventArgs] = js.native
@@ -88,7 +87,7 @@ trait ContactList extends StObject {
   /** Gets or puts a value indicating the write access level to this ContactList for other apps on the system. */
   var otherAppWriteAccess: ContactListOtherAppWriteAccess = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactList, ContactChangedEventArgs]): Unit = js.native
   

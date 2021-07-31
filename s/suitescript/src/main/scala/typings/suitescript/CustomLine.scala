@@ -2,29 +2,27 @@ package typings.suitescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLine extends StObject {
   
-  def isBookSpecific(): Boolean = js.native
+  def isBookSpecific(): Boolean
   
-  def setAccountId(accountId: Double): Unit = js.native
+  def setAccountId(accountId: Double): Unit
   
-  def setBookSpecific(bookSpecific: Boolean): Unit = js.native
+  def setBookSpecific(bookSpecific: Boolean): Unit
   
-  def setClassId(classId: Double): Unit = js.native
+  def setClassId(classId: Double): Unit
   
-  def setCreditAmount(credit: String): Unit = js.native
+  def setCreditAmount(credit: String): Unit
   
-  def setDebitAmount(debit: String): Unit = js.native
+  def setDebitAmount(debit: String): Unit
   
-  def setDepartmentId(departmentId: Double): Unit = js.native
+  def setDepartmentId(departmentId: Double): Unit
   
-  def setLocationId(locationId: Double): Unit = js.native
+  def setLocationId(locationId: Double): Unit
   
-  def setMemo(memo: String): Unit = js.native
+  def setMemo(memo: String): Unit
 }
 object CustomLine {
   

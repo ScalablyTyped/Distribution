@@ -6,47 +6,45 @@ import typings.vscode.mod.WorkspaceFolder
 import typings.vscodeLanguageclient.anon.Code2Protocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageClientOptions extends StObject {
   
-  var diagnosticCollectionName: js.UndefOr[String] = js.native
+  var diagnosticCollectionName: js.UndefOr[String] = js.undefined
   
   var documentSelector: js.UndefOr[
     typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector | js.Array[String]
-  ] = js.native
+  ] = js.undefined
   
-  var errorHandler: js.UndefOr[ErrorHandler] = js.native
+  var errorHandler: js.UndefOr[ErrorHandler] = js.undefined
   
-  var initializationFailedHandler: js.UndefOr[InitializationFailedHandler] = js.native
+  var initializationFailedHandler: js.UndefOr[InitializationFailedHandler] = js.undefined
   
-  var initializationOptions: js.UndefOr[js.Any | js.Function0[_]] = js.native
+  var initializationOptions: js.UndefOr[js.Any | js.Function0[js.Any]] = js.undefined
   
-  var middleware: js.UndefOr[Middleware] = js.native
+  var middleware: js.UndefOr[Middleware] = js.undefined
   
-  var outputChannel: js.UndefOr[OutputChannel] = js.native
+  var outputChannel: js.UndefOr[OutputChannel] = js.undefined
   
-  var outputChannelName: js.UndefOr[String] = js.native
+  var outputChannelName: js.UndefOr[String] = js.undefined
   
-  var progressOnInitialization: js.UndefOr[Boolean] = js.native
+  var progressOnInitialization: js.UndefOr[Boolean] = js.undefined
   
-  var revealOutputChannelOn: js.UndefOr[RevealOutputChannelOn] = js.native
+  var revealOutputChannelOn: js.UndefOr[RevealOutputChannelOn] = js.undefined
   
   /**
     * The encoding use to read stdout and stderr. Defaults
     * to 'utf8' if ommitted.
     */
-  var stdioEncoding: js.UndefOr[String] = js.native
+  var stdioEncoding: js.UndefOr[String] = js.undefined
   
-  var synchronize: js.UndefOr[SynchronizeOptions] = js.native
+  var synchronize: js.UndefOr[SynchronizeOptions] = js.undefined
   
-  var traceOutputChannel: js.UndefOr[OutputChannel] = js.native
+  var traceOutputChannel: js.UndefOr[OutputChannel] = js.undefined
   
-  var uriConverters: js.UndefOr[Code2Protocol] = js.native
+  var uriConverters: js.UndefOr[Code2Protocol] = js.undefined
   
-  var workspaceFolder: js.UndefOr[WorkspaceFolder] = js.native
+  var workspaceFolder: js.UndefOr[WorkspaceFolder] = js.undefined
 }
 object LanguageClientOptions {
   
@@ -89,10 +87,10 @@ object LanguageClientOptions {
     def setInitializationFailedHandlerUndefined: Self = StObject.set(x, "initializationFailedHandler", js.undefined)
     
     @scala.inline
-    def setInitializationOptions(value: js.Any | js.Function0[_]): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
+    def setInitializationOptions(value: js.Any | js.Function0[js.Any]): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationOptionsFunction0(value: () => _): Self = StObject.set(x, "initializationOptions", js.Any.fromFunction0(value))
+    def setInitializationOptionsFunction0(value: () => js.Any): Self = StObject.set(x, "initializationOptions", js.Any.fromFunction0(value))
     
     @scala.inline
     def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)

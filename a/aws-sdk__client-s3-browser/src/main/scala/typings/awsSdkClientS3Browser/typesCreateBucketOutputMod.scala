@@ -5,20 +5,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateBucketOutputMod {
   
-  @js.native
   trait CreateBucketOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _Location shape
       */
-    var Location: js.UndefOr[String] = js.native
+    var Location: js.UndefOr[String] = js.undefined
   }
   object CreateBucketOutput {
     

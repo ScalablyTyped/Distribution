@@ -2,106 +2,88 @@ package typings.electronJsonStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("electron-json-storage", "clear")
+  @JSImport("electron-json-storage", JSImport.Namespace)
   @js.native
-  def clear(callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "clear")
-  @js.native
-  def clear(options: DataOptions, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("electron-json-storage", "get")
-  @js.native
-  def get(key: String, callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "get")
-  @js.native
+  @scala.inline
+  def clear(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def clear(options: DataOptions, callback: js.Function1[/* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def get(key: String, callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def get(
     key: String,
     options: DataOptions,
     callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-json-storage", "getAll")
-  @js.native
-  def getAll(callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "getAll")
-  @js.native
-  def getAll(options: DataOptions, callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = js.native
+  @scala.inline
+  def getAll(callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getAll(options: DataOptions, callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-json-storage", "getDataPath")
-  @js.native
-  def getDataPath(): String = js.native
+  @scala.inline
+  def getDataPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDataPath")().asInstanceOf[String]
   
-  @JSImport("electron-json-storage", "getDefaultDataPath")
-  @js.native
-  def getDefaultDataPath(): String = js.native
+  @scala.inline
+  def getDefaultDataPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultDataPath")().asInstanceOf[String]
   
-  @JSImport("electron-json-storage", "getMany")
-  @js.native
-  def getMany(keys: js.Array[String], callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "getMany")
-  @js.native
+  @scala.inline
+  def getMany(keys: js.Array[String], callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMany")(keys.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getMany(
     keys: js.Array[String],
     options: DataOptions,
     callback: js.Function2[/* error */ js.Any, /* data */ js.Object, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMany")(keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-json-storage", "has")
-  @js.native
-  def has(key: String, callback: js.Function2[/* error */ js.Any, /* hasKey */ Boolean, Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "has")
-  @js.native
+  @scala.inline
+  def has(key: String, callback: js.Function2[/* error */ js.Any, /* hasKey */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def has(
     key: String,
     options: DataOptions,
     callback: js.Function2[/* error */ js.Any, /* hasKey */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-json-storage", "keys")
-  @js.native
-  def keys(callback: js.Function2[/* error */ js.Any, /* keys */ js.Array[String], Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "keys")
-  @js.native
+  @scala.inline
+  def keys(callback: js.Function2[/* error */ js.Any, /* keys */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def keys(
     options: DataOptions,
     callback: js.Function2[/* error */ js.Any, /* keys */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keys")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-json-storage", "remove")
-  @js.native
-  def remove(key: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "remove")
-  @js.native
-  def remove(key: String, options: DataOptions, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def remove(key: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def remove(key: String, options: DataOptions, callback: js.Function1[/* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-json-storage", "set")
-  @js.native
-  def set(key: String, json: js.Object, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-  @JSImport("electron-json-storage", "set")
-  @js.native
+  @scala.inline
+  def set(key: String, json: js.Object, callback: js.Function1[/* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], json.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def set(
     key: String,
     json: js.Object,
     options: DataOptions,
     callback: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], json.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("electron-json-storage", "setDataPath")
-  @js.native
-  def setDataPath(): Unit = js.native
-  @JSImport("electron-json-storage", "setDataPath")
-  @js.native
-  def setDataPath(directory: String): Unit = js.native
+  @scala.inline
+  def setDataPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDataPath")().asInstanceOf[Unit]
+  @scala.inline
+  def setDataPath(directory: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDataPath")(directory.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait DataOptions extends StObject {
     
-    var dataPath: String = js.native
+    var dataPath: String
   }
   object DataOptions {
     

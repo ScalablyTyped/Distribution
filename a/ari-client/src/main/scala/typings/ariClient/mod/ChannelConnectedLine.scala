@@ -3,16 +3,16 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelConnectedLine extends Event {
+trait ChannelConnectedLine
+  extends StObject
+     with Event {
   
   /**
     * The channel whose connected line has changed.
     */
-  var channel: Channel = js.native
+  var channel: Channel
 }
 object ChannelConnectedLine {
   

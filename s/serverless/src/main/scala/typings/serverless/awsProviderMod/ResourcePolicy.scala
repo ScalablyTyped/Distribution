@@ -5,21 +5,19 @@ import typings.serverless.serverlessStrings.Allow
 import typings.serverless.serverlessStrings.Deny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicy extends StObject {
   
-  var Action: js.UndefOr[String | js.Array[String] | StringDictionary[js.Any]] = js.native
+  var Action: js.UndefOr[String | js.Array[String] | StringDictionary[js.Any]] = js.undefined
   
-  var Condition: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var Condition: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var Effect: Allow | Deny = js.native
+  var Effect: Allow | Deny
   
-  var Principal: js.UndefOr[String | js.Array[String] | StringDictionary[js.Any]] = js.native
+  var Principal: js.UndefOr[String | js.Array[String] | StringDictionary[js.Any]] = js.undefined
   
-  var Resource: js.UndefOr[String | js.Array[String] | StringDictionary[js.Any]] = js.native
+  var Resource: js.UndefOr[String | js.Array[String] | StringDictionary[js.Any]] = js.undefined
 }
 object ResourcePolicy {
   

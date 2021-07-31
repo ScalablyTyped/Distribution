@@ -9,7 +9,6 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow Maps JavaScript API}
   */
 @js.native
-trait InfoWindow extends MVCObject {
+trait InfoWindow
+  extends StObject
+     with MVCObject {
   
   /**
     * @see {@link InfoWindowHandlerMap#closeclick closeclick} event
@@ -75,7 +76,7 @@ trait InfoWindow extends MVCObject {
     * @see {@link close}
     */
   def open(): Unit = js.native
-  def open(map: js.UndefOr[scala.Nothing], anchor: MVCObject): Unit = js.native
+  def open(map: Unit, anchor: MVCObject): Unit = js.native
   def open(map: Map[Element]): Unit = js.native
   def open(map: Map[Element], anchor: MVCObject): Unit = js.native
   def open(map: StreetViewPanorama): Unit = js.native

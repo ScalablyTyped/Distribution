@@ -5,17 +5,15 @@ import typings.grammarkdown.grammarkdownNumbers.`0`
 import typings.grammarkdown.grammarkdownNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Position extends StObject {
     
-    var character: Double = js.native
+    var character: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Position {
     
@@ -25,21 +23,21 @@ object typesMod {
       __obj.asInstanceOf[Position]
     }
     
-    @JSImport("grammarkdown/dist/types", "Position.clone")
+    @JSImport("grammarkdown/dist/types", "Position")
     @js.native
-    def clone_(position: Position): Position = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("grammarkdown/dist/types", "Position.compare")
-    @js.native
-    def compare(left: Position, right: Position): `1` | `0` | `-1` = js.native
+    @scala.inline
+    def clone_(position: Position): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(position.asInstanceOf[js.Any]).asInstanceOf[Position]
     
-    @JSImport("grammarkdown/dist/types", "Position.create")
-    @js.native
-    def create(line: Double, character: Double): Position = js.native
+    @scala.inline
+    def compare(left: Position, right: Position): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
     
-    @JSImport("grammarkdown/dist/types", "Position.equals")
-    @js.native
-    def equals_(left: Position, right: Position): Boolean = js.native
+    @scala.inline
+    def create(line: Double, character: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Position]
+    
+    @scala.inline
+    def equals_(left: Position, right: Position): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @scala.inline
     implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
@@ -52,12 +50,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var end: Position = js.native
+    var end: Position
     
-    var start: Position = js.native
+    var start: Position
   }
   object Range {
     
@@ -67,41 +64,36 @@ object typesMod {
       __obj.asInstanceOf[Range]
     }
     
-    @JSImport("grammarkdown/dist/types", "Range.clone")
+    @JSImport("grammarkdown/dist/types", "Range")
     @js.native
-    def clone_(range: Range): Range = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("grammarkdown/dist/types", "Range.collapseToEnd")
-    @js.native
-    def collapseToEnd(range: Range): Range = js.native
+    @scala.inline
+    def clone_(range: Range): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
     
-    @JSImport("grammarkdown/dist/types", "Range.collapseToStart")
-    @js.native
-    def collapseToStart(range: Range): Range = js.native
+    @scala.inline
+    def collapseToEnd(range: Range): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToEnd")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
     
-    @JSImport("grammarkdown/dist/types", "Range.contains")
-    @js.native
-    def contains(left: Range, right: Range): Boolean = js.native
+    @scala.inline
+    def collapseToStart(range: Range): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToStart")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
     
-    @JSImport("grammarkdown/dist/types", "Range.containsPosition")
-    @js.native
-    def containsPosition(range: Range, position: Position): Boolean = js.native
+    @scala.inline
+    def contains(left: Range, right: Range): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("grammarkdown/dist/types", "Range.create")
-    @js.native
-    def create(start: Position, end: Position): Range = js.native
+    @scala.inline
+    def containsPosition(range: Range, position: Position): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsPosition")(range.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("grammarkdown/dist/types", "Range.equals")
-    @js.native
-    def equals_(left: Range, right: Range): Boolean = js.native
+    @scala.inline
+    def create(start: Position, end: Position): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Range]
     
-    @JSImport("grammarkdown/dist/types", "Range.intersects")
-    @js.native
-    def intersects(left: Range, right: Range): Boolean = js.native
+    @scala.inline
+    def equals_(left: Range, right: Range): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("grammarkdown/dist/types", "Range.isCollapsed")
-    @js.native
-    def isCollapsed(range: Range): Boolean = js.native
+    @scala.inline
+    def intersects(left: Range, right: Range): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isCollapsed(range: Range): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollapsed")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @scala.inline
     implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
@@ -114,12 +106,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TextRange extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var pos: Double = js.native
+    var pos: Double
   }
   object TextRange {
     

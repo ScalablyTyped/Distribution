@@ -4,7 +4,6 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait IonRouter extends StObject {
     * @param direction The direction of the animation. Defaults to `"forward"`.
     */
   def push(url: String): js.Promise[Boolean] = js.native
-  def push(url: String, direction: js.UndefOr[scala.Nothing], animation: AnimationBuilder): js.Promise[Boolean] = js.native
+  def push(url: String, direction: Unit, animation: AnimationBuilder): js.Promise[Boolean] = js.native
   def push(url: String, direction: RouterDirection): js.Promise[Boolean] = js.native
   def push(url: String, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
   

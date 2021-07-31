@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveFinalViewersResponseMod {
   
-  @js.native
   trait LiveFinalViewersResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var total_unique_viewer_count: Double = js.native
+    var total_unique_viewer_count: Double
     
-    var users: js.Array[LiveFinalViewersResponseUsersItem] = js.native
+    var users: js.Array[LiveFinalViewersResponseUsersItem]
   }
   object LiveFinalViewersResponseRootObject {
     
@@ -45,22 +43,21 @@ object liveFinalViewersResponseMod {
     }
   }
   
-  @js.native
   trait LiveFinalViewersResponseUsersItem extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LiveFinalViewersResponseUsersItem {
     

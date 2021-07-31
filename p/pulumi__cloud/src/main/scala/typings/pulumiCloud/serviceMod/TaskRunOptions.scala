@@ -3,21 +3,19 @@ package typings.pulumiCloud.serviceMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskRunOptions extends StObject {
   
   /**
     * Optional environment variables to override those set in the container definition.
     */
-  var environment: js.UndefOr[Record[String, String]] = js.native
+  var environment: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * The properties of the host where this task can run.
     */
-  var host: js.UndefOr[HostProperties] = js.native
+  var host: js.UndefOr[HostProperties] = js.undefined
 }
 object TaskRunOptions {
   

@@ -11,8 +11,8 @@ Parse and stringify the HTML `<img>` srcset attribute
 | Full name          | srcset |
 | Keywords           | html, attribute, image, img, src, parse, stringify, srcset, responsive, picture, element |
 | # releases         | 4 |
-| # dependents       | 36 |
-| # downloads        | 34983648 |
+| # dependents       | 39 |
+| # downloads        | 36362826 |
 | # stars            | 8 |
 
 ## Links

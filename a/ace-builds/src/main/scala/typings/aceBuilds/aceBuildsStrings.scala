@@ -3,7 +3,6 @@ package typings.aceBuilds
 import typings.aceBuilds.mod.Ace.NewLineMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aceBuildsStrings {
@@ -29,7 +28,9 @@ object aceBuildsStrings {
   def animatedScroll: animatedScroll = "animatedScroll".asInstanceOf[animatedScroll]
   
   @js.native
-  sealed trait auto extends NewLineMode
+  sealed trait auto
+    extends StObject
+       with NewLineMode
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -409,7 +410,9 @@ object aceBuildsStrings {
   def tooltipFollowsMouse: tooltipFollowsMouse = "tooltipFollowsMouse".asInstanceOf[tooltipFollowsMouse]
   
   @js.native
-  sealed trait unix extends NewLineMode
+  sealed trait unix
+    extends StObject
+       with NewLineMode
   @scala.inline
   def unix: unix = "unix".asInstanceOf[unix]
   
@@ -439,7 +442,9 @@ object aceBuildsStrings {
   def wide: wide = "wide".asInstanceOf[wide]
   
   @js.native
-  sealed trait windows extends NewLineMode
+  sealed trait windows
+    extends StObject
+       with NewLineMode
   @scala.inline
   def windows: windows = "windows".asInstanceOf[windows]
   

@@ -5,7 +5,6 @@ import typings.pixiJs.PIXI.utils.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait InteractionManager extends EventEmitter {
+trait InteractionManager
+  extends StObject
+     with EventEmitter {
   
   /**
     * Should default browser actions automatically be prevented.
@@ -166,56 +167,41 @@ trait InteractionManager extends EventEmitter {
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: Container,
-    func: js.UndefOr[scala.Nothing],
-    hitTest: Boolean
+    func: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: Container,
-    func: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
-  /* protected */ def processInteractive(
-    interactionEvent: InteractionEvent,
-    displayObject: Container,
-    func: js.Function1[/* repeated */ js.Any, _],
+    func: js.Function1[/* repeated */ js.Any, js.Any],
     hitTest: Boolean
   ): Unit = js.native
+  /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: Container, func: Unit, hitTest: Boolean): Unit = js.native
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: Sprite): Unit = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: Sprite,
-    func: js.UndefOr[scala.Nothing],
-    hitTest: Boolean
+    func: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: Sprite,
-    func: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
-  /* protected */ def processInteractive(
-    interactionEvent: InteractionEvent,
-    displayObject: Sprite,
-    func: js.Function1[/* repeated */ js.Any, _],
+    func: js.Function1[/* repeated */ js.Any, js.Any],
     hitTest: Boolean
   ): Unit = js.native
+  /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: Sprite, func: Unit, hitTest: Boolean): Unit = js.native
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: TilingSprite): Unit = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: TilingSprite,
-    func: js.UndefOr[scala.Nothing],
-    hitTest: Boolean
+    func: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: TilingSprite,
-    func: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
-  /* protected */ def processInteractive(
-    interactionEvent: InteractionEvent,
-    displayObject: TilingSprite,
-    func: js.Function1[/* repeated */ js.Any, _],
+    func: js.Function1[/* repeated */ js.Any, js.Any],
     hitTest: Boolean
   ): Unit = js.native
+  /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: TilingSprite, func: Unit, hitTest: Boolean): Unit = js.native
   
   /**
     * The renderer this interaction manager works for.

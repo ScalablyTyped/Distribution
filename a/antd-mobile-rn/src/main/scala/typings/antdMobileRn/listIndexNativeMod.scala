@@ -9,7 +9,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listIndexNativeMod {
@@ -41,12 +40,13 @@ object listIndexNativeMod {
   trait List
     extends Component[ListProps, js.Any, js.Any]
   
-  @js.native
-  trait ListProps extends ListPropsType {
+  trait ListProps
+    extends StObject
+       with ListPropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[ArrowV] = js.native
+    var styles: js.UndefOr[ArrowV] = js.undefined
   }
   object ListProps {
     

@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRealtimeDataResponse extends StObject {
   
-  var realtimeData: ContextRealtimeData = js.native
+  var realtimeData: ContextRealtimeData
 }
 object GetRealtimeDataResponse {
   

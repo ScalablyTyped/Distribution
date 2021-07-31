@@ -3,22 +3,21 @@ package typings.got.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxRedirectsError
-  extends StdError
+  extends StObject
+     with StdError
      with GotError {
   
   @JSName("name")
-  var name_MaxRedirectsError: typings.got.gotStrings.MaxRedirectsError = js.native
+  var name_MaxRedirectsError: typings.got.gotStrings.MaxRedirectsError
   
-  var redirectUrls: js.Array[String] = js.native
+  var redirectUrls: js.Array[String]
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object MaxRedirectsError {
   

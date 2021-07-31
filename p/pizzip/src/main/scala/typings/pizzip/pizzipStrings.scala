@@ -3,13 +3,14 @@ package typings.pizzip
 import typings.pizzip.mod.Compression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pizzipStrings {
   
   @js.native
-  sealed trait DEFLATE extends Compression
+  sealed trait DEFLATE
+    extends StObject
+       with Compression
   @scala.inline
   def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
   
@@ -19,7 +20,9 @@ object pizzipStrings {
   def DOS: DOS = "DOS".asInstanceOf[DOS]
   
   @js.native
-  sealed trait STORE extends Compression
+  sealed trait STORE
+    extends StObject
+       with Compression
   @scala.inline
   def STORE: STORE = "STORE".asInstanceOf[STORE]
   

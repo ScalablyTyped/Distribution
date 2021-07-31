@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.FocusedCellChanging event.
   */
-@js.native
-trait ASPxClientTreeListFocusedCellChangingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientTreeListFocusedCellChangingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Provides information on a cell currently being focused.
     */
-  var cellInfo: ASPxClientTreeListCellInfo = js.native
+  var cellInfo: ASPxClientTreeListCellInfo
 }
 object ASPxClientTreeListFocusedCellChangingEventArgs {
   

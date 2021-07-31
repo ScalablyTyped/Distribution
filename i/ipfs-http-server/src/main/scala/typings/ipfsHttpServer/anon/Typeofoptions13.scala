@@ -2,15 +2,13 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofoptions13 extends StObject {
   
-  val allowUnknown_6: Boolean = js.native
+  val allowUnknown_6: Boolean
   
-  val stripUnknown_6: Boolean = js.native
+  val stripUnknown_6: Boolean
 }
 object Typeofoptions13 {
   

@@ -2,33 +2,31 @@ package typings.bulmaCalendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Date extends StObject {
     
     /**
       * Date icon
       */
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
     /**
       * Next button icon
       */
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
     /**
       * Previous button icon
       */
-    var previous: js.UndefOr[String] = js.native
+    var previous: js.UndefOr[String] = js.undefined
     
     /**
       * Time icon
       */
-    var time: js.UndefOr[String] = js.native
+    var time: js.UndefOr[String] = js.undefined
   }
   object Date {
     
@@ -67,12 +65,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[typings.std.Date] = js.native
+    var end: js.UndefOr[typings.std.Date] = js.undefined
     
-    var start: js.UndefOr[typings.std.Date] = js.native
+    var start: js.UndefOr[typings.std.Date] = js.undefined
   }
   object End {
     
@@ -99,12 +96,11 @@ object anon {
     }
   }
   
-  @js.native
   trait EndDate extends StObject {
     
-    var endDate: js.UndefOr[typings.std.Date] = js.native
+    var endDate: js.UndefOr[typings.std.Date] = js.undefined
     
-    var startDate: typings.std.Date = js.native
+    var startDate: typings.std.Date
   }
   object EndDate {
     

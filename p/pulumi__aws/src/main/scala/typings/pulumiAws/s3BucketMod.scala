@@ -25,7 +25,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3BucketMod {
@@ -42,7 +41,7 @@ object s3BucketMod {
       */
     def this(name: String) = this()
     def this(name: String, args: BucketArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: BucketArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -135,12 +134,7 @@ object s3BucketMod {
       * called whenever a matching [s3.Object] is created.
       */
     def onObjectCreated(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
-    def onObjectCreated(
-      name: String,
-      handler: BucketEventHandler,
-      args: js.UndefOr[scala.Nothing],
-      opts: ComponentResourceOptions
-    ): BucketEventSubscription = js.native
+    def onObjectCreated(name: String, handler: BucketEventHandler, args: Unit, opts: ComponentResourceOptions): BucketEventSubscription = js.native
     def onObjectCreated(name: String, handler: BucketEventHandler, args: ObjectCreatedSubscriptionArgs): BucketEventSubscription = js.native
     def onObjectCreated(
       name: String,
@@ -155,12 +149,7 @@ object s3BucketMod {
       * called whenever an matching [s3.Object] is removed.
       */
     def onObjectRemoved(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
-    def onObjectRemoved(
-      name: String,
-      handler: BucketEventHandler,
-      args: js.UndefOr[scala.Nothing],
-      opts: ComponentResourceOptions
-    ): BucketEventSubscription = js.native
+    def onObjectRemoved(name: String, handler: BucketEventHandler, args: Unit, opts: ComponentResourceOptions): BucketEventSubscription = js.native
     def onObjectRemoved(name: String, handler: BucketEventHandler, args: ObjectRemovedSubscriptionArgs): BucketEventSubscription = js.native
     def onObjectRemoved(
       name: String,
@@ -225,6 +214,10 @@ object s3BucketMod {
   /* static members */
   object Bucket {
     
+    @JSImport("@pulumi/aws/s3/bucket", "Bucket")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Bucket resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -234,100 +227,94 @@ object s3BucketMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Bucket = js.native
-    @JSImport("@pulumi/aws/s3/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Bucket = js.native
-    @JSImport("@pulumi/aws/s3/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketState): Bucket = js.native
-    @JSImport("@pulumi/aws/s3/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): Bucket = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketState): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
     
     /**
       * Returns true if the given object is an instance of Bucket.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/bucket", "Bucket.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean]
   }
   
-  @js.native
   trait BucketArgs extends StObject {
     
     /**
       * Sets the accelerate configuration of an existing bucket. Can be `Enabled` or `Suspended`.
       */
-    val accelerationStatus: js.UndefOr[Input[String]] = js.native
+    val accelerationStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Valid values are `private`, `public-read`, `public-read-write`, `aws-exec-read`, `authenticated-read`, and `log-delivery-write`. Defaults to `private`.  Conflicts with `grant`.
       */
-    val acl: js.UndefOr[Input[String | CannedAcl]] = js.native
+    val acl: js.UndefOr[Input[String | CannedAcl]] = js.undefined
     
     /**
       * The ARN of the bucket. Will be of format `arn:aws:s3:::bucketname`.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the bucket. If omitted, this provider will assign a random, unique name. Must be less than or equal to 63 characters in length.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique bucket name beginning with the specified prefix. Conflicts with `bucket`. Must be less than or equal to 37 characters in length.
       */
-    val bucketPrefix: js.UndefOr[Input[String]] = js.native
+    val bucketPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A rule of [Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) (documented below).
       */
-    val corsRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]] = js.native
+    val corsRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]] = js.undefined
     
     /**
       * A boolean that indicates all objects (including any [locked objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html)) should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * An [ACL policy grant](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#sample-acl) (documented below). Conflicts with `acl`.
       */
-    val grants: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]] = js.native
+    val grants: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]] = js.undefined
     
     /**
       * The [Route 53 Hosted Zone ID](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints) for this bucket's region.
       */
-    val hostedZoneId: js.UndefOr[Input[String]] = js.native
+    val hostedZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration of [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) (documented below).
       */
-    val lifecycleRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]] = js.native
+    val lifecycleRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]] = js.undefined
     
     /**
       * A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html) (documented below).
       */
-    val loggings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]] = js.native
+    val loggings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]] = js.undefined
     
     /**
       * A configuration of [S3 object locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) (documented below)
       */
-    val objectLockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]] = js.native
+    val objectLockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]] = js.undefined
     
     /**
       * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), the provider may view the policy as constantly changing in a `pulumi up / preview / update`. In this case, please make sure you use the verbose/specific version of the policy.
       */
-    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
     
     /**
       * A configuration of [replication configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html) (documented below).
       */
-    val replicationConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]] = js.native
+    val replicationConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]] = js.undefined
     
     /**
       * Specifies who should bear the cost of Amazon S3 data transfer.
@@ -335,37 +322,37 @@ object s3BucketMod {
       * the costs of any data transfer. See [Requester Pays Buckets](http://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html)
       * developer guide for more information.
       */
-    val requestPayer: js.UndefOr[Input[String]] = js.native
+    val requestPayer: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration of [server-side encryption configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html) (documented below)
       */
-    val serverSideEncryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]] = js.native
+    val serverSideEncryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]] = js.undefined
     
     /**
       * A mapping of tags to assign to the bucket.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
       */
-    val versioning: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketVersioning]] = js.native
+    val versioning: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketVersioning]] = js.undefined
     
     /**
       * A website object (documented below).
       */
-    val website: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketWebsite]] = js.native
+    val website: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketWebsite]] = js.undefined
     
     /**
       * The domain of the website endpoint, if the bucket is configured with a website. If not, this will be an empty string. This is used to create Route 53 alias records.
       */
-    val websiteDomain: js.UndefOr[Input[String]] = js.native
+    val websiteDomain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The website endpoint, if the bucket is configured with a website. If not, this will be an empty string.
       */
-    val websiteEndpoint: js.UndefOr[Input[String]] = js.native
+    val websiteEndpoint: js.UndefOr[Input[String]] = js.undefined
   }
   object BucketArgs {
     
@@ -518,93 +505,92 @@ object s3BucketMod {
     }
   }
   
-  @js.native
   trait BucketState extends StObject {
     
     /**
       * Sets the accelerate configuration of an existing bucket. Can be `Enabled` or `Suspended`.
       */
-    val accelerationStatus: js.UndefOr[Input[String]] = js.native
+    val accelerationStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Valid values are `private`, `public-read`, `public-read-write`, `aws-exec-read`, `authenticated-read`, and `log-delivery-write`. Defaults to `private`.  Conflicts with `grant`.
       */
-    val acl: js.UndefOr[Input[String | CannedAcl]] = js.native
+    val acl: js.UndefOr[Input[String | CannedAcl]] = js.undefined
     
     /**
       * The ARN of the bucket. Will be of format `arn:aws:s3:::bucketname`.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the bucket. If omitted, this provider will assign a random, unique name. Must be less than or equal to 63 characters in length.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The bucket domain name. Will be of format `bucketname.s3.amazonaws.com`.
       */
-    val bucketDomainName: js.UndefOr[Input[String]] = js.native
+    val bucketDomainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique bucket name beginning with the specified prefix. Conflicts with `bucket`. Must be less than or equal to 37 characters in length.
       */
-    val bucketPrefix: js.UndefOr[Input[String]] = js.native
+    val bucketPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The bucket region-specific domain name. The bucket domain name including the region name, please refer [here](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) for format. Note: The AWS CloudFront allows specifying S3 region-specific endpoint when creating S3 origin, it will prevent [redirect issues](https://forums.aws.amazon.com/thread.jspa?threadID=216814) from CloudFront to S3 Origin URL.
       */
-    val bucketRegionalDomainName: js.UndefOr[Input[String]] = js.native
+    val bucketRegionalDomainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A rule of [Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) (documented below).
       */
-    val corsRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]] = js.native
+    val corsRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketCorsRule]]]] = js.undefined
     
     /**
       * A boolean that indicates all objects (including any [locked objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html)) should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * An [ACL policy grant](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#sample-acl) (documented below). Conflicts with `acl`.
       */
-    val grants: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]] = js.native
+    val grants: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketGrant]]]] = js.undefined
     
     /**
       * The [Route 53 Hosted Zone ID](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints) for this bucket's region.
       */
-    val hostedZoneId: js.UndefOr[Input[String]] = js.native
+    val hostedZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration of [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) (documented below).
       */
-    val lifecycleRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]] = js.native
+    val lifecycleRules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLifecycleRule]]]] = js.undefined
     
     /**
       * A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html) (documented below).
       */
-    val loggings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]] = js.native
+    val loggings: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketLogging]]]] = js.undefined
     
     /**
       * A configuration of [S3 object locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) (documented below)
       */
-    val objectLockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]] = js.native
+    val objectLockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration]] = js.undefined
     
     /**
       * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), the provider may view the policy as constantly changing in a `pulumi up / preview / update`. In this case, please make sure you use the verbose/specific version of the policy.
       */
-    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
     
     /**
       * The AWS region this bucket resides in.
       */
-    val region: js.UndefOr[Input[String]] = js.native
+    val region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration of [replication configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html) (documented below).
       */
-    val replicationConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]] = js.native
+    val replicationConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketReplicationConfiguration]] = js.undefined
     
     /**
       * Specifies who should bear the cost of Amazon S3 data transfer.
@@ -612,37 +598,37 @@ object s3BucketMod {
       * the costs of any data transfer. See [Requester Pays Buckets](http://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html)
       * developer guide for more information.
       */
-    val requestPayer: js.UndefOr[Input[String]] = js.native
+    val requestPayer: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration of [server-side encryption configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html) (documented below)
       */
-    val serverSideEncryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]] = js.native
+    val serverSideEncryptionConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketServerSideEncryptionConfiguration]] = js.undefined
     
     /**
       * A mapping of tags to assign to the bucket.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
       */
-    val versioning: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketVersioning]] = js.native
+    val versioning: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketVersioning]] = js.undefined
     
     /**
       * A website object (documented below).
       */
-    val website: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketWebsite]] = js.native
+    val website: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketWebsite]] = js.undefined
     
     /**
       * The domain of the website endpoint, if the bucket is configured with a website. If not, this will be an empty string. This is used to create Route 53 alias records.
       */
-    val websiteDomain: js.UndefOr[Input[String]] = js.native
+    val websiteDomain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The website endpoint, if the bucket is configured with a website. If not, this will be an empty string.
       */
-    val websiteEndpoint: js.UndefOr[Input[String]] = js.native
+    val websiteEndpoint: js.UndefOr[Input[String]] = js.undefined
   }
   object BucketState {
     

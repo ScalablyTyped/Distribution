@@ -2,31 +2,29 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHttpNamespaceRequest extends StObject {
   
   /**
     * A unique string that identifies the request and that allows failed CreateHttpNamespace requests to be retried without the risk of executing the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp.
     */
-  var CreatorRequestId: js.UndefOr[ResourceId] = js.native
+  var CreatorRequestId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * A description for the namespace.
     */
-  var Description: js.UndefOr[ResourceDescription] = js.native
+  var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * The name that you want to assign to this namespace.
     */
-  var Name: NamespaceName = js.native
+  var Name: NamespaceName
   
   /**
     * The tags to add to the namespace. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateHttpNamespaceRequest {
   

@@ -6,21 +6,19 @@ import typings.vegaTypings.vegaTypingsStrings.range
 import typings.vegaTypings.vegaTypingsStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bindMod {
   
-  @js.native
   trait BaseBinding extends StObject {
     
-    var debounce: js.UndefOr[Double] = js.native
+    var debounce: js.UndefOr[Double] = js.undefined
     
-    var element: js.UndefOr[Element] = js.native
+    var element: js.UndefOr[Element] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BaseBinding {
     
@@ -59,18 +57,18 @@ object bindMod {
     }
   }
   
-  @js.native
   trait BindCheckbox
-    extends BaseBinding
+    extends StObject
+       with BaseBinding
        with Binding {
     
-    var input: checkbox = js.native
+    var input: checkbox
   }
   object BindCheckbox {
     
     @scala.inline
-    def apply(input: checkbox): BindCheckbox = {
-      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    def apply(): BindCheckbox = {
+      val __obj = js.Dynamic.literal(input = "checkbox")
       __obj.asInstanceOf[BindCheckbox]
     }
     
@@ -82,21 +80,21 @@ object bindMod {
     }
   }
   
-  @js.native
   trait BindRadioSelect
-    extends BaseBinding
+    extends StObject
+       with BaseBinding
        with Binding {
     
-    var input: radio | select = js.native
+    var input: radio | select
     
-    var labels: js.UndefOr[js.Array[String]] = js.native
+    var labels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var options: js.Array[_] = js.native
+    var options: js.Array[js.Any]
   }
   object BindRadioSelect {
     
     @scala.inline
-    def apply(input: radio | select, options: js.Array[_]): BindRadioSelect = {
+    def apply(input: radio | select, options: js.Array[js.Any]): BindRadioSelect = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[BindRadioSelect]
     }
@@ -117,31 +115,31 @@ object bindMod {
       def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
       @scala.inline
-      def setOptions(value: js.Array[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait BindRange
-    extends BaseBinding
+    extends StObject
+       with BaseBinding
        with Binding {
     
-    var input: range = js.native
+    var input: range
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object BindRange {
     
     @scala.inline
-    def apply(input: range): BindRange = {
-      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    def apply(): BindRange = {
+      val __obj = js.Dynamic.literal(input = "range")
       __obj.asInstanceOf[BindRange]
     }
     
@@ -181,20 +179,20 @@ object bindMod {
   object Binding {
     
     @scala.inline
-    def BindCheckbox(input: checkbox): typings.vegaTypings.bindMod.BindCheckbox = {
-      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    def BindCheckbox(): typings.vegaTypings.bindMod.BindCheckbox = {
+      val __obj = js.Dynamic.literal(input = "checkbox")
       __obj.asInstanceOf[typings.vegaTypings.bindMod.BindCheckbox]
     }
     
     @scala.inline
-    def BindRadioSelect(input: radio | select, options: js.Array[_]): typings.vegaTypings.bindMod.BindRadioSelect = {
+    def BindRadioSelect(input: radio | select, options: js.Array[js.Any]): typings.vegaTypings.bindMod.BindRadioSelect = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.bindMod.BindRadioSelect]
     }
     
     @scala.inline
-    def BindRange(input: range): typings.vegaTypings.bindMod.BindRange = {
-      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    def BindRange(): typings.vegaTypings.bindMod.BindRange = {
+      val __obj = js.Dynamic.literal(input = "range")
       __obj.asInstanceOf[typings.vegaTypings.bindMod.BindRange]
     }
     
@@ -207,16 +205,16 @@ object bindMod {
   
   type Element = String
   
-  @js.native
   trait InputBinding
-    extends BaseBinding
+    extends StObject
+       with BaseBinding
        with Binding {
     
-    var autocomplete: js.UndefOr[String] = js.native
+    var autocomplete: js.UndefOr[String] = js.undefined
     
-    var input: js.UndefOr[String] = js.native
+    var input: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
   }
   object InputBinding {
     

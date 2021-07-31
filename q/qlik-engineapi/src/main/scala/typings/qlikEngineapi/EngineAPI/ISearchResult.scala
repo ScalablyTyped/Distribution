@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchResult...
   */
-@js.native
 trait ISearchResult extends StObject {
   
   /**
@@ -19,17 +17,17 @@ trait ISearchResult extends StObject {
     * to
     * the value of SearchPage.qOffset + SearchPage.qCount.
     */
-  var qSearchGroupArray: ISearchGroup = js.native
+  var qSearchGroupArray: ISearchGroup
   
   /**
     * List of the search terms.
     */
-  var qSearchTerms: js.Array[String] = js.native
+  var qSearchTerms: js.Array[String]
   
   /**
     * Total number of groups.
     */
-  var qTotalNumberOfGroups: Double = js.native
+  var qTotalNumberOfGroups: Double
 }
 object ISearchResult {
   

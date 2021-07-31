@@ -1,52 +1,47 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`7`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.closed
+import typings.octokitTypes.octokitTypesStrings.inertia
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   state :'open' | 'closed' | 'all' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
-@js.native
-trait ProjectsListForRepoEndpoint extends StObject {
+trait ProjectsListForRepoEndpoint
+  extends StObject
+     with RequiredPreview[inertia] {
   
-  var mediaType: `7` = js.native
-  
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Indicates the state of the projects to return. Can be either `open`, `closed`, or `all`.
     */
-  var state: js.UndefOr[open | closed | all] = js.native
+  var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object ProjectsListForRepoEndpoint {
   
   @scala.inline
-  def apply(mediaType: `7`, owner: String, repo: String): ProjectsListForRepoEndpoint = {
+  def apply(mediaType: `0`[inertia], owner: String, repo: String): ProjectsListForRepoEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsListForRepoEndpoint]
   }
   
   @scala.inline
   implicit class ProjectsListForRepoEndpointMutableBuilder[Self <: ProjectsListForRepoEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

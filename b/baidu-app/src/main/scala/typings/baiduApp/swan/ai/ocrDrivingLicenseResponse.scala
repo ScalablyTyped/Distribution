@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.baiduApp.anon.Words
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ocrDrivingLicenseResponse extends StObject {
   
-  var log_id: String = js.native
+  var log_id: String
   
   // 识别结果数，表示 words_result 的元素个数。
-  var words_result: StringDictionary[Words] = js.native
+  var words_result: StringDictionary[Words]
   
   // 唯一的log id，用于问题定位。
-  var words_result_num: Double = js.native
+  var words_result_num: Double
 }
 object ocrDrivingLicenseResponse {
   

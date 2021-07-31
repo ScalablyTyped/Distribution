@@ -5,15 +5,13 @@ import typings.chrome.chrome.fileBrowserHandler.SelectionParams
 import typings.chrome.chrome.fileBrowserHandler.SelectionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeoffileBrowserHandler extends StObject {
   
-  var onExecute: FileBrowserHandlerExecuteEvent = js.native
+  var onExecute: FileBrowserHandlerExecuteEvent
   
-  def selectFile(selectionParams: SelectionParams, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = js.native
+  def selectFile(selectionParams: SelectionParams, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit
 }
 object TypeoffileBrowserHandler {
   

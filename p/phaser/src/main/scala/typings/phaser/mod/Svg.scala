@@ -3,7 +3,6 @@ package typings.phaser.mod
 import typings.std.SVGPathElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Svg")
 @js.native
 class Svg ()
-  extends typings.phaser.MatterJS.Svg
+  extends StObject
+     with typings.phaser.MatterJS.Svg
 object Svg {
+  
+  @JSImport("matter", "Svg")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Converts an SVG path into an array of vector points.
@@ -30,7 +34,6 @@ object Svg {
     * @return {Vector[]} points
     */
   /* static member */
-  @JSImport("matter", "Svg.pathToVertices")
-  @js.native
-  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[typings.phaser.MatterJS.Vector] = js.native
+  @scala.inline
+  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[typings.phaser.MatterJS.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToVertices")(path.asInstanceOf[js.Any], sampleLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
 }

@@ -2,7 +2,6 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * var arc = { type: 'arc', origin: [0, 0], radius: 7, startAngle: 0, endAngle: 45 };   //javascript
   * ```
   */
-@js.native
-trait IPathArc extends IPathCircle {
+trait IPathArc
+  extends StObject
+     with IPathCircle {
   
   /**
     * The angle (in degrees) to end drawing the arc, in polar (counter-clockwise) direction. May be less than start angle if it past 360.
     */
-  var endAngle: Double = js.native
+  var endAngle: Double
   
   /**
     * The angle (in degrees) to begin drawing the arc, in polar (counter-clockwise) direction.
     */
-  var startAngle: Double = js.native
+  var startAngle: Double
 }
 object IPathArc {
   

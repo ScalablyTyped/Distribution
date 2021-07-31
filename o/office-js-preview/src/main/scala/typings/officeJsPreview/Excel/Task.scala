@@ -7,7 +7,6 @@ import typings.officeJsPreview.anon.Expand
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait Task extends ClientObject {
+trait Task
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds an assignee to the task.

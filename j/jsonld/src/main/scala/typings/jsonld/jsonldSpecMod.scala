@@ -2,7 +2,6 @@ package typings.jsonld
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonldSpecMod {
@@ -33,25 +32,25 @@ object jsonldSpecMod {
     def expand(input: Document, options: Options): js.Promise[JsonLdArray] = js.native
     
     def flatten(input: Document): js.Promise[JsonLdObj] = js.native
-    def flatten(input: Document, context: js.UndefOr[Context], options: Options): js.Promise[JsonLdObj] = js.native
     def flatten(input: Document, context: Null, options: Options): js.Promise[JsonLdObj] = js.native
+    def flatten(input: Document, context: Unit, options: Options): js.Promise[JsonLdObj] = js.native
     def flatten(input: Document, context: Context): js.Promise[JsonLdObj] = js.native
+    def flatten(input: Document, context: Context, options: Options): js.Promise[JsonLdObj] = js.native
   }
   
   type LoadDocumentCallback = js.Function1[/* url */ Url, js.Promise[RemoteDocument]]
   
-  @js.native
   trait Options extends StObject {
     
-    var base: js.UndefOr[DOMString | Null] = js.native
+    var base: js.UndefOr[DOMString | Null] = js.undefined
     
-    var compactArrays: js.UndefOr[Boolean] = js.native
+    var compactArrays: js.UndefOr[Boolean] = js.undefined
     
-    var documentLoader: js.UndefOr[LoadDocumentCallback | Null] = js.native
+    var documentLoader: js.UndefOr[LoadDocumentCallback | Null] = js.undefined
     
-    var expandContext: js.UndefOr[Context | Null] = js.native
+    var expandContext: js.UndefOr[Context | Null] = js.undefined
     
-    var processingMode: js.UndefOr[DOMString] = js.native
+    var processingMode: js.UndefOr[DOMString] = js.undefined
   }
   object Options {
     
@@ -108,14 +107,13 @@ object jsonldSpecMod {
     }
   }
   
-  @js.native
   trait RemoteDocument extends StObject {
     
-    var contextUrl: js.UndefOr[Url] = js.native
+    var contextUrl: js.UndefOr[Url] = js.undefined
     
-    var document: JsonLd = js.native
+    var document: JsonLd
     
-    var documentUrl: Url = js.native
+    var documentUrl: Url
   }
   object RemoteDocument {
     

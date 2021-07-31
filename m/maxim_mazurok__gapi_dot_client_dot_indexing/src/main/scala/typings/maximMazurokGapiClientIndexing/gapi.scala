@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientIndexing.anon.Alt
 import typings.maximMazurokGapiClientIndexing.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -15,11 +14,10 @@ object gapi {
     
     object indexing {
       
-      @js.native
       trait PublishUrlNotificationResponse extends StObject {
         
         /** Description of the notification events received for this URL. */
-        var urlNotificationMetadata: js.UndefOr[UrlNotificationMetadata] = js.native
+        var urlNotificationMetadata: js.UndefOr[UrlNotificationMetadata] = js.undefined
       }
       object PublishUrlNotificationResponse {
         
@@ -40,17 +38,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait UrlNotification extends StObject {
         
         /** Creation timestamp for this notification. Users should _not_ specify it, the field is ignored at the request time. */
-        var notifyTime: js.UndefOr[String] = js.native
+        var notifyTime: js.UndefOr[String] = js.undefined
         
         /** The URL life cycle event that Google is being notified about. */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
         
         /** The object of this notification. The URL must be owned by the publisher of this notification and, in case of `URL_UPDATED` notifications, it _must_ be crawlable by Google. */
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object UrlNotification {
         
@@ -83,17 +80,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait UrlNotificationMetadata extends StObject {
         
         /** Latest notification received with type `URL_REMOVED`. */
-        var latestRemove: js.UndefOr[UrlNotification] = js.native
+        var latestRemove: js.UndefOr[UrlNotification] = js.undefined
         
         /** Latest notification received with type `URL_UPDATED`. */
-        var latestUpdate: js.UndefOr[UrlNotification] = js.native
+        var latestUpdate: js.UndefOr[UrlNotification] = js.undefined
         
         /** URL to which this metadata refers. */
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object UrlNotificationMetadata {
         

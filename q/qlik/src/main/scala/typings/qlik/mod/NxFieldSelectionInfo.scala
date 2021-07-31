@@ -5,15 +5,13 @@ import typings.qlik.qlikStrings.NORMAL
 import typings.qlik.qlikStrings.NOT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxFieldSelectionInfo extends StObject {
   
-  var qFieldSelectionmode: NORMAL | AND | NOT = js.native
+  var qFieldSelectionmode: NORMAL | AND | NOT
   
-  var qName: String = js.native
+  var qName: String
 }
 object NxFieldSelectionInfo {
   

@@ -4,7 +4,6 @@ import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsHtmlResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlMod {
@@ -15,7 +14,9 @@ object htmlMod {
     * @param options Canvas options
     * @public
     */
-  class HtmlResponse[TData /* <: JsonObject */] () extends GoogleActionsV2UiElementsHtmlResponse {
+  class HtmlResponse[TData /* <: JsonObject */] ()
+    extends StObject
+       with GoogleActionsV2UiElementsHtmlResponse {
     def this(options: HtmlResponseOptions[TData]) = this()
     def this(options: GoogleActionsV2UiElementsHtmlResponse) = this()
     
@@ -28,7 +29,6 @@ object htmlMod {
     var suppress: Boolean = js.native
   }
   
-  @js.native
   trait HtmlResponseOptions[TData /* <: JsonObject */] extends StObject {
     
     /**
@@ -37,7 +37,7 @@ object htmlMod {
       * Alias of `updatedState`
       * @public
       */
-    var data: js.UndefOr[TData] = js.native
+    var data: js.UndefOr[TData] = js.undefined
     
     /**
       * Configure if the mic is closed after this html response.
@@ -45,14 +45,14 @@ object htmlMod {
       * Alias of `suppressMic`
       * @public
       */
-    var suppress: js.UndefOr[Boolean] = js.native
+    var suppress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The url of the web app.
       *
       * @public
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object HtmlResponseOptions {
     
@@ -63,7 +63,7 @@ object htmlMod {
     }
     
     @scala.inline
-    implicit class HtmlResponseOptionsMutableBuilder[Self <: HtmlResponseOptions[_], TData /* <: JsonObject */] (val x: Self with HtmlResponseOptions[TData]) extends AnyVal {
+    implicit class HtmlResponseOptionsMutableBuilder[Self <: HtmlResponseOptions[?], TData /* <: JsonObject */] (val x: Self & HtmlResponseOptions[TData]) extends AnyVal {
       
       @scala.inline
       def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

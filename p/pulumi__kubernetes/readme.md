@@ -10,9 +10,9 @@ Typings are for version 2.7.2
 | ------------------ | :-------------: |
 | Full name          | @pulumi/kubernetes |
 | Keywords           | pulumi, kubernetes |
-| # releases         | 506 |
-| # dependents       | 29 |
-| # downloads        | 627189 |
+| # releases         | 476 |
+| # dependents       | 34 |
+| # downloads        | 763611 |
 | # stars            | 0 |
 
 ## Links

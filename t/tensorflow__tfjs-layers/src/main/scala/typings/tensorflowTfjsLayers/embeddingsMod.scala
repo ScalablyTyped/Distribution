@@ -10,7 +10,6 @@ import typings.tensorflowTfjsLayers.topologyMod.Layer
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object embeddingsMod {
@@ -53,33 +52,34 @@ object embeddingsMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait EmbeddingLayerArgs extends LayerArgs {
+  trait EmbeddingLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Regularizer function applied to the activation.
       */
-    var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Constraint function applied to the `embeddings` matrix.
       */
-    var embeddingsConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
+    var embeddingsConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
     
     /**
       * Initializer for the `embeddings` matrix.
       */
-    var embeddingsInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
+    var embeddingsInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
     
     /**
       * Regularizer function applied to the `embeddings` matrix.
       */
-    var embeddingsRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
+    var embeddingsRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
     
     /**
       * Integer > 0. Size of the vocabulary, i.e. maximum integer index + 1.
       */
-    var inputDim: Double = js.native
+    var inputDim: Double
     
     /**
       * Length of input sequences, when it is constant.
@@ -88,7 +88,7 @@ object embeddingsMod {
       * `dense` layers upstream (without it, the shape of the dense outputs cannot
       * be computed).
       */
-    var inputLength: js.UndefOr[Double | js.Array[Double]] = js.native
+    var inputLength: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Whether the input value 0 is a special "padding" value that should be
@@ -100,12 +100,12 @@ object embeddingsMod {
       * consequence, index 0 cannot be used in the vocabulary (inputDim should
       * equal size of vocabulary + 1).
       */
-    var maskZero: js.UndefOr[Boolean] = js.native
+    var maskZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Integer >= 0. Dimension of the dense embedding.
       */
-    var outputDim: Double = js.native
+    var outputDim: Double
   }
   object EmbeddingLayerArgs {
     

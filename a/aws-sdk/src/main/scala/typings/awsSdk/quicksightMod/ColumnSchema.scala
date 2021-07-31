@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnSchema extends StObject {
   
   /**
     * The data type of the column schema.
     */
-  var DataType: js.UndefOr[String] = js.native
+  var DataType: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic role of the column schema.
     */
-  var GeographicRole: js.UndefOr[String] = js.native
+  var GeographicRole: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the column schema.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object ColumnSchema {
   

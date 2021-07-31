@@ -2,24 +2,23 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LineUtil {
   
-  @JSImport("leaflet", "LineUtil.closestPointOnSegment")
+  @JSImport("leaflet", "LineUtil")
   @js.native
-  def closestPointOnSegment(p: Point_, p1: Point_, p2: Point_): Point_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("leaflet", "LineUtil.isFlat")
-  @js.native
-  def isFlat(latlngs: js.Array[LatLngExpression]): Boolean = js.native
+  @scala.inline
+  def closestPointOnSegment(p: Point_, p1: Point_, p2: Point_): Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("closestPointOnSegment")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Point_]
   
-  @JSImport("leaflet", "LineUtil.pointToSegmentDistance")
-  @js.native
-  def pointToSegmentDistance(p: Point_, p1: Point_, p2: Point_): Double = js.native
+  @scala.inline
+  def isFlat(latlngs: js.Array[LatLngExpression]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFlat")(latlngs.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("leaflet", "LineUtil.simplify")
-  @js.native
-  def simplify(points: js.Array[Point_], tolerance: Double): js.Array[Point_] = js.native
+  @scala.inline
+  def pointToSegmentDistance(p: Point_, p1: Point_, p2: Point_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToSegmentDistance")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def simplify(points: js.Array[Point_], tolerance: Double): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(points.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
 }

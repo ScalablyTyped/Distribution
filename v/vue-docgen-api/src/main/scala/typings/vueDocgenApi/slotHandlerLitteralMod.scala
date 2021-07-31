@@ -5,20 +5,23 @@ import typings.vueInbrowserCompilerUtils.typesMod.ParamTag
 import typings.vueInbrowserCompilerUtils.typesMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slotHandlerLitteralMod {
   
-  @JSImport("vue-docgen-api/dist/script-handlers/slotHandlerLitteral", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/script-handlers/slotHandlerLitteral", JSImport.Namespace)
   @js.native
-  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait TypedParamTag extends ParamTag {
+  @scala.inline
+  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  trait TypedParamTag
+    extends StObject
+       with ParamTag {
     
     @JSName("type")
-    var type_TypedParamTag: ParamType = js.native
+    var type_TypedParamTag: ParamType
   }
   object TypedParamTag {
     

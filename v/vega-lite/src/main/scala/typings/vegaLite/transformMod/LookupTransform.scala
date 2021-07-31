@@ -3,18 +3,18 @@ package typings.vegaLite.transformMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LookupTransform extends Transform {
+trait LookupTransform
+  extends StObject
+     with Transform {
   
   /**
     * The default value to use if lookup fails.
     *
     * __Default value:__ `null`
     */
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
   /**
     * The output fields on which to store the looked up data values.
@@ -27,17 +27,17 @@ trait LookupTransform extends Transform {
     * looked up values will be stored under a property named for the selection;
     * and if specified, it must correspond to `from.fields`.
     */
-  var as: js.UndefOr[FieldName | js.Array[FieldName]] = js.native
+  var as: js.UndefOr[FieldName | js.Array[FieldName]] = js.undefined
   
   /**
     * Data source or selection for secondary data reference.
     */
-  var from: LookupData | LookupSelection = js.native
+  var from: LookupData | LookupSelection
   
   /**
     * Key in primary data source.
     */
-  var lookup: String = js.native
+  var lookup: String
 }
 object LookupTransform {
   

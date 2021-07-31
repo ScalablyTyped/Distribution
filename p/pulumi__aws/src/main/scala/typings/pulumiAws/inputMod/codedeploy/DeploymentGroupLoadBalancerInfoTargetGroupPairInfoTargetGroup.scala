@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.codedeploy
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup extends StObject {
   
   /**
     * Name of the target group.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
 }
 object DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup {
   

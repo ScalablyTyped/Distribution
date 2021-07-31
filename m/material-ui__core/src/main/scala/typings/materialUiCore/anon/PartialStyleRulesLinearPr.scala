@@ -3,48 +3,46 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/LinearProgress.LinearProgressClassKey>> */
-@js.native
 trait PartialStyleRulesLinearPr extends StObject {
   
-  var bar: js.UndefOr[CSSProperties] = js.native
+  var bar: js.UndefOr[CSSProperties] = js.undefined
   
-  var bar1Buffer: js.UndefOr[CSSProperties] = js.native
+  var bar1Buffer: js.UndefOr[CSSProperties] = js.undefined
   
-  var bar1Determinate: js.UndefOr[CSSProperties] = js.native
+  var bar1Determinate: js.UndefOr[CSSProperties] = js.undefined
   
-  var bar1Indeterminate: js.UndefOr[CSSProperties] = js.native
+  var bar1Indeterminate: js.UndefOr[CSSProperties] = js.undefined
   
-  var bar2Buffer: js.UndefOr[CSSProperties] = js.native
+  var bar2Buffer: js.UndefOr[CSSProperties] = js.undefined
   
-  var bar2Indeterminate: js.UndefOr[CSSProperties] = js.native
+  var bar2Indeterminate: js.UndefOr[CSSProperties] = js.undefined
   
-  var barColorPrimary: js.UndefOr[CSSProperties] = js.native
+  var barColorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var barColorSecondary: js.UndefOr[CSSProperties] = js.native
+  var barColorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var buffer: js.UndefOr[CSSProperties] = js.native
+  var buffer: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var dashed: js.UndefOr[CSSProperties] = js.native
+  var dashed: js.UndefOr[CSSProperties] = js.undefined
   
-  var dashedColorPrimary: js.UndefOr[CSSProperties] = js.native
+  var dashedColorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var dashedColorSecondary: js.UndefOr[CSSProperties] = js.native
+  var dashedColorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var determinate: js.UndefOr[CSSProperties] = js.native
+  var determinate: js.UndefOr[CSSProperties] = js.undefined
   
-  var indeterminate: js.UndefOr[CSSProperties] = js.native
+  var indeterminate: js.UndefOr[CSSProperties] = js.undefined
   
-  var query: js.UndefOr[CSSProperties] = js.native
+  var query: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesLinearPr {
   

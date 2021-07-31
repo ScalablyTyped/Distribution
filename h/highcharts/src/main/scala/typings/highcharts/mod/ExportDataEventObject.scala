@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportDataEventObject extends StObject {
   
   /**
     * Contains the data rows for the current export task and can be modified.
     */
-  var dataRows: js.Array[js.Array[String]] = js.native
+  var dataRows: js.Array[js.Array[String]]
 }
 object ExportDataEventObject {
   

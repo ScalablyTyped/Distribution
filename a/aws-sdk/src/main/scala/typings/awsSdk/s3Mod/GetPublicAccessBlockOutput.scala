@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPublicAccessBlockOutput extends StObject {
   
   /**
     * The PublicAccessBlock configuration currently in effect for this Amazon S3 bucket.
     */
-  var PublicAccessBlockConfiguration: js.UndefOr[typings.awsSdk.s3Mod.PublicAccessBlockConfiguration] = js.native
+  var PublicAccessBlockConfiguration: js.UndefOr[typings.awsSdk.s3Mod.PublicAccessBlockConfiguration] = js.undefined
 }
 object GetPublicAccessBlockOutput {
   

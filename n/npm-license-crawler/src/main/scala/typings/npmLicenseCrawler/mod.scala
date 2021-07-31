@@ -5,52 +5,53 @@ import typings.npmLicenseCrawler.anon.LicenseUrl
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("npm-license-crawler", "dumpLicenses")
+  @JSImport("npm-license-crawler", JSImport.Namespace)
   @js.native
-  def dumpLicenses(args: CrawlerOptions, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def dumpLicenses(args: CrawlerOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dumpLicenses")(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Callback = js.Function2[/* error */ Error | Null, /* licenses */ Licenses, Unit]
   
-  @js.native
   trait CrawlerOptions extends StObject {
     
     /** export the data as comma-separated values to the given file. The path will be created if it does not exist. */
-    var csv: js.UndefOr[String] = js.native
+    var csv: js.UndefOr[String] = js.undefined
     
     /** show only third-party licenses, i.e., only list the dependencies defined in package.json. */
-    var dependencies: js.UndefOr[Boolean] = js.native
+    var dependencies: js.UndefOr[Boolean] = js.undefined
     
     /** show only development dependencies */
-    var development: js.UndefOr[Boolean] = js.native
+    var development: js.UndefOr[Boolean] = js.undefined
     
     /** path to a directory to be excluded (and its subdirectories) from the search. */
-    var exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** export data as JSON to the given file. The path will be created if it does not exist. */
-    var json: js.UndefOr[String] = js.native
+    var json: js.UndefOr[String] = js.undefined
     
     /** omit version numbers in result (e.g. "npm-license-crawler@0.1.5" becomes "npm-license-crawler") */
-    var omitVersion: js.UndefOr[Boolean] = js.native
+    var omitVersion: js.UndefOr[Boolean] = js.undefined
     
     /** show only direct dependencies licenses, i.e., don't list dependencies of dependencies. */
-    var onlyDirectDependencies: js.UndefOr[Boolean] = js.native
+    var onlyDirectDependencies: js.UndefOr[Boolean] = js.undefined
     
     /** show only production dependencies */
-    var production: js.UndefOr[Boolean] = js.native
+    var production: js.UndefOr[Boolean] = js.undefined
     
     /** output the relative file path for license files. */
-    var relativeLicensePath: js.UndefOr[Boolean] = js.native
+    var relativeLicensePath: js.UndefOr[Boolean] = js.undefined
     
     /** path to the directory the license search should start from. If omitted the current working directory is assumed. */
-    var start: String | js.Array[String] = js.native
+    var start: String | js.Array[String]
     
     /** show only licenses that can't be determined or have been guessed. */
-    var unknown: js.UndefOr[Boolean] = js.native
+    var unknown: js.UndefOr[Boolean] = js.undefined
   }
   object CrawlerOptions {
     

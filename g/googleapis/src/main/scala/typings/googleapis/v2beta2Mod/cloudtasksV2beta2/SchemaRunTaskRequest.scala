@@ -2,13 +2,11 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for forcing a task to run now using RunTask.
   */
-@js.native
 trait SchemaRunTaskRequest extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaRunTaskRequest extends StObject {
     * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/)
     * permission on the Task resource.
     */
-  var responseView: js.UndefOr[String] = js.native
+  var responseView: js.UndefOr[String] = js.undefined
 }
 object SchemaRunTaskRequest {
   

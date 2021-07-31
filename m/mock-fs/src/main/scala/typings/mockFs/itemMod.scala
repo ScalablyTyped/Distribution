@@ -3,7 +3,6 @@ package typings.mockFs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemMod {
@@ -13,16 +12,92 @@ object itemMod {
     */
   @JSImport("mock-fs/lib/item", JSImport.Namespace)
   @js.native
-  class ^ () extends Item
+  class ^ ()
+    extends StObject
+       with Item {
+    
+    /**  Returns whether the current user has execute permission. */
+    /* CompleteClass */
+    override def canExecute(): Boolean = js.native
+    
+    /** Returns whether the current user has read permission. */
+    /* CompleteClass */
+    override def canRead(): Boolean = js.native
+    
+    /** Returns whether the current user has write permission. */
+    /* CompleteClass */
+    override def canWrite(): Boolean = js.native
+    
+    /** Get access time. */
+    /* CompleteClass */
+    override def getATime(): Date = js.native
+    
+    /** Get birth time. */
+    /* CompleteClass */
+    override def getBirthtime(): Date = js.native
+    
+    /** Get change time. */
+    /* CompleteClass */
+    override def getCTime(): Date = js.native
+    
+    /** Get group id. */
+    /* CompleteClass */
+    override def getGid(): Double = js.native
+    
+    /** Get modification time. */
+    /* CompleteClass */
+    override def getMTime(): Date = js.native
+    
+    /** Get mode (permission only, e.g 0666). */
+    /* CompleteClass */
+    override def getMode(): Double = js.native
+    
+    /** Get item stats. */
+    /* CompleteClass */
+    override def getStats(): Stats = js.native
+    
+    /** Get user id. */
+    /* CompleteClass */
+    override def getUid(): Double = js.native
+    
+    /** Set access time. */
+    /* CompleteClass */
+    override def setATime(atime: Date): Unit = js.native
+    
+    /** Set birth time. */
+    /* CompleteClass */
+    override def setBirthtime(birthtime: Date): Unit = js.native
+    
+    /** Set change time. */
+    /* CompleteClass */
+    override def setCTime(ctime: Date): Unit = js.native
+    
+    /** Set group id. */
+    /* CompleteClass */
+    override def setGid(gid: Double): Unit = js.native
+    
+    /** Set modification time. */
+    /* CompleteClass */
+    override def setMTime(mtime: Date): Unit = js.native
+    
+    /** Set mode (permission only, e.g 0666). */
+    /* CompleteClass */
+    override def setMode(mode: Double): Unit = js.native
+    
+    /** Set user id. */
+    /* CompleteClass */
+    override def setUid(uid: Double): Unit = js.native
+  }
   
-  @js.native
-  trait ExtendedStats extends Stats {
+  trait ExtendedStats
+    extends StObject
+       with Stats {
     
-    var blocks: Double = js.native
+    var blocks: Double
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var size: Double = js.native
+    var size: Double
   }
   object ExtendedStats {
     
@@ -64,62 +139,61 @@ object itemMod {
   /**
     * A filesystem item.
     */
-  @js.native
   trait Item extends StObject {
     
     /**  Returns whether the current user has execute permission. */
-    def canExecute(): Boolean = js.native
+    def canExecute(): Boolean
     
     /** Returns whether the current user has read permission. */
-    def canRead(): Boolean = js.native
+    def canRead(): Boolean
     
     /** Returns whether the current user has write permission. */
-    def canWrite(): Boolean = js.native
+    def canWrite(): Boolean
     
     /** Get access time. */
-    def getATime(): Date = js.native
+    def getATime(): Date
     
     /** Get birth time. */
-    def getBirthtime(): Date = js.native
+    def getBirthtime(): Date
     
     /** Get change time. */
-    def getCTime(): Date = js.native
+    def getCTime(): Date
     
     /** Get group id. */
-    def getGid(): Double = js.native
+    def getGid(): Double
     
     /** Get modification time. */
-    def getMTime(): Date = js.native
+    def getMTime(): Date
     
     /** Get mode (permission only, e.g 0666). */
-    def getMode(): Double = js.native
+    def getMode(): Double
     
     /** Get item stats. */
-    def getStats(): Stats = js.native
+    def getStats(): Stats
     
     /** Get user id. */
-    def getUid(): Double = js.native
+    def getUid(): Double
     
     /** Set access time. */
-    def setATime(atime: Date): Unit = js.native
+    def setATime(atime: Date): Unit
     
     /** Set birth time. */
-    def setBirthtime(birthtime: Date): Unit = js.native
+    def setBirthtime(birthtime: Date): Unit
     
     /** Set change time. */
-    def setCTime(ctime: Date): Unit = js.native
+    def setCTime(ctime: Date): Unit
     
     /** Set group id. */
-    def setGid(gid: Double): Unit = js.native
+    def setGid(gid: Double): Unit
     
     /** Set modification time. */
-    def setMTime(mtime: Date): Unit = js.native
+    def setMTime(mtime: Date): Unit
     
     /** Set mode (permission only, e.g 0666). */
-    def setMode(mode: Double): Unit = js.native
+    def setMode(mode: Double): Unit
     
     /** Set user id. */
-    def setUid(uid: Double): Unit = js.native
+    def setUid(uid: Double): Unit
   }
   object Item {
     
@@ -207,30 +281,29 @@ object itemMod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var atime: Date = js.native
+    var atime: Date
     
-    var birthtime: Date = js.native
+    var birthtime: Date
     
-    var blksize: Double = js.native
+    var blksize: Double
     
-    var ctime: Date = js.native
+    var ctime: Date
     
-    var dev: Double = js.native
+    var dev: Double
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var ino: Double = js.native
+    var ino: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
     
-    var nlink: Double = js.native
+    var nlink: Double
     
-    var rdev: Double = js.native
+    var rdev: Double
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object Stats {
     

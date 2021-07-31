@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.activexLibreoffice.com_.sun.star.configuration.AccessRootElement because Already inherited
 - typings.activexLibreoffice.com_.sun.star.configuration.UpdateRootElement because var conflicts: Locale, Name, Parent. Inlined  */ @js.native
 trait ConfigurationUpdateAccess
-  extends ConfigurationAccess
+  extends StObject
+     with ConfigurationAccess
      with SetUpdate
      with GroupUpdate
      with XChangesBatch {

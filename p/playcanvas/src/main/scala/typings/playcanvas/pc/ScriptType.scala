@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param args.entity - The {@link pc.Entity} that the script is attached to
   */
 @js.native
-trait ScriptType extends EventHandler {
+trait ScriptType
+  extends StObject
+     with EventHandler {
   
   /**
     * The {@link pc.Application} that the instance of this type

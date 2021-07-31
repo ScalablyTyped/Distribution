@@ -2,7 +2,6 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapMapMod {
@@ -14,10 +13,12 @@ object mapMapMod {
     * @param {int} [width=ROT.DEFAULT_WIDTH]
     * @param {int} [height=ROT.DEFAULT_HEIGHT]
     */
-  abstract class default () extends Map {
+  abstract class default ()
+    extends StObject
+       with Map {
     def this(width: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(width: Double, height: Double) = this()
+    def this(width: Unit, height: Double) = this()
   }
   
   type CreateCallback = js.Function3[/* x */ Double, /* y */ Double, /* contents */ Double, js.Any]

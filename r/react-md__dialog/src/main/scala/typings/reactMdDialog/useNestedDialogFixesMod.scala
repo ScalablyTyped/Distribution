@@ -2,25 +2,26 @@ package typings.reactMdDialog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useNestedDialogFixesMod {
   
-  @JSImport("@react-md/dialog/types/useNestedDialogFixes", "useNestedDialogFixes")
+  @JSImport("@react-md/dialog/types/useNestedDialogFixes", JSImport.Namespace)
   @js.native
-  def useNestedDialogFixes(hasIdVisibleDisabledDisableEscapeClose: Options): ReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useNestedDialogFixes(hasIdVisibleDisabledPropDisableEscapeClose: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedDialogFixes")(hasIdVisibleDisabledPropDisableEscapeClose.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  
   trait Options extends StObject {
     
-    var disableEscapeClose: Boolean = js.native
+    var disableEscapeClose: Boolean
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object Options {
     
@@ -47,12 +48,11 @@ object useNestedDialogFixesMod {
     }
   }
   
-  @js.native
   trait ReturnValue extends StObject {
     
-    var disableEscapeClose: Boolean = js.native
+    var disableEscapeClose: Boolean
     
-    var disableOverlay: Boolean = js.native
+    var disableOverlay: Boolean
   }
   object ReturnValue {
     

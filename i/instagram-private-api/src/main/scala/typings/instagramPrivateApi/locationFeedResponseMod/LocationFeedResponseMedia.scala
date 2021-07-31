@@ -2,101 +2,99 @@ package typings.instagramPrivateApi.locationFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationFeedResponseMedia extends StObject {
   
-  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.native
+  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.undefined
   
-  var can_view_more_preview_comments: Boolean = js.native
+  var can_view_more_preview_comments: Boolean
   
-  var can_viewer_reshare: Boolean = js.native
+  var can_viewer_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: LocationFeedResponseCaption | Null = js.native
+  var caption: LocationFeedResponseCaption | Null
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var carousel_media: js.UndefOr[js.Array[LocationFeedResponseCarouselMediaItem]] = js.native
+  var carousel_media: js.UndefOr[js.Array[LocationFeedResponseCarouselMediaItem]] = js.undefined
   
-  var carousel_media_count: js.UndefOr[Double] = js.native
+  var carousel_media_count: js.UndefOr[Double] = js.undefined
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var comment_likes_enabled: Boolean = js.native
+  var comment_likes_enabled: Boolean
   
-  var comment_threading_enabled: Boolean = js.native
+  var comment_threading_enabled: Boolean
   
-  var commenting_disabled_for_viewer: js.UndefOr[Boolean] = js.native
+  var commenting_disabled_for_viewer: js.UndefOr[Boolean] = js.undefined
   
-  var device_timestamp: String | Double = js.native
+  var device_timestamp: String | Double
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: js.UndefOr[Boolean] = js.native
+  var has_audio: js.UndefOr[Boolean] = js.undefined
   
-  var has_liked: Boolean = js.native
+  var has_liked: Boolean
   
-  var has_more_comments: Boolean = js.native
+  var has_more_comments: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: js.UndefOr[LocationFeedResponseImageVersions2] = js.native
+  var image_versions2: js.UndefOr[LocationFeedResponseImageVersions2] = js.undefined
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var lat: String = js.native
+  var lat: String
   
-  var like_count: Double = js.native
+  var like_count: Double
   
-  var lng: String = js.native
+  var lng: String
   
-  var location: LocationFeedResponseLocation = js.native
+  var location: LocationFeedResponseLocation
   
-  var max_num_visible_preview_comments: Double = js.native
+  var max_num_visible_preview_comments: Double
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var next_max_id: String = js.native
+  var next_max_id: String
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: js.UndefOr[Double] = js.native
+  var original_height: js.UndefOr[Double] = js.undefined
   
-  var original_width: js.UndefOr[Double] = js.native
+  var original_width: js.UndefOr[Double] = js.undefined
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var preview_comments: js.Array[LocationFeedResponsePreviewCommentsItem] = js.native
+  var preview_comments: js.Array[LocationFeedResponsePreviewCommentsItem]
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var top_likers: js.Array[_] = js.native
+  var top_likers: js.Array[js.Any]
   
-  var user: LocationFeedResponseUser = js.native
+  var user: LocationFeedResponseUser
   
-  var usertags: js.UndefOr[LocationFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[LocationFeedResponseUsertags] = js.undefined
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[LocationFeedResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[LocationFeedResponseVideoVersionsItem]] = js.undefined
   
-  var view_count: js.UndefOr[Double] = js.native
+  var view_count: js.UndefOr[Double] = js.undefined
 }
 object LocationFeedResponseMedia {
   
@@ -128,10 +126,10 @@ object LocationFeedResponseMedia {
     pk: String,
     preview_comments: js.Array[LocationFeedResponsePreviewCommentsItem],
     taken_at: Double,
-    top_likers: js.Array[_],
+    top_likers: js.Array[js.Any],
     user: LocationFeedResponseUser
   ): LocationFeedResponseMedia = {
-    val __obj = js.Dynamic.literal(can_view_more_preview_comments = can_view_more_preview_comments.asInstanceOf[js.Any], can_viewer_reshare = can_viewer_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], comment_likes_enabled = comment_likes_enabled.asInstanceOf[js.Any], comment_threading_enabled = comment_threading_enabled.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_liked = has_liked.asInstanceOf[js.Any], has_more_comments = has_more_comments.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], like_count = like_count.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], max_num_visible_preview_comments = max_num_visible_preview_comments.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], next_max_id = next_max_id.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], preview_comments = preview_comments.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], top_likers = top_likers.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(can_view_more_preview_comments = can_view_more_preview_comments.asInstanceOf[js.Any], can_viewer_reshare = can_viewer_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], comment_likes_enabled = comment_likes_enabled.asInstanceOf[js.Any], comment_threading_enabled = comment_threading_enabled.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_liked = has_liked.asInstanceOf[js.Any], has_more_comments = has_more_comments.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], like_count = like_count.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], max_num_visible_preview_comments = max_num_visible_preview_comments.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], next_max_id = next_max_id.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], preview_comments = preview_comments.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], top_likers = top_likers.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], caption = null)
     __obj.asInstanceOf[LocationFeedResponseMedia]
   }
   
@@ -289,7 +287,7 @@ object LocationFeedResponseMedia {
     def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop_likers(value: js.Array[_]): Self = StObject.set(x, "top_likers", value.asInstanceOf[js.Any])
+    def setTop_likers(value: js.Array[js.Any]): Self = StObject.set(x, "top_likers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTop_likersVarargs(value: js.Any*): Self = StObject.set(x, "top_likers", js.Array(value :_*))

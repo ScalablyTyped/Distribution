@@ -2,27 +2,25 @@ package typings.gamequery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationOptions extends StObject {
   
-  var delta: js.UndefOr[Double] = js.native
+  var delta: js.UndefOr[Double] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var imageURL: String = js.native
+  var imageURL: String
   
-  var numberOfFrame: js.UndefOr[Double] = js.native
+  var numberOfFrame: js.UndefOr[Double] = js.undefined
   
-  var offsetx: js.UndefOr[Double] = js.native
+  var offsetx: js.UndefOr[Double] = js.undefined
   
-  var offsety: js.UndefOr[Double] = js.native
+  var offsety: js.UndefOr[Double] = js.undefined
   
-  var rate: js.UndefOr[Double] = js.native
+  var rate: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
 }
 object AnimationOptions {
   

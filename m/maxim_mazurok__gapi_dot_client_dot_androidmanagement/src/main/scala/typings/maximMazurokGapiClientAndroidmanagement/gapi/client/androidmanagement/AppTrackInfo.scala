@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppTrackInfo extends StObject {
   
   /** The track name associated with the trackId, set in the Play Console. The name is modifiable from Play Console. */
-  var trackAlias: js.UndefOr[String] = js.native
+  var trackAlias: js.UndefOr[String] = js.undefined
   
   /** The unmodifiable unique track identifier, taken from the releaseTrackId in the URL of the Play Console page that displays the app’s track information. */
-  var trackId: js.UndefOr[String] = js.native
+  var trackId: js.UndefOr[String] = js.undefined
 }
 object AppTrackInfo {
   

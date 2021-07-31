@@ -3,287 +3,287 @@ package typings.senchaTouch.Ext.field
 import typings.senchaTouch.Ext.IComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInput extends IComponent {
+trait IInput
+  extends StObject
+     with IComponent {
   
   /** [Config Option] (Boolean) */
-  var autoCapitalize: js.UndefOr[Boolean] = js.native
+  var autoCapitalize: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoComplete: js.UndefOr[Boolean] = js.native
+  var autoComplete: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoCorrect: js.UndefOr[Boolean] = js.native
+  var autoCorrect: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Attempts to forcefully blur input focus for the field
     * @returns Ext.field.Input this
     */
-  var blur: js.UndefOr[js.Function0[this.type]] = js.native
+  var blur: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
   @JSName("cls")
-  var cls_IInput: js.UndefOr[String] = js.native
+  var cls_IInput: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var fastFocus: js.UndefOr[Boolean] = js.native
+  var fastFocus: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Attempts to set the field as the active input focus
     * @returns Ext.field.Input this
     */
-  var focus: js.UndefOr[js.Function0[this.type]] = js.native
+  var focus: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (String) */
-  var focusCls: js.UndefOr[String] = js.native
+  var focusCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of autoCapitalize
     * @returns Boolean
     */
-  var getAutoCapitalize: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoCapitalize: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of autoComplete
     * @returns Boolean
     */
-  var getAutoComplete: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoComplete: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of autoCorrect
     * @returns Boolean
     */
-  var getAutoCorrect: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoCorrect: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the checked value of this field
     * @returns Mixed value The field value
     */
-  var getChecked: js.UndefOr[js.Function0[_]] = js.native
+  var getChecked: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of cls
     * @returns String
     */
   @JSName("getCls")
-  var getCls_IInput: js.UndefOr[js.Function0[String]] = js.native
+  var getCls_IInput: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of fastFocus
     * @returns Boolean
     */
-  var getFastFocus: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getFastFocus: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of focusCls
     * @returns String
     */
-  var getFocusCls: js.UndefOr[js.Function0[String]] = js.native
+  var getFocusCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of maxLength
     * @returns Number
     */
-  var getMaxLength: js.UndefOr[js.Function0[Double]] = js.native
+  var getMaxLength: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of maxRows
     * @returns Number
     */
-  var getMaxRows: js.UndefOr[js.Function0[Double]] = js.native
+  var getMaxRows: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of maxValue
     * @returns Number
     */
-  var getMaxValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getMaxValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of minValue
     * @returns Number
     */
-  var getMinValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getMinValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of name
     * @returns String
     */
-  var getName: js.UndefOr[js.Function0[String]] = js.native
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of pattern
     * @returns String
     */
-  var getPattern: js.UndefOr[js.Function0[String]] = js.native
+  var getPattern: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of placeHolder
     * @returns String
     */
-  var getPlaceHolder: js.UndefOr[js.Function0[String]] = js.native
+  var getPlaceHolder: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of readOnly
     * @returns Boolean
     */
-  var getReadOnly: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getReadOnly: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of startValue
     * @returns Mixed
     */
-  var getStartValue: js.UndefOr[js.Function0[_]] = js.native
+  var getStartValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of stepValue
     * @returns Number
     */
-  var getStepValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getStepValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of tabIndex
     * @returns Number
     */
-  var getTabIndex: js.UndefOr[js.Function0[Double]] = js.native
+  var getTabIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of type
     * @returns String
     */
-  var getType: js.UndefOr[js.Function0[String]] = js.native
+  var getType: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the field data value
     * @returns Mixed value The field value.
     */
-  var getValue: js.UndefOr[js.Function0[_]] = js.native
+  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns true if the value of this Field has been changed from its original value
     * @returns Boolean
     */
-  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxRows: js.UndefOr[Double] = js.native
+  var maxRows: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var placeHolder: js.UndefOr[String] = js.native
+  var placeHolder: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Resets the current field value to the original value  */
-  var reset: js.UndefOr[js.Function0[Unit]] = js.native
+  var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Attempts to forcefully select all the contents of the input field
     * @returns Ext.field.Input this
     */
-  var select: js.UndefOr[js.Function0[this.type]] = js.native
+  var select: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Sets the value of autoCapitalize
     * @param autoCapitalize Boolean The new value.
     */
-  var setAutoCapitalize: js.UndefOr[js.Function1[/* autoCapitalize */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoCapitalize: js.UndefOr[js.Function1[/* autoCapitalize */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoComplete
     * @param autoComplete Boolean The new value.
     */
-  var setAutoComplete: js.UndefOr[js.Function1[/* autoComplete */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoComplete: js.UndefOr[js.Function1[/* autoComplete */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoCorrect
     * @param autoCorrect Boolean The new value.
     */
-  var setAutoCorrect: js.UndefOr[js.Function1[/* autoCorrect */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoCorrect: js.UndefOr[js.Function1[/* autoCorrect */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
     */
   @JSName("setCls")
-  var setCls_IInput: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.native
+  var setCls_IInput: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of fastFocus
     * @param fastFocus Boolean The new value.
     */
-  var setFastFocus: js.UndefOr[js.Function1[/* fastFocus */ js.UndefOr[Boolean], Unit]] = js.native
+  var setFastFocus: js.UndefOr[js.Function1[/* fastFocus */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of focusCls
     * @param focusCls String The new value.
     */
-  var setFocusCls: js.UndefOr[js.Function1[/* focusCls */ js.UndefOr[String], Unit]] = js.native
+  var setFocusCls: js.UndefOr[js.Function1[/* focusCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxLength
     * @param maxLength Number The new value.
     */
-  var setMaxLength: js.UndefOr[js.Function1[/* maxLength */ js.UndefOr[Double], Unit]] = js.native
+  var setMaxLength: js.UndefOr[js.Function1[/* maxLength */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxRows
     * @param maxRows Number The new value.
     */
-  var setMaxRows: js.UndefOr[js.Function1[/* maxRows */ js.UndefOr[Double], Unit]] = js.native
+  var setMaxRows: js.UndefOr[js.Function1[/* maxRows */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of maxValue
     * @param maxValue Number The new value.
     */
-  var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.native
+  var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of minValue
     * @param minValue Number The new value.
     */
-  var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.native
+  var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of name
     * @param name String The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.native
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of pattern
     * @param pattern String The new value.
     */
-  var setPattern: js.UndefOr[js.Function1[/* pattern */ js.UndefOr[String], Unit]] = js.native
+  var setPattern: js.UndefOr[js.Function1[/* pattern */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of placeHolder
     * @param placeHolder String The new value.
     */
-  var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[String], Unit]] = js.native
+  var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of readOnly
     * @param readOnly Boolean The new value.
     */
-  var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.native
+  var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of startValue
     * @param startValue Mixed The new value.
     */
-  var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[js.Any], Unit]] = js.native
+  var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of stepValue
     * @param stepValue Number The new value.
     */
-  var setStepValue: js.UndefOr[js.Function1[/* stepValue */ js.UndefOr[Double], Unit]] = js.native
+  var setStepValue: js.UndefOr[js.Function1[/* stepValue */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of tabIndex
     * @param tabIndex Number The new value.
     */
-  var setTabIndex: js.UndefOr[js.Function1[/* tabIndex */ js.UndefOr[Double], Unit]] = js.native
+  var setTabIndex: js.UndefOr[js.Function1[/* tabIndex */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of type
     * @param type String The new value.
     */
-  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.native
+  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var startValue: js.UndefOr[js.Any] = js.native
+  var startValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var stepValue: js.UndefOr[Double] = js.native
+  var stepValue: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** [Method] Updates the cls configuration
     * @param newCls Object
@@ -291,15 +291,15 @@ trait IInput extends IComponent {
     */
   var updateCls: js.UndefOr[
     js.Function2[/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Updates the useMask configuration
     * @param newUseMask Object
     */
-  var updateUseMask: js.UndefOr[js.Function1[/* newUseMask */ js.UndefOr[js.Any], Unit]] = js.native
+  var updateUseMask: js.UndefOr[js.Function1[/* newUseMask */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object IInput {
   
@@ -385,7 +385,7 @@ object IInput {
     def setGetAutoCorrectUndefined: Self = StObject.set(x, "getAutoCorrect", js.undefined)
     
     @scala.inline
-    def setGetChecked(value: () => _): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
+    def setGetChecked(value: () => js.Any): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
@@ -457,7 +457,7 @@ object IInput {
     def setGetReadOnlyUndefined: Self = StObject.set(x, "getReadOnly", js.undefined)
     
     @scala.inline
-    def setGetStartValue(value: () => _): Self = StObject.set(x, "getStartValue", js.Any.fromFunction0(value))
+    def setGetStartValue(value: () => js.Any): Self = StObject.set(x, "getStartValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetStartValueUndefined: Self = StObject.set(x, "getStartValue", js.undefined)
@@ -481,7 +481,7 @@ object IInput {
     def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
     
     @scala.inline
-    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)

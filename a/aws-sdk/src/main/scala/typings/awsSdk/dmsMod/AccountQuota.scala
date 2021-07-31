@@ -2,26 +2,24 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountQuota extends StObject {
   
   /**
     * The name of the AWS DMS quota for this AWS account.
     */
-  var AccountQuotaName: js.UndefOr[String] = js.native
+  var AccountQuotaName: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum allowed value for the quota.
     */
-  var Max: js.UndefOr[Long] = js.native
+  var Max: js.UndefOr[Long] = js.undefined
   
   /**
     * The amount currently used toward the quota maximum.
     */
-  var Used: js.UndefOr[Long] = js.native
+  var Used: js.UndefOr[Long] = js.undefined
 }
 object AccountQuota {
   

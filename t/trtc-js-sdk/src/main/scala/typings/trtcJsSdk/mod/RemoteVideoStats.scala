@@ -2,16 +2,15 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteVideoStats
-  extends ReceivedMediaStats
+  extends StObject
+     with ReceivedMediaStats
      with VideoStats {
   
   /** 已解码帧数 */
-  var framesDecoded: Double = js.native
+  var framesDecoded: Double
 }
 object RemoteVideoStats {
   

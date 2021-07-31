@@ -11,8 +11,8 @@ React webcam component
 | Full name          | react-webcam |
 | Keywords           | react, react-component, webcam |
 | # releases         | 25 |
-| # dependents       | 33 |
-| # downloads        | 1512072 |
+| # dependents       | 41 |
+| # downloads        | 1675491 |
 | # stars            | 6 |
 
 ## Links

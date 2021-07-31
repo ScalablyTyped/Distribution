@@ -3,23 +3,21 @@ package typings.browserSync.mod
 import typings.browserSync.anon.HeartbeatTimeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketOptions extends StObject {
   
-  var clientPath: js.UndefOr[String] = js.native
+  var clientPath: js.UndefOr[String] = js.undefined
   
-  var clients: js.UndefOr[HeartbeatTimeout] = js.native
+  var clients: js.UndefOr[HeartbeatTimeout] = js.undefined
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object SocketOptions {
   

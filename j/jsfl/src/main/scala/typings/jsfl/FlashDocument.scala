@@ -2,7 +2,6 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,37 +27,29 @@ trait FlashDocument extends StObject {
   
   // Adds a new path between two points.
   def addNewOval(boundingRectangle: FlashRectangle): Unit = js.native
-  def addNewOval(
-    boundingRectangle: FlashRectangle,
-    bSuppressFill: js.UndefOr[scala.Nothing],
-    bSuppressStroke: Boolean
-  ): Unit = js.native
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: Boolean): Unit = js.native
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: Boolean, bSuppressStroke: Boolean): Unit = js.native
+  def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: Unit, bSuppressStroke: Boolean): Unit = js.native
   
   // Adds a new Oval object in the specified
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle): Unit = js.native
-  def addNewPrimitiveOval(
-    boundingRectangle: FlashRectangle,
-    bSpupressFill: js.UndefOr[scala.Nothing],
-    bSuppressStroke: Boolean
-  ): Unit = js.native
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Boolean): Unit = js.native
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Boolean, bSuppressStroke: Boolean): Unit = js.native
+  def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Unit, bSuppressStroke: Boolean): Unit = js.native
   
   // Adds a new rectangle or rounded rectangle,
   def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double): js.Any = js.native
-  def addNewPrimitiveRectangle(
-    boundingRectangle: FlashRectangle,
-    roundness: Double,
-    bSuppressFill: js.UndefOr[scala.Nothing],
-    bSuppressStroke: Boolean
-  ): js.Any = js.native
   def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): js.Any = js.native
   def addNewPrimitiveRectangle(
     boundingRectangle: FlashRectangle,
     roundness: Double,
     bSuppressFill: Boolean,
+    bSuppressStroke: Boolean
+  ): js.Any = js.native
+  def addNewPrimitiveRectangle(
+    boundingRectangle: FlashRectangle,
+    roundness: Double,
+    bSuppressFill: Unit,
     bSuppressStroke: Boolean
   ): js.Any = js.native
   
@@ -67,17 +58,17 @@ trait FlashDocument extends StObject {
   def addNewPublishProfile(profileName: String): Unit = js.native
   
   def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double): js.Any = js.native
-  def addNewRectangle(
-    boundingRectangle: FlashRectangle,
-    roundness: Double,
-    bSuppressFill: js.UndefOr[scala.Nothing],
-    bSuppressStroke: Boolean
-  ): js.Any = js.native
   def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): js.Any = js.native
   def addNewRectangle(
     boundingRectangle: FlashRectangle,
     roundness: Double,
     bSuppressFill: Boolean,
+    bSuppressStroke: Boolean
+  ): js.Any = js.native
+  def addNewRectangle(
+    boundingRectangle: FlashRectangle,
+    roundness: Double,
+    bSuppressFill: Unit,
     bSuppressStroke: Boolean
   ): js.Any = js.native
   
@@ -240,9 +231,9 @@ trait FlashDocument extends StObject {
   
   /** Exports the document as one or more PNG files. */
   def exportPNG(fileURI: String): Boolean = js.native
-  def exportPNG(fileURI: String, bCurrentPNGSettings: js.UndefOr[scala.Nothing], bCurrentFrame: Boolean): Boolean = js.native
   def exportPNG(fileURI: String, bCurrentPNGSettings: Boolean): Boolean = js.native
   def exportPNG(fileURI: String, bCurrentPNGSettings: Boolean, bCurrentFrame: Boolean): Boolean = js.native
+  def exportPNG(fileURI: String, bCurrentPNGSettings: Unit, bCurrentFrame: Boolean): Boolean = js.native
   
   /** Exports the currently active profile to an XML */
   def exportPublishProfile(fileURI: String): Unit = js.native
@@ -283,9 +274,9 @@ trait FlashDocument extends StObject {
   
   /** Gets a specified TextAttrs property of the*/
   def getElementTextAttr(attrName: String): FlashTextAttrs = js.native
-  def getElementTextAttr(attrName: String, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): FlashTextAttrs = js.native
   def getElementTextAttr(attrName: String, startIndex: Double): FlashTextAttrs = js.native
   def getElementTextAttr(attrName: String, startIndex: Double, endIndex: Double): FlashTextAttrs = js.native
+  def getElementTextAttr(attrName: String, startIndex: Unit, endIndex: Double): FlashTextAttrs = js.native
   
   /** Returns an array that contains the list of filters*/
   def getFilters(): js.Array[FlashFilter] = js.native
@@ -304,9 +295,9 @@ trait FlashDocument extends StObject {
   
   /** Gets the currently selected text. */
   def getTextString(): String = js.native
-  def getTextString(startIndex: js.UndefOr[scala.Nothing], endIndex: Double): String = js.native
   def getTextString(startIndex: Double): String = js.native
   def getTextString(startIndex: Double, endIndex: Double): String = js.native
+  def getTextString(startIndex: Unit, endIndex: Double): String = js.native
   
   /** Retrieves the current Timeline object in the */
   def getTimeline(): FlashTimeline = js.native
@@ -346,7 +337,7 @@ trait FlashDocument extends StObject {
   var livePreview: Boolean = js.native
   
   /** loads a cue point XML file. The format and DTD of the XML file is the same as the one imported and exported by the Cue Points Property inspector. The return value is the same as the string serialized in the Cue Point property of the object containing the instance of an FLVPlayback Component. */
-  def loadCuepointXML(uri: String): js.Array[_] = js.native
+  def loadCuepointXML(uri: String): js.Array[js.Any] = js.native
   
   /** Makes the size of the selected objects the same. */
   def `match`(bWidth: Boolean, bHeight: Boolean): Unit = js.native
@@ -472,14 +463,9 @@ trait FlashDocument extends StObject {
   
   /** Sets the specified TextAttrs property of the */
   def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs): Boolean = js.native
-  def setElementTextAttr(
-    attrName: String,
-    attrValue: FlashTextAttrs,
-    startIndex: js.UndefOr[scala.Nothing],
-    endIndex: Double
-  ): Boolean = js.native
   def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs, startIndex: Double): Boolean = js.native
   def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs, startIndex: Double, endIndex: Double): Boolean = js.native
+  def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs, startIndex: Unit, endIndex: Double): Boolean = js.native
   
   /** Changes the fill color of the selection to the */
   def setFillColor(color: js.Any): Unit = js.native
@@ -520,13 +506,9 @@ trait FlashDocument extends StObject {
   
   /** Draws a rectangular selection marquee relative */
   def setSelectionRect(rect: FlashRectangle): Unit = js.native
-  def setSelectionRect(
-    rect: FlashRectangle,
-    bReplaceCurrentSelection: js.UndefOr[scala.Nothing],
-    bContactSensitiveSelection: Boolean
-  ): Unit = js.native
   def setSelectionRect(rect: FlashRectangle, bReplaceCurrentSelection: Boolean): Unit = js.native
   def setSelectionRect(rect: FlashRectangle, bReplaceCurrentSelection: Boolean, bContactSensitiveSelection: Boolean): Unit = js.native
+  def setSelectionRect(rect: FlashRectangle, bReplaceCurrentSelection: Unit, bContactSensitiveSelection: Boolean): Unit = js.native
   
   /** Specifies the vanishing point for viewing 3D objects. */
   def setStageVanishingPoint(point: FlashPoint): Unit = js.native
@@ -553,9 +535,9 @@ trait FlashDocument extends StObject {
   
   /** Inserts a string of text. */
   def setTextString(text: String): Boolean = js.native
-  def setTextString(text: String, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Boolean = js.native
   def setTextString(text: String, startIndex: Double): Boolean = js.native
   def setTextString(text: String, startIndex: Double, endIndex: Double): Boolean = js.native
+  def setTextString(text: String, startIndex: Unit, endIndex: Double): Boolean = js.native
   
   /** Moves the transformation point of the current */
   def setTransformationPoint(transformationPoint: FlashPoint): Unit = js.native

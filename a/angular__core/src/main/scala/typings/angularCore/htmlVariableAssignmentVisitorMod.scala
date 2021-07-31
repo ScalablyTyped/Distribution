@@ -4,7 +4,6 @@ import typings.angularCompiler.mod.PropertyWrite
 import typings.angularCompiler.r3AstMod.NullVisitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlVariableAssignmentVisitorMod {
@@ -20,14 +19,13 @@ object htmlVariableAssignmentVisitorMod {
     var variableAssignments: js.Array[TemplateVariableAssignment] = js.native
   }
   
-  @js.native
   trait TemplateVariableAssignment extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var node: PropertyWrite = js.native
+    var node: PropertyWrite
     
-    var start: Double = js.native
+    var start: Double
   }
   object TemplateVariableAssignment {
     

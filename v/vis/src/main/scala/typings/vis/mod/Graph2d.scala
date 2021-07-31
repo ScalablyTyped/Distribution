@@ -7,7 +7,6 @@ import typings.vis.anon.End
 import typings.vis.anon.Groups
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vis", "Graph2d")
@@ -63,9 +62,9 @@ class Graph2d protected () extends StObject {
   def off(event: TimelineEvents, callback: js.Function0[Unit]): Unit = js.native
   
   def on(): Unit = js.native
-  def on(event: js.UndefOr[scala.Nothing], callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
   def on(event: String): Unit = js.native
   def on(event: String, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
+  def on(event: Unit, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
   def on(event: TimelineEvents, callback: js.Function0[Unit]): Unit = js.native
   
   def redraw(): Unit = js.native

@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFlowLogsResult extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the flow logs.
     */
-  var FlowLogIds: js.UndefOr[ValueStringList] = js.native
+  var FlowLogIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * Information about the flow logs that could not be created successfully.
     */
-  var Unsuccessful: js.UndefOr[UnsuccessfulItemSet] = js.native
+  var Unsuccessful: js.UndefOr[UnsuccessfulItemSet] = js.undefined
 }
 object CreateFlowLogsResult {
   

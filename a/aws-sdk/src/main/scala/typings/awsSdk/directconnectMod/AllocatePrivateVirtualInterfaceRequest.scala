@@ -2,26 +2,24 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocatePrivateVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the connection on which the private virtual interface is provisioned.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * Information about the private virtual interface.
     */
-  var newPrivateVirtualInterfaceAllocation: NewPrivateVirtualInterfaceAllocation = js.native
+  var newPrivateVirtualInterfaceAllocation: NewPrivateVirtualInterfaceAllocation
   
   /**
     * The ID of the AWS account that owns the virtual private interface.
     */
-  var ownerAccount: OwnerAccount = js.native
+  var ownerAccount: OwnerAccount
 }
 object AllocatePrivateVirtualInterfaceRequest {
   

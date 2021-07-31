@@ -2,16 +2,14 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSpeechSynthesisTaskOutput extends StObject {
   
   /**
     * SynthesisTask object that provides information and attributes about a newly submitted speech synthesis task.
     */
-  var SynthesisTask: js.UndefOr[typings.awsSdk.pollyMod.SynthesisTask] = js.native
+  var SynthesisTask: js.UndefOr[typings.awsSdk.pollyMod.SynthesisTask] = js.undefined
 }
 object StartSpeechSynthesisTaskOutput {
   

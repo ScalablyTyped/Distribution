@@ -12,7 +12,7 @@ Group two-dimensional points into hexagonal bins.
 | Keywords           | d3, d3-module, hexbin, hexagonal, binning |
 | # releases         | 1 |
 | # dependents       | 43 |
-| # downloads        | 3997028 |
+| # downloads        | 4721584 |
 | # stars            | 0 |
 
 ## Links

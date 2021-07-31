@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -81,7 +80,7 @@ trait Route53Domains extends Service {
   ): Request[CheckDomainTransferabilityResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Route53Domains: ConfigBase with ClientConfiguration = js.native
+  var config_Route53Domains: ConfigBase & ClientConfiguration = js.native
   
   /**
     * This operation deletes the specified tags for a domain. All tag operations are eventually consistent; subsequent operations might not immediately represent all issued operations.

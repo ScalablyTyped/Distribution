@@ -5,7 +5,6 @@ import typings.reactNative.mod.PanResponderGestureState
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,26 +16,25 @@ object mod {
   
   type GestureRecognizer = Component[GestureRecognizerProps, js.Object, js.Any]
   
-  @js.native
   trait GestureRecognizerConfig extends StObject {
     
     /**
       * Absolute offset that shouldn't be breached for swipe to be triggered (dy for horizontal swipe, dx for vertical swipe)
       * @default 80
       */
-    var directionalOffsetThreshold: js.UndefOr[Double] = js.native
+    var directionalOffsetThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Absolute distance that should be breached for the gesture to not be considered a click (dx or dy properties of gestureState)
       * @default 5
       */
-    var gestureIsClickThreshold: js.UndefOr[Double] = js.native
+    var gestureIsClickThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Velocity that has to be breached in order for swipe to be triggered (vx and vy properties of gestureState)
       * @default 0.3
       */
-    var velocityThreshold: js.UndefOr[Double] = js.native
+    var velocityThreshold: js.UndefOr[Double] = js.undefined
   }
   object GestureRecognizerConfig {
     
@@ -69,22 +67,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait GestureRecognizerProps extends ViewProps {
+  trait GestureRecognizerProps
+    extends StObject
+       with ViewProps {
     
-    var config: js.UndefOr[GestureRecognizerConfig] = js.native
+    var config: js.UndefOr[GestureRecognizerConfig] = js.undefined
     
     var onSwipe: js.UndefOr[
         js.Function2[/* gestureName */ String, /* gestureState */ PanResponderGestureState, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onSwipeDown: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.native
+    var onSwipeDown: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
     
-    var onSwipeLeft: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.native
+    var onSwipeLeft: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
     
-    var onSwipeRight: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.native
+    var onSwipeRight: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
     
-    var onSwipeUp: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.native
+    var onSwipeUp: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
   }
   object GestureRecognizerProps {
     

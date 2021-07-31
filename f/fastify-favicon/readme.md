@@ -10,9 +10,9 @@ Fastify plugin to serve default favicon requests
 | ------------------ | :-------------: |
 | Full name          | fastify-favicon |
 | Keywords           | fastify, plugin, favicon |
-| # releases         | 8 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 13530 |
+| # downloads        | 17552 |
 | # stars            | 0 |
 
 ## Links

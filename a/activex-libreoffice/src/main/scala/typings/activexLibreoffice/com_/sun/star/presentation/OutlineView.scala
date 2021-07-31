@@ -29,7 +29,6 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,14 +37,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In an outline view, the textual contents of presentation text objects from all presentation pages are presented as a continuous outline text.
   * @since OOo 1.1.2
   */
-@js.native
 trait OutlineView
-  extends Controller
+  extends StObject
+     with Controller
      with XWindow
      with XPropertySet {
   
   /** This is the area that is currently visible. */
-  var VisibleArea: Rectangle = js.native
+  var VisibleArea: Rectangle
 }
 object OutlineView {
   

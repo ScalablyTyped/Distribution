@@ -5,27 +5,24 @@ import typings.node.BufferEncoding
 import typings.sshKeyDecrypt.sshKeyDecryptStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(data: String, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def apply(data: String, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(data: String, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def apply(data: Buffer, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def apply(data: Buffer, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(data: Buffer, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
   @JSImport("ssh-key-decrypt", JSImport.Namespace)
   @js.native
-  def apply(data: String, passphrase: String): Buffer = js.native
-  @JSImport("ssh-key-decrypt", JSImport.Namespace)
-  @js.native
-  def apply(data: String, passphrase: String, outEnc: BufferEncoding): String = js.native
-  @JSImport("ssh-key-decrypt", JSImport.Namespace)
-  @js.native
-  def apply(data: String, passphrase: String, outEnc: buffer): Buffer = js.native
-  @JSImport("ssh-key-decrypt", JSImport.Namespace)
-  @js.native
-  def apply(data: Buffer, passphrase: String): Buffer = js.native
-  @JSImport("ssh-key-decrypt", JSImport.Namespace)
-  @js.native
-  def apply(data: Buffer, passphrase: String, outEnc: BufferEncoding): String = js.native
-  @JSImport("ssh-key-decrypt", JSImport.Namespace)
-  @js.native
-  def apply(data: Buffer, passphrase: String, outEnc: buffer): Buffer = js.native
+  val ^ : js.Any = js.native
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBParameterGroupStatus extends StObject {
   
   /**
     * The name of the DB parameter group.
     */
-  var DBParameterGroupName: js.UndefOr[String] = js.native
+  var DBParameterGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of parameter updates.
     */
-  var ParameterApplyStatus: js.UndefOr[String] = js.native
+  var ParameterApplyStatus: js.UndefOr[String] = js.undefined
 }
 object DBParameterGroupStatus {
   

@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientDfareporting.anon.ProfileIdQuotaUserResourc
 import typings.maximMazurokGapiClientDfareporting.anon.QuotaUserResourceUploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

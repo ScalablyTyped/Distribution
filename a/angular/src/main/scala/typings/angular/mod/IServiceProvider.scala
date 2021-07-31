@@ -2,15 +2,13 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // All service providers extend this interface
-@js.native
 trait IServiceProvider extends StObject {
   
   @JSName("$get")
-  var $get: js.Any = js.native
+  var $get: js.Any
 }
 object IServiceProvider {
   

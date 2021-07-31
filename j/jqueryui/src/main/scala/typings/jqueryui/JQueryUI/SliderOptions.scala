@@ -2,36 +2,36 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Slider //////////////////////////////////////////////////
-@js.native
-trait SliderOptions extends SliderEvents {
+trait SliderOptions
+  extends StObject
+     with SliderEvents {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var classes: js.UndefOr[SliderClasses] = js.native
+  var classes: js.UndefOr[SliderClasses] = js.undefined
   
   // boolean, string or number
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var highlight: js.UndefOr[Boolean] = js.native
+  var highlight: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var range: js.UndefOr[js.Any] = js.native
+  var range: js.UndefOr[js.Any] = js.undefined
   
   // boolean or string
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var values: js.UndefOr[js.Array[Double]] = js.native
+  var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SliderOptions {
   

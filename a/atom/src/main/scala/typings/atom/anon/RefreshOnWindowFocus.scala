@@ -2,13 +2,11 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshOnWindowFocus extends StObject {
   
-  var refreshOnWindowFocus: js.UndefOr[Boolean] = js.native
+  var refreshOnWindowFocus: js.UndefOr[Boolean] = js.undefined
 }
 object RefreshOnWindowFocus {
   

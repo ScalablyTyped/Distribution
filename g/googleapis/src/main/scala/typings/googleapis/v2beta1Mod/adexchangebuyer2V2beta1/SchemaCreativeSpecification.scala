@@ -2,25 +2,23 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents information for a creative that is associated with a
   * Programmatic Guaranteed/Preferred Deal in Ad Manager.
   */
-@js.native
 trait SchemaCreativeSpecification extends StObject {
   
   /**
     * Companion sizes may be filled in only when this is a video creative.
     */
-  var creativeCompanionSizes: js.UndefOr[js.Array[SchemaAdSize]] = js.native
+  var creativeCompanionSizes: js.UndefOr[js.Array[SchemaAdSize]] = js.undefined
   
   /**
     * The size of the creative.
     */
-  var creativeSize: js.UndefOr[SchemaAdSize] = js.native
+  var creativeSize: js.UndefOr[SchemaAdSize] = js.undefined
 }
 object SchemaCreativeSpecification {
   

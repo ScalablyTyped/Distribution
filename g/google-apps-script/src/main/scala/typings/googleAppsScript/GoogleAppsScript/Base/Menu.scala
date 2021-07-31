@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,16 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *           .addToUi();
   *     }
   */
-@js.native
 trait Menu extends StObject {
   
-  def addItem(caption: String, functionName: String): Menu = js.native
+  def addItem(caption: String, functionName: String): Menu
   
-  def addSeparator(): Menu = js.native
+  def addSeparator(): Menu
   
-  def addSubMenu(menu: Menu): Menu = js.native
+  def addSubMenu(menu: Menu): Menu
   
-  def addToUi(): Unit = js.native
+  def addToUi(): Unit
 }
 object Menu {
   

@@ -2,26 +2,26 @@ package typings.lruCache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("lru-cache", JSImport.Namespace)
   @js.native
-  class ^[K, V] () extends LRUCache[K, V] {
+  class ^[K, V] ()
+    extends StObject
+       with LRUCache[K, V] {
     def this(max: Double) = this()
     def this(options: Options[K, V]) = this()
   }
   
-  @js.native
   trait Entry[K, V] extends StObject {
     
-    var e: Double = js.native
+    var e: Double
     
-    var k: K = js.native
+    var k: K
     
-    var v: V = js.native
+    var v: V
   }
   object Entry {
     
@@ -32,7 +32,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry[_, _], K, V] (val x: Self with (Entry[K, V])) extends AnyVal {
+    implicit class EntryMutableBuilder[Self <: Entry[?, ?], K, V] (val x: Self & (Entry[K, V])) extends AnyVal {
       
       @scala.inline
       def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
@@ -172,7 +172,6 @@ object mod {
     def values(): js.Array[V] = js.native
   }
   
-  @js.native
   trait Options[K, V] extends StObject {
     
     /**
@@ -183,7 +182,7 @@ object mod {
       * so if you want to immediately put it back in, you'll have to do that in
       * a `nextTick` or `setTimeout` callback or it won't do anything.
       */
-    var dispose: js.UndefOr[js.Function2[/* key */ K, /* value */ V, Unit]] = js.native
+    var dispose: js.UndefOr[js.Function2[/* key */ K, /* value */ V, Unit]] = js.undefined
     
     /**
       * Function that is used to calculate the length of stored items.
@@ -193,21 +192,21 @@ object mod {
       * `max` like-sized things. The item is passed as the first argument,
       * and the key is passed as the second argument.
       */
-    var length: js.UndefOr[js.Function2[/* value */ V, /* key */ js.UndefOr[K], Double]] = js.native
+    var length: js.UndefOr[js.Function2[/* value */ V, /* key */ js.UndefOr[K], Double]] = js.undefined
     
     /**
       * The maximum size of the cache, checked by applying the length
       * function to all values in the cache. Not setting this is kind of silly,
       * since that's the whole purpose of this lib, but it defaults to `Infinity`.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum age in ms. Items are not pro-actively pruned out as they age,
       * but if you try to get an item that is too old, it'll drop it and return
       * undefined instead of giving it to you.
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * By default, if you set a `dispose()` method, then it'll be called whenever
@@ -215,7 +214,7 @@ object mod {
       * `dispose()` will only be called when a key falls out of the cache,
       * not when it is overwritten.
       */
-    var noDisposeOnSet: js.UndefOr[Boolean] = js.native
+    var noDisposeOnSet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, if you set a `maxAge`, it'll only actually pull stale items
@@ -225,7 +224,7 @@ object mod {
       * return `undefined` when you try to get a stale entry,
       * as if it had already been deleted.
       */
-    var stale: js.UndefOr[Boolean] = js.native
+    var stale: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When using time-expiring entries with `maxAge`, setting this to `true` will make each
@@ -233,7 +232,7 @@ object mod {
       * causing it to not expire. (It can still fall out of cache based on recency of use, of
       * course.)
       */
-    var updateAgeOnGet: js.UndefOr[Boolean] = js.native
+    var updateAgeOnGet: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -244,7 +243,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], K, V] (val x: Self with (Options[K, V])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], K, V] (val x: Self & (Options[K, V])) extends AnyVal {
       
       @scala.inline
       def setDispose(value: (/* key */ K, /* value */ V) => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction2(value))

@@ -3,23 +3,23 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryList extends Node {
+trait QueryList
+  extends StObject
+     with Node {
   
   /**
     * Merges this query list with the `other`.
     */
-  def merge(other: QueryList): QueryList = js.native
+  def merge(other: QueryList): QueryList
   
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
   
   /**
     * Push the given `node`.
     */
-  def push(node: Node): scala.Unit = js.native
+  def push(node: Node): scala.Unit
 }
 object QueryList {
   

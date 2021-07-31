@@ -4,17 +4,15 @@ import typings.rcTree.interfaceMod.DataEntity
 import typings.rcTree.treeUtilMod.Wrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitWrapper extends StObject {
   
-  var initWrapper: js.UndefOr[js.Function1[/* wrapper */ Wrapper, Wrapper]] = js.native
+  var initWrapper: js.UndefOr[js.Function1[/* wrapper */ Wrapper, Wrapper]] = js.undefined
   
-  var onProcessFinished: js.UndefOr[js.Function1[/* wrapper */ Wrapper, Unit]] = js.native
+  var onProcessFinished: js.UndefOr[js.Function1[/* wrapper */ Wrapper, Unit]] = js.undefined
   
-  var processEntity: js.UndefOr[js.Function2[/* entity */ DataEntity, /* wrapper */ Wrapper, Unit]] = js.native
+  var processEntity: js.UndefOr[js.Function2[/* entity */ DataEntity, /* wrapper */ Wrapper, Unit]] = js.undefined
 }
 object InitWrapper {
   

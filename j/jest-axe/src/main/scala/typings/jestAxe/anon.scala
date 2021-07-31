@@ -7,34 +7,32 @@ import typings.axeCore.mod.TestEnvironment
 import typings.axeCore.mod.TestRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<axe-core.axe-core.AxeResults> */
-  @js.native
   trait PartialAxeResults extends StObject {
     
-    var inapplicable: js.UndefOr[js.Array[Result]] = js.native
+    var inapplicable: js.UndefOr[js.Array[Result]] = js.undefined
     
-    var incomplete: js.UndefOr[js.Array[Result]] = js.native
+    var incomplete: js.UndefOr[js.Array[Result]] = js.undefined
     
-    var passes: js.UndefOr[js.Array[Result]] = js.native
+    var passes: js.UndefOr[js.Array[Result]] = js.undefined
     
-    var testEngine: js.UndefOr[TestEngine] = js.native
+    var testEngine: js.UndefOr[TestEngine] = js.undefined
     
-    var testEnvironment: js.UndefOr[TestEnvironment] = js.native
+    var testEnvironment: js.UndefOr[TestEnvironment] = js.undefined
     
-    var testRunner: js.UndefOr[TestRunner] = js.native
+    var testRunner: js.UndefOr[TestRunner] = js.undefined
     
-    var timestamp: js.UndefOr[String] = js.native
+    var timestamp: js.UndefOr[String] = js.undefined
     
-    var toolOptions: js.UndefOr[RunOptions] = js.native
+    var toolOptions: js.UndefOr[RunOptions] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var violations: js.UndefOr[js.Array[Result]] = js.native
+    var violations: js.UndefOr[js.Array[Result]] = js.undefined
   }
   object PartialAxeResults {
     

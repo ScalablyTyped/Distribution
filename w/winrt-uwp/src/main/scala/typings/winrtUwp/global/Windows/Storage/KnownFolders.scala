@@ -4,14 +4,14 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.System.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to common locations that contain user content. This includes content from a user's local libraries (such as Documents, Pictures, Music, and Videos), HomeGroup, removable devices, and media server devices. */
 @JSGlobal("Windows.Storage.KnownFolders")
 @js.native
 abstract class KnownFolders ()
-  extends typings.winrtUwp.Windows.Storage.KnownFolders
+  extends StObject
+     with typings.winrtUwp.Windows.Storage.KnownFolders
 object KnownFolders {
   
   @JSGlobal("Windows.Storage.KnownFolders")
@@ -49,9 +49,8 @@ object KnownFolders {
     * @return When this method completes, it returns the requested StorageFolder object.
     */
   /* static member */
-  @JSGlobal("Windows.Storage.KnownFolders.getFolderForUserAsync")
-  @js.native
-  def getFolderForUserAsync(user: User, folderId: typings.winrtUwp.Windows.Storage.KnownFolderId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFolder] = js.native
+  @scala.inline
+  def getFolderForUserAsync(user: User, folderId: typings.winrtUwp.Windows.Storage.KnownFolderId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFolder] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFolderForUserAsync")(user.asInstanceOf[js.Any], folderId.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFolder]]
   
   /** Gets the HomeGroup folder. */
   /* static member */

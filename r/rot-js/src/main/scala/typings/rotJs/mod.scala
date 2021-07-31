@@ -21,7 +21,6 @@ import typings.rotJs.pathPathMod.PassableCallback
 import typings.rotJs.speedMod.SpeedActor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,35 +31,31 @@ object mod {
   
   object Color {
     
-    @JSImport("rot-js", "Color.add")
+    @JSImport("rot-js", "Color")
     @js.native
-    def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("rot-js", "Color.add_")
-    @js.native
-    def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.fromString")
-    @js.native
-    def fromString(str: String): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add_")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.hsl2rgb")
-    @js.native
-    def hsl2rgb(color: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def fromString(str: String): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.interpolate")
-    @js.native
-    def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = js.native
-    @JSImport("rot-js", "Color.interpolate")
-    @js.native
-    def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color, factor: Double): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def hsl2rgb(color: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(color.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.interpolateHSL")
-    @js.native
-    def interpolateHSL(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = js.native
-    @JSImport("rot-js", "Color.interpolateHSL")
-    @js.native
-    def interpolateHSL(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color, factor: Double): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    @scala.inline
+    def interpolate(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color, factor: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    
+    @scala.inline
+    def interpolateHSL(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    @scala.inline
+    def interpolateHSL(color1: typings.rotJs.colorMod.Color, color2: typings.rotJs.colorMod.Color, factor: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHSL")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     
     @JSImport("rot-js", "Color.lerp")
     @js.native
@@ -70,32 +65,25 @@ object mod {
     @js.native
     val lerpHSL: /* import warning: importer.ImportType#apply Failed type conversion: typeof interpolateHSL */ js.Any = js.native
     
-    @JSImport("rot-js", "Color.multiply")
-    @js.native
-    def multiply(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def multiply(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.multiply_")
-    @js.native
-    def multiply_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def multiply_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(color1.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.randomize")
-    @js.native
-    def randomize(color: typings.rotJs.colorMod.Color, diff: Double): typings.rotJs.colorMod.Color = js.native
-    @JSImport("rot-js", "Color.randomize")
-    @js.native
-    def randomize(color: typings.rotJs.colorMod.Color, diff: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def randomize(color: typings.rotJs.colorMod.Color, diff: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
+    @scala.inline
+    def randomize(color: typings.rotJs.colorMod.Color, diff: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.rgb2hsl")
-    @js.native
-    def rgb2hsl(color: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = js.native
+    @scala.inline
+    def rgb2hsl(color: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsl")(color.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    @JSImport("rot-js", "Color.toHex")
-    @js.native
-    def toHex(color: typings.rotJs.colorMod.Color): String = js.native
+    @scala.inline
+    def toHex(color: typings.rotJs.colorMod.Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("rot-js", "Color.toRGB")
-    @js.native
-    def toRGB(color: typings.rotJs.colorMod.Color): String = js.native
+    @scala.inline
+    def toRGB(color: typings.rotJs.colorMod.Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGB")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("rot-js", "DEFAULT_HEIGHT")
@@ -173,7 +161,7 @@ object mod {
   @js.native
   class Engine protected ()
     extends typings.rotJs.engineMod.default {
-    def this(scheduler: typings.rotJs.schedulerSchedulerMod.default[_]) = this()
+    def this(scheduler: typings.rotJs.schedulerSchedulerMod.default[js.Any]) = this()
   }
   
   @JSImport("rot-js", "EventQueue")
@@ -1648,6 +1636,10 @@ object mod {
   
   object Text {
     
+    @JSImport("rot-js", "Text")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("rot-js", "Text.TYPE_BG")
     @js.native
     val TYPE_BG: /* 3 */ Double = js.native
@@ -1664,40 +1656,35 @@ object mod {
     @js.native
     val TYPE_TEXT: /* 0 */ Double = js.native
     
-    @JSImport("rot-js", "Text.measure")
-    @js.native
-    def measure(str: String, maxWidth: Double): Height = js.native
+    @scala.inline
+    def measure(str: String, maxWidth: Double): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[Height]
     
-    @JSImport("rot-js", "Text.tokenize")
-    @js.native
-    def tokenize(str: String, maxWidth: Double): js.Array[_] = js.native
+    @scala.inline
+    def tokenize(str: String, maxWidth: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(str.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   }
   
   object Util {
     
-    @JSImport("rot-js", "Util.capitalize")
+    @JSImport("rot-js", "Util")
     @js.native
-    def capitalize(string: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("rot-js", "Util.clamp")
-    @js.native
-    def clamp(`val`: Double): Double = js.native
-    @JSImport("rot-js", "Util.clamp")
-    @js.native
-    def clamp(`val`: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
-    @JSImport("rot-js", "Util.clamp")
-    @js.native
-    def clamp(`val`: Double, min: Double): Double = js.native
-    @JSImport("rot-js", "Util.clamp")
-    @js.native
-    def clamp(`val`: Double, min: Double, max: Double): Double = js.native
+    @scala.inline
+    def capitalize(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(string.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("rot-js", "Util.format")
-    @js.native
-    def format(template: String, args: js.Any*): String = js.native
+    @scala.inline
+    def clamp(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def clamp(`val`: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def clamp(`val`: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("rot-js", "Util.mod")
-    @js.native
-    def mod(x: Double, n: Double): Double = js.native
+    @scala.inline
+    def format(template: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def mod(x: Double, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

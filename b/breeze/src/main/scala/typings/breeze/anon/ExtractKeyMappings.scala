@@ -5,21 +5,19 @@ import typings.breeze.breeze.NodeContext
 import typings.breeze.breeze.QueryContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtractKeyMappings extends StObject {
   
-  var extractKeyMappings: js.UndefOr[js.Function1[/* data */ js.Object, js.Array[KeyMapping]]] = js.native
+  var extractKeyMappings: js.UndefOr[js.Function1[/* data */ js.Object, js.Array[KeyMapping]]] = js.undefined
   
-  var extractResults: js.UndefOr[js.Function1[/* data */ js.Object, js.Object]] = js.native
+  var extractResults: js.UndefOr[js.Function1[/* data */ js.Object, js.Object]] = js.undefined
   
-  var extractSaveResults: js.UndefOr[js.Function1[/* data */ js.Object, js.Array[_]]] = js.native
+  var extractSaveResults: js.UndefOr[js.Function1[/* data */ js.Object, js.Array[js.Any]]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  def visitNode(node: js.Object, queryContext: QueryContext, nodeContext: NodeContext): EntityType = js.native
+  def visitNode(node: js.Object, queryContext: QueryContext, nodeContext: NodeContext): EntityType
 }
 object ExtractKeyMappings {
   
@@ -45,7 +43,7 @@ object ExtractKeyMappings {
     def setExtractResultsUndefined: Self = StObject.set(x, "extractResults", js.undefined)
     
     @scala.inline
-    def setExtractSaveResults(value: /* data */ js.Object => js.Array[_]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
+    def setExtractSaveResults(value: /* data */ js.Object => js.Array[js.Any]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtractSaveResultsUndefined: Self = StObject.set(x, "extractSaveResults", js.undefined)

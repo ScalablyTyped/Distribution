@@ -7,34 +7,35 @@ import typings.tsconfigPaths.tsconfigPathsStrings.failed
 import typings.tsconfigPaths.tsconfigPathsStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configLoaderMod {
   
-  @JSImport("tsconfig-paths/lib/config-loader", "configLoader")
+  @JSImport("tsconfig-paths/lib/config-loader", JSImport.Namespace)
   @js.native
-  def configLoader(hasCwdExplicitParamsTsConfigLoader: ConfigLoaderParams): ConfigLoaderResult = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tsconfig-paths/lib/config-loader", "loadConfig")
-  @js.native
-  def loadConfig(): ConfigLoaderResult = js.native
-  @JSImport("tsconfig-paths/lib/config-loader", "loadConfig")
-  @js.native
-  def loadConfig(cwd: String): ConfigLoaderResult = js.native
+  @scala.inline
+  def configLoader(hasCwdExplicitParamsTsConfigLoader: ConfigLoaderParams): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("configLoader")(hasCwdExplicitParamsTsConfigLoader.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
   
-  @js.native
-  trait ConfigLoaderFailResult extends ConfigLoaderResult {
+  @scala.inline
+  def loadConfig(): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")().asInstanceOf[ConfigLoaderResult]
+  @scala.inline
+  def loadConfig(cwd: String): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(cwd.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
+  
+  trait ConfigLoaderFailResult
+    extends StObject
+       with ConfigLoaderResult {
     
-    var message: String = js.native
+    var message: String
     
-    var resultType: failed = js.native
+    var resultType: failed
   }
   object ConfigLoaderFailResult {
     
     @scala.inline
-    def apply(message: String, resultType: failed): ConfigLoaderFailResult = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultType = resultType.asInstanceOf[js.Any])
+    def apply(message: String): ConfigLoaderFailResult = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultType = "failed")
       __obj.asInstanceOf[ConfigLoaderFailResult]
     }
     
@@ -49,14 +50,13 @@ object configLoaderMod {
     }
   }
   
-  @js.native
   trait ConfigLoaderParams extends StObject {
     
-    var cwd: String = js.native
+    var cwd: String
     
-    var explicitParams: js.UndefOr[ExplicitParams] = js.native
+    var explicitParams: js.UndefOr[ExplicitParams] = js.undefined
     
-    var tsConfigLoader: js.UndefOr[TsConfigLoader] = js.native
+    var tsConfigLoader: js.UndefOr[TsConfigLoader] = js.undefined
   }
   object ConfigLoaderParams {
     
@@ -94,8 +94,8 @@ object configLoaderMod {
   object ConfigLoaderResult {
     
     @scala.inline
-    def ConfigLoaderFailResult(message: String, resultType: failed): typings.tsconfigPaths.configLoaderMod.ConfigLoaderFailResult = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultType = resultType.asInstanceOf[js.Any])
+    def ConfigLoaderFailResult(message: String): typings.tsconfigPaths.configLoaderMod.ConfigLoaderFailResult = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultType = "failed")
       __obj.asInstanceOf[typings.tsconfigPaths.configLoaderMod.ConfigLoaderFailResult]
     }
     
@@ -104,30 +104,30 @@ object configLoaderMod {
       absoluteBaseUrl: String,
       baseUrl: String,
       configFileAbsolutePath: String,
-      paths: StringDictionary[js.Array[String]],
-      resultType: success
+      paths: StringDictionary[js.Array[String]]
     ): typings.tsconfigPaths.configLoaderMod.ConfigLoaderSuccessResult = {
-      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = resultType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = "success")
       __obj.asInstanceOf[typings.tsconfigPaths.configLoaderMod.ConfigLoaderSuccessResult]
     }
   }
   
-  @js.native
-  trait ConfigLoaderSuccessResult extends ConfigLoaderResult {
+  trait ConfigLoaderSuccessResult
+    extends StObject
+       with ConfigLoaderResult {
     
-    var absoluteBaseUrl: String = js.native
+    var absoluteBaseUrl: String
     
-    var addMatchAll: js.UndefOr[Boolean] = js.native
+    var addMatchAll: js.UndefOr[Boolean] = js.undefined
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var configFileAbsolutePath: String = js.native
+    var configFileAbsolutePath: String
     
-    var mainFields: js.UndefOr[js.Array[String]] = js.native
+    var mainFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var paths: StringDictionary[js.Array[String]] = js.native
+    var paths: StringDictionary[js.Array[String]]
     
-    var resultType: success = js.native
+    var resultType: success
   }
   object ConfigLoaderSuccessResult {
     
@@ -136,10 +136,9 @@ object configLoaderMod {
       absoluteBaseUrl: String,
       baseUrl: String,
       configFileAbsolutePath: String,
-      paths: StringDictionary[js.Array[String]],
-      resultType: success
+      paths: StringDictionary[js.Array[String]]
     ): ConfigLoaderSuccessResult = {
-      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = resultType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = "success")
       __obj.asInstanceOf[ConfigLoaderSuccessResult]
     }
     
@@ -178,16 +177,15 @@ object configLoaderMod {
     }
   }
   
-  @js.native
   trait ExplicitParams extends StObject {
     
-    var addMatchAll: js.UndefOr[Boolean] = js.native
+    var addMatchAll: js.UndefOr[Boolean] = js.undefined
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var mainFields: js.UndefOr[js.Array[String]] = js.native
+    var mainFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var paths: StringDictionary[js.Array[String]] = js.native
+    var paths: StringDictionary[js.Array[String]]
   }
   object ExplicitParams {
     

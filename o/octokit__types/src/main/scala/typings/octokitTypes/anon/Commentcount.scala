@@ -2,25 +2,23 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commentcount extends StObject {
   
-  var author: DateEmail = js.native
+  var author: DateEmail
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var committer: DateEmail = js.native
+  var committer: DateEmail
   
-  var message: String = js.native
+  var message: String
   
-  var tree: Sha = js.native
+  var tree: Sha
   
-  var url: String = js.native
+  var url: String
   
-  var verification: Payload = js.native
+  var verification: Payload
 }
 object Commentcount {
   

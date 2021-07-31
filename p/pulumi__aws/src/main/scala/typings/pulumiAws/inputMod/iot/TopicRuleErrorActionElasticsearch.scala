@@ -3,36 +3,34 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionElasticsearch extends StObject {
   
   /**
     * The endpoint of your Elasticsearch domain.
     */
-  var endpoint: Input[String] = js.native
+  var endpoint: Input[String]
   
   /**
     * The unique identifier for the document you are storing.
     */
-  var id: Input[String] = js.native
+  var id: Input[String]
   
   /**
     * The Elasticsearch index where you want to store your data.
     */
-  var index: Input[String] = js.native
+  var index: Input[String]
   
   /**
     * The IAM role ARN that has access to Elasticsearch.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
   
   /**
     * The type of document you are storing.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object TopicRuleErrorActionElasticsearch {
   

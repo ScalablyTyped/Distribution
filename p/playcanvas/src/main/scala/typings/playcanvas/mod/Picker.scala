@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,6 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "Picker")
 @js.native
 class Picker protected ()
-  extends typings.playcanvas.pc.Picker {
+  extends StObject
+     with typings.playcanvas.pc.Picker {
   def this(app: typings.playcanvas.pc.Application, width: Double, height: Double) = this()
 }

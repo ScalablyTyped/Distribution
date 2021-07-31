@@ -3,26 +3,24 @@ package typings.reactVis.mod
 import typings.reactVis.anon.Bottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BordersProps extends StObject {
   
-  var innerHeight: js.UndefOr[Double] = js.native
+  var innerHeight: js.UndefOr[Double] = js.undefined
   
-  var innerWidth: js.UndefOr[Double] = js.native
+  var innerWidth: js.UndefOr[Double] = js.undefined
   
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginRight: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.undefined
   
   // default: {'all':{},'bottom':{},'left':{},'right':{},'top':{}}
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[Bottom] = js.native
+  var style: js.UndefOr[Bottom] = js.undefined
 }
 object BordersProps {
   

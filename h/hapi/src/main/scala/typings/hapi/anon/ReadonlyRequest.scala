@@ -22,7 +22,6 @@ import typings.podium.mod.Listener
 import typings.podium.mod.Podium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<hapi.hapi.Request> */
@@ -85,9 +84,9 @@ trait ReadonlyRequest extends StObject {
   
   val plugins: PluginsStates = js.native
   
-  val pre: Dictionary[_] = js.native
+  val pre: Dictionary[js.Any] = js.native
   
-  val preResponses: Dictionary[_] = js.native
+  val preResponses: Dictionary[js.Any] = js.native
   
   val query: RequestQuery = js.native
   
@@ -101,7 +100,7 @@ trait ReadonlyRequest extends StObject {
   
   def removeListener(name: String, listener: Listener): Podium = js.native
   
-  val response: ResponseObject | ^[_] = js.native
+  val response: ResponseObject | ^[js.Any] = js.native
   
   val route: RequestRoute = js.native
   
@@ -114,7 +113,7 @@ trait ReadonlyRequest extends StObject {
   def setUrl(url: URL_): Unit = js.native
   def setUrl(url: URL_, stripTrailingSlash: Boolean): Unit = js.native
   
-  val state: Dictionary[_] = js.native
+  val state: Dictionary[js.Any] = js.native
   
   val url: URL_ = js.native
 }

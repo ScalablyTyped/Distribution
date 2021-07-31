@@ -2,23 +2,21 @@ package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaManagedZoneDnsSecConfig extends StObject {
   
-  var defaultKeySpecs: js.UndefOr[js.Array[SchemaDnsKeySpec]] = js.native
+  var defaultKeySpecs: js.UndefOr[js.Array[SchemaDnsKeySpec]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#managedZoneDnsSecConfig&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var nonExistence: js.UndefOr[String] = js.native
+  var nonExistence: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedZoneDnsSecConfig {
   

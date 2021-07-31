@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait SortOn extends StObject
 object SortOn extends StObject {
   
   @js.native
-  sealed trait cellColor extends SortOn
+  sealed trait cellColor
+    extends StObject
+       with SortOn
   
   @js.native
-  sealed trait fontColor extends SortOn
+  sealed trait fontColor
+    extends StObject
+       with SortOn
   
   @js.native
-  sealed trait icon extends SortOn
+  sealed trait icon
+    extends StObject
+       with SortOn
   
   @js.native
-  sealed trait value extends SortOn
+  sealed trait value
+    extends StObject
+       with SortOn
 }

@@ -3,60 +3,52 @@ package typings.uirouterCore
 import typings.uirouterCore.commonCommonMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object predicatesMod {
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isArray")
+  @JSImport("@uirouter/core/lib/common/predicates", JSImport.Namespace)
   @js.native
-  def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isDate")
-  @js.native
-  def isDate(x: js.Any): /* is std.Date */ Boolean = js.native
+  @scala.inline
+  def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  
+  @scala.inline
+  def isDate(x: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
   @JSImport("@uirouter/core/lib/common/predicates", "isDefined")
   @js.native
   val isDefined: Predicate[js.Any] = js.native
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isFunction")
-  @js.native
-  def isFunction(x: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isFunction(x: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isInjectable")
-  @js.native
-  def isInjectable(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isInjectable(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjectable")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isNull")
-  @js.native
-  def isNull(o: js.Any): Boolean = js.native
+  @scala.inline
+  def isNull(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("@uirouter/core/lib/common/predicates", "isNullOrUndefined")
   @js.native
   val isNullOrUndefined: Predicate[js.Any] = js.native
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isNumber")
-  @js.native
-  def isNumber(x: js.Any): /* is number */ Boolean = js.native
+  @scala.inline
+  def isNumber(x: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(x.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isObject")
-  @js.native
-  def isObject(x: js.Any): Boolean = js.native
+  @scala.inline
+  def isObject(x: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isPromise")
-  @js.native
-  def isPromise(x: js.Any): /* is std.Promise<any> */ Boolean = js.native
+  @scala.inline
+  def isPromise(x: js.Any): /* is std.Promise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<any> */ Boolean]
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isRegExp")
-  @js.native
-  def isRegExp(x: js.Any): /* is std.RegExp */ Boolean = js.native
+  @scala.inline
+  def isRegExp(x: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isString")
-  @js.native
-  def isString(x: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isString(x: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(x.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("@uirouter/core/lib/common/predicates", "isUndefined")
-  @js.native
-  def isUndefined(x: js.Any): Boolean = js.native
+  @scala.inline
+  def isUndefined(x: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

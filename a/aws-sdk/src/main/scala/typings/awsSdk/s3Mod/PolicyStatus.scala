@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyStatus extends StObject {
   
   /**
     * The policy status for this bucket. TRUE indicates that this bucket is public. FALSE indicates that the bucket is not public.
     */
-  var IsPublic: js.UndefOr[typings.awsSdk.s3Mod.IsPublic] = js.native
+  var IsPublic: js.UndefOr[typings.awsSdk.s3Mod.IsPublic] = js.undefined
 }
 object PolicyStatus {
   

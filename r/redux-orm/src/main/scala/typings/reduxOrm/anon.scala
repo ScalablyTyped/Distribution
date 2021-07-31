@@ -6,33 +6,30 @@ import typings.reduxOrm.modelMod.IdType
 import typings.reduxOrm.modelMod.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait GetId[M /* <: Model[Instantiable0[AnyModel], _] */] extends StObject {
+  trait GetId[M /* <: Model[Instantiable0[AnyModel], js.Any] */] extends StObject {
     
-    def getId(): IdType[M] = js.native
+    def getId(): IdType[M]
   }
   object GetId {
     
     @scala.inline
-    def apply[M /* <: Model[Instantiable0[AnyModel], _] */](getId: () => IdType[M]): GetId[M] = {
+    def apply[M /* <: Model[Instantiable0[AnyModel], js.Any] */](getId: () => IdType[M]): GetId[M] = {
       val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId))
       __obj.asInstanceOf[GetId[M]]
     }
     
     @scala.inline
-    implicit class GetIdMutableBuilder[Self <: GetId[_], M /* <: Model[Instantiable0[AnyModel], _] */] (val x: Self with GetId[M]) extends AnyVal {
+    implicit class GetIdMutableBuilder[Self <: GetId[?], M /* <: Model[Instantiable0[AnyModel], js.Any] */] (val x: Self & GetId[M]) extends AnyVal {
       
       @scala.inline
       def setGetId(value: () => IdType[M]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait TypeofQuerySet extends StObject {
     
     /**
@@ -59,7 +56,7 @@ object anon {
       * // use shared method
       * const unreleased = customQs.unreleased();
       */
-    def addSharedMethod(methodName: String): Unit = js.native
+    def addSharedMethod(methodName: String): Unit
   }
   object TypeofQuerySet {
     

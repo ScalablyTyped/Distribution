@@ -6,17 +6,15 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BearingSnap extends StObject {
     
-    var bearingSnap: js.UndefOr[Double] = js.native
+    var bearingSnap: js.UndefOr[Double] = js.undefined
     
-    var pitchWithRotate: js.UndefOr[Boolean] = js.native
+    var pitchWithRotate: js.UndefOr[Boolean] = js.undefined
   }
   object BearingSnap {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Compact extends StObject {
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var customAttribution: js.UndefOr[String | js.Array[String]] = js.native
+    var customAttribution: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Compact {
     
@@ -78,14 +75,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: Uint8Array | Uint8ClampedArray = js.native
+    var data: Uint8Array | Uint8ClampedArray
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Data {
     
@@ -109,12 +105,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Diff extends StObject {
     
-    var diff: js.UndefOr[Boolean] = js.native
+    var diff: js.UndefOr[Boolean] = js.undefined
     
-    var localIdeographFontFamily: js.UndefOr[String] = js.native
+    var localIdeographFontFamily: js.UndefOr[String] = js.undefined
   }
   object Diff {
     
@@ -141,10 +136,9 @@ object anon {
     }
   }
   
-  @js.native
   trait FailIfMajorPerformanceCaveat extends StObject {
     
-    var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.native
+    var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
   }
   object FailIfMajorPerformanceCaveat {
     
@@ -165,18 +159,17 @@ object anon {
     }
   }
   
-  @js.native
   trait FitBoundsOptions extends StObject {
     
-    var fitBoundsOptions: js.UndefOr[typings.mapboxGl.mod.FitBoundsOptions] = js.native
+    var fitBoundsOptions: js.UndefOr[typings.mapboxGl.mod.FitBoundsOptions] = js.undefined
     
-    var positionOptions: js.UndefOr[PositionOptions] = js.native
+    var positionOptions: js.UndefOr[PositionOptions] = js.undefined
     
-    var showAccuracyCircle: js.UndefOr[Boolean] = js.native
+    var showAccuracyCircle: js.UndefOr[Boolean] = js.undefined
     
-    var showUserLocation: js.UndefOr[Boolean] = js.native
+    var showUserLocation: js.UndefOr[Boolean] = js.undefined
     
-    var trackUserLocation: js.UndefOr[Boolean] = js.native
+    var trackUserLocation: js.UndefOr[Boolean] = js.undefined
   }
   object FitBoundsOptions {
     
@@ -221,12 +214,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Lat extends _LngLatLike {
+  trait Lat
+    extends StObject
+       with _LngLatLike {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
   }
   object Lat {
     
@@ -247,12 +241,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Lon extends _LngLatLike {
+  trait Lon
+    extends StObject
+       with _LngLatLike {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lon: Double = js.native
+    var lon: Double
   }
   object Lon {
     
@@ -273,12 +268,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxWidth extends StObject {
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var unit: js.UndefOr[String] = js.native
+    var unit: js.UndefOr[String] = js.undefined
   }
   object MaxWidth {
     
@@ -305,12 +299,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PixelRatio extends StObject {
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var sdf: js.UndefOr[Boolean] = js.native
+    var sdf: js.UndefOr[Boolean] = js.undefined
   }
   object PixelRatio {
     
@@ -337,14 +330,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ShowCompass extends StObject {
     
-    var showCompass: js.UndefOr[Boolean] = js.native
+    var showCompass: js.UndefOr[Boolean] = js.undefined
     
-    var showZoom: js.UndefOr[Boolean] = js.native
+    var showZoom: js.UndefOr[Boolean] = js.undefined
     
-    var visualizePitch: js.UndefOr[Boolean] = js.native
+    var visualizePitch: js.UndefOr[Boolean] = js.undefined
   }
   object ShowCompass {
     
@@ -378,19 +370,18 @@ object anon {
   }
   
   /* Inlined {  layers :std.Array<string> | undefined,   filter :std.Array<any> | undefined} & mapbox-gl.mapbox-gl.FilterOptions */
-  @js.native
   trait layersArraystringundefine extends StObject {
     
-    var filter: js.UndefOr[js.Array[_]] = js.native
+    var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var layers: js.UndefOr[js.Array[String]] = js.native
+    var layers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Whether to check if the filter conforms to the Mapbox GL Style Specification.
       * Disabling validation is a performance optimization that should only be used
       * if you have previously validated the values you will be passing to this function.
       */
-    var validate: js.UndefOr[Boolean | Null] = js.native
+    var validate: js.UndefOr[Boolean | Null] = js.undefined
   }
   object layersArraystringundefine {
     
@@ -404,7 +395,7 @@ object anon {
     implicit class layersArraystringundefineMutableBuilder[Self <: layersArraystringundefine] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -433,19 +424,18 @@ object anon {
   }
   
   /* Inlined {  sourceLayer :string | undefined,   filter :std.Array<any> | undefined} & mapbox-gl.mapbox-gl.FilterOptions */
-  @js.native
   trait sourceLayerstringundefine extends StObject {
     
-    var filter: js.UndefOr[js.Array[_]] = js.native
+    var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var sourceLayer: js.UndefOr[String] = js.native
+    var sourceLayer: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to check if the filter conforms to the Mapbox GL Style Specification.
       * Disabling validation is a performance optimization that should only be used
       * if you have previously validated the values you will be passing to this function.
       */
-    var validate: js.UndefOr[Boolean | Null] = js.native
+    var validate: js.UndefOr[Boolean | Null] = js.undefined
   }
   object sourceLayerstringundefine {
     
@@ -459,7 +449,7 @@ object anon {
     implicit class sourceLayerstringundefineMutableBuilder[Self <: sourceLayerstringundefine] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ipv6Pool extends StObject {
   
   /**
     * The description for the address pool.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The CIDR blocks for the address pool.
     */
-  var PoolCidrBlocks: js.UndefOr[PoolCidrBlocksSet] = js.native
+  var PoolCidrBlocks: js.UndefOr[PoolCidrBlocksSet] = js.undefined
   
   /**
     * The ID of the address pool.
     */
-  var PoolId: js.UndefOr[String] = js.native
+  var PoolId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags for the address pool.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object Ipv6Pool {
   

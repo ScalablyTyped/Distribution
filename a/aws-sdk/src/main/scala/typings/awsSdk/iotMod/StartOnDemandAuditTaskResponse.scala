@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartOnDemandAuditTaskResponse extends StObject {
   
   /**
     * The ID of the on-demand audit you started.
     */
-  var taskId: js.UndefOr[AuditTaskId] = js.native
+  var taskId: js.UndefOr[AuditTaskId] = js.undefined
 }
 object StartOnDemandAuditTaskResponse {
   

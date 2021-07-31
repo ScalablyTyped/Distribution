@@ -2,26 +2,24 @@ package typings.gapiYoutube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiYouTubePageInfo[T] extends StObject {
   
   /**
     * The ETag of the response.
     */
-  var etag: String = js.native
+  var etag: String
   
   /**
     * A list of activities, or events, that match the request criteria.
     */
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
   
   /**
     * The type of the API response. For this operation, the value will be youtube#activityListResponse.
     */
-  var kind: String = js.native
+  var kind: String
 }
 object GoogleApiYouTubePageInfo {
   
@@ -32,7 +30,7 @@ object GoogleApiYouTubePageInfo {
   }
   
   @scala.inline
-  implicit class GoogleApiYouTubePageInfoMutableBuilder[Self <: GoogleApiYouTubePageInfo[_], T] (val x: Self with GoogleApiYouTubePageInfo[T]) extends AnyVal {
+  implicit class GoogleApiYouTubePageInfoMutableBuilder[Self <: GoogleApiYouTubePageInfo[?], T] (val x: Self & GoogleApiYouTubePageInfo[T]) extends AnyVal {
     
     @scala.inline
     def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])

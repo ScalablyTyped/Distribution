@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectorModel extends StObject {
   
   /**
     * Information about how the detector is configured.
     */
-  var detectorModelConfiguration: js.UndefOr[DetectorModelConfiguration] = js.native
+  var detectorModelConfiguration: js.UndefOr[DetectorModelConfiguration] = js.undefined
   
   /**
     * Information that defines how a detector operates.
     */
-  var detectorModelDefinition: js.UndefOr[DetectorModelDefinition] = js.native
+  var detectorModelDefinition: js.UndefOr[DetectorModelDefinition] = js.undefined
 }
 object DetectorModel {
   

@@ -9,12 +9,10 @@ import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleapis.anon.ReadonlyEndpoint
 import typings.googleapis.anon.TypeofOAuth2Client
 import typings.googleapis.apisMod.GeneratedAPIs
-import typings.googleapisCommon.apiMod.APIEndpoint
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleapisMod {
@@ -31,7 +29,17 @@ object googleapisMod {
     var OAuth2: TypeofOAuth2Client = js.native
   }
   
-  @JSImport("googleapis/build/src/googleapis", "GoogleApis")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("googleapis/build/src/googleapis", "GoogleApis")
   @js.native
   /**
     * GoogleApis constructor.
@@ -43,9 +51,7 @@ object googleapisMod {
     * @class GoogleApis
     * @param {Object} [options] Configuration options.
     */
-  class GoogleApis ()
-    extends GeneratedAPIs
-       with /* index */ StringDictionary[APIEndpoint] {
+  class GoogleApis () extends GeneratedAPIs {
     def this(options: GlobalOptions) = this()
     
     var _discovery: js.Any = js.native

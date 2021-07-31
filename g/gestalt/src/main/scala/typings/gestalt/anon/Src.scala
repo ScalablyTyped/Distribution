@@ -5,15 +5,13 @@ import typings.gestalt.gestaltStrings.videoSlashmp4
 import typings.gestalt.gestaltStrings.videoSlashogg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Src extends StObject {
   
-  var src: String = js.native
+  var src: String
   
-  var `type`: videoSlashm3u8 | videoSlashmp4 | videoSlashogg = js.native
+  var `type`: videoSlashm3u8 | videoSlashmp4 | videoSlashogg
 }
 object Src {
   

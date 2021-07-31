@@ -3,18 +3,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.protobuf.IFieldMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UpdateKnowledgeBaseRequest. */
-@js.native
 trait IUpdateKnowledgeBaseRequest extends StObject {
   
   /** UpdateKnowledgeBaseRequest knowledgeBase */
-  var knowledgeBase: js.UndefOr[IKnowledgeBase | Null] = js.native
+  var knowledgeBase: js.UndefOr[IKnowledgeBase | Null] = js.undefined
   
   /** UpdateKnowledgeBaseRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
 }
 object IUpdateKnowledgeBaseRequest {
   

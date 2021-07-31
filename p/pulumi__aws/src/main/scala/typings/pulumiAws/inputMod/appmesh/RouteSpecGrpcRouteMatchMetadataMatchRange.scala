@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecGrpcRouteMatchMetadataMatchRange extends StObject {
   
   /**
     * The end of the range.
     */
-  var end: Input[Double] = js.native
+  var end: Input[Double]
   
   /**
     * The start of the range.
     */
-  var start: Input[Double] = js.native
+  var start: Input[Double]
 }
 object RouteSpecGrpcRouteMatchMetadataMatchRange {
   

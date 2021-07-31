@@ -2,19 +2,17 @@ package typings.reactGridLayout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait H extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var i: String = js.native
+    var i: String
     
-    var w: Double = js.native
+    var w: Double
   }
   object H {
     

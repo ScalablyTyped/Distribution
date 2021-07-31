@@ -10,7 +10,6 @@ import typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErr
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "DynamicReferenceError")
@@ -35,36 +34,44 @@ object DynamicReferenceError {
   object DynamicReferenceErrorType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DynamicReferenceErrorType with Double] = js.native
+    def apply(value: Double): js.UndefOr[DynamicReferenceErrorType & Double] = js.native
     
     @js.native
-    sealed trait GLOBALALREADYBORROWED extends DynamicReferenceErrorType
-    /* 4 */ val GLOBALALREADYBORROWED: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALALREADYBORROWED with Double = js.native
+    sealed trait GLOBALALREADYBORROWED
+      extends StObject
+         with DynamicReferenceErrorType
+    /* 4 */ val GLOBALALREADYBORROWED: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALALREADYBORROWED & Double = js.native
     
     @js.native
-    sealed trait GLOBALREFALREADYRELEASED extends DynamicReferenceErrorType
-    /* 2 */ val GLOBALREFALREADYRELEASED: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALREFALREADYRELEASED with Double = js.native
+    sealed trait GLOBALREFALREADYRELEASED
+      extends StObject
+         with DynamicReferenceErrorType
+    /* 2 */ val GLOBALREFALREADYRELEASED: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALREFALREADYRELEASED & Double = js.native
     
     @js.native
-    sealed trait MISSINGRELEASEREF extends DynamicReferenceErrorType
-    /* 3 */ val MISSINGRELEASEREF: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.MISSINGRELEASEREF with Double = js.native
+    sealed trait MISSINGRELEASEREF
+      extends StObject
+         with DynamicReferenceErrorType
+    /* 3 */ val MISSINGRELEASEREF: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.MISSINGRELEASEREF & Double = js.native
     
     @js.native
-    sealed trait MOVEOFBORROWEDRESOURCE extends DynamicReferenceErrorType
-    /* 1 */ val MOVEOFBORROWEDRESOURCE: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.MOVEOFBORROWEDRESOURCE with Double = js.native
+    sealed trait MOVEOFBORROWEDRESOURCE
+      extends StObject
+         with DynamicReferenceErrorType
+    /* 1 */ val MOVEOFBORROWEDRESOURCE: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.MOVEOFBORROWEDRESOURCE & Double = js.native
     
     @js.native
-    sealed trait UNKNOWNDYNAMICREFERENCEERROR extends DynamicReferenceErrorType
-    /* 0 */ val UNKNOWNDYNAMICREFERENCEERROR: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.UNKNOWNDYNAMICREFERENCEERROR with Double = js.native
+    sealed trait UNKNOWNDYNAMICREFERENCEERROR
+      extends StObject
+         with DynamicReferenceErrorType
+    /* 0 */ val UNKNOWNDYNAMICREFERENCEERROR: typings.libraCore.vmErrorsPbMod.DynamicReferenceError.DynamicReferenceErrorType.UNKNOWNDYNAMICREFERENCEERROR & Double = js.native
   }
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "DynamicReferenceError.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): DynamicReferenceError = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): DynamicReferenceError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[DynamicReferenceError]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "DynamicReferenceError.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: DynamicReferenceError, reader: BinaryReader): DynamicReferenceError = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: DynamicReferenceError, reader: BinaryReader): DynamicReferenceError = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[DynamicReferenceError]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "DynamicReferenceError.extensions")
   @js.native
@@ -79,18 +86,15 @@ object DynamicReferenceError {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "DynamicReferenceError.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: DynamicReferenceError, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: DynamicReferenceError, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "DynamicReferenceError.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: DynamicReferenceError): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: DynamicReferenceError): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var errorCode: DynamicReferenceErrorType = js.native
+    var errorCode: DynamicReferenceErrorType
   }
   object AsObject {
     

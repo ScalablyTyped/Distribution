@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterPatchBaselineForPatchGroupRequest extends StObject {
   
   /**
     * The ID of the patch baseline to deregister the patch group from.
     */
-  var BaselineId: typings.awsSdk.ssmMod.BaselineId = js.native
+  var BaselineId: typings.awsSdk.ssmMod.BaselineId
   
   /**
     * The name of the patch group that should be deregistered from the patch baseline.
     */
-  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup = js.native
+  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup
 }
 object DeregisterPatchBaselineForPatchGroupRequest {
   

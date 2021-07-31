@@ -10,9 +10,9 @@ Get callsites from the V8 stack trace API
 | ------------------ | :-------------: |
 | Full name          | callsites |
 | Keywords           | stacktrace, v8, callsite, callsites, stack, trace, function, file, line, debug |
-| # releases         | 3 |
-| # dependents       | 201 |
-| # downloads        | 893806990 |
+| # releases         | 2 |
+| # dependents       | 241 |
+| # downloads        | 1084624161 |
 | # stars            | 4 |
 
 ## Links

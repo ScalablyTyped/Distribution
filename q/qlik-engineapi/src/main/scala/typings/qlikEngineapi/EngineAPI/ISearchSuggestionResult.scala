@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchSuggestionResult...
   */
-@js.native
 trait ISearchSuggestionResult extends StObject {
   
   /**
     * List of field names that contain search hits.
     */
-  var qFieldNames: js.Array[String] = js.native
+  var qFieldNames: js.Array[String]
   
   /**
     * List of suggestions.
     */
-  var qSuggestions: js.Array[ISearchSuggestItem] = js.native
+  var qSuggestions: js.Array[ISearchSuggestItem]
 }
 object ISearchSuggestionResult {
   

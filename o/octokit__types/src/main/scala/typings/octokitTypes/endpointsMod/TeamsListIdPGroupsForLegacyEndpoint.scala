@@ -2,13 +2,11 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsListIdPGroupsForLegacyEndpoint extends StObject {
   
-  var team_id: Double = js.native
+  var team_id: Double
 }
 object TeamsListIdPGroupsForLegacyEndpoint {
   

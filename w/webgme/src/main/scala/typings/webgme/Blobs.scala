@@ -14,7 +14,6 @@ import typings.webgme.GmeCommon.Payload
 import typings.webgme.GmeCommon.ResultCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Blobs {
@@ -87,10 +86,9 @@ object Blobs {
     def saveAllArtifacts(callback: ResultCallback[js.Array[MetadataHash]]): Unit = js.native
   }
   
-  @js.native
   trait BlobClientParamters extends StObject {
     
-    var logger: GmeLogger = js.native
+    var logger: GmeLogger
   }
   object BlobClientParamters {
     
@@ -108,18 +106,17 @@ object Blobs {
     }
   }
   
-  @js.native
   trait BlobMetadata extends StObject {
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var context: DataObject = js.native
+    var context: DataObject
     
-    var mime: String = js.native
+    var mime: String
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object BlobMetadata {
     

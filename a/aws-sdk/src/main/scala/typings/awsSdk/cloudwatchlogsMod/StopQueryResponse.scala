@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopQueryResponse extends StObject {
   
   /**
     * This is true if the query was stopped by the StopQuery operation.
     */
-  var success: js.UndefOr[Success] = js.native
+  var success: js.UndefOr[Success] = js.undefined
 }
 object StopQueryResponse {
   

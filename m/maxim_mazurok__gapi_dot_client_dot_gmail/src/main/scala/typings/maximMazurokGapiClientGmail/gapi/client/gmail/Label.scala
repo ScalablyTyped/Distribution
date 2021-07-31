@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
   /** The color to assign to the label. Color is only available for labels that have their `type` set to `user`. */
-  var color: js.UndefOr[LabelColor] = js.native
+  var color: js.UndefOr[LabelColor] = js.undefined
   
   /** The immutable ID of the label. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The visibility of the label in the label list in the Gmail web interface. */
-  var labelListVisibility: js.UndefOr[String] = js.native
+  var labelListVisibility: js.UndefOr[String] = js.undefined
   
   /** The visibility of messages with this label in the message list in the Gmail web interface. */
-  var messageListVisibility: js.UndefOr[String] = js.native
+  var messageListVisibility: js.UndefOr[String] = js.undefined
   
   /** The total number of messages with the label. */
-  var messagesTotal: js.UndefOr[Double] = js.native
+  var messagesTotal: js.UndefOr[Double] = js.undefined
   
   /** The number of unread messages with the label. */
-  var messagesUnread: js.UndefOr[Double] = js.native
+  var messagesUnread: js.UndefOr[Double] = js.undefined
   
   /** The display name of the label. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The total number of threads with the label. */
-  var threadsTotal: js.UndefOr[Double] = js.native
+  var threadsTotal: js.UndefOr[Double] = js.undefined
   
   /** The number of unread threads with the label. */
-  var threadsUnread: js.UndefOr[Double] = js.native
+  var threadsUnread: js.UndefOr[Double] = js.undefined
   
   /**
     * The owner type for the label. User labels are created by the user and can be modified and deleted by the user and can be applied to any message or thread. System labels are
@@ -41,7 +39,7 @@ trait Label extends StObject {
     * not guaranteed. For example, users can apply and remove the `INBOX` and `UNREAD` labels from messages and threads, but cannot apply or remove the `DRAFTS` or `SENT` labels from
     * messages or threads.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Label {
   

@@ -2,15 +2,13 @@ package typings.raygun.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfflineStorageOptions extends StObject {
   
-  var cacheLimit: js.UndefOr[Double] = js.native
+  var cacheLimit: js.UndefOr[Double] = js.undefined
   
-  var cachePath: String = js.native
+  var cachePath: String
 }
 object OfflineStorageOptions {
   

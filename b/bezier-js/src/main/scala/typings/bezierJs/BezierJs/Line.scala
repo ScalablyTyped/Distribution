@@ -2,15 +2,13 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Line extends StObject {
   
-  var p1: Point = js.native
+  var p1: Point
   
-  var p2: Point = js.native
+  var p2: Point
 }
 object Line {
   

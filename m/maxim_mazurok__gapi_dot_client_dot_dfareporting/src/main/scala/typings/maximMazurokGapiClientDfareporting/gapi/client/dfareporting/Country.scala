@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Country extends StObject {
   
   /** Country code. */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /** DART ID of this country. This is the ID used for targeting and generating reports. */
-  var dartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#country". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Name of this country. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Whether ad serving supports secure servers in this country. */
-  var sslEnabled: js.UndefOr[Boolean] = js.native
+  var sslEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object Country {
   

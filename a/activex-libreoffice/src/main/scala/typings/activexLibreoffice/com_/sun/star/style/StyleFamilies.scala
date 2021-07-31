@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **ShapeStyles  **: the container for style sheets for shapes
   */
-@js.native
 trait StyleFamilies
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XIndexAccess
 object StyleFamilies {
   

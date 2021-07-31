@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSummary extends StObject {
   
   /**
     * The ARN of the channel summary.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The time at which the last message in a channel was sent.
     */
-  var LastMessageTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastMessageTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The metadata of the channel summary.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * The summary mode of the channel.
     */
-  var Mode: js.UndefOr[ChannelMode] = js.native
+  var Mode: js.UndefOr[ChannelMode] = js.undefined
   
   /**
     * The parameter of the action.
     */
-  var Name: js.UndefOr[NonEmptyResourceName] = js.native
+  var Name: js.UndefOr[NonEmptyResourceName] = js.undefined
   
   /**
     * The privacy setting of the channel being summarized, PUBLIC or HIDDEN.
     */
-  var Privacy: js.UndefOr[ChannelPrivacy] = js.native
+  var Privacy: js.UndefOr[ChannelPrivacy] = js.undefined
 }
 object ChannelSummary {
   

@@ -7,7 +7,6 @@ import typings.semanticUiReact.labelLabelMod.LabelComponent
 import typings.semanticUiReact.labelLabelMod.LabelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelMod extends Shortcut {

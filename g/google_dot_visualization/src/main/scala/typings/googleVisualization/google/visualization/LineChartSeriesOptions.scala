@@ -4,31 +4,31 @@ import typings.googleVisualization.googleVisualizationStrings.function
 import typings.googleVisualization.googleVisualizationStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineChartSeriesOptions extends ChartSeriesOptionsBase {
+trait LineChartSeriesOptions
+  extends StObject
+     with ChartSeriesOptionsBase {
   
-  var annotations: js.UndefOr[ChartAnnotations] = js.native
+  var annotations: js.UndefOr[ChartAnnotations] = js.undefined
   
-  var curveType: js.UndefOr[none | function] = js.native
+  var curveType: js.UndefOr[none | function] = js.undefined
   
-  var labelInLegend: js.UndefOr[String] = js.native
+  var labelInLegend: js.UndefOr[String] = js.undefined
   
-  var lineDashStyle: js.UndefOr[js.Array[Double]] = js.native
+  var lineDashStyle: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var pointShape: js.UndefOr[ChartPointShape] = js.native
+  var pointShape: js.UndefOr[ChartPointShape] = js.undefined
   
-  var pointSize: js.UndefOr[Double] = js.native
+  var pointSize: js.UndefOr[Double] = js.undefined
   
-  var pointsVisible: js.UndefOr[Boolean] = js.native
+  var pointsVisible: js.UndefOr[Boolean] = js.undefined
   
-  var targetAxisIndex: js.UndefOr[Double] = js.native
+  var targetAxisIndex: js.UndefOr[Double] = js.undefined
   
-  var visibleInLegend: js.UndefOr[Boolean] = js.native
+  var visibleInLegend: js.UndefOr[Boolean] = js.undefined
 }
 object LineChartSeriesOptions {
   

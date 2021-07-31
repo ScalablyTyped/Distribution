@@ -7,29 +7,27 @@ import typings.carlo.carloStrings.close
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("carlo", "enterTestMode")
+  @JSImport("carlo", JSImport.Namespace)
   @js.native
-  def enterTestMode(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("carlo", "fileInfo")
-  @js.native
-  def fileInfo(file: js.Any): js.Promise[Path] = js.native
+  @scala.inline
+  def enterTestMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enterTestMode")().asInstanceOf[Unit]
   
-  @JSImport("carlo", "launch")
-  @js.native
-  def launch(): js.Promise[App] = js.native
-  @JSImport("carlo", "launch")
-  @js.native
-  def launch(options: LaunchOptions): js.Promise[App] = js.native
+  @scala.inline
+  def fileInfo(file: js.Any): js.Promise[Path] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileInfo")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Path]]
   
-  @JSImport("carlo", "loadParams")
-  @js.native
-  def loadParams(): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def launch(): js.Promise[App] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[App]]
+  @scala.inline
+  def launch(options: LaunchOptions): js.Promise[App] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[App]]
+  
+  @scala.inline
+  def loadParams(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadParams")().asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   @js.native
   trait App extends StObject {
@@ -46,13 +44,13 @@ object mod {
       pageFunction: String,
       args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
       ] = js.native
     def evaluate(
-      pageFunction: js.Function1[/* repeated */ js.Any, _],
+      pageFunction: js.Function1[/* repeated */ js.Any, js.Any],
       args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
       ] = js.native
     @JSName("evaluate")
     var evaluate_Original: EvaluateFunction = js.native
@@ -68,7 +66,7 @@ object mod {
       * @param name
       * @param carloFunction
       */
-    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
+    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Unit] = js.native
     
     /**
       * Shortcut to the main window's Window.load
@@ -145,28 +143,27 @@ object mod {
     def window: typings.carlo.carloStrings.window = "window".asInstanceOf[typings.carlo.carloStrings.window]
   }
   
-  @js.native
   trait Bounds extends StObject {
     
     /**
       * Height in pixels.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Left offset in pixels.
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * Top offset in pixels.
       */
-    var top: Double = js.native
+    var top: Double
     
     /**
       * Width in pixels.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object Bounds {
     
@@ -195,54 +192,62 @@ object mod {
   
   type Channel = String
   
-  type EvaluateFunction = js.Function2[
-    /* pageFunction */ (js.Function1[/* repeated */ js.Any, js.Any]) | String, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ /* repeated */ js.Any, 
-    js.Promise[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
-    ]
-  ]
-  
   @js.native
+  trait EvaluateFunction extends StObject {
+    
+    def apply(
+      pageFunction: String,
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+    ): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+      ] = js.native
+    def apply(
+      pageFunction: js.Function1[/* repeated */ js.Any, js.Any],
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+    ): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+      ] = js.native
+  }
+  
   trait HttpRequest extends StObject {
     
     /**
       * Aborts request.
       * If request is a navigation request, navigation is aborted as well.
       */
-    def abort(): js.Promise[Unit] = js.native
+    def abort(): js.Promise[Unit]
     
     /**
       * Proceeds with the default behavior for this request.
       * Either serves it from the filesystem or defers to the browser.
       */
-    def continue(): js.Promise[Unit] = js.native
+    def continue(): js.Promise[Unit]
     
     /**
       * Marks the request as failed.
       * If request is a navigation request, navigation is still committed, but to a location that fails to be fetched.
       */
-    def fail(): js.Promise[Unit] = js.native
+    def fail(): js.Promise[Unit]
     
     /**
       * Fulfills the network request with the given data. 'Content-Length' header is generated in case it is not listed in the headers.
       */
-    def fulfill(options: Body): js.Promise[Unit] = js.native
+    def fulfill(options: Body): js.Promise[Unit]
     
     /**
       * Network request headers
       */
-    def headers(): js.Object = js.native
+    def headers(): js.Object
     
     /**
       * HTTP method of this network request (GET, POST, etc.)
       */
-    def method(): String = js.native
+    def method(): String
     
     /**
       * Network request URL
       */
-    def url(): String = js.native
+    def url(): String
   }
   object HttpRequest {
     
@@ -286,25 +291,26 @@ object mod {
     }
   }
   
-  @js.native
-  trait LaunchOptions extends WindowOptions {
+  trait LaunchOptions
+    extends StObject
+       with WindowOptions {
     
     /**
       * Additional arguments to pass to the browser instance.
       */
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Browser to be used, defaults to ['stable']
       */
-    var channel: js.UndefOr[js.Array[Channel]] = js.native
+    var channel: js.UndefOr[js.Array[Channel]] = js.undefined
     
     /**
       * Path to a Chromium or Chrome executable to run instead of the automatically located Chrome.
       * If executablePath is a relative path, then it is resolved relative to current working directory.
       * Carlo is only guaranteed to work with the latest Chrome stable version.
       */
-    var executablePath: js.UndefOr[String] = js.native
+    var executablePath: js.UndefOr[String] = js.undefined
     
     /**
       * Application icon to be used in the system dock.
@@ -312,22 +318,22 @@ object mod {
       * This feature is only available in Chrome M72+.
       * One can use 'canary' channel to see it in action before M72 hits stable.
       */
-    var icon: js.UndefOr[Buffer | String] = js.native
+    var icon: js.UndefOr[Buffer | String] = js.undefined
     
     /**
       * Optional parameters to share between Carlo instances.
       */
-    var paramsForReuse: js.UndefOr[js.Any] = js.native
+    var paramsForReuse: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Application title
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       *  Path to a User Data Directory. This folder is created upon the first app launch and contains user settings and Web storage data. Defaults to '.profile'.
       */
-    var userDataDir: js.UndefOr[String] = js.native
+    var userDataDir: js.UndefOr[String] = js.undefined
   }
   object LaunchOptions {
     
@@ -412,13 +418,13 @@ object mod {
       pageFunction: String,
       args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
       ] = js.native
     def evaluate(
-      pageFunction: js.Function1[/* repeated */ js.Any, _],
+      pageFunction: js.Function1[/* repeated */ js.Any, js.Any],
       args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
       ] = js.native
     @JSName("evaluate")
     var evaluate_Original: EvaluateFunction = js.native
@@ -427,7 +433,7 @@ object mod {
       * @param name Name of the function on the window object.
       * @param carloFunction Callback function which will be called in Carlo's context.
       */
-    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
+    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Unit] = js.native
     
     /**
       * Turns the window into the full screen mode. Behavior is platform specific.
@@ -503,33 +509,32 @@ object mod {
   
   type WindowEvent = close
   
-  @js.native
   trait WindowOptions extends StObject {
     
     /**
       * Background color using hex notation, defaults to '#ffffff'.
       */
-    var bgcolor: js.UndefOr[String] = js.native
+    var bgcolor: js.UndefOr[String] = js.undefined
     
     /**
       * App window height in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * App window left offset in pixels.
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /**
       * App window top offset in pixels.
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
     /**
       * App window width in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object WindowOptions {
     

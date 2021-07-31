@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableAlertBeforeUnloadOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[EnableAlertBeforeUnloadCompleteCallback] = js.native
+  var complete: js.UndefOr[EnableAlertBeforeUnloadCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[EnableAlertBeforeUnloadFailCallback] = js.native
+  var fail: js.UndefOr[EnableAlertBeforeUnloadFailCallback] = js.undefined
   
   /** 询问对话框内容 */
-  var message: String = js.native
+  var message: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[EnableAlertBeforeUnloadSuccessCallback] = js.native
+  var success: js.UndefOr[EnableAlertBeforeUnloadSuccessCallback] = js.undefined
 }
 object EnableAlertBeforeUnloadOption {
   

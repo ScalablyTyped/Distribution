@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceCompromised extends StObject {
   
   /** The email of the user this alert was created for. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** Required. The list of security events. */
-  var events: js.UndefOr[js.Array[DeviceCompromisedSecurityDetail]] = js.native
+  var events: js.UndefOr[js.Array[DeviceCompromisedSecurityDetail]] = js.undefined
 }
 object DeviceCompromised {
   

@@ -3,21 +3,19 @@ package typings.mathjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parser extends StObject {
   
-  def clear(): scala.Unit = js.native
+  def clear(): scala.Unit
   
-  def evaluate(expr: String): js.Any = js.native
+  def evaluate(expr: String): js.Any
   
-  def get(variable: String): js.Any = js.native
+  def get(variable: String): js.Any
   
-  def getAll(): StringDictionary[js.Any] = js.native
+  def getAll(): StringDictionary[js.Any]
   
-  def set(variable: String, value: js.Any): scala.Unit = js.native
+  def set(variable: String, value: js.Any): scala.Unit
 }
 object Parser {
   

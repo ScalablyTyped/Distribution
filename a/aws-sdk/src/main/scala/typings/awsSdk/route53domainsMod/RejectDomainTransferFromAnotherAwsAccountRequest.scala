@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RejectDomainTransferFromAnotherAwsAccountRequest extends StObject {
   
   /**
     * The name of the domain that was specified when another AWS account submitted a TransferDomainToAnotherAwsAccount request. 
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
 }
 object RejectDomainTransferFromAnotherAwsAccountRequest {
   

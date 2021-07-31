@@ -2,54 +2,52 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAnnotationdata extends StObject {
   
   /**
     * The type of annotation this data is for.
     */
-  var annotationType: js.UndefOr[String] = js.native
+  var annotationType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Base64 encoded data for this annotation data.
     */
-  var encoded_data: js.UndefOr[String] = js.native
+  var encoded_data: js.UndefOr[String] = js.undefined
   
   /**
     * Unique id for this annotation data.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Resource Type
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The Layer id for this data. *
     */
-  var layerId: js.UndefOr[String] = js.native
+  var layerId: js.UndefOr[String] = js.undefined
   
   /**
     * URL for this resource. *
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp for the last time this data was updated. (RFC 3339 UTC
     * date-time format).
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * The volume id for this data. *
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object SchemaAnnotationdata {
   

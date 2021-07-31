@@ -10,9 +10,9 @@ React Native Android module to interface with Zebra's DataWedge using Android In
 | ------------------ | :-------------: |
 | Full name          | react-native-datawedge-intents |
 | Keywords           | react, react-native, react-component, zebra, dataWedge, scanning, industrial-mobility, tc55, tc8000, mc40, tc75, tc70, data-capture |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 10873 |
+| # downloads        | 14512 |
 | # stars            | 0 |
 
 ## Links

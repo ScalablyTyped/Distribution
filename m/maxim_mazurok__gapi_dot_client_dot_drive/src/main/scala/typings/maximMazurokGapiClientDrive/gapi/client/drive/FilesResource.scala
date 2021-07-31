@@ -16,7 +16,6 @@ import typings.maximMazurokGapiClientDrive.anon.SupportsAllDrives
 import typings.maximMazurokGapiClientDrive.anon.SupportsTeamDrives
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,8 +41,8 @@ trait FilesResource extends StObject {
   def emptyTrash(request: AltEnforceSingleParent): Request[Unit] = js.native
   
   /** Exports a Google Doc to the requested MIME type and returns the exported content. Please note that the exported content is limited to 10MB. */
-  def export(): Request[Unit] = js.native
-  def export(request: AltFields): Request[Unit] = js.native
+  def `export`(): Request[Unit] = js.native
+  def `export`(request: AltFields): Request[Unit] = js.native
   
   /** Generates a set of file IDs which can be provided in create or copy requests. */
   def generateIds(): Request[GeneratedIds] = js.native

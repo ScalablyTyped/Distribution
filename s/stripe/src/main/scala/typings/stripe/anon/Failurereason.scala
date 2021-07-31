@@ -9,19 +9,17 @@ import typings.stripe.stripeStrings.succeeded
 import typings.stripe.stripeStrings.user_abort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Failurereason extends StObject {
   
-  var failure_reason: js.UndefOr[user_abort | declined | processing_error] = js.native
+  var failure_reason: js.UndefOr[user_abort | declined | processing_error] = js.undefined
   
-  var return_url: String = js.native
+  var return_url: String
   
-  var status: pending | succeeded | not_required | failed = js.native
+  var status: pending | succeeded | not_required | failed
   
-  var url: String = js.native
+  var url: String
 }
 object Failurereason {
   

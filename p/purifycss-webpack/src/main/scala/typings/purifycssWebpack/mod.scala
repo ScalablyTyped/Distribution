@@ -3,7 +3,6 @@ package typings.purifycssWebpack
 import typings.purifycssWebpack.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,20 +14,19 @@ object mod {
     def this(options: PurifyOptions) = this()
   }
   
-  @js.native
   trait PurifyOptions extends StObject {
     
-    var minimize: js.UndefOr[Boolean] = js.native
+    var minimize: js.UndefOr[Boolean] = js.undefined
     
-    var moduleExtensions: js.UndefOr[js.Array[String]] = js.native
+    var moduleExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var paths: js.UndefOr[js.Object | js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Object | js.Array[String]] = js.undefined
     
-    var purifyOptions: js.UndefOr[Info] = js.native
+    var purifyOptions: js.UndefOr[Info] = js.undefined
     
-    var styleExtensions: js.UndefOr[js.Array[String]] = js.native
+    var styleExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object PurifyOptions {
     

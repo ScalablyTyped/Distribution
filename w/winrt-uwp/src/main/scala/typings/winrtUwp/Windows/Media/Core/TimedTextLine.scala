@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a line of text that is displayed with a TimedTextCue . */
-@js.native
 trait TimedTextLine extends StObject {
   
   /** Gets a list of TimedTextSubformat objects that provide formatting for substrings within the TimedTextLine . */
-  var subformats: IVector[TimedTextSubformat] = js.native
+  var subformats: IVector[TimedTextSubformat]
   
   /** Gets or sets the text content of the TimedTextLine . */
-  var text: String = js.native
+  var text: String
 }
 object TimedTextLine {
   

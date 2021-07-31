@@ -2,19 +2,17 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityBase {
   
-  @js.native
   trait EntityBaseData extends StObject {
     
-    var CreationDate: Double = js.native
+    var CreationDate: Double
     
-    var Id: String = js.native
+    var Id: String
     
-    var Tag: String = js.native
+    var Tag: String
   }
   object EntityBaseData {
     

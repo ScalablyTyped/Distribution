@@ -2,44 +2,42 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the upload status of a row in the request.
   */
-@js.native
 trait SchemaRowStatus extends StObject {
   
   /**
     * Whether the stored entity is changed as a result of upload.
     */
-  var changed: js.UndefOr[Boolean] = js.native
+  var changed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Entity Id.
     */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /**
     * Entity name.
     */
-  var entityName: js.UndefOr[String] = js.native
+  var entityName: js.UndefOr[String] = js.undefined
   
   /**
     * Reasons why the entity can&#39;t be uploaded.
     */
-  var errors: js.UndefOr[js.Array[String]] = js.native
+  var errors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the entity is persisted.
     */
-  var persisted: js.UndefOr[Boolean] = js.native
+  var persisted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Row number.
     */
-  var rowNumber: js.UndefOr[Double] = js.native
+  var rowNumber: js.UndefOr[Double] = js.undefined
 }
 object SchemaRowStatus {
   

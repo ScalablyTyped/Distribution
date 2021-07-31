@@ -10,9 +10,9 @@ Tiny LRU cache for Client or Server
 | ------------------ | :-------------: |
 | Full name          | tiny-lru |
 | Keywords           | LRU, cache, tiny, client, server, least, recently, used |
-| # releases         | 42 |
-| # dependents       | 36 |
-| # downloads        | 6675777 |
+| # releases         | 9 |
+| # dependents       | 45 |
+| # downloads        | 9600542 |
 | # stars            | 0 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortalStatus extends StObject {
   
   /**
     * Contains associated error information, if any.
     */
-  var error: js.UndefOr[MonitorErrorDetails] = js.native
+  var error: js.UndefOr[MonitorErrorDetails] = js.undefined
   
   /**
     * The current state of the portal.
     */
-  var state: PortalState = js.native
+  var state: PortalState
 }
 object PortalStatus {
   

@@ -8,11 +8,9 @@ import typings.vegaLite.srcTypeMod.Type
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/channeldef.ScaleDatumDef<F> & vega-lite.vega-lite/build/src/channeldef.PositionBaseMixins */
-@js.native
 trait PositionDatumDefBase[F /* <: Field */] extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait PositionDatumDefBase[F /* <: Field */] extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A constant value in data domain.
     */
-  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.native
+  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.undefined
   
   /**
     * An object defining properties of the channel's scale, which is the function that transforms values in the data domain (numbers, dates, strings, etc) to visual values (pixels, colors, sizes) of the encoding channels.
@@ -39,7 +37,7 @@ trait PositionDatumDefBase[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`scale`](https://vega.github.io/vega-lite/docs/scale.html) documentation.
     */
-  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.native
+  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.undefined
   
   /**
     * Type of stacking offset if the field should be stacked.
@@ -59,9 +57,9 @@ trait PositionDatumDefBase[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`stack`](https://vega.github.io/vega-lite/docs/stack.html) documentation.
     */
-  var stack: js.UndefOr[StackOffset | Null | Boolean] = js.native
+  var stack: js.UndefOr[StackOffset | Null | Boolean] = js.undefined
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object PositionDatumDefBase {
   
@@ -72,7 +70,7 @@ object PositionDatumDefBase {
   }
   
   @scala.inline
-  implicit class PositionDatumDefBaseMutableBuilder[Self <: PositionDatumDefBase[_], F /* <: Field */] (val x: Self with PositionDatumDefBase[F]) extends AnyVal {
+  implicit class PositionDatumDefBaseMutableBuilder[Self <: PositionDatumDefBase[?], F /* <: Field */] (val x: Self & PositionDatumDefBase[F]) extends AnyVal {
     
     @scala.inline
     def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])

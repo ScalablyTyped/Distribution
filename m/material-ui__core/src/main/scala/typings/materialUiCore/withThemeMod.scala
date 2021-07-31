@@ -6,22 +6,23 @@ import typings.react.mod.Ref
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withThemeMod {
   
-  @JSImport("@material-ui/core/styles/withTheme", JSImport.Default)
+  @JSImport("@material-ui/core/styles/withTheme", JSImport.Namespace)
   @js.native
-  def default(): PropInjector[WithTheme, ThemedComponentProps] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): PropInjector[WithTheme, ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithTheme, ThemedComponentProps]]
   
   /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/withTheme.WithTheme> */
-  @js.native
   trait ThemedComponentProps extends StObject {
     
-    var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object ThemedComponentProps {
     
@@ -35,10 +36,10 @@ object withThemeMod {
     implicit class ThemedComponentPropsMutableBuilder[Self <: ThemedComponentProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
@@ -54,10 +55,9 @@ object withThemeMod {
     }
   }
   
-  @js.native
   trait WithTheme extends StObject {
     
-    var theme: Theme = js.native
+    var theme: Theme
   }
   object WithTheme {
     

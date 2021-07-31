@@ -3,18 +3,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.protobuf.IFieldMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UpdateSessionEntityTypeRequest. */
-@js.native
 trait IUpdateSessionEntityTypeRequest extends StObject {
   
   /** UpdateSessionEntityTypeRequest sessionEntityType */
-  var sessionEntityType: js.UndefOr[ISessionEntityType | Null] = js.native
+  var sessionEntityType: js.UndefOr[ISessionEntityType | Null] = js.undefined
   
   /** UpdateSessionEntityTypeRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
 }
 object IUpdateSessionEntityTypeRequest {
   

@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EdgeSearchEngine extends EdgeSearchEngineBase {
+trait EdgeSearchEngine
+  extends StObject
+     with EdgeSearchEngineBase {
   
   /**
     * Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: default,
     * bing.
     */
-  var edgeSearchEngineType: js.UndefOr[EdgeSearchEngineType] = js.native
+  var edgeSearchEngineType: js.UndefOr[EdgeSearchEngineType] = js.undefined
 }
 object EdgeSearchEngine {
   

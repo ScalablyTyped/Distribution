@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,18 +26,17 @@ object browserAction {
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  @js.native
   trait Details extends StObject {
     
     /**
       * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the window one will be inherited.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * When setting a value, it will be specific to the specified window. When getting, specifies the window to get the value from; if there is no window-specific value, the global one will be inherited.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object Details {
     
@@ -69,14 +67,13 @@ object browserAction {
   type ImageDataType = ImageData
   
   /** Information sent when a browser action is clicked. */
-  @js.native
   trait OnClickData extends StObject {
     
     /** An integer value of button by which menu item was clicked. */
-    var button: js.UndefOr[Double] = js.native
+    var button: js.UndefOr[Double] = js.undefined
     
     /** An array of keyboard modifiers that were held while the menu item was clicked. */
-    var modifiers: js.Array[OnClickDataModifiers] = js.native
+    var modifiers: js.Array[OnClickDataModifiers]
   }
   object OnClickData {
     
@@ -132,26 +129,25 @@ object browserAction {
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  @js.native
   trait SetBadgeBackgroundColorDetails extends StObject {
     
-    var color: ColorValue = js.native
+    var color: ColorValue
     
     /**
       * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the window one will be inherited.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * When setting a value, it will be specific to the specified window. When getting, specifies the window to get the value from; if there is no window-specific value, the global one will be inherited.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetBadgeBackgroundColorDetails {
     
     @scala.inline
     def apply(): SetBadgeBackgroundColorDetails = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(color = null)
       __obj.asInstanceOf[SetBadgeBackgroundColorDetails]
     }
     
@@ -181,26 +177,25 @@ object browserAction {
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  @js.native
   trait SetBadgeTextColorDetails extends StObject {
     
-    var color: ColorValue = js.native
+    var color: ColorValue
     
     /**
       * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the window one will be inherited.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * When setting a value, it will be specific to the specified window. When getting, specifies the window to get the value from; if there is no window-specific value, the global one will be inherited.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetBadgeTextColorDetails {
     
     @scala.inline
     def apply(): SetBadgeTextColorDetails = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(color = null)
       __obj.asInstanceOf[SetBadgeTextColorDetails]
     }
     
@@ -230,27 +225,26 @@ object browserAction {
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  @js.native
   trait SetBadgeTextDetails extends StObject {
     
     /**
       * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the window one will be inherited.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** Any number of characters can be passed, but only about four can fit in the space. */
-    var text: String | Null = js.native
+    var text: String | Null
     
     /**
       * When setting a value, it will be specific to the specified window. When getting, specifies the window to get the value from; if there is no window-specific value, the global one will be inherited.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetBadgeTextDetails {
     
     @scala.inline
     def apply(): SetBadgeTextDetails = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(text = null)
       __obj.asInstanceOf[SetBadgeTextDetails]
     }
     
@@ -280,28 +274,27 @@ object browserAction {
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  @js.native
   trait SetIconDetails extends StObject {
     
     /**
       * Either an ImageData object or a dictionary {size -> ImageData} representing icon to be set. If the icon is specified as a dictionary, the actual image to be used is chosen depending on screen's pixel density. If the number of image pixels that fit into one screen space unit equals `scale`, then image with size `scale` * 19 will be selected. Initially only scales 1 and 2 will be supported. At least one image must be specified. Note that 'details.imageData = foo' is equivalent to 'details.imageData = {'19': foo}'
       */
-    var imageData: js.UndefOr[ImageDataType | NumberDictionary[ImageDataType]] = js.native
+    var imageData: js.UndefOr[ImageDataType | NumberDictionary[ImageDataType]] = js.undefined
     
     /**
       * Either a relative image path or a dictionary {size -> relative image path} pointing to icon to be set. If the icon is specified as a dictionary, the actual image to be used is chosen depending on screen's pixel density. If the number of image pixels that fit into one screen space unit equals `scale`, then image with size `scale` * 19 will be selected. Initially only scales 1 and 2 will be supported. At least one image must be specified. Note that 'details.path = foo' is equivalent to 'details.imageData = {'19': foo}'
       */
-    var path: js.UndefOr[String | NumberDictionary[String]] = js.native
+    var path: js.UndefOr[String | NumberDictionary[String]] = js.undefined
     
     /**
       * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the window one will be inherited.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * When setting a value, it will be specific to the specified window. When getting, specifies the window to get the value from; if there is no window-specific value, the global one will be inherited.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetIconDetails {
     
@@ -343,27 +336,26 @@ object browserAction {
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  @js.native
   trait SetPopupDetails extends StObject {
     
     /** The html file to show in a popup. If set to the empty string (''), no popup is shown. */
-    var popup: String | Null = js.native
+    var popup: String | Null
     
     /**
       * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the window one will be inherited.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /**
       * When setting a value, it will be specific to the specified window. When getting, specifies the window to get the value from; if there is no window-specific value, the global one will be inherited.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetPopupDetails {
     
     @scala.inline
     def apply(): SetPopupDetails = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(popup = null)
       __obj.asInstanceOf[SetPopupDetails]
     }
     
@@ -393,27 +385,26 @@ object browserAction {
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  @js.native
   trait SetTitleDetails extends StObject {
     
     /**
       * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the window one will be inherited.
       */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** The string the browser action should display when moused over. */
-    var title: String | Null = js.native
+    var title: String | Null
     
     /**
       * When setting a value, it will be specific to the specified window. When getting, specifies the window to get the value from; if there is no window-specific value, the global one will be inherited.
       */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object SetTitleDetails {
     
     @scala.inline
     def apply(): SetTitleDetails = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(title = null)
       __obj.asInstanceOf[SetTitleDetails]
     }
     

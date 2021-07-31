@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileIODetails extends StObject {
   
   /** File Pattern used to access files by the connector. */
-  var filePattern: js.UndefOr[String] = js.native
+  var filePattern: js.UndefOr[String] = js.undefined
 }
 object FileIODetails {
   

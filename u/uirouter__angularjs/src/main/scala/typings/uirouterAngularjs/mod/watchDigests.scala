@@ -3,14 +3,13 @@ package typings.uirouterAngularjs.mod
 import typings.angular.mod.IRootScopeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object watchDigests {
   
-  @JSImport("@uirouter/angularjs", "watchDigests")
-  @js.native
-  def apply($rootScope: IRootScopeService): Unit = js.native
+  @scala.inline
+  def apply($rootScope: IRootScopeService): Unit = ^.asInstanceOf[js.Dynamic].apply($rootScope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("@uirouter/angularjs", "watchDigests")
   @js.native
   val ^ : js.Any = js.native

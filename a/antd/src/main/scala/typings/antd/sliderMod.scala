@@ -15,7 +15,6 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod extends Shortcut {
@@ -23,19 +22,18 @@ object sliderMod extends Shortcut {
   @JSImport("antd/lib/slider", JSImport.Default)
   @js.native
   val default: ForwardRefExoticComponent[
-    (SliderSingleProps with RefAttributes[_]) | (SliderRangeProps with RefAttributes[_])
+    (SliderSingleProps & RefAttributes[js.Any]) | (SliderRangeProps & RefAttributes[js.Any])
   ] = js.native
   
   type HandleGeneratorFn = js.Function1[/* config */ PrefixCls, ReactElement]
   
-  @js.native
   trait HandleGeneratorInfo extends StObject {
     
-    var dragging: js.UndefOr[Boolean] = js.native
+    var dragging: js.UndefOr[Boolean] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object HandleGeneratorInfo {
     
@@ -65,46 +63,45 @@ object sliderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait SliderBaseProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dots: js.UndefOr[Boolean] = js.native
+    var dots: js.UndefOr[Boolean] = js.undefined
     
-    var getTooltipPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
+    var getTooltipPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var included: js.UndefOr[Boolean] = js.native
+    var included: js.UndefOr[Boolean] = js.undefined
     
-    var marks: js.UndefOr[SliderMarks] = js.native
+    var marks: js.UndefOr[SliderMarks] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Null | Double] = js.native
+    var step: js.UndefOr[Null | Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tipFormatter: js.UndefOr[Null | (js.Function1[/* value */ js.UndefOr[Double], ReactNode])] = js.native
+    var tipFormatter: js.UndefOr[Null | (js.Function1[/* value */ js.UndefOr[Double], ReactNode])] = js.undefined
     
-    var tooltipPlacement: js.UndefOr[TooltipPlacement] = js.native
+    var tooltipPlacement: js.UndefOr[TooltipPlacement] = js.undefined
     
-    var tooltipPrefixCls: js.UndefOr[String] = js.native
+    var tooltipPrefixCls: js.UndefOr[String] = js.undefined
     
-    var tooltipVisible: js.UndefOr[Boolean] = js.native
+    var tooltipVisible: js.UndefOr[Boolean] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object SliderBaseProps {
     
@@ -241,28 +238,29 @@ object sliderMod extends Shortcut {
   
   type SliderMarks = NumberDictionary[ReactNode | Label]
   
-  @js.native
-  trait SliderRangeProps extends SliderBaseProps {
+  trait SliderRangeProps
+    extends StObject
+       with SliderBaseProps {
     
-    var defaultValue: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var defaultValue: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var handleStyle: js.UndefOr[js.Array[CSSProperties]] = js.native
+    var handleStyle: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
-    var onAfterChange: js.UndefOr[js.Function1[/* value */ js.Tuple2[Double, Double], Unit]] = js.native
+    var onAfterChange: js.UndefOr[js.Function1[/* value */ js.Tuple2[Double, Double], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Tuple2[Double, Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Tuple2[Double, Double], Unit]] = js.undefined
     
-    var range: `true` = js.native
+    var range: `true`
     
-    var trackStyle: js.UndefOr[js.Array[CSSProperties]] = js.native
+    var trackStyle: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
-    var value: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var value: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object SliderRangeProps {
     
     @scala.inline
-    def apply(range: `true`): SliderRangeProps = {
-      val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
+    def apply(): SliderRangeProps = {
+      val __obj = js.Dynamic.literal(range = true)
       __obj.asInstanceOf[SliderRangeProps]
     }
     
@@ -316,22 +314,23 @@ object sliderMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SliderSingleProps extends SliderBaseProps {
+  trait SliderSingleProps
+    extends StObject
+       with SliderBaseProps {
     
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
-    var handleStyle: js.UndefOr[CSSProperties] = js.native
+    var handleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onAfterChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onAfterChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var range: js.UndefOr[`false`] = js.native
+    var range: js.UndefOr[`false`] = js.undefined
     
-    var trackStyle: js.UndefOr[CSSProperties] = js.native
+    var trackStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object SliderSingleProps {
     
@@ -391,11 +390,11 @@ object sliderMod extends Shortcut {
   type Visibles = NumberDictionary[Boolean]
   
   type _To = ForwardRefExoticComponent[
-    (SliderSingleProps with RefAttributes[_]) | (SliderRangeProps with RefAttributes[_])
+    (SliderSingleProps & RefAttributes[js.Any]) | (SliderRangeProps & RefAttributes[js.Any])
   ]
   
   /* This means you don't have to write `default`, but can instead just say `sliderMod.foo` */
   override def _to: ForwardRefExoticComponent[
-    (SliderSingleProps with RefAttributes[_]) | (SliderRangeProps with RefAttributes[_])
+    (SliderSingleProps & RefAttributes[js.Any]) | (SliderRangeProps & RefAttributes[js.Any])
   ] = default
 }

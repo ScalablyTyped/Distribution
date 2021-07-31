@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.table.XCellRange
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DatabaseRange
   * @see com.sun.star.sheet.SpreadsheetViewPane
   */
-@js.native
-trait XCellRangeReferrer extends XInterface {
+trait XCellRangeReferrer
+  extends StObject
+     with XInterface {
   
   /** returns the cell range object that is represented. */
-  val ReferredCells: XCellRange = js.native
+  val ReferredCells: XCellRange
   
   /** returns the cell range object that is represented. */
-  def getReferredCells(): XCellRange = js.native
+  def getReferredCells(): XCellRange
 }
 object XCellRangeReferrer {
   

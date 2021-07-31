@@ -4,19 +4,29 @@ import typings.tsmonad.monadMod.Eq
 import typings.tsmonad.monadMod.Monad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writerMod {
   
+  @JSImport("tsmonad/lib/src/writer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("tsmonad/lib/src/writer", "Writer")
   @js.native
   class Writer_[S, T] protected ()
-    extends Monad[T]
+    extends StObject
+       with Monad[T]
        with Eq[Writer_[S, T]] {
     def this(story: js.Array[S], value: T) = this()
     
+    /* CompleteClass */
+    override def bind[U](f: js.Function1[T, Monad[U]]): Monad[U] = js.native
+    
     def caseOf[U](patterns: WriterPatterns[S, T, U]): U = js.native
+    
+    /* CompleteClass */
+    override def chain[U](f: js.Function1[T, Monad[U]]): Monad[U] = js.native
     
     def fmap[U](f: js.Function1[/* t */ T, U]): Writer_[S, U] = js.native
     
@@ -24,30 +34,36 @@ object writerMod {
     
     def map[U](f: js.Function1[/* t */ T, U]): Writer_[S, U] = js.native
     
+    /* CompleteClass */
+    override def of[U](t: U): Monad[U] = js.native
+    
     var story: js.Any = js.native
+    
+    /* CompleteClass */
+    override def unit[U](t: U): Monad[U] = js.native
     
     var value: js.Any = js.native
   }
   /* static members */
   object Writer_ {
     
-    @JSImport("tsmonad/lib/src/writer", "Writer.tell")
+    @JSImport("tsmonad/lib/src/writer", "Writer")
     @js.native
-    def tell[S](s: S): Writer_[S, Double] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tsmonad/lib/src/writer", "Writer.writer")
-    @js.native
-    def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = js.native
+    @scala.inline
+    def tell[S](s: S): Writer_[S, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("tell")(s.asInstanceOf[js.Any]).asInstanceOf[Writer_[S, Double]]
+    
+    @scala.inline
+    def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Writer_[S, T]]
   }
   
-  @JSImport("tsmonad/lib/src/writer", "writer")
-  @js.native
-  def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = js.native
+  @scala.inline
+  def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Writer_[S, T]]
   
-  @js.native
   trait WriterPatterns[S, T, U] extends StObject {
     
-    def writer(story: js.Array[S], value: T): U = js.native
+    def writer(story: js.Array[S], value: T): U
   }
   object WriterPatterns {
     
@@ -58,7 +74,7 @@ object writerMod {
     }
     
     @scala.inline
-    implicit class WriterPatternsMutableBuilder[Self <: WriterPatterns[_, _, _], S, T, U] (val x: Self with (WriterPatterns[S, T, U])) extends AnyVal {
+    implicit class WriterPatternsMutableBuilder[Self <: WriterPatterns[?, ?, ?], S, T, U] (val x: Self & (WriterPatterns[S, T, U])) extends AnyVal {
       
       @scala.inline
       def setWriter(value: (js.Array[S], T) => U): Self = StObject.set(x, "writer", js.Any.fromFunction2(value))

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsCreateFromManifestResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsCreateFromManifestEndpoint extends StObject {
   
-  var parameters: AppsCreateFromManifestEndpoint = js.native
+  var parameters: AppsCreateFromManifestEndpoint
   
-  var request: AppsCreateFromManifestRequestOptions = js.native
+  var request: AppsCreateFromManifestRequestOptions
   
-  var response: OctokitResponse[AppsCreateFromManifestResponseData] = js.native
+  var response: OctokitResponse[AppsCreateFromManifestResponseData]
 }
 object ParametersAppsCreateFromManifestEndpoint {
   

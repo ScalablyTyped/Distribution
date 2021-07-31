@@ -4,15 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.Renderer2
+import typings.angularCore.mod.SimpleChanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterLink")
 @js.native
-class RouterLink protected () extends OnChanges {
-  def this(router: Router, route: ActivatedRoute, tabIndex: String, renderer: Renderer2, el: ElementRef[_]) = this()
+class RouterLink protected ()
+  extends StObject
+     with OnChanges {
+  def this(
+    router: Router,
+    route: ActivatedRoute,
+    tabIndex: String,
+    renderer: Renderer2,
+    el: ElementRef[js.Any]
+  ) = this()
   
   var commands: js.Any = js.native
   
@@ -23,6 +31,16 @@ class RouterLink protected () extends OnChanges {
     * @see {@link Router#createUrlTree Router#createUrlTree}
     */
   var fragment: js.UndefOr[String] = js.native
+  
+  /**
+    * A callback method that is invoked immediately after the
+    * default change detector has checked data-bound properties
+    * if at least one has changed, and before the view and content
+    * children are checked.
+    * @param changes The changed properties.
+    */
+  /* CompleteClass */
+  override def ngOnChanges(changes: SimpleChanges): Unit = js.native
   
   /** @nodoc */
   def onClick(): Boolean = js.native
@@ -72,7 +90,7 @@ class RouterLink protected () extends OnChanges {
     *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
     * @see {@link Router#createUrlTree Router#createUrlTree}
     */
-  def routerLink_=(commands: js.UndefOr[js.Array[_] | String | Null]): Unit = js.native
+  def routerLink_=(commands: js.UndefOr[js.Array[js.Any] | String | Null]): Unit = js.native
   
   /**
     * Passed to {@link Router#navigateByUrl Router#navigateByUrl} as part of the

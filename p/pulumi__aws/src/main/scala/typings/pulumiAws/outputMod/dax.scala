@@ -2,24 +2,22 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dax {
   
-  @js.native
   trait ClusterNode extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var availabilityZone: String = js.native
+    var availabilityZone: String
     
-    var id: String = js.native
+    var id: String
     
     /**
       * The port used by the configuration endpoint
       */
-    var port: Double = js.native
+    var port: Double
   }
   object ClusterNode {
     
@@ -46,13 +44,12 @@ object dax {
     }
   }
   
-  @js.native
   trait ClusterServerSideEncryption extends StObject {
     
     /**
       * Whether to enable encryption at rest. Defaults to `false`.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
   }
   object ClusterServerSideEncryption {
     
@@ -73,18 +70,17 @@ object dax {
     }
   }
   
-  @js.native
   trait ParameterGroupParameter extends StObject {
     
     /**
       * The name of the parameter.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The value for the parameter.
       */
-    var value: String = js.native
+    var value: String
   }
   object ParameterGroupParameter {
     

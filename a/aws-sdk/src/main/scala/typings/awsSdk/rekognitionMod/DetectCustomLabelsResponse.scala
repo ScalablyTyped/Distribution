@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectCustomLabelsResponse extends StObject {
   
   /**
     * An array of custom labels detected in the input image.
     */
-  var CustomLabels: js.UndefOr[typings.awsSdk.rekognitionMod.CustomLabels] = js.native
+  var CustomLabels: js.UndefOr[typings.awsSdk.rekognitionMod.CustomLabels] = js.undefined
 }
 object DetectCustomLabelsResponse {
   

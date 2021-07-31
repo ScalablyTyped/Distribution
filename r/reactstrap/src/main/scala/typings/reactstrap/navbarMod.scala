@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navbarMod {
@@ -20,26 +19,26 @@ object navbarMod {
   
   type Navbar = Component[NavbarProps, js.Object, js.Any]
   
-  @js.native
   trait NavbarProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var dark: js.UndefOr[Boolean] = js.native
+    var dark: js.UndefOr[Boolean] = js.undefined
     
-    var expand: js.UndefOr[Boolean | String] = js.native
+    var expand: js.UndefOr[Boolean | String] = js.undefined
     
-    var fixed: js.UndefOr[String] = js.native
+    var fixed: js.UndefOr[String] = js.undefined
     
-    var full: js.UndefOr[Boolean] = js.native
+    var full: js.UndefOr[Boolean] = js.undefined
     
-    var light: js.UndefOr[Boolean] = js.native
+    var light: js.UndefOr[Boolean] = js.undefined
     
-    var sticky: js.UndefOr[String] = js.native
+    var sticky: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object NavbarProps {
     
@@ -95,7 +94,7 @@ object navbarMod {
       def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

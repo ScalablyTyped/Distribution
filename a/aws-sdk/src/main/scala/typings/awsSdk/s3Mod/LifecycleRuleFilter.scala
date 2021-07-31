@@ -2,23 +2,21 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleRuleFilter extends StObject {
   
-  var And: js.UndefOr[LifecycleRuleAndOperator] = js.native
+  var And: js.UndefOr[LifecycleRuleAndOperator] = js.undefined
   
   /**
     * Prefix identifying one or more objects to which the rule applies.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * This tag must exist in the object's tag set in order for the rule to apply.
     */
-  var Tag: js.UndefOr[typings.awsSdk.s3Mod.Tag] = js.native
+  var Tag: js.UndefOr[typings.awsSdk.s3Mod.Tag] = js.undefined
 }
 object LifecycleRuleFilter {
   

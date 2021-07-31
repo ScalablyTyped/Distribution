@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedAndroidLobApp extends ManagedMobileLobApp {
+trait ManagedAndroidLobApp
+  extends StObject
+     with ManagedMobileLobApp {
   
   // The value for the minimum applicable operating system.
-  var minimumSupportedOperatingSystem: js.UndefOr[NullableOption[AndroidMinimumOperatingSystem]] = js.native
+  var minimumSupportedOperatingSystem: js.UndefOr[NullableOption[AndroidMinimumOperatingSystem]] = js.undefined
   
   // The package identifier.
-  var packageId: js.UndefOr[NullableOption[String]] = js.native
+  var packageId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The version code of managed Android Line of Business (LoB) app.
-  var versionCode: js.UndefOr[NullableOption[String]] = js.native
+  var versionCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The version name of managed Android Line of Business (LoB) app.
-  var versionName: js.UndefOr[NullableOption[String]] = js.native
+  var versionName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedAndroidLobApp {
   

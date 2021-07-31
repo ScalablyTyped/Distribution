@@ -2,46 +2,44 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppNameHidden extends StObject {
   
   /**
     * 游戏名称是否隐藏
     */
-  var appNameHidden: Boolean = js.native
+  var appNameHidden: Boolean
   
   /**
     * 游戏icon的border颜色色值
     */
-  var borderColor: String = js.native
+  var borderColor: String
   
   /**
     * 游戏icon的border尺寸
     */
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
   /**
     * 游戏名称的颜色色值
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * 游戏icon的X轴坐标
     */
-  var left: Double = js.native
+  var left: Double
   
   /**
     * 游戏icon的宽高值
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * 游戏icon的Y轴坐标
     */
-  var top: Double = js.native
+  var top: Double
 }
 object AppNameHidden {
   

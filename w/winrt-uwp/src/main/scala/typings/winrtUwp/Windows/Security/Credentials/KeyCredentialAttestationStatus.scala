@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object KeyCredentialAttestationStatus extends StObject {
   
   /** The operation was not supported. */
   @js.native
-  sealed trait notSupported extends KeyCredentialAttestationStatus
+  sealed trait notSupported
+    extends StObject
+       with KeyCredentialAttestationStatus
   
   /** The operation was successful. */
   @js.native
-  sealed trait success extends KeyCredentialAttestationStatus
+  sealed trait success
+    extends StObject
+       with KeyCredentialAttestationStatus
   
   /** The operation temporarily failed. */
   @js.native
-  sealed trait temporaryFailure extends KeyCredentialAttestationStatus
+  sealed trait temporaryFailure
+    extends StObject
+       with KeyCredentialAttestationStatus
   
   /** The operation encountered an unknown error. */
   @js.native
-  sealed trait unknownError extends KeyCredentialAttestationStatus
+  sealed trait unknownError
+    extends StObject
+       with KeyCredentialAttestationStatus
 }

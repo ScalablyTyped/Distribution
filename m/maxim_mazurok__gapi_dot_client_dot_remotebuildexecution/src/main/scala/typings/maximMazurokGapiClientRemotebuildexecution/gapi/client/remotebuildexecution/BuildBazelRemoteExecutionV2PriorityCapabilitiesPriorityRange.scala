@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange extends StObject {
   
-  var maxPriority: js.UndefOr[Double] = js.native
+  var maxPriority: js.UndefOr[Double] = js.undefined
   
-  var minPriority: js.UndefOr[Double] = js.native
+  var minPriority: js.UndefOr[Double] = js.undefined
 }
 object BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange {
   

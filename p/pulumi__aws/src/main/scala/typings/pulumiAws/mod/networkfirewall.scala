@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkfirewall {
@@ -35,6 +34,10 @@ object networkfirewall {
   /* static members */
   object Firewall {
     
+    @JSImport("@pulumi/aws", "networkfirewall.Firewall")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Firewall resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,26 +47,21 @@ object networkfirewall {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.firewallMod.Firewall = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.firewallMod.Firewall = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallState): typings.pulumiAws.firewallMod.Firewall = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.Firewall.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallState, opts: CustomResourceOptions): typings.pulumiAws.firewallMod.Firewall = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.firewallMod.Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallMod.Firewall]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.firewallMod.Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallMod.Firewall]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallState): typings.pulumiAws.firewallMod.Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallMod.Firewall]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallState, opts: CustomResourceOptions): typings.pulumiAws.firewallMod.Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallMod.Firewall]
     
     /**
       * Returns true if the given object is an instance of Firewall.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.Firewall.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "networkfirewall.FirewallPolicy")
@@ -83,6 +81,10 @@ object networkfirewall {
   /* static members */
   object FirewallPolicy {
     
+    @JSImport("@pulumi/aws", "networkfirewall.FirewallPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FirewallPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,26 +94,21 @@ object networkfirewall {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallPolicyState): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.FirewallPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirewallPolicyState, opts: CustomResourceOptions): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallPolicyMod.FirewallPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallPolicyMod.FirewallPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallPolicyState): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallPolicyMod.FirewallPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirewallPolicyState, opts: CustomResourceOptions): typings.pulumiAws.firewallPolicyMod.FirewallPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.firewallPolicyMod.FirewallPolicy]
     
     /**
       * Returns true if the given object is an instance of FirewallPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.FirewallPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewallPolicy.FirewallPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewallPolicy.FirewallPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/firewallPolicy.FirewallPolicy */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "networkfirewall.LoggingConfiguration")
@@ -131,6 +128,10 @@ object networkfirewall {
   /* static members */
   object LoggingConfiguration {
     
+    @JSImport("@pulumi/aws", "networkfirewall.LoggingConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LoggingConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -140,26 +141,21 @@ object networkfirewall {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoggingConfigurationState): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.LoggingConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoggingConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoggingConfigurationState): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoggingConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.loggingConfigurationMod.LoggingConfiguration]
     
     /**
       * Returns true if the given object is an instance of LoggingConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.LoggingConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/loggingConfiguration.LoggingConfiguration */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "networkfirewall.RuleGroup")
@@ -179,6 +175,10 @@ object networkfirewall {
   /* static members */
   object RuleGroup {
     
+    @JSImport("@pulumi/aws", "networkfirewall.RuleGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RuleGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -188,25 +188,20 @@ object networkfirewall {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ruleGroupMod.RuleGroup = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ruleGroupMod.RuleGroup = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState): typings.pulumiAws.ruleGroupMod.RuleGroup = js.native
-    @JSImport("@pulumi/aws", "networkfirewall.RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): typings.pulumiAws.ruleGroupMod.RuleGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ruleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ruleGroupMod.RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ruleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ruleGroupMod.RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState): typings.pulumiAws.ruleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ruleGroupMod.RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): typings.pulumiAws.ruleGroupMod.RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ruleGroupMod.RuleGroup]
     
     /**
       * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "networkfirewall.RuleGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/ruleGroup.RuleGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/ruleGroup.RuleGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/ruleGroup.RuleGroup */ Boolean]
   }
 }

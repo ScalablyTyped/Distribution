@@ -2,21 +2,19 @@ package typings.winrt.Windows.Media.Protection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRevocationAndRenewalItem extends StObject {
   
-  var headerHash: String = js.native
+  var headerHash: String
   
-  var name: String = js.native
+  var name: String
   
-  var publicKeyHash: String = js.native
+  var publicKeyHash: String
   
-  var reasons: RevocationAndRenewalReasons = js.native
+  var reasons: RevocationAndRenewalReasons
   
-  var renewalId: String = js.native
+  var renewalId: String
 }
 object IRevocationAndRenewalItem {
   

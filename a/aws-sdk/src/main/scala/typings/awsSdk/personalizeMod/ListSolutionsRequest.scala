@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSolutionsRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
     */
-  var datasetGroupArn: js.UndefOr[Arn] = js.native
+  var datasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The maximum number of solutions to return.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * A token returned from the previous call to ListSolutions for getting the next set of solutions (if they exist).
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListSolutionsRequest {
   

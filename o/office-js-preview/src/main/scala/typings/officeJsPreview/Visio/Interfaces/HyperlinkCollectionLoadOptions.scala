@@ -2,7 +2,6 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set:  1.1]
   */
-@js.native
 trait HyperlinkCollectionLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait HyperlinkCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var address: js.UndefOr[Boolean] = js.native
+  var address: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait HyperlinkCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var description: js.UndefOr[Boolean] = js.native
+  var description: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait HyperlinkCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var extraInfo: js.UndefOr[Boolean] = js.native
+  var extraInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait HyperlinkCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var subAddress: js.UndefOr[Boolean] = js.native
+  var subAddress: js.UndefOr[Boolean] = js.undefined
 }
 object HyperlinkCollectionLoadOptions {
   

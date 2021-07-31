@@ -3,7 +3,6 @@ package typings.fabric.fabricImplMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,11 +15,11 @@ trait IObservable[T] extends StObject {
     * @param handler Function to be deleted from EventListeners
     */
   def off(): T = js.native
-  def off(eventName: js.UndefOr[scala.Nothing], handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
   def off(eventName: String): T = js.native
   def off(eventName: String, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
   def off(eventName: js.Any): T = js.native
   def off(eventName: js.Any, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
+  def off(eventName: Unit, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
   
   /**
     * Observes specified event

@@ -2,23 +2,35 @@ package typings.xstream
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ease extends StObject {
     
-    def ease(x: Double, from: Double, to: Double): Double = js.native
+    def ease(x: Double, from: Double, to: Double): Double
     @JSName("ease")
-    var ease_Original: typings.xstream.tweenMod.Ease = js.native
+    var ease_Original: typings.xstream.tweenMod.Ease
+  }
+  object Ease {
+    
+    @scala.inline
+    def apply(ease: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Ease = {
+      val __obj = js.Dynamic.literal(ease = js.Any.fromFunction3(ease))
+      __obj.asInstanceOf[Ease]
+    }
+    
+    @scala.inline
+    implicit class EaseMutableBuilder[Self <: Ease] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setEase(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "ease", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait Subscribe extends StObject {
     
-    var subscribe: js.Any = js.native
+    var subscribe: js.Any
   }
   object Subscribe {
     

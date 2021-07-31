@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandInfoChangeListener
   * @version 1.0
   */
-@js.native
-trait XCommandInfoChangeNotifier extends XInterface {
+trait XCommandInfoChangeNotifier
+  extends StObject
+     with XInterface {
   
   /**
     * registers a listener for CommandInfoChangeEvents.
     * @param Listener the listener to add.
     */
-  def addCommandInfoChangeListener(Listener: XCommandInfoChangeListener): Unit = js.native
+  def addCommandInfoChangeListener(Listener: XCommandInfoChangeListener): Unit
   
   /**
     * removes a listener for CommandInfoChangeEvents.
     * @param Listener the listener to remove.
     */
-  def removeCommandInfoChangeListener(Listener: XCommandInfoChangeListener): Unit = js.native
+  def removeCommandInfoChangeListener(Listener: XCommandInfoChangeListener): Unit
 }
 object XCommandInfoChangeNotifier {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledAction extends StObject {
   
   /**
     * The end time in UTC when the schedule is no longer active. After this time, the scheduled action does not trigger. 
     */
-  var EndTime: js.UndefOr[TStamp] = js.native
+  var EndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The IAM role to assume to run the scheduled action. This IAM role must have permission to run the Amazon Redshift API operation in the scheduled action. This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.amazonaws.com) to assume permissions on your behalf. For more information about the IAM role to use with the Amazon Redshift scheduler, see Using Identity-Based Policies for Amazon Redshift in the Amazon Redshift Cluster Management Guide. 
     */
-  var IamRole: js.UndefOr[String] = js.native
+  var IamRole: js.UndefOr[String] = js.undefined
   
   /**
     * List of times when the scheduled action will run. 
     */
-  var NextInvocations: js.UndefOr[ScheduledActionTimeList] = js.native
+  var NextInvocations: js.UndefOr[ScheduledActionTimeList] = js.undefined
   
   /**
     * The schedule for a one-time (at format) or recurring (cron format) scheduled action. Schedule invocations must be separated by at least one hour. Format of at expressions is "at(yyyy-mm-ddThh:mm:ss)". For example, "at(2016-03-04T17:27:00)". Format of cron expressions is "cron(Minutes Hours Day-of-month Month Day-of-week Year)". For example, "cron(0 10 ? * MON *)". For more information, see Cron Expressions in the Amazon CloudWatch Events User Guide.
     */
-  var Schedule: js.UndefOr[String] = js.native
+  var Schedule: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the scheduled action. 
     */
-  var ScheduledActionDescription: js.UndefOr[String] = js.native
+  var ScheduledActionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the scheduled action. 
     */
-  var ScheduledActionName: js.UndefOr[String] = js.native
+  var ScheduledActionName: js.UndefOr[String] = js.undefined
   
   /**
     * The start time in UTC when the schedule is active. Before this time, the scheduled action does not trigger. 
     */
-  var StartTime: js.UndefOr[TStamp] = js.native
+  var StartTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The state of the scheduled action. For example, DISABLED. 
     */
-  var State: js.UndefOr[ScheduledActionState] = js.native
+  var State: js.UndefOr[ScheduledActionState] = js.undefined
   
   /**
     * A JSON format string of the Amazon Redshift API operation with input parameters.  "{\"ResizeCluster\":{\"NodeType\":\"ds2.8xlarge\",\"ClusterIdentifier\":\"my-test-cluster\",\"NumberOfNodes\":3}}". 
     */
-  var TargetAction: js.UndefOr[ScheduledActionType] = js.native
+  var TargetAction: js.UndefOr[ScheduledActionType] = js.undefined
 }
 object ScheduledAction {
   

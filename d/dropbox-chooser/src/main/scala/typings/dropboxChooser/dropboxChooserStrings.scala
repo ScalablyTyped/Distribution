@@ -3,13 +3,14 @@ package typings.dropboxChooser
 import typings.dropboxChooser.Dropbox.ChooserFileMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropboxChooserStrings {
   
   @js.native
-  sealed trait crop extends ChooserFileMode
+  sealed trait crop
+    extends StObject
+       with ChooserFileMode
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]
   
@@ -19,12 +20,16 @@ object dropboxChooserStrings {
   def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
-  sealed trait fit extends ChooserFileMode
+  sealed trait fit
+    extends StObject
+       with ChooserFileMode
   @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
-  sealed trait fit_one_and_overflow extends ChooserFileMode
+  sealed trait fit_one_and_overflow
+    extends StObject
+       with ChooserFileMode
   @scala.inline
   def fit_one_and_overflow: fit_one_and_overflow = "fit_one_and_overflow".asInstanceOf[fit_one_and_overflow]
   

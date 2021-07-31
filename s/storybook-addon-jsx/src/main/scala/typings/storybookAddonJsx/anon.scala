@@ -12,15 +12,13 @@ import typings.storybookAddons.typesMod.OptionsParameter
 import typings.storybookAddons.typesMod.StoryApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddWithJSX[StoryFnReturnType] extends StObject {
     
-    var addWithJSX: AddWithJSXFunc[StoryFnReturnType] = js.native
+    var addWithJSX: AddWithJSXFunc[StoryFnReturnType]
   }
   object AddWithJSX {
     
@@ -33,7 +31,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class AddWithJSXMutableBuilder[Self <: AddWithJSX[_], StoryFnReturnType] (val x: Self with AddWithJSX[StoryFnReturnType]) extends AnyVal {
+    implicit class AddWithJSXMutableBuilder[Self <: AddWithJSX[?], StoryFnReturnType] (val x: Self & AddWithJSX[StoryFnReturnType]) extends AnyVal {
       
       @scala.inline
       def setAddWithJSX(
@@ -43,20 +41,20 @@ object anon {
   }
   
   /* Inlined @storybook/addons.@storybook/addons.Parameters & {  jsx :storybook-addon-jsx.storybook-addon-jsx.AddonParameters} */
-  @js.native
   trait ParametersjsxAddonParamet
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var docsOnly: js.UndefOr[Boolean] = js.native
+    var docsOnly: js.UndefOr[Boolean] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var jsx: AddonParameters = js.native
+    var jsx: AddonParameters
     
     /** The layout property defines basic styles added to the preview body where the story is rendered. If you pass 'none', no styles are applied. */
-    var layout: js.UndefOr[centered | fullscreen | padded | none] = js.native
+    var layout: js.UndefOr[centered | fullscreen | padded | none] = js.undefined
     
-    var options: js.UndefOr[OptionsParameter] = js.native
+    var options: js.UndefOr[OptionsParameter] = js.undefined
   }
   object ParametersjsxAddonParamet {
     

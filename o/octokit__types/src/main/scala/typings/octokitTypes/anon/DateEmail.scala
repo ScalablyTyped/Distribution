@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateEmail extends StObject {
   
-  var date: String = js.native
+  var date: String
   
-  var email: String = js.native
+  var email: String
   
-  var name: String = js.native
+  var name: String
 }
 object DateEmail {
   

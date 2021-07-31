@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTileManagerSplitterOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,25 +16,25 @@ trait IgTileManagerSplitterOptions
     * Gets whether the splitter should be initially collapsed.
     *
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets whether the splitter can be collapsible.
     *
     */
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the splitter should be enabled.
     *
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets splitter events.
     *
     */
-  var events: js.UndefOr[IgTileManagerSplitterOptionsEvents] = js.native
+  var events: js.UndefOr[IgTileManagerSplitterOptionsEvents] = js.undefined
 }
 object IgTileManagerSplitterOptions {
   

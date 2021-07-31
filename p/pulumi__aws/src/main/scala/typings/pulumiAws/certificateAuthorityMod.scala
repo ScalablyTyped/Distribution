@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object certificateAuthorityMod {
@@ -101,6 +100,10 @@ object certificateAuthorityMod {
   /* static members */
   object CertificateAuthority {
     
+    @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CertificateAuthority resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -110,29 +113,23 @@ object certificateAuthorityMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CertificateAuthority = js.native
-    @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CertificateAuthority = js.native
-    @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateAuthorityState): CertificateAuthority = js.native
-    @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): CertificateAuthority = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateAuthorityState): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateAuthority]
     
     /**
       * Returns true if the given object is an instance of CertificateAuthority.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean]
   }
   
-  @js.native
   trait CertificateAuthorityArgs extends StObject {
     
     /**
@@ -140,34 +137,34 @@ object certificateAuthorityMod {
       */
     val certificateAuthorityConfiguration: Input[
         typings.pulumiAws.inputMod.acmpca.CertificateAuthorityCertificateAuthorityConfiguration
-      ] = js.native
+      ]
     
     /**
       * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. Defaults to `false`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of days to make a CA restorable after it has been deleted, must be between 7 to 30 days, with default to 30 days.
       */
-    val permanentDeletionTimeInDays: js.UndefOr[Input[Double]] = js.native
+    val permanentDeletionTimeInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Nested argument containing revocation configuration. Defined below.
       */
     val revocationConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.acmpca.CertificateAuthorityRevocationConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of the certificate authority. Defaults to `SUBORDINATE`. Valid values: `ROOT` and `SUBORDINATE`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateAuthorityArgs {
     
@@ -223,18 +220,17 @@ object certificateAuthorityMod {
     }
   }
   
-  @js.native
   trait CertificateAuthorityState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the certificate authority.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Base64-encoded certificate authority (CA) certificate. Only available after the certificate authority certificate has been imported.
       */
-    val certificate: js.UndefOr[Input[String]] = js.native
+    val certificate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument containing algorithms and certificate subject information. Defined below.
@@ -243,64 +239,64 @@ object certificateAuthorityMod {
         Input[
           typings.pulumiAws.inputMod.acmpca.CertificateAuthorityCertificateAuthorityConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported.
       */
-    val certificateChain: js.UndefOr[Input[String]] = js.native
+    val certificateChain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The base64 PEM-encoded certificate signing request (CSR) for your private CA certificate.
       */
-    val certificateSigningRequest: js.UndefOr[Input[String]] = js.native
+    val certificateSigningRequest: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. Defaults to `false`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Date and time after which the certificate authority is not valid. Only available after the certificate authority certificate has been imported.
       */
-    val notAfter: js.UndefOr[Input[String]] = js.native
+    val notAfter: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Date and time before which the certificate authority is not valid. Only available after the certificate authority certificate has been imported.
       */
-    val notBefore: js.UndefOr[Input[String]] = js.native
+    val notBefore: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days to make a CA restorable after it has been deleted, must be between 7 to 30 days, with default to 30 days.
       */
-    val permanentDeletionTimeInDays: js.UndefOr[Input[Double]] = js.native
+    val permanentDeletionTimeInDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Nested argument containing revocation configuration. Defined below.
       */
     val revocationConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.acmpca.CertificateAuthorityRevocationConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
       */
-    val serial: js.UndefOr[Input[String]] = js.native
+    val serial: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Status of the certificate authority.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of the certificate authority. Defaults to `SUBORDINATE`. Valid values: `ROOT` and `SUBORDINATE`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateAuthorityState {
     

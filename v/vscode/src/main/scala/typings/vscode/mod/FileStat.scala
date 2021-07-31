@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileStat extends StObject {
   
   /**
     * The creation timestamp in milliseconds elapsed since January 1, 1970 00:00:00 UTC.
     */
-  var ctime: Double = js.native
+  var ctime: Double
   
   /**
     * The modification timestamp in milliseconds elapsed since January 1, 1970 00:00:00 UTC.
@@ -20,7 +18,7 @@ trait FileStat extends StObject {
     * from the previous value. Otherwise there may be optimizations in place that will not show
     * the updated file contents in an editor for example.
     */
-  var mtime: Double = js.native
+  var mtime: Double
   
   /**
     * The size in bytes.
@@ -29,7 +27,7 @@ trait FileStat extends StObject {
     * may be optimizations in place that will not show the updated file contents in an editor for
     * example.
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * The type of the file, e.g. is a regular file, a directory, or symbolic link
@@ -37,7 +35,7 @@ trait FileStat extends StObject {
     *
     * *Note:* This value might be a bitmask, e.g. `FileType.File | FileType.SymbolicLink`.
     */
-  var `type`: FileType = js.native
+  var `type`: FileType
 }
 object FileStat {
   

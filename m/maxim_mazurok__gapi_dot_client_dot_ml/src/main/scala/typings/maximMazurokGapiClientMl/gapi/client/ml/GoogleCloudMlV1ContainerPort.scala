@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1ContainerPort extends StObject {
   
   /** Number of the port to expose on the container. This must be a valid port number: 0 < PORT_NUMBER < 65536. */
-  var containerPort: js.UndefOr[Double] = js.native
+  var containerPort: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1ContainerPort {
   

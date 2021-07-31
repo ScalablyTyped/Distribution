@@ -10,9 +10,9 @@ High precision Islamic prayer time library
 | ------------------ | :-------------: |
 | Full name          | adhan |
 | Keywords           | adhan, islam, muslim, prayer, islamic, prayer times, salah, salat, salaat, namaz |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 2284 |
+| # releases         | 3 |
+| # dependents       | 2 |
+| # downloads        | 4016 |
 | # stars            | 1 |
 
 ## Links

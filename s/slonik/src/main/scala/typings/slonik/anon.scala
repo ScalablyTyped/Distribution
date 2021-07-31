@@ -3,17 +3,15 @@ package typings.slonik
 import typings.slonik.mod.FieldType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Format extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var test: js.UndefOr[js.Function1[/* field */ FieldType, Boolean]] = js.native
+    var test: js.UndefOr[js.Function1[/* field */ FieldType, Boolean]] = js.undefined
   }
   object Format {
     
@@ -37,10 +35,9 @@ object anon {
     }
   }
   
-  @js.native
   trait StripComments extends StObject {
     
-    var stripComments: js.UndefOr[Boolean] = js.native
+    var stripComments: js.UndefOr[Boolean] = js.undefined
   }
   object StripComments {
     

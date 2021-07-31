@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait InteractionEvent extends StObject {
   
   /**
@@ -19,25 +17,25 @@ trait InteractionEvent extends StObject {
     *
     * @member {PIXI.DisplayObject} PIXI.InteractionEvent#currentTarget
     */
-  var currentTarget: DisplayObject = js.native
+  var currentTarget: DisplayObject
   
   /**
     * InteractionData related to this event
     *
     * @member {PIXI.InteractionData} PIXI.InteractionEvent#data
     */
-  var data: InteractionData = js.native
+  var data: InteractionData
   
   /**
     * Resets the event.
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * Prevents event from reaching any objects other than the current object.
     *
     */
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
   /**
     * Whether this event will continue propagating in the tree.
@@ -47,7 +45,7 @@ trait InteractionEvent extends StObject {
     *
     * @member {boolean} PIXI.InteractionEvent#stopped
     */
-  var stopped: Boolean = js.native
+  var stopped: Boolean
   
   /**
     * The object which caused this event to be dispatched.
@@ -55,14 +53,14 @@ trait InteractionEvent extends StObject {
     *
     * @member {PIXI.DisplayObject} PIXI.InteractionEvent#target
     */
-  var target: DisplayObject = js.native
+  var target: DisplayObject
   
   /**
     * Type of the event
     *
     * @member {string} PIXI.InteractionEvent#type
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object InteractionEvent {
   

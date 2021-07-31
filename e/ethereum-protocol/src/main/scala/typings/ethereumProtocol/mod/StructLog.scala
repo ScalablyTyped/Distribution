@@ -3,29 +3,27 @@ package typings.ethereumProtocol.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructLog extends StObject {
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var error: String = js.native
+  var error: String
   
-  var gas: Double = js.native
+  var gas: Double
   
-  var gasCost: Double = js.native
+  var gasCost: Double
   
-  var memory: js.Array[String] = js.native
+  var memory: js.Array[String]
   
-  var op: OpCode = js.native
+  var op: OpCode
   
-  var pc: Double = js.native
+  var pc: Double
   
-  var stack: js.Array[String] = js.native
+  var stack: js.Array[String]
   
-  var storage: StringDictionary[String] = js.native
+  var storage: StringDictionary[String]
 }
 object StructLog {
   

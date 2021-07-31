@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Content. */
-@js.native
 trait Content extends StObject {
   
   /** An array of `ContentItem` objects that provides the text that is to be analyzed. */
-  var content_items: js.Array[ContentItem] = js.native
+  var content_items: js.Array[ContentItem]
 }
 object Content {
   

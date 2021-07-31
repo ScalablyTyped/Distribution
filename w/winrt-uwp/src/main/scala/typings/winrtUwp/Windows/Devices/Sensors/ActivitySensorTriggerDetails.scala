@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents details about the sensor triggering. */
-@js.native
 trait ActivitySensorTriggerDetails extends StObject {
   
   /**
     * Reads reports about the sensor triggering.
     * @return Returns a list of ActivitySensorReadingChangeReport objects that provides data for the sensor trigger.
     */
-  def readReports(): IVectorView[ActivitySensorReadingChangeReport] = js.native
+  def readReports(): IVectorView[ActivitySensorReadingChangeReport]
 }
 object ActivitySensorTriggerDetails {
   

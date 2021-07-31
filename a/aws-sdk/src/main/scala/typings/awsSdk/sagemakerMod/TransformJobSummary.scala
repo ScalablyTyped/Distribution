@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformJobSummary extends StObject {
   
   /**
     * A timestamp that shows when the transform Job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * If the transform job failed, the reason it failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * Indicates when the transform job was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Indicates when the transform job ends on compute instances. For successful jobs and stopped jobs, this is the exact time recorded after the results are uploaded. For failed jobs, this is when Amazon SageMaker detected that the job failed.
     */
-  var TransformEndTime: js.UndefOr[Timestamp] = js.native
+  var TransformEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the transform job.
     */
-  var TransformJobArn: typings.awsSdk.sagemakerMod.TransformJobArn = js.native
+  var TransformJobArn: typings.awsSdk.sagemakerMod.TransformJobArn
   
   /**
     * The name of the transform job.
     */
-  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName = js.native
+  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName
   
   /**
     * The status of the transform job.
     */
-  var TransformJobStatus: typings.awsSdk.sagemakerMod.TransformJobStatus = js.native
+  var TransformJobStatus: typings.awsSdk.sagemakerMod.TransformJobStatus
 }
 object TransformJobSummary {
   

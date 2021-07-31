@@ -3,17 +3,15 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressbarEvents extends StObject {
   
-  var change: js.UndefOr[ProgressbarEvent] = js.native
+  var change: js.UndefOr[ProgressbarEvent] = js.undefined
   
-  var complete: js.UndefOr[ProgressbarEvent] = js.native
+  var complete: js.UndefOr[ProgressbarEvent] = js.undefined
   
-  var create: js.UndefOr[ProgressbarEvent] = js.native
+  var create: js.UndefOr[ProgressbarEvent] = js.undefined
 }
 object ProgressbarEvents {
   

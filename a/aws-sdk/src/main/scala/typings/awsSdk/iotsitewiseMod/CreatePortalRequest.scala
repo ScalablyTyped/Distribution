@@ -2,51 +2,49 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePortalRequest extends StObject {
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The service to use to authenticate users to the portal. Choose from the following options:    SSO – The portal uses AWS Single Sign-On to authenticate users and manage user permissions. Before you can create a portal that uses AWS SSO, you must enable AWS SSO. For more information, see Enabling AWS SSO in the AWS IoT SiteWise User Guide. This option is only available in AWS Regions other than the China Regions.    IAM – The portal uses AWS Identity and Access Management (IAM) to authenticate users and manage user permissions. IAM users must have the iotsitewise:CreatePresignedPortalUrl permission to sign in to the portal. This option is only available in the China Regions.   You can't change this value after you create a portal. Default: SSO 
     */
-  var portalAuthMode: js.UndefOr[AuthMode] = js.native
+  var portalAuthMode: js.UndefOr[AuthMode] = js.undefined
   
   /**
     * The AWS administrator's contact email address.
     */
-  var portalContactEmail: Email = js.native
+  var portalContactEmail: Email
   
   /**
     * A description for the portal.
     */
-  var portalDescription: js.UndefOr[Description] = js.native
+  var portalDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * A logo image to display in the portal. Upload a square, high-resolution image. The image is displayed on a dark background.
     */
-  var portalLogoImageFile: js.UndefOr[ImageFile] = js.native
+  var portalLogoImageFile: js.UndefOr[ImageFile] = js.undefined
   
   /**
     * A friendly name for the portal.
     */
-  var portalName: Name = js.native
+  var portalName: Name
   
   /**
     * The ARN of a service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf. For more information, see Using service roles for AWS IoT SiteWise Monitor in the AWS IoT SiteWise User Guide.
     */
-  var roleArn: ARN = js.native
+  var roleArn: ARN
   
   /**
     * A list of key-value pairs that contain metadata for the portal. For more information, see Tagging your AWS IoT SiteWise resources in the AWS IoT SiteWise User Guide.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreatePortalRequest {
   

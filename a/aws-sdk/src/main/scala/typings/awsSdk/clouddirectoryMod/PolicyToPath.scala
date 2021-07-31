@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyToPath extends StObject {
   
   /**
     * The path that is referenced from the root.
     */
-  var Path: js.UndefOr[PathString] = js.native
+  var Path: js.UndefOr[PathString] = js.undefined
   
   /**
     * List of policy objects.
     */
-  var Policies: js.UndefOr[PolicyAttachmentList] = js.native
+  var Policies: js.UndefOr[PolicyAttachmentList] = js.undefined
 }
 object PolicyToPath {
   

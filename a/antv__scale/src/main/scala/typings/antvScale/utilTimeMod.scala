@@ -2,10 +2,13 @@ package typings.antvScale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilTimeMod {
+  
+  @JSImport("@antv/scale/lib/util/time", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@antv/scale/lib/util/time", "DAY")
   @js.native
@@ -31,17 +34,14 @@ object utilTimeMod {
   @js.native
   val YEAR: Double = js.native
   
-  @JSImport("@antv/scale/lib/util/time", "getTickInterval")
-  @js.native
-  def getTickInterval(min: Double, max: Double, tickCount: Double): Interval = js.native
+  @scala.inline
+  def getTickInterval(min: Double, max: Double, tickCount: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickInterval")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @JSImport("@antv/scale/lib/util/time", "timeFormat")
-  @js.native
-  def timeFormat(time: js.Any, mask: js.Any): String = js.native
+  @scala.inline
+  def timeFormat(time: js.Any, mask: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(time.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@antv/scale/lib/util/time", "toTimeStamp")
-  @js.native
-  def toTimeStamp(value: js.Any): Double = js.native
+  @scala.inline
+  def toTimeStamp(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toTimeStamp")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type Interval = js.Tuple2[String, Double]
 }

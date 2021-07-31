@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bullet extends StObject {
   
   /** The ID of the list this paragraph belongs to. */
-  var listId: js.UndefOr[String] = js.native
+  var listId: js.UndefOr[String] = js.undefined
   
   /** The nesting level of this paragraph in the list. */
-  var nestingLevel: js.UndefOr[Double] = js.native
+  var nestingLevel: js.UndefOr[Double] = js.undefined
   
   /** The paragraph specific text style applied to this bullet. */
-  var textStyle: js.UndefOr[TextStyle] = js.native
+  var textStyle: js.UndefOr[TextStyle] = js.undefined
 }
 object Bullet {
   

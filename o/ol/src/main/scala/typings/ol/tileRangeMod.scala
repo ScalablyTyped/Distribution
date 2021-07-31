@@ -4,44 +4,73 @@ import typings.ol.sizeMod.Size
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tileRangeMod {
   
+  @JSImport("ol/TileRange", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ol/TileRange", JSImport.Default)
   @js.native
-  class default protected () extends TileRange {
+  class default protected ()
+    extends StObject
+       with TileRange {
     def this(minX: Double, maxX: Double, minY: Double, maxY: Double) = this()
+    
+    /* CompleteClass */
+    override def contains(tileCoord: TileCoord): Boolean = js.native
+    
+    /* CompleteClass */
+    override def containsTileRange(tileRange: TileRange): Boolean = js.native
+    
+    /* CompleteClass */
+    override def containsXY(x: Double, y: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    override def equals(tileRange: TileRange): Boolean = js.native
+    
+    /* CompleteClass */
+    override def extend(tileRange: TileRange): Unit = js.native
+    
+    /* CompleteClass */
+    override def getHeight(): Double = js.native
+    
+    /* CompleteClass */
+    override def getSize(): Size = js.native
+    
+    /* CompleteClass */
+    override def getWidth(): Double = js.native
+    
+    /* CompleteClass */
+    override def intersects(tileRange: TileRange): Boolean = js.native
   }
   
-  @JSImport("ol/TileRange", "createOrUpdate")
-  @js.native
-  def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double): TileRange = js.native
-  @JSImport("ol/TileRange", "createOrUpdate")
-  @js.native
-  def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double, tileRange: TileRange): TileRange = js.native
+  @scala.inline
+  def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double): TileRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any])).asInstanceOf[TileRange]
+  @scala.inline
+  def createOrUpdate(minX: Double, maxX: Double, minY: Double, maxY: Double, tileRange: TileRange): TileRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(minX.asInstanceOf[js.Any], maxX.asInstanceOf[js.Any], minY.asInstanceOf[js.Any], maxY.asInstanceOf[js.Any], tileRange.asInstanceOf[js.Any])).asInstanceOf[TileRange]
   
-  @js.native
   trait TileRange extends StObject {
     
-    def contains(tileCoord: TileCoord): Boolean = js.native
+    def contains(tileCoord: TileCoord): Boolean
     
-    def containsTileRange(tileRange: TileRange): Boolean = js.native
+    def containsTileRange(tileRange: TileRange): Boolean
     
-    def containsXY(x: Double, y: Double): Boolean = js.native
+    def containsXY(x: Double, y: Double): Boolean
     
-    def equals(tileRange: TileRange): Boolean = js.native
+    def equals(tileRange: TileRange): Boolean
     
-    def extend(tileRange: TileRange): Unit = js.native
+    def extend(tileRange: TileRange): Unit
     
-    def getHeight(): Double = js.native
+    def getHeight(): Double
     
-    def getSize(): Size = js.native
+    def getSize(): Size
     
-    def getWidth(): Double = js.native
+    def getWidth(): Double
     
-    def intersects(tileRange: TileRange): Boolean = js.native
+    def intersects(tileRange: TileRange): Boolean
   }
   object TileRange {
     

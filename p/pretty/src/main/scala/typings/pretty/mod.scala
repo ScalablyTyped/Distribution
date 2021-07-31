@@ -2,22 +2,22 @@ package typings.pretty
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pretty", JSImport.Namespace)
-  @js.native
-  def apply(str: String): String = js.native
-  @JSImport("pretty", JSImport.Namespace)
-  @js.native
-  def apply(str: String, options: PrettyOptions): String = js.native
+  @scala.inline
+  def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(str: String, options: PrettyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("pretty", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait PrettyOptions extends StObject {
     
-    var ocd: Boolean = js.native
+    var ocd: Boolean
   }
   object PrettyOptions {
     

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schedulingV1beta1Mod {
@@ -25,11 +24,15 @@ object schedulingV1beta1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: PriorityClassArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PriorityClassArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object PriorityClass {
+    
+    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClass")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing PriorityClass resource's state with the given name, ID, and optional extra
@@ -39,20 +42,17 @@ object schedulingV1beta1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClass.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1PriorityClassMod.PriorityClass = js.native
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClass.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1PriorityClassMod.PriorityClass = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1PriorityClassMod.PriorityClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1PriorityClassMod.PriorityClass]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1PriorityClassMod.PriorityClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1PriorityClassMod.PriorityClass]
     
     /**
       * Returns true if the given object is an instance of PriorityClass.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClass.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClass.PriorityClass */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClass.PriorityClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClass.PriorityClass */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClassList")
@@ -68,11 +68,15 @@ object schedulingV1beta1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: PriorityClassListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PriorityClassListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object PriorityClassList {
+    
+    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClassList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing PriorityClassList resource's state with the given name, ID, and optional extra
@@ -82,19 +86,16 @@ object schedulingV1beta1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClassList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1PriorityClassListMod.PriorityClassList = js.native
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClassList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1PriorityClassListMod.PriorityClassList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1PriorityClassListMod.PriorityClassList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1PriorityClassListMod.PriorityClassList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1PriorityClassListMod.PriorityClassList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1PriorityClassListMod.PriorityClassList]
     
     /**
       * Returns true if the given object is an instance of PriorityClassList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/scheduling/v1beta1", "PriorityClassList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClassList.PriorityClassList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClassList.PriorityClassList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1beta1/priorityClassList.PriorityClassList */ Boolean]
   }
 }

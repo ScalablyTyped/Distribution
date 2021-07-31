@@ -2,17 +2,15 @@ package typings.minappEnv.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoPoint extends StObject {
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  def toJSON(): js.Object = js.native
+  def toJSON(): js.Object
 }
 object GeoPoint {
   

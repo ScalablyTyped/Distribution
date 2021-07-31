@@ -5,7 +5,6 @@ import typings.blueprintjsCore.anon.PartialIOverflowListPropsClassName
 import typings.blueprintjsCore.overflowListMod.IOverflowListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "OverflowList")
@@ -38,10 +37,12 @@ object OverflowList {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core", "OverflowList.ofType")
-  @js.native
+  @scala.inline
   def ofType[U](): Instantiable1[
     /* props */ IOverflowListProps[U], 
     typings.blueprintjsCore.overflowListMod.OverflowList[U]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+    /* props */ IOverflowListProps[U], 
+    typings.blueprintjsCore.overflowListMod.OverflowList[U]
+  ]]
 }

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzeSyntaxRequest extends StObject {
   
   /** Required. Input document. */
-  var document: js.UndefOr[Document] = js.native
+  var document: js.UndefOr[Document] = js.undefined
   
   /** The encoding type used by the API to calculate offsets. */
-  var encodingType: js.UndefOr[String] = js.native
+  var encodingType: js.UndefOr[String] = js.undefined
 }
 object AnalyzeSyntaxRequest {
   

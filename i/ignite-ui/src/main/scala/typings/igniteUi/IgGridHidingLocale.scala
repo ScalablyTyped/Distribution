@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridHidingLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,67 +16,67 @@ trait IgGridHidingLocale
     * Specifies the text of the button which applies changes in the modal dialog.
     *
     */
-  var columnChooserButtonApplyText: js.UndefOr[String] = js.native
+  var columnChooserButtonApplyText: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the text of the button which cancels changes in the modal dialog.
     *
     */
-  var columnChooserButtonCancelText: js.UndefOr[String] = js.native
+  var columnChooserButtonCancelText: js.UndefOr[String] = js.undefined
   
   /**
     * The caption of the column chooser dialog.
     *
     */
-  var columnChooserCaptionLabel: js.UndefOr[String] = js.native
+  var columnChooserCaptionLabel: js.UndefOr[String] = js.undefined
   
   /**
     * The close button tooltip of the column chooser dialog.
     *
     */
-  var columnChooserCloseButtonTooltip: js.UndefOr[String] = js.native
+  var columnChooserCloseButtonTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog.
     *
     */
-  var columnChooserDisplayText: js.UndefOr[String] = js.native
+  var columnChooserDisplayText: js.UndefOr[String] = js.undefined
   
   /**
     * The text used in the column chooser to hide column.
     *
     */
-  var columnChooserHideText: js.UndefOr[String] = js.native
+  var columnChooserHideText: js.UndefOr[String] = js.undefined
   
   /**
     * Text label for reset button.
     *
     */
-  var columnChooserResetButtonLabel: js.UndefOr[String] = js.native
+  var columnChooserResetButtonLabel: js.UndefOr[String] = js.undefined
   
   /**
     * The text used in the column chooser to show column.
     *
     */
-  var columnChooserShowText: js.UndefOr[String] = js.native
+  var columnChooserShowText: js.UndefOr[String] = js.undefined
   
   /**
     * The text used in the drop down tools menu(Feature Chooser) to hide a column.
     *
     */
-  var columnHideText: js.UndefOr[String] = js.native
+  var columnHideText: js.UndefOr[String] = js.undefined
   
   /**
     * The text displayed in the tooltip of the hidden column indicator.
     *
     */
-  var hiddenColumnIndicatorTooltipText: js.UndefOr[String] = js.native
+  var hiddenColumnIndicatorTooltipText: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the hiding column icon tooltip.
     *
     */
-  var hideColumnIconTooltip: js.UndefOr[String] = js.native
+  var hideColumnIconTooltip: js.UndefOr[String] = js.undefined
 }
 object IgGridHidingLocale {
   

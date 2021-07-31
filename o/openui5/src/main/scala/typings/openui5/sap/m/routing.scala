@@ -3,38 +3,36 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.base.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routing {
   
-  @js.native
   trait RouteMatchedHandler extends StObject {
     
     /**
       * Removes the routeMatchedHandler from the Router
       * @returns for chaining
       */
-    def destroy(): RouteMatchedHandler = js.native
+    def destroy(): RouteMatchedHandler
     
     /**
       * Gets if a navigation should close dialogs
       * @returns a flag indication if dialogs will be closed
       */
-    def getCloseDialogs(): Boolean = js.native
+    def getCloseDialogs(): Boolean
     
     /**
       * Returns a metadata object for class sap.m.routing.RouteMatchedHandler.
       * @returns Metadata object describing this class
       */
-    def getMetadata(): Metadata = js.native
+    def getMetadata(): Metadata
     
     /**
       * Sets if a navigation should close dialogs
       * @param bCloseDialogs close dialogs if true
       * @returns for chaining
       */
-    def setCloseDialogs(bCloseDialogs: Boolean): RouteMatchedHandler = js.native
+    def setCloseDialogs(bCloseDialogs: Boolean): RouteMatchedHandler
   }
   object RouteMatchedHandler {
     
@@ -68,7 +66,8 @@ object routing {
   
   @js.native
   trait Router
-    extends typings.openui5.sap.ui.core.routing.Router {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.Router {
     
     /**
       * Returns the TargetHandler instance.
@@ -77,27 +76,26 @@ object routing {
     def getTargetHandler(): TargetHandler = js.native
   }
   
-  @js.native
   trait TargetHandler extends StObject {
     
     /**
       * Gets if a navigation should close dialogs
       * @returns a flag indication if dialogs will be closed
       */
-    def getCloseDialogs(): Boolean = js.native
+    def getCloseDialogs(): Boolean
     
     /**
       * Returns a metadata object for class sap.m.routing.TargetHandler.
       * @returns Metadata object describing this class
       */
-    def getMetadata(): Metadata = js.native
+    def getMetadata(): Metadata
     
     /**
       * Sets if a navigation should close dialogs
       * @param bCloseDialogs close dialogs if true
       * @returns for chaining
       */
-    def setCloseDialogs(bCloseDialogs: Boolean): TargetHandler = js.native
+    def setCloseDialogs(bCloseDialogs: Boolean): TargetHandler
   }
   object TargetHandler {
     
@@ -127,7 +125,8 @@ object routing {
   
   @js.native
   trait Targets
-    extends typings.openui5.sap.ui.core.routing.Targets {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.Targets {
     
     /**
       * Returns the TargetHandler instance.

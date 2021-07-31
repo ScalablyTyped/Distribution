@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource that you want to remove tags from. To get the ARN, send a GET request with the resource name.
     */
-  var Arn: string = js.native
+  var Arn: string
   
   /**
     * The keys of the tags that you want to remove from the resource.
     */
-  var TagKeys: js.UndefOr[listOfString] = js.native
+  var TagKeys: js.UndefOr[listOfString] = js.undefined
 }
 object UntagResourceRequest {
   

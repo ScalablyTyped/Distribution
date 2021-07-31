@@ -6,10 +6,13 @@ import typings.plottable.scaleMod.Scale
 import typings.plottable.tickGeneratorsMod.ITickGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scalesMod {
+  
+  @JSImport("plottable/build/src/scales", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("plottable/build/src/scales", "Category")
   @js.native
@@ -23,13 +26,15 @@ object scalesMod {
   /* static members */
   object Category {
     
-    @JSImport("plottable/build/src/scales", "Category._convertToPlottableInnerPadding")
+    @JSImport("plottable/build/src/scales", "Category")
     @js.native
-    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/scales", "Category._convertToPlottableOuterPadding")
-    @js.native
-    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
+    @scala.inline
+    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableInnerPadding")(d3InnerPadding.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableOuterPadding")(d3OuterPadding.asInstanceOf[js.Any], d3InnerPadding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("plottable/build/src/scales", "Color")
@@ -65,9 +70,8 @@ object scalesMod {
     @scala.inline
     def _MAXIMUM_COLORS_FROM_CSS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/scales", "Color._getPlottableColors")
-    @js.native
-    def _getPlottableColors(): js.Any = js.native
+    @scala.inline
+    def _getPlottableColors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getPlottableColors")().asInstanceOf[js.Any]
     
     @JSImport("plottable/build/src/scales", "Color._plottableColorCache")
     @js.native
@@ -75,9 +79,8 @@ object scalesMod {
     @scala.inline
     def _plottableColorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/scales", "Color.invalidateColorCache")
-    @js.native
-    def invalidateColorCache(): Unit = js.native
+    @scala.inline
+    def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
   }
   
   @JSImport("plottable/build/src/scales", "InterpolatedColor")
@@ -172,13 +175,15 @@ object scalesMod {
   
   object TickGenerators {
     
-    @JSImport("plottable/build/src/scales", "TickGenerators.integerTickGenerator")
+    @JSImport("plottable/build/src/scales", "TickGenerators")
     @js.native
-    def integerTickGenerator(): ITickGenerator[Double] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/scales", "TickGenerators.intervalTickGenerator")
-    @js.native
-    def intervalTickGenerator(interval: Double): ITickGenerator[Double] = js.native
+    @scala.inline
+    def integerTickGenerator(): ITickGenerator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("integerTickGenerator")().asInstanceOf[ITickGenerator[Double]]
+    
+    @scala.inline
+    def intervalTickGenerator(interval: Double): ITickGenerator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("intervalTickGenerator")(interval.asInstanceOf[js.Any]).asInstanceOf[ITickGenerator[Double]]
   }
   
   @JSImport("plottable/build/src/scales", "Time")
@@ -193,18 +198,20 @@ object scalesMod {
   /* static members */
   object Time {
     
+    @JSImport("plottable/build/src/scales", "Time")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Transforms the Plottable TimeInterval string into a d3 time interval equivalent.
       * If the provided TimeInterval is incorrect, the default is d3.timeYear
       */
-    @JSImport("plottable/build/src/scales", "Time.timeIntervalToD3Time")
-    @js.native
-    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = js.native
+    @scala.inline
+    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeIntervalToD3Time")(timeInterval.asInstanceOf[js.Any], useUTC.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
   }
   
-  @JSImport("plottable/build/src/scales", "isTransformable")
-  @js.native
-  def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = js.native
+  @scala.inline
+  def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformable")(scale.asInstanceOf[js.Any]).asInstanceOf[/* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean]
   
   type IIncludedValuesProvider[D] = js.Function2[
     /* scale */ Scale[D, js.Any], 
@@ -214,7 +221,6 @@ object scalesMod {
   
   type IPaddingExceptionsProvider[D] = js.Function1[/* scale */ QuantitativeScale[D], js.Array[D]]
   
-  @js.native
   trait ITransformableScale extends StObject {
     
     /**
@@ -222,36 +228,36 @@ object scalesMod {
       * numerical range in the same coordinate space used for
       * `scaleTransformation`.
       */
-    def getTransformationDomain(): js.Tuple2[Double, Double] = js.native
+    def getTransformationDomain(): js.Tuple2[Double, Double]
     
     /**
       * Gets the full extent of the transformation domain.
       */
-    def getTransformationExtent(): js.Tuple2[Double, Double] = js.native
+    def getTransformationExtent(): js.Tuple2[Double, Double]
     
     /**
       * Returns value in *Transformation Space* for the provided *screen space*.
       */
-    def invertedTransformation(value: Double): Double = js.native
+    def invertedTransformation(value: Double): Double
     
     /**
       * Translates the scale by a number of pixels.
       *
       * @param {number} [translateAmount] The translation amount in screen space
       */
-    def pan(translateAmount: Double): Unit = js.native
+    def pan(translateAmount: Double): Unit
     
     /**
       * Returns value in *screen space* for the given domain value.
       */
-    def scaleTransformation(value: Double): Double = js.native
+    def scaleTransformation(value: Double): Double
     
     /**
       * Directly set the transformation domain. Instead of calling `.zoom` or
       * `.pan` perform calculations relative to the current domain, this can but
       * used to pan/zoom to an exact domain interval (in transformation space).
       */
-    def setTransformationDomain(domain: js.Tuple2[Double, Double]): Unit = js.native
+    def setTransformationDomain(domain: js.Tuple2[Double, Double]): Unit
     
     /**
       * Apply the magnification with the floating point `magnifyAmount` centered
@@ -262,7 +268,7 @@ object scalesMod {
       * @param {number} [centerValue] The coordinate of the mouse in screen
       * space.
       */
-    def zoom(magnifyAmount: Double, centerValue: Double): Unit = js.native
+    def zoom(magnifyAmount: Double, centerValue: Double): Unit
   }
   object ITransformableScale {
     

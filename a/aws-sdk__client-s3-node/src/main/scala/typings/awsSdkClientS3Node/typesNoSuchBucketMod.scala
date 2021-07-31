@@ -2,22 +2,20 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNoSuchBucketMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NoSuchBucketDetails> * / any */ @js.native
-  trait NoSuchBucket extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NoSuchBucketDetails> * / any */ trait NoSuchBucket extends StObject {
     
-    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.NoSuchBucket = js.native
+    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.NoSuchBucket
   }
   object NoSuchBucket {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.NoSuchBucket): NoSuchBucket = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): NoSuchBucket = {
+      val __obj = js.Dynamic.literal(name = "NoSuchBucket")
       __obj.asInstanceOf[NoSuchBucket]
     }
     
@@ -29,6 +27,5 @@ object typesNoSuchBucketMod {
     }
   }
   
-  @js.native
   trait NoSuchBucketDetails extends StObject
 }

@@ -2,15 +2,13 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the tab to retrieve all frames from. */
-@js.native
 trait GetAllFramesDetails extends StObject {
   
   /** The ID of the tab. */
-  var tabId: Double = js.native
+  var tabId: Double
 }
 object GetAllFramesDetails {
   

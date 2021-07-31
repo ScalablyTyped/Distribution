@@ -18,7 +18,6 @@ import typings.std.NonNullable
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,9 +25,9 @@ object mod {
   @JSImport("@formatjs/intl-displaynames", "DisplayNames")
   @js.native
   class DisplayNames protected () extends StObject {
-    def this(locales: js.UndefOr[scala.Nothing], options: DisplayNamesOptions) = this()
     def this(locales: String, options: DisplayNamesOptions) = this()
     def this(locales: js.Array[String], options: DisplayNamesOptions) = this()
+    def this(locales: Unit, options: DisplayNamesOptions) = this()
     
     def of(code: String): js.UndefOr[String] = js.native
     def of(code: js.Object): js.UndefOr[String] = js.native
@@ -43,9 +42,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@formatjs/intl-displaynames", "DisplayNames.__addLocaleData")
-    @js.native
-    def __addLocaleData(data: DisplayNamesLocaleData*): Unit = js.native
+    @scala.inline
+    def __addLocaleData(data: DisplayNamesLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@formatjs/intl-displaynames", "DisplayNames.__defaultLocale")
     @js.native
@@ -75,36 +73,29 @@ object mod {
     @js.native
     val polyfilled: /* true */ Boolean = js.native
     
-    @JSImport("@formatjs/intl-displaynames", "DisplayNames.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-displaynames", "DisplayNames.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: js.UndefOr[scala.Nothing], options: PickDisplayNamesOptionslo): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-displaynames", "DisplayNames.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: String): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-displaynames", "DisplayNames.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: String, options: PickDisplayNamesOptionslo): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-displaynames", "DisplayNames.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-    @JSImport("@formatjs/intl-displaynames", "DisplayNames.supportedLocalesOf")
-    @js.native
-    def supportedLocalesOf(locales: js.Array[String], options: PickDisplayNamesOptionslo): js.Array[String] = js.native
+    @scala.inline
+    def supportedLocalesOf(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")().asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: String, options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: js.Array[String], options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def supportedLocalesOf(locales: Unit, options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
-  @js.native
   trait DisplayNamesOptions extends StObject {
     
-    var fallback: js.UndefOr[code | none] = js.native
+    var fallback: js.UndefOr[code | none] = js.undefined
     
-    var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.native
+    var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.undefined
     
-    var style: js.UndefOr[narrow | short | long] = js.native
+    var style: js.UndefOr[narrow | short | long] = js.undefined
     
-    var `type`: language | region | script | currency = js.native
+    var `type`: language | region | script | currency
   }
   object DisplayNamesOptions {
     
@@ -141,16 +132,15 @@ object mod {
     }
   }
   
-  @js.native
   trait DisplayNamesResolvedOptions extends StObject {
     
-    var fallback: NonNullable[js.UndefOr[code | none]] = js.native
+    var fallback: NonNullable[js.UndefOr[code | none]]
     
-    var locale: String = js.native
+    var locale: String
     
-    var style: NonNullable[js.UndefOr[narrow | short | long]] = js.native
+    var style: NonNullable[js.UndefOr[narrow | short | long]]
     
-    var `type`: NonNullable[language | region | script | currency] = js.native
+    var `type`: NonNullable[language | region | script | currency]
   }
   object DisplayNamesResolvedOptions {
     

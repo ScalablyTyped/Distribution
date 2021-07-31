@@ -2,29 +2,27 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRecipientList extends StObject {
   
   /** Recipient list attribute object */
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
   /** Detailed description of the recipient list */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Short, unique, recipient list identifier */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Short, pretty/readable recipient list display name, not required to be unique */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** limit the number of recipient errors returned. */
-  var num_rcpt_errors: js.UndefOr[Double] = js.native
+  var num_rcpt_errors: js.UndefOr[Double] = js.undefined
   
   /** Array of recipient objects */
-  var recipients: js.Array[Recipient] = js.native
+  var recipients: js.Array[Recipient]
 }
 object CreateRecipientList {
   

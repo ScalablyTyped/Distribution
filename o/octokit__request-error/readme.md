@@ -11,8 +11,8 @@ Error class for Octokit request errors
 | Full name          | @octokit/request-error |
 | Keywords           | octokit, github, api, error |
 | # releases         | 14 |
-| # dependents       | 11 |
-| # downloads        | 129344048 |
+| # dependents       | 12 |
+| # downloads        | 156118726 |
 | # stars            | 0 |
 
 ## Links

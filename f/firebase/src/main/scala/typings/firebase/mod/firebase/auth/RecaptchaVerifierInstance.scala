@@ -2,27 +2,27 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @webonly
   * @hidden
   */
-@js.native
-trait RecaptchaVerifierInstance extends ApplicationVerifier {
+trait RecaptchaVerifierInstance
+  extends StObject
+     with ApplicationVerifier {
   
   /**
     * Clears the reCAPTCHA widget from the page and destroys the current instance.
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Renders the reCAPTCHA widget on the page.
     * @return A Promise that resolves with the
     *     reCAPTCHA widget ID.
     */
-  def render(): js.Promise[Double] = js.native
+  def render(): js.Promise[Double]
 }
 object RecaptchaVerifierInstance {
   

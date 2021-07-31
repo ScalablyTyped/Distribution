@@ -3,40 +3,40 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getImageMod {
   
-  @JSImport("@pulumi/aws/ecr/getImage", "getImage")
+  @JSImport("@pulumi/aws/ecr/getImage", JSImport.Namespace)
   @js.native
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = js.native
-  @JSImport("@pulumi/aws/ecr/getImage", "getImage")
-  @js.native
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
+  @scala.inline
+  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
+  
   trait GetImageArgs extends StObject {
     
     /**
       * The sha256 digest of the image manifest. At least one of `imageDigest` or `imageTag` must be specified.
       */
-    val imageDigest: js.UndefOr[String] = js.native
+    val imageDigest: js.UndefOr[String] = js.undefined
     
     /**
       * The tag associated with this image. At least one of `imageDigest` or `imageTag` must be specified.
       */
-    val imageTag: js.UndefOr[String] = js.native
+    val imageTag: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the Registry where the repository resides.
       */
-    val registryId: js.UndefOr[String] = js.native
+    val registryId: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the ECR Repository.
       */
-    val repositoryName: String = js.native
+    val repositoryName: String
   }
   object GetImageArgs {
     
@@ -72,36 +72,35 @@ object getImageMod {
     }
   }
   
-  @js.native
   trait GetImageResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val imageDigest: String = js.native
+    val imageDigest: String
     
     /**
       * The date and time, expressed as a unix timestamp, at which the current image was pushed to the repository.
       */
-    val imagePushedAt: Double = js.native
+    val imagePushedAt: Double
     
     /**
       * The size, in bytes, of the image in the repository.
       */
-    val imageSizeInBytes: Double = js.native
+    val imageSizeInBytes: Double
     
-    val imageTag: js.UndefOr[String] = js.native
+    val imageTag: js.UndefOr[String] = js.undefined
     
     /**
       * The list of tags associated with this image.
       */
-    val imageTags: js.Array[String] = js.native
+    val imageTags: js.Array[String]
     
-    val registryId: String = js.native
+    val registryId: String
     
-    val repositoryName: String = js.native
+    val repositoryName: String
   }
   object GetImageResult {
     

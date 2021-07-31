@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusNotifyPeerMessage extends StObject {
   
   /** ConsensusNotifyPeerMessage message */
-  var message: js.UndefOr[IConsensusPeerMessage | Null] = js.native
+  var message: js.UndefOr[IConsensusPeerMessage | Null] = js.undefined
   
   /** ConsensusNotifyPeerMessage senderId */
-  var senderId: js.UndefOr[Uint8Array | Null] = js.native
+  var senderId: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IConsensusNotifyPeerMessage {
   

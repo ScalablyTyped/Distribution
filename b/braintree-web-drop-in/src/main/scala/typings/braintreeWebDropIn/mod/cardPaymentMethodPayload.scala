@@ -5,36 +5,36 @@ import typings.braintreeWebDropIn.anon.Bin
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.CreditCard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait cardPaymentMethodPayload extends PaymentMethodPayload {
+trait cardPaymentMethodPayload
+  extends StObject
+     with PaymentMethodPayload {
   
-  var binData: typings.braintreeWebDropIn.mod.binData = js.native
+  var binData: typings.braintreeWebDropIn.mod.binData
   
-  var details: Bin = js.native
+  var details: Bin
   
-  var deviceData: js.UndefOr[String] = js.native
+  var deviceData: js.UndefOr[String] = js.undefined
   
-  var liabilityShiftPossible: js.UndefOr[Boolean] = js.native
+  var liabilityShiftPossible: js.UndefOr[Boolean] = js.undefined
   
-  var liabilityShifted: js.UndefOr[Boolean] = js.native
+  var liabilityShifted: js.UndefOr[Boolean] = js.undefined
   
-  var nonce: String = js.native
+  var nonce: String
   
-  var threeDSecureInfo: js.UndefOr[ThreeDSecureVerifyPayload] = js.native
+  var threeDSecureInfo: js.UndefOr[ThreeDSecureVerifyPayload] = js.undefined
   
-  var `type`: CreditCard = js.native
+  var `type`: CreditCard
   
-  var vaulted: js.UndefOr[Boolean] = js.native
+  var vaulted: js.UndefOr[Boolean] = js.undefined
 }
 object cardPaymentMethodPayload {
   
   @scala.inline
-  def apply(binData: binData, details: Bin, nonce: String, `type`: CreditCard): cardPaymentMethodPayload = {
+  def apply(binData: binData, details: Bin, nonce: String): cardPaymentMethodPayload = {
     val __obj = js.Dynamic.literal(binData = binData.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CreditCard")
     __obj.asInstanceOf[cardPaymentMethodPayload]
   }
   

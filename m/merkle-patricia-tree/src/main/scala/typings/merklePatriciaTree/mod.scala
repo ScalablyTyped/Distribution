@@ -8,7 +8,6 @@ import typings.merklePatriciaTree.baseTrieMod.Trie
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,34 +15,35 @@ object mod {
   @JSImport("merkle-patricia-tree", "BaseTrie")
   @js.native
   class BaseTrie () extends Trie {
-    def this(db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]]) = this()
-    def this(db: js.UndefOr[scala.Nothing], root: Buffer) = this()
+    def this(db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]) = this()
     def this(db: Null, root: Buffer) = this()
-    def this(db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], root: Buffer) = this()
+    def this(db: Unit, root: Buffer) = this()
+    def this(db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]], root: Buffer) = this()
   }
   /* static members */
   object BaseTrie {
+    
+    @JSImport("merkle-patricia-tree", "BaseTrie")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a proof from a trie and key that can be verified using [[Trie.verifyProof]].
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree", "BaseTrie.createProof")
-    @js.native
-    def createProof(trie: Trie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def createProof(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Saves the nodes from a proof into the trie. If no trie is provided a new one wil be instantiated.
       * @param {Proof} proof
       * @param {Trie} trie
       */
-    @JSImport("merkle-patricia-tree", "BaseTrie.fromProof")
-    @js.native
-    def fromProof(proof: Proof): js.Promise[Trie] = js.native
-    @JSImport("merkle-patricia-tree", "BaseTrie.fromProof")
-    @js.native
-    def fromProof(proof: Proof, trie: Trie): js.Promise[Trie] = js.native
+    @scala.inline
+    def fromProof(proof: Proof): js.Promise[Trie] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Trie]]
+    @scala.inline
+    def fromProof(proof: Proof, trie: Trie): js.Promise[Trie] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any], trie.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Trie]]
     
     /**
       * prove has been renamed to [[Trie.createProof]].
@@ -51,9 +51,8 @@ object mod {
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree", "BaseTrie.prove")
-    @js.native
-    def prove(trie: Trie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def prove(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Verifies a proof.
@@ -63,9 +62,8 @@ object mod {
       * @throws If proof is found to be invalid.
       * @returns The value from the key.
       */
-    @JSImport("merkle-patricia-tree", "BaseTrie.verifyProof")
-    @js.native
-    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = js.native
+    @scala.inline
+    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyProof")(rootHash.asInstanceOf[js.Any], key.asInstanceOf[js.Any], proof.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | Null]]
   }
   
   @JSImport("merkle-patricia-tree", "CheckpointTrie")
@@ -84,14 +82,17 @@ object mod {
   /* static members */
   object SecureTrie {
     
+    @JSImport("merkle-patricia-tree", "SecureTrie")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a proof that can be verified using [[SecureTrie.verifyProof]].
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree", "SecureTrie.createProof")
-    @js.native
-    def createProof(trie: typings.merklePatriciaTree.secureMod.SecureTrie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def createProof(trie: typings.merklePatriciaTree.secureMod.SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * prove has been renamed to [[SecureTrie.createProof]].
@@ -99,9 +100,8 @@ object mod {
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree", "SecureTrie.prove")
-    @js.native
-    def prove(trie: typings.merklePatriciaTree.secureMod.SecureTrie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def prove(trie: typings.merklePatriciaTree.secureMod.SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Verifies a proof.
@@ -111,8 +111,7 @@ object mod {
       * @throws If proof is found to be invalid.
       * @returns The value from the key.
       */
-    @JSImport("merkle-patricia-tree", "SecureTrie.verifyProof")
-    @js.native
-    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = js.native
+    @scala.inline
+    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyProof")(rootHash.asInstanceOf[js.Any], key.asInstanceOf[js.Any], proof.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | Null]]
   }
 }

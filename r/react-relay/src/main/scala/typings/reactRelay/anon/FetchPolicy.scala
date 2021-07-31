@@ -3,15 +3,13 @@ package typings.reactRelay.anon
 import typings.relayRuntime.relayRuntimeTypesMod.FetchQueryFetchPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchPolicy extends StObject {
   
-  var fetchPolicy: js.UndefOr[FetchQueryFetchPolicy] = js.native
+  var fetchPolicy: js.UndefOr[FetchQueryFetchPolicy] = js.undefined
   
-  var networkCacheConfig: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.CacheConfig] = js.native
+  var networkCacheConfig: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.CacheConfig] = js.undefined
 }
 object FetchPolicy {
   

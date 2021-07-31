@@ -3,35 +3,33 @@ package typings.angularFormly.AngularFormly
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFieldGroup extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var elementAttributes: js.UndefOr[String] = js.native
+  var elementAttributes: js.UndefOr[String] = js.undefined
   
-  var fieldGroup: js.UndefOr[IFieldArray] = js.native
+  var fieldGroup: js.UndefOr[IFieldArray] = js.undefined
   
-  var form: js.UndefOr[js.Object] = js.native
+  var form: js.UndefOr[js.Object] = js.undefined
   
-  var hide: js.UndefOr[Boolean] = js.native
+  var hide: js.UndefOr[Boolean] = js.undefined
   
-  var hideExpression: js.UndefOr[String | IExpressionFunction] = js.native
+  var hideExpression: js.UndefOr[String | IExpressionFunction] = js.undefined
   
-  var key: js.UndefOr[String | Double] = js.native
+  var key: js.UndefOr[String | Double] = js.undefined
   
-  var model: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+  var model: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
   
-  var options: js.UndefOr[IFormOptionsAPI] = js.native
+  var options: js.UndefOr[IFormOptionsAPI] = js.undefined
   
-  var templateOptions: js.UndefOr[ITemplateOptions] = js.native
+  var templateOptions: js.UndefOr[ITemplateOptions] = js.undefined
   
-  var wrapper: js.UndefOr[String | js.Array[String]] = js.native
+  var wrapper: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IFieldGroup {
   

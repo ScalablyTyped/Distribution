@@ -2,23 +2,21 @@ package typings.reactNativeCommunityCameraroll
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Altitude extends StObject {
     
-    var altitude: js.UndefOr[Double] = js.native
+    var altitude: js.UndefOr[Double] = js.undefined
     
-    var heading: js.UndefOr[Double] = js.native
+    var heading: js.UndefOr[Double] = js.undefined
     
-    var latitude: js.UndefOr[Double] = js.native
+    var latitude: js.UndefOr[Double] = js.undefined
     
-    var longitude: js.UndefOr[Double] = js.native
+    var longitude: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object Altitude {
     
@@ -63,14 +61,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Endcursor extends StObject {
     
-    var end_cursor: js.UndefOr[String] = js.native
+    var end_cursor: js.UndefOr[String] = js.undefined
     
-    var has_next_page: Boolean = js.native
+    var has_next_page: Boolean
     
-    var start_cursor: js.UndefOr[String] = js.native
+    var start_cursor: js.UndefOr[String] = js.undefined
   }
   object Endcursor {
     
@@ -100,34 +97,33 @@ object anon {
     }
   }
   
-  @js.native
   trait FileSize extends StObject {
     
     /** Only set if the `include` parameter contains `fileSize`. */
-    var fileSize: Double | Null = js.native
+    var fileSize: Double | Null
     
     /** Only set if the `include` parameter contains `filename`. */
-    var filename: String | Null = js.native
+    var filename: String | Null
     
     /** Only set if the `include` parameter contains `imageSize`. */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Only set if the `include` parameter contains `playableDuration`.
       * Will be null for images.
       */
-    var playableDuration: Double | Null = js.native
+    var playableDuration: Double | Null
     
-    var uri: String = js.native
+    var uri: String
     
     /** Only set if the `include` parameter contains `imageSize`. */
-    var width: Double = js.native
+    var width: Double
   }
   object FileSize {
     
     @scala.inline
     def apply(height: Double, uri: String, width: Double): FileSize = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], fileSize = null, filename = null, playableDuration = null)
       __obj.asInstanceOf[FileSize]
     }
     
@@ -163,26 +159,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Groupname extends StObject {
     
-    var group_name: String = js.native
+    var group_name: String
     
-    var image: FileSize = js.native
+    var image: FileSize
     
     /** Only set if the `include` parameter contains `location`. */
-    var location: Altitude | Null = js.native
+    var location: Altitude | Null
     
     /** Timestamp in seconds. */
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Groupname {
     
     @scala.inline
     def apply(group_name: String, image: FileSize, timestamp: Double, `type`: String): Groupname = {
-      val __obj = js.Dynamic.literal(group_name = group_name.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(group_name = group_name.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], location = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Groupname]
     }

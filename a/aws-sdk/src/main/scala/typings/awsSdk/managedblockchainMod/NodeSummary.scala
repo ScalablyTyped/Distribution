@@ -2,36 +2,34 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeSummary extends StObject {
   
   /**
     * The Availability Zone in which the node exists.
     */
-  var AvailabilityZone: js.UndefOr[AvailabilityZoneString] = js.native
+  var AvailabilityZone: js.UndefOr[AvailabilityZoneString] = js.undefined
   
   /**
     * The date and time that the node was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The unique identifier of the node.
     */
-  var Id: js.UndefOr[ResourceIdString] = js.native
+  var Id: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The EC2 instance type for the node.
     */
-  var InstanceType: js.UndefOr[InstanceTypeString] = js.native
+  var InstanceType: js.UndefOr[InstanceTypeString] = js.undefined
   
   /**
     * The status of the node.
     */
-  var Status: js.UndefOr[NodeStatus] = js.native
+  var Status: js.UndefOr[NodeStatus] = js.undefined
 }
 object NodeSummary {
   

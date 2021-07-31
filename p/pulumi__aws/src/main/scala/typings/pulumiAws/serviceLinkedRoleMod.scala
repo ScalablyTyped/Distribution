@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceLinkedRoleMod {
@@ -68,6 +67,10 @@ object serviceLinkedRoleMod {
   /* static members */
   object ServiceLinkedRole {
     
+    @JSImport("@pulumi/aws/iam/serviceLinkedRole", "ServiceLinkedRole")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ServiceLinkedRole resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,45 +80,39 @@ object serviceLinkedRoleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/serviceLinkedRole", "ServiceLinkedRole.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ServiceLinkedRole = js.native
-    @JSImport("@pulumi/aws/iam/serviceLinkedRole", "ServiceLinkedRole.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ServiceLinkedRole = js.native
-    @JSImport("@pulumi/aws/iam/serviceLinkedRole", "ServiceLinkedRole.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceLinkedRoleState): ServiceLinkedRole = js.native
-    @JSImport("@pulumi/aws/iam/serviceLinkedRole", "ServiceLinkedRole.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceLinkedRoleState, opts: CustomResourceOptions): ServiceLinkedRole = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceLinkedRoleState): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceLinkedRoleState, opts: CustomResourceOptions): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
     
     /**
       * Returns true if the given object is an instance of ServiceLinkedRole.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/serviceLinkedRole", "ServiceLinkedRole.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean]
   }
   
-  @js.native
   trait ServiceLinkedRoleArgs extends StObject {
     
     /**
       * The AWS service to which this role is attached. You use a string similar to a URL but without the `http://` in front. For example: `elasticbeanstalk.amazonaws.com`. To find the full list of services that support service-linked roles, check [the docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html).
       */
-    val awsServiceName: Input[String] = js.native
+    val awsServiceName: Input[String]
     
     /**
       * Additional string appended to the role name. Not all AWS services support custom suffixes.
       */
-    val customSuffix: js.UndefOr[Input[String]] = js.native
+    val customSuffix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the role.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
   }
   object ServiceLinkedRoleArgs {
     
@@ -145,48 +142,47 @@ object serviceLinkedRoleMod {
     }
   }
   
-  @js.native
   trait ServiceLinkedRoleState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the role.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS service to which this role is attached. You use a string similar to a URL but without the `http://` in front. For example: `elasticbeanstalk.amazonaws.com`. To find the full list of services that support service-linked roles, check [the docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html).
       */
-    val awsServiceName: js.UndefOr[Input[String]] = js.native
+    val awsServiceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The creation date of the IAM role.
       */
-    val createDate: js.UndefOr[Input[String]] = js.native
+    val createDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Additional string appended to the role name. Not all AWS services support custom suffixes.
       */
-    val customSuffix: js.UndefOr[Input[String]] = js.native
+    val customSuffix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the role.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the role.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The path of the role.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The stable and unique string identifying the role.
       */
-    val uniqueId: js.UndefOr[Input[String]] = js.native
+    val uniqueId: js.UndefOr[Input[String]] = js.undefined
   }
   object ServiceLinkedRoleState {
     

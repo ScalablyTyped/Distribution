@@ -2,14 +2,14 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.10.1
-@js.native
-trait WebCLUserEvent extends WebCLEvent {
+trait WebCLUserEvent
+  extends StObject
+     with WebCLEvent {
   
-  def setStatus(executionStatus: CommandExecutionStatus): Unit = js.native
+  def setStatus(executionStatus: CommandExecutionStatus): Unit
 }
 object WebCLUserEvent {
   

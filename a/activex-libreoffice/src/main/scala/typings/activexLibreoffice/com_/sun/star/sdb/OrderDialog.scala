@@ -5,19 +5,19 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface could be incomplete since I derived it from its places of use.
   * @since LibreOffice 4.1
   */
-@js.native
-trait OrderDialog extends XExecutableDialog {
+trait OrderDialog
+  extends StObject
+     with XExecutableDialog {
   
-  def createDefault(): Unit = js.native
+  def createDefault(): Unit
   
-  def createWithQuery(QueryComposer: XSingleSelectQueryComposer, RowSet: XPropertySet): Unit = js.native
+  def createWithQuery(QueryComposer: XSingleSelectQueryComposer, RowSet: XPropertySet): Unit
 }
 object OrderDialog {
   

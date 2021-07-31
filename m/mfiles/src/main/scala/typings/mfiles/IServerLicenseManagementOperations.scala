@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IServerLicenseManagementOperations extends StObject {
   
-  def GetLicenseStatus(): ILicenseStatus = js.native
+  def GetLicenseStatus(): ILicenseStatus
   
-  def SetLicenseCodeAndSerialNumber(SerialNumber: String, LicenseCode: String): Unit = js.native
+  def SetLicenseCodeAndSerialNumber(SerialNumber: String, LicenseCode: String): Unit
 }
 object IServerLicenseManagementOperations {
   

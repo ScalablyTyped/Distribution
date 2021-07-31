@@ -3,56 +3,54 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultSecurityGroupEgress extends StObject {
   
   /**
     * List of CIDR blocks.
     */
-  var cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * Description of this egress rule.
     */
-  var description: js.UndefOr[Input[String]] = js.native
+  var description: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The start port (or ICMP type number if protocol is "icmp")
     */
-  var fromPort: Input[Double] = js.native
+  var fromPort: Input[Double]
   
   /**
     * List of IPv6 CIDR blocks.
     */
-  var ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * List of prefix list IDs (for allowing access to VPC endpoints)
     */
-  var prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * The protocol. If you select a protocol of "-1" (semantically equivalent to `"all"`, which is not a valid value here), you must specify a "fromPort" and "toPort" equal to 0. If not icmp, tcp, udp, or "-1" use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
     */
-  var protocol: Input[String] = js.native
+  var protocol: Input[String]
   
   /**
     * List of security group Group Names if using EC2-Classic, or Group IDs if using a VPC.
     */
-  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * If true, the security group itself will be added as a source to this egress rule.
     */
-  var self: js.UndefOr[Input[Boolean]] = js.native
+  var self: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The end range port (or ICMP code if protocol is "icmp").
     */
-  var toPort: Input[Double] = js.native
+  var toPort: Input[Double]
 }
 object DefaultSecurityGroupEgress {
   

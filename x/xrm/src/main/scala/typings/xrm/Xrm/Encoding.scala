@@ -2,14 +2,12 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for Xrm.Encoding API
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-encoding External Link: Xrm.Encoding (Client API reference)}
   */
-@js.native
 trait Encoding extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait Encoding extends StObject {
     * @param arg String to be encoded.
     * @returns Encoded string.
     */
-  def xmlAttributeEncode(arg: String): String = js.native
+  def xmlAttributeEncode(arg: String): String
   
   /**
     * Applies XML encoding to a string.
     * @param arg String to be encoded.
     * @returns Encoded string.
     */
-  def xmlEncode(arg: String): String = js.native
+  def xmlEncode(arg: String): String
 }
 object Encoding {
   

@@ -22,10 +22,8 @@ import typings.nodeRedRuntime.anon.Track
 import typings.nodeRedRuntime.anon.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsModule extends StObject {
   
   /**
@@ -36,7 +34,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def abortMerge(opts: ReqUser): js.Promise[js.Object] = js.native
+  def abortMerge(opts: ReqUser): js.Promise[js.Object]
   
   /**
     *
@@ -49,9 +47,9 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def addRemote(opts: IdRemote): js.Promise[js.Object] = js.native
+  def addRemote(opts: IdRemote): js.Promise[js.Object]
   
-  def available(): js.Promise[Boolean] = js.native
+  def available(): js.Promise[Boolean]
   
   /**
     * Commits the current staged files
@@ -62,7 +60,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def commit(opts: Message): js.Promise[js.Object] = js.native
+  def commit(opts: Message): js.Promise[js.Object]
   
   /**
     * Create a new project
@@ -72,7 +70,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def createProject(opts: Project): js.Promise[js.Object] = js.native
+  def createProject(opts: Project): js.Promise[js.Object]
   
   /**
     * Deletes a branch
@@ -84,7 +82,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def deleteBranch(opts: Force): js.Promise[js.Object] = js.native
+  def deleteBranch(opts: Force): js.Promise[js.Object]
   
   /**
     * Deletes a project
@@ -94,7 +92,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def deleteProject(opts: ReqUser): js.Promise[js.Object] = js.native
+  def deleteProject(opts: ReqUser): js.Promise[js.Object]
   
   /**
     * Gets the active project
@@ -103,7 +101,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the active project
     */
-  def getActiveProject(opts: typings.nodeRedRuntime.anon.User): js.Promise[js.Object] = js.native
+  def getActiveProject(opts: typings.nodeRedRuntime.anon.User): js.Promise[js.Object]
   
   /**
     * Gets the status of a branch
@@ -114,7 +112,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the status of the branch
     */
-  def getBranchStatus(opts: Branch): js.Promise[js.Object] = js.native
+  def getBranchStatus(opts: Branch): js.Promise[js.Object]
   
   /**
     * Get a list of local branches
@@ -125,7 +123,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns a list of the local branches
     */
-  def getBranches(opts: Remote): js.Promise[js.Object] = js.native
+  def getBranches(opts: Remote): js.Promise[js.Object]
   
   /**
     * Gets the details of a single commit
@@ -136,7 +134,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the commit details
     */
-  def getCommit(opts: Sha): js.Promise[js.Object] = js.native
+  def getCommit(opts: Sha): js.Promise[js.Object]
   
   /**
     * Gets the commit history of the project
@@ -148,7 +146,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns an array of commits
     */
-  def getCommits(opts: Before): js.Promise[js.Array[js.Object]] = js.native
+  def getCommits(opts: Before): js.Promise[js.Array[js.Object]]
   
   /**
     * Gets the contents of a file
@@ -160,7 +158,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the content of the file
     */
-  def getFile(opts: Tree): js.Promise[String] = js.native
+  def getFile(opts: Tree): js.Promise[String]
   
   /**
     * Get the diff of a file
@@ -172,7 +170,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the requested diff
     */
-  def getFileDiff(opts: ReqType): js.Promise[js.Object] = js.native
+  def getFileDiff(opts: ReqType): js.Promise[js.Object]
   
   /**
     * Gets a listing of the files in the project
@@ -182,7 +180,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the file listing
     */
-  def getFiles(opts: ReqUser): js.Promise[js.Object] = js.native
+  def getFiles(opts: ReqUser): js.Promise[js.Object]
   
   /**
     * Gets a projects metadata
@@ -192,7 +190,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the project metadata
     */
-  def getProject(opts: ReqUser): js.Promise[js.Object] = js.native
+  def getProject(opts: ReqUser): js.Promise[js.Object]
   
   /**
     * Gets a list of the project remotes
@@ -202,7 +200,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns a list of project remotes
     */
-  def getRemotes(opts: ReqUser): js.Promise[js.Object] = js.native
+  def getRemotes(opts: ReqUser): js.Promise[js.Object]
   
   /**
     * Gets current git status of a project
@@ -213,7 +211,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the project status
     */
-  def getStatus(opts: Remote): js.Promise[js.Object] = js.native
+  def getStatus(opts: Remote): js.Promise[js.Object]
   
   /**
     * Initialises an empty project
@@ -224,7 +222,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def initialiseProject(opts: IdProject): js.Promise[js.Object] = js.native
+  def initialiseProject(opts: IdProject): js.Promise[js.Object]
   
   /**
     * List projects known to the runtime
@@ -233,7 +231,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def listProjects(opts: typings.nodeRedRuntime.anon.User): js.Promise[Unit] = js.native
+  def listProjects(opts: typings.nodeRedRuntime.anon.User): js.Promise[Unit]
   
   /**
     * Pull changes from the remote
@@ -245,7 +243,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def pull(opts: AllowUnrelatedHistories): js.Promise[js.Object] = js.native
+  def pull(opts: AllowUnrelatedHistories): js.Promise[js.Object]
   
   /**
     * Push changes to a remote
@@ -257,7 +255,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def push(opts: Track): js.Promise[js.Object] = js.native
+  def push(opts: Track): js.Promise[js.Object]
   
   /**
     * Remove a project remote
@@ -268,7 +266,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def removeRemote(opts: RemoteReq): js.Promise[js.Object] = js.native
+  def removeRemote(opts: RemoteReq): js.Promise[js.Object]
   
   /**
     * Resolves a merge conflict
@@ -280,7 +278,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def resolveMerge(opts: Resolutions): js.Promise[js.Object] = js.native
+  def resolveMerge(opts: Resolutions): js.Promise[js.Object]
   
   /**
     * Reverts changes to a file back to its commited version
@@ -291,7 +289,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def revertFile(opts: PathReq): js.Promise[js.Object] = js.native
+  def revertFile(opts: PathReq): js.Promise[js.Object]
   
   /**
     *
@@ -301,7 +299,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def setActiveProject(opts: ReqUser): js.Promise[js.Object] = js.native
+  def setActiveProject(opts: ReqUser): js.Promise[js.Object]
   
   /**
     * Sets the current local branch
@@ -313,7 +311,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def setBranch(opts: Create): js.Promise[js.Object] = js.native
+  def setBranch(opts: Create): js.Promise[js.Object]
   
   /**
     *
@@ -324,7 +322,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def stageFile(opts: IdPath): js.Promise[js.Object] = js.native
+  def stageFile(opts: IdPath): js.Promise[js.Object]
   
   /**
     *
@@ -335,7 +333,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def unstageFile(opts: PathReq): js.Promise[js.Object] = js.native
+  def unstageFile(opts: PathReq): js.Promise[js.Object]
   
   /**
     * Updates the metadata of an existing project
@@ -346,7 +344,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def updateProject(opts: IdProject): js.Promise[js.Object] = js.native
+  def updateProject(opts: IdProject): js.Promise[js.Object]
   
   /**
     *
@@ -358,7 +356,7 @@ trait ProjectsModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def updateRemote(opts: IdRemoteReq): js.Promise[js.Object] = js.native
+  def updateRemote(opts: IdRemoteReq): js.Promise[js.Object]
 }
 object ProjectsModule {
   

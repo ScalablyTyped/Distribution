@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.iconButtonMod.IconButton.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IconButton extends Shortcut {

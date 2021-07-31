@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Taxonomy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait ChangeItemType extends StObject
 object ChangeItemType extends StObject {
   
   @js.native
-  sealed trait group extends ChangeItemType
+  sealed trait group
+    extends StObject
+       with ChangeItemType
   
   @js.native
-  sealed trait site extends ChangeItemType
+  sealed trait site
+    extends StObject
+       with ChangeItemType
   
   @js.native
-  sealed trait term extends ChangeItemType
+  sealed trait term
+    extends StObject
+       with ChangeItemType
   
   @js.native
-  sealed trait termSet extends ChangeItemType
+  sealed trait termSet
+    extends StObject
+       with ChangeItemType
   
   @js.native
-  sealed trait termStore extends ChangeItemType
+  sealed trait termStore
+    extends StObject
+       with ChangeItemType
   
   @js.native
-  sealed trait unknown extends ChangeItemType
+  sealed trait unknown
+    extends StObject
+       with ChangeItemType
 }

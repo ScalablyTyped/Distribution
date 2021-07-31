@@ -2,7 +2,6 @@ package typings.stackMapper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,9 +14,12 @@ object mod {
     * @param {Object} sourcemap source map for the generated file
     * @return {StackMapper} stack mapper for the particular source map
     */
+  @scala.inline
+  def apply(sourcemap: js.Any): StackMapper = ^.asInstanceOf[js.Dynamic].apply(sourcemap.asInstanceOf[js.Any]).asInstanceOf[StackMapper]
+  
   @JSImport("stack-mapper", JSImport.Namespace)
   @js.native
-  def apply(sourcemap: js.Any): StackMapper = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("stack-mapper", "StackMapper")
   @js.native
@@ -38,14 +40,13 @@ object mod {
     def map(stack: js.Array[Callsite]): js.Array[Callsite] = js.native
   }
   
-  @js.native
   trait Callsite extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var filename: String = js.native
+    var filename: String
     
-    var line: Double = js.native
+    var line: Double
   }
   object Callsite {
     

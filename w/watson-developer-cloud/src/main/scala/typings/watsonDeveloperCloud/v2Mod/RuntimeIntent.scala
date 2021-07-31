@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An intent identified in the user input. */
-@js.native
 trait RuntimeIntent extends StObject {
   
   /** A decimal percentage that represents Watson's confidence in the intent. */
-  var confidence: Double = js.native
+  var confidence: Double
   
   /** The name of the recognized intent. */
-  var intent: String = js.native
+  var intent: String
 }
 object RuntimeIntent {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEmailIdentityRequest extends StObject {
   
   /**
     * The identity (that is, the email address or domain) that you want to delete.
     */
-  var EmailIdentity: Identity = js.native
+  var EmailIdentity: Identity
 }
 object DeleteEmailIdentityRequest {
   

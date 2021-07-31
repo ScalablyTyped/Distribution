@@ -2,46 +2,44 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDocumentTextDetectionResponse extends StObject {
   
   /**
     * The results of the text-detection operation.
     */
-  var Blocks: js.UndefOr[BlockList] = js.native
+  var Blocks: js.UndefOr[BlockList] = js.undefined
   
   /**
     * 
     */
-  var DetectDocumentTextModelVersion: js.UndefOr[String] = js.native
+  var DetectDocumentTextModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Information about a document that Amazon Textract processed. DocumentMetadata is returned in every page of paginated responses from an Amazon Textract video operation.
     */
-  var DocumentMetadata: js.UndefOr[typings.awsSdk.textractMod.DocumentMetadata] = js.native
+  var DocumentMetadata: js.UndefOr[typings.awsSdk.textractMod.DocumentMetadata] = js.undefined
   
   /**
     * The current status of the text detection job.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.textractMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.textractMod.JobStatus] = js.undefined
   
   /**
     * If the response is truncated, Amazon Textract returns this token. You can use this token in the subsequent request to retrieve the next set of text-detection results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * Returns if the detection job could not be completed. Contains explanation for what error occured. 
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.textractMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.textractMod.StatusMessage] = js.undefined
   
   /**
     * A list of warnings that occurred during the text-detection operation for the document.
     */
-  var Warnings: js.UndefOr[typings.awsSdk.textractMod.Warnings] = js.native
+  var Warnings: js.UndefOr[typings.awsSdk.textractMod.Warnings] = js.undefined
 }
 object GetDocumentTextDetectionResponse {
   

@@ -2,105 +2,103 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
-  var animation: js.UndefOr[Animation] = js.native
+  var animation: js.UndefOr[Animation] = js.undefined
   
-  var audio: js.UndefOr[Audio] = js.native
+  var audio: js.UndefOr[Audio] = js.undefined
   
-  var author_signature: js.UndefOr[String] = js.native
+  var author_signature: js.UndefOr[String] = js.undefined
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var caption_entities: js.UndefOr[js.Array[MessageEntity]] = js.native
+  var caption_entities: js.UndefOr[js.Array[MessageEntity]] = js.undefined
   
-  var channel_chat_created: js.UndefOr[Boolean] = js.native
+  var channel_chat_created: js.UndefOr[Boolean] = js.undefined
   
-  var chat: Chat = js.native
+  var chat: Chat
   
-  var connected_website: js.UndefOr[String] = js.native
+  var connected_website: js.UndefOr[String] = js.undefined
   
-  var contact: js.UndefOr[Contact] = js.native
+  var contact: js.UndefOr[Contact] = js.undefined
   
-  var date: Double = js.native
+  var date: Double
   
-  var delete_chat_photo: js.UndefOr[Boolean] = js.native
+  var delete_chat_photo: js.UndefOr[Boolean] = js.undefined
   
-  var document: js.UndefOr[Document] = js.native
+  var document: js.UndefOr[Document] = js.undefined
   
-  var edit_date: js.UndefOr[Double] = js.native
+  var edit_date: js.UndefOr[Double] = js.undefined
   
-  var entities: js.UndefOr[js.Array[MessageEntity]] = js.native
+  var entities: js.UndefOr[js.Array[MessageEntity]] = js.undefined
   
-  var forward_date: js.UndefOr[Double] = js.native
+  var forward_date: js.UndefOr[Double] = js.undefined
   
-  var forward_from: js.UndefOr[User] = js.native
+  var forward_from: js.UndefOr[User] = js.undefined
   
-  var forward_from_chat: js.UndefOr[Chat] = js.native
+  var forward_from_chat: js.UndefOr[Chat] = js.undefined
   
-  var forward_from_message_id: js.UndefOr[Double] = js.native
+  var forward_from_message_id: js.UndefOr[Double] = js.undefined
   
-  var forward_sender_name: js.UndefOr[String] = js.native
+  var forward_sender_name: js.UndefOr[String] = js.undefined
   
-  var forward_signature: js.UndefOr[String] = js.native
+  var forward_signature: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[User] = js.native
+  var from: js.UndefOr[User] = js.undefined
   
-  var game: js.UndefOr[Game] = js.native
+  var game: js.UndefOr[Game] = js.undefined
   
-  var group_chat_created: js.UndefOr[Boolean] = js.native
+  var group_chat_created: js.UndefOr[Boolean] = js.undefined
   
-  var invoice: js.UndefOr[Invoice] = js.native
+  var invoice: js.UndefOr[Invoice] = js.undefined
   
-  var left_chat_member: js.UndefOr[User] = js.native
+  var left_chat_member: js.UndefOr[User] = js.undefined
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var media_group_id: js.UndefOr[String] = js.native
+  var media_group_id: js.UndefOr[String] = js.undefined
   
-  var message_id: Double = js.native
+  var message_id: Double
   
-  var migrate_from_chat_id: js.UndefOr[Double] = js.native
+  var migrate_from_chat_id: js.UndefOr[Double] = js.undefined
   
-  var migrate_to_chat_id: js.UndefOr[Double] = js.native
+  var migrate_to_chat_id: js.UndefOr[Double] = js.undefined
   
-  var new_chat_members: js.UndefOr[js.Array[User]] = js.native
+  var new_chat_members: js.UndefOr[js.Array[User]] = js.undefined
   
-  var new_chat_photo: js.UndefOr[js.Array[PhotoSize]] = js.native
+  var new_chat_photo: js.UndefOr[js.Array[PhotoSize]] = js.undefined
   
-  var new_chat_title: js.UndefOr[String] = js.native
+  var new_chat_title: js.UndefOr[String] = js.undefined
   
-  var passport_data: js.UndefOr[PassportData] = js.native
+  var passport_data: js.UndefOr[PassportData] = js.undefined
   
-  var photo: js.UndefOr[js.Array[PhotoSize]] = js.native
+  var photo: js.UndefOr[js.Array[PhotoSize]] = js.undefined
   
-  var pinned_message: js.UndefOr[Message] = js.native
+  var pinned_message: js.UndefOr[Message] = js.undefined
   
-  var poll: js.UndefOr[Poll] = js.native
+  var poll: js.UndefOr[Poll] = js.undefined
   
-  var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.native
+  var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.undefined
   
-  var reply_to_message: js.UndefOr[Message] = js.native
+  var reply_to_message: js.UndefOr[Message] = js.undefined
   
-  var sticker: js.UndefOr[Sticker] = js.native
+  var sticker: js.UndefOr[Sticker] = js.undefined
   
-  var successful_payment: js.UndefOr[SuccessfulPayment] = js.native
+  var successful_payment: js.UndefOr[SuccessfulPayment] = js.undefined
   
-  var supergroup_chat_created: js.UndefOr[Boolean] = js.native
+  var supergroup_chat_created: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var venue: js.UndefOr[Venue] = js.native
+  var venue: js.UndefOr[Venue] = js.undefined
   
-  var video: js.UndefOr[Video] = js.native
+  var video: js.UndefOr[Video] = js.undefined
   
-  var video_note: js.UndefOr[VideoNote] = js.native
+  var video_note: js.UndefOr[VideoNote] = js.undefined
   
-  var voice: js.UndefOr[Voice] = js.native
+  var voice: js.UndefOr[Voice] = js.undefined
 }
 object Message {
   

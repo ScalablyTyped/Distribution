@@ -2,31 +2,31 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NestedResults extends Result {
+trait NestedResults
+  extends StObject
+     with Result {
   
-  def addResult(result: Result): Unit = js.native
+  def addResult(result: Result): Unit
   
-  var description: String = js.native
+  var description: String
   
-  var failedCount: Double = js.native
+  var failedCount: Double
   
-  def getItems(): js.Array[Result] = js.native
+  def getItems(): js.Array[Result]
   
-  def log(values: js.Any): Unit = js.native
+  def log(values: js.Any): Unit
   
-  def passed(): Boolean = js.native
+  def passed(): Boolean
   
-  var passedCount: Double = js.native
+  var passedCount: Double
   
-  def rollupCounts(result: NestedResults): Unit = js.native
+  def rollupCounts(result: NestedResults): Unit
   
-  var skipped: Boolean = js.native
+  var skipped: Boolean
   
-  var totalCount: Double = js.native
+  var totalCount: Double
 }
 object NestedResults {
   

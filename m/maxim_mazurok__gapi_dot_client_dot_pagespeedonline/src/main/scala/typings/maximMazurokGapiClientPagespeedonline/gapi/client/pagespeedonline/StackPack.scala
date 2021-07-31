@@ -3,27 +3,25 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackPack extends StObject {
   
   /** The stack pack advice strings. */
   var descriptions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The stack pack icon data uri. */
-  var iconDataURL: js.UndefOr[String] = js.native
+  var iconDataURL: js.UndefOr[String] = js.undefined
   
   /** The stack pack id. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The stack pack title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object StackPack {
   
@@ -40,7 +38,7 @@ object StackPack {
     def setDescriptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack & TopLevel[js.Any]
     ): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
     @scala.inline

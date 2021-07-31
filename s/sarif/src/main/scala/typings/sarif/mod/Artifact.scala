@@ -4,78 +4,76 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sarif.mod.Artifact.roles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
   /**
     * The contents of the artifact.
     */
-  var contents: js.UndefOr[ArtifactContent] = js.native
+  var contents: js.UndefOr[ArtifactContent] = js.undefined
   
   /**
     * A short description of the artifact.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * Specifies the encoding for an artifact object that refers to a text file.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * A dictionary, each of whose keys is the name of a hash function and each of whose values is the hashed value of
     * the artifact produced by the specified hash function.
     */
-  var hashes: js.UndefOr[StringDictionary[String]] = js.native
+  var hashes: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The Coordinated Universal Time (UTC) date and time at which the artifact was most recently modified. See
     * "Date/time properties" in the SARIF spec for the required format.
     */
-  var lastModifiedTimeUtc: js.UndefOr[String] = js.native
+  var lastModifiedTimeUtc: js.UndefOr[String] = js.undefined
   
   /**
     * The length of the artifact in bytes.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The location of the artifact.
     */
-  var location: js.UndefOr[ArtifactLocation] = js.native
+  var location: js.UndefOr[ArtifactLocation] = js.undefined
   
   /**
     * The MIME type (RFC 2045) of the artifact.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The offset in bytes of the artifact within its containing artifact.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies the index of the immediate parent of the artifact, if this artifact is nested.
     */
-  var parentIndex: js.UndefOr[Double] = js.native
+  var parentIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the artifact.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The role or roles played by the artifact in the analysis.
     */
-  var roles: js.UndefOr[js.Array[roles]] = js.native
+  var roles: js.UndefOr[js.Array[roles]] = js.undefined
   
   /**
     * Specifies the source language for any artifact object that refers to a text file that contains source code.
     */
-  var sourceLanguage: js.UndefOr[String] = js.native
+  var sourceLanguage: js.UndefOr[String] = js.undefined
 }
 object Artifact {
   
@@ -184,7 +182,7 @@ object Artifact {
     - typings.sarif.sarifStrings.renamed
     - typings.sarif.sarifStrings.uncontrolled
     - typings.sarif.sarifStrings.driver
-    - typings.sarif.sarifStrings.extension
+    - typings.sarif.sarifStrings.`extension`
     - typings.sarif.sarifStrings.translation
     - typings.sarif.sarifStrings.taxonomy
     - typings.sarif.sarifStrings.policy
@@ -220,7 +218,7 @@ object Artifact {
     def driver: typings.sarif.sarifStrings.driver = "driver".asInstanceOf[typings.sarif.sarifStrings.driver]
     
     @scala.inline
-    def extension: typings.sarif.sarifStrings.extension = "extension".asInstanceOf[typings.sarif.sarifStrings.extension]
+    def `extension`: typings.sarif.sarifStrings.`extension` = "extension".asInstanceOf[typings.sarif.sarifStrings.`extension`]
     
     @scala.inline
     def memoryContents: typings.sarif.sarifStrings.memoryContents = "memoryContents".asInstanceOf[typings.sarif.sarifStrings.memoryContents]

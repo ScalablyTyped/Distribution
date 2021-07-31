@@ -2,31 +2,31 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Tabs //////////////////////////////////////////////////
-@js.native
-trait TabsOptions extends TabsEvents {
+trait TabsOptions
+  extends StObject
+     with TabsEvents {
   
-  var active: js.UndefOr[js.Any] = js.native
+  var active: js.UndefOr[js.Any] = js.undefined
   
   // boolean or number
-  var classes: js.UndefOr[TabClasses] = js.native
+  var classes: js.UndefOr[TabClasses] = js.undefined
   
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[js.Any] = js.native
+  var disabled: js.UndefOr[js.Any] = js.undefined
   
   // boolean or []
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
-  var heightStyle: js.UndefOr[String] = js.native
+  var heightStyle: js.UndefOr[String] = js.undefined
   
-  var hide: js.UndefOr[js.Any] = js.native
+  var hide: js.UndefOr[js.Any] = js.undefined
   
   // boolean, number, string or object
-  var show: js.UndefOr[js.Any] = js.native
+  var show: js.UndefOr[js.Any] = js.undefined
 }
 object TabsOptions {
   

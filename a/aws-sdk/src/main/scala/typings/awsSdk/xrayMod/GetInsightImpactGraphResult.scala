@@ -2,46 +2,44 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightImpactGraphResult extends StObject {
   
   /**
     * The provided end time. 
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The insight's unique identifier.
     */
-  var InsightId: js.UndefOr[typings.awsSdk.xrayMod.InsightId] = js.native
+  var InsightId: js.UndefOr[typings.awsSdk.xrayMod.InsightId] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The time, in Unix seconds, at which the service graph ended.
     */
-  var ServiceGraphEndTime: js.UndefOr[Timestamp] = js.native
+  var ServiceGraphEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time, in Unix seconds, at which the service graph started.
     */
-  var ServiceGraphStartTime: js.UndefOr[Timestamp] = js.native
+  var ServiceGraphStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The AWS instrumented services related to the insight.
     */
-  var Services: js.UndefOr[InsightImpactGraphServiceList] = js.native
+  var Services: js.UndefOr[InsightImpactGraphServiceList] = js.undefined
   
   /**
     * The provided start time.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
 }
 object GetInsightImpactGraphResult {
   

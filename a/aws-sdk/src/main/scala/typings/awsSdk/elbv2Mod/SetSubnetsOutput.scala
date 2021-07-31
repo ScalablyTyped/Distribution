@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetSubnetsOutput extends StObject {
   
   /**
     * Information about the subnets.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.elbv2Mod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.elbv2Mod.AvailabilityZones] = js.undefined
   
   /**
     * [Network Load Balancers] The IP address type.
     */
-  var IpAddressType: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddressType] = js.native
+  var IpAddressType: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddressType] = js.undefined
 }
 object SetSubnetsOutput {
   

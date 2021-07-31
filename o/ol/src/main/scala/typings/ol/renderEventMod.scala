@@ -6,7 +6,6 @@ import typings.ol.renderEventTypeMod.EventType
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderEventMod {
@@ -16,28 +15,24 @@ object renderEventMod {
   class default protected () extends RenderEvent {
     def this(`type`: EventType) = this()
     def this(`type`: EventType, opt_inversePixelTransform: Transform) = this()
-    def this(
-      `type`: EventType,
-      opt_inversePixelTransform: js.UndefOr[scala.Nothing],
-      opt_frameState: FrameState
-    ) = this()
+    def this(`type`: EventType, opt_inversePixelTransform: Unit, opt_frameState: FrameState) = this()
     def this(`type`: EventType, opt_inversePixelTransform: Transform, opt_frameState: FrameState) = this()
     def this(
       `type`: EventType,
-      opt_inversePixelTransform: js.UndefOr[scala.Nothing],
-      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_inversePixelTransform: Unit,
+      opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D
     ) = this()
     def this(
       `type`: EventType,
-      opt_inversePixelTransform: js.UndefOr[scala.Nothing],
+      opt_inversePixelTransform: Unit,
       opt_frameState: FrameState,
       opt_context: CanvasRenderingContext2D
     ) = this()
     def this(
       `type`: EventType,
       opt_inversePixelTransform: Transform,
-      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D
     ) = this()
     def this(

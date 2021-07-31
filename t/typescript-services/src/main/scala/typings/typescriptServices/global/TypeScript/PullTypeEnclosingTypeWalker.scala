@@ -2,13 +2,13 @@ package typings.typescriptServices.global.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.PullTypeEnclosingTypeWalker")
 @js.native
 class PullTypeEnclosingTypeWalker ()
-  extends typings.typescriptServices.TypeScript.PullTypeEnclosingTypeWalker
+  extends StObject
+     with typings.typescriptServices.TypeScript.PullTypeEnclosingTypeWalker
 object PullTypeEnclosingTypeWalker {
   
   @JSGlobal("TypeScript.PullTypeEnclosingTypeWalker")

@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScoreAttributes extends StObject {
   
   /**
     * A relative ranking for how well the response matches the query.
     */
-  var ScoreConfidence: js.UndefOr[typings.awsSdk.kendraMod.ScoreConfidence] = js.native
+  var ScoreConfidence: js.UndefOr[typings.awsSdk.kendraMod.ScoreConfidence] = js.undefined
 }
 object ScoreAttributes {
   

@@ -2,15 +2,13 @@ package typings.libsodiumWrappers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringMessageTag extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var tag: Double = js.native
+  var tag: Double
 }
 object StringMessageTag {
   

@@ -2,27 +2,25 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfficeVersion extends StObject {
   
-  var assemblyVersion: String = js.native
+  var assemblyVersion: String
   
-  var majorBuildVersion: Double = js.native
+  var majorBuildVersion: Double
   
-  var majorVersion: String = js.native
+  var majorVersion: String
   
-  var majorVersionDotZero: String = js.native
+  var majorVersionDotZero: String
   
-  var previousMajorBuildVersion: Double = js.native
+  var previousMajorBuildVersion: Double
   
-  var previousVersion: String = js.native
+  var previousVersion: String
   
-  var previousVersionDotZero: String = js.native
+  var previousVersionDotZero: String
   
-  var wssMajorVersion: String = js.native
+  var wssMajorVersion: String
 }
 object OfficeVersion {
   

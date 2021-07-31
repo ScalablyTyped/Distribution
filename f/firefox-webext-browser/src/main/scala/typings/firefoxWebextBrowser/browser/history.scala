@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.browser.extensionTypes.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,20 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object history {
   
-  @js.native
   trait AddUrlDetails extends StObject {
     
     /** The title of the page. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** The transition type for this visit from its referrer. */
-    var transition: js.UndefOr[TransitionType] = js.native
+    var transition: js.UndefOr[TransitionType] = js.undefined
     
     /** The URL to add. Must be a valid URL that can be added to history. */
-    var url: String = js.native
+    var url: String
     
     /** The date when this visit occurred. */
-    var visitTime: js.UndefOr[Date] = js.native
+    var visitTime: js.UndefOr[Date] = js.undefined
   }
   object AddUrlDetails {
     
@@ -64,14 +62,13 @@ object history {
     }
   }
   
-  @js.native
   trait DeleteRangeRange extends StObject {
     
     /** Items added to history before this date. */
-    var endTime: Date = js.native
+    var endTime: Date
     
     /** Items added to history after this date. */
-    var startTime: Date = js.native
+    var startTime: Date
   }
   object DeleteRangeRange {
     
@@ -92,11 +89,10 @@ object history {
     }
   }
   
-  @js.native
   trait DeleteUrlDetails extends StObject {
     
     /** The URL to remove. */
-    var url: String = js.native
+    var url: String
   }
   object DeleteUrlDetails {
     
@@ -114,13 +110,12 @@ object history {
     }
   }
   
-  @js.native
   trait GetVisitsDetails extends StObject {
     
     /**
       * The URL for which to retrieve visit information. It must be in the format as returned from a call to history.search.
       */
-    var url: String = js.native
+    var url: String
   }
   object GetVisitsDetails {
     
@@ -139,26 +134,25 @@ object history {
   }
   
   /** An object encapsulating one result of a history query. */
-  @js.native
   trait HistoryItem extends StObject {
     
     /** The unique identifier for the item. */
-    var id: String = js.native
+    var id: String
     
     /** When this page was last loaded, represented in milliseconds since the epoch. */
-    var lastVisitTime: js.UndefOr[Double] = js.native
+    var lastVisitTime: js.UndefOr[Double] = js.undefined
     
     /** The title of the page when it was last loaded. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** The number of times the user has navigated to this page by typing in the address. */
-    var typedCount: js.UndefOr[Double] = js.native
+    var typedCount: js.UndefOr[Double] = js.undefined
     
     /** The URL navigated to by a user. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** The number of times the user has navigated to this page. */
-    var visitCount: js.UndefOr[Double] = js.native
+    var visitCount: js.UndefOr[Double] = js.undefined
   }
   object HistoryItem {
     
@@ -206,14 +200,13 @@ object history {
     }
   }
   
-  @js.native
   trait OnTitleChangedChanged extends StObject {
     
     /** The new title for the URL. */
-    var title: String = js.native
+    var title: String
     
     /** The URL for which the title has changed */
-    var url: String = js.native
+    var url: String
   }
   object OnTitleChangedChanged {
     
@@ -234,13 +227,12 @@ object history {
     }
   }
   
-  @js.native
   trait OnVisitRemovedRemoved extends StObject {
     
     /** True if all history was removed. If true, then urls will be empty. */
-    var allHistory: Boolean = js.native
+    var allHistory: Boolean
     
-    var urls: js.Array[String] = js.native
+    var urls: js.Array[String]
   }
   object OnVisitRemovedRemoved {
     
@@ -264,22 +256,21 @@ object history {
     }
   }
   
-  @js.native
   trait SearchQuery extends StObject {
     
     /** Limit results to those visited before this date. */
-    var endTime: js.UndefOr[Date] = js.native
+    var endTime: js.UndefOr[Date] = js.undefined
     
     /** The maximum number of results to retrieve. Defaults to 100. */
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
     
     /**
       * Limit results to those visited after this date. If not specified, this defaults to 24 hours in the past.
       */
-    var startTime: js.UndefOr[Date] = js.native
+    var startTime: js.UndefOr[Date] = js.undefined
     
     /** A free-text query to the history service. Leave empty to retrieve all pages. */
-    var text: String = js.native
+    var text: String
   }
   object SearchQuery {
     
@@ -368,23 +359,22 @@ object history {
   }
   
   /** An object encapsulating one visit to a URL. */
-  @js.native
   trait VisitItem extends StObject {
     
     /** The unique identifier for the item. */
-    var id: String = js.native
+    var id: String
     
     /** The visit ID of the referrer. */
-    var referringVisitId: String = js.native
+    var referringVisitId: String
     
     /** The transition type for this visit from its referrer. */
-    var transition: TransitionType = js.native
+    var transition: TransitionType
     
     /** The unique identifier for this visit. */
-    var visitId: String = js.native
+    var visitId: String
     
     /** When this visit occurred, represented in milliseconds since the epoch. */
-    var visitTime: js.UndefOr[Double] = js.native
+    var visitTime: js.UndefOr[Double] = js.undefined
   }
   object VisitItem {
     

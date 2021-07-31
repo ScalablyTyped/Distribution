@@ -13,7 +13,6 @@ import typings.tedious.tediousStrings.infoMessage
 import typings.tedious.tediousStrings.languageChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tedious", "Connection")
@@ -29,15 +28,15 @@ class Connection protected () extends EventEmitter {
     * @param isolationLevel The isolation level that the transaction is to be run with.
     */
   def beginTransaction(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  def beginTransaction(
-    callback: js.Function1[/* error */ js.UndefOr[Error], Unit],
-    name: js.UndefOr[scala.Nothing],
-    isolationLevel: ISOLATION_LEVEL
-  ): Unit = js.native
   def beginTransaction(callback: js.Function1[/* error */ js.UndefOr[Error], Unit], name: String): Unit = js.native
   def beginTransaction(
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit],
     name: String,
+    isolationLevel: ISOLATION_LEVEL
+  ): Unit = js.native
+  def beginTransaction(
+    callback: js.Function1[/* error */ js.UndefOr[Error], Unit],
+    name: Unit,
     isolationLevel: ISOLATION_LEVEL
   ): Unit = js.native
   
@@ -210,20 +209,6 @@ class Connection protected () extends EventEmitter {
       ], 
       Unit
     ],
-    name: js.UndefOr[scala.Nothing],
-    isolationLevel: ISOLATION_LEVEL
-  ): Unit = js.native
-  def transaction(
-    callback: js.Function2[
-      /* error */ Error, 
-      /* done */ js.Function3[
-        /* error */ js.UndefOr[Error], 
-        /* doneCallback */ js.UndefOr[js.Function2[/* error */ js.UndefOr[Error], /* repeated */ js.Any, Unit]], 
-        /* repeated */ js.Any, 
-        Unit
-      ], 
-      Unit
-    ],
     name: String
   ): Unit = js.native
   def transaction(
@@ -238,6 +223,20 @@ class Connection protected () extends EventEmitter {
       Unit
     ],
     name: String,
+    isolationLevel: ISOLATION_LEVEL
+  ): Unit = js.native
+  def transaction(
+    callback: js.Function2[
+      /* error */ Error, 
+      /* done */ js.Function3[
+        /* error */ js.UndefOr[Error], 
+        /* doneCallback */ js.UndefOr[js.Function2[/* error */ js.UndefOr[Error], /* repeated */ js.Any, Unit]], 
+        /* repeated */ js.Any, 
+        Unit
+      ], 
+      Unit
+    ],
+    name: Unit,
     isolationLevel: ISOLATION_LEVEL
   ): Unit = js.native
   

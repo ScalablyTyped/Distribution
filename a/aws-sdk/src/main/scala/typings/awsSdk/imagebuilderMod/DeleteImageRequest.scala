@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteImageRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image to delete. 
     */
-  var imageBuildVersionArn: ImageBuildVersionArn = js.native
+  var imageBuildVersionArn: ImageBuildVersionArn
 }
 object DeleteImageRequest {
   

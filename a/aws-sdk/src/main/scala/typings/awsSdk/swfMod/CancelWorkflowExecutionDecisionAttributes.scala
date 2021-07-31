@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelWorkflowExecutionDecisionAttributes extends StObject {
   
   /**
     *  Details of the cancellation.
     */
-  var details: js.UndefOr[Data] = js.native
+  var details: js.UndefOr[Data] = js.undefined
 }
 object CancelWorkflowExecutionDecisionAttributes {
   

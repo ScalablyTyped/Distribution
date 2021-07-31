@@ -31,22 +31,21 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This component integrates a preview view to a slide show of a presentation document into the desktop.
   * @since OOo 1.1.2
   */
-@js.native
 trait PreviewView
-  extends Controller
+  extends StObject
+     with Controller
      with XWindow
      with XDrawView
      with XPropertySet {
   
   /** This is the area that is currently visible. */
-  var VisibleArea: Rectangle = js.native
+  var VisibleArea: Rectangle
 }
 object PreviewView {
   

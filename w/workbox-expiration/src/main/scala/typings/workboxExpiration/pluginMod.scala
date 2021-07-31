@@ -8,14 +8,15 @@ import typings.workboxCore.workboxPluginMod.CachedResponseWillBeUsedCallbackPara
 import typings.workboxCore.workboxPluginMod.WorkboxPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
   @JSImport("workbox-expiration/Plugin", "Plugin")
   @js.native
-  class Plugin () extends WorkboxPlugin {
+  class Plugin ()
+    extends StObject
+       with WorkboxPlugin {
     def this(config: ExpirationPluginConfig) = this()
     
     @JSName("cacheDidUpdate")
@@ -31,14 +32,13 @@ object pluginMod {
     def deleteCacheAndMetadata(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait ExpirationPluginConfig extends StObject {
     
-    var maxAgeSeconds: js.UndefOr[Double] = js.native
+    var maxAgeSeconds: js.UndefOr[Double] = js.undefined
     
-    var maxEntries: js.UndefOr[Double] = js.native
+    var maxEntries: js.UndefOr[Double] = js.undefined
     
-    var purgeOnQuotaError: js.UndefOr[Boolean] = js.native
+    var purgeOnQuotaError: js.UndefOr[Boolean] = js.undefined
   }
   object ExpirationPluginConfig {
     

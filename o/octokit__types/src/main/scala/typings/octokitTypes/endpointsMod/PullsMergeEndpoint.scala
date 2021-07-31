@@ -5,37 +5,35 @@ import typings.octokitTypes.octokitTypesStrings.rebase
 import typings.octokitTypes.octokitTypesStrings.squash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsMergeEndpoint extends StObject {
   
   /**
     * Extra detail to append to automatic commit message.
     */
-  var commit_message: js.UndefOr[String] = js.native
+  var commit_message: js.UndefOr[String] = js.undefined
   
   /**
     * Title for the automatic commit message.
     */
-  var commit_title: js.UndefOr[String] = js.native
+  var commit_title: js.UndefOr[String] = js.undefined
   
   /**
     * Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
     */
-  var merge_method: js.UndefOr[merge | squash | rebase] = js.native
+  var merge_method: js.UndefOr[merge | squash | rebase] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var pull_number: Double = js.native
+  var pull_number: Double
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * SHA that pull request head must match to allow merge.
     */
-  var sha: js.UndefOr[String] = js.native
+  var sha: js.UndefOr[String] = js.undefined
 }
 object PullsMergeEndpoint {
   

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineReference extends StObject {
   
-  var changeId: Double = js.native
+  var changeId: Double
   
-  var id: String = js.native
+  var id: String
   
-  var location: String = js.native
+  var location: String
 }
 object TimelineReference {
   

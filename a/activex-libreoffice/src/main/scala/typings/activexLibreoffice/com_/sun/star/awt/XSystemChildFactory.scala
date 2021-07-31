@@ -5,12 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a factory interface for creating system child windows. */
-@js.native
-trait XSystemChildFactory extends XInterface {
+trait XSystemChildFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a system child window.
@@ -19,7 +19,7 @@ trait XSystemChildFactory extends XInterface {
     * @param SystemType one constant out of the constant group {@link com.sun.star.lang.SystemDependent} .
     * @returns the created window.
     */
-  def createSystemChild(Parent: js.Any, ProcessId: SeqEquiv[Double], SystemType: Double): XWindowPeer = js.native
+  def createSystemChild(Parent: js.Any, ProcessId: SeqEquiv[Double], SystemType: Double): XWindowPeer
 }
 object XSystemChildFactory {
   

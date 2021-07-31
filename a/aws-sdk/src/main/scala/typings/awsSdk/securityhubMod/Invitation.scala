@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invitation extends StObject {
   
   /**
     * The account ID of the Security Hub master account that the invitation was sent from.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.undefined
   
   /**
     * The ID of the invitation sent to the member account.
     */
-  var InvitationId: js.UndefOr[NonEmptyString] = js.native
+  var InvitationId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The timestamp of when the invitation was sent.
     */
-  var InvitedAt: js.UndefOr[Timestamp] = js.native
+  var InvitedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current status of the association between the member and master accounts.
     */
-  var MemberStatus: js.UndefOr[NonEmptyString] = js.native
+  var MemberStatus: js.UndefOr[NonEmptyString] = js.undefined
 }
 object Invitation {
   

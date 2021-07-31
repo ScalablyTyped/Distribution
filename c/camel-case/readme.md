@@ -10,9 +10,9 @@ Transform into a string with the separator denoted by the next word capitalized
 | ------------------ | :-------------: |
 | Full name          | camel-case |
 | Keywords           | camel, case, camelcase, camel-case, convert, transform, identifier |
-| # releases         | 5 |
-| # dependents       | 369 |
-| # downloads        | 313675376 |
+| # releases         | 6 |
+| # dependents       | 407 |
+| # downloads        | 419142368 |
 | # stars            | 6 |
 
 ## Links

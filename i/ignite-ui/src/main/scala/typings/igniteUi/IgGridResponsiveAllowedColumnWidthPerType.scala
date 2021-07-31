@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridResponsiveAllowedColumnWidthPerType
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,31 +16,31 @@ trait IgGridResponsiveAllowedColumnWidthPerType
     * Minimal width in pixels bool columns can take before forcing vertical rendering
     *
     */
-  var bool: js.UndefOr[Double] = js.native
+  var bool: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimal width in pixels date columns can take before forcing vertical rendering
     *
     */
-  var date: js.UndefOr[Double] = js.native
+  var date: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimal width in pixels number columns can take before forcing vertical rendering
     *
     */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimal width in pixels object columns can take before forcing vertical rendering
     *
     */
-  var `object`: js.UndefOr[Double] = js.native
+  var `object`: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimal width in pixels string columns can take before forcing vertical rendering
     *
     */
-  var string: js.UndefOr[Double] = js.native
+  var string: js.UndefOr[Double] = js.undefined
 }
 object IgGridResponsiveAllowedColumnWidthPerType {
   

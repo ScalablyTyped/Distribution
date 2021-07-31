@@ -2,14 +2,13 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareMenuOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var withShareTicket: js.UndefOr[Boolean] = js.native
+  var withShareTicket: js.UndefOr[Boolean] = js.undefined
 }
 object ShareMenuOptions {
   

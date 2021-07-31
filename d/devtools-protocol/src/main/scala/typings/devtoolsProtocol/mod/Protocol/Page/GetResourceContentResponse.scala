@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceContentResponse extends StObject {
   
   /**
     * True, if content was served as base64.
     */
-  var base64Encoded: Boolean = js.native
+  var base64Encoded: Boolean
   
   /**
     * Resource content.
     */
-  var content: String = js.native
+  var content: String
 }
 object GetResourceContentResponse {
   

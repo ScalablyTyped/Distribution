@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputColumn extends StObject {
   
   /**
     * The name of this column in the underlying data source.
     */
-  var Name: ColumnName = js.native
+  var Name: ColumnName
   
   /**
     * The data type of the column.
     */
-  var Type: InputColumnDataType = js.native
+  var Type: InputColumnDataType
 }
 object InputColumn {
   

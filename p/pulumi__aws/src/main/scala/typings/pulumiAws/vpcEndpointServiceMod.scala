@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcEndpointServiceMod {
@@ -94,6 +93,10 @@ object vpcEndpointServiceMod {
   /* static members */
   object VpcEndpointService {
     
+    @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcEndpointService resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -103,55 +106,49 @@ object vpcEndpointServiceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcEndpointService = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcEndpointService = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointServiceState): VpcEndpointService = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointServiceState, opts: CustomResourceOptions): VpcEndpointService = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcEndpointService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointServiceState): VpcEndpointService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointService]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointServiceState, opts: CustomResourceOptions): VpcEndpointService = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointService]
     
     /**
       * Returns true if the given object is an instance of VpcEndpointService.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointService.VpcEndpointService */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointService.VpcEndpointService */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointService.VpcEndpointService */ Boolean]
   }
   
-  @js.native
   trait VpcEndpointServiceArgs extends StObject {
     
     /**
       * Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - `true` or `false`.
       */
-    val acceptanceRequired: Input[Boolean] = js.native
+    val acceptanceRequired: Input[Boolean]
     
     /**
       * The ARNs of one or more principals allowed to discover the endpoint service.
       */
-    val allowedPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val allowedPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Amazon Resource Names (ARNs) of one or more Gateway Load Balancers for the endpoint service.
       */
-    val gatewayLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val gatewayLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Amazon Resource Names (ARNs) of one or more Network Load Balancers for the endpoint service.
       */
-    val networkLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val networkLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcEndpointServiceArgs {
     
@@ -202,73 +199,72 @@ object vpcEndpointServiceMod {
     }
   }
   
-  @js.native
   trait VpcEndpointServiceState extends StObject {
     
     /**
       * Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - `true` or `false`.
       */
-    val acceptanceRequired: js.UndefOr[Input[Boolean]] = js.native
+    val acceptanceRequired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARNs of one or more principals allowed to discover the endpoint service.
       */
-    val allowedPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val allowedPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the VPC endpoint service.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Availability Zones in which the service is available.
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The DNS names for the service.
       */
-    val baseEndpointDnsNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val baseEndpointDnsNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Amazon Resource Names (ARNs) of one or more Gateway Load Balancers for the endpoint service.
       */
-    val gatewayLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val gatewayLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether or not the service manages its VPC endpoints - `true` or `false`.
       */
-    val managesVpcEndpoints: js.UndefOr[Input[Boolean]] = js.native
+    val managesVpcEndpoints: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Amazon Resource Names (ARNs) of one or more Network Load Balancers for the endpoint service.
       */
-    val networkLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val networkLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The private DNS name for the service.
       */
-    val privateDnsName: js.UndefOr[Input[String]] = js.native
+    val privateDnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The service name.
       */
-    val serviceName: js.UndefOr[Input[String]] = js.native
+    val serviceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The service type, `Gateway` or `Interface`.
       */
-    val serviceType: js.UndefOr[Input[String]] = js.native
+    val serviceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the VPC endpoint service.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcEndpointServiceState {
     

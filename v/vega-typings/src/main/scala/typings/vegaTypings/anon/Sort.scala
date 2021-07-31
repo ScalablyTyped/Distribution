@@ -3,13 +3,11 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.scaleMod.SortField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sort extends StObject {
   
-  var sort: js.UndefOr[SortField] = js.native
+  var sort: js.UndefOr[SortField] = js.undefined
 }
 object Sort {
   

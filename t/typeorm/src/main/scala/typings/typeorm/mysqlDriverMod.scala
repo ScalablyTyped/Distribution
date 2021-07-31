@@ -9,14 +9,15 @@ import typings.typeorm.mysqlConnectionOptionsMod.MysqlConnectionOptions
 import typings.typeorm.tableColumnMod.TableColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mysqlDriverMod {
   
   @JSImport("typeorm/browser/driver/mysql/MysqlDriver", "MysqlDriver")
   @js.native
-  class MysqlDriver protected () extends Driver {
+  class MysqlDriver protected ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     /**
@@ -32,12 +33,12 @@ object mysqlDriverMod {
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createConnectionOptions(options: MysqlConnectionOptions, credentials: MysqlConnectionCredentialsOptions): js.Promise[_] = js.native
+    /* protected */ def createConnectionOptions(options: MysqlConnectionOptions, credentials: MysqlConnectionCredentialsOptions): js.Promise[js.Any] = js.native
     
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createPool(connectionOptions: js.Any): js.Promise[_] = js.native
+    /* protected */ def createPool(connectionOptions: js.Any): js.Promise[js.Any] = js.native
     
     def getColumnLength(column: TableColumn): String = js.native
     

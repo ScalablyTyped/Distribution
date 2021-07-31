@@ -12,7 +12,7 @@ Node js wrapper for vagrant CLI - command line tool.
 | Keywords           | vagrant |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 3693 |
+| # downloads        | 4602 |
 | # stars            | 1 |
 
 ## Links

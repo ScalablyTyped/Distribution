@@ -5,12 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a method to create an {@link XDynamicResultSet} which will be sorted according to the given sorting options. */
-@js.native
-trait XSortedDynamicResultSetFactory extends XInterface {
+trait XSortedDynamicResultSetFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a sorted {@link XDynamicResultSet} depending on internal data, an (unsorted) {@link XDynamicResultSet} and the sorting info.
@@ -19,7 +19,7 @@ trait XSortedDynamicResultSetFactory extends XInterface {
     * @param CompareFactory a factory for compare objects.
     * @returns a sorted result set.
     */
-  def createSortedDynamicResultSet(Source: XDynamicResultSet, Info: SeqEquiv[NumberedSortingInfo], CompareFactory: XAnyCompareFactory): XDynamicResultSet = js.native
+  def createSortedDynamicResultSet(Source: XDynamicResultSet, Info: SeqEquiv[NumberedSortingInfo], CompareFactory: XAnyCompareFactory): XDynamicResultSet
 }
 object XSortedDynamicResultSetFactory {
   

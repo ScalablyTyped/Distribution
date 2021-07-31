@@ -3,7 +3,6 @@ package typings.reactNativeFirebase.mod.RNFirebase
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object config {
@@ -64,12 +63,11 @@ object config {
     def setDefaultsFromResource(resource: Double): Unit = js.native
   }
   
-  @js.native
   trait ConfigSnapshot extends StObject {
     
-    var source: String = js.native
+    var source: String
     
-    def `val`(): js.Any = js.native
+    def `val`(): js.Any
   }
   object ConfigSnapshot {
     

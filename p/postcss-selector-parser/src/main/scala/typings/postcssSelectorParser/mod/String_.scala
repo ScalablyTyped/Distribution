@@ -3,15 +3,14 @@ package typings.postcssSelectorParser.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait String_
-  extends Base[String, js.UndefOr[Container[String, Node]]] {
+  extends StObject
+     with Base[String, js.UndefOr[Container[String, Node]]] {
   
   @JSName("type")
-  var type_String_ : typings.postcssSelectorParser.postcssSelectorParserStrings.string = js.native
+  var type_String_ : typings.postcssSelectorParser.postcssSelectorParserStrings.string
 }
 object String_ {
   
@@ -30,12 +29,11 @@ object String_ {
     setPropertyWithoutEscape: (String, js.Any) => Unit,
     sourceIndex: Double,
     spaces: Spaces,
-    `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.string,
     value: String
   ): String_ = {
     val __obj = js.Dynamic.literal(appendToPropertyAndEscape = js.Any.fromFunction3(appendToPropertyAndEscape), isAtPosition = js.Any.fromFunction2(isAtPosition), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), rawSpaceAfter = rawSpaceAfter.asInstanceOf[js.Any], rawSpaceBefore = rawSpaceBefore.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), replaceWith = js.Any.fromFunction1(replaceWith), setPropertyAndEscape = js.Any.fromFunction3(setPropertyAndEscape), setPropertyWithoutEscape = js.Any.fromFunction2(setPropertyWithoutEscape), sourceIndex = sourceIndex.asInstanceOf[js.Any], spaces = spaces.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[String_]
   }
   

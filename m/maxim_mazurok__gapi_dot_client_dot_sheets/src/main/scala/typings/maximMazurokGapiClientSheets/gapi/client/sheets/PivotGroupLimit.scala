@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGroupLimit extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait PivotGroupLimit extends StObject {
     * integers from 0. For write request, to fully customize the applying orders, all pivot group limits should have this field set with an unique number. Otherwise, the order is
     * determined by the index in the PivotTable.rows list and then the PivotTable.columns list.
     */
-  var applyOrder: js.UndefOr[Double] = js.native
+  var applyOrder: js.UndefOr[Double] = js.undefined
   
   /** The count limit. */
-  var countLimit: js.UndefOr[Double] = js.native
+  var countLimit: js.UndefOr[Double] = js.undefined
 }
 object PivotGroupLimit {
   

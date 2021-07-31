@@ -2,15 +2,13 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTimeFormatPart extends StObject {
   
-  var `type`: DateTimeFormatPartTypes = js.native
+  var `type`: DateTimeFormatPartTypes
   
-  var value: String = js.native
+  var value: String
 }
 object DateTimeFormatPart {
   

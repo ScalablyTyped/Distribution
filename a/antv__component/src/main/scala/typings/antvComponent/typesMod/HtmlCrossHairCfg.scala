@@ -3,36 +3,36 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HtmlCrossHairCfg extends HtmlComponentCfg {
+trait HtmlCrossHairCfg
+  extends StObject
+     with HtmlComponentCfg {
   
   /**
     * crosshair 的模板
     */
-  var crossHairTpl: String = js.native
+  var crossHairTpl: String
   
   /**
     * 结束位置
     */
-  var end: Point = js.native
+  var end: Point
   
   /**
     * 起始位置
     */
-  var start: Point = js.native
+  var start: Point
   
   /**
     * 文本
     */
-  var text: CrosshairTextBaseCfg = js.native
+  var text: CrosshairTextBaseCfg
   
   /**
     * 文本的模板
     */
-  var textTpl: String = js.native
+  var textTpl: String
 }
 object HtmlCrossHairCfg {
   

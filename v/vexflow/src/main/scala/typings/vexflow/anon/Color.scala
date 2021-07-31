@@ -2,23 +2,21 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var fill: Boolean = js.native
+  var fill: Boolean
   
-  var offsetx: Double = js.native
+  var offsetx: Double
   
-  var offsety: Double = js.native
+  var offsety: Double
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Color {
   

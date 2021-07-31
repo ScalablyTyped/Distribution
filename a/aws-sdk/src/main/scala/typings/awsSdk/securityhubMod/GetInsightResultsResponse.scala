@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightResultsResponse extends StObject {
   
   /**
     * The insight results returned by the operation.
     */
-  var InsightResults: typings.awsSdk.securityhubMod.InsightResults = js.native
+  var InsightResults: typings.awsSdk.securityhubMod.InsightResults
 }
 object GetInsightResultsResponse {
   

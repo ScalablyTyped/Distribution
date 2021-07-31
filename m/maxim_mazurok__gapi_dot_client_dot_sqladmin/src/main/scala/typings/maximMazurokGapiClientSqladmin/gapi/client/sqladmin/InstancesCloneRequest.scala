@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesCloneRequest extends StObject {
   
   /** Contains details about the clone operation. */
-  var cloneContext: js.UndefOr[CloneContext] = js.native
+  var cloneContext: js.UndefOr[CloneContext] = js.undefined
 }
 object InstancesCloneRequest {
   

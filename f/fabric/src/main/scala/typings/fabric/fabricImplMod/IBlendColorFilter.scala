@@ -3,11 +3,12 @@ package typings.fabric.fabricImplMod
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBlendColorFilter extends IBaseFilter {
+trait IBlendColorFilter
+  extends StObject
+     with IBaseFilter {
   
   var alpha: js.UndefOr[Double] = js.native
   

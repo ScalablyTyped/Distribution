@@ -2,27 +2,21 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Center extends StObject {
   
-  val center: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val center: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val normalize: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val normalize: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val zero: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val zero: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Center {
   
   @scala.inline
-  def apply(
-    center: typings.vegaLite.vegaLiteNumbers.`1`,
-    normalize: typings.vegaLite.vegaLiteNumbers.`1`,
-    zero: typings.vegaLite.vegaLiteNumbers.`1`
-  ): Center = {
-    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], normalize = normalize.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
+  def apply(): Center = {
+    val __obj = js.Dynamic.literal(center = 1, normalize = 1, zero = 1)
     __obj.asInstanceOf[Center]
   }
   

@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowGraph extends StObject {
   
   /**
     * A list of all the directed connections between the nodes belonging to the workflow.
     */
-  var Edges: js.UndefOr[EdgeList] = js.native
+  var Edges: js.UndefOr[EdgeList] = js.undefined
   
   /**
     * A list of the the AWS Glue components belong to the workflow represented as nodes.
     */
-  var Nodes: js.UndefOr[NodeList] = js.native
+  var Nodes: js.UndefOr[NodeList] = js.undefined
 }
 object WorkflowGraph {
   

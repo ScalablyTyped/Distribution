@@ -2,47 +2,45 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object containing additional pathfinding flags.
   */
-@js.native
 trait PathFinderOpts extends StObject {
   
   /**
     * Instead of searching for a path to the goals this will search for a path away from the goals.
     * The cheapest path that is out of range of every goal will be returned. The default is false.
     */
-  var flee: js.UndefOr[Boolean] = js.native
+  var flee: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Weight to apply to the heuristic in the A* formula F = G + weight * H. Use this option only if you understand
     * the underlying A* algorithm mechanics! The default value is 1.
     */
-  var heuristicWeight: js.UndefOr[Double] = js.native
+  var heuristicWeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowed cost of the path returned. If at any point the pathfinder detects that it is impossible to find
     * a path with a cost less than or equal to maxCost it will immediately halt the search. The default is Infinity.
     */
-  var maxCost: js.UndefOr[Double] = js.native
+  var maxCost: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowed pathfinding operations. You can limit CPU time used for the search based on ratio 1 op ~ 0.001 CPU. The default value is 2000.
     */
-  var maxOps: js.UndefOr[Double] = js.native
+  var maxOps: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowed rooms to search. The default (and maximum) is 16.
     */
-  var maxRooms: js.UndefOr[Double] = js.native
+  var maxRooms: js.UndefOr[Double] = js.undefined
   
   /**
     * Cost for walking on plain positions. The default is 1.
     */
-  var plainCost: js.UndefOr[Double] = js.native
+  var plainCost: js.UndefOr[Double] = js.undefined
   
   /**
     * Request from the pathfinder to generate a CostMatrix for a certain room. The callback accepts one argument, roomName.
@@ -52,12 +50,12 @@ trait PathFinderOpts extends StObject {
     *
     * @param roomName The name of the room the pathfinder needs a cost matrix for.
     */
-  var roomCallback: js.UndefOr[js.Function1[/* roomName */ String, Boolean | CostMatrix]] = js.native
+  var roomCallback: js.UndefOr[js.Function1[/* roomName */ String, Boolean | CostMatrix]] = js.undefined
   
   /**
     * Cost for walking on swamp positions. The default is 5.
     */
-  var swampCost: js.UndefOr[Double] = js.native
+  var swampCost: js.UndefOr[Double] = js.undefined
 }
 object PathFinderOpts {
   

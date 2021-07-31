@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P13nColumnsPanel extends P13nPanel {
+trait P13nColumnsPanel
+  extends StObject
+     with P13nPanel {
   
   /**
     * Add ColumnsItem to columnsItems aggregation

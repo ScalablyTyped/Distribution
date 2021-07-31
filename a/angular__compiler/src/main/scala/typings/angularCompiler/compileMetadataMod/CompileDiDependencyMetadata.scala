@@ -2,27 +2,25 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileDiDependencyMetadata extends StObject {
   
-  var isAttribute: js.UndefOr[Boolean] = js.native
+  var isAttribute: js.UndefOr[Boolean] = js.undefined
   
-  var isHost: js.UndefOr[Boolean] = js.native
+  var isHost: js.UndefOr[Boolean] = js.undefined
   
-  var isOptional: js.UndefOr[Boolean] = js.native
+  var isOptional: js.UndefOr[Boolean] = js.undefined
   
-  var isSelf: js.UndefOr[Boolean] = js.native
+  var isSelf: js.UndefOr[Boolean] = js.undefined
   
-  var isSkipSelf: js.UndefOr[Boolean] = js.native
+  var isSkipSelf: js.UndefOr[Boolean] = js.undefined
   
-  var isValue: js.UndefOr[Boolean] = js.native
+  var isValue: js.UndefOr[Boolean] = js.undefined
   
-  var token: js.UndefOr[CompileTokenMetadata] = js.native
+  var token: js.UndefOr[CompileTokenMetadata] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CompileDiDependencyMetadata {
   

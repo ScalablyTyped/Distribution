@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoDetail extends StObject {
   
   /**
     * Height in pixels for the output
     */
-  var HeightInPx: js.UndefOr[integer] = js.native
+  var HeightInPx: js.UndefOr[integer] = js.undefined
   
   /**
     * Width in pixels for the output
     */
-  var WidthInPx: js.UndefOr[integer] = js.native
+  var WidthInPx: js.UndefOr[integer] = js.undefined
 }
 object VideoDetail {
   

@@ -13,10 +13,13 @@ import typings.nodeJose.nodeJoseStrings.x509
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JWK {
+  
+  @JSImport("node-jose", "JWK")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-jose", "JWK.MODE_DECRYPT")
   @js.native
@@ -42,49 +45,41 @@ object JWK {
   @js.native
   val MODE_WRAP: String = js.native
   
-  @JSImport("node-jose", "JWK.asKey")
-  @js.native
+  @scala.inline
   def asKey(
     key: String | Buffer | js.Object | RawKey,
     form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
-    extras: js.UndefOr[Record[String, _]]
-  ): js.Promise[Key] = js.native
+    extras: js.UndefOr[Record[String, js.Any]]
+  ): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
-  @JSImport("node-jose", "JWK.asKeyStore")
-  @js.native
-  def asKeyStore(ks: String): js.Promise[KeyStore] = js.native
+  @scala.inline
+  def asKeyStore(ks: String): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
   /**
     * To import a JWK-set as a keystore
     */
-  @JSImport("node-jose", "JWK.asKeyStore")
-  @js.native
-  def asKeyStore(ks: js.Object): js.Promise[KeyStore] = js.native
+  @scala.inline
+  def asKeyStore(ks: js.Object): js.Promise[KeyStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("asKeyStore")(ks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyStore]]
   
-  @JSImport("node-jose", "JWK.createKey")
-  @js.native
-  def createKey(kty: js.Any, size: js.Any, props: js.Any): js.Promise[Key] = js.native
+  @scala.inline
+  def createKey(kty: js.Any, size: js.Any, props: js.Any): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(kty.asInstanceOf[js.Any], size.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
   /**
     * To create an empty keystore
     */
-  @JSImport("node-jose", "JWK.createKeyStore")
-  @js.native
-  def createKeyStore(): KeyStore = js.native
+  @scala.inline
+  def createKeyStore(): KeyStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyStore")().asInstanceOf[KeyStore]
   
-  @JSImport("node-jose", "JWK.isKey")
-  @js.native
-  def isKey(input: js.Any): /* is node-jose.node-jose.JWK.Key */ Boolean = js.native
+  @scala.inline
+  def isKey(input: js.Any): /* is node-jose.node-jose.JWK.Key */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.Key */ Boolean]
   
-  @JSImport("node-jose", "JWK.isKeyStore")
-  @js.native
-  def isKeyStore(input: js.Any): /* is node-jose.node-jose.JWK.KeyStore */ Boolean = js.native
+  @scala.inline
+  def isKeyStore(input: js.Any): /* is node-jose.node-jose.JWK.KeyStore */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyStore")(input.asInstanceOf[js.Any]).asInstanceOf[/* is node-jose.node-jose.JWK.KeyStore */ Boolean]
   
-  @js.native
   trait JWEEncryptor extends StObject {
     
-    def `final`(): js.Promise[String] = js.native
+    def `final`(): js.Promise[String]
     
-    def update(input: js.Any): this.type = js.native
+    def update(input: js.Any): this.type
   }
   object JWEEncryptor {
     
@@ -123,9 +118,9 @@ object JWK {
     def thumbprint(hash: String): js.Promise[String] = js.native
     
     def toJSON(): js.Object = js.native
-    def toJSON(isPrivate: js.UndefOr[scala.Nothing], excluded: js.Array[String]): js.Object = js.native
     def toJSON(isPrivate: Boolean): js.Object = js.native
     def toJSON(isPrivate: Boolean, excluded: js.Array[String]): js.Object = js.native
+    def toJSON(isPrivate: Unit, excluded: js.Array[String]): js.Object = js.native
     
     def toPEM(): String = js.native
     def toPEM(isPrivate: Boolean): String = js.native
@@ -154,7 +149,7 @@ object JWK {
     def add(
       key: String | Buffer | Key | js.Object,
       form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
-      extras: js.UndefOr[Record[String, _]]
+      extras: js.UndefOr[Record[String, js.Any]]
     ): js.Promise[Key] = js.native
     def add(key: RawKey): js.Promise[Key] = js.native
     
@@ -179,11 +174,11 @@ object JWK {
       * acceptable usage.
       */
     def generate(kty: String): js.Promise[Key] = js.native
-    def generate(kty: String, size: js.UndefOr[scala.Nothing], props: js.Any): js.Promise[Key] = js.native
     def generate(kty: String, size: String): js.Promise[Key] = js.native
     def generate(kty: String, size: String, props: js.Any): js.Promise[Key] = js.native
     def generate(kty: String, size: Double): js.Promise[Key] = js.native
     def generate(kty: String, size: Double, props: js.Any): js.Promise[Key] = js.native
+    def generate(kty: String, size: Unit, props: js.Any): js.Promise[Key] = js.native
     
     /**
       * To retrieve a key from a keystore
@@ -201,14 +196,13 @@ object JWK {
     def toJSON(exportPrivateKeys: Boolean): js.Object = js.native
   }
   
-  @js.native
   trait KeyStoreGetFilter extends StObject {
     
-    var alg: js.UndefOr[String] = js.native
+    var alg: js.UndefOr[String] = js.undefined
     
-    var kty: js.UndefOr[String] = js.native
+    var kty: js.UndefOr[String] = js.undefined
     
-    var use: js.UndefOr[KeyUse] = js.native
+    var use: js.UndefOr[KeyUse] = js.undefined
   }
   object KeyStoreGetFilter {
     
@@ -241,10 +235,11 @@ object JWK {
     }
   }
   
-  @js.native
-  trait KeyStoreGetOptions extends KeyStoreGetFilter {
+  trait KeyStoreGetOptions
+    extends StObject
+       with KeyStoreGetFilter {
     
-    var kid: String = js.native
+    var kid: String
   }
   object KeyStoreGetOptions {
     
@@ -280,21 +275,20 @@ object JWK {
     def sig: typings.nodeJose.nodeJoseStrings.sig = "sig".asInstanceOf[typings.nodeJose.nodeJoseStrings.sig]
   }
   
-  @js.native
   trait RawKey extends StObject {
     
-    var alg: String = js.native
+    var alg: String
     
     // e and n make up the public key
-    var e: String = js.native
+    var e: String
     
-    var kid: String = js.native
+    var kid: String
     
-    var kty: String = js.native
+    var kty: String
     
-    var n: String = js.native
+    var n: String
     
-    var use: KeyUse = js.native
+    var use: KeyUse
   }
   object RawKey {
     

@@ -3,7 +3,6 @@ package typings.angularCore.mod
 import typings.angularCore.anon.Attached
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,80 +14,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `LViewDebug` for easier debugging and test writing. It is the intent of `LViewDebug` to be used
   * in tests.
   */
-@js.native
 trait LViewDebug extends StObject {
   
   /**
     * Child `LView`s
     */
-  val childViews: js.Array[LViewDebug | LContainerDebug] = js.native
+  val childViews: js.Array[LViewDebug | LContainerDebug]
   
   /**
     * The context used for evaluation of the `LView`
     *
     * (Usually the component)
     */
-  val context: js.Object | Null = js.native
+  val context: js.Object | Null
   
   /**
     * Sub range of `LView` containing decls (DOM elements).
     */
-  val decls: LViewDebugRange = js.native
+  val decls: LViewDebugRange
   
   /**
     * Sub range of `LView` containing expando (used by DI).
     */
-  val expando: LViewDebugRange = js.native
+  val expando: LViewDebugRange
   
   /**
     * Flags associated with the `LView` unpacked into a more readable state.
     *
     * See `LViewFlags` for the flag meanings.
     */
-  val flags: Attached = js.native
+  val flags: Attached
   
   /**
     * The host element to which this `LView` is attached.
     */
-  val hostHTML: String | Null = js.native
+  val hostHTML: String | Null
   
   /**
     * HTML representation of the `LView`.
     *
     * This is only approximate to actual HTML as child `LView`s are removed.
     */
-  val html: String = js.native
+  val html: String
   
   /**
     * Next sibling to the `LView`.
     */
-  val next: LViewDebug | LContainerDebug | Null = js.native
+  val next: LViewDebug | LContainerDebug | Null
   
   /**
     * Hierarchical tree of nodes.
     */
-  val nodes: js.Array[DebugNode2] = js.native
+  val nodes: js.Array[DebugNode2]
   
   /**
     * Parent view (or container)
     */
-  val parent: LViewDebug | LContainerDebug | Null = js.native
+  val parent: LViewDebug | LContainerDebug | Null
   
   /**
     * Associated TView
     */
-  val tView: TView = js.native
+  val tView: TView
   
   /**
     * Template structure (no instance data).
     * (Shows how TNodes are connected)
     */
-  val template: String = js.native
+  val template: String
   
   /**
     * Sub range of `LView` containing vars (bindings).
     */
-  val vars: LViewDebugRange = js.native
+  val vars: LViewDebugRange
 }
 object LViewDebug {
   
@@ -104,7 +102,7 @@ object LViewDebug {
     template: String,
     vars: LViewDebugRange
   ): LViewDebug = {
-    val __obj = js.Dynamic.literal(childViews = childViews.asInstanceOf[js.Any], decls = decls.asInstanceOf[js.Any], expando = expando.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], tView = tView.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(childViews = childViews.asInstanceOf[js.Any], decls = decls.asInstanceOf[js.Any], expando = expando.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], tView = tView.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any], context = null, hostHTML = null, next = null, parent = null)
     __obj.asInstanceOf[LViewDebug]
   }
   

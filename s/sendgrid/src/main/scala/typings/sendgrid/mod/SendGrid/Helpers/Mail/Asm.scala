@@ -2,15 +2,13 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Asm extends StObject {
   
-  var group_id: Double = js.native
+  var group_id: Double
   
-  var groups_to_display: js.Array[Double] = js.native
+  var groups_to_display: js.Array[Double]
 }
 object Asm {
   

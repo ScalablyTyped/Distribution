@@ -4,22 +4,20 @@ import typings.aceBuilds.mod.Ace.Command
 import typings.aceBuilds.mod.Ace.Editor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Args extends StObject {
   
-  var args: js.Array[_] = js.native
+  var args: js.Array[js.Any]
   
-  var command: Command = js.native
+  var command: Command
   
-  var editor: Editor = js.native
+  var editor: Editor
 }
 object Args {
   
   @scala.inline
-  def apply(args: js.Array[_], command: Command, editor: Editor): Args = {
+  def apply(args: js.Array[js.Any], command: Command, editor: Editor): Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
@@ -28,7 +26,7 @@ object Args {
   implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))

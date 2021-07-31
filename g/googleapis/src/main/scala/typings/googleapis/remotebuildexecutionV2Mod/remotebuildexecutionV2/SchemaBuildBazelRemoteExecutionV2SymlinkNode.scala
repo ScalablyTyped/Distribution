@@ -2,19 +2,17 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `SymlinkNode` represents a symbolic link.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2SymlinkNode extends StObject {
   
   /**
     * The name of the symlink.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The target path of the symlink. The path separator is a forward slash
@@ -24,7 +22,7 @@ trait SchemaBuildBazelRemoteExecutionV2SymlinkNode extends StObject {
     * form forbids the substrings `/./` and `//` in the target path. `..`
     * components are allowed anywhere in the target path.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2SymlinkNode {
   

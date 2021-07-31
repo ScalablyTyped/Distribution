@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontVariationAxis extends StObject {
   
   /**
     * The default value.
     */
-  var defaultValue: Double = js.native
+  var defaultValue: Double
   
   /**
     * The maximum value (inclusive) the font supports for this tag.
     */
-  var maxValue: Double = js.native
+  var maxValue: Double
   
   /**
     * The minimum value (inclusive) the font supports for this tag.
     */
-  var minValue: Double = js.native
+  var minValue: Double
   
   /**
     * Human-readable variation name in the default language (normally, "en").
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The font-variation-setting tag (a.k.a. "axis tag").
     */
-  var tag: String = js.native
+  var tag: String
 }
 object FontVariationAxis {
   

@@ -3,13 +3,11 @@ package typings.reactTable.anon
 import typings.reactTable.mod.HeaderGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column[D /* <: js.Object */] extends StObject {
   
-  var column: HeaderGroup[D] = js.native
+  var column: HeaderGroup[D]
 }
 object Column {
   
@@ -20,7 +18,7 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column[_], D /* <: js.Object */] (val x: Self with Column[D]) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column[?], D /* <: js.Object */] (val x: Self & Column[D]) extends AnyVal {
     
     @scala.inline
     def setColumn(value: HeaderGroup[D]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

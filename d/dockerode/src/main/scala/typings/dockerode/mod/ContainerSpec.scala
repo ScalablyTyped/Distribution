@@ -3,63 +3,61 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerSpec extends StObject {
   
-  var Args: js.UndefOr[js.Array[String]] = js.native
+  var Args: js.UndefOr[js.Array[String]] = js.undefined
   
-  var CapabilityAdd: js.UndefOr[js.Array[String]] = js.native
+  var CapabilityAdd: js.UndefOr[js.Array[String]] = js.undefined
   
-  var CapabilityDrop: js.UndefOr[js.Array[String]] = js.native
+  var CapabilityDrop: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Command: js.UndefOr[js.Array[String]] = js.native
+  var Command: js.UndefOr[js.Array[String]] = js.undefined
   
-  var DNSConfig: js.UndefOr[typings.dockerode.mod.DNSConfig] = js.native
+  var DNSConfig: js.UndefOr[typings.dockerode.mod.DNSConfig] = js.undefined
   
-  var Dir: js.UndefOr[String] = js.native
+  var Dir: js.UndefOr[String] = js.undefined
   
-  var Env: js.UndefOr[js.Array[String]] = js.native
+  var Env: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Groups: js.UndefOr[js.Array[String]] = js.native
+  var Groups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var HealthCheck: js.UndefOr[HealthConfig] = js.native
+  var HealthCheck: js.UndefOr[HealthConfig] = js.undefined
   
-  var Hostname: js.UndefOr[String] = js.native
+  var Hostname: js.UndefOr[String] = js.undefined
   
-  var Hosts: js.UndefOr[js.Array[String]] = js.native
+  var Hosts: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Image: js.UndefOr[String] = js.native
+  var Image: js.UndefOr[String] = js.undefined
   
-  var Init: js.UndefOr[Boolean] = js.native
+  var Init: js.UndefOr[Boolean] = js.undefined
   
-  var Isolation: js.UndefOr[String] = js.native
+  var Isolation: js.UndefOr[String] = js.undefined
   
-  var Labels: js.UndefOr[StringDictionary[String]] = js.native
+  var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Mounts: js.UndefOr[js.Array[MountSettings]] = js.native
+  var Mounts: js.UndefOr[js.Array[MountSettings]] = js.undefined
   
-  var OpenStdin: js.UndefOr[Boolean] = js.native
+  var OpenStdin: js.UndefOr[Boolean] = js.undefined
   
-  var Privileges: js.UndefOr[typings.dockerode.mod.Privileges] = js.native
+  var Privileges: js.UndefOr[typings.dockerode.mod.Privileges] = js.undefined
   
-  var ReadOnly: js.UndefOr[Boolean] = js.native
+  var ReadOnly: js.UndefOr[Boolean] = js.undefined
   
-  var Secrets: js.UndefOr[js.Array[SecretReference]] = js.native
+  var Secrets: js.UndefOr[js.Array[SecretReference]] = js.undefined
   
-  var StopGracePeriod: js.UndefOr[Double] = js.native
+  var StopGracePeriod: js.UndefOr[Double] = js.undefined
   
-  var StopSignal: js.UndefOr[String] = js.native
+  var StopSignal: js.UndefOr[String] = js.undefined
   
-  var Sysctls: js.UndefOr[StringDictionary[String]] = js.native
+  var Sysctls: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var TTY: js.UndefOr[Boolean] = js.native
+  var TTY: js.UndefOr[Boolean] = js.undefined
   
-  var Ulimits: js.UndefOr[js.Array[Ulimit]] = js.native
+  var Ulimits: js.UndefOr[js.Array[Ulimit]] = js.undefined
   
-  var User: js.UndefOr[String] = js.native
+  var User: js.UndefOr[String] = js.undefined
 }
 object ContainerSpec {
   

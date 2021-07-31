@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnTypeFormattingEditProvider extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait OnTypeFormattingEditProvider extends StObject {
     ch: String,
     options: FormattingOptions,
     token: CancellationToken
-  ): ProviderResult[js.Array[TextEdit]] = js.native
+  ): ProviderResult[js.Array[TextEdit]]
 }
 object OnTypeFormattingEditProvider {
   

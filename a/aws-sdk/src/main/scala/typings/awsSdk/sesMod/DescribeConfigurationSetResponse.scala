@@ -2,33 +2,31 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationSetResponse extends StObject {
   
   /**
     * The configuration set object associated with the specified configuration set.
     */
-  var ConfigurationSet: js.UndefOr[typings.awsSdk.sesMod.ConfigurationSet] = js.native
+  var ConfigurationSet: js.UndefOr[typings.awsSdk.sesMod.ConfigurationSet] = js.undefined
   
-  var DeliveryOptions: js.UndefOr[typings.awsSdk.sesMod.DeliveryOptions] = js.native
+  var DeliveryOptions: js.UndefOr[typings.awsSdk.sesMod.DeliveryOptions] = js.undefined
   
   /**
     * A list of event destinations associated with the configuration set. 
     */
-  var EventDestinations: js.UndefOr[typings.awsSdk.sesMod.EventDestinations] = js.native
+  var EventDestinations: js.UndefOr[typings.awsSdk.sesMod.EventDestinations] = js.undefined
   
   /**
     * An object that represents the reputation settings for the configuration set. 
     */
-  var ReputationOptions: js.UndefOr[typings.awsSdk.sesMod.ReputationOptions] = js.native
+  var ReputationOptions: js.UndefOr[typings.awsSdk.sesMod.ReputationOptions] = js.undefined
   
   /**
     * The name of the custom open and click tracking domain associated with the configuration set.
     */
-  var TrackingOptions: js.UndefOr[typings.awsSdk.sesMod.TrackingOptions] = js.native
+  var TrackingOptions: js.UndefOr[typings.awsSdk.sesMod.TrackingOptions] = js.undefined
 }
 object DescribeConfigurationSetResponse {
   

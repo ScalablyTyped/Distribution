@@ -2,16 +2,15 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListTemplates extends StObject {
   
   def Add(): ListTemplate = js.native
-  def Add(OutlineNumbered: js.UndefOr[scala.Nothing], Name: js.Any): ListTemplate = js.native
   def Add(OutlineNumbered: js.Any): ListTemplate = js.native
   def Add(OutlineNumbered: js.Any, Name: js.Any): ListTemplate = js.native
+  def Add(OutlineNumbered: Unit, Name: js.Any): ListTemplate = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   

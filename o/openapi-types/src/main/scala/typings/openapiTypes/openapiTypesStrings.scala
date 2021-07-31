@@ -3,7 +3,6 @@ package typings.openapiTypes
 import typings.openapiTypes.mod.OpenAPIV3.NonArraySchemaObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object openapiTypesStrings {
@@ -34,7 +33,9 @@ object openapiTypesStrings {
   def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait boolean extends NonArraySchemaObjectType
+  sealed trait boolean
+    extends StObject
+       with NonArraySchemaObjectType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -49,12 +50,16 @@ object openapiTypesStrings {
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
-  sealed trait integer extends NonArraySchemaObjectType
+  sealed trait integer
+    extends StObject
+       with NonArraySchemaObjectType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait number extends NonArraySchemaObjectType
+  sealed trait number
+    extends StObject
+       with NonArraySchemaObjectType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -64,7 +69,9 @@ object openapiTypesStrings {
   def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
   
   @js.native
-  sealed trait `object` extends NonArraySchemaObjectType
+  sealed trait `object`
+    extends StObject
+       with NonArraySchemaObjectType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -79,7 +86,9 @@ object openapiTypesStrings {
   def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait string extends NonArraySchemaObjectType
+  sealed trait string
+    extends StObject
+       with NonArraySchemaObjectType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
 }

@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the RelativeStrengthIndex class.
   */
-@js.native
-trait ASPxClientRelativeStrengthIndex extends ASPxSeparatePaneIndicator {
+trait ASPxClientRelativeStrengthIndex
+  extends StObject
+     with ASPxSeparatePaneIndicator {
   
   /**
     * Gets the number of data points used to calculate the indicator values.
     */
-  var pointsCount: Double = js.native
+  var pointsCount: Double
   
   /**
     * Gets a value, indicating whose series point values are used to calculate the indicator's values.
     */
-  var valueLevel: String = js.native
+  var valueLevel: String
 }
 object ASPxClientRelativeStrengthIndex {
   

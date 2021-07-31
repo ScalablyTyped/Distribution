@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteTableAssociation extends StObject {
   
   /**
     * The state of the association.
     */
-  var AssociationState: js.UndefOr[RouteTableAssociationState] = js.native
+  var AssociationState: js.UndefOr[RouteTableAssociationState] = js.undefined
   
   /**
     * The ID of the internet gateway or virtual private gateway.
     */
-  var GatewayId: js.UndefOr[String] = js.native
+  var GatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether this is the main route table.
     */
-  var Main: js.UndefOr[Boolean] = js.native
+  var Main: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the association.
     */
-  var RouteTableAssociationId: js.UndefOr[String] = js.native
+  var RouteTableAssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the route table.
     */
-  var RouteTableId: js.UndefOr[String] = js.native
+  var RouteTableId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the subnet. A subnet ID is not returned for an implicit association.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
 }
 object RouteTableAssociation {
   

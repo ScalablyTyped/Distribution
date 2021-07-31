@@ -4,21 +4,22 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseProxyResponseMod {
   
-  @JSImport("https-proxy-agent/dist/parse-proxy-response", JSImport.Default)
+  @JSImport("https-proxy-agent/dist/parse-proxy-response", JSImport.Namespace)
   @js.native
-  def default(socket: Readable): js.Promise[ProxyResponse] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(socket: Readable): js.Promise[ProxyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProxyResponse]]
+  
   trait ProxyResponse extends StObject {
     
-    var buffered: Buffer = js.native
+    var buffered: Buffer
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object ProxyResponse {
     

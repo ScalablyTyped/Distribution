@@ -4,37 +4,35 @@ import typings.octokitTypes.anon.Git
 import typings.octokitTypes.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicensesGetForRepoResponseData extends StObject {
   
-  var _links: Git = js.native
+  var _links: Git
   
-  var content: String = js.native
+  var content: String
   
-  var download_url: String = js.native
+  var download_url: String
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var git_url: String = js.native
+  var git_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var license: Key = js.native
+  var license: Key
   
-  var name: String = js.native
+  var name: String
   
-  var path: String = js.native
+  var path: String
   
-  var sha: String = js.native
+  var sha: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object LicensesGetForRepoResponseData {
   

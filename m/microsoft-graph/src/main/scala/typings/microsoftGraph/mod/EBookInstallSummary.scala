@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EBookInstallSummary extends Entity {
+trait EBookInstallSummary
+  extends StObject
+     with Entity {
   
   // Number of Devices that have failed to install this book.
-  var failedDeviceCount: js.UndefOr[Double] = js.native
+  var failedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of Users that have 1 or more device that failed to install this book.
-  var failedUserCount: js.UndefOr[Double] = js.native
+  var failedUserCount: js.UndefOr[Double] = js.undefined
   
   // Number of Devices that have successfully installed this book.
-  var installedDeviceCount: js.UndefOr[Double] = js.native
+  var installedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of Users whose devices have all succeeded to install this book.
-  var installedUserCount: js.UndefOr[Double] = js.native
+  var installedUserCount: js.UndefOr[Double] = js.undefined
   
   // Number of Devices that does not have this book installed.
-  var notInstalledDeviceCount: js.UndefOr[Double] = js.native
+  var notInstalledDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of Users that did not install this book.
-  var notInstalledUserCount: js.UndefOr[Double] = js.native
+  var notInstalledUserCount: js.UndefOr[Double] = js.undefined
 }
 object EBookInstallSummary {
   

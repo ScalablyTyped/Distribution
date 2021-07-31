@@ -2,26 +2,24 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoryLanguageTitle extends StObject {
   
   /**
     * The language for which the title is applicable
     */
-  var lang: String = js.native
+  var lang: String
   
   /**
     * The language culture id of the lang parameter
     */
-  var lcid: Double = js.native
+  var lcid: Double
   
   /**
     * Actual title to be shown on the UI
     */
-  var title: String = js.native
+  var title: String
 }
 object CategoryLanguageTitle {
   

@@ -3,7 +3,6 @@ package typings.overlayscrollbars.mod
 import typings.overlayscrollbars.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,49 +32,61 @@ trait OverlayScrollbars extends StObject {
   
   def scroll(): ScrollInfo = js.native
   def scroll(coordinates: Coordinates): Unit = js.native
-  def scroll(
-    coordinates: Coordinates,
-    duration: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[Easing],
-    complete: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
-  def scroll(coordinates: Coordinates, duration: js.UndefOr[scala.Nothing], easing: js.Tuple2[Easing, Easing]): Unit = js.native
-  def scroll(
-    coordinates: Coordinates,
-    duration: js.UndefOr[scala.Nothing],
-    easing: js.Tuple2[Easing, Easing],
-    complete: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
-  def scroll(coordinates: Coordinates, duration: js.UndefOr[scala.Nothing], easing: `1`): Unit = js.native
-  def scroll(
-    coordinates: Coordinates,
-    duration: js.UndefOr[scala.Nothing],
-    easing: `1`,
-    complete: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
-  def scroll(coordinates: Coordinates, duration: js.UndefOr[scala.Nothing], easing: Easing): Unit = js.native
   def scroll(coordinates: Coordinates, duration: Double): Unit = js.native
-  def scroll(
-    coordinates: Coordinates,
-    duration: Double,
-    easing: js.UndefOr[Easing],
-    complete: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
   def scroll(coordinates: Coordinates, duration: Double, easing: js.Tuple2[Easing, Easing]): Unit = js.native
   def scroll(
     coordinates: Coordinates,
     duration: Double,
     easing: js.Tuple2[Easing, Easing],
-    complete: js.Function1[/* repeated */ js.Any, _]
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
+  def scroll(
+    coordinates: Coordinates,
+    duration: Double,
+    easing: Unit,
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   def scroll(coordinates: Coordinates, duration: Double, easing: `1`): Unit = js.native
   def scroll(
     coordinates: Coordinates,
     duration: Double,
     easing: `1`,
-    complete: js.Function1[/* repeated */ js.Any, _]
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   def scroll(coordinates: Coordinates, duration: Double, easing: Easing): Unit = js.native
+  def scroll(
+    coordinates: Coordinates,
+    duration: Double,
+    easing: Easing,
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
+  def scroll(coordinates: Coordinates, duration: Unit, easing: js.Tuple2[Easing, Easing]): Unit = js.native
+  def scroll(
+    coordinates: Coordinates,
+    duration: Unit,
+    easing: js.Tuple2[Easing, Easing],
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
+  def scroll(
+    coordinates: Coordinates,
+    duration: Unit,
+    easing: Unit,
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
+  def scroll(coordinates: Coordinates, duration: Unit, easing: `1`): Unit = js.native
+  def scroll(
+    coordinates: Coordinates,
+    duration: Unit,
+    easing: `1`,
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
+  def scroll(coordinates: Coordinates, duration: Unit, easing: Easing): Unit = js.native
+  def scroll(
+    coordinates: Coordinates,
+    duration: Unit,
+    easing: Easing,
+    complete: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
   def scroll(coordinates: Coordinates, options: js.Object): Unit = js.native
   
   def scrollStop(): OverlayScrollbars = js.native

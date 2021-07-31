@@ -2,25 +2,23 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryGrantableRolesRequest extends StObject {
   
   /**
     * Required. The full resource name to query from the list of grantable roles. The name follows the Google Cloud Platform resource format. For example, a Cloud Platform project with id
     * `my-project` will be named `//cloudresourcemanager.googleapis.com/projects/my-project`.
     */
-  var fullResourceName: js.UndefOr[String] = js.native
+  var fullResourceName: js.UndefOr[String] = js.undefined
   
   /** Optional limit on the number of roles to include in the response. The default is 300, and the maximum is 1,000. */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** Optional pagination token returned in an earlier QueryGrantableRolesResponse. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object QueryGrantableRolesRequest {
   

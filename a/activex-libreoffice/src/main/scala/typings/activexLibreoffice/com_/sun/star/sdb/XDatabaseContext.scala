@@ -13,16 +13,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XNamingService
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides an interface for the new-style {@link DatabaseContext} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XDatabaseContext
-  extends XEnumerationAccess
+  extends StObject
+     with XEnumerationAccess
      with XNameAccess
      with XNamingService
      with XContainer
@@ -41,7 +40,7 @@ object XDatabaseContext {
     changeDatabaseLocation: (String, String) => Unit,
     createEnumeration: () => XEnumeration,
     createInstance: () => XInterface,
-    createInstanceWithArguments: SeqEquiv[_] => XInterface,
+    createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
     getByName: String => js.Any,
     getDatabaseLocation: String => String,
     getElementNames: () => SafeArray[String],

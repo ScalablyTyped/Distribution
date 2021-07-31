@@ -2,13 +2,13 @@ package typings.nodeMailjet.mod.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InlinedAttachment extends Attachment {
+trait InlinedAttachment
+  extends StObject
+     with Attachment {
   
-  var ContentID: String = js.native
+  var ContentID: String
 }
 object InlinedAttachment {
   

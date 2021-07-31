@@ -2,31 +2,29 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyApplicationStateRequest extends StObject {
   
   /**
     * The configurationId in Application Discovery Service that uniquely identifies the grouped application.
     */
-  var ApplicationId: typings.awsSdk.migrationhubMod.ApplicationId = js.native
+  var ApplicationId: typings.awsSdk.migrationhubMod.ApplicationId
   
   /**
     * Optional boolean flag to indicate whether any effect should take place. Used to test if the caller has permission to make the call.
     */
-  var DryRun: js.UndefOr[typings.awsSdk.migrationhubMod.DryRun] = js.native
+  var DryRun: js.UndefOr[typings.awsSdk.migrationhubMod.DryRun] = js.undefined
   
   /**
     * Status of the application - Not Started, In-Progress, Complete.
     */
-  var Status: ApplicationStatus = js.native
+  var Status: ApplicationStatus
   
   /**
     * The timestamp when the application state changed.
     */
-  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.native
+  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.undefined
 }
 object NotifyApplicationStateRequest {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomFields extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CustomFields extends StObject {
     js.Array[
       /* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An array of text custom fields.
@@ -24,7 +22,7 @@ trait CustomFields extends StObject {
     js.Array[
       /* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object CustomFields {
   

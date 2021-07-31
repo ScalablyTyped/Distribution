@@ -2,21 +2,19 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Trusteer {
   
-  @js.native
   trait AssesmentRisk extends StObject {
     
-    var additionalData: String = js.native
+    var additionalData: String
     
-    var lastCalculated: Double = js.native
+    var lastCalculated: Double
     
-    var name: String = js.native
+    var name: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object AssesmentRisk {
     
@@ -43,40 +41,39 @@ object Trusteer {
     }
   }
   
-  @js.native
   trait AssetmentRisks extends StObject {
     
-    var device_key: String = js.native
+    var device_key: String
     
     @JSName("malware.any")
-    var malwareDotany: js.UndefOr[AssesmentRisk] = js.native
+    var malwareDotany: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("network.wifi")
-    var networkDotwifi: js.UndefOr[AssesmentRisk] = js.native
+    var networkDotwifi: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("os.rooted")
-    var osDotrooted: js.UndefOr[AssesmentRisk] = js.native
+    var osDotrooted: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("os.rooted.hiders")
-    var osDotrootedDothiders: js.UndefOr[AssesmentRisk] = js.native
+    var osDotrootedDothiders: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("os.rooted.native")
-    var osDotrootedDotnative: js.UndefOr[AssesmentRisk] = js.native
+    var osDotrootedDotnative: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("os.ver_up_to_date")
-    var osDotver_up_to_date: js.UndefOr[AssesmentRisk] = js.native
+    var osDotver_up_to_date: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("plat.android.apprestrict")
-    var platDotandroidDotapprestrict: js.UndefOr[AssesmentRisk] = js.native
+    var platDotandroidDotapprestrict: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("plat.android.dumpsys")
-    var platDotandroidDotdumpsys: js.UndefOr[AssesmentRisk] = js.native
+    var platDotandroidDotdumpsys: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("tas.config_update")
-    var tasDotconfig_update: js.UndefOr[AssesmentRisk] = js.native
+    var tasDotconfig_update: js.UndefOr[AssesmentRisk] = js.undefined
     
     @JSName("total.risk.generic")
-    var totalDotriskDotgeneric: js.UndefOr[AssesmentRisk] = js.native
+    var totalDotriskDotgeneric: js.UndefOr[AssesmentRisk] = js.undefined
   }
   object AssetmentRisks {
     

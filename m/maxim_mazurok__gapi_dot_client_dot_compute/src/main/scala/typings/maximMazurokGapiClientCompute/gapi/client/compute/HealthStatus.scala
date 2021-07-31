@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthStatus extends StObject {
   
   /** Metadata defined as annotations for network endpoint. */
   var annotations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.HealthStatus with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.HealthStatus & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Health state of the instance. */
-  var healthState: js.UndefOr[String] = js.native
+  var healthState: js.UndefOr[String] = js.undefined
   
   /** URL of the instance resource. */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** A forwarding rule IP address assigned to this instance. */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /** The named port of the instance group, not necessarily the port that is health-checked. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object HealthStatus {
   
@@ -43,7 +41,7 @@ object HealthStatus {
     def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.HealthStatus with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.HealthStatus & TopLevel[js.Any]
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline

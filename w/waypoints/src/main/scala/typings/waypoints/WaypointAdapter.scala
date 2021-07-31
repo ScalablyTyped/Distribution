@@ -3,29 +3,27 @@ package typings.waypoints
 import typings.waypoints.anon.Left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaypointAdapter extends StObject {
   
-  def innerHeight(): Double = js.native
+  def innerHeight(): Double
   
-  def innerWidth(): Double = js.native
+  def innerWidth(): Double
   
-  def off(event: String): js.UndefOr[scala.Nothing] = js.native
+  def off(event: String): Unit
   
-  def offset(): Left = js.native
+  def offset(): Left
   
-  def on(event: String, handler: js.Function0[Unit]): js.UndefOr[scala.Nothing] = js.native
+  def on(event: String, handler: js.Function0[Unit]): Unit
   
-  def outerHeight(includeMargin: Boolean): Double = js.native
+  def outerHeight(includeMargin: Boolean): Double
   
-  def outerWidth(includeMargin: Boolean): Double = js.native
+  def outerWidth(includeMargin: Boolean): Double
   
-  def scrollLeft(): Double = js.native
+  def scrollLeft(): Double
   
-  def scrollTop(): Double = js.native
+  def scrollTop(): Double
 }
 object WaypointAdapter {
   
@@ -33,9 +31,9 @@ object WaypointAdapter {
   def apply(
     innerHeight: () => Double,
     innerWidth: () => Double,
-    off: String => js.UndefOr[scala.Nothing],
+    off: String => Unit,
     offset: () => Left,
-    on: (String, js.Function0[Unit]) => js.UndefOr[scala.Nothing],
+    on: (String, js.Function0[Unit]) => Unit,
     outerHeight: Boolean => Double,
     outerWidth: Boolean => Double,
     scrollLeft: () => Double,
@@ -55,13 +53,13 @@ object WaypointAdapter {
     def setInnerWidth(value: () => Double): Self = StObject.set(x, "innerWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOff(value: String => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
+    def setOff(value: String => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOffset(value: () => Left): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOn(value: (String, js.Function0[Unit]) => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOuterHeight(value: Boolean => Double): Self = StObject.set(x, "outerHeight", js.Any.fromFunction1(value))

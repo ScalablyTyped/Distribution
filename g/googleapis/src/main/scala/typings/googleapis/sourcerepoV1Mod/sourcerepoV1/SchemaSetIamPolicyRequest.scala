@@ -2,13 +2,11 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for `SetIamPolicy` method.
   */
-@js.native
 trait SchemaSetIamPolicyRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSetIamPolicyRequest extends StObject {
     * policy but certain Cloud Platform services (such as Projects) might
     * reject them.
     */
-  var policy: js.UndefOr[SchemaPolicy] = js.native
+  var policy: js.UndefOr[SchemaPolicy] = js.undefined
   
   /**
     * OPTIONAL: A FieldMask specifying which fields of the policy to modify.
@@ -25,7 +23,7 @@ trait SchemaSetIamPolicyRequest extends StObject {
     * following default mask is used: paths: &quot;bindings, etag&quot; This
     * field is only used by Cloud IAM.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaSetIamPolicyRequest {
   

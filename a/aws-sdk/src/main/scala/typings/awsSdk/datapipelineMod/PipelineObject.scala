@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineObject extends StObject {
   
   /**
     * Key-value pairs that define the properties of the object.
     */
-  var fields: fieldList = js.native
+  var fields: fieldList
   
   /**
     * The ID of the object.
     */
-  var id: typings.awsSdk.datapipelineMod.id = js.native
+  var id: typings.awsSdk.datapipelineMod.id
   
   /**
     * The name of the object.
     */
-  var name: id = js.native
+  var name: id
 }
 object PipelineObject {
   

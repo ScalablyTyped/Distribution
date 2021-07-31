@@ -2,16 +2,16 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompletionErrorsEvent extends RealTimePullRequestEvent {
+trait CompletionErrorsEvent
+  extends StObject
+     with RealTimePullRequestEvent {
   
   /**
     * The error message associated with the completion error
     */
-  var errorMessage: String = js.native
+  var errorMessage: String
 }
 object CompletionErrorsEvent {
   

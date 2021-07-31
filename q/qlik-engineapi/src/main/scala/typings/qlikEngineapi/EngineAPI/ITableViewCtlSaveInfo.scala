@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableViewCtlSaveInfo...
   */
-@js.native
 trait ITableViewCtlSaveInfo extends StObject {
   
   /**
     * Internal view mode.
     */
-  var qInternalView: ITableViewSaveInfo = js.native
+  var qInternalView: ITableViewSaveInfo
   
   /**
     * Source view mode.
     */
-  var qSourceView: ITableViewSaveInfo = js.native
+  var qSourceView: ITableViewSaveInfo
 }
 object ITableViewCtlSaveInfo {
   

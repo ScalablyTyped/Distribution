@@ -9,31 +9,28 @@ import typings.nodePgMigrate.sequencesTypesMod.SequenceOptions
 import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sequencesMod {
   
-  @JSImport("node-pg-migrate/dist/operations/sequences", "alterSequence")
+  @JSImport("node-pg-migrate/dist/operations/sequences", JSImport.Namespace)
   @js.native
-  def alterSequence(mOptions: MigrationOptions): AlterSequence = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/sequences", "createSequence")
-  @js.native
-  def createSequence(mOptions: MigrationOptions): CreateSequence = js.native
+  @scala.inline
+  def alterSequence(mOptions: MigrationOptions): AlterSequence = ^.asInstanceOf[js.Dynamic].applyDynamic("alterSequence")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterSequence]
   
-  @JSImport("node-pg-migrate/dist/operations/sequences", "dropSequence")
-  @js.native
-  def dropSequence(mOptions: MigrationOptions): DropSequence = js.native
+  @scala.inline
+  def createSequence(mOptions: MigrationOptions): CreateSequence = ^.asInstanceOf[js.Dynamic].applyDynamic("createSequence")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateSequence]
   
-  @JSImport("node-pg-migrate/dist/operations/sequences", "parseSequenceOptions")
-  @js.native
-  def parseSequenceOptions(typeShorthands: js.UndefOr[scala.Nothing], options: SequenceOptions): js.Array[String] = js.native
-  @JSImport("node-pg-migrate/dist/operations/sequences", "parseSequenceOptions")
-  @js.native
-  def parseSequenceOptions(typeShorthands: ColumnDefinitions, options: SequenceOptions): js.Array[String] = js.native
+  @scala.inline
+  def dropSequence(mOptions: MigrationOptions): DropSequence = ^.asInstanceOf[js.Dynamic].applyDynamic("dropSequence")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropSequence]
   
-  @JSImport("node-pg-migrate/dist/operations/sequences", "renameSequence")
-  @js.native
-  def renameSequence(mOptions: MigrationOptions): RenameSequence = js.native
+  @scala.inline
+  def parseSequenceOptions(typeShorthands: Unit, options: SequenceOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSequenceOptions")(typeShorthands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def parseSequenceOptions(typeShorthands: ColumnDefinitions, options: SequenceOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSequenceOptions")(typeShorthands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def renameSequence(mOptions: MigrationOptions): RenameSequence = ^.asInstanceOf[js.Dynamic].applyDynamic("renameSequence")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameSequence]
 }

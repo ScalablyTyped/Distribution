@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCoursesCourseworkStudentsubmissionsPatch extends StandardParameters {
+trait ParamsResourceCoursesCourseworkStudentsubmissionsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifier of the course. This identifier can be either the
     * Classroom-assigned identifier or an alias.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the course work.
     */
-  var courseWorkId: js.UndefOr[String] = js.native
+  var courseWorkId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the student submission.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaStudentSubmission] = js.native
+  var requestBody: js.UndefOr[SchemaStudentSubmission] = js.undefined
   
   /**
     * Mask that identifies which fields on the student submission to update.
@@ -44,7 +44,7 @@ trait ParamsResourceCoursesCourseworkStudentsubmissionsPatch extends StandardPar
     * fields are specified.  The following fields may be specified by teachers:
     * * `draft_grade` * `assigned_grade`
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCoursesCourseworkStudentsubmissionsPatch {
   

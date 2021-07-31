@@ -31,41 +31,39 @@ import typings.stripe.stripeStrings.sv
 import typings.stripe.stripeStrings.zh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkouts {
   
   object sessions {
     
-    @js.native
     trait ICheckOutCreationSubscriptionData extends StObject {
       
       /**
         * A non-negative decimal between 0 and 100, with at most two decimal places.
         * This represents the percentage of the subscription invoice subtotal that will be transferred to the application owner’s Stripe account.
         */
-      var application_fee_percent: js.UndefOr[Double] = js.native
+      var application_fee_percent: js.UndefOr[Double] = js.undefined
       
       /**
         * A list of items, each with an attached plan, that the customer is subscribing to. Use this parameter for subscriptions. To create one-time payments, use line_items.
         */
-      var items: js.Array[ICheckOutCreationSubscriptionDataItem] = js.native
+      var items: js.Array[ICheckOutCreationSubscriptionDataItem]
       
       /**
         * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
         */
-      var metadata: js.UndefOr[IMetadata] = js.native
+      var metadata: js.UndefOr[IMetadata] = js.undefined
       
       /**
         * Unix timestamp representing the end of the trial period the customer will get before being charged for the first time. Has to be at least 48 hours in the future.
         */
-      var trial_end: js.UndefOr[Double] = js.native
+      var trial_end: js.UndefOr[Double] = js.undefined
       
       /**
         * Integer representing the number of trial period days before the customer is charged for the first time. Has to be at least 1.
         */
-      var trial_period_days: js.UndefOr[Double] = js.native
+      var trial_period_days: js.UndefOr[Double] = js.undefined
     }
     object ICheckOutCreationSubscriptionData {
       
@@ -110,18 +108,17 @@ object checkouts {
       }
     }
     
-    @js.native
     trait ICheckOutCreationSubscriptionDataItem extends StObject {
       
       /**
         * Plan ID for this item.
         */
-      var plan: String = js.native
+      var plan: String
       
       /**
         * Quantity for this item.
         */
-      var quantity: js.UndefOr[Double] = js.native
+      var quantity: js.UndefOr[Double] = js.undefined
     }
     object ICheckOutCreationSubscriptionDataItem {
       
@@ -145,7 +142,6 @@ object checkouts {
       }
     }
     
-    @js.native
     trait ICheckoutCreationOptions extends StObject {
       
       /**
@@ -153,76 +149,76 @@ object checkouts {
         * If 'required', info will always be collected.
         * When 'auto' or not specified, info will be collected when required
         */
-      var billing_address_collection: js.UndefOr[required | auto] = js.native
+      var billing_address_collection: js.UndefOr[required | auto] = js.undefined
       
       /**
         * The URL to return the customer to if they cancel payment
         */
-      var cancel_url: String = js.native
+      var cancel_url: String
       
       /**
         * An optional unique ID to associate with the checkout
         */
-      var client_reference_id: js.UndefOr[String] = js.native
+      var client_reference_id: js.UndefOr[String] = js.undefined
       
       /**
         * Must be used with @param line_items
         * ID of existing customer to use
         */
-      var customer: js.UndefOr[String] = js.native
+      var customer: js.UndefOr[String] = js.undefined
       
       /**
         * Email of the customer
         */
-      var customer_email: js.UndefOr[String] = js.native
+      var customer_email: js.UndefOr[String] = js.undefined
       
       /**
         * A list of items the customer is purchasing. One-time.
         */
-      var line_items: js.UndefOr[js.Array[ICheckoutLineItems]] = js.native
+      var line_items: js.UndefOr[js.Array[ICheckoutLineItems]] = js.undefined
       
       /**
         * Language to use. If 'auto' or not specified, browser default is used
         */
-      var locale: js.UndefOr[auto | da | de | en | es | fi | fr | it | ja | nb | nl | pl | pt | sv | zh] = js.native
+      var locale: js.UndefOr[auto | da | de | en | es | fi | fr | it | ja | nb | nl | pl | pt | sv | zh] = js.undefined
       
       /**
         * The mode of the Checkout Session, one of payment, setup, or subscription.
         */
-      var mode: js.UndefOr[payment | setup | subscription] = js.native
+      var mode: js.UndefOr[payment | setup | subscription] = js.undefined
       
       /**
         * Details for creation of payment intent
         */
-      var payment_intent_data: js.UndefOr[IPaymentIntentSessionSubset | IPaymentIntentData] = js.native
+      var payment_intent_data: js.UndefOr[IPaymentIntentSessionSubset | IPaymentIntentData] = js.undefined
       
       /**
         * A list of accepted payment types.
         * 'card' is currently the only supported options
         */
-      var payment_method_types: js.Array[String] = js.native
+      var payment_method_types: js.Array[String]
       
       /**
         * A subset of parameters to be passed to SetupIntent creation.
         */
-      var setup_intent_data: js.UndefOr[ISetupIntentSessionSubset] = js.native
+      var setup_intent_data: js.UndefOr[ISetupIntentSessionSubset] = js.undefined
       
       /**
         * Describes the type of transaction being performed by Checkout in order to customize relevant text on the page, such as the submit button.
         * submit_type can only be specified on Checkout Sessions using line items or a SKU, but not Checkout Sessions for subscriptions.
         * Supported values are auto, book, donate, or pay.
         */
-      var submit_type: js.UndefOr[auto | book | donate | pay] = js.native
+      var submit_type: js.UndefOr[auto | book | donate | pay] = js.undefined
       
       /**
         * Use instead of @param line_items when using a subscription
         */
-      var subscription_data: js.UndefOr[ICheckOutCreationSubscriptionData | ISubscriptionCustCreationOptions] = js.native
+      var subscription_data: js.UndefOr[ICheckOutCreationSubscriptionData | ISubscriptionCustCreationOptions] = js.undefined
       
       /**
         * The url to return to upon successful payment
         */
-      var success_url: String = js.native
+      var success_url: String
     }
     object ICheckoutCreationOptions {
       
@@ -318,38 +314,37 @@ object checkouts {
       }
     }
     
-    @js.native
     trait ICheckoutLineItems extends StObject {
       
       /**
         * Amount to be collected per unit of item
         */
-      var amount: Double = js.native
+      var amount: Double
       
       /**
         * Currency to collect payment in
         */
-      var currency: String = js.native
+      var currency: String
       
       /**
         * An optional description for the item
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * A list of images for the item
         */
-      var images: js.UndefOr[js.Array[String]] = js.native
+      var images: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The name of the item
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * The amount of item being purchased
         */
-      var quantity: Double = js.native
+      var quantity: Double
     }
     object ICheckoutLineItems {
       
@@ -391,88 +386,87 @@ object checkouts {
       }
     }
     
-    @js.native
     trait ICheckoutSession extends StObject {
       
       /**
         * Whether or not billing address was collected
         */
-      var billing_address_collection: js.UndefOr[String] = js.native
+      var billing_address_collection: js.UndefOr[String] = js.undefined
       
       /**
         * URL the customer will be redirected to upon cancellation
         */
-      var cancel_url: String = js.native
+      var cancel_url: String
       
       /**
         * Unique reference to session
         */
-      var client_reference_id: js.UndefOr[String] = js.native
+      var client_reference_id: js.UndefOr[String] = js.undefined
       
       /**
         * ID of customer [Expandable]
         */
-      var customer: js.UndefOr[String | ICustomer] = js.native
+      var customer: js.UndefOr[String | ICustomer] = js.undefined
       
       /**
         * Email address of customer
         */
-      var customer_email: js.UndefOr[String] = js.native
+      var customer_email: js.UndefOr[String] = js.undefined
       
       /**
         * The line items purchased
         */
-      var display_items: js.Array[ICheckoutLineItems] = js.native
+      var display_items: js.Array[ICheckoutLineItems]
       
       /**
         * Unique ID for checkout session to pass to `redirectToCheckout` in Stripe.js
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * If the object is in live mode or not
         */
-      var livemode: Boolean = js.native
+      var livemode: Boolean
       
       /**
         * Language tag of the checkout session
         */
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
       /**
         * The mode of the Checkout Session, one of payment, setup, or subscription.
         */
-      var mode: js.UndefOr[payment | setup | subscription] = js.native
+      var mode: js.UndefOr[payment | setup | subscription] = js.undefined
       
       /**
         * String of object type. Is always 'checkout.session'
         */
-      var `object`: String = js.native
+      var `object`: String
       
       /**
         * ID of payment intent created [Expandable]
         */
-      var payment_intent: js.UndefOr[String | IPaymentIntent] = js.native
+      var payment_intent: js.UndefOr[String | IPaymentIntent] = js.undefined
       
       /**
         * Array of accepted payment methods
         */
-      var payment_method_types: js.UndefOr[js.Array[String]] = js.native
+      var payment_method_types: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The ID of the SetupIntent for Checkout Sessions in setup mode.
         */
-      var setup_intent: js.UndefOr[String | Null] = js.native
+      var setup_intent: js.UndefOr[String | Null] = js.undefined
       
       /**
         * ID of subscription if one was created [Expandable]
         */
-      var subscription: js.UndefOr[String | ISubscription] = js.native
+      var subscription: js.UndefOr[String | ISubscription] = js.undefined
       
       /**
         * URL to redirect to upon success
         */
-      var success_url: String = js.native
+      var success_url: String
     }
     object ICheckoutSession {
       

@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetDeploymentInstancesInput extends StObject {
   
   /**
     *  The unique ID of a deployment. 
     */
-  var deploymentId: DeploymentId = js.native
+  var deploymentId: DeploymentId
   
   /**
     * The unique IDs of instances used in the deployment. The maximum number of instance IDs you can specify is 25.
     */
-  var instanceIds: InstancesList = js.native
+  var instanceIds: InstancesList
 }
 object BatchGetDeploymentInstancesInput {
   

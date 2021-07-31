@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeElasticsearchInstanceTypeLimitsRequest extends StObject {
   
   /**
     *  DomainName represents the name of the Domain that we are trying to modify. This should be present only if we are querying for Elasticsearch  Limits  for existing domain. 
     */
-  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.undefined
   
   /**
     *  Version of Elasticsearch for which  Limits  are needed. 
     */
-  var ElasticsearchVersion: ElasticsearchVersionString = js.native
+  var ElasticsearchVersion: ElasticsearchVersionString
   
   /**
     *  The instance type for an Elasticsearch cluster for which Elasticsearch  Limits  are needed. 
     */
-  var InstanceType: ESPartitionInstanceType = js.native
+  var InstanceType: ESPartitionInstanceType
 }
 object DescribeElasticsearchInstanceTypeLimitsRequest {
   

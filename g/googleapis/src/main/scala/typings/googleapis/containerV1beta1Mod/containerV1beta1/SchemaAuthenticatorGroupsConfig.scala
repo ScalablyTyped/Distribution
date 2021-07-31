@@ -2,26 +2,24 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for returning group information from authenticators.
   */
-@js.native
 trait SchemaAuthenticatorGroupsConfig extends StObject {
   
   /**
     * Whether this cluster should return group membership lookups during
     * authentication using a group of security groups.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the security group-of-groups to be used. Only relevant if
     * enabled = true.
     */
-  var securityGroup: js.UndefOr[String] = js.native
+  var securityGroup: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthenticatorGroupsConfig {
   

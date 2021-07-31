@@ -2,42 +2,40 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a Campaign Manager subaccount.
   */
-@js.native
 trait SchemaSubaccount extends StObject {
   
   /**
     * ID of the account that contains this subaccount. This is a read-only
     * field that can be left blank.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * IDs of the available user role permissions for this subaccount.
     */
-  var availablePermissionIds: js.UndefOr[js.Array[String]] = js.native
+  var availablePermissionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * ID of this subaccount. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#subaccount&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this subaccount. This is a required field. Must be less than 128
     * characters long and be unique among subaccounts of the same account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaSubaccount {
   

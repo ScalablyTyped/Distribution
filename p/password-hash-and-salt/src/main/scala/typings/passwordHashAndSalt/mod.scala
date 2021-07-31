@@ -2,21 +2,22 @@ package typings.passwordHashAndSalt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(password: String): Password = ^.asInstanceOf[js.Dynamic].apply(password.asInstanceOf[js.Any]).asInstanceOf[Password]
+  
   @JSImport("password-hash-and-salt", JSImport.Namespace)
   @js.native
-  def apply(password: String): Password = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Password extends StObject {
     
-    def hash(cb: js.Function2[/* error */ String, /* hash */ String, Unit]): Unit = js.native
+    def hash(cb: js.Function2[/* error */ String, /* hash */ String, Unit]): Unit
     
-    def verifyAgainst(hash: String, cb: js.Function2[/* error */ String, /* verified */ Boolean, Unit]): Unit = js.native
+    def verifyAgainst(hash: String, cb: js.Function2[/* error */ String, /* verified */ Boolean, Unit]): Unit
   }
   object Password {
     

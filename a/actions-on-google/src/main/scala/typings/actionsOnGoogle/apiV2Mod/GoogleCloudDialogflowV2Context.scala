@@ -3,17 +3,15 @@ package typings.actionsOnGoogle.apiV2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2Context extends StObject {
   
-  var lifespanCount: js.UndefOr[Double] = js.native
+  var lifespanCount: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var parameters: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object GoogleCloudDialogflowV2Context {
   
@@ -39,7 +37,7 @@ object GoogleCloudDialogflowV2Context {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setParameters(value: ApiClientObjectMap[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

@@ -5,7 +5,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.autoscalingSlashv1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1 {
@@ -13,23 +12,22 @@ object v1 {
   /**
     * CrossVersionObjectReference contains enough information to let you identify the referred resource.
     */
-  @js.native
   trait CrossVersionObjectReference extends StObject {
     
     /**
       * API version of the referent
       */
-    var apiVersion: js.UndefOr[Input[String]] = js.native
+    var apiVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
       */
-    var kind: Input[String] = js.native
+    var kind: Input[String]
     
     /**
       * Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
   }
   object CrossVersionObjectReference {
     
@@ -59,33 +57,32 @@ object v1 {
   /**
     * configuration of a horizontal pod autoscaler.
     */
-  @js.native
   trait HorizontalPodAutoscaler extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    var apiVersion: js.UndefOr[Input[autoscalingSlashv1]] = js.native
+    var apiVersion: js.UndefOr[Input[autoscalingSlashv1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler]] = js.native
+    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler]] = js.undefined
     
     /**
       * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+    var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     
     /**
       * behaviour of autoscaler. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
       */
-    var spec: js.UndefOr[Input[HorizontalPodAutoscalerSpec]] = js.native
+    var spec: js.UndefOr[Input[HorizontalPodAutoscalerSpec]] = js.undefined
     
     /**
       * current information about the autoscaler.
       */
-    var status: js.UndefOr[Input[HorizontalPodAutoscalerStatus]] = js.native
+    var status: js.UndefOr[Input[HorizontalPodAutoscalerStatus]] = js.undefined
   }
   object HorizontalPodAutoscaler {
     
@@ -133,28 +130,27 @@ object v1 {
   /**
     * specification of a horizontal pod autoscaler.
     */
-  @js.native
   trait HorizontalPodAutoscalerSpec extends StObject {
     
     /**
       * upper limit for the number of pods that can be set by the autoscaler; cannot be smaller than MinReplicas.
       */
-    var maxReplicas: Input[Double] = js.native
+    var maxReplicas: Input[Double]
     
     /**
       * minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.
       */
-    var minReplicas: js.UndefOr[Input[Double]] = js.native
+    var minReplicas: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * reference to scaled resource; horizontal pod autoscaler will learn the current resource consumption and will set the desired number of pods by using its Scale subresource.
       */
-    var scaleTargetRef: Input[CrossVersionObjectReference] = js.native
+    var scaleTargetRef: Input[CrossVersionObjectReference]
     
     /**
       * target average CPU utilization (represented as a percentage of requested CPU) over all the pods; if not specified the default autoscaling policy will be used.
       */
-    var targetCPUUtilizationPercentage: js.UndefOr[Input[Double]] = js.native
+    var targetCPUUtilizationPercentage: js.UndefOr[Input[Double]] = js.undefined
   }
   object HorizontalPodAutoscalerSpec {
     
@@ -190,33 +186,32 @@ object v1 {
   /**
     * current status of a horizontal pod autoscaler
     */
-  @js.native
   trait HorizontalPodAutoscalerStatus extends StObject {
     
     /**
       * current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average pod is using now 70% of its requested CPU.
       */
-    var currentCPUUtilizationPercentage: js.UndefOr[Input[Double]] = js.native
+    var currentCPUUtilizationPercentage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * current number of replicas of pods managed by this autoscaler.
       */
-    var currentReplicas: Input[Double] = js.native
+    var currentReplicas: Input[Double]
     
     /**
       * desired number of replicas of pods managed by this autoscaler.
       */
-    var desiredReplicas: Input[Double] = js.native
+    var desiredReplicas: Input[Double]
     
     /**
       * last time the HorizontalPodAutoscaler scaled the number of pods; used by the autoscaler to control how often the number of pods is changed.
       */
-    var lastScaleTime: js.UndefOr[Input[String]] = js.native
+    var lastScaleTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * most recent generation observed by this autoscaler.
       */
-    var observedGeneration: js.UndefOr[Input[Double]] = js.native
+    var observedGeneration: js.UndefOr[Input[Double]] = js.undefined
   }
   object HorizontalPodAutoscalerStatus {
     

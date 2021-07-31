@@ -2,39 +2,37 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Internal representation of thumbnails for a YouTube resource.
   */
-@js.native
 trait SchemaThumbnailDetails extends StObject {
   
   /**
     * The default image for this resource.
     */
-  var default: js.UndefOr[SchemaThumbnail] = js.native
+  var default: js.UndefOr[SchemaThumbnail] = js.undefined
   
   /**
     * The high quality image for this resource.
     */
-  var high: js.UndefOr[SchemaThumbnail] = js.native
+  var high: js.UndefOr[SchemaThumbnail] = js.undefined
   
   /**
     * The maximum resolution quality image for this resource.
     */
-  var maxres: js.UndefOr[SchemaThumbnail] = js.native
+  var maxres: js.UndefOr[SchemaThumbnail] = js.undefined
   
   /**
     * The medium quality image for this resource.
     */
-  var medium: js.UndefOr[SchemaThumbnail] = js.native
+  var medium: js.UndefOr[SchemaThumbnail] = js.undefined
   
   /**
     * The standard quality image for this resource.
     */
-  var standard: js.UndefOr[SchemaThumbnail] = js.native
+  var standard: js.UndefOr[SchemaThumbnail] = js.undefined
 }
 object SchemaThumbnailDetails {
   

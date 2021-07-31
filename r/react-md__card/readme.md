@@ -10,9 +10,9 @@ Create interactable cards from the material design specifications.
 | ------------------ | :-------------: |
 | Full name          | @react-md/card |
 | Keywords           | accessibility, a11y, react-md, material design, react, card, component, components |
-| # releases         | 29 |
+| # releases         | 36 |
 | # dependents       | 2 |
-| # downloads        | 6044 |
+| # downloads        | 17584 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,47 +11,77 @@ sealed trait EasMinPasswordLengthResult extends StObject
 object EasMinPasswordLengthResult extends StObject {
   
   @js.native
-  sealed trait adminsCannotChangePassword extends EasMinPasswordLengthResult
+  sealed trait adminsCannotChangePassword
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait adminsHaveBlankPassword extends EasMinPasswordLengthResult
+  sealed trait adminsHaveBlankPassword
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait canBeCompliant extends EasMinPasswordLengthResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait changeConnectedAdminsPassword extends EasMinPasswordLengthResult
+  sealed trait changeConnectedAdminsPassword
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait changeConnectedUserPassword extends EasMinPasswordLengthResult
+  sealed trait changeConnectedUserPassword
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait compliant extends EasMinPasswordLengthResult
+  sealed trait compliant
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait connectedAdminsProviderPolicyIsWeak extends EasMinPasswordLengthResult
+  sealed trait connectedAdminsProviderPolicyIsWeak
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait connectedUserProviderPolicyIsWeak extends EasMinPasswordLengthResult
+  sealed trait connectedUserProviderPolicyIsWeak
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait currentUserHasBlankPassword extends EasMinPasswordLengthResult
+  sealed trait currentUserHasBlankPassword
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait invalidParameter extends EasMinPasswordLengthResult
+  sealed trait invalidParameter
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait localControlledUsersCannotChangePassword extends EasMinPasswordLengthResult
+  sealed trait localControlledUsersCannotChangePassword
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait notEvaluated extends EasMinPasswordLengthResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait requestedPolicyIsStricter extends EasMinPasswordLengthResult
+  sealed trait requestedPolicyIsStricter
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait requestedPolicyNotEnforceable extends EasMinPasswordLengthResult
+  sealed trait requestedPolicyNotEnforceable
+    extends StObject
+       with EasMinPasswordLengthResult
   
   @js.native
-  sealed trait userCannotChangePassword extends EasMinPasswordLengthResult
+  sealed trait userCannotChangePassword
+    extends StObject
+       with EasMinPasswordLengthResult
 }

@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the GroupShapeCollection object, for use in `groupShapeCollection.set({ ... })`. */
-@js.native
 trait GroupShapeCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[ShapeData]] = js.native
+  var items: js.UndefOr[js.Array[ShapeData]] = js.undefined
 }
 object GroupShapeCollectionUpdateData {
   

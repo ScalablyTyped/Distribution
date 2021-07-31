@@ -10,9 +10,9 @@ Material-UI Lab - Incubator for Material-UI React components.
 | ------------------ | :-------------: |
 | Full name          | @material-ui/lab |
 | Keywords           | react, react-component, material design, material-ui, lab |
-| # releases         | 76 |
-| # dependents       | 518 |
-| # downloads        | 16861182 |
+| # releases         | 80 |
+| # dependents       | 715 |
+| # downloads        | 27740342 |
 | # stars            | 0 |
 
 ## Links

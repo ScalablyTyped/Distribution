@@ -26,7 +26,6 @@ import typings.std.ArrayLike
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,7 +38,9 @@ object mod extends Shortcut {
     *
     * @param opts Mask options.
     */
-  class ^ () extends Instance {
+  class ^ ()
+    extends StObject
+       with Instance {
     /**
       * Creates a new Inputmask instance.
       *
@@ -52,7 +53,7 @@ object mod extends Shortcut {
   }
   @JSImport("inputmask", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.inputmask.inputmaskStrings.upper
@@ -72,39 +73,38 @@ object mod extends Shortcut {
     def upper: typings.inputmask.inputmaskStrings.upper = "upper".asInstanceOf[typings.inputmask.inputmaskStrings.upper]
   }
   
-  @js.native
   trait CommandObject extends StObject {
     
     /**
       * Character to insert.
       */
-    var c: js.UndefOr[String] = js.native
+    var c: js.UndefOr[String] = js.undefined
     
     /**
       * Position of the caret.
       */
-    var caret: js.UndefOr[Double] = js.native
+    var caret: js.UndefOr[Double] = js.undefined
     
     /**
       * Position(s) to add.
       */
-    var insert: js.UndefOr[InsertPosition | js.Array[InsertPosition]] = js.native
+    var insert: js.UndefOr[InsertPosition | js.Array[InsertPosition]] = js.undefined
     
     /**
       * Position to insert.
       */
-    var pos: js.UndefOr[Double] = js.native
+    var pos: js.UndefOr[Double] = js.undefined
     
     /**
       * * `true` => refresh validPositions from the complete buffer .
       * * `{ start: , end: }` => refresh from start to end.
       */
-    var refreshFromBuffer: js.UndefOr[`true` | Start] = js.native
+    var refreshFromBuffer: js.UndefOr[`true` | Start] = js.undefined
     
     /**
       * Position(s) to remove.
       */
-    var remove: js.UndefOr[Double | js.Array[Double]] = js.native
+    var remove: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object CommandObject {
     
@@ -161,18 +161,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Definition extends StObject {
     
-    var cardinality: js.UndefOr[Double] = js.native
+    var cardinality: js.UndefOr[Double] = js.undefined
     
-    var casing: js.UndefOr[Casing] = js.native
+    var casing: js.UndefOr[Casing] = js.undefined
     
-    var definitionSymbol: js.UndefOr[String] = js.native
+    var definitionSymbol: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var validator: String | DefinitionValidator = js.native
+    var validator: String | DefinitionValidator
   }
   object Definition {
     
@@ -270,18 +269,17 @@ object mod extends Shortcut {
     def verbatim: typings.inputmask.inputmaskStrings.verbatim = "verbatim".asInstanceOf[typings.inputmask.inputmaskStrings.verbatim]
   }
   
-  @js.native
   trait InsertPosition extends StObject {
     
     /**
       * Character to insert.
       */
-    var c: String = js.native
+    var c: String
     
     /**
       * Position to insert.
       */
-    var pos: Double = js.native
+    var pos: Double
   }
   object InsertPosition {
     
@@ -378,7 +376,6 @@ object mod extends Shortcut {
     def unmaskedvalue(): String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -386,28 +383,28 @@ object mod extends Shortcut {
       *
       * @default null
       */
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
     /**
       * Allow to enter -.
       *
       * @default true
       */
-    var allowMinus: js.UndefOr[Boolean] = js.native
+    var allowMinus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Definition of the symbols used to indicate an alternator part in the mask.
       *
       * @default "|"
       */
-    var alternatormarker: js.UndefOr[String] = js.native
+    var alternatormarker: js.UndefOr[String] = js.undefined
     
     /**
       * Enable grouping of the integer part.
       *
       * @default false
       */
-    var autoGroup: js.UndefOr[Boolean] = js.native
+    var autoGroup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically unmask the value when retrieved.
@@ -416,28 +413,28 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var autoUnmask: js.UndefOr[Boolean] = js.native
+    var autoUnmask: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Apply casing at the mask-level.
       *
       * @default undefined
       */
-    var casing: js.UndefOr[Casing] = js.native
+    var casing: js.UndefOr[Casing] = js.undefined
     
     /**
       * Clear the incomplete input on blur.
       *
       * @default false
       */
-    var clearIncomplete: js.UndefOr[Boolean] = js.native
+    var clearIncomplete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove the empty mask on blur or when not empty removes the optional trailing part.
       *
       * @default true
       */
-    var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.native
+    var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Create a css styleable mask.
@@ -449,19 +446,19 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var colorMask: js.UndefOr[Boolean] = js.native
+    var colorMask: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Do not allow assumption of decimals input without entering the radixpoint.
       *
       * @default true
       */
-    var decimalProtect: js.UndefOr[Boolean] = js.native
+    var decimalProtect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add new definitions to this inputmask.
       */
-    var definitions: js.UndefOr[StringDictionary[Definition]] = js.native
+    var definitions: js.UndefOr[StringDictionary[Definition]] = js.undefined
     
     /**
       * Number of fractionalDigits.
@@ -474,14 +471,14 @@ object mod extends Shortcut {
       *
       * @default "*"
       */
-    var digits: js.UndefOr[String] = js.native
+    var digits: js.UndefOr[String] = js.undefined
     
     /**
       * Specify wheter the digits are optional.
       *
       * @default true
       */
-    var digitsOptional: js.UndefOr[Boolean] = js.native
+    var digitsOptional: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables predictive text on mobile devices.
@@ -497,21 +494,21 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var disablePredictiveText: js.UndefOr[Boolean] = js.native
+    var disablePredictiveText: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enforces the decimal part when leaving the input field.
       *
       * @default false
       */
-    var enforceDigitsOnBlur: js.UndefOr[Boolean] = js.native
+    var enforceDigitsOnBlur: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Definition of the symbols used to escape a part in the mask.
       *
       * @default "\\"
       */
-    var escapeChar: js.UndefOr[String] = js.native
+    var escapeChar: js.UndefOr[String] = js.undefined
     
     /**
       * Toggle to allocate as much possible or the opposite. Non-greedy repeat function. With the non-greedy option
@@ -519,34 +516,34 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var greedy: js.UndefOr[Boolean] = js.native
+    var greedy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Define the groupseparator.
       *
       * @default ""
       */
-    var groupSeparator: js.UndefOr[String] = js.native
+    var groupSeparator: js.UndefOr[String] = js.undefined
     
     /**
       * Define the grouping of the integer part.
       *
       * @default 3
       */
-    var groupSize: js.UndefOr[Double] = js.native
+    var groupSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Definition of the symbols used to indicate a group in the mask.
       *
       * @default { start: "(", end: ")" }
       */
-    var groupmarker: js.UndefOr[Range] = js.native
+    var groupmarker: js.UndefOr[Range] = js.undefined
     
     /**
       * Specify keyCodes which should not be considered in the keypress event, otherwise the `preventDefault` will
       * stop their default behavior especially in FF.
       */
-    var ignorables: js.UndefOr[js.Array[Double]] = js.native
+    var ignorables: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Specify to use the `data-inputmask` attributes or to ignore them.
@@ -555,7 +552,7 @@ object mod extends Shortcut {
       *
       * @default true
       */
-    var importDataAttributes: js.UndefOr[Boolean] = js.native
+    var importDataAttributes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Format used to input a date. This option is only effective for the datetime alias.
@@ -597,14 +594,14 @@ object mod extends Shortcut {
       *
       * @default "isoDateTime"
       */
-    var inputFormat: js.UndefOr[String] = js.native
+    var inputFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether the value passed for initialization is text or a number
       *
       * @default "text"
       */
-    var inputType: js.UndefOr[text | number] = js.native
+    var inputType: js.UndefOr[text | number] = js.undefined
     
     /**
       * Specify the inputmode - already in place for when browsers start to support them
@@ -612,33 +609,33 @@ object mod extends Shortcut {
       *
       * @default "verbatim"
       */
-    var inputmode: js.UndefOr[InputMode] = js.native
+    var inputmode: js.UndefOr[InputMode] = js.undefined
     
     /**
       * Toggle to insert or overwrite input. This option can be altered by pressing the Insert key.
       *
       * @default true
       */
-    var insertMode: js.UndefOr[Boolean] = js.native
+    var insertMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of integerDigits
       *
       * @default "+"
       */
-    var integerDigits: js.UndefOr[String] = js.native
+    var integerDigits: js.UndefOr[String] = js.undefined
     
     /**
       * Specify wheter the integerdigits are optional.
       *
       * @default true
       */
-    var integerOptional: js.UndefOr[Boolean] = js.native
+    var integerOptional: js.UndefOr[Boolean] = js.undefined
     
     /**
       * With this call-in (hook) you can override the default implementation of the isComplete function.
       */
-    var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Array[String], /* opts */ this.type, Boolean]] = js.native
+    var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Array[String], /* opts */ this.type, Boolean]] = js.undefined
     
     /**
       * Just in time masking. With the `jitMasking` option you can enable jit masking. The mask will only be
@@ -646,7 +643,7 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var jitMasking: js.UndefOr[Boolean] = js.native
+    var jitMasking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use in combination with the alternator syntax Try to keep the mask static while typing. Decisions to alter the
@@ -661,38 +658,38 @@ object mod extends Shortcut {
       *
       * @default null
       */
-    var keepStatic: js.UndefOr[Boolean | Null] = js.native
+    var keepStatic: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * The mask to use.
       */
     var mask: js.UndefOr[
         String | js.Array[String] | (js.Function1[/* opts */ this.type, String | js.Array[String]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Maximum value. This needs to be in the same format as the `inputFormat` when used with the datetime alias.
       */
-    var max: js.UndefOr[String] = js.native
+    var max: js.UndefOr[String] = js.undefined
     
     /**
       * Minimum value. This needs to be in the same format as the `inputFormat` when used with the datetime alias.
       */
-    var min: js.UndefOr[String] = js.native
+    var min: js.UndefOr[String] = js.undefined
     
     /**
       * Define your negationSymbol.
       *
       * @default { front: "-", back: "" }
       */
-    var negationSymbol: js.UndefOr[Back] = js.native
+    var negationSymbol: js.UndefOr[Back] = js.undefined
     
     /**
       * Disable value property patching
       *
       * @default false
       */
-    var noValuePatching: js.UndefOr[Boolean] = js.native
+    var noValuePatching: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return nothing from the input `value` property when the user hasn't entered anything. If this is false,
@@ -700,26 +697,26 @@ object mod extends Shortcut {
       *
       * @default true
       */
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Numeric input direction. Keeps the caret at the end.
       *
       * @default false
       */
-    var numericInput: js.UndefOr[Boolean] = js.native
+    var numericInput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Executes before masking the initial value to allow preprocessing of the initial value.
       */
-    var onBeforeMask: js.UndefOr[js.Function2[/* initialValue */ String, /* opts */ this.type, String]] = js.native
+    var onBeforeMask: js.UndefOr[js.Function2[/* initialValue */ String, /* opts */ this.type, String]] = js.undefined
     
     /**
       * This callback allows for preprocessing the pasted value before actually handling the value for masking.
       * This can be useful for stripping away some characters before processing. You can also disable pasting
       * a value by returning false in the `onBeforePaste` call.
       */
-    var onBeforePaste: js.UndefOr[js.Function2[/* pastedValue */ String, /* opts */ this.type, String]] = js.native
+    var onBeforePaste: js.UndefOr[js.Function2[/* pastedValue */ String, /* opts */ this.type, String]] = js.undefined
     
     /**
       * Executes before writing to the masked element Use this to do some extra processing of the input. This can
@@ -733,7 +730,7 @@ object mod extends Shortcut {
           /* opts */ this.type, 
           CommandObject
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback to implement autocomplete on certain keys for example.
@@ -746,46 +743,46 @@ object mod extends Shortcut {
           /* opts */ this.type, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback function is executed on every keyvalidation with the key & result as parameter.
       */
-    var onKeyValidation: js.UndefOr[js.Function2[/* key */ Double, /* result */ Boolean, Unit]] = js.native
+    var onKeyValidation: js.UndefOr[js.Function2[/* key */ Double, /* result */ Boolean, Unit]] = js.undefined
     
     /**
       * Executes after unmasking to allow post-processing of the unmaskedvalue.
       *
       * @returns New unmasked value
       */
-    var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ String, /* unmaskedValue */ String, String]] = js.native
+    var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ String, /* unmaskedValue */ String, String]] = js.undefined
     
     /**
       * Execute a function when the mask is cleared.
       */
-    var oncleared: js.UndefOr[js.Function0[Unit]] = js.native
+    var oncleared: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Execute a function when the mask is completed.
       */
-    var oncomplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var oncomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Execute a function when the mask is cleared.
       */
-    var onincomplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onincomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Definition of the symbols used to indicate an optional part in the mask.
       *
       * @default { start: "[", end: "]" }
       */
-    var optionalmarker: js.UndefOr[Range] = js.native
+    var optionalmarker: js.UndefOr[Range] = js.undefined
     
     /**
       * Format of the unmasked value. This is only effective when used with the datetime alias.
       */
-    var outputFormat: js.UndefOr[String] = js.native
+    var outputFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Change the mask placeholder. Instead of "_", you can change the unfilled characters mask as you like, simply
@@ -794,7 +791,7 @@ object mod extends Shortcut {
       *
       * @default "_"
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Positioning of the caret on click.
@@ -809,14 +806,14 @@ object mod extends Shortcut {
       *
       * @default "lvp"
       */
-    var positionCaretOnClick: js.UndefOr[PositionCaretOnClick] = js.native
+    var positionCaretOnClick: js.UndefOr[PositionCaretOnClick] = js.undefined
     
     /**
       * When enabled the caret position is set after the latest valid position on TAB.
       *
       * @default true
       */
-    var positionCaretOnTab: js.UndefOr[Boolean] = js.native
+    var positionCaretOnTab: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hook to postValidate the result from isValid. Useful for validating the entry as a whole.
@@ -829,7 +826,7 @@ object mod extends Shortcut {
           /* opts */ this.type, 
           Boolean | CommandObject
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Hook to preValidate the input. Useful for validating regardless the definition. When return true, the normal
@@ -844,41 +841,41 @@ object mod extends Shortcut {
           /* opts */ this.type, 
           Boolean | CommandObject
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Define a prefix.
       *
       * @default ""
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Definition of the symbols used to indicate a quantifier in the mask.
       *
       * @default { start: "{", end: "}" }
       */
-    var quantifiermarker: js.UndefOr[Range] = js.native
+    var quantifiermarker: js.UndefOr[Range] = js.undefined
     
     /**
       * Define the radixpoint (decimal separator)
       *
       * @default ""
       */
-    var radixPoint: js.UndefOr[String] = js.native
+    var radixPoint: js.UndefOr[String] = js.undefined
     
     /**
       * Use a regular expression as a mask. When using shorthands be aware that you need to double escape or use
       * String.raw with a string literal.
       */
-    var regex: js.UndefOr[String] = js.native
+    var regex: js.UndefOr[String] = js.undefined
     
     /**
       * Remove the mask before submitting the form.
       *
       * @default false
       */
-    var removeMaskOnSubmit: js.UndefOr[Boolean] = js.native
+    var removeMaskOnSubmit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Mask repeat function. Repeat the mask definition x-times.
@@ -886,7 +883,7 @@ object mod extends Shortcut {
       *
       * @default 0
       */
-    var repeat: js.UndefOr[Double | String] = js.native
+    var repeat: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Align the input to the right
@@ -896,7 +893,7 @@ object mod extends Shortcut {
       *
       * @default true
       */
-    var rightAlign: js.UndefOr[Boolean] = js.native
+    var rightAlign: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shift position of the mask entries on entry and deletion. In some cases shift the mask enties isn't desired.
@@ -905,28 +902,28 @@ object mod extends Shortcut {
       *
       * @default true
       */
-    var shiftPositions: js.UndefOr[Boolean] = js.native
+    var shiftPositions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the mask when the input gets focus.
       *
       * @default true
       */
-    var showMaskOnFocus: js.UndefOr[Boolean] = js.native
+    var showMaskOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the mask when the input is hevered by the mouse cursor.
       *
       * @default true
       */
-    var showMaskOnHover: js.UndefOr[Boolean] = js.native
+    var showMaskOnHover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A character which can be used to skip an optional part of a mask.
       *
       * @default " "
       */
-    var skipOptionalPartCharacter: js.UndefOr[String] = js.native
+    var skipOptionalPartCharacter: js.UndefOr[String] = js.undefined
     
     /**
       * The `staticDefinitionSymbol` option is used to indicate that the static entries in the mask can match a
@@ -935,42 +932,42 @@ object mod extends Shortcut {
       *
       * @default undefined
       */
-    var staticDefinitionSymbol: js.UndefOr[String] = js.native
+    var staticDefinitionSymbol: js.UndefOr[String] = js.undefined
     
     /**
       * Define the step the ctrl-up & ctrl-down must take.
       *
       * @default 1
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Define a suffix.
       *
       * @default ""
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * List with the supported input types
       *
       * @default ["text", "tel", "url", "password", "search"]
       */
-    var supportsInputType: js.UndefOr[js.Array[String]] = js.native
+    var supportsInputType: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Allows for tabbing through the different parts of the masked field.
       *
       * @default false
       */
-    var tabThrough: js.UndefOr[Boolean] = js.native
+    var tabThrough: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make escape behave like undo. (ctrl-Z) Pressing escape reverts the value to the value before focus.
       *
       * @default true
       */
-    var undoOnEscape: js.UndefOr[Boolean] = js.native
+    var undoOnEscape: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make unmasking returning a number instead of a string.
@@ -979,7 +976,7 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var unmaskAsNumber: js.UndefOr[Boolean] = js.native
+    var unmaskAsNumber: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -1479,7 +1476,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Static
-    extends /**
+    extends StObject
+       with /**
     * Creates a new Inputmask instance.
     *
     * @param maskOrAlias A mask pattern or a reference to a predefined alias.
@@ -1570,17 +1568,16 @@ object mod extends Shortcut {
     def unmask(value: String, opts: Options): String = js.native
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   object global {
     
-    @js.native
     trait HTMLElement extends StObject {
       
-      var inputmask: js.UndefOr[Instance] = js.native
+      var inputmask: js.UndefOr[Instance] = js.undefined
     }
     object HTMLElement {
       

@@ -3,21 +3,22 @@ package typings.reactWindowSize
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-window-size", JSImport.Default)
+  @JSImport("react-window-size", JSImport.Namespace)
   @js.native
-  def default[T](ComposedComponent: ComponentType[T with WindowSizeProps]): ComponentType[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](ComposedComponent: ComponentType[T & WindowSizeProps]): ComponentType[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T]]
+  
   trait WindowSizeProps extends StObject {
     
-    var windowHeight: Double = js.native
+    var windowHeight: Double
     
-    var windowWidth: Double = js.native
+    var windowWidth: Double
   }
   object WindowSizeProps {
     

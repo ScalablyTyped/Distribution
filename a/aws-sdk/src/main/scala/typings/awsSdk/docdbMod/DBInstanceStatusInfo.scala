@@ -2,31 +2,29 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBInstanceStatusInfo extends StObject {
   
   /**
     * Details of the error if there is an error for the instance. If the instance is not in an error state, this value is blank.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value that is true if the instance is operating normally, or false if the instance is in an error state.
     */
-  var Normal: js.UndefOr[Boolean] = js.native
+  var Normal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Status of the instance. For a StatusType of read replica, the values can be replicating, error, stopped, or terminated.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * This value is currently "read replication."
     */
-  var StatusType: js.UndefOr[String] = js.native
+  var StatusType: js.UndefOr[String] = js.undefined
 }
 object DBInstanceStatusInfo {
   

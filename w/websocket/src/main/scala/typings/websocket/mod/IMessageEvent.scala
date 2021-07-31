@@ -4,13 +4,11 @@ import typings.node.Buffer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessageEvent extends StObject {
   
-  var data: String | Buffer | ArrayBuffer = js.native
+  var data: String | Buffer | ArrayBuffer
 }
 object IMessageEvent {
   

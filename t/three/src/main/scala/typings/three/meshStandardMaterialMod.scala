@@ -9,7 +9,6 @@ import typings.three.textureMod.Texture
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshStandardMaterialMod {
@@ -193,70 +192,71 @@ object meshStandardMaterialMod {
     var wireframeLinewidth: Double = js.native
   }
   
-  @js.native
-  trait MeshStandardMaterialParameters extends MaterialParameters {
+  trait MeshStandardMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var alphaMap: js.UndefOr[Texture | Null] = js.native
+    var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var aoMap: js.UndefOr[Texture | Null] = js.native
+    var aoMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var aoMapIntensity: js.UndefOr[Double] = js.native
+    var aoMapIntensity: js.UndefOr[Double] = js.undefined
     
-    var bumpMap: js.UndefOr[Texture | Null] = js.native
+    var bumpMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var bumpScale: js.UndefOr[Double] = js.native
+    var bumpScale: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[Color | String | Double] = js.undefined
     
-    var displacementBias: js.UndefOr[Double] = js.native
+    var displacementBias: js.UndefOr[Double] = js.undefined
     
-    var displacementMap: js.UndefOr[Texture | Null] = js.native
+    var displacementMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var displacementScale: js.UndefOr[Double] = js.native
+    var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var emissive: js.UndefOr[Color | String | Double] = js.native
+    var emissive: js.UndefOr[Color | String | Double] = js.undefined
     
-    var emissiveIntensity: js.UndefOr[Double] = js.native
+    var emissiveIntensity: js.UndefOr[Double] = js.undefined
     
-    var emissiveMap: js.UndefOr[Texture | Null] = js.native
+    var emissiveMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var envMap: js.UndefOr[Texture | Null] = js.native
+    var envMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var envMapIntensity: js.UndefOr[Double] = js.native
+    var envMapIntensity: js.UndefOr[Double] = js.undefined
     
-    var lightMap: js.UndefOr[Texture | Null] = js.native
+    var lightMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var lightMapIntensity: js.UndefOr[Double] = js.native
+    var lightMapIntensity: js.UndefOr[Double] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.native
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
-    var metalness: js.UndefOr[Double] = js.native
+    var metalness: js.UndefOr[Double] = js.undefined
     
-    var metalnessMap: js.UndefOr[Texture | Null] = js.native
+    var metalnessMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.native
+    var morphNormals: js.UndefOr[Boolean] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.native
+    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
-    var normalMap: js.UndefOr[Texture | Null] = js.native
+    var normalMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var normalMapType: js.UndefOr[NormalMapTypes] = js.native
+    var normalMapType: js.UndefOr[NormalMapTypes] = js.undefined
     
-    var normalScale: js.UndefOr[Vector2] = js.native
+    var normalScale: js.UndefOr[Vector2] = js.undefined
     
-    var refractionRatio: js.UndefOr[Double] = js.native
+    var refractionRatio: js.UndefOr[Double] = js.undefined
     
-    var roughness: js.UndefOr[Double] = js.native
+    var roughness: js.UndefOr[Double] = js.undefined
     
-    var roughnessMap: js.UndefOr[Texture | Null] = js.native
+    var roughnessMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var skinning: js.UndefOr[Boolean] = js.native
+    var skinning: js.UndefOr[Boolean] = js.undefined
     
-    var vertexTangents: js.UndefOr[Boolean] = js.native
+    var vertexTangents: js.UndefOr[Boolean] = js.undefined
     
-    var wireframe: js.UndefOr[Boolean] = js.native
+    var wireframe: js.UndefOr[Boolean] = js.undefined
     
-    var wireframeLinewidth: js.UndefOr[Double] = js.native
+    var wireframeLinewidth: js.UndefOr[Double] = js.undefined
   }
   object MeshStandardMaterialParameters {
     

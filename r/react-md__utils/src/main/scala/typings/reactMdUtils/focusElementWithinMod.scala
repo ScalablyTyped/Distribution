@@ -4,112 +4,94 @@ import typings.std.Document
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusElementWithinMod {
   
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
+  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", JSImport.Namespace)
   @js.native
-  def focusElementWithin(container: Document, focus: Focus): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: Document,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: js.UndefOr[scala.Nothing],
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: Document, focus: Focus, programatic: js.UndefOr[scala.Nothing], preventScroll: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: Document,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: Boolean,
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: Document,
-    focus: Focus,
-    programatic: Boolean,
-    preventScroll: js.UndefOr[scala.Nothing],
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def focusElementWithin(
     container: Document,
     focus: Focus,
     programatic: Boolean,
     preventScroll: Boolean,
     elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: HTMLElement, focus: Focus): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def focusElementWithin(
-    container: HTMLElement,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: js.UndefOr[scala.Nothing],
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: HTMLElement,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: HTMLElement,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: Boolean,
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: HTMLElement,
+    container: Document,
     focus: Focus,
     programatic: Boolean,
-    preventScroll: js.UndefOr[scala.Nothing],
+    preventScroll: Unit,
     elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria/focusElementWithin", "focusElementWithin")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus, programatic: Unit, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: Document,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Boolean,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: Document,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Unit,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def focusElementWithin(
     container: HTMLElement,
     focus: Focus,
     programatic: Boolean,
     preventScroll: Boolean,
     elements: js.Array[HTMLElement]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: HTMLElement,
+    focus: Focus,
+    programatic: Boolean,
+    preventScroll: Unit,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Unit, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: HTMLElement,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Boolean,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: HTMLElement,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Unit,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdUtils.reactMdUtilsStrings.first

@@ -4,11 +4,12 @@ import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelContext extends IRenderContext {
+trait RaphaelContext
+  extends StObject
+     with IRenderContext {
   
   @JSName("glow")
   def glow_Color(): Color = js.native

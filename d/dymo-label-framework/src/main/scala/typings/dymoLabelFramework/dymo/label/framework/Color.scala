@@ -2,7 +2,6 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * r/red, g/green, b/blue for red, green, blue channels.
   * The valid range for a/r/g/b fields is [0..255].
   */
-@js.native
 trait Color extends StObject {
   
   /** alpha channel [0..255] default: 255 */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /** blue channel [0..255] default: 0 */
-  var blue: js.UndefOr[Double] = js.native
+  var blue: js.UndefOr[Double] = js.undefined
   
   /** green channel [0..255] default: 0 */
-  var green: js.UndefOr[Double] = js.native
+  var green: js.UndefOr[Double] = js.undefined
   
   /** red channel [0..255] default: 0 */
-  var red: js.UndefOr[Double] = js.native
+  var red: js.UndefOr[Double] = js.undefined
 }
 object Color {
   

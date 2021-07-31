@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsistentHashLoadBalancerSettingsHttpCookie extends StObject {
   
   /** Name of the cookie. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Path to set for the cookie. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Lifetime of the cookie. */
-  var ttl: js.UndefOr[Duration] = js.native
+  var ttl: js.UndefOr[Duration] = js.undefined
 }
 object ConsistentHashLoadBalancerSettingsHttpCookie {
   

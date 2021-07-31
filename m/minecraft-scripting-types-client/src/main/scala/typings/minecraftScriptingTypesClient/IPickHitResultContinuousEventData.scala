@@ -4,24 +4,22 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.VectorXYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered every update and tells you what entity the mouse pointer is pointing to in the world up to 1000 blocks away.
   */
-@js.native
 trait IPickHitResultContinuousEventData extends StObject {
   
   /**
     * The entity that was hit or null if it not pointing at an entity
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * The position of the entity that was hit or block that was hit
     */
-  var position: VectorXYZ = js.native
+  var position: VectorXYZ
 }
 object IPickHitResultContinuousEventData {
   

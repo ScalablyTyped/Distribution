@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCachediSCSIVolumesInput extends StObject {
   
   /**
     * An array of strings where each string represents the Amazon Resource Name (ARN) of a cached volume. All of the specified cached volumes must be from the same gateway. Use ListVolumes to get volume ARNs for a gateway.
     */
-  var VolumeARNs: typings.awsSdk.storagegatewayMod.VolumeARNs = js.native
+  var VolumeARNs: typings.awsSdk.storagegatewayMod.VolumeARNs
 }
 object DescribeCachediSCSIVolumesInput {
   

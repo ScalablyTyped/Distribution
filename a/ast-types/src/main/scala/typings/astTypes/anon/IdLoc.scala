@@ -7,25 +7,23 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TypeParameterInstantiationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdLoc extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind | QualifiedTypeIdentifierKind = js.native
+  var id: IdentifierKind | QualifiedTypeIdentifierKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var typeParameters: TypeParameterInstantiationKind | Null = js.native
+  var typeParameters: TypeParameterInstantiationKind | Null
 }
 object IdLoc {
   
   @scala.inline
   def apply(id: IdentifierKind | QualifiedTypeIdentifierKind): IdLoc = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typeParameters = null)
     __obj.asInstanceOf[IdLoc]
   }
   

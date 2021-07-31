@@ -51,122 +51,120 @@ import typings.gitlab.servicesMod.Triggers
 import typings.gitlab.servicesMod.VulnerabilityFindings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Branches extends StObject {
   
-  var Branches: Instantiable0[typings.gitlab.servicesMod.Branches] = js.native
+  var Branches: Instantiable0[typings.gitlab.servicesMod.Branches]
   
-  var CommitDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.CommitDiscussions] = js.native
+  var CommitDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.CommitDiscussions]
   
-  var Commits: Instantiable0[typings.gitlab.servicesMod.Commits] = js.native
+  var Commits: Instantiable0[typings.gitlab.servicesMod.Commits]
   
-  var ContainerRegistry: Instantiable0[typings.gitlab.servicesMod.ContainerRegistry] = js.native
+  var ContainerRegistry: Instantiable0[typings.gitlab.servicesMod.ContainerRegistry]
   
-  var DeployKeys: Instantiable0[typings.gitlab.servicesMod.DeployKeys] = js.native
+  var DeployKeys: Instantiable0[typings.gitlab.servicesMod.DeployKeys]
   
-  var Deployments: Instantiable0[typings.gitlab.servicesMod.Deployments] = js.native
+  var Deployments: Instantiable0[typings.gitlab.servicesMod.Deployments]
   
-  var Environments: Instantiable0[typings.gitlab.servicesMod.Environments] = js.native
+  var Environments: Instantiable0[typings.gitlab.servicesMod.Environments]
   
-  var IssueAwardEmojis: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.IssueAwardEmojis] = js.native
+  var IssueAwardEmojis: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.IssueAwardEmojis]
   
-  var IssueDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.IssueDiscussions] = js.native
+  var IssueDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.IssueDiscussions]
   
-  var IssueNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.IssueNotes] = js.native
+  var IssueNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.IssueNotes]
   
-  var Issues: Instantiable0[typings.gitlab.servicesMod.Issues] = js.native
+  var Issues: Instantiable0[typings.gitlab.servicesMod.Issues]
   
-  var IssuesStatistics: Instantiable0[typings.gitlab.servicesMod.IssuesStatistics] = js.native
+  var IssuesStatistics: Instantiable0[typings.gitlab.servicesMod.IssuesStatistics]
   
-  var Jobs: Instantiable0[typings.gitlab.servicesMod.Jobs] = js.native
+  var Jobs: Instantiable0[typings.gitlab.servicesMod.Jobs]
   
-  var Labels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.Labels] = js.native
+  var Labels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.Labels]
   
   var MergeRequestAwardEmojis: Instantiable1[
     /* options */ BaseServiceOptions, 
     typings.gitlab.servicesMod.MergeRequestAwardEmojis
-  ] = js.native
+  ]
   
   var MergeRequestDiscussions: Instantiable1[
     /* options */ BaseServiceOptions, 
     typings.gitlab.servicesMod.MergeRequestDiscussions
-  ] = js.native
+  ]
   
-  var MergeRequestNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.MergeRequestNotes] = js.native
+  var MergeRequestNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.MergeRequestNotes]
   
-  var MergeRequests: Instantiable0[typings.gitlab.servicesMod.MergeRequests] = js.native
+  var MergeRequests: Instantiable0[typings.gitlab.servicesMod.MergeRequests]
   
-  var Packages: Instantiable0[typings.gitlab.servicesMod.Packages] = js.native
+  var Packages: Instantiable0[typings.gitlab.servicesMod.Packages]
   
-  var PipelineScheduleVariables: Instantiable0[typings.gitlab.servicesMod.PipelineScheduleVariables] = js.native
+  var PipelineScheduleVariables: Instantiable0[typings.gitlab.servicesMod.PipelineScheduleVariables]
   
-  var PipelineSchedules: Instantiable0[typings.gitlab.servicesMod.PipelineSchedules] = js.native
+  var PipelineSchedules: Instantiable0[typings.gitlab.servicesMod.PipelineSchedules]
   
-  var Pipelines: Instantiable0[typings.gitlab.servicesMod.Pipelines] = js.native
+  var Pipelines: Instantiable0[typings.gitlab.servicesMod.Pipelines]
   
-  var ProjectAccessRequests: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectAccessRequests] = js.native
+  var ProjectAccessRequests: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectAccessRequests]
   
-  var ProjectBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectBadges] = js.native
+  var ProjectBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectBadges]
   
   var ProjectCustomAttributes: Instantiable1[
     /* options */ BaseServiceOptions, 
     typings.gitlab.servicesMod.ProjectCustomAttributes
-  ] = js.native
+  ]
   
-  var ProjectHooks: Instantiable0[typings.gitlab.servicesMod.ProjectHooks] = js.native
+  var ProjectHooks: Instantiable0[typings.gitlab.servicesMod.ProjectHooks]
   
-  var ProjectImportExport: Instantiable0[typings.gitlab.servicesMod.ProjectImportExport] = js.native
+  var ProjectImportExport: Instantiable0[typings.gitlab.servicesMod.ProjectImportExport]
   
-  var ProjectIssueBoards: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectIssueBoards] = js.native
+  var ProjectIssueBoards: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectIssueBoards]
   
-  var ProjectMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectMembers] = js.native
+  var ProjectMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectMembers]
   
-  var ProjectMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectMilestones] = js.native
+  var ProjectMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectMilestones]
   
   var ProjectSnippetAwardEmojis: Instantiable1[
     /* options */ BaseServiceOptions, 
     typings.gitlab.servicesMod.ProjectSnippetAwardEmojis
-  ] = js.native
+  ]
   
   var ProjectSnippetDiscussions: Instantiable1[
     /* options */ BaseServiceOptions, 
     typings.gitlab.servicesMod.ProjectSnippetDiscussions
-  ] = js.native
+  ]
   
-  var ProjectSnippetNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectSnippetNotes] = js.native
+  var ProjectSnippetNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectSnippetNotes]
   
-  var ProjectSnippets: Instantiable0[typings.gitlab.servicesMod.ProjectSnippets] = js.native
+  var ProjectSnippets: Instantiable0[typings.gitlab.servicesMod.ProjectSnippets]
   
-  var ProjectVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectVariables] = js.native
+  var ProjectVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.ProjectVariables]
   
-  var Projects: Instantiable0[typings.gitlab.servicesMod.Projects] = js.native
+  var Projects: Instantiable0[typings.gitlab.servicesMod.Projects]
   
-  var ProtectedBranches: Instantiable0[typings.gitlab.servicesMod.ProtectedBranches] = js.native
+  var ProtectedBranches: Instantiable0[typings.gitlab.servicesMod.ProtectedBranches]
   
-  var ProtectedTags: Instantiable0[typings.gitlab.servicesMod.ProtectedTags] = js.native
+  var ProtectedTags: Instantiable0[typings.gitlab.servicesMod.ProtectedTags]
   
-  var PushRules: Instantiable0[typings.gitlab.servicesMod.PushRules] = js.native
+  var PushRules: Instantiable0[typings.gitlab.servicesMod.PushRules]
   
-  var ReleaseLinks: Instantiable0[typings.gitlab.servicesMod.ReleaseLinks] = js.native
+  var ReleaseLinks: Instantiable0[typings.gitlab.servicesMod.ReleaseLinks]
   
-  var Releases: Instantiable0[typings.gitlab.servicesMod.Releases] = js.native
+  var Releases: Instantiable0[typings.gitlab.servicesMod.Releases]
   
-  var Repositories: Instantiable0[typings.gitlab.servicesMod.Repositories] = js.native
+  var Repositories: Instantiable0[typings.gitlab.servicesMod.Repositories]
   
-  var RepositoryFiles: Instantiable0[typings.gitlab.servicesMod.RepositoryFiles] = js.native
+  var RepositoryFiles: Instantiable0[typings.gitlab.servicesMod.RepositoryFiles]
   
-  var Runners: Instantiable0[typings.gitlab.servicesMod.Runners] = js.native
+  var Runners: Instantiable0[typings.gitlab.servicesMod.Runners]
   
-  var Services: Instantiable0[typings.gitlab.servicesMod.Services] = js.native
+  var Services: Instantiable0[typings.gitlab.servicesMod.Services]
   
-  var Tags: Instantiable0[typings.gitlab.servicesMod.Tags] = js.native
+  var Tags: Instantiable0[typings.gitlab.servicesMod.Tags]
   
-  var Triggers: Instantiable0[typings.gitlab.servicesMod.Triggers] = js.native
+  var Triggers: Instantiable0[typings.gitlab.servicesMod.Triggers]
   
-  var VulnerabilityFindings: Instantiable0[typings.gitlab.servicesMod.VulnerabilityFindings] = js.native
+  var VulnerabilityFindings: Instantiable0[typings.gitlab.servicesMod.VulnerabilityFindings]
 }
 object Branches {
   

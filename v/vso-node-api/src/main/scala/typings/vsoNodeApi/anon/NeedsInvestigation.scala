@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NeedsInvestigation extends StObject {
   
-  var aborted: scala.Double = js.native
+  var aborted: scala.Double
   
-  var completed: scala.Double = js.native
+  var completed: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var needsInvestigation: scala.Double = js.native
+  var needsInvestigation: scala.Double
   
-  var notStarted: scala.Double = js.native
+  var notStarted: scala.Double
   
-  var unspecified: scala.Double = js.native
+  var unspecified: scala.Double
   
-  var waiting: scala.Double = js.native
+  var waiting: scala.Double
 }
 object NeedsInvestigation {
   

@@ -11,19 +11,20 @@ import typings.react.mod.MutableRefObject
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeBodyMod {
   
-  @JSImport("rc-picker/es/panels/TimePanel/TimeBody", JSImport.Default)
+  @JSImport("rc-picker/es/panels/TimePanel/TimeBody", JSImport.Namespace)
   @js.native
-  def default[DateType](props: TimeBodyProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[DateType](props: TimeBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait BodyOperationRef extends StObject {
     
-    def onUpDown(diff: Double): Unit = js.native
+    def onUpDown(diff: Double): Unit
   }
   object BodyOperationRef {
     
@@ -41,22 +42,23 @@ object timeBodyMod {
     }
   }
   
-  @js.native
-  trait TimeBodyProps[DateType] extends SharedTimeProps[DateType] {
+  trait TimeBodyProps[DateType]
+    extends StObject
+       with SharedTimeProps[DateType] {
     
-    var activeColumnIndex: Double = js.native
+    var activeColumnIndex: Double
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var onSelect: OnSelect[DateType] = js.native
+    var onSelect: OnSelect[DateType]
     
-    var operationRef: MutableRefObject[js.UndefOr[BodyOperationRef]] = js.native
+    var operationRef: MutableRefObject[js.UndefOr[BodyOperationRef]]
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var value: js.UndefOr[DateType | Null] = js.native
+    var value: js.UndefOr[DateType | Null] = js.undefined
   }
   object TimeBodyProps {
     
@@ -74,7 +76,7 @@ object timeBodyMod {
     }
     
     @scala.inline
-    implicit class TimeBodyPropsMutableBuilder[Self <: TimeBodyProps[_], DateType] (val x: Self with TimeBodyProps[DateType]) extends AnyVal {
+    implicit class TimeBodyPropsMutableBuilder[Self <: TimeBodyProps[?], DateType] (val x: Self & TimeBodyProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setActiveColumnIndex(value: Double): Self = StObject.set(x, "activeColumnIndex", value.asInstanceOf[js.Any])

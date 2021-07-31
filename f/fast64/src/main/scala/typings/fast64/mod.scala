@@ -3,37 +3,33 @@ package typings.fast64
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fast64", "decode")
+  @JSImport("fast64", JSImport.Namespace)
   @js.native
-  def decode(base64: String): String = js.native
-  @JSImport("fast64", "decode")
-  @js.native
-  def decode(base64: String, options: Options): Uint8Array = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fast64", "encode")
-  @js.native
-  def encode(value: String): String = js.native
+  @scala.inline
+  def decode(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def decode(base64: String, options: Options): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("fast64", "urldecode")
-  @js.native
-  def urldecode(base64: String): String = js.native
-  @JSImport("fast64", "urldecode")
-  @js.native
-  def urldecode(base64: String, options: Options): Uint8Array = js.native
+  @scala.inline
+  def encode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("fast64", "urlencode")
-  @js.native
-  def urlencode(value: String): String = js.native
+  @scala.inline
+  def urldecode(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urldecode")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def urldecode(base64: String, options: Options): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("urldecode")(base64.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @js.native
+  @scala.inline
+  def urlencode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var uint8Array: Boolean = js.native
+    var uint8Array: Boolean
   }
   object Options {
     

@@ -2,19 +2,17 @@ package typings.tensorflowTfjsConverter.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Properties extends StObject {
   
-  var additionalProperties: Boolean = js.native
+  var additionalProperties: Boolean
   
-  var properties: DefaultValue = js.native
+  var properties: DefaultValue
   
-  var required: js.Array[String] = js.native
+  var required: js.Array[String]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Properties {
   

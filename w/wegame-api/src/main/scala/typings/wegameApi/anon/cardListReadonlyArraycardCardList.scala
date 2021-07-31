@@ -2,23 +2,21 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  cardList :std.ReadonlyArray<{  cardId :string,   cardExt :string}>} & wegame-api.wx.types.CallbacksWithType<{  cardList :std.ReadonlyArray<{  code :string,   cardId :string,   cardExt :string,   isSuccess :boolean}>}> */
-@js.native
 trait cardListReadonlyArraycardCardList extends StObject {
   
   /**
     * 需要添加的卡券列表
     */
-  var cardList: js.Array[CardExt] = js.native
+  var cardList: js.Array[CardExt]
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.undefined
 }
 object cardListReadonlyArraycardCardList {
   

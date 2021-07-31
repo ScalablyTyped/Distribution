@@ -2,19 +2,17 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a deobfuscation file.
   */
-@js.native
 trait SchemaDeobfuscationFile extends StObject {
   
   /**
     * The type of the deobfuscation file.
     */
-  var symbolType: js.UndefOr[String] = js.native
+  var symbolType: js.UndefOr[String] = js.undefined
 }
 object SchemaDeobfuscationFile {
   

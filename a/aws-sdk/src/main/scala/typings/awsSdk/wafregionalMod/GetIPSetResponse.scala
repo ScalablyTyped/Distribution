@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIPSetResponse extends StObject {
   
   /**
     * Information about the IPSet that you specified in the GetIPSet request. For more information, see the following topics:    IPSet: Contains IPSetDescriptors, IPSetId, and Name     IPSetDescriptors: Contains an array of IPSetDescriptor objects. Each IPSetDescriptor object contains Type and Value   
     */
-  var IPSet: js.UndefOr[typings.awsSdk.wafregionalMod.IPSet] = js.native
+  var IPSet: js.UndefOr[typings.awsSdk.wafregionalMod.IPSet] = js.undefined
 }
 object GetIPSetResponse {
   

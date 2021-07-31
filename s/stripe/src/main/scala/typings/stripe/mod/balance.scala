@@ -16,29 +16,29 @@ import typings.stripe.stripeStrings.stripe_fee
 import typings.stripe.stripeStrings.transfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object balance {
   
-  @js.native
-  trait IBalance extends IObject {
+  trait IBalance
+    extends StObject
+       with IObject {
     
     /**
       * Funds that are available to be paid out automatically by Stripe or explicitly
       * via the transfers API. The available balance for each currency and payment
       * type can be found in the source_types property.
       */
-    var available: js.Array[ISourceType] = js.native
+    var available: js.Array[ISourceType]
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Funds that are not available in the balance yet, due to the 7-day rolling pay
       * cycle. The pending balance for each currency and payment type can be
       * found in the source_types property
       */
-    var pending: js.Array[ISourceType] = js.native
+    var pending: js.Array[ISourceType]
   }
   object IBalance {
     
@@ -74,30 +74,31 @@ object balance {
     }
   }
   
-  @js.native
-  trait IBalanceListOptions extends IListOptionsCreated {
+  trait IBalanceListOptions
+    extends StObject
+       with IListOptionsCreated {
     
-    var available_on: js.UndefOr[String | IDateFilter] = js.native
+    var available_on: js.UndefOr[String | IDateFilter] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * For automatic Stripe payouts only, only returns transactions that were payed out on the specified payout ID.
       */
-    var payout: js.UndefOr[String] = js.native
+    var payout: js.UndefOr[String] = js.undefined
     
     /**
       * Only returns transactions that are related to the specified Stripe object ID
       * (e.g. filtering by a charge ID will return all related charge transactions).
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /**
       * Only returns transactions of the given type.
       */
     var `type`: js.UndefOr[
         charge | refund | adjustment | application_fee | application_fee_refund | transfer | payment | payout | payout_failure | stripe_fee | network_cost
-      ] = js.native
+      ] = js.undefined
   }
   object IBalanceListOptions {
     
@@ -144,59 +145,60 @@ object balance {
     }
   }
   
-  @js.native
-  trait IBalanceTransaction extends IResourceObject {
+  trait IBalanceTransaction
+    extends StObject
+       with IResourceObject {
     
     /**
       * Gross amount of the transaction, in cents/pence.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * The date the transaction's net funds will become available in the Stripe balance.
       */
-    var available_on: Double = js.native
+    var available_on: Double
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code representing the currency.
       */
-    var currency: String = js.native
+    var currency: String
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var exchange_rate: js.UndefOr[Double | Null] = js.native
+    var exchange_rate: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Fee (in cents/pence) paid for this transaction
       */
-    var fee: Double = js.native
+    var fee: Double
     
     /**
       * Detailed breakdown of fees (in cents/pence) paid for this transaction
       */
-    var fee_details: js.Array[Amount] = js.native
+    var fee_details: js.Array[Amount]
     
     /**
       * Net amount of the transaction, in cents.
       */
-    var net: Double = js.native
+    var net: Double
     
     /**
       * The Stripe object this transaction is related to. [Expandable]
       */
-    var source: String | IResourceObject = js.native
+    var source: String | IResourceObject
     
     /**
       * The transfers (if any) for which source is a source_transaction.
       */
-    var source_transfers: js.UndefOr[IList[ITransfer]] = js.native
+    var source_transfers: js.UndefOr[IList[ITransfer]] = js.undefined
     
     /**
       * If the transaction's net funds are available in the Stripe balance yet. Either "available" or "pending".
       */
-    var status: String = js.native
+    var status: String
     
     /**
       * Transaction type: "adjustment", "application_fee",
@@ -204,7 +206,7 @@ object balance {
       * "refund", "transfer", "transfer_cancel", "transfer_failure", or
       * "transfer_refund".
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object IBalanceTransaction {
     
@@ -288,14 +290,13 @@ object balance {
     }
   }
   
-  @js.native
   trait ISourceType extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var currency: String = js.native
+    var currency: String
     
-    var source_types: Alipayaccount = js.native
+    var source_types: Alipayaccount
   }
   object ISourceType {
     

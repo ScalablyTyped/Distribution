@@ -3,25 +3,23 @@ package typings.winrt.Windows.Graphics.Printing
 import typings.winrt.Windows.ApplicationModel.DataTransfer.DataPackagePropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintTask extends StObject {
   
-  var oncompleted: js.Any = js.native
+  var oncompleted: js.Any
   
-  var onpreviewing: js.Any = js.native
+  var onpreviewing: js.Any
   
-  var onprogressing: js.Any = js.native
+  var onprogressing: js.Any
   
-  var onsubmitting: js.Any = js.native
+  var onsubmitting: js.Any
   
-  var options: PrintTaskOptions = js.native
+  var options: PrintTaskOptions
   
-  var properties: DataPackagePropertySet = js.native
+  var properties: DataPackagePropertySet
   
-  var source: IPrintDocumentSource = js.native
+  var source: IPrintDocumentSource
 }
 object IPrintTask {
   

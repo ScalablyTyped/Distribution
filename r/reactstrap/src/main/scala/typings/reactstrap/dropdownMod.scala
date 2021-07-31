@@ -16,7 +16,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod {
@@ -50,38 +49,38 @@ object dropdownMod {
   
   type Dropdown = Component[DropdownProps, js.Object, js.Any]
   
-  @js.native
   trait DropdownProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var a11y: js.UndefOr[Boolean] = js.native
+    var a11y: js.UndefOr[Boolean] = js.undefined
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var addonType: js.UndefOr[Boolean | prepend | append] = js.native
+    var addonType: js.UndefOr[Boolean | prepend | append] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var direction: js.UndefOr[Direction] = js.native
+    var direction: js.UndefOr[Direction] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var group: js.UndefOr[Boolean] = js.native
+    var group: js.UndefOr[Boolean] = js.undefined
     
-    var inNavbar: js.UndefOr[Boolean] = js.native
+    var inNavbar: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var nav: js.UndefOr[Boolean] = js.native
+    var nav: js.UndefOr[Boolean] = js.undefined
     
-    var setActiveFromChild: js.UndefOr[Boolean] = js.native
+    var setActiveFromChild: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var toggle: js.UndefOr[KeyboardEventHandler[_] | MouseEventHandler[_]] = js.native
+    var toggle: js.UndefOr[KeyboardEventHandler[js.Any] | MouseEventHandler[js.Any]] = js.undefined
   }
   object DropdownProps {
     
@@ -167,23 +166,24 @@ object dropdownMod {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
       @scala.inline
-      def setToggle(value: KeyboardEvent[_] | (MouseEvent[_, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      def setToggle(value: KeyboardEvent[js.Any] | (MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       @scala.inline
       def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
   }
   
-  @js.native
-  trait UncontrolledDropdownProps extends DropdownProps {
+  trait UncontrolledDropdownProps
+    extends StObject
+       with DropdownProps {
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
     var onToggle: js.UndefOr[
         js.Function2[
@@ -191,7 +191,7 @@ object dropdownMod {
           /* isOpen */ Boolean, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object UncontrolledDropdownProps {
     

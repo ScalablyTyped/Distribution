@@ -8,7 +8,6 @@ import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiGatewayProxyMod {
@@ -27,10 +26,9 @@ object apiGatewayProxyMod {
   
   type APIGatewayProxyCallbackV2 = Callback[APIGatewayProxyResultV2[scala.Nothing]]
   
-  @js.native
   trait APIGatewayProxyCognitoAuthorizer extends StObject {
     
-    var claims: StringDictionary[String] = js.native
+    var claims: StringDictionary[String]
   }
   object APIGatewayProxyCognitoAuthorizer {
     
@@ -50,32 +48,31 @@ object apiGatewayProxyMod {
   
   type APIGatewayProxyEvent = APIGatewayProxyEventBase[APIGatewayEventDefaultAuthorizerContext]
   
-  @js.native
   trait APIGatewayProxyEventBase[TAuthorizerContext] extends StObject {
     
-    var body: String | Null = js.native
+    var body: String | Null
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var httpMethod: String = js.native
+    var httpMethod: String
     
-    var isBase64Encoded: Boolean = js.native
+    var isBase64Encoded: Boolean
     
-    var multiValueHeaders: StringDictionary[js.Array[String]] = js.native
+    var multiValueHeaders: StringDictionary[js.Array[String]]
     
-    var multiValueQueryStringParameters: StringDictionary[js.Array[String]] | Null = js.native
+    var multiValueQueryStringParameters: StringDictionary[js.Array[String]] | Null
     
-    var path: String = js.native
+    var path: String
     
-    var pathParameters: StringDictionary[String] | Null = js.native
+    var pathParameters: StringDictionary[String] | Null
     
-    var queryStringParameters: StringDictionary[String] | Null = js.native
+    var queryStringParameters: StringDictionary[String] | Null
     
-    var requestContext: APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext] = js.native
+    var requestContext: APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]
     
-    var resource: String = js.native
+    var resource: String
     
-    var stageVariables: StringDictionary[String] | Null = js.native
+    var stageVariables: StringDictionary[String] | Null
   }
   object APIGatewayProxyEventBase {
     
@@ -89,12 +86,12 @@ object apiGatewayProxyMod {
       requestContext: APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext],
       resource: String
     ): APIGatewayProxyEventBase[TAuthorizerContext] = {
-      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], body = null, multiValueQueryStringParameters = null, pathParameters = null, queryStringParameters = null, stageVariables = null)
       __obj.asInstanceOf[APIGatewayProxyEventBase[TAuthorizerContext]]
     }
     
     @scala.inline
-    implicit class APIGatewayProxyEventBaseMutableBuilder[Self <: APIGatewayProxyEventBase[_], TAuthorizerContext] (val x: Self with APIGatewayProxyEventBase[TAuthorizerContext]) extends AnyVal {
+    implicit class APIGatewayProxyEventBaseMutableBuilder[Self <: APIGatewayProxyEventBase[?], TAuthorizerContext] (val x: Self & APIGatewayProxyEventBase[TAuthorizerContext]) extends AnyVal {
       
       @scala.inline
       def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
@@ -149,32 +146,31 @@ object apiGatewayProxyMod {
     }
   }
   
-  @js.native
   trait APIGatewayProxyEventV2 extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var cookies: js.UndefOr[js.Array[String]] = js.native
+    var cookies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var isBase64Encoded: Boolean = js.native
+    var isBase64Encoded: Boolean
     
-    var pathParameters: js.UndefOr[StringDictionary[String]] = js.native
+    var pathParameters: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var queryStringParameters: js.UndefOr[StringDictionary[String]] = js.native
+    var queryStringParameters: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var rawPath: String = js.native
+    var rawPath: String
     
-    var rawQueryString: String = js.native
+    var rawQueryString: String
     
-    var requestContext: AccountId = js.native
+    var requestContext: AccountId
     
-    var routeKey: String = js.native
+    var routeKey: String
     
-    var stageVariables: js.UndefOr[StringDictionary[String]] = js.native
+    var stageVariables: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object APIGatewayProxyEventV2 {
     
@@ -255,18 +251,17 @@ object apiGatewayProxyMod {
   
   type APIGatewayProxyHandlerV2[T] = Handler[APIGatewayProxyEventV2, APIGatewayProxyResultV2[T]]
   
-  @js.native
   trait APIGatewayProxyResult extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: js.UndefOr[StringDictionary[Boolean | Double | String]] = js.native
+    var headers: js.UndefOr[StringDictionary[Boolean | Double | String]] = js.undefined
     
-    var isBase64Encoded: js.UndefOr[Boolean] = js.native
+    var isBase64Encoded: js.UndefOr[Boolean] = js.undefined
     
-    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[Boolean | Double | String]]] = js.native
+    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[Boolean | Double | String]]] = js.undefined
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object APIGatewayProxyResult {
     
@@ -307,18 +302,17 @@ object apiGatewayProxyMod {
   
   type APIGatewayProxyResultV2[T] = APIGatewayProxyStructuredResultV2 | String | T
   
-  @js.native
   trait APIGatewayProxyStructuredResultV2 extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var cookies: js.UndefOr[js.Array[String]] = js.native
+    var cookies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[Boolean | Double | String]] = js.native
+    var headers: js.UndefOr[StringDictionary[Boolean | Double | String]] = js.undefined
     
-    var isBase64Encoded: js.UndefOr[Boolean] = js.native
+    var isBase64Encoded: js.UndefOr[Boolean] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object APIGatewayProxyStructuredResultV2 {
     

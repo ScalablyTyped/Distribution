@@ -10,14 +10,16 @@ import typings.antDesignPro.loginItemMod.LoginItemProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ant-design-pro", "Authorized")
+  @JSImport("ant-design-pro", JSImport.Namespace)
   @js.native
-  def Authorized(currentAuthority: String): TypeofAuthorized = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Authorized(currentAuthority: String): TypeofAuthorized = ^.asInstanceOf[js.Dynamic].applyDynamic("Authorized")(currentAuthority.asInstanceOf[js.Any]).asInstanceOf[TypeofAuthorized]
   
   @JSImport("ant-design-pro", "AvatarList")
   @js.native

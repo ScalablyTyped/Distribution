@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Times")
@@ -32,11 +31,13 @@ class Times () extends StObject {
 /* static members */
 object Times {
   
-  @JSImport("kdbxweb", "Times.create")
+  @JSImport("kdbxweb", "Times")
   @js.native
-  def create(): Times = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "Times.read")
-  @js.native
-  def read(xmlNode: Node): Times = js.native
+  @scala.inline
+  def create(): Times = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Times]
+  
+  @scala.inline
+  def read(xmlNode: Node): Times = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any]).asInstanceOf[Times]
 }

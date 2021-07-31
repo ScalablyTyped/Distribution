@@ -4,14 +4,15 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionSelectionMod {
   
   @JSImport("@uifabric/utilities/lib/selection/Selection", "Selection")
   @js.native
-  class Selection[TItem] protected () extends ISelection[TItem] {
+  class Selection[TItem] protected ()
+    extends StObject
+       with ISelection[TItem] {
     /**
       * Create a new Selection. If `TItem` does not have a `key` property, you must provide an options
       * object with a `getKey` implementation. Providing options is optional otherwise.
@@ -75,19 +76,18 @@ object selectionSelectionMod {
     def setModal_MSelection(isModal: Boolean): Unit = js.native
   }
   
-  @js.native
   trait ISelectionOptions[TItem] extends StObject {
     
-    var canSelectItem: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], Boolean]] = js.native
+    var canSelectItem: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], Boolean]] = js.undefined
     
     /** Custom logic to generate item keys. Required if `TItem` does not have a `key` property. */
-    var getKey: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]] = js.native
+    var getKey: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]] = js.undefined
     
-    var items: js.UndefOr[js.Array[TItem]] = js.native
+    var items: js.UndefOr[js.Array[TItem]] = js.undefined
     
-    var onSelectionChanged: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var selectionMode: js.UndefOr[SelectionMode] = js.native
+    var selectionMode: js.UndefOr[SelectionMode] = js.undefined
   }
   object ISelectionOptions {
     
@@ -98,7 +98,7 @@ object selectionSelectionMod {
     }
     
     @scala.inline
-    implicit class ISelectionOptionsMutableBuilder[Self <: ISelectionOptions[_], TItem] (val x: Self with ISelectionOptions[TItem]) extends AnyVal {
+    implicit class ISelectionOptionsMutableBuilder[Self <: ISelectionOptions[?], TItem] (val x: Self & ISelectionOptions[TItem]) extends AnyVal {
       
       @scala.inline
       def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
@@ -136,32 +136,31 @@ object selectionSelectionMod {
   }
   
   /* Inlined @uifabric/utilities.@uifabric/utilities/lib/selection/Selection.ISelectionOptions<TItem> & std.Required<std.Pick<@uifabric/utilities.@uifabric/utilities/lib/selection/Selection.ISelectionOptions<TItem>, 'getKey'>> */
-  @js.native
   trait ISelectionOptionsWithRequiredGetKey[TItem] extends StObject {
     
-    var canSelectItem: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], Boolean]] = js.native
+    var canSelectItem: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], Boolean]] = js.undefined
     
     /** Custom logic to generate item keys. Required if `TItem` does not have a `key` property. */
-    var getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) with (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]) = js.native
+    var getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
     
-    var items: js.UndefOr[js.Array[TItem]] = js.native
+    var items: js.UndefOr[js.Array[TItem]] = js.undefined
     
-    var onSelectionChanged: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var selectionMode: js.UndefOr[SelectionMode] = js.native
+    var selectionMode: js.UndefOr[SelectionMode] = js.undefined
   }
   object ISelectionOptionsWithRequiredGetKey {
     
     @scala.inline
     def apply[TItem](
-      getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) with (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
+      getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
     ): ISelectionOptionsWithRequiredGetKey[TItem] = {
       val __obj = js.Dynamic.literal(getKey = getKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectionOptionsWithRequiredGetKey[TItem]]
     }
     
     @scala.inline
-    implicit class ISelectionOptionsWithRequiredGetKeyMutableBuilder[Self <: ISelectionOptionsWithRequiredGetKey[_], TItem] (val x: Self with ISelectionOptionsWithRequiredGetKey[TItem]) extends AnyVal {
+    implicit class ISelectionOptionsWithRequiredGetKeyMutableBuilder[Self <: ISelectionOptionsWithRequiredGetKey[?], TItem] (val x: Self & ISelectionOptionsWithRequiredGetKey[TItem]) extends AnyVal {
       
       @scala.inline
       def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
@@ -171,7 +170,7 @@ object selectionSelectionMod {
       
       @scala.inline
       def setGetKey(
-        value: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) with (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
+        value: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
       ): Self = StObject.set(x, "getKey", value.asInstanceOf[js.Any])
       
       @scala.inline

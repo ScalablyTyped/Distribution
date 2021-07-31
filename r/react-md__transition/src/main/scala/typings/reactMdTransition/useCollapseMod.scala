@@ -5,20 +5,21 @@ import typings.reactMdTransition.typesMod.CollapseTransitionProvidedProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useCollapseMod {
   
-  @JSImport("@react-md/transition/types/useCollapse", "useCollapse")
+  @JSImport("@react-md/transition/types/useCollapse", JSImport.Namespace)
   @js.native
-  def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = js.native
-  @JSImport("@react-md/transition/types/useCollapse", "useCollapse")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  @scala.inline
   def useCollapse[E /* <: HTMLElement */](
     collapsed: Boolean,
     hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary: CollapseOptions[E]
-  ): ReturnValue[E] = js.native
+  ): ReturnValue[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any], hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[E]]
   
   type Rendered = Boolean
   

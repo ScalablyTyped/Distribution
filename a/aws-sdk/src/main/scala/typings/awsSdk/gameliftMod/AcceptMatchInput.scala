@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptMatchInput extends StObject {
   
   /**
     * Player response to the proposed match.
     */
-  var AcceptanceType: typings.awsSdk.gameliftMod.AcceptanceType = js.native
+  var AcceptanceType: typings.awsSdk.gameliftMod.AcceptanceType
   
   /**
     * A unique identifier for a player delivering the response. This parameter can include one or multiple player IDs.
     */
-  var PlayerIds: StringList = js.native
+  var PlayerIds: StringList
   
   /**
     * A unique identifier for a matchmaking ticket. The ticket must be in status REQUIRES_ACCEPTANCE; otherwise this request will fail.
     */
-  var TicketId: MatchmakingIdStringModel = js.native
+  var TicketId: MatchmakingIdStringModel
 }
 object AcceptMatchInput {
   

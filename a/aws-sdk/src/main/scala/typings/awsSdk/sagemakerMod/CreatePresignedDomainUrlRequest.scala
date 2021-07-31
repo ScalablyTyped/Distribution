@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePresignedDomainUrlRequest extends StObject {
   
   /**
     * The domain ID.
     */
-  var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
+  var DomainId: typings.awsSdk.sagemakerMod.DomainId
   
   /**
     * The session expiration duration in seconds.
     */
-  var SessionExpirationDurationInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.SessionExpirationDurationInSeconds] = js.native
+  var SessionExpirationDurationInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.SessionExpirationDurationInSeconds] = js.undefined
   
   /**
     * The name of the UserProfile to sign-in as.
     */
-  var UserProfileName: typings.awsSdk.sagemakerMod.UserProfileName = js.native
+  var UserProfileName: typings.awsSdk.sagemakerMod.UserProfileName
 }
 object CreatePresignedDomainUrlRequest {
   

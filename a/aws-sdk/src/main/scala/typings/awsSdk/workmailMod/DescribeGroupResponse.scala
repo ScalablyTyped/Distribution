@@ -2,41 +2,39 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGroupResponse extends StObject {
   
   /**
     * The date and time when a user was deregistered from WorkMail, in UNIX epoch time format.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.native
+  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The email of the described group.
     */
-  var Email: js.UndefOr[EmailAddress] = js.native
+  var Email: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The date and time when a user was registered to WorkMail, in UNIX epoch time format.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.native
+  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier of the described group.
     */
-  var GroupId: js.UndefOr[WorkMailIdentifier] = js.native
+  var GroupId: js.UndefOr[WorkMailIdentifier] = js.undefined
   
   /**
     * The name of the described group.
     */
-  var Name: js.UndefOr[GroupName] = js.native
+  var Name: js.UndefOr[GroupName] = js.undefined
   
   /**
     * The state of the user: enabled (registered to Amazon WorkMail) or disabled (deregistered or never registered to WorkMail).
     */
-  var State: js.UndefOr[EntityState] = js.native
+  var State: js.UndefOr[EntityState] = js.undefined
 }
 object DescribeGroupResponse {
   

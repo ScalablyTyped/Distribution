@@ -11,7 +11,6 @@ import typings.cytoscape.cytoscapeStrings.repeat
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // export interface ElementCss extends CSSStyleDeclaration { }
@@ -20,14 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * http://js.cytoscape.org/#style/background-image
   */
-@js.native
 trait BackgroundImage extends StObject {
   
   /**
     * How background image clipping is handled;
     * may be node for clipped to node shape or none for no clipping.
     */
-  var `background-clip`: js.UndefOr[PropertyValueNode[clipped | none]] = js.native
+  var `background-clip`: js.UndefOr[PropertyValueNode[clipped | none]] = js.undefined
   
   /**
     * How the background image is fit to the node;
@@ -35,7 +33,7 @@ trait BackgroundImage extends StObject {
     * contain to fit inside node,
     * or cover to cover the node.
     */
-  var `background-fit`: js.UndefOr[PropertyValueNode[none | contain | cover]] = js.native
+  var `background-fit`: js.UndefOr[PropertyValueNode[none | contain | cover]] = js.undefined
   
   /**
     * Specifies the height of the image.
@@ -46,7 +44,7 @@ trait BackgroundImage extends StObject {
     * the fitting — thereby overriding the aspect ratio.
     * The auto value is used by default, which uses the height of the image.
     */
-  var `background-height`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-height`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * The URL that points to the image that should be used as the node’s background.
@@ -54,30 +52,30 @@ trait BackgroundImage extends StObject {
     * You may use a data URI to use embedded images,
     * thereby saving a HTTP request.
     */
-  var `background-image`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `background-image`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
   /**
     * The opacity of the background image. [0 1]
     */
-  var `background-image-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.native
+  var `background-image-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
   
   /**
     * The x position of the background image,
     * measured in percent(e.g. 50%) or pixels (e.g. 10px).
     */
-  var `background-position-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-position-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * The y position of the background image,
     * measured in percent(e.g. 50%) or pixels (e.g. 10px).
     */
-  var `background-position-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-position-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * Whether to repeat the background image;
     * may be no-repeat, repeat-x, repeat-y, or repeat.
     */
-  var `background-repeat`: js.UndefOr[PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]] = js.native
+  var `background-repeat`: js.UndefOr[PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]] = js.undefined
   
   /**
     * Specifies the width of the image.
@@ -88,7 +86,7 @@ trait BackgroundImage extends StObject {
     * in calculating the fitting — thereby overriding the aspect ratio.
     * The auto value is used by default, which uses the width of the image.
     */
-  var `background-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.native
+  var `background-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
 }
 object BackgroundImage {
   

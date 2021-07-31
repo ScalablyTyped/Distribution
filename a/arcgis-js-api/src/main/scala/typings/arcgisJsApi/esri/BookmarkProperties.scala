@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BookmarkProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait BookmarkProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#extent)
     */
-  var extent: js.UndefOr[ExtentProperties] = js.native
+  var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * The name of the bookmark item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for a thumbnail image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
     */
-  var thumbnail: js.UndefOr[BookmarkThumbnail] = js.native
+  var thumbnail: js.UndefOr[BookmarkThumbnail] = js.undefined
   
   /**
     * The viewpoint of the bookmark item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[ViewpointProperties] = js.native
+  var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 object BookmarkProperties {
   

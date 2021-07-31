@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Discovered extends StObject {
   
   /** The status of discovery for the resource. */
-  var analysisStatus: js.UndefOr[String] = js.native
+  var analysisStatus: js.UndefOr[String] = js.undefined
   
   /** When an error is encountered this will contain a LocalizedMessage under details to show to the user. The LocalizedMessage is output only and populated by the API. */
-  var analysisStatusError: js.UndefOr[Status] = js.native
+  var analysisStatusError: js.UndefOr[Status] = js.undefined
   
   /** Whether the resource is continuously analyzed. */
-  var continuousAnalysis: js.UndefOr[String] = js.native
+  var continuousAnalysis: js.UndefOr[String] = js.undefined
   
   /** The last time continuous analysis was done for this resource. Deprecated, do not use. */
-  var lastAnalysisTime: js.UndefOr[String] = js.native
+  var lastAnalysisTime: js.UndefOr[String] = js.undefined
 }
 object Discovered {
   

@@ -2,20 +2,18 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `Release` is a named reference to a `Ruleset`. Once a `Release` refers to a
   * `Ruleset`, rules-enabled services will be able to enforce the `Ruleset`.
   */
-@js.native
 trait SchemaRelease extends StObject {
   
   /**
     * Time the release was created. Output only.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Resource name for the `Release`.  `Release` names may be structured
@@ -35,18 +33,18 @@ trait SchemaRelease extends StObject {
     * clearer picture of the relationship between `Release` instances.  Format:
     * `projects/{project_id}/releases/{release_id}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must
     * exist the `Release` to be created.
     */
-  var rulesetName: js.UndefOr[String] = js.native
+  var rulesetName: js.UndefOr[String] = js.undefined
   
   /**
     * Time the release was updated. Output only.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaRelease {
   

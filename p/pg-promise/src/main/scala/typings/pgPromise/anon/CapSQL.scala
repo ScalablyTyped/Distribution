@@ -2,13 +2,11 @@ package typings.pgPromise.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapSQL extends StObject {
   
-  var capSQL: js.UndefOr[Boolean] = js.native
+  var capSQL: js.UndefOr[Boolean] = js.undefined
 }
 object CapSQL {
   

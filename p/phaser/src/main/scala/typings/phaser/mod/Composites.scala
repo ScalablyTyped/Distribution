@@ -3,7 +3,6 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.CompositeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Composites")
 @js.native
 class Composites ()
-  extends typings.phaser.MatterJS.Composites
+  extends StObject
+     with typings.phaser.MatterJS.Composites
 object Composites {
+  
+  @JSImport("matter", "Composites")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a composite with simple car setup of bodies and constraints.
@@ -31,9 +35,8 @@ object Composites {
     * @return {composite} A new composite car body
     */
   /* static member */
-  @JSImport("matter", "Composites.car")
-  @js.native
-  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
+  @scala.inline
+  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("car")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], wheelSize.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Chains all bodies in the given composite together using constraints.
@@ -47,8 +50,7 @@ object Composites {
     * @return {composite} A new composite containing objects chained together with constraints
     */
   /* static member */
-  @JSImport("matter", "Composites.chain")
-  @js.native
+  @scala.inline
   def chain(
     composite: CompositeType,
     xOffsetA: Double,
@@ -56,7 +58,7 @@ object Composites {
     xOffsetB: Double,
     yOffsetB: Double,
     options: js.Any
-  ): CompositeType = js.native
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(composite.asInstanceOf[js.Any], xOffsetA.asInstanceOf[js.Any], yOffsetA.asInstanceOf[js.Any], xOffsetB.asInstanceOf[js.Any], yOffsetB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
@@ -69,9 +71,8 @@ object Composites {
     * @return {composite} The composite containing objects meshed together with constraints
     */
   /* static member */
-  @JSImport("matter", "Composites.mesh")
-  @js.native
-  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = js.native
+  @scala.inline
+  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("mesh")(composite.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
@@ -84,9 +85,8 @@ object Composites {
     * @return {composite} A new composite newtonsCradle body
     */
   /* static member */
-  @JSImport("matter", "Composites.newtonsCradle")
-  @js.native
-  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = js.native
+  @scala.inline
+  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("newtonsCradle")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], number.asInstanceOf[js.Any], size.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
@@ -102,8 +102,7 @@ object Composites {
     * @return {composite} A new composite containing objects created in the callback
     */
   /* static member */
-  @JSImport("matter", "Composites.pyramid")
-  @js.native
+  @scala.inline
   def pyramid(
     xx: Double,
     yy: Double,
@@ -112,7 +111,7 @@ object Composites {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = js.native
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("pyramid")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Creates a simple soft body like object.
@@ -130,8 +129,7 @@ object Composites {
     * @return {composite} A new composite softBody
     */
   /* static member */
-  @JSImport("matter", "Composites.softBody")
-  @js.native
+  @scala.inline
   def softBody(
     xx: Double,
     yy: Double,
@@ -143,7 +141,7 @@ object Composites {
     particleRadius: Double,
     particleOptions: js.Any,
     constraintOptions: js.Any
-  ): CompositeType = js.native
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("softBody")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], particleRadius.asInstanceOf[js.Any], particleOptions.asInstanceOf[js.Any], constraintOptions.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
@@ -159,8 +157,7 @@ object Composites {
     * @return {composite} A new composite containing objects created in the callback
     */
   /* static member */
-  @JSImport("matter", "Composites.stack")
-  @js.native
+  @scala.inline
   def stack(
     xx: Double,
     yy: Double,
@@ -169,5 +166,5 @@ object Composites {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = js.native
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
 }

@@ -22,71 +22,75 @@ import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.manual
 import typings.tapable.mod.AsyncSeriesWaterfallHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("html-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends HtmlWebpackPlugin {
+  class ^ ()
+    extends StObject
+       with HtmlWebpackPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+    ): Unit = js.native
   }
+  @JSImport("html-webpack-plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Static helper to create a tag object to be get injected into the dom
     */
   /* static member */
-  @JSImport("html-webpack-plugin", "createHtmlTagObject")
-  @js.native
-  def createHtmlTagObject(tagName: String): HtmlTagObject = js.native
-  @JSImport("html-webpack-plugin", "createHtmlTagObject")
-  @js.native
-  def createHtmlTagObject(tagName: String, attributes: js.UndefOr[scala.Nothing], innerHTML: String): HtmlTagObject = js.native
-  @JSImport("html-webpack-plugin", "createHtmlTagObject")
-  @js.native
-  def createHtmlTagObject(tagName: String, attributes: StringDictionary[String | Boolean]): HtmlTagObject = js.native
-  @JSImport("html-webpack-plugin", "createHtmlTagObject")
-  @js.native
-  def createHtmlTagObject(tagName: String, attributes: StringDictionary[String | Boolean], innerHTML: String): HtmlTagObject = js.native
+  @scala.inline
+  def createHtmlTagObject(tagName: String): HtmlTagObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlTagObject")(tagName.asInstanceOf[js.Any]).asInstanceOf[HtmlTagObject]
+  @scala.inline
+  def createHtmlTagObject(tagName: String, attributes: StringDictionary[String | Boolean]): HtmlTagObject = (^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlTagObject")(tagName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HtmlTagObject]
+  @scala.inline
+  def createHtmlTagObject(tagName: String, attributes: StringDictionary[String | Boolean], innerHTML: String): HtmlTagObject = (^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlTagObject")(tagName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[HtmlTagObject]
+  @scala.inline
+  def createHtmlTagObject(tagName: String, attributes: Unit, innerHTML: String): HtmlTagObject = (^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlTagObject")(tagName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[HtmlTagObject]
   
   /* static member */
-  @JSImport("html-webpack-plugin", "getHooks")
-  @js.native
+  @scala.inline
   def getHooks(
     compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
-  ): Hooks = js.native
+  ): Hooks = ^.asInstanceOf[js.Dynamic].applyDynamic("getHooks")(compilation.asInstanceOf[js.Any]).asInstanceOf[Hooks]
   
   /* static member */
   @JSImport("html-webpack-plugin", "version")
   @js.native
   val version: Double = js.native
   
-  @js.native
   trait Hooks extends StObject {
     
-    var afterEmit: AsyncSeriesWaterfallHook[Plugin, _, _] = js.native
+    var afterEmit: AsyncSeriesWaterfallHook[Plugin, js.Any, js.Any]
     
-    var afterTemplateExecution: AsyncSeriesWaterfallHook[Html, _, _] = js.native
+    var afterTemplateExecution: AsyncSeriesWaterfallHook[Html, js.Any, js.Any]
     
-    var alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, _, _] = js.native
+    var alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, js.Any, js.Any]
     
-    var alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, _, _] = js.native
+    var alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, js.Any, js.Any]
     
-    var beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, _, _] = js.native
+    var beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, js.Any, js.Any]
     
-    var beforeEmit: AsyncSeriesWaterfallHook[OutputName, _, _] = js.native
+    var beforeEmit: AsyncSeriesWaterfallHook[OutputName, js.Any, js.Any]
   }
   object Hooks {
     
     @scala.inline
     def apply(
-      afterEmit: AsyncSeriesWaterfallHook[Plugin, _, _],
-      afterTemplateExecution: AsyncSeriesWaterfallHook[Html, _, _],
-      alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, _, _],
-      alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, _, _],
-      beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, _, _],
-      beforeEmit: AsyncSeriesWaterfallHook[OutputName, _, _]
+      afterEmit: AsyncSeriesWaterfallHook[Plugin, js.Any, js.Any],
+      afterTemplateExecution: AsyncSeriesWaterfallHook[Html, js.Any, js.Any],
+      alterAssetTagGroups: AsyncSeriesWaterfallHook[HeadTags, js.Any, js.Any],
+      alterAssetTags: AsyncSeriesWaterfallHook[AssetTags, js.Any, js.Any],
+      beforeAssetTagGeneration: AsyncSeriesWaterfallHook[Assets, js.Any, js.Any],
+      beforeEmit: AsyncSeriesWaterfallHook[OutputName, js.Any, js.Any]
     ): Hooks = {
       val __obj = js.Dynamic.literal(afterEmit = afterEmit.asInstanceOf[js.Any], afterTemplateExecution = afterTemplateExecution.asInstanceOf[js.Any], alterAssetTagGroups = alterAssetTagGroups.asInstanceOf[js.Any], alterAssetTags = alterAssetTags.asInstanceOf[js.Any], beforeAssetTagGeneration = beforeAssetTagGeneration.asInstanceOf[js.Any], beforeEmit = beforeEmit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hooks]
@@ -96,52 +100,51 @@ object mod {
     implicit class HooksMutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAfterEmit(value: AsyncSeriesWaterfallHook[Plugin, _, _]): Self = StObject.set(x, "afterEmit", value.asInstanceOf[js.Any])
+      def setAfterEmit(value: AsyncSeriesWaterfallHook[Plugin, js.Any, js.Any]): Self = StObject.set(x, "afterEmit", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAfterTemplateExecution(value: AsyncSeriesWaterfallHook[Html, _, _]): Self = StObject.set(x, "afterTemplateExecution", value.asInstanceOf[js.Any])
+      def setAfterTemplateExecution(value: AsyncSeriesWaterfallHook[Html, js.Any, js.Any]): Self = StObject.set(x, "afterTemplateExecution", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAlterAssetTagGroups(value: AsyncSeriesWaterfallHook[HeadTags, _, _]): Self = StObject.set(x, "alterAssetTagGroups", value.asInstanceOf[js.Any])
+      def setAlterAssetTagGroups(value: AsyncSeriesWaterfallHook[HeadTags, js.Any, js.Any]): Self = StObject.set(x, "alterAssetTagGroups", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAlterAssetTags(value: AsyncSeriesWaterfallHook[AssetTags, _, _]): Self = StObject.set(x, "alterAssetTags", value.asInstanceOf[js.Any])
+      def setAlterAssetTags(value: AsyncSeriesWaterfallHook[AssetTags, js.Any, js.Any]): Self = StObject.set(x, "alterAssetTags", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBeforeAssetTagGeneration(value: AsyncSeriesWaterfallHook[Assets, _, _]): Self = StObject.set(x, "beforeAssetTagGeneration", value.asInstanceOf[js.Any])
+      def setBeforeAssetTagGeneration(value: AsyncSeriesWaterfallHook[Assets, js.Any, js.Any]): Self = StObject.set(x, "beforeAssetTagGeneration", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBeforeEmit(value: AsyncSeriesWaterfallHook[OutputName, _, _]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
+      def setBeforeEmit(value: AsyncSeriesWaterfallHook[OutputName, js.Any, js.Any]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * A tag element according to the htmlWebpackPlugin object notation
     */
-  @js.native
   trait HtmlTagObject extends StObject {
     
     /**
       * Attributes of the html tag
       * E.g. `{'disabled': true, 'value': 'demo'}`
       */
-    var attributes: StringDictionary[String | Boolean] = js.native
+    var attributes: StringDictionary[String | Boolean]
     
     /**
       * The inner HTML
       */
-    var innerHTML: js.UndefOr[String] = js.native
+    var innerHTML: js.UndefOr[String] = js.undefined
     
     /**
       * The tag name e.g. `'div'`
       */
-    var tagName: String = js.native
+    var tagName: String
     
     /**
       * Whether this html must not contain innerHTML
       * @see https://www.w3.org/TR/html5/syntax.html#void-elements
       */
-    var voidTag: Boolean = js.native
+    var voidTag: Boolean
   }
   object HtmlTagObject {
     
@@ -171,13 +174,12 @@ object mod {
     }
   }
   
-  @js.native
   trait HtmlWebpackPlugin extends StObject {
     
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object HtmlWebpackPlugin {
     
@@ -202,44 +204,43 @@ object mod {
   type MinifyOptions = typings.htmlMinifierTerser.mod.Options
   
   /* Inlined parent std.Partial<html-webpack-plugin.html-webpack-plugin.ProcessedOptions> */
-  @js.native
   trait Options extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var chunks: js.UndefOr[all | js.Array[String]] = js.native
+    var chunks: js.UndefOr[all | js.Array[String]] = js.undefined
     
     var chunksSortMode: js.UndefOr[
         auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])
-      ] = js.native
+      ] = js.undefined
     
-    var excludeChunks: js.UndefOr[js.Array[String]] = js.native
+    var excludeChunks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var favicon: js.UndefOr[`false` | String] = js.native
+    var favicon: js.UndefOr[`false` | String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[Boolean] = js.native
+    var hash: js.UndefOr[Boolean] = js.undefined
     
-    var inject: js.UndefOr[`false` | `true` | body | head] = js.native
+    var inject: js.UndefOr[`false` | `true` | body | head] = js.undefined
     
     var meta: js.UndefOr[
         `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])])
-      ] = js.native
+      ] = js.undefined
     
-    var minify: js.UndefOr[auto | Boolean | MinifyOptions] = js.native
+    var minify: js.UndefOr[auto | Boolean | MinifyOptions] = js.undefined
     
-    var publicPath: js.UndefOr[String | auto] = js.native
+    var publicPath: js.UndefOr[String | auto] = js.undefined
     
-    var scriptLoading: js.UndefOr[blocking | defer] = js.native
+    var scriptLoading: js.UndefOr[blocking | defer] = js.undefined
     
-    var showErrors: js.UndefOr[Boolean] = js.native
+    var showErrors: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     var templateContent: js.UndefOr[
         `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
-      ] = js.native
+      ] = js.undefined
     
     var templateParameters: js.UndefOr[
         `false` | (js.Function4[
@@ -247,13 +248,13 @@ object mod {
           /* assets */ Css, 
           /* assetTags */ BodyTags, 
           /* options */ ProcessedOptions, 
-          StringDictionary[_] | js.Promise[StringDictionary[_]]
+          StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
         ]) | StringDictionary[js.Any]
-      ] = js.native
+      ] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var xhtml: js.UndefOr[Boolean] = js.native
+    var xhtml: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -374,13 +375,13 @@ object mod {
               /* assets */ Css, 
               /* assetTags */ BodyTags, 
               /* options */ ProcessedOptions, 
-              StringDictionary[_] | js.Promise[StringDictionary[_]]
+              StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
             ]) | StringDictionary[js.Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTemplateParametersFunction4(
-        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[_] | js.Promise[StringDictionary[_]]
+        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -406,9 +407,9 @@ object mod {
   /**
     * The plugin options after adding default values
     */
-  @js.native
   trait ProcessedOptions
-    extends /**
+    extends StObject
+       with /**
     * In addition to the options actually used by this plugin, you can use this hash to pass arbitrary data through
     * to your template.
     */
@@ -418,51 +419,51 @@ object mod {
       * Emit the file only if it was changed.
       * @default true
       */
-    var cache: Boolean = js.native
+    var cache: Boolean
     
     /**
       * List all entries which should be injected
       */
-    var chunks: all | js.Array[String] = js.native
+    var chunks: all | js.Array[String]
     
     /**
       * Allows to control how chunks should be sorted before they are included to the html.
       * @default 'auto'
       */
-    var chunksSortMode: auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double]) = js.native
+    var chunksSortMode: auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])
     
     /**
       * List all entries which should not be injected
       */
-    var excludeChunks: js.Array[String] = js.native
+    var excludeChunks: js.Array[String]
     
     /**
       * Path to the favicon icon
       */
-    var favicon: `false` | String = js.native
+    var favicon: `false` | String
     
     /**
       * The file to write the HTML to.
       * Supports subdirectories eg: `assets/admin.html`
       * @default 'index.html'
       */
-    var filename: String = js.native
+    var filename: String
     
     /**
       * If `true` then append a unique `webpack` compilation hash to all included scripts and CSS files.
       * This is useful for cache busting
       */
-    var hash: Boolean = js.native
+    var hash: Boolean
     
     /**
       * Inject all assets into the given `template` or `templateContent`.
       */
-    var inject: `false` | `true` | body | head = js.native
+    var inject: `false` | `true` | body | head
     
     /**
       * Inject meta tags
       */
-    var meta: `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])]) = js.native
+    var meta: `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])])
     
     /**
       * HTML Minification options accepts the following values:
@@ -471,13 +472,13 @@ object mod {
       * - Set to custom minification according to
       * {@link https://github.com/kangax/html-minifier#options-quick-reference}
       */
-    var minify: auto | Boolean | MinifyOptions = js.native
+    var minify: auto | Boolean | MinifyOptions
     
     /**
       * By default the public path is set to `auto` - that way the html-webpack-plugin will try
       * to set the publicPath according to the current filename and the webpack publicPath setting
       */
-    var publicPath: String | auto = js.native
+    var publicPath: String | auto
     
     // Inject scripts into head
     /**
@@ -487,23 +488,23 @@ object mod {
       *
       * @default 'blocking'
       */
-    var scriptLoading: blocking | defer = js.native
+    var scriptLoading: blocking | defer
     
     /**
       * Render errors into the HTML page
       */
-    var showErrors: Boolean = js.native
+    var showErrors: Boolean
     
     /**
       * The `webpack` require path to the template.
       * @see https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md
       */
-    var template: String = js.native
+    var template: String
     
     /**
       * Allow to use a html string instead of reading from a file
       */
-    var templateContent: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String] = js.native
+    var templateContent: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
     
     /**
       * Allows to overwrite the parameters used in the template
@@ -513,18 +514,18 @@ object mod {
         /* assets */ Css, 
         /* assetTags */ BodyTags, 
         /* options */ this.type, 
-        StringDictionary[_] | js.Promise[StringDictionary[_]]
-      ]) | StringDictionary[js.Any] = js.native
+        StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
+      ]) | StringDictionary[js.Any]
     
     /**
       * The title to use for the generated HTML document
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * Enforce self closing tags e.g. <link />
       */
-    var xhtml: Boolean = js.native
+    var xhtml: Boolean
   }
   object ProcessedOptions {
     
@@ -550,7 +551,7 @@ object mod {
           /* assets */ Css, 
           /* assetTags */ BodyTags, 
           ProcessedOptions, 
-          StringDictionary[_] | js.Promise[StringDictionary[_]]
+          StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
         ]) | StringDictionary[js.Any],
       title: String,
       xhtml: Boolean
@@ -628,13 +629,13 @@ object mod {
               /* assets */ Css, 
               /* assetTags */ BodyTags, 
               ProcessedOptions, 
-              StringDictionary[_] | js.Promise[StringDictionary[_]]
+              StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
             ]) | StringDictionary[js.Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTemplateParametersFunction4(
-        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, ProcessedOptions) => StringDictionary[_] | js.Promise[StringDictionary[_]]
+        value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, ProcessedOptions) => StringDictionary[js.Any] | js.Promise[StringDictionary[js.Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -650,14 +651,13 @@ object mod {
     *
     * Please keep in mind that the `templateParameter` options allows to change them
     */
-  @js.native
   trait TemplateParameter extends StObject {
     
-    var compilation: js.Any = js.native
+    var compilation: js.Any
     
-    var htmlWebpackPlugin: Files = js.native
+    var htmlWebpackPlugin: Files
     
-    var webpackConfig: js.Any = js.native
+    var webpackConfig: js.Any
   }
   object TemplateParameter {
     

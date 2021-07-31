@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conflict extends StObject {
   
   /**
     * Metadata about a conflict in a merge operation.
     */
-  var conflictMetadata: js.UndefOr[ConflictMetadata] = js.native
+  var conflictMetadata: js.UndefOr[ConflictMetadata] = js.undefined
   
   /**
     * A list of hunks that contain the differences between files or lines causing the conflict.
     */
-  var mergeHunks: js.UndefOr[MergeHunks] = js.native
+  var mergeHunks: js.UndefOr[MergeHunks] = js.undefined
 }
 object Conflict {
   

@@ -3,16 +3,15 @@ package typings.jake
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictname
-    extends /* name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* name */ StringDictionary[js.Any] {
     
-    var quiet: Boolean = js.native
+    var quiet: Boolean
   }
   object Dictname {
     

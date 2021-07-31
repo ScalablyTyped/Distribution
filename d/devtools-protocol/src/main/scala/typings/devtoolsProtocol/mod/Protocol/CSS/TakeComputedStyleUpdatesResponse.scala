@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakeComputedStyleUpdatesResponse extends StObject {
   
   /**
     * The list of node Ids that have their tracked computed styles updated
     */
-  var nodeIds: js.Array[NodeId] = js.native
+  var nodeIds: js.Array[NodeId]
 }
 object TakeComputedStyleUpdatesResponse {
   

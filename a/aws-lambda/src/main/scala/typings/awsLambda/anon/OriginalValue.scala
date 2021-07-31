@@ -3,17 +3,15 @@ package typings.awsLambda.anon
 import typings.awsLambda.lexMod.LexSlotResolution
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginalValue extends StObject {
   
-  var originalValue: String = js.native
+  var originalValue: String
   
   // The following line only works in TypeScript Version: 3.0, The array should have at least 1 and no more than 5 items
   // resolutions: [LexSlotResolution, LexSlotResolution?, LexSlotResolution?, LexSlotResolution?, LexSlotResolution?];
-  var resolutions: js.Array[LexSlotResolution] = js.native
+  var resolutions: js.Array[LexSlotResolution]
 }
 object OriginalValue {
   

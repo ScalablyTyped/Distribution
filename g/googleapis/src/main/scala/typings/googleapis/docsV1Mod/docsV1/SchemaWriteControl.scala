@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides control over how write requests are executed.
   */
-@js.native
 trait SchemaWriteControl extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaWriteControl extends StObject {
     * required revision ID is returned in a response, it indicates the revision
     * ID of the document after the request was applied.
     */
-  var requiredRevisionId: js.UndefOr[String] = js.native
+  var requiredRevisionId: js.UndefOr[String] = js.undefined
   
   /**
     * The target revision ID of the document that the write request will be
@@ -37,7 +35,7 @@ trait SchemaWriteControl extends StObject {
     * target revision for several minutes after it is read, but for
     * frequently-edited documents this window may be shorter.
     */
-  var targetRevisionId: js.UndefOr[String] = js.native
+  var targetRevisionId: js.UndefOr[String] = js.undefined
 }
 object SchemaWriteControl {
   

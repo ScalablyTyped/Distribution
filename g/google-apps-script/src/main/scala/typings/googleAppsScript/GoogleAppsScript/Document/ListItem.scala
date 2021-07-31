@@ -4,7 +4,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,7 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     item2.setListId(item1);
   */
 @js.native
-trait ListItem extends Element {
+trait ListItem
+  extends StObject
+     with Element {
   
   def addPositionedImage(image: BlobSource): PositionedImage = js.native
   

@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientData extends StObject {
   
-  var challenge: java.lang.String = js.native
+  var challenge: java.lang.String
   
-  var extensions: js.UndefOr[WebAuthnExtensions] = js.native
+  var extensions: js.UndefOr[WebAuthnExtensions] = js.undefined
   
-  var hashAlg: java.lang.String | Algorithm = js.native
+  var hashAlg: java.lang.String | Algorithm
   
-  var origin: java.lang.String = js.native
+  var origin: java.lang.String
   
-  var rpId: java.lang.String = js.native
+  var rpId: java.lang.String
   
-  var tokenBinding: js.UndefOr[java.lang.String] = js.native
+  var tokenBinding: js.UndefOr[java.lang.String] = js.undefined
 }
 object ClientData {
   

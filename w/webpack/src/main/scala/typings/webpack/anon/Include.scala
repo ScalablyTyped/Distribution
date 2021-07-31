@@ -4,26 +4,24 @@ import typings.webpack.sourceMapDevToolPluginMod.Rule
 import typings.webpack.sourceMapDevToolPluginMod.Rules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Include extends StObject {
   
   /**
   				 * Exclude modules that match the given value from source map generation
   				 */
-  var exclude: js.UndefOr[Rules] = js.native
+  var exclude: js.UndefOr[Rules] = js.undefined
   
   /**
   				 * Include source maps for module paths that match the given value
   				 */
-  var include: js.UndefOr[Rules] = js.native
+  var include: js.UndefOr[Rules] = js.undefined
   
   /**
   				 * Include source maps for modules based on their extension (defaults to .js and .css)
   				 */
-  var test: js.UndefOr[Rules] = js.native
+  var test: js.UndefOr[Rules] = js.undefined
 }
 object Include {
   

@@ -2,93 +2,91 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Campaign extends StObject {
   
   /** Account ID of this campaign. This is a read-only field that can be left blank. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Ad blocking settings for this campaign. */
-  var adBlockingConfiguration: js.UndefOr[AdBlockingConfiguration] = js.native
+  var adBlockingConfiguration: js.UndefOr[AdBlockingConfiguration] = js.undefined
   
   /** Additional creative optimization configurations for the campaign. */
-  var additionalCreativeOptimizationConfigurations: js.UndefOr[js.Array[CreativeOptimizationConfiguration]] = js.native
+  var additionalCreativeOptimizationConfigurations: js.UndefOr[js.Array[CreativeOptimizationConfiguration]] = js.undefined
   
   /** Advertiser group ID of the associated advertiser. */
-  var advertiserGroupId: js.UndefOr[String] = js.native
+  var advertiserGroupId: js.UndefOr[String] = js.undefined
   
   /** Advertiser ID of this campaign. This is a required field. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the advertiser ID of this campaign. This is a read-only, auto-generated field. */
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Whether this campaign has been archived. */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /** Audience segment groups assigned to this campaign. Cannot have more than 300 segment groups. */
-  var audienceSegmentGroups: js.UndefOr[js.Array[AudienceSegmentGroup]] = js.native
+  var audienceSegmentGroups: js.UndefOr[js.Array[AudienceSegmentGroup]] = js.undefined
   
   /** Billing invoice code included in the Campaign Manager client billing invoices associated with the campaign. */
-  var billingInvoiceCode: js.UndefOr[String] = js.native
+  var billingInvoiceCode: js.UndefOr[String] = js.undefined
   
   /** Click-through URL suffix override properties for this campaign. */
-  var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.native
+  var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.undefined
   
   /** Arbitrary comments about this campaign. Must be less than 256 characters long. */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /** Information about the creation of this campaign. This is a read-only field. */
-  var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   
   /** List of creative group IDs that are assigned to the campaign. */
-  var creativeGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var creativeGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Creative optimization configuration for the campaign. */
-  var creativeOptimizationConfiguration: js.UndefOr[CreativeOptimizationConfiguration] = js.native
+  var creativeOptimizationConfiguration: js.UndefOr[CreativeOptimizationConfiguration] = js.undefined
   
   /** Click-through event tag ID override properties for this campaign. */
-  var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.native
+  var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.undefined
   
   /** The default landing page ID for this campaign. */
-  var defaultLandingPageId: js.UndefOr[String] = js.native
+  var defaultLandingPageId: js.UndefOr[String] = js.undefined
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** Overrides that can be used to activate or deactivate advertiser event tags. */
-  var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.native
+  var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.undefined
   
   /** External ID for this campaign. */
-  var externalId: js.UndefOr[String] = js.native
+  var externalId: js.UndefOr[String] = js.undefined
   
   /** ID of this campaign. This is a read-only auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of this campaign. This is a read-only, auto-generated field. */
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#campaign". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Information about the most recent modification of this campaign. This is a read-only field. */
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   
   /** Name of this campaign. This is a required field and must be less than 256 characters long and unique among campaigns of the same advertiser. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Whether Nielsen reports are enabled for this campaign. */
-  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.native
+  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /** Subaccount ID of this campaign. This is a read-only field that can be left blank. */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /** Campaign trafficker contact emails. */
-  var traffickerEmails: js.UndefOr[js.Array[String]] = js.native
+  var traffickerEmails: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Campaign {
   

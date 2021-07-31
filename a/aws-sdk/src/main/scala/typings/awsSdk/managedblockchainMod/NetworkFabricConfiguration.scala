@@ -2,16 +2,14 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkFabricConfiguration extends StObject {
   
   /**
     * The edition of Amazon Managed Blockchain that the network uses. For more information, see Amazon Managed Blockchain Pricing.
     */
-  var Edition: typings.awsSdk.managedblockchainMod.Edition = js.native
+  var Edition: typings.awsSdk.managedblockchainMod.Edition
 }
 object NetworkFabricConfiguration {
   

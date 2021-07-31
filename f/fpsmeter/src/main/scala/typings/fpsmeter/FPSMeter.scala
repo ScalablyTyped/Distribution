@@ -2,35 +2,33 @@ package typings.fpsmeter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FPSMeter extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def hide(): FPSMeter = js.native
+  def hide(): FPSMeter
   
-  var options: FPSMeterOptions = js.native
+  var options: FPSMeterOptions
   
-  def pause(): FPSMeter = js.native
+  def pause(): FPSMeter
   
-  def resume(): FPSMeter = js.native
+  def resume(): FPSMeter
   
-  def set(name: String, value: js.Any): FPSMeter = js.native
+  def set(name: String, value: js.Any): FPSMeter
   
-  def show(): FPSMeter = js.native
+  def show(): FPSMeter
   
-  def showDuration(): FPSMeter = js.native
+  def showDuration(): FPSMeter
   
-  def showFps(): FPSMeter = js.native
+  def showFps(): FPSMeter
   
-  def tick(): Unit = js.native
+  def tick(): Unit
   
-  def tickStart(): Unit = js.native
+  def tickStart(): Unit
   
-  def toggle(): FPSMeter = js.native
+  def toggle(): FPSMeter
 }
 object FPSMeter {
   

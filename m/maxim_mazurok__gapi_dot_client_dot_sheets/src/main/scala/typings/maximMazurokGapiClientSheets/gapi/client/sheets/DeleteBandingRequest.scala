@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBandingRequest extends StObject {
   
   /** The ID of the banded range to delete. */
-  var bandedRangeId: js.UndefOr[Double] = js.native
+  var bandedRangeId: js.UndefOr[Double] = js.undefined
 }
 object DeleteBandingRequest {
   

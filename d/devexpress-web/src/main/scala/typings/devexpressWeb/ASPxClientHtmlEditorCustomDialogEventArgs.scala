@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client events that relate to custom dialog operations.
   */
-@js.native
-trait ASPxClientHtmlEditorCustomDialogEventArgs extends ASPxClientEventArgs {
+trait ASPxClientHtmlEditorCustomDialogEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name that uniquely identifies the processed custom dialog.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientHtmlEditorCustomDialogEventArgs {
   

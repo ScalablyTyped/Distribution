@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSupportedResourceTypesOutput extends StObject {
   
   /**
     * Contains a string with the supported AWS resource types:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EC2 for Amazon Elastic Compute Cloud    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
     */
-  var ResourceTypes: js.UndefOr[typings.awsSdk.backupMod.ResourceTypes] = js.native
+  var ResourceTypes: js.UndefOr[typings.awsSdk.backupMod.ResourceTypes] = js.undefined
 }
 object GetSupportedResourceTypesOutput {
   

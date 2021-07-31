@@ -3,44 +3,42 @@ package typings.lyricist.mod
 import typings.lyricist.anon.Hot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Song by Artist =========================================
-@js.native
 trait SongByArtist extends StObject {
   
-  var annotation_count: Double = js.native
+  var annotation_count: Double
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var full_title: String = js.native
+  var full_title: String
   
-  var header_image_thumbnail_url: String = js.native
+  var header_image_thumbnail_url: String
   
-  var header_image_url: String = js.native
+  var header_image_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var lyrics_owner_id: Double = js.native
+  var lyrics_owner_id: Double
   
-  var lyrics_state: String = js.native
+  var lyrics_state: String
   
-  var path: String = js.native
+  var path: String
   
-  var primary_artist: ArtistBrief = js.native
+  var primary_artist: ArtistBrief
   
-  var pyongs_count: Double = js.native
+  var pyongs_count: Double
   
-  var song_art_image_thumbnail_url: String = js.native
+  var song_art_image_thumbnail_url: String
   
-  var stats: Hot = js.native
+  var stats: Hot
   
-  var title: String = js.native
+  var title: String
   
-  var title_with_featured: String = js.native
+  var title_with_featured: String
   
-  var url: String = js.native
+  var url: String
 }
 object SongByArtist {
   

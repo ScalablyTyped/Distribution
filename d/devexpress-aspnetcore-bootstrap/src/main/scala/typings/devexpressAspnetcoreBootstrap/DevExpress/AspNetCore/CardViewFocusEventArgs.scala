@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CardViewFocusEventArgs extends ProcessingModeEventArgs {
+trait CardViewFocusEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val isChangedOnServer: Boolean = js.native
+  val isChangedOnServer: Boolean
 }
 object CardViewFocusEventArgs {
   

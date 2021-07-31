@@ -3,15 +3,13 @@ package typings.node.anon
 import typings.node.perfHooksMod.EntryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buffered extends StObject {
   
-  var buffered: js.UndefOr[Boolean] = js.native
+  var buffered: js.UndefOr[Boolean] = js.undefined
   
-  var entryTypes: js.Array[EntryType] = js.native
+  var entryTypes: js.Array[EntryType]
 }
 object Buffered {
   

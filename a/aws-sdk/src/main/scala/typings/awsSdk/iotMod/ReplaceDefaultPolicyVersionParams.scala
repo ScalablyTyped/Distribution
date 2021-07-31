@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceDefaultPolicyVersionParams extends StObject {
   
   /**
     * The name of the template to be applied. The only supported value is BLANK_POLICY.
     */
-  var templateName: PolicyTemplateName = js.native
+  var templateName: PolicyTemplateName
 }
 object ReplaceDefaultPolicyVersionParams {
   

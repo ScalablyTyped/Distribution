@@ -5,7 +5,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<react-table.react-table.TableOptions<D>, 'columns' | 'pageCount'> */
@@ -23,7 +22,7 @@ trait TableInstance[D /* <: js.Object */] extends StObject {
   
   var defaultColumn: js.UndefOr[Partial[Column[D]]] = js.native
   
-  var dispatch: TableDispatch[_] = js.native
+  var dispatch: TableDispatch[js.Any] = js.native
   
   var flatHeaders: js.Array[ColumnInstance[D]] = js.native
   

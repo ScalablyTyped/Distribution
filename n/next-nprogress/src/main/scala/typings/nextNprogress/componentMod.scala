@@ -4,7 +4,6 @@ import typings.nextNprogress.anon.PartialNProgressOptions
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -16,16 +15,15 @@ object componentMod {
   
   type NProgress = Component[NProgressProps, js.Object, js.Any]
   
-  @js.native
   trait NProgressProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[PartialNProgressOptions] = js.native
+    var options: js.UndefOr[PartialNProgressOptions] = js.undefined
     
-    var showAfterMs: js.UndefOr[Double] = js.native
+    var showAfterMs: js.UndefOr[Double] = js.undefined
     
-    var spinner: js.UndefOr[Boolean] = js.native
+    var spinner: js.UndefOr[Boolean] = js.undefined
   }
   object NProgressProps {
     

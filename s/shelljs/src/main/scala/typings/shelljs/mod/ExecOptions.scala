@@ -2,12 +2,11 @@ package typings.shelljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecOptions
-  extends typings.node.childProcessMod.ExecOptions {
+  extends StObject
+     with typings.node.childProcessMod.ExecOptions {
   
   /**
     * Asynchronous execution.
@@ -16,7 +15,7 @@ trait ExecOptions
     *
     * @default false
     */
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Character encoding to use.
@@ -26,21 +25,21 @@ trait ExecOptions
     *
     * @default "utf8"
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * Exit when command return code is non-zero.
     *
     * @default false
     */
-  var fatal: js.UndefOr[Boolean] = js.native
+  var fatal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Do not echo program output to the console.
     *
     * @default false
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
 }
 object ExecOptions {
   

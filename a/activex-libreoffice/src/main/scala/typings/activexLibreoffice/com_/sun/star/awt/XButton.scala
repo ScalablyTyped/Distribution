@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to set the label of a button and to register for action events. */
-@js.native
-trait XButton extends XInterface {
+trait XButton
+  extends StObject
+     with XInterface {
   
   /** registers an event handler for button action events. */
-  def addActionListener(l: XActionListener): Unit = js.native
+  def addActionListener(l: XActionListener): Unit
   
   /** unregisters an event handler for button action events. */
-  def removeActionListener(l: XActionListener): Unit = js.native
+  def removeActionListener(l: XActionListener): Unit
   
   /**
     * sets a command string for pushing the button.
     * @param Command value can be used to detect which button is pressed.
     */
-  def setActionCommand(Command: String): Unit = js.native
+  def setActionCommand(Command: String): Unit
   
   /** sets the label of the button. */
-  def setLabel(Label: String): Unit = js.native
+  def setLabel(Label: String): Unit
 }
 object XButton {
   

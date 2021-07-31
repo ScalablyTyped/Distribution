@@ -10,7 +10,6 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonTypesMod {
@@ -20,8 +19,8 @@ object commonTypesMod {
   class Contract protected () extends StObject {
     def this(provider: js.Any, abi: js.Array[AbiItem]) = this()
     def this(provider: js.Any, abi: js.Array[AbiItem], address: String) = this()
-    def this(provider: js.Any, abi: js.Array[AbiItem], address: js.UndefOr[scala.Nothing], options: js.Any) = this()
     def this(provider: js.Any, abi: js.Array[AbiItem], address: String, options: js.Any) = this()
+    def this(provider: js.Any, abi: js.Array[AbiItem], address: Unit, options: js.Any) = this()
     
     var _address: String = js.native
     
@@ -39,7 +38,7 @@ object commonTypesMod {
     
     var events: js.Any = js.native
     
-    def getPastEvents(event: String): js.Promise[js.Array[_]] = js.native
+    def getPastEvents(event: String): js.Promise[js.Array[js.Any]] = js.native
     
     var methods: js.Any = js.native
     
@@ -77,7 +76,7 @@ object commonTypesMod {
     
     var eth: js.Any = js.native
     
-    def extend(extension: js.Any): js.Any = js.native
+    def extend(`extension`: js.Any): js.Any = js.native
     
     val givenProvider: js.Any = js.native
     
@@ -115,18 +114,17 @@ object commonTypesMod {
     val version: String = js.native
   }
   
-  @js.native
   trait AbiInput extends StObject {
     
-    var components: js.UndefOr[js.Array[AbiInput]] = js.native
+    var components: js.UndefOr[js.Array[AbiInput]] = js.undefined
     
-    var indexed: js.UndefOr[Boolean] = js.native
+    var indexed: js.UndefOr[Boolean] = js.undefined
     
-    var internalType: js.UndefOr[String] = js.native
+    var internalType: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object AbiInput {
     
@@ -169,26 +167,25 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait AbiItem extends StObject {
     
-    var anonymous: js.UndefOr[Boolean] = js.native
+    var anonymous: js.UndefOr[Boolean] = js.undefined
     
-    var constant: js.UndefOr[Boolean] = js.native
+    var constant: js.UndefOr[Boolean] = js.undefined
     
-    var gas: js.UndefOr[Double] = js.native
+    var gas: js.UndefOr[Double] = js.undefined
     
-    var inputs: js.UndefOr[js.Array[AbiInput]] = js.native
+    var inputs: js.UndefOr[js.Array[AbiInput]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var outputs: js.UndefOr[js.Array[AbiOutput]] = js.native
+    var outputs: js.UndefOr[js.Array[AbiOutput]] = js.undefined
     
-    var payable: js.UndefOr[Boolean] = js.native
+    var payable: js.UndefOr[Boolean] = js.undefined
     
-    var stateMutability: js.UndefOr[StateMutabilityType] = js.native
+    var stateMutability: js.UndefOr[StateMutabilityType] = js.undefined
     
-    var `type`: AbiType = js.native
+    var `type`: AbiType
   }
   object AbiItem {
     
@@ -261,16 +258,15 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait AbiOutput extends StObject {
     
-    var components: js.UndefOr[js.Array[AbiOutput]] = js.native
+    var components: js.UndefOr[js.Array[AbiOutput]] = js.undefined
     
-    var internalType: js.UndefOr[String] = js.native
+    var internalType: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object AbiOutput {
     
@@ -329,24 +325,23 @@ object commonTypesMod {
     def function: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.function = "function".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.function]
   }
   
-  @js.native
   trait DepositBaseClass extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    def constructFundingProof(bitcoinTransaction: OmitFoundTransactionvalue, confirmations: Double): js.Promise[js.Tuple8[Buffer, Buffer, Buffer, Buffer, Double, Buffer, String, Buffer]] = js.native
+    def constructFundingProof(bitcoinTransaction: OmitFoundTransactionvalue, confirmations: Double): js.Promise[js.Tuple8[Buffer, Buffer, Buffer, Buffer, Double, Buffer, String, Buffer]]
     
-    var contract: Contract = js.native
+    var contract: Contract
     
-    var factory: js.Any = js.native
+    var factory: js.Any
     
-    def getCurrentState(): js.Promise[Double] = js.native
+    def getCurrentState(): js.Promise[Double]
     
-    def getLatestRedemptionDetails(): js.Promise[Null | RedemptionDetails] = js.native
+    def getLatestRedemptionDetails(): js.Promise[Null | RedemptionDetails]
     
-    var keepContract: Contract = js.native
+    var keepContract: Contract
     
-    var publicKeyPoint: js.Promise[KeyPoint] = js.native
+    var publicKeyPoint: js.Promise[KeyPoint]
   }
   object DepositBaseClass {
     
@@ -396,12 +391,11 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait KeyPoint extends StObject {
     
-    var x: String = js.native
+    var x: String
     
-    var y: String = js.native
+    var y: String
   }
   object KeyPoint {
     
@@ -422,18 +416,17 @@ object commonTypesMod {
     }
   }
   
-  @js.native
   trait RedemptionDetails extends StObject {
     
-    var digest: String = js.native
+    var digest: String
     
-    var outpoint: String = js.native
+    var outpoint: String
     
-    var redeemerOutputScript: String = js.native
+    var redeemerOutputScript: String
     
-    var requestedFee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+    var requestedFee: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     
-    var utxoValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+    var utxoValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   }
   object RedemptionDetails {
     
@@ -495,14 +488,13 @@ object commonTypesMod {
     def view: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.view = "view".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.view]
   }
   
-  @js.native
   trait TBTCConfig extends StObject {
     
-    var bitcoinNetwork: BitcoinNetworkType = js.native
+    var bitcoinNetwork: BitcoinNetworkType
     
-    var electrum: StringDictionary[Config] = js.native
+    var electrum: StringDictionary[Config]
     
-    var web3: Web3 = js.native
+    var web3: Web3
   }
   object TBTCConfig {
     

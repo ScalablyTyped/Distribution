@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,44 +13,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbcx.Column
   * @see com.sun.star.sdbcx.Table
   */
-@js.native
-trait ColumnDescriptor extends Descriptor {
+trait ColumnDescriptor
+  extends StObject
+     with Descriptor {
   
   /** specifies how to create an auto-increment column. */
-  var AutoIncrementCreation: String = js.native
+  var AutoIncrementCreation: String
   
   /** keeps a default value for a column, is provided as string. */
-  var DefaultValue: String = js.native
+  var DefaultValue: String
   
   /** keeps a description of the object. */
-  var Description: String = js.native
+  var Description: String
   
   /**
     * indicates whether the column is automatically numbered, thus read-only.
     * @see com.sun.star.sdbc.ColumnValue
     */
-  var IsAutoIncrement: Boolean = js.native
+  var IsAutoIncrement: Boolean
   
   /**
     * indicates the nullability of values in the designated column.
     * @see com.sun.star.sdbc.ColumnValue
     */
-  var IsNullable: Double = js.native
+  var IsNullable: Double
   
   /** indicates that the column contains some kind of time or date stamp used to track updates. */
-  var IsRowVersion: Boolean = js.native
+  var IsRowVersion: Boolean
   
   /** gets a column's number of decimal digits. */
-  var Precision: Double = js.native
+  var Precision: Double
   
   /** gets a column's number of digits to right of the decimal point. */
-  var Scale: Double = js.native
+  var Scale: Double
   
   /** is the {@link com.sun.star.sdbc.DataType} of the column. */
-  var Type: Double = js.native
+  var Type: Double
   
   /** is the type name used by the database. If the column type is a user-defined type, then a fully-qualified type name is returned. May be empty. */
-  var TypeName: String = js.native
+  var TypeName: String
 }
 object ColumnDescriptor {
   

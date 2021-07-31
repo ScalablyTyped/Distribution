@@ -8,7 +8,6 @@ import typings.chromeApps.chromeAppsStrings.openWritableFile
 import typings.chromeApps.chromeAppsStrings.saveFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -29,7 +28,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object fileSystem {
   
-  @js.native
   trait AcceptOptions extends StObject {
     
     /**
@@ -37,17 +35,17 @@ object fileSystem {
       * If not present, a description will be automatically generated;
       * typically containing an expanded list of valid extensions (e.g. 'text/html' may expand to '*.html, *.htm').
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Extensions to accept, e.g. 'jpg', 'gif', 'crx'.
       */
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Mime-types to accept, e.g. 'image/jpeg' or 'audio/ *'. One of mimeTypess must contain at least one valid element.
       */
-    var mimeTypes: js.UndefOr[js.Array[String]] = js.native
+    var mimeTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AcceptOptions {
     
@@ -87,17 +85,18 @@ object fileSystem {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ @js.native
-  trait ChooseDirectoryEntryOptions extends ChooseEntryOptionsBase {
+  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ trait ChooseDirectoryEntryOptions
+    extends StObject
+       with ChooseEntryOptionsBase {
     
-    var `type`: openDirectory = js.native
+    var `type`: openDirectory
   }
   object ChooseDirectoryEntryOptions {
     
     @scala.inline
-    def apply(`type`: openDirectory): ChooseDirectoryEntryOptions = {
+    def apply(): ChooseDirectoryEntryOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("openDirectory")
       __obj.asInstanceOf[ChooseDirectoryEntryOptions]
     }
     
@@ -120,9 +119,9 @@ object fileSystem {
   object ChooseEntryOptions {
     
     @scala.inline
-    def ChooseDirectoryEntryOptions(`type`: openDirectory): typings.chromeApps.chrome.fileSystem.ChooseDirectoryEntryOptions = {
+    def ChooseDirectoryEntryOptions(): typings.chromeApps.chrome.fileSystem.ChooseDirectoryEntryOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("openDirectory")
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseDirectoryEntryOptions]
     }
     
@@ -140,35 +139,36 @@ object fileSystem {
     }
     
     @scala.inline
-    def ChooseMultipleFilesEntryOptions(acceptsMultiple: `true`, `type`: openFile | openWritableFile): typings.chromeApps.chrome.fileSystem.ChooseMultipleFilesEntryOptions = {
-      val __obj = js.Dynamic.literal(acceptsMultiple = acceptsMultiple.asInstanceOf[js.Any])
+    def ChooseMultipleFilesEntryOptions(`type`: openFile | openWritableFile): typings.chromeApps.chrome.fileSystem.ChooseMultipleFilesEntryOptions = {
+      val __obj = js.Dynamic.literal(acceptsMultiple = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseMultipleFilesEntryOptions]
     }
     
     @scala.inline
-    def ChooseSaveFileEntryOptions(`type`: saveFile): typings.chromeApps.chrome.fileSystem.ChooseSaveFileEntryOptions = {
+    def ChooseSaveFileEntryOptions(): typings.chromeApps.chrome.fileSystem.ChooseSaveFileEntryOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("saveFile")
       __obj.asInstanceOf[typings.chromeApps.chrome.fileSystem.ChooseSaveFileEntryOptions]
     }
   }
   
-  @js.native
-  trait ChooseEntryOptionsBase extends ChooseEntryOptions {
+  trait ChooseEntryOptionsBase
+    extends StObject
+       with ChooseEntryOptions {
     
     /**
       * The optional list of accept options for this file opener.
       * Each option will be presented as a unique group to the end-user.
       */
-    var accepts: js.UndefOr[js.Array[AcceptOptions]] = js.native
+    var accepts: js.UndefOr[js.Array[AcceptOptions]] = js.undefined
     
     /**
       * Whether to accept all file types, in addition to the options specified in the accepts argument.
       * If the accepts field is unset or contains no valid entries, this will always be reset to true.
       * @default true
       */
-    var acceptsAllTypes: js.UndefOr[Boolean] = js.native
+    var acceptsAllTypes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type of the prompt to show.
@@ -179,7 +179,7 @@ object fileSystem {
     /**
       * The suggested file name that will be presented to the user as the default name to read or write.
       */
-    var suggestedName: js.UndefOr[String] = js.native
+    var suggestedName: js.UndefOr[String] = js.undefined
   }
   object ChooseEntryOptionsBase {
     
@@ -216,8 +216,9 @@ object fileSystem {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ @js.native
-  trait ChooseFileEntryOptions extends ChooseEntryOptionsBase {
+  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ trait ChooseFileEntryOptions
+    extends StObject
+       with ChooseEntryOptionsBase {
     
     /**
       * Whether to accept multiple files. This is only supported for openFile and openWritableFile.
@@ -226,9 +227,9 @@ object fileSystem {
       * @default false
       * @since Chrome 30.
       */
-    var acceptsMultiple: js.UndefOr[`false`] = js.native
+    var acceptsMultiple: js.UndefOr[`false`] = js.undefined
     
-    var `type`: openFile | openWritableFile = js.native
+    var `type`: openFile | openWritableFile
   }
   object ChooseFileEntryOptions {
     
@@ -254,8 +255,9 @@ object fileSystem {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ @js.native
-  trait ChooseMultipleFilesEntryOptions extends ChooseEntryOptionsBase {
+  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ trait ChooseMultipleFilesEntryOptions
+    extends StObject
+       with ChooseEntryOptionsBase {
     
     /**
       * Whether to accept multiple files. This is only supported for openFile and openWritableFile.
@@ -264,15 +266,15 @@ object fileSystem {
       * @default false
       * @since Chrome 30.
       */
-    var acceptsMultiple: `true` = js.native
+    var acceptsMultiple: `true`
     
-    var `type`: openFile | openWritableFile = js.native
+    var `type`: openFile | openWritableFile
   }
   object ChooseMultipleFilesEntryOptions {
     
     @scala.inline
-    def apply(acceptsMultiple: `true`, `type`: openFile | openWritableFile): ChooseMultipleFilesEntryOptions = {
-      val __obj = js.Dynamic.literal(acceptsMultiple = acceptsMultiple.asInstanceOf[js.Any])
+    def apply(`type`: openFile | openWritableFile): ChooseMultipleFilesEntryOptions = {
+      val __obj = js.Dynamic.literal(acceptsMultiple = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChooseMultipleFilesEntryOptions]
     }
@@ -289,17 +291,18 @@ object fileSystem {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ @js.native
-  trait ChooseSaveFileEntryOptions extends ChooseEntryOptionsBase {
+  - typings.chromeApps.chrome.fileSystem.ChooseEntryOptions because Already inherited */ trait ChooseSaveFileEntryOptions
+    extends StObject
+       with ChooseEntryOptionsBase {
     
-    var `type`: saveFile = js.native
+    var `type`: saveFile
   }
   object ChooseSaveFileEntryOptions {
     
     @scala.inline
-    def apply(`type`: saveFile): ChooseSaveFileEntryOptions = {
+    def apply(): ChooseSaveFileEntryOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("saveFile")
       __obj.asInstanceOf[ChooseSaveFileEntryOptions]
     }
     
@@ -317,17 +320,16 @@ object fileSystem {
   /**
     * @since Chrome 44.
     */
-  @js.native
   trait Volume extends StObject {
     
     /** The ID of the requested volume. */
-    var volumeId: String = js.native
+    var volumeId: String
     
     /**
       * Whether the requested file system should be writable. The default is read-only.
       * @default false
       **/
-    var writable: js.UndefOr[Boolean] = js.native
+    var writable: js.UndefOr[Boolean] = js.undefined
   }
   object Volume {
     

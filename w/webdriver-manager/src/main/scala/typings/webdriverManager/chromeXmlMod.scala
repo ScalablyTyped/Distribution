@@ -3,10 +3,13 @@ package typings.webdriverManager
 import typings.webdriverManager.configSourceMod.XmlConfigSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromeXmlMod {
+  
+  @JSImport("webdriver-manager/built/lib/binaries/chrome_xml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webdriver-manager/built/lib/binaries/chrome_xml", "ChromeXml")
   @js.native
@@ -30,7 +33,6 @@ object chromeXmlMod {
     var maxVersion: String = js.native
   }
   
-  @JSImport("webdriver-manager/built/lib/binaries/chrome_xml", "getValidSemver")
-  @js.native
-  def getValidSemver(version: String): String = js.native
+  @scala.inline
+  def getValidSemver(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidSemver")(version.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,27 +2,25 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFinding extends StObject {
   
   /**
     * Zero-based ending index of the found text, exclusively.
     */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /**
     * The type of information stored in this text range (e.g. HumanName,
     * BirthDate, Address, etc.)
     */
-  var infoType: js.UndefOr[String] = js.native
+  var infoType: js.UndefOr[String] = js.undefined
   
   /**
     * Zero-based starting index of the found text, inclusively.
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object SchemaFinding {
   

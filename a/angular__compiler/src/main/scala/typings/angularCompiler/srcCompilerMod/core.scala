@@ -17,10 +17,13 @@ import typings.angularCompiler.coreMod.SchemaMetadata
 import typings.std.FunctionConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object core {
+  
+  @JSImport("@angular/compiler/src/compiler", "core")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/compiler", "core.CUSTOM_ELEMENTS_SCHEMA")
   @js.native
@@ -31,11 +34,11 @@ object core {
   object ChangeDetectionStrategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.ChangeDetectionStrategy with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.ChangeDetectionStrategy & Double] = js.native
     
-    /* 1 */ val Default: typings.angularCompiler.coreMod.ChangeDetectionStrategy.Default with Double = js.native
+    /* 1 */ val Default: typings.angularCompiler.coreMod.ChangeDetectionStrategy.Default & Double = js.native
     
-    /* 0 */ val OnPush: typings.angularCompiler.coreMod.ChangeDetectionStrategy.OnPush with Double = js.native
+    /* 0 */ val OnPush: typings.angularCompiler.coreMod.ChangeDetectionStrategy.OnPush & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/compiler", "core.MissingTranslationStrategy")
@@ -43,13 +46,13 @@ object core {
   object MissingTranslationStrategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.MissingTranslationStrategy with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.MissingTranslationStrategy & Double] = js.native
     
-    /* 0 */ val Error: typings.angularCompiler.coreMod.MissingTranslationStrategy.Error with Double = js.native
+    /* 0 */ val Error: typings.angularCompiler.coreMod.MissingTranslationStrategy.Error & Double = js.native
     
-    /* 2 */ val Ignore: typings.angularCompiler.coreMod.MissingTranslationStrategy.Ignore with Double = js.native
+    /* 2 */ val Ignore: typings.angularCompiler.coreMod.MissingTranslationStrategy.Ignore & Double = js.native
     
-    /* 1 */ val Warning: typings.angularCompiler.coreMod.MissingTranslationStrategy.Warning with Double = js.native
+    /* 1 */ val Warning: typings.angularCompiler.coreMod.MissingTranslationStrategy.Warning & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/compiler", "core.NO_ERRORS_SCHEMA")
@@ -61,19 +64,19 @@ object core {
   object SecurityContext extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.SecurityContext with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.SecurityContext & Double] = js.native
     
-    /* 1 */ val HTML: typings.angularCompiler.coreMod.SecurityContext.HTML with Double = js.native
+    /* 1 */ val HTML: typings.angularCompiler.coreMod.SecurityContext.HTML & Double = js.native
     
-    /* 0 */ val NONE: typings.angularCompiler.coreMod.SecurityContext.NONE with Double = js.native
+    /* 0 */ val NONE: typings.angularCompiler.coreMod.SecurityContext.NONE & Double = js.native
     
-    /* 5 */ val RESOURCE_URL: typings.angularCompiler.coreMod.SecurityContext.RESOURCE_URL with Double = js.native
+    /* 5 */ val RESOURCE_URL: typings.angularCompiler.coreMod.SecurityContext.RESOURCE_URL & Double = js.native
     
-    /* 3 */ val SCRIPT: typings.angularCompiler.coreMod.SecurityContext.SCRIPT with Double = js.native
+    /* 3 */ val SCRIPT: typings.angularCompiler.coreMod.SecurityContext.SCRIPT & Double = js.native
     
-    /* 2 */ val STYLE: typings.angularCompiler.coreMod.SecurityContext.STYLE with Double = js.native
+    /* 2 */ val STYLE: typings.angularCompiler.coreMod.SecurityContext.STYLE & Double = js.native
     
-    /* 4 */ val URL: typings.angularCompiler.coreMod.SecurityContext.URL with Double = js.native
+    /* 4 */ val URL: typings.angularCompiler.coreMod.SecurityContext.URL & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/compiler", "core.Type")
@@ -97,13 +100,13 @@ object core {
   object ViewEncapsulation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.ViewEncapsulation with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompiler.coreMod.ViewEncapsulation & Double] = js.native
     
-    /* 0 */ val Emulated: typings.angularCompiler.coreMod.ViewEncapsulation.Emulated with Double = js.native
+    /* 0 */ val Emulated: typings.angularCompiler.coreMod.ViewEncapsulation.Emulated & Double = js.native
     
-    /* 2 */ val None: typings.angularCompiler.coreMod.ViewEncapsulation.None with Double = js.native
+    /* 2 */ val None: typings.angularCompiler.coreMod.ViewEncapsulation.None & Double = js.native
     
-    /* 3 */ val ShadowDom: typings.angularCompiler.coreMod.ViewEncapsulation.ShadowDom with Double = js.native
+    /* 3 */ val ShadowDom: typings.angularCompiler.coreMod.ViewEncapsulation.ShadowDom & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/compiler", "core.createAttribute")
@@ -186,10 +189,8 @@ object core {
   @js.native
   val createViewChildren: MetadataFactory[Query] = js.native
   
-  @JSImport("@angular/compiler/src/compiler", "core.parseSelectorToR3Selector")
-  @js.native
-  def parseSelectorToR3Selector(): R3CssSelectorList = js.native
-  @JSImport("@angular/compiler/src/compiler", "core.parseSelectorToR3Selector")
-  @js.native
-  def parseSelectorToR3Selector(selector: String): R3CssSelectorList = js.native
+  @scala.inline
+  def parseSelectorToR3Selector(): R3CssSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectorToR3Selector")().asInstanceOf[R3CssSelectorList]
+  @scala.inline
+  def parseSelectorToR3Selector(selector: String): R3CssSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectorToR3Selector")(selector.asInstanceOf[js.Any]).asInstanceOf[R3CssSelectorList]
 }

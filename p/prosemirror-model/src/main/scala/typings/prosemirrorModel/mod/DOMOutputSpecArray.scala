@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.prosemirrorModelNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMOutputSpecArray extends StObject {
   
-  var `0`: String = js.native
+  var `0`: String
   
-  var `1`: js.UndefOr[DOMOutputSpec | `0` | (StringDictionary[js.UndefOr[String | Null]])] = js.native
+  var `1`: js.UndefOr[DOMOutputSpec | `0` | (StringDictionary[js.UndefOr[String | Null]])] = js.undefined
   
-  var `2`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `2`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
   
-  var `3`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `3`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
   
-  var `4`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `4`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
   
-  var `5`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `5`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
   
-  var `6`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `6`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
   
-  var `7`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `7`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
   
-  var `8`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `8`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
   
-  var `9`: js.UndefOr[DOMOutputSpec | `0`] = js.native
+  var `9`: js.UndefOr[DOMOutputSpec | `0`] = js.undefined
 }
 object DOMOutputSpecArray {
   

@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.anon.Badge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object actionMod {
   
-  @JSImport("sdk/ui/button/action", "ActionButton")
+  @JSImport("sdk/ui/button/action", JSImport.Namespace)
   @js.native
-  def ActionButton(options: Badge): typings.jpm.FFAddonSDK.ActionButton = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ActionButton(options: Badge): typings.jpm.FFAddonSDK.ActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("ActionButton")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.ActionButton]
 }

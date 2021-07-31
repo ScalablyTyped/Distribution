@@ -5,25 +5,23 @@ import typings.arangodb.anon.SegmentThreshold
 import typings.arangodb.arangodbStrings.arangosearch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArangoSearchViewProperties extends StObject {
   
-  var cleanupIntervalStep: Double = js.native
+  var cleanupIntervalStep: Double
   
-  var consolidationIntervalMsec: Double = js.native
+  var consolidationIntervalMsec: Double
   
-  var consolidationPolicy: SegmentThreshold = js.native
+  var consolidationPolicy: SegmentThreshold
   
-  var id: String = js.native
+  var id: String
   
-  var links: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]] = js.native
+  var links: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: arangosearch = js.native
+  var `type`: arangosearch
 }
 object ArangoSearchViewProperties {
   
@@ -34,11 +32,10 @@ object ArangoSearchViewProperties {
     consolidationPolicy: SegmentThreshold,
     id: String,
     links: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]],
-    name: String,
-    `type`: arangosearch
+    name: String
   ): ArangoSearchViewProperties = {
     val __obj = js.Dynamic.literal(cleanupIntervalStep = cleanupIntervalStep.asInstanceOf[js.Any], consolidationIntervalMsec = consolidationIntervalMsec.asInstanceOf[js.Any], consolidationPolicy = consolidationPolicy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("arangosearch")
     __obj.asInstanceOf[ArangoSearchViewProperties]
   }
   

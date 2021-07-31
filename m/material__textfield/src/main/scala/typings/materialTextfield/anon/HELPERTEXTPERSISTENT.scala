@@ -2,17 +2,15 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HELPERTEXTPERSISTENT extends StObject {
   
-  var HELPER_TEXT_PERSISTENT: String = js.native
+  var HELPER_TEXT_PERSISTENT: String
   
-  var HELPER_TEXT_VALIDATION_MSG: String = js.native
+  var HELPER_TEXT_VALIDATION_MSG: String
   
-  var ROOT: String = js.native
+  var ROOT: String
 }
 object HELPERTEXTPERSISTENT {
   

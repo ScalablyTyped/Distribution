@@ -3,30 +3,28 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a list of Subnetwork resources.
   */
-@js.native
 trait SchemaSubnetworkList extends StObject {
   
   /**
     * [Output Only] Unique identifier for the resource; defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Subnetwork resources.
     */
-  var items: js.UndefOr[js.Array[SchemaSubnetwork]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSubnetwork]] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#subnetworkList for lists
     * of subnetworks.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] This token allows you to get the next page of results for
@@ -35,17 +33,17 @@ trait SchemaSubnetworkList extends StObject {
     * next list request. Subsequent list requests will have their own
     * nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaSubnetworkList {
   

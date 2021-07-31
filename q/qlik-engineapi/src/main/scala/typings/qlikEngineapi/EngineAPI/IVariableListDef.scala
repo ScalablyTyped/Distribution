@@ -2,34 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the list of variables in an app.
   */
-@js.native
 trait IVariableListDef extends StObject {
   
   /**
     * Data Type JSON
     */
-  var qData: js.Any = js.native
+  var qData: js.Any
   
   /**
     * Shows the system variables if set to true.
     */
-  var qShowConfig: Boolean = js.native
+  var qShowConfig: Boolean
   
   /**
     * Shows the reserved variables if set to true.
     */
-  var qShowReserved: Boolean = js.native
+  var qShowReserved: Boolean
   
   /**
     * Type of the list.
     */
-  var qType: String = js.native
+  var qType: String
 }
 object IVariableListDef {
   

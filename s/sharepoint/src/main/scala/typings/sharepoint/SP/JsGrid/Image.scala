@@ -4,25 +4,23 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /** Renders the image with specified alternative text and on-click handler.
     If bHideTooltip == false, then alternative text is also shown as the tooltip (title attribute). */
-  def Render(altText: String, clickFn: js.Function1[/* eventInfo */ DomEvent, Unit], bHideTooltip: Boolean): HTMLElement = js.native
+  def Render(altText: String, clickFn: js.Function1[/* eventInfo */ DomEvent, Unit], bHideTooltip: Boolean): HTMLElement
   
-  var bIsAnimated: Boolean = js.native
+  var bIsAnimated: Boolean
   
-  var bIsClustered: Boolean = js.native
+  var bIsClustered: Boolean
   
-  var imgCssNames: String = js.native
+  var imgCssNames: String
   
-  var imgSrc: String = js.native
+  var imgSrc: String
   
-  var optOuterCssNames: String = js.native
+  var optOuterCssNames: String
 }
 object Image {
   

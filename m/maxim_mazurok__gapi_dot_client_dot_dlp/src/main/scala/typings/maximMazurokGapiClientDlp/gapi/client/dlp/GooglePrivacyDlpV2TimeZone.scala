@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2TimeZone extends StObject {
   
   /** Set only if the offset can be determined. Positive for time ahead of UTC. E.g. For "UTC-9", this value is -540. */
-  var offsetMinutes: js.UndefOr[Double] = js.native
+  var offsetMinutes: js.UndefOr[Double] = js.undefined
 }
 object GooglePrivacyDlpV2TimeZone {
   

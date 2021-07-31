@@ -3,14 +3,12 @@ package typings.semanticUiSearch.anon
 import typings.semanticUiSearch.semanticUiSearchBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-search.SemanticUI.SearchSettings._Impl, 'source'> */
-@js.native
 trait PickImplsource extends StObject {
   
-  var source: `false` | js.Any = js.native
+  var source: `false` | js.Any
 }
 object PickImplsource {
   

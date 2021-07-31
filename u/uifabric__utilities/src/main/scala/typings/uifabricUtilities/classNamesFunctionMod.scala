@@ -5,43 +5,51 @@ import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classNamesFunctionMod {
   
-  @JSImport("@uifabric/utilities/lib/classNamesFunction", "classNamesFunction")
+  @JSImport("@uifabric/utilities/lib/classNamesFunction", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](): js.Function2[
     /* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
     /* styleProps */ js.UndefOr[TStyleProps], 
     IProcessedStyleSet[TStyleSet]
-  ] = js.native
-  @JSImport("@uifabric/utilities/lib/classNamesFunction", "classNamesFunction")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("classNamesFunction")().asInstanceOf[js.Function2[
+    /* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
+    /* styleProps */ js.UndefOr[TStyleProps], 
+    IProcessedStyleSet[TStyleSet]
+  ]]
+  @scala.inline
   def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](options: IClassNamesFunctionOptions): js.Function2[
     /* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
     /* styleProps */ js.UndefOr[TStyleProps], 
     IProcessedStyleSet[TStyleSet]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("classNamesFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
+    /* styleProps */ js.UndefOr[TStyleProps], 
+    IProcessedStyleSet[TStyleSet]
+  ]]
   
-  @js.native
   trait IClassNamesFunctionOptions extends StObject {
     
     /**
       * Size of the cache. It overwrites default cache size when defined.
       */
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Disables class caching for scenarios where styleProp parts mutate frequently.
       */
-    var disableCaching: js.UndefOr[Boolean] = js.native
+    var disableCaching: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true if component base styles are implemented in scss instead of css-in-js.
       */
-    var useStaticStyles: js.UndefOr[Boolean] = js.native
+    var useStaticStyles: js.UndefOr[Boolean] = js.undefined
   }
   object IClassNamesFunctionOptions {
     

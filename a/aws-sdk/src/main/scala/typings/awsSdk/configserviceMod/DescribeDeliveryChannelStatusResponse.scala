@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeliveryChannelStatusResponse extends StObject {
   
   /**
     * A list that contains the status of a specified delivery channel.
     */
-  var DeliveryChannelsStatus: js.UndefOr[DeliveryChannelStatusList] = js.native
+  var DeliveryChannelsStatus: js.UndefOr[DeliveryChannelStatusList] = js.undefined
 }
 object DescribeDeliveryChannelStatusResponse {
   

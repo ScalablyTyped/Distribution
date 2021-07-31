@@ -6,13 +6,15 @@ import typings.cssSelectorParser.selectorMod.RuleSet
 import typings.cssSelectorParser.selectorMod.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserContextMod {
   
-  @JSImport("css-selector-parser/lib/parser-context", "parseCssSelector")
+  @JSImport("css-selector-parser/lib/parser-context", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def parseCssSelector_true(
     str: String,
     pos: Double,
@@ -20,7 +22,7 @@ object parserContextMod {
     attrEqualityMods: StringDictionary[`true`],
     ruleNestingOperators: StringDictionary[`true`],
     substitutesEnabled: Boolean
-  ): Selectors | RuleSet | Null = js.native
+  ): Selectors | RuleSet | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCssSelector")(str.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], pseudos.asInstanceOf[js.Any], attrEqualityMods.asInstanceOf[js.Any], ruleNestingOperators.asInstanceOf[js.Any], substitutesEnabled.asInstanceOf[js.Any])).asInstanceOf[Selectors | RuleSet | Null]
   
   /* Rewritten from type alias, can be one of: 
     - typings.cssSelectorParser.cssSelectorParserStrings.numeric

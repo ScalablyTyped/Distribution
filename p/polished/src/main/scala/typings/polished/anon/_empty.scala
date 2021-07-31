@@ -2,11 +2,12 @@ package typings.polished.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _empty extends Infix {
+trait _empty
+  extends StObject
+     with Infix {
   
   @JSName("*")
   var Asterisk: RegSymbol = js.native

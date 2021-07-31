@@ -2,33 +2,31 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashXMLUI extends StObject {
   
-  def accept(): js.Any = js.native
+  def accept(): js.Any
   
-  def cancel(): js.Any = js.native
+  def cancel(): js.Any
   
-  def get(): js.Any = js.native
+  def get(): js.Any
   
-  def getControlItemElement(): js.Any = js.native
+  def getControlItemElement(): js.Any
   
-  def getEnabled(): js.Any = js.native
+  def getEnabled(): js.Any
   
-  def getVisible(): js.Any = js.native
+  def getVisible(): js.Any
   
-  def set(): js.Any = js.native
+  def set(): js.Any
   
-  def setControItemElement(): js.Any = js.native
+  def setControItemElement(): js.Any
   
-  def setControItemElements(): js.Any = js.native
+  def setControItemElements(): js.Any
   
-  def setEnabled(): js.Any = js.native
+  def setEnabled(): js.Any
   
-  def setVisible(): js.Any = js.native
+  def setVisible(): js.Any
 }
 object FlashXMLUI {
   

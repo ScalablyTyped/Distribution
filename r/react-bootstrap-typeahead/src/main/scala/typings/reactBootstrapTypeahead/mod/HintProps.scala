@@ -5,17 +5,15 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HintProps extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var shouldSelect: js.UndefOr[ShouldSelect] = js.native
+  var shouldSelect: js.UndefOr[ShouldSelect] = js.undefined
 }
 object HintProps {
   

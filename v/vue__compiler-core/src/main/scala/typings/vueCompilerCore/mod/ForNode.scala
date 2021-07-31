@@ -3,31 +3,30 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`11`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForNode
-  extends TemplateChildNode
+  extends StObject
      with Node2
-     with ParentNode2 {
+     with ParentNode2
+     with TemplateChildNode {
   
-  var children: js.Array[TemplateChildNode] = js.native
+  var children: js.Array[TemplateChildNode]
   
-  var codegenNode: js.UndefOr[ForCodegenNode] = js.native
+  var codegenNode: js.UndefOr[ForCodegenNode] = js.undefined
   
-  var keyAlias: js.UndefOr[ExpressionNode] = js.native
+  var keyAlias: js.UndefOr[ExpressionNode] = js.undefined
   
-  var objectIndexAlias: js.UndefOr[ExpressionNode] = js.native
+  var objectIndexAlias: js.UndefOr[ExpressionNode] = js.undefined
   
-  var parseResult: ForParseResult = js.native
+  var parseResult: ForParseResult
   
-  var source: ExpressionNode = js.native
+  var source: ExpressionNode
   
   @JSName("type")
-  var type_ForNode: `11` = js.native
+  var type_ForNode: `11`
   
-  var valueAlias: js.UndefOr[ExpressionNode] = js.native
+  var valueAlias: js.UndefOr[ExpressionNode] = js.undefined
 }
 object ForNode {
   
@@ -36,11 +35,10 @@ object ForNode {
     children: js.Array[TemplateChildNode],
     loc: SourceLocation,
     parseResult: ForParseResult,
-    source: ExpressionNode,
-    `type`: `11`
+    source: ExpressionNode
   ): ForNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], parseResult = parseResult.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(11)
     __obj.asInstanceOf[ForNode]
   }
   

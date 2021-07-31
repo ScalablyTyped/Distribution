@@ -2,17 +2,15 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjFacetValue extends StObject {
   
-  def count(): Double = js.native
+  def count(): Double
   
-  def includedObjs(): js.Array[Obj] = js.native
+  def includedObjs(): js.Array[Obj]
   
-  def name(): String = js.native
+  def name(): String
 }
 object ObjFacetValue {
   

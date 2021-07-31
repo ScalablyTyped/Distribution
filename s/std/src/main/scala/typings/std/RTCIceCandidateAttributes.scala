@@ -2,23 +2,23 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCIceCandidateAttributes extends RTCStats {
+trait RTCIceCandidateAttributes
+  extends StObject
+     with RTCStats {
   
-  var addressSourceUrl: js.UndefOr[java.lang.String] = js.native
+  var addressSourceUrl: js.UndefOr[java.lang.String] = js.undefined
   
-  var candidateType: js.UndefOr[RTCStatsIceCandidateType] = js.native
+  var candidateType: js.UndefOr[RTCStatsIceCandidateType] = js.undefined
   
-  var ipAddress: js.UndefOr[java.lang.String] = js.native
+  var ipAddress: js.UndefOr[java.lang.String] = js.undefined
   
-  var portNumber: js.UndefOr[Double] = js.native
+  var portNumber: js.UndefOr[Double] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var transport: js.UndefOr[java.lang.String] = js.native
+  var transport: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCIceCandidateAttributes {
   

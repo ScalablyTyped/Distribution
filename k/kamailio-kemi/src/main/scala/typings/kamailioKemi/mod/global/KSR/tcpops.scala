@@ -2,48 +2,41 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tcpops {
   
-  @JSGlobal("KSR.tcpops.tcp_conid_alive")
+  @JSGlobal("KSR.tcpops")
   @js.native
-  def tcpConidAlive(i_conid: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.tcpops.tcp_conid_state")
-  @js.native
-  def tcpConidState(i_conid: Double): Double = js.native
+  @scala.inline
+  def tcpConidAlive(i_conid: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp_conid_alive")(i_conid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_enable_closed_event")
-  @js.native
-  def tcpEnableClosedEvent(): Double = js.native
+  @scala.inline
+  def tcpConidState(i_conid: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp_conid_state")(i_conid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_enable_closed_event_cid")
-  @js.native
-  def tcpEnableClosedEventCid(i_conid: Double): Double = js.native
+  @scala.inline
+  def tcpEnableClosedEvent(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp_enable_closed_event")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_keepalive_disable")
-  @js.native
-  def tcpKeepaliveDisable(): Double = js.native
+  @scala.inline
+  def tcpEnableClosedEventCid(i_conid: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp_enable_closed_event_cid")(i_conid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_keepalive_disable_cid")
-  @js.native
-  def tcpKeepaliveDisableCid(i_con: Double): Double = js.native
+  @scala.inline
+  def tcpKeepaliveDisable(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp_keepalive_disable")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_keepalive_enable")
-  @js.native
-  def tcpKeepaliveEnable(i_idle: Double, i_cnt: Double, i_intvl: Double): Double = js.native
+  @scala.inline
+  def tcpKeepaliveDisableCid(i_con: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp_keepalive_disable_cid")(i_con.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_keepalive_enable_cid")
-  @js.native
-  def tcpKeepaliveEnableCid(i_con: Double, i_idle: Double, i_cnt: Double, i_intvl: Double): Double = js.native
+  @scala.inline
+  def tcpKeepaliveEnable(i_idle: Double, i_cnt: Double, i_intvl: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tcp_keepalive_enable")(i_idle.asInstanceOf[js.Any], i_cnt.asInstanceOf[js.Any], i_intvl.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_set_connection_lifetime")
-  @js.native
-  def tcpSetConnectionLifetime(i_time: Double): Double = js.native
+  @scala.inline
+  def tcpKeepaliveEnableCid(i_con: Double, i_idle: Double, i_cnt: Double, i_intvl: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tcp_keepalive_enable_cid")(i_con.asInstanceOf[js.Any], i_idle.asInstanceOf[js.Any], i_cnt.asInstanceOf[js.Any], i_intvl.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.tcpops.tcp_set_connection_lifetime_cid")
-  @js.native
-  def tcpSetConnectionLifetimeCid(i_conid: Double, i_time: Double): Double = js.native
+  @scala.inline
+  def tcpSetConnectionLifetime(i_time: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp_set_connection_lifetime")(i_time.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def tcpSetConnectionLifetimeCid(i_conid: Double, i_time: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tcp_set_connection_lifetime_cid")(i_conid.asInstanceOf[js.Any], i_time.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

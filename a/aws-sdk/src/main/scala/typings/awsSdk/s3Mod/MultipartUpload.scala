@@ -2,41 +2,39 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipartUpload extends StObject {
   
   /**
     * Date and time at which the multipart upload was initiated.
     */
-  var Initiated: js.UndefOr[typings.awsSdk.s3Mod.Initiated] = js.native
+  var Initiated: js.UndefOr[typings.awsSdk.s3Mod.Initiated] = js.undefined
   
   /**
     * Identifies who initiated the multipart upload.
     */
-  var Initiator: js.UndefOr[typings.awsSdk.s3Mod.Initiator] = js.native
+  var Initiator: js.UndefOr[typings.awsSdk.s3Mod.Initiator] = js.undefined
   
   /**
     * Key of the object for which the multipart upload was initiated.
     */
-  var Key: js.UndefOr[ObjectKey] = js.native
+  var Key: js.UndefOr[ObjectKey] = js.undefined
   
   /**
     * Specifies the owner of the object that is part of the multipart upload. 
     */
-  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.undefined
   
   /**
     * The class of storage used to store the object.
     */
-  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
+  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.undefined
   
   /**
     * Upload ID that identifies the multipart upload.
     */
-  var UploadId: js.UndefOr[MultipartUploadId] = js.native
+  var UploadId: js.UndefOr[MultipartUploadId] = js.undefined
 }
 object MultipartUpload {
   

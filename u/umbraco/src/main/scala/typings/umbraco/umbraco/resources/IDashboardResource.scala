@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.resources
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.resources.dashboardResource
   * @description Handles loading the dashboard manifest
   **/
-@js.native
 trait IDashboardResource extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait IDashboardResource extends StObject {
     * @returns {Promise} resourcePromise object containing the user array.
     *
     */
-  def getDashboard(section: String): IPromise[IResourcePromise] = js.native
+  def getDashboard(section: String): IPromise[IResourcePromise]
 }
 object IDashboardResource {
   

@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreDatabaseFileInfo extends StObject {
   
-  var fileType: String = js.native
+  var fileType: String
   
-  var logicalFileName: String = js.native
+  var logicalFileName: String
   
-  var originalFileName: String = js.native
+  var originalFileName: String
   
-  var restoreAsFileName: String = js.native
+  var restoreAsFileName: String
 }
 object RestoreDatabaseFileInfo {
   

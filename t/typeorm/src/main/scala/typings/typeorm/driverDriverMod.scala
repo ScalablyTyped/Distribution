@@ -14,7 +14,6 @@ import typings.typeorm.typesMappedColumnTypesMod.MappedColumnTypes
 import typings.typeorm.typesReplicationModeMod.ReplicationMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driverDriverMod {
@@ -32,9 +31,9 @@ object driverDriverMod {
       * E.g. "myDB"."mySchema"."myTable"
       */
     def buildTableName(tableName: String): String = js.native
-    def buildTableName(tableName: String, schema: js.UndefOr[scala.Nothing], database: String): String = js.native
     def buildTableName(tableName: String, schema: String): String = js.native
     def buildTableName(tableName: String, schema: String, database: String): String = js.native
+    def buildTableName(tableName: String, schema: Unit, database: String): String = js.native
     
     /**
       * Performs connection to the database.
@@ -51,14 +50,9 @@ object driverDriverMod {
       * Creates generated map of values generated or returned by database after INSERT query.
       */
     def createGeneratedMap(metadata: EntityMetadata, insertResult: js.Any): js.UndefOr[ObjectLiteral] = js.native
-    def createGeneratedMap(
-      metadata: EntityMetadata,
-      insertResult: js.Any,
-      entityIndex: js.UndefOr[scala.Nothing],
-      entityNum: Double
-    ): js.UndefOr[ObjectLiteral] = js.native
     def createGeneratedMap(metadata: EntityMetadata, insertResult: js.Any, entityIndex: Double): js.UndefOr[ObjectLiteral] = js.native
     def createGeneratedMap(metadata: EntityMetadata, insertResult: js.Any, entityIndex: Double, entityNum: Double): js.UndefOr[ObjectLiteral] = js.native
+    def createGeneratedMap(metadata: EntityMetadata, insertResult: js.Any, entityIndex: Unit, entityNum: Double): js.UndefOr[ObjectLiteral] = js.native
     
     /**
       * Creates an escaped parameter.
@@ -104,7 +98,7 @@ object driverDriverMod {
       * Replaces parameters in the given sql with special escaping character
       * and an array of parameter names to be passed to a query.
       */
-    def escapeQueryWithParameters(sql: String, parameters: ObjectLiteral, nativeParameters: ObjectLiteral): js.Tuple2[String, js.Array[_]] = js.native
+    def escapeQueryWithParameters(sql: String, parameters: ObjectLiteral, nativeParameters: ObjectLiteral): js.Tuple2[String, js.Array[js.Any]] = js.native
     
     /**
       * Differentiate columns of this table and columns from the given column metadatas columns
@@ -168,14 +162,14 @@ object driverDriverMod {
       * Used for replication.
       * If replication is not setup then returns default connection's database connection.
       */
-    def obtainMasterConnection(): js.Promise[_] = js.native
+    def obtainMasterConnection(): js.Promise[js.Any] = js.native
     
     /**
       * Obtains a new database connection to a slave server.
       * Used for replication.
       * If replication is not setup then returns master (default) connection's database connection.
       */
-    def obtainSlaveConnection(): js.Promise[_] = js.native
+    def obtainSlaveConnection(): js.Promise[js.Any] = js.native
     
     /**
       * Connection options.

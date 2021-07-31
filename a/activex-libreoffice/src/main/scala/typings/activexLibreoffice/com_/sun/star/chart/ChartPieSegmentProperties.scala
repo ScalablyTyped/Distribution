@@ -26,15 +26,15 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies all the properties for the graphic object of a pie segment.
   * @see PieDiagram
   */
-@js.native
-trait ChartPieSegmentProperties extends ChartDataPointProperties
+trait ChartPieSegmentProperties
+  extends StObject
+     with ChartDataPointProperties
 object ChartPieSegmentProperties {
   
   @scala.inline

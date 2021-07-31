@@ -2,15 +2,13 @@ package typings.reactVirtualized.esGridMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisibleCellRange extends StObject {
   
-  var start: Double = js.native
+  var start: Double
   
-  var stop: Double = js.native
+  var stop: Double
 }
 object VisibleCellRange {
   

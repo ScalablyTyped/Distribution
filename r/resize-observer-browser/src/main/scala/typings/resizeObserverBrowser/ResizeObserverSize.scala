@@ -2,15 +2,13 @@ package typings.resizeObserverBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizeObserverSize extends StObject {
   
-  val blockSize: Double = js.native
+  val blockSize: Double
   
-  val inlineSize: Double = js.native
+  val inlineSize: Double
 }
 object ResizeObserverSize {
   

@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object presetMod {
@@ -83,6 +82,10 @@ object presetMod {
   /* static members */
   object Preset {
     
+    @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Preset resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,72 +95,66 @@ object presetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Preset = js.native
-    @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Preset = js.native
-    @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PresetState): Preset = js.native
-    @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): Preset = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Preset]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Preset]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PresetState): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Preset]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): Preset = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Preset]
     
     /**
       * Returns true if the given object is an instance of Preset.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/preset.Preset */ Boolean]
   }
   
-  @js.native
   trait PresetArgs extends StObject {
     
     /**
       * Audio parameters object (documented below).
       */
-    val audio: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]] = js.native
+    val audio: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]] = js.undefined
     
     /**
       * Codec options for the audio parameters (documented below)
       */
-    val audioCodecOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]] = js.native
+    val audioCodecOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]] = js.undefined
     
     /**
       * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
       */
-    val container: Input[String] = js.native
+    val container: Input[String]
     
     /**
       * A description of the preset (maximum 255 characters)
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the preset. (maximum 40 characters)
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Thumbnail parameters object (documented below)
       */
-    val thumbnails: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]] = js.native
+    val thumbnails: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]] = js.undefined
     
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Video parameters object (documented below)
       */
-    val video: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]] = js.native
+    val video: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]] = js.undefined
     
     /**
       * Codec options for the video parameters
       */
-    val videoCodecOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val videoCodecOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Watermark parameters for the video parameters (documented below)
@@ -166,7 +163,7 @@ object presetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PresetArgs {
     
@@ -245,52 +242,51 @@ object presetMod {
     }
   }
   
-  @js.native
   trait PresetState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Audio parameters object (documented below).
       */
-    val audio: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]] = js.native
+    val audio: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudio]] = js.undefined
     
     /**
       * Codec options for the audio parameters (documented below)
       */
-    val audioCodecOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]] = js.native
+    val audioCodecOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetAudioCodecOptions]] = js.undefined
     
     /**
       * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
       */
-    val container: js.UndefOr[Input[String]] = js.native
+    val container: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the preset (maximum 255 characters)
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the preset. (maximum 40 characters)
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Thumbnail parameters object (documented below)
       */
-    val thumbnails: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]] = js.native
+    val thumbnails: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetThumbnails]] = js.undefined
     
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Video parameters object (documented below)
       */
-    val video: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]] = js.native
+    val video: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideo]] = js.undefined
     
     /**
       * Codec options for the video parameters
       */
-    val videoCodecOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val videoCodecOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Watermark parameters for the video parameters (documented below)
@@ -299,7 +295,7 @@ object presetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elastictranscoder.PresetVideoWatermark]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PresetState {
     

@@ -5,14 +5,14 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebRequestDetails extends ResourceRequest {
+trait WebRequestDetails
+  extends StObject
+     with ResourceRequest {
   
   /** Standard HTTP method. */
-  var method: String = js.native
+  var method: String
 }
 object WebRequestDetails {
   

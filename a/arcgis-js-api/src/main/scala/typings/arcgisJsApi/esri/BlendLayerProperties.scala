@@ -32,10 +32,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlendLayerProperties extends StObject {
   
   /**
@@ -45,7 +43,7 @@ trait BlendLayerProperties extends StObject {
     */
   var blendMode: js.UndefOr[
     average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor
-  ] = js.native
+  ] = js.undefined
 }
 object BlendLayerProperties {
   

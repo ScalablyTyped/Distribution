@@ -2,13 +2,13 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoveSavedFileArgs extends AsyncCallback[Unit] {
+trait RemoveSavedFileArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
-  var apFilePath: String = js.native
+  var apFilePath: String
 }
 object RemoveSavedFileArgs {
   

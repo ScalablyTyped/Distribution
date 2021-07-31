@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDescribeSimulationJobResponse extends StObject {
   
   /**
     * A list of simulation jobs.
     */
-  var jobs: js.UndefOr[SimulationJobs] = js.native
+  var jobs: js.UndefOr[SimulationJobs] = js.undefined
   
   /**
     * A list of unprocessed simulation job Amazon Resource Names (ARNs).
     */
-  var unprocessedJobs: js.UndefOr[Arns] = js.native
+  var unprocessedJobs: js.UndefOr[Arns] = js.undefined
 }
 object BatchDescribeSimulationJobResponse {
   

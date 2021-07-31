@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVisibleSizeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `91` extends StObject {
   
-  var paramsType: js.Array[SetVisibleSizeRequest] = js.native
+  var paramsType: js.Array[SetVisibleSizeRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `91` {
   

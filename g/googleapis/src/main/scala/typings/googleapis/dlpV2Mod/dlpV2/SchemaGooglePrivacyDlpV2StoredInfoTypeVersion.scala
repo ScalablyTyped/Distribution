@@ -2,26 +2,24 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Version of a StoredInfoType, including the configuration used to build it,
   * create timestamp, and current state.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2StoredInfoTypeVersion extends StObject {
   
   /**
     * StoredInfoType configuration.
     */
-  var config: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeConfig] = js.native
+  var config: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeConfig] = js.undefined
   
   /**
     * Create timestamp of the version. Read-only, determined by the system when
     * the version is created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Errors that occurred when creating this storedInfoType version, or
@@ -36,13 +34,13 @@ trait SchemaGooglePrivacyDlpV2StoredInfoTypeVersion extends StObject {
     * using it, reusing the same `config` if it was not the source of the
     * error.
     */
-  var errors: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Error]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Error]] = js.undefined
   
   /**
     * Stored info type version state. Read-only, updated by the system during
     * dictionary creation.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2StoredInfoTypeVersion {
   

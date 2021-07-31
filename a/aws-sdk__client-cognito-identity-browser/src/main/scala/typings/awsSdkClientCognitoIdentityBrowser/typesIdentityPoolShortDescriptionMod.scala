@@ -2,23 +2,21 @@ package typings.awsSdkClientCognitoIdentityBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesIdentityPoolShortDescriptionMod {
   
-  @js.native
   trait IdentityPoolShortDescription extends StObject {
     
     /**
       * <p>An identity pool ID in the format REGION:GUID.</p>
       */
-    var IdentityPoolId: js.UndefOr[String] = js.native
+    var IdentityPoolId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A string that you provide.</p>
       */
-    var IdentityPoolName: js.UndefOr[String] = js.native
+    var IdentityPoolName: js.UndefOr[String] = js.undefined
   }
   object IdentityPoolShortDescription {
     

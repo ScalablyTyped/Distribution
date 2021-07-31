@@ -3,26 +3,24 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The network endpoint.
   */
-@js.native
 trait SchemaNetworkEndpoint extends StObject {
   
   /**
     * Metadata defined as annotations on the network endpoint.
     */
-  var annotations: js.UndefOr[StringDictionary[String]] = js.native
+  var annotations: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional fully qualified domain name of network endpoint. This can only
     * be specified when NetworkEndpointGroup.network_endpoint_type is
     * NON_GCP_FQDN_PORT.
     */
-  var fqdn: js.UndefOr[String] = js.native
+  var fqdn: js.UndefOr[String] = js.undefined
   
   /**
     * The name for a specific VM instance that the IP address belongs to. This
@@ -30,7 +28,7 @@ trait SchemaNetworkEndpoint extends StObject {
     * must be in the same zone of network endpoint group.  The name must be
     * 1-63 characters long, and comply with RFC1035.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * Optional IPv4 address of network endpoint. The IP address must belong to
@@ -39,14 +37,14 @@ trait SchemaNetworkEndpoint extends StObject {
     * instance in the network that the network endpoint group belongs to will
     * be used.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Optional port number of network endpoint. If not specified and the
     * NetworkEndpointGroup.network_endpoint_type is GCE_IP_PORT, the
     * defaultPort for the network endpoint group will be used.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object SchemaNetworkEndpoint {
   

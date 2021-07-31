@@ -3,26 +3,25 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.strong
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Strong
-  extends Parent
+  extends StObject
+     with Parent
      with StaticPhrasingContent {
   
   @JSName("children")
-  var children_Strong: js.Array[PhrasingContent] = js.native
+  var children_Strong: js.Array[PhrasingContent]
   
   @JSName("type")
-  var type_Strong: strong = js.native
+  var type_Strong: strong
 }
 object Strong {
   
   @scala.inline
-  def apply(children: js.Array[PhrasingContent], `type`: strong): Strong = {
+  def apply(children: js.Array[PhrasingContent]): Strong = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("strong")
     __obj.asInstanceOf[Strong]
   }
   

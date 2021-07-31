@@ -4,30 +4,29 @@ import typings.speedtestNet.speedtestNetStrings.download
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadEvent
-  extends BaseEvent
+  extends StObject
+     with BaseEvent
      with SpeedTestEvent {
   
-  var download: DownloadUploadData = js.native
+  var download: DownloadUploadData
   
   /** Indicates the overall progress of the test as a fraction (0 to 1). */
-  var progress: Double = js.native
+  var progress: Double
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   @JSName("type")
-  var type_DownloadEvent: download = js.native
+  var type_DownloadEvent: download
 }
 object DownloadEvent {
   
   @scala.inline
-  def apply(download: DownloadUploadData, progress: Double, timestamp: Date, `type`: download): DownloadEvent = {
+  def apply(download: DownloadUploadData, progress: Double, timestamp: Date): DownloadEvent = {
     val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("download")
     __obj.asInstanceOf[DownloadEvent]
   }
   

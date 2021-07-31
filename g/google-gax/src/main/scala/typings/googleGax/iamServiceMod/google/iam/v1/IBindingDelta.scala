@@ -4,24 +4,22 @@ import typings.googleGax.iamServiceMod.google.`type`.IExpr
 import typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a BindingDelta. */
-@js.native
 trait IBindingDelta extends StObject {
   
   /** BindingDelta action */
-  var action: js.UndefOr[Action | Null] = js.native
+  var action: js.UndefOr[Action | Null] = js.undefined
   
   /** BindingDelta condition */
-  var condition: js.UndefOr[IExpr | Null] = js.native
+  var condition: js.UndefOr[IExpr | Null] = js.undefined
   
   /** BindingDelta member */
-  var member: js.UndefOr[String | Null] = js.native
+  var member: js.UndefOr[String | Null] = js.undefined
   
   /** BindingDelta role */
-  var role: js.UndefOr[String | Null] = js.native
+  var role: js.UndefOr[String | Null] = js.undefined
 }
 object IBindingDelta {
   

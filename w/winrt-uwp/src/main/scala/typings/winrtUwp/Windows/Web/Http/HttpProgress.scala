@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Web.Http
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains status information on the progress of an HttpClient operation. */
-@js.native
 trait HttpProgress extends StObject {
   
   /** The total number of bytes received. */
-  var bytesReceived: Double = js.native
+  var bytesReceived: Double
   
   /** The total number of bytes sent. */
-  var bytesSent: Double = js.native
+  var bytesSent: Double
   
   /** The number of retries. */
-  var retries: Double = js.native
+  var retries: Double
   
   /** The step in the progress of an HTTP connection. */
-  var stage: HttpProgressStage = js.native
+  var stage: HttpProgressStage
   
   /** The total number of data bytes to receive. */
-  var totalBytesToReceive: Double = js.native
+  var totalBytesToReceive: Double
   
   /** The total number of data bytes to send. */
-  var totalBytesToSend: Double = js.native
+  var totalBytesToSend: Double
 }
 object HttpProgress {
   

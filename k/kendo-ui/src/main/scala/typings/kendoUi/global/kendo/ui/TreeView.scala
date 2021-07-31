@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.TreeViewOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.TreeView")
 @js.native
 class TreeView protected ()
-  extends typings.kendoUi.kendo.ui.TreeView {
+  extends StObject
+     with typings.kendoUi.kendo.ui.TreeView {
   def this(element: Element) = this()
   def this(element: Element, options: TreeViewOptions) = this()
 }
@@ -21,9 +21,8 @@ object TreeView {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.TreeView.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TreeView = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TreeView = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TreeView]
   
   /* static member */
   @JSGlobal("kendo.ui.TreeView.fn")

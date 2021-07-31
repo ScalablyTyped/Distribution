@@ -7,7 +7,6 @@ import typings.wordpressCustomizeBrowser.notificationMod.Notification
 import typings.wordpressCustomizeBrowser.valuesMod.Values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsMod {
@@ -31,10 +30,9 @@ object notificationsMod {
     def render(): Unit = js.native
   }
   
-  @js.native
   trait NotificationsGetOptions extends StObject {
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
   }
   object NotificationsGetOptions {
     
@@ -55,12 +53,11 @@ object notificationsMod {
     }
   }
   
-  @js.native
   trait NotificationsOptions extends StObject {
     
-    var alt: js.UndefOr[Boolean] = js.native
+    var alt: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[JQuery[HTMLElement]] = js.native
+    var container: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   }
   object NotificationsOptions {
     

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContent
   * @version 1.0
   */
-@js.native
-trait XCommandProcessor extends XInterface {
+trait XCommandProcessor
+  extends StObject
+     with XInterface {
   
   /**
     * ends the command associated with the given id.
@@ -26,7 +26,7 @@ trait XCommandProcessor extends XInterface {
     * simply do nothing.
     * @param CommandId is a unique id for the command to abort. This must be the identifier passed to {@link XCommandProcessor.execute()} for the command to abort.
     */
-  def abort(CommandId: Double): Unit = js.native
+  def abort(CommandId: Double): Unit
   
   /**
     * creates a unique identifier for a command.
@@ -42,7 +42,7 @@ trait XCommandProcessor extends XInterface {
     * no longer used.
     * @returns a command identifier.
     */
-  def createCommandIdentifier(): Double = js.native
+  def createCommandIdentifier(): Double
   
   /**
     * executes a command.
@@ -56,7 +56,7 @@ trait XCommandProcessor extends XInterface {
     * @throws DuplicateCommandIdentifierException to indicate that two threads tried to use the same command identifier
     * @throws Exception if an error occurred during the execution of the command.
     */
-  def execute(aCommand: Command, CommandId: Double, Environment: XCommandEnvironment): js.Any = js.native
+  def execute(aCommand: Command, CommandId: Double, Environment: XCommandEnvironment): js.Any
 }
 object XCommandProcessor {
   

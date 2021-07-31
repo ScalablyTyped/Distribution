@@ -7,7 +7,6 @@ import typings.qIo.QioFS.Stats
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -22,7 +21,7 @@ object anon {
     def append(path: String, content: Buffer): Promise[Unit] = js.native
     def append(path: String, content: Buffer, options: js.Any): Promise[Unit] = js.native
     
-    def base(path: String, extension: String): String = js.native
+    def base(path: String, `extension`: String): String = js.native
     
     def canonical(path: String): Promise[String] = js.native
     
@@ -42,7 +41,7 @@ object anon {
     
     def exists(path: String): Promise[Boolean] = js.native
     
-    def extension(path: String): String = js.native
+    def `extension`(path: String): String = js.native
     
     def isAbsolute(path: String): Boolean = js.native
     
@@ -85,11 +84,11 @@ object anon {
     def normal(path: String*): String = js.native
     def normal(paths: js.Array[String]): String = js.native
     
-    def open(path: String): Promise[_] = js.native
-    def open(path: String, options: js.Any): Promise[_] = js.native
+    def open(path: String): Promise[js.Any] = js.native
+    def open(path: String, options: js.Any): Promise[js.Any] = js.native
     
-    def read(path: String): Promise[_] = js.native
-    def read(path: String, options: js.Any): Promise[_] = js.native
+    def read(path: String): Promise[js.Any] = js.native
+    def read(path: String, options: js.Any): Promise[js.Any] = js.native
     
     def readLink(path: String): Promise[String] = js.native
     

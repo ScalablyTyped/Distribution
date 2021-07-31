@@ -5,7 +5,6 @@ import typings.wordpressCoreData.anon.TypeofimportedSelectors
 import typings.wordpressCoreData.wordpressCoreDataStrings.core
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,20 +12,21 @@ object mod {
   /* augmented module */
   object wordpressDataAugmentingMod {
     
-    @JSImport("@wordpress/data", "dispatch")
+    @JSImport("@wordpress/data", JSImport.Namespace)
     @js.native
-    def dispatch_core(key: core): TypeofimportedActions = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/data", "select")
-    @js.native
-    def select_core(key: core): TypeofimportedSelectors = js.native
+    @scala.inline
+    def dispatch_core(key: core): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    
+    @scala.inline
+    def select_core(key: core): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'edit' extends 'embed' ? std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'>, @wordpress/api-fetch.@wordpress/api-fetch.Schema.EmbedKeys.PostRevision> : 'edit' extends 'view' ? std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'>, @wordpress/api-fetch.@wordpress/api-fetch.Schema.ViewKeys.PostRevision> : @wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'> */ @js.native
-  trait Autosave extends StObject {
+  - Dropped 'edit' extends 'embed' ? std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'>, @wordpress/api-fetch.@wordpress/api-fetch.Schema.EmbedKeys.PostRevision> : 'edit' extends 'view' ? std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'>, @wordpress/api-fetch.@wordpress/api-fetch.Schema.ViewKeys.PostRevision> : @wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'> */ trait Autosave extends StObject {
     
-    var preview_link: String = js.native
+    var preview_link: String
   }
   object Autosave {
     
@@ -44,18 +44,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Entity extends StObject {
     
-    var baseURL: String = js.native
+    var baseURL: String
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    var plural: js.UndefOr[String] = js.native
+    var plural: js.UndefOr[String] = js.undefined
   }
   object Entity {
     

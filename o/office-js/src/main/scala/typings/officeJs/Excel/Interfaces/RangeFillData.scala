@@ -24,11 +24,9 @@ import typings.officeJs.officeJsStrings.Up
 import typings.officeJs.officeJsStrings.Vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeFill.toJSON()`. */
-@js.native
 trait RangeFillData extends StObject {
   
   /**
@@ -37,7 +35,7 @@ trait RangeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait RangeFillData extends StObject {
     */
   var pattern: js.UndefOr[
     FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait RangeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var patternColor: js.UndefOr[String] = js.native
+  var patternColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait RangeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var patternTintAndShade: js.UndefOr[Double] = js.native
+  var patternTintAndShade: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait RangeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[Double] = js.native
+  var tintAndShade: js.UndefOr[Double] = js.undefined
 }
 object RangeFillData {
   

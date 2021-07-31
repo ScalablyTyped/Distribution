@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
   /** A condition that checks that a time series continues to receive new data points. */
-  var conditionAbsent: js.UndefOr[MetricAbsence] = js.native
+  var conditionAbsent: js.UndefOr[MetricAbsence] = js.undefined
   
   /** A condition that uses the Monitoring Query Language to define alerts. */
-  var conditionMonitoringQueryLanguage: js.UndefOr[MonitoringQueryLanguageCondition] = js.native
+  var conditionMonitoringQueryLanguage: js.UndefOr[MonitoringQueryLanguageCondition] = js.undefined
   
   /** A condition that compares a time series against a threshold. */
-  var conditionThreshold: js.UndefOr[MetricThreshold] = js.native
+  var conditionThreshold: js.UndefOr[MetricThreshold] = js.undefined
   
   /**
     * A short name or phrase used to identify the condition in dashboards, notifications, and incidents. To avoid confusion, don't use the same display name for multiple conditions in the
     * same policy.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required if the condition exists. The unique resource name for this condition. Its format is: projects/[PROJECT_ID_OR_NUMBER]/alertPolicies/[POLICY_ID]/conditions/[CONDITION_ID]
@@ -31,7 +29,7 @@ trait Condition extends StObject {
     * Existing conditions are deleted if they are not updated.Best practice is to preserve [CONDITION_ID] if you make only small changes, such as those to condition thresholds, durations,
     * or trigger values. Otherwise, treat the change as a new condition and let the existing condition be deleted.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Condition {
   

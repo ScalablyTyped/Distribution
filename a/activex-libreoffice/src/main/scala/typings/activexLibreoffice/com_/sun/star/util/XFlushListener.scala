@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive **flushed** events. */
-@js.native
-trait XFlushListener extends XEventListener {
+trait XFlushListener
+  extends StObject
+     with XEventListener {
   
   /** is called when the object data is flushed. */
-  def flushed(rEvent: EventObject): Unit = js.native
+  def flushed(rEvent: EventObject): Unit
 }
 object XFlushListener {
   

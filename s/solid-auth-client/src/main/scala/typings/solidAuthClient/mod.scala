@@ -8,7 +8,6 @@ import typings.std.Response
 import typings.std.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,14 +16,13 @@ object mod extends Shortcut {
   @js.native
   val default: SolidAuthClient = js.native
   
-  @js.native
   trait AsyncStorage extends StObject {
     
-    def getItem(key: String): js.Promise[js.UndefOr[String]] = js.native
+    def getItem(key: String): js.Promise[js.UndefOr[String]]
     
-    def removeItem(key: String): js.Promise[Unit] = js.native
+    def removeItem(key: String): js.Promise[Unit]
     
-    def setItem(key: String, value: String): js.Promise[Unit] = js.native
+    def setItem(key: String, value: String): js.Promise[Unit]
   }
   object AsyncStorage {
     
@@ -52,14 +50,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait LoginOptions extends StObject {
     
-    var callbackUri: js.UndefOr[String] = js.native
+    var callbackUri: js.UndefOr[String] = js.undefined
     
-    var popupUri: js.UndefOr[String] = js.native
+    var popupUri: js.UndefOr[String] = js.undefined
     
-    var storage: js.UndefOr[Storage | AsyncStorage] = js.native
+    var storage: js.UndefOr[Storage | AsyncStorage] = js.undefined
   }
   object LoginOptions {
     
@@ -92,10 +89,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Session extends StObject {
     
-    var webId: String = js.native
+    var webId: String
   }
   object Session {
     

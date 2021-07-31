@@ -2,23 +2,21 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait R3DependencyMetadataFacade extends StObject {
   
-  var host: Boolean = js.native
+  var host: Boolean
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var resolved: R3ResolvedDependencyType = js.native
+  var resolved: R3ResolvedDependencyType
   
-  var self: Boolean = js.native
+  var self: Boolean
   
-  var skipSelf: Boolean = js.native
+  var skipSelf: Boolean
   
-  var token: js.Any = js.native
+  var token: js.Any
 }
 object R3DependencyMetadataFacade {
   

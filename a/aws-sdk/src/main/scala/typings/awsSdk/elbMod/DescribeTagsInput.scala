@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsInput extends StObject {
   
   /**
     * The names of the load balancers.
     */
-  var LoadBalancerNames: LoadBalancerNamesMax20 = js.native
+  var LoadBalancerNames: LoadBalancerNamesMax20
 }
 object DescribeTagsInput {
   

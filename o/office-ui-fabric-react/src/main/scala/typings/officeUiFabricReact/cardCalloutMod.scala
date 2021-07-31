@@ -4,22 +4,24 @@ import typings.officeUiFabricReact.baseCardTypesMod.IBaseCardProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardCalloutMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/HoverCard/CardCallout/CardCallout", "CardCallout")
+  @JSImport("office-ui-fabric-react/lib/components/HoverCard/CardCallout/CardCallout", JSImport.Namespace)
   @js.native
-  def CardCallout(props: ICardCalloutProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def CardCallout(props: ICardCalloutProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardCallout")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait ICardCalloutProps
-    extends IBaseCardProps[js.Object, js.Object, js.Object] {
+    extends StObject
+       with IBaseCardProps[js.Object, js.Object, js.Object] {
     
-    var content: js.UndefOr[Element] = js.native
+    var content: js.UndefOr[Element] = js.undefined
     
-    var finalHeight: js.UndefOr[Double] = js.native
+    var finalHeight: js.UndefOr[Double] = js.undefined
   }
   object ICardCalloutProps {
     

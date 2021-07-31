@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of exclude infoTypes.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ExcludeInfoTypes extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2ExcludeInfoTypes extends StObject {
     * That leads to &quot;555-222-2222@example.org&quot; to generate only a
     * single finding, namely email address.
     */
-  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.native
+  var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ExcludeInfoTypes {
   

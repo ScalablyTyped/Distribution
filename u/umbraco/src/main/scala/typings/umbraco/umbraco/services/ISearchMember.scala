@@ -2,26 +2,24 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Search members
   */
-@js.native
 trait ISearchMember extends StObject {
   
-  var editorPath: String = js.native
+  var editorPath: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var menuUrl: String = js.native
+  var menuUrl: String
   
-  var metaData: js.Object = js.native
+  var metaData: js.Object
   
-  var name: String = js.native
+  var name: String
   
-  var subtitle: String = js.native
+  var subtitle: String
 }
 object ISearchMember {
   

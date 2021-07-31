@@ -2,13 +2,11 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeParamNames extends StObject {
   
-  var parentId: js.UndefOr[String] = js.native
+  var parentId: js.UndefOr[String] = js.undefined
 }
 object TreeParamNames {
   

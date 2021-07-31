@@ -2,47 +2,45 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Command describes a step performed as part of the build pipeline.
   */
-@js.native
 trait SchemaCommand extends StObject {
   
   /**
     * Command-line arguments used when executing this Command.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Working directory (relative to project source root) used when running
     * this Command.
     */
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
   /**
     * Environment variables set before running this Command.
     */
-  var env: js.UndefOr[js.Array[String]] = js.native
+  var env: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional unique identifier for this Command, used in wait_for to
     * reference this Command as a dependency.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the command, as presented on the command line, or if the command
     * is packaged as a Docker container, as presented to `docker pull`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The ID(s) of the Command(s) that this Command depends on.
     */
-  var waitFor: js.UndefOr[js.Array[String]] = js.native
+  var waitFor: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCommand {
   

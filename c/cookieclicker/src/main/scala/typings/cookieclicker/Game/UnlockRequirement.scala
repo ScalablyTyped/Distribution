@@ -2,31 +2,29 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnlockRequirement extends StObject {
   
   /**
     * The amount of cookies required to unlock the cookie (usually price/20)
     */
-  var cookies: Double = js.native
+  var cookies: Double
   
   /**
     * The name of the cookie
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The name of the cookie required to unlock the cookie
     */
-  var require: String = js.native
+  var require: String
   
   /**
     * The cookie required to unlock the cookie
     */
-  var season: String = js.native
+  var season: String
 }
 object UnlockRequirement {
   

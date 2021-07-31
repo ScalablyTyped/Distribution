@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSectionSnippet extends StObject {
   
   /** The ID that YouTube uses to uniquely identify the channel that published the channel section. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** The language of the channel section's default title and description. */
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
   /** Localized title, read-only. */
-  var localized: js.UndefOr[ChannelSectionLocalization] = js.native
+  var localized: js.UndefOr[ChannelSectionLocalization] = js.undefined
   
   /** The position of the channel section in the channel. */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /** The style of the channel section. */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /** The channel section's title for multiple_playlists and multiple_channels. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The type of the channel section. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ChannelSectionSnippet {
   

@@ -11,8 +11,8 @@ Evernote JavaScript SDK
 | Full name          | evernote |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 35872 |
+| # dependents       | 33 |
+| # downloads        | 39172 |
 | # stars            | 8 |
 
 ## Links

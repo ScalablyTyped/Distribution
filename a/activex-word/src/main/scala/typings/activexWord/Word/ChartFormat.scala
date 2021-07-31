@@ -3,36 +3,34 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.TextFrame2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: FillFormat = js.native
+  val Fill: FillFormat
   
-  val Glow: GlowFormat = js.native
+  val Glow: GlowFormat
   
-  val Line: LineFormat = js.native
+  val Line: LineFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PictureFormat: typings.activexWord.Word.PictureFormat = js.native
+  val PictureFormat: typings.activexWord.Word.PictureFormat
   
-  val Shadow: ShadowFormat = js.native
+  val Shadow: ShadowFormat
   
-  val SoftEdge: SoftEdgeFormat = js.native
+  val SoftEdge: SoftEdgeFormat
   
-  val TextFrame2: typings.activexOffice.Office.TextFrame2 = js.native
+  val TextFrame2: typings.activexOffice.Office.TextFrame2
   
-  val ThreeD: ThreeDFormat = js.native
+  val ThreeD: ThreeDFormat
   
   @JSName("Word.ChartFormat_typekey")
-  var WordDotChartFormat_typekey: ChartFormat = js.native
+  var WordDotChartFormat_typekey: ChartFormat
 }
 object ChartFormat {
   

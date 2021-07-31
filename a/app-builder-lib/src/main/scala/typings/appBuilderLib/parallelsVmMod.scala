@@ -8,25 +8,26 @@ import typings.appBuilderLib.appBuilderLibStrings.suspended
 import typings.appBuilderLib.appBuilderLibStrings.ubuntu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parallelsVmMod {
   
-  @JSImport("app-builder-lib/out/vm/ParallelsVm", "macPathToParallelsWindows")
+  @JSImport("app-builder-lib/out/vm/ParallelsVm", JSImport.Namespace)
   @js.native
-  def macPathToParallelsWindows(file: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def macPathToParallelsWindows(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("macPathToParallelsWindows")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait ParallelsVm extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var os: `win-10` | ubuntu | elementary = js.native
+    var os: `win-10` | ubuntu | elementary
     
-    var state: running | suspended | stopped = js.native
+    var state: running | suspended | stopped
   }
   object ParallelsVm {
     

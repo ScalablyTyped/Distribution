@@ -2,14 +2,14 @@ package typings.sharepoint.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to url and query string parts.*/
 @JSGlobal("JSRequest")
 @js.native
 class JSRequest ()
-  extends typings.sharepoint.JSRequest
+  extends StObject
+     with typings.sharepoint.JSRequest
 object JSRequest {
   
   @JSGlobal("JSRequest")
@@ -18,9 +18,8 @@ object JSRequest {
   
   /** initializes class.*/
   /* static member */
-  @JSGlobal("JSRequest.EnsureSetup")
-  @js.native
-  def EnsureSetup(): Unit = js.native
+  @scala.inline
+  def EnsureSetup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EnsureSetup")().asInstanceOf[Unit]
   
   /** Current file name (after last '/' in url).*/
   /* static member */

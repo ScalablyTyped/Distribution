@@ -23,11 +23,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapCardView extends BootstrapGridBase {
+trait BootstrapCardView
+  extends StObject
+     with BootstrapGridBase {
   
   def addNewCard(): Unit = js.native
   
@@ -89,7 +90,7 @@ trait BootstrapCardView extends BootstrapGridBase {
   
   def getSelectedCardCount(): Double = js.native
   
-  def getSelectedKeysOnPage(): js.Array[_] = js.native
+  def getSelectedKeysOnPage(): js.Array[js.Any] = js.native
   
   def getTopVisibleIndex(): Double = js.native
   
@@ -627,9 +628,9 @@ trait BootstrapCardView extends BootstrapGridBase {
   def selectCardsByKey(key: js.Any): Unit = js.native
   // tslint:disable-line:unified-signatures
   def selectCardsByKey(key: js.Any, selected: Boolean): Unit = js.native
-  def selectCardsByKey(keys: js.Array[_]): Unit = js.native
+  def selectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def selectCardsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  def selectCardsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def setEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
@@ -687,7 +688,7 @@ trait BootstrapCardView extends BootstrapGridBase {
   def unselectCards(): Unit = js.native
   
   def unselectCardsByKey(key: js.Any): Unit = js.native
-  def unselectCardsByKey(keys: js.Array[_]): Unit = js.native
+  def unselectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def unselectFilteredCards(): Unit = js.native

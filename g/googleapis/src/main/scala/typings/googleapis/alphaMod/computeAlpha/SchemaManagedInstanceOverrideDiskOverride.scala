@@ -2,27 +2,25 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaManagedInstanceOverrideDiskOverride extends StObject {
   
   /**
     * The name of the device on the VM
     */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The mode in which to attach this disk, either READ_WRITE or READ_ONLY. If
     * not specified, the default is to attach the disk in READ_WRITE mode.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * The disk that is/will be mounted
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedInstanceOverrideDiskOverride {
   

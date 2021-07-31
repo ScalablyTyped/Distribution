@@ -5,16 +5,14 @@ import typings.angular.mod.IPromise
 import typings.angularPromiseTracker.mod.promisetracker.PromiseTracker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait IRequestShortcutConfig extends StObject {
     
-    var tracker: js.UndefOr[PromiseTracker | js.Array[PromiseTracker]] = js.native
+    var tracker: js.UndefOr[PromiseTracker | js.Array[PromiseTracker]] = js.undefined
   }
   object IRequestShortcutConfig {
     
@@ -40,20 +38,19 @@ object mod {
   
   object promisetracker {
     
-    @js.native
     trait PromiseTracker extends StObject {
       
-      def active(): Boolean = js.native
+      def active(): Boolean
       
-      def addPromise[T](promise: IPromise[T]): IDeferred[Unit] = js.native
+      def addPromise[T](promise: IPromise[T]): IDeferred[Unit]
       
-      def cancel(): Unit = js.native
+      def cancel(): Unit
       
-      def createPromise(): IDeferred[Unit] = js.native
+      def createPromise(): IDeferred[Unit]
       
-      def tracking(): Boolean = js.native
+      def tracking(): Boolean
       
-      def trackingCount(): Double = js.native
+      def trackingCount(): Double
     }
     object PromiseTracker {
       
@@ -93,12 +90,11 @@ object mod {
       }
     }
     
-    @js.native
     trait PromiseTrackerOptions extends StObject {
       
-      var activationDelay: js.UndefOr[Double] = js.native
+      var activationDelay: js.UndefOr[Double] = js.undefined
       
-      var minDuration: js.UndefOr[Double] = js.native
+      var minDuration: js.UndefOr[Double] = js.undefined
     }
     object PromiseTrackerOptions {
       

@@ -2,35 +2,33 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendProjectSessionActionRequest extends StObject {
   
   /**
     * A unique identifier for an interactive session that's currently open and ready for work. The action will be performed on this session.
     */
-  var ClientSessionId: js.UndefOr[typings.awsSdk.databrewMod.ClientSessionId] = js.native
+  var ClientSessionId: js.UndefOr[typings.awsSdk.databrewMod.ClientSessionId] = js.undefined
   
   /**
     * The name of the project to apply the action to.
     */
-  var Name: ProjectName = js.native
+  var Name: ProjectName
   
   /**
     * Returns the result of the recipe step, without applying it. The result isn't added to the view frame stack.
     */
-  var Preview: js.UndefOr[typings.awsSdk.databrewMod.Preview] = js.native
+  var Preview: js.UndefOr[typings.awsSdk.databrewMod.Preview] = js.undefined
   
-  var RecipeStep: js.UndefOr[typings.awsSdk.databrewMod.RecipeStep] = js.native
+  var RecipeStep: js.UndefOr[typings.awsSdk.databrewMod.RecipeStep] = js.undefined
   
   /**
     * The index from which to preview a step. This index is used to preview the result of steps that have already been applied, so that the resulting view frame is from earlier in the view frame stack.
     */
-  var StepIndex: js.UndefOr[typings.awsSdk.databrewMod.StepIndex] = js.native
+  var StepIndex: js.UndefOr[typings.awsSdk.databrewMod.StepIndex] = js.undefined
   
-  var ViewFrame: js.UndefOr[typings.awsSdk.databrewMod.ViewFrame] = js.native
+  var ViewFrame: js.UndefOr[typings.awsSdk.databrewMod.ViewFrame] = js.undefined
 }
 object SendProjectSessionActionRequest {
   

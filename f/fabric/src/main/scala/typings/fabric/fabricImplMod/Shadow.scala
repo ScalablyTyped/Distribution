@@ -3,12 +3,13 @@ package typings.fabric.fabricImplMod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Shadow")
 @js.native
-class Shadow () extends IShadowOptions {
+class Shadow ()
+  extends StObject
+     with IShadowOptions {
   def this(options: String) = this()
   def this(options: IShadowOptions) = this()
   

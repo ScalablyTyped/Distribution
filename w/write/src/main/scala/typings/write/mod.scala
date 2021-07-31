@@ -12,84 +12,66 @@ import typings.write.anon.OmitMakeDirectoryOptionsr
 import typings.write.writeStrings.encoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: String): js.Promise[Result[String]] = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: String, callback: Callback[String]): Unit = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: String, options: Options): js.Promise[Result[String]] = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: String, options: Options, callback: Callback[String]): Unit = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Buffer): js.Promise[Result[Buffer]] = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Buffer, callback: Callback[Buffer]): Unit = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Buffer, options: Options): js.Promise[Result[Buffer]] = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Buffer, options: Options, callback: Callback[Buffer]): Unit = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Uint8Array): js.Promise[Result[Uint8Array]] = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Uint8Array, callback: Callback[Uint8Array]): Unit = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Uint8Array, options: Options): js.Promise[Result[Uint8Array]] = js.native
-  @JSImport("write", JSImport.Namespace)
-  @js.native
-  def apply(filepath: String, data: Uint8Array, options: Options, callback: Callback[Uint8Array]): Unit = js.native
+  @scala.inline
+  def apply(filepath: String, data: String): js.Promise[Result[String]] = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result[String]]]
+  @scala.inline
+  def apply(filepath: String, data: String, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filepath: String, data: String, options: Options): js.Promise[Result[String]] = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result[String]]]
+  @scala.inline
+  def apply(filepath: String, data: String, options: Options, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filepath: String, data: Buffer): js.Promise[Result[Buffer]] = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result[Buffer]]]
+  @scala.inline
+  def apply(filepath: String, data: Buffer, callback: Callback[Buffer]): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filepath: String, data: Buffer, options: Options): js.Promise[Result[Buffer]] = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result[Buffer]]]
+  @scala.inline
+  def apply(filepath: String, data: Buffer, options: Options, callback: Callback[Buffer]): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filepath: String, data: Uint8Array): js.Promise[Result[Uint8Array]] = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result[Uint8Array]]]
+  @scala.inline
+  def apply(filepath: String, data: Uint8Array, callback: Callback[Uint8Array]): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filepath: String, data: Uint8Array, options: Options): js.Promise[Result[Uint8Array]] = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result[Uint8Array]]]
+  @scala.inline
+  def apply(filepath: String, data: Uint8Array, options: Options, callback: Callback[Uint8Array]): Unit = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("write", "stream")
+  @JSImport("write", JSImport.Namespace)
   @js.native
-  def stream(filepath: String): WriteStream = js.native
-  @JSImport("write", "stream")
-  @js.native
-  def stream(filepath: String, options: StreamOptions): WriteStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("write", "sync")
-  @js.native
-  def sync(filepath: String, data: String): Result[String] = js.native
-  @JSImport("write", "sync")
-  @js.native
-  def sync(filepath: String, data: String, options: Options): Result[String] = js.native
-  @JSImport("write", "sync")
-  @js.native
-  def sync(filepath: String, data: Buffer): Result[Buffer] = js.native
-  @JSImport("write", "sync")
-  @js.native
-  def sync(filepath: String, data: Buffer, options: Options): Result[Buffer] = js.native
-  @JSImport("write", "sync")
-  @js.native
-  def sync(filepath: String, data: Uint8Array): Result[Uint8Array] = js.native
-  @JSImport("write", "sync")
-  @js.native
-  def sync(filepath: String, data: Uint8Array, options: Options): Result[Uint8Array] = js.native
+  @scala.inline
+  def stream(filepath: String): WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(filepath.asInstanceOf[js.Any]).asInstanceOf[WriteStream]
+  @scala.inline
+  def stream(filepath: String, options: StreamOptions): WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WriteStream]
+  
+  @scala.inline
+  def sync(filepath: String, data: String): Result[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Result[String]]
+  @scala.inline
+  def sync(filepath: String, data: String, options: Options): Result[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[String]]
+  @scala.inline
+  def sync(filepath: String, data: Buffer): Result[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Result[Buffer]]
+  @scala.inline
+  def sync(filepath: String, data: Buffer, options: Options): Result[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[Buffer]]
+  @scala.inline
+  def sync(filepath: String, data: Uint8Array): Result[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Result[Uint8Array]]
+  @scala.inline
+  def sync(filepath: String, data: Uint8Array, options: Options): Result[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filepath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[Uint8Array]]
   
   type Callback[T /* <: Data */] = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Result[T]], js.Any]
   
-  @js.native
   trait CommonOptions extends StObject {
     
-    var increment: js.UndefOr[Boolean] = js.native
+    var increment: js.UndefOr[Boolean] = js.undefined
     
-    var newline: js.UndefOr[Boolean] = js.native
+    var newline: js.UndefOr[Boolean] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
   }
   object CommonOptions {
     
@@ -129,14 +111,13 @@ object mod {
   
   type Data = String | Buffer | Uint8Array
   
-  type Options = (Omit[WriteFileOptions, encoding]) with OmitMakeDirectoryOptionsr with CommonOptions
+  type Options = (Omit[WriteFileOptions, encoding]) & OmitMakeDirectoryOptionsr & CommonOptions
   
-  @js.native
   trait Result[T /* <: Data */] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var path: String = js.native
+    var path: String
   }
   object Result {
     
@@ -147,7 +128,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result[_], T /* <: Data */] (val x: Self with Result[T]) extends AnyVal {
+    implicit class ResultMutableBuilder[Self <: Result[?], T /* <: Data */] (val x: Self & Result[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -157,5 +138,5 @@ object mod {
     }
   }
   
-  type StreamOptions = (Omit[CreateWriteStreamOptions, encoding]) with OmitMakeDirectoryOptionsr with CommonOptions
+  type StreamOptions = (Omit[CreateWriteStreamOptions, encoding]) & OmitMakeDirectoryOptionsr & CommonOptions
 }

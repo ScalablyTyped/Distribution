@@ -2,7 +2,6 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait SpacingMode extends StObject
 object SpacingMode extends StObject {
   
   @js.native
-  sealed trait Fixed extends SpacingMode
+  sealed trait Fixed
+    extends StObject
+       with SpacingMode
   
   @js.native
-  sealed trait Length extends SpacingMode
+  sealed trait Length
+    extends StObject
+       with SpacingMode
   
   @js.native
-  sealed trait Percent extends SpacingMode
+  sealed trait Percent
+    extends StObject
+       with SpacingMode
 }

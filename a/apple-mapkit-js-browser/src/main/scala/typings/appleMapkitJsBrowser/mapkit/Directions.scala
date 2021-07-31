@@ -3,13 +3,11 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a directions object with options that you may provide.
   */
-@js.native
 trait Directions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Directions extends StObject {
     *
     * @param id The ID returned by a call to route.
     */
-  def cancel(id: Double): Boolean = js.native
+  def cancel(id: Double): Boolean
   
   /**
     * Retrieves estimated arrival times to up to 10 destinations from a single starting point.
@@ -29,7 +27,7 @@ trait Directions extends StObject {
   def eta(
     request: EtaRequestOptions,
     callback: js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]
-  ): Double = js.native
+  ): Double
   
   /**
     * Retrieves directions and estimated travel time for the specified start
@@ -44,7 +42,7 @@ trait Directions extends StObject {
   def route(
     request: DirectionsRequest,
     callback: js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]
-  ): Double = js.native
+  ): Double
 }
 object Directions {
   
@@ -71,13 +69,17 @@ object Directions {
       * A constant identifying the mode of transportation as driving.
       */
     @js.native
-    sealed trait Automobile extends Transport
+    sealed trait Automobile
+      extends StObject
+         with Transport
     
     /**
       * A constant identifying the mode of transportation as walking.
       */
     @js.native
-    sealed trait Walking extends Transport
+    sealed trait Walking
+      extends StObject
+         with Transport
   }
   
   @scala.inline

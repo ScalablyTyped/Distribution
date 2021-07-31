@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message type to initiate a read-only transaction.
   */
-@js.native
 trait SchemaReadOnly extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaReadOnly extends StObject {
     * without the distributed timestamp negotiation overhead of
     * `max_staleness`.
     */
-  var exactStaleness: js.UndefOr[String] = js.native
+  var exactStaleness: js.UndefOr[String] = js.undefined
   
   /**
     * Read data at a timestamp &gt;= `NOW - max_staleness` seconds. Guarantees
@@ -33,7 +31,7 @@ trait SchemaReadOnly extends StObject {
     * the possible staleness if the local replica has fallen behind.  Note that
     * this option can only be used in single-use transactions.
     */
-  var maxStaleness: js.UndefOr[String] = js.native
+  var maxStaleness: js.UndefOr[String] = js.undefined
   
   /**
     * Executes all reads at a timestamp &gt;= `min_read_timestamp`.  This is
@@ -44,7 +42,7 @@ trait SchemaReadOnly extends StObject {
     * \&quot;Zulu\&quot; format, accurate to nanoseconds. Example:
     * `&quot;2014-10-02T15:01:23.045123456Z&quot;`.
     */
-  var minReadTimestamp: js.UndefOr[String] = js.native
+  var minReadTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Executes all reads at the given timestamp. Unlike other modes, reads at a
@@ -56,19 +54,19 @@ trait SchemaReadOnly extends StObject {
     * timestamp in RFC3339 UTC \&quot;Zulu\&quot; format, accurate to
     * nanoseconds. Example: `&quot;2014-10-02T15:01:23.045123456Z&quot;`.
     */
-  var readTimestamp: js.UndefOr[String] = js.native
+  var readTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the Cloud Spanner-selected read timestamp is included in the
     * Transaction message that describes the transaction.
     */
-  var returnReadTimestamp: js.UndefOr[Boolean] = js.native
+  var returnReadTimestamp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Read at a timestamp where all previously committed transactions are
     * visible.
     */
-  var strong: js.UndefOr[Boolean] = js.native
+  var strong: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaReadOnly {
   

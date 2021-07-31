@@ -6,35 +6,35 @@ import typings.uglifyJs.mod.MangleOptions
 import typings.uglifyJs.mod.OutputOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-uglify", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-uglify", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-uglify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * Pass an object to specify custom compressor options. Pass false to skip compression completely.
       */
-    var compress: js.UndefOr[CompressOptions | Boolean] = js.native
+    var compress: js.UndefOr[CompressOptions | Boolean] = js.undefined
     
     /**
       * Pass false to skip mangling names.
       */
-    var mangle: js.UndefOr[MangleOptions | Boolean] = js.native
+    var mangle: js.UndefOr[MangleOptions | Boolean] = js.undefined
     
     /**
       * Pass if you wish to specify additional output options. The defaults are optimized for best compression.
       */
-    var output: js.UndefOr[OutputOptions] = js.native
+    var output: js.UndefOr[OutputOptions] = js.undefined
   }
   object Options {
     

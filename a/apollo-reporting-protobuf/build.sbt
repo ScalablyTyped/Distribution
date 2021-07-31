@@ -1,15 +1,13 @@
 organization := "org.scalablytyped"
 name := "apollo-reporting-protobuf"
-version := "0.6.1-d0bf3e"
-scalaVersion := "2.13.3"
+version := "0.6.1-415a91"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "apollo__protobufjs" % "1.0.5-43aa43",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20201002Z-599bb2",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "apollo__protobufjs" % "1.0.5-17eac8",
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20201002Z-d40319",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

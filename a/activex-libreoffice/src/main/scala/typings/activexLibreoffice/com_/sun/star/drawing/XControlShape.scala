@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.awt.XControlModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.drawing.ControlShape
   * @see com.sun.star.awt.UnoControlModel
   */
-@js.native
-trait XControlShape extends XShape {
+trait XControlShape
+  extends StObject
+     with XShape {
   
   /**
     * returns the control model of this {@link Shape} .
     * @returns if there is already a control model assigned to this {@link ControlShape} , than its returned. Otherwise you get an empty reference.
     */
-  var Control: XControlModel = js.native
+  var Control: XControlModel
   
   /**
     * returns the control model of this {@link Shape} .
     * @returns if there is already a control model assigned to this {@link ControlShape} , than its returned. Otherwise you get an empty reference.
     */
-  def getControl(): XControlModel = js.native
+  def getControl(): XControlModel
   
   /**
     * sets the control model for this {@link Shape} .
     * @param xControl this will be the new control model that is displayed with this shape. You may change the model more than once during the lifetime of a {
     */
-  def setControl(xControl: XControlModel): Unit = js.native
+  def setControl(xControl: XControlModel): Unit
 }
 object XControlShape {
   

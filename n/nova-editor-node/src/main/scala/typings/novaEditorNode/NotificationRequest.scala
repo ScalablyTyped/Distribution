@@ -4,26 +4,24 @@ import typings.novaEditorNode.novaEditorNodeStrings.`secure-input`
 import typings.novaEditorNode.novaEditorNodeStrings.input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/notification-request/
-@js.native
 trait NotificationRequest extends StObject {
   
-  var actions: js.UndefOr[js.Array[String]] = js.native
+  var actions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  val identifier: String = js.native
+  val identifier: String
   
-  var textInputPlaceholder: js.UndefOr[String] = js.native
+  var textInputPlaceholder: js.UndefOr[String] = js.undefined
   
-  var textInputValue: js.UndefOr[String] = js.native
+  var textInputValue: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[input | `secure-input`] = js.native
+  var `type`: js.UndefOr[input | `secure-input`] = js.undefined
 }
 object NotificationRequest {
   

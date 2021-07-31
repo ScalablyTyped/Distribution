@@ -2,13 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITimeTriggerFactory extends StObject {
   
-  def create(freshnessTime: Double, oneShot: Boolean): TimeTrigger = js.native
+  def create(freshnessTime: Double, oneShot: Boolean): TimeTrigger
 }
 object ITimeTriggerFactory {
   

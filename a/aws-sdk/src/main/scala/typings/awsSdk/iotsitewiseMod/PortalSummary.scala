@@ -2,48 +2,46 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortalSummary extends StObject {
   
   /**
     * The date the portal was created, in Unix epoch time.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.native
+  var creationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The portal's description.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the portal.
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The date the portal was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the portal.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The ARN of the service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf. For more information, see Using service roles for AWS IoT SiteWise Monitor in the AWS IoT SiteWise User Guide.
     */
-  var roleArn: js.UndefOr[ARN] = js.native
+  var roleArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The URL for the AWS IoT SiteWise Monitor portal. You can use this URL to access portals that use AWS SSO for authentication. For portals that use IAM for authentication, you must use the CreatePresignedPortalUrl operation to create a URL that you can use to access the portal.
     */
-  var startUrl: Url = js.native
+  var startUrl: Url
   
-  var status: PortalStatus = js.native
+  var status: PortalStatus
 }
 object PortalSummary {
   

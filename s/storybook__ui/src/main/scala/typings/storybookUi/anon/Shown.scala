@@ -2,13 +2,11 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shown extends StObject {
   
-  var shown: Boolean = js.native
+  var shown: Boolean
 }
 object Shown {
   

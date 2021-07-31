@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,13 +23,17 @@ object ItemNotificationMessageType extends StObject {
     * The notification message is an error message.
     */
   @js.native
-  sealed trait ErrorMessage extends ItemNotificationMessageType
+  sealed trait ErrorMessage
+    extends StObject
+       with ItemNotificationMessageType
   
   /**
     * The notification message is an informational message.
     */
   @js.native
-  sealed trait InformationalMessage extends ItemNotificationMessageType
+  sealed trait InformationalMessage
+    extends StObject
+       with ItemNotificationMessageType
   
   /**
     * The notification message is an informational message with actions.
@@ -40,11 +43,15 @@ object ItemNotificationMessageType extends StObject {
     * @beta
     */
   @js.native
-  sealed trait InsightMessage extends ItemNotificationMessageType
+  sealed trait InsightMessage
+    extends StObject
+       with ItemNotificationMessageType
   
   /**
     * The notification message is a progress indicator.
     */
   @js.native
-  sealed trait ProgressIndicator extends ItemNotificationMessageType
+  sealed trait ProgressIndicator
+    extends StObject
+       with ItemNotificationMessageType
 }

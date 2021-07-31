@@ -4,10 +4,8 @@ import typings.chromeApps.chrome.ToStringLiteral
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofpower extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait Typeofpower extends StObject {
     * @property SYSTEM - Prevent the system from sleeping in response to user inactivity.
     * @property DISPLAY - Prevent the display from being turned off or dimmed or the system from sleeping in response to user inactivity.
     */
-  val Level: DISPLAY = js.native
+  val Level: DISPLAY
   
   /** Releases a request previously made via requestKeepAwake(). */
-  def releaseKeepAwake(): Unit = js.native
+  def releaseKeepAwake(): Unit
   
   /**
     * Requests that power management be temporarily disabled.
@@ -35,7 +33,7 @@ trait Typeofpower extends StObject {
         /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
       ]
     ]
-  ): Unit = js.native
+  ): Unit
 }
 object Typeofpower {
   

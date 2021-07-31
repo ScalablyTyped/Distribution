@@ -2,36 +2,34 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Firestore query.
   */
-@js.native
 trait SchemaStructuredQuery extends StObject {
   
   /**
     * A end point for the query results.
     */
-  var endAt: js.UndefOr[SchemaCursor] = js.native
+  var endAt: js.UndefOr[SchemaCursor] = js.undefined
   
   /**
     * The collections to query.
     */
-  var from: js.UndefOr[js.Array[SchemaCollectionSelector]] = js.native
+  var from: js.UndefOr[js.Array[SchemaCollectionSelector]] = js.undefined
   
   /**
     * The maximum number of results to return.  Applies after all other
     * constraints. Must be &gt;= 0 if specified.
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of results to skip.  Applies before limit, but after all other
     * constraints. Must be &gt;= 0 if specified.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The order to apply to the query results.  Firestore guarantees a stable
@@ -46,22 +44,22 @@ trait SchemaStructuredQuery extends StObject {
     * BY A DESC, __name__ DESC`  * `SELECT * FROM Foo WHERE A &gt; 1` becomes
     * `SELECT * FROM Foo WHERE A &gt; 1 ORDER BY A, __name__`
     */
-  var orderBy: js.UndefOr[js.Array[SchemaOrder]] = js.native
+  var orderBy: js.UndefOr[js.Array[SchemaOrder]] = js.undefined
   
   /**
     * The projection to return.
     */
-  var select: js.UndefOr[SchemaProjection] = js.native
+  var select: js.UndefOr[SchemaProjection] = js.undefined
   
   /**
     * A starting point for the query results.
     */
-  var startAt: js.UndefOr[SchemaCursor] = js.native
+  var startAt: js.UndefOr[SchemaCursor] = js.undefined
   
   /**
     * The filter to apply.
     */
-  var where: js.UndefOr[SchemaFilter] = js.native
+  var where: js.UndefOr[SchemaFilter] = js.undefined
 }
 object SchemaStructuredQuery {
   

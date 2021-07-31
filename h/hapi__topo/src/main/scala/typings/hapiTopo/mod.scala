@@ -2,7 +2,6 @@ package typings.hapiTopo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,28 +39,27 @@ object mod {
     var nodes: js.Array[T] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The group or groups the added items must come after
       */
-    val after: js.UndefOr[String | js.Array[String]] = js.native
+    val after: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The group or groups the added items must come before
       */
-    val before: js.UndefOr[String | js.Array[String]] = js.native
+    val before: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The sorting group the added items belong to
       */
-    val group: js.UndefOr[String] = js.native
+    val group: js.UndefOr[String] = js.undefined
     
     /**
       * A number used to sort items with equal before/after requirements
       */
-    val sort: js.UndefOr[Double] = js.native
+    val sort: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

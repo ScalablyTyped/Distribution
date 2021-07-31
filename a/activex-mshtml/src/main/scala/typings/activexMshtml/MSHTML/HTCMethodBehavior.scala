@@ -2,14 +2,12 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTCMethodBehavior extends StObject {
   
   @JSName("MSHTML.HTCMethodBehavior_typekey")
-  var MSHTMLDotHTCMethodBehavior_typekey: HTCMethodBehavior = js.native
+  var MSHTMLDotHTCMethodBehavior_typekey: HTCMethodBehavior
 }
 object HTCMethodBehavior {
   

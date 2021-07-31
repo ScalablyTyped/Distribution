@@ -2,26 +2,24 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyWorkersFailureStatus extends StObject {
   
   /**
     *  Encoded value for the failure type. 
     */
-  var NotifyWorkersFailureCode: js.UndefOr[typings.awsSdk.mturkMod.NotifyWorkersFailureCode] = js.native
+  var NotifyWorkersFailureCode: js.UndefOr[typings.awsSdk.mturkMod.NotifyWorkersFailureCode] = js.undefined
   
   /**
     *  A message detailing the reason the Worker could not be notified. 
     */
-  var NotifyWorkersFailureMessage: js.UndefOr[String] = js.native
+  var NotifyWorkersFailureMessage: js.UndefOr[String] = js.undefined
   
   /**
     *  The ID of the Worker.
     */
-  var WorkerId: js.UndefOr[CustomerId] = js.native
+  var WorkerId: js.UndefOr[CustomerId] = js.undefined
 }
 object NotifyWorkersFailureStatus {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateComplianceCount extends StObject {
   
   /**
     * The number of compliant and noncompliant AWS Config rules.
     */
-  var ComplianceSummary: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceSummary] = js.native
+  var ComplianceSummary: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceSummary] = js.undefined
   
   /**
     * The 12-digit account ID or region based on the GroupByKey value.
     */
-  var GroupName: js.UndefOr[StringWithCharLimit256] = js.native
+  var GroupName: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object AggregateComplianceCount {
   

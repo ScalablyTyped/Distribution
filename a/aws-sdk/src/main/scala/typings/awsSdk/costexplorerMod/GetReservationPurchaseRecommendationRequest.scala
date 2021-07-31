@@ -2,56 +2,54 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetReservationPurchaseRecommendationRequest extends StObject {
   
   /**
     * The account ID that is associated with the recommendation. 
     */
-  var AccountId: js.UndefOr[GenericString] = js.native
+  var AccountId: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the management account and member accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual member accounts only.
     */
-  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.native
+  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.undefined
   
   /**
     * The number of previous days that you want AWS to consider when it calculates your recommendations.
     */
-  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.native
+  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results that you want to retrieve.
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     * The number of recommendations that you want returned in a single response object.
     */
-  var PageSize: js.UndefOr[NonNegativeInteger] = js.native
+  var PageSize: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     * The reservation purchase option that you want recommendations for.
     */
-  var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.native
+  var PaymentOption: js.UndefOr[typings.awsSdk.costexplorerMod.PaymentOption] = js.undefined
   
   /**
     * The specific service that you want recommendations for.
     */
-  var Service: GenericString = js.native
+  var Service: GenericString
   
   /**
     * The hardware specifications for the service instances that you want recommendations for, such as standard or convertible Amazon EC2 instances.
     */
-  var ServiceSpecification: js.UndefOr[typings.awsSdk.costexplorerMod.ServiceSpecification] = js.native
+  var ServiceSpecification: js.UndefOr[typings.awsSdk.costexplorerMod.ServiceSpecification] = js.undefined
   
   /**
     * The reservation term that you want recommendations for.
     */
-  var TermInYears: js.UndefOr[typings.awsSdk.costexplorerMod.TermInYears] = js.native
+  var TermInYears: js.UndefOr[typings.awsSdk.costexplorerMod.TermInYears] = js.undefined
 }
 object GetReservationPurchaseRecommendationRequest {
   

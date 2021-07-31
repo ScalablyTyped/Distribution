@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceStatus represents the current status of a service.
   */
-@js.native
 trait ServiceStatus extends StObject {
   
   /**
     * LoadBalancer contains the current status of the load-balancer, if one is present.
     */
-  var loadBalancer: LoadBalancerStatus = js.native
+  var loadBalancer: LoadBalancerStatus
 }
 object ServiceStatus {
   

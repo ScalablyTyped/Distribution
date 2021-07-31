@@ -2,13 +2,11 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Signal extends StObject {
   
-  var signal: String = js.native
+  var signal: String
 }
 object Signal {
   

@@ -2,17 +2,15 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorSelectionChange extends StObject {
   
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
-  var ranges: js.Array[Range] = js.native
+  var ranges: js.Array[Range]
   
-  def update(ranges: js.Array[Range]): Unit = js.native
+  def update(ranges: js.Array[Range]): Unit
 }
 object EditorSelectionChange {
   

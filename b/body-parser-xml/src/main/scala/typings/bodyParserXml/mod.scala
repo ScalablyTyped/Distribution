@@ -7,17 +7,24 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("body-parser-xml", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(bodyParser: js.Any): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(bodyParser.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
+  
+  @JSImport("body-parser-xml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

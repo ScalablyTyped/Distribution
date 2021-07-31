@@ -4,21 +4,19 @@ import typings.logrocket.mod.LR.IRequest
 import typings.logrocket.mod.LR.IResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BaseHref extends StObject {
     
-    var baseHref: js.UndefOr[String] = js.native
+    var baseHref: js.UndefOr[String] = js.undefined
     
-    var inputSanitizer: js.UndefOr[Boolean | String] = js.native
+    var inputSanitizer: js.UndefOr[Boolean | String] = js.undefined
     
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var textSanitizer: js.UndefOr[Boolean | String] = js.native
+    var textSanitizer: js.UndefOr[Boolean | String] = js.undefined
   }
   object BaseHref {
     
@@ -57,18 +55,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var info: js.UndefOr[Boolean] = js.native
+    var info: js.UndefOr[Boolean] = js.undefined
     
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
-    var warn: js.UndefOr[Boolean] = js.native
+    var warn: js.UndefOr[Boolean] = js.undefined
   }
   object Debug {
     
@@ -113,12 +110,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsEnabled extends StObject {
     
-    var isEnabled: js.UndefOr[Boolean | Debug] = js.native
+    var isEnabled: js.UndefOr[Boolean | Debug] = js.undefined
     
-    var shouldAggregateConsoleErrors: js.UndefOr[Boolean] = js.native
+    var shouldAggregateConsoleErrors: js.UndefOr[Boolean] = js.undefined
   }
   object IsEnabled {
     
@@ -145,14 +141,13 @@ object anon {
     }
   }
   
-  @js.native
   trait RequestSanitizer extends StObject {
     
-    var isEnabled: js.UndefOr[Boolean] = js.native
+    var isEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var requestSanitizer: js.UndefOr[js.Function1[/* request */ IRequest, Null | IRequest]] = js.native
+    var requestSanitizer: js.UndefOr[js.Function1[/* request */ IRequest, Null | IRequest]] = js.undefined
     
-    var responseSanitizer: js.UndefOr[js.Function1[/* response */ IResponse, Null | IResponse]] = js.native
+    var responseSanitizer: js.UndefOr[js.Function1[/* response */ IResponse, Null | IResponse]] = js.undefined
   }
   object RequestSanitizer {
     
@@ -185,10 +180,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UrlSanitizer extends StObject {
     
-    var urlSanitizer: js.UndefOr[js.Function1[/* url */ String, Null | String]] = js.native
+    var urlSanitizer: js.UndefOr[js.Function1[/* url */ String, Null | String]] = js.undefined
   }
   object UrlSanitizer {
     

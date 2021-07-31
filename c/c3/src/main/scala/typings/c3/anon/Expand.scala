@@ -4,23 +4,21 @@ import typings.c3.mod.ExpandOptions
 import typings.c3.mod.LabelOptionsWithThreshold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expand extends StObject {
   
   /**
     * Enable or disable expanding pie pieces.
     */
-  var expand: js.UndefOr[ExpandOptions] = js.native
+  var expand: js.UndefOr[ExpandOptions] = js.undefined
   
-  var label: js.UndefOr[LabelOptionsWithThreshold] = js.native
+  var label: js.UndefOr[LabelOptionsWithThreshold] = js.undefined
   
   /**
     * Sets the angular separation between each adjacent arc.
     */
-  var padAngle: js.UndefOr[Double] = js.native
+  var padAngle: js.UndefOr[Double] = js.undefined
 }
 object Expand {
   

@@ -2,14 +2,12 @@ package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Files in the workspace to upload to Cloud Storage upon successful
   * completion of all build steps.
   */
-@js.native
 trait SchemaArtifactObjects extends StObject {
   
   /**
@@ -19,17 +17,17 @@ trait SchemaArtifactObjects extends StObject {
     * Files in the workspace matching any path pattern will be uploaded to
     * Cloud Storage with this location as a prefix.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Path globs used to match files in the build&#39;s workspace.
     */
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Output only. Stores timing information for pushing all artifact objects.
     */
-  var timing: js.UndefOr[SchemaTimeSpan] = js.native
+  var timing: js.UndefOr[SchemaTimeSpan] = js.undefined
 }
 object SchemaArtifactObjects {
   

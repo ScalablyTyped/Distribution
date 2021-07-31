@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If the data stored consists only of strings, the returned instances should also support the service TextualDataSequence.
   */
-@js.native
-trait XDataSource extends XInterface {
+trait XDataSource
+  extends StObject
+     with XInterface {
   
   /**
     * returns data sequences.
     * @returns a sequence of objects that support at least the service {@link DataSequence} .  If the data stored consist only of floating point numbers (double
     */
-  val DataSequences: SafeArray[XLabeledDataSequence] = js.native
+  val DataSequences: SafeArray[XLabeledDataSequence]
   
   /**
     * returns data sequences.
     * @returns a sequence of objects that support at least the service {@link DataSequence} .  If the data stored consist only of floating point numbers (double
     */
-  def getDataSequences(): SafeArray[XLabeledDataSequence] = js.native
+  def getDataSequences(): SafeArray[XLabeledDataSequence]
 }
 object XDataSource {
   

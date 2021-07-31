@@ -2,21 +2,19 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlStatementResult extends StObject {
   
   /**
     * The number of records updated by a SQL statement.
     */
-  var numberOfRecordsUpdated: js.UndefOr[RecordsUpdated] = js.native
+  var numberOfRecordsUpdated: js.UndefOr[RecordsUpdated] = js.undefined
   
   /**
     * The result set of the SQL statement.
     */
-  var resultFrame: js.UndefOr[ResultFrame] = js.native
+  var resultFrame: js.UndefOr[ResultFrame] = js.undefined
 }
 object SqlStatementResult {
   

@@ -3,17 +3,17 @@ package typings.extjs.Ext.form
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFieldAncestor extends IBase {
+trait IFieldAncestor
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Object) */
-  var fieldDefaults: js.UndefOr[js.Any] = js.native
+  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
-  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.native
+  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Fired when the error message of any field within the container changes
     * @param field Ext.form.Labelable The sub-field whose active error changed
@@ -21,7 +21,7 @@ trait IFieldAncestor extends IBase {
     */
   var onFieldErrorChange: js.UndefOr[
     js.Function2[/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Fired when the validity of any field within the container changes
     * @param field Ext.form.field.Field The sub-field whose validity changed
@@ -33,7 +33,7 @@ trait IFieldAncestor extends IBase {
       /* valid */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IFieldAncestor {
   

@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The response type for listing existing translation models. */
-@js.native
 trait TranslationModels extends StObject {
   
   /** An array of available models. */
-  var models: js.Array[TranslationModel] = js.native
+  var models: js.Array[TranslationModel]
 }
 object TranslationModels {
   

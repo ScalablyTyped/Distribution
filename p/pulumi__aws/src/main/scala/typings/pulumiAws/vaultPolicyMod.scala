@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vaultPolicyMod {
@@ -43,6 +42,10 @@ object vaultPolicyMod {
   /* static members */
   object VaultPolicy {
     
+    @JSImport("@pulumi/aws/backup/vaultPolicy", "VaultPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VaultPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,40 +55,34 @@ object vaultPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/backup/vaultPolicy", "VaultPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VaultPolicy = js.native
-    @JSImport("@pulumi/aws/backup/vaultPolicy", "VaultPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VaultPolicy = js.native
-    @JSImport("@pulumi/aws/backup/vaultPolicy", "VaultPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultPolicyState): VaultPolicy = js.native
-    @JSImport("@pulumi/aws/backup/vaultPolicy", "VaultPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultPolicyState, opts: CustomResourceOptions): VaultPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultPolicyState): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultPolicyState, opts: CustomResourceOptions): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
     
     /**
       * Returns true if the given object is an instance of VaultPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/backup/vaultPolicy", "VaultPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultPolicy.VaultPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultPolicy.VaultPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/vaultPolicy.VaultPolicy */ Boolean]
   }
   
-  @js.native
   trait VaultPolicyArgs extends StObject {
     
     /**
       * Name of the backup vault to add policy for.
       */
-    val backupVaultName: Input[String] = js.native
+    val backupVaultName: Input[String]
     
     /**
       * The backup vault access policy document in JSON format.
       */
-    val policy: Input[String] = js.native
+    val policy: Input[String]
   }
   object VaultPolicyArgs {
     
@@ -106,23 +103,22 @@ object vaultPolicyMod {
     }
   }
   
-  @js.native
   trait VaultPolicyState extends StObject {
     
     /**
       * The ARN of the vault.
       */
-    val backupVaultArn: js.UndefOr[Input[String]] = js.native
+    val backupVaultArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the backup vault to add policy for.
       */
-    val backupVaultName: js.UndefOr[Input[String]] = js.native
+    val backupVaultName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The backup vault access policy document in JSON format.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
   }
   object VaultPolicyState {
     

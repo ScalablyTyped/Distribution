@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.uiGrid.anon.CanvasHeightChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,9 +17,9 @@ trait IGridCoreApi[TEntity] extends StObject {
     * @param {boolean} stopColumnBuild Prevents the buildColumn callback from being triggered. This is useful to improve performance of the grid during initial load.
     */
   def addRowHeaderColumn(column: IColumnDefOf[TEntity]): Unit = js.native
-  def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: js.UndefOr[scala.Nothing], stopColumnBuild: Boolean): Unit = js.native
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Double): Unit = js.native
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Double, stopColumnBuild: Boolean): Unit = js.native
+  def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Unit, stopColumnBuild: Boolean): Unit = js.native
   
   /**
     * add items to the grid menu.  Used by features
@@ -44,17 +43,13 @@ trait IGridCoreApi[TEntity] extends StObject {
     * @returns {ng.IPromise<any>} If `refreshRows` is true, returns a promise of the rows refreshing.
     */
   def clearAllFilters(): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
-  def clearAllFilters(
-    refreshRows: js.UndefOr[scala.Nothing],
-    clearConditions: js.UndefOr[scala.Nothing],
-    clearFlags: Boolean
-  ): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
-  def clearAllFilters(refreshRows: js.UndefOr[scala.Nothing], clearConditions: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
-  def clearAllFilters(refreshRows: js.UndefOr[scala.Nothing], clearConditions: Boolean, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
-  def clearAllFilters(refreshRows: Boolean, clearConditions: js.UndefOr[scala.Nothing], clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(refreshRows: Boolean, clearConditions: Unit, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(refreshRows: Unit, clearConditions: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(refreshRows: Unit, clearConditions: Boolean, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(refreshRows: Unit, clearConditions: Unit, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   
   /**
     * Clears any override on visibility for the row so that it returns to
@@ -110,8 +105,8 @@ trait IGridCoreApi[TEntity] extends StObject {
     *
     * @param {boolean} [rowsAltered] Optional flag for refreshing when the number of rows has changed.
     */
-  def refresh(): IPromise[_] = js.native
-  def refresh(rowsAltered: Boolean): IPromise[_] = js.native
+  def refresh(): IPromise[js.Any] = js.native
+  def refresh(rowsAltered: Boolean): IPromise[js.Any] = js.native
   
   /**
     * Refresh the rendered rows on screen?  Note: not functional at present

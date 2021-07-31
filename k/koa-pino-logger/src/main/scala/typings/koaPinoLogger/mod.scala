@@ -5,32 +5,29 @@ import typings.pino.mod.Logger
 import typings.pinoHttp.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Middleware = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware]
+  @scala.inline
+  def apply(opts: Unit, stream: DestinationStream): Middleware = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  @scala.inline
+  def apply(opts: Options): Middleware = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  @scala.inline
+  def apply(opts: Options, stream: DestinationStream): Middleware = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  @scala.inline
+  def apply(stream: DestinationStream): Middleware = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  
   @JSImport("koa-pino-logger", JSImport.Namespace)
   @js.native
-  def apply(): Middleware = js.native
-  @JSImport("koa-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], stream: DestinationStream): Middleware = js.native
-  @JSImport("koa-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): Middleware = js.native
-  @JSImport("koa-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options, stream: DestinationStream): Middleware = js.native
-  @JSImport("koa-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(stream: DestinationStream): Middleware = js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> * / any */ @js.native
-  trait Middleware extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> * / any */ trait Middleware extends StObject {
     
-    var logger: Logger = js.native
+    var logger: Logger
   }
   object Middleware {
     
@@ -51,10 +48,9 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait ExtendableContext extends StObject {
       
-      var log: Logger = js.native
+      var log: Logger
     }
     object ExtendableContext {
       

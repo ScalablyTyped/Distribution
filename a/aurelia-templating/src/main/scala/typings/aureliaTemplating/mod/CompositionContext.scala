@@ -4,77 +4,75 @@ import typings.aureliaDependencyInjection.mod.Container
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompositionContext extends StObject {
   
   /**
     * The context in which the view model is executed in.
     */
-  var bindingContext: js.Any = js.native
+  var bindingContext: js.Any
   
   /**
     * The child Container for the component creation. One will be created from the parent if not provided.
     */
-  var childContainer: js.UndefOr[Container] = js.native
+  var childContainer: js.UndefOr[Container] = js.undefined
   
   /**
     * The parent Container for the component creation.
     */
-  var container: Container = js.native
+  var container: Container
   
   /**
     * The element that will parent the dynamic component.
     * It will be registered in the child container of this composition.
     */
-  var host: js.UndefOr[Element] = js.native
+  var host: js.UndefOr[Element] = js.undefined
   
   /**
     * Data to be passed to the "activate" hook on the view model.
     */
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A secondary binding context that can override the standard context.
     */
-  var overrideContext: js.UndefOr[js.Any] = js.native
+  var overrideContext: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The view inside which this composition is happening.
     */
-  var owningView: js.UndefOr[View_] = js.native
+  var owningView: js.UndefOr[View_] = js.undefined
   
   /**
     * Should the composition system skip calling the "activate" hook on the view model.
     */
-  var skipActivation: js.UndefOr[Boolean] = js.native
+  var skipActivation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The view url or view strategy to override the default view location convention.
     */
-  var view: js.UndefOr[String | ViewStrategy_] = js.native
+  var view: js.UndefOr[String | ViewStrategy_] = js.undefined
   
   /**
     * The view model url or instance for the component.
     */
-  var viewModel: js.UndefOr[js.Any] = js.native
+  var viewModel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The HtmlBehaviorResource for the component.
     */
-  var viewModelResource: js.UndefOr[HtmlBehaviorResource] = js.native
+  var viewModelResource: js.UndefOr[HtmlBehaviorResource] = js.undefined
   
   /**
     * The view resources for the view in which the component should be created.
     */
-  var viewResources: ViewResources_ = js.native
+  var viewResources: ViewResources_
   
   /**
     * The slot to push the dynamically composed component into.
     */
-  var viewSlot: ViewSlot = js.native
+  var viewSlot: ViewSlot
 }
 object CompositionContext {
   

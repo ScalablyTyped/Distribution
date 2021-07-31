@@ -3,29 +3,27 @@ package typings.feathersjsAuthenticationClient
 import typings.feathersjsAuthenticationClient.mod.FeathersAuthClientConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cookie extends StObject {
     
-    var cookie: String = js.native
+    var cookie: String
     
-    var entity: String = js.native
+    var entity: String
     
-    var header: String = js.native
+    var header: String
     
-    var jwtStrategy: String = js.native
+    var jwtStrategy: String
     
-    var path: String = js.native
+    var path: String
     
-    var service: String = js.native
+    var service: String
     
-    var storageKey: String = js.native
+    var storageKey: String
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Cookie {
     

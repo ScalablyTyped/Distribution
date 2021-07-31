@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is implemented by {@link Shapes} that contain other {@link Shapes} .
   * @deprecated Deprecated
   */
-@js.native
-trait XShapeGroup extends XShape {
+trait XShapeGroup
+  extends StObject
+     with XShape {
   
   /**
     * enters the group which enables the editing function for the parts of a grouped {@link Shape} . Then the parts can be edited instead of the group as a
@@ -21,14 +21,14 @@ trait XShapeGroup extends XShape {
     *
     * This affects only the user interface. The behavior is not specified if this instance is not visible on any view. In this case it may or may not work.
     */
-  def enterGroup(): Unit = js.native
+  def enterGroup(): Unit
   
   /**
     * leaves the group, which disables the editing function for the parts of a grouped {@link Shape} . Then only the group as a whole can be edited.
     *
     * This affects only the user interface. The behavior is not specified if this instance is not visible on any view. In this case it may or may not work.
     */
-  def leaveGroup(): Unit = js.native
+  def leaveGroup(): Unit
 }
 object XShapeGroup {
   

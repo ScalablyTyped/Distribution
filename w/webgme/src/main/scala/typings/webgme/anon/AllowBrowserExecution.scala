@@ -2,44 +2,42 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowBrowserExecution extends StObject {
   
   /**
     * If true will enable execution of plugins on the server.
     *   config.plugin.allowBrowserExecution = true;
     */
-  var allowBrowserExecution: Boolean = js.native
+  var allowBrowserExecution: Boolean
   
   /**
     * If true will enable execution of plugins on 
     * the server.config.plugin.allowServerExecution = false;
     */
-  var allowServerExecution: Boolean = js.native
+  var allowServerExecution: Boolean
   
   /**
     * Same as for `config.addOns.basePath' 
     * [TODO: link to AddOns] but for plugins instead.
     *   config.plugin.basePaths = ['./src/plugin/coreplugins']
     */
-  var basePaths: js.Array[String] = js.native
+  var basePaths: js.Array[String]
   
   /**
     * If true there is no need to register plugins on the 
     * root-node of project - all will be available from the drop-down.
     *   config.plugin.displayAll = false;
     */
-  var displayAll: Boolean = js.native
+  var displayAll: Boolean
   
   /**
     * Time, in milliseconds, results will be stored on 
     * the server after they have finished (when invoked via the REST api).
     *   config.plugin.serverResultTimeout = 60000;
     */
-  var serverResultTimeout: Double = js.native
+  var serverResultTimeout: Double
 }
 object AllowBrowserExecution {
   

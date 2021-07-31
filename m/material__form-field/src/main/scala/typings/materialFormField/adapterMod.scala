@@ -4,21 +4,19 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCFormFieldAdapter extends StObject {
     
-    def activateInputRipple(): Unit = js.native
+    def activateInputRipple(): Unit
     
-    def deactivateInputRipple(): Unit = js.native
+    def deactivateInputRipple(): Unit
     
-    def deregisterInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
-    def registerInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
   }
   object MDCFormFieldAdapter {
     

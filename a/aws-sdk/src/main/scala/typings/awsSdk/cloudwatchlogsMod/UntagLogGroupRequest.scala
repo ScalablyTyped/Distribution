@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagLogGroupRequest extends StObject {
   
   /**
     * The name of the log group.
     */
-  var logGroupName: LogGroupName = js.native
+  var logGroupName: LogGroupName
   
   /**
     * The tag keys. The corresponding tags are removed from the log group.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object UntagLogGroupRequest {
   

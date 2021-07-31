@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2TriggerContextTimeContext extends StObject {
   
   /**
     * The high-level frequency of the recurring update.
     */
-  var frequency: js.UndefOr[GoogleActionsV2TriggerContextTimeContextFrequency] = js.native
+  var frequency: js.UndefOr[GoogleActionsV2TriggerContextTimeContextFrequency] = js.undefined
 }
 object GoogleActionsV2TriggerContextTimeContext {
   

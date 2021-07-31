@@ -2,7 +2,6 @@ package typings.store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,9 +12,9 @@ trait StoreJsAPI extends StObject {
   def clearAll(): Unit = js.native
   
   def createStore(): StoreJsAPI = js.native
-  def createStore(plugins: js.UndefOr[scala.Nothing], namespace: String): StoreJsAPI = js.native
   def createStore(plugins: js.Array[js.Function]): StoreJsAPI = js.native
   def createStore(plugins: js.Array[js.Function], namespace: String): StoreJsAPI = js.native
+  def createStore(plugins: Unit, namespace: String): StoreJsAPI = js.native
   
   def each(callback: js.Function2[/* val */ js.Any, /* namespacedKey */ String, Unit]): Unit = js.native
   

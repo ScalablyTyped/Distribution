@@ -2,31 +2,29 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var city: String = js.native
+  var city: String
   
-  var country_code: String = js.native
+  var country_code: String
   
-  var line1: String = js.native
+  var line1: String
   
-  var line2: js.UndefOr[String] = js.native
+  var line2: js.UndefOr[String] = js.undefined
   
-  val normalization_status: js.UndefOr[String] = js.native
+  val normalization_status: js.UndefOr[String] = js.undefined
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
-  var postal_code: String = js.native
+  var postal_code: String
   
-  var recipient_name: js.UndefOr[String] = js.native
+  var recipient_name: js.UndefOr[String] = js.undefined
   
-  var state: String = js.native
+  var state: String
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Address {
   

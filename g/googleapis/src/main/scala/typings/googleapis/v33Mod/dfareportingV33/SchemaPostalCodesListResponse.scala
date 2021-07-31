@@ -2,25 +2,23 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Postal Code List Response
   */
-@js.native
 trait SchemaPostalCodesListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#postalCodesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Postal code collection.
     */
-  var postalCodes: js.UndefOr[js.Array[SchemaPostalCode]] = js.native
+  var postalCodes: js.UndefOr[js.Array[SchemaPostalCode]] = js.undefined
 }
 object SchemaPostalCodesListResponse {
   

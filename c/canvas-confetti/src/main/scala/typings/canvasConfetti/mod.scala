@@ -3,17 +3,14 @@ package typings.canvasConfetti
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("canvas-confetti", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Null] | Null = js.native
-  @JSImport("canvas-confetti", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[Null] | Null = js.native
+  @scala.inline
+  def apply(): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Null] | Null]
+  @scala.inline
+  def apply(options: Options): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null] | Null]
   
   @JSImport("canvas-confetti", JSImport.Namespace)
   @js.native
@@ -31,16 +28,13 @@ object mod {
   /**
     * This method creates an instance of the confetti function that uses a custom canvas.
     */
-  @JSImport("canvas-confetti", "create")
-  @js.native
-  def create(canvas: HTMLCanvasElement): CreateTypes = js.native
-  @JSImport("canvas-confetti", "create")
-  @js.native
-  def create(canvas: HTMLCanvasElement, options: GlobalOptions): CreateTypes = js.native
+  @scala.inline
+  def create(canvas: HTMLCanvasElement): CreateTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any]).asInstanceOf[CreateTypes]
+  @scala.inline
+  def create(canvas: HTMLCanvasElement, options: GlobalOptions): CreateTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateTypes]
   
-  @JSImport("canvas-confetti", "reset")
-  @js.native
-  def reset(): Reset_ = js.native
+  @scala.inline
+  def reset(): Reset_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Reset_]
   
   @js.native
   trait CreateTypes extends StObject {
@@ -53,20 +47,19 @@ object mod {
     var reset_Original: Reset_ = js.native
   }
   
-  @js.native
   trait GlobalOptions extends StObject {
     
     /**
       * Whether to allow setting the canvas image size, as well as keep it correctly sized if the window changes size
       * @default false
       */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use an asynchronous web worker to render the confetti animation, whenever possible
       * @default false
       */
-    var useWorker: js.UndefOr[Boolean] = js.native
+    var useWorker: js.UndefOr[Boolean] = js.undefined
   }
   object GlobalOptions {
     
@@ -93,84 +86,83 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The angle in which to launch the confetti, in degrees. 90 is straight up.
       * @default 90
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /**
       * An array of color strings, in the HEX format... you know, like #bada55.
       */
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * How quickly the confetti will lose speed. Keep this number between 0 and 1, otherwise the confetti will gain speed. Better yet, just never change it.
       * @default 0.9
       */
-    var decay: js.UndefOr[Double] = js.native
+    var decay: js.UndefOr[Double] = js.undefined
     
     /**
       * Disables confetti entirely for users that prefer reduced motion. The confetti() promise will resolve immediately in this case.
       * @default false
       */
-    var disableForReducedMotion: js.UndefOr[Boolean] = js.native
+    var disableForReducedMotion: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How quickly the particles are pulled down. 1 is full gravity, 0.5 is half gravity, etc., but there are no limits.
       * @default 1
       */
-    var gravity: js.UndefOr[Double] = js.native
+    var gravity: js.UndefOr[Double] = js.undefined
     
     /**
       * Where to start firing confetti from. Feel free to launch off-screen if you'd like.
       */
-    var origin: js.UndefOr[Origin] = js.native
+    var origin: js.UndefOr[Origin] = js.undefined
     
     /**
       * The number of confetti to launch. More is always fun... but be cool, there's a lot of math involved.
       * @default 50
       */
-    var particleCount: js.UndefOr[Double] = js.native
+    var particleCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Scale factor for each confetti particle. Use decimals to make the confetti smaller.
       * @default 1
       */
-    var scalar: js.UndefOr[Double] = js.native
+    var scalar: js.UndefOr[Double] = js.undefined
     
     /**
       * The possible values are square and circle. The default is to use both shapes in an even mix.
       * @default ['square','circle']
       */
-    var shapes: js.UndefOr[js.Array[shape]] = js.native
+    var shapes: js.UndefOr[js.Array[shape]] = js.undefined
     
     /**
       * How far off center the confetti can go, in degrees. 45 means the confetti will launch at the defined angle plus or minus 22.5 degrees.
       * @default 45
       */
-    var spread: js.UndefOr[Double] = js.native
+    var spread: js.UndefOr[Double] = js.undefined
     
     /**
       * How fast the confetti will start going, in pixels.
       * @default 45
       */
-    var startVelocity: js.UndefOr[Double] = js.native
+    var startVelocity: js.UndefOr[Double] = js.undefined
     
     /**
       * How many times the confetti will move. This is abstract... but play with it if the confetti disappear too quickly for you.
       * @default 200
       */
-    var ticks: js.UndefOr[Double] = js.native
+    var ticks: js.UndefOr[Double] = js.undefined
     
     /**
       * The confetti should be on top, after all. But if you have a crazy high page, you can set it even higher.
       * @default 100
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -269,20 +261,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Origin extends StObject {
     
     /**
       * The x position on the page, with 0 being the left edge and 1 being the right edge.
       * @default 0.5
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The y position on the page, with 0 being the left edge and 1 being the right edge.
       * @default 0.5
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Origin {
     

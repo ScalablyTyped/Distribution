@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.anon.PartialIColorPickerProps
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ColorPickerBase")

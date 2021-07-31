@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Templates_ extends Object {
+trait Templates_
+  extends StObject
+     with Object {
   
   /**
     * Includes the primary PopupTemplate suggested for the input layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Templates)
     */
-  var primaryTemplate: Template = js.native
+  var primaryTemplate: Template
   
   /**
     * Includes secondary PopupTemplates that may be applied to the input layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Templates)
     */
-  var secondaryTemplates: js.Array[Template] = js.native
+  var secondaryTemplates: js.Array[Template]
 }
 object Templates_ {
   

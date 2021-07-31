@@ -2,7 +2,6 @@ package typings.chromeApps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see[Documentation]{@link https://developer.chrome.com/apps/tags/appview}
   */
 @js.native
-trait HTMLAppViewElement extends HTMLElement {
+trait HTMLAppViewElement
+  extends StObject
+     with HTMLElement {
   
   /**
     * Requests another app to be embedded.
@@ -28,7 +29,7 @@ trait HTMLAppViewElement extends HTMLElement {
     * @param [callback] Optional callback when the embedding request is completed. Will provide the result.
     */
   def connect(app: String): Unit = js.native
-  def connect(app: String, data: js.UndefOr[scala.Nothing], callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   def connect(app: String, data: js.Any): Unit = js.native
   def connect(app: String, data: js.Any, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  def connect(app: String, data: Unit, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
 }

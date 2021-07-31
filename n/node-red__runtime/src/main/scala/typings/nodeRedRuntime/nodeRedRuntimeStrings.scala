@@ -3,23 +3,28 @@ package typings.nodeRedRuntime
 import typings.nodeRedRuntime.mod.Permission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeRedRuntimeStrings {
   
   @js.native
-  sealed trait Asterisk extends Permission
+  sealed trait Asterisk
+    extends StObject
+       with Permission
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait contextDotread extends Permission
+  sealed trait contextDotread
+    extends StObject
+       with Permission
   @scala.inline
   def contextDotread: contextDotread = "context.read".asInstanceOf[contextDotread]
   
   @js.native
-  sealed trait contextDotwrite extends Permission
+  sealed trait contextDotwrite
+    extends StObject
+       with Permission
   @scala.inline
   def contextDotwrite: contextDotwrite = "context.write".asInstanceOf[contextDotwrite]
   
@@ -44,12 +49,16 @@ object nodeRedRuntimeStrings {
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
-  sealed trait flowsDotread extends Permission
+  sealed trait flowsDotread
+    extends StObject
+       with Permission
   @scala.inline
   def flowsDotread: flowsDotread = "flows.read".asInstanceOf[flowsDotread]
   
   @js.native
-  sealed trait flowsDotwrite extends Permission
+  sealed trait flowsDotwrite
+    extends StObject
+       with Permission
   @scala.inline
   def flowsDotwrite: flowsDotwrite = "flows.write".asInstanceOf[flowsDotwrite]
   
@@ -59,12 +68,16 @@ object nodeRedRuntimeStrings {
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait nodesDotread extends Permission
+  sealed trait nodesDotread
+    extends StObject
+       with Permission
   @scala.inline
   def nodesDotread: nodesDotread = "nodes.read".asInstanceOf[nodesDotread]
   
   @js.native
-  sealed trait nodesDotwrite extends Permission
+  sealed trait nodesDotwrite
+    extends StObject
+       with Permission
   @scala.inline
   def nodesDotwrite: nodesDotwrite = "nodes.write".asInstanceOf[nodesDotwrite]
   
@@ -74,7 +87,9 @@ object nodeRedRuntimeStrings {
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait read extends Permission
+  sealed trait read
+    extends StObject
+       with Permission
   @scala.inline
   def read: read = "read".asInstanceOf[read]
   

@@ -3,10 +3,13 @@ package typings.opentracing
 import typings.opentracing.mod.Tracer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiCompatibilityMod {
+  
+  @JSImport("opentracing/lib/test/api_compatibility", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A function that takes a tracer factory, and tests wheter the initialized tracer
@@ -15,26 +18,21 @@ object apiCompatibilityMod {
     * @param {object} createTracer - a factory function that allocates a tracer.
     * @param {object} [options] - the options to be set on api compatibility
     */
-  @JSImport("opentracing/lib/test/api_compatibility", JSImport.Default)
-  @js.native
-  def default(): Unit = js.native
-  @JSImport("opentracing/lib/test/api_compatibility", JSImport.Default)
-  @js.native
-  def default(createTracer: js.UndefOr[scala.Nothing], options: ApiCompatibilityChecksOptions): Unit = js.native
-  @JSImport("opentracing/lib/test/api_compatibility", JSImport.Default)
-  @js.native
-  def default(createTracer: js.Function0[Tracer]): Unit = js.native
-  @JSImport("opentracing/lib/test/api_compatibility", JSImport.Default)
-  @js.native
-  def default(createTracer: js.Function0[Tracer], options: ApiCompatibilityChecksOptions): Unit = js.native
+  @scala.inline
+  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  @scala.inline
+  def default(createTracer: js.Function0[Tracer]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(createTracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(createTracer: js.Function0[Tracer], options: ApiCompatibilityChecksOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(createTracer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def default(createTracer: Unit, options: ApiCompatibilityChecksOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(createTracer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait ApiCompatibilityChecksOptions extends StObject {
     
     /** a boolean that controls whether or not to verify certain API functionality */
-    var skipBaggageChecks: js.UndefOr[Boolean] = js.native
+    var skipBaggageChecks: js.UndefOr[Boolean] = js.undefined
     
-    var skipInjectExtractChecks: js.UndefOr[Boolean] = js.native
+    var skipInjectExtractChecks: js.UndefOr[Boolean] = js.undefined
   }
   object ApiCompatibilityChecksOptions {
     

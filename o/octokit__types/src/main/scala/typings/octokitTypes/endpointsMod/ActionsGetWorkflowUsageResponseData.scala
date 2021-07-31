@@ -3,13 +3,11 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.UBUNTU
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsGetWorkflowUsageResponseData extends StObject {
   
-  var billable: UBUNTU = js.native
+  var billable: UBUNTU
 }
 object ActionsGetWorkflowUsageResponseData {
   

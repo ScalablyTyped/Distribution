@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,38 +11,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Examples of valid hex values: #ff0000, #00ff0080 #00f and #ff. The hashtag is optional.
   * @see https://docs.scriptable.app/color/#-new-color
   */
-@js.native
 trait Color extends StObject {
   
   /**
     * _Alpha of the color._
     * @see https://docs.scriptable.app/color/#alpha
     */
-  var alpha: Double = js.native
+  var alpha: Double
   
   /**
     * _Amount of blue in the color._
     * @see https://docs.scriptable.app/color/#blue
     */
-  var blue: Double = js.native
+  var blue: Double
   
   /**
     * _Amount of green in the color._
     * @see https://docs.scriptable.app/color/#green
     */
-  var green: Double = js.native
+  var green: Double
   
   /**
     * _HEX representation._
     * @see https://docs.scriptable.app/color/#hex
     */
-  var hex: String = js.native
+  var hex: String
   
   /**
     * _Amount of red in the color._
     * @see https://docs.scriptable.app/color/#red
     */
-  var red: Double = js.native
+  var red: Double
 }
 object Color {
   

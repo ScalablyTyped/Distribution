@@ -2,13 +2,11 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestrictionsObject extends StObject {
   
-  var reason: String = js.native
+  var reason: String
 }
 object RestrictionsObject {
   

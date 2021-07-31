@@ -2,16 +2,15 @@ package typings.css.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFace
-  extends Node
+  extends StObject
+     with Node
      with AtRule {
   
   /** Array of nodes with the types declaration and comment. */
-  var declarations: js.UndefOr[js.Array[Declaration | Comment]] = js.native
+  var declarations: js.UndefOr[js.Array[Declaration | Comment]] = js.undefined
 }
 object FontFace {
   

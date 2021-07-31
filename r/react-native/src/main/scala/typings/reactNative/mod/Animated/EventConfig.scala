@@ -3,15 +3,13 @@ package typings.reactNative.mod.Animated
 import typings.reactNative.mod.NativeSyntheticEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventConfig[T] extends StObject {
   
-  var listener: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[T], Unit]] = js.native
+  var listener: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[T], Unit]] = js.undefined
   
-  var useNativeDriver: Boolean = js.native
+  var useNativeDriver: Boolean
 }
 object EventConfig {
   
@@ -22,7 +20,7 @@ object EventConfig {
   }
   
   @scala.inline
-  implicit class EventConfigMutableBuilder[Self <: EventConfig[_], T] (val x: Self with EventConfig[T]) extends AnyVal {
+  implicit class EventConfigMutableBuilder[Self <: EventConfig[?], T] (val x: Self & EventConfig[T]) extends AnyVal {
     
     @scala.inline
     def setListener(value: /* event */ NativeSyntheticEvent[T] => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))

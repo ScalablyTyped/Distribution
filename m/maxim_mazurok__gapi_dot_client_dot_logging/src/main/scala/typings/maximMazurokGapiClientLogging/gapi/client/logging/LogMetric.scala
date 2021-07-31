@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogMetric extends StObject {
   
   /**
     * Optional. The bucket_options are required when the logs-based metric is using a DISTRIBUTION value type and it describes the bucket boundaries used to create a histogram of the
     * extracted values.
     */
-  var bucketOptions: js.UndefOr[BucketOptions] = js.native
+  var bucketOptions: js.UndefOr[BucketOptions] = js.undefined
   
   /** Output only. The creation timestamp of the metric.This field may not be present for older metrics. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. An advanced logs filter (https://cloud.google.com/logging/docs/view/advanced_filters) which is used to match log entries. Example: "resource.type=gae_app AND
     * severity>=ERROR" The maximum length of the filter is 20000 characters.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A map from a label key string to an extractor expression which is used to extract data from a log entry field and assign as the label value. Each label key specified in
@@ -37,8 +35,8 @@ trait LogMetric extends StObject {
   var labelExtractors: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Optional. The metric descriptor associated with the logs-based metric. If unspecified, it uses a default metric descriptor with a DELTA metric kind, INT64 value type, with no labels
@@ -48,7 +46,7 @@ trait LogMetric extends StObject {
     * expression as the value in the label_extractors map.The metric_kind and value_type fields in the metric_descriptor cannot be updated once initially configured. New labels can be
     * added in the metric_descriptor, but existing labels cannot be modified except for their description.
     */
-  var metricDescriptor: js.UndefOr[MetricDescriptor] = js.native
+  var metricDescriptor: js.UndefOr[MetricDescriptor] = js.undefined
   
   /**
     * Required. The client-assigned metric identifier. Examples: "error_count", "nginx/requests".Metric identifiers are limited to 100 characters and can include only the following
@@ -56,10 +54,10 @@ trait LogMetric extends StObject {
     * name.The metric identifier in this field must not be URL-encoded (https://en.wikipedia.org/wiki/Percent-encoding). However, when the metric identifier appears as the [METRIC_ID]
     * part of a metric_name API parameter, then the metric identifier must be URL-encoded. Example: "projects/my-project/metrics/nginx%2Frequests".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The last update timestamp of the metric.This field may not be present for older metrics. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A value_extractor is required when using a distribution logs-based metric to extract the values to record from a log entry. Two functions are supported for value
@@ -69,10 +67,10 @@ trait LogMetric extends StObject {
     * convertible to a double type, as the distribution always records double values. If either the extraction or the conversion to double fails, then those values are not recorded in the
     * distribution.Example: REGEXP_EXTRACT(jsonPayload.request, ".*quantity=(\d+).*")
     */
-  var valueExtractor: js.UndefOr[String] = js.native
+  var valueExtractor: js.UndefOr[String] = js.undefined
   
   /** Deprecated. The API version that created or updated this metric. The v2 format is used by default and cannot be changed. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object LogMetric {
   
@@ -113,7 +111,7 @@ object LogMetric {
     def setLabelExtractors(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[js.Any]
     ): Self = StObject.set(x, "labelExtractors", value.asInstanceOf[js.Any])
     
     @scala.inline

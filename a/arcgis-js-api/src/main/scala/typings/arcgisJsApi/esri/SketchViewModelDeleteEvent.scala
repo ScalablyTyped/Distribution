@@ -6,24 +6,22 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchViewModelDeleteEvent extends StObject {
   
-  var graphics: js.Array[Graphic] = js.native
+  var graphics: js.Array[Graphic]
   
-  var tool: move | reshape | transform = js.native
+  var tool: move | reshape | transform
   
-  var `type`: delete = js.native
+  var `type`: delete
 }
 object SketchViewModelDeleteEvent {
   
   @scala.inline
-  def apply(graphics: js.Array[Graphic], tool: move | reshape | transform, `type`: delete): SketchViewModelDeleteEvent = {
+  def apply(graphics: js.Array[Graphic], tool: move | reshape | transform): SketchViewModelDeleteEvent = {
     val __obj = js.Dynamic.literal(graphics = graphics.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[SketchViewModelDeleteEvent]
   }
   

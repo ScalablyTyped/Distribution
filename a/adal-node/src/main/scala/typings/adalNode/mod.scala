@@ -6,10 +6,13 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("adal-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("adal-node", "AuthenticationContext")
   @js.native
@@ -34,27 +37,12 @@ object mod {
       */
     def this(authority: String) = this()
     def this(authority: String, validateAuthority: Boolean) = this()
-    def this(authority: String, validateAuthority: js.UndefOr[scala.Nothing], cache: TokenCache) = this()
     def this(authority: String, validateAuthority: Boolean, cache: TokenCache) = this()
-    def this(
-      authority: String,
-      validateAuthority: js.UndefOr[scala.Nothing],
-      cache: js.UndefOr[scala.Nothing],
-      aadApiVersion: String
-    ) = this()
-    def this(
-      authority: String,
-      validateAuthority: js.UndefOr[scala.Nothing],
-      cache: TokenCache,
-      aadApiVersion: String
-    ) = this()
-    def this(
-      authority: String,
-      validateAuthority: Boolean,
-      cache: js.UndefOr[scala.Nothing],
-      aadApiVersion: String
-    ) = this()
+    def this(authority: String, validateAuthority: Unit, cache: TokenCache) = this()
+    def this(authority: String, validateAuthority: Boolean, cache: Unit, aadApiVersion: String) = this()
     def this(authority: String, validateAuthority: Boolean, cache: TokenCache, aadApiVersion: String) = this()
+    def this(authority: String, validateAuthority: Unit, cache: Unit, aadApiVersion: String) = this()
+    def this(authority: String, validateAuthority: Unit, cache: TokenCache, aadApiVersion: String) = this()
     
     /**
       * Gets a token for a given resource.
@@ -232,17 +220,15 @@ object mod {
       * Get's the current global logging options.
       * @return {LoggingOptions}
       */
-    @JSImport("adal-node", "Logging.getLoggingOptions")
-    @js.native
-    def getLoggingOptions(): LoggingOptions = js.native
+    @scala.inline
+    def getLoggingOptions(): LoggingOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggingOptions")().asInstanceOf[LoggingOptions]
     
     /**
       * Sets global logging options for ADAL.
       * @param {LoggingOptions} options
       */
-    @JSImport("adal-node", "Logging.setLoggingOptions")
-    @js.native
-    def setLoggingOptions(options: LoggingOptions): Unit = js.native
+    @scala.inline
+    def setLoggingOptions(options: LoggingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoggingOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("adal-node", "MemoryCache")
@@ -250,62 +236,89 @@ object mod {
   /**
     * @constructor Creates an instance of MemoryCache
     */
-  class MemoryCache () extends TokenCache {
+  class MemoryCache ()
+    extends StObject
+       with TokenCache {
     
     /**
       * @private
       * @property {Array<TokenResponse>} _entries An array of entries in the TokenCache.
       */
     var _entries: js.Array[TokenResponse] = js.native
+    
+    /**
+      * Adds a collection of entries to the cache in a single batch operation.
+      * @param {Array}   entries  An array of entries to add to the cache.
+      * @param  {Function} callback This function is called when the operation is complete.  Any error is provided as the
+      *                             first parameter.
+      */
+    /* CompleteClass */
+    override def add(
+      entries: js.Array[TokenResponse],
+      callback: js.Function2[/* err */ Error, /* result */ Boolean, Unit]
+    ): Unit = js.native
+    
+    /**
+      * Finds all entries in the cache that match all of the passed in values.
+      * @param  {object}   query    This object will be compared to each entry in the cache.  Any entries that
+      *                             match all of the values in this object will be returned.  All the values
+      *                             in the passed in object must match values in a potentialy returned object
+      *                             exactly.  The returned object may have more values than the passed in query
+      *                             object. Please take a look at http://underscorejs.org/#where for an example 
+      *                             on how to provide query.
+      * @param  {TokenCacheFindCallback} callback
+      */
+    /* CompleteClass */
+    override def find(query: js.Any, callback: js.Function2[/* err */ Error, /* results */ js.Array[js.Any], Unit]): Unit = js.native
+    
+    /**
+      * Removes a collection of entries from the cache in a single batch operation.
+      * @param  {Array}   entries  An array of cache entries to remove.
+      * @param  {Function} callback This function is called when the operation is complete.  Any error is provided as the
+      *                             first parameter.
+      */
+    /* CompleteClass */
+    override def remove(entires: js.Array[TokenResponse], callback: js.Function2[/* err */ Error, /* result */ Null, Unit]): Unit = js.native
   }
   
-  @JSImport("adal-node", "createAuthenticationContext")
-  @js.native
-  def createAuthenticationContext(authority: String): AuthenticationContext = js.native
-  @JSImport("adal-node", "createAuthenticationContext")
-  @js.native
-  def createAuthenticationContext(authority: String, validateAuthority: Boolean): AuthenticationContext = js.native
+  @scala.inline
+  def createAuthenticationContext(authority: String): AuthenticationContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createAuthenticationContext")(authority.asInstanceOf[js.Any]).asInstanceOf[AuthenticationContext]
+  @scala.inline
+  def createAuthenticationContext(authority: String, validateAuthority: Boolean): AuthenticationContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthenticationContext")(authority.asInstanceOf[js.Any], validateAuthority.asInstanceOf[js.Any])).asInstanceOf[AuthenticationContext]
   
-  @JSImport("adal-node", "createAuthenticationParametersFromHeader")
-  @js.native
-  def createAuthenticationParametersFromHeader(challenge: String): AuthenticationParameters = js.native
+  @scala.inline
+  def createAuthenticationParametersFromHeader(challenge: String): AuthenticationParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("createAuthenticationParametersFromHeader")(challenge.asInstanceOf[js.Any]).asInstanceOf[AuthenticationParameters]
   
-  @JSImport("adal-node", "createAuthenticationParametersFromResponse")
-  @js.native
-  def createAuthenticationParametersFromResponse(response: IncomingMessage): AuthenticationParameters = js.native
+  @scala.inline
+  def createAuthenticationParametersFromResponse(response: IncomingMessage): AuthenticationParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("createAuthenticationParametersFromResponse")(response.asInstanceOf[js.Any]).asInstanceOf[AuthenticationParameters]
   
-  @JSImport("adal-node", "createAuthenticationParametersFromUrl")
-  @js.native
+  @scala.inline
   def createAuthenticationParametersFromUrl(
     url: String,
     callback: js.Function2[/* error */ Error, /* parameters */ AuthenticationParameters, Unit]
-  ): AuthenticationParameters = js.native
-  @JSImport("adal-node", "createAuthenticationParametersFromUrl")
-  @js.native
+  ): AuthenticationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthenticationParametersFromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[AuthenticationParameters]
+  @scala.inline
   def createAuthenticationParametersFromUrl(
     url: String,
     callback: js.Function2[/* error */ Error, /* parameters */ AuthenticationParameters, Unit],
     correlationId: String
-  ): AuthenticationParameters = js.native
+  ): AuthenticationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthenticationParametersFromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[AuthenticationParameters]
   
-  @JSImport("adal-node", "getGlobalADALOptions")
-  @js.native
-  def getGlobalADALOptions(): js.Any = js.native
+  @scala.inline
+  def getGlobalADALOptions(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalADALOptions")().asInstanceOf[js.Any]
   
-  @JSImport("adal-node", "setGlobalADALOptions")
-  @js.native
-  def setGlobalADALOptions(): js.Any = js.native
+  @scala.inline
+  def setGlobalADALOptions(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalADALOptions")().asInstanceOf[js.Any]
   
   type AcquireTokenCallback = js.Function2[/* error */ Error, /* response */ TokenResponse | ErrorResponse, Unit]
   
   type AcquireUserCodeCallback = js.Function2[/* error */ Error, /* response */ UserCodeInfo, Unit]
   
-  @js.native
   trait ErrorResponse extends StObject {
     
-    var error: String = js.native
+    var error: String
     
-    var errorDescription: String = js.native
+    var errorDescription: String
   }
   object ErrorResponse {
     
@@ -364,14 +377,13 @@ object mod {
     * @property {LoggingLevel} [level] The maximum level of log entries to generate.
     * @property {boolean} [loggingWithPII] This value indicts if personal identity related information such as token and claims should be logged. The default value is false.
     */
-  @js.native
   trait LoggingOptions extends StObject {
     
-    var level: js.UndefOr[LoggingLevel] = js.native
+    var level: js.UndefOr[LoggingLevel] = js.undefined
     
-    var log: js.UndefOr[LoggingCallback] = js.native
+    var log: js.UndefOr[LoggingCallback] = js.undefined
     
-    var loggingWithPII: js.UndefOr[Boolean] = js.native
+    var loggingWithPII: js.UndefOr[Boolean] = js.undefined
   }
   object LoggingOptions {
     
@@ -404,7 +416,6 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenCache extends StObject {
     
     /**
@@ -416,7 +427,7 @@ object mod {
     def add(
       entries: js.Array[TokenResponse],
       callback: js.Function2[/* err */ Error, /* result */ Boolean, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Finds all entries in the cache that match all of the passed in values.
@@ -428,7 +439,7 @@ object mod {
       *                             on how to provide query.
       * @param  {TokenCacheFindCallback} callback
       */
-    def find(query: js.Any, callback: js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]): Unit = js.native
+    def find(query: js.Any, callback: js.Function2[/* err */ Error, /* results */ js.Array[js.Any], Unit]): Unit
     
     /**
       * Removes a collection of entries from the cache in a single batch operation.
@@ -436,14 +447,14 @@ object mod {
       * @param  {Function} callback This function is called when the operation is complete.  Any error is provided as the
       *                             first parameter.
       */
-    def remove(entires: js.Array[TokenResponse], callback: js.Function2[/* err */ Error, /* result */ Null, Unit]): Unit = js.native
+    def remove(entires: js.Array[TokenResponse], callback: js.Function2[/* err */ Error, /* result */ Null, Unit]): Unit
   }
   object TokenCache {
     
     @scala.inline
     def apply(
       add: (js.Array[TokenResponse], js.Function2[/* err */ Error, /* result */ Boolean, Unit]) => Unit,
-      find: (js.Any, js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]) => Unit,
+      find: (js.Any, js.Function2[/* err */ Error, /* results */ js.Array[js.Any], Unit]) => Unit,
       remove: (js.Array[TokenResponse], js.Function2[/* err */ Error, /* result */ Null, Unit]) => Unit
     ): TokenCache = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), find = js.Any.fromFunction2(find), remove = js.Any.fromFunction2(remove))
@@ -459,96 +470,96 @@ object mod {
       ): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setFind(value: (js.Any, js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
+      def setFind(value: (js.Any, js.Function2[/* err */ Error, /* results */ js.Array[js.Any], Unit]) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRemove(value: (js.Array[TokenResponse], js.Function2[/* err */ Error, /* result */ Null, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait TokenResponse
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
     /**
       * @property {string} accessToken The returned access token.
       */
-    var accessToken: String = js.native
+    var accessToken: String
     
     /**
       * @property {Date} [createdOn] The date on which the access token was created.
       */
-    var createdOn: js.UndefOr[Date | String] = js.native
+    var createdOn: js.UndefOr[Date | String] = js.undefined
     
     /**
       * @property {any} [error] Provides information about error if any.
       */
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
     /**
       * @property {any} [errorDescription] Short description about error if any.
       */
-    var errorDescription: js.UndefOr[js.Any] = js.native
+    var errorDescription: js.UndefOr[js.Any] = js.undefined
     
     /**
       *  @property {int} expiresIn The amount of time, in seconds, for which the token is valid.
       */
-    var expiresIn: Double = js.native
+    var expiresIn: Double
     
     /**
       *  @property {Date} expiresOn The Date on which the access token expires.
       */
-    var expiresOn: Date | String = js.native
+    var expiresOn: Date | String
     
     /**
       * @property {string} [familyName] The family name of the principal represented by the access token.
       */
-    var familyName: js.UndefOr[String] = js.native
+    var familyName: js.UndefOr[String] = js.undefined
     
     /**
       * @property {string} [givenName] The given name of the principal represented by the access token.
       */
-    var givenName: js.UndefOr[String] = js.native
+    var givenName: js.UndefOr[String] = js.undefined
     
     /**
       * @property {string} [identityProvider] Identifies the identity provider that issued the access token.
       */
-    var identityProvider: js.UndefOr[String] = js.native
+    var identityProvider: js.UndefOr[String] = js.undefined
     
     /**
       * @property {boolean}   [isUserIdDisplayable] Indicates whether the user_id property will be meaningful if displayed to a user.
       */
-    var isUserIdDisplayable: js.UndefOr[Boolean] = js.native
+    var isUserIdDisplayable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @property {string} [oid] The object id of the user in the tenant
       */
-    var oid: js.UndefOr[String] = js.native
+    var oid: js.UndefOr[String] = js.undefined
     
     /**
       * @property {string} [refreshToken] A refresh token.
       */
-    var refreshToken: js.UndefOr[String] = js.native
+    var refreshToken: js.UndefOr[String] = js.undefined
     
     /**
       * @property {string} resource The resource for which the token was requested for. Example: 'https://management.core.windows.net/'.
       */
-    var resource: String = js.native
+    var resource: String
     
     /**
       * @property {string} [tenantId] The identifier of the tenant under which the access token was issued.
       */
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
     
     /**
       * @property {string} tokenType The type of token returned. Example 'Bearer'.
       */
-    var tokenType: String = js.native
+    var tokenType: String
     
     /**
       * @property {string} [userId] An id for the user.  May be a displayable value if is_user_id_displayable is true.
       */
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
   }
   object TokenResponse {
     
@@ -650,25 +661,25 @@ object mod {
     }
   }
   
-  @js.native
   trait UserCodeInfo
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var deviceCode: String = js.native
+    var deviceCode: String
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var errorDescription: js.UndefOr[js.Any] = js.native
+    var errorDescription: js.UndefOr[js.Any] = js.undefined
     
-    var expiresIn: Double = js.native
+    var expiresIn: Double
     
-    var interval: Double = js.native
+    var interval: Double
     
-    var message: String = js.native
+    var message: String
     
-    var userCode: String = js.native
+    var userCode: String
     
-    var verificationUrl: String = js.native
+    var verificationUrl: String
   }
   object UserCodeInfo {
     

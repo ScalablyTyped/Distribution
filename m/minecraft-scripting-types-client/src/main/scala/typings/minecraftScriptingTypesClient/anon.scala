@@ -2,48 +2,46 @@ package typings.minecraftScriptingTypesClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Absorbsinput extends StObject {
     
     /**
       * If true, input will not be passed down to any other screens underneath
       */
-    var absorbs_input: js.UndefOr[Boolean] = js.native
+    var absorbs_input: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the screen will always accept and process input for as long as it is in the stack, even if other custom UI screens appear on top of it
       */
-    var always_accepts_input: js.UndefOr[Boolean] = js.native
+    var always_accepts_input: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, this screen will be rendered even if another screen is on top of it and will render over them, including the HUD
       */
-    var force_render_below: js.UndefOr[Boolean] = js.native
+    var force_render_below: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the screen will be treated as the pause menu and the pause menu won't be allowed to show on top of this screen
       */
-    var is_showing_menu: js.UndefOr[Boolean] = js.native
+    var is_showing_menu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the game will continue to be rendered underneath this screen
       */
-    var render_game_behind: js.UndefOr[Boolean] = js.native
+    var render_game_behind: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, this screen will only be rendered if it is the screen at the top of the stack
       */
-    var render_only_when_topmost: js.UndefOr[Boolean] = js.native
+    var render_only_when_topmost: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the screen will capture the mouse pointer and limit its movement to the UI screen
       */
-    var should_steal_mouse: js.UndefOr[Boolean] = js.native
+    var should_steal_mouse: js.UndefOr[Boolean] = js.undefined
   }
   object Absorbsinput {
     

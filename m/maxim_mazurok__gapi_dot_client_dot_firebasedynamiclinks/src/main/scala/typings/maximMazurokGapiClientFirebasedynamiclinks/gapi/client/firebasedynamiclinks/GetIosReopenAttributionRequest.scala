@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIosReopenAttributionRequest extends StObject {
   
   /** APP bundle ID. */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * FDL link to be verified from an app universal link open. The FDL link can be one of: 1) short FDL. e.g. .page.link/, or 2) long FDL. e.g. .page.link/?{query params}, or 3) Invite
     * FDL. e.g. .page.link/i/
     */
-  var requestedLink: js.UndefOr[String] = js.native
+  var requestedLink: js.UndefOr[String] = js.undefined
   
   /** Google SDK version. Version takes the form "$major.$minor.$patch" */
-  var sdkVersion: js.UndefOr[String] = js.native
+  var sdkVersion: js.UndefOr[String] = js.undefined
 }
 object GetIosReopenAttributionRequest {
   

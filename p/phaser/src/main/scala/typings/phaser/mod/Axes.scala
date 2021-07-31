@@ -2,7 +2,6 @@ package typings.phaser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Axes")
 @js.native
 class Axes ()
-  extends typings.phaser.MatterJS.Axes
+  extends StObject
+     with typings.phaser.MatterJS.Axes
 object Axes {
+  
+  @JSImport("matter", "Axes")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new set of axes from the given vertices.
@@ -23,9 +27,8 @@ object Axes {
     * @return {axes} A new axes from the given vertices
     */
   /* static member */
-  @JSImport("matter", "Axes.fromVertices")
-  @js.native
-  def fromVertices(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = js.native
+  @scala.inline
+  def fromVertices(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Rotates a set of axes by the given angle.
@@ -34,7 +37,6 @@ object Axes {
     * @param {number} angle
     */
   /* static member */
-  @JSImport("matter", "Axes.rotate")
-  @js.native
-  def rotate(axes: js.Array[typings.phaser.MatterJS.Vector], angle: Double): Unit = js.native
+  @scala.inline
+  def rotate(axes: js.Array[typings.phaser.MatterJS.Vector], angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(axes.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

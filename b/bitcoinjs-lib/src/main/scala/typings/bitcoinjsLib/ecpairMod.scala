@@ -4,44 +4,40 @@ import typings.bitcoinjsLib.networksMod.Network
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecpairMod {
   
-  @JSImport("bitcoinjs-lib/types/ecpair", "fromPrivateKey")
+  @JSImport("bitcoinjs-lib/types/ecpair", JSImport.Namespace)
   @js.native
-  def fromPrivateKey(buffer: Buffer): ECPair = js.native
-  @JSImport("bitcoinjs-lib/types/ecpair", "fromPrivateKey")
-  @js.native
-  def fromPrivateKey(buffer: Buffer, options: ECPairOptions): ECPair = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/ecpair", "fromPublicKey")
-  @js.native
-  def fromPublicKey(buffer: Buffer): ECPair = js.native
-  @JSImport("bitcoinjs-lib/types/ecpair", "fromPublicKey")
-  @js.native
-  def fromPublicKey(buffer: Buffer, options: ECPairOptions): ECPair = js.native
+  @scala.inline
+  def fromPrivateKey(buffer: Buffer): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[ECPair]
+  @scala.inline
+  def fromPrivateKey(buffer: Buffer, options: ECPairOptions): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ECPair]
   
-  @JSImport("bitcoinjs-lib/types/ecpair", "fromWIF")
-  @js.native
-  def fromWIF(wifString: String): ECPair = js.native
-  @JSImport("bitcoinjs-lib/types/ecpair", "fromWIF")
-  @js.native
-  def fromWIF(wifString: String, network: js.Array[Network]): ECPair = js.native
-  @JSImport("bitcoinjs-lib/types/ecpair", "fromWIF")
-  @js.native
-  def fromWIF(wifString: String, network: Network): ECPair = js.native
+  @scala.inline
+  def fromPublicKey(buffer: Buffer): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[ECPair]
+  @scala.inline
+  def fromPublicKey(buffer: Buffer, options: ECPairOptions): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ECPair]
   
-  @JSImport("bitcoinjs-lib/types/ecpair", "makeRandom")
-  @js.native
-  def makeRandom(): ECPair = js.native
-  @JSImport("bitcoinjs-lib/types/ecpair", "makeRandom")
-  @js.native
-  def makeRandom(options: ECPairOptions): ECPair = js.native
+  @scala.inline
+  def fromWIF(wifString: String): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any]).asInstanceOf[ECPair]
+  @scala.inline
+  def fromWIF(wifString: String, network: js.Array[Network]): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[ECPair]
+  @scala.inline
+  def fromWIF(wifString: String, network: Network): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[ECPair]
+  
+  @scala.inline
+  def makeRandom(): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")().asInstanceOf[ECPair]
+  @scala.inline
+  def makeRandom(options: ECPairOptions): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")(options.asInstanceOf[js.Any]).asInstanceOf[ECPair]
   
   @js.native
-  trait ECPair extends ECPairInterface {
+  trait ECPair
+    extends StObject
+       with ECPairInterface {
     
     var __D: js.Any = js.native
     
@@ -49,7 +45,9 @@ object ecpairMod {
   }
   
   @js.native
-  trait ECPairInterface extends Signer {
+  trait ECPairInterface
+    extends StObject
+       with Signer {
     
     var compressed: Boolean = js.native
     
@@ -65,14 +63,13 @@ object ecpairMod {
     def verify(hash: Buffer, signature: Buffer): Boolean = js.native
   }
   
-  @js.native
   trait ECPairOptions extends StObject {
     
-    var compressed: js.UndefOr[Boolean] = js.native
+    var compressed: js.UndefOr[Boolean] = js.undefined
     
-    var network: js.UndefOr[Network] = js.native
+    var network: js.UndefOr[Network] = js.undefined
     
-    var rng: js.UndefOr[js.Function1[/* arg0 */ Double, Buffer]] = js.native
+    var rng: js.UndefOr[js.Function1[/* arg0 */ Double, Buffer]] = js.undefined
   }
   object ECPairOptions {
     

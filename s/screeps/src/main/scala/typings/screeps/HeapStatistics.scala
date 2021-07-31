@@ -4,31 +4,29 @@ import typings.screeps.screepsNumbers.`0`
 import typings.screeps.screepsNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeapStatistics extends StObject {
   
-  var does_zap_garbage: `0` | `1` = js.native
+  var does_zap_garbage: `0` | `1`
   
-  var externally_allocated_size: Double = js.native
+  var externally_allocated_size: Double
   
-  var heap_size_limit: Double = js.native
+  var heap_size_limit: Double
   
-  var malloced_memory: Double = js.native
+  var malloced_memory: Double
   
-  var peak_malloced_memory: Double = js.native
+  var peak_malloced_memory: Double
   
-  var total_available_size: Double = js.native
+  var total_available_size: Double
   
-  var total_heap_size: Double = js.native
+  var total_heap_size: Double
   
-  var total_heap_size_executable: Double = js.native
+  var total_heap_size_executable: Double
   
-  var total_physical_size: Double = js.native
+  var total_physical_size: Double
   
-  var used_heap_size: Double = js.native
+  var used_heap_size: Double
 }
 object HeapStatistics {
   

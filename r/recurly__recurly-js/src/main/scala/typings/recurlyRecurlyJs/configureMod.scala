@@ -4,32 +4,30 @@ import typings.recurlyRecurlyJs.anon.All
 import typings.recurlyRecurlyJs.anon.Braintree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configureMod {
   
   type Configure = js.Function1[/* recurlyConfig */ RecurlyOptions | String, Unit]
   
-  @js.native
   trait RecurlyOptions extends StObject {
     
-    var cors: js.UndefOr[Boolean] = js.native
+    var cors: js.UndefOr[Boolean] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Use {@link https://developers.recurly.com/reference/recurly-js/index.html#elements|Elements} instead.
       */
-    var fields: js.UndefOr[All] = js.native
+    var fields: js.UndefOr[All] = js.undefined
     
-    var fraud: js.UndefOr[Braintree] = js.native
+    var fraud: js.UndefOr[Braintree] = js.undefined
     
-    var publicKey: String = js.native
+    var publicKey: String
     
-    var required: js.UndefOr[js.Array[String]] = js.native
+    var required: js.UndefOr[js.Array[String]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RecurlyOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingGroupProperties extends StObject {
   
   /**
     * The description of the billing group.
     */
-  var billingGroupDescription: js.UndefOr[BillingGroupDescription] = js.native
+  var billingGroupDescription: js.UndefOr[BillingGroupDescription] = js.undefined
 }
 object BillingGroupProperties {
   

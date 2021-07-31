@@ -5,7 +5,6 @@ import typings.operationRetrier.anon.Initial
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object retrierMod {
@@ -74,7 +73,7 @@ object retrierMod {
     
     var scheduleAttempt: js.Any = js.native
     
-    def start(): js.Promise[_] = js.native
+    def start(): js.Promise[js.Any] = js.native
     
     var startTimestamp: js.Any = js.native
     

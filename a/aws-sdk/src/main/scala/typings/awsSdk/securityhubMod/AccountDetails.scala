@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountDetails extends StObject {
   
   /**
     * The ID of an AWS account.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.undefined
   
   /**
     * The email of an AWS account.
     */
-  var Email: js.UndefOr[NonEmptyString] = js.native
+  var Email: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AccountDetails {
   

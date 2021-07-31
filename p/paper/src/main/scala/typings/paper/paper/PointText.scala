@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * characters contained in it.
   */
 @js.native
-trait PointText extends TextItem {
+trait PointText
+  extends StObject
+     with TextItem {
   
   /** 
     * The PointText's anchor point

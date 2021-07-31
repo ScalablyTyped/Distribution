@@ -2,51 +2,49 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCustomActionTypeInput extends StObject {
   
   /**
     * The category of the custom action, such as a build action or a test action.
     */
-  var category: ActionCategory = js.native
+  var category: ActionCategory
   
   /**
     * The configuration properties for the custom action.  You can refer to a name in the configuration properties of the custom action within the URL templates by following the format of {Config:name}, as long as the configuration property is both required and not secret. For more information, see Create a Custom Action for a Pipeline. 
     */
-  var configurationProperties: js.UndefOr[ActionConfigurationPropertyList] = js.native
+  var configurationProperties: js.UndefOr[ActionConfigurationPropertyList] = js.undefined
   
   /**
     * The details of the input artifact for the action, such as its commit ID.
     */
-  var inputArtifactDetails: ArtifactDetails = js.native
+  var inputArtifactDetails: ArtifactDetails
   
   /**
     * The details of the output artifact of the action, such as its commit ID.
     */
-  var outputArtifactDetails: ArtifactDetails = js.native
+  var outputArtifactDetails: ArtifactDetails
   
   /**
     * The provider of the service used in the custom action, such as AWS CodeDeploy.
     */
-  var provider: ActionProvider = js.native
+  var provider: ActionProvider
   
   /**
     * URLs that provide users information about this custom action.
     */
-  var settings: js.UndefOr[ActionTypeSettings] = js.native
+  var settings: js.UndefOr[ActionTypeSettings] = js.undefined
   
   /**
     * The tags for the custom action.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The version identifier of the custom action.
     */
-  var version: Version = js.native
+  var version: Version
 }
 object CreateCustomActionTypeInput {
   

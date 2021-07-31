@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveLayerInfo extends Accessor {
+trait ActiveLayerInfo
+  extends StObject
+     with Accessor {
   
   /**
     * A collection of child activeLayerInfos.

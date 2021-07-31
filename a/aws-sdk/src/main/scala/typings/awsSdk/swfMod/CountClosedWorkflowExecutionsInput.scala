@@ -2,46 +2,44 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountClosedWorkflowExecutionsInput extends StObject {
   
   /**
     * If specified, only workflow executions that match this close status are counted. This filter has an affect only if executionStatus is specified as CLOSED.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var closeStatusFilter: js.UndefOr[CloseStatusFilter] = js.native
+  var closeStatusFilter: js.UndefOr[CloseStatusFilter] = js.undefined
   
   /**
     * If specified, only workflow executions that meet the close time criteria of the filter are counted.   startTimeFilter and closeTimeFilter are mutually exclusive. You must specify one of these in a request but not both. 
     */
-  var closeTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.native
+  var closeTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.undefined
   
   /**
     * The name of the domain containing the workflow executions to count.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * If specified, only workflow executions matching the WorkflowId in the filter are counted.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var executionFilter: js.UndefOr[WorkflowExecutionFilter] = js.native
+  var executionFilter: js.UndefOr[WorkflowExecutionFilter] = js.undefined
   
   /**
     * If specified, only workflow executions that meet the start time criteria of the filter are counted.   startTimeFilter and closeTimeFilter are mutually exclusive. You must specify one of these in a request but not both. 
     */
-  var startTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.native
+  var startTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.undefined
   
   /**
     * If specified, only executions that have a tag that matches the filter are counted.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var tagFilter: js.UndefOr[TagFilter] = js.native
+  var tagFilter: js.UndefOr[TagFilter] = js.undefined
   
   /**
     * If specified, indicates the type of the workflow executions to be counted.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var typeFilter: js.UndefOr[WorkflowTypeFilter] = js.native
+  var typeFilter: js.UndefOr[WorkflowTypeFilter] = js.undefined
 }
 object CountClosedWorkflowExecutionsInput {
   

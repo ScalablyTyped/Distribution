@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -115,9 +114,8 @@ object RestCallAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RestCallAction.create")
-  @js.native
-  def create(model: IModel): RestCallAction = js.native
+  @scala.inline
+  def create(model: IModel): RestCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RestCallAction]
   
   /**
     * Creates and returns a new RestCallAction instance in the SDK and on the server.
@@ -128,9 +126,8 @@ object RestCallAction {
     *  6.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RestCallAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): RestCallAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): RestCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RestCallAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RestCallAction.structureTypeName")

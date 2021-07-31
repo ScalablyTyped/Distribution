@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for the Report method.
   */
-@js.native
 trait SchemaReportRequest extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait SchemaReportRequest extends StObject {
     * single request, the total request size should be no larger than 1MB. See
     * ReportResponse.report_errors for partial failure behavior.
     */
-  var operations: js.UndefOr[js.Array[SchemaOperation]] = js.native
+  var operations: js.UndefOr[js.Array[SchemaOperation]] = js.undefined
   
   /**
     * Specifies which version of service config should be used to process the
     * request.  If unspecified or no matching version can be found, the latest
     * one will be used.
     */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
 }
 object SchemaReportRequest {
   

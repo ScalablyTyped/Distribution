@@ -5,11 +5,12 @@ import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By] {
+trait TypeofBy
+  extends StObject
+     with Instantiable2[/* using */ String, /* value */ String, By] {
   
   /**
     * Locates elements that have a specific class name.
@@ -50,9 +51,9 @@ trait TypeofBy extends Instantiable2[/* using */ String, /* value */ String, By]
     *     A new JavaScript-based locator function.
     */
   @JSName("js")
-  def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
+  def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = js.native
   @JSName("js")
-  def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
+  def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = js.native
   
   /**
     * Locates link elements whose

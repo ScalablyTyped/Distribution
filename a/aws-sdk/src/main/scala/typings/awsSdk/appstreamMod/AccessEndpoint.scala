@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessEndpoint extends StObject {
   
   /**
     * The type of interface endpoint.
     */
-  var EndpointType: AccessEndpointType = js.native
+  var EndpointType: AccessEndpointType
   
   /**
     * The identifier (ID) of the VPC in which the interface endpoint is used.
     */
-  var VpceId: js.UndefOr[String] = js.native
+  var VpceId: js.UndefOr[String] = js.undefined
 }
 object AccessEndpoint {
   

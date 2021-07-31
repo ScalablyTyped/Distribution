@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGameSessionQueuesOutput extends StObject {
   
   /**
     * A collection of objects that describe the requested game session queues.
     */
-  var GameSessionQueues: js.UndefOr[GameSessionQueueList] = js.native
+  var GameSessionQueues: js.UndefOr[GameSessionQueueList] = js.undefined
   
   /**
     * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object DescribeGameSessionQueuesOutput {
   

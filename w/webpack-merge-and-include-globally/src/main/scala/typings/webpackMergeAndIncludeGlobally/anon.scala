@@ -3,17 +3,15 @@ package typings.webpackMergeAndIncludeGlobally
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dest extends StObject {
     
-    var dest: String | (js.Function1[/* code */ String, StringDictionary[String]]) = js.native
+    var dest: String | (js.Function1[/* code */ String, StringDictionary[String]])
     
-    var src: js.Array[String] = js.native
+    var src: js.Array[String]
   }
   object Dest {
     

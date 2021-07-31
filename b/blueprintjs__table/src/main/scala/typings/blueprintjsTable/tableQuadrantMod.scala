@@ -14,7 +14,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableQuadrantMod {
@@ -26,36 +25,44 @@ object tableQuadrantMod {
   object QuadrantType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[QuadrantType with String] = js.native
+    def apply(value: String): js.UndefOr[QuadrantType & String] = js.native
     
     /**
       * The left quadrant, containing row headers and frozen columns.
       */
     @js.native
-    sealed trait LEFT extends QuadrantType
-    /* "left" */ val LEFT: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.LEFT with String = js.native
+    sealed trait LEFT
+      extends StObject
+         with QuadrantType
+    /* "left" */ val LEFT: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.LEFT & String = js.native
     
     /**
       * The main quadrant beneath any frozen rows or columns.
       */
     @js.native
-    sealed trait MAIN extends QuadrantType
-    /* "main" */ val MAIN: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.MAIN with String = js.native
+    sealed trait MAIN
+      extends StObject
+         with QuadrantType
+    /* "main" */ val MAIN: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.MAIN & String = js.native
     
     /**
       * The top quadrant, containing column headers and frozen rows.
       */
     @js.native
-    sealed trait TOP extends QuadrantType
-    /* "top" */ val TOP: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.TOP with String = js.native
+    sealed trait TOP
+      extends StObject
+         with QuadrantType
+    /* "top" */ val TOP: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.TOP & String = js.native
     
     /**
       * The top-left quadrant, containing the headers and cells common to both
       * the frozen columns and frozen rows.
       */
     @js.native
-    sealed trait TOP_LEFT extends QuadrantType
-    /* "top-left" */ val TOP_LEFT: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.TOP_LEFT with String = js.native
+    sealed trait TOP_LEFT
+      extends StObject
+         with QuadrantType
+    /* "top-left" */ val TOP_LEFT: typings.blueprintjsTable.tableQuadrantMod.QuadrantType.TOP_LEFT & String = js.native
   }
   
   @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "TableQuadrant")
@@ -82,37 +89,27 @@ object tableQuadrantMod {
   }
   
   @js.native
-  trait ITableQuadrantProps extends IProps {
+  trait ITableQuadrantProps
+    extends StObject
+       with IProps {
     
     /**
       * A callback that receives a `ref` to the quadrant's body-wrapping element. Will need to be
       * provided only for the MAIN quadrant, because that quadrant contains the main table body.
       */
-    var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+    var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
     
     /**
       * A callback that renders either all of or just frozen sections of the table body.
       */
     def bodyRenderer(): Element = js.native
-    def bodyRenderer(
-      quadrantType: js.UndefOr[scala.Nothing],
-      showFrozenRowsOnly: js.UndefOr[scala.Nothing],
-      showFrozenColumnsOnly: Boolean
-    ): Element = js.native
-    def bodyRenderer(quadrantType: js.UndefOr[scala.Nothing], showFrozenRowsOnly: Boolean): Element = js.native
-    def bodyRenderer(
-      quadrantType: js.UndefOr[scala.Nothing],
-      showFrozenRowsOnly: Boolean,
-      showFrozenColumnsOnly: Boolean
-    ): Element = js.native
+    def bodyRenderer(quadrantType: Unit, showFrozenRowsOnly: Boolean): Element = js.native
+    def bodyRenderer(quadrantType: Unit, showFrozenRowsOnly: Boolean, showFrozenColumnsOnly: Boolean): Element = js.native
+    def bodyRenderer(quadrantType: Unit, showFrozenRowsOnly: Unit, showFrozenColumnsOnly: Boolean): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType): Element = js.native
-    def bodyRenderer(
-      quadrantType: QuadrantType,
-      showFrozenRowsOnly: js.UndefOr[scala.Nothing],
-      showFrozenColumnsOnly: Boolean
-    ): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean, showFrozenColumnsOnly: Boolean): Element = js.native
+    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Unit, showFrozenColumnsOnly: Boolean): Element = js.native
     
     /**
       * A callback that renders either all of or just the frozen section of the column header.
@@ -153,7 +150,7 @@ object tableQuadrantMod {
     /**
       * A callback that receives a `ref` to the quadrant's outermost element.
       */
-    var quadrantRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+    var quadrantRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
     
     /**
       * The quadrant type. Informs the values of the parameters that will be passed to the
@@ -169,7 +166,7 @@ object tableQuadrantMod {
     /**
       * A callback that receives a `ref` to the quadrant's scroll-container element.
       */
-    var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+    var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
     
     /**
       * CSS styles to apply to the quadrant's outermost element.

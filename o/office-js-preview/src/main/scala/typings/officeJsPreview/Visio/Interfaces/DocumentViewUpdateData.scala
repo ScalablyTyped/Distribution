@@ -2,11 +2,9 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DocumentView object, for use in "documentView.set({ ... })". */
-@js.native
 trait DocumentViewUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DocumentViewUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disableHyperlinks: js.UndefOr[Boolean] = js.native
+  var disableHyperlinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentViewUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disablePan: js.UndefOr[Boolean] = js.native
+  var disablePan: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait DocumentViewUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disablePanZoomWindow: js.UndefOr[Boolean] = js.native
+  var disablePanZoomWindow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait DocumentViewUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var disableZoom: js.UndefOr[Boolean] = js.native
+  var disableZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait DocumentViewUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var hideDiagramBoundary: js.UndefOr[Boolean] = js.native
+  var hideDiagramBoundary: js.UndefOr[Boolean] = js.undefined
 }
 object DocumentViewUpdateData {
   

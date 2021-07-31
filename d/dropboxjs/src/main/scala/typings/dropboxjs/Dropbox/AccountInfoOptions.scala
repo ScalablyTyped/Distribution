@@ -2,13 +2,11 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountInfoOptions extends StObject {
   
-  var httpCache: Boolean = js.native
+  var httpCache: Boolean
 }
 object AccountInfoOptions {
   

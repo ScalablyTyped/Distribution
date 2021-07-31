@@ -7,7 +7,6 @@ import typings.harmonyProxy.mod.harmonyProxy.ProxyConstructor
 import typings.std.PropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,50 +26,50 @@ object mod extends Shortcut {
     
     @js.native
     trait ProxyConstructor
-      extends Instantiable2[/* target */ js.Object, /* handler */ ProxyHandler[js.Object], js.Object] {
+      extends StObject
+         with Instantiable2[/* target */ js.Object, /* handler */ ProxyHandler[js.Object], js.Object] {
       
       def revocable[T](target: T, handler: ProxyHandler[T]): Proxy[T] = js.native
     }
     
-    @js.native
     trait ProxyHandler[T] extends StObject {
       
       @JSName("apply")
       var apply: js.UndefOr[
-            js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], _]
-          ] = js.native
+            js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], js.Any]
+          ] = js.undefined
       
       var construct: js.UndefOr[
-            js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], _]
-          ] = js.native
+            js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], js.Any]
+          ] = js.undefined
       
       var defineProperty: js.UndefOr[
             js.Function3[/* target */ T, /* p */ PropertyKey, /* attributes */ PropertyDescriptor, Boolean]
-          ] = js.native
+          ] = js.undefined
       
-      var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, Boolean]] = js.native
+      var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, Boolean]] = js.undefined
       
-      var enumerate: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.native
+      var enumerate: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
       
-      var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, _]] = js.native
+      var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, js.Any]] = js.undefined
       
-      var getOwnPropertyDescriptor: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, PropertyDescriptor]] = js.native
+      var getOwnPropertyDescriptor: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, PropertyDescriptor]] = js.undefined
       
-      var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, _]] = js.native
+      var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, js.Any]] = js.undefined
       
-      var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, Boolean]] = js.native
+      var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, Boolean]] = js.undefined
       
-      var isExtensible: js.UndefOr[js.Function1[/* target */ T, Boolean]] = js.native
+      var isExtensible: js.UndefOr[js.Function1[/* target */ T, Boolean]] = js.undefined
       
-      var ownKeys: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.native
+      var ownKeys: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
       
-      var preventExtensions: js.UndefOr[js.Function1[/* target */ T, Boolean]] = js.native
+      var preventExtensions: js.UndefOr[js.Function1[/* target */ T, Boolean]] = js.undefined
       
       var set: js.UndefOr[
             js.Function4[/* target */ T, /* p */ PropertyKey, /* value */ js.Any, /* receiver */ js.Any, Boolean]
-          ] = js.native
+          ] = js.undefined
       
-      var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, Boolean]] = js.native
+      var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, Boolean]] = js.undefined
     }
     object ProxyHandler {
       
@@ -81,16 +80,16 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class ProxyHandlerMutableBuilder[Self <: ProxyHandler[_], T] (val x: Self with ProxyHandler[T]) extends AnyVal {
+      implicit class ProxyHandlerMutableBuilder[Self <: ProxyHandler[?], T] (val x: Self & ProxyHandler[T]) extends AnyVal {
         
         @scala.inline
-        def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
+        def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
         
         @scala.inline
         def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
         
         @scala.inline
-        def setConstruct(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "construct", js.Any.fromFunction3(value))
+        def setConstruct(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "construct", js.Any.fromFunction3(value))
         
         @scala.inline
         def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
@@ -114,7 +113,7 @@ object mod extends Shortcut {
         def setEnumerateUndefined: Self = StObject.set(x, "enumerate", js.undefined)
         
         @scala.inline
-        def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => _): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+        def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
         
         @scala.inline
         def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => PropertyDescriptor): Self = StObject.set(x, "getOwnPropertyDescriptor", js.Any.fromFunction2(value))
@@ -123,7 +122,7 @@ object mod extends Shortcut {
         def setGetOwnPropertyDescriptorUndefined: Self = StObject.set(x, "getOwnPropertyDescriptor", js.undefined)
         
         @scala.inline
-        def setGetPrototypeOf(value: /* target */ T => _): Self = StObject.set(x, "getPrototypeOf", js.Any.fromFunction1(value))
+        def setGetPrototypeOf(value: /* target */ T => js.Any): Self = StObject.set(x, "getPrototypeOf", js.Any.fromFunction1(value))
         
         @scala.inline
         def setGetPrototypeOfUndefined: Self = StObject.set(x, "getPrototypeOf", js.undefined)

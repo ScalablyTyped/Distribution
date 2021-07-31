@@ -2,19 +2,17 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartConfiguration extends StObject {
   
-  var data: js.UndefOr[ChartData] = js.native
+  var data: js.UndefOr[ChartData] = js.undefined
   
-  var options: js.UndefOr[ChartOptions] = js.native
+  var options: js.UndefOr[ChartOptions] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[PluginServiceRegistrationOptions]] = js.native
+  var plugins: js.UndefOr[js.Array[PluginServiceRegistrationOptions]] = js.undefined
   
-  var `type`: js.UndefOr[ChartType | String] = js.native
+  var `type`: js.UndefOr[ChartType | String] = js.undefined
 }
 object ChartConfiguration {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigRuleRequest extends StObject {
   
   /**
     * The name of the AWS Config rule that you want to delete.
     */
-  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName = js.native
+  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
 }
 object DeleteConfigRuleRequest {
   

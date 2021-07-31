@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Int64RangeMatch extends StObject {
   
   /** The end of the range (exclusive) in signed long integer format. */
-  var rangeEnd: js.UndefOr[String] = js.native
+  var rangeEnd: js.UndefOr[String] = js.undefined
   
   /** The start of the range (inclusive) in signed long integer format. */
-  var rangeStart: js.UndefOr[String] = js.native
+  var rangeStart: js.UndefOr[String] = js.undefined
 }
 object Int64RangeMatch {
   

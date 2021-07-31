@@ -3,56 +3,54 @@ package typings.puppeteer.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
   /** Promise which resolves to a buffer with response body. */
-  def buffer(): js.Promise[Buffer] = js.native
+  def buffer(): js.Promise[Buffer]
   
   /** A Frame that initiated this response, or null if navigating to error pages. */
-  def frame(): Frame | Null = js.native
+  def frame(): Frame | Null
   
   /** True if the response was served from either the browser's disk cache or memory cache. */
-  def fromCache(): Boolean = js.native
+  def fromCache(): Boolean
   
   /** True if the response was served by a service worker. */
-  def fromServiceWorker(): Boolean = js.native
+  def fromServiceWorker(): Boolean
   
   /** An object with HTTP headers associated with the response. All header names are lower-case. */
-  def headers(): Headers = js.native
+  def headers(): Headers
   
   /**
     * Promise which resolves to a JSON representation of response body.
     * @throws This method will throw if the response body is not parsable via `JSON.parse`.
     */
-  def json(): js.Promise[_] = js.native
+  def json(): js.Promise[js.Any]
   
   /** Contains a boolean stating whether the response was successful (status in the range 200-299) or not. */
-  def ok(): Boolean = js.native
+  def ok(): Boolean
   
   /** Returns remote connection info */
-  def remoteAddress(): RemoteInfo = js.native
+  def remoteAddress(): RemoteInfo
   
   /** A matching Request object. */
-  def request(): Request = js.native
+  def request(): Request
   
   /** Returns an object with security details associated with the response. */
-  def securityDetails(): SecurityDetails | Null = js.native
+  def securityDetails(): SecurityDetails | Null
   
   /** Contains the status code of the response (e.g., 200 for a success). */
-  def status(): Double = js.native
+  def status(): Double
   
   /** Contains the status text of the response (e.g. usually an "OK" for a success).  */
-  def statusText(): String = js.native
+  def statusText(): String
   
   /** Promise which resolves to a text representation of response body. */
-  def text(): js.Promise[String] = js.native
+  def text(): js.Promise[String]
   
   /** Contains the URL of the response. */
-  def url(): String = js.native
+  def url(): String
 }
 object Response {
   
@@ -63,7 +61,7 @@ object Response {
     fromCache: () => Boolean,
     fromServiceWorker: () => Boolean,
     headers: () => Headers,
-    json: () => js.Promise[_],
+    json: () => js.Promise[js.Any],
     ok: () => Boolean,
     remoteAddress: () => RemoteInfo,
     request: () => Request,
@@ -96,7 +94,7 @@ object Response {
     def setHeaders(value: () => Headers): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOk(value: () => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction0(value))

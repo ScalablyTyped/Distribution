@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewpointProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait ViewpointProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#camera)
     */
-  var camera: js.UndefOr[CameraProperties] = js.native
+  var camera: js.UndefOr[CameraProperties] = js.undefined
   
   /**
     * The rotation of due north in relation to the top of the view in degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#rotation)
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * The scale of the viewpoint.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#scale)
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * The target geometry framed by the viewpoint.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#targetGeometry)
     */
-  var targetGeometry: js.UndefOr[GeometryProperties] = js.native
+  var targetGeometry: js.UndefOr[GeometryProperties] = js.undefined
 }
 object ViewpointProperties {
   

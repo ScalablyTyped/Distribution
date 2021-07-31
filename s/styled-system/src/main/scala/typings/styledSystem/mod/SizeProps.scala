@@ -2,13 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
-  var size: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var size: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object SizeProps {
   
@@ -19,7 +17,7 @@ object SizeProps {
   }
   
   @scala.inline
-  implicit class SizePropsMutableBuilder[Self <: SizeProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (SizeProps[ThemeType, TVal])) extends AnyVal {
+  implicit class SizePropsMutableBuilder[Self <: SizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (SizeProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])

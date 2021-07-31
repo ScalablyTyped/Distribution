@@ -4,13 +4,14 @@ import typings.reactJoyride.mod.Placement
 import typings.reactJoyride.mod.PlacementBeacon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactJoyrideStrings {
   
   @js.native
-  sealed trait auto extends Placement
+  sealed trait auto
+    extends StObject
+       with Placement
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -21,23 +22,30 @@ object reactJoyrideStrings {
   
   @js.native
   sealed trait bottom
-    extends Placement
+    extends StObject
+       with Placement
        with PlacementBeacon
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-end` extends Placement
+  sealed trait `bottom-end`
+    extends StObject
+       with Placement
   @scala.inline
   def `bottom-end`: `bottom-end` = "bottom-end".asInstanceOf[`bottom-end`]
   
   @js.native
-  sealed trait `bottom-start` extends Placement
+  sealed trait `bottom-start`
+    extends StObject
+       with Placement
   @scala.inline
   def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
   
   @js.native
-  sealed trait center extends Placement
+  sealed trait center
+    extends StObject
+       with Placement
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -88,18 +96,23 @@ object reactJoyrideStrings {
   
   @js.native
   sealed trait left
-    extends Placement
+    extends StObject
+       with Placement
        with PlacementBeacon
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait `left-end` extends Placement
+  sealed trait `left-end`
+    extends StObject
+       with Placement
   @scala.inline
   def `left-end`: `left-end` = "left-end".asInstanceOf[`left-end`]
   
   @js.native
-  sealed trait `left-start` extends Placement
+  sealed trait `left-start`
+    extends StObject
+       with Placement
   @scala.inline
   def `left-start`: `left-start` = "left-start".asInstanceOf[`left-start`]
   
@@ -135,18 +148,23 @@ object reactJoyrideStrings {
   
   @js.native
   sealed trait right
-    extends Placement
+    extends StObject
+       with Placement
        with PlacementBeacon
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait `right-end` extends Placement
+  sealed trait `right-end`
+    extends StObject
+       with Placement
   @scala.inline
   def `right-end`: `right-end` = "right-end".asInstanceOf[`right-end`]
   
   @js.native
-  sealed trait `right-start` extends Placement
+  sealed trait `right-start`
+    extends StObject
+       with Placement
   @scala.inline
   def `right-start`: `right-start` = "right-start".asInstanceOf[`right-start`]
   
@@ -192,18 +210,23 @@ object reactJoyrideStrings {
   
   @js.native
   sealed trait top
-    extends Placement
+    extends StObject
+       with Placement
        with PlacementBeacon
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-end` extends Placement
+  sealed trait `top-end`
+    extends StObject
+       with Placement
   @scala.inline
   def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
   
   @js.native
-  sealed trait `top-start` extends Placement
+  sealed trait `top-start`
+    extends StObject
+       with Placement
   @scala.inline
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
   

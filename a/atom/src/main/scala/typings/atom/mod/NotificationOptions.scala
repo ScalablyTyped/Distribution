@@ -3,21 +3,19 @@ package typings.atom.mod
 import typings.atom.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationOptions extends StObject {
   
-  var buttons: js.UndefOr[js.Array[ClassName]] = js.native
+  var buttons: js.UndefOr[js.Array[ClassName]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
-  var dismissable: js.UndefOr[Boolean] = js.native
+  var dismissable: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
 }
 object NotificationOptions {
   

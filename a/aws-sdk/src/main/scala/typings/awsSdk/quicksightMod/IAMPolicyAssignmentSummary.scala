@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAMPolicyAssignmentSummary extends StObject {
   
   /**
     * Assignment name.
     */
-  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.native
+  var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.undefined
   
   /**
     * Assignment status.
     */
-  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.native
+  var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
 }
 object IAMPolicyAssignmentSummary {
   

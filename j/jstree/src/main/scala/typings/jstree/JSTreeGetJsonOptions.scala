@@ -2,46 +2,44 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeGetJsonOptions extends StObject {
   
   /**
     * return flat JSON instead of nested
     */
-  var flat: js.UndefOr[Boolean] = js.native
+  var flat: js.UndefOr[Boolean] = js.undefined
   
   /**
     * do not include A attributes
     */
-  var no_a_attr: js.UndefOr[Boolean] = js.native
+  var no_a_attr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * do not include children
     */
-  var no_children: js.UndefOr[Boolean] = js.native
+  var no_children: js.UndefOr[Boolean] = js.undefined
   
   /**
     * do not include node data
     */
-  var no_data: js.UndefOr[Boolean] = js.native
+  var no_data: js.UndefOr[Boolean] = js.undefined
   
   /**
     * do not return ID
     */
-  var no_id: js.UndefOr[Boolean] = js.native
+  var no_id: js.UndefOr[Boolean] = js.undefined
   
   /**
     * do not include LI attributes
     */
-  var no_li_attr: js.UndefOr[Boolean] = js.native
+  var no_li_attr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * do not return state information
     */
-  var no_state: js.UndefOr[Boolean] = js.native
+  var no_state: js.UndefOr[Boolean] = js.undefined
 }
 object JSTreeGetJsonOptions {
   

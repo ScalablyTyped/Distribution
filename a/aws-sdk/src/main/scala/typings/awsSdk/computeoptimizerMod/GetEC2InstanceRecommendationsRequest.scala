@@ -2,36 +2,34 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEC2InstanceRecommendationsRequest extends StObject {
   
   /**
     * The IDs of the AWS accounts for which to return instance recommendations. If your account is the master account of an organization, use this parameter to specify the member accounts for which you want to return instance recommendations. Only one account ID can be specified per request.
     */
-  var accountIds: js.UndefOr[AccountIds] = js.native
+  var accountIds: js.UndefOr[AccountIds] = js.undefined
   
   /**
     * An array of objects that describe a filter that returns a more specific list of instance recommendations.
     */
-  var filters: js.UndefOr[Filters] = js.native
+  var filters: js.UndefOr[Filters] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the instances for which to return recommendations.
     */
-  var instanceArns: js.UndefOr[InstanceArns] = js.native
+  var instanceArns: js.UndefOr[InstanceArns] = js.undefined
   
   /**
     * The maximum number of instance recommendations to return with a single request. To retrieve the remaining results, make another request with the returned NextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token to advance to the next page of instance recommendations.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetEC2InstanceRecommendationsRequest {
   

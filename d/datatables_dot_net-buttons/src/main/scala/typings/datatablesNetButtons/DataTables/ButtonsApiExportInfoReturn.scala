@@ -2,19 +2,17 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonsApiExportInfoReturn extends StObject {
   
-  var filename: String = js.native
+  var filename: String
   
-  var messageBottom: String = js.native
+  var messageBottom: String
   
-  var messageTop: String = js.native
+  var messageTop: String
   
-  var title: String = js.native
+  var title: String
 }
 object ButtonsApiExportInfoReturn {
   

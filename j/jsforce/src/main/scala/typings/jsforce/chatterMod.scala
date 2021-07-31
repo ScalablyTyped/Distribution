@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chatterMod {
@@ -30,7 +29,9 @@ object chatterMod {
   
   @JSImport("jsforce/api/chatter", "Request")
   @js.native
-  class Request[T] protected () extends PromiseLike[T] {
+  class Request[T] protected ()
+    extends StObject
+       with PromiseLike[T] {
     def this(chatter: Chatter, params: RequestParams) = this()
     
     def batchParams(): BatchRequestParams = js.native
@@ -74,10 +75,11 @@ object chatterMod {
     def update(data: js.Object, callback: Callback[T]): Request[T] = js.native
   }
   
-  @js.native
-  trait BatchRequestParams extends RequestParams {
+  trait BatchRequestParams
+    extends StObject
+       with RequestParams {
     
-    var richInput: js.UndefOr[String] = js.native
+    var richInput: js.UndefOr[String] = js.undefined
   }
   object BatchRequestParams {
     
@@ -98,12 +100,11 @@ object chatterMod {
     }
   }
   
-  @js.native
   trait BatchRequestResult extends StObject {
     
-    var result: RequestResult = js.native
+    var result: RequestResult
     
-    var statusCode: String = js.native
+    var statusCode: String
   }
   object BatchRequestResult {
     
@@ -124,12 +125,11 @@ object chatterMod {
     }
   }
   
-  @js.native
   trait BatchRequestResults extends StObject {
     
-    var hasError: Boolean = js.native
+    var hasError: Boolean
     
-    var results: js.Array[BatchRequestResult] = js.native
+    var results: js.Array[BatchRequestResult]
   }
   object BatchRequestResults {
     
@@ -153,14 +153,13 @@ object chatterMod {
     }
   }
   
-  @js.native
   trait RequestParams extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var url: String = js.native
+    var url: String
   }
   object RequestParams {
     

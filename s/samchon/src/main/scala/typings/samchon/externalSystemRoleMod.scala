@@ -3,10 +3,10 @@ package typings.samchon
 import typings.samchon.entityMod.Entity
 import typings.samchon.externalSystemArrayMod.ExternalSystemArray
 import typings.samchon.externalSystemMod.ExternalSystem
+import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalSystemRoleMod {
@@ -51,6 +51,26 @@ object externalSystemRoleMod {
       * {@link name} should be unique in an {@link ExternalSystemArray}.
       */
     var name: String = js.native
+    
+    /**
+      * Sending message.
+      *
+      * Sends message to related system or shifts the responsibility to chain.
+      *
+      * @param invoke Invoke message to send
+      */
+    /* CompleteClass */
+    override def replyData(invoke: Invoke): Unit = js.native
+    
+    /**
+      * Handling replied message.
+      *
+      * Handles replied message or shifts the responsibility to chain.
+      *
+      * @param invoke An {@link Invoke} message has received.
+      */
+    /* CompleteClass */
+    override def sendData(invoke: Invoke): Unit = js.native
     
     /**
       * @hidden

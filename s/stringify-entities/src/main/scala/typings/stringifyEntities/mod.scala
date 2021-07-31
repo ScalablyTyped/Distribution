@@ -2,7 +2,6 @@ package typings.stringifyEntities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,27 +9,28 @@ object mod {
   /**
     * Encode special characters in `value`.
     */
-  @JSImport("stringify-entities", JSImport.Namespace)
-  @js.native
-  def apply(value: String): String = js.native
-  @JSImport("stringify-entities", JSImport.Namespace)
-  @js.native
-  def apply(value: String, options: StringifyEntitiesOptions): String = js.native
+  @scala.inline
+  def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: String, options: StringifyEntitiesOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("stringify-entities", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait StringifyEntitiesOptions extends StObject {
     
     /**
       * Only needed when operating dangerously with `omitOptionalSemicolons: true`.
       * Create character references which don’t fail in attributes (`boolean?`, default: `false`).
       */
-    var attribute: js.UndefOr[Boolean] = js.native
+    var attribute: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to only escape possibly dangerous characters (`boolean`, default: `false`).
       * Those characters are `"`, `&`, `'`, `<`, `>`, and `` ` ``.
       */
-    var escapeOnly: js.UndefOr[Boolean] = js.native
+    var escapeOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to omit semicolons when possible (`boolean?`, default: `false`).
@@ -38,23 +38,23 @@ object mod {
       *
       * Omitting semicolons is possible for legacy named references in certain cases, and numeric references in some cases.
       */
-    var omitOptionalSemicolons: js.UndefOr[Boolean] = js.native
+    var omitOptionalSemicolons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to only escape the given subset of characters (`Array.<string>`).
       */
-    var subset: js.UndefOr[js.Array[String]] = js.native
+    var subset: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Prefer named character references (`&amp;`) where possible (`boolean?`, default: `false`).
       */
-    var useNamedReferences: js.UndefOr[Boolean] = js.native
+    var useNamedReferences: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prefer the shortest possible reference, if that results in less bytes (`boolean?`, default: `false`).
       * **Note**: `useNamedReferences` can be omitted when using `useShortestReferences`.
       */
-    var useShortestReferences: js.UndefOr[Boolean] = js.native
+    var useShortestReferences: js.UndefOr[Boolean] = js.undefined
   }
   object StringifyEntitiesOptions {
     

@@ -20,7 +20,6 @@ import typings.activexOffice.Office.SmartArtQuickStyles
 import typings.activexWord.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -79,13 +78,13 @@ trait Application extends StObject {
   val BuildFull: String = js.native
   
   def BuildKeyCode(Arg1: WdKey): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: Unit, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Unit, Arg4: js.Any): Double = js.native
   
   def COMAddIns(Index: String): COMAddIn = js.native
   def COMAddIns(Index: Double): COMAddIn = js.native
@@ -379,38 +378,7 @@ trait Application extends StObject {
   def MillimetersToPoints(Millimeters: Double): Double = js.native
   
   def MountVolume(Zone: String, Server: String, Volume: String): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: js.UndefOr[scala.Nothing],
-    UserPassword: js.UndefOr[scala.Nothing],
-    VolumePassword: js.Any
-  ): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: js.UndefOr[scala.Nothing],
-    UserPassword: js.Any
-  ): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: js.UndefOr[scala.Nothing],
-    UserPassword: js.Any,
-    VolumePassword: js.Any
-  ): Double = js.native
   def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: js.Any,
-    UserPassword: js.UndefOr[scala.Nothing],
-    VolumePassword: js.Any
-  ): Double = js.native
   def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any, UserPassword: js.Any): Double = js.native
   def MountVolume(
     Zone: String,
@@ -418,6 +386,31 @@ trait Application extends StObject {
     Volume: String,
     User: js.Any,
     UserPassword: js.Any,
+    VolumePassword: js.Any
+  ): Double = js.native
+  def MountVolume(
+    Zone: String,
+    Server: String,
+    Volume: String,
+    User: js.Any,
+    UserPassword: Unit,
+    VolumePassword: js.Any
+  ): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: js.Any): Double = js.native
+  def MountVolume(
+    Zone: String,
+    Server: String,
+    Volume: String,
+    User: Unit,
+    UserPassword: js.Any,
+    VolumePassword: js.Any
+  ): Double = js.native
+  def MountVolume(
+    Zone: String,
+    Server: String,
+    Volume: String,
+    User: Unit,
+    UserPassword: Unit,
     VolumePassword: js.Any
   ): Double = js.native
   
@@ -551,17 +544,13 @@ trait Application extends StObject {
   def PutFocusInMailHeader(): Unit = js.native
   
   def Quit(): Unit = js.native
-  def Quit(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    OriginalFormat: js.UndefOr[scala.Nothing],
-    RouteDocument: js.Any
-  ): Unit = js.native
-  def Quit(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any): Unit = js.native
-  def Quit(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
   def Quit(SaveChanges: js.Any): Unit = js.native
-  def Quit(SaveChanges: js.Any, OriginalFormat: js.UndefOr[scala.Nothing], RouteDocument: js.Any): Unit = js.native
   def Quit(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
   def Quit(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
+  def Quit(SaveChanges: js.Any, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: js.Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: js.Any): Unit = js.native
   
   val RecentFiles: typings.activexWord.Word.RecentFiles = js.native
   

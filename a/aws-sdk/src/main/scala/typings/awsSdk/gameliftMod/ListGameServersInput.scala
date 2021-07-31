@@ -2,31 +2,29 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGameServersInput extends StObject {
   
   /**
     * An identifier for the game server group to retrieve a list of game servers from. Use either the GameServerGroup name or ARN value.
     */
-  var GameServerGroupName: GameServerGroupNameOrArn = js.native
+  var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
     * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential segments.
     */
-  var Limit: js.UndefOr[PositiveInteger] = js.native
+  var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
     * A token that indicates the start of the next sequential segment of results. Use the token returned with the previous call to this operation. To start at the beginning of the result set, do not specify a value.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Indicates how to sort the returned data based on game server registration timestamp. Use ASCENDING to retrieve oldest game servers first, or use DESCENDING to retrieve newest game servers first. If this parameter is left empty, game servers are returned in no particular order.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.gameliftMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.gameliftMod.SortOrder] = js.undefined
 }
 object ListGameServersInput {
   

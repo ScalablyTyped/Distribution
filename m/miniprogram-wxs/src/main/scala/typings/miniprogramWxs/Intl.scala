@@ -2,7 +2,6 @@ package typings.miniprogramWxs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /////////////////////////////
 object Intl {
   
-  @js.native
   trait Collator extends StObject {
     
-    def compare(x: java.lang.String, y: java.lang.String): Double = js.native
+    def compare(x: java.lang.String, y: java.lang.String): Double
     
-    def resolvedOptions(): ResolvedCollatorOptions = js.native
+    def resolvedOptions(): ResolvedCollatorOptions
   }
   object Collator {
     
@@ -39,20 +37,19 @@ object Intl {
     }
   }
   
-  @js.native
   trait CollatorOptions extends StObject {
     
-    var caseFirst: js.UndefOr[java.lang.String] = js.native
+    var caseFirst: js.UndefOr[java.lang.String] = js.undefined
     
-    var ignorePunctuation: js.UndefOr[scala.Boolean] = js.native
+    var ignorePunctuation: js.UndefOr[scala.Boolean] = js.undefined
     
-    var localeMatcher: js.UndefOr[java.lang.String] = js.native
+    var localeMatcher: js.UndefOr[java.lang.String] = js.undefined
     
-    var numeric: js.UndefOr[scala.Boolean] = js.native
+    var numeric: js.UndefOr[scala.Boolean] = js.undefined
     
-    var sensitivity: js.UndefOr[java.lang.String] = js.native
+    var sensitivity: js.UndefOr[java.lang.String] = js.undefined
     
-    var usage: js.UndefOr[java.lang.String] = js.native
+    var usage: js.UndefOr[java.lang.String] = js.undefined
   }
   object CollatorOptions {
     
@@ -113,34 +110,33 @@ object Intl {
     def resolvedOptions(): ResolvedDateTimeFormatOptions = js.native
   }
   
-  @js.native
   trait DateTimeFormatOptions extends StObject {
     
-    var day: js.UndefOr[java.lang.String] = js.native
+    var day: js.UndefOr[java.lang.String] = js.undefined
     
-    var era: js.UndefOr[java.lang.String] = js.native
+    var era: js.UndefOr[java.lang.String] = js.undefined
     
-    var formatMatcher: js.UndefOr[java.lang.String] = js.native
+    var formatMatcher: js.UndefOr[java.lang.String] = js.undefined
     
-    var hour: js.UndefOr[java.lang.String] = js.native
+    var hour: js.UndefOr[java.lang.String] = js.undefined
     
-    var hour12: js.UndefOr[scala.Boolean] = js.native
+    var hour12: js.UndefOr[scala.Boolean] = js.undefined
     
-    var localeMatcher: js.UndefOr[java.lang.String] = js.native
+    var localeMatcher: js.UndefOr[java.lang.String] = js.undefined
     
-    var minute: js.UndefOr[java.lang.String] = js.native
+    var minute: js.UndefOr[java.lang.String] = js.undefined
     
-    var month: js.UndefOr[java.lang.String] = js.native
+    var month: js.UndefOr[java.lang.String] = js.undefined
     
-    var second: js.UndefOr[java.lang.String] = js.native
+    var second: js.UndefOr[java.lang.String] = js.undefined
     
-    var timeZone: js.UndefOr[java.lang.String] = js.native
+    var timeZone: js.UndefOr[java.lang.String] = js.undefined
     
-    var timeZoneName: js.UndefOr[java.lang.String] = js.native
+    var timeZoneName: js.UndefOr[java.lang.String] = js.undefined
     
-    var weekday: js.UndefOr[java.lang.String] = js.native
+    var weekday: js.UndefOr[java.lang.String] = js.undefined
     
-    var year: js.UndefOr[java.lang.String] = js.native
+    var year: js.UndefOr[java.lang.String] = js.undefined
   }
   object DateTimeFormatOptions {
     
@@ -233,12 +229,11 @@ object Intl {
     }
   }
   
-  @js.native
   trait NumberFormat extends StObject {
     
-    def format(value: Double): java.lang.String = js.native
+    def format(value: Double): java.lang.String
     
-    def resolvedOptions(): ResolvedNumberFormatOptions = js.native
+    def resolvedOptions(): ResolvedNumberFormatOptions
   }
   object NumberFormat {
     
@@ -259,28 +254,27 @@ object Intl {
     }
   }
   
-  @js.native
   trait NumberFormatOptions extends StObject {
     
-    var currency: js.UndefOr[java.lang.String] = js.native
+    var currency: js.UndefOr[java.lang.String] = js.undefined
     
-    var currencyDisplay: js.UndefOr[java.lang.String] = js.native
+    var currencyDisplay: js.UndefOr[java.lang.String] = js.undefined
     
-    var localeMatcher: js.UndefOr[java.lang.String] = js.native
+    var localeMatcher: js.UndefOr[java.lang.String] = js.undefined
     
-    var maximumFractionDigits: js.UndefOr[Double] = js.native
+    var maximumFractionDigits: js.UndefOr[Double] = js.undefined
     
-    var maximumSignificantDigits: js.UndefOr[Double] = js.native
+    var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
     
-    var minimumFractionDigits: js.UndefOr[Double] = js.native
+    var minimumFractionDigits: js.UndefOr[Double] = js.undefined
     
-    var minimumIntegerDigits: js.UndefOr[Double] = js.native
+    var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
     
-    var minimumSignificantDigits: js.UndefOr[Double] = js.native
+    var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[java.lang.String] = js.native
+    var style: js.UndefOr[java.lang.String] = js.undefined
     
-    var useGrouping: js.UndefOr[scala.Boolean] = js.native
+    var useGrouping: js.UndefOr[scala.Boolean] = js.undefined
   }
   object NumberFormatOptions {
     
@@ -355,22 +349,21 @@ object Intl {
     }
   }
   
-  @js.native
   trait ResolvedCollatorOptions extends StObject {
     
-    var caseFirst: java.lang.String = js.native
+    var caseFirst: java.lang.String
     
-    var collation: java.lang.String = js.native
+    var collation: java.lang.String
     
-    var ignorePunctuation: scala.Boolean = js.native
+    var ignorePunctuation: scala.Boolean
     
-    var locale: java.lang.String = js.native
+    var locale: java.lang.String
     
-    var numeric: scala.Boolean = js.native
+    var numeric: scala.Boolean
     
-    var sensitivity: java.lang.String = js.native
+    var sensitivity: java.lang.String
     
-    var usage: java.lang.String = js.native
+    var usage: java.lang.String
   }
   object ResolvedCollatorOptions {
     
@@ -414,36 +407,35 @@ object Intl {
     }
   }
   
-  @js.native
   trait ResolvedDateTimeFormatOptions extends StObject {
     
-    var calendar: java.lang.String = js.native
+    var calendar: java.lang.String
     
-    var day: js.UndefOr[java.lang.String] = js.native
+    var day: js.UndefOr[java.lang.String] = js.undefined
     
-    var era: js.UndefOr[java.lang.String] = js.native
+    var era: js.UndefOr[java.lang.String] = js.undefined
     
-    var hour: js.UndefOr[java.lang.String] = js.native
+    var hour: js.UndefOr[java.lang.String] = js.undefined
     
-    var hour12: js.UndefOr[scala.Boolean] = js.native
+    var hour12: js.UndefOr[scala.Boolean] = js.undefined
     
-    var locale: java.lang.String = js.native
+    var locale: java.lang.String
     
-    var minute: js.UndefOr[java.lang.String] = js.native
+    var minute: js.UndefOr[java.lang.String] = js.undefined
     
-    var month: js.UndefOr[java.lang.String] = js.native
+    var month: js.UndefOr[java.lang.String] = js.undefined
     
-    var numberingSystem: java.lang.String = js.native
+    var numberingSystem: java.lang.String
     
-    var second: js.UndefOr[java.lang.String] = js.native
+    var second: js.UndefOr[java.lang.String] = js.undefined
     
-    var timeZone: java.lang.String = js.native
+    var timeZone: java.lang.String
     
-    var timeZoneName: js.UndefOr[java.lang.String] = js.native
+    var timeZoneName: js.UndefOr[java.lang.String] = js.undefined
     
-    var weekday: js.UndefOr[java.lang.String] = js.native
+    var weekday: js.UndefOr[java.lang.String] = js.undefined
     
-    var year: js.UndefOr[java.lang.String] = js.native
+    var year: js.UndefOr[java.lang.String] = js.undefined
   }
   object ResolvedDateTimeFormatOptions {
     
@@ -535,30 +527,29 @@ object Intl {
     }
   }
   
-  @js.native
   trait ResolvedNumberFormatOptions extends StObject {
     
-    var currency: js.UndefOr[java.lang.String] = js.native
+    var currency: js.UndefOr[java.lang.String] = js.undefined
     
-    var currencyDisplay: js.UndefOr[java.lang.String] = js.native
+    var currencyDisplay: js.UndefOr[java.lang.String] = js.undefined
     
-    var locale: java.lang.String = js.native
+    var locale: java.lang.String
     
-    var maximumFractionDigits: Double = js.native
+    var maximumFractionDigits: Double
     
-    var maximumSignificantDigits: js.UndefOr[Double] = js.native
+    var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
     
-    var minimumFractionDigits: Double = js.native
+    var minimumFractionDigits: Double
     
-    var minimumIntegerDigits: Double = js.native
+    var minimumIntegerDigits: Double
     
-    var minimumSignificantDigits: js.UndefOr[Double] = js.native
+    var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
     
-    var numberingSystem: java.lang.String = js.native
+    var numberingSystem: java.lang.String
     
-    var style: java.lang.String = js.native
+    var style: java.lang.String
     
-    var useGrouping: scala.Boolean = js.native
+    var useGrouping: scala.Boolean
   }
   object ResolvedNumberFormatOptions {
     

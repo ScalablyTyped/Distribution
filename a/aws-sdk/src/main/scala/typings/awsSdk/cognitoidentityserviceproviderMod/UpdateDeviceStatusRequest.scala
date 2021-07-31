@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDeviceStatusRequest extends StObject {
   
   /**
     * The access token.
     */
-  var AccessToken: TokenModelType = js.native
+  var AccessToken: TokenModelType
   
   /**
     * The device key.
     */
-  var DeviceKey: DeviceKeyType = js.native
+  var DeviceKey: DeviceKeyType
   
   /**
     * The status of whether a device is remembered.
     */
-  var DeviceRememberedStatus: js.UndefOr[DeviceRememberedStatusType] = js.native
+  var DeviceRememberedStatus: js.UndefOr[DeviceRememberedStatusType] = js.undefined
 }
 object UpdateDeviceStatusRequest {
   

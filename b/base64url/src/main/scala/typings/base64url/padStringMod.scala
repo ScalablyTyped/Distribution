@@ -2,12 +2,14 @@ package typings.base64url
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object padStringMod {
   
-  @JSImport("base64url/dist/pad-string", JSImport.Default)
+  @JSImport("base64url/dist/pad-string", JSImport.Namespace)
   @js.native
-  def default(input: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

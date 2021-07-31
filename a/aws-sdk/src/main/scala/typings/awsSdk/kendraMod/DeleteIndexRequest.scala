@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIndexRequest extends StObject {
   
   /**
     * The identifier of the index to delete.
     */
-  var Id: IndexId = js.native
+  var Id: IndexId
 }
 object DeleteIndexRequest {
   

@@ -3,13 +3,11 @@ package typings.azure.mod
 import typings.azure.anon.LastSyncTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageServiceStats extends StObject {
   
-  var GeoReplication: LastSyncTime = js.native
+  var GeoReplication: LastSyncTime
 }
 object StorageServiceStats {
   

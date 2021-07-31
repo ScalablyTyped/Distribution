@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
   /**
     * The number of hits that contain the facet value in the specified facet field.
     */
-  var count: js.UndefOr[Long] = js.native
+  var count: js.UndefOr[Long] = js.undefined
   
   /**
     * The facet value being counted.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Bucket {
   

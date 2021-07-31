@@ -3,7 +3,6 @@ package typings.lodashDecorators
 import typings.lodashDecorators.applicatorsMod.Applicator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorConfigMod {
@@ -33,20 +32,19 @@ object decoratorConfigMod {
     val setter: Boolean = js.native
   }
   
-  @js.native
   trait DecoratorConfigOptions extends StObject {
     
-    var bound: js.UndefOr[Boolean] = js.native
+    var bound: js.UndefOr[Boolean] = js.undefined
     
-    var getter: js.UndefOr[Boolean] = js.native
+    var getter: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[Boolean] = js.native
+    var method: js.UndefOr[Boolean] = js.undefined
     
-    var optionalParams: js.UndefOr[Boolean] = js.native
+    var optionalParams: js.UndefOr[Boolean] = js.undefined
     
-    var property: js.UndefOr[Boolean] = js.native
+    var property: js.UndefOr[Boolean] = js.undefined
     
-    var setter: js.UndefOr[Boolean] = js.native
+    var setter: js.UndefOr[Boolean] = js.undefined
   }
   object DecoratorConfigOptions {
     

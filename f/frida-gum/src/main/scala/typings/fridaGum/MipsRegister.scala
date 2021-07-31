@@ -2,7 +2,6 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -74,7 +73,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.`30`
   - typings.fridaGum.fridaGumStrings.`31`
 */
-trait MipsRegister extends _MipsCallArgument
+trait MipsRegister
+  extends StObject
+     with _MipsCallArgument
 object MipsRegister {
   
   @scala.inline

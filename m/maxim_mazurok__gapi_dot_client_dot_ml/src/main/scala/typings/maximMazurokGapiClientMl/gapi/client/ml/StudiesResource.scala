@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientMl.anon.Fields
 import typings.maximMazurokGapiClientMl.anon.StudyId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

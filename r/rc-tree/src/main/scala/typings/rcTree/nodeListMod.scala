@@ -1,6 +1,5 @@
 package typings.rcTree
 
-import org.scalablytyped.runtime.Shortcut
 import typings.rcTree.interfaceMod.DataEntity
 import typings.rcTree.interfaceMod.FlattenNode
 import typings.rcTree.interfaceMod.Key
@@ -16,14 +15,17 @@ import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object nodeListMod extends Shortcut {
+object nodeListMod {
+  
+  @JSImport("rc-tree/es/NodeList", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-tree/es/NodeList", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[NodeListProps with RefAttributes[NodeListRef]] = js.native
+  val default: ForwardRefExoticComponent[NodeListProps & RefAttributes[NodeListRef]] = js.native
   
   @JSImport("rc-tree/es/NodeList", "MOTION_KEY")
   @js.native
@@ -33,72 +35,70 @@ object nodeListMod extends Shortcut {
   @js.native
   val MotionEntity: DataEntity = js.native
   
-  @JSImport("rc-tree/es/NodeList", "getMinimumRangeTransitionRange")
-  @js.native
-  def getMinimumRangeTransitionRange(list: js.Array[FlattenNode], virtual: Boolean, height: Double, itemHeight: Double): js.Array[FlattenNode] = js.native
+  @scala.inline
+  def getMinimumRangeTransitionRange(list: js.Array[FlattenNode], virtual: Boolean, height: Double, itemHeight: Double): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMinimumRangeTransitionRange")(list.asInstanceOf[js.Any], virtual.asInstanceOf[js.Any], height.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
   
-  @js.native
   trait NodeListProps extends StObject {
     
-    var activeItem: FlattenNode = js.native
+    var activeItem: FlattenNode
     
-    var checkable: js.UndefOr[Boolean] = js.native
+    var checkable: js.UndefOr[Boolean] = js.undefined
     
-    var checkedKeys: js.Array[Key] = js.native
+    var checkedKeys: js.Array[Key]
     
-    var data: js.Array[FlattenNode] = js.native
+    var data: js.Array[FlattenNode]
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dragOverNodeKey: Key = js.native
+    var dragOverNodeKey: Key
     
-    var dragging: Boolean = js.native
+    var dragging: Boolean
     
-    var dropPosition: Double = js.native
+    var dropPosition: Double
     
-    var expandedKeys: js.Array[Key] = js.native
+    var expandedKeys: js.Array[Key]
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var halfCheckedKeys: js.Array[Key] = js.native
+    var halfCheckedKeys: js.Array[Key]
     
-    var height: Double = js.native
+    var height: Double
     
-    var itemHeight: Double = js.native
+    var itemHeight: Double
     
-    var keyEntities: Record[Key, DataEntity] = js.native
+    var keyEntities: Record[Key, DataEntity]
     
-    var loadedKeys: js.Array[Key] = js.native
+    var loadedKeys: js.Array[Key]
     
-    var loadingKeys: js.Array[Key] = js.native
+    var loadingKeys: js.Array[Key]
     
-    var motion: js.Any = js.native
+    var motion: js.Any
     
-    def onActiveChange(key: Key): Unit = js.native
+    def onActiveChange(key: Key): Unit
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    def onListChangeEnd(): Unit = js.native
+    def onListChangeEnd(): Unit
     
-    def onListChangeStart(): Unit = js.native
+    def onListChangeStart(): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var selectedKeys: js.Array[Key] = js.native
+    var selectedKeys: js.Array[Key]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    var tabIndex: Double = js.native
+    var tabIndex: Double
     
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object NodeListProps {
     
@@ -273,10 +273,9 @@ object nodeListMod extends Shortcut {
     }
   }
   
-  @js.native
   trait NodeListRef extends StObject {
     
-    var scrollTo: ScrollTo = js.native
+    var scrollTo: ScrollTo
   }
   object NodeListRef {
     
@@ -293,9 +292,4 @@ object nodeListMod extends Shortcut {
       def setScrollTo(value: /* scroll */ typings.rcTree.anon.Key => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
     }
   }
-  
-  type _To = ForwardRefExoticComponent[NodeListProps with RefAttributes[NodeListRef]]
-  
-  /* This means you don't have to write `default`, but can instead just say `nodeListMod.foo` */
-  override def _to: ForwardRefExoticComponent[NodeListProps with RefAttributes[NodeListRef]] = default
 }

@@ -12,166 +12,179 @@ import typings.std.stdStrings.statsended
 import typings.std.stdStrings.track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A WebRTC connection between the local computer and a remote peer. It provides methods to connect to a remote peer, maintain and monitor the connection, and close the connection once it's no longer needed. */
 @js.native
-trait RTCPeerConnection extends EventTarget {
+trait RTCPeerConnection
+  extends StObject
+     with EventTarget {
   
   @JSName("addEventListener")
-  def addEventListener_connectionstatechange(`type`: connectionstatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_connectionstatechange(
     `type`: connectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_connectionstatechange(
     `type`: connectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_connectionstatechange(
+    `type`: connectionstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datachannel(
     `type`: datachannel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datachannel(
     `type`: datachannel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_datachannel(
     `type`: datachannel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icecandidate(
     `type`: icecandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icecandidate(
     `type`: icecandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icecandidate(
     `type`: icecandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icecandidateerror(
     `type`: icecandidateerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icecandidateerror(
     `type`: icecandidateerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icecandidateerror(
     `type`: icecandidateerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_iceconnectionstatechange(
     `type`: iceconnectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_iceconnectionstatechange(
     `type`: iceconnectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_iceconnectionstatechange(
     `type`: iceconnectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icegatheringstatechange(
     `type`: icegatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icegatheringstatechange(
     `type`: icegatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icegatheringstatechange(
     `type`: icegatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_negotiationneeded(`type`: negotiationneeded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_negotiationneeded(
     `type`: negotiationneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_negotiationneeded(
+    `type`: negotiationneeded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_negotiationneeded(
     `type`: negotiationneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_signalingstatechange(`type`: signalingstatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_signalingstatechange(
-    `type`: signalingstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_signalingstatechange(
     `type`: signalingstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_signalingstatechange(
+    `type`: signalingstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_signalingstatechange(
+    `type`: signalingstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_statsended(`type`: statsended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _]): Unit = js.native
+  def addEventListener_statsended(
+    `type`: statsended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statsended(
     `type`: statsended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statsended(
     `type`: statsended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_track(`type`: track, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _]): Unit = js.native
+  def addEventListener_track(`type`: track, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_track(
     `type`: track,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_track(
     `type`: track,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -227,25 +240,25 @@ trait RTCPeerConnection extends EventTarget {
   
   val localDescription: RTCSessionDescription | Null = js.native
   
-  var onconnectionstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onconnectionstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var ondatachannel: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, _]) | Null = js.native
+  var ondatachannel: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, js.Any]) | Null = js.native
   
-  var onicecandidate: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _]) | Null = js.native
+  var onicecandidate: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, js.Any]) | Null = js.native
   
-  var onicecandidateerror: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, _]) | Null = js.native
+  var onicecandidateerror: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, js.Any]) | Null = js.native
   
-  var oniceconnectionstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var oniceconnectionstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onicegatheringstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onicegatheringstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onnegotiationneeded: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onnegotiationneeded: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onsignalingstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onsignalingstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onstatsended: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _]) | Null = js.native
+  var onstatsended: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, js.Any]) | Null = js.native
   
-  var ontrack: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _]) | Null = js.native
+  var ontrack: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, js.Any]) | Null = js.native
   
   val peerIdentity: js.Promise[RTCIdentityAssertion] = js.native
   
@@ -256,158 +269,170 @@ trait RTCPeerConnection extends EventTarget {
   val remoteDescription: RTCSessionDescription | Null = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_connectionstatechange(`type`: connectionstatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("removeEventListener")
   def removeEventListener_connectionstatechange(
     `type`: connectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_connectionstatechange(
     `type`: connectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_connectionstatechange(
+    `type`: connectionstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_datachannel(
     `type`: datachannel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_datachannel(
     `type`: datachannel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_datachannel(
     `type`: datachannel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDataChannelEvent, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icecandidate(
     `type`: icecandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icecandidate(
     `type`: icecandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icecandidate(
     `type`: icecandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icecandidateerror(
     `type`: icecandidateerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icecandidateerror(
     `type`: icecandidateerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icecandidateerror(
     `type`: icecandidateerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceErrorEvent, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_iceconnectionstatechange(
     `type`: iceconnectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_iceconnectionstatechange(
     `type`: iceconnectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_iceconnectionstatechange(
     `type`: iceconnectionstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icegatheringstatechange(
     `type`: icegatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icegatheringstatechange(
     `type`: icegatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icegatheringstatechange(
     `type`: icegatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_negotiationneeded(`type`: negotiationneeded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_negotiationneeded(
     `type`: negotiationneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_negotiationneeded(
+    `type`: negotiationneeded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_negotiationneeded(
     `type`: negotiationneeded,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_signalingstatechange(`type`: signalingstatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_signalingstatechange(
-    `type`: signalingstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_signalingstatechange(
     `type`: signalingstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_signalingstatechange(
+    `type`: signalingstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_signalingstatechange(
+    `type`: signalingstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_statsended(`type`: statsended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _]): Unit = js.native
+  def removeEventListener_statsended(
+    `type`: statsended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, js.Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statsended(
     `type`: statsended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statsended(
     `type`: statsended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_track(`type`: track, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _]): Unit = js.native
+  def removeEventListener_track(`type`: track, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_track(
     `type`: track,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_track(
     `type`: track,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

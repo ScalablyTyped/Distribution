@@ -2,17 +2,15 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontSizePaddingLeft extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var paddingLeft: Double = js.native
+  var paddingLeft: Double
 }
 object FontSizePaddingLeft {
   

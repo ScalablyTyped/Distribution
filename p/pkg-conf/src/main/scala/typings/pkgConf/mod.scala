@@ -3,7 +3,6 @@ package typings.pkgConf
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,12 +28,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("pkg-conf", JSImport.Namespace)
-  @js.native
-  def apply[ConfigType /* <: Config */](namespace: String): js.Promise[ConfigType with Config] = js.native
-  @JSImport("pkg-conf", JSImport.Namespace)
-  @js.native
-  def apply[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): js.Promise[ConfigType with Config] = js.native
+  @scala.inline
+  def apply[ConfigType /* <: Config */](namespace: String): js.Promise[ConfigType & Config] = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ConfigType & Config]]
+  @scala.inline
+  def apply[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): js.Promise[ConfigType & Config] = (^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfigType & Config]]
   
   @JSImport("pkg-conf", JSImport.Namespace)
   @js.native
@@ -51,38 +48,34 @@ object mod {
   	@param config - The `config` returned from any of the above methods.
   	@returns The filepath to the `package.json` file or `null` when not found.
   	*/
-  @JSImport("pkg-conf", "filepath")
-  @js.native
-  def filepath(config: Config): String | Null = js.native
+  @scala.inline
+  def filepath(config: Config): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("filepath")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /**
   	Same as `pkgConf()`, but runs synchronously.
   	@param namespace - The `package.json` namespace you want.
   	@returns Returns the config.
   	*/
-  @JSImport("pkg-conf", "sync")
-  @js.native
-  def sync[ConfigType /* <: Config */](namespace: String): ConfigType with Config = js.native
-  @JSImport("pkg-conf", "sync")
-  @js.native
-  def sync[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): ConfigType with Config = js.native
+  @scala.inline
+  def sync[ConfigType /* <: Config */](namespace: String): ConfigType & Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(namespace.asInstanceOf[js.Any]).asInstanceOf[ConfigType & Config]
+  @scala.inline
+  def sync[ConfigType /* <: Config */](namespace: String, options: Options[ConfigType]): ConfigType & Config = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfigType & Config]
   
   type Config = StringDictionary[js.Any]
   
-  @js.native
   trait Options[ConfigType /* <: Config */] extends StObject {
     
     /**
     		Directory to start looking up for a `package.json` file.
     		@default process.cwd()
     		*/
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
     		Default config.
     		@default {}
     		*/
-    var defaults: js.UndefOr[ConfigType] = js.native
+    var defaults: js.UndefOr[ConfigType] = js.undefined
     
     /**
     		Skip `package.json` files that have the namespaced config explicitly set to `false`.
@@ -97,7 +90,7 @@ object mod {
     		}
     		```
     		*/
-    var skipOnFalse: js.UndefOr[Boolean] = js.native
+    var skipOnFalse: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -108,7 +101,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ConfigType /* <: Config */] (val x: Self with Options[ConfigType]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ConfigType /* <: Config */] (val x: Self & Options[ConfigType]) extends AnyVal {
       
       @scala.inline
       def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])

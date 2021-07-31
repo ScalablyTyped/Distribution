@@ -2,31 +2,29 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitConflictUpdateResult extends StObject {
   
   /**
     * Conflict ID that was provided by input
     */
-  var conflictId: Double = js.native
+  var conflictId: Double
   
   /**
     * Reason for failing
     */
-  var customMessage: String = js.native
+  var customMessage: String
   
   /**
     * Status of the update on the server
     */
-  var updateStatus: GitConflictUpdateStatus = js.native
+  var updateStatus: GitConflictUpdateStatus
   
   /**
     * New state of the conflict after updating
     */
-  var updatedConflict: GitConflict = js.native
+  var updatedConflict: GitConflict
 }
 object GitConflictUpdateResult {
   

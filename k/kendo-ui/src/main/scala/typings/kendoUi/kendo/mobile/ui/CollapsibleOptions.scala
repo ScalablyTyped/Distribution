@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapsibleOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
   
-  var collapse: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.native
+  var collapse: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.undefined
   
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var expand: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.native
+  var expand: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.undefined
   
-  var expandIcon: js.UndefOr[String] = js.native
+  var expandIcon: js.UndefOr[String] = js.undefined
   
-  var iconPosition: js.UndefOr[String] = js.native
+  var iconPosition: js.UndefOr[String] = js.undefined
   
-  var inset: js.UndefOr[Boolean] = js.native
+  var inset: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object CollapsibleOptions {
   

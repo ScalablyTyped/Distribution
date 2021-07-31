@@ -2,17 +2,15 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ulimit extends StObject {
   
-  var hardLimit: Double = js.native
+  var hardLimit: Double
   
-  var name: UlimitName = js.native
+  var name: UlimitName
   
-  var softLimit: Double = js.native
+  var softLimit: Double
 }
 object Ulimit {
   

@@ -5,16 +5,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsecuritypoliciesDelete extends StandardParameters {
+trait ParamsResourceOrganizationsecuritypoliciesDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -28,12 +28,12 @@ trait ParamsResourceOrganizationsecuritypoliciesDelete extends StandardParameter
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the security policy to delete.
     */
-  var securityPolicy: js.UndefOr[String] = js.native
+  var securityPolicy: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsecuritypoliciesDelete {
   

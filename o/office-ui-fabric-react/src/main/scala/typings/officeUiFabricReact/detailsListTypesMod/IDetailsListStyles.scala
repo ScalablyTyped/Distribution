@@ -3,19 +3,17 @@ package typings.officeUiFabricReact.detailsListTypesMod
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDetailsListStyles extends StObject {
   
-  var contentWrapper: IStyle = js.native
+  var contentWrapper: IStyle
   
-  var focusZone: IStyle = js.native
+  var focusZone: IStyle
   
-  var headerWrapper: IStyle = js.native
+  var headerWrapper: IStyle
   
-  var root: IStyle = js.native
+  var root: IStyle
 }
 object IDetailsListStyles {
   

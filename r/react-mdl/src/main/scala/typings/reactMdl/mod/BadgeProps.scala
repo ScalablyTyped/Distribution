@@ -3,20 +3,19 @@ package typings.reactMdl.mod
 import typings.react.mod.ClassAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeProps
-  extends ClassAttributes[js.Any] {
+  extends StObject
+     with ClassAttributes[js.Any] {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var noBackground: js.UndefOr[Boolean] = js.native
+  var noBackground: js.UndefOr[Boolean] = js.undefined
   
-  var overlap: js.UndefOr[Boolean] = js.native
+  var overlap: js.UndefOr[Boolean] = js.undefined
   
-  var text: String | Double = js.native
+  var text: String | Double
 }
 object BadgeProps {
   

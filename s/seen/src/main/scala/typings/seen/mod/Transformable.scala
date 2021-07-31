@@ -2,7 +2,6 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Transformable")
@@ -27,22 +26,22 @@ class Transformable () extends StObject {
   def rotz(theta: Double): this.type = js.native
   
   def scale(): this.type = js.native
-  def scale(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
-  def scale(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def scale(x: js.UndefOr[scala.Nothing], y: Double, z: Double): this.type = js.native
   def scale(x: Double): this.type = js.native
-  def scale(x: Double, y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
   def scale(x: Double, y: Double): this.type = js.native
   def scale(x: Double, y: Double, z: Double): this.type = js.native
+  def scale(x: Double, y: Unit, z: Double): this.type = js.native
+  def scale(x: Unit, y: Double): this.type = js.native
+  def scale(x: Unit, y: Double, z: Double): this.type = js.native
+  def scale(x: Unit, y: Unit, z: Double): this.type = js.native
   
   def transform(m: Matrix): this.type = js.native
   
   def translate(): this.type = js.native
-  def translate(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
-  def translate(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-  def translate(x: js.UndefOr[scala.Nothing], y: Double, z: Double): this.type = js.native
   def translate(x: Double): this.type = js.native
-  def translate(x: Double, y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
   def translate(x: Double, y: Double): this.type = js.native
   def translate(x: Double, y: Double, z: Double): this.type = js.native
+  def translate(x: Double, y: Unit, z: Double): this.type = js.native
+  def translate(x: Unit, y: Double): this.type = js.native
+  def translate(x: Unit, y: Double, z: Double): this.type = js.native
+  def translate(x: Unit, y: Unit, z: Double): this.type = js.native
 }

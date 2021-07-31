@@ -2,13 +2,13 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultDirectoryLoginOptions extends LoginOptions {
+trait DefaultDirectoryLoginOptions
+  extends StObject
+     with LoginOptions {
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
 }
 object DefaultDirectoryLoginOptions {
   

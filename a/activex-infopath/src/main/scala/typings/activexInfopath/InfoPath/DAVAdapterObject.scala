@@ -3,30 +3,28 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DAVAdapterObject extends StObject {
   
-  var FileName: String = js.native
+  var FileName: String
   
-  var FolderURL: String = js.native
+  var FolderURL: String
   
   @JSName("InfoPath.DAVAdapterObject_typekey")
-  var InfoPathDotDAVAdapterObject_typekey: DAVAdapterObject = js.native
+  var InfoPathDotDAVAdapterObject_typekey: DAVAdapterObject
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
   
-  def SubmitData(pData: IXMLDOMNode): Unit = js.native
+  def SubmitData(pData: IXMLDOMNode): Unit
 }
 object DAVAdapterObject {
   

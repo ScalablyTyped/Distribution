@@ -2,23 +2,21 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  var FacebookID: String = js.native
+  var FacebookID: String
   
-  var FirstName: String = js.native
+  var FirstName: String
   
-  var LastName: String = js.native
+  var LastName: String
   
-  var PersonID: String = js.native
+  var PersonID: String
   
-  var UserFullName: String = js.native
+  var UserFullName: String
   
-  var UserID: Double = js.native
+  var UserID: Double
 }
 object User {
   

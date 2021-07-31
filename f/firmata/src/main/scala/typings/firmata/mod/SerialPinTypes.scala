@@ -2,27 +2,25 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialPinTypes extends StObject {
   
-  var RES_RX0: SERIAL_PIN_TYPE = js.native
+  var RES_RX0: SERIAL_PIN_TYPE
   
-  var RES_RX1: SERIAL_PIN_TYPE = js.native
+  var RES_RX1: SERIAL_PIN_TYPE
   
-  var RES_RX2: SERIAL_PIN_TYPE = js.native
+  var RES_RX2: SERIAL_PIN_TYPE
   
-  var RES_RX3: SERIAL_PIN_TYPE = js.native
+  var RES_RX3: SERIAL_PIN_TYPE
   
-  var RES_TX0: SERIAL_PIN_TYPE = js.native
+  var RES_TX0: SERIAL_PIN_TYPE
   
-  var RES_TX1: SERIAL_PIN_TYPE = js.native
+  var RES_TX1: SERIAL_PIN_TYPE
   
-  var RES_TX2: SERIAL_PIN_TYPE = js.native
+  var RES_TX2: SERIAL_PIN_TYPE
   
-  var RES_TX3: SERIAL_PIN_TYPE = js.native
+  var RES_TX3: SERIAL_PIN_TYPE
 }
 object SerialPinTypes {
   

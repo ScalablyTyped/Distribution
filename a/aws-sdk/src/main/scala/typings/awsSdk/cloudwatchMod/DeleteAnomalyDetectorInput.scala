@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAnomalyDetectorInput extends StObject {
   
   /**
     * The metric dimensions associated with the anomaly detection model to delete.
     */
-  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.native
+  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
   
   /**
     * The metric name associated with the anomaly detection model to delete.
     */
-  var MetricName: typings.awsSdk.cloudwatchMod.MetricName = js.native
+  var MetricName: typings.awsSdk.cloudwatchMod.MetricName
   
   /**
     * The namespace associated with the anomaly detection model to delete.
     */
-  var Namespace: typings.awsSdk.cloudwatchMod.Namespace = js.native
+  var Namespace: typings.awsSdk.cloudwatchMod.Namespace
   
   /**
     * The statistic associated with the anomaly detection model to delete.
     */
-  var Stat: AnomalyDetectorMetricStat = js.native
+  var Stat: AnomalyDetectorMetricStat
 }
 object DeleteAnomalyDetectorInput {
   

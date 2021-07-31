@@ -2,17 +2,15 @@ package typings.activexExcel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sheet extends StObject {
   
-  val Description: String = js.native
+  val Description: String
   
-  val Sheet: String = js.native
+  val Sheet: String
   
-  val Success: Boolean = js.native
+  val Success: Boolean
 }
 object Sheet {
   

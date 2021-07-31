@@ -2,13 +2,11 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the `WatchVariable()` method.
   */
-@js.native
 trait SchemaWatchVariableRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaWatchVariableRequest extends StObject {
     * immediately.  If not specified or the variable has an older timestamp,
     * the watcher waits for a the value to change before returning.
     */
-  var newerThan: js.UndefOr[String] = js.native
+  var newerThan: js.UndefOr[String] = js.undefined
 }
 object SchemaWatchVariableRequest {
   

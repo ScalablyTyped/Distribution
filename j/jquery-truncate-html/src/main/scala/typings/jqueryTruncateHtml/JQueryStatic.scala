@@ -2,13 +2,11 @@ package typings.jqueryTruncateHtml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  def truncate(html: String, options: TruncateOptions): String = js.native
+  def truncate(html: String, options: TruncateOptions): String
 }
 object JQueryStatic {
   

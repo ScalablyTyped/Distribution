@@ -5,10 +5,13 @@ import typings.grammarkdown.anon.PartialKnownOptionAliasFor
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
+  
+  @JSImport("grammarkdown/dist/options", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait EmitFormat extends StObject
@@ -17,28 +20,34 @@ object optionsMod {
   object EmitFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EmitFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[EmitFormat & Double] = js.native
     
     /**
       * Output should be emitted in ECMArkup format.
       */
     @js.native
-    sealed trait ecmarkup extends EmitFormat
-    /* 2 */ val ecmarkup: typings.grammarkdown.optionsMod.EmitFormat.ecmarkup with Double = js.native
+    sealed trait ecmarkup
+      extends StObject
+         with EmitFormat
+    /* 2 */ val ecmarkup: typings.grammarkdown.optionsMod.EmitFormat.ecmarkup & Double = js.native
     
     /**
       * Output should be emitted in HTML format.
       */
     @js.native
-    sealed trait html extends EmitFormat
-    /* 1 */ val html: typings.grammarkdown.optionsMod.EmitFormat.html with Double = js.native
+    sealed trait html
+      extends StObject
+         with EmitFormat
+    /* 1 */ val html: typings.grammarkdown.optionsMod.EmitFormat.html & Double = js.native
     
     /**
       * Output should be emitted in Markdown format.
       */
     @js.native
-    sealed trait markdown extends EmitFormat
-    /* 0 */ val markdown: typings.grammarkdown.optionsMod.EmitFormat.markdown with Double = js.native
+    sealed trait markdown
+      extends StObject
+         with EmitFormat
+    /* 0 */ val markdown: typings.grammarkdown.optionsMod.EmitFormat.markdown & Double = js.native
   }
   
   @js.native
@@ -48,21 +57,25 @@ object optionsMod {
   object NewLineKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[NewLineKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[NewLineKind & Double] = js.native
     
     /**
       * Lines should be terminted with a carriage-return followed by a line-feed (DOS-style).
       */
     @js.native
-    sealed trait CarriageReturnLineFeed extends NewLineKind
-    /* 1 */ val CarriageReturnLineFeed: typings.grammarkdown.optionsMod.NewLineKind.CarriageReturnLineFeed with Double = js.native
+    sealed trait CarriageReturnLineFeed
+      extends StObject
+         with NewLineKind
+    /* 1 */ val CarriageReturnLineFeed: typings.grammarkdown.optionsMod.NewLineKind.CarriageReturnLineFeed & Double = js.native
     
     /**
       * Lines should be terminated with a line-feed (Unix-style).
       */
     @js.native
-    sealed trait LineFeed extends NewLineKind
-    /* 0 */ val LineFeed: typings.grammarkdown.optionsMod.NewLineKind.LineFeed with Double = js.native
+    sealed trait LineFeed
+      extends StObject
+         with NewLineKind
+    /* 0 */ val LineFeed: typings.grammarkdown.optionsMod.NewLineKind.LineFeed & Double = js.native
   }
   
   @JSImport("grammarkdown/dist/options", "UsageWriter")
@@ -79,94 +92,82 @@ object optionsMod {
     var remainder: js.Any = js.native
     
     def writeOption(): Unit = js.native
-    def writeOption(left: js.UndefOr[scala.Nothing], right: String): Unit = js.native
     def writeOption(left: String): Unit = js.native
     def writeOption(left: String, right: String): Unit = js.native
+    def writeOption(left: Unit, right: String): Unit = js.native
     
     def writeln(): Unit = js.native
     def writeln(text: String): Unit = js.native
   }
   
-  @JSImport("grammarkdown/dist/options", "getDefaultOptions")
-  @js.native
-  def getDefaultOptions(): CompilerOptions = js.native
+  @scala.inline
+  def getDefaultOptions(): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[CompilerOptions]
   
-  @JSImport("grammarkdown/dist/options", "parse")
-  @js.native
-  def parse[T /* <: ParsedArguments */](options: KnownOptions): js.UndefOr[T] = js.native
-  @JSImport("grammarkdown/dist/options", "parse")
-  @js.native
-  def parse[T /* <: ParsedArguments */](options: KnownOptions, args: js.Array[String]): js.UndefOr[T] = js.native
+  @scala.inline
+  def parse[T /* <: ParsedArguments */](options: KnownOptions): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def parse[T /* <: ParsedArguments */](options: KnownOptions, args: js.Array[String]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  @JSImport("grammarkdown/dist/options", "usage")
-  @js.native
-  def usage(options: KnownOptions): Unit = js.native
-  @JSImport("grammarkdown/dist/options", "usage")
-  @js.native
-  def usage(
-    options: KnownOptions,
-    margin: js.UndefOr[scala.Nothing],
-    printHeader: js.Function1[/* writer */ UsageWriter, Unit]
-  ): Unit = js.native
-  @JSImport("grammarkdown/dist/options", "usage")
-  @js.native
-  def usage(options: KnownOptions, margin: Double): Unit = js.native
-  @JSImport("grammarkdown/dist/options", "usage")
-  @js.native
-  def usage(options: KnownOptions, margin: Double, printHeader: js.Function1[/* writer */ UsageWriter, Unit]): Unit = js.native
+  @scala.inline
+  def usage(options: KnownOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("usage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def usage(options: KnownOptions, margin: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("usage")(options.asInstanceOf[js.Any], margin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def usage(options: KnownOptions, margin: Double, printHeader: js.Function1[/* writer */ UsageWriter, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("usage")(options.asInstanceOf[js.Any], margin.asInstanceOf[js.Any], printHeader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def usage(options: KnownOptions, margin: Unit, printHeader: js.Function1[/* writer */ UsageWriter, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("usage")(options.asInstanceOf[js.Any], margin.asInstanceOf[js.Any], printHeader.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CompilerOptions extends StObject {
     
     /**
       * Indicates whether internal diagnostic information should be reported to the console.
       */
-    var diagnostics: js.UndefOr[Boolean] = js.native
+    var diagnostics: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether to include hyperlinks in the emit output.
       */
-    var emitLinks: js.UndefOr[Boolean] = js.native
+    var emitLinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates the emit output format.
       */
-    var format: js.UndefOr[EmitFormat] = js.native
+    var format: js.UndefOr[EmitFormat] = js.undefined
     
     /**
       * Indicates the token to use for line terminators during emit.
       */
-    var newLine: js.UndefOr[NewLineKind] = js.native
+    var newLine: js.UndefOr[NewLineKind] = js.undefined
     
     /**
       * Indicates that diagnostics should not be reported.
       */
-    var noChecks: js.UndefOr[Boolean] = js.native
+    var noChecks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates that emit output should not be produced.
       */
-    var noEmit: js.UndefOr[Boolean] = js.native
+    var noEmit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates that emit output should not be produced if any diagnostics are reported.
       */
-    var noEmitOnError: js.UndefOr[Boolean] = js.native
+    var noEmitOnError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables strict checking of production parameters.
       */
-    var noStrictParametricProductions: js.UndefOr[Boolean] = js.native
+    var noStrictParametricProductions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates that diagnostics should be produced if production parameters are unused.
       */
-    var noUnusedParameters: js.UndefOr[Boolean] = js.native
+    var noUnusedParameters: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates the file path for emit output.
       */
-    var out: js.UndefOr[String] = js.native
+    var out: js.UndefOr[String] = js.undefined
   }
   object CompilerOptions {
     
@@ -241,34 +242,35 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait KnownOption extends StObject {
     
-    var aliasFor: js.UndefOr[js.Array[String]] = js.native
+    var aliasFor: js.UndefOr[js.Array[String]] = js.undefined
     
-    var convert: js.UndefOr[js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, _]] = js.native
+    var convert: js.UndefOr[
+        js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, js.Any]
+      ] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var isUsage: js.UndefOr[Boolean] = js.native
+    var isUsage: js.UndefOr[Boolean] = js.undefined
     
-    var longName: String = js.native
+    var longName: String
     
-    var many: js.UndefOr[Boolean] = js.native
+    var many: js.UndefOr[Boolean] = js.undefined
     
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
-    var shortName: js.UndefOr[String] = js.native
+    var shortName: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String | (Map[String, _])] = js.native
+    var `type`: js.UndefOr[String | (Map[String, js.Any])] = js.undefined
     
     var validate: js.UndefOr[
         js.Function3[/* key */ String, /* value */ String, /* raw */ RawArguments, Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object KnownOption {
     
@@ -291,7 +293,7 @@ object optionsMod {
       def setAliasForVarargs(value: String*): Self = StObject.set(x, "aliasFor", js.Array(value :_*))
       
       @scala.inline
-      def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => _): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
+      def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => js.Any): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
       
       @scala.inline
       def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
@@ -342,7 +344,7 @@ object optionsMod {
       def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
       @scala.inline
-      def setType(value: String | (Map[String, _])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String | (Map[String, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -357,13 +359,13 @@ object optionsMod {
   
   type KnownOptions = StringDictionary[PartialKnownOptionAliasFor]
   
-  @js.native
   trait ParsedArguments
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var argv: js.Array[String] = js.native
+    var argv: js.Array[String]
     
-    var rest: js.Array[String] = js.native
+    var rest: js.Array[String]
   }
   object ParsedArguments {
     
@@ -390,16 +392,15 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait RawArgument extends StObject {
     
-    var formattedKey: String = js.native
+    var formattedKey: String
     
-    var option: KnownOption = js.native
+    var option: KnownOption
     
-    var rawKey: String = js.native
+    var rawKey: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object RawArgument {
     
@@ -426,12 +427,11 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait RawArguments extends StObject {
     
-    var args: js.Array[RawArgument] = js.native
+    var args: js.Array[RawArgument]
     
-    var rest: js.Array[String] = js.native
+    var rest: js.Array[String]
   }
   object RawArguments {
     

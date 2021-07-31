@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTriggersRequest extends StObject {
   
   /**
     *  The name of the job for which to retrieve triggers. The trigger that can start this job is returned. If there is no such trigger, all triggers are returned.
     */
-  var DependentJobName: js.UndefOr[NameString] = js.native
+  var DependentJobName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The maximum size of a list to return.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A continuation token, if this is a continuation request.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Specifies to return only these tagged resources.
     */
-  var Tags: js.UndefOr[TagsMap] = js.native
+  var Tags: js.UndefOr[TagsMap] = js.undefined
 }
 object ListTriggersRequest {
   

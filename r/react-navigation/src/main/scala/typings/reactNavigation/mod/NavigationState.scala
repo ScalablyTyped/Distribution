@@ -2,24 +2,22 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationState extends StObject {
   
   /**
     * Index refers to the active child route in the routes array.
     */
-  var index: Double = js.native
+  var index: Double
   
-  var isTransitioning: Boolean = js.native
+  var isTransitioning: Boolean
   
-  var key: String = js.native
+  var key: String
   
-  var params: js.UndefOr[NavigationParams] = js.native
+  var params: js.UndefOr[NavigationParams] = js.undefined
   
-  var routes: js.Array[NavigationRoute[NavigationParams]] = js.native
+  var routes: js.Array[NavigationRoute[NavigationParams]]
 }
 object NavigationState {
   

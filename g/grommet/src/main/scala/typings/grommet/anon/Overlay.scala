@@ -7,25 +7,23 @@ import typings.grommet.utilsMod.BackgroundType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overlay extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[`11`] = js.native
+  var border: js.UndefOr[`11`] = js.undefined
   
-  var container: js.UndefOr[ZIndex] = js.native
+  var container: js.UndefOr[ZIndex] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var overlay: js.UndefOr[`5`] = js.native
+  var overlay: js.UndefOr[`5`] = js.undefined
   
-  var responsiveBreakpoint: js.UndefOr[String] = js.native
+  var responsiveBreakpoint: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[String] = js.undefined
 }
 object Overlay {
   
@@ -57,10 +55,10 @@ object Overlay {
     def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

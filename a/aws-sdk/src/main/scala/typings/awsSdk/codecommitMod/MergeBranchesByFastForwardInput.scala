@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeBranchesByFastForwardInput extends StObject {
   
   /**
     * The branch, tag, HEAD, or other fully qualified reference used to identify a commit (for example, a branch name or a full commit ID).
     */
-  var destinationCommitSpecifier: CommitName = js.native
+  var destinationCommitSpecifier: CommitName
   
   /**
     * The name of the repository where you want to merge two branches.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
   
   /**
     * The branch, tag, HEAD, or other fully qualified reference used to identify a commit (for example, a branch name or a full commit ID).
     */
-  var sourceCommitSpecifier: CommitName = js.native
+  var sourceCommitSpecifier: CommitName
   
   /**
     * The branch where the merge is applied.
     */
-  var targetBranch: js.UndefOr[BranchName] = js.native
+  var targetBranch: js.UndefOr[BranchName] = js.undefined
 }
 object MergeBranchesByFastForwardInput {
   

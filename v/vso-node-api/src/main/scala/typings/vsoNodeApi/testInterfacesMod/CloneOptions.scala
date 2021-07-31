@@ -3,41 +3,39 @@ package typings.vsoNodeApi.testInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloneOptions extends StObject {
   
   /**
     * If set to true requirements will be cloned
     */
-  var cloneRequirements: Boolean = js.native
+  var cloneRequirements: Boolean
   
   /**
     * copy all suites from a source plan
     */
-  var copyAllSuites: Boolean = js.native
+  var copyAllSuites: Boolean
   
   /**
     * copy ancestor hieracrchy
     */
-  var copyAncestorHierarchy: Boolean = js.native
+  var copyAncestorHierarchy: Boolean
   
   /**
     * Name of the workitem type of the clone
     */
-  var destinationWorkItemType: String = js.native
+  var destinationWorkItemType: String
   
   /**
     * Key value pairs where the key value is overridden by the value.
     */
-  var overrideParameters: StringDictionary[String] = js.native
+  var overrideParameters: StringDictionary[String]
   
   /**
     * Comment on the link that will link the new clone  test case to the original Set null for no comment
     */
-  var relatedLinkComment: String = js.native
+  var relatedLinkComment: String
 }
 object CloneOptions {
   

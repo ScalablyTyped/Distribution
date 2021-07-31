@@ -2,25 +2,25 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GmailImageAdBuilder[GmailImageAd] extends AdBuilder[GmailImageAdBuilder[GmailImageAd]] {
+trait GmailImageAdBuilder[GmailImageAd]
+  extends StObject
+     with AdBuilder[GmailImageAdBuilder[GmailImageAd]] {
   
-  def withAdvertiser(advertiser: String): GmailImageAdBuilder[GmailImageAd] = js.native
+  def withAdvertiser(advertiser: String): GmailImageAdBuilder[GmailImageAd]
   
-  def withDescription(description: String): GmailImageAdBuilder[GmailImageAd] = js.native
+  def withDescription(description: String): GmailImageAdBuilder[GmailImageAd]
   
-  def withDisplayUrl(displayUrl: String): GmailImageAdBuilder[GmailImageAd] = js.native
+  def withDisplayUrl(displayUrl: String): GmailImageAdBuilder[GmailImageAd]
   
-  def withImage(image: Media): GmailImageAdBuilder[GmailImageAd] = js.native
+  def withImage(image: Media): GmailImageAdBuilder[GmailImageAd]
   
-  def withLogo(logo: Media): GmailImageAdBuilder[GmailImageAd] = js.native
+  def withLogo(logo: Media): GmailImageAdBuilder[GmailImageAd]
   
-  def withName(name: String): GmailImageAdBuilder[GmailImageAd] = js.native
+  def withName(name: String): GmailImageAdBuilder[GmailImageAd]
   
-  def withSubject(subject: String): GmailImageAdBuilder[GmailImageAd] = js.native
+  def withSubject(subject: String): GmailImageAdBuilder[GmailImageAd]
 }
 object GmailImageAdBuilder {
   
@@ -44,7 +44,7 @@ object GmailImageAdBuilder {
   }
   
   @scala.inline
-  implicit class GmailImageAdBuilderMutableBuilder[Self <: GmailImageAdBuilder[_], GmailImageAd] (val x: Self with GmailImageAdBuilder[GmailImageAd]) extends AnyVal {
+  implicit class GmailImageAdBuilderMutableBuilder[Self <: GmailImageAdBuilder[?], GmailImageAd] (val x: Self & GmailImageAdBuilder[GmailImageAd]) extends AnyVal {
     
     @scala.inline
     def setWithAdvertiser(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))

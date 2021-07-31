@@ -2,20 +2,18 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MaintenanceWindow defines the maintenance window to be used for the
   * cluster.
   */
-@js.native
 trait SchemaMaintenanceWindow extends StObject {
   
   /**
     * DailyMaintenanceWindow specifies a daily maintenance operation window.
     */
-  var dailyMaintenanceWindow: js.UndefOr[SchemaDailyMaintenanceWindow] = js.native
+  var dailyMaintenanceWindow: js.UndefOr[SchemaDailyMaintenanceWindow] = js.undefined
 }
 object SchemaMaintenanceWindow {
   

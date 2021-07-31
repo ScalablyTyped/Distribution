@@ -2,49 +2,49 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTrackBar.PositionChanging event.
   */
-@js.native
-trait ASPxClientTrackBarPositionChangingEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientTrackBarPositionChangingEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
   /**
     * Gets the current drag handle position.
     */
-  var currentPosition: Double = js.native
+  var currentPosition: Double
   
   /**
     * Gets the current secondary drag handle position.
     */
-  var currentPositionEnd: Double = js.native
+  var currentPositionEnd: Double
   
   /**
     * Gets the current main drag handle position.
     */
-  var currentPositionStart: Double = js.native
+  var currentPositionStart: Double
   
   /**
     * Gets a position where the drag handle is being moved.
     */
-  var newPosition: Double = js.native
+  var newPosition: Double
   
   /**
     * Gets a position where the secondary drag handle is being moved.
     */
-  var newPositionEnd: Double = js.native
+  var newPositionEnd: Double
   
   /**
     * Gets a position where the main drag handle is being moved.
     */
-  var newPositionStart: Double = js.native
+  var newPositionStart: Double
 }
 object ASPxClientTrackBarPositionChangingEventArgs {
   

@@ -2,30 +2,28 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRouterStatus extends StObject {
   
   /**
     * Best routes for this router&#39;s network.
     */
-  var bestRoutes: js.UndefOr[js.Array[SchemaRoute]] = js.native
+  var bestRoutes: js.UndefOr[js.Array[SchemaRoute]] = js.undefined
   
   /**
     * Best routes learned by this router.
     */
-  var bestRoutesForRouter: js.UndefOr[js.Array[SchemaRoute]] = js.native
+  var bestRoutesForRouter: js.UndefOr[js.Array[SchemaRoute]] = js.undefined
   
-  var bgpPeerStatus: js.UndefOr[js.Array[SchemaRouterStatusBgpPeerStatus]] = js.native
+  var bgpPeerStatus: js.UndefOr[js.Array[SchemaRouterStatusBgpPeerStatus]] = js.undefined
   
-  var natStatus: js.UndefOr[js.Array[SchemaRouterStatusNatStatus]] = js.native
+  var natStatus: js.UndefOr[js.Array[SchemaRouterStatusNatStatus]] = js.undefined
   
   /**
     * URI of the network to which this router belongs.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
 }
 object SchemaRouterStatus {
   

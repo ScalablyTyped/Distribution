@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList extends StandardParameters {
+trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Only include resource versions that were current at some point during the
@@ -20,22 +20,22 @@ trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList extends S
     * specific day: `_at=2019-01-20` A specific second:
     * `_at=2018-12-31T23:59:58Z`
     */
-  var at: js.UndefOr[String] = js.native
+  var at: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of search results on a page.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the resource to retrieve.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Used to retrieve the first, previous, next, or last page of resource
@@ -44,7 +44,7 @@ trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList extends S
     * `link.relation` is "first", "previous", "next" or "last". Omit `page` if
     * no previous request has been made.
     */
-  var page: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.undefined
   
   /**
     * Only include resource versions that were created at or after the given
@@ -53,7 +53,7 @@ trait ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList extends S
     * or 2017-01-01T00:00:00Z). The time must be specified to the second and
     * include a time zone.
     */
-  var since: js.UndefOr[String] = js.native
+  var since: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList {
   

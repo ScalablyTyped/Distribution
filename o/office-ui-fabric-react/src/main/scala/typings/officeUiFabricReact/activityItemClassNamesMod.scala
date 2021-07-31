@@ -4,40 +4,41 @@ import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemStyles
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activityItemClassNamesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/ActivityItem/ActivityItem.classNames", "getClassNames")
+  @JSImport("office-ui-fabric-react/lib/components/ActivityItem/ActivityItem.classNames", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getClassNames(
     styles: IActivityItemStyles,
     className: String,
     activityPersonas: js.Array[IPersonaProps],
     isCompact: Boolean
-  ): IActivityItemClassNames = js.native
+  ): IActivityItemClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], activityPersonas.asInstanceOf[js.Any], isCompact.asInstanceOf[js.Any])).asInstanceOf[IActivityItemClassNames]
   
-  @js.native
   trait IActivityItemClassNames extends StObject {
     
-    var activityContent: js.UndefOr[String] = js.native
+    var activityContent: js.UndefOr[String] = js.undefined
     
-    var activityPersona: js.UndefOr[String] = js.native
+    var activityPersona: js.UndefOr[String] = js.undefined
     
-    var activityText: js.UndefOr[String] = js.native
+    var activityText: js.UndefOr[String] = js.undefined
     
-    var activityTypeIcon: js.UndefOr[String] = js.native
+    var activityTypeIcon: js.UndefOr[String] = js.undefined
     
-    var commentText: js.UndefOr[String] = js.native
+    var commentText: js.UndefOr[String] = js.undefined
     
-    var personaContainer: js.UndefOr[String] = js.native
+    var personaContainer: js.UndefOr[String] = js.undefined
     
-    var pulsingBeacon: js.UndefOr[String] = js.native
+    var pulsingBeacon: js.UndefOr[String] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var timeStamp: js.UndefOr[String] = js.native
+    var timeStamp: js.UndefOr[String] = js.undefined
   }
   object IActivityItemClassNames {
     

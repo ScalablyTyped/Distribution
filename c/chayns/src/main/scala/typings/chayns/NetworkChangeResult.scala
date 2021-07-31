@@ -2,16 +2,14 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setNetworkChangeCallback()
-@js.native
 trait NetworkChangeResult extends StObject {
   
-  var isConnected: Boolean = js.native
+  var isConnected: Boolean
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object NetworkChangeResult {
   

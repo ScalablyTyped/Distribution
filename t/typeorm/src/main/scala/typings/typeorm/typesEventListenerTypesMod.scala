@@ -9,7 +9,6 @@ import typings.typeorm.typeormStrings.`before-remove`
 import typings.typeorm.typeormStrings.`before-update`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventListenerTypesMod {

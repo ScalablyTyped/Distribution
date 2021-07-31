@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicFilter extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait BasicFilter extends StObject {
   var criteria: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The filter criteria per column. Both criteria and filter_specs are populated in responses. If both fields are specified in an update request, this field takes precedence. */
-  var filterSpecs: js.UndefOr[js.Array[FilterSpec]] = js.native
+  var filterSpecs: js.UndefOr[js.Array[FilterSpec]] = js.undefined
   
   /** The range the filter covers. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
   
   /** The sort order per column. Later specifications are used when values are equal in the earlier specifications. */
-  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
+  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
 }
 object BasicFilter {
   
@@ -43,7 +41,7 @@ object BasicFilter {
     def setCriteria(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter & TopLevel[js.Any]
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline

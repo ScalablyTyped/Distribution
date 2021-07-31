@@ -2,19 +2,17 @@ package typings.w3cWebUsb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USBEndpoint extends StObject {
   
-  val direction: USBDirection = js.native
+  val direction: USBDirection
   
-  val endpointNumber: Double = js.native
+  val endpointNumber: Double
   
-  val packetSize: Double = js.native
+  val packetSize: Double
   
-  val `type`: USBEndpointType = js.native
+  val `type`: USBEndpointType
 }
 object USBEndpoint {
   

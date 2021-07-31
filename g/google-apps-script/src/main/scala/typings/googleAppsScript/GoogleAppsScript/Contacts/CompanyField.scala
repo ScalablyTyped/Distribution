@@ -2,28 +2,26 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Company field in a Contact.
   */
-@js.native
 trait CompanyField extends StObject {
   
-  def deleteCompanyField(): Unit = js.native
+  def deleteCompanyField(): Unit
   
-  def getCompanyName(): String = js.native
+  def getCompanyName(): String
   
-  def getJobTitle(): String = js.native
+  def getJobTitle(): String
   
-  def isPrimary(): Boolean = js.native
+  def isPrimary(): Boolean
   
-  def setAsPrimary(): CompanyField = js.native
+  def setAsPrimary(): CompanyField
   
-  def setCompanyName(company: String): CompanyField = js.native
+  def setCompanyName(company: String): CompanyField
   
-  def setJobTitle(title: String): CompanyField = js.native
+  def setJobTitle(title: String): CompanyField
 }
 object CompanyField {
   

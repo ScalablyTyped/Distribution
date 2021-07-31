@@ -2,25 +2,24 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentEventMap
-  extends GlobalEventHandlersEventMap
+  extends StObject
+     with GlobalEventHandlersEventMap
      with DocumentAndElementEventHandlersEventMap {
   
-  var fullscreenchange: Event = js.native
+  var fullscreenchange: Event
   
-  var fullscreenerror: Event = js.native
+  var fullscreenerror: Event
   
-  var pointerlockchange: Event = js.native
+  var pointerlockchange: Event
   
-  var pointerlockerror: Event = js.native
+  var pointerlockerror: Event
   
-  var readystatechange: Event = js.native
+  var readystatechange: Event
   
-  var visibilitychange: Event = js.native
+  var visibilitychange: Event
 }
 object DocumentEventMap {
   

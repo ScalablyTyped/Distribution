@@ -2,24 +2,24 @@ package typings.prettyHrtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pretty-hrtime", JSImport.Namespace)
-  @js.native
-  def apply(hrTime: js.Tuple2[Double, Double]): String = js.native
-  @JSImport("pretty-hrtime", JSImport.Namespace)
-  @js.native
-  def apply(hrTime: js.Tuple2[Double, Double], options: Options): String = js.native
+  @scala.inline
+  def apply(hrTime: js.Tuple2[Double, Double]): String = ^.asInstanceOf[js.Dynamic].apply(hrTime.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(hrTime: js.Tuple2[Double, Double], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(hrTime.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("pretty-hrtime", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var precise: js.UndefOr[Boolean] = js.native
+    var precise: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

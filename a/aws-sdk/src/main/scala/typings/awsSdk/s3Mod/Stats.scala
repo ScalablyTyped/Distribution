@@ -2,26 +2,24 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stats extends StObject {
   
   /**
     * The total number of uncompressed object bytes processed.
     */
-  var BytesProcessed: js.UndefOr[typings.awsSdk.s3Mod.BytesProcessed] = js.native
+  var BytesProcessed: js.UndefOr[typings.awsSdk.s3Mod.BytesProcessed] = js.undefined
   
   /**
     * The total number of bytes of records payload data returned.
     */
-  var BytesReturned: js.UndefOr[typings.awsSdk.s3Mod.BytesReturned] = js.native
+  var BytesReturned: js.UndefOr[typings.awsSdk.s3Mod.BytesReturned] = js.undefined
   
   /**
     * The total number of object bytes scanned.
     */
-  var BytesScanned: js.UndefOr[typings.awsSdk.s3Mod.BytesScanned] = js.native
+  var BytesScanned: js.UndefOr[typings.awsSdk.s3Mod.BytesScanned] = js.undefined
 }
 object Stats {
   

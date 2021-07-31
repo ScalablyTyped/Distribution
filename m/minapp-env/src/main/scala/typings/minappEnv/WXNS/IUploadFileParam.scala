@@ -2,19 +2,19 @@ package typings.minappEnv.WXNS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IUploadFileParam extends IAPIParam[IUploadFileSuccessResult] {
+trait IUploadFileParam
+  extends StObject
+     with IAPIParam[IUploadFileSuccessResult] {
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var header: js.UndefOr[AnyObject] = js.native
+  var header: js.UndefOr[AnyObject] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var url: String = js.native
+  var url: String
 }
 object IUploadFileParam {
   

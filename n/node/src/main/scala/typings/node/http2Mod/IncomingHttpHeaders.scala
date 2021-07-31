@@ -2,24 +2,23 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncomingHttpHeaders
-  extends typings.node.httpMod.IncomingHttpHeaders {
+  extends StObject
+     with typings.node.httpMod.IncomingHttpHeaders {
   
   @JSName(":authority")
-  var Colonauthority: js.UndefOr[String] = js.native
+  var Colonauthority: js.UndefOr[String] = js.undefined
   
   @JSName(":method")
-  var Colonmethod: js.UndefOr[String] = js.native
+  var Colonmethod: js.UndefOr[String] = js.undefined
   
   @JSName(":path")
-  var Colonpath: js.UndefOr[String] = js.native
+  var Colonpath: js.UndefOr[String] = js.undefined
   
   @JSName(":scheme")
-  var Colonscheme: js.UndefOr[String] = js.native
+  var Colonscheme: js.UndefOr[String] = js.undefined
 }
 object IncomingHttpHeaders {
   

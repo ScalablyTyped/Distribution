@@ -3,7 +3,6 @@ package typings.nodeConfigManager
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,14 +32,13 @@ object mod extends Shortcut {
     def set(key: String, value: Boolean): ConfigManager = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var camelCase: Boolean = js.native
+    var camelCase: Boolean
     
-    var configDir: String = js.native
+    var configDir: String
     
-    var env: String = js.native
+    var env: String
   }
   object Options {
     

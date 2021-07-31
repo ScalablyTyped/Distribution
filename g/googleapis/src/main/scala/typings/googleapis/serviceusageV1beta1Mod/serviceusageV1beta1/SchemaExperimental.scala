@@ -2,20 +2,18 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Experimental service configuration. These configuration options can only be
   * used by whitelisted users.
   */
-@js.native
 trait SchemaExperimental extends StObject {
   
   /**
     * Authorization configuration.
     */
-  var authorization: js.UndefOr[SchemaAuthorizationConfig] = js.native
+  var authorization: js.UndefOr[SchemaAuthorizationConfig] = js.undefined
 }
 object SchemaExperimental {
   

@@ -5,7 +5,6 @@ import typings.reactMdSheet.sheetMod.SheetPosition
 import typings.reactMdSheet.sheetMod.SheetVerticalSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdSheetStrings {
@@ -46,7 +45,9 @@ object reactMdSheetStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends SheetPosition
+  sealed trait bottom
+    extends StObject
+       with SheetPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -126,7 +127,9 @@ object reactMdSheetStrings {
   def last: last = "last".asInstanceOf[last]
   
   @js.native
-  sealed trait left extends SheetPosition
+  sealed trait left
+    extends StObject
+       with SheetPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -151,7 +154,9 @@ object reactMdSheetStrings {
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait media extends SheetHorizontalSize
+  sealed trait media
+    extends StObject
+       with SheetHorizontalSize
   @scala.inline
   def media: media = "media".asInstanceOf[media]
   
@@ -182,7 +187,8 @@ object reactMdSheetStrings {
   
   @js.native
   sealed trait none
-    extends SheetHorizontalSize
+    extends StObject
+       with SheetHorizontalSize
        with SheetVerticalSize
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -223,7 +229,9 @@ object reactMdSheetStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait recommended extends SheetVerticalSize
+  sealed trait recommended
+    extends StObject
+       with SheetVerticalSize
   @scala.inline
   def recommended: recommended = "recommended".asInstanceOf[recommended]
   
@@ -243,7 +251,9 @@ object reactMdSheetStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait right extends SheetPosition
+  sealed trait right
+    extends StObject
+       with SheetPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -258,7 +268,9 @@ object reactMdSheetStrings {
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait static extends SheetHorizontalSize
+  sealed trait static
+    extends StObject
+       with SheetHorizontalSize
   @scala.inline
   def static: static = "static".asInstanceOf[static]
   
@@ -293,13 +305,16 @@ object reactMdSheetStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait top extends SheetPosition
+  sealed trait top
+    extends StObject
+       with SheetPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait touch
-    extends SheetHorizontalSize
+    extends StObject
+       with SheetHorizontalSize
        with SheetVerticalSize
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]

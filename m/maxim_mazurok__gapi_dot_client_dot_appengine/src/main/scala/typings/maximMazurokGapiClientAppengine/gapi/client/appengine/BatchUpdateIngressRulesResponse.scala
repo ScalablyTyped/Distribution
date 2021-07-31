@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateIngressRulesResponse extends StObject {
   
   /** The full list of ingress FirewallRules for this application. */
-  var ingressRules: js.UndefOr[js.Array[FirewallRule]] = js.native
+  var ingressRules: js.UndefOr[js.Array[FirewallRule]] = js.undefined
 }
 object BatchUpdateIngressRulesResponse {
   

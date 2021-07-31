@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Indexing$Datasources$Items")
@@ -34,7 +33,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceIndexingDatasourcesItemsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceIndexingDatasourcesItemsDelete,
@@ -68,7 +67,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def deleteQueueItems(): GaxiosPromise[SchemaOperation] = js.native
   def deleteQueueItems(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def deleteQueueItems(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def deleteQueueItems(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteQueueItems(params: ParamsResourceIndexingDatasourcesItemsDeletequeueitems): GaxiosPromise[SchemaOperation] = js.native
   def deleteQueueItems(
     params: ParamsResourceIndexingDatasourcesItemsDeletequeueitems,
@@ -102,7 +101,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaItem] = js.native
   def get(callback: BodyResponseCallback[SchemaItem]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaItem] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaItem] = js.native
   def get(params: ParamsResourceIndexingDatasourcesItemsGet): GaxiosPromise[SchemaItem] = js.native
   def get(params: ParamsResourceIndexingDatasourcesItemsGet, callback: BodyResponseCallback[SchemaItem]): Unit = js.native
   def get(
@@ -134,7 +133,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def index(): GaxiosPromise[SchemaOperation] = js.native
   def index(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def index(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def index(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def index(params: ParamsResourceIndexingDatasourcesItemsIndex): GaxiosPromise[SchemaOperation] = js.native
   def index(
     params: ParamsResourceIndexingDatasourcesItemsIndex,
@@ -171,7 +170,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListItemsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListItemsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListItemsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListItemsResponse] = js.native
   def list(params: ParamsResourceIndexingDatasourcesItemsList): GaxiosPromise[SchemaListItemsResponse] = js.native
   def list(
     params: ParamsResourceIndexingDatasourcesItemsList,
@@ -212,7 +211,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def poll(): GaxiosPromise[SchemaPollItemsResponse] = js.native
   def poll(callback: BodyResponseCallback[SchemaPollItemsResponse]): Unit = js.native
-  def poll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPollItemsResponse] = js.native
+  def poll(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPollItemsResponse] = js.native
   def poll(params: ParamsResourceIndexingDatasourcesItemsPoll): GaxiosPromise[SchemaPollItemsResponse] = js.native
   def poll(
     params: ParamsResourceIndexingDatasourcesItemsPoll,
@@ -245,7 +244,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def push(): GaxiosPromise[SchemaItem] = js.native
   def push(callback: BodyResponseCallback[SchemaItem]): Unit = js.native
-  def push(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaItem] = js.native
+  def push(params: Unit, options: MethodOptions): GaxiosPromise[SchemaItem] = js.native
   def push(params: ParamsResourceIndexingDatasourcesItemsPush): GaxiosPromise[SchemaItem] = js.native
   def push(params: ParamsResourceIndexingDatasourcesItemsPush, callback: BodyResponseCallback[SchemaItem]): Unit = js.native
   def push(
@@ -277,7 +276,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def unreserve(): GaxiosPromise[SchemaOperation] = js.native
   def unreserve(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def unreserve(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def unreserve(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def unreserve(params: ParamsResourceIndexingDatasourcesItemsUnreserve): GaxiosPromise[SchemaOperation] = js.native
   def unreserve(
     params: ParamsResourceIndexingDatasourcesItemsUnreserve,
@@ -312,7 +311,7 @@ class ResourceIndexingDatasourcesItems protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaUploadItemRef] = js.native
   def upload(callback: BodyResponseCallback[SchemaUploadItemRef]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUploadItemRef] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUploadItemRef] = js.native
   def upload(params: ParamsResourceIndexingDatasourcesItemsUpload): GaxiosPromise[SchemaUploadItemRef] = js.native
   def upload(
     params: ParamsResourceIndexingDatasourcesItemsUpload,

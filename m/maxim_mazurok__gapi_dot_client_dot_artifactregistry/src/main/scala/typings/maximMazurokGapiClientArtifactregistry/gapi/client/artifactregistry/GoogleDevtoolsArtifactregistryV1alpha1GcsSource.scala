@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsArtifactregistryV1alpha1GcsSource extends StObject {
   
   /** Cloud Storage paths URI (e.g., gs://my_bucket//my_object). */
-  var uris: js.UndefOr[js.Array[String]] = js.native
+  var uris: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Supports URI wildcards for matching multiple objects from a single URI. */
-  var useWildcards: js.UndefOr[Boolean] = js.native
+  var useWildcards: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleDevtoolsArtifactregistryV1alpha1GcsSource {
   

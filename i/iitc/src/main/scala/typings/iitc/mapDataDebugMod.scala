@@ -4,7 +4,6 @@ import typings.leaflet.mod.LatLngBounds_
 import typings.leaflet.mod.LayerGroup_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapDataDebugMod {
@@ -21,7 +20,7 @@ object mapDataDebugMod {
     def create(id: String, bounds: LatLngBounds_): Unit = js.native
     
     //  = 1.0;
-    var debugTileLayer: LayerGroup_[_] = js.native
+    var debugTileLayer: LayerGroup_[js.Any] = js.native
     
     def reset(): Unit = js.native
     

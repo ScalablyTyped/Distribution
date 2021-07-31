@@ -2,26 +2,24 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'mb' | 'marginBottom'> */
-@js.native
 trait MarginBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var marginBottom: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
   
   var mb: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object MarginBottomProps {
   
@@ -32,12 +30,12 @@ object MarginBottomProps {
   }
   
   @scala.inline
-  implicit class MarginBottomPropsMutableBuilder[Self <: MarginBottomProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with MarginBottomProps[ThemeType]) extends AnyVal {
+  implicit class MarginBottomPropsMutableBuilder[Self <: MarginBottomProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & MarginBottomProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setMarginBottom(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
@@ -54,7 +52,7 @@ object MarginBottomProps {
     @scala.inline
     def setMb(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])

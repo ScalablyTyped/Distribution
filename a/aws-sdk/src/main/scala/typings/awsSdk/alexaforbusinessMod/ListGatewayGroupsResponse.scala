@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGatewayGroupsResponse extends StObject {
   
   /**
     * The gateway groups in the list.
     */
-  var GatewayGroups: js.UndefOr[GatewayGroupSummaries] = js.native
+  var GatewayGroups: js.UndefOr[GatewayGroupSummaries] = js.undefined
   
   /**
     * The token used to paginate though multiple pages of gateway group summaries.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
 }
 object ListGatewayGroupsResponse {
   

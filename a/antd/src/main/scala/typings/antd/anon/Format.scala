@@ -3,15 +3,13 @@ package typings.antd.anon
 import typings.rcPicker.interfaceMod.PickerMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var picker: js.UndefOr[PickerMode] = js.native
+  var picker: js.UndefOr[PickerMode] = js.undefined
 }
 object Format {
   

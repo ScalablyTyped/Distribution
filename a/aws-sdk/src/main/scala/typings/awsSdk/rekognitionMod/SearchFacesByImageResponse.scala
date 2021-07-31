@@ -2,31 +2,29 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFacesByImageResponse extends StObject {
   
   /**
     * An array of faces that match the input face, along with the confidence in the match.
     */
-  var FaceMatches: js.UndefOr[FaceMatchList] = js.native
+  var FaceMatches: js.UndefOr[FaceMatchList] = js.undefined
   
   /**
     * Version number of the face detection model associated with the input collection (CollectionId).
     */
-  var FaceModelVersion: js.UndefOr[String] = js.native
+  var FaceModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The bounding box around the face in the input image that Amazon Rekognition used for the search.
     */
-  var SearchedFaceBoundingBox: js.UndefOr[BoundingBox] = js.native
+  var SearchedFaceBoundingBox: js.UndefOr[BoundingBox] = js.undefined
   
   /**
     * The level of confidence that the searchedFaceBoundingBox, contains a face.
     */
-  var SearchedFaceConfidence: js.UndefOr[Percent] = js.native
+  var SearchedFaceConfidence: js.UndefOr[Percent] = js.undefined
 }
 object SearchFacesByImageResponse {
   

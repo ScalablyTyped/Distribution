@@ -22,10 +22,13 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@react-spring/shared/cjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-spring/shared/cjs", "Any")
   @js.native
@@ -50,9 +53,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@react-spring/shared/cjs", "Globals.assign")
-    @js.native
-    def assign(globals: AnimatedGlobals): AnimatedGlobals = js.native
+    @scala.inline
+    def assign(globals: AnimatedGlobals): AnimatedGlobals = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(globals.asInstanceOf[js.Any]).asInstanceOf[AnimatedGlobals]
     
     @JSImport("@react-spring/shared/cjs", "Globals.batchedUpdates")
     @js.native
@@ -119,60 +121,49 @@ object mod {
     def willAdvance_=(x: js.Function1[/* animations */ js.Array[OpaqueAnimation], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("willAdvance")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@react-spring/shared/cjs", "addFluidObserver")
-  @js.native
-  def addFluidObserver(target: js.Object, observer: FluidObserver[_]): js.UndefOr[js.Function0[Unit]] = js.native
+  @scala.inline
+  def addFluidObserver(target: js.Object, observer: FluidObserver[js.Any]): js.UndefOr[js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFluidObserver")(target.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
   /** Add an observer to a fluid object. Returns an unsubscribe function if the target is a fluid object, otherwise undefined. */
-  @JSImport("@react-spring/shared/cjs", "addFluidObserver")
-  @js.native
-  def addFluidObserver[E /* <: FluidEvent[_] */](target: typings.fluids.mod.FluidValue[_, E], observer: FluidObserver[E]): js.Function0[Unit] = js.native
+  @scala.inline
+  def addFluidObserver[E /* <: FluidEvent[js.Any] */](target: typings.fluids.mod.FluidValue[js.Any, E], observer: FluidObserver[E]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFluidObserver")(target.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@react-spring/shared/cjs", "createInterpolator")
   @js.native
   val createInterpolator: InterpolatorFactory = js.native
   
-  @JSImport("@react-spring/shared/cjs", "defineHidden")
-  @js.native
-  def defineHidden(obj: js.Any, key: js.Any, value: js.Any): js.Any = js.native
+  @scala.inline
+  def defineHidden(obj: js.Any, key: js.Any, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineHidden")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@react-spring/shared/cjs", "each")
-  @js.native
+  @scala.inline
   def each[T /* <: js.Object */, This](
-    obj: T with ForEach,
+    obj: T & ForEach,
     cb: js.ThisFunction2[/* this */ This, /* value */ InferValue[T], /* key */ InferKey[T], Unit]
-  ): Unit = js.native
-  @JSImport("@react-spring/shared/cjs", "each")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def each[T /* <: js.Object */, This](
-    obj: T with ForEach,
+    obj: T & ForEach,
     cb: js.ThisFunction2[/* this */ This, /* value */ InferValue[T], /* key */ InferKey[T], Unit],
     ctx: This
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-spring/shared/cjs", "flush")
-  @js.native
-  def flush[T](queue: Set[T], iterator: js.Function1[/* value */ T, Unit]): Unit = js.native
-  @JSImport("@react-spring/shared/cjs", "flush")
-  @js.native
-  def flush[P, T](queue: Map[P, T], iterator: js.Function1[/* entry */ js.Tuple2[P, T], Unit]): Unit = js.native
+  @scala.inline
+  def flush[T](queue: Set[T], iterator: js.Function1[/* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(queue.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def flush[P, T](queue: Map[P, T], iterator: js.Function1[/* entry */ js.Tuple2[P, T], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(queue.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Get the methods for observing the given object. Returns undefined if not a fluid object. */
-  @JSImport("@react-spring/shared/cjs", "getFluidConfig")
-  @js.native
-  def getFluidConfig[T](arg: T): GetFluidConfig_[T] = js.native
+  @scala.inline
+  def getFluidConfig[T](arg: T): GetFluidConfig_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFluidConfig")(arg.asInstanceOf[js.Any]).asInstanceOf[GetFluidConfig_[T]]
   
   /** Get the current value of a fluid object. Returns the first argument when it's not a fluid object. */
-  @JSImport("@react-spring/shared/cjs", "getFluidValue")
-  @js.native
-  def getFluidValue[T, U](target: T): (Exclude[T, typings.fluids.mod.FluidValue[_, _]]) | U = js.native
-  @JSImport("@react-spring/shared/cjs", "getFluidValue")
-  @js.native
-  def getFluidValue[T, U](target: typings.fluids.mod.FluidValue[U, _]): (Exclude[T, typings.fluids.mod.FluidValue[_, _]]) | U = js.native
+  @scala.inline
+  def getFluidValue[T, U](target: T): (Exclude[T, typings.fluids.mod.FluidValue[js.Any, js.Any]]) | U = ^.asInstanceOf[js.Dynamic].applyDynamic("getFluidValue")(target.asInstanceOf[js.Any]).asInstanceOf[(Exclude[T, typings.fluids.mod.FluidValue[js.Any, js.Any]]) | U]
+  @scala.inline
+  def getFluidValue[T, U](target: typings.fluids.mod.FluidValue[U, js.Any]): (Exclude[T, typings.fluids.mod.FluidValue[js.Any, js.Any]]) | U = ^.asInstanceOf[js.Dynamic].applyDynamic("getFluidValue")(target.asInstanceOf[js.Any]).asInstanceOf[(Exclude[T, typings.fluids.mod.FluidValue[js.Any, js.Any]]) | U]
   
   /** Does the given value have a `FluidConfig` object? */
-  @JSImport("@react-spring/shared/cjs", "hasFluidValue")
-  @js.native
-  def hasFluidValue(arg: js.Any): /* is fluids.fluids.FluidValue<any, any> */ Boolean = js.native
+  @scala.inline
+  def hasFluidValue(arg: js.Any): /* is fluids.fluids.FluidValue<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFluidValue")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is fluids.fluids.FluidValue<any, any> */ Boolean]
   
   object is {
     
@@ -186,57 +177,45 @@ object mod {
     @scala.inline
     def arr_=(x: IsArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arr")(x.asInstanceOf[js.Any])
     
-    @JSImport("@react-spring/shared/cjs", "is.fun")
-    @js.native
-    def fun(a: js.Any): /* is std.Function */ Boolean = js.native
+    @scala.inline
+    def fun(a: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fun")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
     
-    @JSImport("@react-spring/shared/cjs", "is.num")
-    @js.native
-    def num(a: js.Any): /* is number */ Boolean = js.native
+    @scala.inline
+    def num(a: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("num")(a.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
     
-    @JSImport("@react-spring/shared/cjs", "is.obj")
-    @js.native
-    def obj[T /* <: js.Any */](a: T): /* is std.Exclude<T & @alloc/types.@alloc/types.Lookup<any>, std.Function | std.Array<any>> */ Boolean = js.native
+    @scala.inline
+    def obj[T /* <: js.Any */](a: T): /* is std.Exclude<T & @alloc/types.@alloc/types.Lookup<any>, std.Function | std.Array<any>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.Exclude<T & @alloc/types.@alloc/types.Lookup<any>, std.Function | std.Array<any>> */ Boolean]
     
-    @JSImport("@react-spring/shared/cjs", "is.str")
-    @js.native
-    def str(a: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def str(a: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(a.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
     
-    @JSImport("@react-spring/shared/cjs", "is.und")
-    @js.native
-    def und(a: js.Any): /* is undefined */ Boolean = js.native
+    @scala.inline
+    def und(a: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("und")(a.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
   }
   
-  @JSImport("@react-spring/shared/cjs", "isAnimatedString")
-  @js.native
-  def isAnimatedString(value: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isAnimatedString(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnimatedString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("@react-spring/shared/cjs", "isEqual")
-  @js.native
-  def isEqual(a: js.Any, b: js.Any): Boolean = js.native
+  @scala.inline
+  def isEqual(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@react-spring/shared/cjs", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
   /** Set the methods for observing the given object. */
-  @JSImport("@react-spring/shared/cjs", "setFluidConfig")
-  @js.native
-  def setFluidConfig(target: js.Object, config: FluidConfig[_, _]): Unit = js.native
+  @scala.inline
+  def setFluidConfig(target: js.Object, config: FluidConfig[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFluidConfig")(target.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-spring/shared/cjs", "toArray")
-  @js.native
-  def toArray[T](a: T): (js.Array[Exclude[T, Unit]]) | (js.Array[_] with (Exclude[T, Unit])) = js.native
+  @scala.inline
+  def toArray[T](a: T): (js.Array[Exclude[T, Unit]]) | (js.Array[js.Any] & (Exclude[T, Unit])) = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(a.asInstanceOf[js.Any]).asInstanceOf[(js.Array[Exclude[T, Unit]]) | (js.Array[js.Any] & (Exclude[T, Unit]))]
   
-  @JSImport("@react-spring/shared/cjs", "useForceUpdate")
-  @js.native
-  def useForceUpdate(): js.Function0[Unit] = js.native
+  @scala.inline
+  def useForceUpdate(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceUpdate")().asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@react-spring/shared/cjs", "useOnce")
   @js.native
   val useOnce: UseOnce_ = js.native
   
-  @JSImport("@react-spring/shared/cjs", "usePrev")
-  @js.native
-  def usePrev[T](value: T): js.UndefOr[T] = js.native
+  @scala.inline
+  def usePrev[T](value: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePrev")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 }

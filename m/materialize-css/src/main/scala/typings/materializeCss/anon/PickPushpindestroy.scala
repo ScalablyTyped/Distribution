@@ -2,14 +2,12 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Pushpin, 'destroy'> */
-@js.native
 trait PickPushpindestroy extends StObject {
   
-  var destroy: js.UndefOr[js.Any] = js.native
+  var destroy: js.UndefOr[js.Any] = js.undefined
 }
 object PickPushpindestroy {
   

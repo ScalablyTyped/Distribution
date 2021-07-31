@@ -2,14 +2,12 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOpList extends StObject {
   
   /** OpList op */
-  var op: js.UndefOr[js.Array[IOpDef] | Null] = js.native
+  var op: js.UndefOr[js.Array[IOpDef] | Null] = js.undefined
 }
 object IOpList {
   

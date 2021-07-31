@@ -3,28 +3,28 @@ package typings.blessed.mod.Widgets
 import typings.blessed.anon.Ch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollableBoxOptions extends ElementOptions {
+trait ScrollableBoxOptions
+  extends StObject
+     with ElementOptions {
   
   /**
     * A option which causes the ignoring of childOffset. This in turn causes the
     * childBase to change every time the element is scrolled.
     */
-  var alwaysScroll: js.UndefOr[Boolean] = js.native
+  var alwaysScroll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A limit to the childBase. Default is Infinity.
     */
-  var baseLimit: js.UndefOr[Double] = js.native
+  var baseLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * Object enabling a scrollbar.
     * Style of the scrollbar track if present (takes regular style options).
     */
-  var scrollbar: js.UndefOr[Ch] = js.native
+  var scrollbar: js.UndefOr[Ch] = js.undefined
 }
 object ScrollableBoxOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SSESpecification extends StObject {
   
   /**
     * Indicates whether server-side encryption is enabled (true) or disabled (false) on the cluster.
     */
-  var Enabled: SSEEnabled = js.native
+  var Enabled: SSEEnabled
 }
 object SSESpecification {
   

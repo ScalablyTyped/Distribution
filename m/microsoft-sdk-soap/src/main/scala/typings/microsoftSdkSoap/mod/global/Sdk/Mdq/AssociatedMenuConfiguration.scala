@@ -2,19 +2,17 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociatedMenuConfiguration extends StObject {
   
-  var Behavior: AssociatedMenuBehavior = js.native
+  var Behavior: AssociatedMenuBehavior
   
-  var Group: AssociatedMenuGroup = js.native
+  var Group: AssociatedMenuGroup
   
-  var Label: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.Label = js.native
+  var Label: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.Label
   
-  var Order: Double = js.native
+  var Order: Double
 }
 object AssociatedMenuConfiguration {
   

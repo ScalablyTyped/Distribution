@@ -7,29 +7,29 @@ import typings.node.dnsMod.promises.Resolver
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cacheable-lookup", JSImport.Default)
   @js.native
-  class default () extends CacheableLookup {
+  class default ()
+    extends StObject
+       with CacheableLookup {
     def this(options: Options) = this()
   }
   
   type AsyncResolver = Resolver
   
-  @js.native
   trait CacheInstance extends StObject {
     
-    def clear(): TPromise[Unit] = js.native
+    def clear(): TPromise[Unit]
     
-    def delete(hostname: String): TPromise[Boolean] = js.native
+    def delete(hostname: String): TPromise[Boolean]
     
-    def get(hostname: String): TPromise[js.UndefOr[js.Array[EntryObject]]] = js.native
+    def get(hostname: String): TPromise[js.UndefOr[js.Array[EntryObject]]]
     
-    def set(hostname: String, entries: js.Array[EntryObject], ttl: Double): TPromise[Unit | Boolean | this.type] = js.native
+    def set(hostname: String, entries: js.Array[EntryObject], ttl: Double): TPromise[Unit | Boolean | this.type]
   }
   object CacheInstance {
     
@@ -134,28 +134,27 @@ object mod {
     def updateInterfaceInfo(): Unit = js.native
   }
   
-  @js.native
   trait EntryObject extends StObject {
     
     /**
     	 * The IP address (can be an IPv4 or IPv5 address).
     	 */
-    val address: String = js.native
+    val address: String
     
     /**
     	 * The expiration timestamp.
     	 */
-    val expires: js.UndefOr[Double] = js.native
+    val expires: js.UndefOr[Double] = js.undefined
     
     /**
     	 * The IP family.
     	 */
-    val family: IPFamily = js.native
+    val family: IPFamily
     
     /**
     	 * The original TTL.
     	 */
-    val ttl: js.UndefOr[Double] = js.native
+    val ttl: js.UndefOr[Double] = js.undefined
   }
   object EntryObject {
     
@@ -202,24 +201,23 @@ object mod {
     def `6`: typings.cacheableLookup.cacheableLookupNumbers.`6` = 6.asInstanceOf[typings.cacheableLookup.cacheableLookupNumbers.`6`]
   }
   
-  @js.native
   trait LookupOptions extends StObject {
     
     /**
     	 * When `true`, the callback returns all resolved addresses in an array. Otherwise, returns a single address.
     	 * @default false
     	 */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * The record family. Must be `4` or `6`. IPv4 and IPv6 addresses are both returned by default.
     	 */
-    var family: js.UndefOr[IPFamily] = js.native
+    var family: js.UndefOr[IPFamily] = js.undefined
     
     /**
     	 * One or more supported getaddrinfo flags. Multiple flags may be passed by bitwise ORing their values.
     	 */
-    var hints: js.UndefOr[Double] = js.native
+    var hints: js.UndefOr[Double] = js.undefined
   }
   object LookupOptions {
     
@@ -252,14 +250,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     	 * Custom cache instance. If `undefined`, it will create a new one.
     	 * @default undefined
     	 */
-    var cache: js.UndefOr[CacheInstance] = js.native
+    var cache: js.UndefOr[CacheInstance] = js.undefined
     
     /**
     	 * The time how long it needs to remember failed queries (TTL in seconds).
@@ -267,7 +264,7 @@ object mod {
     	 * **Note**: This option is independent, `options.maxTtl` does not affect this.
     	 * @default 0.15
     	 */
-    var errorTtl: js.UndefOr[Double] = js.native
+    var errorTtl: js.UndefOr[Double] = js.undefined
     
     /**
     	 * When the DNS server responds with `ENOTFOUND` or `ENODATA` and the OS reports that the entry is available,
@@ -277,7 +274,7 @@ object mod {
     	 * it is strongly recommended to set this value to `0`.
     	 * @default 3600
     	 */
-    var fallbackDuration: js.UndefOr[Double] = js.native
+    var fallbackDuration: js.UndefOr[Double] = js.undefined
     
     /**
     	 * The fallback function to use when the DNS server responds with `ENOTFOUND` or `ENODATA`.
@@ -285,19 +282,19 @@ object mod {
     	 * **Note**: This has no effect if the `fallbackDuration` option is less than `1`.
     	 * @default dns.lookup
     	 */
-    var lookup: js.UndefOr[Typeoflookup] = js.native
+    var lookup: js.UndefOr[Typeoflookup] = js.undefined
     
     /**
     	 * Limits the cache time (TTL). If set to `0`, it will make a new DNS query each time.
     	 * @default Infinity
     	 */
-    var maxTtl: js.UndefOr[Double] = js.native
+    var maxTtl: js.UndefOr[Double] = js.undefined
     
     /**
     	 * DNS Resolver used to make DNS queries.
     	 * @default new dns.promises.Resolver()
     	 */
-    var resolver: js.UndefOr[typings.node.dnsMod.Resolver | AsyncResolver] = js.native
+    var resolver: js.UndefOr[typings.node.dnsMod.Resolver | AsyncResolver] = js.undefined
   }
   object Options {
     

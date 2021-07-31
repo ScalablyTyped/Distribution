@@ -3,10 +3,13 @@ package typings.vegaLite
 import typings.vegaTypings.transformMod.AggregateOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aggregateMod {
+  
+  @JSImport("vega-lite/build/src/aggregate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/aggregate", "AGGREGATE_OPS")
   @js.native
@@ -49,49 +52,36 @@ object aggregateMod {
   @js.native
   val SUM_OPS: js.Array[NonArgAggregateOp] = js.native
   
-  @JSImport("vega-lite/build/src/aggregate", "isAggregateOp")
-  @js.native
-  def isAggregateOp(a: String): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isAggregateOp")
-  @js.native
-  def isAggregateOp(a: ArgmaxDef): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isAggregateOp")
-  @js.native
-  def isAggregateOp(a: ArgminDef): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = js.native
+  @scala.inline
+  def isAggregateOp(a: String): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAggregateOp")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean]
+  @scala.inline
+  def isAggregateOp(a: ArgmaxDef): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAggregateOp")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean]
+  @scala.inline
+  def isAggregateOp(a: ArgminDef): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAggregateOp")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean]
   
-  @JSImport("vega-lite/build/src/aggregate", "isArgmaxDef")
-  @js.native
-  def isArgmaxDef(a: String): /* is vega-lite.vega-lite/build/src/aggregate.ArgmaxDef */ Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isArgmaxDef")
-  @js.native
-  def isArgmaxDef(a: Aggregate): /* is vega-lite.vega-lite/build/src/aggregate.ArgmaxDef */ Boolean = js.native
+  @scala.inline
+  def isArgmaxDef(a: String): /* is vega-lite.vega-lite/build/src/aggregate.ArgmaxDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArgmaxDef")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/aggregate.ArgmaxDef */ Boolean]
+  @scala.inline
+  def isArgmaxDef(a: Aggregate): /* is vega-lite.vega-lite/build/src/aggregate.ArgmaxDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArgmaxDef")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/aggregate.ArgmaxDef */ Boolean]
   
-  @JSImport("vega-lite/build/src/aggregate", "isArgminDef")
-  @js.native
-  def isArgminDef(a: String): /* is vega-lite.vega-lite/build/src/aggregate.ArgminDef */ Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isArgminDef")
-  @js.native
-  def isArgminDef(a: Aggregate): /* is vega-lite.vega-lite/build/src/aggregate.ArgminDef */ Boolean = js.native
+  @scala.inline
+  def isArgminDef(a: String): /* is vega-lite.vega-lite/build/src/aggregate.ArgminDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArgminDef")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/aggregate.ArgminDef */ Boolean]
+  @scala.inline
+  def isArgminDef(a: Aggregate): /* is vega-lite.vega-lite/build/src/aggregate.ArgminDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArgminDef")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/aggregate.ArgminDef */ Boolean]
   
-  @JSImport("vega-lite/build/src/aggregate", "isCountingAggregateOp")
-  @js.native
-  def isCountingAggregateOp(): Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isCountingAggregateOp")
-  @js.native
-  def isCountingAggregateOp(aggregate: String): Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isCountingAggregateOp")
-  @js.native
-  def isCountingAggregateOp(aggregate: Aggregate): Boolean = js.native
+  @scala.inline
+  def isCountingAggregateOp(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCountingAggregateOp")().asInstanceOf[Boolean]
+  @scala.inline
+  def isCountingAggregateOp(aggregate: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCountingAggregateOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isCountingAggregateOp(aggregate: Aggregate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCountingAggregateOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/aggregate", "isMinMaxOp")
-  @js.native
-  def isMinMaxOp(): Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isMinMaxOp")
-  @js.native
-  def isMinMaxOp(aggregate: String): Boolean = js.native
-  @JSImport("vega-lite/build/src/aggregate", "isMinMaxOp")
-  @js.native
-  def isMinMaxOp(aggregate: Aggregate): Boolean = js.native
+  @scala.inline
+  def isMinMaxOp(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMinMaxOp")().asInstanceOf[Boolean]
+  @scala.inline
+  def isMinMaxOp(aggregate: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMinMaxOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isMinMaxOp(aggregate: Aggregate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMinMaxOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Inlined vega-lite.vega-lite/build/src/aggregate.NonArgAggregateOp | vega-lite.vega-lite/build/src/aggregate.ArgmaxDef | vega-lite.vega-lite/build/src/aggregate.ArgminDef */
   /* Rewritten from type alias, can be one of: 
@@ -192,10 +182,9 @@ object aggregateMod {
     def variancep: typings.vegaLite.vegaLiteStrings.variancep = "variancep".asInstanceOf[typings.vegaLite.vegaLiteStrings.variancep]
   }
   
-  @js.native
   trait ArgmaxDef extends StObject {
     
-    var argmax: String = js.native
+    var argmax: String
   }
   object ArgmaxDef {
     
@@ -213,10 +202,9 @@ object aggregateMod {
     }
   }
   
-  @js.native
   trait ArgminDef extends StObject {
     
-    var argmin: String = js.native
+    var argmin: String
   }
   object ArgminDef {
     

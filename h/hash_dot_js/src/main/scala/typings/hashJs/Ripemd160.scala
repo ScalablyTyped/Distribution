@@ -7,12 +7,12 @@ import typings.hashJs.hashJsNumbers.`64`
 import typings.hashJs.hashJsStrings.little
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Ripemd160
-  extends BlockHash[Ripemd160]
+  extends StObject
+     with BlockHash[Ripemd160]
      with MessageDigest[Ripemd160] {
   
   @JSName("blockSize")

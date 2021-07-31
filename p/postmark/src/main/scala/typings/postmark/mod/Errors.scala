@@ -2,7 +2,6 @@ package typings.postmark.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Errors {
@@ -41,8 +40,8 @@ object Errors {
     extends typings.postmark.errorsMod.PostmarkError {
     def this(message: String) = this()
     def this(message: String, code: Double) = this()
-    def this(message: String, code: js.UndefOr[scala.Nothing], statusCode: Double) = this()
     def this(message: String, code: Double, statusCode: Double) = this()
+    def this(message: String, code: Unit, statusCode: Double) = this()
   }
   
   @JSImport("postmark", "Errors.ServiceUnavailablerError")

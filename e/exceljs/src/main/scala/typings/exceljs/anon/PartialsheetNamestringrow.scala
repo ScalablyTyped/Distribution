@@ -2,18 +2,16 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  sheetName :string,   row :number,   col :number}> */
-@js.native
 trait PartialsheetNamestringrow extends StObject {
   
-  var col: js.UndefOr[Double] = js.native
+  var col: js.UndefOr[Double] = js.undefined
   
-  var row: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.undefined
   
-  var sheetName: js.UndefOr[String] = js.native
+  var sheetName: js.UndefOr[String] = js.undefined
 }
 object PartialsheetNamestringrow {
   

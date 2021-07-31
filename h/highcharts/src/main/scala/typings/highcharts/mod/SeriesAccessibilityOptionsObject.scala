@@ -2,41 +2,39 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesAccessibilityOptionsObject extends StObject {
   
   /**
     * (Highstock) Provide a description of the series, announced to screen
     * readers.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Enable/disable accessibility functionality for a specific
     * series.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Expose only the series element to screen readers, not its
     * points.
     */
-  var exposeAsGroupOnly: js.UndefOr[Boolean] = js.native
+  var exposeAsGroupOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Keyboard navigation for a series
     */
-  var keyboardNavigation: js.UndefOr[SeriesAccessibilityKeyboardNavigationOptionsObject] = js.native
+  var keyboardNavigation: js.UndefOr[SeriesAccessibilityKeyboardNavigationOptionsObject] = js.undefined
   
   /**
     * (Highstock) Formatter function to use instead of the default for point
     * descriptions. Same as `accessibility.point.descriptionFormatter`, but for
     * a single series.
     */
-  var pointDescriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.native
+  var pointDescriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.undefined
 }
 object SeriesAccessibilityOptionsObject {
   

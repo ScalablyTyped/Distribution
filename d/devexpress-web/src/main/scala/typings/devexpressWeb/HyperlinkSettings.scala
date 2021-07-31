@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings to define a hyperlink.
   */
-@js.native
 trait HyperlinkSettings extends StObject {
   
   /**
     * Specifies a hyperlink's bookmark.
     */
-  var bookmark: String = js.native
+  var bookmark: String
   
   /**
     * Specifies a hyperlink text.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * Specifies a tooltip text.
     */
-  var tooltip: String = js.native
+  var tooltip: String
   
   /**
     * Specifies a hyperlink's destination.
     */
-  var url: String = js.native
+  var url: String
 }
 object HyperlinkSettings {
   

@@ -10,9 +10,9 @@ A virtual DOM library with focus on simplicity, modularity, powerful features an
 | ------------------ | :-------------: |
 | Full name          | snabbdom |
 | Keywords           | virtual, dom, light, kiss, performance |
-| # releases         | 4 |
-| # dependents       | 112 |
-| # downloads        | 224668 |
+| # releases         | 5 |
+| # dependents       | 118 |
+| # downloads        | 200683 |
 | # stars            | 3 |
 
 ## Links

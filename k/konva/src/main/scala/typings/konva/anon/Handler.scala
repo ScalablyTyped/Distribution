@@ -2,15 +2,13 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Handler extends StObject {
   
-  var handler: js.Function = js.native
+  var handler: js.Function
   
-  var name: String = js.native
+  var name: String
 }
 object Handler {
   

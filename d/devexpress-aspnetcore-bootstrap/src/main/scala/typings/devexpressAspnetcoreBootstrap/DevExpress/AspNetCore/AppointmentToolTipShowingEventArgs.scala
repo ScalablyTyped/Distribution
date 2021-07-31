@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppointmentToolTipShowingEventArgs extends CancelEventArgs {
+trait AppointmentToolTipShowingEventArgs
+  extends StObject
+     with CancelEventArgs {
   
-  val appointment: BootstrapSchedulerAppointment = js.native
+  val appointment: BootstrapSchedulerAppointment
 }
 object AppointmentToolTipShowingEventArgs {
   

@@ -7,23 +7,23 @@ import typings.activexLibreoffice.com_.sun.star.io.XStream
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link DocumentDigitalSignatures} */
-@js.native
-trait DocumentDigitalSignatures extends XDocumentDigitalSignatures {
+trait DocumentDigitalSignatures
+  extends StObject
+     with XDocumentDigitalSignatures {
   
-  def createDefault(): Unit = js.native
+  def createDefault(): Unit
   
   /** @param ODFVersion the version of the signature */
-  def createWithVersion(ODFVersion: String): Unit = js.native
+  def createWithVersion(ODFVersion: String): Unit
   
   /**
     * @param ODFVersion the version of the signature
     * @param HasValidDocumentSignature indicates if the document already contains a document signature.
     */
-  def createWithVersionAndValidSignature(ODFVersion: String, HasValidDocumentSignature: Boolean): Unit = js.native
+  def createWithVersionAndValidSignature(ODFVersion: String, HasValidDocumentSignature: Boolean): Unit
 }
 object DocumentDigitalSignatures {
   

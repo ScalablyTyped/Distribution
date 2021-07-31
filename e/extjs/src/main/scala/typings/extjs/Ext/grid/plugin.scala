@@ -5,31 +5,31 @@ import typings.extjs.Ext.IAbstractPlugin
 import typings.extjs.Ext.data.IModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plugin {
   
-  @js.native
-  trait IBufferedRenderer extends IAbstractPlugin {
+  trait IBufferedRenderer
+    extends StObject
+       with IAbstractPlugin {
     
     /** [Method] Initialize this as a plugin
       * @param grid Object
       */
     @JSName("init")
-    var init_IBufferedRenderer: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.native
+    var init_IBufferedRenderer: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var leadingBufferZone: js.UndefOr[Double] = js.native
+    var leadingBufferZone: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var numFromEdge: js.UndefOr[Double] = js.native
+    var numFromEdge: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var percentageFromEdge: js.UndefOr[Double] = js.native
+    var percentageFromEdge: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
     /** [Method] Scrolls to and optionlly selects the specified row index in the total dataset
       * @param recordIdx Number The zero-based position in the dataset to scroll to.
@@ -45,19 +45,19 @@ object plugin {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Number) */
-    var scrollToLoadBuffer: js.UndefOr[Double] = js.native
+    var scrollToLoadBuffer: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var synchronousRender: js.UndefOr[Boolean] = js.native
+    var synchronousRender: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var trailingBufferZone: js.UndefOr[Double] = js.native
+    var trailingBufferZone: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var variableRowHeight: js.UndefOr[Boolean] = js.native
+    var variableRowHeight: js.UndefOr[Boolean] = js.undefined
   }
   object IBufferedRenderer {
     
@@ -134,13 +134,14 @@ object plugin {
     }
   }
   
-  @js.native
-  trait ICellEditing extends IEditing {
+  trait ICellEditing
+    extends StObject
+       with IEditing {
     
     /** [Method] Starts editing by position row column
       * @param position Object A position with keys of row and column.
       */
-    var startEditByPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[js.Any], Unit]] = js.native
+    var startEditByPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Starts editing the specified record using the specified Column definition to define which field is being edited
       * @param record Ext.data.Model/Number The Store data record which backs the row to be edited, or index of the record.
@@ -150,7 +151,7 @@ object plugin {
     @JSName("startEdit")
     var startEdit_ICellEditing: js.UndefOr[
         js.Function2[/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any], Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object ICellEditing {
     
@@ -177,35 +178,36 @@ object plugin {
     }
   }
   
-  @js.native
-  trait IDragDrop extends IAbstractPlugin {
+  trait IDragDrop
+    extends StObject
+       with IAbstractPlugin {
     
     /** [Config Option] (Object/Boolean) */
-    var containerScroll: js.UndefOr[js.Any] = js.native
+    var containerScroll: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var ddGroup: js.UndefOr[String] = js.native
+    var ddGroup: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var dragGroup: js.UndefOr[String] = js.native
+    var dragGroup: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var dragText: js.UndefOr[String] = js.native
+    var dragText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var dropGroup: js.UndefOr[String] = js.native
+    var dropGroup: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableDrag: js.UndefOr[Boolean] = js.native
+    var enableDrag: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableDrop: js.UndefOr[Boolean] = js.native
+    var enableDrop: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] The init method is invoked after initComponent method has been run for the client Component
       * @param view Object
       */
     @JSName("init")
-    var init_IDragDrop: js.UndefOr[js.Function1[/* view */ js.UndefOr[js.Any], Unit]] = js.native
+    var init_IDragDrop: js.UndefOr[js.Function1[/* view */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IDragDrop {
     
@@ -271,13 +273,14 @@ object plugin {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
-  - typings.extjs.Ext.util.IObservable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined listeners, hasListeners, isObservable, addEvents, addListener, addManagedListener, clearListeners, clearManagedListeners, enableBubble, fireEvent, fireEventArgs, hasListener, mon, mun, on, relayEvents, removeListener, removeManagedListener, resumeEvent, resumeEvents, suspendEvent, suspendEvents, un */ @js.native
-  trait IEditing extends IAbstractPlugin {
+  - typings.extjs.Ext.util.IObservable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined listeners, hasListeners, isObservable, addEvents, addListener, addManagedListener, clearListeners, clearManagedListeners, enableBubble, fireEvent, fireEventArgs, hasListener, mon, mun, on, relayEvents, removeListener, removeManagedListener, resumeEvent, resumeEvents, suspendEvent, suspendEvents, un */ trait IEditing
+    extends StObject
+       with IAbstractPlugin {
     
     /** [Method] Adds the specified events to the list of events which this Observable may fire
       * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
       */
-    var addEvents: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+    var addEvents: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Appends an event handler to this object
       * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -287,8 +290,8 @@ object plugin {
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
     var addListener: js.UndefOr[
-        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], _]
-      ] = js.native
+        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
     
     /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
       * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
@@ -305,61 +308,61 @@ object plugin {
           js.UndefOr[js.Any], 
           js.UndefOr[js.Any], 
           js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Cancels any active edit that is in progress  */
-    var cancelEdit: js.UndefOr[js.Function0[Unit]] = js.native
+    var cancelEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Removes all listeners for this object including the managed listeners */
-    var clearListeners: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Removes all managed listeners for this object  */
-    var clearManagedListeners: js.UndefOr[js.Function0[Unit]] = js.native
+    var clearManagedListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var clicksToEdit: js.UndefOr[Double] = js.native
+    var clicksToEdit: js.UndefOr[Double] = js.undefined
     
     /** [Method] Completes the edit if there is an active edit in progress  */
-    var completeEdit: js.UndefOr[js.Function0[Unit]] = js.native
+    var completeEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Boolean) */
-    var editing: js.UndefOr[Boolean] = js.native
+    var editing: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
       * @param eventNames String/String[] The event name to bubble, or an Array of event names.
       */
-    var enableBubble: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.native
+    var enableBubble: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
       * @param eventName String The name of the event to fire.
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
       */
-    var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.native
+    var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
     
     /** [Method] Fires the specified event with the passed parameter list
       * @param eventName String The name of the event to fire.
       * @param args Object[] An array of parameters which are passed to handlers.
       * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
       */
-    var fireEventArgs: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[Array], Boolean]] = js.native
+    var fireEventArgs: js.UndefOr[js.Function2[js.UndefOr[String], js.UndefOr[Array], Boolean]] = js.undefined
     
     /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
       * @param eventName String The name of the event to check for
       * @returns Boolean true if the event is being listened for or bubbles, else false
       */
-    var hasListener: js.UndefOr[js.Function1[js.UndefOr[String], Boolean]] = js.native
+    var hasListener: js.UndefOr[js.Function1[js.UndefOr[String], Boolean]] = js.undefined
     
     /** [Property] (Object) */
-    var hasListeners: js.UndefOr[js.Any] = js.native
+    var hasListeners: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Boolean) */
-    var isObservable: js.UndefOr[Boolean] = js.native
+    var isObservable: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var listeners: js.UndefOr[js.Any] = js.native
+    var listeners: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Shorthand for addManagedListener
       * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
@@ -376,9 +379,9 @@ object plugin {
           js.UndefOr[js.Any], 
           js.UndefOr[js.Any], 
           js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Shorthand for removeManagedListener
       * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
@@ -388,7 +391,7 @@ object plugin {
       */
     var mun: js.UndefOr[
         js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Shorthand for addListener
       * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -398,8 +401,8 @@ object plugin {
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
     var on: js.UndefOr[
-        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], _]
-      ] = js.native
+        js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param origin Object The Observable whose events this object is to relay.
@@ -407,14 +410,14 @@ object plugin {
       * @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
       * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
       */
-    var relayEvents: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String], _]] = js.native
+    var relayEvents: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String], js.Any]] = js.undefined
     
     /** [Method] Removes an event handler
       * @param eventName String The type of event the handler was associated with.
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
-    var removeListener: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.native
+    var removeListener: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Removes listeners that were added by the mon method
       * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
@@ -424,15 +427,15 @@ object plugin {
       */
     var removeManagedListener: js.UndefOr[
         js.Function4[js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Resumes firing of the named event s
       * @param eventName String... Multiple event names to resume.
       */
-    var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
     /** [Method] Resumes firing events see suspendEvents */
-    var resumeEvents: js.UndefOr[js.Function0[Unit]] = js.native
+    var resumeEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Starts editing the specified record using the specified Column definition to define which field is being edited
       * @param record Ext.data.Model/Number The Store data record which backs the row to be edited, or index of the record in Store.
@@ -440,27 +443,27 @@ object plugin {
       */
     var startEdit: js.UndefOr[
         js.Function2[/* record */ js.UndefOr[js.Any], /* columnHeader */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Suspends firing of the named event s
       * @param eventName String... Multiple event names to suspend.
       */
-    var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
     /** [Method] Suspends the firing of all events
       * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
       */
-    var suspendEvents: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.native
+    var suspendEvents: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var triggerEvent: js.UndefOr[String] = js.native
+    var triggerEvent: js.UndefOr[String] = js.undefined
     
     /** [Method] Shorthand for removeListener
       * @param eventName String The type of event the handler was associated with.
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
-    var un: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.native
+    var un: js.UndefOr[js.Function3[js.UndefOr[String], js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IEditing {
     
@@ -480,14 +483,14 @@ object plugin {
       def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
       
       @scala.inline
-      def setAddListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
+      def setAddListener(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
       
       @scala.inline
       def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
       
       @scala.inline
       def setAddManagedListener(
-        value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _
+        value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
       
       @scala.inline
@@ -573,7 +576,7 @@ object plugin {
       
       @scala.inline
       def setMon(
-        value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _
+        value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
       
       @scala.inline
@@ -586,13 +589,13 @@ object plugin {
       def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
       
       @scala.inline
-      def setOn(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => _): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
+      def setOn(value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
       
       @scala.inline
       def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
       @scala.inline
-      def setRelayEvents(value: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String]) => _): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
+      def setRelayEvents(value: (js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[String]) => js.Any): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
       
       @scala.inline
       def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
@@ -653,14 +656,15 @@ object plugin {
     }
   }
   
-  @js.native
-  trait IHeaderReorderer extends IAbstractPlugin {
+  trait IHeaderReorderer
+    extends StObject
+       with IAbstractPlugin {
     
     /** [Method] The init method is invoked after initComponent method has been run for the client Component
       * @param headerCt Object
       */
     @JSName("init")
-    var init_IHeaderReorderer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[js.Any], Unit]] = js.native
+    var init_IHeaderReorderer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IHeaderReorderer {
     
@@ -681,27 +685,28 @@ object plugin {
     }
   }
   
-  @js.native
-  trait IHeaderResizer extends IAbstractPlugin {
+  trait IHeaderResizer
+    extends StObject
+       with IAbstractPlugin {
     
     /** [Config Option] (Boolean) */
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of dynamic
       * @returns Boolean
       */
-    var getDynamic: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getDynamic: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] not using w and e resize bc we are only ever resizing one column wResizeCursor Ext isWebKit w resize  col resi
       * @param headerCt Object
       */
     @JSName("init")
-    var init_IHeaderResizer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[js.Any], Unit]] = js.native
+    var init_IHeaderResizer: js.UndefOr[js.Function1[/* headerCt */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of dynamic
       * @param dynamic Boolean
       */
-    var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[Boolean], Unit]] = js.native
+    var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IHeaderResizer {
     
@@ -740,17 +745,18 @@ object plugin {
     }
   }
   
-  @js.native
-  trait IRowEditing extends IEditing {
+  trait IRowEditing
+    extends StObject
+       with IEditing {
     
     /** [Config Option] (Boolean) */
-    var autoCancel: js.UndefOr[Boolean] = js.native
+    var autoCancel: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var clicksToMoveEditor: js.UndefOr[Double] = js.native
+    var clicksToMoveEditor: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var errorSummary: js.UndefOr[Boolean] = js.native
+    var errorSummary: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Starts editing the specified record using the specified Column definition to define which field is being edited
       * @param record Ext.data.Model The Store data record which backs the row to be edited.
@@ -760,7 +766,7 @@ object plugin {
     @JSName("startEdit")
     var startEdit_IRowEditing: js.UndefOr[
         js.Function2[/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel], Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object IRowEditing {
     
@@ -799,23 +805,24 @@ object plugin {
     }
   }
   
-  @js.native
-  trait IRowExpander extends IAbstractPlugin {
+  trait IRowExpander
+    extends StObject
+       with IAbstractPlugin {
     
     /** [Config Option] (Boolean) */
-    var expandOnDblClick: js.UndefOr[Boolean] = js.native
+    var expandOnDblClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var expandOnEnter: js.UndefOr[Boolean] = js.native
+    var expandOnEnter: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] The init method is invoked after initComponent method has been run for the client Component
       * @param grid Object
       */
     @JSName("init")
-    var init_IRowExpander: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.native
+    var init_IRowExpander: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var selectRowOnExpand: js.UndefOr[Boolean] = js.native
+    var selectRowOnExpand: js.UndefOr[Boolean] = js.undefined
   }
   object IRowExpander {
     

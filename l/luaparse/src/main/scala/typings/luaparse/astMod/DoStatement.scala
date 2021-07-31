@@ -2,22 +2,21 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.DoStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.DoStatement]
+     with _Statement {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
 }
 object DoStatement {
   
   @scala.inline
-  def apply(body: js.Array[Statement], `type`: typings.luaparse.luaparseStrings.DoStatement): DoStatement = {
+  def apply(body: js.Array[Statement]): DoStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DoStatement")
     __obj.asInstanceOf[DoStatement]
   }
   

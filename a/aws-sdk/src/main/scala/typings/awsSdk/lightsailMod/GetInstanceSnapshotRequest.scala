@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceSnapshotRequest extends StObject {
   
   /**
     * The name of the snapshot for which you are requesting information.
     */
-  var instanceSnapshotName: ResourceName = js.native
+  var instanceSnapshotName: ResourceName
 }
 object GetInstanceSnapshotRequest {
   

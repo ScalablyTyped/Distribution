@@ -2,51 +2,49 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartTextTranslationJobRequest extends StObject {
   
   /**
     * A unique identifier for the request. This token is auto-generated when using the Amazon Translate SDK.
     */
-  var ClientToken: ClientTokenString = js.native
+  var ClientToken: ClientTokenString
   
   /**
     * The Amazon Resource Name (ARN) of an AWS Identity Access and Management (IAM) role that grants Amazon Translate read access to your input data. For more nformation, see identity-and-access-management.
     */
-  var DataAccessRoleArn: IamRoleArn = js.native
+  var DataAccessRoleArn: IamRoleArn
   
   /**
     * Specifies the format and S3 location of the input documents for the translation job.
     */
-  var InputDataConfig: typings.awsSdk.translateMod.InputDataConfig = js.native
+  var InputDataConfig: typings.awsSdk.translateMod.InputDataConfig
   
   /**
     * The name of the batch translation job to be performed.
     */
-  var JobName: js.UndefOr[typings.awsSdk.translateMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.translateMod.JobName] = js.undefined
   
   /**
     * Specifies the S3 folder to which your job output will be saved. 
     */
-  var OutputDataConfig: typings.awsSdk.translateMod.OutputDataConfig = js.native
+  var OutputDataConfig: typings.awsSdk.translateMod.OutputDataConfig
   
   /**
     * The language code of the input language. For a list of language codes, see what-is-languages. Amazon Translate does not automatically detect a source language during batch translation jobs.
     */
-  var SourceLanguageCode: LanguageCodeString = js.native
+  var SourceLanguageCode: LanguageCodeString
   
   /**
     * The language code of the output language.
     */
-  var TargetLanguageCodes: TargetLanguageCodeStringList = js.native
+  var TargetLanguageCodes: TargetLanguageCodeStringList
   
   /**
     * The name of the terminology to use in the batch translation job. For a list of available terminologies, use the ListTerminologies operation.
     */
-  var TerminologyNames: js.UndefOr[ResourceNameList] = js.native
+  var TerminologyNames: js.UndefOr[ResourceNameList] = js.undefined
 }
 object StartTextTranslationJobRequest {
   

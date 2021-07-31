@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterRule extends StObject {
   
   /**
     * The type of filter rule to apply. AWS DataSync only supports the SIMPLE_PATTERN rule type.
     */
-  var FilterType: js.UndefOr[typings.awsSdk.datasyncMod.FilterType] = js.native
+  var FilterType: js.UndefOr[typings.awsSdk.datasyncMod.FilterType] = js.undefined
   
   /**
     * A single filter string that consists of the patterns to include or exclude. The patterns are delimited by "|" (that is, a pipe), for example: /folder1|/folder2   
     */
-  var Value: js.UndefOr[FilterValue] = js.native
+  var Value: js.UndefOr[FilterValue] = js.undefined
 }
 object FilterRule {
   

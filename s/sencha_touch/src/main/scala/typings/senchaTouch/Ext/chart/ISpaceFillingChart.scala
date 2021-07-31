@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext.chart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISpaceFillingChart extends IAbstractChart
+trait ISpaceFillingChart
+  extends StObject
+     with IAbstractChart
 object ISpaceFillingChart {
   
   @scala.inline

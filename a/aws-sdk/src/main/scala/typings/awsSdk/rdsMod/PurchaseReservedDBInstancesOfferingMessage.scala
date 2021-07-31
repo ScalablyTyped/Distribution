@@ -2,28 +2,26 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedDBInstancesOfferingMessage extends StObject {
   
   /**
     * The number of instances to reserve. Default: 1 
     */
-  var DBInstanceCount: js.UndefOr[IntegerOptional] = js.native
+  var DBInstanceCount: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Customer-specified identifier to track this reservation. Example: myreservationID
     */
-  var ReservedDBInstanceId: js.UndefOr[String] = js.native
+  var ReservedDBInstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Reserved DB instance offering to purchase. Example: 438012d3-4052-4cc7-b2e3-8d3372e0e706
     */
-  var ReservedDBInstancesOfferingId: String = js.native
+  var ReservedDBInstancesOfferingId: String
   
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object PurchaseReservedDBInstancesOfferingMessage {
   

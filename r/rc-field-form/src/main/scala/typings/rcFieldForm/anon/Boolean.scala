@@ -2,37 +2,35 @@ package typings.rcFieldForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boolean extends StObject {
   
-  var array: String = js.native
+  var array: String
   
-  var boolean: String = js.native
+  var boolean: String
   
-  var date: String = js.native
+  var date: String
   
-  var email: String = js.native
+  var email: String
   
-  var float: String = js.native
+  var float: String
   
-  var hex: String = js.native
+  var hex: String
   
-  var integer: String = js.native
+  var integer: String
   
-  var method: String = js.native
+  var method: String
   
-  var number: String = js.native
+  var number: String
   
-  var `object`: String = js.native
+  var `object`: String
   
-  var regexp: String = js.native
+  var regexp: String
   
-  var string: String = js.native
+  var string: String
   
-  var url: String = js.native
+  var url: String
 }
 object Boolean {
   

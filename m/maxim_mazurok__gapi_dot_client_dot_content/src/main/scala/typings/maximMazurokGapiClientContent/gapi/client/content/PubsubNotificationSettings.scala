@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PubsubNotificationSettings extends StObject {
   
   /** Cloud pub/sub topic to which notifications are sent (read-only). */
-  var cloudTopicName: js.UndefOr[String] = js.native
+  var cloudTopicName: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#pubsubNotificationSettings`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** List of event types. Acceptable values are: - "`orderPendingShipment`" */
-  var registeredEvents: js.UndefOr[js.Array[String]] = js.native
+  var registeredEvents: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PubsubNotificationSettings {
   

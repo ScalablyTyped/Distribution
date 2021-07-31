@@ -2,25 +2,23 @@ package typings.coinbaseCommerceNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Crypto pricing object.
   */
 /* Inlined {[ key in coinbase-commerce-node.coinbase-commerce-node.CryptoName ]:? coinbase-commerce-node.coinbase-commerce-node.Price<coinbase-commerce-node.coinbase-commerce-node.CryptoCurrency>} */
-@js.native
 trait CryptoPricing extends StObject {
   
-  var bitcoin: js.UndefOr[Price[CryptoCurrency]] = js.native
+  var bitcoin: js.UndefOr[Price[CryptoCurrency]] = js.undefined
   
-  var bitcoincash: js.UndefOr[Price[CryptoCurrency]] = js.native
+  var bitcoincash: js.UndefOr[Price[CryptoCurrency]] = js.undefined
   
-  var ethereum: js.UndefOr[Price[CryptoCurrency]] = js.native
+  var ethereum: js.UndefOr[Price[CryptoCurrency]] = js.undefined
   
-  var litecoin: js.UndefOr[Price[CryptoCurrency]] = js.native
+  var litecoin: js.UndefOr[Price[CryptoCurrency]] = js.undefined
   
-  var usdc: js.UndefOr[Price[CryptoCurrency]] = js.native
+  var usdc: js.UndefOr[Price[CryptoCurrency]] = js.undefined
 }
 object CryptoPricing {
   

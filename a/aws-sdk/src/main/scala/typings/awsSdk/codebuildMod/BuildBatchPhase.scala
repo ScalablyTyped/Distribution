@@ -2,41 +2,39 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBatchPhase extends StObject {
   
   /**
     * Additional information about the batch build phase. Especially to help troubleshoot a failed btach build.
     */
-  var contexts: js.UndefOr[PhaseContexts] = js.native
+  var contexts: js.UndefOr[PhaseContexts] = js.undefined
   
   /**
     * How long, in seconds, between the starting and ending times of the batch build's phase.
     */
-  var durationInSeconds: js.UndefOr[WrapperLong] = js.native
+  var durationInSeconds: js.UndefOr[WrapperLong] = js.undefined
   
   /**
     * When the batch build phase ended, expressed in Unix time format.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current status of the batch build phase. Valid values include:  FAILED  The build phase failed.  FAULT  The build phase faulted.  IN_PROGRESS  The build phase is still in progress.  QUEUED  The build has been submitted and is queued behind other submitted builds.  STOPPED  The build phase stopped.  SUCCEEDED  The build phase succeeded.  TIMED_OUT  The build phase timed out.  
     */
-  var phaseStatus: js.UndefOr[StatusType] = js.native
+  var phaseStatus: js.UndefOr[StatusType] = js.undefined
   
   /**
     * The name of the batch build phase. Valid values include:  COMBINE_ARTIFACTS  Build output artifacts are being combined and uploaded to the output location.  DOWNLOAD_BATCHSPEC  The batch build specification is being downloaded.  FAILED  One or more of the builds failed.  IN_PROGRESS  The batch build is in progress.  STOPPED  The batch build was stopped.  SUBMITTED  The btach build has been submitted.  SUCCEEDED  The batch build succeeded.  
     */
-  var phaseType: js.UndefOr[BuildBatchPhaseType] = js.native
+  var phaseType: js.UndefOr[BuildBatchPhaseType] = js.undefined
   
   /**
     * When the batch build phase started, expressed in Unix time format.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
 }
 object BuildBatchPhase {
   

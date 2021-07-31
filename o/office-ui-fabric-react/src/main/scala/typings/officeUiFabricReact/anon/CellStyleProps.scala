@@ -4,15 +4,13 @@ import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellStyleProps extends StObject {
   
-  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
   
-  var theme: ITheme = js.native
+  var theme: ITheme
 }
 object CellStyleProps {
   

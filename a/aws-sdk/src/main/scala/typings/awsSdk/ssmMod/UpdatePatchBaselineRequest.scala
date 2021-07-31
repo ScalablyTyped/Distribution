@@ -2,71 +2,69 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePatchBaselineRequest extends StObject {
   
   /**
     * A set of rules used to include patches in the baseline.
     */
-  var ApprovalRules: js.UndefOr[PatchRuleGroup] = js.native
+  var ApprovalRules: js.UndefOr[PatchRuleGroup] = js.undefined
   
   /**
     * A list of explicitly approved patches for the baseline. For information about accepted formats for lists of approved patches and rejected patches, see About package name formats for approved and rejected patch lists in the AWS Systems Manager User Guide.
     */
-  var ApprovedPatches: js.UndefOr[PatchIdList] = js.native
+  var ApprovedPatches: js.UndefOr[PatchIdList] = js.undefined
   
   /**
     * Assigns a new compliance severity level to an existing patch baseline.
     */
-  var ApprovedPatchesComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.native
+  var ApprovedPatchesComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.undefined
   
   /**
     * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
     */
-  var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.native
+  var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the patch baseline to update.
     */
-  var BaselineId: typings.awsSdk.ssmMod.BaselineId = js.native
+  var BaselineId: typings.awsSdk.ssmMod.BaselineId
   
   /**
     * A description of the patch baseline.
     */
-  var Description: js.UndefOr[BaselineDescription] = js.native
+  var Description: js.UndefOr[BaselineDescription] = js.undefined
   
   /**
     * A set of global filters used to include patches in the baseline.
     */
-  var GlobalFilters: js.UndefOr[PatchFilterGroup] = js.native
+  var GlobalFilters: js.UndefOr[PatchFilterGroup] = js.undefined
   
   /**
     * The name of the patch baseline.
     */
-  var Name: js.UndefOr[BaselineName] = js.native
+  var Name: js.UndefOr[BaselineName] = js.undefined
   
   /**
     * A list of explicitly rejected patches for the baseline. For information about accepted formats for lists of approved patches and rejected patches, see About package name formats for approved and rejected patch lists in the AWS Systems Manager User Guide.
     */
-  var RejectedPatches: js.UndefOr[PatchIdList] = js.native
+  var RejectedPatches: js.UndefOr[PatchIdList] = js.undefined
   
   /**
     * The action for Patch Manager to take on patches included in the RejectedPackages list.    ALLOW_AS_DEPENDENCY: A package in the Rejected patches list is installed only if it is a dependency of another package. It is considered compliant with the patch baseline, and its status is reported as InstalledOther. This is the default action if no option is specified.    BLOCK: Packages in the RejectedPatches list, and packages that include them as dependencies, are not installed under any circumstances. If a package was installed before it was added to the Rejected patches list, it is considered non-compliant with the patch baseline, and its status is reported as InstalledRejected.  
     */
-  var RejectedPatchesAction: js.UndefOr[PatchAction] = js.native
+  var RejectedPatchesAction: js.UndefOr[PatchAction] = js.undefined
   
   /**
     * If True, then all fields that are required by the CreatePatchBaseline action are also required for this API request. Optional fields that are not specified are set to null.
     */
-  var Replace: js.UndefOr[Boolean] = js.native
+  var Replace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the patches to use to update the instances, including target operating systems and source repositories. Applies to Linux instances only.
     */
-  var Sources: js.UndefOr[PatchSourceList] = js.native
+  var Sources: js.UndefOr[PatchSourceList] = js.undefined
 }
 object UpdatePatchBaselineRequest {
   

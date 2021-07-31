@@ -2,7 +2,6 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalSettingsMod {
@@ -13,37 +12,34 @@ object globalSettingsMod {
   /* static members */
   object GlobalSettings {
     
-    @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings.addChangeListener")
+    @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings")
     @js.native
-    def addChangeListener(cb: IChangeEventCallback): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings.getValue")
-    @js.native
-    def getValue[T](key: String): T = js.native
-    @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings.getValue")
-    @js.native
-    def getValue[T](key: String, defaultValue: T): T = js.native
-    @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings.getValue")
-    @js.native
-    def getValue[T](key: String, defaultValue: js.Function0[T]): T = js.native
+    @scala.inline
+    def addChangeListener(cb: IChangeEventCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings.removeChangeListener")
-    @js.native
-    def removeChangeListener(cb: IChangeEventCallback): Unit = js.native
+    @scala.inline
+    def getValue[T](key: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(key.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def getValue[T](key: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def getValue[T](key: String, defaultValue: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings.setValue")
-    @js.native
-    def setValue[T](key: String, value: T): T = js.native
+    @scala.inline
+    def removeChangeListener(cb: IChangeEventCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChangeListener")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setValue[T](key: String, value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
-  @js.native
   trait IChangeDescription extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var oldValue: js.Any = js.native
+    var oldValue: js.Any
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object IChangeDescription {
     

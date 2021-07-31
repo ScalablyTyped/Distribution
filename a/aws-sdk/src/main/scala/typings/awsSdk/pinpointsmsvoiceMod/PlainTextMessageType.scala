@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointsmsvoiceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlainTextMessageType extends StObject {
   
   /**
     * The language to use when delivering the message. For a complete list of supported languages, see the Amazon Polly Developer Guide.
     */
-  var LanguageCode: js.UndefOr[String] = js.native
+  var LanguageCode: js.UndefOr[String] = js.undefined
   
   /**
     * The plain (not SSML-formatted) text to deliver to the recipient.
     */
-  var Text: js.UndefOr[NonEmptyString] = js.native
+  var Text: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the voice that you want to use to deliver the message. For a complete list of supported voices, see the Amazon Polly Developer Guide.
     */
-  var VoiceId: js.UndefOr[String] = js.native
+  var VoiceId: js.UndefOr[String] = js.undefined
 }
 object PlainTextMessageType {
   

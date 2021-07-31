@@ -2,39 +2,37 @@ package typings.winrtUwp.Windows.ApplicationModel.Store.Preview
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the available SKUs for an in-app product. */
-@js.native
 trait StorePreviewSkuInfo extends StObject {
   
   /** Gets the currency code for the current market. */
-  var currencyCode: String = js.native
+  var currencyCode: String
   
   /** Gets custom developer data for the current SKU. */
-  var customDeveloperData: String = js.native
+  var customDeveloperData: String
   
   /** Gets the description for the current SKU. */
-  var description: String = js.native
+  var description: String
   
   /** Gets extended data for the current SKU. */
-  var extendedData: String = js.native
+  var extendedData: String
   
   /** Gets the current SKU's purchase price with the appropriate formatting for the current market. */
-  var formattedListPrice: String = js.native
+  var formattedListPrice: String
   
   /** Gets the ID of the product that this SKU is associated with. */
-  var productId: String = js.native
+  var productId: String
   
   /** Gets the ID of this SKU. */
-  var skuId: String = js.native
+  var skuId: String
   
   /** Gets a string that specifies the type of the in-app product SKU. */
-  var skuType: String = js.native
+  var skuType: String
   
   /** Gets the name of the in-app product SKU that is displayed to customers. */
-  var title: String = js.native
+  var title: String
 }
 object StorePreviewSkuInfo {
   

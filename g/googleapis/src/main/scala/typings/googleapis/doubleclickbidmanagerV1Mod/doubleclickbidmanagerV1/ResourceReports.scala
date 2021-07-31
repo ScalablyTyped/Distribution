@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclickbidmanager/v1", "doubleclickbidmanager_v1.Resource$Reports")
@@ -30,7 +29,7 @@ class ResourceReports protected () extends StObject {
     */
   def listreports(): GaxiosPromise[SchemaListReportsResponse] = js.native
   def listreports(callback: BodyResponseCallback[SchemaListReportsResponse]): Unit = js.native
-  def listreports(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListReportsResponse] = js.native
+  def listreports(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListReportsResponse] = js.native
   def listreports(params: ParamsResourceReportsListreports): GaxiosPromise[SchemaListReportsResponse] = js.native
   def listreports(
     params: ParamsResourceReportsListreports,

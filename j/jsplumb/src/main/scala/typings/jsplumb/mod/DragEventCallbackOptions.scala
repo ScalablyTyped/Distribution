@@ -4,21 +4,19 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragEventCallbackOptions extends StObject {
   
-  var drag: js.Object = js.native
+  var drag: js.Object
   
   // The associated Drag instance
-  var e: MouseEvent = js.native
+  var e: MouseEvent
   
-  var el: HTMLElement = js.native
+  var el: HTMLElement
   
   // element being dragged
-  var pos: js.Tuple2[Double, Double] = js.native
+  var pos: js.Tuple2[Double, Double]
 }
 object DragEventCallbackOptions {
   

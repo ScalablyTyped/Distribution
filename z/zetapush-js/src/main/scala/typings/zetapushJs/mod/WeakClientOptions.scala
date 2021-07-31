@@ -2,13 +2,13 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WeakClientOptions extends Options {
+trait WeakClientOptions
+  extends StObject
+     with Options {
   
-  var deploymentId: js.UndefOr[String] = js.native
+  var deploymentId: js.UndefOr[String] = js.undefined
 }
 object WeakClientOptions {
   

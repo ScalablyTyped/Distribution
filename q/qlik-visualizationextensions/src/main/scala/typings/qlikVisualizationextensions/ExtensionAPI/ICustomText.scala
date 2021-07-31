@@ -3,24 +3,22 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICustomText extends StObject {
   
-  var component: text = js.native
+  var component: text
   
-  var label: String = js.native
+  var label: String
   
-  var `type`: text = js.native
+  var `type`: text
 }
 object ICustomText {
   
   @scala.inline
-  def apply(component: text, label: String, `type`: text): ICustomText = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(label: String): ICustomText = {
+    val __obj = js.Dynamic.literal(component = "text", label = label.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[ICustomText]
   }
   

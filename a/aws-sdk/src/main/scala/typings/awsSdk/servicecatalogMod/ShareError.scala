@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareError extends StObject {
   
   /**
     * List of accounts impacted by the error.
     */
-  var Accounts: js.UndefOr[Namespaces] = js.native
+  var Accounts: js.UndefOr[Namespaces] = js.undefined
   
   /**
     * Error type that happened when processing the operation.
     */
-  var Error: js.UndefOr[typings.awsSdk.servicecatalogMod.Error] = js.native
+  var Error: js.UndefOr[typings.awsSdk.servicecatalogMod.Error] = js.undefined
   
   /**
     * Information about the error.
     */
-  var Message: js.UndefOr[typings.awsSdk.servicecatalogMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.servicecatalogMod.Message] = js.undefined
 }
 object ShareError {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStackProvisioningParametersResult extends StObject {
   
   /**
     * The AWS OpsWorks Stacks agent installer's URL.
     */
-  var AgentInstallerUrl: js.UndefOr[String] = js.native
+  var AgentInstallerUrl: js.UndefOr[String] = js.undefined
   
   /**
     * An embedded object that contains the provisioning parameters.
     */
-  var Parameters: js.UndefOr[typings.awsSdk.opsworksMod.Parameters] = js.native
+  var Parameters: js.UndefOr[typings.awsSdk.opsworksMod.Parameters] = js.undefined
 }
 object DescribeStackProvisioningParametersResult {
   

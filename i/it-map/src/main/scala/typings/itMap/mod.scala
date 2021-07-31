@@ -4,7 +4,6 @@ import typings.std.AsyncIterable
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,10 +17,12 @@ object mod {
     * @param {function(I):O|Promise<O>} func
     * @returns {AsyncIterable<O>}
     */
+  @scala.inline
+  def apply[I, O](source: AsyncIterable[I], func: js.Function1[/* arg0 */ I, O | js.Promise[O]]): AsyncIterable[O] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[O]]
+  @scala.inline
+  def apply[I, O](source: Iterable[I], func: js.Function1[/* arg0 */ I, O | js.Promise[O]]): AsyncIterable[O] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[O]]
+  
   @JSImport("it-map/dist", JSImport.Namespace)
   @js.native
-  def apply[I, O](source: AsyncIterable[I], func: js.Function1[/* arg0 */ I, O | js.Promise[O]]): AsyncIterable[O] = js.native
-  @JSImport("it-map/dist", JSImport.Namespace)
-  @js.native
-  def apply[I, O](source: Iterable[I], func: js.Function1[/* arg0 */ I, O | js.Promise[O]]): AsyncIterable[O] = js.native
+  val ^ : js.Any = js.native
 }

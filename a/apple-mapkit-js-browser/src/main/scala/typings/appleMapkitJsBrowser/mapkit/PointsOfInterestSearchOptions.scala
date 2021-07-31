@@ -2,39 +2,37 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that you may provide when creating a search object.
   */
-@js.native
 trait PointsOfInterestSearchOptions extends StObject {
   
   /**
     * The center point of the request represented as latitude and longitude.
     */
-  var center: js.UndefOr[Coordinate] = js.native
+  var center: js.UndefOr[Coordinate] = js.undefined
   
   /**
     * A language ID that determines the language for the search result text.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * A filter used to include or exclude point of interest categories.
     */
-  var pointOfInterestFilter: js.UndefOr[PointOfInterestFilter] = js.native
+  var pointOfInterestFilter: js.UndefOr[PointOfInterestFilter] = js.undefined
   
   /**
     * The distance provided in meters, or the longest distance derived from the center point to the region’s bounding box.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * The region that bounds the area in which to fetch points of interest.
     */
-  var region: js.UndefOr[CoordinateRegion] = js.native
+  var region: js.UndefOr[CoordinateRegion] = js.undefined
 }
 object PointsOfInterestSearchOptions {
   

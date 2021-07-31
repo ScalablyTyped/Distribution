@@ -11,12 +11,12 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.FULLSTRING
 import typings.tizenCommonWeb.tizenCommonWebStrings.STARTSWITH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AttributeFilterConstructor
-  extends Instantiable1[/* attributeName */ String, AttributeFilter]
+  extends StObject
+     with Instantiable1[/* attributeName */ String, AttributeFilter]
      with Instantiable2[
       /* attributeName */ String, 
       CONTAINS | ENDSWITH | EXACTLY | EXISTS | FULLSTRING | STARTSWITH | (/* matchFlag */ FilterMatchFlag), 
@@ -24,9 +24,7 @@ trait AttributeFilterConstructor
     ]
      with Instantiable3[
       /* attributeName */ String, 
-      js.UndefOr[
-        CONTAINS | ENDSWITH | EXACTLY | EXISTS | FULLSTRING | STARTSWITH | (/* matchFlag */ FilterMatchFlag)
-      ], 
+      CONTAINS | ENDSWITH | EXACTLY | EXISTS | FULLSTRING | STARTSWITH | (/* matchFlag */ FilterMatchFlag) | (/* matchFlag */ Unit), 
       /* matchValue */ js.Any, 
       AttributeFilter
     ]

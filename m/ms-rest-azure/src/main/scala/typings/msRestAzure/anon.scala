@@ -63,74 +63,53 @@ import typings.msRestAzure.msRestAzureStrings.httpsColonSlashSlashportalDotazure
 import typings.msRestAzure.msRestAzureStrings.httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActiveDirectoryEndpointUrl extends StObject {
     
-    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash = js.native
+    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash
     
-    var activeDirectoryGraphApiVersion: `2013-04-05` = js.native
+    var activeDirectoryGraphApiVersion: `2013-04-05`
     
-    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotwindowsDotnetSlash = js.native
+    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotwindowsDotnetSlash
     
-    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash = js.native
+    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash
     
-    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: azuredatalakeanalyticsDotnet = js.native
+    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: azuredatalakeanalyticsDotnet
     
-    var azureDataLakeStoreFileSystemEndpointSuffix: azuredatalakestoreDotnet = js.native
+    var azureDataLakeStoreFileSystemEndpointSuffix: azuredatalakestoreDotnet
     
-    var batchResourceId: httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash = js.native
+    var batchResourceId: httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash
     
-    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotazureDotcomSlash = js.native
+    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotazureDotcomSlash
     
-    var keyVaultDnsSuffix: DotvaultDotazureDotnet = js.native
+    var keyVaultDnsSuffix: DotvaultDotazureDotnet
     
-    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet = js.native
+    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet
     
-    var name: Azure = js.native
+    var name: Azure
     
-    var portalUrl: httpsColonSlashSlashportalDotazureDotcom = js.native
+    var portalUrl: httpsColonSlashSlashportalDotazureDotcom
     
-    var publishingProfileUrl: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432 = js.native
+    var publishingProfileUrl: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432
     
-    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotazureDotcomSlash = js.native
+    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotazureDotcomSlash
     
-    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash = js.native
+    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash
     
-    var sqlServerHostnameSuffix: DotdatabaseDotwindowsDotnet = js.native
+    var sqlServerHostnameSuffix: DotdatabaseDotwindowsDotnet
     
-    var storageEndpointSuffix: DotcoreDotwindowsDotnet = js.native
+    var storageEndpointSuffix: DotcoreDotwindowsDotnet
     
-    var validateAuthority: `true` = js.native
+    var validateAuthority: `true`
   }
   object ActiveDirectoryEndpointUrl {
     
     @scala.inline
-    def apply(
-      activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash,
-      activeDirectoryGraphApiVersion: `2013-04-05`,
-      activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotwindowsDotnetSlash,
-      activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetSlash,
-      azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: azuredatalakeanalyticsDotnet,
-      azureDataLakeStoreFileSystemEndpointSuffix: azuredatalakestoreDotnet,
-      batchResourceId: httpsColonSlashSlashbatchDotcoreDotwindowsDotnetSlash,
-      galleryEndpointUrl: httpsColonSlashSlashgalleryDotazureDotcomSlash,
-      keyVaultDnsSuffix: DotvaultDotazureDotnet,
-      managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnet,
-      name: Azure,
-      portalUrl: httpsColonSlashSlashportalDotazureDotcom,
-      publishingProfileUrl: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIdEqualssign254432,
-      resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotazureDotcomSlash,
-      sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotwindowsDotnetColon8443Slash,
-      sqlServerHostnameSuffix: DotdatabaseDotwindowsDotnet,
-      storageEndpointSuffix: DotcoreDotwindowsDotnet,
-      validateAuthority: `true`
-    ): ActiveDirectoryEndpointUrl = {
-      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = activeDirectoryEndpointUrl.asInstanceOf[js.Any], activeDirectoryGraphApiVersion = activeDirectoryGraphApiVersion.asInstanceOf[js.Any], activeDirectoryGraphResourceId = activeDirectoryGraphResourceId.asInstanceOf[js.Any], activeDirectoryResourceId = activeDirectoryResourceId.asInstanceOf[js.Any], azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = azureDataLakeAnalyticsCatalogAndJobEndpointSuffix.asInstanceOf[js.Any], azureDataLakeStoreFileSystemEndpointSuffix = azureDataLakeStoreFileSystemEndpointSuffix.asInstanceOf[js.Any], batchResourceId = batchResourceId.asInstanceOf[js.Any], galleryEndpointUrl = galleryEndpointUrl.asInstanceOf[js.Any], keyVaultDnsSuffix = keyVaultDnsSuffix.asInstanceOf[js.Any], managementEndpointUrl = managementEndpointUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], portalUrl = portalUrl.asInstanceOf[js.Any], publishingProfileUrl = publishingProfileUrl.asInstanceOf[js.Any], resourceManagerEndpointUrl = resourceManagerEndpointUrl.asInstanceOf[js.Any], sqlManagementEndpointUrl = sqlManagementEndpointUrl.asInstanceOf[js.Any], sqlServerHostnameSuffix = sqlServerHostnameSuffix.asInstanceOf[js.Any], storageEndpointSuffix = storageEndpointSuffix.asInstanceOf[js.Any], validateAuthority = validateAuthority.asInstanceOf[js.Any])
+    def apply(): ActiveDirectoryEndpointUrl = {
+      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.microsoftonline.com/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.windows.net/", activeDirectoryResourceId = "https://management.core.windows.net/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "azuredatalakeanalytics.net", azureDataLakeStoreFileSystemEndpointSuffix = "azuredatalakestore.net", batchResourceId = "https://batch.core.windows.net/", galleryEndpointUrl = "https://gallery.azure.com/", keyVaultDnsSuffix = ".vault.azure.net", managementEndpointUrl = "https://management.core.windows.net", name = "Azure", portalUrl = "https://portal.azure.com", publishingProfileUrl = "https://go.microsoft.com/fwlink/?LinkId=254432", resourceManagerEndpointUrl = "https://management.azure.com/", sqlManagementEndpointUrl = "https://management.core.windows.net:8443/", sqlServerHostnameSuffix = ".database.windows.net", storageEndpointSuffix = ".core.windows.net", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryEndpointUrl]
     }
     
@@ -193,70 +172,50 @@ object anon {
     }
   }
   
-  @js.native
   trait ActiveDirectoryGraphApiVersion extends StObject {
     
-    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotchinacloudapiDotcnSlash = js.native
+    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotchinacloudapiDotcnSlash
     
-    var activeDirectoryGraphApiVersion: `2013-04-05` = js.native
+    var activeDirectoryGraphApiVersion: `2013-04-05`
     
-    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash = js.native
+    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash
     
-    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash = js.native
+    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash
     
-    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA = js.native
+    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA
     
     // TODO: add dns suffixes for the china cloud for datalake store and datalake analytics once they are defined.
-    var azureDataLakeStoreFileSystemEndpointSuffix: NSlashA = js.native
+    var azureDataLakeStoreFileSystemEndpointSuffix: NSlashA
     
-    var batchResourceId: httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash = js.native
+    var batchResourceId: httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash
     
-    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash = js.native
+    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash
     
-    var keyVaultDnsSuffix: DotvaultDotazureDotcn = js.native
+    var keyVaultDnsSuffix: DotvaultDotazureDotcn
     
-    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn = js.native
+    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn
     
-    var name: AzureChina = js.native
+    var name: AzureChina
     
-    var portalUrl: httpsColonSlashSlashportalDotazureDotcn = js.native
+    var portalUrl: httpsColonSlashSlashportalDotazureDotcn
     
-    var publishingProfileUrl: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774 = js.native
+    var publishingProfileUrl: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774
     
-    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotchinacloudapiDotcn = js.native
+    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotchinacloudapiDotcn
     
-    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash = js.native
+    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash
     
-    var sqlServerHostnameSuffix: DotdatabaseDotchinacloudapiDotcn = js.native
+    var sqlServerHostnameSuffix: DotdatabaseDotchinacloudapiDotcn
     
-    var storageEndpointSuffix: DotcoreDotchinacloudapiDotcn = js.native
+    var storageEndpointSuffix: DotcoreDotchinacloudapiDotcn
     
-    var validateAuthority: `true` = js.native
+    var validateAuthority: `true`
   }
   object ActiveDirectoryGraphApiVersion {
     
     @scala.inline
-    def apply(
-      activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotchinacloudapiDotcnSlash,
-      activeDirectoryGraphApiVersion: `2013-04-05`,
-      activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotchinacloudapiDotcnSlash,
-      activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnSlash,
-      azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA,
-      azureDataLakeStoreFileSystemEndpointSuffix: NSlashA,
-      batchResourceId: httpsColonSlashSlashbatchDotchinacloudapiDotcnSlash,
-      galleryEndpointUrl: httpsColonSlashSlashgalleryDotchinacloudapiDotcnSlash,
-      keyVaultDnsSuffix: DotvaultDotazureDotcn,
-      managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcn,
-      name: AzureChina,
-      portalUrl: httpsColonSlashSlashportalDotazureDotcn,
-      publishingProfileUrl: httpsColonSlashSlashgoDotmicrosoftDotcomSlashfwlinkSlashQuestionmarkLinkIDEqualssign301774,
-      resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotchinacloudapiDotcn,
-      sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotchinacloudapiDotcnColon8443Slash,
-      sqlServerHostnameSuffix: DotdatabaseDotchinacloudapiDotcn,
-      storageEndpointSuffix: DotcoreDotchinacloudapiDotcn,
-      validateAuthority: `true`
-    ): ActiveDirectoryGraphApiVersion = {
-      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = activeDirectoryEndpointUrl.asInstanceOf[js.Any], activeDirectoryGraphApiVersion = activeDirectoryGraphApiVersion.asInstanceOf[js.Any], activeDirectoryGraphResourceId = activeDirectoryGraphResourceId.asInstanceOf[js.Any], activeDirectoryResourceId = activeDirectoryResourceId.asInstanceOf[js.Any], azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = azureDataLakeAnalyticsCatalogAndJobEndpointSuffix.asInstanceOf[js.Any], azureDataLakeStoreFileSystemEndpointSuffix = azureDataLakeStoreFileSystemEndpointSuffix.asInstanceOf[js.Any], batchResourceId = batchResourceId.asInstanceOf[js.Any], galleryEndpointUrl = galleryEndpointUrl.asInstanceOf[js.Any], keyVaultDnsSuffix = keyVaultDnsSuffix.asInstanceOf[js.Any], managementEndpointUrl = managementEndpointUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], portalUrl = portalUrl.asInstanceOf[js.Any], publishingProfileUrl = publishingProfileUrl.asInstanceOf[js.Any], resourceManagerEndpointUrl = resourceManagerEndpointUrl.asInstanceOf[js.Any], sqlManagementEndpointUrl = sqlManagementEndpointUrl.asInstanceOf[js.Any], sqlServerHostnameSuffix = sqlServerHostnameSuffix.asInstanceOf[js.Any], storageEndpointSuffix = storageEndpointSuffix.asInstanceOf[js.Any], validateAuthority = validateAuthority.asInstanceOf[js.Any])
+    def apply(): ActiveDirectoryGraphApiVersion = {
+      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.chinacloudapi.cn/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.chinacloudapi.cn/", activeDirectoryResourceId = "https://management.core.chinacloudapi.cn/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "N/A", azureDataLakeStoreFileSystemEndpointSuffix = "N/A", batchResourceId = "https://batch.chinacloudapi.cn/", galleryEndpointUrl = "https://gallery.chinacloudapi.cn/", keyVaultDnsSuffix = ".vault.azure.cn", managementEndpointUrl = "https://management.core.chinacloudapi.cn", name = "AzureChina", portalUrl = "https://portal.azure.cn", publishingProfileUrl = "https://go.microsoft.com/fwlink/?LinkID=301774", resourceManagerEndpointUrl = "https://management.chinacloudapi.cn", sqlManagementEndpointUrl = "https://management.core.chinacloudapi.cn:8443/", sqlServerHostnameSuffix = ".database.chinacloudapi.cn", storageEndpointSuffix = ".core.chinacloudapi.cn", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryGraphApiVersion]
     }
     
@@ -319,69 +278,49 @@ object anon {
     }
   }
   
-  @js.native
   trait ActiveDirectoryGraphResourceId extends StObject {
     
-    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash = js.native
+    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash
     
-    var activeDirectoryGraphApiVersion: `2013-04-05` = js.native
+    var activeDirectoryGraphApiVersion: `2013-04-05`
     
-    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotwindowsDotnetSlash = js.native
+    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotwindowsDotnetSlash
     
-    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash = js.native
+    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash
     
-    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA = js.native
+    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA
     
-    var azureDataLakeStoreFileSystemEndpointSuffix: NSlashA = js.native
+    var azureDataLakeStoreFileSystemEndpointSuffix: NSlashA
     
-    var batchResourceId: httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash = js.native
+    var batchResourceId: httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash
     
-    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash = js.native
+    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash
     
-    var keyVaultDnsSuffix: DotvaultDotusgovcloudapiDotnet = js.native
+    var keyVaultDnsSuffix: DotvaultDotusgovcloudapiDotnet
     
-    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet = js.native
+    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet
     
-    var name: AzureUSGovernment = js.native
+    var name: AzureUSGovernment
     
-    var portalUrl: httpsColonSlashSlashportalDotazureDotus = js.native
+    var portalUrl: httpsColonSlashSlashportalDotazureDotus
     
-    var publishingProfileUrl: httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex = js.native
+    var publishingProfileUrl: httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex
     
-    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotusgovcloudapiDotnet = js.native
+    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotusgovcloudapiDotnet
     
-    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash = js.native
+    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash
     
-    var sqlServerHostnameSuffix: DotdatabaseDotusgovcloudapiDotnet = js.native
+    var sqlServerHostnameSuffix: DotdatabaseDotusgovcloudapiDotnet
     
-    var storageEndpointSuffix: DotcoreDotusgovcloudapiDotnet = js.native
+    var storageEndpointSuffix: DotcoreDotusgovcloudapiDotnet
     
-    var validateAuthority: `true` = js.native
+    var validateAuthority: `true`
   }
   object ActiveDirectoryGraphResourceId {
     
     @scala.inline
-    def apply(
-      activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash,
-      activeDirectoryGraphApiVersion: `2013-04-05`,
-      activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotwindowsDotnetSlash,
-      activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetSlash,
-      azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA,
-      azureDataLakeStoreFileSystemEndpointSuffix: NSlashA,
-      batchResourceId: httpsColonSlashSlashbatchDotcoreDotusgovcloudapiDotnetSlash,
-      galleryEndpointUrl: httpsColonSlashSlashgalleryDotusgovcloudapiDotnetSlash,
-      keyVaultDnsSuffix: DotvaultDotusgovcloudapiDotnet,
-      managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnet,
-      name: AzureUSGovernment,
-      portalUrl: httpsColonSlashSlashportalDotazureDotus,
-      publishingProfileUrl: httpsColonSlashSlashmanageDotwindowsazureDotusSlashpublishsettingsSlashindex,
-      resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotusgovcloudapiDotnet,
-      sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotusgovcloudapiDotnetColon8443Slash,
-      sqlServerHostnameSuffix: DotdatabaseDotusgovcloudapiDotnet,
-      storageEndpointSuffix: DotcoreDotusgovcloudapiDotnet,
-      validateAuthority: `true`
-    ): ActiveDirectoryGraphResourceId = {
-      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = activeDirectoryEndpointUrl.asInstanceOf[js.Any], activeDirectoryGraphApiVersion = activeDirectoryGraphApiVersion.asInstanceOf[js.Any], activeDirectoryGraphResourceId = activeDirectoryGraphResourceId.asInstanceOf[js.Any], activeDirectoryResourceId = activeDirectoryResourceId.asInstanceOf[js.Any], azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = azureDataLakeAnalyticsCatalogAndJobEndpointSuffix.asInstanceOf[js.Any], azureDataLakeStoreFileSystemEndpointSuffix = azureDataLakeStoreFileSystemEndpointSuffix.asInstanceOf[js.Any], batchResourceId = batchResourceId.asInstanceOf[js.Any], galleryEndpointUrl = galleryEndpointUrl.asInstanceOf[js.Any], keyVaultDnsSuffix = keyVaultDnsSuffix.asInstanceOf[js.Any], managementEndpointUrl = managementEndpointUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], portalUrl = portalUrl.asInstanceOf[js.Any], publishingProfileUrl = publishingProfileUrl.asInstanceOf[js.Any], resourceManagerEndpointUrl = resourceManagerEndpointUrl.asInstanceOf[js.Any], sqlManagementEndpointUrl = sqlManagementEndpointUrl.asInstanceOf[js.Any], sqlServerHostnameSuffix = sqlServerHostnameSuffix.asInstanceOf[js.Any], storageEndpointSuffix = storageEndpointSuffix.asInstanceOf[js.Any], validateAuthority = validateAuthority.asInstanceOf[js.Any])
+    def apply(): ActiveDirectoryGraphResourceId = {
+      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.microsoftonline.us/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.windows.net/", activeDirectoryResourceId = "https://management.core.usgovcloudapi.net/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "N/A", azureDataLakeStoreFileSystemEndpointSuffix = "N/A", batchResourceId = "https://batch.core.usgovcloudapi.net/", galleryEndpointUrl = "https://gallery.usgovcloudapi.net/", keyVaultDnsSuffix = ".vault.usgovcloudapi.net", managementEndpointUrl = "https://management.core.usgovcloudapi.net", name = "AzureUSGovernment", portalUrl = "https://portal.azure.us", publishingProfileUrl = "https://manage.windowsazure.us/publishsettings/index", resourceManagerEndpointUrl = "https://management.usgovcloudapi.net", sqlManagementEndpointUrl = "https://management.core.usgovcloudapi.net:8443/", sqlServerHostnameSuffix = ".database.usgovcloudapi.net", storageEndpointSuffix = ".core.usgovcloudapi.net", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryGraphResourceId]
     }
     
@@ -444,69 +383,49 @@ object anon {
     }
   }
   
-  @js.native
   trait ActiveDirectoryResourceId extends StObject {
     
-    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash = js.native
+    var activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash
     
-    var activeDirectoryGraphApiVersion: `2013-04-05` = js.native
+    var activeDirectoryGraphApiVersion: `2013-04-05`
     
-    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotcloudapiDotdeSlash = js.native
+    var activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotcloudapiDotdeSlash
     
-    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash = js.native
+    var activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash
     
-    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA = js.native
+    var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA
     
-    var azureDataLakeStoreFileSystemEndpointSuffix: NSlashA = js.native
+    var azureDataLakeStoreFileSystemEndpointSuffix: NSlashA
     
-    var batchResourceId: httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash = js.native
+    var batchResourceId: httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash
     
-    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotcloudapiDotdeSlash = js.native
+    var galleryEndpointUrl: httpsColonSlashSlashgalleryDotcloudapiDotdeSlash
     
-    var keyVaultDnsSuffix: DotvaultDotmicrosoftazureDotde = js.native
+    var keyVaultDnsSuffix: DotvaultDotmicrosoftazureDotde
     
-    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde = js.native
+    var managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde
     
-    var name: AzureGermanCloud = js.native
+    var name: AzureGermanCloud
     
-    var portalUrl: httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash = js.native
+    var portalUrl: httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash
     
-    var publishingProfileUrl: httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex = js.native
+    var publishingProfileUrl: httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex
     
-    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotmicrosoftazureDotde = js.native
+    var resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotmicrosoftazureDotde
     
-    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash = js.native
+    var sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash
     
-    var sqlServerHostnameSuffix: DotdatabaseDotcloudapiDotde = js.native
+    var sqlServerHostnameSuffix: DotdatabaseDotcloudapiDotde
     
-    var storageEndpointSuffix: DotcoreDotcloudapiDotde = js.native
+    var storageEndpointSuffix: DotcoreDotcloudapiDotde
     
-    var validateAuthority: `true` = js.native
+    var validateAuthority: `true`
   }
   object ActiveDirectoryResourceId {
     
     @scala.inline
-    def apply(
-      activeDirectoryEndpointUrl: httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash,
-      activeDirectoryGraphApiVersion: `2013-04-05`,
-      activeDirectoryGraphResourceId: httpsColonSlashSlashgraphDotcloudapiDotdeSlash,
-      activeDirectoryResourceId: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeSlash,
-      azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: NSlashA,
-      azureDataLakeStoreFileSystemEndpointSuffix: NSlashA,
-      batchResourceId: httpsColonSlashSlashbatchDotmicrosoftazureDotdeSlash,
-      galleryEndpointUrl: httpsColonSlashSlashgalleryDotcloudapiDotdeSlash,
-      keyVaultDnsSuffix: DotvaultDotmicrosoftazureDotde,
-      managementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotde,
-      name: AzureGermanCloud,
-      portalUrl: httpsColonSlashSlashportalDotmicrosoftazureDotdeSlash,
-      publishingProfileUrl: httpsColonSlashSlashmanageDotmicrosoftazureDotdeSlashpublishsettingsSlashindex,
-      resourceManagerEndpointUrl: httpsColonSlashSlashmanagementDotmicrosoftazureDotde,
-      sqlManagementEndpointUrl: httpsColonSlashSlashmanagementDotcoreDotcloudapiDotdeColon8443Slash,
-      sqlServerHostnameSuffix: DotdatabaseDotcloudapiDotde,
-      storageEndpointSuffix: DotcoreDotcloudapiDotde,
-      validateAuthority: `true`
-    ): ActiveDirectoryResourceId = {
-      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = activeDirectoryEndpointUrl.asInstanceOf[js.Any], activeDirectoryGraphApiVersion = activeDirectoryGraphApiVersion.asInstanceOf[js.Any], activeDirectoryGraphResourceId = activeDirectoryGraphResourceId.asInstanceOf[js.Any], activeDirectoryResourceId = activeDirectoryResourceId.asInstanceOf[js.Any], azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = azureDataLakeAnalyticsCatalogAndJobEndpointSuffix.asInstanceOf[js.Any], azureDataLakeStoreFileSystemEndpointSuffix = azureDataLakeStoreFileSystemEndpointSuffix.asInstanceOf[js.Any], batchResourceId = batchResourceId.asInstanceOf[js.Any], galleryEndpointUrl = galleryEndpointUrl.asInstanceOf[js.Any], keyVaultDnsSuffix = keyVaultDnsSuffix.asInstanceOf[js.Any], managementEndpointUrl = managementEndpointUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], portalUrl = portalUrl.asInstanceOf[js.Any], publishingProfileUrl = publishingProfileUrl.asInstanceOf[js.Any], resourceManagerEndpointUrl = resourceManagerEndpointUrl.asInstanceOf[js.Any], sqlManagementEndpointUrl = sqlManagementEndpointUrl.asInstanceOf[js.Any], sqlServerHostnameSuffix = sqlServerHostnameSuffix.asInstanceOf[js.Any], storageEndpointSuffix = storageEndpointSuffix.asInstanceOf[js.Any], validateAuthority = validateAuthority.asInstanceOf[js.Any])
+    def apply(): ActiveDirectoryResourceId = {
+      val __obj = js.Dynamic.literal(activeDirectoryEndpointUrl = "https://login.microsoftonline.de/", activeDirectoryGraphApiVersion = "2013-04-05", activeDirectoryGraphResourceId = "https://graph.cloudapi.de/", activeDirectoryResourceId = "https://management.core.cloudapi.de/", azureDataLakeAnalyticsCatalogAndJobEndpointSuffix = "N/A", azureDataLakeStoreFileSystemEndpointSuffix = "N/A", batchResourceId = "https://batch.microsoftazure.de/", galleryEndpointUrl = "https://gallery.cloudapi.de/", keyVaultDnsSuffix = ".vault.microsoftazure.de", managementEndpointUrl = "https://management.core.cloudapi.de", name = "AzureGermanCloud", portalUrl = "https://portal.microsoftazure.de/", publishingProfileUrl = "https://manage.microsoftazure.de/publishsettings/index", resourceManagerEndpointUrl = "https://management.microsoftazure.de", sqlManagementEndpointUrl = "https://management.core.cloudapi.de:8443/", sqlServerHostnameSuffix = ".database.cloudapi.de", storageEndpointSuffix = ".core.cloudapi.de", validateAuthority = true)
       __obj.asInstanceOf[ActiveDirectoryResourceId]
     }
     
@@ -569,10 +488,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomHeaders extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object CustomHeaders {
     

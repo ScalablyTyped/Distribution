@@ -34,11 +34,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapGridView extends BootstrapGridBase {
+trait BootstrapGridView
+  extends StObject
+     with BootstrapGridBase {
   
   def addNewRow(): Unit = js.native
   
@@ -138,7 +139,7 @@ trait BootstrapGridView extends BootstrapGridBase {
   
   def getRowKey(visibleIndex: Double): String = js.native
   
-  def getSelectedKeysOnPage(): js.Array[_] = js.native
+  def getSelectedKeysOnPage(): js.Array[js.Any] = js.native
   
   def getSelectedRowCount(): Double = js.native
   
@@ -897,9 +898,9 @@ trait BootstrapGridView extends BootstrapGridBase {
   def selectRowsByKey(key: js.Any): Unit = js.native
   // tslint:disable-line:unified-signatures
   def selectRowsByKey(key: js.Any, selected: Boolean): Unit = js.native
-  def selectRowsByKey(keys: js.Array[_]): Unit = js.native
+  def selectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def selectRowsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
+  def selectRowsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
   
   // tslint:disable-line:unified-signatures unified-signatures
   def setColumnLayout(columnLayout: js.Any): Unit = js.native
@@ -973,7 +974,7 @@ trait BootstrapGridView extends BootstrapGridBase {
   def unselectRows(): Unit = js.native
   
   def unselectRowsByKey(key: js.Any): Unit = js.native
-  def unselectRowsByKey(keys: js.Array[_]): Unit = js.native
+  def unselectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def updateEdit(): Unit = js.native

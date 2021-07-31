@@ -7,7 +7,6 @@ import typings.antdMobileRn.pickerPropsTypeMod.PickerPropsType
 import typings.antdMobileRn.pickerStyleIndexNativeMod.IPickerStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerIndexNativeMod {
@@ -39,11 +38,12 @@ object pickerIndexNativeMod {
   trait Picker
     extends typings.antdMobileRn.abstractPickerMod.default
   
-  @js.native
-  trait PickerNativeProps extends PickerPropsType {
+  trait PickerNativeProps
+    extends StObject
+       with PickerPropsType {
     
     @JSName("styles")
-    var styles_PickerNativeProps: js.UndefOr[IPickerStyle] = js.native
+    var styles_PickerNativeProps: js.UndefOr[IPickerStyle] = js.undefined
   }
   object PickerNativeProps {
     

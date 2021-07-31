@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExecutionContextId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveNodeRequest extends StObject {
   
   /**
     * Backend identifier of the node to resolve.
     */
-  var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * Execution context in which to resolve the node.
     */
-  var executionContextId: js.UndefOr[ExecutionContextId] = js.native
+  var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   
   /**
     * Id of the node to resolve.
     */
-  var nodeId: js.UndefOr[NodeId] = js.native
+  var nodeId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * Symbolic group name that can be used to release multiple objects.
     */
-  var objectGroup: js.UndefOr[String] = js.native
+  var objectGroup: js.UndefOr[String] = js.undefined
 }
 object ResolveNodeRequest {
   

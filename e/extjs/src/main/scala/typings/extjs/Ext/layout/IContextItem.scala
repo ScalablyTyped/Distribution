@@ -4,16 +4,16 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IContextItem extends IBase {
+trait IContextItem
+  extends StObject
+     with IBase {
   
   /** [Method] Queue the addition of a class name or array of class names to this ContextItem s target when next flushed
     * @param newCls Object
     */
-  var addCls: js.UndefOr[js.Function1[/* newCls */ js.UndefOr[js.Any], Unit]] = js.native
+  var addCls: js.UndefOr[js.Function1[/* newCls */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Registers a layout in the block list for the given property
     * @param layout Ext.layout.Layout
@@ -21,10 +21,10 @@ trait IContextItem extends IBase {
     */
   var block: js.UndefOr[
     js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] clears the margin cache so that marginInfo get re read from the dom on the next call to getMarginInfo  This is neede  */
-  var clearMarginCache: js.UndefOr[js.Function0[Unit]] = js.native
+  var clearMarginCache: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Registers a layout in the DOM block list for the given property
     * @param layout Ext.layout.Layout
@@ -32,24 +32,24 @@ trait IContextItem extends IBase {
     */
   var domBlock: js.UndefOr[
     js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Flushes any updates in the dirty collection to the DOM  */
-  var flush: js.UndefOr[js.Function0[Unit]] = js.native
+  var flush: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Gets the border information for the element as an object with left top right and bottom properties holding border s
     * @returns Object
     */
-  var getBorderInfo: js.UndefOr[js.Function0[_]] = js.native
+  var getBorderInfo: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns a ClassList like object to buffer access to this item s element s classes  */
-  var getClassList: js.UndefOr[js.Function0[Unit]] = js.native
+  var getClassList: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Gets a property of this object if it is correct in the DOM
     * @param propName String The property name (e.g., 'width').
     * @returns Object The property value or undefined if not yet set or is dirty.
     */
-  var getDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.native
+  var getDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Method] Returns the context item for an owned element
     * @param nameOrEl String/Ext.dom.Element The element or the name of an owned element
@@ -58,34 +58,34 @@ trait IContextItem extends IBase {
     */
   var getEl: js.UndefOr[
     js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Gets the frame information for the element as an object with left top right and bottom properties holding border
     * @returns Object
     */
-  var getFrameInfo: js.UndefOr[js.Function0[_]] = js.native
+  var getFrameInfo: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets the margin information for the element as an object with left top right and bottom properties holding margin s
     * @returns Object
     */
-  var getMarginInfo: js.UndefOr[js.Function0[_]] = js.native
+  var getMarginInfo: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets the padding information for the element as an object with left top right and bottom properties holding padding
     * @returns Object
     */
-  var getPaddingInfo: js.UndefOr[js.Function0[_]] = js.native
+  var getPaddingInfo: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets a property of this object
     * @param propName String The property name that blocked the layout (e.g., 'width').
     * @returns Object The property value or undefined if not yet set.
     */
-  var getProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.native
+  var getProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Method] Returns a style for this item
     * @param styleName String The CSS style name.
     * @returns Object The value of the DOM style (parsed as necessary).
     */
-  var getStyle: js.UndefOr[js.Function1[/* styleName */ js.UndefOr[String], _]] = js.native
+  var getStyle: js.UndefOr[js.Function1[/* styleName */ js.UndefOr[String], js.Any]] = js.undefined
   
   /** [Method] Returns styles for this item
     * @param styleNames String[] The CSS style names.
@@ -93,25 +93,25 @@ trait IContextItem extends IBase {
     * @returns Object The values of the DOM styles (parsed as necessary).
     */
   var getStyles: js.UndefOr[
-    js.Function2[/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array], _]
-  ] = js.native
+    js.Function2[/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array], js.Any]
+  ] = js.undefined
   
   /** [Method] Returns true if the given property is correct in the DOM
     * @param propName String The property name (e.g., 'width').
     * @returns Boolean
     */
-  var hasDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.native
+  var hasDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.undefined
   
   /** [Method] Returns true if the given property has been set
     * @param propName String The property name (e.g., 'width').
     * @returns Boolean
     */
-  var hasProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.native
+  var hasProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.undefined
   
   /** [Method] Invalidates the component associated with this item
     * @param options Object An object describing how to handle the invalidation.
     */
-  var invalidate: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var invalidate: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Recovers a property value from the last computation and restores its value and dirty state
     * @param propName String The name of the property to recover.
@@ -125,12 +125,12 @@ trait IContextItem extends IBase {
       /* oldDirty */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Queue the removal of a class name or array of class names from this ContextItem s target when next flushed
     * @param removeCls Object
     */
-  var removeCls: js.UndefOr[js.Function1[/* removeCls */ js.UndefOr[js.Any], Unit]] = js.native
+  var removeCls: js.UndefOr[js.Function1[/* removeCls */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Removes a cached ContextItem that was created using getEl
     * @param nameOrEl String/Ext.dom.Element The element or the name of an owned element
@@ -138,7 +138,7 @@ trait IContextItem extends IBase {
     */
   var removeEl: js.UndefOr[
     js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Queue the setting of a DOM attribute on this ContextItem s target when next flushed
     * @param name Object
@@ -146,7 +146,7 @@ trait IContextItem extends IBase {
     */
   var setAttribute: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the contentHeight property
     * @param height Object
@@ -154,7 +154,7 @@ trait IContextItem extends IBase {
     */
   var setContentHeight: js.UndefOr[
     js.Function2[/* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the contentWidth and contentHeight properties
     * @param width Object
@@ -168,7 +168,7 @@ trait IContextItem extends IBase {
       /* measured */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the contentWidth property
     * @param width Object
@@ -176,7 +176,7 @@ trait IContextItem extends IBase {
     */
   var setContentWidth: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the height and constrains the height to min maxHeight range
     * @param height Number The height.
@@ -185,7 +185,7 @@ trait IContextItem extends IBase {
     */
   var setHeight: js.UndefOr[
     js.Function2[/* height */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean], Double]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets a property value
     * @param propName String The property name (e.g., 'width').
@@ -200,7 +200,7 @@ trait IContextItem extends IBase {
       /* dirty */ js.UndefOr[Boolean], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the height and constrains the width to min maxWidth range
     * @param width Number The width.
@@ -209,13 +209,13 @@ trait IContextItem extends IBase {
     */
   var setWidth: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean], Double]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Object) */
-  var state: js.UndefOr[js.Any] = js.native
+  var state: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Boolean) */
-  var wrapsComponent: js.UndefOr[Boolean] = js.native
+  var wrapsComponent: js.UndefOr[Boolean] = js.undefined
 }
 object IContextItem {
   
@@ -259,7 +259,7 @@ object IContextItem {
     def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
     @scala.inline
-    def setGetBorderInfo(value: () => _): Self = StObject.set(x, "getBorderInfo", js.Any.fromFunction0(value))
+    def setGetBorderInfo(value: () => js.Any): Self = StObject.set(x, "getBorderInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetBorderInfoUndefined: Self = StObject.set(x, "getBorderInfo", js.undefined)
@@ -271,7 +271,7 @@ object IContextItem {
     def setGetClassListUndefined: Self = StObject.set(x, "getClassList", js.undefined)
     
     @scala.inline
-    def setGetDomProp(value: /* propName */ js.UndefOr[String] => _): Self = StObject.set(x, "getDomProp", js.Any.fromFunction1(value))
+    def setGetDomProp(value: /* propName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getDomProp", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetDomPropUndefined: Self = StObject.set(x, "getDomProp", js.undefined)
@@ -283,37 +283,37 @@ object IContextItem {
     def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
     @scala.inline
-    def setGetFrameInfo(value: () => _): Self = StObject.set(x, "getFrameInfo", js.Any.fromFunction0(value))
+    def setGetFrameInfo(value: () => js.Any): Self = StObject.set(x, "getFrameInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetFrameInfoUndefined: Self = StObject.set(x, "getFrameInfo", js.undefined)
     
     @scala.inline
-    def setGetMarginInfo(value: () => _): Self = StObject.set(x, "getMarginInfo", js.Any.fromFunction0(value))
+    def setGetMarginInfo(value: () => js.Any): Self = StObject.set(x, "getMarginInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetMarginInfoUndefined: Self = StObject.set(x, "getMarginInfo", js.undefined)
     
     @scala.inline
-    def setGetPaddingInfo(value: () => _): Self = StObject.set(x, "getPaddingInfo", js.Any.fromFunction0(value))
+    def setGetPaddingInfo(value: () => js.Any): Self = StObject.set(x, "getPaddingInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetPaddingInfoUndefined: Self = StObject.set(x, "getPaddingInfo", js.undefined)
     
     @scala.inline
-    def setGetProp(value: /* propName */ js.UndefOr[String] => _): Self = StObject.set(x, "getProp", js.Any.fromFunction1(value))
+    def setGetProp(value: /* propName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getProp", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetPropUndefined: Self = StObject.set(x, "getProp", js.undefined)
     
     @scala.inline
-    def setGetStyle(value: /* styleName */ js.UndefOr[String] => _): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
+    def setGetStyle(value: /* styleName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
     
     @scala.inline
-    def setGetStyles(value: (/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array]) => _): Self = StObject.set(x, "getStyles", js.Any.fromFunction2(value))
+    def setGetStyles(value: (/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "getStyles", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetStylesUndefined: Self = StObject.set(x, "getStyles", js.undefined)

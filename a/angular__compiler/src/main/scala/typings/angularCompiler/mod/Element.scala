@@ -4,7 +4,6 @@ import typings.angularCompiler.i18nAstMod.I18nMeta
 import typings.angularCompiler.mlParserAstMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "Element")
@@ -32,7 +31,7 @@ class Element protected ()
     children: js.Array[Node],
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     startSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    endSourceSpan: js.UndefOr[scala.Nothing],
+    endSourceSpan: Null,
     i18n: I18nMeta
   ) = this()
   def this(
@@ -41,7 +40,7 @@ class Element protected ()
     children: js.Array[Node],
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     startSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    endSourceSpan: Null,
+    endSourceSpan: Unit,
     i18n: I18nMeta
   ) = this()
   def this(

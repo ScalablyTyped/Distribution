@@ -5,31 +5,29 @@ import typings.googleVisualization.googleVisualizationStrings.linear
 import typings.googleVisualization.googleVisualizationStrings.polynomial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTrendlineOptions extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var degree: js.UndefOr[Double] = js.native
+  var degree: js.UndefOr[Double] = js.undefined
   
-  var labelInLegend: js.UndefOr[String] = js.native
+  var labelInLegend: js.UndefOr[String] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var pointSize: js.UndefOr[Double] = js.native
+  var pointSize: js.UndefOr[Double] = js.undefined
   
-  var pointsVisible: js.UndefOr[Boolean] = js.native
+  var pointsVisible: js.UndefOr[Boolean] = js.undefined
   
-  var showR2: js.UndefOr[Boolean] = js.native
+  var showR2: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[linear | exponential | polynomial] = js.native
+  var `type`: js.UndefOr[linear | exponential | polynomial] = js.undefined
   
-  var visibleInLegend: js.UndefOr[Boolean] = js.native
+  var visibleInLegend: js.UndefOr[Boolean] = js.undefined
 }
 object ChartTrendlineOptions {
   

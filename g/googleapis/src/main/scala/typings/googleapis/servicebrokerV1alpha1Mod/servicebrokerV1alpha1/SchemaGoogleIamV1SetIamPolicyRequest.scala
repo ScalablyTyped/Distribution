@@ -2,13 +2,11 @@ package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for `SetIamPolicy` method.
   */
-@js.native
 trait SchemaGoogleIamV1SetIamPolicyRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaGoogleIamV1SetIamPolicyRequest extends StObject {
     * policy but certain Cloud Platform services (such as Projects) might
     * reject them.
     */
-  var policy: js.UndefOr[SchemaGoogleIamV1Policy] = js.native
+  var policy: js.UndefOr[SchemaGoogleIamV1Policy] = js.undefined
 }
 object SchemaGoogleIamV1SetIamPolicyRequest {
   

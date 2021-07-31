@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod extends Shortcut {
@@ -17,10 +16,9 @@ object messageMod extends Shortcut {
   @js.native
   val Message: FunctionComponent[MessageProps] = js.native
   
-  @js.native
   trait MessageProps extends StObject {
     
-    var msg: String = js.native
+    var msg: String
   }
   object MessageProps {
     

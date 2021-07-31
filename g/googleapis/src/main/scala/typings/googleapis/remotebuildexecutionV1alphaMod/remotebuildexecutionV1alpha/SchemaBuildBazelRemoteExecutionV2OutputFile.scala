@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `ActionResult`. It allows a full file path rather than only a name.
   * `OutputFile` is binary-compatible with `FileNode`.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2OutputFile extends StObject {
   
   /**
     * The digest of the file&#39;s content.
     */
-  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * True if file is executable, false otherwise.
     */
-  var isExecutable: js.UndefOr[Boolean] = js.native
+  var isExecutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The full path of the file relative to the working directory, including
     * the filename. The path separator is a forward slash `/`. Since this is a
     * relative path, it MUST NOT begin with a leading forward slash.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2OutputFile {
   

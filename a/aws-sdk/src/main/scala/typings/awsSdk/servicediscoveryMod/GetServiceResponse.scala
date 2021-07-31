@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceResponse extends StObject {
   
   /**
     * A complex type that contains information about the service.
     */
-  var Service: js.UndefOr[typings.awsSdk.servicediscoveryMod.Service] = js.native
+  var Service: js.UndefOr[typings.awsSdk.servicediscoveryMod.Service] = js.undefined
 }
 object GetServiceResponse {
   

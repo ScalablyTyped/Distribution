@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metaline extends StObject {
   
   /** The list of displayed properties for the metaline. The maximum number of properties is 5. */
-  var properties: js.UndefOr[js.Array[DisplayedProperty]] = js.native
+  var properties: js.UndefOr[js.Array[DisplayedProperty]] = js.undefined
 }
 object Metaline {
   

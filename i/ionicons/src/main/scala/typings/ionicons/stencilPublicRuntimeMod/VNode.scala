@@ -2,35 +2,33 @@ package typings.ionicons.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VNode extends StObject {
   
   @JSName("$attrs$")
-  var DollarattrsDollar: js.UndefOr[js.Any] = js.native
+  var DollarattrsDollar: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$children$")
-  var DollarchildrenDollar: js.Array[VNode] = js.native
+  var DollarchildrenDollar: js.Array[VNode]
   
   @JSName("$elm$")
-  var DollarelmDollar: js.Any = js.native
+  var DollarelmDollar: js.Any
   
   @JSName("$flags$")
-  var DollarflagsDollar: Double = js.native
+  var DollarflagsDollar: Double
   
   @JSName("$key$")
-  var DollarkeyDollar: js.UndefOr[String | Double] = js.native
+  var DollarkeyDollar: js.UndefOr[String | Double] = js.undefined
   
   @JSName("$name$")
-  var DollarnameDollar: js.UndefOr[String] = js.native
+  var DollarnameDollar: js.UndefOr[String] = js.undefined
   
   @JSName("$tag$")
-  var DollartagDollar: String | Double | js.Function = js.native
+  var DollartagDollar: String | Double | js.Function
   
   @JSName("$text$")
-  var DollartextDollar: String = js.native
+  var DollartextDollar: String
 }
 object VNode {
   

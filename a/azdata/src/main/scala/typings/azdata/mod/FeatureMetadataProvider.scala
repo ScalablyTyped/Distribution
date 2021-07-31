@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureMetadataProvider extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var featureName: String = js.native
+  var featureName: String
   
-  var optionsMetadata: js.Array[ServiceOption] = js.native
+  var optionsMetadata: js.Array[ServiceOption]
 }
 object FeatureMetadataProvider {
   

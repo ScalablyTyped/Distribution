@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendEmailResponse extends StObject {
   
   /**
     * The unique message identifier returned from the SendEmail action. 
     */
-  var MessageId: typings.awsSdk.sesMod.MessageId = js.native
+  var MessageId: typings.awsSdk.sesMod.MessageId
 }
 object SendEmailResponse {
   

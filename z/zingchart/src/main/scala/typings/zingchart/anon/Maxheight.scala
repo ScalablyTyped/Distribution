@@ -2,37 +2,35 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Maxheight extends StObject {
   
   /**
     * Sets the maximum chart height in pixels. 600 | 400 | 300
     */
-  var `max-height`: js.UndefOr[Double] = js.native
+  var `max-height`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the maximum chart width in pixels. 1000 | 800 | 600
     */
-  var `max-width`: js.UndefOr[Double] = js.native
+  var `max-width`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the minimum chart height in pixels. 600 | 400 | 300
     */
-  var `min-height`: js.UndefOr[Double] = js.native
+  var `min-height`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the minimum chart width in pixels. 1000 | 800 | 600
     */
-  var `min-width`: js.UndefOr[Double] = js.native
+  var `min-width`: js.UndefOr[Double] = js.undefined
   
   /**
     * Removes the object (legend, title) from the chart at that specified breakpoint. Use the attribute to save screen space at smaller
     * breakpoints. true | false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Maxheight {
   

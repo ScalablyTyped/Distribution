@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -65,9 +64,8 @@ object ValidationFeedbackAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction.create")
-  @js.native
-  def create(model: IModel): ValidationFeedbackAction = js.native
+  @scala.inline
+  def create(model: IModel): ValidationFeedbackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ValidationFeedbackAction]
   
   /**
     * Creates and returns a new ValidationFeedbackAction instance in the SDK and on the server.
@@ -75,9 +73,8 @@ object ValidationFeedbackAction {
     * of the parent ActionActivity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): ValidationFeedbackAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): ValidationFeedbackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ValidationFeedbackAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction.structureTypeName")

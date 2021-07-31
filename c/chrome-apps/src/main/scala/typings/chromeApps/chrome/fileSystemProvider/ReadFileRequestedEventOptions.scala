@@ -5,20 +5,20 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.RequestedEventOptio
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReadFileRequestedEventOptions extends RequestedEventOptions {
+trait ReadFileRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** Number of bytes to be returned. */
-  var length: double = js.native
+  var length: double
   
   /** Position in the file (in bytes) to start reading from. */
-  var offset: double = js.native
+  var offset: double
   
   /** A request ID used to open the file. */
-  var openRequestId: integer = js.native
+  var openRequestId: integer
 }
 object ReadFileRequestedEventOptions {
   

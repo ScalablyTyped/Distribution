@@ -19,18 +19,15 @@ import typings.mpvScript.mpvScriptStrings.string
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
-  @JSGlobal("dump")
-  @js.native
-  def dump(msg: js.Any*): Unit = js.native
+  @scala.inline
+  def dump(msg: js.Any*): Unit = js.Dynamic.global.applyDynamic("dump")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("exit")
-  @js.native
-  def exit(): Unit = js.native
+  @scala.inline
+  def exit(): Unit = js.Dynamic.global.applyDynamic("exit")().asInstanceOf[Unit]
   
   object mp {
     
@@ -38,179 +35,125 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("mp.abort_async_command")
-    @js.native
-    def abortAsyncCommand(t: js.Any): Unit = js.native
+    @scala.inline
+    def abortAsyncCommand(t: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("abort_async_command")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(key: String): Unit = js.native
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(
-      key: String,
-      name: js.UndefOr[scala.Nothing],
-      fn: js.UndefOr[scala.Nothing],
-      flags: AddKeyBindingFlags
-    ): Unit = js.native
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(key: String, name: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Unit = js.native
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(key: String, name: js.UndefOr[scala.Nothing], fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = js.native
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(key: String, name: String): Unit = js.native
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(key: String, name: String, fn: js.UndefOr[scala.Nothing], flags: AddKeyBindingFlags): Unit = js.native
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(key: String, name: String, fn: js.Function0[Unit]): Unit = js.native
-    @JSGlobal("mp.add_forced_key_binding")
-    @js.native
-    def addForcedKeyBinding(key: String, name: String, fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = js.native
+    @scala.inline
+    def addForcedKeyBinding(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def addForcedKeyBinding(key: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addForcedKeyBinding(key: String, name: String, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addForcedKeyBinding(key: String, name: String, fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addForcedKeyBinding(key: String, name: String, fn: Unit, flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addForcedKeyBinding(key: String, name: Unit, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addForcedKeyBinding(key: String, name: Unit, fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addForcedKeyBinding(key: String, name: Unit, fn: Unit, flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_forced_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("mp.add_hook")
-    @js.native
-    def addHook(name: String, priority: Double, fn: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def addHook(name: String, priority: Double, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_hook")(name.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(key: String): Unit = js.native
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(
-      key: String,
-      name: js.UndefOr[scala.Nothing],
-      fn: js.UndefOr[scala.Nothing],
-      flags: AddKeyBindingFlags
-    ): Unit = js.native
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(key: String, name: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Unit = js.native
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(key: String, name: js.UndefOr[scala.Nothing], fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = js.native
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(key: String, name: String): Unit = js.native
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(key: String, name: String, fn: js.UndefOr[scala.Nothing], flags: AddKeyBindingFlags): Unit = js.native
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(key: String, name: String, fn: js.Function0[Unit]): Unit = js.native
-    @JSGlobal("mp.add_key_binding")
-    @js.native
-    def addKeyBinding(key: String, name: String, fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = js.native
+    @scala.inline
+    def addKeyBinding(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def addKeyBinding(key: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addKeyBinding(key: String, name: String, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addKeyBinding(key: String, name: String, fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addKeyBinding(key: String, name: String, fn: Unit, flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addKeyBinding(key: String, name: Unit, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addKeyBinding(key: String, name: Unit, fn: js.Function0[Unit], flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addKeyBinding(key: String, name: Unit, fn: Unit, flags: AddKeyBindingFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_key_binding")(key.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("mp.command")
-    @js.native
-    def command(command: String): js.UndefOr[`true`] = js.native
+    @scala.inline
+    def command(command: String): js.UndefOr[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`true`]]
     
-    @JSGlobal("mp.command_native")
-    @js.native
-    def commandNative(table: js.Any): js.Any = js.native
-    @JSGlobal("mp.command_native")
-    @js.native
-    def commandNative(table: js.Any, `def`: js.Any): js.Any = js.native
+    @scala.inline
+    def commandNative(table: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command_native")(table.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def commandNative(table: js.Any, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("command_native")(table.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("mp.command_native_async")
-    @js.native
-    def commandNativeAsync(table: js.Any): js.Any = js.native
-    @JSGlobal("mp.command_native_async")
-    @js.native
+    @scala.inline
+    def commandNativeAsync(table: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("command_native_async")(table.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
     def commandNativeAsync(
       table: js.Any,
       fn: js.Function3[/* success */ Boolean, /* result */ js.Any, /* error */ js.UndefOr[String], Unit]
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("command_native_async")(table.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("mp.commandv")
-    @js.native
-    def commandv(args: String*): js.UndefOr[`true`] = js.native
+    @scala.inline
+    def commandv(args: String*): js.UndefOr[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandv")(args.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`true`]]
     
-    @JSGlobal("mp.create_osd_overlay")
-    @js.native
-    def createOsdOverlay_assevents(format: `ass-events`): OSDOverlay = js.native
+    @scala.inline
+    def createOsdOverlay_assevents(format: `ass-events`): OSDOverlay = ^.asInstanceOf[js.Dynamic].applyDynamic("create_osd_overlay")(format.asInstanceOf[js.Any]).asInstanceOf[OSDOverlay]
     
-    @JSGlobal("mp.enable_messages")
-    @js.native
-    def enableMessages(level: LogLevel): Unit = js.native
+    @scala.inline
+    def enableMessages(level: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable_messages")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("mp.get_opt")
-    @js.native
-    def getOpt(key: String): String = js.native
+    @scala.inline
+    def getOpt(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_opt")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("mp.get_osd_size")
-    @js.native
-    def getOsdSize(): js.UndefOr[OSDSize] = js.native
+    @scala.inline
+    def getOsdSize(): js.UndefOr[OSDSize] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_osd_size")().asInstanceOf[js.UndefOr[OSDSize]]
     
-    @JSGlobal("mp.get_property")
-    @js.native
-    def getProperty(name: String): js.UndefOr[String] = js.native
-    @JSGlobal("mp.get_property")
-    @js.native
-    def getProperty(name: String, `def`: String): String = js.native
+    @scala.inline
+    def getProperty(name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    @scala.inline
+    def getProperty(name: String, `def`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSGlobal("mp.get_property_bool")
-    @js.native
-    def getPropertyBool(name: String): js.UndefOr[Boolean] = js.native
-    @JSGlobal("mp.get_property_bool")
-    @js.native
-    def getPropertyBool(name: String, `def`: Boolean): js.UndefOr[Boolean] = js.native
-    @JSGlobal("mp.get_property_bool")
-    @js.native
-    def getPropertyBool_Boolean(name: String, `def`: Boolean): Boolean = js.native
+    @scala.inline
+    def getPropertyBool(name: String): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property_bool")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+    @scala.inline
+    def getPropertyBool(name: String, `def`: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_bool")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
     
-    @JSGlobal("mp.get_property_native")
-    @js.native
-    def getPropertyNative(name: String): js.Any = js.native
-    @JSGlobal("mp.get_property_native")
-    @js.native
-    def getPropertyNative(name: String, `def`: js.Any): js.Any = js.native
+    @scala.inline
+    def getPropertyBool_Boolean(name: String, `def`: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_bool")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("mp.get_property_number")
-    @js.native
-    def getPropertyNumber(name: String): js.UndefOr[Double] = js.native
-    @JSGlobal("mp.get_property_number")
-    @js.native
-    def getPropertyNumber(name: String, `def`: Double): js.UndefOr[Double] = js.native
-    @JSGlobal("mp.get_property_number")
-    @js.native
-    def getPropertyNumber_Double(name: String, `def`: Double): Double = js.native
+    @scala.inline
+    def getPropertyNative(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property_native")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def getPropertyNative(name: String, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_native")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSGlobal("mp.get_property_osd")
-    @js.native
-    def getPropertyOsd(name: String): String = js.native
-    @JSGlobal("mp.get_property_osd")
-    @js.native
-    def getPropertyOsd(name: String, `def`: String): String = js.native
+    @scala.inline
+    def getPropertyNumber(name: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property_number")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    @scala.inline
+    def getPropertyNumber(name: String, `def`: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_number")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
-    @JSGlobal("mp.get_property")
-    @js.native
-    def getProperty_Union(name: String, `def`: String): js.UndefOr[String] = js.native
+    @scala.inline
+    def getPropertyNumber_Double(name: String, `def`: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_number")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("mp.get_script_file")
-    @js.native
-    def getScriptFile(): String = js.native
+    @scala.inline
+    def getPropertyOsd(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property_osd")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getPropertyOsd(name: String, `def`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property_osd")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSGlobal("mp.get_script_name")
-    @js.native
-    def getScriptName(): String = js.native
+    @scala.inline
+    def getProperty_Union(name: String, `def`: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get_property")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
     
-    @JSGlobal("mp.get_time")
-    @js.native
-    def getTime(): Double = js.native
+    @scala.inline
+    def getScriptFile(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_script_file")().asInstanceOf[String]
     
-    @JSGlobal("mp.get_time_ms")
-    @js.native
-    def getTimeMs(): Double = js.native
+    @scala.inline
+    def getScriptName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_script_name")().asInstanceOf[String]
     
-    @JSGlobal("mp.last_error")
-    @js.native
-    def lastError(): String = js.native
+    @scala.inline
+    def getTime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_time")().asInstanceOf[Double]
+    
+    @scala.inline
+    def getTimeMs(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_time_ms")().asInstanceOf[Double]
+    
+    @scala.inline
+    def lastError(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("last_error")().asInstanceOf[String]
     
     @JSGlobal("mp.module_paths")
     @js.native
@@ -221,213 +164,185 @@ object global {
     
     object msg {
       
-      @JSGlobal("mp.msg.debug")
+      @JSGlobal("mp.msg")
       @js.native
-      def debug(msg: js.Any*): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("mp.msg.error")
-      @js.native
-      def error(msg: js.Any*): Unit = js.native
+      @scala.inline
+      def debug(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("mp.msg.fatal")
-      @js.native
-      def fatal(msg: js.Any*): Unit = js.native
+      @scala.inline
+      def error(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("mp.msg.info")
-      @js.native
-      def info(msg: js.Any*): Unit = js.native
+      @scala.inline
+      def fatal(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("mp.msg.log")
-      @js.native
-      def log(level: LogLevel, msg: js.Any*): Unit = js.native
+      @scala.inline
+      def info(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("mp.msg.trace")
-      @js.native
-      def trace(msg: js.Any*): Unit = js.native
+      @scala.inline
+      def log(level: LogLevel, msg: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("mp.msg.verbose")
-      @js.native
-      def verbose(msg: js.Any*): Unit = js.native
+      @scala.inline
+      def trace(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("mp.msg.warn")
-      @js.native
-      def warn(msg: js.Any*): Unit = js.native
+      @scala.inline
+      def verbose(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      @scala.inline
+      def warn(msg: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
-    @JSGlobal("mp.observe_property")
-    @js.native
-    def observeProperty(name: String, `type`: js.UndefOr[scala.Nothing], fn: js.Function1[/* name */ String, Unit]): Unit = js.native
-    @JSGlobal("mp.observe_property")
-    @js.native
+    @scala.inline
+    def observeProperty(name: String, `type`: Unit, fn: js.Function1[/* name */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def observeProperty_bool(
       name: String,
       `type`: bool,
       fn: js.Function2[/* name */ String, /* value */ js.UndefOr[Boolean], Unit]
-    ): Unit = js.native
-    @JSGlobal("mp.observe_property")
-    @js.native
-    def observeProperty_native(name: String, `type`: native, fn: js.Function2[/* name */ String, /* value */ js.Any, Unit]): Unit = js.native
-    @JSGlobal("mp.observe_property")
-    @js.native
-    def observeProperty_none(name: String, `type`: none, fn: js.Function1[/* name */ String, Unit]): Unit = js.native
-    @JSGlobal("mp.observe_property")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def observeProperty_native(name: String, `type`: native, fn: js.Function2[/* name */ String, /* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def observeProperty_none(name: String, `type`: none, fn: js.Function1[/* name */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def observeProperty_number(
       name: String,
       `type`: number,
       fn: js.Function2[/* name */ String, /* value */ js.UndefOr[Double], Unit]
-    ): Unit = js.native
-    @JSGlobal("mp.observe_property")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def observeProperty_string(
       name: String,
       `type`: string,
       fn: js.Function2[/* name */ String, /* value */ js.UndefOr[String], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observe_property")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     object options {
       
-      @JSGlobal("mp.options.read_options")
+      @JSGlobal("mp.options")
       @js.native
-      def readOptions(table: Record[String, String | Boolean | Double]): Unit = js.native
-      @JSGlobal("mp.options.read_options")
-      @js.native
-      def readOptions(
-        table: Record[String, String | Boolean | Double],
-        identifier: js.UndefOr[scala.Nothing],
-        on_update: js.Function1[/* list */ Record[String, js.UndefOr[Boolean]], Unit]
-      ): Unit = js.native
-      @JSGlobal("mp.options.read_options")
-      @js.native
-      def readOptions(table: Record[String, String | Boolean | Double], identifier: String): Unit = js.native
-      @JSGlobal("mp.options.read_options")
-      @js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def readOptions(table: Record[String, String | Boolean | Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("read_options")(table.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def readOptions(table: Record[String, String | Boolean | Double], identifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read_options")(table.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
       def readOptions(
         table: Record[String, String | Boolean | Double],
         identifier: String,
         on_update: js.Function1[/* list */ Record[String, js.UndefOr[Boolean]], Unit]
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read_options")(table.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], on_update.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def readOptions(
+        table: Record[String, String | Boolean | Double],
+        identifier: Unit,
+        on_update: js.Function1[/* list */ Record[String, js.UndefOr[Boolean]], Unit]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read_options")(table.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], on_update.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
-    @JSGlobal("mp.osd_message")
-    @js.native
-    def osdMessage(text: String): Unit = js.native
-    @JSGlobal("mp.osd_message")
-    @js.native
-    def osdMessage(text: String, duration: Double): Unit = js.native
+    @scala.inline
+    def osdMessage(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("osd_message")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def osdMessage(text: String, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("osd_message")(text.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("mp.register_event")
-    @js.native
-    def registerEvent(name: String, fn: js.Function1[/* event */ Record[String, _], Unit]): Unit = js.native
+    @scala.inline
+    def registerEvent(name: String, fn: js.Function1[/* event */ Record[String, js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_event")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("mp.register_idle")
-    @js.native
-    def registerIdle(fn: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def registerIdle(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_idle")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("mp.register_script_message")
-    @js.native
-    def registerScriptMessage(name: String, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    @scala.inline
+    def registerScriptMessage(name: String, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_script_message")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("mp.remove_key_binding")
-    @js.native
-    def removeKeyBinding(name: String): Unit = js.native
+    @scala.inline
+    def removeKeyBinding(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove_key_binding")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("mp.set_property")
-    @js.native
-    def setProperty(name: String, value: String): js.UndefOr[`true`] = js.native
+    @scala.inline
+    def setProperty(name: String, value: String): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
     
-    @JSGlobal("mp.set_property_bool")
-    @js.native
-    def setPropertyBool(name: String, value: Boolean): js.UndefOr[`true`] = js.native
+    @scala.inline
+    def setPropertyBool(name: String, value: Boolean): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property_bool")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
     
-    @JSGlobal("mp.set_property_native")
-    @js.native
-    def setPropertyNative(name: String, value: js.Any): js.UndefOr[`true`] = js.native
+    @scala.inline
+    def setPropertyNative(name: String, value: js.Any): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property_native")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
     
-    @JSGlobal("mp.set_property_number")
-    @js.native
-    def setPropertyNumber(name: String, value: Double): js.UndefOr[`true`] = js.native
+    @scala.inline
+    def setPropertyNumber(name: String, value: Double): js.UndefOr[`true`] = (^.asInstanceOf[js.Dynamic].applyDynamic("set_property_number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[`true`]]
     
-    @JSGlobal("mp.unobserve_property")
-    @js.native
-    def unobserveProperty(fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    @scala.inline
+    def unobserveProperty(fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unobserve_property")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("mp.unregister_event")
-    @js.native
-    def unregisterEvent(fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    @scala.inline
+    def unregisterEvent(fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister_event")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("mp.unregister_idle")
-    @js.native
-    def unregisterIdle(fn: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def unregisterIdle(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister_idle")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("mp.unregister_script_message")
-    @js.native
-    def unregisterScriptMessage(name: String): Unit = js.native
+    @scala.inline
+    def unregisterScriptMessage(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister_script_message")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     object utils {
       
-      @JSGlobal("mp.utils.compile_js")
+      @JSGlobal("mp.utils")
       @js.native
-      def compileJs(fname: String, content_str: String): js.Function1[/* repeated */ js.Any, _] = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("mp.utils.file_info")
-      @js.native
-      def fileInfo(path: String): js.UndefOr[FileInfo] = js.native
+      @scala.inline
+      def compileJs(fname: String, content_str: String): js.Function1[/* repeated */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile_js")(fname.asInstanceOf[js.Any], content_str.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
       
-      @JSGlobal("mp.utils.get_user_path")
-      @js.native
-      def getUserPath(path: String): String = js.native
+      @scala.inline
+      def fileInfo(path: String): js.UndefOr[FileInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("file_info")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[FileInfo]]
       
-      @JSGlobal("mp.utils.getcwd")
-      @js.native
-      def getcwd(): js.UndefOr[String] = js.native
+      @scala.inline
+      def getUserPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_user_path")(path.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSGlobal("mp.utils.getenv")
-      @js.native
-      def getenv(name: String): js.UndefOr[String] = js.native
+      @scala.inline
+      def getcwd(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getcwd")().asInstanceOf[js.UndefOr[String]]
       
-      @JSGlobal("mp.utils.getpid")
-      @js.native
-      def getpid(): Double = js.native
+      @scala.inline
+      def getenv(name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getenv")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
       
-      @JSGlobal("mp.utils.join_path")
-      @js.native
-      def joinPath(p1: String, p2: String): String = js.native
+      @scala.inline
+      def getpid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getpid")().asInstanceOf[Double]
       
-      @JSGlobal("mp.utils.read_file")
-      @js.native
-      def readFile(fname: String): String = js.native
-      @JSGlobal("mp.utils.read_file")
-      @js.native
-      def readFile(fname: String, max: Double): String = js.native
+      @scala.inline
+      def joinPath(p1: String, p2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("join_path")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      @JSGlobal("mp.utils.readdir")
-      @js.native
-      def readdir(path: String): js.UndefOr[js.Array[String]] = js.native
-      @JSGlobal("mp.utils.readdir")
-      @js.native
-      def readdir_all(path: String, filter: all): js.UndefOr[js.Array[String]] = js.native
-      @JSGlobal("mp.utils.readdir")
-      @js.native
-      def readdir_dirs(path: String, filter: dirs): js.UndefOr[js.Array[String]] = js.native
-      @JSGlobal("mp.utils.readdir")
-      @js.native
-      def readdir_files(path: String, filter: files): js.UndefOr[js.Array[String]] = js.native
-      @JSGlobal("mp.utils.readdir")
-      @js.native
-      def readdir_normal(path: String, filter: normal): js.UndefOr[js.Array[String]] = js.native
+      @scala.inline
+      def readFile(fname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("read_file")(fname.asInstanceOf[js.Any]).asInstanceOf[String]
+      @scala.inline
+      def readFile(fname: String, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("read_file")(fname.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      @JSGlobal("mp.utils.split_path")
-      @js.native
-      def splitPath(path: String): js.Tuple2[String, String] = js.native
+      @scala.inline
+      def readdir(path: String): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
       
-      @JSGlobal("mp.utils.write_file")
-      @js.native
-      def writeFile(fname: String, str: String): Unit = js.native
+      @scala.inline
+      def readdir_all(path: String, filter: all): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
+      
+      @scala.inline
+      def readdir_dirs(path: String, filter: dirs): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
+      
+      @scala.inline
+      def readdir_files(path: String, filter: files): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
+      
+      @scala.inline
+      def readdir_normal(path: String, filter: normal): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
+      
+      @scala.inline
+      def splitPath(path: String): js.Tuple2[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split_path")(path.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, String]]
+      
+      @scala.inline
+      def writeFile(fname: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write_file")(fname.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
   
-  @JSGlobal("print")
-  @js.native
-  def print(msg: js.Any*): Unit = js.native
+  @scala.inline
+  def print(msg: js.Any*): Unit = js.Dynamic.global.applyDynamic("print")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

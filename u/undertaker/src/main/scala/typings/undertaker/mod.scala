@@ -7,7 +7,6 @@ import typings.node.streamMod.Duplex
 import typings.undertaker.undertakerStrings.Tasks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,16 +17,15 @@ object mod {
     def this(registry: typings.undertakerRegistry.mod.^) = this()
   }
   
-  @js.native
   trait Node extends StObject {
     
-    var branch: js.UndefOr[Boolean] = js.native
+    var branch: js.UndefOr[Boolean] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var nodes: js.Array[Node] = js.native
+    var nodes: js.Array[Node]
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Node {
     
@@ -73,7 +71,7 @@ object mod {
        with TaskFunctionParams {
     
     /* InferMemberOverrides */
-    override def apply(T0: /* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit | Duplex | Process | js.Promise[scala.Nothing] | js.Any = js.native
+    override def apply(arg1: /* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit | Duplex | Process | js.Promise[scala.Nothing] | js.Any = js.native
   }
   
   type TaskFunctionBase = js.Function1[
@@ -81,16 +79,15 @@ object mod {
     Unit | Duplex | Process | js.Promise[scala.Nothing] | js.Any
   ]
   
-  @js.native
   trait TaskFunctionParams extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var flags: js.UndefOr[TaskFlags] = js.native
+    var flags: js.UndefOr[TaskFlags] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object TaskFunctionParams {
     
@@ -137,14 +134,13 @@ object mod {
     def unwrap(): TaskFunction = js.native
   }
   
-  @js.native
   trait TreeOptions extends StObject {
     
     /**
       * Whether or not the whole tree should be returned.
       * Default: false
       */
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
   }
   object TreeOptions {
     
@@ -165,18 +161,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TreeResult extends StObject {
     
-    var label: Tasks = js.native
+    var label: Tasks
     
-    var nodes: js.Array[Node] = js.native
+    var nodes: js.Array[Node]
   }
   object TreeResult {
     
     @scala.inline
-    def apply(label: Tasks, nodes: js.Array[Node]): TreeResult = {
-      val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
+    def apply(nodes: js.Array[Node]): TreeResult = {
+      val __obj = js.Dynamic.literal(label = "Tasks", nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeResult]
     }
     

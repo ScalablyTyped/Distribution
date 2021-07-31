@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupTemplateProperties extends StObject {
   
   /**
@@ -13,70 +11,70 @@ trait PopupTemplateProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#actions)
     */
-  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.native
+  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.undefined
   
   /**
     * The template for defining and formatting a popup's content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content)
     */
-  var content: js.UndefOr[js.Array[ContentProperties] | String | js.Function | js.Promise[_]] = js.native
+  var content: js.UndefOr[js.Array[ContentProperties] | String | js.Function | js.Promise[js.Any]] = js.undefined
   
   /**
     * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#expressionInfos)
     */
-  var expressionInfos: js.UndefOr[js.Array[popupExpressionInfoProperties]] = js.native
+  var expressionInfos: js.UndefOr[js.Array[popupExpressionInfoProperties]] = js.undefined
   
   /**
     * An array of [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) that defines how fields in the dataset or values from [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions participate in a popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos)
     */
-  var fieldInfos: js.UndefOr[js.Array[FieldInfoProperties]] = js.native
+  var fieldInfos: js.UndefOr[js.Array[FieldInfoProperties]] = js.undefined
   
   /**
     * Indicates whether or not editor tracking should display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#lastEditInfoEnabled)
     */
-  var lastEditInfoEnabled: js.UndefOr[Boolean] = js.native
+  var lastEditInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional options that can be defined for the popup layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#layerOptions)
     */
-  var layerOptions: js.UndefOr[LayerOptionsProperties] = js.native
+  var layerOptions: js.UndefOr[LayerOptionsProperties] = js.undefined
   
   /**
     * An array of field names used in the PopupTemplate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether actions should replace existing [popup actions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actions).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#overwriteActions)
     */
-  var overwriteActions: js.UndefOr[Boolean] = js.native
+  var overwriteActions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The `RelatedRecordsInfo` class provides additional sorting options when working with related records in a popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#relatedRecordsInfo)
     */
-  var relatedRecordsInfo: js.UndefOr[RelatedRecordsInfoProperties] = js.native
+  var relatedRecordsInfo: js.UndefOr[RelatedRecordsInfoProperties] = js.undefined
   
   /**
     * The template for defining how to format the title used in a popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#title)
     */
-  var title: js.UndefOr[String | js.Function | js.Promise[_]] = js.native
+  var title: js.UndefOr[String | js.Function | js.Promise[js.Any]] = js.undefined
 }
 object PopupTemplateProperties {
   
@@ -99,7 +97,7 @@ object PopupTemplateProperties {
     def setActionsVarargs(value: (ActionButtonProperties | ActionToggleProperties)*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setContent(value: js.Array[ContentProperties] | String | js.Function | js.Promise[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: js.Array[ContentProperties] | String | js.Function | js.Promise[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
@@ -159,7 +157,7 @@ object PopupTemplateProperties {
     def setRelatedRecordsInfoUndefined: Self = StObject.set(x, "relatedRecordsInfo", js.undefined)
     
     @scala.inline
-    def setTitle(value: String | js.Function | js.Promise[_]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    def setTitle(value: String | js.Function | js.Promise[js.Any]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)

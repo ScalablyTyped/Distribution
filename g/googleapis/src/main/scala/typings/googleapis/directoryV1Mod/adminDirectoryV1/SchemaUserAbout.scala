@@ -2,13 +2,11 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for About (notes) of a user in Directory API.
   */
-@js.native
 trait SchemaUserAbout extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaUserAbout extends StObject {
     * either be plain or html. By default, notes contents are assumed to
     * contain plain text.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * Actual value of notes.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaUserAbout {
   

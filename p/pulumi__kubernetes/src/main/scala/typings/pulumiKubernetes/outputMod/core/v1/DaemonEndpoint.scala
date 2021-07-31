@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DaemonEndpoint contains information about a single Daemon endpoint.
   */
-@js.native
 trait DaemonEndpoint extends StObject {
   
   /**
     * Port number of the given endpoint.
     */
-  var Port: Double = js.native
+  var Port: Double
 }
 object DaemonEndpoint {
   

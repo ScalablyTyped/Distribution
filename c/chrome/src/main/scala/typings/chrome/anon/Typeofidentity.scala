@@ -8,7 +8,6 @@ import typings.chrome.chrome.identity.UserInfo
 import typings.chrome.chrome.identity.WebAuthFlowOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

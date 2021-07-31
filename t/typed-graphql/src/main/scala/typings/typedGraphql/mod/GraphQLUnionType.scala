@@ -2,13 +2,13 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("graphql", "GraphQLUnionType")
 @js.native
 class GraphQLUnionType protected ()
-  extends GraphQLAbstractType
+  extends StObject
+     with GraphQLAbstractType
      with GraphQLCompositeType
      with GraphQLNamedType
      with GraphQLNullableType

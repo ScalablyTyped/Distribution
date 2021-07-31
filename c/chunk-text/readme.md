@@ -12,7 +12,7 @@ Typings are for version 1.0
 | Keywords           | chunk-text, split, chunk, algolia, text, string, array, length, index, size, splice, slice, text-processing, text processing, multi-byte, multibyte, multi, byte, runes, rune, glyphs, glyph, encoding, emoji, MIT |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 20421 |
+| # downloads        | 20293 |
 | # stars            | 0 |
 
 ## Links

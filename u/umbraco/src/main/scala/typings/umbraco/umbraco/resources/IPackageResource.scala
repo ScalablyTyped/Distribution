@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.resources.packageInstallResource
   * @description handles data for package installations
   **/
-@js.native
 trait IPackageResource extends StObject {
   
-  def cleanUp(_package: String): Unit = js.native
+  def cleanUp(_package: String): Unit
   
   /**
     * @ngdoc method
@@ -35,7 +33,7 @@ trait IPackageResource extends StObject {
     * @returns {String} path to the downloaded zip file.
     *
     */
-  def fetch(id: String): String = js.native
+  def fetch(id: String): String
   
   /**
     * @ngdoc method
@@ -60,11 +58,11 @@ trait IPackageResource extends StObject {
     * @returns {Int} the ID assigned to the saved package manifest
     *
     */
-  def `import`(_package: String): Double = js.native
+  def `import`(_package: String): Double
   
-  def installData(_package: String): Unit = js.native
+  def installData(_package: String): Unit
   
-  def installFiles(_package: String): Unit = js.native
+  def installFiles(_package: String): Unit
 }
 object IPackageResource {
   

@@ -7,7 +7,6 @@ import typings.dogeSeed.dogeSeedNumbers.`224`
 import typings.dogeSeed.dogeSeedNumbers.`256`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,22 +21,20 @@ object mod {
     * @param bits The number of bits to derive a BIP39 mnemonic from. Default: `128`.
     * @returns A BIP39 mnemonic seed phrase.
     */
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(bits: `128`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(bits: `160`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(bits: `192`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(bits: `224`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(bits: `256`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("doge-seed", JSImport.Namespace)
   @js.native
-  def apply(): String = js.native
-  @JSImport("doge-seed", JSImport.Namespace)
-  @js.native
-  def apply(bits: `128`): String = js.native
-  @JSImport("doge-seed", JSImport.Namespace)
-  @js.native
-  def apply(bits: `160`): String = js.native
-  @JSImport("doge-seed", JSImport.Namespace)
-  @js.native
-  def apply(bits: `192`): String = js.native
-  @JSImport("doge-seed", JSImport.Namespace)
-  @js.native
-  def apply(bits: `224`): String = js.native
-  @JSImport("doge-seed", JSImport.Namespace)
-  @js.native
-  def apply(bits: `256`): String = js.native
+  val ^ : js.Any = js.native
 }

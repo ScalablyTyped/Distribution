@@ -2,23 +2,21 @@ package typings.string
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Delimiter extends StObject {
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var encloseNumbers: js.UndefOr[Boolean] = js.native
+    var encloseNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var escape: js.UndefOr[String] = js.native
+    var escape: js.UndefOr[String] = js.undefined
     
-    var keys: js.UndefOr[Boolean] = js.native
+    var keys: js.UndefOr[Boolean] = js.undefined
     
-    var qualifier: js.UndefOr[String] = js.native
+    var qualifier: js.UndefOr[String] = js.undefined
   }
   object Delimiter {
     

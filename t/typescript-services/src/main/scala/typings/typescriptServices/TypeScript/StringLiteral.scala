@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringLiteral extends IASTToken {
+trait StringLiteral
+  extends StObject
+     with IASTToken {
   
-  var _text: js.Any = js.native
+  var _text: js.Any
   
-  var _valueText: js.Any = js.native
+  var _valueText: js.Any
   
-  def structuralEquals(ast: StringLiteral, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: StringLiteral, includingPosition: Boolean): Boolean
 }
 object StringLiteral {
   

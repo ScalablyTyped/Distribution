@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object ContinueEvent {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ContinueEvent.create")
-  @js.native
-  def create(model: IModel): ContinueEvent = js.native
+  @scala.inline
+  def create(model: IModel): ContinueEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ContinueEvent]
   
   /**
     * Creates and returns a new ContinueEvent instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object ContinueEvent {
     * of the parent MicroflowObjectCollection element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ContinueEvent.createIn")
-  @js.native
-  def createIn(container: MicroflowObjectCollection): ContinueEvent = js.native
+  @scala.inline
+  def createIn(container: MicroflowObjectCollection): ContinueEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ContinueEvent]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ContinueEvent.structureTypeName")

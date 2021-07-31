@@ -3,29 +3,27 @@ package typings.jasmineAjax
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JasmineAjaxRequestStub extends StObject {
   
-  def andCallFunction(functionToCall: js.Function1[/* request */ JasmineAjaxRequest, Unit]): Unit = js.native
+  def andCallFunction(functionToCall: js.Function1[/* request */ JasmineAjaxRequest, Unit]): Unit
   
-  def andError(options: JasmineAjaxRequestStubErrorOptions): Unit = js.native
+  def andError(options: JasmineAjaxRequestStubErrorOptions): Unit
   
-  def andReturn(options: JasmineAjaxResponse): Unit = js.native
+  def andReturn(options: JasmineAjaxResponse): Unit
   
-  def andTimeout(): Unit = js.native
+  def andTimeout(): Unit
   
-  var data: String = js.native
+  var data: String
   
-  def matches(fullUrl: String, data: String, method: String): Boolean = js.native
+  def matches(fullUrl: String, data: String, method: String): Boolean
   
-  var method: String = js.native
+  var method: String
   
-  var query: String = js.native
+  var query: String
   
-  var url: RegExp | String = js.native
+  var url: RegExp | String
 }
 object JasmineAjaxRequestStub {
   

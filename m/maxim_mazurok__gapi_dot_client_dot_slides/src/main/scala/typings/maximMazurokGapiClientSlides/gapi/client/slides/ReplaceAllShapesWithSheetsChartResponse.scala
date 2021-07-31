@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceAllShapesWithSheetsChartResponse extends StObject {
   
   /** The number of shapes replaced with charts. */
-  var occurrencesChanged: js.UndefOr[Double] = js.native
+  var occurrencesChanged: js.UndefOr[Double] = js.undefined
 }
 object ReplaceAllShapesWithSheetsChartResponse {
   

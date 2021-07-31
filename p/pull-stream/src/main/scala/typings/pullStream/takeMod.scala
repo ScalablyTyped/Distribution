@@ -4,7 +4,6 @@ import typings.pullStream.anon.Last
 import typings.pullStream.mod.Through_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object takeMod {
@@ -16,13 +15,14 @@ object takeMod {
     *
     *    `opts` is an optional Object of form `{ last: Boolean }`, where `opts.last` determines whether the last value tested (before closing the stream) is included or excluded (default).
     */
+  @scala.inline
+  def apply[InOut](n: Double): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply(n.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
+  @scala.inline
+  def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].apply(testFn.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
+  @scala.inline
+  def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: Last): Through_[InOut, InOut] = (^.asInstanceOf[js.Dynamic].apply(testFn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Through_[InOut, InOut]]
+  
   @JSImport("pull-stream/throughs/take", JSImport.Namespace)
   @js.native
-  def apply[InOut](n: Double): Through_[InOut, InOut] = js.native
-  @JSImport("pull-stream/throughs/take", JSImport.Namespace)
-  @js.native
-  def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
-  @JSImport("pull-stream/throughs/take", JSImport.Namespace)
-  @js.native
-  def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: Last): Through_[InOut, InOut] = js.native
+  val ^ : js.Any = js.native
 }

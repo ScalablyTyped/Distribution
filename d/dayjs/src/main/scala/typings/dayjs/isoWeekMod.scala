@@ -6,7 +6,6 @@ import typings.dayjs.esmMod.ConfigType
 import typings.dayjs.esmMod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isoWeekMod extends Shortcut {

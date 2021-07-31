@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the paragraph style settings.
   */
-@js.native
-trait ParagraphStyle extends StyleBase {
+trait ParagraphStyle
+  extends StObject
+     with StyleBase {
   
   /**
     * Gets or sets the linked style for the current style.
     */
-  val linkedStyle: CharacterStyle = js.native
+  val linkedStyle: CharacterStyle
   
   /**
     * Gets the index of the list item associated with the paragraph formatted with the current style.
     */
-  val listIndex: Double = js.native
+  val listIndex: Double
   
   /**
     * Gets the index of the list level applied to the paragraph formatted with the current style.
     */
-  val listLevelIndex: Double = js.native
+  val listLevelIndex: Double
   
   /**
     * Gets or sets the default style for a paragraph that immediately follows the current paragraph.
     */
-  val nextStyle: ParagraphStyle = js.native
+  val nextStyle: ParagraphStyle
   
   /**
     * Gets or sets the style from which the current style inherits.
     */
-  val parent: ParagraphStyle = js.native
+  val parent: ParagraphStyle
 }
 object ParagraphStyle {
   

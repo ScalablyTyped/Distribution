@@ -5,29 +5,29 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesScheduleKeyDeletionOutputMod {
   
-  @js.native
-  trait ScheduleKeyDeletionOutput extends OutputTypesUnion {
+  trait ScheduleKeyDeletionOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The date and time after which AWS KMS deletes the customer master key (CMK).</p>
       */
-    var DeletionDate: js.UndefOr[Date] = js.native
+    var DeletionDate: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The unique identifier of the customer master key (CMK) for which deletion is scheduled.</p>
       */
-    var KeyId: js.UndefOr[String] = js.native
+    var KeyId: js.UndefOr[String] = js.undefined
   }
   object ScheduleKeyDeletionOutput {
     

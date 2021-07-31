@@ -2,32 +2,32 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesClearCacheParams extends GenericParams {
+trait IndicesClearCacheParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var fieldData: js.UndefOr[Boolean] = js.native
+  var fieldData: js.UndefOr[Boolean] = js.undefined
   
-  var fielddata: js.UndefOr[Boolean] = js.native
+  var fielddata: js.UndefOr[Boolean] = js.undefined
   
   // yes the docs really have both
-  var fields: js.UndefOr[NameList] = js.native
+  var fields: js.UndefOr[NameList] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var query: js.UndefOr[Boolean] = js.native
+  var query: js.UndefOr[Boolean] = js.undefined
   
-  var recycler: js.UndefOr[Boolean] = js.native
+  var recycler: js.UndefOr[Boolean] = js.undefined
   
-  var request: js.UndefOr[Boolean] = js.native
+  var request: js.UndefOr[Boolean] = js.undefined
 }
 object IndicesClearCacheParams {
   

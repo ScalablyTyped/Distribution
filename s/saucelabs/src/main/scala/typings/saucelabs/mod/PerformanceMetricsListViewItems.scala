@@ -3,32 +3,31 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceMetricsListViewItems
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var job_creation_time: js.UndefOr[String] = js.native
+  var job_creation_time: js.UndefOr[String] = js.undefined
   
-  var job_id: js.UndefOr[String] = js.native
+  var job_id: js.UndefOr[String] = js.undefined
   
-  var job_name_hash: js.UndefOr[String] = js.native
+  var job_name_hash: js.UndefOr[String] = js.undefined
   
-  var job_owner: js.UndefOr[String] = js.native
+  var job_owner: js.UndefOr[String] = js.undefined
   
-  var load_id: js.UndefOr[String] = js.native
+  var load_id: js.UndefOr[String] = js.undefined
   
-  var loader_id: js.UndefOr[String] = js.native
+  var loader_id: js.UndefOr[String] = js.undefined
   
-  var metric_data: js.UndefOr[PerformanceMetricsDetails] = js.native
+  var metric_data: js.UndefOr[PerformanceMetricsDetails] = js.undefined
   
-  var order_index: js.UndefOr[Double] = js.native
+  var order_index: js.UndefOr[Double] = js.undefined
   
-  var page_url: js.UndefOr[String] = js.native
+  var page_url: js.UndefOr[String] = js.undefined
 }
 object PerformanceMetricsListViewItems {
   

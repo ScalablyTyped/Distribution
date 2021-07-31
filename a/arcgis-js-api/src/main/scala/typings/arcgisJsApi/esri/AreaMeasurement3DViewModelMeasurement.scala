@@ -6,32 +6,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaMeasurement3DViewModelMeasurement extends Object {
+trait AreaMeasurement3DViewModelMeasurement
+  extends StObject
+     with Object {
   
   /**
     * The area of the polygon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#measurement)
     */
-  var area: MeasurementValue = js.native
+  var area: MeasurementValue
   
   /**
     * Describes the mode in which the measurement was taken.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#measurement)
     */
-  var measurementMode: euclidean | geodesic = js.native
+  var measurementMode: euclidean | geodesic
   
   /**
     * The perimeter length of the polygon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#measurement)
     */
-  var perimeterLength: MeasurementValue = js.native
+  var perimeterLength: MeasurementValue
 }
 object AreaMeasurement3DViewModelMeasurement {
   

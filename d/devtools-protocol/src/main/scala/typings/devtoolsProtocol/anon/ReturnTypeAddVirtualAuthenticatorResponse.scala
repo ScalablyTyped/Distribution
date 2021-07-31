@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.WebAuthn.AddVirtualAuthenticatorReq
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.AddVirtualAuthenticatorResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeAddVirtualAuthenticatorResponse extends StObject {
   
-  var paramsType: js.Array[AddVirtualAuthenticatorRequest] = js.native
+  var paramsType: js.Array[AddVirtualAuthenticatorRequest]
   
-  var returnType: AddVirtualAuthenticatorResponse = js.native
+  var returnType: AddVirtualAuthenticatorResponse
 }
 object ReturnTypeAddVirtualAuthenticatorResponse {
   

@@ -5,13 +5,11 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleWithAnimatedValue extends StObject {
   
-  var style: WithAnimatedValue[StyleProp[ViewStyle]] = js.native
+  var style: WithAnimatedValue[StyleProp[ViewStyle]]
 }
 object StyleWithAnimatedValue {
   

@@ -6,14 +6,19 @@ import typings.luminoDatagrid.celleditorMod.ICellEditor
 import typings.luminoDatagrid.datamodelMod.DataModel.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object celleditorcontrollerMod {
   
+  @JSImport("@lumino/datagrid/lib/celleditorcontroller", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@lumino/datagrid/lib/celleditorcontroller", "CellEditorController")
   @js.native
-  class CellEditorController () extends ICellEditorController {
+  class CellEditorController ()
+    extends StObject
+       with ICellEditorController {
     
     var _cell: js.Any = js.native
     
@@ -47,9 +52,8 @@ object celleditorcontrollerMod {
     var _typeBasedOverrides: js.Any = js.native
   }
   
-  @JSImport("@lumino/datagrid/lib/celleditorcontroller", "resolveOption")
-  @js.native
-  def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = js.native
+  @scala.inline
+  def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   
   type ConfigFunc[T] = js.Function1[/* config */ CellConfig, T]
   

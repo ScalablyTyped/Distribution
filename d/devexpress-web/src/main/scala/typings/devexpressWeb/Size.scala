@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the size settings.
   */
-@js.native
 trait Size extends StObject {
   
   /**
     * Gets or sets the height value in twips.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Gets or sets the width value in twips.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object Size {
   

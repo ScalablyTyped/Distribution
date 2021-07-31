@@ -5,14 +5,15 @@ import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outgoingFrameStreamMod {
   
   @JSImport("stompit/lib/OutgoingFrameStream", JSImport.Namespace)
   @js.native
-  class ^ protected () extends OutgoingFrameStream {
+  class ^ protected ()
+    extends StObject
+       with OutgoingFrameStream {
     def this(destination: Duplex) = this()
   }
   
@@ -22,9 +23,9 @@ object outgoingFrameStreamMod {
     def finish(): Unit = js.native
     
     def frame(command: String): Writable = js.native
-    def frame(command: String, headers: js.UndefOr[scala.Nothing], streamOptions: WritableOptions): Writable = js.native
     def frame(command: String, headers: js.Any): Writable = js.native
     def frame(command: String, headers: js.Any, streamOptions: WritableOptions): Writable = js.native
+    def frame(command: String, headers: Unit, streamOptions: WritableOptions): Writable = js.native
     
     def hasFinished(): Boolean = js.native
     

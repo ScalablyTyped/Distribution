@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,20 +15,19 @@ object mod {
   class default ()
     extends Component[PartialDataTableProps, js.Object, js.Any]
   
-  @js.native
   trait Column extends StObject {
     
     /** Align right */
-    var alignRight: js.UndefOr[Boolean] = js.native
+    var alignRight: js.UndefOr[Boolean] = js.undefined
     
     /** Class name to use */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** The element key */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Label */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Render function. Given the value extracted
@@ -38,16 +36,16 @@ object mod {
       * @param row - the data object representing this row
       * @returns Any react node (JSX compatible return)
       */
-    var render: js.UndefOr[js.Function2[/* value */ js.Any, /* row */ js.Any, _]] = js.native
+    var render: js.UndefOr[js.Function2[/* value */ js.Any, /* row */ js.Any, js.Any]] = js.undefined
     
     /** If the column is sortable */
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
     /** Style for column */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** Cell tooltip */
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
   }
   object Column {
     
@@ -85,7 +83,7 @@ object mod {
       def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       @scala.inline
-      def setRender(value: (/* value */ js.Any, /* row */ js.Any) => _): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      def setRender(value: (/* value */ js.Any, /* row */ js.Any) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -112,7 +110,6 @@ object mod {
   
   type DataTable = Component[PartialDataTableProps, js.Object, js.Any]
   
-  @js.native
   trait DataTableProps extends StObject {
     
     /**
@@ -123,124 +120,124 @@ object mod {
       *      render: (__value: any, book: any) => book.name + ' by ' book.author
       *  },```
       */
-    var columns: js.Array[Column] = js.native
+    var columns: js.Array[Column]
     
-    var count: Double = js.native
+    var count: Double
     
     /** The array of objects used as data for the table */
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
     /** If clicking away de-selects all */
-    var deselectOnClickaway: Boolean = js.native
+    var deselectOnClickaway: Boolean
     
     /** Adds a select all button */
-    var enableSelectAll: Boolean = js.native
+    var enableSelectAll: Boolean
     
     /** Filter hint text */
-    var filterHintText: String = js.native
+    var filterHintText: String
     
     // BUG https://github.com/Microsoft/TypeScript/issues/11465
     /** The current filter value */
-    var filterValue: String = js.native
+    var filterValue: String
     
     /** If the footer should be fixed */
-    var fixedFooter: Boolean = js.native
+    var fixedFooter: Boolean
     
     /** If the header should be fixed */
-    var fixedHeader: Boolean = js.native
+    var fixedHeader: Boolean
     
     /** React Style object applied to footer toolbar */
-    var footerToolbarStyle: CSSProperties = js.native
+    var footerToolbarStyle: CSSProperties
     
     /** 'default' or 'filter', filter mode shows a search box to reduce visible rows */
-    var headerToolbarMode: typings.materialUiDatatables.materialUiDatatablesStrings.default | filter | String = js.native
+    var headerToolbarMode: typings.materialUiDatatables.materialUiDatatablesStrings.default | filter | String
     
     /** The hight of the table */
-    var height: js.Any = js.native
+    var height: js.Any
     
     /** If multiple table rows are select-able */
-    var multiSelectable: Boolean = js.native
+    var multiSelectable: Boolean
     
     /** Callback when the cell is clicked. This callback is only active when selectable is false. */
-    def onCellClick(rowIndex: Double, columnIndex: Double, row: js.Any, columnValue: js.Any, event: js.Any): Unit = js.native
+    def onCellClick(rowIndex: Double, columnIndex: Double, row: js.Any, columnValue: js.Any, event: js.Any): Unit
     
     /** Similar to onCellClick, activated when the cell is double clicked. Fires even if rows are selectable. */
-    def onCellDoubleClick(rowIndex: Double, columnIndex: Double, row: js.Any, columnValue: js.Any, event: js.Any): Unit = js.native
+    def onCellDoubleClick(rowIndex: Double, columnIndex: Double, row: js.Any, columnValue: js.Any, event: js.Any): Unit
     
     /** Notification if the filter value changes */
-    def onFilterValueChange(value: String): Unit = js.native
+    def onFilterValueChange(value: String): Unit
     
-    def onNextPageClick(event: js.Any): Unit = js.native
+    def onNextPageClick(event: js.Any): Unit
     
-    def onPreviousPageClick(event: js.Any): Unit = js.native
+    def onPreviousPageClick(event: js.Any): Unit
     
-    def onRowSelection(selectedRows: js.Any): Unit = js.native
+    def onRowSelection(selectedRows: js.Any): Unit
     
-    def onRowSizeChange(index: Double, value: js.Any): Unit = js.native
+    def onRowSizeChange(index: Double, value: js.Any): Unit
     
-    def onSortOrderChange(key: String, order: String): Unit = js.native
+    def onSortOrderChange(key: String, order: String): Unit
     
-    var page: Double = js.native
+    var page: Double
     
-    var rowSize: Double = js.native
+    var rowSize: Double
     
-    var rowSizeLabel: String = js.native
+    var rowSizeLabel: String
     
-    var rowSizeList: js.Array[Double] = js.native
+    var rowSizeList: js.Array[Double]
     
     /** If the table rows are select-able */
-    var selectable: Boolean = js.native
+    var selectable: Boolean
     
     /** Show check-boxes for selected rows */
-    var showCheckboxes: Boolean = js.native
+    var showCheckboxes: Boolean
     
     /** Shows a footer toolbar */
-    var showFooterToolbar: Boolean = js.native
+    var showFooterToolbar: Boolean
     
     /** Shows a header toolbar */
-    var showHeaderToolbar: Boolean = js.native
+    var showHeaderToolbar: Boolean
     
     /** Show the icon to turn on the filtering feature */
-    var showHeaderToolbarFilterIcon: Boolean = js.native
+    var showHeaderToolbarFilterIcon: Boolean
     
     /** Display a hover in the row under the mouse */
-    var showRowHover: Boolean = js.native
+    var showRowHover: Boolean
     
-    var showRowSizeControls: Boolean = js.native
+    var showRowSizeControls: Boolean
     
     /** To display striped rows in the table */
-    var stripedRows: Boolean = js.native
+    var stripedRows: Boolean
     
     /** Override the pagination display, ie. "1 - 5 of 11" Return any React node or string */
-    def summaryLabelTemplate(start: Double, end: Double, count: Double): js.Any = js.native
+    def summaryLabelTemplate(start: Double, end: Double, count: Double): js.Any
     
     /** React style object for the tbody tag */
-    var tableBodyStyle: CSSProperties = js.native
+    var tableBodyStyle: CSSProperties
     
     /** React style object for the th/td tag */
-    var tableHeaderColumnStyle: CSSProperties = js.native
+    var tableHeaderColumnStyle: CSSProperties
     
     /** React style object for the th tag */
-    var tableHeaderStyle: CSSProperties = js.native
+    var tableHeaderStyle: CSSProperties
     
     /** React style object for the tr/td tag */
-    var tableRowColumnStyle: CSSProperties = js.native
+    var tableRowColumnStyle: CSSProperties
     
     /** React style object for the tr tag */
-    var tableRowStyle: CSSProperties = js.native
+    var tableRowStyle: CSSProperties
     
     /** React style object for the table tag */
-    var tableStyle: CSSProperties = js.native
+    var tableStyle: CSSProperties
     
-    var tableWrapperStyle: CSSProperties = js.native
+    var tableWrapperStyle: CSSProperties
     
     /** Table title */
-    var title: String = js.native
+    var title: String
     
     /** React Style object for the title */
-    var titleStyle: CSSProperties = js.native
+    var titleStyle: CSSProperties
     
-    var toolbarIconRight: js.Any = js.native
+    var toolbarIconRight: js.Any
   }
   object DataTableProps {
     
@@ -248,7 +245,7 @@ object mod {
     def apply(
       columns: js.Array[Column],
       count: Double,
-      data: js.Array[_],
+      data: js.Array[js.Any],
       deselectOnClickaway: Boolean,
       enableSelectAll: Boolean,
       filterHintText: String,
@@ -308,7 +305,7 @@ object mod {
       def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))

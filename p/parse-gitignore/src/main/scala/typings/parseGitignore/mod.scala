@@ -3,7 +3,6 @@ package typings.parseGitignore
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,39 +10,34 @@ object mod {
   /**
     * Parse a .gitignore or .npmignore file into an array of patterns.
     */
-  @JSImport("parse-gitignore", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Array[String] = js.native
-  @JSImport("parse-gitignore", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer): js.Array[String] = js.native
+  @scala.inline
+  def apply(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(input: Buffer): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("parse-gitignore", "format")
+  @JSImport("parse-gitignore", JSImport.Namespace)
   @js.native
-  def format(section: Section): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def format(section: Section): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(section.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Pass the contents of a .gitignore file as a string or buffer
     */
-  @JSImport("parse-gitignore", "parse")
-  @js.native
-  def parse(input: String): State = js.native
-  @JSImport("parse-gitignore", "parse")
-  @js.native
-  def parse(input: String, fn: FormatLine): State = js.native
-  @JSImport("parse-gitignore", "parse")
-  @js.native
-  def parse(input: Buffer): State = js.native
-  @JSImport("parse-gitignore", "parse")
-  @js.native
-  def parse(input: Buffer, fn: FormatLine): State = js.native
+  @scala.inline
+  def parse(input: String): State = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[State]
+  @scala.inline
+  def parse(input: String, fn: FormatLine): State = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def parse(input: Buffer): State = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[State]
+  @scala.inline
+  def parse(input: Buffer, fn: FormatLine): State = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[State]
   
-  @JSImport("parse-gitignore", "stringify")
-  @js.native
-  def stringify(sections: js.Array[Section]): String = js.native
-  @JSImport("parse-gitignore", "stringify")
-  @js.native
-  def stringify(sections: js.Array[Section], fn: js.Function1[/* section */ Section, String]): String = js.native
+  @scala.inline
+  def stringify(sections: js.Array[Section]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(sections.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(sections: js.Array[Section], fn: js.Function1[/* section */ Section, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(sections.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type FormatLine = js.Function3[
     /* line */ String, 
@@ -52,12 +46,11 @@ object mod {
     String
   ]
   
-  @js.native
   trait Section extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    val patterns: js.Array[String] = js.native
+    val patterns: js.Array[String]
   }
   object Section {
     
@@ -81,12 +74,11 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var patterns: js.Array[String] = js.native
+    var patterns: js.Array[String]
     
-    var sections: js.Array[Section] = js.native
+    var sections: js.Array[Section]
   }
   object State {
     

@@ -2,21 +2,19 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCompositeFilter extends StObject {
   
   /**
     * The logic operator of the sub filter.
     */
-  var logicOperator: js.UndefOr[String] = js.native
+  var logicOperator: js.UndefOr[String] = js.undefined
   
   /**
     * Sub filters.
     */
-  var subFilters: js.UndefOr[js.Array[SchemaFilter]] = js.native
+  var subFilters: js.UndefOr[js.Array[SchemaFilter]] = js.undefined
 }
 object SchemaCompositeFilter {
   

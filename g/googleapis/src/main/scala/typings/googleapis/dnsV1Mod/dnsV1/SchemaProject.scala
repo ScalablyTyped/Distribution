@@ -2,23 +2,21 @@ package typings.googleapis.dnsV1Mod.dnsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProject extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#project&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  var quota: js.UndefOr[SchemaQuota] = js.native
+  var quota: js.UndefOr[SchemaQuota] = js.undefined
 }
 object SchemaProject {
   

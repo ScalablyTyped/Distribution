@@ -2,15 +2,13 @@ package typings.iitc.hooksMod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventPortalSelected extends StObject {
   
-  var selectedPortalGuid: String = js.native
+  var selectedPortalGuid: String
   
-  var unselectedPortalGuid: String = js.native
+  var unselectedPortalGuid: String
 }
 object EventPortalSelected {
   

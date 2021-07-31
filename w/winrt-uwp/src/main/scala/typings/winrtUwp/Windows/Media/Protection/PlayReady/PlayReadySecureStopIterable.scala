@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enumerates PlayReady secure stop service requests. */
-@js.native
 trait PlayReadySecureStopIterable extends StObject {
   
   /**
     * Returns an iterator that iterates over the items in the PlayReady secure stop collection.
     * @return The PlayReady secure stop iterator.
     */
-  def first(): IIterator[IPlayReadySecureStopServiceRequest] = js.native
+  def first(): IIterator[IPlayReadySecureStopServiceRequest]
 }
 object PlayReadySecureStopIterable {
   

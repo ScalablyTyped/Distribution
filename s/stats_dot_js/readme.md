@@ -11,8 +11,8 @@ JavaScript Performance Monitor
 | Full name          | stats.js |
 | Keywords           | performance, fps, stats |
 | # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 615033 |
+| # dependents       | 81 |
+| # downloads        | 1029229 |
 | # stars            | 5 |
 
 ## Links

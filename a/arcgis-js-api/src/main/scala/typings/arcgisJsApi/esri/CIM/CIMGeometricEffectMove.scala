@@ -2,33 +2,32 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectMove
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The distance to move the symbol along the X-axis of the feature geometry.
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance to move the symbol along the Y-axis of the feature geometry.
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectMove: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove = js.native
+  var type_CIMGeometricEffectMove: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove
 }
 object CIMGeometricEffectMove {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove): CIMGeometricEffectMove = {
+  def apply(): CIMGeometricEffectMove = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectMove")
     __obj.asInstanceOf[CIMGeometricEffectMove]
   }
   

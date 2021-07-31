@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Adding an object more than once to a selection should not toggle the selection for that object but only select it once
   */
-@js.native
-trait XMultiSelectionSupplier extends XSelectionSupplier {
+trait XMultiSelectionSupplier
+  extends StObject
+     with XSelectionSupplier {
   
   /** returns the number of selected objects of this {@link XMultiSelectionSupplier} . */
-  val SelectionCount: Double = js.native
+  val SelectionCount: Double
   
   /**
     * adds the object or the objects represented by **Selection** to the selection of this {@link XMultiSelectionSupplier} .
@@ -27,19 +27,19 @@ trait XMultiSelectionSupplier extends XSelectionSupplier {
     * @returns `TRUE` /, if **Selection** was added to the current selection. `FALSE` , if **Selection** or parts of **Selection** could not be added to the cur
     * @throws com::sun::star::lang::IllegalArgumentException If **Selection** is not a selectable object for this {@link XMultiSelectionSupplier} . Adding an o
     */
-  def addSelection(Selection: js.Any): Boolean = js.native
+  def addSelection(Selection: js.Any): Boolean
   
   /** clears the selection of this {@link XMultiSelectionSupplier} . */
-  def clearSelection(): Unit = js.native
+  def clearSelection(): Unit
   
   /** @returns a new object to enumerate the selection of this {@link XMultiSelectionSupplier} in reverse order. If the order of the selected objects It returns */
-  def createReverseSelectionEnumeration(): XEnumeration = js.native
+  def createReverseSelectionEnumeration(): XEnumeration
   
   /** @returns a new object to enumerate the selection of this {@link XMultiSelectionSupplier} . It returns NULL if there are no objects in the selection. */
-  def createSelectionEnumeration(): XEnumeration = js.native
+  def createSelectionEnumeration(): XEnumeration
   
   /** returns the number of selected objects of this {@link XMultiSelectionSupplier} . */
-  def getSelectionCount(): Double = js.native
+  def getSelectionCount(): Double
   
   /**
     * remove the object or objects represented by **Selection** from the selection of this {@link XMultiSelectionSupplier} .
@@ -47,7 +47,7 @@ trait XMultiSelectionSupplier extends XSelectionSupplier {
     * @returns `TRUE` /, if **Selection** was added to the current selection. `FALSE` , if **Selection** or parts of **Selection** could not be added to the cur
     * @throws com::sun::star::lang::IllegalArgumentException If **Selection** is not a selectable object for this {@link XMultiSelectionSupplier} . Removing an
     */
-  def removeSelection(Selection: js.Any): Unit = js.native
+  def removeSelection(Selection: js.Any): Unit
 }
 object XMultiSelectionSupplier {
   

@@ -4,15 +4,16 @@ import typings.std.CSSStyleDeclaration
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getComputedStyleMod {
   
-  @JSImport("dom-helpers/cjs/getComputedStyle", JSImport.Default)
+  @JSImport("dom-helpers/cjs/getComputedStyle", JSImport.Namespace)
   @js.native
-  def default(node: HTMLElement): CSSStyleDeclaration = js.native
-  @JSImport("dom-helpers/cjs/getComputedStyle", JSImport.Default)
-  @js.native
-  def default(node: HTMLElement, psuedoElement: String): CSSStyleDeclaration = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(node: HTMLElement): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
+  @scala.inline
+  def default(node: HTMLElement, psuedoElement: String): CSSStyleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], psuedoElement.asInstanceOf[js.Any])).asInstanceOf[CSSStyleDeclaration]
 }

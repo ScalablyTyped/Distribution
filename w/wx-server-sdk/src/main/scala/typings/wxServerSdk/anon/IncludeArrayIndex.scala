@@ -2,17 +2,15 @@ package typings.wxServerSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeArrayIndex extends StObject {
   
-  var includeArrayIndex: js.UndefOr[String] = js.native
+  var includeArrayIndex: js.UndefOr[String] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var preserveNullAndEmptyArrays: js.UndefOr[Boolean] = js.native
+  var preserveNullAndEmptyArrays: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeArrayIndex {
   

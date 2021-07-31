@@ -2,17 +2,15 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIAHIDDEN extends StObject {
   
-  var ARIA_HIDDEN: String = js.native
+  var ARIA_HIDDEN: String
   
-  var ROLE: String = js.native
+  var ROLE: String
   
-  var ROOT_SELECTOR: String = js.native
+  var ROOT_SELECTOR: String
 }
 object ARIAHIDDEN {
   

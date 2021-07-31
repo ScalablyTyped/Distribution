@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesForWebACLResponse extends StObject {
   
   /**
     * The array of Amazon Resource Names (ARNs) of the associated resources.
     */
-  var ResourceArns: js.UndefOr[typings.awsSdk.wafv2Mod.ResourceArns] = js.native
+  var ResourceArns: js.UndefOr[typings.awsSdk.wafv2Mod.ResourceArns] = js.undefined
 }
 object ListResourcesForWebACLResponse {
   

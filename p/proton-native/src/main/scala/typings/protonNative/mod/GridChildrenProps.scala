@@ -4,36 +4,34 @@ import typings.protonNative.anon.H
 import typings.protonNative.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridChildrenProps extends StObject {
   
   /**
     * Whether the component is aligned with the other components in the column/row.
     */
-  var align: js.UndefOr[H] = js.native
+  var align: js.UndefOr[H] = js.undefined
   
   /**
     * What column the component resides in.
     */
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the component can expand in the direction.
     */
-  var expand: js.UndefOr[H] = js.native
+  var expand: js.UndefOr[H] = js.undefined
   
   /**
     * What row the component resides in.
     */
-  var row: js.UndefOr[Double] = js.native
+  var row: js.UndefOr[Double] = js.undefined
   
   /**
     * How many rows/columns the component takes off.
     */
-  var span: js.UndefOr[X] = js.native
+  var span: js.UndefOr[X] = js.undefined
 }
 object GridChildrenProps {
   

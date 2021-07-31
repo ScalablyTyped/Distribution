@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildSettings extends StObject {
   
   /**
     * The number of days to keep records of deleted builds.
     */
-  var daysToKeepDeletedBuildsBeforeDestroy: Double = js.native
+  var daysToKeepDeletedBuildsBeforeDestroy: Double
   
   /**
     * The default retention policy.
     */
-  var defaultRetentionPolicy: RetentionPolicy = js.native
+  var defaultRetentionPolicy: RetentionPolicy
   
   /**
     * The maximum retention policy.
     */
-  var maximumRetentionPolicy: RetentionPolicy = js.native
+  var maximumRetentionPolicy: RetentionPolicy
 }
 object BuildSettings {
   

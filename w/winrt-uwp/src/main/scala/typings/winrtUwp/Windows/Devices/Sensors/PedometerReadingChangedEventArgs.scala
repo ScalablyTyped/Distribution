@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the pedometer reading–changed event. */
-@js.native
 trait PedometerReadingChangedEventArgs extends StObject {
   
   /** Gets the most recent pedometer reading. */
-  var reading: PedometerReading = js.native
+  var reading: PedometerReading
 }
 object PedometerReadingChangedEventArgs {
   

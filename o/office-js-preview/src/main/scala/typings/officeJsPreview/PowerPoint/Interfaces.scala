@@ -2,7 +2,6 @@ package typings.officeJsPreview.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Interfaces {
@@ -10,20 +9,19 @@ object Interfaces {
   /**
     * Provides ways to load properties of only a subset of members of a collection.
     */
-  @js.native
   trait CollectionLoadOptions extends StObject {
     
     /**
       * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
       */
     @JSName("$skip")
-    var $skip: js.UndefOr[Double] = js.native
+    var $skip: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the number of items in the queried collection to be included in the result.
       */
     @JSName("$top")
-    var $top: js.UndefOr[Double] = js.native
+    var $top: js.UndefOr[Double] = js.undefined
   }
   object CollectionLoadOptions {
     
@@ -51,10 +49,9 @@ object Interfaces {
   }
   
   /** An interface describing the data returned by calling `presentation.toJSON()`. */
-  @js.native
   trait PresentationData extends StObject {
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object PresentationData {
     
@@ -78,16 +75,15 @@ object Interfaces {
   /**
     * [Api set: PowerPointApi 1.0]
     */
-  @js.native
   trait PresentationLoadOptions extends StObject {
     
     /**
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
       */
     @JSName("$all")
-    var $all: js.UndefOr[Boolean] = js.native
+    var $all: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[Boolean] = js.native
+    var title: js.UndefOr[Boolean] = js.undefined
   }
   object PresentationLoadOptions {
     
@@ -115,10 +111,9 @@ object Interfaces {
   }
   
   /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
-  @js.native
   trait SlideCollectionData extends StObject {
     
-    var items: js.UndefOr[js.Array[SlideData]] = js.native
+    var items: js.UndefOr[js.Array[SlideData]] = js.undefined
   }
   object SlideCollectionData {
     
@@ -149,14 +144,13 @@ object Interfaces {
     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  @js.native
   trait SlideCollectionLoadOptions extends StObject {
     
     /**
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
       */
     @JSName("$all")
-    var $all: js.UndefOr[Boolean] = js.native
+    var $all: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -165,7 +159,7 @@ object Interfaces {
       * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
       * @beta
       */
-    var id: js.UndefOr[Boolean] = js.native
+    var id: js.UndefOr[Boolean] = js.undefined
   }
   object SlideCollectionLoadOptions {
     
@@ -193,10 +187,9 @@ object Interfaces {
   }
   
   /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
-  @js.native
   trait SlideCollectionUpdateData extends StObject {
     
-    var items: js.UndefOr[js.Array[SlideData]] = js.native
+    var items: js.UndefOr[js.Array[SlideData]] = js.undefined
   }
   object SlideCollectionUpdateData {
     
@@ -221,7 +214,6 @@ object Interfaces {
   }
   
   /** An interface describing the data returned by calling `slide.toJSON()`. */
-  @js.native
   trait SlideData extends StObject {
     
     /**
@@ -231,7 +223,7 @@ object Interfaces {
       * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
       * @beta
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object SlideData {
     
@@ -259,14 +251,13 @@ object Interfaces {
     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  @js.native
   trait SlideLoadOptions extends StObject {
     
     /**
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
       */
     @JSName("$all")
-    var $all: js.UndefOr[Boolean] = js.native
+    var $all: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -275,7 +266,7 @@ object Interfaces {
       * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
       * @beta
       */
-    var id: js.UndefOr[Boolean] = js.native
+    var id: js.UndefOr[Boolean] = js.undefined
   }
   object SlideLoadOptions {
     

@@ -3,19 +3,17 @@ package typings.tern.anon
 import typings.tern.ternMod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var end: Double | Position = js.native
+  var end: Double | Position
   
-  var file: String = js.native
+  var file: String
   
-  var start: Double | Position = js.native
+  var start: Double | Position
   
-  var text: String = js.native
+  var text: String
 }
 object File {
   

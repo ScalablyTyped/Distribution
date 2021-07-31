@@ -3,13 +3,11 @@ package typings.octokitPluginPaginateRest.anon
 import typings.octokitTypes.anon.Defaultbranch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `21` extends StObject {
   
-  var data: js.Array[Defaultbranch] = js.native
+  var data: js.Array[Defaultbranch]
 }
 object `21` {
   

@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Devices.Sms.ISmsMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a network operator notification. */
-@js.native
 trait NetworkOperatorNotificationEventDetails extends StObject {
   
   /**
@@ -15,25 +13,25 @@ trait NetworkOperatorNotificationEventDetails extends StObject {
     * @param allow true if tethering is permitted; otherwise, false.
     * @param entitlementFailureReason The reason tethering is not permitted.
     */
-  def authorizeTethering(allow: Boolean, entitlementFailureReason: String): Unit = js.native
+  def authorizeTethering(allow: Boolean, entitlementFailureReason: String): Unit
   
   /** Gets the data-coding scheme (DCS) of the received message. */
-  var encodingType: Double = js.native
+  var encodingType: Double
   
   /** Gets the message for the network operator notification. */
-  var message: String = js.native
+  var message: String
   
   /** Gets a unique identifier for the mobile broadband account that received the notification. */
-  var networkAccountId: String = js.native
+  var networkAccountId: String
   
   /** Gets the type of the network notification. */
-  var notificationType: NetworkOperatorEventMessageType = js.native
+  var notificationType: NetworkOperatorEventMessageType
   
   /** Gets the identifier of the provisioned rule that matched and triggered the notification. */
-  var ruleId: String = js.native
+  var ruleId: String
   
   /** Gets an SMS message for the mobile broadband account that received the notification. */
-  var smsMessage: ISmsMessage = js.native
+  var smsMessage: ISmsMessage
 }
 object NetworkOperatorNotificationEventDetails {
   

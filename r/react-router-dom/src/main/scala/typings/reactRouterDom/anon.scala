@@ -9,24 +9,22 @@ import typings.react.mod.ReactNode
 import typings.reactRouter.mod.StaticRouterContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<react-router.react-router.MemoryRouterProps> */
-  @js.native
   trait ReadonlyMemoryRouterProps extends StObject {
     
     val getUserConfirmation: js.UndefOr[
         js.Function2[/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    val initialEntries: js.UndefOr[js.Array[LocationDescriptor[LocationState]]] = js.native
+    val initialEntries: js.UndefOr[js.Array[LocationDescriptor[LocationState]]] = js.undefined
     
-    val initialIndex: js.UndefOr[Double] = js.native
+    val initialIndex: js.UndefOr[Double] = js.undefined
     
-    val keyLength: js.UndefOr[Double] = js.native
+    val keyLength: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyMemoryRouterProps {
     
@@ -69,12 +67,11 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router.react-router.PromptProps> */
-  @js.native
   trait ReadonlyPromptProps extends StObject {
     
-    val message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean]) = js.native
+    val message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
     
-    val when: js.UndefOr[Boolean] = js.native
+    val when: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlyPromptProps {
     
@@ -106,20 +103,19 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router.react-router.RedirectProps> */
-  @js.native
   trait ReadonlyRedirectProps extends StObject {
     
-    val exact: js.UndefOr[Boolean] = js.native
+    val exact: js.UndefOr[Boolean] = js.undefined
     
-    val from: js.UndefOr[String] = js.native
+    val from: js.UndefOr[String] = js.undefined
     
-    val path: js.UndefOr[String] = js.native
+    val path: js.UndefOr[String] = js.undefined
     
-    val push: js.UndefOr[Boolean] = js.native
+    val push: js.UndefOr[Boolean] = js.undefined
     
-    val strict: js.UndefOr[Boolean] = js.native
+    val strict: js.UndefOr[Boolean] = js.undefined
     
-    val to: LocationDescriptor[LocationState] = js.native
+    val to: LocationDescriptor[LocationState]
   }
   object ReadonlyRedirectProps {
     
@@ -168,10 +164,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router.react-router.RouterProps> */
-  @js.native
   trait ReadonlyRouterProps extends StObject {
     
-    val history: History[LocationState] = js.native
+    val history: History[LocationState]
   }
   object ReadonlyRouterProps {
     
@@ -190,14 +185,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router.react-router.StaticRouterProps> */
-  @js.native
   trait ReadonlyStaticRouterProps extends StObject {
     
-    val basename: js.UndefOr[String] = js.native
+    val basename: js.UndefOr[String] = js.undefined
     
-    val context: js.UndefOr[StaticRouterContext] = js.native
+    val context: js.UndefOr[StaticRouterContext] = js.undefined
     
-    val location: js.UndefOr[String | js.Object] = js.native
+    val location: js.UndefOr[String | js.Object] = js.undefined
   }
   object ReadonlyStaticRouterProps {
     
@@ -231,12 +225,11 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router.react-router.SwitchProps> */
-  @js.native
   trait ReadonlySwitchProps extends StObject {
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val location: js.UndefOr[Location[LocationState]] = js.native
+    val location: js.UndefOr[Location[LocationState]] = js.undefined
   }
   object ReadonlySwitchProps {
     

@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object that defines a Microsoft SharePoint site collection to crawl with this configuration. */
-@js.native
 trait SourceOptionsSiteColl extends StObject {
   
   /** The maximum number of documents to crawl for this site collection. By default, all documents in the site collection are crawled. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** The Microsoft SharePoint Online site collection path to crawl. The path must be be relative to the **organization_url** that was specified in the credentials associated with this source configuration. */
-  var site_collection_path: String = js.native
+  var site_collection_path: String
 }
 object SourceOptionsSiteColl {
   

@@ -2,16 +2,14 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<baseui.baseui/phone-input.State> */
-@js.native
 trait ReadonlyState extends StObject {
   
-  val country: ReadonlyCountry = js.native
+  val country: ReadonlyCountry
   
-  val text: js.UndefOr[String] = js.native
+  val text: js.UndefOr[String] = js.undefined
 }
 object ReadonlyState {
   

@@ -2,17 +2,18 @@ package typings.textr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): typings.textr.mod.textr = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.textr.mod.textr]
+  @scala.inline
+  def apply(defaults: TextrArgs): typings.textr.mod.textr = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[typings.textr.mod.textr]
+  
   @JSImport("textr", JSImport.Namespace)
   @js.native
-  def apply(): typings.textr.mod.textr = js.native
-  @JSImport("textr", JSImport.Namespace)
-  @js.native
-  def apply(defaults: TextrArgs): typings.textr.mod.textr = js.native
+  val ^ : js.Any = js.native
   
   type TextrArgs = String | js.Object
   

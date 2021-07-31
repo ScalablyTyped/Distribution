@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestrictionChange extends StObject {
   
   /** The feature which had a change in restriction policy. */
-  var feature: js.UndefOr[String] = js.native
+  var feature: js.UndefOr[String] = js.undefined
   
   /** The restriction in place after the change. */
-  var newRestriction: js.UndefOr[String] = js.native
+  var newRestriction: js.UndefOr[String] = js.undefined
 }
 object RestrictionChange {
   

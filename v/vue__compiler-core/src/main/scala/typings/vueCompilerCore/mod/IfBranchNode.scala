@@ -3,30 +3,29 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfBranchNode
-  extends TemplateChildNode
+  extends StObject
      with Node2
-     with ParentNode2 {
+     with ParentNode2
+     with TemplateChildNode {
   
-  var children: js.Array[TemplateChildNode] = js.native
+  var children: js.Array[TemplateChildNode]
   
-  var condition: js.UndefOr[ExpressionNode] = js.native
+  var condition: js.UndefOr[ExpressionNode] = js.undefined
   
   @JSName("type")
-  var type_IfBranchNode: `10` = js.native
+  var type_IfBranchNode: `10`
   
-  var userKey: js.UndefOr[AttributeNode | DirectiveNode] = js.native
+  var userKey: js.UndefOr[AttributeNode | DirectiveNode] = js.undefined
 }
 object IfBranchNode {
   
   @scala.inline
-  def apply(children: js.Array[TemplateChildNode], loc: SourceLocation, `type`: `10`): IfBranchNode = {
+  def apply(children: js.Array[TemplateChildNode], loc: SourceLocation): IfBranchNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(10)
     __obj.asInstanceOf[IfBranchNode]
   }
   

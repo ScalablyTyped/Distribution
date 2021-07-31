@@ -2,16 +2,14 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasCacheKey extends StObject {
   
   /**
     * An object for manipulating this requests cache key. Only present during `onClientRequest()`.
     */
-  val cacheKey: CacheKey = js.native
+  val cacheKey: CacheKey
 }
 object HasCacheKey {
   

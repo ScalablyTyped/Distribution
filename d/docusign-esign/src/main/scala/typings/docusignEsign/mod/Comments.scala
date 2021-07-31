@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comments extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait Comments extends StObject {
     *
     * Example: `93be49ab-afa0-4adf-933c-f752070d71ec`
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var hmac: js.UndefOr[String] = js.native
+  var hmac: js.UndefOr[String] = js.undefined
   
   /**
     * A unique ID for the Salesforce object.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * An array of userIds that are mentioned directly in the body of a comment.
     */
-  var mentions: js.UndefOr[js.Array[String]] = js.native
+  var mentions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates if the comment has been read by the target recipient of the comment.
     */
-  var read: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[Boolean] = js.undefined
   
-  var sentByEmail: js.UndefOr[String] = js.native
+  var sentByEmail: js.UndefOr[String] = js.undefined
   
-  var sentByFullName: js.UndefOr[String] = js.native
+  var sentByFullName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var sentByImageId: js.UndefOr[String] = js.native
+  var sentByImageId: js.UndefOr[String] = js.undefined
   
-  var sentByInitials: js.UndefOr[String] = js.native
+  var sentByInitials: js.UndefOr[String] = js.undefined
   
-  var sentByRecipientId: js.UndefOr[String] = js.native
+  var sentByRecipientId: js.UndefOr[String] = js.undefined
   
-  var sentByUserId: js.UndefOr[String] = js.native
+  var sentByUserId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The ID of the [signing group](https://support.docusign.com/en/guides/ndse-user-guide-signing-groups).
@@ -58,42 +56,42 @@ trait Comments extends StObject {
     * However, you could create a second signing group for the non-signer recipients and change the default action of Needs to Sign to a
     * different value, such as Receives a Copy.
     */
-  var signingGroupId: js.UndefOr[String] = js.native
+  var signingGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the signing group.
     *
     * Maximum Length: 100 characters.
     */
-  var signingGroupName: js.UndefOr[String] = js.native
+  var signingGroupName: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the tab.
     */
-  var tabId: js.UndefOr[String] = js.native
+  var tabId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the text that is shown in the dropdown list.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the comment thread.
     */
-  var threadId: js.UndefOr[String] = js.native
+  var threadId: js.UndefOr[String] = js.undefined
   
   /**
     * The userId of the user who created the thread.
     */
-  var threadOriginatorId: js.UndefOr[String] = js.native
+  var threadOriginatorId: js.UndefOr[String] = js.undefined
   
-  var timeStampFormatted: js.UndefOr[String] = js.native
+  var timeStampFormatted: js.UndefOr[String] = js.undefined
   
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
-  var visibleTo: js.UndefOr[js.Array[String]] = js.native
+  var visibleTo: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Comments {
   

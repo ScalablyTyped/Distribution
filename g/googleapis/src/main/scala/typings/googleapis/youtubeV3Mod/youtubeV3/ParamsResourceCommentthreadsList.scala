@@ -6,50 +6,50 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCommentthreadsList extends StandardParameters {
+trait ParamsResourceCommentthreadsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * The allThreadsRelatedToChannelId parameter instructs the API to return
     * all comment threads associated with the specified channel. The response
     * can include comments about the channel or about the channel's videos.
     */
-  var allThreadsRelatedToChannelId: js.UndefOr[String] = js.native
+  var allThreadsRelatedToChannelId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The channelId parameter instructs the API to return comment threads
     * containing comments about the specified channel. (The response will not
     * include comments left on videos that the channel uploaded.)
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of comment thread IDs
     * for the resources that should be retrieved.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
     * should be returned in the result set.  Note: This parameter is not
     * supported for use in conjunction with the id parameter.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Set this parameter to limit the returned comment threads to a particular
     * moderation state.  Note: This parameter is not supported for use in
     * conjunction with the id parameter.
     */
-  var moderationStatus: js.UndefOr[String] = js.native
+  var moderationStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The order parameter specifies the order in which the API response should
@@ -58,7 +58,7 @@ trait ParamsResourceCommentthreadsList extends StandardParameters {
     * threads are ordered by relevance.Note: This parameter is not supported
     * for use in conjunction with the id parameter.
     */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
@@ -66,13 +66,13 @@ trait ParamsResourceCommentthreadsList extends StandardParameters {
     * identifies the next page of the result that can be retrieved.  Note: This
     * parameter is not supported for use in conjunction with the id parameter.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
     * commentThread resource properties that the API response will include.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * The searchTerms parameter instructs the API to limit the API response to
@@ -80,19 +80,19 @@ trait ParamsResourceCommentthreadsList extends StandardParameters {
     * This parameter is not supported for use in conjunction with the id
     * parameter.
     */
-  var searchTerms: js.UndefOr[String] = js.native
+  var searchTerms: js.UndefOr[String] = js.undefined
   
   /**
     * Set this parameter's value to html or plainText to instruct the API to
     * return the comments left by users in html formatted or in plain text.
     */
-  var textFormat: js.UndefOr[String] = js.native
+  var textFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The videoId parameter instructs the API to return comment threads
     * associated with the specified video ID.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCommentthreadsList {
   

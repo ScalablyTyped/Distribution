@@ -8,14 +8,12 @@ import typings.baseui.baseuiStrings.topLeft
 import typings.baseui.baseuiStrings.topRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placement extends StObject {
   
   @JSName("$placement")
-  var $placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top = js.native
+  var $placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top
 }
 object Placement {
   

@@ -7,17 +7,15 @@ import typings.jointjs.mod.dia.Paper.ViewportCallback
 import typings.jointjs.mod.mvc.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Progress extends StObject {
   
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
-  var progress: js.UndefOr[ProgressCallback] = js.native
+  var progress: js.UndefOr[ProgressCallback] = js.undefined
   
-  var viewport: js.UndefOr[ViewportCallback] = js.native
+  var viewport: js.UndefOr[ViewportCallback] = js.undefined
 }
 object Progress {
   

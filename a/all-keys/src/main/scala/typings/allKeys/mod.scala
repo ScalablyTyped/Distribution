@@ -5,7 +5,6 @@ import typings.std.Set
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,12 +42,10 @@ object mod {
   	*\/
   	```
   	*/
-  @JSImport("all-keys", JSImport.Namespace)
-  @js.native
-  def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]] = js.native
-  @JSImport("all-keys", JSImport.Namespace)
-  @js.native
-  def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType, options: Options): Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]] = js.native
+  @scala.inline
+  def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]]]
+  @scala.inline
+  def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType, options: Options): Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Set[LiteralUnion[/* keyof ObjectType */ String, String | Double | js.Symbol]]]
   
   @JSImport("all-keys", JSImport.Namespace)
   @js.native
@@ -66,20 +63,19 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof allKeys */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Include `Object.prototype` properties like `isPrototypeOf`.
     		@default true
     		*/
-    val includeObjectPrototype: js.UndefOr[Boolean] = js.native
+    val includeObjectPrototype: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Include [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) keys.
     		@default true
     		*/
-    val includeSymbols: js.UndefOr[Boolean] = js.native
+    val includeSymbols: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

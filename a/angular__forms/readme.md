@@ -10,9 +10,9 @@ Angular - directives and services for creating forms
 | ------------------ | :-------------: |
 | Full name          | @angular/forms |
 | Keywords           | - |
-| # releases         | 209 |
-| # dependents       | 7155 |
-| # downloads        | 73530808 |
+| # releases         | 211 |
+| # dependents       | 7338 |
+| # downloads        | 78159739 |
 | # stars            | 11 |
 
 ## Links

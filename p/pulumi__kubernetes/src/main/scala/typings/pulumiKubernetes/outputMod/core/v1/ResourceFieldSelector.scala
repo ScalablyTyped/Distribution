@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ResourceFieldSelector represents container resources (cpu, memory) and their output format
   */
-@js.native
 trait ResourceFieldSelector extends StObject {
   
   /**
     * Container name: required for volumes, optional for env vars
     */
-  var containerName: String = js.native
+  var containerName: String
   
   /**
     * Specifies the output format of the exposed resources, defaults to "1"
     */
-  var divisor: String = js.native
+  var divisor: String
   
   /**
     * Required: resource to select
     */
-  var resource: String = js.native
+  var resource: String
 }
 object ResourceFieldSelector {
   

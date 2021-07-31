@@ -10,23 +10,21 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FusedDepthwiseConv2DAttrs extends StObject {
   
-  var activation: Activation = js.native
+  var activation: Activation
   
-  var dataFormat: NHWC | NCHW = js.native
+  var dataFormat: NHWC | NCHW
   
-  var dilations: (js.Tuple2[Double, Double]) | Double = js.native
+  var dilations: (js.Tuple2[Double, Double]) | Double
   
-  var dimRoundingMode: floor | round | ceil = js.native
+  var dimRoundingMode: floor | round | ceil
   
-  var pad: valid_ | same_ | Double = js.native
+  var pad: valid_ | same_ | Double
   
-  var strides: (js.Tuple2[Double, Double]) | Double = js.native
+  var strides: (js.Tuple2[Double, Double]) | Double
 }
 object FusedDepthwiseConv2DAttrs {
   

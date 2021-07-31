@@ -2,36 +2,34 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Room extends StObject {
   
   /**
     * The description of a room.
     */
-  var Description: js.UndefOr[RoomDescription] = js.native
+  var Description: js.UndefOr[RoomDescription] = js.undefined
   
   /**
     * The profile ARN of a room.
     */
-  var ProfileArn: js.UndefOr[Arn] = js.native
+  var ProfileArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The provider calendar ARN of a room.
     */
-  var ProviderCalendarId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProviderCalendarId] = js.native
+  var ProviderCalendarId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProviderCalendarId] = js.undefined
   
   /**
     * The ARN of a room.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of a room.
     */
-  var RoomName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomName] = js.native
+  var RoomName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.RoomName] = js.undefined
 }
 object Room {
   

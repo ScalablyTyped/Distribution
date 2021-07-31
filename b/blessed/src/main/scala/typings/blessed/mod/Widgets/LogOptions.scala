@@ -2,21 +2,21 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LogOptions extends ScrollableTextOptions {
+trait LogOptions
+  extends StObject
+     with ScrollableTextOptions {
   
   /**
     * scroll to bottom on input even if the user has scrolled up. default: false.
     */
-  var scrollOnInput: js.UndefOr[Boolean] = js.native
+  var scrollOnInput: js.UndefOr[Boolean] = js.undefined
   
   /**
     * amount of scrollback allowed. default: Infinity.
     */
-  var scrollback: js.UndefOr[Double] = js.native
+  var scrollback: js.UndefOr[Double] = js.undefined
 }
 object LogOptions {
   

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientPreviewClickEventArgs")
 @js.native
 class ASPxClientPreviewClickEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientPreviewClickEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientPreviewClickEventArgs {
   /**
     * Initializes a new instance of the ASPxClientPreviewClickEventArgs class with the specified settings.
     * @param pageIndex An integer value that specifies the zero-based index of the page that has been clicked. This value is assigned to the ASPxClientPreviewClickEventArgs.PageIndex property.

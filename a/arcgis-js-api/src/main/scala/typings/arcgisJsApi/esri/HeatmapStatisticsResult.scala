@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatmapStatisticsResult extends Object {
+trait HeatmapStatisticsResult
+  extends StObject
+     with Object {
   
   /**
     * The average of all pixel intensity values for the given view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
-  var avg: Double = js.native
+  var avg: Double
   
   /**
     * The number of features evaluated in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum pixel intensity value of all pixels in the given view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum pixel intensity value of all pixels in the given view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The standard deviation of the pixel intensity values of all pixels in the given view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
-  var stddev: Double = js.native
+  var stddev: Double
   
   /**
     * The summary statistics for all values returned from the field, if provided.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
     */
-  var summaryStatistics: js.UndefOr[SummaryStatisticsResult] = js.native
+  var summaryStatistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
 }
 object HeatmapStatisticsResult {
   

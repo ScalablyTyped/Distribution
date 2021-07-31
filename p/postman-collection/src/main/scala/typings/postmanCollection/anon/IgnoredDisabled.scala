@@ -2,15 +2,13 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoredDisabled extends StObject {
   
-  var encode: js.UndefOr[Boolean] = js.native
+  var encode: js.UndefOr[Boolean] = js.undefined
   
-  var ignoredDisabled: js.UndefOr[Boolean] = js.native
+  var ignoredDisabled: js.UndefOr[Boolean] = js.undefined
 }
 object IgnoredDisabled {
   

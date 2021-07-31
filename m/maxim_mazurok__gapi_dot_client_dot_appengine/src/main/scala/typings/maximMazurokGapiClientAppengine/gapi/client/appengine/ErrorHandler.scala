@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorHandler extends StObject {
   
   /** Error condition this handler applies to. */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
   /** MIME type of file. Defaults to text/html. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /** Static file content to be served for this error. */
-  var staticFile: js.UndefOr[String] = js.native
+  var staticFile: js.UndefOr[String] = js.undefined
 }
 object ErrorHandler {
   

@@ -3,23 +3,21 @@ package typings.typeorm
 import typings.typeorm.sqlInMemoryMod.SqlInMemory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaBuilderMod {
   
-  @js.native
   trait SchemaBuilder extends StObject {
     
     /**
       * Creates complete schemas for the given entity metadatas.
       */
-    def build(): js.Promise[Unit] = js.native
+    def build(): js.Promise[Unit]
     
     /**
       * Returns queries to be executed by schema builder.
       */
-    def log(): js.Promise[SqlInMemory] = js.native
+    def log(): js.Promise[SqlInMemory]
   }
   object SchemaBuilder {
     

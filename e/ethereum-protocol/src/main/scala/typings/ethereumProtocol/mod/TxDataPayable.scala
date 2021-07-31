@@ -3,14 +3,14 @@ package typings.ethereumProtocol.mod
 import typings.bignumberJs.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TxDataPayable extends TxData {
+trait TxDataPayable
+  extends StObject
+     with TxData {
   
   @JSName("value")
-  var value_TxDataPayable: js.UndefOr[default] = js.native
+  var value_TxDataPayable: js.UndefOr[default] = js.undefined
 }
 object TxDataPayable {
   

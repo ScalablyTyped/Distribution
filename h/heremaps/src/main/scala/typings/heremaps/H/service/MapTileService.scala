@@ -7,7 +7,6 @@ import typings.heremaps.H.service.MapTileService.Info
 import typings.heremaps.H.util.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait MapTileService
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with IConfigurable {
   
   /**
@@ -36,36 +36,7 @@ trait MapTileService
     scheme: String,
     tileSize: Double,
     format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
-    opt_opacity: js.UndefOr[scala.Nothing],
-    opt_dark: js.UndefOr[scala.Nothing],
-    opt_options: TileProviderOptions
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
-    opt_opacity: js.UndefOr[scala.Nothing],
-    opt_dark: Boolean
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
-    opt_opacity: js.UndefOr[scala.Nothing],
-    opt_dark: Boolean,
-    opt_options: TileProviderOptions
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_additionalParameters: Unit,
     opt_opacity: Double
   ): TileLayer = js.native
   def createTileLayer(
@@ -73,17 +44,7 @@ trait MapTileService
     scheme: String,
     tileSize: Double,
     format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
-    opt_opacity: Double,
-    opt_dark: js.UndefOr[scala.Nothing],
-    opt_options: TileProviderOptions
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_additionalParameters: Unit,
     opt_opacity: Double,
     opt_dark: Boolean
   ): TileLayer = js.native
@@ -92,9 +53,48 @@ trait MapTileService
     scheme: String,
     tileSize: Double,
     format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_additionalParameters: Unit,
     opt_opacity: Double,
     opt_dark: Boolean,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: Unit,
+    opt_opacity: Double,
+    opt_dark: Unit,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: Unit,
+    opt_opacity: Unit,
+    opt_dark: Boolean
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: Unit,
+    opt_opacity: Unit,
+    opt_dark: Boolean,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: Unit,
+    opt_opacity: Unit,
+    opt_dark: Unit,
     opt_options: TileProviderOptions
   ): TileLayer = js.native
   def createTileLayer(
@@ -110,35 +110,6 @@ trait MapTileService
     tileSize: Double,
     format: String,
     opt_additionalParameters: ServiceParameters,
-    opt_opacity: js.UndefOr[scala.Nothing],
-    opt_dark: js.UndefOr[scala.Nothing],
-    opt_options: TileProviderOptions
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: ServiceParameters,
-    opt_opacity: js.UndefOr[scala.Nothing],
-    opt_dark: Boolean
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: ServiceParameters,
-    opt_opacity: js.UndefOr[scala.Nothing],
-    opt_dark: Boolean,
-    opt_options: TileProviderOptions
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: ServiceParameters,
     opt_opacity: Double
   ): TileLayer = js.native
   def createTileLayer(
@@ -148,16 +119,6 @@ trait MapTileService
     format: String,
     opt_additionalParameters: ServiceParameters,
     opt_opacity: Double,
-    opt_dark: js.UndefOr[scala.Nothing],
-    opt_options: TileProviderOptions
-  ): TileLayer = js.native
-  def createTileLayer(
-    tileType: String,
-    scheme: String,
-    tileSize: Double,
-    format: String,
-    opt_additionalParameters: ServiceParameters,
-    opt_opacity: Double,
     opt_dark: Boolean
   ): TileLayer = js.native
   def createTileLayer(
@@ -168,6 +129,45 @@ trait MapTileService
     opt_additionalParameters: ServiceParameters,
     opt_opacity: Double,
     opt_dark: Boolean,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
+    opt_opacity: Double,
+    opt_dark: Unit,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
+    opt_opacity: Unit,
+    opt_dark: Boolean
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
+    opt_opacity: Unit,
+    opt_dark: Boolean,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
+    opt_opacity: Unit,
+    opt_dark: Unit,
     opt_options: TileProviderOptions
   ): TileLayer = js.native
   
@@ -187,7 +187,7 @@ trait MapTileService
     scheme: String,
     tileSize: Double,
     format: String,
-    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_additionalParameters: Unit,
     opt_options: TileProviderOptions
   ): ImageTileProvider = js.native
   def createTileProvider(
@@ -234,20 +234,19 @@ object MapTileService {
     * @property resolutions {Object<string, Object>} -
     * @property languages {Object<string, Object>} -
     */
-  @js.native
   trait Info extends StObject {
     
-    var formats: StringDictionary[js.Any] = js.native
+    var formats: StringDictionary[js.Any]
     
-    var languages: StringDictionary[js.Any] = js.native
+    var languages: StringDictionary[js.Any]
     
-    var maps: StringDictionary[js.Any] = js.native
+    var maps: StringDictionary[js.Any]
     
-    var resolutions: StringDictionary[js.Any] = js.native
+    var resolutions: StringDictionary[js.Any]
     
-    var schemes: StringDictionary[js.Any] = js.native
+    var schemes: StringDictionary[js.Any]
     
-    var tiletypes: StringDictionary[js.Any] = js.native
+    var tiletypes: StringDictionary[js.Any]
   }
   object Info {
     
@@ -293,16 +292,15 @@ object MapTileService {
     * @property subDomain {string=} - the sub-domain of the map tile service relative to the platform's base URL, default is 'maps'
     * @property path {string=} - the path of the map tile service, default is 'maptile/2.1'
     */
-  @js.native
   trait Options extends StObject {
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var subDomain: js.UndefOr[String] = js.native
+    var subDomain: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Options {
     

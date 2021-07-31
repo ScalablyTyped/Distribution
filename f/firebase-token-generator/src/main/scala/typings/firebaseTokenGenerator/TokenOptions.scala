@@ -2,23 +2,21 @@ package typings.firebaseTokenGenerator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenOptions extends StObject {
   
-  var admin: js.UndefOr[Boolean] = js.native
+  var admin: js.UndefOr[Boolean] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var expires: js.UndefOr[Double] = js.native
+  var expires: js.UndefOr[Double] = js.undefined
   
-  var iat: js.UndefOr[Double] = js.native
+  var iat: js.UndefOr[Double] = js.undefined
   
-  var notBefore: js.UndefOr[Double] = js.native
+  var notBefore: js.UndefOr[Double] = js.undefined
   
-  var simulate: js.UndefOr[Boolean] = js.native
+  var simulate: js.UndefOr[Boolean] = js.undefined
 }
 object TokenOptions {
   

@@ -3,14 +3,14 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides strings that identify the properties of an appointment. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentProperties")
 @js.native
 abstract class AppointmentProperties ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentProperties
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentProperties
 object AppointmentProperties {
   
   @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentProperties")

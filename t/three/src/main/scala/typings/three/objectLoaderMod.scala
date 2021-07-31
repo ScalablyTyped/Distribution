@@ -14,7 +14,6 @@ import typings.three.object3DMod.Object3D
 import typings.three.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectLoaderMod {
@@ -25,39 +24,35 @@ object objectLoaderMod {
     def this(manager: LoadingManager) = this()
     
     def load(url: String): Unit = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
-    ): Unit = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): Unit = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
-    ): Unit = js.native
     def load(url: String, onLoad: js.Function1[/* object */ Object3D, Unit]): Unit = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* object */ Object3D, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
-    ): Unit = js.native
-    def load(
-      url: String,
-      onLoad: js.Function1[/* object */ Object3D, Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* object */ Object3D, Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* object */ Object3D, Unit],
+      onProgress: Unit,
+      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+    ): Unit = js.native
+    def load(url: String, onLoad: Unit, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): Unit = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: Unit,
       onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
     ): Unit = js.native
     
@@ -67,14 +62,14 @@ object objectLoaderMod {
     // Array of Classes that inherits from Matrial.
     def parseAnimations(json: js.Any): js.Array[AnimationClip] = js.native
     
-    def parseGeometries(json: js.Any): js.Array[_] = js.native
+    def parseGeometries(json: js.Any): js.Array[js.Any] = js.native
     
     def parseImages(json: js.Any, onLoad: js.Function0[Unit]): StringDictionary[HTMLImageElement] = js.native
     
     // Array of BufferGeometry or Geometry or Geometry2.
     def parseMaterials(json: js.Any, textures: js.Array[Texture]): js.Array[Material] = js.native
     
-    def parseObject[T /* <: Object3D */](data: js.Any, geometries: js.Array[_], materials: js.Array[Material]): T = js.native
+    def parseObject[T /* <: Object3D */](data: js.Any, geometries: js.Array[js.Any], materials: js.Array[Material]): T = js.native
     
     def parseTextures(json: js.Any, images: js.Any): js.Array[Texture] = js.native
   }

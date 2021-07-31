@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gcmChannelMod {
@@ -43,6 +42,10 @@ object gcmChannelMod {
   /* static members */
   object GcmChannel {
     
+    @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GcmChannel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object gcmChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GcmChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GcmChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GcmChannelState): GcmChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GcmChannelState, opts: CustomResourceOptions): GcmChannel = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GcmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GcmChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GcmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GcmChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GcmChannelState): GcmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GcmChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GcmChannelState, opts: CustomResourceOptions): GcmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GcmChannel]
     
     /**
       * Returns true if the given object is an instance of GcmChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/gcmChannel.GcmChannel */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/gcmChannel.GcmChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/gcmChannel.GcmChannel */ Boolean]
   }
   
-  @js.native
   trait GcmChannelArgs extends StObject {
     
     /**
       * Platform credential API key from Google.
       */
-    val apiKey: Input[String] = js.native
+    val apiKey: Input[String]
     
     /**
       * The application ID.
       */
-    val applicationId: Input[String] = js.native
+    val applicationId: Input[String]
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object GcmChannelArgs {
     
@@ -117,23 +114,22 @@ object gcmChannelMod {
     }
   }
   
-  @js.native
   trait GcmChannelState extends StObject {
     
     /**
       * Platform credential API key from Google.
       */
-    val apiKey: js.UndefOr[Input[String]] = js.native
+    val apiKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The application ID.
       */
-    val applicationId: js.UndefOr[Input[String]] = js.native
+    val applicationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object GcmChannelState {
     

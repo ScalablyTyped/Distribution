@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.unified
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentSwitcher extends Control {
+trait ContentSwitcher
+  extends StObject
+     with Control {
   
   /**
     * Adds some content1 to the aggregation <code>content1</code>.

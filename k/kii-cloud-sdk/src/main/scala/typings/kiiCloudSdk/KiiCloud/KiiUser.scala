@@ -6,14 +6,15 @@ import typings.kiiCloudSdk.anon.`33`
 import typings.kiiCloudSdk.anon.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiUser object
   */
 @js.native
-trait KiiUser extends KiiACLSubject {
+trait KiiUser
+  extends StObject
+     with KiiACLSubject {
   
   /**
     * Creates a reference to a bucket for this user
@@ -430,7 +431,7 @@ trait KiiUser extends KiiACLSubject {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: js.UndefOr[scala.Nothing], paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: Unit, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   
@@ -639,40 +640,35 @@ trait KiiUser extends KiiACLSubject {
     *     );
     */
   def putIdentity(identityData: identityData, password: String): js.Promise[KiiUser] = js.native
+  def putIdentity(identityData: identityData, password: String, callbacks: Unit, userFields: js.Any): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: String,
-    callbacks: js.UndefOr[scala.Nothing],
-    userFields: js.UndefOr[scala.Nothing],
-    removeFields: js.Array[String]
-  ): js.Promise[KiiUser] = js.native
-  def putIdentity(
-    identityData: identityData,
-    password: String,
-    callbacks: js.UndefOr[scala.Nothing],
-    userFields: js.Any
-  ): js.Promise[KiiUser] = js.native
-  def putIdentity(
-    identityData: identityData,
-    password: String,
-    callbacks: js.UndefOr[scala.Nothing],
+    callbacks: Unit,
     userFields: js.Any,
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
-  def putIdentity(identityData: identityData, password: String, callbacks: `32`): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: String,
-    callbacks: `32`,
-    userFields: js.UndefOr[scala.Nothing],
+    callbacks: Unit,
+    userFields: Unit,
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
+  def putIdentity(identityData: identityData, password: String, callbacks: `32`): js.Promise[KiiUser] = js.native
   def putIdentity(identityData: identityData, password: String, callbacks: `32`, userFields: js.Any): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: String,
     callbacks: `32`,
     userFields: js.Any,
+    removeFields: js.Array[String]
+  ): js.Promise[KiiUser] = js.native
+  def putIdentity(
+    identityData: identityData,
+    password: String,
+    callbacks: `32`,
+    userFields: Unit,
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
   
@@ -1014,28 +1010,13 @@ trait KiiUser extends KiiACLSubject {
     *     );
     */
   def update(identityData: identityData): js.Promise[KiiUser] = js.native
-  def update(
-    identityData: identityData,
-    callbacks: js.UndefOr[scala.Nothing],
-    userFields: js.UndefOr[scala.Nothing],
-    removeFields: js.Array[String]
-  ): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: js.UndefOr[scala.Nothing], userFields: js.Any): js.Promise[KiiUser] = js.native
-  def update(
-    identityData: identityData,
-    callbacks: js.UndefOr[scala.Nothing],
-    userFields: js.Any,
-    removeFields: js.Array[String]
-  ): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Unit, userFields: js.Any): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Unit, userFields: js.Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Unit, userFields: Unit, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: `32`): js.Promise[KiiUser] = js.native
-  def update(
-    identityData: identityData,
-    callbacks: `32`,
-    userFields: js.UndefOr[scala.Nothing],
-    removeFields: js.Array[String]
-  ): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: `32`, userFields: js.Any): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: `32`, userFields: js.Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: `32`, userFields: Unit, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
   
   /**
     * Update a user's password on the server

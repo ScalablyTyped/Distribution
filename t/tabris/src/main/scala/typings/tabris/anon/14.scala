@@ -1,0 +1,34 @@
+package typings.tabris.anon
+
+import typings.tabris.mod.JSXChildren
+import typings.tabris.mod.Tab
+import typings.tabris.mod.WidgetCollection
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait `14` extends StObject {
+  
+  var children: js.UndefOr[JSXChildren[Tab]] = js.undefined
+}
+object `14` {
+  
+  @scala.inline
+  def apply(): `14` = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`14`]
+  }
+  
+  @scala.inline
+  implicit class `14MutableBuilder`[Self <: `14`] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setChildren(value: JSXChildren[Tab]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    @scala.inline
+    def setChildrenVarargs(value: (Tab | WidgetCollection[Tab])*): Self = StObject.set(x, "children", js.Array(value :_*))
+  }
+}

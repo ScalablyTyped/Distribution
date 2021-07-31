@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html)
   */
-@js.native
 trait scheduling extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait scheduling extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#addFrameTask)
     */
-  def addFrameTask(phases: PhaseCallbacks): FrameTaskHandle = js.native
+  def addFrameTask(phases: PhaseCallbacks): FrameTaskHandle
   
   /**
     * Schedules the execution of a `callback` function at the next web browser tick.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#schedule)
     */
-  def schedule(callback: js.Function): js.Any = js.native
+  def schedule(callback: js.Function): js.Any
 }
 object scheduling {
   

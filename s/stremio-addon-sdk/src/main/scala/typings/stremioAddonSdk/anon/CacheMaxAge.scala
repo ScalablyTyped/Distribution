@@ -2,23 +2,21 @@ package typings.stremioAddonSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheMaxAge extends StObject {
   
   /**
     * (in seconds) cacheMaxAge means the Cache-Control header being set to max-age=$cacheMaxAge
     */
-  var cacheMaxAge: js.UndefOr[Double] = js.native
+  var cacheMaxAge: js.UndefOr[Double] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Static directory to serve.
     */
-  var static: js.UndefOr[String] = js.native
+  var static: js.UndefOr[String] = js.undefined
 }
 object CacheMaxAge {
   

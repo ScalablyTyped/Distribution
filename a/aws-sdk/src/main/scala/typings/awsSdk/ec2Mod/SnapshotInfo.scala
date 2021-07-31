@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotInfo extends StObject {
   
   /**
     * Description specified by the CreateSnapshotRequest that has been applied to all snapshots.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the snapshot is encrypted.
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Account id used when creating this snapshot.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Progress this snapshot has made towards completing.
     */
-  var Progress: js.UndefOr[String] = js.native
+  var Progress: js.UndefOr[String] = js.undefined
   
   /**
     * Snapshot id that can be used to describe this snapshot.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * Time this snapshot was started. This is the same for all snapshots initiated by the same request.
     */
-  var StartTime: js.UndefOr[MillisecondDateTime] = js.native
+  var StartTime: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * Current state of the snapshot.
     */
-  var State: js.UndefOr[SnapshotState] = js.native
+  var State: js.UndefOr[SnapshotState] = js.undefined
   
   /**
     * Tags associated with this snapshot.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Source volume from which this snapshot was created.
     */
-  var VolumeId: js.UndefOr[String] = js.native
+  var VolumeId: js.UndefOr[String] = js.undefined
   
   /**
     * Size of the volume from which this snapshot was created.
     */
-  var VolumeSize: js.UndefOr[Integer] = js.native
+  var VolumeSize: js.UndefOr[Integer] = js.undefined
 }
 object SnapshotInfo {
   

@@ -4,12 +4,10 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddEventListener extends StObject {
     
     def addEventListener(
@@ -17,18 +15,18 @@ object anon {
       action: String,
       listener: js.Function1[/* event */ js.UndefOr[Event], Unit],
       useCapture: Boolean
-    ): js.Function1[/* event */ js.UndefOr[Event], Unit] = js.native
+    ): js.Function1[/* event */ js.UndefOr[Event], Unit]
     
-    def preventDefault(event: Event): Unit = js.native
+    def preventDefault(event: Event): Unit
     
     def removeEventListener(
       element: HTMLElement,
       action: String,
       listener: js.Function1[/* event */ js.UndefOr[Event], Unit],
       useCapture: Boolean
-    ): Unit = js.native
+    ): Unit
     
-    def stopPropagation(event: Event): Unit = js.native
+    def stopPropagation(event: Event): Unit
   }
   object AddEventListener {
     

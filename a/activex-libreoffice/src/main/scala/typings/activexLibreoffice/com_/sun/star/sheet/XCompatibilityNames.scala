@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the sequence of compatibility names for an Addin function. */
-@js.native
-trait XCompatibilityNames extends XInterface {
+trait XCompatibilityNames
+  extends StObject
+     with XInterface {
   
   /**
     * returns the compatibility names of the specified function.
@@ -28,7 +28,7 @@ trait XCompatibilityNames extends XInterface {
     * which contains first the entry representing the current locale. `TRUE`
     * @param aProgrammaticName is the exact name of a method within its interface.
     */
-  def getCompatibilityNames(aProgrammaticName: String): SafeArray[LocalizedName] = js.native
+  def getCompatibilityNames(aProgrammaticName: String): SafeArray[LocalizedName]
 }
 object XCompatibilityNames {
   

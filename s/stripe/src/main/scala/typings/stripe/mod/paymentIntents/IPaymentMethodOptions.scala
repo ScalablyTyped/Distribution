@@ -2,16 +2,14 @@ package typings.stripe.mod.paymentIntents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPaymentMethodOptions extends StObject {
   
   /**
     * Configuration for any card payments attempted on this PaymentIntent.
     */
-  var card: js.UndefOr[IPaymentMethodCardOptions] = js.native
+  var card: js.UndefOr[IPaymentMethodCardOptions] = js.undefined
 }
 object IPaymentMethodOptions {
   

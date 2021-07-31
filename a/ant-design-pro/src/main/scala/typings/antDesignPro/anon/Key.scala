@@ -3,15 +3,13 @@ package typings.antDesignPro.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var tab: ReactNode = js.native
+  var tab: ReactNode
 }
 object Key {
   

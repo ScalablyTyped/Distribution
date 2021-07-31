@@ -2,23 +2,21 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCompletedPartMod {
   
-  @js.native
   trait CompletedPart extends StObject {
     
     /**
       * <p>Entity tag returned when the part was uploaded.</p>
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Part number that identifies the part. This is a positive integer between 1 and 10,000.</p>
       */
-    var PartNumber: js.UndefOr[Double] = js.native
+    var PartNumber: js.UndefOr[Double] = js.undefined
   }
   object CompletedPart {
     

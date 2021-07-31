@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A object instantiated by the background broker infrastructure and used by an app to retrieve details when a SocketActivityTrigger occurs. */
-@js.native
 trait SocketActivityTriggerDetails extends StObject {
   
   /** Get the reason the SocketActivityTrigger occurred. */
-  var reason: SocketActivityTriggerReason = js.native
+  var reason: SocketActivityTriggerReason
   
   /** Get the SocketActivityInformation object for socket that caused the SocketActivityTrigger to occur. */
-  var socketInformation: SocketActivityInformation = js.native
+  var socketInformation: SocketActivityInformation
 }
 object SocketActivityTriggerDetails {
   

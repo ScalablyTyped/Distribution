@@ -2,81 +2,79 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingSummary extends StObject {
   
   /**
     * The action in the analyzed policy statement that an external principal has permission to use.
     */
-  var action: js.UndefOr[ActionList] = js.native
+  var action: js.UndefOr[ActionList] = js.undefined
   
   /**
     * The time at which the resource-based policy that generated the finding was analyzed.
     */
-  var analyzedAt: Timestamp = js.native
+  var analyzedAt: Timestamp
   
   /**
     * The condition in the analyzed policy statement that resulted in a finding.
     */
-  var condition: ConditionKeyMap = js.native
+  var condition: ConditionKeyMap
   
   /**
     * The time at which the finding was created.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * The error that resulted in an Error finding.
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the finding.
     */
-  var id: FindingId = js.native
+  var id: FindingId
   
   /**
     * Indicates whether the finding reports a resource that has a policy that allows public access.
     */
-  var isPublic: js.UndefOr[Boolean] = js.native
+  var isPublic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The external principal that has access to a resource within the zone of trust.
     */
-  var principal: js.UndefOr[PrincipalMap] = js.native
+  var principal: js.UndefOr[PrincipalMap] = js.undefined
   
   /**
     * The resource that the external principal has access to.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID that owns the resource.
     */
-  var resourceOwnerAccount: String = js.native
+  var resourceOwnerAccount: String
   
   /**
     * The type of the resource that the external principal has access to.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
   
   /**
     * The sources of the finding. This indicates how the access that generated the finding is granted. It is populated for Amazon S3 bucket findings.
     */
-  var sources: js.UndefOr[FindingSourceList] = js.native
+  var sources: js.UndefOr[FindingSourceList] = js.undefined
   
   /**
     * The status of the finding.
     */
-  var status: FindingStatus = js.native
+  var status: FindingStatus
   
   /**
     * The time at which the finding was most recently updated.
     */
-  var updatedAt: Timestamp = js.native
+  var updatedAt: Timestamp
 }
 object FindingSummary {
   

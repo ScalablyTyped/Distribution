@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosModel extends StObject {
   
   /**
     * Device capabilities. Copied from
     * https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html
     */
-  var deviceCapabilities: js.UndefOr[js.Array[String]] = js.native
+  var deviceCapabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether this device is a phone, tablet, wearable, etc. */
-  var formFactor: js.UndefOr[String] = js.native
+  var formFactor: js.UndefOr[String] = js.undefined
   
   /** The unique opaque id for this model. Use this for invoking the TestExecutionService. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The human-readable name for this device model. Examples: "iPhone 4s", "iPad Mini 2". */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Screen density in DPI. */
-  var screenDensity: js.UndefOr[Double] = js.native
+  var screenDensity: js.UndefOr[Double] = js.undefined
   
   /** Screen size in the horizontal (X) dimension measured in pixels. */
-  var screenX: js.UndefOr[Double] = js.native
+  var screenX: js.UndefOr[Double] = js.undefined
   
   /** Screen size in the vertical (Y) dimension measured in pixels. */
-  var screenY: js.UndefOr[Double] = js.native
+  var screenY: js.UndefOr[Double] = js.undefined
   
   /** The set of iOS major software versions this device supports. */
-  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.native
+  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Tags for this dimension. Examples: "default", "preview", "deprecated". */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IosModel {
   

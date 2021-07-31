@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapPopupControl control.
   */
 @js.native
-trait BootstrapClientPopupControl extends ASPxClientPopupControl {
+trait BootstrapClientPopupControl
+  extends StObject
+     with ASPxClientPopupControl {
   
   /**
     * Sets the CSS selector of a web control or HTML element with which the current popup window is associated.

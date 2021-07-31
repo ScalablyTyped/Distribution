@@ -5,14 +5,12 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.PassThrough
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(args: Streams*): Merge2Stream = js.native
+  @scala.inline
+  def apply(args: Streams*): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
   /**
     * @summary        This function takes an arbitrary number of streams and returns a
     *                 Merge2Stream.
@@ -27,36 +25,30 @@ object mod {
     *
     * @return         A merged duplex stream
     */
+  @scala.inline
+  def apply(a: Streams): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams, c: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams, c: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, b: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  @scala.inline
+  def apply(a: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  
   @JSImport("merge2", JSImport.Namespace)
   @js.native
-  def apply(a: Streams): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams, c: Streams): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams, options: Options): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams, options: Options): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams, c: Streams, options: Options): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, b: Streams, options: Options): Merge2Stream = js.native
-  @JSImport("merge2", JSImport.Namespace)
-  @js.native
-  def apply(a: Streams, options: Options): Merge2Stream = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Merge2Stream extends PassThrough {
@@ -86,12 +78,11 @@ object mod {
     def once_queueDrain(event: queueDrain, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -34,10 +34,13 @@ import typings.std.PromiseLike
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalCompatibilityMod {
+  
+  @JSImport("rxjs/internal-compatibility", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rxjs/internal-compatibility", "AjaxError")
   @js.native
@@ -47,8 +50,35 @@ object internalCompatibilityMod {
   @JSImport("rxjs/internal-compatibility", "AjaxError")
   @js.native
   class AjaxErrorCls protected ()
-    extends typings.rxjs.ajaxObservableMod.AjaxError {
+    extends StObject
+       with typings.rxjs.ajaxObservableMod.AjaxError {
     def this(message: String, xhr: XMLHttpRequest, request: AjaxRequest) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /* CompleteClass */
+    var request: AjaxRequest = js.native
+    
+    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /* CompleteClass */
+    var response: js.Any = js.native
+    
+    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /* CompleteClass */
+    var responseType: String = js.native
+    
+    /** @type {number} The HTTP status code */
+    /* CompleteClass */
+    var status: Double = js.native
+    
+    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /* CompleteClass */
+    var xhr: XMLHttpRequest = js.native
   }
   
   @JSImport("rxjs/internal-compatibility", "AjaxObservable")
@@ -130,12 +160,10 @@ object internalCompatibilityMod {
       * @owner Observable
       * @nocollapse
       */
-    @JSImport("rxjs/internal-compatibility", "AjaxObservable.create")
-    @js.native
-    def create(urlOrRequest: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-    @JSImport("rxjs/internal-compatibility", "AjaxObservable.create")
-    @js.native
-    def create(urlOrRequest: AjaxRequest): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
+    @scala.inline
+    def create(urlOrRequest: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+    @scala.inline
+    def create(urlOrRequest: AjaxRequest): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
     @scala.inline
     def create_=(x: AjaxCreationMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
   }
@@ -162,8 +190,35 @@ object internalCompatibilityMod {
   @JSImport("rxjs/internal-compatibility", "AjaxTimeoutError")
   @js.native
   class AjaxTimeoutErrorCls protected ()
-    extends typings.rxjs.ajaxObservableMod.AjaxError {
+    extends StObject
+       with typings.rxjs.ajaxObservableMod.AjaxError {
     def this(xhr: XMLHttpRequest, request: AjaxRequest) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** @type {AjaxRequest} The AjaxRequest associated with the error */
+    /* CompleteClass */
+    var request: AjaxRequest = js.native
+    
+    /** @type {string|ArrayBuffer|Document|object|any} The response data */
+    /* CompleteClass */
+    var response: js.Any = js.native
+    
+    /** @type {string} The responseType (e.g. 'json', 'arraybuffer', or 'xml') */
+    /* CompleteClass */
+    var responseType: String = js.native
+    
+    /** @type {number} The HTTP status code */
+    /* CompleteClass */
+    var status: Double = js.native
+    
+    /** @type {XMLHttpRequest} The XHR instance associated with the error */
+    /* CompleteClass */
+    var xhr: XMLHttpRequest = js.native
   }
   
   @JSImport("rxjs/internal-compatibility", "AnonymousSubject")
@@ -171,7 +226,7 @@ object internalCompatibilityMod {
   class AnonymousSubject[T] ()
     extends typings.rxjs.subjectMod.AnonymousSubject[T] {
     def this(destination: Observer[T]) = this()
-    def this(destination: js.UndefOr[scala.Nothing], source: Observable[T]) = this()
+    def this(destination: Unit, source: Observable[T]) = this()
     def this(destination: Observer[T], source: Observable[T]) = this()
   }
   
@@ -182,7 +237,16 @@ object internalCompatibilityMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs/internal-compatibility", "ArgumentOutOfRangeError")
   @js.native
-  class ArgumentOutOfRangeErrorCls () extends Error
+  class ArgumentOutOfRangeErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs/internal-compatibility", "CombineLatestOperator")
   @js.native
@@ -198,7 +262,16 @@ object internalCompatibilityMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs/internal-compatibility", "EmptyError")
   @js.native
-  class EmptyErrorCls () extends Error
+  class EmptyErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs/internal-compatibility", "GroupedObservable")
   @js.native
@@ -211,13 +284,15 @@ object internalCompatibilityMod {
   
   object Immediate {
     
-    @JSImport("rxjs/internal-compatibility", "Immediate.clearImmediate")
+    @JSImport("rxjs/internal-compatibility", "Immediate")
     @js.native
-    def clearImmediate(handle: Double): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("rxjs/internal-compatibility", "Immediate.setImmediate")
-    @js.native
-    def setImmediate(cb: js.Function0[Unit]): Double = js.native
+    @scala.inline
+    def clearImmediate(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setImmediate(cb: js.Function0[Unit]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(cb.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @JSImport("rxjs/internal-compatibility", "InnerSubscriber")
@@ -234,7 +309,16 @@ object internalCompatibilityMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs/internal-compatibility", "ObjectUnsubscribedError")
   @js.native
-  class ObjectUnsubscribedErrorCls () extends Error
+  class ObjectUnsubscribedErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs/internal-compatibility", "OuterSubscriber")
   @js.native
@@ -249,46 +333,31 @@ object internalCompatibilityMod {
   class OuterSubscriber[T, R] ()
     extends typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R] {
     def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
-    def this(destinationOrNext: PartialObserver[_]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
-    def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.Function1[/* value */ T, Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
+    def this(destinationOrNext: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]) = this()
     def this(
-      destinationOrNext: PartialObserver[_],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: PartialObserver[_],
+      destinationOrNext: Unit,
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: Unit, error: Unit, complete: js.Function0[Unit]) = this()
+    def this(
+      destinationOrNext: PartialObserver[js.Any],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: Unit, complete: js.Function0[Unit]) = this()
   }
   
   @JSImport("rxjs/internal-compatibility", "Scheduler")
@@ -320,14 +389,17 @@ object internalCompatibilityMod {
   /* static members */
   object Scheduler {
     
+    @JSImport("rxjs/internal-compatibility", "Scheduler")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Note: the extra arrow function wrapper is to make testing by overriding
       * Date.now easier.
       * @nocollapse
       */
-    @JSImport("rxjs/internal-compatibility", "Scheduler.now")
-    @js.native
-    def now(): Double = js.native
+    @scala.inline
+    def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   }
   
   @JSImport("rxjs/internal-compatibility", "SubjectSubscription")
@@ -343,30 +415,29 @@ object internalCompatibilityMod {
     extends typings.rxjs.subscribeOnObservableMod.SubscribeOnObservable[T] {
     def this(source: Observable[T]) = this()
     def this(source: Observable[T], delayTime: Double) = this()
-    def this(source: Observable[T], delayTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike) = this()
     def this(source: Observable[T], delayTime: Double, scheduler: SchedulerLike) = this()
+    def this(source: Observable[T], delayTime: Unit, scheduler: SchedulerLike) = this()
   }
   /* static members */
   object SubscribeOnObservable {
     
-    /** @nocollapse */
-    @JSImport("rxjs/internal-compatibility", "SubscribeOnObservable.create")
+    @JSImport("rxjs/internal-compatibility", "SubscribeOnObservable")
     @js.native
-    def create[T](source: Observable[T]): Observable[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "SubscribeOnObservable.create")
-    @js.native
-    def create[T](source: Observable[T], delay: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "SubscribeOnObservable.create")
-    @js.native
-    def create[T](source: Observable[T], delay: Double): Observable[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "SubscribeOnObservable.create")
-    @js.native
-    def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = js.native
+    val ^ : js.Any = js.native
     
     /** @nocollapse */
-    @JSImport("rxjs/internal-compatibility", "SubscribeOnObservable.dispatch")
-    @js.native
-    def dispatch[T](arg: DispatchArg[T]): Subscription = js.native
+    @scala.inline
+    def create[T](source: Observable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+    @scala.inline
+    def create[T](source: Observable[T], delay: Double): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    @scala.inline
+    def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    @scala.inline
+    def create[T](source: Observable[T], delay: Unit, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    
+    /** @nocollapse */
+    @scala.inline
+    def dispatch[T](arg: DispatchArg[T]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(arg.asInstanceOf[js.Any]).asInstanceOf[Subscription]
   }
   
   @JSImport("rxjs/internal-compatibility", "Subscriber")
@@ -382,49 +453,38 @@ object internalCompatibilityMod {
   class Subscriber[T] ()
     extends typings.rxjs.subscriberMod.Subscriber[T] {
     def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
-    def this(destinationOrNext: PartialObserver[_]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
-    def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.Function1[/* value */ T, Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
+    def this(destinationOrNext: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]) = this()
     def this(
-      destinationOrNext: PartialObserver[_],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: PartialObserver[_],
+      destinationOrNext: Unit,
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: Unit, error: Unit, complete: js.Function0[Unit]) = this()
+    def this(
+      destinationOrNext: PartialObserver[js.Any],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: Unit, complete: js.Function0[Unit]) = this()
   }
   /* static members */
   object Subscriber {
+    
+    @JSImport("rxjs/internal-compatibility", "Subscriber")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A static factory for a Subscriber, given a (potentially partial) definition
@@ -438,45 +498,29 @@ object internalCompatibilityMod {
       * Observer represented by the given arguments.
       * @nocollapse
       */
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
-    def create[T](): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
-    def create[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
-    def create[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
-    def create[T](
-      next: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
-    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
-    def create[T](
-      next: js.Function1[/* x */ js.UndefOr[T], Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
+    @scala.inline
+    def create[T](): typings.rxjs.subscriberMod.Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-    @JSImport("rxjs/internal-compatibility", "Subscriber.create")
-    @js.native
+    ): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
-    ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
+    ): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit], error: Unit, complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit], complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: Unit, complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
   }
   
   @JSImport("rxjs/internal-compatibility", "TimeInterval")
@@ -492,7 +536,16 @@ object internalCompatibilityMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rxjs/internal-compatibility", "TimeoutError")
   @js.native
-  class TimeoutErrorCls () extends Error
+  class TimeoutErrorCls ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("rxjs/internal-compatibility", "Timestamp")
   @js.native
@@ -508,8 +561,18 @@ object internalCompatibilityMod {
   @JSImport("rxjs/internal-compatibility", "UnsubscriptionError")
   @js.native
   class UnsubscriptionErrorCls protected ()
-    extends typings.rxjs.unsubscriptionErrorMod.UnsubscriptionError {
-    def this(errors: js.Array[_]) = this()
+    extends StObject
+       with typings.rxjs.unsubscriptionErrorMod.UnsubscriptionError {
+    def this(errors: js.Array[js.Any]) = this()
+    
+    /* CompleteClass */
+    override val errors: js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("rxjs/internal-compatibility", "WebSocketSubject")
@@ -528,69 +591,50 @@ object internalCompatibilityMod {
   @js.native
   val ajax: AjaxCreationMethod = js.native
   
-  @JSImport("rxjs/internal-compatibility", "ajaxDelete")
-  @js.native
-  def ajaxDelete(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxDelete")
-  @js.native
-  def ajaxDelete(url: String, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
+  @scala.inline
+  def ajaxDelete(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxDelete(url: String, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
   
-  @JSImport("rxjs/internal-compatibility", "ajaxGet")
-  @js.native
-  def ajaxGet(url: String): typings.rxjs.ajaxObservableMod.AjaxObservable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxGet")
-  @js.native
-  def ajaxGet(url: String, headers: js.Object): typings.rxjs.ajaxObservableMod.AjaxObservable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
+  @scala.inline
+  def ajaxGet(url: String): typings.rxjs.ajaxObservableMod.AjaxObservable[typings.rxjs.ajaxObservableMod.AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.ajaxObservableMod.AjaxObservable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxGet(url: String, headers: js.Object): typings.rxjs.ajaxObservableMod.AjaxObservable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.ajaxObservableMod.AjaxObservable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
   
-  @JSImport("rxjs/internal-compatibility", "ajaxGetJSON")
-  @js.native
-  def ajaxGetJSON[T](url: String): Observable[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxGetJSON")
-  @js.native
-  def ajaxGetJSON[T](url: String, headers: js.Object): Observable[T] = js.native
+  @scala.inline
+  def ajaxGetJSON[T](url: String): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def ajaxGetJSON[T](url: String, headers: js.Object): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs/internal-compatibility", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String, body: js.Any): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPatch")
-  @js.native
-  def ajaxPatch(url: String, body: js.Any, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
+  @scala.inline
+  def ajaxPatch(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPatch(url: String, body: js.Any): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPatch(url: String, body: js.Any, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPatch(url: String, body: Unit, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
   
-  @JSImport("rxjs/internal-compatibility", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String, body: js.Any): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPost")
-  @js.native
-  def ajaxPost(url: String, body: js.Any, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
+  @scala.inline
+  def ajaxPost(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPost(url: String, body: js.Any): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPost(url: String, body: js.Any, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPost(url: String, body: Unit, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
   
-  @JSImport("rxjs/internal-compatibility", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String, body: js.Any): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
-  @JSImport("rxjs/internal-compatibility", "ajaxPut")
-  @js.native
-  def ajaxPut(url: String, body: js.Any, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = js.native
+  @scala.inline
+  def ajaxPut(url: String): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPut(url: String, body: js.Any): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPut(url: String, body: js.Any, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
+  @scala.inline
+  def ajaxPut(url: String, body: Unit, headers: js.Object): Observable[typings.rxjs.ajaxObservableMod.AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[typings.rxjs.ajaxObservableMod.AjaxResponse]]
   
-  @JSImport("rxjs/internal-compatibility", "applyMixins")
-  @js.native
-  def applyMixins(derivedCtor: js.Any, baseCtors: js.Array[_]): Unit = js.native
+  @scala.inline
+  def applyMixins(derivedCtor: js.Any, baseCtors: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMixins")(derivedCtor.asInstanceOf[js.Any], baseCtors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object config {
     
@@ -605,7 +649,9 @@ object internalCompatibilityMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rxjs/internal-compatibility", "config.Promise")
     @js.native
-    class Promise[T] protected () extends PromiseLike[T] {
+    class Promise[T] protected ()
+      extends StObject
+         with PromiseLike[T] {
       def this(executor: js.Function2[
                 /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
                 /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
@@ -641,123 +687,97 @@ object internalCompatibilityMod {
   @js.native
   val defaultThrottleConfig: ThrottleConfig = js.native
   
-  @JSImport("rxjs/internal-compatibility", "dispatch")
-  @js.native
-  def dispatch(state: js.Any): Unit = js.native
+  @scala.inline
+  def dispatch(state: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("rxjs/internal-compatibility", "errorObject")
   @js.native
   val errorObject: js.Any = js.native
   
-  @JSImport("rxjs/internal-compatibility", "fromIterable")
-  @js.native
-  def fromIterable[T](input: Iterable[T]): Observable[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "fromIterable")
-  @js.native
-  def fromIterable[T](input: Iterable[T], scheduler: SchedulerLike): Observable[T] = js.native
+  @scala.inline
+  def fromIterable[T](input: Iterable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromIterable[T](input: Iterable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs/internal-compatibility", "fromPromise")
-  @js.native
-  def fromPromise[T](input: js.Thenable[T]): Observable[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "fromPromise")
-  @js.native
-  def fromPromise[T](input: js.Thenable[T], scheduler: SchedulerLike): Observable[T] = js.native
+  @scala.inline
+  def fromPromise[T](input: js.Thenable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromPromise[T](input: js.Thenable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @JSImport("rxjs/internal-compatibility", "hostReportError")
-  @js.native
-  def hostReportError(err: js.Any): Unit = js.native
+  @scala.inline
+  def hostReportError(err: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hostReportError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rxjs/internal-compatibility", "identity")
-  @js.native
-  def identity[T](x: T): T = js.native
+  @scala.inline
+  def identity[T](x: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("rxjs/internal-compatibility", "isArray")
-  @js.native
-  def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = js.native
+  @scala.inline
+  def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isArrayLike")
-  @js.native
-  def isArrayLike[T](x: js.Any): /* is std.ArrayLike<T> */ Boolean = js.native
+  @scala.inline
+  def isArrayLike[T](x: js.Any): /* is std.ArrayLike<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayLike")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.ArrayLike<T> */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isDate")
-  @js.native
-  def isDate(value: js.Any): /* is std.Date */ Boolean = js.native
+  @scala.inline
+  def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isFunction")
-  @js.native
-  def isFunction(x: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isFunction(x: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isIterable")
-  @js.native
-  def isIterable(input: js.Any): /* is std.Iterable<any> */ Boolean = js.native
+  @scala.inline
+  def isIterable(input: js.Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isNumeric")
-  @js.native
-  def isNumeric(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isNumeric(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isObject")
-  @js.native
-  def isObject(x: js.Any): /* is std.Object */ Boolean = js.native
+  @scala.inline
+  def isObject(x: js.Any): /* is std.Object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Object */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isObservable")
-  @js.native
-  def isObservable(input: js.Any): /* is rxjs.rxjs/internal/types.InteropObservable<any> */ Boolean = js.native
+  @scala.inline
+  def isObservable(input: js.Any): /* is rxjs.rxjs/internal/types.InteropObservable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/internal/types.InteropObservable<any> */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isPromise")
-  @js.native
-  def isPromise(value: js.Any): /* is std.PromiseLike<any> */ Boolean = js.native
+  @scala.inline
+  def isPromise(value: js.Any): /* is std.PromiseLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<any> */ Boolean]
   
-  @JSImport("rxjs/internal-compatibility", "isScheduler")
-  @js.native
-  def isScheduler(value: js.Any): /* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean = js.native
+  @scala.inline
+  def isScheduler(value: js.Any): /* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScheduler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean]
   
   @JSImport("rxjs/internal-compatibility", "iterator")
   @js.native
   val iterator: js.Symbol = js.native
   
-  @JSImport("rxjs/internal-compatibility", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
-  @JSImport("rxjs/internal-compatibility", "not")
-  @js.native
-  def not(pred: js.Function, thisArg: js.Any): js.Function = js.native
+  @scala.inline
+  def not(pred: js.Function, thisArg: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("not")(pred.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   @JSImport("rxjs/internal-compatibility", "observable")
   @js.native
   val observable: String | js.Symbol = js.native
   
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
-  def pipe[T](): UnaryFunction[T, T] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
-  def pipe[T, A](fn1: UnaryFunction[T, A]): UnaryFunction[T, A] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
-  def pipe[T, A, B](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B]): UnaryFunction[T, B] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
-  def pipe[T, A, B, C](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B], fn3: UnaryFunction[B, C]): UnaryFunction[T, C] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
+  @scala.inline
+  def pipe[T](): UnaryFunction[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")().asInstanceOf[UnaryFunction[T, T]]
+  @scala.inline
+  def pipe[T, A](fn1: UnaryFunction[T, A]): UnaryFunction[T, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any]).asInstanceOf[UnaryFunction[T, A]]
+  @scala.inline
+  def pipe[T, A, B](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B]): UnaryFunction[T, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, B]]
+  @scala.inline
+  def pipe[T, A, B, C](fn1: UnaryFunction[T, A], fn2: UnaryFunction[A, B], fn3: UnaryFunction[B, C]): UnaryFunction[T, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, C]]
+  @scala.inline
   def pipe[T, A, B, C, D](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
     fn3: UnaryFunction[B, C],
     fn4: UnaryFunction[C, D]
-  ): UnaryFunction[T, D] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
+  ): UnaryFunction[T, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, D]]
+  @scala.inline
   def pipe[T, A, B, C, D, E](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
     fn3: UnaryFunction[B, C],
     fn4: UnaryFunction[C, D],
     fn5: UnaryFunction[D, E]
-  ): UnaryFunction[T, E] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
+  ): UnaryFunction[T, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, E]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -765,9 +785,8 @@ object internalCompatibilityMod {
     fn4: UnaryFunction[C, D],
     fn5: UnaryFunction[D, E],
     fn6: UnaryFunction[E, F]
-  ): UnaryFunction[T, F] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
+  ): UnaryFunction[T, F] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, F]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -776,9 +795,8 @@ object internalCompatibilityMod {
     fn5: UnaryFunction[D, E],
     fn6: UnaryFunction[E, F],
     fn7: UnaryFunction[F, G]
-  ): UnaryFunction[T, G] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
+  ): UnaryFunction[T, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, G]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G, H](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -788,9 +806,8 @@ object internalCompatibilityMod {
     fn6: UnaryFunction[E, F],
     fn7: UnaryFunction[F, G],
     fn8: UnaryFunction[G, H]
-  ): UnaryFunction[T, H] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
+  ): UnaryFunction[T, H] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, H]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G, H, I](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -801,9 +818,8 @@ object internalCompatibilityMod {
     fn7: UnaryFunction[F, G],
     fn8: UnaryFunction[G, H],
     fn9: UnaryFunction[H, I]
-  ): UnaryFunction[T, I] = js.native
-  @JSImport("rxjs/internal-compatibility", "pipe")
-  @js.native
+  ): UnaryFunction[T, I] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, I]]
+  @scala.inline
   def pipe[T, A, B, C, D, E, F, G, H, I](
     fn1: UnaryFunction[T, A],
     fn2: UnaryFunction[A, B],
@@ -814,140 +830,109 @@ object internalCompatibilityMod {
     fn7: UnaryFunction[F, G],
     fn8: UnaryFunction[G, H],
     fn9: UnaryFunction[H, I],
-    fns: (UnaryFunction[_, _])*
-  ): UnaryFunction[T, js.Object] = js.native
+    fns: (UnaryFunction[js.Any, js.Any])*
+  ): UnaryFunction[T, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any], fns.asInstanceOf[js.Any])).asInstanceOf[UnaryFunction[T, js.Object]]
   
   @JSImport("rxjs/internal-compatibility", "rxSubscriber")
   @js.native
   val rxSubscriber: String | js.Symbol = js.native
   
-  @JSImport("rxjs/internal-compatibility", "subscribeTo")
-  @js.native
-  def subscribeTo[T](result: ObservableInput[T]): js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], Unit | Subscription] = js.native
+  @scala.inline
+  def subscribeTo[T](result: ObservableInput[T]): js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], Unit | Subscription] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeTo")(result.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], Unit | Subscription]]
   
-  @JSImport("rxjs/internal-compatibility", "subscribeToArray")
-  @js.native
-  def subscribeToArray[T](array: ArrayLike[T]): js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], Unit] = js.native
+  @scala.inline
+  def subscribeToArray[T](array: ArrayLike[T]): js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], Unit]]
   
-  @JSImport("rxjs/internal-compatibility", "subscribeToIterable")
-  @js.native
+  @scala.inline
   def subscribeToIterable[T](iterable: Iterable[T]): js.Function1[
     /* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], 
     typings.rxjs.subscriberMod.Subscriber[T]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToIterable")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], 
+    typings.rxjs.subscriberMod.Subscriber[T]
+  ]]
   
-  @JSImport("rxjs/internal-compatibility", "subscribeToObservable")
-  @js.native
-  def subscribeToObservable[T](obj: js.Any): js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], _] = js.native
+  @scala.inline
+  def subscribeToObservable[T](obj: js.Any): js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], js.Any]]
   
-  @JSImport("rxjs/internal-compatibility", "subscribeToPromise")
-  @js.native
+  @scala.inline
   def subscribeToPromise[T](promise: js.Thenable[T]): js.Function1[
     /* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], 
     typings.rxjs.subscriberMod.Subscriber[T]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* subscriber */ typings.rxjs.subscriberMod.Subscriber[T], 
+    typings.rxjs.subscriberMod.Subscriber[T]
+  ]]
   
-  @JSImport("rxjs/internal-compatibility", "subscribeToResult")
-  @js.native
-  def subscribeToResult[T, R](outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R], result: js.Any): js.UndefOr[Subscription] = js.native
-  @JSImport("rxjs/internal-compatibility", "subscribeToResult")
-  @js.native
+  @scala.inline
+  def subscribeToResult[T, R](outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R], result: js.Any): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  @scala.inline
   def subscribeToResult[T, R](
     outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R],
     result: js.Any,
     outerValue: T
-  ): js.UndefOr[Subscription] = js.native
-  @JSImport("rxjs/internal-compatibility", "subscribeToResult")
-  @js.native
+  ): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  @scala.inline
   def subscribeToResult[T, R](
     outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R],
     result: js.Any,
     outerValue: T,
     outerIndex: Double
-  ): js.UndefOr[Subscription] = js.native
-  @JSImport("rxjs/internal-compatibility", "subscribeToResult")
-  @js.native
+  ): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any], outerIndex.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  @scala.inline
   def subscribeToResult[T, R](
     outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R],
     result: js.Any,
-    outerValue: js.UndefOr[scala.Nothing],
-    outerIndex: js.UndefOr[scala.Nothing],
-    innerSubscriber: typings.rxjs.innerSubscriberMod.InnerSubscriber[T, R]
-  ): js.UndefOr[Subscription] = js.native
-  @JSImport("rxjs/internal-compatibility", "subscribeToResult")
-  @js.native
-  def subscribeToResult[T, R](
-    outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R],
-    result: js.Any,
-    outerValue: js.UndefOr[scala.Nothing],
+    outerValue: Unit,
     outerIndex: Double
-  ): js.UndefOr[Subscription] = js.native
+  ): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any], outerIndex.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  @scala.inline
+  def subscribeToResult[T, R](
+    outerSubscriber: typings.rxjs.outerSubscriberMod.OuterSubscriber[T, R],
+    result: js.Any,
+    outerValue: Unit,
+    outerIndex: Unit,
+    innerSubscriber: typings.rxjs.innerSubscriberMod.InnerSubscriber[T, R]
+  ): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any], outerIndex.asInstanceOf[js.Any], innerSubscriber.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
   
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](
-    nextOrObserver: js.UndefOr[scala.Nothing],
-    error: js.UndefOr[scala.Nothing],
-    complete: js.Function0[Unit]
-  ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](nextOrObserver: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ js.Any, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](
-    nextOrObserver: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* error */ js.Any, Unit],
-    complete: js.Function0[Unit]
-  ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](nextOrObserver: js.Function1[/* value */ T, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](
-    nextOrObserver: js.Function1[/* value */ T, Unit],
-    error: js.UndefOr[scala.Nothing],
-    complete: js.Function0[Unit]
-  ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](nextOrObserver: js.Function1[/* value */ T, Unit], error: js.Function1[/* error */ js.Any, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
+  @scala.inline
+  def toSubscriber[T](): typings.rxjs.subscriberMod.Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")().asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: js.Function1[/* value */ T, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: js.Function1[/* value */ T, Unit], error: js.Function1[/* error */ js.Any, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
   def toSubscriber[T](
     nextOrObserver: js.Function1[/* value */ T, Unit],
     error: js.Function1[/* error */ js.Any, Unit],
     complete: js.Function0[Unit]
-  ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](nextOrObserver: PartialObserver[T]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](nextOrObserver: PartialObserver[T], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
-  def toSubscriber[T](nextOrObserver: PartialObserver[T], error: js.Function1[/* error */ js.Any, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "toSubscriber")
-  @js.native
+  ): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: Unit, error: js.Function1[/* error */ js.Any, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: Unit, error: js.Function1[/* error */ js.Any, Unit], complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: Unit, error: Unit, complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: PartialObserver[T]): typings.rxjs.subscriberMod.Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: PartialObserver[T], error: js.Function1[/* error */ js.Any, Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
   def toSubscriber[T](
     nextOrObserver: PartialObserver[T],
     error: js.Function1[/* error */ js.Any, Unit],
     complete: js.Function0[Unit]
-  ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
+  ): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
+  @scala.inline
+  def toSubscriber[T](nextOrObserver: PartialObserver[T], error: Unit, complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSubscriber")(nextOrObserver.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[typings.rxjs.subscriberMod.Subscriber[T]]
   
-  @JSImport("rxjs/internal-compatibility", "tryCatch")
-  @js.native
-  def tryCatch[T /* <: js.Function */](fn: T): T = js.native
+  @scala.inline
+  def tryCatch[T /* <: js.Function */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("rxjs/internal-compatibility", "webSocket")
-  @js.native
-  def webSocket[T](urlConfigOrSource: String): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
-  @JSImport("rxjs/internal-compatibility", "webSocket")
-  @js.native
-  def webSocket[T](urlConfigOrSource: WebSocketSubjectConfig[T]): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = js.native
+  @scala.inline
+  def webSocket[T](urlConfigOrSource: String): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("webSocket")(urlConfigOrSource.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.webSocketSubjectMod.WebSocketSubject[T]]
+  @scala.inline
+  def webSocket[T](urlConfigOrSource: WebSocketSubjectConfig[T]): typings.rxjs.webSocketSubjectMod.WebSocketSubject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("webSocket")(urlConfigOrSource.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.webSocketSubjectMod.WebSocketSubject[T]]
 }

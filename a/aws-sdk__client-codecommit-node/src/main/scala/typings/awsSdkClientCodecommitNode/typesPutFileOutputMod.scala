@@ -4,34 +4,34 @@ import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPutFileOutputMod {
   
-  @js.native
-  trait PutFileOutput extends OutputTypesUnion {
+  trait PutFileOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The ID of the blob, which is its SHA-1 pointer.</p>
       */
-    var blobId: String = js.native
+    var blobId: String
     
     /**
       * <p>The full SHA of the commit that contains this file change.</p>
       */
-    var commitId: String = js.native
+    var commitId: String
     
     /**
       * <p>The full SHA-1 pointer of the tree information for the commit that contains this file change.</p>
       */
-    var treeId: String = js.native
+    var treeId: String
   }
   object PutFileOutput {
     

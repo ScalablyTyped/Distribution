@@ -2,16 +2,16 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CsvUpload extends BulkUpload[CsvUpload] {
+trait CsvUpload
+  extends StObject
+     with BulkUpload[CsvUpload] {
   
-  def append(row: js.Object): CsvUpload = js.native
+  def append(row: js.Object): CsvUpload
   
   @JSName("apply")
-  def apply(): Unit = js.native
+  def apply(): Unit
 }
 object CsvUpload {
   

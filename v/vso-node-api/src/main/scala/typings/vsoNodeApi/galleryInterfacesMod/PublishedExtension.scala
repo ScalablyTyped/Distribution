@@ -3,51 +3,49 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishedExtension extends StObject {
   
-  var categories: js.Array[String] = js.native
+  var categories: js.Array[String]
   
-  var deploymentType: ExtensionDeploymentTechnology = js.native
+  var deploymentType: ExtensionDeploymentTechnology
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var extensionId: String = js.native
+  var extensionId: String
   
-  var extensionName: String = js.native
+  var extensionName: String
   
-  var flags: PublishedExtensionFlags = js.native
+  var flags: PublishedExtensionFlags
   
-  var installationTargets: js.Array[InstallationTarget] = js.native
+  var installationTargets: js.Array[InstallationTarget]
   
-  var lastUpdated: Date = js.native
+  var lastUpdated: Date
   
-  var longDescription: String = js.native
+  var longDescription: String
   
   /**
     * Date on which the extension was first uploaded.
     */
-  var publishedDate: Date = js.native
+  var publishedDate: Date
   
-  var publisher: PublisherFacts = js.native
+  var publisher: PublisherFacts
   
   /**
     * Date on which the extension first went public.
     */
-  var releaseDate: Date = js.native
+  var releaseDate: Date
   
-  var sharedWith: js.Array[ExtensionShare] = js.native
+  var sharedWith: js.Array[ExtensionShare]
   
-  var shortDescription: String = js.native
+  var shortDescription: String
   
-  var statistics: js.Array[ExtensionStatistic] = js.native
+  var statistics: js.Array[ExtensionStatistic]
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var versions: js.Array[ExtensionVersion] = js.native
+  var versions: js.Array[ExtensionVersion]
 }
 object PublishedExtension {
   

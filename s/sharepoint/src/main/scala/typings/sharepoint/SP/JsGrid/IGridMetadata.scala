@@ -3,29 +3,27 @@ package typings.sharepoint.SP.JsGrid
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGridMetadata extends StObject {
   
-  var GridOperationalConstantsFieldKeyMap: js.UndefOr[NumberDictionary[String]] = js.native
+  var GridOperationalConstantsFieldKeyMap: js.UndefOr[NumberDictionary[String]] = js.undefined
   
-  var GroupingLevel: js.UndefOr[Double] = js.native
+  var GroupingLevel: js.UndefOr[Double] = js.undefined
   
-  var GroupingPrefix: js.UndefOr[String] = js.native
+  var GroupingPrefix: js.UndefOr[String] = js.undefined
   
-  var IsGanttEnabled: js.UndefOr[Boolean] = js.native
+  var IsGanttEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var IsHierarchyEnabled: js.UndefOr[Boolean] = js.native
+  var IsHierarchyEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var IsSorted: js.UndefOr[Boolean] = js.native
+  var IsSorted: js.UndefOr[Boolean] = js.undefined
   
-  var KeyColumnName: String = js.native
+  var KeyColumnName: String
   
-  var RecordKeyHash: js.UndefOr[String] = js.native
+  var RecordKeyHash: js.UndefOr[String] = js.undefined
   
-  var RecordKeyOrderChanged: js.UndefOr[js.Any] = js.native
+  var RecordKeyOrderChanged: js.UndefOr[js.Any] = js.undefined
 }
 object IGridMetadata {
   

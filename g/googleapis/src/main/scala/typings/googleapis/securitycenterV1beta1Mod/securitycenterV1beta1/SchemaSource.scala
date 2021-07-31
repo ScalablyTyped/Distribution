@@ -2,7 +2,6 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * like a container of findings that come from the same scanner, logger,
   * monitor, etc.
   */
-@js.native
 trait SchemaSource extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaSource extends StObject {
     * Flash injection, mixed content (HTTP in HTTPS), and outdated/insecure
     * libraries.&quot;
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The source’s display name. A source’s display name must be unique amongst
@@ -32,14 +30,14 @@ trait SchemaSource extends StObject {
     * underscores, and can be no longer than 32 characters. This is captured by
     * the regular expression: [\p{L}\p{N}]({\p{L}\p{N}_- ]{0,30}[\p{L}\p{N}])?.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The relative resource name of this source. See:
     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
     * Example: &quot;organizations/123/sources/456&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaSource {
   

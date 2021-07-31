@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.postsInsightsFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostsInsightsFeedResponseTopPosts extends StObject {
   
-  var edges: js.Array[PostsInsightsFeedResponseEdgesItem] = js.native
+  var edges: js.Array[PostsInsightsFeedResponseEdgesItem]
   
-  var page_info: PostsInsightsFeedResponsePageInfo = js.native
+  var page_info: PostsInsightsFeedResponsePageInfo
 }
 object PostsInsightsFeedResponseTopPosts {
   

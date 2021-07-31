@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ReposCheckCollaboratorRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposCheckCollaboratorEndpoint extends StObject {
   
-  var parameters: ReposCheckCollaboratorEndpoint = js.native
+  var parameters: ReposCheckCollaboratorEndpoint
   
-  var request: ReposCheckCollaboratorRequestOptions = js.native
+  var request: ReposCheckCollaboratorRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersReposCheckCollaboratorEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersReposCheckCollaboratorEndpoint {
   def apply(
     parameters: ReposCheckCollaboratorEndpoint,
     request: ReposCheckCollaboratorRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersReposCheckCollaboratorEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersReposCheckCollaboratorEndpoint]
@@ -39,6 +37,6 @@ object ParametersReposCheckCollaboratorEndpoint {
     def setRequest(value: ReposCheckCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

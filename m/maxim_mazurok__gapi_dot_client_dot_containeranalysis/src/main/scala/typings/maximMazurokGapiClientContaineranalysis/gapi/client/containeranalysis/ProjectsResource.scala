@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var notes: NotesResource = js.native
+  var notes: NotesResource
   
-  var occurrences: OccurrencesResource = js.native
+  var occurrences: OccurrencesResource
   
-  var scanConfigs: ScanConfigsResource = js.native
+  var scanConfigs: ScanConfigsResource
 }
 object ProjectsResource {
   

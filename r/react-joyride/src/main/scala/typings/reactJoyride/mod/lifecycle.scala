@@ -8,29 +8,27 @@ import typings.reactJoyride.reactJoyrideStrings.ready
 import typings.reactJoyride.reactJoyrideStrings.tooltip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait lifecycle extends StObject {
   
-  var BEACON: beacon = js.native
+  var BEACON: beacon
   
-  var COMPLETE: complete = js.native
+  var COMPLETE: complete
   
-  var ERROR: error = js.native
+  var ERROR: error
   
-  var INIT: init = js.native
+  var INIT: init
   
-  var READY: ready = js.native
+  var READY: ready
   
-  var TOOLTIP: tooltip = js.native
+  var TOOLTIP: tooltip
 }
 object lifecycle {
   
   @scala.inline
-  def apply(BEACON: beacon, COMPLETE: complete, ERROR: error, INIT: init, READY: ready, TOOLTIP: tooltip): lifecycle = {
-    val __obj = js.Dynamic.literal(BEACON = BEACON.asInstanceOf[js.Any], COMPLETE = COMPLETE.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INIT = INIT.asInstanceOf[js.Any], READY = READY.asInstanceOf[js.Any], TOOLTIP = TOOLTIP.asInstanceOf[js.Any])
+  def apply(): lifecycle = {
+    val __obj = js.Dynamic.literal(BEACON = "beacon", COMPLETE = "complete", ERROR = "error", INIT = "init", READY = "ready", TOOLTIP = "tooltip")
     __obj.asInstanceOf[lifecycle]
   }
   

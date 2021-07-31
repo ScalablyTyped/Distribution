@@ -7,17 +7,15 @@ import typings.xmlCrypto.xmlCryptoStrings.before
 import typings.xmlCrypto.xmlCryptoStrings.prepend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Action extends StObject {
     
-    var action: append | prepend | before | after = js.native
+    var action: append | prepend | before | after
     
-    var reference: String = js.native
+    var reference: String
   }
   object Action {
     
@@ -38,16 +36,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Attrs extends StObject {
     
-    var attrs: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var existingPrefixes: js.UndefOr[StringDictionary[String]] = js.native
+    var existingPrefixes: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var location: js.UndefOr[Action] = js.native
+    var location: js.UndefOr[Action] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Attrs {
     
@@ -86,16 +83,15 @@ object anon {
     }
   }
   
-  @js.native
   trait CanonicalizationAlgorithm extends StObject {
     
-    var canonicalizationAlgorithm: js.UndefOr[String] = js.native
+    var canonicalizationAlgorithm: js.UndefOr[String] = js.undefined
     
-    var idAttribute: js.UndefOr[String] = js.native
+    var idAttribute: js.UndefOr[String] = js.undefined
     
-    var implicitTransforms: js.UndefOr[js.Array[String]] = js.native
+    var implicitTransforms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var signatureAlgorithm: js.UndefOr[String] = js.native
+    var signatureAlgorithm: js.UndefOr[String] = js.undefined
   }
   object CanonicalizationAlgorithm {
     

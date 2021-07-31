@@ -2,13 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckboxSelectColumn[T /* <: SlickData */] extends Plugin[T] {
+trait CheckboxSelectColumn[T /* <: SlickData */]
+  extends StObject
+     with Plugin[T] {
   
-  def getColumnDefinition(): ColumnMetadata[T] = js.native
+  def getColumnDefinition(): ColumnMetadata[T]
 }
 object CheckboxSelectColumn {
   
@@ -19,7 +19,7 @@ object CheckboxSelectColumn {
   }
   
   @scala.inline
-  implicit class CheckboxSelectColumnMutableBuilder[Self <: CheckboxSelectColumn[_], T /* <: SlickData */] (val x: Self with CheckboxSelectColumn[T]) extends AnyVal {
+  implicit class CheckboxSelectColumnMutableBuilder[Self <: CheckboxSelectColumn[?], T /* <: SlickData */] (val x: Self & CheckboxSelectColumn[T]) extends AnyVal {
     
     @scala.inline
     def setGetColumnDefinition(value: () => ColumnMetadata[T]): Self = StObject.set(x, "getColumnDefinition", js.Any.fromFunction0(value))

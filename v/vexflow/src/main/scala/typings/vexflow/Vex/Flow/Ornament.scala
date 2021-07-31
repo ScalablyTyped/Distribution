@@ -4,17 +4,17 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Ornament extends Modifier {
+trait Ornament
+  extends StObject
+     with Modifier {
   
-  def setDelayed(delayed: Boolean): Ornament = js.native
+  def setDelayed(delayed: Boolean): Ornament
   
-  def setLowerAccidental(acc: String): Ornament = js.native
+  def setLowerAccidental(acc: String): Ornament
   
-  def setUpperAccidental(acc: String): Ornament = js.native
+  def setUpperAccidental(acc: String): Ornament
 }
 object Ornament {
   

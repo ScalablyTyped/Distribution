@@ -4,25 +4,26 @@ import typings.awsSdk.mod.SES
 import typings.nodemailer.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: SesOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
   @JSImport("nodemailer-ses-transport", JSImport.Namespace)
   @js.native
-  def apply(options: SesOptions): Transport = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait SesOptions extends StObject {
     
-    var SES: typings.awsSdk.mod.SES = js.native
+    var SES: typings.awsSdk.mod.SES
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
-    var sendingRate: js.UndefOr[Double] = js.native
+    var sendingRate: js.UndefOr[Double] = js.undefined
   }
   object SesOptions {
     

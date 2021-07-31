@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseCarouselMediaItem extends StObject {
   
-  var can_see_insights_as_brand: Boolean = js.native
+  var can_see_insights_as_brand: Boolean
   
-  var carousel_parent_id: String = js.native
+  var carousel_parent_id: String
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: TopicalExploreFeedResponseImageVersions2 = js.native
+  var image_versions2: TopicalExploreFeedResponseImageVersions2
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var pk: String = js.native
+  var pk: String
   
-  var product_tags: js.UndefOr[TopicalExploreFeedResponseProductTags] = js.native
+  var product_tags: js.UndefOr[TopicalExploreFeedResponseProductTags] = js.undefined
   
-  var sharing_friction_info: TopicalExploreFeedResponseSharingFrictionInfo = js.native
+  var sharing_friction_info: TopicalExploreFeedResponseSharingFrictionInfo
   
-  var usertags: js.UndefOr[TopicalExploreFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[TopicalExploreFeedResponseUsertags] = js.undefined
 }
 object TopicalExploreFeedResponseCarouselMediaItem {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines properties for web account provider operations. */
-@js.native
 trait IWebAccountProviderOperation extends StObject {
   
   /** Gets the kind of web account provider operation. */
-  var kind: WebAccountProviderOperationKind = js.native
+  var kind: WebAccountProviderOperationKind
 }
 object IWebAccountProviderOperation {
   

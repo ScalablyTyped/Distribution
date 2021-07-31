@@ -2,26 +2,24 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderLineItemShippingDetails extends StObject {
   
   /**
     * The delivery by date, in ISO 8601 format.
     */
-  var deliverByDate: js.UndefOr[String] = js.native
+  var deliverByDate: js.UndefOr[String] = js.undefined
   
   /**
     * Details of the shipping method.
     */
-  var method: js.UndefOr[SchemaOrderLineItemShippingDetailsMethod] = js.native
+  var method: js.UndefOr[SchemaOrderLineItemShippingDetailsMethod] = js.undefined
   
   /**
     * The ship by date, in ISO 8601 format.
     */
-  var shipByDate: js.UndefOr[String] = js.native
+  var shipByDate: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderLineItemShippingDetails {
   

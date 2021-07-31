@@ -10,7 +10,6 @@ import typings.firefoxWebextBrowser.browser.contextualIdentities.QueryDetails
 import typings.firefoxWebextBrowser.browser.contextualIdentities.UpdateDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,22 +21,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object contextualIdentities {
   
+  @JSGlobal("browser.contextualIdentities")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a contextual identity with the given data.
     * @param details Details about the contextual identity being created.
     */
-  @JSGlobal("browser.contextualIdentities.create")
-  @js.native
-  def create(details: CreateDetails): js.Promise[ContextualIdentity] = js.native
+  @scala.inline
+  def create(details: CreateDetails): js.Promise[ContextualIdentity] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ContextualIdentity]]
   
   /* contextualIdentities functions */
   /**
     * Retrieves information about a single contextual identity.
     * @param cookieStoreId The ID of the contextual identity cookie store.
     */
-  @JSGlobal("browser.contextualIdentities.get")
-  @js.native
-  def get(cookieStoreId: String): js.Promise[ContextualIdentity] = js.native
+  @scala.inline
+  def get(cookieStoreId: String): js.Promise[ContextualIdentity] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(cookieStoreId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ContextualIdentity]]
   
   /** Fired when a new container is created. */
   @JSGlobal("browser.contextualIdentities.onCreated")
@@ -59,24 +60,21 @@ object contextualIdentities {
     * Retrieves all contextual identities
     * @param details Information to filter the contextual identities being retrieved.
     */
-  @JSGlobal("browser.contextualIdentities.query")
-  @js.native
-  def query(details: QueryDetails): js.Promise[js.Array[ContextualIdentity]] = js.native
+  @scala.inline
+  def query(details: QueryDetails): js.Promise[js.Array[ContextualIdentity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ContextualIdentity]]]
   
   /**
     * Deletes a contetual identity by its cookie Store ID.
     * @param cookieStoreId The ID of the contextual identity cookie store.
     */
-  @JSGlobal("browser.contextualIdentities.remove")
-  @js.native
-  def remove(cookieStoreId: String): js.Promise[ContextualIdentity] = js.native
+  @scala.inline
+  def remove(cookieStoreId: String): js.Promise[ContextualIdentity] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(cookieStoreId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ContextualIdentity]]
   
   /**
     * Updates a contextual identity with the given data.
     * @param cookieStoreId The ID of the contextual identity cookie store.
     * @param details Details about the contextual identity being created.
     */
-  @JSGlobal("browser.contextualIdentities.update")
-  @js.native
-  def update(cookieStoreId: String, details: UpdateDetails): js.Promise[ContextualIdentity] = js.native
+  @scala.inline
+  def update(cookieStoreId: String, details: UpdateDetails): js.Promise[ContextualIdentity] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(cookieStoreId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ContextualIdentity]]
 }

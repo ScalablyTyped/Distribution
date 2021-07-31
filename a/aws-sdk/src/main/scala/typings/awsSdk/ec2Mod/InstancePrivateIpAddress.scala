@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancePrivateIpAddress extends StObject {
   
   /**
     * The association information for an Elastic IP address for the network interface.
     */
-  var Association: js.UndefOr[InstanceNetworkInterfaceAssociation] = js.native
+  var Association: js.UndefOr[InstanceNetworkInterfaceAssociation] = js.undefined
   
   /**
     * Indicates whether this IPv4 address is the primary private IP address of the network interface.
     */
-  var Primary: js.UndefOr[Boolean] = js.native
+  var Primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The private IPv4 DNS name.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The private IPv4 address of the network interface.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
 }
 object InstancePrivateIpAddress {
   

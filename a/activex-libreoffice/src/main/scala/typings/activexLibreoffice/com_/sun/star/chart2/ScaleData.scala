@@ -4,26 +4,24 @@ import typings.activexLibreoffice.com_.sun.star.chart.TimeIncrement
 import typings.activexLibreoffice.com_.sun.star.chart2.data.XLabeledDataSequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleData extends StObject {
   
   /** if true an {@link AxisType} CATEGORY is interpreted as DATE if the underlying data given in Categories are dates */
-  var AutoDateAxis: Boolean = js.native
+  var AutoDateAxis: Boolean
   
   /**
     * describes the type of the axis.
     *
     * It can be a real number axis or a category axis or something else. {@link AxisType} is one value out of the constant group {@link AxisType} .
     */
-  var AxisType: Double = js.native
+  var AxisType: Double
   
-  var Categories: XLabeledDataSequence = js.native
+  var Categories: XLabeledDataSequence
   
   /** increment data to be used for not date-time axis */
-  var IncrementData: typings.activexLibreoffice.com_.sun.star.chart2.IncrementData = js.native
+  var IncrementData: typings.activexLibreoffice.com_.sun.star.chart2.IncrementData
   
   /**
     * if the any contains a double value this is used as a fixed minimum. Otherwise, if the any is empty or contains an incompatible type, the minimum is
@@ -31,7 +29,7 @@ trait ScaleData extends StObject {
     *
     * If the minimum is automatic, this means, each view that represents the model containing this scale, has to calculate a minimum by its own means.
     */
-  var Maximum: js.Any = js.native
+  var Maximum: js.Any
   
   /**
     * if the any contains a double value this is used as a fixed maximum. Otherwise, if the any is empty or contains an incompatible type, the maximum is
@@ -39,7 +37,7 @@ trait ScaleData extends StObject {
     *
     * If the maximum is automatic, this means, each view that represents the model containing this scale, has to calculate a maximum by its own means.
     */
-  var Minimum: js.Any = js.native
+  var Minimum: js.Any
   
   /**
     * {@link Axis} orientation (standard or reversed).
@@ -49,24 +47,24 @@ trait ScaleData extends StObject {
     *
     * Note: Is this a good place for the axis orientation? Two axes may use the same scale, but point into two different directions.
     */
-  var Orientation: AxisOrientation = js.native
+  var Orientation: AxisOrientation
   
   /**
     * The Origin indicates where other axes cross this axis. If the any contains a double value that value is used. Otherwise an appropriate value has to be
     * calculated by that instances using Origin.
     */
-  var Origin: js.Any = js.native
+  var Origin: js.Any
   
-  var Scaling: XScaling = js.native
+  var Scaling: XScaling
   
   /**
     * describes whether data points on category or date axis are placed between tickmarks or not if true the maximum on the scale will be expanded for one
     * interval
     */
-  var ShiftedCategoryPosition: Boolean = js.native
+  var ShiftedCategoryPosition: Boolean
   
   /** increment data to be used in case of date-time axis */
-  var TimeIncrement: typings.activexLibreoffice.com_.sun.star.chart.TimeIncrement = js.native
+  var TimeIncrement: typings.activexLibreoffice.com_.sun.star.chart.TimeIncrement
 }
 object ScaleData {
   

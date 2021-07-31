@@ -2,26 +2,24 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseStyle extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  val id: String = js.native
+  val id: String
   
-  val key: String = js.native
+  val key: String
   
-  var name: String = js.native
+  var name: String
   
-  var remote: Boolean = js.native
+  var remote: Boolean
   
   // The key to use with "importStyleByKeyAsync"
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  val `type`: StyleType = js.native
+  val `type`: StyleType
 }
 object BaseStyle {
   

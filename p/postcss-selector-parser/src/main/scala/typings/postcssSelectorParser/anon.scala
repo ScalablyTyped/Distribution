@@ -2,25 +2,23 @@ package typings.postcssSelectorParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait After extends StObject {
     
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
-    var attribute: js.UndefOr[PartialSpaceAround] = js.native
+    var attribute: js.UndefOr[PartialSpaceAround] = js.undefined
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
     
-    var insensitive: js.UndefOr[PartialSpaceAround] = js.native
+    var insensitive: js.UndefOr[PartialSpaceAround] = js.undefined
     
-    var operator: js.UndefOr[PartialSpaceAround] = js.native
+    var operator: js.UndefOr[PartialSpaceAround] = js.undefined
     
-    var value: js.UndefOr[PartialSpaceAround] = js.native
+    var value: js.UndefOr[PartialSpaceAround] = js.undefined
   }
   object After {
     
@@ -71,16 +69,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Attribute extends StObject {
     
-    var attribute: js.UndefOr[PartialSpaces] = js.native
+    var attribute: js.UndefOr[PartialSpaces] = js.undefined
     
-    var insensitive: js.UndefOr[PartialSpaces] = js.native
+    var insensitive: js.UndefOr[PartialSpaces] = js.undefined
     
-    var operator: js.UndefOr[PartialSpaces] = js.native
+    var operator: js.UndefOr[PartialSpaces] = js.undefined
     
-    var value: js.UndefOr[PartialSpaces] = js.native
+    var value: js.UndefOr[PartialSpaces] = js.undefined
   }
   object Attribute {
     
@@ -119,20 +116,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Before extends StObject {
     
-    var after: String = js.native
+    var after: String
     
-    var attribute: js.UndefOr[PartialSpaces] = js.native
+    var attribute: js.UndefOr[PartialSpaces] = js.undefined
     
-    var before: String = js.native
+    var before: String
     
-    var insensitive: js.UndefOr[PartialSpaces] = js.native
+    var insensitive: js.UndefOr[PartialSpaces] = js.undefined
     
-    var operator: js.UndefOr[PartialSpaces] = js.native
+    var operator: js.UndefOr[PartialSpaces] = js.undefined
     
-    var value: js.UndefOr[PartialSpaces] = js.native
+    var value: js.UndefOr[PartialSpaces] = js.undefined
   }
   object Before {
     
@@ -177,12 +173,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     
@@ -203,22 +198,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Insensitive extends StObject {
     
-    var attribute: js.UndefOr[String] = js.native
+    var attribute: js.UndefOr[String] = js.undefined
     
-    var insensitive: js.UndefOr[String] = js.native
+    var insensitive: js.UndefOr[String] = js.undefined
     
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
-    var spaces: js.UndefOr[Attribute] = js.native
+    var spaces: js.UndefOr[Attribute] = js.undefined
     
     /** @deprecated The attribute value is unquoted, use that instead.. */
-    var unquoted: js.UndefOr[String] = js.native
+    var unquoted: js.UndefOr[String] = js.undefined
     
     /** The value of the attribute with quotes and escapes. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Insensitive {
     
@@ -270,12 +264,11 @@ object anon {
   }
   
   /* Inlined std.Partial<postcss-selector-parser.postcss-selector-parser.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var lossless: js.UndefOr[Boolean] = js.native
+    var lossless: js.UndefOr[Boolean] = js.undefined
     
-    var updateSelector: js.UndefOr[Boolean] = js.native
+    var updateSelector: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     
@@ -303,12 +296,11 @@ object anon {
   }
   
   /* Inlined std.Partial<postcss-selector-parser.postcss-selector-parser.SpaceAround> */
-  @js.native
   trait PartialSpaceAround extends StObject {
     
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
   }
   object PartialSpaceAround {
     
@@ -336,12 +328,11 @@ object anon {
   }
   
   /* Inlined std.Partial<postcss-selector-parser.postcss-selector-parser.Spaces> */
-  @js.native
   trait PartialSpaces extends StObject {
     
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
   }
   object PartialSpaces {
     

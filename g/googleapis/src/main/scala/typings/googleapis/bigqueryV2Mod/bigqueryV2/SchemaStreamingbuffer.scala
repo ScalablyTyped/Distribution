@@ -2,30 +2,28 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaStreamingbuffer extends StObject {
   
   /**
     * [Output-only] A lower-bound estimate of the number of bytes currently in
     * the streaming buffer.
     */
-  var estimatedBytes: js.UndefOr[String] = js.native
+  var estimatedBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] A lower-bound estimate of the number of rows currently in
     * the streaming buffer.
     */
-  var estimatedRows: js.UndefOr[String] = js.native
+  var estimatedRows: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Contains the timestamp of the oldest entry in the streaming
     * buffer, in milliseconds since the epoch, if the streaming buffer is
     * available.
     */
-  var oldestEntryTime: js.UndefOr[String] = js.native
+  var oldestEntryTime: js.UndefOr[String] = js.undefined
 }
 object SchemaStreamingbuffer {
   

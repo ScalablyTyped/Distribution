@@ -8,7 +8,6 @@ import typings.antdMobile.menuPropsTypeMod.ValueType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
@@ -50,7 +49,7 @@ object menuMod {
     
     def getNewFsv(props: MenuProps): String = js.native
     
-    def getSelectValue(dataItem: DataItem): js.Array[_] = js.native
+    def getSelectValue(dataItem: DataItem): js.Array[js.Any] = js.native
     
     def onClickFirstLevelItem(dataItem: DataItem): Unit = js.native
     
@@ -61,14 +60,13 @@ object menuMod {
     def onMenuOk(): Unit = js.native
   }
   
-  @js.native
   trait StateType extends StObject {
     
-    var firstLevelSelectValue: String = js.native
+    var firstLevelSelectValue: String
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[ValueType] = js.native
+    var value: js.UndefOr[ValueType] = js.undefined
   }
   object StateType {
     

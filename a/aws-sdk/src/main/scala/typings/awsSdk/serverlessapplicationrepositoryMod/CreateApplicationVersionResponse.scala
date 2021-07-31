@@ -2,26 +2,24 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationVersionResponse extends StObject {
   
   /**
     * The application Amazon Resource Name (ARN).
     */
-  var ApplicationId: js.UndefOr[string] = js.native
+  var ApplicationId: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time this resource was created.
     */
-  var CreationTime: js.UndefOr[string] = js.native
+  var CreationTime: js.UndefOr[string] = js.undefined
   
   /**
     * An array of parameter types supported by the application.
     */
-  var ParameterDefinitions: js.UndefOr[listOfParameterDefinition] = js.native
+  var ParameterDefinitions: js.UndefOr[listOfParameterDefinition] = js.undefined
   
   /**
     * A list of values that you must specify before you can deploy certain applications.
@@ -48,35 +46,35 @@ trait CreateApplicationVersionResponse extends StObject {
     all permissions associated with the application before deploying. If you don't specify
     this parameter for an application that requires capabilities, the call will fail.
     */
-  var RequiredCapabilities: js.UndefOr[listOfCapability] = js.native
+  var RequiredCapabilities: js.UndefOr[listOfCapability] = js.undefined
   
   /**
     * Whether all of the AWS resources contained in this application are supported in the region
     in which it is being retrieved.
     */
-  var ResourcesSupported: js.UndefOr[boolean] = js.native
+  var ResourcesSupported: js.UndefOr[boolean] = js.undefined
   
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: js.UndefOr[string] = js.native
+  var SemanticVersion: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
     */
-  var SourceCodeArchiveUrl: js.UndefOr[string] = js.native
+  var SourceCodeArchiveUrl: js.UndefOr[string] = js.undefined
   
   /**
     * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
     */
-  var SourceCodeUrl: js.UndefOr[string] = js.native
+  var SourceCodeUrl: js.UndefOr[string] = js.undefined
   
   /**
     * A link to the packaged AWS SAM template of your application.
     */
-  var TemplateUrl: js.UndefOr[string] = js.native
+  var TemplateUrl: js.UndefOr[string] = js.undefined
 }
 object CreateApplicationVersionResponse {
   

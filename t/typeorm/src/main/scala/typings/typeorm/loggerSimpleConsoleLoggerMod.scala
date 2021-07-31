@@ -11,14 +11,15 @@ import typings.typeorm.typeormStrings.schema
 import typings.typeorm.typeormStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerSimpleConsoleLoggerMod {
   
   @JSImport("typeorm/logger/SimpleConsoleLogger", "SimpleConsoleLogger")
   @js.native
-  class SimpleConsoleLogger () extends Logger {
+  class SimpleConsoleLogger ()
+    extends StObject
+       with Logger {
     def this(options: js.Array[log | info | warn | query | schema | error | migration]) = this()
     def this(options: Boolean) = this()
     def this(options: all) = this()
@@ -29,6 +30,6 @@ object loggerSimpleConsoleLoggerMod {
       * Converts parameters to a string.
       * Sometimes parameters can have circular objects and therefor we are handle this case too.
       */
-    /* protected */ def stringifyParams(parameters: js.Array[_]): String | js.Array[_] = js.native
+    /* protected */ def stringifyParams(parameters: js.Array[js.Any]): String | js.Array[js.Any] = js.native
   }
 }

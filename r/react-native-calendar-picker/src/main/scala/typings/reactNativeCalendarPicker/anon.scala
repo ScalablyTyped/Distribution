@@ -4,19 +4,17 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContainerStyle extends StObject {
     
-    var containerStyle: js.UndefOr[ViewStyle] = js.native
+    var containerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
   }
   object ContainerStyle {
     
@@ -49,12 +47,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
   }
   object Style {
     

@@ -4,53 +4,51 @@ import typings.activexLibreoffice.com_.sun.star.awt.FontSlant
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a set of properties to describe the style of characters in complex texts. */
-@js.native
 trait CharacterPropertiesComplex extends StObject {
   
   /** This property contains the text encoding of the font as specified in {@link com.sun.star.awt.CharSet} . */
-  var CharFontCharSetComplex: Double = js.native
+  var CharFontCharSetComplex: Double
   
   /** This property contains font family as specified in {@link com.sun.star.awt.FontFamily} . */
-  var CharFontFamilyComplex: Double = js.native
+  var CharFontFamilyComplex: Double
   
   /**
     * This property specifies the name of the font style.
     *
     * It may contain more than one name separated by comma.
     */
-  var CharFontNameComplex: String = js.native
+  var CharFontNameComplex: String
   
   /** This property contains the font pitch as specified in {@link com.sun.star.awt.FontPitch} . */
-  var CharFontPitchComplex: Double = js.native
+  var CharFontPitchComplex: Double
   
   /**
     * This property contains the name of the font style.
     *
     * This property may be empty.
     */
-  var CharFontStyleNameComplex: String = js.native
+  var CharFontStyleNameComplex: String
   
   /** This value contains the height of the characters in point. */
-  var CharHeightComplex: Double = js.native
+  var CharHeightComplex: Double
   
   /** contains the value of the locale. */
-  var CharLocaleComplex: Locale = js.native
+  var CharLocaleComplex: Locale
   
   /**
     * This property contains the value of the posture of the document.
     * @see com.sun.star.awt.FontSlant
     */
-  var CharPostureComplex: FontSlant = js.native
+  var CharPostureComplex: FontSlant
   
   /**
     * This property contains the value of the font weight.
     * @see com.sun.star.awt.FontWeight
     */
-  var CharWeightComplex: Double = js.native
+  var CharWeightComplex: Double
 }
 object CharacterPropertiesComplex {
   

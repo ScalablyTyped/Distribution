@@ -2,20 +2,18 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SslCerts insert request.
   */
-@js.native
 trait SchemaSslCertsInsertRequest extends StObject {
   
   /**
     * User supplied name. Must be a distinct name from the other certificates
     * for this instance.
     */
-  var commonName: js.UndefOr[String] = js.native
+  var commonName: js.UndefOr[String] = js.undefined
 }
 object SchemaSslCertsInsertRequest {
   

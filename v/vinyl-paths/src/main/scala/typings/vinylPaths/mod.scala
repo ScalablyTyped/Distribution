@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,7 +15,9 @@ object mod extends Shortcut {
   type Callback = js.Function1[/* path */ String, js.Any]
   
   @js.native
-  trait Paths extends ReadWriteStream {
+  trait Paths
+    extends StObject
+       with ReadWriteStream {
     
     var paths: js.Array[String] = js.native
   }

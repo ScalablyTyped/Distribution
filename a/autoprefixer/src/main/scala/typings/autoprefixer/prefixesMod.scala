@@ -3,24 +3,30 @@ package typings.autoprefixer
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prefixesMod {
   
   @JSImport("autoprefixer/lib/prefixes", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PrefixesImpl {
+  class ^ protected ()
+    extends StObject
+       with PrefixesImpl {
     def this(data: js.Array[String], browsers: typings.autoprefixer.browsersMod.^) = this()
     def this(data: js.Array[String], browsers: typings.autoprefixer.browsersMod.^, options: js.Any) = this()
-  }
-  
-  @js.native
-  trait Prefixes extends StObject {
     
+    /* CompleteClass */
     var remove: StringDictionary[js.Any] = js.native
     
-    def unprefixed(value: String): String = js.native
+    /* CompleteClass */
+    override def unprefixed(value: String): String = js.native
+  }
+  
+  trait Prefixes extends StObject {
+    
+    var remove: StringDictionary[js.Any]
+    
+    def unprefixed(value: String): String
   }
   object Prefixes {
     
@@ -41,8 +47,9 @@ object prefixesMod {
     }
   }
   
-  @js.native
-  trait PrefixesImpl extends Prefixes
+  trait PrefixesImpl
+    extends StObject
+       with Prefixes
   object PrefixesImpl {
     
     @scala.inline

@@ -2,11 +2,12 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadingComponent extends Component {
+trait LoadingComponent
+  extends StObject
+     with Component {
   
   /**
     * The component displayed when the loading property is false

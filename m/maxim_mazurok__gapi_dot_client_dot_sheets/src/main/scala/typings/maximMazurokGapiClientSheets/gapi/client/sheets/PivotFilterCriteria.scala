@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotFilterCriteria extends StObject {
   
   /**
@@ -15,16 +13,16 @@ trait PivotFilterCriteria extends StObject {
     * For example, if the source data has columns named "Revenue" and "Cost" and a condition is applied to the "Revenue" column with type `NUMBER_GREATER` and value `=Cost`, then only
     * columns where "Revenue" > "Cost" are included.
     */
-  var condition: js.UndefOr[BooleanCondition] = js.native
+  var condition: js.UndefOr[BooleanCondition] = js.undefined
   
   /**
     * Whether values are visible by default. If true, the visible_values are ignored, all values that meet condition (if specified) are shown. If false, values that are both in
     * visible_values and meet condition are shown.
     */
-  var visibleByDefault: js.UndefOr[Boolean] = js.native
+  var visibleByDefault: js.UndefOr[Boolean] = js.undefined
   
   /** Values that should be included. Values not listed here are excluded. */
-  var visibleValues: js.UndefOr[js.Array[String]] = js.native
+  var visibleValues: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PivotFilterCriteria {
   

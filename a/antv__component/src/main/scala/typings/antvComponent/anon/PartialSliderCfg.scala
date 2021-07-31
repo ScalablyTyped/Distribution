@@ -4,70 +4,68 @@ import typings.antvComponent.sliderSliderMod.TrendCfg
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@antv/component.@antv/component/lib/slider/slider.SliderCfg> */
-@js.native
 trait PartialSliderCfg extends StObject {
   
-  var LocationType: js.UndefOr[String] = js.native
+  var LocationType: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var animateOption: js.UndefOr[typings.antvComponent.typesMod.AnimateOption] = js.native
+  var animateOption: js.UndefOr[typings.antvComponent.typesMod.AnimateOption] = js.undefined
   
-  var backgroundStyle: js.UndefOr[js.Any] = js.native
+  var backgroundStyle: js.UndefOr[js.Any] = js.undefined
   
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[IGroup] = js.native
+  var container: js.UndefOr[IGroup] = js.undefined
   
-  var defaultCfg: js.UndefOr[js.Object] = js.native
+  var defaultCfg: js.UndefOr[js.Object] = js.undefined
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var events: js.UndefOr[js.Object] = js.native
+  var events: js.UndefOr[js.Object] = js.undefined
   
-  var foregroundStyle: js.UndefOr[js.Any] = js.native
+  var foregroundStyle: js.UndefOr[js.Any] = js.undefined
   
-  var group: js.UndefOr[IGroup] = js.native
+  var group: js.UndefOr[IGroup] = js.undefined
   
-  var handlerStyle: js.UndefOr[js.Any] = js.native
+  var handlerStyle: js.UndefOr[js.Any] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var maxLimit: js.UndefOr[Double] = js.native
+  var maxLimit: js.UndefOr[Double] = js.undefined
   
-  var maxText: js.UndefOr[String] = js.native
+  var maxText: js.UndefOr[String] = js.undefined
   
-  var minLimit: js.UndefOr[Double] = js.native
+  var minLimit: js.UndefOr[Double] = js.undefined
   
-  var minText: js.UndefOr[String] = js.native
+  var minText: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var textStyle: js.UndefOr[js.Any] = js.native
+  var textStyle: js.UndefOr[js.Any] = js.undefined
   
-  var trendCfg: js.UndefOr[TrendCfg] = js.native
+  var trendCfg: js.UndefOr[TrendCfg] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var updateAutoRender: js.UndefOr[Boolean] = js.native
+  var updateAutoRender: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object PartialSliderCfg {
   

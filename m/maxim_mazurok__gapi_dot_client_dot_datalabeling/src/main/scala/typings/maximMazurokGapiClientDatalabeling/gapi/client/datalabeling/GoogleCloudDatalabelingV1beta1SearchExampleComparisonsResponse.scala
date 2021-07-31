@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse extends StObject {
   
   /** A list of example comparisons matching the search criteria. */
-  var exampleComparisons: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1ExampleComparison]] = js.native
+  var exampleComparisons: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1ExampleComparison]] = js.undefined
   
   /** A token to retrieve next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse {
   

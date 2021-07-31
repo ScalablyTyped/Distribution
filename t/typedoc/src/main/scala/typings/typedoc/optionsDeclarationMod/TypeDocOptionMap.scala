@@ -3,89 +3,87 @@ package typings.typedoc.optionsDeclarationMod
 import typings.typedoc.anon.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeDocOptionMap extends StObject {
   
-  var categorizeByGroup: Boolean = js.native
+  var categorizeByGroup: Boolean
   
-  var categoryOrder: js.Array[String] = js.native
+  var categoryOrder: js.Array[String]
   
-  var defaultCategory: String = js.native
+  var defaultCategory: String
   
-  var disableOutputCheck: Boolean = js.native
+  var disableOutputCheck: Boolean
   
-  var disableSources: Boolean = js.native
+  var disableSources: Boolean
   
-  var entryPoint: String = js.native
+  var entryPoint: String
   
-  var exclude: js.Array[String] = js.native
+  var exclude: js.Array[String]
   
-  var excludeExternals: Boolean = js.native
+  var excludeExternals: Boolean
   
-  var excludeNotDocumented: Boolean = js.native
+  var excludeNotDocumented: Boolean
   
-  var excludeNotExported: Boolean = js.native
+  var excludeNotExported: Boolean
   
-  var excludePrivate: Boolean = js.native
+  var excludePrivate: Boolean
   
-  var excludeProtected: Boolean = js.native
+  var excludeProtected: Boolean
   
-  var excludeTags: js.Array[String] = js.native
+  var excludeTags: js.Array[String]
   
-  var externalPattern: js.Array[String] = js.native
+  var externalPattern: js.Array[String]
   
-  var gaID: String = js.native
+  var gaID: String
   
-  var gaSite: String = js.native
+  var gaSite: String
   
-  var gitRemote: String = js.native
+  var gitRemote: String
   
-  var gitRevision: String = js.native
+  var gitRevision: String
   
-  var help: Boolean = js.native
+  var help: Boolean
   
-  var hideGenerator: Boolean = js.native
+  var hideGenerator: Boolean
   
-  var ignoreCompilerErrors: Boolean = js.native
+  var ignoreCompilerErrors: Boolean
   
-  var includeDeclarations: Boolean = js.native
+  var includeDeclarations: Boolean
   
-  var includeVersion: Boolean = js.native
+  var includeVersion: Boolean
   
-  var includes: String = js.native
+  var includes: String
   
-  var inputFiles: js.Array[String] = js.native
+  var inputFiles: js.Array[String]
   
-  var json: String = js.native
+  var json: String
   
-  var listInvalidSymbolLinks: Boolean = js.native
+  var listInvalidSymbolLinks: Boolean
   
-  var logger: js.Any = js.native
+  var logger: js.Any
   
-  var media: String = js.native
+  var media: String
   
-  var mode: File = js.native
+  var mode: File
   
-  var name: String = js.native
+  var name: String
   
-  var options: String = js.native
+  var options: String
   
-  var out: String = js.native
+  var out: String
   
-  var plugin: js.Array[String] = js.native
+  var plugin: js.Array[String]
   
-  var readme: String = js.native
+  var readme: String
   
-  var theme: String = js.native
+  var theme: String
   
-  var toc: js.Array[String] = js.native
+  var toc: js.Array[String]
   
-  var tsconfig: String = js.native
+  var tsconfig: String
   
-  var version: Boolean = js.native
+  var version: Boolean
 }
 object TypeDocOptionMap {
   

@@ -10,9 +10,9 @@ A module for node.js and the browser that takes in text and returns text that is
 | ------------------ | :-------------: |
 | Full name          | stopword |
 | Keywords           | stopword, stopwords, document, processing, search, norch, search-index, nlp |
-| # releases         | 22 |
-| # dependents       | 34 |
-| # downloads        | 325052 |
+| # releases         | 24 |
+| # dependents       | 37 |
+| # downloads        | 395982 |
 | # stars            | 6 |
 
 ## Links

@@ -2,24 +2,22 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User metadata to include when importing a user.
   */
-@js.native
 trait UserMetadataRequest extends StObject {
   
   /**
     * The date the user was created, formatted as a UTC string.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date the user last signed in, formatted as a UTC string.
     */
-  var lastSignInTime: js.UndefOr[String] = js.native
+  var lastSignInTime: js.UndefOr[String] = js.undefined
 }
 object UserMetadataRequest {
   

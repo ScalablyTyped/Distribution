@@ -2,19 +2,17 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelsQuery extends StObject {
   
   // the channel id prefix (returns channels with this prefix)
-  var marker: String = js.native
+  var marker: String
   
   // the channel id marker (returns channels after this id)
-  var `max-keys `: Double = js.native
+  var `max-keys `: Double
   
-  var prefix: String = js.native
+  var prefix: String
 }
 object ListChannelsQuery {
   

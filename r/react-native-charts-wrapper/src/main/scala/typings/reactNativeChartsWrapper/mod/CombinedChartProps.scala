@@ -7,21 +7,21 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LINE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SCATTER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CombinedChartProps extends BarLineChartBase {
+trait CombinedChartProps
+  extends StObject
+     with BarLineChartBase {
   
-  var data: js.UndefOr[CombinedData] = js.native
+  var data: js.UndefOr[CombinedData] = js.undefined
   
-  var drawBarShadow: js.UndefOr[Boolean] = js.native
+  var drawBarShadow: js.UndefOr[Boolean] = js.undefined
   
-  var drawOrder: js.UndefOr[js.Array[BAR | BUBBLE | LINE | CANDLE | SCATTER]] = js.native
+  var drawOrder: js.UndefOr[js.Array[BAR | BUBBLE | LINE | CANDLE | SCATTER]] = js.undefined
   
-  var drawValueAboveBar: js.UndefOr[Boolean] = js.native
+  var drawValueAboveBar: js.UndefOr[Boolean] = js.undefined
   
-  var highlightFullBarEnabled: js.UndefOr[Boolean] = js.native
+  var highlightFullBarEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object CombinedChartProps {
   

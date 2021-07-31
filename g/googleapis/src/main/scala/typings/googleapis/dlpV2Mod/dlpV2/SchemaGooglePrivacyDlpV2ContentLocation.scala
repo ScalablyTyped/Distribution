@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Findings container location data.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ContentLocation extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2ContentLocation extends StObject {
     * has no string identifier (for an example an image contained within a
     * document).
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * Findings container modification timestamp, if applicable. For Google
@@ -29,28 +27,28 @@ trait SchemaGooglePrivacyDlpV2ContentLocation extends StObject {
     * table contains last_modified_time property. For Datastore - not
     * populated.
     */
-  var containerTimestamp: js.UndefOr[String] = js.native
+  var containerTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Findings container version, if available (&quot;generation&quot; for
     * Google Cloud Storage).
     */
-  var containerVersion: js.UndefOr[String] = js.native
+  var containerVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Location data for document files.
     */
-  var documentLocation: js.UndefOr[SchemaGooglePrivacyDlpV2DocumentLocation] = js.native
+  var documentLocation: js.UndefOr[SchemaGooglePrivacyDlpV2DocumentLocation] = js.undefined
   
   /**
     * Location within an image&#39;s pixels.
     */
-  var imageLocation: js.UndefOr[SchemaGooglePrivacyDlpV2ImageLocation] = js.native
+  var imageLocation: js.UndefOr[SchemaGooglePrivacyDlpV2ImageLocation] = js.undefined
   
   /**
     * Location within a row or record of a database table.
     */
-  var recordLocation: js.UndefOr[SchemaGooglePrivacyDlpV2RecordLocation] = js.native
+  var recordLocation: js.UndefOr[SchemaGooglePrivacyDlpV2RecordLocation] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ContentLocation {
   

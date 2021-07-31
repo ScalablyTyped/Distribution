@@ -12,7 +12,7 @@ upng imagemin plugin
 | Keywords           | apng, compress, image, imageminplugin, img, minify, optimize, png, upng, upng-js |
 | # releases         | 12 |
 | # dependents       | 8 |
-| # downloads        | 25422 |
+| # downloads        | 24390 |
 | # stars            | 0 |
 
 ## Links

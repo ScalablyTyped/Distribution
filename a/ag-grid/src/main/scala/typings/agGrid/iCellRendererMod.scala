@@ -9,17 +9,15 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iCellRendererMod {
   
-  @js.native
   trait ICellRenderer extends StObject {
     
     /** Get the cell to refresh. Return true if successful. Return false if not (or you don't have refresh logic),
       * then the grid will refresh the cell for you. */
-    def refresh(params: js.Any): Boolean = js.native
+    def refresh(params: js.Any): Boolean
   }
   object ICellRenderer {
     
@@ -37,9 +35,9 @@ object iCellRendererMod {
     }
   }
   
-  @js.native
   trait ICellRendererComp
-    extends ICellRenderer
+    extends StObject
+       with ICellRenderer
        with IComponent[ICellRendererParams]
   object ICellRendererComp {
     
@@ -52,45 +50,44 @@ object iCellRendererMod {
   
   type ICellRendererFunc = js.Function1[/* params */ js.Any, HTMLElement | String]
   
-  @js.native
   trait ICellRendererParams extends StObject {
     
     @JSName("$scope")
-    var $scope: js.Any = js.native
+    var $scope: js.Any
     
-    def addRenderedRowListener(eventType: String, listener: js.Function): Unit = js.native
+    def addRenderedRowListener(eventType: String, listener: js.Function): Unit
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    var column: Column = js.native
+    var column: Column
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var eGridCell: HTMLElement = js.native
+    var eGridCell: HTMLElement
     
-    var eParentOfValue: HTMLElement = js.native
+    var eParentOfValue: HTMLElement
     
-    def formatValue(value: js.Any): js.Any = js.native
+    def formatValue(value: js.Any): js.Any
     
-    def getValue(): js.Any = js.native
+    def getValue(): js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
     
-    def refreshCell(): Unit = js.native
+    def refreshCell(): Unit
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
-    def setValue(value: js.Any): Unit = js.native
+    def setValue(value: js.Any): Unit
     
-    var value: js.Any = js.native
+    var value: js.Any
     
-    var valueFormatted: js.Any = js.native
+    var valueFormatted: js.Any
   }
   object ICellRendererParams {
     

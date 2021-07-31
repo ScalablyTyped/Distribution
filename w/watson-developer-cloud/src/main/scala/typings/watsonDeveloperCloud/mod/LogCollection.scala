@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** LogCollection. */
-@js.native
 trait LogCollection extends StObject {
   
   /** An array of objects describing log events. */
-  var logs: js.Array[Log] = js.native
+  var logs: js.Array[Log]
   
   /** The pagination data for the returned objects. */
-  var pagination: LogPagination = js.native
+  var pagination: LogPagination
 }
 object LogCollection {
   

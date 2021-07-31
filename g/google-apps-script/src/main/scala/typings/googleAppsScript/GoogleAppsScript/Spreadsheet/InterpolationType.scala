@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,17 +15,27 @@ sealed trait InterpolationType extends StObject
 object InterpolationType extends StObject {
   
   @js.native
-  sealed trait MAX extends InterpolationType
+  sealed trait MAX
+    extends StObject
+       with InterpolationType
   
   @js.native
-  sealed trait MIN extends InterpolationType
+  sealed trait MIN
+    extends StObject
+       with InterpolationType
   
   @js.native
-  sealed trait NUMBER extends InterpolationType
+  sealed trait NUMBER
+    extends StObject
+       with InterpolationType
   
   @js.native
-  sealed trait PERCENT extends InterpolationType
+  sealed trait PERCENT
+    extends StObject
+       with InterpolationType
   
   @js.native
-  sealed trait PERCENTILE extends InterpolationType
+  sealed trait PERCENTILE
+    extends StObject
+       with InterpolationType
 }

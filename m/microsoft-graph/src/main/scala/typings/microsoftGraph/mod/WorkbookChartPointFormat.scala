@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartPointFormat extends Entity {
+trait WorkbookChartPointFormat
+  extends StObject
+     with Entity {
   
   // Represents the fill format of a chart, which includes background formating information. Read-only.
-  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.native
+  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.undefined
 }
 object WorkbookChartPointFormat {
   

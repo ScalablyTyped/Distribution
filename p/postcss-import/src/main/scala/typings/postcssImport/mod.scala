@@ -4,7 +4,6 @@ import typings.postcss.mod.AcceptedPlugin
 import typings.postcss.mod.Transformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,14 +25,15 @@ object mod {
     * - Imports which are not modified (by `options.filter` or because they are remote imports) are moved to the top of the output.
     * - **This plugin attempts to follow the CSS `@import` spec**; `@import` statements must precede all other statements (besides `@charset`).
     */
-  @JSImport("postcss-import", JSImport.Namespace)
-  @js.native
-  def apply(): Transformer = js.native
-  @JSImport("postcss-import", JSImport.Namespace)
-  @js.native
-  def apply(options: AtImportOptions): Transformer = js.native
+  @scala.inline
+  def apply(): Transformer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transformer]
+  @scala.inline
+  def apply(options: AtImportOptions): Transformer = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transformer]
   
+  @JSImport("postcss-import", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait AtImportOptions extends StObject {
     
     /**
@@ -41,24 +41,24 @@ object mod {
       *
       * This option is only for adding additional directories to default resolver. If you provide your own resolver via the `resolve` configuration option above, then this value will be ignored.
       */
-    var addModulesDirectories: js.UndefOr[js.Array[String]] = js.native
+    var addModulesDirectories: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * You can overwrite the default loading way by setting this option. This function gets `(filename, importOptions)` arguments and returns content or promised content.
       */
     var load: js.UndefOr[
         js.Function2[/* filename */ String, /* importOptions */ this.type, String | js.Promise[String]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A string or an array of paths in where to look for files.
       */
-    var path: js.UndefOr[String | js.Array[String]] = js.native
+    var path: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * An array of plugins to be applied on each imported files.
       */
-    var plugins: js.UndefOr[js.Array[AcceptedPlugin]] = js.native
+    var plugins: js.UndefOr[js.Array[AcceptedPlugin]] = js.undefined
     
     /**
       * You can provide a custom path resolver with this option. This function gets `(id, basedir, importOptions)` arguments and should return a path, an array of paths or a promise resolving to
@@ -72,7 +72,7 @@ object mod {
           /* importOptions */ this.type, 
           String | js.Array[String] | (js.Thenable[String | js.Array[String]])
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Define the root where to resolve path (eg: place where `node_modules` are). Should not be used that much.
@@ -81,7 +81,7 @@ object mod {
       *
       * Default: `process.cwd()` or dirname of [the postcss from](https://github.com/postcss/postcss#node-source)
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * By default, similar files (based on the same content) are being skipped. It's to optimize output and skip similar files like `normalize.css` for example. If this behavior is not what you
@@ -89,7 +89,7 @@ object mod {
       *
       * @default true
       */
-    var skipDuplicates: js.UndefOr[Boolean] = js.native
+    var skipDuplicates: js.UndefOr[Boolean] = js.undefined
   }
   object AtImportOptions {
     

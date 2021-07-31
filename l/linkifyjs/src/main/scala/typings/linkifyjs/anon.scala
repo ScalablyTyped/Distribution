@@ -19,204 +19,210 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<std.GlobalEventHandlers> */
-  @js.native
   trait PartialGlobalEventHandler extends StObject {
     
     var addEventListener: js.UndefOr[
         js.Function2[
           abort, 
-          /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _], 
+          /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null] = js.native
+    var onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
     
-    var onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+    var onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
     
-    var onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+    var onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
     
-    var onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+    var onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
     
-    var onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+    var onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
     
-    var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null] = js.native
+    var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
     
-    var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+    var ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
     
-    var ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+    var ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
     
-    var ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+    var ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
     
-    var ondragexit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var ondragexit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+    var ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
     
-    var ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+    var ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
     
-    var ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+    var ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
     
-    var ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+    var ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
     
-    var ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onerror: js.UndefOr[OnErrorEventHandler] = js.native
+    var onerror: js.UndefOr[OnErrorEventHandler] = js.undefined
     
-    var onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null] = js.native
+    var onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
     
-    var ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+    var onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
     
-    var onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+    var onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
     
-    var onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+    var onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
     
-    var onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+    var onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
     
-    var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
-    var onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+    var onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
     
     var onprogress: js.UndefOr[
-        (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]) | Null
-      ] = js.native
+        (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null
+      ] = js.undefined
     
-    var onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null] = js.native
+    var onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
     
-    var onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
     var onsecuritypolicyviolation: js.UndefOr[
-        (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, _]) | Null
-      ] = js.native
+        (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, js.Any]) | Null
+      ] = js.undefined
     
-    var onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+    var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
     
-    var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+    var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
     
-    var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+    var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
     
-    var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+    var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
     
-    var ontransitioncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+    var ontransitioncancel: js.UndefOr[
+        (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+      ] = js.undefined
     
-    var ontransitionend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+    var ontransitionend: js.UndefOr[
+        (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+      ] = js.undefined
     
-    var ontransitionrun: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+    var ontransitionrun: js.UndefOr[
+        (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+      ] = js.undefined
     
-    var ontransitionstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+    var ontransitionstart: js.UndefOr[
+        (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+      ] = js.undefined
     
-    var onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+    var onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
     
-    var onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]) | Null] = js.native
+    var onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, js.Any]) | Null] = js.undefined
     
     var removeEventListener: js.UndefOr[
         js.Function2[
           abort, 
-          /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _], 
+          /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialGlobalEventHandler {
     
@@ -231,14 +237,14 @@ object anon {
       
       @scala.inline
       def setAddEventListener(
-        value: (abort, /* listener */ js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, _]) => Unit
+        value: (abort, /* listener */ js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, js.Any]) => Unit
       ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAddEventListenerUndefined: Self = StObject.set(x, "addEventListener", js.undefined)
       
       @scala.inline
-      def setOnabort(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, _]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+      def setOnabort(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnabortNull: Self = StObject.set(x, "onabort", null)
@@ -247,7 +253,7 @@ object anon {
       def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
       
       @scala.inline
-      def setOnanimationcancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
+      def setOnanimationcancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnanimationcancelNull: Self = StObject.set(x, "onanimationcancel", null)
@@ -256,7 +262,7 @@ object anon {
       def setOnanimationcancelUndefined: Self = StObject.set(x, "onanimationcancel", js.undefined)
       
       @scala.inline
-      def setOnanimationend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
+      def setOnanimationend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnanimationendNull: Self = StObject.set(x, "onanimationend", null)
@@ -265,7 +271,7 @@ object anon {
       def setOnanimationendUndefined: Self = StObject.set(x, "onanimationend", js.undefined)
       
       @scala.inline
-      def setOnanimationiteration(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
+      def setOnanimationiteration(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnanimationiterationNull: Self = StObject.set(x, "onanimationiteration", null)
@@ -274,7 +280,7 @@ object anon {
       def setOnanimationiterationUndefined: Self = StObject.set(x, "onanimationiteration", js.undefined)
       
       @scala.inline
-      def setOnanimationstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
+      def setOnanimationstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnanimationstartNull: Self = StObject.set(x, "onanimationstart", null)
@@ -283,7 +289,7 @@ object anon {
       def setOnanimationstartUndefined: Self = StObject.set(x, "onanimationstart", js.undefined)
       
       @scala.inline
-      def setOnauxclick(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
+      def setOnauxclick(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnauxclickNull: Self = StObject.set(x, "onauxclick", null)
@@ -292,7 +298,7 @@ object anon {
       def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
       
       @scala.inline
-      def setOnblur(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ FocusEvent, _]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+      def setOnblur(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnblurNull: Self = StObject.set(x, "onblur", null)
@@ -301,7 +307,7 @@ object anon {
       def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
       
       @scala.inline
-      def setOncancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
+      def setOncancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOncancelNull: Self = StObject.set(x, "oncancel", null)
@@ -310,7 +316,7 @@ object anon {
       def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
       
       @scala.inline
-      def setOncanplay(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+      def setOncanplay(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOncanplayNull: Self = StObject.set(x, "oncanplay", null)
@@ -319,7 +325,7 @@ object anon {
       def setOncanplayUndefined: Self = StObject.set(x, "oncanplay", js.undefined)
       
       @scala.inline
-      def setOncanplaythrough(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+      def setOncanplaythrough(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOncanplaythroughNull: Self = StObject.set(x, "oncanplaythrough", null)
@@ -328,7 +334,7 @@ object anon {
       def setOncanplaythroughUndefined: Self = StObject.set(x, "oncanplaythrough", js.undefined)
       
       @scala.inline
-      def setOnchange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+      def setOnchange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnchangeNull: Self = StObject.set(x, "onchange", null)
@@ -337,7 +343,7 @@ object anon {
       def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
       
       @scala.inline
-      def setOnclick(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+      def setOnclick(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnclickNull: Self = StObject.set(x, "onclick", null)
@@ -346,7 +352,7 @@ object anon {
       def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
       @scala.inline
-      def setOnclose(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
+      def setOnclose(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOncloseNull: Self = StObject.set(x, "onclose", null)
@@ -355,7 +361,7 @@ object anon {
       def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
       
       @scala.inline
-      def setOncontextmenu(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
+      def setOncontextmenu(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOncontextmenuNull: Self = StObject.set(x, "oncontextmenu", null)
@@ -364,7 +370,7 @@ object anon {
       def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
       
       @scala.inline
-      def setOncuechange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
+      def setOncuechange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOncuechangeNull: Self = StObject.set(x, "oncuechange", null)
@@ -373,7 +379,7 @@ object anon {
       def setOncuechangeUndefined: Self = StObject.set(x, "oncuechange", js.undefined)
       
       @scala.inline
-      def setOndblclick(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
+      def setOndblclick(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndblclickNull: Self = StObject.set(x, "ondblclick", null)
@@ -382,7 +388,7 @@ object anon {
       def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
       
       @scala.inline
-      def setOndrag(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+      def setOndrag(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndragNull: Self = StObject.set(x, "ondrag", null)
@@ -391,7 +397,7 @@ object anon {
       def setOndragUndefined: Self = StObject.set(x, "ondrag", js.undefined)
       
       @scala.inline
-      def setOndragend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+      def setOndragend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndragendNull: Self = StObject.set(x, "ondragend", null)
@@ -400,7 +406,7 @@ object anon {
       def setOndragendUndefined: Self = StObject.set(x, "ondragend", js.undefined)
       
       @scala.inline
-      def setOndragenter(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+      def setOndragenter(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndragenterNull: Self = StObject.set(x, "ondragenter", null)
@@ -409,7 +415,7 @@ object anon {
       def setOndragenterUndefined: Self = StObject.set(x, "ondragenter", js.undefined)
       
       @scala.inline
-      def setOndragexit(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
+      def setOndragexit(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndragexitNull: Self = StObject.set(x, "ondragexit", null)
@@ -418,7 +424,7 @@ object anon {
       def setOndragexitUndefined: Self = StObject.set(x, "ondragexit", js.undefined)
       
       @scala.inline
-      def setOndragleave(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+      def setOndragleave(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndragleaveNull: Self = StObject.set(x, "ondragleave", null)
@@ -427,7 +433,7 @@ object anon {
       def setOndragleaveUndefined: Self = StObject.set(x, "ondragleave", js.undefined)
       
       @scala.inline
-      def setOndragover(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+      def setOndragover(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndragoverNull: Self = StObject.set(x, "ondragover", null)
@@ -436,7 +442,7 @@ object anon {
       def setOndragoverUndefined: Self = StObject.set(x, "ondragover", js.undefined)
       
       @scala.inline
-      def setOndragstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
+      def setOndragstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndragstartNull: Self = StObject.set(x, "ondragstart", null)
@@ -445,7 +451,7 @@ object anon {
       def setOndragstartUndefined: Self = StObject.set(x, "ondragstart", js.undefined)
       
       @scala.inline
-      def setOndrop(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+      def setOndrop(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndropNull: Self = StObject.set(x, "ondrop", null)
@@ -454,7 +460,7 @@ object anon {
       def setOndropUndefined: Self = StObject.set(x, "ondrop", js.undefined)
       
       @scala.inline
-      def setOndurationchange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+      def setOndurationchange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOndurationchangeNull: Self = StObject.set(x, "ondurationchange", null)
@@ -463,7 +469,7 @@ object anon {
       def setOndurationchangeUndefined: Self = StObject.set(x, "ondurationchange", js.undefined)
       
       @scala.inline
-      def setOnemptied(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+      def setOnemptied(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnemptiedNull: Self = StObject.set(x, "onemptied", null)
@@ -472,7 +478,7 @@ object anon {
       def setOnemptiedUndefined: Self = StObject.set(x, "onemptied", js.undefined)
       
       @scala.inline
-      def setOnended(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+      def setOnended(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnendedNull: Self = StObject.set(x, "onended", null)
@@ -492,7 +498,7 @@ object anon {
       def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
       @scala.inline
-      def setOnfocus(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ FocusEvent, _]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+      def setOnfocus(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnfocusNull: Self = StObject.set(x, "onfocus", null)
@@ -501,7 +507,7 @@ object anon {
       def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
       
       @scala.inline
-      def setOngotpointercapture(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
+      def setOngotpointercapture(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOngotpointercaptureNull: Self = StObject.set(x, "ongotpointercapture", null)
@@ -510,7 +516,7 @@ object anon {
       def setOngotpointercaptureUndefined: Self = StObject.set(x, "ongotpointercapture", js.undefined)
       
       @scala.inline
-      def setOninput(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+      def setOninput(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOninputNull: Self = StObject.set(x, "oninput", null)
@@ -519,7 +525,7 @@ object anon {
       def setOninputUndefined: Self = StObject.set(x, "oninput", js.undefined)
       
       @scala.inline
-      def setOninvalid(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
+      def setOninvalid(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOninvalidNull: Self = StObject.set(x, "oninvalid", null)
@@ -528,7 +534,7 @@ object anon {
       def setOninvalidUndefined: Self = StObject.set(x, "oninvalid", js.undefined)
       
       @scala.inline
-      def setOnkeydown(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
+      def setOnkeydown(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnkeydownNull: Self = StObject.set(x, "onkeydown", null)
@@ -537,7 +543,7 @@ object anon {
       def setOnkeydownUndefined: Self = StObject.set(x, "onkeydown", js.undefined)
       
       @scala.inline
-      def setOnkeypress(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
+      def setOnkeypress(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnkeypressNull: Self = StObject.set(x, "onkeypress", null)
@@ -546,7 +552,7 @@ object anon {
       def setOnkeypressUndefined: Self = StObject.set(x, "onkeypress", js.undefined)
       
       @scala.inline
-      def setOnkeyup(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+      def setOnkeyup(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnkeyupNull: Self = StObject.set(x, "onkeyup", null)
@@ -555,7 +561,7 @@ object anon {
       def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
       
       @scala.inline
-      def setOnload(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+      def setOnload(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnloadNull: Self = StObject.set(x, "onload", null)
@@ -564,7 +570,7 @@ object anon {
       def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
       
       @scala.inline
-      def setOnloadeddata(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+      def setOnloadeddata(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnloadeddataNull: Self = StObject.set(x, "onloadeddata", null)
@@ -573,7 +579,7 @@ object anon {
       def setOnloadeddataUndefined: Self = StObject.set(x, "onloadeddata", js.undefined)
       
       @scala.inline
-      def setOnloadedmetadata(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+      def setOnloadedmetadata(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnloadedmetadataNull: Self = StObject.set(x, "onloadedmetadata", null)
@@ -582,7 +588,7 @@ object anon {
       def setOnloadedmetadataUndefined: Self = StObject.set(x, "onloadedmetadata", js.undefined)
       
       @scala.inline
-      def setOnloadstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+      def setOnloadstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnloadstartNull: Self = StObject.set(x, "onloadstart", null)
@@ -591,7 +597,7 @@ object anon {
       def setOnloadstartUndefined: Self = StObject.set(x, "onloadstart", js.undefined)
       
       @scala.inline
-      def setOnlostpointercapture(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
+      def setOnlostpointercapture(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnlostpointercaptureNull: Self = StObject.set(x, "onlostpointercapture", null)
@@ -600,7 +606,7 @@ object anon {
       def setOnlostpointercaptureUndefined: Self = StObject.set(x, "onlostpointercapture", js.undefined)
       
       @scala.inline
-      def setOnmousedown(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
+      def setOnmousedown(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnmousedownNull: Self = StObject.set(x, "onmousedown", null)
@@ -609,7 +615,7 @@ object anon {
       def setOnmousedownUndefined: Self = StObject.set(x, "onmousedown", js.undefined)
       
       @scala.inline
-      def setOnmouseenter(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
+      def setOnmouseenter(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnmouseenterNull: Self = StObject.set(x, "onmouseenter", null)
@@ -618,7 +624,7 @@ object anon {
       def setOnmouseenterUndefined: Self = StObject.set(x, "onmouseenter", js.undefined)
       
       @scala.inline
-      def setOnmouseleave(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
+      def setOnmouseleave(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnmouseleaveNull: Self = StObject.set(x, "onmouseleave", null)
@@ -627,7 +633,7 @@ object anon {
       def setOnmouseleaveUndefined: Self = StObject.set(x, "onmouseleave", js.undefined)
       
       @scala.inline
-      def setOnmousemove(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
+      def setOnmousemove(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnmousemoveNull: Self = StObject.set(x, "onmousemove", null)
@@ -636,7 +642,7 @@ object anon {
       def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
       
       @scala.inline
-      def setOnmouseout(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+      def setOnmouseout(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnmouseoutNull: Self = StObject.set(x, "onmouseout", null)
@@ -645,7 +651,7 @@ object anon {
       def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
       
       @scala.inline
-      def setOnmouseover(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+      def setOnmouseover(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnmouseoverNull: Self = StObject.set(x, "onmouseover", null)
@@ -654,7 +660,7 @@ object anon {
       def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
       
       @scala.inline
-      def setOnmouseup(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
+      def setOnmouseup(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnmouseupNull: Self = StObject.set(x, "onmouseup", null)
@@ -663,7 +669,7 @@ object anon {
       def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
       
       @scala.inline
-      def setOnpause(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+      def setOnpause(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpauseNull: Self = StObject.set(x, "onpause", null)
@@ -672,7 +678,7 @@ object anon {
       def setOnpauseUndefined: Self = StObject.set(x, "onpause", js.undefined)
       
       @scala.inline
-      def setOnplay(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+      def setOnplay(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnplayNull: Self = StObject.set(x, "onplay", null)
@@ -681,7 +687,7 @@ object anon {
       def setOnplayUndefined: Self = StObject.set(x, "onplay", js.undefined)
       
       @scala.inline
-      def setOnplaying(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+      def setOnplaying(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnplayingNull: Self = StObject.set(x, "onplaying", null)
@@ -690,7 +696,7 @@ object anon {
       def setOnplayingUndefined: Self = StObject.set(x, "onplaying", js.undefined)
       
       @scala.inline
-      def setOnpointercancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
+      def setOnpointercancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointercancelNull: Self = StObject.set(x, "onpointercancel", null)
@@ -699,7 +705,7 @@ object anon {
       def setOnpointercancelUndefined: Self = StObject.set(x, "onpointercancel", js.undefined)
       
       @scala.inline
-      def setOnpointerdown(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
+      def setOnpointerdown(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointerdownNull: Self = StObject.set(x, "onpointerdown", null)
@@ -708,7 +714,7 @@ object anon {
       def setOnpointerdownUndefined: Self = StObject.set(x, "onpointerdown", js.undefined)
       
       @scala.inline
-      def setOnpointerenter(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
+      def setOnpointerenter(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointerenterNull: Self = StObject.set(x, "onpointerenter", null)
@@ -717,7 +723,7 @@ object anon {
       def setOnpointerenterUndefined: Self = StObject.set(x, "onpointerenter", js.undefined)
       
       @scala.inline
-      def setOnpointerleave(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
+      def setOnpointerleave(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointerleaveNull: Self = StObject.set(x, "onpointerleave", null)
@@ -726,7 +732,7 @@ object anon {
       def setOnpointerleaveUndefined: Self = StObject.set(x, "onpointerleave", js.undefined)
       
       @scala.inline
-      def setOnpointermove(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
+      def setOnpointermove(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointermoveNull: Self = StObject.set(x, "onpointermove", null)
@@ -735,7 +741,7 @@ object anon {
       def setOnpointermoveUndefined: Self = StObject.set(x, "onpointermove", js.undefined)
       
       @scala.inline
-      def setOnpointerout(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
+      def setOnpointerout(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointeroutNull: Self = StObject.set(x, "onpointerout", null)
@@ -744,7 +750,7 @@ object anon {
       def setOnpointeroutUndefined: Self = StObject.set(x, "onpointerout", js.undefined)
       
       @scala.inline
-      def setOnpointerover(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
+      def setOnpointerover(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointeroverNull: Self = StObject.set(x, "onpointerover", null)
@@ -753,7 +759,7 @@ object anon {
       def setOnpointeroverUndefined: Self = StObject.set(x, "onpointerover", js.undefined)
       
       @scala.inline
-      def setOnpointerup(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
+      def setOnpointerup(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnpointerupNull: Self = StObject.set(x, "onpointerup", null)
@@ -762,7 +768,7 @@ object anon {
       def setOnpointerupUndefined: Self = StObject.set(x, "onpointerup", js.undefined)
       
       @scala.inline
-      def setOnprogress(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ ProgressEvent[EventTarget], _]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+      def setOnprogress(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ ProgressEvent[EventTarget], js.Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnprogressNull: Self = StObject.set(x, "onprogress", null)
@@ -771,7 +777,7 @@ object anon {
       def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
       
       @scala.inline
-      def setOnratechange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+      def setOnratechange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnratechangeNull: Self = StObject.set(x, "onratechange", null)
@@ -780,7 +786,7 @@ object anon {
       def setOnratechangeUndefined: Self = StObject.set(x, "onratechange", js.undefined)
       
       @scala.inline
-      def setOnreset(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+      def setOnreset(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnresetNull: Self = StObject.set(x, "onreset", null)
@@ -789,7 +795,7 @@ object anon {
       def setOnresetUndefined: Self = StObject.set(x, "onreset", js.undefined)
       
       @scala.inline
-      def setOnresize(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, _]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
+      def setOnresize(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnresizeNull: Self = StObject.set(x, "onresize", null)
@@ -798,7 +804,7 @@ object anon {
       def setOnresizeUndefined: Self = StObject.set(x, "onresize", js.undefined)
       
       @scala.inline
-      def setOnscroll(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+      def setOnscroll(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnscrollNull: Self = StObject.set(x, "onscroll", null)
@@ -807,7 +813,7 @@ object anon {
       def setOnscrollUndefined: Self = StObject.set(x, "onscroll", js.undefined)
       
       @scala.inline
-      def setOnsecuritypolicyviolation(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ SecurityPolicyViolationEvent, _]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
+      def setOnsecuritypolicyviolation(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ SecurityPolicyViolationEvent, js.Any]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnsecuritypolicyviolationNull: Self = StObject.set(x, "onsecuritypolicyviolation", null)
@@ -816,7 +822,7 @@ object anon {
       def setOnsecuritypolicyviolationUndefined: Self = StObject.set(x, "onsecuritypolicyviolation", js.undefined)
       
       @scala.inline
-      def setOnseeked(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+      def setOnseeked(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnseekedNull: Self = StObject.set(x, "onseeked", null)
@@ -825,7 +831,7 @@ object anon {
       def setOnseekedUndefined: Self = StObject.set(x, "onseeked", js.undefined)
       
       @scala.inline
-      def setOnseeking(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+      def setOnseeking(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnseekingNull: Self = StObject.set(x, "onseeking", null)
@@ -834,7 +840,7 @@ object anon {
       def setOnseekingUndefined: Self = StObject.set(x, "onseeking", js.undefined)
       
       @scala.inline
-      def setOnselect(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+      def setOnselect(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnselectNull: Self = StObject.set(x, "onselect", null)
@@ -843,7 +849,7 @@ object anon {
       def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
       
       @scala.inline
-      def setOnselectionchange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
+      def setOnselectionchange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnselectionchangeNull: Self = StObject.set(x, "onselectionchange", null)
@@ -852,7 +858,7 @@ object anon {
       def setOnselectionchangeUndefined: Self = StObject.set(x, "onselectionchange", js.undefined)
       
       @scala.inline
-      def setOnselectstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
+      def setOnselectstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnselectstartNull: Self = StObject.set(x, "onselectstart", null)
@@ -861,7 +867,7 @@ object anon {
       def setOnselectstartUndefined: Self = StObject.set(x, "onselectstart", js.undefined)
       
       @scala.inline
-      def setOnstalled(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+      def setOnstalled(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnstalledNull: Self = StObject.set(x, "onstalled", null)
@@ -870,7 +876,7 @@ object anon {
       def setOnstalledUndefined: Self = StObject.set(x, "onstalled", js.undefined)
       
       @scala.inline
-      def setOnsubmit(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+      def setOnsubmit(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnsubmitNull: Self = StObject.set(x, "onsubmit", null)
@@ -879,7 +885,7 @@ object anon {
       def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
       
       @scala.inline
-      def setOnsuspend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+      def setOnsuspend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnsuspendNull: Self = StObject.set(x, "onsuspend", null)
@@ -888,7 +894,7 @@ object anon {
       def setOnsuspendUndefined: Self = StObject.set(x, "onsuspend", js.undefined)
       
       @scala.inline
-      def setOntimeupdate(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+      def setOntimeupdate(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntimeupdateNull: Self = StObject.set(x, "ontimeupdate", null)
@@ -897,7 +903,7 @@ object anon {
       def setOntimeupdateUndefined: Self = StObject.set(x, "ontimeupdate", js.undefined)
       
       @scala.inline
-      def setOntoggle(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
+      def setOntoggle(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntoggleNull: Self = StObject.set(x, "ontoggle", null)
@@ -906,7 +912,7 @@ object anon {
       def setOntoggleUndefined: Self = StObject.set(x, "ontoggle", js.undefined)
       
       @scala.inline
-      def setOntouchcancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
+      def setOntouchcancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntouchcancelNull: Self = StObject.set(x, "ontouchcancel", null)
@@ -915,7 +921,7 @@ object anon {
       def setOntouchcancelUndefined: Self = StObject.set(x, "ontouchcancel", js.undefined)
       
       @scala.inline
-      def setOntouchend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
+      def setOntouchend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntouchendNull: Self = StObject.set(x, "ontouchend", null)
@@ -924,7 +930,7 @@ object anon {
       def setOntouchendUndefined: Self = StObject.set(x, "ontouchend", js.undefined)
       
       @scala.inline
-      def setOntouchmove(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
+      def setOntouchmove(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntouchmoveNull: Self = StObject.set(x, "ontouchmove", null)
@@ -933,7 +939,7 @@ object anon {
       def setOntouchmoveUndefined: Self = StObject.set(x, "ontouchmove", js.undefined)
       
       @scala.inline
-      def setOntouchstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
+      def setOntouchstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntouchstartNull: Self = StObject.set(x, "ontouchstart", null)
@@ -942,7 +948,7 @@ object anon {
       def setOntouchstartUndefined: Self = StObject.set(x, "ontouchstart", js.undefined)
       
       @scala.inline
-      def setOntransitioncancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
+      def setOntransitioncancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntransitioncancelNull: Self = StObject.set(x, "ontransitioncancel", null)
@@ -951,7 +957,7 @@ object anon {
       def setOntransitioncancelUndefined: Self = StObject.set(x, "ontransitioncancel", js.undefined)
       
       @scala.inline
-      def setOntransitionend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
+      def setOntransitionend(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntransitionendNull: Self = StObject.set(x, "ontransitionend", null)
@@ -960,7 +966,7 @@ object anon {
       def setOntransitionendUndefined: Self = StObject.set(x, "ontransitionend", js.undefined)
       
       @scala.inline
-      def setOntransitionrun(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
+      def setOntransitionrun(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntransitionrunNull: Self = StObject.set(x, "ontransitionrun", null)
@@ -969,7 +975,7 @@ object anon {
       def setOntransitionrunUndefined: Self = StObject.set(x, "ontransitionrun", js.undefined)
       
       @scala.inline
-      def setOntransitionstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
+      def setOntransitionstart(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOntransitionstartNull: Self = StObject.set(x, "ontransitionstart", null)
@@ -978,7 +984,7 @@ object anon {
       def setOntransitionstartUndefined: Self = StObject.set(x, "ontransitionstart", js.undefined)
       
       @scala.inline
-      def setOnvolumechange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+      def setOnvolumechange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnvolumechangeNull: Self = StObject.set(x, "onvolumechange", null)
@@ -987,7 +993,7 @@ object anon {
       def setOnvolumechangeUndefined: Self = StObject.set(x, "onvolumechange", js.undefined)
       
       @scala.inline
-      def setOnwaiting(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, _]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+      def setOnwaiting(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, js.Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnwaitingNull: Self = StObject.set(x, "onwaiting", null)
@@ -996,7 +1002,7 @@ object anon {
       def setOnwaitingUndefined: Self = StObject.set(x, "onwaiting", js.undefined)
       
       @scala.inline
-      def setOnwheel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ WheelEvent, _]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
+      def setOnwheel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnwheelNull: Self = StObject.set(x, "onwheel", null)
@@ -1006,7 +1012,7 @@ object anon {
       
       @scala.inline
       def setRemoveEventListener(
-        value: (abort, /* listener */ js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, _]) => Unit
+        value: (abort, /* listener */ js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, js.Any]) => Unit
       ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -1015,16 +1021,15 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<linkifyjs.linkifyjs.LinkEntityType, string | (href : string): string>> */
-  @js.native
   trait PartialRecordLinkEntityTy extends StObject {
     
-    var email: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.native
+    var email: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.undefined
     
-    var hashtag: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.native
+    var hashtag: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.undefined
     
-    var mention: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.native
+    var mention: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.undefined
     
-    var url: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.native
+    var url: js.UndefOr[String | (js.Function1[/* href */ String, String])] = js.undefined
   }
   object PartialRecordLinkEntityTy {
     
@@ -1076,16 +1081,15 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<linkifyjs.linkifyjs.LinkEntityType, (href : string): string>> */
-  @js.native
   trait PartialRecordLinkEntityTyEmail extends StObject {
     
-    var email: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var email: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
     
-    var hashtag: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var hashtag: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
     
-    var mention: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var mention: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
     
-    var url: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var url: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
   }
   object PartialRecordLinkEntityTyEmail {
     
@@ -1125,16 +1129,15 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<linkifyjs.linkifyjs.LinkEntityType, string>> */
-  @js.native
   trait PartialRecordLinkEntityTyHashtag extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var hashtag: js.UndefOr[String] = js.native
+    var hashtag: js.UndefOr[String] = js.undefined
     
-    var mention: js.UndefOr[String] = js.native
+    var mention: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object PartialRecordLinkEntityTyHashtag {
     
@@ -1174,16 +1177,15 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<linkifyjs.linkifyjs.LinkEntityType, string | null>> */
-  @js.native
   trait PartialRecordLinkEntityTyMention extends StObject {
     
-    var email: js.UndefOr[String | Null] = js.native
+    var email: js.UndefOr[String | Null] = js.undefined
     
-    var hashtag: js.UndefOr[String | Null] = js.native
+    var hashtag: js.UndefOr[String | Null] = js.undefined
     
-    var mention: js.UndefOr[String | Null] = js.native
+    var mention: js.UndefOr[String | Null] = js.undefined
     
-    var url: js.UndefOr[String | Null] = js.native
+    var url: js.UndefOr[String | Null] = js.undefined
   }
   object PartialRecordLinkEntityTyMention {
     
@@ -1235,16 +1237,15 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<linkifyjs.linkifyjs.LinkEntityType, (href : string): boolean>> */
-  @js.native
   trait PartialRecordLinkEntityTyUrl extends StObject {
     
-    var email: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.native
+    var email: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.undefined
     
-    var hashtag: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.native
+    var hashtag: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.undefined
     
-    var mention: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.native
+    var mention: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.undefined
     
-    var url: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.native
+    var url: js.UndefOr[js.Function1[/* href */ String, Boolean]] = js.undefined
   }
   object PartialRecordLinkEntityTyUrl {
     
@@ -1283,10 +1284,9 @@ object anon {
     }
   }
   
-  @js.native
   trait V extends StObject {
     
-    var v: String = js.native
+    var v: String
   }
   object V {
     
@@ -1304,10 +1304,9 @@ object anon {
     }
   }
   
-  @js.native
   trait VArray extends StObject {
     
-    var v: js.Array[V] = js.native
+    var v: js.Array[V]
   }
   object VArray {
     

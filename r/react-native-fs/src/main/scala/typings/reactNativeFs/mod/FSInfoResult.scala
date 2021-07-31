@@ -2,16 +2,14 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FSInfoResult extends StObject {
   
   // The total amount of storage space on the device (in bytes).
-  var freeSpace: Double = js.native
+  var freeSpace: Double
   
-  var totalSpace: Double = js.native
+  var totalSpace: Double
 }
 object FSInfoResult {
   

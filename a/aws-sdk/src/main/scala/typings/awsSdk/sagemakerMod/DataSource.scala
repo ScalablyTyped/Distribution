@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
   /**
     * The file system that is associated with a channel.
     */
-  var FileSystemDataSource: js.UndefOr[typings.awsSdk.sagemakerMod.FileSystemDataSource] = js.native
+  var FileSystemDataSource: js.UndefOr[typings.awsSdk.sagemakerMod.FileSystemDataSource] = js.undefined
   
   /**
     * The S3 location of the data source that is associated with a channel.
     */
-  var S3DataSource: js.UndefOr[typings.awsSdk.sagemakerMod.S3DataSource] = js.native
+  var S3DataSource: js.UndefOr[typings.awsSdk.sagemakerMod.S3DataSource] = js.undefined
 }
 object DataSource {
   

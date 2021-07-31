@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,14 +22,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .build();
   *     checkBoxItem.setValidation(checkBoxValidation);
   */
-@js.native
 trait CheckboxValidation extends StObject {
   
-  def requireSelectAtLeast(number: Integer): CheckboxValidation = js.native
+  def requireSelectAtLeast(number: Integer): CheckboxValidation
   
-  def requireSelectAtMost(number: Integer): CheckboxValidation = js.native
+  def requireSelectAtMost(number: Integer): CheckboxValidation
   
-  def requireSelectExactly(number: Integer): CheckboxValidation = js.native
+  def requireSelectExactly(number: Integer): CheckboxValidation
 }
 object CheckboxValidation {
   

@@ -3,15 +3,13 @@ package typings.pgPromise.mod
 import typings.pgPromise.pgSubsetMod.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConnectionOptions[C /* <: IClient */] extends StObject {
   
-  var direct: js.UndefOr[Boolean] = js.native
+  var direct: js.UndefOr[Boolean] = js.undefined
   
-  var onLost: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ ILostContext[C], Unit]] = js.native
+  var onLost: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ ILostContext[C], Unit]] = js.undefined
 }
 object IConnectionOptions {
   
@@ -22,7 +20,7 @@ object IConnectionOptions {
   }
   
   @scala.inline
-  implicit class IConnectionOptionsMutableBuilder[Self <: IConnectionOptions[_], C /* <: IClient */] (val x: Self with IConnectionOptions[C]) extends AnyVal {
+  implicit class IConnectionOptionsMutableBuilder[Self <: IConnectionOptions[?], C /* <: IClient */] (val x: Self & IConnectionOptions[C]) extends AnyVal {
     
     @scala.inline
     def setDirect(value: Boolean): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])

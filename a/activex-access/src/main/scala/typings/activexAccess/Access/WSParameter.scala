@@ -2,22 +2,20 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WSParameter extends StObject {
   
   @JSName("Access.WSParameter_typekey")
-  var AccessDotWSParameter_typekey: WSParameter = js.native
+  var AccessDotWSParameter_typekey: WSParameter
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Type: Double = js.native
+  val Type: Double
 }
 object WSParameter {
   

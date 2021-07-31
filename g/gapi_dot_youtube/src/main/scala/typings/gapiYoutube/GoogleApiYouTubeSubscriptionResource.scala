@@ -5,41 +5,39 @@ import typings.gapiYoutube.anon.ChannelIdDescription
 import typings.gapiYoutube.anon.NewItemCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiYouTubeSubscriptionResource extends StObject {
   
   /**
     *
     */
-  var contentDetails: NewItemCount = js.native
+  var contentDetails: NewItemCount
   
   /**
     * The ETag of the subscription resource.
     */
-  var etag: String = js.native
+  var etag: String
   
   /**
     * The ID that YouTube uses to uniquely identify the subscription.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The type of the API resource. For subscription resources, the value will be youtube#subscription.
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * The snippet object contains basic details about the subscription, including its title and the channel that the user subscribed to.
     */
-  var snippet: ChannelIdChannelTitle = js.native
+  var snippet: ChannelIdChannelTitle
   
   /**
     *
     */
-  var subscriberSnippet: ChannelIdDescription = js.native
+  var subscriberSnippet: ChannelIdDescription
 }
 object GoogleApiYouTubeSubscriptionResource {
   

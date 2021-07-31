@@ -2,61 +2,59 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Application extends StObject {
   
   /** Google Apps authentication domain that controls which users can access this application.Defaults to open access for any Google Account. */
-  var authDomain: js.UndefOr[String] = js.native
+  var authDomain: js.UndefOr[String] = js.undefined
   
   /**
     * Google Cloud Storage bucket that can be used for storing files associated with this application. This bucket is associated with the application and can be used by the gcloud
     * deployment commands.@OutputOnly
     */
-  var codeBucket: js.UndefOr[String] = js.native
+  var codeBucket: js.UndefOr[String] = js.undefined
   
   /** The type of the Cloud Firestore or Cloud Datastore database associated with this application. */
-  var databaseType: js.UndefOr[String] = js.native
+  var databaseType: js.UndefOr[String] = js.undefined
   
   /** Google Cloud Storage bucket that can be used by this application to store content.@OutputOnly */
-  var defaultBucket: js.UndefOr[String] = js.native
+  var defaultBucket: js.UndefOr[String] = js.undefined
   
   /** Cookie expiration policy for this application. */
-  var defaultCookieExpiration: js.UndefOr[String] = js.native
+  var defaultCookieExpiration: js.UndefOr[String] = js.undefined
   
   /** Hostname used to reach this application, as resolved by App Engine.@OutputOnly */
-  var defaultHostname: js.UndefOr[String] = js.native
+  var defaultHostname: js.UndefOr[String] = js.undefined
   
   /** HTTP path dispatch rules for requests to the application that do not explicitly target a service or version. Rules are order-dependent. Up to 20 dispatch rules can be supported. */
-  var dispatchRules: js.UndefOr[js.Array[UrlDispatchRule]] = js.native
+  var dispatchRules: js.UndefOr[js.Array[UrlDispatchRule]] = js.undefined
   
   /** The feature specific settings to be used in the application. */
-  var featureSettings: js.UndefOr[FeatureSettings] = js.native
+  var featureSettings: js.UndefOr[FeatureSettings] = js.undefined
   
   /** The Google Container Registry domain used for storing managed build docker images for this application. */
-  var gcrDomain: js.UndefOr[String] = js.native
+  var gcrDomain: js.UndefOr[String] = js.undefined
   
-  var iap: js.UndefOr[IdentityAwareProxy] = js.native
+  var iap: js.UndefOr[IdentityAwareProxy] = js.undefined
   
   /**
     * Identifier of the Application resource. This identifier is equivalent to the project ID of the Google Cloud Platform project where you want to deploy your application. Example:
     * myapp.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Location from which this application runs. Application instances run out of the data centers in the specified location, which is also where all of the application's end user content
     * is stored.Defaults to us-central.View the list of supported locations (https://cloud.google.com/appengine/docs/locations).
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /** Full path to the Application resource in the API. Example: apps/myapp.@OutputOnly */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Serving status of this application. */
-  var servingStatus: js.UndefOr[String] = js.native
+  var servingStatus: js.UndefOr[String] = js.undefined
 }
 object Application {
   

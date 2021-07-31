@@ -3,14 +3,16 @@ package typings.jscodeshift
 import typings.jscodeshift.collectionMod.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
   
-  @JSImport("jscodeshift/src/collections/Node", "register")
+  @JSImport("jscodeshift/src/collections/Node", JSImport.Namespace)
   @js.native
-  def register(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   
@@ -58,7 +60,7 @@ object nodeMod {
       * currently selected paths. Dedupes the paths.
       */
     def closestScope(): Collection[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.ASTNode */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.ASTNode */ js.Any
       ] = js.native
     
     /**
@@ -83,8 +85,8 @@ object nodeMod {
       *
       * If the callback returns a falsy value, the element is skipped.
       */
-    def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, _]): Collection[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
+    def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, js.Any]): Collection[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ js.Any
       ] = js.native
   }
 }

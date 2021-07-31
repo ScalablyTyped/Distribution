@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DesktopInfo extends StObject {
   
   /** Link to open on desktop. */
-  var desktopFallbackLink: js.UndefOr[String] = js.native
+  var desktopFallbackLink: js.UndefOr[String] = js.undefined
 }
 object DesktopInfo {
   

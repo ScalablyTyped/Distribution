@@ -3,53 +3,51 @@ package typings.sharepoint
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutOptions extends StObject {
   
   /** Some unique id for the callout. */
-  var ID: String = js.native
+  var ID: String
   
   /** One of the following: "topBottom" (default) or "leftRight". */
-  var beakOrientation: String = js.native
+  var beakOrientation: String
   
   /** If defined, callout will be inscribed into the bounding element. */
-  var boundingBox: HTMLElement = js.native
+  var boundingBox: HTMLElement
   
   /** String (HTML allowed) that represents contents of the callout window. */
-  var content: String = js.native
+  var content: String
   
   /** HTML element that represents contents of the callout window. */
-  var contentElement: HTMLElement = js.native
+  var contentElement: HTMLElement
   
   /** Content element's width in pixels. By default = 350. */
-  var contentWidth: Double = js.native
+  var contentWidth: Double
   
   /** Element on that the callout is shown. */
-  var launchPoint: HTMLElement = js.native
+  var launchPoint: HTMLElement
   
   /** Fires right after the callout is closed */
-  def onClosedCallback(callout: Callout): Unit = js.native
+  def onClosedCallback(callout: Callout): Unit
   
   /** Fires right before the callout is closed */
-  def onClosingCallback(callout: Callout): Unit = js.native
+  def onClosingCallback(callout: Callout): Unit
   
   /** Fires right after the callout is shown */
-  def onOpenedCallback(callout: Callout): Unit = js.native
+  def onOpenedCallback(callout: Callout): Unit
   
   /** Fires after the callout is rendered but before it is positioned and shown */
-  def onOpeningCallback(callout: Callout): Unit = js.native
+  def onOpeningCallback(callout: Callout): Unit
   
   /** Defines opening behavior */
-  var openOptions: CalloutOpenOptions = js.native
+  var openOptions: CalloutOpenOptions
   
   /** Sets the position of the callout during its opening phase. For an example of a position algorithm function, please explore defaultPositionAlgorithm function from the callout.debug.js file */
-  def positionAlgorithm(callout: Callout): Unit = js.native
+  def positionAlgorithm(callout: Callout): Unit
   
   /** Title for the callout */
-  var title: String = js.native
+  var title: String
 }
 object CalloutOptions {
   

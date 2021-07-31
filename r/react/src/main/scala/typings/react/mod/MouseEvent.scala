@@ -3,46 +3,46 @@ package typings.react.mod
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseEvent[T, E] extends UIEvent[T, E] {
+trait MouseEvent[T, E]
+  extends StObject
+     with UIEvent[T, E] {
   
-  var altKey: Boolean = js.native
+  var altKey: Boolean
   
-  var button: Double = js.native
+  var button: Double
   
-  var buttons: Double = js.native
+  var buttons: Double
   
-  var clientX: Double = js.native
+  var clientX: Double
   
-  var clientY: Double = js.native
+  var clientY: Double
   
-  var ctrlKey: Boolean = js.native
+  var ctrlKey: Boolean
   
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
-  def getModifierState(key: String): Boolean = js.native
+  def getModifierState(key: String): Boolean
   
-  var metaKey: Boolean = js.native
+  var metaKey: Boolean
   
-  var movementX: Double = js.native
+  var movementX: Double
   
-  var movementY: Double = js.native
+  var movementY: Double
   
-  var pageX: Double = js.native
+  var pageX: Double
   
-  var pageY: Double = js.native
+  var pageY: Double
   
-  var relatedTarget: EventTarget | Null = js.native
+  var relatedTarget: EventTarget | Null
   
-  var screenX: Double = js.native
+  var screenX: Double
   
-  var screenY: Double = js.native
+  var screenY: Double
   
-  var shiftKey: Boolean = js.native
+  var shiftKey: Boolean
 }
 object MouseEvent {
   
@@ -56,7 +56,7 @@ object MouseEvent {
     clientX: Double,
     clientY: Double,
     ctrlKey: Boolean,
-    currentTarget: EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
@@ -81,13 +81,13 @@ object MouseEvent {
     `type`: String,
     view: AbstractView
   ): MouseEvent[T, E] = {
-    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], relatedTarget = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseEvent[T, E]]
   }
   
   @scala.inline
-  implicit class MouseEventMutableBuilder[Self <: MouseEvent[_, _], T, E] (val x: Self with (MouseEvent[T, E])) extends AnyVal {
+  implicit class MouseEventMutableBuilder[Self <: MouseEvent[?, ?], T, E] (val x: Self & (MouseEvent[T, E])) extends AnyVal {
     
     @scala.inline
     def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])

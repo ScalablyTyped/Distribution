@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifierConfig extends StObject {
   
   /** The API version of this configuration format. */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** The type of notifier to use (e.g. SMTPNotifier). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metadata for referring to/handling/deploying this notifier. */
-  var metadata: js.UndefOr[NotifierMetadata] = js.native
+  var metadata: js.UndefOr[NotifierMetadata] = js.undefined
   
   /** The actual configuration for this notifier. */
-  var spec: js.UndefOr[NotifierSpec] = js.native
+  var spec: js.UndefOr[NotifierSpec] = js.undefined
 }
 object NotifierConfig {
   

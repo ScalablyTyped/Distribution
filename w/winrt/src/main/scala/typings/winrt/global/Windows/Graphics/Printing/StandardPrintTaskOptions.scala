@@ -2,13 +2,13 @@ package typings.winrt.global.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Graphics.Printing.StandardPrintTaskOptions")
 @js.native
 class StandardPrintTaskOptions ()
-  extends typings.winrt.Windows.Graphics.Printing.StandardPrintTaskOptions
+  extends StObject
+     with typings.winrt.Windows.Graphics.Printing.StandardPrintTaskOptions
 /* static members */
 object StandardPrintTaskOptions {
   

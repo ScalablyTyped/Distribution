@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationInput extends StObject {
   
   /**
     * The current name of the application you want to change.
     */
-  var applicationName: js.UndefOr[ApplicationName] = js.native
+  var applicationName: js.UndefOr[ApplicationName] = js.undefined
   
   /**
     * The new name to give the application.
     */
-  var newApplicationName: js.UndefOr[ApplicationName] = js.native
+  var newApplicationName: js.UndefOr[ApplicationName] = js.undefined
 }
 object UpdateApplicationInput {
   

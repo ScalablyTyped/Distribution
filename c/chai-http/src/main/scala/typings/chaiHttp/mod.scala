@@ -6,14 +6,16 @@ import typings.std.RegExp
 import typings.superagent.mod.SuperAgentStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(chai: js.Any, utils: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(chai.asInstanceOf[js.Any], utils.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("chai-http", JSImport.Namespace)
   @js.native
-  def apply(chai: js.Any, utils: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
   // Merge namespace with global chai
   object global {
@@ -61,18 +63,31 @@ object mod {
         def agent(server: js.Any): Agent = js.native
       }
       
-      @js.native
       trait ChaiStatic extends StObject {
         
-        def request(server: js.Any): Agent = js.native
+        def request(server: js.Any): Agent
         @JSName("request")
-        var request_Original: ChaiHttpRequest = js.native
+        var request_Original: ChaiHttpRequest
+      }
+      object ChaiStatic {
+        
+        @scala.inline
+        def apply(request: ChaiHttpRequest): ChaiStatic = {
+          val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+          __obj.asInstanceOf[ChaiStatic]
+        }
+        
+        @scala.inline
+        implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+          
+          @scala.inline
+          def setRequest(value: ChaiHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        }
       }
       
-      @js.native
       trait TypeComparison extends StObject {
         
-        var ip: Assertion = js.native
+        var ip: Assertion
       }
       object TypeComparison {
         

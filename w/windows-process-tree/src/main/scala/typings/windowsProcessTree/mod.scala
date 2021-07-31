@@ -2,10 +2,13 @@ package typings.windowsProcessTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("windows-process-tree", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ProcessDataFlag extends StObject
@@ -14,50 +17,52 @@ object mod {
   object ProcessDataFlag extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProcessDataFlag with Double] = js.native
+    def apply(value: Double): js.UndefOr[ProcessDataFlag & Double] = js.native
     
     @js.native
-    sealed trait CommandLine extends ProcessDataFlag
-    /* 2 */ val CommandLine: typings.windowsProcessTree.mod.ProcessDataFlag.CommandLine with Double = js.native
+    sealed trait CommandLine
+      extends StObject
+         with ProcessDataFlag
+    /* 2 */ val CommandLine: typings.windowsProcessTree.mod.ProcessDataFlag.CommandLine & Double = js.native
     
     @js.native
-    sealed trait Memory extends ProcessDataFlag
-    /* 1 */ val Memory: typings.windowsProcessTree.mod.ProcessDataFlag.Memory with Double = js.native
+    sealed trait Memory
+      extends StObject
+         with ProcessDataFlag
+    /* 1 */ val Memory: typings.windowsProcessTree.mod.ProcessDataFlag.Memory & Double = js.native
     
     @js.native
-    sealed trait None extends ProcessDataFlag
-    /* 0 */ val None: typings.windowsProcessTree.mod.ProcessDataFlag.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with ProcessDataFlag
+    /* 0 */ val None: typings.windowsProcessTree.mod.ProcessDataFlag.None & Double = js.native
   }
   
-  @JSImport("windows-process-tree", "getProcessCpuUsage")
-  @js.native
+  @scala.inline
   def getProcessCpuUsage(
     processList: js.Array[ProcessInfo],
     callback: js.Function1[/* processListWithCpu */ js.Array[ProcessCpuInfo], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessCpuUsage")(processList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("windows-process-tree", "getProcessList")
-  @js.native
-  def getProcessList(rootPid: Double, callback: js.Function1[/* processList */ js.Array[ProcessInfo], Unit]): Unit = js.native
-  @JSImport("windows-process-tree", "getProcessList")
-  @js.native
+  @scala.inline
+  def getProcessList(rootPid: Double, callback: js.Function1[/* processList */ js.Array[ProcessInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessList")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getProcessList(
     rootPid: Double,
     callback: js.Function1[/* processList */ js.Array[ProcessInfo], Unit],
     flags: ProcessDataFlag
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessList")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("windows-process-tree", "getProcessTree")
-  @js.native
-  def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit]): Unit = js.native
-  @JSImport("windows-process-tree", "getProcessTree")
-  @js.native
-  def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit], flags: ProcessDataFlag): Unit = js.native
+  @scala.inline
+  def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessTree")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def getProcessTree(rootPid: Double, callback: js.Function1[/* tree */ ProcessTreeNode, Unit], flags: ProcessDataFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcessTree")(rootPid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait ProcessCpuInfo extends ProcessInfo {
+  trait ProcessCpuInfo
+    extends StObject
+       with ProcessInfo {
     
-    var cpu: js.UndefOr[Double] = js.native
+    var cpu: js.UndefOr[Double] = js.undefined
   }
   object ProcessCpuInfo {
     
@@ -78,24 +83,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ProcessInfo extends StObject {
     
     /**
       * The string returned is at most 512 chars, strings exceeding this length are truncated.
       */
-    var commandLine: js.UndefOr[String] = js.native
+    var commandLine: js.UndefOr[String] = js.undefined
     
     /**
       * The working set size of the process, in bytes.
       */
-    var memory: js.UndefOr[Double] = js.native
+    var memory: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var ppid: Double = js.native
+    var ppid: Double
   }
   object ProcessInfo {
     
@@ -131,18 +135,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ProcessTreeNode extends StObject {
     
-    var children: js.Array[ProcessTreeNode] = js.native
+    var children: js.Array[ProcessTreeNode]
     
-    var commandLine: js.UndefOr[String] = js.native
+    var commandLine: js.UndefOr[String] = js.undefined
     
-    var memory: js.UndefOr[Double] = js.native
+    var memory: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var pid: Double = js.native
+    var pid: Double
   }
   object ProcessTreeNode {
     

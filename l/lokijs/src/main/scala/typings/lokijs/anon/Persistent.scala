@@ -2,15 +2,13 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Persistent extends StObject {
   
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
-  var suppressRebuildEvent: js.UndefOr[Boolean] = js.native
+  var suppressRebuildEvent: js.UndefOr[Boolean] = js.undefined
 }
 object Persistent {
   

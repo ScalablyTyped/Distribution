@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveChatMessageRetractedDetails extends StObject {
   
-  var retractedMessageId: js.UndefOr[String] = js.native
+  var retractedMessageId: js.UndefOr[String] = js.undefined
 }
 object LiveChatMessageRetractedDetails {
   

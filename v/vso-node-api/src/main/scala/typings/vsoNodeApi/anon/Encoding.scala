@@ -2,41 +2,39 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encoding extends StObject {
   
-  var add: scala.Double = js.native
+  var add: scala.Double
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var branch: scala.Double = js.native
+  var branch: scala.Double
   
-  var delete: scala.Double = js.native
+  var delete: scala.Double
   
-  var edit: scala.Double = js.native
+  var edit: scala.Double
   
-  var encoding: scala.Double = js.native
+  var encoding: scala.Double
   
-  var lock: scala.Double = js.native
+  var lock: scala.Double
   
-  var merge: scala.Double = js.native
+  var merge: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var property: scala.Double = js.native
+  var property: scala.Double
   
-  var rename: scala.Double = js.native
+  var rename: scala.Double
   
-  var rollback: scala.Double = js.native
+  var rollback: scala.Double
   
-  var sourceRename: scala.Double = js.native
+  var sourceRename: scala.Double
   
-  var targetRename: scala.Double = js.native
+  var targetRename: scala.Double
   
-  var undelete: scala.Double = js.native
+  var undelete: scala.Double
 }
 object Encoding {
   

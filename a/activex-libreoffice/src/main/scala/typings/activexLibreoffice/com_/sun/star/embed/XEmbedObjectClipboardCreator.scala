@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface contains methods that can help to create and initialize an embedded object based on system clipboard.
   */
-@js.native
-trait XEmbedObjectClipboardCreator extends XInterface {
+trait XEmbedObjectClipboardCreator
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new object and initializes it from the system clipboard.
@@ -31,7 +31,7 @@ trait XEmbedObjectClipboardCreator extends XInterface {
     * @throws com::sun::star::io::IOException in case of io problems during opening or creation
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def createInstanceInitFromClipboard(xStorage: XStorage, sEntryName: String, aObjectArgs: SeqEquiv[PropertyValue]): InsertedObjectInfo = js.native
+  def createInstanceInitFromClipboard(xStorage: XStorage, sEntryName: String, aObjectArgs: SeqEquiv[PropertyValue]): InsertedObjectInfo
 }
 object XEmbedObjectClipboardCreator {
   

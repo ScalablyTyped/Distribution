@@ -5,7 +5,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wedgeMod {
@@ -41,14 +40,15 @@ object wedgeMod {
     def setWidth(width: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait WedgeConfig extends ShapeConfig {
+  trait WedgeConfig
+    extends StObject
+       with ShapeConfig {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var clockwise: js.UndefOr[Boolean] = js.native
+    var clockwise: js.UndefOr[Boolean] = js.undefined
     
-    var radius: Double = js.native
+    var radius: Double
   }
   object WedgeConfig {
     

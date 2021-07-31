@@ -3,34 +3,32 @@ package typings.webappsecCredentialManagement
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dictdef-credentialcreationoptions}
   */
-@js.native
 trait CredentialCreationOptions extends StObject {
   
   /**
     * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dom-credentialcreationoptions-federated}
     */
-  var federated: js.UndefOr[FederatedCredentialInit] = js.native
+  var federated: js.UndefOr[FederatedCredentialInit] = js.undefined
   
   /**
     * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dictdef-federatedcredentialinit}
     */
-  var password: js.UndefOr[PasswordCredentialInit] = js.native
+  var password: js.UndefOr[PasswordCredentialInit] = js.undefined
   
   /**
     * @see {@link https://w3c.github.io/webauthn/#dictionary-makecredentialoptions}
     */
-  var publicKey: js.UndefOr[PublicKeyCredentialCreationOptions] = js.native
+  var publicKey: js.UndefOr[PublicKeyCredentialCreationOptions] = js.undefined
   
   /**
     * @see {@link https://w3c.github.io/webappsec-credential-management/#dom-credentialrequestoptions-signal}
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object CredentialCreationOptions {
   

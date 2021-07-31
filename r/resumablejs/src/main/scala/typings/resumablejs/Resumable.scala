@@ -29,193 +29,191 @@ import typings.std.Element
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Resumable {
   
-  @js.native
   trait ConfigurationHash extends StObject {
     
     /**
       * The name of the chunk index (base-1) in the current upload POST parameter to use for the file chunk (Default: resumableChunkNumber)
       */
-    var chunkNumberParameterName: js.UndefOr[String] = js.native
+    var chunkNumberParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The number of milliseconds to wait before retrying a chunk on a non-permanent error. Valid values are any positive integer and undefined for immediate retry. (Default: undefined)
       **/
-    var chunkRetryInterval: js.UndefOr[Double] = js.native
+    var chunkRetryInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * The size in bytes of each uploaded chunk of data. The last uploaded chunk will be at least this size and up to two the size, see Issue #51 for details and reasons. (Default: 1*1024*1024)
       **/
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the general chunk size POST parameter to use for the file chunk (Default: resumableChunkSize)
       */
-    var chunkSizeParameterName: js.UndefOr[String] = js.native
+    var chunkSizeParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the current chunk size POST parameter to use for the file chunk (Default: resumableCurrentChunkSize)
       */
-    var currentChunkSizeParameterName: js.UndefOr[String] = js.native
+    var currentChunkSizeParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the original file name POST parameter to use for the file chunk (Default: resumableFilename)
       */
-    var fileNameParameterName: js.UndefOr[String] = js.native
+    var fileNameParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the multipart POST parameter to use for the file chunk (Default: file)
       **/
-    var fileParameterName: js.UndefOr[String] = js.native
+    var fileParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The file types allowed to upload. An empty array allow any file type. (Default: [])
       **/
-    var fileType: js.UndefOr[js.Array[String]] = js.native
+    var fileType: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A function which displays an error a selected file has type not allowed. (Default: displays an alert for every bad file.)
       **/
-    var fileTypeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.native
+    var fileTypeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
     
     /**
       * Force all chunks to be less or equal than chunkSize. Otherwise, the last chunk will be greater than or equal to chunkSize. (Default: false)
       **/
-    var forceChunkSize: js.UndefOr[Boolean] = js.native
+    var forceChunkSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Override the function that generates unique identifiers for each file. (Default: null)
       **/
-    var generateUniqueIdentifier: js.UndefOr[js.Function0[String]] = js.native
+    var generateUniqueIdentifier: js.UndefOr[js.Function0[String]] = js.undefined
     
     /**
       * Extra headers to include in the multipart POST with data. This can be an object or a function that allows you to construct and return a value, based on supplied file (Default: {})
       **/
-    var headers: js.UndefOr[js.Object | (js.Function1[/* file */ js.Any, js.Object])] = js.native
+    var headers: js.UndefOr[js.Object | (js.Function1[/* file */ js.Any, js.Object])] = js.undefined
     
     /**
       * The name of the unique identifier POST parameter to use for the file chunk (Default: resumableIdentifier)
       */
-    var identifierParameterName: js.UndefOr[String] = js.native
+    var identifierParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum number of retries for a chunk before the upload is failed. Valid values are any positive integer and undefined for no limit. (Default: undefined)
       **/
-    var maxChunkRetries: js.UndefOr[Double] = js.native
+    var maxChunkRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum allowed file size. (Default: undefined)
       **/
-    var maxFileSize: js.UndefOr[Boolean] = js.native
+    var maxFileSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function which displays an error a selected file is larger than allowed. (Default: displays an alert for every bad file.)
       **/
-    var maxFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.native
+    var maxFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
     
     /**
       * Indicates how many files can be uploaded in a single session. Valid values are any positive integer and undefined for no limit. (Default: undefined)
       **/
-    var maxFiles: js.UndefOr[Double] = js.native
+    var maxFiles: js.UndefOr[Double] = js.undefined
     
     /**
       * A function which displays the please upload n file(s) at a time message. (Default: displays an alert box with the message Please n one file(s) at a time.)
       **/
-    var maxFilesErrorCallback: js.UndefOr[js.Function2[/* files */ js.Any, /* errorCount */ js.Any, Unit]] = js.native
+    var maxFilesErrorCallback: js.UndefOr[js.Function2[/* files */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
     
     /**
       * Method to use when POSTing chunks to the server (multipart or octet) (Default: multipart)
       **/
-    var method: js.UndefOr[multipart | octet] = js.native
+    var method: js.UndefOr[multipart | octet] = js.undefined
     
     /**
       * The minimum allowed file size. (Default: undefined)
       **/
-    var minFileSize: js.UndefOr[Boolean] = js.native
+    var minFileSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function which displays an error a selected file is smaller than allowed. (Default: displays an alert for every bad file.)
       **/
-    var minFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.native
+    var minFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
     
     /**
       * Extra prefix added before the name of each parameter included in the multipart POST or in the test GET. (Default: '')
       **/
-    var parameterNamespace: js.UndefOr[String] = js.native
+    var parameterNamespace: js.UndefOr[String] = js.undefined
     
     /**
       * Optional function to process each chunk before testing & sending. Function is passed the chunk as parameter, and should call the preprocessFinished method on the chunk when finished. (Default: null)
       **/
-    var preprocess: js.UndefOr[js.Function1[/* chunk */ ResumableChunk, ResumableChunk]] = js.native
+    var preprocess: js.UndefOr[js.Function1[/* chunk */ ResumableChunk, ResumableChunk]] = js.undefined
     
     /**
       * Prioritize first and last chunks of all files. This can be handy if you can determine if a file is valid for your service from only the first or last chunk. For example, photo or video meta data is usually located in the first part of a file, making it easy to test support from only the first chunk. (Default: false)
       **/
-    var prioritizeFirstAndLastChunk: js.UndefOr[Boolean] = js.native
+    var prioritizeFirstAndLastChunk: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Extra parameters to include in the multipart POST with data. This can be an object or a function. If a function, it will be passed a ResumableFile and a ResumableChunk object (Default: {})
       **/
-    var query: js.UndefOr[js.Object] = js.native
+    var query: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The name of the file's relative path POST parameter to use for the file chunk (Default: resumableRelativePath)
       */
-    var relativePathParameterName: js.UndefOr[String] = js.native
+    var relativePathParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * setChunkTypeFromFile` Set chunk content-type from original file.type. (Default: false, if false default Content-Type: application/octet-stream)
       **/
-    var setChunkTypeFromFile: js.UndefOr[Boolean] = js.native
+    var setChunkTypeFromFile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of simultaneous uploads (Default: 3)
       **/
-    var simultaneousUploads: js.UndefOr[Double] = js.native
+    var simultaneousUploads: js.UndefOr[Double] = js.undefined
     
     /**
       * The target URL for the multipart POST request. This can be a string or a function that allows you you to construct and return a value, based on supplied params. (Default: /)
       **/
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /**
       * Make a GET request to the server for each chunks to see if it already exists. If implemented on the server-side, this will allow for upload resumes even after a browser crash or even a computer restart. (Default: true)
       **/
-    var testChunks: js.UndefOr[Boolean] = js.native
+    var testChunks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Method for chunk test request. (Default: 'GET')
       **/
-    var testMethod: js.UndefOr[GET | POST | OPTIONS | PUT | DELETE] = js.native
+    var testMethod: js.UndefOr[GET | POST | OPTIONS | PUT | DELETE] = js.undefined
     
     /**
       * The name of the total number of chunks POST parameter to use for the file chunk (Default: resumableTotalChunks)
       */
-    var totalChunksParameterName: js.UndefOr[String] = js.native
+    var totalChunksParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the total file size number POST parameter to use for the file chunk (Default: resumableTotalSize)
       */
-    var totalSizeParameterName: js.UndefOr[String] = js.native
+    var totalSizeParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the file type POST parameter to use for the file chunk (Default: resumableType)
       */
-    var typeParameterName: js.UndefOr[String] = js.native
+    var typeParameterName: js.UndefOr[String] = js.undefined
     
     /**
       * Method for chunk upload request. (Default: 'POST')
       **/
-    var uploadMethod: js.UndefOr[GET | POST | OPTIONS | PUT | DELETE] = js.native
+    var uploadMethod: js.UndefOr[GET | POST | OPTIONS | PUT | DELETE] = js.undefined
     
     /**
       * Standard CORS requests do not send or set any cookies by default. In order to include cookies as part of the request, you need to set the withCredentials property to true. (Default: false)
       **/
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigurationHash {
     
@@ -482,7 +480,7 @@ object Resumable {
       **/
     def cancel(): Unit = js.native
     
-    var events: js.Array[_] = js.native
+    var events: js.Array[js.Any] = js.native
     
     /**
       * An array of ResumableFile file objects added by the user (see full docs for this object type below).
@@ -642,81 +640,79 @@ object Resumable {
     var void: js.Any = js.native
   }
   
-  @js.native
   trait ResumableChunk extends StObject
   
-  @js.native
   trait ResumableFile extends StObject {
     
     /**
       * Abort uploading the file.
       **/
-    def abort(): Unit = js.native
+    def abort(): Unit
     
     /**
       * Rebuild the state of a ResumableFile object, including reassigning chunks and XMLHttpRequest instances.
       **/
-    def bootstrap(): Unit = js.native
+    def bootstrap(): Unit
     
     /**
       * Abort uploading the file and delete it from the list of files to upload.
       **/
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
     /**
       * An array of ResumableChunk items. You shouldn't need to dig into these.
       **/
-    var chunks: js.Array[ResumableChunk] = js.native
+    var chunks: js.Array[ResumableChunk]
     
     /**
       * The correlating HTML5 File object.
       **/
-    var file: File = js.native
+    var file: File
     
     /**
       * The name of the file.
       **/
-    var fileName: String = js.native
+    var fileName: String
     
     /**
       * Returns a boolean indicating whether the file has completed uploading and received a server response.
       **/
-    def isComplete(): Boolean = js.native
+    def isComplete(): Boolean
     
     /**
       * Returns a boolean indicating whether file chunks is uploading.
       **/
-    def isUploading(): Boolean = js.native
+    def isUploading(): Boolean
     
     /**
       * Returns a float between 0 and 1 indicating the current upload progress of the file. If relative is true, the value is returned relative to all files in the Resumable.js instance.
       **/
-    def progress(relative: Boolean): Double = js.native
+    def progress(relative: Boolean): Double
     
     /**
       * The relative path to the file (defaults to file name if relative path doesn't exist)
       **/
-    var relativePath: String = js.native
+    var relativePath: String
     
     /**
       * A back-reference to the parent Resumable object.
       **/
-    var resumableObj: typings.resumablejs.Resumable.Resumable = js.native
+    var resumableObj: typings.resumablejs.Resumable.Resumable
     
     /**
       * Retry uploading the file.
       **/
-    def retry(): Unit = js.native
+    def retry(): Unit
     
     /**
       * Size in bytes of the file.
       **/
-    var size: Double = js.native
+    var size: Double
     
     /**
       * A unique identifier assigned to this file object. This value is included in uploads to the server for reference, but can also be used in CSS classes etc when building your upload UI.
       **/
-    var uniqueIdentifier: String = js.native
+    var uniqueIdentifier: String
   }
   object ResumableFile {
     

@@ -2,66 +2,64 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queue extends StObject {
   
   /**
     * An identifier for this resource that is unique within all of AWS.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The timestamp in epoch seconds for when you created the queue.
     */
-  var CreatedAt: js.UndefOr[timestampUnix] = js.native
+  var CreatedAt: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * An optional description that you create for each queue.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The timestamp in epoch seconds for when you most recently updated the queue.
     */
-  var LastUpdated: js.UndefOr[timestampUnix] = js.native
+  var LastUpdated: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * A name that you create for each queue. Each name must be unique within your account.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Specifies whether the pricing plan for the queue is on-demand or reserved. For on-demand, you pay per minute, billed in increments of .01 minute. For reserved, you pay for the transcoding capacity of the entire queue, regardless of how much or how little you use it. Reserved pricing requires a 12-month commitment.
     */
-  var PricingPlan: js.UndefOr[typings.awsSdk.mediaconvertMod.PricingPlan] = js.native
+  var PricingPlan: js.UndefOr[typings.awsSdk.mediaconvertMod.PricingPlan] = js.undefined
   
   /**
     * The estimated number of jobs with a PROGRESSING status.
     */
-  var ProgressingJobsCount: js.UndefOr[integer] = js.native
+  var ProgressingJobsCount: js.UndefOr[integer] = js.undefined
   
   /**
     * Details about the pricing plan for your reserved queue. Required for reserved queues and not applicable to on-demand queues.
     */
-  var ReservationPlan: js.UndefOr[typings.awsSdk.mediaconvertMod.ReservationPlan] = js.native
+  var ReservationPlan: js.UndefOr[typings.awsSdk.mediaconvertMod.ReservationPlan] = js.undefined
   
   /**
     * Queues can be ACTIVE or PAUSED. If you pause a queue, the service won't begin processing jobs in that queue. Jobs that are running when you pause the queue continue to run until they finish or result in an error.
     */
-  var Status: js.UndefOr[QueueStatus] = js.native
+  var Status: js.UndefOr[QueueStatus] = js.undefined
   
   /**
     * The estimated number of jobs with a SUBMITTED status.
     */
-  var SubmittedJobsCount: js.UndefOr[integer] = js.native
+  var SubmittedJobsCount: js.UndefOr[integer] = js.undefined
   
   /**
     * Specifies whether this on-demand queue is system or custom. System queues are built in. You can't modify or delete system queues. You can create and modify custom queues.
     */
-  var Type: js.UndefOr[typings.awsSdk.mediaconvertMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.mediaconvertMod.Type] = js.undefined
 }
 object Queue {
   

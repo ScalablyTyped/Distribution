@@ -26,16 +26,15 @@ import typings.activexLibreoffice.com_.sun.star.view.XScreenCursor
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A {@link TextViewCursor} is a {@link TextRange} which can travel within a view of a {@link Text} object.
   * @see TextDocumentView
   */
-@js.native
 trait TextViewCursor
-  extends TextLayoutCursor
+  extends StObject
+     with TextLayoutCursor
      with XScreenCursor {
   
   /**
@@ -44,7 +43,7 @@ trait TextViewCursor
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
 }
 object TextViewCursor {
   
@@ -211,7 +210,7 @@ object TextViewCursor {
     getEnd: () => XTextRange,
     getPage: () => Double,
     getPropertyDefault: String => js.Any,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],

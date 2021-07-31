@@ -6,42 +6,42 @@ import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** this interface is used for a wrapper of objects implementing the service {@link com.sun.star.drawing.Shape} */
-@js.native
-trait XChartShape extends XInterface {
+trait XChartShape
+  extends StObject
+     with XInterface {
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} */
-  var Position: Point = js.native
+  var Position: Point
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} ??????????? deprecated */
-  val ShapeType: String = js.native
+  val ShapeType: String
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} */
-  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} */
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.beans.XPropertySet} */
-  def getPropertyValue(PropertyName: String): js.Any = js.native
+  def getPropertyValue(PropertyName: String): js.Any
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} ??????????? deprecated */
-  def getShapeType(): String = js.native
+  def getShapeType(): String
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} */
-  def getSize(): Size = js.native
+  def getSize(): Size
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} */
-  def setPosition(aPosition: Point): Unit = js.native
+  def setPosition(aPosition: Point): Unit
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.beans.XPropertySet} */
-  def setPropertyValue(aPropertyName: String, aValue: js.Any): Unit = js.native
+  def setPropertyValue(aPropertyName: String, aValue: js.Any): Unit
   
   /** the method corresponds to the identical methods of the interface {@link com.sun.star.drawing.XShape} */
-  def setSize(aSize: Size): Unit = js.native
+  def setSize(aSize: Size): Unit
 }
 object XChartShape {
   

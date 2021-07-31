@@ -2,16 +2,14 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDomainRequest extends StObject {
   
   /**
     * The name of the domain to delete.
     */
-  var DomainName: String = js.native
+  var DomainName: String
 }
 object DeleteDomainRequest {
   

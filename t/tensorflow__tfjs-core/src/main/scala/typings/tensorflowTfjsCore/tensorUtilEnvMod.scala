@@ -7,45 +7,32 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.numeric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorUtilEnvMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensor")
+  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", JSImport.Namespace)
   @js.native
-  def convertToTensor[T /* <: Tensor[Rank] */](x: T, argName: String, functionName: String): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensor")
-  @js.native
-  def convertToTensor[T /* <: Tensor[Rank] */](x: T, argName: String, functionName: String, parseAsDtype: DataType): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensor")
-  @js.native
-  def convertToTensor[T /* <: Tensor[Rank] */](x: TensorLike, argName: String, functionName: String): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensor")
-  @js.native
-  def convertToTensor[T /* <: Tensor[Rank] */](x: TensorLike, argName: String, functionName: String, parseAsDtype: DataType): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensorArray")
-  @js.native
-  def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensorArray")
-  @js.native
-  def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: DataType): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensorArray")
-  @js.native
-  def convertToTensorArray_numeric[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: numeric): js.Array[T] = js.native
+  @scala.inline
+  def convertToTensor[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def convertToTensor[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String, parseAsDtype: DataType): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensor")
-  @js.native
-  def convertToTensor_numeric[T /* <: Tensor[Rank] */](x: T, argName: String, functionName: String, parseAsDtype: numeric): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "convertToTensor")
-  @js.native
-  def convertToTensor_numeric[T /* <: Tensor[Rank] */](x: TensorLike, argName: String, functionName: String, parseAsDtype: numeric): T = js.native
+  @scala.inline
+  def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def convertToTensorArray[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: DataType): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "inferShape")
-  @js.native
-  def inferShape(`val`: TensorLike): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_util_env", "inferShape")
-  @js.native
-  def inferShape(`val`: TensorLike, dtype: DataType): js.Array[Double] = js.native
+  @scala.inline
+  def convertToTensorArray_numeric[T /* <: Tensor[Rank] */](arg: js.Array[T | TensorLike], argName: String, functionName: String, parseAsDtype: numeric): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensorArray")(arg.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  @scala.inline
+  def convertToTensor_numeric[T /* <: Tensor[Rank] */](x: T | TensorLike, argName: String, functionName: String, parseAsDtype: numeric): T = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToTensor")(x.asInstanceOf[js.Any], argName.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], parseAsDtype.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def inferShape(`val`: TensorLike): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def inferShape(`val`: TensorLike, dtype: DataType): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

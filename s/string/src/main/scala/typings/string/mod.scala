@@ -3,14 +3,12 @@ package typings.string
 import typings.string.anon.Delimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("string", JSImport.Namespace)
-  @js.native
-  def apply(o: js.Any): StringJS = js.native
+  @scala.inline
+  def apply(o: js.Any): StringJS = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[StringJS]
   
   @JSImport("string", JSImport.Namespace)
   @js.native
@@ -103,41 +101,21 @@ object mod {
     def padRight(len: Double, char: Double): StringJS = js.native
     
     def parseCSV(): js.Array[String] = js.native
-    def parseCSV(
-      delimiter: js.UndefOr[scala.Nothing],
-      qualifier: js.UndefOr[scala.Nothing],
-      escape: js.UndefOr[scala.Nothing],
-      lineDelimiter: String
-    ): js.Array[String] = js.native
-    def parseCSV(delimiter: js.UndefOr[scala.Nothing], qualifier: js.UndefOr[scala.Nothing], escape: String): js.Array[String] = js.native
-    def parseCSV(
-      delimiter: js.UndefOr[scala.Nothing],
-      qualifier: js.UndefOr[scala.Nothing],
-      escape: String,
-      lineDelimiter: String
-    ): js.Array[String] = js.native
-    def parseCSV(delimiter: js.UndefOr[scala.Nothing], qualifier: String): js.Array[String] = js.native
-    def parseCSV(
-      delimiter: js.UndefOr[scala.Nothing],
-      qualifier: String,
-      escape: js.UndefOr[scala.Nothing],
-      lineDelimiter: String
-    ): js.Array[String] = js.native
-    def parseCSV(delimiter: js.UndefOr[scala.Nothing], qualifier: String, escape: String): js.Array[String] = js.native
-    def parseCSV(delimiter: js.UndefOr[scala.Nothing], qualifier: String, escape: String, lineDelimiter: String): js.Array[String] = js.native
     def parseCSV(delimiter: String): js.Array[String] = js.native
-    def parseCSV(
-      delimiter: String,
-      qualifier: js.UndefOr[scala.Nothing],
-      escape: js.UndefOr[scala.Nothing],
-      lineDelimiter: String
-    ): js.Array[String] = js.native
-    def parseCSV(delimiter: String, qualifier: js.UndefOr[scala.Nothing], escape: String): js.Array[String] = js.native
-    def parseCSV(delimiter: String, qualifier: js.UndefOr[scala.Nothing], escape: String, lineDelimiter: String): js.Array[String] = js.native
     def parseCSV(delimiter: String, qualifier: String): js.Array[String] = js.native
-    def parseCSV(delimiter: String, qualifier: String, escape: js.UndefOr[scala.Nothing], lineDelimiter: String): js.Array[String] = js.native
     def parseCSV(delimiter: String, qualifier: String, escape: String): js.Array[String] = js.native
     def parseCSV(delimiter: String, qualifier: String, escape: String, lineDelimiter: String): js.Array[String] = js.native
+    def parseCSV(delimiter: String, qualifier: String, escape: Unit, lineDelimiter: String): js.Array[String] = js.native
+    def parseCSV(delimiter: String, qualifier: Unit, escape: String): js.Array[String] = js.native
+    def parseCSV(delimiter: String, qualifier: Unit, escape: String, lineDelimiter: String): js.Array[String] = js.native
+    def parseCSV(delimiter: String, qualifier: Unit, escape: Unit, lineDelimiter: String): js.Array[String] = js.native
+    def parseCSV(delimiter: Unit, qualifier: String): js.Array[String] = js.native
+    def parseCSV(delimiter: Unit, qualifier: String, escape: String): js.Array[String] = js.native
+    def parseCSV(delimiter: Unit, qualifier: String, escape: String, lineDelimiter: String): js.Array[String] = js.native
+    def parseCSV(delimiter: Unit, qualifier: String, escape: Unit, lineDelimiter: String): js.Array[String] = js.native
+    def parseCSV(delimiter: Unit, qualifier: Unit, escape: String): js.Array[String] = js.native
+    def parseCSV(delimiter: Unit, qualifier: Unit, escape: String, lineDelimiter: String): js.Array[String] = js.native
+    def parseCSV(delimiter: Unit, qualifier: Unit, escape: Unit, lineDelimiter: String): js.Array[String] = js.native
     
     def repeat(n: Double): StringJS = js.native
     
@@ -164,9 +142,9 @@ object mod {
     def stripTags(tags: String*): StringJS = js.native
     
     def template(values: js.Object): StringJS = js.native
-    def template(values: js.Object, open: js.UndefOr[scala.Nothing], close: String): StringJS = js.native
     def template(values: js.Object, open: String): StringJS = js.native
     def template(values: js.Object, open: String, close: String): StringJS = js.native
+    def template(values: js.Object, open: Unit, close: String): StringJS = js.native
     
     def times(n: Double): StringJS = js.native
     
@@ -175,9 +153,9 @@ object mod {
     def toBoolean(): Boolean = js.native
     
     def toCSV(): StringJS = js.native
-    def toCSV(delimiter: js.UndefOr[scala.Nothing], qualifier: String): StringJS = js.native
     def toCSV(delimiter: String): StringJS = js.native
     def toCSV(delimiter: String, qualifier: String): StringJS = js.native
+    def toCSV(delimiter: Unit, qualifier: String): StringJS = js.native
     def toCSV(options: Delimiter): StringJS = js.native
     
     def toFloat(): Double = js.native
@@ -201,8 +179,8 @@ object mod {
     def unescapeHTML(): StringJS = js.native
     
     def wrapHTML(): StringJS = js.native
-    def wrapHTML(element: js.UndefOr[scala.Nothing], attributes: js.Object): StringJS = js.native
     def wrapHTML(element: String): StringJS = js.native
     def wrapHTML(element: String, attributes: js.Object): StringJS = js.native
+    def wrapHTML(element: Unit, attributes: js.Object): StringJS = js.native
   }
 }

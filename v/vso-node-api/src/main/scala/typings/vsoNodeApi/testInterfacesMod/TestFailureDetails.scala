@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestFailureDetails extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var testResults: js.Array[TestCaseResultIdentifier] = js.native
+  var testResults: js.Array[TestCaseResultIdentifier]
 }
 object TestFailureDetails {
   

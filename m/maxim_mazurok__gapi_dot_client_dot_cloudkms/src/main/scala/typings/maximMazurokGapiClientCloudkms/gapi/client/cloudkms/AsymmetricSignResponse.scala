@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsymmetricSignResponse extends StObject {
   
   /** The resource name of the CryptoKeyVersion used for signing. Check this field to verify that the intended resource was used for signing. NOTE: This field is in Beta. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The created signature. */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A CRC32C checksum of the returned AsymmetricSignResponse.signature. An integrity check of AsymmetricSignResponse.signature can be performed by
@@ -21,14 +19,14 @@ trait AsymmetricSignResponse extends StObject {
     * compatibility across different languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support
     * this type. NOTE: This field is in Beta.
     */
-  var signatureCrc32c: js.UndefOr[String] = js.native
+  var signatureCrc32c: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A flag indicating whether AsymmetricSignRequest.digest_crc32c was received by KeyManagementService and used for the integrity verification of the
     * digest. A false value of this field indicates either that AsymmetricSignRequest.digest_crc32c was left unset or that it was not delivered to KeyManagementService. If you've set
     * AsymmetricSignRequest.digest_crc32c but this field is still false, discard the response and perform a limited number of retries. NOTE: This field is in Beta.
     */
-  var verifiedDigestCrc32c: js.UndefOr[Boolean] = js.native
+  var verifiedDigestCrc32c: js.UndefOr[Boolean] = js.undefined
 }
 object AsymmetricSignResponse {
   

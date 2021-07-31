@@ -2,65 +2,63 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnchorAttributes extends StObject {
   
-  var anchorAttributes: Default = js.native
+  var anchorAttributes: Default
   
-  var breaks: Type = js.native
+  var breaks: Type
   
-  var emoji: Type = js.native
+  var emoji: Type
   
-  var highlight: Type = js.native
+  var highlight: Type
   
-  var html: Type = js.native
+  var html: Type
   
-  var langPrefix: DefaultType = js.native
+  var langPrefix: DefaultType
   
-  var linkify: Type = js.native
+  var linkify: Type
   
-  var postrender: Default = js.native
+  var postrender: Default
   
-  var prerender: Default = js.native
+  var prerender: Default
   
-  var quotes: DefaultType = js.native
+  var quotes: DefaultType
   
-  var show: Type = js.native
+  var show: Type
   
-  var source: DefaultType = js.native
+  var source: DefaultType
   
-  var tableClass: DefaultType = js.native
+  var tableClass: DefaultType
   
-  var taskLists: Type = js.native
+  var taskLists: Type
   
-  var toc: Type = js.native
+  var toc: Type
   
-  var tocAnchorClass: DefaultType = js.native
+  var tocAnchorClass: DefaultType
   
-  var tocAnchorLink: Type = js.native
+  var tocAnchorLink: Type
   
-  var tocAnchorLinkClass: DefaultType = js.native
+  var tocAnchorLinkClass: DefaultType
   
-  var tocAnchorLinkSpace: Type = js.native
+  var tocAnchorLinkSpace: Type
   
-  var tocAnchorLinkSymbol: DefaultType = js.native
+  var tocAnchorLinkSymbol: DefaultType
   
-  var tocClass: DefaultType = js.native
+  var tocClass: DefaultType
   
-  var tocFirstLevel: DefaultNumber = js.native
+  var tocFirstLevel: DefaultNumber
   
-  var tocId: TypeAny = js.native
+  var tocId: TypeAny
   
-  var tocLastLevel: TypeAny = js.native
+  var tocLastLevel: TypeAny
   
-  var typographer: Type = js.native
+  var typographer: Type
   
-  var watches: Default = js.native
+  var watches: Default
   
-  var xhtmlOut: Type = js.native
+  var xhtmlOut: Type
 }
 object AnchorAttributes {
   

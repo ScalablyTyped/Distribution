@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetJobsResponse extends StObject {
   
   /**
     * A list of job definitions.
     */
-  var Jobs: js.UndefOr[JobList] = js.native
+  var Jobs: js.UndefOr[JobList] = js.undefined
   
   /**
     * A list of names of jobs not found.
     */
-  var JobsNotFound: js.UndefOr[JobNameList] = js.native
+  var JobsNotFound: js.UndefOr[JobNameList] = js.undefined
 }
 object BatchGetJobsResponse {
   

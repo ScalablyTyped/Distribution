@@ -2,41 +2,39 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateModelVersionRequest extends StObject {
   
   /**
     * Details for the external events data used for model version training. Required if trainingDataSource is EXTERNAL_EVENTS.
     */
-  var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.native
+  var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.undefined
   
   /**
     * The model ID. 
     */
-  var modelId: modelIdentifier = js.native
+  var modelId: modelIdentifier
   
   /**
     * The model type.
     */
-  var modelType: ModelTypeEnum = js.native
+  var modelType: ModelTypeEnum
   
   /**
     * A collection of key and value pairs.
     */
-  var tags: js.UndefOr[tagList] = js.native
+  var tags: js.UndefOr[tagList] = js.undefined
   
   /**
     * The training data schema.
     */
-  var trainingDataSchema: TrainingDataSchema = js.native
+  var trainingDataSchema: TrainingDataSchema
   
   /**
     * The training data source location in Amazon S3. 
     */
-  var trainingDataSource: TrainingDataSourceEnum = js.native
+  var trainingDataSource: TrainingDataSourceEnum
 }
 object CreateModelVersionRequest {
   

@@ -1,6 +1,7 @@
 package typings.requestPromiseNative
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.urlMod.Url
 import typings.request.mod.CoreOptions
 import typings.request.mod.Request
 import typings.request.mod.RequestAPI
@@ -10,7 +11,6 @@ import typings.request.mod.UriOptions
 import typings.request.mod.UrlOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,39 +21,100 @@ object mod extends Shortcut {
   
   type FullResponse = Response
   
-  type Options = OptionsWithUri | OptionsWithUrl
+  /* Rewritten from type alias, can be one of: 
+    - typings.requestPromiseNative.mod.OptionsWithUri
+    - typings.requestPromiseNative.mod.OptionsWithUrl
+  */
+  trait Options extends StObject
+  object Options {
+    
+    @scala.inline
+    def OptionsWithUri(uri: String | Url): typings.requestPromiseNative.mod.OptionsWithUri = {
+      val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.requestPromiseNative.mod.OptionsWithUri]
+    }
+    
+    @scala.inline
+    def OptionsWithUrl(url: String | Url): typings.requestPromiseNative.mod.OptionsWithUrl = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.requestPromiseNative.mod.OptionsWithUrl]
+    }
+  }
   
-  type OptionsWithUri = UriOptions with RequestPromiseOptions
+  trait OptionsWithUri
+    extends StObject
+       with UriOptions
+       with RequestPromiseOptions
+       with Options
+  object OptionsWithUri {
+    
+    @scala.inline
+    def apply(uri: String | Url): OptionsWithUri = {
+      val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsWithUri]
+    }
+  }
   
-  type OptionsWithUrl = UrlOptions with RequestPromiseOptions
+  trait OptionsWithUrl
+    extends StObject
+       with UrlOptions
+       with RequestPromiseOptions
+       with Options
+  object OptionsWithUrl {
+    
+    @scala.inline
+    def apply(url: String | Url): OptionsWithUrl = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsWithUrl]
+    }
+  }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
   - js.Thenable because Inheritance from two classes. Inlined 
-  - js.Promise because Inheritance from two classes. Inlined  */ @js.native
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - js.Promise because Inheritance from two classes. Inlined `then`, `then`, executor, `catch` */ @js.native
   trait RequestPromise[T] extends Request {
     
+    def `catch`[B](onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] = js.native
+    
+    val executor: js.Function2[js.Function1[T | js.Thenable[T], ?], js.Function1[Any, ?], ?] = js.native
+    
     def promise(): js.Promise[T] = js.native
+    
+    def `then`[B](
+      onFulfilled: js.Function1[T, B | js.Thenable[B]],
+      onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
+    ): js.Promise[B] = js.native
+    def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] = js.native
   }
   
   type RequestPromiseAPI = RequestAPI[RequestPromise[js.Any], RequestPromiseOptions, RequiredUriUrl]
   
-  @js.native
-  trait RequestPromiseOptions extends CoreOptions {
+  trait RequestPromiseOptions
+    extends StObject
+       with CoreOptions {
     
-    var resolveWithFullResponse: js.UndefOr[Boolean] = js.native
+    var resolveWithFullResponse: js.UndefOr[Boolean] = js.undefined
     
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
         js.Function3[
           /* body */ js.Any, 
           /* response */ Response, 
           /* resolveWithFullResponse */ js.UndefOr[Boolean], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var transform2xxOnly: js.UndefOr[Boolean] = js.native
+    var transform2xxOnly: js.UndefOr[Boolean] = js.undefined
   }
   object RequestPromiseOptions {
     
@@ -80,7 +141,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setTransform(
-        value: (/* body */ js.Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => _
+        value: (/* body */ js.Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       @scala.inline

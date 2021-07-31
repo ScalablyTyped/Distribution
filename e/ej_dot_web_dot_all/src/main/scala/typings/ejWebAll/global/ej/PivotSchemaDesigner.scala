@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.PivotSchemaDesigner")
 @js.native
 class PivotSchemaDesigner protected ()
-  extends typings.ejWebAll.ej.PivotSchemaDesigner {
+  extends StObject
+     with typings.ejWebAll.ej.PivotSchemaDesigner {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -27,13 +27,13 @@ object PivotSchemaDesigner {
   object Layouts extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotSchemaDesigner.Layouts with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotSchemaDesigner.Layouts & Double] = js.native
     
-    /* 0 */ val Excel: typings.ejWebAll.ej.PivotSchemaDesigner.Layouts.Excel with Double = js.native
+    /* 0 */ val Excel: typings.ejWebAll.ej.PivotSchemaDesigner.Layouts.Excel & Double = js.native
     
-    /* 1 */ val Normal: typings.ejWebAll.ej.PivotSchemaDesigner.Layouts.Normal with Double = js.native
+    /* 1 */ val Normal: typings.ejWebAll.ej.PivotSchemaDesigner.Layouts.Normal & Double = js.native
     
-    /* 2 */ val OneByOne: typings.ejWebAll.ej.PivotSchemaDesigner.Layouts.OneByOne with Double = js.native
+    /* 2 */ val OneByOne: typings.ejWebAll.ej.PivotSchemaDesigner.Layouts.OneByOne & Double = js.native
   }
   
   /* static member */

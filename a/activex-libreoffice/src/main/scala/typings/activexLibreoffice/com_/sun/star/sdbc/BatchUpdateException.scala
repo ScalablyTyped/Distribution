@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * commands that were executed successfully during the batch update, that is, all commands that were executed before the error occurred. The order of
   * elements in an array of update counts corresponds to the order in which commands were added to the batch.
   */
-@js.native
-trait BatchUpdateException extends SQLException {
+trait BatchUpdateException
+  extends StObject
+     with SQLException {
   
   /** is an array of `long` , with each element indicating the update count for a SQL command that executed successfully before the exception was thrown. */
-  var UpdateCounts: SafeArray[Double] = js.native
+  var UpdateCounts: SafeArray[Double]
 }
 object BatchUpdateException {
   

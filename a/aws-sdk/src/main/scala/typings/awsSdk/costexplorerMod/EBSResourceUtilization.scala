@@ -2,31 +2,29 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EBSResourceUtilization extends StObject {
   
   /**
     *  The maximum size of read operations per second 
     */
-  var EbsReadBytesPerSecond: js.UndefOr[GenericString] = js.native
+  var EbsReadBytesPerSecond: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The maximum number of read operations per second. 
     */
-  var EbsReadOpsPerSecond: js.UndefOr[GenericString] = js.native
+  var EbsReadOpsPerSecond: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The maximum size of write operations per second. 
     */
-  var EbsWriteBytesPerSecond: js.UndefOr[GenericString] = js.native
+  var EbsWriteBytesPerSecond: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The maximum number of write operations per second. 
     */
-  var EbsWriteOpsPerSecond: js.UndefOr[GenericString] = js.native
+  var EbsWriteOpsPerSecond: js.UndefOr[GenericString] = js.undefined
 }
 object EBSResourceUtilization {
   

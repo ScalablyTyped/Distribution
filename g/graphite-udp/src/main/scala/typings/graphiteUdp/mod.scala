@@ -5,10 +5,13 @@ import typings.graphiteUdp.graphiteUdpStrings.udp6
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("graphite-udp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("graphite-udp", "Client")
   @js.native
@@ -33,69 +36,66 @@ object mod {
     def put(name: String, value: Double): Unit = js.native
   }
   
-  @JSImport("graphite-udp", "createClient")
-  @js.native
-  def createClient(): Client = js.native
-  @JSImport("graphite-udp", "createClient")
-  @js.native
-  def createClient(clientOptions: ClientOptions): Client = js.native
+  @scala.inline
+  def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
+  @scala.inline
+  def createClient(clientOptions: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(clientOptions.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @js.native
   trait ClientOptions extends StObject {
     
     /**
       * called when metrics are sent
       * Defaults to null
       */
-    var callback: js.UndefOr[js.Function2[/* error */ Error, /* metrics */ js.Any, Unit]] = js.native
+    var callback: js.UndefOr[js.Function2[/* error */ Error, /* metrics */ js.Any, Unit]] = js.undefined
     
     /**
       * graphite server host or ip
       * Defaults to 127.0.0.1
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Interval to group metrics by in milliseconds
       * Defaults to 5000 (5s)
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * split into smaller UDP packets
       * Defaults to 4096
       */
-    var maxPacketSize: js.UndefOr[Double] = js.native
+    var maxPacketSize: js.UndefOr[Double] = js.undefined
     
     /**
       * graphite server udp port
       * Defaults to 2003
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * Prefix for each metric name
       * Defaults to ''
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Suffix for each metrtic name
       * Defaults to ''
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * udp type (udp4 or udp6)
       * Defaults to udp4
       */
-    var `type`: js.UndefOr[udp4 | udp6] = js.native
+    var `type`: js.UndefOr[udp4 | udp6] = js.undefined
     
     /**
       * log messages to console
       * Defaults to false
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object ClientOptions {
     

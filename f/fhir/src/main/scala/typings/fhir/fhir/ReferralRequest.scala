@@ -2,165 +2,165 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request for referral or transfer of care
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ReferralRequest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ReferralRequest
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'authoredOn'.
     */
-  var _authoredOn: js.UndefOr[Element] = js.native
+  var _authoredOn: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'intent'.
     */
-  var _intent: js.UndefOr[Element] = js.native
+  var _intent: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'occurrenceDateTime'.
     */
-  var _occurrenceDateTime: js.UndefOr[Element] = js.native
+  var _occurrenceDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'priority'.
     */
-  var _priority: js.UndefOr[Element] = js.native
+  var _priority: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Date of creation/activation
     */
-  var authoredOn: js.UndefOr[dateTime] = js.native
+  var authoredOn: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Request fulfilled by this request
     */
-  var basedOn: js.UndefOr[js.Array[Reference]] = js.native
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Originating encounter
     */
-  var context: js.UndefOr[Reference] = js.native
+  var context: js.UndefOr[Reference] = js.undefined
   
   /**
     * Instantiates protocol or definition
     */
-  var definition: js.UndefOr[js.Array[Reference]] = js.native
+  var definition: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * A textual description of the referral
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Composite request this is part of
     */
-  var groupIdentifier: js.UndefOr[Identifier] = js.native
+  var groupIdentifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * proposal | plan | order
     */
-  var intent: code = js.native
+  var intent: code
   
   /**
     * Comments made about referral request
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * When the service(s) requested in the referral should occur
     */
-  var occurrenceDateTime: js.UndefOr[dateTime] = js.native
+  var occurrenceDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * When the service(s) requested in the referral should occur
     */
-  var occurrencePeriod: js.UndefOr[Period] = js.native
+  var occurrencePeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * Urgency of referral / transfer of care request
     */
-  var priority: js.UndefOr[code] = js.native
+  var priority: js.UndefOr[code] = js.undefined
   
   /**
     * Reason for referral / transfer of care request
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Why is service needed?
     */
-  var reasonReference: js.UndefOr[js.Array[Reference]] = js.native
+  var reasonReference: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Receiver of referral / transfer of care request
     */
-  var recipient: js.UndefOr[js.Array[Reference]] = js.native
+  var recipient: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Key events in history of request
     */
-  var relevantHistory: js.UndefOr[js.Array[Reference]] = js.native
+  var relevantHistory: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Request(s) replaced by this request
     */
-  var replaces: js.UndefOr[js.Array[Reference]] = js.native
+  var replaces: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Who/what is requesting service
     */
-  var requester: js.UndefOr[ReferralRequestRequester] = js.native
+  var requester: js.UndefOr[ReferralRequestRequester] = js.undefined
   
   /**
     * Actions requested as part of the referral
     */
-  var serviceRequested: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var serviceRequested: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * The clinical specialty (discipline) that the referral is requested for
     */
-  var specialty: js.UndefOr[CodeableConcept] = js.native
+  var specialty: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * draft | active | suspended | cancelled | completed | entered-in-error | unknown
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Patient referred to care or transfer
     */
-  var subject: Reference = js.native
+  var subject: Reference
   
   /**
     * Additonal information to support referral or transfer of care request
     */
-  var supportingInfo: js.UndefOr[js.Array[Reference]] = js.native
+  var supportingInfo: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Referral/Transition of care request type
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ReferralRequest {
   

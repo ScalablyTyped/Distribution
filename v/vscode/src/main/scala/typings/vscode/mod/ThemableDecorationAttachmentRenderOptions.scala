@@ -2,72 +2,70 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemableDecorationAttachmentRenderOptions extends StObject {
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var backgroundColor: js.UndefOr[String | ThemeColor] = js.native
+  var backgroundColor: js.UndefOr[String | ThemeColor] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var border: js.UndefOr[String] = js.native
+  var border: js.UndefOr[String] = js.undefined
   
   /**
     * CSS styling property that will be applied to text enclosed by a decoration.
     */
-  var borderColor: js.UndefOr[String | ThemeColor] = js.native
+  var borderColor: js.UndefOr[String | ThemeColor] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var color: js.UndefOr[String | ThemeColor] = js.native
+  var color: js.UndefOr[String | ThemeColor] = js.undefined
   
   /**
     * An **absolute path** or an URI to an image to be rendered in the attachment. Either an icon
     * or a text can be shown, but not both.
     */
-  var contentIconPath: js.UndefOr[String | Uri] = js.native
+  var contentIconPath: js.UndefOr[String | Uri] = js.undefined
   
   /**
     * Defines a text content that is shown in the attachment. Either an icon or a text can be shown, but not both.
     */
-  var contentText: js.UndefOr[String] = js.native
+  var contentText: js.UndefOr[String] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var margin: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[String] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object ThemableDecorationAttachmentRenderOptions {
   

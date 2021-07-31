@@ -4,15 +4,13 @@ import typings.baseui.baseuiStrings.end
 import typings.baseui.baseuiStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ENHANCER_POSITION extends StObject {
   
-  var end: typings.baseui.baseuiStrings.end = js.native
+  var end: typings.baseui.baseuiStrings.end
   
-  var start: typings.baseui.baseuiStrings.start = js.native
+  var start: typings.baseui.baseuiStrings.start
 }
 object ENHANCER_POSITION {
   

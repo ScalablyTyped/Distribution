@@ -2,23 +2,21 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateFileSystemAliasesRequest extends StObject {
   
   /**
     * An array of one or more DNS alias names to disassociate, or remove, from the file system.
     */
-  var Aliases: AlternateDNSNames = js.native
+  var Aliases: AlternateDNSNames
   
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.fsxMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.fsxMod.ClientRequestToken] = js.undefined
   
   /**
     * Specifies the file system from which to disassociate the DNS aliases.
     */
-  var FileSystemId: typings.awsSdk.fsxMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.fsxMod.FileSystemId
 }
 object DisassociateFileSystemAliasesRequest {
   

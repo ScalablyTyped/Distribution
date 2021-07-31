@@ -3,12 +3,14 @@ package typings.bip174
 import typings.bip174.parserMod.PsbtAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object combinerMod {
   
-  @JSImport("bip174/src/lib/combiner", "combine")
+  @JSImport("bip174/src/lib/combiner", JSImport.Namespace)
   @js.native
-  def combine(psbts: js.Array[PsbtAttributes]): PsbtAttributes = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def combine(psbts: js.Array[PsbtAttributes]): PsbtAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(psbts.asInstanceOf[js.Any]).asInstanceOf[PsbtAttributes]
 }

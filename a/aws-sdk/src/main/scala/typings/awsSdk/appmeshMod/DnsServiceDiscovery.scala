@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DnsServiceDiscovery extends StObject {
   
   /**
     * Specifies the DNS service discovery hostname for the virtual node. 
     */
-  var hostname: Hostname = js.native
+  var hostname: Hostname
 }
 object DnsServiceDiscovery {
   

@@ -33,7 +33,6 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridOptionsWrapperMod {
@@ -146,7 +145,7 @@ object gridOptionsWrapperMod {
     
     def getGroupHeaderHeight(): Double = js.native
     
-    def getGroupRowAggNodesFunc(): js.Function1[/* nodes */ js.Array[RowNode], _] = js.native
+    def getGroupRowAggNodesFunc(): js.Function1[/* nodes */ js.Array[RowNode], js.Any] = js.native
     
     def getGroupRowRendererParams(): js.Any = js.native
     
@@ -186,9 +185,9 @@ object gridOptionsWrapperMod {
     
     def getPaginationPageSize(): Double = js.native
     
-    def getPinnedBottomRowData(): js.Array[_] = js.native
+    def getPinnedBottomRowData(): js.Array[js.Any] = js.native
     
-    def getPinnedTopRowData(): js.Array[_] = js.native
+    def getPinnedTopRowData(): js.Array[js.Any] = js.native
     
     def getPivotColumnGroupTotals(): String = js.native
     
@@ -206,13 +205,13 @@ object gridOptionsWrapperMod {
     
     def getPostSortFunc(): js.Function1[/* rowNodes */ js.Array[RowNode], Unit] = js.native
     
-    def getProcessCellForClipboardFunc(): js.Function1[/* params */ ProcessCellForExportParams, _] = js.native
+    def getProcessCellForClipboardFunc(): js.Function1[/* params */ ProcessCellForExportParams, js.Any] = js.native
     
-    def getProcessCellFromClipboardFunc(): js.Function1[/* params */ ProcessCellForExportParams, _] = js.native
+    def getProcessCellFromClipboardFunc(): js.Function1[/* params */ ProcessCellForExportParams, js.Any] = js.native
     
     def getProcessDataFromClipboardFunc(): js.Function1[/* params */ ProcessDataFromClipboardParams, js.Array[js.Array[String]]] = js.native
     
-    def getProcessHeaderForClipboardFunc(): js.Function1[/* params */ ProcessHeaderForExportParams, _] = js.native
+    def getProcessHeaderForClipboardFunc(): js.Function1[/* params */ ProcessHeaderForExportParams, js.Any] = js.native
     
     def getProcessRowPostCreateFunc(): js.Any = js.native
     
@@ -228,7 +227,7 @@ object gridOptionsWrapperMod {
     
     def getRowClassFunc(): js.Function1[/* params */ js.Any, String | js.Array[String]] = js.native
     
-    def getRowData(): js.Array[_] = js.native
+    def getRowData(): js.Array[js.Any] = js.native
     
     def getRowGroupPanelShow(): String = js.native
     
@@ -604,17 +603,17 @@ object gridOptionsWrapperMod {
     @scala.inline
     def PROP_SUPPRESS_ROW_DRAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_SUPPRESS_ROW_DRAG")(x.asInstanceOf[js.Any])
     
-    @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.checkEventDeprecation")
-    @js.native
-    def checkEventDeprecation(eventName: String): Unit = js.native
+    @scala.inline
+    def checkEventDeprecation(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEventDeprecation")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
-  trait PropertyChangedEvent extends AgEvent {
+  trait PropertyChangedEvent
+    extends StObject
+       with AgEvent {
     
-    var currentValue: js.Any = js.native
+    var currentValue: js.Any
     
-    var previousValue: js.Any = js.native
+    var previousValue: js.Any
   }
   object PropertyChangedEvent {
     

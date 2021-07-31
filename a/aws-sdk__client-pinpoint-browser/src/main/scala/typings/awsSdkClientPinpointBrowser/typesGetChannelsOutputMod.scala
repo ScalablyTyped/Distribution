@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesChannelsResponseMod.Unmarshalled
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetChannelsOutputMod {
   
-  @js.native
-  trait GetChannelsOutput extends OutputTypesUnion {
+  trait GetChannelsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Get channels definition
       */
-    var ChannelsResponse: UnmarshalledChannelsResponse = js.native
+    var ChannelsResponse: UnmarshalledChannelsResponse
   }
   object GetChannelsOutput {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpsItemResponse extends StObject {
   
   /**
     * The OpsItem.
     */
-  var OpsItem: js.UndefOr[typings.awsSdk.ssmMod.OpsItem] = js.native
+  var OpsItem: js.UndefOr[typings.awsSdk.ssmMod.OpsItem] = js.undefined
 }
 object GetOpsItemResponse {
   

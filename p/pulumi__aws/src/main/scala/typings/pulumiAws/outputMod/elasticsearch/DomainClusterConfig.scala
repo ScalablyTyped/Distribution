@@ -2,61 +2,59 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainClusterConfig extends StObject {
   
   /**
     * Number of dedicated master nodes in the cluster
     */
-  var dedicatedMasterCount: js.UndefOr[Double] = js.native
+  var dedicatedMasterCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether dedicated master nodes are enabled for the cluster.
     */
-  var dedicatedMasterEnabled: js.UndefOr[Boolean] = js.native
+  var dedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Instance type of the dedicated master nodes in the cluster.
     */
-  var dedicatedMasterType: js.UndefOr[String] = js.native
+  var dedicatedMasterType: js.UndefOr[String] = js.undefined
   
   /**
     * Number of instances in the cluster.
     */
-  var instanceCount: js.UndefOr[Double] = js.native
+  var instanceCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Instance type of data nodes in the cluster.
     */
-  var instanceType: js.UndefOr[String] = js.native
+  var instanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of warm nodes in the cluster. Valid values are between `2` and `150`. `warmCount` can be only and must be set when `warmEnabled` is set to `true`.
     */
-  var warmCount: js.UndefOr[Double] = js.native
+  var warmCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to enable warm storage.
     */
-  var warmEnabled: js.UndefOr[Boolean] = js.native
+  var warmEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance type for the Elasticsearch cluster's warm nodes. Valid values are `ultrawarm1.medium.elasticsearch`, `ultrawarm1.large.elasticsearch` and `ultrawarm1.xlarge.elasticsearch`. `warmType` can be only and must be set when `warmEnabled` is set to `true`.
     */
-  var warmType: js.UndefOr[String] = js.native
+  var warmType: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration block containing zone awareness settings. Documented below.
     */
-  var zoneAwarenessConfig: js.UndefOr[DomainClusterConfigZoneAwarenessConfig] = js.native
+  var zoneAwarenessConfig: js.UndefOr[DomainClusterConfigZoneAwarenessConfig] = js.undefined
   
   /**
     * Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availabilityZoneCount` within the `zoneAwarenessConfig` must be set to `3`.
     */
-  var zoneAwarenessEnabled: js.UndefOr[Boolean] = js.native
+  var zoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object DomainClusterConfig {
   

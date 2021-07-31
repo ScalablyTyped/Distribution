@@ -2,46 +2,44 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsecureContentStatus extends StObject {
   
   /**
     * Always false.
     */
-  var containedMixedForm: Boolean = js.native
+  var containedMixedForm: Boolean
   
   /**
     * Always false.
     */
-  var displayedContentWithCertErrors: Boolean = js.native
+  var displayedContentWithCertErrors: Boolean
   
   /**
     * Always set to unknown.
     */
-  var displayedInsecureContentStyle: SecurityState = js.native
+  var displayedInsecureContentStyle: SecurityState
   
   /**
     * Always false.
     */
-  var displayedMixedContent: Boolean = js.native
+  var displayedMixedContent: Boolean
   
   /**
     * Always false.
     */
-  var ranContentWithCertErrors: Boolean = js.native
+  var ranContentWithCertErrors: Boolean
   
   /**
     * Always set to unknown.
     */
-  var ranInsecureContentStyle: SecurityState = js.native
+  var ranInsecureContentStyle: SecurityState
   
   /**
     * Always false.
     */
-  var ranMixedContent: Boolean = js.native
+  var ranMixedContent: Boolean
 }
 object InsecureContentStatus {
   

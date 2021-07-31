@@ -11,8 +11,8 @@ screenshot PhoneGap Plugin for Android
 | Full name          | com.darktalker.cordova.screenshot |
 | Keywords           | cordova, screenshot, ecosystem:cordova, cordova-android, cordova-ios, cordova-osx |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 58912 |
+| # dependents       | 1 |
+| # downloads        | 46793 |
 | # stars            | 2 |
 
 ## Links

@@ -6,11 +6,9 @@ import typings.officeJs.officeJsStrings.VeryHidden
 import typings.officeJs.officeJsStrings.Visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`. */
-@js.native
 trait WorksheetUpdateData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var enableCalculation: js.UndefOr[Boolean] = js.native
+  var enableCalculation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var pageLayout: js.UndefOr[PageLayoutUpdateData] = js.native
+  var pageLayout: js.UndefOr[PageLayoutUpdateData] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showGridlines: js.UndefOr[Boolean] = js.native
+  var showGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showHeadings: js.UndefOr[Boolean] = js.native
+  var showHeadings: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var standardWidth: js.UndefOr[Double] = js.native
+  var standardWidth: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tabColor: js.UndefOr[String] = js.native
+  var tabColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait WorksheetUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
     */
-  var visibility: js.UndefOr[SheetVisibility | Visible | Hidden | VeryHidden] = js.native
+  var visibility: js.UndefOr[SheetVisibility | Visible | Hidden | VeryHidden] = js.undefined
 }
 object WorksheetUpdateData {
   

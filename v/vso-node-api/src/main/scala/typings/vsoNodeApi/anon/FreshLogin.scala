@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreshLogin extends StObject {
   
-  var freshLogin: scala.Double = js.native
+  var freshLogin: scala.Double
   
-  var login: scala.Double = js.native
+  var login: scala.Double
   
-  var noOption: scala.Double = js.native
+  var noOption: scala.Double
   
-  var selectAccount: scala.Double = js.native
+  var selectAccount: scala.Double
 }
 object FreshLogin {
   

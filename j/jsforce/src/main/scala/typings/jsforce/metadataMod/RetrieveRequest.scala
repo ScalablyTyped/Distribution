@@ -2,21 +2,19 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetrieveRequest extends StObject {
   
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
-  var packageNames: js.UndefOr[js.Array[String]] = js.native
+  var packageNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var singlePackage: js.UndefOr[Boolean] = js.native
+  var singlePackage: js.UndefOr[Boolean] = js.undefined
   
-  var specificFiles: js.UndefOr[js.Array[String]] = js.native
+  var specificFiles: js.UndefOr[js.Array[String]] = js.undefined
   
-  var unpackaged: js.UndefOr[Package] = js.native
+  var unpackaged: js.UndefOr[Package] = js.undefined
 }
 object RetrieveRequest {
   

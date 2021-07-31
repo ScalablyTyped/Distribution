@@ -2,17 +2,15 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushTimeDays extends StObject {
   
-  var pushTimeDays: js.Array[Double] = js.native
+  var pushTimeDays: js.Array[Double]
   
-  var pushTimeEndHour: Double = js.native
+  var pushTimeEndHour: Double
   
-  var pushTimeStartHour: Double = js.native
+  var pushTimeStartHour: Double
 }
 object PushTimeDays {
   

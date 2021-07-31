@@ -2,15 +2,13 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Properties extends StObject {
   
-  var properties: js.Array[Indicate] = js.native
+  var properties: js.Array[Indicate]
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object Properties {
   

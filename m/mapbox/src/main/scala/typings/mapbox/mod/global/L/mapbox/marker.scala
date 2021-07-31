@@ -2,7 +2,6 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //////////////////////////////////////////////////////////////////////
@@ -10,17 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //////////////////////////////////////////////////////////////////////
 object marker {
   
+  @JSGlobal("L.mapbox.marker")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * A core icon generator used in L.mapbox.marker.style
     */
-  @JSGlobal("L.mapbox.marker.icon")
-  @js.native
-  def icon(feature: js.Any): js.Any = js.native
+  @scala.inline
+  def icon(feature: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("icon")(feature.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * An icon generator for use in conjunction with pointToLayer to generate markers from the Mapbox Markers API and support the simplestyle-spec for features.
     */
-  @JSGlobal("L.mapbox.marker.style")
-  @js.native
-  def style(feature: js.Any, latlng: js.Any): js.Any = js.native
+  @scala.inline
+  def style(feature: js.Any, latlng: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(feature.asInstanceOf[js.Any], latlng.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

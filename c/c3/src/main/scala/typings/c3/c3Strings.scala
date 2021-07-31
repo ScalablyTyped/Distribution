@@ -6,7 +6,6 @@ import typings.c3.mod.YAxisName
 import typings.c3.mod.YAxisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object c3Strings {
@@ -22,17 +21,23 @@ object c3Strings {
   def MaxMin: MaxMin = "MaxMin".asInstanceOf[MaxMin]
   
   @js.native
-  sealed trait area extends ChartType
+  sealed trait area
+    extends StObject
+       with ChartType
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait `area-spline` extends ChartType
+  sealed trait `area-spline`
+    extends StObject
+       with ChartType
   @scala.inline
   def `area-spline`: `area-spline` = "area-spline".asInstanceOf[`area-spline`]
   
   @js.native
-  sealed trait `area-step` extends ChartType
+  sealed trait `area-step`
+    extends StObject
+       with ChartType
   @scala.inline
   def `area-step`: `area-step` = "area-step".asInstanceOf[`area-step`]
   
@@ -42,7 +47,9 @@ object c3Strings {
   def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
-  sealed trait bar extends ChartType
+  sealed trait bar
+    extends StObject
+       with ChartType
   @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
   
@@ -97,7 +104,9 @@ object c3Strings {
   def `cardinal-open`: `cardinal-open` = "cardinal-open".asInstanceOf[`cardinal-open`]
   
   @js.native
-  sealed trait category extends XAxisType
+  sealed trait category
+    extends StObject
+       with XAxisType
   @scala.inline
   def category: category = "category".asInstanceOf[category]
   
@@ -117,7 +126,9 @@ object c3Strings {
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait donut extends ChartType
+  sealed trait donut
+    extends StObject
+       with ChartType
   @scala.inline
   def donut: donut = "donut".asInstanceOf[donut]
   
@@ -132,12 +143,16 @@ object c3Strings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait gauge extends ChartType
+  sealed trait gauge
+    extends StObject
+       with ChartType
   @scala.inline
   def gauge: gauge = "gauge".asInstanceOf[gauge]
   
   @js.native
-  sealed trait indexed extends XAxisType
+  sealed trait indexed
+    extends StObject
+       with XAxisType
   @scala.inline
   def indexed: indexed = "indexed".asInstanceOf[indexed]
   
@@ -182,12 +197,16 @@ object c3Strings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait line extends ChartType
+  sealed trait line
+    extends StObject
+       with ChartType
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait linear extends YAxisType
+  sealed trait linear
+    extends StObject
+       with YAxisType
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
@@ -197,7 +216,9 @@ object c3Strings {
   def `linear-closed`: `linear-closed` = "linear-closed".asInstanceOf[`linear-closed`]
   
   @js.native
-  sealed trait log extends YAxisType
+  sealed trait log
+    extends StObject
+       with YAxisType
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
@@ -242,7 +263,9 @@ object c3Strings {
   def `outer-top`: `outer-top` = "outer-top".asInstanceOf[`outer-top`]
   
   @js.native
-  sealed trait pie extends ChartType
+  sealed trait pie
+    extends StObject
+       with ChartType
   @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
   
@@ -257,7 +280,9 @@ object c3Strings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait scatter extends ChartType
+  sealed trait scatter
+    extends StObject
+       with ChartType
   @scala.inline
   def scatter: scatter = "scatter".asInstanceOf[scatter]
   
@@ -267,12 +292,16 @@ object c3Strings {
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait spline extends ChartType
+  sealed trait spline
+    extends StObject
+       with ChartType
   @scala.inline
   def spline: spline = "spline".asInstanceOf[spline]
   
   @js.native
-  sealed trait stanford extends ChartType
+  sealed trait stanford
+    extends StObject
+       with ChartType
   @scala.inline
   def stanford: stanford = "stanford".asInstanceOf[stanford]
   
@@ -282,7 +311,9 @@ object c3Strings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait step extends ChartType
+  sealed trait step
+    extends StObject
+       with ChartType
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   
@@ -297,13 +328,16 @@ object c3Strings {
   def `step-before`: `step-before` = "step-before".asInstanceOf[`step-before`]
   
   @js.native
-  sealed trait time extends YAxisType
+  sealed trait time
+    extends StObject
+       with YAxisType
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait timeseries
-    extends XAxisType
+    extends StObject
+       with XAxisType
        with YAxisType
   @scala.inline
   def timeseries: timeseries = "timeseries".asInstanceOf[timeseries]
@@ -324,12 +358,16 @@ object c3Strings {
   def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait y extends YAxisName
+  sealed trait y
+    extends StObject
+       with YAxisName
   @scala.inline
   def y: y = "y".asInstanceOf[y]
   
   @js.native
-  sealed trait y2 extends YAxisName
+  sealed trait y2
+    extends StObject
+       with YAxisName
   @scala.inline
   def y2: y2 = "y2".asInstanceOf[y2]
 }

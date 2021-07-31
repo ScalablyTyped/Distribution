@@ -4,12 +4,12 @@ import typings.std.CustomEvent
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommandEvent[CurrentTarget /* <: EventTarget */]
-  extends CustomEvent[js.Any] {
+  extends StObject
+     with CustomEvent[js.Any] {
   
   def abortKeyBinding(): Unit = js.native
   

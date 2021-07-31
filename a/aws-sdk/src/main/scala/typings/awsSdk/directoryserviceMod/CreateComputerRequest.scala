@@ -2,36 +2,34 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateComputerRequest extends StObject {
   
   /**
     * An array of Attribute objects that contain any LDAP attributes to apply to the computer account.
     */
-  var ComputerAttributes: js.UndefOr[Attributes] = js.native
+  var ComputerAttributes: js.UndefOr[Attributes] = js.undefined
   
   /**
     * The name of the computer account.
     */
-  var ComputerName: typings.awsSdk.directoryserviceMod.ComputerName = js.native
+  var ComputerName: typings.awsSdk.directoryserviceMod.ComputerName
   
   /**
     * The identifier of the directory in which to create the computer account.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The fully-qualified distinguished name of the organizational unit to place the computer account in.
     */
-  var OrganizationalUnitDistinguishedName: js.UndefOr[OrganizationalUnitDN] = js.native
+  var OrganizationalUnitDistinguishedName: js.UndefOr[OrganizationalUnitDN] = js.undefined
   
   /**
     * A one-time password that is used to join the computer to the directory. You should generate a random, strong password to use for this parameter.
     */
-  var Password: ComputerPassword = js.native
+  var Password: ComputerPassword
 }
 object CreateComputerRequest {
   

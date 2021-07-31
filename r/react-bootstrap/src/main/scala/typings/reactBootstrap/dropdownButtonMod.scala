@@ -9,7 +9,6 @@ import typings.reactBootstrap.mod.Sizes
 import typings.reactBootstrap.reactBootstrapStrings.title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownButtonMod {
@@ -23,20 +22,21 @@ object dropdownButtonMod {
   trait DropdownButton
     extends Component[DropdownButtonProps, js.Object, js.Any]
   
-  @js.native
-  trait DropdownButtonBaseProps extends DropdownBaseProps {
+  trait DropdownButtonBaseProps
+    extends StObject
+       with DropdownBaseProps {
     
-    var block: js.UndefOr[Boolean] = js.native
+    var block: js.UndefOr[Boolean] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String | Null] = js.native
+    var bsStyle: js.UndefOr[String | Null] = js.undefined
     
-    var navItem: js.UndefOr[Boolean] = js.native
+    var navItem: js.UndefOr[Boolean] = js.undefined
     
-    var noCaret: js.UndefOr[Boolean] = js.native
+    var noCaret: js.UndefOr[Boolean] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object DropdownButtonBaseProps {
     
@@ -90,5 +90,5 @@ object dropdownButtonMod {
     }
   }
   
-  type DropdownButtonProps = DropdownButtonBaseProps with (Omit[HTMLProps[DropdownButton], title])
+  type DropdownButtonProps = DropdownButtonBaseProps & (Omit[HTMLProps[DropdownButton], title])
 }

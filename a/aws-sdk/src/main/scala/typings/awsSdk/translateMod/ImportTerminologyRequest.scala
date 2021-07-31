@@ -2,36 +2,34 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportTerminologyRequest extends StObject {
   
   /**
     * The description of the custom terminology being imported.
     */
-  var Description: js.UndefOr[typings.awsSdk.translateMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.translateMod.Description] = js.undefined
   
   /**
     * The encryption key for the custom terminology being imported.
     */
-  var EncryptionKey: js.UndefOr[typings.awsSdk.translateMod.EncryptionKey] = js.native
+  var EncryptionKey: js.UndefOr[typings.awsSdk.translateMod.EncryptionKey] = js.undefined
   
   /**
     * The merge strategy of the custom terminology being imported. Currently, only the OVERWRITE merge strategy is supported. In this case, the imported terminology will overwrite an existing terminology of the same name.
     */
-  var MergeStrategy: typings.awsSdk.translateMod.MergeStrategy = js.native
+  var MergeStrategy: typings.awsSdk.translateMod.MergeStrategy
   
   /**
     * The name of the custom terminology being imported.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * The terminology data for the custom terminology being imported.
     */
-  var TerminologyData: typings.awsSdk.translateMod.TerminologyData = js.native
+  var TerminologyData: typings.awsSdk.translateMod.TerminologyData
 }
 object ImportTerminologyRequest {
   

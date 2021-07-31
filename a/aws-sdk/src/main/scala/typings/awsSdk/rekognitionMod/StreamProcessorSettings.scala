@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamProcessorSettings extends StObject {
   
   /**
     * Face search settings to use on a streaming video. 
     */
-  var FaceSearch: js.UndefOr[FaceSearchSettings] = js.native
+  var FaceSearch: js.UndefOr[FaceSearchSettings] = js.undefined
 }
 object StreamProcessorSettings {
   

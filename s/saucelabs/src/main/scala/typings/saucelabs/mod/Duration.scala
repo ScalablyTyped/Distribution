@@ -3,22 +3,21 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var nano: js.UndefOr[Double] = js.native
+  var nano: js.UndefOr[Double] = js.undefined
   
-  var negative: js.UndefOr[Boolean] = js.native
+  var negative: js.UndefOr[Boolean] = js.undefined
   
-  var seconds: js.UndefOr[Double] = js.native
+  var seconds: js.UndefOr[Double] = js.undefined
   
-  var units: js.UndefOr[js.Array[TemporalUnit]] = js.native
+  var units: js.UndefOr[js.Array[TemporalUnit]] = js.undefined
   
-  var zero: js.UndefOr[Boolean] = js.native
+  var zero: js.UndefOr[Boolean] = js.undefined
 }
 object Duration {
   

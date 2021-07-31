@@ -2,34 +2,30 @@ package typings.josa
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("josa", "getJosaPicker")
+  @JSImport("josa", JSImport.Namespace)
   @js.native
-  def getJosaPicker(josa: Conjunction): js.Function1[/* noun */ String, Conjunction] = js.native
-  @JSImport("josa", "getJosaPicker")
-  @js.native
-  def getJosaPicker(josa: Means): js.Function1[/* noun */ String, Means] = js.native
-  @JSImport("josa", "getJosaPicker")
-  @js.native
-  def getJosaPicker(josa: Objective): js.Function1[/* noun */ String, Objective] = js.native
-  @JSImport("josa", "getJosaPicker")
-  @js.native
-  def getJosaPicker(josa: Subject): js.Function1[/* noun */ String, Subject] = js.native
-  @JSImport("josa", "getJosaPicker")
-  @js.native
-  def getJosaPicker(josa: Topic): js.Function1[/* noun */ String, Topic] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("josa", "josa")
-  @js.native
-  def josa(sentence: String): String = js.native
+  @scala.inline
+  def getJosaPicker(josa: Conjunction): js.Function1[/* noun */ String, Conjunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJosaPicker")(josa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* noun */ String, Conjunction]]
+  @scala.inline
+  def getJosaPicker(josa: Means): js.Function1[/* noun */ String, Means] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJosaPicker")(josa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* noun */ String, Means]]
+  @scala.inline
+  def getJosaPicker(josa: Objective): js.Function1[/* noun */ String, Objective] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJosaPicker")(josa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* noun */ String, Objective]]
+  @scala.inline
+  def getJosaPicker(josa: Subject): js.Function1[/* noun */ String, Subject] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJosaPicker")(josa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* noun */ String, Subject]]
+  @scala.inline
+  def getJosaPicker(josa: Topic): js.Function1[/* noun */ String, Topic] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJosaPicker")(josa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* noun */ String, Topic]]
   
-  @JSImport("josa", "makeJosaify")
-  @js.native
-  def makeJosaify(josa: Josa_): js.Function1[/* noun */ String, String] = js.native
+  @scala.inline
+  def josa(sentence: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("josa")(sentence.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def makeJosaify(josa: Josa_): js.Function1[/* noun */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeJosaify")(josa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* noun */ String, String]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.josa.josaStrings.와

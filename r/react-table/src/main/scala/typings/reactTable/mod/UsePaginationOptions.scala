@@ -2,20 +2,18 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  pageCount :number,   manualPagination :boolean,   autoResetPage :boolean | undefined,   paginateExpandedRows :boolean}> */
-@js.native
 trait UsePaginationOptions[D /* <: js.Object */] extends StObject {
   
-  var autoResetPage: js.UndefOr[Boolean] = js.native
+  var autoResetPage: js.UndefOr[Boolean] = js.undefined
   
-  var manualPagination: js.UndefOr[Boolean] = js.native
+  var manualPagination: js.UndefOr[Boolean] = js.undefined
   
-  var pageCount: js.UndefOr[Double] = js.native
+  var pageCount: js.UndefOr[Double] = js.undefined
   
-  var paginateExpandedRows: js.UndefOr[Boolean] = js.native
+  var paginateExpandedRows: js.UndefOr[Boolean] = js.undefined
 }
 object UsePaginationOptions {
   
@@ -26,7 +24,7 @@ object UsePaginationOptions {
   }
   
   @scala.inline
-  implicit class UsePaginationOptionsMutableBuilder[Self <: UsePaginationOptions[_], D /* <: js.Object */] (val x: Self with UsePaginationOptions[D]) extends AnyVal {
+  implicit class UsePaginationOptionsMutableBuilder[Self <: UsePaginationOptions[?], D /* <: js.Object */] (val x: Self & UsePaginationOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAutoResetPage(value: Boolean): Self = StObject.set(x, "autoResetPage", value.asInstanceOf[js.Any])

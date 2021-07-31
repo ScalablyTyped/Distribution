@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle the display of grid lines for a table with no borders applied - on/off.
   */
 @js.native
-trait ShowTableGridLinesCommand extends CommandWithBooleanStateBase {
+trait ShowTableGridLinesCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ShowTableGridLinesCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.

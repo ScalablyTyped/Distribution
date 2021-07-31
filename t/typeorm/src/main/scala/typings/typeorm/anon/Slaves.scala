@@ -3,21 +3,19 @@ package typings.typeorm.anon
 import typings.typeorm.oracleConnectionCredentialsOptionsMod.OracleConnectionCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slaves extends StObject {
   
   /**
     * Master server used by orm to perform writes.
     */
-  val master: OracleConnectionCredentialsOptions = js.native
+  val master: OracleConnectionCredentialsOptions
   
   /**
     * List of read-from severs (slaves).
     */
-  val slaves: js.Array[OracleConnectionCredentialsOptions] = js.native
+  val slaves: js.Array[OracleConnectionCredentialsOptions]
 }
 object Slaves {
   

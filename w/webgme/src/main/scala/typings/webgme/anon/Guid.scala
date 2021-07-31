@@ -3,15 +3,13 @@ package typings.webgme.anon
 import typings.webgme.v1Mod.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Guid extends StObject {
   
-  var guid: GUID = js.native
+  var guid: GUID
   
-  var path: String = js.native
+  var path: String
 }
 object Guid {
   

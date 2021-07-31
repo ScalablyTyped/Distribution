@@ -4,21 +4,19 @@ import typings.plottable.plottableStrings.between
 import typings.plottable.plottableStrings.center
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Between extends StObject {
   
-  var between: typings.plottable.plottableStrings.between = js.native
+  var between: typings.plottable.plottableStrings.between
   
-  var center: typings.plottable.plottableStrings.center = js.native
+  var center: typings.plottable.plottableStrings.center
 }
 object Between {
   
   @scala.inline
-  def apply(between: between, center: center): Between = {
-    val __obj = js.Dynamic.literal(between = between.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any])
+  def apply(): Between = {
+    val __obj = js.Dynamic.literal(between = "between", center = "center")
     __obj.asInstanceOf[Between]
   }
   

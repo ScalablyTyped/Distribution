@@ -3,42 +3,40 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchaseProductDetails extends StObject {
   
   /**
     * Global Trade Item Number of the product.
     * Useful if offerId is not present in Merchant Center. Optional.
     */
-  var gtin: js.UndefOr[String] = js.native
+  var gtin: js.UndefOr[String] = js.undefined
   
   /**
     * Price look-up codes, commonly called PLU codes, PLU numbers, PLUs,
     * produce codes, or produce labels, are a system of numbers that
     * uniquely identify bulk produce sold in grocery stores and supermarkets.
     */
-  var plu: js.UndefOr[String] = js.native
+  var plu: js.UndefOr[String] = js.undefined
   
   /**
     * Merchant-provided details about the product,
     * e.g. { \"allergen\": \"peanut\" }.
     * Useful if offerId is not present in Merchant Center. Optional.
     */
-  var productAttributes: js.UndefOr[ApiClientObjectMap[String]] = js.native
+  var productAttributes: js.UndefOr[ApiClientObjectMap[String]] = js.undefined
   
   /**
     * Product or offer id associated with this line item.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * Product category defined by the merchant.
     * E.g. \"Home > Grocery > Dairy & Eggs > Milk > Whole Milk\"
     */
-  var productType: js.UndefOr[String] = js.native
+  var productType: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchaseProductDetails {
   

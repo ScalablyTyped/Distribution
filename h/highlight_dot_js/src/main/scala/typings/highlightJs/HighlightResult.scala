@@ -4,32 +4,30 @@ import typings.highlightJs.anon.OmitHighlightResultsecond
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightResult extends StObject {
   
-  var emitter: Emitter = js.native
+  var emitter: Emitter
   
-  var errorRaised: js.UndefOr[Error] = js.native
+  var errorRaised: js.UndefOr[Error] = js.undefined
   
-  var illegal: Boolean = js.native
+  var illegal: Boolean
   
-  var illegalBy: js.UndefOr[illegalData] = js.native
+  var illegalBy: js.UndefOr[illegalData] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var relevance: Double = js.native
+  var relevance: Double
   
   // * for auto-highlight
-  var second_best: js.UndefOr[OmitHighlightResultsecond] = js.native
+  var second_best: js.UndefOr[OmitHighlightResultsecond] = js.undefined
   
-  var sofar: js.UndefOr[String] = js.native
+  var sofar: js.UndefOr[String] = js.undefined
   
-  var top: js.UndefOr[Language | CompiledMode] = js.native
+  var top: js.UndefOr[Language | CompiledMode] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object HighlightResult {
   

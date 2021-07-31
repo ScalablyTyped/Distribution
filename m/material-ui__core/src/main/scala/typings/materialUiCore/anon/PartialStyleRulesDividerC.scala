@@ -3,22 +3,20 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Divider.DividerClassKey>> */
-@js.native
 trait PartialStyleRulesDividerC extends StObject {
   
-  var absolute: js.UndefOr[CSSProperties] = js.native
+  var absolute: js.UndefOr[CSSProperties] = js.undefined
   
-  var inset: js.UndefOr[CSSProperties] = js.native
+  var inset: js.UndefOr[CSSProperties] = js.undefined
   
-  var light: js.UndefOr[CSSProperties] = js.native
+  var light: js.UndefOr[CSSProperties] = js.undefined
   
-  var middle: js.UndefOr[CSSProperties] = js.native
+  var middle: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesDividerC {
   

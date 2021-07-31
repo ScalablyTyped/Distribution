@@ -3,19 +3,17 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.new_note_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NEWNOTE extends StObject {
   
-  var NEW_NOTE: new_note_ = js.native
+  var NEW_NOTE: new_note_
 }
 object NEWNOTE {
   
   @scala.inline
-  def apply(NEW_NOTE: new_note_): NEWNOTE = {
-    val __obj = js.Dynamic.literal(NEW_NOTE = NEW_NOTE.asInstanceOf[js.Any])
+  def apply(): NEWNOTE = {
+    val __obj = js.Dynamic.literal(NEW_NOTE = "new_note")
     __obj.asInstanceOf[NEWNOTE]
   }
   

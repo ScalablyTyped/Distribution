@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service controller handles features like abuse, quota, billing, logging,
   * monitoring, etc.
   */
-@js.native
 trait SchemaControl extends StObject {
   
   /**
     * The service control environment to use. If empty, no control plane
     * feature (like quota and billing) will be enabled.
     */
-  var environment: js.UndefOr[String] = js.native
+  var environment: js.UndefOr[String] = js.undefined
 }
 object SchemaControl {
   

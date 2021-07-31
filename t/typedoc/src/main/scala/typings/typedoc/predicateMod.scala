@@ -8,7 +8,6 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypePredicateNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object predicateMod {

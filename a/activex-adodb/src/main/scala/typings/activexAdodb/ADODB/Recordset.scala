@@ -3,7 +3,6 @@ package typings.activexAdodb.ADODB
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,7 +24,7 @@ trait Recordset extends StObject {
   
   def AddNew(): Unit = js.native
   def AddNew(Field: String, Value: js.Any): Unit = js.native
-  def AddNew(Fields: SafeArray[String | Double], Values: SafeArray[_]): Unit = js.native
+  def AddNew(Fields: SafeArray[String | Double], Values: SafeArray[js.Any]): Unit = js.native
   
   val BOF: Boolean = js.native
   
@@ -85,53 +84,39 @@ trait Recordset extends StObject {
     * @param SearchDirection [SearchDirection=1]
     */
   def Find(Criteria: String): Unit = js.native
-  def Find(
-    Criteria: String,
-    SkipRecords: js.UndefOr[scala.Nothing],
-    SearchDirection: js.UndefOr[scala.Nothing],
-    Start: Bookmark
-  ): Unit = js.native
-  def Find(Criteria: String, SkipRecords: js.UndefOr[scala.Nothing], SearchDirection: SearchDirectionEnum): Unit = js.native
-  def Find(
-    Criteria: String,
-    SkipRecords: js.UndefOr[scala.Nothing],
-    SearchDirection: SearchDirectionEnum,
-    Start: Bookmark
-  ): Unit = js.native
   def Find(Criteria: String, SkipRecords: Double): Unit = js.native
-  def Find(Criteria: String, SkipRecords: Double, SearchDirection: js.UndefOr[scala.Nothing], Start: Bookmark): Unit = js.native
+  def Find(Criteria: String, SkipRecords: Double, SearchDirection: Unit, Start: Bookmark): Unit = js.native
   def Find(Criteria: String, SkipRecords: Double, SearchDirection: SearchDirectionEnum): Unit = js.native
   def Find(Criteria: String, SkipRecords: Double, SearchDirection: SearchDirectionEnum, Start: Bookmark): Unit = js.native
+  def Find(Criteria: String, SkipRecords: Unit, SearchDirection: Unit, Start: Bookmark): Unit = js.native
+  def Find(Criteria: String, SkipRecords: Unit, SearchDirection: SearchDirectionEnum): Unit = js.native
+  def Find(Criteria: String, SkipRecords: Unit, SearchDirection: SearchDirectionEnum, Start: Bookmark): Unit = js.native
   
   /** @param Rows [Rows=-1] */
-  def GetRows(): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: js.UndefOr[scala.Nothing], Fields: String): SafeArray[_] = js.native
-  def GetRows(
-    Rows: js.UndefOr[scala.Nothing],
-    Start: js.UndefOr[scala.Nothing],
-    Fields: SafeArray[String | Double]
-  ): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: String): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: String, Fields: String): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: String, Fields: SafeArray[String | Double]): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: Bookmark): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: BookmarkEnum): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: BookmarkEnum, Fields: String): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: Bookmark, Fields: String): SafeArray[_] = js.native
-  def GetRows(Rows: js.UndefOr[scala.Nothing], Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[_] = js.native
-  def GetRows(Rows: Double): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: js.UndefOr[scala.Nothing], Fields: String): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: js.UndefOr[scala.Nothing], Fields: SafeArray[String | Double]): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: String): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: String, Fields: String): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: String, Fields: SafeArray[String | Double]): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: Bookmark): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: BookmarkEnum): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: String): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: Bookmark, Fields: String): SafeArray[_] = js.native
-  def GetRows(Rows: Double, Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[_] = js.native
+  def GetRows(): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: String, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: String, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: Unit, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: Unit, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: Bookmark): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: BookmarkEnum): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: Bookmark, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Double, Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: String, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: String, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: Unit, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: Unit, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: Bookmark): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: BookmarkEnum): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: BookmarkEnum, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: Bookmark, Fields: String): SafeArray[js.Any] = js.native
+  def GetRows(Rows: Unit, Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
   
   /**
     * @param StringFormat [StringFormat=2]
@@ -141,170 +126,89 @@ trait Recordset extends StObject {
     * @param NullExpr [NullExpr='']
     */
   def GetString(): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Double): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Double, ColumnDelimeter: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Double, ColumnDelimeter: String, RowDelimeter: String): String = js.native
   def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String,
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: String,
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: String,
-    RowDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: String,
-    RowDelimeter: String,
-    NullExpr: String
-  ): String = js.native
-  def GetString(StringFormat: js.UndefOr[scala.Nothing], NumRows: Double): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: Double,
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: Double,
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: Double,
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String,
-    NullExpr: String
-  ): String = js.native
-  def GetString(StringFormat: js.UndefOr[scala.Nothing], NumRows: Double, ColumnDelimeter: String): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: Double,
-    ColumnDelimeter: String,
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
-    NumRows: Double,
-    ColumnDelimeter: String,
-    RowDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: js.UndefOr[scala.Nothing],
+    StringFormat: Unit,
     NumRows: Double,
     ColumnDelimeter: String,
     RowDelimeter: String,
     NullExpr: String
   ): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Double, ColumnDelimeter: String, RowDelimeter: Unit, NullExpr: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Double, ColumnDelimeter: Unit, RowDelimeter: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Double, ColumnDelimeter: Unit, RowDelimeter: String, NullExpr: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Double, ColumnDelimeter: Unit, RowDelimeter: Unit, NullExpr: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Unit, ColumnDelimeter: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Unit, ColumnDelimeter: String, RowDelimeter: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Unit, ColumnDelimeter: String, RowDelimeter: String, NullExpr: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Unit, ColumnDelimeter: String, RowDelimeter: Unit, NullExpr: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Unit, ColumnDelimeter: Unit, RowDelimeter: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Unit, ColumnDelimeter: Unit, RowDelimeter: String, NullExpr: String): String = js.native
+  def GetString(StringFormat: Unit, NumRows: Unit, ColumnDelimeter: Unit, RowDelimeter: Unit, NullExpr: String): String = js.native
   def GetString(StringFormat: StringFormatEnum): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String,
-    NullExpr: String
-  ): String = js.native
-  def GetString(StringFormat: StringFormatEnum, NumRows: js.UndefOr[scala.Nothing], ColumnDelimeter: String): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: String,
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: String,
-    RowDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: js.UndefOr[scala.Nothing],
-    ColumnDelimeter: String,
-    RowDelimeter: String,
-    NullExpr: String
-  ): String = js.native
   def GetString(StringFormat: StringFormatEnum, NumRows: Double): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: Double,
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: Double,
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String
-  ): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: Double,
-    ColumnDelimeter: js.UndefOr[scala.Nothing],
-    RowDelimeter: String,
-    NullExpr: String
-  ): String = js.native
   def GetString(StringFormat: StringFormatEnum, NumRows: Double, ColumnDelimeter: String): String = js.native
-  def GetString(
-    StringFormat: StringFormatEnum,
-    NumRows: Double,
-    ColumnDelimeter: String,
-    RowDelimeter: js.UndefOr[scala.Nothing],
-    NullExpr: String
-  ): String = js.native
   def GetString(StringFormat: StringFormatEnum, NumRows: Double, ColumnDelimeter: String, RowDelimeter: String): String = js.native
   def GetString(
     StringFormat: StringFormatEnum,
     NumRows: Double,
     ColumnDelimeter: String,
     RowDelimeter: String,
+    NullExpr: String
+  ): String = js.native
+  def GetString(
+    StringFormat: StringFormatEnum,
+    NumRows: Double,
+    ColumnDelimeter: String,
+    RowDelimeter: Unit,
+    NullExpr: String
+  ): String = js.native
+  def GetString(StringFormat: StringFormatEnum, NumRows: Double, ColumnDelimeter: Unit, RowDelimeter: String): String = js.native
+  def GetString(
+    StringFormat: StringFormatEnum,
+    NumRows: Double,
+    ColumnDelimeter: Unit,
+    RowDelimeter: String,
+    NullExpr: String
+  ): String = js.native
+  def GetString(
+    StringFormat: StringFormatEnum,
+    NumRows: Double,
+    ColumnDelimeter: Unit,
+    RowDelimeter: Unit,
+    NullExpr: String
+  ): String = js.native
+  def GetString(StringFormat: StringFormatEnum, NumRows: Unit, ColumnDelimeter: String): String = js.native
+  def GetString(StringFormat: StringFormatEnum, NumRows: Unit, ColumnDelimeter: String, RowDelimeter: String): String = js.native
+  def GetString(
+    StringFormat: StringFormatEnum,
+    NumRows: Unit,
+    ColumnDelimeter: String,
+    RowDelimeter: String,
+    NullExpr: String
+  ): String = js.native
+  def GetString(
+    StringFormat: StringFormatEnum,
+    NumRows: Unit,
+    ColumnDelimeter: String,
+    RowDelimeter: Unit,
+    NullExpr: String
+  ): String = js.native
+  def GetString(StringFormat: StringFormatEnum, NumRows: Unit, ColumnDelimeter: Unit, RowDelimeter: String): String = js.native
+  def GetString(
+    StringFormat: StringFormatEnum,
+    NumRows: Unit,
+    ColumnDelimeter: Unit,
+    RowDelimeter: String,
+    NullExpr: String
+  ): String = js.native
+  def GetString(
+    StringFormat: StringFormatEnum,
+    NumRows: Unit,
+    ColumnDelimeter: Unit,
+    RowDelimeter: Unit,
     NullExpr: String
   ): String = js.native
   
@@ -342,34 +246,29 @@ trait Recordset extends StObject {
   def Open(
     Source: String,
     ActiveConnection: String,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
+    LockType: Unit,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: String,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
+    LockType: Unit,
     Options: ExecuteOptionEnum
   ): Unit = js.native
+  def Open(Source: String, ActiveConnection: String, CursorType: Unit, LockType: LockTypeEnum): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: String,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: LockTypeEnum
-  ): Unit = js.native
-  def Open(
-    Source: String,
-    ActiveConnection: String,
-    CursorType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
     LockType: LockTypeEnum,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: String,
-    CursorType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
     LockType: LockTypeEnum,
     Options: ExecuteOptionEnum
   ): Unit = js.native
@@ -378,14 +277,14 @@ trait Recordset extends StObject {
     Source: String,
     ActiveConnection: String,
     CursorType: CursorTypeEnum,
-    LockType: js.UndefOr[scala.Nothing],
+    LockType: Unit,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: String,
     CursorType: CursorTypeEnum,
-    LockType: js.UndefOr[scala.Nothing],
+    LockType: Unit,
     Options: ExecuteOptionEnum
   ): Unit = js.native
   def Open(Source: String, ActiveConnection: String, CursorType: CursorTypeEnum, LockType: LockTypeEnum): Unit = js.native
@@ -407,34 +306,29 @@ trait Recordset extends StObject {
   def Open(
     Source: String,
     ActiveConnection: Connection,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
+    LockType: Unit,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: Connection,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
+    LockType: Unit,
     Options: ExecuteOptionEnum
   ): Unit = js.native
+  def Open(Source: String, ActiveConnection: Connection, CursorType: Unit, LockType: LockTypeEnum): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: Connection,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: LockTypeEnum
-  ): Unit = js.native
-  def Open(
-    Source: String,
-    ActiveConnection: Connection,
-    CursorType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
     LockType: LockTypeEnum,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: Connection,
-    CursorType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
     LockType: LockTypeEnum,
     Options: ExecuteOptionEnum
   ): Unit = js.native
@@ -443,14 +337,14 @@ trait Recordset extends StObject {
     Source: String,
     ActiveConnection: Connection,
     CursorType: CursorTypeEnum,
-    LockType: js.UndefOr[scala.Nothing],
+    LockType: Unit,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: String,
     ActiveConnection: Connection,
     CursorType: CursorTypeEnum,
-    LockType: js.UndefOr[scala.Nothing],
+    LockType: Unit,
     Options: ExecuteOptionEnum
   ): Unit = js.native
   def Open(Source: String, ActiveConnection: Connection, CursorType: CursorTypeEnum, LockType: LockTypeEnum): Unit = js.native
@@ -477,34 +371,29 @@ trait Recordset extends StObject {
   def Open(
     Source: Command,
     ActiveConnection: Null,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
+    LockType: Unit,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: Command,
     ActiveConnection: Null,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
+    LockType: Unit,
     Options: ExecuteOptionEnum
   ): Unit = js.native
+  def Open(Source: Command, ActiveConnection: Null, CursorType: Unit, LockType: LockTypeEnum): Unit = js.native
   def Open(
     Source: Command,
     ActiveConnection: Null,
-    CursorType: js.UndefOr[scala.Nothing],
-    LockType: LockTypeEnum
-  ): Unit = js.native
-  def Open(
-    Source: Command,
-    ActiveConnection: Null,
-    CursorType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
     LockType: LockTypeEnum,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: Command,
     ActiveConnection: Null,
-    CursorType: js.UndefOr[scala.Nothing],
+    CursorType: Unit,
     LockType: LockTypeEnum,
     Options: ExecuteOptionEnum
   ): Unit = js.native
@@ -513,14 +402,14 @@ trait Recordset extends StObject {
     Source: Command,
     ActiveConnection: Null,
     CursorType: CursorTypeEnum,
-    LockType: js.UndefOr[scala.Nothing],
+    LockType: Unit,
     Options: CommandTypeEnum
   ): Unit = js.native
   def Open(
     Source: Command,
     ActiveConnection: Null,
     CursorType: CursorTypeEnum,
-    LockType: js.UndefOr[scala.Nothing],
+    LockType: Unit,
     Options: ExecuteOptionEnum
   ): Unit = js.native
   def Open(Source: Command, ActiveConnection: Null, CursorType: CursorTypeEnum, LockType: LockTypeEnum): Unit = js.native
@@ -560,7 +449,7 @@ trait Recordset extends StObject {
     * @param ResyncValues [ResyncValues=2]
     */
   def Resync(): Unit = js.native
-  def Resync(AffectRecords: js.UndefOr[scala.Nothing], ResyncValues: ResyncEnum): Unit = js.native
+  def Resync(AffectRecords: Unit, ResyncValues: ResyncEnum): Unit = js.native
   def Resync(AffectRecords: AffectEnum): Unit = js.native
   def Resync(AffectRecords: AffectEnum, ResyncValues: ResyncEnum): Unit = js.native
   
@@ -594,7 +483,7 @@ trait Recordset extends StObject {
   
   def Update(): Unit = js.native
   def Update(Field: String, Value: js.Any): Unit = js.native
-  def Update(Fields: SafeArray[String | Double], Values: SafeArray[_]): Unit = js.native
+  def Update(Fields: SafeArray[String | Double], Values: SafeArray[js.Any]): Unit = js.native
   
   /** @param AffectRecords [AffectRecords=3] */
   def UpdateBatch(): Unit = js.native
@@ -611,7 +500,7 @@ trait Recordset extends StObject {
     * @param PersistFormat [PersistFormat=0]
     */
   def _xSave(): Unit = js.native
-  def _xSave(FileName: js.UndefOr[scala.Nothing], PersistFormat: PersistFormatEnum): Unit = js.native
   def _xSave(FileName: String): Unit = js.native
   def _xSave(FileName: String, PersistFormat: PersistFormatEnum): Unit = js.native
+  def _xSave(FileName: Unit, PersistFormat: PersistFormatEnum): Unit = js.native
 }

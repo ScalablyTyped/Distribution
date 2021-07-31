@@ -3,39 +3,36 @@ package typings.jsonp
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(url: String): CancelFn = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[CancelFn]
+  @scala.inline
+  def apply(url: String, callback: RequestCallback): CancelFn = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CancelFn]
+  @scala.inline
+  def apply(url: String, options: Unit, cb: RequestCallback): CancelFn = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[CancelFn]
+  @scala.inline
+  def apply(url: String, options: Options): CancelFn = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelFn]
+  @scala.inline
+  def apply(url: String, options: Options, cb: RequestCallback): CancelFn = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[CancelFn]
+  
   @JSImport("jsonp", JSImport.Namespace)
   @js.native
-  def apply(url: String): CancelFn = js.native
-  @JSImport("jsonp", JSImport.Namespace)
-  @js.native
-  def apply(url: String, callback: RequestCallback): CancelFn = js.native
-  @JSImport("jsonp", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: js.UndefOr[scala.Nothing], cb: RequestCallback): CancelFn = js.native
-  @JSImport("jsonp", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): CancelFn = js.native
-  @JSImport("jsonp", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options, cb: RequestCallback): CancelFn = js.native
+  val ^ : js.Any = js.native
   
   type CancelFn = js.Function0[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var param: js.UndefOr[String] = js.native
+    var param: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

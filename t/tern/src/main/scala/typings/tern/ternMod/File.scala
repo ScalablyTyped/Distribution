@@ -7,23 +7,21 @@ import typings.tern.ternStrings.full
 import typings.tern.ternStrings.part
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var asLineChar: js.UndefOr[js.Function1[/* nodePosition */ Double, Position]] = js.native
+  var asLineChar: js.UndefOr[js.Function1[/* nodePosition */ Double, Position]] = js.undefined
   
-  var ast: Program = js.native
+  var ast: Program
   
-  var name: String = js.native
+  var name: String
   
-  var scope: Scope = js.native
+  var scope: Scope
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: js.UndefOr[full | part | delete] = js.native
+  var `type`: js.UndefOr[full | part | delete] = js.undefined
 }
 object File {
   

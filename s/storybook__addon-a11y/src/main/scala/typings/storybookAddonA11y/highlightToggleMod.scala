@@ -5,7 +5,6 @@ import typings.axeCore.mod.NodeResult
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highlightToggleMod extends Shortcut {
@@ -14,12 +13,11 @@ object highlightToggleMod extends Shortcut {
   @js.native
   val default: FC[ToggleProps] = js.native
   
-  @js.native
   trait ToggleProps extends StObject {
     
-    var elementsToHighlight: js.Array[NodeResult] = js.native
+    var elementsToHighlight: js.Array[NodeResult]
     
-    var toggleId: js.UndefOr[String] = js.native
+    var toggleId: js.UndefOr[String] = js.undefined
   }
   object ToggleProps {
     

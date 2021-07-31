@@ -2,21 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResourceSpecificPermissionGrant extends DirectoryObject {
+trait ResourceSpecificPermissionGrant
+  extends StObject
+     with DirectoryObject {
   
-  var clientAppId: js.UndefOr[NullableOption[String]] = js.native
+  var clientAppId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var clientId: js.UndefOr[NullableOption[String]] = js.native
+  var clientId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var permission: js.UndefOr[NullableOption[String]] = js.native
+  var permission: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var permissionType: js.UndefOr[NullableOption[String]] = js.native
+  var permissionType: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var resourceAppId: js.UndefOr[NullableOption[String]] = js.native
+  var resourceAppId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ResourceSpecificPermissionGrant {
   

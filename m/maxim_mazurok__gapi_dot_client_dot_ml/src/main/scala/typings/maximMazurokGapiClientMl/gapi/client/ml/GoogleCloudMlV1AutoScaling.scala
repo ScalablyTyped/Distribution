@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1AutoScaling extends StObject {
   
   /** The maximum number of nodes to scale this model under load. The actual value will depend on resource quota and availability. */
-  var maxNodes: js.UndefOr[Double] = js.native
+  var maxNodes: js.UndefOr[Double] = js.undefined
   
   /** MetricSpec contains the specifications to use to calculate the desired nodes count. */
-  var metrics: js.UndefOr[js.Array[GoogleCloudMlV1MetricSpec]] = js.native
+  var metrics: js.UndefOr[js.Array[GoogleCloudMlV1MetricSpec]] = js.undefined
   
   /**
     * Optional. The minimum number of nodes to allocate for this model. These nodes are always up, starting from the time the model is deployed. Therefore, the cost of operating this
@@ -27,7 +25,7 @@ trait GoogleCloudMlV1AutoScaling extends StObject {
     * you can also update `min_nodes` for an existing version: update_body.json: { 'autoScaling': { 'minNodes': 5 } } HTTP request: PATCH
     * https://ml.googleapis.com/v1/{name=projects/∗/models/∗/versions/ *}?update_mask=autoScaling.minNodes -d @./update_body.json
     */
-  var minNodes: js.UndefOr[Double] = js.native
+  var minNodes: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1AutoScaling {
   

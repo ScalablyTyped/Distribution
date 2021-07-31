@@ -12,145 +12,135 @@ import typings.typescript.mod.Program
 import typings.typescript.mod.ScriptTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-typescript", JSImport.Namespace)
-  @js.native
-  def apply(): CompileStream = js.native
-  @JSImport("gulp-typescript", JSImport.Namespace)
-  @js.native
-  def apply(proj: typings.gulpTypescript.projectMod.Project): CompileStream = js.native
-  @JSImport("gulp-typescript", JSImport.Namespace)
-  @js.native
-  def apply(proj: typings.gulpTypescript.projectMod.Project, theReporter: Reporter): CompileStream = js.native
-  @JSImport("gulp-typescript", JSImport.Namespace)
-  @js.native
-  def apply(settings: Settings): CompileStream = js.native
-  @JSImport("gulp-typescript", JSImport.Namespace)
-  @js.native
-  def apply(settings: Settings, theReporter: Reporter): CompileStream = js.native
+  @scala.inline
+  def apply(): CompileStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CompileStream]
+  @scala.inline
+  def apply(proj: typings.gulpTypescript.projectMod.Project): CompileStream = ^.asInstanceOf[js.Dynamic].apply(proj.asInstanceOf[js.Any]).asInstanceOf[CompileStream]
+  @scala.inline
+  def apply(proj: typings.gulpTypescript.projectMod.Project, theReporter: Reporter): CompileStream = (^.asInstanceOf[js.Dynamic].apply(proj.asInstanceOf[js.Any], theReporter.asInstanceOf[js.Any])).asInstanceOf[CompileStream]
+  @scala.inline
+  def apply(settings: Settings): CompileStream = ^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any]).asInstanceOf[CompileStream]
+  @scala.inline
+  def apply(settings: Settings, theReporter: Reporter): CompileStream = (^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any], theReporter.asInstanceOf[js.Any])).asInstanceOf[CompileStream]
   
-  @JSImport("gulp-typescript", "createProject")
+  @JSImport("gulp-typescript", JSImport.Namespace)
   @js.native
-  def createProject(): Project = js.native
-  @JSImport("gulp-typescript", "createProject")
-  @js.native
-  def createProject(settings: Settings): Project = js.native
-  @JSImport("gulp-typescript", "createProject")
-  @js.native
-  def createProject(tsConfigFileName: String): Project = js.native
-  @JSImport("gulp-typescript", "createProject")
-  @js.native
-  def createProject(tsConfigFileName: String, settings: Settings): Project = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gulp-typescript", "filter")
-  @js.native
-  def filter(args: js.Any*): Unit = js.native
+  @scala.inline
+  def createProject(): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("createProject")().asInstanceOf[Project]
+  @scala.inline
+  def createProject(settings: Settings): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("createProject")(settings.asInstanceOf[js.Any]).asInstanceOf[Project]
+  @scala.inline
+  def createProject(tsConfigFileName: String): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("createProject")(tsConfigFileName.asInstanceOf[js.Any]).asInstanceOf[Project]
+  @scala.inline
+  def createProject(tsConfigFileName: String, settings: Settings): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("createProject")(tsConfigFileName.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Project]
+  
+  @scala.inline
+  def filter(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object reporter {
     
-    @JSImport("gulp-typescript", "reporter.countErrors")
+    @JSImport("gulp-typescript", "reporter")
     @js.native
-    def countErrors(results: CompilationResult): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("gulp-typescript", "reporter.defaultReporter")
-    @js.native
-    def defaultReporter(): Reporter = js.native
+    @scala.inline
+    def countErrors(results: CompilationResult): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countErrors")(results.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("gulp-typescript", "reporter.emptyCompilationResult")
-    @js.native
-    def emptyCompilationResult(noEmit: Boolean): CompilationResult = js.native
+    @scala.inline
+    def defaultReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReporter")().asInstanceOf[Reporter]
     
-    @JSImport("gulp-typescript", "reporter.fullReporter")
-    @js.native
-    def fullReporter(): Reporter = js.native
-    @JSImport("gulp-typescript", "reporter.fullReporter")
-    @js.native
-    def fullReporter(fullFilename: Boolean): Reporter = js.native
+    @scala.inline
+    def emptyCompilationResult(noEmit: Boolean): CompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyCompilationResult")(noEmit.asInstanceOf[js.Any]).asInstanceOf[CompilationResult]
     
-    @JSImport("gulp-typescript", "reporter.longReporter")
-    @js.native
-    def longReporter(): Reporter = js.native
+    @scala.inline
+    def fullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")().asInstanceOf[Reporter]
+    @scala.inline
+    def fullReporter(fullFilename: Boolean): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")(fullFilename.asInstanceOf[js.Any]).asInstanceOf[Reporter]
     
-    @JSImport("gulp-typescript", "reporter.nullReporter")
-    @js.native
-    def nullReporter(): Reporter = js.native
+    @scala.inline
+    def longReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("longReporter")().asInstanceOf[Reporter]
+    
+    @scala.inline
+    def nullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("nullReporter")().asInstanceOf[Reporter]
   }
   
   type CompileStream = ICompileStream
   
   type Project = typings.gulpTypescript.projectMod.Project
   
-  @js.native
   trait Settings
-    extends /* name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* name */ StringDictionary[js.Any] {
     
-    var allowNonTsExtensions: js.UndefOr[Boolean] = js.native
+    var allowNonTsExtensions: js.UndefOr[Boolean] = js.undefined
     
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
-    var codepage: js.UndefOr[Double] = js.native
+    var codepage: js.UndefOr[Double] = js.undefined
     
-    var declaration: js.UndefOr[Boolean] = js.native
+    var declaration: js.UndefOr[Boolean] = js.undefined
     
-    var declarationFiles: js.UndefOr[Boolean] = js.native
+    var declarationFiles: js.UndefOr[Boolean] = js.undefined
     
-    var experimentalDecorators: js.UndefOr[Boolean] = js.native
+    var experimentalDecorators: js.UndefOr[Boolean] = js.undefined
     
-    var getCustomTransformers: js.UndefOr[GetCustomTransformers] = js.native
+    var getCustomTransformers: js.UndefOr[GetCustomTransformers] = js.undefined
     
-    var isolatedModules: js.UndefOr[Boolean] = js.native
+    var isolatedModules: js.UndefOr[Boolean] = js.undefined
     
-    var jsx: js.UndefOr[String | Double] = js.native
+    var jsx: js.UndefOr[String | Double] = js.undefined
     
-    var lib: js.UndefOr[js.Array[String]] = js.native
+    var lib: js.UndefOr[js.Array[String]] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var mapRoot: js.UndefOr[String] = js.native
+    var mapRoot: js.UndefOr[String] = js.undefined
     
-    var module: js.UndefOr[String | ModuleKind] = js.native
+    var module: js.UndefOr[String | ModuleKind] = js.undefined
     
-    var moduleResolution: js.UndefOr[String | Double] = js.native
+    var moduleResolution: js.UndefOr[String | Double] = js.undefined
     
-    var noEmitOnError: js.UndefOr[Boolean] = js.native
+    var noEmitOnError: js.UndefOr[Boolean] = js.undefined
     
-    var noExternalResolve: js.UndefOr[Boolean] = js.native
+    var noExternalResolve: js.UndefOr[Boolean] = js.undefined
     
-    var noImplicitAny: js.UndefOr[Boolean] = js.native
+    var noImplicitAny: js.UndefOr[Boolean] = js.undefined
     
-    var noLib: js.UndefOr[Boolean] = js.native
+    var noLib: js.UndefOr[Boolean] = js.undefined
     
-    var noLibCheck: js.UndefOr[Boolean] = js.native
+    var noLibCheck: js.UndefOr[Boolean] = js.undefined
     
-    var noResolve: js.UndefOr[Boolean] = js.native
+    var noResolve: js.UndefOr[Boolean] = js.undefined
     
-    var out: js.UndefOr[String] = js.native
+    var out: js.UndefOr[String] = js.undefined
     
-    var outDir: js.UndefOr[String] = js.native
+    var outDir: js.UndefOr[String] = js.undefined
     
-    var outFile: js.UndefOr[String] = js.native
+    var outFile: js.UndefOr[String] = js.undefined
     
-    var preserveConstEnums: js.UndefOr[Boolean] = js.native
+    var preserveConstEnums: js.UndefOr[Boolean] = js.undefined
     
-    var removeComments: js.UndefOr[Boolean] = js.native
+    var removeComments: js.UndefOr[Boolean] = js.undefined
     
-    var rootDir: js.UndefOr[String] = js.native
+    var rootDir: js.UndefOr[String] = js.undefined
     
-    var rootDirs: js.UndefOr[js.Any] = js.native
+    var rootDirs: js.UndefOr[js.Any] = js.undefined
     
-    var sortOutput: js.UndefOr[Boolean] = js.native
+    var sortOutput: js.UndefOr[Boolean] = js.undefined
     
-    var sourceRoot: js.UndefOr[String] = js.native
+    var sourceRoot: js.UndefOr[String] = js.undefined
     
-    var suppressImplicitAnyIndexErrors: js.UndefOr[Boolean] = js.native
+    var suppressImplicitAnyIndexErrors: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[String | ScriptTarget] = js.native
+    var target: js.UndefOr[String | ScriptTarget] = js.undefined
     
-    var typescript: js.UndefOr[Typeofts] = js.native
+    var typescript: js.UndefOr[Typeofts] = js.undefined
   }
   object Settings {
     

@@ -3,15 +3,13 @@ package typings.expoConfigureSplashScreen.anon
 import typings.expoConfigureSplashScreen.constantsMod.SplashScreenImageResizeModeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageImageResizeMode extends StObject {
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var imageResizeMode: js.UndefOr[SplashScreenImageResizeModeType] = js.native
+  var imageResizeMode: js.UndefOr[SplashScreenImageResizeModeType] = js.undefined
 }
 object ImageImageResizeMode {
   

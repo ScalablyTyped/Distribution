@@ -10,16 +10,15 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.availablenetworkschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Use this class to enumerate local Wi-Fi adapters, initiate Wi-Fi scans, enumerate scan results, and to connect or disconnect individual adapters. */
 @js.native
 trait WiFiAdapter extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_availablenetworkschanged(`type`: availablenetworkschanged, listener: TypedEventHandler[WiFiAdapter, _]): Unit = js.native
+  def addEventListener_availablenetworkschanged(`type`: availablenetworkschanged, listener: TypedEventHandler[WiFiAdapter, js.Any]): Unit = js.native
   
   /**
     * Connect this Wi-Fi device to the specified network, with the specified reconnection policy.
@@ -65,14 +64,14 @@ trait WiFiAdapter extends StObject {
   var networkReport: WiFiNetworkReport = js.native
   
   /** Event raised when a scan completes on this Wi-Fi adapter. This even cannot be raised from a background task. */
-  def onavailablenetworkschanged(ev: js.Any with WinRTEvent[WiFiAdapter]): Unit = js.native
+  def onavailablenetworkschanged(ev: js.Any & WinRTEvent[WiFiAdapter]): Unit = js.native
   /** Event raised when a scan completes on this Wi-Fi adapter. This even cannot be raised from a background task. */
   @JSName("onavailablenetworkschanged")
-  var onavailablenetworkschanged_Original: TypedEventHandler[WiFiAdapter, _] = js.native
+  var onavailablenetworkschanged_Original: TypedEventHandler[WiFiAdapter, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_availablenetworkschanged(`type`: availablenetworkschanged, listener: TypedEventHandler[WiFiAdapter, _]): Unit = js.native
+  def removeEventListener_availablenetworkschanged(`type`: availablenetworkschanged, listener: TypedEventHandler[WiFiAdapter, js.Any]): Unit = js.native
   
   /**
     * Directs this adapter to initiate an asynchronous network scan.

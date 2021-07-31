@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryServiceAuthenticationRequest extends StObject {
   
   /**
     * The ID of the Active Directory to be used for authentication.
     */
-  var DirectoryId: js.UndefOr[String] = js.native
+  var DirectoryId: js.UndefOr[String] = js.undefined
 }
 object DirectoryServiceAuthenticationRequest {
   

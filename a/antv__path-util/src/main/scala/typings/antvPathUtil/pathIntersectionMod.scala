@@ -2,21 +2,22 @@ package typings.antvPathUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathIntersectionMod {
   
-  @JSImport("@antv/path-util/lib/path-intersection", JSImport.Default)
+  @JSImport("@antv/path-util/lib/path-intersection", JSImport.Namespace)
   @js.native
-  def default(path1: js.Any, path2: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(path1: js.Any, path2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait BoundPoint extends StObject {
     
-    var max: Point = js.native
+    var max: Point
     
-    var min: Point = js.native
+    var min: Point
   }
   object BoundPoint {
     
@@ -37,12 +38,11 @@ object pathIntersectionMod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     

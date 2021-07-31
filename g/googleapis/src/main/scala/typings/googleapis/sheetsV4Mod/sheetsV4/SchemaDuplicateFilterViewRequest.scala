@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Duplicates a particular filter view.
   */
-@js.native
 trait SchemaDuplicateFilterViewRequest extends StObject {
   
   /**
     * The ID of the filter being duplicated.
     */
-  var filterId: js.UndefOr[Double] = js.native
+  var filterId: js.UndefOr[Double] = js.undefined
 }
 object SchemaDuplicateFilterViewRequest {
   

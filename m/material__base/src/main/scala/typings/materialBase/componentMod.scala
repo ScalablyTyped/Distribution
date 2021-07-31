@@ -95,7 +95,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -104,21 +103,24 @@ object componentMod {
   @js.native
   class default[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends MDCComponent[FoundationType] {
     def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("@material/base/component", "default.attachTo")
+    @JSImport("@material/base/component", JSImport.Default)
     @js.native
-    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCComponent[MDCFoundation[js.Object]]]
   }
   
   @JSImport("@material/base/component", "MDCComponent")
   @js.native
   class MDCComponent[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends StObject {
     def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     
     def destroy(): Unit = js.native
     
@@ -1409,8 +1411,11 @@ object componentMod {
   /* static members */
   object MDCComponent {
     
-    @JSImport("@material/base/component", "MDCComponent.attachTo")
+    @JSImport("@material/base/component", "MDCComponent")
     @js.native
-    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCComponent[MDCFoundation[js.Object]]]
   }
 }

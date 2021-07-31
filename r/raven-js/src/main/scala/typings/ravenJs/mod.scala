@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,18 +16,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : RavenStatic = js.native
   
-  @js.native
   trait AutoBreadcrumbOptions extends StObject {
     
-    var console: js.UndefOr[Boolean] = js.native
+    var console: js.UndefOr[Boolean] = js.undefined
     
-    var dom: js.UndefOr[Boolean] = js.native
+    var dom: js.UndefOr[Boolean] = js.undefined
     
-    var location: js.UndefOr[Boolean] = js.native
+    var location: js.UndefOr[Boolean] = js.undefined
     
-    var sentry: js.UndefOr[Boolean] = js.native
+    var sentry: js.UndefOr[Boolean] = js.undefined
     
-    var xhr: js.UndefOr[Boolean] = js.native
+    var xhr: js.UndefOr[Boolean] = js.undefined
   }
   object AutoBreadcrumbOptions {
     
@@ -73,18 +71,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Breadcrumb extends StObject {
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[BreadcrumbType] = js.native
+    var `type`: js.UndefOr[BreadcrumbType] = js.undefined
   }
   object Breadcrumb {
     
@@ -188,10 +185,9 @@ object mod extends Shortcut {
     js.Any | Unit
   ]
   
-  @js.native
   trait RavenInstrumentationOptions extends StObject {
     
-    var tryCatch: js.UndefOr[Boolean] = js.native
+    var tryCatch: js.UndefOr[Boolean] = js.undefined
   }
   object RavenInstrumentationOptions {
     
@@ -212,7 +208,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RavenOptions extends StObject {
     
     /**
@@ -220,97 +215,97 @@ object mod extends Shortcut {
       * Such events are often triggered by rogue code (e.g. from a `setInterval` callback in a browser extension),
       * are not actionable, and eat up your event quota.
       */
-    var allowDuplicates: js.UndefOr[Boolean] = js.native
+    var allowDuplicates: js.UndefOr[Boolean] = js.undefined
     
     /** Allow use of private/secretKey. */
-    var allowSecretKey: js.UndefOr[Boolean] = js.native
+    var allowSecretKey: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables automatic collection of breadcrumbs. */
-    var autoBreadcrumbs: js.UndefOr[Boolean | AutoBreadcrumbOptions] = js.native
+    var autoBreadcrumbs: js.UndefOr[Boolean | AutoBreadcrumbOptions] = js.undefined
     
     /** A function that allows filtering or mutating breadcrumb payloads. Return false to throw away the breadcrumb. */
-    var breadcrumbCallback: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+    var breadcrumbCallback: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
     
     /** By default, Raven captures all unhandled promise rejections using standard `unhandledrejection` event. If you want to disable this behaviour, set this option to `false` */
-    var captureUnhandledRejections: js.UndefOr[Boolean] = js.native
+    var captureUnhandledRejections: js.UndefOr[Boolean] = js.undefined
     
     /** A function which allows mutation of the data payload right before being sent to Sentry */
-    var dataCallback: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+    var dataCallback: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
     
     /**
       * If set to true, Raven.js outputs some light debugging information onto the console.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /** The environment of the application you are monitoring with Sentry */
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var extra: js.UndefOr[js.Any] = js.native
+    var extra: js.UndefOr[js.Any] = js.undefined
     
     /** `fetch` init parameters */
-    var fetchParameters: js.UndefOr[StringDictionary[String | js.Function]] = js.native
+    var fetchParameters: js.UndefOr[StringDictionary[String | js.Function]] = js.undefined
     
     /** In some cases you may see issues where Sentry groups multiple events together when they should be separate entities. In other cases, Sentry simply doesn’t group events together because they’re so sporadic that they never look the same. */
-    var fingerprint: js.UndefOr[js.Array[String]] = js.native
+    var fingerprint: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Append headers to the fetch or XMLHttpRequest request. Should be in a form of hash, were value can be string or function */
-    var headers: js.UndefOr[StringDictionary[String | js.Function]] = js.native
+    var headers: js.UndefOr[StringDictionary[String | js.Function]] = js.undefined
     
     /** List of messages to be filtered out before being sent to Sentry. */
-    var ignoreErrors: js.UndefOr[js.Array[RegExp | String]] = js.native
+    var ignoreErrors: js.UndefOr[js.Array[RegExp | String]] = js.undefined
     
     /** Similar to ignoreErrors, but will ignore errors from whole urls patching a regex pattern. */
-    var ignoreUrls: js.UndefOr[js.Array[RegExp | String]] = js.native
+    var ignoreUrls: js.UndefOr[js.Array[RegExp | String]] = js.undefined
     
     /** An array of regex patterns to indicate which urls are a part of your app. */
-    var includePaths: js.UndefOr[js.Array[RegExp | String]] = js.native
+    var includePaths: js.UndefOr[js.Array[RegExp | String]] = js.undefined
     
     /** Enables/disables instrumentation of globals. */
-    var instrument: js.UndefOr[Boolean | RavenInstrumentationOptions] = js.native
+    var instrument: js.UndefOr[Boolean | RavenInstrumentationOptions] = js.undefined
     
     /** The log level associated with this event. Default: error */
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
     /** The name of the logger used by Sentry. Default: javascript */
-    var logger: js.UndefOr[String] = js.native
+    var logger: js.UndefOr[String] = js.undefined
     
     /** By default, Raven captures as many as 100 breadcrumb entries. If you find this too noisy, you can reduce this number by setting maxBreadcrumbs. Note that this number cannot be set higher than the default of 100. */
-    var maxBreadcrumbs: js.UndefOr[Double] = js.native
+    var maxBreadcrumbs: js.UndefOr[Double] = js.undefined
     
     /** By default, Raven does not truncate messages. If you need to truncate characters for whatever reason, you may set this to limit the length. */
-    var maxMessageLength: js.UndefOr[Double] = js.native
+    var maxMessageLength: js.UndefOr[Double] = js.undefined
     
     /** By default, Raven will truncate URLs as they appear in breadcrumbs and other meta interfaces to 250 characters in order to minimize bytes over the wire. This does *not* affect URLs in stack traces. */
-    var maxUrlLength: js.UndefOr[Double] = js.native
+    var maxUrlLength: js.UndefOr[Double] = js.undefined
     
     /** The release version of the application you are monitoring with Sentry */
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
     /**
       * A sampling rate to apply to events. A value of 0.0 will send no events, and a value of 1.0 will send all events (default).
       */
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
     /** An array of strings representing keys that should be scrubbed from the payload sent to Sentry */
-    var sanitizeKeys: js.UndefOr[js.Array[RegExp | String]] = js.native
+    var sanitizeKeys: js.UndefOr[js.Array[RegExp | String]] = js.undefined
     
     /** The name of the server or device that the client is running on */
-    var serverName: js.UndefOr[String] = js.native
+    var serverName: js.UndefOr[String] = js.undefined
     
     /** A callback function that allows you to apply your own filters to determine if the message should be sent to Sentry. */
-    var shouldSendCallback: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.native
+    var shouldSendCallback: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.undefined
     
     /** set to true to get the stack trace of your message */
-    var stacktrace: js.UndefOr[Boolean] = js.native
+    var stacktrace: js.UndefOr[Boolean] = js.undefined
     
     /** Additional data to be tagged onto the error. */
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Override the default HTTP data transport handler. */
-    var transport: js.UndefOr[js.Function1[/* options */ RavenTransportOptions, Unit]] = js.native
+    var transport: js.UndefOr[js.Function1[/* options */ RavenTransportOptions, Unit]] = js.undefined
     
     /** The inverse of ignoreUrls. Only report errors from whole urls matching a regex pattern. */
-    var whitelistUrls: js.UndefOr[js.Array[RegExp | String]] = js.native
+    var whitelistUrls: js.UndefOr[js.Array[RegExp | String]] = js.undefined
   }
   object RavenOptions {
     
@@ -342,7 +337,7 @@ object mod extends Shortcut {
       def setAutoBreadcrumbsUndefined: Self = StObject.set(x, "autoBreadcrumbs", js.undefined)
       
       @scala.inline
-      def setBreadcrumbCallback(value: /* data */ js.Any => _): Self = StObject.set(x, "breadcrumbCallback", js.Any.fromFunction1(value))
+      def setBreadcrumbCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "breadcrumbCallback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBreadcrumbCallbackUndefined: Self = StObject.set(x, "breadcrumbCallback", js.undefined)
@@ -354,7 +349,7 @@ object mod extends Shortcut {
       def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
       
       @scala.inline
-      def setDataCallback(value: /* data */ js.Any => _): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
+      def setDataCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDataCallbackUndefined: Self = StObject.set(x, "dataCallback", js.undefined)
@@ -707,18 +702,17 @@ object mod extends Shortcut {
     def wrap[T /* <: js.Function */](options: RavenOptions, func: T): T = js.native
   }
   
-  @js.native
   trait RavenTransportOptions extends StObject {
     
-    var auth: Sentryclient = js.native
+    var auth: Sentryclient
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    def onError(error: ErrorrequestXMLHttpReques): Unit = js.native
+    def onError(error: ErrorrequestXMLHttpReques): Unit
     
-    def onSuccess(): Unit = js.native
+    def onSuccess(): Unit
     
-    var url: String = js.native
+    var url: String
   }
   object RavenTransportOptions {
     

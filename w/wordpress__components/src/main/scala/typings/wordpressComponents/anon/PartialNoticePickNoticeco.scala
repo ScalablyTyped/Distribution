@@ -4,24 +4,22 @@ import typings.react.mod.ReactNode
 import typings.wordpressNotices.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/components.@wordpress/components/notice/list.default.Notice> & std.Pick<@wordpress/components.@wordpress/components/notice/list.default.Notice, 'content'> */
-@js.native
 trait PartialNoticePickNoticeco extends StObject {
   
-  var actions: js.UndefOr[js.Array[typings.wordpressComponents.noticeMod.Notice.Action]] = js.native
+  var actions: js.UndefOr[js.Array[typings.wordpressComponents.noticeMod.Notice.Action]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[ReactNode] with ReactNode = js.native
+  var content: js.UndefOr[ReactNode] & ReactNode
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isDismissible: js.UndefOr[Boolean] = js.native
+  var isDismissible: js.UndefOr[Boolean] = js.undefined
   
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object PartialNoticePickNoticeco {
   
@@ -50,7 +48,7 @@ object PartialNoticePickNoticeco {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setContent(value: js.UndefOr[ReactNode] with ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContentUndefined: Self = StObject.set(x, "content", js.undefined)

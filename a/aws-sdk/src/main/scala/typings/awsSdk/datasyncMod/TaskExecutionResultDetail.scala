@@ -2,56 +2,54 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskExecutionResultDetail extends StObject {
   
   /**
     * Errors that AWS DataSync encountered during execution of the task. You can use this error code to help troubleshoot issues.
     */
-  var ErrorCode: js.UndefOr[String] = js.native
+  var ErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * Detailed description of an error that was encountered during the task execution. You can use this information to help troubleshoot issues. 
     */
-  var ErrorDetail: js.UndefOr[String] = js.native
+  var ErrorDetail: js.UndefOr[String] = js.undefined
   
   /**
     * The total time in milliseconds that AWS DataSync spent in the PREPARING phase. 
     */
-  var PrepareDuration: js.UndefOr[Duration] = js.native
+  var PrepareDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * The status of the PREPARING phase.
     */
-  var PrepareStatus: js.UndefOr[PhaseStatus] = js.native
+  var PrepareStatus: js.UndefOr[PhaseStatus] = js.undefined
   
   /**
     * The total time in milliseconds that AWS DataSync took to transfer the file from the source to the destination location.
     */
-  var TotalDuration: js.UndefOr[Duration] = js.native
+  var TotalDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * The total time in milliseconds that AWS DataSync spent in the TRANSFERRING phase.
     */
-  var TransferDuration: js.UndefOr[Duration] = js.native
+  var TransferDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * The status of the TRANSFERRING phase.
     */
-  var TransferStatus: js.UndefOr[PhaseStatus] = js.native
+  var TransferStatus: js.UndefOr[PhaseStatus] = js.undefined
   
   /**
     * The total time in milliseconds that AWS DataSync spent in the VERIFYING phase.
     */
-  var VerifyDuration: js.UndefOr[Duration] = js.native
+  var VerifyDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * The status of the VERIFYING phase.
     */
-  var VerifyStatus: js.UndefOr[PhaseStatus] = js.native
+  var VerifyStatus: js.UndefOr[PhaseStatus] = js.undefined
 }
 object TaskExecutionResultDetail {
   

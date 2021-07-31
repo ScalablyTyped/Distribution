@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,27 +11,45 @@ object mod {
   // global Tether constructor
   @JSImport("tether", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Tether {
+  class ^ protected ()
+    extends StObject
+       with Tether {
     def this(options: ITetherOptions) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disable(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enable(): Unit = js.native
+    
+    /* CompleteClass */
+    override def position(): Unit = js.native
+    
+    /* CompleteClass */
+    override def setOptions(options: ITetherOptions): Unit = js.native
   }
+  @JSImport("tether", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("tether", "position")
-  @js.native
-  def position(): Unit = js.native
+  @scala.inline
+  def position(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("position")().asInstanceOf[Unit]
   
-  @js.native
   trait ITetherConstraint extends StObject {
     
-    var attachment: js.UndefOr[String] = js.native
+    var attachment: js.UndefOr[String] = js.undefined
     
-    var outOfBoundsClass: js.UndefOr[String] = js.native
+    var outOfBoundsClass: js.UndefOr[String] = js.undefined
     
-    var pin: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var pin: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var pinnedClass: js.UndefOr[String] = js.native
+    var pinnedClass: js.UndefOr[String] = js.undefined
     
-    var to: js.UndefOr[String | HTMLElement | js.Array[Double]] = js.native
+    var to: js.UndefOr[String | HTMLElement | js.Array[Double]] = js.undefined
   }
   object ITetherConstraint {
     
@@ -83,34 +100,33 @@ object mod {
     }
   }
   
-  @js.native
   trait ITetherOptions extends StObject {
     
-    var attachment: String = js.native
+    var attachment: String
     
-    var bodyElement: js.UndefOr[HTMLElement] = js.native
+    var bodyElement: js.UndefOr[HTMLElement] = js.undefined
     
-    var classPrefix: js.UndefOr[String] = js.native
+    var classPrefix: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[StringDictionary[Boolean | String]] = js.native
+    var classes: js.UndefOr[StringDictionary[Boolean | String]] = js.undefined
     
-    var constraints: js.UndefOr[js.Array[ITetherConstraint]] = js.native
+    var constraints: js.UndefOr[js.Array[ITetherConstraint]] = js.undefined
     
-    var element: js.UndefOr[HTMLElement | String | js.Any] = js.native
+    var element: js.UndefOr[HTMLElement | String | js.Any] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[String] = js.native
+    var offset: js.UndefOr[String] = js.undefined
     
-    var optimizations: js.UndefOr[js.Any] = js.native
+    var optimizations: js.UndefOr[js.Any] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String | js.Any] = js.native
+    var target: js.UndefOr[HTMLElement | String | js.Any] = js.undefined
     
-    var targetAttachment: js.UndefOr[String] = js.native
+    var targetAttachment: js.UndefOr[String] = js.undefined
     
-    var targetModifier: js.UndefOr[String] = js.native
+    var targetModifier: js.UndefOr[String] = js.undefined
     
-    var targetOffset: js.UndefOr[String] = js.native
+    var targetOffset: js.UndefOr[String] = js.undefined
   }
   object ITetherOptions {
     
@@ -204,18 +220,17 @@ object mod {
   }
   
   // global Tether constructor
-  @js.native
   trait Tether extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def disable(): Unit = js.native
+    def disable(): Unit
     
-    def enable(): Unit = js.native
+    def enable(): Unit
     
-    def position(): Unit = js.native
+    def position(): Unit
     
-    def setOptions(options: ITetherOptions): Unit = js.native
+    def setOptions(options: ITetherOptions): Unit
   }
   object Tether {
     

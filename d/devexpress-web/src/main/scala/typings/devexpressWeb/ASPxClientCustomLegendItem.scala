@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the CustomLegendItem class.
   */
-@js.native
-trait ASPxClientCustomLegendItem extends ASPxClientWebChartElementNamed {
+trait ASPxClientCustomLegendItem
+  extends StObject
+     with ASPxClientWebChartElementNamed {
   
   /**
     * Returns the text displayed by the custom legend item.
     */
-  var text: String = js.native
+  var text: String
 }
 object ASPxClientCustomLegendItem {
   

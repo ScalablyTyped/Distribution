@@ -3,21 +3,19 @@ package typings.recharts.mod
 import typings.recharts.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScatterPoint extends StObject {
   
-  var cx: js.UndefOr[Double] = js.native
+  var cx: js.UndefOr[Double] = js.undefined
   
-  var cy: js.UndefOr[Double] = js.native
+  var cy: js.UndefOr[Double] = js.undefined
   
-  var node: js.UndefOr[X] = js.native
+  var node: js.UndefOr[X] = js.undefined
   
-  var payload: js.UndefOr[js.Any] = js.native
+  var payload: js.UndefOr[js.Any] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object ScatterPoint {
   

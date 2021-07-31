@@ -4,7 +4,6 @@ import typings.grammarkdown.grammarkdownMod.SyntaxKind.AtToken
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.DefineKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "Define")

@@ -3,13 +3,14 @@ package typings.datatablesNet.DataTables
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "cell-methods"
 //#region "column-methods"
 @js.native
-trait CommonColumnMethod extends CommonSubMethods {
+trait CommonColumnMethod
+  extends StObject
+     with CommonSubMethods {
   
   /**
     * Get the footer th / td cell for the selected column.

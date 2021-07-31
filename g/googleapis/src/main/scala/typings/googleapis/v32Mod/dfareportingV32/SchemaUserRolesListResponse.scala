@@ -2,30 +2,28 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User Role List Response
   */
-@js.native
 trait SchemaUserRolesListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#userRolesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User role collection.
     */
-  var userRoles: js.UndefOr[js.Array[SchemaUserRole]] = js.native
+  var userRoles: js.UndefOr[js.Array[SchemaUserRole]] = js.undefined
 }
 object SchemaUserRolesListResponse {
   

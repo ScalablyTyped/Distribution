@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentRule extends StObject {
   
   /**
     * The block comment character pair, like `/ * block comment *&#47;`
     */
-  var blockComment: js.UndefOr[CharacterPair] = js.native
+  var blockComment: js.UndefOr[CharacterPair] = js.undefined
   
   /**
     * The line comment token, like `// this is a comment`
     */
-  var lineComment: js.UndefOr[String] = js.native
+  var lineComment: js.UndefOr[String] = js.undefined
 }
 object CommentRule {
   

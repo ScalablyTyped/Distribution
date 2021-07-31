@@ -4,21 +4,24 @@ import typings.koaSession.mod.stores
 import typings.redis.mod.ClientOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: RedisOptions): RedisSessionStore = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RedisSessionStore]
+  
   @JSImport("koa-redis", JSImport.Namespace)
   @js.native
-  def apply(options: RedisOptions): RedisSessionStore = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait RedisOptions extends ClientOpts {
+  trait RedisOptions
+    extends StObject
+       with ClientOpts {
     
-    var client: js.UndefOr[js.Any] = js.native
+    var client: js.UndefOr[js.Any] = js.undefined
     
-    var duplicate: js.UndefOr[Boolean] = js.native
+    var duplicate: js.UndefOr[Boolean] = js.undefined
   }
   object RedisOptions {
     
@@ -46,7 +49,9 @@ object mod {
   }
   
   @js.native
-  trait RedisSessionStore extends stores {
+  trait RedisSessionStore
+    extends StObject
+       with stores {
     
     var client: js.Any = js.native
   }

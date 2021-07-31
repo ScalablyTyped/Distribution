@@ -3,19 +3,19 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MetadataProvider extends DataProvider {
+trait MetadataProvider
+  extends StObject
+     with DataProvider {
   
-  def getDatabases(connectionUri: String): Thenable[js.Array[DatabaseInfo | String]] = js.native
+  def getDatabases(connectionUri: String): Thenable[js.Array[DatabaseInfo | String]]
   
-  def getMetadata(connectionUri: String): Thenable[ProviderMetadata] = js.native
+  def getMetadata(connectionUri: String): Thenable[ProviderMetadata]
   
-  def getTableInfo(connectionUri: String, metadata: ObjectMetadata): Thenable[js.Array[ColumnMetadata]] = js.native
+  def getTableInfo(connectionUri: String, metadata: ObjectMetadata): Thenable[js.Array[ColumnMetadata]]
   
-  def getViewInfo(connectionUri: String, metadata: ObjectMetadata): Thenable[js.Array[ColumnMetadata]] = js.native
+  def getViewInfo(connectionUri: String, metadata: ObjectMetadata): Thenable[js.Array[ColumnMetadata]]
 }
 object MetadataProvider {
   

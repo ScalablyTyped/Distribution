@@ -3,17 +3,15 @@ package typings.terminalKit.anon
 import typings.terminalKit.screenBufferMod.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attr extends StObject {
   
-  var attr: Double | Attributes = js.native
+  var attr: Double | Attributes
   
-  var transparencyChar: String = js.native
+  var transparencyChar: String
   
-  var transparencyType: Double = js.native
+  var transparencyType: Double
 }
 object Attr {
   

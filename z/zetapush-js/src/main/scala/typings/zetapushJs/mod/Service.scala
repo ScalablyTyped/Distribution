@@ -2,13 +2,11 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Service extends StObject {
   
-  var DEFAULT_DEPLOYMENT_ID: String = js.native
+  var DEFAULT_DEPLOYMENT_ID: String
 }
 object Service {
   

@@ -5,7 +5,6 @@ import typings.esfxDisposable.distMod.Disposable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readerwriterlockMod {
@@ -94,7 +93,9 @@ object readerwriterlockMod {
   }
   
   @js.native
-  trait LockHandle extends Disposable {
+  trait LockHandle
+    extends StObject
+       with Disposable {
     
     /**
       * Releases the lock.
@@ -103,7 +104,9 @@ object readerwriterlockMod {
   }
   
   @js.native
-  trait UpgradeableLockHandle extends LockHandle {
+  trait UpgradeableLockHandle
+    extends StObject
+       with LockHandle {
     
     /**
       * Upgrades the lock to a write lock.

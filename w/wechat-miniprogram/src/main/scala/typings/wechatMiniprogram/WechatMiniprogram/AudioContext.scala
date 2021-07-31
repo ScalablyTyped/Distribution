@@ -2,33 +2,31 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioContext extends StObject {
   
   /** [AudioContext.pause()](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/AudioContext.pause.html)
     *
     * 暂停音频。 */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** [AudioContext.play()](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/AudioContext.play.html)
     *
     * 播放音频。 */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /** [AudioContext.seek(number position)](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/AudioContext.seek.html)
     *
     * 跳转到指定位置。 */
   def seek(/** 跳转位置，单位 s */
-  position: Double): Unit = js.native
+  position: Double): Unit
   
   /** [AudioContext.setSrc(string src)](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/AudioContext.setSrc.html)
     *
     * 设置音频地址 */
   def setSrc(/** 音频地址 */
-  src: String): Unit = js.native
+  src: String): Unit
 }
 object AudioContext {
   

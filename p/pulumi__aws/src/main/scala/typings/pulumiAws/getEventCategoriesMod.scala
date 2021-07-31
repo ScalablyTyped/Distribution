@@ -3,31 +3,29 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getEventCategoriesMod {
   
-  @JSImport("@pulumi/aws/rds/getEventCategories", "getEventCategories")
+  @JSImport("@pulumi/aws/rds/getEventCategories", JSImport.Namespace)
   @js.native
-  def getEventCategories(): js.Promise[GetEventCategoriesResult] = js.native
-  @JSImport("@pulumi/aws/rds/getEventCategories", "getEventCategories")
-  @js.native
-  def getEventCategories(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = js.native
-  @JSImport("@pulumi/aws/rds/getEventCategories", "getEventCategories")
-  @js.native
-  def getEventCategories(args: GetEventCategoriesArgs): js.Promise[GetEventCategoriesResult] = js.native
-  @JSImport("@pulumi/aws/rds/getEventCategories", "getEventCategories")
-  @js.native
-  def getEventCategories(args: GetEventCategoriesArgs, opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getEventCategories(): js.Promise[GetEventCategoriesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")().asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  @scala.inline
+  def getEventCategories(args: Unit, opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  @scala.inline
+  def getEventCategories(args: GetEventCategoriesArgs): js.Promise[GetEventCategoriesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  @scala.inline
+  def getEventCategories(args: GetEventCategoriesArgs, opts: InvokeOptions): js.Promise[GetEventCategoriesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventCategories")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEventCategoriesResult]]
+  
   trait GetEventCategoriesArgs extends StObject {
     
     /**
       * The type of source that will be generating the events. Valid options are db-instance, db-security-group, db-parameter-group, db-snapshot, db-cluster or db-cluster-snapshot.
       */
-    val sourceType: js.UndefOr[String] = js.native
+    val sourceType: js.UndefOr[String] = js.undefined
   }
   object GetEventCategoriesArgs {
     
@@ -48,20 +46,19 @@ object getEventCategoriesMod {
     }
   }
   
-  @js.native
   trait GetEventCategoriesResult extends StObject {
     
     /**
       * A list of the event categories.
       */
-    val eventCategories: js.Array[String] = js.native
+    val eventCategories: js.Array[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val sourceType: js.UndefOr[String] = js.native
+    val sourceType: js.UndefOr[String] = js.undefined
   }
   object GetEventCategoriesResult {
     

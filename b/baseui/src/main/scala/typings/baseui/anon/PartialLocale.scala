@@ -5,26 +5,24 @@ import typings.dateFns.anon.Day
 import typings.dateFns.anon.FirstWeekContainsDateWeekStartsOn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<date-fns.Locale> */
-@js.native
 trait PartialLocale extends StObject {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var formatDistance: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var formatDistance: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var formatLong: js.UndefOr[DateTime] = js.native
+  var formatLong: js.UndefOr[DateTime] = js.undefined
   
-  var formatRelative: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var formatRelative: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var localize: js.UndefOr[Day] = js.native
+  var localize: js.UndefOr[Day] = js.undefined
   
-  var `match`: js.UndefOr[Day] = js.native
+  var `match`: js.UndefOr[Day] = js.undefined
   
-  var options: js.UndefOr[FirstWeekContainsDateWeekStartsOn] = js.native
+  var options: js.UndefOr[FirstWeekContainsDateWeekStartsOn] = js.undefined
 }
 object PartialLocale {
   
@@ -44,7 +42,7 @@ object PartialLocale {
     def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setFormatDistance(value: /* repeated */ js.Any => _): Self = StObject.set(x, "formatDistance", js.Any.fromFunction1(value))
+    def setFormatDistance(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "formatDistance", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFormatDistanceUndefined: Self = StObject.set(x, "formatDistance", js.undefined)
@@ -56,7 +54,7 @@ object PartialLocale {
     def setFormatLongUndefined: Self = StObject.set(x, "formatLong", js.undefined)
     
     @scala.inline
-    def setFormatRelative(value: /* repeated */ js.Any => _): Self = StObject.set(x, "formatRelative", js.Any.fromFunction1(value))
+    def setFormatRelative(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "formatRelative", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFormatRelativeUndefined: Self = StObject.set(x, "formatRelative", js.undefined)

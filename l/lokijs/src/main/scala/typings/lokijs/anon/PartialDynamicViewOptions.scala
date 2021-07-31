@@ -4,18 +4,16 @@ import typings.lokijs.lokijsStrings.active
 import typings.lokijs.lokijsStrings.passive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.DynamicViewOptions> */
-@js.native
 trait PartialDynamicViewOptions extends StObject {
   
-  var minRebuildInterval: js.UndefOr[Double] = js.native
+  var minRebuildInterval: js.UndefOr[Double] = js.undefined
   
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
-  var sortPriority: js.UndefOr[active | passive] = js.native
+  var sortPriority: js.UndefOr[active | passive] = js.undefined
 }
 object PartialDynamicViewOptions {
   

@@ -2,23 +2,21 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filtering extends StObject {
   
-  var filtering: js.UndefOr[Boolean] = js.native
+  var filtering: js.UndefOr[Boolean] = js.undefined
   
-  var groupPaging: js.UndefOr[Boolean] = js.native
+  var groupPaging: js.UndefOr[Boolean] = js.undefined
   
-  var grouping: js.UndefOr[Boolean] = js.native
+  var grouping: js.UndefOr[Boolean] = js.undefined
   
-  var paging: js.UndefOr[Boolean] = js.native
+  var paging: js.UndefOr[Boolean] = js.undefined
   
-  var sorting: js.UndefOr[Boolean] = js.native
+  var sorting: js.UndefOr[Boolean] = js.undefined
   
-  var summary: js.UndefOr[Boolean] = js.native
+  var summary: js.UndefOr[Boolean] = js.undefined
 }
 object Filtering {
   

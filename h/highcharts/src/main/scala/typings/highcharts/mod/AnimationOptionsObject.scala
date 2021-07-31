@@ -2,38 +2,36 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationOptionsObject extends StObject {
   
   /**
     * A callback function to exectute when the animation finishes.
     */
-  var complete: js.UndefOr[js.Function] = js.native
+  var complete: js.UndefOr[js.Function] = js.undefined
   
   /**
     * The animation defer in milliseconds.
     */
-  var defer: js.UndefOr[Double] = js.native
+  var defer: js.UndefOr[Double] = js.undefined
   
   /**
     * The animation duration in milliseconds.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of an easing function as defined on the `Math` object.
     */
-  var easing: js.UndefOr[String | js.Function] = js.native
+  var easing: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * A callback function to execute on each step of each attribute or CSS
     * property that's being animated. The first argument contains information
     * about the animation and progress.
     */
-  var step: js.UndefOr[js.Function] = js.native
+  var step: js.UndefOr[js.Function] = js.undefined
 }
 object AnimationOptionsObject {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenersConfigDump extends StObject {
   
   /** State for any warming, active, or draining listeners. */
-  var dynamicListeners: js.UndefOr[js.Array[DynamicListener]] = js.native
+  var dynamicListeners: js.UndefOr[js.Array[DynamicListener]] = js.undefined
   
   /** The statically loaded listener configs. */
-  var staticListeners: js.UndefOr[js.Array[StaticListener]] = js.native
+  var staticListeners: js.UndefOr[js.Array[StaticListener]] = js.undefined
   
   /** This is the :ref:`version_info ` in the last processed LDS discovery response. If there are only static bootstrap listeners, this field will be "". */
-  var versionInfo: js.UndefOr[String] = js.native
+  var versionInfo: js.UndefOr[String] = js.undefined
 }
 object ListenersConfigDump {
   

@@ -9,7 +9,6 @@ import typings.winrtUwp.Windows.Web.Http.Headers.HttpContentHeaderCollection
 import typings.winrtUwp.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses the multipart/form-data MIME type. */

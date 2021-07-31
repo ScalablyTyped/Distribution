@@ -6,20 +6,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketCorsOutputMod {
   
-  @js.native
   trait GetBucketCorsOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _CORSRules shape
       */
-    var CORSRules: js.UndefOr[js.Array[UnmarshalledCORSRule]] = js.native
+    var CORSRules: js.UndefOr[js.Array[UnmarshalledCORSRule]] = js.undefined
   }
   object GetBucketCorsOutput {
     

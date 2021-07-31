@@ -10,10 +10,13 @@ import typings.seleniumWebdriver.remoteMod.DriverService.Builder
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firefoxMod {
+  
+  @JSImport("selenium-webdriver/firefox", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("selenium-webdriver/firefox", "Driver")
   @js.native
@@ -65,6 +68,10 @@ object firefoxMod {
   /* static members */
   object Driver {
     
+    @JSImport("selenium-webdriver/firefox", "Driver")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Firefox session.
       *
@@ -87,33 +94,24 @@ object firefoxMod {
       *     configured to use the legacy FirefoxDriver from the Selenium project.
       * @return {!Driver} A new driver instance.
       */
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_executor: Executor): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_executor: DriverService): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Options): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Options, opt_executor: Executor): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Options, opt_executor: DriverService): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Capabilities): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Capabilities, opt_executor: Executor): Driver = js.native
-    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Capabilities, opt_executor: DriverService): Driver = js.native
+    @scala.inline
+    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Unit, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Unit, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Options, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Options, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Capabilities, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Capabilities, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/firefox", "Options")
@@ -126,7 +124,7 @@ object firefoxMod {
   class Options () extends Capabilities {
     def this(other: js.Object) = this()
     def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
-    def this(other: Map[String, _]) = this()
+    def this(other: Map[String, js.Any]) = this()
     
     /**
       * Specify additional command line arguments that should be used when starting
@@ -233,21 +231,16 @@ object firefoxMod {
     def setFirefoxBinary(binary: String): this.type = js.native
   }
   
-  @JSImport("selenium-webdriver/firefox", "createWiresService")
-  @js.native
-  def createWiresService(binary: String): DriverService = js.native
-  @JSImport("selenium-webdriver/firefox", "createWiresService")
-  @js.native
-  def createWiresService(binary: js.Any): DriverService = js.native
+  @scala.inline
+  def createWiresService(binary: String): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
+  @scala.inline
+  def createWiresService(binary: js.Any): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
   
-  @JSImport("selenium-webdriver/firefox", "findWires")
-  @js.native
-  def findWires(): String = js.native
+  @scala.inline
+  def findWires(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("findWires")().asInstanceOf[String]
   
-  @JSImport("selenium-webdriver/firefox", "prepareProfile")
-  @js.native
-  def prepareProfile(profile: String, port: Double): js.Any = js.native
-  @JSImport("selenium-webdriver/firefox", "prepareProfile")
-  @js.native
-  def prepareProfile(profile: js.Any, port: Double): js.Any = js.native
+  @scala.inline
+  def prepareProfile(profile: String, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def prepareProfile(profile: js.Any, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

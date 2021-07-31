@@ -4,14 +4,15 @@ import typings.node.Buffer
 import typings.soap.typesMod.ISecurity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientSSLSecurityPFXMod {
   
   @JSImport("soap/lib/security/ClientSSLSecurityPFX", "ClientSSLSecurityPFX")
   @js.native
-  class ClientSSLSecurityPFX protected () extends ISecurity {
+  class ClientSSLSecurityPFX protected ()
+    extends StObject
+       with ISecurity {
     def this(pfx: String) = this()
     def this(pfx: Buffer) = this()
     def this(pfx: String, defaults: js.Any) = this()

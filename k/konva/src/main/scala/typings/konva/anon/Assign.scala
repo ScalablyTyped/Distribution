@@ -11,122 +11,120 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assign extends StObject {
   
-  def _assign[T, U](target: T, source: U): T with U = js.native
+  def _assign[T, U](target: T, source: U): T & U
   
-  def _capitalize(str: String): String = js.native
+  def _capitalize(str: String): String
   
-  def _degToRad(deg: Double): Double = js.native
+  def _degToRad(deg: Double): Double
   
-  def _expandPoints(p: js.Any, tension: js.Any): js.Array[_] = js.native
+  def _expandPoints(p: js.Any, tension: js.Any): js.Array[js.Any]
   
-  def _getControlPoints(x0: js.Any, y0: js.Any, x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, t: js.Any): js.Array[_] = js.native
+  def _getControlPoints(x0: js.Any, y0: js.Any, x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, t: js.Any): js.Array[js.Any]
   
-  def _getFirstPointerId(evt: js.Any): js.Any = js.native
+  def _getFirstPointerId(evt: js.Any): js.Any
   
-  def _getProjectionToLine(pt: Vector2d, line: js.Any, isClosed: js.Any): Vector2d = js.native
+  def _getProjectionToLine(pt: Vector2d, line: js.Any, isClosed: js.Any): Vector2d
   
-  def _getProjectionToSegment(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, x3: js.Any, y3: js.Any): js.Array[_] = js.native
+  def _getProjectionToSegment(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any, x3: js.Any, y3: js.Any): js.Array[js.Any]
   
-  def _getRotation(radians: js.Any): js.Any = js.native
+  def _getRotation(radians: js.Any): js.Any
   
-  def _hex3ColorToRGBA(str: String): RGBA = js.native
+  def _hex3ColorToRGBA(str: String): RGBA
   
-  def _hex6ColorToRGBA(str: String): RGBA = js.native
+  def _hex6ColorToRGBA(str: String): RGBA
   
-  def _hexToRgb(hex: String): RGB = js.native
+  def _hexToRgb(hex: String): RGB
   
-  def _hslColorToRGBA(str: String): RGBA = js.native
+  def _hslColorToRGBA(str: String): RGBA
   
-  def _inRange(`val`: js.Any, left: js.Any, right: js.Any): Boolean = js.native
+  def _inRange(`val`: js.Any, left: js.Any, right: js.Any): Boolean
   
-  def _isArray(obj: js.Any): /* is std.Array<any> */ Boolean = js.native
+  def _isArray(obj: js.Any): /* is std.Array<any> */ Boolean
   
-  def _isBoolean(obj: js.Any): /* is boolean */ Boolean = js.native
+  def _isBoolean(obj: js.Any): /* is boolean */ Boolean
   
-  def _isElement(obj: js.Any): /* is std.Element */ Boolean = js.native
+  def _isElement(obj: js.Any): /* is std.Element */ Boolean
   
-  def _isFunction(obj: js.Any): Boolean = js.native
+  def _isFunction(obj: js.Any): Boolean
   
-  def _isInDocument(el: js.Any): Boolean = js.native
+  def _isInDocument(el: js.Any): Boolean
   
-  def _isNumber(obj: js.Any): /* is number */ Boolean = js.native
+  def _isNumber(obj: js.Any): /* is number */ Boolean
   
-  def _isPlainObject(obj: js.Any): Boolean = js.native
+  def _isPlainObject(obj: js.Any): Boolean
   
-  def _isString(obj: js.Any): /* is string */ Boolean = js.native
+  def _isString(obj: js.Any): /* is string */ Boolean
   
-  def _namedColorToRBA(str: String): A = js.native
+  def _namedColorToRBA(str: String): A
   
-  def _prepareArrayForTween(startArray: js.Any, endArray: js.Any, isClosed: js.Any): js.Array[_] = js.native
+  def _prepareArrayForTween(startArray: js.Any, endArray: js.Any, isClosed: js.Any): js.Array[js.Any]
   
-  def _prepareToStringify(obj: js.Any): js.Any = js.native
+  def _prepareToStringify(obj: js.Any): js.Any
   
-  def _radToDeg(rad: Double): Double = js.native
+  def _radToDeg(rad: Double): Double
   
-  def _rgbColorToRGBA(str: String): RGBA = js.native
+  def _rgbColorToRGBA(str: String): RGBA
   
-  def _rgbToHex(r: Double, g: Double, b: Double): String = js.native
+  def _rgbToHex(r: Double, g: Double, b: Double): String
   
-  def _rgbaColorToRGBA(str: String): RGBA = js.native
+  def _rgbaColorToRGBA(str: String): RGBA
   
-  def _sign(number: Double): `1` | `0` | `-1` = js.native
+  def _sign(number: Double): `1` | `0` | `-1`
   
-  def _simplifyArray(arr: js.Array[_]): js.Array[_] = js.native
+  def _simplifyArray(arr: js.Array[js.Any]): js.Array[js.Any]
   
-  def _urlToImage(url: String, callback: js.Function): Unit = js.native
+  def _urlToImage(url: String, callback: js.Function): Unit
   
-  def cloneArray(arr: js.Array[_]): js.Array[_] = js.native
+  def cloneArray(arr: js.Array[js.Any]): js.Array[js.Any]
   
-  def cloneObject[Any](obj: Any): Any = js.native
+  def cloneObject[Any](obj: Any): Any
   
-  def colorToRGBA(str: String): RGBA = js.native
+  def colorToRGBA(str: String): RGBA
   
-  def createCanvasElement(): HTMLCanvasElement = js.native
+  def createCanvasElement(): HTMLCanvasElement
   
-  def createImageElement(): HTMLImageElement = js.native
+  def createImageElement(): HTMLImageElement
   
-  def each(obj: js.Any, func: js.Any): Unit = js.native
+  def each(obj: js.Any, func: js.Any): Unit
   
-  def error(str: String): Unit = js.native
+  def error(str: String): Unit
   
-  def extend(child: js.Any, parent: js.Any): Unit = js.native
+  def extend(child: js.Any, parent: js.Any): Unit
   
-  def get(`val`: js.Any, `def`: js.Any): js.Any = js.native
+  def get(`val`: js.Any, `def`: js.Any): js.Any
   
-  def getRGB(color: String): RGB = js.native
+  def getRGB(color: String): RGB
   
-  def getRandomColor(): String = js.native
+  def getRandomColor(): String
   
-  def haveIntersection(r1: IRect, r2: IRect): Boolean = js.native
+  def haveIntersection(r1: IRect, r2: IRect): Boolean
   
-  def isObject(`val`: js.Any): /* is std.Object */ Boolean = js.native
+  def isObject(`val`: js.Any): /* is std.Object */ Boolean
   
-  def isValidSelector(selector: js.Any): Boolean = js.native
+  def isValidSelector(selector: js.Any): Boolean
   
-  def requestAnimFrame(callback: js.Function): Unit = js.native
+  def requestAnimFrame(callback: js.Function): Unit
   
-  def `throw`(str: String): scala.Nothing = js.native
+  def `throw`(str: String): scala.Nothing
   
-  def warn(str: String): Unit = js.native
+  def warn(str: String): Unit
 }
 object Assign {
   
   @scala.inline
   def apply(
-    _assign: (js.Any, js.Any) => js.Any with js.Any,
+    _assign: (js.Any, js.Any) => js.Any & js.Any,
     _capitalize: String => String,
     _degToRad: Double => Double,
-    _expandPoints: (js.Any, js.Any) => js.Array[_],
-    _getControlPoints: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_],
+    _expandPoints: (js.Any, js.Any) => js.Array[js.Any],
+    _getControlPoints: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[js.Any],
     _getFirstPointerId: js.Any => js.Any,
     _getProjectionToLine: (Vector2d, js.Any, js.Any) => Vector2d,
-    _getProjectionToSegment: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_],
+    _getProjectionToSegment: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[js.Any],
     _getRotation: js.Any => js.Any,
     _hex3ColorToRGBA: String => RGBA,
     _hex6ColorToRGBA: String => RGBA,
@@ -142,16 +140,16 @@ object Assign {
     _isPlainObject: js.Any => Boolean,
     _isString: js.Any => /* is string */ Boolean,
     _namedColorToRBA: String => A,
-    _prepareArrayForTween: (js.Any, js.Any, js.Any) => js.Array[_],
+    _prepareArrayForTween: (js.Any, js.Any, js.Any) => js.Array[js.Any],
     _prepareToStringify: js.Any => js.Any,
     _radToDeg: Double => Double,
     _rgbColorToRGBA: String => RGBA,
     _rgbToHex: (Double, Double, Double) => String,
     _rgbaColorToRGBA: String => RGBA,
     _sign: Double => `1` | `0` | `-1`,
-    _simplifyArray: js.Array[_] => js.Array[_],
+    _simplifyArray: js.Array[js.Any] => js.Array[js.Any],
     _urlToImage: (String, js.Function) => Unit,
-    cloneArray: js.Array[_] => js.Array[_],
+    cloneArray: js.Array[js.Any] => js.Array[js.Any],
     cloneObject: js.Any => js.Any,
     colorToRGBA: String => RGBA,
     createCanvasElement: () => HTMLCanvasElement,
@@ -178,7 +176,7 @@ object Assign {
   implicit class AssignMutableBuilder[Self <: Assign] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCloneArray(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "cloneArray", js.Any.fromFunction1(value))
+    def setCloneArray(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "cloneArray", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCloneObject(value: js.Any => js.Any): Self = StObject.set(x, "cloneObject", js.Any.fromFunction1(value))
@@ -229,7 +227,7 @@ object Assign {
     def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_assign(value: (js.Any, js.Any) => js.Any with js.Any): Self = StObject.set(x, "_assign", js.Any.fromFunction2(value))
+    def set_assign(value: (js.Any, js.Any) => js.Any & js.Any): Self = StObject.set(x, "_assign", js.Any.fromFunction2(value))
     
     @scala.inline
     def set_capitalize(value: String => String): Self = StObject.set(x, "_capitalize", js.Any.fromFunction1(value))
@@ -238,10 +236,10 @@ object Assign {
     def set_degToRad(value: Double => Double): Self = StObject.set(x, "_degToRad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_expandPoints(value: (js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_expandPoints", js.Any.fromFunction2(value))
+    def set_expandPoints(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "_expandPoints", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_getControlPoints(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_getControlPoints", js.Any.fromFunction7(value))
+    def set_getControlPoints(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "_getControlPoints", js.Any.fromFunction7(value))
     
     @scala.inline
     def set_getFirstPointerId(value: js.Any => js.Any): Self = StObject.set(x, "_getFirstPointerId", js.Any.fromFunction1(value))
@@ -250,7 +248,7 @@ object Assign {
     def set_getProjectionToLine(value: (Vector2d, js.Any, js.Any) => Vector2d): Self = StObject.set(x, "_getProjectionToLine", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_getProjectionToSegment(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_getProjectionToSegment", js.Any.fromFunction6(value))
+    def set_getProjectionToSegment(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "_getProjectionToSegment", js.Any.fromFunction6(value))
     
     @scala.inline
     def set_getRotation(value: js.Any => js.Any): Self = StObject.set(x, "_getRotation", js.Any.fromFunction1(value))
@@ -298,7 +296,7 @@ object Assign {
     def set_namedColorToRBA(value: String => A): Self = StObject.set(x, "_namedColorToRBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_prepareArrayForTween(value: (js.Any, js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_prepareArrayForTween", js.Any.fromFunction3(value))
+    def set_prepareArrayForTween(value: (js.Any, js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "_prepareArrayForTween", js.Any.fromFunction3(value))
     
     @scala.inline
     def set_prepareToStringify(value: js.Any => js.Any): Self = StObject.set(x, "_prepareToStringify", js.Any.fromFunction1(value))
@@ -319,7 +317,7 @@ object Assign {
     def set_sign(value: Double => `1` | `0` | `-1`): Self = StObject.set(x, "_sign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_simplifyArray(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "_simplifyArray", js.Any.fromFunction1(value))
+    def set_simplifyArray(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "_simplifyArray", js.Any.fromFunction1(value))
     
     @scala.inline
     def set_urlToImage(value: (String, js.Function) => Unit): Self = StObject.set(x, "_urlToImage", js.Any.fromFunction2(value))

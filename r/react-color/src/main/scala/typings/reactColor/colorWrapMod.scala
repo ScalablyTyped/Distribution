@@ -12,28 +12,28 @@ import typings.reactColor.mod.RGBColor
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorWrapMod {
   
-  @JSImport("react-color/lib/components/common/ColorWrap", JSImport.Default)
+  @JSImport("react-color/lib/components/common/ColorWrap", JSImport.Namespace)
   @js.native
-  def default[A](component: ComponentClass[A with InjectedColorProps, ComponentState]): ComponentClass[A with ExportedColorProps, ComponentState] = js.native
-  @JSImport("react-color/lib/components/common/ColorWrap", JSImport.Default)
-  @js.native
-  def default[A](component: StatelessComponent[A with InjectedColorProps]): ComponentClass[A with ExportedColorProps, ComponentState] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[A](component: ComponentClass[A & InjectedColorProps, ComponentState]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
+  @scala.inline
+  def default[A](component: StatelessComponent[A & InjectedColorProps]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
   
   type ColorWrapChangeHandler = js.Function1[/* color */ Color | ColorResult, Unit]
   
-  @js.native
   trait ExportedColorProps extends StObject {
     
-    var color: js.UndefOr[Color] = js.native
+    var color: js.UndefOr[Color] = js.undefined
     
-    var onChange: js.UndefOr[ColorChangeHandler] = js.native
+    var onChange: js.UndefOr[ColorChangeHandler] = js.undefined
     
-    var onChangeComplete: js.UndefOr[ColorChangeHandler] = js.native
+    var onChangeComplete: js.UndefOr[ColorChangeHandler] = js.undefined
   }
   object ExportedColorProps {
     
@@ -66,16 +66,15 @@ object colorWrapMod {
     }
   }
   
-  @js.native
   trait InjectedColorProps extends StObject {
     
-    var hex: js.UndefOr[String] = js.native
+    var hex: js.UndefOr[String] = js.undefined
     
-    var hsl: js.UndefOr[HSLColor] = js.native
+    var hsl: js.UndefOr[HSLColor] = js.undefined
     
-    var onChange: js.UndefOr[ColorWrapChangeHandler] = js.native
+    var onChange: js.UndefOr[ColorWrapChangeHandler] = js.undefined
     
-    var rgb: js.UndefOr[RGBColor] = js.native
+    var rgb: js.UndefOr[RGBColor] = js.undefined
   }
   object InjectedColorProps {
     

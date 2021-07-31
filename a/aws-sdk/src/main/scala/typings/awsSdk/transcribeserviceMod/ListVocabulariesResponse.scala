@@ -2,26 +2,24 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVocabulariesResponse extends StObject {
   
   /**
     * The ListVocabularies operation returns a page of vocabularies at a time. The maximum size of the page is set in the MaxResults parameter. If there are more jobs in the list than will fit on the page, Amazon Transcribe returns the NextPage token. To return in the next page of jobs, include the token in the next request to the ListVocabularies operation.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
     * The requested vocabulary state.
     */
-  var Status: js.UndefOr[VocabularyState] = js.native
+  var Status: js.UndefOr[VocabularyState] = js.undefined
   
   /**
     * A list of objects that describe the vocabularies that match the search criteria in the request.
     */
-  var Vocabularies: js.UndefOr[typings.awsSdk.transcribeserviceMod.Vocabularies] = js.native
+  var Vocabularies: js.UndefOr[typings.awsSdk.transcribeserviceMod.Vocabularies] = js.undefined
 }
 object ListVocabulariesResponse {
   

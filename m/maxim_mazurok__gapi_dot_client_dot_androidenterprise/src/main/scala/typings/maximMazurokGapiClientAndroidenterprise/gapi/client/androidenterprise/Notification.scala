@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
   /** Notifications about new app restrictions schema changes. */
-  var appRestrictionsSchemaChangeEvent: js.UndefOr[AppRestrictionsSchemaChangeEvent] = js.native
+  var appRestrictionsSchemaChangeEvent: js.UndefOr[AppRestrictionsSchemaChangeEvent] = js.undefined
   
   /** Notifications about app updates. */
-  var appUpdateEvent: js.UndefOr[AppUpdateEvent] = js.native
+  var appUpdateEvent: js.UndefOr[AppUpdateEvent] = js.undefined
   
   /** Notifications about device report updates. */
-  var deviceReportUpdateEvent: js.UndefOr[DeviceReportUpdateEvent] = js.native
+  var deviceReportUpdateEvent: js.UndefOr[DeviceReportUpdateEvent] = js.undefined
   
   /** The ID of the enterprise for which the notification is sent. This will always be present. */
-  var enterpriseId: js.UndefOr[String] = js.native
+  var enterpriseId: js.UndefOr[String] = js.undefined
   
   /** Notifications about an app installation failure. */
-  var installFailureEvent: js.UndefOr[InstallFailureEvent] = js.native
+  var installFailureEvent: js.UndefOr[InstallFailureEvent] = js.undefined
   
   /** Notifications about new devices. */
-  var newDeviceEvent: js.UndefOr[NewDeviceEvent] = js.native
+  var newDeviceEvent: js.UndefOr[NewDeviceEvent] = js.undefined
   
   /** Notifications about new app permissions. */
-  var newPermissionsEvent: js.UndefOr[NewPermissionsEvent] = js.native
+  var newPermissionsEvent: js.UndefOr[NewPermissionsEvent] = js.undefined
   
   /** Type of the notification. */
-  var notificationType: js.UndefOr[String] = js.native
+  var notificationType: js.UndefOr[String] = js.undefined
   
   /** Notifications about changes to a product's approval status. */
-  var productApprovalEvent: js.UndefOr[ProductApprovalEvent] = js.native
+  var productApprovalEvent: js.UndefOr[ProductApprovalEvent] = js.undefined
   
   /** Notifications about product availability changes. */
-  var productAvailabilityChangeEvent: js.UndefOr[ProductAvailabilityChangeEvent] = js.native
+  var productAvailabilityChangeEvent: js.UndefOr[ProductAvailabilityChangeEvent] = js.undefined
   
   /** The time when the notification was published in milliseconds since 1970-01-01T00:00:00Z. This will always be present. */
-  var timestampMillis: js.UndefOr[String] = js.native
+  var timestampMillis: js.UndefOr[String] = js.undefined
 }
 object Notification {
   

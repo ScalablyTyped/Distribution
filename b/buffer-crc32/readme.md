@@ -11,8 +11,8 @@ A pure javascript CRC32 algorithm that plays nice with binary data
 | Full name          | buffer-crc32 |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 223 |
-| # downloads        | 222834959 |
+| # dependents       | 251 |
+| # downloads        | 340395807 |
 | # stars            | 2 |
 
 ## Links

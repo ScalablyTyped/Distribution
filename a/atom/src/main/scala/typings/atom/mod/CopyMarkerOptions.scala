@@ -7,29 +7,27 @@ import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyMarkerOptions extends StObject {
   
   /**
     *  Indicates whether insertions at the start or end of the marked range should
     *  be interpreted as happening outside the marker.
     */
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
   /** Determines the rules by which changes to the buffer invalidate the marker. */
-  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
   
   /** Custom properties to be associated with the marker. */
-  var properties: js.UndefOr[js.Object] = js.native
+  var properties: js.UndefOr[js.Object] = js.undefined
   
   /** Creates the marker in a reversed orientation. */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not the marker should be tailed. */
-  var tailed: js.UndefOr[Boolean] = js.native
+  var tailed: js.UndefOr[Boolean] = js.undefined
 }
 object CopyMarkerOptions {
   

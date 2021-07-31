@@ -3,29 +3,27 @@ package typings.muiDatatables.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTablePopover extends StObject {
   
-  var action: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var action: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var anchorEl: js.UndefOr[ReactNode] = js.native
+  var anchorEl: js.UndefOr[ReactNode] = js.undefined
   
-  var anchorOrigin: js.UndefOr[js.Any] = js.native
+  var anchorOrigin: js.UndefOr[js.Any] = js.undefined
   
-  var elevation: js.UndefOr[Double] = js.native
+  var elevation: js.UndefOr[Double] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var onExited: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onExited: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var option: js.UndefOr[Boolean] = js.native
+  var option: js.UndefOr[Boolean] = js.undefined
   
-  var ref: js.UndefOr[js.Any] = js.native
+  var ref: js.UndefOr[js.Any] = js.undefined
   
-  var transformOrigin: js.UndefOr[js.Any] = js.native
+  var transformOrigin: js.UndefOr[js.Any] = js.undefined
 }
 object MUIDataTablePopover {
   
@@ -39,7 +37,7 @@ object MUIDataTablePopover {
   implicit class MUIDataTablePopoverMutableBuilder[Self <: MUIDataTablePopover] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAction(value: /* args */ js.Any => _): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    def setAction(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     @scala.inline
     def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
@@ -63,13 +61,13 @@ object MUIDataTablePopover {
     def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
     @scala.inline
-    def setOnClose(value: /* args */ js.Any => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    def setOnClose(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnExited(value: /* args */ js.Any => _): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
+    def setOnExited(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)

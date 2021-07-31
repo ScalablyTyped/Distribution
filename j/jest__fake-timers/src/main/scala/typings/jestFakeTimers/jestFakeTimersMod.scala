@@ -3,18 +3,23 @@ package typings.jestFakeTimers
 import typings.jestFakeTimers.anon.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestFakeTimersMod {
   
   @JSImport("@jest/fake-timers/build/jestFakeTimers", JSImport.Default)
   @js.native
-  class default[TimerRef] protected () extends FakeTimers[TimerRef] {
+  class default[TimerRef] protected ()
+    extends StObject
+       with FakeTimers[TimerRef] {
     def this(hasGlobalModuleMockerTimerConfigConfigMaxLoops: Config[TimerRef]) = this()
   }
   
-  type Callback = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait Callback extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   @js.native
   trait FakeTimers[TimerRef] extends StObject {
@@ -99,12 +104,11 @@ object jestFakeTimersMod {
     def useRealTimers(): Unit = js.native
   }
   
-  @js.native
   trait TimerConfig[Ref] extends StObject {
     
-    def idToRef(id: Double): Ref = js.native
+    def idToRef(id: Double): Ref
     
-    def refToId(ref: Ref): Double | Unit = js.native
+    def refToId(ref: Ref): Double | Unit
   }
   object TimerConfig {
     
@@ -115,7 +119,7 @@ object jestFakeTimersMod {
     }
     
     @scala.inline
-    implicit class TimerConfigMutableBuilder[Self <: TimerConfig[_], Ref] (val x: Self with TimerConfig[Ref]) extends AnyVal {
+    implicit class TimerConfigMutableBuilder[Self <: TimerConfig[?], Ref] (val x: Self & TimerConfig[Ref]) extends AnyVal {
       
       @scala.inline
       def setIdToRef(value: Double => Ref): Self = StObject.set(x, "idToRef", js.Any.fromFunction1(value))

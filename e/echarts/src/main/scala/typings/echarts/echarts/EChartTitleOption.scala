@@ -1,73 +1,72 @@
 package typings.echarts.echarts
 
 import typings.echarts.echarts.EChartOption.TextStyleWithRich
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EChartTitleOption extends js.Object {
+trait EChartTitleOption extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderRadius: js.UndefOr[Double | js.Array[Double]] = js.native
+  var borderRadius: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var bottom: js.UndefOr[String | Double] = js.native
+  var bottom: js.UndefOr[String | Double] = js.undefined
   
-  var itemGap: js.UndefOr[Double] = js.native
+  var itemGap: js.UndefOr[Double] = js.undefined
   
-  var left: js.UndefOr[String | Double] = js.native
+  var left: js.UndefOr[String | Double] = js.undefined
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Title space around content. The unit is `px`.
     * Default values for each position are 5.
     * And they can be set to different values with left, right, top, and bottom.
     */
-  var padding: js.UndefOr[Double | js.Array[Double]] = js.native
+  var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var right: js.UndefOr[String | Double] = js.native
+  var right: js.UndefOr[String | Double] = js.undefined
   
-  var shadowBlur: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.undefined
   
-  var shadowColor: js.UndefOr[Double] = js.native
+  var shadowColor: js.UndefOr[Double] = js.undefined
   
-  var shadowOffsetX: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
-  var shadowOffsetY: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var sublink: js.UndefOr[String] = js.native
+  var sublink: js.UndefOr[String] = js.undefined
   
-  var subtarget: js.UndefOr[String] = js.native
+  var subtarget: js.UndefOr[String] = js.undefined
   
-  var subtext: js.UndefOr[String] = js.native
+  var subtext: js.UndefOr[String] = js.undefined
   
-  var subtextStyle: js.UndefOr[TextStyleWithRich] = js.native
+  var subtextStyle: js.UndefOr[TextStyleWithRich] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
-  var textStyle: js.UndefOr[TextStyleWithRich] = js.native
+  var textStyle: js.UndefOr[TextStyleWithRich] = js.undefined
   
-  var textVerticalAlign: js.UndefOr[String] = js.native
+  var textVerticalAlign: js.UndefOr[String] = js.undefined
   
-  var top: js.UndefOr[String | Double] = js.native
+  var top: js.UndefOr[String | Double] = js.undefined
   
-  var triggerEvent: js.UndefOr[Boolean] = js.native
+  var triggerEvent: js.UndefOr[Boolean] = js.undefined
   
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
   
-  var zlevel: js.UndefOr[Double] = js.native
+  var zlevel: js.UndefOr[Double] = js.undefined
 }
 object EChartTitleOption {
   
@@ -78,192 +77,180 @@ object EChartTitleOption {
   }
   
   @scala.inline
-  implicit class EChartTitleOptionOps[Self <: EChartTitleOption] (val x: Self) extends AnyVal {
+  implicit class EChartTitleOptionMutableBuilder[Self <: EChartTitleOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBorderRadiusVarargs(value: Double*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
     
     @scala.inline
-    def setBorderRadiusVarargs(value: Double*): Self = this.set("borderRadius", js.Array(value :_*))
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: Double | js.Array[Double]): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setItemGap(value: Double): Self = StObject.set(x, "itemGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: String | Double): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setItemGapUndefined: Self = StObject.set(x, "itemGap", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setLeft(value: String | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemGap(value: Double): Self = this.set("itemGap", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteItemGap: Self = this.set("itemGap", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: String | Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
+    def setRight(value: String | Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double | js.Array[Double]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: String | Double): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setShadowColor(value: Double): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
     @scala.inline
-    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: Double): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
     
     @scala.inline
-    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
     
     @scala.inline
-    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
+    def setSublink(value: String): Self = StObject.set(x, "sublink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSublinkUndefined: Self = StObject.set(x, "sublink", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setSubtarget(value: String): Self = StObject.set(x, "subtarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSublink(value: String): Self = this.set("sublink", value.asInstanceOf[js.Any])
+    def setSubtargetUndefined: Self = StObject.set(x, "subtarget", js.undefined)
     
     @scala.inline
-    def deleteSublink: Self = this.set("sublink", js.undefined)
+    def setSubtext(value: String): Self = StObject.set(x, "subtext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtarget(value: String): Self = this.set("subtarget", value.asInstanceOf[js.Any])
+    def setSubtextStyle(value: TextStyleWithRich): Self = StObject.set(x, "subtextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubtarget: Self = this.set("subtarget", js.undefined)
+    def setSubtextStyleUndefined: Self = StObject.set(x, "subtextStyle", js.undefined)
     
     @scala.inline
-    def setSubtext(value: String): Self = this.set("subtext", value.asInstanceOf[js.Any])
+    def setSubtextUndefined: Self = StObject.set(x, "subtext", js.undefined)
     
     @scala.inline
-    def deleteSubtext: Self = this.set("subtext", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtextStyle(value: TextStyleWithRich): Self = this.set("subtextStyle", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteSubtextStyle: Self = this.set("subtextStyle", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTextStyle(value: TextStyleWithRich): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def setTextAlign(value: String): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    def setTextVerticalAlign(value: String): Self = StObject.set(x, "textVerticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyle(value: TextStyleWithRich): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setTextVerticalAlignUndefined: Self = StObject.set(x, "textVerticalAlign", js.undefined)
     
     @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTop(value: String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextVerticalAlign(value: String): Self = this.set("textVerticalAlign", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteTextVerticalAlign: Self = this.set("textVerticalAlign", js.undefined)
+    def setTriggerEvent(value: Boolean): Self = StObject.set(x, "triggerEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: String | Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setTriggerEventUndefined: Self = StObject.set(x, "triggerEvent", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerEvent(value: Boolean): Self = this.set("triggerEvent", value.asInstanceOf[js.Any])
+    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     
     @scala.inline
-    def deleteTriggerEvent: Self = this.set("triggerEvent", js.undefined)
+    def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZ: Self = this.set("z", js.undefined)
-    
-    @scala.inline
-    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+    def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
   }
 }

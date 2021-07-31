@@ -2,29 +2,27 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A chain of paths which connect end to end.
   */
-@js.native
 trait IChain extends StObject {
   
   /**
     * Flag if this chain forms a loop end to end.
     */
-  var endless: js.UndefOr[Boolean] = js.native
+  var endless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The links in this chain.
     */
-  var links: js.Array[IChainLink] = js.native
+  var links: js.Array[IChainLink]
   
   /**
     * Total length of all paths in the chain.
     */
-  var pathLength: Double = js.native
+  var pathLength: Double
 }
 object IChain {
   

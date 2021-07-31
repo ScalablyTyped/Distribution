@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.reactPaginate.anon.Selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,128 +24,127 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[ReactPaginateProps, ComponentState] = js.native
   
-  @js.native
   trait ReactPaginateProps extends StObject {
     
     /**
       * The classname for the active page.
       */
-    var activeClassName: js.UndefOr[String] = js.native
+    var activeClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The classname for the active link.
       */
-    var activeLinkClassName: js.UndefOr[String] = js.native
+    var activeLinkClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The classname on tag `li` of the ellipsis element.
       */
-    var breakClassName: js.UndefOr[String] = js.native
+    var breakClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Label for ellipsis.
       */
-    var breakLabel: js.UndefOr[String | ReactNode] = js.native
+    var breakLabel: js.UndefOr[String | ReactNode] = js.undefined
     
     /**
       * The classname on tag `a` of the ellipsis element.
       */
-    var breakLinkClassName: js.UndefOr[String] = js.native
+    var breakLinkClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The classname of the pagination container.
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Disable onPageChange callback with initial page. Default: false
       */
-    var disableInitialCallback: js.UndefOr[Boolean] = js.native
+    var disableInitialCallback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The classname for disabled `previous` and `next` buttons.
       */
-    var disabledClassName: js.UndefOr[String] = js.native
+    var disabledClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Extra context to add to the aria-label HTML attribute.
       */
-    var extraAriaContext: js.UndefOr[String] = js.native
+    var extraAriaContext: js.UndefOr[String] = js.undefined
     
     /**
       * To override selected page with parent prop.
       */
-    var forcePage: js.UndefOr[Double] = js.native
+    var forcePage: js.UndefOr[Double] = js.undefined
     
     /**
       * The method is called to generate the href attribute value on tag a of each page element.
       */
-    var hrefBuilder: js.UndefOr[js.Function1[/* pageIndex */ Double, Unit]] = js.native
+    var hrefBuilder: js.UndefOr[js.Function1[/* pageIndex */ Double, Unit]] = js.undefined
     
     /**
       * The initial page selected.
       */
-    var initialPage: js.UndefOr[Double] = js.native
+    var initialPage: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of pages to display for margins.
       */
-    var marginPagesDisplayed: Double = js.native
+    var marginPagesDisplayed: Double
     
     /**
       * The classname on tag `li` of the `next` button.
       */
-    var nextClassName: js.UndefOr[String] = js.native
+    var nextClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the `next` button.
       */
-    var nextLabel: js.UndefOr[ReactNode] = js.native
+    var nextLabel: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The classname on tag `a` of the `next` button.
       */
-    var nextLinkClassName: js.UndefOr[String] = js.native
+    var nextLinkClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The method to call when a page is clicked. Exposes the current page object as an argument.
       */
-    var onPageChange: js.UndefOr[js.Function1[/* selectedItem */ Selected, Unit]] = js.native
+    var onPageChange: js.UndefOr[js.Function1[/* selectedItem */ Selected, Unit]] = js.undefined
     
     /**
       * The classname on tag `li` of each page element.
       */
-    var pageClassName: js.UndefOr[String] = js.native
+    var pageClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The total number of pages.
       */
-    var pageCount: Double = js.native
+    var pageCount: Double
     
     /**
       * The classname on tag `a` of each page element.
       */
-    var pageLinkClassName: js.UndefOr[String] = js.native
+    var pageLinkClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The range of pages displayed.
       */
-    var pageRangeDisplayed: Double = js.native
+    var pageRangeDisplayed: Double
     
     /**
       * The classname on tag `li` of the `previous` button.
       */
-    var previousClassName: js.UndefOr[String] = js.native
+    var previousClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the `previous` button.
       */
-    var previousLabel: js.UndefOr[ReactNode] = js.native
+    var previousLabel: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The classname on tag `a` of the `previous` button.
       */
-    var previousLinkClassName: js.UndefOr[String] = js.native
+    var previousLinkClassName: js.UndefOr[String] = js.undefined
   }
   object ReactPaginateProps {
     

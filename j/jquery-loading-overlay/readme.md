@@ -12,7 +12,7 @@ jQuery Loading Overlay Plugin
 | Keywords           | loading, overlay, ajax, jquery, jquery-plugin |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 7950 |
+| # downloads        | 5416 |
 | # stars            | 1 |
 
 ## Links

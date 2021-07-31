@@ -3,29 +3,27 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealmDto extends StObject {
   
-  var cdn: String = js.native
+  var cdn: String
   
-  var css: String = js.native
+  var css: String
   
-  var dd: String = js.native
+  var dd: String
   
-  var l: String = js.native
+  var l: String
   
-  var lg: String = js.native
+  var lg: String
   
-  var n: js.Array[StringDictionary[String]] = js.native
+  var n: js.Array[StringDictionary[String]]
   
-  var profileiconmax: Double = js.native
+  var profileiconmax: Double
   
-  var storage: String = js.native
+  var storage: String
   
-  var v: String = js.native
+  var v: String
 }
 object RealmDto {
   

@@ -16,14 +16,16 @@ import typings.reactIntl.srcTypesMod.IntlShape
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsInjectIntlMod {
   
-  @JSImport("react-intl/src/components/injectIntl", JSImport.Default)
+  @JSImport("react-intl/src/components/injectIntl", JSImport.Namespace)
   @js.native
-  def default[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName])]
   
   @JSImport("react-intl/src/components/injectIntl", "Context")
   @js.native
@@ -33,24 +35,22 @@ object componentsInjectIntlMod {
   @js.native
   val Provider: typings.react.mod.Provider[IntlShape] = js.native
   
-  @JSImport("react-intl/src/components/injectIntl", JSImport.Default)
-  @js.native
-  def default_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] with RefAttributes[T]]) with (WrappedComponent[P, IntlPropName]) = js.native
-  @JSImport("react-intl/src/components/injectIntl", JSImport.Default)
-  @js.native
-  def default_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
-  @JSImport("react-intl/src/components/injectIntl", JSImport.Default)
-  @js.native
-  def default_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] with RefAttributes[T]]) with (WrappedComponent[P, IntlPropName]) = js.native
+  @scala.inline
+  def default_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName])]
   
-  @js.native
+  @scala.inline
+  def default_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName])]
+  
+  @scala.inline
+  def default_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName])]
+  
   trait Opts[IntlPropName /* <: String */, ForwardRef /* <: Boolean */] extends StObject {
     
-    var enforceContext: js.UndefOr[Boolean] = js.native
+    var enforceContext: js.UndefOr[Boolean] = js.undefined
     
-    var forwardRef: js.UndefOr[ForwardRef] = js.native
+    var forwardRef: js.UndefOr[ForwardRef] = js.undefined
     
-    var intlPropName: js.UndefOr[IntlPropName] = js.native
+    var intlPropName: js.UndefOr[IntlPropName] = js.undefined
   }
   object Opts {
     
@@ -61,7 +61,7 @@ object componentsInjectIntlMod {
     }
     
     @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts[_, _], IntlPropName /* <: String */, ForwardRef /* <: Boolean */] (val x: Self with (Opts[IntlPropName, ForwardRef])) extends AnyVal {
+    implicit class OptsMutableBuilder[Self <: Opts[?, ?], IntlPropName /* <: String */, ForwardRef /* <: Boolean */] (val x: Self & (Opts[IntlPropName, ForwardRef])) extends AnyVal {
       
       @scala.inline
       def setEnforceContext(value: Boolean): Self = StObject.set(x, "enforceContext", value.asInstanceOf[js.Any])
@@ -83,9 +83,9 @@ object componentsInjectIntlMod {
     }
   }
   
-  type WithIntlProps[P] = (Omit[P, intl]) with ForwardedRef
+  type WithIntlProps[P] = (Omit[P, intl]) & ForwardedRef
   
   type WrappedComponentProps[IntlPropName /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in IntlPropName ]: react-intl.react-intl/src/types.IntlShape}
-    */ typings.reactIntl.reactIntlStrings.WrappedComponentProps with TopLevel[js.Any]
+    */ typings.reactIntl.reactIntlStrings.WrappedComponentProps & TopLevel[js.Any]
 }

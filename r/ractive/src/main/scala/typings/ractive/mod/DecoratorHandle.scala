@@ -2,26 +2,24 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecoratorHandle extends StObject {
   
   /**
   	 * Called when any downstream template from the element will be updated.
   	 */
-  var invalidate: js.UndefOr[js.Function0[Unit]] = js.native
+  var invalidate: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
   	 * Called when the decorator is being removed from its element.
   	 */
-  def teardown(): Unit = js.native
+  def teardown(): Unit
   
   /**
   	 * Called when any arguments passed to the decorator update. If no update function is supplied, then the decorator will be torn down and recreated when the decorator arguments update.j
   	 */
-  var update: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var update: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
 }
 object DecoratorHandle {
   

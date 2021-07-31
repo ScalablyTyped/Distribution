@@ -3,24 +3,25 @@ package typings.antd
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonImageMod {
   
-  @JSImport("antd/lib/skeleton/Image", JSImport.Default)
+  @JSImport("antd/lib/skeleton/Image", JSImport.Namespace)
   @js.native
-  def default(props: SkeletonImageProps): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size' | 'shape' | 'active'> */
-  @js.native
   trait SkeletonImageProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object SkeletonImageProps {
     

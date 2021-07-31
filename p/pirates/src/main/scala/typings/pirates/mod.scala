@@ -2,23 +2,23 @@ package typings.pirates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pirates", "addHook")
+  @JSImport("pirates", JSImport.Namespace)
   @js.native
-  def addHook(hook: Hook): RevertFunction = js.native
-  @JSImport("pirates", "addHook")
-  @js.native
-  def addHook(hook: Hook, opts: Options): RevertFunction = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def addHook(hook: Hook): RevertFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(hook.asInstanceOf[js.Any]).asInstanceOf[RevertFunction]
+  @scala.inline
+  def addHook(hook: Hook, opts: Options): RevertFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(hook.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RevertFunction]
   
   type Hook = js.Function2[/* code */ String, /* filename */ String, String]
   
   type Matcher = js.Function1[/* code */ String, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -26,17 +26,17 @@ object mod {
       *
       * @default ['.js']
       */
-    var exts: js.UndefOr[js.Array[String]] = js.native
+    var exts: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Auto-ignore node_modules. Independent of any matcher.
       *
       * @default true
       */
-    var ignoreNodeModules: js.UndefOr[Boolean] = js.native
+    var ignoreNodeModules: js.UndefOr[Boolean] = js.undefined
     
     /** A matcher function, will be called with path to a file. Should return truthy if the file should be hooked, falsy otherwise. */
-    var matcher: js.UndefOr[Matcher] = js.native
+    var matcher: js.UndefOr[Matcher] = js.undefined
   }
   object Options {
     

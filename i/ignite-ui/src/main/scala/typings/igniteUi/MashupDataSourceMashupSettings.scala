@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MashupDataSourceMashupSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,12 +15,12 @@ trait MashupDataSourceMashupSettings
   /**
     * An array of $.ig.DataSource instances holding the disperse data.
     */
-  var dataSource: js.UndefOr[js.Array[_]] = js.native
+  var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Indicates whether to ignore records that have no corresponding data in all of the provided data sources.
     */
-  var ignorePartialRecords: js.UndefOr[Boolean] = js.native
+  var ignorePartialRecords: js.UndefOr[Boolean] = js.undefined
 }
 object MashupDataSourceMashupSettings {
   
@@ -35,7 +34,7 @@ object MashupDataSourceMashupSettings {
   implicit class MashupDataSourceMashupSettingsMutableBuilder[Self <: MashupDataSourceMashupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDataSource(value: js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)

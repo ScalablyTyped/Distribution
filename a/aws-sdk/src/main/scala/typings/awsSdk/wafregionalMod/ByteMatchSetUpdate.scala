@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByteMatchSetUpdate extends StObject {
   
   /**
     * Specifies whether to insert or delete a ByteMatchTuple.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * Information about the part of a web request that you want AWS WAF to inspect and the value that you want AWS WAF to search for. If you specify DELETE for the value of Action, the ByteMatchTuple values must exactly match the values in the ByteMatchTuple that you want to delete from the ByteMatchSet.
     */
-  var ByteMatchTuple: typings.awsSdk.wafregionalMod.ByteMatchTuple = js.native
+  var ByteMatchTuple: typings.awsSdk.wafregionalMod.ByteMatchTuple
 }
 object ByteMatchSetUpdate {
   

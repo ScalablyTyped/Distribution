@@ -3,25 +3,23 @@ package typings.microsoftLiveConnect.Microsoft.Live
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.backgroundUpload method.
   */
-@js.native
 trait IBackgroundUploadProperties extends StObject {
   
   /**
     * The file input object to read the file from. Can be a
     * Windows.Storage.StorageFile or an IFile.
     */
-  var file_input: js.UndefOr[js.Any] = js.native
+  var file_input: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The name of the file to upload.
     */
-  var file_name: js.UndefOr[String] = js.native
+  var file_name: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the uploaded file should overwrite an existing
@@ -31,17 +29,17 @@ trait IBackgroundUploadProperties extends StObject {
     * file.
     * @default "false".
     */
-  var overwrite: js.UndefOr[String] = js.native
+  var overwrite: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the file to upload.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The file input stream to read the file from.
     */
-  var stream_input: js.UndefOr[IInputStream] = js.native
+  var stream_input: js.UndefOr[IInputStream] = js.undefined
 }
 object IBackgroundUploadProperties {
   

@@ -2,14 +2,12 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @param role Role that the user switches to. */
-@js.native
 trait Role extends StObject {
   
-  var role: String = js.native
+  var role: String
 }
 object Role {
   

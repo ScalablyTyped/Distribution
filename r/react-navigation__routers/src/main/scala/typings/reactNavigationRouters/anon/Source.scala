@@ -4,24 +4,24 @@ import typings.reactNavigationRouters.commonActionsMod.Action
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.GO_BACK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Source extends Action {
+trait Source
+  extends StObject
+     with Action {
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: GO_BACK = js.native
+  var `type`: GO_BACK
 }
 object Source {
   
   @scala.inline
-  def apply(`type`: GO_BACK): Source = {
+  def apply(): Source = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("GO_BACK")
     __obj.asInstanceOf[Source]
   }
   

@@ -3,12 +3,11 @@ package typings.vscode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinition
-  extends /**
+  extends StObject
+     with /**
   * Additional debug type specific properties.
   */
 /* key */ StringDictionary[js.Any] {
@@ -28,7 +27,7 @@ trait TaskDefinition
     * Note that type identifier starting with a '$' are reserved for internal
     * usages and shouldn't be used by extensions.
     */
-  val `type`: String = js.native
+  val `type`: String
 }
 object TaskDefinition {
   

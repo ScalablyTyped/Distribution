@@ -2,17 +2,17 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignMessageParams extends CommonParams {
+trait SignMessageParams
+  extends StObject
+     with CommonParams {
   
-  var coin: js.UndefOr[String] = js.native
+  var coin: js.UndefOr[String] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var path: String | js.Array[Double] = js.native
+  var path: String | js.Array[Double]
 }
 object SignMessageParams {
   

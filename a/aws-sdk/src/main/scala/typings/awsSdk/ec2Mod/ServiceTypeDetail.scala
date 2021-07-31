@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceTypeDetail extends StObject {
   
   /**
     * The type of service.
     */
-  var ServiceType: js.UndefOr[typings.awsSdk.ec2Mod.ServiceType] = js.native
+  var ServiceType: js.UndefOr[typings.awsSdk.ec2Mod.ServiceType] = js.undefined
 }
 object ServiceTypeDetail {
   

@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.networkfirewall
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallPolicyFirewallPolicyStatefulRuleGroupReference extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the stateful rule group.
     */
-  var resourceArn: Input[String] = js.native
+  var resourceArn: Input[String]
 }
 object FirewallPolicyFirewallPolicyStatefulRuleGroupReference {
   

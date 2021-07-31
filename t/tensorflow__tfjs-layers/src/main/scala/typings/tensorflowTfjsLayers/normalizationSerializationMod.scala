@@ -8,7 +8,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object normalizationSerializationMod {
@@ -17,34 +16,35 @@ object normalizationSerializationMod {
   @js.native
   val normalizationLayerClassNames: js.Array[NormalizationLayerClassName] = js.native
   
-  @js.native
-  trait BatchNormalizationLayerConfig extends LayerConfig {
+  trait BatchNormalizationLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
     
-    var beta_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var beta_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var beta_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var beta_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var beta_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var beta_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
-    var epsilon: js.UndefOr[Double] = js.native
+    var epsilon: js.UndefOr[Double] = js.undefined
     
-    var gamma_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var gamma_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var gamma_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var gamma_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var gamma_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var gamma_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var momentum: js.UndefOr[Double] = js.native
+    var momentum: js.UndefOr[Double] = js.undefined
     
-    var moving_mean_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var moving_mean_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var moving_variance_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var moving_variance_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var scale: js.UndefOr[Boolean] = js.native
+    var scale: js.UndefOr[Boolean] = js.undefined
   }
   object BatchNormalizationLayerConfig {
     

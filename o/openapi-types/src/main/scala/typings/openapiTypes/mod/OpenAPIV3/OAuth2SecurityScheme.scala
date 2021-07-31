@@ -4,22 +4,22 @@ import typings.openapiTypes.anon.AuthorizationCode
 import typings.openapiTypes.openapiTypesStrings.oauth2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OAuth2SecurityScheme extends SecuritySchemeObject {
+trait OAuth2SecurityScheme
+  extends StObject
+     with SecuritySchemeObject {
   
-  var flows: AuthorizationCode = js.native
+  var flows: AuthorizationCode
   
-  var `type`: oauth2 = js.native
+  var `type`: oauth2
 }
 object OAuth2SecurityScheme {
   
   @scala.inline
-  def apply(flows: AuthorizationCode, `type`: oauth2): OAuth2SecurityScheme = {
+  def apply(flows: AuthorizationCode): OAuth2SecurityScheme = {
     val __obj = js.Dynamic.literal(flows = flows.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[OAuth2SecurityScheme]
   }
   

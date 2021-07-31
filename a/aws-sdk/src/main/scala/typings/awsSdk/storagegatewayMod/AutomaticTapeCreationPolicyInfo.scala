@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomaticTapeCreationPolicyInfo extends StObject {
   
   /**
     * An automatic tape creation policy consists of a list of automatic tape creation rules. This returns the rules that determine when and how to automatically create new tapes.
     */
-  var AutomaticTapeCreationRules: js.UndefOr[typings.awsSdk.storagegatewayMod.AutomaticTapeCreationRules] = js.native
+  var AutomaticTapeCreationRules: js.UndefOr[typings.awsSdk.storagegatewayMod.AutomaticTapeCreationRules] = js.undefined
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
 }
 object AutomaticTapeCreationPolicyInfo {
   

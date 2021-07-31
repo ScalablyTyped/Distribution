@@ -4,12 +4,12 @@ import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DictionaryRenderer
-  extends Renderer
+  extends StObject
+     with Renderer
      with VisualVariablesMixin {
   
   /**

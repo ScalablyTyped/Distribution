@@ -17,81 +17,79 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseInputProps[T] extends StObject {
   
-  var adjoined: js.UndefOr[none | left | right | both] = js.native
+  var adjoined: js.UndefOr[none | left | right | both] = js.undefined
   
-  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
   
-  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var clearOnEscape: js.UndefOr[Boolean] = js.native
+  var clearOnEscape: js.UndefOr[Boolean] = js.undefined
   
-  var clearable: js.UndefOr[Boolean] = js.native
+  var clearable: js.UndefOr[Boolean] = js.undefined
   
-  var `data-baseweb`: js.UndefOr[String] = js.native
+  var `data-baseweb`: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inputMode: js.UndefOr[String] = js.native
+  var inputMode: js.UndefOr[String] = js.undefined
   
-  var inputRef: js.UndefOr[Ref[T]] = js.native
+  var inputRef: js.UndefOr[Ref[T]] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[T]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[T]] = js.undefined
   
-  var onChange: js.UndefOr[FormEventHandler[T]] = js.native
+  var onChange: js.UndefOr[FormEventHandler[T]] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[T]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[T]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
   
-  var overrides: js.UndefOr[BaseInputOverrides[SharedProps]] = js.native
+  var overrides: js.UndefOr[BaseInputOverrides[SharedProps]] = js.undefined
   
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var positive: js.UndefOr[Boolean] = js.native
+  var positive: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object BaseInputProps {
   
@@ -102,7 +100,7 @@ object BaseInputProps {
   }
   
   @scala.inline
-  implicit class BaseInputPropsMutableBuilder[Self <: BaseInputProps[_], T] (val x: Self with BaseInputProps[T]) extends AnyVal {
+  implicit class BaseInputPropsMutableBuilder[Self <: BaseInputProps[?], T] (val x: Self & BaseInputProps[T]) extends AnyVal {
     
     @scala.inline
     def setAdjoined(value: none | left | right | both): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])

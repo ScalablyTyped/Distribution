@@ -12,41 +12,41 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.success
 import typings.tuyaPanelKit.tuyaPanelKitStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NotificationProps extends TouchableOpacityProps {
+trait NotificationProps
+  extends StObject
+     with TouchableOpacityProps {
   
-  var autoCloseTime: js.UndefOr[Double] = js.native
+  var autoCloseTime: js.UndefOr[Double] = js.undefined
   
-  var backIcon: js.UndefOr[String] = js.native
+  var backIcon: js.UndefOr[String] = js.undefined
   
-  var backIconCenter: js.UndefOr[Boolean] = js.native
+  var backIconCenter: js.UndefOr[Boolean] = js.undefined
   
-  var backIconSize: js.UndefOr[Double] = js.native
+  var backIconSize: js.UndefOr[Double] = js.undefined
   
-  var enableClose: js.UndefOr[Boolean] = js.native
+  var enableClose: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var imageSource: js.UndefOr[ImageSourcePropType] = js.native
+  var imageSource: js.UndefOr[ImageSourcePropType] = js.undefined
   
-  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+  var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var motionConfig: js.UndefOr[MotionProps] = js.native
+  var motionConfig: js.UndefOr[MotionProps] = js.undefined
   
-  var motionStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var motionStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[CloseIcon] = js.native
+  var theme: js.UndefOr[CloseIcon] = js.undefined
   
-  var variant: js.UndefOr[success | warning | error] = js.native
+  var variant: js.UndefOr[success | warning | error] = js.undefined
 }
 object NotificationProps {
   

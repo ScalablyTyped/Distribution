@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningGroupInformation extends StObject {
   
   /**
     * A collection group objects containing information about the groups.
     */
-  var groups: js.UndefOr[js.Array[SigningGroup]] = js.native
+  var groups: js.UndefOr[js.Array[SigningGroup]] = js.undefined
 }
 object SigningGroupInformation {
   

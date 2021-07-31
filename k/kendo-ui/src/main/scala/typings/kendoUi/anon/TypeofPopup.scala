@@ -3,20 +3,18 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPopup extends StObject {
   
   /* static member */
-  var TabKeyTrap: js.Any = js.native
+  var TabKeyTrap: js.Any
   
   /* static member */
-  def extend(proto: js.Object): Popup = js.native
+  def extend(proto: js.Object): Popup
   
   /* static member */
-  var fn: Popup = js.native
+  var fn: Popup
 }
 object TypeofPopup {
   

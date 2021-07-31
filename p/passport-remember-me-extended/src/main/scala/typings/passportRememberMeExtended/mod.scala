@@ -8,7 +8,6 @@ import typings.passport.mod.AuthenticateOptions
 import typings.passportRememberMeExtended.passportRememberMeExtendedBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,8 @@ object mod {
   @JSImport("passport-remember-me-extended", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(verify: VerifyFunction, issue: IssueFunction) = this()
     def this(
       options: StrategyOptionWithRequest,
@@ -25,7 +25,7 @@ object mod {
     ) = this()
     def this(options: StrategyOption, verify: VerifyFunction, issue: IssueFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: AuthenticateOptions): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: AuthenticateOptions): Unit = js.native
   }
   
   type IssueFunction = js.Function2[
@@ -41,12 +41,11 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait StrategyOption extends StObject {
     
-    var cookie: js.UndefOr[CookieOptions] = js.native
+    var cookie: js.UndefOr[CookieOptions] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object StrategyOption {
     
@@ -73,16 +72,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionWithRequest extends StrategyOption {
+  trait StrategyOptionWithRequest
+    extends StObject
+       with StrategyOption {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionWithRequest {
     
     @scala.inline
-    def apply(passReqToCallback: `true`): StrategyOptionWithRequest = {
-      val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(): StrategyOptionWithRequest = {
+      val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     

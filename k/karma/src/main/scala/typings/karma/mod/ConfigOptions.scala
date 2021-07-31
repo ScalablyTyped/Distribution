@@ -5,17 +5,15 @@ import typings.log4js.mod.Appender
 import typings.node.httpsMod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigOptions extends StObject {
   
   /**
     * @description Enable or disable watching files and executing the tests whenever one of these files changes.
     * @default true
     */
-  var autoWatch: js.UndefOr[Boolean] = js.native
+  var autoWatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description When Karma is watching the files for changes, it tries to batch multiple changes into a single run
@@ -24,7 +22,7 @@ trait ConfigOptions extends StObject {
     * before starting the test process again.
     * @default 250
     */
-  var autoWatchBatchDelay: js.UndefOr[Double] = js.native
+  var autoWatchBatchDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * @default ''
@@ -32,18 +30,18 @@ trait ConfigOptions extends StObject {
     * If the basePath configuration is a relative path then it will be resolved to
     * the <code>__dirname</code> of the configuration file.
     */
-  var basePath: js.UndefOr[String] = js.native
+  var basePath: js.UndefOr[String] = js.undefined
   
   /**
     * This is the same as middleware except that these middleware will be run before karma's own middleware.
     * @default []
     */
-  var beforeMiddleware: js.UndefOr[js.Array[String]] = js.native
+  var beforeMiddleware: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Configure how the browser console is logged with the following properties, all of which are optional
     */
-  var browserConsoleLogOptions: js.UndefOr[BrowserConsoleLogOptions] = js.native
+  var browserConsoleLogOptions: js.UndefOr[BrowserConsoleLogOptions] = js.undefined
   
   /**
     * @default 2000
@@ -55,7 +53,7 @@ trait ConfigOptions extends StObject {
     * If the browser reconnects during that time, everything is fine.
     * </p>
     */
-  var browserDisconnectTimeout: js.UndefOr[Double] = js.native
+  var browserDisconnectTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * @default 0
@@ -67,7 +65,7 @@ trait ConfigOptions extends StObject {
     * the Karma server and the browsers.
     * </p>
     */
-  var browserDisconnectTolerance: js.UndefOr[Double] = js.native
+  var browserDisconnectTolerance: js.UndefOr[Double] = js.undefined
   
   /**
     * @default 10000
@@ -77,13 +75,13 @@ trait ConfigOptions extends StObject {
     * <code>browserNoActivityTimeout</code> (ms), it will disconnect from the browser
     * </p>
     */
-  var browserNoActivityTimeout: js.UndefOr[Double] = js.native
+  var browserNoActivityTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Timeout for the client socket connection (in ms)
     * @default 20000
     */
-  var browserSocketTimeout: js.UndefOr[Double] = js.native
+  var browserSocketTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * @default []
@@ -109,7 +107,7 @@ trait ConfigOptions extends StObject {
     * You can capture any browser manually by opening the browser and visiting the URL where
     * the Karma web server is listening (by default it is <code>http://localhost:9876/</code>).
     */
-  var browsers: js.UndefOr[js.Array[AutomatedBrowsers | String]] = js.native
+  var browsers: js.UndefOr[js.Array[AutomatedBrowsers | String]] = js.undefined
   
   /**
     * @default 60000
@@ -120,15 +118,15 @@ trait ConfigOptions extends StObject {
     * will kill it and try to launch it again and, after three attempts to capture it, Karma will give up.
     * </p>
     */
-  var captureTimeout: js.UndefOr[Double] = js.native
+  var captureTimeout: js.UndefOr[Double] = js.undefined
   
-  var client: js.UndefOr[ClientOptions] = js.native
+  var client: js.UndefOr[ClientOptions] = js.undefined
   
   /**
     * @default true
     * @description Enable or disable colors in the output (reporters and logs).
     */
-  var colors: js.UndefOr[Boolean] = js.native
+  var colors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default 'Infinity'
@@ -137,111 +135,111 @@ trait ConfigOptions extends StObject {
     * amount of browsers at once, and only start more when those have finished. Using this configuration,
     * you can specify how many browsers should be running at once at any given point in time.
     */
-  var concurrency: js.UndefOr[Double] = js.native
+  var concurrency: js.UndefOr[Double] = js.undefined
   
   /**
     * When true, this will append the crossorigin attribute to generated script tags,
     * which enables better error reporting for JavaScript files served from a different origin
     * @default true
     */
-  var crossOriginAttribute: js.UndefOr[Boolean] = js.native
+  var crossOriginAttribute: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If null (default), uses karma's own client_with_context.html file (which is used when client.runInParent set to true).
     * @default undefined
     */
-  var customClientContextFile: js.UndefOr[String] = js.native
+  var customClientContextFile: js.UndefOr[String] = js.undefined
   
   /**
     * If null (default), uses karma's own context.html file.
     * @default undefined
     */
-  var customContextFile: js.UndefOr[String] = js.native
+  var customContextFile: js.UndefOr[String] = js.undefined
   
   /**
     * If null (default), uses karma's own debug.html file.
     * @default undefined
     */
-  var customDebugFile: js.UndefOr[String] = js.native
+  var customDebugFile: js.UndefOr[String] = js.undefined
   
   /**
     * Custom HTTP headers that will be set upon serving files by Karma's web server.
     * Custom headers are useful, especially with upcoming browser features like Service Workers.
     * @default undefined
     */
-  var customHeaders: js.UndefOr[js.Array[CustomHeaders]] = js.native
+  var customHeaders: js.UndefOr[js.Array[CustomHeaders]] = js.undefined
   
-  var customLaunchers: js.UndefOr[StringDictionary[CustomLauncher]] = js.native
+  var customLaunchers: js.UndefOr[StringDictionary[CustomLauncher]] = js.undefined
   
   /**
     * When true, this will start the karma server in another process, writing no output to the console.
     * The server can be stopped using the karma stop command.
     * @default false
     */
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default []
     * @description List of files/patterns to exclude from loaded files.
     */
-  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Enable or disable failure on running empty test-suites.
     * If disabled the program will return exit-code 0 and display a warning.
     * @default true
     */
-  var failOnEmptyTestSuite: js.UndefOr[Boolean] = js.native
+  var failOnEmptyTestSuite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable failure on failing tests.
     * @default true
     */
-  var failOnFailingTestSuite: js.UndefOr[Boolean] = js.native
+  var failOnFailingTestSuite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable failure on tests deliberately disabled, eg fit() or xit() tests in jasmine.
     * Use this to prevent accidental disabling tests needed to validate production.
     * @default true
     */
-  var failOnSkippedTests: js.UndefOr[Boolean] = js.native
+  var failOnSkippedTests: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default []
     * @description List of files/patterns to load in the browser.
     */
-  var files: js.UndefOr[js.Array[FilePattern | String]] = js.native
+  var files: js.UndefOr[js.Array[FilePattern | String]] = js.undefined
   
   /**
     * Force socket.io to use JSONP polling instead of XHR polling
     * @default false
     */
-  var forceJSONP: js.UndefOr[Boolean] = js.native
+  var forceJSONP: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A new error message line
     * @default undefined
     */
-  var formatError: js.UndefOr[js.Function1[/* msg */ String, String]] = js.native
+  var formatError: js.UndefOr[js.Function1[/* msg */ String, String]] = js.undefined
   
   /**
     * @default []
     * @description List of test frameworks you want to use. Typically, you will set this to ['jasmine'], ['mocha'] or ['qunit']...
     * Please note just about all frameworks in Karma require an additional plugin/framework library to be installed (via NPM).
     */
-  var frameworks: js.UndefOr[js.Array[String]] = js.native
+  var frameworks: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @default 'localhost'
     * @description Hostname to be used when capturing browsers.
     */
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /**
     * Module used for Karma webserver
     * @default undefined
     */
-  var httpModule: js.UndefOr[String] = js.native
+  var httpModule: js.UndefOr[String] = js.undefined
   
   /**
     * @default {}
@@ -249,13 +247,13 @@ trait ConfigOptions extends StObject {
     * Object description can be found in the
     * [NodeJS.org API docs](https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener)
     */
-  var httpsServerOptions: js.UndefOr[ServerOptions] = js.native
+  var httpsServerOptions: js.UndefOr[ServerOptions] = js.undefined
   
   /**
     * Address that the server will listen on. Change to 'localhost' to only listen to the loopback, or '::' to listen on all IPv6 interfaces
     * @default '0.0.0.0' or `LISTEN_ADDR`
     */
-  var listenAddress: js.UndefOr[String] = js.native
+  var listenAddress: js.UndefOr[String] = js.undefined
   
   /**
     * @default config.LOG_INFO
@@ -269,13 +267,13 @@ trait ConfigOptions extends StObject {
     * </ul>
     * @description Level of logging.
     */
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
   /**
     * @default [{type: 'console'}]
     * @description A list of log appenders to be used. See the documentation for [log4js] for more information.
     */
-  var loggers: js.UndefOr[StringDictionary[Appender] | js.Array[Appender]] = js.native
+  var loggers: js.UndefOr[StringDictionary[Appender] | js.Array[Appender]] = js.undefined
   
   /**
     * @default []
@@ -288,21 +286,21 @@ trait ConfigOptions extends StObject {
     * (details about this can be found in the
     * [Express](http://expressjs.com/guide/using-middleware.html) docs).
     */
-  var middleware: js.UndefOr[js.Array[String]] = js.native
+  var middleware: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @default {}
     * @description Redefine default mapping from file extensions to MIME-type.
     * Set property name to required MIME, provide Array of extensions (without dots) as it's value.
     */
-  var mime: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+  var mime: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
   /**
     * Socket.io pingTimeout in ms, https://socket.io/docs/server-api/#new-Server-httpServer-options.
     * Very slow networks may need values up to 60000. Larger values delay discovery of deadlock in tests or browser crashes.
     * @default 5000
     */
-  var pingTimeout: js.UndefOr[Double] = js.native
+  var pingTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * @default ['karma-*']
@@ -311,13 +309,13 @@ trait ConfigOptions extends StObject {
     * By default, Karma loads all sibling NPM modules which have a name starting with karma-*.
     * Note: Just about all plugins in Karma require an additional library to be installed (via NPM).
     */
-  var plugins: js.UndefOr[js.Array[PluginName | InlinePluginDef]] = js.native
+  var plugins: js.UndefOr[js.Array[PluginName | InlinePluginDef]] = js.undefined
   
   /**
     * @default 9876
     * @description The port where the web server will be listening.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * @default {'**\/ *.coffee': 'coffee'}
@@ -335,13 +333,13 @@ trait ConfigOptions extends StObject {
     * but your interactive debugging does not.
     *
     */
-  var preprocessors: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+  var preprocessors: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
   
   /**
     * How long will Karma wait for browser process to terminate before sending a SIGKILL signal
     * @default 2000
     */
-  var processKillTimeout: js.UndefOr[Double] = js.native
+  var processKillTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * @default 'http:'
@@ -354,14 +352,14 @@ trait ConfigOptions extends StObject {
     * Determines the use of the Node http or https class.
     * Note: Using <code>'https:'</code> requires you to specify <code>httpsServerOptions</code>.
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * @default {}
     * @description A map of path-proxy pairs
     * The proxy can be specified directly by the target url or path, or with an object to configure more options
     */
-  var proxies: js.UndefOr[PathProxyPairs] = js.native
+  var proxies: js.UndefOr[PathProxyPairs] = js.undefined
   
   /**
     * Called when requesting Proxy
@@ -369,26 +367,26 @@ trait ConfigOptions extends StObject {
     */
   var proxyReq: js.UndefOr[
     js.Function4[/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Called when respnsing Proxy
     * @default undefined
     */
-  var proxyRes: js.UndefOr[js.Function3[/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any, Unit]] = js.native
+  var proxyRes: js.UndefOr[js.Function3[/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any, Unit]] = js.undefined
   
   /**
     * @default true
     * @description Whether or not Karma or any browsers should raise an error when an inavlid SSL certificate is found.
     */
-  var proxyValidateSSL: js.UndefOr[Boolean] = js.native
+  var proxyValidateSSL: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default 0
     * @description Karma will report all the tests that are slower than given time limit (in ms).
     * This is disabled by default (since the default value is 0).
     */
-  var reportSlowerThan: js.UndefOr[Double] = js.native
+  var reportSlowerThan: js.UndefOr[Double] = js.undefined
   
   /**
     * @default ['progress']
@@ -401,20 +399,20 @@ trait ConfigOptions extends StObject {
     * Additional reporters, such as growl, junit, teamcity or coverage can be loaded through plugins.
     * Note: Just about all additional reporters in Karma (other than progress) require an additional library to be installed (via NPM).
     */
-  var reporters: js.UndefOr[js.Array[String]] = js.native
+  var reporters: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When Karma is watching the files for changes, it will delay a new run
     * until the current run is finished. Enabling this setting
     * will cancel the current run and start a new run immediately when a change is detected.
     */
-  var restartOnFileChange: js.UndefOr[Boolean] = js.native
+  var restartOnFileChange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When a browser crashes, karma will try to relaunch. This defines how many times karma should relaunch a browser before giving up.
     * @default 2
     */
-  var retryLimit: js.UndefOr[Double] = js.native
+  var retryLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * @default false
@@ -422,7 +420,7 @@ trait ConfigOptions extends StObject {
     * If true, Karma will start and capture all configured browsers, run tests and then exit with an exit code of 0 or 1 depending
     * on whether all tests passed or any tests failed.
     */
-  var singleRun: js.UndefOr[Boolean] = js.native
+  var singleRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default ['polling', 'websocket']
@@ -430,12 +428,12 @@ trait ConfigOptions extends StObject {
     * is handed off to [socket.io](http://socket.io/) (which manages the communication
     * between browsers and the testing server).
     */
-  var transports: js.UndefOr[js.Array[String]] = js.native
+  var transports: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * For use when the Karma server needs to be run behind a proxy that changes the base url, etc
     */
-  var upstreamProxy: js.UndefOr[UpstreamProxy] = js.native
+  var upstreamProxy: js.UndefOr[UpstreamProxy] = js.undefined
   
   /**
     * @default '/'
@@ -443,7 +441,7 @@ trait ConfigOptions extends StObject {
     * All of Karma's urls get prefixed with the urlRoot. This is helpful when using proxies, as
     * sometimes you might want to proxy a url that is already taken by Karma.
     */
-  var urlRoot: js.UndefOr[String] = js.native
+  var urlRoot: js.UndefOr[String] = js.undefined
 }
 object ConfigOptions {
   

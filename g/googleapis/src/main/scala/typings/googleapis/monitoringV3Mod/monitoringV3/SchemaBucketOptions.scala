@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,23 +20,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * bound of the overflow bucket is +infinity. The finite buckets are so-called
   * because both bounds are finite.
   */
-@js.native
 trait SchemaBucketOptions extends StObject {
   
   /**
     * The explicit buckets.
     */
-  var explicitBuckets: js.UndefOr[SchemaExplicit] = js.native
+  var explicitBuckets: js.UndefOr[SchemaExplicit] = js.undefined
   
   /**
     * The exponential buckets.
     */
-  var exponentialBuckets: js.UndefOr[SchemaExponential] = js.native
+  var exponentialBuckets: js.UndefOr[SchemaExponential] = js.undefined
   
   /**
     * The linear bucket.
     */
-  var linearBuckets: js.UndefOr[SchemaLinear] = js.native
+  var linearBuckets: js.UndefOr[SchemaLinear] = js.undefined
 }
 object SchemaBucketOptions {
   

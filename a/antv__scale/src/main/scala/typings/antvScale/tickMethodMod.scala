@@ -3,16 +3,17 @@ package typings.antvScale
 import typings.antvScale.typesMod.TickMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tickMethodMod {
   
-  @JSImport("@antv/scale/lib/tick-method", "getTickMethod")
+  @JSImport("@antv/scale/lib/tick-method", JSImport.Namespace)
   @js.native
-  def getTickMethod(key: String): TickMethod = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@antv/scale/lib/tick-method", "registerTickMethod")
-  @js.native
-  def registerTickMethod(key: String, method: TickMethod): Unit = js.native
+  @scala.inline
+  def getTickMethod(key: String): TickMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickMethod")(key.asInstanceOf[js.Any]).asInstanceOf[TickMethod]
+  
+  @scala.inline
+  def registerTickMethod(key: String, method: TickMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTickMethod")(key.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

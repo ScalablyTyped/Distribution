@@ -2,18 +2,16 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the WebAPI CreateRecord request response
   */
-@js.native
 trait CreateResponse extends StObject {
   
-  var entityType: String = js.native
+  var entityType: String
   
-  var id: String = js.native
+  var id: String
 }
 object CreateResponse {
   

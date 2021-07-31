@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket extends StObject {
   
   /** Number of records within these probability bounds. */
-  var bucketSize: js.UndefOr[String] = js.native
+  var bucketSize: js.UndefOr[String] = js.undefined
   
   /** Total number of distinct quasi-identifier tuple values in this bucket. */
-  var bucketValueCount: js.UndefOr[String] = js.native
+  var bucketValueCount: js.UndefOr[String] = js.undefined
   
   /** Sample of quasi-identifier tuple values in this bucket. The total number of classes returned per bucket is capped at 20. */
-  var bucketValues: js.UndefOr[js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]] = js.native
+  var bucketValues: js.UndefOr[js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]] = js.undefined
   
   /** Always greater than or equal to min_probability. */
-  var maxProbability: js.UndefOr[Double] = js.native
+  var maxProbability: js.UndefOr[Double] = js.undefined
   
   /** Between 0 and 1. */
-  var minProbability: js.UndefOr[Double] = js.native
+  var minProbability: js.UndefOr[Double] = js.undefined
 }
 object GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket {
   

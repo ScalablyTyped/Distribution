@@ -2,27 +2,25 @@ package typings.actionsOnGoogle.v1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1WebhookRequest extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var originalRequest: js.UndefOr[DialogflowV1OriginalRequest] = js.native
+  var originalRequest: js.UndefOr[DialogflowV1OriginalRequest] = js.undefined
   
-  var result: js.UndefOr[DialogflowV1Result] = js.native
+  var result: js.UndefOr[DialogflowV1Result] = js.undefined
   
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[DialogflowV1Status] = js.native
+  var status: js.UndefOr[DialogflowV1Status] = js.undefined
   
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1WebhookRequest {
   

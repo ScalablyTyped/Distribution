@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Local represents directly-attached storage with node affinity (Beta feature)
   */
-@js.native
 trait LocalVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. It applies only when the Path is a block device. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default value is to auto-select a fileystem if unspecified.
     */
-  var fsType: js.UndefOr[Input[String]] = js.native
+  var fsType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The full path to the volume on the node. It can be either a directory or block device (disk, partition, ...).
     */
-  var path: Input[String] = js.native
+  var path: Input[String]
 }
 object LocalVolumeSource {
   

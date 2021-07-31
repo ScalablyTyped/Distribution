@@ -3,25 +3,23 @@ package typings.cordovaUniversalLinksPlugin
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object universalLinks {
   
-  @js.native
   trait EventData extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var host: String = js.native
+    var host: String
     
-    var params: StringDictionary[String] = js.native
+    var params: StringDictionary[String]
     
-    var path: String = js.native
+    var path: String
     
-    var scheme: String = js.native
+    var scheme: String
     
-    var url: String = js.native
+    var url: String
   }
   object EventData {
     

@@ -2,61 +2,59 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Network extends StObject {
   
   /**
     * The date and time that the network was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Attributes of the blockchain framework for the network.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The blockchain framework that the network uses.
     */
-  var Framework: js.UndefOr[typings.awsSdk.managedblockchainMod.Framework] = js.native
+  var Framework: js.UndefOr[typings.awsSdk.managedblockchainMod.Framework] = js.undefined
   
   /**
     * Attributes of the blockchain framework that the network uses.
     */
-  var FrameworkAttributes: js.UndefOr[NetworkFrameworkAttributes] = js.native
+  var FrameworkAttributes: js.UndefOr[NetworkFrameworkAttributes] = js.undefined
   
   /**
     * The version of the blockchain framework that the network uses.
     */
-  var FrameworkVersion: js.UndefOr[FrameworkVersionString] = js.native
+  var FrameworkVersion: js.UndefOr[FrameworkVersionString] = js.undefined
   
   /**
     * The unique identifier of the network.
     */
-  var Id: js.UndefOr[ResourceIdString] = js.native
+  var Id: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The name of the network.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
   
   /**
     * The current status of the network.
     */
-  var Status: js.UndefOr[NetworkStatus] = js.native
+  var Status: js.UndefOr[NetworkStatus] = js.undefined
   
   /**
     * The voting rules for the network to decide if a proposal is accepted.
     */
-  var VotingPolicy: js.UndefOr[typings.awsSdk.managedblockchainMod.VotingPolicy] = js.native
+  var VotingPolicy: js.UndefOr[typings.awsSdk.managedblockchainMod.VotingPolicy] = js.undefined
   
   /**
     * The VPC endpoint service name of the VPC endpoint service of the network. Members use the VPC endpoint service name to create a VPC endpoint to access network resources.
     */
-  var VpcEndpointServiceName: js.UndefOr[String] = js.native
+  var VpcEndpointServiceName: js.UndefOr[String] = js.undefined
 }
 object Network {
   

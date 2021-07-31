@@ -2,13 +2,11 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataClosing extends StObject {
   
-  var data: Closing = js.native
+  var data: Closing
 }
 object DataClosing {
   

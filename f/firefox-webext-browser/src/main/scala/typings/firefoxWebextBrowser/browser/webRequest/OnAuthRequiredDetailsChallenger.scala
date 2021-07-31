@@ -2,16 +2,14 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The server requesting authentication. */
-@js.native
 trait OnAuthRequiredDetailsChallenger extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var port: Double = js.native
+  var port: Double
 }
 object OnAuthRequiredDetailsChallenger {
   

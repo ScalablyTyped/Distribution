@@ -10,9 +10,9 @@ Play audio buffer in node or browser
 | ------------------ | :-------------: |
 | Full name          | audio-play |
 | Keywords           | player, audio, audiojs, web-audio-api, sound |
-| # releases         | 1 |
-| # dependents       | 5 |
-| # downloads        | 26185 |
+| # releases         | 0 |
+| # dependents       | 4 |
+| # downloads        | 22340 |
 | # stars            | 2 |
 
 ## Links

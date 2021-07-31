@@ -4,27 +4,25 @@ import typings.gapiCalendar.gapi.client.calendar.GadgetDisplayMode
 import typings.gapiCalendar.gapi.client.calendar.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Display extends StObject {
   
-  var display: js.UndefOr[GadgetDisplayMode] = js.native
+  var display: js.UndefOr[GadgetDisplayMode] = js.undefined
   
-  var height: integer = js.native
+  var height: integer
   
-  var iconLink: String = js.native
+  var iconLink: String
   
-  var link: String = js.native
+  var link: String
   
-  def preferences(key: String): String = js.native
+  def preferences(key: String): String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var width: integer = js.native
+  var width: integer
 }
 object Display {
   

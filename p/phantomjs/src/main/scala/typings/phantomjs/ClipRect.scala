@@ -2,12 +2,11 @@ package typings.phantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipRect
-  extends TopLeft
+  extends StObject
+     with TopLeft
      with Size
 object ClipRect {
   

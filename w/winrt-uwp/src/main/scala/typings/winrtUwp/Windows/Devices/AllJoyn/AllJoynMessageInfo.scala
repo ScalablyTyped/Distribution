@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes information about the sender of a message being processed. */
-@js.native
 trait AllJoynMessageInfo extends StObject {
   
   /** The unique bus name of the message sender. */
-  var senderUniqueName: String = js.native
+  var senderUniqueName: String
 }
 object AllJoynMessageInfo {
   

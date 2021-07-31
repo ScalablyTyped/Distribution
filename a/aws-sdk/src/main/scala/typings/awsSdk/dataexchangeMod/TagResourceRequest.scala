@@ -2,21 +2,19 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies an AWS resource.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * A label that consists of a customer-defined key and an optional value.
     */
-  var Tags: MapOfString = js.native
+  var Tags: MapOfString
 }
 object TagResourceRequest {
   

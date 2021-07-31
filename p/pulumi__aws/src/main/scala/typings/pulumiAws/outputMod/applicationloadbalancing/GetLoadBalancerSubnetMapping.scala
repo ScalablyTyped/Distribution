@@ -2,19 +2,17 @@ package typings.pulumiAws.outputMod.applicationloadbalancing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLoadBalancerSubnetMapping extends StObject {
   
-  var allocationId: String = js.native
+  var allocationId: String
   
-  var outpostId: String = js.native
+  var outpostId: String
   
-  var privateIpv4Address: String = js.native
+  var privateIpv4Address: String
   
-  var subnetId: String = js.native
+  var subnetId: String
 }
 object GetLoadBalancerSubnetMapping {
   

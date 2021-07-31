@@ -2,20 +2,18 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 1. General
-@js.native
 trait TimeData extends StObject {
   
-  var current: String = js.native
+  var current: String
   
-  var timezone: String = js.native
+  var timezone: String
   
-  var timezoneName: String = js.native
+  var timezoneName: String
   
-  var uptime: String = js.native
+  var uptime: String
 }
 object TimeData {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFunctionDefinitionRequest extends StObject {
   
   /**
     * The ID of the Lambda function definition.
     */
-  var FunctionDefinitionId: string = js.native
+  var FunctionDefinitionId: string
   
   /**
     * The name of the definition.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
 }
 object UpdateFunctionDefinitionRequest {
   

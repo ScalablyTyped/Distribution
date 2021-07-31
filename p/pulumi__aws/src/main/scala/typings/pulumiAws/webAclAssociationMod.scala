@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webAclAssociationMod {
@@ -38,6 +37,10 @@ object webAclAssociationMod {
   /* static members */
   object WebAclAssociation {
     
+    @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WebAclAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object webAclAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): WebAclAssociation = js.native
-    @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WebAclAssociation = js.native
-    @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclAssociationState): WebAclAssociation = js.native
-    @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclAssociationState, opts: CustomResourceOptions): WebAclAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclAssociationState): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclAssociationState, opts: CustomResourceOptions): WebAclAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclAssociation]
     
     /**
       * Returns true if the given object is an instance of WebAclAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/webAclAssociation.WebAclAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/webAclAssociation.WebAclAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/webAclAssociation.WebAclAssociation */ Boolean]
   }
   
-  @js.native
   trait WebAclAssociationArgs extends StObject {
     
     /**
       * ARN of the resource to associate with. For example, an Application Load Balancer or API Gateway Stage.
       */
-    val resourceArn: Input[String] = js.native
+    val resourceArn: Input[String]
     
     /**
       * The ID of the WAF Regional WebACL to create an association.
       */
-    val webAclId: Input[String] = js.native
+    val webAclId: Input[String]
   }
   object WebAclAssociationArgs {
     
@@ -101,18 +98,17 @@ object webAclAssociationMod {
     }
   }
   
-  @js.native
   trait WebAclAssociationState extends StObject {
     
     /**
       * ARN of the resource to associate with. For example, an Application Load Balancer or API Gateway Stage.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the WAF Regional WebACL to create an association.
       */
-    val webAclId: js.UndefOr[Input[String]] = js.native
+    val webAclId: js.UndefOr[Input[String]] = js.undefined
   }
   object WebAclAssociationState {
     

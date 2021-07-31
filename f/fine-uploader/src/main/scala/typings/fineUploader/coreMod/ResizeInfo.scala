@@ -6,41 +6,39 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizeInfo extends StObject {
   
   /**
     * The original `File` or `Blob` object, if available.
     */
-  var blob: js.UndefOr[File | Blob] = js.native
+  var blob: js.UndefOr[File | Blob] = js.undefined
   
   /**
     * Desired height of the image after the resize operation.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The original HTMLImageElement object, if available.
     */
-  var image: js.UndefOr[HTMLImageElement] = js.native
+  var image: js.UndefOr[HTMLImageElement] = js.undefined
   
   /**
     * `HTMLCanvasElement` element containing the original image data (not resized).
     */
-  var sourceCanvas: js.UndefOr[HTMLCanvasElement] = js.native
+  var sourceCanvas: js.UndefOr[HTMLCanvasElement] = js.undefined
   
   /**
     * `HTMLCanvasElement` element containing the `HTMLCanvasElement` that should contain the resized image.
     */
-  var targetCanvas: js.UndefOr[HTMLCanvasElement] = js.native
+  var targetCanvas: js.UndefOr[HTMLCanvasElement] = js.undefined
   
   /**
     * Desired width of the image after the resize operation.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ResizeInfo {
   

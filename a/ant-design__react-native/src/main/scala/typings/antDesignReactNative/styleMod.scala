@@ -5,31 +5,32 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleMod {
   
-  @JSImport("@ant-design/react-native/lib/accordion/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/accordion/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): AccordionStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): AccordionStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[AccordionStyle]
+  
   trait AccordionStyle extends StObject {
     
-    var arrow: TextStyle = js.native
+    var arrow: TextStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var content: ViewStyle = js.native
+    var content: ViewStyle
     
-    var contentText: TextStyle = js.native
+    var contentText: TextStyle
     
-    var header: ViewStyle = js.native
+    var header: ViewStyle
     
-    var headerText: TextStyle = js.native
+    var headerText: TextStyle
     
-    var headerWrap: ViewStyle = js.native
+    var headerWrap: ViewStyle
   }
   object AccordionStyle {
     

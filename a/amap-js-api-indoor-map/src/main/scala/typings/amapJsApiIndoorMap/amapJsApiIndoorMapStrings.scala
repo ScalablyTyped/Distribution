@@ -3,7 +3,6 @@ package typings.amapJsApiIndoorMap
 import typings.amapJsApiIndoorMap.AMap.IndoorMap.ShopCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiIndoorMapStrings {
@@ -19,7 +18,9 @@ object amapJsApiIndoorMapStrings {
   def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait connection extends ShopCategory
+  sealed trait connection
+    extends StObject
+       with ShopCategory
   @scala.inline
   def connection: connection = "connection".asInstanceOf[connection]
   
@@ -39,12 +40,16 @@ object amapJsApiIndoorMapStrings {
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   
   @js.native
-  sealed trait public extends ShopCategory
+  sealed trait public
+    extends StObject
+       with ShopCategory
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   
   @js.native
-  sealed trait shop extends ShopCategory
+  sealed trait shop
+    extends StObject
+       with ShopCategory
   @scala.inline
   def shop: shop = "shop".asInstanceOf[shop]
 }

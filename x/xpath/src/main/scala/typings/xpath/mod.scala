@@ -8,7 +8,6 @@ import typings.std.XPathResult
 import typings.xpath.xpathBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,33 +16,29 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("xpath", "evaluate")
-  @js.native
+  @scala.inline
   def evaluate(
     expression: String,
     contextNode: Node,
     resolver: XPathNSResolver,
     `type`: Double,
     result: XPathResult
-  ): XPathResult = js.native
+  ): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
   
   @JSImport("xpath", "select")
   @js.native
   def select: XPathSelect = js.native
   
-  @JSImport("xpath", "select1")
-  @js.native
-  def select1(expression: String): SelectedValue = js.native
-  @JSImport("xpath", "select1")
-  @js.native
-  def select1(expression: String, node: Node): SelectedValue = js.native
+  @scala.inline
+  def select1(expression: String): SelectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any]).asInstanceOf[SelectedValue]
+  @scala.inline
+  def select1(expression: String, node: Node): SelectedValue = (^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[SelectedValue]
   
   @scala.inline
   def select_=(x: XPathSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
   
-  @JSImport("xpath", "useNamespaces")
-  @js.native
-  def useNamespaces(namespaceMap: StringDictionary[String]): XPathSelect = js.native
+  @scala.inline
+  def useNamespaces(namespaceMap: StringDictionary[String]): XPathSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("useNamespaces")(namespaceMap.asInstanceOf[js.Any]).asInstanceOf[XPathSelect]
   
   type SelectedValue = Node | Attr | String | Double | Boolean
   

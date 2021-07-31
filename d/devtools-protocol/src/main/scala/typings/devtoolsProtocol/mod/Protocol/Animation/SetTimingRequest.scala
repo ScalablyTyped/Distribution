@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetTimingRequest extends StObject {
   
   /**
     * Animation id.
     */
-  var animationId: String = js.native
+  var animationId: String
   
   /**
     * Delay of the animation.
     */
-  var delay: Double = js.native
+  var delay: Double
   
   /**
     * Duration of the animation.
     */
-  var duration: Double = js.native
+  var duration: Double
 }
 object SetTimingRequest {
   

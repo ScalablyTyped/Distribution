@@ -2,28 +2,26 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for the `SpeechToTextV1` constructor. */
-@js.native
 trait Options extends StObject {
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var iam_access_token: js.UndefOr[String] = js.native
+  var iam_access_token: js.UndefOr[String] = js.undefined
   
-  var iam_apikey: js.UndefOr[String] = js.native
+  var iam_apikey: js.UndefOr[String] = js.undefined
   
-  var iam_url: js.UndefOr[String] = js.native
+  var iam_url: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var use_unauthenticated: js.UndefOr[Boolean] = js.native
+  var use_unauthenticated: js.UndefOr[Boolean] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object Options {
   

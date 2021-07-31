@@ -2,7 +2,6 @@ package typings.rxjsCompat.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -10,7 +9,7 @@ trait FnCallThisV2V3V4V5V6Project extends StObject {
   
   def apply[T, R](
     array: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
     ]
   ): js.Any = js.native
   def apply[T, R](
@@ -22,7 +21,7 @@ trait FnCallThisV2V3V4V5V6Project extends StObject {
   ): js.Any = js.native
   def apply[T, TOther, R](
     array: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<TOther> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<TOther> */ js.Any
     ],
     project: js.Function2[/* v1 */ T, /* repeated */ TOther, R]
   ): js.Any = js.native

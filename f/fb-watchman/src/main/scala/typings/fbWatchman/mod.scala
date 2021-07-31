@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,17 +26,16 @@ object mod {
     def sendNextCommand(): Unit = js.native
   }
   
-  @js.native
   trait Capabilities extends StObject {
     
-    var optional: js.Array[_] = js.native
+    var optional: js.Array[js.Any]
     
-    var required: js.Array[_] = js.native
+    var required: js.Array[js.Any]
   }
   object Capabilities {
     
     @scala.inline
-    def apply(optional: js.Array[_], required: js.Array[_]): Capabilities = {
+    def apply(optional: js.Array[js.Any], required: js.Array[js.Any]): Capabilities = {
       val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
       __obj.asInstanceOf[Capabilities]
     }
@@ -46,20 +44,19 @@ object mod {
     implicit class CapabilitiesMutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOptional(value: js.Array[_]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      def setOptional(value: js.Array[js.Any]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptionalVarargs(value: js.Any*): Self = StObject.set(x, "optional", js.Array(value :_*))
       
       @scala.inline
-      def setRequired(value: js.Array[_]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      def setRequired(value: js.Array[js.Any]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRequiredVarargs(value: js.Any*): Self = StObject.set(x, "required", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
     /**
@@ -67,7 +64,7 @@ object mod {
       * If not provided, the Client locates the binary using the PATH specified
       * by the node child_process's default env.
       */
-    var watchmanBinaryPath: js.UndefOr[String] = js.native
+    var watchmanBinaryPath: js.UndefOr[String] = js.undefined
   }
   object ClientOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRandomPasswordResponse extends StObject {
   
   /**
     * A string with the generated password.
     */
-  var RandomPassword: js.UndefOr[RandomPasswordType] = js.native
+  var RandomPassword: js.UndefOr[RandomPasswordType] = js.undefined
 }
 object GetRandomPasswordResponse {
   

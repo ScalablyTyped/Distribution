@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scoping extends StObject {
   
   /**
     * The property- or tag-based conditions that determine which objects to exclude from the analysis.
     */
-  var excludes: js.UndefOr[JobScopingBlock] = js.native
+  var excludes: js.UndefOr[JobScopingBlock] = js.undefined
   
   /**
     * The property- or tag-based conditions that determine which objects to include in the analysis.
     */
-  var includes: js.UndefOr[JobScopingBlock] = js.native
+  var includes: js.UndefOr[JobScopingBlock] = js.undefined
 }
 object Scoping {
   

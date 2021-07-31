@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDecoderOptions extends StObject {
   
-  var fatal: js.UndefOr[scala.Boolean] = js.native
+  var fatal: js.UndefOr[scala.Boolean] = js.undefined
   
-  var ignoreBOM: js.UndefOr[scala.Boolean] = js.native
+  var ignoreBOM: js.UndefOr[scala.Boolean] = js.undefined
 }
 object TextDecoderOptions {
   

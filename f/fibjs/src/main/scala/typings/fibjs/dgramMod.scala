@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,20 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object dgramMod {
   
+  @JSImport("dgram", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("dgram", "Socket")
   @js.native
-  class Socket () extends ClassDgramSocket
+  class Socket ()
+    extends StObject
+       with ClassDgramSocket
   
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(opts: js.Object): ClassDgramSocket = js.native
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(opts: js.Object, callback: js.Function): ClassDgramSocket = js.native
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(`type`: String): ClassDgramSocket = js.native
-  @JSImport("dgram", "createSocket")
-  @js.native
-  def createSocket(`type`: String, callback: js.Function): ClassDgramSocket = js.native
+  @scala.inline
+  def createSocket(opts: js.Object): ClassDgramSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(opts.asInstanceOf[js.Any]).asInstanceOf[ClassDgramSocket]
+  @scala.inline
+  def createSocket(opts: js.Object, callback: js.Function): ClassDgramSocket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClassDgramSocket]
+  @scala.inline
+  def createSocket(`type`: String): ClassDgramSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any]).asInstanceOf[ClassDgramSocket]
+  @scala.inline
+  def createSocket(`type`: String, callback: js.Function): ClassDgramSocket = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClassDgramSocket]
 }

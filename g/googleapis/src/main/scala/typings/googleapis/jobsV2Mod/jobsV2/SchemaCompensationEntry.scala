@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,19 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * annualized range is determined as (amount or range) times
   * expected_units_per_year.
   */
-@js.native
 trait SchemaCompensationEntry extends StObject {
   
   /**
     * Optional.  Compensation amount.
     */
-  var amount: js.UndefOr[SchemaMoney] = js.native
+  var amount: js.UndefOr[SchemaMoney] = js.undefined
   
   /**
     * Optional.  Compensation description.  For example, could indicate equity
     * terms or provide additional context to an estimated bonus.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Expected number of units paid each year. If not specified,
@@ -33,23 +31,23 @@ trait SchemaCompensationEntry extends StObject {
     * on unit. Default values: - HOURLY: 2080 - DAILY: 260 - WEEKLY: 52 -
     * MONTHLY: 12 - ANNUAL: 1
     */
-  var expectedUnitsPerYear: js.UndefOr[Double] = js.native
+  var expectedUnitsPerYear: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  Compensation range.
     */
-  var range: js.UndefOr[SchemaCompensationRange] = js.native
+  var range: js.UndefOr[SchemaCompensationRange] = js.undefined
   
   /**
     * Required.  Compensation type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Frequency of the specified amount.  Default is
     * CompensationUnit.OTHER_COMPENSATION_UNIT.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object SchemaCompensationEntry {
   

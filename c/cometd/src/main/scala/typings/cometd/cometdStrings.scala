@@ -5,23 +5,28 @@ import typings.cometd.mod.ReconnectAdvice
 import typings.cometd.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cometdStrings {
   
   @js.native
-  sealed trait `callback-polling` extends ConnectionType
+  sealed trait `callback-polling`
+    extends StObject
+       with ConnectionType
   @scala.inline
   def `callback-polling`: `callback-polling` = "callback-polling".asInstanceOf[`callback-polling`]
   
   @js.native
-  sealed trait connected extends Status
+  sealed trait connected
+    extends StObject
+       with Status
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait connecting extends Status
+  sealed trait connecting
+    extends StObject
+       with Status
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   
@@ -31,12 +36,16 @@ object cometdStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait disconnected extends Status
+  sealed trait disconnected
+    extends StObject
+       with Status
   @scala.inline
   def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
-  sealed trait disconnecting extends Status
+  sealed trait disconnecting
+    extends StObject
+       with Status
   @scala.inline
   def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
   
@@ -46,22 +55,30 @@ object cometdStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait flash extends ConnectionType
+  sealed trait flash
+    extends StObject
+       with ConnectionType
   @scala.inline
   def flash: flash = "flash".asInstanceOf[flash]
   
   @js.native
-  sealed trait handshake extends ReconnectAdvice
+  sealed trait handshake
+    extends StObject
+       with ReconnectAdvice
   @scala.inline
   def handshake: handshake = "handshake".asInstanceOf[handshake]
   
   @js.native
-  sealed trait handshaking extends Status
+  sealed trait handshaking
+    extends StObject
+       with Status
   @scala.inline
   def handshaking: handshaking = "handshaking".asInstanceOf[handshaking]
   
   @js.native
-  sealed trait iframe extends ConnectionType
+  sealed trait iframe
+    extends StObject
+       with ConnectionType
   @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   
@@ -71,17 +88,23 @@ object cometdStrings {
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait `long-polling` extends ConnectionType
+  sealed trait `long-polling`
+    extends StObject
+       with ConnectionType
   @scala.inline
   def `long-polling`: `long-polling` = "long-polling".asInstanceOf[`long-polling`]
   
   @js.native
-  sealed trait none extends ReconnectAdvice
+  sealed trait none
+    extends StObject
+       with ReconnectAdvice
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait retry extends ReconnectAdvice
+  sealed trait retry
+    extends StObject
+       with ReconnectAdvice
   @scala.inline
   def retry: retry = "retry".asInstanceOf[retry]
   

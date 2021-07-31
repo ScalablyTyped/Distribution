@@ -2,46 +2,44 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectConnectGatewayAttachment extends StObject {
   
   /**
     * The state of the attachment. The following are the possible values:    attaching: The initial state after a virtual interface is created using the Direct Connect gateway.    attached: The Direct Connect gateway and virtual interface are attached and ready to pass traffic.    detaching: The initial state after calling DeleteVirtualInterface.    detached: The virtual interface is detached from the Direct Connect gateway. Traffic flow between the Direct Connect gateway and virtual interface is stopped.  
     */
-  var attachmentState: js.UndefOr[DirectConnectGatewayAttachmentState] = js.native
+  var attachmentState: js.UndefOr[DirectConnectGatewayAttachmentState] = js.undefined
   
   /**
     * The type of attachment.
     */
-  var attachmentType: js.UndefOr[DirectConnectGatewayAttachmentType] = js.native
+  var attachmentType: js.UndefOr[DirectConnectGatewayAttachmentType] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.native
+  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
     * The error message if the state of an object failed to advance.
     */
-  var stateChangeError: js.UndefOr[StateChangeError] = js.native
+  var stateChangeError: js.UndefOr[StateChangeError] = js.undefined
   
   /**
     * The ID of the virtual interface.
     */
-  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.native
+  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
   
   /**
     * The ID of the AWS account that owns the virtual interface.
     */
-  var virtualInterfaceOwnerAccount: js.UndefOr[OwnerAccount] = js.native
+  var virtualInterfaceOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The AWS Region where the virtual interface is located.
     */
-  var virtualInterfaceRegion: js.UndefOr[VirtualInterfaceRegion] = js.native
+  var virtualInterfaceRegion: js.UndefOr[VirtualInterfaceRegion] = js.undefined
 }
 object DirectConnectGatewayAttachment {
   

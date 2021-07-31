@@ -11,24 +11,22 @@ import typings.sipJs.subscriptionMod.Subscription
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userAgentDelegateMod {
   
-  @js.native
   trait UserAgentDelegate extends StObject {
     
     /**
       * Called upon transport transitioning to connected state.
       */
-    var onConnect: js.UndefOr[js.Function0[Unit]] = js.native
+    var onConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called upon transport transitioning from connected state.
       * @param error - An error if disconnect triggered by transport. Otherwise undefined.
       */
-    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.native
+    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
     
     /**
       * Called upon receipt of an invitation.
@@ -36,7 +34,7 @@ object userAgentDelegateMod {
       * Handler for incoming out of dialog INVITE requests.
       * @param invitation - The invitation.
       */
-    var onInvite: js.UndefOr[js.Function1[/* invitation */ Invitation, Unit]] = js.native
+    var onInvite: js.UndefOr[js.Function1[/* invitation */ Invitation, Unit]] = js.undefined
     
     /**
       * Called upon receipt of a message.
@@ -44,7 +42,7 @@ object userAgentDelegateMod {
       * Handler for incoming out of dialog MESSAGE requests.
       * @param message - The message.
       */
-    var onMessage: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.undefined
     
     /**
       * Called upon receipt of a notification.
@@ -52,7 +50,7 @@ object userAgentDelegateMod {
       * Handler for incoming out of dialog NOTIFY requests.
       * @param notification - The notification.
       */
-    var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.native
+    var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.undefined
     
     /**
       * @alpha
@@ -61,14 +59,14 @@ object userAgentDelegateMod {
       * Handler for incoming out of dialog REFER requests.
       * @param referral - The referral.
       */
-    var onRefer: js.UndefOr[js.Function1[/* referral */ Referral, Unit]] = js.native
+    var onRefer: js.UndefOr[js.Function1[/* referral */ Referral, Unit]] = js.undefined
     
     /**
       * @internal
       * Called upon receipt of an out of dialog REFER. Used by test suite.
       * @param request - The request.
       */
-    var onReferRequest: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.native
+    var onReferRequest: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.undefined
     
     /**
       * @alpha
@@ -77,14 +75,14 @@ object userAgentDelegateMod {
       * Handler for incoming out of dialog REGISTER requests.
       * @param registration - The registration.
       */
-    var onRegister: js.UndefOr[js.Function1[/* registration */ js.Any, Unit]] = js.native
+    var onRegister: js.UndefOr[js.Function1[/* registration */ js.Any, Unit]] = js.undefined
     
     /**
       * @internal
       * Called upon receipt of a REGISTER request. Used by test suite.
       * @param request - The request.
       */
-    var onRegisterRequest: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.native
+    var onRegisterRequest: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.undefined
     
     /**
       * @alpha
@@ -93,14 +91,14 @@ object userAgentDelegateMod {
       * Handler for incoming out of dialog SUBSCRIBE requests.
       * @param subscription - The subscription.
       */
-    var onSubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.native
+    var onSubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.undefined
     
     /**
       * @internal
       * Called upon receipt of an out of dialog SUBSCRIBE request. Used by test suite.
       * @param request - The request.
       */
-    var onSubscribeRequest: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.native
+    var onSubscribeRequest: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.undefined
   }
   object UserAgentDelegate {
     

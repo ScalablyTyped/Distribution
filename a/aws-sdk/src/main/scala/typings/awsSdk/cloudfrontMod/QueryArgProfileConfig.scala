@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryArgProfileConfig extends StObject {
   
   /**
     * Flag to set if you want a request to be forwarded to the origin even if the profile specified by the field-level encryption query argument, fle-profile, is unknown.
     */
-  var ForwardWhenQueryArgProfileIsUnknown: Boolean = js.native
+  var ForwardWhenQueryArgProfileIsUnknown: Boolean
   
   /**
     * Profiles specified for query argument-profile mapping for field-level encryption.
     */
-  var QueryArgProfiles: js.UndefOr[typings.awsSdk.cloudfrontMod.QueryArgProfiles] = js.native
+  var QueryArgProfiles: js.UndefOr[typings.awsSdk.cloudfrontMod.QueryArgProfiles] = js.undefined
 }
 object QueryArgProfileConfig {
   

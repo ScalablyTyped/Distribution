@@ -2,16 +2,14 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceReference extends StObject {
   
   /**
     * An alias to be used when referencing the resource.
     */
-  var alias: String = js.native
+  var alias: String
 }
 object ResourceReference {
   

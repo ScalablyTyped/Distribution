@@ -2,15 +2,13 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineOrientationOption extends StObject {
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
 }
 object TimelineOrientationOption {
   

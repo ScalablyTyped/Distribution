@@ -3,17 +3,15 @@ package typings.nextServer.anon
 import typings.nextServer.nextServerBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyParser extends StObject {
   
   /**
     * The byte limit of the body. This is the number of bytes or any string
     * format supported by `bytes`, for example `1000`, `'500kb'` or `'3mb'`.
     */
-  var bodyParser: js.UndefOr[SizeLimit | `false`] = js.native
+  var bodyParser: js.UndefOr[SizeLimit | `false`] = js.undefined
 }
 object BodyParser {
   

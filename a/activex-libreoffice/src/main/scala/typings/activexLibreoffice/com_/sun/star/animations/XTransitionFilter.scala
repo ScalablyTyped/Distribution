@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,22 +13,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the transition progress the specific amount of time.
   * @see http://www.w3.org/TR/smil20/smil-transitions.html#edef-transitionFilter
   */
-@js.native
-trait XTransitionFilter extends XAnimate {
+trait XTransitionFilter
+  extends StObject
+     with XAnimate {
   
   /**
     * This specifies the direction the transition will run. ;  The legal values are `TRUE` for forward and `FALSE` for reverse. The default value is `TRUE`
     * . Note that this does not impact the media being transitioned to, but only affects the geometry of the transition. Transitions which do not have a
     * reverse interpretation should ignore the direction attribute and assume the default value of `TRUE` .
     */
-  var Direction: Boolean = js.native
+  var Direction: Boolean
   
   /**
     * If the value of the {@link Type} attribute is {@link TransitionType.FADE} and the value of the {@link Subtype} attribute is {@link
     * TransitionSubType.FADETOCOLOR} or {@link TransitionSubType.FADEFROMCOLOR} , then this attribute specifies the starting or ending color of the fade.
     * The default value is 0 (black).
     */
-  var FadeColor: Double = js.native
+  var FadeColor: Double
   
   /**
     * Indicates whether the transitionFilter's parent element will transition in or out. Legal values are `TRUE` indicating that the parent media will
@@ -38,16 +38,16 @@ trait XTransitionFilter extends XAnimate {
     *
     * The default value is `TRUE` .
     */
-  var Mode: Boolean = js.native
+  var Mode: Boolean
   
   /**
     * This is the subtype of the transition. ;  This must be one of the transition subtypes appropriate for the specified {@link Type} as listed in {@link
     * TransitionSubType} . {@link TransitionSubType.DEFAULT} is the default.
     */
-  var Subtype: Double = js.native
+  var Subtype: Double
   
   /** This is the type or family of transition. ;  This attribute is required and must be one of the transition families listed in {@link TransitionType} . */
-  var Transition: Double = js.native
+  var Transition: Double
 }
 object XTransitionFilter {
   
@@ -87,7 +87,7 @@ object XTransitionFilter {
     Type: Double,
     UserData: SafeArray[NamedValue],
     ValueType: Double,
-    Values: SafeArray[_],
+    Values: SafeArray[js.Any],
     acquire: () => Unit,
     getParent: () => XInterface,
     queryInterface: `type` => js.Any,

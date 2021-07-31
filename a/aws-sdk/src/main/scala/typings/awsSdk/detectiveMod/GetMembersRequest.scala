@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMembersRequest extends StObject {
   
   /**
     * The list of AWS account identifiers for the member account for which to return member details. You cannot use GetMembers to retrieve information about member accounts that were removed from the behavior graph.
     */
-  var AccountIds: AccountIdList = js.native
+  var AccountIds: AccountIdList
   
   /**
     * The ARN of the behavior graph for which to request the member details.
     */
-  var GraphArn: typings.awsSdk.detectiveMod.GraphArn = js.native
+  var GraphArn: typings.awsSdk.detectiveMod.GraphArn
 }
 object GetMembersRequest {
   

@@ -2,10 +2,8 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLabelColor extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaLabelColor extends StObject {
     * #d5ae49, #0b804b, #2a9c68, #285bac, #653e9b, #b65775, #822111, #a46a21,
     * #aa8831, #076239, #1a764d, #1c4587, #41236d, #83334c
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * The text color of the label, represented as hex string. This field is
@@ -36,7 +34,7 @@ trait SchemaLabelColor extends StObject {
     * #0b804b, #2a9c68, #285bac, #653e9b, #b65775, #822111, #a46a21, #aa8831,
     * #076239, #1a764d, #1c4587, #41236d, #83334c
     */
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object SchemaLabelColor {
   

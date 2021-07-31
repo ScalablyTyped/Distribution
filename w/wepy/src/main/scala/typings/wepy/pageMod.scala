@@ -7,7 +7,6 @@ import typings.wepy.wepyStrings.navigateTo
 import typings.wepy.wepyStrings.redirectTo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageMod {
@@ -16,24 +15,23 @@ object pageMod {
   @js.native
   class default () extends page
   
-  @js.native
   trait PageConfig extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var backgroundTextStyle: js.UndefOr[String] = js.native
+    var backgroundTextStyle: js.UndefOr[String] = js.undefined
     
-    var disableScroll: js.UndefOr[Boolean] = js.native
+    var disableScroll: js.UndefOr[Boolean] = js.undefined
     
-    var enablePullDownRefresh: js.UndefOr[Boolean] = js.native
+    var enablePullDownRefresh: js.UndefOr[Boolean] = js.undefined
     
-    var navigationBarBackgroundColor: js.UndefOr[String] = js.native
+    var navigationBarBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var navigationBarTextStyle: js.UndefOr[String] = js.native
+    var navigationBarTextStyle: js.UndefOr[String] = js.undefined
     
-    var navigationBarTitleText: js.UndefOr[String] = js.native
+    var navigationBarTitleText: js.UndefOr[String] = js.undefined
     
-    var onReachBottomDistance: js.UndefOr[Double] = js.native
+    var onReachBottomDistance: js.UndefOr[Double] = js.undefined
   }
   object PageConfig {
     
@@ -97,12 +95,13 @@ object pageMod {
   }
   
   @js.native
-  trait PageConstructor extends Instantiable0[page]
+  trait PageConstructor
+    extends StObject
+       with Instantiable0[page]
   
-  @js.native
   trait UrlParam extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object UrlParam {
     

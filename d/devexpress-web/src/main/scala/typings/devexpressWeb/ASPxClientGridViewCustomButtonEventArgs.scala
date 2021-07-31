@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.CustomButtonClick event.
   */
-@js.native
-trait ASPxClientGridViewCustomButtonEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientGridViewCustomButtonEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the value that identifies the custom button.
     */
-  var buttonID: String = js.native
+  var buttonID: String
   
   /**
     * Gets the value that identifies the row whose custom button has been clicked.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientGridViewCustomButtonEventArgs {
   

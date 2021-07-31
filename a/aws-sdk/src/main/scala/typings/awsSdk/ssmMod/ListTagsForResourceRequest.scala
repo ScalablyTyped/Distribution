@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The resource ID for which you want to see a list of tags.
     */
-  var ResourceId: typings.awsSdk.ssmMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.ssmMod.ResourceId
   
   /**
     * Returns a list of tags for a specific resource type.
     */
-  var ResourceType: ResourceTypeForTagging = js.native
+  var ResourceType: ResourceTypeForTagging
 }
 object ListTagsForResourceRequest {
   

@@ -5,19 +5,17 @@ import typings.braintreeWebDropIn.anon.Fields
 import typings.braintreeWebDropIn.anon.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait cardCreateOptions extends StObject {
   
-  var cardholderName: js.UndefOr[Boolean | Required] = js.native
+  var cardholderName: js.UndefOr[Boolean | Required] = js.undefined
   
-  var clearFieldsAfterTokenization: js.UndefOr[Boolean] = js.native
+  var clearFieldsAfterTokenization: js.UndefOr[Boolean] = js.undefined
   
-  var overrides: js.UndefOr[Fields] = js.native
+  var overrides: js.UndefOr[Fields] = js.undefined
   
-  var vault: js.UndefOr[AllowVaultCardOverride] = js.native
+  var vault: js.UndefOr[AllowVaultCardOverride] = js.undefined
 }
 object cardCreateOptions {
   

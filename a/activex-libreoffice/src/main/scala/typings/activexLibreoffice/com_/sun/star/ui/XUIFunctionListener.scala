@@ -5,22 +5,22 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * special interface to receive notification that a user interface element will execute a function.
   * @since OOo 2.0
   */
-@js.native
-trait XUIFunctionListener extends XEventListener {
+trait XUIFunctionListener
+  extends StObject
+     with XEventListener {
   
   /**
     * gets called to notify a component that a user interface element wants to execute a function.
     * @param aUIElementName a string which identifies the user interface element that wants to execute a function.
     * @param aCommand a string which identifies the function that has been selected by a user.
     */
-  def functionExecute(aUIElementName: String, aCommand: String): Unit = js.native
+  def functionExecute(aUIElementName: String, aCommand: String): Unit
 }
 object XUIFunctionListener {
   

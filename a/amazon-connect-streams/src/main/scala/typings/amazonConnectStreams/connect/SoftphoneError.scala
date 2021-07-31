@@ -2,23 +2,21 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftphoneError extends StObject {
   
-  val endPointUrl: String = js.native
+  val endPointUrl: String
   
-  val errorMessage: String = js.native
+  val errorMessage: String
   
-  val errorType: String = js.native
+  val errorType: String
   
-  def getEndPointUrl(): String = js.native
+  def getEndPointUrl(): String
   
-  def getErrorMessage(): String = js.native
+  def getErrorMessage(): String
   
-  def getErrorType(): String = js.native
+  def getErrorType(): String
 }
 object SoftphoneError {
   

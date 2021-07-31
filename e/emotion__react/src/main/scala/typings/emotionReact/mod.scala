@@ -4,16 +4,14 @@ import typings.emotionReact.emotionReactMod.Theme
 import typings.emotionSerialize.mod.Interpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var css: js.UndefOr[Interpolation[Theme]] = js.native
+    var css: js.UndefOr[Interpolation[Theme]] = js.undefined
   }
   object Attributes {
     

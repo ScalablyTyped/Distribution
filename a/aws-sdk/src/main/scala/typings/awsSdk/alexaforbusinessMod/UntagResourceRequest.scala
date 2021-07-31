@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The ARN of the resource from which to remove metadata tags. Required. 
     */
-  var Arn: typings.awsSdk.alexaforbusinessMod.Arn = js.native
+  var Arn: typings.awsSdk.alexaforbusinessMod.Arn
   
   /**
     * The tags to be removed from the specified resource. Do not provide system tags. Required. 
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object UntagResourceRequest {
   

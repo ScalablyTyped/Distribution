@@ -3,15 +3,13 @@ package typings.sipJs
 import typings.sipJs.sessionDelegateMod.SessionDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionOptionsMod {
   
-  @js.native
   trait SessionOptions extends StObject {
     
-    var delegate: js.UndefOr[SessionDelegate] = js.native
+    var delegate: js.UndefOr[SessionDelegate] = js.undefined
   }
   object SessionOptions {
     

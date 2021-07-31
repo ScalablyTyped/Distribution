@@ -2,71 +2,69 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceDetail extends StObject {
   
   /**
     * Indicates whether VPC endpoint connection requests to the service must be accepted by the service owner.
     */
-  var AcceptanceRequired: js.UndefOr[Boolean] = js.native
+  var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Availability Zones in which the service is available.
     */
-  var AvailabilityZones: js.UndefOr[ValueStringList] = js.native
+  var AvailabilityZones: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The DNS names for the service.
     */
-  var BaseEndpointDnsNames: js.UndefOr[ValueStringList] = js.native
+  var BaseEndpointDnsNames: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * Indicates whether the service manages its VPC endpoints. Management of the service VPC endpoints using the VPC endpoint API is restricted.
     */
-  var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.native
+  var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The AWS account ID of the service owner.
     */
-  var Owner: js.UndefOr[String] = js.native
+  var Owner: js.UndefOr[String] = js.undefined
   
   /**
     * The private DNS name for the service.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The verification state of the VPC endpoint service. Consumers of the endpoint service cannot use the private name when the state is not verified.
     */
-  var PrivateDnsNameVerificationState: js.UndefOr[DnsNameState] = js.native
+  var PrivateDnsNameVerificationState: js.UndefOr[DnsNameState] = js.undefined
   
   /**
     * The ID of the endpoint service.
     */
-  var ServiceId: js.UndefOr[String] = js.native
+  var ServiceId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the service.
     */
-  var ServiceName: js.UndefOr[String] = js.native
+  var ServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of service.
     */
-  var ServiceType: js.UndefOr[ServiceTypeDetailSet] = js.native
+  var ServiceType: js.UndefOr[ServiceTypeDetailSet] = js.undefined
   
   /**
     * Any tags assigned to the service.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Indicates whether the service supports endpoint policies.
     */
-  var VpcEndpointPolicySupported: js.UndefOr[Boolean] = js.native
+  var VpcEndpointPolicySupported: js.UndefOr[Boolean] = js.undefined
 }
 object ServiceDetail {
   

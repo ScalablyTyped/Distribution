@@ -2,25 +2,23 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReturnShipment extends StObject {
   
-  var creationDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
-  var deliveryDate: js.UndefOr[String] = js.native
+  var deliveryDate: js.UndefOr[String] = js.undefined
   
-  var returnMethodType: js.UndefOr[String] = js.native
+  var returnMethodType: js.UndefOr[String] = js.undefined
   
-  var shipmentId: js.UndefOr[String] = js.native
+  var shipmentId: js.UndefOr[String] = js.undefined
   
-  var shipmentTrackingInfos: js.UndefOr[js.Array[SchemaShipmentTrackingInfo]] = js.native
+  var shipmentTrackingInfos: js.UndefOr[js.Array[SchemaShipmentTrackingInfo]] = js.undefined
   
-  var shippingDate: js.UndefOr[String] = js.native
+  var shippingDate: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaReturnShipment {
   

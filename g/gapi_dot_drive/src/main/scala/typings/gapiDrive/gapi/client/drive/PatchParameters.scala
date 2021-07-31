@@ -2,41 +2,39 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchParameters extends StObject {
   
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
-  var fileId: String = js.native
+  var fileId: String
   
-  var modifiedDateBehavior: js.UndefOr[String] = js.native
+  var modifiedDateBehavior: js.UndefOr[String] = js.undefined
   
-  var newRevision: js.UndefOr[Boolean] = js.native
+  var newRevision: js.UndefOr[Boolean] = js.undefined
   
-  var ocr: js.UndefOr[Boolean] = js.native
+  var ocr: js.UndefOr[Boolean] = js.undefined
   
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
-  var removeParents: js.UndefOr[String] = js.native
+  var removeParents: js.UndefOr[String] = js.undefined
   
-  var resource: js.UndefOr[FileResource] = js.native
+  var resource: js.UndefOr[FileResource] = js.undefined
   
-  var setModifiedDate: js.UndefOr[Boolean] = js.native
+  var setModifiedDate: js.UndefOr[Boolean] = js.undefined
   
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
-  var timedTextLanguage: js.UndefOr[String] = js.native
+  var timedTextLanguage: js.UndefOr[String] = js.undefined
   
-  var timedTextTrackName: js.UndefOr[String] = js.native
+  var timedTextTrackName: js.UndefOr[String] = js.undefined
   
-  var updateViewedData: js.UndefOr[Boolean] = js.native
+  var updateViewedData: js.UndefOr[Boolean] = js.undefined
   
-  var useContentAsIndexableText: js.UndefOr[Boolean] = js.native
+  var useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined
 }
 object PatchParameters {
   

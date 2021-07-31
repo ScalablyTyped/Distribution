@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * These documents typically process information from a connected data source. A {@link Document} could be a form or a report.
   * @deprecated Deprecated
   */
-@js.native
-trait Document extends XPropertySet {
+trait Document
+  extends StObject
+     with XPropertySet {
   
   /** is the URL of the document. */
-  var DocumentLocation: String = js.native
+  var DocumentLocation: String
   
   /** is the name of the document. If the document is part of the container, it is not possible to alter the name. */
-  var Name: String = js.native
+  var Name: String
 }
 object Document {
   

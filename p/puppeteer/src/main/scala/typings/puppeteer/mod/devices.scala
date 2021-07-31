@@ -3,19 +3,17 @@ package typings.puppeteer.mod
 import typings.puppeteer.anon.DeviceScaleFactor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devices {
   
-  @js.native
   trait Device extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var userAgent: String = js.native
+    var userAgent: String
     
-    var viewport: DeviceScaleFactor = js.native
+    var viewport: DeviceScaleFactor
   }
   object Device {
     

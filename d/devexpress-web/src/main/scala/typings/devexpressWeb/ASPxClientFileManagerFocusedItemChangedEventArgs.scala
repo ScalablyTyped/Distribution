@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.FocusedItemChanged event.
   */
-@js.native
-trait ASPxClientFileManagerFocusedItemChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerFocusedItemChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the full name of the item currently being processed.
     */
-  var fullName: String = js.native
+  var fullName: String
   
   /**
     * Gets the file manager item object related to the event.
     */
-  var item: ASPxClientFileManagerItem = js.native
+  var item: ASPxClientFileManagerItem
   
   /**
     * Gets the name of the focused item.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientFileManagerFocusedItemChangedEventArgs {
   

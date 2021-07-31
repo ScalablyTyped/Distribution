@@ -17,21 +17,20 @@ import typings.awsSdkTypes.middlewareMod.SerializeHandler
 import typings.awsSdkTypes.middlewareMod.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait AbsoluteMiddlewareEntry[Input /* <: js.Object */, Output /* <: js.Object */]
-    extends MiddlewareEntry[Input, Output]
+    extends StObject
+       with MiddlewareEntry[Input, Output]
        with AbsoluteLocation {
     
     @JSName("priority")
-    var priority_AbsoluteMiddlewareEntry: Priority = js.native
+    var priority_AbsoluteMiddlewareEntry: Priority
     
     @JSName("step")
-    var step_AbsoluteMiddlewareEntry: Step = js.native
+    var step_AbsoluteMiddlewareEntry: Step
   }
   object AbsoluteMiddlewareEntry {
     
@@ -46,7 +45,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class AbsoluteMiddlewareEntryMutableBuilder[Self <: AbsoluteMiddlewareEntry[_, _], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self with (AbsoluteMiddlewareEntry[Input, Output])) extends AnyVal {
+    implicit class AbsoluteMiddlewareEntryMutableBuilder[Self <: AbsoluteMiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (AbsoluteMiddlewareEntry[Input, Output])) extends AnyVal {
       
       @scala.inline
       def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
@@ -56,10 +55,11 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait MiddlewareEntry[Input /* <: js.Object */, Output /* <: js.Object */] extends HandlerOptions {
+  trait MiddlewareEntry[Input /* <: js.Object */, Output /* <: js.Object */]
+    extends StObject
+       with HandlerOptions {
     
-    var middleware: MiddlewareType[Input, Output] = js.native
+    var middleware: MiddlewareType[Input, Output]
   }
   object MiddlewareEntry {
     
@@ -72,7 +72,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class MiddlewareEntryMutableBuilder[Self <: MiddlewareEntry[_, _], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self with (MiddlewareEntry[Input, Output])) extends AnyVal {
+    implicit class MiddlewareEntryMutableBuilder[Self <: MiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (MiddlewareEntry[Input, Output])) extends AnyVal {
       
       @scala.inline
       def setMiddleware(
@@ -83,21 +83,22 @@ object typesMod {
   
   type NamedMiddlewareEntriesMap[Input /* <: js.Object */, Output /* <: js.Object */] = StringDictionary[MiddlewareEntry[Input, Output]]
   
-  type Normalized[T /* <: MiddlewareEntry[Input, Output] */, Input /* <: js.Object */, Output /* <: js.Object */] = T with After
+  type Normalized[T /* <: MiddlewareEntry[Input, Output] */, Input /* <: js.Object */, Output /* <: js.Object */] = T & After
   
-  @js.native
-  trait NormalizedRelativeEntry[Input /* <: js.Object */, Output /* <: js.Object */] extends HandlerOptions {
+  trait NormalizedRelativeEntry[Input /* <: js.Object */, Output /* <: js.Object */]
+    extends StObject
+       with HandlerOptions {
     
-    var middleware: MiddlewareType[Input, Output] = js.native
+    var middleware: MiddlewareType[Input, Output]
     
-    var next: js.UndefOr[NormalizedRelativeEntry[Input, Output]] = js.native
+    var next: js.UndefOr[NormalizedRelativeEntry[Input, Output]] = js.undefined
     
-    var prev: js.UndefOr[NormalizedRelativeEntry[Input, Output]] = js.native
+    var prev: js.UndefOr[NormalizedRelativeEntry[Input, Output]] = js.undefined
     
-    var priority: Null = js.native
+    var priority: Null
     
     @JSName("step")
-    var step_NormalizedRelativeEntry: Step = js.native
+    var step_NormalizedRelativeEntry: Step
   }
   object NormalizedRelativeEntry {
     
@@ -112,7 +113,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class NormalizedRelativeEntryMutableBuilder[Self <: NormalizedRelativeEntry[_, _], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self with (NormalizedRelativeEntry[Input, Output])) extends AnyVal {
+    implicit class NormalizedRelativeEntryMutableBuilder[Self <: NormalizedRelativeEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (NormalizedRelativeEntry[Input, Output])) extends AnyVal {
       
       @scala.inline
       def setMiddleware(
@@ -139,9 +140,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RelativeMiddlewareEntry[Input /* <: js.Object */, Output /* <: js.Object */]
-    extends MiddlewareEntry[Input, Output]
+    extends StObject
+       with MiddlewareEntry[Input, Output]
        with RelativeLocation
   object RelativeMiddlewareEntry {
     

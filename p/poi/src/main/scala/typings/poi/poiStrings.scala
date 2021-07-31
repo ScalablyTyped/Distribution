@@ -3,7 +3,6 @@ package typings.poi
 import typings.poi.mod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poiStrings {
@@ -44,7 +43,9 @@ object poiStrings {
   def defer: defer = "defer".asInstanceOf[defer]
   
   @js.native
-  sealed trait development extends Mode
+  sealed trait development
+    extends StObject
+       with Mode
   @scala.inline
   def development: development = "development".asInstanceOf[development]
   
@@ -89,12 +90,16 @@ object poiStrings {
   def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
   
   @js.native
-  sealed trait production extends Mode
+  sealed trait production
+    extends StObject
+       with Mode
   @scala.inline
   def production: production = "production".asInstanceOf[production]
   
   @js.native
-  sealed trait test extends Mode
+  sealed trait test
+    extends StObject
+       with Mode
   @scala.inline
   def test: test = "test".asInstanceOf[test]
   

@@ -2,211 +2,209 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDetails extends StObject {
   
   /**
     * 
     */
-  var AwsApiGatewayRestApi: js.UndefOr[AwsApiGatewayRestApiDetails] = js.native
+  var AwsApiGatewayRestApi: js.UndefOr[AwsApiGatewayRestApiDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsApiGatewayStage: js.UndefOr[AwsApiGatewayStageDetails] = js.native
+  var AwsApiGatewayStage: js.UndefOr[AwsApiGatewayStageDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsApiGatewayV2Api: js.UndefOr[AwsApiGatewayV2ApiDetails] = js.native
+  var AwsApiGatewayV2Api: js.UndefOr[AwsApiGatewayV2ApiDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsApiGatewayV2Stage: js.UndefOr[AwsApiGatewayV2StageDetails] = js.native
+  var AwsApiGatewayV2Stage: js.UndefOr[AwsApiGatewayV2StageDetails] = js.undefined
   
   /**
     * Details for an autoscaling group.
     */
-  var AwsAutoScalingAutoScalingGroup: js.UndefOr[AwsAutoScalingAutoScalingGroupDetails] = js.native
+  var AwsAutoScalingAutoScalingGroup: js.UndefOr[AwsAutoScalingAutoScalingGroupDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsCertificateManagerCertificate: js.UndefOr[AwsCertificateManagerCertificateDetails] = js.native
+  var AwsCertificateManagerCertificate: js.UndefOr[AwsCertificateManagerCertificateDetails] = js.undefined
   
   /**
     * Details about a CloudFront distribution.
     */
-  var AwsCloudFrontDistribution: js.UndefOr[AwsCloudFrontDistributionDetails] = js.native
+  var AwsCloudFrontDistribution: js.UndefOr[AwsCloudFrontDistributionDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsCloudTrailTrail: js.UndefOr[AwsCloudTrailTrailDetails] = js.native
+  var AwsCloudTrailTrail: js.UndefOr[AwsCloudTrailTrailDetails] = js.undefined
   
   /**
     * Details for an AWS CodeBuild project.
     */
-  var AwsCodeBuildProject: js.UndefOr[AwsCodeBuildProjectDetails] = js.native
+  var AwsCodeBuildProject: js.UndefOr[AwsCodeBuildProjectDetails] = js.undefined
   
   /**
     * Details about a DynamoDB table.
     */
-  var AwsDynamoDbTable: js.UndefOr[AwsDynamoDbTableDetails] = js.native
+  var AwsDynamoDbTable: js.UndefOr[AwsDynamoDbTableDetails] = js.undefined
   
   /**
     * Details about an Elastic IP address.
     */
-  var AwsEc2Eip: js.UndefOr[AwsEc2EipDetails] = js.native
+  var AwsEc2Eip: js.UndefOr[AwsEc2EipDetails] = js.undefined
   
   /**
     * Details about an Amazon EC2 instance related to a finding.
     */
-  var AwsEc2Instance: js.UndefOr[AwsEc2InstanceDetails] = js.native
+  var AwsEc2Instance: js.UndefOr[AwsEc2InstanceDetails] = js.undefined
   
   /**
     * Details for an Amazon EC2 network interface.
     */
-  var AwsEc2NetworkInterface: js.UndefOr[AwsEc2NetworkInterfaceDetails] = js.native
+  var AwsEc2NetworkInterface: js.UndefOr[AwsEc2NetworkInterfaceDetails] = js.undefined
   
   /**
     * Details for an EC2 security group.
     */
-  var AwsEc2SecurityGroup: js.UndefOr[AwsEc2SecurityGroupDetails] = js.native
+  var AwsEc2SecurityGroup: js.UndefOr[AwsEc2SecurityGroupDetails] = js.undefined
   
   /**
     * Details for an EC2 volume.
     */
-  var AwsEc2Volume: js.UndefOr[AwsEc2VolumeDetails] = js.native
+  var AwsEc2Volume: js.UndefOr[AwsEc2VolumeDetails] = js.undefined
   
   /**
     * Details for an EC2 VPC.
     */
-  var AwsEc2Vpc: js.UndefOr[AwsEc2VpcDetails] = js.native
+  var AwsEc2Vpc: js.UndefOr[AwsEc2VpcDetails] = js.undefined
   
   /**
     * Details for an Elasticsearch domain.
     */
-  var AwsElasticsearchDomain: js.UndefOr[AwsElasticsearchDomainDetails] = js.native
+  var AwsElasticsearchDomain: js.UndefOr[AwsElasticsearchDomainDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsElbLoadBalancer: js.UndefOr[AwsElbLoadBalancerDetails] = js.native
+  var AwsElbLoadBalancer: js.UndefOr[AwsElbLoadBalancerDetails] = js.undefined
   
   /**
     * Details about a load balancer.
     */
-  var AwsElbv2LoadBalancer: js.UndefOr[AwsElbv2LoadBalancerDetails] = js.native
+  var AwsElbv2LoadBalancer: js.UndefOr[AwsElbv2LoadBalancerDetails] = js.undefined
   
   /**
     * Details about an IAM access key related to a finding.
     */
-  var AwsIamAccessKey: js.UndefOr[AwsIamAccessKeyDetails] = js.native
+  var AwsIamAccessKey: js.UndefOr[AwsIamAccessKeyDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsIamGroup: js.UndefOr[AwsIamGroupDetails] = js.native
+  var AwsIamGroup: js.UndefOr[AwsIamGroupDetails] = js.undefined
   
   /**
     * Details about an IAM permissions policy.
     */
-  var AwsIamPolicy: js.UndefOr[AwsIamPolicyDetails] = js.native
+  var AwsIamPolicy: js.UndefOr[AwsIamPolicyDetails] = js.undefined
   
   /**
     * Details about an IAM role.
     */
-  var AwsIamRole: js.UndefOr[AwsIamRoleDetails] = js.native
+  var AwsIamRole: js.UndefOr[AwsIamRoleDetails] = js.undefined
   
   /**
     * Details about an IAM user.
     */
-  var AwsIamUser: js.UndefOr[AwsIamUserDetails] = js.native
+  var AwsIamUser: js.UndefOr[AwsIamUserDetails] = js.undefined
   
   /**
     * Details about a KMS key.
     */
-  var AwsKmsKey: js.UndefOr[AwsKmsKeyDetails] = js.native
+  var AwsKmsKey: js.UndefOr[AwsKmsKeyDetails] = js.undefined
   
   /**
     * Details about a Lambda function.
     */
-  var AwsLambdaFunction: js.UndefOr[AwsLambdaFunctionDetails] = js.native
+  var AwsLambdaFunction: js.UndefOr[AwsLambdaFunctionDetails] = js.undefined
   
   /**
     * Details for a Lambda layer version.
     */
-  var AwsLambdaLayerVersion: js.UndefOr[AwsLambdaLayerVersionDetails] = js.native
+  var AwsLambdaLayerVersion: js.UndefOr[AwsLambdaLayerVersionDetails] = js.undefined
   
   /**
     * Details about an Amazon RDS database cluster.
     */
-  var AwsRdsDbCluster: js.UndefOr[AwsRdsDbClusterDetails] = js.native
+  var AwsRdsDbCluster: js.UndefOr[AwsRdsDbClusterDetails] = js.undefined
   
   /**
     * Details about an Amazon RDS database cluster snapshot.
     */
-  var AwsRdsDbClusterSnapshot: js.UndefOr[AwsRdsDbClusterSnapshotDetails] = js.native
+  var AwsRdsDbClusterSnapshot: js.UndefOr[AwsRdsDbClusterSnapshotDetails] = js.undefined
   
   /**
     * Details about an Amazon RDS database instance.
     */
-  var AwsRdsDbInstance: js.UndefOr[AwsRdsDbInstanceDetails] = js.native
+  var AwsRdsDbInstance: js.UndefOr[AwsRdsDbInstanceDetails] = js.undefined
   
   /**
     * Details about an Amazon RDS database snapshot.
     */
-  var AwsRdsDbSnapshot: js.UndefOr[AwsRdsDbSnapshotDetails] = js.native
+  var AwsRdsDbSnapshot: js.UndefOr[AwsRdsDbSnapshotDetails] = js.undefined
   
   /**
     * 
     */
-  var AwsRedshiftCluster: js.UndefOr[AwsRedshiftClusterDetails] = js.native
+  var AwsRedshiftCluster: js.UndefOr[AwsRedshiftClusterDetails] = js.undefined
   
   /**
     * Details about an Amazon S3 bucket related to a finding.
     */
-  var AwsS3Bucket: js.UndefOr[AwsS3BucketDetails] = js.native
+  var AwsS3Bucket: js.UndefOr[AwsS3BucketDetails] = js.undefined
   
   /**
     * Details about an Amazon S3 object related to a finding.
     */
-  var AwsS3Object: js.UndefOr[AwsS3ObjectDetails] = js.native
+  var AwsS3Object: js.UndefOr[AwsS3ObjectDetails] = js.undefined
   
   /**
     * Details about a Secrets Manager secret.
     */
-  var AwsSecretsManagerSecret: js.UndefOr[AwsSecretsManagerSecretDetails] = js.native
+  var AwsSecretsManagerSecret: js.UndefOr[AwsSecretsManagerSecretDetails] = js.undefined
   
   /**
     * Details about an SNS topic.
     */
-  var AwsSnsTopic: js.UndefOr[AwsSnsTopicDetails] = js.native
+  var AwsSnsTopic: js.UndefOr[AwsSnsTopicDetails] = js.undefined
   
   /**
     * Details about an SQS queue.
     */
-  var AwsSqsQueue: js.UndefOr[AwsSqsQueueDetails] = js.native
+  var AwsSqsQueue: js.UndefOr[AwsSqsQueueDetails] = js.undefined
   
   /**
     * Details for a WAF WebACL.
     */
-  var AwsWafWebAcl: js.UndefOr[AwsWafWebAclDetails] = js.native
+  var AwsWafWebAcl: js.UndefOr[AwsWafWebAclDetails] = js.undefined
   
   /**
     * Details about a container resource related to a finding.
     */
-  var Container: js.UndefOr[ContainerDetails] = js.native
+  var Container: js.UndefOr[ContainerDetails] = js.undefined
   
   /**
     * Details about a resource that are not available in a type-specific details object. Use the Other object in the following cases.   The type-specific object does not contain all of the fields that you want to populate. In this case, first use the type-specific object to populate those fields. Use the Other object to populate the fields that are missing from the type-specific object.   The resource type does not have a corresponding object. This includes resources for which the type is Other.   
     */
-  var Other: js.UndefOr[FieldMap] = js.native
+  var Other: js.UndefOr[FieldMap] = js.undefined
 }
 object ResourceDetails {
   

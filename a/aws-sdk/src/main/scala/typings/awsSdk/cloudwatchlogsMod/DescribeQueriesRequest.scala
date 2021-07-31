@@ -2,28 +2,26 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeQueriesRequest extends StObject {
   
   /**
     * Limits the returned queries to only those for the specified log group.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * Limits the number of returned queries to the specified number.
     */
-  var maxResults: js.UndefOr[DescribeQueriesMaxResults] = js.native
+  var maxResults: js.UndefOr[DescribeQueriesMaxResults] = js.undefined
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * Limits the returned queries to only those that have the specified status. Valid values are Cancelled, Complete, Failed, Running, and Scheduled.
     */
-  var status: js.UndefOr[QueryStatus] = js.native
+  var status: js.UndefOr[QueryStatus] = js.undefined
 }
 object DescribeQueriesRequest {
   

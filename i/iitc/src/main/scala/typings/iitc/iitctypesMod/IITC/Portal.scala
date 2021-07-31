@@ -5,7 +5,6 @@ import typings.leaflet.mod.CircleMarker_
 import typings.leaflet.mod.LatLngExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Portal-Marker */

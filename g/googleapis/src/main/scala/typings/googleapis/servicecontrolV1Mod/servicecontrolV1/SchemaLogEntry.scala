@@ -3,73 +3,71 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An individual log entry.
   */
-@js.native
 trait SchemaLogEntry extends StObject {
   
   /**
     * Optional. Information about the HTTP request associated with this log
     * entry, if applicable.
     */
-  var httpRequest: js.UndefOr[SchemaHttpRequest] = js.native
+  var httpRequest: js.UndefOr[SchemaHttpRequest] = js.undefined
   
   /**
     * A unique ID for the log entry used for deduplication. If omitted, the
     * implementation will generate one based on operation_id.
     */
-  var insertId: js.UndefOr[String] = js.native
+  var insertId: js.UndefOr[String] = js.undefined
   
   /**
     * A set of user-defined (key, value) data that provides additional
     * information about the log entry.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Required. The log to which this log entry belongs. Examples:
     * `&quot;syslog&quot;`, `&quot;book_log&quot;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Information about an operation associated with the log entry,
     * if applicable.
     */
-  var operation: js.UndefOr[SchemaLogEntryOperation] = js.native
+  var operation: js.UndefOr[SchemaLogEntryOperation] = js.undefined
   
   /**
     * The log entry payload, represented as a protocol buffer that is expressed
     * as a JSON object. The only accepted type currently is AuditLog.
     */
-  var protoPayload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var protoPayload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The severity of the log entry. The default value is
     * `LogSeverity.DEFAULT`.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * The log entry payload, represented as a structure that is expressed as a
     * JSON object.
     */
-  var structPayload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var structPayload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The log entry payload, represented as a Unicode string (UTF-8).
     */
-  var textPayload: js.UndefOr[String] = js.native
+  var textPayload: js.UndefOr[String] = js.undefined
   
   /**
     * The time the event described by the log entry occurred. If omitted,
     * defaults to operation start time.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Resource name of the trace associated with the log entry, if
@@ -77,7 +75,7 @@ trait SchemaLogEntry extends StObject {
     * name is relative to `//tracing.googleapis.com`. Example:
     * `projects/my-projectid/traces/06796866738c859f2f19b7cfb3214824`
     */
-  var trace: js.UndefOr[String] = js.native
+  var trace: js.UndefOr[String] = js.undefined
 }
 object SchemaLogEntry {
   

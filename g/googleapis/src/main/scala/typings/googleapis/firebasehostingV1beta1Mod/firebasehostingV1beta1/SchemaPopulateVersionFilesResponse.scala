@@ -2,17 +2,15 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPopulateVersionFilesResponse extends StObject {
   
   /**
     * The content hashes of the specified files that need to be uploaded to the
     * specified endpoint.
     */
-  var uploadRequiredHashes: js.UndefOr[js.Array[String]] = js.native
+  var uploadRequiredHashes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The URL to which the files should be uploaded, in the format:
@@ -20,7 +18,7 @@ trait SchemaPopulateVersionFilesResponse extends StObject {
     * &lt;br&gt;Perform a multipart `POST` of the Gzipped file contents to the
     * URL using a forward slash and the hash of the file appended to the end.
     */
-  var uploadUrl: js.UndefOr[String] = js.native
+  var uploadUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaPopulateVersionFilesResponse {
   

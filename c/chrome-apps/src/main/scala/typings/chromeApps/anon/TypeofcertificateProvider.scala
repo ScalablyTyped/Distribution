@@ -9,23 +9,21 @@ import typings.chromeApps.chrome.events.Event
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofcertificateProvider extends StObject {
   
   /**
     * The types of errors that can be presented to the user through the requestPin function.
     * @enum
     */
-  val PinRequestErrorType: INVALIDPIN = js.native
+  val PinRequestErrorType: INVALIDPIN
   
   /**
     * The type of code being requested by the extension with requestPin function.
     * @enum
     */
-  val PinRequestType: PIN = js.native
+  val PinRequestType: PIN
   
   /**
     * This event fires every time the browser requests the current list of
@@ -36,9 +34,9 @@ trait TypeofcertificateProvider extends StObject {
     js.Function2[
       /* certificates */ js.Array[CertificateInfo], 
       /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ]
   
   /**
     * This event fires every time the browser needs to sign
@@ -54,9 +52,9 @@ trait TypeofcertificateProvider extends StObject {
     js.Function2[
       /* signRequest */ SignRequest, 
       /* signCallback */ js.Function1[/* signature */ js.UndefOr[ArrayBuffer], Unit], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ]
   
   /**
     * Requests the PIN from the user. Only one ongoing request at a time is
@@ -71,7 +69,7 @@ trait TypeofcertificateProvider extends StObject {
   def requestPin(
     details: RequestPinDetails,
     callback: js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @description Stops the pin request started by the *requestPin* function.
@@ -79,7 +77,7 @@ trait TypeofcertificateProvider extends StObject {
     * @param callback To be used by Chrome to send to the app the status from
     * their request to close PIN dialog for user.
     */
-  def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[Unit]): Unit = js.native
+  def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[Unit]): Unit
 }
 object TypeofcertificateProvider {
   
@@ -91,14 +89,14 @@ object TypeofcertificateProvider {
       js.Function2[
         /* certificates */ js.Array[CertificateInfo], 
         /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 
-        _
+        js.Any
       ]
     ],
     onSignDigestRequested: Event[
       js.Function2[
         /* signRequest */ SignRequest, 
         /* signCallback */ js.Function1[/* signature */ js.UndefOr[ArrayBuffer], Unit], 
-        _
+        js.Any
       ]
     ],
     requestPin: (RequestPinDetails, js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]) => Unit,
@@ -117,7 +115,7 @@ object TypeofcertificateProvider {
           js.Function2[
             /* certificates */ js.Array[CertificateInfo], 
             /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 
-            _
+            js.Any
           ]
         ]
     ): Self = StObject.set(x, "onCertificatesRequested", value.asInstanceOf[js.Any])
@@ -128,7 +126,7 @@ object TypeofcertificateProvider {
           js.Function2[
             /* signRequest */ SignRequest, 
             /* signCallback */ js.Function1[/* signature */ js.UndefOr[ArrayBuffer], Unit], 
-            _
+            js.Any
           ]
         ]
     ): Self = StObject.set(x, "onSignDigestRequested", value.asInstanceOf[js.Any])

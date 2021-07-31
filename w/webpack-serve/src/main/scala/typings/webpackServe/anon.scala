@@ -4,15 +4,13 @@ import typings.node.netMod.Server
 import typings.webpackServe.mod.InitializedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Compiler extends StObject {
     
-    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any = js.native
+    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   }
   object Compiler {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: InitializedOptions = js.native
+    var options: InitializedOptions
     
-    var server: Server = js.native
+    var server: Server
   }
   object Options {
     
@@ -60,12 +57,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any = js.native
+    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
     
-    var stats: js.Any = js.native
+    var stats: js.Any
   }
   object Stats {
     

@@ -3,21 +3,20 @@ package typings.testingLibraryDom
 import typings.testingLibraryDom.waitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object waitForElementToBeRemovedMod {
   
-  @JSImport("@testing-library/dom/types/wait-for-element-to-be-removed", "waitForElementToBeRemoved")
+  @JSImport("@testing-library/dom/types/wait-for-element-to-be-removed", JSImport.Namespace)
   @js.native
-  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/dom/types/wait-for-element-to-be-removed", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/dom/types/wait-for-element-to-be-removed", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/dom/types/wait-for-element-to-be-removed", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

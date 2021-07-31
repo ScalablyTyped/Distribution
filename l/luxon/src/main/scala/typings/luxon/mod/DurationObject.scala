@@ -2,12 +2,11 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationObject
-  extends DurationObjectUnits
+  extends StObject
+     with DurationObjectUnits
      with DurationOptions
 object DurationObject {
   

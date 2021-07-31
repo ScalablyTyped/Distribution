@@ -2,56 +2,54 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerSettings extends StObject {
   
   /**
     * Settings for MP4 segments in CMAF
     */
-  var CmfcSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.CmfcSettings] = js.native
+  var CmfcSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.CmfcSettings] = js.undefined
   
   /**
     * Container for this output. Some containers require a container settings object. If not specified, the default object will be created.
     */
-  var Container: js.UndefOr[ContainerType] = js.native
+  var Container: js.UndefOr[ContainerType] = js.undefined
   
   /**
     * Settings for F4v container
     */
-  var F4vSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.F4vSettings] = js.native
+  var F4vSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.F4vSettings] = js.undefined
   
   /**
     * MPEG-2 TS container settings. These apply to outputs in a File output group when the output's container (ContainerType) is MPEG-2 Transport Stream (M2TS). In these assets, data is organized by the program map table (PMT). Each transport stream program contains subsets of data, including audio, video, and metadata. Each of these subsets of data has a numerical label called a packet identifier (PID). Each transport stream program corresponds to one MediaConvert output. The PMT lists the types of data in a program along with their PID. Downstream systems and players use the program map table to look up the PID for each type of data it accesses and then uses the PIDs to locate specific data within the asset.
     */
-  var M2tsSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.M2tsSettings] = js.native
+  var M2tsSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.M2tsSettings] = js.undefined
   
   /**
     * Settings for TS segments in HLS
     */
-  var M3u8Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.M3u8Settings] = js.native
+  var M3u8Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.M3u8Settings] = js.undefined
   
   /**
     * Settings for MOV Container.
     */
-  var MovSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MovSettings] = js.native
+  var MovSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MovSettings] = js.undefined
   
   /**
     * Settings for MP4 container. You can create audio-only AAC outputs with this container.
     */
-  var Mp4Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp4Settings] = js.native
+  var Mp4Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp4Settings] = js.undefined
   
   /**
     * Settings for MP4 segments in DASH
     */
-  var MpdSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MpdSettings] = js.native
+  var MpdSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MpdSettings] = js.undefined
   
   /**
     * MXF settings
     */
-  var MxfSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MxfSettings] = js.native
+  var MxfSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MxfSettings] = js.undefined
 }
 object ContainerSettings {
   

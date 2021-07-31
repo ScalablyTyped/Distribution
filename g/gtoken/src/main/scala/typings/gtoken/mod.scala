@@ -3,7 +3,6 @@ package typings.gtoken
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -100,12 +99,11 @@ object mod {
     def tokenType: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Credentials extends StObject {
     
-    var clientEmail: js.UndefOr[String] = js.native
+    var clientEmail: js.UndefOr[String] = js.undefined
     
-    var privateKey: String = js.native
+    var privateKey: String
   }
   object Credentials {
     
@@ -131,10 +129,9 @@ object mod {
   
   type GetTokenCallback = js.Function2[/* err */ Error | Null, /* token */ js.UndefOr[TokenData], Unit]
   
-  @js.native
   trait GetTokenOptions extends StObject {
     
-    var forceRefresh: js.UndefOr[Boolean] = js.native
+    var forceRefresh: js.UndefOr[Boolean] = js.undefined
   }
   object GetTokenOptions {
     
@@ -155,18 +152,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenData extends StObject {
     
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
-    var expires_in: js.UndefOr[Double] = js.native
+    var expires_in: js.UndefOr[Double] = js.undefined
     
-    var id_token: js.UndefOr[String] = js.native
+    var id_token: js.UndefOr[String] = js.undefined
     
-    var refresh_token: js.UndefOr[String] = js.native
+    var refresh_token: js.UndefOr[String] = js.undefined
     
-    var token_type: js.UndefOr[String] = js.native
+    var token_type: js.UndefOr[String] = js.undefined
   }
   object TokenData {
     
@@ -211,22 +207,21 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenOptions extends StObject {
     
-    var additionalClaims: js.UndefOr[js.Object] = js.native
+    var additionalClaims: js.UndefOr[js.Object] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var iss: js.UndefOr[String] = js.native
+    var iss: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var sub: js.UndefOr[String] = js.native
+    var sub: js.UndefOr[String] = js.undefined
   }
   object TokenOptions {
     

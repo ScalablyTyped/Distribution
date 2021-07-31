@@ -2,141 +2,139 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicDataStatsDto extends StObject {
   
-  var FlatArmorMod: Double = js.native
+  var FlatArmorMod: Double
   
-  var FlatAttackSpeedMod: Double = js.native
+  var FlatAttackSpeedMod: Double
   
-  var FlatBlockMod: Double = js.native
+  var FlatBlockMod: Double
   
-  var FlatCritChanceMod: Double = js.native
+  var FlatCritChanceMod: Double
   
-  var FlatCritDamageMod: Double = js.native
+  var FlatCritDamageMod: Double
   
-  var FlatEXPBonus: Double = js.native
+  var FlatEXPBonus: Double
   
-  var FlatEnergyPoolMod: Double = js.native
+  var FlatEnergyPoolMod: Double
   
-  var FlatEnergyRegenMod: Double = js.native
+  var FlatEnergyRegenMod: Double
   
-  var FlatHPPoolMod: Double = js.native
+  var FlatHPPoolMod: Double
   
-  var FlatHPRegenMod: Double = js.native
+  var FlatHPRegenMod: Double
   
-  var FlatMPPoolMod: Double = js.native
+  var FlatMPPoolMod: Double
   
-  var FlatMPRegenMod: Double = js.native
+  var FlatMPRegenMod: Double
   
-  var FlatMagicDamageMod: Double = js.native
+  var FlatMagicDamageMod: Double
   
-  var FlatMovementSpeedMod: Double = js.native
+  var FlatMovementSpeedMod: Double
   
-  var FlatPhysicalDamageMod: Double = js.native
+  var FlatPhysicalDamageMod: Double
   
-  var FlatSpellBlockMod: Double = js.native
+  var FlatSpellBlockMod: Double
   
-  var PercentArmorMod: Double = js.native
+  var PercentArmorMod: Double
   
-  var PercentAttackSpeedMod: Double = js.native
+  var PercentAttackSpeedMod: Double
   
-  var PercentBlockMod: Double = js.native
+  var PercentBlockMod: Double
   
-  var PercentCritChanceMod: Double = js.native
+  var PercentCritChanceMod: Double
   
-  var PercentCritDamageMod: Double = js.native
+  var PercentCritDamageMod: Double
   
-  var PercentDodgeMod: Double = js.native
+  var PercentDodgeMod: Double
   
-  var PercentEXPBonus: Double = js.native
+  var PercentEXPBonus: Double
   
-  var PercentHPPoolMod: Double = js.native
+  var PercentHPPoolMod: Double
   
-  var PercentHPRegenMod: Double = js.native
+  var PercentHPRegenMod: Double
   
-  var PercentLifeStealMod: Double = js.native
+  var PercentLifeStealMod: Double
   
-  var PercentMPPoolMod: Double = js.native
+  var PercentMPPoolMod: Double
   
-  var PercentMPRegenMod: Double = js.native
+  var PercentMPRegenMod: Double
   
-  var PercentMagicDamageMod: Double = js.native
+  var PercentMagicDamageMod: Double
   
-  var PercentMovementSpeedMod: Double = js.native
+  var PercentMovementSpeedMod: Double
   
-  var PercentPhysicalDamageMod: Double = js.native
+  var PercentPhysicalDamageMod: Double
   
-  var PercentSpellBlockMod: Double = js.native
+  var PercentSpellBlockMod: Double
   
-  var PercentSpellVampMod: Double = js.native
+  var PercentSpellVampMod: Double
   
-  var rFlatArmorModPerLevel: Double = js.native
+  var rFlatArmorModPerLevel: Double
   
-  var rFlatArmorPenetrationMod: Double = js.native
+  var rFlatArmorPenetrationMod: Double
   
-  var rFlatArmorPenetrationModPerLevel: Double = js.native
+  var rFlatArmorPenetrationModPerLevel: Double
   
-  var rFlatCritChanceModPerLevel: Double = js.native
+  var rFlatCritChanceModPerLevel: Double
   
-  var rFlatCritDamageModPerLevel: Double = js.native
+  var rFlatCritDamageModPerLevel: Double
   
-  var rFlatDodgeMod: Double = js.native
+  var rFlatDodgeMod: Double
   
-  var rFlatDodgeModPerLevel: Double = js.native
+  var rFlatDodgeModPerLevel: Double
   
-  var rFlatEnergyModPerLevel: Double = js.native
+  var rFlatEnergyModPerLevel: Double
   
-  var rFlatEnergyRegenModPerLevel: Double = js.native
+  var rFlatEnergyRegenModPerLevel: Double
   
-  var rFlatGoldPer10Mod: Double = js.native
+  var rFlatGoldPer10Mod: Double
   
-  var rFlatHPModPerLevel: Double = js.native
+  var rFlatHPModPerLevel: Double
   
-  var rFlatHPRegenModPerLevel: Double = js.native
+  var rFlatHPRegenModPerLevel: Double
   
-  var rFlatMPModPerLevel: Double = js.native
+  var rFlatMPModPerLevel: Double
   
-  var rFlatMPRegenModPerLevel: Double = js.native
+  var rFlatMPRegenModPerLevel: Double
   
-  var rFlatMagicDamageModPerLevel: Double = js.native
+  var rFlatMagicDamageModPerLevel: Double
   
-  var rFlatMagicPenetrationMod: Double = js.native
+  var rFlatMagicPenetrationMod: Double
   
-  var rFlatMagicPenetrationModPerLevel: Double = js.native
+  var rFlatMagicPenetrationModPerLevel: Double
   
-  var rFlatMovementSpeedModPerLevel: Double = js.native
+  var rFlatMovementSpeedModPerLevel: Double
   
-  var rFlatPhysicalDamageModPerLevel: Double = js.native
+  var rFlatPhysicalDamageModPerLevel: Double
   
-  var rFlatSpellBlockModPerLevel: Double = js.native
+  var rFlatSpellBlockModPerLevel: Double
   
-  var rFlatTimeDeadMod: Double = js.native
+  var rFlatTimeDeadMod: Double
   
-  var rFlatTimeDeadModPerLevel: Double = js.native
+  var rFlatTimeDeadModPerLevel: Double
   
-  var rPercentArmorPenetrationMod: Double = js.native
+  var rPercentArmorPenetrationMod: Double
   
-  var rPercentArmorPenetrationModPerLevel: Double = js.native
+  var rPercentArmorPenetrationModPerLevel: Double
   
-  var rPercentAttackSpeedModPerLevel: Double = js.native
+  var rPercentAttackSpeedModPerLevel: Double
   
-  var rPercentCooldownMod: Double = js.native
+  var rPercentCooldownMod: Double
   
-  var rPercentCooldownModPerLevel: Double = js.native
+  var rPercentCooldownModPerLevel: Double
   
-  var rPercentMagicPenetrationMod: Double = js.native
+  var rPercentMagicPenetrationMod: Double
   
-  var rPercentMagicPenetrationModPerLevel: Double = js.native
+  var rPercentMagicPenetrationModPerLevel: Double
   
-  var rPercentMovementSpeedModPerLevel: Double = js.native
+  var rPercentMovementSpeedModPerLevel: Double
   
-  var rPercentTimeDeadMod: Double = js.native
+  var rPercentTimeDeadMod: Double
   
-  var rPercentTimeDeadModPerLevel: Double = js.native
+  var rPercentTimeDeadModPerLevel: Double
 }
 object BasicDataStatsDto {
   

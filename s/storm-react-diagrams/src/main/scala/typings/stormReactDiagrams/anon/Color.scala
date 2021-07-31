@@ -2,35 +2,33 @@ package typings.stormReactDiagrams.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var curvyness: Double = js.native
+  var curvyness: Double
   
-  var id: String = js.native
+  var id: String
   
-  var labels: js.Array[OffsetX] = js.native
+  var labels: js.Array[OffsetX]
   
-  var points: js.Array[Selected] = js.native
+  var points: js.Array[Selected]
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var source: String = js.native
+  var source: String
   
-  var sourcePort: String = js.native
+  var sourcePort: String
   
-  var target: String = js.native
+  var target: String
   
-  var targetPort: String = js.native
+  var targetPort: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object Color {
   

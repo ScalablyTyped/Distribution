@@ -20,47 +20,45 @@ import typings.jqueryToastPlugin.jqueryToastPluginStrings.success
 import typings.jqueryToastPlugin.jqueryToastPluginStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait toastOptions extends StObject {
   
-  var afterHidden: js.UndefOr[js.Function0[_]] = js.native
+  var afterHidden: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var afterShown: js.UndefOr[js.Function0[_]] = js.native
+  var afterShown: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var allowToastClose: js.UndefOr[Boolean] = js.native
+  var allowToastClose: js.UndefOr[Boolean] = js.undefined
   
-  var beforeHide: js.UndefOr[js.Function0[_]] = js.native
+  var beforeHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var beforeShow: js.UndefOr[js.Function0[_]] = js.native
+  var beforeShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var bgColor: js.UndefOr[String] = js.native
+  var bgColor: js.UndefOr[String] = js.undefined
   
-  var heading: js.UndefOr[String] = js.native
+  var heading: js.UndefOr[String] = js.undefined
   
-  var hideAfter: js.UndefOr[Double | `false`] = js.native
+  var hideAfter: js.UndefOr[Double | `false`] = js.undefined
   
-  var icon: js.UndefOr[info | warning | error | success] = js.native
+  var icon: js.UndefOr[info | warning | error | success] = js.undefined
   
-  var loader: js.UndefOr[Boolean] = js.native
+  var loader: js.UndefOr[Boolean] = js.undefined
   
-  var loaderBg: js.UndefOr[String] = js.native
+  var loaderBg: js.UndefOr[String] = js.undefined
   
   var position: js.UndefOr[
     `bottom-left` | `bottom-right` | `bottom-center` | `top-right` | `top-left` | `top-center` | `mid-center` | CustomPosition
-  ] = js.native
+  ] = js.undefined
   
-  var showHideTransition: js.UndefOr[fade | slide | plain] = js.native
+  var showHideTransition: js.UndefOr[fade | slide | plain] = js.undefined
   
-  var stack: js.UndefOr[Double | `false`] = js.native
+  var stack: js.UndefOr[Double | `false`] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var textAlign: js.UndefOr[left | right | center] = js.native
+  var textAlign: js.UndefOr[left | right | center] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object toastOptions {
   
@@ -74,13 +72,13 @@ object toastOptions {
   implicit class toastOptionsMutableBuilder[Self <: toastOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAfterHidden(value: () => _): Self = StObject.set(x, "afterHidden", js.Any.fromFunction0(value))
+    def setAfterHidden(value: () => js.Any): Self = StObject.set(x, "afterHidden", js.Any.fromFunction0(value))
     
     @scala.inline
     def setAfterHiddenUndefined: Self = StObject.set(x, "afterHidden", js.undefined)
     
     @scala.inline
-    def setAfterShown(value: () => _): Self = StObject.set(x, "afterShown", js.Any.fromFunction0(value))
+    def setAfterShown(value: () => js.Any): Self = StObject.set(x, "afterShown", js.Any.fromFunction0(value))
     
     @scala.inline
     def setAfterShownUndefined: Self = StObject.set(x, "afterShown", js.undefined)
@@ -92,13 +90,13 @@ object toastOptions {
     def setAllowToastCloseUndefined: Self = StObject.set(x, "allowToastClose", js.undefined)
     
     @scala.inline
-    def setBeforeHide(value: () => _): Self = StObject.set(x, "beforeHide", js.Any.fromFunction0(value))
+    def setBeforeHide(value: () => js.Any): Self = StObject.set(x, "beforeHide", js.Any.fromFunction0(value))
     
     @scala.inline
     def setBeforeHideUndefined: Self = StObject.set(x, "beforeHide", js.undefined)
     
     @scala.inline
-    def setBeforeShow(value: () => _): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
+    def setBeforeShow(value: () => js.Any): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
     
     @scala.inline
     def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)

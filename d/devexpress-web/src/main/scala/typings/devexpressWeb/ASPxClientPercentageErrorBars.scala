@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the PercentageErrorBars class.
   */
-@js.native
-trait ASPxClientPercentageErrorBars extends ASPxClientIndicator {
+trait ASPxClientPercentageErrorBars
+  extends StObject
+     with ASPxClientIndicator {
   
   /**
     * Returns the value specifying the percentage of error values of series point values.
     */
-  var percent: Double = js.native
+  var percent: Double
 }
 object ASPxClientPercentageErrorBars {
   

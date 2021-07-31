@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntersectionObserverObserveCallbackResult extends StObject {
   
   /** 目标边界 */
-  var boundingClientRect: BoundingClientRectResult = js.native
+  var boundingClientRect: BoundingClientRectResult
   
   /** 相交比例 */
-  var intersectionRatio: Double = js.native
+  var intersectionRatio: Double
   
   /** 相交区域的边界 */
-  var intersectionRect: IntersectionRectResult = js.native
+  var intersectionRect: IntersectionRectResult
   
   /** 参照区域的边界 */
-  var relativeRect: RelativeRectResult = js.native
+  var relativeRect: RelativeRectResult
   
   /** 相交检测时的时间戳 */
-  var time: Double = js.native
+  var time: Double
 }
 object IntersectionObserverObserveCallbackResult {
   

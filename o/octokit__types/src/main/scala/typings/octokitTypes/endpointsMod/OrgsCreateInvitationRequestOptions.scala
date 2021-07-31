@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsCreateInvitationRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: POST = js.native
+  var method: POST
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashorgsSlashColonorgSlashinvitations = js.native
+  var url: SlashorgsSlashColonorgSlashinvitations
 }
 object OrgsCreateInvitationRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: POST,
-    request: RequestRequestOptions,
-    url: SlashorgsSlashColonorgSlashinvitations
-  ): OrgsCreateInvitationRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsCreateInvitationRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/orgs/:org/invitations")
     __obj.asInstanceOf[OrgsCreateInvitationRequestOptions]
   }
   

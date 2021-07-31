@@ -4,7 +4,6 @@ import typings.std.RegExp
 import typings.three.loaderMod.Loader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadingManagerMod {
@@ -18,33 +17,25 @@ object loadingManagerMod {
   class LoadingManager () extends StObject {
     def this(onLoad: js.Function0[Unit]) = this()
     def this(
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function3[/* url */ String, /* loaded */ Double, /* total */ Double, Unit]
-    ) = this()
-    def this(
       onLoad: js.Function0[Unit],
       onProgress: js.Function3[/* url */ String, /* loaded */ Double, /* total */ Double, Unit]
     ) = this()
     def this(
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* url */ String, Unit]
-    ) = this()
-    def this(
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function3[/* url */ String, /* loaded */ Double, /* total */ Double, Unit],
-      onError: js.Function1[/* url */ String, Unit]
-    ) = this()
-    def this(
-      onLoad: js.Function0[Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* url */ String, Unit]
+      onLoad: Unit,
+      onProgress: js.Function3[/* url */ String, /* loaded */ Double, /* total */ Double, Unit]
     ) = this()
     def this(
       onLoad: js.Function0[Unit],
       onProgress: js.Function3[/* url */ String, /* loaded */ Double, /* total */ Double, Unit],
       onError: js.Function1[/* url */ String, Unit]
     ) = this()
+    def this(onLoad: js.Function0[Unit], onProgress: Unit, onError: js.Function1[/* url */ String, Unit]) = this()
+    def this(
+      onLoad: Unit,
+      onProgress: js.Function3[/* url */ String, /* loaded */ Double, /* total */ Double, Unit],
+      onError: js.Function1[/* url */ String, Unit]
+    ) = this()
+    def this(onLoad: Unit, onProgress: Unit, onError: js.Function1[/* url */ String, Unit]) = this()
     
     // handlers
     def addHandler(regex: RegExp, loader: Loader): this.type = js.native

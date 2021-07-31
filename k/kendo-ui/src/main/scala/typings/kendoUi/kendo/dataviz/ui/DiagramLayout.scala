@@ -2,43 +2,41 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramLayout extends StObject {
   
-  var endRadialAngle: js.UndefOr[Double] = js.native
+  var endRadialAngle: js.UndefOr[Double] = js.undefined
   
-  var grid: js.UndefOr[DiagramLayoutGrid] = js.native
+  var grid: js.UndefOr[DiagramLayoutGrid] = js.undefined
   
-  var horizontalSeparation: js.UndefOr[Double] = js.native
+  var horizontalSeparation: js.UndefOr[Double] = js.undefined
   
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
   
-  var layerSeparation: js.UndefOr[Double] = js.native
+  var layerSeparation: js.UndefOr[Double] = js.undefined
   
-  var nodeDistance: js.UndefOr[Double] = js.native
+  var nodeDistance: js.UndefOr[Double] = js.undefined
   
-  var radialFirstLevelSeparation: js.UndefOr[Double] = js.native
+  var radialFirstLevelSeparation: js.UndefOr[Double] = js.undefined
   
-  var radialSeparation: js.UndefOr[Double] = js.native
+  var radialSeparation: js.UndefOr[Double] = js.undefined
   
-  var startRadialAngle: js.UndefOr[Double] = js.native
+  var startRadialAngle: js.UndefOr[Double] = js.undefined
   
-  var subtype: js.UndefOr[String] = js.native
+  var subtype: js.UndefOr[String] = js.undefined
   
-  var tipOverTreeStartLevel: js.UndefOr[Double] = js.native
+  var tipOverTreeStartLevel: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var underneathHorizontalOffset: js.UndefOr[Double] = js.native
+  var underneathHorizontalOffset: js.UndefOr[Double] = js.undefined
   
-  var underneathVerticalSeparation: js.UndefOr[Double] = js.native
+  var underneathVerticalSeparation: js.UndefOr[Double] = js.undefined
   
-  var underneathVerticalTopOffset: js.UndefOr[Double] = js.native
+  var underneathVerticalTopOffset: js.UndefOr[Double] = js.undefined
   
-  var verticalSeparation: js.UndefOr[Double] = js.native
+  var verticalSeparation: js.UndefOr[Double] = js.undefined
 }
 object DiagramLayout {
   

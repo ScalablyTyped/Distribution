@@ -2,21 +2,19 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreSecretResponse extends StObject {
   
   /**
     * The ARN of the secret that was restored.
     */
-  var ARN: js.UndefOr[SecretARNType] = js.native
+  var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
     * The friendly name of the secret that was restored.
     */
-  var Name: js.UndefOr[SecretNameType] = js.native
+  var Name: js.UndefOr[SecretNameType] = js.undefined
 }
 object RestoreSecretResponse {
   

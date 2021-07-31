@@ -3,11 +3,11 @@ package typings.winrt.Windows.Media.Protection
 import typings.winrt.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RevocationAndRenewalInformation extends IRevocationAndRenewalInformation
+trait RevocationAndRenewalInformation
+  extends StObject
+     with IRevocationAndRenewalInformation
 object RevocationAndRenewalInformation {
   
   @scala.inline

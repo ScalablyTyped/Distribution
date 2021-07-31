@@ -4,29 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.relayRuntimeStrings.Defer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalizationDefer
-  extends NormalizationSelectableNode
+  extends StObject
+     with NormalizationSelectableNode
      with NormalizationSelection {
   
-  val `if`: String | Null = js.native
+  val `if`: String | Null
   
-  val kind: Defer = js.native
+  val kind: Defer
   
-  val label: String = js.native
+  val label: String
   
-  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
-  val selections: js.Array[NormalizationSelection] = js.native
+  val selections: js.Array[NormalizationSelection]
 }
 object NormalizationDefer {
   
   @scala.inline
-  def apply(kind: Defer, label: String, selections: js.Array[NormalizationSelection]): NormalizationDefer = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+  def apply(label: String, selections: js.Array[NormalizationSelection]): NormalizationDefer = {
+    val __obj = js.Dynamic.literal(kind = "Defer", label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(null)
     __obj.asInstanceOf[NormalizationDefer]
   }
   

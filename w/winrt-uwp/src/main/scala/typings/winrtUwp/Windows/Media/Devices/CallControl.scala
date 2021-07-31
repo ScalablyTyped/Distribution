@@ -10,14 +10,13 @@ import typings.winrtUwp.winrtUwpStrings.keypadpressed
 import typings.winrtUwp.winrtUwpStrings.redialrequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the properties, commands and events for handling calls on a telephony related device. */
 @js.native
 trait CallControl extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_answerrequested(`type`: answerrequested, listener: CallControlEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -73,7 +72,7 @@ trait CallControl extends StObject {
   var onaudiotransferrequested_Original: CallControlEventHandler = js.native
   
   /** Occurs when a number is dialed from the device. */
-  def ondialrequested(ev: DialRequestedEventArgs with WinRTEvent[CallControl]): Unit = js.native
+  def ondialrequested(ev: DialRequestedEventArgs & WinRTEvent[CallControl]): Unit = js.native
   /** Occurs when a number is dialed from the device. */
   @JSName("ondialrequested")
   var ondialrequested_Original: DialRequestedEventHandler = js.native
@@ -85,18 +84,18 @@ trait CallControl extends StObject {
   var onhanguprequested_Original: CallControlEventHandler = js.native
   
   /** Occurs when a keypad button on the device has been pressed. */
-  def onkeypadpressed(ev: KeypadPressedEventArgs with WinRTEvent[CallControl]): Unit = js.native
+  def onkeypadpressed(ev: KeypadPressedEventArgs & WinRTEvent[CallControl]): Unit = js.native
   /** Occurs when a keypad button on the device has been pressed. */
   @JSName("onkeypadpressed")
   var onkeypadpressed_Original: KeypadPressedEventHandler = js.native
   
   /** Occurs when the device receives a request to redial. */
-  def onredialrequested(ev: RedialRequestedEventArgs with WinRTEvent[CallControl]): Unit = js.native
+  def onredialrequested(ev: RedialRequestedEventArgs & WinRTEvent[CallControl]): Unit = js.native
   /** Occurs when the device receives a request to redial. */
   @JSName("onredialrequested")
   var onredialrequested_Original: RedialRequestedEventHandler = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_answerrequested(`type`: answerrequested, listener: CallControlEventHandler): Unit = js.native
   @JSName("removeEventListener")

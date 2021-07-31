@@ -2,21 +2,19 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityProviderDetails extends StObject {
   
   /**
     * Provides the type of InvocationRole used to authenticate the user account.
     */
-  var InvocationRole: js.UndefOr[Role] = js.native
+  var InvocationRole: js.UndefOr[Role] = js.undefined
   
   /**
     * Provides the location of the service endpoint used to authenticate users.
     */
-  var Url: js.UndefOr[typings.awsSdk.transferMod.Url] = js.native
+  var Url: js.UndefOr[typings.awsSdk.transferMod.Url] = js.undefined
 }
 object IdentityProviderDetails {
   

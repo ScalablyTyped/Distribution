@@ -8,7 +8,6 @@ import typings.materialRipple.componentMod.MDCRippleFactory
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chipComponentMod {
@@ -17,7 +16,7 @@ object chipComponentMod {
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/chips/chip/component", "MDCChip")
   @js.native
   class MDCChip protected () extends MDCComponent[MDCChipFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCChipFoundation, args: js.Any*) = this()
     
     /**
@@ -34,7 +33,7 @@ object chipComponentMod {
     def id: String = js.native
     
     def initialize(): Unit = js.native
-    def initialize(rippleFactory: js.UndefOr[scala.Nothing], trailingActionFactory: MDCChipTrailingActionFactory): Unit = js.native
+    def initialize(rippleFactory: Unit, trailingActionFactory: MDCChipTrailingActionFactory): Unit = js.native
     def initialize(rippleFactory: MDCRippleFactory): Unit = js.native
     def initialize(rippleFactory: MDCRippleFactory, trailingActionFactory: MDCChipTrailingActionFactory): Unit = js.native
     
@@ -74,9 +73,12 @@ object chipComponentMod {
   /* static members */
   object MDCChip {
     
-    @JSImport("@material/chips/chip/component", "MDCChip.attachTo")
+    @JSImport("@material/chips/chip/component", "MDCChip")
     @js.native
-    def attachTo(root: Element): MDCChip = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCChip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCChip]
   }
   
   type MDCChipFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCChipFoundation], MDCChip]

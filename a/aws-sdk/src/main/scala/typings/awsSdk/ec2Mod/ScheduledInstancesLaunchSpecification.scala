@@ -2,81 +2,79 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledInstancesLaunchSpecification extends StObject {
   
   /**
     * The block device mapping entries.
     */
-  var BlockDeviceMappings: js.UndefOr[ScheduledInstancesBlockDeviceMappingSet] = js.native
+  var BlockDeviceMappings: js.UndefOr[ScheduledInstancesBlockDeviceMappingSet] = js.undefined
   
   /**
     * Indicates whether the instances are optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS-optimized instance. Default: false 
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: js.UndefOr[ScheduledInstancesIamInstanceProfile] = js.native
+  var IamInstanceProfile: js.UndefOr[ScheduledInstancesIamInstanceProfile] = js.undefined
   
   /**
     * The ID of the Amazon Machine Image (AMI).
     */
-  var ImageId: typings.awsSdk.ec2Mod.ImageId = js.native
+  var ImageId: typings.awsSdk.ec2Mod.ImageId
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the kernel.
     */
-  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.native
+  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[KeyPairName] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.undefined
   
   /**
     * Enable or disable monitoring for the instances.
     */
-  var Monitoring: js.UndefOr[ScheduledInstancesMonitoring] = js.native
+  var Monitoring: js.UndefOr[ScheduledInstancesMonitoring] = js.undefined
   
   /**
     * The network interfaces.
     */
-  var NetworkInterfaces: js.UndefOr[ScheduledInstancesNetworkInterfaceSet] = js.native
+  var NetworkInterfaces: js.UndefOr[ScheduledInstancesNetworkInterfaceSet] = js.undefined
   
   /**
     * The placement information.
     */
-  var Placement: js.UndefOr[ScheduledInstancesPlacement] = js.native
+  var Placement: js.UndefOr[ScheduledInstancesPlacement] = js.undefined
   
   /**
     * The ID of the RAM disk.
     */
-  var RamdiskId: js.UndefOr[typings.awsSdk.ec2Mod.RamdiskId] = js.native
+  var RamdiskId: js.UndefOr[typings.awsSdk.ec2Mod.RamdiskId] = js.undefined
   
   /**
     * The IDs of the security groups.
     */
-  var SecurityGroupIds: js.UndefOr[ScheduledInstancesSecurityGroupIdSet] = js.native
+  var SecurityGroupIds: js.UndefOr[ScheduledInstancesSecurityGroupIdSet] = js.undefined
   
   /**
     * The ID of the subnet in which to launch the instances.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.undefined
   
   /**
     * The base64-encoded MIME user data.
     */
-  var UserData: js.UndefOr[String] = js.native
+  var UserData: js.UndefOr[String] = js.undefined
 }
 object ScheduledInstancesLaunchSpecification {
   

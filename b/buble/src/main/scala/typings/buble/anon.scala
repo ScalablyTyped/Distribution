@@ -53,55 +53,53 @@ import typings.buble.bubleNumbers.`8`
 import typings.buble.bubleNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Arrow extends StObject {
     
-    var arrow: js.UndefOr[Boolean] = js.native
+    var arrow: js.UndefOr[Boolean] = js.undefined
     
-    var classes: js.UndefOr[Boolean] = js.native
+    var classes: js.UndefOr[Boolean] = js.undefined
     
-    var collections: js.UndefOr[Boolean] = js.native
+    var collections: js.UndefOr[Boolean] = js.undefined
     
-    var computedProperty: js.UndefOr[Boolean] = js.native
+    var computedProperty: js.UndefOr[Boolean] = js.undefined
     
-    var conciseMethodProperty: js.UndefOr[Boolean] = js.native
+    var conciseMethodProperty: js.UndefOr[Boolean] = js.undefined
     
-    var constLoop: js.UndefOr[Boolean] = js.native
+    var constLoop: js.UndefOr[Boolean] = js.undefined
     
-    var dangerousForOf: js.UndefOr[Boolean] = js.native
+    var dangerousForOf: js.UndefOr[Boolean] = js.undefined
     
-    var dangerousTaggedTemplateString: js.UndefOr[Boolean] = js.native
+    var dangerousTaggedTemplateString: js.UndefOr[Boolean] = js.undefined
     
-    var defaultParameter: js.UndefOr[Boolean] = js.native
+    var defaultParameter: js.UndefOr[Boolean] = js.undefined
     
-    var destructuring: js.UndefOr[Boolean] = js.native
+    var destructuring: js.UndefOr[Boolean] = js.undefined
     
-    var forOf: js.UndefOr[Boolean] = js.native
+    var forOf: js.UndefOr[Boolean] = js.undefined
     
-    var generator: js.UndefOr[Boolean] = js.native
+    var generator: js.UndefOr[Boolean] = js.undefined
     
-    var letConst: js.UndefOr[Boolean] = js.native
+    var letConst: js.UndefOr[Boolean] = js.undefined
     
-    var modules: js.UndefOr[Boolean] = js.native
+    var modules: js.UndefOr[Boolean] = js.undefined
     
-    var numericLiteral: js.UndefOr[Boolean] = js.native
+    var numericLiteral: js.UndefOr[Boolean] = js.undefined
     
-    var parameterDestructuring: js.UndefOr[Boolean] = js.native
+    var parameterDestructuring: js.UndefOr[Boolean] = js.undefined
     
-    var reservedProperties: js.UndefOr[Boolean] = js.native
+    var reservedProperties: js.UndefOr[Boolean] = js.undefined
     
-    var spreadRest: js.UndefOr[Boolean] = js.native
+    var spreadRest: js.UndefOr[Boolean] = js.undefined
     
-    var stickyRegExp: js.UndefOr[Boolean] = js.native
+    var stickyRegExp: js.UndefOr[Boolean] = js.undefined
     
-    var templateString: js.UndefOr[Boolean] = js.native
+    var templateString: js.UndefOr[Boolean] = js.undefined
     
-    var unicodeRegExp: js.UndefOr[Boolean] = js.native
+    var unicodeRegExp: js.UndefOr[Boolean] = js.undefined
   }
   object Arrow {
     
@@ -242,24 +240,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Chrome extends StObject {
     
     var chrome: js.UndefOr[
         `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64` | `65` | `66` | `67` | `68` | `69` | `70` | `71`
-      ] = js.native
+      ] = js.undefined
     
-    var edge: js.UndefOr[`12` | `13` | `14` | `15` | `16` | `17` | `18` | `19`] = js.native
+    var edge: js.UndefOr[`12` | `13` | `14` | `15` | `16` | `17` | `18` | `19`] = js.undefined
     
     var firefox: js.UndefOr[
         `43` | `44` | `45` | `46` | `47` | `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64`
-      ] = js.native
+      ] = js.undefined
     
-    var ie: js.UndefOr[`8` | `9` | `10` | `11`] = js.native
+    var ie: js.UndefOr[`8` | `9` | `10` | `11`] = js.undefined
     
-    var node: js.UndefOr[`0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10`] = js.native
+    var node: js.UndefOr[`0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10`] = js.undefined
     
-    var safari: js.UndefOr[`8` | `9` | `10` | `10.1` | `11` | `11.1` | `12`] = js.native
+    var safari: js.UndefOr[`8` | `9` | `10` | `10.1` | `11` | `11.1` | `12`] = js.undefined
   }
   object Chrome {
     

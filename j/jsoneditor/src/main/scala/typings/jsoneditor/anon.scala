@@ -14,17 +14,15 @@ import typings.jsoneditor.mod.SelectionPosition
 import typings.jsoneditor.mod.SerializableNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Direction extends StObject {
     
-    var direction: asc | desc = js.native
+    var direction: asc | desc
     
-    var field: String | `@` = js.native
+    var field: String | `@`
   }
   object Direction {
     
@@ -45,12 +43,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: SerializableNode = js.native
+    var end: SerializableNode
     
-    var start: SerializableNode = js.native
+    var start: SerializableNode
   }
   object End {
     
@@ -71,14 +68,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Field extends StObject {
     
-    var field: String | `@` = js.native
+    var field: String | `@`
     
-    var relation: EqualssignEqualssign | ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign = js.native
+    var relation: EqualssignEqualssign | ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign
     
-    var value: String = js.native
+    var value: String
   }
   object Field {
     
@@ -108,10 +104,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
   }
   object Fields {
     
@@ -132,12 +127,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.Array[String] = js.native
+    var options: js.Array[String]
     
-    var startFrom: Double = js.native
+    var startFrom: Double
   }
   object Options {
     
@@ -161,14 +155,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var field: String = js.native
+    var field: String
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
     
-    var value: String = js.native
+    var value: String
   }
   object Path {
     
@@ -195,10 +188,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PathJSONPath extends StObject {
     
-    var path: JSONPath = js.native
+    var path: JSONPath
   }
   object PathJSONPath {
     
@@ -219,14 +211,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Start extends StObject {
     
-    var end: SelectionPosition = js.native
+    var end: SelectionPosition
     
-    var start: SelectionPosition = js.native
+    var start: SelectionPosition
     
-    var text: String = js.native
+    var text: String
   }
   object Start {
     

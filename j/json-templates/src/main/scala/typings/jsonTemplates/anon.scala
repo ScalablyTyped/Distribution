@@ -2,17 +2,15 @@ package typings.jsonTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DefaultValue extends StObject {
     
-    var defaultValue: String = js.native
+    var defaultValue: String
     
-    var key: String = js.native
+    var key: String
   }
   object DefaultValue {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Parameters extends StObject {
     
-    var parameters: js.Array[DefaultValue] = js.native
+    var parameters: js.Array[DefaultValue]
   }
   object Parameters {
     

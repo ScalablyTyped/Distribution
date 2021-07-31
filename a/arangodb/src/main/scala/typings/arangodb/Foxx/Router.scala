@@ -3,7 +3,6 @@ package typings.arangodb.Foxx
 import typings.arangodb.anon.FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

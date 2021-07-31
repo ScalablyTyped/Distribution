@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bitrate extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait Bitrate extends StObject {
     *
     * A positive integer, and the value range is [1,10000000]. The default value is 50.
     */
-  var bitrate: js.UndefOr[Double] = js.native
+  var bitrate: js.UndefOr[Double] = js.undefined
   
   /**
     * The frame rate of the low-quality video stream frame in fps.
     *
     * A positive integer, and the value range is [1,10000]. The default value is 15.
     */
-  var framerate: js.UndefOr[Double] = js.native
+  var framerate: js.UndefOr[Double] = js.undefined
   
   /**
     * The height of the low-quality video stream frame.
@@ -29,7 +27,7 @@ trait Bitrate extends StObject {
     *
     * The width and height parameters are bound together, and take effect only when both are set. Otherwise, the SDK assigns the default values.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The width of the low-quality video stream frame.
@@ -38,7 +36,7 @@ trait Bitrate extends StObject {
     *
     * The width and height parameters are bound together, and take effect only when both are set. Otherwise, the SDK assigns the default values.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Bitrate {
   

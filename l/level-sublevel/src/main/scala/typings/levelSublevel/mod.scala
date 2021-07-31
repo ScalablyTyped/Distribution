@@ -6,7 +6,6 @@ import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.levelup.mod.LevelUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,10 +14,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : Constructor = js.native
   
-  @js.native
   trait Batch extends StObject {
     
-    var prefix: js.UndefOr[Sublevel] = js.native
+    var prefix: js.UndefOr[Sublevel] = js.undefined
   }
   object Batch {
     
@@ -47,12 +45,11 @@ object mod extends Shortcut {
   type Hook = js.Function2[/* ch */ js.Any, /* add */ js.Function1[/* op */ Batch | Boolean, Unit], Unit]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify levelup.LevelUpBase<Batch> * / any */ @js.native
-  trait Sublevel extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify levelup.LevelUpBase<Batch> * / any */ trait Sublevel extends StObject {
     
-    def pre(hook: Hook): js.Function = js.native
+    def pre(hook: Hook): js.Function
     
-    def sublevel(key: String): Sublevel = js.native
+    def sublevel(key: String): Sublevel
   }
   object Sublevel {
     

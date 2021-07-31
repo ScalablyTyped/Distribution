@@ -2,29 +2,27 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait History extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def depth(): Double = js.native
+  def depth(): Double
   
-  def list(): js.Array[HistoryEvent] = js.native
+  def list(): js.Array[HistoryEvent]
   
-  def listRedo(): js.Array[HistoryEvent] = js.native
+  def listRedo(): js.Array[HistoryEvent]
   
-  def markAllDirty(): Unit = js.native
+  def markAllDirty(): Unit
   
-  def peek(): HistoryEvent = js.native
+  def peek(): HistoryEvent
   
-  def pop(): Unit = js.native
+  def pop(): Unit
   
-  def push(ev: HistoryEvent): Unit = js.native
+  def push(ev: HistoryEvent): Unit
   
-  def redo(): Unit = js.native
+  def redo(): Unit
 }
 object History {
   

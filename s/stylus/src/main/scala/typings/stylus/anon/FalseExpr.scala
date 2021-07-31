@@ -3,25 +3,23 @@ package typings.stylus.anon
 import typings.stylus.mod.Stylus.Nodes.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FalseExpr extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var column: Double = js.native
+  var column: Double
   
-  var falseExpr: Expression = js.native
+  var falseExpr: Expression
   
-  var filename: String = js.native
+  var filename: String
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var op: String = js.native
+  var op: String
   
-  var trueExpr: Expression = js.native
+  var trueExpr: Expression
 }
 object FalseExpr {
   

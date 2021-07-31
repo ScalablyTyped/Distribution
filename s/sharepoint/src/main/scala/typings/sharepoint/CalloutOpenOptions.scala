@@ -2,20 +2,18 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutOpenOptions extends StObject {
   
   /** Callout will be closed on blur */
-  var closeCalloutOnBlur: Boolean = js.native
+  var closeCalloutOnBlur: Boolean
   
   /** HTML event name, e.g. "click" */
-  var event: String = js.native
+  var event: String
   
   /** Close button will be shown within the callout window */
-  var showCloseButton: Boolean = js.native
+  var showCloseButton: Boolean
 }
 object CalloutOpenOptions {
   

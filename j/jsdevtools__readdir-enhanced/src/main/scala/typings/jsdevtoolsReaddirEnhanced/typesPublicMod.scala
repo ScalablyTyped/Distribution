@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPublicMod {
@@ -34,23 +33,22 @@ object typesPublicMod {
     def symlink: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink = "symlink".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink]
   }
   
-  @js.native
   trait FileSystem extends StObject {
     
     /**
       * Returns filesystem information about a symlink.
       */
-    def lstat(path: String, callback: Callback[typings.node.fsMod.Stats]): Unit = js.native
+    def lstat(path: String, callback: Callback[typings.node.fsMod.Stats]): Unit
     
     /**
       * Returns the names of files in a directory.
       */
-    def readdir(path: String, callback: Callback[js.Array[String]]): Unit = js.native
+    def readdir(path: String, callback: Callback[js.Array[String]]): Unit
     
     /**
       * Returns filesystem information about a directory entry.
       */
-    def stat(path: String, callback: Callback[typings.node.fsMod.Stats]): Unit = js.native
+    def stat(path: String, callback: Callback[typings.node.fsMod.Stats]): Unit
   }
   object FileSystem {
     
@@ -80,7 +78,6 @@ object typesPublicMod {
   
   type FilterFunction = js.Function1[/* stat */ Stats, js.Any]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -88,7 +85,7 @@ object typesPublicMod {
       *
       * Defaults to an empty string, which means results will be relative to the directory path.
       */
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
     /**
       * The depth to crawl. Can be `true` to crawl indefinitely, a number to crawl only to that
@@ -96,41 +93,41 @@ object typesPublicMod {
       *
       * Defaults to zero, which will not crawl subdirectories.
       */
-    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.native
+    var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.undefined
     
     /**
       * Filter critiera. Can be a glob pattern, a regular expression, or a filter function.
       *
       * Defaults to returning all files.
       */
-    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.native
+    var filter: js.UndefOr[Boolean | String | RegExp | FilterFunction] = js.undefined
     
     /**
       * Custom implementations of filesystem methods.
       *
       * Defaults to the Node "fs" module.
       */
-    var fs: js.UndefOr[PartialFileSystem] = js.native
+    var fs: js.UndefOr[PartialFileSystem] = js.undefined
     
     /**
       * The path separator to use.
       *
       * Defaults to "\" on Windows and "/" on other platforms.
       */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
     
     /**
       * Return `Stats` objects instead of just path strings.
       *
       * Defaults to `false`.
       */
-    var stats: js.UndefOr[Boolean] = js.native
+    var stats: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for the `stats` option. This property is supported for compatibility with the Node.js
       * built-in `fs.readdir()` function.
       */
-    var withFileTypes: js.UndefOr[Boolean] = js.native
+    var withFileTypes: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

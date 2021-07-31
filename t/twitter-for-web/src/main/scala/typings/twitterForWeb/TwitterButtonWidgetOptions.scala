@@ -6,39 +6,39 @@ import typings.twitterForWeb.twitterForWebStrings.medium
 import typings.twitterForWeb.twitterForWebStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for additional configuration for button widgets.
   */
-@js.native
-trait TwitterButtonWidgetOptions extends TwitterWidgetOptions {
+trait TwitterButtonWidgetOptions
+  extends StObject
+     with TwitterWidgetOptions {
   
   /**
     * The alignment of the button within an iframe; use this to ensure flush layout when aligning buttons against opposite edges of your grid.
     */
-  var align: js.UndefOr[left | right] = js.native
+  var align: js.UndefOr[left | right] = js.undefined
   
   /**
     * Share button and Follow button only. (Vertical count only available for share buttons.)
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * If the canonical URL to be counted is different from the URL to be shared, you can provide this URL to reference the count. (Share button only.)
     */
-  var counturl: js.UndefOr[String] = js.native
+  var counturl: js.UndefOr[String] = js.undefined
   
   /**
     * medium or large
     */
-  var size: js.UndefOr[medium | large] = js.native
+  var size: js.UndefOr[medium | large] = js.undefined
   
   /**
     * The default, highlighted text a user sees in the Tweet Web Intent.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TwitterButtonWidgetOptions {
   

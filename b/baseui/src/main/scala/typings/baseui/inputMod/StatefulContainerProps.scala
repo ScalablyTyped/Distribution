@@ -7,19 +7,17 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatefulContainerProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var initialState: js.UndefOr[State] = js.native
+  var initialState: js.UndefOr[State] = js.undefined
   
-  var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
-  var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.native
+  var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.undefined
 }
 object StatefulContainerProps {
   

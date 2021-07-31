@@ -2,31 +2,29 @@ package typings.pulumiAws.inputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScriptDagNode extends StObject {
   
   /**
     * Nested configuration an argument or property of a node. Defined below.
     */
-  var args: js.Array[GetScriptDagNodeArg] = js.native
+  var args: js.Array[GetScriptDagNodeArg]
   
   /**
     * A node identifier that is unique within the node's graph.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The line number of the node.
     */
-  var lineNumber: js.UndefOr[Double] = js.native
+  var lineNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of node this is.
     */
-  var nodeType: String = js.native
+  var nodeType: String
 }
 object GetScriptDagNode {
   

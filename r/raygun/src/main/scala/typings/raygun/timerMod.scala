@@ -2,12 +2,14 @@ package typings.raygun
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timerMod {
   
-  @JSImport("raygun/build/timer", "startTimer")
+  @JSImport("raygun/build/timer", JSImport.Namespace)
   @js.native
-  def startTimer(): js.Function0[Double] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def startTimer(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTimer")().asInstanceOf[js.Function0[Double]]
 }

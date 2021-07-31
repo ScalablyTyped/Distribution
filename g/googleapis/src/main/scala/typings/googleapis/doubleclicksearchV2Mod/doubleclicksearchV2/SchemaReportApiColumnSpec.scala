@@ -2,19 +2,17 @@ package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request object used to create a DoubleClick Search report.
   */
-@js.native
 trait SchemaReportApiColumnSpec extends StObject {
   
   /**
     * Name of a DoubleClick Search column to include in the report.
     */
-  var columnName: js.UndefOr[String] = js.native
+  var columnName: js.UndefOr[String] = js.undefined
   
   /**
     * Segments a report by a custom dimension. The report must be scoped to an
@@ -24,7 +22,7 @@ trait SchemaReportApiColumnSpec extends StObject {
     * returns the value of the specified custom dimension for the given
     * conversion, if set. This column does not segment the conversion report.
     */
-  var customDimensionName: js.UndefOr[String] = js.native
+  var customDimensionName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of a custom metric to include in the report. The report must be
@@ -32,20 +30,20 @@ trait SchemaReportApiColumnSpec extends StObject {
     * set up in DoubleClick Search. The custom metric name, which appears in
     * DoubleClick Search, is case sensitive.
     */
-  var customMetricName: js.UndefOr[String] = js.native
+  var customMetricName: js.UndefOr[String] = js.undefined
   
   /**
     * Inclusive day in YYYY-MM-DD format. When provided, this overrides the
     * overall time range of the report for this column only. Must be provided
     * together with startDate.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * Synchronous report only. Set to true to group by this column. Defaults to
     * false.
     */
-  var groupByColumn: js.UndefOr[Boolean] = js.native
+  var groupByColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Text used to identify this column in the report output; defaults to
@@ -53,13 +51,13 @@ trait SchemaReportApiColumnSpec extends StObject {
     * prevent collisions between DoubleClick Search columns and saved columns
     * with the same name.
     */
-  var headerText: js.UndefOr[String] = js.native
+  var headerText: js.UndefOr[String] = js.undefined
   
   /**
     * The platform that is used to provide data for the custom dimension.
     * Acceptable values are &quot;floodlight&quot;.
     */
-  var platformSource: js.UndefOr[String] = js.native
+  var platformSource: js.UndefOr[String] = js.undefined
   
   /**
     * Returns metrics only for a specific type of product activity. Accepted
@@ -68,21 +66,21 @@ trait SchemaReportApiColumnSpec extends StObject {
     * that were advertised in a Shopping campaign, and that might or might not
     * have been sold
     */
-  var productReportPerspective: js.UndefOr[String] = js.native
+  var productReportPerspective: js.UndefOr[String] = js.undefined
   
   /**
     * Name of a saved column to include in the report. The report must be
     * scoped at advertiser or lower, and this saved column must already be
     * created in the DoubleClick Search UI.
     */
-  var savedColumnName: js.UndefOr[String] = js.native
+  var savedColumnName: js.UndefOr[String] = js.undefined
   
   /**
     * Inclusive date in YYYY-MM-DD format. When provided, this overrides the
     * overall time range of the report for this column only. Must be provided
     * together with endDate.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object SchemaReportApiColumnSpec {
   

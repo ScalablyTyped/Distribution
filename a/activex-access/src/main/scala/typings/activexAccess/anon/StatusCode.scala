@@ -2,27 +2,25 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusCode extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val StatusCode: js.Any = js.native
+  val StatusCode: js.Any
   
-  val TargetFrameName: String | Null = js.native
+  val TargetFrameName: String | Null
   
-  val URL: String = js.native
+  val URL: String
   
-  val pDisp: js.Any = js.native
+  val pDisp: js.Any
 }
 object StatusCode {
   
   @scala.inline
   def apply(Cancel: Boolean, StatusCode: js.Any, URL: String, pDisp: js.Any): StatusCode = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], StatusCode = StatusCode.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], StatusCode = StatusCode.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any], TargetFrameName = null)
     __obj.asInstanceOf[StatusCode]
   }
   

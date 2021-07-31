@@ -2,19 +2,17 @@ package typings.awsSdkBuildTypes.apiModelMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeDef extends StObject {
   
-  var deprecated: js.UndefOr[scala.Boolean] = js.native
+  var deprecated: js.UndefOr[scala.Boolean] = js.undefined
   
-  var documentation: js.UndefOr[java.lang.String] = js.native
+  var documentation: js.UndefOr[java.lang.String] = js.undefined
   
-  var sensitive: js.UndefOr[scala.Boolean] = js.native
+  var sensitive: js.UndefOr[scala.Boolean] = js.undefined
   
-  val `type`: Type = js.native
+  val `type`: Type
 }
 object ShapeDef {
   

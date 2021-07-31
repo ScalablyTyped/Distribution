@@ -2,36 +2,34 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchBarSliderConstructorOptions extends StObject {
   
   /**
     * Function to call when the slider is changed.
     */
-  var change: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* newValue */ Double, Unit]] = js.undefined
   
   /**
     * Label text.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum value.
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum value.
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Selected value.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object TouchBarSliderConstructorOptions {
   

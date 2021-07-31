@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringInput extends StObject {
   
   /**
     * The endpoint for a monitoring job.
     */
-  var EndpointInput: typings.awsSdk.sagemakerMod.EndpointInput = js.native
+  var EndpointInput: typings.awsSdk.sagemakerMod.EndpointInput
 }
 object MonitoringInput {
   

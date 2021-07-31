@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DuplicateFilterViewRequest extends StObject {
   
   /** The ID of the filter being duplicated. */
-  var filterId: js.UndefOr[Double] = js.native
+  var filterId: js.UndefOr[Double] = js.undefined
 }
 object DuplicateFilterViewRequest {
   

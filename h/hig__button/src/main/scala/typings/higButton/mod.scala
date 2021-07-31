@@ -15,7 +15,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -118,56 +117,55 @@ object mod {
   
   type Callback = js.Function0[Unit]
   
-  @js.native
   trait Props extends StObject {
     
     /** Prevents user interaction with the button */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A @hig/icon element */
-    var icon: js.UndefOr[Element] = js.native
+    var icon: js.UndefOr[Element] = js.undefined
     
     /** Sets the link of a button */
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
     /** Triggers blur when focus is moved away from icon */
-    var onBlur: js.UndefOr[Callback] = js.native
+    var onBlur: js.UndefOr[Callback] = js.undefined
     
     /** Triggers when you click the button */
-    var onClick: js.UndefOr[Callback] = js.native
+    var onClick: js.UndefOr[Callback] = js.undefined
     
     /** Triggers when focus is moved to button */
-    var onFocus: js.UndefOr[Callback] = js.native
+    var onFocus: js.UndefOr[Callback] = js.undefined
     
     /** Triggers when you hover over the button */
-    var onHover: js.UndefOr[Callback] = js.native
+    var onHover: js.UndefOr[Callback] = js.undefined
     
     /** Triggers when the user's mouse is pressed over the button */
-    var onMouseDown: js.UndefOr[Callback] = js.native
+    var onMouseDown: js.UndefOr[Callback] = js.undefined
     
     /** Triggers when the user's mouse is over the button */
-    var onMouseEnter: js.UndefOr[Callback] = js.native
+    var onMouseEnter: js.UndefOr[Callback] = js.undefined
     
     /** Triggers when the user's mouse is no longer over the button */
-    var onMouseLeave: js.UndefOr[Callback] = js.native
+    var onMouseLeave: js.UndefOr[Callback] = js.undefined
     
     /** Triggers when the user's mouse is no longer pressed over the button */
-    var onMouseUp: js.UndefOr[Callback] = js.native
+    var onMouseUp: js.UndefOr[Callback] = js.undefined
     
     /** Adds custom/overriding styles */
-    var stylesheet: js.UndefOr[js.Any] = js.native
+    var stylesheet: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies where to display the linked URL */
-    var target: js.UndefOr[AvailableTargets_] = js.native
+    var target: js.UndefOr[AvailableTargets_] = js.undefined
     
     /** Sets the title of a button */
-    var title: String = js.native
+    var title: String
     
     /** Specifies type of button */
-    var `type`: js.UndefOr[AvailableTypes_] = js.native
+    var `type`: js.UndefOr[AvailableTypes_] = js.undefined
     
     /** Specifies width of button */
-    var width: js.UndefOr[AvailableWidths_] = js.native
+    var width: js.UndefOr[AvailableWidths_] = js.undefined
   }
   object Props {
     
@@ -275,22 +273,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Targets_ extends StObject {
     
-    var BLANK: _blank = js.native
+    var BLANK: _blank
     
-    var PARENT: _parent = js.native
+    var PARENT: _parent
     
-    var SELF: _self = js.native
+    var SELF: _self
     
-    var TOP: _top = js.native
+    var TOP: _top
   }
   object Targets_ {
     
     @scala.inline
-    def apply(BLANK: _blank, PARENT: _parent, SELF: _self, TOP: _top): Targets_ = {
-      val __obj = js.Dynamic.literal(BLANK = BLANK.asInstanceOf[js.Any], PARENT = PARENT.asInstanceOf[js.Any], SELF = SELF.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any])
+    def apply(): Targets_ = {
+      val __obj = js.Dynamic.literal(BLANK = "_blank", PARENT = "_parent", SELF = "_self", TOP = "_top")
       __obj.asInstanceOf[Targets_]
     }
     
@@ -311,26 +308,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Types_ extends StObject {
     
-    var FLAT: flat = js.native
+    var FLAT: flat
     
-    var OUTLINE: outline = js.native
-    
-    /** @deprecated */
-    var PRIMARY: primary = js.native
+    var OUTLINE: outline
     
     /** @deprecated */
-    var SECONDARY: secondary = js.native
+    var PRIMARY: primary
     
-    var SOLID: solid = js.native
+    /** @deprecated */
+    var SECONDARY: secondary
+    
+    var SOLID: solid
   }
   object Types_ {
     
     @scala.inline
-    def apply(FLAT: flat, OUTLINE: outline, PRIMARY: primary, SECONDARY: secondary, SOLID: solid): Types_ = {
-      val __obj = js.Dynamic.literal(FLAT = FLAT.asInstanceOf[js.Any], OUTLINE = OUTLINE.asInstanceOf[js.Any], PRIMARY = PRIMARY.asInstanceOf[js.Any], SECONDARY = SECONDARY.asInstanceOf[js.Any], SOLID = SOLID.asInstanceOf[js.Any])
+    def apply(): Types_ = {
+      val __obj = js.Dynamic.literal(FLAT = "flat", OUTLINE = "outline", PRIMARY = "primary", SECONDARY = "secondary", SOLID = "solid")
       __obj.asInstanceOf[Types_]
     }
     
@@ -354,18 +350,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Widths_ extends StObject {
     
-    var GROW: grow = js.native
+    var GROW: grow
     
-    var SHRINK: shrink = js.native
+    var SHRINK: shrink
   }
   object Widths_ {
     
     @scala.inline
-    def apply(GROW: grow, SHRINK: shrink): Widths_ = {
-      val __obj = js.Dynamic.literal(GROW = GROW.asInstanceOf[js.Any], SHRINK = SHRINK.asInstanceOf[js.Any])
+    def apply(): Widths_ = {
+      val __obj = js.Dynamic.literal(GROW = "grow", SHRINK = "shrink")
       __obj.asInstanceOf[Widths_]
     }
     

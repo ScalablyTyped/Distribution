@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaWebDataStream extends StObject {
   
   /** Output only. Time when this stream was originally created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Immutable. Domain name of the web app being measured, or empty. Example: "http://www.google.com", "https://www.google.com" */
-  var defaultUri: js.UndefOr[String] = js.native
+  var defaultUri: js.UndefOr[String] = js.undefined
   
   /** Required. Human-readable display name for the Data Stream. The max allowed display name length is 100 UTF-16 code units. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. ID of the corresponding web app in Firebase, if any. This ID can change if the web app is deleted and recreated. */
-  var firebaseAppId: js.UndefOr[String] = js.native
+  var firebaseAppId: js.UndefOr[String] = js.undefined
   
   /** Output only. Analytics "Measurement ID", without the "G-" prefix. Example: "G-1A2BCD345E" would just be "1A2BCD345E" */
-  var measurementId: js.UndefOr[String] = js.native
+  var measurementId: js.UndefOr[String] = js.undefined
   
   /** Output only. Resource name of this Data Stream. Format: properties/{property_id}/webDataStreams/{stream_id} Example: "properties/1000/webDataStreams/2000" */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Time when stream payload fields were last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaWebDataStream {
   

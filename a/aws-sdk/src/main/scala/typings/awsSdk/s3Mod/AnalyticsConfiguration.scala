@@ -2,26 +2,24 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsConfiguration extends StObject {
   
   /**
     * The filter used to describe a set of objects for analyses. A filter must have exactly one prefix, one tag, or one conjunction (AnalyticsAndOperator). If no filter is provided, all objects will be considered in any analysis.
     */
-  var Filter: js.UndefOr[AnalyticsFilter] = js.native
+  var Filter: js.UndefOr[AnalyticsFilter] = js.undefined
   
   /**
     * The ID that identifies the analytics configuration.
     */
-  var Id: AnalyticsId = js.native
+  var Id: AnalyticsId
   
   /**
     *  Contains data related to access patterns to be collected and made available to analyze the tradeoffs between different storage classes. 
     */
-  var StorageClassAnalysis: typings.awsSdk.s3Mod.StorageClassAnalysis = js.native
+  var StorageClassAnalysis: typings.awsSdk.s3Mod.StorageClassAnalysis
 }
 object AnalyticsConfiguration {
   

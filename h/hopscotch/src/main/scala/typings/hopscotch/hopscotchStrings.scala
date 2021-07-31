@@ -2,13 +2,14 @@ package typings.hopscotch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hopscotchStrings {
   
   @js.native
-  sealed trait bottom extends placementTypes
+  sealed trait bottom
+    extends StObject
+       with placementTypes
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -18,17 +19,23 @@ object hopscotchStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait left extends placementTypes
+  sealed trait left
+    extends StObject
+       with placementTypes
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait right extends placementTypes
+  sealed trait right
+    extends StObject
+       with placementTypes
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait top extends placementTypes
+  sealed trait top
+    extends StObject
+       with placementTypes
   @scala.inline
   def top: top = "top".asInstanceOf[top]
 }

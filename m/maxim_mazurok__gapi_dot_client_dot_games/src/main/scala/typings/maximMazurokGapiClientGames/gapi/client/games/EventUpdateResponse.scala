@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventUpdateResponse extends StObject {
   
   /** Any batch-wide failures which occurred applying updates. */
-  var batchFailures: js.UndefOr[js.Array[EventBatchRecordFailure]] = js.native
+  var batchFailures: js.UndefOr[js.Array[EventBatchRecordFailure]] = js.undefined
   
   /** Any failures updating a particular event. */
-  var eventFailures: js.UndefOr[js.Array[EventRecordFailure]] = js.native
+  var eventFailures: js.UndefOr[js.Array[EventRecordFailure]] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#eventUpdateResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The current status of any updated events */
-  var playerEvents: js.UndefOr[js.Array[PlayerEvent]] = js.native
+  var playerEvents: js.UndefOr[js.Array[PlayerEvent]] = js.undefined
 }
 object EventUpdateResponse {
   

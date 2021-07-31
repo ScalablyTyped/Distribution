@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1Entry extends StObject {
   
   /** Specification for a group of BigQuery tables with name pattern `[prefix]YYYYMMDD`. Context: https://cloud.google.com/bigquery/docs/partitioned-tables#partitioning_versus_sharding. */
-  var bigqueryDateShardedSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec] = js.native
+  var bigqueryDateShardedSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec] = js.undefined
   
   /** Specification that applies to a BigQuery table. This is only valid on entries of type `TABLE`. */
-  var bigqueryTableSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1BigQueryTableSpec] = js.native
+  var bigqueryTableSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1BigQueryTableSpec] = js.undefined
   
   /** Entry description, which can consist of several sentences or paragraphs that describe entry contents. Default value is an empty string. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Display information such as title and description. A short name to identify the entry, for example, "Analytics Data - Jan 2011". Default value is an empty string. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Specification that applies to a Cloud Storage fileset. This is only valid on entries of type FILESET. */
-  var gcsFilesetSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1GcsFilesetSpec] = js.native
+  var gcsFilesetSpec: js.UndefOr[GoogleCloudDatacatalogV1beta1GcsFilesetSpec] = js.undefined
   
   /** Output only. This field indicates the entry's source system that Data Catalog integrates with, such as BigQuery or Pub/Sub. */
-  var integratedSystem: js.UndefOr[String] = js.native
+  var integratedSystem: js.UndefOr[String] = js.undefined
   
   /**
     * The resource this metadata entry refers to. For Google Cloud Platform resources, `linked_resource` is the [full name of the
@@ -32,31 +30,31 @@ trait GoogleCloudDatacatalogV1beta1Entry extends StObject {
     * //bigquery.googleapis.com/projects/projectId/datasets/datasetId/tables/tableId Output only when Entry is of type in the EntryType enum. For entries with user_specified_type, this
     * field is optional and defaults to an empty string.
     */
-  var linkedResource: js.UndefOr[String] = js.native
+  var linkedResource: js.UndefOr[String] = js.undefined
   
   /**
     * The Data Catalog resource name of the entry in URL format. Example: * projects/{project_id}/locations/{location}/entryGroups/{entry_group_id}/entries/{entry_id} Note that this Entry
     * and its child resources may not actually be stored in the location in this name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Schema of the entry. An entry might not have any schema attached to it. */
-  var schema: js.UndefOr[GoogleCloudDatacatalogV1beta1Schema] = js.native
+  var schema: js.UndefOr[GoogleCloudDatacatalogV1beta1Schema] = js.undefined
   
   /**
     * Output only. Timestamps about the underlying resource, not about this Data Catalog entry. Output only when Entry is of type in the EntryType enum. For entries with
     * user_specified_type, this field is optional and defaults to an empty timestamp.
     */
-  var sourceSystemTimestamps: js.UndefOr[GoogleCloudDatacatalogV1beta1SystemTimestamps] = js.native
+  var sourceSystemTimestamps: js.UndefOr[GoogleCloudDatacatalogV1beta1SystemTimestamps] = js.undefined
   
   /** The type of the entry. Only used for Entries with types in the EntryType enum. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * This field indicates the entry's source system that Data Catalog does not integrate with. `user_specified_system` strings must begin with a letter or underscore and can only contain
     * letters, numbers, and underscores; are case insensitive; must be at least 1 character and at most 64 characters long.
     */
-  var userSpecifiedSystem: js.UndefOr[String] = js.native
+  var userSpecifiedSystem: js.UndefOr[String] = js.undefined
   
   /**
     * Entry type if it does not fit any of the input-allowed values listed in `EntryType` enum above. When creating an entry, users should check the enum values first, if nothing matches
@@ -64,7 +62,7 @@ trait GoogleCloudDatacatalogV1beta1Entry extends StObject {
     * letters, numbers, and underscores; are case insensitive; must be at least 1 character and at most 64 characters long. Currently, only FILESET enum value is allowed. All other
     * entries created through Data Catalog must use `user_specified_type`.
     */
-  var userSpecifiedType: js.UndefOr[String] = js.native
+  var userSpecifiedType: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1Entry {
   

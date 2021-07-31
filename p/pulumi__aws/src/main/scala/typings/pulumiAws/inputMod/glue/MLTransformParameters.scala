@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MLTransformParameters extends StObject {
   
   /**
     * The parameters for the find matches algorithm. see Find Matches Parameters.
     */
-  var findMatchesParameters: Input[MLTransformParametersFindMatchesParameters] = js.native
+  var findMatchesParameters: Input[MLTransformParametersFindMatchesParameters]
   
   /**
     * The type of machine learning transform. For information about the types of machine learning transforms, see [Creating Machine Learning Transforms](http://docs.aws.amazon.com/glue/latest/dg/add-job-machine-learning-transform.html).
     */
-  var transformType: Input[String] = js.native
+  var transformType: Input[String]
 }
 object MLTransformParameters {
   

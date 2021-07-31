@@ -3,60 +3,58 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotVennClusterOptions extends StObject {
   
   /**
     * (Highcharts, Highmaps) When set to `false` prevent cluster overlapping -
     * this option works only when `layoutAlgorithm.type = "grid"`.
     */
-  var allowOverlap: js.UndefOr[Boolean] = js.native
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Options for the cluster marker animation.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Options for the cluster data labels.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptions] = js.native
+  var dataLabels: js.UndefOr[DataLabelsOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Zoom the plot area to the cluster points range
     * when a cluster is clicked.
     */
-  var drillToCluster: js.UndefOr[Boolean] = js.native
+  var drillToCluster: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Whether to enable the marker-clusters module.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var events: js.UndefOr[PlotVennClusterEventsOptions] = js.native
+  var events: js.UndefOr[PlotVennClusterEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Options for layout algorithm. Inside there are
     * options to change the type of the algorithm, gridSize, distance or
     * iterations.
     */
-  var layoutAlgorithm: js.UndefOr[PlotVennClusterLayoutAlgorithmOptions] = js.native
+  var layoutAlgorithm: js.UndefOr[PlotVennClusterLayoutAlgorithmOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Options for the cluster marker.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highmaps) The minimum amount of points to be combined into a
     * cluster. This value has to be greater or equal to 2.
     */
-  var minimumClusterSize: js.UndefOr[Double] = js.native
+  var minimumClusterSize: js.UndefOr[Double] = js.undefined
   
-  var states: js.UndefOr[PlotVennClusterStatesOptions] = js.native
+  var states: js.UndefOr[PlotVennClusterStatesOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) An array defining zones within marker clusters.
@@ -65,7 +63,7 @@ trait PlotVennClusterOptions extends StObject {
     * `.highcharts-cluster-zone-{n}` class, or custom classed from the
     * `className` option.
     */
-  var zones: js.UndefOr[js.Array[PlotVennClusterZonesOptions]] = js.native
+  var zones: js.UndefOr[js.Array[PlotVennClusterZonesOptions]] = js.undefined
 }
 object PlotVennClusterOptions {
   

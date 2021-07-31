@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.browser.extensionTypes.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,43 +15,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object browsingData {
   
   /** A set of data types. Missing data types are interpreted as `false`. */
-  @js.native
   trait DataTypeSet extends StObject {
     
     /**
       * The browser's cache. Note: when removing data, this clears the _entire_ cache: it is not limited to the range you specify.
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** The browser's cookies. */
-    var cookies: js.UndefOr[Boolean] = js.native
+    var cookies: js.UndefOr[Boolean] = js.undefined
     
     /** The browser's download list. */
-    var downloads: js.UndefOr[Boolean] = js.native
+    var downloads: js.UndefOr[Boolean] = js.undefined
     
     /** The browser's stored form data. */
-    var formData: js.UndefOr[Boolean] = js.native
+    var formData: js.UndefOr[Boolean] = js.undefined
     
     /** The browser's history. */
-    var history: js.UndefOr[Boolean] = js.native
+    var history: js.UndefOr[Boolean] = js.undefined
     
     /** Websites' IndexedDB data. */
-    var indexedDB: js.UndefOr[Boolean] = js.native
+    var indexedDB: js.UndefOr[Boolean] = js.undefined
     
     /** Websites' local storage data. */
-    var localStorage: js.UndefOr[Boolean] = js.native
+    var localStorage: js.UndefOr[Boolean] = js.undefined
     
     /** Stored passwords. */
-    var passwords: js.UndefOr[Boolean] = js.native
+    var passwords: js.UndefOr[Boolean] = js.undefined
     
     /** Plugins' data. */
-    var pluginData: js.UndefOr[Boolean] = js.native
+    var pluginData: js.UndefOr[Boolean] = js.undefined
     
     /** Server-bound certificates. */
-    var serverBoundCertificates: js.UndefOr[Boolean] = js.native
+    var serverBoundCertificates: js.UndefOr[Boolean] = js.undefined
     
     /** Service Workers. */
-    var serviceWorkers: js.UndefOr[Boolean] = js.native
+    var serviceWorkers: js.UndefOr[Boolean] = js.undefined
   }
   object DataTypeSet {
     
@@ -135,21 +133,20 @@ object browsingData {
   
   /* browsingData types */
   /** Options that determine exactly what data will be removed. */
-  @js.native
   trait RemovalOptions extends StObject {
     
     /** Only remove data associated with these hostnames (only applies to cookies and localStorage). */
-    var hostnames: js.UndefOr[js.Array[String]] = js.native
+    var hostnames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An object whose properties specify which origin types ought to be cleared. If this object isn't specified, it defaults to clearing only "unprotected" origins. Please ensure that you _really_ want to remove application data before adding 'protectedWeb' or 'extensions'.
       */
-    var originTypes: js.UndefOr[RemovalOptionsOriginTypes] = js.native
+    var originTypes: js.UndefOr[RemovalOptionsOriginTypes] = js.undefined
     
     /**
       * Remove data accumulated on or after this date, represented in milliseconds since the epoch (accessible via the `getTime` method of the JavaScript `Date` object). If absent, defaults to 0 (which would remove all browsing data).
       */
-    var since: js.UndefOr[Date] = js.native
+    var since: js.UndefOr[Date] = js.undefined
   }
   object RemovalOptions {
     
@@ -188,17 +185,16 @@ object browsingData {
   /**
     * An object whose properties specify which origin types ought to be cleared. If this object isn't specified, it defaults to clearing only "unprotected" origins. Please ensure that you _really_ want to remove application data before adding 'protectedWeb' or 'extensions'.
     */
-  @js.native
   trait RemovalOptionsOriginTypes extends StObject {
     
     /** Extensions and packaged applications a user has installed (be _really_ careful!). */
-    var extension: js.UndefOr[Boolean] = js.native
+    var `extension`: js.UndefOr[Boolean] = js.undefined
     
     /** Websites that have been installed as hosted applications (be careful!). */
-    var protectedWeb: js.UndefOr[Boolean] = js.native
+    var protectedWeb: js.UndefOr[Boolean] = js.undefined
     
     /** Normal websites. */
-    var unprotectedWeb: js.UndefOr[Boolean] = js.native
+    var unprotectedWeb: js.UndefOr[Boolean] = js.undefined
   }
   object RemovalOptionsOriginTypes {
     
@@ -231,20 +227,19 @@ object browsingData {
     }
   }
   
-  @js.native
   trait SettingsReturnResult extends StObject {
     
     /**
       * All of the types will be present in the result, with values of `true` if they are permitted to be removed (e.g., by enterprise policy) and `false` if not.
       */
-    var dataRemovalPermitted: DataTypeSet = js.native
+    var dataRemovalPermitted: DataTypeSet
     
     /**
       * All of the types will be present in the result, with values of `true` if they are both selected to be removed and permitted to be removed, otherwise `false`.
       */
-    var dataToRemove: DataTypeSet = js.native
+    var dataToRemove: DataTypeSet
     
-    var options: RemovalOptions = js.native
+    var options: RemovalOptions
   }
   object SettingsReturnResult {
     

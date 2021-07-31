@@ -2,7 +2,6 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TileLayer {
@@ -13,12 +12,13 @@ object TileLayer {
   
   type Satellite = MapTypeLayer
   
-  @js.native
-  trait Traffic extends Layer {
+  trait Traffic
+    extends StObject
+       with Layer {
     
-    var autoRefresh: Boolean = js.native
+    var autoRefresh: Boolean
     
-    var interval: Double = js.native
+    var interval: Double
   }
   object Traffic {
     

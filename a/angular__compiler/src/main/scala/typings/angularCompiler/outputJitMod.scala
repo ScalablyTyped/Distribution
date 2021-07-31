@@ -7,7 +7,6 @@ import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.outputAstMod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outputJitMod {
@@ -79,6 +78,6 @@ object outputJitMod {
       * @param args The arguments to pass to the function being executed.
       * @returns The return value of the executed function.
       */
-    def executeFunction(fn: js.Function, args: js.Array[_]): js.Any = js.native
+    def executeFunction(fn: js.Function, args: js.Array[js.Any]): js.Any = js.native
   }
 }

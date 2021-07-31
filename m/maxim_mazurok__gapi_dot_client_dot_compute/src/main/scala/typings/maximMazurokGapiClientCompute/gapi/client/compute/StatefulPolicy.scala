@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatefulPolicy extends StObject {
   
-  var preservedState: js.UndefOr[StatefulPolicyPreservedState] = js.native
+  var preservedState: js.UndefOr[StatefulPolicyPreservedState] = js.undefined
 }
 object StatefulPolicy {
   

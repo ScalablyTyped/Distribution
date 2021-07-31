@@ -5,17 +5,15 @@ import typings.qlikEngineapi.anon.QPathSeparator
 import typings.qlikEngineapi.anon.QUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQConfig extends StObject {
   
-  var qFeatures: QIsDesktop = js.native
+  var qFeatures: QIsDesktop
   
-  var qServices: js.Array[QUrl] = js.native
+  var qServices: js.Array[QUrl]
   
-  var qSystemProperties: QPathSeparator = js.native
+  var qSystemProperties: QPathSeparator
 }
 object IQConfig {
   

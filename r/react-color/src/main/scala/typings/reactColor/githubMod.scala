@@ -11,7 +11,6 @@ import typings.reactColor.reactColorStrings.hide
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object githubMod {
@@ -25,19 +24,20 @@ object githubMod {
   trait GithubPicker
     extends Component[GithubPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait GithubPickerProps extends ColorPickerProps[GithubPicker] {
+  trait GithubPickerProps
+    extends StObject
+       with ColorPickerProps[GithubPicker] {
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.native
+    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.undefined
     
     @JSName("styles")
-    var styles_GithubPickerProps: js.UndefOr[PartialClassesGithubPicke] = js.native
+    var styles_GithubPickerProps: js.UndefOr[PartialClassesGithubPicke] = js.undefined
     
-    var triangle: js.UndefOr[hide | `top-left` | `top-right`] = js.native
+    var triangle: js.UndefOr[hide | `top-left` | `top-right`] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object GithubPickerProps {
     
@@ -85,14 +85,13 @@ object githubMod {
     }
   }
   
-  @js.native
   trait GithubPickerStylesProps extends StObject {
     
-    var card: CSSProperties = js.native
+    var card: CSSProperties
     
-    var triangle: CSSProperties = js.native
+    var triangle: CSSProperties
     
-    var triangleShadow: CSSProperties = js.native
+    var triangleShadow: CSSProperties
   }
   object GithubPickerStylesProps {
     

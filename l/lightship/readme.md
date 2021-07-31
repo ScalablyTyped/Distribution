@@ -10,9 +10,9 @@ Abstracts readiness, liveness and startup checks and graceful shutdown of Node.j
 | ------------------ | :-------------: |
 | Full name          | lightship |
 | Keywords           | kubernetes |
-| # releases         | 34 |
-| # dependents       | 9 |
-| # downloads        | 470604 |
+| # releases         | 33 |
+| # dependents       | 11 |
+| # downloads        | 686625 |
 | # stars            | 0 |
 
 ## Links

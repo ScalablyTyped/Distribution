@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationsScopedList extends StObject {
   
   /** [Output Only] A list of operations contained in this scope. */
-  var operations: js.UndefOr[js.Array[Operation]] = js.native
+  var operations: js.UndefOr[js.Array[Operation]] = js.undefined
   
   /** [Output Only] Informational warning which replaces the list of operations when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object OperationsScopedList {
   

@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,7 +25,7 @@ trait DataValidationBuilder extends StObject {
   
   def getCriteriaType(): DataValidationCriteria = js.native
   
-  def getCriteriaValues(): js.Array[_] = js.native
+  def getCriteriaValues(): js.Array[js.Any] = js.native
   
   def getHelpText(): String | Null = js.native
   
@@ -88,5 +87,5 @@ trait DataValidationBuilder extends StObject {
   
   def setHelpText(helpText: String): DataValidationBuilder = js.native
   
-  def withCriteria(criteria: DataValidationCriteria, args: js.Array[_]): DataValidationBuilder = js.native
+  def withCriteria(criteria: DataValidationCriteria, args: js.Array[js.Any]): DataValidationBuilder = js.native
 }

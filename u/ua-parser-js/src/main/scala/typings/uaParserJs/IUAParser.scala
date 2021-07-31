@@ -2,22 +2,20 @@ package typings.uaParserJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IUAParser {
   
-  @js.native
   trait BROWSER extends StObject {
     
     /**
       * @deprecated
       */
-    var MAJOR: String = js.native
+    var MAJOR: String
     
-    var NAME: String = js.native
+    var NAME: String
     
-    var VERSION: String = js.native
+    var VERSION: String
   }
   object BROWSER {
     
@@ -41,10 +39,9 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait CPU extends StObject {
     
-    var ARCHITECTURE: String = js.native
+    var ARCHITECTURE: String
   }
   object CPU {
     
@@ -62,26 +59,25 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait DEVICE extends StObject {
     
-    var CONSOLE: String = js.native
+    var CONSOLE: String
     
-    var EMBEDDED: String = js.native
+    var EMBEDDED: String
     
-    var MOBILE: String = js.native
+    var MOBILE: String
     
-    var MODEL: String = js.native
+    var MODEL: String
     
-    var SMARTTV: String = js.native
+    var SMARTTV: String
     
-    var TABLET: String = js.native
+    var TABLET: String
     
-    var TYPE: String = js.native
+    var TYPE: String
     
-    var VENDOR: String = js.native
+    var VENDOR: String
     
-    var WEARABLE: String = js.native
+    var WEARABLE: String
   }
   object DEVICE {
     
@@ -133,12 +129,11 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait ENGINE extends StObject {
     
-    var NAME: String = js.native
+    var NAME: String
     
-    var VERSION: String = js.native
+    var VERSION: String
   }
   object ENGINE {
     
@@ -159,14 +154,13 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait IBrowser extends StObject {
     
     /**
       * Determined dynamically
       * @deprecated
       */
-    var major: js.UndefOr[String] = js.native
+    var major: js.UndefOr[String] = js.undefined
     
     /**
       * Possible values :
@@ -180,12 +174,12 @@ object IUAParser {
       * Tizen, UCBrowser, Vivaldi, w3m, Yandex
       *
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Determined dynamically
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object IBrowser {
     
@@ -218,7 +212,6 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait ICPU extends StObject {
     
     /**
@@ -226,7 +219,7 @@ object IUAParser {
       *  68k, amd64, arm, arm64, avr, ia32, ia64, irix, irix64, mips, mips64, pa-risc,
       *  ppc, sparc, sparc64
       */
-    var architecture: js.UndefOr[String] = js.native
+    var architecture: js.UndefOr[String] = js.undefined
   }
   object ICPU {
     
@@ -247,19 +240,18 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait IDevice extends StObject {
     
     /**
       * Determined dynamically
       */
-    var model: js.UndefOr[String] = js.native
+    var model: js.UndefOr[String] = js.undefined
     
     /**
       * Possible type:
       * console, mobile, tablet, smarttv, wearable, embedded
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * Possible vendor:
@@ -268,7 +260,7 @@ object IUAParser {
       * Nintendo, Nokia, Nvidia, Ouya, Palm, Panasonic, Polytron, RIM, Samsung, Sharp,
       * Siemens, Sony-Ericsson, Sprint, Xbox, ZTE
       */
-    var vendor: js.UndefOr[String] = js.native
+    var vendor: js.UndefOr[String] = js.undefined
   }
   object IDevice {
     
@@ -301,7 +293,6 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait IEngine extends StObject {
     
     /**
@@ -309,12 +300,12 @@ object IUAParser {
       * Amaya, EdgeHTML, Gecko, iCab, KHTML, Links, Lynx, NetFront, NetSurf, Presto,
       * Tasman, Trident, w3m, WebKit
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Determined dynamically
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object IEngine {
     
@@ -341,7 +332,6 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait IOS extends StObject {
     
     /**
@@ -353,12 +343,12 @@ object IUAParser {
       * RIM Tablet OS, RISC OS, Sailfish, Series40, Slackware, Solaris, SUSE, Symbian, Tizen,
       * Ubuntu, UNIX, VectorLinux, WebOS, Windows [Phone/Mobile], Zenwalk
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Determined dynamically
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object IOS {
     
@@ -385,20 +375,19 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait IResult extends StObject {
     
-    var browser: IBrowser = js.native
+    var browser: IBrowser
     
-    var cpu: ICPU = js.native
+    var cpu: ICPU
     
-    var device: IDevice = js.native
+    var device: IDevice
     
-    var engine: IEngine = js.native
+    var engine: IEngine
     
-    var os: IOS = js.native
+    var os: IOS
     
-    var ua: String = js.native
+    var ua: String
   }
   object IResult {
     
@@ -431,12 +420,11 @@ object IUAParser {
     }
   }
   
-  @js.native
   trait OS extends StObject {
     
-    var NAME: String = js.native
+    var NAME: String
     
-    var VERSION: String = js.native
+    var VERSION: String
   }
   object OS {
     

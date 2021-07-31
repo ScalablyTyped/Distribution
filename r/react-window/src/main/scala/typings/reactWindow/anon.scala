@@ -2,19 +2,17 @@ package typings.reactWindow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Align extends StObject {
     
-    var align: js.UndefOr[typings.reactWindow.mod.Align] = js.native
+    var align: js.UndefOr[typings.reactWindow.mod.Align] = js.undefined
     
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object Align {
     
@@ -47,14 +45,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ColumnIndex extends StObject {
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
   }
   object ColumnIndex {
     
@@ -78,12 +75,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Props[P, S] extends StObject {
     
-    var props: P = js.native
+    var props: P
     
-    var state: S = js.native
+    var state: S
   }
   object Props {
     
@@ -94,7 +90,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_, _], P, S] (val x: Self with (Props[P, S])) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?, ?], P, S] (val x: Self & (Props[P, S])) extends AnyVal {
       
       @scala.inline
       def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
@@ -104,14 +100,13 @@ object anon {
     }
   }
   
-  @js.native
   trait RowIndex extends StObject {
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
-    var shouldForceUpdate: js.UndefOr[Boolean] = js.native
+    var shouldForceUpdate: js.UndefOr[Boolean] = js.undefined
   }
   object RowIndex {
     
@@ -138,12 +133,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ScrollLeft extends StObject {
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object ScrollLeft {
     

@@ -2,21 +2,19 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialSchema extends StObject {
   
-  var attr_names: js.Array[String] = js.native
+  var attr_names: js.Array[String]
   
-  var id: CredentialSchemaID = js.native
+  var id: CredentialSchemaID
   
-  var name: String = js.native
+  var name: String
   
-  var namever: String = js.native
+  var namever: String
   
-  var version: String = js.native
+  var version: String
 }
 object CredentialSchema {
   

@@ -2,15 +2,13 @@ package typings.rdfLoadersRegistry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LoaderRegistry extends StObject {
     
-    var loaderRegistry: typings.rdfLoadersRegistry.mod.LoaderRegistry = js.native
+    var loaderRegistry: typings.rdfLoadersRegistry.mod.LoaderRegistry
   }
   object LoaderRegistry {
     

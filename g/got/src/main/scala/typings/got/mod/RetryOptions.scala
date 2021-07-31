@@ -16,24 +16,22 @@ import typings.got.gotStrings.PUT
 import typings.got.gotStrings.TRACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryOptions extends StObject {
   
   /**
     * Allowed error codes.
     */
-  var errorCodes: js.UndefOr[js.Array[String]] = js.native
+  var errorCodes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var maxRetryAfter: js.UndefOr[Double] = js.native
+  var maxRetryAfter: js.UndefOr[Double] = js.undefined
   
-  var methods: js.UndefOr[js.Array[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE]] = js.native
+  var methods: js.UndefOr[js.Array[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE]] = js.undefined
   
-  var retries: js.UndefOr[Double | RetryFunction] = js.native
+  var retries: js.UndefOr[Double | RetryFunction] = js.undefined
   
-  var statusCodes: js.UndefOr[js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`]] = js.native
+  var statusCodes: js.UndefOr[js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`]] = js.undefined
 }
 object RetryOptions {
   

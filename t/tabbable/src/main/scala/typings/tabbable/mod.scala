@@ -5,36 +5,32 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tabbable", JSImport.Namespace)
-  @js.native
-  def apply(el: Document): js.Array[HTMLElement] = js.native
-  @JSImport("tabbable", JSImport.Namespace)
-  @js.native
-  def apply(el: Document, options: Options): js.Array[HTMLElement] = js.native
-  @JSImport("tabbable", JSImport.Namespace)
-  @js.native
-  def apply(el: Element): js.Array[HTMLElement] = js.native
-  @JSImport("tabbable", JSImport.Namespace)
-  @js.native
-  def apply(el: Element, options: Options): js.Array[HTMLElement] = js.native
+  @scala.inline
+  def apply(el: Document): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def apply(el: Document, options: Options): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def apply(el: Element): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def apply(el: Element, options: Options): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
-  @JSImport("tabbable", "isFocusable")
+  @JSImport("tabbable", JSImport.Namespace)
   @js.native
-  def isFocusable(el: HTMLElement): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tabbable", "isTabbable")
-  @js.native
-  def isTabbable(el: HTMLElement): Boolean = js.native
+  @scala.inline
+  def isFocusable(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocusable")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def isTabbable(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTabbable")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait Options extends StObject {
     
-    var includeContainer: js.UndefOr[Boolean] = js.native
+    var includeContainer: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

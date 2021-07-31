@@ -14,7 +14,6 @@ import typings.reactSwipeableViewsUtils.reactSwipeableViewsUtilsStrings.x
 import typings.reactSwipeableViewsUtils.reactSwipeableViewsUtilsStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,12 +30,11 @@ object mod {
   @js.native
   val virtualize: PropInjector[WithVirtualize, WithVirtualizeProps] = js.native
   
-  @js.native
   trait SlideRenderProps extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var key: Double = js.native
+    var key: Double
   }
   object SlideRenderProps {
     
@@ -59,14 +57,13 @@ object mod {
   
   type SlideRendererCallback = js.Function1[/* render */ SlideRenderProps, ReactNode]
   
-  @js.native
   trait WithAutoPlay extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var onChangeIndex: OnChangeIndexCallback = js.native
+    var onChangeIndex: OnChangeIndexCallback
     
-    var onSwitching: js.UndefOr[OnSwitchingCallback] = js.native
+    var onSwitching: js.UndefOr[OnSwitchingCallback] = js.undefined
   }
   object WithAutoPlay {
     
@@ -93,20 +90,19 @@ object mod {
     }
   }
   
-  @js.native
   trait WithAutoPlayProps extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[incremental | decremental] = js.native
+    var direction: js.UndefOr[incremental | decremental] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var onChangeIndex: OnChangeIndexCallback = js.native
+    var onChangeIndex: OnChangeIndexCallback
     
-    var slideCount: js.UndefOr[Double] = js.native
+    var slideCount: js.UndefOr[Double] = js.undefined
   }
   object WithAutoPlayProps {
     
@@ -151,12 +147,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WithBindKeyboard extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var onChangeIndex: OnChangeIndexCallback = js.native
+    var onChangeIndex: OnChangeIndexCallback
   }
   object WithBindKeyboard {
     
@@ -177,16 +172,15 @@ object mod {
     }
   }
   
-  @js.native
   trait WithBindKeyboardProps extends StObject {
     
-    var axis: js.UndefOr[x | `x-reverse` | y | `y-reverse`] = js.native
+    var axis: js.UndefOr[x | `x-reverse` | y | `y-reverse`] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var onChangeIndex: OnChangeIndexCallback = js.native
+    var onChangeIndex: OnChangeIndexCallback
     
-    var slidecount: js.UndefOr[Double] = js.native
+    var slidecount: js.UndefOr[Double] = js.undefined
   }
   object WithBindKeyboardProps {
     
@@ -221,14 +215,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WithVirtualize extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var onChangeIndex: OnChangeIndexCallback = js.native
+    var onChangeIndex: OnChangeIndexCallback
     
-    def slideRenderer(render: SlideRendererCallback): ReactNode = js.native
+    def slideRenderer(render: SlideRendererCallback): ReactNode
   }
   object WithVirtualize {
     
@@ -256,24 +249,23 @@ object mod {
     }
   }
   
-  @js.native
   trait WithVirtualizeProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var onChangeIndex: OnChangeIndexCallback = js.native
+    var onChangeIndex: OnChangeIndexCallback
     
-    var onTransitionEnd: js.UndefOr[OnTransitionEndCallback] = js.native
+    var onTransitionEnd: js.UndefOr[OnTransitionEndCallback] = js.undefined
     
-    var overscanSlideAfter: js.UndefOr[Double] = js.native
+    var overscanSlideAfter: js.UndefOr[Double] = js.undefined
     
-    var overscanSlideBefore: js.UndefOr[Double] = js.native
+    var overscanSlideBefore: js.UndefOr[Double] = js.undefined
     
-    var slideCount: js.UndefOr[Double] = js.native
+    var slideCount: js.UndefOr[Double] = js.undefined
     
-    var slideRenderer: SlideRendererCallback = js.native
+    var slideRenderer: SlideRendererCallback
   }
   object WithVirtualizeProps {
     

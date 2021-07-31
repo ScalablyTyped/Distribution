@@ -6,13 +6,11 @@ import typings.victory.anon.`2`
 import typings.victory.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Common properties
   */
-@js.native
 trait VictoryCommonProps extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait VictoryCommonProps extends StObject {
     * @example
     * {duration: 500, onExit: () => {}, onEnter: {duration: 500, before: () => ({y: 0})}}
     */
-  var animate: js.UndefOr[Boolean | AnimatePropTypeInterface] = js.native
+  var animate: js.UndefOr[Boolean | AnimatePropTypeInterface] = js.undefined
   
   /**
     * The containerComponent prop takes an entire component which will be used to
@@ -39,7 +37,7 @@ trait VictoryCommonProps extends StObject {
     * @example <VictoryContainer title="Chart of Dog Breeds" desc="This chart shows how popular each dog breed is by percentage in Seattle." />
     * @default <VictoryContainer/>
     */
-  var containerComponent: js.UndefOr[ReactElement] = js.native
+  var containerComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The groupComponent prop takes an entire component which will be used to
@@ -47,13 +45,13 @@ trait VictoryCommonProps extends StObject {
     * to a <g> tag on web, and a react-native-svg <G> tag on mobile
     * @default <g/>
     */
-  var groupComponent: js.UndefOr[ReactElement] = js.native
+  var groupComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The height props specifies the height the svg viewBox of the chart container.
     * This value should be given as a number of pixels
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The horizontal prop determines whether data will be plotted horizontally.
@@ -61,7 +59,7 @@ trait VictoryCommonProps extends StObject {
     * and the dependent variable will be plotted on the x axis.
     * @default false
     */
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maxDomain prop defines a maximum domain value for a chart. This prop is useful in
@@ -73,7 +71,7 @@ trait VictoryCommonProps extends StObject {
     * and the y value refers to the dependent variable. This may cause confusion in
     * horizontal charts, as the independent variable will corresponds to the y axis.
     */
-  var maxDomain: js.UndefOr[Double | `0`] = js.native
+  var maxDomain: js.UndefOr[Double | `0`] = js.undefined
   
   /**
     * The minDomain prop defines a minimum domain value for a chart. This prop is useful in
@@ -85,12 +83,12 @@ trait VictoryCommonProps extends StObject {
     * and the y value refers to the dependent variable. This may cause confusion in
     * horizontal charts, as the independent variable will corresponds to the y axis.
     */
-  var minDomain: js.UndefOr[Double | `0`] = js.native
+  var minDomain: js.UndefOr[Double | `0`] = js.undefined
   
   /**
     * The name prop is used to reference a component instance when defining shared events.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The padding props specifies the amount of padding in number of pixels between
@@ -99,7 +97,7 @@ trait VictoryCommonProps extends StObject {
     * and right.
     * @default 50
     */
-  var padding: js.UndefOr[PaddingProps] = js.native
+  var padding: js.UndefOr[PaddingProps] = js.undefined
   
   /**
     * The scale prop determines which scales your chart should use. This prop can be
@@ -108,7 +106,7 @@ trait VictoryCommonProps extends StObject {
     * @example d3Scale.time(), {x: "linear", y: "log"}
     * @default "linear"
     */
-  var scale: js.UndefOr[ScalePropType | D3Scale | `2`] = js.native
+  var scale: js.UndefOr[ScalePropType | D3Scale | `2`] = js.undefined
   
   /**
     * By default `domainPadding` is coerced to existing quadrants. This means that if a given domain only
@@ -123,7 +121,7 @@ trait VictoryCommonProps extends StObject {
     * and the `y` value refers to the *dependent* variable. This may cause confusion in horizontal charts, as the
     * independent variable will corresponds to the y axis.
     */
-  var singleQuadrantDomainPadding: js.UndefOr[Boolean | `3`] = js.native
+  var singleQuadrantDomainPadding: js.UndefOr[Boolean | `3`] = js.undefined
   
   /**
     * The standalone prop determines whether the component will render a standalone svg
@@ -131,7 +129,7 @@ trait VictoryCommonProps extends StObject {
     * compose VictoryAxis with other components within an enclosing <svg> tag.
     * @default true
     */
-  var standalone: js.UndefOr[Boolean] = js.native
+  var standalone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The theme prop takes a style object with nested data, labels, and parent objects.
@@ -142,13 +140,13 @@ trait VictoryCommonProps extends StObject {
     * @example theme={VictoryTheme.material}
     * http://www.github.com/FormidableLabs/victory-core/tree/master/src/victory-theme/material.js
     */
-  var theme: js.UndefOr[VictoryThemeDefinition] = js.native
+  var theme: js.UndefOr[VictoryThemeDefinition] = js.undefined
   
   /**
     * The width props specifies the width of the svg viewBox of the chart container
     * This value should be given as a number of pixels
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object VictoryCommonProps {
   

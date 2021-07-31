@@ -18,28 +18,26 @@ import typings.rockset.rocksetStrings.ROLE_NOT_FOUND
 import typings.rockset.rocksetStrings.VERSIONEXCEPTION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorModel extends StObject {
   
   // Column where the error happened (if applicable)
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
   // Line where the error happened (if applicable)
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
   // descriptive message about the error
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   // Internal trace ID to help with debugging
-  var trace_id: js.UndefOr[String] = js.native
+  var trace_id: js.UndefOr[String] = js.undefined
   
   // category of the error
   var `type`: js.UndefOr[
     AUTHEXCEPTION | VERSIONEXCEPTION | INTERNALERROR | INVALIDINPUT | NOTIMPLEMENTEDYET | RESOURCEEXCEEDED | ALREADYEXISTS | NOTFOUND | DEPENDENTRESOURCES | QUERY_ERROR | NOT_READY | FORBIDDEN | QUERY_TIMEOUT | INTEGRATION_NOT_FOUND | ROLE_NOT_FOUND | CONNECTION_ERROR
-  ] = js.native
+  ] = js.undefined
 }
 object ErrorModel {
   

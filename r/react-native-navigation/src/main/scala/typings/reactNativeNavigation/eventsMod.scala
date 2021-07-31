@@ -2,15 +2,13 @@ package typings.reactNativeNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  @js.native
   trait BottomTabLongPressedEvent extends StObject {
     
-    var selectedTabIndex: Double = js.native
+    var selectedTabIndex: Double
   }
   object BottomTabLongPressedEvent {
     
@@ -28,10 +26,9 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait BottomTabPressedEvent extends StObject {
     
-    var tabIndex: Double = js.native
+    var tabIndex: Double
   }
   object BottomTabPressedEvent {
     
@@ -49,12 +46,11 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait BottomTabSelectedEvent extends StObject {
     
-    var selectedTabIndex: Double = js.native
+    var selectedTabIndex: Double
     
-    var unselectedTabIndex: Double = js.native
+    var unselectedTabIndex: Double
   }
   object BottomTabSelectedEvent {
     
@@ -75,14 +71,13 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait CommandCompletedEvent extends StObject {
     
-    var commandId: String = js.native
+    var commandId: String
     
-    var commandName: String = js.native
+    var commandName: String
     
-    var completionTime: Double = js.native
+    var completionTime: Double
   }
   object CommandCompletedEvent {
     

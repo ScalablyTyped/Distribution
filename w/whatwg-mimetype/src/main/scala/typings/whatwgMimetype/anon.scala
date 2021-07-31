@@ -2,15 +2,13 @@ package typings.whatwgMimetype
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllowParameters extends StObject {
     
-    var allowParameters: js.UndefOr[Boolean] = js.native
+    var allowParameters: js.UndefOr[Boolean] = js.undefined
   }
   object AllowParameters {
     

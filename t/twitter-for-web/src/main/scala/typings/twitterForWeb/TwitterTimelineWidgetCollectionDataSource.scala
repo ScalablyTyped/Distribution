@@ -3,21 +3,21 @@ package typings.twitterForWeb
 import typings.twitterForWeb.twitterForWebStrings.collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TwitterTimelineWidgetCollectionDataSource extends _TwitterTimelineWidgetDataSource {
+trait TwitterTimelineWidgetCollectionDataSource
+  extends StObject
+     with _TwitterTimelineWidgetDataSource {
   
-  var id: String = js.native
+  var id: String
   
-  var sourceType: collection = js.native
+  var sourceType: collection
 }
 object TwitterTimelineWidgetCollectionDataSource {
   
   @scala.inline
-  def apply(id: String, sourceType: collection): TwitterTimelineWidgetCollectionDataSource = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+  def apply(id: String): TwitterTimelineWidgetCollectionDataSource = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "collection")
     __obj.asInstanceOf[TwitterTimelineWidgetCollectionDataSource]
   }
   

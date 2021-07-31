@@ -2,21 +2,21 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Process extends ProcessReference {
+trait Process
+  extends StObject
+     with ProcessReference {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var description: String = js.native
+  var description: String
   
-  var id: String = js.native
+  var id: String
   
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
   
-  var `type`: ProcessType = js.native
+  var `type`: ProcessType
 }
 object Process {
   

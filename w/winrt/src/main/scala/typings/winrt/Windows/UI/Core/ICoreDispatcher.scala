@@ -3,19 +3,19 @@ package typings.winrt.Windows.UI.Core
 import typings.winrt.Windows.Foundation.IAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICoreDispatcher extends ICoreAcceleratorKeys {
+trait ICoreDispatcher
+  extends StObject
+     with ICoreAcceleratorKeys {
   
-  var hasThreadAccess: Boolean = js.native
+  var hasThreadAccess: Boolean
   
-  def processEvents(options: CoreProcessEventsOption): Unit = js.native
+  def processEvents(options: CoreProcessEventsOption): Unit
   
-  def runAsync(priority: CoreDispatcherPriority, agileCallback: DispatchedHandler): IAsyncAction = js.native
+  def runAsync(priority: CoreDispatcherPriority, agileCallback: DispatchedHandler): IAsyncAction
   
-  def runIdleAsync(agileCallback: IdleDispatchedHandler): IAsyncAction = js.native
+  def runIdleAsync(agileCallback: IdleDispatchedHandler): IAsyncAction
 }
 object ICoreDispatcher {
   

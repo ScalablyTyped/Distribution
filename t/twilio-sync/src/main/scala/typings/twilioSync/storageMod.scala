@@ -4,14 +4,15 @@ import typings.twilioSync.servicesMod.Configuration
 import typings.twilioSync.servicesMod.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
   
   @JSImport("twilio-sync/lib/services/storage", "SessionStorage")
   @js.native
-  class SessionStorage protected () extends Storage {
+  class SessionStorage protected ()
+    extends StObject
+       with Storage {
     def this(config: Configuration) = this()
     def this(config: Configuration, storage: StorageBackend) = this()
     
@@ -25,21 +26,35 @@ object storageMod {
     
     /* private */ def isReady: js.Any = js.native
     
+    /* CompleteClass */
+    override def read(`type`: String, id: String): js.Object = js.native
+    
+    /* CompleteClass */
+    override def remove(`type`: String, sid: String, uniqueName: String): js.Any = js.native
+    
     val storage: js.Any = js.native
     
     var storageId: js.Any = js.native
     
     var storageKey: js.Any = js.native
+    
+    /* CompleteClass */
+    override def store(`type`: String, id: String, value: js.Object): js.Any = js.native
+    
+    /* CompleteClass */
+    override def update(`type`: String, id: String, uniqueName: String, patch: js.Object): js.Any = js.native
+    
+    /* CompleteClass */
+    override def updateStorageId(storageId: String): js.Any = js.native
   }
   
-  @js.native
   trait StorageBackend extends StObject {
     
-    def getItem(key: String): String = js.native
+    def getItem(key: String): String
     
-    def removeItem(key: String): Unit = js.native
+    def removeItem(key: String): Unit
     
-    def setItem(key: String, value: String): Unit = js.native
+    def setItem(key: String, value: String): Unit
   }
   object StorageBackend {
     

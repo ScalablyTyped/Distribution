@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait MarkerAlignment extends StObject
 object MarkerAlignment extends StObject {
   
   @js.native
-  sealed trait center extends MarkerAlignment
+  sealed trait center
+    extends StObject
+       with MarkerAlignment
   
   @js.native
-  sealed trait left extends MarkerAlignment
+  sealed trait left
+    extends StObject
+       with MarkerAlignment
   
   @js.native
-  sealed trait right extends MarkerAlignment
+  sealed trait right
+    extends StObject
+       with MarkerAlignment
   
   @js.native
-  sealed trait undefined extends MarkerAlignment
+  sealed trait undefined
+    extends StObject
+       with MarkerAlignment
 }

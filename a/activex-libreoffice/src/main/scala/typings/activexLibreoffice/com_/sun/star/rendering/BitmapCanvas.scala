@@ -13,13 +13,12 @@ import typings.activexLibreoffice.com_.sun.star.geometry.XMapping2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service provides the interfaces for a {@link XBitmapCanvas} */
-@js.native
 trait BitmapCanvas
-  extends XBitmapCanvas
+  extends StObject
+     with XBitmapCanvas
      with XBitmap
 object BitmapCanvas {
   

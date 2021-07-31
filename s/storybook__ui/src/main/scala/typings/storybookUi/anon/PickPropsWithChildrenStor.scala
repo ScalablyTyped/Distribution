@@ -3,16 +3,14 @@ package typings.storybookUi.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react.react.PropsWithChildren<@storybook/components.@storybook/components/dist/brand/StorybookLogo.StorybookLogoProps>, 'children' | 'alt'> */
-@js.native
 trait PickPropsWithChildrenStor extends StObject {
   
-  var alt: String = js.native
+  var alt: String
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
 }
 object PickPropsWithChildrenStor {
   

@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -51,9 +50,8 @@ object NanoflowCall {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowCall.create")
-  @js.native
-  def create(model: IModel): NanoflowCall = js.native
+  @scala.inline
+  def create(model: IModel): NanoflowCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NanoflowCall]
   
   /**
     * Creates and returns a new NanoflowCall instance in the SDK and on the server.
@@ -64,9 +62,8 @@ object NanoflowCall {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowCall.createIn")
-  @js.native
-  def createIn(container: NanoflowCallAction): NanoflowCall = js.native
+  @scala.inline
+  def createIn(container: NanoflowCallAction): NanoflowCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NanoflowCall]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowCall.structureTypeName")

@@ -7,15 +7,70 @@ import typings.playable.playTypesMod.IPlayViewConfig
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/play/play", JSImport.Default)
   @js.native
-  class default protected () extends PlayControl {
+  class default protected ()
+    extends StObject
+       with PlayControl {
     def this(hasEngineEventEmitterTextMapTheme: Theme) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _destroyInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initInterceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _interceptor: js.Any = js.native
+    
+    /* CompleteClass */
+    var _pauseVideo: js.Any = js.native
+    
+    /* CompleteClass */
+    var _playVideo: js.Any = js.native
+    
+    /* CompleteClass */
+    var _textMap: js.Any = js.native
+    
+    /* CompleteClass */
+    var _theme: js.Any = js.native
+    
+    /* CompleteClass */
+    var _togglePlayback: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updatePlayingState: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.playViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -43,40 +98,41 @@ object playMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait PlayControl extends IPlayControl {
+  trait PlayControl
+    extends StObject
+       with IPlayControl {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _interceptor: js.Any = js.native
+    var _interceptor: js.Any
     
-    var _pauseVideo: js.Any = js.native
+    var _pauseVideo: js.Any
     
-    var _playVideo: js.Any = js.native
+    var _playVideo: js.Any
     
-    var _textMap: js.Any = js.native
+    var _textMap: js.Any
     
-    var _theme: js.Any = js.native
+    var _theme: js.Any
     
-    var _togglePlayback: js.Any = js.native
+    var _togglePlayback: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var _updatePlayingState: js.Any = js.native
+    var _updatePlayingState: js.Any
     
-    var view: typings.playable.playViewMod.default = js.native
+    var view: typings.playable.playViewMod.default
   }
   object PlayControl {
     

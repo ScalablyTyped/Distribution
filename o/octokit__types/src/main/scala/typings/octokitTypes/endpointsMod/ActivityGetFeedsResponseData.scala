@@ -3,29 +3,27 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Currentuser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityGetFeedsResponseData extends StObject {
   
-  var _links: Currentuser = js.native
+  var _links: Currentuser
   
-  var current_user_actor_url: String = js.native
+  var current_user_actor_url: String
   
-  var current_user_organization_url: String = js.native
+  var current_user_organization_url: String
   
-  var current_user_organization_urls: js.Array[String] = js.native
+  var current_user_organization_urls: js.Array[String]
   
-  var current_user_public_url: String = js.native
+  var current_user_public_url: String
   
-  var current_user_url: String = js.native
+  var current_user_url: String
   
-  var security_advisories_url: String = js.native
+  var security_advisories_url: String
   
-  var timeline_url: String = js.native
+  var timeline_url: String
   
-  var user_url: String = js.native
+  var user_url: String
 }
 object ActivityGetFeedsResponseData {
   

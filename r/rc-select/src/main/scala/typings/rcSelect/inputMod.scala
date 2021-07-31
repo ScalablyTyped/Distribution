@@ -20,54 +20,52 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod extends Shortcut {
   
   @JSImport("rc-select/lib/Selector/Input", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[InputProps with RefAttributes[InputRef]] = js.native
+  val default: ForwardRefExoticComponent[InputProps & RefAttributes[InputRef]] = js.native
   
-  @js.native
   trait InputProps extends StObject {
     
-    var accessibilityIndex: Double = js.native
+    var accessibilityIndex: Double
     
     /** Pass accessibility props to input */
-    var attrs: js.Object = js.native
+    var attrs: js.Object
     
-    var autoComplete: String = js.native
+    var autoComplete: String
     
-    var autoFocus: Boolean = js.native
+    var autoFocus: Boolean
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var editable: Boolean = js.native
+    var editable: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var inputElement: ReactElement = js.native
+    var inputElement: ReactElement
     
-    var onChange: ChangeEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement] = js.native
+    var onChange: ChangeEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement]
     
-    var onCompositionEnd: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement] = js.native
+    var onCompositionEnd: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement]
     
-    var onCompositionStart: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement] = js.native
+    var onCompositionStart: CompositionEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement]
     
-    var onKeyDown: KeyboardEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement] = js.native
+    var onKeyDown: KeyboardEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement]
     
-    var onMouseDown: MouseEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement] = js.native
+    var onMouseDown: MouseEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement]
     
-    var onPaste: ClipboardEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement] = js.native
+    var onPaste: ClipboardEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement]
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var tabIndex: Double = js.native
+    var tabIndex: Double
     
-    var value: String = js.native
+    var value: String
   }
   object InputProps {
     
@@ -157,8 +155,8 @@ object inputMod extends Shortcut {
   
   type InputRef = HTMLInputElement | HTMLTextAreaElement
   
-  type _To = ForwardRefExoticComponent[InputProps with RefAttributes[InputRef]]
+  type _To = ForwardRefExoticComponent[InputProps & RefAttributes[InputRef]]
   
   /* This means you don't have to write `default`, but can instead just say `inputMod.foo` */
-  override def _to: ForwardRefExoticComponent[InputProps with RefAttributes[InputRef]] = default
+  override def _to: ForwardRefExoticComponent[InputProps & RefAttributes[InputRef]] = default
 }

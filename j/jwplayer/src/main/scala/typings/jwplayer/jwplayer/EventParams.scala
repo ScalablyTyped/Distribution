@@ -2,91 +2,89 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventParams extends StObject {
   
-  var adClick: AdProgressParam = js.native
+  var adClick: AdProgressParam
   
-  var adCompanions: AdCompanionsParam = js.native
+  var adCompanions: AdCompanionsParam
   
-  var adComplete: AdProgressParam = js.native
+  var adComplete: AdProgressParam
   
-  var adError: AdErrorParam = js.native
+  var adError: AdErrorParam
   
-  var adImpression: AdImpressionParam = js.native
+  var adImpression: AdImpressionParam
   
-  var adPause: AdPlayParam = js.native
+  var adPause: AdPlayParam
   
-  var adPlay: AdPlayParam = js.native
+  var adPlay: AdPlayParam
   
-  var adRequest: AdRequestParam = js.native
+  var adRequest: AdRequestParam
   
-  var adSchedule: AdScheduleParam = js.native
+  var adSchedule: AdScheduleParam
   
-  var adSkipped: AdProgressParam = js.native
+  var adSkipped: AdProgressParam
   
-  var adStarted: AdStartedParam = js.native
+  var adStarted: AdStartedParam
   
-  var adTime: AdTimeParam = js.native
+  var adTime: AdTimeParam
   
-  var audioTrackChanged: AudioTrackChangedParam = js.native
+  var audioTrackChanged: AudioTrackChangedParam
   
-  var audioTracks: AudioTracksParam = js.native
+  var audioTracks: AudioTracksParam
   
-  var buffer: BufferParam = js.native
+  var buffer: BufferParam
   
-  var bufferChange: BufferChangeParam = js.native
+  var bufferChange: BufferChangeParam
   
-  var captionsChanged: CaptionsChangedParam = js.native
+  var captionsChanged: CaptionsChangedParam
   
-  var captionsList: CaptionsListParam = js.native
+  var captionsList: CaptionsListParam
   
-  var cast: CastParam = js.native
+  var cast: CastParam
   
-  var controls: ControlsParam = js.native
+  var controls: ControlsParam
   
-  var error: ErrorParam = js.native
+  var error: ErrorParam
   
-  var firstFrame: FirstFrameParam = js.native
+  var firstFrame: FirstFrameParam
   
-  var fullscreen: FullscreenParam = js.native
+  var fullscreen: FullscreenParam
   
-  var idle: IdleParam = js.native
+  var idle: IdleParam
   
-  var levels: LevelsParam = js.native
+  var levels: LevelsParam
   
-  var levelsChanged: LevelsChangedParam = js.native
+  var levelsChanged: LevelsChangedParam
   
-  var meta: MetadataParam = js.native
+  var meta: MetadataParam
   
-  var mute: MuteParam = js.native
+  var mute: MuteParam
   
-  var pause: PlayParam = js.native
+  var pause: PlayParam
   
-  var play: PlayParam = js.native
+  var play: PlayParam
   
-  var playbackRateChanged: PlaybackRateChangedParam = js.native
+  var playbackRateChanged: PlaybackRateChangedParam
   
-  var playlist: PlaylistParam = js.native
+  var playlist: PlaylistParam
   
-  var playlistItem: PlaylistItemParam = js.native
+  var playlistItem: PlaylistItemParam
   
-  var ready: ReadyParam = js.native
+  var ready: ReadyParam
   
-  var resize: ResizeParam = js.native
+  var resize: ResizeParam
   
-  var seek: SeekParam = js.native
+  var seek: SeekParam
   
-  var setupError: ErrorParam = js.native
+  var setupError: ErrorParam
   
-  var time: TimeParam = js.native
+  var time: TimeParam
   
-  var visualQuality: VisualQualityParam = js.native
+  var visualQuality: VisualQualityParam
   
-  var volume: VolumeParam = js.native
+  var volume: VolumeParam
 }
 object EventParams {
   

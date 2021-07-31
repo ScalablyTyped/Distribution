@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p2beta1ImageProperties extends StObject {
   
   /** If present, dominant colors completed successfully. */
-  var dominantColors: js.UndefOr[GoogleCloudVisionV1p2beta1DominantColorsAnnotation] = js.native
+  var dominantColors: js.UndefOr[GoogleCloudVisionV1p2beta1DominantColorsAnnotation] = js.undefined
 }
 object GoogleCloudVisionV1p2beta1ImageProperties {
   

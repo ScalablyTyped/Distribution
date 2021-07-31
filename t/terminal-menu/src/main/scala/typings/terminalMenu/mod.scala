@@ -4,7 +4,6 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,19 +11,23 @@ object mod {
   /**
     * Creates a TerminalMenu with default settings.
     */
-  @JSImport("terminal-menu", JSImport.Namespace)
-  @js.native
-  def apply(): TerminalMenu = js.native
+  @scala.inline
+  def apply(): TerminalMenu = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[TerminalMenu]
   /**
     * Creates a TerminalMenu using options to override default settings.
     * @param options Override values for available settings.
     */
+  @scala.inline
+  def apply(options: TerminalMenuOptions): TerminalMenu = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[TerminalMenu]
+  
   @JSImport("terminal-menu", JSImport.Namespace)
   @js.native
-  def apply(options: TerminalMenuOptions): TerminalMenu = js.native
+  val ^ : js.Any = js.native
   
   @js.native
-  trait TerminalMenu extends EventEmitter {
+  trait TerminalMenu
+    extends StObject
+       with EventEmitter {
     
     /**
       * Create a new selectable menu item with label as the anchor.
@@ -68,20 +71,19 @@ object mod {
     def write(msg: String): Unit = js.native
   }
   
-  @js.native
   trait TerminalMenuOptions extends StObject {
     
     /**
       * Background color for the menu.
       * Default = 'blue'
       */
-    var bg: js.UndefOr[String] = js.native
+    var bg: js.UndefOr[String] = js.undefined
     
     /**
       * Foreground color for the menu.
       * Default = 'white'
       */
-    var fg: js.UndefOr[String] = js.native
+    var fg: js.UndefOr[String] = js.undefined
     
     /**
       * Padding for the bounding rectangle.
@@ -94,31 +96,31 @@ object mod {
       *      bottom: 1
       * }
       */
-    var padding: js.UndefOr[Double | Thickness] = js.native
+    var padding: js.UndefOr[Double | Thickness] = js.undefined
     
     /**
       * Index of the menu item to be selected.
       * Default = 0
       */
-    var selected: js.UndefOr[Double] = js.native
+    var selected: js.UndefOr[Double] = js.undefined
     
     /**
       * Menu width in columns.
       * Default = 50.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Horizontal offset for top-left corner.
       * Default = 1
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * Vertical offset for top-left corner.
       * Default = 1
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object TerminalMenuOptions {
     
@@ -175,28 +177,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Thickness extends StObject {
     
     /**
       * Represents width of the lower side of the bounding rectangle.
       */
-    var bottom: Double = js.native
+    var bottom: Double
     
     /**
       * Represents width of the left side of the bounding rectangle.
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * Represents width of the right side of the bounding rectangle.
       */
-    var right: Double = js.native
+    var right: Double
     
     /**
       * Represents width of the upper side of the bounding rectangle.
       */
-    var top: Double = js.native
+    var top: Double
   }
   object Thickness {
     

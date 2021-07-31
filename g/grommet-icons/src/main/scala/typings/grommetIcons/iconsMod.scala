@@ -9,7 +9,6 @@ import typings.react.mod.SVGProps
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconsMod {
@@ -2462,16 +2461,15 @@ object iconsMod {
   @js.native
   val ZoomOut: Icon = js.native
   
-  type Icon = ComponentType[IconProps with SVGProps[SVGSVGElement]]
+  type Icon = ComponentType[IconProps & SVGProps[SVGSVGElement]]
   
-  @js.native
   trait IconProps extends StObject {
     
-    var a11yTitle: js.UndefOr[String] = js.native
+    var a11yTitle: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
   }
   object IconProps {
     

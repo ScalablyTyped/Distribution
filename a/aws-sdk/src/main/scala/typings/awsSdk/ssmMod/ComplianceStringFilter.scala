@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceStringFilter extends StObject {
   
   /**
     * The name of the filter.
     */
-  var Key: js.UndefOr[ComplianceStringFilterKey] = js.native
+  var Key: js.UndefOr[ComplianceStringFilterKey] = js.undefined
   
   /**
     * The type of comparison that should be performed for the value: Equal, NotEqual, BeginWith, LessThan, or GreaterThan.
     */
-  var Type: js.UndefOr[ComplianceQueryOperatorType] = js.native
+  var Type: js.UndefOr[ComplianceQueryOperatorType] = js.undefined
   
   /**
     * The value for which to search.
     */
-  var Values: js.UndefOr[ComplianceStringFilterValueList] = js.native
+  var Values: js.UndefOr[ComplianceStringFilterValueList] = js.undefined
 }
 object ComplianceStringFilter {
   

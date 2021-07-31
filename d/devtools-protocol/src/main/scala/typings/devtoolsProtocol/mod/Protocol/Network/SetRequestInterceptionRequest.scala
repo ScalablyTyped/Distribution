@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRequestInterceptionRequest extends StObject {
   
   /**
     * Requests matching any of these patterns will be forwarded and wait for the corresponding
     * continueInterceptedRequest call.
     */
-  var patterns: js.Array[RequestPattern] = js.native
+  var patterns: js.Array[RequestPattern]
 }
 object SetRequestInterceptionRequest {
   

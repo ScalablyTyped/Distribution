@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconSymbol3DLayerResource extends Object {
+trait IconSymbol3DLayerResource
+  extends StObject
+     with Object {
   
   /**
     * The URL or data URI for the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
     */
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
   /**
     * Uses a built-in shape.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
     */
-  var primitive: js.UndefOr[String] = js.native
+  var primitive: js.UndefOr[String] = js.undefined
 }
 object IconSymbol3DLayerResource {
   

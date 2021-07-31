@@ -2,31 +2,29 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentityPoolUsageResponse extends StObject {
   
   /**
     * Total number of identities for the identity pool.
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     * Usage information for the identity pools.
     */
-  var IdentityPoolUsages: js.UndefOr[IdentityPoolUsageList] = js.native
+  var IdentityPoolUsages: js.UndefOr[IdentityPoolUsageList] = js.undefined
   
   /**
     * The maximum number of results to be returned.
     */
-  var MaxResults: js.UndefOr[Integer] = js.native
+  var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * A pagination token for obtaining the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListIdentityPoolUsageResponse {
   

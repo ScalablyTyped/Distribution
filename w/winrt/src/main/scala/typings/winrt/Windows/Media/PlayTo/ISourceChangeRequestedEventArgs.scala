@@ -6,31 +6,29 @@ import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISourceChangeRequestedEventArgs extends StObject {
   
-  var album: String = js.native
+  var album: String
   
-  var author: String = js.native
+  var author: String
   
-  var date: Date = js.native
+  var date: Date
   
-  var description: String = js.native
+  var description: String
   
-  var genre: String = js.native
+  var genre: String
   
-  var properties: IMapView[String, _] = js.native
+  var properties: IMapView[String, js.Any]
   
-  var rating: Double = js.native
+  var rating: Double
   
-  var stream: IRandomAccessStreamWithContentType = js.native
+  var stream: IRandomAccessStreamWithContentType
   
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
   
-  var title: String = js.native
+  var title: String
 }
 object ISourceChangeRequestedEventArgs {
   
@@ -41,7 +39,7 @@ object ISourceChangeRequestedEventArgs {
     date: Date,
     description: String,
     genre: String,
-    properties: IMapView[String, _],
+    properties: IMapView[String, js.Any],
     rating: Double,
     stream: IRandomAccessStreamWithContentType,
     thumbnail: IRandomAccessStreamReference,
@@ -70,7 +68,7 @@ object ISourceChangeRequestedEventArgs {
     def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IMapView[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])

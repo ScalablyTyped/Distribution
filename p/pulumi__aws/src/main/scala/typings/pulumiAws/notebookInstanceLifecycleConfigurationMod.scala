@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notebookInstanceLifecycleConfigurationMod {
@@ -24,7 +23,7 @@ object notebookInstanceLifecycleConfigurationMod {
       */
     def this(name: String) = this()
     def this(name: String, args: NotebookInstanceLifecycleConfigurationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: NotebookInstanceLifecycleConfigurationArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -50,6 +49,10 @@ object notebookInstanceLifecycleConfigurationMod {
   /* static members */
   object NotebookInstanceLifecycleConfiguration {
     
+    @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NotebookInstanceLifecycleConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -59,50 +62,44 @@ object notebookInstanceLifecycleConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NotebookInstanceLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NotebookInstanceLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotebookInstanceLifecycleConfigurationState): NotebookInstanceLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotebookInstanceLifecycleConfigurationState): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: NotebookInstanceLifecycleConfigurationState,
       opts: CustomResourceOptions
-    ): NotebookInstanceLifecycleConfiguration = js.native
+    ): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
     
     /**
       * Returns true if the given object is an instance of NotebookInstanceLifecycleConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration", "NotebookInstanceLifecycleConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean]
   }
   
-  @js.native
   trait NotebookInstanceLifecycleConfigurationArgs extends StObject {
     
     /**
       * The name of the lifecycle configuration (must be unique). If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A shell script (base64-encoded) that runs only once when the SageMaker Notebook Instance is created.
       */
-    val onCreate: js.UndefOr[Input[String]] = js.native
+    val onCreate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A shell script (base64-encoded) that runs every time the SageMaker Notebook Instance is started including the time it's created.
       */
-    val onStart: js.UndefOr[Input[String]] = js.native
+    val onStart: js.UndefOr[Input[String]] = js.undefined
   }
   object NotebookInstanceLifecycleConfigurationArgs {
     
@@ -135,28 +132,27 @@ object notebookInstanceLifecycleConfigurationMod {
     }
   }
   
-  @js.native
   trait NotebookInstanceLifecycleConfigurationState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) assigned by AWS to this lifecycle configuration.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the lifecycle configuration (must be unique). If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A shell script (base64-encoded) that runs only once when the SageMaker Notebook Instance is created.
       */
-    val onCreate: js.UndefOr[Input[String]] = js.native
+    val onCreate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A shell script (base64-encoded) that runs every time the SageMaker Notebook Instance is started including the time it's created.
       */
-    val onStart: js.UndefOr[Input[String]] = js.native
+    val onStart: js.UndefOr[Input[String]] = js.undefined
   }
   object NotebookInstanceLifecycleConfigurationState {
     

@@ -3,87 +3,64 @@ package typings.javascriptStringify
 import typings.javascriptStringify.typesMod.ToString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("javascript-stringify", "stringify")
+  @JSImport("javascript-stringify", JSImport.Namespace)
   @js.native
-  def stringify(value: js.Any): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(
-    value: js.Any,
-    replacer: js.UndefOr[scala.Nothing],
-    indent: js.UndefOr[scala.Nothing],
-    options: Options
-  ): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], indent: String): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], indent: String, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], indent: Double): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], indent: Double, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], indent: Null, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, indent: js.UndefOr[scala.Nothing], options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, indent: String): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, indent: String, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, indent: Double): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, indent: Double, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, indent: Null, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: ToString): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: ToString, indent: js.UndefOr[scala.Nothing], options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: ToString, indent: String): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: ToString, indent: String, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: ToString, indent: Double): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: ToString, indent: Double, options: Options): js.UndefOr[String] = js.native
-  @JSImport("javascript-stringify", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: ToString, indent: Null, options: Options): js.UndefOr[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def stringify(value: js.Any): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, indent: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, indent: String, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, indent: Double): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, indent: Double, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, indent: Null, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, indent: Unit, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, indent: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, indent: String, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, indent: Double): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, indent: Double, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, indent: Null, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, indent: Unit, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: ToString): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: ToString, indent: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: ToString, indent: String, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: ToString, indent: Double): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: ToString, indent: Double, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: ToString, indent: Null, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def stringify(value: js.Any, replacer: ToString, indent: Unit, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  
   trait Options extends StObject {
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var maxValues: js.UndefOr[Double] = js.native
+    var maxValues: js.UndefOr[Double] = js.undefined
     
-    var references: js.UndefOr[Boolean] = js.native
+    var references: js.UndefOr[Boolean] = js.undefined
     
-    var skipUndefinedProperties: js.UndefOr[Boolean] = js.native
+    var skipUndefinedProperties: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

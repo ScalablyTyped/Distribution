@@ -2,59 +2,57 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilitySeriesSummaryOptions extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
-  var bar: js.UndefOr[String] = js.native
+  var bar: js.UndefOr[String] = js.undefined
   
-  var barCombination: js.UndefOr[String] = js.native
+  var barCombination: js.UndefOr[String] = js.undefined
   
-  var boxplot: js.UndefOr[String] = js.native
+  var boxplot: js.UndefOr[String] = js.undefined
   
-  var boxplotCombination: js.UndefOr[String] = js.native
+  var boxplotCombination: js.UndefOr[String] = js.undefined
   
-  var bubble: js.UndefOr[String] = js.native
+  var bubble: js.UndefOr[String] = js.undefined
   
-  var bubbleCombination: js.UndefOr[String] = js.native
+  var bubbleCombination: js.UndefOr[String] = js.undefined
   
-  var column: js.UndefOr[String] = js.native
+  var column: js.UndefOr[String] = js.undefined
   
-  var columnCombination: js.UndefOr[String] = js.native
+  var columnCombination: js.UndefOr[String] = js.undefined
   
-  var defaultCombination: js.UndefOr[String] = js.native
+  var defaultCombination: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.undefined
   
-  var lineCombination: js.UndefOr[String] = js.native
+  var lineCombination: js.UndefOr[String] = js.undefined
   
-  var map: js.UndefOr[String] = js.native
+  var map: js.UndefOr[String] = js.undefined
   
-  var mapCombination: js.UndefOr[String] = js.native
+  var mapCombination: js.UndefOr[String] = js.undefined
   
-  var mapbubble: js.UndefOr[String] = js.native
+  var mapbubble: js.UndefOr[String] = js.undefined
   
-  var mapbubbleCombination: js.UndefOr[String] = js.native
+  var mapbubbleCombination: js.UndefOr[String] = js.undefined
   
-  var mapline: js.UndefOr[String] = js.native
+  var mapline: js.UndefOr[String] = js.undefined
   
-  var maplineCombination: js.UndefOr[String] = js.native
+  var maplineCombination: js.UndefOr[String] = js.undefined
   
-  var pie: js.UndefOr[String] = js.native
+  var pie: js.UndefOr[String] = js.undefined
   
-  var pieCombination: js.UndefOr[String] = js.native
+  var pieCombination: js.UndefOr[String] = js.undefined
   
-  var scatter: js.UndefOr[String] = js.native
+  var scatter: js.UndefOr[String] = js.undefined
   
-  var scatterCombination: js.UndefOr[String] = js.native
+  var scatterCombination: js.UndefOr[String] = js.undefined
   
-  var spline: js.UndefOr[String] = js.native
+  var spline: js.UndefOr[String] = js.undefined
   
-  var splineCombination: js.UndefOr[String] = js.native
+  var splineCombination: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilitySeriesSummaryOptions {
   

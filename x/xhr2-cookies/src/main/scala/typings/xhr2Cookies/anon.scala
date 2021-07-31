@@ -3,19 +3,17 @@ package typings.xhr2Cookies
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BaseUrl extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var httpAgent: js.UndefOr[Agent] = js.native
+    var httpAgent: js.UndefOr[Agent] = js.undefined
     
-    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+    var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
   }
   object BaseUrl {
     

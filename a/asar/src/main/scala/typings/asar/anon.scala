@@ -4,17 +4,15 @@ import typings.asar.mod.InputMetadataType
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Stat extends StObject {
     
-    var stat: Stats = js.native
+    var stat: Stats
     
-    var `type`: InputMetadataType = js.native
+    var `type`: InputMetadataType
   }
   object Stat {
     

@@ -2,15 +2,13 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPageResource extends StObject {
   
-  var lang: js.UndefOr[IPageLangItems] = js.native
+  var lang: js.UndefOr[IPageLangItems] = js.undefined
   
-  var selectedLang: js.UndefOr[String] = js.native
+  var selectedLang: js.UndefOr[String] = js.undefined
 }
 object IPageResource {
   

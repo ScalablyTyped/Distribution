@@ -3,17 +3,15 @@ package typings.weixinApp.anon
 import typings.weixinApp.weixinAppStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  services :std.Array<{  uuid :string,   isPrimary :boolean}>} & weixin-app.wx.ErrMsgResponse */
-@js.native
 trait servicesArrayuuidstringis extends StObject {
   
   /** 成功：ok，错误：详细信息 */
-  var errMsg: ok | String = js.native
+  var errMsg: ok | String
   
-  var services: js.Array[IsPrimary] = js.native
+  var services: js.Array[IsPrimary]
 }
 object servicesArrayuuidstringis {
   

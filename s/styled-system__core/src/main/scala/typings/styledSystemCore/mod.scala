@@ -4,39 +4,36 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@styled-system/core", "compose")
+  @JSImport("@styled-system/core", JSImport.Namespace)
   @js.native
-  def compose(parsers: styleFn*): styleFn = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@styled-system/core", "createParser")
-  @js.native
-  def createParser(config: ConfigStyle): styleFn = js.native
+  @scala.inline
+  def compose(parsers: styleFn*): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(parsers.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  @JSImport("@styled-system/core", "createStyleFunction")
-  @js.native
-  def createStyleFunction(args: ConfigStyle): styleFn = js.native
+  @scala.inline
+  def createParser(config: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(config.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  @JSImport("@styled-system/core", "get")
-  @js.native
-  def get(obj: js.Any, paths: (String | Double)*): js.Any = js.native
+  @scala.inline
+  def createStyleFunction(args: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(args.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  @JSImport("@styled-system/core", "system")
-  @js.native
-  def system(styleDefinitions: Config): styleFn = js.native
+  @scala.inline
+  def get(obj: js.Any, paths: (String | Double)*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def system(styleDefinitions: Config): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(styleDefinitions.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
   type Config = /** Property name exposed for use in components */
   StringDictionary[ConfigStyle | Boolean]
   
-  @js.native
   trait ConfigStyle extends StObject {
     
     /** A fallback scale object for when there isn't one defined in the `theme` object. */
-    var defaultScale: js.UndefOr[Scale] = js.native
+    var defaultScale: js.UndefOr[Scale] = js.undefined
     
     /**
       * An array of multiple properties (e.g. `['marginLeft', 'marginRight']`) to which this style's value will be
@@ -46,18 +43,18 @@ object mod {
         js.Array[
           /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** The CSS property to use in the returned style object (overridden by `properties` if present). */
     var property: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** A string referencing a key in the `theme` object. */
-    var scale: js.UndefOr[String] = js.native
+    var scale: js.UndefOr[String] = js.undefined
     
     /** A function to transform the raw value based on the scale. */
-    var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], _]] = js.native
+    var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], js.Any]] = js.undefined
   }
   object ConfigStyle {
     
@@ -107,7 +104,7 @@ object mod {
       def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
       @scala.inline
-      def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => _): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)

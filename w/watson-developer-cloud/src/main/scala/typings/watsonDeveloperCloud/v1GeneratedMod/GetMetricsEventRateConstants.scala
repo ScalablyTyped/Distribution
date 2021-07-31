@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `getMetricsEventRate` operation. */
@@ -16,10 +15,12 @@ object GetMetricsEventRateConstants {
   object ResultType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ResultType with String] = js.native
+    def apply(value: String): js.UndefOr[ResultType & String] = js.native
     
     @js.native
-    sealed trait DOCUMENT extends ResultType
-    /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsEventRateConstants.ResultType.DOCUMENT with String = js.native
+    sealed trait DOCUMENT
+      extends StObject
+         with ResultType
+    /* "document" */ val DOCUMENT: typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsEventRateConstants.ResultType.DOCUMENT & String = js.native
   }
 }

@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note that there might be other types available, it couldn't be found in the docs.
   */
-@js.native
 trait ExternalUrlObject extends StObject {
   
-  var spotify: String = js.native
+  var spotify: String
 }
 object ExternalUrlObject {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInventorySourceGroupsResponse extends StObject {
   
   /** The list of inventory source groups. This list will be absent if empty. */
-  var inventorySourceGroups: js.UndefOr[js.Array[InventorySourceGroup]] = js.native
+  var inventorySourceGroups: js.UndefOr[js.Array[InventorySourceGroup]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the page_token field in the subsequent call to `ListInventorySourceGroups` method to retrieve the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListInventorySourceGroupsResponse {
   

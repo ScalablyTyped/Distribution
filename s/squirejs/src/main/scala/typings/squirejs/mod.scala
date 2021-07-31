@@ -3,26 +3,29 @@ package typings.squirejs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("squirejs", JSImport.Namespace)
   @js.native
-  class ^ () extends Squire {
+  class ^ ()
+    extends StObject
+       with Squire {
     def this(context: String) = this()
   }
   
   object Helpers {
     
-    @JSImport("squirejs", "Helpers.constructs")
+    @JSImport("squirejs", "Helpers")
     @js.native
-    def constructs[T](what: T): js.Function0[js.Function0[T]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("squirejs", "Helpers.returns")
-    @js.native
-    def returns[T](what: T): js.Function0[T] = js.native
+    @scala.inline
+    def constructs[T](what: T): js.Function0[js.Function0[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("constructs")(what.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function0[T]]]
+    
+    @scala.inline
+    def returns[T](what: T): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("returns")(what.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
   }
   
   @js.native

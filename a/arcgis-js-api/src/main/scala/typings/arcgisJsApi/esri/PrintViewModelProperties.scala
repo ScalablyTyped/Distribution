@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintViewModelProperties extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait PrintViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#allowedFormats)
     */
-  var allowedFormats: js.UndefOr[String | js.Array[String]] = js.native
+  var allowedFormats: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Specify the print output layout(s) that the user can select based on the options available from the print service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#allowedLayouts)
     */
-  var allowedLayouts: js.UndefOr[String | js.Array[String]] = js.native
+  var allowedLayouts: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * The URL of the REST endpoint of the Export Web Map Task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#printServiceUrl)
     */
-  var printServiceUrl: js.UndefOr[String] = js.native
+  var printServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * When `true`, scale is used in the printed map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#scaleEnabled)
     */
-  var scaleEnabled: js.UndefOr[Boolean] = js.native
+  var scaleEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time interval in milliseconds between each job status request sent to an asynchronous GP task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#updateDelay)
     */
-  var updateDelay: js.UndefOr[Double] = js.native
+  var updateDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object PrintViewModelProperties {
   

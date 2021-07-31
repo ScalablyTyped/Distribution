@@ -4,15 +4,15 @@
 Typings are for version 6.1.2
 
 ## Library description:
-Storybook addon to change the viewport size to mobile
+Build responsive components by adjusting Storybook’s viewport size and orientation
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-viewport |
 | Keywords           | addon, storybook |
-| # releases         | 558 |
-| # dependents       | 83 |
-| # downloads        | 29060208 |
+| # releases         | 551 |
+| # dependents       | 89 |
+| # downloads        | 38124929 |
 | # stars            | 0 |
 
 ## Links

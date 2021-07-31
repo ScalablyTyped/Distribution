@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,44 +18,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The descriptor contains properties and a collection of subtotal fields which control the behavior of operation.
   */
-@js.native
 trait SubTotalDescriptor
-  extends XEnumerationAccess
+  extends StObject
      with XSubTotalDescriptor
+     with XEnumerationAccess
      with XIndexAccess
      with XPropertySet {
   
   /** specifies if cell formats are moved with the contents they belong to. */
-  var BindFormatsToContent: Boolean = js.native
+  var BindFormatsToContent: Boolean
   
   /** specifies if the contents of the fields will be sorted to groups while performing a subtotal operation. */
-  var EnableSort: Boolean = js.native
+  var EnableSort: Boolean
   
   /** specifies if a user defined sorting list is used. */
-  var EnableUserSortList: Boolean = js.native
+  var EnableUserSortList: Boolean
   
   /** specifies if page breaks are inserted after each group change. */
-  var InsertPageBreaks: Boolean = js.native
+  var InsertPageBreaks: Boolean
   
   /** specifies if the case of letters is important when comparing entries. */
-  var IsCaseSensitive: Boolean = js.native
+  var IsCaseSensitive: Boolean
   
   /**
     * returns the maximum number of subtotal fields the descriptor can hold.
     *
     * This read-only property indicates the maximum count of fields the current implementation supports.
     */
-  var MaxFieldCount: Double = js.native
+  var MaxFieldCount: Double
   
   /** specifies the sorting order if {@link SubTotalDescriptor.EnableSort} is set to `TRUE` . */
-  var SortAscending: Boolean = js.native
+  var SortAscending: Boolean
   
   /**
     * specifies which user defined sorting list is used.
     *
     * This property is only used if {@link SubTotalDescriptor.EnableUserSortList} is `TRUE` .
     */
-  var UserSortListIndex: Double = js.native
+  var UserSortListIndex: Double
 }
 object SubTotalDescriptor {
   

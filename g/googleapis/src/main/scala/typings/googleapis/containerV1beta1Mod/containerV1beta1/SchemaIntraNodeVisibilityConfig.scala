@@ -2,20 +2,18 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IntraNodeVisibilityConfig contains the desired config of the intra-node
   * visibility on this cluster.
   */
-@js.native
 trait SchemaIntraNodeVisibilityConfig extends StObject {
   
   /**
     * Enables intra node visibility for this cluster.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaIntraNodeVisibilityConfig {
   

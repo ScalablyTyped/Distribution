@@ -3,37 +3,37 @@ package typings.xhrMock
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockURLMod {
   
-  @JSImport("xhr-mock/lib/MockURL", "formatURL")
+  @JSImport("xhr-mock/lib/MockURL", JSImport.Namespace)
   @js.native
-  def formatURL(url: MockURL): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xhr-mock/lib/MockURL", "parseURL")
-  @js.native
-  def parseURL(url: String): MockURL = js.native
+  @scala.inline
+  def formatURL(url: MockURL): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatURL")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def parseURL(url: String): MockURL = ^.asInstanceOf[js.Dynamic].applyDynamic("parseURL")(url.asInstanceOf[js.Any]).asInstanceOf[MockURL]
+  
   trait MockURL extends StObject {
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[StringDictionary[String]] = js.native
+    var query: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object MockURL {
     

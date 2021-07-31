@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArimaResult extends StObject {
   
   /** This message is repeated because there are multiple arima models fitted in auto-arima. For non-auto-arima model, its size is one. */
-  var arimaModelInfo: js.UndefOr[js.Array[ArimaModelInfo]] = js.native
+  var arimaModelInfo: js.UndefOr[js.Array[ArimaModelInfo]] = js.undefined
   
   /** Seasonal periods. Repeated because multiple periods are supported for one time series. */
-  var seasonalPeriods: js.UndefOr[js.Array[String]] = js.native
+  var seasonalPeriods: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ArimaResult {
   

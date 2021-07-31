@@ -3,33 +3,31 @@ package typings.atom.mod
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddedKeystrokeResolverEvent extends StObject {
   
   /**
     *  The raw DOM 3 `KeyboardEvent` being resolved. See the DOM API documentation
     *  for more details.
     */
-  var event: KeyboardEvent = js.native
+  var event: KeyboardEvent
   
   /**
     *  An object mapping DOM 3 `KeyboardEvent.code` values to objects with the
     *  typed character for that key in each modifier state, based on the current
     *  operating system layout.
     */
-  var keymap: js.Object = js.native
+  var keymap: js.Object
   
   /**
     *  The currently resolved keystroke string. If your function returns a falsy
     *  value, this is how Atom will resolve your keystroke.
     */
-  var keystroke: String = js.native
+  var keystroke: String
   
   /** The OS-specific name of the current keyboard layout. */
-  var layoutName: String = js.native
+  var layoutName: String
 }
 object AddedKeystrokeResolverEvent {
   

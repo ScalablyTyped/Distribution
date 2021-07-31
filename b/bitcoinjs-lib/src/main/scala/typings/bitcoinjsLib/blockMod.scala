@@ -5,7 +5,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockMod {
@@ -21,9 +20,9 @@ object blockMod {
     var bits: Double = js.native
     
     def byteLength(): Double = js.native
-    def byteLength(headersOnly: js.UndefOr[scala.Nothing], allowWitness: Boolean): Double = js.native
     def byteLength(headersOnly: Boolean): Double = js.native
     def byteLength(headersOnly: Boolean, allowWitness: Boolean): Double = js.native
+    def byteLength(headersOnly: Unit, allowWitness: Boolean): Double = js.native
     
     def checkProofOfWork(): Boolean = js.native
     
@@ -66,23 +65,22 @@ object blockMod {
   /* static members */
   object Block {
     
-    @JSImport("bitcoinjs-lib/types/block", "Block.calculateMerkleRoot")
+    @JSImport("bitcoinjs-lib/types/block", "Block")
     @js.native
-    def calculateMerkleRoot(transactions: js.Array[Transaction]): Buffer = js.native
-    @JSImport("bitcoinjs-lib/types/block", "Block.calculateMerkleRoot")
-    @js.native
-    def calculateMerkleRoot(transactions: js.Array[Transaction], forWitness: Boolean): Buffer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib/types/block", "Block.calculateTarget")
-    @js.native
-    def calculateTarget(bits: Double): Buffer = js.native
+    @scala.inline
+    def calculateMerkleRoot(transactions: js.Array[Transaction]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    @scala.inline
+    def calculateMerkleRoot(transactions: js.Array[Transaction], forWitness: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMerkleRoot")(transactions.asInstanceOf[js.Any], forWitness.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib/types/block", "Block.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): Block = js.native
+    @scala.inline
+    def calculateTarget(bits: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateTarget")(bits.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("bitcoinjs-lib/types/block", "Block.fromHex")
-    @js.native
-    def fromHex(hex: String): Block = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Block]
+    
+    @scala.inline
+    def fromHex(hex: String): Block = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Block]
   }
 }

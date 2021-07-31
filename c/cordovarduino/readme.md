@@ -9,9 +9,9 @@ Cordova plugin to communicate with the android USB serial port
 | ------------------ | :-------------: |
 | Full name          | cordovarduino |
 | Keywords           | serial, arduino, ecosystem:cordova, cordova-android, cordova-ubuntu |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2561 |
+| # downloads        | 2385 |
 | # stars            | 2 |
 
 ## Links

@@ -562,7 +562,6 @@ import typings.std.Extract
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -1905,7 +1904,7 @@ object typesMod {
       * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
       * @param {function} mapFn Optional method to map each response to a custom array
       */
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashappSlashinstallations`,
       mapFn: js.Function2[
@@ -1922,7 +1921,7 @@ object typesMod {
       * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       * @param {function} mapFn Optional method to map each response to a custom array
       */
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashappSlashinstallations`,
       parameters: AppsListInstallationsEndpoint,
@@ -1932,7 +1931,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashapplicationsSlashgrants`,
       mapFn: js.Function2[
@@ -1941,7 +1940,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashapplicationsSlashgrants`,
       parameters: OauthAuthorizationsListGrantsEndpoint,
@@ -1951,7 +1950,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashauthorizations`,
       mapFn: js.Function2[
@@ -1960,7 +1959,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashauthorizations`,
       parameters: OauthAuthorizationsListAuthorizationsEndpoint,
@@ -1970,64 +1969,64 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] & DataArray, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
       parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] & DataArray, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] & Data, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
       parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] & Data, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
       mapFn: js.Function2[
@@ -2036,7 +2035,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
       parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint,
@@ -2046,26 +2045,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
       parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashColongist_idSlashcomments`,
       mapFn: js.Function2[
@@ -2074,7 +2073,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashColongist_idSlashcomments`,
       parameters: GistsListCommentsEndpoint,
@@ -2084,7 +2083,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashColongist_idSlashcommits`,
       mapFn: js.Function2[
@@ -2093,7 +2092,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashColongist_idSlashcommits`,
       parameters: GistsListCommitsEndpoint,
@@ -2103,7 +2102,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashColongist_idSlashforks`,
       mapFn: js.Function2[
@@ -2112,7 +2111,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashColongist_idSlashforks`,
       parameters: GistsListForksEndpoint,
@@ -2122,7 +2121,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashpublic`,
       mapFn: js.Function2[
@@ -2131,7 +2130,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashpublic`,
       parameters: GistsListPublicEndpoint,
@@ -2141,7 +2140,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashstarred`,
       mapFn: js.Function2[
@@ -2150,7 +2149,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashgistsSlashstarred`,
       parameters: GistsListStarredEndpoint,
@@ -2160,7 +2159,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashgists`,
       mapFn: js.Function2[
@@ -2169,7 +2168,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashgists`,
       parameters: GistsListEndpoint,
@@ -2179,26 +2178,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashinstallationSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] & `1`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashinstallationSlashrepositories`,
       parameters: AppsListReposAccessibleToInstallationEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] & `1`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashissues`,
       mapFn: js.Function2[
@@ -2207,7 +2206,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashissues`,
       parameters: IssuesListEndpoint,
@@ -2217,7 +2216,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
       mapFn: js.Function2[
@@ -2226,7 +2225,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
       parameters: AppsListAccountsForPlanEndpoint,
@@ -2236,7 +2235,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashplans`,
       mapFn: js.Function2[
@@ -2245,7 +2244,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashplans`,
       parameters: AppsListPlansEndpoint,
@@ -2255,7 +2254,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
       mapFn: js.Function2[
@@ -2264,7 +2263,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
       parameters: AppsListAccountsForPlanStubbedEndpoint,
@@ -2274,7 +2273,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
       mapFn: js.Function2[
@@ -2283,7 +2282,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
       parameters: AppsListPlansStubbedEndpoint,
@@ -2293,7 +2292,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashnotifications`,
       mapFn: js.Function2[
@@ -2302,7 +2301,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashnotifications`,
       parameters: ActivityListNotificationsForAuthenticatedUserEndpoint,
@@ -2312,7 +2311,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashorganizations`,
       mapFn: js.Function2[
@@ -2321,7 +2320,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashorganizations`,
       parameters: OrgsListEndpoint,
@@ -2331,64 +2330,64 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
       parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] & `2`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
       parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] & `2`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
       mapFn: js.Function2[
@@ -2397,7 +2396,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
       parameters: ActionsListRunnerApplicationsForOrgEndpoint,
@@ -2407,64 +2406,64 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] & `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
       parameters: ActionsListSelectedReposForOrgSecretEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] & `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] & `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
       parameters: ActionsListOrgSecretsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] & `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashblocks`,
       mapFn: js.Function2[
@@ -2473,7 +2472,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashblocks`,
       parameters: OrgsListBlockedUsersEndpoint,
@@ -2483,7 +2482,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
       mapFn: js.Function2[
@@ -2492,7 +2491,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
       parameters: OrgsListSamlSsoAuthorizationsEndpoint,
@@ -2502,7 +2501,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashhooks`,
       mapFn: js.Function2[
@@ -2511,7 +2510,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashhooks`,
       parameters: OrgsListWebhooksEndpoint,
@@ -2521,26 +2520,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] & `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       parameters: OrgsListAppInstallationsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] & `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
       mapFn: js.Function2[
@@ -2549,7 +2548,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
       parameters: OrgsListInvitationTeamsEndpoint,
@@ -2559,7 +2558,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashinvitations`,
       mapFn: js.Function2[
@@ -2568,7 +2567,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashinvitations`,
       parameters: OrgsListPendingInvitationsEndpoint,
@@ -2578,7 +2577,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashissues`,
       mapFn: js.Function2[
@@ -2587,7 +2586,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashissues`,
       parameters: IssuesListForOrgEndpoint,
@@ -2597,7 +2596,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashmembers`,
       mapFn: js.Function2[
@@ -2606,7 +2605,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashmembers`,
       parameters: OrgsListMembersEndpoint,
@@ -2616,7 +2615,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
       mapFn: js.Function2[
@@ -2625,7 +2624,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
       parameters: MigrationsListReposForOrgEndpoint,
@@ -2635,7 +2634,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashmigrations`,
       mapFn: js.Function2[
@@ -2644,7 +2643,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashmigrations`,
       parameters: MigrationsListForOrgEndpoint,
@@ -2654,7 +2653,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
       mapFn: js.Function2[
@@ -2663,7 +2662,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
       parameters: OrgsListOutsideCollaboratorsEndpoint,
@@ -2673,7 +2672,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashprojects`,
       mapFn: js.Function2[
@@ -2682,7 +2681,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashprojects`,
       parameters: ProjectsListForOrgEndpoint,
@@ -2692,7 +2691,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashpublic_members`,
       mapFn: js.Function2[
@@ -2701,7 +2700,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashpublic_members`,
       parameters: OrgsListPublicMembersEndpoint,
@@ -2711,7 +2710,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashrepos`,
       mapFn: js.Function2[
@@ -2720,7 +2719,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashrepos`,
       parameters: ReposListForOrgEndpoint,
@@ -2730,26 +2729,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       parameters: TeamsListIdPGroupsForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       mapFn: js.Function2[
@@ -2758,7 +2757,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionCommentInOrgEndpoint,
@@ -2768,7 +2767,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       mapFn: js.Function2[
@@ -2777,7 +2776,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       parameters: TeamsListDiscussionCommentsInOrgEndpoint,
@@ -2787,7 +2786,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       mapFn: js.Function2[
@@ -2796,7 +2795,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionInOrgEndpoint,
@@ -2806,7 +2805,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
       mapFn: js.Function2[
@@ -2815,7 +2814,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
       parameters: TeamsListDiscussionsInOrgEndpoint,
@@ -2825,7 +2824,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
       mapFn: js.Function2[
@@ -2834,7 +2833,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
       parameters: TeamsListPendingInvitationsInOrgEndpoint,
@@ -2844,7 +2843,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
       mapFn: js.Function2[
@@ -2853,7 +2852,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
       parameters: TeamsListMembersInOrgEndpoint,
@@ -2863,7 +2862,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
       mapFn: js.Function2[
@@ -2872,7 +2871,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
       parameters: TeamsListProjectsInOrgEndpoint,
@@ -2882,7 +2881,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
       mapFn: js.Function2[
@@ -2891,7 +2890,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
       parameters: TeamsListReposInOrgEndpoint,
@@ -2901,26 +2900,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsInOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
       mapFn: js.Function2[
@@ -2929,7 +2928,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
       parameters: TeamsListChildInOrgEndpoint,
@@ -2939,7 +2938,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteams`,
       mapFn: js.Function2[
@@ -2948,7 +2947,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashorgsSlashColonorgSlashteams`,
       parameters: TeamsListEndpoint,
@@ -2958,7 +2957,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
       mapFn: js.Function2[
@@ -2967,7 +2966,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
       parameters: ProjectsListCollaboratorsEndpoint,
@@ -2977,7 +2976,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
       mapFn: js.Function2[
@@ -2986,7 +2985,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
       parameters: ProjectsListColumnsEndpoint,
@@ -2996,7 +2995,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
       mapFn: js.Function2[
@@ -3005,7 +3004,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
       parameters: ProjectsListCardsEndpoint,
@@ -3015,26 +3014,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       parameters: ActionsListArtifactsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
       mapFn: js.Function2[
@@ -3043,7 +3042,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
       parameters: ActionsListRunnerApplicationsForRepoEndpoint,
@@ -3053,140 +3052,140 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       parameters: ActionsListWorkflowRunArtifactsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] & `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       parameters: ActionsListJobsForWorkflowRunEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] & `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       parameters: ActionsListWorkflowRunsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] & `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       parameters: ActionsListRepoSecretsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] & `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       parameters: ActionsListWorkflowRunsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] & `12`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       parameters: ActionsListRepoWorkflowsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] & `12`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
       mapFn: js.Function2[
@@ -3195,7 +3194,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
       parameters: IssuesListAssigneesEndpoint,
@@ -3205,7 +3204,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
       mapFn: js.Function2[
@@ -3214,7 +3213,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
       parameters: ReposListBranchesEndpoint,
@@ -3224,7 +3223,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
       mapFn: js.Function2[
@@ -3233,7 +3232,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
       parameters: ChecksListAnnotationsEndpoint,
@@ -3243,26 +3242,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       parameters: ChecksListForSuiteEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
       mapFn: js.Function2[
@@ -3271,7 +3270,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
       parameters: CodeScanningListAlertsForRepoEndpoint,
@@ -3281,7 +3280,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
       mapFn: js.Function2[
@@ -3290,7 +3289,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
       parameters: CodeScanningListRecentAnalysesEndpoint,
@@ -3300,7 +3299,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
       mapFn: js.Function2[
@@ -3309,7 +3308,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
       parameters: ReposListCollaboratorsEndpoint,
@@ -3319,7 +3318,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
       mapFn: js.Function2[
@@ -3328,7 +3327,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
       parameters: ReactionsListForCommitCommentEndpoint,
@@ -3338,7 +3337,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
       mapFn: js.Function2[
@@ -3347,7 +3346,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
       parameters: ReposListCommitCommentsForRepoEndpoint,
@@ -3357,7 +3356,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
       mapFn: js.Function2[
@@ -3366,7 +3365,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
       parameters: ReposListBranchesForHeadCommitEndpoint,
@@ -3376,7 +3375,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
       mapFn: js.Function2[
@@ -3385,7 +3384,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
       parameters: ReposListCommentsForCommitEndpoint,
@@ -3395,7 +3394,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
       mapFn: js.Function2[
@@ -3404,7 +3403,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
       parameters: ReposListPullRequestsAssociatedWithCommitEndpoint,
@@ -3414,45 +3413,45 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       parameters: ChecksListForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] & `14`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       parameters: ChecksListSuitesForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] & `14`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
       mapFn: js.Function2[
@@ -3461,7 +3460,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
       parameters: ReposListCommitStatusesForRefEndpoint,
@@ -3471,7 +3470,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
       mapFn: js.Function2[
@@ -3480,7 +3479,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
       parameters: ReposListCommitsEndpoint,
@@ -3490,7 +3489,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
       mapFn: js.Function2[
@@ -3499,7 +3498,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
       parameters: ReposListContributorsEndpoint,
@@ -3509,7 +3508,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
       mapFn: js.Function2[
@@ -3518,7 +3517,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
       parameters: ReposListDeploymentStatusesEndpoint,
@@ -3528,7 +3527,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
       mapFn: js.Function2[
@@ -3537,7 +3536,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
       parameters: ReposListDeploymentsEndpoint,
@@ -3547,7 +3546,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
       mapFn: js.Function2[
@@ -3556,7 +3555,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
       parameters: ReposListForksEndpoint,
@@ -3566,7 +3565,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
       mapFn: js.Function2[
@@ -3575,7 +3574,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
       parameters: GitListMatchingRefsEndpoint,
@@ -3585,7 +3584,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
       mapFn: js.Function2[
@@ -3594,7 +3593,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
       parameters: ReposListWebhooksEndpoint,
@@ -3604,7 +3603,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
       mapFn: js.Function2[
@@ -3613,7 +3612,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
       parameters: ReposListInvitationsEndpoint,
@@ -3623,7 +3622,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
       mapFn: js.Function2[
@@ -3632,7 +3631,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
       parameters: IssuesListCommentsEndpoint,
@@ -3642,7 +3641,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
       mapFn: js.Function2[
@@ -3651,7 +3650,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
       parameters: IssuesListEventsEndpoint,
@@ -3661,7 +3660,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
       mapFn: js.Function2[
@@ -3670,7 +3669,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
       parameters: IssuesListLabelsOnIssueEndpoint,
@@ -3680,7 +3679,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
       mapFn: js.Function2[
@@ -3689,7 +3688,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
       parameters: ReactionsListForIssueEndpoint,
@@ -3699,7 +3698,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
       mapFn: js.Function2[
@@ -3708,7 +3707,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
       parameters: IssuesListEventsForTimelineEndpoint,
@@ -3718,7 +3717,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
       mapFn: js.Function2[
@@ -3727,7 +3726,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
       parameters: ReactionsListForIssueCommentEndpoint,
@@ -3737,7 +3736,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
       mapFn: js.Function2[
@@ -3746,7 +3745,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
       parameters: IssuesListCommentsForRepoEndpoint,
@@ -3756,7 +3755,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
       mapFn: js.Function2[
@@ -3765,7 +3764,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
       parameters: IssuesListEventsForRepoEndpoint,
@@ -3775,7 +3774,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
       mapFn: js.Function2[
@@ -3784,7 +3783,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
       parameters: IssuesListForRepoEndpoint,
@@ -3794,7 +3793,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
       mapFn: js.Function2[
@@ -3803,7 +3802,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
       parameters: ReposListDeployKeysEndpoint,
@@ -3813,7 +3812,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
       mapFn: js.Function2[
@@ -3822,7 +3821,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
       parameters: IssuesListLabelsForRepoEndpoint,
@@ -3832,7 +3831,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
       mapFn: js.Function2[
@@ -3841,7 +3840,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
       parameters: ReposListLanguagesEndpoint,
@@ -3851,7 +3850,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
       mapFn: js.Function2[
@@ -3860,7 +3859,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
       parameters: IssuesListLabelsForMilestoneEndpoint,
@@ -3870,7 +3869,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
       mapFn: js.Function2[
@@ -3879,7 +3878,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
       parameters: IssuesListMilestonesEndpoint,
@@ -3889,7 +3888,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
       mapFn: js.Function2[
@@ -3898,7 +3897,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
       parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint,
@@ -3908,7 +3907,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
       mapFn: js.Function2[
@@ -3917,7 +3916,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
       parameters: ReposListPagesBuildsEndpoint,
@@ -3927,7 +3926,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
       mapFn: js.Function2[
@@ -3936,7 +3935,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
       parameters: ProjectsListForRepoEndpoint,
@@ -3946,7 +3945,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
       mapFn: js.Function2[
@@ -3955,7 +3954,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
       parameters: PullsListReviewCommentsEndpoint,
@@ -3965,7 +3964,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
       mapFn: js.Function2[
@@ -3974,7 +3973,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
       parameters: PullsListCommitsEndpoint,
@@ -3984,7 +3983,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
       mapFn: js.Function2[
@@ -3993,7 +3992,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
       parameters: PullsListFilesEndpoint,
@@ -4003,26 +4002,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] & `15`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       parameters: PullsListRequestedReviewersEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] & `15`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
       mapFn: js.Function2[
@@ -4031,7 +4030,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
       parameters: PullsListCommentsForReviewEndpoint,
@@ -4041,7 +4040,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
       mapFn: js.Function2[
@@ -4050,7 +4049,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
       parameters: PullsListReviewsEndpoint,
@@ -4060,7 +4059,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
       mapFn: js.Function2[
@@ -4069,7 +4068,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
       parameters: ReactionsListForPullRequestReviewCommentEndpoint,
@@ -4079,7 +4078,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
       mapFn: js.Function2[
@@ -4088,7 +4087,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
       parameters: PullsListReviewCommentsForRepoEndpoint,
@@ -4098,7 +4097,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
       mapFn: js.Function2[
@@ -4107,7 +4106,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
       parameters: PullsListEndpoint,
@@ -4117,7 +4116,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
       mapFn: js.Function2[
@@ -4126,7 +4125,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
       parameters: ReposListReleaseAssetsEndpoint,
@@ -4136,7 +4135,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
       mapFn: js.Function2[
@@ -4145,7 +4144,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
       parameters: ReposListReleasesEndpoint,
@@ -4155,7 +4154,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
       mapFn: js.Function2[
@@ -4166,7 +4165,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
       parameters: ActivityListStargazersForRepoEndpoint,
@@ -4178,7 +4177,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
       mapFn: js.Function2[
@@ -4187,7 +4186,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
       parameters: ActivityListWatchersForRepoEndpoint,
@@ -4197,7 +4196,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
       mapFn: js.Function2[
@@ -4206,7 +4205,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
       parameters: ReposListTagsEndpoint,
@@ -4216,7 +4215,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
       mapFn: js.Function2[
@@ -4225,7 +4224,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
       parameters: ReposListTeamsEndpoint,
@@ -4235,7 +4234,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashrepositories`,
       mapFn: js.Function2[
@@ -4244,7 +4243,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashrepositories`,
       parameters: ReposListPublicEndpoint,
@@ -4254,197 +4253,197 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
       parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
       parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       parameters: ScimListProvisionedIdentitiesEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashcode`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
+          /* response */ OctokitResponse[SearchCodeResponseData] & `17`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashcode`,
       parameters: SearchCodeEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
+          /* response */ OctokitResponse[SearchCodeResponseData] & `17`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashcommits`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
+          /* response */ OctokitResponse[SearchCommitsResponseData] & `18`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashcommits`,
       parameters: SearchCommitsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
+          /* response */ OctokitResponse[SearchCommitsResponseData] & `18`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashissues`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] & `19`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashissues`,
       parameters: SearchIssuesAndPullRequestsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] & `19`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashlabels`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
+          /* response */ OctokitResponse[SearchLabelsResponseData] & `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashlabels`,
       parameters: SearchLabelsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
+          /* response */ OctokitResponse[SearchLabelsResponseData] & `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
+          /* response */ OctokitResponse[SearchReposResponseData] & `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashrepositories`,
       parameters: SearchReposEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
+          /* response */ OctokitResponse[SearchReposResponseData] & `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashtopics`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
+          /* response */ OctokitResponse[SearchTopicsResponseData] & `22`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashtopics`,
       parameters: SearchTopicsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
+          /* response */ OctokitResponse[SearchTopicsResponseData] & `22`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashusers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
+          /* response */ OctokitResponse[SearchUsersResponseData] & `23`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashsearchSlashusers`,
       parameters: SearchUsersEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
+          /* response */ OctokitResponse[SearchUsersResponseData] & `23`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       mapFn: js.Function2[
@@ -4453,7 +4452,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionCommentLegacyEndpoint,
@@ -4463,7 +4462,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       mapFn: js.Function2[
@@ -4472,7 +4471,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       parameters: TeamsListDiscussionCommentsLegacyEndpoint,
@@ -4482,7 +4481,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       mapFn: js.Function2[
@@ -4491,7 +4490,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionLegacyEndpoint,
@@ -4501,7 +4500,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
       mapFn: js.Function2[
@@ -4510,7 +4509,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
       parameters: TeamsListDiscussionsLegacyEndpoint,
@@ -4520,7 +4519,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
       mapFn: js.Function2[
@@ -4529,7 +4528,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
       parameters: TeamsListPendingInvitationsLegacyEndpoint,
@@ -4539,7 +4538,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashmembers`,
       mapFn: js.Function2[
@@ -4548,7 +4547,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashmembers`,
       parameters: TeamsListMembersLegacyEndpoint,
@@ -4558,7 +4557,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashprojects`,
       mapFn: js.Function2[
@@ -4567,7 +4566,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashprojects`,
       parameters: TeamsListProjectsLegacyEndpoint,
@@ -4577,7 +4576,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashrepos`,
       mapFn: js.Function2[
@@ -4586,7 +4585,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashrepos`,
       parameters: TeamsListReposLegacyEndpoint,
@@ -4596,26 +4595,26 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsForLegacyEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashteams`,
       mapFn: js.Function2[
@@ -4624,7 +4623,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashteamsSlashColonteam_idSlashteams`,
       parameters: TeamsListChildLegacyEndpoint,
@@ -4634,7 +4633,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashblocks`,
       mapFn: js.Function2[
@@ -4643,7 +4642,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashblocks`,
       parameters: UsersListBlockedByAuthenticatedEndpoint,
@@ -4653,7 +4652,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashemails`,
       mapFn: js.Function2[
@@ -4662,7 +4661,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashemails`,
       parameters: UsersListEmailsForAuthenticatedEndpoint,
@@ -4672,7 +4671,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashfollowers`,
       mapFn: js.Function2[
@@ -4681,7 +4680,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashfollowers`,
       parameters: UsersListFollowersForAuthenticatedUserEndpoint,
@@ -4691,7 +4690,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashfollowing`,
       mapFn: js.Function2[
@@ -4700,7 +4699,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashfollowing`,
       parameters: UsersListFollowedByAuthenticatedEndpoint,
@@ -4710,7 +4709,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashgpg_keys`,
       mapFn: js.Function2[
@@ -4719,7 +4718,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashgpg_keys`,
       parameters: UsersListGpgKeysForAuthenticatedEndpoint,
@@ -4729,45 +4728,45 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       parameters: AppsListInstallationReposForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] & `24`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashinstallations`,
       parameters: AppsListInstallationsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] & `24`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashissues`,
       mapFn: js.Function2[
@@ -4776,7 +4775,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashissues`,
       parameters: IssuesListForAuthenticatedUserEndpoint,
@@ -4786,7 +4785,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashkeys`,
       mapFn: js.Function2[
@@ -4795,7 +4794,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashkeys`,
       parameters: UsersListPublicSshKeysForAuthenticatedEndpoint,
@@ -4805,7 +4804,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
       mapFn: js.Function2[
@@ -4814,7 +4813,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
       parameters: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint,
@@ -4824,7 +4823,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmarketplace_purchases`,
       mapFn: js.Function2[
@@ -4833,7 +4832,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmarketplace_purchases`,
       parameters: AppsListSubscriptionsForAuthenticatedUserEndpoint,
@@ -4843,7 +4842,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmembershipsSlashorgs`,
       mapFn: js.Function2[
@@ -4852,7 +4851,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmembershipsSlashorgs`,
       parameters: OrgsListMembershipsForAuthenticatedUserEndpoint,
@@ -4862,7 +4861,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
       mapFn: js.Function2[
@@ -4871,7 +4870,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
       parameters: MigrationsListReposForUserEndpoint,
@@ -4881,7 +4880,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmigrations`,
       mapFn: js.Function2[
@@ -4890,7 +4889,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashmigrations`,
       parameters: MigrationsListForAuthenticatedUserEndpoint,
@@ -4900,7 +4899,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashorgs`,
       mapFn: js.Function2[
@@ -4909,7 +4908,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashorgs`,
       parameters: OrgsListForAuthenticatedUserEndpoint,
@@ -4919,7 +4918,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashpublic_emails`,
       mapFn: js.Function2[
@@ -4928,7 +4927,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashpublic_emails`,
       parameters: UsersListPublicEmailsForAuthenticatedEndpoint,
@@ -4938,7 +4937,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashrepository_invitations`,
       mapFn: js.Function2[
@@ -4947,7 +4946,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashrepository_invitations`,
       parameters: ReposListInvitationsForAuthenticatedUserEndpoint,
@@ -4957,7 +4956,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashstarred`,
       mapFn: js.Function2[
@@ -4968,7 +4967,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashstarred`,
       parameters: ActivityListReposStarredByAuthenticatedUserEndpoint,
@@ -4980,7 +4979,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashsubscriptions`,
       mapFn: js.Function2[
@@ -4989,7 +4988,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashsubscriptions`,
       parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint,
@@ -4999,7 +4998,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashteams`,
       mapFn: js.Function2[
@@ -5008,7 +5007,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashuserSlashteams`,
       parameters: TeamsListForAuthenticatedUserEndpoint,
@@ -5018,7 +5017,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashfollowers`,
       mapFn: js.Function2[
@@ -5027,7 +5026,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashfollowers`,
       parameters: UsersListFollowersForUserEndpoint,
@@ -5037,7 +5036,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashfollowing`,
       mapFn: js.Function2[
@@ -5046,7 +5045,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashfollowing`,
       parameters: UsersListFollowingForUserEndpoint,
@@ -5056,7 +5055,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashgists`,
       mapFn: js.Function2[
@@ -5065,7 +5064,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashgists`,
       parameters: GistsListForUserEndpoint,
@@ -5075,7 +5074,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
       mapFn: js.Function2[
@@ -5084,7 +5083,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
       parameters: UsersListGpgKeysForUserEndpoint,
@@ -5094,7 +5093,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashkeys`,
       mapFn: js.Function2[
@@ -5103,7 +5102,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashkeys`,
       parameters: UsersListPublicKeysForUserEndpoint,
@@ -5113,7 +5112,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashorgs`,
       mapFn: js.Function2[
@@ -5122,7 +5121,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashorgs`,
       parameters: OrgsListForUserEndpoint,
@@ -5132,7 +5131,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashprojects`,
       mapFn: js.Function2[
@@ -5141,7 +5140,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashprojects`,
       parameters: ProjectsListForUserEndpoint,
@@ -5151,7 +5150,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashstarred`,
       mapFn: js.Function2[
@@ -5162,7 +5161,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashstarred`,
       parameters: ActivityListReposStarredByUserEndpoint,
@@ -5174,7 +5173,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
       mapFn: js.Function2[
@@ -5183,7 +5182,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
       parameters: ActivityListReposWatchedByUserEndpoint,
@@ -5193,7 +5192,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashusers`,
       mapFn: js.Function2[
@@ -5202,7 +5201,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       route: `GET Slashusers`,
       parameters: UsersListEndpoint,
@@ -5227,7 +5226,7 @@ object typesMod {
       * @param {string} request Request method (`octokit.request` or `@octokit/request`)
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[_] */](
+    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       request: R,
       mapFn: js.Function2[
@@ -5244,7 +5243,7 @@ object typesMod {
       * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[_] */](
+    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[js.Any] */](
       octokit: Octokit,
       request: R,
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any,
@@ -5254,11 +5253,6 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[T, R /* <: Route */](
-      octokit: Octokit,
-      route: R,
-      parameters: RequestParameters | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any)
-    ): js.Promise[js.Array[T]] = js.native
     
     def iterator[T](octokit: Octokit, EndpointOptions: EndpointOptions): AsyncIterableIterator[OctokitResponse[PaginationResults[T]]] = js.native
     def iterator[R /* <: RequestInterface[js.Object] */](octokit: Octokit, request: R): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
@@ -7102,7 +7096,7 @@ object typesMod {
     js.Array[R]
   ]
   
-  type NormalizeResponse[T] = T with DataGetResultsType[T]
+  type NormalizeResponse[T] = T & DataGetResultsType[T]
   
   @js.native
   trait PaginateInterface extends StObject {
@@ -8056,7 +8050,7 @@ object typesMod {
       * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
       * @param {function} mapFn Optional method to map each response to a custom array
       */
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashappSlashinstallations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[AppsListInstallationsResponseData], 
@@ -8071,7 +8065,7 @@ object typesMod {
       * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       * @param {function} mapFn Optional method to map each response to a custom array
       */
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashappSlashinstallations`,
       parameters: AppsListInstallationsEndpoint,
       mapFn: js.Function2[
@@ -8080,7 +8074,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashapplicationsSlashgrants`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OauthAuthorizationsListGrantsResponseData], 
@@ -8088,7 +8082,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashapplicationsSlashgrants`,
       parameters: OauthAuthorizationsListGrantsEndpoint,
       mapFn: js.Function2[
@@ -8097,7 +8091,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashauthorizations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OauthAuthorizationsListAuthorizationsResponseData], 
@@ -8105,7 +8099,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashauthorizations`,
       parameters: OauthAuthorizationsListAuthorizationsEndpoint,
       mapFn: js.Function2[
@@ -8114,58 +8108,58 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] & DataArray, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`,
       parameters: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] with DataArray, 
+          /* response */ OctokitResponse[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] & DataArray, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       parameters: EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] & Data, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`,
       parameters: EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] with Data, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData] & Data, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[EnterpriseAdminListRunnerApplicationsForEnterpriseResponseData], 
@@ -8173,7 +8167,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`,
       parameters: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint,
       mapFn: js.Function2[
@@ -8182,24 +8176,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`,
       parameters: EnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] with `0`, 
+          /* response */ OctokitResponse[EnterpriseAdminListSelfHostedRunnersForEnterpriseResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashColongist_idSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListCommentsResponseData], 
@@ -8207,7 +8201,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashColongist_idSlashcomments`,
       parameters: GistsListCommentsEndpoint,
       mapFn: js.Function2[
@@ -8216,7 +8210,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashColongist_idSlashcommits`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListCommitsResponseData], 
@@ -8224,7 +8218,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashColongist_idSlashcommits`,
       parameters: GistsListCommitsEndpoint,
       mapFn: js.Function2[
@@ -8233,7 +8227,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashColongist_idSlashforks`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListForksResponseData], 
@@ -8241,7 +8235,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashColongist_idSlashforks`,
       parameters: GistsListForksEndpoint,
       mapFn: js.Function2[
@@ -8250,7 +8244,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashpublic`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListPublicResponseData], 
@@ -8258,7 +8252,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashpublic`,
       parameters: GistsListPublicEndpoint,
       mapFn: js.Function2[
@@ -8267,7 +8261,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashstarred`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListStarredResponseData], 
@@ -8275,7 +8269,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashgistsSlashstarred`,
       parameters: GistsListStarredEndpoint,
       mapFn: js.Function2[
@@ -8284,7 +8278,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashgists`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListResponseData], 
@@ -8292,7 +8286,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashgists`,
       parameters: GistsListEndpoint,
       mapFn: js.Function2[
@@ -8301,24 +8295,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashinstallationSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] & `1`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashinstallationSlashrepositories`,
       parameters: AppsListReposAccessibleToInstallationEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] with `1`, 
+          /* response */ OctokitResponse[AppsListReposAccessibleToInstallationResponseData] & `1`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashissues`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListResponseData], 
@@ -8326,7 +8320,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashissues`,
       parameters: IssuesListEndpoint,
       mapFn: js.Function2[
@@ -8335,7 +8329,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[AppsListAccountsForPlanResponseData], 
@@ -8343,7 +8337,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`,
       parameters: AppsListAccountsForPlanEndpoint,
       mapFn: js.Function2[
@@ -8352,7 +8346,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashplans`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[AppsListPlansResponseData], 
@@ -8360,7 +8354,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashplans`,
       parameters: AppsListPlansEndpoint,
       mapFn: js.Function2[
@@ -8369,7 +8363,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[AppsListAccountsForPlanStubbedResponseData], 
@@ -8377,7 +8371,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`,
       parameters: AppsListAccountsForPlanStubbedEndpoint,
       mapFn: js.Function2[
@@ -8386,7 +8380,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[AppsListPlansStubbedResponseData], 
@@ -8394,7 +8388,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashmarketplace_listingSlashstubbedSlashplans`,
       parameters: AppsListPlansStubbedEndpoint,
       mapFn: js.Function2[
@@ -8403,7 +8397,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashnotifications`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActivityListNotificationsForAuthenticatedUserResponseData], 
@@ -8411,7 +8405,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashnotifications`,
       parameters: ActivityListNotificationsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -8420,7 +8414,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashorganizations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListResponseData], 
@@ -8428,7 +8422,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashorganizations`,
       parameters: OrgsListEndpoint,
       mapFn: js.Function2[
@@ -8437,58 +8431,58 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`,
       parameters: ActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] with `3`, 
+          /* response */ OctokitResponse[ActionsListRepoAccessToSelfHostedRunnerGroupInOrgResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`,
       parameters: ActionsListSelfHostedRunnersInGroupForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersInGroupForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] & `2`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`,
       parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] with `2`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] & `2`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActionsListRunnerApplicationsForOrgResponseData], 
@@ -8496,7 +8490,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`,
       parameters: ActionsListRunnerApplicationsForOrgEndpoint,
       mapFn: js.Function2[
@@ -8505,58 +8499,58 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForOrgResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] & `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`,
       parameters: ActionsListSelectedReposForOrgSecretEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] with `5`, 
+          /* response */ OctokitResponse[ActionsListSelectedReposForOrgSecretResponseData] & `5`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] & `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`,
       parameters: ActionsListOrgSecretsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] with `4`, 
+          /* response */ OctokitResponse[ActionsListOrgSecretsResponseData] & `4`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashblocks`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListBlockedUsersResponseData], 
@@ -8564,7 +8558,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashblocks`,
       parameters: OrgsListBlockedUsersEndpoint,
       mapFn: js.Function2[
@@ -8573,7 +8567,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData], 
@@ -8581,7 +8575,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashcredential-authorizations`,
       parameters: OrgsListSamlSsoAuthorizationsEndpoint,
       mapFn: js.Function2[
@@ -8590,7 +8584,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashhooks`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListWebhooksResponseData], 
@@ -8598,7 +8592,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashhooks`,
       parameters: OrgsListWebhooksEndpoint,
       mapFn: js.Function2[
@@ -8607,24 +8601,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] & `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashinstallations`,
       parameters: OrgsListAppInstallationsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] with `6`, 
+          /* response */ OctokitResponse[OrgsListAppInstallationsResponseData] & `6`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListInvitationTeamsResponseData], 
@@ -8632,7 +8626,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`,
       parameters: OrgsListInvitationTeamsEndpoint,
       mapFn: js.Function2[
@@ -8641,7 +8635,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashinvitations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListPendingInvitationsResponseData], 
@@ -8649,7 +8643,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashinvitations`,
       parameters: OrgsListPendingInvitationsEndpoint,
       mapFn: js.Function2[
@@ -8658,7 +8652,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashissues`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListForOrgResponseData], 
@@ -8666,7 +8660,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashissues`,
       parameters: IssuesListForOrgEndpoint,
       mapFn: js.Function2[
@@ -8675,7 +8669,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashmembers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListMembersResponseData], 
@@ -8683,7 +8677,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashmembers`,
       parameters: OrgsListMembersEndpoint,
       mapFn: js.Function2[
@@ -8692,7 +8686,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[MigrationsListReposForOrgResponseData], 
@@ -8700,7 +8694,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`,
       parameters: MigrationsListReposForOrgEndpoint,
       mapFn: js.Function2[
@@ -8709,7 +8703,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashmigrations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[MigrationsListForOrgResponseData], 
@@ -8717,7 +8711,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashmigrations`,
       parameters: MigrationsListForOrgEndpoint,
       mapFn: js.Function2[
@@ -8726,7 +8720,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListOutsideCollaboratorsResponseData], 
@@ -8734,7 +8728,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashoutside_collaborators`,
       parameters: OrgsListOutsideCollaboratorsEndpoint,
       mapFn: js.Function2[
@@ -8743,7 +8737,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashprojects`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ProjectsListForOrgResponseData], 
@@ -8751,7 +8745,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashprojects`,
       parameters: ProjectsListForOrgEndpoint,
       mapFn: js.Function2[
@@ -8760,7 +8754,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashpublic_members`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListPublicMembersResponseData], 
@@ -8768,7 +8762,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashpublic_members`,
       parameters: OrgsListPublicMembersEndpoint,
       mapFn: js.Function2[
@@ -8777,7 +8771,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashrepos`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListForOrgResponseData], 
@@ -8785,7 +8779,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashrepos`,
       parameters: ReposListForOrgEndpoint,
       mapFn: js.Function2[
@@ -8794,24 +8788,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`,
       parameters: TeamsListIdPGroupsForOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForTeamDiscussionCommentInOrgResponseData], 
@@ -8819,7 +8813,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionCommentInOrgEndpoint,
       mapFn: js.Function2[
@@ -8828,7 +8822,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListDiscussionCommentsInOrgResponseData], 
@@ -8836,7 +8830,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       parameters: TeamsListDiscussionCommentsInOrgEndpoint,
       mapFn: js.Function2[
@@ -8845,7 +8839,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForTeamDiscussionInOrgResponseData], 
@@ -8853,7 +8847,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionInOrgEndpoint,
       mapFn: js.Function2[
@@ -8862,7 +8856,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListDiscussionsInOrgResponseData], 
@@ -8870,7 +8864,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`,
       parameters: TeamsListDiscussionsInOrgEndpoint,
       mapFn: js.Function2[
@@ -8879,7 +8873,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListPendingInvitationsInOrgResponseData], 
@@ -8887,7 +8881,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`,
       parameters: TeamsListPendingInvitationsInOrgEndpoint,
       mapFn: js.Function2[
@@ -8896,7 +8890,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListMembersInOrgResponseData], 
@@ -8904,7 +8898,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`,
       parameters: TeamsListMembersInOrgEndpoint,
       mapFn: js.Function2[
@@ -8913,7 +8907,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListProjectsInOrgResponseData], 
@@ -8921,7 +8915,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`,
       parameters: TeamsListProjectsInOrgEndpoint,
       mapFn: js.Function2[
@@ -8930,7 +8924,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListReposInOrgResponseData], 
@@ -8938,7 +8932,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`,
       parameters: TeamsListReposInOrgEndpoint,
       mapFn: js.Function2[
@@ -8947,24 +8941,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsInOrgEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsInOrgResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListChildInOrgResponseData], 
@@ -8972,7 +8966,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`,
       parameters: TeamsListChildInOrgEndpoint,
       mapFn: js.Function2[
@@ -8981,7 +8975,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteams`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListResponseData], 
@@ -8989,7 +8983,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashorgsSlashColonorgSlashteams`,
       parameters: TeamsListEndpoint,
       mapFn: js.Function2[
@@ -8998,7 +8992,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ProjectsListCollaboratorsResponseData], 
@@ -9006,7 +9000,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashprojectsSlashColonproject_idSlashcollaborators`,
       parameters: ProjectsListCollaboratorsEndpoint,
       mapFn: js.Function2[
@@ -9015,7 +9009,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ProjectsListColumnsResponseData], 
@@ -9023,7 +9017,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashprojectsSlashColonproject_idSlashcolumns`,
       parameters: ProjectsListColumnsEndpoint,
       mapFn: js.Function2[
@@ -9032,7 +9026,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ProjectsListCardsResponseData], 
@@ -9040,7 +9034,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`,
       parameters: ProjectsListCardsEndpoint,
       mapFn: js.Function2[
@@ -9049,24 +9043,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`,
       parameters: ActionsListArtifactsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListArtifactsForRepoResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData], 
@@ -9074,7 +9068,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`,
       parameters: ActionsListRunnerApplicationsForRepoEndpoint,
       mapFn: js.Function2[
@@ -9083,126 +9077,126 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`,
       parameters: ActionsListSelfHostedRunnersForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] with `0`, 
+          /* response */ OctokitResponse[ActionsListSelfHostedRunnersForRepoResponseData] & `0`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`,
       parameters: ActionsListWorkflowRunArtifactsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] with `8`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunArtifactsResponseData] & `8`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] & `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`,
       parameters: ActionsListJobsForWorkflowRunEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] with `10`, 
+          /* response */ OctokitResponse[ActionsListJobsForWorkflowRunResponseData] & `10`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`,
       parameters: ActionsListWorkflowRunsForRepoEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsForRepoResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] & `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`,
       parameters: ActionsListRepoSecretsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] with `11`, 
+          /* response */ OctokitResponse[ActionsListRepoSecretsResponseData] & `11`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`,
       parameters: ActionsListWorkflowRunsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] with `9`, 
+          /* response */ OctokitResponse[ActionsListWorkflowRunsResponseData] & `9`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] & `12`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`,
       parameters: ActionsListRepoWorkflowsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] with `12`, 
+          /* response */ OctokitResponse[ActionsListRepoWorkflowsResponseData] & `12`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListAssigneesResponseData], 
@@ -9210,7 +9204,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`,
       parameters: IssuesListAssigneesEndpoint,
       mapFn: js.Function2[
@@ -9219,7 +9213,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListBranchesResponseData], 
@@ -9227,7 +9221,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`,
       parameters: ReposListBranchesEndpoint,
       mapFn: js.Function2[
@@ -9236,7 +9230,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ChecksListAnnotationsResponseData], 
@@ -9244,7 +9238,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`,
       parameters: ChecksListAnnotationsEndpoint,
       mapFn: js.Function2[
@@ -9253,24 +9247,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`,
       parameters: ChecksListForSuiteEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForSuiteResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForSuiteResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[CodeScanningListAlertsForRepoResponseData], 
@@ -9278,7 +9272,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`,
       parameters: CodeScanningListAlertsForRepoEndpoint,
       mapFn: js.Function2[
@@ -9287,7 +9281,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[CodeScanningListRecentAnalysesResponseData], 
@@ -9295,7 +9289,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`,
       parameters: CodeScanningListRecentAnalysesEndpoint,
       mapFn: js.Function2[
@@ -9304,7 +9298,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListCollaboratorsResponseData], 
@@ -9312,7 +9306,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`,
       parameters: ReposListCollaboratorsEndpoint,
       mapFn: js.Function2[
@@ -9321,7 +9315,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForCommitCommentResponseData], 
@@ -9329,7 +9323,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`,
       parameters: ReactionsListForCommitCommentEndpoint,
       mapFn: js.Function2[
@@ -9338,7 +9332,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListCommitCommentsForRepoResponseData], 
@@ -9346,7 +9340,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`,
       parameters: ReposListCommitCommentsForRepoEndpoint,
       mapFn: js.Function2[
@@ -9355,7 +9349,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListBranchesForHeadCommitResponseData], 
@@ -9363,7 +9357,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`,
       parameters: ReposListBranchesForHeadCommitEndpoint,
       mapFn: js.Function2[
@@ -9372,7 +9366,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListCommentsForCommitResponseData], 
@@ -9380,7 +9374,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`,
       parameters: ReposListCommentsForCommitEndpoint,
       mapFn: js.Function2[
@@ -9389,7 +9383,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListPullRequestsAssociatedWithCommitResponseData], 
@@ -9397,7 +9391,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`,
       parameters: ReposListPullRequestsAssociatedWithCommitEndpoint,
       mapFn: js.Function2[
@@ -9406,41 +9400,41 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`,
       parameters: ChecksListForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListForRefResponseData] with `13`, 
+          /* response */ OctokitResponse[ChecksListForRefResponseData] & `13`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] & `14`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`,
       parameters: ChecksListSuitesForRefEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] with `14`, 
+          /* response */ OctokitResponse[ChecksListSuitesForRefResponseData] & `14`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListCommitStatusesForRefResponseData], 
@@ -9448,7 +9442,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`,
       parameters: ReposListCommitStatusesForRefEndpoint,
       mapFn: js.Function2[
@@ -9457,7 +9451,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListCommitsResponseData], 
@@ -9465,7 +9459,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`,
       parameters: ReposListCommitsEndpoint,
       mapFn: js.Function2[
@@ -9474,7 +9468,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListContributorsResponseData], 
@@ -9482,7 +9476,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`,
       parameters: ReposListContributorsEndpoint,
       mapFn: js.Function2[
@@ -9491,7 +9485,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListDeploymentStatusesResponseData], 
@@ -9499,7 +9493,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`,
       parameters: ReposListDeploymentStatusesEndpoint,
       mapFn: js.Function2[
@@ -9508,7 +9502,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListDeploymentsResponseData], 
@@ -9516,7 +9510,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`,
       parameters: ReposListDeploymentsEndpoint,
       mapFn: js.Function2[
@@ -9525,7 +9519,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListForksResponseData], 
@@ -9533,7 +9527,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashforks`,
       parameters: ReposListForksEndpoint,
       mapFn: js.Function2[
@@ -9542,7 +9536,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GitListMatchingRefsResponseData], 
@@ -9550,7 +9544,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`,
       parameters: GitListMatchingRefsEndpoint,
       mapFn: js.Function2[
@@ -9559,7 +9553,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListWebhooksResponseData], 
@@ -9567,7 +9561,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`,
       parameters: ReposListWebhooksEndpoint,
       mapFn: js.Function2[
@@ -9576,7 +9570,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListInvitationsResponseData], 
@@ -9584,7 +9578,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`,
       parameters: ReposListInvitationsEndpoint,
       mapFn: js.Function2[
@@ -9593,7 +9587,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListCommentsResponseData], 
@@ -9601,7 +9595,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`,
       parameters: IssuesListCommentsEndpoint,
       mapFn: js.Function2[
@@ -9610,7 +9604,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListEventsResponseData], 
@@ -9618,7 +9612,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`,
       parameters: IssuesListEventsEndpoint,
       mapFn: js.Function2[
@@ -9627,7 +9621,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListLabelsOnIssueResponseData], 
@@ -9635,7 +9629,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`,
       parameters: IssuesListLabelsOnIssueEndpoint,
       mapFn: js.Function2[
@@ -9644,7 +9638,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForIssueResponseData], 
@@ -9652,7 +9646,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`,
       parameters: ReactionsListForIssueEndpoint,
       mapFn: js.Function2[
@@ -9661,7 +9655,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListEventsForTimelineResponseData], 
@@ -9669,7 +9663,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`,
       parameters: IssuesListEventsForTimelineEndpoint,
       mapFn: js.Function2[
@@ -9678,7 +9672,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForIssueCommentResponseData], 
@@ -9686,7 +9680,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`,
       parameters: ReactionsListForIssueCommentEndpoint,
       mapFn: js.Function2[
@@ -9695,7 +9689,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListCommentsForRepoResponseData], 
@@ -9703,7 +9697,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`,
       parameters: IssuesListCommentsForRepoEndpoint,
       mapFn: js.Function2[
@@ -9712,7 +9706,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListEventsForRepoResponseData], 
@@ -9720,7 +9714,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`,
       parameters: IssuesListEventsForRepoEndpoint,
       mapFn: js.Function2[
@@ -9729,7 +9723,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListForRepoResponseData], 
@@ -9737,7 +9731,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashissues`,
       parameters: IssuesListForRepoEndpoint,
       mapFn: js.Function2[
@@ -9746,7 +9740,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListDeployKeysResponseData], 
@@ -9754,7 +9748,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`,
       parameters: ReposListDeployKeysEndpoint,
       mapFn: js.Function2[
@@ -9763,7 +9757,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListLabelsForRepoResponseData], 
@@ -9771,7 +9765,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`,
       parameters: IssuesListLabelsForRepoEndpoint,
       mapFn: js.Function2[
@@ -9780,7 +9774,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListLanguagesResponseData], 
@@ -9788,7 +9782,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`,
       parameters: ReposListLanguagesEndpoint,
       mapFn: js.Function2[
@@ -9797,7 +9791,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListLabelsForMilestoneResponseData], 
@@ -9805,7 +9799,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`,
       parameters: IssuesListLabelsForMilestoneEndpoint,
       mapFn: js.Function2[
@@ -9814,7 +9808,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListMilestonesResponseData], 
@@ -9822,7 +9816,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`,
       parameters: IssuesListMilestonesEndpoint,
       mapFn: js.Function2[
@@ -9831,7 +9825,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData], 
@@ -9839,7 +9833,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`,
       parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -9848,7 +9842,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListPagesBuildsResponseData], 
@@ -9856,7 +9850,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`,
       parameters: ReposListPagesBuildsEndpoint,
       mapFn: js.Function2[
@@ -9865,7 +9859,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ProjectsListForRepoResponseData], 
@@ -9873,7 +9867,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`,
       parameters: ProjectsListForRepoEndpoint,
       mapFn: js.Function2[
@@ -9882,7 +9876,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[PullsListReviewCommentsResponseData], 
@@ -9890,7 +9884,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`,
       parameters: PullsListReviewCommentsEndpoint,
       mapFn: js.Function2[
@@ -9899,7 +9893,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[PullsListCommitsResponseData], 
@@ -9907,7 +9901,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`,
       parameters: PullsListCommitsEndpoint,
       mapFn: js.Function2[
@@ -9916,7 +9910,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[PullsListFilesResponseData], 
@@ -9924,7 +9918,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`,
       parameters: PullsListFilesEndpoint,
       mapFn: js.Function2[
@@ -9933,24 +9927,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] & `15`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`,
       parameters: PullsListRequestedReviewersEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] with `15`, 
+          /* response */ OctokitResponse[PullsListRequestedReviewersResponseData] & `15`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[PullsListCommentsForReviewResponseData], 
@@ -9958,7 +9952,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`,
       parameters: PullsListCommentsForReviewEndpoint,
       mapFn: js.Function2[
@@ -9967,7 +9961,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[PullsListReviewsResponseData], 
@@ -9975,7 +9969,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`,
       parameters: PullsListReviewsEndpoint,
       mapFn: js.Function2[
@@ -9984,7 +9978,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForPullRequestReviewCommentResponseData], 
@@ -9992,7 +9986,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`,
       parameters: ReactionsListForPullRequestReviewCommentEndpoint,
       mapFn: js.Function2[
@@ -10001,7 +9995,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[PullsListReviewCommentsForRepoResponseData], 
@@ -10009,7 +10003,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`,
       parameters: PullsListReviewCommentsForRepoEndpoint,
       mapFn: js.Function2[
@@ -10018,7 +10012,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[PullsListResponseData], 
@@ -10026,7 +10020,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`,
       parameters: PullsListEndpoint,
       mapFn: js.Function2[
@@ -10035,7 +10029,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListReleaseAssetsResponseData], 
@@ -10043,7 +10037,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`,
       parameters: ReposListReleaseAssetsEndpoint,
       mapFn: js.Function2[
@@ -10052,7 +10046,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListReleasesResponseData], 
@@ -10060,7 +10054,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`,
       parameters: ReposListReleasesEndpoint,
       mapFn: js.Function2[
@@ -10069,7 +10063,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[
@@ -10079,7 +10073,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`,
       parameters: ActivityListStargazersForRepoEndpoint,
       mapFn: js.Function2[
@@ -10090,7 +10084,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActivityListWatchersForRepoResponseData], 
@@ -10098,7 +10092,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`,
       parameters: ActivityListWatchersForRepoEndpoint,
       mapFn: js.Function2[
@@ -10107,7 +10101,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListTagsResponseData], 
@@ -10115,7 +10109,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashtags`,
       parameters: ReposListTagsEndpoint,
       mapFn: js.Function2[
@@ -10124,7 +10118,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListTeamsResponseData], 
@@ -10132,7 +10126,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashreposSlashColonownerSlashColonrepoSlashteams`,
       parameters: ReposListTeamsEndpoint,
       mapFn: js.Function2[
@@ -10141,7 +10135,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashrepositories`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListPublicResponseData], 
@@ -10149,7 +10143,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashrepositories`,
       parameters: ReposListPublicEndpoint,
       mapFn: js.Function2[
@@ -10158,177 +10152,177 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
       parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
       parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`, 
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`,
       parameters: ScimListProvisionedIdentitiesEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] with `16`, 
+          /* response */ OctokitResponse[ScimListProvisionedIdentitiesResponseData] & `16`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashcode`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
+          /* response */ OctokitResponse[SearchCodeResponseData] & `17`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashcode`,
       parameters: SearchCodeEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCodeResponseData] with `17`, 
+          /* response */ OctokitResponse[SearchCodeResponseData] & `17`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashcommits`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
+          /* response */ OctokitResponse[SearchCommitsResponseData] & `18`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashcommits`,
       parameters: SearchCommitsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchCommitsResponseData] with `18`, 
+          /* response */ OctokitResponse[SearchCommitsResponseData] & `18`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashissues`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] & `19`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashissues`,
       parameters: SearchIssuesAndPullRequestsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] with `19`, 
+          /* response */ OctokitResponse[SearchIssuesAndPullRequestsResponseData] & `19`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashlabels`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
+          /* response */ OctokitResponse[SearchLabelsResponseData] & `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashlabels`,
       parameters: SearchLabelsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchLabelsResponseData] with `20`, 
+          /* response */ OctokitResponse[SearchLabelsResponseData] & `20`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
+          /* response */ OctokitResponse[SearchReposResponseData] & `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashrepositories`,
       parameters: SearchReposEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchReposResponseData] with `21`, 
+          /* response */ OctokitResponse[SearchReposResponseData] & `21`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashtopics`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
+          /* response */ OctokitResponse[SearchTopicsResponseData] & `22`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashtopics`,
       parameters: SearchTopicsEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchTopicsResponseData] with `22`, 
+          /* response */ OctokitResponse[SearchTopicsResponseData] & `22`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashusers`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
+          /* response */ OctokitResponse[SearchUsersResponseData] & `23`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashsearchSlashusers`,
       parameters: SearchUsersEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[SearchUsersResponseData] with `23`, 
+          /* response */ OctokitResponse[SearchUsersResponseData] & `23`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForTeamDiscussionCommentLegacyResponseData], 
@@ -10336,7 +10330,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionCommentLegacyEndpoint,
       mapFn: js.Function2[
@@ -10345,7 +10339,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListDiscussionCommentsLegacyResponseData], 
@@ -10353,7 +10347,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`,
       parameters: TeamsListDiscussionCommentsLegacyEndpoint,
       mapFn: js.Function2[
@@ -10362,7 +10356,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReactionsListForTeamDiscussionLegacyResponseData], 
@@ -10370,7 +10364,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`,
       parameters: ReactionsListForTeamDiscussionLegacyEndpoint,
       mapFn: js.Function2[
@@ -10379,7 +10373,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListDiscussionsLegacyResponseData], 
@@ -10387,7 +10381,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashdiscussions`,
       parameters: TeamsListDiscussionsLegacyEndpoint,
       mapFn: js.Function2[
@@ -10396,7 +10390,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListPendingInvitationsLegacyResponseData], 
@@ -10404,7 +10398,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashinvitations`,
       parameters: TeamsListPendingInvitationsLegacyEndpoint,
       mapFn: js.Function2[
@@ -10413,7 +10407,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashmembers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListMembersLegacyResponseData], 
@@ -10421,7 +10415,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashmembers`,
       parameters: TeamsListMembersLegacyEndpoint,
       mapFn: js.Function2[
@@ -10430,7 +10424,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashprojects`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListProjectsLegacyResponseData], 
@@ -10438,7 +10432,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashprojects`,
       parameters: TeamsListProjectsLegacyEndpoint,
       mapFn: js.Function2[
@@ -10447,7 +10441,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashrepos`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListReposLegacyResponseData], 
@@ -10455,7 +10449,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashrepos`,
       parameters: TeamsListReposLegacyEndpoint,
       mapFn: js.Function2[
@@ -10464,24 +10458,24 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`,
       parameters: TeamsListIdPGroupsForLegacyEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] with `7`, 
+          /* response */ OctokitResponse[TeamsListIdPGroupsForLegacyResponseData] & `7`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashteams`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListChildLegacyResponseData], 
@@ -10489,7 +10483,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashteamsSlashColonteam_idSlashteams`,
       parameters: TeamsListChildLegacyEndpoint,
       mapFn: js.Function2[
@@ -10498,7 +10492,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashblocks`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListBlockedByAuthenticatedResponseData], 
@@ -10506,7 +10500,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashblocks`,
       parameters: UsersListBlockedByAuthenticatedEndpoint,
       mapFn: js.Function2[
@@ -10515,7 +10509,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashemails`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListEmailsForAuthenticatedResponseData], 
@@ -10523,7 +10517,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashemails`,
       parameters: UsersListEmailsForAuthenticatedEndpoint,
       mapFn: js.Function2[
@@ -10532,7 +10526,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashfollowers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListFollowersForAuthenticatedUserResponseData], 
@@ -10540,7 +10534,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashfollowers`,
       parameters: UsersListFollowersForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10549,7 +10543,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashfollowing`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListFollowedByAuthenticatedResponseData], 
@@ -10557,7 +10551,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashfollowing`,
       parameters: UsersListFollowedByAuthenticatedEndpoint,
       mapFn: js.Function2[
@@ -10566,7 +10560,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashgpg_keys`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListGpgKeysForAuthenticatedResponseData], 
@@ -10574,7 +10568,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashgpg_keys`,
       parameters: UsersListGpgKeysForAuthenticatedEndpoint,
       mapFn: js.Function2[
@@ -10583,41 +10577,41 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`,
       parameters: AppsListInstallationReposForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] with `3`, 
+          /* response */ OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] & `3`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashinstallations`,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] & `24`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashinstallations`,
       parameters: AppsListInstallationsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
-          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] with `24`, 
+          /* response */ OctokitResponse[AppsListInstallationsForAuthenticatedUserResponseData] & `24`, 
           /* done */ js.Function0[Unit], 
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashissues`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[IssuesListForAuthenticatedUserResponseData], 
@@ -10625,7 +10619,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashissues`,
       parameters: IssuesListForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10634,7 +10628,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashkeys`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListPublicSshKeysForAuthenticatedResponseData], 
@@ -10642,7 +10636,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashkeys`,
       parameters: UsersListPublicSshKeysForAuthenticatedEndpoint,
       mapFn: js.Function2[
@@ -10651,7 +10645,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[AppsListSubscriptionsForAuthenticatedUserStubbedResponseData], 
@@ -10659,7 +10653,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmarketplace_purchasesSlashstubbed`,
       parameters: AppsListSubscriptionsForAuthenticatedUserStubbedEndpoint,
       mapFn: js.Function2[
@@ -10668,7 +10662,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmarketplace_purchases`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData], 
@@ -10676,7 +10670,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmarketplace_purchases`,
       parameters: AppsListSubscriptionsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10685,7 +10679,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmembershipsSlashorgs`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListMembershipsForAuthenticatedUserResponseData], 
@@ -10693,7 +10687,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmembershipsSlashorgs`,
       parameters: OrgsListMembershipsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10702,7 +10696,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[MigrationsListReposForUserResponseData], 
@@ -10710,7 +10704,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
       parameters: MigrationsListReposForUserEndpoint,
       mapFn: js.Function2[
@@ -10719,7 +10713,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmigrations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[MigrationsListForAuthenticatedUserResponseData], 
@@ -10727,7 +10721,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashmigrations`,
       parameters: MigrationsListForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10736,7 +10730,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashorgs`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListForAuthenticatedUserResponseData], 
@@ -10744,7 +10738,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashorgs`,
       parameters: OrgsListForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10753,7 +10747,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashpublic_emails`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData], 
@@ -10761,7 +10755,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashpublic_emails`,
       parameters: UsersListPublicEmailsForAuthenticatedEndpoint,
       mapFn: js.Function2[
@@ -10770,7 +10764,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashrepository_invitations`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData], 
@@ -10778,7 +10772,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashrepository_invitations`,
       parameters: ReposListInvitationsForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10787,7 +10781,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashstarred`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[
@@ -10797,7 +10791,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashstarred`,
       parameters: ActivityListReposStarredByAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10808,7 +10802,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashsubscriptions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData], 
@@ -10816,7 +10810,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashsubscriptions`,
       parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10825,7 +10819,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashteams`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[TeamsListForAuthenticatedUserResponseData], 
@@ -10833,7 +10827,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashuserSlashteams`,
       parameters: TeamsListForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
@@ -10842,7 +10836,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashfollowers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListFollowersForUserResponseData], 
@@ -10850,7 +10844,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashfollowers`,
       parameters: UsersListFollowersForUserEndpoint,
       mapFn: js.Function2[
@@ -10859,7 +10853,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashfollowing`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListFollowingForUserResponseData], 
@@ -10867,7 +10861,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashfollowing`,
       parameters: UsersListFollowingForUserEndpoint,
       mapFn: js.Function2[
@@ -10876,7 +10870,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashgists`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[GistsListForUserResponseData], 
@@ -10884,7 +10878,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashgists`,
       parameters: GistsListForUserEndpoint,
       mapFn: js.Function2[
@@ -10893,7 +10887,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListGpgKeysForUserResponseData], 
@@ -10901,7 +10895,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashgpg_keys`,
       parameters: UsersListGpgKeysForUserEndpoint,
       mapFn: js.Function2[
@@ -10910,7 +10904,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashkeys`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListPublicKeysForUserResponseData], 
@@ -10918,7 +10912,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashkeys`,
       parameters: UsersListPublicKeysForUserEndpoint,
       mapFn: js.Function2[
@@ -10927,7 +10921,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashorgs`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[OrgsListForUserResponseData], 
@@ -10935,7 +10929,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashorgs`,
       parameters: OrgsListForUserEndpoint,
       mapFn: js.Function2[
@@ -10944,7 +10938,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashprojects`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ProjectsListForUserResponseData], 
@@ -10952,7 +10946,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashprojects`,
       parameters: ProjectsListForUserEndpoint,
       mapFn: js.Function2[
@@ -10961,7 +10955,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashstarred`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[
@@ -10971,7 +10965,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashstarred`,
       parameters: ActivityListReposStarredByUserEndpoint,
       mapFn: js.Function2[
@@ -10982,7 +10976,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[ActivityListReposWatchedByUserResponseData], 
@@ -10990,7 +10984,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET SlashusersSlashColonusernameSlashsubscriptions`,
       parameters: ActivityListReposWatchedByUserEndpoint,
       mapFn: js.Function2[
@@ -10999,7 +10993,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashusers`,
       mapFn: js.Function2[
           /* response */ OctokitResponse[UsersListResponseData], 
@@ -11007,7 +11001,7 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[MR /* <: js.Array[_] */](
+    def apply[MR /* <: js.Array[js.Any] */](
       route: `GET Slashusers`,
       parameters: UsersListEndpoint,
       mapFn: js.Function2[
@@ -11029,7 +11023,7 @@ object typesMod {
       * @param {string} request Request method (`octokit.request` or `@octokit/request`)
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[_] */](
+    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[js.Any] */](
       request: R,
       mapFn: js.Function2[
           /* response */ NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], 
@@ -11044,7 +11038,7 @@ object typesMod {
       * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[_] */](
+    def apply[R /* <: RequestInterface[js.Object] */, MR /* <: js.Array[js.Any] */](
       request: R,
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any,
       mapFn: js.Function2[
@@ -11053,10 +11047,6 @@ object typesMod {
           MR
         ]
     ): js.Promise[MR] = js.native
-    def apply[T, R /* <: Route */](
-      route: R,
-      parameters: RequestParameters | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any)
-    ): js.Promise[js.Array[T]] = js.native
     
     def iterator[T](EndpointOptions: EndpointOptions): AsyncIterableIterator[OctokitResponse[PaginationResults[T]]] = js.native
     def iterator[R /* <: RequestInterface[js.Object] */](request: R): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native

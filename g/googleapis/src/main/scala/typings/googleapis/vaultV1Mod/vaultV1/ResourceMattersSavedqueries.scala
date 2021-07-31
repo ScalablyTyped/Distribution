@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vault/v1", "vault_v1.Resource$Matters$Savedqueries")
@@ -31,7 +30,7 @@ class ResourceMattersSavedqueries protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaSavedQuery] = js.native
   def create(callback: BodyResponseCallback[SchemaSavedQuery]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedQuery] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedQuery] = js.native
   def create(params: ParamsResourceMattersSavedqueriesCreate): GaxiosPromise[SchemaSavedQuery] = js.native
   def create(params: ParamsResourceMattersSavedqueriesCreate, callback: BodyResponseCallback[SchemaSavedQuery]): Unit = js.native
   def create(
@@ -61,7 +60,7 @@ class ResourceMattersSavedqueries protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceMattersSavedqueriesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceMattersSavedqueriesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -91,7 +90,7 @@ class ResourceMattersSavedqueries protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSavedQuery] = js.native
   def get(callback: BodyResponseCallback[SchemaSavedQuery]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedQuery] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedQuery] = js.native
   def get(params: ParamsResourceMattersSavedqueriesGet): GaxiosPromise[SchemaSavedQuery] = js.native
   def get(params: ParamsResourceMattersSavedqueriesGet, callback: BodyResponseCallback[SchemaSavedQuery]): Unit = js.native
   def get(
@@ -123,7 +122,7 @@ class ResourceMattersSavedqueries protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListSavedQueriesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSavedQueriesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSavedQueriesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListSavedQueriesResponse] = js.native
   def list(params: ParamsResourceMattersSavedqueriesList): GaxiosPromise[SchemaListSavedQueriesResponse] = js.native
   def list(
     params: ParamsResourceMattersSavedqueriesList,

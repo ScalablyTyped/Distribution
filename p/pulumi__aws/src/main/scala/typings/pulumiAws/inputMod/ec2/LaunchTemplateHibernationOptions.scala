@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateHibernationOptions extends StObject {
   
   /**
     * If set to `true`, the launched EC2 instance will hibernation enabled.
     */
-  var configured: Input[Boolean] = js.native
+  var configured: Input[Boolean]
 }
 object LaunchTemplateHibernationOptions {
   

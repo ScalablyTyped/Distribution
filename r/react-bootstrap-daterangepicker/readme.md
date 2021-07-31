@@ -10,8 +10,8 @@ A date/time picker for react (using bootstrap). This is a react port of: https:/
 | Full name          | react-bootstrap-daterangepicker |
 | Keywords           | react, react-component, bootstrap, date, range, picker, selector, datetime, ui |
 | # releases         | 7 |
-| # dependents       | 14 |
-| # downloads        | 1889243 |
+| # dependents       | 13 |
+| # downloads        | 2212039 |
 | # stars            | 4 |
 
 ## Links

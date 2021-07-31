@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,6 +14,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.ContainerResource")
 @js.native
 class ContainerResource protected ()
-  extends typings.playcanvas.pc.ContainerResource {
+  extends StObject
+     with typings.playcanvas.pc.ContainerResource {
   def this(data: js.Any) = this()
+  
+  /**
+    * Array of assets of animations in the GLB container.
+    */
+  /* CompleteClass */
+  var animations: js.Array[typings.playcanvas.pc.Asset] = js.native
+  
+  /**
+    * Array of assets of materials in the GLB container.
+    */
+  /* CompleteClass */
+  var materials: js.Array[typings.playcanvas.pc.Asset] = js.native
+  
+  /**
+    * Array of assets of textures in the GLB container.
+    */
+  /* CompleteClass */
+  var textures: js.Array[typings.playcanvas.pc.Asset] = js.native
 }

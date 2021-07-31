@@ -2,12 +2,14 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorPairwiseMod {
   
-  @JSImport("rxjs/operator/pairwise", "pairwise")
+  @JSImport("rxjs/operator/pairwise", JSImport.Namespace)
   @js.native
-  def pairwise[T](): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def pairwise[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pairwise")().asInstanceOf[js.Any]
 }

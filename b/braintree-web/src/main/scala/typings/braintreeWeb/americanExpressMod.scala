@@ -5,20 +5,18 @@ import typings.braintreeWeb.anon.Nonce
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object americanExpressMod {
   
-  @js.native
   trait AmericanExpress extends StObject {
     
     /**
       * @description The current version of the SDK, i.e. `3.0.2`.
       */
-    var VERSION: String = js.native
+    var VERSION: String
     
-    def create(options: Client, callback: callback[_]): Unit = js.native
+    def create(options: Client, callback: callback[js.Any]): Unit
     
     /**
       * Gets the Express Checkout nonce profile given a nonce from American Express.     * @example
@@ -36,7 +34,7 @@ object americanExpressMod {
       *   });
       * });
       */
-    def getExpressCheckoutProfile(options: Nonce, callback: callback[_]): Unit = js.native
+    def getExpressCheckoutProfile(options: Nonce, callback: callback[js.Any]): Unit
     
     /**
       * Gets the rewards balance associated with a Braintree nonce.     * @example
@@ -54,16 +52,16 @@ object americanExpressMod {
       *   });
       * });
       */
-    def getRewardsBalance(options: Nonce, callback: callback[_]): Unit = js.native
+    def getRewardsBalance(options: Nonce, callback: callback[js.Any]): Unit
   }
   object AmericanExpress {
     
     @scala.inline
     def apply(
       VERSION: String,
-      create: (Client, callback[_]) => Unit,
-      getExpressCheckoutProfile: (Nonce, callback[_]) => Unit,
-      getRewardsBalance: (Nonce, callback[_]) => Unit
+      create: (Client, callback[js.Any]) => Unit,
+      getExpressCheckoutProfile: (Nonce, callback[js.Any]) => Unit,
+      getRewardsBalance: (Nonce, callback[js.Any]) => Unit
     ): AmericanExpress = {
       val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], create = js.Any.fromFunction2(create), getExpressCheckoutProfile = js.Any.fromFunction2(getExpressCheckoutProfile), getRewardsBalance = js.Any.fromFunction2(getRewardsBalance))
       __obj.asInstanceOf[AmericanExpress]
@@ -73,13 +71,13 @@ object americanExpressMod {
     implicit class AmericanExpressMutableBuilder[Self <: AmericanExpress] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCreate(value: (Client, callback[_]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      def setCreate(value: (Client, callback[js.Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetExpressCheckoutProfile(value: (Nonce, callback[_]) => Unit): Self = StObject.set(x, "getExpressCheckoutProfile", js.Any.fromFunction2(value))
+      def setGetExpressCheckoutProfile(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getExpressCheckoutProfile", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetRewardsBalance(value: (Nonce, callback[_]) => Unit): Self = StObject.set(x, "getRewardsBalance", js.Any.fromFunction2(value))
+      def setGetRewardsBalance(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getRewardsBalance", js.Any.fromFunction2(value))
       
       @scala.inline
       def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])

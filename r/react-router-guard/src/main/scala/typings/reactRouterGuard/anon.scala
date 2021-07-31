@@ -5,26 +5,24 @@ import typings.history.mod.LocationState
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Default[T /* <: ComponentType[_] */] extends StObject {
+  trait Default[T /* <: ComponentType[js.Any] */] extends StObject {
     
-    var default: T = js.native
+    var default: T
   }
   object Default {
     
     @scala.inline
-    def apply[T /* <: ComponentType[_] */](default: T): Default[T] = {
+    def apply[T /* <: ComponentType[js.Any] */](default: T): Default[T] = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default[T]]
     }
     
     @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[_], T /* <: ComponentType[_] */] (val x: Self with Default[T]) extends AnyVal {
+    implicit class DefaultMutableBuilder[Self <: Default[?], T /* <: ComponentType[js.Any] */] (val x: Self & Default[T]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
@@ -32,18 +30,17 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router-dom.react-router-dom.BrowserRouterProps> */
-  @js.native
   trait ReadonlyBrowserRouterProp extends StObject {
     
-    val basename: js.UndefOr[String] = js.native
+    val basename: js.UndefOr[String] = js.undefined
     
-    val forceRefresh: js.UndefOr[Boolean] = js.native
+    val forceRefresh: js.UndefOr[Boolean] = js.undefined
     
     val getUserConfirmation: js.UndefOr[
         js.Function2[/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    val keyLength: js.UndefOr[Double] = js.native
+    val keyLength: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyBrowserRouterProp {
     
@@ -83,20 +80,19 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-router.react-router.RedirectProps> */
-  @js.native
   trait ReadonlyRedirectProps extends StObject {
     
-    val exact: js.UndefOr[Boolean] = js.native
+    val exact: js.UndefOr[Boolean] = js.undefined
     
-    val from: js.UndefOr[String] = js.native
+    val from: js.UndefOr[String] = js.undefined
     
-    val path: js.UndefOr[String] = js.native
+    val path: js.UndefOr[String] = js.undefined
     
-    val push: js.UndefOr[Boolean] = js.native
+    val push: js.UndefOr[Boolean] = js.undefined
     
-    val strict: js.UndefOr[Boolean] = js.native
+    val strict: js.UndefOr[Boolean] = js.undefined
     
-    val to: LocationDescriptor[LocationState] = js.native
+    val to: LocationDescriptor[LocationState]
   }
   object ReadonlyRedirectProps {
     

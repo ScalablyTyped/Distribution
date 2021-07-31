@@ -3,7 +3,6 @@ package typings.webpackClean
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,9 @@ object mod {
     */
   @JSImport("webpack-clean", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Plugin {
+  class ^ protected ()
+    extends StObject
+       with Plugin {
     /**
       * @param files  array of files or string for a single file relative to the basePath
       * or to the context of your config (if the basePath param is not specified)
@@ -24,27 +25,26 @@ object mod {
     def this(files: js.Array[String], options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * directory to be resolved to
       * @default null;
       */
-    var basePath: js.UndefOr[String | Null] = js.native
+    var basePath: js.UndefOr[String | Null] = js.undefined
     
     /**
       * specify if the files should be force deleted in case of compile errors.
       * If forceDelete is not enabled, the compile errors will be logged to stdout but the deletion of the files will not take place
       * @default false
       */
-    var forceDelete: js.UndefOr[Boolean] = js.native
+    var forceDelete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * specify if the .map files should be automatically removed
       * @default false
       */
-    var removeMaps: js.UndefOr[Boolean] = js.native
+    var removeMaps: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

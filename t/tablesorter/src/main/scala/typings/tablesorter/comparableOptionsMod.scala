@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comparableOptionsMod {
   
-  @js.native
   trait ComparableOptions extends StObject {
     
     /**
       * The compare-operators supported by the control.
       */
-    var compare: js.UndefOr[String | js.Array[String]] = js.native
+    var compare: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ComparableOptions {
     

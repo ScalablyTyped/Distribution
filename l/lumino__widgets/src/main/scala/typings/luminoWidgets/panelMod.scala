@@ -5,7 +5,6 @@ import typings.luminoWidgets.panellayoutMod.PanelLayout
 import typings.luminoWidgets.widgetMod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -52,7 +51,6 @@ object panelMod {
     /**
       * An options object for creating a panel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -60,7 +58,7 @@ object panelMod {
         *
         * The default is a new `PanelLayout`.
         */
-      var layout: js.UndefOr[PanelLayout] = js.native
+      var layout: js.UndefOr[PanelLayout] = js.undefined
     }
     object IOptions {
       

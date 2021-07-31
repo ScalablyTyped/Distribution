@@ -5,7 +5,6 @@ import typings.ionicCliFramework.configMod.BaseConfigOptions
 import typings.ionicCliFramework.mod.BaseConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object capacitorConfigMod {
@@ -27,16 +26,15 @@ object capacitorConfigMod {
     def setServerUrl(url: String): Unit = js.native
   }
   
-  @js.native
   trait CapacitorConfigFile extends StObject {
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var appName: js.UndefOr[String] = js.native
+    var appName: js.UndefOr[String] = js.undefined
     
-    var server: js.UndefOr[OriginalUrl] = js.native
+    var server: js.UndefOr[OriginalUrl] = js.undefined
     
-    var webDir: js.UndefOr[String] = js.native
+    var webDir: js.UndefOr[String] = js.undefined
   }
   object CapacitorConfigFile {
     

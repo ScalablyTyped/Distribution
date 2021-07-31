@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewScreenPoint extends Object {
+trait SceneViewScreenPoint
+  extends StObject
+     with Object {
   
   /**
     * The x coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#ScreenPoint)
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#ScreenPoint)
     */
-  var y: Double = js.native
+  var y: Double
 }
 object SceneViewScreenPoint {
   

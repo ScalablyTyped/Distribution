@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScriptsPainlessExecute[T] extends Generic {
+trait ScriptsPainlessExecute[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
 }
 object ScriptsPainlessExecute {
   
@@ -19,7 +19,7 @@ object ScriptsPainlessExecute {
   }
   
   @scala.inline
-  implicit class ScriptsPainlessExecuteMutableBuilder[Self <: ScriptsPainlessExecute[_], T] (val x: Self with ScriptsPainlessExecute[T]) extends AnyVal {
+  implicit class ScriptsPainlessExecuteMutableBuilder[Self <: ScriptsPainlessExecute[?], T] (val x: Self & ScriptsPainlessExecute[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

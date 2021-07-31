@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,9 +16,9 @@ trait IMsoChartTitle extends StObject {
   var Caption: String = js.native
   
   def Characters(): IMsoCharacters = js.native
-  def Characters(Start: js.UndefOr[scala.Nothing], Length: js.Any): IMsoCharacters = js.native
   def Characters(Start: js.Any): IMsoCharacters = js.native
   def Characters(Start: js.Any, Length: js.Any): IMsoCharacters = js.native
+  def Characters(Start: Unit, Length: js.Any): IMsoCharacters = js.native
   
   val Creator: Double = js.native
   

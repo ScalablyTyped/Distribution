@@ -2,28 +2,26 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A SubscriptionPurchase resource indicates the status of a user&#39;s
   * subscription purchase.
   */
-@js.native
 trait SchemaSubscriptionPurchase extends StObject {
   
   /**
     * Whether the subscription will automatically be renewed when it reaches
     * its current expiry time.
     */
-  var autoRenewing: js.UndefOr[Boolean] = js.native
+  var autoRenewing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Time at which the subscription will be automatically resumed, in
     * milliseconds since the Epoch. Only present if the user has requested to
     * pause the subscription.
     */
-  var autoResumeTimeMillis: js.UndefOr[String] = js.native
+  var autoResumeTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The reason why a subscription was canceled or is not auto-renewing.
@@ -32,55 +30,55 @@ trait SchemaSubscriptionPurchase extends StObject {
     * Subscription was replaced with a new subscription  - Subscription was
     * canceled by the developer
     */
-  var cancelReason: js.UndefOr[Double] = js.native
+  var cancelReason: js.UndefOr[Double] = js.undefined
   
   /**
     * Information provided by the user when they complete the subscription
     * cancellation flow (cancellation reason survey).
     */
-  var cancelSurveyResult: js.UndefOr[SchemaSubscriptionCancelSurveyResult] = js.native
+  var cancelSurveyResult: js.UndefOr[SchemaSubscriptionCancelSurveyResult] = js.undefined
   
   /**
     * ISO 3166-1 alpha-2 billing country/region code of the user at the time
     * the subscription was granted.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * A developer-specified string that contains supplemental information about
     * an order.
     */
-  var developerPayload: js.UndefOr[String] = js.native
+  var developerPayload: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the user when the subscription was purchased. Only
     * present for purchases made with &#39;Subscribe with Google&#39;.
     */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Time at which the subscription will expire, in milliseconds since the
     * Epoch.
     */
-  var expiryTimeMillis: js.UndefOr[String] = js.native
+  var expiryTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The family name of the user when the subscription was purchased. Only
     * present for purchases made with &#39;Subscribe with Google&#39;.
     */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /**
     * The given name of the user when the subscription was purchased. Only
     * present for purchases made with &#39;Subscribe with Google&#39;.
     */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
   
   /**
     * This kind represents a subscriptionPurchase object in the
     * androidpublisher service.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The purchase token of the originating purchase if this subscription is
@@ -94,20 +92,20 @@ trait SchemaSubscriptionPurchase extends StObject {
     * you call this API with purchase token Y, this field will be set to X. If
     * you call this API with purchase token X, this field will not be set.
     */
-  var linkedPurchaseToken: js.UndefOr[String] = js.native
+  var linkedPurchaseToken: js.UndefOr[String] = js.undefined
   
   /**
     * The order id of the latest recurring order associated with the purchase
     * of the subscription.
     */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /**
     * The payment state of the subscription. Possible values are:   - Payment
     * pending  - Payment received  - Free trial  - Pending deferred
     * upgrade/downgrade
     */
-  var paymentState: js.UndefOr[Double] = js.native
+  var paymentState: js.UndefOr[Double] = js.undefined
   
   /**
     * Price of the subscription, not including tax. Price is expressed in
@@ -115,7 +113,7 @@ trait SchemaSubscriptionPurchase extends StObject {
     * currency. For example, if the subscription price is €1.99,
     * price_amount_micros is 1990000.
     */
-  var priceAmountMicros: js.UndefOr[String] = js.native
+  var priceAmountMicros: js.UndefOr[String] = js.undefined
   
   /**
     * The latest price change information available. This is present only when
@@ -123,45 +121,45 @@ trait SchemaSubscriptionPurchase extends StObject {
     * Once the subscription renews with the new price or the subscription is
     * canceled, no price change information will be returned.
     */
-  var priceChange: js.UndefOr[SchemaSubscriptionPriceChange] = js.native
+  var priceChange: js.UndefOr[SchemaSubscriptionPriceChange] = js.undefined
   
   /**
     * ISO 4217 currency code for the subscription price. For example, if the
     * price is specified in British pounds sterling, price_currency_code is
     * &quot;GBP&quot;.
     */
-  var priceCurrencyCode: js.UndefOr[String] = js.native
+  var priceCurrencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The profile id of the user when the subscription was purchased. Only
     * present for purchases made with &#39;Subscribe with Google&#39;.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * The profile name of the user when the subscription was purchased. Only
     * present for purchases made with &#39;Subscribe with Google&#39;.
     */
-  var profileName: js.UndefOr[String] = js.native
+  var profileName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of purchase of the subscription. This field is only set if this
     * purchase was not made using the standard in-app billing flow. Possible
     * values are:   - Test (i.e. purchased from a license testing account)
     */
-  var purchaseType: js.UndefOr[Double] = js.native
+  var purchaseType: js.UndefOr[Double] = js.undefined
   
   /**
     * Time at which the subscription was granted, in milliseconds since the
     * Epoch.
     */
-  var startTimeMillis: js.UndefOr[String] = js.native
+  var startTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the subscription was canceled by the user, in
     * milliseconds since the epoch. Only present if cancelReason is 0.
     */
-  var userCancellationTimeMillis: js.UndefOr[String] = js.native
+  var userCancellationTimeMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaSubscriptionPurchase {
   

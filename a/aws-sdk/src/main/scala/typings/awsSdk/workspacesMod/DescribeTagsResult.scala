@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsResult extends StObject {
   
   /**
     * The tags.
     */
-  var TagList: js.UndefOr[typings.awsSdk.workspacesMod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.workspacesMod.TagList] = js.undefined
 }
 object DescribeTagsResult {
   

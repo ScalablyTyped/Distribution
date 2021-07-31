@@ -2,7 +2,6 @@ package typings.hashmap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,7 +11,9 @@ object mod {
   /**
     * Creates an empty hashmap.
     */
-  class ^[TKey, TValue] () extends HashMap[TKey, TValue] {
+  class ^[TKey, TValue] ()
+    extends StObject
+       with HashMap[TKey, TValue] {
     def this(data: js.Array[js.Tuple2[TKey, TValue]]) = this()
     /**
       * Creates a hashmap with the key-value pairs of map or from an array of key-values.
@@ -26,17 +27,14 @@ object mod {
       * @param keysAndValues key1, value1, key2, value2...
       */
     def this(keysAndValues: (TKey | TValue)*) = this()
-  }
-  
-  @js.native
-  trait HashMap[TKey, TValue] extends StObject {
     
     /**
       * Clears hashmap.
       *
       * @return Self.
       */
-    def clear(): HashMap[TKey, TValue] = js.native
+    /* CompleteClass */
+    override def clear(): HashMap[TKey, TValue] = js.native
     
     /**
       * Copy all key-value pairs from other to this instance.
@@ -44,14 +42,16 @@ object mod {
       * @param map Other map.
       * @return Self.
       */
-    def copy(map: HashMap[TKey, TValue]): HashMap[TKey, TValue] = js.native
+    /* CompleteClass */
+    override def copy(map: HashMap[TKey, TValue]): HashMap[TKey, TValue] = js.native
     
     /**
       * Returns size of hashmap (number of entries).
       *
       * @return Number of entries in hashmap.
       */
-    def count(): Double = js.native
+    /* CompleteClass */
+    override def count(): Double = js.native
     
     /**
       * Removes given key from hashmap.
@@ -59,7 +59,8 @@ object mod {
       * @param key Key.
       * @return Self.
       */
-    def delete(key: TKey): HashMap[TKey, TValue] = js.native
+    /* CompleteClass */
+    override def delete(key: TKey): HashMap[TKey, TValue] = js.native
     
     /**
       * Returns all key-value pairs.
@@ -67,7 +68,8 @@ object mod {
       * @return List of key-value pairs.
       * @since 2.3.0
       */
-    def entries(): js.Array[js.Tuple2[TKey, TValue]] = js.native
+    /* CompleteClass */
+    override def entries(): js.Array[js.Tuple2[TKey, TValue]] = js.native
     
     /**
       * Iterates over hashmap.
@@ -75,7 +77,8 @@ object mod {
       * @param callback Function to be invoked for every hashmap entry.
       * @return Self.
       */
-    def forEach(callback: js.Function2[/* value */ TValue, /* key */ TKey, Unit]): HashMap[TKey, TValue] = js.native
+    /* CompleteClass */
+    override def forEach(callback: js.Function2[TValue, TKey, Unit]): HashMap[TKey, TValue] = js.native
     
     /**
       * Return value from hashmap.
@@ -83,7 +86,8 @@ object mod {
       * @param key Key.
       * @return Value stored under given key.
       */
-    def get(key: TKey): TValue = js.native
+    /* CompleteClass */
+    override def get(key: TKey): TValue = js.native
     
     /**
       * Checks if given key exists in hashmap.
@@ -91,14 +95,16 @@ object mod {
       * @param key Key.
       * @return Whether given key exists in hashmap.
       */
-    def has(key: TKey): Boolean = js.native
+    /* CompleteClass */
+    override def has(key: TKey): Boolean = js.native
     
     /**
       * Returns all contained keys.
       *
       * @return List of keys.
       */
-    def keys(): js.Array[TKey] = js.native
+    /* CompleteClass */
+    override def keys(): js.Array[TKey] = js.native
     
     /**
       * Store several key-value pairs.
@@ -106,7 +112,8 @@ object mod {
       * @param keysAndValues key1, value1, key2, value2...
       * @return Self.
       */
-    def multi(keysAndValues: (TKey | TValue)*): HashMap[TKey, TValue] = js.native
+    /* CompleteClass */
+    override def multi(keysAndValues: (TKey | TValue)*): HashMap[TKey, TValue] = js.native
     
     /**
       * Removes given key from hashmap.
@@ -115,7 +122,8 @@ object mod {
       * @return Self.
       * @deprecated Since 2.3.0
       */
-    def remove(key: TKey): HashMap[TKey, TValue] = js.native
+    /* CompleteClass */
+    override def remove(key: TKey): HashMap[TKey, TValue] = js.native
     
     /**
       * Returns key under which given value is stored.
@@ -123,7 +131,8 @@ object mod {
       * @param value Value.
       * @return Key which is assigned to value stored.
       */
-    def search(value: TValue): TKey = js.native
+    /* CompleteClass */
+    override def search(value: TValue): TKey = js.native
     
     /**
       * Store value in hashmap.
@@ -132,14 +141,129 @@ object mod {
       * @param value Value.
       * @return Self.
       */
-    def set(key: TKey, value: TValue): HashMap[TKey, TValue] = js.native
+    /* CompleteClass */
+    override def set(key: TKey, value: TValue): HashMap[TKey, TValue] = js.native
     
     /**
       * Returns all container values.
       *
       * @return List of values.
       */
-    def values(): js.Array[TValue] = js.native
+    /* CompleteClass */
+    override def values(): js.Array[TValue] = js.native
+  }
+  
+  trait HashMap[TKey, TValue] extends StObject {
+    
+    /**
+      * Clears hashmap.
+      *
+      * @return Self.
+      */
+    def clear(): HashMap[TKey, TValue]
+    
+    /**
+      * Copy all key-value pairs from other to this instance.
+      *
+      * @param map Other map.
+      * @return Self.
+      */
+    def copy(map: HashMap[TKey, TValue]): HashMap[TKey, TValue]
+    
+    /**
+      * Returns size of hashmap (number of entries).
+      *
+      * @return Number of entries in hashmap.
+      */
+    def count(): Double
+    
+    /**
+      * Removes given key from hashmap.
+      *
+      * @param key Key.
+      * @return Self.
+      */
+    def delete(key: TKey): HashMap[TKey, TValue]
+    
+    /**
+      * Returns all key-value pairs.
+      *
+      * @return List of key-value pairs.
+      * @since 2.3.0
+      */
+    def entries(): js.Array[js.Tuple2[TKey, TValue]]
+    
+    /**
+      * Iterates over hashmap.
+      *
+      * @param callback Function to be invoked for every hashmap entry.
+      * @return Self.
+      */
+    def forEach(callback: js.Function2[/* value */ TValue, /* key */ TKey, Unit]): HashMap[TKey, TValue]
+    
+    /**
+      * Return value from hashmap.
+      *
+      * @param key Key.
+      * @return Value stored under given key.
+      */
+    def get(key: TKey): TValue
+    
+    /**
+      * Checks if given key exists in hashmap.
+      *
+      * @param key Key.
+      * @return Whether given key exists in hashmap.
+      */
+    def has(key: TKey): Boolean
+    
+    /**
+      * Returns all contained keys.
+      *
+      * @return List of keys.
+      */
+    def keys(): js.Array[TKey]
+    
+    /**
+      * Store several key-value pairs.
+      *
+      * @param keysAndValues key1, value1, key2, value2...
+      * @return Self.
+      */
+    def multi(keysAndValues: (TKey | TValue)*): HashMap[TKey, TValue]
+    
+    /**
+      * Removes given key from hashmap.
+      *
+      * @param key Key.
+      * @return Self.
+      * @deprecated Since 2.3.0
+      */
+    def remove(key: TKey): HashMap[TKey, TValue]
+    
+    /**
+      * Returns key under which given value is stored.
+      *
+      * @param value Value.
+      * @return Key which is assigned to value stored.
+      */
+    def search(value: TValue): TKey
+    
+    /**
+      * Store value in hashmap.
+      *
+      * @param key Key.
+      * @param value Value.
+      * @return Self.
+      */
+    def set(key: TKey, value: TValue): HashMap[TKey, TValue]
+    
+    /**
+      * Returns all container values.
+      *
+      * @return List of values.
+      */
+    def values(): js.Array[TValue]
   }
   object HashMap {
     
@@ -165,7 +289,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HashMapMutableBuilder[Self <: HashMap[_, _], TKey, TValue] (val x: Self with (HashMap[TKey, TValue])) extends AnyVal {
+    implicit class HashMapMutableBuilder[Self <: HashMap[?, ?], TKey, TValue] (val x: Self & (HashMap[TKey, TValue])) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => HashMap[TKey, TValue]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

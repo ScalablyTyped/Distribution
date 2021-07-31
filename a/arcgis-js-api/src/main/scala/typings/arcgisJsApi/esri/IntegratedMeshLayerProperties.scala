@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegratedMeshLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with SceneServiceProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties {
@@ -17,14 +16,14 @@ trait IntegratedMeshLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html#elevationInfo)
     */
-  var elevationInfo: js.UndefOr[IntegratedMeshLayerElevationInfo] = js.native
+  var elevationInfo: js.UndefOr[IntegratedMeshLayerElevationInfo] = js.undefined
   
   /**
     * A collection of [SceneModification](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html) with polygons and types to apply client-side modifications.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html#modifications)
     */
-  var modifications: js.UndefOr[SceneModificationsProperties] = js.native
+  var modifications: js.UndefOr[SceneModificationsProperties] = js.undefined
 }
 object IntegratedMeshLayerProperties {
   

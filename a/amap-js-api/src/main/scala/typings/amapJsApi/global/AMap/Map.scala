@@ -4,13 +4,13 @@ import typings.amapJsApi.AMap.Map.Options
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Map")
 @js.native
 class Map protected ()
-  extends typings.amapJsApi.AMap.Map {
+  extends StObject
+     with typings.amapJsApi.AMap.Map {
   /**
     * 构造一个地图对象
     * @param container 地图容器的id或者是DOM元素

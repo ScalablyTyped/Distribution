@@ -2,21 +2,19 @@ package typings.workerbApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
   /**
     *  A number number which specifies how many times the script runner will try to find the target element. The default value is 10.
     */
-  var numberOfTries: js.UndefOr[Double] = js.native
+  var numberOfTries: js.UndefOr[Double] = js.undefined
   
   /**
     *  A number which specifies after how many milliseconds the runtime will try to find the target element. The default value is 200.
     */
-  var retryDuration: js.UndefOr[Double] = js.native
+  var retryDuration: js.UndefOr[Double] = js.undefined
 }
 object QueryOptions {
   

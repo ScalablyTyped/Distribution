@@ -2,17 +2,15 @@ package typings.i18nAbide
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    def error(msg: String): Unit = js.native
+    def error(msg: String): Unit
     
-    def warn(msg: String): Unit = js.native
+    def warn(msg: String): Unit
   }
   object Error {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Lang extends StObject {
     
-    var lang: String = js.native
+    var lang: String
     
-    var quality: Double = js.native
+    var quality: Double
   }
   object Lang {
     

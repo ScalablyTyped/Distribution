@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActivityListReposStarredByUserResponseD
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityListReposStarredByUserEndpoint extends StObject {
   
-  var parameters: ActivityListReposStarredByUserEndpoint = js.native
+  var parameters: ActivityListReposStarredByUserEndpoint
   
   var response: OctokitResponse[
     ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
-  ] = js.native
+  ]
 }
 object ParametersActivityListReposStarredByUserEndpoint {
   

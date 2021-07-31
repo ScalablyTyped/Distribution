@@ -4,22 +4,22 @@ import typings.stripe.anon.Brand
 import typings.stripe.stripeStrings.card
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICardPaymentMethodDetails extends IPaymentMethodDetails {
+trait ICardPaymentMethodDetails
+  extends StObject
+     with IPaymentMethodDetails {
   
-  var card: Brand = js.native
+  var card: Brand
   
-  var `type`: card = js.native
+  var `type`: card
 }
 object ICardPaymentMethodDetails {
   
   @scala.inline
-  def apply(card: Brand, `type`: card): ICardPaymentMethodDetails = {
+  def apply(card: Brand): ICardPaymentMethodDetails = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("card")
     __obj.asInstanceOf[ICardPaymentMethodDetails]
   }
   

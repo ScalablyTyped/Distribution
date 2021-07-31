@@ -10,9 +10,9 @@ provides middleware to load controllers based on api versions
 | ------------------ | :-------------: |
 | Full name          | express-version-route |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 54282 |
+| # releases         | 7 |
+| # dependents       | 1 |
+| # downloads        | 53655 |
 | # stars            | 0 |
 
 ## Links

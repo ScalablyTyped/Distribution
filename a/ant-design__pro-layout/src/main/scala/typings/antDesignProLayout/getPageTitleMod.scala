@@ -2,72 +2,64 @@ package typings.antDesignProLayout
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignProLayout.anon.DefaultMessage
+import typings.antDesignProLayout.anon.DefaultOpenAll
 import typings.antDesignProLayout.anon.Id
+import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPageTitleMod {
   
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/lib/getPageTitle", JSImport.Namespace)
   @js.native
-  def default(props: GetPageTitleProps): String = js.native
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", JSImport.Default)
-  @js.native
-  def default(props: GetPageTitleProps, ignoreTile: Boolean): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: GetPageTitleProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(props: GetPageTitleProps, ignoreTile: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], ignoreTile.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * 获取关于 pageTile 的所有信息方便包装
     * @param props
     * @param ignoreTile
     */
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", "getPageTitleInfo")
-  @js.native
-  def getPageTitleInfo(props: GetPageTitleProps): Id = js.native
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", "getPageTitleInfo")
-  @js.native
-  def getPageTitleInfo(props: GetPageTitleProps, ignoreTile: Boolean): Id = js.native
+  @scala.inline
+  def getPageTitleInfo(props: GetPageTitleProps): Id = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageTitleInfo")(props.asInstanceOf[js.Any]).asInstanceOf[Id]
+  @scala.inline
+  def getPageTitleInfo(props: GetPageTitleProps, ignoreTile: Boolean): Id = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageTitleInfo")(props.asInstanceOf[js.Any], ignoreTile.asInstanceOf[js.Any])).asInstanceOf[Id]
   
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", "matchParamsPath")
-  @js.native
-  def matchParamsPath(pathname: String): MenuDataItem = js.native
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", "matchParamsPath")
-  @js.native
-  def matchParamsPath(pathname: String, breadcrumb: js.UndefOr[scala.Nothing], breadcrumbMap: Map[String, MenuDataItem]): MenuDataItem = js.native
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", "matchParamsPath")
-  @js.native
-  def matchParamsPath(pathname: String, breadcrumb: StringDictionary[MenuDataItem]): MenuDataItem = js.native
-  @JSImport("@ant-design/pro-layout/lib/getPageTitle", "matchParamsPath")
-  @js.native
+  @scala.inline
+  def matchParamsPath(pathname: String): MenuDataItem = ^.asInstanceOf[js.Dynamic].applyDynamic("matchParamsPath")(pathname.asInstanceOf[js.Any]).asInstanceOf[MenuDataItem]
+  @scala.inline
+  def matchParamsPath(pathname: String, breadcrumb: StringDictionary[MenuDataItem]): MenuDataItem = (^.asInstanceOf[js.Dynamic].applyDynamic("matchParamsPath")(pathname.asInstanceOf[js.Any], breadcrumb.asInstanceOf[js.Any])).asInstanceOf[MenuDataItem]
+  @scala.inline
   def matchParamsPath(
     pathname: String,
     breadcrumb: StringDictionary[MenuDataItem],
     breadcrumbMap: Map[String, MenuDataItem]
-  ): MenuDataItem = js.native
+  ): MenuDataItem = (^.asInstanceOf[js.Dynamic].applyDynamic("matchParamsPath")(pathname.asInstanceOf[js.Any], breadcrumb.asInstanceOf[js.Any], breadcrumbMap.asInstanceOf[js.Any])).asInstanceOf[MenuDataItem]
+  @scala.inline
+  def matchParamsPath(pathname: String, breadcrumb: Unit, breadcrumbMap: Map[String, MenuDataItem]): MenuDataItem = (^.asInstanceOf[js.Dynamic].applyDynamic("matchParamsPath")(pathname.asInstanceOf[js.Any], breadcrumb.asInstanceOf[js.Any], breadcrumbMap.asInstanceOf[js.Any])).asInstanceOf[MenuDataItem]
   
-  @js.native
   trait GetPageTitleProps extends StObject {
     
-    var breadcrumb: js.UndefOr[StringDictionary[MenuDataItem]] = js.native
+    var breadcrumb: js.UndefOr[StringDictionary[MenuDataItem]] = js.undefined
     
-    var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.native
+    var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
     
-    var formatMessage: js.UndefOr[js.Function1[/* data */ DefaultMessage, String]] = js.native
+    var formatMessage: js.UndefOr[js.Function1[/* data */ DefaultMessage, String]] = js.undefined
     
-    var menu: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings['menu'] */ js.Any
-      ] = js.native
+    var menu: js.UndefOr[DefaultOpenAll] = js.undefined
     
-    var pageName: js.UndefOr[String] = js.native
+    var pageName: js.UndefOr[String] = js.undefined
     
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings['title'] */ js.Any
-      ] = js.native
+    var title: js.UndefOr[String | `false`] = js.undefined
   }
   object GetPageTitleProps {
     
@@ -99,9 +91,7 @@ object getPageTitleMod {
       def setFormatMessageUndefined: Self = StObject.set(x, "formatMessage", js.undefined)
       
       @scala.inline
-      def setMenu(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings['menu'] */ js.Any
-      ): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
@@ -119,9 +109,7 @@ object getPageTitleMod {
       def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
       @scala.inline
-      def setTitle(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings['title'] */ js.Any
-      ): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)

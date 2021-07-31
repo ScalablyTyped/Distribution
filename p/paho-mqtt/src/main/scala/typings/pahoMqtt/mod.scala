@@ -16,7 +16,6 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -186,7 +185,7 @@ object mod {
             *
             *  @return tracebuffer containing the time ordered trace records.
             */
-          def getTraceLog(): js.Array[_] = js.native
+          def getTraceLog(): js.Array[js.Any] = js.native
           
           /** the server's DNS hostname or dotted decimal IP address. */
           val host: String = js.native
@@ -290,11 +289,11 @@ object mod {
             * @throws {InvalidState} if the client is not connected.
             */
           def send(topic: String, payload: String): Unit = js.native
-          def send(topic: String, payload: String, qos: js.UndefOr[scala.Nothing], retained: Boolean): Unit = js.native
+          def send(topic: String, payload: String, qos: Unit, retained: Boolean): Unit = js.native
           def send(topic: String, payload: String, qos: Qos): Unit = js.native
           def send(topic: String, payload: String, qos: Qos, retained: Boolean): Unit = js.native
           def send(topic: String, payload: ArrayBuffer): Unit = js.native
-          def send(topic: String, payload: ArrayBuffer, qos: js.UndefOr[scala.Nothing], retained: Boolean): Unit = js.native
+          def send(topic: String, payload: ArrayBuffer, qos: Unit, retained: Boolean): Unit = js.native
           def send(topic: String, payload: ArrayBuffer, qos: Qos): Unit = js.native
           def send(topic: String, payload: ArrayBuffer, qos: Qos, retained: Boolean): Unit = js.native
           
@@ -397,30 +396,29 @@ object mod {
         /**
           * Attributes used with a connection.
           */
-        @js.native
         trait ConnectionOptions extends StObject {
           
           /**
             * If true(default) the client and server persistent state is deleted on successful connect.
             * @default true
             */
-          var cleanSession: js.UndefOr[Boolean] = js.native
+          var cleanSession: js.UndefOr[Boolean] = js.undefined
           
           /**
             * If present this contains either a set of hostnames or fully qualified
             * WebSocket URIs (ws://example.com:1883/mqtt), that are tried in order in place of the host and port
             * paramater on the construtor. The hosts are tried one at at time in order until one of then succeeds.
             */
-          var hosts: js.UndefOr[js.Array[String]] = js.native
+          var hosts: js.UndefOr[js.Array[String]] = js.undefined
           
           /** Passed to the onSuccess callback or onFailure callback. */
-          var invocationContext: js.UndefOr[js.Any] = js.native
+          var invocationContext: js.UndefOr[js.Any] = js.undefined
           
           /**
             * The server disconnects this client if there is no activity for this number of seconds.
             * @default The default value of 60 seconds is assumed if not set.
             */
-          var keepAliveInterval: js.UndefOr[Double] = js.native
+          var keepAliveInterval: js.UndefOr[Double] = js.undefined
           
           /**
             * Specifies the mqtt version to use when connecting
@@ -430,40 +428,40 @@ object mod {
             * </dl>
             * @default 4
             */
-          var mqttVersion: js.UndefOr[`3` | `4`] = js.native
+          var mqttVersion: js.UndefOr[`3` | `4`] = js.undefined
           
           /**
             * Called when the connect request has failed or timed out.
             */
-          var onFailure: js.UndefOr[OnFailureCallback] = js.native
+          var onFailure: js.UndefOr[OnFailureCallback] = js.undefined
           
           /**
             * Called when the connect acknowledgement has been received from the server.
             */
-          var onSuccess: js.UndefOr[OnSuccessCallback] = js.native
+          var onSuccess: js.UndefOr[OnSuccessCallback] = js.undefined
           
           /** Authentication password for this connection. */
-          var password: js.UndefOr[String] = js.native
+          var password: js.UndefOr[String] = js.undefined
           
           /**
             * If present the set of ports matching the hosts. If hosts contains URIs, this property is not used.
             */
-          var ports: js.UndefOr[js.Array[Double]] = js.native
+          var ports: js.UndefOr[js.Array[Double]] = js.undefined
           
           /**
             * If the connect has not succeeded within this number of seconds, it is deemed to have failed.
             * @default The default is 30 seconds.
             */
-          var timeout: js.UndefOr[Double] = js.native
+          var timeout: js.UndefOr[Double] = js.undefined
           
           /** If present and true, use an SSL Websocket connection. */
-          var useSSL: js.UndefOr[Boolean] = js.native
+          var useSSL: js.UndefOr[Boolean] = js.undefined
           
           /** Authentication username for this connection. */
-          var userName: js.UndefOr[String] = js.native
+          var userName: js.UndefOr[String] = js.undefined
           
           /** Sent by the server when the client disconnects abnormally. */
-          var willMessage: js.UndefOr[typings.pahoMqtt.mod.global.Paho.MQTT.Message] = js.native
+          var willMessage: js.UndefOr[typings.pahoMqtt.mod.global.Paho.MQTT.Message] = js.undefined
         }
         object ConnectionOptions {
           
@@ -562,9 +560,9 @@ object mod {
           }
         }
         
-        @js.native
         trait ErrorWithInvocationContext
-          extends MQTTError
+          extends StObject
+             with MQTTError
              with WithInvocationContext
         object ErrorWithInvocationContext {
           
@@ -575,14 +573,13 @@ object mod {
           }
         }
         
-        @js.native
         trait MQTTError extends StObject {
           
           /** A number indicating the nature of the error. */
-          var errorCode: Double = js.native
+          var errorCode: Double
           
           /** Text describing the error */
-          var errorMessage: String = js.native
+          var errorMessage: String
         }
         object MQTTError {
           
@@ -636,10 +633,11 @@ object mod {
           */
         type OnSubscribeSuccessCallback = js.Function1[/* o */ OnSubscribeSuccessParams, Unit]
         
-        @js.native
-        trait OnSubscribeSuccessParams extends WithInvocationContext {
+        trait OnSubscribeSuccessParams
+          extends StObject
+             with WithInvocationContext {
           
-          var grantedQos: Qos = js.native
+          var grantedQos: Qos
         }
         object OnSubscribeSuccessParams {
           
@@ -694,27 +692,26 @@ object mod {
         /**
           * Used to control a subscription
           */
-        @js.native
         trait SubscribeOptions extends StObject {
           
           /** passed to the onSuccess callback or onFailure callback. */
-          var invocationContext: js.UndefOr[js.Any] = js.native
+          var invocationContext: js.UndefOr[js.Any] = js.undefined
           
           /** called when the subscribe request has failed or timed out. */
-          var onFailure: js.UndefOr[OnFailureCallback] = js.native
+          var onFailure: js.UndefOr[OnFailureCallback] = js.undefined
           
           /** called when the subscribe acknowledgement has been received from the server. */
-          var onSuccess: js.UndefOr[OnSubscribeSuccessCallback] = js.native
+          var onSuccess: js.UndefOr[OnSubscribeSuccessCallback] = js.undefined
           
           /** the maximum qos of any publications sent as a result of making this subscription. */
-          var qos: js.UndefOr[Qos] = js.native
+          var qos: js.UndefOr[Qos] = js.undefined
           
           /**
             * timeout which, if present, determines the number of seconds after which the onFailure calback is called.
             * The presence of a timeout does not prevent the onSuccess callback from being called when the subscribe
             * completes.
             */
-          var timeout: js.UndefOr[Double] = js.native
+          var timeout: js.UndefOr[Double] = js.undefined
         }
         object SubscribeOptions {
           
@@ -759,18 +756,17 @@ object mod {
           }
         }
         
-        @js.native
         trait TraceElement extends StObject {
           
-          var message: String = js.native
+          var message: String
           
-          var severity: Debug = js.native
+          var severity: Debug
         }
         object TraceElement {
           
           @scala.inline
-          def apply(message: String, severity: Debug): TraceElement = {
-            val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+          def apply(message: String): TraceElement = {
+            val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], severity = "Debug")
             __obj.asInstanceOf[TraceElement]
           }
           
@@ -789,24 +785,23 @@ object mod {
         
         type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
         
-        @js.native
         trait UnsubscribeOptions extends StObject {
           
           /** passed to the onSuccess callback or onFailure callback.  */
-          var invocationContext: js.UndefOr[js.Any] = js.native
+          var invocationContext: js.UndefOr[js.Any] = js.undefined
           
           /** called when the unsubscribe request has failed or timed out. */
-          var onFailure: js.UndefOr[OnFailureCallback] = js.native
+          var onFailure: js.UndefOr[OnFailureCallback] = js.undefined
           
           /** called when the unsubscribe acknowledgement has been received from the server. */
-          var onSuccess: js.UndefOr[OnSuccessCallback] = js.native
+          var onSuccess: js.UndefOr[OnSuccessCallback] = js.undefined
           
           /**
             * timeout which, if present, determines the number of seconds after which the onFailure calback is called.
             * The presence of a timeout does not prevent the onSuccess callback from being called when the unsubscribe
             * completes.
             */
-          var timeout: js.UndefOr[Double] = js.native
+          var timeout: js.UndefOr[Double] = js.undefined
         }
         object UnsubscribeOptions {
           
@@ -845,14 +840,13 @@ object mod {
           }
         }
         
-        @js.native
         trait WithInvocationContext extends StObject {
           
           /**
             * <code>invocationContext</code> as passed in with the corresponding field in the connectOptions or
             * subscribeOptions.
             */
-          var invocationContext: js.Any = js.native
+          var invocationContext: js.Any
         }
         object WithInvocationContext {
           

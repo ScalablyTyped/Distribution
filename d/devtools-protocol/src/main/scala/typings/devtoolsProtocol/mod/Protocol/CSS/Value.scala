@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
   /**
     * Value range in the underlying resource (if available).
     */
-  var range: js.UndefOr[SourceRange] = js.native
+  var range: js.UndefOr[SourceRange] = js.undefined
   
   /**
     * Value text.
     */
-  var text: String = js.native
+  var text: String
 }
 object Value {
   

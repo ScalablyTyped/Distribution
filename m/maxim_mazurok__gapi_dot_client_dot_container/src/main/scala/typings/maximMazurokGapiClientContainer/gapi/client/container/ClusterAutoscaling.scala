@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterAutoscaling extends StObject {
   
   /** The list of Google Compute Engine [zones](https://cloud.google.com/compute/docs/zones#available) in which the NodePool's nodes can be created by NAP. */
-  var autoprovisioningLocations: js.UndefOr[js.Array[String]] = js.native
+  var autoprovisioningLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /** AutoprovisioningNodePoolDefaults contains defaults for a node pool created by NAP. */
-  var autoprovisioningNodePoolDefaults: js.UndefOr[AutoprovisioningNodePoolDefaults] = js.native
+  var autoprovisioningNodePoolDefaults: js.UndefOr[AutoprovisioningNodePoolDefaults] = js.undefined
   
   /** Enables automatic node pool creation and deletion. */
-  var enableNodeAutoprovisioning: js.UndefOr[Boolean] = js.native
+  var enableNodeAutoprovisioning: js.UndefOr[Boolean] = js.undefined
   
   /** Contains global constraints regarding minimum and maximum amount of resources in the cluster. */
-  var resourceLimits: js.UndefOr[js.Array[ResourceLimit]] = js.native
+  var resourceLimits: js.UndefOr[js.Array[ResourceLimit]] = js.undefined
 }
 object ClusterAutoscaling {
   

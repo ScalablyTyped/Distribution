@@ -2,27 +2,25 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScatterMarkerLine extends StObject {
   
-  var autocolorscale: Boolean = js.native
+  var autocolorscale: Boolean
   
-  var cauto: Boolean = js.native
+  var cauto: Boolean
   
-  var cmax: Double = js.native
+  var cmax: Double
   
-  var cmin: Double = js.native
+  var cmin: Double
   
-  var color: Color = js.native
+  var color: Color
   
-  var colorscale: ColorScale = js.native
+  var colorscale: ColorScale
   
-  var reversescale: Boolean = js.native
+  var reversescale: Boolean
   
-  var width: Double | js.Array[Double] = js.native
+  var width: Double | js.Array[Double]
 }
 object ScatterMarkerLine {
   

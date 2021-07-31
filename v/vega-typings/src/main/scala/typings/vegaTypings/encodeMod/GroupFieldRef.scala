@@ -2,15 +2,15 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupFieldRef extends _Field {
+trait GroupFieldRef
+  extends StObject
+     with _Field {
   
-  var group: Field = js.native
+  var group: Field
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
 }
 object GroupFieldRef {
   

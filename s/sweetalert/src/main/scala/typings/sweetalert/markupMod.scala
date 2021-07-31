@@ -2,10 +2,13 @@ package typings.sweetalert
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object markupMod {
+  
+  @JSImport("sweetalert/typings/modules/markup", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sweetalert/typings/modules/markup", "buttonMarkup")
   @js.native
@@ -15,9 +18,8 @@ object markupMod {
   @js.native
   val contentMarkup: String = js.native
   
-  @JSImport("sweetalert/typings/modules/markup", "errorIconMarkup")
-  @js.native
-  def errorIconMarkup(): String = js.native
+  @scala.inline
+  def errorIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorIconMarkup")().asInstanceOf[String]
   
   @JSImport("sweetalert/typings/modules/markup", "footerMarkup")
   @js.native
@@ -35,9 +37,8 @@ object markupMod {
   @js.native
   val overlayMarkup: String = js.native
   
-  @JSImport("sweetalert/typings/modules/markup", "successIconMarkup")
-  @js.native
-  def successIconMarkup(): String = js.native
+  @scala.inline
+  def successIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("successIconMarkup")().asInstanceOf[String]
   
   @JSImport("sweetalert/typings/modules/markup", "textMarkup")
   @js.native
@@ -47,7 +48,6 @@ object markupMod {
   @js.native
   val titleMarkup: String = js.native
   
-  @JSImport("sweetalert/typings/modules/markup", "warningIconMarkup")
-  @js.native
-  def warningIconMarkup(): String = js.native
+  @scala.inline
+  def warningIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("warningIconMarkup")().asInstanceOf[String]
 }

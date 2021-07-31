@@ -7,29 +7,27 @@ import typings.leaflet.mod.Map_
 import typings.leaflet.mod.Point_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IEventPowered<Label> * / any */ @js.native
-  trait Label extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IEventPowered<Label> * / any */ trait Label extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def onAdd(map: Map_): Unit = js.native
+    def onAdd(map: Map_): Unit
     
-    def onRemove(map: Map_): Unit = js.native
+    def onRemove(map: Map_): Unit
     
-    def setContent(content: String): Label = js.native
+    def setContent(content: String): Label
     
-    def setLatLng(latlng: LatLng_): Label = js.native
+    def setLatLng(latlng: LatLng_): Label
     
-    def setOpacity(opacity: Double): Unit = js.native
+    def setOpacity(opacity: Double): Unit
     
-    def updateZIndex(zIndex: Double): Unit = js.native
+    def updateZIndex(zIndex: Double): Unit
   }
   object Label {
     
@@ -82,10 +80,9 @@ object mod {
     def updateLabelContent(content: String): Unit = js.native
   }
   
-  @js.native
   trait CircleMarkerOptions extends StObject {
     
-    var labelAnchor: js.UndefOr[Point_] = js.native
+    var labelAnchor: js.UndefOr[Point_] = js.undefined
   }
   object CircleMarkerOptions {
     
@@ -119,10 +116,9 @@ object mod {
     def updateLabelContent(content: String): FeatureGroup[T] = js.native
   }
   
-  @js.native
   trait IconOptions extends StObject {
     
-    var labelAnchor: js.UndefOr[Point_] = js.native
+    var labelAnchor: js.UndefOr[Point_] = js.undefined
   }
   object IconOptions {
     
@@ -143,25 +139,24 @@ object mod {
     }
   }
   
-  @js.native
   trait LabelOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var noHide: js.UndefOr[Boolean] = js.native
+    var noHide: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Point_] = js.native
+    var offset: js.UndefOr[Point_] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     // 'left' | 'right' | 'auto';
-    var pane: js.UndefOr[String] = js.native
+    var pane: js.UndefOr[String] = js.undefined
     
-    var zoomAnimation: js.UndefOr[Boolean] = js.native
+    var zoomAnimation: js.UndefOr[Boolean] = js.undefined
   }
   object LabelOptions {
     
@@ -227,7 +222,8 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClassStatic * / any */ @js.native
   trait LabelStatic
-    extends Instantiable0[Label]
+    extends StObject
+       with Instantiable0[Label]
        with Instantiable1[/* options */ LabelOptions, Label]
   
   @js.native
@@ -262,10 +258,9 @@ object mod {
     def updateLabelContent(content: String): Unit = js.native
   }
   
-  @js.native
   trait PathOptions extends StObject {
     
-    var labelAnchor: js.UndefOr[Point_] = js.native
+    var labelAnchor: js.UndefOr[Point_] = js.undefined
   }
   object PathOptions {
     

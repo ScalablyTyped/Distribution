@@ -1,10 +1,8 @@
 package typings.semver
 
 import typings.semver.mod.Options
-import typings.semver.semverMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
@@ -12,37 +10,30 @@ object parseMod {
   /**
     * Return the parsed version as a SemVer object, or null if it's not valid.
     */
+  @scala.inline
+  def apply(): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: String): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: String, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: String, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: Null, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: Null, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: Unit, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: Unit, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: typings.semver.semverMod.^): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(version: typings.semver.semverMod.^, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  
   @JSImport("semver/functions/parse", JSImport.Namespace)
   @js.native
-  def apply(): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: js.UndefOr[scala.Nothing], optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: js.UndefOr[scala.Nothing], optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: String): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: String, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: String, optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: Null, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: Null, optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: ^): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: ^, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/functions/parse", JSImport.Namespace)
-  @js.native
-  def apply(version: ^, optionsOrLoose: Options): ^ | Null = js.native
+  val ^ : js.Any = js.native
 }

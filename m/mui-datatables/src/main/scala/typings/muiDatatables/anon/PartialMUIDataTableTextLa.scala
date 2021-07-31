@@ -4,18 +4,16 @@ import typings.muiDatatables.mod.MUIDataTableColumn
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsBody> */
-@js.native
 trait PartialMUIDataTableTextLa extends StObject {
   
-  var columnHeaderTooltip: js.UndefOr[js.Function1[/* column */ MUIDataTableColumn, String]] = js.native
+  var columnHeaderTooltip: js.UndefOr[js.Function1[/* column */ MUIDataTableColumn, String]] = js.undefined
   
-  var noMatch: js.UndefOr[String | ReactNode] = js.native
+  var noMatch: js.UndefOr[String | ReactNode] = js.undefined
   
-  var toolTip: js.UndefOr[String] = js.native
+  var toolTip: js.UndefOr[String] = js.undefined
 }
 object PartialMUIDataTableTextLa {
   

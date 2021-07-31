@@ -5,11 +5,12 @@ import typings.ariClient.anon.Variables
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Endpoint extends Resource {
+trait Endpoint
+  extends StObject
+     with Resource {
   
   /**
     * Ids of channels associated with this endpoint.

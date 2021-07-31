@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.tether.mod.ITetherOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,14 +14,18 @@ object mod {
   // global Drop constructor
   @JSImport("tether-drop", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Drop {
+  class ^ protected ()
+    extends StObject
+       with Drop {
     def this(options: IDropOptions) = this()
   }
+  @JSImport("tether-drop", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("tether-drop", "createContext")
-  @js.native
-  def createContext(options: IDropContextOptions): Instantiable1[/* options */ IDropOptions, Drop] = js.native
+  @scala.inline
+  def createContext(options: IDropContextOptions): Instantiable1[/* options */ IDropOptions, Drop] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(options.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* options */ IDropOptions, Drop]]
   
   // global Drop constructor
   @js.native
@@ -59,12 +62,11 @@ object mod {
     def toggle(): Unit = js.native
   }
   
-  @js.native
   trait IDropContextOptions extends StObject {
     
-    var classPrefix: js.UndefOr[String] = js.native
+    var classPrefix: js.UndefOr[String] = js.undefined
     
-    var defaults: js.UndefOr[IDropOptions] = js.native
+    var defaults: js.UndefOr[IDropOptions] = js.undefined
   }
   object IDropContextOptions {
     
@@ -91,40 +93,39 @@ object mod {
     }
   }
   
-  @js.native
   trait IDropOptions extends StObject {
     
-    var beforeClose: js.UndefOr[js.Function2[/* event */ Event, /* drop */ Drop, Boolean]] = js.native
+    var beforeClose: js.UndefOr[js.Function2[/* event */ Event, /* drop */ Drop, Boolean]] = js.undefined
     
-    var blurDelay: js.UndefOr[Double] = js.native
+    var blurDelay: js.UndefOr[Double] = js.undefined
     
-    var classes: js.UndefOr[String] = js.native
+    var classes: js.UndefOr[String] = js.undefined
     
-    var closeDelay: js.UndefOr[Double] = js.native
+    var closeDelay: js.UndefOr[Double] = js.undefined
     
-    var constrainToScrollParent: js.UndefOr[Boolean] = js.native
+    var constrainToScrollParent: js.UndefOr[Boolean] = js.undefined
     
-    var constrainToWindow: js.UndefOr[Boolean] = js.native
+    var constrainToWindow: js.UndefOr[Boolean] = js.undefined
     
-    var content: js.UndefOr[Element | String | (js.Function1[js.UndefOr[Drop], Element | String])] = js.native
+    var content: js.UndefOr[Element | String | (js.Function1[js.UndefOr[Drop], Element | String])] = js.undefined
     
-    var focusDelay: js.UndefOr[Double] = js.native
+    var focusDelay: js.UndefOr[Double] = js.undefined
     
-    var hoverCloseDelay: js.UndefOr[Double] = js.native
+    var hoverCloseDelay: js.UndefOr[Double] = js.undefined
     
-    var hoverOpenDelay: js.UndefOr[Double] = js.native
+    var hoverOpenDelay: js.UndefOr[Double] = js.undefined
     
-    var openDelay: js.UndefOr[Double] = js.native
+    var openDelay: js.UndefOr[Double] = js.undefined
     
-    var openOn: js.UndefOr[String] = js.native
+    var openOn: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var tetherOptions: js.UndefOr[ITetherOptions] = js.native
+    var tetherOptions: js.UndefOr[ITetherOptions] = js.undefined
   }
   object IDropOptions {
     

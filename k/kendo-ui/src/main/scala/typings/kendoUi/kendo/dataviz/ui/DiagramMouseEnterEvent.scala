@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagramMouseEnterEvent extends DiagramEvent {
+trait DiagramMouseEnterEvent
+  extends StObject
+     with DiagramEvent {
   
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
 }
 object DiagramMouseEnterEvent {
   

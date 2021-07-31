@@ -5,7 +5,6 @@ import typings.phonegapNfc.PhoneGapNfc.Nfc
 import typings.phonegapNfc.PhoneGapNfc.Util
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {

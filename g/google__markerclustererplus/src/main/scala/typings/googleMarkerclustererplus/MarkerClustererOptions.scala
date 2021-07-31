@@ -3,13 +3,11 @@ package typings.googleMarkerclustererplus
 import typings.googlemaps.google.maps.Marker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional parameter passed to the {@link MarkerClusterer} constructor.
   */
-@js.native
 trait MarkerClustererOptions extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait MarkerClustererOptions extends StObject {
     * the average position of all markers in the cluster. If set to <code>false</code>, the
     * cluster marker is positioned at the location of the first marker added to the cluster.
     */
-  var averageCenter: js.UndefOr[Boolean] = js.native
+  var averageCenter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [batchSize=MarkerClusterer.BATCH_SIZE] Set this property to the
     * number of markers to be processed in a single batch when using a browser other than
     * Internet Explorer (for Internet Explorer, use the batchSizeIE property instead).
     */
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
   /**
     * [batchSizeIE=MarkerClusterer.BATCH_SIZE_IE] When Internet Explorer is
@@ -34,7 +32,7 @@ trait MarkerClustererOptions extends StObject {
     * without causing a timeout error in the browser. This number might need to be as low as 100
     * if 15,000 markers are being managed, for example.
     */
-  var batchSizeIE: js.UndefOr[Double] = js.native
+  var batchSizeIE: js.UndefOr[Double] = js.undefined
   
   /**
     * [calculator=MarkerClusterer.CALCULATOR] The function used to determine
@@ -54,14 +52,14 @@ trait MarkerClustererOptions extends StObject {
     * <code>title</code> is not defined, the tooltip is set to the value of the <code>title</code>
     * property for the MarkerClusterer.
     */
-  var calculator: js.UndefOr[Calculator] = js.native
+  var calculator: js.UndefOr[Calculator] = js.undefined
   
   /**
     * [clusterClass="cluster"] The name of the CSS class defining general styles
     * for the cluster markers. Use this class to define CSS styles that are not set up by the code
     * that processes the <code>styles</code> array.
     */
-  var clusterClass: js.UndefOr[java.lang.String] = js.native
+  var clusterClass: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [enableRetinaIcons=false] Whether to allow the use of cluster icons that
@@ -69,10 +67,10 @@ trait MarkerClustererOptions extends StObject {
     * as these look better when viewed on high-resolution monitors such as Apple's Retina displays.
     * Note: if this property is <code>true</code>, sprites cannot be used as cluster icons.
     */
-  var enableRetinaIcons: js.UndefOr[Boolean] = js.native
+  var enableRetinaIcons: js.UndefOr[Boolean] = js.undefined
   
   /** [gridSize=60] The grid size of a cluster in pixels. The grid is a square. */
-  var gridSize: js.UndefOr[Double] = js.native
+  var gridSize: js.UndefOr[Double] = js.undefined
   
   /**
     * [ignoreHidden=false] Whether to ignore hidden markers in clusters. You
@@ -82,14 +80,14 @@ trait MarkerClustererOptions extends StObject {
     * If set to <code>true</code> and you change the visibility of a marker being clustered, be
     * sure to also call <code>MarkerClusterer.repaint()</code>.
     */
-  var ignoreHidden: js.UndefOr[Boolean] = js.native
+  var ignoreHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [imageExtension=MarkerClusterer.IMAGE_EXTENSION]
     * The extension name for the cluster icon image files (e.g., <code>"png"</code> or
     * <code>"jpg"</code>).
     */
-  var imageExtension: js.UndefOr[java.lang.String] = js.native
+  var imageExtension: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [imagePath=MarkerClusterer.IMAGE_PATH]
@@ -97,7 +95,7 @@ trait MarkerClustererOptions extends StObject {
     * The complete file name is of the form <code>imagePath</code>n.<code>imageExtension</code>
     * where n is the image file number (1, 2, etc.).
     */
-  var imagePath: js.UndefOr[java.lang.String] = js.native
+  var imagePath: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [imageSizes=MarkerClusterer.IMAGE_SIZES]
@@ -105,19 +103,19 @@ trait MarkerClustererOptions extends StObject {
     * <code>imagePath</code>n.<code>imageExtension</code> image files.
     * (The images are assumed to be square.)
     */
-  var imageSizes: js.UndefOr[js.Array[Double]] = js.native
+  var imageSizes: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * [maxZoom=null] The maximum zoom level at which clustering is enabled or
     * <code>null</code> if clustering is to be enabled at all zoom levels.
     */
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * [minimumClusterSize=2] The minimum number of markers needed in a cluster
     * before the markers are hidden and a cluster marker appears.
     */
-  var minimumClusterSize: js.UndefOr[Double] = js.native
+  var minimumClusterSize: js.UndefOr[Double] = js.undefined
   
   /**
     * [styles] An array of {@link ClusterIconStyle} elements defining the styles
@@ -127,21 +125,21 @@ trait MarkerClustererOptions extends StObject {
     * from the values for <code>imagePath</code>, <code>imageExtension</code>, and
     * <code>imageSizes</code>.
     */
-  var styles: js.UndefOr[js.Array[ClusterIconStyle]] = js.native
+  var styles: js.UndefOr[js.Array[ClusterIconStyle]] = js.undefined
   
   /**
     * [title=""] The tooltip to display when the mouse moves over a cluster
     * marker. (Alternatively, you can use a custom <code>calculator</code> function to specify a
     * different tooltip for each cluster marker.)
     */
-  var title: js.UndefOr[java.lang.String] = js.native
+  var title: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * [zoomOnClick=true] Whether to zoom the map when a cluster marker is
     * clicked. You may want to set this to <code>false</code> if you have installed a handler
     * for the <code>click</code> event and it deals with zooming on its own.
     */
-  var zoomOnClick: js.UndefOr[Boolean] = js.native
+  var zoomOnClick: js.UndefOr[Boolean] = js.undefined
 }
 object MarkerClustererOptions {
   

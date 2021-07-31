@@ -2,32 +2,51 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object disposableMod {
   
   @JSImport("ol/Disposable", JSImport.Default)
   @js.native
-  class default () extends Disposable
+  class default ()
+    extends StObject
+       with Disposable {
+    
+    /**
+      * Clean up.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Extension point for disposable objects.
+      */
+    /* CompleteClass */
+    /* protected */ override def disposeInternal(): Unit = js.native
+    
+    /**
+      * The object has already been disposed.
+      */
+    /* CompleteClass */
+    var disposed: Boolean = js.native
+  }
   
-  @js.native
   trait Disposable extends StObject {
     
     /**
       * Clean up.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Extension point for disposable objects.
       */
-    /* protected */ def disposeInternal(): Unit = js.native
+    /* protected */ def disposeInternal(): Unit
     
     /**
       * The object has already been disposed.
       */
-    var disposed: Boolean = js.native
+    var disposed: Boolean
   }
   object Disposable {
     

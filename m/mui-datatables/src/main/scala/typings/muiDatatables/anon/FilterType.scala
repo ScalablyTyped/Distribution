@@ -2,15 +2,13 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterType extends StObject {
   
-  var filterType: typings.muiDatatables.mod.FilterType = js.native
+  var filterType: typings.muiDatatables.mod.FilterType
   
-  var name: String = js.native
+  var name: String
 }
 object FilterType {
   

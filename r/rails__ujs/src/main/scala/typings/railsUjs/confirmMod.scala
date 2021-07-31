@@ -4,19 +4,19 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmMod {
   
-  @JSImport("@rails/ujs/features/confirm", "confirm")
+  @JSImport("@rails/ujs/features/confirm", JSImport.Namespace)
   @js.native
-  def confirm(message: String): Boolean = js.native
-  @JSImport("@rails/ujs/features/confirm", "confirm")
-  @js.native
-  def confirm(message: String, element: Element): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@rails/ujs/features/confirm", "handleConfirm")
-  @js.native
-  def handleConfirm(e: Event): Unit = js.native
+  @scala.inline
+  def confirm(message: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def confirm(message: String, element: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def handleConfirm(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleConfirm")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

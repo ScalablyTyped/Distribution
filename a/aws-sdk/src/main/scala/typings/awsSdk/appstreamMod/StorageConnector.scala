@@ -2,26 +2,24 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageConnector extends StObject {
   
   /**
     * The type of storage connector.
     */
-  var ConnectorType: StorageConnectorType = js.native
+  var ConnectorType: StorageConnectorType
   
   /**
     * The names of the domains for the account.
     */
-  var Domains: js.UndefOr[DomainList] = js.native
+  var Domains: js.UndefOr[DomainList] = js.undefined
   
   /**
     * The ARN of the storage connector.
     */
-  var ResourceIdentifier: js.UndefOr[typings.awsSdk.appstreamMod.ResourceIdentifier] = js.native
+  var ResourceIdentifier: js.UndefOr[typings.awsSdk.appstreamMod.ResourceIdentifier] = js.undefined
 }
 object StorageConnector {
   

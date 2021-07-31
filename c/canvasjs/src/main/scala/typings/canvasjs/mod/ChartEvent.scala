@@ -2,46 +2,44 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartEvent extends StObject {
   
   /**
     * The chart object
     */
-  var chart: Chart = js.native
+  var chart: Chart
   
   /**
     * The datapoint options
     */
-  var dataPoint: ChartDataPoint = js.native
+  var dataPoint: ChartDataPoint
   
   /**
     * The index of the data point
     */
-  var dataPointIndex: Double = js.native
+  var dataPointIndex: Double
   
   /**
     * The data series options
     */
-  var dataSeries: ChartDataSeriesOptions = js.native
+  var dataSeries: ChartDataSeriesOptions
   
   /**
     * The index of the data series
     */
-  var dataSeriesIndex: Double = js.native
+  var dataSeriesIndex: Double
   
   /**
     * The x value of the item
     */
-  var x: js.Any = js.native
+  var x: js.Any
   
   /**
     * The y value of the item
     */
-  var y: Double = js.native
+  var y: Double
 }
 object ChartEvent {
   

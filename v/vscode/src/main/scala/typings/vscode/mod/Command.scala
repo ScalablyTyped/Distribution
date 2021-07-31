@@ -2,33 +2,31 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
   /**
     * Arguments that the command handler should be
     * invoked with.
     */
-  var arguments: js.UndefOr[js.Array[_]] = js.native
+  var arguments: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The identifier of the actual command handler.
     * @see [commands.registerCommand](#commands.registerCommand).
     */
-  var command: String = js.native
+  var command: String
   
   /**
     * Title of the command, like `save`.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * A tooltip for the command, when represented in the UI.
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object Command {
   
@@ -42,7 +40,7 @@ object Command {
   implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArguments(value: js.Array[_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)

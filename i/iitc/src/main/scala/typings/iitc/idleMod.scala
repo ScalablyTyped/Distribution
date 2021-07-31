@@ -2,7 +2,6 @@ package typings.iitc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idleMod {
@@ -19,21 +18,17 @@ object idleMod {
       * add your function here if you want to be notified when the user
       * resumes from being idle
       */
-    @JSGlobal("addResumeFunction")
-    @js.native
-    def addResumeFunction(fct: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def addResumeFunction(fct: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("addResumeFunction")(fct.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("idlePoll")
-    @js.native
-    def idlePoll(): Unit = js.native
+    @scala.inline
+    def idlePoll(): Unit = js.Dynamic.global.applyDynamic("idlePoll")().asInstanceOf[Unit]
     
-    @JSGlobal("idleReset")
-    @js.native
-    def idleReset(): Unit = js.native
+    @scala.inline
+    def idleReset(): Unit = js.Dynamic.global.applyDynamic("idleReset")().asInstanceOf[Unit]
     
-    @JSGlobal("idleSet")
-    @js.native
-    def idleSet(): Unit = js.native
+    @scala.inline
+    def idleSet(): Unit = js.Dynamic.global.applyDynamic("idleSet")().asInstanceOf[Unit]
     
     @JSGlobal("idleTime")
     @js.native
@@ -51,8 +46,7 @@ object idleMod {
     @scala.inline
     def idleTime_=(x: Double): Unit = js.Dynamic.global.updateDynamic("idleTime")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("setupIdle")
-    @js.native
-    def setupIdle(): Unit = js.native
+    @scala.inline
+    def setupIdle(): Unit = js.Dynamic.global.applyDynamic("setupIdle")().asInstanceOf[Unit]
   }
 }

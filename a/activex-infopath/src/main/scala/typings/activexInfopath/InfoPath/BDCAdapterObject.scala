@@ -2,34 +2,32 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BDCAdapterObject extends StObject {
   
-  val EntityName: String = js.native
+  val EntityName: String
   
-  val EntityNamespace: String = js.native
+  val EntityNamespace: String
   
   @JSName("InfoPath.BDCAdapterObject_typekey")
-  var InfoPathDotBDCAdapterObject_typekey: BDCAdapterObject = js.native
+  var InfoPathDotBDCAdapterObject_typekey: BDCAdapterObject
   
-  val LOBSystemInstance: String = js.native
+  val LOBSystemInstance: String
   
-  val Name: String = js.native
+  val Name: String
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  val SpecificFinder: String = js.native
+  val SpecificFinder: String
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAdapterName: String = js.native
+  val SubmitAdapterName: String
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
 }
 object BDCAdapterObject {
   

@@ -2,15 +2,13 @@ package typings.lolex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Now extends StObject {
     
-    def now(): Double = js.native
+    def now(): Double
   }
   object Now {
     

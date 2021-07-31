@@ -2,7 +2,6 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.anon.Value[T]
   - typings.vegaTypings.anon.Field
 */
-trait BaseValueRef[T] extends ScaledValueRef[T]
+trait BaseValueRef[T]
+  extends StObject
+     with ScaledValueRef[T]
 object BaseValueRef {
   
   @scala.inline
@@ -27,7 +28,7 @@ object BaseValueRef {
   
   @scala.inline
   def Value[T](): typings.vegaTypings.anon.Value[T] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = null)
     __obj.asInstanceOf[typings.vegaTypings.anon.Value[T]]
   }
 }

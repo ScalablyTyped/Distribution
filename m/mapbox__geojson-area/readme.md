@@ -11,8 +11,8 @@ calculate the physical area of a geojson geometry
 | Full name          | @mapbox/geojson-area |
 | Keywords           | geojson, area, geodesy |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 12024517 |
+| # dependents       | 30 |
+| # downloads        | 11168092 |
 | # stars            | 0 |
 
 ## Links

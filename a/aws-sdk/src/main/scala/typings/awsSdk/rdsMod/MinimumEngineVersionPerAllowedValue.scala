@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinimumEngineVersionPerAllowedValue extends StObject {
   
   /**
     * The allowed value for an option setting.
     */
-  var AllowedValue: js.UndefOr[String] = js.native
+  var AllowedValue: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum DB engine version required for the allowed value.
     */
-  var MinimumEngineVersion: js.UndefOr[String] = js.native
+  var MinimumEngineVersion: js.UndefOr[String] = js.undefined
 }
 object MinimumEngineVersionPerAllowedValue {
   

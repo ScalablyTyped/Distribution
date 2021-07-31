@@ -2,51 +2,49 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBalloonOptions extends StObject {
   
-  var autoPan: js.UndefOr[Boolean] = js.native
+  var autoPan: js.UndefOr[Boolean] = js.undefined
   
-  var autoPanCheckZoomRange: js.UndefOr[Boolean] = js.native
+  var autoPanCheckZoomRange: js.UndefOr[Boolean] = js.undefined
   
-  var autoPanDuration: js.UndefOr[Double] = js.native
+  var autoPanDuration: js.UndefOr[Double] = js.undefined
   
-  var autoPanMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var autoPanMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
   
-  var autoPanUseMapMargin: js.UndefOr[Boolean] = js.native
+  var autoPanUseMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
-  var contentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var contentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
   
-  var layout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var layout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[js.Array[Double]] = js.native
+  var offset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var panelContentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var panelContentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
   
-  var panelMaxHeightRatio: js.UndefOr[Double] = js.native
+  var panelMaxHeightRatio: js.UndefOr[Double] = js.undefined
   
-  var panelMaxMapArea: js.UndefOr[Double] = js.native
+  var panelMaxMapArea: js.UndefOr[Double] = js.undefined
   
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var shadowLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var shadowLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
   
-  var shadowOffset: js.UndefOr[js.Array[Double]] = js.native
+  var shadowOffset: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object IBalloonOptions {
   

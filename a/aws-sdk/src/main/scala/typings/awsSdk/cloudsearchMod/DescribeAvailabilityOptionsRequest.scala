@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAvailabilityOptionsRequest extends StObject {
   
   /**
     * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
     */
-  var Deployed: js.UndefOr[Boolean] = js.native
+  var Deployed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the domain you want to describe.
     */
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
 }
 object DescribeAvailabilityOptionsRequest {
   

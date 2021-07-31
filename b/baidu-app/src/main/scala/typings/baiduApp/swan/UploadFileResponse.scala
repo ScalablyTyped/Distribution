@@ -2,16 +2,14 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileResponse extends StObject {
   
-  var data: String = js.native
+  var data: String
   
   // 开发者服务器返回的数据
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object UploadFileResponse {
   

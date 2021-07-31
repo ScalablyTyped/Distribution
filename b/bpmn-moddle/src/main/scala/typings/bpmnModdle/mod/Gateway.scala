@@ -2,16 +2,16 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Gateway extends FlowNode {
+trait Gateway
+  extends StObject
+     with FlowNode {
   
   /**
     * @default Unspecified
     */
-  var gatewayDirection: GatewayDirection = js.native
+  var gatewayDirection: GatewayDirection
 }
 object Gateway {
   

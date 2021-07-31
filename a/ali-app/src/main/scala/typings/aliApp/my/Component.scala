@@ -3,7 +3,6 @@ package typings.aliApp.my
 import typings.aliApp.anon.Partialbubblesbooleancomp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -66,7 +65,7 @@ trait Component extends StObject {
   def setData(data: js.Any, callback: js.Function0[Unit]): Unit = js.native
   
   def triggerEvent(name: String): Unit = js.native
-  def triggerEvent(name: String, details: js.UndefOr[scala.Nothing], options: Partialbubblesbooleancomp): Unit = js.native
   def triggerEvent(name: String, details: js.Any): Unit = js.native
   def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
+  def triggerEvent(name: String, details: Unit, options: Partialbubblesbooleancomp): Unit = js.native
 }

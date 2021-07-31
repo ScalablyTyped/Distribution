@@ -6,45 +6,45 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the basic operations for a tab controller model. */
-@js.native
-trait XTabControllerModel extends XInterface {
+trait XTabControllerModel
+  extends StObject
+     with XInterface {
   
   /** returns the control models. */
-  var ControlModels: SafeArray[XControlModel] = js.native
+  var ControlModels: SafeArray[XControlModel]
   
   /** returns whether the control models are grouped together. */
-  var GroupControl: Boolean = js.native
+  var GroupControl: Boolean
   
   /** returns the number of control model groups. */
-  val GroupCount: Double = js.native
+  val GroupCount: Double
   
   /** returns the control models. */
-  def getControlModels(): SafeArray[XControlModel] = js.native
+  def getControlModels(): SafeArray[XControlModel]
   
   /** returns a control model group. */
-  def getGroup(nGroup: Double, Group: js.Array[SeqEquiv[XControlModel]], Name: js.Array[String]): Unit = js.native
+  def getGroup(nGroup: Double, Group: js.Array[SeqEquiv[XControlModel]], Name: js.Array[String]): Unit
   
   /** returns a control model group by name. */
-  def getGroupByName(Name: String, Group: js.Array[SeqEquiv[XControlModel]]): Unit = js.native
+  def getGroupByName(Name: String, Group: js.Array[SeqEquiv[XControlModel]]): Unit
   
   /** returns whether the control models are grouped together. */
-  def getGroupControl(): Boolean = js.native
+  def getGroupControl(): Boolean
   
   /** returns the number of control model groups. */
-  def getGroupCount(): Double = js.native
+  def getGroupCount(): Double
   
   /** sets the control models. */
-  def setControlModels(Controls: SeqEquiv[XControlModel]): Unit = js.native
+  def setControlModels(Controls: SeqEquiv[XControlModel]): Unit
   
   /** sets a control model group. */
-  def setGroup(Group: SeqEquiv[XControlModel], GroupName: String): Unit = js.native
+  def setGroup(Group: SeqEquiv[XControlModel], GroupName: String): Unit
   
   /** determines if the control models are grouped together. */
-  def setGroupControl(GroupControl: Boolean): Unit = js.native
+  def setGroupControl(GroupControl: Boolean): Unit
 }
 object XTabControllerModel {
   

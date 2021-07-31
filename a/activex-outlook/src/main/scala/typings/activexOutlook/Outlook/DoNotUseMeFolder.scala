@@ -3,16 +3,15 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DoNotUseMeFolder extends StObject {
   
   def AddToFavorites(): Unit = js.native
-  def AddToFavorites(fNoUI: js.UndefOr[scala.Nothing], Name: js.Any): Unit = js.native
   def AddToFavorites(fNoUI: js.Any): Unit = js.native
   def AddToFavorites(fNoUI: js.Any, Name: js.Any): Unit = js.native
+  def AddToFavorites(fNoUI: Unit, Name: js.Any): Unit = js.native
   
   def AddToPFFavorites(): Unit = js.native
   
@@ -56,9 +55,9 @@ trait DoNotUseMeFolder extends StObject {
   def GetStorage(StorageIdentifier: String, StorageIdentifierType: OlStorageIdentifierType): StorageItem = js.native
   
   def GetTable(): Table = js.native
-  def GetTable(Filter: js.UndefOr[scala.Nothing], TableContents: js.Any): Table = js.native
   def GetTable(Filter: js.Any): Table = js.native
   def GetTable(Filter: js.Any, TableContents: js.Any): Table = js.native
+  def GetTable(Filter: Unit, TableContents: js.Any): Table = js.native
   
   var InAppFolderSyncObject: Boolean = js.native
   

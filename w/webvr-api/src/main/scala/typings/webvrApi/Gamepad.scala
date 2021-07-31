@@ -2,13 +2,11 @@ package typings.webvrApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gamepad extends StObject {
   
-  val displayId: Double = js.native
+  val displayId: Double
 }
 object Gamepad {
   

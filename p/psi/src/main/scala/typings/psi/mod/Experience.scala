@@ -3,19 +3,17 @@ package typings.psi.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Experience extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var initial_url: String = js.native
+  var initial_url: String
   
-  var metrics: StringDictionary[typings.psi.anon.Category] = js.native
+  var metrics: StringDictionary[typings.psi.anon.Category]
   
-  var overall_category: String = js.native
+  var overall_category: String
 }
 object Experience {
   

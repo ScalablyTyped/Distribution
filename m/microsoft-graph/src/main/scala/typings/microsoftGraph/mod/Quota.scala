@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Quota extends StObject {
   
   // Total space consumed by files in the recycle bin, in bytes. Read-only.
-  var deleted: js.UndefOr[NullableOption[Double]] = js.native
+  var deleted: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Total space remaining before reaching the quota limit, in bytes. Read-only.
-  var remaining: js.UndefOr[NullableOption[Double]] = js.native
+  var remaining: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Enumeration value that indicates the state of the storage space. Read-only.
-  var state: js.UndefOr[NullableOption[String]] = js.native
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Information about the drive's storage quota plans. Only in Personal OneDrive.
-  var storagePlanInformation: js.UndefOr[NullableOption[StoragePlanInformation]] = js.native
+  var storagePlanInformation: js.UndefOr[NullableOption[StoragePlanInformation]] = js.undefined
   
   // Total allowed storage space, in bytes. Read-only.
-  var total: js.UndefOr[NullableOption[Double]] = js.native
+  var total: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Total space used, in bytes. Read-only.
-  var used: js.UndefOr[NullableOption[Double]] = js.native
+  var used: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object Quota {
   

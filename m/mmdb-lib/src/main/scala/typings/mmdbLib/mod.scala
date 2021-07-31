@@ -6,40 +6,70 @@ import typings.mmdbLib.typesMod.ReaderOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("mmdb-lib", JSImport.Default)
   @js.native
-  class default[T /* <: Response */] protected () extends Reader[T] {
+  class default[T /* <: Response */] protected ()
+    extends StObject
+       with Reader[T] {
     def this(db: Buffer) = this()
     def this(db: Buffer, opts: ReaderOptions) = this()
-  }
-  
-  @js.native
-  trait Reader[T /* <: Response */] extends StObject {
     
+    /* CompleteClass */
     var db: js.Any = js.native
     
+    /* CompleteClass */
     var decoder: js.Any = js.native
     
+    /* CompleteClass */
     var findAddressInTree: js.Any = js.native
     
-    def get(ipAddress: String): T | Null = js.native
+    /* CompleteClass */
+    override def get(ipAddress: String): T | Null = js.native
     
-    def getWithPrefixLength(ipAddress: String): js.Tuple2[T | Null, Double] = js.native
+    /* CompleteClass */
+    override def getWithPrefixLength(ipAddress: String): js.Tuple2[T | Null, Double] = js.native
     
+    /* CompleteClass */
     var ipv4Start: js.Any = js.native
     
+    /* CompleteClass */
     var ipv4StartNodeNumber: js.Any = js.native
     
+    /* CompleteClass */
     var metadata: Metadata = js.native
     
+    /* CompleteClass */
     var resolveDataPointer: js.Any = js.native
     
+    /* CompleteClass */
     var walker: js.Any = js.native
+  }
+  
+  trait Reader[T /* <: Response */] extends StObject {
+    
+    var db: js.Any
+    
+    var decoder: js.Any
+    
+    var findAddressInTree: js.Any
+    
+    def get(ipAddress: String): T | Null
+    
+    def getWithPrefixLength(ipAddress: String): js.Tuple2[T | Null, Double]
+    
+    var ipv4Start: js.Any
+    
+    var ipv4StartNodeNumber: js.Any
+    
+    var metadata: Metadata
+    
+    var resolveDataPointer: js.Any
+    
+    var walker: js.Any
   }
   object Reader {
     
@@ -61,7 +91,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReaderMutableBuilder[Self <: Reader[_], T /* <: Response */] (val x: Self with Reader[T]) extends AnyVal {
+    implicit class ReaderMutableBuilder[Self <: Reader[?], T /* <: Response */] (val x: Self & Reader[T]) extends AnyVal {
       
       @scala.inline
       def setDb(value: js.Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])

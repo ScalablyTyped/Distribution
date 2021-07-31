@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the location(s) from which data should be imported.
   */
-@js.native
 trait SchemaInputConfig extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaInputConfig extends StObject {
     * Dashboard.  GcsSource requires the `roles/storage.objectViewer` Cloud IAM
     * role.
     */
-  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1alphaGcsSource] = js.native
+  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1alphaGcsSource] = js.undefined
 }
 object SchemaInputConfig {
   

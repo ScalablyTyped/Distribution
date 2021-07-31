@@ -4,14 +4,12 @@ import typings.semanticUiTab.semanticUiTabStrings.all
 import typings.semanticUiTab.semanticUiTabStrings.siblings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'deactivate'> */
-@js.native
 trait PickImpldeactivate extends StObject {
   
-  var deactivate: siblings | all = js.native
+  var deactivate: siblings | all
 }
 object PickImpldeactivate {
   

@@ -12,53 +12,51 @@ import typings.server.replyMod.Reply
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
   type BasicType = String | js.Array[js.Any] | js.Object | Double
   
-  @js.native
   trait Context extends StObject {
     
-    var cookie: StringDictionary[String] = js.native
+    var cookie: StringDictionary[String]
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var error: Error = js.native
+    var error: Error
     
-    var files: Files = js.native
+    var files: Files
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var ip: String = js.native
+    var ip: String
     
-    var ips: js.UndefOr[js.Array[String]] = js.native
+    var ips: js.UndefOr[js.Array[String]] = js.undefined
     
-    var log: keyinLogLevelLogFn = js.native
+    var log: keyinLogLevelLogFn
     
-    var method: String = js.native
+    var method: String
     
-    var options: Options = js.native
+    var options: Options
     
-    var params: StringDictionary[String] = js.native
+    var params: StringDictionary[String]
     
-    var path: String = js.native
+    var path: String
     
-    var query: StringDictionary[String | js.Array[String]] = js.native
+    var query: StringDictionary[String | js.Array[String]]
     
-    var req: Request_[ParamsDictionary, _, _, Query] = js.native
+    var req: Request_[ParamsDictionary, js.Any, js.Any, Query]
     
-    var res: Response_[_] = js.native
+    var res: Response_[js.Any]
     
-    var secure: Boolean = js.native
+    var secure: Boolean
     
-    var session: js.Object = js.native
+    var session: js.Object
     
-    var url: String = js.native
+    var url: String
     
-    var xhr: Boolean = js.native
+    var xhr: Boolean
   }
   object Context {
     
@@ -76,8 +74,8 @@ object commonMod {
       params: StringDictionary[String],
       path: String,
       query: StringDictionary[String | js.Array[String]],
-      req: Request_[ParamsDictionary, _, _, Query],
-      res: Response_[_],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      res: Response_[js.Any],
       secure: Boolean,
       session: js.Object,
       url: String,
@@ -136,10 +134,10 @@ object commonMod {
       def setQuery(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReq(value: Request_[ParamsDictionary, _, _, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRes(value: Response_[_]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      def setRes(value: Response_[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
@@ -155,7 +153,11 @@ object commonMod {
     }
   }
   
-  type LogFn = js.Function2[/* template */ String, /* repeated */ String, Unit]
+  @js.native
+  trait LogFn extends StObject {
+    
+    def apply(template: String, tokens: String*): Unit = js.native
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.server.serverStrings.emergency

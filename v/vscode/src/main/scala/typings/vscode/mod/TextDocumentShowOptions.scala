@@ -2,27 +2,25 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentShowOptions extends StObject {
   
   /**
     * An optional flag that when `true` will stop the [editor](#TextEditor) from taking focus.
     */
-  var preserveFocus: js.UndefOr[Boolean] = js.native
+  var preserveFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional flag that controls if an [editor](#TextEditor)-tab will be replaced
     * with the next editor or if it will be kept.
     */
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional selection to apply for the document in the [editor](#TextEditor).
     */
-  var selection: js.UndefOr[Range] = js.native
+  var selection: js.UndefOr[Range] = js.undefined
   
   /**
     * An optional view column in which the [editor](#TextEditor) should be shown.
@@ -31,7 +29,7 @@ trait TextDocumentShowOptions extends StObject {
     * not adjusted. Use [`ViewColumn.Beside`](#ViewColumn.Beside) to open the
     * editor to the side of the currently active one.
     */
-  var viewColumn: js.UndefOr[ViewColumn] = js.native
+  var viewColumn: js.UndefOr[ViewColumn] = js.undefined
 }
 object TextDocumentShowOptions {
   

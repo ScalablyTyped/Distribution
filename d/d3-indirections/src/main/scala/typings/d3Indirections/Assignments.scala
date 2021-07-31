@@ -2,16 +2,14 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is actually what gets sent to the PUT assignment.
   */
-@js.native
 trait Assignments extends StObject {
   
-  var assignments: Assignment | js.Array[Assignment] = js.native
+  var assignments: Assignment | js.Array[Assignment]
 }
 object Assignments {
   

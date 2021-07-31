@@ -2,13 +2,11 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Level information containing level number and its corresponding name.
   */
-@js.native
 trait SchemaLevel extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaLevel extends StObject {
     * Consider how the elevator buttons would be labeled for this level if
     * there was an elevator.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Floor number, used for ordering. 0 indicates the ground level, 1
     * indicates the first level above ground level, -1 indicates the first
     * level under ground level. Non-integer values are OK.
     */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
 }
 object SchemaLevel {
   

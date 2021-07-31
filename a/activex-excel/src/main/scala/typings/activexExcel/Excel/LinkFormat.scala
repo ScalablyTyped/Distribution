@@ -2,26 +2,24 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkFormat extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var AutoUpdate: Boolean = js.native
+  var AutoUpdate: Boolean
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.LinkFormat_typekey")
-  var ExcelDotLinkFormat_typekey: LinkFormat = js.native
+  var ExcelDotLinkFormat_typekey: LinkFormat
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Update(): Unit = js.native
+  def Update(): Unit
 }
 object LinkFormat {
   

@@ -10,9 +10,9 @@ TypeScript typings for Cloud Asset API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudasset |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 52 |
+| # downloads        | 1212 |
 | # stars            | 0 |
 
 ## Links

@@ -2,33 +2,31 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutgoingRequest extends StObject {
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var call_id: String = js.native
+  var call_id: String
   
-  var cseq: Double = js.native
+  var cseq: Double
   
-  var from: NameAddrHeader = js.native
+  var from: NameAddrHeader
   
-  def getHeader(name: String): String = js.native
+  def getHeader(name: String): String
   
-  def getHeaders(name: String): js.Array[String] = js.native
+  def getHeaders(name: String): js.Array[String]
   
-  def hasHeader(name: String): Boolean = js.native
+  def hasHeader(name: String): Boolean
   
-  var method: String = js.native
+  var method: String
   
-  var ruri: URI = js.native
+  var ruri: URI
   
-  def setHeader(name: String, value: String): Unit = js.native
+  def setHeader(name: String, value: String): Unit
   
-  var to: NameAddrHeader = js.native
+  var to: NameAddrHeader
 }
 object OutgoingRequest {
   

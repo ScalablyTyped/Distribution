@@ -2,20 +2,18 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about a channel bulletin post.
   */
-@js.native
 trait SchemaActivityContentDetailsBulletin extends StObject {
   
   /**
     * The resourceId object contains information that identifies the resource
     * associated with a bulletin post.
     */
-  var resourceId: js.UndefOr[SchemaResourceId] = js.native
+  var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }
 object SchemaActivityContentDetailsBulletin {
   

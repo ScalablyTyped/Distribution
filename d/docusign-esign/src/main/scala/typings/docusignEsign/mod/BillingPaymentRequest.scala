@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPaymentRequest extends StObject {
   
   /**
     * The payment amount for the past due invoices. This value must match the pastDueBalance value retrieved using Get Past Due Invoices.
     */
-  var paymentAmount: js.UndefOr[String] = js.native
+  var paymentAmount: js.UndefOr[String] = js.undefined
 }
 object BillingPaymentRequest {
   

@@ -2,7 +2,6 @@ package typings.officeJs.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PlatformType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJs.Office.PlatformType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJs.Office.PlatformType & Double] = js.native
   
-  /* 4 */ val Android: typings.officeJs.Office.PlatformType.Android with Double = js.native
+  /* 4 */ val Android: typings.officeJs.Office.PlatformType.Android & Double = js.native
   
-  /* 2 */ val Mac: typings.officeJs.Office.PlatformType.Mac with Double = js.native
+  /* 2 */ val Mac: typings.officeJs.Office.PlatformType.Mac & Double = js.native
   
-  /* 1 */ val OfficeOnline: typings.officeJs.Office.PlatformType.OfficeOnline with Double = js.native
+  /* 1 */ val OfficeOnline: typings.officeJs.Office.PlatformType.OfficeOnline & Double = js.native
   
-  /* 0 */ val PC: typings.officeJs.Office.PlatformType.PC with Double = js.native
+  /* 0 */ val PC: typings.officeJs.Office.PlatformType.PC & Double = js.native
   
-  /* 5 */ val Universal: typings.officeJs.Office.PlatformType.Universal with Double = js.native
+  /* 5 */ val Universal: typings.officeJs.Office.PlatformType.Universal & Double = js.native
   
-  /* 3 */ val iOS: typings.officeJs.Office.PlatformType.iOS with Double = js.native
+  /* 3 */ val iOS: typings.officeJs.Office.PlatformType.iOS & Double = js.native
 }

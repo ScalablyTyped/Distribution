@@ -6,13 +6,11 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.auto
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Widgets
   */
-@js.native
 trait WidgetEditableListOptions[T] extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait WidgetEditableListOptions[T] extends StObject {
     * If set to false (boolean), the button is not shown.
     * If set to a non-blank string, a button is shown using its value as the text of the button.
     */
-  var addButtons: js.UndefOr[Boolean | String] = js.native
+  var addButtons: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * A callback function that gets called when a new item is being added to the list.
@@ -33,12 +31,12 @@ trait WidgetEditableListOptions[T] extends StObject {
     */
   var addItem: js.UndefOr[
     js.Function3[/* row */ JQuery[HTMLElement], /* index */ Double, /* data */ T, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If the list is sortable, this option allows items to be dragged from this list to any other jQuery sortable list, such as another editableList.
     */
-  var connectWith: js.UndefOr[Selector] = js.native
+  var connectWith: js.UndefOr[Selector] = js.undefined
   
   /**
     * A callback function that gets called to filter what items are visible in the list.
@@ -47,25 +45,25 @@ trait WidgetEditableListOptions[T] extends StObject {
     *
     * The function should return true/false (boolean) to indicate whether the item should be visible.
     */
-  var filter: js.UndefOr[js.Function1[/* data */ T, Boolean]] = js.native
+  var filter: js.UndefOr[js.Function1[/* data */ T, Boolean]] = js.undefined
   
   /**
     * Inserts the DOM/JQuery object as a header for the list.
     */
-  var header: js.UndefOr[HTMLElement | JQuery[HTMLElement]] = js.native
+  var header: js.UndefOr[HTMLElement | JQuery[HTMLElement]] = js.undefined
   
   /**
     * Sets the height of the list including, if enabled, its add button. Setting height
     * to ‘auto’ removes the vertical scrollbar and displays the list at the full height
     * needed to contain the contents.
     */
-  var height: js.UndefOr[Double | auto] = js.native
+  var height: js.UndefOr[Double | auto] = js.undefined
   
   /**
     * If set to true, each row is displayed with a delete button on the right-hand side.
     * Clicking the button will remove the row from the list and trigger the removeItem callback, if set.
     */
-  var removable: js.UndefOr[Boolean] = js.native
+  var removable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A function that is called when an item is removed from the list.
@@ -73,12 +71,12 @@ trait WidgetEditableListOptions[T] extends StObject {
     * @param data - the original data item for the item
     * The remove can be triggered by either clicking an item’s remove button, or calling the remoteItem method.
     */
-  var removeItem: js.UndefOr[js.Function1[/* data */ T, Unit]] = js.native
+  var removeItem: js.UndefOr[js.Function1[/* data */ T, Unit]] = js.undefined
   
   /**
     * A function that gets called when the size of the list changes.
     */
-  var resize: js.UndefOr[js.Function0[Unit]] = js.native
+  var resize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * A function that gets called against each item in the list when the size of the list changes.
@@ -91,14 +89,14 @@ trait WidgetEditableListOptions[T] extends StObject {
     *
     * This callback is invoked after the main resize callback is called.
     */
-  var resizeItem: js.UndefOr[js.Function2[/* row */ JQuery[HTMLElement], /* index */ Double, Unit]] = js.native
+  var resizeItem: js.UndefOr[js.Function2[/* row */ JQuery[HTMLElement], /* index */ Double, Unit]] = js.undefined
   
   /**
     * Determines whether the list should automatically scroll to the bottom whenever a new item is added.
     * If not specified, or set to true (boolean) the list will scroll to show newly added items.
     * If set to false (boolean), the list will not scroll
     */
-  var scrollOnAdd: js.UndefOr[Boolean] = js.native
+  var scrollOnAdd: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A callback function that gets called to compare two items in the list to determine their order.
@@ -110,7 +108,7 @@ trait WidgetEditableListOptions[T] extends StObject {
     * If the function returns 0, the items are left unchanged.
     * If the function returns a value greater than 0, itemDataA comes after itemDataB.
     */
-  var sort: js.UndefOr[js.Function2[/* itemDataA */ T, /* itemDataB */ T, Double]] = js.native
+  var sort: js.UndefOr[js.Function2[/* itemDataA */ T, /* itemDataB */ T, Double]] = js.undefined
   
   /**
     * A function that is called after an item in the list is moved.
@@ -118,14 +116,14 @@ trait WidgetEditableListOptions[T] extends StObject {
     * @param items - an Array of the jQuery DOM elements for each row, in order.
     * Each row element stores the original data for the item under property called data.
     */
-  var sortItems: js.UndefOr[js.Function1[/* items */ js.Array[JQuery[HTMLElement]], Unit]] = js.native
+  var sortItems: js.UndefOr[js.Function1[/* items */ js.Array[JQuery[HTMLElement]], Unit]] = js.undefined
   
   /**
     * Determines whether the list items can be dragged to sort them.
     * If set to true (boolean), a default drag handle is displayed alongside the item.
     * If set to a CSS Selector, that is used to identify the element that should be used as the drag handle within the item’s content element.
     */
-  var sortable: js.UndefOr[Boolean | Selector] = js.native
+  var sortable: js.UndefOr[Boolean | Selector] = js.undefined
 }
 object WidgetEditableListOptions {
   
@@ -136,7 +134,7 @@ object WidgetEditableListOptions {
   }
   
   @scala.inline
-  implicit class WidgetEditableListOptionsMutableBuilder[Self <: WidgetEditableListOptions[_], T] (val x: Self with WidgetEditableListOptions[T]) extends AnyVal {
+  implicit class WidgetEditableListOptionsMutableBuilder[Self <: WidgetEditableListOptions[?], T] (val x: Self & WidgetEditableListOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAddButtons(value: Boolean | String): Self = StObject.set(x, "addButtons", value.asInstanceOf[js.Any])

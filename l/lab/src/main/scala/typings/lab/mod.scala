@@ -3,29 +3,29 @@ package typings.lab
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("lab", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("lab", "assertions")
   @js.native
   val assertions: js.Any = js.native
   
-  @JSImport("lab", "script")
-  @js.native
-  def script(): Lab with ExperimentAlt with TestAlt = js.native
-  @JSImport("lab", "script")
-  @js.native
-  def script(options: ScriptOptions): Lab with ExperimentAlt with TestAlt = js.native
+  @scala.inline
+  def script(): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")().asInstanceOf[Lab & ExperimentAlt & TestAlt]
+  @scala.inline
+  def script(options: ScriptOptions): Lab & ExperimentAlt & TestAlt = ^.asInstanceOf[js.Dynamic].applyDynamic("script")(options.asInstanceOf[js.Any]).asInstanceOf[Lab & ExperimentAlt & TestAlt]
   
   type AsyncCallback = js.Function1[/* done */ DoneFunction, Unit]
   
-  @js.native
   trait AsyncOptions extends StObject {
     
     /** Set a specific timeout in milliseconds (disabled) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AsyncOptions {
     
@@ -52,11 +52,10 @@ object mod {
   
   type DoneFunction = js.Function1[/* err */ js.UndefOr[Error], Unit]
   
-  @js.native
   trait DoneNote extends StObject {
     
     /** Attach a note to the test case */
-    def note(text: String): Unit = js.native
+    def note(text: String): Unit
   }
   object DoneNote {
     
@@ -76,14 +75,13 @@ object mod {
   
   type EmptyCallback = js.Function0[Unit]
   
-  @js.native
   trait ExperimentAlt extends StObject {
     
-    var describe: SkipOnlyExperiment = js.native
+    var describe: SkipOnlyExperiment
     
-    var experiment: SkipOnlyExperiment = js.native
+    var experiment: SkipOnlyExperiment
     
-    var suite: SkipOnlyExperiment = js.native
+    var suite: SkipOnlyExperiment
   }
   object ExperimentAlt {
     
@@ -109,20 +107,19 @@ object mod {
   
   type ExperimentArgs = js.Function2[/* desc */ String, /* cb */ EmptyCallback, js.Object]
   
-  @js.native
   trait ExperimentOptions extends StObject {
     
     /** Execute only this test/experiment? (false) */
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
     
     /** Execute tests in parallel? (false) */
-    var parallel: js.UndefOr[Boolean] = js.native
+    var parallel: js.UndefOr[Boolean] = js.undefined
     
     /** Skip execution? (false) */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /** Set a specific timeout in milliseconds (2000) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ExperimentOptions {
     
@@ -236,14 +233,13 @@ object mod {
     def test(desc: String, promise: TestPromise): Unit = js.native
   }
   
-  @js.native
   trait ScriptOptions extends StObject {
     
     /** Pass Lab CLI options */
-    var cli: js.UndefOr[js.Any] = js.native
+    var cli: js.UndefOr[js.Any] = js.undefined
     
     /** Enable auto-execution of the script? (true) */
-    var schedule: js.UndefOr[Boolean] = js.native
+    var schedule: js.UndefOr[Boolean] = js.undefined
   }
   object ScriptOptions {
     
@@ -270,52 +266,85 @@ object mod {
     }
   }
   
-  @js.native
   trait SkipOnlyExperiment extends StObject {
     
     /** Only execute this test suite */
-    def only(desc: String, cb: EmptyCallback): js.Object = js.native
+    def only(desc: String, cb: EmptyCallback): js.Object
     /** Only execute this test suite */
-    def only(desc: String, options: ExperimentOptions, cb: EmptyCallback): js.Object = js.native
+    def only(desc: String, options: ExperimentOptions, cb: EmptyCallback): js.Object
     /** Only execute this test suite */
     @JSName("only")
-    var only_Original: ExperimentArgs with ExperimentWithOptionsArgs = js.native
+    var only_Original: ExperimentArgs & ExperimentWithOptionsArgs
     
     /** Skip this test suite */
-    def skip(desc: String, cb: EmptyCallback): js.Object = js.native
+    def skip(desc: String, cb: EmptyCallback): js.Object
     /** Skip this test suite */
-    def skip(desc: String, options: ExperimentOptions, cb: EmptyCallback): js.Object = js.native
+    def skip(desc: String, options: ExperimentOptions, cb: EmptyCallback): js.Object
     /** Skip this test suite */
     @JSName("skip")
-    var skip_Original: ExperimentArgs with ExperimentWithOptionsArgs = js.native
+    var skip_Original: ExperimentArgs & ExperimentWithOptionsArgs
+  }
+  object SkipOnlyExperiment {
+    
+    @scala.inline
+    def apply(only: ExperimentArgs & ExperimentWithOptionsArgs, skip: ExperimentArgs & ExperimentWithOptionsArgs): SkipOnlyExperiment = {
+      val __obj = js.Dynamic.literal(only = only.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SkipOnlyExperiment]
+    }
+    
+    @scala.inline
+    implicit class SkipOnlyExperimentMutableBuilder[Self <: SkipOnlyExperiment] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnly(value: ExperimentArgs & ExperimentWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSkip(value: ExperimentArgs & ExperimentWithOptionsArgs): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait SkipOnlyTest extends StObject {
     
     /** Only execute this test */
-    def only(desc: String, cb: TestCallback): js.Object = js.native
+    def only(desc: String, cb: TestCallback): js.Object
     /** Only execute this test */
-    def only(desc: String, options: TestOptions, cb: TestCallback): js.Object = js.native
+    def only(desc: String, options: TestOptions, cb: TestCallback): js.Object
     /** Only execute this test */
     @JSName("only")
-    var only_Original: TestArgs with TestWithOptionsArgs = js.native
+    var only_Original: TestArgs & TestWithOptionsArgs
     
     /** Skip this test */
-    def skip(desc: String, cb: TestCallback): js.Object = js.native
+    def skip(desc: String, cb: TestCallback): js.Object
     /** Skip this test */
-    def skip(desc: String, options: TestOptions, cb: TestCallback): js.Object = js.native
+    def skip(desc: String, options: TestOptions, cb: TestCallback): js.Object
     /** Skip this test */
     @JSName("skip")
-    var skip_Original: TestArgs with TestWithOptionsArgs = js.native
+    var skip_Original: TestArgs & TestWithOptionsArgs
+  }
+  object SkipOnlyTest {
+    
+    @scala.inline
+    def apply(only: TestArgs & TestWithOptionsArgs, skip: TestArgs & TestWithOptionsArgs): SkipOnlyTest = {
+      val __obj = js.Dynamic.literal(only = only.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SkipOnlyTest]
+    }
+    
+    @scala.inline
+    implicit class SkipOnlyTestMutableBuilder[Self <: SkipOnlyTest] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnly(value: TestArgs & TestWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSkip(value: TestArgs & TestWithOptionsArgs): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait TestAlt extends StObject {
     
-    var it: SkipOnlyTest = js.native
+    var it: SkipOnlyTest
     
-    var test: SkipOnlyTest = js.native
+    var test: SkipOnlyTest
   }
   object TestAlt {
     
@@ -339,16 +368,17 @@ object mod {
   type TestArgs = js.Function2[/* desc */ String, /* cb */ TestCallback, js.Object]
   
   type TestCallback = js.Function2[
-    /* done */ DoneFunction with DoneNote, 
+    /* done */ DoneFunction & DoneNote, 
     /* onCleanup */ js.UndefOr[CleanupFunction], 
     Unit
   ]
   
-  @js.native
-  trait TestOptions extends ExperimentOptions {
+  trait TestOptions
+    extends StObject
+       with ExperimentOptions {
     
     /** The expected number of assertions to execute */
-    var plan: js.UndefOr[Double] = js.native
+    var plan: js.UndefOr[Double] = js.undefined
   }
   object TestOptions {
     

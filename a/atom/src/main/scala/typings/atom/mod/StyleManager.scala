@@ -3,32 +3,30 @@ package typings.atom.mod
 import typings.std.HTMLStyleElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleManager extends StObject {
   
   // Reading Style Elements
   /** Get all loaded style elements. */
-  def getStyleElements(): js.Array[HTMLStyleElement] = js.native
+  def getStyleElements(): js.Array[HTMLStyleElement]
   
   // Paths
   /** Get the path of the user style sheet in ~/.atom. */
-  def getUserStyleSheetPath(): String = js.native
+  def getUserStyleSheetPath(): String
   
   // Event Subscription
   /** Invoke callback for all current and future style elements. */
-  def observeStyleElements(callback: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit]): Disposable = js.native
+  def observeStyleElements(callback: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit]): Disposable
   
   /** Invoke callback when a style element is added. */
-  def onDidAddStyleElement(callback: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit]): Disposable = js.native
+  def onDidAddStyleElement(callback: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit]): Disposable
   
   /** Invoke callback when a style element is removed. */
-  def onDidRemoveStyleElement(callback: js.Function1[/* styleElement */ HTMLStyleElement, Unit]): Disposable = js.native
+  def onDidRemoveStyleElement(callback: js.Function1[/* styleElement */ HTMLStyleElement, Unit]): Disposable
   
   /** Invoke callback when an existing style element is updated. */
-  def onDidUpdateStyleElement(callback: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit]): Disposable = js.native
+  def onDidUpdateStyleElement(callback: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit]): Disposable
 }
 object StyleManager {
   

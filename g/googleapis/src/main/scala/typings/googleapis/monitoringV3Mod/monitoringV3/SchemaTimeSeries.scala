@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * monitored resource and a fully-specified metric. This type is used for both
   * listing and creating time series.
   */
-@js.native
 trait SchemaTimeSeries extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait SchemaTimeSeries extends StObject {
     * named in the reduction. When creating a timeseries, this field is
     * ignored.
     */
-  var metadata: js.UndefOr[SchemaMonitoredResourceMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMonitoredResourceMetadata] = js.undefined
   
   /**
     * The associated metric. A fully-specified metric used to identify the time
     * series.
     */
-  var metric: js.UndefOr[SchemaMetric] = js.native
+  var metric: js.UndefOr[SchemaMetric] = js.undefined
   
   /**
     * The metric kind of the time series. When listing time series, this metric
@@ -38,7 +36,7 @@ trait SchemaTimeSeries extends StObject {
     * the metric kind of the new descriptor and must be either GAUGE (the
     * default) or CUMULATIVE.
     */
-  var metricKind: js.UndefOr[String] = js.native
+  var metricKind: js.UndefOr[String] = js.undefined
   
   /**
     * The data points of this time series. When listing time series, points are
@@ -49,13 +47,13 @@ trait SchemaTimeSeries extends StObject {
     * descriptor is determined by the point&#39;s type, which must be BOOL,
     * INT64, DOUBLE, or DISTRIBUTION.
     */
-  var points: js.UndefOr[js.Array[SchemaPoint]] = js.native
+  var points: js.UndefOr[js.Array[SchemaPoint]] = js.undefined
   
   /**
     * The associated monitored resource. Custom metrics can use only certain
     * monitored resource types in their time series data.
     */
-  var resource: js.UndefOr[SchemaMonitoredResource] = js.native
+  var resource: js.UndefOr[SchemaMonitoredResource] = js.undefined
   
   /**
     * The value type of the time series. When listing time series, this value
@@ -64,7 +62,7 @@ trait SchemaTimeSeries extends StObject {
     * creating a time series, this field is optional. If present, it must be
     * the same as the type of the data in the points field.
     */
-  var valueType: js.UndefOr[String] = js.native
+  var valueType: js.UndefOr[String] = js.undefined
 }
 object SchemaTimeSeries {
   

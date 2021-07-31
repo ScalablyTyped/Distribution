@@ -2,36 +2,34 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamAccessKeySessionContextSessionIssuer extends StObject {
   
   /**
     * The identifier of the AWS account that created the session.
     */
-  var AccountId: js.UndefOr[NonEmptyString] = js.native
+  var AccountId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the session.
     */
-  var Arn: js.UndefOr[NonEmptyString] = js.native
+  var Arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The principal ID of the principal (user, role, or group) that created the session.
     */
-  var PrincipalId: js.UndefOr[NonEmptyString] = js.native
+  var PrincipalId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of principal (user, role, or group) that created the session.
     */
-  var Type: js.UndefOr[NonEmptyString] = js.native
+  var Type: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the principal that created the session.
     */
-  var UserName: js.UndefOr[NonEmptyString] = js.native
+  var UserName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamAccessKeySessionContextSessionIssuer {
   

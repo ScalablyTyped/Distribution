@@ -2,47 +2,45 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformsStyle extends StObject {
   
   /**
     * @deprecated Use rotate in transform prop instead.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated Use scaleX in transform prop instead.
     */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated Use scaleY in transform prop instead.
     */
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
   
   var transform: js.UndefOr[
     js.Array[
       PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * @deprecated Use matrix in transform prop instead.
     */
-  var transformMatrix: js.UndefOr[js.Array[Double]] = js.native
+  var transformMatrix: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * @deprecated Use translateX in transform prop instead.
     */
-  var translateX: js.UndefOr[Double] = js.native
+  var translateX: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated Use translateY in transform prop instead.
     */
-  var translateY: js.UndefOr[Double] = js.native
+  var translateY: js.UndefOr[Double] = js.undefined
 }
 object TransformsStyle {
   

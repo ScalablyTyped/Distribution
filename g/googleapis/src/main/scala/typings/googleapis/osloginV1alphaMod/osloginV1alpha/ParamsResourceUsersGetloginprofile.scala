@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersGetloginprofile extends StandardParameters {
+trait ParamsResourceUsersGetloginprofile
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The unique ID for the user in format `users/{user}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of operating system associated with the account.
     */
-  var operatingSystemType: js.UndefOr[String] = js.native
+  var operatingSystemType: js.UndefOr[String] = js.undefined
   
   /**
     * The project ID of the Google Cloud Platform project.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * A system ID for filtering the results of the request.
     */
-  var systemId: js.UndefOr[String] = js.native
+  var systemId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersGetloginprofile {
   

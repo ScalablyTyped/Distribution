@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutResourcePolicyRequest extends StObject {
   
   /**
     * Allows you to specify if you want to use both resource-level and account/catalog-level resource policies. A resource-level policy is a policy attached to an individual resource such as a database or a table. The default value of NO indicates that resource-level policies cannot co-exist with an account-level policy. A value of YES means the use of both resource-level and account/catalog-level resource policies is allowed.
     */
-  var EnableHybrid: js.UndefOr[EnableHybridValues] = js.native
+  var EnableHybrid: js.UndefOr[EnableHybridValues] = js.undefined
   
   /**
     * A value of MUST_EXIST is used to update a policy. A value of NOT_EXIST is used to create a new policy. If a value of NONE or a null value is used, the call will not depend on the existence of a policy.
     */
-  var PolicyExistsCondition: js.UndefOr[ExistCondition] = js.native
+  var PolicyExistsCondition: js.UndefOr[ExistCondition] = js.undefined
   
   /**
     * The hash value returned when the previous policy was set using PutResourcePolicy. Its purpose is to prevent concurrent modifications of a policy. Do not use this parameter if no previous policy has been set.
     */
-  var PolicyHashCondition: js.UndefOr[HashString] = js.native
+  var PolicyHashCondition: js.UndefOr[HashString] = js.undefined
   
   /**
     * Contains the policy document to set, in JSON format.
     */
-  var PolicyInJson: PolicyJsonString = js.native
+  var PolicyInJson: PolicyJsonString
   
   /**
     * The ARN of the AWS Glue resource for the resource policy to be set. For more information about AWS Glue resource ARNs, see the AWS Glue ARN string pattern 
     */
-  var ResourceArn: js.UndefOr[GlueResourceArn] = js.native
+  var ResourceArn: js.UndefOr[GlueResourceArn] = js.undefined
 }
 object PutResourcePolicyRequest {
   

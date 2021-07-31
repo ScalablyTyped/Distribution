@@ -2,20 +2,18 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGPoint extends StObject {
   
   @JSName("MSHTML.SVGPoint_typekey")
-  var MSHTMLDotSVGPoint_typekey: SVGPoint = js.native
+  var MSHTMLDotSVGPoint_typekey: SVGPoint
   
-  def matrixTransform(pMatrix: SVGMatrix): SVGPoint = js.native
+  def matrixTransform(pMatrix: SVGMatrix): SVGPoint
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object SVGPoint {
   

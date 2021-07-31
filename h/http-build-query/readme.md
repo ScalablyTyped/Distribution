@@ -11,8 +11,8 @@ Generate URL-encoded query string from the object (php's http_build_query() in j
 | Full name          | http-build-query |
 | Keywords           | http, build, query, url |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 61448 |
+| # dependents       | 15 |
+| # downloads        | 71894 |
 | # stars            | 0 |
 
 ## Links

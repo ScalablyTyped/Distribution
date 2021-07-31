@@ -2,48 +2,46 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartFont extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var Background: js.Any = js.native
+  var Background: js.Any
   
-  var Bold: js.Any = js.native
+  var Bold: js.Any
   
-  var Color: js.Any = js.native
+  var Color: js.Any
   
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var FontStyle: js.Any = js.native
+  var FontStyle: js.Any
   
-  var Italic: js.Any = js.native
+  var Italic: js.Any
   
-  var Name: js.Any = js.native
+  var Name: js.Any
   
-  var OutlineFont: js.Any = js.native
+  var OutlineFont: js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ChartFont_typekey")
-  var PowerPointDotChartFont_typekey: ChartFont = js.native
+  var PowerPointDotChartFont_typekey: ChartFont
   
-  var Shadow: js.Any = js.native
+  var Shadow: js.Any
   
-  var Size: js.Any = js.native
+  var Size: js.Any
   
-  var Strikethrough: js.Any = js.native
+  var Strikethrough: js.Any
   
-  var Subscript: js.Any = js.native
+  var Subscript: js.Any
   
-  var Superscript: js.Any = js.native
+  var Superscript: js.Any
   
-  var Underline: js.Any = js.native
+  var Underline: js.Any
 }
 object ChartFont {
   

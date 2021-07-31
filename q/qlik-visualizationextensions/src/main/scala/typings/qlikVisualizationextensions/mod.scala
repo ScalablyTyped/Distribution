@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.qlikVisualizationextensions.RootAPI.IRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,7 +26,8 @@ object mod extends Shortcut {
   @JSImport("qlik", "Promise")
   @js.native
   class Promise[T] protected ()
-    extends typings.std.Promise[T] {
+    extends StObject
+       with typings.std.Promise[T] {
     /**
       * Creates a new Promise.
       * @param executor A callback used to initialize the promise. This callback is passed two arguments:

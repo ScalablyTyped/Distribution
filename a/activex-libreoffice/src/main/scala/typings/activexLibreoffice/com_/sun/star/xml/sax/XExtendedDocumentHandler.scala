@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,31 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note: Whether or not every callback is supported is dependent on the parser implementation.
   */
-@js.native
-trait XExtendedDocumentHandler extends XDocumentHandler {
+trait XExtendedDocumentHandler
+  extends StObject
+     with XDocumentHandler {
   
   /** informs a writer that it is allowable to insert a line break and indentation before the next XDocumentHandler-call. */
-  def allowLineBreak(): Unit = js.native
+  def allowLineBreak(): Unit
   
   /** receives notification about a comment in the XML-source. */
-  def comment(sComment: String): Unit = js.native
+  def comment(sComment: String): Unit
   
   /**
     * informs about the end of a CDATA-Section.
     *
     * Note that `startCDATA/endCDATA` MUST NOT enclose any `startElement/endElement` -call!
     */
-  def endCDATA(): Unit = js.native
+  def endCDATA(): Unit
   
   /**
     * receives notification about the start of a CDATA section in the XML-source.
     *
     * Any string coming in via character handler may include chars, that would otherwise be interpreted as markup.
     */
-  def startCDATA(): Unit = js.native
+  def startCDATA(): Unit
   
   /** notifies that any characters that cannot be handled by other callback methods are announced through this method. */
-  def unknown(sString: String): Unit = js.native
+  def unknown(sString: String): Unit
 }
 object XExtendedDocumentHandler {
   

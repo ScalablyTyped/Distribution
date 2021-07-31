@@ -8,23 +8,21 @@ import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.rootContainerTypesMod.IRootContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractionIndicator extends StObject {
   
-  var config: IPlayerConfig = js.native
+  var config: IPlayerConfig
   
-  var engine: IPlaybackEngine = js.native
+  var engine: IPlaybackEngine
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
   
-  var fullScreenManager: IFullScreenManager = js.native
+  var fullScreenManager: IFullScreenManager
   
-  var interactionIndicator: IInteractionIndicator = js.native
+  var interactionIndicator: IInteractionIndicator
   
-  var rootContainer: IRootContainer = js.native
+  var rootContainer: IRootContainer
 }
 object InteractionIndicator {
   

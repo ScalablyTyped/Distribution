@@ -17,14 +17,15 @@ import typings.cucumberMessages.mod.messages.GherkinDocument.Feature.TableRow.Ta
 import typings.gherkin.parserMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object astBuilderMod {
   
   @JSImport("gherkin/dist/src/AstBuilder", JSImport.Default)
   @js.native
-  class default protected () extends AstBuilder {
+  class default protected ()
+    extends StObject
+       with AstBuilder {
     def this(newId: NewId) = this()
   }
   
@@ -39,7 +40,7 @@ object astBuilderMod {
     
     def endRule(ruleType: RuleType): Unit = js.native
     
-    def ensureCellCount(rows: js.Array[_]): Unit = js.native
+    def ensureCellCount(rows: js.Array[js.Any]): Unit = js.native
     
     def getCells(tableRowToken: typings.gherkin.tokenMod.default): js.Array[TableCell] = js.native
     
@@ -50,7 +51,7 @@ object astBuilderMod {
     
     def getResult(): js.Any = js.native
     
-    def getSteps(node: typings.gherkin.astNodeMod.default): js.Array[_] = js.native
+    def getSteps(node: typings.gherkin.astNodeMod.default): js.Array[js.Any] = js.native
     
     def getTableRows(node: typings.gherkin.astNodeMod.default): js.Array[TableRow] = js.native
     

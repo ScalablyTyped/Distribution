@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateScheduleResponse extends StObject {
   
   /**
     * The name of the schedule that was updated.
     */
-  var Name: ScheduleName = js.native
+  var Name: ScheduleName
 }
 object UpdateScheduleResponse {
   

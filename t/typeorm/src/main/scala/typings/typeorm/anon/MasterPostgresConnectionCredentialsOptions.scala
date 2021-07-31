@@ -3,21 +3,19 @@ package typings.typeorm.anon
 import typings.typeorm.postgresPostgresConnectionCredentialsOptionsMod.PostgresConnectionCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MasterPostgresConnectionCredentialsOptions extends StObject {
   
   /**
     * Master server used by orm to perform writes.
     */
-  val master: PostgresConnectionCredentialsOptions = js.native
+  val master: PostgresConnectionCredentialsOptions
   
   /**
     * List of read-from severs (slaves).
     */
-  val slaves: js.Array[PostgresConnectionCredentialsOptions] = js.native
+  val slaves: js.Array[PostgresConnectionCredentialsOptions]
 }
 object MasterPostgresConnectionCredentialsOptions {
   

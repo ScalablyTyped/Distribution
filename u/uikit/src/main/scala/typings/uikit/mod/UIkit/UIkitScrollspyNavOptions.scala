@@ -2,21 +2,19 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitScrollspyNavOptions extends StObject {
   
-  var closest: js.UndefOr[String] = js.native
+  var closest: js.UndefOr[String] = js.undefined
   
-  var cls: js.UndefOr[String] = js.native
+  var cls: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var overflow: js.UndefOr[Boolean] = js.native
+  var overflow: js.UndefOr[Boolean] = js.undefined
   
-  var scroll: js.UndefOr[Boolean] = js.native
+  var scroll: js.UndefOr[Boolean] = js.undefined
 }
 object UIkitScrollspyNavOptions {
   

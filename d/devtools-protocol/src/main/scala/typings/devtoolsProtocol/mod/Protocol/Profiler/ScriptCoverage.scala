@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptCoverage extends StObject {
   
   /**
     * Functions contained in the script that has coverage data.
     */
-  var functions: js.Array[FunctionCoverage] = js.native
+  var functions: js.Array[FunctionCoverage]
   
   /**
     * JavaScript script id.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     * JavaScript script name or url.
     */
-  var url: String = js.native
+  var url: String
 }
 object ScriptCoverage {
   

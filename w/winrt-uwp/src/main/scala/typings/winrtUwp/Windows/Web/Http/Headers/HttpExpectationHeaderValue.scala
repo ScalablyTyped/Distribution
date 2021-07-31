@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a token for a particular server behavior required by the client that is used in the Expect HTTP header on an HTTP request. */
-@js.native
 trait HttpExpectationHeaderValue extends StObject {
   
   /** Gets or sets a token that represents a name for a server behavior used in the Expect HTTP header. */
-  var name: String = js.native
+  var name: String
   
   /** Gets a set of parameters for a server behavior included in the Expect HTTP header. */
-  var parameters: IVector[HttpNameValueHeaderValue] = js.native
+  var parameters: IVector[HttpNameValueHeaderValue]
   
   /** Gets or sets a value for a server behavior used in the Expect HTTP header. */
-  var value: String = js.native
+  var value: String
 }
 object HttpExpectationHeaderValue {
   

@@ -10,21 +10,19 @@ import typings.reactInstantsearchDom.reactInstantsearchDomStrings.aborted
 import typings.reactInstantsearchDom.reactInstantsearchDomStrings.network
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceListeningState extends StObject {
   
   var errorCode: js.UndefOr[
     `no-speech` | aborted | `audio-capture` | network | `not-allowed` | `service-not-allowed` | `bad-grammar` | `language-not-supported`
-  ] = js.native
+  ] = js.undefined
   
-  var isSpeechFinal: Boolean = js.native
+  var isSpeechFinal: Boolean
   
-  var status: Status = js.native
+  var status: Status
   
-  var transcript: String = js.native
+  var transcript: String
 }
 object VoiceListeningState {
   

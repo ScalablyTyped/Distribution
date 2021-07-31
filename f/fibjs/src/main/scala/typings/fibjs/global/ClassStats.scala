@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_Stats")
 @js.native
 class ClassStats protected ()
-  extends typings.fibjs.ClassStats {
+  extends StObject
+     with typings.fibjs.ClassStats {
   /**
     * 
     * @brief 数据统计对象构造方法
@@ -22,7 +22,7 @@ class ClassStats protected ()
     * 
     * 
     */
-  def this(keys: js.Array[_]) = this()
+  def this(keys: js.Array[js.Any]) = this()
   /**
     * 
     * @brief 数据统计对象构造方法
@@ -32,5 +32,5 @@ class ClassStats protected ()
     * 
     * 
     */
-  def this(staticKeys: js.Array[_], keys: js.Array[_]) = this()
+  def this(staticKeys: js.Array[js.Any], keys: js.Array[js.Any]) = this()
 }

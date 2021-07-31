@@ -5,7 +5,6 @@ import typings.html5plus.html5plusStrings.system
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
   */
-@js.native
 trait PlusPushMessageOptions extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var appid: js.UndefOr[String] = js.native
+  var appid: js.UndefOr[String] = js.undefined
   
   /**
     * 是否覆盖上一次提示的消息
@@ -30,7 +28,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var cover: js.UndefOr[Boolean] = js.native
+  var cover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 提示消息延迟显示的时间
@@ -38,7 +36,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * 推送消息的图标
@@ -46,7 +44,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * 推送消息的提示音
@@ -59,7 +57,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var sound: js.UndefOr[system | none] = js.native
+  var sound: js.UndefOr[system | none] = js.undefined
   
   /**
     * 推送消息的标题
@@ -67,7 +65,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * 消息上显示的提示时间
@@ -75,7 +73,7 @@ trait PlusPushMessageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var when: js.UndefOr[Date] = js.native
+  var when: js.UndefOr[Date] = js.undefined
 }
 object PlusPushMessageOptions {
   

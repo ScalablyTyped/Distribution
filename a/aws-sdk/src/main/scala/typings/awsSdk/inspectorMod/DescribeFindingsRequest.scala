@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFindingsRequest extends StObject {
   
   /**
     * The ARN that specifies the finding that you want to describe.
     */
-  var findingArns: BatchDescribeArnList = js.native
+  var findingArns: BatchDescribeArnList
   
   /**
     * The locale into which you want to translate a finding description, recommendation, and the short description that identifies the finding.
     */
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
 }
 object DescribeFindingsRequest {
   

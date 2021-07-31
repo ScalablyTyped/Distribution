@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBSnapshotResult extends StObject {
   
-  var DBSnapshot: js.UndefOr[typings.awsSdk.rdsMod.DBSnapshot] = js.native
+  var DBSnapshot: js.UndefOr[typings.awsSdk.rdsMod.DBSnapshot] = js.undefined
 }
 object CreateDBSnapshotResult {
   

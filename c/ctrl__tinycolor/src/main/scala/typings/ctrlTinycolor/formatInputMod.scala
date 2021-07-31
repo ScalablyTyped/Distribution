@@ -9,44 +9,36 @@ import typings.ctrlTinycolor.interfacesMod.RGB
 import typings.ctrlTinycolor.interfacesMod.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatInputMod {
   
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
+  @JSImport("@ctrl/tinycolor/dist/format-input", JSImport.Namespace)
   @js.native
-  def inputToRGB(color: String): A = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
-  @js.native
-  def inputToRGB(color: js.Any): A = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
-  @js.native
-  def inputToRGB(color: HSL): A = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
-  @js.native
-  def inputToRGB(color: HSLA): A = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
-  @js.native
-  def inputToRGB(color: HSV): A = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
-  @js.native
-  def inputToRGB(color: HSVA): A = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
-  @js.native
-  def inputToRGB(color: RGB): A = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "inputToRGB")
-  @js.native
-  def inputToRGB(color: RGBA): A = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ctrl/tinycolor/dist/format-input", "isValidCSSUnit")
-  @js.native
-  def isValidCSSUnit(color: String): Boolean = js.native
-  @JSImport("@ctrl/tinycolor/dist/format-input", "isValidCSSUnit")
-  @js.native
-  def isValidCSSUnit(color: Double): Boolean = js.native
+  @scala.inline
+  def inputToRGB(color: String): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  @scala.inline
+  def inputToRGB(color: js.Any): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  @scala.inline
+  def inputToRGB(color: HSL): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  @scala.inline
+  def inputToRGB(color: HSLA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  @scala.inline
+  def inputToRGB(color: HSV): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  @scala.inline
+  def inputToRGB(color: HSVA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  @scala.inline
+  def inputToRGB(color: RGB): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
+  @scala.inline
+  def inputToRGB(color: RGBA): A = ^.asInstanceOf[js.Dynamic].applyDynamic("inputToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[A]
   
-  @JSImport("@ctrl/tinycolor/dist/format-input", "stringInputToObject")
-  @js.native
-  def stringInputToObject(color: String): js.Any = js.native
+  @scala.inline
+  def isValidCSSUnit(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCSSUnit")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidCSSUnit(color: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCSSUnit")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def stringInputToObject(color: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringInputToObject")(color.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

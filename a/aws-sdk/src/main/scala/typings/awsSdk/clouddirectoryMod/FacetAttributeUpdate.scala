@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetAttributeUpdate extends StObject {
   
   /**
     * The action to perform when updating the attribute.
     */
-  var Action: js.UndefOr[UpdateActionType] = js.native
+  var Action: js.UndefOr[UpdateActionType] = js.undefined
   
   /**
     * The attribute to update.
     */
-  var Attribute: js.UndefOr[FacetAttribute] = js.native
+  var Attribute: js.UndefOr[FacetAttribute] = js.undefined
 }
 object FacetAttributeUpdate {
   

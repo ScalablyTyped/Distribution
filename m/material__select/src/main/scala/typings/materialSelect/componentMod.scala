@@ -11,7 +11,6 @@ import typings.materialSelect.iconComponentMod.MDCSelectIconFactory
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -19,7 +18,7 @@ object componentMod {
   @JSImport("@material/select/component", "MDCSelect")
   @js.native
   class MDCSelect protected () extends MDCComponent[MDCSelectFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCSelectFoundation, args: js.Any*) = this()
     
     def disabled: Boolean = js.native
@@ -93,8 +92,11 @@ object componentMod {
   /* static members */
   object MDCSelect {
     
-    @JSImport("@material/select/component", "MDCSelect.attachTo")
+    @JSImport("@material/select/component", "MDCSelect")
     @js.native
-    def attachTo(root: Element): MDCSelect = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSelect]
   }
 }

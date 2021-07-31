@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,8 +39,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * //     }
   * //   }
   */
-@js.native
-trait DERBitString extends ASN1Object {
+trait DERBitString
+  extends StObject
+     with ASN1Object {
   
   /**
     * set ASN.1 DER BitString by binary string
@@ -55,7 +55,7 @@ trait DERBitString extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray("01011");
     */
-  def setByBinaryString(binaryString: String): Unit = js.native
+  def setByBinaryString(binaryString: String): Unit
   
   /**
     * set ASN.1 TLV value(V) by an array of boolean
@@ -66,17 +66,17 @@ trait DERBitString extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray([false, true, false, true, true]);
     */
-  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit = js.native
+  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit
   
   /**
     * set ASN.1 value(V) by a hexadecimal string including unused bits
     */
-  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit = js.native
+  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit
   
   /**
     * set ASN.1 value(V) by unused bit and hexadecimal string of value
     */
-  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit = js.native
+  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit
 }
 object DERBitString {
   

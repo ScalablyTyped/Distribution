@@ -2,19 +2,17 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterBandStatistics extends StObject {
   
-  var max: Double = js.native
+  var max: Double
   
-  var mean: Double = js.native
+  var mean: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var std_dev: Double = js.native
+  var std_dev: Double
 }
 object RasterBandStatistics {
   

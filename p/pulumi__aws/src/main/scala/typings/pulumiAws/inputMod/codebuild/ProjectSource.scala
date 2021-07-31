@@ -3,51 +3,49 @@ package typings.pulumiAws.inputMod.codebuild
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSource extends StObject {
   
   /**
     * Information about the authorization settings for AWS CodeBuild to access the source code to be built. Auth blocks are documented below.
     */
-  var auths: js.UndefOr[Input[js.Array[Input[ProjectSourceAuth]]]] = js.native
+  var auths: js.UndefOr[Input[js.Array[Input[ProjectSourceAuth]]]] = js.undefined
   
   /**
     * The build spec declaration to use for this build project's related builds. This must be set when `type` is `NO_SOURCE`.
     */
-  var buildspec: js.UndefOr[Input[String]] = js.native
+  var buildspec: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Truncate git history to this many commits.
     */
-  var gitCloneDepth: js.UndefOr[Input[Double]] = js.native
+  var gitCloneDepth: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Information about the Git submodules configuration for an AWS CodeBuild build project. Git submodules config blocks are documented below. This option is only valid when the `type` is `CODECOMMIT`, `GITHUB` or `GITHUB_ENTERPRISE`.
     */
-  var gitSubmodulesConfig: js.UndefOr[Input[ProjectSourceGitSubmodulesConfig]] = js.native
+  var gitSubmodulesConfig: js.UndefOr[Input[ProjectSourceGitSubmodulesConfig]] = js.undefined
   
   /**
     * Ignore SSL warnings when connecting to source control.
     */
-  var insecureSsl: js.UndefOr[Input[Boolean]] = js.native
+  var insecureSsl: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The location of the source code from git or s3.
     */
-  var location: js.UndefOr[Input[String]] = js.native
+  var location: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when the `type` is `BITBUCKET` or `GITHUB`.
     */
-  var reportBuildStatus: js.UndefOr[Input[Boolean]] = js.native
+  var reportBuildStatus: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET`, `S3` or `NO_SOURCE`.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object ProjectSource {
   

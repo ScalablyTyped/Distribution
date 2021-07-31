@@ -2,56 +2,54 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileData extends StObject {
   
   /**
     * The address of a room profile.
     */
-  var Address: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Address] = js.native
+  var Address: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Address] = js.undefined
   
   /**
     * The distance unit of a room profile.
     */
-  var DistanceUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DistanceUnit] = js.native
+  var DistanceUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DistanceUnit] = js.undefined
   
   /**
     * Retrieves if the profile data is default or not.
     */
-  var IsDefault: js.UndefOr[Boolean] = js.native
+  var IsDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The locale of a room profile. (This is currently available only to a limited preview audience.)
     */
-  var Locale: js.UndefOr[DeviceLocale] = js.native
+  var Locale: js.UndefOr[DeviceLocale] = js.undefined
   
   /**
     * The ARN of a room profile.
     */
-  var ProfileArn: js.UndefOr[Arn] = js.native
+  var ProfileArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of a room profile.
     */
-  var ProfileName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProfileName] = js.native
+  var ProfileName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProfileName] = js.undefined
   
   /**
     * The temperature unit of a room profile.
     */
-  var TemperatureUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TemperatureUnit] = js.native
+  var TemperatureUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TemperatureUnit] = js.undefined
   
   /**
     * The time zone of a room profile.
     */
-  var Timezone: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Timezone] = js.native
+  var Timezone: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Timezone] = js.undefined
   
   /**
     * The wake word of a room profile.
     */
-  var WakeWord: js.UndefOr[typings.awsSdk.alexaforbusinessMod.WakeWord] = js.native
+  var WakeWord: js.UndefOr[typings.awsSdk.alexaforbusinessMod.WakeWord] = js.undefined
 }
 object ProfileData {
   

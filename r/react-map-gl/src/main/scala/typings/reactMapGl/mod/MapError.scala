@@ -3,15 +3,13 @@ package typings.reactMapGl.mod
 import typings.reactMapGl.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapError extends StObject {
   
-  var error: js.UndefOr[Message] = js.native
+  var error: js.UndefOr[Message] = js.undefined
   
-  var status: Double = js.native
+  var status: Double
 }
 object MapError {
   

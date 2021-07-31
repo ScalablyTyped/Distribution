@@ -2,7 +2,6 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** parameter of ko.observable constructor
@@ -18,32 +17,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   factory (kb.Factory) — a factory used to create view models.
   options (Object) — a set of options merge into these options using _.defaults. Useful for extending options when deriving classes rather than merging them by hand.
   */
-@js.native
 trait IObservableOptions extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
   var args: js.UndefOr[
     js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var factory: js.UndefOr[js.Any] = js.native
+  var factory: js.UndefOr[js.Any] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var localizer: js.UndefOr[LocalizedObservable] = js.native
+  var localizer: js.UndefOr[LocalizedObservable] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var read: js.UndefOr[js.Function0[_]] = js.native
+  var read: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var store: js.UndefOr[js.Any] = js.native
+  var store: js.UndefOr[js.Any] = js.undefined
   
-  var write: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+  var write: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
 }
 object IObservableOptions {
   
@@ -59,7 +57,7 @@ object IObservableOptions {
     @scala.inline
     def setArgs(
       value: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
         ]
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
@@ -67,7 +65,9 @@ object IObservableOptions {
     def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    def setArgsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any)*
+    ): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
     def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
@@ -103,7 +103,7 @@ object IObservableOptions {
     def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setRead(value: () => _): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    def setRead(value: () => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
     @scala.inline
     def setReadUndefined: Self = StObject.set(x, "read", js.undefined)

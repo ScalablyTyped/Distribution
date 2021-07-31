@@ -2,15 +2,13 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoldEffect extends StObject {
   
-  var horizFirst: js.UndefOr[Boolean] = js.native
+  var horizFirst: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[js.Any] = js.native
+  var size: js.UndefOr[js.Any] = js.undefined
 }
 object FoldEffect {
   

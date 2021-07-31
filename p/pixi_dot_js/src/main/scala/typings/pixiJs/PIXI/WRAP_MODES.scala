@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,11 +29,17 @@ sealed trait WRAP_MODES extends StObject
 object WRAP_MODES extends StObject {
   
   @js.native
-  sealed trait CLAMP extends WRAP_MODES
+  sealed trait CLAMP
+    extends StObject
+       with WRAP_MODES
   
   @js.native
-  sealed trait MIRRORED_REPEAT extends WRAP_MODES
+  sealed trait MIRRORED_REPEAT
+    extends StObject
+       with WRAP_MODES
   
   @js.native
-  sealed trait REPEAT extends WRAP_MODES
+  sealed trait REPEAT
+    extends StObject
+       with WRAP_MODES
 }

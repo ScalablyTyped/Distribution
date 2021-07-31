@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputSerialization extends StObject {
   
   /**
     * Describes the serialization of a CSV-encoded object.
     */
-  var CSV: js.UndefOr[CSVInput] = js.native
+  var CSV: js.UndefOr[CSVInput] = js.undefined
   
   /**
     * Specifies object's compression format. Valid values: NONE, GZIP, BZIP2. Default Value: NONE.
     */
-  var CompressionType: js.UndefOr[typings.awsSdk.s3Mod.CompressionType] = js.native
+  var CompressionType: js.UndefOr[typings.awsSdk.s3Mod.CompressionType] = js.undefined
   
   /**
     * Specifies JSON as object's input serialization format.
     */
-  var JSON: js.UndefOr[JSONInput] = js.native
+  var JSON: js.UndefOr[JSONInput] = js.undefined
   
   /**
     * Specifies Parquet as object's input serialization format.
     */
-  var Parquet: js.UndefOr[ParquetInput] = js.native
+  var Parquet: js.UndefOr[ParquetInput] = js.undefined
 }
 object InputSerialization {
   

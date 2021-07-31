@@ -2,34 +2,32 @@ package typings.xmppJid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(address: String): JID_ = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[JID_]
+  @scala.inline
+  def apply(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def apply(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def apply(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def apply(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].apply(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  
   @JSImport("@xmpp/jid", JSImport.Namespace)
   @js.native
-  def apply(address: String): JID_ = js.native
-  @JSImport("@xmpp/jid", JSImport.Namespace)
-  @js.native
-  def apply(local: js.UndefOr[scala.Nothing], domain: String): JID_ = js.native
-  @JSImport("@xmpp/jid", JSImport.Namespace)
-  @js.native
-  def apply(local: js.UndefOr[scala.Nothing], domain: String, resource: String): JID_ = js.native
-  @JSImport("@xmpp/jid", JSImport.Namespace)
-  @js.native
-  def apply(local: String, domain: String): JID_ = js.native
-  @JSImport("@xmpp/jid", JSImport.Namespace)
-  @js.native
-  def apply(local: String, domain: String, resource: String): JID_ = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@xmpp/jid", "JID")
   @js.native
   class JID_ protected () extends StObject {
-    def this(local: js.UndefOr[scala.Nothing], domain: String) = this()
     def this(local: String, domain: String) = this()
-    def this(local: js.UndefOr[scala.Nothing], domain: String, resource: String) = this()
+    def this(local: Unit, domain: String) = this()
     def this(local: String, domain: String, resource: String) = this()
+    def this(local: Unit, domain: String, resource: String) = this()
     
     /**
       * Convenience method to distinguish users
@@ -73,55 +71,40 @@ object mod {
     def toString(unescape: Boolean): String = js.native
   }
   
-  @JSImport("@xmpp/jid", "createJID")
-  @js.native
-  def createJID(local: js.UndefOr[scala.Nothing], domain: String): JID_ = js.native
-  @JSImport("@xmpp/jid", "createJID")
-  @js.native
-  def createJID(local: js.UndefOr[scala.Nothing], domain: String, resource: String): JID_ = js.native
-  @JSImport("@xmpp/jid", "createJID")
-  @js.native
-  def createJID(local: String, domain: String): JID_ = js.native
-  @JSImport("@xmpp/jid", "createJID")
-  @js.native
-  def createJID(local: String, domain: String, resource: String): JID_ = js.native
+  @scala.inline
+  def createJID(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def createJID(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def createJID(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def createJID(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createJID")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
   
-  @JSImport("@xmpp/jid", "detectEscape")
-  @js.native
-  def detectEscape(): Boolean = js.native
-  @JSImport("@xmpp/jid", "detectEscape")
-  @js.native
-  def detectEscape(local: String): Boolean = js.native
+  @scala.inline
+  def detectEscape(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEscape")().asInstanceOf[Boolean]
+  @scala.inline
+  def detectEscape(local: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEscape")(local.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@xmpp/jid", "equal")
-  @js.native
-  def equal(a: JID_, b: JID_): Boolean = js.native
+  @scala.inline
+  def equal(a: JID_, b: JID_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@xmpp/jid", "escapeLocal")
-  @js.native
-  def escapeLocal(local: String): String = js.native
+  @scala.inline
+  def escapeLocal(local: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeLocal")(local.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@xmpp/jid", "jid")
-  @js.native
-  def jid(address: String): JID_ = js.native
-  @JSImport("@xmpp/jid", "jid")
-  @js.native
-  def jid(local: js.UndefOr[scala.Nothing], domain: String): JID_ = js.native
-  @JSImport("@xmpp/jid", "jid")
-  @js.native
-  def jid(local: js.UndefOr[scala.Nothing], domain: String, resource: String): JID_ = js.native
-  @JSImport("@xmpp/jid", "jid")
-  @js.native
-  def jid(local: String, domain: String): JID_ = js.native
-  @JSImport("@xmpp/jid", "jid")
-  @js.native
-  def jid(local: String, domain: String, resource: String): JID_ = js.native
+  @scala.inline
+  def jid(address: String): JID_ = ^.asInstanceOf[js.Dynamic].applyDynamic("jid")(address.asInstanceOf[js.Any]).asInstanceOf[JID_]
+  @scala.inline
+  def jid(local: String, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def jid(local: String, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def jid(local: Unit, domain: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[JID_]
+  @scala.inline
+  def jid(local: Unit, domain: String, resource: String): JID_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jid")(local.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[JID_]
   
-  @JSImport("@xmpp/jid", "parse")
-  @js.native
-  def parse(s: String): JID_ = js.native
+  @scala.inline
+  def parse(s: String): JID_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any]).asInstanceOf[JID_]
   
-  @JSImport("@xmpp/jid", "unescapeLocal")
-  @js.native
-  def unescapeLocal(local: String): String = js.native
+  @scala.inline
+  def unescapeLocal(local: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeLocal")(local.asInstanceOf[js.Any]).asInstanceOf[String]
 }

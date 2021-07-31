@@ -2,22 +2,20 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPromotion extends StObject {
   
   /**
     * [required] Amount of the promotion. The values here are the promotion
     * applied to the unit price pretax and to the total of the tax amounts.
     */
-  var promotionAmount: js.UndefOr[SchemaAmount] = js.native
+  var promotionAmount: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
     * [required] ID of the promotion.
     */
-  var promotionId: js.UndefOr[String] = js.native
+  var promotionId: js.UndefOr[String] = js.undefined
 }
 object SchemaPromotion {
   

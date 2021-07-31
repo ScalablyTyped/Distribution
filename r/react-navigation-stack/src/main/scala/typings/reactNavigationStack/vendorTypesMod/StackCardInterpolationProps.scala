@@ -6,52 +6,50 @@ import typings.reactNavigationStack.anon.Progress
 import typings.reactNavigationStack.anon.Screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackCardInterpolationProps extends StObject {
   
   /**
     * Animated node representing whether the card is closing (1 - closing, 0 - not closing).
     */
-  var closing: AnimatedInterpolation = js.native
+  var closing: AnimatedInterpolation
   
   /**
     * Values for the current screen.
     */
-  var current: Progress = js.native
+  var current: Progress
   
   /**
     * The index of the card in the stack.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Safe area insets
     */
-  var insets: Left = js.native
+  var insets: Left
   
   /**
     * Animated node representing multiplier when direction is inverted (-1 - inverted, 1 - normal).
     */
-  var inverted: AnimatedInterpolation = js.native
+  var inverted: AnimatedInterpolation
   
   /**
     * Layout measurements for various items we use for animation.
     */
-  var layouts: Screen = js.native
+  var layouts: Screen
   
   /**
     * Values for the current screen the screen after this one in the stack.
     * This can be `undefined` in case the screen animating is the last one.
     */
-  var next: js.UndefOr[Progress] = js.native
+  var next: js.UndefOr[Progress] = js.undefined
   
   /**
     * Animated node representing whether the card is being swiped (1 - swiping, 0 - not swiping).
     */
-  var swiping: AnimatedInterpolation = js.native
+  var swiping: AnimatedInterpolation
 }
 object StackCardInterpolationProps {
   

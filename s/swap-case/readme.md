@@ -10,9 +10,9 @@ Transform a string by swapping every character from upper to lower case, or lowe
 | ------------------ | :-------------: |
 | Full name          | swap-case |
 | Keywords           | swap, case, invert, convert, transform, lower, upper |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 54898657 |
+| # releases         | 4 |
+| # dependents       | 5 |
+| # downloads        | 55856774 |
 | # stars            | 0 |
 
 ## Links

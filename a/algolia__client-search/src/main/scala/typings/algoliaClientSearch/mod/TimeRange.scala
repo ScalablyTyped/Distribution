@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeRange extends StObject {
   
   /**
     * DateTime with UTC offset for Serialization/Deserialization in unix timespam.
     */
-  val from: Double = js.native
+  val from: Double
   
   /**
     * DateTime with UTC offset for Serialization/Deserialization in unix timespam.
     */
-  val until: Double = js.native
+  val until: Double
 }
 object TimeRange {
   

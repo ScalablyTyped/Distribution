@@ -7,7 +7,6 @@ import typings.tensorflowTfjsData.textLineDatasetMod.TextLineDataset
 import typings.tensorflowTfjsData.typesMod.CSVConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object csvDatasetMod {

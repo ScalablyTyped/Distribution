@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePolicyResponse extends StObject {
   
   /**
     * A structure containing details about the new policy.
     */
-  var Policy: js.UndefOr[typings.awsSdk.iamMod.Policy] = js.native
+  var Policy: js.UndefOr[typings.awsSdk.iamMod.Policy] = js.undefined
 }
 object CreatePolicyResponse {
   

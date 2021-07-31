@@ -3,7 +3,6 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,13 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * response is a map of each filter value to the corresponding count of jobs
   * for that filter.
   */
-@js.native
 trait SchemaHistogramResult extends StObject {
   
   /**
     * The Histogram search filters.
     */
-  var searchType: js.UndefOr[String] = js.native
+  var searchType: js.UndefOr[String] = js.undefined
   
   /**
     * A map from the values of field to the number of jobs with that value in
@@ -26,7 +24,7 @@ trait SchemaHistogramResult extends StObject {
     * companyName).  Values: the count of jobs that match the filter for this
     * search.
     */
-  var values: js.UndefOr[StringDictionary[Double]] = js.native
+  var values: js.UndefOr[StringDictionary[Double]] = js.undefined
 }
 object SchemaHistogramResult {
   

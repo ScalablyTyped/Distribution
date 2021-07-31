@@ -3,93 +3,93 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.util.IGeolocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMap extends IContainer {
+trait IMap
+  extends StObject
+     with IContainer {
   
   /** [Config Option] (Ext.util.Geolocation) */
-  var geo: js.UndefOr[IGeolocation] = js.native
+  var geo: js.UndefOr[IGeolocation] = js.undefined
   
   /** [Method] Returns the value of geo
     * @returns Ext.util.Geolocation
     */
-  var getGeo: js.UndefOr[js.Function0[IGeolocation]] = js.native
+  var getGeo: js.UndefOr[js.Function0[IGeolocation]] = js.undefined
   
   /** [Method] Returns the value of map
     * @returns google.maps.Map
     */
-  var getMap: js.UndefOr[js.Function0[_]] = js.native
+  var getMap: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of mapListeners
     * @returns Object
     */
-  var getMapListeners: js.UndefOr[js.Function0[_]] = js.native
+  var getMapListeners: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the state of the Map
     * @returns Object mapOptions
     */
-  var getState: js.UndefOr[js.Function0[_]] = js.native
+  var getState: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of useCurrentLocation
     * @returns Boolean/Ext.util.Geolocation
     */
-  var getUseCurrentLocation: js.UndefOr[js.Function0[_]] = js.native
+  var getUseCurrentLocation: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (google.maps.Map) */
-  var map: js.UndefOr[js.Any] = js.native
+  var map: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var mapListeners: js.UndefOr[js.Any] = js.native
+  var mapListeners: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var mapOptions: js.UndefOr[js.Any] = js.native
+  var mapOptions: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var maskMap: js.UndefOr[Boolean] = js.native
+  var maskMap: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var maskMapCls: js.UndefOr[java.lang.String] = js.native
+  var maskMapCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Sets the value of geo
     * @param geo Ext.util.Geolocation The new value.
     */
-  var setGeo: js.UndefOr[js.Function1[/* geo */ js.UndefOr[IGeolocation], Unit]] = js.native
+  var setGeo: js.UndefOr[js.Function1[/* geo */ js.UndefOr[IGeolocation], Unit]] = js.undefined
   
   /** [Method] Sets the value of map
     * @param map google.maps.Map The new value.
     */
-  var setMap: js.UndefOr[js.Function1[/* map */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMap: js.UndefOr[js.Function1[/* map */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Moves the map center to the designated coordinates hash of the form  latitude 37 381592 longitude  122 135672
     * @param coordinates Object/google.maps.LatLng Object representing the desired Latitude and longitude upon which to center the map.
     */
-  var setMapCenter: js.UndefOr[js.Function1[/* coordinates */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMapCenter: js.UndefOr[js.Function1[/* coordinates */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of mapListeners
     * @param mapListeners Object The new value.
     */
-  var setMapListeners: js.UndefOr[js.Function1[/* mapListeners */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMapListeners: js.UndefOr[js.Function1[/* mapListeners */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of mapOptions
     * @param mapOptions Object The new value.
     */
-  var setMapOptions: js.UndefOr[js.Function1[/* mapOptions */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMapOptions: js.UndefOr[js.Function1[/* mapOptions */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of useCurrentLocation
     * @param useCurrentLocation Boolean/Ext.util.Geolocation The new value.
     */
-  var setUseCurrentLocation: js.UndefOr[js.Function1[/* useCurrentLocation */ js.UndefOr[js.Any], Unit]] = js.native
+  var setUseCurrentLocation: js.UndefOr[js.Function1[/* useCurrentLocation */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Moves the map center to the designated coordinates hash of the form  latitude 37 381592 longitude  122 135672
     * @param coordinates Object/google.maps.LatLng Object representing the desired Latitude and longitude upon which to center the map.
     */
   @JSName("update")
-  var update_IMap: js.UndefOr[js.Function1[/* coordinates */ js.UndefOr[js.Any], Unit]] = js.native
+  var update_IMap: js.UndefOr[js.Function1[/* coordinates */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Ext.util.Geolocation) */
-  var useCurrentLocation: js.UndefOr[js.Any] = js.native
+  var useCurrentLocation: js.UndefOr[js.Any] = js.undefined
 }
 object IMap {
   
@@ -115,10 +115,10 @@ object IMap {
     def setGetGeoUndefined: Self = StObject.set(x, "getGeo", js.undefined)
     
     @scala.inline
-    def setGetMap(value: () => _): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
+    def setGetMap(value: () => js.Any): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMapListeners(value: () => _): Self = StObject.set(x, "getMapListeners", js.Any.fromFunction0(value))
+    def setGetMapListeners(value: () => js.Any): Self = StObject.set(x, "getMapListeners", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetMapListenersUndefined: Self = StObject.set(x, "getMapListeners", js.undefined)
@@ -127,13 +127,13 @@ object IMap {
     def setGetMapUndefined: Self = StObject.set(x, "getMap", js.undefined)
     
     @scala.inline
-    def setGetState(value: () => _): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
     @scala.inline
-    def setGetUseCurrentLocation(value: () => _): Self = StObject.set(x, "getUseCurrentLocation", js.Any.fromFunction0(value))
+    def setGetUseCurrentLocation(value: () => js.Any): Self = StObject.set(x, "getUseCurrentLocation", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetUseCurrentLocationUndefined: Self = StObject.set(x, "getUseCurrentLocation", js.undefined)

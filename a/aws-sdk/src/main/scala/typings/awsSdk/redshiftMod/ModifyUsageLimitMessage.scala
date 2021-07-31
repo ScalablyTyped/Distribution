@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyUsageLimitMessage extends StObject {
   
   /**
     * The new limit amount. For more information about this parameter, see UsageLimit. 
     */
-  var Amount: js.UndefOr[LongOptional] = js.native
+  var Amount: js.UndefOr[LongOptional] = js.undefined
   
   /**
     * The new action that Amazon Redshift takes when the limit is reached. For more information about this parameter, see UsageLimit. 
     */
-  var BreachAction: js.UndefOr[UsageLimitBreachAction] = js.native
+  var BreachAction: js.UndefOr[UsageLimitBreachAction] = js.undefined
   
   /**
     * The identifier of the usage limit to modify.
     */
-  var UsageLimitId: String = js.native
+  var UsageLimitId: String
 }
 object ModifyUsageLimitMessage {
   

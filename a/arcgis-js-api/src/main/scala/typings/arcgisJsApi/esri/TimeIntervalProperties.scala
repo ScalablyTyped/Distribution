@@ -12,10 +12,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.weeks
 import typings.arcgisJsApi.arcgisJsApiStrings.years
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeIntervalProperties extends StObject {
   
   /**
@@ -25,14 +23,14 @@ trait TimeIntervalProperties extends StObject {
     */
   var unit: js.UndefOr[
     milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The numerical value of the time extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#value)
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object TimeIntervalProperties {
   

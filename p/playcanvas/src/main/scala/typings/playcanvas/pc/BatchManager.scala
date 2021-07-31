@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,15 +25,9 @@ trait BatchManager extends StObject {
     * @returns Group object.
     */
   def addGroup(name: String, dynamic: Boolean, maxAabbSize: Double): BatchGroup = js.native
-  def addGroup(
-    name: String,
-    dynamic: Boolean,
-    maxAabbSize: Double,
-    id: js.UndefOr[scala.Nothing],
-    layers: js.Array[Double]
-  ): BatchGroup = js.native
   def addGroup(name: String, dynamic: Boolean, maxAabbSize: Double, id: Double): BatchGroup = js.native
   def addGroup(name: String, dynamic: Boolean, maxAabbSize: Double, id: Double, layers: js.Array[Double]): BatchGroup = js.native
+  def addGroup(name: String, dynamic: Boolean, maxAabbSize: Double, id: Unit, layers: js.Array[Double]): BatchGroup = js.native
   
   /**
     * Clones a batch. This method doesn't rebuild batch geometry, but only creates a new model and batch objects, linked to different source mesh instances.

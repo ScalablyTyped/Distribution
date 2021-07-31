@@ -11,8 +11,8 @@ tar for node
 | Full name          | tar |
 | Keywords           | - |
 | # releases         | 20 |
-| # dependents       | 1713 |
-| # downloads        | 682095231 |
+| # dependents       | 1812 |
+| # downloads        | 771342976 |
 | # stars            | 45 |
 
 ## Links

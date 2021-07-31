@@ -2,21 +2,19 @@ package typings.webBluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothLEScanFilter extends StObject {
   
-  val manufacturerData: js.UndefOr[BluetoothManufacturerDataFilter] = js.native
+  val manufacturerData: js.UndefOr[BluetoothManufacturerDataFilter] = js.undefined
   
-  val name: js.UndefOr[String] = js.native
+  val name: js.UndefOr[String] = js.undefined
   
-  val namePrefix: js.UndefOr[String] = js.native
+  val namePrefix: js.UndefOr[String] = js.undefined
   
-  val serviceData: js.UndefOr[BluetoothServiceDataFilter] = js.native
+  val serviceData: js.UndefOr[BluetoothServiceDataFilter] = js.undefined
   
-  val services: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.native
+  val services: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.undefined
 }
 object BluetoothLEScanFilter {
   

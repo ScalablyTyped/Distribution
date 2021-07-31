@@ -4,21 +4,19 @@ import typings.std.RTCIceCredentialType
 import typings.std.RTCOAuthCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent trtc-js-sdk.trtc-js-sdk.Omit<std.RTCIceServer, 'urls'> */
-@js.native
 trait TurnServerConfig extends StObject {
   
-  var credential: js.UndefOr[String | RTCOAuthCredential] = js.native
+  var credential: js.UndefOr[String | RTCOAuthCredential] = js.undefined
   
-  var credentialType: js.UndefOr[RTCIceCredentialType] = js.native
+  var credentialType: js.UndefOr[RTCIceCredentialType] = js.undefined
   
   /** TURN 服务器 url */
-  var url: String = js.native
+  var url: String
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object TurnServerConfig {
   

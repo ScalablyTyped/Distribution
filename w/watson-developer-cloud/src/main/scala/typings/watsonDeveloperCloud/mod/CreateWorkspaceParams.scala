@@ -2,46 +2,44 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createWorkspace` operation. */
-@js.native
 trait CreateWorkspaceParams extends StObject {
   
   /** An array of objects defining input examples that have been marked as irrelevant input. */
-  var counterexamples: js.UndefOr[js.Array[Counterexample]] = js.native
+  var counterexamples: js.UndefOr[js.Array[Counterexample]] = js.undefined
   
   /** The description of the workspace. This string cannot contain carriage return, newline, or tab characters, and it must be no longer than 128 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** An array of objects describing the dialog nodes in the workspace. */
-  var dialog_nodes: js.UndefOr[js.Array[DialogNode]] = js.native
+  var dialog_nodes: js.UndefOr[js.Array[DialogNode]] = js.undefined
   
   /** An array of objects describing the entities for the workspace. */
-  var entities: js.UndefOr[js.Array[CreateEntity]] = js.native
+  var entities: js.UndefOr[js.Array[CreateEntity]] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** An array of objects defining the intents for the workspace. */
-  var intents: js.UndefOr[js.Array[CreateIntent]] = js.native
+  var intents: js.UndefOr[js.Array[CreateIntent]] = js.undefined
   
   /** The language of the workspace. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** Whether training data from the workspace (including artifacts such as intents and entities) can be used by IBM for general service improvements. `true` indicates that workspace training data is not to be used. */
-  var learning_opt_out: js.UndefOr[Boolean] = js.native
+  var learning_opt_out: js.UndefOr[Boolean] = js.undefined
   
   /** Any metadata related to the workspace. */
-  var metadata: js.UndefOr[js.Object] = js.native
+  var metadata: js.UndefOr[js.Object] = js.undefined
   
   /** The name of the workspace. This string cannot contain carriage return, newline, or tab characters, and it must be no longer than 64 characters. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Global settings for the workspace. */
-  var system_settings: js.UndefOr[WorkspaceSystemSettings] = js.native
+  var system_settings: js.UndefOr[WorkspaceSystemSettings] = js.undefined
 }
 object CreateWorkspaceParams {
   

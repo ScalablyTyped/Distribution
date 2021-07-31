@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Paragraph elements. For more information on document structure, see the guide to extending Google Docs.
   */
 @js.native
-trait FootnoteSection extends Element {
+trait FootnoteSection
+  extends StObject
+     with Element {
   
   def appendParagraph(paragraph: Paragraph): Paragraph = js.native
   def appendParagraph(text: String): Paragraph = js.native

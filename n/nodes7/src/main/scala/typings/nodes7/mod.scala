@@ -5,33 +5,33 @@ import typings.nodes7.nodes7Strings._COMMERR
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("nodes7", JSImport.Namespace)
   @js.native
-  class ^ () extends NodeS7 {
+  class ^ ()
+    extends StObject
+       with NodeS7 {
     def this(opts: Options) = this()
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var localTSAP: js.UndefOr[Double] = js.native
+    var localTSAP: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var rack: js.UndefOr[Double] = js.native
+    var rack: js.UndefOr[Double] = js.undefined
     
-    var remoteTSAP: js.UndefOr[Double] = js.native
+    var remoteTSAP: js.UndefOr[Double] = js.undefined
     
-    var slot: js.UndefOr[Double] = js.native
+    var slot: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ConnectionOptions {
     
@@ -203,7 +203,6 @@ object mod {
     ): Double = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -211,14 +210,14 @@ object mod {
       *
       * This option is global and shared between instances of the NodeS7 class
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, the NodeS7 library will not output anything to the console.
       *
       * This option is global and shared between instances of the NodeS7 class
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

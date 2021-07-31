@@ -5,7 +5,6 @@ import typings.atom.anon.AutoscrollPreserveFolds
 import typings.atom.anon.PreserveFoldsReversed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -46,35 +45,31 @@ trait Selection extends StObject {
   
   /** Copies the current selection to the clipboard. */
   def copy(): Unit = js.native
-  def copy(maintainClipboard: js.UndefOr[scala.Nothing], fullLine: Boolean): Unit = js.native
   def copy(maintainClipboard: Boolean): Unit = js.native
   def copy(maintainClipboard: Boolean, fullLine: Boolean): Unit = js.native
+  def copy(maintainClipboard: Unit, fullLine: Boolean): Unit = js.native
   
   /** Copies the selection to the clipboard and then deletes it. */
   def cut(): Unit = js.native
-  def cut(
-    maintainClipboard: js.UndefOr[scala.Nothing],
-    fullLine: js.UndefOr[scala.Nothing],
-    options: ReadonlyEditOptions
-  ): Unit = js.native
-  def cut(maintainClipboard: js.UndefOr[scala.Nothing], fullLine: Boolean): Unit = js.native
-  def cut(maintainClipboard: js.UndefOr[scala.Nothing], fullLine: Boolean, options: ReadonlyEditOptions): Unit = js.native
   def cut(maintainClipboard: Boolean): Unit = js.native
-  def cut(maintainClipboard: Boolean, fullLine: js.UndefOr[scala.Nothing], options: ReadonlyEditOptions): Unit = js.native
   def cut(maintainClipboard: Boolean, fullLine: Boolean): Unit = js.native
   def cut(maintainClipboard: Boolean, fullLine: Boolean, options: ReadonlyEditOptions): Unit = js.native
+  def cut(maintainClipboard: Boolean, fullLine: Unit, options: ReadonlyEditOptions): Unit = js.native
+  def cut(maintainClipboard: Unit, fullLine: Boolean): Unit = js.native
+  def cut(maintainClipboard: Unit, fullLine: Boolean, options: ReadonlyEditOptions): Unit = js.native
+  def cut(maintainClipboard: Unit, fullLine: Unit, options: ReadonlyEditOptions): Unit = js.native
   
   /** Cuts the selection until the end of the buffer line. */
   def cutToEndOfBufferLine(): Unit = js.native
-  def cutToEndOfBufferLine(maintainClipboard: js.UndefOr[scala.Nothing], options: ReadonlyEditOptions): Unit = js.native
   def cutToEndOfBufferLine(maintainClipboard: Boolean): Unit = js.native
   def cutToEndOfBufferLine(maintainClipboard: Boolean, options: ReadonlyEditOptions): Unit = js.native
+  def cutToEndOfBufferLine(maintainClipboard: Unit, options: ReadonlyEditOptions): Unit = js.native
   
   /** Cuts the selection until the end of the screen line. */
   def cutToEndOfLine(): Unit = js.native
-  def cutToEndOfLine(maintainClipboard: js.UndefOr[scala.Nothing], options: ReadonlyEditOptions): Unit = js.native
   def cutToEndOfLine(maintainClipboard: Boolean): Unit = js.native
   def cutToEndOfLine(maintainClipboard: Boolean, options: ReadonlyEditOptions): Unit = js.native
+  def cutToEndOfLine(maintainClipboard: Unit, options: ReadonlyEditOptions): Unit = js.native
   
   /**
     *  Removes the selection or the next character after the start of the selection
@@ -187,7 +182,7 @@ trait Selection extends StObject {
   // Modifying the selected text
   /** Replaces text at the current selection. */
   def insertText(text: String): Unit = js.native
-  def insertText(text: String, options: TextInsertionOptions with ReadonlyEditOptions): Unit = js.native
+  def insertText(text: String, options: TextInsertionOptions & ReadonlyEditOptions): Unit = js.native
   
   // NOTE: this calls into Range.intersectsWith(), which is one of the few functions
   //   that doesn't take a range-compatible range, despite what the API says.

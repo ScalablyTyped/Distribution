@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatement extends StObject {
   
   /**
     * The statement to negate. You can use any statement that can be nested. See Statement above for details.
     */
-  var statements: js.Array[WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatement] = js.native
+  var statements: js.Array[WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatement]
 }
 object WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatement {
   

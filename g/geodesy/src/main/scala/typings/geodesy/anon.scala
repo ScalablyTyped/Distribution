@@ -3,21 +3,19 @@ package typings.geodesy
 import typings.geodesy.latlonEllipsoidalVincentyMod.LatLonEllipsoidalVincenty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Distance extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var finalBearing: Double = js.native
+    var finalBearing: Double
     
-    var initialBearing: Double = js.native
+    var initialBearing: Double
     
-    var iterations: Double = js.native
+    var iterations: Double
   }
   object Distance {
     
@@ -44,14 +42,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FinalBearing extends StObject {
     
-    var finalBearing: Double = js.native
+    var finalBearing: Double
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var point: LatLonEllipsoidalVincenty = js.native
+    var point: LatLonEllipsoidalVincenty
   }
   object FinalBearing {
     
@@ -75,12 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Lon1 extends StObject {
     
-    var lon1: Double = js.native
+    var lon1: Double
     
-    var lon2: Double = js.native
+    var lon2: Double
   }
   object Lon1 {
     

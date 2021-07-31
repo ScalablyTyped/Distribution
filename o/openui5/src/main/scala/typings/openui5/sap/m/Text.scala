@@ -7,11 +7,12 @@ import typings.std.HTMLElement
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Text extends Control {
+trait Text
+  extends StObject
+     with Control {
   
   /**
     * Binds property <code>text</code> to model data.See {@link sap.ui.base.ManagedObject#bindProperty
@@ -53,9 +54,9 @@ trait Text extends Control {
     * @returns Returns found ellipsis position or undefined
     */
   def clampText(oDomRef: HTMLElement): Double | js.Any = js.native
-  def clampText(oDomRef: HTMLElement, iStartPos: js.UndefOr[scala.Nothing], iEndPos: Double): Double | js.Any = js.native
   def clampText(oDomRef: HTMLElement, iStartPos: Double): Double | js.Any = js.native
   def clampText(oDomRef: HTMLElement, iStartPos: Double, iEndPos: Double): Double | js.Any = js.native
+  def clampText(oDomRef: HTMLElement, iStartPos: Unit, iEndPos: Double): Double | js.Any = js.native
   
   /**
     * Ellipsis(…) text to indicate more text when clampText function is used.Can be overwritten with

@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDocumentRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var DocumentId: ResourceIdType = js.native
+  var DocumentId: ResourceIdType
   
   /**
     * The name of the document.
     */
-  var Name: js.UndefOr[ResourceNameType] = js.native
+  var Name: js.UndefOr[ResourceNameType] = js.undefined
   
   /**
     * The ID of the parent folder.
     */
-  var ParentFolderId: js.UndefOr[ResourceIdType] = js.native
+  var ParentFolderId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The resource state of the document. Only ACTIVE and RECYCLED are supported.
     */
-  var ResourceState: js.UndefOr[ResourceStateType] = js.native
+  var ResourceState: js.UndefOr[ResourceStateType] = js.undefined
 }
 object UpdateDocumentRequest {
   

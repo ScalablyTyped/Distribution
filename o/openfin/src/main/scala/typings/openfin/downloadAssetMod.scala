@@ -2,25 +2,23 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downloadAssetMod {
   
-  @js.native
   trait AppAssetInfo extends StObject {
     
-    var alias: String = js.native
+    var alias: String
     
-    var args: js.UndefOr[String] = js.native
+    var args: js.UndefOr[String] = js.undefined
     
-    var mandatory: js.UndefOr[Boolean] = js.native
+    var mandatory: js.UndefOr[Boolean] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var version: String = js.native
+    var version: String
   }
   object AppAssetInfo {
     
@@ -62,10 +60,9 @@ object downloadAssetMod {
     }
   }
   
-  @js.native
   trait AppAssetRequest extends StObject {
     
-    var alias: String = js.native
+    var alias: String
   }
   object AppAssetRequest {
     
@@ -83,10 +80,9 @@ object downloadAssetMod {
     }
   }
   
-  @js.native
   trait RuntimeDownloadOptions extends StObject {
     
-    var version: String = js.native
+    var version: String
   }
   object RuntimeDownloadOptions {
     
@@ -104,12 +100,11 @@ object downloadAssetMod {
     }
   }
   
-  @js.native
   trait RuntimeDownloadProgress extends StObject {
     
-    var downloadedBytes: Double = js.native
+    var downloadedBytes: Double
     
-    var totalBytes: Double = js.native
+    var totalBytes: Double
   }
   object RuntimeDownloadProgress {
     

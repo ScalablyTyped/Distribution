@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.IClientBlockGetByTransactionIdRequest
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest")
@@ -24,17 +23,19 @@ class ClientBlockGetByTransactionIdRequest ()
 /* static members */
 object ClientBlockGetByTransactionIdRequest {
   
+  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ClientBlockGetByTransactionIdRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientBlockGetByTransactionIdRequest instance
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.create")
-  @js.native
-  def create(): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.create")
-  @js.native
-  def create(properties: IClientBlockGetByTransactionIdRequest): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
+  @scala.inline
+  def create(): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
+  @scala.inline
+  def create(properties: IClientBlockGetByTransactionIdRequest): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
   
   /**
     * Decodes a ClientBlockGetByTransactionIdRequest message from the specified reader or buffer.
@@ -44,18 +45,14 @@ object ClientBlockGetByTransactionIdRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.decode")
-  @js.native
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
   
   /**
     * Decodes a ClientBlockGetByTransactionIdRequest message from the specified reader or buffer, length delimited.
@@ -64,12 +61,10 @@ object ClientBlockGetByTransactionIdRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
   
   /**
     * Encodes the specified ClientBlockGetByTransactionIdRequest message. Does not implicitly {@link ClientBlockGetByTransactionIdRequest.verify|verify} messages.
@@ -77,12 +72,10 @@ object ClientBlockGetByTransactionIdRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.encode")
-  @js.native
-  def encode(message: IClientBlockGetByTransactionIdRequest): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.encode")
-  @js.native
-  def encode(message: IClientBlockGetByTransactionIdRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientBlockGetByTransactionIdRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientBlockGetByTransactionIdRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientBlockGetByTransactionIdRequest message, length delimited. Does not implicitly {@link ClientBlockGetByTransactionIdRequest.verify|verify} messages.
@@ -90,21 +83,18 @@ object ClientBlockGetByTransactionIdRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBlockGetByTransactionIdRequest): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientBlockGetByTransactionIdRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientBlockGetByTransactionIdRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientBlockGetByTransactionIdRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientBlockGetByTransactionIdRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientBlockGetByTransactionIdRequest
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest]
   
   /**
     * Creates a plain object from a ClientBlockGetByTransactionIdRequest message. Also converts values to other types if specified.
@@ -112,22 +102,19 @@ object ClientBlockGetByTransactionIdRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.sawtoothSdk.protobufMod.ClientBlockGetByTransactionIdRequest,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientBlockGetByTransactionIdRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientBlockGetByTransactionIdRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

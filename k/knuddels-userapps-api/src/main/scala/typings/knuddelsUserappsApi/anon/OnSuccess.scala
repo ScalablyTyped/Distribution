@@ -4,21 +4,19 @@ import typings.knuddelsUserappsApi.mod.global.ExternalServerResponse
 import typings.knuddelsUserappsApi.mod.global.Json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnSuccess extends StObject {
   
-  var data: js.UndefOr[Json] = js.native
+  var data: js.UndefOr[Json] = js.undefined
   
   var onFailure: js.UndefOr[
     js.Function2[/* responseData */ String, /* externalServerResponse */ ExternalServerResponse, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onSuccess: js.UndefOr[
     js.Function2[/* responseData */ String, /* externalServerResponse */ ExternalServerResponse, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object OnSuccess {
   

@@ -4,74 +4,74 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureLayerCapabilitiesOperations extends Object {
+trait FeatureLayerCapabilitiesOperations
+  extends StObject
+     with Object {
   
   /**
     * Indicates if new features can be [added](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits) to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsAdd: Boolean = js.native
+  var supportsAdd: Boolean
   
   /**
     * Indicates if values of one or more field values in the layer can be updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsCalculate: Boolean = js.native
+  var supportsCalculate: Boolean
   
   /**
     * Indicates if features can be [deleted](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits) from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsDelete: Boolean = js.native
+  var supportsDelete: Boolean
   
   /**
     * Indicates if features in the layer can be [edited](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsEditing: Boolean = js.native
+  var supportsEditing: Boolean
   
   /**
     * Indicates if features in the layer can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsQuery: Boolean = js.native
+  var supportsQuery: Boolean
   
   /**
     * Indicates if the layer supports [REST API queryAttachments](https://developers.arcgis.com/rest/services-reference/query-attachments-feature-service-layer-.htm) operation, which is supported with hosted feature services at version 10.5 and greater.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsQueryAttachments: Boolean = js.native
+  var supportsQueryAttachments: Boolean
   
   /**
     * Indicates if resized attachments are supported in the feature layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsResizeAttachments: Boolean = js.native
+  var supportsResizeAttachments: Boolean
   
   /**
     * Indicates if features in the layer can be [updated](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsUpdate: Boolean = js.native
+  var supportsUpdate: Boolean
   
   /**
     * Indicates if the layer supports a SQL-92 expression or where clause.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
-  var supportsValidateSql: Boolean = js.native
+  var supportsValidateSql: Boolean
 }
 object FeatureLayerCapabilitiesOperations {
   

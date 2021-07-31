@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagerMessages extends StObject {
   
-  var allPages: js.UndefOr[String] = js.native
+  var allPages: js.UndefOr[String] = js.undefined
   
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[String] = js.native
+  var empty: js.UndefOr[String] = js.undefined
   
-  var first: js.UndefOr[String] = js.native
+  var first: js.UndefOr[String] = js.undefined
   
-  var itemsPerPage: js.UndefOr[String] = js.native
+  var itemsPerPage: js.UndefOr[String] = js.undefined
   
-  var last: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var of: js.UndefOr[String] = js.native
+  var of: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[String] = js.native
+  var refresh: js.UndefOr[String] = js.undefined
 }
 object PagerMessages {
   

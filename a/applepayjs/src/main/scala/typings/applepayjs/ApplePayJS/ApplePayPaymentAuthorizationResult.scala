@@ -2,24 +2,22 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of payment authorization, including status and errors.
   */
-@js.native
 trait ApplePayPaymentAuthorizationResult extends StObject {
   
   /**
     * A list of custom errors to display on the payment sheet.
     */
-  var errors: js.UndefOr[js.Array[ApplePayError]] = js.native
+  var errors: js.UndefOr[js.Array[ApplePayError]] = js.undefined
   
   /**
     * The status code for the authorization result.
     */
-  var status: Double = js.native
+  var status: Double
 }
 object ApplePayPaymentAuthorizationResult {
   

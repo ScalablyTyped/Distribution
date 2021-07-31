@@ -2,35 +2,33 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialLocator extends StObject {
   
   /* unmapped type */
-  var addEventListener: js.Any = js.native
+  var addEventListener: js.Any
   
   /* unmapped type */
-  var createAttachedFrameOfReferenceAtCurrentHeading: js.Any = js.native
+  var createAttachedFrameOfReferenceAtCurrentHeading: js.Any
   
   /* unmapped type */
-  var createStationaryFrameOfReferenceAtCurrentLocation: js.Any = js.native
+  var createStationaryFrameOfReferenceAtCurrentLocation: js.Any
   
   /* unmapped type */
-  var locatability: js.Any = js.native
+  var locatability: js.Any
   
   /* unmapped type */
-  var onlocatabilitychanged: js.Any = js.native
+  var onlocatabilitychanged: js.Any
   
   /* unmapped type */
-  var onpositionaltrackingdeactivating: js.Any = js.native
+  var onpositionaltrackingdeactivating: js.Any
   
   /* unmapped type */
-  var removeEventListener: js.Any = js.native
+  var removeEventListener: js.Any
   
   /* unmapped type */
-  var tryLocateAtTimestamp: js.Any = js.native
+  var tryLocateAtTimestamp: js.Any
 }
 object SpatialLocator {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerConfig extends StObject {
   
   /**
     *  Specifies the configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. 
     */
-  var triggerProperties: js.UndefOr[TriggerProperties] = js.native
+  var triggerProperties: js.UndefOr[TriggerProperties] = js.undefined
   
   /**
     *  Specifies the type of flow trigger. This can be OnDemand, Scheduled, or Event. 
     */
-  var triggerType: TriggerType = js.native
+  var triggerType: TriggerType
 }
 object TriggerConfig {
   

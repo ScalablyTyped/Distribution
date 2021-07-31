@@ -3,24 +3,22 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`max-change`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeSliderMaxChangeEvent extends StObject {
   
-  var oldValue: Double = js.native
+  var oldValue: Double
   
-  var `type`: `max-change` = js.native
+  var `type`: `max-change`
   
-  var value: Double = js.native
+  var value: Double
 }
 object SizeSliderMaxChangeEvent {
   
   @scala.inline
-  def apply(oldValue: Double, `type`: `max-change`, value: Double): SizeSliderMaxChangeEvent = {
+  def apply(oldValue: Double, value: Double): SizeSliderMaxChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("max-change")
     __obj.asInstanceOf[SizeSliderMaxChangeEvent]
   }
   

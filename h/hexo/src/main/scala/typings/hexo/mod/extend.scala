@@ -28,7 +28,6 @@ import typings.minimist.mod.ParsedArgs
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extend {
@@ -43,28 +42,27 @@ object extend {
   }
   object Console {
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * The description of each argument of a console command.
         */
-      var arguments: js.UndefOr[js.Array[Desc]] = js.native
+      var arguments: js.UndefOr[js.Array[Desc]] = js.undefined
       
       /**
         * More detailed information about a console command.
         */
-      var desc: js.UndefOr[String] = js.native
+      var desc: js.UndefOr[String] = js.undefined
       
       /**
         * The description of each option of a console command.
         */
-      var options: js.UndefOr[js.Array[Desc]] = js.native
+      var options: js.UndefOr[js.Array[Desc]] = js.undefined
       
       /**
         * The usage of a console command.
         */
-      var usage: js.UndefOr[String] = js.native
+      var usage: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -110,10 +108,9 @@ object extend {
     }
   }
   
-  @js.native
   trait Deployer extends StObject {
     
-    def register(name: String, fn: js.Function1[/* args */ Config, Unit]): Unit = js.native
+    def register(name: String, fn: js.Function1[/* args */ Config, Unit]): Unit
   }
   object Deployer {
     
@@ -123,11 +120,11 @@ object extend {
       __obj.asInstanceOf[Deployer]
     }
     
-    @js.native
     trait Config
-      extends /* key */ StringDictionary[js.Any] {
+      extends StObject
+         with /* key */ StringDictionary[js.Any] {
       
-      val `type`: js.UndefOr[String] = js.native
+      val `type`: js.UndefOr[String] = js.undefined
     }
     object Config {
       
@@ -160,17 +157,21 @@ object extend {
   trait Filter extends StObject {
     
     def exec(`type`: String): js.Any = js.native
-    def exec(`type`: String, data: js.UndefOr[scala.Nothing], options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
     def exec(`type`: String, data: js.Any): js.Any = js.native
     def exec(`type`: String, data: js.Any, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
+    def exec(`type`: String, data: Unit, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
     
     def execSync(`type`: String): js.Any = js.native
-    def execSync(`type`: String, data: js.UndefOr[scala.Nothing], options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
     def execSync(`type`: String, data: js.Any): js.Any = js.native
     def execSync(`type`: String, data: js.Any, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
+    def execSync(`type`: String, data: Unit, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
     
-    def register(`type`: String, fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, _]): Unit = js.native
-    def register(`type`: String, fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, _], priority: Double): Unit = js.native
+    def register(`type`: String, fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, js.Any]): Unit = js.native
+    def register(
+      `type`: String,
+      fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, js.Any],
+      priority: Double
+    ): Unit = js.native
     /**
       * Executed after generated files and cache are removed with hexo clean command.
       */
@@ -224,9 +225,9 @@ object extend {
       * Executed before generation begins.
       */
     @JSName("register")
-    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ js.Any, _]): Unit = js.native
+    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ js.Any, js.Any]): Unit = js.native
     @JSName("register")
-    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ js.Any, _], priority: Double): Unit = js.native
+    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ js.Any, js.Any], priority: Double): Unit = js.native
     /**
       * Executed before a post is rendered. Refer to post rendering to learn the execution steps.
       */
@@ -271,22 +272,21 @@ object extend {
       priority: Double
     ): Unit = js.native
     
-    def unregister(`type`: String, fn: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def unregister(`type`: String, fn: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   }
   object Filter {
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * Arguments. This must be an array.
         */
-      var args: js.UndefOr[js.Array[_]] = js.native
+      var args: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * `hexo` object.
         */
-      var context: js.UndefOr[Hexo] = js.native
+      var context: js.UndefOr[Hexo] = js.undefined
     }
     object Options {
       
@@ -300,7 +300,7 @@ object extend {
       implicit class OptionsMutableBuilder[Self <: typings.hexo.mod.extend.Filter.Options] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -317,10 +317,9 @@ object extend {
     }
   }
   
-  @js.native
   trait Generator extends StObject {
     
-    def register(name: String, fn: js.Function1[/* locals */ Site, Return | js.Array[Return]]): Unit = js.native
+    def register(name: String, fn: js.Function1[/* locals */ Site, Return | js.Array[Return]]): Unit
   }
   object Generator {
     
@@ -337,20 +336,19 @@ object extend {
       def setRegister(value: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
     
-    @js.native
     trait Return extends StObject {
       
-      var data: js.Any = js.native
+      var data: js.Any
       
       /**
         * Layout. Specify the layouts for rendering. The value can be a string or an array. If it’s ignored then the route will return data directly.
         */
-      var layout: String | js.Array[String] = js.native
+      var layout: String | js.Array[String]
       
       /**
         * Path not including the prefixing `/` .
         */
-      var path: String = js.native
+      var path: String
     }
     object Return {
       
@@ -378,22 +376,21 @@ object extend {
     }
   }
   
-  @js.native
   trait Helper extends StObject {
     
-    def get(name: String): js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    def get(name: String): js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    def list(): StringDictionary[js.Function1[/* repeated */ js.Any, _]] = js.native
+    def list(): StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    def register(name: String, fn: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def register(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any]): Unit
   }
   object Helper {
     
     @scala.inline
     def apply(
-      get: String => js.UndefOr[js.Function1[/* repeated */ js.Any, _]],
-      list: () => StringDictionary[js.Function1[/* repeated */ js.Any, _]],
-      register: (String, js.Function1[/* repeated */ js.Any, _]) => Unit
+      get: String => js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]],
+      list: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
+      register: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit
     ): Helper = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction0(list), register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Helper]
@@ -403,23 +400,22 @@ object extend {
     implicit class HelperMutableBuilder[Self <: Helper] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGet(value: String => js.UndefOr[js.Function1[/* repeated */ js.Any, _]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      def setGet(value: String => js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setList(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, _]]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+      def setList(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setRegister(value: (String, js.Function1[/* repeated */ js.Any, _]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      def setRegister(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait Migrator extends StObject {
     
     def register(
       name: String,
       fn: js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ js.Any, Unit], Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object Migrator {
     
@@ -446,7 +442,7 @@ object extend {
     
     def register(fn: js.Function1[/* file */ File, Unit]): Unit = js.native
     def register(pattern: String, fn: js.Function1[/* file */ File, Unit]): Unit = js.native
-    def register(pattern: js.Function1[/* str */ String, _], fn: js.Function1[/* file */ File, Unit]): Unit = js.native
+    def register(pattern: js.Function1[/* str */ String, js.Any], fn: js.Function1[/* file */ File, Unit]): Unit = js.native
     def register(pattern: RegExp, fn: js.Function1[/* file */ File, Unit]): Unit = js.native
   }
   
@@ -474,18 +470,17 @@ object extend {
     ): Unit = js.native
   }
   
-  @js.native
   trait RendererData extends StObject {
     
     /**
       * File path.
       */
-    val path: js.UndefOr[String] = js.native
+    val path: js.UndefOr[String] = js.undefined
     
     /**
       * File content.
       */
-    val text: String = js.native
+    val text: String
   }
   object RendererData {
     
@@ -524,12 +519,11 @@ object extend {
   }
   object Tag {
     
-    @js.native
     trait Options extends StObject {
       
-      var async: js.UndefOr[Boolean] = js.native
+      var async: js.UndefOr[Boolean] = js.undefined
       
-      var ends: js.UndefOr[Boolean] = js.native
+      var ends: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

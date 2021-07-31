@@ -2,30 +2,23 @@ package typings.requestidlecallback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
-  @JSGlobal("cancel")
-  @js.native
-  def cancel(handle: IdleCallbackHandle): Unit = js.native
+  @scala.inline
+  def cancel(handle: IdleCallbackHandle): Unit = js.Dynamic.global.applyDynamic("cancel")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("cancelIdleCallback")
-  @js.native
-  def cancelIdleCallback(handle: Double): Unit = js.native
+  @scala.inline
+  def cancelIdleCallback(handle: Double): Unit = js.Dynamic.global.applyDynamic("cancelIdleCallback")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("request")
-  @js.native
-  def request(callback: IdleRequestCallback): IdleCallbackHandle = js.native
-  @JSGlobal("request")
-  @js.native
-  def request(callback: IdleRequestCallback, options: IdleRequestOptions): IdleCallbackHandle = js.native
+  @scala.inline
+  def request(callback: IdleRequestCallback): IdleCallbackHandle = js.Dynamic.global.applyDynamic("request")(callback.asInstanceOf[js.Any]).asInstanceOf[IdleCallbackHandle]
+  @scala.inline
+  def request(callback: IdleRequestCallback, options: IdleRequestOptions): IdleCallbackHandle = (js.Dynamic.global.applyDynamic("request")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IdleCallbackHandle]
   
-  @JSGlobal("requestIdleCallback")
-  @js.native
-  def requestIdleCallback(callback: IdleRequestCallback): Double = js.native
-  @JSGlobal("requestIdleCallback")
-  @js.native
-  def requestIdleCallback(callback: IdleRequestCallback, options: IdleRequestOptions): Double = js.native
+  @scala.inline
+  def requestIdleCallback(callback: IdleRequestCallback): Double = js.Dynamic.global.applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def requestIdleCallback(callback: IdleRequestCallback, options: IdleRequestOptions): Double = (js.Dynamic.global.applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

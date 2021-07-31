@@ -10,9 +10,9 @@ Web3 core tools for sub-packages. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 110 |
-| # downloads        | 6046512 |
+| # releases         | 42 |
+| # dependents       | 129 |
+| # downloads        | 7400204 |
 | # stars            | 0 |
 
 ## Links

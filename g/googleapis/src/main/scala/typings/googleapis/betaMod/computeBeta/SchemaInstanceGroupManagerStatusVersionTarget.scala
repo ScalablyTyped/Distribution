@@ -2,10 +2,8 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerStatusVersionTarget extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaInstanceGroupManagerStatusVersionTarget extends StObject {
     * version. Instances&#39; target version are specified by version field on
     * Instance Group Manager.
     */
-  var isReached: js.UndefOr[Boolean] = js.native
+  var isReached: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaInstanceGroupManagerStatusVersionTarget {
   

@@ -12,7 +12,7 @@ An Embeddable Markdown Editor
 | Keywords           | embeddable, markdown, editor |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 738 |
+| # downloads        | 750 |
 | # stars            | 0 |
 
 ## Links

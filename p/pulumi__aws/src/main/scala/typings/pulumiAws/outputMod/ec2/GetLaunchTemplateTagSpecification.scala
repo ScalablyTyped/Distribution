@@ -3,18 +3,16 @@ package typings.pulumiAws.outputMod.ec2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateTagSpecification extends StObject {
   
-  var resourceType: String = js.native
+  var resourceType: String
   
   /**
     * A map of tags, each pair of which must exactly match a pair on the desired Launch Template.
     */
-  var tags: StringDictionary[String] = js.native
+  var tags: StringDictionary[String]
 }
 object GetLaunchTemplateTagSpecification {
   

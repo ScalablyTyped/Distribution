@@ -10,9 +10,9 @@ Bindings for RE2: fast, safe alternative to backtracking regular expression engi
 | ------------------ | :-------------: |
 | Full name          | re2 |
 | Keywords           | RegExp, RegEx, text processing, PCRE alternative |
-| # releases         | 21 |
-| # dependents       | 18 |
-| # downloads        | 848836 |
+| # releases         | 24 |
+| # dependents       | 24 |
+| # downloads        | 5345916 |
 | # stars            | 4 |
 
 ## Links

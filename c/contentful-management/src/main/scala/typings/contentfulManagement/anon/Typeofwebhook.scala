@@ -7,15 +7,13 @@ import typings.contentfulManagement.webhookMod.WebHooks
 import typings.contentfulManagement.webhookMod.WebhookProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofwebhook extends StObject {
   
-  def wrapWebhook(http: AxiosInstance, data: WebhookProps): WebHooks = js.native
+  def wrapWebhook(http: AxiosInstance, data: WebhookProps): WebHooks
   
-  def wrapWebhookCollection(http: AxiosInstance, data: CollectionProp[WebhookProps]): Collection[WebHooks, WebhookProps] = js.native
+  def wrapWebhookCollection(http: AxiosInstance, data: CollectionProp[WebhookProps]): Collection[WebHooks, WebhookProps]
 }
 object Typeofwebhook {
   

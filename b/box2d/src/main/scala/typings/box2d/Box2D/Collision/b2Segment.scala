@@ -3,29 +3,27 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2Segment extends StObject {
   
   /**
     * Extends or clips the segment so that it's ends lie on the boundary of the AABB.
     * @param aabb AABB to extend/clip the segement.
     **/
-  def Extend(aabb: b2AABB): Unit = js.native
+  def Extend(aabb: b2AABB): Unit
   
   /**
     * See Extend, this works on the ending point.
     * @param aabb AABB to extend/clip the ending point.
     **/
-  def ExtendBackward(aabb: b2AABB): Unit = js.native
+  def ExtendBackward(aabb: b2AABB): Unit
   
   /**
     * See Extend, this works on the starting point.
     * @param aabb AABB to extend/clip the starting point.
     **/
-  def ExtendForward(aabb: b2AABB): Unit = js.native
+  def ExtendForward(aabb: b2AABB): Unit
   
   /**
     * Ray cast against this segment with another segment.
@@ -34,17 +32,17 @@ trait b2Segment extends StObject {
     * @param maxLambda a number typically in the range [0,1].
     * @return True if there is an intersection, otherwise false.
     **/
-  def TestSegment(lambda: js.Array[Double], normal: b2Vec2, segment: b2Segment, maxLambda: Double): Boolean = js.native
+  def TestSegment(lambda: js.Array[Double], normal: b2Vec2, segment: b2Segment, maxLambda: Double): Boolean
   
   /**
     * The starting point.
     **/
-  var p1: b2Vec2 = js.native
+  var p1: b2Vec2
   
   /**
     * The ending point.
     **/
-  var p2: b2Vec2 = js.native
+  var p2: b2Vec2
 }
 object b2Segment {
   

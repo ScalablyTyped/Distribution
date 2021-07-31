@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BitmapProperties extends IBitmapProperties
+trait BitmapProperties
+  extends StObject
+     with IBitmapProperties
 object BitmapProperties {
   
   @scala.inline

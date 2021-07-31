@@ -2,12 +2,11 @@ package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "ResolvedPos")
 @js.native
-class ResolvedPos[S /* <: Schema[_, _] */] () extends StObject {
+class ResolvedPos[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
   
   /**
     * The (absolute) position directly after the wrapping node at the
@@ -34,7 +33,7 @@ class ResolvedPos[S /* <: Schema[_, _] */] () extends StObject {
     * node to see if a range into that parent is acceptable.
     */
   def blockRange(): js.UndefOr[NodeRange[S] | Null] = js.native
-  def blockRange(other: js.UndefOr[scala.Nothing], pred: js.Function1[/* p */ ProsemirrorNode[S], Boolean]): js.UndefOr[NodeRange[S] | Null] = js.native
+  def blockRange(other: Unit, pred: js.Function1[/* p */ ProsemirrorNode[S], Boolean]): js.UndefOr[NodeRange[S] | Null] = js.native
   def blockRange(other: ResolvedPos[S]): js.UndefOr[NodeRange[S] | Null] = js.native
   def blockRange(other: ResolvedPos[S], pred: js.Function1[/* p */ ProsemirrorNode[S], Boolean]): js.UndefOr[NodeRange[S] | Null] = js.native
   

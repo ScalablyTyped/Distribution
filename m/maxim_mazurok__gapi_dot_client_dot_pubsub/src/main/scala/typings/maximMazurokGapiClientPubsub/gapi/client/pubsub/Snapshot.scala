@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
   /**
@@ -15,20 +13,20 @@ trait Snapshot extends StObject {
     * example, consider a subscription whose oldest unacked message is 3 days old. If a snapshot is created from this subscription, the snapshot -- which will always capture this
     * 3-day-old backlog as long as the snapshot exists -- will expire in 4 days. The service will refuse to create a snapshot that would expire in less than 1 hour after creation.
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /** See [Creating and managing labels] (https://cloud.google.com/pubsub/docs/labels). */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The name of the snapshot. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The name of the topic from which this snapshot is retaining messages. */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object Snapshot {
   
@@ -51,7 +49,7 @@ object Snapshot {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Snapshot & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

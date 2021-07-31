@@ -4,29 +4,27 @@ import typings.smoothScrollbar.data2dMod.Data2d
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
-  @js.native
   trait ScrollbarPlugin extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    def onDestroy(): Unit = js.native
+    def onDestroy(): Unit
     
-    def onInit(): Unit = js.native
+    def onInit(): Unit
     
-    def onRender(remainMomentum: Data2d): Unit = js.native
+    def onRender(remainMomentum: Data2d): Unit
     
-    def onUpdate(): Unit = js.native
+    def onUpdate(): Unit
     
-    val options: js.Any = js.native
+    val options: js.Any
     
-    val scrollbar: Scrollbar = js.native
+    val scrollbar: Scrollbar
     
-    def transformDelta(delta: Data2d, fromEvent: js.Any): Data2d = js.native
+    def transformDelta(delta: Data2d, fromEvent: js.Any): Data2d
   }
   object ScrollbarPlugin {
     

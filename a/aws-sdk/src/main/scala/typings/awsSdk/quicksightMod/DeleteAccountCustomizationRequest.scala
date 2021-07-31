@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAccountCustomizationRequest extends StObject {
   
   /**
     * The ID for the AWS account that you want to delete QuickSight customizations from in this AWS Region.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The QuickSight namespace that you're deleting the customizations from.
     */
-  var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.native
+  var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.undefined
 }
 object DeleteAccountCustomizationRequest {
   

@@ -11,8 +11,8 @@ Read the progress of a stream
 | Full name          | progress-stream |
 | Keywords           | stream, progress, percentage, percent, download, upload, file, streaming, request, http |
 | # releases         | 0 |
-| # dependents       | 162 |
-| # downloads        | 23720239 |
+| # dependents       | 159 |
+| # downloads        | 27616008 |
 | # stars            | 25 |
 
 ## Links

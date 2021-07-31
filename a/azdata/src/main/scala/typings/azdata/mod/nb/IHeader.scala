@@ -2,21 +2,19 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHeader extends StObject {
   
-  var msg_id: String = js.native
+  var msg_id: String
   
-  var msg_type: String = js.native
+  var msg_type: String
   
-  var session: String = js.native
+  var session: String
   
-  var username: String = js.native
+  var username: String
   
-  var version: String = js.native
+  var version: String
 }
 object IHeader {
   

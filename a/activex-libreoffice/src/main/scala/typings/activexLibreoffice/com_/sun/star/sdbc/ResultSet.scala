@@ -17,7 +17,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,9 +42,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The number, types, and properties of a {@link ResultSet} 's columns are provided by the ResultSetMetaData object returned by the getMetaData method.
   */
-@js.native
 trait ResultSet
-  extends XComponent
+  extends StObject
+     with XComponent
      with XCloseable
      with XPropertySet
      with XWarningsSupplier
@@ -67,31 +66,31 @@ trait ResultSet
     * ** Note: ** By definition, positioned update/delete execution must be done by a different {@link Statement} than the one which generated the {@link
     * ResultSet} being used for positioning. Also, cursor names must be unique within a connection.
     */
-  var CursorName: String = js.native
+  var CursorName: String
   
   /**
     * retrieves the direction for fetching rows from database tables that is the default for result sets generated from this {@link
     * com.sun.star.sdbcx.Statement} object. ;  If this `Statement` object has not set a fetch direction, the return value is implementation-specific.
     */
-  var FetchDirection: Double = js.native
+  var FetchDirection: Double
   
   /**
     * retrieves the number of result set rows that is the default fetch size for result sets generated from this {@link com.sun.star.sdbcx.Statement}
     * object. ;  If this {@link com.sun.star.sdbcx.Statement} object has not set a fetch size, the return value is implementation-specific.
     */
-  var FetchSize: Double = js.native
+  var FetchSize: Double
   
   /**
     * retrieves the result set concurrency.
     * @see com.sun.star.sdbc.ResultSetConcurrency
     */
-  var ResultSetConcurrency: Double = js.native
+  var ResultSetConcurrency: Double
   
   /**
     * determines the result set type.
     * @see com.sun.star.sdbc.ResultSetType
     */
-  var ResultSetType: Double = js.native
+  var ResultSetType: Double
 }
 object ResultSet {
   

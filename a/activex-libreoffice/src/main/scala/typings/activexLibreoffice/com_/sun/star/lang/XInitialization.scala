@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,22 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XSingleComponentFactory.createInstanceWithArgumentsAndContext()} to pass the arguments to the instance. The reason is, that a component may want to
   * return the same instance for the same set of parameters, and it can do so by implementing the factory itself.
   */
-@js.native
-trait XInitialization extends XInterface {
+trait XInitialization
+  extends StObject
+     with XInterface {
   
   /**
     * initializes the object.
     *
     * It should be called directly after the object is created.
     */
-  def initialize(aArguments: SeqEquiv[_]): Unit = js.native
+  def initialize(aArguments: SeqEquiv[js.Any]): Unit
 }
 object XInitialization {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XInitialization = {
@@ -45,6 +45,6 @@ object XInitialization {
   implicit class XInitializationMutableBuilder[Self <: XInitialization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setInitialize(value: SeqEquiv[_] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    def setInitialize(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }
 }

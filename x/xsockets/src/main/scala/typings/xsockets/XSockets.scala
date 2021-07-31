@@ -2,15 +2,13 @@ package typings.xsockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object XSockets {
   
-  @js.native
   trait ConfirmationArgument extends StObject {
     
-    var event: String = js.native
+    var event: String
   }
   object ConfirmationArgument {
     

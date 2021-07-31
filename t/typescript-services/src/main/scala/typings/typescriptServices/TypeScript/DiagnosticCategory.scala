@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait DiagnosticCategory extends StObject
 object DiagnosticCategory extends StObject {
   
   @js.native
-  sealed trait Error extends DiagnosticCategory
+  sealed trait Error
+    extends StObject
+       with DiagnosticCategory
   
   @js.native
-  sealed trait Message extends DiagnosticCategory
+  sealed trait Message
+    extends StObject
+       with DiagnosticCategory
   
   @js.native
-  sealed trait NoPrefix extends DiagnosticCategory
+  sealed trait NoPrefix
+    extends StObject
+       with DiagnosticCategory
   
   @js.native
-  sealed trait Warning extends DiagnosticCategory
+  sealed trait Warning
+    extends StObject
+       with DiagnosticCategory
 }

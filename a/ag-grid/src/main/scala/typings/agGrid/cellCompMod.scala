@@ -15,7 +15,6 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cellCompMod {
@@ -287,22 +286,18 @@ object cellCompMod {
     /* private */ def setupColSpan(): js.Any = js.native
     
     def startEditingIfEnabled(): Unit = js.native
-    def startEditingIfEnabled(
-      keyPress: js.UndefOr[scala.Nothing],
-      charPress: js.UndefOr[scala.Nothing],
-      cellStartedEdit: Boolean
-    ): Unit = js.native
-    def startEditingIfEnabled(keyPress: js.UndefOr[scala.Nothing], charPress: String): Unit = js.native
-    def startEditingIfEnabled(keyPress: js.UndefOr[scala.Nothing], charPress: String, cellStartedEdit: Boolean): Unit = js.native
     def startEditingIfEnabled(keyPress: Double): Unit = js.native
-    def startEditingIfEnabled(keyPress: Double, charPress: js.UndefOr[scala.Nothing], cellStartedEdit: Boolean): Unit = js.native
     def startEditingIfEnabled(keyPress: Double, charPress: String): Unit = js.native
     def startEditingIfEnabled(keyPress: Double, charPress: String, cellStartedEdit: Boolean): Unit = js.native
+    def startEditingIfEnabled(keyPress: Double, charPress: Unit, cellStartedEdit: Boolean): Unit = js.native
+    def startEditingIfEnabled(keyPress: Unit, charPress: String): Unit = js.native
+    def startEditingIfEnabled(keyPress: Unit, charPress: String, cellStartedEdit: Boolean): Unit = js.native
+    def startEditingIfEnabled(keyPress: Unit, charPress: Unit, cellStartedEdit: Boolean): Unit = js.native
     
     def startRowOrCellEdit(): Unit = js.native
-    def startRowOrCellEdit(keyPress: js.UndefOr[scala.Nothing], charPress: String): Unit = js.native
     def startRowOrCellEdit(keyPress: Double): Unit = js.native
     def startRowOrCellEdit(keyPress: Double, charPress: String): Unit = js.native
+    def startRowOrCellEdit(keyPress: Unit, charPress: String): Unit = js.native
     
     def stopEditing(): Unit = js.native
     def stopEditing(cancel: Boolean): Unit = js.native

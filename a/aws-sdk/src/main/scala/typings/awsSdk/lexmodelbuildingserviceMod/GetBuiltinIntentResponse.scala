@@ -2,26 +2,24 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBuiltinIntentResponse extends StObject {
   
   /**
     * The unique identifier for a built-in intent.
     */
-  var signature: js.UndefOr[BuiltinIntentSignature] = js.native
+  var signature: js.UndefOr[BuiltinIntentSignature] = js.undefined
   
   /**
     * An array of BuiltinIntentSlot objects, one entry for each slot type in the intent.
     */
-  var slots: js.UndefOr[BuiltinIntentSlotList] = js.native
+  var slots: js.UndefOr[BuiltinIntentSlotList] = js.undefined
   
   /**
     * A list of locales that the intent supports.
     */
-  var supportedLocales: js.UndefOr[LocaleList] = js.native
+  var supportedLocales: js.UndefOr[LocaleList] = js.undefined
 }
 object GetBuiltinIntentResponse {
   

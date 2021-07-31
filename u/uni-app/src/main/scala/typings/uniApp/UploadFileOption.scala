@@ -5,26 +5,24 @@ import typings.uniApp.uniAppStrings.image
 import typings.uniApp.uniAppStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileOption extends StObject {
   
   /**
     * 结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.undefined
   
   /**
     * 失败的回调函数
     */
-  var fail: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.undefined
   
   /**
     * 要上传文件资源的路径
     */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /**
     * 文件类型，image/video/audio，仅支付宝小程序，且必填。
@@ -32,37 +30,37 @@ trait UploadFileOption extends StObject {
     * - video: 视频
     * - audio: 音频
     */
-  var fileType: js.UndefOr[image | video | audio] = js.native
+  var fileType: js.UndefOr[image | video | audio] = js.undefined
   
   /**
     * 需要上传的文件列表。使用 files 时，filePath 和 name 不生效。仅 5+App 支持
     */
-  var files: js.UndefOr[js.Array[UploadFileOptionFiles]] = js.native
+  var files: js.UndefOr[js.Array[UploadFileOptionFiles]] = js.undefined
   
   /**
     * HTTP 请求中其他额外的 form data
     */
-  var formData: js.UndefOr[js.Any] = js.native
+  var formData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * HTTP 请求 Header, header 中不能设置 Referer
     */
-  var header: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 文件对应的 key , 开发者在服务器端通过这个 key 可以获取到文件二进制内容
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * 成功返回的回调函数
     */
-  var success: js.UndefOr[js.Function1[/* result */ UploadFileSuccessCallbackResult, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ UploadFileSuccessCallbackResult, Unit]] = js.undefined
   
   /**
     * 开发者服务器 url
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object UploadFileOption {
   

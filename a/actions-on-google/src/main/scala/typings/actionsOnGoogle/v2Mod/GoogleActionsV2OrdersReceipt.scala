@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersReceipt extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait GoogleActionsV2OrdersReceipt extends StObject {
     * Note that this field is deprecated. Please pass the field through
     * OrderUpdate.action_order_id instead.
     */
-  var confirmedActionOrderId: js.UndefOr[String] = js.native
+  var confirmedActionOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The user facing id referencing to current order, which will show
@@ -27,7 +25,7 @@ trait GoogleActionsV2OrdersReceipt extends StObject {
     * generate user facing id for an order with a printed receipt / email
     * receipt.
     */
-  var userVisibleOrderId: js.UndefOr[String] = js.native
+  var userVisibleOrderId: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2OrdersReceipt {
   

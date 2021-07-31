@@ -2,17 +2,15 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  var category: String = js.native
+  var category: String
   
-  var color: String = js.native
+  var color: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Category {
   

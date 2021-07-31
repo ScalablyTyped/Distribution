@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactNative.mod.ImageURISource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,18 +15,17 @@ object mod {
   
   type SvgUri = Component[SvgUriProps, js.Object, js.Any]
   
-  @js.native
   trait SvgUriProps extends StObject {
     
     /**
       * Fill color for the svg object
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /**
       * The height of the rendered svg
       */
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Source path for the .svg file
@@ -35,17 +33,17 @@ object mod {
       * e.g. source={require('my-path')}
       * e.g. source={{ur: 'my-path'}}
       */
-    var source: js.UndefOr[ImageURISource] = js.native
+    var source: js.UndefOr[ImageURISource] = js.undefined
     
     /**
       * Direct svg code to render. Similar to inline svg
       */
-    var svgXmlData: js.UndefOr[String] = js.native
+    var svgXmlData: js.UndefOr[String] = js.undefined
     
     /**
       * The width of the rendered svg
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object SvgUriProps {
     

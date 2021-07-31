@@ -2,14 +2,12 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellTower extends StObject {
   
   /** The number of milliseconds since this cell was primary. If age is 0, the `cellId` represents a current measurement. */
-  var age: js.UndefOr[Double] = js.native
+  var age: js.UndefOr[Double] = js.undefined
   
   /**
     * Unique identifier of the cell.
@@ -18,22 +16,22 @@ trait CellTower extends StObject {
     * WCDMA networks use the UTRAN/GERAN Cell Identity (UC-Id), which is a 32-bit value concatenating the Radio Network Controller (RNC)
     * and Cell ID. Specifying only the 16-bit Cell ID value in WCDMA networks may return inaccurate results.
     */
-  var cellId: Double = js.native
+  var cellId: Double
   
   /** The Location Area Code (LAC) for GSM and WCDMA networks. The Network ID (NID) for CDMA networks. */
-  var locationAreaCode: Double = js.native
+  var locationAreaCode: Double
   
   /** The cell tower's Mobile Country Code (MCC). */
-  var mobileCountryCode: Double = js.native
+  var mobileCountryCode: Double
   
   /** The cell tower's Mobile Network Code. This is the MNC for GSM and WCDMA; CDMA uses the System ID (SID). */
-  var mobileNetworkCode: Double = js.native
+  var mobileNetworkCode: Double
   
   /** Radio signal strength measured in dBm. */
-  var signalStrength: js.UndefOr[Double] = js.native
+  var signalStrength: js.UndefOr[Double] = js.undefined
   
   /** The [timing advance](https://en.wikipedia.org/wiki/Timing_advance) value. */
-  var timingAdvance: js.UndefOr[Double] = js.native
+  var timingAdvance: js.UndefOr[Double] = js.undefined
 }
 object CellTower {
   

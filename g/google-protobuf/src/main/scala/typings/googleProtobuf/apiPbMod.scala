@@ -12,7 +12,6 @@ import typings.googleProtobuf.typePbMod.Syntax
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiPbMod {
@@ -22,17 +21,17 @@ object apiPbMod {
   class Api () extends Message {
     
     def addMethods(): Method = js.native
-    def addMethods(value: js.UndefOr[scala.Nothing], index: Double): Method = js.native
+    def addMethods(value: Unit, index: Double): Method = js.native
     def addMethods(value: Method): Method = js.native
     def addMethods(value: Method, index: Double): Method = js.native
     
     def addMixins(): Mixin = js.native
-    def addMixins(value: js.UndefOr[scala.Nothing], index: Double): Mixin = js.native
+    def addMixins(value: Unit, index: Double): Mixin = js.native
     def addMixins(value: Mixin): Mixin = js.native
     def addMixins(value: Mixin, index: Double): Mixin = js.native
     
     def addOptions(): Option = js.native
-    def addOptions(value: js.UndefOr[scala.Nothing], index: Double): Option = js.native
+    def addOptions(value: Unit, index: Double): Option = js.native
     def addOptions(value: Option): Option = js.native
     def addOptions(value: Option, index: Double): Option = js.native
     
@@ -82,13 +81,11 @@ object apiPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Api.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): Api = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Api]
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Api.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: Api, reader: BinaryReader): Api = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: Api, reader: BinaryReader): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Api]
     
     @JSImport("google-protobuf/google/protobuf/api_pb", "Api.extensions")
     @js.native
@@ -103,30 +100,27 @@ object apiPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Api.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: Api, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: Api, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Api.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: Api): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: Api): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var methodsList: js.Array[typings.googleProtobuf.apiPbMod.Method.AsObject] = js.native
+      var methodsList: js.Array[typings.googleProtobuf.apiPbMod.Method.AsObject]
       
-      var mixinsList: js.Array[typings.googleProtobuf.apiPbMod.Mixin.AsObject] = js.native
+      var mixinsList: js.Array[typings.googleProtobuf.apiPbMod.Mixin.AsObject]
       
-      var name: String = js.native
+      var name: String
       
-      var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject] = js.native
+      var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]
       
-      var sourceContext: js.UndefOr[typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject] = js.native
+      var sourceContext: js.UndefOr[typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject] = js.undefined
       
-      var syntax: Syntax = js.native
+      var syntax: Syntax
       
-      var version: String = js.native
+      var version: String
     }
     object AsObject {
       
@@ -187,7 +181,7 @@ object apiPbMod {
   class Method () extends Message {
     
     def addOptions(): Option = js.native
-    def addOptions(value: js.UndefOr[scala.Nothing], index: Double): Option = js.native
+    def addOptions(value: Unit, index: Double): Option = js.native
     def addOptions(value: Option): Option = js.native
     def addOptions(value: Option, index: Double): Option = js.native
     
@@ -228,13 +222,11 @@ object apiPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Method.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): Method = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): Method = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Method]
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Method.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: Method, reader: BinaryReader): Method = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: Method, reader: BinaryReader): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Method]
     
     @JSImport("google-protobuf/google/protobuf/api_pb", "Method.extensions")
     @js.native
@@ -249,30 +241,27 @@ object apiPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Method.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: Method, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: Method, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Method.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: Method): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: Method): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject] = js.native
+      var optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]
       
-      var requestStreaming: Boolean = js.native
+      var requestStreaming: Boolean
       
-      var requestTypeUrl: String = js.native
+      var requestTypeUrl: String
       
-      var responseStreaming: Boolean = js.native
+      var responseStreaming: Boolean
       
-      var responseTypeUrl: String = js.native
+      var responseTypeUrl: String
       
-      var syntax: Syntax = js.native
+      var syntax: Syntax
     }
     object AsObject {
       
@@ -339,13 +328,11 @@ object apiPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): Mixin = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): Mixin = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Mixin]
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: Mixin, reader: BinaryReader): Mixin = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: Mixin, reader: BinaryReader): Mixin = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Mixin]
     
     @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin.extensions")
     @js.native
@@ -360,20 +347,17 @@ object apiPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: Mixin, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: Mixin, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: Mixin): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: Mixin): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var root: String = js.native
+      var root: String
     }
     object AsObject {
       

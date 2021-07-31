@@ -2,41 +2,39 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a LineStyle within a StyleSetting
   */
-@js.native
 trait SchemaLineStyle extends StObject {
   
   /**
     * Color of the line in #RRGGBB format.
     */
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
   /**
     * Column-value, gradient or buckets styler that is used to determine the
     * line color and opacity.
     */
-  var strokeColorStyler: js.UndefOr[SchemaStyleFunction] = js.native
+  var strokeColorStyler: js.UndefOr[SchemaStyleFunction] = js.undefined
   
   /**
     * Opacity of the line : 0.0 (transparent) to 1.0 (opaque).
     */
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Width of the line in pixels.
     */
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Column-value or bucket styler that is used to determine the width of the
     * line.
     */
-  var strokeWeightStyler: js.UndefOr[SchemaStyleFunction] = js.native
+  var strokeWeightStyler: js.UndefOr[SchemaStyleFunction] = js.undefined
 }
 object SchemaLineStyle {
   

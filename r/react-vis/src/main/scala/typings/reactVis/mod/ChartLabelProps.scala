@@ -3,23 +3,21 @@ package typings.reactVis.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLabelProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var includeMargin: js.UndefOr[Boolean] = js.native
+  var includeMargin: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var xPercent: Double = js.native
+  var xPercent: Double
   
-  var yPercent: Double = js.native
+  var yPercent: Double
 }
 object ChartLabelProps {
   

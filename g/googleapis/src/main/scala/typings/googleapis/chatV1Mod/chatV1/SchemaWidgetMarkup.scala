@@ -2,35 +2,33 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A widget is a UI element that presents texts, images, etc.
   */
-@js.native
 trait SchemaWidgetMarkup extends StObject {
   
   /**
     * A list of buttons. Buttons is also oneof data and only one of these
     * fields should be set.
     */
-  var buttons: js.UndefOr[js.Array[SchemaButton]] = js.native
+  var buttons: js.UndefOr[js.Array[SchemaButton]] = js.undefined
   
   /**
     * Display an image in this widget.
     */
-  var image: js.UndefOr[SchemaImage] = js.native
+  var image: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * Display a key value item in this widget.
     */
-  var keyValue: js.UndefOr[SchemaKeyValue] = js.native
+  var keyValue: js.UndefOr[SchemaKeyValue] = js.undefined
   
   /**
     * Display a text paragraph in this widget.
     */
-  var textParagraph: js.UndefOr[SchemaTextParagraph] = js.native
+  var textParagraph: js.UndefOr[SchemaTextParagraph] = js.undefined
 }
 object SchemaWidgetMarkup {
   

@@ -2,33 +2,31 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConformancePackEvaluationResult extends StObject {
   
   /**
     * Supplementary information about how the evaluation determined the compliance. 
     */
-  var Annotation: js.UndefOr[typings.awsSdk.configserviceMod.Annotation] = js.native
+  var Annotation: js.UndefOr[typings.awsSdk.configserviceMod.Annotation] = js.undefined
   
   /**
     * The compliance type. The allowed values are COMPLIANT and NON_COMPLIANT. 
     */
-  var ComplianceType: ConformancePackComplianceType = js.native
+  var ComplianceType: ConformancePackComplianceType
   
   /**
     * The time when AWS Config rule evaluated AWS resource.
     */
-  var ConfigRuleInvokedTime: Date = js.native
+  var ConfigRuleInvokedTime: Date
   
-  var EvaluationResultIdentifier: typings.awsSdk.configserviceMod.EvaluationResultIdentifier = js.native
+  var EvaluationResultIdentifier: typings.awsSdk.configserviceMod.EvaluationResultIdentifier
   
   /**
     * The time when AWS Config recorded the evaluation result. 
     */
-  var ResultRecordedTime: Date = js.native
+  var ResultRecordedTime: Date
 }
 object ConformancePackEvaluationResult {
   

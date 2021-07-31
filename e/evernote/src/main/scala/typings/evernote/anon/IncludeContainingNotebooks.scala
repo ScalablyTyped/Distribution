@@ -4,29 +4,27 @@ import typings.evernote.mod.Types.RelatedContentType
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeContainingNotebooks extends StObject {
   
-  var includeContainingNotebooks: js.UndefOr[Boolean] = js.native
+  var includeContainingNotebooks: js.UndefOr[Boolean] = js.undefined
   
-  var includeDebugInfo: js.UndefOr[Boolean] = js.native
+  var includeDebugInfo: js.UndefOr[Boolean] = js.undefined
   
-  var maxExperts: js.UndefOr[Double] = js.native
+  var maxExperts: js.UndefOr[Double] = js.undefined
   
-  var maxNotebooks: js.UndefOr[Double] = js.native
+  var maxNotebooks: js.UndefOr[Double] = js.undefined
   
-  var maxNotes: js.UndefOr[Double] = js.native
+  var maxNotes: js.UndefOr[Double] = js.undefined
   
-  var maxRelatedContent: js.UndefOr[Double] = js.native
+  var maxRelatedContent: js.UndefOr[Double] = js.undefined
   
-  var maxTags: js.UndefOr[Double] = js.native
+  var maxTags: js.UndefOr[Double] = js.undefined
   
-  var relatedContentTypes: js.UndefOr[Set[RelatedContentType]] = js.native
+  var relatedContentTypes: js.UndefOr[Set[RelatedContentType]] = js.undefined
   
-  var writableNotebooksOnly: js.UndefOr[Boolean] = js.native
+  var writableNotebooksOnly: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeContainingNotebooks {
   

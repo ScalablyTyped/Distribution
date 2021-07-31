@@ -6,207 +6,207 @@ import typings.arcgisJsApi.arcgisJsApiStrings.public
 import typings.arcgisJsApi.arcgisJsApiStrings.shared
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalItemProperties extends LoadableProperties {
+trait PortalItemProperties
+  extends StObject
+     with LoadableProperties {
   
   /**
     * Indicates the level of access to this item: `private`, `shared`, `org`, or `public`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#access)
     */
-  var access: js.UndefOr[`private` | shared | org_ | public] = js.native
+  var access: js.UndefOr[`private` | shared | org_ | public] = js.undefined
   
   /**
     * Information on the source of the item and its copyright status.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#accessInformation)
     */
-  var accessInformation: js.UndefOr[String] = js.native
+  var accessInformation: js.UndefOr[String] = js.undefined
   
   /**
     * Average rating.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#avgRating)
     */
-  var avgRating: js.UndefOr[Double] = js.native
+  var avgRating: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of organization categories that are set on the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#categories)
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The date the item was created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#created)
     */
-  var created: js.UndefOr[DateProperties] = js.native
+  var created: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The item's locale information (language and country).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#culture)
     */
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
   /**
     * The detailed description of the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic extent, or bounding rectangle, of the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#extent)
     */
-  var extent: js.UndefOr[ExtentProperties] = js.native
+  var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * An array of group categories set on the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#groupCategories)
     */
-  var groupCategories: js.UndefOr[js.Array[String]] = js.native
+  var groupCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The unique id for the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#id)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Information on license or restrictions related to the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#licenseInfo)
     */
-  var licenseInfo: js.UndefOr[String] = js.native
+  var licenseInfo: js.UndefOr[String] = js.undefined
   
   /**
     * The date the item was last modified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#modified)
     */
-  var modified: js.UndefOr[DateProperties] = js.native
+  var modified: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The name of the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Number of comments on the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#numComments)
     */
-  var numComments: js.UndefOr[Double] = js.native
+  var numComments: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of ratings on the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#numRatings)
     */
-  var numRatings: js.UndefOr[Double] = js.native
+  var numRatings: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of views on the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#numViews)
     */
-  var numViews: js.UndefOr[Double] = js.native
+  var numViews: js.UndefOr[Double] = js.undefined
   
   /**
     * The username of the user who owns this item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#owner)
     */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the folder in which the owner has stored the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#ownerFolder)
     */
-  var ownerFolder: js.UndefOr[String] = js.native
+  var ownerFolder: js.UndefOr[String] = js.undefined
   
   /**
     * The portal that contains the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#portal)
     */
-  var portal: js.UndefOr[PortalProperties] = js.native
+  var portal: js.UndefOr[PortalProperties] = js.undefined
   
   /**
     * An array of string URLs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#screenshots)
     */
-  var screenshots: js.UndefOr[js.Array[String]] = js.native
+  var screenshots: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The size of the item (in bytes).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#size)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * A summary description of the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#snippet)
     */
-  var snippet: js.UndefOr[String] = js.native
+  var snippet: js.UndefOr[String] = js.undefined
   
   /**
     * The JSON used to create the property values when the `PortalItem` is loaded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.native
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   
   /**
     * User defined tags that describe the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#tags)
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The title for the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The GIS content type of this item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#type)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Type keywords that describe the type of content of this item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#typeKeywords)
     */
-  var typeKeywords: js.UndefOr[js.Array[String]] = js.native
+  var typeKeywords: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The service URL of this item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PortalItemProperties {
   

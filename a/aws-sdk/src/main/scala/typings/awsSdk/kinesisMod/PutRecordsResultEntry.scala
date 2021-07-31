@@ -2,31 +2,29 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRecordsResultEntry extends StObject {
   
   /**
     * The error code for an individual record result. ErrorCodes can be either ProvisionedThroughputExceededException or InternalFailure.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.kinesisMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.kinesisMod.ErrorCode] = js.undefined
   
   /**
     * The error message for an individual record result. An ErrorCode value of ProvisionedThroughputExceededException has an error message that includes the account ID, stream name, and shard ID. An ErrorCode value of InternalFailure has the error message "Internal Service Failure".
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.kinesisMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.kinesisMod.ErrorMessage] = js.undefined
   
   /**
     * The sequence number for an individual record result.
     */
-  var SequenceNumber: js.UndefOr[typings.awsSdk.kinesisMod.SequenceNumber] = js.native
+  var SequenceNumber: js.UndefOr[typings.awsSdk.kinesisMod.SequenceNumber] = js.undefined
   
   /**
     * The shard ID for an individual record result.
     */
-  var ShardId: js.UndefOr[typings.awsSdk.kinesisMod.ShardId] = js.native
+  var ShardId: js.UndefOr[typings.awsSdk.kinesisMod.ShardId] = js.undefined
 }
 object PutRecordsResultEntry {
   

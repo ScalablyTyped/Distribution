@@ -6,23 +6,23 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textFieldAddonMod {
   
   @JSImport("@react-md/form/types/text-field/TextFieldAddon", "TextFieldAddon")
   @js.native
-  val TextFieldAddon: ForwardRefExoticComponent[TextFieldAddonProps with RefAttributes[HTMLSpanElement]] = js.native
+  val TextFieldAddon: ForwardRefExoticComponent[TextFieldAddonProps & RefAttributes[HTMLSpanElement]] = js.native
   
-  @js.native
-  trait TextFieldAddonProps extends HTMLAttributes[HTMLSpanElement] {
+  trait TextFieldAddonProps
+    extends StObject
+       with HTMLAttributes[HTMLSpanElement] {
     
     /**
       * Boolean if the addon should be presentational only and prevent pointer
       * events.
       */
-    var presentational: js.UndefOr[Boolean] = js.native
+    var presentational: js.UndefOr[Boolean] = js.undefined
   }
   object TextFieldAddonProps {
     

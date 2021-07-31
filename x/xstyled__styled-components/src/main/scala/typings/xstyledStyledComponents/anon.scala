@@ -5,24 +5,22 @@ import typings.styledComponents.styledComponentsMod.ServerStyleSheet
 import typings.styledComponents.styledComponentsMod.StylisPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<styled-components.styled-components.StyleSheetManagerProps> */
-  @js.native
   trait ReadonlyStyleSheetManager extends StObject {
     
-    val disableCSSOMInjection: js.UndefOr[Boolean] = js.native
+    val disableCSSOMInjection: js.UndefOr[Boolean] = js.undefined
     
-    val disableVendorPrefixes: js.UndefOr[Boolean] = js.native
+    val disableVendorPrefixes: js.UndefOr[Boolean] = js.undefined
     
-    val sheet: js.UndefOr[ServerStyleSheet] = js.native
+    val sheet: js.UndefOr[ServerStyleSheet] = js.undefined
     
-    val stylisPlugins: js.UndefOr[js.Array[StylisPlugin]] = js.native
+    val stylisPlugins: js.UndefOr[js.Array[StylisPlugin]] = js.undefined
     
-    val target: js.UndefOr[HTMLElement] = js.native
+    val target: js.UndefOr[HTMLElement] = js.undefined
   }
   object ReadonlyStyleSheetManager {
     
@@ -70,10 +68,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: String = js.native
+    var target: String
   }
   object Target {
     

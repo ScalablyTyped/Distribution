@@ -3,17 +3,15 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.IPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICursorState extends StObject {
   
-  var inSelectionMode: Boolean = js.native
+  var inSelectionMode: Boolean
   
-  var position: IPosition = js.native
+  var position: IPosition
   
-  var selectionStart: IPosition = js.native
+  var selectionStart: IPosition
 }
 object ICursorState {
   

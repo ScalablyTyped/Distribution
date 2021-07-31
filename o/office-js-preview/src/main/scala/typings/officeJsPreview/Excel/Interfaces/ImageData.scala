@@ -9,11 +9,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.SVG
 import typings.officeJsPreview.officeJsPreviewStrings.UNKNOWN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `image.toJSON()`. */
-@js.native
 trait ImageData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ImageData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[PictureFormat | UNKNOWN | BMP | JPEG | GIF | PNG | SVG] = js.native
+  var format: js.UndefOr[PictureFormat | UNKNOWN | BMP | JPEG | GIF | PNG | SVG] = js.undefined
   
   /**
     *
@@ -30,7 +28,7 @@ trait ImageData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object ImageData {
   

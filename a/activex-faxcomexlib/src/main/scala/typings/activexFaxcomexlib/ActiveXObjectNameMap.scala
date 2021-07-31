@@ -4,17 +4,15 @@ import typings.activexFaxcomexlib.FAXCOMEXLib.FaxDocument
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("FaxComEx.FaxDocument")
-  var FaxComExDotFaxDocument: FaxDocument = js.native
+  var FaxComExDotFaxDocument: FaxDocument
   
   @JSName("FaxComEx.FaxServer")
-  var FaxComExDotFaxServer: FaxServer = js.native
+  var FaxComExDotFaxServer: FaxServer
 }
 object ActiveXObjectNameMap {
   

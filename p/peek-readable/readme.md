@@ -10,9 +10,9 @@ Read and peek from a readable stream
 | ------------------ | :-------------: |
 | Full name          | peek-readable |
 | Keywords           | readable, buffer, stream, read |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 2665044 |
+| # downloads        | 6531724 |
 | # stars            | 0 |
 
 ## Links

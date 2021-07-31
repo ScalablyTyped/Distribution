@@ -2,24 +2,22 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLTimeRanges extends StObject {
   
   @JSName("MSHTML.HTMLTimeRanges_typekey")
-  var MSHTMLDotHTMLTimeRanges_typekey: HTMLTimeRanges = js.native
+  var MSHTMLDotHTMLTimeRanges_typekey: HTMLTimeRanges
   
-  def end(index: Double): Double = js.native
+  def end(index: Double): Double
   
-  def endDouble(index: Double): Double = js.native
+  def endDouble(index: Double): Double
   
-  val length: Double = js.native
+  val length: Double
   
-  def start(index: Double): Double = js.native
+  def start(index: Double): Double
   
-  def startDouble(index: Double): Double = js.native
+  def startDouble(index: Double): Double
 }
 object HTMLTimeRanges {
   

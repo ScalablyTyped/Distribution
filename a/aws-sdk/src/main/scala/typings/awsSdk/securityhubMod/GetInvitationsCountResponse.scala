@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInvitationsCountResponse extends StObject {
   
   /**
     * The number of all membership invitations sent to this Security Hub member account, not including the currently accepted invitation.
     */
-  var InvitationsCount: js.UndefOr[Integer] = js.native
+  var InvitationsCount: js.UndefOr[Integer] = js.undefined
 }
 object GetInvitationsCountResponse {
   

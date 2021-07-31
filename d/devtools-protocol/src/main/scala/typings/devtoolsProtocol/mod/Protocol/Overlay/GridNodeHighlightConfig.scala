@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridNodeHighlightConfig extends StObject {
   
   /**
     * A descriptor for the highlight appearance.
     */
-  var gridHighlightConfig: GridHighlightConfig = js.native
+  var gridHighlightConfig: GridHighlightConfig
   
   /**
     * Identifier of the node to highlight.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object GridNodeHighlightConfig {
   

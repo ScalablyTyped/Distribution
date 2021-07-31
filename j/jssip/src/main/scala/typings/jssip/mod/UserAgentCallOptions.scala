@@ -8,31 +8,29 @@ import typings.std.RTCConfiguration
 import typings.std.RTCOfferOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentCallOptions extends StObject {
   
-  var anonymous: js.UndefOr[Boolean] = js.native
+  var anonymous: js.UndefOr[Boolean] = js.undefined
   
-  var eventHandlers: js.UndefOr[StringDictionary[js.Function1[/* data */ js.Any, Unit]]] = js.native
+  var eventHandlers: js.UndefOr[StringDictionary[js.Function1[/* data */ js.Any, Unit]]] = js.undefined
   
-  var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+  var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
-  var mediaConstraints: js.UndefOr[MediaStreamConstraints] = js.native
+  var mediaConstraints: js.UndefOr[MediaStreamConstraints] = js.undefined
   
-  var mediaStream: js.UndefOr[MediaStream] = js.native
+  var mediaStream: js.UndefOr[MediaStream] = js.undefined
   
-  var pcConfig: js.UndefOr[RTCConfiguration] = js.native
+  var pcConfig: js.UndefOr[RTCConfiguration] = js.undefined
   
-  var rtcAnswerConstraints: js.UndefOr[RTCAnswerOptions] = js.native
+  var rtcAnswerConstraints: js.UndefOr[RTCAnswerOptions] = js.undefined
   
-  var rtcConstraints: js.UndefOr[js.Any] = js.native
+  var rtcConstraints: js.UndefOr[js.Any] = js.undefined
   
-  var rtcOfferConstraints: js.UndefOr[RTCOfferOptions] = js.native
+  var rtcOfferConstraints: js.UndefOr[RTCOfferOptions] = js.undefined
   
-  var sessionTimersExpires: js.UndefOr[Double] = js.native
+  var sessionTimersExpires: js.UndefOr[Double] = js.undefined
 }
 object UserAgentCallOptions {
   

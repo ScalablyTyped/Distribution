@@ -2,14 +2,12 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "pageContentCollection.toJSON()". */
-@js.native
 trait PageContentCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[PageContentData]] = js.native
+  var items: js.UndefOr[js.Array[PageContentData]] = js.undefined
 }
 object PageContentCollectionData {
   

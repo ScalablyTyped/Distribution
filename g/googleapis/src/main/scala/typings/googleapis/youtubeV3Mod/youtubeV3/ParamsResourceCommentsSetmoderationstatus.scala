@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCommentsSetmoderationstatus extends StandardParameters {
+trait ParamsResourceCommentsSetmoderationstatus
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The banAuthor parameter lets you indicate that you want to automatically
@@ -23,18 +23,18 @@ trait ParamsResourceCommentsSetmoderationstatus extends StandardParameters {
     * parameter value to true to ban the author.  Note: This parameter is only
     * valid if the moderationStatus parameter is also set to rejected.
     */
-  var banAuthor: js.UndefOr[Boolean] = js.native
+  var banAuthor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of IDs that identify
     * the comments for which you are updating the moderation status.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the new moderation status of the specified comments.
     */
-  var moderationStatus: js.UndefOr[String] = js.native
+  var moderationStatus: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCommentsSetmoderationstatus {
   

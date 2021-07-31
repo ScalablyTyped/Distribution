@@ -2,16 +2,14 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetThingRuntimeConfigurationResponse extends StObject {
   
   /**
     * Runtime configuration for a thing.
     */
-  var RuntimeConfiguration: js.UndefOr[typings.awsSdk.greengrassMod.RuntimeConfiguration] = js.native
+  var RuntimeConfiguration: js.UndefOr[typings.awsSdk.greengrassMod.RuntimeConfiguration] = js.undefined
 }
 object GetThingRuntimeConfigurationResponse {
   

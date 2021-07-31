@@ -3,10 +3,8 @@ package typings.fridaGum.ObjC
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassSpec[D, T, S] extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ClassSpec[D, T, S] extends StObject {
     StringDictionary[
       (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Name of the class.
@@ -24,17 +22,17 @@ trait ClassSpec[D, T, S] extends StObject {
     * Omit this if you don’t care about the globally visible name and would like the runtime to auto-generate one
     * for you.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Protocols this class conforms to.
     */
-  var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+  var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
   
   /**
     * Super-class, or `null` to create a new root class. Omit to inherit from `NSObject`.
     */
-  var `super`: js.UndefOr[Object | Null] = js.native
+  var `super`: js.UndefOr[Object | Null] = js.undefined
 }
 object ClassSpec {
   
@@ -45,7 +43,7 @@ object ClassSpec {
   }
   
   @scala.inline
-  implicit class ClassSpecMutableBuilder[Self <: ClassSpec[_, _, _], D, T, S] (val x: Self with (ClassSpec[D, T, S])) extends AnyVal {
+  implicit class ClassSpecMutableBuilder[Self <: ClassSpec[?, ?, ?], D, T, S] (val x: Self & (ClassSpec[D, T, S])) extends AnyVal {
     
     @scala.inline
     def setMethods(

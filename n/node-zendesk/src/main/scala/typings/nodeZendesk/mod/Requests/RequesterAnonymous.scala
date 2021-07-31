@@ -3,17 +3,15 @@ package typings.nodeZendesk.mod.Requests
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequesterAnonymous extends StObject {
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var locale_id: js.UndefOr[ZendeskID] = js.native
+  var locale_id: js.UndefOr[ZendeskID] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object RequesterAnonymous {
   

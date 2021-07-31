@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DealPauseStatus extends StObject {
   
   /** The buyer's reason for pausing, if the buyer paused the deal. */
-  var buyerPauseReason: js.UndefOr[String] = js.native
+  var buyerPauseReason: js.UndefOr[String] = js.undefined
   
   /** The role of the person who first paused this deal. */
-  var firstPausedBy: js.UndefOr[String] = js.native
+  var firstPausedBy: js.UndefOr[String] = js.undefined
   
   /** True, if the buyer has paused the deal unilaterally. */
-  var hasBuyerPaused: js.UndefOr[Boolean] = js.native
+  var hasBuyerPaused: js.UndefOr[Boolean] = js.undefined
   
   /** True, if the seller has paused the deal unilaterally. */
-  var hasSellerPaused: js.UndefOr[Boolean] = js.native
+  var hasSellerPaused: js.UndefOr[Boolean] = js.undefined
   
   /** The seller's reason for pausing, if the seller paused the deal. */
-  var sellerPauseReason: js.UndefOr[String] = js.native
+  var sellerPauseReason: js.UndefOr[String] = js.undefined
 }
 object DealPauseStatus {
   

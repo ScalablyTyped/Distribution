@@ -2,15 +2,13 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVersionNumber extends StObject {
   
-  var LatestVersion: js.UndefOr[LatestSchemaVersionBoolean] = js.native
+  var LatestVersion: js.UndefOr[LatestSchemaVersionBoolean] = js.undefined
   
-  var VersionNumber: js.UndefOr[VersionLongNumber] = js.native
+  var VersionNumber: js.UndefOr[VersionLongNumber] = js.undefined
 }
 object SchemaVersionNumber {
   

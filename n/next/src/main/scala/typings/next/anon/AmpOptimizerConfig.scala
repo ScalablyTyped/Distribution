@@ -5,47 +5,45 @@ import typings.next.apiUtilsMod.ApiPreviewProps
 import typings.next.fontUtilsMod.FontManifest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmpOptimizerConfig extends StObject {
   
-  var ampOptimizerConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var ampOptimizerConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var assetPrefix: js.UndefOr[String] = js.native
+  var assetPrefix: js.UndefOr[String] = js.undefined
   
-  var basePath: String = js.native
+  var basePath: String
   
-  var buildId: String = js.native
+  var buildId: String
   
-  var canonicalBase: String = js.native
+  var canonicalBase: String
   
-  var customServer: js.UndefOr[Boolean] = js.native
+  var customServer: js.UndefOr[Boolean] = js.undefined
   
-  var defaultLocale: js.UndefOr[String] = js.native
+  var defaultLocale: js.UndefOr[String] = js.undefined
   
-  var dev: js.UndefOr[Boolean] = js.native
+  var dev: js.UndefOr[Boolean] = js.undefined
   
-  var fontManifest: FontManifest = js.native
+  var fontManifest: FontManifest
   
-  var generateEtags: Boolean = js.native
+  var generateEtags: Boolean
   
-  var images: String = js.native
+  var images: String
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var locales: js.UndefOr[js.Array[String]] = js.native
+  var locales: js.UndefOr[js.Array[String]] = js.undefined
   
-  var optimizeFonts: Boolean = js.native
+  var optimizeFonts: Boolean
   
-  var optimizeImages: Boolean = js.native
+  var optimizeImages: Boolean
   
-  var poweredByHeader: Boolean = js.native
+  var poweredByHeader: Boolean
   
-  var previewProps: ApiPreviewProps = js.native
+  var previewProps: ApiPreviewProps
   
-  var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object AmpOptimizerConfig {
   

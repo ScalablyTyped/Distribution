@@ -5,33 +5,31 @@ import typings.monacoEditor.monacoEditorStrings.multiline
 import typings.monacoEditor.monacoEditorStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditorFindOptions extends StObject {
   
-  var addExtraSpaceOnTop: js.UndefOr[Boolean] = js.native
+  var addExtraSpaceOnTop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls if Find in Selection flag is turned on in the editor.
     */
-  var autoFindInSelection: js.UndefOr[never | always | multiline] = js.native
+  var autoFindInSelection: js.UndefOr[never | always | multiline] = js.undefined
   
   /**
     * Controls whether the cursor should move to find matches while typing.
     */
-  var cursorMoveOnType: js.UndefOr[Boolean] = js.native
+  var cursorMoveOnType: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls whether the search automatically restarts from the beginning (or the end) when no further matches can be found
     */
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls if we seed search string in the Find Widget with editor selection.
     */
-  var seedSearchStringFromSelection: js.UndefOr[Boolean] = js.native
+  var seedSearchStringFromSelection: js.UndefOr[Boolean] = js.undefined
 }
 object IEditorFindOptions {
   

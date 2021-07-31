@@ -2,32 +2,30 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorObject extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataPath: String = js.native
+  var dataPath: String
   
-  var keyword: String = js.native
+  var keyword: String
   
   // Excluded if messages set to false.
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var params: ErrorParameters = js.native
+  var params: ErrorParameters
   
-  var parentSchema: js.UndefOr[js.Object] = js.native
+  var parentSchema: js.UndefOr[js.Object] = js.undefined
   
   // Added to validation errors of propertyNames keyword schema
-  var propertyName: js.UndefOr[String] = js.native
+  var propertyName: js.UndefOr[String] = js.undefined
   
   // These are added with the `verbose` option.
-  var schema: js.UndefOr[js.Any] = js.native
+  var schema: js.UndefOr[js.Any] = js.undefined
   
-  var schemaPath: String = js.native
+  var schemaPath: String
 }
 object ErrorObject {
   

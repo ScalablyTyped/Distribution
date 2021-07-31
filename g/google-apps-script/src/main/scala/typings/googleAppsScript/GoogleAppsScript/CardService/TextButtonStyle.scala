@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,8 +18,12 @@ sealed trait TextButtonStyle extends StObject
 object TextButtonStyle extends StObject {
   
   @js.native
-  sealed trait FILLED extends TextButtonStyle
+  sealed trait FILLED
+    extends StObject
+       with TextButtonStyle
   
   @js.native
-  sealed trait TEXT extends TextButtonStyle
+  sealed trait TEXT
+    extends StObject
+       with TextButtonStyle
 }

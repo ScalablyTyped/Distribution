@@ -2,56 +2,54 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Product extends StObject {
   
   /**
     * The URL used to activate the product.
     */
-  var ActivationUrl: js.UndefOr[NonEmptyString] = js.native
+  var ActivationUrl: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The categories assigned to the product.
     */
-  var Categories: js.UndefOr[CategoryList] = js.native
+  var Categories: js.UndefOr[CategoryList] = js.undefined
   
   /**
     * The name of the company that provides the product.
     */
-  var CompanyName: js.UndefOr[NonEmptyString] = js.native
+  var CompanyName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A description of the product.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The types of integration that the product supports. Available values are the following.    SEND_FINDINGS_TO_SECURITY_HUB - Indicates that the integration sends findings to Security Hub.    RECEIVE_FINDINGS_FROM_SECURITY_HUB - Indicates that the integration receives findings from Security Hub.  
     */
-  var IntegrationTypes: js.UndefOr[IntegrationTypeList] = js.native
+  var IntegrationTypes: js.UndefOr[IntegrationTypeList] = js.undefined
   
   /**
     * The URL for the page that contains more information about the product.
     */
-  var MarketplaceUrl: js.UndefOr[NonEmptyString] = js.native
+  var MarketplaceUrl: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN assigned to the product.
     */
-  var ProductArn: NonEmptyString = js.native
+  var ProductArn: NonEmptyString
   
   /**
     * The name of the product.
     */
-  var ProductName: js.UndefOr[NonEmptyString] = js.native
+  var ProductName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The resource policy associated with the product.
     */
-  var ProductSubscriptionResourcePolicy: js.UndefOr[NonEmptyString] = js.native
+  var ProductSubscriptionResourcePolicy: js.UndefOr[NonEmptyString] = js.undefined
 }
 object Product {
   

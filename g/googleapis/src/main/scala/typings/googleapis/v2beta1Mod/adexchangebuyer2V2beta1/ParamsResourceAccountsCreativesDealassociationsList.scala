@@ -6,34 +6,34 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsCreativesDealassociationsList extends StandardParameters {
+trait ParamsResourceAccountsCreativesDealassociationsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * The account to list the associations from. Specify "-" to list all
     * creatives the current user has access to.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The creative ID to list the associations from. Specify "-" to list all
     * creatives under the above account.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * Requested page size. Server may return fewer associations than requested.
     * If unspecified, server will pick an appropriate default.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token identifying a page of results the server should return.
@@ -41,7 +41,7 @@ trait ParamsResourceAccountsCreativesDealassociationsList extends StandardParame
     * ListDealAssociationsResponse.next_page_token returned from the previous
     * call to 'ListDealAssociations' method.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * An optional query string to filter deal associations. If no filter is
@@ -53,7 +53,7 @@ trait ParamsResourceAccountsCreativesDealassociationsList extends StandardParame
     * <li>openAuctionStatus:{approved, conditionally_approved, disapproved,
     * not_checked} </ul> Example: 'dealsId=12345 AND dealsStatus:disapproved'
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsCreativesDealassociationsList {
   

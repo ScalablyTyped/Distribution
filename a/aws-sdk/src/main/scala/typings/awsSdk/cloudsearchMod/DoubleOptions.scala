@@ -2,41 +2,39 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleOptions extends StObject {
   
   /**
     * A value to use for the field if the field isn't specified for a document. This can be important if you are using the field in an expression and that field is not present in every document.
     */
-  var DefaultValue: js.UndefOr[Double] = js.native
+  var DefaultValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether facet information can be returned for the field.
     */
-  var FacetEnabled: js.UndefOr[Boolean] = js.native
+  var FacetEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the contents of the field can be returned in the search results.
     */
-  var ReturnEnabled: js.UndefOr[Boolean] = js.native
+  var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the contents of the field are searchable.
     */
-  var SearchEnabled: js.UndefOr[Boolean] = js.native
+  var SearchEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the field can be used to sort the search results.
     */
-  var SortEnabled: js.UndefOr[Boolean] = js.native
+  var SortEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the source field to map to the field. 
     */
-  var SourceField: js.UndefOr[FieldName] = js.native
+  var SourceField: js.UndefOr[FieldName] = js.undefined
 }
 object DoubleOptions {
   

@@ -18,51 +18,53 @@ import typings.passportAzureAd.passportAzureAdStrings.id_token
 import typings.passportAzureAd.passportAzureAdStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oidcStrategyMod {
   
   @JSImport("passport-azure-ad/oidc-strategy", "OIDCStrategy")
   @js.native
-  class OIDCStrategy protected () extends Strategy {
+  class OIDCStrategy protected ()
+    extends StObject
+       with Strategy {
     def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunctionWithReq) = this()
     def this(options: IOIDCStrategyOptionWithoutRequest, verify: VerifyOIDCFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     @JSName("name")
     var name_OIDCStrategy: String = js.native
   }
   
-  @js.native
-  trait IOIDCStrategyOption extends IBaseStrategyOption {
+  trait IOIDCStrategyOption
+    extends StObject
+       with IBaseStrategyOption {
     
-    var allowHttpForRedirectUrl: js.UndefOr[Boolean] = js.native
+    var allowHttpForRedirectUrl: js.UndefOr[Boolean] = js.undefined
     
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
-    var cookieEncryptionKeys: js.UndefOr[js.Array[Iv]] = js.native
+    var cookieEncryptionKeys: js.UndefOr[js.Array[Iv]] = js.undefined
     
-    var cookieSameSite: js.UndefOr[Boolean] = js.native
+    var cookieSameSite: js.UndefOr[Boolean] = js.undefined
     
-    var nonceLifetime: js.UndefOr[Double] = js.native
+    var nonceLifetime: js.UndefOr[Double] = js.undefined
     
-    var nonceMaxAmount: js.UndefOr[Double] = js.native
+    var nonceMaxAmount: js.UndefOr[Double] = js.undefined
     
-    var privatePEMKey: js.UndefOr[String] = js.native
+    var privatePEMKey: js.UndefOr[String] = js.undefined
     
-    var redirectUrl: String = js.native
+    var redirectUrl: String
     
-    var responseMode: query | form_post = js.native
+    var responseMode: query | form_post
     
-    var responseType: code | (`code id_token`) | (`id_token code`) | id_token = js.native
+    var responseType: code | (`code id_token`) | (`id_token code`) | id_token
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var thumbprint: js.UndefOr[String] = js.native
+    var thumbprint: js.UndefOr[String] = js.undefined
     
-    var useCookieInsteadOfSession: js.UndefOr[Boolean] = js.native
+    var useCookieInsteadOfSession: js.UndefOr[Boolean] = js.undefined
   }
   object IOIDCStrategyOption {
     
@@ -158,10 +160,11 @@ object oidcStrategyMod {
     }
   }
   
-  @js.native
-  trait IOIDCStrategyOptionWithRequest extends IOIDCStrategyOption {
+  trait IOIDCStrategyOptionWithRequest
+    extends StObject
+       with IOIDCStrategyOption {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object IOIDCStrategyOptionWithRequest {
     
@@ -169,12 +172,11 @@ object oidcStrategyMod {
     def apply(
       clientID: String,
       identityMetadata: String,
-      passReqToCallback: `true`,
       redirectUrl: String,
       responseMode: query | form_post,
       responseType: code | (`code id_token`) | (`id_token code`) | id_token
     ): IOIDCStrategyOptionWithRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], identityMetadata = identityMetadata.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any], redirectUrl = redirectUrl.asInstanceOf[js.Any], responseMode = responseMode.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], identityMetadata = identityMetadata.asInstanceOf[js.Any], passReqToCallback = true, redirectUrl = redirectUrl.asInstanceOf[js.Any], responseMode = responseMode.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOIDCStrategyOptionWithRequest]
     }
     
@@ -186,10 +188,11 @@ object oidcStrategyMod {
     }
   }
   
-  @js.native
-  trait IOIDCStrategyOptionWithoutRequest extends IOIDCStrategyOption {
+  trait IOIDCStrategyOptionWithoutRequest
+    extends StObject
+       with IOIDCStrategyOption {
     
-    var passReqToCallback: `false` = js.native
+    var passReqToCallback: `false`
   }
   object IOIDCStrategyOptionWithoutRequest {
     
@@ -197,12 +200,11 @@ object oidcStrategyMod {
     def apply(
       clientID: String,
       identityMetadata: String,
-      passReqToCallback: `false`,
       redirectUrl: String,
       responseMode: query | form_post,
       responseType: code | (`code id_token`) | (`id_token code`) | id_token
     ): IOIDCStrategyOptionWithoutRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], identityMetadata = identityMetadata.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any], redirectUrl = redirectUrl.asInstanceOf[js.Any], responseMode = responseMode.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], identityMetadata = identityMetadata.asInstanceOf[js.Any], passReqToCallback = false, redirectUrl = redirectUrl.asInstanceOf[js.Any], responseMode = responseMode.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOIDCStrategyOptionWithoutRequest]
     }
     
@@ -214,24 +216,23 @@ object oidcStrategyMod {
     }
   }
   
-  @js.native
   trait IProfile extends StObject {
     
-    var _json: js.UndefOr[js.Any] = js.native
+    var _json: js.UndefOr[js.Any] = js.undefined
     
-    var _raw: js.UndefOr[String] = js.native
+    var _raw: js.UndefOr[String] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var emails: js.UndefOr[js.Any] = js.native
+    var emails: js.UndefOr[js.Any] = js.undefined
     
-    var name: js.UndefOr[FamilyName] = js.native
+    var name: js.UndefOr[FamilyName] = js.undefined
     
-    var oid: js.UndefOr[String] = js.native
+    var oid: js.UndefOr[String] = js.undefined
     
-    var sub: js.UndefOr[String] = js.native
+    var sub: js.UndefOr[String] = js.undefined
     
-    var upn: js.UndefOr[String] = js.native
+    var upn: js.UndefOr[String] = js.undefined
   }
   object IProfile {
     

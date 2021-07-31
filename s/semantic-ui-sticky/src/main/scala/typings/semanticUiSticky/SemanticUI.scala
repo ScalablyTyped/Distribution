@@ -66,7 +66,6 @@ import typings.semanticUiSticky.semanticUiStickyStrings.silent
 import typings.semanticUiSticky.semanticUiStickyStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -80,51 +79,53 @@ object SemanticUI {
       * recalculates offsets
       */
     def apply(behavior: refresh): JQuery = js.native
-    def apply(behavior: setting, name: bottomOffset, value: js.UndefOr[scala.Nothing]): Double = js.native
     def apply(behavior: setting, name: bottomOffset, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: bottomOffset, value: Unit): Double = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
     def apply(behavior: setting, name: context, value: String): JQuery = js.native
+    def apply(behavior: setting, name: context, value: Unit): `false` | String | JQuery = js.native
     def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
     def apply(behavior: setting, name: context, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: jitter, value: js.UndefOr[scala.Nothing]): Double = js.native
     def apply(behavior: setting, name: jitter, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: jitter, value: Unit): Double = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: observeChanges, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: offset, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: onBottom, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: offset, value: Unit): Double = js.native
     def apply(behavior: setting, name: onBottom, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onReposition, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onBottom, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onReposition, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onScroll, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onReposition, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onScroll, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onStick, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onScroll, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onStick, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTop, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onStick, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onTop, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onUnstick, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onTop, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onUnstick, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onUnstick, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: pushing, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: pushing, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: scrollContext, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: pushing, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: scrollContext, value: String): JQuery = js.native
+    def apply(behavior: setting, name: scrollContext, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: scrollContext, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: setSize, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: setSize, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: setSize, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: StickySettings): JQuery = js.native
     def apply(settings: StickySettings): JQuery = js.native
     
@@ -134,33 +135,32 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'bottom'
           */
-        var bottom: String = js.native
+        var bottom: String
         
         /**
           * @default 'bound'
           */
-        var bound: String = js.native
+        var bound: String
         
         /**
           * @default 'fixed'
           */
-        var fixed: String = js.native
+        var fixed: String
         
         /**
           * @default 'native'
           */
-        var supported: String = js.native
+        var supported: String
         
         /**
           * @default 'top'
           */
-        var top: String = js.native
+        var top: String
       }
       object Impl {
         
@@ -190,39 +190,38 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplbound | PickImplfixed | PickImplsupported | PickImpltop | PickImplbottom) with PartialPickImplkeyofImplBottom
+      type Param = (PickImplbound | PickImplfixed | PickImplsupported | PickImpltop | PickImplbottom) & PartialPickImplkeyofImplBottom
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'Sticky element must be inside a relative container'
           */
-        var container: String = js.native
+        var container: String
         
         /**
           * @default 'Sticky element is larger than its container, cannot create sticky.'
           */
-        var elementSize: String = js.native
+        var elementSize: String
         
         /**
           * @default 'Context specified does not exist'
           */
-        var invalidContext: String = js.native
+        var invalidContext: String
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'Element is hidden, you must call refresh after element becomes visible'
           */
-        var visible: String = js.native
+        var visible: String
       }
       object Impl {
         
@@ -252,14 +251,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplcontainer | PickImplvisible | PickImplmethod | PickImplinvalidContext | PickImplelementSize) with PartialPickImplkeyofImplContainer
+      type Param = (PickImplcontainer | PickImplvisible | PickImplmethod | PickImplinvalidContext | PickImplelementSize) & PartialPickImplkeyofImplContainer
     }
     type ErrorSettings = typings.semanticUiSticky.SemanticUI.Sticky.ErrorSettings.Param
   }
   
   object StickySettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
@@ -267,44 +265,44 @@ object SemanticUI {
         *
         * @default 0
         */
-      var bottomOffset: Double = js.native
+      var bottomOffset: Double
       
       // endregion
       // region DOM Settings
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Context which sticky element should stick to
         *
         * @default false
         */
-      var context: `false` | String | JQuery = js.native
+      var context: `false` | String | JQuery
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Sticky container height will only be set if the difference between heights of container and context is larger than this jitter value.
         *
         * @default 5
         */
-      var jitter: Double = js.native
+      var jitter: Double
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -312,58 +310,58 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Whether any change in context DOM should automatically refresh cached sticky positions
         *
         * @default false
         */
-      var observeChanges: Boolean = js.native
+      var observeChanges: Boolean
       
       /**
         * Offset in pixels from the top of the screen when fixing element to viewport
         *
         * @default 0
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * Callback when element is bound to bottom of parent container
         */
-      def onBottom(): Unit = js.native
+      def onBottom(): Unit
       
       // endregion
       // region Callbacks
       /**
         * Callback when element is repositioned from layout change
         */
-      def onReposition(): Unit = js.native
+      def onReposition(): Unit
       
       /**
         * Callback when requestAnimationFrame fires from scroll handler.
         */
-      def onScroll(): Unit = js.native
+      def onScroll(): Unit
       
       /**
         * Callback when element is fixed to page
         */
-      def onStick(): Unit = js.native
+      def onStick(): Unit
       
       /**
         * Callback when element is bound to top of parent container
         */
-      def onTop(): Unit = js.native
+      def onTop(): Unit
       
       /**
         * Callback when element is unfixed from page
         */
-      def onUnstick(): Unit = js.native
+      def onUnstick(): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // region Sticky Settings
       /**
@@ -371,14 +369,14 @@ object SemanticUI {
         *
         * @default false
         */
-      var pushing: Boolean = js.native
+      var pushing: Boolean
       
       /**
         * Context which sticky should attach onscroll events.
         *
         * @default 'window'
         */
-      var scrollContext: String | JQuery = js.native
+      var scrollContext: String | JQuery
       
       /**
         * Sets size of fixed content to match its width before fixing to screen dynamically.
@@ -387,17 +385,17 @@ object SemanticUI {
         * @default true
         * @since 2.2.11
         */
-      var setSize: Boolean = js.native
+      var setSize: Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -501,7 +499,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplpushing | PickImplsetSize | PickImpljitter | PickImplobserveChanges | PickImplcontext | PickImplscrollContext | PickImploffset | PickImplbottomOffset | PickImplonReposition | PickImplonScroll | PickImplonStick | PickImplonUnstick | PickImplonTop | PickImplonBottom | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplpushing | PickImplsetSize | PickImpljitter | PickImplobserveChanges | PickImplcontext | PickImplscrollContext | PickImploffset | PickImplbottomOffset | PickImplonReposition | PickImplonScroll | PickImplonStick | PickImplonUnstick | PickImplonTop | PickImplonBottom | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/sticky.html#/settings}

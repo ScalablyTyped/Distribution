@@ -8,7 +8,6 @@ import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object revParseMod {
@@ -19,13 +18,15 @@ object revParseMod {
   /* static members */
   object Revparse {
     
-    @JSImport("nodegit/rev-parse", "Revparse.ext")
+    @JSImport("nodegit/rev-parse", "Revparse")
     @js.native
-    def ext(objectOut: Object, referenceOut: Reference, repo: Repository, spec: String): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/rev-parse", "Revparse.single")
-    @js.native
-    def single(repo: Repository, spec: String): js.Promise[Object] = js.native
+    @scala.inline
+    def ext(objectOut: Object, referenceOut: Reference, repo: Repository, spec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ext")(objectOut.asInstanceOf[js.Any], referenceOut.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def single(repo: Repository, spec: String): js.Promise[Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("single")(repo.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Object]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`1`

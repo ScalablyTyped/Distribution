@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait sql extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait sql extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql.html#parseWhereClause)
     */
-  def parseWhereClause(clause: String, fieldsIndex: FieldsIndex): js.Promise[WhereClause] = js.native
+  def parseWhereClause(clause: String, fieldsIndex: FieldsIndex): js.Promise[WhereClause]
 }
 object sql {
   

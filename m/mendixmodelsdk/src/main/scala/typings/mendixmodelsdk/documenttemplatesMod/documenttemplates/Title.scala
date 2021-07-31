@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,8 @@ object Title {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Title.create")
-  @js.native
-  def create(model: IModel): Title = js.native
+  @scala.inline
+  def create(model: IModel): Title = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Title]
   
   /**
     * Creates and returns a new Title instance in the SDK and on the server.
@@ -56,9 +54,8 @@ object Title {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Title.createInDocumentTemplateUnderToplevels")
-  @js.native
-  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): Title = js.native
+  @scala.inline
+  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): Title = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[Title]
   
   /**
     * Creates and returns a new Title instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object Title {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Title.createInDropZoneUnderWidget")
-  @js.native
-  def createInDropZoneUnderWidget(container: DropZone): Title = js.native
+  @scala.inline
+  def createInDropZoneUnderWidget(container: DropZone): Title = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Title]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Title.structureTypeName")

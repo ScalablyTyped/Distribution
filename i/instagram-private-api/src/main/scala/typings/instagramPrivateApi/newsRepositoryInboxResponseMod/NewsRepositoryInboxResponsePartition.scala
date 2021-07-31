@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewsRepositoryInboxResponsePartition extends StObject {
   
-  var time_bucket: NewsRepositoryInboxResponseTimeBucket = js.native
+  var time_bucket: NewsRepositoryInboxResponseTimeBucket
 }
 object NewsRepositoryInboxResponsePartition {
   

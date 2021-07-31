@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorVariableProperties extends VisualVariableProperties {
+trait ColorVariableProperties
+  extends StObject
+     with VisualVariableProperties {
   
   /**
     * Name of the numeric attribute field by which to normalize the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html#normalizationField)
     */
-  var normalizationField: js.UndefOr[String] = js.native
+  var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
     * An array of sequential objects, or stops, that defines a continuous color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html#stops)
     */
-  var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.native
+  var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.undefined
 }
 object ColorVariableProperties {
   

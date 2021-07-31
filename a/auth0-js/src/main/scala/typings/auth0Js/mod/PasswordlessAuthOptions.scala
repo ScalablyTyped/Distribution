@@ -2,19 +2,17 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordlessAuthOptions extends StObject {
   
-  var connection: String = js.native
+  var connection: String
   
-  var email: String = js.native
+  var email: String
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
-  var verificationCode: String = js.native
+  var verificationCode: String
 }
 object PasswordlessAuthOptions {
   

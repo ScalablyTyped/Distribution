@@ -2,16 +2,14 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDBClusterSnapshotMessage extends StObject {
   
   /**
     * The identifier of the cluster snapshot to delete. Constraints: Must be the name of an existing cluster snapshot in the available state.
     */
-  var DBClusterSnapshotIdentifier: String = js.native
+  var DBClusterSnapshotIdentifier: String
 }
 object DeleteDBClusterSnapshotMessage {
   

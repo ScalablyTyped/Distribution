@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.style.HorizontalAlignment
 import typings.activexLibreoffice.com_.sun.star.style.NumberingRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,15 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Depending on the numbering types, the parameters for bullets or bit maps may be ignored. The character style name for the numbering symbol is also
   * ignored.
   */
-@js.native
-trait ChapterNumberingRule extends NumberingRule {
+trait ChapterNumberingRule
+  extends StObject
+     with NumberingRule {
   
   /**
     * contains the name of the paragraph style that marks this heading level.
     *
     * It is necessary that each style name appears only once in the sequence of numbering rules.
     */
-  var HeadingStyleName: String = js.native
+  var HeadingStyleName: String
 }
 object ChapterNumberingRule {
   

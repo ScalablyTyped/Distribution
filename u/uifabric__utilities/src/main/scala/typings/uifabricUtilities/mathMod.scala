@@ -4,32 +4,29 @@ import typings.uifabricUtilities.isizeMod.ISize
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathMod {
   
-  @JSImport("@uifabric/utilities/lib/math", "calculatePrecision")
+  @JSImport("@uifabric/utilities/lib/math", JSImport.Namespace)
   @js.native
-  def calculatePrecision(value: String): Double = js.native
-  @JSImport("@uifabric/utilities/lib/math", "calculatePrecision")
-  @js.native
-  def calculatePrecision(value: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/utilities/lib/math", "fitContentToBounds")
-  @js.native
-  def fitContentToBounds(options: IFitContentToBoundsOptions): ISize = js.native
+  @scala.inline
+  def calculatePrecision(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def calculatePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@uifabric/utilities/lib/math", "getDistanceBetweenPoints")
-  @js.native
-  def getDistanceBetweenPoints(point1: Point, point2: Point): Double = js.native
+  @scala.inline
+  def fitContentToBounds(options: IFitContentToBoundsOptions): ISize = ^.asInstanceOf[js.Dynamic].applyDynamic("fitContentToBounds")(options.asInstanceOf[js.Any]).asInstanceOf[ISize]
   
-  @JSImport("@uifabric/utilities/lib/math", "precisionRound")
-  @js.native
-  def precisionRound(value: Double, precision: Double): Double = js.native
-  @JSImport("@uifabric/utilities/lib/math", "precisionRound")
-  @js.native
-  def precisionRound(value: Double, precision: Double, base: Double): Double = js.native
+  @scala.inline
+  def getDistanceBetweenPoints(point1: Point, point2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def precisionRound(value: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def precisionRound(value: Double, precision: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* Rewritten from type alias, can be one of: 
     - typings.uifabricUtilities.uifabricUtilitiesStrings.contain
@@ -45,30 +42,29 @@ object mathMod {
     def cover: typings.uifabricUtilities.uifabricUtilitiesStrings.cover = "cover".asInstanceOf[typings.uifabricUtilities.uifabricUtilitiesStrings.cover]
   }
   
-  @js.native
   trait IFitContentToBoundsOptions extends StObject {
     
     /**
       * The size of the bounds.
       */
-    var boundsSize: ISize = js.native
+    var boundsSize: ISize
     
     /**
       * The size of the content to fit to the bounds.
       * The output will be proportional to this value.
       */
-    var contentSize: ISize = js.native
+    var contentSize: ISize
     
     /**
       * An optional maximum scale factor to apply. The default is 1.
       * Use Infinity for an unbounded resize.
       */
-    var maxScale: js.UndefOr[Double] = js.native
+    var maxScale: js.UndefOr[Double] = js.undefined
     
     /**
       * The fit mode to apply, either 'contain' or 'cover'.
       */
-    var mode: FitMode = js.native
+    var mode: FitMode
   }
   object IFitContentToBoundsOptions {
     

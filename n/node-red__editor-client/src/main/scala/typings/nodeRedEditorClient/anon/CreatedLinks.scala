@@ -3,27 +3,25 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.edit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatedLinks extends StObject {
   
-  var changes: js.Array[js.Object] = js.native
+  var changes: js.Array[js.Object]
   
-  var createdLinks: js.UndefOr[js.Array[js.Object]] = js.native
+  var createdLinks: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var links: js.UndefOr[js.Array[js.Object]] = js.native
+  var links: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var node: js.Object = js.native
+  var node: js.Object
   
-  var t: edit = js.native
+  var t: edit
 }
 object CreatedLinks {
   
   @scala.inline
-  def apply(changes: js.Array[js.Object], node: js.Object, t: edit): CreatedLinks = {
-    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+  def apply(changes: js.Array[js.Object], node: js.Object): CreatedLinks = {
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], t = "edit")
     __obj.asInstanceOf[CreatedLinks]
   }
   

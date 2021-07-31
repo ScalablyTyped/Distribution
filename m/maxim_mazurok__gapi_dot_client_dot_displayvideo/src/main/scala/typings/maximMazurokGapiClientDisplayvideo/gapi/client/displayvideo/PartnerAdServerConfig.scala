@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartnerAdServerConfig extends StObject {
   
   /** Measurement settings of a partner. */
-  var measurementConfig: js.UndefOr[MeasurementConfig] = js.native
+  var measurementConfig: js.UndefOr[MeasurementConfig] = js.undefined
 }
 object PartnerAdServerConfig {
   

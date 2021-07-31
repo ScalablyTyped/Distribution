@@ -2,17 +2,15 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IControlChannelTriggerResetEventDetails extends StObject {
   
-  var hardwareSlotReset: Boolean = js.native
+  var hardwareSlotReset: Boolean
   
-  var resetReason: ControlChannelTriggerResetReason = js.native
+  var resetReason: ControlChannelTriggerResetReason
   
-  var softwareSlotReset: Boolean = js.native
+  var softwareSlotReset: Boolean
 }
 object IControlChannelTriggerResetEventDetails {
   

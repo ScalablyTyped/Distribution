@@ -3,7 +3,6 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.reduceMod.ReduceTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorflowTfjsBackendWebglStrings {
@@ -19,12 +18,16 @@ object tensorflowTfjsBackendWebglStrings {
   def NHWC: NHWC = "NHWC".asInstanceOf[NHWC]
   
   @js.native
-  sealed trait all extends ReduceTypes
+  sealed trait all
+    extends StObject
+       with ReduceTypes
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait any extends ReduceTypes
+  sealed trait any
+    extends StObject
+       with ReduceTypes
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
@@ -44,17 +47,23 @@ object tensorflowTfjsBackendWebglStrings {
   def imag: imag = "imag".asInstanceOf[imag]
   
   @js.native
-  sealed trait max extends ReduceTypes
+  sealed trait max
+    extends StObject
+       with ReduceTypes
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait mean extends ReduceTypes
+  sealed trait mean
+    extends StObject
+       with ReduceTypes
   @scala.inline
   def mean: mean = "mean".asInstanceOf[mean]
   
   @js.native
-  sealed trait min extends ReduceTypes
+  sealed trait min
+    extends StObject
+       with ReduceTypes
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   
@@ -64,7 +73,9 @@ object tensorflowTfjsBackendWebglStrings {
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
-  sealed trait prod extends ReduceTypes
+  sealed trait prod
+    extends StObject
+       with ReduceTypes
   @scala.inline
   def prod: prod = "prod".asInstanceOf[prod]
   
@@ -79,7 +90,9 @@ object tensorflowTfjsBackendWebglStrings {
   def reflect: reflect = "reflect".asInstanceOf[reflect]
   
   @js.native
-  sealed trait sum extends ReduceTypes
+  sealed trait sum
+    extends StObject
+       with ReduceTypes
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   

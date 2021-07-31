@@ -3,23 +3,21 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableEvents extends StObject {
   
-  var activate: js.UndefOr[DroppableEvent] = js.native
+  var activate: js.UndefOr[DroppableEvent] = js.undefined
   
-  var create: js.UndefOr[DroppableEvent] = js.native
+  var create: js.UndefOr[DroppableEvent] = js.undefined
   
-  var deactivate: js.UndefOr[DroppableEvent] = js.native
+  var deactivate: js.UndefOr[DroppableEvent] = js.undefined
   
-  var drop: js.UndefOr[DroppableEvent] = js.native
+  var drop: js.UndefOr[DroppableEvent] = js.undefined
   
-  var out: js.UndefOr[DroppableEvent] = js.native
+  var out: js.UndefOr[DroppableEvent] = js.undefined
   
-  var over: js.UndefOr[DroppableEvent] = js.native
+  var over: js.UndefOr[DroppableEvent] = js.undefined
 }
 object DroppableEvents {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePresignedPortalUrlRequest extends StObject {
   
   /**
     * The ID of the portal to access.
     */
-  var portalId: ID = js.native
+  var portalId: ID
   
   /**
     * The duration (in seconds) for which the session at the URL is valid. Default: 900 seconds (15 minutes)
     */
-  var sessionDurationSeconds: js.UndefOr[SessionDurationSeconds] = js.native
+  var sessionDurationSeconds: js.UndefOr[SessionDurationSeconds] = js.undefined
 }
 object CreatePresignedPortalUrlRequest {
   

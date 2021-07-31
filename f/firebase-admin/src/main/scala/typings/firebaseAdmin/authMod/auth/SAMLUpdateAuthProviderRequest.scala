@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,50 +9,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when updating a SAML provider's configuration via
   * {@link auth.Auth.updateProviderConfig `updateProviderConfig()`}.
   */
-@js.native
-trait SAMLUpdateAuthProviderRequest extends UpdateAuthProviderRequest {
+trait SAMLUpdateAuthProviderRequest
+  extends StObject
+     with UpdateAuthProviderRequest {
   
   /**
     * The SAML provider's callback URL. If not provided, the existing
     * configuration's value is not modified.
     */
-  var callbackURL: js.UndefOr[String] = js.native
+  var callbackURL: js.UndefOr[String] = js.undefined
   
   /**
     * The SAML provider's updated display name. If not provided, the existing
     * configuration's value is not modified.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the SAML provider is enabled or not. If not provided, the existing
     * configuration's setting is not modified.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The SAML provider's updated IdP entity ID. If not provided, the existing
     * configuration's value is not modified.
     */
-  var idpEntityId: js.UndefOr[String] = js.native
+  var idpEntityId: js.UndefOr[String] = js.undefined
   
   /**
     * The SAML provider's updated RP entity ID. If not provided, the existing
     * configuration's value is not modified.
     */
-  var rpEntityId: js.UndefOr[String] = js.native
+  var rpEntityId: js.UndefOr[String] = js.undefined
   
   /**
     * The SAML provider's updated SSO URL. If not provided, the existing
     * configuration's value is not modified.
     */
-  var ssoURL: js.UndefOr[String] = js.native
+  var ssoURL: js.UndefOr[String] = js.undefined
   
   /**
     * The SAML provider's updated list of X.509 certificated. If not provided, the
     * existing configuration list is not modified.
     */
-  var x509Certificates: js.UndefOr[js.Array[String]] = js.native
+  var x509Certificates: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SAMLUpdateAuthProviderRequest {
   

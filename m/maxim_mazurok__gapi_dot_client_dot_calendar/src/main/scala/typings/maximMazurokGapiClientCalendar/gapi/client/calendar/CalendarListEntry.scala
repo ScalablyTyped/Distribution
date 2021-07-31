@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 import typings.maximMazurokGapiClientCalendar.anon.Notifications
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarListEntry extends StObject {
   
   /**
@@ -16,70 +14,70 @@ trait CalendarListEntry extends StObject {
     * - "writer" - Provides read and write access to the calendar. Private events will appear to users with writer access, and event details will be visible.
     * - "owner" - Provides ownership of the calendar. This role has all of the permissions of the writer role with the additional ability to see and manipulate ACLs.
     */
-  var accessRole: js.UndefOr[String] = js.native
+  var accessRole: js.UndefOr[String] = js.undefined
   
   /**
     * The main color of the calendar in the hexadecimal format "#0088aa". This property supersedes the index-based colorId property. To set or change this property, you need to specify
     * colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * The color of the calendar. This is an ID referring to an entry in the calendar section of the colors definition (see the colors endpoint). This property is superseded by the
     * backgroundColor and foregroundColor properties and can be ignored when using these properties. Optional.
     */
-  var colorId: js.UndefOr[String] = js.native
+  var colorId: js.UndefOr[String] = js.undefined
   
   /** Conferencing properties for this calendar, for example what types of conferences are allowed. */
-  var conferenceProperties: js.UndefOr[ConferenceProperties] = js.native
+  var conferenceProperties: js.UndefOr[ConferenceProperties] = js.undefined
   
   /** The default reminders that the authenticated user has for this calendar. */
-  var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.native
+  var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.undefined
   
   /** Whether this calendar list entry has been deleted from the calendar list. Read-only. Optional. The default is False. */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /** Description of the calendar. Optional. Read-only. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** ETag of the resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The foreground color of the calendar in the hexadecimal format "#ffffff". This property supersedes the index-based colorId property. To set or change this property, you need to
     * specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.
     */
-  var foregroundColor: js.UndefOr[String] = js.native
+  var foregroundColor: js.UndefOr[String] = js.undefined
   
   /** Whether the calendar has been hidden from the list. Optional. The attribute is only returned when the calendar is hidden, in which case the value is true. */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** Identifier of the calendar. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Type of the resource ("calendar#calendarListEntry"). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Geographic location of the calendar as free-form text. Optional. Read-only. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** The notifications that the authenticated user is receiving for this calendar. */
-  var notificationSettings: js.UndefOr[Notifications] = js.native
+  var notificationSettings: js.UndefOr[Notifications] = js.undefined
   
   /** Whether the calendar is the primary calendar of the authenticated user. Read-only. Optional. The default is False. */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the calendar content shows up in the calendar UI. Optional. The default is False. */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /** Title of the calendar. Read-only. */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
   /** The summary that the authenticated user has set for this calendar. Optional. */
-  var summaryOverride: js.UndefOr[String] = js.native
+  var summaryOverride: js.UndefOr[String] = js.undefined
   
   /** The time zone of the calendar. Optional. Read-only. */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object CalendarListEntry {
   

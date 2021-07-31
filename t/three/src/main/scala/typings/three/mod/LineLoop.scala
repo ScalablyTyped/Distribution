@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "LineLoop")
@@ -11,5 +10,5 @@ class LineLoop[TGeometry /* <: typings.three.geometryMod.Geometry | typings.thre
   extends typings.three.lineLoopMod.LineLoop[TGeometry, TMaterial] {
   def this(geometry: TGeometry) = this()
   def this(geometry: TGeometry, material: TMaterial) = this()
-  def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+  def this(geometry: Unit, material: TMaterial) = this()
 }

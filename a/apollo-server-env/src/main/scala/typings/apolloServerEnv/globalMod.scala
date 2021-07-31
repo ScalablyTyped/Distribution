@@ -2,20 +2,22 @@ package typings.apolloServerEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalMod {
   
-  @JSImport("apollo-server-env/dist/global", "fetch")
+  @JSImport("apollo-server-env/dist/global", JSImport.Namespace)
   @js.native
-  def fetch(): js.Promise[Response] = js.native
-  @JSImport("apollo-server-env/dist/global", "fetch")
-  @js.native
-  def fetch(input: js.UndefOr[RequestInfo], init: RequestInit): js.Promise[Response] = js.native
-  @JSImport("apollo-server-env/dist/global", "fetch")
-  @js.native
-  def fetch(input: RequestInfo): js.Promise[Response] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fetch(): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def fetch(input: Unit, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def fetch(input: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
   type Body = typings.apolloServerEnv.fetchMod.Body
   

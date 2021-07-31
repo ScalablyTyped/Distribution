@@ -5,17 +5,14 @@ import typings.std.RegExp
 import typings.xml2js.mod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-xml-bodyparser", JSImport.Namespace)
-  @js.native
-  def apply(): Handler = js.native
-  @JSImport("express-xml-bodyparser", JSImport.Namespace)
-  @js.native
-  def apply(options: ParserOptions): Handler = js.native
+  @scala.inline
+  def apply(): Handler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Handler]
+  @scala.inline
+  def apply(options: ParserOptions): Handler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   @JSImport("express-xml-bodyparser", JSImport.Namespace)
   @js.native

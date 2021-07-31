@@ -2,17 +2,15 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceLocation extends StObject {
   
-  var end: Position = js.native
+  var end: Position
   
-  var source: String = js.native
+  var source: String
   
-  var start: Position = js.native
+  var start: Position
 }
 object SourceLocation {
   

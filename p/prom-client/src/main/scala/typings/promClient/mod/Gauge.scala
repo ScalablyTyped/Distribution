@@ -3,12 +3,13 @@ package typings.promClient.mod
 import typings.promClient.mod.Gauge.Internal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "Gauge")
 @js.native
-class Gauge[T /* <: String */] protected () extends Metric_[T] {
+class Gauge[T /* <: String */] protected ()
+  extends StObject
+     with Metric_[T] {
   /**
   	 * @param configuration Configuration when creating a Gauge metric. Name and Help is mandatory
   	 */

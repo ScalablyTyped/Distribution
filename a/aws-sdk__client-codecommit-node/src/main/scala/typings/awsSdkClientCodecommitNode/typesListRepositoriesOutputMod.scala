@@ -5,29 +5,29 @@ import typings.awsSdkClientCodecommitNode.typesRepositoryNameIdPairMod.Unmarshal
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListRepositoriesOutputMod {
   
-  @js.native
-  trait ListRepositoriesOutput extends OutputTypesUnion {
+  trait ListRepositoriesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An enumeration token that allows the operation to batch the results of the operation. Batch sizes are 1,000 for list repository operations. When the client sends the token back to AWS CodeCommit, another page of 1,000 records is retrieved.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Lists the repositories called by the list repositories operation.</p>
       */
-    var repositories: js.UndefOr[js.Array[UnmarshalledRepositoryNameIdPair]] = js.native
+    var repositories: js.UndefOr[js.Array[UnmarshalledRepositoryNameIdPair]] = js.undefined
   }
   object ListRepositoriesOutput {
     

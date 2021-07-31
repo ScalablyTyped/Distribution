@@ -1,28 +1,36 @@
 package typings.wonderFrp
 
 import typings.wonderFrp.iobserverMod.IObserver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/core/Scheduler", JSImport.Namespace)
-@js.native
-object schedulerMod extends js.Object {
+object schedulerMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/core/Scheduler", "Scheduler")
   @js.native
-  class Scheduler () extends js.Object {
+  class Scheduler () extends StObject {
+    
     var _requestLoopId: js.Any = js.native
-    var requestLoopId: js.Any = js.native
+    
     def publishInterval(observer: IObserver, initial: js.Any, interval: Double, action: js.Function): Double = js.native
+    
     def publishIntervalRequest(observer: IObserver, action: js.Function): Unit = js.native
+    
     def publishRecursive(observer: IObserver, initial: js.Any, action: js.Function): Unit = js.native
+    
     def publishTimeout(observer: IObserver, time: Double, action: js.Function): Double = js.native
+    
+    var requestLoopId: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object Scheduler extends js.Object {
-    def create(args: js.Any*): Scheduler = js.native
+  object Scheduler {
+    
+    @JSImport("wonder-frp/dist/commonjs/core/Scheduler", "Scheduler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(args: js.Any*): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Scheduler]
   }
-  
 }
-

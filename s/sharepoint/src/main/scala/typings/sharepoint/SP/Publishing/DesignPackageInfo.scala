@@ -6,27 +6,27 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DesignPackageInfo extends ClientValueObject {
+trait DesignPackageInfo
+  extends StObject
+     with ClientValueObject {
   
-  def get_majorVersion(): Double = js.native
+  def get_majorVersion(): Double
   
-  def get_minorVersion(): Double = js.native
+  def get_minorVersion(): Double
   
-  def get_packageGuid(): Guid = js.native
+  def get_packageGuid(): Guid
   
-  def get_packageName(): String = js.native
+  def get_packageName(): String
   
-  def set_majorVersion(value: Double): Double = js.native
+  def set_majorVersion(value: Double): Double
   
-  def set_minorVersion(value: Double): Double = js.native
+  def set_minorVersion(value: Double): Double
   
-  def set_packageGuid(value: Guid): Guid = js.native
+  def set_packageGuid(value: Guid): Guid
   
-  def set_packageName(value: String): String = js.native
+  def set_packageName(value: String): String
 }
 object DesignPackageInfo {
   

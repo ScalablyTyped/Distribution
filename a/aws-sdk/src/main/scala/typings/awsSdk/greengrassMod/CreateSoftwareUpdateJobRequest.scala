@@ -2,28 +2,26 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSoftwareUpdateJobRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
     */
-  var AmznClientToken: js.UndefOr[string] = js.native
+  var AmznClientToken: js.UndefOr[string] = js.undefined
   
-  var S3UrlSignerRole: typings.awsSdk.greengrassMod.S3UrlSignerRole = js.native
+  var S3UrlSignerRole: typings.awsSdk.greengrassMod.S3UrlSignerRole
   
-  var SoftwareToUpdate: typings.awsSdk.greengrassMod.SoftwareToUpdate = js.native
+  var SoftwareToUpdate: typings.awsSdk.greengrassMod.SoftwareToUpdate
   
-  var UpdateAgentLogLevel: js.UndefOr[typings.awsSdk.greengrassMod.UpdateAgentLogLevel] = js.native
+  var UpdateAgentLogLevel: js.UndefOr[typings.awsSdk.greengrassMod.UpdateAgentLogLevel] = js.undefined
   
-  var UpdateTargets: typings.awsSdk.greengrassMod.UpdateTargets = js.native
+  var UpdateTargets: typings.awsSdk.greengrassMod.UpdateTargets
   
-  var UpdateTargetsArchitecture: typings.awsSdk.greengrassMod.UpdateTargetsArchitecture = js.native
+  var UpdateTargetsArchitecture: typings.awsSdk.greengrassMod.UpdateTargetsArchitecture
   
-  var UpdateTargetsOperatingSystem: typings.awsSdk.greengrassMod.UpdateTargetsOperatingSystem = js.native
+  var UpdateTargetsOperatingSystem: typings.awsSdk.greengrassMod.UpdateTargetsOperatingSystem
 }
 object CreateSoftwareUpdateJobRequest {
   

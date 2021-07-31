@@ -46,7 +46,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskAgentApiBaseMod {
@@ -132,34 +131,7 @@ object taskAgentApiBaseMod {
     def generateDeploymentMachineGroupAccessToken(project: String, machineGroupId: Double): js.Promise[String] = js.native
     
     def getAgent(poolId: Double, agentId: Double): js.Promise[TaskAgent] = js.native
-    def getAgent(
-      poolId: Double,
-      agentId: Double,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String]
-    ): js.Promise[TaskAgent] = js.native
-    def getAgent(
-      poolId: Double,
-      agentId: Double,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean
-    ): js.Promise[TaskAgent] = js.native
-    def getAgent(
-      poolId: Double,
-      agentId: Double,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.Array[String]
-    ): js.Promise[TaskAgent] = js.native
     def getAgent(poolId: Double, agentId: Double, includeCapabilities: Boolean): js.Promise[TaskAgent] = js.native
-    def getAgent(
-      poolId: Double,
-      agentId: Double,
-      includeCapabilities: Boolean,
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String]
-    ): js.Promise[TaskAgent] = js.native
     def getAgent(poolId: Double, agentId: Double, includeCapabilities: Boolean, includeAssignedRequest: Boolean): js.Promise[TaskAgent] = js.native
     def getAgent(
       poolId: Double,
@@ -168,11 +140,33 @@ object taskAgentApiBaseMod {
       includeAssignedRequest: Boolean,
       propertyFilters: js.Array[String]
     ): js.Promise[TaskAgent] = js.native
+    def getAgent(
+      poolId: Double,
+      agentId: Double,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String]
+    ): js.Promise[TaskAgent] = js.native
+    def getAgent(poolId: Double, agentId: Double, includeCapabilities: Unit, includeAssignedRequest: Boolean): js.Promise[TaskAgent] = js.native
+    def getAgent(
+      poolId: Double,
+      agentId: Double,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Boolean,
+      propertyFilters: js.Array[String]
+    ): js.Promise[TaskAgent] = js.native
+    def getAgent(
+      poolId: Double,
+      agentId: Double,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String]
+    ): js.Promise[TaskAgent] = js.native
     
     def getAgentPool(poolId: Double): js.Promise[TaskAgentPool] = js.native
-    def getAgentPool(poolId: Double, properties: js.UndefOr[scala.Nothing], actionFilter: TaskAgentPoolActionFilter): js.Promise[TaskAgentPool] = js.native
     def getAgentPool(poolId: Double, properties: js.Array[String]): js.Promise[TaskAgentPool] = js.native
     def getAgentPool(poolId: Double, properties: js.Array[String], actionFilter: TaskAgentPoolActionFilter): js.Promise[TaskAgentPool] = js.native
+    def getAgentPool(poolId: Double, properties: Unit, actionFilter: TaskAgentPoolActionFilter): js.Promise[TaskAgentPool] = js.native
     
     def getAgentPoolMaintenanceDefinition(poolId: Double, definitionId: Double): js.Promise[TaskAgentPoolMaintenanceDefinition] = js.native
     
@@ -189,56 +183,12 @@ object taskAgentApiBaseMod {
     def getAgentPoolRoles(poolId: Double): js.Promise[js.Array[IdentityRef]] = js.native
     
     def getAgentPools(): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(
-      poolName: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      poolType: js.UndefOr[scala.Nothing],
-      actionFilter: TaskAgentPoolActionFilter
-    ): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(
-      poolName: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      poolType: TaskAgentPoolType
-    ): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(
-      poolName: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      poolType: TaskAgentPoolType,
-      actionFilter: TaskAgentPoolActionFilter
-    ): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(poolName: js.UndefOr[scala.Nothing], properties: js.Array[String]): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(
-      poolName: js.UndefOr[scala.Nothing],
-      properties: js.Array[String],
-      poolType: js.UndefOr[scala.Nothing],
-      actionFilter: TaskAgentPoolActionFilter
-    ): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(poolName: js.UndefOr[scala.Nothing], properties: js.Array[String], poolType: TaskAgentPoolType): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(
-      poolName: js.UndefOr[scala.Nothing],
-      properties: js.Array[String],
-      poolType: TaskAgentPoolType,
-      actionFilter: TaskAgentPoolActionFilter
-    ): js.Promise[js.Array[TaskAgentPool]] = js.native
     def getAgentPools(poolName: String): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(
-      poolName: String,
-      properties: js.UndefOr[scala.Nothing],
-      poolType: js.UndefOr[scala.Nothing],
-      actionFilter: TaskAgentPoolActionFilter
-    ): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(poolName: String, properties: js.UndefOr[scala.Nothing], poolType: TaskAgentPoolType): js.Promise[js.Array[TaskAgentPool]] = js.native
-    def getAgentPools(
-      poolName: String,
-      properties: js.UndefOr[scala.Nothing],
-      poolType: TaskAgentPoolType,
-      actionFilter: TaskAgentPoolActionFilter
-    ): js.Promise[js.Array[TaskAgentPool]] = js.native
     def getAgentPools(poolName: String, properties: js.Array[String]): js.Promise[js.Array[TaskAgentPool]] = js.native
     def getAgentPools(
       poolName: String,
       properties: js.Array[String],
-      poolType: js.UndefOr[scala.Nothing],
+      poolType: Unit,
       actionFilter: TaskAgentPoolActionFilter
     ): js.Promise[js.Array[TaskAgentPool]] = js.native
     def getAgentPools(poolName: String, properties: js.Array[String], poolType: TaskAgentPoolType): js.Promise[js.Array[TaskAgentPool]] = js.native
@@ -248,27 +198,53 @@ object taskAgentApiBaseMod {
       poolType: TaskAgentPoolType,
       actionFilter: TaskAgentPoolActionFilter
     ): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(poolName: String, properties: Unit, poolType: Unit, actionFilter: TaskAgentPoolActionFilter): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(poolName: String, properties: Unit, poolType: TaskAgentPoolType): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(
+      poolName: String,
+      properties: Unit,
+      poolType: TaskAgentPoolType,
+      actionFilter: TaskAgentPoolActionFilter
+    ): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(poolName: Unit, properties: js.Array[String]): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(
+      poolName: Unit,
+      properties: js.Array[String],
+      poolType: Unit,
+      actionFilter: TaskAgentPoolActionFilter
+    ): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(poolName: Unit, properties: js.Array[String], poolType: TaskAgentPoolType): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(
+      poolName: Unit,
+      properties: js.Array[String],
+      poolType: TaskAgentPoolType,
+      actionFilter: TaskAgentPoolActionFilter
+    ): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(poolName: Unit, properties: Unit, poolType: Unit, actionFilter: TaskAgentPoolActionFilter): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(poolName: Unit, properties: Unit, poolType: TaskAgentPoolType): js.Promise[js.Array[TaskAgentPool]] = js.native
+    def getAgentPools(
+      poolName: Unit,
+      properties: Unit,
+      poolType: TaskAgentPoolType,
+      actionFilter: TaskAgentPoolActionFilter
+    ): js.Promise[js.Array[TaskAgentPool]] = js.native
     
     def getAgentQueue(queueId: Double): js.Promise[TaskAgentQueue] = js.native
-    def getAgentQueue(queueId: Double, project: js.UndefOr[scala.Nothing], actionFilter: TaskAgentQueueActionFilter): js.Promise[TaskAgentQueue] = js.native
     def getAgentQueue(queueId: Double, project: String): js.Promise[TaskAgentQueue] = js.native
     def getAgentQueue(queueId: Double, project: String, actionFilter: TaskAgentQueueActionFilter): js.Promise[TaskAgentQueue] = js.native
+    def getAgentQueue(queueId: Double, project: Unit, actionFilter: TaskAgentQueueActionFilter): js.Promise[TaskAgentQueue] = js.native
     
     def getAgentQueueRoles(): js.Promise[js.Array[IdentityRef]] = js.native
     def getAgentQueueRoles(queueId: Double): js.Promise[js.Array[IdentityRef]] = js.native
     
     def getAgentQueues(): js.Promise[js.Array[TaskAgentQueue]] = js.native
-    def getAgentQueues(
-      project: js.UndefOr[scala.Nothing],
-      queueName: js.UndefOr[scala.Nothing],
-      actionFilter: TaskAgentQueueActionFilter
-    ): js.Promise[js.Array[TaskAgentQueue]] = js.native
-    def getAgentQueues(project: js.UndefOr[scala.Nothing], queueName: String): js.Promise[js.Array[TaskAgentQueue]] = js.native
-    def getAgentQueues(project: js.UndefOr[scala.Nothing], queueName: String, actionFilter: TaskAgentQueueActionFilter): js.Promise[js.Array[TaskAgentQueue]] = js.native
     def getAgentQueues(project: String): js.Promise[js.Array[TaskAgentQueue]] = js.native
-    def getAgentQueues(project: String, queueName: js.UndefOr[scala.Nothing], actionFilter: TaskAgentQueueActionFilter): js.Promise[js.Array[TaskAgentQueue]] = js.native
     def getAgentQueues(project: String, queueName: String): js.Promise[js.Array[TaskAgentQueue]] = js.native
     def getAgentQueues(project: String, queueName: String, actionFilter: TaskAgentQueueActionFilter): js.Promise[js.Array[TaskAgentQueue]] = js.native
+    def getAgentQueues(project: String, queueName: Unit, actionFilter: TaskAgentQueueActionFilter): js.Promise[js.Array[TaskAgentQueue]] = js.native
+    def getAgentQueues(project: Unit, queueName: String): js.Promise[js.Array[TaskAgentQueue]] = js.native
+    def getAgentQueues(project: Unit, queueName: String, actionFilter: TaskAgentQueueActionFilter): js.Promise[js.Array[TaskAgentQueue]] = js.native
+    def getAgentQueues(project: Unit, queueName: Unit, actionFilter: TaskAgentQueueActionFilter): js.Promise[js.Array[TaskAgentQueue]] = js.native
     
     def getAgentRequest(poolId: Double, requestId: Double): js.Promise[TaskAgentJobRequest] = js.native
     
@@ -276,210 +252,22 @@ object taskAgentApiBaseMod {
     def getAgentRequestsForAgent(poolId: Double, agentId: Double, completedRequestCount: Double): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
     
     def getAgentRequestsForAgents(poolId: Double): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
-    def getAgentRequestsForAgents(poolId: Double, agentIds: js.UndefOr[scala.Nothing], completedRequestCount: Double): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
     def getAgentRequestsForAgents(poolId: Double, agentIds: js.Array[Double]): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
     def getAgentRequestsForAgents(poolId: Double, agentIds: js.Array[Double], completedRequestCount: Double): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
+    def getAgentRequestsForAgents(poolId: Double, agentIds: Unit, completedRequestCount: Double): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
     
     def getAgentRequestsForPlan(poolId: Double, planId: String): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
     def getAgentRequestsForPlan(poolId: Double, planId: String, jobId: String): js.Promise[js.Array[TaskAgentJobRequest]] = js.native
     
     def getAgents(poolId: Double): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.Array[String],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(poolId: Double, agentName: js.UndefOr[scala.Nothing], includeCapabilities: Boolean): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: Boolean,
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: Boolean,
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: Boolean,
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: Boolean,
-      includeAssignedRequest: Boolean
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: Boolean,
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: Boolean,
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: js.UndefOr[scala.Nothing],
-      includeCapabilities: Boolean,
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.Array[String],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
     def getAgents(poolId: Double, agentName: String): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: js.UndefOr[scala.Nothing],
-      includeAssignedRequest: Boolean,
-      propertyFilters: js.Array[String],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
     def getAgents(poolId: Double, agentName: String, includeCapabilities: Boolean): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: Boolean,
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: Boolean,
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: Boolean,
-      includeAssignedRequest: js.UndefOr[scala.Nothing],
-      propertyFilters: js.Array[String],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
     def getAgents(poolId: Double, agentName: String, includeCapabilities: Boolean, includeAssignedRequest: Boolean): js.Promise[js.Array[TaskAgent]] = js.native
     def getAgents(
       poolId: Double,
       agentName: String,
       includeCapabilities: Boolean,
       includeAssignedRequest: Boolean,
-      propertyFilters: js.UndefOr[scala.Nothing],
-      demands: js.Array[String]
-    ): js.Promise[js.Array[TaskAgent]] = js.native
-    def getAgents(
-      poolId: Double,
-      agentName: String,
-      includeCapabilities: Boolean,
-      includeAssignedRequest: Boolean,
       propertyFilters: js.Array[String]
     ): js.Promise[js.Array[TaskAgent]] = js.native
     def getAgents(
@@ -490,16 +278,184 @@ object taskAgentApiBaseMod {
       propertyFilters: js.Array[String],
       demands: js.Array[String]
     ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Boolean,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String],
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Unit,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(poolId: Double, agentName: String, includeCapabilities: Unit, includeAssignedRequest: Boolean): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Boolean,
+      propertyFilters: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Boolean,
+      propertyFilters: js.Array[String],
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Boolean,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String],
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: String,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Unit,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(poolId: Double, agentName: Unit, includeCapabilities: Boolean): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(poolId: Double, agentName: Unit, includeCapabilities: Boolean, includeAssignedRequest: Boolean): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Boolean,
+      propertyFilters: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Boolean,
+      propertyFilters: js.Array[String],
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Boolean,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String],
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Boolean,
+      includeAssignedRequest: Unit,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(poolId: Double, agentName: Unit, includeCapabilities: Unit, includeAssignedRequest: Boolean): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Boolean,
+      propertyFilters: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Boolean,
+      propertyFilters: js.Array[String],
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Boolean,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Unit,
+      propertyFilters: js.Array[String],
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
+    def getAgents(
+      poolId: Double,
+      agentName: Unit,
+      includeCapabilities: Unit,
+      includeAssignedRequest: Unit,
+      propertyFilters: Unit,
+      demands: js.Array[String]
+    ): js.Promise[js.Array[TaskAgent]] = js.native
     
     def getAzureSubscriptions(): js.Promise[AzureSubscriptionQueryResult] = js.native
     
     def getDeploymentGroup(project: String, deploymentGroupId: Double): js.Promise[DeploymentGroup] = js.native
-    def getDeploymentGroup(
-      project: String,
-      deploymentGroupId: Double,
-      actionFilter: js.UndefOr[scala.Nothing],
-      expand: DeploymentGroupExpands
-    ): js.Promise[DeploymentGroup] = js.native
+    def getDeploymentGroup(project: String, deploymentGroupId: Double, actionFilter: Unit, expand: DeploymentGroupExpands): js.Promise[DeploymentGroup] = js.native
     def getDeploymentGroup(project: String, deploymentGroupId: Double, actionFilter: DeploymentGroupActionFilter): js.Promise[DeploymentGroup] = js.native
     def getDeploymentGroup(
       project: String,
@@ -509,30 +465,20 @@ object taskAgentApiBaseMod {
     ): js.Promise[DeploymentGroup] = js.native
     
     def getDeploymentGroups(project: String): js.Promise[js.Array[DeploymentGroup]] = js.native
-    def getDeploymentGroups(
-      project: String,
-      name: js.UndefOr[scala.Nothing],
-      actionFilter: js.UndefOr[scala.Nothing],
-      expand: DeploymentGroupExpands
-    ): js.Promise[js.Array[DeploymentGroup]] = js.native
-    def getDeploymentGroups(project: String, name: js.UndefOr[scala.Nothing], actionFilter: DeploymentGroupActionFilter): js.Promise[js.Array[DeploymentGroup]] = js.native
-    def getDeploymentGroups(
-      project: String,
-      name: js.UndefOr[scala.Nothing],
-      actionFilter: DeploymentGroupActionFilter,
-      expand: DeploymentGroupExpands
-    ): js.Promise[js.Array[DeploymentGroup]] = js.native
     def getDeploymentGroups(project: String, name: String): js.Promise[js.Array[DeploymentGroup]] = js.native
-    def getDeploymentGroups(
-      project: String,
-      name: String,
-      actionFilter: js.UndefOr[scala.Nothing],
-      expand: DeploymentGroupExpands
-    ): js.Promise[js.Array[DeploymentGroup]] = js.native
+    def getDeploymentGroups(project: String, name: String, actionFilter: Unit, expand: DeploymentGroupExpands): js.Promise[js.Array[DeploymentGroup]] = js.native
     def getDeploymentGroups(project: String, name: String, actionFilter: DeploymentGroupActionFilter): js.Promise[js.Array[DeploymentGroup]] = js.native
     def getDeploymentGroups(
       project: String,
       name: String,
+      actionFilter: DeploymentGroupActionFilter,
+      expand: DeploymentGroupExpands
+    ): js.Promise[js.Array[DeploymentGroup]] = js.native
+    def getDeploymentGroups(project: String, name: Unit, actionFilter: Unit, expand: DeploymentGroupExpands): js.Promise[js.Array[DeploymentGroup]] = js.native
+    def getDeploymentGroups(project: String, name: Unit, actionFilter: DeploymentGroupActionFilter): js.Promise[js.Array[DeploymentGroup]] = js.native
+    def getDeploymentGroups(
+      project: String,
+      name: Unit,
       actionFilter: DeploymentGroupActionFilter,
       expand: DeploymentGroupExpands
     ): js.Promise[js.Array[DeploymentGroup]] = js.native
@@ -544,13 +490,9 @@ object taskAgentApiBaseMod {
     def getDeploymentMachineGroupMachines(project: String, machineGroupId: Double, tagFilters: js.Array[String]): js.Promise[js.Array[DeploymentMachine]] = js.native
     
     def getDeploymentMachineGroups(project: String): js.Promise[js.Array[DeploymentMachineGroup]] = js.native
-    def getDeploymentMachineGroups(
-      project: String,
-      machineGroupName: js.UndefOr[scala.Nothing],
-      actionFilter: MachineGroupActionFilter
-    ): js.Promise[js.Array[DeploymentMachineGroup]] = js.native
     def getDeploymentMachineGroups(project: String, machineGroupName: String): js.Promise[js.Array[DeploymentMachineGroup]] = js.native
     def getDeploymentMachineGroups(project: String, machineGroupName: String, actionFilter: MachineGroupActionFilter): js.Promise[js.Array[DeploymentMachineGroup]] = js.native
+    def getDeploymentMachineGroups(project: String, machineGroupName: Unit, actionFilter: MachineGroupActionFilter): js.Promise[js.Array[DeploymentMachineGroup]] = js.native
     
     def getDeploymentMachines(project: String, deploymentGroupId: Double): js.Promise[js.Array[DeploymentMachine]] = js.native
     def getDeploymentMachines(project: String, deploymentGroupId: Double, tags: js.Array[String]): js.Promise[js.Array[DeploymentMachine]] = js.native
@@ -561,43 +503,43 @@ object taskAgentApiBaseMod {
     def getPackage(packageType: String, platform: String, version: String): js.Promise[PackageMetadata] = js.native
     
     def getPackages(): js.Promise[js.Array[PackageMetadata]] = js.native
-    def getPackages(packageType: js.UndefOr[scala.Nothing], platform: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[PackageMetadata]] = js.native
-    def getPackages(packageType: js.UndefOr[scala.Nothing], platform: String): js.Promise[js.Array[PackageMetadata]] = js.native
-    def getPackages(packageType: js.UndefOr[scala.Nothing], platform: String, top: Double): js.Promise[js.Array[PackageMetadata]] = js.native
     def getPackages(packageType: String): js.Promise[js.Array[PackageMetadata]] = js.native
-    def getPackages(packageType: String, platform: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[PackageMetadata]] = js.native
     def getPackages(packageType: String, platform: String): js.Promise[js.Array[PackageMetadata]] = js.native
     def getPackages(packageType: String, platform: String, top: Double): js.Promise[js.Array[PackageMetadata]] = js.native
+    def getPackages(packageType: String, platform: Unit, top: Double): js.Promise[js.Array[PackageMetadata]] = js.native
+    def getPackages(packageType: Unit, platform: String): js.Promise[js.Array[PackageMetadata]] = js.native
+    def getPackages(packageType: Unit, platform: String, top: Double): js.Promise[js.Array[PackageMetadata]] = js.native
+    def getPackages(packageType: Unit, platform: Unit, top: Double): js.Promise[js.Array[PackageMetadata]] = js.native
     
     def getSecureFile(project: String, secureFileId: String): js.Promise[SecureFile] = js.native
     def getSecureFile(project: String, secureFileId: String, includeDownloadTicket: Boolean): js.Promise[SecureFile] = js.native
     
     def getSecureFiles(project: String): js.Promise[js.Array[SecureFile]] = js.native
-    def getSecureFiles(
-      project: String,
-      namePattern: js.UndefOr[scala.Nothing],
-      includeDownloadTickets: js.UndefOr[scala.Nothing],
-      actionFilter: SecureFileActionFilter
-    ): js.Promise[js.Array[SecureFile]] = js.native
-    def getSecureFiles(project: String, namePattern: js.UndefOr[scala.Nothing], includeDownloadTickets: Boolean): js.Promise[js.Array[SecureFile]] = js.native
-    def getSecureFiles(
-      project: String,
-      namePattern: js.UndefOr[scala.Nothing],
-      includeDownloadTickets: Boolean,
-      actionFilter: SecureFileActionFilter
-    ): js.Promise[js.Array[SecureFile]] = js.native
     def getSecureFiles(project: String, namePattern: String): js.Promise[js.Array[SecureFile]] = js.native
-    def getSecureFiles(
-      project: String,
-      namePattern: String,
-      includeDownloadTickets: js.UndefOr[scala.Nothing],
-      actionFilter: SecureFileActionFilter
-    ): js.Promise[js.Array[SecureFile]] = js.native
     def getSecureFiles(project: String, namePattern: String, includeDownloadTickets: Boolean): js.Promise[js.Array[SecureFile]] = js.native
     def getSecureFiles(
       project: String,
       namePattern: String,
       includeDownloadTickets: Boolean,
+      actionFilter: SecureFileActionFilter
+    ): js.Promise[js.Array[SecureFile]] = js.native
+    def getSecureFiles(
+      project: String,
+      namePattern: String,
+      includeDownloadTickets: Unit,
+      actionFilter: SecureFileActionFilter
+    ): js.Promise[js.Array[SecureFile]] = js.native
+    def getSecureFiles(project: String, namePattern: Unit, includeDownloadTickets: Boolean): js.Promise[js.Array[SecureFile]] = js.native
+    def getSecureFiles(
+      project: String,
+      namePattern: Unit,
+      includeDownloadTickets: Boolean,
+      actionFilter: SecureFileActionFilter
+    ): js.Promise[js.Array[SecureFile]] = js.native
+    def getSecureFiles(
+      project: String,
+      namePattern: Unit,
+      includeDownloadTickets: Unit,
       actionFilter: SecureFileActionFilter
     ): js.Promise[js.Array[SecureFile]] = js.native
     
@@ -607,81 +549,13 @@ object taskAgentApiBaseMod {
     def getServiceEndpointDetails(project: String, endpointId: String): js.Promise[ServiceEndpoint] = js.native
     
     def getServiceEndpointTypes(): js.Promise[js.Array[ServiceEndpointType]] = js.native
-    def getServiceEndpointTypes(`type`: js.UndefOr[scala.Nothing], scheme: String): js.Promise[js.Array[ServiceEndpointType]] = js.native
     def getServiceEndpointTypes(`type`: String): js.Promise[js.Array[ServiceEndpointType]] = js.native
     def getServiceEndpointTypes(`type`: String, scheme: String): js.Promise[js.Array[ServiceEndpointType]] = js.native
+    def getServiceEndpointTypes(`type`: Unit, scheme: String): js.Promise[js.Array[ServiceEndpointType]] = js.native
     
     def getServiceEndpoints(project: String): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: js.UndefOr[scala.Nothing],
-      authSchemes: js.UndefOr[scala.Nothing],
-      endpointIds: js.UndefOr[scala.Nothing],
-      includeFailed: Boolean
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: js.UndefOr[scala.Nothing],
-      authSchemes: js.UndefOr[scala.Nothing],
-      endpointIds: js.Array[String]
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: js.UndefOr[scala.Nothing],
-      authSchemes: js.UndefOr[scala.Nothing],
-      endpointIds: js.Array[String],
-      includeFailed: Boolean
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(project: String, `type`: js.UndefOr[scala.Nothing], authSchemes: js.Array[String]): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: js.UndefOr[scala.Nothing],
-      authSchemes: js.Array[String],
-      endpointIds: js.UndefOr[scala.Nothing],
-      includeFailed: Boolean
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: js.UndefOr[scala.Nothing],
-      authSchemes: js.Array[String],
-      endpointIds: js.Array[String]
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: js.UndefOr[scala.Nothing],
-      authSchemes: js.Array[String],
-      endpointIds: js.Array[String],
-      includeFailed: Boolean
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
     def getServiceEndpoints(project: String, `type`: String): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: String,
-      authSchemes: js.UndefOr[scala.Nothing],
-      endpointIds: js.UndefOr[scala.Nothing],
-      includeFailed: Boolean
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: String,
-      authSchemes: js.UndefOr[scala.Nothing],
-      endpointIds: js.Array[String]
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: String,
-      authSchemes: js.UndefOr[scala.Nothing],
-      endpointIds: js.Array[String],
-      includeFailed: Boolean
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
     def getServiceEndpoints(project: String, `type`: String, authSchemes: js.Array[String]): js.Promise[js.Array[ServiceEndpoint]] = js.native
-    def getServiceEndpoints(
-      project: String,
-      `type`: String,
-      authSchemes: js.Array[String],
-      endpointIds: js.UndefOr[scala.Nothing],
-      includeFailed: Boolean
-    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
     def getServiceEndpoints(project: String, `type`: String, authSchemes: js.Array[String], endpointIds: js.Array[String]): js.Promise[js.Array[ServiceEndpoint]] = js.native
     def getServiceEndpoints(
       project: String,
@@ -690,50 +564,87 @@ object taskAgentApiBaseMod {
       endpointIds: js.Array[String],
       includeFailed: Boolean
     ): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(
+      project: String,
+      `type`: String,
+      authSchemes: js.Array[String],
+      endpointIds: Unit,
+      includeFailed: Boolean
+    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(project: String, `type`: String, authSchemes: Unit, endpointIds: js.Array[String]): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(
+      project: String,
+      `type`: String,
+      authSchemes: Unit,
+      endpointIds: js.Array[String],
+      includeFailed: Boolean
+    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(project: String, `type`: String, authSchemes: Unit, endpointIds: Unit, includeFailed: Boolean): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(project: String, `type`: Unit, authSchemes: js.Array[String]): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(project: String, `type`: Unit, authSchemes: js.Array[String], endpointIds: js.Array[String]): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(
+      project: String,
+      `type`: Unit,
+      authSchemes: js.Array[String],
+      endpointIds: js.Array[String],
+      includeFailed: Boolean
+    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(
+      project: String,
+      `type`: Unit,
+      authSchemes: js.Array[String],
+      endpointIds: Unit,
+      includeFailed: Boolean
+    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(project: String, `type`: Unit, authSchemes: Unit, endpointIds: js.Array[String]): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(
+      project: String,
+      `type`: Unit,
+      authSchemes: Unit,
+      endpointIds: js.Array[String],
+      includeFailed: Boolean
+    ): js.Promise[js.Array[ServiceEndpoint]] = js.native
+    def getServiceEndpoints(project: String, `type`: Unit, authSchemes: Unit, endpointIds: Unit, includeFailed: Boolean): js.Promise[js.Array[ServiceEndpoint]] = js.native
     
     def getTaskContentZip(taskId: String, versionString: String): js.Promise[ReadableStream] = js.native
-    def getTaskContentZip(taskId: String, versionString: String, visibility: js.UndefOr[scala.Nothing], scopeLocal: Boolean): js.Promise[ReadableStream] = js.native
     def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[ReadableStream] = js.native
     def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[ReadableStream] = js.native
+    def getTaskContentZip(taskId: String, versionString: String, visibility: Unit, scopeLocal: Boolean): js.Promise[ReadableStream] = js.native
     
     def getTaskDefinition(taskId: String, versionString: String): js.Promise[TaskDefinition] = js.native
-    def getTaskDefinition(taskId: String, versionString: String, visibility: js.UndefOr[scala.Nothing], scopeLocal: Boolean): js.Promise[TaskDefinition] = js.native
     def getTaskDefinition(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[TaskDefinition] = js.native
     def getTaskDefinition(taskId: String, versionString: String, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[TaskDefinition] = js.native
+    def getTaskDefinition(taskId: String, versionString: String, visibility: Unit, scopeLocal: Boolean): js.Promise[TaskDefinition] = js.native
     
     def getTaskDefinitions(): js.Promise[js.Array[TaskDefinition]] = js.native
-    def getTaskDefinitions(taskId: js.UndefOr[scala.Nothing], visibility: js.UndefOr[scala.Nothing], scopeLocal: Boolean): js.Promise[js.Array[TaskDefinition]] = js.native
-    def getTaskDefinitions(taskId: js.UndefOr[scala.Nothing], visibility: js.Array[String]): js.Promise[js.Array[TaskDefinition]] = js.native
-    def getTaskDefinitions(taskId: js.UndefOr[scala.Nothing], visibility: js.Array[String], scopeLocal: Boolean): js.Promise[js.Array[TaskDefinition]] = js.native
     def getTaskDefinitions(taskId: String): js.Promise[js.Array[TaskDefinition]] = js.native
-    def getTaskDefinitions(taskId: String, visibility: js.UndefOr[scala.Nothing], scopeLocal: Boolean): js.Promise[js.Array[TaskDefinition]] = js.native
     def getTaskDefinitions(taskId: String, visibility: js.Array[String]): js.Promise[js.Array[TaskDefinition]] = js.native
     def getTaskDefinitions(taskId: String, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[js.Array[TaskDefinition]] = js.native
+    def getTaskDefinitions(taskId: String, visibility: Unit, scopeLocal: Boolean): js.Promise[js.Array[TaskDefinition]] = js.native
+    def getTaskDefinitions(taskId: Unit, visibility: js.Array[String]): js.Promise[js.Array[TaskDefinition]] = js.native
+    def getTaskDefinitions(taskId: Unit, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[js.Array[TaskDefinition]] = js.native
+    def getTaskDefinitions(taskId: Unit, visibility: Unit, scopeLocal: Boolean): js.Promise[js.Array[TaskDefinition]] = js.native
     
     def getTaskGroupHistory(project: String, taskGroupId: String): js.Promise[js.Array[TaskGroupRevision]] = js.native
     
     def getTaskGroupRevision(project: String, taskGroupId: String, revision: Double): js.Promise[ReadableStream] = js.native
     
     def getTaskGroups(project: String): js.Promise[js.Array[TaskGroup]] = js.native
-    def getTaskGroups(project: String, taskGroupId: js.UndefOr[scala.Nothing], expanded: Boolean): js.Promise[js.Array[TaskGroup]] = js.native
     def getTaskGroups(project: String, taskGroupId: String): js.Promise[js.Array[TaskGroup]] = js.native
     def getTaskGroups(project: String, taskGroupId: String, expanded: Boolean): js.Promise[js.Array[TaskGroup]] = js.native
+    def getTaskGroups(project: String, taskGroupId: Unit, expanded: Boolean): js.Promise[js.Array[TaskGroup]] = js.native
     
     def getTaskHubLicenseDetails(hubName: String): js.Promise[TaskHubLicenseDetails] = js.native
-    def getTaskHubLicenseDetails(
-      hubName: String,
-      includeEnterpriseUsersCount: js.UndefOr[scala.Nothing],
-      includeHostedAgentMinutesCount: Boolean
-    ): js.Promise[TaskHubLicenseDetails] = js.native
     def getTaskHubLicenseDetails(hubName: String, includeEnterpriseUsersCount: Boolean): js.Promise[TaskHubLicenseDetails] = js.native
     def getTaskHubLicenseDetails(hubName: String, includeEnterpriseUsersCount: Boolean, includeHostedAgentMinutesCount: Boolean): js.Promise[TaskHubLicenseDetails] = js.native
+    def getTaskHubLicenseDetails(hubName: String, includeEnterpriseUsersCount: Unit, includeHostedAgentMinutesCount: Boolean): js.Promise[TaskHubLicenseDetails] = js.native
     
     def getVariableGroup(project: String, groupId: Double): js.Promise[VariableGroup] = js.native
     
     def getVariableGroups(project: String): js.Promise[js.Array[VariableGroup]] = js.native
-    def getVariableGroups(project: String, groupName: js.UndefOr[scala.Nothing], actionFilter: VariableGroupActionFilter): js.Promise[js.Array[VariableGroup]] = js.native
     def getVariableGroups(project: String, groupName: String): js.Promise[js.Array[VariableGroup]] = js.native
     def getVariableGroups(project: String, groupName: String, actionFilter: VariableGroupActionFilter): js.Promise[js.Array[VariableGroup]] = js.native
+    def getVariableGroups(project: String, groupName: Unit, actionFilter: VariableGroupActionFilter): js.Promise[js.Array[VariableGroup]] = js.native
     
     def getVariableGroupsById(project: String, groupIds: js.Array[Double]): js.Promise[js.Array[VariableGroup]] = js.native
     

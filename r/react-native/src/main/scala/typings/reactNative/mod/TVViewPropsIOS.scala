@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TVViewPropsIOS extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TVViewPropsIOS extends StObject {
     *
     * @platform ios
     */
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *(Apple TV only)* When set to true, this view will be focusable
@@ -21,42 +19,42 @@ trait TVViewPropsIOS extends StObject {
     *
     * @platform ios
     */
-  var isTVSelectable: js.UndefOr[Boolean] = js.native
+  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
     *
     * @platform ios
     */
-  var tvParallaxMagnification: js.UndefOr[Double] = js.native
+  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
   
   /**
     * *(Apple TV only)* Object with properties to control Apple TV parallax effects.
     *
     * @platform ios
     */
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
     *
     * @platform ios
     */
-  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
     *
     * @platform ios
     */
-  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
   /**
     * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 0.05.
     *
     * @platform ios
     */
-  var tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
 }
 object TVViewPropsIOS {
   

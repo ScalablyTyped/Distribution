@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceInformation extends IDeviceInformation
+trait DeviceInformation
+  extends StObject
+     with IDeviceInformation
 object DeviceInformation {
   
   @scala.inline
@@ -20,7 +20,7 @@ object DeviceInformation {
     isDefault: Boolean,
     isEnabled: Boolean,
     name: String,
-    properties: IMapView[String, _],
+    properties: IMapView[String, js.Any],
     update: DeviceInformationUpdate => Unit
   ): DeviceInformation = {
     val __obj = js.Dynamic.literal(enclosureLocation = enclosureLocation.asInstanceOf[js.Any], getGlyphThumbnailAsync = js.Any.fromFunction0(getGlyphThumbnailAsync), getThumbnailAsync = js.Any.fromFunction0(getThumbnailAsync), id = id.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))

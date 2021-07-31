@@ -5,17 +5,16 @@ import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.forwar
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionalSuspenseListProps
-  extends typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListCommonProps {
+  extends StObject
+     with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListCommonProps {
   
   /**
     * Defines the order in which the `SuspenseList` children should be revealed.
     */
-  var revealOrder: forwards | backwards = js.native
+  var revealOrder: forwards | backwards
   
   /**
     * Dictates how unloaded items in a SuspenseList is shown.
@@ -26,13 +25,13 @@ trait DirectionalSuspenseListProps
     */
   var tail: js.UndefOr[
     typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListTailMode
-  ] = js.native
+  ] = js.undefined
 }
 object DirectionalSuspenseListProps {
   
   @scala.inline
   def apply(
-    children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]]),
+    children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]]),
     revealOrder: forwards | backwards
   ): DirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])

@@ -2,11 +2,11 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _Position[TLength]
-  extends _MaskLayer[TLength]
+  extends StObject
+     with _MaskLayer[TLength]
      with _MaskPositionProperty[TLength]
      with _ObjectPositionProperty[TLength]
      with _OffsetAnchorProperty[TLength]

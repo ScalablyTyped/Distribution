@@ -2,19 +2,19 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefinitionInfo extends DocumentSpan {
+trait DefinitionInfo
+  extends StObject
+     with DocumentSpan {
   
-  var containerKind: ScriptElementKind = js.native
+  var containerKind: ScriptElementKind
   
-  var containerName: java.lang.String = js.native
+  var containerName: java.lang.String
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
 }
 object DefinitionInfo {
   

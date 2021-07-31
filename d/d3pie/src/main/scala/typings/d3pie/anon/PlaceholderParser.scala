@@ -4,21 +4,19 @@ import typings.d3pie.d3pieStrings.caption
 import typings.d3pie.d3pieStrings.placeholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceholderParser extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var placeholderParser: js.UndefOr[js.Function2[/* index */ Double, /* data */ Percentage, Unit]] = js.native
+  var placeholderParser: js.UndefOr[js.Function2[/* index */ Double, /* data */ Percentage, Unit]] = js.undefined
   
-  var string: js.UndefOr[String] = js.native
+  var string: js.UndefOr[String] = js.undefined
   
-  var styles: js.UndefOr[BackgroundColor] = js.native
+  var styles: js.UndefOr[BackgroundColor] = js.undefined
   
-  var `type`: js.UndefOr[placeholder | caption] = js.native
+  var `type`: js.UndefOr[placeholder | caption] = js.undefined
 }
 object PlaceholderParser {
   

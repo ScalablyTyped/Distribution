@@ -2,7 +2,6 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observableMod {
@@ -13,10 +12,9 @@ object observableMod {
   
   object global {
     
-    @js.native
     trait SymbolConstructor extends StObject {
       
-      val observable: js.Symbol = js.native
+      val observable: js.Symbol
     }
     object SymbolConstructor {
       

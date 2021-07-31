@@ -4,43 +4,43 @@ import typings.std.Date
 import typings.typedGithubApi.anon.Collaborators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.userMod.UserOrOrgSummary because Already inherited
-  - typings.typedGithubApi.userMod.UserOrOrg because var conflicts: avatar_url, events_url, id, login, repos_url, `type`, url. Inlined name, company, blog, location, email, public_repos, public_gists, followers, following, created_at, updated_at */ @js.native
-  trait Organization extends OrganizationSummary {
+  - typings.typedGithubApi.userMod.UserOrOrg because var conflicts: avatar_url, events_url, id, login, repos_url, `type`, url. Inlined name, company, blog, location, email, public_repos, public_gists, followers, following, created_at, updated_at */ trait Organization
+    extends StObject
+       with OrganizationSummary {
     
-    var blog: String = js.native
+    var blog: String
     
-    var company: String = js.native
+    var company: String
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var email: String = js.native
+    var email: String
     
-    var followers: Double = js.native
+    var followers: Double
     
-    var following: Double = js.native
+    var following: Double
     
-    var has_organization_projects: Boolean = js.native
+    var has_organization_projects: Boolean
     
-    var has_repository_projects: Boolean = js.native
+    var has_repository_projects: Boolean
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var location: String = js.native
+    var location: String
     
-    var name: String = js.native
+    var name: String
     
-    var public_gists: Double = js.native
+    var public_gists: Double
     
-    var public_repos: Double = js.native
+    var public_repos: Double
     
-    var updated_at: Date = js.native
+    var updated_at: Date
   }
   object Organization {
     
@@ -69,12 +69,11 @@ object userMod {
       public_members_url: String,
       public_repos: Double,
       repos_url: String,
-      `type`: typings.typedGithubApi.typedGithubApiStrings.Organization,
       updated_at: Date,
       url: String
     ): Organization = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], blog = blog.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], following = following.asInstanceOf[js.Any], has_organization_projects = has_organization_projects.asInstanceOf[js.Any], has_repository_projects = has_repository_projects.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], members_url = members_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public_gists = public_gists.asInstanceOf[js.Any], public_members_url = public_members_url.asInstanceOf[js.Any], public_repos = public_repos.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Organization")
       __obj.asInstanceOf[Organization]
     }
     
@@ -125,21 +124,22 @@ object userMod {
     }
   }
   
-  @js.native
-  trait OrganizationSummary extends UserOrOrgSummary {
+  trait OrganizationSummary
+    extends StObject
+       with UserOrOrgSummary {
     
-    var description: String = js.native
+    var description: String
     
-    var hooks_url: String = js.native
+    var hooks_url: String
     
-    var issues_url: String = js.native
+    var issues_url: String
     
-    var members_url: String = js.native
+    var members_url: String
     
-    var public_members_url: String = js.native
+    var public_members_url: String
     
     @JSName("type")
-    var type_OrganizationSummary: typings.typedGithubApi.typedGithubApiStrings.Organization = js.native
+    var type_OrganizationSummary: typings.typedGithubApi.typedGithubApiStrings.Organization
   }
   object OrganizationSummary {
     
@@ -155,11 +155,10 @@ object userMod {
       members_url: String,
       public_members_url: String,
       repos_url: String,
-      `type`: typings.typedGithubApi.typedGithubApiStrings.Organization,
       url: String
     ): OrganizationSummary = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], members_url = members_url.asInstanceOf[js.Any], public_members_url = public_members_url.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Organization")
       __obj.asInstanceOf[OrganizationSummary]
     }
     
@@ -189,26 +188,27 @@ object userMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.userMod.UserOrOrgSummary because Already inherited
   - typings.typedGithubApi.userMod.UserOrOrg because Already inherited
-  - typings.typedGithubApi.userMod.PrivateUserOrOrg because var conflicts: avatar_url, blog, company, created_at, email, events_url, followers, following, id, location, login, name, public_gists, public_repos, repos_url, `type`, updated_at, url. Inlined total_private_repos, owned_private_repos, private_gists, disk_usage, collaborators, plan */ @js.native
-  trait PrivateOrganization extends Organization {
+  - typings.typedGithubApi.userMod.PrivateUserOrOrg because var conflicts: avatar_url, blog, company, created_at, email, events_url, followers, following, id, location, login, name, public_gists, public_repos, repos_url, `type`, updated_at, url. Inlined total_private_repos, owned_private_repos, private_gists, disk_usage, collaborators, plan */ trait PrivateOrganization
+    extends StObject
+       with Organization {
     
-    var billing_email: String = js.native
+    var billing_email: String
     
-    var collaborators: Double = js.native
+    var collaborators: Double
     
-    var default_repository_settings: String = js.native
+    var default_repository_settings: String
     
-    var disk_usage: Double = js.native
+    var disk_usage: Double
     
-    var members_can_create_repositories: Boolean = js.native
+    var members_can_create_repositories: Boolean
     
-    var owned_private_repos: Double = js.native
+    var owned_private_repos: Double
     
-    var plan: Collaborators = js.native
+    var plan: Collaborators
     
-    var private_gists: Double = js.native
+    var private_gists: Double
     
-    var total_private_repos: Double = js.native
+    var total_private_repos: Double
   }
   object PrivateOrganization {
     
@@ -246,12 +246,11 @@ object userMod {
       public_repos: Double,
       repos_url: String,
       total_private_repos: Double,
-      `type`: typings.typedGithubApi.typedGithubApiStrings.Organization,
       updated_at: Date,
       url: String
     ): PrivateOrganization = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], billing_email = billing_email.asInstanceOf[js.Any], blog = blog.asInstanceOf[js.Any], collaborators = collaborators.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_repository_settings = default_repository_settings.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], disk_usage = disk_usage.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], following = following.asInstanceOf[js.Any], has_organization_projects = has_organization_projects.asInstanceOf[js.Any], has_repository_projects = has_repository_projects.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], members_can_create_repositories = members_can_create_repositories.asInstanceOf[js.Any], members_url = members_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owned_private_repos = owned_private_repos.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], private_gists = private_gists.asInstanceOf[js.Any], public_gists = public_gists.asInstanceOf[js.Any], public_members_url = public_members_url.asInstanceOf[js.Any], public_repos = public_repos.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], total_private_repos = total_private_repos.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Organization")
       __obj.asInstanceOf[PrivateOrganization]
     }
     
@@ -290,22 +289,23 @@ object userMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.userMod.UserOrOrgSummary because Already inherited
   - typings.typedGithubApi.userMod.UserOrOrg because Already inherited
-  - typings.typedGithubApi.userMod.PrivateUserOrOrg because var conflicts: avatar_url, blog, company, created_at, email, events_url, followers, following, id, location, login, name, public_gists, public_repos, repos_url, `type`, updated_at, url. Inlined total_private_repos, owned_private_repos, private_gists, disk_usage, collaborators, plan */ @js.native
-  trait PrivateUser extends User {
+  - typings.typedGithubApi.userMod.PrivateUserOrOrg because var conflicts: avatar_url, blog, company, created_at, email, events_url, followers, following, id, location, login, name, public_gists, public_repos, repos_url, `type`, updated_at, url. Inlined total_private_repos, owned_private_repos, private_gists, disk_usage, collaborators, plan */ trait PrivateUser
+    extends StObject
+       with User {
     
-    var collaborators: Double = js.native
+    var collaborators: Double
     
-    var disk_usage: Double = js.native
+    var disk_usage: Double
     
-    var owned_private_repos: Double = js.native
+    var owned_private_repos: Double
     
-    var plan: Collaborators = js.native
+    var plan: Collaborators
     
-    var private_gists: Double = js.native
+    var private_gists: Double
     
-    var total_private_repos: Double = js.native
+    var total_private_repos: Double
     
-    var two_factor_authentication: Boolean = js.native
+    var two_factor_authentication: Boolean
   }
   object PrivateUser {
     
@@ -345,12 +345,11 @@ object userMod {
       subscriptions_url: String,
       total_private_repos: Double,
       two_factor_authentication: Boolean,
-      `type`: typings.typedGithubApi.typedGithubApiStrings.User,
       updated_at: Date,
       url: String
     ): PrivateUser = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], bio = bio.asInstanceOf[js.Any], blog = blog.asInstanceOf[js.Any], collaborators = collaborators.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], disk_usage = disk_usage.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], followers_url = followers_url.asInstanceOf[js.Any], following = following.asInstanceOf[js.Any], following_url = following_url.asInstanceOf[js.Any], gists_url = gists_url.asInstanceOf[js.Any], gravatar_id = gravatar_id.asInstanceOf[js.Any], hireable = hireable.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], organizations_url = organizations_url.asInstanceOf[js.Any], owned_private_repos = owned_private_repos.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], private_gists = private_gists.asInstanceOf[js.Any], public_gists = public_gists.asInstanceOf[js.Any], public_repos = public_repos.asInstanceOf[js.Any], received_events_url = received_events_url.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], site_admin = site_admin.asInstanceOf[js.Any], starred_url = starred_url.asInstanceOf[js.Any], subscriptions_url = subscriptions_url.asInstanceOf[js.Any], total_private_repos = total_private_repos.asInstanceOf[js.Any], two_factor_authentication = two_factor_authentication.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("User")
       __obj.asInstanceOf[PrivateUser]
     }
     
@@ -380,20 +379,21 @@ object userMod {
     }
   }
   
-  @js.native
-  trait PrivateUserOrOrg extends UserOrOrg {
+  trait PrivateUserOrOrg
+    extends StObject
+       with UserOrOrg {
     
-    var collaborators: Double = js.native
+    var collaborators: Double
     
-    var disk_usage: Double = js.native
+    var disk_usage: Double
     
-    var owned_private_repos: Double = js.native
+    var owned_private_repos: Double
     
-    var plan: Collaborators = js.native
+    var plan: Collaborators
     
-    var private_gists: Double = js.native
+    var private_gists: Double
     
-    var total_private_repos: Double = js.native
+    var total_private_repos: Double
   }
   object PrivateUserOrOrg {
     
@@ -454,34 +454,35 @@ object userMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.userMod.UserOrOrgSummary because Already inherited
-  - typings.typedGithubApi.userMod.UserOrOrg because var conflicts: avatar_url, events_url, id, login, repos_url, `type`, url. Inlined name, company, blog, location, email, public_repos, public_gists, followers, following, created_at, updated_at */ @js.native
-  trait User extends UserSummary {
+  - typings.typedGithubApi.userMod.UserOrOrg because var conflicts: avatar_url, events_url, id, login, repos_url, `type`, url. Inlined name, company, blog, location, email, public_repos, public_gists, followers, following, created_at, updated_at */ trait User
+    extends StObject
+       with UserSummary {
     
-    var bio: String = js.native
+    var bio: String
     
-    var blog: String = js.native
+    var blog: String
     
-    var company: String = js.native
+    var company: String
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var email: String = js.native
+    var email: String
     
-    var followers: Double = js.native
+    var followers: Double
     
-    var following: Double = js.native
+    var following: Double
     
-    var hireable: Boolean = js.native
+    var hireable: Boolean
     
-    var location: String = js.native
+    var location: String
     
-    var name: String = js.native
+    var name: String
     
-    var public_gists: Double = js.native
+    var public_gists: Double
     
-    var public_repos: Double = js.native
+    var public_repos: Double
     
-    var updated_at: Date = js.native
+    var updated_at: Date
   }
   object User {
     
@@ -514,12 +515,11 @@ object userMod {
       site_admin: Boolean,
       starred_url: String,
       subscriptions_url: String,
-      `type`: typings.typedGithubApi.typedGithubApiStrings.User,
       updated_at: Date,
       url: String
     ): User = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], bio = bio.asInstanceOf[js.Any], blog = blog.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], followers_url = followers_url.asInstanceOf[js.Any], following = following.asInstanceOf[js.Any], following_url = following_url.asInstanceOf[js.Any], gists_url = gists_url.asInstanceOf[js.Any], gravatar_id = gravatar_id.asInstanceOf[js.Any], hireable = hireable.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], organizations_url = organizations_url.asInstanceOf[js.Any], public_gists = public_gists.asInstanceOf[js.Any], public_repos = public_repos.asInstanceOf[js.Any], received_events_url = received_events_url.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], site_admin = site_admin.asInstanceOf[js.Any], starred_url = starred_url.asInstanceOf[js.Any], subscriptions_url = subscriptions_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("User")
       __obj.asInstanceOf[User]
     }
     
@@ -567,30 +567,31 @@ object userMod {
     }
   }
   
-  @js.native
-  trait UserOrOrg extends UserOrOrgSummary {
+  trait UserOrOrg
+    extends StObject
+       with UserOrOrgSummary {
     
-    var blog: String = js.native
+    var blog: String
     
-    var company: String = js.native
+    var company: String
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var email: String = js.native
+    var email: String
     
-    var followers: Double = js.native
+    var followers: Double
     
-    var following: Double = js.native
+    var following: Double
     
-    var location: String = js.native
+    var location: String
     
-    var name: String = js.native
+    var name: String
     
-    var public_gists: Double = js.native
+    var public_gists: Double
     
-    var public_repos: Double = js.native
+    var public_repos: Double
     
-    var updated_at: Date = js.native
+    var updated_at: Date
   }
   object UserOrOrg {
     
@@ -658,22 +659,21 @@ object userMod {
     }
   }
   
-  @js.native
   trait UserOrOrgSummary extends StObject {
     
-    var avatar_url: String = js.native
+    var avatar_url: String
     
-    var events_url: String = js.native
+    var events_url: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var login: String = js.native
+    var login: String
     
-    var repos_url: String = js.native
+    var repos_url: String
     
-    var `type`: typings.typedGithubApi.typedGithubApiStrings.User | typings.typedGithubApi.typedGithubApiStrings.Organization = js.native
+    var `type`: typings.typedGithubApi.typedGithubApiStrings.User | typings.typedGithubApi.typedGithubApiStrings.Organization
     
-    var url: String = js.native
+    var url: String
   }
   object UserOrOrgSummary {
     
@@ -720,31 +720,32 @@ object userMod {
     }
   }
   
-  @js.native
-  trait UserSummary extends UserOrOrgSummary {
+  trait UserSummary
+    extends StObject
+       with UserOrOrgSummary {
     
-    var followers_url: String = js.native
+    var followers_url: String
     
-    var following_url: String = js.native
+    var following_url: String
     
-    var gists_url: String = js.native
+    var gists_url: String
     
-    var gravatar_id: String = js.native
+    var gravatar_id: String
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var organizations_url: String = js.native
+    var organizations_url: String
     
-    var received_events_url: String = js.native
+    var received_events_url: String
     
-    var site_admin: Boolean = js.native
+    var site_admin: Boolean
     
-    var starred_url: String = js.native
+    var starred_url: String
     
-    var subscriptions_url: String = js.native
+    var subscriptions_url: String
     
     @JSName("type")
-    var type_UserSummary: typings.typedGithubApi.typedGithubApiStrings.User = js.native
+    var type_UserSummary: typings.typedGithubApi.typedGithubApiStrings.User
   }
   object UserSummary {
     
@@ -765,11 +766,10 @@ object userMod {
       site_admin: Boolean,
       starred_url: String,
       subscriptions_url: String,
-      `type`: typings.typedGithubApi.typedGithubApiStrings.User,
       url: String
     ): UserSummary = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], followers_url = followers_url.asInstanceOf[js.Any], following_url = following_url.asInstanceOf[js.Any], gists_url = gists_url.asInstanceOf[js.Any], gravatar_id = gravatar_id.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], organizations_url = organizations_url.asInstanceOf[js.Any], received_events_url = received_events_url.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], site_admin = site_admin.asInstanceOf[js.Any], starred_url = starred_url.asInstanceOf[js.Any], subscriptions_url = subscriptions_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("User")
       __obj.asInstanceOf[UserSummary]
     }
     

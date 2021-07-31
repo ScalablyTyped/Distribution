@@ -2,23 +2,21 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyValidationResults extends StObject {
   
-  var applyValidationResults: js.UndefOr[js.Function] = js.native
+  var applyValidationResults: js.UndefOr[js.Function] = js.undefined
   
-  var bypass: js.UndefOr[js.Function] = js.native
+  var bypass: js.UndefOr[js.Function] = js.undefined
   
-  var focus: js.UndefOr[js.Function] = js.native
+  var focus: js.UndefOr[js.Function] = js.undefined
   
-  var getValue: js.UndefOr[js.Function] = js.native
+  var getValue: js.UndefOr[js.Function] = js.undefined
   
-  var reset: js.UndefOr[js.Function] = js.native
+  var reset: js.UndefOr[js.Function] = js.undefined
   
-  var validationRequestsCallbacks: js.UndefOr[js.Array[js.Function]] = js.native
+  var validationRequestsCallbacks: js.UndefOr[js.Array[js.Function]] = js.undefined
 }
 object ApplyValidationResults {
   

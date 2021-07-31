@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsCloudidentityDevicesV1ListDevicesResponse extends StObject {
   
   /** Devices meeting the list restrictions. */
-  var devices: js.UndefOr[js.Array[GoogleAppsCloudidentityDevicesV1Device]] = js.native
+  var devices: js.UndefOr[js.Array[GoogleAppsCloudidentityDevicesV1Device]] = js.undefined
   
   /** Token to retrieve the next page of results. Empty if there are no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsCloudidentityDevicesV1ListDevicesResponse {
   

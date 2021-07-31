@@ -7,7 +7,6 @@ import typings.reactBootstrap.mod.SelectCallback
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navItemMod {
@@ -21,47 +20,48 @@ object navItemMod {
   trait NavItem
     extends Component[NavItemProps, js.Object, js.Any]
   
-  @js.native
-  trait NavItemProps extends HTMLProps[NavItem] {
+  trait NavItemProps
+    extends StObject
+       with HTMLProps[NavItem] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var brand: js.UndefOr[js.Any] = js.native
+    var brand: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var defaultNavExpanded: js.UndefOr[Boolean] = js.native
+    var defaultNavExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.native
+    var eventKey: js.UndefOr[js.Any] = js.undefined
     
-    var fixedBottom: js.UndefOr[Boolean] = js.native
+    var fixedBottom: js.UndefOr[Boolean] = js.undefined
     
-    var fixedTop: js.UndefOr[Boolean] = js.native
+    var fixedTop: js.UndefOr[Boolean] = js.undefined
     
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
-    var linkId: js.UndefOr[String] = js.native
+    var linkId: js.UndefOr[String] = js.undefined
     
-    var navExpanded: js.UndefOr[Boolean] = js.native
+    var navExpanded: js.UndefOr[Boolean] = js.undefined
     
     @JSName("onSelect")
-    var onSelect_NavItemProps: js.UndefOr[SelectCallback] = js.native
+    var onSelect_NavItemProps: js.UndefOr[SelectCallback] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function] = js.native
+    var onToggle: js.UndefOr[js.Function] = js.undefined
     
-    var staticTop: js.UndefOr[Boolean] = js.native
+    var staticTop: js.UndefOr[Boolean] = js.undefined
     
-    var toggleButton: js.UndefOr[js.Any] = js.native
+    var toggleButton: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var toggleNavKey: js.UndefOr[String | Double] = js.native
+    var toggleNavKey: js.UndefOr[String | Double] = js.undefined
   }
   object NavItemProps {
     
@@ -99,7 +99,7 @@ object navItemMod {
       def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

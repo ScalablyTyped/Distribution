@@ -2,7 +2,6 @@ package typings.node.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Console {
@@ -10,38 +9,37 @@ object Console {
   /**
     * Console message.
     */
-  @js.native
   trait ConsoleMessage extends StObject {
     
     /**
       * Column number in the resource that generated this message (1-based).
       */
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
     /**
       * Message severity.
       */
-    var level: String = js.native
+    var level: String
     
     /**
       * Line number in the resource that generated this message (1-based).
       */
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
     
     /**
       * Message source.
       */
-    var source: String = js.native
+    var source: String
     
     /**
       * Message text.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * URL of the message origin.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ConsoleMessage {
     
@@ -83,13 +81,12 @@ object Console {
     }
   }
   
-  @js.native
   trait MessageAddedEventDataType extends StObject {
     
     /**
       * Console message that has been added.
       */
-    var message: ConsoleMessage = js.native
+    var message: ConsoleMessage
   }
   object MessageAddedEventDataType {
     

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XStatement
   * @see com.sun.star.sdbc.XPreparedStatement
   */
-@js.native
-trait XMultipleResults extends XInterface {
+trait XMultipleResults
+  extends StObject
+     with XInterface {
   
   /**
     * moves to a {@link Statement} 's next result. It returns `TRUE` if this result is a {@link ResultSet} . This method also implicitly closes any current
@@ -28,14 +28,14 @@ trait XMultipleResults extends XInterface {
     * @returns `TRUE` if there exists more {@link ResultSet} objects
     * @throws SQLException if a database access error occurs.
     */
-  val MoreResults: Boolean = js.native
+  val MoreResults: Boolean
   
   /**
     * returns the current result as a {@link com.sun.star.sdbc.ResultSet} object. This method should be called only once per result.
     * @returns the {@link ResultSet} object
     * @throws SQLException if a database access error occurs.
     */
-  val ResultSet: XResultSet = js.native
+  val ResultSet: XResultSet
   
   /**
     * returns the current result as an update count.
@@ -44,7 +44,7 @@ trait XMultipleResults extends XInterface {
     * @returns the current result as an update count.
     * @throws SQLException if a database access error occurs.
     */
-  val UpdateCount: Double = js.native
+  val UpdateCount: Double
   
   /**
     * moves to a {@link Statement} 's next result. It returns `TRUE` if this result is a {@link ResultSet} . This method also implicitly closes any current
@@ -54,14 +54,14 @@ trait XMultipleResults extends XInterface {
     * @returns `TRUE` if there exists more {@link ResultSet} objects
     * @throws SQLException if a database access error occurs.
     */
-  def getMoreResults(): Boolean = js.native
+  def getMoreResults(): Boolean
   
   /**
     * returns the current result as a {@link com.sun.star.sdbc.ResultSet} object. This method should be called only once per result.
     * @returns the {@link ResultSet} object
     * @throws SQLException if a database access error occurs.
     */
-  def getResultSet(): XResultSet = js.native
+  def getResultSet(): XResultSet
   
   /**
     * returns the current result as an update count.
@@ -70,7 +70,7 @@ trait XMultipleResults extends XInterface {
     * @returns the current result as an update count.
     * @throws SQLException if a database access error occurs.
     */
-  def getUpdateCount(): Double = js.native
+  def getUpdateCount(): Double
 }
 object XMultipleResults {
   

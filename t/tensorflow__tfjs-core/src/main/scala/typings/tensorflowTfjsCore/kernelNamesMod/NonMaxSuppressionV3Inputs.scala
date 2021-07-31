@@ -2,16 +2,14 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'boxes' | 'scores'> */
-@js.native
 trait NonMaxSuppressionV3Inputs extends StObject {
   
-  var boxes: js.UndefOr[js.Any] = js.native
+  var boxes: js.UndefOr[js.Any] = js.undefined
   
-  var scores: js.UndefOr[js.Any] = js.native
+  var scores: js.UndefOr[js.Any] = js.undefined
 }
 object NonMaxSuppressionV3Inputs {
   

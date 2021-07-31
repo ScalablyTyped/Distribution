@@ -7,7 +7,6 @@ import typings.three.webGLRenderTargetMod.WebGLRenderTarget
 import typings.three.webGLRendererMod.WebGLRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pmremgeneratorMod {
@@ -28,12 +27,12 @@ object pmremgeneratorMod {
     def fromEquirectangular(equirectangular: Texture): WebGLRenderTarget = js.native
     
     def fromScene(scene: Scene): WebGLRenderTarget = js.native
-    def fromScene(scene: Scene, sigma: js.UndefOr[scala.Nothing], near: js.UndefOr[scala.Nothing], far: Double): WebGLRenderTarget = js.native
-    def fromScene(scene: Scene, sigma: js.UndefOr[scala.Nothing], near: Double): WebGLRenderTarget = js.native
-    def fromScene(scene: Scene, sigma: js.UndefOr[scala.Nothing], near: Double, far: Double): WebGLRenderTarget = js.native
     def fromScene(scene: Scene, sigma: Double): WebGLRenderTarget = js.native
-    def fromScene(scene: Scene, sigma: Double, near: js.UndefOr[scala.Nothing], far: Double): WebGLRenderTarget = js.native
     def fromScene(scene: Scene, sigma: Double, near: Double): WebGLRenderTarget = js.native
     def fromScene(scene: Scene, sigma: Double, near: Double, far: Double): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: Double, near: Unit, far: Double): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: Unit, near: Double): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: Unit, near: Double, far: Double): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: Unit, near: Unit, far: Double): WebGLRenderTarget = js.native
   }
 }

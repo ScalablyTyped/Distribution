@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data, though on any given column you may add both a PivotGroup that has a
   * rule and a PivotGroup that does not.
   */
-@js.native
 trait SchemaPivotGroupRule extends StObject {
   
   /**
     * A DateTimeRule.
     */
-  var dateTimeRule: js.UndefOr[SchemaDateTimeRule] = js.native
+  var dateTimeRule: js.UndefOr[SchemaDateTimeRule] = js.undefined
   
   /**
     * A HistogramRule.
     */
-  var histogramRule: js.UndefOr[SchemaHistogramRule] = js.native
+  var histogramRule: js.UndefOr[SchemaHistogramRule] = js.undefined
   
   /**
     * A ManualRule.
     */
-  var manualRule: js.UndefOr[SchemaManualRule] = js.native
+  var manualRule: js.UndefOr[SchemaManualRule] = js.undefined
 }
 object SchemaPivotGroupRule {
   

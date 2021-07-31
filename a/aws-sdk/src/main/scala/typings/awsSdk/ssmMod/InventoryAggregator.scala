@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryAggregator extends StObject {
   
   /**
     * Nested aggregators to further refine aggregation for an inventory type.
     */
-  var Aggregators: js.UndefOr[InventoryAggregatorList] = js.native
+  var Aggregators: js.UndefOr[InventoryAggregatorList] = js.undefined
   
   /**
     * The inventory type and attribute name for aggregation.
     */
-  var Expression: js.UndefOr[InventoryAggregatorExpression] = js.native
+  var Expression: js.UndefOr[InventoryAggregatorExpression] = js.undefined
   
   /**
     * A user-defined set of one or more filters on which to aggregate inventory data. Groups return a count of resources that match and don't match the specified criteria.
     */
-  var Groups: js.UndefOr[InventoryGroupList] = js.native
+  var Groups: js.UndefOr[InventoryGroupList] = js.undefined
 }
 object InventoryAggregator {
   

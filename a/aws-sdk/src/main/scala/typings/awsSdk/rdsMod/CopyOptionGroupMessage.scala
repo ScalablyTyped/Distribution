@@ -2,28 +2,26 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyOptionGroupMessage extends StObject {
   
   /**
     * The identifier for the source option group.  Constraints:   Must specify a valid option group.  
     */
-  var SourceOptionGroupIdentifier: String = js.native
+  var SourceOptionGroupIdentifier: String
   
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The description for the copied option group.
     */
-  var TargetOptionGroupDescription: String = js.native
+  var TargetOptionGroupDescription: String
   
   /**
     * The identifier for the copied option group. Constraints:   Can't be null, empty, or blank   Must contain from 1 to 255 letters, numbers, or hyphens   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Example: my-option-group 
     */
-  var TargetOptionGroupIdentifier: String = js.native
+  var TargetOptionGroupIdentifier: String
 }
 object CopyOptionGroupMessage {
   

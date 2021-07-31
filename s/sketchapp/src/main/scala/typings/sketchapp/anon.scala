@@ -2,27 +2,25 @@ package typings.sketchapp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait App extends StObject {
     
-    var app: String = js.native
+    var app: String
     
-    var appVersion: String = js.native
+    var appVersion: String
     
-    var build: Double = js.native
+    var build: Double
     
-    var commit: String = js.native
+    var commit: String
     
-    var compatibilityVersion: Double = js.native
+    var compatibilityVersion: Double
     
-    var variant: String = js.native
+    var variant: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object App {
     
@@ -66,10 +64,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Archive extends StObject {
     
-    var _archive: String = js.native
+    var _archive: String
   }
   object Archive {
     
@@ -87,10 +84,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var _data: String = js.native
+    var _data: String
   }
   object Data {
     
@@ -108,12 +104,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object Name {
     
@@ -134,12 +129,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PageListCollapsed extends StObject {
     
-    var pageListCollapsed: Double = js.native
+    var pageListCollapsed: Double
     
-    var pageListHeight: Double = js.native
+    var pageListHeight: Double
   }
   object PageListCollapsed {
     
@@ -160,12 +154,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ScrollOrigin extends StObject {
     
-    var scrollOrigin: SketchMSCurvePoint = js.native
+    var scrollOrigin: SketchMSCurvePoint
     
-    var zoomValue: Double = js.native
+    var zoomValue: Double
   }
   object ScrollOrigin {
     
@@ -186,12 +179,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

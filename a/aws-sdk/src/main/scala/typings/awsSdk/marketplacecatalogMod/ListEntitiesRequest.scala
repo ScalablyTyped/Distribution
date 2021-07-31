@@ -2,41 +2,39 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEntitiesRequest extends StObject {
   
   /**
     * The catalog related to the request. Fixed value: AWSMarketplace 
     */
-  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog = js.native
+  var Catalog: typings.awsSdk.marketplacecatalogMod.Catalog
   
   /**
     * The type of entities to retrieve.
     */
-  var EntityType: typings.awsSdk.marketplacecatalogMod.EntityType = js.native
+  var EntityType: typings.awsSdk.marketplacecatalogMod.EntityType
   
   /**
     * An array of filter objects. Each filter object contains two attributes, filterName and filterValues.
     */
-  var FilterList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.FilterList] = js.native
+  var FilterList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.FilterList] = js.undefined
   
   /**
     * Specifies the upper limit of the elements on a single page. If a value isn't provided, the default value is 20.
     */
-  var MaxResults: js.UndefOr[MaxResultInteger] = js.native
+  var MaxResults: js.UndefOr[MaxResultInteger] = js.undefined
   
   /**
     * The value of the next token, if it exists. Null if there are no more results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.NextToken] = js.undefined
   
   /**
     * An object that contains two attributes, SortBy and SortOrder.
     */
-  var Sort: js.UndefOr[typings.awsSdk.marketplacecatalogMod.Sort] = js.native
+  var Sort: js.UndefOr[typings.awsSdk.marketplacecatalogMod.Sort] = js.undefined
 }
 object ListEntitiesRequest {
   

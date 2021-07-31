@@ -5,20 +5,20 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebResponseDetails extends ResourceRequest {
+trait WebResponseDetails
+  extends StObject
+     with ResourceRequest {
   
   /**
     * Standard HTTP status code returned by the server.
     * @since Chrome 43.
     */
-  var statusCode: integer = js.native
+  var statusCode: integer
   
   /** HTTP status line of the response or the 'HTTP/0.9 200 OK' string for HTTP/0.9 responses (i.e., responses that lack a status line). */
-  var statusLine: String = js.native
+  var statusLine: String
 }
 object WebResponseDetails {
   

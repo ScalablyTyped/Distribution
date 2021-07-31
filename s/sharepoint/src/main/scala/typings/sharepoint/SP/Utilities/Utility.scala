@@ -2,15 +2,13 @@ package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Utility extends StObject {
   
-  var lAYOUTS_LATESTVERSION_RELATIVE_URL: String = js.native
+  var lAYOUTS_LATESTVERSION_RELATIVE_URL: String
   
-  var lAYOUTS_LATESTVERSION_URL: String = js.native
+  var lAYOUTS_LATESTVERSION_URL: String
 }
 object Utility {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportAssetsRequest extends StObject {
   
   /**
@@ -15,19 +13,19 @@ trait ExportAssetsRequest extends StObject {
     * supported asset type, an INVALID_ARGUMENT error will be returned. If specified, only matching assets will be returned, otherwise, it will snapshot all asset types. See [Introduction
     * to Cloud Asset Inventory](https://cloud.google.com/asset-inventory/docs/overview) for all supported asset types.
     */
-  var assetTypes: js.UndefOr[js.Array[String]] = js.native
+  var assetTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Asset content type. If not specified, no content but the asset name will be returned. */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /** Required. Output configuration indicating where the results will be output to. */
-  var outputConfig: js.UndefOr[OutputConfig] = js.native
+  var outputConfig: js.UndefOr[OutputConfig] = js.undefined
   
   /**
     * Timestamp to take an asset snapshot. This can only be set to a timestamp between the current time and the current time minus 35 days (inclusive). If not specified, the current time
     * will be used. Due to delays in resource data collection and indexing, there is a volatile window during which running the same query may get different results.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
 }
 object ExportAssetsRequest {
   

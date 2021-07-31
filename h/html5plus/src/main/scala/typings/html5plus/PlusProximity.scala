@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,12 +27,12 @@ trait PlusProximity extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/proximity.html](http://www.html5plus.org/doc/zh_cn/proximity.html)
     */
   def getCurrentProximity(): Unit = js.native
-  def getCurrentProximity(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getCurrentProximity(successCB: js.Function1[/* result */ Double, Unit]): Unit = js.native
   def getCurrentProximity(
     successCB: js.Function1[/* result */ Double, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getCurrentProximity(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 监听设备接近距离的变化
@@ -42,10 +41,10 @@ trait PlusProximity extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/proximity.html](http://www.html5plus.org/doc/zh_cn/proximity.html)
     */
   def watchProximity(): Double = js.native
-  def watchProximity(changeCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
   def watchProximity(changeCB: js.Function1[/* result */ Double, Unit]): Double = js.native
   def watchProximity(
     changeCB: js.Function1[/* result */ Double, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Double = js.native
+  def watchProximity(changeCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
 }

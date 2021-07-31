@@ -2,11 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedArrayBuffer extends ArrayBufferLike {
+trait SharedArrayBuffer
+  extends StObject
+     with ArrayBufferLike {
   
   /**
     * Read-only. The length of the ArrayBuffer (in bytes).

@@ -3,7 +3,6 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.GameObjects.Bob")
 @js.native
 class Bob protected ()
-  extends typings.phaser.Phaser.GameObjects.Bob {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.Bob {
   /**
     * 
     * @param blitter The parent Blitter object is responsible for updating this Bob.

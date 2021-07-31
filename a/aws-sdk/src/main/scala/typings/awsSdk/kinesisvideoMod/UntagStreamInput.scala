@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagStreamInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the stream that you want to remove tags from.
     */
-  var StreamARN: js.UndefOr[ResourceARN] = js.native
+  var StreamARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The name of the stream that you want to remove tags from.
     */
-  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.native
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.undefined
   
   /**
     * A list of the keys of the tags that you want to remove.
     */
-  var TagKeyList: typings.awsSdk.kinesisvideoMod.TagKeyList = js.native
+  var TagKeyList: typings.awsSdk.kinesisvideoMod.TagKeyList
 }
 object UntagStreamInput {
   

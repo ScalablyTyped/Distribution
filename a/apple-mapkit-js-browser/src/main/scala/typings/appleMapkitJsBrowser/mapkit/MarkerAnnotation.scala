@@ -2,14 +2,15 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a marker annotation at the coordinate location with provided options.
   */
 @js.native
-trait MarkerAnnotation extends Annotation {
+trait MarkerAnnotation
+  extends StObject
+     with Annotation {
   
   /**
     * The background color of the balloon.

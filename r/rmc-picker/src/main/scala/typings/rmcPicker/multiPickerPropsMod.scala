@@ -2,29 +2,27 @@ package typings.rmcPicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiPickerPropsMod {
   
-  @js.native
   trait IMultiPickerProps extends StObject {
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+    var onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rootNativeProps: js.UndefOr[js.Any] = js.native
+    var rootNativeProps: js.UndefOr[js.Any] = js.undefined
     
-    var selectedValue: js.UndefOr[js.Array[_]] = js.native
+    var selectedValue: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object IMultiPickerProps {
     
@@ -74,7 +72,7 @@ object multiPickerPropsMod {
       def setRootNativePropsUndefined: Self = StObject.set(x, "rootNativeProps", js.undefined)
       
       @scala.inline
-      def setSelectedValue(value: js.Array[_]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      def setSelectedValue(value: js.Array[js.Any]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
@@ -90,12 +88,11 @@ object multiPickerPropsMod {
     }
   }
   
-  @js.native
   trait IPickerCol extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.native
+    var props: js.UndefOr[js.Any] = js.undefined
   }
   object IPickerCol {
     

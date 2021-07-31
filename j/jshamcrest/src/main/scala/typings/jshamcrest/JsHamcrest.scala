@@ -2,15 +2,13 @@ package typings.jshamcrest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JsHamcrest {
   
-  @js.native
   trait BetweenBuilder extends StObject {
     
-    def and(end: js.Any): SimpleMatcher = js.native
+    def and(end: js.Any): SimpleMatcher
   }
   object BetweenBuilder {
     
@@ -28,8 +26,9 @@ object JsHamcrest {
     }
   }
   
-  @js.native
-  trait CombinableMatcher extends SimpleMatcher {
+  trait CombinableMatcher
+    extends StObject
+       with SimpleMatcher {
     
     /**
       * Wraps this matcher and the given matcher using JsHamcrest.Matchers.allOf().
@@ -37,7 +36,7 @@ object JsHamcrest {
       * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
       * @return {CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
       */
-    def and(matcherOrValue: js.Any): CombinableMatcher = js.native
+    def and(matcherOrValue: js.Any): CombinableMatcher
     
     /**
       * Wraps this matcher and the given matcher using JsHamcrest.Matchers.anyOf().
@@ -45,7 +44,31 @@ object JsHamcrest {
       * @param matcherOrValue Instance of JsHamcrest.SimpleMatcher or a value
       * @return {CombinableMatcher} Instance of JsHamcrest.CombinableMatcher
       */
-    def or(matcherOrValue: js.Any): CombinableMatcher = js.native
+    def or(matcherOrValue: js.Any): CombinableMatcher
+  }
+  object CombinableMatcher {
+    
+    @scala.inline
+    def apply(
+      and: js.Any => CombinableMatcher,
+      describeTo: /* description */ Description => Unit,
+      describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
+      matches: /* value */ js.Any => Boolean,
+      or: js.Any => CombinableMatcher
+    ): CombinableMatcher = {
+      val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), describeTo = js.Any.fromFunction1(describeTo), describeValueTo = js.Any.fromFunction2(describeValueTo), matches = js.Any.fromFunction1(matches), or = js.Any.fromFunction1(or))
+      __obj.asInstanceOf[CombinableMatcher]
+    }
+    
+    @scala.inline
+    implicit class CombinableMatcherMutableBuilder[Self <: CombinableMatcher] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAnd(value: js.Any => CombinableMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOr(value: js.Any => CombinableMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+    }
   }
   
   //
@@ -61,7 +84,6 @@ object JsHamcrest {
     */
   type DescribeValueTo = js.Function2[/* value */ js.Any, /* description */ Description, Unit]
   
-  @js.native
   trait Description extends StObject {
     
     /**
@@ -70,7 +92,7 @@ object JsHamcrest {
       * @param text Text to append to this description
       * @return {Description} Itself for method chaining
       */
-    def append(text: js.Any): Description = js.native
+    def append(text: js.Any): Description
     
     /**
       * Appends the description of a self describing object to this description.
@@ -78,7 +100,7 @@ object JsHamcrest {
       * @param selfDescribingObject Any object that has a describeTo() function that accepts a JsHamcrest.Description object as argument
       * @return {Description} Itself for method chaining
       */
-    def appendDescriptionOf(selfDescribingObject: SelfDescribing): Description = js.native
+    def appendDescriptionOf(selfDescribingObject: SelfDescribing): Description
     
     /**
       * Appends the description of several self describing objects to this description.
@@ -89,7 +111,7 @@ object JsHamcrest {
       * @param list Array of self describing objects. These objects must have a describeTo() function that accepts a JsHamcrest.Description object as argument
       * @return {Description} Itself for method chaining
       */
-    def appendList(start: String, separator: String, end: String, list: js.Array[_]): Description = js.native
+    def appendList(start: String, separator: String, end: String, list: js.Array[js.Any]): Description
     
     /**
       * Appends a JavaScript language’s literal to this description.
@@ -97,7 +119,7 @@ object JsHamcrest {
       * @param literal Literal to append to this description
       * @return {Description} Itself for method chaining
       */
-    def appendLiteral(literal: js.Any): Description = js.native
+    def appendLiteral(literal: js.Any): Description
     
     /**
       * Appends an array of values to this description.
@@ -108,14 +130,14 @@ object JsHamcrest {
       * @param list Array of values to be described to this description
       * @return {Description} Itself for method chaining
       */
-    def appendValueList(start: String, separator: String, end: String, list: js.Array[SelfDescribing]): Description = js.native
+    def appendValueList(start: String, separator: String, end: String, list: js.Array[SelfDescribing]): Description
     
     /**
       * Gets the current content of this description.
       *
       * @return {string} Current content of this description
       */
-    def get(): String = js.native
+    def get(): String
   }
   object Description {
     
@@ -123,7 +145,7 @@ object JsHamcrest {
     def apply(
       append: js.Any => Description,
       appendDescriptionOf: SelfDescribing => Description,
-      appendList: (String, String, String, js.Array[_]) => Description,
+      appendList: (String, String, String, js.Array[js.Any]) => Description,
       appendLiteral: js.Any => Description,
       appendValueList: (String, String, String, js.Array[SelfDescribing]) => Description,
       get: () => String
@@ -142,7 +164,7 @@ object JsHamcrest {
       def setAppendDescriptionOf(value: SelfDescribing => Description): Self = StObject.set(x, "appendDescriptionOf", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setAppendList(value: (String, String, String, js.Array[_]) => Description): Self = StObject.set(x, "appendList", js.Any.fromFunction4(value))
+      def setAppendList(value: (String, String, String, js.Array[js.Any]) => Description): Self = StObject.set(x, "appendList", js.Any.fromFunction4(value))
       
       @scala.inline
       def setAppendLiteral(value: js.Any => Description): Self = StObject.set(x, "appendLiteral", js.Any.fromFunction1(value))
@@ -160,33 +182,79 @@ object JsHamcrest {
     */
   object Integration
   
-  @js.native
-  trait Matcher extends SelfDescribing {
+  trait Matcher
+    extends StObject
+       with SelfDescribing {
     
-    def describeValueTo(value: js.Any, description: Description): Unit = js.native
+    def describeValueTo(value: js.Any, description: Description): Unit
     @JSName("describeValueTo")
-    var describeValueTo_Original: DescribeValueTo = js.native
+    var describeValueTo_Original: DescribeValueTo
     
-    def matches(value: js.Any): Boolean = js.native
+    def matches(value: js.Any): Boolean
     @JSName("matches")
-    var matches_Original: Matches = js.native
+    var matches_Original: Matches
+  }
+  object Matcher {
+    
+    @scala.inline
+    def apply(
+      describeTo: /* description */ Description => Unit,
+      describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
+      matches: /* value */ js.Any => Boolean
+    ): Matcher = {
+      val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo), describeValueTo = js.Any.fromFunction2(describeValueTo), matches = js.Any.fromFunction1(matches))
+      __obj.asInstanceOf[Matcher]
+    }
+    
+    @scala.inline
+    implicit class MatcherMutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+    }
   }
   
   /**
     * Defines the configurable methods for declaring a new matcher using JsHamcrest.SimpleMatcher.
     */
-  @js.native
   trait MatcherConfig extends StObject {
     
-    def describeTo(description: Description): Unit = js.native
+    def describeTo(description: Description): Unit
     @JSName("describeTo")
-    var describeTo_Original: DescribeTo = js.native
+    var describeTo_Original: DescribeTo
     
-    var describeValueTo: js.UndefOr[DescribeValueTo] = js.native
+    var describeValueTo: js.UndefOr[DescribeValueTo] = js.undefined
     
-    def matches(value: js.Any): Boolean = js.native
+    def matches(value: js.Any): Boolean
     @JSName("matches")
-    var matches_Original: Matches = js.native
+    var matches_Original: Matches
+  }
+  object MatcherConfig {
+    
+    @scala.inline
+    def apply(describeTo: /* description */ Description => Unit, matches: /* value */ js.Any => Boolean): MatcherConfig = {
+      val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo), matches = js.Any.fromFunction1(matches))
+      __obj.asInstanceOf[MatcherConfig]
+    }
+    
+    @scala.inline
+    implicit class MatcherConfigMutableBuilder[Self <: MatcherConfig] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDescribeValueToUndefined: Self = StObject.set(x, "describeValueTo", js.undefined)
+      
+      @scala.inline
+      def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+    }
   }
   
   /**
@@ -210,14 +278,13 @@ object JsHamcrest {
     /**
       * Defines the options accepted by assert().
       */
-    @js.native
     trait AssertOptions extends StObject {
       
-      var fail: js.UndefOr[js.Function1[/* description */ String, Unit]] = js.native
+      var fail: js.UndefOr[js.Function1[/* description */ String, Unit]] = js.undefined
       
-      var message: js.UndefOr[js.Any] = js.native
+      var message: js.UndefOr[js.Any] = js.undefined
       
-      var pass: js.UndefOr[js.Function1[/* description */ String, Unit]] = js.native
+      var pass: js.UndefOr[js.Function1[/* description */ String, Unit]] = js.undefined
     }
     object AssertOptions {
       
@@ -251,14 +318,41 @@ object JsHamcrest {
     }
   }
   
-  @js.native
   trait SelfDescribing extends StObject {
     
-    def describeTo(description: Description): Unit = js.native
+    def describeTo(description: Description): Unit
     @JSName("describeTo")
-    var describeTo_Original: DescribeTo = js.native
+    var describeTo_Original: DescribeTo
+  }
+  object SelfDescribing {
+    
+    @scala.inline
+    def apply(describeTo: /* description */ Description => Unit): SelfDescribing = {
+      val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo))
+      __obj.asInstanceOf[SelfDescribing]
+    }
+    
+    @scala.inline
+    implicit class SelfDescribingMutableBuilder[Self <: SelfDescribing] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
-  trait SimpleMatcher extends Matcher
+  trait SimpleMatcher
+    extends StObject
+       with Matcher
+  object SimpleMatcher {
+    
+    @scala.inline
+    def apply(
+      describeTo: /* description */ Description => Unit,
+      describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
+      matches: /* value */ js.Any => Boolean
+    ): SimpleMatcher = {
+      val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo), describeValueTo = js.Any.fromFunction2(describeValueTo), matches = js.Any.fromFunction1(matches))
+      __obj.asInstanceOf[SimpleMatcher]
+    }
+  }
 }

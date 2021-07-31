@@ -2,15 +2,13 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftDatabaseCredentials extends StObject {
   
-  var Password: RedshiftDatabasePassword = js.native
+  var Password: RedshiftDatabasePassword
   
-  var Username: RedshiftDatabaseUsername = js.native
+  var Username: RedshiftDatabaseUsername
 }
 object RedshiftDatabaseCredentials {
   

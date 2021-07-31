@@ -8,17 +8,15 @@ import typings.c3.c3Strings.`outer-middle`
 import typings.c3.c3Strings.`outer-top`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionText extends StObject {
   
   /** The position of the label. */
-  var position: `inner-top` | `inner-middle` | `inner-bottom` | `outer-top` | `outer-middle` | `outer-bottom` = js.native
+  var position: `inner-top` | `inner-middle` | `inner-bottom` | `outer-top` | `outer-middle` | `outer-bottom`
   
   /** The label text to show. */
-  var text: String = js.native
+  var text: String
 }
 object PositionText {
   

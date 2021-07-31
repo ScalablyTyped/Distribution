@@ -2,66 +2,64 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dataset extends StObject {
   
   /**
     * The ID of the AWS account that owns the dataset.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.databrewMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.databrewMod.AccountId] = js.undefined
   
   /**
     * The date and time that the dataset was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.native
+  var CreateDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (the user name) of the user who created the dataset.
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
     * Options that define how DataBrew interprets the data in the dataset.
     */
-  var FormatOptions: js.UndefOr[typings.awsSdk.databrewMod.FormatOptions] = js.native
+  var FormatOptions: js.UndefOr[typings.awsSdk.databrewMod.FormatOptions] = js.undefined
   
   /**
     * Information on how DataBrew can find the dataset, in either the AWS Glue Data Catalog or Amazon S3.
     */
-  var Input: typings.awsSdk.databrewMod.Input = js.native
+  var Input: typings.awsSdk.databrewMod.Input
   
   /**
     * The identifier (the user name) of the user who last modified the dataset.
     */
-  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.native
+  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The last modification date and time of the dataset.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The unique name of the dataset.
     */
-  var Name: DatasetName = js.native
+  var Name: DatasetName
   
   /**
     * The unique Amazon Resource Name (ARN) for the dataset.
     */
-  var ResourceArn: js.UndefOr[Arn] = js.native
+  var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The location of the data for the dataset, either Amazon S3 or the AWS Glue Data Catalog.
     */
-  var Source: js.UndefOr[typings.awsSdk.databrewMod.Source] = js.native
+  var Source: js.UndefOr[typings.awsSdk.databrewMod.Source] = js.undefined
   
   /**
     * Metadata tags that have been applied to the dataset.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object Dataset {
   

@@ -9,11 +9,11 @@ import typings.victory.victoryStrings.x
 import typings.victory.victoryStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictoryBrushContainerProps extends VictoryContainerProps {
+trait VictoryBrushContainerProps
+  extends StObject
+     with VictoryContainerProps {
   
   /**
     * The optional allowDrag prop accepts a boolean that enables dragging behavior
@@ -21,7 +21,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * prop is set to false.
     * @default true
     */
-  var allowDrag: js.UndefOr[Boolean] = js.native
+  var allowDrag: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The optional allowResize prop accepts a boolean that enables resizing the
@@ -29,7 +29,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * prop is set to false, but the dimensions of the brush area will be fixed.
     * @default true
     */
-  var allowResize: js.UndefOr[Boolean] = js.native
+  var allowResize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The brushComponent prop specifies the component to be rendered for the
@@ -37,7 +37,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * width, height, and style. When this prop is not specified, a <rect/> will be rendered.
     * @default brushComponent={<rect/>}
     */
-  var brushComponent: js.UndefOr[ReactElement] = js.native
+  var brushComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * When the brushDimension prop is set, brushing will only be specific to the to
@@ -46,7 +46,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * occur along both dimensions.
     * @example brushDimension="x"
     */
-  var brushDimension: js.UndefOr[x | y] = js.native
+  var brushDimension: js.UndefOr[x | y] = js.undefined
   
   /**
     * The optional brushDomain prop describes the highlighted state. This prop is an
@@ -56,14 +56,14 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * changes, the chart will render with a new highlighted domain.
     * @example brushDomain={{ x: [50, 100], y: [0, 100] }}
     */
-  var brushDomain: js.UndefOr[DomainPropType] = js.native
+  var brushDomain: js.UndefOr[DomainPropType] = js.undefined
   
   /**
     * The brushStyle adds custom styles to the brushComponent. This prop
     * should be given as an object of SVG style attributes.
     * @default "brushStyle={{ stroke: "transparent", fill: "black", fillOpacity: 0.1 }}"
     */
-  var brushStyle: js.UndefOr[CSSProperties] = js.native
+  var brushStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * The defaultBrushArea prop specifies how the container will behave when a
@@ -72,12 +72,12 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * no new region will be selected, and any existing active brush will be cleared. When
     * the prop is set to "disable" the new selected region will default to the current active brush.
     */
-  var defaultBrushArea: js.UndefOr[all | none | disable] = js.native
+  var defaultBrushArea: js.UndefOr[all | none | disable] = js.undefined
   
   /**
     * When the disable prop is set to true, VictoryBrushContainer events will not fire.
     */
-  var disable: js.UndefOr[Boolean] = js.native
+  var disable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The handleComponent prop specifies the component to be rendered for each
@@ -86,7 +86,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * specified, a <rect/> will be rendered.
     * @default handleComponent={<rect/>}
     */
-  var handleComponent: js.UndefOr[ReactElement] = js.native
+  var handleComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The handleStyle adds custom styles to the handleComponents. This prop should be given as an object of SVG style attributes.
@@ -97,7 +97,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * rendered. Handles are automatically styled with cursors appropriate to their orientation.
     * @default "handleStyle={{ stroke: 'transparent', fill: 'transparent' }}"
     */
-  var handleStyle: js.UndefOr[CSSProperties] = js.native
+  var handleStyle: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * The optional onBrushDomainChange prop accepts an function to be called on
@@ -105,7 +105,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * domain (the updated domain), and props (the props used by VictoryBrushContainer).
     * @example onBrushDomainChange={(domain, props) => handleDomainChange(domain, props)}
     */
-  var onBrushDomainChange: js.UndefOr[js.Function2[/* domain */ DomainPropType, /* props */ this.type, Unit]] = js.native
+  var onBrushDomainChange: js.UndefOr[js.Function2[/* domain */ DomainPropType, /* props */ this.type, Unit]] = js.undefined
 }
 object VictoryBrushContainerProps {
   

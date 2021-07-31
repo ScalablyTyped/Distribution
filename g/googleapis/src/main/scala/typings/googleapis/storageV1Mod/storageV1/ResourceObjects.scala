@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Objects")
@@ -100,7 +99,7 @@ class ResourceObjects protected () extends StObject {
     */
   def compose(): GaxiosPromise[SchemaObject] = js.native
   def compose(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def compose(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def compose(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def compose(params: ParamsResourceObjectsCompose): GaxiosPromise[SchemaObject] = js.native
   def compose(params: ParamsResourceObjectsCompose, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def compose(
@@ -224,7 +223,7 @@ class ResourceObjects protected () extends StObject {
     */
   def copy(): GaxiosPromise[SchemaObject] = js.native
   def copy(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def copy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def copy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def copy(params: ParamsResourceObjectsCopy): GaxiosPromise[SchemaObject] = js.native
   def copy(params: ParamsResourceObjectsCopy, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def copy(
@@ -317,7 +316,7 @@ class ResourceObjects protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceObjectsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceObjectsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -412,7 +411,7 @@ class ResourceObjects protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaObject] = js.native
   def get(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def get(params: ParamsResourceObjectsGet): GaxiosPromise[SchemaObject] = js.native
   def get(params: ParamsResourceObjectsGet, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def get(
@@ -502,7 +501,7 @@ class ResourceObjects protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceObjectsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceObjectsGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -611,7 +610,7 @@ class ResourceObjects protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaObject] = js.native
   def insert(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def insert(params: ParamsResourceObjectsInsert): GaxiosPromise[SchemaObject] = js.native
   def insert(params: ParamsResourceObjectsInsert, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def insert(
@@ -714,7 +713,7 @@ class ResourceObjects protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaObjects] = js.native
   def list(callback: BodyResponseCallback[SchemaObjects]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObjects] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjects] = js.native
   def list(params: ParamsResourceObjectsList): GaxiosPromise[SchemaObjects] = js.native
   def list(params: ParamsResourceObjectsList, callback: BodyResponseCallback[SchemaObjects]): Unit = js.native
   def list(
@@ -817,7 +816,7 @@ class ResourceObjects protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaObject] = js.native
   def patch(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def patch(params: ParamsResourceObjectsPatch): GaxiosPromise[SchemaObject] = js.native
   def patch(params: ParamsResourceObjectsPatch, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def patch(
@@ -942,7 +941,7 @@ class ResourceObjects protected () extends StObject {
     */
   def rewrite(): GaxiosPromise[SchemaRewriteResponse] = js.native
   def rewrite(callback: BodyResponseCallback[SchemaRewriteResponse]): Unit = js.native
-  def rewrite(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRewriteResponse] = js.native
+  def rewrite(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRewriteResponse] = js.native
   def rewrite(params: ParamsResourceObjectsRewrite): GaxiosPromise[SchemaRewriteResponse] = js.native
   def rewrite(params: ParamsResourceObjectsRewrite, callback: BodyResponseCallback[SchemaRewriteResponse]): Unit = js.native
   def rewrite(
@@ -1039,7 +1038,7 @@ class ResourceObjects protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceObjectsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceObjectsSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -1134,7 +1133,7 @@ class ResourceObjects protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceObjectsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceObjectsTestiampermissions,
@@ -1240,7 +1239,7 @@ class ResourceObjects protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaObject] = js.native
   def update(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def update(params: ParamsResourceObjectsUpdate): GaxiosPromise[SchemaObject] = js.native
   def update(params: ParamsResourceObjectsUpdate, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def update(
@@ -1335,7 +1334,7 @@ class ResourceObjects protected () extends StObject {
     */
   def watchAll(): GaxiosPromise[SchemaChannel] = js.native
   def watchAll(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
-  def watchAll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
+  def watchAll(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watchAll(params: ParamsResourceObjectsWatchall): GaxiosPromise[SchemaChannel] = js.native
   def watchAll(params: ParamsResourceObjectsWatchall, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watchAll(

@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassBreak extends Object {
+trait ClassBreak
+  extends StObject
+     with Object {
   
   /**
     * The label describing the given class break for use in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#ClassBreak)
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The upper bound of the class break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#ClassBreak)
     */
-  var maxValue: Double = js.native
+  var maxValue: Double
   
   /**
     * The lower bound of the class break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#ClassBreak)
     */
-  var minValue: Double = js.native
+  var minValue: Double
 }
 object ClassBreak {
   

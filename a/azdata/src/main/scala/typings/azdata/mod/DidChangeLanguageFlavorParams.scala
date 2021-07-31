@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidChangeLanguageFlavorParams extends StObject {
   
-  var flavor: String = js.native
+  var flavor: String
   
-  var language: String = js.native
+  var language: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object DidChangeLanguageFlavorParams {
   

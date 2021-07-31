@@ -2,7 +2,6 @@ package typings.chromeApps.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // | 'double';
@@ -27,11 +26,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object accessibilityFeatures {
   
-  @js.native
   trait AccessibilityFeaturesCallbackArg extends StObject {
     
     /** Whether the effective value is specific to the incognito session. This property will only be present if the incognito property in the details parameter of get() was true.  */
-    var incognitoSpecific: js.UndefOr[Boolean] = js.native
+    var incognitoSpecific: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One of
@@ -40,10 +38,10 @@ object accessibilityFeatures {
       * • controllable_by_this_extension: can be controlled by this app
       * • controlled_by_this_extension: controlled by this app
       */
-    var levelOfControl: LevelOfControl = js.native
+    var levelOfControl: LevelOfControl
     
     /** The value of the setting. */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object AccessibilityFeaturesCallbackArg {
     
@@ -70,7 +68,6 @@ object accessibilityFeatures {
     }
   }
   
-  @js.native
   trait AccessibilityFeaturesClearArg extends StObject {
     
     /**
@@ -80,7 +77,7 @@ object accessibilityFeatures {
       * • incognito_persistent: setting for the incognito profile that survives browser restarts (overrides regular preferences),
       * • incognito_session_only: setting for the incognito profile that can only be set during an incognito session and is deleted when the incognito session ends (overrides regular and incognito_persistent preferences).
       */
-    var scope: js.UndefOr[Scope] = js.native
+    var scope: js.UndefOr[Scope] = js.undefined
   }
   object AccessibilityFeaturesClearArg {
     
@@ -101,11 +98,10 @@ object accessibilityFeatures {
     }
   }
   
-  @js.native
   trait AccessibilityFeaturesGetArg extends StObject {
     
     /** Whether to return the value that applies to the incognito session (default false).  */
-    var incognito: js.UndefOr[Boolean] = js.native
+    var incognito: js.UndefOr[Boolean] = js.undefined
   }
   object AccessibilityFeaturesGetArg {
     
@@ -126,7 +122,6 @@ object accessibilityFeatures {
     }
   }
   
-  @js.native
   trait AccessibilityFeaturesSetArg extends StObject {
     
     /**
@@ -136,13 +131,13 @@ object accessibilityFeatures {
       * • incognito_persistent: setting for the incognito profile that survives browser restarts (overrides regular preferences),
       * • incognito_session_only: setting for the incognito profile that can only be set during an incognito session and is deleted when the incognito session ends (overrides regular and incognito_persistent preferences).
       */
-    var scope: js.UndefOr[Scope] = js.native
+    var scope: js.UndefOr[Scope] = js.undefined
     
     /**
       * The value of the setting.
       * Note that every setting has a specific value type, which is described together with the setting. An extension should not set a value of a different type.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object AccessibilityFeaturesSetArg {
     

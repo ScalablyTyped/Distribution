@@ -4,15 +4,15 @@
 Typings are for version 3.3.0
 
 ## Library description:
-React Google Analytics Module.
+React Google Analytics Module
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-ga |
 | Keywords           | React, GA, Google Analytics, Universal Analytics |
-| # releases         | 12 |
-| # dependents       | 269 |
-| # downloads        | 15942151 |
+| # releases         | 10 |
+| # dependents       | 294 |
+| # downloads        | 18161404 |
 | # stars            | 18 |
 
 ## Links

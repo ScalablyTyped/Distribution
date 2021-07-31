@@ -3,23 +3,21 @@ package typings.reactNavigation.anon
 import typings.reactNavigation.mod.SafeAreaViewForceInsetValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: js.UndefOr[SafeAreaViewForceInsetValue] = js.native
+  var bottom: js.UndefOr[SafeAreaViewForceInsetValue] = js.undefined
   
-  var horizontal: js.UndefOr[SafeAreaViewForceInsetValue] = js.native
+  var horizontal: js.UndefOr[SafeAreaViewForceInsetValue] = js.undefined
   
-  var left: js.UndefOr[SafeAreaViewForceInsetValue] = js.native
+  var left: js.UndefOr[SafeAreaViewForceInsetValue] = js.undefined
   
-  var right: js.UndefOr[SafeAreaViewForceInsetValue] = js.native
+  var right: js.UndefOr[SafeAreaViewForceInsetValue] = js.undefined
   
-  var top: js.UndefOr[SafeAreaViewForceInsetValue] = js.native
+  var top: js.UndefOr[SafeAreaViewForceInsetValue] = js.undefined
   
-  var vertical: js.UndefOr[SafeAreaViewForceInsetValue] = js.native
+  var vertical: js.UndefOr[SafeAreaViewForceInsetValue] = js.undefined
 }
 object Bottom {
   

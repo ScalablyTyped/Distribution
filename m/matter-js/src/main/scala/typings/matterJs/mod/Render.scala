@@ -5,7 +5,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Render")
@@ -76,6 +75,10 @@ class Render () extends StObject {
 /* static members */
 object Render {
   
+  @JSImport("matter-js", "Render")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new renderer. The options parameter is an object that specifies any properties you wish to override the defaults.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -84,18 +87,16 @@ object Render {
     * @param {object} [options]
     * @return {render} A new renderer
     */
-  @JSImport("matter-js", "Render.create")
-  @js.native
-  def create(options: IRenderDefinition): Render = js.native
+  @scala.inline
+  def create(options: IRenderDefinition): Render = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Render]
   
   /**
     * Continuously updates the render canvas on the `requestAnimationFrame` event.
     * @method run
     * @param {render} render
     */
-  @JSImport("matter-js", "Render.run")
-  @js.native
-  def run(render: Render): Unit = js.native
+  @scala.inline
+  def run(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets the pixel ratio of the renderer and updates the canvas.
@@ -104,18 +105,16 @@ object Render {
     * @param {render} render
     * @param {number} pixelRatio
     */
-  @JSImport("matter-js", "Render.setPixelRatio")
-  @js.native
-  def setPixelRatio(render: Render, pixelRatio: Double): Unit = js.native
+  @scala.inline
+  def setPixelRatio(render: Render, pixelRatio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPixelRatio")(render.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Ends execution of `Render.run` on the given `render`, by canceling the animation frame request event loop.
     * @method stop
     * @param {render} render
     */
-  @JSImport("matter-js", "Render.stop")
-  @js.native
-  def stop(render: Render): Unit = js.native
+  @scala.inline
+  def stop(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Renders the given `engine`'s `Matter.World` object.
@@ -123,7 +122,6 @@ object Render {
     * @method world
     * @param {engine} engine
     */
-  @JSImport("matter-js", "Render.world")
-  @js.native
-  def world(render: Render): Unit = js.native
+  @scala.inline
+  def world(render: Render): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("world")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -10,9 +10,9 @@ TextEncoder and TextDecoder APIs from Encoding Standard APIs in a universal pack
 | ------------------ | :-------------: |
 | Full name          | web-encoding |
 | Keywords           | TextEncoder, TextDecoder |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 36449 |
+| # releases         | 10 |
+| # dependents       | 5 |
+| # downloads        | 508468 |
 | # stars            | 0 |
 
 ## Links

@@ -5,37 +5,64 @@ import typings.fastGlob.typesMod.MicromatchOptions
 import typings.fastGlob.typesMod.ReaderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
   
   @JSImport("fast-glob/out/providers/provider", JSImport.Default)
   @js.native
-  abstract class default[T] protected () extends Provider[T] {
+  abstract class default[T] protected ()
+    extends StObject
+       with Provider[T] {
     def this(_settings: typings.fastGlob.settingsMod.default) = this()
+    
+    /* CompleteClass */
+    /* protected */ override def _getMicromatchOptions(): MicromatchOptions = js.native
+    
+    /* CompleteClass */
+    /* protected */ override def _getReaderOptions(task: Task): ReaderOptions = js.native
+    
+    /* CompleteClass */
+    /* protected */ override def _getRootDirectory(task: Task): String = js.native
+    
+    /* CompleteClass */
+    override val _settings: typings.fastGlob.settingsMod.default = js.native
+    
+    /* CompleteClass */
+    override val deepFilter: typings.fastGlob.deepMod.default = js.native
+    
+    /* CompleteClass */
+    override val entryFilter: typings.fastGlob.entryMod.default = js.native
+    
+    /* CompleteClass */
+    override val entryTransformer: typings.fastGlob.transformersEntryMod.default = js.native
+    
+    /* CompleteClass */
+    override val errorFilter: typings.fastGlob.errorMod.default = js.native
+    
+    /* CompleteClass */
+    override def read(_task: Task): T = js.native
   }
   
-  @js.native
   trait Provider[T] extends StObject {
     
-    /* protected */ def _getMicromatchOptions(): MicromatchOptions = js.native
+    /* protected */ def _getMicromatchOptions(): MicromatchOptions
     
-    /* protected */ def _getReaderOptions(task: Task): ReaderOptions = js.native
+    /* protected */ def _getReaderOptions(task: Task): ReaderOptions
     
-    /* protected */ def _getRootDirectory(task: Task): String = js.native
+    /* protected */ def _getRootDirectory(task: Task): String
     
-    val _settings: typings.fastGlob.settingsMod.default = js.native
+    val _settings: typings.fastGlob.settingsMod.default
     
-    val deepFilter: typings.fastGlob.deepMod.default = js.native
+    val deepFilter: typings.fastGlob.deepMod.default
     
-    val entryFilter: typings.fastGlob.entryMod.default = js.native
+    val entryFilter: typings.fastGlob.entryMod.default
     
-    val entryTransformer: typings.fastGlob.transformersEntryMod.default = js.native
+    val entryTransformer: typings.fastGlob.transformersEntryMod.default
     
-    val errorFilter: typings.fastGlob.errorMod.default = js.native
+    val errorFilter: typings.fastGlob.errorMod.default
     
-    def read(_task: Task): T = js.native
+    def read(_task: Task): T
   }
   object Provider {
     
@@ -56,7 +83,7 @@ object providerMod {
     }
     
     @scala.inline
-    implicit class ProviderMutableBuilder[Self <: Provider[_], T] (val x: Self with Provider[T]) extends AnyVal {
+    implicit class ProviderMutableBuilder[Self <: Provider[?], T] (val x: Self & Provider[T]) extends AnyVal {
       
       @scala.inline
       def setDeepFilter(value: typings.fastGlob.deepMod.default): Self = StObject.set(x, "deepFilter", value.asInstanceOf[js.Any])

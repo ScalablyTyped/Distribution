@@ -3,15 +3,13 @@ package typings.typedoc.anon
 import typings.typedoc.optionsDeclarationMod.SourceFileMode.Modules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var file: typings.typedoc.optionsDeclarationMod.SourceFileMode.File = js.native
+  var file: typings.typedoc.optionsDeclarationMod.SourceFileMode.File
   
-  var modules: Modules = js.native
+  var modules: Modules
 }
 object File {
   

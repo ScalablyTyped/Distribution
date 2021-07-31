@@ -2,7 +2,6 @@ package typings.googleapis.v1betaMod.accesscontextmanagerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,19 +16,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * as members, a single GCP project may belong to multiple Service Perimeter
   * Bridges.
   */
-@js.native
 trait SchemaServicePerimeter extends StObject {
   
   /**
     * Output only. Time the `ServicePerimeter` was created in UTC.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the `ServicePerimeter` and its use. Does not affect
     * behavior.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Resource name for the ServicePerimeter.  The `short_name`
@@ -37,7 +35,7 @@ trait SchemaServicePerimeter extends StObject {
     * &#39;_&#39;. Format:
     * `accessPolicies/{policy_id}/servicePerimeters/{short_name}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Perimeter type indicator. A single project is allowed to be a member of
@@ -46,24 +44,24 @@ trait SchemaServicePerimeter extends StObject {
     * in regular perimeter. For perimeter bridges, restricted/unrestricted
     * service lists as well as access lists must be empty.
     */
-  var perimeterType: js.UndefOr[String] = js.native
+  var perimeterType: js.UndefOr[String] = js.undefined
   
   /**
     * Current ServicePerimeter configuration. Specifies sets of resources,
     * restricted/unrestricted services and access levels that determine
     * perimeter content and boundaries.
     */
-  var status: js.UndefOr[SchemaServicePerimeterConfig] = js.native
+  var status: js.UndefOr[SchemaServicePerimeterConfig] = js.undefined
   
   /**
     * Human readable title. Must be unique within the Policy.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time the `ServicePerimeter` was updated in UTC.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaServicePerimeter {
   

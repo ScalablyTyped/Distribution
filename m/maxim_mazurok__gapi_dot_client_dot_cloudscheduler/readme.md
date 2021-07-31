@@ -10,9 +10,9 @@ TypeScript typings for Cloud Scheduler API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudscheduler |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 761 |
 | # stars            | 0 |
 
 ## Links

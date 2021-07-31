@@ -16,7 +16,6 @@ import typings.fundamentalReact.popoverMod.PopperPlacement
 import typings.fundamentalReact.popoverMod.PopperSizingTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fundamentalReactStrings {
@@ -47,7 +46,9 @@ object fundamentalReactStrings {
   def ButtonGroup: ButtonGroup = "ButtonGroup".asInstanceOf[ButtonGroup]
   
   @js.native
-  sealed trait `Chart-Tree-Map` extends IconGlyph
+  sealed trait `Chart-Tree-Map`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `Chart-Tree-Map`: `Chart-Tree-Map` = "Chart-Tree-Map".asInstanceOf[`Chart-Tree-Map`]
   
@@ -182,7 +183,9 @@ object fundamentalReactStrings {
   def MessageStrip: MessageStrip = "MessageStrip".asInstanceOf[MessageStrip]
   
   @js.native
-  sealed trait `Netweaver-business-client` extends IconGlyph
+  sealed trait `Netweaver-business-client`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `Netweaver-business-client`: `Netweaver-business-client` = "Netweaver-business-client".asInstanceOf[`Netweaver-business-client`]
   
@@ -307,127 +310,177 @@ object fundamentalReactStrings {
   def TreeViewDotTree: TreeViewDotTree = "TreeView.Tree".asInstanceOf[TreeViewDotTree]
   
   @js.native
-  sealed trait accelerated extends IconGlyph
+  sealed trait accelerated
+    extends StObject
+       with IconGlyph
   @scala.inline
   def accelerated: accelerated = "accelerated".asInstanceOf[accelerated]
   
   @js.native
-  sealed trait accept extends IconGlyph
+  sealed trait accept
+    extends StObject
+       with IconGlyph
   @scala.inline
   def accept: accept = "accept".asInstanceOf[accept]
   
   @js.native
-  sealed trait `accidental-leave` extends IconGlyph
+  sealed trait `accidental-leave`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `accidental-leave`: `accidental-leave` = "accidental-leave".asInstanceOf[`accidental-leave`]
   
   @js.native
-  sealed trait account extends IconGlyph
+  sealed trait account
+    extends StObject
+       with IconGlyph
   @scala.inline
   def account: account = "account".asInstanceOf[account]
   
   @js.native
-  sealed trait `accounting-document-verification` extends IconGlyph
+  sealed trait `accounting-document-verification`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `accounting-document-verification`: `accounting-document-verification` = "accounting-document-verification".asInstanceOf[`accounting-document-verification`]
   
   @js.native
-  sealed trait action extends IconGlyph
+  sealed trait action
+    extends StObject
+       with IconGlyph
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait `action-settings` extends IconGlyph
+  sealed trait `action-settings`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `action-settings`: `action-settings` = "action-settings".asInstanceOf[`action-settings`]
   
   @js.native
-  sealed trait activate extends IconGlyph
+  sealed trait activate
+    extends StObject
+       with IconGlyph
   @scala.inline
   def activate: activate = "activate".asInstanceOf[activate]
   
   @js.native
-  sealed trait activities extends IconGlyph
+  sealed trait activities
+    extends StObject
+       with IconGlyph
   @scala.inline
   def activities: activities = "activities".asInstanceOf[activities]
   
   @js.native
-  sealed trait `activity-2` extends IconGlyph
+  sealed trait `activity-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `activity-2`: `activity-2` = "activity-2".asInstanceOf[`activity-2`]
   
   @js.native
-  sealed trait `activity-assigned-to-goal` extends IconGlyph
+  sealed trait `activity-assigned-to-goal`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `activity-assigned-to-goal`: `activity-assigned-to-goal` = "activity-assigned-to-goal".asInstanceOf[`activity-assigned-to-goal`]
   
   @js.native
-  sealed trait `activity-individual` extends IconGlyph
+  sealed trait `activity-individual`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `activity-individual`: `activity-individual` = "activity-individual".asInstanceOf[`activity-individual`]
   
   @js.native
-  sealed trait `activity-items` extends IconGlyph
+  sealed trait `activity-items`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `activity-items`: `activity-items` = "activity-items".asInstanceOf[`activity-items`]
   
   @js.native
-  sealed trait add extends IconGlyph
+  sealed trait add
+    extends StObject
+       with IconGlyph
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait `add-activity` extends IconGlyph
+  sealed trait `add-activity`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-activity`: `add-activity` = "add-activity".asInstanceOf[`add-activity`]
   
   @js.native
-  sealed trait `add-activity-2` extends IconGlyph
+  sealed trait `add-activity-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-activity-2`: `add-activity-2` = "add-activity-2".asInstanceOf[`add-activity-2`]
   
   @js.native
-  sealed trait `add-contact` extends IconGlyph
+  sealed trait `add-contact`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-contact`: `add-contact` = "add-contact".asInstanceOf[`add-contact`]
   
   @js.native
-  sealed trait `add-coursebook` extends IconGlyph
+  sealed trait `add-coursebook`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-coursebook`: `add-coursebook` = "add-coursebook".asInstanceOf[`add-coursebook`]
   
   @js.native
-  sealed trait `add-document` extends IconGlyph
+  sealed trait `add-document`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-document`: `add-document` = "add-document".asInstanceOf[`add-document`]
   
   @js.native
-  sealed trait `add-equipment` extends IconGlyph
+  sealed trait `add-equipment`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-equipment`: `add-equipment` = "add-equipment".asInstanceOf[`add-equipment`]
   
   @js.native
-  sealed trait `add-favorite` extends IconGlyph
+  sealed trait `add-favorite`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-favorite`: `add-favorite` = "add-favorite".asInstanceOf[`add-favorite`]
   
   @js.native
-  sealed trait `add-filter` extends IconGlyph
+  sealed trait `add-filter`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-filter`: `add-filter` = "add-filter".asInstanceOf[`add-filter`]
   
   @js.native
-  sealed trait `add-photo` extends IconGlyph
+  sealed trait `add-photo`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-photo`: `add-photo` = "add-photo".asInstanceOf[`add-photo`]
   
   @js.native
-  sealed trait `add-process` extends IconGlyph
+  sealed trait `add-process`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-process`: `add-process` = "add-process".asInstanceOf[`add-process`]
   
   @js.native
-  sealed trait `add-product` extends IconGlyph
+  sealed trait `add-product`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `add-product`: `add-product` = "add-product".asInstanceOf[`add-product`]
   
@@ -447,22 +500,30 @@ object fundamentalReactStrings {
   def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
-  sealed trait `address-book` extends IconGlyph
+  sealed trait `address-book`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `address-book`: `address-book` = "address-book".asInstanceOf[`address-book`]
   
   @js.native
-  sealed trait addresses extends IconGlyph
+  sealed trait addresses
+    extends StObject
+       with IconGlyph
   @scala.inline
   def addresses: addresses = "addresses".asInstanceOf[addresses]
   
   @js.native
-  sealed trait after extends InputGroupAddonPosition
+  sealed trait after
+    extends StObject
+       with InputGroupAddonPosition
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   
   @js.native
-  sealed trait alert extends IconGlyph
+  sealed trait alert
+    extends StObject
+       with IconGlyph
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   
@@ -472,62 +533,86 @@ object fundamentalReactStrings {
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait `along-stacked-chart` extends IconGlyph
+  sealed trait `along-stacked-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `along-stacked-chart`: `along-stacked-chart` = "along-stacked-chart".asInstanceOf[`along-stacked-chart`]
   
   @js.native
-  sealed trait `alphabetical-order` extends IconGlyph
+  sealed trait `alphabetical-order`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `alphabetical-order`: `alphabetical-order` = "alphabetical-order".asInstanceOf[`alphabetical-order`]
   
   @js.native
-  sealed trait appointment extends IconGlyph
+  sealed trait appointment
+    extends StObject
+       with IconGlyph
   @scala.inline
   def appointment: appointment = "appointment".asInstanceOf[appointment]
   
   @js.native
-  sealed trait `appointment-2` extends IconGlyph
+  sealed trait `appointment-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `appointment-2`: `appointment-2` = "appointment-2".asInstanceOf[`appointment-2`]
   
   @js.native
-  sealed trait approvals extends IconGlyph
+  sealed trait approvals
+    extends StObject
+       with IconGlyph
   @scala.inline
   def approvals: approvals = "approvals".asInstanceOf[approvals]
   
   @js.native
-  sealed trait `area-chart` extends IconGlyph
+  sealed trait `area-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `area-chart`: `area-chart` = "area-chart".asInstanceOf[`area-chart`]
   
   @js.native
-  sealed trait arobase extends IconGlyph
+  sealed trait arobase
+    extends StObject
+       with IconGlyph
   @scala.inline
   def arobase: arobase = "arobase".asInstanceOf[arobase]
   
   @js.native
-  sealed trait `arrow-bottom` extends IconGlyph
+  sealed trait `arrow-bottom`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `arrow-bottom`: `arrow-bottom` = "arrow-bottom".asInstanceOf[`arrow-bottom`]
   
   @js.native
-  sealed trait `arrow-down` extends IconGlyph
+  sealed trait `arrow-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `arrow-down`: `arrow-down` = "arrow-down".asInstanceOf[`arrow-down`]
   
   @js.native
-  sealed trait `arrow-left` extends IconGlyph
+  sealed trait `arrow-left`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `arrow-left`: `arrow-left` = "arrow-left".asInstanceOf[`arrow-left`]
   
   @js.native
-  sealed trait `arrow-right` extends IconGlyph
+  sealed trait `arrow-right`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `arrow-right`: `arrow-right` = "arrow-right".asInstanceOf[`arrow-right`]
   
   @js.native
-  sealed trait `arrow-top` extends IconGlyph
+  sealed trait `arrow-top`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `arrow-top`: `arrow-top` = "arrow-top".asInstanceOf[`arrow-top`]
   
@@ -542,142 +627,198 @@ object fundamentalReactStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait attachment extends IconGlyph
+  sealed trait attachment
+    extends StObject
+       with IconGlyph
   @scala.inline
   def attachment: attachment = "attachment".asInstanceOf[attachment]
   
   @js.native
-  sealed trait `attachment-audio` extends IconGlyph
+  sealed trait `attachment-audio`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `attachment-audio`: `attachment-audio` = "attachment-audio".asInstanceOf[`attachment-audio`]
   
   @js.native
-  sealed trait `attachment-e-pub` extends IconGlyph
+  sealed trait `attachment-e-pub`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `attachment-e-pub`: `attachment-e-pub` = "attachment-e-pub".asInstanceOf[`attachment-e-pub`]
   
   @js.native
-  sealed trait `attachment-html` extends IconGlyph
+  sealed trait `attachment-html`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `attachment-html`: `attachment-html` = "attachment-html".asInstanceOf[`attachment-html`]
   
   @js.native
-  sealed trait `attachment-photo` extends IconGlyph
+  sealed trait `attachment-photo`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `attachment-photo`: `attachment-photo` = "attachment-photo".asInstanceOf[`attachment-photo`]
   
   @js.native
-  sealed trait `attachment-text-file` extends IconGlyph
+  sealed trait `attachment-text-file`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `attachment-text-file`: `attachment-text-file` = "attachment-text-file".asInstanceOf[`attachment-text-file`]
   
   @js.native
-  sealed trait `attachment-video` extends IconGlyph
+  sealed trait `attachment-video`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `attachment-video`: `attachment-video` = "attachment-video".asInstanceOf[`attachment-video`]
   
   @js.native
-  sealed trait `attachment-zip-file` extends IconGlyph
+  sealed trait `attachment-zip-file`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `attachment-zip-file`: `attachment-zip-file` = "attachment-zip-file".asInstanceOf[`attachment-zip-file`]
   
   @js.native
-  sealed trait attention extends ButtonTypes
+  sealed trait attention
+    extends StObject
+       with ButtonTypes
   @scala.inline
   def attention: attention = "attention".asInstanceOf[attention]
   
   @js.native
-  sealed trait `back-to-top` extends IconGlyph
+  sealed trait `back-to-top`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `back-to-top`: `back-to-top` = "back-to-top".asInstanceOf[`back-to-top`]
   
   @js.native
-  sealed trait background extends IconGlyph
+  sealed trait background
+    extends StObject
+       with IconGlyph
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   
   @js.native
-  sealed trait badge extends IconGlyph
+  sealed trait badge
+    extends StObject
+       with IconGlyph
   @scala.inline
   def badge: badge = "badge".asInstanceOf[badge]
   
   @js.native
-  sealed trait `bar-chart` extends IconGlyph
+  sealed trait `bar-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bar-chart`: `bar-chart` = "bar-chart".asInstanceOf[`bar-chart`]
   
   @js.native
-  sealed trait `bar-code` extends IconGlyph
+  sealed trait `bar-code`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bar-code`: `bar-code` = "bar-code".asInstanceOf[`bar-code`]
   
   @js.native
-  sealed trait basket extends IconGlyph
+  sealed trait basket
+    extends StObject
+       with IconGlyph
   @scala.inline
   def basket: basket = "basket".asInstanceOf[basket]
   
   @js.native
-  sealed trait `batch-payments` extends IconGlyph
+  sealed trait `batch-payments`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `batch-payments`: `batch-payments` = "batch-payments".asInstanceOf[`batch-payments`]
   
   @js.native
-  sealed trait `bbyd-active-sales` extends IconGlyph
+  sealed trait `bbyd-active-sales`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bbyd-active-sales`: `bbyd-active-sales` = "bbyd-active-sales".asInstanceOf[`bbyd-active-sales`]
   
   @js.native
-  sealed trait `bbyd-dashboard` extends IconGlyph
+  sealed trait `bbyd-dashboard`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bbyd-dashboard`: `bbyd-dashboard` = "bbyd-dashboard".asInstanceOf[`bbyd-dashboard`]
   
   @js.native
-  sealed trait bed extends IconGlyph
+  sealed trait bed
+    extends StObject
+       with IconGlyph
   @scala.inline
   def bed: bed = "bed".asInstanceOf[bed]
   
   @js.native
-  sealed trait before extends InputGroupAddonPosition
+  sealed trait before
+    extends StObject
+       with InputGroupAddonPosition
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   
   @js.native
-  sealed trait begin extends IconGlyph
+  sealed trait begin
+    extends StObject
+       with IconGlyph
   @scala.inline
   def begin: begin = "begin".asInstanceOf[begin]
   
   @js.native
-  sealed trait bell extends IconGlyph
+  sealed trait bell
+    extends StObject
+       with IconGlyph
   @scala.inline
   def bell: bell = "bell".asInstanceOf[bell]
   
   @js.native
-  sealed trait `blank-tag` extends IconGlyph
+  sealed trait `blank-tag`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `blank-tag`: `blank-tag` = "blank-tag".asInstanceOf[`blank-tag`]
   
   @js.native
-  sealed trait `blank-tag-2` extends IconGlyph
+  sealed trait `blank-tag-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `blank-tag-2`: `blank-tag-2` = "blank-tag-2".asInstanceOf[`blank-tag-2`]
   
   @js.native
-  sealed trait `bo-strategy-management` extends IconGlyph
+  sealed trait `bo-strategy-management`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bo-strategy-management`: `bo-strategy-management` = "bo-strategy-management".asInstanceOf[`bo-strategy-management`]
   
   @js.native
-  sealed trait `bold-text` extends IconGlyph
+  sealed trait `bold-text`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bold-text`: `bold-text` = "bold-text".asInstanceOf[`bold-text`]
   
   @js.native
-  sealed trait bookmark extends IconGlyph
+  sealed trait bookmark
+    extends StObject
+       with IconGlyph
   @scala.inline
   def bookmark: bookmark = "bookmark".asInstanceOf[bookmark]
   
   @js.native
-  sealed trait border extends IconGlyph
+  sealed trait border
+    extends StObject
+       with IconGlyph
   @scala.inline
   def border: border = "border".asInstanceOf[border]
   
@@ -687,92 +828,128 @@ object fundamentalReactStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends PopperPlacement
+  sealed trait bottom
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-center` extends InlineHelpPlacement
+  sealed trait `bottom-center`
+    extends StObject
+       with InlineHelpPlacement
   @scala.inline
   def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   
   @js.native
-  sealed trait `bottom-end` extends PopperPlacement
+  sealed trait `bottom-end`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `bottom-end`: `bottom-end` = "bottom-end".asInstanceOf[`bottom-end`]
   
   @js.native
-  sealed trait `bottom-left` extends InlineHelpPlacement
+  sealed trait `bottom-left`
+    extends StObject
+       with InlineHelpPlacement
   @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
-  sealed trait `bottom-right` extends InlineHelpPlacement
+  sealed trait `bottom-right`
+    extends StObject
+       with InlineHelpPlacement
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
-  sealed trait `bottom-start` extends PopperPlacement
+  sealed trait `bottom-start`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
   
   @js.native
-  sealed trait `broken-link` extends IconGlyph
+  sealed trait `broken-link`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `broken-link`: `broken-link` = "broken-link".asInstanceOf[`broken-link`]
   
   @js.native
-  sealed trait `bubble-chart` extends IconGlyph
+  sealed trait `bubble-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bubble-chart`: `bubble-chart` = "bubble-chart".asInstanceOf[`bubble-chart`]
   
   @js.native
-  sealed trait building extends IconGlyph
+  sealed trait building
+    extends StObject
+       with IconGlyph
   @scala.inline
   def building: building = "building".asInstanceOf[building]
   
   @js.native
-  sealed trait `bullet-text` extends IconGlyph
+  sealed trait `bullet-text`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bullet-text`: `bullet-text` = "bullet-text".asInstanceOf[`bullet-text`]
   
   @js.native
-  sealed trait burglary extends IconGlyph
+  sealed trait burglary
+    extends StObject
+       with IconGlyph
   @scala.inline
   def burglary: burglary = "burglary".asInstanceOf[burglary]
   
   @js.native
-  sealed trait `bus-public-transport` extends IconGlyph
+  sealed trait `bus-public-transport`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `bus-public-transport`: `bus-public-transport` = "bus-public-transport".asInstanceOf[`bus-public-transport`]
   
   @js.native
-  sealed trait `business-by-design` extends IconGlyph
+  sealed trait `business-by-design`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `business-by-design`: `business-by-design` = "business-by-design".asInstanceOf[`business-by-design`]
   
   @js.native
-  sealed trait `business-card` extends IconGlyph
+  sealed trait `business-card`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `business-card`: `business-card` = "business-card".asInstanceOf[`business-card`]
   
   @js.native
-  sealed trait `business-objects-experience` extends IconGlyph
+  sealed trait `business-objects-experience`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `business-objects-experience`: `business-objects-experience` = "business-objects-experience".asInstanceOf[`business-objects-experience`]
   
   @js.native
-  sealed trait `business-objects-explorer` extends IconGlyph
+  sealed trait `business-objects-explorer`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `business-objects-explorer`: `business-objects-explorer` = "business-objects-explorer".asInstanceOf[`business-objects-explorer`]
   
   @js.native
-  sealed trait `business-objects-mobile` extends IconGlyph
+  sealed trait `business-objects-mobile`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `business-objects-mobile`: `business-objects-mobile` = "business-objects-mobile".asInstanceOf[`business-objects-mobile`]
   
   @js.native
-  sealed trait `business-one` extends IconGlyph
+  sealed trait `business-one`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `business-one`: `business-one` = "business-one".asInstanceOf[`business-one`]
   
@@ -782,152 +959,212 @@ object fundamentalReactStrings {
   def button_ : button_ = "button".asInstanceOf[button_]
   
   @js.native
-  sealed trait calendar extends IconGlyph
+  sealed trait calendar
+    extends StObject
+       with IconGlyph
   @scala.inline
   def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
-  sealed trait call extends IconGlyph
+  sealed trait call
+    extends StObject
+       with IconGlyph
   @scala.inline
   def call: call = "call".asInstanceOf[call]
   
   @js.native
-  sealed trait camera extends IconGlyph
+  sealed trait camera
+    extends StObject
+       with IconGlyph
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
-  sealed trait cancel extends IconGlyph
+  sealed trait cancel
+    extends StObject
+       with IconGlyph
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait `cancel-maintenance` extends IconGlyph
+  sealed trait `cancel-maintenance`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cancel-maintenance`: `cancel-maintenance` = "cancel-maintenance".asInstanceOf[`cancel-maintenance`]
   
   @js.native
-  sealed trait `cancel-share` extends IconGlyph
+  sealed trait `cancel-share`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cancel-share`: `cancel-share` = "cancel-share".asInstanceOf[`cancel-share`]
   
   @js.native
-  sealed trait `capital-projects` extends IconGlyph
+  sealed trait `capital-projects`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `capital-projects`: `capital-projects` = "capital-projects".asInstanceOf[`capital-projects`]
   
   @js.native
-  sealed trait `car-rental` extends IconGlyph
+  sealed trait `car-rental`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `car-rental`: `car-rental` = "car-rental".asInstanceOf[`car-rental`]
   
   @js.native
-  sealed trait card extends IconGlyph
+  sealed trait card
+    extends StObject
+       with IconGlyph
   @scala.inline
   def card: card = "card".asInstanceOf[card]
   
   @js.native
-  sealed trait `cargo-train` extends IconGlyph
+  sealed trait `cargo-train`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cargo-train`: `cargo-train` = "cargo-train".asInstanceOf[`cargo-train`]
   
   @js.native
-  sealed trait cart extends IconGlyph
+  sealed trait cart
+    extends StObject
+       with IconGlyph
   @scala.inline
   def cart: cart = "cart".asInstanceOf[cart]
   
   @js.native
-  sealed trait `cart-2` extends IconGlyph
+  sealed trait `cart-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cart-2`: `cart-2` = "cart-2".asInstanceOf[`cart-2`]
   
   @js.native
-  sealed trait `cart-3` extends IconGlyph
+  sealed trait `cart-3`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cart-3`: `cart-3` = "cart-3".asInstanceOf[`cart-3`]
   
   @js.native
-  sealed trait `cart-4` extends IconGlyph
+  sealed trait `cart-4`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cart-4`: `cart-4` = "cart-4".asInstanceOf[`cart-4`]
   
   @js.native
-  sealed trait `cart-5` extends IconGlyph
+  sealed trait `cart-5`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cart-5`: `cart-5` = "cart-5".asInstanceOf[`cart-5`]
   
   @js.native
-  sealed trait `cart-approval` extends IconGlyph
+  sealed trait `cart-approval`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cart-approval`: `cart-approval` = "cart-approval".asInstanceOf[`cart-approval`]
   
   @js.native
-  sealed trait `cart-full` extends IconGlyph
+  sealed trait `cart-full`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `cart-full`: `cart-full` = "cart-full".asInstanceOf[`cart-full`]
   
   @js.native
-  sealed trait cause extends IconGlyph
+  sealed trait cause
+    extends StObject
+       with IconGlyph
   @scala.inline
   def cause: cause = "cause".asInstanceOf[cause]
   
   @js.native
-  sealed trait `chain-link` extends IconGlyph
+  sealed trait `chain-link`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `chain-link`: `chain-link` = "chain-link".asInstanceOf[`chain-link`]
   
   @js.native
-  sealed trait chalkboard extends IconGlyph
+  sealed trait chalkboard
+    extends StObject
+       with IconGlyph
   @scala.inline
   def chalkboard: chalkboard = "chalkboard".asInstanceOf[chalkboard]
   
   @js.native
-  sealed trait `chart-axis` extends IconGlyph
+  sealed trait `chart-axis`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `chart-axis`: `chart-axis` = "chart-axis".asInstanceOf[`chart-axis`]
   
   @js.native
-  sealed trait `chart-table-view` extends IconGlyph
+  sealed trait `chart-table-view`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `chart-table-view`: `chart-table-view` = "chart-table-view".asInstanceOf[`chart-table-view`]
   
   @js.native
-  sealed trait `check-availability` extends IconGlyph
+  sealed trait `check-availability`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `check-availability`: `check-availability` = "check-availability".asInstanceOf[`check-availability`]
   
   @js.native
-  sealed trait checklist extends IconGlyph
+  sealed trait checklist
+    extends StObject
+       with IconGlyph
   @scala.inline
   def checklist: checklist = "checklist".asInstanceOf[checklist]
   
   @js.native
-  sealed trait `checklist-2` extends IconGlyph
+  sealed trait `checklist-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `checklist-2`: `checklist-2` = "checklist-2".asInstanceOf[`checklist-2`]
   
   @js.native
-  sealed trait `checklist-item` extends IconGlyph
+  sealed trait `checklist-item`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `checklist-item`: `checklist-item` = "checklist-item".asInstanceOf[`checklist-item`]
   
   @js.native
-  sealed trait `checklist-item-2` extends IconGlyph
+  sealed trait `checklist-item-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `checklist-item-2`: `checklist-item-2` = "checklist-item-2".asInstanceOf[`checklist-item-2`]
   
   @js.native
-  sealed trait `chevron-phase` extends IconGlyph
+  sealed trait `chevron-phase`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `chevron-phase`: `chevron-phase` = "chevron-phase".asInstanceOf[`chevron-phase`]
   
   @js.native
-  sealed trait `chevron-phase-2` extends IconGlyph
+  sealed trait `chevron-phase-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `chevron-phase-2`: `chevron-phase-2` = "chevron-phase-2".asInstanceOf[`chevron-phase-2`]
   
   @js.native
-  sealed trait `choropleth-chart` extends IconGlyph
+  sealed trait `choropleth-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `choropleth-chart`: `choropleth-chart` = "choropleth-chart".asInstanceOf[`choropleth-chart`]
   
@@ -937,262 +1174,366 @@ object fundamentalReactStrings {
   def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait `circle-task` extends IconGlyph
+  sealed trait `circle-task`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `circle-task`: `circle-task` = "circle-task".asInstanceOf[`circle-task`]
   
   @js.native
-  sealed trait `circle-task-2` extends IconGlyph
+  sealed trait `circle-task-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `circle-task-2`: `circle-task-2` = "circle-task-2".asInstanceOf[`circle-task-2`]
   
   @js.native
-  sealed trait `citizen-connect` extends IconGlyph
+  sealed trait `citizen-connect`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `citizen-connect`: `citizen-connect` = "citizen-connect".asInstanceOf[`citizen-connect`]
   
   @js.native
-  sealed trait `clear-filter` extends IconGlyph
+  sealed trait `clear-filter`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `clear-filter`: `clear-filter` = "clear-filter".asInstanceOf[`clear-filter`]
   
   @js.native
-  sealed trait `clinical-order` extends IconGlyph
+  sealed trait `clinical-order`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `clinical-order`: `clinical-order` = "clinical-order".asInstanceOf[`clinical-order`]
   
   @js.native
-  sealed trait `clinical-tast-tracker` extends IconGlyph
+  sealed trait `clinical-tast-tracker`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `clinical-tast-tracker`: `clinical-tast-tracker` = "clinical-tast-tracker".asInstanceOf[`clinical-tast-tracker`]
   
   @js.native
-  sealed trait `close-command-field` extends IconGlyph
+  sealed trait `close-command-field`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `close-command-field`: `close-command-field` = "close-command-field".asInstanceOf[`close-command-field`]
   
   @js.native
-  sealed trait cloud extends IconGlyph
+  sealed trait cloud
+    extends StObject
+       with IconGlyph
   @scala.inline
   def cloud: cloud = "cloud".asInstanceOf[cloud]
   
   @js.native
-  sealed trait co extends IconGlyph
+  sealed trait co
+    extends StObject
+       with IconGlyph
   @scala.inline
   def co: co = "co".asInstanceOf[co]
   
   @js.native
-  sealed trait collaborate extends IconGlyph
+  sealed trait collaborate
+    extends StObject
+       with IconGlyph
   @scala.inline
   def collaborate: collaborate = "collaborate".asInstanceOf[collaborate]
   
   @js.native
-  sealed trait collapse extends IconGlyph
+  sealed trait collapse
+    extends StObject
+       with IconGlyph
   @scala.inline
   def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
-  sealed trait `collapse-group` extends IconGlyph
+  sealed trait `collapse-group`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `collapse-group`: `collapse-group` = "collapse-group".asInstanceOf[`collapse-group`]
   
   @js.native
-  sealed trait `collections-insight` extends IconGlyph
+  sealed trait `collections-insight`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `collections-insight`: `collections-insight` = "collections-insight".asInstanceOf[`collections-insight`]
   
   @js.native
-  sealed trait `collections-management` extends IconGlyph
+  sealed trait `collections-management`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `collections-management`: `collections-management` = "collections-management".asInstanceOf[`collections-management`]
   
   @js.native
-  sealed trait collision extends IconGlyph
+  sealed trait collision
+    extends StObject
+       with IconGlyph
   @scala.inline
   def collision: collision = "collision".asInstanceOf[collision]
   
   @js.native
-  sealed trait `color-fill` extends IconGlyph
+  sealed trait `color-fill`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `color-fill`: `color-fill` = "color-fill".asInstanceOf[`color-fill`]
   
   @js.native
-  sealed trait `column-chart-dual-axis` extends IconGlyph
+  sealed trait `column-chart-dual-axis`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `column-chart-dual-axis`: `column-chart-dual-axis` = "column-chart-dual-axis".asInstanceOf[`column-chart-dual-axis`]
   
   @js.native
-  sealed trait comment extends IconGlyph
+  sealed trait comment
+    extends StObject
+       with IconGlyph
   @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
-  sealed trait `commission-check` extends IconGlyph
+  sealed trait `commission-check`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `commission-check`: `commission-check` = "commission-check".asInstanceOf[`commission-check`]
   
   @js.native
-  sealed trait `company-view` extends IconGlyph
+  sealed trait `company-view`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `company-view`: `company-view` = "company-view".asInstanceOf[`company-view`]
   
   @js.native
-  sealed trait compare extends IconGlyph
+  sealed trait compare
+    extends StObject
+       with IconGlyph
   @scala.inline
   def compare: compare = "compare".asInstanceOf[compare]
   
   @js.native
-  sealed trait `compare-2` extends IconGlyph
+  sealed trait `compare-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `compare-2`: `compare-2` = "compare-2".asInstanceOf[`compare-2`]
   
   @js.native
-  sealed trait competitor extends IconGlyph
+  sealed trait competitor
+    extends StObject
+       with IconGlyph
   @scala.inline
   def competitor: competitor = "competitor".asInstanceOf[competitor]
   
   @js.native
-  sealed trait complete extends IconGlyph
+  sealed trait complete
+    extends StObject
+       with IconGlyph
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait connected extends IconGlyph
+  sealed trait connected
+    extends StObject
+       with IconGlyph
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait contacts extends IconGlyph
+  sealed trait contacts
+    extends StObject
+       with IconGlyph
   @scala.inline
   def contacts: contacts = "contacts".asInstanceOf[contacts]
   
   @js.native
-  sealed trait copy extends IconGlyph
+  sealed trait copy
+    extends StObject
+       with IconGlyph
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait `course-book` extends IconGlyph
+  sealed trait `course-book`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `course-book`: `course-book` = "course-book".asInstanceOf[`course-book`]
   
   @js.native
-  sealed trait `course-program` extends IconGlyph
+  sealed trait `course-program`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `course-program`: `course-program` = "course-program".asInstanceOf[`course-program`]
   
   @js.native
-  sealed trait create extends IconGlyph
+  sealed trait create
+    extends StObject
+       with IconGlyph
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait `create-entry-time` extends IconGlyph
+  sealed trait `create-entry-time`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `create-entry-time`: `create-entry-time` = "create-entry-time".asInstanceOf[`create-entry-time`]
   
   @js.native
-  sealed trait `create-form` extends IconGlyph
+  sealed trait `create-form`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `create-form`: `create-form` = "create-form".asInstanceOf[`create-form`]
   
   @js.native
-  sealed trait `create-leave-request` extends IconGlyph
+  sealed trait `create-leave-request`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `create-leave-request`: `create-leave-request` = "create-leave-request".asInstanceOf[`create-leave-request`]
   
   @js.native
-  sealed trait `create-session` extends IconGlyph
+  sealed trait `create-session`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `create-session`: `create-session` = "create-session".asInstanceOf[`create-session`]
   
   @js.native
-  sealed trait `credit-card` extends IconGlyph
+  sealed trait `credit-card`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `credit-card`: `credit-card` = "credit-card".asInstanceOf[`credit-card`]
   
   @js.native
-  sealed trait critical extends ObjectStatusTypes
+  sealed trait critical
+    extends StObject
+       with ObjectStatusTypes
   @scala.inline
   def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
-  sealed trait `crm-sales` extends IconGlyph
+  sealed trait `crm-sales`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `crm-sales`: `crm-sales` = "crm-sales".asInstanceOf[`crm-sales`]
   
   @js.native
-  sealed trait `crm-service-manager` extends IconGlyph
+  sealed trait `crm-service-manager`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `crm-service-manager`: `crm-service-manager` = "crm-service-manager".asInstanceOf[`crm-service-manager`]
   
   @js.native
-  sealed trait crop extends IconGlyph
+  sealed trait crop
+    extends StObject
+       with IconGlyph
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
-  sealed trait `crossed-line-chart` extends IconGlyph
+  sealed trait `crossed-line-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `crossed-line-chart`: `crossed-line-chart` = "crossed-line-chart".asInstanceOf[`crossed-line-chart`]
   
   @js.native
-  sealed trait curriculum extends IconGlyph
+  sealed trait curriculum
+    extends StObject
+       with IconGlyph
   @scala.inline
   def curriculum: curriculum = "curriculum".asInstanceOf[curriculum]
   
   @js.native
-  sealed trait cursor extends IconGlyph
+  sealed trait cursor
+    extends StObject
+       with IconGlyph
   @scala.inline
   def cursor: cursor = "cursor".asInstanceOf[cursor]
   
   @js.native
-  sealed trait customer extends IconGlyph
+  sealed trait customer
+    extends StObject
+       with IconGlyph
   @scala.inline
   def customer: customer = "customer".asInstanceOf[customer]
   
   @js.native
-  sealed trait `customer-and-contacts` extends IconGlyph
+  sealed trait `customer-and-contacts`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `customer-and-contacts`: `customer-and-contacts` = "customer-and-contacts".asInstanceOf[`customer-and-contacts`]
   
   @js.native
-  sealed trait `customer-and-supplier` extends IconGlyph
+  sealed trait `customer-and-supplier`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `customer-and-supplier`: `customer-and-supplier` = "customer-and-supplier".asInstanceOf[`customer-and-supplier`]
   
   @js.native
-  sealed trait `customer-briefing` extends IconGlyph
+  sealed trait `customer-briefing`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `customer-briefing`: `customer-briefing` = "customer-briefing".asInstanceOf[`customer-briefing`]
   
   @js.native
-  sealed trait `customer-financial-fact-sheet` extends IconGlyph
+  sealed trait `customer-financial-fact-sheet`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `customer-financial-fact-sheet`: `customer-financial-fact-sheet` = "customer-financial-fact-sheet".asInstanceOf[`customer-financial-fact-sheet`]
   
   @js.native
-  sealed trait `customer-history` extends IconGlyph
+  sealed trait `customer-history`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `customer-history`: `customer-history` = "customer-history".asInstanceOf[`customer-history`]
   
   @js.native
-  sealed trait `customer-order-entry` extends IconGlyph
+  sealed trait `customer-order-entry`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `customer-order-entry`: `customer-order-entry` = "customer-order-entry".asInstanceOf[`customer-order-entry`]
   
   @js.native
-  sealed trait `customer-view` extends IconGlyph
+  sealed trait `customer-view`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `customer-view`: `customer-view` = "customer-view".asInstanceOf[`customer-view`]
   
   @js.native
-  sealed trait customize extends IconGlyph
+  sealed trait customize
+    extends StObject
+       with IconGlyph
   @scala.inline
   def customize: customize = "customize".asInstanceOf[customize]
   
   @js.native
-  sealed trait database extends IconGlyph
+  sealed trait database
+    extends StObject
+       with IconGlyph
   @scala.inline
   def database: database = "database".asInstanceOf[database]
   
@@ -1202,7 +1543,9 @@ object fundamentalReactStrings {
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait `date-time` extends IconGlyph
+  sealed trait `date-time`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `date-time`: `date-time` = "date-time".asInstanceOf[`date-time`]
   
@@ -1212,22 +1555,30 @@ object fundamentalReactStrings {
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait decision extends IconGlyph
+  sealed trait decision
+    extends StObject
+       with IconGlyph
   @scala.inline
   def decision: decision = "decision".asInstanceOf[decision]
   
   @js.native
-  sealed trait decline extends IconGlyph
+  sealed trait decline
+    extends StObject
+       with IconGlyph
   @scala.inline
   def decline: decline = "decline".asInstanceOf[decline]
   
   @js.native
-  sealed trait `decrease-line-height` extends IconGlyph
+  sealed trait `decrease-line-height`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `decrease-line-height`: `decrease-line-height` = "decrease-line-height".asInstanceOf[`decrease-line-height`]
   
   @js.native
-  sealed trait delete extends IconGlyph
+  sealed trait delete
+    extends StObject
+       with IconGlyph
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
@@ -1237,247 +1588,345 @@ object fundamentalReactStrings {
   def descending: descending = "descending".asInstanceOf[descending]
   
   @js.native
-  sealed trait `detail-view` extends IconGlyph
+  sealed trait `detail-view`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `detail-view`: `detail-view` = "detail-view".asInstanceOf[`detail-view`]
   
   @js.native
-  sealed trait `developer-settings` extends IconGlyph
+  sealed trait `developer-settings`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `developer-settings`: `developer-settings` = "developer-settings".asInstanceOf[`developer-settings`]
   
   @js.native
-  sealed trait dialog extends PopoverTypes
+  sealed trait dialog
+    extends StObject
+       with PopoverTypes
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dimension extends IconGlyph
+  sealed trait dimension
+    extends StObject
+       with IconGlyph
   @scala.inline
   def dimension: dimension = "dimension".asInstanceOf[dimension]
   
   @js.native
-  sealed trait disconnected extends IconGlyph
+  sealed trait disconnected
+    extends StObject
+       with IconGlyph
   @scala.inline
   def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
-  sealed trait discussion extends IconGlyph
+  sealed trait discussion
+    extends StObject
+       with IconGlyph
   @scala.inline
   def discussion: discussion = "discussion".asInstanceOf[discussion]
   
   @js.native
-  sealed trait `discussion-2` extends IconGlyph
+  sealed trait `discussion-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `discussion-2`: `discussion-2` = "discussion-2".asInstanceOf[`discussion-2`]
   
   @js.native
-  sealed trait dishwasher extends IconGlyph
+  sealed trait dishwasher
+    extends StObject
+       with IconGlyph
   @scala.inline
   def dishwasher: dishwasher = "dishwasher".asInstanceOf[dishwasher]
   
   @js.native
-  sealed trait display extends IconGlyph
+  sealed trait display
+    extends StObject
+       with IconGlyph
   @scala.inline
   def display: display = "display".asInstanceOf[display]
   
   @js.native
-  sealed trait `display-more` extends IconGlyph
+  sealed trait `display-more`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `display-more`: `display-more` = "display-more".asInstanceOf[`display-more`]
   
   @js.native
-  sealed trait `doc-attachment` extends IconGlyph
+  sealed trait `doc-attachment`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `doc-attachment`: `doc-attachment` = "doc-attachment".asInstanceOf[`doc-attachment`]
   
   @js.native
-  sealed trait doctor extends IconGlyph
+  sealed trait doctor
+    extends StObject
+       with IconGlyph
   @scala.inline
   def doctor: doctor = "doctor".asInstanceOf[doctor]
   
   @js.native
-  sealed trait document extends IconGlyph
+  sealed trait document
+    extends StObject
+       with IconGlyph
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
   @js.native
-  sealed trait `document-text` extends IconGlyph
+  sealed trait `document-text`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `document-text`: `document-text` = "document-text".asInstanceOf[`document-text`]
   
   @js.native
-  sealed trait documents extends IconGlyph
+  sealed trait documents
+    extends StObject
+       with IconGlyph
   @scala.inline
   def documents: documents = "documents".asInstanceOf[documents]
   
   @js.native
-  sealed trait `donut-chart` extends IconGlyph
+  sealed trait `donut-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `donut-chart`: `donut-chart` = "donut-chart".asInstanceOf[`donut-chart`]
   
   @js.native
-  sealed trait down extends IconGlyph
+  sealed trait down
+    extends StObject
+       with IconGlyph
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait download extends IconGlyph
+  sealed trait download
+    extends StObject
+       with IconGlyph
   @scala.inline
   def download: download = "download".asInstanceOf[download]
   
   @js.native
-  sealed trait `download-from-cloud` extends IconGlyph
+  sealed trait `download-from-cloud`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `download-from-cloud`: `download-from-cloud` = "download-from-cloud".asInstanceOf[`download-from-cloud`]
   
   @js.native
-  sealed trait `draw-rectangle` extends IconGlyph
+  sealed trait `draw-rectangle`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `draw-rectangle`: `draw-rectangle` = "draw-rectangle".asInstanceOf[`draw-rectangle`]
   
   @js.native
-  sealed trait `drill-down` extends IconGlyph
+  sealed trait `drill-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `drill-down`: `drill-down` = "drill-down".asInstanceOf[`drill-down`]
   
   @js.native
-  sealed trait `drill-up` extends IconGlyph
+  sealed trait `drill-up`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `drill-up`: `drill-up` = "drill-up".asInstanceOf[`drill-up`]
   
   @js.native
-  sealed trait `drop-down-list` extends IconGlyph
+  sealed trait `drop-down-list`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `drop-down-list`: `drop-down-list` = "drop-down-list".asInstanceOf[`drop-down-list`]
   
   @js.native
-  sealed trait dropdown extends IconGlyph
+  sealed trait dropdown
+    extends StObject
+       with IconGlyph
   @scala.inline
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
-  sealed trait duplicate extends IconGlyph
+  sealed trait duplicate
+    extends StObject
+       with IconGlyph
   @scala.inline
   def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   
   @js.native
-  sealed trait `e-care` extends IconGlyph
+  sealed trait `e-care`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `e-care`: `e-care` = "e-care".asInstanceOf[`e-care`]
   
   @js.native
-  sealed trait `e-learning` extends IconGlyph
+  sealed trait `e-learning`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `e-learning`: `e-learning` = "e-learning".asInstanceOf[`e-learning`]
   
   @js.native
-  sealed trait `eam-work-order` extends IconGlyph
+  sealed trait `eam-work-order`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `eam-work-order`: `eam-work-order` = "eam-work-order".asInstanceOf[`eam-work-order`]
   
   @js.native
-  sealed trait edit extends IconGlyph
+  sealed trait edit
+    extends StObject
+       with IconGlyph
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
-  sealed trait `edit-outside` extends IconGlyph
+  sealed trait `edit-outside`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `edit-outside`: `edit-outside` = "edit-outside".asInstanceOf[`edit-outside`]
   
   @js.native
-  sealed trait education extends IconGlyph
+  sealed trait education
+    extends StObject
+       with IconGlyph
   @scala.inline
   def education: education = "education".asInstanceOf[education]
   
   @js.native
-  sealed trait electrocardiogram extends IconGlyph
+  sealed trait electrocardiogram
+    extends StObject
+       with IconGlyph
   @scala.inline
   def electrocardiogram: electrocardiogram = "electrocardiogram".asInstanceOf[electrocardiogram]
   
   @js.native
-  sealed trait `electronic-medical-record` extends IconGlyph
+  sealed trait `electronic-medical-record`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `electronic-medical-record`: `electronic-medical-record` = "electronic-medical-record".asInstanceOf[`electronic-medical-record`]
   
   @js.native
-  sealed trait email extends IconGlyph
+  sealed trait email
+    extends StObject
+       with IconGlyph
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait `email-read` extends IconGlyph
+  sealed trait `email-read`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `email-read`: `email-read` = "email-read".asInstanceOf[`email-read`]
   
   @js.native
-  sealed trait emphasized extends ButtonOptions
+  sealed trait emphasized
+    extends StObject
+       with ButtonOptions
   @scala.inline
   def emphasized: emphasized = "emphasized".asInstanceOf[emphasized]
   
   @js.native
-  sealed trait employee extends IconGlyph
+  sealed trait employee
+    extends StObject
+       with IconGlyph
   @scala.inline
   def employee: employee = "employee".asInstanceOf[employee]
   
   @js.native
-  sealed trait `employee-approvals` extends IconGlyph
+  sealed trait `employee-approvals`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `employee-approvals`: `employee-approvals` = "employee-approvals".asInstanceOf[`employee-approvals`]
   
   @js.native
-  sealed trait `employee-lookup` extends IconGlyph
+  sealed trait `employee-lookup`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `employee-lookup`: `employee-lookup` = "employee-lookup".asInstanceOf[`employee-lookup`]
   
   @js.native
-  sealed trait `employee-pane` extends IconGlyph
+  sealed trait `employee-pane`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `employee-pane`: `employee-pane` = "employee-pane".asInstanceOf[`employee-pane`]
   
   @js.native
-  sealed trait `employee-rejections` extends IconGlyph
+  sealed trait `employee-rejections`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `employee-rejections`: `employee-rejections` = "employee-rejections".asInstanceOf[`employee-rejections`]
   
   @js.native
-  sealed trait `end-user-experience-monitoring` extends IconGlyph
+  sealed trait `end-user-experience-monitoring`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `end-user-experience-monitoring`: `end-user-experience-monitoring` = "end-user-experience-monitoring".asInstanceOf[`end-user-experience-monitoring`]
   
   @js.native
-  sealed trait endoscopy extends IconGlyph
+  sealed trait endoscopy
+    extends StObject
+       with IconGlyph
   @scala.inline
   def endoscopy: endoscopy = "endoscopy".asInstanceOf[endoscopy]
   
   @js.native
-  sealed trait `energy-saving-lightbulb` extends IconGlyph
+  sealed trait `energy-saving-lightbulb`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `energy-saving-lightbulb`: `energy-saving-lightbulb` = "energy-saving-lightbulb".asInstanceOf[`energy-saving-lightbulb`]
   
   @js.native
-  sealed trait `enter-more` extends IconGlyph
+  sealed trait `enter-more`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `enter-more`: `enter-more` = "enter-more".asInstanceOf[`enter-more`]
   
   @js.native
-  sealed trait eraser extends IconGlyph
+  sealed trait eraser
+    extends StObject
+       with IconGlyph
   @scala.inline
   def eraser: eraser = "eraser".asInstanceOf[eraser]
   
   @js.native
-  sealed trait error extends IconGlyph
+  sealed trait error
+    extends StObject
+       with IconGlyph
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait example extends IconGlyph
+  sealed trait example
+    extends StObject
+       with IconGlyph
   @scala.inline
   def example: example = "example".asInstanceOf[example]
   
   @js.native
-  sealed trait `excel-attachment` extends IconGlyph
+  sealed trait `excel-attachment`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `excel-attachment`: `excel-attachment` = "excel-attachment".asInstanceOf[`excel-attachment`]
   
@@ -1487,202 +1936,282 @@ object fundamentalReactStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait exitfullscreen extends IconGlyph
+  sealed trait exitfullscreen
+    extends StObject
+       with IconGlyph
   @scala.inline
   def exitfullscreen: exitfullscreen = "exitfullscreen".asInstanceOf[exitfullscreen]
   
   @js.native
-  sealed trait expand extends IconGlyph
+  sealed trait expand
+    extends StObject
+       with IconGlyph
   @scala.inline
   def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
-  sealed trait `expand-group` extends IconGlyph
+  sealed trait `expand-group`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `expand-group`: `expand-group` = "expand-group".asInstanceOf[`expand-group`]
   
   @js.native
-  sealed trait `expense-report` extends IconGlyph
+  sealed trait `expense-report`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `expense-report`: `expense-report` = "expense-report".asInstanceOf[`expense-report`]
   
   @js.native
-  sealed trait explorer extends IconGlyph
+  sealed trait explorer
+    extends StObject
+       with IconGlyph
   @scala.inline
   def explorer: explorer = "explorer".asInstanceOf[explorer]
   
   @js.native
-  sealed trait factory extends IconGlyph
+  sealed trait factory
+    extends StObject
+       with IconGlyph
   @scala.inline
   def factory: factory = "factory".asInstanceOf[factory]
   
   @js.native
-  sealed trait fallback extends IconGlyph
+  sealed trait fallback
+    extends StObject
+       with IconGlyph
   @scala.inline
   def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
-  sealed trait `family-care` extends IconGlyph
+  sealed trait `family-care`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `family-care`: `family-care` = "family-care".asInstanceOf[`family-care`]
   
   @js.native
-  sealed trait `family-protection` extends IconGlyph
+  sealed trait `family-protection`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `family-protection`: `family-protection` = "family-protection".asInstanceOf[`family-protection`]
   
   @js.native
-  sealed trait favorite extends IconGlyph
+  sealed trait favorite
+    extends StObject
+       with IconGlyph
   @scala.inline
   def favorite: favorite = "favorite".asInstanceOf[favorite]
   
   @js.native
-  sealed trait `favorite-list` extends IconGlyph
+  sealed trait `favorite-list`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `favorite-list`: `favorite-list` = "favorite-list".asInstanceOf[`favorite-list`]
   
   @js.native
-  sealed trait `fax-machine` extends IconGlyph
+  sealed trait `fax-machine`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `fax-machine`: `fax-machine` = "fax-machine".asInstanceOf[`fax-machine`]
   
   @js.native
-  sealed trait feed extends IconGlyph
+  sealed trait feed
+    extends StObject
+       with IconGlyph
   @scala.inline
   def feed: feed = "feed".asInstanceOf[feed]
   
   @js.native
-  sealed trait `feeder-arrow` extends IconGlyph
+  sealed trait `feeder-arrow`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `feeder-arrow`: `feeder-arrow` = "feeder-arrow".asInstanceOf[`feeder-arrow`]
   
   @js.native
-  sealed trait filter extends IconGlyph
+  sealed trait filter
+    extends StObject
+       with IconGlyph
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait `filter-analytics` extends IconGlyph
+  sealed trait `filter-analytics`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `filter-analytics`: `filter-analytics` = "filter-analytics".asInstanceOf[`filter-analytics`]
   
   @js.native
-  sealed trait `filter-facets` extends IconGlyph
+  sealed trait `filter-facets`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `filter-facets`: `filter-facets` = "filter-facets".asInstanceOf[`filter-facets`]
   
   @js.native
-  sealed trait `filter-fields` extends IconGlyph
+  sealed trait `filter-fields`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `filter-fields`: `filter-fields` = "filter-fields".asInstanceOf[`filter-fields`]
   
   @js.native
-  sealed trait flag extends IconGlyph
+  sealed trait flag
+    extends StObject
+       with IconGlyph
   @scala.inline
   def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
-  sealed trait flight extends IconGlyph
+  sealed trait flight
+    extends StObject
+       with IconGlyph
   @scala.inline
   def flight: flight = "flight".asInstanceOf[flight]
   
   @js.native
-  sealed trait `fob-watch` extends IconGlyph
+  sealed trait `fob-watch`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `fob-watch`: `fob-watch` = "fob-watch".asInstanceOf[`fob-watch`]
   
   @js.native
-  sealed trait folder extends IconGlyph
+  sealed trait folder
+    extends StObject
+       with IconGlyph
   @scala.inline
   def folder: folder = "folder".asInstanceOf[folder]
   
   @js.native
-  sealed trait `folder-blank` extends IconGlyph
+  sealed trait `folder-blank`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `folder-blank`: `folder-blank` = "folder-blank".asInstanceOf[`folder-blank`]
   
   @js.native
-  sealed trait `folder-full` extends IconGlyph
+  sealed trait `folder-full`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `folder-full`: `folder-full` = "folder-full".asInstanceOf[`folder-full`]
   
   @js.native
-  sealed trait form extends IconGlyph
+  sealed trait form
+    extends StObject
+       with IconGlyph
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait forward extends IconGlyph
+  sealed trait forward
+    extends StObject
+       with IconGlyph
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
-  sealed trait fridge extends IconGlyph
+  sealed trait fridge
+    extends StObject
+       with IconGlyph
   @scala.inline
   def fridge: fridge = "fridge".asInstanceOf[fridge]
   
   @js.native
-  sealed trait `full-screen` extends IconGlyph
+  sealed trait `full-screen`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `full-screen`: `full-screen` = "full-screen".asInstanceOf[`full-screen`]
   
   @js.native
-  sealed trait `full-stacked-chart` extends IconGlyph
+  sealed trait `full-stacked-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `full-stacked-chart`: `full-stacked-chart` = "full-stacked-chart".asInstanceOf[`full-stacked-chart`]
   
   @js.native
-  sealed trait `full-stacked-column-chart` extends IconGlyph
+  sealed trait `full-stacked-column-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `full-stacked-column-chart`: `full-stacked-column-chart` = "full-stacked-column-chart".asInstanceOf[`full-stacked-column-chart`]
   
   @js.native
-  sealed trait `functional-location` extends IconGlyph
+  sealed trait `functional-location`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `functional-location`: `functional-location` = "functional-location".asInstanceOf[`functional-location`]
   
   @js.native
-  sealed trait future extends IconGlyph
+  sealed trait future
+    extends StObject
+       with IconGlyph
   @scala.inline
   def future: future = "future".asInstanceOf[future]
   
   @js.native
-  sealed trait `gantt-bars` extends IconGlyph
+  sealed trait `gantt-bars`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `gantt-bars`: `gantt-bars` = "gantt-bars".asInstanceOf[`gantt-bars`]
   
   @js.native
-  sealed trait `general-leave-request` extends IconGlyph
+  sealed trait `general-leave-request`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `general-leave-request`: `general-leave-request` = "general-leave-request".asInstanceOf[`general-leave-request`]
   
   @js.native
-  sealed trait `generate-shortcut` extends IconGlyph
+  sealed trait `generate-shortcut`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `generate-shortcut`: `generate-shortcut` = "generate-shortcut".asInstanceOf[`generate-shortcut`]
   
   @js.native
-  sealed trait `geographic-bubble-chart` extends IconGlyph
+  sealed trait `geographic-bubble-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `geographic-bubble-chart`: `geographic-bubble-chart` = "geographic-bubble-chart".asInstanceOf[`geographic-bubble-chart`]
   
   @js.native
-  sealed trait ghost extends ButtonTypes
+  sealed trait ghost
+    extends StObject
+       with ButtonTypes
   @scala.inline
   def ghost: ghost = "ghost".asInstanceOf[ghost]
   
   @js.native
-  sealed trait globe extends IconGlyph
+  sealed trait globe
+    extends StObject
+       with IconGlyph
   @scala.inline
   def globe: globe = "globe".asInstanceOf[globe]
   
   @js.native
-  sealed trait goal extends IconGlyph
+  sealed trait goal
+    extends StObject
+       with IconGlyph
   @scala.inline
   def goal: goal = "goal".asInstanceOf[goal]
   
   @js.native
-  sealed trait goalseek extends IconGlyph
+  sealed trait goalseek
+    extends StObject
+       with IconGlyph
   @scala.inline
   def goalseek: goalseek = "goalseek".asInstanceOf[goalseek]
   
@@ -1693,83 +2222,114 @@ object fundamentalReactStrings {
   
   @js.native
   sealed trait grid
-    extends IconGlyph
+    extends StObject
+       with IconGlyph
        with PopoverTypes
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait group extends IconGlyph
+  sealed trait group
+    extends StObject
+       with IconGlyph
   @scala.inline
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait `group-2` extends IconGlyph
+  sealed trait `group-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `group-2`: `group-2` = "group-2".asInstanceOf[`group-2`]
   
   @js.native
-  sealed trait header extends IconGlyph
+  sealed trait header
+    extends StObject
+       with IconGlyph
   @scala.inline
   def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait `heading-1` extends IconGlyph
+  sealed trait `heading-1`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `heading-1`: `heading-1` = "heading-1".asInstanceOf[`heading-1`]
   
   @js.native
-  sealed trait `heading-2` extends IconGlyph
+  sealed trait `heading-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `heading-2`: `heading-2` = "heading-2".asInstanceOf[`heading-2`]
   
   @js.native
-  sealed trait `heading-3` extends IconGlyph
+  sealed trait `heading-3`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `heading-3`: `heading-3` = "heading-3".asInstanceOf[`heading-3`]
   
   @js.native
-  sealed trait headset extends IconGlyph
+  sealed trait headset
+    extends StObject
+       with IconGlyph
   @scala.inline
   def headset: headset = "headset".asInstanceOf[headset]
   
   @js.native
-  sealed trait `heating-cooling` extends IconGlyph
+  sealed trait `heating-cooling`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `heating-cooling`: `heating-cooling` = "heating-cooling".asInstanceOf[`heating-cooling`]
   
   @js.native
-  sealed trait `heatmap-chart` extends IconGlyph
+  sealed trait `heatmap-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `heatmap-chart`: `heatmap-chart` = "heatmap-chart".asInstanceOf[`heatmap-chart`]
   
   @js.native
-  sealed trait `hello-world` extends IconGlyph
+  sealed trait `hello-world`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `hello-world`: `hello-world` = "hello-world".asInstanceOf[`hello-world`]
   
   @js.native
-  sealed trait hide extends IconGlyph
+  sealed trait hide
+    extends StObject
+       with IconGlyph
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait hint extends IconGlyph
+  sealed trait hint
+    extends StObject
+       with IconGlyph
   @scala.inline
   def hint: hint = "hint".asInstanceOf[hint]
   
   @js.native
-  sealed trait history extends IconGlyph
+  sealed trait history
+    extends StObject
+       with IconGlyph
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   
   @js.native
-  sealed trait home extends IconGlyph
+  sealed trait home
+    extends StObject
+       with IconGlyph
   @scala.inline
   def home: home = "home".asInstanceOf[home]
   
   @js.native
-  sealed trait `home-share` extends IconGlyph
+  sealed trait `home-share`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `home-share`: `home-share` = "home-share".asInstanceOf[`home-share`]
   
@@ -1779,72 +2339,100 @@ object fundamentalReactStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait `horizontal-bar-chart` extends IconGlyph
+  sealed trait `horizontal-bar-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `horizontal-bar-chart`: `horizontal-bar-chart` = "horizontal-bar-chart".asInstanceOf[`horizontal-bar-chart`]
   
   @js.native
-  sealed trait `horizontal-bar-chart-2` extends IconGlyph
+  sealed trait `horizontal-bar-chart-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `horizontal-bar-chart-2`: `horizontal-bar-chart-2` = "horizontal-bar-chart-2".asInstanceOf[`horizontal-bar-chart-2`]
   
   @js.native
-  sealed trait `horizontal-bullet-chart` extends IconGlyph
+  sealed trait `horizontal-bullet-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `horizontal-bullet-chart`: `horizontal-bullet-chart` = "horizontal-bullet-chart".asInstanceOf[`horizontal-bullet-chart`]
   
   @js.native
-  sealed trait `horizontal-grip` extends IconGlyph
+  sealed trait `horizontal-grip`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `horizontal-grip`: `horizontal-grip` = "horizontal-grip".asInstanceOf[`horizontal-grip`]
   
   @js.native
-  sealed trait `horizontal-stacked-chart` extends IconGlyph
+  sealed trait `horizontal-stacked-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `horizontal-stacked-chart`: `horizontal-stacked-chart` = "horizontal-stacked-chart".asInstanceOf[`horizontal-stacked-chart`]
   
   @js.native
-  sealed trait `horizontal-waterfall-chart` extends IconGlyph
+  sealed trait `horizontal-waterfall-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `horizontal-waterfall-chart`: `horizontal-waterfall-chart` = "horizontal-waterfall-chart".asInstanceOf[`horizontal-waterfall-chart`]
   
   @js.native
-  sealed trait `hr-approval` extends IconGlyph
+  sealed trait `hr-approval`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `hr-approval`: `hr-approval` = "hr-approval".asInstanceOf[`hr-approval`]
   
   @js.native
-  sealed trait `idea-wall` extends IconGlyph
+  sealed trait `idea-wall`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `idea-wall`: `idea-wall` = "idea-wall".asInstanceOf[`idea-wall`]
   
   @js.native
-  sealed trait `image-viewer` extends IconGlyph
+  sealed trait `image-viewer`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `image-viewer`: `image-viewer` = "image-viewer".asInstanceOf[`image-viewer`]
   
   @js.native
-  sealed trait inbox extends IconGlyph
+  sealed trait inbox
+    extends StObject
+       with IconGlyph
   @scala.inline
   def inbox: inbox = "inbox".asInstanceOf[inbox]
   
   @js.native
-  sealed trait incident extends IconGlyph
+  sealed trait incident
+    extends StObject
+       with IconGlyph
   @scala.inline
   def incident: incident = "incident".asInstanceOf[incident]
   
   @js.native
-  sealed trait `incoming-call` extends IconGlyph
+  sealed trait `incoming-call`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `incoming-call`: `incoming-call` = "incoming-call".asInstanceOf[`incoming-call`]
   
   @js.native
-  sealed trait `increase-line-height` extends IconGlyph
+  sealed trait `increase-line-height`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `increase-line-height`: `increase-line-height` = "increase-line-height".asInstanceOf[`increase-line-height`]
   
   @js.native
-  sealed trait indent extends IconGlyph
+  sealed trait indent
+    extends StObject
+       with IconGlyph
   @scala.inline
   def indent: indent = "indent".asInstanceOf[indent]
   
@@ -1854,7 +2442,9 @@ object fundamentalReactStrings {
   def information: information = "information".asInstanceOf[information]
   
   @js.native
-  sealed trait informative extends ObjectStatusTypes
+  sealed trait informative
+    extends StObject
+       with ObjectStatusTypes
   @scala.inline
   def informative: informative = "informative".asInstanceOf[informative]
   
@@ -1864,7 +2454,9 @@ object fundamentalReactStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait initiative extends IconGlyph
+  sealed trait initiative
+    extends StObject
+       with IconGlyph
   @scala.inline
   def initiative: initiative = "initiative".asInstanceOf[initiative]
   
@@ -1874,133 +2466,184 @@ object fundamentalReactStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait inspect extends IconGlyph
+  sealed trait inspect
+    extends StObject
+       with IconGlyph
   @scala.inline
   def inspect: inspect = "inspect".asInstanceOf[inspect]
   
   @js.native
-  sealed trait `inspect-down` extends IconGlyph
+  sealed trait `inspect-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `inspect-down`: `inspect-down` = "inspect-down".asInstanceOf[`inspect-down`]
   
   @js.native
-  sealed trait inspection extends IconGlyph
+  sealed trait inspection
+    extends StObject
+       with IconGlyph
   @scala.inline
   def inspection: inspection = "inspection".asInstanceOf[inspection]
   
   @js.native
-  sealed trait instance extends IconGlyph
+  sealed trait instance
+    extends StObject
+       with IconGlyph
   @scala.inline
   def instance: instance = "instance".asInstanceOf[instance]
   
   @js.native
-  sealed trait `insurance-car` extends IconGlyph
+  sealed trait `insurance-car`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `insurance-car`: `insurance-car` = "insurance-car".asInstanceOf[`insurance-car`]
   
   @js.native
-  sealed trait `insurance-house` extends IconGlyph
+  sealed trait `insurance-house`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `insurance-house`: `insurance-house` = "insurance-house".asInstanceOf[`insurance-house`]
   
   @js.native
-  sealed trait `insurance-life` extends IconGlyph
+  sealed trait `insurance-life`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `insurance-life`: `insurance-life` = "insurance-life".asInstanceOf[`insurance-life`]
   
   @js.native
-  sealed trait `internet-browser` extends IconGlyph
+  sealed trait `internet-browser`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `internet-browser`: `internet-browser` = "internet-browser".asInstanceOf[`internet-browser`]
   
   @js.native
-  sealed trait inventory extends IconGlyph
+  sealed trait inventory
+    extends StObject
+       with IconGlyph
   @scala.inline
   def inventory: inventory = "inventory".asInstanceOf[inventory]
   
   @js.native
-  sealed trait ipad extends IconGlyph
+  sealed trait ipad
+    extends StObject
+       with IconGlyph
   @scala.inline
   def ipad: ipad = "ipad".asInstanceOf[ipad]
   
   @js.native
-  sealed trait `ipad-2` extends IconGlyph
+  sealed trait `ipad-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `ipad-2`: `ipad-2` = "ipad-2".asInstanceOf[`ipad-2`]
   
   @js.native
-  sealed trait iphone extends IconGlyph
+  sealed trait iphone
+    extends StObject
+       with IconGlyph
   @scala.inline
   def iphone: iphone = "iphone".asInstanceOf[iphone]
   
   @js.native
-  sealed trait `iphone-2` extends IconGlyph
+  sealed trait `iphone-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `iphone-2`: `iphone-2` = "iphone-2".asInstanceOf[`iphone-2`]
   
   @js.native
-  sealed trait `it-host` extends IconGlyph
+  sealed trait `it-host`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `it-host`: `it-host` = "it-host".asInstanceOf[`it-host`]
   
   @js.native
-  sealed trait `it-instance` extends IconGlyph
+  sealed trait `it-instance`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `it-instance`: `it-instance` = "it-instance".asInstanceOf[`it-instance`]
   
   @js.native
-  sealed trait `it-system` extends IconGlyph
+  sealed trait `it-system`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `it-system`: `it-system` = "it-system".asInstanceOf[`it-system`]
   
   @js.native
-  sealed trait `italic-text` extends IconGlyph
+  sealed trait `italic-text`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `italic-text`: `italic-text` = "italic-text".asInstanceOf[`italic-text`]
   
   @js.native
-  sealed trait jam extends IconGlyph
+  sealed trait jam
+    extends StObject
+       with IconGlyph
   @scala.inline
   def jam: jam = "jam".asInstanceOf[jam]
   
   @js.native
-  sealed trait `journey-arrive` extends IconGlyph
+  sealed trait `journey-arrive`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `journey-arrive`: `journey-arrive` = "journey-arrive".asInstanceOf[`journey-arrive`]
   
   @js.native
-  sealed trait `journey-change` extends IconGlyph
+  sealed trait `journey-change`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `journey-change`: `journey-change` = "journey-change".asInstanceOf[`journey-change`]
   
   @js.native
-  sealed trait `journey-depart` extends IconGlyph
+  sealed trait `journey-depart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `journey-depart`: `journey-depart` = "journey-depart".asInstanceOf[`journey-depart`]
   
   @js.native
-  sealed trait key extends IconGlyph
+  sealed trait key
+    extends StObject
+       with IconGlyph
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait `key-user-settings` extends IconGlyph
+  sealed trait `key-user-settings`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `key-user-settings`: `key-user-settings` = "key-user-settings".asInstanceOf[`key-user-settings`]
   
   @js.native
-  sealed trait `kpi-corporate-performance` extends IconGlyph
+  sealed trait `kpi-corporate-performance`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `kpi-corporate-performance`: `kpi-corporate-performance` = "kpi-corporate-performance".asInstanceOf[`kpi-corporate-performance`]
   
   @js.native
-  sealed trait `kpi-managing-my-area` extends IconGlyph
+  sealed trait `kpi-managing-my-area`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `kpi-managing-my-area`: `kpi-managing-my-area` = "kpi-managing-my-area".asInstanceOf[`kpi-managing-my-area`]
   
   @js.native
   sealed trait l
-    extends AvatarSize
+    extends StObject
+       with AvatarSize
        with BusyIndicatorSizes
        with IconSize
        with imageSize
@@ -2008,94 +2651,129 @@ object fundamentalReactStrings {
   def l: l = "l".asInstanceOf[l]
   
   @js.native
-  sealed trait lab extends IconGlyph
+  sealed trait lab
+    extends StObject
+       with IconGlyph
   @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
   
   @js.native
-  sealed trait laptop extends IconGlyph
+  sealed trait laptop
+    extends StObject
+       with IconGlyph
   @scala.inline
   def laptop: laptop = "laptop".asInstanceOf[laptop]
   
   @js.native
-  sealed trait lateness extends IconGlyph
+  sealed trait lateness
+    extends StObject
+       with IconGlyph
   @scala.inline
   def lateness: lateness = "lateness".asInstanceOf[lateness]
   
   @js.native
-  sealed trait lead extends IconGlyph
+  sealed trait lead
+    extends StObject
+       with IconGlyph
   @scala.inline
   def lead: lead = "lead".asInstanceOf[lead]
   
   @js.native
-  sealed trait `lead-outdated` extends IconGlyph
+  sealed trait `lead-outdated`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `lead-outdated`: `lead-outdated` = "lead-outdated".asInstanceOf[`lead-outdated`]
   
   @js.native
-  sealed trait leads extends IconGlyph
+  sealed trait leads
+    extends StObject
+       with IconGlyph
   @scala.inline
   def leads: leads = "leads".asInstanceOf[leads]
   
   @js.native
-  sealed trait `learning-assistant` extends IconGlyph
+  sealed trait `learning-assistant`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `learning-assistant`: `learning-assistant` = "learning-assistant".asInstanceOf[`learning-assistant`]
   
   @js.native
   sealed trait left
-    extends InlineHelpPlacement
+    extends StObject
+       with InlineHelpPlacement
        with PopperPlacement
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait `left-end` extends PopperPlacement
+  sealed trait `left-end`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `left-end`: `left-end` = "left-end".asInstanceOf[`left-end`]
   
   @js.native
-  sealed trait `left-start` extends PopperPlacement
+  sealed trait `left-start`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `left-start`: `left-start` = "left-start".asInstanceOf[`left-start`]
   
   @js.native
-  sealed trait legend extends IconGlyph
+  sealed trait legend
+    extends StObject
+       with IconGlyph
   @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait less extends IconGlyph
+  sealed trait less
+    extends StObject
+       with IconGlyph
   @scala.inline
   def less: less = "less".asInstanceOf[less]
   
   @js.native
-  sealed trait letter extends IconGlyph
+  sealed trait letter
+    extends StObject
+       with IconGlyph
   @scala.inline
   def letter: letter = "letter".asInstanceOf[letter]
   
   @js.native
-  sealed trait lightbulb extends IconGlyph
+  sealed trait lightbulb
+    extends StObject
+       with IconGlyph
   @scala.inline
   def lightbulb: lightbulb = "lightbulb".asInstanceOf[lightbulb]
   
   @js.native
-  sealed trait `line-chart` extends IconGlyph
+  sealed trait `line-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `line-chart`: `line-chart` = "line-chart".asInstanceOf[`line-chart`]
   
   @js.native
-  sealed trait `line-chart-dual-axis` extends IconGlyph
+  sealed trait `line-chart-dual-axis`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `line-chart-dual-axis`: `line-chart-dual-axis` = "line-chart-dual-axis".asInstanceOf[`line-chart-dual-axis`]
   
   @js.native
-  sealed trait `line-chart-time-axis` extends IconGlyph
+  sealed trait `line-chart-time-axis`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `line-chart-time-axis`: `line-chart-time-axis` = "line-chart-time-axis".asInstanceOf[`line-chart-time-axis`]
   
   @js.native
-  sealed trait `line-charts` extends IconGlyph
+  sealed trait `line-charts`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `line-charts`: `line-charts` = "line-charts".asInstanceOf[`line-charts`]
   
@@ -2105,22 +2783,30 @@ object fundamentalReactStrings {
   def link_ : link_ = "link".asInstanceOf[link_]
   
   @js.native
-  sealed trait list_ extends IconGlyph
+  sealed trait list_
+    extends StObject
+       with IconGlyph
   @scala.inline
   def list_ : list_ = "list".asInstanceOf[list_]
   
   @js.native
-  sealed trait listbox extends PopoverTypes
+  sealed trait listbox
+    extends StObject
+       with PopoverTypes
   @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
-  sealed trait loan extends IconGlyph
+  sealed trait loan
+    extends StObject
+       with IconGlyph
   @scala.inline
   def loan: loan = "loan".asInstanceOf[loan]
   
   @js.native
-  sealed trait `locate-me` extends IconGlyph
+  sealed trait `locate-me`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `locate-me`: `locate-me` = "locate-me".asInstanceOf[`locate-me`]
   
@@ -2130,18 +2816,23 @@ object fundamentalReactStrings {
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait locked extends IconGlyph
+  sealed trait locked
+    extends StObject
+       with IconGlyph
   @scala.inline
   def locked: locked = "locked".asInstanceOf[locked]
   
   @js.native
-  sealed trait log extends IconGlyph
+  sealed trait log
+    extends StObject
+       with IconGlyph
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait m
-    extends AvatarSize
+    extends StObject
+       with AvatarSize
        with BusyIndicatorSizes
        with IconSize
        with imageSize
@@ -2149,179 +2840,248 @@ object fundamentalReactStrings {
   def m: m = "m".asInstanceOf[m]
   
   @js.native
-  sealed trait machine extends IconGlyph
+  sealed trait machine
+    extends StObject
+       with IconGlyph
   @scala.inline
   def machine: machine = "machine".asInstanceOf[machine]
   
   @js.native
-  sealed trait manager extends IconGlyph
+  sealed trait manager
+    extends StObject
+       with IconGlyph
   @scala.inline
   def manager: manager = "manager".asInstanceOf[manager]
   
   @js.native
-  sealed trait `manager-insight` extends IconGlyph
+  sealed trait `manager-insight`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `manager-insight`: `manager-insight` = "manager-insight".asInstanceOf[`manager-insight`]
   
   @js.native
-  sealed trait map extends IconGlyph
+  sealed trait map
+    extends StObject
+       with IconGlyph
   @scala.inline
   def map: map = "map".asInstanceOf[map]
   
   @js.native
-  sealed trait `map-2` extends IconGlyph
+  sealed trait `map-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `map-2`: `map-2` = "map-2".asInstanceOf[`map-2`]
   
   @js.native
-  sealed trait `map-3` extends IconGlyph
+  sealed trait `map-3`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `map-3`: `map-3` = "map-3".asInstanceOf[`map-3`]
   
   @js.native
-  sealed trait `marketing-campaign` extends IconGlyph
+  sealed trait `marketing-campaign`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `marketing-campaign`: `marketing-campaign` = "marketing-campaign".asInstanceOf[`marketing-campaign`]
   
   @js.native
-  sealed trait `master-task-triangle` extends IconGlyph
+  sealed trait `master-task-triangle`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `master-task-triangle`: `master-task-triangle` = "master-task-triangle".asInstanceOf[`master-task-triangle`]
   
   @js.native
-  sealed trait `master-task-triangle-2` extends IconGlyph
+  sealed trait `master-task-triangle-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `master-task-triangle-2`: `master-task-triangle-2` = "master-task-triangle-2".asInstanceOf[`master-task-triangle-2`]
   
   @js.native
-  sealed trait matchTarget extends PopperSizingTypes
+  sealed trait matchTarget
+    extends StObject
+       with PopperSizingTypes
   @scala.inline
   def matchTarget: matchTarget = "matchTarget".asInstanceOf[matchTarget]
   
   @js.native
-  sealed trait maxTarget extends PopperSizingTypes
+  sealed trait maxTarget
+    extends StObject
+       with PopperSizingTypes
   @scala.inline
   def maxTarget: maxTarget = "maxTarget".asInstanceOf[maxTarget]
   
   @js.native
-  sealed trait meal extends IconGlyph
+  sealed trait meal
+    extends StObject
+       with IconGlyph
   @scala.inline
   def meal: meal = "meal".asInstanceOf[meal]
   
   @js.native
-  sealed trait measure extends IconGlyph
+  sealed trait measure
+    extends StObject
+       with IconGlyph
   @scala.inline
   def measure: measure = "measure".asInstanceOf[measure]
   
   @js.native
-  sealed trait `measurement-document` extends IconGlyph
+  sealed trait `measurement-document`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `measurement-document`: `measurement-document` = "measurement-document".asInstanceOf[`measurement-document`]
   
   @js.native
-  sealed trait `measuring-point` extends IconGlyph
+  sealed trait `measuring-point`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `measuring-point`: `measuring-point` = "measuring-point".asInstanceOf[`measuring-point`]
   
   @js.native
-  sealed trait `media-forward` extends IconGlyph
+  sealed trait `media-forward`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `media-forward`: `media-forward` = "media-forward".asInstanceOf[`media-forward`]
   
   @js.native
-  sealed trait `media-pause` extends IconGlyph
+  sealed trait `media-pause`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `media-pause`: `media-pause` = "media-pause".asInstanceOf[`media-pause`]
   
   @js.native
-  sealed trait `media-play` extends IconGlyph
+  sealed trait `media-play`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `media-play`: `media-play` = "media-play".asInstanceOf[`media-play`]
   
   @js.native
-  sealed trait `media-reverse` extends IconGlyph
+  sealed trait `media-reverse`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `media-reverse`: `media-reverse` = "media-reverse".asInstanceOf[`media-reverse`]
   
   @js.native
-  sealed trait `media-rewind` extends IconGlyph
+  sealed trait `media-rewind`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `media-rewind`: `media-rewind` = "media-rewind".asInstanceOf[`media-rewind`]
   
   @js.native
-  sealed trait medium extends ButtonTypes
+  sealed trait medium
+    extends StObject
+       with ButtonTypes
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait `meeting-room` extends IconGlyph
+  sealed trait `meeting-room`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `meeting-room`: `meeting-room` = "meeting-room".asInstanceOf[`meeting-room`]
   
   @js.native
-  sealed trait menu2 extends IconGlyph
+  sealed trait menu2
+    extends StObject
+       with IconGlyph
   @scala.inline
   def menu2: menu2 = "menu2".asInstanceOf[menu2]
   
   @js.native
   sealed trait menu_
-    extends IconGlyph
+    extends StObject
+       with IconGlyph
        with PopoverTypes
   @scala.inline
   def menu_ : menu_ = "menu".asInstanceOf[menu_]
   
   @js.native
-  sealed trait `message-error` extends IconGlyph
+  sealed trait `message-error`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `message-error`: `message-error` = "message-error".asInstanceOf[`message-error`]
   
   @js.native
-  sealed trait `message-information` extends IconGlyph
+  sealed trait `message-information`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `message-information`: `message-information` = "message-information".asInstanceOf[`message-information`]
   
   @js.native
-  sealed trait `message-popup` extends IconGlyph
+  sealed trait `message-popup`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `message-popup`: `message-popup` = "message-popup".asInstanceOf[`message-popup`]
   
   @js.native
-  sealed trait `message-success` extends IconGlyph
+  sealed trait `message-success`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `message-success`: `message-success` = "message-success".asInstanceOf[`message-success`]
   
   @js.native
-  sealed trait `message-warning` extends IconGlyph
+  sealed trait `message-warning`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `message-warning`: `message-warning` = "message-warning".asInstanceOf[`message-warning`]
   
   @js.native
-  sealed trait microphone extends IconGlyph
+  sealed trait microphone
+    extends StObject
+       with IconGlyph
   @scala.inline
   def microphone: microphone = "microphone".asInstanceOf[microphone]
   
   @js.native
-  sealed trait mileage extends IconGlyph
+  sealed trait mileage
+    extends StObject
+       with IconGlyph
   @scala.inline
   def mileage: mileage = "mileage".asInstanceOf[mileage]
   
   @js.native
-  sealed trait minTarget extends PopperSizingTypes
+  sealed trait minTarget
+    extends StObject
+       with PopperSizingTypes
   @scala.inline
   def minTarget: minTarget = "minTarget".asInstanceOf[minTarget]
   
   @js.native
-  sealed trait minimize extends IconGlyph
+  sealed trait minimize
+    extends StObject
+       with IconGlyph
   @scala.inline
   def minimize: minimize = "minimize".asInstanceOf[minimize]
   
   @js.native
-  sealed trait `mirrored-task-circle` extends IconGlyph
+  sealed trait `mirrored-task-circle`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `mirrored-task-circle`: `mirrored-task-circle` = "mirrored-task-circle".asInstanceOf[`mirrored-task-circle`]
   
   @js.native
-  sealed trait `mirrored-task-circle-2` extends IconGlyph
+  sealed trait `mirrored-task-circle-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `mirrored-task-circle-2`: `mirrored-task-circle-2` = "mirrored-task-circle-2".asInstanceOf[`mirrored-task-circle-2`]
   
@@ -2331,105 +3091,144 @@ object fundamentalReactStrings {
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait `money-bills` extends IconGlyph
+  sealed trait `money-bills`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `money-bills`: `money-bills` = "money-bills".asInstanceOf[`money-bills`]
   
   @js.native
-  sealed trait `monitor-payments` extends IconGlyph
+  sealed trait `monitor-payments`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `monitor-payments`: `monitor-payments` = "monitor-payments".asInstanceOf[`monitor-payments`]
   
   @js.native
-  sealed trait move extends IconGlyph
+  sealed trait move
+    extends StObject
+       with IconGlyph
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait `mri-scan` extends IconGlyph
+  sealed trait `mri-scan`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `mri-scan`: `mri-scan` = "mri-scan".asInstanceOf[`mri-scan`]
   
   @js.native
-  sealed trait `multiple-bar-chart` extends IconGlyph
+  sealed trait `multiple-bar-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `multiple-bar-chart`: `multiple-bar-chart` = "multiple-bar-chart".asInstanceOf[`multiple-bar-chart`]
   
   @js.native
-  sealed trait `multiple-line-chart` extends IconGlyph
+  sealed trait `multiple-line-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `multiple-line-chart`: `multiple-line-chart` = "multiple-line-chart".asInstanceOf[`multiple-line-chart`]
   
   @js.native
-  sealed trait `multiple-pie-chart` extends IconGlyph
+  sealed trait `multiple-pie-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `multiple-pie-chart`: `multiple-pie-chart` = "multiple-pie-chart".asInstanceOf[`multiple-pie-chart`]
   
   @js.native
-  sealed trait `multiple-radar-chart` extends IconGlyph
+  sealed trait `multiple-radar-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `multiple-radar-chart`: `multiple-radar-chart` = "multiple-radar-chart".asInstanceOf[`multiple-radar-chart`]
   
   @js.native
-  sealed trait multiselect extends IconGlyph
+  sealed trait multiselect
+    extends StObject
+       with IconGlyph
   @scala.inline
   def multiselect: multiselect = "multiselect".asInstanceOf[multiselect]
   
   @js.native
-  sealed trait `multiselect-all` extends IconGlyph
+  sealed trait `multiselect-all`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `multiselect-all`: `multiselect-all` = "multiselect-all".asInstanceOf[`multiselect-all`]
   
   @js.native
-  sealed trait `multiselect-none` extends IconGlyph
+  sealed trait `multiselect-none`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `multiselect-none`: `multiselect-none` = "multiselect-none".asInstanceOf[`multiselect-none`]
   
   @js.native
-  sealed trait `my-sales-order` extends IconGlyph
+  sealed trait `my-sales-order`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `my-sales-order`: `my-sales-order` = "my-sales-order".asInstanceOf[`my-sales-order`]
   
   @js.native
-  sealed trait `my-view` extends IconGlyph
+  sealed trait `my-view`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `my-view`: `my-view` = "my-view".asInstanceOf[`my-view`]
   
   @js.native
-  sealed trait `nav-back` extends IconGlyph
+  sealed trait `nav-back`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `nav-back`: `nav-back` = "nav-back".asInstanceOf[`nav-back`]
   
   @js.native
-  sealed trait `navigation-down-arrow` extends IconGlyph
+  sealed trait `navigation-down-arrow`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `navigation-down-arrow`: `navigation-down-arrow` = "navigation-down-arrow".asInstanceOf[`navigation-down-arrow`]
   
   @js.native
-  sealed trait `navigation-left-arrow` extends IconGlyph
+  sealed trait `navigation-left-arrow`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `navigation-left-arrow`: `navigation-left-arrow` = "navigation-left-arrow".asInstanceOf[`navigation-left-arrow`]
   
   @js.native
-  sealed trait `navigation-right-arrow` extends IconGlyph
+  sealed trait `navigation-right-arrow`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `navigation-right-arrow`: `navigation-right-arrow` = "navigation-right-arrow".asInstanceOf[`navigation-right-arrow`]
   
   @js.native
-  sealed trait `navigation-up-arrow` extends IconGlyph
+  sealed trait `navigation-up-arrow`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `navigation-up-arrow`: `navigation-up-arrow` = "navigation-up-arrow".asInstanceOf[`navigation-up-arrow`]
   
   @js.native
   sealed trait negative
-    extends ButtonTypes
+    extends StObject
+       with ButtonTypes
        with IconGlyph
        with ObjectStatusTypes
   @scala.inline
   def negative: negative = "negative".asInstanceOf[negative]
   
   @js.native
-  sealed trait newspaper extends IconGlyph
+  sealed trait newspaper
+    extends StObject
+       with IconGlyph
   @scala.inline
   def newspaper: newspaper = "newspaper".asInstanceOf[newspaper]
   
@@ -2439,32 +3238,44 @@ object fundamentalReactStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait none extends PopperSizingTypes
+  sealed trait none
+    extends StObject
+       with PopperSizingTypes
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait notes extends IconGlyph
+  sealed trait notes
+    extends StObject
+       with IconGlyph
   @scala.inline
   def notes: notes = "notes".asInstanceOf[notes]
   
   @js.native
-  sealed trait `notification-2` extends IconGlyph
+  sealed trait `notification-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `notification-2`: `notification-2` = "notification-2".asInstanceOf[`notification-2`]
   
   @js.native
-  sealed trait number extends InputGroupTypes
+  sealed trait number
+    extends StObject
+       with InputGroupTypes
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `number-sign` extends IconGlyph
+  sealed trait `number-sign`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `number-sign`: `number-sign` = "number-sign".asInstanceOf[`number-sign`]
   
   @js.native
-  sealed trait `numbered-text` extends IconGlyph
+  sealed trait `numbered-text`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `numbered-text`: `numbered-text` = "numbered-text".asInstanceOf[`numbered-text`]
   
@@ -2474,12 +3285,16 @@ object fundamentalReactStrings {
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait nurse extends IconGlyph
+  sealed trait nurse
+    extends StObject
+       with IconGlyph
   @scala.inline
   def nurse: nurse = "nurse".asInstanceOf[nurse]
   
   @js.native
-  sealed trait `nutrition-activity` extends IconGlyph
+  sealed trait `nutrition-activity`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `nutrition-activity`: `nutrition-activity` = "nutrition-activity".asInstanceOf[`nutrition-activity`]
   
@@ -2489,12 +3304,16 @@ object fundamentalReactStrings {
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait `official-service` extends IconGlyph
+  sealed trait `official-service`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `official-service`: `official-service` = "official-service".asInstanceOf[`official-service`]
   
   @js.native
-  sealed trait `offsite-work` extends IconGlyph
+  sealed trait `offsite-work`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `offsite-work`: `offsite-work` = "offsite-work".asInstanceOf[`offsite-work`]
   
@@ -2504,32 +3323,44 @@ object fundamentalReactStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait `open-command-field` extends IconGlyph
+  sealed trait `open-command-field`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `open-command-field`: `open-command-field` = "open-command-field".asInstanceOf[`open-command-field`]
   
   @js.native
-  sealed trait `open-folder` extends IconGlyph
+  sealed trait `open-folder`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `open-folder`: `open-folder` = "open-folder".asInstanceOf[`open-folder`]
   
   @js.native
-  sealed trait opportunities extends IconGlyph
+  sealed trait opportunities
+    extends StObject
+       with IconGlyph
   @scala.inline
   def opportunities: opportunities = "opportunities".asInstanceOf[opportunities]
   
   @js.native
-  sealed trait opportunity extends IconGlyph
+  sealed trait opportunity
+    extends StObject
+       with IconGlyph
   @scala.inline
   def opportunity: opportunity = "opportunity".asInstanceOf[opportunity]
   
   @js.native
-  sealed trait `order-status` extends IconGlyph
+  sealed trait `order-status`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `order-status`: `order-status` = "order-status".asInstanceOf[`order-status`]
   
   @js.native
-  sealed trait `org-chart` extends IconGlyph
+  sealed trait `org-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `org-chart`: `org-chart` = "org-chart".asInstanceOf[`org-chart`]
   
@@ -2539,32 +3370,44 @@ object fundamentalReactStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outbox extends IconGlyph
+  sealed trait outbox
+    extends StObject
+       with IconGlyph
   @scala.inline
   def outbox: outbox = "outbox".asInstanceOf[outbox]
   
   @js.native
-  sealed trait outdent extends IconGlyph
+  sealed trait outdent
+    extends StObject
+       with IconGlyph
   @scala.inline
   def outdent: outdent = "outdent".asInstanceOf[outdent]
   
   @js.native
-  sealed trait `outgoing-call` extends IconGlyph
+  sealed trait `outgoing-call`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `outgoing-call`: `outgoing-call` = "outgoing-call".asInstanceOf[`outgoing-call`]
   
   @js.native
-  sealed trait overflow extends IconGlyph
+  sealed trait overflow
+    extends StObject
+       with IconGlyph
   @scala.inline
   def overflow: overflow = "overflow".asInstanceOf[overflow]
   
   @js.native
-  sealed trait overlay extends IconGlyph
+  sealed trait overlay
+    extends StObject
+       with IconGlyph
   @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
-  sealed trait `overview-chart` extends IconGlyph
+  sealed trait `overview-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `overview-chart`: `overview-chart` = "overview-chart".asInstanceOf[`overview-chart`]
   
@@ -2574,127 +3417,177 @@ object fundamentalReactStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait paging extends IconGlyph
+  sealed trait paging
+    extends StObject
+       with IconGlyph
   @scala.inline
   def paging: paging = "paging".asInstanceOf[paging]
   
   @js.native
-  sealed trait `paid-leave` extends IconGlyph
+  sealed trait `paid-leave`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `paid-leave`: `paid-leave` = "paid-leave".asInstanceOf[`paid-leave`]
   
   @js.native
-  sealed trait palette extends IconGlyph
+  sealed trait palette
+    extends StObject
+       with IconGlyph
   @scala.inline
   def palette: palette = "palette".asInstanceOf[palette]
   
   @js.native
-  sealed trait `paper-plane` extends IconGlyph
+  sealed trait `paper-plane`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `paper-plane`: `paper-plane` = "paper-plane".asInstanceOf[`paper-plane`]
   
   @js.native
-  sealed trait `passenger-train` extends IconGlyph
+  sealed trait `passenger-train`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `passenger-train`: `passenger-train` = "passenger-train".asInstanceOf[`passenger-train`]
   
   @js.native
-  sealed trait past extends IconGlyph
+  sealed trait past
+    extends StObject
+       with IconGlyph
   @scala.inline
   def past: past = "past".asInstanceOf[past]
   
   @js.native
-  sealed trait paste extends IconGlyph
+  sealed trait paste
+    extends StObject
+       with IconGlyph
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
-  sealed trait pause extends IconGlyph
+  sealed trait pause
+    extends StObject
+       with IconGlyph
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait `payment-approval` extends IconGlyph
+  sealed trait `payment-approval`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `payment-approval`: `payment-approval` = "payment-approval".asInstanceOf[`payment-approval`]
   
   @js.native
-  sealed trait `pdf-attachment` extends IconGlyph
+  sealed trait `pdf-attachment`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `pdf-attachment`: `pdf-attachment` = "pdf-attachment".asInstanceOf[`pdf-attachment`]
   
   @js.native
-  sealed trait `pdf-reader` extends IconGlyph
+  sealed trait `pdf-reader`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `pdf-reader`: `pdf-reader` = "pdf-reader".asInstanceOf[`pdf-reader`]
   
   @js.native
-  sealed trait pending extends IconGlyph
+  sealed trait pending
+    extends StObject
+       with IconGlyph
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait `per-diem` extends IconGlyph
+  sealed trait `per-diem`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `per-diem`: `per-diem` = "per-diem".asInstanceOf[`per-diem`]
   
   @js.native
-  sealed trait performance extends IconGlyph
+  sealed trait performance
+    extends StObject
+       with IconGlyph
   @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
   
   @js.native
-  sealed trait permission extends IconGlyph
+  sealed trait permission
+    extends StObject
+       with IconGlyph
   @scala.inline
   def permission: permission = "permission".asInstanceOf[permission]
   
   @js.native
-  sealed trait `person-placeholder` extends IconGlyph
+  sealed trait `person-placeholder`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `person-placeholder`: `person-placeholder` = "person-placeholder".asInstanceOf[`person-placeholder`]
   
   @js.native
-  sealed trait `personnel-view` extends IconGlyph
+  sealed trait `personnel-view`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `personnel-view`: `personnel-view` = "personnel-view".asInstanceOf[`personnel-view`]
   
   @js.native
-  sealed trait pharmacy extends IconGlyph
+  sealed trait pharmacy
+    extends StObject
+       with IconGlyph
   @scala.inline
   def pharmacy: pharmacy = "pharmacy".asInstanceOf[pharmacy]
   
   @js.native
-  sealed trait phone extends IconGlyph
+  sealed trait phone
+    extends StObject
+       with IconGlyph
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
-  sealed trait `photo-voltaic` extends IconGlyph
+  sealed trait `photo-voltaic`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `photo-voltaic`: `photo-voltaic` = "photo-voltaic".asInstanceOf[`photo-voltaic`]
   
   @js.native
-  sealed trait `physical-activity` extends IconGlyph
+  sealed trait `physical-activity`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `physical-activity`: `physical-activity` = "physical-activity".asInstanceOf[`physical-activity`]
   
   @js.native
-  sealed trait picture extends IconGlyph
+  sealed trait picture
+    extends StObject
+       with IconGlyph
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait `pie-chart` extends IconGlyph
+  sealed trait `pie-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `pie-chart`: `pie-chart` = "pie-chart".asInstanceOf[`pie-chart`]
   
   @js.native
-  sealed trait `pipeline-analysis` extends IconGlyph
+  sealed trait `pipeline-analysis`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `pipeline-analysis`: `pipeline-analysis` = "pipeline-analysis".asInstanceOf[`pipeline-analysis`]
   
   @js.native
-  sealed trait play extends IconGlyph
+  sealed trait play
+    extends StObject
+       with IconGlyph
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   
@@ -2704,7 +3597,9 @@ object fundamentalReactStrings {
   def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait pool extends IconGlyph
+  sealed trait pool
+    extends StObject
+       with IconGlyph
   @scala.inline
   def pool: pool = "pool".asInstanceOf[pool]
   
@@ -2714,135 +3609,186 @@ object fundamentalReactStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait `popup-window` extends IconGlyph
+  sealed trait `popup-window`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `popup-window`: `popup-window` = "popup-window".asInstanceOf[`popup-window`]
   
   @js.native
   sealed trait positive
-    extends ButtonTypes
+    extends StObject
+       with ButtonTypes
        with IconGlyph
        with ObjectStatusTypes
   @scala.inline
   def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
-  sealed trait post extends IconGlyph
+  sealed trait post
+    extends StObject
+       with IconGlyph
   @scala.inline
   def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait `ppt-attachment` extends IconGlyph
+  sealed trait `ppt-attachment`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `ppt-attachment`: `ppt-attachment` = "ppt-attachment".asInstanceOf[`ppt-attachment`]
   
   @js.native
-  sealed trait present extends IconGlyph
+  sealed trait present
+    extends StObject
+       with IconGlyph
   @scala.inline
   def present: present = "present".asInstanceOf[present]
   
   @js.native
-  sealed trait print extends IconGlyph
+  sealed trait print
+    extends StObject
+       with IconGlyph
   @scala.inline
   def print: print = "print".asInstanceOf[print]
   
   @js.native
-  sealed trait `private` extends IconGlyph
+  sealed trait `private`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait process extends IconGlyph
+  sealed trait process
+    extends StObject
+       with IconGlyph
   @scala.inline
   def process: process = "process".asInstanceOf[process]
   
   @js.native
-  sealed trait product extends IconGlyph
+  sealed trait product
+    extends StObject
+       with IconGlyph
   @scala.inline
   def product: product = "product".asInstanceOf[product]
   
   @js.native
-  sealed trait `program-triangles` extends IconGlyph
+  sealed trait `program-triangles`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `program-triangles`: `program-triangles` = "program-triangles".asInstanceOf[`program-triangles`]
   
   @js.native
-  sealed trait `program-triangles-2` extends IconGlyph
+  sealed trait `program-triangles-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `program-triangles-2`: `program-triangles-2` = "program-triangles-2".asInstanceOf[`program-triangles-2`]
   
   @js.native
-  sealed trait `project-definition-triangle` extends IconGlyph
+  sealed trait `project-definition-triangle`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `project-definition-triangle`: `project-definition-triangle` = "project-definition-triangle".asInstanceOf[`project-definition-triangle`]
   
   @js.native
-  sealed trait `project-definition-triangle-2` extends IconGlyph
+  sealed trait `project-definition-triangle-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `project-definition-triangle-2`: `project-definition-triangle-2` = "project-definition-triangle-2".asInstanceOf[`project-definition-triangle-2`]
   
   @js.native
-  sealed trait projector extends IconGlyph
+  sealed trait projector
+    extends StObject
+       with IconGlyph
   @scala.inline
   def projector: projector = "projector".asInstanceOf[projector]
   
   @js.native
-  sealed trait provision extends IconGlyph
+  sealed trait provision
+    extends StObject
+       with IconGlyph
   @scala.inline
   def provision: provision = "provision".asInstanceOf[provision]
   
   @js.native
-  sealed trait `pull-down` extends IconGlyph
+  sealed trait `pull-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `pull-down`: `pull-down` = "pull-down".asInstanceOf[`pull-down`]
   
   @js.native
-  sealed trait `pushpin-off` extends IconGlyph
+  sealed trait `pushpin-off`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `pushpin-off`: `pushpin-off` = "pushpin-off".asInstanceOf[`pushpin-off`]
   
   @js.native
-  sealed trait `pushpin-on` extends IconGlyph
+  sealed trait `pushpin-on`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `pushpin-on`: `pushpin-on` = "pushpin-on".asInstanceOf[`pushpin-on`]
   
   @js.native
-  sealed trait puzzle extends IconGlyph
+  sealed trait puzzle
+    extends StObject
+       with IconGlyph
   @scala.inline
   def puzzle: puzzle = "puzzle".asInstanceOf[puzzle]
   
   @js.native
-  sealed trait `quality-issue` extends IconGlyph
+  sealed trait `quality-issue`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `quality-issue`: `quality-issue` = "quality-issue".asInstanceOf[`quality-issue`]
   
   @js.native
-  sealed trait `question-mark` extends IconGlyph
+  sealed trait `question-mark`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `question-mark`: `question-mark` = "question-mark".asInstanceOf[`question-mark`]
   
   @js.native
-  sealed trait `radar-chart` extends IconGlyph
+  sealed trait `radar-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `radar-chart`: `radar-chart` = "radar-chart".asInstanceOf[`radar-chart`]
   
   @js.native
-  sealed trait receipt extends IconGlyph
+  sealed trait receipt
+    extends StObject
+       with IconGlyph
   @scala.inline
   def receipt: receipt = "receipt".asInstanceOf[receipt]
   
   @js.native
-  sealed trait record extends IconGlyph
+  sealed trait record
+    extends StObject
+       with IconGlyph
   @scala.inline
   def record: record = "record".asInstanceOf[record]
   
   @js.native
-  sealed trait redo extends IconGlyph
+  sealed trait redo
+    extends StObject
+       with IconGlyph
   @scala.inline
   def redo: redo = "redo".asInstanceOf[redo]
   
   @js.native
-  sealed trait refresh extends IconGlyph
+  sealed trait refresh
+    extends StObject
+       with IconGlyph
   @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
   
@@ -2862,95 +3808,129 @@ object fundamentalReactStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait repost extends IconGlyph
+  sealed trait repost
+    extends StObject
+       with IconGlyph
   @scala.inline
   def repost: repost = "repost".asInstanceOf[repost]
   
   @js.native
-  sealed trait request extends IconGlyph
+  sealed trait request
+    extends StObject
+       with IconGlyph
   @scala.inline
   def request: request = "request".asInstanceOf[request]
   
   @js.native
-  sealed trait reset extends IconGlyph
+  sealed trait reset
+    extends StObject
+       with IconGlyph
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait resize extends IconGlyph
+  sealed trait resize
+    extends StObject
+       with IconGlyph
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait `resize-corner` extends IconGlyph
+  sealed trait `resize-corner`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `resize-corner`: `resize-corner` = "resize-corner".asInstanceOf[`resize-corner`]
   
   @js.native
-  sealed trait `resize-horizontal` extends IconGlyph
+  sealed trait `resize-horizontal`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `resize-horizontal`: `resize-horizontal` = "resize-horizontal".asInstanceOf[`resize-horizontal`]
   
   @js.native
-  sealed trait `resize-vertical` extends IconGlyph
+  sealed trait `resize-vertical`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `resize-vertical`: `resize-vertical` = "resize-vertical".asInstanceOf[`resize-vertical`]
   
   @js.native
-  sealed trait response extends IconGlyph
+  sealed trait response
+    extends StObject
+       with IconGlyph
   @scala.inline
   def response: response = "response".asInstanceOf[response]
   
   @js.native
-  sealed trait restart extends IconGlyph
+  sealed trait restart
+    extends StObject
+       with IconGlyph
   @scala.inline
   def restart: restart = "restart".asInstanceOf[restart]
   
   @js.native
-  sealed trait `retail-store` extends IconGlyph
+  sealed trait `retail-store`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `retail-store`: `retail-store` = "retail-store".asInstanceOf[`retail-store`]
   
   @js.native
-  sealed trait `retail-store-manager` extends IconGlyph
+  sealed trait `retail-store-manager`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `retail-store-manager`: `retail-store-manager` = "retail-store-manager".asInstanceOf[`retail-store-manager`]
   
   @js.native
-  sealed trait `rhombus-milestone` extends IconGlyph
+  sealed trait `rhombus-milestone`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `rhombus-milestone`: `rhombus-milestone` = "rhombus-milestone".asInstanceOf[`rhombus-milestone`]
   
   @js.native
-  sealed trait `rhombus-milestone-2` extends IconGlyph
+  sealed trait `rhombus-milestone-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `rhombus-milestone-2`: `rhombus-milestone-2` = "rhombus-milestone-2".asInstanceOf[`rhombus-milestone-2`]
   
   @js.native
   sealed trait right
-    extends InlineHelpPlacement
+    extends StObject
+       with InlineHelpPlacement
        with PopperPlacement
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait `right-end` extends PopperPlacement
+  sealed trait `right-end`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `right-end`: `right-end` = "right-end".asInstanceOf[`right-end`]
   
   @js.native
-  sealed trait `right-start` extends PopperPlacement
+  sealed trait `right-start`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `right-start`: `right-start` = "right-start".asInstanceOf[`right-start`]
   
   @js.native
-  sealed trait role extends IconGlyph
+  sealed trait role
+    extends StObject
+       with IconGlyph
   @scala.inline
   def role: role = "role".asInstanceOf[role]
   
   @js.native
   sealed trait s
-    extends AvatarSize
+    extends StObject
+       with AvatarSize
        with BusyIndicatorSizes
        with IconSize
        with imageSize
@@ -2958,204 +3938,283 @@ object fundamentalReactStrings {
   def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait `sales-document` extends IconGlyph
+  sealed trait `sales-document`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sales-document`: `sales-document` = "sales-document".asInstanceOf[`sales-document`]
   
   @js.native
-  sealed trait `sales-notification` extends IconGlyph
+  sealed trait `sales-notification`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sales-notification`: `sales-notification` = "sales-notification".asInstanceOf[`sales-notification`]
   
   @js.native
-  sealed trait `sales-order` extends IconGlyph
+  sealed trait `sales-order`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sales-order`: `sales-order` = "sales-order".asInstanceOf[`sales-order`]
   
   @js.native
-  sealed trait `sales-order-item` extends IconGlyph
+  sealed trait `sales-order-item`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sales-order-item`: `sales-order-item` = "sales-order-item".asInstanceOf[`sales-order-item`]
   
   @js.native
-  sealed trait `sales-quote` extends IconGlyph
+  sealed trait `sales-quote`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sales-quote`: `sales-quote` = "sales-quote".asInstanceOf[`sales-quote`]
   
   @js.native
-  sealed trait `sap-box` extends IconGlyph
+  sealed trait `sap-box`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sap-box`: `sap-box` = "sap-box".asInstanceOf[`sap-box`]
   
   @js.native
-  sealed trait `sap-logo-shape` extends IconGlyph
+  sealed trait `sap-logo-shape`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sap-logo-shape`: `sap-logo-shape` = "sap-logo-shape".asInstanceOf[`sap-logo-shape`]
   
   @js.native
-  sealed trait `sap-ui5` extends IconGlyph
+  sealed trait `sap-ui5`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sap-ui5`: `sap-ui5` = "sap-ui5".asInstanceOf[`sap-ui5`]
   
   @js.native
-  sealed trait save extends IconGlyph
+  sealed trait save
+    extends StObject
+       with IconGlyph
   @scala.inline
   def save: save = "save".asInstanceOf[save]
   
   @js.native
-  sealed trait `scatter-chart` extends IconGlyph
+  sealed trait `scatter-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `scatter-chart`: `scatter-chart` = "scatter-chart".asInstanceOf[`scatter-chart`]
   
   @js.native
-  sealed trait scissors extends IconGlyph
+  sealed trait scissors
+    extends StObject
+       with IconGlyph
   @scala.inline
   def scissors: scissors = "scissors".asInstanceOf[scissors]
   
   @js.native
-  sealed trait `screen-split-one` extends IconGlyph
+  sealed trait `screen-split-one`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `screen-split-one`: `screen-split-one` = "screen-split-one".asInstanceOf[`screen-split-one`]
   
   @js.native
-  sealed trait `screen-split-three` extends IconGlyph
+  sealed trait `screen-split-three`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `screen-split-three`: `screen-split-three` = "screen-split-three".asInstanceOf[`screen-split-three`]
   
   @js.native
-  sealed trait `screen-split-two` extends IconGlyph
+  sealed trait `screen-split-two`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `screen-split-two`: `screen-split-two` = "screen-split-two".asInstanceOf[`screen-split-two`]
   
   @js.native
   sealed trait search
-    extends IconGlyph
+    extends StObject
+       with IconGlyph
        with InputGroupTypes
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait settings extends IconGlyph
+  sealed trait settings
+    extends StObject
+       with IconGlyph
   @scala.inline
   def settings: settings = "settings".asInstanceOf[settings]
   
   @js.native
-  sealed trait share extends IconGlyph
+  sealed trait share
+    extends StObject
+       with IconGlyph
   @scala.inline
   def share: share = "share".asInstanceOf[share]
   
   @js.native
-  sealed trait `share-2` extends IconGlyph
+  sealed trait `share-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `share-2`: `share-2` = "share-2".asInstanceOf[`share-2`]
   
   @js.native
-  sealed trait shelf extends IconGlyph
+  sealed trait shelf
+    extends StObject
+       with IconGlyph
   @scala.inline
   def shelf: shelf = "shelf".asInstanceOf[shelf]
   
   @js.native
-  sealed trait shield extends IconGlyph
+  sealed trait shield
+    extends StObject
+       with IconGlyph
   @scala.inline
   def shield: shield = "shield".asInstanceOf[shield]
   
   @js.native
-  sealed trait `shipping-status` extends IconGlyph
+  sealed trait `shipping-status`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `shipping-status`: `shipping-status` = "shipping-status".asInstanceOf[`shipping-status`]
   
   @js.native
-  sealed trait shortcut extends IconGlyph
+  sealed trait shortcut
+    extends StObject
+       with IconGlyph
   @scala.inline
   def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
   
   @js.native
-  sealed trait show extends IconGlyph
+  sealed trait show
+    extends StObject
+       with IconGlyph
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait signature extends IconGlyph
+  sealed trait signature
+    extends StObject
+       with IconGlyph
   @scala.inline
   def signature: signature = "signature".asInstanceOf[signature]
   
   @js.native
-  sealed trait `simple-payment` extends IconGlyph
+  sealed trait `simple-payment`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `simple-payment`: `simple-payment` = "simple-payment".asInstanceOf[`simple-payment`]
   
   @js.native
-  sealed trait simulate extends IconGlyph
+  sealed trait simulate
+    extends StObject
+       with IconGlyph
   @scala.inline
   def simulate: simulate = "simulate".asInstanceOf[simulate]
   
   @js.native
-  sealed trait `slim-arrow-down` extends IconGlyph
+  sealed trait `slim-arrow-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `slim-arrow-down`: `slim-arrow-down` = "slim-arrow-down".asInstanceOf[`slim-arrow-down`]
   
   @js.native
-  sealed trait `slim-arrow-left` extends IconGlyph
+  sealed trait `slim-arrow-left`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `slim-arrow-left`: `slim-arrow-left` = "slim-arrow-left".asInstanceOf[`slim-arrow-left`]
   
   @js.native
-  sealed trait `slim-arrow-right` extends IconGlyph
+  sealed trait `slim-arrow-right`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `slim-arrow-right`: `slim-arrow-right` = "slim-arrow-right".asInstanceOf[`slim-arrow-right`]
   
   @js.native
-  sealed trait `slim-arrow-up` extends IconGlyph
+  sealed trait `slim-arrow-up`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `slim-arrow-up`: `slim-arrow-up` = "slim-arrow-up".asInstanceOf[`slim-arrow-up`]
   
   @js.native
-  sealed trait soccor extends IconGlyph
+  sealed trait soccor
+    extends StObject
+       with IconGlyph
   @scala.inline
   def soccor: soccor = "soccor".asInstanceOf[soccor]
   
   @js.native
-  sealed trait sonography extends IconGlyph
+  sealed trait sonography
+    extends StObject
+       with IconGlyph
   @scala.inline
   def sonography: sonography = "sonography".asInstanceOf[sonography]
   
   @js.native
-  sealed trait sort extends IconGlyph
+  sealed trait sort
+    extends StObject
+       with IconGlyph
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   
   @js.native
-  sealed trait `sort-ascending` extends IconGlyph
+  sealed trait `sort-ascending`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sort-ascending`: `sort-ascending` = "sort-ascending".asInstanceOf[`sort-ascending`]
   
   @js.native
-  sealed trait `sort-descending` extends IconGlyph
+  sealed trait `sort-descending`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sort-descending`: `sort-descending` = "sort-descending".asInstanceOf[`sort-descending`]
   
   @js.native
-  sealed trait `sorting-ranking` extends IconGlyph
+  sealed trait `sorting-ranking`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sorting-ranking`: `sorting-ranking` = "sorting-ranking".asInstanceOf[`sorting-ranking`]
   
   @js.native
-  sealed trait sound extends IconGlyph
+  sealed trait sound
+    extends StObject
+       with IconGlyph
   @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
   
   @js.native
-  sealed trait `sound-loud` extends IconGlyph
+  sealed trait `sound-loud`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sound-loud`: `sound-loud` = "sound-loud".asInstanceOf[`sound-loud`]
   
   @js.native
-  sealed trait `sound-off` extends IconGlyph
+  sealed trait `sound-off`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sound-off`: `sound-off` = "sound-off".asInstanceOf[`sound-off`]
   
   @js.native
-  sealed trait `source-code` extends IconGlyph
+  sealed trait `source-code`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `source-code`: `source-code` = "source-code".asInstanceOf[`source-code`]
   
@@ -3165,47 +4224,65 @@ object fundamentalReactStrings {
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait standard extends ButtonTypes
+  sealed trait standard
+    extends StObject
+       with ButtonTypes
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
-  sealed trait `status-critical` extends IconGlyph
+  sealed trait `status-critical`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `status-critical`: `status-critical` = "status-critical".asInstanceOf[`status-critical`]
   
   @js.native
-  sealed trait `status-inactive` extends IconGlyph
+  sealed trait `status-inactive`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `status-inactive`: `status-inactive` = "status-inactive".asInstanceOf[`status-inactive`]
   
   @js.native
-  sealed trait `status-negative` extends IconGlyph
+  sealed trait `status-negative`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `status-negative`: `status-negative` = "status-negative".asInstanceOf[`status-negative`]
   
   @js.native
-  sealed trait `status-positive` extends IconGlyph
+  sealed trait `status-positive`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `status-positive`: `status-positive` = "status-positive".asInstanceOf[`status-positive`]
   
   @js.native
-  sealed trait step extends IconGlyph
+  sealed trait step
+    extends StObject
+       with IconGlyph
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait stethoscope extends IconGlyph
+  sealed trait stethoscope
+    extends StObject
+       with IconGlyph
   @scala.inline
   def stethoscope: stethoscope = "stethoscope".asInstanceOf[stethoscope]
   
   @js.native
-  sealed trait stop extends IconGlyph
+  sealed trait stop
+    extends StObject
+       with IconGlyph
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait `study-leave` extends IconGlyph
+  sealed trait `study-leave`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `study-leave`: `study-leave` = "study-leave".asInstanceOf[`study-leave`]
   
@@ -3215,7 +4292,9 @@ object fundamentalReactStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait `subway-train` extends IconGlyph
+  sealed trait `subway-train`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `subway-train`: `subway-train` = "subway-train".asInstanceOf[`subway-train`]
   
@@ -3225,182 +4304,254 @@ object fundamentalReactStrings {
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait suitcase extends IconGlyph
+  sealed trait suitcase
+    extends StObject
+       with IconGlyph
   @scala.inline
   def suitcase: suitcase = "suitcase".asInstanceOf[suitcase]
   
   @js.native
-  sealed trait supplier extends IconGlyph
+  sealed trait supplier
+    extends StObject
+       with IconGlyph
   @scala.inline
   def supplier: supplier = "supplier".asInstanceOf[supplier]
   
   @js.native
-  sealed trait survey extends IconGlyph
+  sealed trait survey
+    extends StObject
+       with IconGlyph
   @scala.inline
   def survey: survey = "survey".asInstanceOf[survey]
   
   @js.native
-  sealed trait `switch-classes` extends IconGlyph
+  sealed trait `switch-classes`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `switch-classes`: `switch-classes` = "switch-classes".asInstanceOf[`switch-classes`]
   
   @js.native
-  sealed trait `switch-views` extends IconGlyph
+  sealed trait `switch-views`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `switch-views`: `switch-views` = "switch-views".asInstanceOf[`switch-views`]
   
   @js.native
-  sealed trait synchronize extends IconGlyph
+  sealed trait synchronize
+    extends StObject
+       with IconGlyph
   @scala.inline
   def synchronize: synchronize = "synchronize".asInstanceOf[synchronize]
   
   @js.native
-  sealed trait syntax extends IconGlyph
+  sealed trait syntax
+    extends StObject
+       with IconGlyph
   @scala.inline
   def syntax: syntax = "syntax".asInstanceOf[syntax]
   
   @js.native
-  sealed trait syringe extends IconGlyph
+  sealed trait syringe
+    extends StObject
+       with IconGlyph
   @scala.inline
   def syringe: syringe = "syringe".asInstanceOf[syringe]
   
   @js.native
-  sealed trait `sys-add` extends IconGlyph
+  sealed trait `sys-add`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-add`: `sys-add` = "sys-add".asInstanceOf[`sys-add`]
   
   @js.native
-  sealed trait `sys-back` extends IconGlyph
+  sealed trait `sys-back`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-back`: `sys-back` = "sys-back".asInstanceOf[`sys-back`]
   
   @js.native
-  sealed trait `sys-back-2` extends IconGlyph
+  sealed trait `sys-back-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-back-2`: `sys-back-2` = "sys-back-2".asInstanceOf[`sys-back-2`]
   
   @js.native
-  sealed trait `sys-cancel` extends IconGlyph
+  sealed trait `sys-cancel`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-cancel`: `sys-cancel` = "sys-cancel".asInstanceOf[`sys-cancel`]
   
   @js.native
-  sealed trait `sys-cancel-2` extends IconGlyph
+  sealed trait `sys-cancel-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-cancel-2`: `sys-cancel-2` = "sys-cancel-2".asInstanceOf[`sys-cancel-2`]
   
   @js.native
-  sealed trait `sys-enter` extends IconGlyph
+  sealed trait `sys-enter`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-enter`: `sys-enter` = "sys-enter".asInstanceOf[`sys-enter`]
   
   @js.native
-  sealed trait `sys-enter-2` extends IconGlyph
+  sealed trait `sys-enter-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-enter-2`: `sys-enter-2` = "sys-enter-2".asInstanceOf[`sys-enter-2`]
   
   @js.native
-  sealed trait `sys-find` extends IconGlyph
+  sealed trait `sys-find`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-find`: `sys-find` = "sys-find".asInstanceOf[`sys-find`]
   
   @js.native
-  sealed trait `sys-find-next` extends IconGlyph
+  sealed trait `sys-find-next`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-find-next`: `sys-find-next` = "sys-find-next".asInstanceOf[`sys-find-next`]
   
   @js.native
-  sealed trait `sys-first-page` extends IconGlyph
+  sealed trait `sys-first-page`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-first-page`: `sys-first-page` = "sys-first-page".asInstanceOf[`sys-first-page`]
   
   @js.native
-  sealed trait `sys-help` extends IconGlyph
+  sealed trait `sys-help`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-help`: `sys-help` = "sys-help".asInstanceOf[`sys-help`]
   
   @js.native
-  sealed trait `sys-help-2` extends IconGlyph
+  sealed trait `sys-help-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-help-2`: `sys-help-2` = "sys-help-2".asInstanceOf[`sys-help-2`]
   
   @js.native
-  sealed trait `sys-last-page` extends IconGlyph
+  sealed trait `sys-last-page`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-last-page`: `sys-last-page` = "sys-last-page".asInstanceOf[`sys-last-page`]
   
   @js.native
-  sealed trait `sys-minus` extends IconGlyph
+  sealed trait `sys-minus`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-minus`: `sys-minus` = "sys-minus".asInstanceOf[`sys-minus`]
   
   @js.native
-  sealed trait `sys-monitor` extends IconGlyph
+  sealed trait `sys-monitor`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-monitor`: `sys-monitor` = "sys-monitor".asInstanceOf[`sys-monitor`]
   
   @js.native
-  sealed trait `sys-next-page` extends IconGlyph
+  sealed trait `sys-next-page`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-next-page`: `sys-next-page` = "sys-next-page".asInstanceOf[`sys-next-page`]
   
   @js.native
-  sealed trait `sys-prev-page` extends IconGlyph
+  sealed trait `sys-prev-page`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `sys-prev-page`: `sys-prev-page` = "sys-prev-page".asInstanceOf[`sys-prev-page`]
   
   @js.native
-  sealed trait `system-exit` extends IconGlyph
+  sealed trait `system-exit`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `system-exit`: `system-exit` = "system-exit".asInstanceOf[`system-exit`]
   
   @js.native
-  sealed trait `system-exit-2` extends IconGlyph
+  sealed trait `system-exit-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `system-exit-2`: `system-exit-2` = "system-exit-2".asInstanceOf[`system-exit-2`]
   
   @js.native
-  sealed trait `table-chart` extends IconGlyph
+  sealed trait `table-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `table-chart`: `table-chart` = "table-chart".asInstanceOf[`table-chart`]
   
   @js.native
-  sealed trait `table-view` extends IconGlyph
+  sealed trait `table-view`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `table-view`: `table-view` = "table-view".asInstanceOf[`table-view`]
   
   @js.native
-  sealed trait tag extends IconGlyph
+  sealed trait tag
+    extends StObject
+       with IconGlyph
   @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
   
   @js.native
-  sealed trait `tag-cloud-chart` extends IconGlyph
+  sealed trait `tag-cloud-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `tag-cloud-chart`: `tag-cloud-chart` = "tag-cloud-chart".asInstanceOf[`tag-cloud-chart`]
   
   @js.native
-  sealed trait tags extends IconGlyph
+  sealed trait tags
+    extends StObject
+       with IconGlyph
   @scala.inline
   def tags: tags = "tags".asInstanceOf[tags]
   
   @js.native
-  sealed trait `target-group` extends IconGlyph
+  sealed trait `target-group`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `target-group`: `target-group` = "target-group".asInstanceOf[`target-group`]
   
   @js.native
-  sealed trait task extends IconGlyph
+  sealed trait task
+    extends StObject
+       with IconGlyph
   @scala.inline
   def task: task = "task".asInstanceOf[task]
   
   @js.native
-  sealed trait taxi extends IconGlyph
+  sealed trait taxi
+    extends StObject
+       with IconGlyph
   @scala.inline
   def taxi: taxi = "taxi".asInstanceOf[taxi]
   
   @js.native
-  sealed trait `technical-object` extends IconGlyph
+  sealed trait `technical-object`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `technical-object`: `technical-object` = "technical-object".asInstanceOf[`technical-object`]
   
@@ -3410,12 +4561,16 @@ object fundamentalReactStrings {
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait temperature extends IconGlyph
+  sealed trait temperature
+    extends StObject
+       with IconGlyph
   @scala.inline
   def temperature: temperature = "temperature".asInstanceOf[temperature]
   
   @js.native
-  sealed trait text extends InputGroupTypes
+  sealed trait text
+    extends StObject
+       with InputGroupTypes
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -3430,62 +4585,86 @@ object fundamentalReactStrings {
   def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
-  sealed trait `text-align-center` extends IconGlyph
+  sealed trait `text-align-center`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `text-align-center`: `text-align-center` = "text-align-center".asInstanceOf[`text-align-center`]
   
   @js.native
-  sealed trait `text-align-justified` extends IconGlyph
+  sealed trait `text-align-justified`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `text-align-justified`: `text-align-justified` = "text-align-justified".asInstanceOf[`text-align-justified`]
   
   @js.native
-  sealed trait `text-align-left` extends IconGlyph
+  sealed trait `text-align-left`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `text-align-left`: `text-align-left` = "text-align-left".asInstanceOf[`text-align-left`]
   
   @js.native
-  sealed trait `text-align-right` extends IconGlyph
+  sealed trait `text-align-right`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `text-align-right`: `text-align-right` = "text-align-right".asInstanceOf[`text-align-right`]
   
   @js.native
-  sealed trait `text-formatting` extends IconGlyph
+  sealed trait `text-formatting`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `text-formatting`: `text-formatting` = "text-formatting".asInstanceOf[`text-formatting`]
   
   @js.native
-  sealed trait theater extends IconGlyph
+  sealed trait theater
+    extends StObject
+       with IconGlyph
   @scala.inline
   def theater: theater = "theater".asInstanceOf[theater]
   
   @js.native
-  sealed trait `thing-type` extends IconGlyph
+  sealed trait `thing-type`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `thing-type`: `thing-type` = "thing-type".asInstanceOf[`thing-type`]
   
   @js.native
-  sealed trait `thumb-down` extends IconGlyph
+  sealed trait `thumb-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `thumb-down`: `thumb-down` = "thumb-down".asInstanceOf[`thumb-down`]
   
   @js.native
-  sealed trait `thumb-up` extends IconGlyph
+  sealed trait `thumb-up`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `thumb-up`: `thumb-up` = "thumb-up".asInstanceOf[`thumb-up`]
   
   @js.native
-  sealed trait `time-account` extends IconGlyph
+  sealed trait `time-account`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `time-account`: `time-account` = "time-account".asInstanceOf[`time-account`]
   
   @js.native
-  sealed trait `time-entry-request` extends IconGlyph
+  sealed trait `time-entry-request`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `time-entry-request`: `time-entry-request` = "time-entry-request".asInstanceOf[`time-entry-request`]
   
   @js.native
-  sealed trait `time-overtime` extends IconGlyph
+  sealed trait `time-overtime`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `time-overtime`: `time-overtime` = "time-overtime".asInstanceOf[`time-overtime`]
   
@@ -3495,154 +4674,213 @@ object fundamentalReactStrings {
   def time_ : time_ = "time".asInstanceOf[time_]
   
   @js.native
-  sealed trait timesheet extends IconGlyph
+  sealed trait timesheet
+    extends StObject
+       with IconGlyph
   @scala.inline
   def timesheet: timesheet = "timesheet".asInstanceOf[timesheet]
   
   @js.native
-  sealed trait `to-be-reviewed` extends IconGlyph
+  sealed trait `to-be-reviewed`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `to-be-reviewed`: `to-be-reviewed` = "to-be-reviewed".asInstanceOf[`to-be-reviewed`]
   
   @js.native
-  sealed trait `toaster-down` extends IconGlyph
+  sealed trait `toaster-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `toaster-down`: `toaster-down` = "toaster-down".asInstanceOf[`toaster-down`]
   
   @js.native
-  sealed trait `toaster-top` extends IconGlyph
+  sealed trait `toaster-top`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `toaster-top`: `toaster-top` = "toaster-top".asInstanceOf[`toaster-top`]
   
   @js.native
-  sealed trait `toaster-up` extends IconGlyph
+  sealed trait `toaster-up`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `toaster-up`: `toaster-up` = "toaster-up".asInstanceOf[`toaster-up`]
   
   @js.native
-  sealed trait `tools-opportunity` extends IconGlyph
+  sealed trait `tools-opportunity`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `tools-opportunity`: `tools-opportunity` = "tools-opportunity".asInstanceOf[`tools-opportunity`]
   
   @js.native
-  sealed trait top extends PopperPlacement
+  sealed trait top
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-end` extends PopperPlacement
+  sealed trait `top-end`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
   
   @js.native
-  sealed trait `top-start` extends PopperPlacement
+  sealed trait `top-start`
+    extends StObject
+       with PopperPlacement
   @scala.inline
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
   
   @js.native
-  sealed trait transparent extends ButtonOptions
+  sealed trait transparent
+    extends StObject
+       with ButtonOptions
   @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
-  sealed trait `travel-expense` extends IconGlyph
+  sealed trait `travel-expense`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `travel-expense`: `travel-expense` = "travel-expense".asInstanceOf[`travel-expense`]
   
   @js.native
-  sealed trait `travel-expense-report` extends IconGlyph
+  sealed trait `travel-expense-report`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `travel-expense-report`: `travel-expense-report` = "travel-expense-report".asInstanceOf[`travel-expense-report`]
   
   @js.native
-  sealed trait `travel-itinerary` extends IconGlyph
+  sealed trait `travel-itinerary`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `travel-itinerary`: `travel-itinerary` = "travel-itinerary".asInstanceOf[`travel-itinerary`]
   
   @js.native
-  sealed trait `travel-request` extends IconGlyph
+  sealed trait `travel-request`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `travel-request`: `travel-request` = "travel-request".asInstanceOf[`travel-request`]
   
   @js.native
   sealed trait tree
-    extends IconGlyph
+    extends StObject
+       with IconGlyph
        with PopoverTypes
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait `trend-down` extends IconGlyph
+  sealed trait `trend-down`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `trend-down`: `trend-down` = "trend-down".asInstanceOf[`trend-down`]
   
   @js.native
-  sealed trait `trend-up` extends IconGlyph
+  sealed trait `trend-up`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `trend-up`: `trend-up` = "trend-up".asInstanceOf[`trend-up`]
   
   @js.native
-  sealed trait `trip-report` extends IconGlyph
+  sealed trait `trip-report`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `trip-report`: `trip-report` = "trip-report".asInstanceOf[`trip-report`]
   
   @js.native
-  sealed trait `ui-notifications` extends IconGlyph
+  sealed trait `ui-notifications`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `ui-notifications`: `ui-notifications` = "ui-notifications".asInstanceOf[`ui-notifications`]
   
   @js.native
-  sealed trait umbrella extends IconGlyph
+  sealed trait umbrella
+    extends StObject
+       with IconGlyph
   @scala.inline
   def umbrella: umbrella = "umbrella".asInstanceOf[umbrella]
   
   @js.native
-  sealed trait `underline-text` extends IconGlyph
+  sealed trait `underline-text`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `underline-text`: `underline-text` = "underline-text".asInstanceOf[`underline-text`]
   
   @js.native
-  sealed trait undo extends IconGlyph
+  sealed trait undo
+    extends StObject
+       with IconGlyph
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
   
   @js.native
-  sealed trait unfavorite extends IconGlyph
+  sealed trait unfavorite
+    extends StObject
+       with IconGlyph
   @scala.inline
   def unfavorite: unfavorite = "unfavorite".asInstanceOf[unfavorite]
   
   @js.native
-  sealed trait unlocked extends IconGlyph
+  sealed trait unlocked
+    extends StObject
+       with IconGlyph
   @scala.inline
   def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
   
   @js.native
-  sealed trait `unpaid-leave` extends IconGlyph
+  sealed trait `unpaid-leave`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `unpaid-leave`: `unpaid-leave` = "unpaid-leave".asInstanceOf[`unpaid-leave`]
   
   @js.native
-  sealed trait unwired extends IconGlyph
+  sealed trait unwired
+    extends StObject
+       with IconGlyph
   @scala.inline
   def unwired: unwired = "unwired".asInstanceOf[unwired]
   
   @js.native
-  sealed trait up extends IconGlyph
+  sealed trait up
+    extends StObject
+       with IconGlyph
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait upload extends IconGlyph
+  sealed trait upload
+    extends StObject
+       with IconGlyph
   @scala.inline
   def upload: upload = "upload".asInstanceOf[upload]
   
   @js.native
-  sealed trait `upload-to-cloud` extends IconGlyph
+  sealed trait `upload-to-cloud`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `upload-to-cloud`: `upload-to-cloud` = "upload-to-cloud".asInstanceOf[`upload-to-cloud`]
   
   @js.native
-  sealed trait `upstacked-chart` extends IconGlyph
+  sealed trait `upstacked-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `upstacked-chart`: `upstacked-chart` = "upstacked-chart".asInstanceOf[`upstacked-chart`]
   
@@ -3652,27 +4890,37 @@ object fundamentalReactStrings {
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait `user-edit` extends IconGlyph
+  sealed trait `user-edit`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `user-edit`: `user-edit` = "user-edit".asInstanceOf[`user-edit`]
   
   @js.native
-  sealed trait `user-settings` extends IconGlyph
+  sealed trait `user-settings`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `user-settings`: `user-settings` = "user-settings".asInstanceOf[`user-settings`]
   
   @js.native
-  sealed trait `value-help` extends IconGlyph
+  sealed trait `value-help`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `value-help`: `value-help` = "value-help".asInstanceOf[`value-help`]
   
   @js.native
-  sealed trait `vds-file` extends IconGlyph
+  sealed trait `vds-file`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vds-file`: `vds-file` = "vds-file".asInstanceOf[`vds-file`]
   
   @js.native
-  sealed trait `vehicle-repair` extends IconGlyph
+  sealed trait `vehicle-repair`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vehicle-repair`: `vehicle-repair` = "vehicle-repair".asInstanceOf[`vehicle-repair`]
   
@@ -3682,139 +4930,192 @@ object fundamentalReactStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait `vertical-bar-chart` extends IconGlyph
+  sealed trait `vertical-bar-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vertical-bar-chart`: `vertical-bar-chart` = "vertical-bar-chart".asInstanceOf[`vertical-bar-chart`]
   
   @js.native
-  sealed trait `vertical-bar-chart-2` extends IconGlyph
+  sealed trait `vertical-bar-chart-2`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vertical-bar-chart-2`: `vertical-bar-chart-2` = "vertical-bar-chart-2".asInstanceOf[`vertical-bar-chart-2`]
   
   @js.native
-  sealed trait `vertical-bullet-chart` extends IconGlyph
+  sealed trait `vertical-bullet-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vertical-bullet-chart`: `vertical-bullet-chart` = "vertical-bullet-chart".asInstanceOf[`vertical-bullet-chart`]
   
   @js.native
-  sealed trait `vertical-grip` extends IconGlyph
+  sealed trait `vertical-grip`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vertical-grip`: `vertical-grip` = "vertical-grip".asInstanceOf[`vertical-grip`]
   
   @js.native
-  sealed trait `vertical-stacked-chart` extends IconGlyph
+  sealed trait `vertical-stacked-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vertical-stacked-chart`: `vertical-stacked-chart` = "vertical-stacked-chart".asInstanceOf[`vertical-stacked-chart`]
   
   @js.native
-  sealed trait `vertical-waterfall-chart` extends IconGlyph
+  sealed trait `vertical-waterfall-chart`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `vertical-waterfall-chart`: `vertical-waterfall-chart` = "vertical-waterfall-chart".asInstanceOf[`vertical-waterfall-chart`]
   
   @js.native
-  sealed trait video extends IconGlyph
+  sealed trait video
+    extends StObject
+       with IconGlyph
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait visits extends IconGlyph
+  sealed trait visits
+    extends StObject
+       with IconGlyph
   @scala.inline
   def visits: visits = "visits".asInstanceOf[visits]
   
   @js.native
-  sealed trait waiver extends IconGlyph
+  sealed trait waiver
+    extends StObject
+       with IconGlyph
   @scala.inline
   def waiver: waiver = "waiver".asInstanceOf[waiver]
   
   @js.native
-  sealed trait wallet extends IconGlyph
+  sealed trait wallet
+    extends StObject
+       with IconGlyph
   @scala.inline
   def wallet: wallet = "wallet".asInstanceOf[wallet]
   
   @js.native
-  sealed trait warning extends IconGlyph
+  sealed trait warning
+    extends StObject
+       with IconGlyph
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait warning2 extends IconGlyph
+  sealed trait warning2
+    extends StObject
+       with IconGlyph
   @scala.inline
   def warning2: warning2 = "warning2".asInstanceOf[warning2]
   
   @js.native
-  sealed trait `washing-machine` extends IconGlyph
+  sealed trait `washing-machine`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `washing-machine`: `washing-machine` = "washing-machine".asInstanceOf[`washing-machine`]
   
   @js.native
-  sealed trait `weather-proofing` extends IconGlyph
+  sealed trait `weather-proofing`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `weather-proofing`: `weather-proofing` = "weather-proofing".asInstanceOf[`weather-proofing`]
   
   @js.native
-  sealed trait `web-cam` extends IconGlyph
+  sealed trait `web-cam`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `web-cam`: `web-cam` = "web-cam".asInstanceOf[`web-cam`]
   
   @js.native
-  sealed trait widgets extends IconGlyph
+  sealed trait widgets
+    extends StObject
+       with IconGlyph
   @scala.inline
   def widgets: widgets = "widgets".asInstanceOf[widgets]
   
   @js.native
-  sealed trait `windows-doors` extends IconGlyph
+  sealed trait `windows-doors`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `windows-doors`: `windows-doors` = "windows-doors".asInstanceOf[`windows-doors`]
   
   @js.native
-  sealed trait `work-history` extends IconGlyph
+  sealed trait `work-history`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `work-history`: `work-history` = "work-history".asInstanceOf[`work-history`]
   
   @js.native
-  sealed trait `workflow-tasks` extends IconGlyph
+  sealed trait `workflow-tasks`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `workflow-tasks`: `workflow-tasks` = "workflow-tasks".asInstanceOf[`workflow-tasks`]
   
   @js.native
-  sealed trait world extends IconGlyph
+  sealed trait world
+    extends StObject
+       with IconGlyph
   @scala.inline
   def world: world = "world".asInstanceOf[world]
   
   @js.native
-  sealed trait `wounds-doc` extends IconGlyph
+  sealed trait `wounds-doc`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `wounds-doc`: `wounds-doc` = "wounds-doc".asInstanceOf[`wounds-doc`]
   
   @js.native
-  sealed trait wrench extends IconGlyph
+  sealed trait wrench
+    extends StObject
+       with IconGlyph
   @scala.inline
   def wrench: wrench = "wrench".asInstanceOf[wrench]
   
   @js.native
-  sealed trait `write-new` extends IconGlyph
+  sealed trait `write-new`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `write-new`: `write-new` = "write-new".asInstanceOf[`write-new`]
   
   @js.native
-  sealed trait `write-new-document` extends IconGlyph
+  sealed trait `write-new-document`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `write-new-document`: `write-new-document` = "write-new-document".asInstanceOf[`write-new-document`]
   
   @js.native
-  sealed trait `x-ray` extends IconGlyph
+  sealed trait `x-ray`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `x-ray`: `x-ray` = "x-ray".asInstanceOf[`x-ray`]
   
   @js.native
   sealed trait xl
-    extends AvatarSize
+    extends StObject
+       with AvatarSize
        with IconSize
   @scala.inline
   def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
-  sealed trait xs extends AvatarSize
+  sealed trait xs
+    extends StObject
+       with AvatarSize
   @scala.inline
   def xs: xs = "xs".asInstanceOf[xs]
   
@@ -3824,12 +5125,16 @@ object fundamentalReactStrings {
   def yes: yes = "yes".asInstanceOf[yes]
   
   @js.native
-  sealed trait `zoom-in` extends IconGlyph
+  sealed trait `zoom-in`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `zoom-in`: `zoom-in` = "zoom-in".asInstanceOf[`zoom-in`]
   
   @js.native
-  sealed trait `zoom-out` extends IconGlyph
+  sealed trait `zoom-out`
+    extends StObject
+       with IconGlyph
   @scala.inline
   def `zoom-out`: `zoom-out` = "zoom-out".asInstanceOf[`zoom-out`]
 }

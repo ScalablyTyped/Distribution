@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.anon.AddressU
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -92,7 +91,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Texture")
 @js.native
 class Texture protected ()
-  extends typings.playcanvas.pc.Texture {
+  extends StObject
+     with typings.playcanvas.pc.Texture {
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice) = this()
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, options: AddressU) = this()
 }

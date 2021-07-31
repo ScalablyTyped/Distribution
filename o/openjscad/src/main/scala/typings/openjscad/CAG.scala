@@ -12,12 +12,12 @@ import typings.std.Blob
 import typings.std.Path2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CAG
-  extends CxG
+  extends StObject
+     with CxG
      with ICenter {
   
   def _toCSGWall(z0: js.Any, z1: js.Any): CSG = js.native
@@ -26,7 +26,7 @@ trait CAG
   
   def _toVector3DPairs(m: Matrix4x4): js.Array[js.Array[Vector3D]] = js.native
   
-  def _toWallPolygons(options: js.Any): js.Array[_] = js.native
+  def _toWallPolygons(options: js.Any): js.Array[js.Any] = js.native
   
   def area(): Double = js.native
   
@@ -77,7 +77,9 @@ trait CAG
 object CAG {
   
   @js.native
-  trait Side extends CxG {
+  trait Side
+    extends StObject
+       with CxG {
     
     def direction(): Vector2D = js.native
     
@@ -98,14 +100,13 @@ object CAG {
     var vertex1: Vertex = js.native
   }
   
-  @js.native
   trait Vertex extends StObject {
     
-    def getTag(): Double = js.native
+    def getTag(): Double
     
-    var pos: Vector2D = js.native
+    var pos: Vector2D
     
-    var tag: Double = js.native
+    var tag: Double
   }
   object Vertex {
     
@@ -129,16 +130,15 @@ object CAG {
     }
   }
   
-  @js.native
   trait fuzzyCAGFactory extends StObject {
     
-    def getCAG(sourcecag: CAG): CAG = js.native
+    def getCAG(sourcecag: CAG): CAG
     
-    def getSide(sourceside: Side): Side = js.native
+    def getSide(sourceside: Side): Side
     
-    def getVertex(sourcevertex: Vertex): Vertex = js.native
+    def getVertex(sourcevertex: Vertex): Vertex
     
-    var vertexfactory: fuzzyFactory = js.native
+    var vertexfactory: fuzzyFactory
   }
   object fuzzyCAGFactory {
     

@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsBasicCard extends StObject {
   
   /**
@@ -13,36 +11,36 @@ trait GoogleActionsV2UiElementsBasicCard extends StObject {
     * Currently at most 1 button is supported.
     * Optional.
     */
-  var buttons: js.UndefOr[js.Array[GoogleActionsV2UiElementsButton]] = js.native
+  var buttons: js.UndefOr[js.Array[GoogleActionsV2UiElementsButton]] = js.undefined
   
   /**
     * Body text of the card.
     * Supports a limited set of markdown syntax for formatting.
     * Required, unless image is present.
     */
-  var formattedText: js.UndefOr[String] = js.native
+  var formattedText: js.UndefOr[String] = js.undefined
   
   /**
     * A hero image for the card. The height is fixed to 192dp.
     * Optional.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * Type of image display option. Optional.
     */
-  var imageDisplayOptions: js.UndefOr[GoogleActionsV2UiElementsBasicCardImageDisplayOptions] = js.native
+  var imageDisplayOptions: js.UndefOr[GoogleActionsV2UiElementsBasicCardImageDisplayOptions] = js.undefined
   
   /**
     * Optional.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * Overall title of the card.
     * Optional.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsBasicCard {
   

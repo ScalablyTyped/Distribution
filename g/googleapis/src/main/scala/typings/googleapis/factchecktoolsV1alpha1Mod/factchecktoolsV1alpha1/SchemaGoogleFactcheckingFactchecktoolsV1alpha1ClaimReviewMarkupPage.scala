@@ -2,13 +2,11 @@ package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holds one or more instances of `ClaimReview` markup for a webpage.
   */
-@js.native
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extends StObject {
   
   /**
@@ -16,20 +14,20 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extend
     * semantically these are page-level fields, and each `ClaimReview` on this
     * page will contain the same values.
     */
-  var claimReviewAuthor: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor] = js.native
+  var claimReviewAuthor: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor] = js.undefined
   
   /**
     * A list of individual claim reviews for this page. Each item in the list
     * corresponds to one `ClaimReview` element.
     */
-  var claimReviewMarkups: js.UndefOr[js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]] = js.native
+  var claimReviewMarkups: js.UndefOr[js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]] = js.undefined
   
   /**
     * The name of this `ClaimReview` markup page resource, in the form of
     * `pages/{page_id}`. Except for update requests, this field is output-only
     * and should not be set by the user.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the page associated with this `ClaimReview` markup. While
@@ -38,7 +36,7 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extend
     * value unless individually overridden.&lt;br&gt; Corresponds to
     * `ClaimReview.url`
     */
-  var pageUrl: js.UndefOr[String] = js.native
+  var pageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The date when the fact check was published. Similar to the URL,
@@ -46,13 +44,13 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extend
     * page will contain the same value.&lt;br&gt; Corresponds to
     * `ClaimReview.datePublished`
     */
-  var publishDate: js.UndefOr[String] = js.native
+  var publishDate: js.UndefOr[String] = js.undefined
   
   /**
     * The version ID for this markup. Except for update requests, this field is
     * output-only and should not be set by the user.
     */
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage {
   

@@ -2,15 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeforeCapture extends StObject {
   
-  var draggableId: DraggableId = js.native
+  var draggableId: DraggableId
   
-  var mode: MovementMode = js.native
+  var mode: MovementMode
 }
 object BeforeCapture {
   

@@ -3,19 +3,17 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelTitleElement[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var titleElement: js.UndefOr[dxElement] = js.native
+  var titleElement: js.UndefOr[dxElement] = js.undefined
 }
 object ModelTitleElement {
   
@@ -26,7 +24,7 @@ object ModelTitleElement {
   }
   
   @scala.inline
-  implicit class ModelTitleElementMutableBuilder[Self <: ModelTitleElement[_], T] (val x: Self with ModelTitleElement[T]) extends AnyVal {
+  implicit class ModelTitleElementMutableBuilder[Self <: ModelTitleElement[?], T] (val x: Self & ModelTitleElement[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

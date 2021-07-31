@@ -2,58 +2,58 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxSpinEdit control.
   */
-@js.native
-trait ASPxClientSpinEdit extends ASPxClientSpinEditBase {
+trait ASPxClientSpinEdit
+  extends StObject
+     with ASPxClientSpinEditBase {
   
   /**
     * Gets the maximum value of the editor.
     */
-  def GetMaxValue(): Double = js.native
+  def GetMaxValue(): Double
   
   /**
     * Gets the minimum value of the editor.
     */
-  def GetMinValue(): Double = js.native
+  def GetMinValue(): Double
   
   /**
     * Gets a number which represents the spin editor's value.
     */
-  def GetNumber(): Double = js.native
+  def GetNumber(): Double
   
   /**
     * Occurs on the client side when the editor's value is altered in any way.
     */
-  var NumberChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEdit]] = js.native
+  var NumberChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEdit]]
   
   /**
     * Sets the maximum value of the editor.
     * @param value A decimal value specifying the maximum value of the editor.
     */
-  def SetMaxValue(value: Double): Unit = js.native
+  def SetMaxValue(value: Double): Unit
   
   /**
     * Sets the minimum value of the editor.
     * @param value A decimal value specifying the minimum value of the editor.
     */
-  def SetMinValue(value: Double): Unit = js.native
+  def SetMinValue(value: Double): Unit
   
   /**
     * Sets the spin editor's value.
     * @param number A decimal number specifying the value to assign to the spin editor.
     */
-  def SetNumber(number: Double): Unit = js.native
+  def SetNumber(number: Double): Unit
   
   /**
     * Specifies the value of the spin edit control on the client side.
     * @param number A Decimal value specifying the control value.
     */
-  def SetValue(number: Double): Unit = js.native
+  def SetValue(number: Double): Unit
 }
 object ASPxClientSpinEdit {
   

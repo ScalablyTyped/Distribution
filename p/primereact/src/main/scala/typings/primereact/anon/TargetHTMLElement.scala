@@ -3,15 +3,13 @@ package typings.primereact.anon
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetHTMLElement extends StObject {
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
   
-  var target: HTMLElement = js.native
+  var target: HTMLElement
 }
 object TargetHTMLElement {
   

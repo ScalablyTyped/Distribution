@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseAnimationsRequest extends StObject {
   
   /**
     * List of animation ids to seek.
     */
-  var animations: js.Array[String] = js.native
+  var animations: js.Array[String]
 }
 object ReleaseAnimationsRequest {
   

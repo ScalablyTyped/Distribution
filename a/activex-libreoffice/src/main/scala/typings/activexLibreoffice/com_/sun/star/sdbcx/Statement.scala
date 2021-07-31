@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ResultSet
   * @see XRowLocate
   */
-@js.native
 trait Statement
-  extends typings.activexLibreoffice.com_.sun.star.sdbc.Statement {
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbc.Statement {
   
   /** returns `TRUE` if a result set should allow navigation with bookmarks or not. The default is `FALSE` . */
-  var UseBookmarks: Boolean = js.native
+  var UseBookmarks: Boolean
 }
 object Statement {
   

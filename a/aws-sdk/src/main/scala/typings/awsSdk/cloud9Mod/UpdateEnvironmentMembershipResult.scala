@@ -2,16 +2,14 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEnvironmentMembershipResult extends StObject {
   
   /**
     * Information about the environment member whose settings were changed.
     */
-  var membership: js.UndefOr[EnvironmentMember] = js.native
+  var membership: js.UndefOr[EnvironmentMember] = js.undefined
 }
 object UpdateEnvironmentMembershipResult {
   

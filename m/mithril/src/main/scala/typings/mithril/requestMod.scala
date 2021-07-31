@@ -3,7 +3,6 @@ package typings.mithril
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod extends Shortcut {
@@ -12,12 +11,11 @@ object requestMod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  @js.native
   trait Static extends StObject {
     
-    var jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any = js.native
+    var jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any
     
-    var request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any = js.native
+    var request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any
   }
   object Static {
     

@@ -3,17 +3,15 @@ package typings.moduleDeps
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Builtin extends StObject {
     
-    var builtin: js.UndefOr[Boolean] = js.native
+    var builtin: js.UndefOr[Boolean] = js.undefined
     
-    var inNodeModules: js.UndefOr[Boolean] = js.native
+    var inNodeModules: js.UndefOr[Boolean] = js.undefined
   }
   object Builtin {
     
@@ -40,15 +38,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Deps extends StObject {
     
     @JSName("package")
-    var _package: js.Any = js.native
+    var _package: js.Any
     
-    var deps: StringDictionary[Boolean] = js.native
+    var deps: StringDictionary[Boolean]
     
-    var source: String = js.native
+    var source: String
   }
   object Deps {
     
@@ -73,13 +70,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictprop
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
-    var filename: String = js.native
+    var filename: String
     
-    var id: String = js.native
+    var id: String
   }
   object Dictprop {
     
@@ -100,20 +97,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Entry extends StObject {
     
-    var entry: js.UndefOr[Boolean] = js.native
+    var entry: js.UndefOr[Boolean] = js.undefined
     
-    var expose: js.UndefOr[String] = js.native
+    var expose: js.UndefOr[String] = js.undefined
     
-    var file: String = js.native
+    var file: String
     
-    var id: String = js.native
+    var id: String
     
-    var noparse: js.UndefOr[Boolean] = js.native
+    var noparse: js.UndefOr[Boolean] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object Entry {
     
@@ -158,10 +154,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -179,10 +174,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Modules extends StObject {
     
-    var modules: js.Any = js.native
+    var modules: js.Any
   }
   object Modules {
     

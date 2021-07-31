@@ -5,21 +5,19 @@ import typings.matrixAppserviceBridge.anon.Placeholder
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thirdpartyMod {
   
-  @js.native
   trait ProtocolInstance extends StObject {
     
-    var desc: String = js.native
+    var desc: String
     
-    var fields: js.UndefOr[Record[String, _]] = js.native
+    var fields: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var network_id: String = js.native
+    var network_id: String
   }
   object ProtocolInstance {
     
@@ -36,7 +34,7 @@ object thirdpartyMod {
       def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFields(value: Record[String, _]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -52,19 +50,18 @@ object thirdpartyMod {
     }
   }
   
-  @js.native
   trait ThirdpartyLocationResponse extends StObject {
     
-    var alias: String = js.native
+    var alias: String
     
-    var fields: Record[String, _] = js.native
+    var fields: Record[String, js.Any]
     
-    var protocol: String = js.native
+    var protocol: String
   }
   object ThirdpartyLocationResponse {
     
     @scala.inline
-    def apply(alias: String, fields: Record[String, _], protocol: String): ThirdpartyLocationResponse = {
+    def apply(alias: String, fields: Record[String, js.Any], protocol: String): ThirdpartyLocationResponse = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThirdpartyLocationResponse]
     }
@@ -76,25 +73,24 @@ object thirdpartyMod {
       def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFields(value: Record[String, _]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ThirdpartyProtocolResponse extends StObject {
     
-    var field_types: StringDictionary[Placeholder] = js.native
+    var field_types: StringDictionary[Placeholder]
     
-    var icon: String = js.native
+    var icon: String
     
-    var instances: js.Array[ProtocolInstance] = js.native
+    var instances: js.Array[ProtocolInstance]
     
-    var location_fields: js.Array[String] = js.native
+    var location_fields: js.Array[String]
     
-    var user_fields: js.Array[String] = js.native
+    var user_fields: js.Array[String]
   }
   object ThirdpartyProtocolResponse {
     
@@ -139,19 +135,18 @@ object thirdpartyMod {
     }
   }
   
-  @js.native
   trait ThirdpartyUserResponse extends StObject {
     
-    var fields: Record[String, _] = js.native
+    var fields: Record[String, js.Any]
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var userid: String = js.native
+    var userid: String
   }
   object ThirdpartyUserResponse {
     
     @scala.inline
-    def apply(fields: Record[String, _], protocol: String, userid: String): ThirdpartyUserResponse = {
+    def apply(fields: Record[String, js.Any], protocol: String, userid: String): ThirdpartyUserResponse = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], userid = userid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThirdpartyUserResponse]
     }
@@ -160,7 +155,7 @@ object thirdpartyMod {
     implicit class ThirdpartyUserResponseMutableBuilder[Self <: ThirdpartyUserResponse] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFields(value: Record[String, _]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])

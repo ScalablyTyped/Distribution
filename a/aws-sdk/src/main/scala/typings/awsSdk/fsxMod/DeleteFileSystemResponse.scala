@@ -2,25 +2,23 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileSystemResponse extends StObject {
   
   /**
     * The ID of the file system being deleted.
     */
-  var FileSystemId: js.UndefOr[typings.awsSdk.fsxMod.FileSystemId] = js.native
+  var FileSystemId: js.UndefOr[typings.awsSdk.fsxMod.FileSystemId] = js.undefined
   
   /**
     * The file system lifecycle for the deletion request. Should be DELETING.
     */
-  var Lifecycle: js.UndefOr[FileSystemLifecycle] = js.native
+  var Lifecycle: js.UndefOr[FileSystemLifecycle] = js.undefined
   
-  var LustreResponse: js.UndefOr[DeleteFileSystemLustreResponse] = js.native
+  var LustreResponse: js.UndefOr[DeleteFileSystemLustreResponse] = js.undefined
   
-  var WindowsResponse: js.UndefOr[DeleteFileSystemWindowsResponse] = js.native
+  var WindowsResponse: js.UndefOr[DeleteFileSystemWindowsResponse] = js.undefined
 }
 object DeleteFileSystemResponse {
   

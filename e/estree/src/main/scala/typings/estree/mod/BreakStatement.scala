@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var label: js.UndefOr[Identifier | Null] = js.native
+  var label: js.UndefOr[Identifier | Null] = js.undefined
   
   @JSName("type")
-  var type_BreakStatement: typings.estree.estreeStrings.BreakStatement = js.native
+  var type_BreakStatement: typings.estree.estreeStrings.BreakStatement
 }
 object BreakStatement {
   
   @scala.inline
-  def apply(`type`: typings.estree.estreeStrings.BreakStatement): BreakStatement = {
+  def apply(): BreakStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BreakStatement")
     __obj.asInstanceOf[BreakStatement]
   }
   

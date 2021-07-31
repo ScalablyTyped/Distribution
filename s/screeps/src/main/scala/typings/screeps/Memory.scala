@@ -3,21 +3,19 @@ package typings.screeps
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Memory extends StObject {
   
-  var creeps: StringDictionary[CreepMemory] = js.native
+  var creeps: StringDictionary[CreepMemory]
   
-  var flags: StringDictionary[FlagMemory] = js.native
+  var flags: StringDictionary[FlagMemory]
   
-  var powerCreeps: StringDictionary[PowerCreepMemory] = js.native
+  var powerCreeps: StringDictionary[PowerCreepMemory]
   
-  var rooms: StringDictionary[RoomMemory] = js.native
+  var rooms: StringDictionary[RoomMemory]
   
-  var spawns: StringDictionary[SpawnMemory] = js.native
+  var spawns: StringDictionary[SpawnMemory]
 }
 object Memory {
   

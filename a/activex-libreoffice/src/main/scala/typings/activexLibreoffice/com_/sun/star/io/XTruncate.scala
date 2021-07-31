@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to set the size of the underlying data of a stream to zero. */
-@js.native
-trait XTruncate extends XInterface {
+trait XTruncate
+  extends StObject
+     with XInterface {
   
   /** sets the size of the underlying data of the stream to zero. */
-  def truncate(): Unit = js.native
+  def truncate(): Unit
 }
 object XTruncate {
   

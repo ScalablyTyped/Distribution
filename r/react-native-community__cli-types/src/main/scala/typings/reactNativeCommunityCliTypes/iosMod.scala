@@ -8,7 +8,6 @@ import typings.reactNativeCommunityCliTypes.anon.Platforms
 import typings.reactNativeCommunityCliTypes.anon.Script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iosMod {
@@ -17,14 +16,13 @@ object iosMod {
   
   type IOSDependencyParams = IOSProjectParams
   
-  @js.native
   trait IOSNativeModulesConfig extends StObject {
     
-    var dependencies: StringDictionary[Platforms] = js.native
+    var dependencies: StringDictionary[Platforms]
     
-    var project: Ios = js.native
+    var project: Ios
     
-    var reactNativePath: String = js.native
+    var reactNativePath: String
   }
   object IOSNativeModulesConfig {
     
@@ -48,28 +46,27 @@ object iosMod {
     }
   }
   
-  @js.native
   trait IOSProjectConfig extends StObject {
     
-    var folder: String = js.native
+    var folder: String
     
-    var libraryFolder: String = js.native
+    var libraryFolder: String
     
-    var pbxprojPath: String = js.native
+    var pbxprojPath: String
     
-    var plist: js.Array[_] = js.native
+    var plist: js.Array[js.Any]
     
-    var podfile: String = js.native
+    var podfile: String
     
-    var podspecPath: String = js.native
+    var podspecPath: String
     
-    var projectName: String = js.native
+    var projectName: String
     
-    var projectPath: String = js.native
+    var projectPath: String
     
-    var sharedLibraries: js.Array[_] = js.native
+    var sharedLibraries: js.Array[js.Any]
     
-    var sourceDir: String = js.native
+    var sourceDir: String
   }
   object IOSProjectConfig {
     
@@ -78,12 +75,12 @@ object iosMod {
       folder: String,
       libraryFolder: String,
       pbxprojPath: String,
-      plist: js.Array[_],
+      plist: js.Array[js.Any],
       podfile: String,
       podspecPath: String,
       projectName: String,
       projectPath: String,
-      sharedLibraries: js.Array[_],
+      sharedLibraries: js.Array[js.Any],
       sourceDir: String
     ): IOSProjectConfig = {
       val __obj = js.Dynamic.literal(folder = folder.asInstanceOf[js.Any], libraryFolder = libraryFolder.asInstanceOf[js.Any], pbxprojPath = pbxprojPath.asInstanceOf[js.Any], plist = plist.asInstanceOf[js.Any], podfile = podfile.asInstanceOf[js.Any], podspecPath = podspecPath.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectPath = projectPath.asInstanceOf[js.Any], sharedLibraries = sharedLibraries.asInstanceOf[js.Any], sourceDir = sourceDir.asInstanceOf[js.Any])
@@ -103,7 +100,7 @@ object iosMod {
       def setPbxprojPath(value: String): Self = StObject.set(x, "pbxprojPath", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPlist(value: js.Array[_]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
+      def setPlist(value: js.Array[js.Any]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlistVarargs(value: js.Any*): Self = StObject.set(x, "plist", js.Array(value :_*))
@@ -121,7 +118,7 @@ object iosMod {
       def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSharedLibraries(value: js.Array[_]): Self = StObject.set(x, "sharedLibraries", value.asInstanceOf[js.Any])
+      def setSharedLibraries(value: js.Array[js.Any]): Self = StObject.set(x, "sharedLibraries", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSharedLibrariesVarargs(value: js.Any*): Self = StObject.set(x, "sharedLibraries", js.Array(value :_*))
@@ -131,12 +128,11 @@ object iosMod {
     }
   }
   
-  @js.native
   trait IOSProjectParams extends StObject {
     
-    var libraryFolder: js.UndefOr[String] = js.native
+    var libraryFolder: js.UndefOr[String] = js.undefined
     
-    var plist: js.Array[_] = js.native
+    var plist: js.Array[js.Any]
     
     /**
       * @deprecated A podspec should always be at the root of a package and
@@ -145,18 +141,18 @@ object iosMod {
       *
       * @todo Log a warning when this is used.
       */
-    var podspecPath: js.UndefOr[String] = js.native
+    var podspecPath: js.UndefOr[String] = js.undefined
     
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
     
-    var scriptPhases: js.UndefOr[js.Array[_]] = js.native
+    var scriptPhases: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var sharedLibraries: js.UndefOr[js.Array[String]] = js.native
+    var sharedLibraries: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IOSProjectParams {
     
     @scala.inline
-    def apply(plist: js.Array[_]): IOSProjectParams = {
+    def apply(plist: js.Array[js.Any]): IOSProjectParams = {
       val __obj = js.Dynamic.literal(plist = plist.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOSProjectParams]
     }
@@ -171,7 +167,7 @@ object iosMod {
       def setLibraryFolderUndefined: Self = StObject.set(x, "libraryFolder", js.undefined)
       
       @scala.inline
-      def setPlist(value: js.Array[_]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
+      def setPlist(value: js.Array[js.Any]): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlistVarargs(value: js.Any*): Self = StObject.set(x, "plist", js.Array(value :_*))
@@ -189,7 +185,7 @@ object iosMod {
       def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
       @scala.inline
-      def setScriptPhases(value: js.Array[_]): Self = StObject.set(x, "scriptPhases", value.asInstanceOf[js.Any])
+      def setScriptPhases(value: js.Array[js.Any]): Self = StObject.set(x, "scriptPhases", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScriptPhasesUndefined: Self = StObject.set(x, "scriptPhases", js.undefined)
@@ -208,5 +204,5 @@ object iosMod {
     }
   }
   
-  type IOSScriptPhase = (Script | Path) with Dependencyfile
+  type IOSScriptPhase = (Script | Path) & Dependencyfile
 }

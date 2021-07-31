@@ -7,7 +7,6 @@ import typings.wordpressBlockEditor.mod.EditorMode
 import typings.wordpressBlockEditor.mod.EditorTemplateLock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wordpressBlockEditorStrings {
@@ -48,7 +47,9 @@ object wordpressBlockEditorStrings {
   def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait all extends EditorTemplateLock
+  sealed trait all
+    extends StObject
+       with EditorTemplateLock
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
@@ -133,7 +134,9 @@ object wordpressBlockEditorStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends _Value
+  sealed trait bottom
+    extends StObject
+       with _Value
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -159,7 +162,8 @@ object wordpressBlockEditorStrings {
   
   @js.native
   sealed trait center
-    extends Control
+    extends StObject
+       with Control
        with _Value
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -345,7 +349,9 @@ object wordpressBlockEditorStrings {
   def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
-  sealed trait full extends Control
+  sealed trait full
+    extends StObject
+       with Control
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   
@@ -420,7 +426,9 @@ object wordpressBlockEditorStrings {
   def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
-  sealed trait html extends EditorBlockMode
+  sealed trait html
+    extends StObject
+       with EditorBlockMode
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   
@@ -460,7 +468,9 @@ object wordpressBlockEditorStrings {
   def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
-  sealed trait insert extends EditorTemplateLock
+  sealed trait insert
+    extends StObject
+       with EditorTemplateLock
   @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
   
@@ -475,7 +485,9 @@ object wordpressBlockEditorStrings {
   def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait left extends Control
+  sealed trait left
+    extends StObject
+       with Control
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -695,7 +707,9 @@ object wordpressBlockEditorStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait right extends Control
+  sealed trait right
+    extends StObject
+       with Control
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -840,7 +854,9 @@ object wordpressBlockEditorStrings {
   def template: template = "template".asInstanceOf[template]
   
   @js.native
-  sealed trait text extends EditorMode
+  sealed trait text
+    extends StObject
+       with EditorMode
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -885,7 +901,9 @@ object wordpressBlockEditorStrings {
   def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait top extends _Value
+  sealed trait top
+    extends StObject
+       with _Value
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
@@ -936,7 +954,8 @@ object wordpressBlockEditorStrings {
   
   @js.native
   sealed trait visual
-    extends EditorBlockMode
+    extends StObject
+       with EditorBlockMode
        with EditorMode
   @scala.inline
   def visual: visual = "visual".asInstanceOf[visual]
@@ -947,7 +966,9 @@ object wordpressBlockEditorStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   
   @js.native
-  sealed trait wide extends Control
+  sealed trait wide
+    extends StObject
+       with Control
   @scala.inline
   def wide: wide = "wide".asInstanceOf[wide]
   

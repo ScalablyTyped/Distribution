@@ -2,19 +2,17 @@ package typings.stompjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Host extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var login: String = js.native
+    var login: String
     
-    var passcode: String = js.native
+    var passcode: String
   }
   object Host {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Incoming extends StObject {
     
-    var incoming: Double = js.native
+    var incoming: Double
     
-    var outgoing: Double = js.native
+    var outgoing: Double
   }
   object Incoming {
     

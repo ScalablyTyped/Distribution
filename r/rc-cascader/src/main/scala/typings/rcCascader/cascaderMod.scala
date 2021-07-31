@@ -11,7 +11,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cascaderMod {
@@ -35,9 +34,8 @@ object cascaderMod {
     def defaultProps_=(x: CascaderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("rc-cascader/es/Cascader", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[CascaderState]
   }
   
   @js.native
@@ -73,14 +71,13 @@ object cascaderMod {
     var trigger: js.Any = js.native
   }
   
-  @js.native
   trait CascaderFieldNames extends StObject {
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object CascaderFieldNames {
     
@@ -113,21 +110,21 @@ object cascaderMod {
     }
   }
   
-  @js.native
   trait CascaderOption
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[js.Array[CascaderOption]] = js.native
+    var children: js.UndefOr[js.Array[CascaderOption]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var isLeaf: js.UndefOr[Boolean] = js.native
+    var isLeaf: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object CascaderOption {
     
@@ -182,58 +179,57 @@ object cascaderMod {
   }
   
   /* Inlined parent std.Pick<rc-trigger.rc-trigger.TriggerProps, 'getPopupContainer'> */
-  @js.native
   trait CascaderProps extends StObject {
     
-    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.native
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
-    var changeOnSelect: js.UndefOr[Boolean] = js.native
+    var changeOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
     
-    var defaultValue: js.UndefOr[CascaderValueType] = js.native
+    var defaultValue: js.UndefOr[CascaderValueType] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dropdownMenuColumnStyle: js.UndefOr[CSSProperties] = js.native
+    var dropdownMenuColumnStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.native
+    var dropdownRender: js.UndefOr[js.Function1[/* menu */ ReactElement, ReactElement]] = js.undefined
     
-    var expandIcon: js.UndefOr[ReactNode] = js.native
+    var expandIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var expandTrigger: js.UndefOr[String] = js.native
+    var expandTrigger: js.UndefOr[String] = js.undefined
     
-    var fieldNames: js.UndefOr[CascaderFieldNames] = js.native
+    var fieldNames: js.UndefOr[CascaderFieldNames] = js.undefined
     
-    var filedNames: js.UndefOr[CascaderFieldNames] = js.native
+    var filedNames: js.UndefOr[CascaderFieldNames] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
-    var loadData: js.UndefOr[js.Function1[/* selectOptions */ js.Array[CascaderOption], Unit]] = js.native
+    var loadData: js.UndefOr[js.Function1[/* selectOptions */ js.Array[CascaderOption], Unit]] = js.undefined
     
-    var loadingIcon: js.UndefOr[ReactNode] = js.native
+    var loadingIcon: js.UndefOr[ReactNode] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[/* value */ CascaderValueType, /* selectOptions */ js.Array[CascaderOption], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.undefined
     
-    var onPopupVisibleChange: js.UndefOr[js.Function1[/* popupVisible */ Boolean, Unit]] = js.native
+    var onPopupVisibleChange: js.UndefOr[js.Function1[/* popupVisible */ Boolean, Unit]] = js.undefined
     
-    var options: js.UndefOr[js.Array[CascaderOption]] = js.native
+    var options: js.UndefOr[js.Array[CascaderOption]] = js.undefined
     
-    var popupClassName: js.UndefOr[String] = js.native
+    var popupClassName: js.UndefOr[String] = js.undefined
     
-    var popupPlacement: js.UndefOr[String] = js.native
+    var popupPlacement: js.UndefOr[String] = js.undefined
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[CascaderValueType] = js.native
+    var value: js.UndefOr[CascaderValueType] = js.undefined
   }
   object CascaderProps {
     
@@ -401,16 +397,15 @@ object cascaderMod {
     }
   }
   
-  @js.native
   trait CascaderState extends StObject {
     
-    var activeValue: js.UndefOr[CascaderValueType] = js.native
+    var activeValue: js.UndefOr[CascaderValueType] = js.undefined
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var prevProps: js.UndefOr[CascaderProps] = js.native
+    var prevProps: js.UndefOr[CascaderProps] = js.undefined
     
-    var value: js.UndefOr[CascaderValueType] = js.native
+    var value: js.UndefOr[CascaderValueType] = js.undefined
   }
   object CascaderState {
     

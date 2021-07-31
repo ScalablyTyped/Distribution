@@ -2,17 +2,15 @@ package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var eid: String = js.native
+  var eid: String
   
-  var etype: TerritoryEventType = js.native
+  var etype: TerritoryEventType
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object Event {
   

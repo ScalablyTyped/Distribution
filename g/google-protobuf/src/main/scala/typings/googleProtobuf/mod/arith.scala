@@ -2,7 +2,6 @@ package typings.googleProtobuf.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arith {
@@ -22,10 +21,13 @@ object arith {
   }
   object Int64 {
     
-    /* static member */
-    @JSImport("google-protobuf", "arith.Int64.fromString")
+    @JSImport("google-protobuf", "arith.Int64")
     @js.native
-    def fromString(str: String): Int64 = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def fromString(str: String): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Int64]
   }
   
   @JSImport("google-protobuf", "arith.UInt64")
@@ -59,14 +61,16 @@ object arith {
   }
   object UInt64 {
     
-    /* static member */
-    @JSImport("google-protobuf", "arith.UInt64.fromString")
+    @JSImport("google-protobuf", "arith.UInt64")
     @js.native
-    def fromString(str: String): UInt64 = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("google-protobuf", "arith.UInt64.mul32x32")
-    @js.native
-    def mul32x32(a: Double, b: Double): UInt64 = js.native
+    @scala.inline
+    def fromString(str: String): UInt64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[UInt64]
+    
+    /* static member */
+    @scala.inline
+    def mul32x32(a: Double, b: Double): UInt64 = (^.asInstanceOf[js.Dynamic].applyDynamic("mul32x32")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[UInt64]
   }
 }

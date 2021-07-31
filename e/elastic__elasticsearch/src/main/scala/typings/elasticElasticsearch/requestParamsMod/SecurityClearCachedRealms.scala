@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityClearCachedRealms extends Generic {
+trait SecurityClearCachedRealms
+  extends StObject
+     with Generic {
   
-  var realms: String | js.Array[String] = js.native
+  var realms: String | js.Array[String]
   
-  var usernames: js.UndefOr[String | js.Array[String]] = js.native
+  var usernames: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SecurityClearCachedRealms {
   

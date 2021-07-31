@@ -7,10 +7,8 @@ import typings.electron.electronStrings.normal
 import typings.electron.electronStrings.paused
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressBarOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait ProgressBarOptions extends StObject {
     *
     * @platform win32
     */
-  var mode: none | normal | indeterminate | error | paused = js.native
+  var mode: none | normal | indeterminate | error | paused
 }
 object ProgressBarOptions {
   

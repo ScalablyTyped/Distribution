@@ -3,7 +3,6 @@ package typings.angularUiNotification
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -11,32 +10,31 @@ object mod {
   
   object uiNotification {
     
-    @js.native
     trait IGlobalMessageOptions extends StObject {
       
-      var closeOnClick: js.UndefOr[Boolean] = js.native
+      var closeOnClick: js.UndefOr[Boolean] = js.undefined
       
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
-      var horizontalSpacing: js.UndefOr[Double] = js.native
+      var horizontalSpacing: js.UndefOr[Double] = js.undefined
       
-      var maxCount: js.UndefOr[Double] = js.native
+      var maxCount: js.UndefOr[Double] = js.undefined
       
-      var onClose: js.UndefOr[js.Function1[/* element */ js.Any, _]] = js.native
+      var onClose: js.UndefOr[js.Function1[/* element */ js.Any, js.Any]] = js.undefined
       
-      var positionX: js.UndefOr[XPosition] = js.native
+      var positionX: js.UndefOr[XPosition] = js.undefined
       
-      var positionY: js.UndefOr[YPosition] = js.native
+      var positionY: js.UndefOr[YPosition] = js.undefined
       
-      var replaceMessage: js.UndefOr[Boolean] = js.native
+      var replaceMessage: js.UndefOr[Boolean] = js.undefined
       
-      var startRight: js.UndefOr[Double] = js.native
+      var startRight: js.UndefOr[Double] = js.undefined
       
-      var startTop: js.UndefOr[Double] = js.native
+      var startTop: js.UndefOr[Double] = js.undefined
       
-      var templateUrl: js.UndefOr[String] = js.native
+      var templateUrl: js.UndefOr[String] = js.undefined
       
-      var verticalSpacing: js.UndefOr[Double] = js.native
+      var verticalSpacing: js.UndefOr[Double] = js.undefined
     }
     object IGlobalMessageOptions {
       
@@ -74,7 +72,7 @@ object mod {
         def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
         
         @scala.inline
-        def setOnClose(value: /* element */ js.Any => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+        def setOnClose(value: /* element */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
         
         @scala.inline
         def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
@@ -123,26 +121,25 @@ object mod {
       }
     }
     
-    @js.native
     trait IMessageOptions extends StObject {
       
-      var closeOnClick: js.UndefOr[Boolean] = js.native
+      var closeOnClick: js.UndefOr[Boolean] = js.undefined
       
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
-      var positionX: js.UndefOr[XPosition] = js.native
+      var positionX: js.UndefOr[XPosition] = js.undefined
       
-      var positionY: js.UndefOr[YPosition] = js.native
+      var positionY: js.UndefOr[YPosition] = js.undefined
       
-      var replaceMessage: js.UndefOr[Boolean] = js.native
+      var replaceMessage: js.UndefOr[Boolean] = js.undefined
       
-      var templateUrl: js.UndefOr[String] = js.native
+      var templateUrl: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[MessageType] = js.native
+      var `type`: js.UndefOr[MessageType] = js.undefined
     }
     object IMessageOptions {
       
@@ -211,10 +208,9 @@ object mod {
       }
     }
     
-    @js.native
     trait INotificationProvider extends StObject {
       
-      def setOptions(options: IGlobalMessageOptions): Unit = js.native
+      def setOptions(options: IGlobalMessageOptions): Unit
     }
     object INotificationProvider {
       
@@ -232,10 +228,9 @@ object mod {
       }
     }
     
-    @js.native
     trait INotificationScope extends StObject {
       
-      def kill(isHard: Boolean): Unit = js.native
+      def kill(isHard: Boolean): Unit
     }
     object INotificationScope {
       

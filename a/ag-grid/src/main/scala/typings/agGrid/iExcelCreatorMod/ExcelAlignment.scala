@@ -2,27 +2,25 @@ package typings.agGrid.iExcelCreatorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelAlignment extends StObject {
   
-  var horizontal: String = js.native
+  var horizontal: String
   
-  var indent: Double = js.native
+  var indent: Double
   
-  var readingOrder: String = js.native
+  var readingOrder: String
   
-  var rotate: Double = js.native
+  var rotate: Double
   
-  var shrinkToFit: Boolean = js.native
+  var shrinkToFit: Boolean
   
-  var vertical: String = js.native
+  var vertical: String
   
-  var verticalText: Boolean = js.native
+  var verticalText: Boolean
   
-  var wrapText: Boolean = js.native
+  var wrapText: Boolean
 }
 object ExcelAlignment {
   

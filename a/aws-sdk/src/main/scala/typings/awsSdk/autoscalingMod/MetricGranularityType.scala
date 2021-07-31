@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricGranularityType extends StObject {
   
   /**
     * The granularity. The only valid value is 1Minute.
     */
-  var Granularity: js.UndefOr[XmlStringMaxLen255] = js.native
+  var Granularity: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object MetricGranularityType {
   

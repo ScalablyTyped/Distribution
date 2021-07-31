@@ -10,9 +10,9 @@ Parser generator for JavaScript
 | ------------------ | :-------------: |
 | Full name          | pegjs |
 | Keywords           | parser generator, PEG |
-| # releases         | 10 |
-| # dependents       | 344 |
-| # downloads        | 11311745 |
+| # releases         | 9 |
+| # dependents       | 360 |
+| # downloads        | 11345452 |
 | # stars            | 22 |
 
 ## Links

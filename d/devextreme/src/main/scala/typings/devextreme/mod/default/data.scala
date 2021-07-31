@@ -14,30 +14,36 @@ import typings.devextreme.mod.DevExpress.data.XmlaStoreOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object data {
   
+  @JSImport("devextreme", "default.data")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("devextreme", "default.data.ArrayStore")
   @js.native
   class ArrayStore ()
-    extends typings.devextreme.mod.DevExpress.data.ArrayStore {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.ArrayStore {
     def this(options: ArrayStoreOptions[typings.devextreme.mod.DevExpress.data.ArrayStore]) = this()
   }
   
   @JSImport("devextreme", "default.data.CustomStore")
   @js.native
   class CustomStore ()
-    extends typings.devextreme.mod.DevExpress.data.CustomStore {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.CustomStore {
     def this(options: CustomStoreOptions) = this()
   }
   
   @JSImport("devextreme", "default.data.DataSource")
   @js.native
   class DataSource protected ()
-    extends typings.devextreme.mod.DevExpress.data.DataSource {
-    def this(data: js.Array[_]) = this()
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.DataSource {
+    def this(data: js.Array[js.Any]) = this()
     def this(options: CustomStoreOptions) = this()
     def this(options: DataSourceOptions) = this()
     def this(store: typings.devextreme.mod.DevExpress.data.Store) = this()
@@ -47,103 +53,106 @@ object data {
   @JSImport("devextreme", "default.data.EdmLiteral")
   @js.native
   class EdmLiteral protected ()
-    extends typings.devextreme.mod.DevExpress.data.EdmLiteral {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.EdmLiteral {
     def this(value: String) = this()
   }
   
   @JSImport("devextreme", "default.data.Guid")
   @js.native
   class Guid ()
-    extends typings.devextreme.mod.DevExpress.data.Guid {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.Guid {
     def this(value: String) = this()
   }
   
   @JSImport("devextreme", "default.data.LocalStore")
   @js.native
   class LocalStore ()
-    extends typings.devextreme.mod.DevExpress.data.LocalStore {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.LocalStore {
     def this(options: LocalStoreOptions) = this()
   }
   
   @JSImport("devextreme", "default.data.ODataContext")
   @js.native
   class ODataContext ()
-    extends typings.devextreme.mod.DevExpress.data.ODataContext {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.ODataContext {
     def this(options: ODataContextOptions) = this()
   }
   
   @JSImport("devextreme", "default.data.ODataStore")
   @js.native
   class ODataStore ()
-    extends typings.devextreme.mod.DevExpress.data.ODataStore {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.ODataStore {
     def this(options: ODataStoreOptions) = this()
   }
   
   @JSImport("devextreme", "default.data.PivotGridDataSource")
   @js.native
   class PivotGridDataSource ()
-    extends typings.devextreme.mod.DevExpress.data.PivotGridDataSource {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.PivotGridDataSource {
     def this(options: PivotGridDataSourceOptions) = this()
   }
   
   @JSImport("devextreme", "default.data.Query")
   @js.native
-  class Query_ () extends Query
+  class Query_ ()
+    extends StObject
+       with Query
   
   @JSImport("devextreme", "default.data.Store")
   @js.native
   class Store ()
-    extends typings.devextreme.mod.DevExpress.data.Store {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.Store {
     def this(options: StoreOptions[typings.devextreme.mod.DevExpress.data.Store]) = this()
   }
   
   @JSImport("devextreme", "default.data.XmlaStore")
   @js.native
   class XmlaStore ()
-    extends typings.devextreme.mod.DevExpress.data.XmlaStore {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.XmlaStore {
     def this(options: XmlaStoreOptions) = this()
   }
   
-  @JSImport("devextreme", "default.data.applyChanges")
-  @js.native
-  def applyChanges(data: js.Array[_], changes: js.Array[_]): js.Array[_] = js.native
-  @JSImport("devextreme", "default.data.applyChanges")
-  @js.native
-  def applyChanges(data: js.Array[_], changes: js.Array[_], options: Immutable): js.Array[_] = js.native
+  @scala.inline
+  def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def applyChanges(data: js.Array[js.Any], changes: js.Array[js.Any], options: Immutable): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChanges")(data.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("devextreme", "default.data.base64_encode")
-  @js.native
-  def base64Encode(input: String): String = js.native
-  @JSImport("devextreme", "default.data.base64_encode")
-  @js.native
-  def base64Encode(input: js.Array[Double]): String = js.native
+  @scala.inline
+  def base64Encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def base64Encode(input: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("devextreme", "default.data.errorHandler")
-  @js.native
-  def errorHandler(e: Error): Unit = js.native
+  @scala.inline
+  def errorHandler(e: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("devextreme", "default.data.query")
-  @js.native
-  def query(array: js.Array[_]): Query = js.native
-  @JSImport("devextreme", "default.data.query")
-  @js.native
-  def query(url: String, queryOptions: js.Any): Query = js.native
+  @scala.inline
+  def query(array: js.Array[js.Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(array.asInstanceOf[js.Any]).asInstanceOf[Query]
+  @scala.inline
+  def query(url: String, queryOptions: js.Any): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(url.asInstanceOf[js.Any], queryOptions.asInstanceOf[js.Any])).asInstanceOf[Query]
   
   object utils {
     
-    @JSImport("devextreme", "default.data.utils.compileGetter")
+    @JSImport("devextreme", "default.data.utils")
     @js.native
-    def compileGetter(expr: String): js.Function = js.native
-    @JSImport("devextreme", "default.data.utils.compileGetter")
-    @js.native
-    def compileGetter(expr: js.Array[String]): js.Function = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("devextreme", "default.data.utils.compileSetter")
-    @js.native
-    def compileSetter(expr: String): js.Function = js.native
-    @JSImport("devextreme", "default.data.utils.compileSetter")
-    @js.native
-    def compileSetter(expr: js.Array[String]): js.Function = js.native
+    @scala.inline
+    def compileGetter(expr: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileGetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def compileGetter(expr: js.Array[String]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileGetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    
+    @scala.inline
+    def compileSetter(expr: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileSetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def compileSetter(expr: js.Array[String]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("compileSetter")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
     object odata {
       

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * broadcasting the change.
   * @see XChangeBroadcaster
   */
-@js.native
-trait XChangeListener extends XEventListener {
+trait XChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when the data of a component has been changed.
     * @param rEvent A descriptor specifying the source of the event.
     */
-  def changed(rEvent: EventObject): Unit = js.native
+  def changed(rEvent: EventObject): Unit
 }
 object XChangeListener {
   

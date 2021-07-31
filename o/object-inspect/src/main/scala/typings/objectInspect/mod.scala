@@ -5,7 +5,6 @@ import typings.objectInspect.objectInspectStrings.double
 import typings.objectInspect.objectInspectStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,43 +16,44 @@ object mod {
     * @param opts Inspection options. Default: `{}`.
     * @return String representation of `obj`
     */
+  @scala.inline
+  def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: js.Any, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("object-inspect", JSImport.Namespace)
   @js.native
-  def apply(obj: js.Any): String = js.native
-  @JSImport("object-inspect", JSImport.Namespace)
-  @js.native
-  def apply(obj: js.Any, opts: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Inspection options
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * When true, a custom inspect method function will be invoked. Default true.
       */
-    var customInspect: js.UndefOr[Boolean] = js.native
+    var customInspect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum depth of the inspection. Default: `5`.
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * Must be "\t", null, or a positive integer. Default null.
       */
-    var indent: js.UndefOr[Double | Charactertabulation | Null] = js.native
+    var indent: js.UndefOr[Double | Charactertabulation | Null] = js.undefined
     
     /**
       * Must be 0, a positive integer, Infinity, or null, if present. Default Infinity.
       */
-    var maxStringLength: js.UndefOr[Double | Null] = js.native
+    var maxStringLength: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Must be "single" or "double", if present.
       */
-    var quoteStyle: js.UndefOr[single | double] = js.native
+    var quoteStyle: js.UndefOr[single | double] = js.undefined
   }
   object Options {
     

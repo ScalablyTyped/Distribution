@@ -3,53 +3,45 @@ package typings.ini
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ini", "decode")
+  @JSImport("ini", JSImport.Namespace)
   @js.native
-  def decode(str: String): StringDictionary[js.Any] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ini", "encode")
-  @js.native
-  def encode(`object`: js.Any): String = js.native
-  @JSImport("ini", "encode")
-  @js.native
-  def encode(`object`: js.Any, options: String): String = js.native
-  @JSImport("ini", "encode")
-  @js.native
-  def encode(`object`: js.Any, options: EncodeOptions): String = js.native
+  @scala.inline
+  def decode(str: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
-  @JSImport("ini", "parse")
-  @js.native
-  def parse(str: String): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def encode(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(`object`: js.Any, options: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encode(`object`: js.Any, options: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ini", "safe")
-  @js.native
-  def safe(`val`: String): String = js.native
+  @scala.inline
+  def parse(str: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
-  @JSImport("ini", "stringify")
-  @js.native
-  def stringify(`object`: js.Any): String = js.native
-  @JSImport("ini", "stringify")
-  @js.native
-  def stringify(`object`: js.Any, options: String): String = js.native
-  @JSImport("ini", "stringify")
-  @js.native
-  def stringify(`object`: js.Any, options: EncodeOptions): String = js.native
+  @scala.inline
+  def safe(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safe")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ini", "unsafe")
-  @js.native
-  def unsafe(`val`: String): String = js.native
+  @scala.inline
+  def stringify(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(`object`: js.Any, options: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(`object`: js.Any, options: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def unsafe(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unsafe")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait EncodeOptions extends StObject {
     
-    var section: String = js.native
+    var section: String
     
-    var whitespace: Boolean = js.native
+    var whitespace: Boolean
   }
   object EncodeOptions {
     

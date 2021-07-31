@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasemapLayerListViewModelProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait BasemapLayerListViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#baseListItemCreatedFunction)
     */
-  var baseListItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.native
+  var baseListItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.undefined
   
   /**
     * The current basemap's title.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#basemapTitle)
     */
-  var basemapTitle: js.UndefOr[String] = js.native
+  var basemapTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing reference layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#referenceListItemCreatedFunction)
     */
-  var referenceListItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.native
+  var referenceListItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object BasemapLayerListViewModelProperties {
   

@@ -2,13 +2,11 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationInjectedProps[P] extends StObject {
   
-  var navigation: NavigationScreenProp[NavigationRoute[P], P] = js.native
+  var navigation: NavigationScreenProp[NavigationRoute[P], P]
 }
 object NavigationInjectedProps {
   
@@ -19,7 +17,7 @@ object NavigationInjectedProps {
   }
   
   @scala.inline
-  implicit class NavigationInjectedPropsMutableBuilder[Self <: NavigationInjectedProps[_], P] (val x: Self with NavigationInjectedProps[P]) extends AnyVal {
+  implicit class NavigationInjectedPropsMutableBuilder[Self <: NavigationInjectedProps[?], P] (val x: Self & NavigationInjectedProps[P]) extends AnyVal {
     
     @scala.inline
     def setNavigation(value: NavigationScreenProp[NavigationRoute[P], P]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])

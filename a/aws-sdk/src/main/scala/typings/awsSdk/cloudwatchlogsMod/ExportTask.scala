@@ -2,56 +2,54 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportTask extends StObject {
   
   /**
     * The name of the S3 bucket to which the log data was exported.
     */
-  var destination: js.UndefOr[ExportDestinationBucket] = js.native
+  var destination: js.UndefOr[ExportDestinationBucket] = js.undefined
   
   /**
     * The prefix that was used as the start of Amazon S3 key for every object exported.
     */
-  var destinationPrefix: js.UndefOr[ExportDestinationPrefix] = js.native
+  var destinationPrefix: js.UndefOr[ExportDestinationPrefix] = js.undefined
   
   /**
     * Execution information about the export task.
     */
-  var executionInfo: js.UndefOr[ExportTaskExecutionInfo] = js.native
+  var executionInfo: js.UndefOr[ExportTaskExecutionInfo] = js.undefined
   
   /**
     * The start time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp before this time are not exported.
     */
-  var from: js.UndefOr[Timestamp] = js.native
+  var from: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the log group from which logs data was exported.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * The status of the export task.
     */
-  var status: js.UndefOr[ExportTaskStatus] = js.native
+  var status: js.UndefOr[ExportTaskStatus] = js.undefined
   
   /**
     * The ID of the export task.
     */
-  var taskId: js.UndefOr[ExportTaskId] = js.native
+  var taskId: js.UndefOr[ExportTaskId] = js.undefined
   
   /**
     * The name of the export task.
     */
-  var taskName: js.UndefOr[ExportTaskName] = js.native
+  var taskName: js.UndefOr[ExportTaskName] = js.undefined
   
   /**
     * The end time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp later than this time are not exported.
     */
-  var to: js.UndefOr[Timestamp] = js.native
+  var to: js.UndefOr[Timestamp] = js.undefined
 }
 object ExportTask {
   

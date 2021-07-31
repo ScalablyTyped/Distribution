@@ -3,24 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 3.5 */
-@js.native
 trait TableFilterField3 extends StObject {
   
   /** specifies how the condition is connected to the previous condition. */
-  var Connection: FilterConnection = js.native
+  var Connection: FilterConnection
   
   /** specifies which field (column) is used for the condition. */
-  var Field: Double = js.native
+  var Field: Double
   
   /** specifies the type of the condition as defined in {@link FilterOperator2} . */
-  var Operator: Double = js.native
+  var Operator: Double
   
   /** specifies values to match against. Each filter field may have one or more values. */
-  var Values: SafeArray[FilterFieldValue] = js.native
+  var Values: SafeArray[FilterFieldValue]
 }
 object TableFilterField3 {
   

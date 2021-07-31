@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumberCapabilities extends StObject {
   
   /**
     * Allows or denies inbound calling for the specified phone number.
     */
-  var InboundCall: js.UndefOr[NullableBoolean] = js.native
+  var InboundCall: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Allows or denies inbound MMS messaging for the specified phone number.
     */
-  var InboundMMS: js.UndefOr[NullableBoolean] = js.native
+  var InboundMMS: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Allows or denies inbound SMS messaging for the specified phone number.
     */
-  var InboundSMS: js.UndefOr[NullableBoolean] = js.native
+  var InboundSMS: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Allows or denies outbound calling for the specified phone number.
     */
-  var OutboundCall: js.UndefOr[NullableBoolean] = js.native
+  var OutboundCall: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Allows or denies outbound MMS messaging for the specified phone number.
     */
-  var OutboundMMS: js.UndefOr[NullableBoolean] = js.native
+  var OutboundMMS: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Allows or denies outbound SMS messaging for the specified phone number.
     */
-  var OutboundSMS: js.UndefOr[NullableBoolean] = js.native
+  var OutboundSMS: js.UndefOr[NullableBoolean] = js.undefined
 }
 object PhoneNumberCapabilities {
   

@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonpOptions extends StObject {
   
   /** If false, redraws mounted components upon completion of the request. If true, it does not. */
-  var background: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.undefined
   
   /** The data to be serialized into the request body. */
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
   /** The name of the querystring parameter name that specifies the callback name. */
-  var callbackKey: js.UndefOr[String] = js.native
+  var callbackKey: js.UndefOr[String] = js.undefined
   
   /** The name of the function that will be called as the callback. */
-  var callbackName: js.UndefOr[String] = js.native
+  var callbackName: js.UndefOr[String] = js.undefined
   
   /** The data to be interpolated into the URL and serialized into the querystring. */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /** A constructor to be applied to each object in the response. */
-  var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.native
+  var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
 }
 object JsonpOptions {
   

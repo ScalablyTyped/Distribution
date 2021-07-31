@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the delta metadata.
   */
-@js.native
 trait ASPxClientDashboardItemDataDelta extends StObject {
   
   /**
     * Gets the identifier for the measure that provides actual values.
     */
-  var ActualMeasureId: String = js.native
+  var ActualMeasureId: String
   
   /**
     * Gets the data item identifier.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * Gets the name of the data item container.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Gets the identifier for the measure that provides target values.
     */
-  var TargetMeasureId: String = js.native
+  var TargetMeasureId: String
 }
 object ASPxClientDashboardItemDataDelta {
   

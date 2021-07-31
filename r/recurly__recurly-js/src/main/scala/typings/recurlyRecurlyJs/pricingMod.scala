@@ -7,23 +7,21 @@ import typings.recurlyRecurlyJs.subscriptionMod.SubscriptionPricingInstance
 import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pricingMod {
   
-  @js.native
   trait Pricing extends StObject {
     
     /**
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#pricing|Pricing}
       */
-    def Checkout(): CheckoutPricingInstance = js.native
+    def Checkout(): CheckoutPricingInstance
     
     /**
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#pricing|Pricing}
       */
-    def Subscription(): SubscriptionPricingInstance = js.native
+    def Subscription(): SubscriptionPricingInstance
   }
   object Pricing {
     
@@ -103,7 +101,9 @@ object pricingMod {
   }
   
   @js.native
-  trait PricingInstance[PricingPromise] extends Emitter[PricingEvent] {
+  trait PricingInstance[PricingPromise]
+    extends StObject
+       with Emitter[PricingEvent] {
     
     def remove(opts: js.Any, done: VoidFunction): PricingPromise = js.native
     
@@ -114,14 +114,13 @@ object pricingMod {
     var reset_Original: VoidFunction = js.native
   }
   
-  @js.native
   trait Tax extends StObject {
     
-    var amounts: js.UndefOr[Next] = js.native
+    var amounts: js.UndefOr[Next] = js.undefined
     
-    var tax_code: String = js.native
+    var tax_code: String
     
-    var vat_number: js.UndefOr[String] = js.native
+    var vat_number: js.UndefOr[String] = js.undefined
   }
   object Tax {
     

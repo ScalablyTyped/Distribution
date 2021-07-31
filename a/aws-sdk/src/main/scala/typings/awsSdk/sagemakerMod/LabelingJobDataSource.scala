@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelingJobDataSource extends StObject {
   
   /**
     * The Amazon S3 location of the input data objects.
     */
-  var S3DataSource: js.UndefOr[LabelingJobS3DataSource] = js.native
+  var S3DataSource: js.UndefOr[LabelingJobS3DataSource] = js.undefined
   
   /**
     * An Amazon SNS data source used for streaming labeling jobs.
     */
-  var SnsDataSource: js.UndefOr[LabelingJobSnsDataSource] = js.native
+  var SnsDataSource: js.UndefOr[LabelingJobSnsDataSource] = js.undefined
 }
 object LabelingJobDataSource {
   

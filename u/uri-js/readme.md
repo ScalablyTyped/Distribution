@@ -10,9 +10,9 @@ An RFC 3986/3987 compliant, scheme extendable URI/IRI parsing/validating/resolvi
 | ------------------ | :-------------: |
 | Full name          | uri-js |
 | Keywords           | URI, IRI, IDN, URN, UUID, HTTP, HTTPS, WS, WSS, MAILTO, RFC3986, RFC3987, RFC5891, RFC2616, RFC2818, RFC2141, RFC4122, RFC4291, RFC5952, RFC6068, RFC6455, RFC6874 |
-| # releases         | 0 |
-| # dependents       | 198 |
-| # downloads        | 689185198 |
+| # releases         | 4 |
+| # dependents       | 239 |
+| # downloads        | 876065178 |
 | # stars            | 5 |
 
 ## Links

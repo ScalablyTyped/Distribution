@@ -7,63 +7,61 @@ import typings.jui.juiStrings.right
 import typings.jui.juiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delay extends StObject {
   
   /**
     * @cfg {"left"/"right"/"center"} [align="left"]
     * Determines the alignment state inside a tooltip
     */
-  var align: js.UndefOr[left | right | center] = js.native
+  var align: js.UndefOr[left | right | center] = js.undefined
   
   /**
     * @cfg {String} [color="black"]
     * Determines the color of a tooltip
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {Integer} [delay=0]
     * Determines the event time when a tooltip is shown
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {String} [hideType="mouseout"]
     * Determines the type of event that hides a tooltip
     */
-  var hideType: js.UndefOr[String] = js.native
+  var hideType: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {"top"/"bottom"/"left"/"right"} [position="top"]
     * Determines the location where a tooltip is shown
     */
-  var position: js.UndefOr[top | bottom | left | right] = js.native
+  var position: js.UndefOr[top | bottom | left | right] = js.undefined
   
   /**
     * @cfg {String} [showType="mouseover"]
     * Determines the type of event that triggers a tooltip
     */
-  var showType: js.UndefOr[String] = js.native
+  var showType: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {String} [title=""]
     * Sets the content of a tooltip (referring to the title properties in markup)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Integer} [width=150]
     * Determines the horizontal size of a tooltip
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Delay {
   

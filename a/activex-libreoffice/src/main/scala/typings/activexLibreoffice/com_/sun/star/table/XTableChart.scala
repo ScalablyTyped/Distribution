@@ -6,42 +6,42 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the settings of a chart object in a table or spreadsheet.
   * @see com.sun.star.table.TableChart
   */
-@js.native
-trait XTableChart extends XInterface {
+trait XTableChart
+  extends StObject
+     with XInterface {
   
   /** returns, whether the cells of the topmost row of the source data are interpreted as column headers. */
-  var HasColumnHeaders: Boolean = js.native
+  var HasColumnHeaders: Boolean
   
   /** returns, whether the cells of the leftmost column of the source data are interpreted as row headers. */
-  var HasRowHeaders: Boolean = js.native
+  var HasRowHeaders: Boolean
   
   /** returns the cell ranges that contain the data for the chart. */
-  var Ranges: SafeArray[CellRangeAddress] = js.native
+  var Ranges: SafeArray[CellRangeAddress]
   
   /** returns, whether the cells of the topmost row of the source data are interpreted as column headers. */
-  def getHasColumnHeaders(): Boolean = js.native
+  def getHasColumnHeaders(): Boolean
   
   /** returns, whether the cells of the leftmost column of the source data are interpreted as row headers. */
-  def getHasRowHeaders(): Boolean = js.native
+  def getHasRowHeaders(): Boolean
   
   /** returns the cell ranges that contain the data for the chart. */
-  def getRanges(): SafeArray[CellRangeAddress] = js.native
+  def getRanges(): SafeArray[CellRangeAddress]
   
   /** specifies whether the cells of the topmost row of the source data are interpreted as column headers. */
-  def setHasColumnHeaders(bHasColumnHeaders: Boolean): Unit = js.native
+  def setHasColumnHeaders(bHasColumnHeaders: Boolean): Unit
   
   /** specifies whether the cells of the leftmost column of the source data are interpreted as row headers. */
-  def setHasRowHeaders(bHasRowHeaders: Boolean): Unit = js.native
+  def setHasRowHeaders(bHasRowHeaders: Boolean): Unit
   
   /** sets the cell ranges that contain the data for the chart. */
-  def setRanges(aRanges: SeqEquiv[CellRangeAddress]): Unit = js.native
+  def setRanges(aRanges: SeqEquiv[CellRangeAddress]): Unit
 }
 object XTableChart {
   

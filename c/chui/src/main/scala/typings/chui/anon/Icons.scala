@@ -2,21 +2,19 @@ package typings.chui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icons extends StObject {
   
-  var icons: js.UndefOr[js.Array[String]] = js.native
+  var icons: js.UndefOr[js.Array[String]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var labels: js.Array[String] = js.native
+  var labels: js.Array[String]
   
-  var selected: js.UndefOr[Double] = js.native
+  var selected: js.UndefOr[Double] = js.undefined
   
-  var tabs: Double = js.native
+  var tabs: Double
 }
 object Icons {
   

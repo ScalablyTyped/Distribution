@@ -2,13 +2,11 @@ package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionLike extends StObject {
   
-  val name: String = js.native
+  val name: String
 }
 object FunctionLike {
   

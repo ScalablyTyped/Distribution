@@ -2,26 +2,24 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWebsiteCertificateAuthorityResponse extends StObject {
   
   /**
     * The root certificate of the certificate authority.
     */
-  var Certificate: js.UndefOr[typings.awsSdk.worklinkMod.Certificate] = js.native
+  var Certificate: js.UndefOr[typings.awsSdk.worklinkMod.Certificate] = js.undefined
   
   /**
     * The time that the certificate authority was added.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.native
+  var CreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The certificate name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
 }
 object DescribeWebsiteCertificateAuthorityResponse {
   

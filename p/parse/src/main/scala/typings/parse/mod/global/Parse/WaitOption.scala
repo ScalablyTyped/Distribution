@@ -2,10 +2,8 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaitOption extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait WaitOption extends StObject {
     * before triggering an event.
     */
   @JSName("wait")
-  var wait_FWaitOption: js.UndefOr[Boolean] = js.native
+  var wait_FWaitOption: js.UndefOr[Boolean] = js.undefined
 }
 object WaitOption {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TechnologyTargeting extends StObject {
   
   /** IDs of device capabilities to be included/excluded. */
-  var deviceCapabilityTargeting: js.UndefOr[CriteriaTargeting] = js.native
+  var deviceCapabilityTargeting: js.UndefOr[CriteriaTargeting] = js.undefined
   
   /** IDs of device categories to be included/excluded. */
-  var deviceCategoryTargeting: js.UndefOr[CriteriaTargeting] = js.native
+  var deviceCategoryTargeting: js.UndefOr[CriteriaTargeting] = js.undefined
   
   /** Operating system related targeting information. */
-  var operatingSystemTargeting: js.UndefOr[OperatingSystemTargeting] = js.native
+  var operatingSystemTargeting: js.UndefOr[OperatingSystemTargeting] = js.undefined
 }
 object TechnologyTargeting {
   

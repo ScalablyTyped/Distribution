@@ -7,17 +7,15 @@ import typings.reactJsonschemaForm.mod.Field
 import typings.reactJsonschemaForm.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Blob extends StObject {
     
-    var blob: typings.std.Blob = js.native
+    var blob: typings.std.Blob
     
-    var name: String = js.native
+    var name: String
   }
   object Blob {
     
@@ -38,32 +36,31 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var className: String = js.native
+    var className: String
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var hasMoveDown: Boolean = js.native
+    var hasMoveDown: Boolean
     
-    var hasMoveUp: Boolean = js.native
+    var hasMoveUp: Boolean
     
-    var hasRemove: Boolean = js.native
+    var hasRemove: Boolean
     
-    var hasToolbar: Boolean = js.native
+    var hasToolbar: Boolean
     
-    var index: Double = js.native
+    var index: Double
     
-    var key: String = js.native
+    var key: String
     
-    def onDropIndexClick(index: Double): js.Function1[/* event */ js.Any, Unit] = js.native
+    def onDropIndexClick(index: Double): js.Function1[/* event */ js.Any, Unit]
     
-    def onReorderClick(index: Double, newIndex: Double): js.Function1[/* event */ js.Any, Unit] = js.native
+    def onReorderClick(index: Double, newIndex: Double): js.Function1[/* event */ js.Any, Unit]
     
-    var readonly: Boolean = js.native
+    var readonly: Boolean
   }
   object Children {
     
@@ -127,16 +124,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: ReactElement = js.native
+    var content: ReactElement
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var readonly: Boolean = js.native
+    var readonly: Boolean
   }
   object Content {
     
@@ -163,16 +159,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Definitions extends StObject {
     
-    var definitions: StringDictionary[js.Any] = js.native
+    var definitions: StringDictionary[js.Any]
     
-    var fields: StringDictionary[Field] = js.native
+    var fields: StringDictionary[Field]
     
-    var formContext: js.Any = js.native
+    var formContext: js.Any
     
-    var widgets: StringDictionary[Widget] = js.native
+    var widgets: StringDictionary[Widget]
   }
   object Definitions {
     
@@ -204,12 +199,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String | ReactElement = js.native
+    var description: String | ReactElement
     
-    var id: String = js.native
+    var id: String
   }
   object Description {
     
@@ -230,12 +224,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ErrorSchema extends StObject {
     
-    var errorSchema: typings.reactJsonschemaForm.mod.ErrorSchema = js.native
+    var errorSchema: typings.reactJsonschemaForm.mod.ErrorSchema
     
-    var errors: js.Array[AjvError] = js.native
+    var errors: js.Array[AjvError]
   }
   object ErrorSchema {
     
@@ -259,14 +252,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var title: String = js.native
+    var title: String
   }
   object Id {
     
@@ -290,12 +282,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: String = js.native
+    var value: String
   }
   object Label {
     

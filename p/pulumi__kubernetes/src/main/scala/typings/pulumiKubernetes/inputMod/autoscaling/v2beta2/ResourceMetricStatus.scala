@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ResourceMetricStatus indicates the current value of a resource metric known to Kubernetes, as specified in requests and limits, describing each pod in the current scale target (e.g. CPU or memory).  Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the "pods" source.
   */
-@js.native
 trait ResourceMetricStatus extends StObject {
   
   /**
     * current contains the current value for the given metric
     */
-  var current: Input[MetricValueStatus] = js.native
+  var current: Input[MetricValueStatus]
   
   /**
     * Name is the name of the resource in question.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
 }
 object ResourceMetricStatus {
   

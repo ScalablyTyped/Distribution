@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.orderedmap.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSpec[N /* <: String */, M /* <: String */] extends StObject {
   
   /**
@@ -19,8 +17,8 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends StObject {
   var marks: js.UndefOr[
     (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[MarkSpec] | Null
-  ] = js.native
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[MarkSpec] | Null
+  ] = js.undefined
   
   /**
     * The node types in this schema. Maps names to
@@ -32,13 +30,13 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends StObject {
     */
   var nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec] = js.native
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[NodeSpec]
   
   /**
     * The name of the default top-level node for the schema. Defaults
     * to `"doc"`.
     */
-  var topNode: js.UndefOr[String | Null] = js.native
+  var topNode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSpec {
   
@@ -46,20 +44,20 @@ object SchemaSpec {
   def apply[N /* <: String */, M /* <: String */](
     nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec]
+    */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[NodeSpec]
   ): SchemaSpec[N, M] = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpec[N, M]]
   }
   
   @scala.inline
-  implicit class SchemaSpecMutableBuilder[Self <: SchemaSpec[_, _], N /* <: String */, M /* <: String */] (val x: Self with (SchemaSpec[N, M])) extends AnyVal {
+  implicit class SchemaSpecMutableBuilder[Self <: SchemaSpec[?, ?], N /* <: String */, M /* <: String */] (val x: Self & (SchemaSpec[N, M])) extends AnyVal {
     
     @scala.inline
     def setMarks(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
-      */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[MarkSpec]
+      */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[MarkSpec]
     ): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -72,7 +70,7 @@ object SchemaSpec {
     def setNodes(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-      */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec]
+      */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec & TopLevel[js.Any]) | ^[NodeSpec]
     ): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline

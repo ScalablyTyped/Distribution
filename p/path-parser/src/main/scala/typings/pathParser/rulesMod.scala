@@ -1,30 +1,30 @@
 package typings.pathParser
 
-import org.scalablytyped.runtime.Shortcut
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object rulesMod extends Shortcut {
+object rulesMod {
+  
+  @JSImport("path-parser/dist/rules", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("path-parser/dist/rules", JSImport.Default)
   @js.native
   val default: js.Array[IRule] = js.native
   
-  @JSImport("path-parser/dist/rules", "defaultOrConstrained")
-  @js.native
-  def defaultOrConstrained(`match`: String): String = js.native
+  @scala.inline
+  def defaultOrConstrained(`match`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrConstrained")(`match`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait IRule extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var pattern: RegExp = js.native
+    var pattern: RegExp
     
-    var regex: js.UndefOr[RegExp | RegExpFactory] = js.native
+    var regex: js.UndefOr[RegExp | RegExpFactory] = js.undefined
   }
   object IRule {
     
@@ -55,9 +55,4 @@ object rulesMod extends Shortcut {
   }
   
   type RegExpFactory = js.Function1[/* match */ js.Any, RegExp]
-  
-  type _To = js.Array[IRule]
-  
-  /* This means you don't have to write `default`, but can instead just say `rulesMod.foo` */
-  override def _to: js.Array[IRule] = default
 }

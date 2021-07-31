@@ -2,83 +2,81 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Branding properties for the channel view.
   */
-@js.native
 trait SchemaChannelSettings extends StObject {
   
   /**
     * The country of the channel.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Which content tab users should see when viewing the channel.
     */
-  var defaultTab: js.UndefOr[String] = js.native
+  var defaultTab: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the channel description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Title for the featured channels tab.
     */
-  var featuredChannelsTitle: js.UndefOr[String] = js.native
+  var featuredChannelsTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The list of featured channels.
     */
-  var featuredChannelsUrls: js.UndefOr[js.Array[String]] = js.native
+  var featuredChannelsUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Lists keywords associated with the channel, comma-separated.
     */
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
   /**
     * Whether user-submitted comments left on the channel page need to be
     * approved by the channel owner to be publicly visible.
     */
-  var moderateComments: js.UndefOr[Boolean] = js.native
+  var moderateComments: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A prominent color that can be rendered on this channel page.
     */
-  var profileColor: js.UndefOr[String] = js.native
+  var profileColor: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the tab to browse the videos should be displayed.
     */
-  var showBrowseView: js.UndefOr[Boolean] = js.native
+  var showBrowseView: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether related channels should be proposed.
     */
-  var showRelatedChannels: js.UndefOr[Boolean] = js.native
+  var showRelatedChannels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the channel title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The ID for a Google Analytics account to track and measure traffic to the
     * channels.
     */
-  var trackingAnalyticsAccountId: js.UndefOr[String] = js.native
+  var trackingAnalyticsAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The trailer of the channel, for users that are not subscribers.
     */
-  var unsubscribedTrailer: js.UndefOr[String] = js.native
+  var unsubscribedTrailer: js.UndefOr[String] = js.undefined
 }
 object SchemaChannelSettings {
   

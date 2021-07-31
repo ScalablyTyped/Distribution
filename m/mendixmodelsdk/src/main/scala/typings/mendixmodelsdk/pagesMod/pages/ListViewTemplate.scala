@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewTemplate")
@@ -58,9 +57,8 @@ object ListViewTemplate {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewTemplate.create")
-  @js.native
-  def create(model: IModel): ListViewTemplate = js.native
+  @scala.inline
+  def create(model: IModel): ListViewTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ListViewTemplate]
   
   /**
     * Creates and returns a new ListViewTemplate instance in the SDK and on the server.
@@ -68,9 +66,8 @@ object ListViewTemplate {
     * of the parent ListView element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewTemplate.createIn")
-  @js.native
-  def createIn(container: ListView): ListViewTemplate = js.native
+  @scala.inline
+  def createIn(container: ListView): ListViewTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewTemplate.structureTypeName")

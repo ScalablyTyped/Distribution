@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities extends StObject {
   
-  var updateEnabled: js.UndefOr[Boolean] = js.native
+  var updateEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities {
   

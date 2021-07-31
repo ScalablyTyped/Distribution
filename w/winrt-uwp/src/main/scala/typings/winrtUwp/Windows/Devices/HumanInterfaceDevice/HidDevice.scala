@@ -8,14 +8,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.inputreportreceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a top-level collection and the corresponding device. */
 @js.native
 trait HidDevice extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_inputreportreceived(
     `type`: inputreportreceived,
@@ -92,7 +91,7 @@ trait HidDevice extends StObject {
   def getNumericControlDescriptions(reportType: HidReportType, usagePage: Double, usageId: Double): IVectorView[HidNumericControlDescription] = js.native
   
   /** Establishes an event listener which handles input reports issued by the device. */
-  def oninputreportreceived(ev: HidInputReportReceivedEventArgs with WinRTEvent[HidDevice]): Unit = js.native
+  def oninputreportreceived(ev: HidInputReportReceivedEventArgs & WinRTEvent[HidDevice]): Unit = js.native
   /** Establishes an event listener which handles input reports issued by the device. */
   @JSName("oninputreportreceived")
   var oninputreportreceived_Original: TypedEventHandler[HidDevice, HidInputReportReceivedEventArgs] = js.native
@@ -100,7 +99,7 @@ trait HidDevice extends StObject {
   /** Gets the product identifier for the given HID device. */
   var productId: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_inputreportreceived(
     `type`: inputreportreceived,

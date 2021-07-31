@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateThemeRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the theme that you're updating.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The theme ID, defined by Amazon QuickSight, that a custom theme inherits from. All themes initially inherit from a default QuickSight theme.
     */
-  var BaseThemeId: RestrictiveResourceId = js.native
+  var BaseThemeId: RestrictiveResourceId
   
   /**
     * The theme configuration, which contains the theme display properties.
     */
-  var Configuration: js.UndefOr[ThemeConfiguration] = js.native
+  var Configuration: js.UndefOr[ThemeConfiguration] = js.undefined
   
   /**
     * The name for the theme.
     */
-  var Name: js.UndefOr[ThemeName] = js.native
+  var Name: js.UndefOr[ThemeName] = js.undefined
   
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
   
   /**
     * A description of the theme version that you're updating Every time that you call UpdateTheme, you create a new version of the theme. Each version of the theme maintains a description of the version in VersionDescription.
     */
-  var VersionDescription: js.UndefOr[typings.awsSdk.quicksightMod.VersionDescription] = js.native
+  var VersionDescription: js.UndefOr[typings.awsSdk.quicksightMod.VersionDescription] = js.undefined
 }
 object UpdateThemeRequest {
   

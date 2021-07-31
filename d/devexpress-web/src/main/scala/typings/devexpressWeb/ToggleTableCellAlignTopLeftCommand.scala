@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to apply top-left alignment for the selected table cells.
   */
-@js.native
-trait ToggleTableCellAlignTopLeftCommand extends CommandWithBooleanStateBase {
+trait ToggleTableCellAlignTopLeftCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ToggleTableCellAlignTopLeftCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTableCellAlignTopLeftCommand {
   

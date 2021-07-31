@@ -2,50 +2,48 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityRule extends StObject {
   
   /** List of action names associated with the rule threshold. */
-  var actionNames: js.UndefOr[js.Array[String]] = js.native
+  var actionNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Rule create timestamp. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Description of the rule. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Alert display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Rule name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Query that is used to get the data from the associated source. */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * List of alert IDs superseded by this alert. It is used to indicate that this alert is essentially extension of superseded alerts and we found the relationship after creating these
     * alerts.
     */
-  var supersededAlerts: js.UndefOr[js.Array[String]] = js.native
+  var supersededAlerts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Alert ID superseding this alert. It is used to indicate that superseding alert is essentially extension of this alert and we found the relationship after creating both alerts. */
-  var supersedingAlert: js.UndefOr[String] = js.native
+  var supersedingAlert: js.UndefOr[String] = js.undefined
   
   /** Alert threshold is for example “COUNT > 5”. */
-  var threshold: js.UndefOr[String] = js.native
+  var threshold: js.UndefOr[String] = js.undefined
   
   /** The trigger sources for this rule. * GMAIL_EVENTS * DEVICE_EVENTS * USER_EVENTS */
-  var triggerSource: js.UndefOr[String] = js.native
+  var triggerSource: js.UndefOr[String] = js.undefined
   
   /** The timestamp of the last update to the rule. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Rule window size. Possible values are 1 hour or 24 hours. */
-  var windowSize: js.UndefOr[String] = js.native
+  var windowSize: js.UndefOr[String] = js.undefined
 }
 object ActivityRule {
   

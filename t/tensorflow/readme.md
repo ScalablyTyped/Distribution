@@ -12,7 +12,7 @@ Node.js module for using TensorFlow graphs and models
 | Keywords           | tensorflow, tf, tensor, machine learning, ml, ai, neural networks, neuralnetworks, deeplearning, model, numerical computation, google |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5336 |
+| # downloads        | 5253 |
 | # stars            | 1 |
 
 ## Links

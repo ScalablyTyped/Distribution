@@ -14,55 +14,53 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.KeyboardTypeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputItemPropsTypeMod {
   
   type InputEventHandler = js.Function1[/* value */ js.UndefOr[String], Unit]
   
-  @js.native
   trait InputItemPropsType extends StObject {
     
-    var clear: js.UndefOr[Boolean] = js.native
+    var clear: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var labelNumber: js.UndefOr[Double] = js.native
+    var labelNumber: js.UndefOr[Double] = js.undefined
     
-    var labelPosition: js.UndefOr[left | top] = js.native
+    var labelPosition: js.UndefOr[left | top] = js.undefined
     
-    var locale: js.UndefOr[js.Object] = js.native
+    var locale: js.UndefOr[js.Object] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[InputEventHandler] = js.native
+    var onBlur: js.UndefOr[InputEventHandler] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[InputEventHandler] = js.native
+    var onFocus: js.UndefOr[InputEventHandler] = js.undefined
     
-    var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.native
+    var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var textAlign: js.UndefOr[left | center | right] = js.native
+    var textAlign: js.UndefOr[left | center | right] = js.undefined
     
-    var `type`: js.UndefOr[text | bankCard | phone | password | number | digit | KeyboardTypeOptions] = js.native
+    var `type`: js.UndefOr[text | bankCard | phone | password | number | digit | KeyboardTypeOptions] = js.undefined
     
-    var updatePlaceholder: js.UndefOr[Boolean] = js.native
+    var updatePlaceholder: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object InputItemPropsType {
     

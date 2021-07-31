@@ -2,16 +2,14 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFileInfoData extends StObject {
   
-  var createTime: Double = js.native
+  var createTime: Double
   
   // filePath: string;
-  var size: Double = js.native
+  var size: Double
 }
 object SavedFileInfoData {
   

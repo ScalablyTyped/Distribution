@@ -2,12 +2,11 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentMeta
-  extends Attachment
+  extends StObject
+     with Attachment
      with AbstractMeta
 object AttachmentMeta {
   

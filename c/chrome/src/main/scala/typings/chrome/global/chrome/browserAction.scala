@@ -10,7 +10,6 @@ import typings.chrome.chrome.browserAction.TabIconDetails
 import typings.chrome.chrome.browserAction.TitleDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -27,47 +26,35 @@ object browserAction {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.browserAction.disable")
-  @js.native
-  def disable(): Unit = js.native
-  @JSGlobal("chrome.browserAction.disable")
-  @js.native
-  def disable(tabId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.browserAction.disable")
-  @js.native
-  def disable(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.browserAction.disable")
-  @js.native
-  def disable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
+  @scala.inline
+  def disable(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def disable(tabId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disable")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disable(tabId: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disable")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.enable")
-  @js.native
-  def enable(): Unit = js.native
-  @JSGlobal("chrome.browserAction.enable")
-  @js.native
-  def enable(tabId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-  @JSGlobal("chrome.browserAction.enable")
-  @js.native
-  def enable(tabId: Double): Unit = js.native
-  @JSGlobal("chrome.browserAction.enable")
-  @js.native
-  def enable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  @scala.inline
+  def enable(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def enable(tabId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def enable(tabId: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(tabId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.getBadgeBackgroundColor")
-  @js.native
-  def getBadgeBackgroundColor(details: TabDetails, callback: js.Function1[/* result */ ColorArray, Unit]): Unit = js.native
+  @scala.inline
+  def getBadgeBackgroundColor(details: TabDetails, callback: js.Function1[/* result */ ColorArray, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeBackgroundColor")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.getBadgeText")
-  @js.native
-  def getBadgeText(details: TabDetails, callback: js.Function1[/* result */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getBadgeText(details: TabDetails, callback: js.Function1[/* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeText")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.getPopup")
-  @js.native
-  def getPopup(details: TabDetails, callback: js.Function1[/* result */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getPopup(details: TabDetails, callback: js.Function1[/* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPopup")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.getTitle")
-  @js.native
-  def getTitle(details: TabDetails, callback: js.Function1[/* result */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getTitle(details: TabDetails, callback: js.Function1[/* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.browserAction.onClicked")
   @js.native
@@ -75,38 +62,28 @@ object browserAction {
   @scala.inline
   def onClicked_=(x: BrowserClickedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClicked")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.browserAction.setBadgeBackgroundColor")
-  @js.native
-  def setBadgeBackgroundColor(details: BadgeBackgroundColorDetails): Unit = js.native
-  @JSGlobal("chrome.browserAction.setBadgeBackgroundColor")
-  @js.native
-  def setBadgeBackgroundColor(details: BadgeBackgroundColorDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setBadgeBackgroundColor(details: BadgeBackgroundColorDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeBackgroundColor")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setBadgeBackgroundColor(details: BadgeBackgroundColorDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeBackgroundColor")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.setBadgeText")
-  @js.native
-  def setBadgeText(details: BadgeTextDetails): Unit = js.native
-  @JSGlobal("chrome.browserAction.setBadgeText")
-  @js.native
-  def setBadgeText(details: BadgeTextDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setBadgeText(details: BadgeTextDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeText")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setBadgeText(details: BadgeTextDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeText")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.setIcon")
-  @js.native
-  def setIcon(details: TabIconDetails): Unit = js.native
-  @JSGlobal("chrome.browserAction.setIcon")
-  @js.native
-  def setIcon(details: TabIconDetails, callback: js.Function): Unit = js.native
+  @scala.inline
+  def setIcon(details: TabIconDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIcon")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setIcon(details: TabIconDetails, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIcon")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.setPopup")
-  @js.native
-  def setPopup(details: PopupDetails): Unit = js.native
-  @JSGlobal("chrome.browserAction.setPopup")
-  @js.native
-  def setPopup(details: PopupDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setPopup(details: PopupDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPopup")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setPopup(details: PopupDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPopup")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.browserAction.setTitle")
-  @js.native
-  def setTitle(details: TitleDetails): Unit = js.native
-  @JSGlobal("chrome.browserAction.setTitle")
-  @js.native
-  def setTitle(details: TitleDetails, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setTitle(details: TitleDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTitle")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setTitle(details: TitleDetails, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTitle")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

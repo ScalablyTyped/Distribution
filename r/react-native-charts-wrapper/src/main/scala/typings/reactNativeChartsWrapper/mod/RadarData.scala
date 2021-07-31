@@ -2,15 +2,13 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadarData extends StObject {
   
-  var dataSets: js.UndefOr[js.Array[RadarDataset]] = js.native
+  var dataSets: js.UndefOr[js.Array[RadarDataset]] = js.undefined
   
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RadarData {
   

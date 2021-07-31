@@ -2,16 +2,14 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IngressAccessLogs extends StObject {
   
   /**
     * Customize the log group name.
     */
-  var LogGroupName: js.UndefOr[string] = js.native
+  var LogGroupName: js.UndefOr[string] = js.undefined
 }
 object IngressAccessLogs {
   

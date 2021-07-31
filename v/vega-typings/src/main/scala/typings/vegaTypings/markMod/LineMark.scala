@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.LineEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[LineEncodeEntry]
      with Mark {
   
-  var `type`: line = js.native
+  var `type`: line
 }
 object LineMark {
   
   @scala.inline
-  def apply(`type`: line): LineMark = {
+  def apply(): LineMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("line")
     __obj.asInstanceOf[LineMark]
   }
   

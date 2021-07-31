@@ -2,42 +2,42 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IImageOptions extends IObjectOptions {
+trait IImageOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * key used to retrieve the texture representing this image
     * @since 2.0.0
     * @type String
     */
-  var cacheKey: js.UndefOr[String] = js.native
+  var cacheKey: js.UndefOr[String] = js.undefined
   
   /**
     * Image crop in pixels from original image size.
     * @since 2.0.0
     * @type Number
     */
-  var cropX: js.UndefOr[Double] = js.native
+  var cropX: js.UndefOr[Double] = js.undefined
   
   /**
     * Image crop in pixels from original image size.
     * @since 2.0.0
     * @type Number
     */
-  var cropY: js.UndefOr[Double] = js.native
+  var cropY: js.UndefOr[Double] = js.undefined
   
   /**
     * crossOrigin value (one of "", "anonymous", "allow-credentials")
     */
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
   /**
     * Image filter array
     */
-  var filters: js.UndefOr[js.Array[IBaseFilter]] = js.native
+  var filters: js.UndefOr[js.Array[IBaseFilter]] = js.undefined
   
   /**
     * minimum scale factor under which any resizeFilter is triggered to resize the image
@@ -45,7 +45,7 @@ trait IImageOptions extends IObjectOptions {
     * number bigger than 1 are not implemented yet.
     * @type Number
     */
-  var minimumScaleTrigger: js.UndefOr[Double] = js.native
+  var minimumScaleTrigger: js.UndefOr[Double] = js.undefined
   
   /**
     * When calling {@link fabric.Image.getSrc}, return value from element src with `element.getAttribute('src')`.
@@ -53,7 +53,7 @@ trait IImageOptions extends IObjectOptions {
     * @since 2.7.0
     * @type Boolean
     */
-  var srcFromAttribute: js.UndefOr[Boolean] = js.native
+  var srcFromAttribute: js.UndefOr[Boolean] = js.undefined
 }
 object IImageOptions {
   

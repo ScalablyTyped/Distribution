@@ -6,7 +6,6 @@ import typings.insertModuleGlobals.anon.Buffer
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,7 +32,6 @@ object mod extends Shortcut {
     val vars: Buffer = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -41,14 +39,14 @@ object mod extends Shortcut {
       * This is handy because parsing the scope can take a long time, so you can prioritize fast builds over saving bytes in the final output.
       * When opts.always is truthy but not true, avoid parsing but perform a quick test to determine if wrapping should be skipped.
       */
-    var always: js.UndefOr[Boolean] = js.native
+    var always: js.UndefOr[Boolean] = js.undefined
     
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
     
     /**
       * If opts.debug is true, an inline source map will be generated to compensate for the extra lines.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use opts.vars to override the default inserted variables, or set opts.vars[name] to undefined to not insert a variable which would otherwise be inserted.
@@ -56,7 +54,7 @@ object mod extends Shortcut {
       * opts.vars properties with a . in their name will be executed instead of the parent object if ONLY that property is used.
       * For example, "Buffer.isBuffer" will mask "Buffer" only when there is a Buffer.isBuffer() call in a file and no other references to Buffer.
       */
-    var vars: js.UndefOr[VarsOption] = js.native
+    var vars: js.UndefOr[VarsOption] = js.undefined
   }
   object Options {
     
@@ -95,14 +93,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VariableConfig extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var source: String = js.native
+    var source: String
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object VariableConfig {
     

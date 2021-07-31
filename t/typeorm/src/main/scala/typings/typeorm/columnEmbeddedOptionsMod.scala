@@ -2,19 +2,17 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnEmbeddedOptionsMod {
   
-  @js.native
   trait ColumnEmbeddedOptions extends StObject {
     
     /**
       * Embedded column prefix.
       * If set to empty string or false, then prefix is not set at all.
       */
-    var prefix: js.UndefOr[String | Boolean] = js.native
+    var prefix: js.UndefOr[String | Boolean] = js.undefined
   }
   object ColumnEmbeddedOptions {
     

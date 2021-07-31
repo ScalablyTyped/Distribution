@@ -2,35 +2,33 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/process-message/
-@js.native
 trait ProcessMessage[P, R, E] extends StObject {
   
-  val errorCode: Double | Null = js.native
+  val errorCode: Double | Null
   
-  val errorData: E | Null = js.native
+  val errorData: E | Null
   
-  val errorReason: String | Null = js.native
+  val errorReason: String | Null
   
-  val method: String | Null = js.native
+  val method: String | Null
   
-  val parameters: js.UndefOr[P] = js.native
+  val parameters: js.UndefOr[P] = js.undefined
   
-  val result: js.UndefOr[R | Null] = js.native
+  val result: js.UndefOr[R | Null] = js.undefined
 }
 object ProcessMessage {
   
   @scala.inline
   def apply[P, R, E](): ProcessMessage[P, R, E] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(errorCode = null, errorData = null, errorReason = null, method = null)
     __obj.asInstanceOf[ProcessMessage[P, R, E]]
   }
   
   @scala.inline
-  implicit class ProcessMessageMutableBuilder[Self <: ProcessMessage[_, _, _], P, R, E] (val x: Self with (ProcessMessage[P, R, E])) extends AnyVal {
+  implicit class ProcessMessageMutableBuilder[Self <: ProcessMessage[?, ?, ?], P, R, E] (val x: Self & (ProcessMessage[P, R, E])) extends AnyVal {
     
     @scala.inline
     def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])

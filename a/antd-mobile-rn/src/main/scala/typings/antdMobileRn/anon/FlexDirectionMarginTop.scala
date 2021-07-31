@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexDirectionMarginTop extends StObject {
   
-  var flexDirection: String = js.native
+  var flexDirection: String
   
-  var marginTop: Double = js.native
+  var marginTop: Double
 }
 object FlexDirectionMarginTop {
   

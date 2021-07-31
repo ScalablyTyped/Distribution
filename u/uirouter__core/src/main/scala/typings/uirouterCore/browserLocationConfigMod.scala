@@ -3,17 +3,18 @@ package typings.uirouterCore
 import typings.uirouterCore.coreservicesMod.LocationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserLocationConfigMod {
   
   @JSImport("@uirouter/core/lib/vanilla/browserLocationConfig", "BrowserLocationConfig")
   @js.native
-  class BrowserLocationConfig () extends LocationConfig {
+  class BrowserLocationConfig ()
+    extends StObject
+       with LocationConfig {
     def this(router: js.Any) = this()
-    def this(router: js.UndefOr[scala.Nothing], _isHtml5: Boolean) = this()
     def this(router: js.Any, _isHtml5: Boolean) = this()
+    def this(router: Unit, _isHtml5: Boolean) = this()
     
     var _baseHref: js.Any = js.native
     

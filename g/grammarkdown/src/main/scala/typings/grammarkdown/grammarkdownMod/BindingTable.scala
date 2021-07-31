@@ -2,7 +2,6 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "BindingTable")
@@ -11,7 +10,7 @@ class BindingTable () extends StObject {
   
   var addReferenceToSymbol: js.Any = js.native
   
-  def getAncestor(node: js.UndefOr[scala.Nothing], kind: SyntaxKind): js.UndefOr[Node2[SyntaxKind]] = js.native
+  def getAncestor(node: Unit, kind: SyntaxKind): js.UndefOr[Node2[SyntaxKind]] = js.native
   def getAncestor(node: Node2[SyntaxKind], kind: SyntaxKind): js.UndefOr[Node2[SyntaxKind]] = js.native
   
   def getDeclarations(): js.Array[SourceFile | Production | Parameter] = js.native
@@ -43,10 +42,10 @@ class BindingTable () extends StObject {
   
   var nodeSymbols: js.Any = js.native
   
-  def resolveSymbol(location: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
-  def resolveSymbol(location: js.UndefOr[scala.Nothing], name: String, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
-  def resolveSymbol(location: Node2[SyntaxKind], name: js.UndefOr[scala.Nothing], meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
+  def resolveSymbol(location: Unit, name: String, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
+  def resolveSymbol(location: Unit, name: Unit, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
   def resolveSymbol(location: Node2[SyntaxKind], name: String, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
+  def resolveSymbol(location: Node2[SyntaxKind], name: Unit, meaning: SymbolKind): js.UndefOr[Symbol2] = js.native
   
   var setSymbolForNode: js.Any = js.native
   

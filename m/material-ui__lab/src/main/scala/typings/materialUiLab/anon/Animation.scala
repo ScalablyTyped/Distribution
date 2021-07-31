@@ -9,21 +9,19 @@ import typings.materialUiLab.materialUiLabStrings.wave
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  var animation: js.UndefOr[pulse | wave | `false`] = js.native
+  var animation: js.UndefOr[pulse | wave | `false`] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var variant: js.UndefOr[text | rect | circle] = js.native
+  var variant: js.UndefOr[text | rect | circle] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object Animation {
   

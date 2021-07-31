@@ -5,7 +5,6 @@ import typings.angularCompiler.i18nAstMod.Message
 import typings.angularCompiler.i18nAstMod.RecurseVisitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializerMod {
@@ -39,15 +38,20 @@ object serializerMod {
     
     var publicToNextId: js.Any = js.native
     
+    /* CompleteClass */
+    override def toInternalName(publicName: String): String | Null = js.native
+    
+    /* CompleteClass */
+    override def toPublicName(internalName: String): String | Null = js.native
+    
     var visitPlaceholderName: js.Any = js.native
   }
   
-  @js.native
   trait PlaceholderMapper extends StObject {
     
-    def toInternalName(publicName: String): String | Null = js.native
+    def toInternalName(publicName: String): String | Null
     
-    def toPublicName(internalName: String): String | Null = js.native
+    def toPublicName(internalName: String): String | Null
   }
   object PlaceholderMapper {
     

@@ -5,25 +5,25 @@ import typings.activexLibreoffice.com_.sun.star.table.XCell
 import typings.activexLibreoffice.com_.sun.star.table.XCellRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides methods to create a cell range cursor. */
-@js.native
-trait XSpreadsheet extends XSheetCellRange {
+trait XSpreadsheet
+  extends StObject
+     with XSheetCellRange {
   
   /**
     * creates a cell cursor including the whole spreadsheet.
     * @see com.sun.star.sheet.SheetCellCursor
     */
-  def createCursor(): XSheetCellCursor = js.native
+  def createCursor(): XSheetCellCursor
   
   /**
     * creates a cell cursor to travel in the given range context.
     * @param aRange the cell range for the cursor.
     * @see com.sun.star.sheet.SheetCellCursor
     */
-  def createCursorByRange(aRange: XSheetCellRange): XSheetCellCursor = js.native
+  def createCursorByRange(aRange: XSheetCellRange): XSheetCellCursor
 }
 object XSpreadsheet {
   

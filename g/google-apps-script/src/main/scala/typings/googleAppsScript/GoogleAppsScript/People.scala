@@ -52,138 +52,136 @@ import typings.googleAppsScript.GoogleAppsScript.People.Schema.Url
 import typings.googleAppsScript.GoogleAppsScript.People.Schema.UserDefined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait People extends StObject {
   
-  var ContactGroups: js.UndefOr[ContactGroupsCollection] = js.native
+  var ContactGroups: js.UndefOr[ContactGroupsCollection] = js.undefined
   
-  var People: js.UndefOr[PeopleCollection] = js.native
+  var People: js.UndefOr[PeopleCollection] = js.undefined
   
   // Create a new instance of Address
-  def newAddress(): Address = js.native
+  def newAddress(): Address
   
   // Create a new instance of AgeRangeType
-  def newAgeRangeType(): AgeRangeType = js.native
+  def newAgeRangeType(): AgeRangeType
   
   // Create a new instance of Biography
-  def newBiography(): Biography = js.native
+  def newBiography(): Biography
   
   // Create a new instance of Birthday
-  def newBirthday(): Birthday = js.native
+  def newBirthday(): Birthday
   
   // Create a new instance of BraggingRights
-  def newBraggingRights(): BraggingRights = js.native
+  def newBraggingRights(): BraggingRights
   
   // Create a new instance of ContactGroup
-  def newContactGroup(): ContactGroup = js.native
+  def newContactGroup(): ContactGroup
   
   // Create a new instance of ContactGroupMembership
-  def newContactGroupMembership(): ContactGroupMembership = js.native
+  def newContactGroupMembership(): ContactGroupMembership
   
   // Create a new instance of ContactGroupMetadata
-  def newContactGroupMetadata(): ContactGroupMetadata = js.native
+  def newContactGroupMetadata(): ContactGroupMetadata
   
   // Create a new instance of CoverPhoto
-  def newCoverPhoto(): CoverPhoto = js.native
+  def newCoverPhoto(): CoverPhoto
   
   // Create a new instance of CreateContactGroupRequest
-  def newCreateContactGroupRequest(): CreateContactGroupRequest = js.native
+  def newCreateContactGroupRequest(): CreateContactGroupRequest
   
   // Create a new instance of Date
-  def newDate(): Date = js.native
+  def newDate(): Date
   
   // Create a new instance of DomainMembership
-  def newDomainMembership(): DomainMembership = js.native
+  def newDomainMembership(): DomainMembership
   
   // Create a new instance of EmailAddress
-  def newEmailAddress(): EmailAddress = js.native
+  def newEmailAddress(): EmailAddress
   
   // Create a new instance of Event
-  def newEvent(): Event = js.native
+  def newEvent(): Event
   
   // Create a new instance of FieldMetadata
-  def newFieldMetadata(): FieldMetadata = js.native
+  def newFieldMetadata(): FieldMetadata
   
   // Create a new instance of Gender
-  def newGender(): Gender = js.native
+  def newGender(): Gender
   
   // Create a new instance of ImClient
-  def newImClient(): ImClient = js.native
+  def newImClient(): ImClient
   
   // Create a new instance of Interest
-  def newInterest(): Interest = js.native
+  def newInterest(): Interest
   
   // Create a new instance of Locale
-  def newLocale(): Locale = js.native
+  def newLocale(): Locale
   
   // Create a new instance of Membership
-  def newMembership(): Membership = js.native
+  def newMembership(): Membership
   
   // Create a new instance of ModifyContactGroupMembersRequest
-  def newModifyContactGroupMembersRequest(): ModifyContactGroupMembersRequest = js.native
+  def newModifyContactGroupMembersRequest(): ModifyContactGroupMembersRequest
   
   // Create a new instance of Name
-  def newName(): Name = js.native
+  def newName(): Name
   
   // Create a new instance of Nickname
-  def newNickname(): Nickname = js.native
+  def newNickname(): Nickname
   
   // Create a new instance of Occupation
-  def newOccupation(): Occupation = js.native
+  def newOccupation(): Occupation
   
   // Create a new instance of Organization
-  def newOrganization(): Organization = js.native
+  def newOrganization(): Organization
   
   // Create a new instance of Person
-  def newPerson(): Person = js.native
+  def newPerson(): Person
   
   // Create a new instance of PersonMetadata
-  def newPersonMetadata(): PersonMetadata = js.native
+  def newPersonMetadata(): PersonMetadata
   
   // Create a new instance of PhoneNumber
-  def newPhoneNumber(): PhoneNumber = js.native
+  def newPhoneNumber(): PhoneNumber
   
   // Create a new instance of Photo
-  def newPhoto(): Photo = js.native
+  def newPhoto(): Photo
   
   // Create a new instance of ProfileMetadata
-  def newProfileMetadata(): ProfileMetadata = js.native
+  def newProfileMetadata(): ProfileMetadata
   
   // Create a new instance of Relation
-  def newRelation(): Relation = js.native
+  def newRelation(): Relation
   
   // Create a new instance of RelationshipInterest
-  def newRelationshipInterest(): RelationshipInterest = js.native
+  def newRelationshipInterest(): RelationshipInterest
   
   // Create a new instance of RelationshipStatus
-  def newRelationshipStatus(): RelationshipStatus = js.native
+  def newRelationshipStatus(): RelationshipStatus
   
   // Create a new instance of Residence
-  def newResidence(): Residence = js.native
+  def newResidence(): Residence
   
   // Create a new instance of SipAddress
-  def newSipAddress(): SipAddress = js.native
+  def newSipAddress(): SipAddress
   
   // Create a new instance of Skill
-  def newSkill(): Skill = js.native
+  def newSkill(): Skill
   
   // Create a new instance of Source
-  def newSource(): Source = js.native
+  def newSource(): Source
   
   // Create a new instance of Tagline
-  def newTagline(): Tagline = js.native
+  def newTagline(): Tagline
   
   // Create a new instance of UpdateContactGroupRequest
-  def newUpdateContactGroupRequest(): UpdateContactGroupRequest = js.native
+  def newUpdateContactGroupRequest(): UpdateContactGroupRequest
   
   // Create a new instance of Url
-  def newUrl(): Url = js.native
+  def newUrl(): Url
   
   // Create a new instance of UserDefined
-  def newUserDefined(): UserDefined = js.native
+  def newUserDefined(): UserDefined
 }
 object People {
   
@@ -239,7 +237,6 @@ object People {
     
     object ContactGroups {
       
-      @js.native
       trait MembersCollection extends StObject {
         
         // Modify the members of a contact group owned by the authenticated user.
@@ -247,7 +244,7 @@ object People {
         // The only system contact groups that can have members added are
         // `contactGroups/myContacts` and `contactGroups/starred`. Other system
         // contact groups are deprecated and can only have contacts removed.
-        def modify(resource: ModifyContactGroupMembersRequest, resourceName: String): ModifyContactGroupMembersResponse = js.native
+        def modify(resource: ModifyContactGroupMembersRequest, resourceName: String): ModifyContactGroupMembersResponse
       }
       object MembersCollection {
         
@@ -530,32 +527,31 @@ object People {
   
   object Schema {
     
-    @js.native
     trait Address extends StObject {
       
-      var city: js.UndefOr[String] = js.native
+      var city: js.UndefOr[String] = js.undefined
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var extendedAddress: js.UndefOr[String] = js.native
+      var extendedAddress: js.UndefOr[String] = js.undefined
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var formattedValue: js.UndefOr[String] = js.native
+      var formattedValue: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var poBox: js.UndefOr[String] = js.native
+      var poBox: js.UndefOr[String] = js.undefined
       
-      var postalCode: js.UndefOr[String] = js.native
+      var postalCode: js.UndefOr[String] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var streetAddress: js.UndefOr[String] = js.native
+      var streetAddress: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Address {
       
@@ -642,12 +638,11 @@ object People {
       }
     }
     
-    @js.native
     trait AgeRangeType extends StObject {
       
-      var ageRange: js.UndefOr[String] = js.native
+      var ageRange: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
     }
     object AgeRangeType {
       
@@ -674,10 +669,9 @@ object People {
       }
     }
     
-    @js.native
     trait BatchGetContactGroupsResponse extends StObject {
       
-      var responses: js.UndefOr[js.Array[ContactGroupResponse]] = js.native
+      var responses: js.UndefOr[js.Array[ContactGroupResponse]] = js.undefined
     }
     object BatchGetContactGroupsResponse {
       
@@ -701,14 +695,13 @@ object People {
       }
     }
     
-    @js.native
     trait Biography extends StObject {
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Biography {
       
@@ -741,14 +734,13 @@ object People {
       }
     }
     
-    @js.native
     trait Birthday extends StObject {
       
-      var date: js.UndefOr[Date] = js.native
+      var date: js.UndefOr[Date] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
     }
     object Birthday {
       
@@ -781,12 +773,11 @@ object People {
       }
     }
     
-    @js.native
     trait BraggingRights extends StObject {
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object BraggingRights {
       
@@ -813,24 +804,23 @@ object People {
       }
     }
     
-    @js.native
     trait ContactGroup extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var formattedName: js.UndefOr[String] = js.native
+      var formattedName: js.UndefOr[String] = js.undefined
       
-      var groupType: js.UndefOr[String] = js.native
+      var groupType: js.UndefOr[String] = js.undefined
       
-      var memberCount: js.UndefOr[Double] = js.native
+      var memberCount: js.UndefOr[Double] = js.undefined
       
-      var memberResourceNames: js.UndefOr[js.Array[String]] = js.native
+      var memberResourceNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var metadata: js.UndefOr[ContactGroupMetadata] = js.native
+      var metadata: js.UndefOr[ContactGroupMetadata] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var resourceName: js.UndefOr[String] = js.native
+      var resourceName: js.UndefOr[String] = js.undefined
     }
     object ContactGroup {
       
@@ -896,10 +886,9 @@ object People {
       }
     }
     
-    @js.native
     trait ContactGroupMembership extends StObject {
       
-      var contactGroupId: js.UndefOr[String] = js.native
+      var contactGroupId: js.UndefOr[String] = js.undefined
     }
     object ContactGroupMembership {
       
@@ -920,12 +909,11 @@ object People {
       }
     }
     
-    @js.native
     trait ContactGroupMetadata extends StObject {
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var updateTime: js.UndefOr[String] = js.native
+      var updateTime: js.UndefOr[String] = js.undefined
     }
     object ContactGroupMetadata {
       
@@ -952,14 +940,13 @@ object People {
       }
     }
     
-    @js.native
     trait ContactGroupResponse extends StObject {
       
-      var contactGroup: js.UndefOr[ContactGroup] = js.native
+      var contactGroup: js.UndefOr[ContactGroup] = js.undefined
       
-      var requestedResourceName: js.UndefOr[String] = js.native
+      var requestedResourceName: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[Status] = js.native
+      var status: js.UndefOr[Status] = js.undefined
     }
     object ContactGroupResponse {
       
@@ -992,14 +979,13 @@ object People {
       }
     }
     
-    @js.native
     trait CoverPhoto extends StObject {
       
-      var default: js.UndefOr[Boolean] = js.native
+      var default: js.UndefOr[Boolean] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object CoverPhoto {
       
@@ -1032,10 +1018,9 @@ object People {
       }
     }
     
-    @js.native
     trait CreateContactGroupRequest extends StObject {
       
-      var contactGroup: js.UndefOr[ContactGroup] = js.native
+      var contactGroup: js.UndefOr[ContactGroup] = js.undefined
     }
     object CreateContactGroupRequest {
       
@@ -1056,14 +1041,13 @@ object People {
       }
     }
     
-    @js.native
     trait Date extends StObject {
       
-      var day: js.UndefOr[Double] = js.native
+      var day: js.UndefOr[Double] = js.undefined
       
-      var month: js.UndefOr[Double] = js.native
+      var month: js.UndefOr[Double] = js.undefined
       
-      var year: js.UndefOr[Double] = js.native
+      var year: js.UndefOr[Double] = js.undefined
     }
     object Date {
       
@@ -1096,10 +1080,9 @@ object People {
       }
     }
     
-    @js.native
     trait DomainMembership extends StObject {
       
-      var inViewerDomain: js.UndefOr[Boolean] = js.native
+      var inViewerDomain: js.UndefOr[Boolean] = js.undefined
     }
     object DomainMembership {
       
@@ -1120,18 +1103,17 @@ object People {
       }
     }
     
-    @js.native
     trait EmailAddress extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object EmailAddress {
       
@@ -1176,16 +1158,15 @@ object People {
       }
     }
     
-    @js.native
     trait Event extends StObject {
       
-      var date: js.UndefOr[Date] = js.native
+      var date: js.UndefOr[Date] = js.undefined
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Event {
       
@@ -1224,14 +1205,13 @@ object People {
       }
     }
     
-    @js.native
     trait FieldMetadata extends StObject {
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var source: js.UndefOr[Source] = js.native
+      var source: js.UndefOr[Source] = js.undefined
       
-      var verified: js.UndefOr[Boolean] = js.native
+      var verified: js.UndefOr[Boolean] = js.undefined
     }
     object FieldMetadata {
       
@@ -1264,14 +1244,13 @@ object People {
       }
     }
     
-    @js.native
     trait Gender extends StObject {
       
-      var formattedValue: js.UndefOr[String] = js.native
+      var formattedValue: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Gender {
       
@@ -1304,10 +1283,9 @@ object People {
       }
     }
     
-    @js.native
     trait GetPeopleResponse extends StObject {
       
-      var responses: js.UndefOr[js.Array[PersonResponse]] = js.native
+      var responses: js.UndefOr[js.Array[PersonResponse]] = js.undefined
     }
     object GetPeopleResponse {
       
@@ -1331,20 +1309,19 @@ object People {
       }
     }
     
-    @js.native
     trait ImClient extends StObject {
       
-      var formattedProtocol: js.UndefOr[String] = js.native
+      var formattedProtocol: js.UndefOr[String] = js.undefined
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var protocol: js.UndefOr[String] = js.native
+      var protocol: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object ImClient {
       
@@ -1395,12 +1372,11 @@ object People {
       }
     }
     
-    @js.native
     trait Interest extends StObject {
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Interest {
       
@@ -1427,18 +1403,17 @@ object People {
       }
     }
     
-    @js.native
     trait ListConnectionsResponse extends StObject {
       
-      var connections: js.UndefOr[js.Array[Person]] = js.native
+      var connections: js.UndefOr[js.Array[Person]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var nextSyncToken: js.UndefOr[String] = js.native
+      var nextSyncToken: js.UndefOr[String] = js.undefined
       
-      var totalItems: js.UndefOr[Double] = js.native
+      var totalItems: js.UndefOr[Double] = js.undefined
       
-      var totalPeople: js.UndefOr[Double] = js.native
+      var totalPeople: js.UndefOr[Double] = js.undefined
     }
     object ListConnectionsResponse {
       
@@ -1486,16 +1461,15 @@ object People {
       }
     }
     
-    @js.native
     trait ListContactGroupsResponse extends StObject {
       
-      var contactGroups: js.UndefOr[js.Array[ContactGroup]] = js.native
+      var contactGroups: js.UndefOr[js.Array[ContactGroup]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var nextSyncToken: js.UndefOr[String] = js.native
+      var nextSyncToken: js.UndefOr[String] = js.undefined
       
-      var totalItems: js.UndefOr[Double] = js.native
+      var totalItems: js.UndefOr[Double] = js.undefined
     }
     object ListContactGroupsResponse {
       
@@ -1537,12 +1511,11 @@ object People {
       }
     }
     
-    @js.native
     trait Locale extends StObject {
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Locale {
       
@@ -1569,14 +1542,13 @@ object People {
       }
     }
     
-    @js.native
     trait Membership extends StObject {
       
-      var contactGroupMembership: js.UndefOr[ContactGroupMembership] = js.native
+      var contactGroupMembership: js.UndefOr[ContactGroupMembership] = js.undefined
       
-      var domainMembership: js.UndefOr[DomainMembership] = js.native
+      var domainMembership: js.UndefOr[DomainMembership] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
     }
     object Membership {
       
@@ -1609,12 +1581,11 @@ object People {
       }
     }
     
-    @js.native
     trait ModifyContactGroupMembersRequest extends StObject {
       
-      var resourceNamesToAdd: js.UndefOr[js.Array[String]] = js.native
+      var resourceNamesToAdd: js.UndefOr[js.Array[String]] = js.undefined
       
-      var resourceNamesToRemove: js.UndefOr[js.Array[String]] = js.native
+      var resourceNamesToRemove: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ModifyContactGroupMembersRequest {
       
@@ -1647,10 +1618,9 @@ object People {
       }
     }
     
-    @js.native
     trait ModifyContactGroupMembersResponse extends StObject {
       
-      var notFoundResourceNames: js.UndefOr[js.Array[String]] = js.native
+      var notFoundResourceNames: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ModifyContactGroupMembersResponse {
       
@@ -1674,36 +1644,35 @@ object People {
       }
     }
     
-    @js.native
     trait Name extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var displayNameLastFirst: js.UndefOr[String] = js.native
+      var displayNameLastFirst: js.UndefOr[String] = js.undefined
       
-      var familyName: js.UndefOr[String] = js.native
+      var familyName: js.UndefOr[String] = js.undefined
       
-      var givenName: js.UndefOr[String] = js.native
+      var givenName: js.UndefOr[String] = js.undefined
       
-      var honorificPrefix: js.UndefOr[String] = js.native
+      var honorificPrefix: js.UndefOr[String] = js.undefined
       
-      var honorificSuffix: js.UndefOr[String] = js.native
+      var honorificSuffix: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var middleName: js.UndefOr[String] = js.native
+      var middleName: js.UndefOr[String] = js.undefined
       
-      var phoneticFamilyName: js.UndefOr[String] = js.native
+      var phoneticFamilyName: js.UndefOr[String] = js.undefined
       
-      var phoneticFullName: js.UndefOr[String] = js.native
+      var phoneticFullName: js.UndefOr[String] = js.undefined
       
-      var phoneticGivenName: js.UndefOr[String] = js.native
+      var phoneticGivenName: js.UndefOr[String] = js.undefined
       
-      var phoneticHonorificPrefix: js.UndefOr[String] = js.native
+      var phoneticHonorificPrefix: js.UndefOr[String] = js.undefined
       
-      var phoneticHonorificSuffix: js.UndefOr[String] = js.native
+      var phoneticHonorificSuffix: js.UndefOr[String] = js.undefined
       
-      var phoneticMiddleName: js.UndefOr[String] = js.native
+      var phoneticMiddleName: js.UndefOr[String] = js.undefined
     }
     object Name {
       
@@ -1802,14 +1771,13 @@ object People {
       }
     }
     
-    @js.native
     trait Nickname extends StObject {
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Nickname {
       
@@ -1842,12 +1810,11 @@ object People {
       }
     }
     
-    @js.native
     trait Occupation extends StObject {
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Occupation {
       
@@ -1874,36 +1841,35 @@ object People {
       }
     }
     
-    @js.native
     trait Organization extends StObject {
       
-      var current: js.UndefOr[Boolean] = js.native
+      var current: js.UndefOr[Boolean] = js.undefined
       
-      var department: js.UndefOr[String] = js.native
+      var department: js.UndefOr[String] = js.undefined
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var endDate: js.UndefOr[Date] = js.native
+      var endDate: js.UndefOr[Date] = js.undefined
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var jobDescription: js.UndefOr[String] = js.native
+      var jobDescription: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var phoneticName: js.UndefOr[String] = js.native
+      var phoneticName: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[Date] = js.native
+      var startDate: js.UndefOr[Date] = js.undefined
       
-      var symbol: js.UndefOr[String] = js.native
+      var symbol: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Organization {
       
@@ -2002,72 +1968,71 @@ object People {
       }
     }
     
-    @js.native
     trait Person extends StObject {
       
-      var addresses: js.UndefOr[js.Array[Address]] = js.native
+      var addresses: js.UndefOr[js.Array[Address]] = js.undefined
       
-      var ageRange: js.UndefOr[String] = js.native
+      var ageRange: js.UndefOr[String] = js.undefined
       
-      var ageRanges: js.UndefOr[js.Array[AgeRangeType]] = js.native
+      var ageRanges: js.UndefOr[js.Array[AgeRangeType]] = js.undefined
       
-      var biographies: js.UndefOr[js.Array[Biography]] = js.native
+      var biographies: js.UndefOr[js.Array[Biography]] = js.undefined
       
-      var birthdays: js.UndefOr[js.Array[Birthday]] = js.native
+      var birthdays: js.UndefOr[js.Array[Birthday]] = js.undefined
       
-      var braggingRights: js.UndefOr[js.Array[BraggingRights]] = js.native
+      var braggingRights: js.UndefOr[js.Array[BraggingRights]] = js.undefined
       
-      var coverPhotos: js.UndefOr[js.Array[CoverPhoto]] = js.native
+      var coverPhotos: js.UndefOr[js.Array[CoverPhoto]] = js.undefined
       
-      var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.native
+      var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var events: js.UndefOr[js.Array[Event]] = js.native
+      var events: js.UndefOr[js.Array[Event]] = js.undefined
       
-      var genders: js.UndefOr[js.Array[Gender]] = js.native
+      var genders: js.UndefOr[js.Array[Gender]] = js.undefined
       
-      var imClients: js.UndefOr[js.Array[ImClient]] = js.native
+      var imClients: js.UndefOr[js.Array[ImClient]] = js.undefined
       
-      var interests: js.UndefOr[js.Array[Interest]] = js.native
+      var interests: js.UndefOr[js.Array[Interest]] = js.undefined
       
-      var locales: js.UndefOr[js.Array[Locale]] = js.native
+      var locales: js.UndefOr[js.Array[Locale]] = js.undefined
       
-      var memberships: js.UndefOr[js.Array[Membership]] = js.native
+      var memberships: js.UndefOr[js.Array[Membership]] = js.undefined
       
-      var metadata: js.UndefOr[PersonMetadata] = js.native
+      var metadata: js.UndefOr[PersonMetadata] = js.undefined
       
-      var names: js.UndefOr[js.Array[Name]] = js.native
+      var names: js.UndefOr[js.Array[Name]] = js.undefined
       
-      var nicknames: js.UndefOr[js.Array[Nickname]] = js.native
+      var nicknames: js.UndefOr[js.Array[Nickname]] = js.undefined
       
-      var occupations: js.UndefOr[js.Array[Occupation]] = js.native
+      var occupations: js.UndefOr[js.Array[Occupation]] = js.undefined
       
-      var organizations: js.UndefOr[js.Array[Organization]] = js.native
+      var organizations: js.UndefOr[js.Array[Organization]] = js.undefined
       
-      var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.native
+      var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.undefined
       
-      var photos: js.UndefOr[js.Array[Photo]] = js.native
+      var photos: js.UndefOr[js.Array[Photo]] = js.undefined
       
-      var relations: js.UndefOr[js.Array[Relation]] = js.native
+      var relations: js.UndefOr[js.Array[Relation]] = js.undefined
       
-      var relationshipInterests: js.UndefOr[js.Array[RelationshipInterest]] = js.native
+      var relationshipInterests: js.UndefOr[js.Array[RelationshipInterest]] = js.undefined
       
-      var relationshipStatuses: js.UndefOr[js.Array[RelationshipStatus]] = js.native
+      var relationshipStatuses: js.UndefOr[js.Array[RelationshipStatus]] = js.undefined
       
-      var residences: js.UndefOr[js.Array[Residence]] = js.native
+      var residences: js.UndefOr[js.Array[Residence]] = js.undefined
       
-      var resourceName: js.UndefOr[String] = js.native
+      var resourceName: js.UndefOr[String] = js.undefined
       
-      var sipAddresses: js.UndefOr[js.Array[SipAddress]] = js.native
+      var sipAddresses: js.UndefOr[js.Array[SipAddress]] = js.undefined
       
-      var skills: js.UndefOr[js.Array[Skill]] = js.native
+      var skills: js.UndefOr[js.Array[Skill]] = js.undefined
       
-      var taglines: js.UndefOr[js.Array[Tagline]] = js.native
+      var taglines: js.UndefOr[js.Array[Tagline]] = js.undefined
       
-      var urls: js.UndefOr[js.Array[Url]] = js.native
+      var urls: js.UndefOr[js.Array[Url]] = js.undefined
       
-      var userDefined: js.UndefOr[js.Array[UserDefined]] = js.native
+      var userDefined: js.UndefOr[js.Array[UserDefined]] = js.undefined
     }
     object Person {
       
@@ -2358,18 +2323,17 @@ object People {
       }
     }
     
-    @js.native
     trait PersonMetadata extends StObject {
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var linkedPeopleResourceNames: js.UndefOr[js.Array[String]] = js.native
+      var linkedPeopleResourceNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var objectType: js.UndefOr[String] = js.native
+      var objectType: js.UndefOr[String] = js.undefined
       
-      var previousResourceNames: js.UndefOr[js.Array[String]] = js.native
+      var previousResourceNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var sources: js.UndefOr[js.Array[Source]] = js.native
+      var sources: js.UndefOr[js.Array[Source]] = js.undefined
     }
     object PersonMetadata {
       
@@ -2423,16 +2387,15 @@ object People {
       }
     }
     
-    @js.native
     trait PersonResponse extends StObject {
       
-      var httpStatusCode: js.UndefOr[Double] = js.native
+      var httpStatusCode: js.UndefOr[Double] = js.undefined
       
-      var person: js.UndefOr[Person] = js.native
+      var person: js.UndefOr[Person] = js.undefined
       
-      var requestedResourceName: js.UndefOr[String] = js.native
+      var requestedResourceName: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[Status] = js.native
+      var status: js.UndefOr[Status] = js.undefined
     }
     object PersonResponse {
       
@@ -2471,18 +2434,17 @@ object People {
       }
     }
     
-    @js.native
     trait PhoneNumber extends StObject {
       
-      var canonicalForm: js.UndefOr[String] = js.native
+      var canonicalForm: js.UndefOr[String] = js.undefined
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object PhoneNumber {
       
@@ -2527,14 +2489,13 @@ object People {
       }
     }
     
-    @js.native
     trait Photo extends StObject {
       
-      var default: js.UndefOr[Boolean] = js.native
+      var default: js.UndefOr[Boolean] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object Photo {
       
@@ -2567,12 +2528,11 @@ object People {
       }
     }
     
-    @js.native
     trait ProfileMetadata extends StObject {
       
-      var objectType: js.UndefOr[String] = js.native
+      var objectType: js.UndefOr[String] = js.undefined
       
-      var userTypes: js.UndefOr[js.Array[String]] = js.native
+      var userTypes: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ProfileMetadata {
       
@@ -2602,16 +2562,15 @@ object People {
       }
     }
     
-    @js.native
     trait Relation extends StObject {
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var person: js.UndefOr[String] = js.native
+      var person: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Relation {
       
@@ -2650,14 +2609,13 @@ object People {
       }
     }
     
-    @js.native
     trait RelationshipInterest extends StObject {
       
-      var formattedValue: js.UndefOr[String] = js.native
+      var formattedValue: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object RelationshipInterest {
       
@@ -2690,14 +2648,13 @@ object People {
       }
     }
     
-    @js.native
     trait RelationshipStatus extends StObject {
       
-      var formattedValue: js.UndefOr[String] = js.native
+      var formattedValue: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object RelationshipStatus {
       
@@ -2730,14 +2687,13 @@ object People {
       }
     }
     
-    @js.native
     trait Residence extends StObject {
       
-      var current: js.UndefOr[Boolean] = js.native
+      var current: js.UndefOr[Boolean] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Residence {
       
@@ -2770,16 +2726,15 @@ object People {
       }
     }
     
-    @js.native
     trait SipAddress extends StObject {
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object SipAddress {
       
@@ -2818,12 +2773,11 @@ object People {
       }
     }
     
-    @js.native
     trait Skill extends StObject {
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Skill {
       
@@ -2850,18 +2804,17 @@ object People {
       }
     }
     
-    @js.native
     trait Source extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var profileMetadata: js.UndefOr[ProfileMetadata] = js.native
+      var profileMetadata: js.UndefOr[ProfileMetadata] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var updateTime: js.UndefOr[String] = js.native
+      var updateTime: js.UndefOr[String] = js.undefined
     }
     object Source {
       
@@ -2906,14 +2859,13 @@ object People {
       }
     }
     
-    @js.native
     trait Status extends StObject {
       
-      var code: js.UndefOr[Double] = js.native
+      var code: js.UndefOr[Double] = js.undefined
       
-      var details: js.UndefOr[js.Array[js.Object]] = js.native
+      var details: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
     }
     object Status {
       
@@ -2949,12 +2901,11 @@ object People {
       }
     }
     
-    @js.native
     trait Tagline extends StObject {
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Tagline {
       
@@ -2981,10 +2932,9 @@ object People {
       }
     }
     
-    @js.native
     trait UpdateContactGroupRequest extends StObject {
       
-      var contactGroup: js.UndefOr[ContactGroup] = js.native
+      var contactGroup: js.UndefOr[ContactGroup] = js.undefined
     }
     object UpdateContactGroupRequest {
       
@@ -3005,16 +2955,15 @@ object People {
       }
     }
     
-    @js.native
     trait Url extends StObject {
       
-      var formattedType: js.UndefOr[String] = js.native
+      var formattedType: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Url {
       
@@ -3053,14 +3002,13 @@ object People {
       }
     }
     
-    @js.native
     trait UserDefined extends StObject {
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[FieldMetadata] = js.native
+      var metadata: js.UndefOr[FieldMetadata] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UserDefined {
       

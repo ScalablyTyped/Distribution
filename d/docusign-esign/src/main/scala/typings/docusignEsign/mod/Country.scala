@@ -2,19 +2,17 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Country extends StObject {
   
-  var isoCode: js.UndefOr[String] = js.native
+  var isoCode: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var provinceValidated: js.UndefOr[String] = js.native
+  var provinceValidated: js.UndefOr[String] = js.undefined
   
-  var provinces: js.UndefOr[js.Array[Province]] = js.native
+  var provinces: js.UndefOr[js.Array[Province]] = js.undefined
 }
 object Country {
   

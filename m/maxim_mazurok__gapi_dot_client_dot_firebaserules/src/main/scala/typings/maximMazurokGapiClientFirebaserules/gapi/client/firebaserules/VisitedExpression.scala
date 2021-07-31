@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisitedExpression extends StObject {
   
   /** Position in the `Source` or `Ruleset` where an expression was visited. */
-  var sourcePosition: js.UndefOr[SourcePosition] = js.native
+  var sourcePosition: js.UndefOr[SourcePosition] = js.undefined
   
   /** The evaluated value for the visited expression, e.g. true/false */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object VisitedExpression {
   

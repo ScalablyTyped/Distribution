@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtractDataSourceOption extends StObject {
   
   /** 视频源地址，只支持本地文件 */
-  var source: String = js.native
+  var source: String
 }
 object ExtractDataSourceOption {
   

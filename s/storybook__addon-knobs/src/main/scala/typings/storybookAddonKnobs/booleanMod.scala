@@ -9,7 +9,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object booleanMod {
@@ -17,12 +16,11 @@ object booleanMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Boolean.BooleanTypeProps> & {  serialize :(value : @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Boolean.BooleanTypeKnobValue): string | null,   deserialize :(value : string | null): boolean} */
   object default {
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[BooleanTypeProps]): ReactElement | Null = js.native
-    @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[BooleanTypeProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[BooleanTypeProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[BooleanTypeProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@storybook/addon-knobs/dist/components/types/Boolean", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -68,11 +66,12 @@ object booleanMod {
   
   type BooleanTypeKnobValue = Boolean
   
-  @js.native
-  trait BooleanTypeProps extends KnobControlProps[BooleanTypeKnobValue] {
+  trait BooleanTypeProps
+    extends StObject
+       with KnobControlProps[BooleanTypeKnobValue] {
     
     @JSName("knob")
-    var knob_BooleanTypeProps: BooleanTypeKnob = js.native
+    var knob_BooleanTypeProps: BooleanTypeKnob
   }
   object BooleanTypeProps {
     

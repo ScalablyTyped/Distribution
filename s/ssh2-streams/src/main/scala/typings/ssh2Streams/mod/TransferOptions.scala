@@ -2,33 +2,31 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferOptions extends StObject {
   
   /**
     * Size of each read in bytes
     */
-  var chunkSize: js.UndefOr[Double] = js.native
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of concurrent reads
     */
-  var concurrency: js.UndefOr[Double] = js.native
+  var concurrency: js.UndefOr[Double] = js.undefined
   
   /**
     * Integer or string representing the file mode to set for the uploaded file.
     */
-  var mode: js.UndefOr[Double | String] = js.native
+  var mode: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Called every time a part of a file was transferred
     */
   var step: js.UndefOr[
     js.Function3[/* total_transferred */ Double, /* chunk */ Double, /* total */ Double, Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object TransferOptions {
   

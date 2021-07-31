@@ -2,89 +2,87 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImmutableCompilationSettings extends StObject {
   
-  var _allowAutomaticSemicolonInsertion: js.Any = js.native
+  var _allowAutomaticSemicolonInsertion: js.Any
   
-  var _codeGenTarget: js.Any = js.native
+  var _codeGenTarget: js.Any
   
-  var _codepage: js.Any = js.native
+  var _codepage: js.Any
   
-  var _createFileLog: js.Any = js.native
+  var _createFileLog: js.Any
   
-  var _gatherDiagnostics: js.Any = js.native
+  var _gatherDiagnostics: js.Any
   
-  var _generateDeclarationFiles: js.Any = js.native
+  var _generateDeclarationFiles: js.Any
   
-  var _mapRoot: js.Any = js.native
+  var _mapRoot: js.Any
   
-  var _mapSourceFiles: js.Any = js.native
+  var _mapSourceFiles: js.Any
   
-  var _moduleGenTarget: js.Any = js.native
+  var _moduleGenTarget: js.Any
   
-  var _noImplicitAny: js.Any = js.native
+  var _noImplicitAny: js.Any
   
-  var _noLib: js.Any = js.native
+  var _noLib: js.Any
   
-  var _noResolve: js.Any = js.native
+  var _noResolve: js.Any
   
-  var _outDirOption: js.Any = js.native
+  var _outDirOption: js.Any
   
-  var _outFileOption: js.Any = js.native
+  var _outFileOption: js.Any
   
-  var _propagateEnumConstants: js.Any = js.native
+  var _propagateEnumConstants: js.Any
   
-  var _removeComments: js.Any = js.native
+  var _removeComments: js.Any
   
-  var _sourceRoot: js.Any = js.native
+  var _sourceRoot: js.Any
   
-  var _useCaseSensitiveFileResolution: js.Any = js.native
+  var _useCaseSensitiveFileResolution: js.Any
   
-  var _watch: js.Any = js.native
+  var _watch: js.Any
   
-  def allowAutomaticSemicolonInsertion(): Boolean = js.native
+  def allowAutomaticSemicolonInsertion(): Boolean
   
-  def codeGenTarget(): LanguageVersion = js.native
+  def codeGenTarget(): LanguageVersion
   
-  def codepage(): Double = js.native
+  def codepage(): Double
   
-  def createFileLog(): Boolean = js.native
+  def createFileLog(): Boolean
   
-  def gatherDiagnostics(): Boolean = js.native
+  def gatherDiagnostics(): Boolean
   
-  def generateDeclarationFiles(): Boolean = js.native
+  def generateDeclarationFiles(): Boolean
   
-  def mapRoot(): String = js.native
+  def mapRoot(): String
   
-  def mapSourceFiles(): Boolean = js.native
+  def mapSourceFiles(): Boolean
   
-  def moduleGenTarget(): ModuleGenTarget = js.native
+  def moduleGenTarget(): ModuleGenTarget
   
-  def noImplicitAny(): Boolean = js.native
+  def noImplicitAny(): Boolean
   
-  def noLib(): Boolean = js.native
+  def noLib(): Boolean
   
-  def noResolve(): Boolean = js.native
+  def noResolve(): Boolean
   
-  def outDirOption(): String = js.native
+  def outDirOption(): String
   
-  def outFileOption(): String = js.native
+  def outFileOption(): String
   
-  def propagateEnumConstants(): Boolean = js.native
+  def propagateEnumConstants(): Boolean
   
-  def removeComments(): Boolean = js.native
+  def removeComments(): Boolean
   
-  def sourceRoot(): String = js.native
+  def sourceRoot(): String
   
-  def toCompilationSettings(): js.Any = js.native
+  def toCompilationSettings(): js.Any
   
-  def useCaseSensitiveFileResolution(): Boolean = js.native
+  def useCaseSensitiveFileResolution(): Boolean
   
-  def watch(): Boolean = js.native
+  def watch(): Boolean
 }
 object ImmutableCompilationSettings {
   

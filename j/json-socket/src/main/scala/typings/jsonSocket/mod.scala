@@ -4,7 +4,6 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,6 +13,9 @@ object mod {
   class ^ protected () extends JsonSocket {
     def this(socket: Socket) = this()
   }
+  @JSImport("json-socket", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * sends a single message and closes the connection instantly. Use this if you need to send a server a message,
@@ -24,9 +26,8 @@ object mod {
     * @param callback will be called after the message has been sent
     */
   /* static member */
-  @JSImport("json-socket", "sendSingleMessage")
-  @js.native
-  def sendSingleMessage(port: Double, host: String, message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def sendSingleMessage(port: Double, host: String, message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSingleMessage")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * sends a single message, waits for a single response message from the server and closes the connection right after.
@@ -38,14 +39,13 @@ object mod {
     * @param callback will be called when the response message has been received
     */
   /* static member */
-  @JSImport("json-socket", "sendSingleMessageAndReceive")
-  @js.native
+  @scala.inline
   def sendSingleMessageAndReceive(
     port: Double,
     host: String,
     message: js.Any,
     callback: js.Function2[/* err */ Error, /* message */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSingleMessageAndReceive")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait JsonSocket extends Socket {

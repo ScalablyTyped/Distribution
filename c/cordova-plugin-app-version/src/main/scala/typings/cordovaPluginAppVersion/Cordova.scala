@@ -3,13 +3,11 @@ package typings.cordovaPluginAppVersion
 import typings.cordovaPluginAppVersion.anon.GetAppName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cordova extends StObject {
   
-  var getAppVersion: GetAppName = js.native
+  var getAppVersion: GetAppName
 }
 object Cordova {
   

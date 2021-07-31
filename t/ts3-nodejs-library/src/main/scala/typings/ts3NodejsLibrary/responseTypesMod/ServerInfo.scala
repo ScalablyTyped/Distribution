@@ -3,175 +3,175 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerInfo extends ResponseEntry {
+trait ServerInfo
+  extends StObject
+     with ResponseEntry {
   
-  var connectionBandwidthReceivedLastMinuteTotal: Double = js.native
+  var connectionBandwidthReceivedLastMinuteTotal: Double
   
-  var connectionBandwidthReceivedLastSecondTotal: Double = js.native
+  var connectionBandwidthReceivedLastSecondTotal: Double
   
-  var connectionBandwidthSentLastMinuteTotal: Double = js.native
+  var connectionBandwidthSentLastMinuteTotal: Double
   
-  var connectionBandwidthSentLastSecondTotal: Double = js.native
+  var connectionBandwidthSentLastSecondTotal: Double
   
-  var connectionBytesReceivedControl: Double = js.native
+  var connectionBytesReceivedControl: Double
   
-  var connectionBytesReceivedKeepalive: Double = js.native
+  var connectionBytesReceivedKeepalive: Double
   
-  var connectionBytesReceivedSpeech: Double = js.native
+  var connectionBytesReceivedSpeech: Double
   
-  var connectionBytesReceivedTotal: Double = js.native
+  var connectionBytesReceivedTotal: Double
   
-  var connectionBytesSentControl: Double = js.native
+  var connectionBytesSentControl: Double
   
-  var connectionBytesSentKeepalive: Double = js.native
+  var connectionBytesSentKeepalive: Double
   
-  var connectionBytesSentSpeech: Double = js.native
+  var connectionBytesSentSpeech: Double
   
-  var connectionBytesSentTotal: Double = js.native
+  var connectionBytesSentTotal: Double
   
-  var connectionFiletransferBandwidthReceived: Double = js.native
+  var connectionFiletransferBandwidthReceived: Double
   
-  var connectionFiletransferBandwidthSent: Double = js.native
+  var connectionFiletransferBandwidthSent: Double
   
-  var connectionFiletransferBytesReceivedTotal: Double = js.native
+  var connectionFiletransferBytesReceivedTotal: Double
   
-  var connectionFiletransferBytesSentTotal: Double = js.native
+  var connectionFiletransferBytesSentTotal: Double
   
-  var connectionPacketsReceivedControl: Double = js.native
+  var connectionPacketsReceivedControl: Double
   
-  var connectionPacketsReceivedKeepalive: Double = js.native
+  var connectionPacketsReceivedKeepalive: Double
   
-  var connectionPacketsReceivedSpeech: Double = js.native
+  var connectionPacketsReceivedSpeech: Double
   
-  var connectionPacketsReceivedTotal: Double = js.native
+  var connectionPacketsReceivedTotal: Double
   
-  var connectionPacketsSentControl: Double = js.native
+  var connectionPacketsSentControl: Double
   
-  var connectionPacketsSentKeepalive: Double = js.native
+  var connectionPacketsSentKeepalive: Double
   
-  var connectionPacketsSentSpeech: Double = js.native
+  var connectionPacketsSentSpeech: Double
   
-  var connectionPacketsSentTotal: Double = js.native
+  var connectionPacketsSentTotal: Double
   
-  var virtualserverAntifloodPointsNeededCommandBlock: Double = js.native
+  var virtualserverAntifloodPointsNeededCommandBlock: Double
   
-  var virtualserverAntifloodPointsNeededIpBlock: Double = js.native
+  var virtualserverAntifloodPointsNeededIpBlock: Double
   
-  var virtualserverAntifloodPointsNeededPluginBlock: Double = js.native
+  var virtualserverAntifloodPointsNeededPluginBlock: Double
   
-  var virtualserverAntifloodPointsTickReduce: Double = js.native
+  var virtualserverAntifloodPointsTickReduce: Double
   
-  var virtualserverChannelTempDeleteDelayDefault: Double = js.native
+  var virtualserverChannelTempDeleteDelayDefault: Double
   
-  var virtualserverChannelsonline: Double = js.native
+  var virtualserverChannelsonline: Double
   
-  var virtualserverClientsonline: Double = js.native
+  var virtualserverClientsonline: Double
   
-  var virtualserverCodecEncryptionMode: Double = js.native
+  var virtualserverCodecEncryptionMode: Double
   
-  var virtualserverComplainAutobanCount: Double = js.native
+  var virtualserverComplainAutobanCount: Double
   
-  var virtualserverComplainAutobanTime: Double = js.native
+  var virtualserverComplainAutobanTime: Double
   
-  var virtualserverComplainRemoveTime: Double = js.native
+  var virtualserverComplainRemoveTime: Double
   
-  var virtualserverCreated: Double = js.native
+  var virtualserverCreated: Double
   
-  var virtualserverDefaultChannelAdminGroup: String = js.native
+  var virtualserverDefaultChannelAdminGroup: String
   
-  var virtualserverDefaultChannelGroup: String = js.native
+  var virtualserverDefaultChannelGroup: String
   
-  var virtualserverDefaultServerGroup: String = js.native
+  var virtualserverDefaultServerGroup: String
   
-  var virtualserverDownloadQuota: Double = js.native
+  var virtualserverDownloadQuota: Double
   
-  var virtualserverFilebase: String = js.native
+  var virtualserverFilebase: String
   
-  var virtualserverFlagPassword: Boolean = js.native
+  var virtualserverFlagPassword: Boolean
   
-  var virtualserverHostbannerGfxInterval: Double = js.native
+  var virtualserverHostbannerGfxInterval: Double
   
-  var virtualserverHostbannerGfxUrl: String = js.native
+  var virtualserverHostbannerGfxUrl: String
   
-  var virtualserverHostbannerMode: Double = js.native
+  var virtualserverHostbannerMode: Double
   
-  var virtualserverHostbannerUrl: String = js.native
+  var virtualserverHostbannerUrl: String
   
-  var virtualserverHostbuttonGfxUrl: String = js.native
+  var virtualserverHostbuttonGfxUrl: String
   
-  var virtualserverHostbuttonTooltip: String = js.native
+  var virtualserverHostbuttonTooltip: String
   
-  var virtualserverHostbuttonUrl: String = js.native
+  var virtualserverHostbuttonUrl: String
   
-  var virtualserverHostmessage: String = js.native
+  var virtualserverHostmessage: String
   
-  var virtualserverHostmessageMode: Double = js.native
+  var virtualserverHostmessageMode: Double
   
-  var virtualserverIconId: String = js.native
+  var virtualserverIconId: String
   
-  var virtualserverLogChannel: Double = js.native
+  var virtualserverLogChannel: Double
   
-  var virtualserverLogClient: Double = js.native
+  var virtualserverLogClient: Double
   
-  var virtualserverLogFiletransfer: Double = js.native
+  var virtualserverLogFiletransfer: Double
   
-  var virtualserverLogPermissions: Double = js.native
+  var virtualserverLogPermissions: Double
   
-  var virtualserverLogQuery: Double = js.native
+  var virtualserverLogQuery: Double
   
-  var virtualserverLogServer: Double = js.native
+  var virtualserverLogServer: Double
   
-  var virtualserverMaxDownloadTotalBandwidth: Double = js.native
+  var virtualserverMaxDownloadTotalBandwidth: Double
   
-  var virtualserverMaxUploadTotalBandwidth: Double = js.native
+  var virtualserverMaxUploadTotalBandwidth: Double
   
-  var virtualserverMaxclients: Double = js.native
+  var virtualserverMaxclients: Double
   
-  var virtualserverMinAndroidVersion: Double = js.native
+  var virtualserverMinAndroidVersion: Double
   
-  var virtualserverMinClientVersion: Double = js.native
+  var virtualserverMinClientVersion: Double
   
-  var virtualserverMinClientsInChannelBeforeForcedSilence: Double = js.native
+  var virtualserverMinClientsInChannelBeforeForcedSilence: Double
   
-  var virtualserverMinIosVersion: Double = js.native
+  var virtualserverMinIosVersion: Double
   
-  var virtualserverName: String = js.native
+  var virtualserverName: String
   
-  var virtualserverNamePhonetic: String = js.native
+  var virtualserverNamePhonetic: String
   
-  var virtualserverNeededIdentitySecurityLevel: Double = js.native
+  var virtualserverNeededIdentitySecurityLevel: Double
   
-  var virtualserverNickname: String = js.native
+  var virtualserverNickname: String
   
-  var virtualserverPassword: String = js.native
+  var virtualserverPassword: String
   
-  var virtualserverPrioritySpeakerDimmModificator: Double = js.native
+  var virtualserverPrioritySpeakerDimmModificator: Double
   
-  var virtualserverQueryclientsonline: Double = js.native
+  var virtualserverQueryclientsonline: Double
   
-  var virtualserverReservedSlots: Double = js.native
+  var virtualserverReservedSlots: Double
   
-  var virtualserverStatus: String = js.native
+  var virtualserverStatus: String
   
-  var virtualserverTotalBytesDownloaded: Double = js.native
+  var virtualserverTotalBytesDownloaded: Double
   
-  var virtualserverTotalBytesUploaded: Double = js.native
+  var virtualserverTotalBytesUploaded: Double
   
-  var virtualserverTotalPacketlossTotal: Double = js.native
+  var virtualserverTotalPacketlossTotal: Double
   
-  var virtualserverTotalPing: Double = js.native
+  var virtualserverTotalPing: Double
   
-  var virtualserverUniqueIdentifier: String = js.native
+  var virtualserverUniqueIdentifier: String
   
-  var virtualserverUploadQuota: Double = js.native
+  var virtualserverUploadQuota: Double
   
-  var virtualserverWeblistEnabled: Double = js.native
+  var virtualserverWeblistEnabled: Double
   
-  var virtualserverWelcomemessage: String = js.native
+  var virtualserverWelcomemessage: String
 }
 object ServerInfo {
   

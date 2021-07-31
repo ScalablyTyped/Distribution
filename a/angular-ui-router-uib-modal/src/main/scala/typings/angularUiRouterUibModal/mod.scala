@@ -2,7 +2,6 @@ package typings.angularUiRouterUibModal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -10,10 +9,9 @@ object mod {
   
   object ui {
     
-    @js.native
     trait IState extends StObject {
       
-      var modal: js.UndefOr[Boolean | js.Array[String]] = js.native
+      var modal: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     }
     object IState {
       

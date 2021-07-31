@@ -19,7 +19,6 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bodyContextMod extends Shortcut {
@@ -28,40 +27,39 @@ object bodyContextMod extends Shortcut {
   @js.native
   val default: Context[BodyContextProps[Record[String, js.Any]]] = js.native
   
-  @js.native
   trait BodyContextProps[RecordType] extends StObject {
     
-    var columns: ColumnsType[RecordType] = js.native
+    var columns: ColumnsType[RecordType]
     
-    var componentWidth: Double = js.native
+    var componentWidth: Double
     
-    var expandIcon: RenderExpandIcon[RecordType] = js.native
+    var expandIcon: RenderExpandIcon[RecordType]
     
-    var expandIconColumnIndex: Double = js.native
+    var expandIconColumnIndex: Double
     
-    var expandRowByClick: Boolean = js.native
+    var expandRowByClick: Boolean
     
-    var expandableType: ExpandableType = js.native
+    var expandableType: ExpandableType
     
-    var expandedRowClassName: RowClassName[RecordType] = js.native
+    var expandedRowClassName: RowClassName[RecordType]
     
-    var expandedRowRender: ExpandedRowRender[RecordType] = js.native
+    var expandedRowRender: ExpandedRowRender[RecordType]
     
-    var fixColumn: Boolean = js.native
+    var fixColumn: Boolean
     
-    var fixHeader: Boolean = js.native
+    var fixHeader: Boolean
     
-    var flattenColumns: js.Array[ColumnType[RecordType]] = js.native
+    var flattenColumns: js.Array[ColumnType[RecordType]]
     
-    var horizonScroll: Boolean = js.native
+    var horizonScroll: Boolean
     
-    var indentSize: Double = js.native
+    var indentSize: Double
     
-    var onTriggerExpand: TriggerEventHandler[RecordType] = js.native
+    var onTriggerExpand: TriggerEventHandler[RecordType]
     
-    var rowClassName: String | RowClassName[RecordType] = js.native
+    var rowClassName: String | RowClassName[RecordType]
     
-    var tableLayout: TableLayout = js.native
+    var tableLayout: TableLayout
   }
   object BodyContextProps {
     
@@ -89,7 +87,7 @@ object bodyContextMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class BodyContextPropsMutableBuilder[Self <: BodyContextProps[_], RecordType] (val x: Self with BodyContextProps[RecordType]) extends AnyVal {
+    implicit class BodyContextPropsMutableBuilder[Self <: BodyContextProps[?], RecordType] (val x: Self & BodyContextProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setColumns(value: ColumnsType[RecordType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])

@@ -2,36 +2,34 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents details collected when the visitor performs a transaction on the
   * page.
   */
-@js.native
 trait SchemaTransactionData extends StObject {
   
   /**
     * The transaction ID, supplied by the e-commerce tracking method, for the
     * purchase in the shopping cart.
     */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
   
   /**
     * The total sale revenue (excluding shipping and tax) of the transaction.
     */
-  var transactionRevenue: js.UndefOr[Double] = js.native
+  var transactionRevenue: js.UndefOr[Double] = js.undefined
   
   /**
     * Total cost of shipping.
     */
-  var transactionShipping: js.UndefOr[Double] = js.native
+  var transactionShipping: js.UndefOr[Double] = js.undefined
   
   /**
     * Total tax for the transaction.
     */
-  var transactionTax: js.UndefOr[Double] = js.native
+  var transactionTax: js.UndefOr[Double] = js.undefined
 }
 object SchemaTransactionData {
   

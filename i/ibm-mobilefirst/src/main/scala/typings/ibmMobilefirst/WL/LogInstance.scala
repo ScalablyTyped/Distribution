@@ -2,27 +2,25 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Class which defines instances created via:  WL.Logger.create({pkg: 'something'});
   * Actual definition is outside of WL namespace. For easier d.ts file compiling it is here
   */
-@js.native
 trait LogInstance extends StObject {
   
-  def debug(message: String): Unit = js.native
+  def debug(message: String): Unit
   
-  def error(message: String): Unit = js.native
+  def error(message: String): Unit
   
-  def fatal(message: String): Unit = js.native
+  def fatal(message: String): Unit
   
-  def info(message: String): Unit = js.native
+  def info(message: String): Unit
   
-  def trace(message: String): Unit = js.native
+  def trace(message: String): Unit
   
-  def warn(message: String): Unit = js.native
+  def warn(message: String): Unit
 }
 object LogInstance {
   

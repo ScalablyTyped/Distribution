@@ -5,24 +5,27 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to APIs for handling Rich Communication Services (RCS) messages. */
 @JSGlobal("Windows.ApplicationModel.Chat.RcsManager")
 @js.native
 abstract class RcsManager ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Chat.RcsManager
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsManager
 object RcsManager {
+  
+  @JSGlobal("Windows.ApplicationModel.Chat.RcsManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets the RcsEndUserMessageManager .
     * @return The end user message manager.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Chat.RcsManager.getEndUserMessageManager")
-  @js.native
-  def getEndUserMessageManager(): typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessageManager = js.native
+  @scala.inline
+  def getEndUserMessageManager(): typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndUserMessageManager")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessageManager]
   
   /**
     * Gets an instance of RcsTransport for the specified transport ID.
@@ -30,18 +33,16 @@ object RcsManager {
     * @return An instance of the transport specified by the transportId parameter.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Chat.RcsManager.getTransportAsync")
-  @js.native
-  def getTransportAsync(transportId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.RcsTransport] = js.native
+  @scala.inline
+  def getTransportAsync(transportId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.RcsTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportAsync")(transportId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.RcsTransport]]
   
   /**
     * Gets all instances of RcsTransport .
     * @return A list of RcsTransport instances.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Chat.RcsManager.getTransportsAsync")
-  @js.native
-  def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  @scala.inline
+  def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
   
   /**
     * Asynchronously allows a user to leave a particular conversation.
@@ -49,7 +50,6 @@ object RcsManager {
     * @return An async action indicating that the operation has completed.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Chat.RcsManager.leaveConversationAsync")
-  @js.native
-  def leaveConversationAsync(conversation: typings.winrtUwp.Windows.ApplicationModel.Chat.ChatConversation): IPromiseWithIAsyncAction = js.native
+  @scala.inline
+  def leaveConversationAsync(conversation: typings.winrtUwp.Windows.ApplicationModel.Chat.ChatConversation): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("leaveConversationAsync")(conversation.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
 }

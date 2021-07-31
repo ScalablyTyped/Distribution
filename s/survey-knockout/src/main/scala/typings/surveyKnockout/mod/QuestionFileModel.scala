@@ -5,7 +5,6 @@ import typings.surveyKnockout.anon.Calculations
 import typings.surveyKnockout.anon.NameString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionFileModel")
@@ -101,9 +100,9 @@ class QuestionFileModel protected () extends Question {
     * <br/> sender the question object that fires the event
     * <br/> options.state new question state value.
     */
-  var onStateChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  var onStateChanged: Event[js.Function2[/* sender */ this.type, /* options */ js.Any, js.Any], js.Any] = js.native
   
-  var previewValue: js.Array[_] = js.native
+  var previewValue: js.Array[js.Any] = js.native
   
   /**
     * Remove file item programmatically.

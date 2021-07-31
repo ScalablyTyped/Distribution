@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailExportOptions extends StObject {
   
   /** The export file format. */
-  var exportFormat: js.UndefOr[String] = js.native
+  var exportFormat: js.UndefOr[String] = js.undefined
   
   /** Set to true to export confidential mode content. */
-  var showConfidentialModeContent: js.UndefOr[Boolean] = js.native
+  var showConfidentialModeContent: js.UndefOr[Boolean] = js.undefined
 }
 object MailExportOptions {
   

@@ -2,15 +2,13 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var config: String = js.native
+  var config: String
   
-  var payload: Double = js.native
+  var payload: Double
 }
 object Config {
   

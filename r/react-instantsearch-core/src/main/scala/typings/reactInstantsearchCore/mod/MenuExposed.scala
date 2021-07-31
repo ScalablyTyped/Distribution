@@ -2,25 +2,23 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuExposed extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var defaultRefinement: js.UndefOr[String] = js.native
+  var defaultRefinement: js.UndefOr[String] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
-  var showMore: js.UndefOr[Boolean] = js.native
+  var showMore: js.UndefOr[Boolean] = js.undefined
   
-  var showMoreLimit: js.UndefOr[Double] = js.native
+  var showMoreLimit: js.UndefOr[Double] = js.undefined
   
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object MenuExposed {
   
@@ -67,7 +65,7 @@ object MenuExposed {
     def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
     
     @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)

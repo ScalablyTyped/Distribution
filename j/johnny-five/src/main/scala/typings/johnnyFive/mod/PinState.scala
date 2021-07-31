@@ -2,21 +2,19 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PinState extends StObject {
   
-  var analogChannel: Double = js.native
+  var analogChannel: Double
   
-  var mode: Double = js.native
+  var mode: Double
   
-  var report: Double = js.native
+  var report: Double
   
-  var supportedModes: js.Array[Double] = js.native
+  var supportedModes: js.Array[Double]
   
-  var value: Double = js.native
+  var value: Double
 }
 object PinState {
   

@@ -3,7 +3,6 @@ package typings.powerappsComponentFramework.ComponentFramework
 import typings.powerappsComponentFramework.ComponentFramework.NavigationApi.Types.OpenFileMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,17 @@ object NavigationApi {
   /**
     * Interface for alert dialog options.
     */
-  @js.native
   trait AlertDialogOptions extends StObject {
     
     /**
       * Height of the alert dialog in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Width of the alert dialog pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AlertDialogOptions {
     
@@ -55,18 +53,17 @@ object NavigationApi {
   /**
     * Represents the String parameters for Alert Dialog.
     */
-  @js.native
   trait AlertDialogStrings extends StObject {
     
     /**
       * The confirm button label. If you do not specify the button label, OK (in user's preferred language) is used as the button label.
       */
-    var confirmButtonLabel: js.UndefOr[String] = js.native
+    var confirmButtonLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The message to be displyed in the alert dialog.
       */
-    var text: String = js.native
+    var text: String
   }
   object AlertDialogStrings {
     
@@ -93,18 +90,17 @@ object NavigationApi {
   /**
     * Interface for confirm dialog options.
     */
-  @js.native
   trait ConfirmDialogOptions extends StObject {
     
     /**
       * Height of the confirmation dialog in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       *  Width of the confirmation dialog pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ConfirmDialogOptions {
     
@@ -134,13 +130,12 @@ object NavigationApi {
   /**
     * An object with the confirmed (Boolean) attribute is passed that indicates whether the confirm button was clicked to close the dialog.
     */
-  @js.native
   trait ConfirmDialogResponse extends StObject {
     
     /**
       *  confirmed (Boolean) attribute is passed that indicates whether the confirm button was clicked to close the dialog.
       */
-    var confirmed: Boolean = js.native
+    var confirmed: Boolean
   }
   object ConfirmDialogResponse {
     
@@ -161,33 +156,32 @@ object NavigationApi {
   /**
     * Represents the String parameters for Confirm Dialog.
     */
-  @js.native
   trait ConfirmDialogStrings extends StObject {
     
     /**
       * Cancel Button label.
       */
-    var cancelButtonLabel: js.UndefOr[String] = js.native
+    var cancelButtonLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The confirm button label. If you do not specify the button label, OK (in user's preferred language) is used as the button label.
       */
-    var confirmButtonLabel: js.UndefOr[String] = js.native
+    var confirmButtonLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Confirm Dialog Subtitle
       */
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
     /**
       * Confirm Dialog Text\Message.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * Confirm Dialog Title.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ConfirmDialogStrings {
     
@@ -232,55 +226,54 @@ object NavigationApi {
   /**
     * Interface for entity form options.
     */
-  @js.native
   trait EntityFormOptions extends StObject {
     
     /**
       * Designates a record that will provide default values based on mapped attribute values. The lookup object has the following String properties: entityType, id, and name
       */
-    var createFromEntity: js.UndefOr[EntityReference] = js.native
+    var createFromEntity: js.UndefOr[EntityReference] = js.undefined
     
     /**
       * ID of the entity record to display the form for.
       */
-    var entityId: js.UndefOr[String] = js.native
+    var entityId: js.UndefOr[String] = js.undefined
     
     /**
       * Logical name of the entity to display the form for.
       */
-    var entityName: String = js.native
+    var entityName: String
     
     /**
       * ID of the form instance to be displayed.
       */
-    var formId: js.UndefOr[String] = js.native
+    var formId: js.UndefOr[String] = js.undefined
     
     /**
       * Height of the form window to be displayed in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates whether to display form in a new window.
       */
-    var openInNewWindow: js.UndefOr[Boolean] = js.native
+    var openInNewWindow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether to open a quick create form. If you do not specify this, by default false is passed.
       */
-    var useQuickCreateForm: js.UndefOr[Boolean] = js.native
+    var useQuickCreateForm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Width of the form window to be displayed in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify one of the following values for the window position of the form on the screen:
       *   1:center
       *   2:side
       */
-    var windowPosition: js.UndefOr[Double] = js.native
+    var windowPosition: js.UndefOr[Double] = js.undefined
   }
   object EntityFormOptions {
     
@@ -350,25 +343,24 @@ object NavigationApi {
     * Interface for error dialog options.
     * You must set either the errorCode or message attribute.
     */
-  @js.native
   trait ErrorDialogOptions extends StObject {
     
     /**
       * Details about the error. When you specify this, the Download Log File button is available in the error message, and clicking it will let users download a text file with
       * the content specified in this attribute.
       */
-    var details: js.UndefOr[String] = js.native
+    var details: js.UndefOr[String] = js.undefined
     
     /**
       * If you just set errorCode, the message for the error code is automatically retrieved from the server and displayed in the error dialog. If you specify an errorCode value,
       * an error dialog with a default error message is displyed.
       */
-    var errorCode: js.UndefOr[Double] = js.native
+    var errorCode: js.UndefOr[Double] = js.undefined
     
     /**
       * The message to be displayed in the error dialog.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ErrorDialogOptions {
     
@@ -404,7 +396,6 @@ object NavigationApi {
   /**
     * Interface for open file options.
     */
-  @js.native
   trait OpenFileOptions extends StObject {
     
     /**
@@ -413,7 +404,7 @@ object NavigationApi {
       *   1 - open
       *   2 - save
       */
-    var openMode: OpenFileMode = js.native
+    var openMode: OpenFileMode
   }
   object OpenFileOptions {
     
@@ -434,10 +425,9 @@ object NavigationApi {
   /**
     * The object returned when a save is successful for open form.
     */
-  @js.native
   trait OpenFormSuccessResponse extends StObject {
     
-    var savedEntityReference: js.Array[EntityReference] = js.native
+    var savedEntityReference: js.Array[EntityReference]
   }
   object OpenFormSuccessResponse {
     
@@ -461,18 +451,17 @@ object NavigationApi {
   /**
     * Interface for OpenUrl options.
     */
-  @js.native
   trait OpenUrlOptions extends StObject {
     
     /**
       * Height of the window to display the resultant page in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Width of the window to display the resultant page in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object OpenUrlOptions {
     
@@ -502,23 +491,22 @@ object NavigationApi {
   /**
     * Interface for OpenWebResource options.
     */
-  @js.native
   trait OpenWebResourceOptions extends StObject {
     
     /**
       * Height of the window to display the resultant page in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates whether to open the web resource in a new window.
       */
-    var openInNewWindow: Boolean = js.native
+    var openInNewWindow: Boolean
     
     /**
       * Width of the window to display the resultant page in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object OpenWebResourceOptions {
     

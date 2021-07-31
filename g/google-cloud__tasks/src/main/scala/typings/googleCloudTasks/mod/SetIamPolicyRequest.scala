@@ -3,13 +3,11 @@ package typings.googleCloudTasks.mod
 import typings.googleCloudTasks.anon.PartialPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIamPolicyRequest extends StObject {
   
-  var policy: PartialPolicy = js.native
+  var policy: PartialPolicy
 }
 object SetIamPolicyRequest {
   

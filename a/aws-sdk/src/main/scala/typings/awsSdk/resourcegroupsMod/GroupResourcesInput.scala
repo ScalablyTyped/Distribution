@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupResourcesInput extends StObject {
   
   /**
     * The name or the ARN of the resource group to add resources to.
     */
-  var Group: GroupString = js.native
+  var Group: GroupString
   
   /**
     * The list of ARNs for resources to be added to the group. 
     */
-  var ResourceArns: ResourceArnList = js.native
+  var ResourceArns: ResourceArnList
 }
 object GroupResourcesInput {
   

@@ -7,15 +7,15 @@ import typings.awsLambda.commonMod.BaseTriggerEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preAuthenticationMod {
   
-  @js.native
-  trait PreAuthenticationTriggerEvent extends BaseTriggerEvent[PreAuthentication_Authentication] {
+  trait PreAuthenticationTriggerEvent
+    extends StObject
+       with BaseTriggerEvent[PreAuthentication_Authentication] {
     
-    var request: UserNotFound = js.native
+    var request: UserNotFound
   }
   object PreAuthenticationTriggerEvent {
     
@@ -24,12 +24,11 @@ object preAuthenticationMod {
       callerContext: AwsSdkVersion,
       region: String,
       request: UserNotFound,
-      triggerSource: PreAuthentication_Authentication,
       userName: String,
       userPoolId: String,
       version: String
     ): PreAuthenticationTriggerEvent = {
-      val __obj = js.Dynamic.literal(callerContext = callerContext.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], triggerSource = triggerSource.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(callerContext = callerContext.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], triggerSource = "PreAuthentication_Authentication", userName = userName.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreAuthenticationTriggerEvent]
     }
     

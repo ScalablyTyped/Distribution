@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `StructType` defines the fields of a STRUCT type.
   */
-@js.native
 trait SchemaStructType extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaStructType extends StObject {
     * turn, the order of fields matches the order of columns in a read request,
     * or the order of fields in the `SELECT` clause of a query.
     */
-  var fields: js.UndefOr[js.Array[SchemaField]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaField]] = js.undefined
 }
 object SchemaStructType {
   

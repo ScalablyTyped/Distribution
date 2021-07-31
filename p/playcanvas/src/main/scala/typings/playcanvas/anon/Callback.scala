@@ -4,15 +4,13 @@ import typings.playcanvas.pc.callbacks.XrError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
-  var callback: js.UndefOr[XrError] = js.native
+  var callback: js.UndefOr[XrError] = js.undefined
   
-  var optionalFeatures: js.UndefOr[js.Array[String]] = js.native
+  var optionalFeatures: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Callback {
   

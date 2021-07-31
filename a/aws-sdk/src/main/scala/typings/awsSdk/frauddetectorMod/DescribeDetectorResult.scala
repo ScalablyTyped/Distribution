@@ -2,31 +2,29 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDetectorResult extends StObject {
   
   /**
     * The detector ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * The detector ID.
     */
-  var detectorId: js.UndefOr[identifier] = js.native
+  var detectorId: js.UndefOr[identifier] = js.undefined
   
   /**
     * The status and description for each detector version.
     */
-  var detectorVersionSummaries: js.UndefOr[DetectorVersionSummaryList] = js.native
+  var detectorVersionSummaries: js.UndefOr[DetectorVersionSummaryList] = js.undefined
   
   /**
     * The next token to be used for subsequent requests.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeDetectorResult {
   

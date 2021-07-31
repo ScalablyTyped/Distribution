@@ -2,21 +2,20 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Operation Request or Response
   */
-@js.native
 trait Parameters
-  extends ResourceBase
+  extends StObject
+     with ResourceBase
      with Resource {
   
   /**
     * Operation Parameter
     */
-  var parameter: js.UndefOr[js.Array[ParametersParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[ParametersParameter]] = js.undefined
 }
 object Parameters {
   

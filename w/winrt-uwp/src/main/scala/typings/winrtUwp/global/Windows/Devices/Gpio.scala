@@ -1,11 +1,11 @@
 package typings.winrtUwp.global.Windows.Devices
 
+import typings.winrtUwp.Windows.Devices.Gpio.GpioPinEdge
 import typings.winrtUwp.Windows.Devices.Gpio.Provider.IGpioProvider
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains types for using general-purpose I/O (GPIO) pins in user mode. */
@@ -15,8 +15,13 @@ object Gpio {
   @JSGlobal("Windows.Devices.Gpio.GpioController")
   @js.native
   abstract class GpioController ()
-    extends typings.winrtUwp.Windows.Devices.Gpio.GpioController
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Gpio.GpioController
   object GpioController {
+    
+    @JSGlobal("Windows.Devices.Gpio.GpioController")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets all the controllers that are connected to the system asynchronously.
@@ -24,27 +29,24 @@ object Gpio {
       * @return When the method completes successfully, it returns a list of values that represent the controllers available on the system.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Gpio.GpioController.getControllersAsync")
-    @js.native
-    def getControllersAsync(provider: IGpioProvider): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    @scala.inline
+    def getControllersAsync(provider: IGpioProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets the default general-purpose I/O (GPIO) controller for the system.
       * @return The default GPIO controller for the system, or null if the system has no GPIO controller.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Gpio.GpioController.getDefault")
-    @js.native
-    def getDefault(): typings.winrtUwp.Windows.Devices.Gpio.GpioController = js.native
+    @scala.inline
+    def getDefault(): typings.winrtUwp.Windows.Devices.Gpio.GpioController = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Gpio.GpioController]
     
     /**
       * Gets the default general-purpose I/O (GPIO) controller for the system.
       * @return The default GPIO controller for the system, or null if the system has no GPIO controller.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Gpio.GpioController.getDefaultAsync")
-    @js.native
-    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Gpio.GpioController] = js.native
+    @scala.inline
+    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Gpio.GpioController] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Gpio.GpioController]]
   }
   
   /** Describes the possible results of opening a pin with the GpioPin.TryOpenPin method. */
@@ -53,20 +55,21 @@ object Gpio {
   object GpioOpenStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus & Double] = js.native
     
-    /* 0 */ val pinOpened: typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus.pinOpened with Double = js.native
+    /* 0 */ val pinOpened: typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus.pinOpened & Double = js.native
     
-    /* 1 */ val pinUnavailable: typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus.pinUnavailable with Double = js.native
+    /* 1 */ val pinUnavailable: typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus.pinUnavailable & Double = js.native
     
-    /* 2 */ val sharingViolation: typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus.sharingViolation with Double = js.native
+    /* 2 */ val sharingViolation: typings.winrtUwp.Windows.Devices.Gpio.GpioOpenStatus.sharingViolation & Double = js.native
   }
   
   /** Represents a general-purpose I/O (GPIO) pin. */
   @JSGlobal("Windows.Devices.Gpio.GpioPin")
   @js.native
   abstract class GpioPin ()
-    extends typings.winrtUwp.Windows.Devices.Gpio.GpioPin
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Gpio.GpioPin
   
   /** Describes whether a general-purpose I/O (GPIO) pin is configured as an input or an output, and how values are driven onto the pin. */
   @JSGlobal("Windows.Devices.Gpio.GpioPinDriveMode")
@@ -74,23 +77,23 @@ object Gpio {
   object GpioPinDriveMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode & Double] = js.native
     
-    /* 0 */ val input: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.input with Double = js.native
+    /* 0 */ val input: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.input & Double = js.native
     
-    /* 3 */ val inputPullDown: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullDown with Double = js.native
+    /* 3 */ val inputPullDown: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullDown & Double = js.native
     
-    /* 2 */ val inputPullUp: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullUp with Double = js.native
+    /* 2 */ val inputPullUp: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullUp & Double = js.native
     
-    /* 1 */ val output: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.output with Double = js.native
+    /* 1 */ val output: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.output & Double = js.native
     
-    /* 4 */ val outputOpenDrain: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrain with Double = js.native
+    /* 4 */ val outputOpenDrain: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrain & Double = js.native
     
-    /* 5 */ val outputOpenDrainPullUp: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrainPullUp with Double = js.native
+    /* 5 */ val outputOpenDrainPullUp: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrainPullUp & Double = js.native
     
-    /* 6 */ val outputOpenSource: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSource with Double = js.native
+    /* 6 */ val outputOpenSource: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSource & Double = js.native
     
-    /* 7 */ val outputOpenSourcePullDown: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSourcePullDown with Double = js.native
+    /* 7 */ val outputOpenSourcePullDown: typings.winrtUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSourcePullDown & Double = js.native
   }
   
   /** Describes the possible types of change that can occur to the value of the general-purpose I/O (GPIO) pin for the GpioPin.ValueChanged event. */
@@ -99,11 +102,11 @@ object Gpio {
   object GpioPinEdge extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioPinEdge with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioPinEdge & Double] = js.native
     
-    /* 0 */ val fallingEdge: typings.winrtUwp.Windows.Devices.Gpio.GpioPinEdge.fallingEdge with Double = js.native
+    /* 0 */ val fallingEdge: typings.winrtUwp.Windows.Devices.Gpio.GpioPinEdge.fallingEdge & Double = js.native
     
-    /* 1 */ val risingEdge: typings.winrtUwp.Windows.Devices.Gpio.GpioPinEdge.risingEdge with Double = js.native
+    /* 1 */ val risingEdge: typings.winrtUwp.Windows.Devices.Gpio.GpioPinEdge.risingEdge & Double = js.native
   }
   
   /** Describes the possible values for a general-purpose I/O (GPIO) pin. */
@@ -112,18 +115,24 @@ object Gpio {
   object GpioPinValue extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioPinValue with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioPinValue & Double] = js.native
     
-    /* 1 */ val high: typings.winrtUwp.Windows.Devices.Gpio.GpioPinValue.high with Double = js.native
+    /* 1 */ val high: typings.winrtUwp.Windows.Devices.Gpio.GpioPinValue.high & Double = js.native
     
-    /* 0 */ val low: typings.winrtUwp.Windows.Devices.Gpio.GpioPinValue.low with Double = js.native
+    /* 0 */ val low: typings.winrtUwp.Windows.Devices.Gpio.GpioPinValue.low & Double = js.native
   }
   
   /** Provides data about the GpioPin.ValueChanged event that occurs when the value of the general-purpose I/O (GPIO) pin changes, either because of an external stimulus when the pin is configured as an input, or when a value is written to the pin when the pin in configured as an output. */
   @JSGlobal("Windows.Devices.Gpio.GpioPinValueChangedEventArgs")
   @js.native
   abstract class GpioPinValueChangedEventArgs ()
-    extends typings.winrtUwp.Windows.Devices.Gpio.GpioPinValueChangedEventArgs
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Gpio.GpioPinValueChangedEventArgs {
+    
+    /** Gets the type of change that occurred to the value of the general-purpose I/O (GPIO) pin for the GpioPin.ValueChanged event. */
+    /* CompleteClass */
+    var edge: GpioPinEdge = js.native
+  }
   
   /** Describes the modes in which you can open a general-purpose I/O (GPIO) pin. These modes determine whether other connections to the GPIO pin can be opened while you have the pin open. */
   @JSGlobal("Windows.Devices.Gpio.GpioSharingMode")
@@ -131,11 +140,11 @@ object Gpio {
   object GpioSharingMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioSharingMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Gpio.GpioSharingMode & Double] = js.native
     
-    /* 0 */ val exclusive: typings.winrtUwp.Windows.Devices.Gpio.GpioSharingMode.exclusive with Double = js.native
+    /* 0 */ val exclusive: typings.winrtUwp.Windows.Devices.Gpio.GpioSharingMode.exclusive & Double = js.native
     
-    /* 1 */ val sharedReadOnly: typings.winrtUwp.Windows.Devices.Gpio.GpioSharingMode.sharedReadOnly with Double = js.native
+    /* 1 */ val sharedReadOnly: typings.winrtUwp.Windows.Devices.Gpio.GpioSharingMode.sharedReadOnly & Double = js.native
   }
   
   /** This API exposes a Provider interface and associated classes for the user to implement for a specific controller. The GPIO API needs a GPIO Provider implementation to talk to the GPIO controller. */
@@ -144,7 +153,12 @@ object Gpio {
     @JSGlobal("Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs")
     @js.native
     abstract class GpioPinProviderValueChangedEventArgs ()
-      extends typings.winrtUwp.Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs
+      extends StObject
+         with typings.winrtUwp.Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs {
+      
+      /* CompleteClass */
+      var edge: js.Any = js.native
+    }
     
     object ProviderGpioPinDriveMode {
       

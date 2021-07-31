@@ -2,27 +2,25 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BudgetOrder extends StObject {
   
-  def getBillingAccount(): BillingAccount = js.native
+  def getBillingAccount(): BillingAccount
   
-  def getEndDatetime(): AdWordsDate = js.native
+  def getEndDatetime(): AdWordsDate
   
-  def getId(): Double = js.native
+  def getId(): Double
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getPoNumber(): Double = js.native
+  def getPoNumber(): Double
   
-  def getSpendingLimit(): Double = js.native
+  def getSpendingLimit(): Double
   
-  def getStartDateTime(): AdWordsDate = js.native
+  def getStartDateTime(): AdWordsDate
   
-  def getTotalAdjustments(): Double = js.native
+  def getTotalAdjustments(): Double
 }
 object BudgetOrder {
   

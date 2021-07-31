@@ -9,27 +9,26 @@ import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Diagram
-  extends XDiagram
+  extends StObject
+     with XDiagram
      with XCoordinateSystemContainer
      with XTitled
      with X3DDefaultSetter {
   
   /** Draw connection lines for stacked bar charts. */
-  var ConnectBars: Boolean = js.native
+  var ConnectBars: Boolean
   
   /** Chart Datatable flags */
-  var DataTableHBorder: Boolean = js.native
+  var DataTableHBorder: Boolean
   
-  var DataTableOutline: Boolean = js.native
+  var DataTableOutline: Boolean
   
-  var DataTableVBorder: Boolean = js.native
+  var DataTableVBorder: Boolean
   
-  var ExternalData: String = js.native
+  var ExternalData: String
   
   /**
     * If bars of a bar or column chart are attached to different axis, this property determines how to display those. If `TRUE` , the bars are grouped
@@ -39,46 +38,46 @@ trait Diagram
     *
     * If all data series of a bar or column chart are attached to only one axis, this property has no effect.
     */
-  var GroupBarsPerAxis: Boolean = js.native
+  var GroupBarsPerAxis: Boolean
   
   /**
     * specifies how empty or invalid cells in the provided data should be handled when displayed
     * @see com.sun.star.chart.MissingValueTreatment
     */
-  var MissingValueTreatment: Double = js.native
+  var MissingValueTreatment: Double
   
   /** Perspective of 3D charts ( [0,100] ). */
-  var Perspective: Double = js.native
+  var Perspective: Double
   
   /**
     * The attributes {@link RelativePosition} and {@link RelativeSize} should be used for the inner coordinate region without axis labels and without data
     * labels.
     */
-  var PosSizeExcludeLabels: Boolean = js.native
+  var PosSizeExcludeLabels: Boolean
   
   /**
     * The position is as a relative position on the page.
     *
     * If a relative position is given the diagram is not automatically placed, but instead is placed relative on the page.
     */
-  var RelativePosition: typings.activexLibreoffice.com_.sun.star.chart2.RelativePosition = js.native
+  var RelativePosition: typings.activexLibreoffice.com_.sun.star.chart2.RelativePosition
   
   /** The size of the diagram as relative size of the page size. */
-  var RelativeSize: typings.activexLibreoffice.com_.sun.star.chart2.RelativeSize = js.native
+  var RelativeSize: typings.activexLibreoffice.com_.sun.star.chart2.RelativeSize
   
-  var RightAngledAxes: Boolean = js.native
+  var RightAngledAxes: Boolean
   
   /** Horizontal rotation of 3D charts in degrees ( ]-180,180] ). */
-  var RotationHorizontal: Double = js.native
+  var RotationHorizontal: Double
   
   /** Vertical rotation of 3D charts in degrees ( ]-180,180] ). */
-  var RotationVertical: Double = js.native
+  var RotationVertical: Double
   
   /** Sort data points by x values for rendering */
-  var SortByXValues: Boolean = js.native
+  var SortByXValues: Boolean
   
   /** Starting angle in degrees for pie charts and doughnut charts. */
-  var StartingAngle: Double = js.native
+  var StartingAngle: Double
 }
 object Diagram {
   

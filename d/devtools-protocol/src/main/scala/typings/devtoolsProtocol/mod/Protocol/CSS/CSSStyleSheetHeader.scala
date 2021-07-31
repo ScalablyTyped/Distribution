@@ -4,47 +4,45 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSStyleSheetHeader extends StObject {
   
   /**
     * Denotes whether the stylesheet is disabled.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * Column offset of the end of the stylesheet within the resource (zero based).
     */
-  var endColumn: Double = js.native
+  var endColumn: Double
   
   /**
     * Line offset of the end of the stylesheet within the resource (zero based).
     */
-  var endLine: Double = js.native
+  var endLine: Double
   
   /**
     * Owner frame identifier.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Whether the sourceURL field value comes from the sourceURL comment.
     */
-  var hasSourceURL: js.UndefOr[Boolean] = js.native
+  var hasSourceURL: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this stylesheet is a constructed stylesheet (created using new CSSStyleSheet()).
     */
-  var isConstructed: Boolean = js.native
+  var isConstructed: Boolean
   
   /**
     * Whether this stylesheet is created for STYLE tag by parser. This flag is not set for
     * document.written STYLE tags.
     */
-  var isInline: Boolean = js.native
+  var isInline: Boolean
   
   /**
     * Whether this stylesheet is mutable. Inline stylesheets become mutable
@@ -52,52 +50,52 @@ trait CSSStyleSheetHeader extends StObject {
     * <link> element's stylesheets become mutable only if DevTools modifies them.
     * Constructed stylesheets (new CSSStyleSheet()) are mutable immediately after creation.
     */
-  var isMutable: Boolean = js.native
+  var isMutable: Boolean
   
   /**
     * Size of the content (in characters).
     */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * Stylesheet origin.
     */
-  var origin: StyleSheetOrigin = js.native
+  var origin: StyleSheetOrigin
   
   /**
     * The backend id for the owner node of the stylesheet.
     */
-  var ownerNode: js.UndefOr[BackendNodeId] = js.native
+  var ownerNode: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * URL of source map associated with the stylesheet (if any).
     */
-  var sourceMapURL: js.UndefOr[String] = js.native
+  var sourceMapURL: js.UndefOr[String] = js.undefined
   
   /**
     * Stylesheet resource URL.
     */
-  var sourceURL: String = js.native
+  var sourceURL: String
   
   /**
     * Column offset of the stylesheet within the resource (zero based).
     */
-  var startColumn: Double = js.native
+  var startColumn: Double
   
   /**
     * Line offset of the stylesheet within the resource (zero based).
     */
-  var startLine: Double = js.native
+  var startLine: Double
   
   /**
     * The stylesheet identifier.
     */
-  var styleSheetId: StyleSheetId = js.native
+  var styleSheetId: StyleSheetId
   
   /**
     * Stylesheet title.
     */
-  var title: String = js.native
+  var title: String
 }
 object CSSStyleSheetHeader {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputDetail extends StObject {
   
   /**
     * Duration in milliseconds
     */
-  var DurationInMs: js.UndefOr[integer] = js.native
+  var DurationInMs: js.UndefOr[integer] = js.undefined
   
   /**
     * Contains details about the output's video stream
     */
-  var VideoDetails: js.UndefOr[VideoDetail] = js.native
+  var VideoDetails: js.UndefOr[VideoDetail] = js.undefined
 }
 object OutputDetail {
   

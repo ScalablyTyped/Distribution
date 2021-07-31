@@ -33,7 +33,6 @@ import typings.screeps.anon.`33`
 import typings.screeps.anon.`34`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object REACTIONS {

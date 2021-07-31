@@ -4,15 +4,13 @@ import typings.react.mod.FocusEvent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventFocusEvent extends StObject {
   
-  var event: FocusEvent[HTMLInputElement] = js.native
+  var event: FocusEvent[HTMLInputElement]
   
-  var value: String = js.native
+  var value: String
 }
 object EventFocusEvent {
   

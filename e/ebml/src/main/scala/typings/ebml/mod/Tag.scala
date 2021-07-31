@@ -4,18 +4,18 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Tag[T /* <: TagType */] extends TagMetadata {
+trait Tag[T /* <: TagType */]
+  extends StObject
+     with TagMetadata {
   
-  var data: Buffer = js.native
+  var data: Buffer
   
   @JSName("type")
-  var type_Tag: T = js.native
+  var type_Tag: T
   
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Tag.DataTypeToTypeMap[T] */ js.Any = js.native
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Tag.DataTypeToTypeMap[T] */ js.Any
 }
 object Tag {
   
@@ -37,30 +37,29 @@ object Tag {
   }
   
   /* Inlined parent std.Record<ebml.ebml.TagType, any> */
-  @js.native
   trait DataTypeToTypeMap extends StObject {
     
-    var `8`: String = js.native
+    var `8`: String
     
-    var b: Double = js.native
+    var b: Double
     
-    var d: Date = js.native
+    var d: Date
     
-    var f: Double = js.native
+    var f: Double
     
-    var i: Double = js.native
+    var i: Double
     
-    var m: js.UndefOr[scala.Nothing] = js.native
+    var m: Unit
     
-    var s: String = js.native
+    var s: String
     
-    var u: Double = js.native
+    var u: Double
   }
   object DataTypeToTypeMap {
     
     @scala.inline
-    def apply(`8`: String, b: Double, d: Date, f: Double, i: Double, s: String, u: Double): DataTypeToTypeMap = {
-      val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
+    def apply(`8`: String, b: Double, d: Date, f: Double, i: Double, m: Unit, s: String, u: Double): DataTypeToTypeMap = {
+      val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
       __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataTypeToTypeMap]
     }
@@ -84,6 +83,9 @@ object Tag {
       def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setM(value: Unit): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -92,7 +94,7 @@ object Tag {
   }
   
   @scala.inline
-  implicit class TagMutableBuilder[Self <: Tag[_], T /* <: TagType */] (val x: Self with Tag[T]) extends AnyVal {
+  implicit class TagMutableBuilder[Self <: Tag[?], T /* <: TagType */] (val x: Self & Tag[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

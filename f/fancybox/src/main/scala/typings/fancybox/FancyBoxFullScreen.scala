@@ -3,21 +3,19 @@ package typings.fancybox
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxFullScreen extends StObject {
   
-  def enabled(): Boolean = js.native
+  def enabled(): Boolean
   
-  def exit(): Unit = js.native
+  def exit(): Unit
   
-  def isFullscreen(): Boolean = js.native
+  def isFullscreen(): Boolean
   
-  def request(elem: HTMLElement): Unit = js.native
+  def request(elem: HTMLElement): Unit
   
-  def toggle(elem: HTMLElement): Unit = js.native
+  def toggle(elem: HTMLElement): Unit
 }
 object FancyBoxFullScreen {
   

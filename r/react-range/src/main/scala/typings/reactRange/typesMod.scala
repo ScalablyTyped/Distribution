@@ -14,7 +14,6 @@ import typings.reactRange.anon.X
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -26,38 +25,45 @@ object typesMod {
   object Direction extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Direction with String] = js.native
+    def apply(value: String): js.UndefOr[Direction & String] = js.native
     
     @js.native
-    sealed trait Down extends Direction
-    /* "to bottom" */ val Down: typings.reactRange.typesMod.Direction.Down with String = js.native
+    sealed trait Down
+      extends StObject
+         with Direction
+    /* "to bottom" */ val Down: typings.reactRange.typesMod.Direction.Down & String = js.native
     
     @js.native
-    sealed trait Left extends Direction
-    /* "to left" */ val Left: typings.reactRange.typesMod.Direction.Left with String = js.native
+    sealed trait Left
+      extends StObject
+         with Direction
+    /* "to left" */ val Left: typings.reactRange.typesMod.Direction.Left & String = js.native
     
     @js.native
-    sealed trait Right extends Direction
-    /* "to right" */ val Right: typings.reactRange.typesMod.Direction.Right with String = js.native
+    sealed trait Right
+      extends StObject
+         with Direction
+    /* "to right" */ val Right: typings.reactRange.typesMod.Direction.Right & String = js.native
     
     @js.native
-    sealed trait Up extends Direction
-    /* "to top" */ val Up: typings.reactRange.typesMod.Direction.Up with String = js.native
+    sealed trait Up
+      extends StObject
+         with Direction
+    /* "to top" */ val Up: typings.reactRange.typesMod.Direction.Up & String = js.native
   }
   
-  @js.native
   trait IMarkProps extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var ref: RefObject[_] = js.native
+    var ref: RefObject[js.Any]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object IMarkProps {
     
     @scala.inline
-    def apply(key: String, ref: RefObject[_], style: CSSProperties): IMarkProps = {
+    def apply(key: String, ref: RefObject[js.Any], style: CSSProperties): IMarkProps = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMarkProps]
     }
@@ -69,43 +75,42 @@ object typesMod {
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRef(value: RefObject[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IProps extends StObject {
     
-    var allowOverlap: Boolean = js.native
+    var allowOverlap: Boolean
     
-    var direction: Direction = js.native
+    var direction: Direction
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var draggableTrack: Boolean = js.native
+    var draggableTrack: Boolean
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    def onChange(values: js.Array[Double]): Unit = js.native
+    def onChange(values: js.Array[Double]): Unit
     
-    var onFinalChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+    var onFinalChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
     
-    var renderMark: js.UndefOr[js.Function1[/* params */ Index, ReactNode]] = js.native
+    var renderMark: js.UndefOr[js.Function1[/* params */ Index, ReactNode]] = js.undefined
     
-    def renderThumb(params: IsDragged): ReactNode = js.native
+    def renderThumb(params: IsDragged): ReactNode
     
-    def renderTrack(params: Children): ReactNode = js.native
+    def renderTrack(params: Children): ReactNode
     
-    var rtl: Boolean = js.native
+    var rtl: Boolean
     
-    var step: Double = js.native
+    var step: Double
     
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object IProps {
     
@@ -184,30 +189,29 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IThumbProps extends StObject {
     
-    var `aria-valuemax`: Double = js.native
+    var `aria-valuemax`: Double
     
-    var `aria-valuemin`: Double = js.native
+    var `aria-valuemin`: Double
     
-    var `aria-valuenow`: Double = js.native
+    var `aria-valuenow`: Double
     
-    var draggable: Boolean = js.native
+    var draggable: Boolean
     
-    var key: Double = js.native
+    var key: Double
     
-    def onKeyDown(e: KeyboardEvent[Element]): Unit = js.native
+    def onKeyDown(e: KeyboardEvent[Element]): Unit
     
-    def onKeyUp(e: KeyboardEvent[Element]): Unit = js.native
+    def onKeyUp(e: KeyboardEvent[Element]): Unit
     
-    var ref: RefObject[_] = js.native
+    var ref: RefObject[js.Any]
     
-    var role: String = js.native
+    var role: String
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object IThumbProps {
     
@@ -220,7 +224,7 @@ object typesMod {
       key: Double,
       onKeyDown: KeyboardEvent[Element] => Unit,
       onKeyUp: KeyboardEvent[Element] => Unit,
-      ref: RefObject[_],
+      ref: RefObject[js.Any],
       role: String,
       style: CSSProperties
     ): IThumbProps = {
@@ -256,7 +260,7 @@ object typesMod {
       def setOnKeyUp(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRef(value: RefObject[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
@@ -272,20 +276,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ITrackBackground extends StObject {
     
-    var colors: js.Array[String] = js.native
+    var colors: js.Array[String]
     
-    var direction: js.UndefOr[Direction] = js.native
+    var direction: js.UndefOr[Direction] = js.undefined
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object ITrackBackground {
     
@@ -330,16 +333,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ITrackProps extends StObject {
     
-    def onMouseDown(e: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
+    def onMouseDown(e: MouseEvent[Element, NativeMouseEvent]): Unit
     
-    def onTouchStart(e: TouchEvent[Element]): Unit = js.native
+    def onTouchStart(e: TouchEvent[Element]): Unit
     
-    var ref: RefObject[_] = js.native
+    var ref: RefObject[js.Any]
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object ITrackProps {
     
@@ -347,7 +349,7 @@ object typesMod {
     def apply(
       onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,
       onTouchStart: TouchEvent[Element] => Unit,
-      ref: RefObject[_],
+      ref: RefObject[js.Any],
       style: CSSProperties
     ): ITrackProps = {
       val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchStart = js.Any.fromFunction1(onTouchStart), ref = ref.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
@@ -364,7 +366,7 @@ object typesMod {
       def setOnTouchStart(value: TouchEvent[Element] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRef(value: RefObject[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])

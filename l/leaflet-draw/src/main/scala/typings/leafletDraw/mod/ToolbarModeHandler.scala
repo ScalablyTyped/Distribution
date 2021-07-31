@@ -3,17 +3,15 @@ package typings.leafletDraw.mod
 import typings.leaflet.mod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarModeHandler extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var handler: Handler = js.native
+  var handler: Handler
   
-  var title: String = js.native
+  var title: String
 }
 object ToolbarModeHandler {
   

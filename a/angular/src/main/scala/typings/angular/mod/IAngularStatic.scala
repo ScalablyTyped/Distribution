@@ -13,7 +13,6 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -47,37 +46,37 @@ trait IAngularStatic extends StObject {
     *     - `strictDi`: disable automatic function annotation for the application. This is meant to assist in finding bugs which break minified code.
     */
   def bootstrap(element: String): IInjectorService = js.native
-  def bootstrap(element: String, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
-  def bootstrap(element: String, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
+  def bootstrap(element: String, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
   def bootstrap(
     element: String,
-    modules: js.Array[String | Function | js.Array[_]],
+    modules: js.Array[String | Function | js.Array[js.Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
+  def bootstrap(element: String, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: JQuery): IInjectorService = js.native
-  def bootstrap(element: JQuery, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
-  def bootstrap(element: JQuery, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
+  def bootstrap(element: JQuery, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
   def bootstrap(
     element: JQuery,
-    modules: js.Array[String | Function | js.Array[_]],
+    modules: js.Array[String | Function | js.Array[js.Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
+  def bootstrap(element: JQuery, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: Document): IInjectorService = js.native
-  def bootstrap(element: Document, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
-  def bootstrap(element: Document, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
+  def bootstrap(element: Document, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
   def bootstrap(
     element: Document,
-    modules: js.Array[String | Function | js.Array[_]],
+    modules: js.Array[String | Function | js.Array[js.Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
+  def bootstrap(element: Document, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: Element): IInjectorService = js.native
-  def bootstrap(element: Element, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
-  def bootstrap(element: Element, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
+  def bootstrap(element: Element, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
   def bootstrap(
     element: Element,
-    modules: js.Array[String | Function | js.Array[_]],
+    modules: js.Array[String | Function | js.Array[js.Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
+  def bootstrap(element: Element, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
   
   /**
     * Creates a deep copy of source, which should be an object or an array.
@@ -192,9 +191,9 @@ trait IAngularStatic extends StObject {
   def identity[T](arg: T): T = js.native
   
   def injector(): IInjectorService = js.native
-  def injector(modules: js.UndefOr[scala.Nothing], strictDi: Boolean): IInjectorService = js.native
-  def injector(modules: js.Array[_]): IInjectorService = js.native
-  def injector(modules: js.Array[_], strictDi: Boolean): IInjectorService = js.native
+  def injector(modules: js.Array[js.Any]): IInjectorService = js.native
+  def injector(modules: js.Array[js.Any], strictDi: Boolean): IInjectorService = js.native
+  def injector(modules: Unit, strictDi: Boolean): IInjectorService = js.native
   
   def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
   
@@ -236,9 +235,9 @@ trait IAngularStatic extends StObject {
     * @param configFn Optional configuration function for the module.
     */
   def module(name: String): IModule = js.native
-  def module(name: String, requires: js.UndefOr[scala.Nothing], configFn: Injectable[Function]): IModule = js.native
   def module(name: String, requires: js.Array[String]): IModule = js.native
   def module(name: String, requires: js.Array[String], configFn: Injectable[Function]): IModule = js.native
+  def module(name: String, requires: Unit, configFn: Injectable[Function]): IModule = js.native
   
   def noop(args: js.Any*): Unit = js.native
   

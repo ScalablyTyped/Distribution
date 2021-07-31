@@ -2,60 +2,58 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a range of date+time values. */
-@js.native
 trait DateTimeRange extends StObject {
   
   /** contains the end day of month (1-31 or 0 for a void date) for the range. */
-  var EndDay: Double = js.native
+  var EndDay: Double
   
   /** contains the end hour (0-23) for the range. */
-  var EndHours: Double = js.native
+  var EndHours: Double
   
   /** contains the end minutes (0-59) for the range. */
-  var EndMinutes: Double = js.native
+  var EndMinutes: Double
   
   /** contains the end month of year (1-12 or 0 for a void date) for the range. */
-  var EndMonth: Double = js.native
+  var EndMonth: Double
   
   /** contains the end nanoseconds (0 - 999 999 999) for the range. */
-  var EndNanoSeconds: Double = js.native
+  var EndNanoSeconds: Double
   
   /** contains the end seconds (0-59) for the range. */
-  var EndSeconds: Double = js.native
+  var EndSeconds: Double
   
   /** contains the end year for the range. */
-  var EndYear: Double = js.native
+  var EndYear: Double
   
   /**
     * true: time zone is UTC false: unknown time zone.
     * @since LibreOffice 4.1
     */
-  var IsUTC: Boolean = js.native
+  var IsUTC: Boolean
   
   /** contains the start day of month (1-31 or 0 for a void date) for the range. */
-  var StartDay: Double = js.native
+  var StartDay: Double
   
   /** contains the start hour (0-23) for the range. */
-  var StartHours: Double = js.native
+  var StartHours: Double
   
   /** contains the start minutes (0-59) for the range. */
-  var StartMinutes: Double = js.native
+  var StartMinutes: Double
   
   /** contains the start month of year (1-12 or 0 for a void date) for the range. */
-  var StartMonth: Double = js.native
+  var StartMonth: Double
   
   /** contains the start nanoseconds (0 - 999 999 999) for the range. */
-  var StartNanoSeconds: Double = js.native
+  var StartNanoSeconds: Double
   
   /** contains the start seconds (0-59) for the range. */
-  var StartSeconds: Double = js.native
+  var StartSeconds: Double
   
   /** contains the start year for the range. */
-  var StartYear: Double = js.native
+  var StartYear: Double
 }
 object DateTimeRange {
   

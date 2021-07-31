@@ -2,31 +2,29 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLifecyclePolicyResponse extends StObject {
   
   /**
     * The time stamp of the last time that the lifecycle policy was run.
     */
-  var lastEvaluatedAt: js.UndefOr[EvaluationTimestamp] = js.native
+  var lastEvaluatedAt: js.UndefOr[EvaluationTimestamp] = js.undefined
   
   /**
     * The JSON lifecycle policy text.
     */
-  var lifecyclePolicyText: js.UndefOr[LifecyclePolicyText] = js.native
+  var lifecyclePolicyText: js.UndefOr[LifecyclePolicyText] = js.undefined
   
   /**
     * The registry ID associated with the request.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The repository name associated with the request.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object GetLifecyclePolicyResponse {
   

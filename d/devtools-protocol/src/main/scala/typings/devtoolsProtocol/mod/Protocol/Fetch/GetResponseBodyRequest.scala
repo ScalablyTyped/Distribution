@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Fetch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResponseBodyRequest extends StObject {
   
   /**
     * Identifier for the intercepted request to get body for.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
 }
 object GetResponseBodyRequest {
   

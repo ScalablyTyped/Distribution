@@ -3,7 +3,6 @@ package typings.reactNativeMaterialKit
 import typings.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeMaterialKitStrings {
@@ -64,7 +63,9 @@ object reactNativeMaterialKitStrings {
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait center extends rippleLocation
+  sealed trait center
+    extends StObject
+       with rippleLocation
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -99,7 +100,9 @@ object reactNativeMaterialKitStrings {
   def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
-  sealed trait tapLocation extends rippleLocation
+  sealed trait tapLocation
+    extends StObject
+       with rippleLocation
   @scala.inline
   def tapLocation: tapLocation = "tapLocation".asInstanceOf[tapLocation]
 }

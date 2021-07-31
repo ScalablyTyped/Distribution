@@ -2,21 +2,19 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LedOption extends StObject {
   
-  var address: js.UndefOr[Double] = js.native
+  var address: js.UndefOr[Double] = js.undefined
   
-  var controller: js.UndefOr[String] = js.native
+  var controller: js.UndefOr[String] = js.undefined
   
-  var isAnode: js.UndefOr[Boolean] = js.native
+  var isAnode: js.UndefOr[Boolean] = js.undefined
   
-  var pin: Double = js.native
+  var pin: Double
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object LedOption {
   

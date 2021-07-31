@@ -6,47 +6,45 @@ import typings.wechatMiniprogram.WechatMiniprogram.Behavior.BehaviorIdentifier
 import typings.wechatMiniprogram.anon.PartialPageLifetimes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OtherOption extends StObject {
   
   /** 类似于mixins和traits的组件间代码复用机制，参见 [behaviors](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/behaviors.html) */
-  var behaviors: js.Array[BehaviorIdentifier] = js.native
+  var behaviors: js.Array[BehaviorIdentifier]
   
   /** 定义段过滤器，用于自定义组件扩展，参见 [自定义组件扩展](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/extend.html)
     *
     * 最低基础库版本： [`2.2.3`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) */
-  var definitionFilter: js.UndefOr[DefinitionFilter] = js.native
+  var definitionFilter: js.UndefOr[DefinitionFilter] = js.undefined
   
   /** 组件接受的外部样式类，参见 [外部样式类](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html) */
-  var externalClasses: js.UndefOr[js.Array[String]] = js.native
+  var externalClasses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * 组件数据字段监听器，用于监听 properties 和 data 的变化，参见 [数据监听器](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/observer.html)
     *
     * 最低基础库版本：[`2.6.1`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  var observers: Record[String, js.Function1[/* repeated */ _, _]] = js.native
+  var observers: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]
   
   /** 一些选项（文档中介绍相关特性时会涉及具体的选项设置，这里暂不列举） */
-  var options: ComponentOptions = js.native
+  var options: ComponentOptions
   
   /** 组件所在页面的生命周期声明对象，参见 [组件生命周期](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/lifetimes.html)
     *
     * 最低基础库版本： [`2.2.3`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) */
-  var pageLifetimes: js.UndefOr[PartialPageLifetimes] = js.native
+  var pageLifetimes: js.UndefOr[PartialPageLifetimes] = js.undefined
   
   /** 组件间关系定义，参见 [组件间关系](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/lifetimes.html) */
-  var relations: StringDictionary[RelationOption] = js.native
+  var relations: StringDictionary[RelationOption]
 }
 object OtherOption {
   
   @scala.inline
   def apply(
     behaviors: js.Array[BehaviorIdentifier],
-    observers: Record[String, js.Function1[/* repeated */ _, _]],
+    observers: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
     options: ComponentOptions,
     relations: StringDictionary[RelationOption]
   ): OtherOption = {
@@ -85,7 +83,7 @@ object OtherOption {
     def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
     
     @scala.inline
-    def setObservers(value: Record[String, js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+    def setObservers(value: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptions(value: ComponentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])

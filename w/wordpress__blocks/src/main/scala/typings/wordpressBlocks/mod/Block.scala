@@ -7,108 +7,106 @@ import typings.std.Record
 import typings.wordpressBlocks.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Block[T /* <: Record[String, _] */] extends StObject {
+trait Block[T /* <: Record[String, js.Any] */] extends StObject {
   
   /**
     * Attributes for the block.
     */
   val attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.Block with TopLevel[js.Any] = js.native
+    */ typings.wordpressBlocks.wordpressBlocksStrings.Block & TopLevel[js.Any]
   
   /**
     * The block category (determines placement in the inserter).
     */
-  val category: String = js.native
+  val category: String
   
   /**
     * Array of deprecation handlers for the block.
     */
-  val deprecated: js.UndefOr[js.Array[BlockDeprecation[T]]] = js.native
+  val deprecated: js.UndefOr[js.Array[BlockDeprecation[T]]] = js.undefined
   
   /**
     * This is a short description for your block, which can be translated
     * with our translation functions.
     */
-  val description: js.UndefOr[String] = js.native
+  val description: js.UndefOr[String] = js.undefined
   
   /**
     * Component to render in the editor.
     */
-  val edit: js.UndefOr[ComponentType[BlockEditProps[T]]] = js.native
+  val edit: js.UndefOr[ComponentType[BlockEditProps[T]]] = js.undefined
   
   /**
     * Sets attributes on the topmost parent element of the current block.
     */
-  var getEditWrapperProps: js.UndefOr[js.Function1[/* attrs */ T, Record[String, String | Double | Boolean]]] = js.native
+  var getEditWrapperProps: js.UndefOr[js.Function1[/* attrs */ T, Record[String, String | Double | Boolean]]] = js.undefined
   
   /**
     * Icon for the block.
     */
-  val icon: BlockIconNormalized = js.native
+  val icon: BlockIconNormalized
   
   /**
     * Searchable keywords for discovery.
     */
-  val keywords: js.UndefOr[js.Array[String]] = js.native
+  val keywords: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Undocumented, but used in core.
     *
     * @see `@wordpress/block-library/src/paragraph`
     */
-  var merge: js.UndefOr[js.Function2[/* attributes */ T, /* attributesToMerge */ T, Partial[T]]] = js.native
+  var merge: js.UndefOr[js.Function2[/* attributes */ T, /* attributesToMerge */ T, Partial[T]]] = js.undefined
   
   /**
     * This is set internally when registering the type.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * Setting `parent` lets a block require that it is only available when
     * nested within the specified blocks.
     */
-  val parent: js.UndefOr[js.Array[String]] = js.native
+  val parent: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Component to render on the frontend.
     */
-  val save: ComponentType[BlockSaveProps[T]] = js.native
+  val save: ComponentType[BlockSaveProps[T]]
   
   /**
     * Block styles.
     *
     * @see `https://wordpress.org/gutenberg/handbook/extensibility/extending-blocks/#block-style-variations`
     */
-  val styles: js.UndefOr[js.Array[BlockStyle]] = js.native
+  val styles: js.UndefOr[js.Array[BlockStyle]] = js.undefined
   
   /**
     * Optional block extended support features.
     */
-  val supports: js.UndefOr[BlockSupports] = js.native
+  val supports: js.UndefOr[BlockSupports] = js.undefined
   
   /**
     * This is the display title for your block, which can be translated
     * with our translation functions.
     */
-  val title: String = js.native
+  val title: String
   
   /**
     * Block transformations.
     */
-  val transforms: js.UndefOr[From[T]] = js.native
+  val transforms: js.UndefOr[From[T]] = js.undefined
 }
 object Block {
   
   @scala.inline
-  def apply[T /* <: Record[String, _] */](
+  def apply[T /* <: Record[String, js.Any] */](
     attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.Block with TopLevel[js.Any],
+    */ typings.wordpressBlocks.wordpressBlocksStrings.Block & TopLevel[js.Any],
     category: String,
     icon: BlockIconNormalized,
     name: String,
@@ -120,13 +118,13 @@ object Block {
   }
   
   @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block[_], T /* <: Record[String, _] */] (val x: Self with Block[T]) extends AnyVal {
+  implicit class BlockMutableBuilder[Self <: Block[?], T /* <: Record[String, js.Any] */] (val x: Self & Block[T]) extends AnyVal {
     
     @scala.inline
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Block with TopLevel[js.Any]
+      */ typings.wordpressBlocks.wordpressBlocksStrings.Block & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline

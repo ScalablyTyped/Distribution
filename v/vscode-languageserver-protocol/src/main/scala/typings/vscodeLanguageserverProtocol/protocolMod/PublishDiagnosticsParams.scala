@@ -4,28 +4,26 @@ import typings.vscodeLanguageserverTypes.mod.Diagnostic
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishDiagnosticsParams extends StObject {
   
   /**
     * An array of diagnostic information items.
     */
-  var diagnostics: js.Array[Diagnostic] = js.native
+  var diagnostics: js.Array[Diagnostic]
   
   /**
     * The URI for which diagnostic information is reported.
     */
-  var uri: DocumentUri = js.native
+  var uri: DocumentUri
   
   /**
     * Optional the version number of the document the diagnostics are published for.
     *
     * @since 3.15.0
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object PublishDiagnosticsParams {
   

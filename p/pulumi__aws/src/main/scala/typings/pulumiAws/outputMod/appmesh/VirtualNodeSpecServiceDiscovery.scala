@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecServiceDiscovery extends StObject {
   
   /**
     * Specifies any AWS Cloud Map information for the virtual node.
     */
-  var awsCloudMap: js.UndefOr[VirtualNodeSpecServiceDiscoveryAwsCloudMap] = js.native
+  var awsCloudMap: js.UndefOr[VirtualNodeSpecServiceDiscoveryAwsCloudMap] = js.undefined
   
   /**
     * Specifies the DNS service name for the virtual node.
     */
-  var dns: js.UndefOr[VirtualNodeSpecServiceDiscoveryDns] = js.native
+  var dns: js.UndefOr[VirtualNodeSpecServiceDiscoveryDns] = js.undefined
 }
 object VirtualNodeSpecServiceDiscovery {
   

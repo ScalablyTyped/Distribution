@@ -15,7 +15,6 @@ import typings.nodegit.strArrayMod.Strarray
 import typings.nodegit.transferProgressMod.TransferProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteMod {
@@ -35,21 +34,21 @@ object remoteMod {
     
     def disconnect(): js.Promise[Unit] = js.native
     
-    def download(refSpecs: js.Array[_]): js.Promise[Double] = js.native
-    def download(refSpecs: js.Array[_], opts: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
-    def download(refSpecs: js.Array[_], opts: FetchOptions): js.Promise[Double] = js.native
-    def download(refSpecs: js.Array[_], opts: FetchOptions, callback: js.Function): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[js.Any]): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[js.Any], opts: Unit, callback: js.Function): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[js.Any], opts: FetchOptions): js.Promise[Double] = js.native
+    def download(refSpecs: js.Array[js.Any], opts: FetchOptions, callback: js.Function): js.Promise[Double] = js.native
     
     def dup(): js.Promise[Remote] = js.native
     
-    def fetch(refSpecs: js.Array[_], opts: FetchOptions, message: String): js.Promise[Double] = js.native
-    def fetch(refSpecs: js.Array[_], opts: FetchOptions, message: String, callback: js.Function): js.Promise[Double] = js.native
+    def fetch(refSpecs: js.Array[js.Any], opts: FetchOptions, message: String): js.Promise[Double] = js.native
+    def fetch(refSpecs: js.Array[js.Any], opts: FetchOptions, message: String, callback: js.Function): js.Promise[Double] = js.native
     
     def free(): Unit = js.native
     
-    def getFetchRefspecs(): js.Promise[js.Array[_]] = js.native
+    def getFetchRefspecs(): js.Promise[js.Array[js.Any]] = js.native
     
-    def getPushRefspecs(): js.Promise[js.Array[_]] = js.native
+    def getPushRefspecs(): js.Promise[js.Array[js.Any]] = js.native
     
     def getRefspec(n: Double): Refspec = js.native
     
@@ -61,17 +60,17 @@ object remoteMod {
     
     def pruneRefs(): Double = js.native
     
-    def push(refSpecs: js.Array[_]): js.Promise[Double] = js.native
-    def push(refSpecs: js.Array[_], options: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
-    def push(refSpecs: js.Array[_], options: PushOptions): js.Promise[Double] = js.native
-    def push(refSpecs: js.Array[_], options: PushOptions, callback: js.Function): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[js.Any]): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[js.Any], options: Unit, callback: js.Function): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[js.Any], options: PushOptions): js.Promise[Double] = js.native
+    def push(refSpecs: js.Array[js.Any], options: PushOptions, callback: js.Function): js.Promise[Double] = js.native
     
     def pushurl(): String = js.native
     
     /**
       * Lists advertised references from a remote. You must connect to the remote before using referenceList.
       */
-    def referenceList(): js.Promise[js.Array[_]] = js.native
+    def referenceList(): js.Promise[js.Array[js.Any]] = js.native
     
     def refspecCount(): Double = js.native
     
@@ -93,70 +92,57 @@ object remoteMod {
   /* static members */
   object Remote {
     
-    @JSImport("nodegit/remote", "Remote.addFetch")
+    @JSImport("nodegit/remote", "Remote")
     @js.native
-    def addFetch(repo: Repository, remote: String, refspec: String): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/remote", "Remote.addPush")
-    @js.native
-    def addPush(repo: Repository, remote: String, refspec: String): Double = js.native
+    @scala.inline
+    def addFetch(repo: Repository, remote: String, refspec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addFetch")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], refspec.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/remote", "Remote.create")
-    @js.native
-    def create(repo: Repository, name: String, url: String): js.Promise[Remote] = js.native
+    @scala.inline
+    def addPush(repo: Repository, remote: String, refspec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addPush")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], refspec.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/remote", "Remote.createAnonymous")
-    @js.native
-    def createAnonymous(repo: Repository, url: String): js.Promise[Remote] = js.native
+    @scala.inline
+    def create(repo: Repository, name: String, url: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @JSImport("nodegit/remote", "Remote.createDetached")
-    @js.native
-    def createDetached(url: String): js.Promise[Remote] = js.native
+    @scala.inline
+    def createAnonymous(repo: Repository, url: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAnonymous")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @JSImport("nodegit/remote", "Remote.createWithFetchspec")
-    @js.native
-    def createWithFetchspec(repo: Repository, name: String, url: String, fetch: String): js.Promise[Remote] = js.native
+    @scala.inline
+    def createDetached(url: String): js.Promise[Remote] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDetached")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Remote]]
     
-    @JSImport("nodegit/remote", "Remote.delete")
-    @js.native
-    def delete(repo: Repository, name: String): js.Promise[Double] = js.native
+    @scala.inline
+    def createWithFetchspec(repo: Repository, name: String, url: String, fetch: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithFetchspec")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @JSImport("nodegit/remote", "Remote.initCallbacks")
-    @js.native
-    def initCallbacks(opts: RemoteCallbacks, version: Double): Double = js.native
+    @scala.inline
+    def delete(repo: Repository, name: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/remote", "Remote.isValidName")
-    @js.native
-    def isValidName(remoteName: String): Boolean = js.native
+    @scala.inline
+    def initCallbacks(opts: RemoteCallbacks, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initCallbacks")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/remote", "Remote.list")
-    @js.native
-    def list(repo: Repository): js.Promise[js.Array[_]] = js.native
+    @scala.inline
+    def isValidName(remoteName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(remoteName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("nodegit/remote", "Remote.lookup")
-    @js.native
-    def lookup(repo: Repository, name: String): js.Promise[Remote] = js.native
-    @JSImport("nodegit/remote", "Remote.lookup")
-    @js.native
-    def lookup(repo: Repository, name: String, callback: js.Function): js.Promise[Remote] = js.native
-    @JSImport("nodegit/remote", "Remote.lookup")
-    @js.native
-    def lookup(repo: Repository, name: Remote): js.Promise[Remote] = js.native
-    @JSImport("nodegit/remote", "Remote.lookup")
-    @js.native
-    def lookup(repo: Repository, name: Remote, callback: js.Function): js.Promise[Remote] = js.native
+    @scala.inline
+    def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
     
-    @JSImport("nodegit/remote", "Remote.setAutotag")
-    @js.native
-    def setAutotag(repo: Repository, remote: String, value: Double): Double = js.native
+    @scala.inline
+    def lookup(repo: Repository, name: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    @scala.inline
+    def lookup(repo: Repository, name: String, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    @scala.inline
+    def lookup(repo: Repository, name: Remote): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    @scala.inline
+    def lookup(repo: Repository, name: Remote, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @JSImport("nodegit/remote", "Remote.setPushurl")
-    @js.native
-    def setPushurl(repo: Repository, remote: String, url: String): Double = js.native
+    @scala.inline
+    def setAutotag(repo: Repository, remote: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setAutotag")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/remote", "Remote.setUrl")
-    @js.native
-    def setUrl(repo: Repository, remote: String, url: String): Double = js.native
+    @scala.inline
+    def setPushurl(repo: Repository, remote: String, url: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setPushurl")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def setUrl(repo: Repository, remote: String, url: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrl")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

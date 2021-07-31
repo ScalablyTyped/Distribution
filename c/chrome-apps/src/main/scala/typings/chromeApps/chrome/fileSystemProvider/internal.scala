@@ -3,7 +3,6 @@ package typings.chromeApps.chrome.fileSystemProvider
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,12 @@ object internal {
     * @private
     * @internal
     */
-  @js.native
-  trait EntryPathRequestedEventOptions extends RequestedEventOptions {
+  trait EntryPathRequestedEventOptions
+    extends StObject
+       with RequestedEventOptions {
     
     /** The path of the entry to which this operation is related to. */
-    var entryPath: String = js.native
+    var entryPath: String
   }
   object EntryPathRequestedEventOptions {
     
@@ -43,11 +43,12 @@ object internal {
     * @private
     * @internal
     */
-  @js.native
-  trait FilePathRequestedEventOptions extends RequestedEventOptions {
+  trait FilePathRequestedEventOptions
+    extends StObject
+       with RequestedEventOptions {
     
     /** The path of the entry for the operation */
-    var filePath: String = js.native
+    var filePath: String
   }
   object FilePathRequestedEventOptions {
     
@@ -69,14 +70,13 @@ object internal {
     * @private
     * @internal
     */
-  @js.native
   trait RequestedEventOptions extends StObject {
     
     /** The identifier of the file system related to this operation. */
-    var fileSystemId: String = js.native
+    var fileSystemId: String
     
     /** The unique identifier of this request. */
-    var requestId: integer = js.native
+    var requestId: integer
   }
   object RequestedEventOptions {
     

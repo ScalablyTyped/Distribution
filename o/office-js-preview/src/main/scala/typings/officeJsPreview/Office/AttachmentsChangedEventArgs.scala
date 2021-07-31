@@ -4,10 +4,8 @@ import typings.officeJsPreview.Office.MailboxEnums.AttachmentStatus
 import typings.officeJsPreview.officeJsPreviewStrings.olkAttachmentsChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentsChangedEventArgs extends StObject {
   
   /**
@@ -16,32 +14,28 @@ trait AttachmentsChangedEventArgs extends StObject {
     *
     * [Api set: Mailbox 1.8]
     */
-  var attachmentDetails: js.Array[js.Object] = js.native
+  var attachmentDetails: js.Array[js.Object]
   
   /**
     * Gets whether the attachments were added or removed. See {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus} for details.
     *
     * [Api set: Mailbox 1.8]
     */
-  var attachmentStatus: AttachmentStatus | String = js.native
+  var attachmentStatus: AttachmentStatus | String
   
   /**
     * Gets the type of the event. See `Office.EventType` for details.
     *
     * [Api set: Mailbox 1.8]
     */
-  var `type`: olkAttachmentsChanged = js.native
+  var `type`: olkAttachmentsChanged
 }
 object AttachmentsChangedEventArgs {
   
   @scala.inline
-  def apply(
-    attachmentDetails: js.Array[js.Object],
-    attachmentStatus: AttachmentStatus | String,
-    `type`: olkAttachmentsChanged
-  ): AttachmentsChangedEventArgs = {
+  def apply(attachmentDetails: js.Array[js.Object], attachmentStatus: AttachmentStatus | String): AttachmentsChangedEventArgs = {
     val __obj = js.Dynamic.literal(attachmentDetails = attachmentDetails.asInstanceOf[js.Any], attachmentStatus = attachmentStatus.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("olkAttachmentsChanged")
     __obj.asInstanceOf[AttachmentsChangedEventArgs]
   }
   

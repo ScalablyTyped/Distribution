@@ -3,25 +3,25 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.simpleGrid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchMSLayoutSimpleGrid extends SketchMSLayout {
+trait SketchMSLayoutSimpleGrid
+  extends StObject
+     with SketchMSLayout {
   
-  var _class: simpleGrid = js.native
+  var _class: simpleGrid
   
-  var gridSize: Double = js.native
+  var gridSize: Double
   
-  var isEnabled: Double = js.native
+  var isEnabled: Double
   
-  var thickGridTimes: Double = js.native
+  var thickGridTimes: Double
 }
 object SketchMSLayoutSimpleGrid {
   
   @scala.inline
-  def apply(_class: simpleGrid, gridSize: Double, isEnabled: Double, thickGridTimes: Double): SketchMSLayoutSimpleGrid = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], gridSize = gridSize.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], thickGridTimes = thickGridTimes.asInstanceOf[js.Any])
+  def apply(gridSize: Double, isEnabled: Double, thickGridTimes: Double): SketchMSLayoutSimpleGrid = {
+    val __obj = js.Dynamic.literal(_class = "simpleGrid", gridSize = gridSize.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], thickGridTimes = thickGridTimes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSLayoutSimpleGrid]
   }
   

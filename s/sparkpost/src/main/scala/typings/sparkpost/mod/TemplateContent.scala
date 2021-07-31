@@ -2,10 +2,8 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateContent extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait TemplateContent extends StObject {
     * "from" : { "name" : "My Company", "email" : "deals@company.com" } used to compose the email’s "From" header.
     *
     */
-  var from: Address | String = js.native
+  var from: Address | String
   
   /**  JSON dictionary containing headers other than “Subject”, “From”, “To”, and “Reply-To”. */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /** HTML content for the email’s text/html MIME part */
-  var html: String = js.native
+  var html: String
   
   /** Email address used to compose the email’s “Reply-To” header. */
-  var reply_to: js.UndefOr[String] = js.native
+  var reply_to: js.UndefOr[String] = js.undefined
   
   /** Email subject line. */
-  var subject: String = js.native
+  var subject: String
   
   /** Text content for the email’s text/plain MIME part */
-  var text: String = js.native
+  var text: String
 }
 object TemplateContent {
   

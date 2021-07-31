@@ -10,66 +10,55 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`7`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GATEWAYCONNECTED extends StObject {
   
   /**
     * Gateway connected
     */
-  var GATEWAY_CONNECTED: `4` = js.native
+  var GATEWAY_CONNECTED: `4`
   
   /**
     * Gateway disconnected
     */
-  var GATEWAY_DISCONNECTED: `5` = js.native
+  var GATEWAY_DISCONNECTED: `5`
   
   /**
     * LAN cable connected
     */
-  var LAN_CABLE_ATTACHED: `1` = js.native
+  var LAN_CABLE_ATTACHED: `1`
   
   /**
     * LAN cable disconnected
     */
-  var LAN_CABLE_DETACHED: `2` = js.native
+  var LAN_CABLE_DETACHED: `2`
   
   /**
     * LAN cable connection state unknown
     */
-  var LAN_CABLE_STATE_UNKNOWN: `3` = js.native
+  var LAN_CABLE_STATE_UNKNOWN: `3`
   
   /**
     * Wi-Fi module connected
     */
-  var WIFI_MODULE_STATE_ATTACHED: `6` = js.native
+  var WIFI_MODULE_STATE_ATTACHED: `6`
   
   /**
     * Wi-Fi module disconnected
     */
-  var WIFI_MODULE_STATE_DETACHED: `7` = js.native
+  var WIFI_MODULE_STATE_DETACHED: `7`
   
   /**
     * Wi-Fi module connection state unknown
     */
-  var WIFI_MODULE_STATE_UNKNOWN: `8` = js.native
+  var WIFI_MODULE_STATE_UNKNOWN: `8`
 }
 object GATEWAYCONNECTED {
   
   @scala.inline
-  def apply(
-    GATEWAY_CONNECTED: `4`,
-    GATEWAY_DISCONNECTED: `5`,
-    LAN_CABLE_ATTACHED: `1`,
-    LAN_CABLE_DETACHED: `2`,
-    LAN_CABLE_STATE_UNKNOWN: `3`,
-    WIFI_MODULE_STATE_ATTACHED: `6`,
-    WIFI_MODULE_STATE_DETACHED: `7`,
-    WIFI_MODULE_STATE_UNKNOWN: `8`
-  ): GATEWAYCONNECTED = {
-    val __obj = js.Dynamic.literal(GATEWAY_CONNECTED = GATEWAY_CONNECTED.asInstanceOf[js.Any], GATEWAY_DISCONNECTED = GATEWAY_DISCONNECTED.asInstanceOf[js.Any], LAN_CABLE_ATTACHED = LAN_CABLE_ATTACHED.asInstanceOf[js.Any], LAN_CABLE_DETACHED = LAN_CABLE_DETACHED.asInstanceOf[js.Any], LAN_CABLE_STATE_UNKNOWN = LAN_CABLE_STATE_UNKNOWN.asInstanceOf[js.Any], WIFI_MODULE_STATE_ATTACHED = WIFI_MODULE_STATE_ATTACHED.asInstanceOf[js.Any], WIFI_MODULE_STATE_DETACHED = WIFI_MODULE_STATE_DETACHED.asInstanceOf[js.Any], WIFI_MODULE_STATE_UNKNOWN = WIFI_MODULE_STATE_UNKNOWN.asInstanceOf[js.Any])
+  def apply(): GATEWAYCONNECTED = {
+    val __obj = js.Dynamic.literal(GATEWAY_CONNECTED = 4, GATEWAY_DISCONNECTED = 5, LAN_CABLE_ATTACHED = 1, LAN_CABLE_DETACHED = 2, LAN_CABLE_STATE_UNKNOWN = 3, WIFI_MODULE_STATE_ATTACHED = 6, WIFI_MODULE_STATE_DETACHED = 7, WIFI_MODULE_STATE_UNKNOWN = 8)
     __obj.asInstanceOf[GATEWAYCONNECTED]
   }
   

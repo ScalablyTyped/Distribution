@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.beans.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandProcessor
   * @since Apache OpenOffice 4.0, LibreOffice 4.2
   */
-@js.native
 trait PropertyCommandArgument extends StObject {
   
   /** The default value of the property. */
-  var DefaultValue: js.Any = js.native
+  var DefaultValue: js.Any
   
   /** The property that the command has to add. */
-  var Property: typings.activexLibreoffice.com_.sun.star.beans.Property = js.native
+  var Property: typings.activexLibreoffice.com_.sun.star.beans.Property
 }
 object PropertyCommandArgument {
   

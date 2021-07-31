@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkPath extends EmbindObject[SkPath] {
+trait SkPath
+  extends StObject
+     with EmbindObject[SkPath] {
   
   /**
     * Appends arc to SkPath, as the start of new contour. Arc added is part of ellipse
@@ -30,9 +31,9 @@ trait SkPath extends EmbindObject[SkPath] {
     * @param startIndex - index of initial point of ellipse
     */
   def addOval(oval: InputRect): SkPath = js.native
-  def addOval(oval: InputRect, isCCW: js.UndefOr[scala.Nothing], startIndex: Double): SkPath = js.native
   def addOval(oval: InputRect, isCCW: Boolean): SkPath = js.native
   def addOval(oval: InputRect, isCCW: Boolean, startIndex: Double): SkPath = js.native
+  def addOval(oval: InputRect, isCCW: Unit, startIndex: Double): SkPath = js.native
   
   /**
     * Takes 1, 2, 7, or 10 required args, where the first arg is always the path.

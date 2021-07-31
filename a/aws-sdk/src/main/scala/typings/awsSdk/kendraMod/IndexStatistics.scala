@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexStatistics extends StObject {
   
   /**
     * The number of question and answer topics in the index.
     */
-  var FaqStatistics: typings.awsSdk.kendraMod.FaqStatistics = js.native
+  var FaqStatistics: typings.awsSdk.kendraMod.FaqStatistics
   
   /**
     * The number of text documents indexed.
     */
-  var TextDocumentStatistics: typings.awsSdk.kendraMod.TextDocumentStatistics = js.native
+  var TextDocumentStatistics: typings.awsSdk.kendraMod.TextDocumentStatistics
 }
 object IndexStatistics {
   

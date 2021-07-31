@@ -2,11 +2,11 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputEnabledEventArgs extends IInputEnabledEventArgs
+trait InputEnabledEventArgs
+  extends StObject
+     with IInputEnabledEventArgs
 object InputEnabledEventArgs {
   
   @scala.inline

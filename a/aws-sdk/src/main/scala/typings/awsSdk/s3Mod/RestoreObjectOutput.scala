@@ -2,18 +2,16 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreObjectOutput extends StObject {
   
-  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.native
+  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.undefined
   
   /**
     * Indicates the path in the provided S3 output location where Select results will be restored to.
     */
-  var RestoreOutputPath: js.UndefOr[typings.awsSdk.s3Mod.RestoreOutputPath] = js.native
+  var RestoreOutputPath: js.UndefOr[typings.awsSdk.s3Mod.RestoreOutputPath] = js.undefined
 }
 object RestoreObjectOutput {
   

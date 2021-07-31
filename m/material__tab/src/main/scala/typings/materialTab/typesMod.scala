@@ -3,21 +3,19 @@ package typings.materialTab
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MDCTabDimensions extends StObject {
     
-    var contentLeft: Double = js.native
+    var contentLeft: Double
     
-    var contentRight: Double = js.native
+    var contentRight: Double
     
-    var rootLeft: Double = js.native
+    var rootLeft: Double
     
-    var rootRight: Double = js.native
+    var rootRight: Double
   }
   object MDCTabDimensions {
     
@@ -45,15 +43,16 @@ object typesMod {
   }
   
   @js.native
-  trait MDCTabInteractionEvent extends Event {
+  trait MDCTabInteractionEvent
+    extends StObject
+       with Event {
     
     val detail: MDCTabInteractionEventDetail = js.native
   }
   
-  @js.native
   trait MDCTabInteractionEventDetail extends StObject {
     
-    var tabId: String = js.native
+    var tabId: String
   }
   object MDCTabInteractionEventDetail {
     

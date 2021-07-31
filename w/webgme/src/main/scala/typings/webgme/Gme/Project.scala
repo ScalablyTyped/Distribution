@@ -3,22 +3,20 @@ package typings.webgme.Gme
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Project extends StObject {
   
-  var branches: StringDictionary[String] = js.native
+  var branches: StringDictionary[String]
   
-  var delete: Boolean = js.native
+  var delete: Boolean
   
-  var name: String = js.native
+  var name: String
   
   /** should always be true */
-  var read: Boolean = js.native
+  var read: Boolean
   
-  var write: Boolean = js.native
+  var write: Boolean
 }
 object Project {
   

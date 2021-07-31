@@ -3,54 +3,52 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a collection of network endpoints.
   */
-@js.native
 trait SchemaNetworkEndpointGroup extends StObject {
   
   /**
     * Metadata defined as annotations on the network endpoint group.
     */
-  var annotations: js.UndefOr[StringDictionary[String]] = js.native
+  var annotations: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The default port used if the port number is not specified in the network
     * endpoint.
     */
-  var defaultPort: js.UndefOr[Double] = js.native
+  var defaultPort: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#networkEndpointGroup
     * for network endpoint group.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * This field is only valid when the network endpoint group is used for load
     * balancing. [Deprecated] This field is deprecated.
     */
-  var loadBalancer: js.UndefOr[SchemaNetworkEndpointGroupLbNetworkEndpointGroup] = js.native
+  var loadBalancer: js.UndefOr[SchemaNetworkEndpointGroupLbNetworkEndpointGroup] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -61,52 +59,52 @@ trait SchemaNetworkEndpointGroup extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the network to which all network endpoints in the NEG belong.
     * Uses &quot;default&quot; project network if unspecified.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Type of network endpoints in this network endpoint group. Currently the
     * only supported value is GCE_VM_IP_PORT.
     */
-  var networkEndpointType: js.UndefOr[String] = js.native
+  var networkEndpointType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Number of network endpoints in the network endpoint group.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional URL of the subnetwork to which all network endpoints in the NEG
     * belong.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the type of this network endpoint group. Only LOAD_BALANCING is
     * valid for now.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URL of the zone where the network endpoint group is
     * located.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworkEndpointGroup {
   

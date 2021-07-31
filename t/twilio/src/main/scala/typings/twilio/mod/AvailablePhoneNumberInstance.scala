@@ -2,17 +2,15 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailablePhoneNumberInstance extends StObject {
   
-  var local: AvailablePhoneNumberResourceGroup = js.native
+  var local: AvailablePhoneNumberResourceGroup
   
-  var mobile: AvailablePhoneNumberResourceGroup = js.native
+  var mobile: AvailablePhoneNumberResourceGroup
   
-  var tollFree: AvailablePhoneNumberResourceGroup = js.native
+  var tollFree: AvailablePhoneNumberResourceGroup
 }
 object AvailablePhoneNumberInstance {
   

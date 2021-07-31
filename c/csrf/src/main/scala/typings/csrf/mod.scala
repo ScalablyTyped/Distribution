@@ -3,7 +3,6 @@ package typings.csrf
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,22 +12,23 @@ object mod {
   /**
     * Token generation/verification class.
     */
-  class ^ () extends Tokens {
+  class ^ ()
+    extends StObject
+       with Tokens {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The string length of the salt (default: 8)
       */
-    var saltLength: js.UndefOr[Double] = js.native
+    var saltLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The byte length of the secret key (default: 18)
       */
-    var secretLength: js.UndefOr[Double] = js.native
+    var secretLength: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

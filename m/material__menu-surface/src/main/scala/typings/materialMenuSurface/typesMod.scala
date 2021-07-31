@@ -2,17 +2,15 @@ package typings.materialMenuSurface
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait MDCMenuDimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object MDCMenuDimensions {
     
@@ -33,16 +31,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MDCMenuDistance extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object MDCMenuDistance {
     
@@ -69,12 +66,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MDCMenuPoint extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object MDCMenuPoint {
     

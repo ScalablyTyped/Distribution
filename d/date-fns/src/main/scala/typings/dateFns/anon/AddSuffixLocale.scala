@@ -11,19 +11,17 @@ import typings.dateFns.dateFnsStrings.second
 import typings.dateFns.dateFnsStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddSuffixLocale extends StObject {
   
-  var addSuffix: js.UndefOr[Boolean] = js.native
+  var addSuffix: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[typings.dateFns.Locale] = js.native
+  var locale: js.UndefOr[typings.dateFns.Locale] = js.undefined
   
-  var roundingMethod: js.UndefOr[floor | ceil | round] = js.native
+  var roundingMethod: js.UndefOr[floor | ceil | round] = js.undefined
   
-  var unit: js.UndefOr[second | minute | hour | day | month | year] = js.native
+  var unit: js.UndefOr[second | minute | hour | day | month | year] = js.undefined
 }
 object AddSuffixLocale {
   

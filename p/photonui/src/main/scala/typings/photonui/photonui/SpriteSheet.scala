@@ -4,27 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpriteSheet extends Base {
+trait SpriteSheet
+  extends StObject
+     with Base {
   
-  def addIcon(iconName: String, x: Double, y: Double): Unit = js.native
+  def addIcon(iconName: String, x: Double, y: Double): Unit
   
-  def getIconCSS(iconName: String): String = js.native
+  def getIconCSS(iconName: String): String
   
-  def getIconPosition(iconName: String): X = js.native
+  def getIconPosition(iconName: String): X
   
-  var icons: StringDictionary[js.Array[Double]] = js.native
+  var icons: StringDictionary[js.Array[Double]]
   
-  var imageUrl: String = js.native
+  var imageUrl: String
   
-  var name: String = js.native
+  var name: String
   
-  def removeIcon(iconName: String): Unit = js.native
+  def removeIcon(iconName: String): Unit
   
-  var size: String = js.native
+  var size: String
 }
 object SpriteSheet {
   

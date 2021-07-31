@@ -12,7 +12,6 @@ import typings.node.streamMod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bulkMod {
@@ -28,50 +27,38 @@ object bulkMod {
     def job(id: String): Job = js.native
     
     def load(`type`: String, operation: BulkLoadOperation): Batch = js.native
+    def load(`type`: String, operation: BulkLoadOperation, options: Unit, input: String): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
-      options: js.UndefOr[scala.Nothing],
-      input: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
-    ): Batch = js.native
-    def load(`type`: String, operation: BulkLoadOperation, options: js.UndefOr[scala.Nothing], input: String): Batch = js.native
-    def load(
-      `type`: String,
-      operation: BulkLoadOperation,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       input: String,
       callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
+    def load(`type`: String, operation: BulkLoadOperation, options: Unit, input: js.Array[Record[js.Any]]): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
-      options: js.UndefOr[scala.Nothing],
-      input: js.Array[Record[_]]
-    ): Batch = js.native
-    def load(
-      `type`: String,
-      operation: BulkLoadOperation,
-      options: js.UndefOr[scala.Nothing],
-      input: js.Array[Record[_]],
+      options: Unit,
+      input: js.Array[Record[js.Any]],
       callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
-    def load(`type`: String, operation: BulkLoadOperation, options: js.UndefOr[scala.Nothing], input: Stream): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
+      input: Unit,
+      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+    ): Batch = js.native
+    def load(`type`: String, operation: BulkLoadOperation, options: Unit, input: Stream): Batch = js.native
+    def load(
+      `type`: String,
+      operation: BulkLoadOperation,
+      options: Unit,
       input: Stream,
       callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions): Batch = js.native
-    def load(
-      `type`: String,
-      operation: BulkLoadOperation,
-      options: BulkOptions,
-      input: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
-    ): Batch = js.native
     def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions, input: String): Batch = js.native
     def load(
       `type`: String,
@@ -80,12 +67,24 @@ object bulkMod {
       input: String,
       callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
-    def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions, input: js.Array[Record[_]]): Batch = js.native
     def load(
       `type`: String,
       operation: BulkLoadOperation,
       options: BulkOptions,
-      input: js.Array[Record[_]],
+      input: js.Array[Record[js.Any]]
+    ): Batch = js.native
+    def load(
+      `type`: String,
+      operation: BulkLoadOperation,
+      options: BulkOptions,
+      input: js.Array[Record[js.Any]],
+      callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
+    ): Batch = js.native
+    def load(
+      `type`: String,
+      operation: BulkLoadOperation,
+      options: BulkOptions,
+      input: Unit,
       callback: js.Function2[/* err */ Error, /* result */ js.Array[BatchResultInfo | RecordResult], Unit]
     ): Batch = js.native
     def load(`type`: String, operation: BulkLoadOperation, options: BulkOptions, input: Stream): Batch = js.native
@@ -130,12 +129,11 @@ object bulkMod {
     def upsert: typings.jsforce.jsforceStrings.upsert = "upsert".asInstanceOf[typings.jsforce.jsforceStrings.upsert]
   }
   
-  @js.native
   trait BulkOptions extends StObject {
     
-    var concurrencyMode: js.UndefOr[Serial | Parallel] = js.native
+    var concurrencyMode: js.UndefOr[Serial | Parallel] = js.undefined
     
-    var extIdField: String = js.native
+    var extIdField: String
   }
   object BulkOptions {
     

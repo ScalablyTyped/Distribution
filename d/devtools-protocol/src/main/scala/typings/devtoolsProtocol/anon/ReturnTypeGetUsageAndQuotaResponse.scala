@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.GetUsageAndQuotaRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetUsageAndQuotaResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetUsageAndQuotaResponse extends StObject {
   
-  var paramsType: js.Array[GetUsageAndQuotaRequest] = js.native
+  var paramsType: js.Array[GetUsageAndQuotaRequest]
   
-  var returnType: GetUsageAndQuotaResponse = js.native
+  var returnType: GetUsageAndQuotaResponse
 }
 object ReturnTypeGetUsageAndQuotaResponse {
   

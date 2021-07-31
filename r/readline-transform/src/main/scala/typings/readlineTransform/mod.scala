@@ -5,7 +5,6 @@ import typings.node.streamMod.TransformOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,17 +17,18 @@ object mod {
   
   type ReadlineTransform = Transform
   
-  @js.native
-  trait ReadlineTransformOptions extends TransformOptions {
+  trait ReadlineTransformOptions
+    extends StObject
+       with TransformOptions {
     
     /** line break matcher for str.split() (default: /\r?\n/) */
-    var breakMatcher: js.UndefOr[RegExp] = js.native
+    var breakMatcher: js.UndefOr[RegExp] = js.undefined
     
     /** if content ends with line break, ignore last empty line (default: true) */
-    var ignoreEndOfBreak: js.UndefOr[Boolean] = js.native
+    var ignoreEndOfBreak: js.UndefOr[Boolean] = js.undefined
     
     /** if line is empty string, skip it (default: false) */
-    var skipEmpty: js.UndefOr[Boolean] = js.native
+    var skipEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object ReadlineTransformOptions {
     

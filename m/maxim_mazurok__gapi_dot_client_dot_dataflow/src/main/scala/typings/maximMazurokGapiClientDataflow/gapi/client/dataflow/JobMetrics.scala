@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobMetrics extends StObject {
   
   /** Timestamp as of which metric values are current. */
-  var metricTime: js.UndefOr[String] = js.native
+  var metricTime: js.UndefOr[String] = js.undefined
   
   /** All metrics for this job. */
-  var metrics: js.UndefOr[js.Array[MetricUpdate]] = js.native
+  var metrics: js.UndefOr[js.Array[MetricUpdate]] = js.undefined
 }
 object JobMetrics {
   

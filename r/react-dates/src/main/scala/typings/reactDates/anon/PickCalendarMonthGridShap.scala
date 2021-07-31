@@ -2,42 +2,40 @@ package typings.reactDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-dates.react-dates.CalendarMonthGridShape, 'enableOutsideDays' | 'firstDayOfWeek' | 'daySize' | 'isRTL' | 'transitionDuration' | 'verticalBorderSpacing' | 'horizontalMonthPadding' | 'modifiers' | 'renderCalendarDay' | 'renderDayContents' | 'onDayClick' | 'onDayMouseEnter' | 'onDayMouseLeave' | 'monthFormat' | 'dayAriaLabelFormat'> */
-@js.native
 trait PickCalendarMonthGridShap extends StObject {
   
-  var dayAriaLabelFormat: js.UndefOr[js.Any] = js.native
+  var dayAriaLabelFormat: js.UndefOr[js.Any] = js.undefined
   
-  var daySize: js.UndefOr[js.Any] = js.native
+  var daySize: js.UndefOr[js.Any] = js.undefined
   
-  var enableOutsideDays: js.UndefOr[js.Any] = js.native
+  var enableOutsideDays: js.UndefOr[js.Any] = js.undefined
   
-  var firstDayOfWeek: js.UndefOr[js.Any] = js.native
+  var firstDayOfWeek: js.UndefOr[js.Any] = js.undefined
   
-  var horizontalMonthPadding: js.UndefOr[js.Any] = js.native
+  var horizontalMonthPadding: js.UndefOr[js.Any] = js.undefined
   
-  var isRTL: js.UndefOr[js.Any] = js.native
+  var isRTL: js.UndefOr[js.Any] = js.undefined
   
-  var modifiers: js.UndefOr[js.Any] = js.native
+  var modifiers: js.UndefOr[js.Any] = js.undefined
   
-  var monthFormat: js.UndefOr[js.Any] = js.native
+  var monthFormat: js.UndefOr[js.Any] = js.undefined
   
-  var onDayClick: js.UndefOr[js.Any] = js.native
+  var onDayClick: js.UndefOr[js.Any] = js.undefined
   
-  var onDayMouseEnter: js.UndefOr[js.Any] = js.native
+  var onDayMouseEnter: js.UndefOr[js.Any] = js.undefined
   
-  var onDayMouseLeave: js.UndefOr[js.Any] = js.native
+  var onDayMouseLeave: js.UndefOr[js.Any] = js.undefined
   
-  var renderCalendarDay: js.UndefOr[js.Any] = js.native
+  var renderCalendarDay: js.UndefOr[js.Any] = js.undefined
   
-  var renderDayContents: js.UndefOr[js.Any] = js.native
+  var renderDayContents: js.UndefOr[js.Any] = js.undefined
   
-  var transitionDuration: js.UndefOr[js.Any] = js.native
+  var transitionDuration: js.UndefOr[js.Any] = js.undefined
   
-  var verticalBorderSpacing: js.UndefOr[js.Any] = js.native
+  var verticalBorderSpacing: js.UndefOr[js.Any] = js.undefined
 }
 object PickCalendarMonthGridShap {
   

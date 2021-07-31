@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait watchUtils extends StObject {
     propertyName: String,
     eventName: String,
     eventHandler: js.Function,
-    attachedHandler: js.UndefOr[scala.Nothing],
+    attachedHandler: Unit,
     detachedHandler: EventAttachedCallback
   ): WatchHandle = js.native
   def on(
@@ -51,7 +50,7 @@ trait watchUtils extends StObject {
     propertyName: js.Array[String],
     eventName: String,
     eventHandler: js.Function,
-    attachedHandler: js.UndefOr[scala.Nothing],
+    attachedHandler: Unit,
     detachedHandler: EventAttachedCallback
   ): WatchHandle = js.native
   def on(

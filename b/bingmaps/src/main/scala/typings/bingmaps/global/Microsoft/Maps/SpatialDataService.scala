@@ -12,7 +12,6 @@ import typings.bingmaps.Microsoft.Maps.SpatialDataService.IGetBoundaryRequestOpt
 import typings.bingmaps.Microsoft.Maps.SpatialDataService.IQueryAPIOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,8 @@ object SpatialDataService {
   @JSGlobal("Microsoft.Maps.SpatialDataService.Filter")
   @js.native
   class Filter protected ()
-    extends typings.bingmaps.Microsoft.Maps.SpatialDataService.Filter {
+    extends StObject
+       with typings.bingmaps.Microsoft.Maps.SpatialDataService.Filter {
     /**
       * @constructor
       * @requires The Microsoft.Maps.SpatialDataService module.
@@ -34,6 +34,13 @@ object SpatialDataService {
       */
     def this(propertyName: String, operator: String, value: js.Any) = this()
     def this(propertyName: String, operator: FilterCompareOperator, value: js.Any) = this()
+    
+    /**
+      * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
+      * @returns A boolean indicating if the specified object meets the requirements of the Filter.
+      */
+    /* CompleteClass */
+    override def execute(`object`: js.Any): Boolean = js.native
   }
   
   @JSGlobal("Microsoft.Maps.SpatialDataService.FilterCompareOperator")
@@ -42,37 +49,38 @@ object SpatialDataService {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator with Double
+        typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator & Double
       ] = js.native
     
-    /* 0 */ val endsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.endsWith with Double = js.native
+    /* 0 */ val endsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.endsWith & Double = js.native
     
     /* 1 */ @JSName("equals")
-    val equals_ : equals with Double = js.native
+    val equals_ : equals & Double = js.native
     
-    /* 2 */ val greaterThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThan with Double = js.native
+    /* 2 */ val greaterThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThan & Double = js.native
     
-    /* 3 */ val greaterThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThanOrEqual with Double = js.native
+    /* 3 */ val greaterThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.greaterThanOrEqual & Double = js.native
     
-    /* 4 */ val isIn: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.isIn with Double = js.native
+    /* 4 */ val isIn: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.isIn & Double = js.native
     
-    /* 5 */ val lessThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThan with Double = js.native
+    /* 5 */ val lessThan: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThan & Double = js.native
     
-    /* 6 */ val lessThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThanOrEqual with Double = js.native
+    /* 6 */ val lessThanOrEqual: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.lessThanOrEqual & Double = js.native
     
-    /* 7 */ val notEndsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEndsWith with Double = js.native
+    /* 7 */ val notEndsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEndsWith & Double = js.native
     
-    /* 8 */ val notEquals: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEquals with Double = js.native
+    /* 8 */ val notEquals: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notEquals & Double = js.native
     
-    /* 9 */ val notStartsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notStartsWith with Double = js.native
+    /* 9 */ val notStartsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.notStartsWith & Double = js.native
     
-    /* 10 */ val startsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.startsWith with Double = js.native
+    /* 10 */ val startsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.startsWith & Double = js.native
   }
   
   @JSGlobal("Microsoft.Maps.SpatialDataService.FilterGroup")
   @js.native
   class FilterGroup protected ()
-    extends typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterGroup {
+    extends StObject
+       with typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterGroup {
     /**
       * @constructor
       * @requires The Microsoft.Maps.SpatialDataService module.
@@ -82,6 +90,13 @@ object SpatialDataService {
       */
     def this(filters: js.Array[IFilter], operator: FilterLogicalOperator) = this()
     def this(filters: js.Array[IFilter], operator: FilterLogicalOperator, not: Boolean) = this()
+    
+    /**
+      * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
+      * @returns A boolean indicating if the specified object meets the requirements of the Filter.
+      */
+    /* CompleteClass */
+    override def execute(`object`: js.Any): Boolean = js.native
   }
   
   @JSGlobal("Microsoft.Maps.SpatialDataService.FilterLogicalOperator")
@@ -90,49 +105,49 @@ object SpatialDataService {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator with Double
+        typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator & Double
       ] = js.native
     
-    /* 0 */ val and: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.and with Double = js.native
+    /* 0 */ val and: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.and & Double = js.native
     
-    /* 1 */ val or: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.or with Double = js.native
+    /* 1 */ val or: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.or & Double = js.native
   }
   
   object GeoDataAPIManager {
     
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[
           /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -144,40 +159,36 @@ object SpatialDataService {
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[
           /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -189,40 +200,36 @@ object SpatialDataService {
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[
           /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -234,40 +241,36 @@ object SpatialDataService {
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[
           /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -279,40 +282,36 @@ object SpatialDataService {
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[
           /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -324,40 +323,36 @@ object SpatialDataService {
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[
           /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -369,76 +364,72 @@ object SpatialDataService {
           /* networkStatus */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundary")(locations.asInstanceOf[js.Any], request.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object QueryAPIManager {
     
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
-      styles: js.UndefOr[scala.Nothing],
+      styles: Unit,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions
-    ): Unit = js.native
-    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(queryOptions.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapViewHighlightOptionsProperties extends Object {
+trait MapViewHighlightOptionsProperties
+  extends StObject
+     with Object {
   
   /**
     * The color of the highlight fill.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The opacity of the fill (area within the halo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the halo surrounding the highlight.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var haloColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var haloColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The opacity of the highlight halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var haloOpacity: js.UndefOr[Double] = js.native
+  var haloOpacity: js.UndefOr[Double] = js.undefined
 }
 object MapViewHighlightOptionsProperties {
   

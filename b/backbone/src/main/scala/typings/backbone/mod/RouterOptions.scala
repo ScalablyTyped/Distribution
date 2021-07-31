@@ -2,13 +2,11 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterOptions extends StObject {
   
-  var routes: js.Any = js.native
+  var routes: js.Any
 }
 object RouterOptions {
   

@@ -8,11 +8,12 @@ import typings.webix.webix.WebixCallback
 import typings.webix.webix.WebixTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait tree extends baseview {
+trait tree
+  extends StObject
+     with baseview {
   
   @JSName("$drag")
   def $drag(source: HTMLElement, ev: Event): String = js.native
@@ -62,9 +63,9 @@ trait tree extends baseview {
   def $tooltipOut(): Unit = js.native
   
   def add(obj: js.Any): String = js.native
-  def add(obj: js.Any, index: js.UndefOr[scala.Nothing], parentId: String): String = js.native
   def add(obj: js.Any, index: Double): String = js.native
   def add(obj: js.Any, index: Double, parentId: String): String = js.native
+  def add(obj: js.Any, index: Unit, parentId: String): String = js.native
   
   def addCss(id: String, css: String): Unit = js.native
   def addCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -76,7 +77,7 @@ trait tree extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def checkAll(): Unit = js.native
   def checkAll(id: String): Unit = js.native
@@ -101,11 +102,11 @@ trait tree extends baseview {
   var config_tree: treeConfig = js.native
   
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
   
@@ -120,14 +121,18 @@ trait tree extends baseview {
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   
-  def filter(text: WebixCallback | WebixTemplate): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
-  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: String, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback): Unit = js.native
+  def filter(text: WebixCallback, value: String): Unit = js.native
+  def filter(text: WebixCallback, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate): Unit = js.native
+  def filter(text: WebixTemplate, value: String): Unit = js.native
+  def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
   def find(criterion: WebixCallback): js.Any = js.native
   def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
@@ -139,7 +144,7 @@ trait tree extends baseview {
   def getBranchIndex(id: Double, parent: String): Double = js.native
   def getBranchIndex(id: Double, parent: Double): Double = js.native
   
-  def getChecked(): js.Array[_] = js.native
+  def getChecked(): js.Array[js.Any] = js.native
   
   def getFirstChildId(id: String): String = js.native
   def getFirstChildId(id: Double): String = js.native
@@ -166,7 +171,7 @@ trait tree extends baseview {
   def getNextSiblingId(id: String): String | Double = js.native
   def getNextSiblingId(id: Double): String | Double = js.native
   
-  def getOpenItems(): js.Array[_] = js.native
+  def getOpenItems(): js.Array[js.Any] = js.native
   
   def getParentId(id: String): String | Double = js.native
   def getParentId(id: Double): String | Double = js.native
@@ -179,7 +184,7 @@ trait tree extends baseview {
   
   def getScrollState(): js.Any = js.native
   
-  def getSelectedId(as_array: Boolean): String | js.Array[_] = js.native
+  def getSelectedId(as_array: Boolean): String | js.Array[js.Any] = js.native
   
   def getSelectedItem(as_array: Boolean): js.Any = js.native
   
@@ -206,24 +211,24 @@ trait tree extends baseview {
   def isSelected(id: String): Boolean = js.native
   def isSelected(id: Double): Boolean = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
-  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[_] = js.native
-  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[_] = js.native
+  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
+  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
   
   def locate(e: Event): String | Double = js.native
   
   def mapEvent(map: js.Any): Unit = js.native
   
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: js.Any): String = js.native
   
   def moveSelection(direction: String): Unit = js.native
   
@@ -255,7 +260,7 @@ trait tree extends baseview {
   def refresh(id: Double): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[_]): Unit = js.native
+  def remove(id: js.Array[js.Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
   def removeCss(id: String, css: String): Unit = js.native
@@ -269,15 +274,15 @@ trait tree extends baseview {
   def scrollTo(x: Double, y: Double): Unit = js.native
   
   def select(id: String, preserve: Boolean): Unit = js.native
-  def select(id: js.Array[_], preserve: Boolean): Unit = js.native
+  def select(id: js.Array[js.Any], preserve: Boolean): Unit = js.native
   
   def selectAll(): Unit = js.native
-  def selectAll(from: js.UndefOr[scala.Nothing], to: String): Unit = js.native
   def selectAll(from: String): Unit = js.native
   def selectAll(from: String, to: String): Unit = js.native
+  def selectAll(from: Unit, to: String): Unit = js.native
   
-  def serialize(rootId: String, all: Boolean): js.Array[_] = js.native
-  def serialize(rootId: Double, all: Boolean): js.Array[_] = js.native
+  def serialize(rootId: String, all: Boolean): js.Array[js.Any] = js.native
+  def serialize(rootId: Double, all: Boolean): js.Array[js.Any] = js.native
   
   def setState(state: js.Any): Unit = js.native
   
@@ -285,9 +290,9 @@ trait tree extends baseview {
   def showItem(id: Double): Unit = js.native
   
   def sort(by: String): Unit = js.native
-  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
+  def sort(by: String, dir: Unit, as: String): Unit = js.native
   
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
@@ -316,7 +321,7 @@ trait tree extends baseview {
   def validate(): Boolean = js.native
   def validate(id: String): Boolean = js.native
   
-  var waitData: js.Promise[_] = js.native
+  var waitData: js.Promise[js.Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
 }

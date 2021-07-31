@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHapgsResponse extends StObject {
   
   /**
     * The list of high-availability partition groups.
     */
-  var HapgList: typings.awsSdk.cloudhsmMod.HapgList = js.native
+  var HapgList: typings.awsSdk.cloudhsmMod.HapgList
   
   /**
     * If not null, more results are available. Pass this value to ListHapgs to retrieve the next set of items.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListHapgsResponse {
   

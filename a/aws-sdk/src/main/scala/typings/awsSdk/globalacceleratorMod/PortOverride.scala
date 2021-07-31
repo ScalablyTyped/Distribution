@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortOverride extends StObject {
   
   /**
     * The endpoint port that you want a listener port to be mapped to. This is the port on the endpoint, such as the Application Load Balancer or Amazon EC2 instance.
     */
-  var EndpointPort: js.UndefOr[PortNumber] = js.native
+  var EndpointPort: js.UndefOr[PortNumber] = js.undefined
   
   /**
     * The listener port that you want to map to a specific endpoint port. This is the port that user traffic arrives to the Global Accelerator on.
     */
-  var ListenerPort: js.UndefOr[PortNumber] = js.native
+  var ListenerPort: js.UndefOr[PortNumber] = js.undefined
 }
 object PortOverride {
   

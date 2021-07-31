@@ -2,26 +2,24 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayPropertiesDetail extends StObject {
   
   /**
     * The job index within the array that is associated with this job. This parameter is returned for array job children.
     */
-  var index: js.UndefOr[Integer] = js.native
+  var index: js.UndefOr[Integer] = js.undefined
   
   /**
     * The size of the array job. This parameter is returned for parent array jobs.
     */
-  var size: js.UndefOr[Integer] = js.native
+  var size: js.UndefOr[Integer] = js.undefined
   
   /**
     * A summary of the number of array job children in each available job status. This parameter is returned for parent array jobs.
     */
-  var statusSummary: js.UndefOr[ArrayJobStatusSummary] = js.native
+  var statusSummary: js.UndefOr[ArrayJobStatusSummary] = js.undefined
 }
 object ArrayPropertiesDetail {
   

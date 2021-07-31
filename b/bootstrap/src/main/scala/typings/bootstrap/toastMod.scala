@@ -3,32 +3,51 @@ package typings.bootstrap
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastMod {
   
   @JSImport("bootstrap/js/dist/toast", JSImport.Default)
   @js.native
-  class default protected () extends Toast {
+  class default protected ()
+    extends StObject
+       with Toast {
     def this(element: Element) = this()
+    
+    /**
+      * Destroys an element’s scrollspy.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * When using scrollspy in conjunction with adding or removing of
+      * elements from the DOM, you’ll need to call the refresh method like
+      * so:
+      */
+    /* CompleteClass */
+    override def refresh(): Unit = js.native
   }
   object default {
+    
+    @JSImport("bootstrap/js/dist/toast", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bootstrap/js/dist/toast", "default.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.toastMod.Toast.Events with String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.toastMod.Toast.Events & String] = js.native
       
-      /* "hidden.bs.toast" */ val hidden: typings.bootstrap.toastMod.Toast.Events.hidden with String = js.native
+      /* "hidden.bs.toast" */ val hidden: typings.bootstrap.toastMod.Toast.Events.hidden & String = js.native
       
-      /* "hide.bs.toast" */ val hide: typings.bootstrap.toastMod.Toast.Events.hide with String = js.native
+      /* "hide.bs.toast" */ val hide: typings.bootstrap.toastMod.Toast.Events.hide & String = js.native
       
-      /* "show.bs.toast" */ val show: typings.bootstrap.toastMod.Toast.Events.show with String = js.native
+      /* "show.bs.toast" */ val show: typings.bootstrap.toastMod.Toast.Events.show & String = js.native
       
-      /* "shown.bs.toast" */ val shown: typings.bootstrap.toastMod.Toast.Events.shown with String = js.native
+      /* "shown.bs.toast" */ val shown: typings.bootstrap.toastMod.Toast.Events.shown & String = js.native
     }
     
     /**
@@ -36,25 +55,23 @@ object toastMod {
       * with a DOM element
       */
     /* static member */
-    @JSImport("bootstrap/js/dist/toast", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Toast = js.native
+    @scala.inline
+    def getInstance(element: Element): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Toast]
   }
   
-  @js.native
   trait Toast extends StObject {
     
     /**
       * Destroys an element’s scrollspy.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * When using scrollspy in conjunction with adding or removing of
       * elements from the DOM, you’ll need to call the refresh method like
       * so:
       */
-    def refresh(): Unit = js.native
+    def refresh(): Unit
   }
   object Toast {
     
@@ -75,29 +92,36 @@ object toastMod {
         * user.
         */
       @js.native
-      sealed trait hidden extends Events
+      sealed trait hidden
+        extends StObject
+           with Events
       
       /**
         * This event is fired immediately when the hide instance method has
         * been called.
         */
       @js.native
-      sealed trait hide extends Events
+      sealed trait hide
+        extends StObject
+           with Events
       
       /**
         * This event fires immediately when the show instance method is called.
         */
       @js.native
-      sealed trait show extends Events
+      sealed trait show
+        extends StObject
+           with Events
       
       /**
         * This event is fired when the toast has been made visible to the user.
         */
       @js.native
-      sealed trait shown extends Events
+      sealed trait shown
+        extends StObject
+           with Events
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -105,21 +129,21 @@ object toastMod {
         *
         * @default true
         */
-      var animation: Boolean = js.native
+      var animation: Boolean
       
       /**
         * Auto hide the toast
         *
         * @default true
         */
-      var autohide: Boolean = js.native
+      var autohide: Boolean
       
       /**
         * Delay hiding the toast (ms)
         *
         * @default 500
         */
-      var delay: Double = js.native
+      var delay: Double
     }
     object Options {
       

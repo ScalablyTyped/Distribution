@@ -2,29 +2,29 @@ package typings.copyToClipboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("copy-to-clipboard", JSImport.Namespace)
-  @js.native
-  def apply(text: String): Boolean = js.native
-  @JSImport("copy-to-clipboard", JSImport.Namespace)
-  @js.native
-  def apply(text: String, options: Options): Boolean = js.native
+  @scala.inline
+  def apply(text: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(text: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  @JSImport("copy-to-clipboard", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     // MIME type
-    var onCopy: js.UndefOr[js.Function1[/* clipboardData */ js.Object, Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function1[/* clipboardData */ js.Object, Unit]] = js.undefined
   }
   object Options {
     

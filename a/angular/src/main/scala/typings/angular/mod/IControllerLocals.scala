@@ -3,7 +3,6 @@ package typings.angular.mod
 import typings.angular.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The minimal local definitions required by $controller(ctrl, locals) calls.
   */
-@js.native
 trait IControllerLocals extends StObject {
   
   @JSName("$element")
-  var $element: JQuery = js.native
+  var $element: JQuery
   
   @JSName("$scope")
-  var $scope: IScope = js.native
+  var $scope: IScope
 }
 object IControllerLocals {
   

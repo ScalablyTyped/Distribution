@@ -4,23 +4,23 @@ import typings.figma.figmaStrings.DROP_SHADOW
 import typings.figma.figmaStrings.INNER_SHADOW
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShadowEffect extends Effect {
+trait ShadowEffect
+  extends StObject
+     with Effect {
   
-  val blendMode: BlendMode = js.native
+  val blendMode: BlendMode
   
-  val color: RGBA = js.native
+  val color: RGBA
   
-  val offset: Vector = js.native
+  val offset: Vector
   
-  val radius: Double = js.native
+  val radius: Double
   
-  val `type`: DROP_SHADOW | INNER_SHADOW = js.native
+  val `type`: DROP_SHADOW | INNER_SHADOW
   
-  val visible: Boolean = js.native
+  val visible: Boolean
 }
 object ShadowEffect {
   

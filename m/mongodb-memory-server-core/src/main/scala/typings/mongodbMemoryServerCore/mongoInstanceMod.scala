@@ -10,14 +10,15 @@ import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.SpawnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongoInstanceMod {
   
   @JSImport("mongodb-memory-server-core/lib/util/MongoInstance", JSImport.Default)
   @js.native
-  class default protected () extends MongoInstance {
+  class default protected ()
+    extends StObject
+       with MongoInstance {
     def this(opts: MongodOps) = this()
   }
   /* static members */
@@ -37,9 +38,8 @@ object mongoInstanceMod {
       * Create an new instance an call method "run"
       * @param opts Options passed to the new instance
       */
-    @JSImport("mongodb-memory-server-core/lib/util/MongoInstance", "default.run")
-    @js.native
-    def run(opts: MongodOps): js.Promise[MongoInstance] = js.native
+    @scala.inline
+    def run(opts: MongodOps): js.Promise[MongoInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoInstance]]
   }
   
   @js.native
@@ -127,14 +127,13 @@ object mongoInstanceMod {
     def waitPrimaryReady(): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait MongodOps extends StObject {
     
-    var binary: js.UndefOr[MongoBinaryOpts] = js.native
+    var binary: js.UndefOr[MongoBinaryOpts] = js.undefined
     
-    var instance: Args = js.native
+    var instance: Args
     
-    var spawn: js.UndefOr[SpawnOptions] = js.native
+    var spawn: js.UndefOr[SpawnOptions] = js.undefined
   }
   object MongodOps {
     

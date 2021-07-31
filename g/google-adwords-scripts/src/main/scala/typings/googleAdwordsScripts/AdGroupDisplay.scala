@@ -2,27 +2,27 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdGroupDisplay extends Display {
+trait AdGroupDisplay
+  extends StObject
+     with Display {
   
-  def excludedAudiences(): AdWordsSelector[ExcludedAudience] = js.native
+  def excludedAudiences(): AdWordsSelector[ExcludedAudience]
   
-  def excludedKeywords(): AdWordsSelector[ExcludedDisplayKeyword] = js.native
+  def excludedKeywords(): AdWordsSelector[ExcludedDisplayKeyword]
   
-  def excludedPlacements(): AdWordsSelector[ExcludedPlacement] = js.native
+  def excludedPlacements(): AdWordsSelector[ExcludedPlacement]
   
-  def excludedTopics(): AdWordsSelector[Topic] = js.native
+  def excludedTopics(): AdWordsSelector[Topic]
   
-  def newAudienceBuilder(): AudienceBuilder[Audience] = js.native
+  def newAudienceBuilder(): AudienceBuilder[Audience]
   
-  def newKeywordBuilder(): DisplayKeywordBuilder[DisplayKeyword] = js.native
+  def newKeywordBuilder(): DisplayKeywordBuilder[DisplayKeyword]
   
-  def newPlacementBuilder(): PlacementBuilder[Placement] = js.native
+  def newPlacementBuilder(): PlacementBuilder[Placement]
   
-  def newTopicBuilder(): TopicBuilder[Topic] = js.native
+  def newTopicBuilder(): TopicBuilder[Topic]
 }
 object AdGroupDisplay {
   

@@ -3,26 +3,24 @@ package typings.pulumiKubernetes.inputMod.apiextensions.v1beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WebhookClientConfig contains the information to make a TLS connection with the webhook.
   */
-@js.native
 trait WebhookClientConfig extends StObject {
   
   /**
     * caBundle is a PEM encoded CA bundle which will be used to validate the webhook's server certificate. If unspecified, system trust roots on the apiserver are used.
     */
-  var caBundle: js.UndefOr[Input[String]] = js.native
+  var caBundle: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * service is a reference to the service for this webhook. Either service or url must be specified.
     *
     * If the webhook is running within the cluster, then you should use `service`.
     */
-  var service: js.UndefOr[Input[ServiceReference]] = js.native
+  var service: js.UndefOr[Input[ServiceReference]] = js.undefined
   
   /**
     * url gives the location of the webhook, in standard URL form (`scheme://host:port/path`). Exactly one of `url` or `service` must be specified.
@@ -37,7 +35,7 @@ trait WebhookClientConfig extends StObject {
     *
     * Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments ("#...") and query parameters ("?...") are not allowed, either.
     */
-  var url: js.UndefOr[Input[String]] = js.native
+  var url: js.UndefOr[Input[String]] = js.undefined
 }
 object WebhookClientConfig {
   

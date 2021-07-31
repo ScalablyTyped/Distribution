@@ -6,51 +6,51 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDataRealtimeGet extends StandardParameters {
+trait ParamsResourceDataRealtimeGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A comma-separated list of real time dimensions. E.g.,
     * 'rt:medium,rt:city'.
     */
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of dimension or metric filters to be applied to
     * real time data.
     */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /**
     * Unique table ID for retrieving real time data. Table ID is of the form
     * ga:XXXX, where XXXX is the Analytics view (profile) ID.
     */
-  var ids: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of entries to include in this feed.
     */
-  var `max-results`: js.UndefOr[Double] = js.native
+  var `max-results`: js.UndefOr[Double] = js.undefined
   
   /**
     * A comma-separated list of real time metrics. E.g., 'rt:activeUsers'. At
     * least one metric must be specified.
     */
-  var metrics: js.UndefOr[String] = js.native
+  var metrics: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of dimensions or metrics that determine the sort
     * order for real time data.
     */
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceDataRealtimeGet {
   

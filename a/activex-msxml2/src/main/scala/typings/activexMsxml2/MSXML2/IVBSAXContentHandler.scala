@@ -2,48 +2,46 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXContentHandler interface */
-@js.native
 trait IVBSAXContentHandler extends StObject {
   
   @JSName("MSXML2.IVBSAXContentHandler_typekey")
-  var MSXML2DotIVBSAXContentHandler_typekey: IVBSAXContentHandler = js.native
+  var MSXML2DotIVBSAXContentHandler_typekey: IVBSAXContentHandler
   
   /** Receive notification of character data. */
-  def characters(strChars: String): Unit = js.native
+  def characters(strChars: String): Unit
   
   /** Receive an object for locating the origin of SAX document events. */
-  val documentLocator: IVBSAXLocator = js.native
+  val documentLocator: IVBSAXLocator
   
   /** Receive notification of the end of a document. */
-  def endDocument(): Unit = js.native
+  def endDocument(): Unit
   
   /** Receive notification of the end of an element. */
-  def endElement(strNamespaceURI: String, strLocalName: String, strQName: String): Unit = js.native
+  def endElement(strNamespaceURI: String, strLocalName: String, strQName: String): Unit
   
   /** End the scope of a prefix-URI mapping. */
-  def endPrefixMapping(strPrefix: String): Unit = js.native
+  def endPrefixMapping(strPrefix: String): Unit
   
   /** Receive notification of ignorable whitespace in element content. */
-  def ignorableWhitespace(strChars: String): Unit = js.native
+  def ignorableWhitespace(strChars: String): Unit
   
   /** Receive notification of a processing instruction. */
-  def processingInstruction(strTarget: String, strData: String): Unit = js.native
+  def processingInstruction(strTarget: String, strData: String): Unit
   
   /** Receive notification of a skipped entity. */
-  def skippedEntity(strName: String): Unit = js.native
+  def skippedEntity(strName: String): Unit
   
   /** Receive notification of the beginning of a document. */
-  def startDocument(): Unit = js.native
+  def startDocument(): Unit
   
   /** Receive notification of the beginning of an element. */
-  def startElement(strNamespaceURI: String, strLocalName: String, strQName: String, oAttributes: IVBSAXAttributes): Unit = js.native
+  def startElement(strNamespaceURI: String, strLocalName: String, strQName: String, oAttributes: IVBSAXAttributes): Unit
   
   /** Begin the scope of a prefix-URI Namespace mapping. */
-  def startPrefixMapping(strPrefix: String, strURI: String): Unit = js.native
+  def startPrefixMapping(strPrefix: String, strURI: String): Unit
 }
 object IVBSAXContentHandler {
   

@@ -11,10 +11,13 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mobx-react-devtools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx-react-devtools", JSImport.Default)
   @js.native
@@ -57,36 +60,31 @@ object mod {
     def this(props: HighlightTimeout, context: js.Any) = this()
   }
   
-  @JSImport("mobx-react-devtools", "configureDevtool")
-  @js.native
-  def configureDevtool(options: GraphEnabled): Unit = js.native
+  @scala.inline
+  def configureDevtool(options: GraphEnabled): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureDevtool")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-react-devtools", "setGraphEnabled")
-  @js.native
-  def setGraphEnabled(enabled: Boolean): Unit = js.native
+  @scala.inline
+  def setGraphEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGraphEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-react-devtools", "setLogEnabled")
-  @js.native
-  def setLogEnabled(enabled: Boolean): Unit = js.native
+  @scala.inline
+  def setLogEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-react-devtools", "setUpdatesEnabled")
-  @js.native
-  def setUpdatesEnabled(enabled: Boolean): Unit = js.native
+  @scala.inline
+  def setUpdatesEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdatesEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type DevTools = Component[IDevToolProps, js.Object, js.Any]
   
-  @js.native
   trait IDevToolProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var highlightTimeout: js.UndefOr[Double] = js.native
+    var highlightTimeout: js.UndefOr[Double] = js.undefined
     
-    var noPanel: js.UndefOr[Boolean] = js.native
+    var noPanel: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[topRight | bottomRight | bottomLeft | topLeft | Bottom] = js.native
+    var position: js.UndefOr[topRight | bottomRight | bottomLeft | topLeft | Bottom] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object IDevToolProps {
     

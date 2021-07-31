@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InformationalUrl extends StObject {
   
   // CDN URL to the application's logo, Read-only.
-  var logoUrl: js.UndefOr[NullableOption[String]] = js.native
+  var logoUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Link to the application's marketing page. For example, https://www.contoso.com/app/marketing
-  var marketingUrl: js.UndefOr[NullableOption[String]] = js.native
+  var marketingUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Link to the application's privacy statement. For example, https://www.contoso.com/app/privacy
-  var privacyStatementUrl: js.UndefOr[NullableOption[String]] = js.native
+  var privacyStatementUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Link to the application's support page. For example, https://www.contoso.com/app/support
-  var supportUrl: js.UndefOr[NullableOption[String]] = js.native
+  var supportUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice
-  var termsOfServiceUrl: js.UndefOr[NullableOption[String]] = js.native
+  var termsOfServiceUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object InformationalUrl {
   

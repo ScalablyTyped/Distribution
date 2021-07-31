@@ -4,43 +4,79 @@ import typings.openfin.environmentMod.Environment
 import typings.openfin.wireMod.PortDiscoveryConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portDiscoveryMod {
   
   @JSImport("openfin/_v2/transport/port-discovery", JSImport.Default)
   @js.native
-  class default protected () extends PortDiscovery {
+  class default protected ()
+    extends StObject
+       with PortDiscovery {
     def this(config: PortDiscoveryConfig, environment: Environment) = this()
-  }
-  
-  @js.native
-  trait PortDiscovery extends StObject {
     
+    /* CompleteClass */
     var cleanup: js.Any = js.native
     
+    /* CompleteClass */
     var createDiscoveryNamedPipe: js.Any = js.native
     
+    /* CompleteClass */
     var createManifest: js.Any = js.native
     
+    /* CompleteClass */
     var environment: js.Any = js.native
     
+    /* CompleteClass */
     var listenDiscoveryMessage: js.Any = js.native
     
+    /* CompleteClass */
     var manifestLocation: js.Any = js.native
     
+    /* CompleteClass */
     var namedPipeName: js.Any = js.native
     
+    /* CompleteClass */
     var namedPipeServer: js.Any = js.native
     
+    /* CompleteClass */
     var pipeConnection: js.Any = js.native
     
-    def retrievePort(): js.Promise[Double] = js.native
+    /* CompleteClass */
+    override def retrievePort(): js.Promise[Double] = js.native
     
+    /* CompleteClass */
     var savedConfig: js.Any = js.native
     
+    /* CompleteClass */
     var timeoutTimer: js.Any = js.native
+  }
+  
+  trait PortDiscovery extends StObject {
+    
+    var cleanup: js.Any
+    
+    var createDiscoveryNamedPipe: js.Any
+    
+    var createManifest: js.Any
+    
+    var environment: js.Any
+    
+    var listenDiscoveryMessage: js.Any
+    
+    var manifestLocation: js.Any
+    
+    var namedPipeName: js.Any
+    
+    var namedPipeServer: js.Any
+    
+    var pipeConnection: js.Any
+    
+    def retrievePort(): js.Promise[Double]
+    
+    var savedConfig: js.Any
+    
+    var timeoutTimer: js.Any
   }
   object PortDiscovery {
     

@@ -7,7 +7,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabComponentMod {
@@ -15,7 +14,7 @@ object tabComponentMod {
   @JSImport("@material/tabs/tab/component", "MDCTab")
   @js.native
   class MDCTab protected () extends MDCComponent[MDCTabFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCTabFoundation, args: js.Any*) = this()
     
     val computedLeft: Double = js.native
@@ -33,23 +32,27 @@ object tabComponentMod {
   /* static members */
   object MDCTab {
     
-    @JSImport("@material/tabs/tab/component", "MDCTab.attachTo")
+    @JSImport("@material/tabs/tab/component", "MDCTab")
     @js.native
-    def attachTo(root: Element): MDCTab = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTab]
   }
   
   type MDCTabFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCTabFoundation], MDCTab]
   
   @js.native
-  trait MDCTabSelectedEvent extends Event {
+  trait MDCTabSelectedEvent
+    extends StObject
+       with Event {
     
     val detail: MDCTabSelectedEventDetail = js.native
   }
   
-  @js.native
   trait MDCTabSelectedEventDetail extends StObject {
     
-    var tab: MDCTab = js.native
+    var tab: MDCTab
   }
   object MDCTabSelectedEventDetail {
     

@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeatMap extends Widget_ {
+trait HeatMap
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -25,15 +26,21 @@ object HeatMap {
     
     //Used to set the associate of tooltip as MouseEnter
     @js.native
-    sealed trait MouseEnter extends Associate
+    sealed trait MouseEnter
+      extends StObject
+         with Associate
     
     //Used to set the associate of tooltip as MouseFollow
     @js.native
-    sealed trait MouseFollow extends Associate
+    sealed trait MouseFollow
+      extends StObject
+         with Associate
     
     //Used to set the associate of tooltip as Target
     @js.native
-    sealed trait Target extends Associate
+    sealed trait Target
+      extends StObject
+         with Associate
   }
   
   @js.native
@@ -44,11 +51,15 @@ object HeatMap {
     
     //Hide the content of the cell
     @js.native
-    sealed trait Hidden extends CellVisibility
+    sealed trait Hidden
+      extends StObject
+         with CellVisibility
     
     //Display the content of the cell
     @js.native
-    sealed trait Visible extends CellVisibility
+    sealed trait Visible
+      extends StObject
+         with CellVisibility
   }
   
   @js.native
@@ -59,15 +70,21 @@ object HeatMap {
     
     //Sets tooltip animation as Fade
     @js.native
-    sealed trait Fade extends Effect
+    sealed trait Fade
+      extends StObject
+         with Effect
     
     //Sets tooltip animation as None
     @js.native
-    sealed trait None extends Effect
+    sealed trait None
+      extends StObject
+         with Effect
     
     //Sets tooltip animation as Slide
     @js.native
-    sealed trait Slide extends Effect
+    sealed trait Slide
+      extends StObject
+         with Effect
   }
   
   @js.native
@@ -78,15 +95,21 @@ object HeatMap {
     
     //Used to display the tooltip horizontally on center side of rows/columns
     @js.native
-    sealed trait Center extends Horizontal
+    sealed trait Center
+      extends StObject
+         with Horizontal
     
     //Used to display the tooltip horizontally on left side of rows/columns
     @js.native
-    sealed trait Left extends Horizontal
+    sealed trait Left
+      extends StObject
+         with Horizontal
     
     //Used to display the tooltip horizontally on right side of rows/columns
     @js.native
-    sealed trait Right extends Horizontal
+    sealed trait Right
+      extends StObject
+         with Horizontal
   }
   
   @js.native
@@ -97,11 +120,15 @@ object HeatMap {
     
     //Scales the graphic content non-uniformly to the width and height of the diagram area
     @js.native
-    sealed trait Gradient extends LegendMode
+    sealed trait Gradient
+      extends StObject
+         with LegendMode
     
     //Used to align the image at the top left of diagram area
     @js.native
-    sealed trait List extends LegendMode
+    sealed trait List
+      extends StObject
+         with LegendMode
   }
   
   @js.native
@@ -112,11 +139,15 @@ object HeatMap {
     
     //Scales the graphic content non-uniformly to the width and height of the diagram area
     @js.native
-    sealed trait Horizontal extends LegendOrientation
+    sealed trait Horizontal
+      extends StObject
+         with LegendOrientation
     
     //Used to align the image at the top left of diagram area
     @js.native
-    sealed trait Vertical extends LegendOrientation
+    sealed trait Vertical
+      extends StObject
+         with LegendOrientation
   }
   
   @js.native
@@ -127,19 +158,27 @@ object HeatMap {
     
     //Defines a line through the text
     @js.native
-    sealed trait LineThrough extends TextDecoration
+    sealed trait LineThrough
+      extends StObject
+         with TextDecoration
     
     //Defines a normal text. This is default
     @js.native
-    sealed trait None extends TextDecoration
+    sealed trait None
+      extends StObject
+         with TextDecoration
     
     //Defines a line above the text
     @js.native
-    sealed trait Overline extends TextDecoration
+    sealed trait Overline
+      extends StObject
+         with TextDecoration
     
     //Defines a line below the text
     @js.native
-    sealed trait Underline extends TextDecoration
+    sealed trait Underline
+      extends StObject
+         with TextDecoration
   }
   
   @js.native
@@ -150,11 +189,15 @@ object HeatMap {
     
     //Tooltip can be triggered on mouse click
     @js.native
-    sealed trait Click extends Trigger
+    sealed trait Click
+      extends StObject
+         with Trigger
     
     //Tooltip can be triggered on mouse hovers
     @js.native
-    sealed trait Hover extends Trigger
+    sealed trait Hover
+      extends StObject
+         with Trigger
   }
   
   @js.native
@@ -165,31 +208,36 @@ object HeatMap {
     
     //Used to display the tooltip horizontally on right side of rows/columns
     @js.native
-    sealed trait Bottom extends Vertical
+    sealed trait Bottom
+      extends StObject
+         with Vertical
     
     //Used to display the tooltip horizontally on center side of rows/columns
     @js.native
-    sealed trait Center extends Vertical
+    sealed trait Center
+      extends StObject
+         with Vertical
     
     //Used to display the tooltip horizontally on left side of rows/columns
     @js.native
-    sealed trait Top extends Vertical
+    sealed trait Top
+      extends StObject
+         with Vertical
   }
   
-  @js.native
   trait CellMouseEnterEventArgs extends StObject {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Value displayed on the cell
       */
-    var cellValue: js.UndefOr[String] = js.native
+    var cellValue: js.UndefOr[String] = js.undefined
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
   }
   object CellMouseEnterEventArgs {
     
@@ -222,20 +270,19 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait CellMouseLeaveEventArgs extends StObject {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Value displayed on the cell
       */
-    var cellValue: js.UndefOr[String] = js.native
+    var cellValue: js.UndefOr[String] = js.undefined
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
   }
   object CellMouseLeaveEventArgs {
     
@@ -268,20 +315,19 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait CellMouseOverEventArgs extends StObject {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Value displayed on the cell
       */
-    var cellValue: js.UndefOr[String] = js.native
+    var cellValue: js.UndefOr[String] = js.undefined
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
   }
   object CellMouseOverEventArgs {
     
@@ -314,20 +360,19 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait CellSelectedEventArgs extends StObject {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Value displayed on the cell
       */
-    var cellValue: js.UndefOr[String] = js.native
+    var cellValue: js.UndefOr[String] = js.undefined
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
   }
   object CellSelectedEventArgs {
     
@@ -360,23 +405,22 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ColorMappingCollection extends StObject {
     
     /** Specifies the color of the heat map column data.
       * @Default {white}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the label properties of the heat map color.
       * @Default {null}
       */
-    var label: js.UndefOr[ColorMappingCollectionLabel] = js.native
+    var label: js.UndefOr[ColorMappingCollectionLabel] = js.undefined
     
     /** Specifies the color values of the heat map column data.
       * @Default {0}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ColorMappingCollection {
     
@@ -409,42 +453,41 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ColorMappingCollectionLabel extends StObject {
     
     /** Enables/disables the bold style of the heat map label.
       * @Default {false}
       */
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the font color of the heat map label.
       * @Default {black}
       */
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the font family of the heat map label.
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font size of the heat map label.
       * @Default {10}
       */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
     /** Enables/disables the italic style of the heat map label.
       * @Default {false}
       */
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
     /** specifies the text value of the heat map label.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the text style of the heat map label.
       * @Default {ej.HeatMap.TextDecoration.None}
       */
-    var textDecoration: js.UndefOr[TextDecoration | String] = js.native
+    var textDecoration: js.UndefOr[TextDecoration | String] = js.undefined
   }
   object ColorMappingCollectionLabel {
     
@@ -501,21 +544,20 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait DefaultColumnStyle extends StObject {
     
     /** Specifies the template id of the heat map column header.
       */
-    var headerTemplateID: js.UndefOr[String] = js.native
+    var headerTemplateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the template id of all individual cell data of the heat map.
       */
-    var templateID: js.UndefOr[String] = js.native
+    var templateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment mode of the heat map column.
       * @Default {ej.HeatMap.TextAlign.Center}
       */
-    var textAlign: js.UndefOr[js.Any] = js.native
+    var textAlign: js.UndefOr[js.Any] = js.undefined
   }
   object DefaultColumnStyle {
     
@@ -548,18 +590,17 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait HeatMapCell extends StObject {
     
     /** Specifies whether the cell color can be visible or not.
       * @Default {true}
       */
-    var showColor: js.UndefOr[Boolean] = js.native
+    var showColor: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the cell content can be visible or not.
       * @Default {ej.HeatMap.CellVisibility.Visible}
       */
-    var showContent: js.UndefOr[CellVisibility | String] = js.native
+    var showContent: js.UndefOr[CellVisibility | String] = js.undefined
   }
   object HeatMapCell {
     
@@ -586,38 +627,37 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ItemsMapping extends StObject {
     
     /** Specifies the property and display value of the column.
       * @Default {null}
       */
-    var column: js.UndefOr[ItemsMappingColumn] = js.native
+    var column: js.UndefOr[ItemsMappingColumn] = js.undefined
     
     /** Specifies the property and display value of the collection of column.
       * @Default {[]}
       */
-    var columnMapping: js.UndefOr[js.Array[_]] = js.native
+    var columnMapping: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Column settings for the individual heat map column.
       * @Default {null}
       */
-    var columnStyle: js.UndefOr[ItemsMappingColumnStyle] = js.native
+    var columnStyle: js.UndefOr[ItemsMappingColumnStyle] = js.undefined
     
     /** Specifies the property and display value of the header.
       * @Default {null}
       */
-    var headerMapping: js.UndefOr[ItemsMappingHeaderMapping] = js.native
+    var headerMapping: js.UndefOr[ItemsMappingHeaderMapping] = js.undefined
     
     /** Specifies the row property and display value of the heat map.
       * @Default {null}
       */
-    var row: js.UndefOr[ItemsMappingRow] = js.native
+    var row: js.UndefOr[ItemsMappingRow] = js.undefined
     
     /** Specifies the property and display value of the column value.
       * @Default {null}
       */
-    var value: js.UndefOr[ItemsMappingValue] = js.native
+    var value: js.UndefOr[ItemsMappingValue] = js.undefined
   }
   object ItemsMapping {
     
@@ -634,7 +674,7 @@ object HeatMap {
       def setColumn(value: ItemsMappingColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setColumnMapping(value: js.Array[_]): Self = StObject.set(x, "columnMapping", value.asInstanceOf[js.Any])
+      def setColumnMapping(value: js.Array[js.Any]): Self = StObject.set(x, "columnMapping", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnMappingUndefined: Self = StObject.set(x, "columnMapping", js.undefined)
@@ -671,16 +711,15 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ItemsMappingColumn extends StObject {
     
     /** Specifies the value of the column or row.
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the column or row.
       */
-    var propertyName: js.UndefOr[String] = js.native
+    var propertyName: js.UndefOr[String] = js.undefined
   }
   object ItemsMappingColumn {
     
@@ -707,26 +746,25 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ItemsMappingColumnStyle extends StObject {
     
     /** Specifies the template id of the column header.
       */
-    var headerTemplateID: js.UndefOr[String] = js.native
+    var headerTemplateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the template id of all individual cell data.
       */
-    var templateID: js.UndefOr[String] = js.native
+    var templateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the text align mode of the heat map column.
       * @Default {ej.HeatMap.TextAlign.Center}
       */
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the heat map column.
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ItemsMappingColumnStyle {
     
@@ -765,21 +803,20 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ItemsMappingHeaderMapping extends StObject {
     
     /** Specifies the property and display value of the header.
       * @Default {null}
       */
-    var columnStyle: js.UndefOr[js.Any] = js.native
+    var columnStyle: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the value of the column or row.
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the column or row.
       */
-    var propertyName: js.UndefOr[String] = js.native
+    var propertyName: js.UndefOr[String] = js.undefined
   }
   object ItemsMappingHeaderMapping {
     
@@ -812,16 +849,15 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ItemsMappingRow extends StObject {
     
     /** Specifies the value of the column or row.
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the column or row.
       */
-    var propertyName: js.UndefOr[String] = js.native
+    var propertyName: js.UndefOr[String] = js.undefined
   }
   object ItemsMappingRow {
     
@@ -848,16 +884,15 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait ItemsMappingValue extends StObject {
     
     /** Specifies the value of the column or row.
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the column or row.
       */
-    var propertyName: js.UndefOr[String] = js.native
+    var propertyName: js.UndefOr[String] = js.undefined
   }
   object ItemsMappingValue {
     
@@ -884,88 +919,87 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggered when the mouse over on the cell.
       */
-    var cellMouseEnter: js.UndefOr[js.Function1[/* e */ CellMouseEnterEventArgs, Unit]] = js.native
+    var cellMouseEnter: js.UndefOr[js.Function1[/* e */ CellMouseEnterEventArgs, Unit]] = js.undefined
     
     /** Triggered when the mouse over on the cell.
       */
-    var cellMouseLeave: js.UndefOr[js.Function1[/* e */ CellMouseLeaveEventArgs, Unit]] = js.native
+    var cellMouseLeave: js.UndefOr[js.Function1[/* e */ CellMouseLeaveEventArgs, Unit]] = js.undefined
     
     /** Triggered when the mouse over on the cell.
       */
-    var cellMouseOver: js.UndefOr[js.Function1[/* e */ CellMouseOverEventArgs, Unit]] = js.native
+    var cellMouseOver: js.UndefOr[js.Function1[/* e */ CellMouseOverEventArgs, Unit]] = js.undefined
     
     /** Triggered when the mouse over on the cell.
       */
-    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.native
+    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.undefined
     
     /** Specifies the color values of the heat map column data.
       * @Default {[]}
       */
-    var colorMappingCollection: js.UndefOr[js.Array[ColorMappingCollection]] = js.native
+    var colorMappingCollection: js.UndefOr[js.Array[ColorMappingCollection]] = js.undefined
     
     /** Specifies the default column properties for all the column style not specified in column properties.
       * @Default {[]}
       */
-    var defaultColumnStyle: js.UndefOr[DefaultColumnStyle] = js.native
+    var defaultColumnStyle: js.UndefOr[DefaultColumnStyle] = js.undefined
     
     /** Specifies whether the virtualization can be enable or not.
       * @Default {false}
       */
-    var enableVirtualization: js.UndefOr[Boolean] = js.native
+    var enableVirtualization: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the property of the heat map cell.
       * @Default {Null}
       */
-    var heatMapCell: js.UndefOr[HeatMapCell] = js.native
+    var heatMapCell: js.UndefOr[HeatMapCell] = js.undefined
     
     /** Specifies the width of the heat map.
       * @Default {null}
       */
-    var height: js.UndefOr[js.Any] = js.native
+    var height: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the name of the heat map.
       * @Default {null}
       */
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
     /** Specifies can enable responsive mode or not for heat map.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the property and display value of the heat map column.
       * @Default {[]}
       */
-    var itemsMapping: js.UndefOr[ItemsMapping] = js.native
+    var itemsMapping: js.UndefOr[ItemsMapping] = js.undefined
     
     /** Specifies the source data of the heat map.
       * @Default {[]}
       */
-    var itemsSource: js.UndefOr[js.Any] = js.native
+    var itemsSource: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the no of legends can sync with heat map.
       * @Default {[]}
       */
-    var legendCollection: js.UndefOr[js.Array[_]] = js.native
+    var legendCollection: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Enables or disables tooltip of heatmap
       * @Default {true}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over rows/columns.
       */
-    var tooltipSettings: js.UndefOr[TooltipSettings] = js.native
+    var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Specifies the width of the heat map.
       * @Default {null}
       */
-    var width: js.UndefOr[js.Any] = js.native
+    var width: js.UndefOr[js.Any] = js.undefined
   }
   object Model {
     
@@ -1060,7 +1094,7 @@ object HeatMap {
       def setItemsSourceUndefined: Self = StObject.set(x, "itemsSource", js.undefined)
       
       @scala.inline
-      def setLegendCollection(value: js.Array[_]): Self = StObject.set(x, "legendCollection", value.asInstanceOf[js.Any])
+      def setLegendCollection(value: js.Array[js.Any]): Self = StObject.set(x, "legendCollection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLegendCollectionUndefined: Self = StObject.set(x, "legendCollection", js.undefined)
@@ -1088,36 +1122,35 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait TooltipSettings extends StObject {
     
     /** Defines the animation for the tooltip that should be shown when the mouse hovers over rows/columns.
       */
-    var animation: js.UndefOr[TooltipSettingsAnimation] = js.native
+    var animation: js.UndefOr[TooltipSettingsAnimation] = js.undefined
     
     /** Defines the tooltip of associate that should be shown when the mouse hovers over rows/columns.
       * @Default {mouseFollow}
       */
-    var associate: js.UndefOr[Associate | String] = js.native
+    var associate: js.UndefOr[Associate | String] = js.undefined
     
     /** Enables/ disables the balloon for the tooltip to be shown
       * @Default {true}
       */
-    var isBalloon: js.UndefOr[Boolean] = js.native
+    var isBalloon: js.UndefOr[Boolean] = js.undefined
     
     /** Defines various attributes of the Tooltip position
       */
-    var position: js.UndefOr[TooltipSettingsPosition] = js.native
+    var position: js.UndefOr[TooltipSettingsPosition] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over rows/columns.
       * @Default {null}
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
     
     /** Defines the tooltip to be triggered.
       * @Default {hover}
       */
-    var trigger: js.UndefOr[Trigger | String] = js.native
+    var trigger: js.UndefOr[Trigger | String] = js.undefined
   }
   object TooltipSettings {
     
@@ -1168,18 +1201,17 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait TooltipSettingsAnimation extends StObject {
     
     /** Defines the animation effect for the tooltip that should be shown when the mouse hovers over rows/columns.
       * @Default {none}
       */
-    var effect: js.UndefOr[Effect | String] = js.native
+    var effect: js.UndefOr[Effect | String] = js.undefined
     
     /** Defines the animation speed for the tooltip that should be shown when the mouse hovers over rows/columns.
       * @Default {0}
       */
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object TooltipSettingsAnimation {
     
@@ -1206,16 +1238,15 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait TooltipSettingsPosition extends StObject {
     
     /** Sets the arrow position again popup.
       */
-    var stem: js.UndefOr[TooltipSettingsPositionStem] = js.native
+    var stem: js.UndefOr[TooltipSettingsPositionStem] = js.undefined
     
     /** Sets the Tooltip position against target.
       */
-    var target: js.UndefOr[TooltipSettingsPositionTarget] = js.native
+    var target: js.UndefOr[TooltipSettingsPositionTarget] = js.undefined
   }
   object TooltipSettingsPosition {
     
@@ -1242,18 +1273,17 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait TooltipSettingsPositionStem extends StObject {
     
     /** Sets the arrow position again popup based on horizontal(x) value
       * @Default {center}
       */
-    var horizontal: js.UndefOr[Horizontal | String] = js.native
+    var horizontal: js.UndefOr[Horizontal | String] = js.undefined
     
     /** Sets the arrow position again popup based on vertical(y) value
       * @Default {bottom}
       */
-    var vertical: js.UndefOr[Vertical | String] = js.native
+    var vertical: js.UndefOr[Vertical | String] = js.undefined
   }
   object TooltipSettingsPositionStem {
     
@@ -1280,18 +1310,17 @@ object HeatMap {
     }
   }
   
-  @js.native
   trait TooltipSettingsPositionTarget extends StObject {
     
     /** Sets the arrow position again popup based on horizontal(x) value
       * @Default {center}
       */
-    var horizontal: js.UndefOr[Horizontal | String] = js.native
+    var horizontal: js.UndefOr[Horizontal | String] = js.undefined
     
     /** Sets the arrow position again popup based on vertical(y) value
       * @Default {top}
       */
-    var vertical: js.UndefOr[Vertical | String] = js.native
+    var vertical: js.UndefOr[Vertical | String] = js.undefined
   }
   object TooltipSettingsPositionTarget {
     

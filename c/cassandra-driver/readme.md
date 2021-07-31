@@ -10,9 +10,9 @@ DataStax Node.js Driver for Apache Cassandra
 | ------------------ | :-------------: |
 | Full name          | cassandra-driver |
 | Keywords           | cassandra, cql, cql3, connection, gremlin, datastax, nosql, driver, database, dse, graph, graphdb |
-| # releases         | 12 |
-| # dependents       | 146 |
-| # downloads        | 1835048 |
+| # releases         | 11 |
+| # dependents       | 154 |
+| # downloads        | 1940828 |
 | # stars            | 23 |
 
 ## Links

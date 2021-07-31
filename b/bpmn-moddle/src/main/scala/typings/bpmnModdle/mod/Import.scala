@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Import extends TypeDerived {
+trait Import
+  extends StObject
+     with TypeDerived {
   
-  var importType: String = js.native
+  var importType: String
   
-  var location: String = js.native
+  var location: String
   
-  var namespace: String = js.native
+  var namespace: String
 }
 object Import {
   

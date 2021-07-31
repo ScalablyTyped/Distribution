@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,23 +17,31 @@ object Index extends StObject {
     * Represents the first PowerPoint slide
     */
   @js.native
-  sealed trait First extends Index
+  sealed trait First
+    extends StObject
+       with Index
   
   /**
     * Represents the last PowerPoint slide
     */
   @js.native
-  sealed trait Last extends Index
+  sealed trait Last
+    extends StObject
+       with Index
   
   /**
     * Represents the next PowerPoint slide
     */
   @js.native
-  sealed trait Next extends Index
+  sealed trait Next
+    extends StObject
+       with Index
   
   /**
     * Represents the previous PowerPoint slide
     */
   @js.native
-  sealed trait Previous extends Index
+  sealed trait Previous
+    extends StObject
+       with Index
 }

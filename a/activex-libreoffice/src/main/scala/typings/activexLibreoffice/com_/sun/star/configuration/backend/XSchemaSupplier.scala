@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to configuration component schemas.
   * @since OOo 1.1.2
   */
-@js.native
-trait XSchemaSupplier extends XInterface {
+trait XSchemaSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the schema information (component + templates) for a particular component.
@@ -21,7 +21,7 @@ trait XSchemaSupplier extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getComponentSchema(aComponent: String): XSchema = js.native
+  def getComponentSchema(aComponent: String): XSchema
 }
 object XSchemaSupplier {
   

@@ -4,7 +4,6 @@ import typings.zipkin.anon.CtxImpl
 import typings.zipkin.mod.option.IOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zipkin", "Tracer")
@@ -17,7 +16,7 @@ class Tracer protected () extends StObject {
   def createChildId(parentId: TraceId): TraceId = js.native
   
   def createRootId(): TraceId = js.native
-  def createRootId(isSampled: js.UndefOr[scala.Nothing], isDebug: Boolean): TraceId = js.native
+  def createRootId(isSampled: Unit, isDebug: Boolean): TraceId = js.native
   def createRootId(isSampled: IOption[Boolean]): TraceId = js.native
   def createRootId(isSampled: IOption[Boolean], isDebug: Boolean): TraceId = js.native
   

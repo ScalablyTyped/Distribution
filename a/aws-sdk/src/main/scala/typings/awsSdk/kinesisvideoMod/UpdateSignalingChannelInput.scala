@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSignalingChannelInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the signaling channel that you want to update.
     */
-  var ChannelARN: ResourceARN = js.native
+  var ChannelARN: ResourceARN
   
   /**
     * The current version of the signaling channel that you want to update.
     */
-  var CurrentVersion: Version = js.native
+  var CurrentVersion: Version
   
   /**
     * The structure containing the configuration for the SINGLE_MASTER type of the signaling channel that you want to update. 
     */
-  var SingleMasterConfiguration: js.UndefOr[typings.awsSdk.kinesisvideoMod.SingleMasterConfiguration] = js.native
+  var SingleMasterConfiguration: js.UndefOr[typings.awsSdk.kinesisvideoMod.SingleMasterConfiguration] = js.undefined
 }
 object UpdateSignalingChannelInput {
   

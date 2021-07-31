@@ -2,15 +2,13 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerStreamResponseOptions extends StObject {
   
-  var endStream: js.UndefOr[Boolean] = js.native
+  var endStream: js.UndefOr[Boolean] = js.undefined
   
-  var waitForTrailers: js.UndefOr[Boolean] = js.native
+  var waitForTrailers: js.UndefOr[Boolean] = js.undefined
 }
 object ServerStreamResponseOptions {
   

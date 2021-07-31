@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regularexpressionsMod {
@@ -63,9 +62,8 @@ object regularexpressionsMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/regularexpressions", "regularexpressions.RegularExpression.createIn")
-      @js.native
-      def createIn(container: IFolderBase): RegularExpression = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): RegularExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RegularExpression]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/regularexpressions", "regularexpressions.RegularExpression.structureTypeName")
@@ -89,6 +87,8 @@ object regularexpressionsMod {
       * See: {@link https://docs.mendix.com/refguide/regular-expressions relevant section in reference guide}
       */
     @js.native
-    trait IRegularExpression extends IDocument
+    trait IRegularExpression
+      extends StObject
+         with IDocument
   }
 }

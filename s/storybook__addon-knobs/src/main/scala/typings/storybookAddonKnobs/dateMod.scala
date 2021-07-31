@@ -8,7 +8,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateMod {
@@ -29,13 +28,11 @@ object dateMod {
     @scala.inline
     def defaultProps_=(x: DateTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Date", "default.deserialize")
-    @js.native
-    def deserialize(value: DateTypeKnobValue): Double = js.native
+    @scala.inline
+    def deserialize(value: DateTypeKnobValue): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Date", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(): Valid = js.native
+    @scala.inline
+    def getDerivedStateFromProps(): Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")().asInstanceOf[Valid]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Date", "default.propTypes")
     @js.native
@@ -43,9 +40,8 @@ object dateMod {
     @scala.inline
     def propTypes_=(x: KnobOnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Date", "default.serialize")
-    @js.native
-    def serialize(value: DateTypeKnobValue): Double = js.native
+    @scala.inline
+    def serialize(value: DateTypeKnobValue): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @js.native
@@ -70,10 +66,9 @@ object dateMod {
   
   type DateTypeProps = KnobControlProps[DateTypeKnobValue]
   
-  @js.native
   trait DateTypeState extends StObject {
     
-    var valid: js.UndefOr[Boolean] = js.native
+    var valid: js.UndefOr[Boolean] = js.undefined
   }
   object DateTypeState {
     

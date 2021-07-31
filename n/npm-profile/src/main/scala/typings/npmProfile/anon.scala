@@ -4,17 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.npmProfile.mod._TFAStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any]
+    extends StObject
+       with /* key */ StringDictionary[js.Any]
        with _TFAStatus {
     
-    var pending: Boolean = js.native
+    var pending: Boolean
   }
   object Dictkey {
     

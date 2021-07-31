@@ -25,7 +25,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,7 +34,9 @@ object mod {
     */
   @JSImport("photoswipe", JSImport.Namespace)
   @js.native
-  class ^[T /* <: Options */] protected () extends PhotoSwipe[T] {
+  class ^[T /* <: Options */] protected ()
+    extends StObject
+       with PhotoSwipe[T] {
     /**
       * Constructs a PhotoSwipe.
       *
@@ -60,64 +61,63 @@ object mod {
     def this(pswpElement: HTMLElement, uiConstructor: Boolean, items: js.Array[Item], options: T) = this()
   }
   
-  @js.native
   trait Item extends StObject {
     
     /**
       * Internal property added by PhotoSwipe.
       */
-    var bounds: js.UndefOr[js.Any] = js.native
+    var bounds: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Internal property added by PhotoSwipe.
       * This number is computed to be this item's smaller dimension divided by the larger dimension.
       */
-    var fitRatio: js.UndefOr[Double] = js.native
+    var fitRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * The height of this image.
       */
-    var h: js.UndefOr[Double] = js.native
+    var h: js.UndefOr[Double] = js.undefined
     
     /**
       * HTML content instead of image.
       */
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
     /**
       * Internal property added by PhotoSwipe.
       */
-    var initialPosition: js.UndefOr[js.Any] = js.native
+    var initialPosition: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Internal property added by PhotoSwipe.
       */
-    var initialZoomLevel: js.UndefOr[Double] = js.native
+    var initialZoomLevel: js.UndefOr[Double] = js.undefined
     
     /**
       * Internal property added by PhotoSwipe.
       */
-    var loadError: js.UndefOr[Boolean] = js.native
+    var loadError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The url to small image placeholder, large image will be loaded on top
       */
-    var msrc: js.UndefOr[String] = js.native
+    var msrc: js.UndefOr[String] = js.undefined
     
     /**
       * The url of this image.
       */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
     /**
       * Internal property added by PhotoSwipe.
       */
-    var vGap: js.UndefOr[Top] = js.native
+    var vGap: js.UndefOr[Top] = js.undefined
     
     /**
       * The width of this image.
       */
-    var w: js.UndefOr[Double] = js.native
+    var w: js.UndefOr[Double] = js.undefined
   }
   object Item {
     
@@ -198,7 +198,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -207,14 +206,14 @@ object mod {
       *
       * Default true.
       */
-    var allowNoPanText: js.UndefOr[Boolean] = js.native
+    var allowNoPanText: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Keyboard left or right arrow key navigation. Option can be changed dynamically (yourPhotoSwipeInstance.options.arrowKeys = false;).
       *
       * Default true.
       */
-    var arrowKeys: js.UndefOr[Boolean] = js.native
+    var arrowKeys: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Background (.pswp__bg) opacity.
@@ -223,21 +222,21 @@ object mod {
       *
       * Default 1.
       */
-    var bgOpacity: js.UndefOr[Double] = js.native
+    var bgOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * Close gallery on page scroll. Option works just for devices without hardware touch support.
       *
       * Default true.
       */
-    var closeOnScroll: js.UndefOr[Boolean] = js.native
+    var closeOnScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Close gallery when dragging vertically and when image is not zoomed. Always false when mouse is used.
       *
       * Default true.
       */
-    var closeOnVerticalDrag: js.UndefOr[Boolean] = js.native
+    var closeOnVerticalDrag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Error message when image was not loaded. %url% will be replaced by URL of image.
@@ -246,28 +245,28 @@ object mod {
       *
       * <div class="pswp__error-msg"><a href="%url%" target="_blank">The image</a> could not be loaded.</div>
       */
-    var errorMsg: js.UndefOr[String] = js.native
+    var errorMsg: js.UndefOr[String] = js.undefined
     
     /**
       * esc keyboard key to close PhotoSwipe. Option can be changed dynamically (yourPhotoSwipeInstance.options.escKey = false;).
       *
       * Default true.
       */
-    var escKey: js.UndefOr[Boolean] = js.native
+    var escKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will set focus on PhotoSwipe element after it's open.
       *
       * Default true.
       */
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Gallery unique ID. Used by History module when forming URL. For example, second picture of gallery with UID 1 will have URL: http://example.com/#&gid=1&pid=2.
       *
       * Default 1.
       */
-    var galleryUID: js.UndefOr[Double] = js.native
+    var galleryUID: js.UndefOr[Double] = js.undefined
     
     /**
       * Function should return zoom level to which image will be zoomed after double-tap gesture, or when user clicks on zoom icon, or mouse-click on image itself.
@@ -305,14 +304,14 @@ object mod {
       *     }
       * }
       */
-    var getDoubleTapZoom: js.UndefOr[js.Function2[/* isMouseClick */ Boolean, /* item */ Item, Double]] = js.native
+    var getDoubleTapZoom: js.UndefOr[js.Function2[/* isMouseClick */ Boolean, /* item */ Item, Double]] = js.undefined
     
     /**
       * Function that should return total number of items in gallery. Don't put very complex code here, function is executed very often.
       *
       * By default it returns length of slides array.
       */
-    var getNumItemsFn: js.UndefOr[js.Function0[Double]] = js.native
+    var getNumItemsFn: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /**
       * Function should return an object with coordinates from which initial zoom-in animation will start (or zoom-out animation will end).
@@ -323,7 +322,7 @@ object mod {
       *
       * Default undefined.
       */
-    var getThumbBoundsFn: js.UndefOr[js.Function1[/* index */ Double, W]] = js.native
+    var getThumbBoundsFn: js.UndefOr[js.Function1[/* index */ Double, W]] = js.undefined
     
     /**
       * The same as the previous option, just for closing (zoom-out) transition.
@@ -331,21 +330,21 @@ object mod {
       *
       * Default 333.
       */
-    var hideAnimationDuration: js.UndefOr[Double] = js.native
+    var hideAnimationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to false disables history module (back button to close gallery, unique URL for each slide). You can also just exclude history.js module from your build.
       *
       * Default true.
       */
-    var history: js.UndefOr[Boolean] = js.native
+    var history: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Start slide index. 0 is the first slide. Must be integer, not a string.
       *
       * Default 0.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Function should check if the element (el) is clickable.
@@ -358,7 +357,7 @@ object mod {
       *     return el.tagName === 'A';
       * }
       */
-    var isClickableElement: js.UndefOr[js.Function1[/* el */ HTMLElement, Boolean]] = js.native
+    var isClickableElement: js.UndefOr[js.Function1[/* el */ HTMLElement, Boolean]] = js.undefined
     
     /**
       * Loop slides when using swipe gesture.If set to true you'll be able to swipe from last to first image.
@@ -367,19 +366,19 @@ object mod {
       *
       * Default true.
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String with name of class that will be added to root element of PhotoSwipe (.pswp). Can contain multiple classes separated by space.
       */
-    var mainClass: js.UndefOr[String] = js.native
+    var mainClass: js.UndefOr[String] = js.undefined
     
     /**
       * NOTE: this property will be ignored in future versions of PhotoSwipe.
       *
       * @deprecated
       */
-    var mainScrollEndFriction: js.UndefOr[Double] = js.native
+    var mainScrollEndFriction: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum zoom level when performing spread (zoom) gesture. 2 means that image can be zoomed 2x from original size.
@@ -387,14 +386,14 @@ object mod {
       *
       * Default 2.
       */
-    var maxSpreadZoom: js.UndefOr[Double] = js.native
+    var maxSpreadZoom: js.UndefOr[Double] = js.undefined
     
     /**
       * Controls whether PhotoSwipe should expand to take up the entire viewport.
       * If false, the PhotoSwipe element will take the size of the positioned parent of the template. Take a look at the FAQ for more
       * information.
       */
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Option allows you to predefine if mouse was used or not.
@@ -403,21 +402,21 @@ object mod {
       *
       * default false.
       */
-    var mouseUsed: js.UndefOr[Boolean] = js.native
+    var mouseUsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * NOTE: this property will be ignored in future versions of PhotoSwipe.
       *
       * @deprecated
       */
-    var panEndFriction: js.UndefOr[Double] = js.native
+    var panEndFriction: js.UndefOr[Double] = js.undefined
     
     /**
       * Pinch to close gallery gesture. The gallery’s background will gradually fade out as the user zooms out. When the gesture is complete, the gallery will close.
       *
       * Default true.
       */
-    var pinchToClose: js.UndefOr[Boolean] = js.native
+    var pinchToClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Lazy loading of nearby slides based on direction of movement.
@@ -426,7 +425,7 @@ object mod {
       *
       * Default [1, 1].
       */
-    var preload: js.UndefOr[js.Array[Double]] = js.native
+    var preload: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Initial zoom-in transition duration in milliseconds. Set to 0 to disable. Besides this JS option, you need also to change transition duration in PhotoSwipe CSS file:
@@ -442,7 +441,7 @@ object mod {
       *
       * Default 333.
       */
-    var showAnimationDuration: js.UndefOr[Double] = js.native
+    var showAnimationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to false background opacity and image scale will be animated (image opacity is always 1).
@@ -451,14 +450,14 @@ object mod {
       *
       * Default false.
       */
-    var showHideOpacity: js.UndefOr[Boolean] = js.native
+    var showHideOpacity: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Spacing ratio between slides. For example, 0.12 will render as a 12% of sliding viewport width (rounded).
       *
       * Default 0.12.
       */
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -917,13 +916,6 @@ object mod {
       destZoomLevel: Double,
       centerPoint: X,
       speed: Double,
-      easingFn: js.UndefOr[scala.Nothing],
-      updateFn: js.Function1[/* now */ Double, Unit]
-    ): Unit = js.native
-    def zoomTo(
-      destZoomLevel: Double,
-      centerPoint: X,
-      speed: Double,
       easingFn: js.Function1[/* k */ Double, Double]
     ): Unit = js.native
     def zoomTo(
@@ -933,15 +925,21 @@ object mod {
       easingFn: js.Function1[/* k */ Double, Double],
       updateFn: js.Function1[/* now */ Double, Unit]
     ): Unit = js.native
+    def zoomTo(
+      destZoomLevel: Double,
+      centerPoint: X,
+      speed: Double,
+      easingFn: Unit,
+      updateFn: js.Function1[/* now */ Double, Unit]
+    ): Unit = js.native
   }
   
-  @js.native
   trait UI[T /* <: Options */] extends StObject {
     
     /**
       * Called by PhotoSwipe after it constructs the UI.
       */
-    def init(): Unit = js.native
+    def init(): Unit
   }
   object UI {
     
@@ -952,7 +950,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class UIMutableBuilder[Self <: UI[_], T /* <: Options */] (val x: Self with UI[T]) extends AnyVal {
+    implicit class UIMutableBuilder[Self <: UI[?], T /* <: Options */] (val x: Self & UI[T]) extends AnyVal {
       
       @scala.inline
       def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))

@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the file manager's FileManagerToolbarItemBase object.
   */
-@js.native
-trait ASPxClientFileManagerToolbarItem extends ASPxClientMenuItem
+trait ASPxClientFileManagerToolbarItem
+  extends StObject
+     with ASPxClientMenuItem
 object ASPxClientFileManagerToolbarItem {
   
   @scala.inline

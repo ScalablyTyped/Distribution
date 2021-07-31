@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageEntity extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var `type`: MessageEntityType = js.native
+  var `type`: MessageEntityType
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
 }
 object MessageEntity {
   

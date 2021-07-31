@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileManagerPreviewPane extends StObject {
   
-  var metaFields: js.UndefOr[js.Any] = js.native
+  var metaFields: js.UndefOr[js.Any] = js.undefined
   
-  var multipleFilesTemplate: js.UndefOr[String | js.Function] = js.native
+  var multipleFilesTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var noFileTemplate: js.UndefOr[String | js.Function] = js.native
+  var noFileTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var singleFileTemplate: js.UndefOr[String | js.Function] = js.native
+  var singleFileTemplate: js.UndefOr[String | js.Function] = js.undefined
 }
 object FileManagerPreviewPane {
   

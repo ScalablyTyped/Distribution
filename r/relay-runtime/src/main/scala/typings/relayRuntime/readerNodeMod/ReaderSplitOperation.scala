@@ -3,20 +3,20 @@ package typings.relayRuntime.readerNodeMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderSplitOperation extends ReaderSelectableNode {
+trait ReaderSplitOperation
+  extends StObject
+     with ReaderSelectableNode {
   
-  val kind: String = js.native
+  val kind: String
   
-  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
   // 'SplitOperation';
-  val name: String = js.native
+  val name: String
   
-  val selections: js.Array[ReaderSelection] = js.native
+  val selections: js.Array[ReaderSelection]
 }
 object ReaderSplitOperation {
   

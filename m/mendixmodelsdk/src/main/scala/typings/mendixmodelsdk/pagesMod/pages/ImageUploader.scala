@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,9 +52,8 @@ object ImageUploader {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.create")
-  @js.native
-  def create(model: IModel): ImageUploader = js.native
+  @scala.inline
+  def create(model: IModel): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -66,9 +64,8 @@ object ImageUploader {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): ImageUploader = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -79,9 +76,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): ImageUploader = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -92,9 +88,8 @@ object ImageUploader {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): ImageUploader = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -105,9 +100,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): ImageUploader = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -118,9 +112,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): ImageUploader = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -131,9 +124,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): ImageUploader = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -144,9 +136,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): ImageUploader = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -157,9 +148,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): ImageUploader = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -170,9 +160,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): ImageUploader = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -183,9 +172,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): ImageUploader = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -196,9 +184,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): ImageUploader = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -209,9 +196,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): ImageUploader = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -222,9 +208,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): ImageUploader = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -235,9 +220,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): ImageUploader = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -248,9 +232,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ImageUploader = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -261,9 +244,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ImageUploader = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -274,9 +256,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ImageUploader = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -287,9 +268,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ImageUploader = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -300,9 +280,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): ImageUploader = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -313,9 +292,8 @@ object ImageUploader {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): ImageUploader = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -326,9 +304,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): ImageUploader = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -339,9 +316,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ImageUploader = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -352,9 +328,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): ImageUploader = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -365,9 +340,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): ImageUploader = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -378,9 +352,8 @@ object ImageUploader {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ImageUploader = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -391,9 +364,8 @@ object ImageUploader {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ImageUploader = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -404,9 +376,8 @@ object ImageUploader {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ImageUploader = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -417,9 +388,8 @@ object ImageUploader {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ImageUploader = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -430,9 +400,8 @@ object ImageUploader {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ImageUploader = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -443,9 +412,8 @@ object ImageUploader {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): ImageUploader = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -456,9 +424,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): ImageUploader = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -469,9 +436,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): ImageUploader = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -482,9 +448,8 @@ object ImageUploader {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): ImageUploader = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -495,9 +460,8 @@ object ImageUploader {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): ImageUploader = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -508,9 +472,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ImageUploader = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -521,9 +484,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ImageUploader = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -534,9 +496,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): ImageUploader = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -547,9 +508,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): ImageUploader = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -560,9 +520,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): ImageUploader = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -573,9 +532,8 @@ object ImageUploader {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): ImageUploader = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -586,9 +544,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): ImageUploader = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -599,9 +556,8 @@ object ImageUploader {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): ImageUploader = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -612,9 +568,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): ImageUploader = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -625,9 +580,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): ImageUploader = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -638,9 +592,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): ImageUploader = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -651,9 +604,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): ImageUploader = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -664,9 +616,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ImageUploader = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -677,9 +628,8 @@ object ImageUploader {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ImageUploader = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -690,9 +640,8 @@ object ImageUploader {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): ImageUploader = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -703,9 +652,8 @@ object ImageUploader {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ImageUploader = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /**
     * Creates and returns a new ImageUploader instance in the SDK and on the server.
@@ -716,9 +664,8 @@ object ImageUploader {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): ImageUploader = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.structureTypeName")

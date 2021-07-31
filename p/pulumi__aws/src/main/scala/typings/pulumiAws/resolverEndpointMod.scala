@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolverEndpointMod {
@@ -68,6 +67,10 @@ object resolverEndpointMod {
   /* static members */
   object ResolverEndpoint {
     
+    @JSImport("@pulumi/aws/route53/resolverEndpoint", "ResolverEndpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverEndpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,29 +80,23 @@ object resolverEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/resolverEndpoint", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResolverEndpoint = js.native
-    @JSImport("@pulumi/aws/route53/resolverEndpoint", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResolverEndpoint = js.native
-    @JSImport("@pulumi/aws/route53/resolverEndpoint", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverEndpointState): ResolverEndpoint = js.native
-    @JSImport("@pulumi/aws/route53/resolverEndpoint", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverEndpointState, opts: CustomResourceOptions): ResolverEndpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverEndpointState): ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverEndpointState, opts: CustomResourceOptions): ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverEndpoint]
     
     /**
       * Returns true if the given object is an instance of ResolverEndpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/resolverEndpoint", "ResolverEndpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ Boolean]
   }
   
-  @js.native
   trait ResolverEndpointArgs extends StObject {
     
     /**
@@ -107,28 +104,28 @@ object resolverEndpointMod {
       * Valid values are `INBOUND` (resolver forwards DNS queries to the DNS service for a VPC from your network or another VPC)
       * or `OUTBOUND` (resolver forwards DNS queries from the DNS service for a VPC to your network or another VPC).
       */
-    val direction: Input[String] = js.native
+    val direction: Input[String]
     
     /**
       * The subnets and IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs
       * to your network (for outbound endpoints) or on the way from your network to your VPCs (for inbound endpoints). Described below.
       */
-    val ipAddresses: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ResolverEndpointIpAddress]]] = js.native
+    val ipAddresses: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ResolverEndpointIpAddress]]]
     
     /**
       * The friendly name of the Route 53 Resolver endpoint.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of one or more security groups that you want to use to control access to this VPC.
       */
-    val securityGroupIds: Input[js.Array[Input[String]]] = js.native
+    val securityGroupIds: Input[js.Array[Input[String]]]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ResolverEndpointArgs {
     
@@ -174,25 +171,24 @@ object resolverEndpointMod {
     }
   }
   
-  @js.native
   trait ResolverEndpointState extends StObject {
     
     /**
       * The ARN of the Route 53 Resolver endpoint.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The direction of DNS queries to or from the Route 53 Resolver endpoint.
       * Valid values are `INBOUND` (resolver forwards DNS queries to the DNS service for a VPC from your network or another VPC)
       * or `OUTBOUND` (resolver forwards DNS queries from the DNS service for a VPC to your network or another VPC).
       */
-    val direction: js.UndefOr[Input[String]] = js.native
+    val direction: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC that you want to create the resolver endpoint in.
       */
-    val hostVpcId: js.UndefOr[Input[String]] = js.native
+    val hostVpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The subnets and IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs
@@ -200,22 +196,22 @@ object resolverEndpointMod {
       */
     val ipAddresses: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ResolverEndpointIpAddress]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The friendly name of the Route 53 Resolver endpoint.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of one or more security groups that you want to use to control access to this VPC.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ResolverEndpointState {
     

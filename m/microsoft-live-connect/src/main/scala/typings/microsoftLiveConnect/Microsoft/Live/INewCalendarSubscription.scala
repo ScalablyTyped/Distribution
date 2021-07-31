@@ -2,26 +2,24 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a request to create a new calendar that subscribes to the
   * given iCal calendar.
   */
-@js.native
 trait INewCalendarSubscription extends StObject {
   
   /**
     * Name of the calendar.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A public subscription URL with which Live Connect will synchronize
     * properties and events periodically for this calendar.
     */
-  var subscription_location: String = js.native
+  var subscription_location: String
 }
 object INewCalendarSubscription {
   

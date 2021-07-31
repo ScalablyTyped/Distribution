@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelsModeratedByAppInstanceUserResponse extends StObject {
   
   /**
     * The moderated channels in the request.
     */
-  var Channels: js.UndefOr[ChannelModeratedByAppInstanceUserSummaryList] = js.native
+  var Channels: js.UndefOr[ChannelModeratedByAppInstanceUserSummaryList] = js.undefined
   
   /**
     * The token returned from previous API requests until the number of channels moderated by the user is reached.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListChannelsModeratedByAppInstanceUserResponse {
   

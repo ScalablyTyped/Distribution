@@ -24,23 +24,21 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinButtonTypesMod {
   
-  @js.native
   trait ISpinButton extends StObject {
     
     /**
       * Sets focus to the control.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /**
       * Current value of the control.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ISpinButton {
     
@@ -64,22 +62,21 @@ object spinButtonTypesMod {
     }
   }
   
-  @js.native
   trait ISpinButtonClassNames extends StObject {
     
-    var arrowBox: String = js.native
+    var arrowBox: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var input: String = js.native
+    var input: String
     
-    var label: String = js.native
+    var label: String
     
-    var labelWrapper: String = js.native
+    var labelWrapper: String
     
-    var root: String = js.native
+    var root: String
     
-    var spinButtonWrapper: String = js.native
+    var spinButtonWrapper: String
   }
   object ISpinButtonClassNames {
     
@@ -123,51 +120,52 @@ object spinButtonTypesMod {
     }
   }
   
-  @js.native
-  trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
+  trait ISpinButtonProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * ID of a label which describes the control, if not using the default label.
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       * A description of the control for the benefit of screen reader users.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The position in the parent set (if in a set).
       */
-    var ariaPositionInSet: js.UndefOr[Double] = js.native
+    var ariaPositionInSet: js.UndefOr[Double] = js.undefined
     
     /**
       * The total size of the parent set (if in a set).
       */
-    var ariaSetSize: js.UndefOr[Double] = js.native
+    var ariaSetSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the control's aria-valuenow. This is the numeric form of `value`.
       * Providing this only makes sense when using as a controlled component.
       */
-    var ariaValueNow: js.UndefOr[Double] = js.native
+    var ariaValueNow: js.UndefOr[Double] = js.undefined
     
-    var ariaValueText: js.UndefOr[String] = js.native
+    var ariaValueText: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[ISpinButton]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ISpinButton]] = js.undefined
     
     /**
       * Accessible label text for the decrement button (for screen reader users).
       */
-    var decrementButtonAriaLabel: js.UndefOr[String] = js.native
+    var decrementButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Custom props for the decrement button.
       */
-    var decrementButtonIcon: js.UndefOr[IIconProps] = js.native
+    var decrementButtonIcon: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Initial value of the control. Updates to this prop will not be respected.
@@ -177,12 +175,12 @@ object spinButtonTypesMod {
       * @defaultvalue 0
       */
     @JSName("defaultValue")
-    var defaultValue_ISpinButtonProps: js.UndefOr[String] = js.native
+    var defaultValue_ISpinButtonProps: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the control is disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom styles for the down arrow button.
@@ -190,7 +188,7 @@ object spinButtonTypesMod {
       * Note: The buttons are in a checked state when arrow keys are used to incremenent/decrement
       * the SpinButton. Use `rootChecked` instead of `rootPressed` for styling when that is the case.
       */
-    var downArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.native
+    var downArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
     
     /**
       * Custom function for providing the classNames for the control. Can be used to provide
@@ -206,66 +204,66 @@ object spinButtonTypesMod {
           /* className */ js.UndefOr[String], 
           ISpinButtonClassNames
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Additional props for the up and down arrow buttons.
       */
-    var iconButtonProps: js.UndefOr[IButtonProps] = js.native
+    var iconButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * Props for an icon to display alongside the control's label.
       */
-    var iconProps: js.UndefOr[IIconProps] = js.native
+    var iconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Accessible label text for the increment button (for screen reader users).
       */
-    var incrementButtonAriaLabel: js.UndefOr[String] = js.native
+    var incrementButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Custom props for the increment button.
       */
-    var incrementButtonIcon: js.UndefOr[IIconProps] = js.native
+    var incrementButtonIcon: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Additional props for the input field.
       */
-    var inputProps: js.UndefOr[InputHTMLAttributes[HTMLElement | HTMLInputElement]] = js.native
+    var inputProps: js.UndefOr[InputHTMLAttributes[HTMLElement | HTMLInputElement]] = js.undefined
     
     /**
       * Keytip for the control.
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * Descriptive label for the control.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Where to position the control's label.
       * @defaultvalue Left
       */
-    var labelPosition: js.UndefOr[Position] = js.native
+    var labelPosition: js.UndefOr[Position] = js.undefined
     
     /**
       * Max value of the control.
       * @defaultvalue 100
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Min value of the control.
       * @defaultvalue 0
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback for when the control loses focus.
       */
     @JSName("onBlur")
-    var onBlur_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
     /**
       * Callback for when the decrement button or down arrow key is pressed.
@@ -279,13 +277,13 @@ object spinButtonTypesMod {
           /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
           String | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when the user focuses the control.
       */
     @JSName("onFocus")
-    var onFocus_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
     /**
       * Callback for when the increment button or up arrow key is pressed.
@@ -299,7 +297,7 @@ object spinButtonTypesMod {
           /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
           String | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when the entered value should be validated.
@@ -313,7 +311,7 @@ object spinButtonTypesMod {
           /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
           String | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * How many decimal places the value should be rounded to.
@@ -321,7 +319,7 @@ object spinButtonTypesMod {
       * The default is calculated based on the precision of `step`: i.e. if step = 1, precision = 0.
       * step = 0.0089, precision = 4. step = 300, precision = 2. step = 23.00, precision = 2.
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * Difference between two adjacent values of the control.
@@ -329,17 +327,17 @@ object spinButtonTypesMod {
       * The precision calculated this way will always be \>= 0.
       * @defaultvalue 1
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom styling for individual elements within the control.
       */
-    var styles: js.UndefOr[PartialISpinButtonStyles] = js.native
+    var styles: js.UndefOr[PartialISpinButtonStyles] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Custom styles for the up arrow button.
@@ -347,7 +345,7 @@ object spinButtonTypesMod {
       * Note: The buttons are in a checked state when arrow keys are used to incremenent/decrement
       * the SpinButton. Use `rootChecked` instead of `rootPressed` for styling when that is the case.
       */
-    var upArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.native
+    var upArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
     
     /**
       * Current value of the control.
@@ -355,7 +353,7 @@ object spinButtonTypesMod {
       * Use this if you intend to pass in a new value as a result of change events.
       * Mutually exclusive with `defaultValue`.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ISpinButtonProps {
     
@@ -585,109 +583,108 @@ object spinButtonTypesMod {
     }
   }
   
-  @js.native
   trait ISpinButtonStyles extends StObject {
     
     /**
       * Styles for the arrowButtonsContainer
       */
-    var arrowButtonsContainer: IStyle = js.native
+    var arrowButtonsContainer: IStyle
     
     /**
       * Style override for the arrowButtonsContainer when control is disabled.
       */
-    var arrowButtonsContainerDisabled: IStyle = js.native
+    var arrowButtonsContainerDisabled: IStyle
     
     /**
       * Style for the icon.
       */
-    var icon: IStyle = js.native
+    var icon: IStyle
     
     /**
       * Style for the icon when the control is disabled.
       */
-    var iconDisabled: IStyle = js.native
+    var iconDisabled: IStyle
     
     /**
       * Styles for the input.
       */
-    var input: IStyle = js.native
+    var input: IStyle
     
     /**
       * Style override when control is disabled.
       */
-    var inputDisabled: IStyle = js.native
+    var inputDisabled: IStyle
     
     /**
       * Style override for ::selection
       */
-    var inputTextSelected: IStyle = js.native
+    var inputTextSelected: IStyle
     
     /**
       * Style for the label text.
       */
-    var label: IStyle = js.native
+    var label: IStyle
     
     /**
       * Style for the label text when the control is disabled.
       * @deprecated Disabled styles taken care by `Label` component.
       */
-    var labelDisabled: IStyle = js.native
+    var labelDisabled: IStyle
     
     /**
       * Style for the label wrapper element, which contains the icon and label.
       */
-    var labelWrapper: IStyle = js.native
+    var labelWrapper: IStyle
     
     /**
       * Style override when the label is positioned at the bottom.
       */
-    var labelWrapperBottom: IStyle = js.native
+    var labelWrapperBottom: IStyle
     
     /**
       * Style override when the label is positioned at the end.
       */
-    var labelWrapperEnd: IStyle = js.native
+    var labelWrapperEnd: IStyle
     
     /**
       * Style override when the label is positioned at the start.
       */
-    var labelWrapperStart: IStyle = js.native
+    var labelWrapperStart: IStyle
     
     /**
       * Style override when the label is positioned at the top.
       */
-    var labelWrapperTop: IStyle = js.native
+    var labelWrapperTop: IStyle
     
     /**
       * Styles for the root of the component.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Style for the wrapper element of the input field and arrow buttons.
       */
-    var spinButtonWrapper: IStyle = js.native
+    var spinButtonWrapper: IStyle
     
     /**
       * Style override when control is disabled.
       */
-    var spinButtonWrapperDisabled: IStyle = js.native
+    var spinButtonWrapperDisabled: IStyle
     
     /**
       * Style override when SpinButton is enabled/focused.
       */
-    var spinButtonWrapperFocused: IStyle = js.native
+    var spinButtonWrapperFocused: IStyle
     
     /**
       * Style override when control is enabled/hovered.
       */
-    var spinButtonWrapperHovered: IStyle = js.native
+    var spinButtonWrapperHovered: IStyle
     
     /**
       * Style override when label is positioned at the top/bottom.
       */
-    var spinButtonWrapperTopBottom: IStyle = js.native
+    var spinButtonWrapperTopBottom: IStyle
   }
   object ISpinButtonStyles {
     

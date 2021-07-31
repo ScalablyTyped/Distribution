@@ -14,7 +14,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poolingSerializationMod {
@@ -35,10 +34,11 @@ object poolingSerializationMod {
   
   type GlobalMaxPooling2DLayerSerialization = BaseLayerSerialization[GlobalMaxPooling2D, GlobalPooling2DLayerConfig]
   
-  @js.native
-  trait GlobalPooling2DLayerConfig extends LayerConfig {
+  trait GlobalPooling2DLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var data_format: js.UndefOr[DataFormatSerialization] = js.native
+    var data_format: js.UndefOr[DataFormatSerialization] = js.undefined
   }
   object GlobalPooling2DLayerConfig {
     
@@ -63,14 +63,15 @@ object poolingSerializationMod {
   
   type MaxPooling2DLayerSerialization = BaseLayerSerialization[MaxPooling2D, Pooling2DLayerConfig]
   
-  @js.native
-  trait Pooling1DLayerConfig extends LayerConfig {
+  trait Pooling1DLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
-    var pool_size: js.UndefOr[js.Array[Double]] = js.native
+    var pool_size: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var strides: js.UndefOr[js.Array[Double]] = js.native
+    var strides: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Pooling1DLayerConfig {
     
@@ -109,16 +110,17 @@ object poolingSerializationMod {
     }
   }
   
-  @js.native
-  trait Pooling2DLayerConfig extends LayerConfig {
+  trait Pooling2DLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var data_format: js.UndefOr[DataFormatSerialization] = js.native
+    var data_format: js.UndefOr[DataFormatSerialization] = js.undefined
     
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
-    var pool_size: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+    var pool_size: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
     
-    var strides: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+    var strides: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
   }
   object Pooling2DLayerConfig {
     

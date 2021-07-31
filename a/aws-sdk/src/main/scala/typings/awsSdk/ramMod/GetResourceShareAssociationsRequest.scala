@@ -2,46 +2,44 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceShareAssociationsRequest extends StObject {
   
   /**
     * The association status.
     */
-  var associationStatus: js.UndefOr[ResourceShareAssociationStatus] = js.native
+  var associationStatus: js.UndefOr[ResourceShareAssociationStatus] = js.undefined
   
   /**
     * The association type. Specify PRINCIPAL to list the principals that are associated with the specified resource share. Specify RESOURCE to list the resources that are associated with the specified resource share.
     */
-  var associationType: ResourceShareAssociationType = js.native
+  var associationType: ResourceShareAssociationType
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The principal. You cannot specify this parameter if the association type is RESOURCE.
     */
-  var principal: js.UndefOr[String] = js.native
+  var principal: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource. You cannot specify this parameter if the association type is PRINCIPAL.
     */
-  var resourceArn: js.UndefOr[String] = js.native
+  var resourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Names (ARN) of the resource shares.
     */
-  var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.native
+  var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
 }
 object GetResourceShareAssociationsRequest {
   

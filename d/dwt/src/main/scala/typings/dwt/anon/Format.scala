@@ -4,67 +4,65 @@ import typings.dwt.dwtBooleans.`false`
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTImageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
   /**
     * Set the output format.
     */
-  var format: js.UndefOr[EnumDWTImageType | Double] = js.native
+  var format: js.UndefOr[EnumDWTImageType | Double] = js.undefined
   
   /**
     * A callback triggered during the outputting.
     * @argument fileInfo A JSON object that contains the fileName, percentage, statusCode, responseString, etc.
     */
-  var funcHttpUploadStatus: js.UndefOr[js.Function1[/* fileInfo */ js.Any, Unit]] = js.native
+  var funcHttpUploadStatus: js.UndefOr[js.Function1[/* fileInfo */ js.Any, Unit]] = js.undefined
   
   /**
     * Setup for HTTP upload via Post.
     */
-  var httpParams: js.UndefOr[FileName] = js.native
+  var httpParams: js.UndefOr[FileName] = js.undefined
   
   /**
     * Setup for PDF output.
     */
-  var pdfSetup: js.UndefOr[Author] = js.native
+  var pdfSetup: js.UndefOr[Author] = js.undefined
   
   /**
     * Specify how many times the library will try the output.
     */
-  var reTries: js.UndefOr[Double] = js.native
+  var reTries: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to remove the images after outputting.
     */
-  var removeAfterOutput: js.UndefOr[Boolean] = js.native
+  var removeAfterOutput: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to show a progress bar when outputting.
     */
-  var showProgressBar: js.UndefOr[Boolean] = js.native
+  var showProgressBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to upload all images in one HTTP post.
     */
-  var singlePost: js.UndefOr[Boolean] = js.native
+  var singlePost: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Setup for TIFF output.
     */
-  var tiffSetup: js.UndefOr[Compression] = js.native
+  var tiffSetup: js.UndefOr[Compression] = js.undefined
   
   /**
     * Output type. "http" is the only supported type for now.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to use the FileUploader.
     */
-  var useUploader: js.UndefOr[`false`] = js.native
+  var useUploader: js.UndefOr[`false`] = js.undefined
 }
 object Format {
   

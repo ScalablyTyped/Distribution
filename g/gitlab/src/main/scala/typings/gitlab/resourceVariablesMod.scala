@@ -8,7 +8,6 @@ import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceVariablesMod {
@@ -44,14 +43,13 @@ object resourceVariablesMod {
     def show(resourceId: Double, keyId: String, options: PaginatedRequestOptions): js.Promise[ResourceVariableSchema] = js.native
   }
   
-  @js.native
   trait ResourceVariableSchema extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
     
-    var variable_type: env_var | file = js.native
+    var variable_type: env_var | file
   }
   object ResourceVariableSchema {
     

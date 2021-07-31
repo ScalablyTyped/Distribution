@@ -19,23 +19,26 @@ import typings.timezonecomplete.tzDatabaseMod.RuleType
 import typings.timezonecomplete.tzDatabaseMod.ToType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("timezonecomplete", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("timezonecomplete", "AtType")
   @js.native
   object AtType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.AtType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.AtType & Double] = js.native
     
-    /* 0 */ val Standard: typings.timezonecomplete.tzDatabaseMod.AtType.Standard with Double = js.native
+    /* 0 */ val Standard: typings.timezonecomplete.tzDatabaseMod.AtType.Standard & Double = js.native
     
-    /* 2 */ val Utc: typings.timezonecomplete.tzDatabaseMod.AtType.Utc with Double = js.native
+    /* 2 */ val Utc: typings.timezonecomplete.tzDatabaseMod.AtType.Utc & Double = js.native
     
-    /* 1 */ val Wall: typings.timezonecomplete.tzDatabaseMod.AtType.Wall with Double = js.native
+    /* 1 */ val Wall: typings.timezonecomplete.tzDatabaseMod.AtType.Wall & Double = js.native
   }
   
   object DAY_PERIODS_ABBREVIATED {
@@ -140,11 +143,11 @@ object mod {
   object DateFunctions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.javascriptMod.DateFunctions with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.javascriptMod.DateFunctions & Double] = js.native
     
-    /* 0 */ val Get: typings.timezonecomplete.javascriptMod.DateFunctions.Get with Double = js.native
+    /* 0 */ val Get: typings.timezonecomplete.javascriptMod.DateFunctions.Get & Double = js.native
     
-    /* 1 */ val GetUTC: typings.timezonecomplete.javascriptMod.DateFunctions.GetUTC with Double = js.native
+    /* 1 */ val GetUTC: typings.timezonecomplete.javascriptMod.DateFunctions.GetUTC & Double = js.native
   }
   
   @JSImport("timezonecomplete", "DateTime")
@@ -245,96 +248,12 @@ object mod {
       */
     def this(year: Double, month: Double, day: Double) = this()
     def this(year: Double, month: Double, day: Double, hour: Double) = this()
-    def this(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double) = this()
     def this(year: Double, month: Double, day: Double, hour: Double, minute: Double) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double
-    ) = this()
+    def this(year: Double, month: Double, day: Double, hour: Unit, minute: Double) = this()
     def this(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: js.UndefOr[scala.Nothing],
-      millisecond: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double,
-      millisecond: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: js.UndefOr[scala.Nothing],
-      millisecond: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: Double,
-      millisecond: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: js.UndefOr[scala.Nothing],
-      millisecond: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double,
-      millisecond: Double
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: Double,
-      second: js.UndefOr[scala.Nothing],
-      millisecond: Double
-    ) = this()
+    def this(year: Double, month: Double, day: Double, hour: Double, minute: Unit, second: Double) = this()
+    def this(year: Double, month: Double, day: Double, hour: Unit, minute: Double, second: Double) = this()
+    def this(year: Double, month: Double, day: Double, hour: Unit, minute: Unit, second: Double) = this()
     def this(
       year: Double,
       month: Double,
@@ -348,77 +267,70 @@ object mod {
       year: Double,
       month: Double,
       day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: js.UndefOr[scala.Nothing],
-      millisecond: js.UndefOr[scala.Nothing],
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: js.UndefOr[scala.Nothing],
-      millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double,
-      millisecond: js.UndefOr[scala.Nothing],
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: js.UndefOr[scala.Nothing],
-      second: Double,
-      millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: js.UndefOr[scala.Nothing],
+      hour: Double,
       minute: Double,
-      second: js.UndefOr[scala.Nothing],
-      millisecond: js.UndefOr[scala.Nothing],
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      second: Unit,
+      millisecond: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hour: js.UndefOr[scala.Nothing],
-      minute: Double,
-      second: js.UndefOr[scala.Nothing],
-      millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      hour: Double,
+      minute: Unit,
+      second: Double,
+      millisecond: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hour: js.UndefOr[scala.Nothing],
+      hour: Double,
+      minute: Unit,
+      second: Unit,
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
       minute: Double,
       second: Double,
-      millisecond: js.UndefOr[scala.Nothing],
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      millisecond: Double
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hour: js.UndefOr[scala.Nothing],
+      hour: Unit,
+      minute: Double,
+      second: Unit,
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Double,
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Unit,
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
       minute: Double,
       second: Double,
       millisecond: Double,
@@ -429,29 +341,9 @@ object mod {
       month: Double,
       day: Double,
       hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: js.UndefOr[scala.Nothing],
-      millisecond: js.UndefOr[scala.Nothing],
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: js.UndefOr[scala.Nothing],
-      millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
-    ) = this()
-    def this(
-      year: Double,
-      month: Double,
-      day: Double,
-      hour: Double,
-      minute: js.UndefOr[scala.Nothing],
+      minute: Double,
       second: Double,
-      millisecond: js.UndefOr[scala.Nothing],
+      millisecond: Unit,
       timeZone: typings.timezonecomplete.timezoneMod.TimeZone
     ) = this()
     def this(
@@ -459,8 +351,8 @@ object mod {
       month: Double,
       day: Double,
       hour: Double,
-      minute: js.UndefOr[scala.Nothing],
-      second: Double,
+      minute: Double,
+      second: Unit,
       millisecond: Double,
       timeZone: typings.timezonecomplete.timezoneMod.TimeZone
     ) = this()
@@ -470,8 +362,8 @@ object mod {
       day: Double,
       hour: Double,
       minute: Double,
-      second: js.UndefOr[scala.Nothing],
-      millisecond: js.UndefOr[scala.Nothing],
+      second: Unit,
+      millisecond: Unit,
       timeZone: typings.timezonecomplete.timezoneMod.TimeZone
     ) = this()
     def this(
@@ -479,8 +371,28 @@ object mod {
       month: Double,
       day: Double,
       hour: Double,
-      minute: Double,
-      second: js.UndefOr[scala.Nothing],
+      minute: Unit,
+      second: Double,
+      millisecond: Double,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Unit,
+      second: Double,
+      millisecond: Unit,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Unit,
+      second: Unit,
       millisecond: Double,
       timeZone: typings.timezonecomplete.timezoneMod.TimeZone
     ) = this()
@@ -489,19 +401,89 @@ object mod {
       month: Double,
       day: Double,
       hour: Double,
-      minute: Double,
-      second: Double,
-      millisecond: js.UndefOr[scala.Nothing],
+      minute: Unit,
+      second: Unit,
+      millisecond: Unit,
       timeZone: typings.timezonecomplete.timezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
       month: Double,
       day: Double,
-      hour: Double,
+      hour: Unit,
       minute: Double,
       second: Double,
       millisecond: Double,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Double,
+      second: Double,
+      millisecond: Unit,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Double,
+      second: Unit,
+      millisecond: Double,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Double,
+      second: Unit,
+      millisecond: Unit,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Double,
+      millisecond: Double,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Double,
+      millisecond: Unit,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Unit,
+      millisecond: Double,
+      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Unit,
+      minute: Unit,
+      second: Unit,
+      millisecond: Unit,
       timeZone: typings.timezonecomplete.timezoneMod.TimeZone
     ) = this()
   }
@@ -533,8 +515,7 @@ object mod {
       * @param allowPre1970 (optional, default false): return true for pre-1970 dates
       * @throws nothing
       */
-    @JSImport("timezonecomplete", "DateTime.exists")
-    @js.native
+    @scala.inline
     def exists(
       year: Double,
       month: js.UndefOr[Double],
@@ -545,7 +526,7 @@ object mod {
       millisecond: js.UndefOr[Double],
       zone: js.UndefOr[typings.timezonecomplete.timezoneMod.TimeZone | Null],
       allowPre1970: js.UndefOr[Boolean]
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], allowPre1970.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Create a DateTime from a Lotus 123 / Microsoft Excel date-time value
@@ -557,40 +538,34 @@ object mod {
       * @throws timezonecomplete.Argument.N if n is not a finite number
       * @throws timezonecomplete.Argument.TimeZone if the given time zone is invalid
       */
-    @JSImport("timezonecomplete", "DateTime.fromExcel")
-    @js.native
-    def fromExcel(n: Double): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.fromExcel")
-    @js.native
-    def fromExcel(n: Double, timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = js.native
+    @scala.inline
+    def fromExcel(n: Double): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
+    def fromExcel(n: Double, timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
     
     /**
       * Current date+time in the given time zone
       * @param timeZone	The desired time zone (optional, defaults to UTC).
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    @JSImport("timezonecomplete", "DateTime.now")
-    @js.native
-    def now(): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.now")
-    @js.native
-    def now(timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = js.native
+    @scala.inline
+    def now(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
+    def now(timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
     
     /**
       * Current date+time in local time
       * @throws nothing
       */
-    @JSImport("timezonecomplete", "DateTime.nowLocal")
-    @js.native
-    def nowLocal(): typings.timezonecomplete.datetimeMod.DateTime = js.native
+    @scala.inline
+    def nowLocal(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
     
     /**
       * Current date+time in UTC time
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    @JSImport("timezonecomplete", "DateTime.nowUtc")
-    @js.native
-    def nowUtc(): typings.timezonecomplete.datetimeMod.DateTime = js.native
+    @scala.inline
+    def nowUtc(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
     
     /**
       * Parse a date in a given format
@@ -602,59 +577,39 @@ object mod {
       * @throws timezonecomplete.ParseError if the given dateTimeString is wrong or not according to the pattern
       * @throws timezonecomplete.Argument.FormatString if the given format string is invalid
       */
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
-    def parse(s: String, format: String): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
-    def parse(
-      s: String,
-      format: String,
-      zone: js.UndefOr[scala.Nothing],
-      locale: js.UndefOr[scala.Nothing],
-      allowTrailing: Boolean
-    ): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
-    def parse(s: String, format: String, zone: js.UndefOr[scala.Nothing], locale: PartialLocale): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
-    def parse(
-      s: String,
-      format: String,
-      zone: js.UndefOr[scala.Nothing],
-      locale: PartialLocale,
-      allowTrailing: Boolean
-    ): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
-    def parse(s: String, format: String, zone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
+    @scala.inline
+    def parse(s: String, format: String): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
+    def parse(s: String, format: String, zone: Unit, locale: Unit, allowTrailing: Boolean): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
+    def parse(s: String, format: String, zone: Unit, locale: PartialLocale): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
+    def parse(s: String, format: String, zone: Unit, locale: PartialLocale, allowTrailing: Boolean): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
+    def parse(s: String, format: String, zone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
     def parse(
       s: String,
       format: String,
       zone: typings.timezonecomplete.timezoneMod.TimeZone,
-      locale: js.UndefOr[scala.Nothing],
+      locale: Unit,
       allowTrailing: Boolean
-    ): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
+    ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
     def parse(
       s: String,
       format: String,
       zone: typings.timezonecomplete.timezoneMod.TimeZone,
       locale: PartialLocale
-    ): typings.timezonecomplete.datetimeMod.DateTime = js.native
-    @JSImport("timezonecomplete", "DateTime.parse")
-    @js.native
+    ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    @scala.inline
     def parse(
       s: String,
       format: String,
       zone: typings.timezonecomplete.timezoneMod.TimeZone,
       locale: PartialLocale,
       allowTrailing: Boolean
-    ): typings.timezonecomplete.datetimeMod.DateTime = js.native
+    ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
     
     /**
       * Actual time source in use. Setting this property allows to
@@ -696,15 +651,18 @@ object mod {
   /* static members */
   object Duration {
     
+    @JSImport("timezonecomplete", "Duration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Construct a time duration
       * @param amount Number of days (may be fractional or negative)
       * @return A duration of n days
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete", "Duration.days")
-    @js.native
-    def days(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+    @scala.inline
+    def days(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
     
     /**
       * Construct a time duration
@@ -712,9 +670,8 @@ object mod {
       * @return A duration of n hours
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete", "Duration.hours")
-    @js.native
-    def hours(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+    @scala.inline
+    def hours(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
     
     /**
       * Construct a time duration
@@ -722,9 +679,8 @@ object mod {
       * @return A duration of n milliseconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete", "Duration.milliseconds")
-    @js.native
-    def milliseconds(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+    @scala.inline
+    def milliseconds(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
     
     /**
       * Construct a time duration
@@ -732,9 +688,8 @@ object mod {
       * @return A duration of n minutes
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete", "Duration.minutes")
-    @js.native
-    def minutes(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+    @scala.inline
+    def minutes(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
     
     /**
       * Construct a time duration
@@ -742,9 +697,8 @@ object mod {
       * @return A duration of n months
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete", "Duration.months")
-    @js.native
-    def months(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+    @scala.inline
+    def months(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
     
     /**
       * Construct a time duration
@@ -752,9 +706,8 @@ object mod {
       * @return A duration of n seconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete", "Duration.seconds")
-    @js.native
-    def seconds(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+    @scala.inline
+    def seconds(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
     
     /**
       * Construct a time duration
@@ -762,9 +715,8 @@ object mod {
       * @return A duration of n years
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete", "Duration.years")
-    @js.native
-    def years(amount: Double): typings.timezonecomplete.durationMod.Duration = js.native
+    @scala.inline
+    def years(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   }
   
   @JSImport("timezonecomplete", "ERA_NAMES_ABBREVIATED")
@@ -796,11 +748,11 @@ object mod {
   object NormalizeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.NormalizeOption with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.NormalizeOption & Double] = js.native
     
-    /* 1 */ val Down: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Down with Double = js.native
+    /* 1 */ val Down: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Down & Double = js.native
     
-    /* 0 */ val Up: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Up with Double = js.native
+    /* 0 */ val Up: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Up & Double = js.native
   }
   
   @JSImport("timezonecomplete", "OnType")
@@ -808,15 +760,15 @@ object mod {
   object OnType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.OnType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.OnType & Double] = js.native
     
-    /* 0 */ val DayNum: typings.timezonecomplete.tzDatabaseMod.OnType.DayNum with Double = js.native
+    /* 0 */ val DayNum: typings.timezonecomplete.tzDatabaseMod.OnType.DayNum & Double = js.native
     
-    /* 2 */ val GreqX: typings.timezonecomplete.tzDatabaseMod.OnType.GreqX with Double = js.native
+    /* 2 */ val GreqX: typings.timezonecomplete.tzDatabaseMod.OnType.GreqX & Double = js.native
     
-    /* 1 */ val LastX: typings.timezonecomplete.tzDatabaseMod.OnType.LastX with Double = js.native
+    /* 1 */ val LastX: typings.timezonecomplete.tzDatabaseMod.OnType.LastX & Double = js.native
     
-    /* 3 */ val LeqX: typings.timezonecomplete.tzDatabaseMod.OnType.LeqX with Double = js.native
+    /* 3 */ val LeqX: typings.timezonecomplete.tzDatabaseMod.OnType.LeqX & Double = js.native
   }
   
   @JSImport("timezonecomplete", "Period")
@@ -896,13 +848,13 @@ object mod {
   object PeriodDst extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.periodMod.PeriodDst with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.periodMod.PeriodDst & Double] = js.native
     
-    /* 2 */ val MAX: typings.timezonecomplete.periodMod.PeriodDst.MAX with Double = js.native
+    /* 2 */ val MAX: typings.timezonecomplete.periodMod.PeriodDst.MAX & Double = js.native
     
-    /* 0 */ val RegularIntervals: typings.timezonecomplete.periodMod.PeriodDst.RegularIntervals with Double = js.native
+    /* 0 */ val RegularIntervals: typings.timezonecomplete.periodMod.PeriodDst.RegularIntervals & Double = js.native
     
-    /* 1 */ val RegularLocalTime: typings.timezonecomplete.periodMod.PeriodDst.RegularLocalTime with Double = js.native
+    /* 1 */ val RegularLocalTime: typings.timezonecomplete.periodMod.PeriodDst.RegularLocalTime & Double = js.native
   }
   
   @JSImport("timezonecomplete", "QUARTER_ABBREVIATIONS")
@@ -1011,13 +963,13 @@ object mod {
   object RuleType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.RuleType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.RuleType & Double] = js.native
     
-    /* 0 */ val None: typings.timezonecomplete.tzDatabaseMod.RuleType.None with Double = js.native
+    /* 0 */ val None: typings.timezonecomplete.tzDatabaseMod.RuleType.None & Double = js.native
     
-    /* 1 */ val Offset: typings.timezonecomplete.tzDatabaseMod.RuleType.Offset with Double = js.native
+    /* 1 */ val Offset: typings.timezonecomplete.tzDatabaseMod.RuleType.Offset & Double = js.native
     
-    /* 2 */ val RuleName: typings.timezonecomplete.tzDatabaseMod.RuleType.RuleName with Double = js.native
+    /* 2 */ val RuleName: typings.timezonecomplete.tzDatabaseMod.RuleType.RuleName & Double = js.native
   }
   
   @JSImport("timezonecomplete", "SHORT_MONTH_NAMES")
@@ -1075,6 +1027,10 @@ object mod {
   /* static members */
   object TimeStruct {
     
+    @JSImport("timezonecomplete", "TimeStruct")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a TimeStruct from the given year, month, day etc
       *
@@ -1093,8 +1049,7 @@ object mod {
       * @throws timezonecomplete.Argument.Second for invalid second
       * @throws timezonecomplete.Argument.Milli for invalid milliseconds
       */
-    @JSImport("timezonecomplete", "TimeStruct.fromComponents")
-    @js.native
+    @scala.inline
     def fromComponents(
       year: js.UndefOr[Double],
       month: js.UndefOr[Double],
@@ -1103,7 +1058,7 @@ object mod {
       minute: js.UndefOr[Double],
       second: js.UndefOr[Double],
       milli: js.UndefOr[Double]
-    ): typings.timezonecomplete.basicsMod.TimeStruct = js.native
+    ): typings.timezonecomplete.basicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromComponents")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], milli.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
     
     /**
       * Create a TimeStruct from a JavaScript date
@@ -1112,26 +1067,23 @@ object mod {
       * @param df Which functions to take (getX() or getUTCX())
       * @throws nothing
       */
-    @JSImport("timezonecomplete", "TimeStruct.fromDate")
-    @js.native
-    def fromDate(d: Date, df: DateFunctions): typings.timezonecomplete.basicsMod.TimeStruct = js.native
+    @scala.inline
+    def fromDate(d: Date, df: DateFunctions): typings.timezonecomplete.basicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
     
     /**
       * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone
       * @throws timezonecomplete.Argument.S if `s` is not a proper iso string
       */
-    @JSImport("timezonecomplete", "TimeStruct.fromString")
-    @js.native
-    def fromString(s: String): typings.timezonecomplete.basicsMod.TimeStruct = js.native
+    @scala.inline
+    def fromString(s: String): typings.timezonecomplete.basicsMod.TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
     
     /**
       * Create a TimeStruct from a number of unix milliseconds
       * (backward compatibility)
       * @throws timezonecomplete.Argument.UnixMillis for non-integer milliseconds
       */
-    @JSImport("timezonecomplete", "TimeStruct.fromUnix")
-    @js.native
-    def fromUnix(unixMillis: Double): typings.timezonecomplete.basicsMod.TimeStruct = js.native
+    @scala.inline
+    def fromUnix(unixMillis: Double): typings.timezonecomplete.basicsMod.TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnix")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
   }
   
   @JSImport("timezonecomplete", "TimeUnit")
@@ -1139,25 +1091,25 @@ object mod {
   object TimeUnit extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.basicsMod.TimeUnit with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.basicsMod.TimeUnit & Double] = js.native
     
-    /* 4 */ val Day: typings.timezonecomplete.basicsMod.TimeUnit.Day with Double = js.native
+    /* 4 */ val Day: typings.timezonecomplete.basicsMod.TimeUnit.Day & Double = js.native
     
-    /* 3 */ val Hour: typings.timezonecomplete.basicsMod.TimeUnit.Hour with Double = js.native
+    /* 3 */ val Hour: typings.timezonecomplete.basicsMod.TimeUnit.Hour & Double = js.native
     
-    /* 8 */ val MAX: typings.timezonecomplete.basicsMod.TimeUnit.MAX with Double = js.native
+    /* 8 */ val MAX: typings.timezonecomplete.basicsMod.TimeUnit.MAX & Double = js.native
     
-    /* 0 */ val Millisecond: typings.timezonecomplete.basicsMod.TimeUnit.Millisecond with Double = js.native
+    /* 0 */ val Millisecond: typings.timezonecomplete.basicsMod.TimeUnit.Millisecond & Double = js.native
     
-    /* 2 */ val Minute: typings.timezonecomplete.basicsMod.TimeUnit.Minute with Double = js.native
+    /* 2 */ val Minute: typings.timezonecomplete.basicsMod.TimeUnit.Minute & Double = js.native
     
-    /* 6 */ val Month: typings.timezonecomplete.basicsMod.TimeUnit.Month with Double = js.native
+    /* 6 */ val Month: typings.timezonecomplete.basicsMod.TimeUnit.Month & Double = js.native
     
-    /* 1 */ val Second: typings.timezonecomplete.basicsMod.TimeUnit.Second with Double = js.native
+    /* 1 */ val Second: typings.timezonecomplete.basicsMod.TimeUnit.Second & Double = js.native
     
-    /* 5 */ val Week: typings.timezonecomplete.basicsMod.TimeUnit.Week with Double = js.native
+    /* 5 */ val Week: typings.timezonecomplete.basicsMod.TimeUnit.Week & Double = js.native
     
-    /* 7 */ val Year: typings.timezonecomplete.basicsMod.TimeUnit.Year with Double = js.native
+    /* 7 */ val Year: typings.timezonecomplete.basicsMod.TimeUnit.Year & Double = js.native
   }
   
   @JSImport("timezonecomplete", "TimeZone")
@@ -1227,9 +1179,8 @@ object mod {
       * 2014-01-01 is +01:00 and amsterdam time for 2014-07-01 is +02:00
       * @throws nothing
       */
-    @JSImport("timezonecomplete", "TimeZone.local")
-    @js.native
-    def local(): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+    @scala.inline
+    def local(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
     
     /**
       * Convert an offset number into an offset string
@@ -1237,9 +1188,8 @@ object mod {
       * @return the offset in ISO notation "+01:30" for +90 minutes
       * @throws Argument.Offset if offset is not a finite number or not within -24 * 60 ... +24 * 60 minutes
       */
-    @JSImport("timezonecomplete", "TimeZone.offsetToString")
-    @js.native
-    def offsetToString(offset: Double): String = js.native
+    @scala.inline
+    def offsetToString(offset: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetToString")(offset.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * String to offset conversion.
@@ -1247,26 +1197,23 @@ object mod {
       * @return offset w.r.t. UTC in minutes
       * @throws timezonecomplete.Argument.S if s cannot be parsed
       */
-    @JSImport("timezonecomplete", "TimeZone.stringToOffset")
-    @js.native
-    def stringToOffset(s: String): Double = js.native
+    @scala.inline
+    def stringToOffset(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToOffset")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * The UTC time zone.
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    @JSImport("timezonecomplete", "TimeZone.utc")
-    @js.native
-    def utc(): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+    @scala.inline
+    def utc(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
     
     /**
       * Time zone with a fixed offset
       * @param offset	offset w.r.t. UTC in minutes, e.g. 90 for +01:30
       * @throws timezonecomplete.Argument.Offset if the offset is not within -24h...+24h (in minutes)
       */
-    @JSImport("timezonecomplete", "TimeZone.zone")
-    @js.native
-    def zone(offset: Double): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+    @scala.inline
+    def zone(offset: Double): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
     /**
       * Time zone for an offset string or an IANA time zone string. Note that time zones are cached
       * so you don't necessarily get a new object each time.
@@ -1282,12 +1229,10 @@ object mod {
       * @throws timezonecomplete.Argument.S if s cannot be parsed
       * @throws timezonecomplete.NotFound.Zone if the zone name doesn't exist in the time zone database
       */
-    @JSImport("timezonecomplete", "TimeZone.zone")
-    @js.native
-    def zone(s: String): typings.timezonecomplete.timezoneMod.TimeZone = js.native
-    @JSImport("timezonecomplete", "TimeZone.zone")
-    @js.native
-    def zone(s: String, dst: Boolean): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+    @scala.inline
+    def zone(s: String): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+    @scala.inline
+    def zone(s: String, dst: Boolean): typings.timezonecomplete.timezoneMod.TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
   }
   
   @JSImport("timezonecomplete", "TimeZoneKind")
@@ -1295,13 +1240,13 @@ object mod {
   object TimeZoneKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.timezoneMod.TimeZoneKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.timezoneMod.TimeZoneKind & Double] = js.native
     
-    /* 0 */ val Local: typings.timezonecomplete.timezoneMod.TimeZoneKind.Local with Double = js.native
+    /* 0 */ val Local: typings.timezonecomplete.timezoneMod.TimeZoneKind.Local & Double = js.native
     
-    /* 1 */ val Offset: typings.timezonecomplete.timezoneMod.TimeZoneKind.Offset with Double = js.native
+    /* 1 */ val Offset: typings.timezonecomplete.timezoneMod.TimeZoneKind.Offset & Double = js.native
     
-    /* 2 */ val Proper: typings.timezonecomplete.timezoneMod.TimeZoneKind.Proper with Double = js.native
+    /* 2 */ val Proper: typings.timezonecomplete.timezoneMod.TimeZoneKind.Proper & Double = js.native
   }
   
   @JSImport("timezonecomplete", "ToType")
@@ -1309,11 +1254,11 @@ object mod {
   object ToType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.ToType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.ToType & Double] = js.native
     
-    /* 1 */ val Max: typings.timezonecomplete.tzDatabaseMod.ToType.Max with Double = js.native
+    /* 1 */ val Max: typings.timezonecomplete.tzDatabaseMod.ToType.Max & Double = js.native
     
-    /* 0 */ val Year: typings.timezonecomplete.tzDatabaseMod.ToType.Year with Double = js.native
+    /* 0 */ val Year: typings.timezonecomplete.tzDatabaseMod.ToType.Year & Double = js.native
   }
   
   @JSImport("timezonecomplete", "Transition")
@@ -1375,23 +1320,19 @@ object mod {
       *             If not given, Timezonecomplete will search for installed modules.
       * @throws timezonecomplete.InvalidTimeZoneData if `data` or the global time zone data is invalid
       */
-    @JSImport("timezonecomplete", "TzDatabase.init")
-    @js.native
-    def init(): Unit = js.native
-    @JSImport("timezonecomplete", "TzDatabase.init")
-    @js.native
-    def init(data: js.Any): Unit = js.native
-    @JSImport("timezonecomplete", "TzDatabase.init")
-    @js.native
-    def init(data: js.Array[_]): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    @scala.inline
+    def init(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def init(data: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Single instance of this database
       * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
       */
-    @JSImport("timezonecomplete", "TzDatabase.instance")
-    @js.native
-    def instance(): typings.timezonecomplete.tzDatabaseMod.TzDatabase = js.native
+    @scala.inline
+    def instance(): typings.timezonecomplete.tzDatabaseMod.TzDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.timezonecomplete.tzDatabaseMod.TzDatabase]
   }
   
   @JSImport("timezonecomplete", "WEEKDAY_LETTERS")
@@ -1407,21 +1348,21 @@ object mod {
   object WeekDay extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.basicsMod.WeekDay with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.basicsMod.WeekDay & Double] = js.native
     
-    /* 5 */ val Friday: typings.timezonecomplete.basicsMod.WeekDay.Friday with Double = js.native
+    /* 5 */ val Friday: typings.timezonecomplete.basicsMod.WeekDay.Friday & Double = js.native
     
-    /* 1 */ val Monday: typings.timezonecomplete.basicsMod.WeekDay.Monday with Double = js.native
+    /* 1 */ val Monday: typings.timezonecomplete.basicsMod.WeekDay.Monday & Double = js.native
     
-    /* 6 */ val Saturday: typings.timezonecomplete.basicsMod.WeekDay.Saturday with Double = js.native
+    /* 6 */ val Saturday: typings.timezonecomplete.basicsMod.WeekDay.Saturday & Double = js.native
     
-    /* 0 */ val Sunday: typings.timezonecomplete.basicsMod.WeekDay.Sunday with Double = js.native
+    /* 0 */ val Sunday: typings.timezonecomplete.basicsMod.WeekDay.Sunday & Double = js.native
     
-    /* 4 */ val Thursday: typings.timezonecomplete.basicsMod.WeekDay.Thursday with Double = js.native
+    /* 4 */ val Thursday: typings.timezonecomplete.basicsMod.WeekDay.Thursday & Double = js.native
     
-    /* 2 */ val Tuesday: typings.timezonecomplete.basicsMod.WeekDay.Tuesday with Double = js.native
+    /* 2 */ val Tuesday: typings.timezonecomplete.basicsMod.WeekDay.Tuesday & Double = js.native
     
-    /* 3 */ val Wednesday: typings.timezonecomplete.basicsMod.WeekDay.Wednesday with Double = js.native
+    /* 3 */ val Wednesday: typings.timezonecomplete.basicsMod.WeekDay.Wednesday & Double = js.native
   }
   
   @JSImport("timezonecomplete", "ZoneInfo")
@@ -1512,302 +1453,237 @@ object mod {
     ) = this()
   }
   
-  @JSImport("timezonecomplete", "abs")
-  @js.native
-  def abs(d: typings.timezonecomplete.durationMod.Duration): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def abs(d: typings.timezonecomplete.durationMod.Duration): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(d.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "binaryInsertionIndex")
-  @js.native
-  def binaryInsertionIndex[T](arr: js.Array[T], compare: js.Function1[/* a */ T, Double]): Double = js.native
+  @scala.inline
+  def binaryInsertionIndex[T](arr: js.Array[T], compare: js.Function1[/* a */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryInsertionIndex")(arr.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "dayOfYear")
-  @js.native
-  def dayOfYear(year: Double, month: Double, day: Double): Double = js.native
+  @scala.inline
+  def dayOfYear(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dayOfYear")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "days")
-  @js.native
-  def days(n: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def days(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "daysInMonth")
-  @js.native
-  def daysInMonth(year: Double, month: Double): Double = js.native
+  @scala.inline
+  def daysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "daysInYear")
-  @js.native
-  def daysInYear(year: Double): Double = js.native
+  @scala.inline
+  def daysInYear(year: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("daysInYear")(year.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "firstWeekDayOfMonth")
-  @js.native
-  def firstWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = js.native
+  @scala.inline
+  def firstWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "format")
-  @js.native
-  def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    localZone: js.UndefOr[scala.Nothing],
-    formatString: String
-  ): String = js.native
-  @JSImport("timezonecomplete", "format")
-  @js.native
-  def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    localZone: js.UndefOr[scala.Nothing],
-    formatString: String,
-    locale: PartialLocale
-  ): String = js.native
-  @JSImport("timezonecomplete", "format")
-  @js.native
+  @scala.inline
   def format(
     dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
     utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
     localZone: Null,
     formatString: String
-  ): String = js.native
-  @JSImport("timezonecomplete", "format")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def format(
     dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
     utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
     localZone: Null,
     formatString: String,
     locale: PartialLocale
-  ): String = js.native
-  @JSImport("timezonecomplete", "format")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(
+    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    localZone: Unit,
+    formatString: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(
+    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    localZone: Unit,
+    formatString: String,
+    locale: PartialLocale
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def format(
     dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
     utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
     localZone: typings.timezonecomplete.timezoneMod.TimeZone,
     formatString: String
-  ): String = js.native
-  @JSImport("timezonecomplete", "format")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def format(
     dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
     utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
     localZone: typings.timezonecomplete.timezoneMod.TimeZone,
     formatString: String,
     locale: PartialLocale
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("timezonecomplete", "hours")
-  @js.native
-  def hours(n: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def hours(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "isDateTime")
-  @js.native
-  def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = js.native
+  @scala.inline
+  def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
   
-  @JSImport("timezonecomplete", "isDuration")
-  @js.native
-  def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = js.native
+  @scala.inline
+  def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
   
-  @JSImport("timezonecomplete", "isLeapYear")
-  @js.native
-  def isLeapYear(year: Double): Boolean = js.native
+  @scala.inline
+  def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("timezonecomplete", "isPeriod")
-  @js.native
-  def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = js.native
+  @scala.inline
+  def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
   
-  @JSImport("timezonecomplete", "isTimeZone")
-  @js.native
-  def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = js.native
+  @scala.inline
+  def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean]
   
-  @JSImport("timezonecomplete", "isValidOffsetString")
-  @js.native
-  def isValidOffsetString(s: String): Boolean = js.native
+  @scala.inline
+  def isValidOffsetString(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidOffsetString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("timezonecomplete", "isValidPeriodJson")
-  @js.native
-  def isValidPeriodJson(json: PeriodJson): Boolean = js.native
+  @scala.inline
+  def isValidPeriodJson(json: PeriodJson): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPeriodJson")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("timezonecomplete", "lastWeekDayOfMonth")
-  @js.native
-  def lastWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = js.native
+  @scala.inline
+  def lastWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "local")
-  @js.native
-  def local(): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+  @scala.inline
+  def local(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
   
-  @JSImport("timezonecomplete", "max")
-  @js.native
+  @scala.inline
   def max(
     d1: typings.timezonecomplete.datetimeMod.DateTime,
     d2: typings.timezonecomplete.datetimeMod.DateTime
-  ): typings.timezonecomplete.datetimeMod.DateTime = js.native
-  @JSImport("timezonecomplete", "max")
-  @js.native
+  ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  @scala.inline
   def max(
     d1: typings.timezonecomplete.durationMod.Duration,
     d2: typings.timezonecomplete.durationMod.Duration
-  ): typings.timezonecomplete.durationMod.Duration = js.native
+  ): typings.timezonecomplete.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "milliseconds")
-  @js.native
-  def milliseconds(n: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def milliseconds(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "min")
-  @js.native
+  @scala.inline
   def min(
     d1: typings.timezonecomplete.datetimeMod.DateTime,
     d2: typings.timezonecomplete.datetimeMod.DateTime
-  ): typings.timezonecomplete.datetimeMod.DateTime = js.native
-  @JSImport("timezonecomplete", "min")
-  @js.native
+  ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  @scala.inline
   def min(
     d1: typings.timezonecomplete.durationMod.Duration,
     d2: typings.timezonecomplete.durationMod.Duration
-  ): typings.timezonecomplete.durationMod.Duration = js.native
+  ): typings.timezonecomplete.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "minutes")
-  @js.native
-  def minutes(n: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def minutes(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "months")
-  @js.native
-  def months(n: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def months(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "now")
-  @js.native
-  def now(): typings.timezonecomplete.datetimeMod.DateTime = js.native
-  @JSImport("timezonecomplete", "now")
-  @js.native
-  def now(timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  @scala.inline
+  def now(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  @scala.inline
+  def now(timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
   
-  @JSImport("timezonecomplete", "nowLocal")
-  @js.native
-  def nowLocal(): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  @scala.inline
+  def nowLocal(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
   
-  @JSImport("timezonecomplete", "nowUtc")
-  @js.native
-  def nowUtc(): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  @scala.inline
+  def nowUtc(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
   
-  @JSImport("timezonecomplete", "parse")
-  @js.native
-  def parse(dateTimeString: String, formatString: String): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: js.UndefOr[scala.Nothing],
-    allowTrailing: js.UndefOr[scala.Nothing],
-    locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: js.UndefOr[scala.Nothing],
-    allowTrailing: Boolean
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: js.UndefOr[scala.Nothing],
-    allowTrailing: Boolean,
-    locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: Null,
-    allowTrailing: js.UndefOr[scala.Nothing],
-    locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
-  def parse(dateTimeString: String, formatString: String, overrideZone: Null, allowTrailing: Boolean): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String, overrideZone: Null, allowTrailing: Boolean): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
   def parse(
     dateTimeString: String,
     formatString: String,
     overrideZone: Null,
     allowTrailing: Boolean,
     locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(
+    dateTimeString: String,
+    formatString: String,
+    overrideZone: Null,
+    allowTrailing: Unit,
+    locale: PartialLocale
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String, overrideZone: Unit, allowTrailing: Boolean): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(
+    dateTimeString: String,
+    formatString: String,
+    overrideZone: Unit,
+    allowTrailing: Boolean,
+    locale: PartialLocale
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(
+    dateTimeString: String,
+    formatString: String,
+    overrideZone: Unit,
+    allowTrailing: Unit,
+    locale: PartialLocale
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
   def parse(
     dateTimeString: String,
     formatString: String,
     overrideZone: typings.timezonecomplete.timezoneMod.TimeZone
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: typings.timezonecomplete.timezoneMod.TimeZone,
-    allowTrailing: js.UndefOr[scala.Nothing],
-    locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
   def parse(
     dateTimeString: String,
     formatString: String,
     overrideZone: typings.timezonecomplete.timezoneMod.TimeZone,
     allowTrailing: Boolean
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete", "parse")
-  @js.native
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
   def parse(
     dateTimeString: String,
     formatString: String,
     overrideZone: typings.timezonecomplete.timezoneMod.TimeZone,
     allowTrailing: Boolean,
     locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  
-  @JSImport("timezonecomplete", "parseable")
-  @js.native
-  def parseable(dateTimeString: String, formatString: String): Boolean = js.native
-  @JSImport("timezonecomplete", "parseable")
-  @js.native
-  def parseable(
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(
     dateTimeString: String,
     formatString: String,
-    allowTrailing: js.UndefOr[scala.Nothing],
+    overrideZone: typings.timezonecomplete.timezoneMod.TimeZone,
+    allowTrailing: Unit,
     locale: PartialLocale
-  ): Boolean = js.native
-  @JSImport("timezonecomplete", "parseable")
-  @js.native
-  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean): Boolean = js.native
-  @JSImport("timezonecomplete", "parseable")
-  @js.native
-  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean, locale: PartialLocale): Boolean = js.native
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
   
-  @JSImport("timezonecomplete", "periodDstToString")
-  @js.native
-  def periodDstToString(p: PeriodDst): String = js.native
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean, locale: PartialLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String, allowTrailing: Unit, locale: PartialLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("timezonecomplete", "secondOfDay")
-  @js.native
-  def secondOfDay(hour: Double, minute: Double, second: Double): Double = js.native
+  @scala.inline
+  def periodDstToString(p: PeriodDst): String = ^.asInstanceOf[js.Dynamic].applyDynamic("periodDstToString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("timezonecomplete", "seconds")
-  @js.native
-  def seconds(n: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def secondOfDay(hour: Double, minute: Double, second: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("secondOfDay")(hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "stringToTimeUnit")
-  @js.native
-  def stringToTimeUnit(s: String): TimeUnit = js.native
+  @scala.inline
+  def seconds(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "timeToUnixNoLeapSecs")
-  @js.native
-  def timeToUnixNoLeapSecs(components: TimeComponentOpts): Double = js.native
-  @JSImport("timezonecomplete", "timeToUnixNoLeapSecs")
-  @js.native
+  @scala.inline
+  def stringToTimeUnit(s: String): TimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToTimeUnit")(s.asInstanceOf[js.Any]).asInstanceOf[TimeUnit]
+  
+  @scala.inline
+  def timeToUnixNoLeapSecs(components: TimeComponentOpts): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeToUnixNoLeapSecs")(components.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def timeToUnixNoLeapSecs(
     year: Double,
     month: Double,
@@ -1816,66 +1692,50 @@ object mod {
     minute: Double,
     second: Double,
     milli: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("timeToUnixNoLeapSecs")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], milli.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "timeUnitToMilliseconds")
-  @js.native
-  def timeUnitToMilliseconds(unit: TimeUnit): Double = js.native
+  @scala.inline
+  def timeUnitToMilliseconds(unit: TimeUnit): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToMilliseconds")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "timeUnitToString")
-  @js.native
-  def timeUnitToString(unit: TimeUnit): String = js.native
-  @JSImport("timezonecomplete", "timeUnitToString")
-  @js.native
-  def timeUnitToString(unit: TimeUnit, amount: Double): String = js.native
+  @scala.inline
+  def timeUnitToString(unit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def timeUnitToString(unit: TimeUnit, amount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("timezonecomplete", "timestampOnWeekTimeGreaterThanOrEqualTo")
-  @js.native
-  def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  @scala.inline
+  def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeGreaterThanOrEqualTo")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
   
-  @JSImport("timezonecomplete", "timestampOnWeekTimeLessThan")
-  @js.native
-  def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): typings.timezonecomplete.datetimeMod.DateTime = js.native
+  @scala.inline
+  def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeLessThan")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
   
-  @JSImport("timezonecomplete", "unixToTimeNoLeapSecs")
-  @js.native
-  def unixToTimeNoLeapSecs(unixMillis: Double): TimeComponents = js.native
+  @scala.inline
+  def unixToTimeNoLeapSecs(unixMillis: Double): TimeComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("unixToTimeNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[TimeComponents]
   
-  @JSImport("timezonecomplete", "utc")
-  @js.native
-  def utc(): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+  @scala.inline
+  def utc(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
   
-  @JSImport("timezonecomplete", "weekDayNoLeapSecs")
-  @js.native
-  def weekDayNoLeapSecs(unixMillis: Double): WeekDay = js.native
+  @scala.inline
+  def weekDayNoLeapSecs(unixMillis: Double): WeekDay = ^.asInstanceOf[js.Dynamic].applyDynamic("weekDayNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[WeekDay]
   
-  @JSImport("timezonecomplete", "weekDayOnOrAfter")
-  @js.native
-  def weekDayOnOrAfter(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = js.native
+  @scala.inline
+  def weekDayOnOrAfter(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDayOnOrAfter")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "weekDayOnOrBefore")
-  @js.native
-  def weekDayOnOrBefore(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = js.native
+  @scala.inline
+  def weekDayOnOrBefore(year: Double, month: Double, day: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDayOnOrBefore")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "weekNumber")
-  @js.native
-  def weekNumber(year: Double, month: Double, day: Double): Double = js.native
+  @scala.inline
+  def weekNumber(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekNumber")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "weekOfMonth")
-  @js.native
-  def weekOfMonth(year: Double, month: Double, day: Double): Double = js.native
+  @scala.inline
+  def weekOfMonth(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("timezonecomplete", "years")
-  @js.native
-  def years(n: Double): typings.timezonecomplete.durationMod.Duration = js.native
+  @scala.inline
+  def years(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
   
-  @JSImport("timezonecomplete", "zone")
-  @js.native
-  def zone(name: String): typings.timezonecomplete.timezoneMod.TimeZone = js.native
-  @JSImport("timezonecomplete", "zone")
-  @js.native
-  def zone(name: String, dst: Boolean): typings.timezonecomplete.timezoneMod.TimeZone = js.native
-  @JSImport("timezonecomplete", "zone")
-  @js.native
-  def zone(offset: Double): typings.timezonecomplete.timezoneMod.TimeZone = js.native
+  @scala.inline
+  def zone(name: String): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+  @scala.inline
+  def zone(name: String, dst: Boolean): typings.timezonecomplete.timezoneMod.TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+  @scala.inline
+  def zone(offset: Double): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
 }

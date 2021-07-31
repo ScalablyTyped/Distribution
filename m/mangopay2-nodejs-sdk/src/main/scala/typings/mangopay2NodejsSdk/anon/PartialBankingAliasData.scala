@@ -4,30 +4,28 @@ import typings.mangopay2NodejsSdk.mod.bankingAlias.BankingAliasType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.bankingAlias.BankingAliasData> */
-@js.native
 trait PartialBankingAliasData extends StObject {
   
-  var Active: js.UndefOr[Boolean] = js.native
+  var Active: js.UndefOr[Boolean] = js.undefined
   
-  var Country: js.UndefOr[CountryISO] = js.native
+  var Country: js.UndefOr[CountryISO] = js.undefined
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var CreditedUserId: js.UndefOr[String] = js.native
+  var CreditedUserId: js.UndefOr[String] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var OwnerName: js.UndefOr[String] = js.native
+  var OwnerName: js.UndefOr[String] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
   
-  var Type: js.UndefOr[BankingAliasType] = js.native
+  var Type: js.UndefOr[BankingAliasType] = js.undefined
   
-  var WalletId: js.UndefOr[String] = js.native
+  var WalletId: js.UndefOr[String] = js.undefined
 }
 object PartialBankingAliasData {
   

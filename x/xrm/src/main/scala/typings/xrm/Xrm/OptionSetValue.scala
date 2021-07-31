@@ -2,24 +2,22 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for an OptionSet value.
   */
-@js.native
 trait OptionSetValue extends StObject {
   
   /**
     * The label text.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * The value, as a number
     */
-  var value: Double = js.native
+  var value: Double
 }
 object OptionSetValue {
   

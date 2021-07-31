@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.ecs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServicePlacementConstraint extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait ServicePlacementConstraint extends StObject {
     * Service Developer
     * Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html).
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The type of constraint. The only valid values at this time are `memberOf` and `distinctInstance`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ServicePlacementConstraint {
   

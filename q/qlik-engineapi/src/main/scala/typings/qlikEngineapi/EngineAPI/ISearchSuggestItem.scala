@@ -2,25 +2,23 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchSuggestItem...
   */
-@js.native
 trait ISearchSuggestItem extends StObject {
   
   /**
     * Index of the suggestion value.
     * The indexing starts from 0 and from the left.
     */
-  var qTerm: Double = js.native
+  var qTerm: Double
   
   /**
     * Value of the suggestion.
     */
-  var qValue: String = js.native
+  var qValue: String
 }
 object ISearchSuggestItem {
   

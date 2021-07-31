@@ -3,7 +3,6 @@ package typings.reactSwitchCase
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,10 +36,9 @@ object mod {
     def this(props: js.Object, context: js.Any) = this()
   }
   
-  @js.native
   trait CaseProps extends StObject {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object CaseProps {
     
@@ -60,10 +58,9 @@ object mod {
   
   type Switch = Component[SwitchProps, js.Object, js.Any]
   
-  @js.native
   trait SwitchProps extends StObject {
     
-    var condition: js.Any = js.native
+    var condition: js.Any
   }
   object SwitchProps {
     

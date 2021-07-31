@@ -7,18 +7,18 @@ import typings.std.Element
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkTagProps extends HTMLAttributes[HTMLAnchorElement] {
+trait LinkTagProps
+  extends StObject
+     with HTMLAttributes[HTMLAnchorElement] {
   
   @JSName("onClick")
-  var onClick_LinkTagProps: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+  var onClick_LinkTagProps: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
   
-  var to: Obj | Link = js.native
+  var to: Obj | Link
 }
 object LinkTagProps {
   

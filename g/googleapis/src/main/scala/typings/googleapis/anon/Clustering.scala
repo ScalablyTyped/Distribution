@@ -6,33 +6,31 @@ import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaTableReference
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaTimePartitioning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clustering extends StObject {
   
-  var clustering: js.UndefOr[SchemaClustering] = js.native
+  var clustering: js.UndefOr[SchemaClustering] = js.undefined
   
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var tableReference: js.UndefOr[SchemaTableReference] = js.native
+  var tableReference: js.UndefOr[SchemaTableReference] = js.undefined
   
-  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[UseLegacySql] = js.native
+  var view: js.UndefOr[UseLegacySql] = js.undefined
 }
 object Clustering {
   

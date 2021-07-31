@@ -12,7 +12,7 @@ Provides utilities to manipulate japanese holidays.
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 85843 |
+| # downloads        | 101437 |
 | # stars            | 0 |
 
 ## Links

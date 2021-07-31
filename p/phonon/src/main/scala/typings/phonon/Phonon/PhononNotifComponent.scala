@@ -2,17 +2,15 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononNotifComponent extends StObject {
   
-  def hide(): PhononNotifComponent = js.native
+  def hide(): PhononNotifComponent
   
-  def setColor(color: PhononColor): PhononNotifComponent = js.native
+  def setColor(color: PhononColor): PhononNotifComponent
   
-  def show(): PhononNotifComponent = js.native
+  def show(): PhononNotifComponent
 }
 object PhononNotifComponent {
   

@@ -4,19 +4,17 @@ import typings.smartFoxServer.SFS2X.Entities.MMOItem
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPROXIMITY_LIST_UPDATE extends StObject {
   
-  var addedItems: js.Array[MMOItem] = js.native
+  var addedItems: js.Array[MMOItem]
   
-  var addedUsers: js.Array[SFSUser] = js.native
+  var addedUsers: js.Array[SFSUser]
   
-  var removedItems: js.Array[MMOItem] = js.native
+  var removedItems: js.Array[MMOItem]
   
-  var removedUsers: js.Array[SFSUser] = js.native
+  var removedUsers: js.Array[SFSUser]
 }
 object IPROXIMITY_LIST_UPDATE {
   

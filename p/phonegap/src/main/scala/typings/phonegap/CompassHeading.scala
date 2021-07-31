@@ -2,19 +2,17 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompassHeading extends StObject {
   
-  var headingAccuracy: js.UndefOr[Double] = js.native
+  var headingAccuracy: js.UndefOr[Double] = js.undefined
   
-  var magneticHeading: js.UndefOr[Double] = js.native
+  var magneticHeading: js.UndefOr[Double] = js.undefined
   
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
   
-  var trueHeading: js.UndefOr[Double] = js.native
+  var trueHeading: js.UndefOr[Double] = js.undefined
 }
 object CompassHeading {
   

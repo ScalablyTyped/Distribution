@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceToIndexFieldMapping extends StObject {
   
   /**
     * The name of the column or attribute in the data source.
     */
-  var DataSourceFieldName: typings.awsSdk.kendraMod.DataSourceFieldName = js.native
+  var DataSourceFieldName: typings.awsSdk.kendraMod.DataSourceFieldName
   
   /**
     * The type of data stored in the column or attribute.
     */
-  var DateFieldFormat: js.UndefOr[DataSourceDateFieldFormat] = js.native
+  var DateFieldFormat: js.UndefOr[DataSourceDateFieldFormat] = js.undefined
   
   /**
     * The name of the field in the index.
     */
-  var IndexFieldName: typings.awsSdk.kendraMod.IndexFieldName = js.native
+  var IndexFieldName: typings.awsSdk.kendraMod.IndexFieldName
 }
 object DataSourceToIndexFieldMapping {
   

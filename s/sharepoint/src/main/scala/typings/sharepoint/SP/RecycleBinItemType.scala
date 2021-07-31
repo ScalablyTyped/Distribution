@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,35 +11,57 @@ sealed trait RecycleBinItemType extends StObject
 object RecycleBinItemType extends StObject {
   
   @js.native
-  sealed trait attachment extends RecycleBinItemType
+  sealed trait attachment
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait cascadeParent extends RecycleBinItemType
+  sealed trait cascadeParent
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait file extends RecycleBinItemType
+  sealed trait file
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait fileVersion extends RecycleBinItemType
+  sealed trait fileVersion
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait folder extends RecycleBinItemType
+  sealed trait folder
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait folderWithLists extends RecycleBinItemType
+  sealed trait folderWithLists
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait list extends RecycleBinItemType
+  sealed trait list
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait listItem extends RecycleBinItemType
+  sealed trait listItem
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait listItemVersion extends RecycleBinItemType
+  sealed trait listItemVersion
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait none extends RecycleBinItemType
+  sealed trait none
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait web extends RecycleBinItemType
+  sealed trait web
+    extends StObject
+       with RecycleBinItemType
 }

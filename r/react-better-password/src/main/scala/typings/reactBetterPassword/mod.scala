@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactBetterPassword.reactBetterPasswordStrings.Bullet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,22 +15,21 @@ object mod {
   
   type Password = Component[PasswordProps, js.Object, js.Any]
   
-  @js.native
   trait PasswordProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[Bullet | String] = js.native
+    var mask: js.UndefOr[Bullet | String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object PasswordProps {
     

@@ -2,7 +2,6 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,47 +11,77 @@ sealed trait TimelineType extends StObject
 object TimelineType extends StObject {
   
   @js.native
-  sealed trait attachment extends TimelineType
+  sealed trait attachment
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait color extends TimelineType
+  sealed trait color
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait deform extends TimelineType
+  sealed trait deform
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait drawOrder extends TimelineType
+  sealed trait drawOrder
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait event extends TimelineType
+  sealed trait event
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait ikConstraint extends TimelineType
+  sealed trait ikConstraint
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait pathConstraintMix extends TimelineType
+  sealed trait pathConstraintMix
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait pathConstraintPosition extends TimelineType
+  sealed trait pathConstraintPosition
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait pathConstraintSpacing extends TimelineType
+  sealed trait pathConstraintSpacing
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait rotate extends TimelineType
+  sealed trait rotate
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait scale extends TimelineType
+  sealed trait scale
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait shear extends TimelineType
+  sealed trait shear
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait transformConstraint extends TimelineType
+  sealed trait transformConstraint
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait translate extends TimelineType
+  sealed trait translate
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait twoColor extends TimelineType
+  sealed trait twoColor
+    extends StObject
+       with TimelineType
 }

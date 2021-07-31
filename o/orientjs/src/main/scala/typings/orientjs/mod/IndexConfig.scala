@@ -13,27 +13,25 @@ import typings.orientjs.orientjsStrings.UNIQUE
 import typings.orientjs.orientjsStrings.UNIQUE_HASH_INDEX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexConfig extends StObject {
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var engine: js.UndefOr[LUCENE | COLA | String] = js.native
+  var engine: js.UndefOr[LUCENE | COLA | String] = js.undefined
   
-  var ifnotexist: js.UndefOr[Boolean] = js.native
+  var ifnotexist: js.UndefOr[Boolean] = js.undefined
   
-  var keyType: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var properties: js.UndefOr[js.Array[String]] = js.native
+  var properties: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `type`: UNIQUE | NOTUNIQUE | FULLTEXT | DICTIONARY | UNIQUE_HASH_INDEX | NOTUNIQUE_HASH_INDEX | FULLTEXT_HASH_INDEX | DICTIONARY_HASH_INDEX | SPATIAL = js.native
+  var `type`: UNIQUE | NOTUNIQUE | FULLTEXT | DICTIONARY | UNIQUE_HASH_INDEX | NOTUNIQUE_HASH_INDEX | FULLTEXT_HASH_INDEX | DICTIONARY_HASH_INDEX | SPATIAL
 }
 object IndexConfig {
   

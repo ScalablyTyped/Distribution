@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.algorithmic
 import typings.arcgisJsApi.arcgisJsApiStrings.multipart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorRamp
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

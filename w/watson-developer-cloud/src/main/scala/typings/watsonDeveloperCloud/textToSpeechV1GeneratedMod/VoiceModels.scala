@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** VoiceModels. */
-@js.native
 trait VoiceModels extends StObject {
   
   /** An array of `VoiceModel` objects that provides information about each available custom voice model. The array is empty if the requesting service credentials own no custom voice models (if no language is specified) or own no custom voice models for the specified language. */
-  var customizations: js.Array[VoiceModel] = js.native
+  var customizations: js.Array[VoiceModel]
 }
 object VoiceModels {
   

@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceChannelsectionsList extends StandardParameters {
+trait ParamsResourceChannelsectionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The channelId parameter specifies a YouTube channel ID. The API will only
     * return that channel's channelSections.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The hl parameter indicates that the snippet.localized property values in
@@ -32,7 +32,7 @@ trait ParamsResourceChannelsectionsList extends StandardParameters {
     * Channel owners can provide localized channel section titles using either
     * the channelSections.insert or channelSections.update method.
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of the YouTube
@@ -40,13 +40,13 @@ trait ParamsResourceChannelsectionsList extends StandardParameters {
     * channelSection resource, the id property specifies the YouTube
     * channelSection ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Set this parameter's value to true to retrieve a feed of the
     * authenticated user's channelSections.
     */
-  var mine: js.UndefOr[Boolean] = js.native
+  var mine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -60,7 +60,7 @@ trait ParamsResourceChannelsectionsList extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
@@ -73,7 +73,7 @@ trait ParamsResourceChannelsectionsList extends StandardParameters {
     * channelSection. If you set part=snippet, the API response will also
     * contain all of those nested properties.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceChannelsectionsList {
   

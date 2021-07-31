@@ -3,21 +3,19 @@ package typings.libp2pGossipsub.anon
 import typings.peerId.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugName extends StObject {
   
-  var debugName: String = js.native
+  var debugName: String
   
-  var multicodecs: js.Array[String] = js.native
+  var multicodecs: js.Array[String]
   
-  var options: EmitSelf = js.native
+  var options: EmitSelf
   
-  var peerId: ^ = js.native
+  var peerId: ^
   
-  var registrar: Handle = js.native
+  var registrar: Handle
 }
 object DebugName {
   

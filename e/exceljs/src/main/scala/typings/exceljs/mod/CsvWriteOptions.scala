@@ -3,27 +3,25 @@ package typings.exceljs.mod
 import typings.exceljs.anon.PartialFastCsvFormatterOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CsvWriteOptions extends StObject {
   
-  var dateFormat: String = js.native
+  var dateFormat: String
   
-  var dateUTC: Boolean = js.native
+  var dateUTC: Boolean
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var formatterOptions: PartialFastCsvFormatterOp = js.native
+  var formatterOptions: PartialFastCsvFormatterOp
   
-  var includeEmptyRows: Boolean = js.native
+  var includeEmptyRows: Boolean
   
-  def map(value: js.Any, index: Double): js.Any = js.native
+  def map(value: js.Any, index: Double): js.Any
   
-  var sheetId: Double = js.native
+  var sheetId: Double
   
-  var sheetName: String = js.native
+  var sheetName: String
 }
 object CsvWriteOptions {
   

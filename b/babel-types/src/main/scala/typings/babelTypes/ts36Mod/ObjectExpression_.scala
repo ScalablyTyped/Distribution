@@ -3,18 +3,17 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ObjectExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression {
   
-  var properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadProperty_] = js.native
+  var properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadProperty_]
   
   @JSName("type")
-  var type_ObjectExpression_ : ObjectExpression = js.native
+  var type_ObjectExpression_ : ObjectExpression
 }
 object ObjectExpression_ {
   
@@ -23,11 +22,10 @@ object ObjectExpression_ {
     end: Double,
     loc: SourceLocation,
     properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadProperty_],
-    start: Double,
-    `type`: ObjectExpression
+    start: Double
   ): ObjectExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectExpression")
     __obj.asInstanceOf[ObjectExpression_]
   }
   

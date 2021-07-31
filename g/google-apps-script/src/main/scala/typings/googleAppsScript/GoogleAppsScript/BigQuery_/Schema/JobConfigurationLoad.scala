@@ -2,65 +2,63 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobConfigurationLoad extends StObject {
   
-  var allowJaggedRows: js.UndefOr[Boolean] = js.native
+  var allowJaggedRows: js.UndefOr[Boolean] = js.undefined
   
-  var allowQuotedNewlines: js.UndefOr[Boolean] = js.native
+  var allowQuotedNewlines: js.UndefOr[Boolean] = js.undefined
   
-  var autodetect: js.UndefOr[Boolean] = js.native
+  var autodetect: js.UndefOr[Boolean] = js.undefined
   
-  var clustering: js.UndefOr[Clustering] = js.native
+  var clustering: js.UndefOr[Clustering] = js.undefined
   
-  var createDisposition: js.UndefOr[String] = js.native
+  var createDisposition: js.UndefOr[String] = js.undefined
   
-  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var destinationEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
-  var destinationTable: js.UndefOr[TableReference] = js.native
+  var destinationTable: js.UndefOr[TableReference] = js.undefined
   
-  var destinationTableProperties: js.UndefOr[DestinationTableProperties] = js.native
+  var destinationTableProperties: js.UndefOr[DestinationTableProperties] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var fieldDelimiter: js.UndefOr[String] = js.native
+  var fieldDelimiter: js.UndefOr[String] = js.undefined
   
-  var hivePartitioningMode: js.UndefOr[String] = js.native
+  var hivePartitioningMode: js.UndefOr[String] = js.undefined
   
-  var ignoreUnknownValues: js.UndefOr[Boolean] = js.native
+  var ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined
   
-  var maxBadRecords: js.UndefOr[Double] = js.native
+  var maxBadRecords: js.UndefOr[Double] = js.undefined
   
-  var nullMarker: js.UndefOr[String] = js.native
+  var nullMarker: js.UndefOr[String] = js.undefined
   
-  var projectionFields: js.UndefOr[js.Array[String]] = js.native
+  var projectionFields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
   
-  var rangePartitioning: js.UndefOr[RangePartitioning] = js.native
+  var rangePartitioning: js.UndefOr[RangePartitioning] = js.undefined
   
-  var schema: js.UndefOr[TableSchema] = js.native
+  var schema: js.UndefOr[TableSchema] = js.undefined
   
-  var schemaInline: js.UndefOr[String] = js.native
+  var schemaInline: js.UndefOr[String] = js.undefined
   
-  var schemaInlineFormat: js.UndefOr[String] = js.native
+  var schemaInlineFormat: js.UndefOr[String] = js.undefined
   
-  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.native
+  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var skipLeadingRows: js.UndefOr[Double] = js.native
+  var skipLeadingRows: js.UndefOr[Double] = js.undefined
   
-  var sourceFormat: js.UndefOr[String] = js.native
+  var sourceFormat: js.UndefOr[String] = js.undefined
   
-  var sourceUris: js.UndefOr[js.Array[String]] = js.native
+  var sourceUris: js.UndefOr[js.Array[String]] = js.undefined
   
-  var timePartitioning: js.UndefOr[TimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[TimePartitioning] = js.undefined
   
-  var useAvroLogicalTypes: js.UndefOr[Boolean] = js.native
+  var useAvroLogicalTypes: js.UndefOr[Boolean] = js.undefined
   
-  var writeDisposition: js.UndefOr[String] = js.native
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object JobConfigurationLoad {
   

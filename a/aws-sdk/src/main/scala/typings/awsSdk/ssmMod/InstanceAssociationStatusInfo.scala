@@ -2,71 +2,69 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceAssociationStatusInfo extends StObject {
   
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
     * The name of the association applied to the instance.
     */
-  var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.native
+  var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.undefined
   
   /**
     * The version of the association applied to the instance.
     */
-  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.native
+  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
     * Detailed status information about the instance association.
     */
-  var DetailedStatus: js.UndefOr[StatusName] = js.native
+  var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   
   /**
     * The association document versions.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * An error code returned by the request to create the association.
     */
-  var ErrorCode: js.UndefOr[AgentErrorCode] = js.native
+  var ErrorCode: js.UndefOr[AgentErrorCode] = js.undefined
   
   /**
     * The date the instance association ran. 
     */
-  var ExecutionDate: js.UndefOr[DateTime] = js.native
+  var ExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Summary information about association execution.
     */
-  var ExecutionSummary: js.UndefOr[InstanceAssociationExecutionSummary] = js.native
+  var ExecutionSummary: js.UndefOr[InstanceAssociationExecutionSummary] = js.undefined
   
   /**
     * The instance ID where the association was created.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * The name of the association.
     */
-  var Name: js.UndefOr[DocumentARN] = js.native
+  var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
     * A URL for an S3 bucket where you want to store the results of this request.
     */
-  var OutputUrl: js.UndefOr[InstanceAssociationOutputUrl] = js.native
+  var OutputUrl: js.UndefOr[InstanceAssociationOutputUrl] = js.undefined
   
   /**
     * Status information about the instance association.
     */
-  var Status: js.UndefOr[StatusName] = js.native
+  var Status: js.UndefOr[StatusName] = js.undefined
 }
 object InstanceAssociationStatusInfo {
   

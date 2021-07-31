@@ -2,31 +2,29 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyGroupList extends StObject {
   
   /**
     * A list of key groups.
     */
-  var Items: js.UndefOr[KeyGroupSummaryList] = js.native
+  var Items: js.UndefOr[KeyGroupSummaryList] = js.undefined
   
   /**
     * The maximum number of key groups requested.
     */
-  var MaxItems: integer = js.native
+  var MaxItems: integer
   
   /**
     * If there are more items in the list than are in this response, this element is present. It contains the value that you should use in the Marker field of a subsequent request to continue listing key groups.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The number of key groups returned in the response.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object KeyGroupList {
   

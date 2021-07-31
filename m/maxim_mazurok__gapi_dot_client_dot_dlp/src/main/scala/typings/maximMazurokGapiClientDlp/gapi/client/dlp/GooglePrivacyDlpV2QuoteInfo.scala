@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2QuoteInfo extends StObject {
   
   /** The date time indicated by the quote. */
-  var dateTime: js.UndefOr[GooglePrivacyDlpV2DateTime] = js.native
+  var dateTime: js.UndefOr[GooglePrivacyDlpV2DateTime] = js.undefined
 }
 object GooglePrivacyDlpV2QuoteInfo {
   

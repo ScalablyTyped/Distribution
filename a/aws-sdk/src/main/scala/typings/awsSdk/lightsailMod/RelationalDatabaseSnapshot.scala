@@ -2,86 +2,84 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseSnapshot extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the database snapshot.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The timestamp when the database snapshot was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The software of the database snapshot (for example, MySQL)
     */
-  var engine: js.UndefOr[NonEmptyString] = js.native
+  var engine: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The database engine version for the database snapshot (for example, 5.7.23).
     */
-  var engineVersion: js.UndefOr[NonEmptyString] = js.native
+  var engineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the database from which the database snapshot was created.
     */
-  var fromRelationalDatabaseArn: js.UndefOr[NonEmptyString] = js.native
+  var fromRelationalDatabaseArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The blueprint ID of the database from which the database snapshot was created. A blueprint describes the major engine version of a database.
     */
-  var fromRelationalDatabaseBlueprintId: js.UndefOr[String] = js.native
+  var fromRelationalDatabaseBlueprintId: js.UndefOr[String] = js.undefined
   
   /**
     * The bundle ID of the database from which the database snapshot was created.
     */
-  var fromRelationalDatabaseBundleId: js.UndefOr[String] = js.native
+  var fromRelationalDatabaseBundleId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the source database from which the database snapshot was created.
     */
-  var fromRelationalDatabaseName: js.UndefOr[NonEmptyString] = js.native
+  var fromRelationalDatabaseName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Region name and Availability Zone where the database snapshot is located.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the database snapshot.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Lightsail resource type.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The size of the disk in GB (for example, 32) for the database snapshot.
     */
-  var sizeInGb: js.UndefOr[integer] = js.native
+  var sizeInGb: js.UndefOr[integer] = js.undefined
   
   /**
     * The state of the database snapshot.
     */
-  var state: js.UndefOr[NonEmptyString] = js.native
+  var state: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The support code for the database snapshot. Include this code in your email to support when you have questions about a database snapshot in Lightsail. This code enables our support team to look up your Lightsail information more easily.
     */
-  var supportCode: js.UndefOr[String] = js.native
+  var supportCode: js.UndefOr[String] = js.undefined
   
   /**
     * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object RelationalDatabaseSnapshot {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTagsRequest extends StObject {
   
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * An array of tag keys to delete
     */
-  var TagKeys: listOfString = js.native
+  var TagKeys: listOfString
 }
 object DeleteTagsRequest {
   

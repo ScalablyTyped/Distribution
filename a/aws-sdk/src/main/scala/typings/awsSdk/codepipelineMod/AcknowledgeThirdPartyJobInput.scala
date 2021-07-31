@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcknowledgeThirdPartyJobInput extends StObject {
   
   /**
     * The clientToken portion of the clientId and clientToken pair used to verify that the calling entity is allowed access to the job and its details.
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The unique system-generated ID of the job.
     */
-  var jobId: ThirdPartyJobId = js.native
+  var jobId: ThirdPartyJobId
   
   /**
     * A system-generated random number that AWS CodePipeline uses to ensure that the job is being worked on by only one job worker. Get this number from the response to a GetThirdPartyJobDetails request.
     */
-  var nonce: Nonce = js.native
+  var nonce: Nonce
 }
 object AcknowledgeThirdPartyJobInput {
   

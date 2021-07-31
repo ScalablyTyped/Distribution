@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1", "firestore_v1.Resource$Projects$Databases$Operations")
@@ -37,7 +36,7 @@ class ResourceProjectsDatabasesOperations protected () extends StObject {
     */
   def cancel(): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(params: ParamsResourceProjectsDatabasesOperationsCancel): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(
     params: ParamsResourceProjectsDatabasesOperationsCancel,
@@ -74,7 +73,7 @@ class ResourceProjectsDatabasesOperations protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsDatabasesOperationsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsDatabasesOperationsDelete,
@@ -108,7 +107,7 @@ class ResourceProjectsDatabasesOperations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def get(params: ParamsResourceProjectsDatabasesOperationsGet): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def get(
     params: ParamsResourceProjectsDatabasesOperationsGet,
@@ -151,7 +150,7 @@ class ResourceProjectsDatabasesOperations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleLongrunningListOperationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleLongrunningListOperationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningListOperationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningListOperationsResponse] = js.native
   def list(params: ParamsResourceProjectsDatabasesOperationsList): GaxiosPromise[SchemaGoogleLongrunningListOperationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsDatabasesOperationsList,

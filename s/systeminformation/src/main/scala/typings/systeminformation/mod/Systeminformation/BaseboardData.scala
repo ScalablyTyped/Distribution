@@ -2,21 +2,19 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseboardData extends StObject {
   
-  var assetTag: String = js.native
+  var assetTag: String
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var model: String = js.native
+  var model: String
   
-  var serial: String = js.native
+  var serial: String
   
-  var version: String = js.native
+  var version: String
 }
 object BaseboardData {
   

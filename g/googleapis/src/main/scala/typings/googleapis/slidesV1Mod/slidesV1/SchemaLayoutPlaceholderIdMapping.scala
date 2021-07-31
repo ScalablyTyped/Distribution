@@ -2,14 +2,12 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The user-specified ID mapping for a placeholder that will be created on a
   * slide from a specified layout.
   */
-@js.native
 trait SchemaLayoutPlaceholderIdMapping extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaLayoutPlaceholderIdMapping extends StObject {
     * may usually have a TITLE placeholder with index 0 and a BODY placeholder
     * with index 0.
     */
-  var layoutPlaceholder: js.UndefOr[SchemaPlaceholder] = js.native
+  var layoutPlaceholder: js.UndefOr[SchemaPlaceholder] = js.undefined
   
   /**
     * The object ID of the placeholder on a layout that will be applied to a
     * slide.
     */
-  var layoutPlaceholderObjectId: js.UndefOr[String] = js.native
+  var layoutPlaceholderObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * A user-supplied object ID for the placeholder identified above that to be
@@ -36,7 +34,7 @@ trait SchemaLayoutPlaceholderIdMapping extends StObject {
     * than 5 or greater than 50.  If you don&#39;t specify an ID, a unique one
     * is generated.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaLayoutPlaceholderIdMapping {
   

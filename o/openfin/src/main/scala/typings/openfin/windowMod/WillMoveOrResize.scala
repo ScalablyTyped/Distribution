@@ -3,21 +3,21 @@ package typings.openfin.windowMod
 import typings.openfin.eventsBaseMod.WindowEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WillMoveOrResize[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WillMoveOrResize[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var monitorScaleFactor: Double = js.native
+  var monitorScaleFactor: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object WillMoveOrResize {
   
@@ -39,7 +39,7 @@ object WillMoveOrResize {
   }
   
   @scala.inline
-  implicit class WillMoveOrResizeMutableBuilder[Self <: WillMoveOrResize[_, _], Topic, Type] (val x: Self with (WillMoveOrResize[Topic, Type])) extends AnyVal {
+  implicit class WillMoveOrResizeMutableBuilder[Self <: WillMoveOrResize[?, ?], Topic, Type] (val x: Self & (WillMoveOrResize[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

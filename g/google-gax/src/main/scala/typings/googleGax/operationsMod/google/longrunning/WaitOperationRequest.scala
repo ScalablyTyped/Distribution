@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a WaitOperationRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new WaitOperationRequest.
   * @param [properties] Properties to set
   */
-class WaitOperationRequest () extends IWaitOperationRequest {
+class WaitOperationRequest ()
+  extends StObject
+     with IWaitOperationRequest {
   def this(properties: IWaitOperationRequest) = this()
   
   /** WaitOperationRequest name. */
@@ -32,18 +33,20 @@ class WaitOperationRequest () extends IWaitOperationRequest {
 }
 object WaitOperationRequest {
   
+  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new WaitOperationRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns WaitOperationRequest instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.create")
-  @js.native
-  def create(): WaitOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.create")
-  @js.native
-  def create(properties: IWaitOperationRequest): WaitOperationRequest = js.native
+  @scala.inline
+  def create(): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[WaitOperationRequest]
+  @scala.inline
+  def create(properties: IWaitOperationRequest): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   
   /**
     * Decodes a WaitOperationRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object WaitOperationRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.decode")
-  @js.native
-  def decode(reader: Reader): WaitOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): WaitOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): WaitOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): WaitOperationRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[WaitOperationRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[WaitOperationRequest]
   
   /**
     * Decodes a WaitOperationRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object WaitOperationRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): WaitOperationRequest = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): WaitOperationRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   
   /**
     * Encodes the specified WaitOperationRequest message. Does not implicitly {@link google.longrunning.WaitOperationRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object WaitOperationRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.encode")
-  @js.native
-  def encode(message: IWaitOperationRequest): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.encode")
-  @js.native
-  def encode(message: IWaitOperationRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IWaitOperationRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IWaitOperationRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified WaitOperationRequest message, length delimited. Does not implicitly {@link google.longrunning.WaitOperationRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object WaitOperationRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IWaitOperationRequest): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IWaitOperationRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IWaitOperationRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IWaitOperationRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a WaitOperationRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object WaitOperationRequest {
     * @returns WaitOperationRequest
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): WaitOperationRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   
   /**
     * Creates a plain object from a WaitOperationRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object WaitOperationRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.toObject")
-  @js.native
-  def toObject(message: WaitOperationRequest): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.toObject")
-  @js.native
-  def toObject(message: WaitOperationRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: WaitOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: WaitOperationRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a WaitOperationRequest message.
@@ -140,7 +130,6 @@ object WaitOperationRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.longrunning.WaitOperationRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

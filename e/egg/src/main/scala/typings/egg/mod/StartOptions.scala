@@ -2,20 +2,18 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartOptions extends StObject {
   
   /** directory of application, default to `process.cwd()` */
-  var baseDir: js.UndefOr[String] = js.native
+  var baseDir: js.UndefOr[String] = js.undefined
   
   /** specify framework that can be absolute path or npm package */
-  var framework: js.UndefOr[String] = js.native
+  var framework: js.UndefOr[String] = js.undefined
   
   /** ignore single process mode warning */
-  var ignoreWarning: js.UndefOr[Boolean] = js.native
+  var ignoreWarning: js.UndefOr[Boolean] = js.undefined
 }
 object StartOptions {
   

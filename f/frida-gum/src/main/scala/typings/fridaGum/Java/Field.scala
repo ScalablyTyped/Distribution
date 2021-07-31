@@ -2,31 +2,29 @@ package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field[Value, Holder /* <: Members[Holder] */] extends StObject {
   
   /**
     * Type of value.
     */
-  var fieldReturnType: Type = js.native
+  var fieldReturnType: Type
   
   /**
     * What kind of field this is, i.e. static vs instance.
     */
-  var fieldType: FieldType = js.native
+  var fieldType: FieldType
   
   /**
     * Class that this field belongs to.
     */
-  var holder: Wrapper[Holder] = js.native
+  var holder: Wrapper[Holder]
   
   /**
     * Current value of this field. Assign to update the field's value.
     */
-  var value: Value = js.native
+  var value: Value
 }
 object Field {
   
@@ -37,7 +35,7 @@ object Field {
   }
   
   @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field[_, _], Value, Holder /* <: Members[Holder] */] (val x: Self with (Field[Value, Holder])) extends AnyVal {
+  implicit class FieldMutableBuilder[Self <: Field[?, ?], Value, Holder /* <: Members[Holder] */] (val x: Self & (Field[Value, Holder])) extends AnyVal {
     
     @scala.inline
     def setFieldReturnType(value: Type): Self = StObject.set(x, "fieldReturnType", value.asInstanceOf[js.Any])

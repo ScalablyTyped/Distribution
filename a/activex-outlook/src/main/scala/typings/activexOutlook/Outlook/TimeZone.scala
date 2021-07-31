@@ -3,40 +3,38 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeZone extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Bias: Double = js.native
+  val Bias: Double
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val DaylightBias: Double = js.native
+  val DaylightBias: Double
   
-  val DaylightDate: VarDate = js.native
+  val DaylightDate: VarDate
   
-  val DaylightDesignation: String = js.native
+  val DaylightDesignation: String
   
-  val ID: String = js.native
+  val ID: String
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Outlook.TimeZone_typekey")
-  var OutlookDotTimeZone_typekey: TimeZone = js.native
+  var OutlookDotTimeZone_typekey: TimeZone
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val StandardBias: Double = js.native
+  val StandardBias: Double
   
-  val StandardDate: VarDate = js.native
+  val StandardDate: VarDate
   
-  val StandardDesignation: String = js.native
+  val StandardDesignation: String
 }
 object TimeZone {
   

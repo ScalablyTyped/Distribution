@@ -2,7 +2,6 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait TaskAgentPoolActionFilter extends StObject
 object TaskAgentPoolActionFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TaskAgentPoolActionFilter with Double] = js.native
+  def apply(value: Double): js.UndefOr[TaskAgentPoolActionFilter & Double] = js.native
   
   @js.native
-  sealed trait Manage extends TaskAgentPoolActionFilter
-  /* 2 */ val Manage: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolActionFilter.Manage with Double = js.native
+  sealed trait Manage
+    extends StObject
+       with TaskAgentPoolActionFilter
+  /* 2 */ val Manage: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolActionFilter.Manage & Double = js.native
   
   @js.native
-  sealed trait None extends TaskAgentPoolActionFilter
-  /* 0 */ val None: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolActionFilter.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with TaskAgentPoolActionFilter
+  /* 0 */ val None: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolActionFilter.None & Double = js.native
   
   @js.native
-  sealed trait Use extends TaskAgentPoolActionFilter
-  /* 16 */ val Use: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolActionFilter.Use with Double = js.native
+  sealed trait Use
+    extends StObject
+       with TaskAgentPoolActionFilter
+  /* 16 */ val Use: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolActionFilter.Use & Double = js.native
 }

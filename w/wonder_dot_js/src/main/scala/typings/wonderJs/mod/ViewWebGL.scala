@@ -1,8 +1,8 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "ViewWebGL")
 @js.native
@@ -10,11 +10,13 @@ class ViewWebGL protected ()
   extends typings.wonderJs.viewMod.ViewWebGL {
   def this(dom: js.Any) = this()
 }
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "ViewWebGL")
-@js.native
-object ViewWebGL extends js.Object {
-  def create(view: js.Any): typings.wonderJs.viewMod.ViewWebGL = js.native
+object ViewWebGL {
+  
+  @JSImport("wonder.js/dist/es2015", "ViewWebGL")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(view: js.Any): typings.wonderJs.viewMod.ViewWebGL = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(view.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.viewMod.ViewWebGL]
 }
-

@@ -3,32 +3,31 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.tuyaPanelKitStrings.SET_PARAMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type
-  extends typings.tuyaPanelKit.commonActionsMod.Action {
+  extends StObject
+     with typings.tuyaPanelKit.commonActionsMod.Action {
   
   /**
     * List of previously visited route keys.
     */
-  var payload: `0` = js.native
+  var payload: `0`
   
   // tslint:disable-next-line no-redundant-undefined
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   // tslint:disable-next-line no-redundant-undefined
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: SET_PARAMS = js.native
+  var `type`: SET_PARAMS
 }
 object Type {
   
   @scala.inline
-  def apply(payload: `0`, `type`: SET_PARAMS): Type = {
+  def apply(payload: `0`): Type = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SET_PARAMS")
     __obj.asInstanceOf[Type]
   }
   

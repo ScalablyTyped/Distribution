@@ -2,14 +2,12 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information provided by the user when they complete the subscription
   * cancellation flow (cancellation reason survey).
   */
-@js.native
 trait SchemaSubscriptionCancelSurveyResult extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaSubscriptionCancelSurveyResult extends StObject {
     * are:   - Other  - I don&#39;t use this service enough  - Technical issues
     * - Cost-related reasons  - I found a better app
     */
-  var cancelSurveyReason: js.UndefOr[Double] = js.native
+  var cancelSurveyReason: js.UndefOr[Double] = js.undefined
   
   /**
     * The customized input cancel reason from the user. Only present when
     * cancelReason is 0.
     */
-  var userInputCancelReason: js.UndefOr[String] = js.native
+  var userInputCancelReason: js.UndefOr[String] = js.undefined
 }
 object SchemaSubscriptionCancelSurveyResult {
   

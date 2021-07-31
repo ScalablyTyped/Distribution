@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.playable.coreTypesMod.IStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeTypesMod {
   
-  @js.native
-  trait ICSSRule extends /* cssPropName */ StringDictionary[String | ICSSRuleFunction | ICSSRule]
+  trait ICSSRule
+    extends StObject
+       with /* cssPropName */ StringDictionary[String | ICSSRuleFunction | ICSSRule]
   object ICSSRule {
     
     @scala.inline
@@ -24,10 +24,9 @@ object themeTypesMod {
   
   type ICSSRules = StringDictionary[ICSSRule]
   
-  @js.native
   trait IThemeAPI extends StObject {
     
-    var updateTheme: js.UndefOr[js.Function1[/* themeConfig */ IThemeConfig, Unit]] = js.native
+    var updateTheme: js.UndefOr[js.Function1[/* themeConfig */ IThemeConfig, Unit]] = js.undefined
   }
   object IThemeAPI {
     
@@ -48,12 +47,11 @@ object themeTypesMod {
     }
   }
   
-  @js.native
   trait IThemeConfig extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var progressColor: js.UndefOr[String] = js.native
+    var progressColor: js.UndefOr[String] = js.undefined
   }
   object IThemeConfig {
     
@@ -80,16 +78,15 @@ object themeTypesMod {
     }
   }
   
-  @js.native
   trait IThemeService extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def get(module: js.Object): IStyles = js.native
+    def get(module: js.Object): IStyles
     
-    def registerModuleTheme(module: js.Object, rules: ICSSRules): Unit = js.native
+    def registerModuleTheme(module: js.Object, rules: ICSSRules): Unit
     
-    def updateTheme(config: IThemeConfig): Unit = js.native
+    def updateTheme(config: IThemeConfig): Unit
   }
   object IThemeService {
     

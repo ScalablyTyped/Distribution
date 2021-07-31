@@ -2,63 +2,61 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single object that is an item in the search index, such as a
   * file, folder, or a database record.
   */
-@js.native
 trait SchemaItem extends StObject {
   
   /**
     * Access control list for this item.
     */
-  var acl: js.UndefOr[SchemaItemAcl] = js.native
+  var acl: js.UndefOr[SchemaItemAcl] = js.undefined
   
   /**
     * Item content to be indexed and made text searchable.
     */
-  var content: js.UndefOr[SchemaItemContent] = js.native
+  var content: js.UndefOr[SchemaItemContent] = js.undefined
   
   /**
     * Type for this item.
     */
-  var itemType: js.UndefOr[String] = js.native
+  var itemType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata information.
     */
-  var metadata: js.UndefOr[SchemaItemMetadata] = js.native
+  var metadata: js.UndefOr[SchemaItemMetadata] = js.undefined
   
   /**
     * Name of the Item. Format: datasources/{source_id}/items/{item_id} &lt;br
     * /&gt;This is a required field. The maximum length is 1536 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Additional state connector can store for this item. The maximum length is
     * 10000 bytes.
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * Queue this item belongs to. The maximum length is 100 characters.
     */
-  var queue: js.UndefOr[String] = js.native
+  var queue: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the item. Output only field.
     */
-  var status: js.UndefOr[SchemaItemStatus] = js.native
+  var status: js.UndefOr[SchemaItemStatus] = js.undefined
   
   /**
     * The structured data for the item that should conform to a registered
     * object definition in the schema for the data source.
     */
-  var structuredData: js.UndefOr[SchemaItemStructuredData] = js.native
+  var structuredData: js.UndefOr[SchemaItemStructuredData] = js.undefined
   
   /**
     * Required. The indexing system stores the version from the datasource as a
@@ -68,7 +66,7 @@ trait SchemaItem extends StObject {
     * value that is less than or equal to the version of the currently indexed
     * item. The maximum length for this field is 1024 bytes.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaItem {
   

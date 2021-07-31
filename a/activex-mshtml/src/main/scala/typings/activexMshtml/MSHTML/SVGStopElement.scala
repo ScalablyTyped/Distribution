@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGStopElement extends StObject {
   
   @JSName("MSHTML.SVGStopElement_typekey")
-  var MSHTMLDotSVGStopElement_typekey: SVGStopElement = js.native
+  var MSHTMLDotSVGStopElement_typekey: SVGStopElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  var offset: SVGAnimatedNumber = js.native
+  var offset: SVGAnimatedNumber
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
 }
 object SVGStopElement {
   

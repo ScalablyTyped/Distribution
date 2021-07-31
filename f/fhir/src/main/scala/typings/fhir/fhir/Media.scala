@@ -2,140 +2,140 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Media extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Media
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'duration'.
     */
-  var _duration: js.UndefOr[Element] = js.native
+  var _duration: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'frames'.
     */
-  var _frames: js.UndefOr[Element] = js.native
+  var _frames: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'height'.
     */
-  var _height: js.UndefOr[Element] = js.native
+  var _height: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'occurrenceDateTime'.
     */
-  var _occurrenceDateTime: js.UndefOr[Element] = js.native
+  var _occurrenceDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'width'.
     */
-  var _width: js.UndefOr[Element] = js.native
+  var _width: js.UndefOr[Element] = js.undefined
   
   /**
     * Procedure that caused this media to be created
     */
-  var basedOn: js.UndefOr[js.Array[Reference]] = js.native
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Body part in media
     */
-  var bodySite: js.UndefOr[CodeableConcept] = js.native
+  var bodySite: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Actual Media - reference or data
     */
-  var content: Attachment = js.native
+  var content: Attachment
   
   /**
     * Encounter / Episode associated with media
     */
-  var context: js.UndefOr[Reference] = js.native
+  var context: js.UndefOr[Reference] = js.undefined
   
   /**
     * Observing Device
     */
-  var device: js.UndefOr[Reference] = js.native
+  var device: js.UndefOr[Reference] = js.undefined
   
   /**
     * Length in seconds (audio / video)
     */
-  var duration: js.UndefOr[unsignedInt] = js.native
+  var duration: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * Number of frames if > 1 (photo)
     */
-  var frames: js.UndefOr[positiveInt] = js.native
+  var frames: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Height of the image in pixels (photo/video)
     */
-  var height: js.UndefOr[positiveInt] = js.native
+  var height: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Identifier(s) for the image
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Comments made about the media
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * When Media was collected
     */
-  var occurrenceDateTime: js.UndefOr[dateTime] = js.native
+  var occurrenceDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * When Media was collected
     */
-  var occurrencePeriod: js.UndefOr[Period] = js.native
+  var occurrencePeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * The person who generated the image
     */
-  var operator: js.UndefOr[Reference] = js.native
+  var operator: js.UndefOr[Reference] = js.undefined
   
   /**
     * Why was event performed?
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Who/What this Media is a record of
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
   
   /**
     * The type of acquisition equipment/process
     */
-  var subtype: js.UndefOr[CodeableConcept] = js.native
+  var subtype: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * photo | video | audio
     */
-  var `type`: code = js.native
+  var `type`: code
   
   /**
     * Imaging view, e.g. Lateral or Antero-posterior
     */
-  var view: js.UndefOr[CodeableConcept] = js.native
+  var view: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Width of the image in pixels (photo/video)
     */
-  var width: js.UndefOr[positiveInt] = js.native
+  var width: js.UndefOr[positiveInt] = js.undefined
 }
 object Media {
   

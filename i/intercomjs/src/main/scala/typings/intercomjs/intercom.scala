@@ -2,7 +2,6 @@ package typings.intercomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intercom {
@@ -50,13 +49,12 @@ object intercom {
     def once(key: String, fn: js.Function, ttl: Double): Unit = js.native
   }
   
-  @js.native
   trait SocketBindingOptions extends StObject {
     
     /* boolean | (name: string, message: any)=>any */
-    var receive: js.UndefOr[js.Any] = js.native
+    var receive: js.UndefOr[js.Any] = js.undefined
     
-    var send: js.UndefOr[js.Any] = js.native
+    var send: js.UndefOr[js.Any] = js.undefined
   }
   object SocketBindingOptions {
     

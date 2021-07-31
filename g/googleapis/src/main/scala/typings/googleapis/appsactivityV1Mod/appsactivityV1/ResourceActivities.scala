@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appsactivity/v1", "appsactivity_v1.Resource$Activities")
@@ -41,7 +40,7 @@ class ResourceActivities protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListActivitiesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListActivitiesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListActivitiesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListActivitiesResponse] = js.native
   def list(params: ParamsResourceActivitiesList): GaxiosPromise[SchemaListActivitiesResponse] = js.native
   def list(params: ParamsResourceActivitiesList, callback: BodyResponseCallback[SchemaListActivitiesResponse]): Unit = js.native
   def list(

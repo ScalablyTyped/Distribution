@@ -3,27 +3,25 @@ package typings.angularCompiler.compileMetadataMod
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileInjectableMetadata extends StObject {
   
-  var deps: js.UndefOr[js.Array[_]] = js.native
+  var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var providedIn: js.UndefOr[StaticSymbol] = js.native
+  var providedIn: js.UndefOr[StaticSymbol] = js.undefined
   
-  var symbol: StaticSymbol = js.native
+  var symbol: StaticSymbol
   
-  var `type`: CompileTypeMetadata = js.native
+  var `type`: CompileTypeMetadata
   
-  var useClass: js.UndefOr[StaticSymbol] = js.native
+  var useClass: js.UndefOr[StaticSymbol] = js.undefined
   
-  var useExisting: js.UndefOr[StaticSymbol] = js.native
+  var useExisting: js.UndefOr[StaticSymbol] = js.undefined
   
-  var useFactory: js.UndefOr[StaticSymbol] = js.native
+  var useFactory: js.UndefOr[StaticSymbol] = js.undefined
   
-  var useValue: js.UndefOr[js.Any] = js.native
+  var useValue: js.UndefOr[js.Any] = js.undefined
 }
 object CompileInjectableMetadata {
   
@@ -38,7 +36,7 @@ object CompileInjectableMetadata {
   implicit class CompileInjectableMetadataMutableBuilder[Self <: CompileInjectableMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)

@@ -6,7 +6,6 @@ import typings.tslint.completedDocsRuleMod.Privacy
 import typings.tslint.exclusionMod.Exclusion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constructorExclusionMod {
@@ -19,10 +18,9 @@ object constructorExclusionMod {
     val privacies: Set[Privacy] = js.native
   }
   
-  @js.native
   trait IConstructorExclusionDescriptor extends StObject {
     
-    var privacies: js.UndefOr[js.Array[Privacy]] = js.native
+    var privacies: js.UndefOr[js.Array[Privacy]] = js.undefined
   }
   object IConstructorExclusionDescriptor {
     

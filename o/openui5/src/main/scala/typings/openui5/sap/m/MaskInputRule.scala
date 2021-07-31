@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaskInputRule extends Element {
+trait MaskInputRule
+  extends StObject
+     with Element {
   
   /**
     * Gets current value of property <code>maskFormatSymbol</code>.Defines the symbol used in the mask

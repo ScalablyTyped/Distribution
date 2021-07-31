@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeIntegration extends StObject {
   
-  var nodeIntegration: Boolean = js.native
+  var nodeIntegration: Boolean
   
-  var plugins: Boolean = js.native
+  var plugins: Boolean
 }
 object NodeIntegration {
   

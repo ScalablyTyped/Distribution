@@ -4,17 +4,17 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INodeInterface extends IBase {
+trait INodeInterface
+  extends StObject
+     with IBase {
   
   /** [Method] Insert node s as the last child node of this node
     * @param node Ext.data.NodeInterface/Ext.data.NodeInterface[] The node or Array of nodes to append.
     * @returns Ext.data.NodeInterface The appended node if single append, or null if an array was passed.
     */
-  var appendChild: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], this.type]] = js.native
+  var appendChild: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Method] Bubbles up the tree from this node calling the specified function with each node
     * @param fn Function The function to call.
@@ -28,7 +28,7 @@ trait INodeInterface extends IBase {
       /* args */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Cascades down the tree from this node calling the specified function with each node
     * @param fn Function The function to call
@@ -42,10 +42,10 @@ trait INodeInterface extends IBase {
       /* args */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Object) */
-  var childNodes: js.UndefOr[js.Any] = js.native
+  var childNodes: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Collapse this node
     * @param recursive Function true to recursively collapse all the children.
@@ -59,13 +59,13 @@ trait INodeInterface extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns true if this node is an ancestor at any point of the passed node
     * @param node Ext.data.NodeInterface
     * @returns Boolean
     */
-  var contains: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.native
+  var contains: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.undefined
   
   /** [Method] Creates a copy clone of this Node
     * @param newId String A new id, defaults to this Node's id.
@@ -74,13 +74,13 @@ trait INodeInterface extends IBase {
     */
   var copy: js.UndefOr[
     js.Function2[/* newId */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Destroys the node
     * @param silent Object
     */
   @JSName("destroy")
-  var destroy_INodeInterface: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.native
+  var destroy_INodeInterface: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Iterates the child nodes of this node calling the specified function with each node
     * @param fn Function The function to call.
@@ -94,7 +94,7 @@ trait INodeInterface extends IBase {
       /* args */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Expand this node
     * @param recursive Function true to recursively expand all the children.
@@ -108,7 +108,7 @@ trait INodeInterface extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Finds the first child that has the attribute with the specified value
     * @param attribute String The attribute name.
@@ -123,7 +123,7 @@ trait INodeInterface extends IBase {
       /* deep */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Finds the first child by a custom function
     * @param fn Function A function which must return true if the passed Node is the required Node.
@@ -138,21 +138,21 @@ trait INodeInterface extends IBase {
       /* deep */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Object) */
-  var firstChild: js.UndefOr[js.Any] = js.native
+  var firstChild: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the child node at the specified index
     * @param index Number
     * @returns Ext.data.NodeInterface
     */
-  var getChildAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.native
+  var getChildAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Method] Returns depth of this node the root node has a depth of 0
     * @returns Number
     */
-  var getDepth: js.UndefOr[js.Function0[Double]] = js.native
+  var getDepth: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Gets the hierarchical path from the root of the current node
     * @param field String The field to construct the path from. Defaults to the model idProperty.
@@ -161,18 +161,18 @@ trait INodeInterface extends IBase {
     */
   var getPath: js.UndefOr[
     js.Function2[/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], String]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns true if this node has one or more child nodes else false
     * @returns Boolean
     */
-  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the index of a child node
     * @param child Ext.data.NodeInterface
     * @returns Number The index of the node or -1 if it was not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* child */ js.UndefOr[this.type], Double]] = js.native
+  var indexOf: js.UndefOr[js.Function1[/* child */ js.UndefOr[this.type], Double]] = js.undefined
   
   /** [Method] Inserts the first node before the second node in this nodes childNodes collection
     * @param node Ext.data.NodeInterface The node to insert.
@@ -181,7 +181,7 @@ trait INodeInterface extends IBase {
     */
   var insertBefore: js.UndefOr[
     js.Function2[/* node */ js.UndefOr[this.type], /* refNode */ js.UndefOr[this.type], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Insert a node into this node
     * @param index Number The zero-based index to insert the node at.
@@ -190,82 +190,82 @@ trait INodeInterface extends IBase {
     */
   var insertChild: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[Double], /* node */ js.UndefOr[IModel], IModel]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns true if the passed node is an ancestor at any point of this node
     * @param node Ext.data.NodeInterface
     * @returns Boolean
     */
-  var isAncestor: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.native
+  var isAncestor: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.undefined
   
   /** [Method] Returns true if this node has one or more child nodes or if the expandable node attribute is explicitly specified as
     * @returns Boolean
     */
-  var isExpandable: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isExpandable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is expanded
     * @returns Boolean
     */
-  var isExpanded: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isExpanded: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is the first child of its parent
     * @returns Boolean
     */
-  var isFirst: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isFirst: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is the last child of its parent
     * @returns Boolean
     */
-  var isLast: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isLast: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is a leaf
     * @returns Boolean
     */
-  var isLeaf: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isLeaf: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is loaded
     * @returns Boolean
     */
-  var isLoaded: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isLoaded: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is loading
     * @returns Boolean
     */
-  var isLoading: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isLoading: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is the root node
     * @returns Boolean
     */
-  var isRoot: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isRoot: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns true if this node is visible
     * @returns Boolean
     */
-  var isVisible: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isVisible: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Property] (Object) */
-  var lastChild: js.UndefOr[js.Any] = js.native
+  var lastChild: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var nextSibling: js.UndefOr[js.Any] = js.native
+  var nextSibling: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var parentNode: js.UndefOr[js.Any] = js.native
+  var parentNode: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Object) */
-  var previousSibling: js.UndefOr[js.Any] = js.native
+  var previousSibling: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Removes this node from its parent
     * @param destroy Boolean true to destroy the node upon removal.
     * @returns Ext.data.NodeInterface this
     */
-  var remove: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.native
+  var remove: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.undefined
   
   /** [Method] Removes all child nodes from this node
     * @param destroy Boolean true to destroy the node upon removal.
     * @returns Ext.data.NodeInterface this
     */
-  var removeAll: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.native
+  var removeAll: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.undefined
   
   /** [Method] Removes a child node from this node
     * @param node Ext.data.NodeInterface The node to remove.
@@ -274,7 +274,7 @@ trait INodeInterface extends IBase {
     */
   var removeChild: js.UndefOr[
     js.Function2[/* node */ js.UndefOr[this.type], /* destroy */ js.UndefOr[Boolean], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Replaces one child node in this node with another
     * @param newChild Ext.data.NodeInterface The replacement node.
@@ -287,7 +287,7 @@ trait INodeInterface extends IBase {
       /* oldChild */ js.UndefOr[this.type], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sorts this nodes children using the supplied sort function
     * @param sortFn Function A function which, when passed two Nodes, returns -1, 0 or 1 depending upon required sort order.
@@ -301,13 +301,13 @@ trait INodeInterface extends IBase {
       /* suppressEvent */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Updates general data of this node like isFirst isLast depth
     * @param silent Object
     * @returns Boolean
     */
-  var updateInfo: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Boolean]] = js.native
+  var updateInfo: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Boolean]] = js.undefined
 }
 object INodeInterface {
   

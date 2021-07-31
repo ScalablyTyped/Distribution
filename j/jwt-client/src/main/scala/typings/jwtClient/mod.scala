@@ -2,71 +2,60 @@ package typings.jwtClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jwt-client", "forget")
+  @JSImport("jwt-client", JSImport.Namespace)
   @js.native
-  def forget(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jwt-client", "get")
-  @js.native
-  def get(): String = js.native
+  @scala.inline
+  def forget(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forget")().asInstanceOf[Unit]
   
-  @JSImport("jwt-client", "keep")
-  @js.native
-  def keep(value: JWTObject): Unit = js.native
-  @JSImport("jwt-client", "keep")
-  @js.native
-  def keep(value: JWTObject, key: js.UndefOr[scala.Nothing], storate: js.Any): Unit = js.native
-  @JSImport("jwt-client", "keep")
-  @js.native
-  def keep(value: JWTObject, key: js.Any): Unit = js.native
-  @JSImport("jwt-client", "keep")
-  @js.native
-  def keep(value: JWTObject, key: js.Any, storate: js.Any): Unit = js.native
+  @scala.inline
+  def get(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[String]
+  
+  @scala.inline
+  def keep(value: JWTObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def keep(value: JWTObject, key: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def keep(value: JWTObject, key: js.Any, storate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], storate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def keep(value: JWTObject, key: Unit, storate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], storate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Read a string value (normally an HTTP header)
     * from JSON Web Token to an Object
     */ 
-  @JSImport("jwt-client", "read")
-  @js.native
-  def read(header: String): JWTObject = js.native
+  @scala.inline
+  def read(header: String): JWTObject = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(header.asInstanceOf[js.Any]).asInstanceOf[JWTObject]
   
-  @JSImport("jwt-client", "remember")
-  @js.native
-  def remember(): Unit = js.native
+  @scala.inline
+  def remember(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remember")().asInstanceOf[Unit]
   
-  @JSImport("jwt-client", "validate")
-  @js.native
-  def validate(value: JWTObject): Boolean = js.native
-  @JSImport("jwt-client", "validate")
-  @js.native
-  def validate(value: JWTObject, issuer: js.UndefOr[scala.Nothing], audience: js.Any): Boolean = js.native
-  @JSImport("jwt-client", "validate")
-  @js.native
-  def validate(value: JWTObject, issuer: js.Any): Boolean = js.native
-  @JSImport("jwt-client", "validate")
-  @js.native
-  def validate(value: JWTObject, issuer: js.Any, audience: js.Any): Boolean = js.native
+  @scala.inline
+  def validate(value: JWTObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def validate(value: JWTObject, issuer: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validate(value: JWTObject, issuer: js.Any, audience: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], audience.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validate(value: JWTObject, issuer: Unit, audience: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], audience.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Given a JWT object, stringify it back to
     * its JWT representation.
     */ 
-  @JSImport("jwt-client", "write")
-  @js.native
-  def write(value: JWTObject): String = js.native
+  @scala.inline
+  def write(value: JWTObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait JWTHeader extends StObject {
     
-    var alg: String = js.native
+    var alg: String
     
-    var typ: String = js.native
+    var typ: String
   }
   object JWTHeader {
     
@@ -87,14 +76,13 @@ object mod {
     }
   }
   
-  @js.native
   trait JWTObject extends StObject {
     
-    var claim: js.Any = js.native
+    var claim: js.Any
     
-    var header: JWTHeader = js.native
+    var header: JWTHeader
     
-    var signature: String = js.native
+    var signature: String
   }
   object JWTObject {
     

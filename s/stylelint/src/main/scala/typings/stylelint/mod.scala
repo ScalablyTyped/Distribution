@@ -8,91 +8,87 @@ import typings.stylelint.anon.Index
 import typings.stylelint.anon.PartialConfiguration
 import typings.stylelint.anon.PartialLinterOptions
 import typings.stylelint.anon.Root
-import typings.stylelint.stylelintBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("stylelint", "createPlugin")
+  @JSImport("stylelint", JSImport.Namespace)
   @js.native
-  def createPlugin(ruleName: String, plugin: Plugin): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("stylelint", "createRuleTester")
-  @js.native
+  @scala.inline
+  def createPlugin(ruleName: String, plugin: Plugin): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlugin")(ruleName.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
   def createRuleTester(
     fn: js.Function2[
       /* result */ js.Promise[js.Array[RuleTesterResult]], 
       /* context */ RuleTesterContext, 
       Unit
     ]
-  ): js.Function2[/* rule */ Plugin, /* schema */ RuleTesterSchema, Unit] = js.native
+  ): js.Function2[/* rule */ Plugin, /* schema */ RuleTesterSchema, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRuleTester")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* rule */ Plugin, /* schema */ RuleTesterSchema, Unit]]
   
   object formatters {
     
-    @JSImport("stylelint", "formatters.compact")
+    @JSImport("stylelint", "formatters")
     @js.native
-    def compact(results: js.Array[LintResult]): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("stylelint", "formatters.json")
-    @js.native
-    def json(results: js.Array[LintResult]): String = js.native
+    @scala.inline
+    def compact(results: js.Array[LintResult]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(results.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("stylelint", "formatters.string")
-    @js.native
-    def string(results: js.Array[LintResult]): String = js.native
+    @scala.inline
+    def json(results: js.Array[LintResult]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(results.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("stylelint", "formatters.unix")
-    @js.native
-    def unix(results: js.Array[LintResult]): String = js.native
+    @scala.inline
+    def string(results: js.Array[LintResult]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(results.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("stylelint", "formatters.verbose")
-    @js.native
-    def verbose(results: js.Array[LintResult]): String = js.native
+    @scala.inline
+    def unix(results: js.Array[LintResult]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(results.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def verbose(results: js.Array[LintResult]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")(results.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("stylelint", "lint")
-  @js.native
-  def lint(): js.Promise[LinterResult] = js.native
-  @JSImport("stylelint", "lint")
-  @js.native
-  def lint(options: PartialLinterOptions): js.Promise[LinterResult] = js.native
+  @scala.inline
+  def lint(): js.Promise[LinterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("lint")().asInstanceOf[js.Promise[LinterResult]]
+  @scala.inline
+  def lint(options: PartialLinterOptions): js.Promise[LinterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("lint")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LinterResult]]
   
   object utils {
     
-    @JSImport("stylelint", "utils.checkAgainstRule")
+    @JSImport("stylelint", "utils")
     @js.native
-    def checkAgainstRule(options: Root, callback: js.Function1[/* warning */ String, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("stylelint", "utils.report")
-    @js.native
-    def report(violation: Index): Unit = js.native
+    @scala.inline
+    def checkAgainstRule(options: Root, callback: js.Function1[/* warning */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAgainstRule")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("stylelint", "utils.ruleMessages")
-    @js.native
-    def ruleMessages[T /* <: StringDictionary[RuleMessageValue] */](ruleName: String, messages: T): T = js.native
+    @scala.inline
+    def report(violation: Index): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("report")(violation.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("stylelint", "utils.validateOptions")
-    @js.native
-    def validateOptions(result: Result, ruleName: String, options: ValidateOptionsAssertion*): Boolean = js.native
+    @scala.inline
+    def ruleMessages[T /* <: StringDictionary[RuleMessageValue] */](ruleName: String, messages: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ruleMessages")(ruleName.asInstanceOf[js.Any], messages.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    @scala.inline
+    def validateOptions(result: Result, ruleName: String, options: ValidateOptionsAssertion*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")(result.asInstanceOf[js.Any], ruleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
-  @js.native
   trait Configuration extends StObject {
     
-    var defaultSeverity: Severity = js.native
+    var defaultSeverity: Severity
     
-    var `extends`: String | js.Array[String] = js.native
+    var `extends`: String | js.Array[String]
     
-    var ignoreFiles: String | js.Array[String] = js.native
+    var ignoreFiles: String | js.Array[String]
     
-    var plugins: js.Array[String] = js.native
+    var plugins: js.Array[String]
     
-    var processors: js.Array[String] = js.native
+    var processors: js.Array[String]
     
-    var rules: Record[String, _] = js.native
+    var rules: Record[String, js.Any]
   }
   object Configuration {
     
@@ -103,7 +99,7 @@ object mod {
       ignoreFiles: String | js.Array[String],
       plugins: js.Array[String],
       processors: js.Array[String],
-      rules: Record[String, _]
+      rules: Record[String, js.Any]
     ): Configuration = {
       val __obj = js.Dynamic.literal(defaultSeverity = defaultSeverity.asInstanceOf[js.Any], ignoreFiles = ignoreFiles.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], processors = processors.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
       __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
@@ -141,7 +137,7 @@ object mod {
       def setProcessorsVarargs(value: String*): Self = StObject.set(x, "processors", js.Array(value :_*))
       
       @scala.inline
-      def setRules(value: Record[String, _]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      def setRules(value: Record[String, js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,27 +151,26 @@ object mod {
   */
   type FormatterType = _FormatterType | (js.Function1[/* results */ js.Array[LintResult], String])
   
-  @js.native
   trait LintResult extends StObject {
     
-    var deprecations: js.Array[String] = js.native
+    var deprecations: js.Array[String]
     
-    var errored: js.UndefOr[Boolean] = js.native
+    var errored: js.UndefOr[Boolean] = js.undefined
     
-    var ignored: js.UndefOr[Boolean] = js.native
+    var ignored: js.UndefOr[Boolean] = js.undefined
     
-    var invalidOptionWarnings: js.Array[_] = js.native
+    var invalidOptionWarnings: js.Array[js.Any]
     
-    var source: String = js.native
+    var source: String
     
-    var warnings: js.Array[Warning] = js.native
+    var warnings: js.Array[Warning]
   }
   object LintResult {
     
     @scala.inline
     def apply(
       deprecations: js.Array[String],
-      invalidOptionWarnings: js.Array[_],
+      invalidOptionWarnings: js.Array[js.Any],
       source: String,
       warnings: js.Array[Warning]
     ): LintResult = {
@@ -205,7 +200,7 @@ object mod {
       def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
       
       @scala.inline
-      def setInvalidOptionWarnings(value: js.Array[_]): Self = StObject.set(x, "invalidOptionWarnings", value.asInstanceOf[js.Any])
+      def setInvalidOptionWarnings(value: js.Array[js.Any]): Self = StObject.set(x, "invalidOptionWarnings", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInvalidOptionWarningsVarargs(value: js.Any*): Self = StObject.set(x, "invalidOptionWarnings", js.Array(value :_*))
@@ -221,44 +216,43 @@ object mod {
     }
   }
   
-  @js.native
   trait LinterOptions extends StObject {
     
-    var cache: Boolean = js.native
+    var cache: Boolean
     
-    var cacheLocation: String = js.native
+    var cacheLocation: String
     
-    var code: String = js.native
+    var code: String
     
-    var codeFilename: String = js.native
+    var codeFilename: String
     
-    var config: PartialConfiguration = js.native
+    var config: PartialConfiguration
     
-    var configBasedir: String = js.native
+    var configBasedir: String
     
-    var configFile: String = js.native
+    var configFile: String
     
-    var configOverrides: PartialConfiguration = js.native
+    var configOverrides: PartialConfiguration
     
-    var customSyntax: String = js.native
+    var customSyntax: String
     
-    var disableDefaultIgnores: Boolean = js.native
+    var disableDefaultIgnores: Boolean
     
-    var files: String | js.Array[String] = js.native
+    var files: String | js.Array[String]
     
-    var fix: Boolean = js.native
+    var fix: Boolean
     
-    var formatter: FormatterType = js.native
+    var formatter: FormatterType
     
-    var ignoreDisables: Boolean = js.native
+    var ignoreDisables: Boolean
     
-    var ignorePath: String = js.native
+    var ignorePath: String
     
-    var maxWarnings: Double = js.native
+    var maxWarnings: Double
     
-    var reportNeedlessDisables: Boolean = js.native
+    var reportNeedlessDisables: Boolean
     
-    var syntax: SyntaxType = js.native
+    var syntax: SyntaxType
   }
   object LinterOptions {
     
@@ -352,14 +346,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LinterResult extends StObject {
     
-    var errored: Boolean = js.native
+    var errored: Boolean
     
-    var output: String = js.native
+    var output: String
     
-    var results: js.Array[LintResult] = js.native
+    var results: js.Array[LintResult]
   }
   object LinterResult {
     
@@ -394,16 +387,15 @@ object mod {
   
   type RuleMessageValue = String | (js.Function1[/* repeated */ js.Any, String])
   
-  @js.native
   trait RuleTesterContext extends StObject {
     
-    var caseDescription: String = js.native
+    var caseDescription: String
     
-    var comparisonCount: Double = js.native
+    var comparisonCount: Double
     
-    var completeAssertionDescription: String = js.native
+    var completeAssertionDescription: String
     
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
   }
   object RuleTesterContext {
     
@@ -433,14 +425,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RuleTesterResult extends StObject {
     
-    var actual: Double = js.native
+    var actual: Double
     
-    var description: String = js.native
+    var description: String
     
-    var expected: Double = js.native
+    var expected: Double
   }
   object RuleTesterResult {
     
@@ -464,18 +455,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RuleTesterSchema extends StObject {
     
-    var accept: js.UndefOr[js.Array[RuleTesterTest]] = js.native
+    var accept: js.UndefOr[js.Array[RuleTesterTest]] = js.undefined
     
-    var config: js.UndefOr[js.Any] = js.native
+    var config: js.UndefOr[js.Any] = js.undefined
     
-    var reject: js.UndefOr[js.Array[RuleTesterTestRejected]] = js.native
+    var reject: js.UndefOr[js.Array[RuleTesterTestRejected]] = js.undefined
     
-    var ruleName: String = js.native
+    var ruleName: String
     
-    var syntax: js.UndefOr[SyntaxType] = js.native
+    var syntax: js.UndefOr[SyntaxType] = js.undefined
   }
   object RuleTesterSchema {
     
@@ -523,12 +513,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RuleTesterTest extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
   }
   object RuleTesterTest {
     
@@ -552,16 +541,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait RuleTesterTestRejected extends RuleTesterTest {
+  trait RuleTesterTestRejected
+    extends StObject
+       with RuleTesterTest {
     
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
   }
   object RuleTesterTestRejected {
     
@@ -662,24 +652,23 @@ object mod {
     }
     
     @scala.inline
-    def Optional(optional: `true`, possible: js.Any): typings.stylelint.anon.Optional = {
-      val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], possible = possible.asInstanceOf[js.Any])
+    def Optional(possible: js.Any): typings.stylelint.anon.Optional = {
+      val __obj = js.Dynamic.literal(optional = true, possible = possible.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylelint.anon.Optional]
     }
   }
   
-  @js.native
   trait Warning extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var rule: String = js.native
+    var rule: String
     
-    var severity: Severity = js.native
+    var severity: Severity
     
-    var text: String = js.native
+    var text: String
   }
   object Warning {
     

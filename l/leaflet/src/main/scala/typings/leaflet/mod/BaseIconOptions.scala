@@ -2,33 +2,33 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseIconOptions extends LayerOptions {
+trait BaseIconOptions
+  extends StObject
+     with LayerOptions {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var iconAnchor: js.UndefOr[PointExpression] = js.native
+  var iconAnchor: js.UndefOr[PointExpression] = js.undefined
   
-  var iconRetinaUrl: js.UndefOr[String] = js.native
+  var iconRetinaUrl: js.UndefOr[String] = js.undefined
   
-  var iconSize: js.UndefOr[PointExpression] = js.native
+  var iconSize: js.UndefOr[PointExpression] = js.undefined
   
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
-  var popupAnchor: js.UndefOr[PointExpression] = js.native
+  var popupAnchor: js.UndefOr[PointExpression] = js.undefined
   
-  var shadowAnchor: js.UndefOr[PointExpression] = js.native
+  var shadowAnchor: js.UndefOr[PointExpression] = js.undefined
   
-  var shadowRetinaUrl: js.UndefOr[String] = js.native
+  var shadowRetinaUrl: js.UndefOr[String] = js.undefined
   
-  var shadowSize: js.UndefOr[PointExpression] = js.native
+  var shadowSize: js.UndefOr[PointExpression] = js.undefined
   
-  var shadowUrl: js.UndefOr[String] = js.native
+  var shadowUrl: js.UndefOr[String] = js.undefined
   
-  var tooltipAnchor: js.UndefOr[PointExpression] = js.native
+  var tooltipAnchor: js.UndefOr[PointExpression] = js.undefined
 }
 object BaseIconOptions {
   

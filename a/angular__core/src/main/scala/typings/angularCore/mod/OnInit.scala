@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnInit extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait OnInit extends StObject {
     * and before any of the view or content children have been checked.
     * It is invoked only once when the directive is instantiated.
     */
-  def ngOnInit(): Unit = js.native
+  def ngOnInit(): Unit
 }
 object OnInit {
   

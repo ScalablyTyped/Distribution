@@ -4,7 +4,6 @@ import typings.phonegapPluginPush.PhonegapPluginPush.InitOptions
 import typings.phonegapPluginPush.PhonegapPluginPush.PushNotificationStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -13,7 +12,8 @@ object global {
   @JSGlobal("PushNotification")
   @js.native
   class PushNotification protected ()
-    extends typings.phonegapPluginPush.PhonegapPluginPush.PushNotification {
+    extends StObject
+       with typings.phonegapPluginPush.PhonegapPluginPush.PushNotification {
     def this(options: InitOptions) = this()
   }
   @JSGlobal("PushNotification")

@@ -6,7 +6,6 @@ import typings.ngTable.ngTableControllerMod.ITableScope
 import typings.ngTable.publicInterfacesMod.IColumnDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableSorterRowControllerMod {
@@ -35,12 +34,13 @@ object ngTableSorterRowControllerMod {
     def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IAugmentedMouseEvent extends IAngularEvent {
+  trait IAugmentedMouseEvent
+    extends StObject
+       with IAngularEvent {
     
-    var ctrlKey: Boolean = js.native
+    var ctrlKey: Boolean
     
-    var metaKey: Boolean = js.native
+    var metaKey: Boolean
   }
   object IAugmentedMouseEvent {
     

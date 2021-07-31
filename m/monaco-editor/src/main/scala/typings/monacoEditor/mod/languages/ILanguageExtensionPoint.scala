@@ -3,27 +3,25 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILanguageExtensionPoint extends StObject {
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var configuration: js.UndefOr[Uri] = js.native
+  var configuration: js.UndefOr[Uri] = js.undefined
   
-  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filenamePatterns: js.UndefOr[js.Array[String]] = js.native
+  var filenamePatterns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filenames: js.UndefOr[js.Array[String]] = js.native
+  var filenames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var firstLine: js.UndefOr[String] = js.native
+  var firstLine: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var mimetypes: js.UndefOr[js.Array[String]] = js.native
+  var mimetypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ILanguageExtensionPoint {
   

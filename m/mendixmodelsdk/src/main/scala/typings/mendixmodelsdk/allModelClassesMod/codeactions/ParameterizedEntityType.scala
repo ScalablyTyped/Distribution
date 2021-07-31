@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object ParameterizedEntityType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.ParameterizedEntityType.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object ParameterizedEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.ParameterizedEntityType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.BasicParameterType): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.BasicParameterType): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object ParameterizedEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.ParameterizedEntityType.createInCodeActionUnderActionReturnType")
-  @js.native
-  def createInCodeActionUnderActionReturnType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def createInCodeActionUnderActionReturnType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -79,9 +75,8 @@ object ParameterizedEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.ParameterizedEntityType.createInListTypeUnderParameter")
-  @js.native
-  def createInListTypeUnderParameter(container: typings.mendixmodelsdk.codeactionsMod.codeactions.ListType): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = js.native
+  @scala.inline
+  def createInListTypeUnderParameter(container: typings.mendixmodelsdk.codeactionsMod.codeactions.ListType): typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.ParameterizedEntityType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.ParameterizedEntityType.structureTypeName")

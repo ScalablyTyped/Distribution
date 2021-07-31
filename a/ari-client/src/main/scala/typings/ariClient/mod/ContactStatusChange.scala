@@ -3,21 +3,21 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContactStatusChange extends Event {
+trait ContactStatusChange
+  extends StObject
+     with Event {
   
   /**
     * Contact_info.
     */
-  var contact_info: ContactInfo = js.native
+  var contact_info: ContactInfo
   
   /**
     * Endpoint.
     */
-  var endpoint: Endpoint = js.native
+  var endpoint: Endpoint
 }
 object ContactStatusChange {
   

@@ -11,8 +11,8 @@ Small, fast and advanced PNG / APNG encoder and decoder
 | Full name          | upng-js |
 | Keywords           | png, apng, image, conversion |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 193155 |
+| # dependents       | 30 |
+| # downloads        | 210465 |
 | # stars            | 2 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBlogger.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
   /** Count of page views for the given time range. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /** Time range the given count applies to. */
-  var timeRange: js.UndefOr[String] = js.native
+  var timeRange: js.UndefOr[String] = js.undefined
 }
 object Count {
   

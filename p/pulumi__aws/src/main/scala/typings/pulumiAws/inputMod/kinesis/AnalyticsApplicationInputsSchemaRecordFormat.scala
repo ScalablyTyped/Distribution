@@ -3,22 +3,20 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputsSchemaRecordFormat extends StObject {
   
   /**
     * The Mapping Information for the record format.
     * See Mapping Parameters below for more details.
     */
-  var mappingParameters: js.UndefOr[Input[AnalyticsApplicationInputsSchemaRecordFormatMappingParameters]] = js.native
+  var mappingParameters: js.UndefOr[Input[AnalyticsApplicationInputsSchemaRecordFormatMappingParameters]] = js.undefined
   
   /**
     * The type of Record Format. Can be `CSV` or `JSON`.
     */
-  var recordFormatType: js.UndefOr[Input[String]] = js.native
+  var recordFormatType: js.UndefOr[Input[String]] = js.undefined
 }
 object AnalyticsApplicationInputsSchemaRecordFormat {
   

@@ -2,66 +2,64 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentIdentifier extends StObject {
   
   /**
     * The document format, either JSON or YAML.
     */
-  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.native
+  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.undefined
   
   /**
     * The document type.
     */
-  var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.native
+  var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.undefined
   
   /**
     * The document version.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * The name of the Systems Manager document.
     */
-  var Name: js.UndefOr[DocumentARN] = js.native
+  var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
     * The AWS user account that created the document.
     */
-  var Owner: js.UndefOr[DocumentOwner] = js.native
+  var Owner: js.UndefOr[DocumentOwner] = js.undefined
   
   /**
     * The operating system platform. 
     */
-  var PlatformTypes: js.UndefOr[PlatformTypeList] = js.native
+  var PlatformTypes: js.UndefOr[PlatformTypeList] = js.undefined
   
   /**
     * A list of SSM documents required by a document. For example, an ApplicationConfiguration document requires an ApplicationConfigurationSchema document.
     */
-  var Requires: js.UndefOr[DocumentRequiresList] = js.native
+  var Requires: js.UndefOr[DocumentRequiresList] = js.undefined
   
   /**
     * The schema version.
     */
-  var SchemaVersion: js.UndefOr[DocumentSchemaVersion] = js.native
+  var SchemaVersion: js.UndefOr[DocumentSchemaVersion] = js.undefined
   
   /**
     * The tags, or metadata, that have been applied to the document.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS resource and property types reference in the AWS CloudFormation User Guide. 
     */
-  var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.native
+  var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.undefined
   
   /**
     * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
     */
-  var VersionName: js.UndefOr[DocumentVersionName] = js.native
+  var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }
 object DocumentIdentifier {
   

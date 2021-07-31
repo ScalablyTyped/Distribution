@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1PersonDetectionConfig extends StObject {
   
   /**
     * Whether to enable person attributes detection, such as cloth color (black, blue, etc), type (coat, dress, etc), pattern (plain, floral, etc), hair, etc. Ignored if
     * 'include_bounding_boxes' is set to false.
     */
-  var includeAttributes: js.UndefOr[Boolean] = js.native
+  var includeAttributes: js.UndefOr[Boolean] = js.undefined
   
   /** Whether bounding boxes are included in the person detection annotation output. */
-  var includeBoundingBoxes: js.UndefOr[Boolean] = js.native
+  var includeBoundingBoxes: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to enable pose landmarks detection. Ignored if 'include_bounding_boxes' is set to false. */
-  var includePoseLandmarks: js.UndefOr[Boolean] = js.native
+  var includePoseLandmarks: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudVideointelligenceV1PersonDetectionConfig {
   

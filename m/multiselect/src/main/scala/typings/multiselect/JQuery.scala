@@ -5,7 +5,6 @@ import typings.multiselect.multiselectStrings.deselect
 import typings.multiselect.multiselectStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,11 +20,11 @@ trait JQuery extends StObject {
   @JSName("multiSelect")
   def multiSelect_deselect(method: deselect, options: String): JQuery = js.native
   @JSName("multiSelect")
-  def multiSelect_deselect(method: deselect, options: js.Array[_]): JQuery = js.native
+  def multiSelect_deselect(method: deselect, options: js.Array[js.Any]): JQuery = js.native
   @JSName("multiSelect")
   def multiSelect_select(method: select): JQuery = js.native
   @JSName("multiSelect")
   def multiSelect_select(method: select, options: String): JQuery = js.native
   @JSName("multiSelect")
-  def multiSelect_select(method: select, options: js.Array[_]): JQuery = js.native
+  def multiSelect_select(method: select, options: js.Array[js.Any]): JQuery = js.native
 }

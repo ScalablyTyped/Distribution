@@ -19,7 +19,6 @@ import typings.uirouterCore.transitionTransitionMod.Transition
 import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateObjectMod {
@@ -27,7 +26,9 @@ object stateObjectMod {
   @JSImport("@uirouter/core/lib/state/stateObject", "StateObject")
   @js.native
   /** @deprecated use State.create() */
-  class StateObject () extends _StateOrName {
+  class StateObject ()
+    extends StObject
+       with _StateOrName {
     def this(config: StateDeclaration) = this()
     
     /** @internal */
@@ -136,7 +137,7 @@ object stateObjectMod {
     var resolvables: js.Array[Resolvable] = js.native
     
     /** Prototypally inherits from [[StateDeclaration.resolve]] */
-    var resolve: (StringDictionary[String | js.Array[_] | js.Function]) | js.Array[_] = js.native
+    var resolve: (StringDictionary[String | js.Array[js.Any] | js.Function]) | js.Array[js.Any] = js.native
     
     /** Prototypally inherits from [[StateDeclaration.resolvePolicy]] */
     var resolvePolicy: js.Any = js.native
@@ -167,6 +168,10 @@ object stateObjectMod {
   /* static members */
   object StateObject {
     
+    @JSImport("@uirouter/core/lib/state/stateObject", "StateObject")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a state object to put the private/internal implementation details onto.
       * The object's prototype chain looks like:
@@ -175,23 +180,19 @@ object stateObjectMod {
       * @param stateDecl the user-supplied State Declaration
       * @returns {StateObject} an internal State object
       */
-    @JSImport("@uirouter/core/lib/state/stateObject", "StateObject.create")
-    @js.native
-    def create(stateDecl: _StateDeclaration): StateObject = js.native
+    @scala.inline
+    def create(stateDecl: _StateDeclaration): StateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[StateObject]
     
     /** Predicate which returns true if the object is an internal [[StateObject]] object */
-    @JSImport("@uirouter/core/lib/state/stateObject", "StateObject.isState")
-    @js.native
-    def isState(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = js.native
+    @scala.inline
+    def isState(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean]
     
     /** Predicate which returns true if the object is an class with @State() decorator */
-    @JSImport("@uirouter/core/lib/state/stateObject", "StateObject.isStateClass")
-    @js.native
-    def isStateClass(stateDecl: _StateDeclaration): Boolean = js.native
+    @scala.inline
+    def isStateClass(stateDecl: _StateDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateClass")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Predicate which returns true if the object is a [[StateDeclaration]] object */
-    @JSImport("@uirouter/core/lib/state/stateObject", "StateObject.isStateDeclaration")
-    @js.native
-    def isStateDeclaration(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = js.native
+    @scala.inline
+    def isStateDeclaration(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateDeclaration")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean]
   }
 }

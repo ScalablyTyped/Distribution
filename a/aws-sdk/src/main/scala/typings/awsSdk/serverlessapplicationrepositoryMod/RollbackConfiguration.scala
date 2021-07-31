@@ -2,23 +2,21 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollbackConfiguration extends StObject {
   
   /**
     * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration
     Data Type.
     */
-  var MonitoringTimeInMinutes: js.UndefOr[integer] = js.native
+  var MonitoringTimeInMinutes: js.UndefOr[integer] = js.undefined
   
   /**
     * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration
     Data Type.
     */
-  var RollbackTriggers: js.UndefOr[listOfRollbackTrigger] = js.native
+  var RollbackTriggers: js.UndefOr[listOfRollbackTrigger] = js.undefined
 }
 object RollbackConfiguration {
   

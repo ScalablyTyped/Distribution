@@ -5,76 +5,74 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapSupportedSizes
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTUnitType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoBorderDetection extends StObject {
   
   /**
     * Whether to enable automatic border detection.
     */
-  var autoBorderDetection: js.UndefOr[Boolean] = js.native
+  var autoBorderDetection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable automatic brightness adjustment.
     */
-  var autoBright: js.UndefOr[Boolean] = js.native
+  var autoBright: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable automatic skew correction.
     */
-  var autoDeskew: js.UndefOr[Boolean] = js.native
+  var autoDeskew: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable automatic blank image detection and removal.
     */
-  var autoDiscardBlankPages: js.UndefOr[Boolean] = js.native
+  var autoDiscardBlankPages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify the bit depth.
     */
-  var bitDepth: js.UndefOr[Double] = js.native
+  var bitDepth: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify Brightness.
     */
-  var brightness: js.UndefOr[Double] = js.native
+  var brightness: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify contrast.
     */
-  var contrast: js.UndefOr[Double] = js.native
+  var contrast: js.UndefOr[Double] = js.undefined
   
   /**
     * "ignore" (default) or "fail".
     */
-  var exception: js.UndefOr[String] = js.native
+  var exception: js.UndefOr[String] = js.undefined
   
   /**
     * Specify a layout to scan, if present, it'll override pageSize.
     */
-  var layout: js.UndefOr[Bottom] = js.native
+  var layout: js.UndefOr[Bottom] = js.undefined
   
   /**
     * Specify how many images are transferred per session.
     */
-  var nXferCount: js.UndefOr[Double] = js.native
+  var nXferCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the page size.
     */
-  var pageSize: js.UndefOr[EnumDWTCapSupportedSizes | Double] = js.native
+  var pageSize: js.UndefOr[EnumDWTCapSupportedSizes | Double] = js.undefined
   
   /**
     * Specify the pixel flavor.
     */
-  var pixelFlavor: js.UndefOr[EnumDWTCapPixelFlavor | Double] = js.native
+  var pixelFlavor: js.UndefOr[EnumDWTCapPixelFlavor | Double] = js.undefined
   
   /**
     * Specify the unit.
     */
-  var unit: js.UndefOr[EnumDWTUnitType | Double] = js.native
+  var unit: js.UndefOr[EnumDWTUnitType | Double] = js.undefined
 }
 object AutoBorderDetection {
   

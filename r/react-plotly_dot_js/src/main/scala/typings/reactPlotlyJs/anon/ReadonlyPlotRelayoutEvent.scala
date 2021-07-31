@@ -46,184 +46,182 @@ import typings.reactPlotlyJs.reactPlotlyJsStrings.y
 import typings.reactPlotlyJs.reactPlotlyJsStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.PlotRelayoutEvent> */
-@js.native
 trait ReadonlyPlotRelayoutEvent extends StObject {
   
-  val angularaxis: js.UndefOr[js.Object] = js.native
+  val angularaxis: js.UndefOr[js.Object] = js.undefined
   
-  val annotations: js.UndefOr[js.Array[PartialAnnotationsAlign]] = js.native
+  val annotations: js.UndefOr[js.Array[PartialAnnotationsAlign]] = js.undefined
   
-  val autosize: js.UndefOr[Boolean] = js.native
+  val autosize: js.UndefOr[Boolean] = js.undefined
   
-  val bargap: js.UndefOr[Double] = js.native
+  val bargap: js.UndefOr[Double] = js.undefined
   
-  val bargroupgap: js.UndefOr[Double] = js.native
+  val bargroupgap: js.UndefOr[Double] = js.undefined
   
-  val barmode: js.UndefOr[stack | group | overlay | relative] = js.native
+  val barmode: js.UndefOr[stack | group | overlay | relative] = js.undefined
   
-  val barnorm: js.UndefOr[_empty | fraction | percent] = js.native
+  val barnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   
-  val calendar: js.UndefOr[Calendar] = js.native
+  val calendar: js.UndefOr[Calendar] = js.undefined
   
-  val colorway: js.UndefOr[js.Array[String]] = js.native
+  val colorway: js.UndefOr[js.Array[String]] = js.undefined
   
-  val dragmode: js.UndefOr[zoom | pan | select | lasso | orbit | turntable | `false`] = js.native
+  val dragmode: js.UndefOr[zoom | pan | select | lasso | orbit | turntable | `false`] = js.undefined
   
-  val font: js.UndefOr[PartialFont] = js.native
+  val font: js.UndefOr[PartialFont] = js.undefined
   
-  val geo: js.UndefOr[js.Object] = js.native
+  val geo: js.UndefOr[js.Object] = js.undefined
   
-  val grid: js.UndefOr[Partialrowsnumberroworder] = js.native
+  val grid: js.UndefOr[Partialrowsnumberroworder] = js.undefined
   
-  val height: js.UndefOr[Double] = js.native
+  val height: js.UndefOr[Double] = js.undefined
   
-  val hiddenlabels: js.UndefOr[js.Array[String]] = js.native
+  val hiddenlabels: js.UndefOr[js.Array[String]] = js.undefined
   
-  val hidesources: js.UndefOr[Boolean] = js.native
+  val hidesources: js.UndefOr[Boolean] = js.undefined
   
-  val hoverdistance: js.UndefOr[Double] = js.native
+  val hoverdistance: js.UndefOr[Double] = js.undefined
   
-  val hoverlabel: js.UndefOr[PartialHoverLabel] = js.native
+  val hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
   
-  val hovermode: js.UndefOr[closest | x | y | (`x unified`) | (`y unified`) | `false`] = js.native
+  val hovermode: js.UndefOr[closest | x | y | (`x unified`) | (`y unified`) | `false`] = js.undefined
   
-  val images: js.UndefOr[js.Array[PartialImage]] = js.native
+  val images: js.UndefOr[js.Array[PartialImage]] = js.undefined
   
-  val legend: js.UndefOr[PartialLegend] = js.native
+  val legend: js.UndefOr[PartialLegend] = js.undefined
   
-  val mapbox: js.UndefOr[PartialMapbox] = js.native
+  val mapbox: js.UndefOr[PartialMapbox] = js.undefined
   
-  val margin: js.UndefOr[PartialMargin] = js.native
+  val margin: js.UndefOr[PartialMargin] = js.undefined
   
-  val orientation: js.UndefOr[Double] = js.native
+  val orientation: js.UndefOr[Double] = js.undefined
   
-  val paper_bgcolor: js.UndefOr[Color] = js.native
+  val paper_bgcolor: js.UndefOr[Color] = js.undefined
   
-  val plot_bgcolor: js.UndefOr[Color] = js.native
+  val plot_bgcolor: js.UndefOr[Color] = js.undefined
   
-  val polar: js.UndefOr[PartialPolarLayout] = js.native
+  val polar: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar2: js.UndefOr[PartialPolarLayout] = js.native
+  val polar2: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar3: js.UndefOr[PartialPolarLayout] = js.native
+  val polar3: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar4: js.UndefOr[PartialPolarLayout] = js.native
+  val polar4: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar5: js.UndefOr[PartialPolarLayout] = js.native
+  val polar5: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar6: js.UndefOr[PartialPolarLayout] = js.native
+  val polar6: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar7: js.UndefOr[PartialPolarLayout] = js.native
+  val polar7: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar8: js.UndefOr[PartialPolarLayout] = js.native
+  val polar8: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val polar9: js.UndefOr[PartialPolarLayout] = js.native
+  val polar9: js.UndefOr[PartialPolarLayout] = js.undefined
   
-  val radialaxis: js.UndefOr[PartialAxis] = js.native
+  val radialaxis: js.UndefOr[PartialAxis] = js.undefined
   
-  val scene: js.UndefOr[PartialScene] = js.native
+  val scene: js.UndefOr[PartialScene] = js.undefined
   
-  val selectdirection: js.UndefOr[h | v | d | any] = js.native
+  val selectdirection: js.UndefOr[h | v | d | any] = js.undefined
   
-  val separators: js.UndefOr[String] = js.native
+  val separators: js.UndefOr[String] = js.undefined
   
-  val shapes: js.UndefOr[js.Array[PartialShape]] = js.native
+  val shapes: js.UndefOr[js.Array[PartialShape]] = js.undefined
   
-  val showlegend: js.UndefOr[Boolean] = js.native
+  val showlegend: js.UndefOr[Boolean] = js.undefined
   
-  val sliders: js.UndefOr[js.Array[PartialSlider]] = js.native
+  val sliders: js.UndefOr[js.Array[PartialSlider]] = js.undefined
   
-  val subplot: js.UndefOr[String] = js.native
+  val subplot: js.UndefOr[String] = js.undefined
   
-  val template: js.UndefOr[Template] = js.native
+  val template: js.UndefOr[Template] = js.undefined
   
-  val ternary: js.UndefOr[js.Object] = js.native
+  val ternary: js.UndefOr[js.Object] = js.undefined
   
-  val title: js.UndefOr[String | PartialtextstringfontPart] = js.native
+  val title: js.UndefOr[String | PartialtextstringfontPart] = js.undefined
   
-  val titlefont: js.UndefOr[PartialFont] = js.native
+  val titlefont: js.UndefOr[PartialFont] = js.undefined
   
-  val transition: js.UndefOr[Transition] = js.native
+  val transition: js.UndefOr[Transition] = js.undefined
   
-  val updatemenus: js.UndefOr[js.Object] = js.native
+  val updatemenus: js.UndefOr[js.Object] = js.undefined
   
-  val width: js.UndefOr[Double] = js.native
+  val width: js.UndefOr[Double] = js.undefined
   
-  val xaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis2: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis2: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis3: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis3: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis4: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis4: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis5: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis5: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis6: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis6: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis7: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis7: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis8: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis8: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val xaxis9: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val xaxis9: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
   @JSName("xaxis.autorange")
-  val xaxisDotautorange: js.UndefOr[Boolean] = js.native
+  val xaxisDotautorange: js.UndefOr[Boolean] = js.undefined
   
   @JSName("xaxis.range")
-  val xaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.native
+  val xaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.undefined
   
   @JSName("xaxis.range[0]")
-  val `xaxisDotrange[0]`: js.UndefOr[Double] = js.native
+  val `xaxisDotrange[0]`: js.UndefOr[Double] = js.undefined
   
   @JSName("xaxis.range[1]")
-  val `xaxisDotrange[1]`: js.UndefOr[Double] = js.native
+  val `xaxisDotrange[1]`: js.UndefOr[Double] = js.undefined
   
   @JSName("xaxis.title")
-  val xaxisDottitle: js.UndefOr[String] = js.native
+  val xaxisDottitle: js.UndefOr[String] = js.undefined
   
   @JSName("xaxis.type")
-  val xaxisDottype: js.UndefOr[AxisType] = js.native
+  val xaxisDottype: js.UndefOr[AxisType] = js.undefined
   
-  val yaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis2: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis2: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis3: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis3: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis4: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis4: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis5: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis5: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis6: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis6: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis7: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis7: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis8: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis8: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
-  val yaxis9: js.UndefOr[PartialLayoutAxisAnchor] = js.native
+  val yaxis9: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
   @JSName("yaxis.autorange")
-  val yaxisDotautorange: js.UndefOr[Boolean] = js.native
+  val yaxisDotautorange: js.UndefOr[Boolean] = js.undefined
   
   @JSName("yaxis.range")
-  val yaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.native
+  val yaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.undefined
   
   @JSName("yaxis.range[0]")
-  val `yaxisDotrange[0]`: js.UndefOr[Double] = js.native
+  val `yaxisDotrange[0]`: js.UndefOr[Double] = js.undefined
   
   @JSName("yaxis.range[1]")
-  val `yaxisDotrange[1]`: js.UndefOr[Double] = js.native
+  val `yaxisDotrange[1]`: js.UndefOr[Double] = js.undefined
   
   @JSName("yaxis.title")
-  val yaxisDottitle: js.UndefOr[String] = js.native
+  val yaxisDottitle: js.UndefOr[String] = js.undefined
   
   @JSName("yaxis.type")
-  val yaxisDottype: js.UndefOr[AxisType] = js.native
+  val yaxisDottype: js.UndefOr[AxisType] = js.undefined
 }
 object ReadonlyPlotRelayoutEvent {
   

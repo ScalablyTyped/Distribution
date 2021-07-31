@@ -10,13 +10,13 @@ Attach cloud and local files in Rails applications
 | ------------------ | :-------------: |
 | Full name          | @rails/activestorage |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 2 |
-| # downloads        | 4908284 |
+| # releases         | 23 |
+| # dependents       | 6 |
+| # downloads        | 6882384 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](http://rubyonrails.org/)
+- [Homepage](https://rubyonrails.org/)
 - [Bugs](https://github.com/rails/rails/issues)
 - [Repository](https://github.com/rails/rails)
 - [Npm](https://www.npmjs.com/package/%40rails%2Factivestorage)

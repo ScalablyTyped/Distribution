@@ -2,19 +2,17 @@ package typings.postmark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outboundMessageOpenMod {
   
-  @js.native
   trait ClientDetails extends StObject {
     
-    var Company: String = js.native
+    var Company: String
     
-    var Family: String = js.native
+    var Family: String
     
-    var Name: String = js.native
+    var Name: String
   }
   object ClientDetails {
     
@@ -38,24 +36,23 @@ object outboundMessageOpenMod {
     }
   }
   
-  @js.native
   trait GeoLocation extends StObject {
     
-    var City: js.UndefOr[String] = js.native
+    var City: js.UndefOr[String] = js.undefined
     
-    var Coords: js.UndefOr[String] = js.native
+    var Coords: js.UndefOr[String] = js.undefined
     
-    var Country: js.UndefOr[String] = js.native
+    var Country: js.UndefOr[String] = js.undefined
     
-    var CountryISOCode: js.UndefOr[String] = js.native
+    var CountryISOCode: js.UndefOr[String] = js.undefined
     
-    var IP: js.UndefOr[String] = js.native
+    var IP: js.UndefOr[String] = js.undefined
     
-    var Region: js.UndefOr[String] = js.native
+    var Region: js.UndefOr[String] = js.undefined
     
-    var RegionISOCode: js.UndefOr[String] = js.native
+    var RegionISOCode: js.UndefOr[String] = js.undefined
     
-    var Zip: js.UndefOr[String] = js.native
+    var Zip: js.UndefOr[String] = js.undefined
   }
   object GeoLocation {
     
@@ -118,32 +115,31 @@ object outboundMessageOpenMod {
     }
   }
   
-  @js.native
   trait OpenEvent extends StObject {
     
-    var Client: ClientDetails = js.native
+    var Client: ClientDetails
     
-    var Geo: GeoLocation = js.native
+    var Geo: GeoLocation
     
-    var MessageID: String = js.native
+    var MessageID: String
     
-    var MessageStream: String = js.native
+    var MessageStream: String
     
-    var OS: ClientDetails = js.native
+    var OS: ClientDetails
     
-    var Platform: String = js.native
+    var Platform: String
     
-    var ReadSeconds: Double = js.native
+    var ReadSeconds: Double
     
-    var ReceivedAt: String = js.native
+    var ReceivedAt: String
     
-    var Recipient: String = js.native
+    var Recipient: String
     
-    var RecordType: String = js.native
+    var RecordType: String
     
-    var Tag: String = js.native
+    var Tag: String
     
-    var UserAgent: String = js.native
+    var UserAgent: String
   }
   object OpenEvent {
     
@@ -207,12 +203,11 @@ object outboundMessageOpenMod {
     }
   }
   
-  @js.native
   trait OutboundMessageOpens extends StObject {
     
-    var Opens: js.Array[OpenEvent] = js.native
+    var Opens: js.Array[OpenEvent]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object OutboundMessageOpens {
     

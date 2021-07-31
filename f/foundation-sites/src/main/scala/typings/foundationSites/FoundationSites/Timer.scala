@@ -2,17 +2,15 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timer extends StObject {
   
-  def pause(): Unit = js.native
+  def pause(): Unit
   
-  def restart(): Unit = js.native
+  def restart(): Unit
   
-  def start(): Unit = js.native
+  def start(): Unit
 }
 object Timer {
   

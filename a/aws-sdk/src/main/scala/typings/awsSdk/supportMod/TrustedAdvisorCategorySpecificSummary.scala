@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustedAdvisorCategorySpecificSummary extends StObject {
   
   /**
     * The summary information about cost savings for a Trusted Advisor check that is in the Cost Optimizing category.
     */
-  var costOptimizing: js.UndefOr[TrustedAdvisorCostOptimizingSummary] = js.native
+  var costOptimizing: js.UndefOr[TrustedAdvisorCostOptimizingSummary] = js.undefined
 }
 object TrustedAdvisorCategorySpecificSummary {
   

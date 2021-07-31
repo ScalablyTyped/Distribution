@@ -4,81 +4,79 @@ import typings.googleCloudPubsub.protosMod.google.api.IResourceDescriptor
 import typings.googleCloudPubsub.protosMod.google.protobuf.FileOptions.OptimizeMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a FileOptions. */
-@js.native
 trait IFileOptions extends StObject {
   
   /** FileOptions .google.api.resourceDefinition */
   @JSName(".google.api.resourceDefinition")
-  var DotgoogleDotapiDotresourceDefinition: js.UndefOr[js.Array[IResourceDescriptor] | Null] = js.native
+  var DotgoogleDotapiDotresourceDefinition: js.UndefOr[js.Array[IResourceDescriptor] | Null] = js.undefined
   
   /** FileOptions ccEnableArenas */
-  var ccEnableArenas: js.UndefOr[Boolean | Null] = js.native
+  var ccEnableArenas: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions ccGenericServices */
-  var ccGenericServices: js.UndefOr[Boolean | Null] = js.native
+  var ccGenericServices: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions csharpNamespace */
-  var csharpNamespace: js.UndefOr[String | Null] = js.native
+  var csharpNamespace: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions goPackage */
-  var goPackage: js.UndefOr[String | Null] = js.native
+  var goPackage: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions javaGenerateEqualsAndHash */
-  var javaGenerateEqualsAndHash: js.UndefOr[Boolean | Null] = js.native
+  var javaGenerateEqualsAndHash: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions javaGenericServices */
-  var javaGenericServices: js.UndefOr[Boolean | Null] = js.native
+  var javaGenericServices: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions javaMultipleFiles */
-  var javaMultipleFiles: js.UndefOr[Boolean | Null] = js.native
+  var javaMultipleFiles: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions javaOuterClassname */
-  var javaOuterClassname: js.UndefOr[String | Null] = js.native
+  var javaOuterClassname: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions javaPackage */
-  var javaPackage: js.UndefOr[String | Null] = js.native
+  var javaPackage: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions javaStringCheckUtf8 */
-  var javaStringCheckUtf8: js.UndefOr[Boolean | Null] = js.native
+  var javaStringCheckUtf8: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions objcClassPrefix */
-  var objcClassPrefix: js.UndefOr[String | Null] = js.native
+  var objcClassPrefix: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions optimizeFor */
   var optimizeFor: js.UndefOr[
     OptimizeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FileOptions.OptimizeMode * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** FileOptions phpClassPrefix */
-  var phpClassPrefix: js.UndefOr[String | Null] = js.native
+  var phpClassPrefix: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions phpGenericServices */
-  var phpGenericServices: js.UndefOr[Boolean | Null] = js.native
+  var phpGenericServices: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions phpMetadataNamespace */
-  var phpMetadataNamespace: js.UndefOr[String | Null] = js.native
+  var phpMetadataNamespace: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions phpNamespace */
-  var phpNamespace: js.UndefOr[String | Null] = js.native
+  var phpNamespace: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions pyGenericServices */
-  var pyGenericServices: js.UndefOr[Boolean | Null] = js.native
+  var pyGenericServices: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FileOptions rubyPackage */
-  var rubyPackage: js.UndefOr[String | Null] = js.native
+  var rubyPackage: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions swiftPrefix */
-  var swiftPrefix: js.UndefOr[String | Null] = js.native
+  var swiftPrefix: js.UndefOr[String | Null] = js.undefined
   
   /** FileOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
 object IFileOptions {
   

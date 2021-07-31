@@ -7,7 +7,6 @@ import typings.luminoAlgorithm.retroMod.IRetroable
 import typings.luminoCollections.linkedlistMod.LinkedList.INode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkedlistMod {
@@ -18,7 +17,8 @@ object linkedlistMod {
     * Construct a new linked list.
     */
   class LinkedList[T] ()
-    extends IIterable[T]
+    extends StObject
+       with IIterable[T]
        with IRetroable[T] {
     
     var _first: js.Any = js.native
@@ -136,6 +136,20 @@ object linkedlistMod {
     val isEmpty: Boolean = js.native
     
     /**
+      * Get an iterator over the object's values.
+      *
+      * @returns An iterator which yields the object's values.
+      *
+      * #### Notes
+      * Depending on the iterable, the returned iterator may or may not be
+      * a new object. A collection or other container-like object should
+      * typically return a new iterator, while an iterator itself should
+      * normally return `this`.
+      */
+    /* CompleteClass */
+    override def iter(): IIterator[T] = js.native
+    
+    /**
       * The last value in the list.
       *
       * This is `undefined` if the list is empty.
@@ -238,6 +252,14 @@ object linkedlistMod {
     def removeNode(node: INode[T]): Unit = js.native
     
     /**
+      * Get a reverse iterator over the object's values.
+      *
+      * @returns An iterator which yields the object's values in reverse.
+      */
+    /* CompleteClass */
+    override def retro(): IIterator[T] = js.native
+    
+    /**
       * Create a reverse iterator over the nodes in the list.
       *
       * @returns A new iterator starting with the last node.
@@ -286,6 +308,10 @@ object linkedlistMod {
   }
   object LinkedList {
     
+    @JSImport("@lumino/collections/types/linkedlist", "LinkedList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A forward iterator for nodes in a linked list.
       */
@@ -296,10 +322,44 @@ object linkedlistMod {
       *
       * @param node - The first node in the list.
       */
-    class ForwardNodeIterator[T] () extends IIterator[INode[T]] {
+    class ForwardNodeIterator[T] ()
+      extends StObject
+         with IIterator[INode[T]] {
       def this(node: INode[T]) = this()
       
       var _node: js.Any = js.native
+      
+      /**
+        * Get an iterator over the object's values.
+        *
+        * @returns An iterator which yields the object's values.
+        *
+        * #### Notes
+        * Depending on the iterable, the returned iterator may or may not be
+        * a new object. A collection or other container-like object should
+        * typically return a new iterator, while an iterator itself should
+        * normally return `this`.
+        */
+      /* CompleteClass */
+      override def iter(): IIterator[INode[T]] = js.native
+      
+      /**
+        * Get the next value from the iterator.
+        *
+        * @returns The next value from the iterator, or `undefined`.
+        *
+        * #### Notes
+        * The `undefined` value is used to signal the end of iteration and
+        * should therefore not be used as a value in a collection.
+        *
+        * The use of the `undefined` sentinel is an explicit design choice
+        * which favors performance over purity. The ES6 iterator design of
+        * returning a `{ value, done }` pair is suboptimal, as it requires
+        * an object allocation on each iteration; and an `isDone()` method
+        * would increase implementation and runtime complexity.
+        */
+      /* CompleteClass */
+      override def next(): js.UndefOr[INode[T]] = js.native
     }
     
     /**
@@ -312,10 +372,44 @@ object linkedlistMod {
       *
       * @param node - The first node in the list.
       */
-    class ForwardValueIterator[T] () extends IIterator[T] {
+    class ForwardValueIterator[T] ()
+      extends StObject
+         with IIterator[T] {
       def this(node: INode[T]) = this()
       
       var _node: js.Any = js.native
+      
+      /**
+        * Get an iterator over the object's values.
+        *
+        * @returns An iterator which yields the object's values.
+        *
+        * #### Notes
+        * Depending on the iterable, the returned iterator may or may not be
+        * a new object. A collection or other container-like object should
+        * typically return a new iterator, while an iterator itself should
+        * normally return `this`.
+        */
+      /* CompleteClass */
+      override def iter(): IIterator[T] = js.native
+      
+      /**
+        * Get the next value from the iterator.
+        *
+        * @returns The next value from the iterator, or `undefined`.
+        *
+        * #### Notes
+        * The `undefined` value is used to signal the end of iteration and
+        * should therefore not be used as a value in a collection.
+        *
+        * The use of the `undefined` sentinel is an explicit design choice
+        * which favors performance over purity. The ES6 iterator design of
+        * returning a `{ value, done }` pair is suboptimal, as it requires
+        * an object allocation on each iteration; and an `isDone()` method
+        * would increase implementation and runtime complexity.
+        */
+      /* CompleteClass */
+      override def next(): js.UndefOr[T] = js.native
     }
     
     /**
@@ -328,10 +422,44 @@ object linkedlistMod {
       *
       * @param node - The last node in the list.
       */
-    class RetroNodeIterator[T] () extends IIterator[INode[T]] {
+    class RetroNodeIterator[T] ()
+      extends StObject
+         with IIterator[INode[T]] {
       def this(node: INode[T]) = this()
       
       var _node: js.Any = js.native
+      
+      /**
+        * Get an iterator over the object's values.
+        *
+        * @returns An iterator which yields the object's values.
+        *
+        * #### Notes
+        * Depending on the iterable, the returned iterator may or may not be
+        * a new object. A collection or other container-like object should
+        * typically return a new iterator, while an iterator itself should
+        * normally return `this`.
+        */
+      /* CompleteClass */
+      override def iter(): IIterator[INode[T]] = js.native
+      
+      /**
+        * Get the next value from the iterator.
+        *
+        * @returns The next value from the iterator, or `undefined`.
+        *
+        * #### Notes
+        * The `undefined` value is used to signal the end of iteration and
+        * should therefore not be used as a value in a collection.
+        *
+        * The use of the `undefined` sentinel is an explicit design choice
+        * which favors performance over purity. The ES6 iterator design of
+        * returning a `{ value, done }` pair is suboptimal, as it requires
+        * an object allocation on each iteration; and an `isDone()` method
+        * would increase implementation and runtime complexity.
+        */
+      /* CompleteClass */
+      override def next(): js.UndefOr[INode[T]] = js.native
     }
     
     /**
@@ -344,10 +472,44 @@ object linkedlistMod {
       *
       * @param node - The last node in the list.
       */
-    class RetroValueIterator[T] () extends IIterator[T] {
+    class RetroValueIterator[T] ()
+      extends StObject
+         with IIterator[T] {
       def this(node: INode[T]) = this()
       
       var _node: js.Any = js.native
+      
+      /**
+        * Get an iterator over the object's values.
+        *
+        * @returns An iterator which yields the object's values.
+        *
+        * #### Notes
+        * Depending on the iterable, the returned iterator may or may not be
+        * a new object. A collection or other container-like object should
+        * typically return a new iterator, while an iterator itself should
+        * normally return `this`.
+        */
+      /* CompleteClass */
+      override def iter(): IIterator[T] = js.native
+      
+      /**
+        * Get the next value from the iterator.
+        *
+        * @returns The next value from the iterator, or `undefined`.
+        *
+        * #### Notes
+        * The `undefined` value is used to signal the end of iteration and
+        * should therefore not be used as a value in a collection.
+        *
+        * The use of the `undefined` sentinel is an explicit design choice
+        * which favors performance over purity. The ES6 iterator design of
+        * returning a `{ value, done }` pair is suboptimal, as it requires
+        * an object allocation on each iteration; and an `isDone()` method
+        * would increase implementation and runtime complexity.
+        */
+      /* CompleteClass */
+      override def next(): js.UndefOr[T] = js.native
     }
     
     /**
@@ -360,9 +522,8 @@ object linkedlistMod {
       * #### Complexity
       * Linear.
       */
-    @JSImport("@lumino/collections/types/linkedlist", "LinkedList.from")
-    @js.native
-    def from[T](values: IterableOrArrayLike[T]): LinkedList[T] = js.native
+    @scala.inline
+    def from[T](values: IterableOrArrayLike[T]): LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[LinkedList[T]]
     
     /**
       * An object which represents a node in a linked list.
@@ -371,7 +532,6 @@ object linkedlistMod {
       * User code will not create linked list nodes directly. Nodes
       * are created automatically when values are added to a list.
       */
-    @js.native
     trait INode[T] extends StObject {
       
       /**
@@ -379,7 +539,7 @@ object linkedlistMod {
         *
         * This will be `null` when the node is removed from the list.
         */
-      val list: LinkedList[T] | Null = js.native
+      val list: LinkedList[T] | Null
       
       /**
         * The next node in the list.
@@ -387,7 +547,7 @@ object linkedlistMod {
         * This will be `null` when the node is the last node in the list
         * or when the node is removed from the list.
         */
-      val next: INode[T] | Null = js.native
+      val next: INode[T] | Null
       
       /**
         * The previous node in the list.
@@ -395,23 +555,23 @@ object linkedlistMod {
         * This will be `null` when the node is the first node in the list
         * or when the node is removed from the list.
         */
-      val prev: INode[T] | Null = js.native
+      val prev: INode[T] | Null
       
       /**
         * The user value stored in the node.
         */
-      val value: T = js.native
+      val value: T
     }
     object INode {
       
       @scala.inline
       def apply[T](value: T): INode[T] = {
-        val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], list = null, next = null, prev = null)
         __obj.asInstanceOf[INode[T]]
       }
       
       @scala.inline
-      implicit class INodeMutableBuilder[Self <: INode[_], T] (val x: Self with INode[T]) extends AnyVal {
+      implicit class INodeMutableBuilder[Self <: INode[?], T] (val x: Self & INode[T]) extends AnyVal {
         
         @scala.inline
         def setList(value: LinkedList[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])

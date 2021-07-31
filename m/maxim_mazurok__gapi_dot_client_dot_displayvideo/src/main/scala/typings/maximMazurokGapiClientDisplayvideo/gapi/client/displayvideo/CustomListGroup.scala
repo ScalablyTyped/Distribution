@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomListGroup extends StObject {
   
   /** Required. All custom list targeting settings in custom list group. Repeated settings with same id will be ignored. */
-  var settings: js.UndefOr[js.Array[CustomListTargetingSetting]] = js.native
+  var settings: js.UndefOr[js.Array[CustomListTargetingSetting]] = js.undefined
 }
 object CustomListGroup {
   

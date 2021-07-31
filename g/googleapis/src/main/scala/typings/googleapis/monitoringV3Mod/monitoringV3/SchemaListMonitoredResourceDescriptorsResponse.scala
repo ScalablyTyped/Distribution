@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ListMonitoredResourceDescriptors response.
   */
-@js.native
 trait SchemaListMonitoredResourceDescriptorsResponse extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaListMonitoredResourceDescriptorsResponse extends StObject {
     * to a non-empty value. To see the additional results, use that value as
     * pageToken in the next call to this method.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The monitored resource descriptors that are available to this project and
     * that match filter, if present.
     */
-  var resourceDescriptors: js.UndefOr[js.Array[SchemaMonitoredResourceDescriptor]] = js.native
+  var resourceDescriptors: js.UndefOr[js.Array[SchemaMonitoredResourceDescriptor]] = js.undefined
 }
 object SchemaListMonitoredResourceDescriptorsResponse {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2NetworkInterfaceAttachment extends StObject {
   
   /**
     * Indicates when the attachment initiated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var AttachTime: js.UndefOr[NonEmptyString] = js.native
+  var AttachTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the network interface attachment
     */
-  var AttachmentId: js.UndefOr[NonEmptyString] = js.native
+  var AttachmentId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates whether the network interface is deleted when the instance is terminated.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The device index of the network interface attachment on the instance.
     */
-  var DeviceIndex: js.UndefOr[Integer] = js.native
+  var DeviceIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[NonEmptyString] = js.native
+  var InstanceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The AWS account ID of the owner of the instance.
     */
-  var InstanceOwnerId: js.UndefOr[NonEmptyString] = js.native
+  var InstanceOwnerId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The attachment state. Valid values: attaching | attached | detaching | detached 
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2NetworkInterfaceAttachment {
   

@@ -9,7 +9,6 @@ import typings.backbonePaginator.anon.TypeofPageableCollection
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -17,10 +16,10 @@ object mod {
   
   @JSImport("backbone", "PageableCollection")
   @js.native
-  class PageableCollection[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends Collection[TModel] {
+  class PageableCollection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () extends Collection[TModel] {
     def this(models: js.Array[TModel]) = this()
-    def this(models: js.UndefOr[scala.Nothing], options: PageableInitialOptions) = this()
     def this(models: js.Array[TModel], options: PageableInitialOptions) = this()
+    def this(models: Unit, options: PageableInitialOptions) = this()
     
     var fullCollection: Collection[TModel] = js.native
     
@@ -50,14 +49,14 @@ object mod {
     
     var mode: String = js.native
     
-    def parse(resp: js.Any): js.Array[_] = js.native
-    def parse(resp: js.Any, options: js.Any): js.Array[_] = js.native
+    def parse(resp: js.Any): js.Array[js.Any] = js.native
+    def parse(resp: js.Any, options: js.Any): js.Array[js.Any] = js.native
     
     def parseLinks(resp: js.Any): js.Any = js.native
     def parseLinks(resp: js.Any, options: PageableParseLinksOptions): js.Any = js.native
     
-    def parseRecords(resp: js.Any): js.Array[_] = js.native
-    def parseRecords(resp: js.Any, options: js.Any): js.Array[_] = js.native
+    def parseRecords(resp: js.Any): js.Array[js.Any] = js.native
+    def parseRecords(resp: js.Any, options: js.Any): js.Array[js.Any] = js.native
     
     def parseState(resp: js.Any, queryParams: PageableQueryParams, state: PageableState): PageableState = js.native
     def parseState(resp: js.Any, queryParams: PageableQueryParams, state: PageableState, options: js.Any): PageableState = js.native
@@ -68,16 +67,16 @@ object mod {
     def setPageSize(pageSize: Double, options: CollectionFetchOptions): JQueryXHR | PageableCollection[TModel] = js.native
     
     def setSorting(sortKey: String): PageableCollection[TModel] = js.native
-    def setSorting(sortKey: String, order: js.UndefOr[scala.Nothing], options: PageableSetSortingOptions[TModel]): PageableCollection[TModel] = js.native
     def setSorting(sortKey: String, order: Double): PageableCollection[TModel] = js.native
     def setSorting(sortKey: String, order: Double, options: PageableSetSortingOptions[TModel]): PageableCollection[TModel] = js.native
+    def setSorting(sortKey: String, order: Unit, options: PageableSetSortingOptions[TModel]): PageableCollection[TModel] = js.native
     
     var state: PageableState = js.native
     
     def switchMode(): JQueryXHR | PageableCollection[TModel] = js.native
-    def switchMode(mode: js.UndefOr[scala.Nothing], options: PageableSwitchModeOptions): JQueryXHR | PageableCollection[TModel] = js.native
     def switchMode(mode: String): JQueryXHR | PageableCollection[TModel] = js.native
     def switchMode(mode: String, options: PageableSwitchModeOptions): JQueryXHR | PageableCollection[TModel] = js.native
+    def switchMode(mode: Unit, options: PageableSwitchModeOptions): JQueryXHR | PageableCollection[TModel] = js.native
     
     def sync(method: String, model: TModel): JQueryXHR = js.native
     def sync(method: String, model: TModel, options: js.Any): JQueryXHR = js.native
@@ -87,23 +86,25 @@ object mod {
   /* static members */
   object PageableCollection {
     
-    @JSImport("backbone", "PageableCollection.noConflict")
+    @JSImport("backbone", "PageableCollection")
     @js.native
-    def noConflict(): TypeofPageableCollection = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def noConflict(): TypeofPageableCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[TypeofPageableCollection]
   }
   
   type PageableGetPageOptions = CollectionFetchOptions | Silenceable
   
-  @js.native
   trait PageableInitialOptions extends StObject {
     
-    var comparator: js.UndefOr[js.Function1[/* repeated */ js.Any, Double]] = js.native
+    var comparator: js.UndefOr[js.Function1[/* repeated */ js.Any, Double]] = js.undefined
     
-    var full: js.UndefOr[Boolean] = js.native
+    var full: js.UndefOr[Boolean] = js.undefined
     
-    var queryParam: js.UndefOr[PageableQueryParams] = js.native
+    var queryParam: js.UndefOr[PageableQueryParams] = js.undefined
     
-    var state: js.UndefOr[PageableState] = js.native
+    var state: js.UndefOr[PageableState] = js.undefined
   }
   object PageableInitialOptions {
     
@@ -142,10 +143,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PageableParseLinksOptions extends StObject {
     
-    var xhr: js.UndefOr[JQueryXHR] = js.native
+    var xhr: js.UndefOr[JQueryXHR] = js.undefined
   }
   object PageableParseLinksOptions {
     
@@ -166,22 +166,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PageableQueryParams extends StObject {
     
-    var currentPage: js.UndefOr[String] = js.native
+    var currentPage: js.UndefOr[String] = js.undefined
     
-    var directions: js.UndefOr[js.Any] = js.native
+    var directions: js.UndefOr[js.Any] = js.undefined
     
-    var order: js.UndefOr[String] = js.native
+    var order: js.UndefOr[String] = js.undefined
     
-    var pageSize: js.UndefOr[String] = js.native
+    var pageSize: js.UndefOr[String] = js.undefined
     
-    var sortKey: js.UndefOr[String] = js.native
+    var sortKey: js.UndefOr[String] = js.undefined
     
-    var totalPages: js.UndefOr[String] = js.native
+    var totalPages: js.UndefOr[String] = js.undefined
     
-    var totalRecords: js.UndefOr[String] = js.native
+    var totalRecords: js.UndefOr[String] = js.undefined
   }
   object PageableQueryParams {
     
@@ -238,25 +237,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait PageableSetSortingOptions[TModel /* <: Model[_, ModelSetOptions, js.Object] */] extends StObject {
+  trait PageableSetSortingOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] extends StObject {
     
-    var full: js.UndefOr[Boolean] = js.native
+    var full: js.UndefOr[Boolean] = js.undefined
     
-    var side: js.UndefOr[String] = js.native
+    var side: js.UndefOr[String] = js.undefined
     
-    var sortValue: js.UndefOr[js.Function2[/* model */ TModel, /* sortKey */ String, _ | String]] = js.native
+    var sortValue: js.UndefOr[js.Function2[/* model */ TModel, /* sortKey */ String, js.Any | String]] = js.undefined
   }
   object PageableSetSortingOptions {
     
     @scala.inline
-    def apply[TModel /* <: Model[_, ModelSetOptions, js.Object] */](): PageableSetSortingOptions[TModel] = {
+    def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): PageableSetSortingOptions[TModel] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableSetSortingOptions[TModel]]
     }
     
     @scala.inline
-    implicit class PageableSetSortingOptionsMutableBuilder[Self <: PageableSetSortingOptions[_], TModel /* <: Model[_, ModelSetOptions, js.Object] */] (val x: Self with PageableSetSortingOptions[TModel]) extends AnyVal {
+    implicit class PageableSetSortingOptionsMutableBuilder[Self <: PageableSetSortingOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & PageableSetSortingOptions[TModel]) extends AnyVal {
       
       @scala.inline
       def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
@@ -271,31 +269,30 @@ object mod {
       def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
       @scala.inline
-      def setSortValue(value: (/* model */ TModel, /* sortKey */ String) => _ | String): Self = StObject.set(x, "sortValue", js.Any.fromFunction2(value))
+      def setSortValue(value: (/* model */ TModel, /* sortKey */ String) => js.Any | String): Self = StObject.set(x, "sortValue", js.Any.fromFunction2(value))
       
       @scala.inline
       def setSortValueUndefined: Self = StObject.set(x, "sortValue", js.undefined)
     }
   }
   
-  @js.native
   trait PageableState extends StObject {
     
-    var currentPage: js.UndefOr[Double] = js.native
+    var currentPage: js.UndefOr[Double] = js.undefined
     
-    var firstPage: js.UndefOr[Double] = js.native
+    var firstPage: js.UndefOr[Double] = js.undefined
     
-    var lastPage: js.UndefOr[Double] = js.native
+    var lastPage: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var sortKey: js.UndefOr[String] = js.native
+    var sortKey: js.UndefOr[String] = js.undefined
     
-    var totalPages: js.UndefOr[Double] = js.native
+    var totalPages: js.UndefOr[Double] = js.undefined
     
-    var totalRecords: js.UndefOr[Double] = js.native
+    var totalRecords: js.UndefOr[Double] = js.undefined
   }
   object PageableState {
     
@@ -358,12 +355,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PageableSwitchModeOptions extends StObject {
     
-    var fetch: js.UndefOr[Boolean] = js.native
+    var fetch: js.UndefOr[Boolean] = js.undefined
     
-    var resetState: js.UndefOr[Boolean] = js.native
+    var resetState: js.UndefOr[Boolean] = js.undefined
   }
   object PageableSwitchModeOptions {
     

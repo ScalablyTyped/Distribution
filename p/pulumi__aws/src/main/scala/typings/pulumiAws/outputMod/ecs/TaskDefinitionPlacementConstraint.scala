@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.ecs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinitionPlacementConstraint extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait TaskDefinitionPlacementConstraint extends StObject {
     * Service Developer
     * Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html).
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object TaskDefinitionPlacementConstraint {
   

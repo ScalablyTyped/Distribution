@@ -2,13 +2,11 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeftWidth extends StObject {
   
-  var leftWidth: js.UndefOr[String] = js.native
+  var leftWidth: js.UndefOr[String] = js.undefined
 }
 object LeftWidth {
   

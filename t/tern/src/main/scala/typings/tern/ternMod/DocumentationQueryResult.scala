@@ -2,20 +2,18 @@ package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentationQueryResult extends StObject {
   
   /** The documentation string of the definition or value, if any. */
-  var doc: js.UndefOr[String] = js.native
+  var doc: js.UndefOr[String] = js.undefined
   
   /** The origin of the definition or value, if any. */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /** The url of the definition or value, if any. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DocumentationQueryResult {
   

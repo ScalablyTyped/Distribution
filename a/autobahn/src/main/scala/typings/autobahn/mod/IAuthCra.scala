@@ -2,15 +2,13 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAuthCra extends StObject {
   
-  def derive_key(secret: String, salt: String, iterations: Double, keylen: Double): String = js.native
+  def derive_key(secret: String, salt: String, iterations: Double, keylen: Double): String
   
-  def sign(key: String, challenge: String): String = js.native
+  def sign(key: String, challenge: String): String
 }
 object IAuthCra {
   

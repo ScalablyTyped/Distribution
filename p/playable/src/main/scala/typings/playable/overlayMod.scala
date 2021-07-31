@@ -7,15 +7,101 @@ import typings.playable.overlayTypesMod.IOverlayViewConfig
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayMod {
   
   @JSImport("playable/dist/src/modules/ui/overlay/overlay", JSImport.Default)
   @js.native
-  class default protected () extends Overlay {
+  class default protected ()
+    extends StObject
+       with Overlay {
     def this(hasEventEmitterEngineRootContainerThemeConfigMainUIBlockLoader: Loader) = this()
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _hideContent: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _loader: js.Any = js.native
+    
+    /* CompleteClass */
+    var _mainUIBlock: js.Any = js.native
+    
+    /* CompleteClass */
+    var _playVideo: js.Any = js.native
+    
+    /* CompleteClass */
+    var _showContent: js.Any = js.native
+    
+    /* CompleteClass */
+    var _theme: js.Any = js.native
+    
+    /* CompleteClass */
+    var _tryHideContent: js.Any = js.native
+    
+    /* CompleteClass */
+    var _tryShowContent: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updatePlayingState: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def setPoster(src: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /**
+      * The `.turnOffOverlayTransparency()` method returns player's overlay to default settings.
+      * It becomes black again.
+      *
+      * @example
+      * player.turnOffOverlayTransparency();
+      *
+      */
+    /* CompleteClass */
+    override def turnOffOverlayTransparency(): Unit = js.native
+    
+    /**
+      * After initialisation player has by default an overlay that is black;
+      *
+      * The `.turnOnOverlayTransparency()` method makes this overlay transparent.
+      * @example
+      * player.turnOnOverlayTransparency();
+      *
+      */
+    /* CompleteClass */
+    override def turnOnOverlayTransparency(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.overlayViewMod.default = js.native
   }
   object default {
     
@@ -53,38 +139,39 @@ object overlayMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait Overlay extends IOverlay {
+  trait Overlay
+    extends StObject
+       with IOverlay {
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _hideContent: js.Any = js.native
+    var _hideContent: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _loader: js.Any = js.native
+    var _loader: js.Any
     
-    var _mainUIBlock: js.Any = js.native
+    var _mainUIBlock: js.Any
     
-    var _playVideo: js.Any = js.native
+    var _playVideo: js.Any
     
-    var _showContent: js.Any = js.native
+    var _showContent: js.Any
     
-    var _theme: js.Any = js.native
+    var _theme: js.Any
     
-    var _tryHideContent: js.Any = js.native
+    var _tryHideContent: js.Any
     
-    var _tryShowContent: js.Any = js.native
+    var _tryShowContent: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var _updatePlayingState: js.Any = js.native
+    var _updatePlayingState: js.Any
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
     /**
       * The `.turnOffOverlayTransparency()` method returns player's overlay to default settings.
@@ -94,7 +181,7 @@ object overlayMod {
       * player.turnOffOverlayTransparency();
       *
       */
-    def turnOffOverlayTransparency(): Unit = js.native
+    def turnOffOverlayTransparency(): Unit
     
     /**
       * After initialisation player has by default an overlay that is black;
@@ -104,9 +191,9 @@ object overlayMod {
       * player.turnOnOverlayTransparency();
       *
       */
-    def turnOnOverlayTransparency(): Unit = js.native
+    def turnOnOverlayTransparency(): Unit
     
-    var view: typings.playable.overlayViewMod.default = js.native
+    var view: typings.playable.overlayViewMod.default
   }
   object Overlay {
     

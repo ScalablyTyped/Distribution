@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapPropertyMod {
@@ -12,15 +11,15 @@ object mapPropertyMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[MapProperty with String] = js.native
+    def apply(value: String): js.UndefOr[MapProperty & String] = js.native
     
-    /* "layergroup" */ val LAYERGROUP: typings.ol.mapPropertyMod.MapProperty.LAYERGROUP with String = js.native
+    /* "layergroup" */ val LAYERGROUP: typings.ol.mapPropertyMod.MapProperty.LAYERGROUP & String = js.native
     
-    /* "size" */ val SIZE: typings.ol.mapPropertyMod.MapProperty.SIZE with String = js.native
+    /* "size" */ val SIZE: typings.ol.mapPropertyMod.MapProperty.SIZE & String = js.native
     
-    /* "target" */ val TARGET: typings.ol.mapPropertyMod.MapProperty.TARGET with String = js.native
+    /* "target" */ val TARGET: typings.ol.mapPropertyMod.MapProperty.TARGET & String = js.native
     
-    /* "view" */ val VIEW: typings.ol.mapPropertyMod.MapProperty.VIEW with String = js.native
+    /* "view" */ val VIEW: typings.ol.mapPropertyMod.MapProperty.VIEW & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object mapPropertyMod {
   object MapProperty extends StObject {
     
     @js.native
-    sealed trait LAYERGROUP extends MapProperty
+    sealed trait LAYERGROUP
+      extends StObject
+         with MapProperty
     
     @js.native
-    sealed trait SIZE extends MapProperty
+    sealed trait SIZE
+      extends StObject
+         with MapProperty
     
     @js.native
-    sealed trait TARGET extends MapProperty
+    sealed trait TARGET
+      extends StObject
+         with MapProperty
     
     @js.native
-    sealed trait VIEW extends MapProperty
+    sealed trait VIEW
+      extends StObject
+         with MapProperty
   }
 }

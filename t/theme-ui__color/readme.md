@@ -10,9 +10,9 @@ Color manipulation utilities for Theme UI
 | ------------------ | :-------------: |
 | Full name          | @theme-ui/color |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 40 |
-| # downloads        | 237263 |
+| # releases         | 38 |
+| # dependents       | 43 |
+| # downloads        | 303683 |
 | # stars            | 0 |
 
 ## Links

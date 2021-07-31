@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRegistriesResponse extends StObject {
   
   /**
     * A continuation token for paginating the returned list of tokens, returned if the current segment of the list is not the last.
     */
-  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.native
+  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.undefined
   
   /**
     * An array of RegistryDetailedListItem objects containing minimal details of each registry.
     */
-  var Registries: js.UndefOr[RegistryListDefinition] = js.native
+  var Registries: js.UndefOr[RegistryListDefinition] = js.undefined
 }
 object ListRegistriesResponse {
   

@@ -5,19 +5,18 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
-trait FontIconProps
-  extends HTMLAttributes[js.Object] {
+- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait FontIconProps
+  extends StObject
+     with HTMLAttributes[js.Object] {
   
-  var hoverColor: js.UndefOr[String] = js.native
+  var hoverColor: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
-  var ref: js.UndefOr[LegacyRef[FontIcon]] = js.native
+  var ref: js.UndefOr[LegacyRef[FontIcon]] = js.undefined
 }
 object FontIconProps {
   

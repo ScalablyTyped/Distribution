@@ -3,13 +3,11 @@ package typings.reactInstantsearchCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslatableExposed extends StObject {
   
-  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, String])]] = js.native
+  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, String])]] = js.undefined
 }
 object TranslatableExposed {
   

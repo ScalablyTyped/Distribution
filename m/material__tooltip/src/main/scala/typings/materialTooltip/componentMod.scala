@@ -7,7 +7,6 @@ import typings.materialTooltip.foundationMod.MDCTooltipFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -15,7 +14,7 @@ object componentMod {
   @JSImport("@material/tooltip/component", "MDCTooltip")
   @js.native
   class MDCTooltip protected () extends MDCComponent[MDCTooltipFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCTooltipFoundation, args: js.Any*) = this()
     
     def setAnchorBoundaryType(`type`: AnchorBoundaryType): Unit = js.native
@@ -25,8 +24,11 @@ object componentMod {
   /* static members */
   object MDCTooltip {
     
-    @JSImport("@material/tooltip/component", "MDCTooltip.attachTo")
+    @JSImport("@material/tooltip/component", "MDCTooltip")
     @js.native
-    def attachTo(root: Element): MDCTooltip = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCTooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTooltip]
   }
 }

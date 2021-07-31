@@ -7,10 +7,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xlarge
 import typings.arcgisJsApi.arcgisJsApiStrings.xsmall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakpointsOwnerProperties extends StObject {
   
   /**
@@ -18,21 +16,21 @@ trait BreakpointsOwnerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#breakpoints)
     */
-  var breakpoints: js.UndefOr[BreakpointsOwnerBreakpoints] = js.native
+  var breakpoints: js.UndefOr[BreakpointsOwnerBreakpoints] = js.undefined
   
   /**
     * A convenience property indicating the general size of the view's height.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#heightBreakpoint)
     */
-  var heightBreakpoint: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
+  var heightBreakpoint: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   
   /**
     * A convenience property indicating the general size of the view's width.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#widthBreakpoint)
     */
-  var widthBreakpoint: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
+  var widthBreakpoint: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
 }
 object BreakpointsOwnerProperties {
   

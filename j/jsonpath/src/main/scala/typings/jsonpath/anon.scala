@@ -3,17 +3,15 @@ package typings.jsonpath
 import typings.jsonpath.mod.PathComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Path extends StObject {
     
-    var path: js.Array[PathComponent] = js.native
+    var path: js.Array[PathComponent]
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Path {
     

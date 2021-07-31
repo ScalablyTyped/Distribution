@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Runtime.GetHeapUsageResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetHeapUsageResponse extends StObject {
   
-  var paramsType: js.Array[js.Any] = js.native
+  var paramsType: js.Array[js.Any]
   
-  var returnType: GetHeapUsageResponse = js.native
+  var returnType: GetHeapUsageResponse
 }
 object ReturnTypeGetHeapUsageResponse {
   

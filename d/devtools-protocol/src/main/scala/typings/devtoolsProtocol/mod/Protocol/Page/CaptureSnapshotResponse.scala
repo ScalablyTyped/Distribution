@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptureSnapshotResponse extends StObject {
   
   /**
     * Serialized page data.
     */
-  var data: String = js.native
+  var data: String
 }
 object CaptureSnapshotResponse {
   

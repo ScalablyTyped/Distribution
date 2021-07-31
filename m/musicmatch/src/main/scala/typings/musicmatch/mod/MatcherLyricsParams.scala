@@ -2,15 +2,13 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatcherLyricsParams extends StObject {
   
-  var q_artist: js.UndefOr[String] = js.native
+  var q_artist: js.UndefOr[String] = js.undefined
   
-  var q_track: js.UndefOr[String] = js.native
+  var q_track: js.UndefOr[String] = js.undefined
 }
 object MatcherLyricsParams {
   

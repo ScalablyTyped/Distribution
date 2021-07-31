@@ -6,13 +6,11 @@ import typings.nextAuth.adaptersMod.TypeORMUserModel
 import typings.nextAuth.adaptersMod.TypeORMVerificationRequestModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0`[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] extends StObject {
   
-  var models: js.UndefOr[Session[A, U, S, VR]] = js.native
+  var models: js.UndefOr[Session[A, U, S, VR]] = js.undefined
 }
 object `0` {
   
@@ -23,7 +21,7 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`[_, _, _, _], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] (val x: Self with (`0`[A, U, S, VR])) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] (val x: Self & (`0`[A, U, S, VR])) extends AnyVal {
     
     @scala.inline
     def setModels(value: Session[A, U, S, VR]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])

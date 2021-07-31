@@ -10,9 +10,9 @@ Progress bar component for Electron applications
 | ------------------ | :-------------: |
 | Full name          | electron-progressbar |
 | Keywords           | electron, progress, progressbar, loading, processing |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 54777 |
+| # downloads        | 75466 |
 | # stars            | 0 |
 
 ## Links

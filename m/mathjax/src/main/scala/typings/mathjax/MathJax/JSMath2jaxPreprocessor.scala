@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSMath2jaxPreprocessor extends StObject {
   
   /*This controls whether jsMath2jax inserts MathJax_Preview spans to make a preview available, and what preview
@@ -14,7 +12,7 @@ trait JSMath2jaxPreprocessor extends StObject {
     * previews from being inserted (the math will simply disappear until it is typeset). Set to an array containing
     * the description of an HTML snippet in order to use the same preview for all equations on the page.
     */
-  var preview: js.Any = js.native
+  var preview: js.Any
 }
 object JSMath2jaxPreprocessor {
   

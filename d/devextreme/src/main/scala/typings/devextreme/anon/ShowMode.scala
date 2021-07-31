@@ -7,19 +7,17 @@ import typings.devextreme.devextremeStrings.top
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowMode extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   
-  var position: js.UndefOr[bottom | top] = js.native
+  var position: js.UndefOr[bottom | top] = js.undefined
   
-  var showMode: js.UndefOr[always | onHover] = js.native
+  var showMode: js.UndefOr[always | onHover] = js.undefined
 }
 object ShowMode {
   

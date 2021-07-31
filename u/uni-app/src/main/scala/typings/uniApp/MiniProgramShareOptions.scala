@@ -5,21 +5,19 @@ import typings.uniApp.uniAppStrings.`1`
 import typings.uniApp.uniAppStrings.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MiniProgramShareOptions extends StObject {
   
   /**
     * 微信小程序原始id
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 点击链接进入的页面
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * 微信小程序版本类型，默认为0。
@@ -27,12 +25,12 @@ trait MiniProgramShareOptions extends StObject {
     * - 1: 测试版
     * - 2: 体验版
     */
-  var `type`: js.UndefOr[`0` | `1` | `2`] = js.native
+  var `type`: js.UndefOr[`0` | `1` | `2`] = js.undefined
   
   /**
     * 兼容低版本的网页链接
     */
-  var webUrl: js.UndefOr[String] = js.native
+  var webUrl: js.UndefOr[String] = js.undefined
 }
 object MiniProgramShareOptions {
   

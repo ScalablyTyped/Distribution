@@ -2,61 +2,59 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalCluster extends StObject {
   
   /**
     *  The default database name within the new global database cluster. 
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     *  The deletion protection setting for the new global database cluster. 
     */
-  var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
+  var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     *  The Aurora database engine used by the global database cluster. 
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the database engine version.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the global database cluster.
     */
-  var GlobalClusterArn: js.UndefOr[String] = js.native
+  var GlobalClusterArn: js.UndefOr[String] = js.undefined
   
   /**
     *  Contains a user-supplied global database cluster identifier. This identifier is the unique key that identifies a global database cluster. 
     */
-  var GlobalClusterIdentifier: js.UndefOr[String] = js.native
+  var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  The list of cluster IDs for secondary clusters within the global database cluster. Currently limited to 1 item. 
     */
-  var GlobalClusterMembers: js.UndefOr[GlobalClusterMemberList] = js.native
+  var GlobalClusterMembers: js.UndefOr[GlobalClusterMemberList] = js.undefined
   
   /**
     *  The AWS Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed. 
     */
-  var GlobalClusterResourceId: js.UndefOr[String] = js.native
+  var GlobalClusterResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the current state of this global database cluster.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     *  The storage encryption setting for the global database cluster. 
     */
-  var StorageEncrypted: js.UndefOr[BooleanOptional] = js.native
+  var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
 }
 object GlobalCluster {
   

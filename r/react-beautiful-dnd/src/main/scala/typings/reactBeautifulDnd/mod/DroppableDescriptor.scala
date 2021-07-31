@@ -2,17 +2,15 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableDescriptor extends StObject {
   
-  var id: DroppableId = js.native
+  var id: DroppableId
   
-  var mode: DroppableMode = js.native
+  var mode: DroppableMode
   
-  var `type`: TypeId = js.native
+  var `type`: TypeId
 }
 object DroppableDescriptor {
   

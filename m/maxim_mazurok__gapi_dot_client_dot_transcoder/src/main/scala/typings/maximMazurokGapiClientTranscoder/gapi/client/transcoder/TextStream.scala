@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextStream extends StObject {
   
   /** The codec for this text stream. The default is `"webvtt"`. Supported text codecs: - 'srt' - 'ttml' - 'cea608' - 'cea708' - 'webvtt' */
-  var codec: js.UndefOr[String] = js.native
+  var codec: js.UndefOr[String] = js.undefined
   
   /** Required. The BCP-47 language code, such as `"en-US"` or `"sr-Latn"`. For more information, see https://www.unicode.org/reports/tr35/#Unicode_locale_identifier. */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** The mapping for the `Job.edit_list` atoms with text `EditAtom.inputs`. */
-  var mapping: js.UndefOr[js.Array[TextAtom]] = js.native
+  var mapping: js.UndefOr[js.Array[TextAtom]] = js.undefined
 }
 object TextStream {
   

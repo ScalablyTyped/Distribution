@@ -3,37 +3,32 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSModuleDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSModuleDeclaration_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait TSModuleDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with Statement {
   
-  var body: TSModuleBlock_ | TSModuleDeclaration_ = js.native
+  var body: TSModuleBlock_ | TSModuleDeclaration_
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var global: Boolean | Null = js.native
+  var global: Boolean | Null
   
-  var id: Identifier_ | StringLiteral_ = js.native
+  var id: Identifier_ | StringLiteral_
   
   @JSName("type")
-  var type_TSModuleDeclaration_ : TSModuleDeclaration = js.native
+  var type_TSModuleDeclaration_ : TSModuleDeclaration
 }
 object TSModuleDeclaration_ {
   
   @scala.inline
-  def apply(
-    body: TSModuleBlock_ | TSModuleDeclaration_,
-    id: Identifier_ | StringLiteral_,
-    `type`: TSModuleDeclaration
-  ): TSModuleDeclaration_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: TSModuleBlock_ | TSModuleDeclaration_, id: Identifier_ | StringLiteral_): TSModuleDeclaration_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], declare = null, end = null, global = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSModuleDeclaration")
     __obj.asInstanceOf[TSModuleDeclaration_]
   }
   

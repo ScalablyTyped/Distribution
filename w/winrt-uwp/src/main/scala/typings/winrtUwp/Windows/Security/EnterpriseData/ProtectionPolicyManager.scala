@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages enterprise-protection policy on protected content. */
-@js.native
 trait ProtectionPolicyManager extends StObject {
   
   /** Gets or sets the enterprise identity. */
-  var identity: String = js.native
+  var identity: String
 }
 object ProtectionPolicyManager {
   

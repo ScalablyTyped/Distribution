@@ -3,19 +3,20 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.anon.ContextType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMixinMod {
   
-  @JSImport("@ant-design/react-native/lib/picker/PickerMixin", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/picker/PickerMixin", JSImport.Namespace)
   @js.native
-  def default(ComposedComponent: js.Any): ContextType = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(ComposedComponent: js.Any): ContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ContextType]
+  
   trait ItemProps extends StObject {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ItemProps {
     

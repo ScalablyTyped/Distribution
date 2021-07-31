@@ -3,7 +3,6 @@ package typings.primereact
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object captchaCaptchaMod {
@@ -20,26 +19,25 @@ object captchaCaptchaMod {
     def this(props: CaptchaProps, context: js.Any) = this()
   }
   
-  @js.native
   trait CaptchaProps extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var onExpire: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExpire: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onResponse: js.UndefOr[js.Function1[/* response */ js.Any, Unit]] = js.native
+    var onResponse: js.UndefOr[js.Function1[/* response */ js.Any, Unit]] = js.undefined
     
-    var siteKey: js.UndefOr[String] = js.native
+    var siteKey: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CaptchaProps {
     

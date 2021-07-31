@@ -2,17 +2,15 @@ package typings.apn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Reason extends StObject {
     
-    var reason: String = js.native
+    var reason: String
     
-    var timestamp: js.UndefOr[String] = js.native
+    var timestamp: js.UndefOr[String] = js.undefined
   }
   object Reason {
     

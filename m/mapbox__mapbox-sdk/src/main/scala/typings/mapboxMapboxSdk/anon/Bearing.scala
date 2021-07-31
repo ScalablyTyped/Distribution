@@ -4,19 +4,17 @@ import typings.mapboxGl.mod.LngLatLike
 import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bearing extends StObject {
   
-  var bearing: js.UndefOr[Double] = js.native
+  var bearing: js.UndefOr[Double] = js.undefined
   
-  var coordinates: LngLatLike | auto = js.native
+  var coordinates: LngLatLike | auto
   
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object Bearing {
   

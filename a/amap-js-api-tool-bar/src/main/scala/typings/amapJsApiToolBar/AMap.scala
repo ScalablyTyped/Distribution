@@ -15,13 +15,14 @@ import typings.amapJsApiToolBar.amapJsApiToolBarStrings.zoomout
 import typings.amapJsApiToolBar.anon.Lnglat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait ToolBar extends EventEmitter {
+  trait ToolBar
+    extends StObject
+       with EventEmitter {
     
     /**
       * 进行位置定位
@@ -86,39 +87,32 @@ object AMap {
   }
   object ToolBar {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var hide: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.hide, js.UndefOr[scala.Nothing]] = js.native
+      var hide: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.hide, Unit]
       
-      var location: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.location, Lnglat] = js.native
+      var location: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.location, Lnglat]
       
       // TODO geolocation.getCurrentPosition
-      var `location-failed`: Event_[
-            typings.amapJsApiToolBar.amapJsApiToolBarStrings.`location-failed`, 
-            js.UndefOr[scala.Nothing]
-          ] = js.native
+      var `location-failed`: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.`location-failed`, Unit]
       
       // internal
-      var `location-success`: Event_[
-            typings.amapJsApiToolBar.amapJsApiToolBarStrings.`location-success`, 
-            js.UndefOr[scala.Nothing]
-          ] = js.native
+      var `location-success`: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.`location-success`, Unit]
       
-      var show: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.show, js.UndefOr[scala.Nothing]] = js.native
+      var show: Event_[typings.amapJsApiToolBar.amapJsApiToolBarStrings.show, Unit]
       
-      var zoomchanged: Event_[zoomin | zoomout, js.UndefOr[scala.Nothing]] = js.native
+      var zoomchanged: Event_[zoomin | zoomout, Unit]
     }
     object EventMap {
       
       @scala.inline
       def apply(
-        hide: Event_[hide, js.UndefOr[scala.Nothing]],
+        hide: Event_[hide, Unit],
         location: Event_[location, Lnglat],
-        `location-failed`: Event_[`location-failed`, js.UndefOr[scala.Nothing]],
-        `location-success`: Event_[`location-success`, js.UndefOr[scala.Nothing]],
-        show: Event_[show, js.UndefOr[scala.Nothing]],
-        zoomchanged: Event_[zoomin | zoomout, js.UndefOr[scala.Nothing]]
+        `location-failed`: Event_[`location-failed`, Unit],
+        `location-success`: Event_[`location-success`, Unit],
+        show: Event_[show, Unit],
+        zoomchanged: Event_[zoomin | zoomout, Unit]
       ): EventMap = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], zoomchanged = zoomchanged.asInstanceOf[js.Any])
         __obj.updateDynamic("location-failed")(`location-failed`.asInstanceOf[js.Any])
@@ -130,62 +124,61 @@ object AMap {
       implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setHide(value: Event_[hide, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLocation(value: Event_[location, Lnglat]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def `setLocation-failed`(value: Event_[`location-failed`, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "location-failed", value.asInstanceOf[js.Any])
+        def `setLocation-failed`(value: Event_[`location-failed`, Unit]): Self = StObject.set(x, "location-failed", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def `setLocation-success`(value: Event_[`location-success`, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "location-success", value.asInstanceOf[js.Any])
+        def `setLocation-success`(value: Event_[`location-success`, Unit]): Self = StObject.set(x, "location-success", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setShow(value: Event_[show, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setZoomchanged(value: Event_[zoomin | zoomout, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "zoomchanged", value.asInstanceOf[js.Any])
+        def setZoomchanged(value: Event_[zoomin | zoomout, Unit]): Self = StObject.set(x, "zoomchanged", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 是否自动定位，即地图初始化加载完成后，是否自动定位的用户所在地，仅在支持HTML5的浏览器中有效
         */
-      var autoPosition: js.UndefOr[Boolean] = js.native
+      var autoPosition: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 方向键盘是否可见
         */
-      var direction: js.UndefOr[Boolean] = js.native
+      var direction: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 是否使用精简模式
         */
-      var liteStyle: js.UndefOr[Boolean] = js.native
+      var liteStyle: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 是否显示定位按钮
         */
-      var locate: js.UndefOr[Boolean] = js.native
+      var locate: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 自定义定位图标，值为Marker对象
         */
-      var locationMarker: js.UndefOr[Marker[_]] = js.native
+      var locationMarker: js.UndefOr[Marker[js.Any]] = js.undefined
       
       /**
         * 定位失败后，是否开启IP定位
         */
-      var noIpLocate: js.UndefOr[Boolean] = js.native
+      var noIpLocate: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 相对于地图容器左上角的偏移量
         */
-      var offset: js.UndefOr[Pixel] = js.native
+      var offset: js.UndefOr[Pixel] = js.undefined
       
       /**
         * 控件停靠位置
@@ -194,20 +187,20 @@ object AMap {
         * LB:左下角;
         * RB:右下角;
         */
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
       
       /**
         * 标尺键盘是否可见
         */
-      var ruler: js.UndefOr[Boolean] = js.native
+      var ruler: js.UndefOr[Boolean] = js.undefined
       
       // internal
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * 是否使用高德定位sdk用来辅助优化定位效果
         */
-      var useNative: js.UndefOr[Boolean] = js.native
+      var useNative: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -245,7 +238,7 @@ object AMap {
         def setLocateUndefined: Self = StObject.set(x, "locate", js.undefined)
         
         @scala.inline
-        def setLocationMarker(value: Marker[_]): Self = StObject.set(x, "locationMarker", value.asInstanceOf[js.Any])
+        def setLocationMarker(value: Marker[js.Any]): Self = StObject.set(x, "locationMarker", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLocationMarkerUndefined: Self = StObject.set(x, "locationMarker", js.undefined)

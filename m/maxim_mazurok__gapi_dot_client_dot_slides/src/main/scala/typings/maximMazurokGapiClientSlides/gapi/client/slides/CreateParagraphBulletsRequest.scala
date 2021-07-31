@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateParagraphBulletsRequest extends StObject {
   
   /** The kinds of bullet glyphs to be used. Defaults to the `BULLET_DISC_CIRCLE_SQUARE` preset. */
-  var bulletPreset: js.UndefOr[String] = js.native
+  var bulletPreset: js.UndefOr[String] = js.undefined
   
   /** The optional table cell location if the text to be modified is in a table cell. If present, the object_id must refer to a table. */
-  var cellLocation: js.UndefOr[TableCellLocation] = js.native
+  var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
   
   /** The object ID of the shape or table containing the text to add bullets to. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /** The range of text to apply the bullet presets to, based on TextElement indexes. */
-  var textRange: js.UndefOr[Range] = js.native
+  var textRange: js.UndefOr[Range] = js.undefined
 }
 object CreateParagraphBulletsRequest {
   

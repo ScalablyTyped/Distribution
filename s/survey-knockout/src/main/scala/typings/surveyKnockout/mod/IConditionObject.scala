@@ -2,17 +2,15 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConditionObject extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var question: Question = js.native
+  var question: Question
   
-  var text: String = js.native
+  var text: String
 }
 object IConditionObject {
   

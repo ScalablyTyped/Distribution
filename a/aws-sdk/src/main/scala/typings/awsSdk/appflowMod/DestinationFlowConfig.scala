@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationFlowConfig extends StObject {
   
   /**
     *  The name of the connector profile. This name must be unique for each connector profile in the AWS account. 
     */
-  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.native
+  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.undefined
   
   /**
     *  The type of connector, such as Salesforce, Amplitude, and so on. 
     */
-  var connectorType: ConnectorType = js.native
+  var connectorType: ConnectorType
   
   /**
     *  This stores the information that is required to query a particular connector. 
     */
-  var destinationConnectorProperties: DestinationConnectorProperties = js.native
+  var destinationConnectorProperties: DestinationConnectorProperties
 }
 object DestinationFlowConfig {
   

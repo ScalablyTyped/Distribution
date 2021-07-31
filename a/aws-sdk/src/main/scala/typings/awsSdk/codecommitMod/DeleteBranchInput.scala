@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBranchInput extends StObject {
   
   /**
     * The name of the branch to delete.
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     * The name of the repository that contains the branch to be deleted.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object DeleteBranchInput {
   

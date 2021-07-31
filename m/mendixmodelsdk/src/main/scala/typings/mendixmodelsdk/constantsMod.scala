@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -84,9 +83,8 @@ object constantsMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant.createIn")
-      @js.native
-      def createIn(container: IFolderBase): Constant = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): Constant = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Constant]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant.structureTypeName")
@@ -110,6 +108,8 @@ object constantsMod {
       * See: {@link https://docs.mendix.com/refguide/constants relevant section in reference guide}
       */
     @js.native
-    trait IConstant extends IDocument
+    trait IConstant
+      extends StObject
+         with IDocument
   }
 }

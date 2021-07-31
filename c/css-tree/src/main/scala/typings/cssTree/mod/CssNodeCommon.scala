@@ -2,15 +2,13 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CssNodeCommon extends StObject {
   
-  var loc: js.UndefOr[CssLocation] = js.native
+  var loc: js.UndefOr[CssLocation] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object CssNodeCommon {
   

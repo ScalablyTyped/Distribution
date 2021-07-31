@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildNodeInsertedEvent extends StObject {
   
   /**
     * Inserted node data.
     */
-  var node: Node = js.native
+  var node: Node
   
   /**
     * Id of the node that has changed.
     */
-  var parentNodeId: NodeId = js.native
+  var parentNodeId: NodeId
   
   /**
     * If of the previous siblint.
     */
-  var previousNodeId: NodeId = js.native
+  var previousNodeId: NodeId
 }
 object ChildNodeInsertedEvent {
   

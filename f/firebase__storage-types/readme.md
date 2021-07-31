@@ -10,9 +10,9 @@ Typings are for version 0.3.13
 | ------------------ | :-------------: |
 | Full name          | @firebase/storage-types |
 | Keywords           | - |
-| # releases         | 1104 |
+| # releases         | 1270 |
 | # dependents       | 3 |
-| # downloads        | 29481239 |
+| # downloads        | 33427539 |
 | # stars            | 0 |
 
 ## Links

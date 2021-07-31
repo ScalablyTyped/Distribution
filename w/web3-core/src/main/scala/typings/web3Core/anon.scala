@@ -2,25 +2,23 @@ package typings.web3Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cipher extends StObject {
     
-    var cipher: String = js.native
+    var cipher: String
     
-    var cipherparams: Iv = js.native
+    var cipherparams: Iv
     
-    var ciphertext: String = js.native
+    var ciphertext: String
     
-    var kdf: String = js.native
+    var kdf: String
     
-    var kdfparams: Dklen = js.native
+    var kdfparams: Dklen
     
-    var mac: String = js.native
+    var mac: String
   }
   object Cipher {
     
@@ -53,17 +51,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var topics: js.Array[_] = js.native
+    var topics: js.Array[js.Any]
   }
   object Data {
     
     @scala.inline
-    def apply(data: String, topics: js.Array[_]): Data = {
+    def apply(data: String, topics: js.Array[js.Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
@@ -75,25 +72,24 @@ object anon {
       def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTopics(value: js.Array[_]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      def setTopics(value: js.Array[js.Any]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTopicsVarargs(value: js.Any*): Self = StObject.set(x, "topics", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Dklen extends StObject {
     
-    var dklen: Double = js.native
+    var dklen: Double
     
-    var n: Double = js.native
+    var n: Double
     
-    var p: Double = js.native
+    var p: Double
     
-    var r: Double = js.native
+    var r: Double
     
-    var salt: String = js.native
+    var salt: String
   }
   object Dklen {
     
@@ -123,28 +119,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Gas extends StObject {
     
-    var gas: String = js.native
+    var gas: String
     
-    var gasPrice: String = js.native
+    var gasPrice: String
     
-    var hash: String = js.native
+    var hash: String
     
-    var input: String = js.native
+    var input: String
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var r: String = js.native
+    var r: String
     
-    var s: String = js.native
+    var s: String
     
-    var to: String = js.native
+    var to: String
     
-    var v: String = js.native
+    var v: String
     
-    var value: String = js.native
+    var value: String
   }
   object Gas {
     
@@ -200,10 +195,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Iv extends StObject {
     
-    var iv: String = js.native
+    var iv: String
   }
   object Iv {
     

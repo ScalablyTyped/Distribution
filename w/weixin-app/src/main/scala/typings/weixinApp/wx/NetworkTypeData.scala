@@ -2,14 +2,12 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkTypeData extends StObject {
   
   /** 返回网络类型2g，3g，4g，wifi */
-  var networkType: typings.weixinApp.wx.networkType = js.native
+  var networkType: typings.weixinApp.wx.networkType
 }
 object NetworkTypeData {
   

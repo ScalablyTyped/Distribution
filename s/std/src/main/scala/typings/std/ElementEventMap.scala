@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementEventMap extends StObject {
   
-  var fullscreenchange: Event = js.native
+  var fullscreenchange: Event
   
-  var fullscreenerror: Event = js.native
+  var fullscreenerror: Event
 }
 object ElementEventMap {
   

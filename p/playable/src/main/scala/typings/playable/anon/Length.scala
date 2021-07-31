@@ -2,17 +2,15 @@ package typings.playable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Length extends StObject {
   
-  def end(): Double = js.native
+  def end(): Double
   
-  var length: Double = js.native
+  var length: Double
   
-  def start(): Double = js.native
+  def start(): Double
 }
 object Length {
   

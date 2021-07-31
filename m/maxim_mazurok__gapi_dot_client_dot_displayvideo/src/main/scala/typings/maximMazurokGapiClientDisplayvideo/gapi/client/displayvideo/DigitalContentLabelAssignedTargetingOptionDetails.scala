@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DigitalContentLabelAssignedTargetingOptionDetails extends StObject {
   
   /** Output only. The display name of the digital content label rating tier. */
-  var contentRatingTier: js.UndefOr[String] = js.native
+  var contentRatingTier: js.UndefOr[String] = js.undefined
   
   /** Required. ID of the digital content label to be EXCLUDED. */
-  var excludedTargetingOptionId: js.UndefOr[String] = js.native
+  var excludedTargetingOptionId: js.UndefOr[String] = js.undefined
 }
 object DigitalContentLabelAssignedTargetingOptionDetails {
   

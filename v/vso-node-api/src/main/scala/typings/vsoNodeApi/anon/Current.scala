@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var current: scala.Double = js.native
+  var current: scala.Double
   
-  var future: scala.Double = js.native
+  var future: scala.Double
   
-  var past: scala.Double = js.native
+  var past: scala.Double
 }
 object Current {
   

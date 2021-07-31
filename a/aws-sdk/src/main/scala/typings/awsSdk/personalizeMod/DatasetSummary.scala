@@ -2,41 +2,39 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetSummary extends StObject {
   
   /**
     * The date and time (in Unix time) that the dataset was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset.
     */
-  var datasetArn: js.UndefOr[Arn] = js.native
+  var datasetArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The dataset type. One of the following values:   Interactions   Items   Users   Event-Interactions  
     */
-  var datasetType: js.UndefOr[DatasetType] = js.native
+  var datasetType: js.UndefOr[DatasetType] = js.undefined
   
   /**
     * The date and time (in Unix time) that the dataset was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the dataset.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The status of the dataset. A dataset can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object DatasetSummary {
   

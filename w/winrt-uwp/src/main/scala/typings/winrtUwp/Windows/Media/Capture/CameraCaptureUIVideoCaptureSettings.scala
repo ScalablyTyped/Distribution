@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides settings for capturing videos. The settings include format, maximum resolution, maximum duration, and whether or not to allow trimming. */
-@js.native
 trait CameraCaptureUIVideoCaptureSettings extends StObject {
   
   /** Determines whether or not the video trimming user interface will be enabled. */
-  var allowTrimming: Boolean = js.native
+  var allowTrimming: Boolean
   
   /** Determines the format for storing captured videos. */
-  var format: CameraCaptureUIVideoFormat = js.native
+  var format: CameraCaptureUIVideoFormat
   
   /** Determines the maximum duration of a video. */
-  var maxDurationInSeconds: Double = js.native
+  var maxDurationInSeconds: Double
   
   /** Determines the maximum resolution that the user can select. */
-  var maxResolution: CameraCaptureUIMaxVideoResolution = js.native
+  var maxResolution: CameraCaptureUIMaxVideoResolution
 }
 object CameraCaptureUIVideoCaptureSettings {
   

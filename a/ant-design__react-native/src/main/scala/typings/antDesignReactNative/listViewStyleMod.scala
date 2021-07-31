@@ -6,51 +6,52 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listViewStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/list-view/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/list-view/style", JSImport.Namespace)
   @js.native
-  def default(variables: Theme): ListStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(variables: Theme): ListStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(variables.asInstanceOf[js.Any]).asInstanceOf[ListStyle]
+  
   trait ListStyle extends StObject {
     
-    var Arrow: ViewStyle = js.native
+    var Arrow: ViewStyle
     
-    var ArrowV: ViewStyle = js.native
+    var ArrowV: ViewStyle
     
-    var Body: ViewStyle = js.native
+    var Body: ViewStyle
     
-    var BodyBottomLine: ViewStyle = js.native
+    var BodyBottomLine: ViewStyle
     
-    var Brief: ViewStyle = js.native
+    var Brief: ViewStyle
     
-    var BriefText: TextStyle = js.native
+    var BriefText: TextStyle
     
-    var Content: TextStyle = js.native
+    var Content: TextStyle
     
-    var Extra: TextStyle = js.native
+    var Extra: TextStyle
     
-    var Footer: TextStyle = js.native
+    var Footer: TextStyle
     
-    var Header: TextStyle = js.native
+    var Header: TextStyle
     
-    var Item: ViewStyle = js.native
+    var Item: ViewStyle
     
-    var Line: ViewStyle = js.native
+    var Line: ViewStyle
     
-    var Thumb: ImageStyle = js.native
+    var Thumb: ImageStyle
     
-    var column: ViewStyle = js.native
+    var column: ViewStyle
     
-    var multipleLine: ViewStyle = js.native
+    var multipleLine: ViewStyle
     
-    var multipleThumb: ImageStyle = js.native
+    var multipleThumb: ImageStyle
     
-    var underlayColor: ViewStyle = js.native
+    var underlayColor: ViewStyle
   }
   object ListStyle {
     

@@ -6,38 +6,36 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.DropdownOptions> */
-@js.native
 trait PartialDropdownOptions extends StObject {
   
-  var alignment: js.UndefOr[left | right] = js.native
+  var alignment: js.UndefOr[left | right] = js.undefined
   
-  var autoTrigger: js.UndefOr[Boolean] = js.native
+  var autoTrigger: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var constrainWidth: js.UndefOr[Boolean] = js.native
+  var constrainWidth: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[Element] = js.native
+  var container: js.UndefOr[Element] = js.undefined
   
-  var coverTrigger: js.UndefOr[Boolean] = js.native
+  var coverTrigger: js.UndefOr[Boolean] = js.undefined
   
-  var hover: js.UndefOr[Boolean] = js.native
+  var hover: js.UndefOr[Boolean] = js.undefined
   
-  var inDuration: js.UndefOr[Double] = js.native
+  var inDuration: js.UndefOr[Double] = js.undefined
   
-  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
+  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.undefined
   
-  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
+  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.undefined
   
-  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
+  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.undefined
   
-  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
+  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.undefined
   
-  var outDuration: js.UndefOr[Double] = js.native
+  var outDuration: js.UndefOr[Double] = js.undefined
 }
 object PartialDropdownOptions {
   

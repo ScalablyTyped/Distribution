@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeaderboardListResponse extends StObject {
   
   /** The leaderboards. */
-  var items: js.UndefOr[js.Array[Leaderboard]] = js.native
+  var items: js.UndefOr[js.Array[Leaderboard]] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#leaderboardListResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Token corresponding to the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object LeaderboardListResponse {
   

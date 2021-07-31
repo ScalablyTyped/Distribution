@@ -2,15 +2,13 @@ package typings.node.tlsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurePair extends StObject {
   
-  var cleartext: TLSSocket = js.native
+  var cleartext: TLSSocket
   
-  var encrypted: TLSSocket = js.native
+  var encrypted: TLSSocket
 }
 object SecurePair {
   

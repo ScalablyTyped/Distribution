@@ -3,7 +3,6 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,8 +19,8 @@ trait DebugSession extends StObject {
   /**
     * Send a custom request to the debug adapter.
     */
-  def customRequest(command: String): Thenable[_] = js.native
-  def customRequest(command: String, args: js.Any): Thenable[_] = js.native
+  def customRequest(command: String): Thenable[js.Any] = js.native
+  def customRequest(command: String, args: js.Any): Thenable[js.Any] = js.native
   
   /**
     * Maps a VS Code breakpoint to the corresponding Debug Adapter Protocol (DAP) breakpoint that is managed by the debug adapter of the debug session.

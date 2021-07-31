@@ -6,31 +6,29 @@ import typings.rcFieldForm.anon.Len
 import typings.rcFieldForm.anon.Mismatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateMessages extends StObject {
   
-  var default: js.UndefOr[ValidateMessage] = js.native
+  var default: js.UndefOr[ValidateMessage] = js.undefined
   
-  var array: js.UndefOr[Len] = js.native
+  var array: js.UndefOr[Len] = js.undefined
   
-  var date: js.UndefOr[Format] = js.native
+  var date: js.UndefOr[Format] = js.undefined
   
-  var enum: js.UndefOr[ValidateMessage] = js.native
+  var `enum`: js.UndefOr[ValidateMessage] = js.undefined
   
-  var number: js.UndefOr[Len] = js.native
+  var number: js.UndefOr[Len] = js.undefined
   
-  var pattern: js.UndefOr[Mismatch] = js.native
+  var pattern: js.UndefOr[Mismatch] = js.undefined
   
-  var required: js.UndefOr[ValidateMessage] = js.native
+  var required: js.UndefOr[ValidateMessage] = js.undefined
   
-  var string: js.UndefOr[Len] = js.native
+  var string: js.UndefOr[Len] = js.undefined
   
-  var types: js.UndefOr[Array] = js.native
+  var types: js.UndefOr[Array] = js.undefined
   
-  var whitespace: js.UndefOr[ValidateMessage] = js.native
+  var whitespace: js.UndefOr[ValidateMessage] = js.undefined
 }
 object ValidateMessages {
   

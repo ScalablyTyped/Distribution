@@ -2,19 +2,17 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Location in the source code.
   * @experimental
   */
-@js.native
 trait ScriptPosition extends StObject {
   
-  var columnNumber: Double = js.native
+  var columnNumber: Double
   
-  var lineNumber: Double = js.native
+  var lineNumber: Double
 }
 object ScriptPosition {
   

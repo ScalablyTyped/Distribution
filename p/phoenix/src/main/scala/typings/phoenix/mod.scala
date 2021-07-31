@@ -7,7 +7,6 @@ import typings.phoenix.anon.PartialSocketConnectOptio
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,68 +21,19 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("phoenix", "Ajax.appendParams")
-    @js.native
-    def appendParams(url: String, params: js.Any): String = js.native
+    @scala.inline
+    def appendParams(url: String, params: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendParams")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("phoenix", "Ajax.parseJSON")
-    @js.native
-    def parseJSON(resp: String): JSON = js.native
+    @scala.inline
+    def parseJSON(resp: String): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(resp.asInstanceOf[js.Any]).asInstanceOf[JSON]
     
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
-    def request(method: String, endPoint: String, accept: String, body: js.Any): Unit = js.native
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
-    def request(
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
-    def request(
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.Any
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
-    def request(
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.Any,
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
-    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = js.native
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
-    def request(
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: Double,
-      ontimeout: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
-    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = js.native
-    @JSImport("phoenix", "Ajax.request")
-    @js.native
+    @scala.inline
+    def request(method: String, endPoint: String, accept: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def request(
       method: String,
       endPoint: String,
@@ -92,11 +42,42 @@ object mod {
       timeout: Double,
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def request(
+      method: String,
+      endPoint: String,
+      accept: String,
+      body: js.Any,
+      timeout: Double,
+      ontimeout: Unit,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def request(method: String, endPoint: String, accept: String, body: js.Any, timeout: Unit, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def request(
+      method: String,
+      endPoint: String,
+      accept: String,
+      body: js.Any,
+      timeout: Unit,
+      ontimeout: js.Any,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def request(
+      method: String,
+      endPoint: String,
+      accept: String,
+      body: js.Any,
+      timeout: Unit,
+      ontimeout: Unit,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix", "Ajax.serialize")
-    @js.native
-    def serialize(obj: js.Any, parentKey: String): String = js.native
+    @scala.inline
+    def serialize(obj: js.Any, parentKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any], parentKey.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("phoenix", "Ajax.states")
     @js.native
@@ -104,60 +85,13 @@ object mod {
     @scala.inline
     def states_=(x: StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("states")(x.asInstanceOf[js.Any])
     
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
-    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any): Unit = js.native
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
-    def xdomainRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
-    def xdomainRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.Any
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
-    def xdomainRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.Any,
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
-    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double): Unit = js.native
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
-    def xdomainRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      body: js.Any,
-      timeout: Double,
-      ontimeout: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
-    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = js.native
-    @JSImport("phoenix", "Ajax.xdomainRequest")
-    @js.native
+    @scala.inline
+    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Double, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def xdomainRequest(
       req: js.Any,
       method: String,
@@ -166,63 +100,45 @@ object mod {
       timeout: Double,
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xdomainRequest(
+      req: js.Any,
+      method: String,
+      endPoint: String,
+      body: js.Any,
+      timeout: Double,
+      ontimeout: Unit,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xdomainRequest(req: js.Any, method: String, endPoint: String, body: js.Any, timeout: Unit, ontimeout: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xdomainRequest(
+      req: js.Any,
+      method: String,
+      endPoint: String,
+      body: js.Any,
+      timeout: Unit,
+      ontimeout: js.Any,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xdomainRequest(
+      req: js.Any,
+      method: String,
+      endPoint: String,
+      body: js.Any,
+      timeout: Unit,
+      ontimeout: Unit,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
-    def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any): Unit = js.native
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
-    def xhrRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
-    def xhrRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.Any
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
-    def xhrRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: js.UndefOr[scala.Nothing],
-      ontimeout: js.Any,
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
-    def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = js.native
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
-    def xhrRequest(
-      req: js.Any,
-      method: String,
-      endPoint: String,
-      accept: String,
-      body: js.Any,
-      timeout: Double,
-      ontimeout: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
+    @scala.inline
+    def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xhrRequest(req: js.Any, method: String, endPoint: String, accept: String, body: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def xhrRequest(
       req: js.Any,
       method: String,
@@ -231,9 +147,8 @@ object mod {
       body: js.Any,
       timeout: Double,
       ontimeout: js.Any
-    ): Unit = js.native
-    @JSImport("phoenix", "Ajax.xhrRequest")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def xhrRequest(
       req: js.Any,
       method: String,
@@ -243,7 +158,50 @@ object mod {
       timeout: Double,
       ontimeout: js.Any,
       callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xhrRequest(
+      req: js.Any,
+      method: String,
+      endPoint: String,
+      accept: String,
+      body: js.Any,
+      timeout: Double,
+      ontimeout: Unit,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xhrRequest(
+      req: js.Any,
+      method: String,
+      endPoint: String,
+      accept: String,
+      body: js.Any,
+      timeout: Unit,
+      ontimeout: js.Any
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xhrRequest(
+      req: js.Any,
+      method: String,
+      endPoint: String,
+      accept: String,
+      body: js.Any,
+      timeout: Unit,
+      ontimeout: js.Any,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def xhrRequest(
+      req: js.Any,
+      method: String,
+      endPoint: String,
+      accept: String,
+      body: js.Any,
+      timeout: Unit,
+      ontimeout: Unit,
+      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("phoenix", "Channel")
@@ -252,9 +210,9 @@ object mod {
     def this(topic: String) = this()
     def this(topic: String, params: js.Function0[js.Object]) = this()
     def this(topic: String, params: js.Object) = this()
-    def this(topic: String, params: js.UndefOr[scala.Nothing], socket: Socket) = this()
     def this(topic: String, params: js.Function0[js.Object], socket: Socket) = this()
     def this(topic: String, params: js.Object, socket: Socket) = this()
+    def this(topic: String, params: Unit, socket: Socket) = this()
     
     def join(): Push = js.native
     def join(timeout: Double): Push = js.native
@@ -283,9 +241,9 @@ object mod {
     def this(endPoint: String) = this()
     
     def close(): Unit = js.native
-    def close(code: js.UndefOr[scala.Nothing], reason: js.Any): Unit = js.native
     def close(code: js.Any): Unit = js.native
     def close(code: js.Any, reason: js.Any): Unit = js.native
+    def close(code: Unit, reason: js.Any): Unit = js.native
     
     def closeAndRetry(): Unit = js.native
     
@@ -320,58 +278,42 @@ object mod {
   /* static members */
   object Presence {
     
-    @JSImport("phoenix", "Presence.list")
+    @JSImport("phoenix", "Presence")
     @js.native
-    def list[T](presences: js.Object): js.Array[T] = js.native
-    @JSImport("phoenix", "Presence.list")
-    @js.native
-    def list[T](presences: js.Object, chooser: js.Function2[/* key */ String, /* presence */ js.Any, T]): js.Array[T] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("phoenix", "Presence.syncDiff")
-    @js.native
-    def syncDiff(currentState: js.Object, diff: Joins): js.Any = js.native
-    @JSImport("phoenix", "Presence.syncDiff")
-    @js.native
-    def syncDiff(
-      currentState: js.Object,
-      diff: Joins,
-      onJoin: js.UndefOr[scala.Nothing],
-      onLeave: PresenceOnLeaveCallback
-    ): js.Any = js.native
-    @JSImport("phoenix", "Presence.syncDiff")
-    @js.native
-    def syncDiff(currentState: js.Object, diff: Joins, onJoin: PresenceOnJoinCallback): js.Any = js.native
-    @JSImport("phoenix", "Presence.syncDiff")
-    @js.native
+    @scala.inline
+    def list[T](presences: js.Object): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(presences.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def list[T](presences: js.Object, chooser: js.Function2[/* key */ String, /* presence */ js.Any, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(presences.asInstanceOf[js.Any], chooser.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def syncDiff(currentState: js.Object, diff: Joins): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def syncDiff(currentState: js.Object, diff: Joins, onJoin: Unit, onLeave: PresenceOnLeaveCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def syncDiff(currentState: js.Object, diff: Joins, onJoin: PresenceOnJoinCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def syncDiff(
       currentState: js.Object,
       diff: Joins,
       onJoin: PresenceOnJoinCallback,
       onLeave: PresenceOnLeaveCallback
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDiff")(currentState.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("phoenix", "Presence.syncState")
-    @js.native
-    def syncState(currentState: js.Object, newState: js.Object): js.Any = js.native
-    @JSImport("phoenix", "Presence.syncState")
-    @js.native
-    def syncState(
-      currentState: js.Object,
-      newState: js.Object,
-      onJoin: js.UndefOr[scala.Nothing],
-      onLeave: PresenceOnLeaveCallback
-    ): js.Any = js.native
-    @JSImport("phoenix", "Presence.syncState")
-    @js.native
-    def syncState(currentState: js.Object, newState: js.Object, onJoin: PresenceOnJoinCallback): js.Any = js.native
-    @JSImport("phoenix", "Presence.syncState")
-    @js.native
+    @scala.inline
+    def syncState(currentState: js.Object, newState: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def syncState(currentState: js.Object, newState: js.Object, onJoin: Unit, onLeave: PresenceOnLeaveCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def syncState(currentState: js.Object, newState: js.Object, onJoin: PresenceOnJoinCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def syncState(
       currentState: js.Object,
       newState: js.Object,
       onJoin: PresenceOnJoinCallback,
       onLeave: PresenceOnLeaveCallback
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncState")(currentState.asInstanceOf[js.Any], newState.asInstanceOf[js.Any], onJoin.asInstanceOf[js.Any], onLeave.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("phoenix", "Push")
@@ -379,7 +321,7 @@ object mod {
   class Push protected () extends StObject {
     def this(channel: Channel, event: String, payload: js.Object, timeout: Double) = this()
     
-    def receive(status: String, callback: js.Function1[/* response */ js.UndefOr[js.Any], _]): this.type = js.native
+    def receive(status: String, callback: js.Function1[/* response */ js.UndefOr[js.Any], js.Any]): this.type = js.native
     
     def resend(timeout: Double): Unit = js.native
     
@@ -401,13 +343,13 @@ object mod {
     def connectionState(): ConnectionState = js.native
     
     def disconnect(): Unit = js.native
-    def disconnect(callback: js.UndefOr[scala.Nothing], code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
-    def disconnect(callback: js.UndefOr[scala.Nothing], code: Double): Unit = js.native
-    def disconnect(callback: js.UndefOr[scala.Nothing], code: Double, reason: String): Unit = js.native
     def disconnect(callback: js.Function0[Unit]): Unit = js.native
-    def disconnect(callback: js.Function0[Unit], code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
     def disconnect(callback: js.Function0[Unit], code: Double): Unit = js.native
     def disconnect(callback: js.Function0[Unit], code: Double, reason: String): Unit = js.native
+    def disconnect(callback: js.Function0[Unit], code: Unit, reason: String): Unit = js.native
+    def disconnect(callback: Unit, code: Double): Unit = js.native
+    def disconnect(callback: Unit, code: Double, reason: String): Unit = js.native
+    def disconnect(callback: Unit, code: Unit, reason: String): Unit = js.native
     
     def endPointURL(): String = js.native
     
@@ -498,10 +440,9 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait PresenceOpts extends StObject {
     
-    var events: js.UndefOr[Diff] = js.native
+    var events: js.UndefOr[Diff] = js.undefined
   }
   object PresenceOpts {
     
@@ -522,32 +463,31 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketConnectOption extends StObject {
     
-    var binaryType: BinaryType = js.native
+    var binaryType: BinaryType
     
-    def decode(payload: String, callback: js.Function1[/* decoded */ js.Any, Unit]): Unit = js.native
+    def decode(payload: String, callback: js.Function1[/* decoded */ js.Any, Unit]): Unit
     
-    def encode(payload: js.Object, callback: js.Function1[/* encoded */ js.Any, Unit]): Unit = js.native
+    def encode(payload: js.Object, callback: js.Function1[/* encoded */ js.Any, Unit]): Unit
     
-    var heartbeatIntervalMs: Double = js.native
+    var heartbeatIntervalMs: Double
     
-    def logger(kind: String, message: String, data: js.Any): Unit = js.native
+    def logger(kind: String, message: String, data: js.Any): Unit
     
-    var longpollerTimeout: Double = js.native
+    var longpollerTimeout: Double
     
-    var params: js.Object | js.Function0[js.Object] = js.native
+    var params: js.Object | js.Function0[js.Object]
     
-    def reconnectAfterMs(tries: Double): Double = js.native
+    def reconnectAfterMs(tries: Double): Double
     
-    def rejoinAfterMs(tries: Double): Double = js.native
+    def rejoinAfterMs(tries: Double): Double
     
-    var timeout: Double = js.native
+    var timeout: Double
     
-    var transport: String = js.native
+    var transport: String
     
-    var vsn: String = js.native
+    var vsn: String
   }
   object SocketConnectOption {
     

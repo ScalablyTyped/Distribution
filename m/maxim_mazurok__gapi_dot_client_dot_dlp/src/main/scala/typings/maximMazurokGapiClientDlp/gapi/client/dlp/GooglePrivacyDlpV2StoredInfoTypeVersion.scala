@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2StoredInfoTypeVersion extends StObject {
   
   /** StoredInfoType configuration. */
-  var config: js.UndefOr[GooglePrivacyDlpV2StoredInfoTypeConfig] = js.native
+  var config: js.UndefOr[GooglePrivacyDlpV2StoredInfoTypeConfig] = js.undefined
   
   /** Create timestamp of the version. Read-only, determined by the system when the version is created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Errors that occurred when creating this storedInfoType version, or anomalies detected in the storedInfoType data that render it unusable. Only the five most recent errors will be
@@ -20,13 +18,13 @@ trait GooglePrivacyDlpV2StoredInfoTypeVersion extends StObject {
     * data is modified or deleted by the user or another system, the dictionary becomes invalid. If any errors occur, fix the problem indicated by the error message and use the
     * UpdateStoredInfoType API method to create another version of the storedInfoType to continue using it, reusing the same `config` if it was not the source of the error.
     */
-  var errors: js.UndefOr[js.Array[GooglePrivacyDlpV2Error]] = js.native
+  var errors: js.UndefOr[js.Array[GooglePrivacyDlpV2Error]] = js.undefined
   
   /** Stored info type version state. Read-only, updated by the system during dictionary creation. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Statistics about this storedInfoType version. */
-  var stats: js.UndefOr[GooglePrivacyDlpV2StoredInfoTypeStats] = js.native
+  var stats: js.UndefOr[GooglePrivacyDlpV2StoredInfoTypeStats] = js.undefined
 }
 object GooglePrivacyDlpV2StoredInfoTypeVersion {
   

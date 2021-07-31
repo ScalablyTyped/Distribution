@@ -4,7 +4,6 @@ import typings.smartFoxServer.SFS2X.Entities.SFSBuddy
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -15,7 +14,8 @@ object BuddyList {
   @JSGlobal("SFS2X.Requests.BuddyList.AddBuddyRequest")
   @js.native
   class AddBuddyRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.BuddyList.AddBuddyRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.BuddyList.AddBuddyRequest {
     /**
       * Creates a new AddBuddyRequest instance.
       * @param {string} buddyName The name of the user to be added as a buddy.
@@ -26,7 +26,8 @@ object BuddyList {
   @JSGlobal("SFS2X.Requests.BuddyList.BlockBuddyRequest")
   @js.native
   class BlockBuddyRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.BuddyList.BlockBuddyRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.BuddyList.BlockBuddyRequest {
     /**
       * Creates a new BlockBuddyRequest instance.
       * @param {string}  buddyName The name of the buddy to be removed from the user's buddy list.
@@ -38,7 +39,8 @@ object BuddyList {
   @JSGlobal("SFS2X.Requests.BuddyList.BuddyMessageRequest")
   @js.native
   class BuddyMessageRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.BuddyList.BuddyMessageRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.BuddyList.BuddyMessageRequest {
     /**
       * Creates a new BuddyMessageRequest instance.
       * @param {string}            message     The message to be sent to a buddy.
@@ -52,7 +54,8 @@ object BuddyList {
   @JSGlobal("SFS2X.Requests.BuddyList.GoOnlineRequest")
   @js.native
   class GoOnlineRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.BuddyList.GoOnlineRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.BuddyList.GoOnlineRequest {
     /**
       * Creates a new GoOnlineRequest instance.
       * @param {boolean} online true to make the current user available (online) in the Buddy List system; false to make them not available (offline).
@@ -66,12 +69,14 @@ object BuddyList {
     * Creates a new InitBuddyListRequest instance.
     */
   class InitBuddyListRequest ()
-    extends typings.smartFoxServer.SFS2X.Requests.BuddyList.InitBuddyListRequest
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.BuddyList.InitBuddyListRequest
   
   @JSGlobal("SFS2X.Requests.BuddyList.RemoveBuddyRequest")
   @js.native
   class RemoveBuddyRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.BuddyList.RemoveBuddyRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.BuddyList.RemoveBuddyRequest {
     /**
       * Creates a new RemoveBuddyRequest instance.
       * @param {string} buddyName The name of the buddy to be removed from the user's buddy list.
@@ -82,7 +87,8 @@ object BuddyList {
   @JSGlobal("SFS2X.Requests.BuddyList.SetBuddyVariablesRequest")
   @js.native
   class SetBuddyVariablesRequest protected ()
-    extends typings.smartFoxServer.SFS2X.Requests.BuddyList.SetBuddyVariablesRequest {
+    extends StObject
+       with typings.smartFoxServer.SFS2X.Requests.BuddyList.SetBuddyVariablesRequest {
     /**
       * Creates a new SetBuddyVariablesRequest instance.
       * @param {Entities.Variables.SFSBuddyVariable[]} buddyVariables A list of SFSBuddyVariable objects representing the Buddy Variables to set.

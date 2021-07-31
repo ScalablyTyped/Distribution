@@ -10,9 +10,9 @@ TypeScript typings for BigQuery Data Transfer API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.bigquerydatatransfer |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 64 |
+| # downloads        | 1181 |
 | # stars            | 0 |
 
 ## Links

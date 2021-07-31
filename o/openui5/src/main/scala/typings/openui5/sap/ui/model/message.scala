@@ -2,13 +2,14 @@ package typings.openui5.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object message {
   
   @js.native
-  trait MessageModel extends ClientModel {
+  trait MessageModel
+    extends StObject
+       with ClientModel {
     
     /**
       * Sets the message data to the model.

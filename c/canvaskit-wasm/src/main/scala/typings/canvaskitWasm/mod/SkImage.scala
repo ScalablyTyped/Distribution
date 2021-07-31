@@ -4,11 +4,12 @@ import typings.std.Float32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkImage extends EmbindObject[SkImage] {
+trait SkImage
+  extends StObject
+     with EmbindObject[SkImage] {
   
   /**
     * Encodes this image's pixels to PNG and returns them. Must be built with the PNG codec.

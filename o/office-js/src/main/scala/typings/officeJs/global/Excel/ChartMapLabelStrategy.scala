@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ChartMapLabelStrategy extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ChartMapLabelStrategy with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ChartMapLabelStrategy & String] = js.native
   
-  /* "BestFit" */ val bestFit: typings.officeJs.Excel.ChartMapLabelStrategy.bestFit with String = js.native
+  /* "BestFit" */ val bestFit: typings.officeJs.Excel.ChartMapLabelStrategy.bestFit & String = js.native
   
-  /* "None" */ val none: typings.officeJs.Excel.ChartMapLabelStrategy.none with String = js.native
+  /* "None" */ val none: typings.officeJs.Excel.ChartMapLabelStrategy.none & String = js.native
   
-  /* "ShowAll" */ val showAll: typings.officeJs.Excel.ChartMapLabelStrategy.showAll with String = js.native
+  /* "ShowAll" */ val showAll: typings.officeJs.Excel.ChartMapLabelStrategy.showAll & String = js.native
 }

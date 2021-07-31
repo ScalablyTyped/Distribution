@@ -2,15 +2,13 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancelable extends StObject {
   
-  var cancelable: js.UndefOr[Boolean] = js.native
+  var cancelable: js.UndefOr[Boolean] = js.undefined
   
-  var updateMenu: js.UndefOr[Boolean] = js.native
+  var updateMenu: js.UndefOr[Boolean] = js.undefined
 }
 object Cancelable {
   

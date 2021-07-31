@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicIpv4PoolRange extends StObject {
   
   /**
     * The number of addresses in the range.
     */
-  var AddressCount: js.UndefOr[Integer] = js.native
+  var AddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of available addresses in the range.
     */
-  var AvailableAddressCount: js.UndefOr[Integer] = js.native
+  var AvailableAddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The first IP address in the range.
     */
-  var FirstAddress: js.UndefOr[String] = js.native
+  var FirstAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The last IP address in the range.
     */
-  var LastAddress: js.UndefOr[String] = js.native
+  var LastAddress: js.UndefOr[String] = js.undefined
 }
 object PublicIpv4PoolRange {
   

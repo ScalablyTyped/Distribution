@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTenancyUnitRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CreateTenancyUnitRequest extends StObject {
     * tenancy unit is automatically generated. The identifier must be unique across a managed service. If the tenancy unit already exists for the managed service and service consumer
     * pair, calling `CreateTenancyUnit` returns the existing tenancy unit if the provided identifier is identical or empty, otherwise the call fails.
     */
-  var tenancyUnitId: js.UndefOr[String] = js.native
+  var tenancyUnitId: js.UndefOr[String] = js.undefined
 }
 object CreateTenancyUnitRequest {
   

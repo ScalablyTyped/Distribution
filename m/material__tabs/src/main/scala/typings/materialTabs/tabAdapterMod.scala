@@ -4,27 +4,25 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabAdapterMod {
   
-  @js.native
   trait MDCTabAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def deregisterInteractionHandler[K /* <: EventType */](`type`: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterInteractionHandler[K /* <: EventType */](`type`: K, handler: SpecificEventListener[K]): Unit
     
-    def getOffsetLeft(): Double = js.native
+    def getOffsetLeft(): Double
     
-    def getOffsetWidth(): Double = js.native
+    def getOffsetWidth(): Double
     
-    def notifySelected(): Unit = js.native
+    def notifySelected(): Unit
     
-    def registerInteractionHandler[K /* <: EventType */](`type`: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerInteractionHandler[K /* <: EventType */](`type`: K, handler: SpecificEventListener[K]): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
   }
   object MDCTabAdapter {
     

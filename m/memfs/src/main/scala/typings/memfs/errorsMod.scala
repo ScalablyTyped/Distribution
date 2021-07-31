@@ -2,10 +2,13 @@ package typings.memfs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
+  
+  @JSImport("memfs/lib/internal/errors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any
@@ -27,11 +30,9 @@ object errorsMod {
     var operator: js.Any = js.native
   }
   
-  @JSImport("memfs/lib/internal/errors", "E")
-  @js.native
-  def E(sym: js.Any, `val`: js.Any): Unit = js.native
+  @scala.inline
+  def E(sym: js.Any, `val`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("E")(sym.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("memfs/lib/internal/errors", "message")
-  @js.native
-  def message(key: js.Any, args: js.Any): js.Any = js.native
+  @scala.inline
+  def message(key: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(key.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -2,18 +2,18 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwitchTabArgs extends AsyncCallback[Unit] {
+trait SwitchTabArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Path of the jumping tabBar page (page to be defined in the
     * tabBar field in the app.json). Note: The path cannot be
     * followed by parameters.
     */
-  var url: String = js.native
+  var url: String
 }
 object SwitchTabArgs {
   

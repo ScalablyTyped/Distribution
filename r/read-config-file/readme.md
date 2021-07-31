@@ -10,9 +10,9 @@ Read configuration file in various formats:
 | ------------------ | :-------------: |
 | Full name          | read-config-file |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 34 |
-| # downloads        | 5806803 |
+| # releases         | 9 |
+| # dependents       | 37 |
+| # downloads        | 7070794 |
 | # stars            | 0 |
 
 ## Links

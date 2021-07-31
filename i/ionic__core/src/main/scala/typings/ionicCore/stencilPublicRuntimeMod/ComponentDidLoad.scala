@@ -2,10 +2,8 @@ package typings.ionicCore.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentDidLoad extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ComponentDidLoad extends StObject {
     *
     * componentDidLoad will only be called once.
     */
-  def componentDidLoad(): Unit = js.native
+  def componentDidLoad(): Unit
 }
 object ComponentDidLoad {
   

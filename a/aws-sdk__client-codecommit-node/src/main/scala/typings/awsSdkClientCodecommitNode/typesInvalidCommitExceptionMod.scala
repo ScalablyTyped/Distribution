@@ -6,26 +6,25 @@ import typings.awsSdkClientCodecommitNode.getFolderExceptionsUnionMod.GetFolderE
 import typings.awsSdkClientCodecommitNode.getMergeConflictsExceptionsUnionMod.GetMergeConflictsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidCommitExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCommitExceptionDetails> * / any */ @js.native
-  trait InvalidCommitException
-    extends GetDifferencesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCommitExceptionDetails> * / any */ trait InvalidCommitException
+    extends StObject
+       with GetDifferencesExceptionsUnion
        with GetFileExceptionsUnion
        with GetFolderExceptionsUnion
        with GetMergeConflictsExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitException
   }
   object InvalidCommitException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitException): InvalidCommitException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidCommitException = {
+      val __obj = js.Dynamic.literal(name = "InvalidCommitException")
       __obj.asInstanceOf[InvalidCommitException]
     }
     
@@ -37,6 +36,5 @@ object typesInvalidCommitExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidCommitExceptionDetails extends StObject
 }

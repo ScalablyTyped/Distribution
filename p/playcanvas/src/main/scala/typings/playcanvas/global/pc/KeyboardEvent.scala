@@ -1,8 +1,8 @@
 package typings.playcanvas.global.pc
 
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,6 +24,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.KeyboardEvent")
 @js.native
 class KeyboardEvent protected ()
-  extends typings.playcanvas.pc.KeyboardEvent {
+  extends StObject
+     with typings.playcanvas.pc.KeyboardEvent {
   def this(keyboard: typings.playcanvas.pc.Keyboard, event: typings.playcanvas.pc.KeyboardEvent) = this()
+  
+  /**
+    * The element that fired the keyboard event.
+    */
+  /* CompleteClass */
+  var element: Element = js.native
+  
+  /**
+    * The original browser event which was fired.
+    */
+  /* CompleteClass */
+  var event: typings.playcanvas.pc.KeyboardEvent = js.native
+  
+  /**
+    * The keyCode of the key that has changed. See the pc.KEY_* constants.
+    */
+  /* CompleteClass */
+  var key: Double = js.native
 }

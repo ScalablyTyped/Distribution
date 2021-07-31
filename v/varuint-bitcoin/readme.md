@@ -11,8 +11,8 @@ encode/decode number as bitcoin variable length integer
 | Full name          | varuint-bitcoin |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 136 |
-| # downloads        | 1488720 |
+| # dependents       | 152 |
+| # downloads        | 1691034 |
 | # stars            | 1 |
 
 ## Links

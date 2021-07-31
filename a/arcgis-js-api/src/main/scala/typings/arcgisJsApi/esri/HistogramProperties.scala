@@ -4,81 +4,81 @@ import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistogramProperties extends WidgetProperties {
+trait HistogramProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The statistical average of the data in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#average)
     */
-  var average: js.UndefOr[Double] = js.native
+  var average: js.UndefOr[Double] = js.undefined
   
   /**
     * Function for styling bars representing histogram bins.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#barCreatedFunction)
     */
-  var barCreatedFunction: js.UndefOr[BarCreatedFunction] = js.native
+  var barCreatedFunction: js.UndefOr[BarCreatedFunction] = js.undefined
   
   /**
     * An array of objects representing each bin in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#bins)
     */
-  var bins: js.UndefOr[js.Array[Bin]] = js.native
+  var bins: js.UndefOr[js.Array[Bin]] = js.undefined
   
   /**
     * Function that fires each time a data line is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#dataLineCreatedFunction)
     */
-  var dataLineCreatedFunction: js.UndefOr[DataLineCreatedFunction] = js.native
+  var dataLineCreatedFunction: js.UndefOr[DataLineCreatedFunction] = js.undefined
   
   /**
     * When set, renders lines on the histogram that indicate important or meaningful values to the end user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#dataLines)
     */
-  var dataLines: js.UndefOr[js.Array[HistogramDataLines]] = js.native
+  var dataLines: js.UndefOr[js.Array[HistogramDataLines]] = js.undefined
   
   /**
     * A function used to format labels on the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#labelFormatFunction)
     */
-  var labelFormatFunction: js.UndefOr[LabelFormatter] = js.native
+  var labelFormatFunction: js.UndefOr[LabelFormatter] = js.undefined
   
   /**
     * Determines the orientation of the Histogram widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#layout)
     */
-  var layout: js.UndefOr[vertical | horizontal] = js.native
+  var layout: js.UndefOr[vertical | horizontal] = js.undefined
   
   /**
     * The maximum value or bound of the entire histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#max)
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum value or bound of the entire histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#min)
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * The view model for the Histogram widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#viewModel)
     */
-  var viewModel: js.UndefOr[HistogramViewModelProperties] = js.native
+  var viewModel: js.UndefOr[HistogramViewModelProperties] = js.undefined
 }
 object HistogramProperties {
   

@@ -2,15 +2,13 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredictDate extends StObject {
   
-  var hour: Double = js.native
+  var hour: Double
   
-  var weekday: Double = js.native
+  var weekday: Double
 }
 object PredictDate {
   

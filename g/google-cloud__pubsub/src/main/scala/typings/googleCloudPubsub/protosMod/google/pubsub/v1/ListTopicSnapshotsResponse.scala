@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ListTopicSnapshotsResponse. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListTopicSnapshotsResponse.
   * @param [properties] Properties to set
   */
-class ListTopicSnapshotsResponse () extends IListTopicSnapshotsResponse {
+class ListTopicSnapshotsResponse ()
+  extends StObject
+     with IListTopicSnapshotsResponse {
   def this(properties: IListTopicSnapshotsResponse) = this()
   
   /** ListTopicSnapshotsResponse nextPageToken. */
@@ -36,18 +37,20 @@ class ListTopicSnapshotsResponse () extends IListTopicSnapshotsResponse {
 }
 object ListTopicSnapshotsResponse {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ListTopicSnapshotsResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ListTopicSnapshotsResponse instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.create")
-  @js.native
-  def create(): ListTopicSnapshotsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.create")
-  @js.native
-  def create(properties: IListTopicSnapshotsResponse): ListTopicSnapshotsResponse = js.native
+  @scala.inline
+  def create(): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListTopicSnapshotsResponse]
+  @scala.inline
+  def create(properties: IListTopicSnapshotsResponse): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
   
   /**
     * Decodes a ListTopicSnapshotsResponse message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object ListTopicSnapshotsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.decode")
-  @js.native
-  def decode(reader: Reader): ListTopicSnapshotsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ListTopicSnapshotsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): ListTopicSnapshotsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ListTopicSnapshotsResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ListTopicSnapshotsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListTopicSnapshotsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ListTopicSnapshotsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListTopicSnapshotsResponse]
   
   /**
     * Decodes a ListTopicSnapshotsResponse message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object ListTopicSnapshotsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ListTopicSnapshotsResponse = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ListTopicSnapshotsResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
   
   /**
     * Encodes the specified ListTopicSnapshotsResponse message. Does not implicitly {@link google.pubsub.v1.ListTopicSnapshotsResponse.verify|verify} messages.
@@ -93,12 +90,10 @@ object ListTopicSnapshotsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.encode")
-  @js.native
-  def encode(message: IListTopicSnapshotsResponse): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.encode")
-  @js.native
-  def encode(message: IListTopicSnapshotsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IListTopicSnapshotsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IListTopicSnapshotsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListTopicSnapshotsResponse message, length delimited. Does not implicitly {@link google.pubsub.v1.ListTopicSnapshotsResponse.verify|verify} messages.
@@ -107,12 +102,10 @@ object ListTopicSnapshotsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListTopicSnapshotsResponse): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListTopicSnapshotsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IListTopicSnapshotsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IListTopicSnapshotsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListTopicSnapshotsResponse message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object ListTopicSnapshotsResponse {
     * @returns ListTopicSnapshotsResponse
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ListTopicSnapshotsResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
   
   /**
     * Creates a plain object from a ListTopicSnapshotsResponse message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object ListTopicSnapshotsResponse {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.toObject")
-  @js.native
-  def toObject(message: ListTopicSnapshotsResponse): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.toObject")
-  @js.native
-  def toObject(message: ListTopicSnapshotsResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ListTopicSnapshotsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ListTopicSnapshotsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListTopicSnapshotsResponse message.
@@ -144,7 +134,6 @@ object ListTopicSnapshotsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.ListTopicSnapshotsResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -8,7 +8,6 @@ import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,17 +19,17 @@ trait Typeofrealpath extends StObject {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-  ): Unit = js.native
-  def apply(
-    path: PathLike,
     options: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
     options: Null,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Unit,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
   ): Unit = js.native
   def apply(
@@ -55,17 +54,17 @@ trait Typeofrealpath extends StObject {
   ): Unit = js.native
   def native(
     path: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
     options: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
   ): Unit = js.native
   def native(
     path: PathLike,
     options: Null,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+  ): Unit = js.native
+  def native(
+    path: PathLike,
+    options: Unit,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
   ): Unit = js.native
   def native(

@@ -11,8 +11,8 @@ One promise for multiple requests in flight to avoid async duplication
 | Full name          | promise-inflight |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 373155594 |
+| # dependents       | 61 |
+| # downloads        | 457289540 |
 | # stars            | 1 |
 
 ## Links

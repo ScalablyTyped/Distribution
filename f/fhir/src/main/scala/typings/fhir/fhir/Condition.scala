@@ -2,180 +2,180 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detailed information about conditions, problems or diagnoses
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Condition extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Condition
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'abatementBoolean'.
     */
-  var _abatementBoolean: js.UndefOr[Element] = js.native
+  var _abatementBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'abatementDateTime'.
     */
-  var _abatementDateTime: js.UndefOr[Element] = js.native
+  var _abatementDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'abatementString'.
     */
-  var _abatementString: js.UndefOr[Element] = js.native
+  var _abatementString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'assertedDate'.
     */
-  var _assertedDate: js.UndefOr[Element] = js.native
+  var _assertedDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'clinicalStatus'.
     */
-  var _clinicalStatus: js.UndefOr[Element] = js.native
+  var _clinicalStatus: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'onsetDateTime'.
     */
-  var _onsetDateTime: js.UndefOr[Element] = js.native
+  var _onsetDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'onsetString'.
     */
-  var _onsetString: js.UndefOr[Element] = js.native
+  var _onsetString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'verificationStatus'.
     */
-  var _verificationStatus: js.UndefOr[Element] = js.native
+  var _verificationStatus: js.UndefOr[Element] = js.undefined
   
   /**
     * If/when in resolution/remission
     */
-  var abatementAge: js.UndefOr[Age] = js.native
+  var abatementAge: js.UndefOr[Age] = js.undefined
   
   /**
     * If/when in resolution/remission
     */
-  var abatementBoolean: js.UndefOr[Boolean] = js.native
+  var abatementBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If/when in resolution/remission
     */
-  var abatementDateTime: js.UndefOr[dateTime] = js.native
+  var abatementDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * If/when in resolution/remission
     */
-  var abatementPeriod: js.UndefOr[Period] = js.native
+  var abatementPeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * If/when in resolution/remission
     */
-  var abatementRange: js.UndefOr[Range] = js.native
+  var abatementRange: js.UndefOr[Range] = js.undefined
   
   /**
     * If/when in resolution/remission
     */
-  var abatementString: js.UndefOr[String] = js.native
+  var abatementString: js.UndefOr[String] = js.undefined
   
   /**
     * Date record was believed accurate
     */
-  var assertedDate: js.UndefOr[dateTime] = js.native
+  var assertedDate: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Person who asserts this condition
     */
-  var asserter: js.UndefOr[Reference] = js.native
+  var asserter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Anatomical location, if relevant
     */
-  var bodySite: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var bodySite: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * problem-list-item | encounter-diagnosis
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * active | recurrence | inactive | remission | resolved
     */
-  var clinicalStatus: js.UndefOr[code] = js.native
+  var clinicalStatus: js.UndefOr[code] = js.undefined
   
   /**
     * Identification of the condition, problem or diagnosis
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Encounter or episode when condition first asserted
     */
-  var context: js.UndefOr[Reference] = js.native
+  var context: js.UndefOr[Reference] = js.undefined
   
   /**
     * Supporting evidence
     */
-  var evidence: js.UndefOr[js.Array[ConditionEvidence]] = js.native
+  var evidence: js.UndefOr[js.Array[ConditionEvidence]] = js.undefined
   
   /**
     * External Ids for this condition
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Additional information about the Condition
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * Estimated or actual date,  date-time, or age
     */
-  var onsetAge: js.UndefOr[Age] = js.native
+  var onsetAge: js.UndefOr[Age] = js.undefined
   
   /**
     * Estimated or actual date,  date-time, or age
     */
-  var onsetDateTime: js.UndefOr[dateTime] = js.native
+  var onsetDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Estimated or actual date,  date-time, or age
     */
-  var onsetPeriod: js.UndefOr[Period] = js.native
+  var onsetPeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * Estimated or actual date,  date-time, or age
     */
-  var onsetRange: js.UndefOr[Range] = js.native
+  var onsetRange: js.UndefOr[Range] = js.undefined
   
   /**
     * Estimated or actual date,  date-time, or age
     */
-  var onsetString: js.UndefOr[String] = js.native
+  var onsetString: js.UndefOr[String] = js.undefined
   
   /**
     * Subjective severity of condition
     */
-  var severity: js.UndefOr[CodeableConcept] = js.native
+  var severity: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Stage/grade, usually assessed formally
     */
-  var stage: js.UndefOr[ConditionStage] = js.native
+  var stage: js.UndefOr[ConditionStage] = js.undefined
   
   /**
     * Who has the condition?
     */
-  var subject: Reference = js.native
+  var subject: Reference
   
   /**
     * provisional | differential | confirmed | refuted | entered-in-error | unknown
     */
-  var verificationStatus: js.UndefOr[code] = js.native
+  var verificationStatus: js.UndefOr[code] = js.undefined
 }
 object Condition {
   

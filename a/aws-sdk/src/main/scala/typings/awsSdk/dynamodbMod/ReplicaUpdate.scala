@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaUpdate extends StObject {
   
   /**
     * The parameters required for creating a replica on an existing global table.
     */
-  var Create: js.UndefOr[CreateReplicaAction] = js.native
+  var Create: js.UndefOr[CreateReplicaAction] = js.undefined
   
   /**
     * The name of the existing replica to be removed.
     */
-  var Delete: js.UndefOr[DeleteReplicaAction] = js.native
+  var Delete: js.UndefOr[DeleteReplicaAction] = js.undefined
 }
 object ReplicaUpdate {
   

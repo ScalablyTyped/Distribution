@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTTPHeader extends StObject {
   
   /**
     * The name of one of the headers in the sampled web request.
     */
-  var Name: js.UndefOr[HeaderName] = js.native
+  var Name: js.UndefOr[HeaderName] = js.undefined
   
   /**
     * The value of one of the headers in the sampled web request.
     */
-  var Value: js.UndefOr[HeaderValue] = js.native
+  var Value: js.UndefOr[HeaderValue] = js.undefined
 }
 object HTTPHeader {
   

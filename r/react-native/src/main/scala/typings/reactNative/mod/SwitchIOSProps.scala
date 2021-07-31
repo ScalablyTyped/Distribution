@@ -2,41 +2,41 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwitchIOSProps extends ViewProps {
+trait SwitchIOSProps
+  extends StObject
+     with ViewProps {
   
   /**
     * If true the user won't be able to toggle the switch. Default value is false.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Background color when the switch is turned on.
     */
-  var onTintColor: js.UndefOr[ColorValue] = js.native
+  var onTintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Callback that is called when the user toggles the switch.
     */
-  var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
   
   /**
     * Background color for the switch round button.
     */
-  var thumbTintColor: js.UndefOr[ColorValue] = js.native
+  var thumbTintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Background color when the switch is turned off.
     */
-  var tintColor: js.UndefOr[ColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * The value of the switch, if true the switch will be turned on. Default value is false.
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
 }
 object SwitchIOSProps {
   

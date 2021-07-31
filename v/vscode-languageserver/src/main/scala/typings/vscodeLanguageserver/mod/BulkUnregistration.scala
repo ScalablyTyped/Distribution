@@ -2,12 +2,12 @@ package typings.vscodeLanguageserver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BulkUnregistration
-  extends typings.vscodeJsonrpc.eventsMod.Disposable {
+  extends StObject
+     with typings.vscodeJsonrpc.eventsMod.Disposable {
   
   /**
     * Disposes a single registration. It will be removed from the
@@ -18,7 +18,10 @@ trait BulkUnregistration
 }
 object BulkUnregistration {
   
-  @JSImport("vscode-languageserver", "BulkUnregistration.create")
+  @JSImport("vscode-languageserver", "BulkUnregistration")
   @js.native
-  def create(): BulkUnregistration = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): BulkUnregistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BulkUnregistration]
 }

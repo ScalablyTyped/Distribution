@@ -10,9 +10,9 @@ An antd compatible media query hooks
 | ------------------ | :-------------: |
 | Full name          | use-media-antd-query |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 35 |
-| # downloads        | 305028 |
+| # releases         | 5 |
+| # dependents       | 40 |
+| # downloads        | 636309 |
 | # stars            | 0 |
 
 ## Links

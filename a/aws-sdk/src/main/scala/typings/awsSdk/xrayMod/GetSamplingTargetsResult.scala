@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSamplingTargetsResult extends StObject {
   
   /**
     * The last time a user changed the sampling rule configuration. If the sampling rule configuration changed since the service last retrieved it, the service should call GetSamplingRules to get the latest version.
     */
-  var LastRuleModification: js.UndefOr[Timestamp] = js.native
+  var LastRuleModification: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Updated rules that the service should use to sample requests.
     */
-  var SamplingTargetDocuments: js.UndefOr[SamplingTargetDocumentList] = js.native
+  var SamplingTargetDocuments: js.UndefOr[SamplingTargetDocumentList] = js.undefined
   
   /**
     * Information about SamplingStatisticsDocument that X-Ray could not process.
     */
-  var UnprocessedStatistics: js.UndefOr[UnprocessedStatisticsList] = js.native
+  var UnprocessedStatistics: js.UndefOr[UnprocessedStatisticsList] = js.undefined
 }
 object GetSamplingTargetsResult {
   

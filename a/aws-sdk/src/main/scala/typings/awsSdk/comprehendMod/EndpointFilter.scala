@@ -2,31 +2,29 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointFilter extends StObject {
   
   /**
     * Specifies a date after which the returned endpoint or endpoints were created.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Specifies a date before which the returned endpoint or endpoints were created.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Number (ARN) of the model to which the endpoint is attached.
     */
-  var ModelArn: js.UndefOr[ComprehendModelArn] = js.native
+  var ModelArn: js.UndefOr[ComprehendModelArn] = js.undefined
   
   /**
     * Specifies the status of the endpoint being returned. Possible values are: Creating, Ready, Updating, Deleting, Failed.
     */
-  var Status: js.UndefOr[EndpointStatus] = js.native
+  var Status: js.UndefOr[EndpointStatus] = js.undefined
 }
 object EndpointFilter {
   

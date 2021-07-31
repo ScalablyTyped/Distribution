@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveFile extends StObject {
   
   /** URL that can be used to access the Drive item. Read-only. */
-  var alternateLink: js.UndefOr[String] = js.native
+  var alternateLink: js.UndefOr[String] = js.undefined
   
   /** Drive API resource ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** URL of a thumbnail image of the Drive item. Read-only. */
-  var thumbnailUrl: js.UndefOr[String] = js.native
+  var thumbnailUrl: js.UndefOr[String] = js.undefined
   
   /** Title of the Drive item. Read-only. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DriveFile {
   

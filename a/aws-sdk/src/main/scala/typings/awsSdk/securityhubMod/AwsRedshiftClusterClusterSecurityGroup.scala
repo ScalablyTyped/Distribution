@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRedshiftClusterClusterSecurityGroup extends StObject {
   
   /**
     * The name of the cluster security group.
     */
-  var ClusterSecurityGroupName: js.UndefOr[NonEmptyString] = js.native
+  var ClusterSecurityGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the cluster security group.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRedshiftClusterClusterSecurityGroup {
   

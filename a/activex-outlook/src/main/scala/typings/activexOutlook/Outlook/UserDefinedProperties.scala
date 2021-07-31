@@ -2,16 +2,15 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UserDefinedProperties extends StObject {
   
   def Add(Name: String, Type: OlUserPropertyType): UserDefinedProperty = js.native
-  def Add(Name: String, Type: OlUserPropertyType, DisplayFormat: js.UndefOr[scala.Nothing], Formula: js.Any): UserDefinedProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, DisplayFormat: js.Any): UserDefinedProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, DisplayFormat: js.Any, Formula: js.Any): UserDefinedProperty = js.native
+  def Add(Name: String, Type: OlUserPropertyType, DisplayFormat: Unit, Formula: js.Any): UserDefinedProperty = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   

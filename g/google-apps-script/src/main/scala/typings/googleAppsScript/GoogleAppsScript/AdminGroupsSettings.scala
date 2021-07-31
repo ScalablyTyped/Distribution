@@ -3,16 +3,14 @@ package typings.googleAppsScript.GoogleAppsScript
 import typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Collection.GroupsCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminGroupsSettings extends StObject {
   
-  var Groups: js.UndefOr[GroupsCollection] = js.native
+  var Groups: js.UndefOr[GroupsCollection] = js.undefined
   
   // Create a new instance of Groups
-  def newGroups(): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups = js.native
+  def newGroups(): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups
 }
 object AdminGroupsSettings {
   
@@ -37,23 +35,22 @@ object AdminGroupsSettings {
   
   object Collection {
     
-    @js.native
     trait GroupsCollection extends StObject {
       
       // Gets one resource by id.
-      def get(groupUniqueId: String): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups = js.native
+      def get(groupUniqueId: String): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups
       
       // Updates an existing resource. This method supports patch semantics.
       def patch(
         resource: typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups,
         groupUniqueId: String
-      ): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups = js.native
+      ): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups
       
       // Updates an existing resource.
       def update(
         resource: typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups,
         groupUniqueId: String
-      ): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups = js.native
+      ): typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups
     }
     object GroupsCollection {
       
@@ -88,130 +85,129 @@ object AdminGroupsSettings {
   
   object Schema {
     
-    @js.native
     trait Groups extends StObject {
       
-      var allowExternalMembers: js.UndefOr[String] = js.native
+      var allowExternalMembers: js.UndefOr[String] = js.undefined
       
-      var allowGoogleCommunication: js.UndefOr[String] = js.native
+      var allowGoogleCommunication: js.UndefOr[String] = js.undefined
       
-      var allowWebPosting: js.UndefOr[String] = js.native
+      var allowWebPosting: js.UndefOr[String] = js.undefined
       
-      var archiveOnly: js.UndefOr[String] = js.native
+      var archiveOnly: js.UndefOr[String] = js.undefined
       
-      var customFooterText: js.UndefOr[String] = js.native
+      var customFooterText: js.UndefOr[String] = js.undefined
       
-      var customReplyTo: js.UndefOr[String] = js.native
+      var customReplyTo: js.UndefOr[String] = js.undefined
       
-      var customRolesEnabledForSettingsToBeMerged: js.UndefOr[String] = js.native
+      var customRolesEnabledForSettingsToBeMerged: js.UndefOr[String] = js.undefined
       
-      var defaultMessageDenyNotificationText: js.UndefOr[String] = js.native
+      var defaultMessageDenyNotificationText: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var enableCollaborativeInbox: js.UndefOr[String] = js.native
+      var enableCollaborativeInbox: js.UndefOr[String] = js.undefined
       
-      var favoriteRepliesOnTop: js.UndefOr[String] = js.native
+      var favoriteRepliesOnTop: js.UndefOr[String] = js.undefined
       
-      var includeCustomFooter: js.UndefOr[String] = js.native
+      var includeCustomFooter: js.UndefOr[String] = js.undefined
       
-      var includeInGlobalAddressList: js.UndefOr[String] = js.native
+      var includeInGlobalAddressList: js.UndefOr[String] = js.undefined
       
-      var isArchived: js.UndefOr[String] = js.native
+      var isArchived: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var maxMessageBytes: js.UndefOr[Double] = js.native
+      var maxMessageBytes: js.UndefOr[Double] = js.undefined
       
-      var membersCanPostAsTheGroup: js.UndefOr[String] = js.native
+      var membersCanPostAsTheGroup: js.UndefOr[String] = js.undefined
       
-      var messageDisplayFont: js.UndefOr[String] = js.native
+      var messageDisplayFont: js.UndefOr[String] = js.undefined
       
-      var messageModerationLevel: js.UndefOr[String] = js.native
+      var messageModerationLevel: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var primaryLanguage: js.UndefOr[String] = js.native
+      var primaryLanguage: js.UndefOr[String] = js.undefined
       
-      var replyTo: js.UndefOr[String] = js.native
+      var replyTo: js.UndefOr[String] = js.undefined
       
-      var sendMessageDenyNotification: js.UndefOr[String] = js.native
+      var sendMessageDenyNotification: js.UndefOr[String] = js.undefined
       
-      var showInGroupDirectory: js.UndefOr[String] = js.native
+      var showInGroupDirectory: js.UndefOr[String] = js.undefined
       
-      var spamModerationLevel: js.UndefOr[String] = js.native
+      var spamModerationLevel: js.UndefOr[String] = js.undefined
       
-      var whoCanAdd: js.UndefOr[String] = js.native
+      var whoCanAdd: js.UndefOr[String] = js.undefined
       
-      var whoCanAddReferences: js.UndefOr[String] = js.native
+      var whoCanAddReferences: js.UndefOr[String] = js.undefined
       
-      var whoCanApproveMembers: js.UndefOr[String] = js.native
+      var whoCanApproveMembers: js.UndefOr[String] = js.undefined
       
-      var whoCanApproveMessages: js.UndefOr[String] = js.native
+      var whoCanApproveMessages: js.UndefOr[String] = js.undefined
       
-      var whoCanAssignTopics: js.UndefOr[String] = js.native
+      var whoCanAssignTopics: js.UndefOr[String] = js.undefined
       
-      var whoCanAssistContent: js.UndefOr[String] = js.native
+      var whoCanAssistContent: js.UndefOr[String] = js.undefined
       
-      var whoCanBanUsers: js.UndefOr[String] = js.native
+      var whoCanBanUsers: js.UndefOr[String] = js.undefined
       
-      var whoCanContactOwner: js.UndefOr[String] = js.native
+      var whoCanContactOwner: js.UndefOr[String] = js.undefined
       
-      var whoCanDeleteAnyPost: js.UndefOr[String] = js.native
+      var whoCanDeleteAnyPost: js.UndefOr[String] = js.undefined
       
-      var whoCanDeleteTopics: js.UndefOr[String] = js.native
+      var whoCanDeleteTopics: js.UndefOr[String] = js.undefined
       
-      var whoCanDiscoverGroup: js.UndefOr[String] = js.native
+      var whoCanDiscoverGroup: js.UndefOr[String] = js.undefined
       
-      var whoCanEnterFreeFormTags: js.UndefOr[String] = js.native
+      var whoCanEnterFreeFormTags: js.UndefOr[String] = js.undefined
       
-      var whoCanHideAbuse: js.UndefOr[String] = js.native
+      var whoCanHideAbuse: js.UndefOr[String] = js.undefined
       
-      var whoCanInvite: js.UndefOr[String] = js.native
+      var whoCanInvite: js.UndefOr[String] = js.undefined
       
-      var whoCanJoin: js.UndefOr[String] = js.native
+      var whoCanJoin: js.UndefOr[String] = js.undefined
       
-      var whoCanLeaveGroup: js.UndefOr[String] = js.native
+      var whoCanLeaveGroup: js.UndefOr[String] = js.undefined
       
-      var whoCanLockTopics: js.UndefOr[String] = js.native
+      var whoCanLockTopics: js.UndefOr[String] = js.undefined
       
-      var whoCanMakeTopicsSticky: js.UndefOr[String] = js.native
+      var whoCanMakeTopicsSticky: js.UndefOr[String] = js.undefined
       
-      var whoCanMarkDuplicate: js.UndefOr[String] = js.native
+      var whoCanMarkDuplicate: js.UndefOr[String] = js.undefined
       
-      var whoCanMarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.native
+      var whoCanMarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.undefined
       
-      var whoCanMarkFavoriteReplyOnOwnTopic: js.UndefOr[String] = js.native
+      var whoCanMarkFavoriteReplyOnOwnTopic: js.UndefOr[String] = js.undefined
       
-      var whoCanMarkNoResponseNeeded: js.UndefOr[String] = js.native
+      var whoCanMarkNoResponseNeeded: js.UndefOr[String] = js.undefined
       
-      var whoCanModerateContent: js.UndefOr[String] = js.native
+      var whoCanModerateContent: js.UndefOr[String] = js.undefined
       
-      var whoCanModerateMembers: js.UndefOr[String] = js.native
+      var whoCanModerateMembers: js.UndefOr[String] = js.undefined
       
-      var whoCanModifyMembers: js.UndefOr[String] = js.native
+      var whoCanModifyMembers: js.UndefOr[String] = js.undefined
       
-      var whoCanModifyTagsAndCategories: js.UndefOr[String] = js.native
+      var whoCanModifyTagsAndCategories: js.UndefOr[String] = js.undefined
       
-      var whoCanMoveTopicsIn: js.UndefOr[String] = js.native
+      var whoCanMoveTopicsIn: js.UndefOr[String] = js.undefined
       
-      var whoCanMoveTopicsOut: js.UndefOr[String] = js.native
+      var whoCanMoveTopicsOut: js.UndefOr[String] = js.undefined
       
-      var whoCanPostAnnouncements: js.UndefOr[String] = js.native
+      var whoCanPostAnnouncements: js.UndefOr[String] = js.undefined
       
-      var whoCanPostMessage: js.UndefOr[String] = js.native
+      var whoCanPostMessage: js.UndefOr[String] = js.undefined
       
-      var whoCanTakeTopics: js.UndefOr[String] = js.native
+      var whoCanTakeTopics: js.UndefOr[String] = js.undefined
       
-      var whoCanUnassignTopic: js.UndefOr[String] = js.native
+      var whoCanUnassignTopic: js.UndefOr[String] = js.undefined
       
-      var whoCanUnmarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.native
+      var whoCanUnmarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.undefined
       
-      var whoCanViewGroup: js.UndefOr[String] = js.native
+      var whoCanViewGroup: js.UndefOr[String] = js.undefined
       
-      var whoCanViewMembership: js.UndefOr[String] = js.native
+      var whoCanViewMembership: js.UndefOr[String] = js.undefined
     }
     object Groups {
       

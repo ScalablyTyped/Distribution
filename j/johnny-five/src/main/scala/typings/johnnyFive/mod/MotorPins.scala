@@ -2,19 +2,17 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MotorPins extends StObject {
   
-  var brake: js.UndefOr[Double] = js.native
+  var brake: js.UndefOr[Double] = js.undefined
   
-  var cdir: js.UndefOr[Double] = js.native
+  var cdir: js.UndefOr[Double] = js.undefined
   
-  var dir: Double = js.native
+  var dir: Double
   
-  var pwm: Double = js.native
+  var pwm: Double
 }
 object MotorPins {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPeeredDnsDomainsResponse extends StObject {
   
   /** The list of peered DNS domains. */
-  var peeredDnsDomains: js.UndefOr[js.Array[PeeredDnsDomain]] = js.native
+  var peeredDnsDomains: js.UndefOr[js.Array[PeeredDnsDomain]] = js.undefined
 }
 object ListPeeredDnsDomainsResponse {
   

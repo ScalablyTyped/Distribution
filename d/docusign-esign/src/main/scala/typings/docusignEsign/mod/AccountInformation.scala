@@ -3,21 +3,19 @@ package typings.docusignEsign.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountInformation extends StObject {
   
   /**
     * The GUID associated with the account ID.
     */
-  var accountIdGuid: js.UndefOr[String] = js.native
+  var accountIdGuid: js.UndefOr[String] = js.undefined
   
   /**
     * The name on the account.
     */
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /**
     * The list of
@@ -32,37 +30,37 @@ trait AccountInformation extends StObject {
     */
   var accountSettings: js.UndefOr[
     /* Contains account settings information. Used in requests to set property values. Used in responses to report property values. */ AccountSettingsInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, the transaction rooms feature exposed through the Workspaces API is enabled.
     */
-  var allowTransactionRooms: js.UndefOr[String] = js.native
+  var allowTransactionRooms: js.UndefOr[String] = js.undefined
   
   /**
     * Number of days remaining in the current billing period.
     */
-  var billingPeriodDaysRemaining: js.UndefOr[String] = js.native
+  var billingPeriodDaysRemaining: js.UndefOr[String] = js.undefined
   
   /**
     * The billing period end date in UTC timedate format.
     */
-  var billingPeriodEndDate: js.UndefOr[String] = js.native
+  var billingPeriodEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * The number of envelopes that can be sent in the current billing period (can be unlimited).
     */
-  var billingPeriodEnvelopesAllowed: js.UndefOr[String] = js.native
+  var billingPeriodEnvelopesAllowed: js.UndefOr[String] = js.undefined
   
   /**
     * The number of envelopes that have been sent in the current billing period.
     */
-  var billingPeriodEnvelopesSent: js.UndefOr[String] = js.native
+  var billingPeriodEnvelopesSent: js.UndefOr[String] = js.undefined
   
   /**
     * The billing period start date in UTC timedate format.
     */
-  var billingPeriodStartDate: js.UndefOr[String] = js.native
+  var billingPeriodStartDate: js.UndefOr[String] = js.undefined
   
   /**
     * The type of billing method on the account. Valid values are:
@@ -70,67 +68,67 @@ trait AccountInformation extends StObject {
     * - `direct`
     * - `web`
     */
-  var billingProfile: js.UndefOr[String] = js.native
+  var billingProfile: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, specifies that you can upgrade the account through the API. For GET methods, you must set the `include_metadata` query parameter to **true**
     * for this property to appear in the response.
     */
-  var canUpgrade: js.UndefOr[String] = js.native
+  var canUpgrade: js.UndefOr[String] = js.undefined
   
-  var connectPermission: js.UndefOr[String] = js.native
+  var connectPermission: js.UndefOr[String] = js.undefined
   
   /**
     * The creation date of the account in UTC timedate format.
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
   /**
     * The currency code for the account, based on the [ISO 4217 currency code](https://www.iso.org/iso-4217-currency-codes.html).
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the plan used to create this account.
     */
-  var currentPlanId: js.UndefOr[String] = js.native
+  var currentPlanId: js.UndefOr[String] = js.undefined
   
   /**
     * The code that identifies the billing plan groups and plans for the new account.
     */
-  var distributorCode: js.UndefOr[String] = js.native
+  var distributorCode: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the landing page used to create the account.
     */
-  var docuSignLandingUrl: js.UndefOr[String] = js.native
+  var docuSignLandingUrl: js.UndefOr[String] = js.undefined
   
-  var dssValues: js.UndefOr[StringDictionary[String]] = js.native
+  var dssValues: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * When **true**, the ability to send envelopes is blocked. When **false**, envelopes can be sent.
     */
-  var envelopeSendingBlocked: js.UndefOr[String] = js.native
+  var envelopeSendingBlocked: js.UndefOr[String] = js.undefined
   
   /**
     * The price of sending an envelope, represented in the account's local currency.
     */
-  var envelopeUnitPrice: js.UndefOr[String] = js.native
+  var envelopeUnitPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The Account ID displayed on the user's Account page.
     */
-  var externalAccountId: js.UndefOr[String] = js.native
+  var externalAccountId: js.UndefOr[String] = js.undefined
   
   /**
     *  A complex element that contains up to four Question/Answer pairs for forgotten password information for a user.
     */
-  var forgottenPasswordQuestionsCount: js.UndefOr[String] = js.native
+  var forgottenPasswordQuestionsCount: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the account has been downgraded from a premium account type. Otherwise **false**.
     */
-  var isDowngrade: js.UndefOr[String] = js.native
+  var isDowngrade: js.UndefOr[String] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -145,7 +143,7 @@ trait AccountInformation extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the type of plan. Examples include:
@@ -155,12 +153,12 @@ trait AccountInformation extends StObject {
     * - `enterprise`
     * - `free`
     */
-  var planClassification: js.UndefOr[String] = js.native
+  var planClassification: js.UndefOr[String] = js.undefined
   
   /**
     * The date that the current plan will end.
     */
-  var planEndDate: js.UndefOr[String] = js.native
+  var planEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the billing plan used for the account.
@@ -170,41 +168,41 @@ trait AccountInformation extends StObject {
     * - `Personal - Annual`
     * - `Unlimited Envelope Subscription - Annual Billing`
     */
-  var planName: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.undefined
   
   /**
     * The date that the Account started using the current plan.
     */
-  var planStartDate: js.UndefOr[String] = js.native
+  var planStartDate: js.UndefOr[String] = js.undefined
   
-  var recipientDomains: js.UndefOr[js.Array[RecipientDomain]] = js.native
+  var recipientDomains: js.UndefOr[js.Array[RecipientDomain]] = js.undefined
   
   /**
     * The number of active users the account can have at one time.
     */
-  var seatsAllowed: js.UndefOr[String] = js.native
+  var seatsAllowed: js.UndefOr[String] = js.undefined
   
   /**
     * The number of users currently active on the account.
     */
-  var seatsInUse: js.UndefOr[String] = js.native
+  var seatsInUse: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the account content per (Title 21 CFR Part 11)
     * [https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application].
     * This regulation defines the criteria under which electronic records and electronic signatures are considered trustworthy.
     */
-  var status21CFRPart11: js.UndefOr[String] = js.native
+  var status21CFRPart11: js.UndefOr[String] = js.undefined
   
   /**
     * The date on which the account was suspended.
     */
-  var suspensionDate: js.UndefOr[String] = js.native
+  var suspensionDate: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the account is currently suspended.
     */
-  var suspensionStatus: js.UndefOr[String] = js.native
+  var suspensionStatus: js.UndefOr[String] = js.undefined
 }
 object AccountInformation {
   

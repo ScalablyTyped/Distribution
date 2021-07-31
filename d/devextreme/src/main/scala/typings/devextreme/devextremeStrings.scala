@@ -4,7 +4,6 @@ import typings.devextreme.mod.DevExpress.ui._format
 import typings.devextreme.mod.DevExpress.viz._VizTimeInterval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devextremeStrings {
@@ -470,7 +469,9 @@ object devextremeStrings {
   def betweenLabels: betweenLabels = "betweenLabels".asInstanceOf[betweenLabels]
   
   @js.native
-  sealed trait billions extends _format
+  sealed trait billions
+    extends StObject
+       with _format
   @scala.inline
   def billions: billions = "billions".asInstanceOf[billions]
   
@@ -785,7 +786,9 @@ object devextremeStrings {
   def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
   
   @js.native
-  sealed trait currency extends _format
+  sealed trait currency
+    extends StObject
+       with _format
   @scala.inline
   def currency: currency = "currency".asInstanceOf[currency]
   
@@ -866,13 +869,16 @@ object devextremeStrings {
   
   @js.native
   sealed trait day
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait dayOfWeek extends _format
+  sealed trait dayOfWeek
+    extends StObject
+       with _format
   @scala.inline
   def dayOfWeek: dayOfWeek = "dayOfWeek".asInstanceOf[dayOfWeek]
   
@@ -897,7 +903,9 @@ object devextremeStrings {
   def decade: decade = "decade".asInstanceOf[decade]
   
   @js.native
-  sealed trait decimal_ extends _format
+  sealed trait decimal_
+    extends StObject
+       with _format
   @scala.inline
   def decimal_ : decimal_ = "decimal".asInstanceOf[decimal_]
   
@@ -1282,7 +1290,9 @@ object devextremeStrings {
   def expandAll: expandAll = "expandAll".asInstanceOf[expandAll]
   
   @js.native
-  sealed trait exponential extends _format
+  sealed trait exponential
+    extends StObject
+       with _format
   @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   
@@ -1387,7 +1397,9 @@ object devextremeStrings {
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait fixedPoint extends _format
+  sealed trait fixedPoint
+    extends StObject
+       with _format
   @scala.inline
   def fixedPoint: fixedPoint = "fixedPoint".asInstanceOf[fixedPoint]
   
@@ -1623,7 +1635,8 @@ object devextremeStrings {
   
   @js.native
   sealed trait hour
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
@@ -1814,7 +1827,9 @@ object devextremeStrings {
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait largeNumber extends _format
+  sealed trait largeNumber
+    extends StObject
+       with _format
   @scala.inline
   def largeNumber: largeNumber = "largeNumber".asInstanceOf[largeNumber]
   
@@ -1999,17 +2014,23 @@ object devextremeStrings {
   def longDash: longDash = "longDash".asInstanceOf[longDash]
   
   @js.native
-  sealed trait longDate extends _format
+  sealed trait longDate
+    extends StObject
+       with _format
   @scala.inline
   def longDate: longDate = "longDate".asInstanceOf[longDate]
   
   @js.native
-  sealed trait longDateLongTime extends _format
+  sealed trait longDateLongTime
+    extends StObject
+       with _format
   @scala.inline
   def longDateLongTime: longDateLongTime = "longDateLongTime".asInstanceOf[longDateLongTime]
   
   @js.native
-  sealed trait longTime extends _format
+  sealed trait longTime
+    extends StObject
+       with _format
   @scala.inline
   def longTime: longTime = "longTime".asInstanceOf[longTime]
   
@@ -2099,13 +2120,16 @@ object devextremeStrings {
   def miller: miller = "miller".asInstanceOf[miller]
   
   @js.native
-  sealed trait millions extends _format
+  sealed trait millions
+    extends StObject
+       with _format
   @scala.inline
   def millions: millions = "millions".asInstanceOf[millions]
   
   @js.native
   sealed trait millisecond
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
@@ -2117,7 +2141,8 @@ object devextremeStrings {
   
   @js.native
   sealed trait minute
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
@@ -2129,18 +2154,23 @@ object devextremeStrings {
   
   @js.native
   sealed trait month
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait monthAndDay extends _format
+  sealed trait monthAndDay
+    extends StObject
+       with _format
   @scala.inline
   def monthAndDay: monthAndDay = "monthAndDay".asInstanceOf[monthAndDay]
   
   @js.native
-  sealed trait monthAndYear extends _format
+  sealed trait monthAndYear
+    extends StObject
+       with _format
   @scala.inline
   def monthAndYear: monthAndYear = "monthAndYear".asInstanceOf[monthAndYear]
   
@@ -2435,7 +2465,9 @@ object devextremeStrings {
   def pentagon: pentagon = "pentagon".asInstanceOf[pentagon]
   
   @js.native
-  sealed trait percent extends _format
+  sealed trait percent
+    extends StObject
+       with _format
   @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
   
@@ -2541,13 +2573,16 @@ object devextremeStrings {
   
   @js.native
   sealed trait quarter
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
-  sealed trait quarterAndYear extends _format
+  sealed trait quarterAndYear
+    extends StObject
+       with _format
   @scala.inline
   def quarterAndYear: quarterAndYear = "quarterAndYear".asInstanceOf[quarterAndYear]
   
@@ -2743,7 +2778,8 @@ object devextremeStrings {
   
   @js.native
   sealed trait second
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def second: second = "second".asInstanceOf[second]
@@ -2804,17 +2840,23 @@ object devextremeStrings {
   def shift: shift = "shift".asInstanceOf[shift]
   
   @js.native
-  sealed trait shortDate extends _format
+  sealed trait shortDate
+    extends StObject
+       with _format
   @scala.inline
   def shortDate: shortDate = "shortDate".asInstanceOf[shortDate]
   
   @js.native
-  sealed trait shortDateShortTime extends _format
+  sealed trait shortDateShortTime
+    extends StObject
+       with _format
   @scala.inline
   def shortDateShortTime: shortDateShortTime = "shortDateShortTime".asInstanceOf[shortDateShortTime]
   
   @js.native
-  sealed trait shortTime extends _format
+  sealed trait shortTime
+    extends StObject
+       with _format
   @scala.inline
   def shortTime: shortTime = "shortTime".asInstanceOf[shortTime]
   
@@ -3169,7 +3211,9 @@ object devextremeStrings {
   def texts: texts = "texts".asInstanceOf[texts]
   
   @js.native
-  sealed trait thousands extends _format
+  sealed trait thousands
+    extends StObject
+       with _format
   @scala.inline
   def thousands: thousands = "thousands".asInstanceOf[thousands]
   
@@ -3249,7 +3293,9 @@ object devextremeStrings {
   def triangleUp: triangleUp = "triangleUp".asInstanceOf[triangleUp]
   
   @js.native
-  sealed trait trillions extends _format
+  sealed trait trillions
+    extends StObject
+       with _format
   @scala.inline
   def trillions: trillions = "trillions".asInstanceOf[trillions]
   
@@ -3374,7 +3420,9 @@ object devextremeStrings {
   def waved: waved = "waved".asInstanceOf[waved]
   
   @js.native
-  sealed trait week extends _VizTimeInterval
+  sealed trait week
+    extends StObject
+       with _VizTimeInterval
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
@@ -3410,7 +3458,8 @@ object devextremeStrings {
   
   @js.native
   sealed trait year
-    extends _VizTimeInterval
+    extends StObject
+       with _VizTimeInterval
        with _format
   @scala.inline
   def year: year = "year".asInstanceOf[year]

@@ -2,36 +2,36 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientPivotGrid.PopupMenuItemClick event.
   */
-@js.native
-trait ASPxClientPivotMenuItemClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientPivotMenuItemClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
-  var Area: String = js.native
+  var Area: String
   
   /**
     * Gets the field's unique indentifier.
     */
-  var FieldID: String = js.native
+  var FieldID: String
   
   /**
     * Gets the index of the field value for which the popup menu has been invoked.
     */
-  var FieldValueIndex: Double = js.native
+  var FieldValueIndex: Double
   
   /**
     * Gets the name of the menu item currently being clicked.
     */
-  var MenuItemName: String = js.native
+  var MenuItemName: String
   
   /**
     * Gets the context menu's type.
     */
-  var MenuType: String = js.native
+  var MenuType: String
 }
 object ASPxClientPivotMenuItemClickEventArgs {
   

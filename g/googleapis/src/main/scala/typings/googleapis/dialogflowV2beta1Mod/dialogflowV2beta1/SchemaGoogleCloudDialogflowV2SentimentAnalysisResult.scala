@@ -2,20 +2,18 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of sentiment analysis as configured by
   * `sentiment_analysis_request_config`.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2SentimentAnalysisResult extends StObject {
   
   /**
     * The sentiment analysis result for `query_text`.
     */
-  var queryTextSentiment: js.UndefOr[SchemaGoogleCloudDialogflowV2Sentiment] = js.native
+  var queryTextSentiment: js.UndefOr[SchemaGoogleCloudDialogflowV2Sentiment] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2SentimentAnalysisResult {
   

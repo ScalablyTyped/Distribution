@@ -2,15 +2,13 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Naclarch extends StObject {
   
-  var nacl_arch: js.UndefOr[String] = js.native
+  var nacl_arch: js.UndefOr[String] = js.undefined
   
-  var sub_package_path: String = js.native
+  var sub_package_path: String
 }
 object Naclarch {
   

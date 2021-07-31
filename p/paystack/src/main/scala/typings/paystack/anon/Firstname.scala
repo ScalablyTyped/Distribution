@@ -2,19 +2,17 @@ package typings.paystack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Firstname extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var last_name: String = js.native
+  var last_name: String
   
-  var phone: String = js.native
+  var phone: String
 }
 object Firstname {
   

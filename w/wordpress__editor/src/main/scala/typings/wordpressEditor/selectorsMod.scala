@@ -24,481 +24,367 @@ import typings.wordpressEditor.wordpressEditorStrings.public
 import typings.wordpressEditor.wordpressEditorStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorsMod {
   
-  @JSImport("@wordpress/editor/store/selectors", "canInsertBlockType")
+  @JSImport("@wordpress/editor/store/selectors", JSImport.Namespace)
   @js.native
-  def canInsertBlockType(blockName: String): Boolean = js.native
-  @JSImport("@wordpress/editor/store/selectors", "canInsertBlockType")
-  @js.native
-  def canInsertBlockType(blockName: String, rootClientId: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/editor/store/selectors", "canUserUseUnfilteredHTML")
-  @js.native
-  def canUserUseUnfilteredHTML(): Boolean = js.native
+  @scala.inline
+  def canInsertBlockType(blockName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canInsertBlockType")(blockName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def canInsertBlockType(blockName: String, rootClientId: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canInsertBlockType")(blockName.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/editor/store/selectors", "didPostSaveRequestFail")
-  @js.native
-  def didPostSaveRequestFail(): Boolean = js.native
+  @scala.inline
+  def canUserUseUnfilteredHTML(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUserUseUnfilteredHTML")().asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/editor/store/selectors", "didPostSaveRequestSucceed")
-  @js.native
-  def didPostSaveRequestSucceed(): Boolean = js.native
+  @scala.inline
+  def didPostSaveRequestFail(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("didPostSaveRequestFail")().asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/editor/store/selectors", "getActivePostLock")
-  @js.native
-  def getActivePostLock(): js.UndefOr[String] = js.native
+  @scala.inline
+  def didPostSaveRequestSucceed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("didPostSaveRequestSucceed")().asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/editor/store/selectors", "getAdjacentBlockClientId")
-  @js.native
-  def getAdjacentBlockClientId(): String | Null = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getAdjacentBlockClientId")
-  @js.native
-  def getAdjacentBlockClientId(startClientId: String): String | Null = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getAdjacentBlockClientId")
-  @js.native
-  def getAdjacentBlockClientId_1(startClientId: js.UndefOr[scala.Nothing], modifier: `-1`): String | Null = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getAdjacentBlockClientId")
-  @js.native
-  def getAdjacentBlockClientId_1(startClientId: js.UndefOr[scala.Nothing], modifier: `1`): String | Null = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getAdjacentBlockClientId")
-  @js.native
-  def getAdjacentBlockClientId_1(startClientId: String, modifier: `-1`): String | Null = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getAdjacentBlockClientId")
-  @js.native
-  def getAdjacentBlockClientId_1(startClientId: String, modifier: `1`): String | Null = js.native
+  @scala.inline
+  def getActivePostLock(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivePostLock")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getAutosave")
-  @js.native
-  def getAutosave(): Autosave | js.Object = js.native
+  @scala.inline
+  def getAdjacentBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")().asInstanceOf[String | Null]
+  @scala.inline
+  def getAdjacentBlockClientId(startClientId: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@wordpress/editor/store/selectors", "getAutosaveAttribute")
-  @js.native
-  def getAutosaveAttribute_previewlink(attributeName: preview_link): String | js.Object = js.native
+  @scala.inline
+  def getAdjacentBlockClientId_1(startClientId: String, modifier: `-1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getAdjacentBlockClientId_1(startClientId: String, modifier: `1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `-1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlock")
-  @js.native
-  def getBlock(clientId: String): BlockInstance[StringDictionary[_]] | Null = js.native
+  @scala.inline
+  def getAutosave(): Autosave | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutosave")().asInstanceOf[Autosave | js.Object]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockAttributes")
-  @js.native
-  def getBlockAttributes(clientId: String): (Record[String, _]) | Null = js.native
+  @scala.inline
+  def getAutosaveAttribute_previewlink(attributeName: preview_link): String | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutosaveAttribute")(attributeName.asInstanceOf[js.Any]).asInstanceOf[String | js.Object]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockCount")
-  @js.native
-  def getBlockCount(): Double = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getBlockCount")
-  @js.native
-  def getBlockCount(rootClientId: String): Double = js.native
+  @scala.inline
+  def getBlock(clientId: String): BlockInstance[StringDictionary[js.Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[BlockInstance[StringDictionary[js.Any]] | Null]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockHierarchyRootClientId")
-  @js.native
-  def getBlockHierarchyRootClientId(clientId: String): String = js.native
+  @scala.inline
+  def getBlockAttributes(clientId: String): (Record[String, js.Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(clientId.asInstanceOf[js.Any]).asInstanceOf[(Record[String, js.Any]) | Null]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockIndex")
-  @js.native
-  def getBlockIndex(clientId: String): Double = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getBlockIndex")
-  @js.native
-  def getBlockIndex(clientId: String, rootClientId: String): Double = js.native
+  @scala.inline
+  def getBlockCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockCount")().asInstanceOf[Double]
+  @scala.inline
+  def getBlockCount(rootClientId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockCount")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockInsertionPoint")
-  @js.native
-  def getBlockInsertionPoint(): Index = js.native
+  @scala.inline
+  def getBlockHierarchyRootClientId(clientId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockHierarchyRootClientId")(clientId.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockListSettings")
-  @js.native
-  def getBlockListSettings(): js.UndefOr[EditorBlockListSettings] = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getBlockListSettings")
-  @js.native
-  def getBlockListSettings(clientId: String): js.UndefOr[EditorBlockListSettings] = js.native
+  @scala.inline
+  def getBlockIndex(clientId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockIndex")(clientId.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getBlockIndex(clientId: String, rootClientId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockIndex")(clientId.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockMode")
-  @js.native
-  def getBlockMode(clientId: String): EditorBlockMode = js.native
+  @scala.inline
+  def getBlockInsertionPoint(): Index = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockInsertionPoint")().asInstanceOf[Index]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockName")
-  @js.native
-  def getBlockName(clientId: String): String | Null = js.native
+  @scala.inline
+  def getBlockListSettings(): js.UndefOr[EditorBlockListSettings] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockListSettings")().asInstanceOf[js.UndefOr[EditorBlockListSettings]]
+  @scala.inline
+  def getBlockListSettings(clientId: String): js.UndefOr[EditorBlockListSettings] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockListSettings")(clientId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EditorBlockListSettings]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockOrder")
-  @js.native
-  def getBlockOrder(): js.Array[String] = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getBlockOrder")
-  @js.native
-  def getBlockOrder(rootClientId: String): js.Array[String] = js.native
+  @scala.inline
+  def getBlockMode(clientId: String): EditorBlockMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockMode")(clientId.asInstanceOf[js.Any]).asInstanceOf[EditorBlockMode]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockRootClientId")
-  @js.native
-  def getBlockRootClientId(clientId: String): String | Null = js.native
+  @scala.inline
+  def getBlockName(clientId: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockName")(clientId.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockSelectionEnd")
-  @js.native
-  def getBlockSelectionEnd(): js.UndefOr[String] = js.native
+  @scala.inline
+  def getBlockOrder(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockOrder")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getBlockOrder(rootClientId: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockOrder")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlockSelectionStart")
-  @js.native
-  def getBlockSelectionStart(): js.UndefOr[String] = js.native
+  @scala.inline
+  def getBlockRootClientId(clientId: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockRootClientId")(clientId.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlocks")
-  @js.native
-  def getBlocks(): js.Array[BlockInstance[StringDictionary[_]]] = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getBlocks")
-  @js.native
-  def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[_]]] = js.native
+  @scala.inline
+  def getBlockSelectionEnd(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSelectionEnd")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlocksByClientId")
-  @js.native
-  def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[_]] | Null] = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getBlocksByClientId")
-  @js.native
-  def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[_]] | Null] = js.native
+  @scala.inline
+  def getBlockSelectionStart(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSelectionStart")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getBlocksForSerialization")
-  @js.native
-  def getBlocksForSerialization(): js.Array[BlockInstance[StringDictionary[_]]] = js.native
+  @scala.inline
+  def getBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocks")().asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  @scala.inline
+  def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocks")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getClientIdsOfDescendants")
-  @js.native
-  def getClientIdsOfDescendants(clientIds: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocksByClientId")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]] | Null]]
+  @scala.inline
+  def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocksByClientId")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]] | Null]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getClientIdsWithDescendants")
-  @js.native
-  def getClientIdsWithDescendants(): js.Array[String] = js.native
+  @scala.inline
+  def getBlocksForSerialization(): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocksForSerialization")().asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getCurrentPost")
-  @js.native
-  def getCurrentPost(): Decontextualize[PostOrPage[edit]] = js.native
+  @scala.inline
+  def getClientIdsOfDescendants(clientIds: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientIdsOfDescendants")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getCurrentPostAttribute")
-  @js.native
+  @scala.inline
+  def getClientIdsWithDescendants(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientIdsWithDescendants")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def getCurrentPost(): Decontextualize[PostOrPage[edit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPost")().asInstanceOf[Decontextualize[PostOrPage[edit]]]
+  
+  @scala.inline
   def getCurrentPostAttribute[T /* <: /* keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'> */ String */](attributeName: T): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Decontextualize<@wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'>>[T] */ js.Any
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPostAttribute")(attributeName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Decontextualize<@wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'>>[T] */ js.Any
+  ]]
   
-  @JSImport("@wordpress/editor/store/selectors", "getCurrentPostId")
-  @js.native
-  def getCurrentPostId(): Double = js.native
+  @scala.inline
+  def getCurrentPostId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPostId")().asInstanceOf[Double]
   
-  @JSImport("@wordpress/editor/store/selectors", "getCurrentPostLastRevisionId")
-  @js.native
-  def getCurrentPostLastRevisionId(): Double | Null = js.native
+  @scala.inline
+  def getCurrentPostLastRevisionId(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPostLastRevisionId")().asInstanceOf[Double | Null]
   
-  @JSImport("@wordpress/editor/store/selectors", "getCurrentPostRevisionsCount")
-  @js.native
-  def getCurrentPostRevisionsCount(): Double = js.native
+  @scala.inline
+  def getCurrentPostRevisionsCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPostRevisionsCount")().asInstanceOf[Double]
   
-  @JSImport("@wordpress/editor/store/selectors", "getCurrentPostType")
-  @js.native
-  def getCurrentPostType(): String = js.native
+  @scala.inline
+  def getCurrentPostType(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPostType")().asInstanceOf[String]
   
-  @JSImport("@wordpress/editor/store/selectors", "getEditedPostAttribute")
-  @js.native
+  @scala.inline
   def getEditedPostAttribute[T /* <: /* keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'> */ String */](attributeName: T): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Decontextualize<@wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'>>[T] */ js.Any
-  ] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getEditedPostContent")
-  @js.native
-  def getEditedPostContent(): String = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getEditedPostPreviewLink")
-  @js.native
-  def getEditedPostPreviewLink(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getEditedPostVisibility")
-  @js.native
-  def getEditedPostVisibility(): password | `private` | public = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getEditorBlocks")
-  @js.native
-  def getEditorBlocks(): js.Array[BlockInstance[StringDictionary[_]]] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getEditorSettings")
-  @js.native
-  def getEditorSettings(): EditorSettings = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getFirstMultiSelectedBlockClientId")
-  @js.native
-  def getFirstMultiSelectedBlockClientId(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getGlobalBlockCount")
-  @js.native
-  def getGlobalBlockCount(): Double = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getGlobalBlockCount")
-  @js.native
-  def getGlobalBlockCount(blockName: String): Double = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getInserterItems")
-  @js.native
-  def getInserterItems(): js.Array[EditorInserterItem] = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getInserterItems")
-  @js.native
-  def getInserterItems(rootClientId: String): js.Array[EditorInserterItem] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getLastMultiSelectedBlockClientId")
-  @js.native
-  def getLastMultiSelectedBlockClientId(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getMultiSelectedBlockClientIds")
-  @js.native
-  def getMultiSelectedBlockClientIds(): js.Array[String] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getMultiSelectedBlocks")
-  @js.native
-  def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[_]]] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getMultiSelectedBlocksEndClientId")
-  @js.native
-  def getMultiSelectedBlocksEndClientId(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getMultiSelectedBlocksStartClientId")
-  @js.native
-  def getMultiSelectedBlocksStartClientId(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getNextBlockClientId")
-  @js.native
-  def getNextBlockClientId(): String | Null = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getNextBlockClientId")
-  @js.native
-  def getNextBlockClientId(startClientId: String): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getPermalink")
-  @js.native
-  def getPermalink(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getPermalinkParts")
-  @js.native
-  def getPermalinkParts(): PostName | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getPostEdits")
-  @js.native
-  def getPostEdits(): Partial[Decontextualize[PostOrPage[edit]]] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getPostLockUser")
-  @js.native
-  def getPostLockUser(): js.UndefOr[User[view] | Null] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getPreviousBlockClientId")
-  @js.native
-  def getPreviousBlockClientId(): String | Null = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getPreviousBlockClientId")
-  @js.native
-  def getPreviousBlockClientId(startClientId: String): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getReferenceByDistinctEdits")
-  @js.native
-  def getReferenceByDistinctEdits(): js.Array[js.Any] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getSelectedBlock")
-  @js.native
-  def getSelectedBlock(): BlockInstance[StringDictionary[_]] | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getSelectedBlockClientId")
-  @js.native
-  def getSelectedBlockClientId(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getSelectedBlockCount")
-  @js.native
-  def getSelectedBlockCount(): Double = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getSelectedBlocksInitialCaretPosition")
-  @js.native
-  def getSelectedBlocksInitialCaretPosition(): Double | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getStateBeforeOptimisticTransaction")
-  @js.native
-  def getStateBeforeOptimisticTransaction(transactionId: js.Object): js.Any = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getSuggestedPostFormat")
-  @js.native
-  def getSuggestedPostFormat(): String | Null = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getTemplate")
-  @js.native
-  def getTemplate(): js.Any = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "getTemplateLock")
-  @js.native
-  def getTemplateLock(): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/editor/store/selectors", "getTemplateLock")
-  @js.native
-  def getTemplateLock(rootClientId: String): js.UndefOr[String] = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasAutosave")
-  @js.native
-  def hasAutosave(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasChangedContent")
-  @js.native
-  def hasChangedContent(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasEditorRedo")
-  @js.native
-  def hasEditorRedo(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasEditorUndo")
-  @js.native
-  def hasEditorUndo(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasInserterItems")
-  @js.native
-  def hasInserterItems(): Boolean = js.native
-  @JSImport("@wordpress/editor/store/selectors", "hasInserterItems")
-  @js.native
-  def hasInserterItems(rootClientId: String): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasMultiSelection")
-  @js.native
-  def hasMultiSelection(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasSelectedBlock")
-  @js.native
-  def hasSelectedBlock(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "hasSelectedInnerBlock")
-  @js.native
-  def hasSelectedInnerBlock(clientId: String): Boolean = js.native
-  @JSImport("@wordpress/editor/store/selectors", "hasSelectedInnerBlock")
-  @js.native
-  def hasSelectedInnerBlock(clientId: String, deep: Boolean): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "inSomeHistory")
-  @js.native
-  def inSomeHistory(predicate: js.Function1[/* state */ Record[String, _], Boolean]): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isAncestorMultiSelected")
-  @js.native
-  def isAncestorMultiSelected(clientId: String): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isAutosavingPost")
-  @js.native
-  def isAutosavingPost(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isBlockInsertionPointVisible")
-  @js.native
-  def isBlockInsertionPointVisible(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isBlockMultiSelected")
-  @js.native
-  def isBlockMultiSelected(clientId: String): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isBlockSelected")
-  @js.native
-  def isBlockSelected(clientId: String): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isBlockValid")
-  @js.native
-  def isBlockValid(clientId: String): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isBlockWithinSelection")
-  @js.native
-  def isBlockWithinSelection(clientId: String): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isCaretWithinFormattedText")
-  @js.native
-  def isCaretWithinFormattedText(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isCleanNewPost")
-  @js.native
-  def isCleanNewPost(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isCurrentPostPending")
-  @js.native
-  def isCurrentPostPending(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isCurrentPostPublished")
-  @js.native
-  def isCurrentPostPublished(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isCurrentPostScheduled")
-  @js.native
-  def isCurrentPostScheduled(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostAutosaveable")
-  @js.native
-  def isEditedPostAutosaveable(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostBeingScheduled")
-  @js.native
-  def isEditedPostBeingScheduled(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostDateFloating")
-  @js.native
-  def isEditedPostDateFloating(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostDirty")
-  @js.native
-  def isEditedPostDirty(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostEmpty")
-  @js.native
-  def isEditedPostEmpty(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostNew")
-  @js.native
-  def isEditedPostNew(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostPublishable")
-  @js.native
-  def isEditedPostPublishable(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isEditedPostSaveable")
-  @js.native
-  def isEditedPostSaveable(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isFirstMultiSelectedBlock")
-  @js.native
-  def isFirstMultiSelectedBlock(clientId: String): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isMultiSelecting")
-  @js.native
-  def isMultiSelecting(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isPermalinkEditable")
-  @js.native
-  def isPermalinkEditable(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isPostLockTakeover")
-  @js.native
-  def isPostLockTakeover(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isPostLocked")
-  @js.native
-  def isPostLocked(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isPostSavingLocked")
-  @js.native
-  def isPostSavingLocked(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isPreviewingPost")
-  @js.native
-  def isPreviewingPost(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isPublishSidebarEnabled")
-  @js.native
-  def isPublishSidebarEnabled(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isPublishingPost")
-  @js.native
-  def isPublishingPost(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isSavingPost")
-  @js.native
-  def isSavingPost(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isSelectionEnabled")
-  @js.native
-  def isSelectionEnabled(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isTyping")
-  @js.native
-  def isTyping(): Boolean = js.native
-  
-  @JSImport("@wordpress/editor/store/selectors", "isValidTemplate")
-  @js.native
-  def isValidTemplate(): Boolean = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditedPostAttribute")(attributeName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Decontextualize<@wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'>>[T] */ js.Any
+  ]]
+  
+  @scala.inline
+  def getEditedPostContent(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditedPostContent")().asInstanceOf[String]
+  
+  @scala.inline
+  def getEditedPostPreviewLink(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditedPostPreviewLink")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getEditedPostVisibility(): password | `private` | public = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditedPostVisibility")().asInstanceOf[password | `private` | public]
+  
+  @scala.inline
+  def getEditorBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditorBlocks")().asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  
+  @scala.inline
+  def getEditorSettings(): EditorSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditorSettings")().asInstanceOf[EditorSettings]
+  
+  @scala.inline
+  def getFirstMultiSelectedBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstMultiSelectedBlockClientId")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getGlobalBlockCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalBlockCount")().asInstanceOf[Double]
+  @scala.inline
+  def getGlobalBlockCount(blockName: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalBlockCount")(blockName.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getInserterItems(): js.Array[EditorInserterItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInserterItems")().asInstanceOf[js.Array[EditorInserterItem]]
+  @scala.inline
+  def getInserterItems(rootClientId: String): js.Array[EditorInserterItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInserterItems")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[js.Array[EditorInserterItem]]
+  
+  @scala.inline
+  def getLastMultiSelectedBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastMultiSelectedBlockClientId")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getMultiSelectedBlockClientIds(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlockClientIds")().asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlocks")().asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  
+  @scala.inline
+  def getMultiSelectedBlocksEndClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlocksEndClientId")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getMultiSelectedBlocksStartClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlocksStartClientId")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getNextBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextBlockClientId")().asInstanceOf[String | Null]
+  @scala.inline
+  def getNextBlockClientId(startClientId: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextBlockClientId")(startClientId.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getPermalink(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPermalink")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getPermalinkParts(): PostName | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPermalinkParts")().asInstanceOf[PostName | Null]
+  
+  @scala.inline
+  def getPostEdits(): Partial[Decontextualize[PostOrPage[edit]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPostEdits")().asInstanceOf[Partial[Decontextualize[PostOrPage[edit]]]]
+  
+  @scala.inline
+  def getPostLockUser(): js.UndefOr[User[view] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPostLockUser")().asInstanceOf[js.UndefOr[User[view] | Null]]
+  
+  @scala.inline
+  def getPreviousBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousBlockClientId")().asInstanceOf[String | Null]
+  @scala.inline
+  def getPreviousBlockClientId(startClientId: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousBlockClientId")(startClientId.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getReferenceByDistinctEdits(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferenceByDistinctEdits")().asInstanceOf[js.Array[js.Any]]
+  
+  @scala.inline
+  def getSelectedBlock(): BlockInstance[StringDictionary[js.Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedBlock")().asInstanceOf[BlockInstance[StringDictionary[js.Any]] | Null]
+  
+  @scala.inline
+  def getSelectedBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedBlockClientId")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getSelectedBlockCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedBlockCount")().asInstanceOf[Double]
+  
+  @scala.inline
+  def getSelectedBlocksInitialCaretPosition(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedBlocksInitialCaretPosition")().asInstanceOf[Double | Null]
+  
+  @scala.inline
+  def getStateBeforeOptimisticTransaction(transactionId: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateBeforeOptimisticTransaction")(transactionId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def getSuggestedPostFormat(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedPostFormat")().asInstanceOf[String | Null]
+  
+  @scala.inline
+  def getTemplate(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")().asInstanceOf[js.Any]
+  
+  @scala.inline
+  def getTemplateLock(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateLock")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def getTemplateLock(rootClientId: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateLock")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  @scala.inline
+  def hasAutosave(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasAutosave")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasChangedContent(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasChangedContent")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasEditorRedo(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEditorRedo")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasEditorUndo(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEditorUndo")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasInserterItems(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInserterItems")().asInstanceOf[Boolean]
+  @scala.inline
+  def hasInserterItems(rootClientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInserterItems")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasMultiSelection(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMultiSelection")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasSelectedBlock(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSelectedBlock")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasSelectedInnerBlock(clientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSelectedInnerBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasSelectedInnerBlock(clientId: String, deep: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasSelectedInnerBlock")(clientId.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def inSomeHistory(predicate: js.Function1[/* state */ Record[String, js.Any], Boolean]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inSomeHistory")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isAncestorMultiSelected(clientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAncestorMultiSelected")(clientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isAutosavingPost(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAutosavingPost")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBlockInsertionPointVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockInsertionPointVisible")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBlockMultiSelected(clientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockMultiSelected")(clientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBlockSelected(clientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockSelected")(clientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBlockValid(clientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockValid")(clientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBlockWithinSelection(clientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockWithinSelection")(clientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isCaretWithinFormattedText(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCaretWithinFormattedText")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isCleanNewPost(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCleanNewPost")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isCurrentPostPending(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCurrentPostPending")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isCurrentPostPublished(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCurrentPostPublished")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isCurrentPostScheduled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCurrentPostScheduled")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostAutosaveable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostAutosaveable")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostBeingScheduled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostBeingScheduled")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostDateFloating(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostDateFloating")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostDirty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostDirty")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostEmpty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostEmpty")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostNew(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostNew")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostPublishable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostPublishable")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEditedPostSaveable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditedPostSaveable")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFirstMultiSelectedBlock(clientId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstMultiSelectedBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMultiSelecting(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiSelecting")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPermalinkEditable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPermalinkEditable")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPostLockTakeover(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPostLockTakeover")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPostLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPostLocked")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPostSavingLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPostSavingLocked")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPreviewingPost(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPreviewingPost")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPublishSidebarEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPublishSidebarEnabled")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPublishingPost(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPublishingPost")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSavingPost(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSavingPost")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSelectionEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionEnabled")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isTyping(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTyping")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isValidTemplate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidTemplate")().asInstanceOf[Boolean]
 }

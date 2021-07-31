@@ -6,21 +6,19 @@ import typings.rmcPullToRefresh.rmcPullToRefreshStrings.down
 import typings.rmcPullToRefresh.rmcPullToRefreshStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propsTypeMod {
   
-  @js.native
   trait Indicator extends StObject {
     
-    var activate: js.UndefOr[ReactNode] = js.native
+    var activate: js.UndefOr[ReactNode] = js.undefined
     
-    var deactivate: js.UndefOr[ReactNode] = js.native
+    var deactivate: js.UndefOr[ReactNode] = js.undefined
     
-    var finish: js.UndefOr[ReactNode] = js.native
+    var finish: js.UndefOr[ReactNode] = js.undefined
     
-    var release: js.UndefOr[ReactNode] = js.native
+    var release: js.UndefOr[ReactNode] = js.undefined
   }
   object Indicator {
     
@@ -59,30 +57,29 @@ object propsTypeMod {
     }
   }
   
-  @js.native
   trait PropsType extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
-    var direction: down | up = js.native
+    var direction: down | up
     
-    var distanceToRefresh: Double = js.native
+    var distanceToRefresh: Double
     
-    def getScrollContainer(): ReactNode = js.native
+    def getScrollContainer(): ReactNode
     
-    var indicator: Indicator = js.native
+    var indicator: Indicator
     
-    def onRefresh(): Unit = js.native
+    def onRefresh(): Unit
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var refreshing: js.UndefOr[Boolean] = js.native
+    var refreshing: js.UndefOr[Boolean] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PropsType {
     

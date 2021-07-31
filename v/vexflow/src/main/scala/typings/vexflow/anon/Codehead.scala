@@ -2,43 +2,41 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Codehead extends StObject {
   
-  var code_head: js.UndefOr[String] = js.native
+  var code_head: js.UndefOr[String] = js.undefined
   
-  var dot_shiftY: Double = js.native
+  var dot_shiftY: Double
   
-  var flag: Boolean = js.native
+  var flag: Boolean
   
-  var gracenote_stem_down_extension: Double = js.native
+  var gracenote_stem_down_extension: Double
   
-  var gracenote_stem_up_extension: Double = js.native
+  var gracenote_stem_up_extension: Double
   
-  var head_width: Double = js.native
+  var head_width: Double
   
-  var line_above: Double = js.native
+  var line_above: Double
   
-  var line_below: Double = js.native
+  var line_below: Double
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var rest: js.UndefOr[Boolean] = js.native
+  var rest: js.UndefOr[Boolean] = js.undefined
   
-  var stem: Boolean = js.native
+  var stem: Boolean
   
-  var stem_down_extension: Double = js.native
+  var stem_down_extension: Double
   
-  var stem_offset: Double = js.native
+  var stem_offset: Double
   
-  var stem_up_extension: Double = js.native
+  var stem_up_extension: Double
   
-  var tabnote_stem_down_extension: Double = js.native
+  var tabnote_stem_down_extension: Double
   
-  var tabnote_stem_up_extension: Double = js.native
+  var tabnote_stem_up_extension: Double
 }
 object Codehead {
   

@@ -4,17 +4,15 @@ import typings.googleapis.anon.Title
 import typings.googleapis.anon.Words
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDictlayerdata extends StObject {
   
-  var common: js.UndefOr[Title] = js.native
+  var common: js.UndefOr[Title] = js.undefined
   
-  var dict: js.UndefOr[Words] = js.native
+  var dict: js.UndefOr[Words] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaDictlayerdata {
   

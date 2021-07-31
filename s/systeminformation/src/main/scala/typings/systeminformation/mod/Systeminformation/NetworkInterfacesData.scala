@@ -2,50 +2,48 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 6. Network related functions
-@js.native
 trait NetworkInterfacesData extends StObject {
   
-  var carrier_changes: Double = js.native
+  var carrier_changes: Double
   
-  var dhcp: Boolean = js.native
+  var dhcp: Boolean
   
-  var dnsSuffix: String = js.native
+  var dnsSuffix: String
   
-  var duplex: String = js.native
+  var duplex: String
   
-  var ieee8021xAuth: String = js.native
+  var ieee8021xAuth: String
   
-  var ieee8021xState: String = js.native
+  var ieee8021xState: String
   
-  var iface: String = js.native
+  var iface: String
   
-  var ifaceName: String = js.native
+  var ifaceName: String
   
-  var internal: Boolean = js.native
+  var internal: Boolean
   
-  var ip4: String = js.native
+  var ip4: String
   
-  var ip4subnet: String = js.native
+  var ip4subnet: String
   
-  var ip6: String = js.native
+  var ip6: String
   
-  var ip6subnet: String = js.native
+  var ip6subnet: String
   
-  var mac: String = js.native
+  var mac: String
   
-  var mtu: Double = js.native
+  var mtu: Double
   
-  var operstate: String = js.native
+  var operstate: String
   
-  var speed: Double = js.native
+  var speed: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var virtual: Boolean = js.native
+  var virtual: Boolean
 }
 object NetworkInterfacesData {
   

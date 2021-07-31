@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -355,19 +354,16 @@ object GraphObject {
     * @param {function(Array<*>):Object} func
     */
   /* static member */
-  @JSImport("go", "GraphObject.defineBuilder")
-  @js.native
-  def defineBuilder(name: String, func: js.Function1[/* args */ js.Array[_], js.Object]): Unit = js.native
+  @scala.inline
+  def defineBuilder(name: String, func: js.Function1[/* args */ js.Array[js.Any], js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineBuilder")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // undocumented
   /* static member */
-  @JSImport("go", "GraphObject.getBuilders")
-  @js.native
-  def getBuilders(): Map[String, js.Function1[/* args */ js.Array[_], js.Object]] = js.native
+  @scala.inline
+  def getBuilders(): Map[String, js.Function1[/* args */ js.Array[js.Any], js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuilders")().asInstanceOf[Map[String, js.Function1[/* args */ js.Array[js.Any], js.Object]]]
   
-  @JSImport("go", "GraphObject.make")
-  @js.native
-  def make(`type`: String, initializers: js.Any*): js.Any = js.native
+  @scala.inline
+  def make(`type`: String, initializers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(`type`.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   /**
     * This static function builds an object given its class and additional arguments providing initial properties or GraphObjects that become Panel elements.
     * @param {function()|string} type a class function or the name of a class in the "go" namespace,
@@ -382,9 +378,8 @@ object GraphObject {
     * or a string that is used as the value of a commonly set property.
     */
   /* static member */
-  @JSImport("go", "GraphObject.make")
-  @js.native
-  def make(`type`: Constructor, initializers: js.Any*): js.Any = js.native
+  @scala.inline
+  def make(`type`: Constructor, initializers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(`type`.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * This static function returns the first argument from the arguments array passed
@@ -398,20 +393,12 @@ object GraphObject {
     * @return {*}
     */
   /* static member */
-  @JSImport("go", "GraphObject.takeBuilderArgument")
-  @js.native
-  def takeBuilderArgument(args: js.Array[_]): js.Any = js.native
-  @JSImport("go", "GraphObject.takeBuilderArgument")
-  @js.native
-  def takeBuilderArgument(
-    args: js.Array[_],
-    defval: js.UndefOr[scala.Nothing],
-    pred: js.Function1[/* arg */ js.Any, Boolean]
-  ): js.Any = js.native
-  @JSImport("go", "GraphObject.takeBuilderArgument")
-  @js.native
-  def takeBuilderArgument(args: js.Array[_], defval: js.Any): js.Any = js.native
-  @JSImport("go", "GraphObject.takeBuilderArgument")
-  @js.native
-  def takeBuilderArgument(args: js.Array[_], defval: js.Any, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = js.native
+  @scala.inline
+  def takeBuilderArgument(args: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def takeBuilderArgument(args: js.Array[js.Any], defval: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def takeBuilderArgument(args: js.Array[js.Any], defval: js.Any, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def takeBuilderArgument(args: js.Array[js.Any], defval: Unit, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

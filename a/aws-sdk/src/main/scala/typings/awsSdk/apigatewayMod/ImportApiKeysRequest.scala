@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportApiKeysRequest extends StObject {
   
   /**
     * The payload of the POST request to import API keys. For the payload format, see API Key File Format.
     */
-  var body: _Blob = js.native
+  var body: _Blob
   
   /**
     * A query parameter to indicate whether to rollback ApiKey importation (true) or not (false) when error is encountered.
     */
-  var failOnWarnings: js.UndefOr[Boolean] = js.native
+  var failOnWarnings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A query parameter to specify the input format to imported API keys. Currently, only the csv format is supported.
     */
-  var format: ApiKeysFormat = js.native
+  var format: ApiKeysFormat
 }
 object ImportApiKeysRequest {
   

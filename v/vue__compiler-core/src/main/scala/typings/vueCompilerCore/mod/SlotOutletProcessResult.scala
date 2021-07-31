@@ -2,15 +2,13 @@ package typings.vueCompilerCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotOutletProcessResult extends StObject {
   
-  var slotName: String | ExpressionNode = js.native
+  var slotName: String | ExpressionNode
   
-  var slotProps: js.UndefOr[PropsExpression] = js.native
+  var slotProps: js.UndefOr[PropsExpression] = js.undefined
 }
 object SlotOutletProcessResult {
   

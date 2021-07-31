@@ -2,51 +2,49 @@ package typings.postmark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bounceMod {
   
-  @js.native
   trait Bounce extends StObject {
     
-    var BouncedAt: String = js.native
+    var BouncedAt: String
     
-    var CanActivate: Boolean = js.native
+    var CanActivate: Boolean
     
-    var Content: js.UndefOr[String] = js.native
+    var Content: js.UndefOr[String] = js.undefined
     
-    var Description: String = js.native
+    var Description: String
     
-    var Details: String = js.native
+    var Details: String
     
-    var DumpAvailable: Boolean = js.native
+    var DumpAvailable: Boolean
     
-    var Email: String = js.native
+    var Email: String
     
-    var From: String = js.native
+    var From: String
     
-    var ID: Double = js.native
+    var ID: Double
     
-    var Inactive: Boolean = js.native
+    var Inactive: Boolean
     
-    var MessageID: String = js.native
+    var MessageID: String
     
-    var MessageStream: String = js.native
+    var MessageStream: String
     
-    var Name: String = js.native
+    var Name: String
     
-    var RecordType: String = js.native
+    var RecordType: String
     
-    var ServerID: String = js.native
+    var ServerID: String
     
-    var Subject: String = js.native
+    var Subject: String
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
-    var Type: String = js.native
+    var Type: String
     
-    var TypeCode: Double = js.native
+    var TypeCode: Double
   }
   object Bounce {
     
@@ -142,12 +140,11 @@ object bounceMod {
     }
   }
   
-  @js.native
   trait BounceActivationResponse extends StObject {
     
-    var Bounce: typings.postmark.bounceMod.Bounce = js.native
+    var Bounce: typings.postmark.bounceMod.Bounce
     
-    var Message: String = js.native
+    var Message: String
   }
   object BounceActivationResponse {
     
@@ -168,10 +165,9 @@ object bounceMod {
     }
   }
   
-  @js.native
   trait BounceDump extends StObject {
     
-    var Body: String = js.native
+    var Body: String
   }
   object BounceDump {
     
@@ -189,14 +185,13 @@ object bounceMod {
     }
   }
   
-  @js.native
   trait BounceMetric extends StObject {
     
-    var Count: Double = js.native
+    var Count: Double
     
-    var Name: String = js.native
+    var Name: String
     
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object BounceMetric {
     
@@ -223,12 +218,11 @@ object bounceMod {
     }
   }
   
-  @js.native
   trait Bounces extends StObject {
     
-    var Bounces: js.Array[Bounce] = js.native
+    var Bounces: js.Array[Bounce]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object Bounces {
     
@@ -252,12 +246,11 @@ object bounceMod {
     }
   }
   
-  @js.native
   trait DeliveryStatistics extends StObject {
     
-    var Bounces: js.Array[BounceMetric] = js.native
+    var Bounces: js.Array[BounceMetric]
     
-    var InactiveMails: Double = js.native
+    var InactiveMails: Double
   }
   object DeliveryStatistics {
     

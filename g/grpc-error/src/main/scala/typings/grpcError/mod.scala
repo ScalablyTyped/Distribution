@@ -3,27 +3,41 @@ package typings.grpcError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("grpc-error", JSImport.Namespace)
   @js.native
-  class ^ protected () extends GRPCError {
+  class ^ protected ()
+    extends StObject
+       with GRPCError {
     def this(value: String) = this()
     def this(value: js.Object) = this()
     def this(message: String, value: js.Object) = this()
     def this(message: String, value: Double) = this()
     def this(message: String, code: Double, metadata: js.Object) = this()
-  }
-  
-  @js.native
-  trait GRPCError extends Error {
     
+    /* CompleteClass */
     var code: Double = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
     var metadata: js.Object = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  trait GRPCError
+    extends StObject
+       with Error {
+    
+    var code: Double
+    
+    var metadata: js.Object
   }
   object GRPCError {
     

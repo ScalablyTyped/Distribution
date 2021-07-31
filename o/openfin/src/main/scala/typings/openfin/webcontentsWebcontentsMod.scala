@@ -11,7 +11,6 @@ import typings.openfin.windowWindowMod.PrintOptions
 import typings.openfin.windowWindowMod.PrinterInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webcontentsWebcontentsMod {
@@ -59,14 +58,13 @@ object webcontentsWebcontentsMod {
     def stopNavigation(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait CapturePageOptions extends StObject {
     
-    var area: js.UndefOr[Area] = js.native
+    var area: js.UndefOr[Area] = js.undefined
     
-    var format: js.UndefOr[ImageFormat] = js.native
+    var format: js.UndefOr[ImageFormat] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
   }
   object CapturePageOptions {
     

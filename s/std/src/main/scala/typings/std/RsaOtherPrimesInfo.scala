@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RsaOtherPrimesInfo extends StObject {
   
-  var d: js.UndefOr[java.lang.String] = js.native
+  var d: js.UndefOr[java.lang.String] = js.undefined
   
-  var r: js.UndefOr[java.lang.String] = js.native
+  var r: js.UndefOr[java.lang.String] = js.undefined
   
-  var t: js.UndefOr[java.lang.String] = js.native
+  var t: js.UndefOr[java.lang.String] = js.undefined
 }
 object RsaOtherPrimesInfo {
   

@@ -7,29 +7,29 @@ import typings.react.mod.SFC
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-measure", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-measure", JSImport.Default)
   @js.native
   class default ()
     extends Component[MeasureProps, js.Object, js.Any]
   
-  @JSImport("react-measure", "withContentRect")
-  @js.native
-  def withContentRect(types: js.Array[MeasurementType]): js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]] = js.native
-  @JSImport("react-measure", "withContentRect")
-  @js.native
-  def withContentRect(types: MeasurementType): js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]] = js.native
+  @scala.inline
+  def withContentRect(types: js.Array[MeasurementType]): js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withContentRect")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]]]
+  @scala.inline
+  def withContentRect(types: MeasurementType): js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withContentRect")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]]]
   
-  @js.native
   trait BottomRight extends StObject {
     
-    val bottom: Double = js.native
+    val bottom: Double
     
-    val right: Double = js.native
+    val right: Double
   }
   object BottomRight {
     
@@ -50,22 +50,21 @@ object mod {
     }
   }
   
-  type BoundingRect = Dimensions with Margin
+  type BoundingRect = Dimensions & Margin
   
-  @js.native
   trait ContentRect extends StObject {
     
-    var bounds: js.UndefOr[BoundingRect] = js.native
+    var bounds: js.UndefOr[BoundingRect] = js.undefined
     
-    var client: js.UndefOr[Rect] = js.native
+    var client: js.UndefOr[Rect] = js.undefined
     
-    var entry: js.UndefOr[js.Any] = js.native
+    var entry: js.UndefOr[js.Any] = js.undefined
     
-    var margin: js.UndefOr[Margin] = js.native
+    var margin: js.UndefOr[Margin] = js.undefined
     
-    var offset: js.UndefOr[Rect] = js.native
+    var offset: js.UndefOr[Rect] = js.undefined
     
-    var scroll: js.UndefOr[Rect] = js.native
+    var scroll: js.UndefOr[Rect] = js.undefined
   }
   object ContentRect {
     
@@ -116,12 +115,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Dimensions extends StObject {
     
-    val height: Double = js.native
+    val height: Double
     
-    val width: Double = js.native
+    val width: Double
   }
   object Dimensions {
     
@@ -142,28 +140,38 @@ object mod {
     }
   }
   
-  type Margin = TopLeft with BottomRight
+  trait Margin
+    extends StObject
+       with TopLeft
+       with BottomRight
+  object Margin {
+    
+    @scala.inline
+    def apply(bottom: Double, left: Double, right: Double, top: Double): Margin = {
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Margin]
+    }
+  }
   
   type Measure = Component[MeasureProps, js.Object, js.Any]
   
-  @js.native
   trait MeasureProps extends StObject {
     
-    var bounds: js.UndefOr[Boolean] = js.native
+    var bounds: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[SFC[MeasuredComponentProps]] = js.native
+    var children: js.UndefOr[SFC[MeasuredComponentProps]] = js.undefined
     
-    var client: js.UndefOr[Boolean] = js.native
+    var client: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[Element]] = js.native
+    var innerRef: js.UndefOr[Ref[Element]] = js.undefined
     
-    var margin: js.UndefOr[Boolean] = js.native
+    var margin: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Boolean] = js.native
+    var offset: js.UndefOr[Boolean] = js.undefined
     
-    var onResize: js.UndefOr[js.Function1[/* contentRect */ ContentRect, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* contentRect */ ContentRect, Unit]] = js.undefined
     
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
   }
   object MeasureProps {
     
@@ -232,7 +240,7 @@ object mod {
     }
   }
   
-  type MeasuredComponent[T] = ComponentType[T with MeasuredComponentProps]
+  type MeasuredComponent[T] = ComponentType[T & MeasuredComponentProps]
   
   @js.native
   trait MeasuredComponentProps extends StObject {
@@ -271,14 +279,24 @@ object mod {
     def scroll: typings.reactMeasure.reactMeasureStrings.scroll = "scroll".asInstanceOf[typings.reactMeasure.reactMeasureStrings.scroll]
   }
   
-  type Rect = TopLeft with Dimensions
+  trait Rect
+    extends StObject
+       with TopLeft
+       with Dimensions
+  object Rect {
+    
+    @scala.inline
+    def apply(height: Double, left: Double, top: Double, width: Double): Rect = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Rect]
+    }
+  }
   
-  @js.native
   trait TopLeft extends StObject {
     
-    val left: Double = js.native
+    val left: Double
     
-    val top: Double = js.native
+    val top: Double
   }
   object TopLeft {
     

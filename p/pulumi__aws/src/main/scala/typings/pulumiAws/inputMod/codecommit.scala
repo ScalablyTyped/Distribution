@@ -3,38 +3,36 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codecommit {
   
-  @js.native
   trait TriggerTrigger extends StObject {
     
     /**
       * The branches that will be included in the trigger configuration. If no branches are specified, the trigger will apply to all branches.
       */
-    var branches: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var branches: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Any custom data associated with the trigger that will be included in the information sent to the target of the trigger.
       */
-    var customData: js.UndefOr[Input[String]] = js.native
+    var customData: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the resource that is the target for a trigger. For example, the ARN of a topic in Amazon Simple Notification Service (SNS).
       */
-    var destinationArn: Input[String] = js.native
+    var destinationArn: Input[String]
     
     /**
       * The repository events that will cause the trigger to run actions in another service, such as sending a notification through Amazon Simple Notification Service (SNS). If no events are specified, the trigger will run for all repository events. Event types include: `all`, `updateReference`, `createReference`, `deleteReference`.
       */
-    var events: Input[js.Array[Input[String]]] = js.native
+    var events: Input[js.Array[Input[String]]]
     
     /**
       * The name of the trigger.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
   }
   object TriggerTrigger {
     

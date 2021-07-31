@@ -2,18 +2,16 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2RecordKey extends StObject {
   
-  var bigQueryKey: js.UndefOr[GooglePrivacyDlpV2BigQueryKey] = js.native
+  var bigQueryKey: js.UndefOr[GooglePrivacyDlpV2BigQueryKey] = js.undefined
   
-  var datastoreKey: js.UndefOr[GooglePrivacyDlpV2DatastoreKey] = js.native
+  var datastoreKey: js.UndefOr[GooglePrivacyDlpV2DatastoreKey] = js.undefined
   
   /** Values of identifying columns in the given row. Order of values matches the order of `identifying_fields` specified in the scanning request. */
-  var idValues: js.UndefOr[js.Array[String]] = js.native
+  var idValues: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GooglePrivacyDlpV2RecordKey {
   

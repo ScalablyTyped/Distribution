@@ -2,19 +2,17 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILanguageInfo extends StObject {
   
-  var codemirror_mode: js.UndefOr[String | ICodeMirrorMode] = js.native
+  var codemirror_mode: js.UndefOr[String | ICodeMirrorMode] = js.undefined
   
-  var mimetype: js.UndefOr[String] = js.native
+  var mimetype: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ILanguageInfo {
   

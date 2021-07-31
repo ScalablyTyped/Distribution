@@ -1,14 +1,13 @@
 package typings.firebaseMessaging
 
+import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAppTypes.privateMod.FirebaseService
 import typings.firebaseMessaging.internalDependenciesMod.FirebaseInternalDependencies
-import typings.firebaseMessaging.mod.FirebaseApp
 import typings.firebaseMessagingTypes.mod.FirebaseMessaging
 import typings.firebaseUtil.subscribeMod.Unsubscribe
 import typings.std.ServiceWorkerRegistration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowControllerMod {
@@ -16,12 +15,15 @@ object windowControllerMod {
   @JSImport("@firebase/messaging/dist/controllers/window-controller", "WindowController")
   @js.native
   class WindowController protected ()
-    extends FirebaseMessaging
+    extends StObject
+       with FirebaseMessaging
        with FirebaseService {
     def this(firebaseDependencies: FirebaseInternalDependencies) = this()
     
+    /* CompleteClass */
+    var app: FirebaseApp = js.native
     @JSName("app")
-    def app_MWindowController: FirebaseApp = js.native
+    def app_MWindowController: typings.firebaseMessaging.mod.FirebaseApp = js.native
     
     val firebaseDependencies: js.Any = js.native
     

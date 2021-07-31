@@ -7,7 +7,9 @@ import typings.actionsOnGoogle.assistantMod.ServiceBaseApp
 import typings.actionsOnGoogle.canvasMod.Canvas
 import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.deviceMod.Device
+import typings.actionsOnGoogle.frameworkFrameworkMod.BuiltinFrameworkMetadata
 import typings.actionsOnGoogle.frameworkFrameworkMod.Headers
+import typings.actionsOnGoogle.frameworkFrameworkMod.StandardResponse
 import typings.actionsOnGoogle.helperMod.Helper
 import typings.actionsOnGoogle.htmlMod.HtmlResponse
 import typings.actionsOnGoogle.inputMod.Input
@@ -24,7 +26,6 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conversationConversationMod {
@@ -262,39 +263,86 @@ object conversationConversationMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/conversation", "UnauthorizedError")
   @js.native
-  class UnauthorizedError () extends Error
-  
-  @js.native
-  trait ConversationApp[TConvData, TUserStorage] extends ServiceBaseApp {
+  class UnauthorizedError ()
+    extends StObject
+       with Error {
     
-    /** @hidden */
-    var _client: js.UndefOr[OAuth2Client] = js.native
+    /* CompleteClass */
+    var message: String = js.native
     
-    /** @public */
-    var auth: js.UndefOr[OAuth2Config] = js.native
-    
-    /** @public */
-    var init: js.UndefOr[js.Function0[ConversationOptionsInit[TConvData, TUserStorage]]] = js.native
-    
-    /** @public */
-    var ordersv3: Boolean = js.native
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @js.native
-  trait ConversationAppOptions[TConvData, TUserStorage] extends AppOptions {
+  trait ConversationApp[TConvData, TUserStorage]
+    extends StObject
+       with ServiceBaseApp {
+    
+    /** @hidden */
+    var _client: js.UndefOr[OAuth2Client] = js.undefined
+    
+    /** @public */
+    var auth: js.UndefOr[OAuth2Config] = js.undefined
+    
+    /** @public */
+    var init: js.UndefOr[js.Function0[ConversationOptionsInit[TConvData, TUserStorage]]] = js.undefined
+    
+    /** @public */
+    var ordersv3: Boolean
+  }
+  object ConversationApp {
+    
+    @scala.inline
+    def apply[TConvData, TUserStorage](
+      handler: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse],
+      ordersv3: Boolean
+    ): ConversationApp[TConvData, TUserStorage] = {
+      val __obj = js.Dynamic.literal(handler = js.Any.fromFunction3(handler), ordersv3 = ordersv3.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConversationApp[TConvData, TUserStorage]]
+    }
+    
+    @scala.inline
+    implicit class ConversationAppMutableBuilder[Self <: ConversationApp[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationApp[TConvData, TUserStorage])) extends AnyVal {
+      
+      @scala.inline
+      def setAuth(value: OAuth2Config): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      
+      @scala.inline
+      def setInit(value: () => ConversationOptionsInit[TConvData, TUserStorage]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      
+      @scala.inline
+      def setOrdersv3(value: Boolean): Self = StObject.set(x, "ordersv3", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set_client(value: OAuth2Client): Self = StObject.set(x, "_client", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def set_clientUndefined: Self = StObject.set(x, "_client", js.undefined)
+    }
+  }
+  
+  trait ConversationAppOptions[TConvData, TUserStorage]
+    extends StObject
+       with AppOptions {
     
     /**
       * Client ID for User Profile Payload Verification
       * See {@link Profile#payload|conv.user.profile.payload}
       * @public
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /** @public */
-    var init: js.UndefOr[js.Function0[ConversationOptionsInit[TConvData, TUserStorage]]] = js.native
+    var init: js.UndefOr[js.Function0[ConversationOptionsInit[TConvData, TUserStorage]]] = js.undefined
     
     /** @public */
-    var ordersv3: js.UndefOr[Boolean] = js.native
+    var ordersv3: js.UndefOr[Boolean] = js.undefined
   }
   object ConversationAppOptions {
     
@@ -305,7 +353,7 @@ object conversationConversationMod {
     }
     
     @scala.inline
-    implicit class ConversationAppOptionsMutableBuilder[Self <: ConversationAppOptions[_, _], TConvData, TUserStorage] (val x: Self with (ConversationAppOptions[TConvData, TUserStorage])) extends AnyVal {
+    implicit class ConversationAppOptionsMutableBuilder[Self <: ConversationAppOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationAppOptions[TConvData, TUserStorage])) extends AnyVal {
       
       @scala.inline
       def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
@@ -327,20 +375,19 @@ object conversationConversationMod {
     }
   }
   
-  @js.native
   trait ConversationBaseOptions[TConvData, TUserStorage] extends StObject {
     
     /** @public */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /** @public */
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     /** @public */
-    var init: js.UndefOr[ConversationOptionsInit[TConvData, TUserStorage]] = js.native
+    var init: js.UndefOr[ConversationOptionsInit[TConvData, TUserStorage]] = js.undefined
     
     /** @public */
-    var ordersv3: js.UndefOr[Boolean] = js.native
+    var ordersv3: js.UndefOr[Boolean] = js.undefined
   }
   object ConversationBaseOptions {
     
@@ -351,7 +398,7 @@ object conversationConversationMod {
     }
     
     @scala.inline
-    implicit class ConversationBaseOptionsMutableBuilder[Self <: ConversationBaseOptions[_, _], TConvData, TUserStorage] (val x: Self with (ConversationBaseOptions[TConvData, TUserStorage])) extends AnyVal {
+    implicit class ConversationBaseOptionsMutableBuilder[Self <: ConversationBaseOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationBaseOptions[TConvData, TUserStorage])) extends AnyVal {
       
       @scala.inline
       def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
@@ -379,20 +426,19 @@ object conversationConversationMod {
     }
   }
   
-  @js.native
   trait ConversationOptions[TUserStorage] extends StObject {
     
     /** @public */
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
     /** @public */
-    var init: js.UndefOr[ConversationOptionsInit[js.Object, TUserStorage]] = js.native
+    var init: js.UndefOr[ConversationOptionsInit[js.Object, TUserStorage]] = js.undefined
     
     /** @public */
-    var ordersv3: js.UndefOr[Boolean] = js.native
+    var ordersv3: js.UndefOr[Boolean] = js.undefined
     
     /** @public */
-    var request: js.UndefOr[GoogleActionsV2AppRequest] = js.native
+    var request: js.UndefOr[GoogleActionsV2AppRequest] = js.undefined
   }
   object ConversationOptions {
     
@@ -403,7 +449,7 @@ object conversationConversationMod {
     }
     
     @scala.inline
-    implicit class ConversationOptionsMutableBuilder[Self <: ConversationOptions[_], TUserStorage] (val x: Self with ConversationOptions[TUserStorage]) extends AnyVal {
+    implicit class ConversationOptionsMutableBuilder[Self <: ConversationOptions[?], TUserStorage] (val x: Self & ConversationOptions[TUserStorage]) extends AnyVal {
       
       @scala.inline
       def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
@@ -431,14 +477,13 @@ object conversationConversationMod {
     }
   }
   
-  @js.native
   trait ConversationOptionsInit[TConvData, TUserStorage] extends StObject {
     
     /** @public */
-    var data: js.UndefOr[TConvData] = js.native
+    var data: js.UndefOr[TConvData] = js.undefined
     
     /** @public */
-    var storage: js.UndefOr[TUserStorage] = js.native
+    var storage: js.UndefOr[TUserStorage] = js.undefined
   }
   object ConversationOptionsInit {
     
@@ -449,7 +494,7 @@ object conversationConversationMod {
     }
     
     @scala.inline
-    implicit class ConversationOptionsInitMutableBuilder[Self <: ConversationOptionsInit[_, _], TConvData, TUserStorage] (val x: Self with (ConversationOptionsInit[TConvData, TUserStorage])) extends AnyVal {
+    implicit class ConversationOptionsInitMutableBuilder[Self <: ConversationOptionsInit[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationOptionsInit[TConvData, TUserStorage])) extends AnyVal {
       
       @scala.inline
       def setData(value: TConvData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -465,20 +510,19 @@ object conversationConversationMod {
     }
   }
   
-  @js.native
   trait ConversationResponse extends StObject {
     
-    var expectUserResponse: Boolean = js.native
+    var expectUserResponse: Boolean
     
-    var expectedIntent: js.UndefOr[GoogleActionsV2ExpectedIntent] = js.native
+    var expectedIntent: js.UndefOr[GoogleActionsV2ExpectedIntent] = js.undefined
     
-    var noInputPrompts: js.UndefOr[js.Array[GoogleActionsV2SimpleResponse]] = js.native
+    var noInputPrompts: js.UndefOr[js.Array[GoogleActionsV2SimpleResponse]] = js.undefined
     
-    var richResponse: GoogleActionsV2RichResponse = js.native
+    var richResponse: GoogleActionsV2RichResponse
     
-    var speechBiasingHints: js.UndefOr[js.Array[String]] = js.native
+    var speechBiasingHints: js.UndefOr[js.Array[String]] = js.undefined
     
-    var userStorage: String = js.native
+    var userStorage: String
   }
   object ConversationResponse {
     
@@ -698,11 +742,10 @@ object conversationConversationMod {
     def actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK: typings.actionsOnGoogle.actionsOnGoogleStrings.actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK = "actions.intent.TRANSACTION_REQUIREMENTS_CHECK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.actionsDotintentDotTRANSACTION_REQUIREMENTS_CHECK]
   }
   
-  @js.native
   trait OAuth2Config extends StObject {
     
     /** @public */
-    var client: OAuth2ConfigClient = js.native
+    var client: OAuth2ConfigClient
   }
   object OAuth2Config {
     
@@ -720,11 +763,10 @@ object conversationConversationMod {
     }
   }
   
-  @js.native
   trait OAuth2ConfigClient extends StObject {
     
     /** @public */
-    var id: String = js.native
+    var id: String
   }
   object OAuth2ConfigClient {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIdentitiesInput extends StObject {
   
   /**
     * A list of 1-60 identities that you want to delete.
     */
-  var IdentityIdsToDelete: IdentityIdList = js.native
+  var IdentityIdsToDelete: IdentityIdList
 }
 object DeleteIdentitiesInput {
   

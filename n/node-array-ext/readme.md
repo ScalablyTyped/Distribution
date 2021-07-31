@@ -12,7 +12,7 @@ A library that contains simple extensions for nodejs arrays.
 | Keywords           | node, array, extension, async |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 428 |
+| # downloads        | 647 |
 | # stars            | 0 |
 
 ## Links

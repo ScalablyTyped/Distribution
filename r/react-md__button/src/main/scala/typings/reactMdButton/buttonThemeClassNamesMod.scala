@@ -2,14 +2,16 @@ package typings.reactMdButton
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonThemeClassNamesMod {
   
-  @JSImport("@react-md/button/types/buttonThemeClassNames", "buttonThemeClassNames")
+  @JSImport("@react-md/button/types/buttonThemeClassNames", JSImport.Namespace)
   @js.native
-  def buttonThemeClassNames(hasThemeThemeTypeButtonTypeDisabledClassName: ButtonThemeProps): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def buttonThemeClassNames(hasPropThemeThemeTypeButtonTypePropDisabledClassName: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(hasPropThemeThemeTypeButtonTypePropDisabledClassName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdButton.reactMdButtonStrings.clear
@@ -41,7 +43,6 @@ object buttonThemeClassNamesMod {
     def warning: typings.reactMdButton.reactMdButtonStrings.warning = "warning".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.warning]
   }
   
-  @js.native
   trait ButtonThemeProps extends StObject {
     
     /**
@@ -51,33 +52,33 @@ object buttonThemeClassNamesMod {
       * this is set to "icon", the styles applied will make icon only buttons
       * render nicely.
       */
-    var buttonType: js.UndefOr[ButtonType] = js.native
+    var buttonType: js.UndefOr[ButtonType] = js.undefined
     
     /**
       * An optional className to also apply to the button for additional theming
       * and styling. This will be merged with the `Button.theme` class name styles.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Enabling this prop will apply the disabled styles to a `Button`. When this
       * is also applied to the button component, the button will be updated so that
       * it can no longer be interacted with.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The material design theme to apply to the button. The theme prop will
       * update the look and feel of the button by applying different background
       * and/or foreground colors.
       */
-    var theme: js.UndefOr[ButtonTheme] = js.native
+    var theme: js.UndefOr[ButtonTheme] = js.undefined
     
     /**
       * The material design theme type to apply. The themeTYpe prop will update the
       * look and feel of the button by applying different border or box shadow.
       */
-    var themeType: js.UndefOr[ButtonThemeType] = js.native
+    var themeType: js.UndefOr[ButtonThemeType] = js.undefined
   }
   object ButtonThemeProps {
     

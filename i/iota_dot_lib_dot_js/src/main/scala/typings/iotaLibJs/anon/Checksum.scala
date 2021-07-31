@@ -2,21 +2,19 @@ package typings.iotaLibJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checksum extends StObject {
   
-  var checksum: js.UndefOr[Boolean] = js.native
+  var checksum: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var returnAll: js.UndefOr[Boolean] = js.native
+  var returnAll: js.UndefOr[Boolean] = js.undefined
   
-  var security: js.UndefOr[typings.iotaLibJs.mod.Security] = js.native
+  var security: js.UndefOr[typings.iotaLibJs.mod.Security] = js.undefined
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object Checksum {
   

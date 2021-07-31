@@ -10,7 +10,6 @@ import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationSettingsMod {
@@ -20,9 +19,9 @@ object notificationSettingsMod {
   class NotificationSettings () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
-    def all(hasProjectIdGroupIdOptions: (`0` | `1`) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: (`0` | `1`) & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     
-    def edit(hasProjectIdGroupIdOptions: Level with (`0` | `1`) with BaseRequestOptions): js.Promise[js.Object] = js.native
+    def edit(hasProjectIdGroupIdOptions: Level & (`0` | `1`) & BaseRequestOptions): js.Promise[js.Object] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

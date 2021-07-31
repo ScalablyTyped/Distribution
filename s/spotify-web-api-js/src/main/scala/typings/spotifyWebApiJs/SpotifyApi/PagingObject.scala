@@ -2,29 +2,27 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Paging Object wrapper used for retrieving collections from the Spotify API.
   * [](https://developer.spotify.com/web-api/object-model/#paging-object)
   */
-@js.native
 trait PagingObject[T] extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var next: String = js.native
+  var next: String
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var previous: String = js.native
+  var previous: String
   
-  var total: Double = js.native
+  var total: Double
 }
 object PagingObject {
   
@@ -43,7 +41,7 @@ object PagingObject {
   }
   
   @scala.inline
-  implicit class PagingObjectMutableBuilder[Self <: PagingObject[_], T] (val x: Self with PagingObject[T]) extends AnyVal {
+  implicit class PagingObjectMutableBuilder[Self <: PagingObject[?], T] (val x: Self & PagingObject[T]) extends AnyVal {
     
     @scala.inline
     def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])

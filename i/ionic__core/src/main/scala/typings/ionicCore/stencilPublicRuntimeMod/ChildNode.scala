@@ -2,23 +2,21 @@ package typings.ionicCore.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildNode extends StObject {
   
-  var vattrs: js.UndefOr[js.Any] = js.native
+  var vattrs: js.UndefOr[js.Any] = js.undefined
   
-  var vchildren: js.UndefOr[js.Array[VNode]] = js.native
+  var vchildren: js.UndefOr[js.Array[VNode]] = js.undefined
   
-  var vkey: js.UndefOr[String | Double] = js.native
+  var vkey: js.UndefOr[String | Double] = js.undefined
   
-  var vname: js.UndefOr[String] = js.native
+  var vname: js.UndefOr[String] = js.undefined
   
-  var vtag: js.UndefOr[String | Double | js.Function] = js.native
+  var vtag: js.UndefOr[String | Double | js.Function] = js.undefined
   
-  var vtext: js.UndefOr[String] = js.native
+  var vtext: js.UndefOr[String] = js.undefined
 }
 object ChildNode {
   

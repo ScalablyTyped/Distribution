@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsResponse extends StObject {
   
   /**
     * The call returns a token. Use this token to get the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * Depending on the input, this is a list of configuration items tagged with a specific tag, or a list of tags for a specific configuration item.
     */
-  var tags: js.UndefOr[ConfigurationTagSet] = js.native
+  var tags: js.UndefOr[ConfigurationTagSet] = js.undefined
 }
 object DescribeTagsResponse {
   

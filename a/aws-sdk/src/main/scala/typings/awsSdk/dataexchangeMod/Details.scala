@@ -2,15 +2,13 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Details extends StObject {
   
-  var ImportAssetFromSignedUrlJobErrorDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.ImportAssetFromSignedUrlJobErrorDetails] = js.native
+  var ImportAssetFromSignedUrlJobErrorDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.ImportAssetFromSignedUrlJobErrorDetails] = js.undefined
   
-  var ImportAssetsFromS3JobErrorDetails: js.UndefOr[ListOfAssetSourceEntry] = js.native
+  var ImportAssetsFromS3JobErrorDetails: js.UndefOr[ListOfAssetSourceEntry] = js.undefined
 }
 object Details {
   

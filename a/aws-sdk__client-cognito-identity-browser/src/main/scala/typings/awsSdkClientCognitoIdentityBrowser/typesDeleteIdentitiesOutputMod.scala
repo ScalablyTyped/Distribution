@@ -5,24 +5,24 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesUnprocessedIdentityIdMod.
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteIdentitiesOutputMod {
   
-  @js.native
-  trait DeleteIdentitiesOutput extends OutputTypesUnion {
+  trait DeleteIdentitiesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An array of UnprocessedIdentityId objects, each of which contains an ErrorCode and IdentityId.</p>
       */
-    var UnprocessedIdentityIds: js.UndefOr[js.Array[UnmarshalledUnprocessedIdentityId]] = js.native
+    var UnprocessedIdentityIds: js.UndefOr[js.Array[UnmarshalledUnprocessedIdentityId]] = js.undefined
   }
   object DeleteIdentitiesOutput {
     

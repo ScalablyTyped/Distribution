@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.smtpapi.smtpapiStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,40 +13,42 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("smtpapi", JSImport.Namespace)
   @js.native
-  class ^ () extends Instance {
+  class ^ ()
+    extends StObject
+       with Instance {
     def this(header: Header) = this()
   }
   @JSImport("smtpapi", JSImport.Namespace)
   @js.native
-  val ^ : Constructor = js.native
+  val ^ : js.Object & Constructor = js.native
   
   @js.native
   trait Constructor
-    extends Instantiable0[Instance]
+    extends StObject
+       with Instantiable0[Instance]
        with Instantiable1[/* header */ Header, Instance]
   
-  @js.native
   trait Header extends StObject {
     
-    var asm_group_id: Double = js.native
+    var asm_group_id: Double
     
-    var category: js.Array[String] = js.native
+    var category: js.Array[String]
     
-    var filters: js.Object = js.native
+    var filters: js.Object
     
-    var ip_pool: String = js.native
+    var ip_pool: String
     
-    var section: js.Object = js.native
+    var section: js.Object
     
-    var send_at: _empty | Double = js.native
+    var send_at: _empty | Double
     
-    var send_each_at: js.Array[Double] = js.native
+    var send_each_at: js.Array[Double]
     
-    var sub: js.Object = js.native
+    var sub: js.Object
     
-    var to: js.Array[String] = js.native
+    var to: js.Array[String]
     
-    var unique_args: js.Object = js.native
+    var unique_args: js.Object
   }
   object Header {
     
@@ -165,8 +166,8 @@ object mod extends Shortcut {
     var version: String = js.native
   }
   
-  type _To = Constructor
+  type _To = js.Object & Constructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Constructor = ^
+  override def _to: js.Object & Constructor = ^
 }

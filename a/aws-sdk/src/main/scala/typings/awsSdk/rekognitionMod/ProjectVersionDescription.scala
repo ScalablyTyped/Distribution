@@ -2,71 +2,69 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectVersionDescription extends StObject {
   
   /**
     * The duration, in seconds, that the model version has been billed for training. This value is only returned if the model version has been successfully trained.
     */
-  var BillableTrainingTimeInSeconds: js.UndefOr[ULong] = js.native
+  var BillableTrainingTimeInSeconds: js.UndefOr[ULong] = js.undefined
   
   /**
     * The Unix datetime for the date and time that training started.
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.native
+  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The training results. EvaluationResult is only returned if training is successful.
     */
-  var EvaluationResult: js.UndefOr[typings.awsSdk.rekognitionMod.EvaluationResult] = js.native
+  var EvaluationResult: js.UndefOr[typings.awsSdk.rekognitionMod.EvaluationResult] = js.undefined
   
   /**
     * The location of the summary manifest. The summary manifest provides aggregate data validation results for the training and test datasets.
     */
-  var ManifestSummary: js.UndefOr[GroundTruthManifest] = js.native
+  var ManifestSummary: js.UndefOr[GroundTruthManifest] = js.undefined
   
   /**
     * The minimum number of inference units used by the model. For more information, see StartProjectVersion.
     */
-  var MinInferenceUnits: js.UndefOr[InferenceUnits] = js.native
+  var MinInferenceUnits: js.UndefOr[InferenceUnits] = js.undefined
   
   /**
     * The location where training results are saved.
     */
-  var OutputConfig: js.UndefOr[typings.awsSdk.rekognitionMod.OutputConfig] = js.native
+  var OutputConfig: js.UndefOr[typings.awsSdk.rekognitionMod.OutputConfig] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the model version. 
     */
-  var ProjectVersionArn: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectVersionArn] = js.native
+  var ProjectVersionArn: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectVersionArn] = js.undefined
   
   /**
     * The current status of the model version.
     */
-  var Status: js.UndefOr[ProjectVersionStatus] = js.native
+  var Status: js.UndefOr[ProjectVersionStatus] = js.undefined
   
   /**
     * A descriptive message for an error or warning that occurred.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.undefined
   
   /**
     * Contains information about the testing results.
     */
-  var TestingDataResult: js.UndefOr[typings.awsSdk.rekognitionMod.TestingDataResult] = js.native
+  var TestingDataResult: js.UndefOr[typings.awsSdk.rekognitionMod.TestingDataResult] = js.undefined
   
   /**
     * Contains information about the training results.
     */
-  var TrainingDataResult: js.UndefOr[typings.awsSdk.rekognitionMod.TrainingDataResult] = js.native
+  var TrainingDataResult: js.UndefOr[typings.awsSdk.rekognitionMod.TrainingDataResult] = js.undefined
   
   /**
     * The Unix date and time that training of the model ended.
     */
-  var TrainingEndTimestamp: js.UndefOr[DateTime] = js.native
+  var TrainingEndTimestamp: js.UndefOr[DateTime] = js.undefined
 }
 object ProjectVersionDescription {
   

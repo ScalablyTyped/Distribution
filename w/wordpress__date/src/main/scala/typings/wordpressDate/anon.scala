@@ -2,21 +2,19 @@ package typings.wordpressDate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AM extends StObject {
     
-    var AM: String = js.native
+    var AM: String
     
-    var PM: String = js.native
+    var PM: String
     
-    var am: String = js.native
+    var am: String
     
-    var pm: String = js.native
+    var pm: String
   }
   object AM {
     
@@ -37,16 +35,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Date extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var datetime: String = js.native
+    var datetime: String
     
-    var datetimeAbbreviated: String = js.native
+    var datetimeAbbreviated: String
     
-    var time: String = js.native
+    var time: String
   }
   object Date {
     
@@ -73,12 +70,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Future extends StObject {
     
-    var future: String = js.native
+    var future: String
     
-    var past: String = js.native
+    var past: String
   }
   object Future {
     
@@ -99,22 +95,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: String = js.native
+    var locale: String
     
-    var meridiem: AM = js.native
+    var meridiem: AM
     
-    var months: js.Array[String] = js.native
+    var months: js.Array[String]
     
-    var monthsShort: js.Array[String] = js.native
+    var monthsShort: js.Array[String]
     
-    var relative: Future = js.native
+    var relative: Future
     
-    var weekdays: js.Array[String] = js.native
+    var weekdays: js.Array[String]
     
-    var weekdaysShort: js.Array[String] = js.native
+    var weekdaysShort: js.Array[String]
   }
   object Locale {
     
@@ -170,12 +165,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: String = js.native
+    var offset: String
     
-    var string: String = js.native
+    var string: String
   }
   object Offset {
     

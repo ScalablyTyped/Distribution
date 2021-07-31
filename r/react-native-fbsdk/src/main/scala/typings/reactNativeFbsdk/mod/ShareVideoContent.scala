@@ -3,52 +3,52 @@ package typings.reactNativeFbsdk.mod
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareVideoContent extends ShareContent {
+trait ShareVideoContent
+  extends StObject
+     with ShareContent {
   
   /**
     * Common parameters for share content;
     */
-  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.native
+  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.undefined
   
   /**
     *  Description of the video.
     */
-  var contentDescription: js.UndefOr[String] = js.native
+  var contentDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the video.
     */
-  var contentTitle: js.UndefOr[String] = js.native
+  var contentTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The type of content to be shared is photo.
     */
-  var contentType: video = js.native
+  var contentType: video
   
   /**
     * URL for the content being shared.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The photo that represents the video.
     */
-  var previewPhoto: js.UndefOr[SharePhoto] = js.native
+  var previewPhoto: js.UndefOr[SharePhoto] = js.undefined
   
   /**
     * Video to be shared.
     */
-  var video: ShareVideo = js.native
+  var video: ShareVideo
 }
 object ShareVideoContent {
   
   @scala.inline
-  def apply(contentType: video, video: ShareVideo): ShareVideoContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
+  def apply(video: ShareVideo): ShareVideoContent = {
+    val __obj = js.Dynamic.literal(contentType = "video", video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareVideoContent]
   }
   

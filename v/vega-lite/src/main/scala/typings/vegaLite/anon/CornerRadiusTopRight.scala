@@ -5,133 +5,131 @@ import typings.vegaLite.vegaSchemaMod.VgValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CornerRadiusTopRight extends StObject {
   
-  var align: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var align: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var angle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var angle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var aria: js.UndefOr[`true` | SignalRef] = js.native
+  var aria: js.UndefOr[`true` | SignalRef] = js.undefined
   
-  var ariaRoleDescription: ValueScaleField = js.native
+  var ariaRoleDescription: ValueScaleField
   
-  var baseline: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var baseline: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var clip: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var clip: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var cornerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var cornerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var cornerRadiusBottomLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var cornerRadiusBottomLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var cornerRadiusBottomRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var cornerRadiusBottomRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var cornerRadiusTopLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var cornerRadiusTopLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var cornerRadiusTopRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var cornerRadiusTopRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var cursor: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var cursor: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var defined: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var defined: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var dir: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var dir: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var dx: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var dx: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var dy: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var dy: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var ellipsis: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var ellipsis: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var endAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var endAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var fill: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var fill: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var fillOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var fillOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var font: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var font: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var fontSize: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var fontSize: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var fontStyle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var fontStyle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var fontWeight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var fontWeight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var height: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var height: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var href: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var href: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var innerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var innerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var interpolate: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var interpolate: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var limit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var limit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var opacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var opacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var orient: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var orient: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var outerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var outerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var path: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var path: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var radius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var radius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var scaleX: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var scaleX: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var scaleY: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var scaleY: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var shape: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var shape: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var size: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var size: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var startAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var startAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var stroke: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var stroke: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeCap: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeCap: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeDash: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeDash: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeDashOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeDashOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeForeground: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeForeground: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeJoin: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeJoin: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeMiterLimit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeMiterLimit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var strokeWidth: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var strokeWidth: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var tension: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var tension: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var text: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var text: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var theta: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var theta: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var tooltip: VgValueRef | js.Array[VgValueRefteststringundef] | Signal = js.native
+  var tooltip: VgValueRef | js.Array[VgValueRefteststringundef] | Signal
   
-  var url: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var url: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var width: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var width: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var x: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var x: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var x2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var x2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var xc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var xc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var y: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var y: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var y2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var y2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   
-  var yc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+  var yc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
 }
 object CornerRadiusTopRight {
   

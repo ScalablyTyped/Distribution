@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,28 +11,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * They mainly differ in how the anchor is specified.
   */
-@js.native
-trait ResourceId extends XResourceId {
+trait ResourceId
+  extends StObject
+     with XResourceId {
   
   /**
     * Create a resource id that has no anchor.
     *
     * This constructor can be used to create resource ids for panes.
     */
-  def create(sResourceURL: String): Unit = js.native
+  def create(sResourceURL: String): Unit
   
   /** Create an empty resource id. It does not specify a specific resource but describes the absence of one. */
-  def createEmpty(): Unit = js.native
+  def createEmpty(): Unit
   
   /** Create a resource id for an anchor that is given as {@link XResourceId} object. This is the most general of the constructor variants. */
-  def createWithAnchor(sResourceURL: String, xAnchor: XResourceId): Unit = js.native
+  def createWithAnchor(sResourceURL: String, xAnchor: XResourceId): Unit
   
   /**
     * Create a resource id for a resource that is bound to an anchor that can be specified by a single URL.
     *
     * This constructor can be used to create resources ids for views where the anchor is a pane.
     */
-  def createWithAnchorURL(sResourceURL: String, sAnchorURL: String): Unit = js.native
+  def createWithAnchorURL(sResourceURL: String, sAnchorURL: String): Unit
 }
 object ResourceId {
   

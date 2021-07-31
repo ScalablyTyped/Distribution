@@ -2,21 +2,21 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Lane extends BaseElement {
+trait Lane
+  extends StObject
+     with BaseElement {
   
-  var childLaneSet: LaneSet = js.native
+  var childLaneSet: LaneSet
   
-  var flowNodeRef: js.Array[FlowNode] = js.native
+  var flowNodeRef: js.Array[FlowNode]
   
-  var name: String = js.native
+  var name: String
   
-  var partitionElement: BaseElement = js.native
+  var partitionElement: BaseElement
   
-  var partitionElementRef: BaseElement = js.native
+  var partitionElementRef: BaseElement
 }
 object Lane {
   

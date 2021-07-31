@@ -6,7 +6,6 @@ import typings.react.mod.ComponentType
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,35 +25,34 @@ object mod {
     def onEvent(): Unit = js.native
   }
   
-  @js.native
   trait ScrollspyProps extends StObject {
     
     // ClassName attribute to be passed to the generated <ul /> element
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     // HTML tag for Scrollspy component if you want to use other than ul
-    var componentTag: js.UndefOr[String | ComponentType[js.Object]] = js.native
+    var componentTag: js.UndefOr[String | ComponentType[js.Object]] = js.undefined
     
     // Class name that apply to the navigation element paired with the content element in viewport
-    var currentClassName: String = js.native
+    var currentClassName: String
     
     // Array of target element IDs
-    var items: js.Array[String] = js.native
+    var items: js.Array[String]
     
     // Offset value that adjusts to determine the elements are in the viewport
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     // Function to be executed when the active item has been updated
-    var onUpdate: js.UndefOr[js.Function1[/* item */ HTMLElement, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* item */ HTMLElement, Unit]] = js.undefined
     
     // Selector for the element of scrollable container that can be used with querySelector
-    var rootEl: js.UndefOr[String] = js.native
+    var rootEl: js.UndefOr[String] = js.undefined
     
     // Class name that apply to the navigation elements that have been scrolled past
-    var scrolledPastClassName: js.UndefOr[String] = js.native
+    var scrolledPastClassName: js.UndefOr[String] = js.undefined
     
     // Style attribute to be passed to the generated <ul /> element
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ScrollspyProps {
     

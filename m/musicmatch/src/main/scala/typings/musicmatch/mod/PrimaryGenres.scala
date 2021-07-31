@@ -3,13 +3,11 @@ package typings.musicmatch.mod
 import typings.musicmatch.anon.Musicgenre
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrimaryGenres extends StObject {
   
-  var music_genre_list: js.Array[Musicgenre] = js.native
+  var music_genre_list: js.Array[Musicgenre]
 }
 object PrimaryGenres {
   

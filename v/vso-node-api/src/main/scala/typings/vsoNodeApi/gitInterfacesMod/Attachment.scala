@@ -4,56 +4,54 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
   /**
     * Links to other related objects.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The person that uploaded this attachment.
     */
-  var author: IdentityRef = js.native
+  var author: IdentityRef
   
   /**
     * Content hash of on-disk representation of file content. Its calculated by the server by using SHA1 hash function.
     */
-  var contentHash: String = js.native
+  var contentHash: String
   
   /**
     * The time the attachment was uploaded.
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * The description of the attachment.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The display name of the attachment. Can't be null or empty.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Id of the attachment.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Extended properties.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * The url to download the content of the attachment.
     */
-  var url: String = js.native
+  var url: String
 }
 object Attachment {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec extends StObject {
   
   /** Must be specified if type is `CATEGORICAL`. The list of possible categories. */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec {
   

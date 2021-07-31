@@ -3,16 +3,15 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.MARK_EVENTS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkEvent
-  extends SharedEventProperties
+  extends StObject
+     with SharedEventProperties
      with Event {
   
   @JSName("ph")
-  var ph_MarkEvent: MARK_EVENTS = js.native
+  var ph_MarkEvent: MARK_EVENTS
 }
 object MarkEvent {
   

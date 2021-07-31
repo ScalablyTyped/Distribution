@@ -1,11 +1,9 @@
 package typings.figma.mod.global
 
-import typings.figma.figmaStrings.AUTO
 import typings.figma.figmaStrings.PERCENT
 import typings.figma.figmaStrings.PIXELS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -16,8 +14,8 @@ trait LineHeight extends StObject
 object LineHeight {
   
   @scala.inline
-  def `0`(unit: AUTO): typings.figma.anon.`0` = {
-    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
+  def `0`(): typings.figma.anon.`0` = {
+    val __obj = js.Dynamic.literal(unit = "AUTO")
     __obj.asInstanceOf[typings.figma.anon.`0`]
   }
   

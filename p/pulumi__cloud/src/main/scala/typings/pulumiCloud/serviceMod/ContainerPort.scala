@@ -2,21 +2,19 @@ package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerPort extends StObject {
   
   /**
     * Whether the port should be exposed externally.  Defaults to `false`.
     */
-  var external: js.UndefOr[Boolean] = js.native
+  var external: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The incoming port where the service exposes the endpoint.
     */
-  var port: Double = js.native
+  var port: Double
   
   /**
     * The protocol to use for exposing the service:
@@ -25,12 +23,12 @@ trait ContainerPort extends StObject {
     * * `http`: Expose HTTP externally and to the container.
     * * `https`: Expose HTTPS externally and HTTP to the container.
     */
-  var protocol: js.UndefOr[ContainerProtocol] = js.native
+  var protocol: js.UndefOr[ContainerProtocol] = js.undefined
   
   /**
     * The target port on the backing container.  Defaults to the value of [port].
     */
-  var targetPort: js.UndefOr[Double] = js.native
+  var targetPort: js.UndefOr[Double] = js.undefined
 }
 object ContainerPort {
   

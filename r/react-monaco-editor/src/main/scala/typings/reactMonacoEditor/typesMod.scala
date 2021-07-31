@@ -10,7 +10,6 @@ import typings.reactMonacoEditor.anon.TypeofmonacoEditor
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -31,44 +30,45 @@ object typesMod {
   
   type EditorWillMount = js.Function1[/* monaco */ TypeofmonacoEditor, Unit | EditorConstructionOptions]
   
-  @js.native
-  trait MonacoDiffEditorProps extends MonacoEditorBaseProps {
+  trait MonacoDiffEditorProps
+    extends StObject
+       with MonacoEditorBaseProps {
     
     /**
       * An event emitted when the editor has been mounted (similar to componentDidMount of React).
       */
-    var editorDidMount: js.UndefOr[DiffEditorDidMount] = js.native
+    var editorDidMount: js.UndefOr[DiffEditorDidMount] = js.undefined
     
     /**
       * An event emitted before the editor mounted (similar to componentWillMount of React).
       */
-    var editorWillMount: js.UndefOr[DiffEditorWillMount] = js.native
+    var editorWillMount: js.UndefOr[DiffEditorWillMount] = js.undefined
     
     /**
       * An event emitted when the content of the current model has changed.
       */
-    var onChange: js.UndefOr[DiffChangeHandler] = js.native
+    var onChange: js.UndefOr[DiffChangeHandler] = js.undefined
     
     /**
       * Refer to Monaco interface {monaco.editor.IDiffEditorConstructionOptions}.
       */
-    var options: js.UndefOr[IDiffEditorConstructionOptions] = js.native
+    var options: js.UndefOr[IDiffEditorConstructionOptions] = js.undefined
     
     /**
       * The original value to compare against.
       */
-    var original: js.UndefOr[String] = js.native
+    var original: js.UndefOr[String] = js.undefined
     
     /**
       * Refer to Monaco interface {monaco.editor.IEditorOverrideServices}.
       */
-    var overrideServices: js.UndefOr[IEditorOverrideServices] = js.native
+    var overrideServices: js.UndefOr[IEditorOverrideServices] = js.undefined
     
     /**
       * Value of the auto created model in the editor.
       * If you specify value property, the component behaves in controlled mode. Otherwise, it behaves in uncontrolled mode.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object MonacoDiffEditorProps {
     
@@ -125,35 +125,34 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MonacoEditorBaseProps extends StObject {
     
     /**
       * The initial value of the auto created model in the editor.
       */
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     /**
       * Height of editor. Defaults to 500.
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The initial language of the auto created model in the editor. Defaults to 'javascript'.
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * Theme to be used for rendering.
       * The current out-of-the-box available themes are: 'vs' (default), 'vs-dark', 'hc-black'.
       * You can create custom themes via `monaco.editor.defineTheme`.
       */
-    var theme: js.UndefOr[String | Null] = js.native
+    var theme: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Width of editor. Defaults to 100%.
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object MonacoEditorBaseProps {
     
@@ -201,40 +200,41 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait MonacoEditorProps extends MonacoEditorBaseProps {
+  trait MonacoEditorProps
+    extends StObject
+       with MonacoEditorBaseProps {
     
     /**
       * An event emitted when the editor has been mounted (similar to componentDidMount of React).
       */
-    var editorDidMount: js.UndefOr[EditorDidMount] = js.native
+    var editorDidMount: js.UndefOr[EditorDidMount] = js.undefined
     
     /**
       * An event emitted before the editor mounted (similar to componentWillMount of React).
       */
-    var editorWillMount: js.UndefOr[EditorWillMount] = js.native
+    var editorWillMount: js.UndefOr[EditorWillMount] = js.undefined
     
     /**
       * An event emitted when the content of the current model has changed.
       */
-    var onChange: js.UndefOr[ChangeHandler] = js.native
+    var onChange: js.UndefOr[ChangeHandler] = js.undefined
     
     /**
       * Refer to Monaco interface {monaco.editor.IStandaloneEditorConstructionOptions}.
       */
-    var options: js.UndefOr[IStandaloneEditorConstructionOptions] = js.native
+    var options: js.UndefOr[IStandaloneEditorConstructionOptions] = js.undefined
     
     /**
       * Refer to Monaco interface {monaco.editor.IEditorOverrideServices}.
       */
-    var overrideServices: js.UndefOr[IEditorOverrideServices] = js.native
+    var overrideServices: js.UndefOr[IEditorOverrideServices] = js.undefined
     
     /**
       * Value of the auto created model in the editor.
       * If you specify `null` or `undefined` for this property, the component behaves in uncontrolled mode.
       * Otherwise, it behaves in controlled mode.
       */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
   }
   object MonacoEditorProps {
     

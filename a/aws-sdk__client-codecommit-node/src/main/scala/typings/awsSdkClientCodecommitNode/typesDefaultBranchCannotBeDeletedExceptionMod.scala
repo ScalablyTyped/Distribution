@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.deleteBranchExceptionsUnionMod.DeleteBranchExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDefaultBranchCannotBeDeletedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DefaultBranchCannotBeDeletedExceptionDetails> * / any */ @js.native
-  trait DefaultBranchCannotBeDeletedException extends DeleteBranchExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_DefaultBranchCannotBeDeletedExceptionDetails> * / any */ trait DefaultBranchCannotBeDeletedException
+    extends StObject
+       with DeleteBranchExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.DefaultBranchCannotBeDeletedException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.DefaultBranchCannotBeDeletedException
   }
   object DefaultBranchCannotBeDeletedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.DefaultBranchCannotBeDeletedException
-    ): DefaultBranchCannotBeDeletedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): DefaultBranchCannotBeDeletedException = {
+      val __obj = js.Dynamic.literal(name = "DefaultBranchCannotBeDeletedException")
       __obj.asInstanceOf[DefaultBranchCannotBeDeletedException]
     }
     
@@ -34,6 +32,5 @@ object typesDefaultBranchCannotBeDeletedExceptionMod {
     }
   }
   
-  @js.native
   trait DefaultBranchCannotBeDeletedExceptionDetails extends StObject
 }

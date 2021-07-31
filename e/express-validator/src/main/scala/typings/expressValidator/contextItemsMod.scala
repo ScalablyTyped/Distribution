@@ -5,7 +5,6 @@ import typings.expressValidator.baseMod.StandardValidator
 import typings.expressValidator.validationChainMod.ValidationChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextItemsMod {
@@ -36,6 +35,6 @@ object contextItemsMod {
   class StandardValidation protected ()
     extends typings.expressValidator.standardValidationMod.StandardValidation {
     def this(validator: StandardValidator, negated: Boolean) = this()
-    def this(validator: StandardValidator, negated: Boolean, options: js.Array[_]) = this()
+    def this(validator: StandardValidator, negated: Boolean, options: js.Array[js.Any]) = this()
   }
 }

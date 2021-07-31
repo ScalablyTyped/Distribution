@@ -3,87 +3,85 @@ package typings.stacktraceJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StackTrace {
   
   type SourceCache = StringDictionary[String | js.Promise[String]]
   
-  @js.native
   trait StackFrame extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var columnNumber: js.UndefOr[Double] = js.native
+    var columnNumber: js.UndefOr[Double] = js.undefined
     
-    var evalOrigin: js.UndefOr[StackFrame] = js.native
+    var evalOrigin: js.UndefOr[StackFrame] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
-    def getArgs(): js.Array[_] = js.native
+    def getArgs(): js.Array[js.Any]
     
-    def getColumnNumber(): Double = js.native
+    def getColumnNumber(): Double
     
-    def getEvalOrigin(): StackFrame = js.native
+    def getEvalOrigin(): StackFrame
     
-    def getFileName(): String = js.native
+    def getFileName(): String
     
-    def getFunctionName(): String = js.native
+    def getFunctionName(): String
     
-    def getIsConstructor(): Boolean = js.native
+    def getIsConstructor(): Boolean
     
-    def getIsEval(): Boolean = js.native
+    def getIsEval(): Boolean
     
-    def getIsNative(): Boolean = js.native
+    def getIsNative(): Boolean
     
-    def getIsTopLevel(): Boolean = js.native
+    def getIsTopLevel(): Boolean
     
-    def getLineNumber(): Double = js.native
+    def getLineNumber(): Double
     
-    def getSource(): String = js.native
+    def getSource(): String
     
-    var isConstructor: js.UndefOr[Boolean] = js.native
+    var isConstructor: js.UndefOr[Boolean] = js.undefined
     
-    var isEval: js.UndefOr[Boolean] = js.native
+    var isEval: js.UndefOr[Boolean] = js.undefined
     
-    var isNative: js.UndefOr[Boolean] = js.native
+    var isNative: js.UndefOr[Boolean] = js.undefined
     
-    var isTopLevel: js.UndefOr[Boolean] = js.native
+    var isTopLevel: js.UndefOr[Boolean] = js.undefined
     
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
     
-    def setArgs(): Unit = js.native
+    def setArgs(): Unit
     
-    def setColumnNumber(): Unit = js.native
+    def setColumnNumber(): Unit
     
-    def setEvalOrigin(): Unit = js.native
+    def setEvalOrigin(): Unit
     
-    def setFileName(): Unit = js.native
+    def setFileName(): Unit
     
-    def setFunctionName(): Unit = js.native
+    def setFunctionName(): Unit
     
-    def setIsConstructor(): Unit = js.native
+    def setIsConstructor(): Unit
     
-    def setIsEval(): Unit = js.native
+    def setIsEval(): Unit
     
-    def setIsNative(): Unit = js.native
+    def setIsNative(): Unit
     
-    def setIsTopLevel(): Unit = js.native
+    def setIsTopLevel(): Unit
     
-    def setLineNumber(): Unit = js.native
+    def setLineNumber(): Unit
     
-    def setSource(): Unit = js.native
+    def setSource(): Unit
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object StackFrame {
     
     @scala.inline
     def apply(
-      getArgs: () => js.Array[_],
+      getArgs: () => js.Array[js.Any],
       getColumnNumber: () => Double,
       getEvalOrigin: () => StackFrame,
       getFileName: () => String,
@@ -114,7 +112,7 @@ object StackTrace {
     implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -147,7 +145,7 @@ object StackTrace {
       def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
       @scala.inline
-      def setGetArgs(value: () => js.Array[_]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      def setGetArgs(value: () => js.Array[js.Any]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetColumnNumber(value: () => Double): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
@@ -250,14 +248,13 @@ object StackTrace {
     }
   }
   
-  @js.native
   trait StackTraceOptions extends StObject {
     
-    var filter: js.UndefOr[js.Function1[/* stackFrame */ StackFrame, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* stackFrame */ StackFrame, Boolean]] = js.undefined
     
-    var offline: js.UndefOr[Boolean] = js.native
+    var offline: js.UndefOr[Boolean] = js.undefined
     
-    var sourceCache: js.UndefOr[SourceCache] = js.native
+    var sourceCache: js.UndefOr[SourceCache] = js.undefined
   }
   object StackTraceOptions {
     

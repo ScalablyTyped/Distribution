@@ -4,92 +4,90 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layer extends StObject {
   
   /**
     * Transform anchor point X, absent if no transform specified
     */
-  var anchorX: js.UndefOr[Double] = js.native
+  var anchorX: js.UndefOr[Double] = js.undefined
   
   /**
     * Transform anchor point Y, absent if no transform specified
     */
-  var anchorY: js.UndefOr[Double] = js.native
+  var anchorY: js.UndefOr[Double] = js.undefined
   
   /**
     * Transform anchor point Z, absent if no transform specified
     */
-  var anchorZ: js.UndefOr[Double] = js.native
+  var anchorZ: js.UndefOr[Double] = js.undefined
   
   /**
     * The backend id for the node associated with this layer.
     */
-  var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * Indicates whether this layer hosts any content, rather than being used for
     * transform/scrolling purposes only.
     */
-  var drawsContent: Boolean = js.native
+  var drawsContent: Boolean
   
   /**
     * Layer height.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Set if layer is not visible.
     */
-  var invisible: js.UndefOr[Boolean] = js.native
+  var invisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The unique id for this layer.
     */
-  var layerId: LayerId = js.native
+  var layerId: LayerId
   
   /**
     * Offset from parent layer, X coordinate.
     */
-  var offsetX: Double = js.native
+  var offsetX: Double
   
   /**
     * Offset from parent layer, Y coordinate.
     */
-  var offsetY: Double = js.native
+  var offsetY: Double
   
   /**
     * Indicates how many time this layer has painted.
     */
-  var paintCount: integer = js.native
+  var paintCount: integer
   
   /**
     * The id of parent (not present for root).
     */
-  var parentLayerId: js.UndefOr[LayerId] = js.native
+  var parentLayerId: js.UndefOr[LayerId] = js.undefined
   
   /**
     * Rectangles scrolling on main thread only.
     */
-  var scrollRects: js.UndefOr[js.Array[ScrollRect]] = js.native
+  var scrollRects: js.UndefOr[js.Array[ScrollRect]] = js.undefined
   
   /**
     * Sticky position constraint information
     */
-  var stickyPositionConstraint: js.UndefOr[StickyPositionConstraint] = js.native
+  var stickyPositionConstraint: js.UndefOr[StickyPositionConstraint] = js.undefined
   
   /**
     * Transformation matrix for layer, default is identity matrix
     */
-  var transform: js.UndefOr[js.Array[Double]] = js.native
+  var transform: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Layer width.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object Layer {
   

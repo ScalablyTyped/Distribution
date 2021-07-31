@@ -2,25 +2,23 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var cacheSizeBytes: js.UndefOr[Double] = js.native
+  var cacheSizeBytes: js.UndefOr[Double] = js.undefined
   
-  var experimentalAutoDetectLongPolling: js.UndefOr[Boolean] = js.native
+  var experimentalAutoDetectLongPolling: js.UndefOr[Boolean] = js.undefined
   
-  var experimentalForceLongPolling: js.UndefOr[Boolean] = js.native
+  var experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.native
+  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined
   
-  var merge: js.UndefOr[Boolean] = js.native
+  var merge: js.UndefOr[Boolean] = js.undefined
   
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
 }
 object Settings {
   

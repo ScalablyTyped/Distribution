@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/alertcenter/v1beta1", "alertcenter_v1beta1.Resource$Alerts$Feedback")
@@ -33,7 +32,7 @@ class ResourceAlertsFeedback protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaAlertFeedback] = js.native
   def create(callback: BodyResponseCallback[SchemaAlertFeedback]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlertFeedback] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAlertFeedback] = js.native
   def create(params: ParamsResourceAlertsFeedbackCreate): GaxiosPromise[SchemaAlertFeedback] = js.native
   def create(params: ParamsResourceAlertsFeedbackCreate, callback: BodyResponseCallback[SchemaAlertFeedback]): Unit = js.native
   def create(
@@ -65,7 +64,7 @@ class ResourceAlertsFeedback protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAlertFeedbackResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAlertFeedbackResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAlertFeedbackResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAlertFeedbackResponse] = js.native
   def list(params: ParamsResourceAlertsFeedbackList): GaxiosPromise[SchemaListAlertFeedbackResponse] = js.native
   def list(
     params: ParamsResourceAlertsFeedbackList,

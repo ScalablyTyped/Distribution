@@ -2,12 +2,12 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Page[D, P]
-  extends Component[D, P, js.Array[js.Any]] {
+  extends StObject
+     with Component[D, P, js.Array[js.Any]] {
   
   /**
     * 强制更新

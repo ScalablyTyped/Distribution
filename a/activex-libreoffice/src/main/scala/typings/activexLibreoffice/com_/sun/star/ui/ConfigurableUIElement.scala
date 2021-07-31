@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configurable user interface elements are: menubarpopupmenutoolbarstatusbar
   * @since OOo 2.0
   */
-@js.native
 trait ConfigurableUIElement
-  extends UIElement
+  extends StObject
+     with UIElement
      with XUIElementSettings {
   
   /**
@@ -29,10 +28,10 @@ trait ConfigurableUIElement
     * this property is changed, afterwards {@link XUIElementSettings.updateSettings()} must be called so the user interface element tries to retrieve its
     * settings from the new user interface configuration manager.
     */
-  var ConfigurationSource: XUIConfigurationManager = js.native
+  var ConfigurationSource: XUIConfigurationManager
   
   /** specifies if the user interface element stores changes of its structure to its creator source defined by the property {@link ConfigurationSource} . */
-  var Persistent: Boolean = js.native
+  var Persistent: Boolean
 }
 object ConfigurableUIElement {
   
@@ -49,7 +48,7 @@ object ConfigurableUIElement {
     dispose: () => Unit,
     getRealInterface: () => XInterface,
     getSettings: Boolean => XIndexAccess,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

@@ -3,7 +3,6 @@ package typings.matterJs.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Mouse")
@@ -33,23 +32,22 @@ class Mouse () extends StObject {
 /* static members */
 object Mouse {
   
-  @JSImport("matter-js", "Mouse.clearSourceEvents")
+  @JSImport("matter-js", "Mouse")
   @js.native
-  def clearSourceEvents(mouse: Mouse): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("matter-js", "Mouse.create")
-  @js.native
-  def create(element: HTMLElement): Mouse = js.native
+  @scala.inline
+  def clearSourceEvents(mouse: Mouse): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSourceEvents")(mouse.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("matter-js", "Mouse.setElement")
-  @js.native
-  def setElement(mouse: Mouse, element: HTMLElement): Unit = js.native
+  @scala.inline
+  def create(element: HTMLElement): Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[Mouse]
   
-  @JSImport("matter-js", "Mouse.setOffset")
-  @js.native
-  def setOffset(mouse: Mouse, offset: Vector): Unit = js.native
+  @scala.inline
+  def setElement(mouse: Mouse, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setElement")(mouse.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("matter-js", "Mouse.setScale")
-  @js.native
-  def setScale(mouse: Mouse, scale: Vector): Unit = js.native
+  @scala.inline
+  def setOffset(mouse: Mouse, offset: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOffset")(mouse.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setScale(mouse: Mouse, scale: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScale")(mouse.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

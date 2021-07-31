@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomTimeZone extends TimeZoneBase {
+trait CustomTimeZone
+  extends StObject
+     with TimeZoneBase {
   
   /**
     * The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes. Time zones that are
     * ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.
     */
-  var bias: js.UndefOr[NullableOption[Double]] = js.native
+  var bias: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Specifies when the time zone switches from standard time to daylight saving time.
-  var daylightOffset: js.UndefOr[NullableOption[DaylightTimeZoneOffset]] = js.native
+  var daylightOffset: js.UndefOr[NullableOption[DaylightTimeZoneOffset]] = js.undefined
   
   // Specifies when the time zone switches from daylight saving time to standard time.
-  var standardOffset: js.UndefOr[NullableOption[StandardTimeZoneOffset]] = js.native
+  var standardOffset: js.UndefOr[NullableOption[StandardTimeZoneOffset]] = js.undefined
 }
 object CustomTimeZone {
   

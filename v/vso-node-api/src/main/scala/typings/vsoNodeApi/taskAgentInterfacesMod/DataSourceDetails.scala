@@ -3,19 +3,17 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceDetails extends StObject {
   
-  var dataSourceName: String = js.native
+  var dataSourceName: String
   
-  var dataSourceUrl: String = js.native
+  var dataSourceUrl: String
   
-  var parameters: StringDictionary[String] = js.native
+  var parameters: StringDictionary[String]
   
-  var resultSelector: String = js.native
+  var resultSelector: String
 }
 object DataSourceDetails {
   

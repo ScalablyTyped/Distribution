@@ -3,7 +3,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * was active when a value was added. They may contain further information,
   * such as a example values and timestamps, origin, etc.
   */
-@js.native
 trait SchemaExemplar extends StObject {
   
   /**
@@ -24,18 +22,18 @@ trait SchemaExemplar extends StObject {
     * may be only a single attachment of any given message type in a single
     * exemplar, and this is enforced by the system.
     */
-  var attachments: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var attachments: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
   
   /**
     * The observation (sampling) time of the above value.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the exemplar point. This value determines to which bucket the
     * exemplar belongs.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SchemaExemplar {
   
@@ -49,7 +47,7 @@ object SchemaExemplar {
   implicit class SchemaExemplarMutableBuilder[Self <: SchemaExemplar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAttachments(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    def setAttachments(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)

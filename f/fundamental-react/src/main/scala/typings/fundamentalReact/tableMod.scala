@@ -11,7 +11,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -19,12 +18,11 @@ object tableMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Table/Table.TableProps> & {  displayName :'Table'} */
   object default {
     
-    @JSImport("fundamental-react/lib/Table/Table", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[TableProps]): ReactElement | Null = js.native
-    @JSImport("fundamental-react/lib/Table/Table", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[TableProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[TableProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[TableProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("fundamental-react/lib/Table/Table", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -54,37 +52,37 @@ object tableMod {
     def propTypes_=(x: js.UndefOr[WeakValidationMapTablePro]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait TableProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.Array[String | ReactNode] = js.native
+    var headers: js.Array[String | ReactNode]
     
-    var tableBodyClassName: js.UndefOr[String] = js.native
+    var tableBodyClassName: js.UndefOr[String] = js.undefined
     
-    var tableBodyProps: js.UndefOr[js.Any] = js.native
+    var tableBodyProps: js.UndefOr[js.Any] = js.undefined
     
     var tableBodyRowProps: js.UndefOr[
         StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
-      ] = js.native
+      ] = js.undefined
     
-    var tableCellClassName: js.UndefOr[String] = js.native
+    var tableCellClassName: js.UndefOr[String] = js.undefined
     
-    var tableData: js.UndefOr[js.Array[RowData]] = js.native
+    var tableData: js.UndefOr[js.Array[RowData]] = js.undefined
     
-    var tableHeaderClassName: js.UndefOr[String] = js.native
+    var tableHeaderClassName: js.UndefOr[String] = js.undefined
     
-    var tableHeaderProps: js.UndefOr[js.Any] = js.native
+    var tableHeaderProps: js.UndefOr[js.Any] = js.undefined
     
-    var tableHeaderRowClassName: js.UndefOr[String] = js.native
+    var tableHeaderRowClassName: js.UndefOr[String] = js.undefined
     
-    var tableHeaderRowProps: js.UndefOr[js.Any] = js.native
+    var tableHeaderRowProps: js.UndefOr[js.Any] = js.undefined
     
-    var tableRowClassName: js.UndefOr[String] = js.native
+    var tableRowClassName: js.UndefOr[String] = js.undefined
   }
   object TableProps {
     

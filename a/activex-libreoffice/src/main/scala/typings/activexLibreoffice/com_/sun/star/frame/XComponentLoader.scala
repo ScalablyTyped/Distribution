@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.text.TextDocument
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XFrame
   */
 @js.native
-trait XComponentLoader extends XInterface {
+trait XComponentLoader
+  extends StObject
+     with XInterface {
   
   /**
     * loads a component specified by an URL into the specified new or existing frame.

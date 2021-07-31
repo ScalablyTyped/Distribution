@@ -2,25 +2,25 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXmlCharacterData extends IXmlNode {
+trait IXmlCharacterData
+  extends StObject
+     with IXmlNode {
   
-  def appendData(data: String): Unit = js.native
+  def appendData(data: String): Unit
   
-  var data: String = js.native
+  var data: String
   
-  def deleteData(offset: Double, count: Double): Unit = js.native
+  def deleteData(offset: Double, count: Double): Unit
   
-  def insertData(offset: Double, data: String): Unit = js.native
+  def insertData(offset: Double, data: String): Unit
   
-  var length: Double = js.native
+  var length: Double
   
-  def replaceData(offset: Double, count: Double, data: String): Unit = js.native
+  def replaceData(offset: Double, count: Double, data: String): Unit
   
-  def substringData(offset: Double, count: Double): String = js.native
+  def substringData(offset: Double, count: Double): String
 }
 object IXmlCharacterData {
   

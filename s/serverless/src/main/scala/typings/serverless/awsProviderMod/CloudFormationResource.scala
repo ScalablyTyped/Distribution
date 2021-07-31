@@ -3,19 +3,17 @@ package typings.serverless.awsProviderMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFormationResource extends StObject {
   
-  var DeletionPolicy: js.UndefOr[String] = js.native
+  var DeletionPolicy: js.UndefOr[String] = js.undefined
   
-  var DependsOn: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+  var DependsOn: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
   
-  var Properties: StringDictionary[js.Any] = js.native
+  var Properties: StringDictionary[js.Any]
   
-  var Type: String = js.native
+  var Type: String
 }
 object CloudFormationResource {
   

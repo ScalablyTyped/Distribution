@@ -5,7 +5,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesystemMod {
@@ -21,9 +20,27 @@ object filesystemMod {
     * @param options.createTmp Create a directory for `os.tmpdir()` (defaults
     *                          to `true`).
     */
-  class ^ () extends FileSystem {
+  class ^ ()
+    extends StObject
+       with FileSystem {
     def this(options: Options) = this()
+    
+    /**
+      * Get a file system item.
+      *
+      * @param filepath Path to item.
+      * @return The item (or null if not found).
+      */
+    /* CompleteClass */
+    override def getItem(filepath: String): typings.mockFs.itemMod.^ = js.native
+    
+    /** Get the root directory. */
+    /* CompleteClass */
+    override def getRoot(): typings.mockFs.directoryMod.^ = js.native
   }
+  @JSImport("mock-fs/lib/filesystem", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Configure a mock file system.
@@ -37,18 +54,14 @@ object filesystemMod {
     * @return Mock file system.
     */
   /* static member */
-  @JSImport("mock-fs/lib/filesystem", "create")
-  @js.native
-  def create(): FileSystem = js.native
-  @JSImport("mock-fs/lib/filesystem", "create")
-  @js.native
-  def create(paths: js.UndefOr[scala.Nothing], options: Options): FileSystem = js.native
-  @JSImport("mock-fs/lib/filesystem", "create")
-  @js.native
-  def create(paths: DirectoryItems): FileSystem = js.native
-  @JSImport("mock-fs/lib/filesystem", "create")
-  @js.native
-  def create(paths: DirectoryItems, options: Options): FileSystem = js.native
+  @scala.inline
+  def create(): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FileSystem]
+  @scala.inline
+  def create(paths: Unit, options: Options): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+  @scala.inline
+  def create(paths: DirectoryItems): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(paths.asInstanceOf[js.Any]).asInstanceOf[FileSystem]
+  @scala.inline
+  def create(paths: DirectoryItems, options: Options): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
   
   /**
     * Generate a factory for new symbolic links.
@@ -57,12 +70,10 @@ object filesystemMod {
     * @return Factory that creates a new symbolic link.
     */
   /* static member */
-  @JSImport("mock-fs/lib/filesystem", "directory")
-  @js.native
-  def directory(): js.Function0[typings.mockFs.directoryMod.^] = js.native
-  @JSImport("mock-fs/lib/filesystem", "directory")
-  @js.native
-  def directory(config: DirectoryOptions): js.Function0[typings.mockFs.directoryMod.^] = js.native
+  @scala.inline
+  def directory(): js.Function0[typings.mockFs.directoryMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("directory")().asInstanceOf[js.Function0[typings.mockFs.directoryMod.^]]
+  @scala.inline
+  def directory(config: DirectoryOptions): js.Function0[typings.mockFs.directoryMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("directory")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.mockFs.directoryMod.^]]
   
   /**
     * Generate a factory for new files.
@@ -71,16 +82,13 @@ object filesystemMod {
     * @return Factory that creates a new file.
     */
   /* static member */
-  @JSImport("mock-fs/lib/filesystem", "file")
-  @js.native
-  def file(): js.Function0[typings.mockFs.fileMod.^] = js.native
-  @JSImport("mock-fs/lib/filesystem", "file")
-  @js.native
-  def file(config: FileOptions): js.Function0[typings.mockFs.fileMod.^] = js.native
+  @scala.inline
+  def file(): js.Function0[typings.mockFs.fileMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[js.Function0[typings.mockFs.fileMod.^]]
+  @scala.inline
+  def file(config: FileOptions): js.Function0[typings.mockFs.fileMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.mockFs.fileMod.^]]
   
-  @JSImport("mock-fs/lib/filesystem", "getPathParts")
-  @js.native
-  def getPathParts(filepath: String): js.Array[String] = js.native
+  @scala.inline
+  def getPathParts(filepath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathParts")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * Generate a factory for new directories.
@@ -89,16 +97,16 @@ object filesystemMod {
     * @return Factory that creates a new directory.
     */
   /* static member */
-  @JSImport("mock-fs/lib/filesystem", "symlink")
-  @js.native
-  def symlink(config: SymlinkOptions): js.Function0[typings.mockFs.symlinkMod.^] = js.native
+  @scala.inline
+  def symlink(config: SymlinkOptions): js.Function0[typings.mockFs.symlinkMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typings.mockFs.symlinkMod.^]]
   
   type DirectoryItem = String | Buffer | (js.Function0[
     typings.mockFs.fileMod.^ | typings.mockFs.directoryMod.^ | typings.mockFs.symlinkMod.^
   ]) | DirectoryItems
   
-  @js.native
-  trait DirectoryItems extends /* name */ StringDictionary[DirectoryItem]
+  trait DirectoryItems
+    extends StObject
+       with /* name */ StringDictionary[DirectoryItem]
   object DirectoryItems {
     
     @scala.inline
@@ -108,45 +116,44 @@ object filesystemMod {
     }
   }
   
-  @js.native
   trait DirectoryOptions extends StObject {
     
     /**
       * The last directory access time. Defaults to `new Date()`.
       */
-    var atime: js.UndefOr[Date] = js.native
+    var atime: js.UndefOr[Date] = js.undefined
     
     /**
       * The time of directory creation. Defaults to `new Date()`.
       */
-    var birthtime: js.UndefOr[Date] = js.native
+    var birthtime: js.UndefOr[Date] = js.undefined
     
     /**
       * The last directory change time. Defaults to `new Date()`. Updated
       * when owner or permissions change.
       */
-    var ctime: js.UndefOr[Date] = js.native
+    var ctime: js.UndefOr[Date] = js.undefined
     
     /** The group id. Defaults to `process.getgid()`. */
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
     /**
       * Directory contents. Members will generate additional files,
       * directories, or symlinks.
       */
-    var items: js.UndefOr[DirectoryItems] = js.native
+    var items: js.UndefOr[DirectoryItems] = js.undefined
     
     /** Directory mode (permission and sticky bits). Defaults to `0777`. */
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
     /**
       * The last directory modification time. Defaults to `new Date()`.
       * Updated when an item is added, removed, or renamed.
       */
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
     
     /** The user id. Defaults to `process.getuid()`. */
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
   }
   object DirectoryOptions {
     
@@ -209,43 +216,42 @@ object filesystemMod {
     }
   }
   
-  @js.native
   trait FileOptions extends StObject {
     
     /**
       * The last file access time. Defaults to `new Date()`. Updated when
       * file contents are accessed.
       */
-    var atime: js.UndefOr[Date] = js.native
+    var atime: js.UndefOr[Date] = js.undefined
     
     /**
       * The time of file creation. Defaults to `new Date()`.
       */
-    var birthtime: js.UndefOr[Date] = js.native
+    var birthtime: js.UndefOr[Date] = js.undefined
     
     /** File contents */
-    var content: js.UndefOr[String | Buffer] = js.native
+    var content: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * The last file change time. Defaults to `new Date()`. Updated when
       * file owner or permissions change.
       */
-    var ctime: js.UndefOr[Date] = js.native
+    var ctime: js.UndefOr[Date] = js.undefined
     
     /** The group id. Defaults to `process.getgid()`. */
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
     /** File mode (permission and sticky bits). Defaults to `0666`. */
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
     /**
       * The last file modification time. Defaults to `new Date()`. Updated
       * when file contents change.
       */
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
     
     /** The user id. Defaults to `process.getuid()`. */
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
   }
   object FileOptions {
     
@@ -308,7 +314,6 @@ object filesystemMod {
     }
   }
   
-  @js.native
   trait FileSystem extends StObject {
     
     /**
@@ -317,10 +322,10 @@ object filesystemMod {
       * @param filepath Path to item.
       * @return The item (or null if not found).
       */
-    def getItem(filepath: String): typings.mockFs.itemMod.^ = js.native
+    def getItem(filepath: String): typings.mockFs.itemMod.^
     
     /** Get the root directory. */
-    def getRoot(): typings.mockFs.directoryMod.^ = js.native
+    def getRoot(): typings.mockFs.directoryMod.^
   }
   object FileSystem {
     
@@ -341,14 +346,13 @@ object filesystemMod {
     }
   }
   
-  @js.native
   trait LoaderOptions extends StObject {
     
     /** File content isn't loaded until explicitly read. */
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
     /** Load all files and directories recursively. */
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
   }
   object LoaderOptions {
     
@@ -375,18 +379,17 @@ object filesystemMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Create a directory for `process.cwd()`. This is `true` by default.
       */
-    var createCwd: js.UndefOr[Boolean] = js.native
+    var createCwd: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Create a directory for `os.tmpdir()`. This is `true` by default.
       */
-    var createTmp: js.UndefOr[Boolean] = js.native
+    var createTmp: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -413,32 +416,31 @@ object filesystemMod {
     }
   }
   
-  @js.native
   trait SymlinkOptions extends StObject {
     
     /** The last symlink access time. Defaults to `new Date()`. */
-    var atime: js.UndefOr[Date] = js.native
+    var atime: js.UndefOr[Date] = js.undefined
     
     /** The time of symlink creation. Defaults to `new Date()`. */
-    var birthtime: js.UndefOr[Date] = js.native
+    var birthtime: js.UndefOr[Date] = js.undefined
     
     /** The last symlink change time. Defaults to `new Date()`. */
-    var ctime: js.UndefOr[Date] = js.native
+    var ctime: js.UndefOr[Date] = js.undefined
     
     /** The group id. Defaults to `process.getgid()`. */
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
     /** Symlink mode (permission and sticky bits). Defaults to `0666`. */
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
     /** The last symlink modification time. Defaults to `new Date()`. */
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
     
     /** Path to the source (required). */
-    var path: String = js.native
+    var path: String
     
     /** The user id. Defaults to `process.getuid()`. */
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
   }
   object SymlinkOptions {
     

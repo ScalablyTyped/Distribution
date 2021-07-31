@@ -9,24 +9,24 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-history-api-fallback-exclusions", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
-  @JSImport("connect-history-api-fallback-exclusions", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
   
+  @JSImport("connect-history-api-fallback-exclusions", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Context extends StObject {
     
-    var `match`: RegExpMatchArray = js.native
+    var `match`: RegExpMatchArray
     
-    var parsedUrl: Url = js.native
+    var parsedUrl: Url
   }
   object Context {
     
@@ -48,22 +48,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var disableDotRule: js.UndefOr[`true`] = js.native
+    var disableDotRule: js.UndefOr[`true`] = js.undefined
     
-    var exclusions: js.UndefOr[js.Array[String]] = js.native
+    var exclusions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var htmlAcceptHeaders: js.UndefOr[js.Array[String]] = js.native
+    var htmlAcceptHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var logger: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var rewrites: js.UndefOr[js.Array[Rewrite]] = js.native
+    var rewrites: js.UndefOr[js.Array[Rewrite]] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -129,12 +128,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Rewrite extends StObject {
     
-    var from: RegExp = js.native
+    var from: RegExp
     
-    var to: String | RegExp | RewriteTo = js.native
+    var to: String | RegExp | RewriteTo
   }
   object Rewrite {
     

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codeRepositoryMod {
@@ -35,6 +34,10 @@ object codeRepositoryMod {
   /* static members */
   object CodeRepository {
     
+    @JSImport("@pulumi/aws/sagemaker/codeRepository", "CodeRepository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CodeRepository resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -44,34 +47,28 @@ object codeRepositoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sagemaker/codeRepository", "CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CodeRepository = js.native
-    @JSImport("@pulumi/aws/sagemaker/codeRepository", "CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CodeRepository = js.native
-    @JSImport("@pulumi/aws/sagemaker/codeRepository", "CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CodeRepositoryState): CodeRepository = js.native
-    @JSImport("@pulumi/aws/sagemaker/codeRepository", "CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CodeRepositoryState, opts: CustomResourceOptions): CodeRepository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CodeRepository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CodeRepository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CodeRepositoryState): CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CodeRepository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CodeRepositoryState, opts: CustomResourceOptions): CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CodeRepository]
     
     /**
       * Returns true if the given object is an instance of CodeRepository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sagemaker/codeRepository", "CodeRepository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/codeRepository.CodeRepository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/codeRepository.CodeRepository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/codeRepository.CodeRepository */ Boolean]
   }
   
-  @js.native
   trait CodeRepositoryArgs extends StObject {
     
-    val codeRepositoryName: Input[String] = js.native
+    val codeRepositoryName: Input[String]
     
-    val gitConfig: Input[typings.pulumiAws.inputMod.sagemaker.CodeRepositoryGitConfig] = js.native
+    val gitConfig: Input[typings.pulumiAws.inputMod.sagemaker.CodeRepositoryGitConfig]
   }
   object CodeRepositoryArgs {
     
@@ -95,14 +92,13 @@ object codeRepositoryMod {
     }
   }
   
-  @js.native
   trait CodeRepositoryState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
-    val codeRepositoryName: js.UndefOr[Input[String]] = js.native
+    val codeRepositoryName: js.UndefOr[Input[String]] = js.undefined
     
-    val gitConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.CodeRepositoryGitConfig]] = js.native
+    val gitConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.CodeRepositoryGitConfig]] = js.undefined
   }
   object CodeRepositoryState {
     

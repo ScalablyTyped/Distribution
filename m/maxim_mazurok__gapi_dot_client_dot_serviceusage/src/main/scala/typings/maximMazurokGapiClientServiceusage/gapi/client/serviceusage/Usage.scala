@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Usage extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait Usage extends StObject {
     * Pub/Sub](https://cloud.google.com/pubsub) as a notification channel. To use Google Cloud Pub/Sub as the channel, this must be the name of a Cloud Pub/Sub topic that uses the Cloud
     * Pub/Sub topic name format documented in https://cloud.google.com/pubsub/docs/overview.
     */
-  var producerNotificationChannel: js.UndefOr[String] = js.native
+  var producerNotificationChannel: js.UndefOr[String] = js.undefined
   
   /** Requirements that must be satisfied before a consumer project can use the service. Each requirement is of the form /; for example 'serviceusage.googleapis.com/billing-enabled'. */
-  var requirements: js.UndefOr[js.Array[String]] = js.native
+  var requirements: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of usage rules that apply to individual API methods. **NOTE:** All service configuration rules follow "last one wins" order. */
-  var rules: js.UndefOr[js.Array[UsageRule]] = js.native
+  var rules: js.UndefOr[js.Array[UsageRule]] = js.undefined
 }
 object Usage {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A `Struct` object contains a value for each attribute of the SQL structured type that it represents. By default, an instance of `Struct` is valid as
   * long as the application has a reference to it.
   */
-@js.native
-trait XStruct extends XInterface {
+trait XStruct
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the SQL type name of the SQL structured type that this `Struct` object represents.
     * @returns the name of the SQL type.
     * @throws SQLException if a database access error occurs.
     */
-  val SQLTypeName: String = js.native
+  val SQLTypeName: String
   
   /**
     * produces the ordered values of the attributes of the SQL structured type that this `Struct` object represents.
@@ -34,14 +34,14 @@ trait XStruct extends XInterface {
     * @returns an array containing the ordered attribute values.
     * @throws SQLException if a database access error occurs.
     */
-  def getAttributes(typeMap: XNameAccess): SafeArray[_] = js.native
+  def getAttributes(typeMap: XNameAccess): SafeArray[js.Any]
   
   /**
     * retrieves the SQL type name of the SQL structured type that this `Struct` object represents.
     * @returns the name of the SQL type.
     * @throws SQLException if a database access error occurs.
     */
-  def getSQLTypeName(): String = js.native
+  def getSQLTypeName(): String
 }
 object XStruct {
   
@@ -49,7 +49,7 @@ object XStruct {
   def apply(
     SQLTypeName: String,
     acquire: () => Unit,
-    getAttributes: XNameAccess => SafeArray[_],
+    getAttributes: XNameAccess => SafeArray[js.Any],
     getSQLTypeName: () => String,
     queryInterface: `type` => js.Any,
     release: () => Unit
@@ -62,7 +62,7 @@ object XStruct {
   implicit class XStructMutableBuilder[Self <: XStruct] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetAttributes(value: XNameAccess => SafeArray[_]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction1(value))
+    def setGetAttributes(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))

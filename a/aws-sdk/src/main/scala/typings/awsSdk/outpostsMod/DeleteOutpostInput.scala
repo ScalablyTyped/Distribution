@@ -2,13 +2,11 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOutpostInput extends StObject {
   
-  var OutpostId: typings.awsSdk.outpostsMod.OutpostId = js.native
+  var OutpostId: typings.awsSdk.outpostsMod.OutpostId
 }
 object DeleteOutpostInput {
   

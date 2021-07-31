@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceLevelObjective extends StObject {
   
   /** A calendar period, semantically "since the start of the current ". At this time, only DAY, WEEK, FORTNIGHT, and MONTH are supported. */
-  var calendarPeriod: js.UndefOr[String] = js.native
+  var calendarPeriod: js.UndefOr[String] = js.undefined
   
   /** Name used for UI elements listing this SLO. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The fraction of service that must be good in order for this objective to be met. 0 < goal <= 0.999. */
-  var goal: js.UndefOr[Double] = js.native
+  var goal: js.UndefOr[Double] = js.undefined
   
   /** Resource name for this ServiceLevelObjective. The format is: projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID]/serviceLevelObjectives/[SLO_NAME] */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A rolling time period, semantically "in the past ". Must be an integer multiple of 1 day no larger than 30 days. */
-  var rollingPeriod: js.UndefOr[String] = js.native
+  var rollingPeriod: js.UndefOr[String] = js.undefined
   
   /** The definition of good service, used to measure and calculate the quality of the Service's performance with respect to a single aspect of service quality. */
-  var serviceLevelIndicator: js.UndefOr[ServiceLevelIndicator] = js.native
+  var serviceLevelIndicator: js.UndefOr[ServiceLevelIndicator] = js.undefined
 }
 object ServiceLevelObjective {
   

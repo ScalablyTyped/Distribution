@@ -2,33 +2,31 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Geographic region of the search.
   */
-@js.native
 trait SchemaLocationFilter extends StObject {
   
   /**
     * Optional.  The address name, such as &quot;Mountain View&quot; or
     * &quot;Bay Area&quot;.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.   The distance_in_miles is applied when the location being
     * searched for is identified as a city or smaller. When the location being
     * searched for is a state or larger, this field is ignored.
     */
-  var distanceInMiles: js.UndefOr[Double] = js.native
+  var distanceInMiles: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  The latitude and longitude of the geographic center from which
     * to search. This field&#39;s ignored if `address` is provided.
     */
-  var latLng: js.UndefOr[SchemaLatLng] = js.native
+  var latLng: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * Optional.  CLDR region code of the country/region of the address. This is
@@ -40,7 +38,7 @@ trait SchemaLocationFilter extends StObject {
     * http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html
     * for details. Example: &quot;CH&quot; for Switzerland.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Allows the client to return jobs without a set location,
@@ -57,7 +55,7 @@ trait SchemaLocationFilter extends StObject {
     * combination with other location filters, telecommuting jobs can be
     * treated as less relevant than other jobs in the search response.
     */
-  var telecommutePreference: js.UndefOr[String] = js.native
+  var telecommutePreference: js.UndefOr[String] = js.undefined
 }
 object SchemaLocationFilter {
   

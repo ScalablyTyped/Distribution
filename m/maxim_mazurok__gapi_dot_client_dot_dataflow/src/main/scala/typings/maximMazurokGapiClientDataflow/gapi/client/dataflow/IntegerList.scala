@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerList extends StObject {
   
   /** Elements of the list. */
-  var elements: js.UndefOr[js.Array[SplitInt64]] = js.native
+  var elements: js.UndefOr[js.Array[SplitInt64]] = js.undefined
 }
 object IntegerList {
   

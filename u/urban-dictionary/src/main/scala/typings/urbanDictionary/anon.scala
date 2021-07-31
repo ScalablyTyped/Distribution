@@ -3,19 +3,17 @@ package typings.urbanDictionary
 import typings.urbanDictionary.mod.WordDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Entries extends StObject {
     
-    var entries: js.Array[WordDefinition] = js.native
+    var entries: js.Array[WordDefinition]
     
-    var sounds: js.Array[String] = js.native
+    var sounds: js.Array[String]
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
   }
   object Entries {
     

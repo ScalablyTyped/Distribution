@@ -3,10 +3,8 @@ package typings.saxes.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NSOptions extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait NSOptions extends StObject {
     * parsing the XML file. It is not legal to pass bindings for the namespaces
     * ``"xml"`` or ``"xmlns"``.
     */
-  var additionalNamespaces: js.UndefOr[Record[String, String]] = js.native
+  var additionalNamespaces: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * A function that will be used if the parser cannot resolve a namespace
     * prefix on its own.
     */
-  var resolvePrefix: js.UndefOr[ResolvePrefix] = js.native
+  var resolvePrefix: js.UndefOr[ResolvePrefix] = js.undefined
   
   /** Whether to track namespaces. Unset means ``false``. */
-  var xmlns: js.UndefOr[Boolean] = js.native
+  var xmlns: js.UndefOr[Boolean] = js.undefined
 }
 object NSOptions {
   

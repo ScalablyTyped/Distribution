@@ -2,13 +2,11 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancel extends StObject {
   
-  var cancel: String = js.native
+  var cancel: String
 }
 object Cancel {
   

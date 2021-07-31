@@ -2,35 +2,33 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * InputMapping creates a &#39;virtual&#39; property that will be injected
   * into the properties before sending the request to the underlying API.
   */
-@js.native
 trait SchemaInputMapping extends StObject {
   
   /**
     * The name of the field that is going to be injected.
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
   
   /**
     * The location where this mapping applies.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Regex to evaluate on method to decide if input applies.
     */
-  var methodMatch: js.UndefOr[String] = js.native
+  var methodMatch: js.UndefOr[String] = js.undefined
   
   /**
     * A jsonPath expression to select an element.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaInputMapping {
   

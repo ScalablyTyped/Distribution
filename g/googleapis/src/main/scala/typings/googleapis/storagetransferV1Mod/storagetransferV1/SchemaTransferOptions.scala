@@ -2,14 +2,12 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TransferOptions uses three boolean parameters to define the actions to be
   * performed on objects in a transfer.
   */
-@js.native
 trait SchemaTransferOptions extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait SchemaTransferOptions extends StObject {
     * transferred to the sink.  Note that this option and
     * `deleteObjectsUniqueInSink` are mutually exclusive.
     */
-  var deleteObjectsFromSourceAfterTransfer: js.UndefOr[Boolean] = js.native
+  var deleteObjectsFromSourceAfterTransfer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether objects that exist only in the sink should be deleted.  Note that
     * this option and `deleteObjectsFromSourceAfterTransfer` are mutually
     * exclusive.
     */
-  var deleteObjectsUniqueInSink: js.UndefOr[Boolean] = js.native
+  var deleteObjectsUniqueInSink: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether overwriting objects that already exist in the sink is allowed.
     */
-  var overwriteObjectsAlreadyExistingInSink: js.UndefOr[Boolean] = js.native
+  var overwriteObjectsAlreadyExistingInSink: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTransferOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePendingMaintenanceActions extends StObject {
   
   /**
     * A list that provides details about the pending maintenance actions for the resource.
     */
-  var PendingMaintenanceActionDetails: js.UndefOr[typings.awsSdk.docdbMod.PendingMaintenanceActionDetails] = js.native
+  var PendingMaintenanceActionDetails: js.UndefOr[typings.awsSdk.docdbMod.PendingMaintenanceActionDetails] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource that has pending maintenance actions.
     */
-  var ResourceIdentifier: js.UndefOr[String] = js.native
+  var ResourceIdentifier: js.UndefOr[String] = js.undefined
 }
 object ResourcePendingMaintenanceActions {
   

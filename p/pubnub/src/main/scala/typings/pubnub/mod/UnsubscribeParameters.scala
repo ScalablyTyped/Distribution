@@ -2,16 +2,14 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // unsubscribe
-@js.native
 trait UnsubscribeParameters extends StObject {
   
-  var channelGroups: js.UndefOr[js.Array[String]] = js.native
+  var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var channels: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UnsubscribeParameters {
   

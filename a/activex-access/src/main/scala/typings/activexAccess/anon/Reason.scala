@@ -2,13 +2,11 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reason extends StObject {
   
-  val Reason: Double = js.native
+  val Reason: Double
 }
 object Reason {
   

@@ -13,19 +13,17 @@ import typings.asmcryptoJs.bignumMod.BigNumber
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BitLength extends StObject {
     
-    var bitLength: Double = js.native
+    var bitLength: Double
     
-    var limbs: Uint32Array = js.native
+    var limbs: Uint32Array
     
-    var sign: Double = js.native
+    var sign: Double
   }
   object BitLength {
     
@@ -49,24 +47,25 @@ object anon {
     }
   }
   
-  @js.native
-  trait CBC extends /* key */ StringDictionary[Double] {
+  trait CBC
+    extends StObject
+       with /* key */ StringDictionary[Double] {
     
-    var CBC: `3` = js.native
+    var CBC: `3`
     
-    var CFB: `5` = js.native
+    var CFB: `5`
     
-    var CTR: `7` = js.native
+    var CTR: `7`
     
-    var ECB: `1` = js.native
+    var ECB: `1`
     
-    var OFB: `6` = js.native
+    var OFB: `6`
   }
   object CBC {
     
     @scala.inline
-    def apply(CBC: `3`, CFB: `5`, CTR: `7`, ECB: `1`, OFB: `6`): CBC = {
-      val __obj = js.Dynamic.literal(CBC = CBC.asInstanceOf[js.Any], CFB = CFB.asInstanceOf[js.Any], CTR = CTR.asInstanceOf[js.Any], ECB = ECB.asInstanceOf[js.Any], OFB = OFB.asInstanceOf[js.Any])
+    def apply(): CBC = {
+      val __obj = js.Dynamic.literal(CBC = 3, CFB = 5, CTR = 7, ECB = 1, OFB = 6)
       __obj.asInstanceOf[CBC]
     }
     
@@ -90,24 +89,25 @@ object anon {
     }
   }
   
-  @js.native
-  trait Dictkey extends /* key */ StringDictionary[Double] {
+  trait Dictkey
+    extends StObject
+       with /* key */ StringDictionary[Double] {
     
-    var CBC: `2` = js.native
+    var CBC: `2`
     
-    var CFB: `4` = js.native
+    var CFB: `4`
     
-    var CTR: `7` = js.native
+    var CTR: `7`
     
-    var ECB: `0` = js.native
+    var ECB: `0`
     
-    var OFB: `6` = js.native
+    var OFB: `6`
   }
   object Dictkey {
     
     @scala.inline
-    def apply(CBC: `2`, CFB: `4`, CTR: `7`, ECB: `0`, OFB: `6`): Dictkey = {
-      val __obj = js.Dynamic.literal(CBC = CBC.asInstanceOf[js.Any], CFB = CFB.asInstanceOf[js.Any], CTR = CTR.asInstanceOf[js.Any], ECB = ECB.asInstanceOf[js.Any], OFB = OFB.asInstanceOf[js.Any])
+    def apply(): Dictkey = {
+      val __obj = js.Dynamic.literal(CBC = 2, CFB = 4, CTR = 7, ECB = 0, OFB = 6)
       __obj.asInstanceOf[Dictkey]
     }
     
@@ -131,18 +131,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait GCM extends /* key */ StringDictionary[Double] {
+  trait GCM
+    extends StObject
+       with /* key */ StringDictionary[Double] {
     
-    var CBC: `0` = js.native
+    var CBC: `0`
     
-    var GCM: `1` = js.native
+    var GCM: `1`
   }
   object GCM {
     
     @scala.inline
-    def apply(CBC: `0`, GCM: `1`): GCM = {
-      val __obj = js.Dynamic.literal(CBC = CBC.asInstanceOf[js.Any], GCM = GCM.asInstanceOf[js.Any])
+    def apply(): GCM = {
+      val __obj = js.Dynamic.literal(CBC = 0, GCM = 1)
       __obj.asInstanceOf[GCM]
     }
     
@@ -157,14 +158,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Gcd extends StObject {
     
-    var gcd: this.type = js.native
+    var gcd: this.type
     
-    var x: this.type = js.native
+    var x: this.type
     
-    var y: this.type = js.native
+    var y: this.type
   }
   object Gcd {
     
@@ -188,12 +188,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Quotient extends StObject {
     
-    var quotient: BigNumber = js.native
+    var quotient: BigNumber
     
-    var remainder: BigNumber = js.native
+    var remainder: BigNumber
   }
   object Quotient {
     
@@ -214,14 +213,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var gcd: Double = js.native
+    var gcd: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
@@ -245,14 +243,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var gcd: BigNumber = js.native
+    var gcd: BigNumber
     
-    var x: BigNumber = js.native
+    var x: BigNumber
     
-    var y: BigNumber = js.native
+    var y: BigNumber
   }
   object Y {
     

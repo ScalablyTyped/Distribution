@@ -3,22 +3,24 @@ package typings.cardValidator
 import typings.cardValidator.typesMod.Verification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expirationMonthMod {
   
-  @JSImport("card-validator/dist/expiration-month", "expirationMonth")
+  @JSImport("card-validator/dist/expiration-month", JSImport.Namespace)
   @js.native
-  def expirationMonth(value: String): ExpirationMonthVerification = js.native
-  @JSImport("card-validator/dist/expiration-month", "expirationMonth")
-  @js.native
-  def expirationMonth(value: js.Any): ExpirationMonthVerification = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ExpirationMonthVerification extends Verification {
+  @scala.inline
+  def expirationMonth(value: String): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
+  @scala.inline
+  def expirationMonth(value: js.Any): ExpirationMonthVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("expirationMonth")(value.asInstanceOf[js.Any]).asInstanceOf[ExpirationMonthVerification]
+  
+  trait ExpirationMonthVerification
+    extends StObject
+       with Verification {
     
-    var isValidForThisYear: Boolean = js.native
+    var isValidForThisYear: Boolean
   }
   object ExpirationMonthVerification {
     

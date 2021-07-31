@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeNumber extends StObject {
   
   /**
@@ -43,7 +41,7 @@ trait CodeNumber extends StObject {
     * - `3004` RTMP服务器主动断开，请检查推流地址的合法性或防盗链有效期
     * - `3005` RTMP 读/写失败
     */
-  var code: Double = js.native
+  var code: Double
 }
 object CodeNumber {
   

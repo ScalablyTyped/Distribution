@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The definition of how a value in a pivot table should be calculated.
   */
-@js.native
 trait SchemaPivotValue extends StObject {
   
   /**
@@ -19,18 +17,18 @@ trait SchemaPivotValue extends StObject {
     * Sheets UI, this is referred to as &quot;Show As&quot; in the value
     * section of a pivot table.
     */
-  var calculatedDisplayType: js.UndefOr[String] = js.native
+  var calculatedDisplayType: js.UndefOr[String] = js.undefined
   
   /**
     * A custom formula to calculate the value.  The formula must start with an
     * `=` character.
     */
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
   /**
     * A name to use for the value.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The column offset of the source range that this value reads from.  For
@@ -38,14 +36,14 @@ trait SchemaPivotValue extends StObject {
     * this value refers to column `C`, whereas the offset `1` would refer to
     * column `D`.
     */
-  var sourceColumnOffset: js.UndefOr[Double] = js.native
+  var sourceColumnOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * A function to summarize the value. If formula is set, the only supported
     * values are SUM and CUSTOM. If sourceColumnOffset is set, then `CUSTOM` is
     * not supported.
     */
-  var summarizeFunction: js.UndefOr[String] = js.native
+  var summarizeFunction: js.UndefOr[String] = js.undefined
 }
 object SchemaPivotValue {
   

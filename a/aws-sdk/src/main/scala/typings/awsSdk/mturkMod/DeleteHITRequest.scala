@@ -2,16 +2,14 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHITRequest extends StObject {
   
   /**
     * The ID of the HIT to be deleted.
     */
-  var HITId: EntityId = js.native
+  var HITId: EntityId
 }
 object DeleteHITRequest {
   

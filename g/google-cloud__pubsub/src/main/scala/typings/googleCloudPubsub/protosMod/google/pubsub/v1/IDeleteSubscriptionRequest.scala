@@ -2,15 +2,13 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DeleteSubscriptionRequest. */
-@js.native
 trait IDeleteSubscriptionRequest extends StObject {
   
   /** DeleteSubscriptionRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.native
+  var subscription: js.UndefOr[String | Null] = js.undefined
 }
 object IDeleteSubscriptionRequest {
   

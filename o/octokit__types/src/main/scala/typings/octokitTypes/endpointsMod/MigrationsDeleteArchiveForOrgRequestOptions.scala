@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsDeleteArchiveForOrgRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: DELETE = js.native
+  var method: DELETE
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive = js.native
+  var url: SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive
 }
 object MigrationsDeleteArchiveForOrgRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: DELETE,
-    request: RequestRequestOptions,
-    url: SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive
-  ): MigrationsDeleteArchiveForOrgRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsDeleteArchiveForOrgRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/orgs/:org/migrations/:migration_id/archive")
     __obj.asInstanceOf[MigrationsDeleteArchiveForOrgRequestOptions]
   }
   

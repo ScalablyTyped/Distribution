@@ -4,15 +4,13 @@ import typings.playable.configMod.IPlayerConfig
 import typings.playable.themeTypesMod.IThemeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigTheme extends StObject {
   
-  var config: IPlayerConfig = js.native
+  var config: IPlayerConfig
   
-  var theme: IThemeService = js.native
+  var theme: IThemeService
 }
 object ConfigTheme {
   

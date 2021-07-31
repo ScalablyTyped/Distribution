@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReturnShippingLabelRequest extends StObject {
   
   /**
     * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
     */
-  var JobId: js.UndefOr[typings.awsSdk.snowballMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.snowballMod.JobId] = js.undefined
 }
 object DescribeReturnShippingLabelRequest {
   

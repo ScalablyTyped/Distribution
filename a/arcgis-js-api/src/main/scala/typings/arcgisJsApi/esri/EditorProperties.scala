@@ -2,46 +2,46 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditorProperties extends WidgetProperties {
+trait EditorProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * An array of string values which specifies what end users are allowed to edit.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#allowedWorkflows)
     */
-  var allowedWorkflows: js.UndefOr[js.Array[String]] = js.native
+  var allowedWorkflows: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of editing configurations for individual layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#layerInfos)
     */
-  var layerInfos: js.UndefOr[js.Array[LayerInfo]] = js.native
+  var layerInfos: js.UndefOr[js.Array[LayerInfo]] = js.undefined
   
   /**
     * This property allows customization of supporting Editor widgets and their default behavior.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#supportingWidgetDefaults)
     */
-  var supportingWidgetDefaults: js.UndefOr[SupportingWidgetDefaults] = js.native
+  var supportingWidgetDefaults: js.UndefOr[SupportingWidgetDefaults] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#viewModel)
     */
-  var viewModel: js.UndefOr[EditorViewModelProperties] = js.native
+  var viewModel: js.UndefOr[EditorViewModelProperties] = js.undefined
 }
 object EditorProperties {
   

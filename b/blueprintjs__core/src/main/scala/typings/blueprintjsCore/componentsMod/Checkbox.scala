@@ -4,7 +4,6 @@ import typings.blueprintjsCore.controlsMod.ICheckboxProps
 import typings.blueprintjsCore.controlsMod.ICheckboxState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Checkbox")
@@ -27,7 +26,6 @@ object Checkbox {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core/lib/esm/components", "Checkbox.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(hasIndeterminate: ICheckboxProps): ICheckboxState | Null = js.native
+  @scala.inline
+  def getDerivedStateFromProps(hasIndeterminate: ICheckboxProps): ICheckboxState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasIndeterminate.asInstanceOf[js.Any]).asInstanceOf[ICheckboxState | Null]
 }

@@ -4,7 +4,6 @@ import typings.macosRelease.anon.Call
 import typings.macosRelease.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,12 +29,10 @@ object mod {
   	//=> {name: 'Big Sur', version: '11'}
   	```
   	*/
-  @JSImport("macos-release", JSImport.Namespace)
-  @js.native
-  def apply(): Name = js.native
-  @JSImport("macos-release", JSImport.Namespace)
-  @js.native
-  def apply(release: String): Name = js.native
+  @scala.inline
+  def apply(): Name = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Name]
+  @scala.inline
+  def apply(release: String): Name = ^.asInstanceOf[js.Dynamic].apply(release.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   @JSImport("macos-release", JSImport.Namespace)
   @js.native
@@ -65,12 +62,10 @@ object mod {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;
-  @JSImport("macos-release", "default")
-  @js.native
-  def default(): Name = js.native
-  @JSImport("macos-release", "default")
-  @js.native
-  def default(release: String): Name = js.native
+  @scala.inline
+  def default(): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Name]
+  @scala.inline
+  def default(release: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(release.asInstanceOf[js.Any]).asInstanceOf[Name]
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;

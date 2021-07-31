@@ -2,7 +2,6 @@ package typings.typesettable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringMethodsMod {
@@ -13,29 +12,27 @@ object stringMethodsMod {
   /* static members */
   object StringMethods {
     
+    @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Treat all sequences of consecutive spaces as a single " ".
       */
-    @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods.combineWhitespace")
-    @js.native
-    def combineWhitespace(str: String): String = js.native
+    @scala.inline
+    def combineWhitespace(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("combineWhitespace")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods.isNotEmptyString")
-    @js.native
-    def isNotEmptyString(str: String): Boolean = js.native
+    @scala.inline
+    def isNotEmptyString(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmptyString")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods.trimEnd")
-    @js.native
-    def trimEnd(str: String): String = js.native
-    @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods.trimEnd")
-    @js.native
-    def trimEnd(str: String, c: String): String = js.native
+    @scala.inline
+    def trimEnd(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimEnd")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def trimEnd(str: String, c: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimEnd")(str.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods.trimStart")
-    @js.native
-    def trimStart(str: String): String = js.native
-    @JSImport("typesettable/build/src/utils/stringMethods", "StringMethods.trimStart")
-    @js.native
-    def trimStart(str: String, splitter: String): String = js.native
+    @scala.inline
+    def trimStart(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimStart")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def trimStart(str: String, splitter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimStart")(str.asInstanceOf[js.Any], splitter.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

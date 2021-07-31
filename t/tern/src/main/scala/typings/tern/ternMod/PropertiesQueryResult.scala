@@ -2,14 +2,12 @@ package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertiesQueryResult extends StObject {
   
   /** The property names. */
-  var completions: js.Array[String] = js.native
+  var completions: js.Array[String]
 }
 object PropertiesQueryResult {
   

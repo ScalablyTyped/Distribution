@@ -12,7 +12,7 @@ PurifyCSS for webpack
 | Keywords           | webpack, uncss, plugin, purify |
 | # releases         | 1 |
 | # dependents       | 28 |
-| # downloads        | 598893 |
+| # downloads        | 552154 |
 | # stars            | 3 |
 
 ## Links

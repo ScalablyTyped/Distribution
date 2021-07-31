@@ -11,7 +11,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerMod {
@@ -59,9 +58,9 @@ object drawerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDrawerProps
-    extends IOverlayableProps
+    extends StObject
+       with IOverlayableProps
        with IBackdropProps
        with IProps {
     
@@ -70,27 +69,27 @@ object drawerMod {
       * drawer's header. Note that the header will only be rendered if `title` is
       * provided.
       */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
+    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /**
       * Whether to show the close button in the dialog's header.
       * Note that the header will only be rendered if `title` is provided.
       * @default true
       */
-    var isCloseButtonShown: js.UndefOr[Boolean] = js.native
+    var isCloseButtonShown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Toggles the visibility of the overlay and its children.
       * This prop is required because the component is controlled.
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * Position of a drawer. All angled positions will be casted into pure positions
       * (TOP, BOTTOM, LEFT or RIGHT).
       * @default Position.RIGHT
       */
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
     /**
       * CSS size of the drawer. This sets `width` if `vertical={false}` (default)
@@ -103,25 +102,25 @@ object drawerMod {
       *
       * @default Drawer.SIZE_STANDARD = "50%"
       */
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
     
     /**
       * CSS styles to apply to the dialog.
       * @default {}
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Title of the dialog. If provided, an element with `Classes.DIALOG_HEADER`
       * will be rendered inside the dialog before any children elements.
       */
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Name of the transition for internal `CSSTransition`. Providing your own
       * name here will require defining new CSS transition properties.
       */
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the drawer should appear with vertical styling.
@@ -129,7 +128,7 @@ object drawerMod {
       * @default false
       * @deprecated use `position` instead
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object IDrawerProps {
     

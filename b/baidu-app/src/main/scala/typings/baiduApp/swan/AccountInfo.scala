@@ -4,19 +4,17 @@ import typings.baiduApp.anon.AppId
 import typings.baiduApp.anon.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #region App里的onLaunch、onShow回调参数
 // #region Account
-@js.native
 trait AccountInfo extends StObject {
   
   /* 小程序账号信息 */
-  var miniProgram: AppId = js.native
+  var miniProgram: AppId
   
   /* 插件账号信息（仅在插件中调用时包含这一项）     */
-  var plugin: js.UndefOr[Version] = js.native
+  var plugin: js.UndefOr[Version] = js.undefined
 }
 object AccountInfo {
   

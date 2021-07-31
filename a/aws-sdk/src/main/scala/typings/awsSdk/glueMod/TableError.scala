@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableError extends StObject {
   
   /**
     * The details about the error.
     */
-  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.native
+  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.undefined
   
   /**
     * The name of the table. For Hive compatibility, this must be entirely lowercase.
     */
-  var TableName: js.UndefOr[NameString] = js.native
+  var TableName: js.UndefOr[NameString] = js.undefined
 }
 object TableError {
   

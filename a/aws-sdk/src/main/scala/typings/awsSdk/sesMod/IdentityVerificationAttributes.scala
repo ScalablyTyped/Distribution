@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityVerificationAttributes extends StObject {
   
   /**
     * The verification status of the identity: "Pending", "Success", "Failed", or "TemporaryFailure".
     */
-  var VerificationStatus: typings.awsSdk.sesMod.VerificationStatus = js.native
+  var VerificationStatus: typings.awsSdk.sesMod.VerificationStatus
   
   /**
     * The verification token for a domain identity. Null for email address identities.
     */
-  var VerificationToken: js.UndefOr[typings.awsSdk.sesMod.VerificationToken] = js.native
+  var VerificationToken: js.UndefOr[typings.awsSdk.sesMod.VerificationToken] = js.undefined
 }
 object IdentityVerificationAttributes {
   

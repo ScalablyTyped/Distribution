@@ -3,25 +3,23 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountWorkWorkItemModel extends StObject {
   
-  var assignedTo: String = js.native
+  var assignedTo: String
   
-  var changedDate: Date = js.native
+  var changedDate: Date
   
-  var id: Double = js.native
+  var id: Double
   
-  var state: String = js.native
+  var state: String
   
-  var teamProject: String = js.native
+  var teamProject: String
   
-  var title: String = js.native
+  var title: String
   
-  var workItemType: String = js.native
+  var workItemType: String
 }
 object AccountWorkWorkItemModel {
   

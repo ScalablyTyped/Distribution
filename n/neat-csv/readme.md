@@ -10,9 +10,9 @@ Fast CSV parser
 | ------------------ | :-------------: |
 | Full name          | neat-csv |
 | Keywords           | parse, csv, comma, separated, values, tab, delimiter, separator, text, string, buffer, stream, parser |
-| # releases         | 5 |
-| # dependents       | 32 |
-| # downloads        | 6771879 |
+| # releases         | 6 |
+| # dependents       | 34 |
+| # downloads        | 7078176 |
 | # stars            | 7 |
 
 ## Links

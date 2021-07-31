@@ -3,56 +3,54 @@ package typings.sarif.mod
 import typings.sarif.mod.Notification.level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
   /**
     * A reference used to locate the rule descriptor associated with this notification.
     */
-  var associatedRule: js.UndefOr[ReportingDescriptorReference] = js.native
+  var associatedRule: js.UndefOr[ReportingDescriptorReference] = js.undefined
   
   /**
     * A reference used to locate the descriptor relevant to this notification.
     */
-  var descriptor: js.UndefOr[ReportingDescriptorReference] = js.native
+  var descriptor: js.UndefOr[ReportingDescriptorReference] = js.undefined
   
   /**
     * The runtime exception, if any, relevant to this notification.
     */
-  var exception: js.UndefOr[Exception] = js.native
+  var exception: js.UndefOr[Exception] = js.undefined
   
   /**
     * A value specifying the severity level of the notification.
     */
-  var level: js.UndefOr[level] = js.native
+  var level: js.UndefOr[level] = js.undefined
   
   /**
     * The locations relevant to this notification.
     */
-  var locations: js.UndefOr[js.Array[Location]] = js.native
+  var locations: js.UndefOr[js.Array[Location]] = js.undefined
   
   /**
     * A message that describes the condition that was encountered.
     */
-  var message: Message = js.native
+  var message: Message
   
   /**
     * Key/value pairs that provide additional information about the notification.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The thread identifier of the code that generated the notification.
     */
-  var threadId: js.UndefOr[Double] = js.native
+  var threadId: js.UndefOr[Double] = js.undefined
   
   /**
     * The Coordinated Universal Time (UTC) date and time at which the analysis tool generated the notification.
     */
-  var timeUtc: js.UndefOr[String] = js.native
+  var timeUtc: js.UndefOr[String] = js.undefined
 }
 object Notification {
   

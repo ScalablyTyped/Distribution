@@ -22,181 +22,165 @@ import typings.std.WebAssembly.Module
 import typings.std.WebAssembly.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@assemblyscript/loader", "demangle")
+  @JSImport("@assemblyscript/loader", JSImport.Namespace)
   @js.native
-  def demangle[T /* <: js.Object */](exports: js.Object): T = js.native
-  @JSImport("@assemblyscript/loader", "demangle")
-  @js.native
-  def demangle[T /* <: js.Object */](exports: js.Object, baseModule: js.Object): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response]): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response], imports: ImportsObject): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: BufferSource): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: Response): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: Module): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiate")
-  @js.native
-  def instantiate[T /* <: js.Object */](source: Module, imports: ImportsObject): js.Promise[ASUtil with T] = js.native
+  @scala.inline
+  def demangle[T /* <: js.Object */](exports: js.Object): T = ^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def demangle[T /* <: js.Object */](exports: js.Object, baseModule: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any], baseModule.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@assemblyscript/loader", "instantiateStreaming")
-  @js.native
-  def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response]): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiateStreaming")
-  @js.native
-  def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response], imports: ImportsObject): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiateStreaming")
-  @js.native
-  def instantiateStreaming[T /* <: js.Object */](source: Response): js.Promise[ASUtil with T] = js.native
-  @JSImport("@assemblyscript/loader", "instantiateStreaming")
-  @js.native
-  def instantiateStreaming[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil with T] = js.native
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response]): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response], imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: BufferSource): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: Response): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: Module): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiate[T /* <: js.Object */](source: Module, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
   
-  @JSImport("@assemblyscript/loader", "instantiateSync")
-  @js.native
-  def instantiateSync[T /* <: js.Object */](source: BufferSource): ASUtil with T = js.native
-  @JSImport("@assemblyscript/loader", "instantiateSync")
-  @js.native
-  def instantiateSync[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): ASUtil with T = js.native
-  @JSImport("@assemblyscript/loader", "instantiateSync")
-  @js.native
-  def instantiateSync[T /* <: js.Object */](source: Module): ASUtil with T = js.native
-  @JSImport("@assemblyscript/loader", "instantiateSync")
-  @js.native
-  def instantiateSync[T /* <: js.Object */](source: Module, imports: ImportsObject): ASUtil with T = js.native
+  @scala.inline
+  def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response]): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response], imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiateStreaming[T /* <: js.Object */](source: Response): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  @scala.inline
+  def instantiateStreaming[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  
+  @scala.inline
+  def instantiateSync[T /* <: js.Object */](source: BufferSource): ASUtil & T = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any]).asInstanceOf[ASUtil & T]
+  @scala.inline
+  def instantiateSync[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): ASUtil & T = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[ASUtil & T]
+  @scala.inline
+  def instantiateSync[T /* <: js.Object */](source: Module): ASUtil & T = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any]).asInstanceOf[ASUtil & T]
+  @scala.inline
+  def instantiateSync[T /* <: js.Object */](source: Module, imports: ImportsObject): ASUtil & T = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[ASUtil & T]
   
   /** Utility mixed in by the loader. */
-  @js.native
   trait ASUtil extends StObject {
     
     /** Allocates an instance of the class represented by the specified id. */
-    def __alloc(size: Double, id: Double): Double = js.native
+    def __alloc(size: Double, id: Double): Double
     
     /** Allocates a new array in the module's memory and returns a reference (pointer) to it. */
-    def __allocArray(id: Double, values: ArrayLike[Double]): Double = js.native
+    def __allocArray(id: Double, values: ArrayLike[Double]): Double
     
     /** Allocates a new string in the module's memory and returns a reference (pointer) to it. */
-    def __allocString(str: String): Double = js.native
+    def __allocString(str: String): Double
     
     /** Forces a cycle collection. Only relevant if objects potentially forming reference cycles are used. */
-    def __collect(): Unit = js.native
+    def __collect(): Unit
     
     /** Copies an array's values from the module's memory. Infers the array type from RTTI. */
-    def __getArray(ptr: Double): js.Array[Double] = js.native
+    def __getArray(ptr: Double): js.Array[Double]
     
     /** Copies an ArrayBuffer's value from the module's memory. */
-    def __getArrayBuffer(ptr: Double): ArrayBuffer = js.native
+    def __getArrayBuffer(ptr: Double): ArrayBuffer
     
     /** Gets a live view on an array's values in the module's memory. Infers the array type from RTTI. */
-    def __getArrayView(ptr: Double): ArrayBufferView = js.native
+    def __getArrayView(ptr: Double): ArrayBufferView
     
     /** Copies a Float32Array's values from the module's memory. */
-    def __getFloat32Array(ptr: Double): Float32Array = js.native
+    def __getFloat32Array(ptr: Double): Float32Array
     
     /** Gets a live view on a Float32Array's values in the module's memory. */
-    def __getFloat32ArrayView(ptr: Double): Float32Array = js.native
+    def __getFloat32ArrayView(ptr: Double): Float32Array
     
     /** Copies a Float64Array's values from the module's memory. */
-    def __getFloat64Array(ptr: Double): Float64Array = js.native
+    def __getFloat64Array(ptr: Double): Float64Array
     
     /** Gets a live view on a Float64Array's values in the module's memory. */
-    def __getFloat64ArrayView(ptr: Double): Float64Array = js.native
+    def __getFloat64ArrayView(ptr: Double): Float64Array
     
     /** Copies an Int16Array's values from the module's memory. */
-    def __getInt16Array(ptr: Double): Int16Array = js.native
+    def __getInt16Array(ptr: Double): Int16Array
     
     /** Gets a live view on an Int16Array's values in the module's memory. */
-    def __getInt16ArrayView(ptr: Double): Int16Array = js.native
+    def __getInt16ArrayView(ptr: Double): Int16Array
     
     /** Copies an Int32Array's values from the module's memory. */
-    def __getInt32Array(ptr: Double): Int32Array = js.native
+    def __getInt32Array(ptr: Double): Int32Array
     
     /** Gets a live view on an Int32Array's values in the module's memory. */
-    def __getInt32ArrayView(ptr: Double): Int32Array = js.native
+    def __getInt32ArrayView(ptr: Double): Int32Array
     
     /** Copies an Int32Array's values from the module's memory. */
-    var __getInt64Array: js.UndefOr[js.Function1[/* ptr */ Double, BigInt64Array]] = js.native
+    var __getInt64Array: js.UndefOr[js.Function1[/* ptr */ Double, BigInt64Array]] = js.undefined
     
     /** Gets a live view on an Int32Array's values in the module's memory. */
-    var __getInt64ArrayView: js.UndefOr[js.Function1[/* ptr */ Double, BigInt64Array]] = js.native
+    var __getInt64ArrayView: js.UndefOr[js.Function1[/* ptr */ Double, BigInt64Array]] = js.undefined
     
     /** Copies an Int8Array's values from the module's memory. */
-    def __getInt8Array(ptr: Double): Int8Array = js.native
+    def __getInt8Array(ptr: Double): Int8Array
     
     /** Gets a live view on an Int8Array's values in the module's memory. */
-    def __getInt8ArrayView(ptr: Double): Int8Array = js.native
+    def __getInt8ArrayView(ptr: Double): Int8Array
     
     /** Copies a string's value from the module's memory. */
-    def __getString(ptr: Double): String = js.native
+    def __getString(ptr: Double): String
     
     /** Copies an Uint16Array's values from the module's memory. */
-    def __getUint16Array(ptr: Double): Uint16Array = js.native
+    def __getUint16Array(ptr: Double): Uint16Array
     
     /** Gets a live view on an Uint16Array's values in the module's memory. */
-    def __getUint16ArrayView(ptr: Double): Uint16Array = js.native
+    def __getUint16ArrayView(ptr: Double): Uint16Array
     
     /** Copies an Uint32Array's values from the module's memory. */
-    def __getUint32Array(ptr: Double): Uint32Array = js.native
+    def __getUint32Array(ptr: Double): Uint32Array
     
     /** Gets a live view on an Uint32Array's values in the module's memory. */
-    def __getUint32ArrayView(ptr: Double): Uint32Array = js.native
+    def __getUint32ArrayView(ptr: Double): Uint32Array
     
     /** Copies an Uint32Array's values from the module's memory. */
-    var __getUint64Array: js.UndefOr[js.Function1[/* ptr */ Double, BigUint64Array]] = js.native
+    var __getUint64Array: js.UndefOr[js.Function1[/* ptr */ Double, BigUint64Array]] = js.undefined
     
     /** Gets a live view on an Uint32Array's values in the module's memory. */
-    var __getUint64ArrayView: js.UndefOr[js.Function1[/* ptr */ Double, BigUint64Array]] = js.native
+    var __getUint64ArrayView: js.UndefOr[js.Function1[/* ptr */ Double, BigUint64Array]] = js.undefined
     
     /** Copies an Uint8Array's values from the module's memory. */
-    def __getUint8Array(ptr: Double): Uint8Array = js.native
+    def __getUint8Array(ptr: Double): Uint8Array
     
     /** Gets a live view on an Uint8Array's values in the module's memory. */
-    def __getUint8ArrayView(ptr: Double): Uint8Array = js.native
+    def __getUint8ArrayView(ptr: Double): Uint8Array
     
     /** Copies an Uint8ClampedArray's values from the module's memory. */
-    def __getUint8ClampedArray(ptr: Double): Uint8ClampedArray = js.native
+    def __getUint8ClampedArray(ptr: Double): Uint8ClampedArray
     
     /** Gets a live view on an Uint8ClampedArray's values in the module's memory. */
-    def __getUint8ClampedArrayView(ptr: Double): Uint8ClampedArray = js.native
+    def __getUint8ClampedArrayView(ptr: Double): Uint8ClampedArray
     
     /** Tests whether a managed object is an instance of the class represented by the specified base id. */
-    def __instanceof(ptr: Double, baseId: Double): Boolean = js.native
+    def __instanceof(ptr: Double, baseId: Double): Boolean
     
     /** Releases a previously retained reference to a managed object, allowing the runtime to collect it once its reference count reaches zero. */
-    def __release(ptr: Double): Unit = js.native
+    def __release(ptr: Double): Unit
     
     /** Forcefully resets the heap to its initial offset, effectively clearing dynamic memory. Stub runtime only. */
-    var __reset: js.UndefOr[js.Function0[Unit]] = js.native
+    var __reset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Retains a reference to a managed object externally, making sure that it doesn't become collected prematurely. Returns the pointer. */
-    def __retain(ptr: Double): Double = js.native
+    def __retain(ptr: Double): Double
     
     /** Explicit start function, if requested. */
-    def _start(): Unit = js.native
+    def _start(): Unit
     
-    var memory: js.UndefOr[Memory] = js.native
+    var memory: js.UndefOr[Memory] = js.undefined
     
-    var table: js.UndefOr[Table] = js.native
+    var table: js.UndefOr[Table] = js.undefined
   }
   object ASUtil {
     
@@ -376,10 +360,9 @@ object mod {
   
   /** WebAssembly imports with two levels of nesting. */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: any} */ @js.native
-  trait ImportsObject extends StObject {
+  - Dropped {[ P in string ]: any} */ trait ImportsObject extends StObject {
     
-    var env: js.UndefOr[Abort] = js.native
+    var env: js.UndefOr[Abort] = js.undefined
   }
   object ImportsObject {
     

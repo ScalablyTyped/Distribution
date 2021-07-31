@@ -6,40 +6,40 @@ import typings.textversionjs.textversionjsStrings.linebreak
 import typings.textversionjs.textversionjsStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(html: String): String = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(html: String, styleConfig: styleConfig): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], styleConfig.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("textversionjs", JSImport.Namespace)
   @js.native
-  def apply(html: String): String = js.native
-  @JSImport("textversionjs", JSImport.Namespace)
-  @js.native
-  def apply(html: String, styleConfig: styleConfig): String = js.native
+  val ^ : js.Any = js.native
   
   type imgProcess = js.Function2[/* src */ String, /* alt */ String, String]
   
   type linkProcess = js.Function2[/* href */ String, /* linkText */ String, String]
   
-  @js.native
   trait styleConfig extends StObject {
     
-    var headingStyle: js.UndefOr[underline | linebreak | hashify] = js.native
+    var headingStyle: js.UndefOr[underline | linebreak | hashify] = js.undefined
     
-    var imgProcess: js.UndefOr[typings.textversionjs.mod.imgProcess] = js.native
+    var imgProcess: js.UndefOr[typings.textversionjs.mod.imgProcess] = js.undefined
     
-    var keepNbsps: js.UndefOr[Boolean] = js.native
+    var keepNbsps: js.UndefOr[Boolean] = js.undefined
     
-    var linkProcess: js.UndefOr[typings.textversionjs.mod.linkProcess] = js.native
+    var linkProcess: js.UndefOr[typings.textversionjs.mod.linkProcess] = js.undefined
     
-    var listIndentionTabs: js.UndefOr[Double] = js.native
+    var listIndentionTabs: js.UndefOr[Double] = js.undefined
     
-    var listStyle: js.UndefOr[indentation | linebreak] = js.native
+    var listStyle: js.UndefOr[indentation | linebreak] = js.undefined
     
-    var oIndentionChar: js.UndefOr[String] = js.native
+    var oIndentionChar: js.UndefOr[String] = js.undefined
     
-    var uIndentionChar: js.UndefOr[String] = js.native
+    var uIndentionChar: js.UndefOr[String] = js.undefined
   }
   object styleConfig {
     

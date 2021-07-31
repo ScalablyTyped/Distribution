@@ -2,25 +2,23 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ListStoredInfoTypes.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse extends StObject {
   
   /**
     * If the next page is available then the next page token to be used in
     * following ListStoredInfoTypes request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of storedInfoTypes, up to page_size in ListStoredInfoTypesRequest.
     */
-  var storedInfoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2StoredInfoType]] = js.native
+  var storedInfoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2StoredInfoType]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse {
   

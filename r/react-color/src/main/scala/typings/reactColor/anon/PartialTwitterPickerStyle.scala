@@ -3,30 +3,28 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/twitter/Twitter.TwitterPickerStylesProps> */
-@js.native
 trait PartialTwitterPickerStyle extends StObject {
   
-  var body: js.UndefOr[CSSProperties] = js.native
+  var body: js.UndefOr[CSSProperties] = js.undefined
   
-  var card: js.UndefOr[CSSProperties] = js.native
+  var card: js.UndefOr[CSSProperties] = js.undefined
   
-  var clear: js.UndefOr[CSSProperties] = js.native
+  var clear: js.UndefOr[CSSProperties] = js.undefined
   
-  var hash: js.UndefOr[CSSProperties] = js.native
+  var hash: js.UndefOr[CSSProperties] = js.undefined
   
-  var input: js.UndefOr[CSSProperties] = js.native
+  var input: js.UndefOr[CSSProperties] = js.undefined
   
-  var label: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.undefined
   
-  var swatch: js.UndefOr[CSSProperties] = js.native
+  var swatch: js.UndefOr[CSSProperties] = js.undefined
   
-  var triangle: js.UndefOr[CSSProperties] = js.native
+  var triangle: js.UndefOr[CSSProperties] = js.undefined
   
-  var triangleShadow: js.UndefOr[CSSProperties] = js.native
+  var triangleShadow: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialTwitterPickerStyle {
   

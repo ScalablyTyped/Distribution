@@ -4,10 +4,13 @@ import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerRegistryMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry")
   @js.native
@@ -44,18 +47,14 @@ object routerRegistryMod {
       * @returns All valid handlers for `url`, given the currently registered
       *   handler routers.
       */
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getLoadHandlers")
-    @js.native
-    def getLoadHandlers(url: String): js.Array[IOHandler] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getLoadHandlers")
-    @js.native
-    def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getLoadHandlers")
-    @js.native
-    def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getLoadHandlers")
-    @js.native
-    def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = js.native
+    @scala.inline
+    def getLoadHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+    @scala.inline
+    def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
+    @scala.inline
+    def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+    @scala.inline
+    def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
     
     /**
       * Look up IOHandler for saving, given a URL-like string.
@@ -65,12 +64,10 @@ object routerRegistryMod {
       * `save` method defined. If no match is found, `null`.
       * @throws Error, if more than one match is found.
       */
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getSaveHandlers")
-    @js.native
-    def getSaveHandlers(url: String): js.Array[IOHandler] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.getSaveHandlers")
-    @js.native
-    def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
+    @scala.inline
+    def getSaveHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+    @scala.inline
+    def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
     
     @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.instance")
     @js.native
@@ -84,9 +81,8 @@ object routerRegistryMod {
       * @param loadRouter A function that maps a URL-like string onto an instance
       * of `IOHandler` with the `load` method defined or `null`.
       */
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.registerLoadRouter")
-    @js.native
-    def registerLoadRouter(loadRouter: IORouter): Unit = js.native
+    @scala.inline
+    def registerLoadRouter(loadRouter: IORouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadRouter")(loadRouter.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Register a save-handler router.
@@ -94,38 +90,29 @@ object routerRegistryMod {
       * @param saveRouter A function that maps a URL-like string onto an instance
       * of `IOHandler` with the `save` method defined or `null`.
       */
-    @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "IORouterRegistry.registerSaveRouter")
-    @js.native
-    def registerSaveRouter(saveRouter: IORouter): Unit = js.native
+    @scala.inline
+    def registerSaveRouter(saveRouter: IORouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSaveRouter")(saveRouter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: String): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "getLoadHandlers")
-  @js.native
-  def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = js.native
+  @scala.inline
+  def getLoadHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "getSaveHandlers")
-  @js.native
-  def getSaveHandlers(url: String): js.Array[IOHandler] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "getSaveHandlers")
-  @js.native
-  def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
+  @scala.inline
+  def getSaveHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+  @scala.inline
+  def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "registerLoadRouter")
-  @js.native
-  def registerLoadRouter(loudRouter: IORouter): Unit = js.native
+  @scala.inline
+  def registerLoadRouter(loudRouter: IORouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadRouter")(loudRouter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/router_registry", "registerSaveRouter")
-  @js.native
-  def registerSaveRouter(loudRouter: IORouter): Unit = js.native
+  @scala.inline
+  def registerSaveRouter(loudRouter: IORouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSaveRouter")(loudRouter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type IORouter = js.Function2[
     /* url */ String | js.Array[String], 

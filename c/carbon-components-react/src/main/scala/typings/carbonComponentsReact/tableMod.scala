@@ -1,0 +1,121 @@
+package typings.carbonComponentsReact
+
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FC
+import typings.react.mod.TableHTMLAttributes
+import typings.std.HTMLTableElement
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object tableMod extends Shortcut {
+  
+  @JSImport("carbon-components-react/lib/components/DataTable/Table", JSImport.Default)
+  @js.native
+  val default: FC[TableProps] = js.native
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.compact
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.normal
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.short
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.tall
+  */
+  trait DataTableSize extends StObject
+  object DataTableSize {
+    
+    @scala.inline
+    def compact: typings.carbonComponentsReact.carbonComponentsReactStrings.compact = "compact".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.compact]
+    
+    @scala.inline
+    def normal: typings.carbonComponentsReact.carbonComponentsReactStrings.normal = "normal".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.normal]
+    
+    @scala.inline
+    def short: typings.carbonComponentsReact.carbonComponentsReactStrings.short = "short".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.short]
+    
+    @scala.inline
+    def tall: typings.carbonComponentsReact.carbonComponentsReactStrings.tall = "tall".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.tall]
+  }
+  
+  type InheritedProps = TableHTMLAttributes[HTMLTableElement]
+  
+  trait TableCarbonProps extends StObject {
+    
+    var isSortable: js.UndefOr[Boolean] = js.undefined
+    
+    var overflowMenuOnHover: js.UndefOr[Boolean] = js.undefined
+    
+    var shouldShowBorder: js.UndefOr[Boolean] = js.undefined
+    
+    var size: js.UndefOr[DataTableSize] = js.undefined
+    
+    var useStaticWidth: js.UndefOr[Boolean] = js.undefined
+    
+    var useZebraStyles: js.UndefOr[Boolean] = js.undefined
+  }
+  object TableCarbonProps {
+    
+    @scala.inline
+    def apply(): TableCarbonProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableCarbonProps]
+    }
+    
+    @scala.inline
+    implicit class TableCarbonPropsMutableBuilder[Self <: TableCarbonProps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+      
+      @scala.inline
+      def setOverflowMenuOnHover(value: Boolean): Self = StObject.set(x, "overflowMenuOnHover", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOverflowMenuOnHoverUndefined: Self = StObject.set(x, "overflowMenuOnHover", js.undefined)
+      
+      @scala.inline
+      def setShouldShowBorder(value: Boolean): Self = StObject.set(x, "shouldShowBorder", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShouldShowBorderUndefined: Self = StObject.set(x, "shouldShowBorder", js.undefined)
+      
+      @scala.inline
+      def setSize(value: DataTableSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      @scala.inline
+      def setUseStaticWidth(value: Boolean): Self = StObject.set(x, "useStaticWidth", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUseStaticWidthUndefined: Self = StObject.set(x, "useStaticWidth", js.undefined)
+      
+      @scala.inline
+      def setUseZebraStyles(value: Boolean): Self = StObject.set(x, "useZebraStyles", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUseZebraStylesUndefined: Self = StObject.set(x, "useZebraStyles", js.undefined)
+    }
+  }
+  
+  trait TableProps
+    extends StObject
+       with TableHTMLAttributes[HTMLTableElement]
+       with TableCarbonProps
+  object TableProps {
+    
+    @scala.inline
+    def apply(): TableProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableProps]
+    }
+  }
+  
+  type _To = FC[TableProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `tableMod.foo` */
+  override def _to: FC[TableProps] = default
+}

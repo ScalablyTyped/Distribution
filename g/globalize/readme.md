@@ -10,9 +10,9 @@ A JavaScript library for internationalization and localization that leverages th
 | ------------------ | :-------------: |
 | Full name          | globalize |
 | Keywords           | utility, globalization, internationalization, multilingualization, localization, g11n, i18n, m17n, L10n, localize, format, parse, translate, strings, numbers, dates, times, calendars, plural, plurals, pluralize, cultures, languages, locales, Unicode, CLDR, JSON |
-| # releases         | 4 |
-| # dependents       | 62 |
-| # downloads        | 4948995 |
+| # releases         | 6 |
+| # dependents       | 67 |
+| # downloads        | 6508221 |
 | # stars            | 16 |
 
 ## Links

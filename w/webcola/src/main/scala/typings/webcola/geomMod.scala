@@ -4,10 +4,13 @@ import typings.webcola.anon.E
 import typings.webcola.anon.T1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geomMod {
+  
+  @JSImport("webcola/dist/src/geom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webcola/dist/src/geom", "BiTangent")
   @js.native
@@ -32,17 +35,14 @@ object geomMod {
     var rr: BiTangent = js.native
   }
   
-  @JSImport("webcola/dist/src/geom", "ConvexHull")
-  @js.native
-  def ConvexHull(S: js.Array[Point]): js.Array[Point] = js.native
+  @scala.inline
+  def ConvexHull(S: js.Array[Point]): js.Array[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvexHull")(S.asInstanceOf[js.Any]).asInstanceOf[js.Array[Point]]
   
-  @JSImport("webcola/dist/src/geom", "LLtangent_PolyPolyC")
-  @js.native
-  def LLtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = js.native
+  @scala.inline
+  def LLtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = (^.asInstanceOf[js.Dynamic].applyDynamic("LLtangent_PolyPolyC")(V.asInstanceOf[js.Any], W.asInstanceOf[js.Any])).asInstanceOf[T1]
   
-  @JSImport("webcola/dist/src/geom", "LRtangent_PolyPolyC")
-  @js.native
-  def LRtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = js.native
+  @scala.inline
+  def LRtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = (^.asInstanceOf[js.Dynamic].applyDynamic("LRtangent_PolyPolyC")(V.asInstanceOf[js.Any], W.asInstanceOf[js.Any])).asInstanceOf[T1]
   
   @JSImport("webcola/dist/src/geom", "LineSegment")
   @js.native
@@ -74,13 +74,11 @@ object geomMod {
     var polyIndex: Double = js.native
   }
   
-  @JSImport("webcola/dist/src/geom", "RLtangent_PolyPolyC")
-  @js.native
-  def RLtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = js.native
+  @scala.inline
+  def RLtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = (^.asInstanceOf[js.Dynamic].applyDynamic("RLtangent_PolyPolyC")(V.asInstanceOf[js.Any], W.asInstanceOf[js.Any])).asInstanceOf[T1]
   
-  @JSImport("webcola/dist/src/geom", "RRtangent_PolyPolyC")
-  @js.native
-  def RRtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = js.native
+  @scala.inline
+  def RRtangentPolyPolyC(V: js.Array[Point], W: js.Array[Point]): T1 = (^.asInstanceOf[js.Dynamic].applyDynamic("RRtangent_PolyPolyC")(V.asInstanceOf[js.Any], W.asInstanceOf[js.Any])).asInstanceOf[T1]
   
   @JSImport("webcola/dist/src/geom", "TVGPoint")
   @js.native
@@ -134,20 +132,16 @@ object geomMod {
     var polyvertid: Double = js.native
   }
   
-  @JSImport("webcola/dist/src/geom", "clockwiseRadialSweep")
-  @js.native
-  def clockwiseRadialSweep(p: Point, P: js.Array[Point], f: js.Function1[/* p */ Point, Unit]): Unit = js.native
+  @scala.inline
+  def clockwiseRadialSweep(p: Point, P: js.Array[Point], f: js.Function1[/* p */ Point, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clockwiseRadialSweep")(p.asInstanceOf[js.Any], P.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("webcola/dist/src/geom", "isLeft")
-  @js.native
-  def isLeft(P0: Point, P1: Point, P2: Point): Double = js.native
+  @scala.inline
+  def isLeft(P0: Point, P1: Point, P2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("isLeft")(P0.asInstanceOf[js.Any], P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webcola/dist/src/geom", "polysOverlap")
-  @js.native
-  def polysOverlap(p: js.Array[Point], q: js.Array[Point]): Boolean = js.native
+  @scala.inline
+  def polysOverlap(p: js.Array[Point], q: js.Array[Point]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("polysOverlap")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("webcola/dist/src/geom", "tangent_PolyPolyC")
-  @js.native
+  @scala.inline
   def tangentPolyPolyC(
     V: js.Array[Point],
     W: js.Array[Point],
@@ -155,9 +149,8 @@ object geomMod {
     t2: js.Function2[/* a */ Point, /* b */ js.Array[Point], Double],
     cmp1: js.Function3[/* a */ Point, /* b */ Point, /* c */ Point, Boolean],
     cmp2: js.Function3[/* a */ Point, /* b */ Point, /* c */ Point, Boolean]
-  ): T1 = js.native
+  ): T1 = (^.asInstanceOf[js.Dynamic].applyDynamic("tangent_PolyPolyC")(V.asInstanceOf[js.Any], W.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], cmp1.asInstanceOf[js.Any], cmp2.asInstanceOf[js.Any])).asInstanceOf[T1]
   
-  @JSImport("webcola/dist/src/geom", "tangents")
-  @js.native
-  def tangents(V: js.Array[Point], W: js.Array[Point]): BiTangents = js.native
+  @scala.inline
+  def tangents(V: js.Array[Point], W: js.Array[Point]): BiTangents = (^.asInstanceOf[js.Dynamic].applyDynamic("tangents")(V.asInstanceOf[js.Any], W.asInstanceOf[js.Any])).asInstanceOf[BiTangents]
 }

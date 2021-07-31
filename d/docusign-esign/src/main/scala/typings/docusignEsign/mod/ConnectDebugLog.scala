@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectDebugLog extends StObject {
   
   /**
     * The name of the Connect configuration.
     */
-  var connectConfig: js.UndefOr[String] = js.native
+  var connectConfig: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The UTC date and time of the event.
     */
-  var eventDateTime: js.UndefOr[String] = js.native
+  var eventDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the event.
     */
-  var eventDescription: js.UndefOr[String] = js.native
+  var eventDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Log output.
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
 }
 object ConnectDebugLog {
   

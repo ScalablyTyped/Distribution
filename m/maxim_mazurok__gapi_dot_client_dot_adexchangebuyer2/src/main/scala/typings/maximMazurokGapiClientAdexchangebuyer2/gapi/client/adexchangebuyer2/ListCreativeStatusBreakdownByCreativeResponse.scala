@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCreativeStatusBreakdownByCreativeResponse extends StObject {
   
   /** List of rows, with counts of bids with a given creative status aggregated by creative. */
-  var filteredBidCreativeRows: js.UndefOr[js.Array[FilteredBidCreativeRow]] = js.native
+  var filteredBidCreativeRows: js.UndefOr[js.Array[FilteredBidCreativeRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the ListCreativeStatusBreakdownByCreativeRequest.pageToken field in the subsequent call to the
     * filteredBids.creatives.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCreativeStatusBreakdownByCreativeResponse {
   

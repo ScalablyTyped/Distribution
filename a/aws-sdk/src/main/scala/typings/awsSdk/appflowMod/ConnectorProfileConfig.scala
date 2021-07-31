@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorProfileConfig extends StObject {
   
   /**
     *  The connector-specific credentials required by each connector. 
     */
-  var connectorProfileCredentials: ConnectorProfileCredentials = js.native
+  var connectorProfileCredentials: ConnectorProfileCredentials
   
   /**
     *  The connector-specific properties of the profile configuration. 
     */
-  var connectorProfileProperties: ConnectorProfileProperties = js.native
+  var connectorProfileProperties: ConnectorProfileProperties
 }
 object ConnectorProfileConfig {
   

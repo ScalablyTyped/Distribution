@@ -3,22 +3,22 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.stripeStrings.masterpass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MasterpassWallet extends CardWallet {
+trait MasterpassWallet
+  extends StObject
+     with CardWallet {
   
-  var masterpass: WalletData = js.native
+  var masterpass: WalletData
   
-  var `type`: masterpass = js.native
+  var `type`: masterpass
 }
 object MasterpassWallet {
   
   @scala.inline
-  def apply(masterpass: WalletData, `type`: masterpass): MasterpassWallet = {
+  def apply(masterpass: WalletData): MasterpassWallet = {
     val __obj = js.Dynamic.literal(masterpass = masterpass.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("masterpass")
     __obj.asInstanceOf[MasterpassWallet]
   }
   

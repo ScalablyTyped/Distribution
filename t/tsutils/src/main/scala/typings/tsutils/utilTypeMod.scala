@@ -11,90 +11,73 @@ import typings.typescript.mod.Type
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilTypeMod {
   
-  @JSImport("tsutils/util/type", "getCallSignaturesOfType")
+  @JSImport("tsutils/util/type", JSImport.Namespace)
   @js.native
-  def getCallSignaturesOfType(`type`: Type): js.Array[Signature] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tsutils/util/type", "getConstructorTypeOfClassLikeDeclaration")
-  @js.native
-  def getConstructorTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = js.native
+  @scala.inline
+  def getCallSignaturesOfType(`type`: Type): js.Array[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCallSignaturesOfType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Signature]]
   
-  @JSImport("tsutils/util/type", "getInstanceTypeOfClassLikeDeclaration")
-  @js.native
-  def getInstanceTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = js.native
+  @scala.inline
+  def getConstructorTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstructorTypeOfClassLikeDeclaration")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Type]
   
-  @JSImport("tsutils/util/type", "getIteratorYieldResultFromIteratorResult")
-  @js.native
-  def getIteratorYieldResultFromIteratorResult(`type`: Type, node: Node, checker: TypeChecker): Type = js.native
+  @scala.inline
+  def getInstanceTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOfClassLikeDeclaration")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Type]
   
-  @JSImport("tsutils/util/type", "getPropertyNameFromType")
-  @js.native
-  def getPropertyNameFromType(`type`: Type): js.UndefOr[PropertyName] = js.native
+  @scala.inline
+  def getIteratorYieldResultFromIteratorResult(`type`: Type, node: Node, checker: TypeChecker): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("getIteratorYieldResultFromIteratorResult")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Type]
   
-  @JSImport("tsutils/util/type", "getPropertyOfType")
-  @js.native
-  def getPropertyOfType(`type`: Type, name: String): js.UndefOr[Symbol] = js.native
+  @scala.inline
+  def getPropertyNameFromType(`type`: Type): js.UndefOr[PropertyName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyNameFromType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[PropertyName]]
   
-  @JSImport("tsutils/util/type", "intersectionTypeParts")
-  @js.native
-  def intersectionTypeParts(`type`: Type): js.Array[Type] = js.native
+  @scala.inline
+  def getPropertyOfType(`type`: Type, name: String): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyOfType")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
   
-  @JSImport("tsutils/util/type", "isBooleanLiteralType")
-  @js.native
-  def isBooleanLiteralType(`type`: Type, literal: Boolean): Boolean = js.native
+  @scala.inline
+  def intersectionTypeParts(`type`: Type): js.Array[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersectionTypeParts")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Type]]
   
-  @JSImport("tsutils/util/type", "isEmptyObjectType")
-  @js.native
-  def isEmptyObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = js.native
+  @scala.inline
+  def isBooleanLiteralType(`type`: Type, literal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBooleanLiteralType")(`type`.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "isFalsyType")
-  @js.native
-  def isFalsyType(`type`: Type): Boolean = js.native
+  @scala.inline
+  def isEmptyObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObjectType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ObjectType */ Boolean]
   
-  @JSImport("tsutils/util/type", "isPropertyReadonlyInType")
-  @js.native
-  def isPropertyReadonlyInType(`type`: Type, name: String, checker: TypeChecker): Boolean = js.native
+  @scala.inline
+  def isFalsyType(`type`: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFalsyType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "isThenableType")
-  @js.native
-  def isThenableType(checker: TypeChecker, node: Expression): Boolean = js.native
-  @JSImport("tsutils/util/type", "isThenableType")
-  @js.native
-  def isThenableType(checker: TypeChecker, node: Expression, `type`: Type): Boolean = js.native
-  @JSImport("tsutils/util/type", "isThenableType")
-  @js.native
-  def isThenableType(checker: TypeChecker, node: Node, `type`: Type): Boolean = js.native
+  @scala.inline
+  def isPropertyReadonlyInType(`type`: Type, name: String, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyReadonlyInType")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "isTypeAssignableToNumber")
-  @js.native
-  def isTypeAssignableToNumber(checker: TypeChecker, `type`: Type): Boolean = js.native
+  @scala.inline
+  def isThenableType(checker: TypeChecker, node: Expression): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThenableType")(checker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isThenableType(checker: TypeChecker, node: Expression, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThenableType")(checker.asInstanceOf[js.Any], node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isThenableType(checker: TypeChecker, node: Node, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThenableType")(checker.asInstanceOf[js.Any], node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "isTypeAssignableToString")
-  @js.native
-  def isTypeAssignableToString(checker: TypeChecker, `type`: Type): Boolean = js.native
+  @scala.inline
+  def isTypeAssignableToNumber(checker: TypeChecker, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAssignableToNumber")(checker.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "removeOptionalityFromType")
-  @js.native
-  def removeOptionalityFromType(checker: TypeChecker, `type`: Type): Type = js.native
+  @scala.inline
+  def isTypeAssignableToString(checker: TypeChecker, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAssignableToString")(checker.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "someTypePart")
-  @js.native
+  @scala.inline
+  def removeOptionalityFromType(checker: TypeChecker, `type`: Type): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOptionalityFromType")(checker.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Type]
+  
+  @scala.inline
   def someTypePart(
     `type`: Type,
     predicate: js.Function1[/* t */ Type, /* is typescript.typescript.UnionOrIntersectionType */ Boolean],
     cb: js.Function1[/* t */ Type, Boolean]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("someTypePart")(`type`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "symbolHasReadonlyDeclaration")
-  @js.native
-  def symbolHasReadonlyDeclaration(symbol: Symbol, checker: TypeChecker): Boolean = js.native
+  @scala.inline
+  def symbolHasReadonlyDeclaration(symbol: Symbol, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolHasReadonlyDeclaration")(symbol.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tsutils/util/type", "unionTypeParts")
-  @js.native
-  def unionTypeParts(`type`: Type): js.Array[Type] = js.native
+  @scala.inline
+  def unionTypeParts(`type`: Type): js.Array[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("unionTypeParts")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Type]]
 }

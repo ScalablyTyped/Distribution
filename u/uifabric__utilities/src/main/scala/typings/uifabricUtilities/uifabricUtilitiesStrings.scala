@@ -3,7 +3,6 @@ package typings.uifabricUtilities
 import typings.uifabricUtilities.mathMod.FitMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uifabricUtilitiesStrings {
@@ -154,12 +153,16 @@ object uifabricUtilitiesStrings {
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait contain extends FitMode
+  sealed trait contain
+    extends StObject
+       with FitMode
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait cover extends FitMode
+  sealed trait cover
+    extends StObject
+       with FitMode
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
   

@@ -10,9 +10,9 @@ beautifier.io for node
 | ------------------ | :-------------: |
 | Full name          | js-beautify |
 | Keywords           | beautify, beautifier, code-quality |
-| # releases         | 35 |
-| # dependents       | 1566 |
-| # downloads        | 75035631 |
+| # releases         | 15 |
+| # dependents       | 1669 |
+| # downloads        | 89304291 |
 | # stars            | 78 |
 
 ## Links

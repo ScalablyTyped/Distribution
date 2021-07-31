@@ -4,15 +4,13 @@ import typings.octokitTypes.anon.Allowmergecommit
 import typings.octokitTypes.anon.Autotriggerchecks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChecksSetSuitesPreferencesResponseData extends StObject {
   
-  var preferences: Autotriggerchecks = js.native
+  var preferences: Autotriggerchecks
   
-  var repository: Allowmergecommit = js.native
+  var repository: Allowmergecommit
 }
 object ChecksSetSuitesPreferencesResponseData {
   

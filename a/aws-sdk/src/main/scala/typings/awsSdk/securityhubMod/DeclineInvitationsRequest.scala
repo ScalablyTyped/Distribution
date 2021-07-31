@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclineInvitationsRequest extends StObject {
   
   /**
     * The list of account IDs for the accounts from which to decline the invitations to Security Hub.
     */
-  var AccountIds: AccountIdList = js.native
+  var AccountIds: AccountIdList
 }
 object DeclineInvitationsRequest {
   

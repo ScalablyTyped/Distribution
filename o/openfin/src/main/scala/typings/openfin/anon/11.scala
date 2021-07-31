@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.windowOptionMod.ResizeRegion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `11` extends StObject {
   
-  var newVal: js.UndefOr[ResizeRegion] = js.native
+  var newVal: js.UndefOr[ResizeRegion] = js.undefined
   
-  var oldVal: js.UndefOr[ResizeRegion] = js.native
+  var oldVal: js.UndefOr[ResizeRegion] = js.undefined
 }
 object `11` {
   

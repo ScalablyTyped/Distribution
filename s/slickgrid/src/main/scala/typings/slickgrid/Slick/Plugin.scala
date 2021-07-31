@@ -2,15 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plugin[T /* <: SlickData */] extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def init(grid: Grid[T]): Unit = js.native
+  def init(grid: Grid[T]): Unit
 }
 object Plugin {
   
@@ -21,7 +19,7 @@ object Plugin {
   }
   
   @scala.inline
-  implicit class PluginMutableBuilder[Self <: Plugin[_], T /* <: SlickData */] (val x: Self with Plugin[T]) extends AnyVal {
+  implicit class PluginMutableBuilder[Self <: Plugin[?], T /* <: SlickData */] (val x: Self & Plugin[T]) extends AnyVal {
     
     @scala.inline
     def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))

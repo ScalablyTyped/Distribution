@@ -2,20 +2,18 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The expected state of a client&#39;s local database.
   */
-@js.native
 trait SchemaChecksum extends StObject {
   
   /**
     * The SHA256 hash of the client state; that is, of the sorted list of all
     * hashes present in the database.
     */
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
 }
 object SchemaChecksum {
   

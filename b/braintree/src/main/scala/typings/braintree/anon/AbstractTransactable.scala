@@ -2,125 +2,123 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractTransactable extends StObject {
   
-  var AbstractTransactable: String = js.native
+  var AbstractTransactable: String
   
-  var AmexExpressCheckout: String = js.native
+  var AmexExpressCheckout: String
   
-  var AndroidPay: String = js.native
+  var AndroidPay: String
   
-  var AndroidPayAmEx: String = js.native
+  var AndroidPayAmEx: String
   
-  var AndroidPayDiscover: String = js.native
+  var AndroidPayDiscover: String
   
-  var AndroidPayMasterCard: String = js.native
+  var AndroidPayMasterCard: String
   
-  var AndroidPayVisa: String = js.native
+  var AndroidPayVisa: String
   
-  var ApplePayAmEx: String = js.native
+  var ApplePayAmEx: String
   
-  var ApplePayMasterCard: String = js.native
+  var ApplePayMasterCard: String
   
-  var ApplePayVisa: String = js.native
+  var ApplePayVisa: String
   
-  var Coinbase: String = js.native
+  var Coinbase: String
   
-  var Consumed: String = js.native
+  var Consumed: String
   
-  var Europe: String = js.native
+  var Europe: String
   
-  var GatewayRejectedFraud: String = js.native
+  var GatewayRejectedFraud: String
   
-  var LuhnInvalid: String = js.native
+  var LuhnInvalid: String
   
-  var MasterpassAmEx: String = js.native
+  var MasterpassAmEx: String
   
-  var MasterpassDiscover: String = js.native
+  var MasterpassDiscover: String
   
-  var MasterpassMasterCard: String = js.native
+  var MasterpassMasterCard: String
   
-  var MasterpassVisa: String = js.native
+  var MasterpassVisa: String
   
-  var PayPalBillingAgreement: String = js.native
+  var PayPalBillingAgreement: String
   
-  var PayPalFuturePayment: String = js.native
+  var PayPalFuturePayment: String
   
-  var PayPalFuturePaymentRefreshToken: String = js.native
+  var PayPalFuturePaymentRefreshToken: String
   
-  var PayPalOneTimePayment: String = js.native
+  var PayPalOneTimePayment: String
   
-  var ProcessorDeclinedAmEx: String = js.native
+  var ProcessorDeclinedAmEx: String
   
-  var ProcessorDeclinedDiscover: String = js.native
+  var ProcessorDeclinedDiscover: String
   
-  var ProcessorDeclinedMasterCard: String = js.native
+  var ProcessorDeclinedMasterCard: String
   
-  var ProcessorDeclinedVisa: String = js.native
+  var ProcessorDeclinedVisa: String
   
-  var ProcessorFailureJCB: String = js.native
+  var ProcessorFailureJCB: String
   
-  var SEPA: String = js.native
+  var SEPA: String
   
-  var SamsungPayAmEx: String = js.native
+  var SamsungPayAmEx: String
   
-  var SamsungPayDiscover: String = js.native
+  var SamsungPayDiscover: String
   
-  var SamsungPayMasterCard: String = js.native
+  var SamsungPayMasterCard: String
   
-  var SamsungPayVisa: String = js.native
+  var SamsungPayVisa: String
   
-  var Transactable: String = js.native
+  var Transactable: String
   
-  var TransactableAmEx: String = js.native
+  var TransactableAmEx: String
   
-  var TransactableCommercial: String = js.native
+  var TransactableCommercial: String
   
-  var TransactableCountryOfIssuanceCAD: String = js.native
+  var TransactableCountryOfIssuanceCAD: String
   
-  var TransactableCountryOfIssuanceUSA: String = js.native
+  var TransactableCountryOfIssuanceUSA: String
   
-  var TransactableDebit: String = js.native
+  var TransactableDebit: String
   
-  var TransactableDinersClub: String = js.native
+  var TransactableDinersClub: String
   
-  var TransactableDiscover: String = js.native
+  var TransactableDiscover: String
   
-  var TransactableDurbinRegulated: String = js.native
+  var TransactableDurbinRegulated: String
   
-  var TransactableHealthcare: String = js.native
+  var TransactableHealthcare: String
   
-  var TransactableIssuingBankNetworkOnly: String = js.native
+  var TransactableIssuingBankNetworkOnly: String
   
-  var TransactableJCB: String = js.native
+  var TransactableJCB: String
   
-  var TransactableMaestro: String = js.native
+  var TransactableMaestro: String
   
-  var TransactableMasterCard: String = js.native
+  var TransactableMasterCard: String
   
-  var TransactableNoIndicators: String = js.native
+  var TransactableNoIndicators: String
   
-  var TransactablePayroll: String = js.native
+  var TransactablePayroll: String
   
-  var TransactablePrepaid: String = js.native
+  var TransactablePrepaid: String
   
-  var TransactableUnknownIndicators: String = js.native
+  var TransactableUnknownIndicators: String
   
-  var TransactableVisa: String = js.native
+  var TransactableVisa: String
   
-  var VenmoAccount: String = js.native
+  var VenmoAccount: String
   
-  var VisaCheckoutAmEx: String = js.native
+  var VisaCheckoutAmEx: String
   
-  var VisaCheckoutDiscover: String = js.native
+  var VisaCheckoutDiscover: String
   
-  var VisaCheckoutMasterCard: String = js.native
+  var VisaCheckoutMasterCard: String
   
-  var VisaCheckoutVisa: String = js.native
+  var VisaCheckoutVisa: String
 }
 object AbstractTransactable {
   

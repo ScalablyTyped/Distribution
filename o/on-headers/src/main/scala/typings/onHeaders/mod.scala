@@ -3,7 +3,6 @@ package typings.onHeaders
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,10 @@ object mod {
     * @param listener Function to call prior to headers being emitted,
     *        the response object is passed as this context.
     */
+  @scala.inline
+  def apply(res: ServerResponse, listener: js.ThisFunction0[/* this */ ServerResponse, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("on-headers", JSImport.Namespace)
   @js.native
-  def apply(res: ServerResponse, listener: js.ThisFunction0[/* this */ ServerResponse, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
 }

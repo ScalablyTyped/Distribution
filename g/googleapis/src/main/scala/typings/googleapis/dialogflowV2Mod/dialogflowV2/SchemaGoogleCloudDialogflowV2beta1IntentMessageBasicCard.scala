@@ -2,39 +2,37 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The basic card message. Useful for displaying information.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCard extends StObject {
   
   /**
     * Optional. The collection of card buttons.
     */
-  var buttons: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton]] = js.native
+  var buttons: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton]] = js.undefined
   
   /**
     * Required, unless image is present. The body text of the card.
     */
-  var formattedText: js.UndefOr[String] = js.native
+  var formattedText: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The image for the card.
     */
-  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageImage] = js.native
+  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageImage] = js.undefined
   
   /**
     * Optional. The subtitle of the card.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The title of the card.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCard {
   

@@ -14,10 +14,13 @@ import typings.raven.ravenStrings.POST
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("raven", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("raven", "Client")
   @js.native
@@ -25,28 +28,28 @@ object mod {
     def this(dsn: String) = this()
     def this(dsn: `false`) = this()
     def this(options: ConstructorOptions) = this()
-    def this(dsn: js.UndefOr[scala.Nothing], options: ConstructorOptions) = this()
     def this(dsn: String, options: ConstructorOptions) = this()
+    def this(dsn: Unit, options: ConstructorOptions) = this()
     def this(dsn: `false`, options: ConstructorOptions) = this()
     
     def captureBreadcrumb(breadcrumb: js.Any): Unit = js.native
     
     def captureException(error: Error): String = js.native
     def captureException(error: Error, cb: CaptureCallback): String = js.native
-    def captureException(error: Error, options: js.UndefOr[scala.Nothing], cb: CaptureCallback): String = js.native
+    def captureException(error: Error, options: Unit, cb: CaptureCallback): String = js.native
     def captureException(error: Error, options: CaptureOptions): String = js.native
     def captureException(error: Error, options: CaptureOptions, cb: CaptureCallback): String = js.native
     
     def captureMessage(message: String): String = js.native
     def captureMessage(message: String, cb: CaptureCallback): String = js.native
-    def captureMessage(message: String, options: js.UndefOr[scala.Nothing], cb: CaptureCallback): String = js.native
+    def captureMessage(message: String, options: Unit, cb: CaptureCallback): String = js.native
     def captureMessage(message: String, options: CaptureOptions): String = js.native
     def captureMessage(message: String, options: CaptureOptions, cb: CaptureCallback): String = js.native
     
     def config(): this.type = js.native
-    def config(dsn: js.UndefOr[scala.Nothing], options: ConstructorOptions): this.type = js.native
     def config(dsn: String): this.type = js.native
     def config(dsn: String, options: ConstructorOptions): this.type = js.native
+    def config(dsn: Unit, options: ConstructorOptions): this.type = js.native
     def config(options: ConstructorOptions): this.type = js.native
     @JSName("config")
     def config_false(dsn: `false`): this.type = js.native
@@ -96,124 +99,105 @@ object mod {
     def wrap[T](options: js.Any, func: js.Function0[T]): js.Function0[T] = js.native
   }
   
-  @JSImport("raven", "captureBreadcrumb")
-  @js.native
-  def captureBreadcrumb(breadcrumb: js.Any): Unit = js.native
+  @scala.inline
+  def captureBreadcrumb(breadcrumb: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("raven", "captureException")
-  @js.native
-  def captureException(e: Error): String = js.native
-  @JSImport("raven", "captureException")
-  @js.native
-  def captureException(e: Error, cb: CaptureCallback): String = js.native
-  @JSImport("raven", "captureException")
-  @js.native
-  def captureException(e: Error, options: js.UndefOr[scala.Nothing], cb: CaptureCallback): String = js.native
-  @JSImport("raven", "captureException")
-  @js.native
-  def captureException(e: Error, options: CaptureOptions): String = js.native
-  @JSImport("raven", "captureException")
-  @js.native
-  def captureException(e: Error, options: CaptureOptions, cb: CaptureCallback): String = js.native
+  @scala.inline
+  def captureException(e: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def captureException(e: Error, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def captureException(e: Error, options: Unit, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def captureException(e: Error, options: CaptureOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def captureException(e: Error, options: CaptureOptions, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(e.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("raven", "captureMessage")
-  @js.native
-  def captureMessage(message: String): String = js.native
-  @JSImport("raven", "captureMessage")
-  @js.native
-  def captureMessage(message: String, cb: CaptureCallback): String = js.native
-  @JSImport("raven", "captureMessage")
-  @js.native
-  def captureMessage(message: String, options: js.UndefOr[scala.Nothing], cb: CaptureCallback): String = js.native
-  @JSImport("raven", "captureMessage")
-  @js.native
-  def captureMessage(message: String, options: CaptureOptions): String = js.native
-  @JSImport("raven", "captureMessage")
-  @js.native
-  def captureMessage(message: String, options: CaptureOptions, cb: CaptureCallback): String = js.native
+  @scala.inline
+  def captureMessage(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def captureMessage(message: String, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def captureMessage(message: String, options: Unit, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def captureMessage(message: String, options: CaptureOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def captureMessage(message: String, options: CaptureOptions, cb: CaptureCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("raven", "config")
-  @js.native
-  def config(): Client = js.native
-  @JSImport("raven", "config")
-  @js.native
-  def config(dsn: js.UndefOr[scala.Nothing], options: ConstructorOptions): Client = js.native
-  @JSImport("raven", "config")
-  @js.native
-  def config(dsn: String): Client = js.native
-  @JSImport("raven", "config")
-  @js.native
-  def config(dsn: String, options: ConstructorOptions): Client = js.native
-  @JSImport("raven", "config")
-  @js.native
-  def config(options: ConstructorOptions): Client = js.native
-  @JSImport("raven", "config")
-  @js.native
-  def config_false(dsn: `false`): Client = js.native
-  @JSImport("raven", "config")
-  @js.native
-  def config_false(dsn: `false`, options: ConstructorOptions): Client = js.native
+  @scala.inline
+  def config(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[Client]
+  @scala.inline
+  def config(dsn: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def config(dsn: String, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  @scala.inline
+  def config(dsn: Unit, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  @scala.inline
+  def config(options: ConstructorOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("raven", "context")
-  @js.native
-  def context[T](ctx: js.Any, func: js.Function0[T]): T = js.native
-  @JSImport("raven", "context")
-  @js.native
-  def context[T](func: js.Function0[T]): T = js.native
+  @scala.inline
+  def config_false(dsn: `false`): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def config_false(dsn: `false`, options: ConstructorOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(dsn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   
-  @JSImport("raven", "disableConsoleAlerts")
-  @js.native
-  def disableConsoleAlerts(): Unit = js.native
+  @scala.inline
+  def context[T](ctx: js.Any, func: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("context")(ctx.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def context[T](func: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(func.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("raven", "errorHandler")
-  @js.native
+  @scala.inline
+  def disableConsoleAlerts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableConsoleAlerts")().asInstanceOf[Unit]
+  
+  @scala.inline
   def errorHandler(): js.Function4[
     /* e */ Error, 
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")().asInstanceOf[js.Function4[
+    /* e */ Error, 
+    /* req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
   
-  @JSImport("raven", "getContext")
-  @js.native
-  def getContext(): js.Any = js.native
+  @scala.inline
+  def getContext(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[js.Any]
   
-  @JSImport("raven", "install")
-  @js.native
-  def install(): Client = js.native
-  @JSImport("raven", "install")
-  @js.native
-  def install(cb: FatalErrorCallback): Client = js.native
+  @scala.inline
+  def install(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Client]
+  @scala.inline
+  def install(cb: FatalErrorCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(cb.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("raven", "interceptErr")
-  @js.native
-  def interceptErr(ctx: js.Any): Client = js.native
+  @scala.inline
+  def interceptErr(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptErr")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("raven", "mergeContext")
-  @js.native
-  def mergeContext(ctx: js.Any): Client = js.native
+  @scala.inline
+  def mergeContext(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("raven", "requestHandler")
-  @js.native
+  @scala.inline
   def requestHandler(): js.Function3[
     /* req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestHandler")().asInstanceOf[js.Function3[
+    /* req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
   
-  @JSImport("raven", "setContext")
-  @js.native
-  def setContext(ctx: js.Any): Client = js.native
+  @scala.inline
+  def setContext(ctx: js.Any): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(ctx.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("raven", "setDataCallback")
-  @js.native
-  def setDataCallback(fn: DataCallback): Client = js.native
+  @scala.inline
+  def setDataCallback(fn: DataCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setDataCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Client]
   
-  @JSImport("raven", "setShouldSendCallback")
-  @js.native
-  def setShouldSendCallback(fn: ShouldSendCallback): Client = js.native
+  @scala.inline
+  def setShouldSendCallback(fn: ShouldSendCallback): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("setShouldSendCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Client]
   
   object transports {
     
@@ -257,24 +241,23 @@ object mod {
     @js.native
     val https: HTTPSTransport = js.native
     
-    @js.native
     trait HTTPTransportOptions extends StObject {
       
-      var agent: js.UndefOr[Agent] = js.native
+      var agent: js.UndefOr[Agent] = js.undefined
       
-      var ca: js.UndefOr[String] = js.native
+      var ca: js.UndefOr[String] = js.undefined
       
-      var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+      var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
       
-      var hostname: js.UndefOr[String] = js.native
+      var hostname: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[POST | GET] = js.native
+      var method: js.UndefOr[POST | GET] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
       
-      var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+      var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     }
     object HTTPTransportOptions {
       
@@ -338,51 +321,49 @@ object mod {
     }
   }
   
-  @JSImport("raven", "uninstall")
-  @js.native
-  def uninstall(): Client = js.native
+  @scala.inline
+  def uninstall(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Client]
   
   object utils {
     
-    @JSImport("raven", "utils.consoleAlert")
+    @JSImport("raven", "utils")
     @js.native
-    def consoleAlert(msg: String): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("raven", "utils.parseDSN")
-    @js.native
-    def parseDSN(dsn: String): parsedDSN | `false` = js.native
-    @JSImport("raven", "utils.parseDSN")
-    @js.native
-    def parseDSN_false(dsn: `false`): parsedDSN | `false` = js.native
+    @scala.inline
+    def consoleAlert(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("consoleAlert")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def parseDSN(dsn: String): parsedDSN | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSN")(dsn.asInstanceOf[js.Any]).asInstanceOf[parsedDSN | `false`]
+    
+    @scala.inline
+    def parseDSN_false(dsn: `false`): parsedDSN | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDSN")(dsn.asInstanceOf[js.Any]).asInstanceOf[parsedDSN | `false`]
   }
   
   @JSImport("raven", "version")
   @js.native
   val version: String = js.native
   
-  @JSImport("raven", "wrap")
-  @js.native
-  def wrap[T](func: js.Function0[T]): js.Function0[T] = js.native
-  @JSImport("raven", "wrap")
-  @js.native
-  def wrap[T](options: js.Any, func: js.Function0[T]): js.Function0[T] = js.native
+  @scala.inline
+  def wrap[T](func: js.Function0[T]): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
+  @scala.inline
+  def wrap[T](options: js.Any, func: js.Function0[T]): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(options.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
   
   type CaptureCallback = js.Function2[/* sendErr */ js.UndefOr[Error | Null], /* eventId */ js.Any, Unit]
   
-  @js.native
   trait CaptureOptions extends StObject {
     
-    var extra: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var extra: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var fingerprint: js.UndefOr[js.Array[String]] = js.native
+    var fingerprint: js.UndefOr[js.Array[String]] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var req: js.UndefOr[IncomingMessage] = js.native
+    var req: js.UndefOr[IncomingMessage] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var user: js.UndefOr[js.Any] = js.native
+    var user: js.UndefOr[js.Any] = js.undefined
   }
   object CaptureOptions {
     
@@ -436,40 +417,39 @@ object mod {
     }
   }
   
-  @js.native
   trait ConstructorOptions extends StObject {
     
-    var autoBreadcrumbs: js.UndefOr[Boolean | StringDictionary[Boolean]] = js.native
+    var autoBreadcrumbs: js.UndefOr[Boolean | StringDictionary[Boolean]] = js.undefined
     
-    var captureUnhandledRejections: js.UndefOr[Boolean] = js.native
+    var captureUnhandledRejections: js.UndefOr[Boolean] = js.undefined
     
-    var dataCallback: js.UndefOr[DataCallback] = js.native
+    var dataCallback: js.UndefOr[DataCallback] = js.undefined
     
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var extra: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var extra: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var logger: js.UndefOr[String] = js.native
+    var logger: js.UndefOr[String] = js.undefined
     
-    var maxBreadcrumbs: js.UndefOr[Double] = js.native
+    var maxBreadcrumbs: js.UndefOr[Double] = js.undefined
     
-    var maxReqQueueCount: js.UndefOr[Double] = js.native
+    var maxReqQueueCount: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var parseUser: js.UndefOr[Boolean | js.Array[String] | parseUserCallback] = js.native
+    var parseUser: js.UndefOr[Boolean | js.Array[String] | parseUserCallback] = js.undefined
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
-    var sendTimeout: js.UndefOr[Double] = js.native
+    var sendTimeout: js.UndefOr[Double] = js.undefined
     
-    var shouldSendCallback: js.UndefOr[ShouldSendCallback] = js.native
+    var shouldSendCallback: js.UndefOr[ShouldSendCallback] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var transport: js.UndefOr[Transport] = js.native
+    var transport: js.UndefOr[Transport] = js.undefined
   }
   object ConstructorOptions {
     
@@ -594,22 +574,21 @@ object mod {
   
   type parseUserCallback = js.Function1[/* req */ js.Any, js.Any]
   
-  @js.native
   trait parsedDSN extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var private_key: String = js.native
+    var private_key: String
     
-    var project_id: String = js.native
+    var project_id: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var public_key: String = js.native
+    var public_key: String
   }
   object parsedDSN {
     

@@ -15,7 +15,6 @@ import typings.streamjs.Stream.Predicate
 import typings.streamjs.Stream.Sample
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -67,14 +66,14 @@ trait Stream[T] extends StObject {
   
   def indexBy(keyMapper: js.Function): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
   ] = js.native
   def indexBy(keyMapper: js.Function, mergeFunction: Accumulator[T]): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
   ] = js.native
   
-  def iterator(): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
+  def iterator(): Iterator[T, js.Any, Unit] = js.native
   
   def join(): String = js.native
   def join(delimiter: String): String = js.native
@@ -145,39 +144,59 @@ trait Stream[T] extends StObject {
   
   def toMap(keyMapper: js.Function): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
   ] = js.native
   def toMap(keyMapper: js.Function, mergeFunction: Accumulator[T]): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
   ] = js.native
   def toMap(path: String): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
   ] = js.native
   def toMap(path: String, mergeFunction: Accumulator[T]): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
   ] = js.native
 }
 object Stream {
   
   type Accumulator[T] = js.Function2[/* e1 */ T, /* e2 */ T, T]
   
-  @js.native
   trait Collector[T] extends StObject {
     
-    def accumulator(e1: T, e2: T): T = js.native
+    def accumulator(e1: T, e2: T): T
     @JSName("accumulator")
-    var accumulator_Original: Accumulator[T] = js.native
+    var accumulator_Original: Accumulator[T]
     
-    def finisher(elem: T): T = js.native
+    def finisher(elem: T): T
     @JSName("finisher")
-    var finisher_Original: Function[T, T] = js.native
+    var finisher_Original: Function[T, T]
     
-    def supplier(): T = js.native
+    def supplier(): T
     @JSName("supplier")
-    var supplier_Original: Supplier[T] = js.native
+    var supplier_Original: Supplier[T]
+  }
+  object Collector {
+    
+    @scala.inline
+    def apply[T](accumulator: (T, T) => T, finisher: T => T, supplier: () => T): Collector[T] = {
+      val __obj = js.Dynamic.literal(accumulator = js.Any.fromFunction2(accumulator), finisher = js.Any.fromFunction1(finisher), supplier = js.Any.fromFunction0(supplier))
+      __obj.asInstanceOf[Collector[T]]
+    }
+    
+    @scala.inline
+    implicit class CollectorMutableBuilder[Self <: Collector[?], T] (val x: Self & Collector[T]) extends AnyVal {
+      
+      @scala.inline
+      def setAccumulator(value: (T, T) => T): Self = StObject.set(x, "accumulator", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFinisher(value: T => T): Self = StObject.set(x, "finisher", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSupplier(value: () => T): Self = StObject.set(x, "supplier", js.Any.fromFunction0(value))
+    }
   }
   
   type Comparator[T] = js.Function2[/* e1 */ T, /* e2 */ T, Double]
@@ -188,12 +207,11 @@ object Stream {
   
   type GroupingResult[T] = StringDictionary[js.Array[T]]
   
-  @js.native
   trait Iterator[T] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    def next(): T = js.native
+    def next(): T
   }
   object Iterator {
     
@@ -204,7 +222,7 @@ object Stream {
     }
     
     @scala.inline
-    implicit class IteratorMutableBuilder[Self <: typings.streamjs.Stream.Iterator[_], T] (val x: Self with typings.streamjs.Stream.Iterator[T]) extends AnyVal {
+    implicit class IteratorMutableBuilder[Self <: typings.streamjs.Stream.Iterator[?], T] (val x: Self & typings.streamjs.Stream.Iterator[T]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
@@ -214,14 +232,13 @@ object Stream {
     }
   }
   
-  @js.native
   trait JoinOptions extends StObject {
     
-    var delimiter: String = js.native
+    var delimiter: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var suffix: String = js.native
+    var suffix: String
   }
   object JoinOptions {
     
@@ -247,26 +264,25 @@ object Stream {
   
   type Map[T] = StringDictionary[T]
   
-  @js.native
   trait Optional[T] extends StObject {
     
-    def filter(predicate: js.Function1[/* elem */ T, Boolean]): Optional[T] = js.native
+    def filter(predicate: js.Function1[/* elem */ T, Boolean]): Optional[T]
     
-    def flatMap[U](mapper: js.Function1[/* elem */ T, Optional[U]]): Optional[U] = js.native
+    def flatMap[U](mapper: js.Function1[/* elem */ T, Optional[U]]): Optional[U]
     
-    def get(): T = js.native
+    def get(): T
     
-    def ifPresent(consumer: js.Function1[/* elem */ T, Unit]): Unit = js.native
+    def ifPresent(consumer: js.Function1[/* elem */ T, Unit]): Unit
     
-    def isPresent(): Boolean = js.native
+    def isPresent(): Boolean
     
-    def map[U](mapper: js.Function1[/* elem */ T, U]): Optional[U] = js.native
+    def map[U](mapper: js.Function1[/* elem */ T, U]): Optional[U]
     
-    def orElse(other: T): T = js.native
+    def orElse(other: T): T
     
-    def orElseGet(supplier: Supplier[T]): T = js.native
+    def orElseGet(supplier: Supplier[T]): T
     
-    def orElseThrow(error: js.Any): T = js.native
+    def orElseThrow(error: js.Any): T
   }
   object Optional {
     
@@ -287,7 +303,7 @@ object Stream {
     }
     
     @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional[_], T] (val x: Self with Optional[T]) extends AnyVal {
+    implicit class OptionalMutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
       
       @scala.inline
       def setFilter(value: js.Function1[/* elem */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))

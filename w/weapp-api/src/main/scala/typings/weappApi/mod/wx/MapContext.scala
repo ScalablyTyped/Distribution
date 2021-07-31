@@ -2,29 +2,27 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapContext extends StObject {
   
   //  获取当前地图中心的经纬度。返回的是 gcj02 坐标系，可以用于 wx.openLocation()
-  def getCenterLocation(options: GetCenterLocationSuccCbOptions): Unit = js.native
+  def getCenterLocation(options: GetCenterLocationSuccCbOptions): Unit
   
   //  获取当前地图的视野范围
-  def getRegion(options: GetReginOptions): Unit = js.native
+  def getRegion(options: GetReginOptions): Unit
   
   //  获取当前地图的缩放级别
-  def getScale(options: GetScaleOptions): Unit = js.native
+  def getScale(options: GetScaleOptions): Unit
   
   //  缩放视野展示所有经纬度
-  def includePoints(options: zoomPointsOptions): Unit = js.native
+  def includePoints(options: zoomPointsOptions): Unit
   
   //  将地图中心移动到当前定位点。需要配合map组件的show-location使用
-  def moveToLocation(): Unit = js.native
+  def moveToLocation(): Unit
   
   //  平移marker，带动画
-  def translateMarker(options: translateMarkerOptions): Unit = js.native
+  def translateMarker(options: translateMarkerOptions): Unit
 }
 object MapContext {
   

@@ -2,7 +2,6 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,54 +11,68 @@ sealed trait ExtensionPolicyFlags extends StObject
 object ExtensionPolicyFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExtensionPolicyFlags with Double] = js.native
+  def apply(value: Double): js.UndefOr[ExtensionPolicyFlags & Double] = js.native
   
   /**
     * Mask that defines all permissions
     */
   @js.native
-  sealed trait All extends ExtensionPolicyFlags
-  /* 31 */ val All: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.All with Double = js.native
+  sealed trait All
+    extends StObject
+       with ExtensionPolicyFlags
+  /* 31 */ val All: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.All & Double = js.native
   
   /**
     * Permission in 1st party extensions
     */
   @js.native
-  sealed trait FirstParty extends ExtensionPolicyFlags
-  /* 16 */ val FirstParty: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.FirstParty with Double = js.native
+  sealed trait FirstParty
+    extends StObject
+       with ExtensionPolicyFlags
+  /* 16 */ val FirstParty: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.FirstParty & Double = js.native
   
   /**
     * No permission
     */
   @js.native
-  sealed trait None extends ExtensionPolicyFlags
-  /* 0 */ val None: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with ExtensionPolicyFlags
+  /* 0 */ val None: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.None & Double = js.native
   
   /**
     * Premission in extensions that are in preview
     */
   @js.native
-  sealed trait Preview extends ExtensionPolicyFlags
-  /* 4 */ val Preview: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Preview with Double = js.native
+  sealed trait Preview
+    extends StObject
+       with ExtensionPolicyFlags
+  /* 4 */ val Preview: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Preview & Double = js.native
   
   /**
     * Permission on private extensions
     */
   @js.native
-  sealed trait Private extends ExtensionPolicyFlags
-  /* 1 */ val Private: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Private with Double = js.native
+  sealed trait Private
+    extends StObject
+       with ExtensionPolicyFlags
+  /* 1 */ val Private: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Private & Double = js.native
   
   /**
     * Permission on public extensions
     */
   @js.native
-  sealed trait Public extends ExtensionPolicyFlags
-  /* 2 */ val Public: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Public with Double = js.native
+  sealed trait Public
+    extends StObject
+       with ExtensionPolicyFlags
+  /* 2 */ val Public: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Public & Double = js.native
   
   /**
     * Premission in relased extensions
     */
   @js.native
-  sealed trait Released extends ExtensionPolicyFlags
-  /* 8 */ val Released: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Released with Double = js.native
+  sealed trait Released
+    extends StObject
+       with ExtensionPolicyFlags
+  /* 8 */ val Released: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Released & Double = js.native
 }

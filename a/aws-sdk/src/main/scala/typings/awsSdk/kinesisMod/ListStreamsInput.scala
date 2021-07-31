@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamsInput extends StObject {
   
   /**
     * The name of the stream to start the list with.
     */
-  var ExclusiveStartStreamName: js.UndefOr[StreamName] = js.native
+  var ExclusiveStartStreamName: js.UndefOr[StreamName] = js.undefined
   
   /**
     * The maximum number of streams to list.
     */
-  var Limit: js.UndefOr[ListStreamsInputLimit] = js.native
+  var Limit: js.UndefOr[ListStreamsInputLimit] = js.undefined
 }
 object ListStreamsInput {
   

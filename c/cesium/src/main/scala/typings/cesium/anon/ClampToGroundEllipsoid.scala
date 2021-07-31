@@ -2,17 +2,15 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClampToGroundEllipsoid extends StObject {
   
-  var clampToGround: js.UndefOr[Boolean] = js.native
+  var clampToGround: js.UndefOr[Boolean] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var sourceUri: js.UndefOr[String] = js.native
+  var sourceUri: js.UndefOr[String] = js.undefined
 }
 object ClampToGroundEllipsoid {
   

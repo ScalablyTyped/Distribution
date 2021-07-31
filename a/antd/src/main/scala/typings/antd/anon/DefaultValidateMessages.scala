@@ -2,15 +2,13 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultValidateMessages extends StObject {
   
-  var defaultValidateMessages: typings.rcFieldForm.interfaceMod.ValidateMessages = js.native
+  var defaultValidateMessages: typings.rcFieldForm.interfaceMod.ValidateMessages
   
-  var optional: js.UndefOr[String] = js.native
+  var optional: js.UndefOr[String] = js.undefined
 }
 object DefaultValidateMessages {
   

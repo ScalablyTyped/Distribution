@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.HistogramResult
 import typings.arcgisJsApi.esri.histogramHistogramParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object histogramMod extends Shortcut {

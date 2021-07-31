@@ -4,123 +4,121 @@ import typings.iscroll.anon.Fn
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScrollOptions extends StObject {
   
-  var HWCompositing: js.UndefOr[Boolean] = js.native
+  var HWCompositing: js.UndefOr[Boolean] = js.undefined
   
-  var bounce: js.UndefOr[Boolean] = js.native
+  var bounce: js.UndefOr[Boolean] = js.undefined
   
   ///String or function
-  var bounceEasing: js.UndefOr[String | Fn] = js.native
+  var bounceEasing: js.UndefOr[String | Fn] = js.undefined
   
-  var bounceLock: js.UndefOr[Boolean] = js.native
+  var bounceLock: js.UndefOr[Boolean] = js.undefined
   
-  var bounceTime: js.UndefOr[Double] = js.native
+  var bounceTime: js.UndefOr[Double] = js.undefined
   
-  var checkDOMChanges: js.UndefOr[Boolean] = js.native
+  var checkDOMChanges: js.UndefOr[Boolean] = js.undefined
   
-  var click: js.UndefOr[Boolean] = js.native
+  var click: js.UndefOr[Boolean] = js.undefined
   
-  var directionLockThreshold: js.UndefOr[Double] = js.native
+  var directionLockThreshold: js.UndefOr[Double] = js.undefined
   
   // Pointer events
-  var disableMouse: js.UndefOr[Boolean] = js.native
+  var disableMouse: js.UndefOr[Boolean] = js.undefined
   
-  var disablePointer: js.UndefOr[Boolean] = js.native
+  var disablePointer: js.UndefOr[Boolean] = js.undefined
   
-  var disableTouch: js.UndefOr[Boolean] = js.native
+  var disableTouch: js.UndefOr[Boolean] = js.undefined
   
-  var doubleTapZoom: js.UndefOr[Double] = js.native
+  var doubleTapZoom: js.UndefOr[Double] = js.undefined
   
-  var eventPassthrough: js.UndefOr[String | Boolean] = js.native
+  var eventPassthrough: js.UndefOr[String | Boolean] = js.undefined
   
-  var fadeScrollbar: js.UndefOr[Boolean] = js.native
+  var fadeScrollbar: js.UndefOr[Boolean] = js.undefined
   
-  var fadeScrollbars: js.UndefOr[Boolean] = js.native
+  var fadeScrollbars: js.UndefOr[Boolean] = js.undefined
   
-  var fixedScrollbar: js.UndefOr[Boolean] = js.native
+  var fixedScrollbar: js.UndefOr[Boolean] = js.undefined
   
-  var freeScroll: js.UndefOr[Boolean] = js.native
+  var freeScroll: js.UndefOr[Boolean] = js.undefined
   
   // Scrollbar
-  var hScrollbar: js.UndefOr[Boolean] = js.native
+  var hScrollbar: js.UndefOr[Boolean] = js.undefined
   
-  var handleClick: js.UndefOr[Boolean] = js.native
+  var handleClick: js.UndefOr[Boolean] = js.undefined
   
-  var hideScrollbar: js.UndefOr[Boolean] = js.native
+  var hideScrollbar: js.UndefOr[Boolean] = js.undefined
   
-  var interactiveScrollbars: js.UndefOr[Boolean] = js.native
+  var interactiveScrollbars: js.UndefOr[Boolean] = js.undefined
   
-  var invertWheelDirection: js.UndefOr[Boolean] = js.native
+  var invertWheelDirection: js.UndefOr[Boolean] = js.undefined
   
-  var lockDirection: js.UndefOr[Boolean] = js.native
+  var lockDirection: js.UndefOr[Boolean] = js.undefined
   
-  var momentum: js.UndefOr[Boolean] = js.native
+  var momentum: js.UndefOr[Boolean] = js.undefined
   
-  var mouseWheel: js.UndefOr[Boolean] = js.native
+  var mouseWheel: js.UndefOr[Boolean] = js.undefined
   
-  var mouseWheelSpeed: js.UndefOr[Double] = js.native
+  var mouseWheelSpeed: js.UndefOr[Double] = js.undefined
   
-  var preventDefault: js.UndefOr[Boolean] = js.native
+  var preventDefault: js.UndefOr[Boolean] = js.undefined
   
-  var preventDefaultException: js.UndefOr[js.Array[RegExp] | js.Object] = js.native
+  var preventDefaultException: js.UndefOr[js.Array[RegExp] | js.Object] = js.undefined
   
   // iScroll probe edition
-  var probeType: js.UndefOr[Double] = js.native
+  var probeType: js.UndefOr[Double] = js.undefined
   
-  var releaseScroll: js.UndefOr[Boolean] = js.native
+  var releaseScroll: js.UndefOr[Boolean] = js.undefined
   
   // New in IScroll 5?
-  var resizeIndicator: js.UndefOr[Boolean] = js.native
+  var resizeIndicator: js.UndefOr[Boolean] = js.undefined
   
-  var resizePolling: js.UndefOr[Double] = js.native
+  var resizePolling: js.UndefOr[Double] = js.undefined
   
   //hScroll?: boolean;
   //vScroll?: boolean;
-  var scrollX: js.UndefOr[Boolean] = js.native
+  var scrollX: js.UndefOr[Boolean] = js.undefined
   
-  var scrollY: js.UndefOr[Boolean] = js.native
+  var scrollY: js.UndefOr[Boolean] = js.undefined
   
-  var scrollbarClass: js.UndefOr[String] = js.native
+  var scrollbarClass: js.UndefOr[String] = js.undefined
   
-  var scrollbars: js.UndefOr[Boolean | String] = js.native
+  var scrollbars: js.UndefOr[Boolean | String] = js.undefined
   
-  var shrinkScrollbars: js.UndefOr[String] = js.native
+  var shrinkScrollbars: js.UndefOr[String] = js.undefined
   
-  var snap: js.UndefOr[String | Boolean] = js.native
+  var snap: js.UndefOr[String | Boolean] = js.undefined
   
-  var snapThreshold: js.UndefOr[Double] = js.native
+  var snapThreshold: js.UndefOr[Double] = js.undefined
   
-  var startX: js.UndefOr[Double] = js.native
+  var startX: js.UndefOr[Double] = js.undefined
   
-  var startY: js.UndefOr[Double] = js.native
+  var startY: js.UndefOr[Double] = js.undefined
   
-  var tap: js.UndefOr[Boolean] = js.native
+  var tap: js.UndefOr[Boolean] = js.undefined
   
-  var topOffset: js.UndefOr[Double] = js.native
+  var topOffset: js.UndefOr[Double] = js.undefined
   
-  var useTransform: js.UndefOr[Boolean] = js.native
+  var useTransform: js.UndefOr[Boolean] = js.undefined
   
-  var useTransition: js.UndefOr[Boolean] = js.native
+  var useTransition: js.UndefOr[Boolean] = js.undefined
   
-  var vScrollbar: js.UndefOr[Boolean] = js.native
+  var vScrollbar: js.UndefOr[Boolean] = js.undefined
   
-  var wheelAction: js.UndefOr[String] = js.native
+  var wheelAction: js.UndefOr[String] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
   // Zoom
-  var zoom: js.UndefOr[Boolean] = js.native
+  var zoom: js.UndefOr[Boolean] = js.undefined
   
-  var zoomMax: js.UndefOr[Double] = js.native
+  var zoomMax: js.UndefOr[Double] = js.undefined
   
-  var zoomMin: js.UndefOr[Double] = js.native
+  var zoomMin: js.UndefOr[Double] = js.undefined
 }
 object IScrollOptions {
   

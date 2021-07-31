@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDescribeMergeConflictsError extends StObject {
   
   /**
     * The name of the exception.
     */
-  var exceptionName: ExceptionName = js.native
+  var exceptionName: ExceptionName
   
   /**
     * The path to the file.
     */
-  var filePath: Path = js.native
+  var filePath: Path
   
   /**
     * The message provided by the exception.
     */
-  var message: Message = js.native
+  var message: Message
 }
 object BatchDescribeMergeConflictsError {
   

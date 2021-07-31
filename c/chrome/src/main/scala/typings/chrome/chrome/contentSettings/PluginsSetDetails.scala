@@ -5,14 +5,14 @@ import typings.chrome.chromeStrings.block
 import typings.chrome.chromeStrings.detect_important_content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginsSetDetails extends SetDetails {
+trait PluginsSetDetails
+  extends StObject
+     with SetDetails {
   
   @JSName("setting")
-  var setting_PluginsSetDetails: allow | block | detect_important_content = js.native
+  var setting_PluginsSetDetails: allow | block | detect_important_content
 }
 object PluginsSetDetails {
   

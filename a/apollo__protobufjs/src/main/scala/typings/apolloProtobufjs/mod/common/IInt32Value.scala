@@ -2,14 +2,12 @@ package typings.apolloProtobufjs.mod.common
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.Int32Value message. */
-@js.native
 trait IInt32Value extends StObject {
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object IInt32Value {
   

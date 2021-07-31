@@ -1,11 +1,12 @@
 package typings.ecol
 
 import typings.ecol.collectionEventMod.CollectionEvent
+import typings.ecol.collectionEventMod.CollectionEvent.Listener
+import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.hashMapCollectionMod.HashMapCollection.Event
 import typings.ecol.icollectionMod.ICollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hashMapCollectionMod {
@@ -14,7 +15,8 @@ object hashMapCollectionMod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> * / any */ @JSImport("ecol/lib/maps/HashMapCollection", "HashMapCollection")
   @js.native
   class HashMapCollection[Key, T] ()
-    extends ICollection[
+    extends StObject
+       with ICollection[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
@@ -37,8 +39,28 @@ object hashMapCollectionMod {
       last: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any
     ): Unit = js.native
     
+    /* CompleteClass */
+    override def addEventListener(
+      `type`: Type,
+      listener: Listener[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+        ]
+    ): Unit = js.native
+    
     def clear(): Unit = js.native
     
+    /* CompleteClass */
+    override def dispatchEvent(
+      event: CollectionEvent[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+        ]
+    ): Unit = js.native
     /**
       * @inheritDoc
       */
@@ -46,8 +68,8 @@ object hashMapCollectionMod {
       event: Event[
           Key, 
           T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ _, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any
         ]
     ): Unit = js.native
     
@@ -55,6 +77,20 @@ object hashMapCollectionMod {
       * @hidden
       */
     var dispatcher_ : js.Any = js.native
+    
+    /* CompleteClass */
+    override def hasEventListener(`type`: Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def removeEventListener(
+      `type`: Type,
+      listener: Listener[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+        ]
+    ): Unit = js.native
   }
   object HashMapCollection {
     

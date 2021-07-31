@@ -10,9 +10,9 @@ Simple id generation and caching
 | ------------------ | :-------------: |
 | Full name          | ids |
 | Keywords           | id, ids, id-generator |
-| # releases         | 2 |
-| # dependents       | 55 |
-| # downloads        | 776032 |
+| # releases         | 1 |
+| # dependents       | 65 |
+| # downloads        | 945101 |
 | # stars            | 0 |
 
 ## Links

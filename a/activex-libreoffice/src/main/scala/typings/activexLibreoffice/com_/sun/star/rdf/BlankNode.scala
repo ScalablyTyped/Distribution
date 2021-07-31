@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,8 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.0
   */
-@js.native
-trait BlankNode extends XNode {
+trait BlankNode
+  extends StObject
+     with XNode {
   
   /**
     * create a blank RDF node.
@@ -22,7 +22,7 @@ trait BlankNode extends XNode {
     * @see XRepository.createBlankNode
     * @throws com::sun::star::lang::IllegalArgumentException if the argument does not represent a valid blank node ID
     */
-  def create(NodeID: String): Unit = js.native
+  def create(NodeID: String): Unit
 }
 object BlankNode {
   

@@ -2,13 +2,11 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceFromEnd extends StObject {
   
-  var distanceFromEnd: Double = js.native
+  var distanceFromEnd: Double
 }
 object DistanceFromEnd {
   

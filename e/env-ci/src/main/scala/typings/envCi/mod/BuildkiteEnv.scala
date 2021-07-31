@@ -1,41 +1,39 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.Buildkite
 import typings.envCi.envCiStrings.buildkite_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildkiteEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: String = js.native
+  var branch: String
   
-  var build: String = js.native
+  var build: String
   
-  var buildUrl: String = js.native
+  var buildUrl: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var name: Buildkite = js.native
+  var name: Buildkite
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var prBranch: js.UndefOr[String] = js.native
+  var prBranch: js.UndefOr[String] = js.undefined
   
-  var root: String = js.native
+  var root: String
   
-  var service: buildkite_ = js.native
+  var service: buildkite_
   
-  var slug: String = js.native
+  var slug: String
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object BuildkiteEnv {
   
@@ -45,14 +43,11 @@ object BuildkiteEnv {
     build: String,
     buildUrl: String,
     commit: String,
-    isCi: `true`,
     isPr: Boolean,
-    name: Buildkite,
     root: String,
-    service: buildkite_,
     slug: String
   ): BuildkiteEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Buildkite", root = root.asInstanceOf[js.Any], service = "buildkite", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildkiteEnv]
   }
   

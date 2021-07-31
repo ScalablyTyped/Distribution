@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Restrictions extends StObject {
   
   /**
     * A complex type that controls the countries in which your content is distributed. CloudFront determines the location of your users using MaxMind GeoIP databases.
     */
-  var GeoRestriction: typings.awsSdk.cloudfrontMod.GeoRestriction = js.native
+  var GeoRestriction: typings.awsSdk.cloudfrontMod.GeoRestriction
 }
 object Restrictions {
   

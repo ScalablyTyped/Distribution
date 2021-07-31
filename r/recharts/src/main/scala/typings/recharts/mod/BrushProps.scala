@@ -4,49 +4,47 @@ import typings.react.mod.ReactNode
 import typings.recharts.anon.PartialMargin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrushProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var dataKey: js.UndefOr[DataKey] = js.native
+  var dataKey: js.UndefOr[DataKey] = js.undefined
   
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var gap: js.UndefOr[Double] = js.native
+  var gap: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var leaveTimeOut: js.UndefOr[Double] = js.native
+  var leaveTimeOut: js.UndefOr[Double] = js.undefined
   
-  var onChange: js.UndefOr[RechartsFunction] = js.native
+  var onChange: js.UndefOr[RechartsFunction] = js.undefined
   
-  var padding: js.UndefOr[PartialMargin] = js.native
+  var padding: js.UndefOr[PartialMargin] = js.undefined
   
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.native
+  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
   
-  var travellerWidth: js.UndefOr[Double] = js.native
+  var travellerWidth: js.UndefOr[Double] = js.undefined
   
-  var updateId: js.UndefOr[String | Double] = js.native
+  var updateId: js.UndefOr[String | Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object BrushProps {
   
@@ -72,7 +70,7 @@ object BrushProps {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
@@ -120,7 +118,7 @@ object BrushProps {
     def setLeaveTimeOutUndefined: Self = StObject.set(x, "leaveTimeOut", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: RechartsFunction): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

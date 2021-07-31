@@ -3,10 +3,8 @@ package typings.valerieBrowser
 import typings.valerieBrowser.Valerie.ValidatableModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutObservableArrayFunctions[T] extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
     * validation state
     * @return {valerie.ModelValidationState} the validation state belonging to the observable array
     */
-  def validateAsModel(): ValidatableModel[KnockoutObservableArray[T]] = js.native
+  def validateAsModel(): ValidatableModel[KnockoutObservableArray[T]]
 }
 object KnockoutObservableArrayFunctions {
   
@@ -30,7 +28,7 @@ object KnockoutObservableArrayFunctions {
   }
   
   @scala.inline
-  implicit class KnockoutObservableArrayFunctionsMutableBuilder[Self <: KnockoutObservableArrayFunctions[_], T] (val x: Self with KnockoutObservableArrayFunctions[T]) extends AnyVal {
+  implicit class KnockoutObservableArrayFunctionsMutableBuilder[Self <: KnockoutObservableArrayFunctions[?], T] (val x: Self & KnockoutObservableArrayFunctions[T]) extends AnyVal {
     
     @scala.inline
     def setValidateAsModel(value: () => ValidatableModel[KnockoutObservableArray[T]]): Self = StObject.set(x, "validateAsModel", js.Any.fromFunction0(value))

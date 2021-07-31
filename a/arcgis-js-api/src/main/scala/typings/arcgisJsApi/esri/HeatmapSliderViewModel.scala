@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeatmapSliderViewModel extends SmartMappingSliderViewModel {
+trait HeatmapSliderViewModel
+  extends StObject
+     with SmartMappingSliderViewModel {
   
   /**
     * Generates the color ramp gradient rendered on the slider.

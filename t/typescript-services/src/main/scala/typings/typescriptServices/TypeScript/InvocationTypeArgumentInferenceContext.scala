@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InvocationTypeArgumentInferenceContext extends TypeArgumentInferenceContext {
+trait InvocationTypeArgumentInferenceContext
+  extends StObject
+     with TypeArgumentInferenceContext {
   
-  var argumentASTs: ISeparatedSyntaxList2 = js.native
+  var argumentASTs: ISeparatedSyntaxList2
 }
 object InvocationTypeArgumentInferenceContext {
   

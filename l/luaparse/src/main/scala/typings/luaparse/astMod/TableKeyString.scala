@@ -2,24 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableKeyString
-  extends Base[typings.luaparse.luaparseStrings.TableKeyString]
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.TableKeyString]
      with _Node {
   
-  var key: Identifier = js.native
+  var key: Identifier
   
-  var value: Expression = js.native
+  var value: Expression
 }
 object TableKeyString {
   
   @scala.inline
-  def apply(key: Identifier, `type`: typings.luaparse.luaparseStrings.TableKeyString, value: Expression): TableKeyString = {
+  def apply(key: Identifier, value: Expression): TableKeyString = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TableKeyString")
     __obj.asInstanceOf[TableKeyString]
   }
   

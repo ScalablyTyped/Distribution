@@ -7,7 +7,6 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.serializationComponentsMod.SerializerComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializerMod {
@@ -16,7 +15,7 @@ object serializerMod {
   @js.native
   class Serializer () extends EventDispatcher {
     
-    def addSerializer(serializer: SerializerComponent[_]): Unit = js.native
+    def addSerializer(serializer: SerializerComponent[js.Any]): Unit = js.native
     
     var findSerializers: js.Any = js.native
     

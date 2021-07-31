@@ -10,9 +10,9 @@ A library that simplifies adding koji-specific features to any javascript projec
 | ------------------ | :-------------: |
 | Full name          | koji-tools |
 | Keywords           | koji, devtool |
-| # releases         | 28 |
+| # releases         | 27 |
 | # dependents       | 0 |
-| # downloads        | 8475 |
+| # downloads        | 2264 |
 | # stars            | 0 |
 
 ## Links

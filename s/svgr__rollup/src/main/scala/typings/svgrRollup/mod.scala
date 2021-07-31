@@ -3,26 +3,26 @@ package typings.svgrRollup
 import typings.rollup.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@svgr/rollup", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("@svgr/rollup", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("@svgr/rollup", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var babel: Boolean = js.native
+    var babel: Boolean
     
-    var exclude: String = js.native
+    var exclude: String
     
-    var include: js.UndefOr[String] = js.native
+    var include: js.UndefOr[String] = js.undefined
   }
   object Options {
     

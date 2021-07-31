@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.ConditionalExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `165` extends StObject {
   
-  var `type`: ConditionalExpression = js.native
+  var `type`: ConditionalExpression
 }
 object `165` {
   
   @scala.inline
-  def apply(`type`: ConditionalExpression): `165` = {
+  def apply(): `165` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ConditionalExpression")
     __obj.asInstanceOf[`165`]
   }
   

@@ -18,11 +18,11 @@ import typings.plotlyJs.plotlyJsStrings.start
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Annotations extends Label {
+trait Annotations
+  extends StObject
+     with Label {
   
   /**
     * Sets the horizontal alignment of the `text` within the box.
@@ -30,25 +30,25 @@ trait Annotations extends Label {
     * (i.e. `text` contains one or more <br> HTML tags) or if an
     * explicit width is set to override the text width.
     */
-  var align: left | center | right = js.native
+  var align: left | center | right
   
   /** Sets the color of the annotation arrow. */
-  var arrowcolor: String = js.native
+  var arrowcolor: String
   
   /** Sets the end annotation arrow head style. */
-  var arrowhead: Double = js.native
+  var arrowhead: Double
   
   /** Sets the annotation arrow head position. */
-  var arrowside: end | start = js.native
+  var arrowside: end | start
   
   /**
     * Sets the size of the end annotation arrow head, relative to `arrowwidth`.
     * A value of 1 (default) gives a head about 3x as wide as the line.
     */
-  var arrowsize: Double = js.native
+  var arrowsize: Double
   
   /** Sets the width (in px) of annotation arrow line. */
-  var arrowwidth: Double = js.native
+  var arrowwidth: Double
   
   /**
     * Sets the x component of the arrow tail about the arrow head.
@@ -58,7 +58,7 @@ trait Annotations extends Label {
     * If `axref` is an axis, this is an absolute value on that axis,
     * like `x`, NOT a relative value.
     */
-  var ax: Double = js.native
+  var ax: Double
   
   /**
     * Indicates in what terms the tail of the annotation (ax,ay)
@@ -68,7 +68,7 @@ trait Annotations extends Label {
     * for trendline annotations which should continue to indicate
     * the correct trend when zoomed.
     */
-  var axref: pixel | XAxisName = js.native
+  var axref: pixel | XAxisName
   
   /**
     * Sets the y component of the arrow tail about the arrow head.
@@ -78,7 +78,7 @@ trait Annotations extends Label {
     * If `ayref` is an axis, this is an absolute value on that axis,
     * like `y`, NOT a relative value.
     */
-  var ay: Double = js.native
+  var ay: Double
   
   /**
     * Indicates in what terms the tail of the annotation (ax,ay)
@@ -88,13 +88,13 @@ trait Annotations extends Label {
     * for trendline annotations which should continue to indicate
     * the correct trend when zoomed.
     */
-  var ayref: pixel | YAxisName = js.native
+  var ayref: pixel | YAxisName
   
   /** Sets the padding (in px) between the `text` and the enclosing border. */
-  var borderpad: Double = js.native
+  var borderpad: Double
   
   /** Sets the width (in px) of the border enclosing the annotation `text`. */
-  var borderwidth: Double = js.native
+  var borderwidth: Double
   
   /**
     * Determines whether the annotation text box captures mouse move and click events,
@@ -103,7 +103,7 @@ trait Annotations extends Label {
     * is provided. If you use the event `plotly_clickannotation` without `hovertext`
     * you must explicitly enable `captureevents`.
     */
-  var captureevents: Boolean = js.native
+  var captureevents: Boolean
   
   /**
     * Makes this annotation respond to clicks on the plot.
@@ -115,31 +115,31 @@ trait Annotations extends Label {
     * `x` or `y` values, you can set `xclick` and/or `yclick`. This is useful for example to label
     * the side of a bar. To label markers though, `standoff` is preferred over `xclick` and `yclick`.
     */
-  var clicktoshow: `false` | onoff | onout = js.native
+  var clicktoshow: `false` | onoff | onout
   
   /**
     * Sets an explicit height for the text box. null (default) lets the
     * text set the box height. Taller text will be clipped.
     */
-  var height: Double = js.native
+  var height: Double
   
-  var hoverlabel: PartialHoverLabel = js.native
+  var hoverlabel: PartialHoverLabel
   
   /**
     * Sets text to appear when hovering over this annotation.
     * If omitted or blank, no hover label will appear.
     */
-  var hovertext: String = js.native
+  var hovertext: String
   
   /** Sets the opacity of the annotation (text + arrow). */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Determines whether or not the annotation is drawn with an arrow.
     * If *true*, `text` is placed near the arrow's tail.
     * If *false*, `text` lines up with the `x` and `y` provided.
     */
-  var showarrow: Boolean = js.native
+  var showarrow: Boolean
   
   /**
     * Sets a distance, in pixels, to move the end arrowhead away from the
@@ -148,16 +148,16 @@ trait Annotations extends Label {
     * from the `ax` / `ay` vector, in contrast to `xshift` / `yshift`
     * which moves everything by this amount.
     */
-  var standoff: Double = js.native
+  var standoff: Double
   
   /** Sets the start annotation arrow head style. */
-  var startarrowhead: Double = js.native
+  var startarrowhead: Double
   
   /**
     * Sets the size of the start annotation arrow head, relative to `arrowwidth`.
     * A value of 1 (default) gives a head about 3x as wide as the line.
     */
-  var startarrowsize: Double = js.native
+  var startarrowsize: Double
   
   /**
     * Sets a distance, in pixels, to move the start arrowhead away from the
@@ -166,7 +166,7 @@ trait Annotations extends Label {
     * from the `ax` / `ay` vector, in contrast to `xshift` / `yshift`
     * which moves everything by this amount.
     */
-  var startstandoff: Double = js.native
+  var startstandoff: Double
   
   /**
     * Sets the text associated with this annotation.
@@ -175,26 +175,26 @@ trait Annotations extends Label {
     * hyperlinks (<a href='...'></a>). Tags <em>, <sup>, <sub>
     * <span> are also supported.
     */
-  var text: String = js.native
+  var text: String
   
   /** Sets the angle at which the `text` is drawn with respect to the horizontal. */
-  var textangle: String = js.native
+  var textangle: String
   
   /**
     * Sets the vertical alignment of the `text` within the box.
     * Has an effect only if an explicit height is set to override the text height.
     */
-  var valign: top | middle | bottom = js.native
+  var valign: top | middle | bottom
   
   /** Determines whether or not this annotation is visible. */
-  var visible: Boolean = js.native
+  var visible: Boolean
   
   /**
     * Sets an explicit width for the text box. null (default) lets the
     * text set the box width. Wider text will be clipped.
     * There is no automatic wrapping; use <br> to start a new line.
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * Sets the annotation's x position.
@@ -204,7 +204,7 @@ trait Annotations extends Label {
     * If the axis `type` is *category*, it should be numbers, using the scale where each
     * category is assigned a serial number from zero in the order it appears.
     */
-  var x: Double | String = js.native
+  var x: Double | String
   
   /**
     * Sets the text box's horizontal position anchor
@@ -214,13 +214,13 @@ trait Annotations extends Label {
     * If *auto*, the anchor is equivalent to *center* for data-referenced annotations or if there
     * is an arrow, whereas for paper-referenced with no arrow, the anchor picked corresponds to the closest side.
     */
-  var xanchor: auto | left | center | right = js.native
+  var xanchor: auto | left | center | right
   
   /**
     * Toggle this annotation when clicking a data point whose `x` value
     * is `xclick` rather than the annotation's `x` value.
     */
-  var xclick: js.Any = js.native
+  var xclick: js.Any
   
   /**
     * Sets the annotation's x coordinate axis.
@@ -229,13 +229,13 @@ trait Annotations extends Label {
     * the left side of the plotting area in normalized coordinates
     * where 0 (1) corresponds to the left (right) side.
     */
-  var xref: paper | XAxisName = js.native
+  var xref: paper | XAxisName
   
   /**
     * Shifts the position of the whole annotation and arrow to the
     * right (positive) or left (negative) by this many pixels.
     */
-  var xshift: Double = js.native
+  var xshift: Double
   
   /**
     * Sets the annotation's y position.
@@ -245,7 +245,7 @@ trait Annotations extends Label {
     * If the axis `type` is *category*, it should be numbers, using the scale where each
     * category is assigned a serial number from zero in the order it appears.
     */
-  var y: Double | String = js.native
+  var y: Double | String
   
   /**
     * Sets the text box's vertical position anchor
@@ -256,13 +256,13 @@ trait Annotations extends Label {
     * there is an arrow, whereas for paper-referenced with no arrow, the anchor picked
     * corresponds to the closest side.
     */
-  var yanchor: auto | top | middle | bottom = js.native
+  var yanchor: auto | top | middle | bottom
   
   /**
     * Toggle this annotation when clicking a data point whose `y` value
     * is `yclick` rather than the annotation's `y` value.
     */
-  var yclick: js.Any = js.native
+  var yclick: js.Any
   
   /**
     * Sets the annotation's y coordinate axis.
@@ -271,13 +271,13 @@ trait Annotations extends Label {
     * the bottom of the plotting area in normalized coordinates
     * where 0 (1) corresponds to the bottom (top).
     */
-  var yref: paper | YAxisName = js.native
+  var yref: paper | YAxisName
   
   /**
     * Shifts the position of the whole annotation and arrow up
     * (positive) or down (negative) by this many pixels.
     */
-  var yshift: Double = js.native
+  var yshift: Double
 }
 object Annotations {
   

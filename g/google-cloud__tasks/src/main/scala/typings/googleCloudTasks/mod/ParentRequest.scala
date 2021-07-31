@@ -2,16 +2,14 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentRequest extends StObject {
   
   /**
     * The location name. For example: projects/PROJECT_ID/locations/LOCATION_ID
     */
-  var parent: String = js.native
+  var parent: String
 }
 object ParentRequest {
   

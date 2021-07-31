@@ -2,17 +2,15 @@ package typings.inboxsdk.mod.Conversations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomButtonDescriptor extends StObject {
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  def onClick(event: AttachmentCardClickEvent): Unit = js.native
+  def onClick(event: AttachmentCardClickEvent): Unit
   
-  var tooltip: String = js.native
+  var tooltip: String
 }
 object CustomButtonDescriptor {
   

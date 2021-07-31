@@ -2,23 +2,21 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IElementDimension extends StObject {
   
-  var rootMaxH: js.UndefOr[Double] = js.native
+  var rootMaxH: js.UndefOr[Double] = js.undefined
   
-  var rootMaxW: js.UndefOr[Double] = js.native
+  var rootMaxW: js.UndefOr[Double] = js.undefined
   
-  var rowIndexCellW: js.UndefOr[Double] = js.native
+  var rowIndexCellW: js.UndefOr[Double] = js.undefined
   
-  var rowSelectedCellW: js.UndefOr[Double] = js.native
+  var rowSelectedCellW: js.UndefOr[Double] = js.undefined
   
-  var scrollH: js.UndefOr[Double] = js.native
+  var scrollH: js.UndefOr[Double] = js.undefined
   
-  var scrollW: js.UndefOr[Double] = js.native
+  var scrollW: js.UndefOr[Double] = js.undefined
 }
 object IElementDimension {
   

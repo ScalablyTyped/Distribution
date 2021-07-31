@@ -2,21 +2,19 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ETag extends StObject {
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var key: String = js.native
+  var key: String
   
-  var sequencer: String = js.native
+  var sequencer: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var versionId: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[String] = js.undefined
 }
 object ETag {
   

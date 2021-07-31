@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProjectParametersTransformation extends Object {
+trait ProjectParametersTransformation
+  extends StObject
+     with Object {
   
   /**
     * The well-known ID of the datum transformation to apply to the projection.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#transformation)
     */
-  var wkid: js.UndefOr[Double] = js.native
+  var wkid: js.UndefOr[Double] = js.undefined
   
   /**
     * The well-known text that defines a spatial reference.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#transformation)
     */
-  var wkt: js.UndefOr[String] = js.native
+  var wkt: js.UndefOr[String] = js.undefined
 }
 object ProjectParametersTransformation {
   

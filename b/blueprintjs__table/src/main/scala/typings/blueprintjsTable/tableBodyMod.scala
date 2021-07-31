@@ -1,26 +1,28 @@
 package typings.blueprintjsTable
 
 import typings.blueprintjsCore.mod.AbstractComponent2
+import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.anon.Loading
+import typings.blueprintjsTable.cellMod.ICellRenderer
 import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typings.blueprintjsTable.dragTypesMod.ICoordinateData
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.blueprintjsTable.gridMod.Grid
+import typings.blueprintjsTable.gridMod.IColumnIndices
+import typings.blueprintjsTable.gridMod.IRowIndices
 import typings.blueprintjsTable.locatorMod.ILocator
 import typings.blueprintjsTable.menuContextMod.IContextMenuRenderer
 import typings.blueprintjsTable.menuContextMod.IMenuContext
 import typings.blueprintjsTable.rectMod.Rect
-import typings.blueprintjsTable.selectableMod.ISelectedRegionTransform
-import typings.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps
+import typings.blueprintjsTable.renderModeMod.RenderMode.BATCH
+import typings.blueprintjsTable.renderModeMod.RenderMode.NONE
+import typings.blueprintjsTable.selectableMod.ISelectableProps
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
-import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableBodyMod {
@@ -52,9 +54,8 @@ object tableBodyMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@blueprintjs/table/lib/esm/tableBody", "TableBody.cellClassNames")
-    @js.native
-    def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = js.native
+    @scala.inline
+    def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellClassNames")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     @JSImport("@blueprintjs/table/lib/esm/tableBody", "TableBody.defaultProps")
     @js.native
@@ -64,75 +65,72 @@ object tableBodyMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.blueprintjsTable.selectableMod.ISelectableProps because var conflicts: focusedCell. Inlined enableMultipleSelection, onFocusedCell, onSelection, onSelectionEnd, selectedRegions, selectedRegionTransform */ @js.native
-  trait ITableBodyProps extends ITableBodyCellsProps {
+  - typings.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps because var conflicts: focusedCell. Inlined cellRenderer, grid, loading, onCompleteRender, renderMode, viewportRect */ trait ITableBodyProps
+    extends StObject
+       with ISelectableProps
+       with IRowIndices
+       with IColumnIndices
+       with IProps {
     
     /**
       * An optional callback for displaying a context menu when right-clicking
       * on the table body. The callback is supplied with an `IMenuContext`
       * containing the `IRegion`s of interest.
       */
-    var bodyContextMenuRenderer: js.UndefOr[IContextMenuRenderer] = js.native
+    var bodyContextMenuRenderer: js.UndefOr[IContextMenuRenderer] = js.undefined
     
     /**
-      * If `false`, only a single region of a single column/row/cell may be
-      * selected at one time. Using `ctrl` or `meta` key will have no effect,
-      * and a mouse drag will select the current column/row/cell only.
-      * @default false
+      * A cell renderer for the cells in the body.
       */
-    var enableMultipleSelection: js.UndefOr[Boolean] = js.native
+    var cellRenderer: ICellRenderer
+    
+    /**
+      * The grid computes sizes of cells, rows, or columns from the
+      * configurable `columnWidths` and `rowHeights`.
+      */
+    var grid: Grid
+    
+    /**
+      * If true, all `Cell`s render their loading state except for those who have
+      * their `loading` prop explicitly set to false.
+      */
+    var loading: Boolean
     
     /**
       * Locates the row/column/cell given a mouse event.
       */
-    var locator: ILocator = js.native
+    var locator: ILocator
     
     /**
       * The number of columns to freeze to the left side of the table, counting from the leftmost column.
       */
-    var numFrozenColumns: js.UndefOr[Double] = js.native
+    var numFrozenColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of rows to freeze to the top of the table, counting from the topmost row.
       */
-    var numFrozenRows: js.UndefOr[Double] = js.native
+    var numFrozenRows: js.UndefOr[Double] = js.undefined
     
     /**
-      * When the user focuses something, this callback is called with new
-      * focused cell coordinates. This should be considered the new focused cell
-      * state for the entire table.
+      * An optional callback invoked when all cells in view have completely rendered.
       */
-    def onFocusedCell(focusedCell: IFocusedCellCoordinates): Unit = js.native
+    var onCompleteRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * When the user selects something, this callback is called with a new
-      * array of `Region`s. This array should be considered the new selection
-      * state for the entire table.
+      * Dictates how cells should be rendered. This component doesn't support
+      * `RenderMode.BATCH_ON_UPDATE`, because there are actually multiple updates
+      * that need to happen at higher levels before the table is considered fully
+      * "mounted"; thus, we let higher components tell us when to switch modes.
+      * @default RenderMode.BATCH
       */
-    def onSelection(regions: js.Array[IRegion]): Unit = js.native
+    var renderMode: js.UndefOr[BATCH | NONE] = js.undefined
     
     /**
-      * An additional convenience callback invoked when the user releases the
-      * mouse from either a click or a drag, indicating that the selection
-      * interaction has ended.
+      * The `Rect` bounds of the visible viewport with respect to its parent
+      * scrollable pane. While not directly used by the component, this prop is
+      * necessary for shouldComponentUpdate logic to run properly.
       */
-    var onSelectionEnd: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.native
-    
-    /**
-      * An optional transform function that will be applied to the located
-      * `Region`.
-      *
-      * This allows you to, for example, convert cell `Region`s into row
-      * `Region`s while maintaining the existing multi-select and meta-click
-      * functionality.
-      */
-    var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.native
-    
-    /**
-      * An array containing the table's selection Regions.
-      * @default []
-      */
-    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.native
+    var viewportRect: Rect
   }
   object ITableBodyProps {
     
@@ -164,10 +162,13 @@ object tableBodyMod {
       def setBodyContextMenuRendererUndefined: Self = StObject.set(x, "bodyContextMenuRenderer", js.undefined)
       
       @scala.inline
-      def setEnableMultipleSelection(value: Boolean): Self = StObject.set(x, "enableMultipleSelection", value.asInstanceOf[js.Any])
+      def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setEnableMultipleSelectionUndefined: Self = StObject.set(x, "enableMultipleSelection", js.undefined)
+      def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLocator(value: ILocator): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
@@ -185,33 +186,19 @@ object tableBodyMod {
       def setNumFrozenRowsUndefined: Self = StObject.set(x, "numFrozenRows", js.undefined)
       
       @scala.inline
-      def setOnFocusedCell(value: IFocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
+      def setOnCompleteRender(value: () => Unit): Self = StObject.set(x, "onCompleteRender", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setOnSelection(value: js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
+      def setOnCompleteRenderUndefined: Self = StObject.set(x, "onCompleteRender", js.undefined)
       
       @scala.inline
-      def setOnSelectionEnd(value: /* regions */ js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelectionEnd", js.Any.fromFunction1(value))
+      def setRenderMode(value: BATCH | NONE): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSelectionEndUndefined: Self = StObject.set(x, "onSelectionEnd", js.undefined)
+      def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
       
       @scala.inline
-      def setSelectedRegionTransform(
-        value: (/* region */ IRegion, /* event */ typings.std.MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => IRegion
-      ): Self = StObject.set(x, "selectedRegionTransform", js.Any.fromFunction3(value))
-      
-      @scala.inline
-      def setSelectedRegionTransformUndefined: Self = StObject.set(x, "selectedRegionTransform", js.undefined)
-      
-      @scala.inline
-      def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
-      
-      @scala.inline
-      def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
+      def setViewportRect(value: Rect): Self = StObject.set(x, "viewportRect", value.asInstanceOf[js.Any])
     }
   }
 }

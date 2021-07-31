@@ -7,12 +7,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RotateEventInfo
-  extends Object
+  extends StObject
+     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -20,14 +19,14 @@ trait RotateEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#RotateEventInfo)
     */
-  var angle: Double = js.native
+  var angle: Double
   
   /**
     * Returns information indicating the stage of the rotate operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#RotateEventInfo)
     */
-  var `type`: `rotate-start` | rotate | `rotate-stop` = js.native
+  var `type`: `rotate-start` | rotate | `rotate-stop`
 }
 object RotateEventInfo {
   

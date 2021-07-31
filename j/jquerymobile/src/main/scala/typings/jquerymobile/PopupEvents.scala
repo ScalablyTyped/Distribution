@@ -3,17 +3,15 @@ package typings.jquerymobile
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupEvents extends StObject {
   
-  var popupafterclose: js.UndefOr[JQueryMobileEvent] = js.native
+  var popupafterclose: js.UndefOr[JQueryMobileEvent] = js.undefined
   
-  var popupafteropen: js.UndefOr[JQueryMobileEvent] = js.native
+  var popupafteropen: js.UndefOr[JQueryMobileEvent] = js.undefined
   
-  var popupbeforeposition: js.UndefOr[JQueryMobileEvent] = js.native
+  var popupbeforeposition: js.UndefOr[JQueryMobileEvent] = js.undefined
 }
 object PopupEvents {
   

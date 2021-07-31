@@ -2,21 +2,19 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFilter extends StObject {
   
   /**
     * The tag key.
     */
-  var tagKey: js.UndefOr[TagKey] = js.native
+  var tagKey: js.UndefOr[TagKey] = js.undefined
   
   /**
     * The tag values.
     */
-  var tagValues: js.UndefOr[TagValueList] = js.native
+  var tagValues: js.UndefOr[TagValueList] = js.undefined
 }
 object TagFilter {
   

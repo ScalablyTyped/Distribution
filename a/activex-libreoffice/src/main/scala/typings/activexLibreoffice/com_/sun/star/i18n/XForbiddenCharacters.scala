@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In some languages, particular characters are not allowed to be placed at the beginning or at the end of a text line.
   */
-@js.native
-trait XForbiddenCharacters extends XInterface {
+trait XForbiddenCharacters
+  extends StObject
+     with XInterface {
   
   /** returns the forbidden characters for a given locale. */
-  def getForbiddenCharacters(aLocale: Locale): ForbiddenCharacters = js.native
+  def getForbiddenCharacters(aLocale: Locale): ForbiddenCharacters
   
   /** determines if forbidden characters are set for a given locale. */
-  def hasForbiddenCharacters(aLocale: Locale): Boolean = js.native
+  def hasForbiddenCharacters(aLocale: Locale): Boolean
   
   /** removes the setting of forbidden characters for a given locale. */
-  def removeForbiddenCharacters(aLocale: Locale): Unit = js.native
+  def removeForbiddenCharacters(aLocale: Locale): Unit
   
   /** sets the forbidden characters for a given Locale. */
-  def setForbiddenCharacters(aLocale: Locale, aForbiddenCharacters: ForbiddenCharacters): Unit = js.native
+  def setForbiddenCharacters(aLocale: Locale, aForbiddenCharacters: ForbiddenCharacters): Unit
 }
 object XForbiddenCharacters {
   

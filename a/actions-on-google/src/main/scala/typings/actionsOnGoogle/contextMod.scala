@@ -6,7 +6,6 @@ import typings.actionsOnGoogle.v1Mod.DialogflowV1Context
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -16,8 +15,8 @@ object contextMod {
   /** @hidden */
   class ContextValues[TContexts /* <: Contexts */] () extends StObject {
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context]) = this()
-    def this(outputContexts: js.UndefOr[scala.Nothing], _session: String) = this()
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context], _session: String) = this()
+    def this(outputContexts: Unit, _session: String) = this()
     
     /** @hidden */
     def _serialize(): js.Array[GoogleCloudDialogflowV2Context] = js.native
@@ -127,14 +126,15 @@ object contextMod {
     def set(name: String, lifespan: Double, parameters: Parameters): Unit = js.native
   }
   
-  @js.native
-  trait Context[TParameters /* <: Parameters */] extends OutputContext[TParameters] {
+  trait Context[TParameters /* <: Parameters */]
+    extends StObject
+       with OutputContext[TParameters] {
     
     /**
       * Full name of the context.
       * @public
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The context parameters from the current intent.
@@ -164,7 +164,7 @@ object contextMod {
       * @public
       */
     @JSName("parameters")
-    var parameters_Context: TParameters = js.native
+    var parameters_Context: TParameters
   }
   object Context {
     
@@ -175,7 +175,7 @@ object contextMod {
     }
     
     @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[_], TParameters /* <: Parameters */] (val x: Self with Context[TParameters]) extends AnyVal {
+    implicit class ContextMutableBuilder[Self <: Context[?], TParameters /* <: Parameters */] (val x: Self & Context[TParameters]) extends AnyVal {
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -188,14 +188,13 @@ object contextMod {
   type Contexts = /** @public */
   StringDictionary[js.UndefOr[Context[Parameters]]]
   
-  @js.native
   trait OutputContext[TParameters /* <: Parameters */] extends StObject {
     
     /** @public */
-    var lifespan: Double = js.native
+    var lifespan: Double
     
     /** @public */
-    var parameters: js.UndefOr[TParameters] = js.native
+    var parameters: js.UndefOr[TParameters] = js.undefined
   }
   object OutputContext {
     
@@ -206,7 +205,7 @@ object contextMod {
     }
     
     @scala.inline
-    implicit class OutputContextMutableBuilder[Self <: OutputContext[_], TParameters /* <: Parameters */] (val x: Self with OutputContext[TParameters]) extends AnyVal {
+    implicit class OutputContextMutableBuilder[Self <: OutputContext[?], TParameters /* <: Parameters */] (val x: Self & OutputContext[TParameters]) extends AnyVal {
       
       @scala.inline
       def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])

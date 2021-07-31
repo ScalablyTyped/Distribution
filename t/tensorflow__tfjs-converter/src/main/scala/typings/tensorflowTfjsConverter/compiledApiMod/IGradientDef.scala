@@ -2,17 +2,15 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGradientDef extends StObject {
   
   /** GradientDef functionName */
-  var functionName: js.UndefOr[String | Null] = js.native
+  var functionName: js.UndefOr[String | Null] = js.undefined
   
   /** GradientDef gradientFunc */
-  var gradientFunc: js.UndefOr[String | Null] = js.native
+  var gradientFunc: js.UndefOr[String | Null] = js.undefined
 }
 object IGradientDef {
   

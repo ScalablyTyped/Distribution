@@ -4,41 +4,39 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertModalHeaderProps extends StObject {
   
   /**
     * Callback function to call prior to closing the Insert Modal window.
     */
-  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[_, Event], Unit]] = js.native
+  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Any, Event], Unit]] = js.undefined
   
   /**
     * Header class name.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to hide the close button. Default is false.
     */
-  var hideClose: js.UndefOr[Boolean] = js.native
+  var hideClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Callback function to call to close the Insert Modal window.
     */
-  var onModalClose: js.UndefOr[js.Function1[/* closeModal */ js.Function0[Unit], Unit]] = js.native
+  var onModalClose: js.UndefOr[js.Function1[/* closeModal */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * Title to display in the header.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Bootstrap version.
     */
-  var version: js.UndefOr[BootstrapVersion] = js.native
+  var version: js.UndefOr[BootstrapVersion] = js.undefined
 }
 object InsertModalHeaderProps {
   
@@ -52,7 +50,7 @@ object InsertModalHeaderProps {
   implicit class InsertModalHeaderPropsMutableBuilder[Self <: InsertModalHeaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBeforeClose(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+    def setBeforeClose(value: /* e */ SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)

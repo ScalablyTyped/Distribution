@@ -68,7 +68,6 @@ import typings.highcharts.mod.Options
 import typings.lodash.mod.LoDashStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -78,9 +77,8 @@ object global {
     *
     * @param {number} delay
     */
-  @JSGlobal("_CDelay")
-  @js.native
-  def CDelay(delay: Double): Unit = js.native
+  @scala.inline
+  def CDelay(delay: Double): Unit = js.Dynamic.global.applyDynamic("_CDelay")(delay.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 图表绘图函数
@@ -101,9 +99,8 @@ object global {
     * @param {botvs.ChartOptions} options
     * @return {botvs.RChart}
     */
-  @JSGlobal("Chart")
-  @js.native
-  def Chart(options: ChartOptions*): RChart = js.native
+  @scala.inline
+  def Chart(options: ChartOptions*): RChart = js.Dynamic.global.applyDynamic("Chart")(options.asInstanceOf[js.Any]).asInstanceOf[RChart]
   
   /**
     * 原始的Socket访问, 支持tcp, udp, tls, unix 协议
@@ -129,21 +126,18 @@ object global {
     * @param {number} Timeout
     * @return {botvs.Socket}
     */
-  @JSGlobal("Dial")
-  @js.native
-  def Dial(Address: String): Socket | Unit = js.native
-  @JSGlobal("Dial")
-  @js.native
-  def Dial(Address: String, Timeout: Double): Socket | Unit = js.native
+  @scala.inline
+  def Dial(Address: String): Socket | Unit = js.Dynamic.global.applyDynamic("Dial")(Address.asInstanceOf[js.Any]).asInstanceOf[Socket | Unit]
+  @scala.inline
+  def Dial(Address: String, Timeout: Double): Socket | Unit = (js.Dynamic.global.applyDynamic("Dial")(Address.asInstanceOf[js.Any], Timeout.asInstanceOf[js.Any])).asInstanceOf[Socket | Unit]
   
   /**
     * 打开或者关闭定单和出错信息的日志记录
     *
     * @param {boolean} IsEnable
     */
-  @JSGlobal("EnableLog")
-  @js.native
-  def EnableLog(IsEnable: Boolean): Unit = js.native
+  @scala.inline
+  def EnableLog(IsEnable: Boolean): Unit = js.Dynamic.global.applyDynamic("EnableLog")(IsEnable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 获取交互命令(utf-8)
@@ -159,31 +153,27 @@ object global {
     *
     * @return {string}
     */
-  @JSGlobal("GetCommand")
-  @js.native
-  def GetCommand(): String | Null = js.native
+  @scala.inline
+  def GetCommand(): String | Null = js.Dynamic.global.applyDynamic("GetCommand")().asInstanceOf[String | Null]
   
   /**
     * 获取最近一次出错信息,一般无需使用,因为程序会把出错信息自动上传到日志系统
     *
     * @return {string}
     */
-  @JSGlobal("GetLastError")
-  @js.native
-  def GetLastError(): String = js.native
+  @scala.inline
+  def GetLastError(): String = js.Dynamic.global.applyDynamic("GetLastError")().asInstanceOf[String]
   
   /**
     * 返回机器人进程ID
     *
     * @return {number}
     */
-  @JSGlobal("GetPid")
-  @js.native
-  def GetPid(): Double = js.native
+  @scala.inline
+  def GetPid(): Double = js.Dynamic.global.applyDynamic("GetPid")().asInstanceOf[Double]
   
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: md5, OutputAlgo: base64, Data: String, password: String): String = js.native
+  @scala.inline
+  def HMAC(Algo: md5, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * 支持 md5/sha256/sha512/sha1 的HMAC加密计算, 只支持实盘
     *
@@ -197,43 +187,31 @@ object global {
     * @param {string} password
     * @return {string}
     */
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: md5, OutputAlgo: hex, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: md5, OutputAlgo: raw, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha1, OutputAlgo: base64, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha1, OutputAlgo: hex, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha1, OutputAlgo: raw, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha256, OutputAlgo: base64, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha256, OutputAlgo: hex, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha256, OutputAlgo: raw, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha512, OutputAlgo: base64, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha512, OutputAlgo: hex, Data: String, password: String): String = js.native
-  @JSGlobal("HMAC")
-  @js.native
-  def HMAC(Algo: sha512, OutputAlgo: raw, Data: String, password: String): String = js.native
+  @scala.inline
+  def HMAC(Algo: md5, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: md5, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha1, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha1, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha1, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha256, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha256, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha256, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha512, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha512, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HMAC(Algo: sha512, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: md5, OutputAlgo: base64, Data: String): String = js.native
+  @scala.inline
+  def Hash(Algo: md5, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * 支持 md5/sha256/sha512/sha1 的哈希计算, 只支持实盘
     *
@@ -246,39 +224,28 @@ object global {
     * @param {string} Data
     * @return {string}
     */
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: md5, OutputAlgo: hex, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: md5, OutputAlgo: raw, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha1, OutputAlgo: base64, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha1, OutputAlgo: hex, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha1, OutputAlgo: raw, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha256, OutputAlgo: base64, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha256, OutputAlgo: hex, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha256, OutputAlgo: raw, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha512, OutputAlgo: base64, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha512, OutputAlgo: hex, Data: String): String = js.native
-  @JSGlobal("Hash")
-  @js.native
-  def Hash(Algo: sha512, OutputAlgo: raw, Data: String): String = js.native
+  @scala.inline
+  def Hash(Algo: md5, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: md5, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha1, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha1, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha1, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha256, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha256, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha256, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha512, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha512, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Hash(Algo: sha512, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * 网络URL访问
@@ -300,24 +267,19 @@ object global {
     * @param {string} Headers
     * @return {string}
     */
-  @JSGlobal("HttpQuery")
-  @js.native
-  def HttpQuery(Url: String, PostData: String, Cookies: String, Headers: String): String = js.native
-  @JSGlobal("HttpQuery")
-  @js.native
-  def HttpQuery(Url: String, PostData: Null, Cookies: String, Headers: String): String = js.native
-  @JSGlobal("HttpQuery")
-  @js.native
-  def HttpQuery(Url: String, PostData: Data, Cookies: String, Headers: String): String = js.native
-  @JSGlobal("HttpQuery")
-  @js.native
-  def HttpQuery_true(Url: String, PostData: String, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = js.native
-  @JSGlobal("HttpQuery")
-  @js.native
-  def HttpQuery_true(Url: String, PostData: Null, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = js.native
-  @JSGlobal("HttpQuery")
-  @js.native
-  def HttpQuery_true(Url: String, PostData: Data, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = js.native
+  @scala.inline
+  def HttpQuery(Url: String, PostData: String, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HttpQuery(Url: String, PostData: Null, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def HttpQuery(Url: String, PostData: Data, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def HttpQuery_true(Url: String, PostData: String, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
+  @scala.inline
+  def HttpQuery_true(Url: String, PostData: Null, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
+  @scala.inline
+  def HttpQuery_true(Url: String, PostData: Data, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
   
   /**
     * 判断是否是模拟回测
@@ -326,9 +288,8 @@ object global {
     *
     * @return {boolean}
     */
-  @JSGlobal("IsVirtual")
-  @js.native
-  def IsVirtual(): Boolean = js.native
+  @scala.inline
+  def IsVirtual(): Boolean = js.Dynamic.global.applyDynamic("IsVirtual")().asInstanceOf[Boolean]
   
   /**
     * 买单日志
@@ -365,9 +326,8 @@ object global {
     *
     * @param {*[]} arg
     */
-  @JSGlobal("Log")
-  @js.native
-  def Log(arg: js.Any*): Unit = js.native
+  @scala.inline
+  def Log(arg: js.Any*): Unit = js.Dynamic.global.applyDynamic("Log")(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 记录盈利值,这个为总盈利的值,参数类型为浮点数
@@ -375,33 +335,28 @@ object global {
     * @param {number} Profit
     * @param {*[]} args
     */
-  @JSGlobal("LogProfit")
-  @js.native
-  def LogProfit(Profit: Double, args: js.Any*): Unit = js.native
+  @scala.inline
+  def LogProfit(Profit: Double, args: js.Any*): Unit = (js.Dynamic.global.applyDynamic("LogProfit")(Profit.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 清空所有收益日志, 可以带一个数字参数, 指定保留的条数
     *
     * @param {number} reserve
     */
-  @JSGlobal("LogProfitReset")
-  @js.native
-  def LogProfitReset(): Unit = js.native
-  @JSGlobal("LogProfitReset")
-  @js.native
-  def LogProfitReset(reserve: Double): Unit = js.native
+  @scala.inline
+  def LogProfitReset(): Unit = js.Dynamic.global.applyDynamic("LogProfitReset")().asInstanceOf[Unit]
+  @scala.inline
+  def LogProfitReset(reserve: Double): Unit = js.Dynamic.global.applyDynamic("LogProfitReset")(reserve.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 清空所有日志, 可以带一个数字参数, 指定保留的条数
     *
     * @param {number} reserve
     */
-  @JSGlobal("LogReset")
-  @js.native
-  def LogReset(): Unit = js.native
-  @JSGlobal("LogReset")
-  @js.native
-  def LogReset(reserve: Double): Unit = js.native
+  @scala.inline
+  def LogReset(): Unit = js.Dynamic.global.applyDynamic("LogReset")().asInstanceOf[Unit]
+  @scala.inline
+  def LogReset(reserve: Double): Unit = js.Dynamic.global.applyDynamic("LogReset")(reserve.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 此信息不保存到日志列表里, 只更新当前机器人的状态信息, 在日志上方显示, 可多次调用, 更新状态
@@ -438,9 +393,8 @@ object global {
     *
     * @param {string} Msg
     */
-  @JSGlobal("LogStatus")
-  @js.native
-  def LogStatus(args: js.Any*): Unit = js.native
+  @scala.inline
+  def LogStatus(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("LogStatus")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 发送邮件函数
@@ -456,8 +410,7 @@ object global {
     * @param {string} body
     * @return {boolean}
     */
-  @JSGlobal("Mail")
-  @js.native
+  @scala.inline
   def Mail(
     smtpServer: String,
     smtpUsername: String,
@@ -465,7 +418,7 @@ object global {
     mailTo: String,
     title: String,
     body: String
-  ): Boolean = js.native
+  ): Boolean = (js.Dynamic.global.applyDynamic("Mail")(smtpServer.asInstanceOf[js.Any], smtpUsername.asInstanceOf[js.Any], smtpPassword.asInstanceOf[js.Any], mailTo.asInstanceOf[js.Any], title.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * 订单的状态: 已取消
@@ -581,9 +534,8 @@ object global {
     *
     * @param {string} RegEx
     */
-  @JSGlobal("SetErrorFilter")
-  @js.native
-  def SetErrorFilter(RegEx: String): Unit = js.native
+  @scala.inline
+  def SetErrorFilter(RegEx: String): Unit = js.Dynamic.global.applyDynamic("SetErrorFilter")(RegEx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 休眠函数
@@ -592,11 +544,14 @@ object global {
     *
     * @param {number} Millisecond
     */
-  @JSGlobal("Sleep")
-  @js.native
-  def Sleep(Millisecond: Double): Unit = js.native
+  @scala.inline
+  def Sleep(Millisecond: Double): Unit = js.Dynamic.global.applyDynamic("Sleep")(Millisecond.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object TA {
+    
+    @JSGlobal("TA")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * 平均真实波幅
@@ -607,12 +562,10 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @JSGlobal("TA.ATR")
-    @js.native
-    def ATR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("TA.ATR")
-    @js.native
-    def ATR(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ATR(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Alligator Indicator
@@ -625,45 +578,22 @@ object global {
       * @param {number} LibsPeriod
       * @return {[number[] , number[] , number[]]}
       */
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(
-      Records: js.Array[Record],
-      JawPeriod: js.UndefOr[scala.Nothing],
-      TeethPeriod: js.UndefOr[scala.Nothing],
-      LibsPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(Records: js.Array[Record], JawPeriod: js.UndefOr[scala.Nothing], TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(
-      Records: js.Array[Record],
-      JawPeriod: js.UndefOr[scala.Nothing],
-      TeethPeriod: Double,
-      LibsPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(Records: js.Array[Record], JawPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(
-      Records: js.Array[Record],
-      JawPeriod: Double,
-      TeethPeriod: js.UndefOr[scala.Nothing],
-      LibsPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.Alligator")
-    @js.native
-    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def Alligator(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def Alligator(Records: js.Array[Record], JawPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Unit, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Unit, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * Chaikin Money Flow
@@ -674,12 +604,10 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @JSGlobal("TA.CMF")
-    @js.native
-    def CMF(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("TA.CMF")
-    @js.native
-    def CMF(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CMF(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CMF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CMF(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CMF")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 指数平均数指标
@@ -689,12 +617,10 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @JSGlobal("TA.EMA")
-    @js.native
-    def EMA(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("TA.EMA")
-    @js.native
-    def EMA(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+    @scala.inline
+    def EMA(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def EMA(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 周期最高价
@@ -708,22 +634,14 @@ object global {
       * @return {number}
       * @constructor
       */
-    @JSGlobal("TA.Highest")
-    @js.native
-    def Highest(Records: js.Array[Record]): Double = js.native
-    @JSGlobal("TA.Highest")
-    @js.native
-    def Highest(
-      Records: js.Array[Record],
-      Period: js.UndefOr[scala.Nothing],
-      Property: Time | Open | High | Low | Close | Volume
-    ): Double = js.native
-    @JSGlobal("TA.Highest")
-    @js.native
-    def Highest(Records: js.Array[Record], Period: Double): Double = js.native
-    @JSGlobal("TA.Highest")
-    @js.native
-    def Highest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = js.native
+    @scala.inline
+    def Highest(Records: js.Array[Record]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def Highest(Records: js.Array[Record], Period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Highest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Highest(Records: js.Array[Record], Period: Unit, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * 随机指标
@@ -736,45 +654,22 @@ object global {
       * @param {number} ThirdPeriod
       * @return {[number[] , number[] , number[]]}
       */
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(
-      Records: js.Array[Record],
-      FirstPeriod: js.UndefOr[scala.Nothing],
-      SecondPeriod: js.UndefOr[scala.Nothing],
-      ThirdPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(Records: js.Array[Record], FirstPeriod: js.UndefOr[scala.Nothing], SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(
-      Records: js.Array[Record],
-      FirstPeriod: js.UndefOr[scala.Nothing],
-      SecondPeriod: Double,
-      ThirdPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(Records: js.Array[Record], FirstPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(
-      Records: js.Array[Record],
-      FirstPeriod: Double,
-      SecondPeriod: js.UndefOr[scala.Nothing],
-      ThirdPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.KDJ")
-    @js.native
-    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def KDJ(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def KDJ(Records: js.Array[Record], FirstPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Unit, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Unit, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * 周期最低价
@@ -786,22 +681,14 @@ object global {
       * @param {keyof botvs.Record} Property
       * @return {number}
       */
-    @JSGlobal("TA.Lowest")
-    @js.native
-    def Lowest(Records: js.Array[Record]): Double = js.native
-    @JSGlobal("TA.Lowest")
-    @js.native
-    def Lowest(
-      Records: js.Array[Record],
-      Period: js.UndefOr[scala.Nothing],
-      Property: Time | Open | High | Low | Close | Volume
-    ): Double = js.native
-    @JSGlobal("TA.Lowest")
-    @js.native
-    def Lowest(Records: js.Array[Record], Period: Double): Double = js.native
-    @JSGlobal("TA.Lowest")
-    @js.native
-    def Lowest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = js.native
+    @scala.inline
+    def Lowest(Records: js.Array[Record]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def Lowest(Records: js.Array[Record], Period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Lowest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def Lowest(Records: js.Array[Record], Period: Unit, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * 移动平均线
@@ -812,12 +699,10 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @JSGlobal("TA.MA")
-    @js.native
-    def MA(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("TA.MA")
-    @js.native
-    def MA(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MA(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MA(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 指数平滑异同平均线
@@ -830,45 +715,22 @@ object global {
       * @param {number} SignalPeriod
       * @return {[number[] , number[] , number[]]}
       */
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(
-      Records: js.Array[Record],
-      LongPeriod: js.UndefOr[scala.Nothing],
-      ShortPeriod: js.UndefOr[scala.Nothing],
-      SignalPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(Records: js.Array[Record], LongPeriod: js.UndefOr[scala.Nothing], ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(
-      Records: js.Array[Record],
-      LongPeriod: js.UndefOr[scala.Nothing],
-      ShortPeriod: Double,
-      SignalPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(Records: js.Array[Record], LongPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(
-      Records: js.Array[Record],
-      LongPeriod: Double,
-      ShortPeriod: js.UndefOr[scala.Nothing],
-      SignalPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("TA.MACD")
-    @js.native
-    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def MACD(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Record], LongPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * 能量潮
@@ -878,9 +740,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {[number[] , number[]]}
       */
-    @JSGlobal("TA.OBV")
-    @js.native
-    def OBV(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def OBV(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * 强弱指标
@@ -891,12 +752,10 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @JSGlobal("TA.RSI")
-    @js.native
-    def RSI(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("TA.RSI")
-    @js.native
-    def RSI(Records: js.Array[Record], Period: Double): js.Array[Double] = js.native
+    @scala.inline
+    def RSI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def RSI(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   }
   
   /**
@@ -908,9 +767,8 @@ object global {
     * @param args
     * @return {T}
     */
-  @JSGlobal("_C")
-  @js.native
-  def _C[T](func: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = js.native
+  @scala.inline
+  def _C[T](func: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = (js.Dynamic.global.applyDynamic("_C")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * 返回指定时间戳(ms)字符串, 不传任何参数就返回当前时间,
@@ -920,9 +778,8 @@ object global {
     * @param {string} format
     * @return {string}
     */
-  @JSGlobal("_D")
-  @js.native
-  def _D(timestamp: String, format: String): String = js.native
+  @scala.inline
+  def _D(timestamp: String, format: String): String = (js.Dynamic.global.applyDynamic("_D")(timestamp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * 可保存的全局字典表
@@ -939,9 +796,8 @@ object global {
     * @param {string} K
     * @param {T} V
     */
-  @JSGlobal("_G")
-  @js.native
-  def _G[T](K: String, V: T): Unit = js.native
+  @scala.inline
+  def _G[T](K: String, V: T): Unit = (js.Dynamic.global.applyDynamic("_G")(K.asInstanceOf[js.Any], V.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 格式化一个浮点函数
@@ -950,12 +806,10 @@ object global {
     * @param {number=4} precision
     * @return {string}
     */
-  @JSGlobal("_N")
-  @js.native
-  def _N(num: Double): String = js.native
-  @JSGlobal("_N")
-  @js.native
-  def _N(num: Double, precision: Double): String = js.native
+  @scala.inline
+  def _N(num: Double): String = js.Dynamic.global.applyDynamic("_N")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def _N(num: Double, precision: Double): String = (js.Dynamic.global.applyDynamic("_N")(num.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSGlobal("_")
   @js.native
@@ -977,6 +831,10 @@ object global {
   
   object talib {
     
+    @JSGlobal("talib")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Vector Trigonometric ACos (反余弦函数)
       *
@@ -985,9 +843,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.ACOS")
-    @js.native
-    def ACOS(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def ACOS(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ACOS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Chaikin A/D Line (线随机指标)
@@ -1000,12 +857,10 @@ object global {
       * @param {number[]} Volume
       * @return {number[]}
       */
-    @JSGlobal("talib.AD")
-    @js.native
-    def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.AD")
-    @js.native
-    def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AD")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AD")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Chaikin A/D Line (线随机指标)
       *
@@ -1014,9 +869,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.AD")
-    @js.native
-    def AD(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def AD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Chaikin A/D Oscillator (佳庆指标)
@@ -1031,8 +885,7 @@ object global {
       * @param {number=10} SlowPeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ADOSC")
-    @js.native
+    @scala.inline
     def ADOSC(
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -1040,7 +893,7 @@ object global {
       Volume: js.Array[Double],
       FastPeriod: Double,
       SlowPeriod: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Chaikin A/D Oscillator (佳庆指标)
       *
@@ -1051,18 +904,14 @@ object global {
       * @param {number=10} SlowPeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ADOSC")
-    @js.native
-    def ADOSC(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ADOSC")
-    @js.native
-    def ADOSC(Records: js.Array[Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.ADOSC")
-    @js.native
-    def ADOSC(Records: js.Array[Record], FastPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.ADOSC")
-    @js.native
-    def ADOSC(Records: js.Array[Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ADOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ADOSC(Records: js.Array[Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ADOSC(Records: js.Array[Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ADOSC(Records: js.Array[Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Average Directional Movement Index (平均趋向指数)
@@ -1075,12 +924,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ADX")
-    @js.native
-    def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.ADX")
-    @js.native
-    def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average Directional Movement Index (平均趋向指数)
       *
@@ -1090,12 +937,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ADX")
-    @js.native
-    def ADX(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ADX")
-    @js.native
-    def ADX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ADX(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ADX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Average Directional Movement Index Rating (评估指数)
@@ -1108,12 +953,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ADXR")
-    @js.native
-    def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.ADXR")
-    @js.native
-    def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average Directional Movement Index Rating (评估指数)
       *
@@ -1123,12 +966,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ADXR")
-    @js.native
-    def ADXR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ADXR")
-    @js.native
-    def ADXR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ADXR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ADXR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Absolute Price Oscillator (绝对价格振荡指数)
@@ -1141,45 +982,22 @@ object global {
       * @param {number=0} MAType
       * @return {number[]}
       */
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(
-      Records: js.Array[Double | Record],
-      FastPeriod: js.UndefOr[scala.Nothing],
-      SlowPeriod: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(Records: js.Array[Double | Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(
-      Records: js.Array[Double | Record],
-      FastPeriod: js.UndefOr[scala.Nothing],
-      SlowPeriod: Double,
-      MAType: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(
-      Records: js.Array[Double | Record],
-      FastPeriod: Double,
-      SlowPeriod: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.APO")
-    @js.native
-    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = js.native
+    @scala.inline
+    def APO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def APO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Aroon (阿隆指标)
@@ -1191,12 +1009,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.AROON")
-    @js.native
-    def AROON(High: js.Array[Double], Low: js.Array[Double]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.AROON")
-    @js.native
-    def AROON(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def AROON(High: js.Array[Double], Low: js.Array[Double]): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def AROON(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     /**
       * Aroon (阿隆指标)
       *
@@ -1206,12 +1022,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.AROON")
-    @js.native
-    def AROON(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.AROON")
-    @js.native
-    def AROON(Records: js.Array[Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def AROON(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def AROON(Records: js.Array[Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Aroon Oscillator (阿隆震荡线)
@@ -1223,12 +1037,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.AROONOSC")
-    @js.native
-    def AROONOSC(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.AROONOSC")
-    @js.native
-    def AROONOSC(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def AROONOSC(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def AROONOSC(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Aroon Oscillator (阿隆震荡线)
       *
@@ -1238,12 +1050,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.AROONOSC")
-    @js.native
-    def AROONOSC(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.AROONOSC")
-    @js.native
-    def AROONOSC(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def AROONOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def AROONOSC(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric ASin (反正弦函数)
@@ -1253,9 +1063,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.ASIN")
-    @js.native
-    def ASIN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def ASIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ASIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric ATan (反正切函数)
@@ -1265,9 +1074,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.ATAN")
-    @js.native
-    def ATAN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def ATAN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Average True Range (平均真实波幅)
@@ -1280,12 +1088,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ATR")
-    @js.native
-    def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.ATR")
-    @js.native
-    def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average True Range (平均真实波幅)
       *
@@ -1295,12 +1101,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ATR")
-    @js.native
-    def ATR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ATR")
-    @js.native
-    def ATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Average Price (平均价格)
@@ -1313,9 +1117,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.AVGPRICE")
-    @js.native
-    def AVGPRICE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def AVGPRICE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AVGPRICE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average Price (平均价格)
       *
@@ -1324,9 +1127,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.AVGPRICE")
-    @js.native
-    def AVGPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def AVGPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AVGPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Bollinger Bands (布林带)
@@ -1341,122 +1143,91 @@ object global {
       * @param {number=0} MAType
       * @return {[number[], number[], number[]]}
       */
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Deviationsup: js.UndefOr[scala.Nothing],
-      Deviationsdown: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Deviationsup: js.UndefOr[scala.Nothing],
-      Deviationsdown: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Deviationsup: js.UndefOr[scala.Nothing],
-      Deviationsdown: Double,
-      MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Deviationsup: Double,
-      Deviationsdown: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Deviationsup: Double,
-      Deviationsdown: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Deviationsup: Double,
-      Deviationsdown: Double,
-      MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Deviationsup: js.UndefOr[scala.Nothing],
-      Deviationsdown: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Deviationsup: js.UndefOr[scala.Nothing],
-      Deviationsdown: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Deviationsup: js.UndefOr[scala.Nothing],
-      Deviationsdown: Double,
-      MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
-    def BBANDS(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Deviationsup: Double,
-      Deviationsdown: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
+    @scala.inline
+    def BBANDS(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
     def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Deviationsup: Double,
       Deviationsdown: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.BBANDS")
-    @js.native
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
     def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Deviationsup: Double,
       Deviationsdown: Double,
       MAType: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(
+      Records: js.Array[Double | Record],
+      TimePeriod: Double,
+      Deviationsup: Double,
+      Deviationsdown: Unit,
+      MAType: Double
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Unit, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(
+      Records: js.Array[Double | Record],
+      TimePeriod: Double,
+      Deviationsup: Unit,
+      Deviationsdown: Double,
+      MAType: Double
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(
+      Records: js.Array[Double | Record],
+      TimePeriod: Double,
+      Deviationsup: Unit,
+      Deviationsdown: Unit,
+      MAType: Double
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Double, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Deviationsup: Double,
+      Deviationsdown: Double,
+      MAType: Double
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Deviationsup: Double,
+      Deviationsdown: Unit,
+      MAType: Double
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Unit, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Deviationsup: Unit,
+      Deviationsdown: Double,
+      MAType: Double
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def BBANDS(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Deviationsup: Unit,
+      Deviationsdown: Unit,
+      MAType: Double
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * Balance Of Power (均势指标)
@@ -1469,9 +1240,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.BOP")
-    @js.native
-    def BOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def BOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("BOP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Balance Of Power (均势指标)
       *
@@ -1480,9 +1250,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.BOP")
-    @js.native
-    def BOP(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def BOP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("BOP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Commodity Channel Index (顺势指标)
@@ -1495,12 +1264,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.CCI")
-    @js.native
-    def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.CCI")
-    @js.native
-    def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Commodity Channel Index (顺势指标)
       *
@@ -1510,12 +1277,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.CCI")
-    @js.native
-    def CCI(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CCI")
-    @js.native
-    def CCI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CCI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CCI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Two Crows (K线图--两只乌鸦)
@@ -1528,9 +1293,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL2CROWS")
-    @js.native
-    def CDL2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL2CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Two Crows (K线图--两只乌鸦)
       *
@@ -1539,9 +1303,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL2CROWS")
-    @js.native
-    def CDL2CROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL2CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL2CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Black Crows (K线图--3只黑乌鸦)
@@ -1554,9 +1317,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3BLACKCROWS")
-    @js.native
-    def CDL3BLACKCROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3BLACKCROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3BLACKCROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Black Crows (K线图--3只黑乌鸦)
       *
@@ -1565,9 +1327,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3BLACKCROWS")
-    @js.native
-    def CDL3BLACKCROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3BLACKCROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3BLACKCROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Inside Up/Down (K线图:3内上下震荡)
@@ -1580,9 +1341,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3INSIDE")
-    @js.native
-    def CDL3INSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3INSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3INSIDE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Inside Up/Down (K线图:3内上下震荡)
       *
@@ -1591,9 +1351,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3INSIDE")
-    @js.native
-    def CDL3INSIDE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3INSIDE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3INSIDE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three-Line Strike  (K线图:3线震荡)
@@ -1606,9 +1365,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3LINESTRIKE")
-    @js.native
-    def CDL3LINESTRIKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3LINESTRIKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3LINESTRIKE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three-Line Strike  (K线图:3线震荡)
       *
@@ -1617,9 +1375,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3LINESTRIKE")
-    @js.native
-    def CDL3LINESTRIKE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3LINESTRIKE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3LINESTRIKE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Outside Up/Down (K线图:3外下震荡)
@@ -1632,9 +1389,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3OUTSIDE")
-    @js.native
-    def CDL3OUTSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3OUTSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3OUTSIDE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Outside Up/Down (K线图:3外下震荡)
       *
@@ -1643,9 +1399,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3OUTSIDE")
-    @js.native
-    def CDL3OUTSIDE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3OUTSIDE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3OUTSIDE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Stars In The South (K线图:南方三星)
@@ -1658,9 +1413,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3STARSINSOUTH")
-    @js.native
-    def CDL3STARSINSOUTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3STARSINSOUTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3STARSINSOUTH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Stars In The South (K线图:南方三星)
       *
@@ -1669,9 +1423,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3STARSINSOUTH")
-    @js.native
-    def CDL3STARSINSOUTH(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3STARSINSOUTH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3STARSINSOUTH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Advancing White Soldiers (K线图:三白兵)
@@ -1684,9 +1437,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3WHITESOLDIERS")
-    @js.native
-    def CDL3WHITESOLDIERS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3WHITESOLDIERS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3WHITESOLDIERS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Advancing White Soldiers (K线图:三白兵)
       *
@@ -1695,9 +1447,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDL3WHITESOLDIERS")
-    @js.native
-    def CDL3WHITESOLDIERS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDL3WHITESOLDIERS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3WHITESOLDIERS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Abandoned Baby (K线图:弃婴)
@@ -1711,15 +1462,14 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLABANDONEDBABY")
-    @js.native
+    @scala.inline
     def CDLABANDONEDBABY(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Penetration: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLABANDONEDBABY")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Abandoned Baby (K线图:弃婴)
       *
@@ -1729,12 +1479,10 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLABANDONEDBABY")
-    @js.native
-    def CDLABANDONEDBABY(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CDLABANDONEDBABY")
-    @js.native
-    def CDLABANDONEDBABY(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CDLABANDONEDBABY(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLABANDONEDBABY")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CDLABANDONEDBABY(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLABANDONEDBABY")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Advance Block (K线图:推进)
@@ -1747,9 +1495,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLADVANCEBLOCK")
-    @js.native
-    def CDLADVANCEBLOCK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLADVANCEBLOCK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLADVANCEBLOCK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Advance Block (K线图:推进)
       *
@@ -1758,9 +1505,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLADVANCEBLOCK")
-    @js.native
-    def CDLADVANCEBLOCK(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLADVANCEBLOCK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLADVANCEBLOCK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Belt-hold (K线图:带住)
@@ -1773,9 +1519,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLBELTHOLD")
-    @js.native
-    def CDLBELTHOLD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLBELTHOLD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLBELTHOLD")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Belt-hold (K线图:带住)
       *
@@ -1784,9 +1529,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLBELTHOLD")
-    @js.native
-    def CDLBELTHOLD(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLBELTHOLD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLBELTHOLD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Breakaway (K线图:分离)
@@ -1799,9 +1543,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLBREAKAWAY")
-    @js.native
-    def CDLBREAKAWAY(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLBREAKAWAY(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLBREAKAWAY")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Breakaway (K线图:分离)
       *
@@ -1810,9 +1553,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLBREAKAWAY")
-    @js.native
-    def CDLBREAKAWAY(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLBREAKAWAY(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLBREAKAWAY")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Closing Marubozu (K线图:收盘光头光脚)
@@ -1825,9 +1567,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLCLOSINGMARUBOZU")
-    @js.native
-    def CDLCLOSINGMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLCLOSINGMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCLOSINGMARUBOZU")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Closing Marubozu (K线图:收盘光头光脚)
       *
@@ -1836,9 +1577,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLCLOSINGMARUBOZU")
-    @js.native
-    def CDLCLOSINGMARUBOZU(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLCLOSINGMARUBOZU(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCLOSINGMARUBOZU")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Concealing Baby Swallow (K线图:藏婴吞没形态)
@@ -1851,9 +1591,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLCONCEALBABYSWALL")
-    @js.native
-    def CDLCONCEALBABYSWALL(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLCONCEALBABYSWALL(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCONCEALBABYSWALL")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Concealing Baby Swallow (K线图:藏婴吞没形态)
       *
@@ -1862,9 +1601,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLCONCEALBABYSWALL")
-    @js.native
-    def CDLCONCEALBABYSWALL(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLCONCEALBABYSWALL(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCONCEALBABYSWALL")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Counterattack (K线图:反击)
@@ -1877,9 +1615,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLCOUNTERATTACK")
-    @js.native
-    def CDLCOUNTERATTACK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLCOUNTERATTACK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCOUNTERATTACK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Counterattack (K线图:反击)
       *
@@ -1888,9 +1625,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLCOUNTERATTACK")
-    @js.native
-    def CDLCOUNTERATTACK(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLCOUNTERATTACK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCOUNTERATTACK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Dark Cloud Cover (K线图:乌云盖)
@@ -1904,15 +1640,14 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDARKCLOUDCOVER")
-    @js.native
+    @scala.inline
     def CDLDARKCLOUDCOVER(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Penetration: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDARKCLOUDCOVER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Dark Cloud Cover (K线图:乌云盖)
       *
@@ -1922,12 +1657,10 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDARKCLOUDCOVER")
-    @js.native
-    def CDLDARKCLOUDCOVER(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CDLDARKCLOUDCOVER")
-    @js.native
-    def CDLDARKCLOUDCOVER(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CDLDARKCLOUDCOVER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDARKCLOUDCOVER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CDLDARKCLOUDCOVER(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDARKCLOUDCOVER")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Doji (K线图:十字星 )
@@ -1940,9 +1673,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDOJI")
-    @js.native
-    def CDLDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Doji (K线图:十字星 )
       *
@@ -1951,9 +1683,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDOJI")
-    @js.native
-    def CDLDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Doji Star (K线图:十字星)
@@ -1966,9 +1697,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDOJISTAR")
-    @js.native
-    def CDLDOJISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLDOJISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Doji Star (K线图:十字星)
       *
@@ -1977,9 +1707,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDOJISTAR")
-    @js.native
-    def CDLDOJISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Dragonfly Doji (K线图:蜻蜓十字星)
@@ -1992,9 +1721,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDRAGONFLYDOJI")
-    @js.native
-    def CDLDRAGONFLYDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLDRAGONFLYDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDRAGONFLYDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Dragonfly Doji (K线图:蜻蜓十字星)
       *
@@ -2003,9 +1731,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLDRAGONFLYDOJI")
-    @js.native
-    def CDLDRAGONFLYDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLDRAGONFLYDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDRAGONFLYDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Engulfing Pattern (K线图:吞没)
@@ -2018,9 +1745,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLENGULFING")
-    @js.native
-    def CDLENGULFING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLENGULFING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLENGULFING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Engulfing Pattern (K线图:吞没)
       *
@@ -2029,9 +1755,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLENGULFING")
-    @js.native
-    def CDLENGULFING(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLENGULFING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLENGULFING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Evening Doji Star (K线图:黄昏十字星)
@@ -2045,15 +1770,14 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLEVENINGDOJISTAR")
-    @js.native
+    @scala.inline
     def CDLEVENINGDOJISTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Penetration: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGDOJISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Evening Doji Star (K线图:黄昏十字星)
       *
@@ -2063,12 +1787,10 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLEVENINGDOJISTAR")
-    @js.native
-    def CDLEVENINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CDLEVENINGDOJISTAR")
-    @js.native
-    def CDLEVENINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CDLEVENINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CDLEVENINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGDOJISTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Evening Star (K线图:黄昏之星)
@@ -2082,15 +1804,14 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLEVENINGSTAR")
-    @js.native
+    @scala.inline
     def CDLEVENINGSTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Penetration: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGSTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Evening Star (K线图:黄昏之星)
       *
@@ -2100,12 +1821,10 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLEVENINGSTAR")
-    @js.native
-    def CDLEVENINGSTAR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CDLEVENINGSTAR")
-    @js.native
-    def CDLEVENINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CDLEVENINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CDLEVENINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGSTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Up/Down-gap side-by-side white lines (K线图:上/下间隙并排的白色线条)
@@ -2118,9 +1837,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLGAPSIDESIDEWHITE")
-    @js.native
-    def CDLGAPSIDESIDEWHITE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLGAPSIDESIDEWHITE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLGAPSIDESIDEWHITE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Up/Down-gap side-by-side white lines (K线图:上/下间隙并排的白色线条)
       *
@@ -2129,9 +1847,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLGAPSIDESIDEWHITE")
-    @js.native
-    def CDLGAPSIDESIDEWHITE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLGAPSIDESIDEWHITE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLGAPSIDESIDEWHITE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Gravestone Doji (K线图:墓碑十字线)
@@ -2144,9 +1861,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLGRAVESTONEDOJI")
-    @js.native
-    def CDLGRAVESTONEDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLGRAVESTONEDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLGRAVESTONEDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Gravestone Doji (K线图:墓碑十字线)
       *
@@ -2155,9 +1871,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLGRAVESTONEDOJI")
-    @js.native
-    def CDLGRAVESTONEDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLGRAVESTONEDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLGRAVESTONEDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hammer (K线图:锤)
@@ -2170,9 +1885,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHAMMER")
-    @js.native
-    def CDLHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHAMMER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Hammer (K线图:锤)
       *
@@ -2181,9 +1895,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHAMMER")
-    @js.native
-    def CDLHAMMER(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHAMMER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHAMMER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hanging Man (K线图:吊人)
@@ -2196,9 +1909,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHANGINGMAN")
-    @js.native
-    def CDLHANGINGMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHANGINGMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHANGINGMAN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Hanging Man (K线图:吊人)
       *
@@ -2207,9 +1919,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHANGINGMAN")
-    @js.native
-    def CDLHANGINGMAN(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHANGINGMAN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHANGINGMAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Harami Pattern (K线图:阴阳线)
@@ -2222,9 +1933,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHARAMI")
-    @js.native
-    def CDLHARAMI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHARAMI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Harami Pattern (K线图:阴阳线)
       *
@@ -2233,9 +1943,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHARAMI")
-    @js.native
-    def CDLHARAMI(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHARAMI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Harami Cross Pattern (K线图:交叉阴阳线)
@@ -2248,9 +1957,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHARAMICROSS")
-    @js.native
-    def CDLHARAMICROSS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHARAMICROSS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMICROSS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Harami Cross Pattern (K线图:交叉阴阳线)
       *
@@ -2259,9 +1967,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHARAMICROSS")
-    @js.native
-    def CDLHARAMICROSS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHARAMICROSS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMICROSS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * High-Wave Candle (K线图:长脚十字线 )
@@ -2274,9 +1981,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHIGHWAVE")
-    @js.native
-    def CDLHIGHWAVE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHIGHWAVE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIGHWAVE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * High-Wave Candle (K线图:长脚十字线 )
       *
@@ -2285,9 +1991,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHIGHWAVE")
-    @js.native
-    def CDLHIGHWAVE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHIGHWAVE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIGHWAVE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hikkake Pattern (K线图:陷阱)
@@ -2300,9 +2005,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHIKKAKE")
-    @js.native
-    def CDLHIKKAKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHIKKAKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Hikkake Pattern (K线图:陷阱)
       *
@@ -2311,9 +2015,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHIKKAKE")
-    @js.native
-    def CDLHIKKAKE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHIKKAKE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Modified Hikkake Pattern (K线图:改良的陷阱)
@@ -2326,9 +2029,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHIKKAKEMOD")
-    @js.native
-    def CDLHIKKAKEMOD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHIKKAKEMOD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKEMOD")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Modified Hikkake Pattern (K线图:改良的陷阱)
       *
@@ -2337,9 +2039,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHIKKAKEMOD")
-    @js.native
-    def CDLHIKKAKEMOD(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHIKKAKEMOD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKEMOD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Homing Pigeon (K线图:信鸽)
@@ -2352,9 +2053,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHOMINGPIGEON")
-    @js.native
-    def CDLHOMINGPIGEON(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHOMINGPIGEON(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHOMINGPIGEON")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Homing Pigeon (K线图:信鸽)
       *
@@ -2363,9 +2063,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLHOMINGPIGEON")
-    @js.native
-    def CDLHOMINGPIGEON(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLHOMINGPIGEON(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHOMINGPIGEON")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Identical Three Crows (K线图:相同的三只乌鸦)
@@ -2378,9 +2077,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLIDENTICAL3CROWS")
-    @js.native
-    def CDLIDENTICAL3CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLIDENTICAL3CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLIDENTICAL3CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Identical Three Crows (K线图:相同的三只乌鸦)
       *
@@ -2389,9 +2087,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLIDENTICAL3CROWS")
-    @js.native
-    def CDLIDENTICAL3CROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLIDENTICAL3CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLIDENTICAL3CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * In-Neck Pattern (K线图:颈纹)
@@ -2404,9 +2101,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLINNECK")
-    @js.native
-    def CDLINNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLINNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLINNECK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * In-Neck Pattern (K线图:颈纹)
       *
@@ -2415,9 +2111,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLINNECK")
-    @js.native
-    def CDLINNECK(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLINNECK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLINNECK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Inverted Hammer (K线图:倒锤)
@@ -2430,9 +2125,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLINVERTEDHAMMER")
-    @js.native
-    def CDLINVERTEDHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLINVERTEDHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLINVERTEDHAMMER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Inverted Hammer (K线图:倒锤)
       *
@@ -2441,9 +2135,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLINVERTEDHAMMER")
-    @js.native
-    def CDLINVERTEDHAMMER(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLINVERTEDHAMMER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLINVERTEDHAMMER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Kicking (K线图:踢)
@@ -2456,9 +2149,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLKICKING")
-    @js.native
-    def CDLKICKING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLKICKING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Kicking (K线图:踢)
       *
@@ -2467,9 +2159,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLKICKING")
-    @js.native
-    def CDLKICKING(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLKICKING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Kicking - bull/bear determined by the longer marubozu (K线图:踢牛/踢熊)
@@ -2482,9 +2173,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLKICKINGBYLENGTH")
-    @js.native
-    def CDLKICKINGBYLENGTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLKICKINGBYLENGTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKINGBYLENGTH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Kicking - bull/bear determined by the longer marubozu (K线图:踢牛/踢熊)
       *
@@ -2493,9 +2183,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLKICKINGBYLENGTH")
-    @js.native
-    def CDLKICKINGBYLENGTH(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLKICKINGBYLENGTH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKINGBYLENGTH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Ladder Bottom (K线图:梯底)
@@ -2508,9 +2197,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLLADDERBOTTOM")
-    @js.native
-    def CDLLADDERBOTTOM(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLLADDERBOTTOM(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLADDERBOTTOM")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Ladder Bottom (K线图:梯底)
       *
@@ -2519,9 +2207,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLLADDERBOTTOM")
-    @js.native
-    def CDLLADDERBOTTOM(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLLADDERBOTTOM(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLADDERBOTTOM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Long Legged Doji (K线图:长腿十字线)
@@ -2534,9 +2221,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLLONGLEGGEDDOJI")
-    @js.native
-    def CDLLONGLEGGEDDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLLONGLEGGEDDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLEGGEDDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Long Legged Doji (K线图:长腿十字线)
       *
@@ -2545,9 +2231,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLLONGLEGGEDDOJI")
-    @js.native
-    def CDLLONGLEGGEDDOJI(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLLONGLEGGEDDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLEGGEDDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Long Line Candle (K线图:长线)
@@ -2560,9 +2245,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLLONGLINE")
-    @js.native
-    def CDLLONGLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLLONGLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLINE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Long Line Candle (K线图:长线)
       *
@@ -2571,9 +2255,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLLONGLINE")
-    @js.native
-    def CDLLONGLINE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLLONGLINE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Marubozu (K线图:光头光脚 )
@@ -2586,9 +2269,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMARUBOZU")
-    @js.native
-    def CDLMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMARUBOZU")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Marubozu (K线图:光头光脚 )
       *
@@ -2597,9 +2279,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMARUBOZU")
-    @js.native
-    def CDLMARUBOZU(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLMARUBOZU(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMARUBOZU")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Matching Low (K线图:匹配低)
@@ -2612,9 +2293,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMATCHINGLOW")
-    @js.native
-    def CDLMATCHINGLOW(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLMATCHINGLOW(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATCHINGLOW")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Matching Low (K线图:匹配低)
       *
@@ -2623,9 +2303,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMATCHINGLOW")
-    @js.native
-    def CDLMATCHINGLOW(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLMATCHINGLOW(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATCHINGLOW")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Mat Hold (K线图:垫住)
@@ -2639,15 +2318,14 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMATHOLD")
-    @js.native
+    @scala.inline
     def CDLMATHOLD(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Penetration: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATHOLD")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Mat Hold (K线图:垫住)
       *
@@ -2657,12 +2335,10 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMATHOLD")
-    @js.native
-    def CDLMATHOLD(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CDLMATHOLD")
-    @js.native
-    def CDLMATHOLD(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CDLMATHOLD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATHOLD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CDLMATHOLD(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATHOLD")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Morning Doji Star (K线图:早晨十字星)
@@ -2676,15 +2352,14 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMORNINGDOJISTAR")
-    @js.native
+    @scala.inline
     def CDLMORNINGDOJISTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Penetration: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGDOJISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Morning Doji Star (K线图:早晨十字星)
       *
@@ -2694,12 +2369,10 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMORNINGDOJISTAR")
-    @js.native
-    def CDLMORNINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CDLMORNINGDOJISTAR")
-    @js.native
-    def CDLMORNINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CDLMORNINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CDLMORNINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGDOJISTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Morning Star (K线图:晨星)
@@ -2713,15 +2386,14 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMORNINGSTAR")
-    @js.native
+    @scala.inline
     def CDLMORNINGSTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Penetration: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGSTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Morning Star (K线图:晨星)
       *
@@ -2731,12 +2403,10 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLMORNINGSTAR")
-    @js.native
-    def CDLMORNINGSTAR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CDLMORNINGSTAR")
-    @js.native
-    def CDLMORNINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CDLMORNINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CDLMORNINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGSTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * On-Neck Pattern (K线图:颈型)
@@ -2749,9 +2419,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLONNECK")
-    @js.native
-    def CDLONNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLONNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLONNECK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * On-Neck Pattern (K线图:颈型)
       *
@@ -2760,9 +2429,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLONNECK")
-    @js.native
-    def CDLONNECK(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLONNECK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLONNECK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Piercing Pattern (K线图:穿孔模式)
@@ -2775,9 +2443,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLPIERCING")
-    @js.native
-    def CDLPIERCING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLPIERCING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLPIERCING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Piercing Pattern (K线图:穿孔模式)
       *
@@ -2786,9 +2453,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLPIERCING")
-    @js.native
-    def CDLPIERCING(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLPIERCING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLPIERCING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Rickshaw Man (K线图:车夫)
@@ -2801,9 +2467,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLRICKSHAWMAN")
-    @js.native
-    def CDLRICKSHAWMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLRICKSHAWMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLRICKSHAWMAN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Rickshaw Man (K线图:车夫)
       *
@@ -2812,9 +2477,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLRICKSHAWMAN")
-    @js.native
-    def CDLRICKSHAWMAN(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLRICKSHAWMAN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLRICKSHAWMAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Rising/Falling Three Methods (K线图:上升/下降三法)
@@ -2827,9 +2491,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLRISEFALL3METHODS")
-    @js.native
-    def CDLRISEFALL3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLRISEFALL3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLRISEFALL3METHODS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Rising/Falling Three Methods (K线图:上升/下降三法)
       *
@@ -2838,9 +2501,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLRISEFALL3METHODS")
-    @js.native
-    def CDLRISEFALL3METHODS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLRISEFALL3METHODS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLRISEFALL3METHODS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Separating Lines (K线图:分割线)
@@ -2853,9 +2515,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSEPARATINGLINES")
-    @js.native
-    def CDLSEPARATINGLINES(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSEPARATINGLINES(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSEPARATINGLINES")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Separating Lines (K线图:分割线)
       *
@@ -2864,9 +2525,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSEPARATINGLINES")
-    @js.native
-    def CDLSEPARATINGLINES(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSEPARATINGLINES(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSEPARATINGLINES")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Shooting Star (K线图:流星)
@@ -2879,9 +2539,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSHOOTINGSTAR")
-    @js.native
-    def CDLSHOOTINGSTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSHOOTINGSTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHOOTINGSTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Shooting Star (K线图:流星)
       *
@@ -2890,9 +2549,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSHOOTINGSTAR")
-    @js.native
-    def CDLSHOOTINGSTAR(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSHOOTINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHOOTINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Short Line Candle (K线图:短线)
@@ -2905,9 +2563,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSHORTLINE")
-    @js.native
-    def CDLSHORTLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSHORTLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHORTLINE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Short Line Candle (K线图:短线)
       *
@@ -2916,9 +2573,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSHORTLINE")
-    @js.native
-    def CDLSHORTLINE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSHORTLINE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHORTLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Spinning Top (K线图:陀螺)
@@ -2931,9 +2587,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSPINNINGTOP")
-    @js.native
-    def CDLSPINNINGTOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSPINNINGTOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSPINNINGTOP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Spinning Top (K线图:陀螺)
       *
@@ -2942,9 +2597,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSPINNINGTOP")
-    @js.native
-    def CDLSPINNINGTOP(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSPINNINGTOP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSPINNINGTOP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Stalled Pattern (K线图:停滞模式)
@@ -2957,9 +2611,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSTALLEDPATTERN")
-    @js.native
-    def CDLSTALLEDPATTERN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSTALLEDPATTERN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTALLEDPATTERN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Stalled Pattern (K线图:停滞模式)
       *
@@ -2968,9 +2621,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSTALLEDPATTERN")
-    @js.native
-    def CDLSTALLEDPATTERN(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSTALLEDPATTERN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTALLEDPATTERN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Stick Sandwich (K线图:棍子三明治)
@@ -2983,9 +2635,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSTICKSANDWICH")
-    @js.native
-    def CDLSTICKSANDWICH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSTICKSANDWICH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTICKSANDWICH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Stick Sandwich (K线图:棍子三明治)
       *
@@ -2994,9 +2645,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLSTICKSANDWICH")
-    @js.native
-    def CDLSTICKSANDWICH(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLSTICKSANDWICH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTICKSANDWICH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Takuri (Dragonfly Doji with very long lower shadow) (K线图:托里)
@@ -3009,9 +2659,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTAKURI")
-    @js.native
-    def CDLTAKURI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTAKURI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTAKURI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Takuri (Dragonfly Doji with very long lower shadow) (K线图:托里)
       *
@@ -3020,9 +2669,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTAKURI")
-    @js.native
-    def CDLTAKURI(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTAKURI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTAKURI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Tasuki Gap (K线图:翼隙)
@@ -3035,9 +2683,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTASUKIGAP")
-    @js.native
-    def CDLTASUKIGAP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTASUKIGAP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTASUKIGAP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Tasuki Gap (K线图:翼隙)
       *
@@ -3046,9 +2693,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTASUKIGAP")
-    @js.native
-    def CDLTASUKIGAP(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTASUKIGAP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTASUKIGAP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Thrusting Pattern (K线图:推模式)
@@ -3061,9 +2707,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTHRUSTING")
-    @js.native
-    def CDLTHRUSTING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTHRUSTING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTHRUSTING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Thrusting Pattern (K线图:推模式)
       *
@@ -3072,9 +2717,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTHRUSTING")
-    @js.native
-    def CDLTHRUSTING(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTHRUSTING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTHRUSTING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Tristar Pattern (K线图:三星模式)
@@ -3087,9 +2731,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTRISTAR")
-    @js.native
-    def CDLTRISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTRISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTRISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Tristar Pattern (K线图:三星模式)
       *
@@ -3098,9 +2741,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLTRISTAR")
-    @js.native
-    def CDLTRISTAR(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLTRISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTRISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Unique 3 River (K线图:独特的3河)
@@ -3113,9 +2755,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLUNIQUE3RIVER")
-    @js.native
-    def CDLUNIQUE3RIVER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLUNIQUE3RIVER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLUNIQUE3RIVER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Unique 3 River (K线图:独特的3河)
       *
@@ -3124,9 +2765,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLUNIQUE3RIVER")
-    @js.native
-    def CDLUNIQUE3RIVER(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLUNIQUE3RIVER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLUNIQUE3RIVER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Upside Gap Two Crows (K线图:双飞乌鸦)
@@ -3139,9 +2779,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLUPSIDEGAP2CROWS")
-    @js.native
-    def CDLUPSIDEGAP2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLUPSIDEGAP2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLUPSIDEGAP2CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Upside Gap Two Crows (K线图:双飞乌鸦)
       *
@@ -3150,9 +2789,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLUPSIDEGAP2CROWS")
-    @js.native
-    def CDLUPSIDEGAP2CROWS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLUPSIDEGAP2CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLUPSIDEGAP2CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Upside/Downside Gap Three Methods (K线图:上行/下行缺口三方法)
@@ -3165,9 +2803,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLXSIDEGAP3METHODS")
-    @js.native
-    def CDLXSIDEGAP3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLXSIDEGAP3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLXSIDEGAP3METHODS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Upside/Downside Gap Three Methods (K线图:上行/下行缺口三方法)
       *
@@ -3176,9 +2813,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CDLXSIDEGAP3METHODS")
-    @js.native
-    def CDLXSIDEGAP3METHODS(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CDLXSIDEGAP3METHODS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLXSIDEGAP3METHODS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Ceil (取整函数)
@@ -3188,9 +2824,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.CEIL")
-    @js.native
-    def CEIL(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def CEIL(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CEIL")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Chande Momentum Oscillator (钱德动量摆动指标)
@@ -3201,12 +2836,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.CMO")
-    @js.native
-    def CMO(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.CMO")
-    @js.native
-    def CMO(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def CMO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CMO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def CMO(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CMO")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Cos (余弦函数)
@@ -3216,9 +2849,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.COS")
-    @js.native
-    def COS(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def COS(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("COS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Cosh (双曲余弦值)
@@ -3228,9 +2860,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.COSH")
-    @js.native
-    def COSH(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def COSH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("COSH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Double Exponential Moving Average (双指数移动平均线)
@@ -3241,12 +2872,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.DEMA")
-    @js.native
-    def DEMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.DEMA")
-    @js.native
-    def DEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def DEMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("DEMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def DEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DEMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Directional Movement Index (动向指数)
@@ -3259,12 +2888,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.DX")
-    @js.native
-    def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.DX")
-    @js.native
-    def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Directional Movement Index (动向指数)
       *
@@ -3274,12 +2901,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.DX")
-    @js.native
-    def DX(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.DX")
-    @js.native
-    def DX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def DX(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("DX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def DX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Exponential Moving Average (指数移动平均线)
@@ -3290,12 +2915,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.EMA")
-    @js.native
-    def EMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.EMA")
-    @js.native
-    def EMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def EMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def EMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Arithmetic Exp (指数函数)
@@ -3305,9 +2928,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.EXP")
-    @js.native
-    def EXP(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def EXP(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EXP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Floor (向下取整)
@@ -3317,9 +2939,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.FLOOR")
-    @js.native
-    def FLOOR(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def FLOOR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("FLOOR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Dominant Cycle Period (希尔伯特变换, 主周期)
@@ -3329,9 +2950,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.HT_DCPERIOD")
-    @js.native
-    def HT_DCPERIOD(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def HT_DCPERIOD(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_DCPERIOD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Dominant Cycle Phase (希尔伯特变换,主阶段)
@@ -3341,9 +2961,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.HT_DCPHASE")
-    @js.native
-    def HT_DCPHASE(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def HT_DCPHASE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_DCPHASE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Phasor Components (希尔伯特变换,相成分)
@@ -3353,9 +2972,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.HT_PHASOR")
-    @js.native
-    def HT_PHASOR(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def HT_PHASOR(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_PHASOR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Hilbert Transform - SineWave (希尔伯特变换,正弦波)
@@ -3365,9 +2983,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.HT_SINE")
-    @js.native
-    def HT_SINE(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def HT_SINE(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_SINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Hilbert Transform - Instantaneous Trendline (希尔伯特变换,瞬时趋势)
@@ -3377,9 +2994,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.HT_TRENDLINE")
-    @js.native
-    def HT_TRENDLINE(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def HT_TRENDLINE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_TRENDLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Trend vs Cycle Mode (希尔伯特变换-趋势与周期模式)
@@ -3389,9 +3005,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.HT_TRENDMODE")
-    @js.native
-    def HT_TRENDMODE(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def HT_TRENDMODE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_TRENDMODE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Kaufman Adaptive Moving Average (适应性移动平均线)
@@ -3402,12 +3017,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.KAMA")
-    @js.native
-    def KAMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.KAMA")
-    @js.native
-    def KAMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def KAMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("KAMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def KAMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("KAMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression (线性回归)
@@ -3418,12 +3031,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.LINEARREG")
-    @js.native
-    def LINEARREG(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.LINEARREG")
-    @js.native
-    def LINEARREG(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def LINEARREG(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def LINEARREG(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression Angle (线性回归的角度)
@@ -3434,9 +3045,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.LINEARREG_ANGLE")
-    @js.native
-    def LINEARREG_ANGLE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def LINEARREG_ANGLE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_ANGLE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression Intercept (线性回归截距)
@@ -3447,9 +3057,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.LINEARREG_INTERCEPT")
-    @js.native
-    def LINEARREG_INTERCEPT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def LINEARREG_INTERCEPT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_INTERCEPT")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression Slope (线性回归斜率)
@@ -3460,9 +3069,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.LINEARREG_SLOPE")
-    @js.native
-    def LINEARREG_SLOPE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def LINEARREG_SLOPE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_SLOPE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Log Natural (自然对数)
@@ -3472,9 +3080,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.LN")
-    @js.native
-    def LN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def LN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Log10 (对数函数)
@@ -3484,9 +3091,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.LOG10")
-    @js.native
-    def LOG10(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def LOG10(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG10")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Moving average (移动平均线)
@@ -3498,18 +3104,14 @@ object global {
       * @param {number=0} MAType
       * @return {number[]}
       */
-    @JSGlobal("talib.MA")
-    @js.native
-    def MA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MA")
-    @js.native
-    def MA(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], MAType: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.MA")
-    @js.native
-    def MA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.MA")
-    @js.native
-    def MA(Records: js.Array[Double | Record], TimePeriod: Double, MAType: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MA(Records: js.Array[Double | Record], TimePeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MA(Records: js.Array[Double | Record], TimePeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Moving Average Convergence/Divergence (指数平滑移动平均线)
@@ -3523,45 +3125,22 @@ object global {
       * @param {number=9} SignalPeriod
       * @return {[number[], number[], number[]]}
       */
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(
-      Records: js.Array[Double | Record],
-      FastPeriod: js.UndefOr[scala.Nothing],
-      SlowPeriod: js.UndefOr[scala.Nothing],
-      SignalPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(Records: js.Array[Double | Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(
-      Records: js.Array[Double | Record],
-      FastPeriod: js.UndefOr[scala.Nothing],
-      SlowPeriod: Double,
-      SignalPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(
-      Records: js.Array[Double | Record],
-      FastPeriod: Double,
-      SlowPeriod: js.UndefOr[scala.Nothing],
-      SignalPeriod: Double
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACD")
-    @js.native
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record], FastPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * MACD with controllable MA type (MA型可控 MACD)
@@ -3579,8 +3158,7 @@ object global {
       * @param {number=0} SignalMA
       * @return {[number[], number[], number[]]}
       */
-    @JSGlobal("talib.MACDEXT")
-    @js.native
+    @scala.inline
     def MACDEXT(
       Records: js.Array[Double | Record],
       FastPeriod: js.UndefOr[Double],
@@ -3589,7 +3167,7 @@ object global {
       SlowMA: js.UndefOr[Double],
       SignalPeriod: js.UndefOr[Double],
       SignalMA: js.UndefOr[Double]
-    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+    ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACDEXT")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], FastMA.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SlowMA.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any], SignalMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * Moving Average Convergence/Divergence Fix 12/26 (移动平均收敛/发散修复12/26)
@@ -3600,12 +3178,10 @@ object global {
       * @param {number=9} SignalPeriod
       * @return {[number[], number[], number[]]}
       */
-    @JSGlobal("talib.MACDFIX")
-    @js.native
-    def MACDFIX(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MACDFIX")
-    @js.native
-    def MACDFIX(Records: js.Array[Double | Record], SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def MACDFIX(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACDFIX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MACDFIX(Records: js.Array[Double | Record], SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACDFIX")(Records.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * MESA Adaptive Moving Average (MESA 移动平均线)
@@ -3617,18 +3193,14 @@ object global {
       * @param {number=0.05} SlowLimit
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.MAMA")
-    @js.native
-    def MAMA(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MAMA")
-    @js.native
-    def MAMA(Records: js.Array[Double | Record], FastLimit: js.UndefOr[scala.Nothing], SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MAMA")
-    @js.native
-    def MAMA(Records: js.Array[Double | Record], FastLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MAMA")
-    @js.native
-    def MAMA(Records: js.Array[Double | Record], FastLimit: Double, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def MAMA(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MAMA(Records: js.Array[Double | Record], FastLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MAMA(Records: js.Array[Double | Record], FastLimit: Double, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any], SlowLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MAMA(Records: js.Array[Double | Record], FastLimit: Unit, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any], SlowLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Highest value over a specified period (最大值)
@@ -3639,12 +3211,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MAX")
-    @js.native
-    def MAX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MAX")
-    @js.native
-    def MAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MAX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Index of highest value over a specified period (最大值索引)
@@ -3655,12 +3225,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MAXINDEX")
-    @js.native
-    def MAXINDEX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MAXINDEX")
-    @js.native
-    def MAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MAXINDEX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAXINDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAXINDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Median Price (中位数价格)
@@ -3671,9 +3239,8 @@ object global {
       * @param {number[]} Low
       * @return {number[]}
       */
-    @JSGlobal("talib.MEDPRICE")
-    @js.native
-    def MEDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def MEDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MEDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Median Price (中位数价格)
       *
@@ -3682,9 +3249,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.MEDPRICE")
-    @js.native
-    def MEDPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def MEDPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MEDPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Money Flow Index (货币流量指数)
@@ -3698,18 +3264,16 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MFI")
-    @js.native
-    def MFI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.MFI")
-    @js.native
+    @scala.inline
+    def MFI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
     def MFI(
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
       Volume: js.Array[Double],
       TimePeriod: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Money Flow Index (货币流量指数)
       *
@@ -3719,12 +3283,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MFI")
-    @js.native
-    def MFI(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MFI")
-    @js.native
-    def MFI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MFI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MFI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * MidPoint over period (中点)
@@ -3735,12 +3297,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MIDPOINT")
-    @js.native
-    def MIDPOINT(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MIDPOINT")
-    @js.native
-    def MIDPOINT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MIDPOINT(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIDPOINT")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MIDPOINT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPOINT")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Midpoint Price over period (中点价格)
@@ -3752,12 +3312,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MIDPRICE")
-    @js.native
-    def MIDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.MIDPRICE")
-    @js.native
-    def MIDPRICE(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MIDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MIDPRICE(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Midpoint Price over period (中点价格)
       *
@@ -3767,12 +3325,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MIDPRICE")
-    @js.native
-    def MIDPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MIDPRICE")
-    @js.native
-    def MIDPRICE(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MIDPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MIDPRICE(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Lowest value over a specified period (最小值)
@@ -3783,12 +3339,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MIN")
-    @js.native
-    def MIN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MIN")
-    @js.native
-    def MIN(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MIN(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIN")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Index of lowest value over a specified period (最小值索引)
@@ -3799,12 +3353,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MININDEX")
-    @js.native
-    def MININDEX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MININDEX")
-    @js.native
-    def MININDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MININDEX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MININDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MININDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MININDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Lowest and highest values over a specified period (最小最大值)
@@ -3815,12 +3367,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.MINMAX")
-    @js.native
-    def MINMAX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MINMAX")
-    @js.native
-    def MINMAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def MINMAX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MINMAX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MINMAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINMAX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Indexes of lowest and highest values over a specified period (最小最大值索引)
@@ -3831,12 +3381,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.MINMAXINDEX")
-    @js.native
-    def MINMAXINDEX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.MINMAXINDEX")
-    @js.native
-    def MINMAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def MINMAXINDEX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MINMAXINDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def MINMAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINMAXINDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Minus Directional Indicator (负向指标)
@@ -3849,9 +3397,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MINUS_DI")
-    @js.native
-    def MINUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MINUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Minus Directional Indicator (负向指标)
       *
@@ -3861,9 +3408,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MINUS_DI")
-    @js.native
-    def MINUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MINUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Minus Directional Movement (负向运动)
@@ -3875,9 +3421,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MINUS_DM")
-    @js.native
-    def MINUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MINUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DM")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Minus Directional Movement (负向运动)
       *
@@ -3887,9 +3432,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MINUS_DM")
-    @js.native
-    def MINUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MINUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Momentum (动量)
@@ -3900,12 +3444,10 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.MOM")
-    @js.native
-    def MOM(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.MOM")
-    @js.native
-    def MOM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def MOM(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MOM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def MOM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MOM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Normalized Average True Range (归一化平均值范围)
@@ -3918,12 +3460,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.NATR")
-    @js.native
-    def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.NATR")
-    @js.native
-    def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Normalized Average True Range (归一化平均值范围)
       *
@@ -3933,16 +3473,13 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.NATR")
-    @js.native
-    def NATR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.NATR")
-    @js.native
-    def NATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def NATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def NATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSGlobal("talib.OBV")
-    @js.native
-    def OBV(Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def OBV(Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * On Balance Volume (能量潮)
       *
@@ -3960,9 +3497,8 @@ object global {
       * @param {number[]} Volume
       * @return {number[]}
       */
-    @JSGlobal("talib.OBV")
-    @js.native
-    def OBV(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def OBV(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Plus Directional Indicator (更向指示器)
@@ -3975,9 +3511,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.PLUS_DI")
-    @js.native
-    def PLUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def PLUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Plus Directional Indicator (更向指示器)
       *
@@ -3987,9 +3522,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.PLUS_DI")
-    @js.native
-    def PLUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def PLUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Plus Directional Movement (定向运动)
@@ -4001,9 +3535,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.PLUS_DM")
-    @js.native
-    def PLUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def PLUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DM")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Plus Directional Movement (定向运动)
       *
@@ -4013,9 +3546,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.PLUS_DM")
-    @js.native
-    def PLUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def PLUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Percentage Price Oscillator (价格振荡百分比)
@@ -4028,45 +3560,22 @@ object global {
       * @param {number=0} MAType
       * @return {number[]}
       */
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(
-      Records: js.Array[Double | Record],
-      FastPeriod: js.UndefOr[scala.Nothing],
-      SlowPeriod: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(Records: js.Array[Double | Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(
-      Records: js.Array[Double | Record],
-      FastPeriod: js.UndefOr[scala.Nothing],
-      SlowPeriod: Double,
-      MAType: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(
-      Records: js.Array[Double | Record],
-      FastPeriod: Double,
-      SlowPeriod: js.UndefOr[scala.Nothing],
-      MAType: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.PPO")
-    @js.native
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = js.native
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change : ((price/prevPrice)-1)*100 (变动率指标)
@@ -4077,12 +3586,10 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ROC")
-    @js.native
-    def ROC(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ROC")
-    @js.native
-    def ROC(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ROC(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ROC(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROC")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change Percentage: (price-prevPrice)/prevPrice (价格变化率)
@@ -4093,12 +3600,10 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ROCP")
-    @js.native
-    def ROCP(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ROCP")
-    @js.native
-    def ROCP(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ROCP(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROCP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ROCP(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCP")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change ratio: (price/prevPrice) (价格变化率)
@@ -4109,12 +3614,10 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ROCR")
-    @js.native
-    def ROCR(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ROCR")
-    @js.native
-    def ROCR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ROCR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROCR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ROCR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change ratio 100 scale: (price/prevPrice)*100 (价格变化率)
@@ -4125,9 +3628,8 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ROCR100")
-    @js.native
-    def ROCR100(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ROCR100(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCR100")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Relative Strength Index (相对强弱指标)
@@ -4138,12 +3640,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.RSI")
-    @js.native
-    def RSI(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.RSI")
-    @js.native
-    def RSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def RSI(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def RSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Parabolic SAR (抛物线转向)
@@ -4156,23 +3656,14 @@ object global {
       * @param {number=0.2} AFMaximum
       * @return {number[]}
       */
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(
-      High: js.Array[Double],
-      Low: js.Array[Double],
-      AccelerationFactor: js.UndefOr[scala.Nothing],
-      AFMaximum: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = js.native
+    @scala.inline
+    def SAR(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Unit, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Parabolic SAR (抛物线转向)
       *
@@ -4183,18 +3674,14 @@ object global {
       * @param {number=0.2} AFMaximum
       * @return {number[]}
       */
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(Records: js.Array[Record], AccelerationFactor: js.UndefOr[scala.Nothing], AFMaximum: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(Records: js.Array[Record], AccelerationFactor: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.SAR")
-    @js.native
-    def SAR(Records: js.Array[Record], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = js.native
+    @scala.inline
+    def SAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SAR(Records: js.Array[Record], AccelerationFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SAR(Records: js.Array[Record], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SAR(Records: js.Array[Record], AccelerationFactor: Unit, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Parabolic SAR - Extended (增强型抛物线转向)
@@ -4215,8 +3702,7 @@ object global {
       * @param {number=0.2} AFMaxShort
       * @return {number[]}
       */
-    @JSGlobal("talib.SAREXT")
-    @js.native
+    @scala.inline
     def SAREXT(
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -4228,7 +3714,7 @@ object global {
       AFInitShort: Double,
       AFShort: Double,
       AFMaxShort: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAREXT")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], StartValue.asInstanceOf[js.Any], OffsetonReverse.asInstanceOf[js.Any], AFInitLong.asInstanceOf[js.Any], AFLong.asInstanceOf[js.Any], AFMaxLong.asInstanceOf[js.Any], AFInitShort.asInstanceOf[js.Any], AFShort.asInstanceOf[js.Any], AFMaxShort.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Parabolic SAR - Extended (增强型抛物线转向)
       *
@@ -4247,8 +3733,7 @@ object global {
       * @param {number=0.2} AFMaxShort
       * @return {number[]}
       */
-    @JSGlobal("talib.SAREXT")
-    @js.native
+    @scala.inline
     def SAREXT(
       Records: js.Array[Record],
       StartValue: js.UndefOr[Double],
@@ -4259,7 +3744,7 @@ object global {
       AFInitShort: js.UndefOr[Double],
       AFShort: js.UndefOr[Double],
       AFMaxShort: js.UndefOr[Double]
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAREXT")(Records.asInstanceOf[js.Any], StartValue.asInstanceOf[js.Any], OffsetonReverse.asInstanceOf[js.Any], AFInitLong.asInstanceOf[js.Any], AFLong.asInstanceOf[js.Any], AFMaxLong.asInstanceOf[js.Any], AFInitShort.asInstanceOf[js.Any], AFShort.asInstanceOf[js.Any], AFMaxShort.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Sin (正弦值)
@@ -4269,9 +3754,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.SIN")
-    @js.native
-    def SIN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def SIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Sinh (双曲正弦函数)
@@ -4281,9 +3765,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.SINH")
-    @js.native
-    def SINH(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def SINH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SINH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Simple Moving Average (简单移动平均)
@@ -4294,12 +3777,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.SMA")
-    @js.native
-    def SMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.SMA")
-    @js.native
-    def SMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def SMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Square Root (平方根)
@@ -4309,9 +3790,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.SQRT")
-    @js.native
-    def SQRT(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def SQRT(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SQRT")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Standard Deviation (标准偏差)
@@ -4323,18 +3803,14 @@ object global {
       * @param {number=1} Deviations
       * @return {number[]}
       */
-    @JSGlobal("talib.STDDEV")
-    @js.native
-    def STDDEV(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.STDDEV")
-    @js.native
-    def STDDEV(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviations: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.STDDEV")
-    @js.native
-    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.STDDEV")
-    @js.native
-    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = js.native
+    @scala.inline
+    def STDDEV(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Unit, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Stochastic (STOCH指标)
@@ -4353,8 +3829,7 @@ object global {
       * @param {number=0} Slow_DMA
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.STOCH")
-    @js.native
+    @scala.inline
     def STOCH(
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -4364,7 +3839,7 @@ object global {
       Slow_KMA: Double,
       Slow_DPeriod: Double,
       Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     /**
       * Stochastic (STOCH指标)
       *
@@ -4380,269 +3855,23 @@ object global {
       * @param {number=0} Slow_DMA
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double,
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double,
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double,
-      Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double,
-      Slow_DPeriod: Double,
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: js.UndefOr[scala.Nothing], Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: Double,
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: Double,
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: Double,
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double,
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: Double,
-      Slow_KMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: Double,
-      Slow_KMA: Double,
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: Double,
-      Slow_KMA: Double,
-      Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KPeriod: Double,
-      Slow_KMA: Double,
-      Slow_DPeriod: Double,
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double,
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double,
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double,
-      Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: js.UndefOr[scala.Nothing],
-      Slow_KMA: Double,
-      Slow_DPeriod: Double,
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: Double,
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: Double,
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: Double,
-      Slow_KMA: js.UndefOr[scala.Nothing],
-      Slow_DPeriod: Double,
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
-    def STOCH(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Slow_KPeriod: Double,
-      Slow_KMA: Double,
-      Slow_DPeriod: js.UndefOr[scala.Nothing],
-      Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
+    @scala.inline
+    def STOCH(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
     def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Double,
       Slow_KMA: Double,
       Slow_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCH")
-    @js.native
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
     def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
@@ -4650,7 +3879,206 @@ object global {
       Slow_KMA: Double,
       Slow_DPeriod: Double,
       Slow_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Double,
+      Slow_KMA: Double,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Double,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Double,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Double,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Unit, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Double,
+      Slow_DPeriod: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Double,
+      Slow_DPeriod: Double,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Double,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Double,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Double,
+      Slow_KMA: Double,
+      Slow_DPeriod: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Double,
+      Slow_KMA: Double,
+      Slow_DPeriod: Double,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Double,
+      Slow_KMA: Double,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Double,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Double,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Double,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Unit, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Double,
+      Slow_DPeriod: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Double,
+      Slow_DPeriod: Double,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Double,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Double,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCH(
+      Records: js.Array[Record],
+      Fast_KPeriod: Unit,
+      Slow_KPeriod: Unit,
+      Slow_KMA: Unit,
+      Slow_DPeriod: Unit,
+      Slow_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Stochastic Fast (快速STOCH指标)
@@ -4666,8 +4094,7 @@ object global {
       * @param {number=0} Fast_DMA
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.STOCHF")
-    @js.native
+    @scala.inline
     def STOCHF(
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -4675,7 +4102,7 @@ object global {
       Fast_KPeriod: Double,
       Fast_DPeriod: Double,
       Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     /**
       * Stochastic Fast (快速STOCH指标)
       *
@@ -4688,45 +4115,22 @@ object global {
       * @param {number=0} Fast_DMA
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: js.UndefOr[scala.Nothing],
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: js.UndefOr[scala.Nothing], Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(
-      Records: js.Array[Record],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: Double,
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(
-      Records: js.Array[Record],
-      Fast_KPeriod: Double,
-      Fast_DPeriod: js.UndefOr[scala.Nothing],
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHF")
-    @js.native
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    @scala.inline
+    def STOCHF(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Unit, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Unit, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Stochastic Relative Strength Index (随机强弱指数)
@@ -4741,117 +4145,86 @@ object global {
       * @param {number=0} Fast_DMA
       * @return {[number[], number[]]}
       */
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: js.UndefOr[scala.Nothing],
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: Double,
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Fast_KPeriod: Double,
-      Fast_DPeriod: js.UndefOr[scala.Nothing],
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Fast_KPeriod: Double,
-      Fast_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: js.UndefOr[scala.Nothing],
-      Fast_KPeriod: Double,
-      Fast_DPeriod: Double,
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: js.UndefOr[scala.Nothing],
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Fast_KPeriod: js.UndefOr[scala.Nothing],
-      Fast_DPeriod: Double,
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(
-      Records: js.Array[Double | Record],
-      TimePeriod: Double,
-      Fast_KPeriod: Double,
-      Fast_DPeriod: js.UndefOr[scala.Nothing],
-      Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
-    @JSGlobal("talib.STOCHRSI")
-    @js.native
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
     def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Fast_KPeriod: Double,
       Fast_DPeriod: Double,
       Fast_DMA: Double
-    ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(
+      Records: js.Array[Double | Record],
+      TimePeriod: Double,
+      Fast_KPeriod: Double,
+      Fast_DPeriod: Unit,
+      Fast_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(
+      Records: js.Array[Double | Record],
+      TimePeriod: Double,
+      Fast_KPeriod: Unit,
+      Fast_DPeriod: Double,
+      Fast_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(
+      Records: js.Array[Double | Record],
+      TimePeriod: Double,
+      Fast_KPeriod: Unit,
+      Fast_DPeriod: Unit,
+      Fast_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Fast_KPeriod: Double,
+      Fast_DPeriod: Double,
+      Fast_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Fast_KPeriod: Double,
+      Fast_DPeriod: Unit,
+      Fast_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Fast_KPeriod: Unit,
+      Fast_DPeriod: Double,
+      Fast_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    @scala.inline
+    def STOCHRSI(
+      Records: js.Array[Double | Record],
+      TimePeriod: Unit,
+      Fast_KPeriod: Unit,
+      Fast_DPeriod: Unit,
+      Fast_DMA: Double
+    ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Summation (求和)
@@ -4862,12 +4235,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.SUM")
-    @js.native
-    def SUM(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.SUM")
-    @js.native
-    def SUM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def SUM(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SUM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def SUM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SUM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Triple Exponential Moving Average (T3) (三指数移动平均)
@@ -4879,9 +4250,8 @@ object global {
       * @param {number=0.7} VolumeFactor
       * @return {number[]}
       */
-    @JSGlobal("talib.T3")
-    @js.native
-    def T3(Records: js.Array[Double | Record], TimePeriod: Double, VolumeFactor: Double): js.Array[Double] = js.native
+    @scala.inline
+    def T3(Records: js.Array[Double | Record], TimePeriod: Double, VolumeFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("T3")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], VolumeFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Tan (正切)
@@ -4891,9 +4261,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.TAN")
-    @js.native
-    def TAN(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def TAN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Tanh (双曲正切函数)
@@ -4903,9 +4272,8 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.TANH")
-    @js.native
-    def TANH(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+    @scala.inline
+    def TANH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TANH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Triple Exponential Moving Average (三指数移动平均)
@@ -4916,12 +4284,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.TEMA")
-    @js.native
-    def TEMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.TEMA")
-    @js.native
-    def TEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def TEMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TEMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def TEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TEMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * True Range (真实范围)
@@ -4933,9 +4299,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.TRANGE")
-    @js.native
-    def TRANGE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def TRANGE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRANGE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * True Range (真实范围)
       *
@@ -4944,9 +4309,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.TRANGE")
-    @js.native
-    def TRANGE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def TRANGE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRANGE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Triangular Moving Average (三指数移动平均)
@@ -4957,12 +4321,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.TRIMA")
-    @js.native
-    def TRIMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.TRIMA")
-    @js.native
-    def TRIMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def TRIMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRIMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def TRIMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRIMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA (三重指数平滑平均线)
@@ -4973,12 +4335,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.TRIX")
-    @js.native
-    def TRIX(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.TRIX")
-    @js.native
-    def TRIX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def TRIX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRIX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def TRIX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRIX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Time Series Forecast (时间序列预测)
@@ -4989,12 +4349,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.TSF")
-    @js.native
-    def TSF(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.TSF")
-    @js.native
-    def TSF(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def TSF(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TSF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def TSF(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TSF")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Typical Price (典型价格)
@@ -5006,9 +4364,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.TYPPRICE")
-    @js.native
-    def TYPPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def TYPPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TYPPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Typical Price (典型价格)
       *
@@ -5017,9 +4374,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.TYPPRICE")
-    @js.native
-    def TYPPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def TYPPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TYPPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Ultimate Oscillator (极限振子)
@@ -5034,8 +4390,7 @@ object global {
       * @param {number=28} ThirdPeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ULTOSC")
-    @js.native
+    @scala.inline
     def ULTOSC(
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -5043,7 +4398,7 @@ object global {
       FirstPeriod: Double,
       SecondPeriod: Double,
       ThirdPeriod: Double
-    ): js.Array[Double] = js.native
+    ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Ultimate Oscillator (极限振子)
       *
@@ -5055,45 +4410,22 @@ object global {
       * @param {number=28} ThirdPeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(
-      Records: js.Array[Record],
-      FirstPeriod: js.UndefOr[scala.Nothing],
-      SecondPeriod: js.UndefOr[scala.Nothing],
-      ThirdPeriod: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: js.UndefOr[scala.Nothing], SecondPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(
-      Records: js.Array[Record],
-      FirstPeriod: js.UndefOr[scala.Nothing],
-      SecondPeriod: Double,
-      ThirdPeriod: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(
-      Records: js.Array[Record],
-      FirstPeriod: Double,
-      SecondPeriod: js.UndefOr[scala.Nothing],
-      ThirdPeriod: Double
-    ): js.Array[Double] = js.native
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.ULTOSC")
-    @js.native
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Unit, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Unit, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Variance (变量定义)
@@ -5105,18 +4437,14 @@ object global {
       * @param {number=1} Deviations
       * @return {number[]}
       */
-    @JSGlobal("talib.VAR")
-    @js.native
-    def VAR(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.VAR")
-    @js.native
-    def VAR(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviations: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.VAR")
-    @js.native
-    def VAR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
-    @JSGlobal("talib.VAR")
-    @js.native
-    def VAR(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = js.native
+    @scala.inline
+    def VAR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def VAR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def VAR(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def VAR(Records: js.Array[Double | Record], TimePeriod: Unit, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Weighted Close Price (加权收盘价)
@@ -5128,9 +4456,8 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @JSGlobal("talib.WCLPRICE")
-    @js.native
-    def WCLPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
+    @scala.inline
+    def WCLPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WCLPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Weighted Close Price (加权收盘价)
       *
@@ -5139,9 +4466,8 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @JSGlobal("talib.WCLPRICE")
-    @js.native
-    def WCLPRICE(Records: js.Array[Record]): js.Array[Double] = js.native
+    @scala.inline
+    def WCLPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WCLPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Williams' %R (威廉指标)
@@ -5154,12 +4480,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.WILLR")
-    @js.native
-    def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = js.native
-    @JSGlobal("talib.WILLR")
-    @js.native
-    def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Williams' %R (威廉指标)
       *
@@ -5169,12 +4493,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.WILLR")
-    @js.native
-    def WILLR(Records: js.Array[Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.WILLR")
-    @js.native
-    def WILLR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def WILLR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def WILLR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Weighted Moving Average (加权移动平均)
@@ -5185,12 +4507,10 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @JSGlobal("talib.WMA")
-    @js.native
-    def WMA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
-    @JSGlobal("talib.WMA")
-    @js.native
-    def WMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
+    @scala.inline
+    def WMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def WMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 查询指标调用格式
@@ -5200,9 +4520,8 @@ object global {
       * @param {string} Func
       * @return {string}
       */
-    @JSGlobal("talib.help")
-    @js.native
-    def help(Func: String): String = js.native
+    @scala.inline
+    def help(Func: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("help")(Func.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object botvs {
@@ -5210,30 +4529,29 @@ object global {
     /**
       * 账户信息, 由GetAccount函数返回
       */
-    @js.native
     trait Account extends StObject {
       
       /**
         * 余额(人民币或者美元, 在Poloniex交易所里BTC_ETC这样的品种, Balance就指的是BTC的数量,
         * Stocks指的是ETC数量, BTC38的ETC_BTC相当于Poloniex的BTC_ETC, 指的是以BTC计价)
         */
-      var Balance: Double = js.native
+      var Balance: Double
       
       /**
         * 冻结的余额
         */
-      var FrozenBalance: Double = js.native
+      var FrozenBalance: Double
       
       /**
         * 冻结的BTC/LTC数量(传统期货无此属性)
         */
-      var FrozenStocks: Double = js.native
+      var FrozenStocks: Double
       
       /**
         * BTC/LTC数量, 现货为当前可操作币的余额(去掉冻结的币),
         * 期货的话为合约当前可用保证金(传统期货为此属性)
         */
-      var Stocks: Double = js.native
+      var Stocks: Double
     }
     object Account {
       
@@ -5266,10 +4584,11 @@ object global {
       def wait(timeout: Double): js.UndefOr[T | Null] = js.native
     }
     
-    @js.native
-    trait ChartOptions extends Options {
+    trait ChartOptions
+      extends StObject
+         with Options {
       
-      var __isStock: js.UndefOr[Boolean] = js.native
+      var __isStock: js.UndefOr[Boolean] = js.undefined
     }
     object ChartOptions {
       
@@ -5290,12 +4609,11 @@ object global {
       }
     }
     
-    @js.native
     trait Context extends StObject {
       
-      def init(): Unit = js.native
+      def init(): Unit
       
-      def main(): Unit = js.native
+      def main(): Unit
     }
     object Context {
       
@@ -5319,20 +4637,19 @@ object global {
     /**
       * 市场深度,由GetDepth函数返回
       */
-    @js.native
     trait Depth extends StObject {
       
       /**
         * 卖单数组, MarketOrder数组, 按价格从低向高排序
         */
-      var Asks: js.Array[MarketOrder] = js.native
+      var Asks: js.Array[MarketOrder]
       
       /**
         * 买单数组, MarketOrder数组, 按价格从高向低排序
         */
-      var Bids: js.Array[MarketOrder] = js.native
+      var Bids: js.Array[MarketOrder]
       
-      var Time: Double = js.native
+      var Time: Double
     }
     object Depth {
       
@@ -5567,9 +4884,9 @@ object global {
       ): AsyncJob[T] = js.native
       
       def IO[T](Api: String): T = js.native
-      def IO[T](Api: String, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
       def IO[T](Api: String, ApiName: String): T = js.native
       def IO[T](Api: String, ApiName: String, Args: String): T = js.native
+      def IO[T](Api: String, ApiName: Unit, Args: String): T = js.native
       /**
         * 调用交易所其它功能接口
         *
@@ -5624,35 +4941,35 @@ object global {
       @JSName("IO")
       def IO_api[T](Api: api): T = js.native
       @JSName("IO")
-      def IO_api[T](Api: api, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
-      @JSName("IO")
       def IO_api[T](Api: api, ApiName: String): T = js.native
       @JSName("IO")
       def IO_api[T](Api: api, ApiName: String, Args: String): T = js.native
       @JSName("IO")
-      def IO_cny[T](Api: cny): T = js.native
+      def IO_api[T](Api: api, ApiName: Unit, Args: String): T = js.native
       @JSName("IO")
-      def IO_cny[T](Api: cny, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
+      def IO_cny[T](Api: cny): T = js.native
       @JSName("IO")
       def IO_cny[T](Api: cny, ApiName: String): T = js.native
       @JSName("IO")
       def IO_cny[T](Api: cny, ApiName: String, Args: String): T = js.native
       @JSName("IO")
-      def IO_currency[T](Api: currency): T = js.native
+      def IO_cny[T](Api: cny, ApiName: Unit, Args: String): T = js.native
       @JSName("IO")
-      def IO_currency[T](Api: currency, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
+      def IO_currency[T](Api: currency): T = js.native
       @JSName("IO")
       def IO_currency[T](Api: currency, ApiName: String): T = js.native
       @JSName("IO")
       def IO_currency[T](Api: currency, ApiName: String, Args: String): T = js.native
       @JSName("IO")
-      def IO_usd[T](Api: usd): T = js.native
+      def IO_currency[T](Api: currency, ApiName: Unit, Args: String): T = js.native
       @JSName("IO")
-      def IO_usd[T](Api: usd, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
+      def IO_usd[T](Api: usd): T = js.native
       @JSName("IO")
       def IO_usd[T](Api: usd, ApiName: String): T = js.native
       @JSName("IO")
       def IO_usd[T](Api: usd, ApiName: String, Args: String): T = js.native
+      @JSName("IO")
+      def IO_usd[T](Api: usd, ApiName: Unit, Args: String): T = js.native
       
       /**
         * 不下单, 只记录交易信息, logType可为LOG_TYPE_BUY/LOG_TYPE_SELL/LOG_TYPE_CANCEL
@@ -5779,18 +5096,17 @@ object global {
     /**
       * 手续费结构, 由GetFee函数返回(如国外平台bitfinex买入卖出手续费跟账户交易量相关)
       */
-    @js.native
     trait Fee extends StObject {
       
       /**
         * 买入手续费, 格式同上
         */
-      var Buy: Double = js.native
+      var Buy: Double
       
       /**
         * 卖出手续费, 为一个浮点数, 如0.2表示0.2%的手续费
         */
-      var Sell: Double = js.native
+      var Sell: Double
     }
     object Fee {
       
@@ -5814,18 +5130,17 @@ object global {
     /**
       * 市场深度单
       */
-    @js.native
     trait MarketOrder extends StObject {
       
       /**
         * 数量
         */
-      var Amount: Double = js.native
+      var Amount: Double
       
       /**
         * 价格
         */
-      var Price: Double = js.native
+      var Price: Double
     }
     object MarketOrder {
       
@@ -5849,40 +5164,39 @@ object global {
     /**
       * 订单结构, 由GetOrder函数返回
       */
-    @js.native
     trait Order extends StObject {
       
       /**
         * 下单数量
         */
-      var Amount: Double = js.native
+      var Amount: Double
       
       /**
         * 成交数量
         */
-      var DealAmount: Double = js.native
+      var DealAmount: Double
       
       /**
         * 交易单唯一标识
         */
-      var Id: String = js.native
+      var Id: String
       
       /**
         * 下单价格
         */
-      var Price: Double = js.native
+      var Price: Double
       
       /**
         * 订单状态, 参考常量里的订单状态
         */
-      var Status: VOrderState = js.native
+      var Status: VOrderState
       
-      var Time: Double = js.native
+      var Time: Double
       
       /**
         * 订单类型, 参考常量里的订单类型
         */
-      var Type: VOrderType = js.native
+      var Type: VOrderType
     }
     object Order {
       
@@ -5929,52 +5243,51 @@ object global {
     /**
       * 期货交易中的持有仓位信息, 由GetPosition()函数返回此结构数组
       */
-    @js.native
     trait Position extends StObject {
       
       /**
         * 持仓量, 796期货表示持币的数量, BitVC指持仓的总金额(100的倍数),
         * OKCoin表示合约的份数(整数且大于1)
         */
-      var Amount: Double = js.native
+      var Amount: Double
       
       /**
         * 可平量, 只有股票有此选项, 表示可以平仓的数量(股票为T+1)今日仓不能平
         */
-      var CanCover: Double = js.native
+      var CanCover: Double
       
       /**
         * 商品期货为合约代码, 股票为'交易所代码_股票代码', 具体参数SetContractType的传入类型
         */
-      var ContractType: String = js.native
+      var ContractType: String
       
       /**
         * 仓位冻结量
         */
-      var FrozenAmount: Double = js.native
+      var FrozenAmount: Double
       
       /**
         * 杆杠大小, 796期货有可能为5, 10, 20三个参数, OKCoin为10或者20,
         * BitVC期货和OK期货的全仓模式返回为固定的10, 因为原生API不支持
         */
-      var MarginLevel: Double = js.native
+      var MarginLevel: Double
       
       /**
         * 持仓均价
         */
-      var Price: Double = js.native
+      var Price: Double
       
       /**
         * 持仓浮动盈亏(数据货币单位：BTC/LTC, 传统期货单位:RMB, 股票不支持此字段,
         * 注: OKCoin期货全仓情况下指实现盈余, 并非持仓盈亏, 逐仓下指持仓盈亏)
         */
-      var Profit: Double = js.native
+      var Profit: Double
       
       /**
         * PD_LONG为多头仓位(CTP中用closebuy_today平仓), PD_SHORT为空头仓位(CTP用closesell_today)平仓,
         * (CTP期货中)PD_LONG_YD为咋日多头仓位(用closebuy平), PD_SHORT_YD为咋日空头仓位(用closesell平)
         */
-      var Type: VPositionType = js.native
+      var Type: VPositionType
     }
     object Position {
       
@@ -6026,13 +5339,13 @@ object global {
     trait RChart extends StObject {
       
       def add(): Unit = js.native
-      def add(series: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-      def add(series: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
-      def add(series: js.UndefOr[scala.Nothing], data: js.Any, index: Double): Unit = js.native
       def add(series: Double): Unit = js.native
-      def add(series: Double, data: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
       def add(series: Double, data: js.Any): Unit = js.native
       def add(series: Double, data: js.Any, index: Double): Unit = js.native
+      def add(series: Double, data: Unit, index: Double): Unit = js.native
+      def add(series: Unit, data: js.Any): Unit = js.native
+      def add(series: Unit, data: js.Any, index: Double): Unit = js.native
+      def add(series: Unit, data: Unit, index: Double): Unit = js.native
       
       def reset(): Unit = js.native
       
@@ -6042,38 +5355,37 @@ object global {
     /**
       * 标准OHLC结构, 用来画K线和指标分析用的，由GetRecords函数返回此结构数组
       */
-    @js.native
     trait Record extends StObject {
       
       /**
         * 收盘价
         */
-      var Close: Double = js.native
+      var Close: Double
       
       /**
         * 最高价
         */
-      var High: Double = js.native
+      var High: Double
       
       /**
         * 最低价
         */
-      var Low: Double = js.native
+      var Low: Double
       
       /**
         * 开盘价
         */
-      var Open: Double = js.native
+      var Open: Double
       
       /**
         * 一个时间戳, 精确到毫秒，与Javascript的 new Date().getTime() 得到的结果格式一样
         */
-      var Time: Double = js.native
+      var Time: Double
       
       /**
         * 成交量
         */
-      var Volume: Double = js.native
+      var Volume: Double
     }
     object Record {
       
@@ -6121,40 +5433,39 @@ object global {
     /**
       * 市场行情
       */
-    @js.native
     trait Ticker extends StObject {
       
       /**
         * 买一价
         */
-      var Buy: Double = js.native
+      var Buy: Double
       
       /**
         * 最高价
         */
-      var High: Double = js.native
+      var High: Double
       
       /**
         * 最后成交价
         */
-      var Last: Double = js.native
+      var Last: Double
       
       /**
         * 最低价
         */
-      var Low: Double = js.native
+      var Low: Double
       
       /**
         * 卖一价
         */
-      var Sell: Double = js.native
+      var Sell: Double
       
-      var Time: Double = js.native
+      var Time: Double
       
       /**
         * 最近成交量
         */
-      var Volume: Double = js.native
+      var Volume: Double
     }
     object Ticker {
       
@@ -6193,33 +5504,32 @@ object global {
     /**
       * 获取所有交易历史(非自己),由GetTrades函数返回
       */
-    @js.native
     trait Trade extends StObject {
       
       /**
         * 数量
         */
-      var Amount: Double = js.native
+      var Amount: Double
       
       /**
         * Id(交易所返回的此Trade的唯一Id)
         */
-      var Id: String = js.native
+      var Id: String
       
       /**
         * 价格
         */
-      var Price: Double = js.native
+      var Price: Double
       
       /**
         * 时间(Unix timestamp 毫秒)
         */
-      var Time: Double = js.native
+      var Time: Double
       
       /**
         * 订单类型, 参考常量里的订单类型
         */
-      var Type: VOrderType = js.native
+      var Type: VOrderType
     }
     object Trade {
       

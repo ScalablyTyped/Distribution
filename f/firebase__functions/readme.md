@@ -10,9 +10,9 @@ This is the Firebase Functions component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/functions |
 | Keywords           | - |
-| # releases         | 1205 |
-| # dependents       | 16 |
-| # downloads        | 31065911 |
+| # releases         | 1381 |
+| # dependents       | 17 |
+| # downloads        | 35659694 |
 | # stars            | 0 |
 
 ## Links

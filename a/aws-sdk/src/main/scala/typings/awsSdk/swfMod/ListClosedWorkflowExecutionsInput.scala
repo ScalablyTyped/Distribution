@@ -2,61 +2,59 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClosedWorkflowExecutionsInput extends StObject {
   
   /**
     * If specified, only workflow executions that match this close status are listed. For example, if TERMINATED is specified, then only TERMINATED workflow executions are listed.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var closeStatusFilter: js.UndefOr[CloseStatusFilter] = js.native
+  var closeStatusFilter: js.UndefOr[CloseStatusFilter] = js.undefined
   
   /**
     * If specified, the workflow executions are included in the returned results based on whether their close times are within the range specified by this filter. Also, if this parameter is specified, the returned results are ordered by their close times.   startTimeFilter and closeTimeFilter are mutually exclusive. You must specify one of these in a request but not both. 
     */
-  var closeTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.native
+  var closeTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.undefined
   
   /**
     * The name of the domain that contains the workflow executions to list.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * If specified, only workflow executions matching the workflow ID specified in the filter are returned.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var executionFilter: js.UndefOr[WorkflowExecutionFilter] = js.native
+  var executionFilter: js.UndefOr[WorkflowExecutionFilter] = js.undefined
   
   /**
     * The maximum number of results that are returned per call. Use nextPageToken to obtain further pages of results. 
     */
-  var maximumPageSize: js.UndefOr[PageSize] = js.native
+  var maximumPageSize: js.UndefOr[PageSize] = js.undefined
   
   /**
     * If NextPageToken is returned there are more results available. The value of NextPageToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return a 400 error: "Specified token has exceeded its maximum lifetime".  The configured maximumPageSize determines how many results can be returned in a single call. 
     */
-  var nextPageToken: js.UndefOr[PageToken] = js.native
+  var nextPageToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * When set to true, returns the results in reverse order. By default the results are returned in descending order of the start or the close time of the executions.
     */
-  var reverseOrder: js.UndefOr[ReverseOrder] = js.native
+  var reverseOrder: js.UndefOr[ReverseOrder] = js.undefined
   
   /**
     * If specified, the workflow executions are included in the returned results based on whether their start times are within the range specified by this filter. Also, if this parameter is specified, the returned results are ordered by their start times.   startTimeFilter and closeTimeFilter are mutually exclusive. You must specify one of these in a request but not both. 
     */
-  var startTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.native
+  var startTimeFilter: js.UndefOr[ExecutionTimeFilter] = js.undefined
   
   /**
     * If specified, only executions that have the matching tag are listed.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var tagFilter: js.UndefOr[TagFilter] = js.native
+  var tagFilter: js.UndefOr[TagFilter] = js.undefined
   
   /**
     * If specified, only executions of the type specified in the filter are returned.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
     */
-  var typeFilter: js.UndefOr[WorkflowTypeFilter] = js.native
+  var typeFilter: js.UndefOr[WorkflowTypeFilter] = js.undefined
 }
 object ListClosedWorkflowExecutionsInput {
   

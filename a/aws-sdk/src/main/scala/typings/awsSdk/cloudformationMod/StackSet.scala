@@ -2,86 +2,84 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackSet extends StObject {
   
   /**
     * The Amazon Resource Number (ARN) of the IAM role used to create or update the stack set. Use customized administrator roles to control which users or groups can manage specific stack sets within the same administrator account. For more information, see Prerequisites: Granting Permissions for Stack Set Operations in the AWS CloudFormation User Guide.
     */
-  var AdministrationRoleARN: js.UndefOr[RoleARN_] = js.native
+  var AdministrationRoleARN: js.UndefOr[RoleARN_] = js.undefined
   
   /**
     * [Service-managed permissions] Describes whether StackSets automatically deploys to AWS Organizations accounts that are added to a target organization or organizational unit (OU).
     */
-  var AutoDeployment: js.UndefOr[typings.awsSdk.cloudformationMod.AutoDeployment] = js.native
+  var AutoDeployment: js.UndefOr[typings.awsSdk.cloudformationMod.AutoDeployment] = js.undefined
   
   /**
     * The capabilities that are allowed in the stack set. Some stack set templates might include resources that can affect permissions in your AWS account—for example, by creating new AWS Identity and Access Management (IAM) users. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates. 
     */
-  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.native
+  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.undefined
   
   /**
     * A description of the stack set that you specify when the stack set is created or updated.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * The name of the IAM execution role used to create or update the stack set.  Use customized execution roles to control which stack resources users and groups can include in their stack sets. 
     */
-  var ExecutionRoleName: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionRoleName] = js.native
+  var ExecutionRoleName: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionRoleName] = js.undefined
   
   /**
     * [Service-managed permissions] The organization root ID or organizational unit (OU) IDs that you specified for DeploymentTargets.
     */
-  var OrganizationalUnitIds: js.UndefOr[OrganizationalUnitIdList] = js.native
+  var OrganizationalUnitIds: js.UndefOr[OrganizationalUnitIdList] = js.undefined
   
   /**
     * A list of input parameters for a stack set.
     */
-  var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.native
+  var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.undefined
   
   /**
     * Describes how the IAM roles required for stack set operations are created.   With self-managed permissions, you must create the administrator and execution roles required to deploy to target accounts. For more information, see Grant Self-Managed Stack Set Permissions.   With service-managed permissions, StackSets automatically creates the IAM roles required to deploy to accounts managed by AWS Organizations. For more information, see Grant Service-Managed Stack Set Permissions.  
     */
-  var PermissionModel: js.UndefOr[PermissionModels] = js.native
+  var PermissionModel: js.UndefOr[PermissionModels] = js.undefined
   
   /**
     * The Amazon Resource Number (ARN) of the stack set.
     */
-  var StackSetARN: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetARN] = js.native
+  var StackSetARN: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetARN] = js.undefined
   
   /**
     * Detailed information about the drift status of the stack set. For stack sets, contains information about the last completed drift operation performed on the stack set. Information about drift operations currently in progress is not included.
     */
-  var StackSetDriftDetectionDetails: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetDriftDetectionDetails] = js.native
+  var StackSetDriftDetectionDetails: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetDriftDetectionDetails] = js.undefined
   
   /**
     * The ID of the stack set.
     */
-  var StackSetId: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetId] = js.native
+  var StackSetId: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetId] = js.undefined
   
   /**
     * The name that's associated with the stack set.
     */
-  var StackSetName: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetName] = js.native
+  var StackSetName: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetName] = js.undefined
   
   /**
     * The status of the stack set.
     */
-  var Status: js.UndefOr[StackSetStatus] = js.native
+  var Status: js.UndefOr[StackSetStatus] = js.undefined
   
   /**
     * A list of tags that specify information about the stack set. A maximum number of 50 tags can be specified.
     */
-  var Tags: js.UndefOr[typings.awsSdk.cloudformationMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.cloudformationMod.Tags] = js.undefined
   
   /**
     * The structure that contains the body of the template that was used to create or update the stack set.
     */
-  var TemplateBody: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateBody] = js.native
+  var TemplateBody: js.UndefOr[typings.awsSdk.cloudformationMod.TemplateBody] = js.undefined
 }
 object StackSet {
   

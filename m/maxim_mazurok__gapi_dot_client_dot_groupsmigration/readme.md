@@ -10,9 +10,9 @@ TypeScript typings for Groups Migration API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.groupsmigration |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 48 |
+| # downloads        | 995 |
 | # stars            | 0 |
 
 ## Links

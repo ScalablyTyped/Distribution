@@ -2,35 +2,35 @@ package typings.antvComponent.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineAnnotationTextCfg extends EnhancedTextCfg {
+trait LineAnnotationTextCfg
+  extends StObject
+     with EnhancedTextCfg {
   
   /**
     * 自动旋转，沿着线的方向，默认 true
     * @type {boolean}
     */
-  var autoRotate: js.UndefOr[Boolean] = js.native
+  var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 文本的偏移 x
     * @type {number}
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * 文本的偏移 y
     * @type {number}
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * 位置，可以选择： start, end, center 和 '50%' 这类的百分比写法，默认 'center'
     * @type {string}
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
 }
 object LineAnnotationTextCfg {
   

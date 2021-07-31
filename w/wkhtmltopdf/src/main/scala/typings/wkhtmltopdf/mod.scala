@@ -44,7 +44,6 @@ import typings.wkhtmltopdf.wkhtmltopdfStrings.skip
 import typings.wkhtmltopdf.wkhtmltopdfStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,12 +54,10 @@ object mod {
     * @param html HTML to convert to PDF
     * @param [options] Options without the output parameter
     */
-  @JSImport("wkhtmltopdf", JSImport.Namespace)
-  @js.native
-  def apply(html: String): ReadWriteStream = js.native
-  @JSImport("wkhtmltopdf", JSImport.Namespace)
-  @js.native
-  def apply(html: String, options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(html: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(html: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   /**
     * Call wkhtmltopdf with a callback
     *
@@ -68,22 +65,20 @@ object mod {
     * @param options Options without the output parameter
     * @param callback Callback function to handle the incoming PDF
     */
-  @JSImport("wkhtmltopdf", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     html: String,
     options: Options,
     callback: js.Function2[/* err */ Error, /* stream */ ReadWriteStream, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Call wkhtmltopdf and write PDF directly to specified file
     *
     * @param url URL to convert to PDF
     * @param options Options with the output parameter
     */
-  @JSImport("wkhtmltopdf", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: OptionsOutfile): Unit = js.native
+  @scala.inline
+  def apply(url: String, options: OptionsOutfile): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("wkhtmltopdf", JSImport.Namespace)
   @js.native
@@ -109,62 +104,61 @@ object mod {
   @scala.inline
   def shell_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shell")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /****************
       * Page options *
       ****************/
     /** Allow the file or files from the specified folder to be loaded (repeatable) */
-    var allow: js.UndefOr[js.Array[String]] = js.native
+    var allow: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Do print background (default) */
-    var background: js.UndefOr[Boolean] = js.native
+    var background: js.UndefOr[Boolean] = js.undefined
     
     /** Bypass proxy for host (repeatable) */
-    var bypassProxyFor: js.UndefOr[js.Array[String]] = js.native
+    var bypassProxyFor: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Web cache directory */
-    var cacheDir: js.UndefOr[String] = js.native
+    var cacheDir: js.UndefOr[String] = js.undefined
     
     /** Use this SVG file when rendering checked checkboxes */
-    var checkboxCheckedSvg: js.UndefOr[String] = js.native
+    var checkboxCheckedSvg: js.UndefOr[String] = js.undefined
     
     /** Use this SVG file when rendering unchecked checkboxes */
-    var checkboxSvg: js.UndefOr[String] = js.native
+    var checkboxSvg: js.UndefOr[String] = js.undefined
     
     /******************
       * Global options *
       ******************/
     /** Collate when printing multiple copies (default) */
-    var collate: js.UndefOr[Boolean] = js.native
+    var collate: js.UndefOr[Boolean] = js.undefined
     
     /** Set an additional cookie (repeatable), value should be url encoded. */
-    var cookie: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.native
+    var cookie: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
     
     /** Number of copies to print into the pdf file (default 1) */
-    var copies: js.UndefOr[Double] = js.native
+    var copies: js.UndefOr[Double] = js.undefined
     
     /**************************************
       * Special keys for node implementation
       **************************************/
     /** Cover object */
-    var cover: js.UndefOr[String] = js.native
+    var cover: js.UndefOr[String] = js.undefined
     
     /** Set an additional HTTP header (repeatable) */
-    var customHeader: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.native
+    var customHeader: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
     
     /** Add HTTP headers specified by --custom-header for each resource request. */
-    var customHeaderPropagation: js.UndefOr[Boolean] = js.native
+    var customHeaderPropagation: js.UndefOr[Boolean] = js.undefined
     
     /** Debug prints stderr messages */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /** Show javascript debugging output */
-    var debugJavascript: js.UndefOr[Boolean] = js.native
+    var debugJavascript: js.UndefOr[Boolean] = js.undefined
     
     /** debugStdOut prints any stdout warning messages */
-    var debugStdOut: js.UndefOr[Boolean] = js.native
+    var debugStdOut: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add a default header, with the name of the page to the left, and the page number to the right, this is short for:
@@ -172,324 +166,324 @@ object mod {
       * --header-right='[page]/[toPage]' --top 2cm
       * --header-line
       */
-    var defaultHeader: js.UndefOr[Boolean] = js.native
+    var defaultHeader: js.UndefOr[Boolean] = js.undefined
     
     /***************
       * TOC options *
       ***************/
     /** Do not use dotted lines in the toc */
-    var disableDottedLines: js.UndefOr[Boolean] = js.native
+    var disableDottedLines: js.UndefOr[Boolean] = js.undefined
     
     /** Do not make links to remote web pages */
-    var disableExternalLinks: js.UndefOr[Boolean] = js.native
+    var disableExternalLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Do not turn HTML form fields into pdf form fields (default) */
-    var disableForms: js.UndefOr[Boolean] = js.native
+    var disableForms: js.UndefOr[Boolean] = js.undefined
     
     /** Do not make local links */
-    var disableInternalLinks: js.UndefOr[Boolean] = js.native
+    var disableInternalLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Do not allow web pages to run javascript */
-    var disableJavascript: js.UndefOr[Boolean] = js.native
+    var disableJavascript: js.UndefOr[Boolean] = js.undefined
     
     /** Do not allowed conversion of a local file to read in other local files, unless explicitly allowed with --allow (default) */
-    var disableLocalFileAccess: js.UndefOr[Boolean] = js.native
+    var disableLocalFileAccess: js.UndefOr[Boolean] = js.undefined
     
     /** Disable installed plugins (default) */
-    var disablePlugins: js.UndefOr[Boolean] = js.native
+    var disablePlugins: js.UndefOr[Boolean] = js.undefined
     
     /** Disable the intelligent shrinking strategy used by WebKit that makes the pixel/dpi ratio non-constant */
-    var disableSmartShrinking: js.UndefOr[Boolean] = js.native
+    var disableSmartShrinking: js.UndefOr[Boolean] = js.undefined
     
     /** Do not link from section header to toc (default) */
-    var disableTocBackLinks: js.UndefOr[Boolean] = js.native
+    var disableTocBackLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Do not link from toc to sections */
-    var disableTocLinks: js.UndefOr[Boolean] = js.native
+    var disableTocLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Change the dpi explicitly (this has no effect on X11 based systems) (default 96) */
-    var dpi: js.UndefOr[Double] = js.native
+    var dpi: js.UndefOr[Double] = js.undefined
     
     /*******************
       * Outline options *
       *******************/
     // Dump the default TOC xsl style sheet to stdout */
-    var dumpDefaultTocXsl: js.UndefOr[Boolean] = js.native
+    var dumpDefaultTocXsl: js.UndefOr[Boolean] = js.undefined
     
     /** Dump the outline to a file */
-    var dumpOutline: js.UndefOr[String] = js.native
+    var dumpOutline: js.UndefOr[String] = js.undefined
     
     /** Make links to remote web pages (default) */
-    var enableExternalLinks: js.UndefOr[Boolean] = js.native
+    var enableExternalLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Turn HTML form fields into pdf form fields */
-    var enableForms: js.UndefOr[Boolean] = js.native
+    var enableForms: js.UndefOr[Boolean] = js.undefined
     
     /** Make local links (default) */
-    var enableInternalLinks: js.UndefOr[Boolean] = js.native
+    var enableInternalLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Do allow web pages to run javascript (default) */
-    var enableJavascript: js.UndefOr[Boolean] = js.native
+    var enableJavascript: js.UndefOr[Boolean] = js.undefined
     
     /** Allowed conversion of a local file to read in other local files. */
-    var enableLocalFileAccess: js.UndefOr[Boolean] = js.native
+    var enableLocalFileAccess: js.UndefOr[Boolean] = js.undefined
     
     /** Enable installed plugins (plugins will likely not work) */
-    var enablePlugins: js.UndefOr[Boolean] = js.native
+    var enablePlugins: js.UndefOr[Boolean] = js.undefined
     
     /** Enable the intelligent shrinking strategy used by WebKit that makes the pixel/dpi ratio non-constant (default) */
-    var enableSmartShrinking: js.UndefOr[Boolean] = js.native
+    var enableSmartShrinking: js.UndefOr[Boolean] = js.undefined
     
     /** Link from section header to toc */
-    var enableTocBackLinks: js.UndefOr[Boolean] = js.native
+    var enableTocBackLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Set the default text encoding, for input */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** Do not include the page in the table of contents and outlines */
-    var excludeFromOutline: js.UndefOr[Boolean] = js.native
+    var excludeFromOutline: js.UndefOr[Boolean] = js.undefined
     
     /*****************************
       * Header and footer options *
       *****************************/
     /** Centered footer text */
-    var footerCenter: js.UndefOr[String] = js.native
+    var footerCenter: js.UndefOr[String] = js.undefined
     
     /** Set footer font name (default Arial) */
-    var footerFontName: js.UndefOr[String] = js.native
+    var footerFontName: js.UndefOr[String] = js.undefined
     
     /** Set footer font size (default 12) */
-    var footerFontSize: js.UndefOr[Double] = js.native
+    var footerFontSize: js.UndefOr[Double] = js.undefined
     
     /** Adds a html footer should be an URL */
-    var footerHtml: js.UndefOr[String] = js.native
+    var footerHtml: js.UndefOr[String] = js.undefined
     
     /** Left aligned footer text */
-    var footerLeft: js.UndefOr[String] = js.native
+    var footerLeft: js.UndefOr[String] = js.undefined
     
     /** Display line above the footer */
-    var footerLine: js.UndefOr[Boolean] = js.native
+    var footerLine: js.UndefOr[Boolean] = js.undefined
     
     /** Right aligned footer text */
-    var footerRight: js.UndefOr[String] = js.native
+    var footerRight: js.UndefOr[String] = js.undefined
     
     /** Spacing between footer and content in mm (e.g 10mm 2cm 0.5in) (default 0) */
-    var footerSpacing: js.UndefOr[String] = js.native
+    var footerSpacing: js.UndefOr[String] = js.undefined
     
     /** PDF will be generated in grayscale */
-    var grayscale: js.UndefOr[Boolean] = js.native
+    var grayscale: js.UndefOr[Boolean] = js.undefined
     
     /** Centered header text */
-    var headerCenter: js.UndefOr[String] = js.native
+    var headerCenter: js.UndefOr[String] = js.undefined
     
     /** Set header font name (default Arial) */
-    var headerFontName: js.UndefOr[String] = js.native
+    var headerFontName: js.UndefOr[String] = js.undefined
     
     /** Set header font size (default 12) */
-    var headerFontSize: js.UndefOr[Double] = js.native
+    var headerFontSize: js.UndefOr[Double] = js.undefined
     
     /** Adds a html header should be an URL */
-    var headerHtml: js.UndefOr[String] = js.native
+    var headerHtml: js.UndefOr[String] = js.undefined
     
     /** Left aligned header text */
-    var headerLeft: js.UndefOr[String] = js.native
+    var headerLeft: js.UndefOr[String] = js.undefined
     
     /** Display line above the header */
-    var headerLine: js.UndefOr[Boolean] = js.native
+    var headerLine: js.UndefOr[Boolean] = js.undefined
     
     /** Right aligned header text */
-    var headerRight: js.UndefOr[String] = js.native
+    var headerRight: js.UndefOr[String] = js.undefined
     
     /** Spacing between header and content in mm (e.g 10mm 2cm 0.5in) (default 0) */
-    var headerSpacing: js.UndefOr[String] = js.native
+    var headerSpacing: js.UndefOr[String] = js.undefined
     
     /** Ignore warnings */
-    var ignore: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var ignore: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /** When embedding images scale them down to this dpi (default 600) */
-    var imageDpi: js.UndefOr[Double] = js.native
+    var imageDpi: js.UndefOr[Double] = js.undefined
     
     /** When jpeg compressing images use this quality (default 94) */
-    var imageQuality: js.UndefOr[Double] = js.native
+    var imageQuality: js.UndefOr[Double] = js.undefined
     
     /** Do load or print images (default) */
-    var images: js.UndefOr[Boolean] = js.native
+    var images: js.UndefOr[Boolean] = js.undefined
     
     /** Include the page in the table of contents and outlines (default) */
-    var includeInOutline: js.UndefOr[Boolean] = js.native
+    var includeInOutline: js.UndefOr[Boolean] = js.undefined
     
     /** Wait some milliseconds for javascript finish (default 200) */
-    var javascriptDelay: js.UndefOr[Double] = js.native
+    var javascriptDelay: js.UndefOr[Double] = js.undefined
     
     /** Keep relative external links as relative external links */
-    var keepRelativeLinks: js.UndefOr[Boolean] = js.native
+    var keepRelativeLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Specify how to handle pages that fail to load: abort, ignore or skip (default abort) */
-    var loadErrorHandling: js.UndefOr[abort | ignore | skip] = js.native
+    var loadErrorHandling: js.UndefOr[abort | ignore | skip] = js.undefined
     
     /** Specify how to handle media files that fail to load: abort, ignore or skip (default ignore) */
-    var loadMediaErrorHandling: js.UndefOr[abort | ignore | skip] = js.native
+    var loadMediaErrorHandling: js.UndefOr[abort | ignore | skip] = js.undefined
     
     /** Set log level (default info) */
-    var logLevel: js.UndefOr[none | error | warn | info] = js.native
+    var logLevel: js.UndefOr[none | error | warn | info] = js.undefined
     
     /** Generates lower quality pdf/ps. Useful to shrink the result document space */
-    var lowquality: js.UndefOr[Boolean] = js.native
+    var lowquality: js.UndefOr[Boolean] = js.undefined
     
     /** Set the page bottom margin in unitreal (e.g 10mm 2cm 0.5in) */
-    var marginBottom: js.UndefOr[String] = js.native
+    var marginBottom: js.UndefOr[String] = js.undefined
     
     /** Set the page left margin in unitreal (e.g 10mm 2cm 0.5in) (default 10mm) */
-    var marginLeft: js.UndefOr[String] = js.native
+    var marginLeft: js.UndefOr[String] = js.undefined
     
     /** Set the page right margin in unitreal (e.g 10mm 2cm 0.5in) (default 10mm) */
-    var marginRight: js.UndefOr[String] = js.native
+    var marginRight: js.UndefOr[String] = js.undefined
     
     /** Set the page top margin in unitreal (e.g 10mm 2cm 0.5in) */
-    var marginTop: js.UndefOr[String] = js.native
+    var marginTop: js.UndefOr[String] = js.undefined
     
     /** Minimum font size */
-    var minimumFontSize: js.UndefOr[Double] = js.native
+    var minimumFontSize: js.UndefOr[Double] = js.undefined
     
     /** Do not print background */
-    var noBackground: js.UndefOr[Boolean] = js.native
+    var noBackground: js.UndefOr[Boolean] = js.undefined
     
     /** Do not collate when printing multiple copies */
-    var noCollate: js.UndefOr[Boolean] = js.native
+    var noCollate: js.UndefOr[Boolean] = js.undefined
     
     /** Do not add HTTP headers specified by --custom-header for each resource request. */
-    var noCustomHeaderPropagation: js.UndefOr[Boolean] = js.native
+    var noCustomHeaderPropagation: js.UndefOr[Boolean] = js.undefined
     
     /** Do not show javascript debugging output (default) */
-    var noDebugJavascript: js.UndefOr[Boolean] = js.native
+    var noDebugJavascript: js.UndefOr[Boolean] = js.undefined
     
     /** Do not display line above the footer (default) */
-    var noFooterLine: js.UndefOr[Boolean] = js.native
+    var noFooterLine: js.UndefOr[Boolean] = js.undefined
     
     /** Do not display line above the header (default) */
-    var noHeaderLine: js.UndefOr[Boolean] = js.native
+    var noHeaderLine: js.UndefOr[Boolean] = js.undefined
     
     /** Do not load or print images */
-    var noImages: js.UndefOr[Boolean] = js.native
+    var noImages: js.UndefOr[Boolean] = js.undefined
     
     /** Do not put an outline into the pdf */
-    var noOutline: js.UndefOr[Boolean] = js.native
+    var noOutline: js.UndefOr[Boolean] = js.undefined
     
     /** Do not use lossless compression on pdf objects */
-    var noPdfCompression: js.UndefOr[Boolean] = js.native
+    var noPdfCompression: js.UndefOr[Boolean] = js.undefined
     
     /** Do not use print media-type instead of screen (default) */
-    var noPrintMediaType: js.UndefOr[Boolean] = js.native
+    var noPrintMediaType: js.UndefOr[Boolean] = js.undefined
     
     /** Do not Stop slow running javascripts */
-    var noStopSlowScripts: js.UndefOr[Boolean] = js.native
+    var noStopSlowScripts: js.UndefOr[Boolean] = js.undefined
     
     /** Set orientation to Landscape or Portrait (default Portrait) */
-    var orientation: js.UndefOr[Landscape | Portrait] = js.native
+    var orientation: js.UndefOr[Landscape | Portrait] = js.undefined
     
     /** Put an outline into the pdf (default) */
-    var outline: js.UndefOr[Boolean] = js.native
+    var outline: js.UndefOr[Boolean] = js.undefined
     
     /** Set the depth of the outline (default 4) */
-    var outlineDepth: js.UndefOr[Boolean] = js.native
+    var outlineDepth: js.UndefOr[Boolean] = js.undefined
     
     /** Page object */
-    var page: js.UndefOr[String] = js.native
+    var page: js.UndefOr[String] = js.undefined
     
     /** Page height in unitreal (e.g 10mm 2cm 0.5in) */
-    var pageHeight: js.UndefOr[String] = js.native
+    var pageHeight: js.UndefOr[String] = js.undefined
     
     /** Set the starting page number (default 0) */
-    var pageOffset: js.UndefOr[Double] = js.native
+    var pageOffset: js.UndefOr[Double] = js.undefined
     
     /** Set paper size to: A4, Letter, etc. (default A4) */
     var pageSize: js.UndefOr[
         A0 | A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | B0 | B1 | B10 | B2 | B3 | B4 | B5 | B6 | B7 | B8 | B9 | C5E | Comm10E | DLE | Executive | Folio | Ledger | Legal | Letter | Tabloid
-      ] = js.native
+      ] = js.undefined
     
     /** Page width in unitreal (e.g 10mm 2cm 0.5in) */
-    var pageWidth: js.UndefOr[String] = js.native
+    var pageWidth: js.UndefOr[String] = js.undefined
     
     /** HTTP Authentication password */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /** Add an additional post field */
-    var post: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.native
+    var post: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
     
     /** Post an additional file (repeatable) */
-    var postFile: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.native
+    var postFile: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
     
     /** Use print media-type instead of screen */
-    var printMediaType: js.UndefOr[Boolean] = js.native
+    var printMediaType: js.UndefOr[Boolean] = js.undefined
     
     /** Use a proxy */
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
     /** Use the proxy for resolving hostnames */
-    var proxyHostnameLookup: js.UndefOr[Boolean] = js.native
+    var proxyHostnameLookup: js.UndefOr[Boolean] = js.undefined
     
     /** Use this SVG file when rendering checked radiobuttons */
-    var radiobuttonCheckedSvg: js.UndefOr[String] = js.native
+    var radiobuttonCheckedSvg: js.UndefOr[String] = js.undefined
     
     /** Use this SVG file when rendering unchecked radiobuttons */
-    var radiobuttonSvg: js.UndefOr[String] = js.native
+    var radiobuttonSvg: js.UndefOr[String] = js.undefined
     
     /** Replace [name] with value in header and footer (repeatable) */
-    var replace: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.native
+    var replace: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
     
     /** Resolve relative external links into absolute links (default) */
-    var resolveRelativeLinks: js.UndefOr[Boolean] = js.native
+    var resolveRelativeLinks: js.UndefOr[Boolean] = js.undefined
     
     /** Run this additional javascript after the page is done loading (repeatable) */
-    var runScript: js.UndefOr[js.Array[String]] = js.native
+    var runScript: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Path to the ssl client cert public key in OpenSSL PEM format, optionally followed by intermediate ca and trusted certs */
-    var sslCrtPath: js.UndefOr[String] = js.native
+    var sslCrtPath: js.UndefOr[String] = js.undefined
     
     /** Password to ssl client cert private key */
-    var sslKeyPassword: js.UndefOr[String] = js.native
+    var sslKeyPassword: js.UndefOr[String] = js.undefined
     
     /** Path to ssl client cert private key in OpenSSL PEM format */
-    var sslKeyPath: js.UndefOr[String] = js.native
+    var sslKeyPath: js.UndefOr[String] = js.undefined
     
     /** Stop slow running javascripts (default) */
-    var stopSlowScripts: js.UndefOr[Boolean] = js.native
+    var stopSlowScripts: js.UndefOr[Boolean] = js.undefined
     
     /** The title of the generated pdf file (The title of the first document is used if not specified) */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** TOC object */
-    var toc: js.UndefOr[String] = js.native
+    var toc: js.UndefOr[String] = js.undefined
     
     /** The header text of the toc (default Table of Contents) */
-    var tocHeaderText: js.UndefOr[String] = js.native
+    var tocHeaderText: js.UndefOr[String] = js.undefined
     
     /** For each level of headings in the toc indent by this length (default 1em) */
-    var tocLevelIndentation: js.UndefOr[String] = js.native
+    var tocLevelIndentation: js.UndefOr[String] = js.undefined
     
     /** For each level of headings in the toc the font is scaled by this factor (default 0.8) */
-    var tocTextSizeShrink: js.UndefOr[Double] = js.native
+    var tocTextSizeShrink: js.UndefOr[Double] = js.undefined
     
     /** Specify a user style sheet, to load with every page */
-    var userStyleSheet: js.UndefOr[String] = js.native
+    var userStyleSheet: js.UndefOr[String] = js.undefined
     
     /** HTTP Authentication username */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
     /**
       * Set viewport size if you have custom scrollbars or css attribute overflow to emulate window size
       * Format "1280x1024"
       */
-    var viewportSize: js.UndefOr[String] = js.native
+    var viewportSize: js.UndefOr[String] = js.undefined
     
     /** Wait until window.status is equal to this string before rendering page */
-    var windowStatus: js.UndefOr[String] = js.native
+    var windowStatus: js.UndefOr[String] = js.undefined
     
     /** Use the supplied xsl style sheet for printing the table of contents */
-    var xslStyleSheet: js.UndefOr[String] = js.native
+    var xslStyleSheet: js.UndefOr[String] = js.undefined
     
     /** Use this zoom factor (default 1) */
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -1235,11 +1229,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsOutfile extends Options {
+  trait OptionsOutfile
+    extends StObject
+       with Options {
     
     /** If defined only output to this path */
-    var output: String = js.native
+    var output: String
   }
   object OptionsOutfile {
     

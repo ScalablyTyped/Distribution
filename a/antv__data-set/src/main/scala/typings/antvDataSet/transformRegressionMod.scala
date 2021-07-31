@@ -7,7 +7,6 @@ import typings.antvDataSet.antvDataSetStrings.polynomial
 import typings.antvDataSet.antvDataSetStrings.power
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformRegressionMod {
@@ -25,22 +24,21 @@ object transformRegressionMod {
     def REGRESSION_METHODS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REGRESSION_METHODS")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Array[String]] = js.native
+    var as: js.UndefOr[js.Array[String]] = js.undefined
     
-    var bandwidth: js.UndefOr[Double] = js.native
+    var bandwidth: js.UndefOr[Double] = js.undefined
     
-    var extent: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var extent: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
-    var method: js.UndefOr[linear | exponential | logarithmic | power | polynomial] = js.native
+    var method: js.UndefOr[linear | exponential | logarithmic | power | polynomial] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

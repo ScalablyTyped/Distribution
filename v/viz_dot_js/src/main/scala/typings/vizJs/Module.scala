@@ -2,7 +2,6 @@ package typings.vizJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This `Module` was created by emscripten, and is therefore largely arcane.
   * This currently just lists a subset of what is defined in `Module`.
   */
-@js.native
 trait Module extends StObject {
   
-  def run(): Unit = js.native
+  def run(): Unit
 }
 object Module {
   

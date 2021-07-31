@@ -2,16 +2,14 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tokenizer extends StObject {
   
   /**
     * Returns an object containing two properties: `tokens`, which contains all the tokens; and `state`, the current state.
     **/
-  def getLineTokens(): js.Any = js.native
+  def getLineTokens(): js.Any
 }
 object Tokenizer {
   

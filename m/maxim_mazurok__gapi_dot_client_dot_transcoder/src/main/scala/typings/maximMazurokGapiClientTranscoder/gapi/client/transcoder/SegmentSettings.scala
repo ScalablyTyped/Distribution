@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentSettings extends StObject {
   
   /** Required. Create an individual segment file. The default is `false`. */
-  var individualSegments: js.UndefOr[Boolean] = js.native
+  var individualSegments: js.UndefOr[Boolean] = js.undefined
   
   /** Duration of the segments in seconds. The default is `"6.0s"`. */
-  var segmentDuration: js.UndefOr[String] = js.native
+  var segmentDuration: js.UndefOr[String] = js.undefined
 }
 object SegmentSettings {
   

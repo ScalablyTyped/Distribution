@@ -3,12 +3,13 @@ package typings.mssql.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mssql", "RequestError")
 @js.native
-class RequestError protected () extends Error {
+class RequestError protected ()
+  extends StObject
+     with Error {
   def this(message: String) = this()
   def this(message: String, code: js.Any) = this()
   
@@ -17,6 +18,12 @@ class RequestError protected () extends Error {
   var code: String = js.native
   
   var lineNumber: js.UndefOr[Double] = js.native
+  
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
   
   var number: js.UndefOr[Double] = js.native
   

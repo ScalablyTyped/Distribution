@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachElasticLoadBalancerRequest extends StObject {
   
   /**
     * The Elastic Load Balancing instance's name.
     */
-  var ElasticLoadBalancerName: String = js.native
+  var ElasticLoadBalancerName: String
   
   /**
     * The ID of the layer that the Elastic Load Balancing instance is attached to.
     */
-  var LayerId: String = js.native
+  var LayerId: String
 }
 object DetachElasticLoadBalancerRequest {
   

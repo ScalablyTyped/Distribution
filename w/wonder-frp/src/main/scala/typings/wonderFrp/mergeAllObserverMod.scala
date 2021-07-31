@@ -3,26 +3,31 @@ package typings.wonderFrp
 import typings.wonderFrp.groupDisposableMod.GroupDisposable
 import typings.wonderFrp.iobserverMod.IObserver
 import typings.wonderFrp.observerMod.Observer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/observer/MergeAllObserver", JSImport.Namespace)
-@js.native
-object mergeAllObserverMod extends js.Object {
+object mergeAllObserverMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/observer/MergeAllObserver", "MergeAllObserver")
   @js.native
   class MergeAllObserver protected () extends Observer {
     def this(currentObserver: IObserver, groupDisposable: GroupDisposable) = this()
+    
     var _groupDisposable: js.Any = js.native
+    
     var currentObserver: IObserver = js.native
+    
     var done: Boolean = js.native
   }
-  
   /* static members */
-  @js.native
-  object MergeAllObserver extends js.Object {
-    def create(currentObserver: IObserver, groupDisposable: GroupDisposable): MergeAllObserver = js.native
+  object MergeAllObserver {
+    
+    @JSImport("wonder-frp/dist/commonjs/observer/MergeAllObserver", "MergeAllObserver")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(currentObserver: IObserver, groupDisposable: GroupDisposable): MergeAllObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], groupDisposable.asInstanceOf[js.Any])).asInstanceOf[MergeAllObserver]
   }
-  
 }
-

@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsDatabasesDocumentsDelete extends StandardParameters {
+trait ParamsResourceProjectsDatabasesDocumentsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * When set to `true`, the target document must exist. When set to `false`,
     * the target document must not exist.
     */
   @JSName("currentDocument.exists")
-  var currentDocumentDotexists: js.UndefOr[Boolean] = js.native
+  var currentDocumentDotexists: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set, the target document must exist and have been last updated at
     * that time.
     */
   @JSName("currentDocument.updateTime")
-  var currentDocumentDotupdateTime: js.UndefOr[String] = js.native
+  var currentDocumentDotupdateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the Document to delete. In the format:
     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsDatabasesDocumentsDelete {
   

@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatch extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchState
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the request body, which immediately follows the request headers.
@@ -25,7 +23,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchState
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchBody
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the HTTP method. The method indicates the type of operation that the request is asking the origin to perform.
@@ -34,7 +32,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchState
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchMethod
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the query string. This is the part of a URL that appears after a `?` character, if any.
@@ -43,7 +41,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchState
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchQueryString
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect a single header. See Single Header below for details.
@@ -52,7 +50,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchState
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleHeader
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect a single query argument. See Single Query Argument below for details.
@@ -61,7 +59,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchState
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Inspect the request URI path. This is the part of a web request that identifies a resource, for example, `/images/daily-ad.jpg`.
@@ -70,7 +68,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchState
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchUriPath
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object WebAclRuleStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatch {
   

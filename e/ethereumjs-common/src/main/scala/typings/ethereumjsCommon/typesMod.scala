@@ -3,27 +3,25 @@ package typings.ethereumjsCommon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait BootstrapNode extends StObject {
     
-    var chainId: js.UndefOr[Double] = js.native
+    var chainId: js.UndefOr[Double] = js.undefined
     
-    var comment: String = js.native
+    var comment: String
     
-    var id: String = js.native
+    var id: String
     
-    var ip: String = js.native
+    var ip: String
     
-    var location: String = js.native
+    var location: String
     
-    var network: js.UndefOr[String] = js.native
+    var network: js.UndefOr[String] = js.undefined
     
-    var port: Double | String = js.native
+    var port: Double | String
   }
   object BootstrapNode {
     
@@ -65,24 +63,23 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Chain extends StObject {
     
-    var bootstrapNodes: js.Array[BootstrapNode] = js.native
+    var bootstrapNodes: js.Array[BootstrapNode]
     
-    var chainId: Double = js.native
+    var chainId: Double
     
-    var comment: String = js.native
+    var comment: String
     
-    var genesis: GenesisBlock = js.native
+    var genesis: GenesisBlock
     
-    var hardforks: js.Array[Hardfork] = js.native
+    var hardforks: js.Array[Hardfork]
     
-    var name: String = js.native
+    var name: String
     
-    var networkId: Double = js.native
+    var networkId: Double
     
-    var url: String = js.native
+    var url: String
   }
   object Chain {
     
@@ -136,22 +133,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait GenesisBlock extends StObject {
     
-    var difficulty: Double = js.native
+    var difficulty: Double
     
-    var extraData: String = js.native
+    var extraData: String
     
-    var gasLimit: Double = js.native
+    var gasLimit: Double
     
-    var hash: String = js.native
+    var hash: String
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var stateRoot: String = js.native
+    var stateRoot: String
     
-    var timestamp: String | Null = js.native
+    var timestamp: String | Null
   }
   object GenesisBlock {
     
@@ -164,7 +160,7 @@ object typesMod {
       nonce: String,
       stateRoot: String
     ): GenesisBlock = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = null)
       __obj.asInstanceOf[GenesisBlock]
     }
     
@@ -197,22 +193,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Hardfork extends StObject {
     
-    var block: Double | Null = js.native
+    var block: Double | Null
     
-    var consensus: String = js.native
+    var consensus: String
     
-    var finality: js.Any = js.native
+    var finality: js.Any
     
-    var name: String = js.native
+    var name: String
   }
   object Hardfork {
     
     @scala.inline
     def apply(consensus: String, finality: js.Any, name: String): Hardfork = {
-      val __obj = js.Dynamic.literal(consensus = consensus.asInstanceOf[js.Any], finality = finality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(consensus = consensus.asInstanceOf[js.Any], finality = finality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], block = null)
       __obj.asInstanceOf[Hardfork]
     }
     
@@ -236,11 +231,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait chainsType
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var names: StringDictionary[String] = js.native
+    var names: StringDictionary[String]
   }
   object chainsType {
     
@@ -258,11 +253,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait genesisStatesType
-    extends /* key */ StringDictionary[js.Object] {
+    extends StObject
+       with /* key */ StringDictionary[js.Object] {
     
-    var names: StringDictionary[String] = js.native
+    var names: StringDictionary[String]
   }
   object genesisStatesType {
     

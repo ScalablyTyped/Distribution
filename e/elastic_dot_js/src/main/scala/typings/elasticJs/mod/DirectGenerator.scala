@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "DirectGenerator")
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A candidate generator that generates terms based on edit distance.
   */
-class DirectGenerator () extends Generator {
+class DirectGenerator ()
+  extends StObject
+     with Generator {
   
   /*
     The type of ejs object.  For internal use only.

@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeViewModel extends Accessor {
+trait SwipeViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * The direction the Swipe widget moves across the view.

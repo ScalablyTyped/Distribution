@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,20 +25,32 @@ sealed trait CLEAR_MODES extends StObject
 object CLEAR_MODES extends StObject {
   
   @js.native
-  sealed trait AUTO extends CLEAR_MODES
+  sealed trait AUTO
+    extends StObject
+       with CLEAR_MODES
   
   @js.native
-  sealed trait BLEND extends CLEAR_MODES
+  sealed trait BLEND
+    extends StObject
+       with CLEAR_MODES
   
   @js.native
-  sealed trait BLIT extends CLEAR_MODES
+  sealed trait BLIT
+    extends StObject
+       with CLEAR_MODES
   
   @js.native
-  sealed trait CLEAR extends CLEAR_MODES
+  sealed trait CLEAR
+    extends StObject
+       with CLEAR_MODES
   
   @js.native
-  sealed trait NO extends CLEAR_MODES
+  sealed trait NO
+    extends StObject
+       with CLEAR_MODES
   
   @js.native
-  sealed trait YES extends CLEAR_MODES
+  sealed trait YES
+    extends StObject
+       with CLEAR_MODES
 }

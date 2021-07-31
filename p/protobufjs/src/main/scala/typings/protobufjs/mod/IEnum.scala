@@ -3,17 +3,17 @@ package typings.protobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEnum extends AnyNestedObject {
+trait IEnum
+  extends StObject
+     with AnyNestedObject {
   
   /** Enum options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /** Enum values */
-  var values: StringDictionary[Double] = js.native
+  var values: StringDictionary[Double]
 }
 object IEnum {
   

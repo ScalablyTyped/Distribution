@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Browser.typesProgressMod.Progress
 import typings.awsSdkClientS3Browser.typesProgressMod.UnmarshalledProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesProgressEventMod {
   
-  @js.native
   trait ProgressEvent extends StObject {
     
     /**
       * <p>The Progress event details.</p>
       */
-    var Details: js.UndefOr[Progress] = js.native
+    var Details: js.UndefOr[Progress] = js.undefined
   }
   object ProgressEvent {
     
@@ -36,14 +34,15 @@ object typesProgressEventMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledProgressEvent extends ProgressEvent {
+  trait UnmarshalledProgressEvent
+    extends StObject
+       with ProgressEvent {
     
     /**
       * <p>The Progress event details.</p>
       */
     @JSName("Details")
-    var Details_UnmarshalledProgressEvent: js.UndefOr[UnmarshalledProgress] = js.native
+    var Details_UnmarshalledProgressEvent: js.UndefOr[UnmarshalledProgress] = js.undefined
   }
   object UnmarshalledProgressEvent {
     

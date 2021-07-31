@@ -3,17 +3,15 @@ package typings.svgo.mod
 import typings.svgo.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimizedSvg extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var info: Height = js.native
+  var info: Height
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object OptimizedSvg {
   

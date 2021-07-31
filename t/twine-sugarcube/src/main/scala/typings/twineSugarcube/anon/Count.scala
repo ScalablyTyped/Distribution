@@ -3,7 +3,6 @@ package typings.twineSugarcube.anon
 import typings.twineSugarcube.saveMod.SaveObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -68,7 +67,7 @@ trait Count extends StObject {
     * @since 2.0.0
     */
   def save(slot: Double): Unit = js.native
-  def save(slot: Double, title: js.UndefOr[scala.Nothing], metadata: js.Any): Unit = js.native
   def save(slot: Double, title: String): Unit = js.native
   def save(slot: Double, title: String, metadata: js.Any): Unit = js.native
+  def save(slot: Double, title: Unit, metadata: js.Any): Unit = js.native
 }

@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** Response from the classifier for a phrase. */
-@js.native
 trait Classification extends StObject {
   
   /** An array of up to ten class-confidence pairs sorted in descending order of confidence. */
-  var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.native
+  var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.undefined
   
   /** Unique identifier for this classifier. */
-  var classifier_id: js.UndefOr[String] = js.native
+  var classifier_id: js.UndefOr[String] = js.undefined
   
   /** The submitted phrase. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The class with the highest confidence. */
-  var top_class: js.UndefOr[String] = js.native
+  var top_class: js.UndefOr[String] = js.undefined
   
   /** Link to the classifier. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Classification {
   

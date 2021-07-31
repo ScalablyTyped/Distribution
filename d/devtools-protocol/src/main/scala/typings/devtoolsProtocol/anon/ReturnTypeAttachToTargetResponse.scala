@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Target.AttachToTargetRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.AttachToTargetResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeAttachToTargetResponse extends StObject {
   
-  var paramsType: js.Array[AttachToTargetRequest] = js.native
+  var paramsType: js.Array[AttachToTargetRequest]
   
-  var returnType: AttachToTargetResponse = js.native
+  var returnType: AttachToTargetResponse
 }
 object ReturnTypeAttachToTargetResponse {
   

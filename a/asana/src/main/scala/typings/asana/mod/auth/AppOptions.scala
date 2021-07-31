@@ -2,17 +2,17 @@ package typings.asana.mod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppOptions extends AsanaAuthorizeUrlOptions {
+trait AppOptions
+  extends StObject
+     with AsanaAuthorizeUrlOptions {
   
-  var clientId: js.UndefOr[String | Double] = js.native
+  var clientId: js.UndefOr[String | Double] = js.undefined
   
-  var clientSecret: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object AppOptions {
   

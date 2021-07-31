@@ -2,39 +2,37 @@ package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gdata
   */
-@js.native
 trait SchemaGdataDiffChecksumsResponse extends StObject {
   
   /**
     * gdata
     */
-  var checksumsLocation: js.UndefOr[SchemaGdataCompositeMedia] = js.native
+  var checksumsLocation: js.UndefOr[SchemaGdataCompositeMedia] = js.undefined
   
   /**
     * gdata
     */
-  var chunkSizeBytes: js.UndefOr[String] = js.native
+  var chunkSizeBytes: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var objectLocation: js.UndefOr[SchemaGdataCompositeMedia] = js.native
+  var objectLocation: js.UndefOr[SchemaGdataCompositeMedia] = js.undefined
   
   /**
     * gdata
     */
-  var objectSizeBytes: js.UndefOr[String] = js.native
+  var objectSizeBytes: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var objectVersion: js.UndefOr[String] = js.native
+  var objectVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaGdataDiffChecksumsResponse {
   

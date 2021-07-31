@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberAttributeConstraintsType extends StObject {
   
   /**
     * The maximum value of an attribute that is of the number data type.
     */
-  var MaxValue: js.UndefOr[StringType] = js.native
+  var MaxValue: js.UndefOr[StringType] = js.undefined
   
   /**
     * The minimum value of an attribute that is of the number data type.
     */
-  var MinValue: js.UndefOr[StringType] = js.native
+  var MinValue: js.UndefOr[StringType] = js.undefined
 }
 object NumberAttributeConstraintsType {
   

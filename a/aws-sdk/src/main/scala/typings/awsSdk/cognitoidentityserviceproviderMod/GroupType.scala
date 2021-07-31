@@ -2,46 +2,44 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupType extends StObject {
   
   /**
     * The date the group was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * A string containing the description of the group.
     */
-  var Description: js.UndefOr[DescriptionType] = js.native
+  var Description: js.UndefOr[DescriptionType] = js.undefined
   
   /**
     * The name of the group.
     */
-  var GroupName: js.UndefOr[GroupNameType] = js.native
+  var GroupName: js.UndefOr[GroupNameType] = js.undefined
   
   /**
     * The date the group was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.native
+  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * A nonnegative integer value that specifies the precedence of this group relative to the other groups that a user can belong to in the user pool. If a user belongs to two or more groups, it is the group with the highest precedence whose role ARN will be used in the cognito:roles and cognito:preferred_role claims in the user's tokens. Groups with higher Precedence values take precedence over groups with lower Precedence values or with null Precedence values. Two groups can have the same Precedence value. If this happens, neither group takes precedence over the other. If two groups with the same Precedence have the same role ARN, that role is used in the cognito:preferred_role claim in tokens for users in each group. If the two groups have different role ARNs, the cognito:preferred_role claim is not set in users' tokens. The default Precedence value is null.
     */
-  var Precedence: js.UndefOr[PrecedenceType] = js.native
+  var Precedence: js.UndefOr[PrecedenceType] = js.undefined
   
   /**
     * The role ARN for the group.
     */
-  var RoleArn: js.UndefOr[ArnType] = js.native
+  var RoleArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: js.UndefOr[UserPoolIdType] = js.native
+  var UserPoolId: js.UndefOr[UserPoolIdType] = js.undefined
 }
 object GroupType {
   

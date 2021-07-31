@@ -5,23 +5,21 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pattern extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var flags: String = js.native
+  var flags: String
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var pattern: String = js.native
+  var pattern: String
   
-  var regex: js.UndefOr[Flags | Null] = js.native
+  var regex: js.UndefOr[Flags | Null] = js.undefined
   
-  var value: js.UndefOr[RegExp] = js.native
+  var value: js.UndefOr[RegExp] = js.undefined
 }
 object Pattern {
   

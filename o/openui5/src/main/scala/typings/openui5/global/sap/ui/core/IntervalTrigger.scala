@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.core.IntervalTrigger")
 @js.native
 class IntervalTrigger protected ()
-  extends typings.openui5.sap.ui.core.IntervalTrigger {
+  extends StObject
+     with typings.openui5.sap.ui.core.IntervalTrigger {
   /**
     * Creates an instance of EventBus.
     * @param iInterval is the interval the trigger should be used. If the           trigger is >0

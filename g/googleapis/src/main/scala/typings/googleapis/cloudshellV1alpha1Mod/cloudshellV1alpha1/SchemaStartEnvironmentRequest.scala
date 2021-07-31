@@ -2,13 +2,11 @@ package typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for StartEnvironment.
   */
-@js.native
 trait SchemaStartEnvironmentRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaStartEnvironmentRequest extends StObject {
     * the user can run gcloud commands in Cloud Shell without having to log in.
     * This code can be updated later by calling AuthorizeEnvironment.
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
 }
 object SchemaStartEnvironmentRequest {
   

@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramShapeDefaultsEditable extends StObject {
   
-  var connect: js.UndefOr[Boolean] = js.native
+  var connect: js.UndefOr[Boolean] = js.undefined
   
-  var drag: js.UndefOr[Boolean] = js.native
+  var drag: js.UndefOr[Boolean] = js.undefined
   
-  var remove: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.undefined
   
-  var tools: js.UndefOr[js.Array[DiagramShapeDefaultsEditableTool]] = js.native
+  var tools: js.UndefOr[js.Array[DiagramShapeDefaultsEditableTool]] = js.undefined
 }
 object DiagramShapeDefaultsEditable {
   

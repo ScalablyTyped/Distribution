@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OfflineAudioCompletionEventInit extends EventInit {
+trait OfflineAudioCompletionEventInit
+  extends StObject
+     with EventInit {
   
-  var renderedBuffer: AudioBuffer = js.native
+  var renderedBuffer: AudioBuffer
 }
 object OfflineAudioCompletionEventInit {
   

@@ -4,39 +4,37 @@ import typings.reactInstantsearchCore.reactInstantsearchCoreStrings.and
 import typings.reactInstantsearchCore.reactInstantsearchCoreStrings.or
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefinementListExposed extends StObject {
   
   /** the name of the attribute in the record */
-  var attribute: String = js.native
+  var attribute: String
   
   /**
     * the values of the items selected by default. The searchState of this widget takes the form of a list of strings,
     * which correspond to the values of all selected refinements. However, when there are no refinements selected,
     * the value of the searchState is an empty string.
     */
-  var defaultRefinement: js.UndefOr[js.Array[String]] = js.native
+  var defaultRefinement: js.UndefOr[js.Array[String]] = js.undefined
   
   /** the minimum number of displayed items */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** How to apply the refinements. Possible values: ‘or’ or ‘and’. */
-  var operator: js.UndefOr[or | and] = js.native
+  var operator: js.UndefOr[or | and] = js.undefined
   
   /** allow search inside values */
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
   /** true if the component should display a button that will expand the number of items */
-  var showMore: js.UndefOr[Boolean] = js.native
+  var showMore: js.UndefOr[Boolean] = js.undefined
   
   /** the maximun number of displayed items. Only used when showMore is set to true */
-  var showMoreLimit: js.UndefOr[Double] = js.native
+  var showMoreLimit: js.UndefOr[Double] = js.undefined
   
   /** (...args: any[]) => any to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return. */
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object RefinementListExposed {
   
@@ -92,7 +90,7 @@ object RefinementListExposed {
     def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
     
     @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)

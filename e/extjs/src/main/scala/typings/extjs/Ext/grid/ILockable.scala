@@ -3,35 +3,35 @@ package typings.extjs.Ext.grid
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILockable extends IBase {
+trait ILockable
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Object) */
-  var lockedGridConfig: js.UndefOr[js.Any] = js.native
+  var lockedGridConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var lockedViewConfig: js.UndefOr[js.Any] = js.native
+  var lockedViewConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var normalGridConfig: js.UndefOr[js.Any] = js.native
+  var normalGridConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var normalViewConfig: js.UndefOr[js.Any] = js.native
+  var normalViewConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var scrollDelta: js.UndefOr[Double] = js.native
+  var scrollDelta: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var subGridXType: js.UndefOr[String] = js.native
+  var subGridXType: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var syncRowHeight: js.UndefOr[Boolean] = js.native
+  var syncRowHeight: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Synchronizes the row heights between the locked and non locked portion of the grid for each row  */
-  var syncRowHeights: js.UndefOr[js.Function0[Unit]] = js.native
+  var syncRowHeights: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object ILockable {
   

@@ -3,11 +3,9 @@ package typings.amazonConnectStreams.connect
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows to add additional information to a log entry. */
-@js.native
 trait LogEntry extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait LogEntry extends StObject {
     *
     * @param err The error to add.
     */
-  def withException(err: Error): LogEntry = js.native
+  def withException(err: Error): LogEntry
   
   /**
     * Adds an arbitrary object.
     *
     * @param obj The object to add.
     */
-  def withObject(obj: js.Object): LogEntry = js.native
+  def withObject(obj: js.Object): LogEntry
 }
 object LogEntry {
   

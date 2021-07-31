@@ -10,9 +10,9 @@ jQuery tree plugin
 | ------------------ | :-------------: |
 | Full name          | jstree |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 66 |
-| # downloads        | 1340570 |
+| # releases         | 5 |
+| # dependents       | 69 |
+| # downloads        | 1473142 |
 | # stars            | 6 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultCategoricalHyperParameterRange extends StObject {
   
   /**
     * Whether the hyperparameter is tunable.
     */
-  var isTunable: js.UndefOr[Tunable] = js.native
+  var isTunable: js.UndefOr[Tunable] = js.undefined
   
   /**
     * The name of the hyperparameter.
     */
-  var name: js.UndefOr[ParameterName] = js.native
+  var name: js.UndefOr[ParameterName] = js.undefined
   
   /**
     * A list of the categories for the hyperparameter.
     */
-  var values: js.UndefOr[CategoricalValues] = js.native
+  var values: js.UndefOr[CategoricalValues] = js.undefined
 }
 object DefaultCategoricalHyperParameterRange {
   

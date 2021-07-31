@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCRtpSendParameters extends RTCRtpParameters {
+trait RTCRtpSendParameters
+  extends StObject
+     with RTCRtpParameters {
   
-  var degradationPreference: js.UndefOr[RTCDegradationPreference] = js.native
+  var degradationPreference: js.UndefOr[RTCDegradationPreference] = js.undefined
   
-  var encodings: js.Array[RTCRtpEncodingParameters] = js.native
+  var encodings: js.Array[RTCRtpEncodingParameters]
   
-  var priority: js.UndefOr[RTCPriorityType] = js.native
+  var priority: js.UndefOr[RTCPriorityType] = js.undefined
   
-  var transactionId: java.lang.String = js.native
+  var transactionId: java.lang.String
 }
 object RTCRtpSendParameters {
   

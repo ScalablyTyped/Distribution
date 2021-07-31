@@ -2,36 +2,34 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotTypeMetadata extends StObject {
   
   /**
     * The date that the slot type was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the slot type.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The date that the slot type was updated. When you create a resource, the creation date and last updated date are the same. 
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the slot type.
     */
-  var name: js.UndefOr[SlotTypeName] = js.native
+  var name: js.UndefOr[SlotTypeName] = js.undefined
   
   /**
     * The version of the slot type.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object SlotTypeMetadata {
   

@@ -3,29 +3,27 @@ package typings.phaser.Phaser.Types.Core
 import typings.std.AudioContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Config object containing various sound settings.
   */
-@js.native
 trait AudioConfig extends StObject {
   
   /**
     * An existing Web Audio context.
     */
-  var context: js.UndefOr[AudioContext] = js.native
+  var context: js.UndefOr[AudioContext] = js.undefined
   
   /**
     * Use HTML5 Audio instead of Web Audio.
     */
-  var disableWebAudio: js.UndefOr[Boolean] = js.native
+  var disableWebAudio: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable all audio output.
     */
-  var noAudio: js.UndefOr[Boolean] = js.native
+  var noAudio: js.UndefOr[Boolean] = js.undefined
 }
 object AudioConfig {
   

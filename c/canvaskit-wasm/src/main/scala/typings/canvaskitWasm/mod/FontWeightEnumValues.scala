@@ -2,33 +2,33 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FontWeightEnumValues extends EmbindEnum {
+trait FontWeightEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Black: FontWeight = js.native
+  var Black: FontWeight
   
-  var Bold: FontWeight = js.native
+  var Bold: FontWeight
   
-  var ExtraBlack: FontWeight = js.native
+  var ExtraBlack: FontWeight
   
-  var ExtraBold: FontWeight = js.native
+  var ExtraBold: FontWeight
   
-  var ExtraLight: FontWeight = js.native
+  var ExtraLight: FontWeight
   
-  var Invisible: FontWeight = js.native
+  var Invisible: FontWeight
   
-  var Light: FontWeight = js.native
+  var Light: FontWeight
   
-  var Medium: FontWeight = js.native
+  var Medium: FontWeight
   
-  var Normal: FontWeight = js.native
+  var Normal: FontWeight
   
-  var SemiBold: FontWeight = js.native
+  var SemiBold: FontWeight
   
-  var Thin: FontWeight = js.native
+  var Thin: FontWeight
 }
 object FontWeightEnumValues {
   

@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the MVCxClientScheduler.ToolTipDisplaying event.
   */
-@js.native
-trait MVCxClientSchedulerToolTipDisplayingEventArgs extends ASPxClientEventArgs {
+trait MVCxClientSchedulerToolTipDisplayingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets information about the tooltip related to the event.
     */
-  var data: ASPxClientSchedulerToolTipData = js.native
+  var data: ASPxClientSchedulerToolTipData
   
   /**
     * Gets the tooltip related to the event.
     */
-  var toolTip: MVCxClientSchedulerTemplateToolTip = js.native
+  var toolTip: MVCxClientSchedulerTemplateToolTip
 }
 object MVCxClientSchedulerToolTipDisplayingEventArgs {
   

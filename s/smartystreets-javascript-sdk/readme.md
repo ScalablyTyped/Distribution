@@ -10,9 +10,9 @@ Quick and easy SmartyStreets address validation.
 | ------------------ | :-------------: |
 | Full name          | smartystreets-javascript-sdk |
 | Keywords           | smartystreets, address, validation, verification, verify, validate, street-address, geocoding, addresses, zipcode, autocomplete, autosuggest, suggestions, international, http, sdk |
-| # releases         | 17 |
-| # dependents       | 1 |
-| # downloads        | 394548 |
+| # releases         | 18 |
+| # dependents       | 6 |
+| # downloads        | 491104 |
 | # stars            | 0 |
 
 ## Links

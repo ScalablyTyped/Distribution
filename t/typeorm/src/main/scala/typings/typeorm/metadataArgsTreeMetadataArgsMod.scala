@@ -3,23 +3,21 @@ package typings.typeorm
 import typings.typeorm.typesTreeTypesMod.TreeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsTreeMetadataArgsMod {
   
-  @js.native
   trait TreeMetadataArgs extends StObject {
     
     /**
       * Entity to which tree is applied.
       */
-    var target: js.Function | String = js.native
+    var target: js.Function | String
     
     /**
       * Tree type.
       */
-    var `type`: TreeType = js.native
+    var `type`: TreeType
   }
   object TreeMetadataArgs {
     

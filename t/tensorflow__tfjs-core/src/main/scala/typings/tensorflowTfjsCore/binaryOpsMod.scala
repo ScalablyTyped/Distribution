@@ -5,116 +5,38 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryOpsMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "addStrict")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", JSImport.Namespace)
   @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "addStrict")
-  @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "addStrict")
-  @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "addStrict")
-  @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def addStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def divStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def maximumStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def minimumStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def modStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("modStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "powStrict")
-  @js.native
-  def powStrict[T /* <: Tensor[Rank] */](base: T, exp: Tensor[Rank]): T = js.native
+  @scala.inline
+  def mulStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mulStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def powStrict[T /* <: Tensor[Rank] */](base: T, exp: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("powStrict")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/binary_ops", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifferenceStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def subStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("subStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 }

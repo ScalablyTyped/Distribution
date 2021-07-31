@@ -4,36 +4,34 @@ import typings.std.RegExp
 import typings.wordpressWordcount.mod.CountType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@wordpress/wordcount.@wordpress/wordcount.Settings> */
-  @js.native
   trait PartialSettings extends StObject {
     
-    var HTMLEntityRegExp: js.UndefOr[RegExp] = js.native
+    var HTMLEntityRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var HTMLRegExp: js.UndefOr[RegExp] = js.native
+    var HTMLRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var HTMLcommentRegExp: js.UndefOr[RegExp] = js.native
+    var HTMLcommentRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var astralRegExp: js.UndefOr[RegExp] = js.native
+    var astralRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var characters_excluding_spacesRegExp: js.UndefOr[RegExp] = js.native
+    var characters_excluding_spacesRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var characters_including_spacesRegExp: js.UndefOr[RegExp] = js.native
+    var characters_including_spacesRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var connectorRegExp: js.UndefOr[RegExp] = js.native
+    var connectorRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var l10n: js.UndefOr[Shortcodes] = js.native
+    var l10n: js.UndefOr[Shortcodes] = js.undefined
     
-    var removeRegExp: js.UndefOr[RegExp] = js.native
+    var removeRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var spaceRegExp: js.UndefOr[RegExp] = js.native
+    var spaceRegExp: js.UndefOr[RegExp] = js.undefined
     
-    var wordsRegExp: js.UndefOr[RegExp] = js.native
+    var wordsRegExp: js.UndefOr[RegExp] = js.undefined
   }
   object PartialSettings {
     
@@ -114,13 +112,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Shortcodes extends StObject {
     
     /** Array of known shortcode names */
-    var shortcodes: js.UndefOr[js.Array[String]] = js.native
+    var shortcodes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `type`: js.UndefOr[CountType] = js.native
+    var `type`: js.UndefOr[CountType] = js.undefined
   }
   object Shortcodes {
     

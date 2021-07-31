@@ -12,7 +12,7 @@ official nodejs client of ip2region
 | Keywords           | ip2region, ip, region |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 718 |
+| # downloads        | 3003 |
 | # stars            | 0 |
 
 ## Links

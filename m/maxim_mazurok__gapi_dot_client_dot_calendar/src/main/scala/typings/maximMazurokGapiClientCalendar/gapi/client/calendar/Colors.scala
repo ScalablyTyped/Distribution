@@ -3,31 +3,29 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors extends StObject {
   
   /** A global palette of calendar colors, mapping from the color ID to its definition. A calendarListEntry resource refers to one of these color IDs in its color field. Read-only. */
   var calendar: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors & TopLevel[js.Any]
+  ] = js.undefined
   
   /** A global palette of event colors, mapping from the color ID to its definition. An event resource may refer to one of these color IDs in its color field. Read-only. */
   var event: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Type of the resource ("calendar#colors"). */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Last modification time of the color palette (as a RFC3339 timestamp). Read-only. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object Colors {
   
@@ -44,7 +42,7 @@ object Colors {
     def setCalendar(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors & TopLevel[js.Any]
     ): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -54,7 +52,7 @@ object Colors {
     def setEvent(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors & TopLevel[js.Any]
     ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline

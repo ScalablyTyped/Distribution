@@ -2,21 +2,19 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationControlOptions extends StObject {
   
-  var anchor: js.UndefOr[ControlAnchor] = js.native
+  var anchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var enableAutoLocation: js.UndefOr[Boolean] = js.native
+  var enableAutoLocation: js.UndefOr[Boolean] = js.undefined
   
-  var locationIcon: js.UndefOr[Icon] = js.native
+  var locationIcon: js.UndefOr[Icon] = js.undefined
   
-  var offset: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[Size] = js.undefined
   
-  var showAddressBar: js.UndefOr[Boolean] = js.native
+  var showAddressBar: js.UndefOr[Boolean] = js.undefined
 }
 object GeolocationControlOptions {
   

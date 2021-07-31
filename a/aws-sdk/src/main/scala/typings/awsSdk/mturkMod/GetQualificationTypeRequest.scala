@@ -2,16 +2,14 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQualificationTypeRequest extends StObject {
   
   /**
     * The ID of the QualificationType.
     */
-  var QualificationTypeId: EntityId = js.native
+  var QualificationTypeId: EntityId
 }
 object GetQualificationTypeRequest {
   

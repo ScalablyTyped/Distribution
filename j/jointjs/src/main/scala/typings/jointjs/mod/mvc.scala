@@ -10,14 +10,13 @@ import typings.jointjs.mod.dia.MarkupJSON
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mvc {
   
   @JSImport("jointjs", "mvc.View")
   @js.native
-  class View[T /* <: Model[_, ModelSetOptions, js.Object] */] ()
+  class View[T /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
     extends typings.backbone.mod.View[T] {
     def this(opt: ViewOptions[T]) = this()
     
@@ -38,12 +37,12 @@ object mvc {
     var defaultTheme: String = js.native
     
     def delegateDocumentEvents(): this.type = js.native
-    def delegateDocumentEvents(events: js.UndefOr[scala.Nothing], data: viewEventData): this.type = js.native
+    def delegateDocumentEvents(events: Unit, data: viewEventData): this.type = js.native
     def delegateDocumentEvents(events: EventsHash): this.type = js.native
     def delegateDocumentEvents(events: EventsHash, data: viewEventData): this.type = js.native
     
     def delegateElementEvents(element: Element): this.type = js.native
-    def delegateElementEvents(element: Element, events: js.UndefOr[scala.Nothing], data: viewEventData): this.type = js.native
+    def delegateElementEvents(element: Element, events: Unit, data: viewEventData): this.type = js.native
     def delegateElementEvents(element: Element, events: EventsHash): this.type = js.native
     def delegateElementEvents(element: Element, events: EventsHash, data: viewEventData): this.type = js.native
     
@@ -91,22 +90,22 @@ object mvc {
     var vel: Vectorizer | Null = js.native
   }
   
-  @js.native
-  trait ViewOptions[T /* <: Model[_, ModelSetOptions, js.Object] */]
-    extends typings.backbone.mod.ViewOptions[T] {
+  trait ViewOptions[T /* <: Model[js.Any, ModelSetOptions, js.Object] */]
+    extends StObject
+       with typings.backbone.mod.ViewOptions[T] {
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object ViewOptions {
     
     @scala.inline
-    def apply[T /* <: Model[_, ModelSetOptions, js.Object] */](): ViewOptions[T] = {
+    def apply[T /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ViewOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewOptions[T]]
     }
     
     @scala.inline
-    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions[_], T /* <: Model[_, ModelSetOptions, js.Object] */] (val x: Self with ViewOptions[T]) extends AnyVal {
+    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions[?], T /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & ViewOptions[T]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

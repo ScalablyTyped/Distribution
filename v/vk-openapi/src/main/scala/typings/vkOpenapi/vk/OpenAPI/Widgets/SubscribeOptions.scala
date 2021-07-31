@@ -3,15 +3,13 @@ package typings.vkOpenapi.vk.OpenAPI.Widgets
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribeOptions extends StObject {
   
-  var mode: js.UndefOr[NumericBoolean] = js.native
+  var mode: js.UndefOr[NumericBoolean] = js.undefined
   
-  var soft: js.UndefOr[NumericBoolean] = js.native
+  var soft: js.UndefOr[NumericBoolean] = js.undefined
 }
 object SubscribeOptions {
   

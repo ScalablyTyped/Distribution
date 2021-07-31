@@ -4,7 +4,6 @@ import typings.googlemaps.google.maps.MaxZoomStatus.ERROR
 import typings.googlemaps.google.maps.MaxZoomStatus.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

@@ -2,13 +2,13 @@ package typings.mysql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PoolActualConfig extends PoolSpecificConfig {
+trait PoolActualConfig
+  extends StObject
+     with PoolSpecificConfig {
   
-  var connectionConfig: ConnectionConfig = js.native
+  var connectionConfig: ConnectionConfig
 }
 object PoolActualConfig {
   

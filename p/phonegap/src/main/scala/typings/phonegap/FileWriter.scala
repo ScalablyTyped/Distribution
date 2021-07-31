@@ -2,7 +2,6 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Defined in lib.d.ts
@@ -12,38 +11,37 @@ interface File {
   size: number;
 }
 */
-@js.native
 trait FileWriter extends StObject {
   
-  def abort(): Unit = js.native
+  def abort(): Unit
   
-  var error: FileError = js.native
+  var error: FileError
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var length: Double = js.native
+  var length: Double
   
-  var onabort: js.Function = js.native
+  var onabort: js.Function
   
-  var onerror: js.Function = js.native
+  var onerror: js.Function
   
-  var onprogress: js.Function = js.native
+  var onprogress: js.Function
   
-  var onwrite: js.Function = js.native
+  var onwrite: js.Function
   
-  var onwriteend: js.Function = js.native
+  var onwriteend: js.Function
   
-  var onwritestart: js.Function = js.native
+  var onwritestart: js.Function
   
-  var position: Double = js.native
+  var position: Double
   
-  var readyState: js.Any = js.native
+  var readyState: js.Any
   
-  def seek(arg: Double): Unit = js.native
+  def seek(arg: Double): Unit
   
-  def truncate(arg: Double): Unit = js.native
+  def truncate(arg: Double): Unit
   
-  def write(arg: js.Any): Unit = js.native
+  def write(arg: js.Any): Unit
 }
 object FileWriter {
   

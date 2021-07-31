@@ -2,27 +2,25 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxItems extends StObject {
   
   /**
     * Maximum number of items.
     * @defaultValue 100
     */
-  var maxItems: js.UndefOr[Double] = js.native
+  var maxItems: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of items.
     * @defaultValue 1
     */
-  var minItems: js.UndefOr[Double] = js.native
+  var minItems: js.UndefOr[Double] = js.undefined
   
-  var numberOfItems: Double = js.native
+  var numberOfItems: Double
   
-  def onNumberOfItemsChange(newNumber: Double): Unit = js.native
+  def onNumberOfItemsChange(newNumber: Double): Unit
 }
 object MaxItems {
   

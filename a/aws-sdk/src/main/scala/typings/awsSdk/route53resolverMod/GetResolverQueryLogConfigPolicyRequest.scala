@@ -2,16 +2,14 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResolverQueryLogConfigPolicyRequest extends StObject {
   
   /**
     * The ARN of the query logging configuration that you want to get the query logging policy for.
     */
-  var Arn: typings.awsSdk.route53resolverMod.Arn = js.native
+  var Arn: typings.awsSdk.route53resolverMod.Arn
 }
 object GetResolverQueryLogConfigPolicyRequest {
   

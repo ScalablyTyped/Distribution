@@ -2,26 +2,24 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListKeyPoliciesResponse extends StObject {
   
   /**
     * When Truncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent request.
     */
-  var NextMarker: js.UndefOr[MarkerType] = js.native
+  var NextMarker: js.UndefOr[MarkerType] = js.undefined
   
   /**
     * A list of key policy names. The only valid value is default.
     */
-  var PolicyNames: js.UndefOr[PolicyNameList] = js.native
+  var PolicyNames: js.UndefOr[PolicyNameList] = js.undefined
   
   /**
     * A flag that indicates whether there are more items in the list. When this value is true, the list in this response is truncated. To get more items, pass the value of the NextMarker element in thisresponse to the Marker parameter in a subsequent request.
     */
-  var Truncated: js.UndefOr[BooleanType] = js.native
+  var Truncated: js.UndefOr[BooleanType] = js.undefined
 }
 object ListKeyPoliciesResponse {
   

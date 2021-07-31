@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigureHealthCheckOutput extends StObject {
   
   /**
     * The updated health check.
     */
-  var HealthCheck: js.UndefOr[typings.awsSdk.elbMod.HealthCheck] = js.native
+  var HealthCheck: js.UndefOr[typings.awsSdk.elbMod.HealthCheck] = js.undefined
 }
 object ConfigureHealthCheckOutput {
   

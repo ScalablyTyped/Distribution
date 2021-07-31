@@ -2,36 +2,34 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeTarget extends StObject {
   
   /**
     * A value that indicates whether the target version is applied to any source DB instances that have AutoMinorVersionUpgrade set to true.
     */
-  var AutoUpgrade: js.UndefOr[Boolean] = js.native
+  var AutoUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The version of the database engine that an instance can be upgraded to.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the upgrade target database engine.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the upgrade target database engine.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * A value that indicates whether a database engine is upgraded to a major version.
     */
-  var IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.native
+  var IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
 }
 object UpgradeTarget {
   

@@ -1,85 +1,55 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.azdata.mod.ComponentProperties because Already inherited
-- typings.azdata.mod.Component because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined id, updateProperties, updateProperty, updateCssStyles, onValidityChanged, onValidityChanged, onValidityChanged, onValidityChanged, valid, validate, focus */ @js.native
-trait ButtonComponent extends ButtonProperties {
+- typings.azdata.mod.ButtonProperties because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined label, isFile, fileContent, title */ @js.native
+trait ButtonComponent
+  extends StObject
+     with Component
+     with ComponentWithIcon {
   
   /**
-    * Focuses the component.
+    * The content of the currently selected file
     */
-  def focus(): Thenable[Unit] = js.native
+  var fileContent: js.UndefOr[String] = js.native
   
-  val id: String = js.native
+  /**
+    * Whether the button opens the file browser dialog
+    */
+  var isFile: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * The label for the button
+    */
+  var label: js.UndefOr[String] = js.native
   
   /**
     * An event called when the button is clicked
     */
-  def onDidClick(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
   def onDidClick(
-    listener: js.Function1[/* e */ js.Any, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ js.Any, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onDidClick(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onDidClick(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event called when the button is clicked
     */
   @JSName("onDidClick")
-  var onDidClick_Original: Event[_] = js.native
+  var onDidClick_Original: Event[js.Any] = js.native
   
   /**
-    * Event fired to notify that the component's validity has changed
-    */
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
-  def onValidityChanged(
-    listener: js.Function1[/* e */ Boolean, _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  
-  /**
-    * Updates the specified CSS Styles and notifies the UI
-    * @param cssStyles The styles to update
-    * @returns Thenable that completes once the update has been applied to the UI
-    */
-  def updateCssStyles(cssStyles: StringDictionary[String]): Thenable[Unit] = js.native
-  
-  /**
-    * Sends any updated properties of the component to the UI
+    * @deprecated This will be moved to `ComponentWithIconProperties`
     *
-    * @returns Thenable that completes once the update
-    * has been applied in the UI
+    * The title for the button. This title will show when hovered over
     */
-  def updateProperties(properties: StringDictionary[js.Any]): Thenable[Unit] = js.native
-  
-  /**
-    * Sends an updated property of the component to the UI
-    *
-    * @returns Thenable that completes once the update
-    * has been applied in the UI
-    */
-  def updateProperty(key: String, value: js.Any): Thenable[Unit] = js.native
-  
-  /**
-    * Whether the component is valid or not
-    */
-  val valid: Boolean = js.native
-  
-  /**
-    * Run the component's validations
-    */
-  def validate(): Thenable[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
 }

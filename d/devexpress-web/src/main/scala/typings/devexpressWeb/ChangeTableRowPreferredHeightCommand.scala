@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the selected table's preferred row height.
   */
-@js.native
-trait ChangeTableRowPreferredHeightCommand extends CommandBase {
+trait ChangeTableRowPreferredHeightCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangeTableRowPreferredHeightCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param preferredHeight A TableHeightUnit object specifying preferred height of the selected table rows.
     */
-  def execute(preferredHeight: TableHeightUnit): Boolean = js.native
+  def execute(preferredHeight: TableHeightUnit): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[TableHeightUnit] = js.native
+  def getState(): CommandState[TableHeightUnit]
 }
 object ChangeTableRowPreferredHeightCommand {
   

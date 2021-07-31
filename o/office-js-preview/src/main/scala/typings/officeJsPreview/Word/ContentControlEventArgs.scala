@@ -9,7 +9,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.ContentControlDeleted
 import typings.officeJsPreview.officeJsPreviewStrings.ContentControlSelectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait ContentControlEventArgs extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait ContentControlEventArgs extends StObject {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var contentControl: ContentControl = js.native
+  var contentControl: ContentControl
   
   /**
     *
@@ -38,7 +36,7 @@ trait ContentControlEventArgs extends StObject {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var eventType: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | AnnotationAdded | AnnotationChanged | AnnotationDeleted = js.native
+  var eventType: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | AnnotationAdded | AnnotationChanged | AnnotationDeleted
 }
 object ContentControlEventArgs {
   

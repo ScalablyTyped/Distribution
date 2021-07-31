@@ -2,21 +2,19 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeltaY extends StObject {
   
-  var deltaY: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var kernedWidth: js.UndefOr[Double] = js.native
+  var kernedWidth: js.UndefOr[Double] = js.undefined
   
-  var left: Double = js.native
+  var left: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object DeltaY {
   

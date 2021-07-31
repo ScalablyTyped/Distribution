@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFilter extends StObject {
   
   /**
     * The tag key.
     */
-  var Key: js.UndefOr[XmlStringMaxLen128] = js.native
+  var Key: js.UndefOr[XmlStringMaxLen128] = js.undefined
   
   /**
     * The tag values (0 to 20).
     */
-  var Values: js.UndefOr[TagValues] = js.native
+  var Values: js.UndefOr[TagValues] = js.undefined
 }
 object TagFilter {
   

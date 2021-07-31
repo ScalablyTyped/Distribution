@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobPriorityRequest extends StObject {
   
   /**
     * 
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The ID for the job whose priority you want to update.
     */
-  var JobId: typings.awsSdk.s3controlMod.JobId = js.native
+  var JobId: typings.awsSdk.s3controlMod.JobId
   
   /**
     * The priority you want to assign to this job.
     */
-  var Priority: JobPriority = js.native
+  var Priority: JobPriority
 }
 object UpdateJobPriorityRequest {
   

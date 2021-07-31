@@ -2,19 +2,17 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitySelf extends StObject {
   
-  var accountName: String = js.native
+  var accountName: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var id: String = js.native
+  var id: String
   
-  var tenants: js.Array[TenantInfo] = js.native
+  var tenants: js.Array[TenantInfo]
 }
 object IdentitySelf {
   

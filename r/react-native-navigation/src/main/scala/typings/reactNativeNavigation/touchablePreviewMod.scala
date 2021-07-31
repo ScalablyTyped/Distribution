@@ -14,7 +14,6 @@ import typings.reactNativeNavigation.anon.ReactTag
 import typings.reactNativeNavigation.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchablePreviewMod {
@@ -74,10 +73,11 @@ object touchablePreviewMod {
   
   type GestureResponderEventWithForce = NativeSyntheticEvent[NativeTouchEventWithForce]
   
-  @js.native
-  trait NativeTouchEventWithForce extends NativeTouchEvent {
+  trait NativeTouchEventWithForce
+    extends StObject
+       with NativeTouchEvent {
     
-    var force: Double = js.native
+    var force: Double
   }
   object NativeTouchEventWithForce {
     
@@ -106,22 +106,21 @@ object touchablePreviewMod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var onPeekIn: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPeekIn: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPeekOut: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPeekOut: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* payload */ ReactTag, Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function1[/* payload */ ReactTag, Unit]] = js.undefined
     
     var touchableComponent: js.UndefOr[
         TouchableHighlight | TouchableOpacity | TouchableNativeFeedback | TouchableWithoutFeedback | ReactNode
-      ] = js.native
+      ] = js.undefined
   }
   object Props {
     

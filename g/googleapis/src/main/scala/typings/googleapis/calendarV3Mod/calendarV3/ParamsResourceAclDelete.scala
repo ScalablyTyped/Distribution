@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAclDelete extends StandardParameters {
+trait ParamsResourceAclDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Calendar identifier. To retrieve calendar IDs call the calendarList.list
     * method. If you want to access the primary calendar of the currently
     * logged in user, use the "primary" keyword.
     */
-  var calendarId: js.UndefOr[String] = js.native
+  var calendarId: js.UndefOr[String] = js.undefined
   
   /**
     * ACL rule identifier.
     */
-  var ruleId: js.UndefOr[String] = js.native
+  var ruleId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAclDelete {
   

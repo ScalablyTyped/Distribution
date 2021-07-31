@@ -2,7 +2,6 @@ package typings.moveFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,33 +20,32 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(source: String, destination: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(source: String, destination: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("move-file", JSImport.Namespace)
   @js.native
-  def apply(source: String, destination: String): js.Promise[Unit] = js.native
-  @JSImport("move-file", JSImport.Namespace)
-  @js.native
-  def apply(source: String, destination: String, options: Options): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Move a file synchronously.
   	@param source - File you want to move.
   	@param destination - Where you want the file moved.
   	*/
-  @JSImport("move-file", "sync")
-  @js.native
-  def sync(source: String, destination: String): Unit = js.native
-  @JSImport("move-file", "sync")
-  @js.native
-  def sync(source: String, destination: String, options: Options): Unit = js.native
+  @scala.inline
+  def sync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(source: String, destination: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Overwrite existing destination file.
     		@default true
     		*/
-    val overwrite: js.UndefOr[Boolean] = js.native
+    val overwrite: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

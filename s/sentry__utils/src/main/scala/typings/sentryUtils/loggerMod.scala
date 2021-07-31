@@ -2,7 +2,6 @@ package typings.sentryUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
@@ -11,26 +10,25 @@ object loggerMod {
   @js.native
   val logger: Logger_ = js.native
   
-  @js.native
   trait Logger_ extends StObject {
     
     /** JSDoc */
-    var _enabled: js.Any = js.native
+    var _enabled: js.Any
     
     /** JSDoc */
-    def disable(): Unit = js.native
+    def disable(): Unit
     
     /** JSDoc */
-    def enable(): Unit = js.native
+    def enable(): Unit
     
     /** JSDoc */
-    def error(args: js.Any*): Unit = js.native
+    def error(args: js.Any*): Unit
     
     /** JSDoc */
-    def log(args: js.Any*): Unit = js.native
+    def log(args: js.Any*): Unit
     
     /** JSDoc */
-    def warn(args: js.Any*): Unit = js.native
+    def warn(args: js.Any*): Unit
   }
   object Logger_ {
     

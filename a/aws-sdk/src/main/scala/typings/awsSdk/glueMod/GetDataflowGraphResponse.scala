@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataflowGraphResponse extends StObject {
   
   /**
     * A list of the edges in the resulting DAG.
     */
-  var DagEdges: js.UndefOr[typings.awsSdk.glueMod.DagEdges] = js.native
+  var DagEdges: js.UndefOr[typings.awsSdk.glueMod.DagEdges] = js.undefined
   
   /**
     * A list of the nodes in the resulting DAG.
     */
-  var DagNodes: js.UndefOr[typings.awsSdk.glueMod.DagNodes] = js.native
+  var DagNodes: js.UndefOr[typings.awsSdk.glueMod.DagNodes] = js.undefined
 }
 object GetDataflowGraphResponse {
   

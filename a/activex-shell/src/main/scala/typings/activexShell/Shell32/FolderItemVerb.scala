@@ -2,21 +2,19 @@ package typings.activexShell.Shell32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Definition of interface FolderItemVerb */
-@js.native
 trait FolderItemVerb extends StObject {
   
   /** Execute the verb */
-  def DoIt(): Unit = js.native
+  def DoIt(): Unit
   
   /** Get display name for item */
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Shell32.FolderItemVerb_typekey")
-  var Shell32DotFolderItemVerb_typekey: FolderItemVerb = js.native
+  var Shell32DotFolderItemVerb_typekey: FolderItemVerb
 }
 object FolderItemVerb {
   

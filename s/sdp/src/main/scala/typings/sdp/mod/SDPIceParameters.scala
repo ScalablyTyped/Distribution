@@ -2,17 +2,15 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPIceParameters extends StObject {
   
-  var iceLite: js.UndefOr[Boolean] = js.native
+  var iceLite: js.UndefOr[Boolean] = js.undefined
   
-  var password: String = js.native
+  var password: String
   
-  var usernameFragment: String = js.native
+  var usernameFragment: String
 }
 object SDPIceParameters {
   

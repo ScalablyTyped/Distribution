@@ -5,29 +5,29 @@ import typings.awsSdkClientCodecommitNode.typesCommentsForComparedCommitMod.Unma
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetCommentsForComparedCommitOutputMod {
   
-  @js.native
-  trait GetCommentsForComparedCommitOutput extends OutputTypesUnion {
+  trait GetCommentsForComparedCommitOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of comment objects on the compared commit.</p>
       */
-    var commentsForComparedCommitData: js.UndefOr[js.Array[UnmarshalledCommentsForComparedCommit]] = js.native
+    var commentsForComparedCommitData: js.UndefOr[js.Array[UnmarshalledCommentsForComparedCommit]] = js.undefined
     
     /**
       * <p>An enumeration token that can be used in a request to return the next batch of the results.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   object GetCommentsForComparedCommitOutput {
     

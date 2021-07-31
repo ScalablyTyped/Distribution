@@ -2,51 +2,49 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceQuotaIncreaseRequestInTemplate extends StObject {
   
   /**
     * The AWS Region where the increase request occurs.
     */
-  var AwsRegion: js.UndefOr[typings.awsSdk.servicequotasMod.AwsRegion] = js.native
+  var AwsRegion: js.UndefOr[typings.awsSdk.servicequotasMod.AwsRegion] = js.undefined
   
   /**
     * Identifies the new, increased value of the service quota in the increase request. 
     */
-  var DesiredValue: js.UndefOr[QuotaValue] = js.native
+  var DesiredValue: js.UndefOr[QuotaValue] = js.undefined
   
   /**
     * Specifies if the quota is a global quota.
     */
-  var GlobalQuota: js.UndefOr[typings.awsSdk.servicequotasMod.GlobalQuota] = js.native
+  var GlobalQuota: js.UndefOr[typings.awsSdk.servicequotasMod.GlobalQuota] = js.undefined
   
   /**
     * The code identifier for the service quota specified in the increase request.
     */
-  var QuotaCode: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaCode] = js.native
+  var QuotaCode: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaCode] = js.undefined
   
   /**
     * The name of the service quota in the increase request.
     */
-  var QuotaName: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaName] = js.native
+  var QuotaName: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaName] = js.undefined
   
   /**
     * The code identifier for the AWS service specified in the increase request.
     */
-  var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.native
+  var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.undefined
   
   /**
     * The name of the AWS service specified in the increase request. 
     */
-  var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.native
+  var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.undefined
   
   /**
     * The unit of measure for the increase request.
     */
-  var Unit: js.UndefOr[QuotaUnit] = js.native
+  var Unit: js.UndefOr[QuotaUnit] = js.undefined
 }
 object ServiceQuotaIncreaseRequestInTemplate {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationDescriptionsMessage extends StObject {
   
   /**
     * This parameter contains a list of ApplicationDescription.
     */
-  var Applications: js.UndefOr[ApplicationDescriptionList] = js.native
+  var Applications: js.UndefOr[ApplicationDescriptionList] = js.undefined
 }
 object ApplicationDescriptionsMessage {
   

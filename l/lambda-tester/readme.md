@@ -12,7 +12,7 @@ Unit/Integration tests for AWS Lambda handlers
 | Keywords           | AWS, Lambda, unit, test, mocha, TDD, unit test, unit testing, integration test, integration testing, serverless, environment, variables, x-ray |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 474034 |
+| # downloads        | 546531 |
 | # stars            | 2 |
 
 ## Links

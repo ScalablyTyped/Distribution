@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceNamespacesRevisionsDelete extends StandardParameters {
+trait ParamsResourceNamespacesRevisionsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Cloud Run currently ignores this parameter.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Cloud Run currently ignores this parameter.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the revision being deleted. If needed, replace {namespace_id}
     * with the project ID.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Specifies the cascade behavior on delete. Cloud Run only
@@ -39,7 +39,7 @@ trait ParamsResourceNamespacesRevisionsDelete extends StandardParameters {
     * deprecated, and is now replaced with PropagationPolicy See
     * https://github.com/kubernetes/kubernetes/issues/46659 for more info.
     */
-  var orphanDependents: js.UndefOr[Boolean] = js.native
+  var orphanDependents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the propagation policy of delete. Cloud Run currently ignores
@@ -47,7 +47,7 @@ trait ParamsResourceNamespacesRevisionsDelete extends StandardParameters {
     * kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/ for
     * more information.
     */
-  var propagationPolicy: js.UndefOr[String] = js.native
+  var propagationPolicy: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceNamespacesRevisionsDelete {
   

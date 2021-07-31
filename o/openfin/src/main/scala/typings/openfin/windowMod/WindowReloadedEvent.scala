@@ -3,13 +3,13 @@ package typings.openfin.windowMod
 import typings.openfin.eventsBaseMod.WindowEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowReloadedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowReloadedEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var url: String = js.native
+  var url: String
 }
 object WindowReloadedEvent {
   
@@ -21,7 +21,7 @@ object WindowReloadedEvent {
   }
   
   @scala.inline
-  implicit class WindowReloadedEventMutableBuilder[Self <: WindowReloadedEvent[_, _], Topic, Type] (val x: Self with (WindowReloadedEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowReloadedEventMutableBuilder[Self <: WindowReloadedEvent[?, ?], Topic, Type] (val x: Self & (WindowReloadedEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])

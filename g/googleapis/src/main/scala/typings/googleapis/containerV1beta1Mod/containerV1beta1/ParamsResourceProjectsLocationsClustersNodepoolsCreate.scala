@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsClustersNodepoolsCreate extends StandardParameters {
+trait ParamsResourceProjectsLocationsClustersNodepoolsCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The parent (project, location, cluster id) where the node pool will be
     * created. Specified in the format 'projects/x/locations/x/clusters/x'.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCreateNodePoolRequest] = js.native
+  var requestBody: js.UndefOr[SchemaCreateNodePoolRequest] = js.undefined
 }
 object ParamsResourceProjectsLocationsClustersNodepoolsCreate {
   

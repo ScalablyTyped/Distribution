@@ -2,33 +2,31 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Translations extends StObject {
   
-  var cz: js.UndefOr[String] = js.native
+  var cz: js.UndefOr[String] = js.undefined
   
-  var de: String = js.native
+  var de: String
   
-  var dk: js.UndefOr[String] = js.native
+  var dk: js.UndefOr[String] = js.undefined
   
-  var en: String = js.native
+  var en: String
   
-  var es: js.UndefOr[String] = js.native
+  var es: js.UndefOr[String] = js.undefined
   
-  var fr: js.UndefOr[String] = js.native
+  var fr: js.UndefOr[String] = js.undefined
   
-  var gr: js.UndefOr[String] = js.native
+  var gr: js.UndefOr[String] = js.undefined
   
-  var it: js.UndefOr[String] = js.native
+  var it: js.UndefOr[String] = js.undefined
   
-  var jp: js.UndefOr[String] = js.native
+  var jp: js.UndefOr[String] = js.undefined
   
-  var pl: js.UndefOr[String] = js.native
+  var pl: js.UndefOr[String] = js.undefined
   
-  var tr: js.UndefOr[String] = js.native
+  var tr: js.UndefOr[String] = js.undefined
 }
 object Translations {
   

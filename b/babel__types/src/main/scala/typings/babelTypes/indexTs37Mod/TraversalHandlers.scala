@@ -2,15 +2,13 @@ package typings.babelTypes.indexTs37Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraversalHandlers[T] extends StObject {
   
-  var enter: js.UndefOr[TraversalHandler[T]] = js.native
+  var enter: js.UndefOr[TraversalHandler[T]] = js.undefined
   
-  var exit: js.UndefOr[TraversalHandler[T]] = js.native
+  var exit: js.UndefOr[TraversalHandler[T]] = js.undefined
 }
 object TraversalHandlers {
   
@@ -21,7 +19,7 @@ object TraversalHandlers {
   }
   
   @scala.inline
-  implicit class TraversalHandlersMutableBuilder[Self <: TraversalHandlers[_], T] (val x: Self with TraversalHandlers[T]) extends AnyVal {
+  implicit class TraversalHandlersMutableBuilder[Self <: TraversalHandlers[?], T] (val x: Self & TraversalHandlers[T]) extends AnyVal {
     
     @scala.inline
     def setEnter(value: TraversalHandler[T]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])

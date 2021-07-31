@@ -5,20 +5,20 @@ import typings.storybookAddons.distMod.Addon
 import typings.storybookAddons.distMod.RenderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientApiAddon[StoryFnReturnType] extends Addon {
+trait ClientApiAddon[StoryFnReturnType]
+  extends StObject
+     with Addon {
   
   @JSName("apply")
-  def apply(a: StoryApi[StoryFnReturnType], b: js.Array[_]): js.Any = js.native
+  def apply(a: StoryApi[StoryFnReturnType], b: js.Array[js.Any]): js.Any
 }
 object ClientApiAddon {
   
   @scala.inline
   def apply[StoryFnReturnType](
-    apply: (StoryApi[StoryFnReturnType], js.Array[_]) => js.Any,
+    apply: (StoryApi[StoryFnReturnType], js.Array[js.Any]) => js.Any,
     render: RenderOptions => ReactElement,
     title: js.Function0[String] | String
   ): ClientApiAddon[StoryFnReturnType] = {
@@ -27,9 +27,9 @@ object ClientApiAddon {
   }
   
   @scala.inline
-  implicit class ClientApiAddonMutableBuilder[Self <: ClientApiAddon[_], StoryFnReturnType] (val x: Self with ClientApiAddon[StoryFnReturnType]) extends AnyVal {
+  implicit class ClientApiAddonMutableBuilder[Self <: ClientApiAddon[?], StoryFnReturnType] (val x: Self & ClientApiAddon[StoryFnReturnType]) extends AnyVal {
     
     @scala.inline
-    def setApply(value: (StoryApi[StoryFnReturnType], js.Array[_]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    def setApply(value: (StoryApi[StoryFnReturnType], js.Array[js.Any]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
   }
 }

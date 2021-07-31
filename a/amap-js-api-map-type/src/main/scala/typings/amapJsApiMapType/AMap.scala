@@ -8,13 +8,14 @@ import typings.amapJsApiMapType.amapJsApiMapTypeStrings.hide
 import typings.amapJsApiMapType.amapJsApiMapTypeStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait MapType extends EventEmitter {
+  trait MapType
+    extends StObject
+       with EventEmitter {
     
     def hide(): Unit = js.native
     
@@ -22,17 +23,16 @@ object AMap {
   }
   object MapType {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var hide: Event_[typings.amapJsApiMapType.amapJsApiMapTypeStrings.hide, js.UndefOr[scala.Nothing]] = js.native
+      var hide: Event_[typings.amapJsApiMapType.amapJsApiMapTypeStrings.hide, Unit]
       
-      var show: Event_[typings.amapJsApiMapType.amapJsApiMapTypeStrings.show, js.UndefOr[scala.Nothing]] = js.native
+      var show: Event_[typings.amapJsApiMapType.amapJsApiMapTypeStrings.show, Unit]
     }
     object EventMap {
       
       @scala.inline
-      def apply(hide: Event_[hide, js.UndefOr[scala.Nothing]], show: Event_[show, js.UndefOr[scala.Nothing]]): EventMap = {
+      def apply(hide: Event_[hide, Unit], show: Event_[show, Unit]): EventMap = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
@@ -41,14 +41,13 @@ object AMap {
       implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setHide(value: Event_[hide, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setShow(value: Event_[show, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -56,17 +55,17 @@ object AMap {
         * 取值为0：默认底图
         * 取值为1：卫星图
         */
-      var defaultType: js.UndefOr[`0` | `1`] = js.native
+      var defaultType: js.UndefOr[`0` | `1`] = js.undefined
       
       /**
         * 是否叠加路网图层，默认false
         */
-      var showRoad: js.UndefOr[Boolean] = js.native
+      var showRoad: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 是否叠加实时交通图层，默认false
         */
-      var showTraffic: js.UndefOr[Boolean] = js.native
+      var showTraffic: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

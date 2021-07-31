@@ -2,17 +2,15 @@ package typings.ecmaProposalMathExtensions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Math extends StObject {
   
   /** This is the number of how many degrees are one radian. */
-  val DEG_PER_RAD: Double = js.native
+  val DEG_PER_RAD: Double
   
   /** This is the number of how many radians are one degree. */
-  val RAD_PER_DEG: Double = js.native
+  val RAD_PER_DEG: Double
   
   /**
     * Clamps an incoming value `x` to a range between `lower` and `upper`.
@@ -21,14 +19,14 @@ trait Math extends StObject {
     * @param upper The upper bound of the range to clamp `x` to.
     * @return The input value clamped to the given range.
     */
-  def clamp(x: Double, lower: Double, upper: Double): Double = js.native
+  def clamp(x: Double, lower: Double, upper: Double): Double
   
   /**
     * Converts an angle given in radians to an angle given in degrees.
     * @param radians The input angle in radians.
     * @return The output angle in degrees.
     */
-  def degrees(radians: Double): Double = js.native
+  def degrees(radians: Double): Double
   
   /**
     * Scales a floating point value between `inLow` and `inHigh` to the range of `outLow` to `outHigh`.
@@ -39,14 +37,14 @@ trait Math extends StObject {
     * @param outHigh The upper bound of the output range.
     * @return The input value scaled to the output range.
     */
-  def fscale(x: Double, inLow: Double, inHigh: Double, outLow: Double, outHigh: Double): Double = js.native
+  def fscale(x: Double, inLow: Double, inHigh: Double, outLow: Double, outHigh: Double): Double
   
   /**
     * Converts an angle given in degrees to an angle given in radians.
     * @param degrees The input angle in degrees.
     * @return The output angle in radians.
     */
-  def radians(degrees: Double): Double = js.native
+  def radians(degrees: Double): Double
   
   /**
     * Scales a value between `inLow` and `inHigh` to the range of `outLow` to `outHigh`.
@@ -57,7 +55,7 @@ trait Math extends StObject {
     * @param outHigh The upper bound of the output range.
     * @return The input value scaled to the output range.
     */
-  def scale(x: Double, inLow: Double, inHigh: Double, outLow: Double, outHigh: Double): Double = js.native
+  def scale(x: Double, inLow: Double, inHigh: Double, outLow: Double, outHigh: Double): Double
 }
 object Math {
   

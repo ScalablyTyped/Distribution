@@ -3,14 +3,16 @@ package typings.uriTemplates
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(template: String): URITemplate = ^.asInstanceOf[js.Dynamic].apply(template.asInstanceOf[js.Any]).asInstanceOf[URITemplate]
+  
   @JSImport("uri-templates", JSImport.Namespace)
   @js.native
-  def apply(template: String): URITemplate = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait URITemplate extends StObject {

@@ -10,9 +10,9 @@ Flux Standard Action utlities for Redux
 | ------------------ | :-------------: |
 | Full name          | redux-actions |
 | Keywords           | flux, redux, fsa, actions |
-| # releases         | 4 |
-| # dependents       | 836 |
-| # downloads        | 15027495 |
+| # releases         | 2 |
+| # dependents       | 852 |
+| # downloads        | 14998873 |
 | # stars            | 27 |
 
 ## Links

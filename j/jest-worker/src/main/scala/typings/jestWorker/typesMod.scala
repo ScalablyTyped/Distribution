@@ -12,7 +12,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -65,7 +64,6 @@ object typesMod {
   MessagePort]
   ]
   
-  @js.native
   trait FarmOptions extends StObject {
     
     var WorkerPool: js.UndefOr[
@@ -74,21 +72,21 @@ object typesMod {
           /* options */ js.UndefOr[WorkerPoolOptions], 
           WorkerPoolInterface
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var computeWorkerKey: js.UndefOr[js.Function2[/* method */ String, /* repeated */ js.Any, String | Null]] = js.native
+    var computeWorkerKey: js.UndefOr[js.Function2[/* method */ String, /* repeated */ js.Any, String | Null]] = js.undefined
     
-    var enableWorkerThreads: js.UndefOr[Boolean] = js.native
+    var enableWorkerThreads: js.UndefOr[Boolean] = js.undefined
     
-    var exposedMethods: js.UndefOr[js.Array[String]] = js.native
+    var exposedMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var forkOptions: js.UndefOr[ForkOptions] = js.native
+    var forkOptions: js.UndefOr[ForkOptions] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var numWorkers: js.UndefOr[Double] = js.native
+    var numWorkers: js.UndefOr[Double] = js.undefined
     
-    var setupArgs: js.UndefOr[js.Array[_]] = js.native
+    var setupArgs: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object FarmOptions {
     
@@ -141,7 +139,7 @@ object typesMod {
       def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
       
       @scala.inline
-      def setSetupArgs(value: js.Array[_]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
+      def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSetupArgsUndefined: Self = StObject.set(x, "setupArgs", js.undefined)
@@ -159,12 +157,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MessageChannel extends StObject {
     
-    var port1: MessagePort = js.native
+    var port1: MessagePort
     
-    var port2: MessagePort = js.native
+    var port2: MessagePort
   }
   object MessageChannel {
     
@@ -185,7 +182,7 @@ object typesMod {
     }
   }
   
-  type MessagePort = TypeofEventEmitter with Instantiable0[EventEmitter] with PostMessage
+  type MessagePort = TypeofEventEmitter & Instantiable0[EventEmitter] & PostMessage
   
   type OnEnd = js.Function2[/* err */ Error | Null, /* result */ js.Any, Unit]
   
@@ -222,33 +219,56 @@ object typesMod {
   type ParentMessageOk = js.Tuple2[`0`, // type
   js.Any]
   
-  @js.native
   trait QueueChildMessage extends StObject {
     
-    def onEnd(err: Null, result: js.Any): Unit = js.native
-    def onEnd(err: Error, result: js.Any): Unit = js.native
+    def onEnd(err: Null, result: js.Any): Unit
+    def onEnd(err: Error, result: js.Any): Unit
     @JSName("onEnd")
-    var onEnd_Original: OnEnd = js.native
+    var onEnd_Original: OnEnd
     
-    def onStart(worker: WorkerInterface): Unit = js.native
+    def onStart(worker: WorkerInterface): Unit
     @JSName("onStart")
-    var onStart_Original: OnStart = js.native
+    var onStart_Original: OnStart
     
-    var request: ChildMessage = js.native
+    var request: ChildMessage
+  }
+  object QueueChildMessage {
+    
+    @scala.inline
+    def apply(
+      onEnd: (/* err */ Error | Null, /* result */ js.Any) => Unit,
+      onStart: /* worker */ WorkerInterface => Unit,
+      request: ChildMessage
+    ): QueueChildMessage = {
+      val __obj = js.Dynamic.literal(onEnd = js.Any.fromFunction2(onEnd), onStart = js.Any.fromFunction1(onStart), request = request.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QueueChildMessage]
+    }
+    
+    @scala.inline
+    implicit class QueueChildMessageMutableBuilder[Self <: QueueChildMessage] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnEnd(value: (/* err */ Error | Null, /* result */ js.Any) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnStart(value: /* worker */ WorkerInterface => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRequest(value: ChildMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait QueueItem extends StObject {
     
-    var next: QueueItem | Null = js.native
+    var next: QueueItem | Null
     
-    var task: QueueChildMessage = js.native
+    var task: QueueChildMessage
   }
   object QueueItem {
     
     @scala.inline
     def apply(task: QueueChildMessage): QueueItem = {
-      val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], next = null)
       __obj.asInstanceOf[QueueItem]
     }
     
@@ -266,20 +286,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WorkerInterface extends StObject {
     
-    def getStderr(): ReadableStream | Null = js.native
+    def getStderr(): ReadableStream | Null
     
-    def getStdout(): ReadableStream | Null = js.native
+    def getStdout(): ReadableStream | Null
     
-    def getWorkerId(): Double = js.native
+    def getWorkerId(): Double
     
-    def onExit(exitCode: Double): Unit = js.native
+    def onExit(exitCode: Double): Unit
     
-    def onMessage(message: ParentMessage): Unit = js.native
+    def onMessage(message: ParentMessage): Unit
     
-    def send(request: ChildMessage, onProcessStart: OnStart, onProcessEnd: OnEnd): Unit = js.native
+    def send(request: ChildMessage, onProcessStart: OnStart, onProcessEnd: OnEnd): Unit
   }
   object WorkerInterface {
     
@@ -319,18 +338,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WorkerOptions extends StObject {
     
-    var forkOptions: ForkOptions = js.native
+    var forkOptions: ForkOptions
     
-    var maxRetries: Double = js.native
+    var maxRetries: Double
     
-    var setupArgs: js.Array[_] = js.native
+    var setupArgs: js.Array[js.Any]
     
-    var workerId: Double = js.native
+    var workerId: Double
     
-    var workerPath: String = js.native
+    var workerPath: String
   }
   object WorkerOptions {
     
@@ -338,7 +356,7 @@ object typesMod {
     def apply(
       forkOptions: ForkOptions,
       maxRetries: Double,
-      setupArgs: js.Array[_],
+      setupArgs: js.Array[js.Any],
       workerId: Double,
       workerPath: String
     ): WorkerOptions = {
@@ -356,7 +374,7 @@ object typesMod {
       def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSetupArgs(value: js.Array[_]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
+      def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))
@@ -369,20 +387,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WorkerPoolInterface extends StObject {
     
-    def createWorker(options: WorkerOptions): WorkerInterface = js.native
+    def createWorker(options: WorkerOptions): WorkerInterface
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def getStderr(): ReadableStream = js.native
+    def getStderr(): ReadableStream
     
-    def getStdout(): ReadableStream = js.native
+    def getStdout(): ReadableStream
     
-    def getWorkers(): js.Array[WorkerInterface] = js.native
+    def getWorkers(): js.Array[WorkerInterface]
     
-    def send(workerId: Double, request: ChildMessage, onStart: OnStart, onEnd: OnEnd): Unit = js.native
+    def send(workerId: Double, request: ChildMessage, onStart: OnStart, onEnd: OnEnd): Unit
   }
   object WorkerPoolInterface {
     
@@ -422,18 +439,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WorkerPoolOptions extends StObject {
     
-    var enableWorkerThreads: Boolean = js.native
+    var enableWorkerThreads: Boolean
     
-    var forkOptions: ForkOptions = js.native
+    var forkOptions: ForkOptions
     
-    var maxRetries: Double = js.native
+    var maxRetries: Double
     
-    var numWorkers: Double = js.native
+    var numWorkers: Double
     
-    var setupArgs: js.Array[_] = js.native
+    var setupArgs: js.Array[js.Any]
   }
   object WorkerPoolOptions {
     
@@ -443,7 +459,7 @@ object typesMod {
       forkOptions: ForkOptions,
       maxRetries: Double,
       numWorkers: Double,
-      setupArgs: js.Array[_]
+      setupArgs: js.Array[js.Any]
     ): WorkerPoolOptions = {
       val __obj = js.Dynamic.literal(enableWorkerThreads = enableWorkerThreads.asInstanceOf[js.Any], forkOptions = forkOptions.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], numWorkers = numWorkers.asInstanceOf[js.Any], setupArgs = setupArgs.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerPoolOptions]
@@ -465,7 +481,7 @@ object typesMod {
       def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSetupArgs(value: js.Array[_]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
+      def setSetupArgs(value: js.Array[js.Any]): Self = StObject.set(x, "setupArgs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSetupArgsVarargs(value: js.Any*): Self = StObject.set(x, "setupArgs", js.Array(value :_*))

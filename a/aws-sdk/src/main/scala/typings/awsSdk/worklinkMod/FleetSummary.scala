@@ -2,51 +2,49 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetSummary extends StObject {
   
   /**
     * The identifier used by users to sign into the Amazon WorkLink app.
     */
-  var CompanyCode: js.UndefOr[typings.awsSdk.worklinkMod.CompanyCode] = js.native
+  var CompanyCode: js.UndefOr[typings.awsSdk.worklinkMod.CompanyCode] = js.undefined
   
   /**
     * The time when the fleet was created.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.native
+  var CreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the fleet to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var FleetArn: js.UndefOr[typings.awsSdk.worklinkMod.FleetArn] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.worklinkMod.FleetArn] = js.undefined
   
   /**
     * The name of the fleet.
     */
-  var FleetName: js.UndefOr[typings.awsSdk.worklinkMod.FleetName] = js.native
+  var FleetName: js.UndefOr[typings.awsSdk.worklinkMod.FleetName] = js.undefined
   
   /**
     * The status of the fleet.
     */
-  var FleetStatus: js.UndefOr[typings.awsSdk.worklinkMod.FleetStatus] = js.native
+  var FleetStatus: js.UndefOr[typings.awsSdk.worklinkMod.FleetStatus] = js.undefined
   
   /**
     * The time when the fleet was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[DateTime] = js.native
+  var LastUpdatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The tags attached to the resource. A tag is a key-value pair.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object FleetSummary {
   

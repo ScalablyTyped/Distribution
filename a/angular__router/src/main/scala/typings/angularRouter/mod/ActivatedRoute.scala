@@ -4,7 +4,6 @@ import typings.angularCore.mod.Type
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "ActivatedRoute")
@@ -15,7 +14,7 @@ class ActivatedRoute () extends StObject {
   def children: js.Array[ActivatedRoute] = js.native
   
   /** The component of the route, a constant. */
-  var component: Type[_] | String | Null = js.native
+  var component: Type[js.Any] | String | Null = js.native
   
   /** An observable of the static and resolved data of this route. */
   var data: Observable_[Data] = js.native

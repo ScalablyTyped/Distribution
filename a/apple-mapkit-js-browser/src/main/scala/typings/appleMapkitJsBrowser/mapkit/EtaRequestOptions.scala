@@ -4,34 +4,32 @@ import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options you may provide for requesting estimated arrival times.
   */
-@js.native
 trait EtaRequestOptions extends StObject {
   
   /**
     * The mode of transportation the server uses when estimating arrival times.
     */
-  var departureDate: Date = js.native
+  var departureDate: Date
   
   /**
     * The time of departure used in an estimated arrival time request.
     */
-  var destinations: js.Array[Coordinate] = js.native
+  var destinations: js.Array[Coordinate]
   
   /**
     * The starting point for estimated arrival time requests.
     */
-  var origin: Coordinate = js.native
+  var origin: Coordinate
   
   /**
     * An array of coordinates that represent end points for estimated arrival time requests.
     */
-  var transportType: Transport = js.native
+  var transportType: Transport
 }
 object EtaRequestOptions {
   

@@ -10,9 +10,9 @@ Common interfaces for promise-based log libraries
 | ------------------ | :-------------: |
 | Full name          | @algolia/logger-common |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 5 |
-| # downloads        | 4095176 |
+| # releases         | 38 |
+| # dependents       | 7 |
+| # downloads        | 6776500 |
 | # stars            | 0 |
 
 ## Links

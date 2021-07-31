@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logMetricFilterMod {
@@ -50,6 +49,10 @@ object logMetricFilterMod {
   /* static members */
   object LogMetricFilter {
     
+    @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LogMetricFilter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -59,51 +62,45 @@ object logMetricFilterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LogMetricFilter = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LogMetricFilter = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogMetricFilterState): LogMetricFilter = js.native
-    @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LogMetricFilterState, opts: CustomResourceOptions): LogMetricFilter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LogMetricFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogMetricFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogMetricFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogMetricFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogMetricFilterState): LogMetricFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogMetricFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LogMetricFilterState, opts: CustomResourceOptions): LogMetricFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogMetricFilter]
     
     /**
       * Returns true if the given object is an instance of LogMetricFilter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logMetricFilter.LogMetricFilter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logMetricFilter.LogMetricFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logMetricFilter.LogMetricFilter */ Boolean]
   }
   
-  @js.native
   trait LogMetricFilterArgs extends StObject {
     
     /**
       * The name of the log group to associate the metric filter with.
       */
-    val logGroupName: Input[String] = js.native
+    val logGroupName: Input[String]
     
     /**
       * A block defining collection of information needed to define how metric data gets emitted. See below.
       */
-    val metricTransformation: Input[typings.pulumiAws.inputMod.cloudwatch.LogMetricFilterMetricTransformation] = js.native
+    val metricTransformation: Input[typings.pulumiAws.inputMod.cloudwatch.LogMetricFilterMetricTransformation]
     
     /**
       * A name for the metric filter.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
       * for extracting metric data out of ingested log events.
       */
-    val pattern: Input[String] = js.native
+    val pattern: Input[String]
   }
   object LogMetricFilterArgs {
     
@@ -137,29 +134,28 @@ object logMetricFilterMod {
     }
   }
   
-  @js.native
   trait LogMetricFilterState extends StObject {
     
     /**
       * The name of the log group to associate the metric filter with.
       */
-    val logGroupName: js.UndefOr[Input[String]] = js.native
+    val logGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A block defining collection of information needed to define how metric data gets emitted. See below.
       */
-    val metricTransformation: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.LogMetricFilterMetricTransformation]] = js.native
+    val metricTransformation: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.LogMetricFilterMetricTransformation]] = js.undefined
     
     /**
       * A name for the metric filter.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
       * for extracting metric data out of ingested log events.
       */
-    val pattern: js.UndefOr[Input[String]] = js.native
+    val pattern: js.UndefOr[Input[String]] = js.undefined
   }
   object LogMetricFilterState {
     

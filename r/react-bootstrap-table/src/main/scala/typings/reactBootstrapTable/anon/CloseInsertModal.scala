@@ -2,41 +2,39 @@ package typings.reactBootstrapTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseInsertModal extends StObject {
   
   /**
     * Callback to close the insert row modal window.
     */
-  def closeInsertModal(): Unit = js.native
+  def closeInsertModal(): Unit
   
   /**
     * Callback to delete selected row(s) from the table.
     */
-  def dropRow(): Unit = js.native
+  def dropRow(): Unit
   
   /**
     * Callback to export the table to a CSV file.
     */
-  def exportCSV(): Unit = js.native
+  def exportCSV(): Unit
   
   /**
     * Callback to activate the insert row modal window.
     */
-  def openInsertModal(): Unit = js.native
+  def openInsertModal(): Unit
   
   /**
     * Callback to apply a search.
     */
-  def search(): Unit = js.native
+  def search(): Unit
   
   /**
     * Callback to toggle between showing all rows and showing only selected rows.
     */
-  def showOnlyToogle(): Unit = js.native
+  def showOnlyToogle(): Unit
 }
 object CloseInsertModal {
   

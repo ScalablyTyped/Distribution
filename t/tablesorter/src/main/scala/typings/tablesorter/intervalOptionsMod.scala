@@ -3,18 +3,18 @@ package typings.tablesorter
 import typings.tablesorter.numericOptionsMod.NumericOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intervalOptionsMod {
   
-  @js.native
-  trait IntervalOptions extends NumericOptions {
+  trait IntervalOptions
+    extends StObject
+       with NumericOptions {
     
     /**
       * The interval of the control.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object IntervalOptions {
     

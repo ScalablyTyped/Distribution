@@ -4,15 +4,13 @@ import typings.exceljs.exceljsStrings.False
 import typings.exceljs.exceljsStrings.True
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentProtection extends StObject {
   
-  var lockText: True | False = js.native
+  var lockText: True | False
   
-  var locked: True | False = js.native
+  var locked: True | False
 }
 object CommentProtection {
   

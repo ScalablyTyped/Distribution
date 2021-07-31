@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MainPageSuffix extends StObject {
   
-  var mainPageSuffix: js.UndefOr[String] = js.native
+  var mainPageSuffix: js.UndefOr[String] = js.undefined
   
-  var notFoundPage: js.UndefOr[String] = js.native
+  var notFoundPage: js.UndefOr[String] = js.undefined
 }
 object MainPageSuffix {
   

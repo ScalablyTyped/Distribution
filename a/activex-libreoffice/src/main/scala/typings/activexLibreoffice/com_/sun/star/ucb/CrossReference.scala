@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Such references are kept by news servers for managing articles contained in multiple groups. An article can have a sequence of cross references.
   */
-@js.native
 trait CrossReference extends StObject {
   
   /** The name of a news group. */
-  var Group: String = js.native
+  var Group: String
   
   /** The unique identifier (relative to the server) of an article in the given group. */
-  var Id: Double = js.native
+  var Id: Double
 }
 object CrossReference {
   

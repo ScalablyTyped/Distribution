@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addressBookRepositoryLinkResponseMod {
   
-  @js.native
   trait AddressBookRepositoryLinkResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var users: js.Array[AddressBookRepositoryLinkResponseUsersItem] = js.native
+    var users: js.Array[AddressBookRepositoryLinkResponseUsersItem]
     
-    var warning: String = js.native
+    var warning: String
   }
   object AddressBookRepositoryLinkResponseRootObject {
     
@@ -41,26 +39,25 @@ object addressBookRepositoryLinkResponseMod {
     }
   }
   
-  @js.native
   trait AddressBookRepositoryLinkResponseUsersItem extends StObject {
     
-    var addressbook_name: String = js.native
+    var addressbook_name: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object AddressBookRepositoryLinkResponseUsersItem {
     

@@ -2,10 +2,8 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
   /***
@@ -15,45 +13,45 @@ trait Range extends StObject {
     * @param cell {Integer}
     * @return {Boolean}
     */
-  def contains(row: Double, cell: Double): Boolean = js.native
+  def contains(row: Double, cell: Double): Boolean
   
   /***
     * @property fromCell
     * @type {Integer}
     */
-  var fromCell: Double = js.native
+  var fromCell: Double
   
   /***
     * @property fromRow
     * @type {Integer}
     */
-  var fromRow: Double = js.native
+  var fromRow: Double
   
   /***
     * Returns whether a range represents a single cell.
     * @method isSingleCell
     * @return {Boolean}
     */
-  def isSingleCell(): Boolean = js.native
+  def isSingleCell(): Boolean
   
   /***
     * Returns whether a range represents a single row.
     * @method isSingleRow
     * @return {Boolean}
     */
-  def isSingleRow(): Boolean = js.native
+  def isSingleRow(): Boolean
   
   /***
     * @property toCell
     * @type {Integer}
     */
-  var toCell: Double = js.native
+  var toCell: Double
   
   /***
     * @property toRow
     * @type {Integer}
     */
-  var toRow: Double = js.native
+  var toRow: Double
 }
 object Range {
   

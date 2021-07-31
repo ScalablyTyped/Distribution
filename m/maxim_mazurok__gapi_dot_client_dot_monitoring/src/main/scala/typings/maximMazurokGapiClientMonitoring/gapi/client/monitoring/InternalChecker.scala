@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternalChecker extends StObject {
   
   /** The checker's human-readable name. The display name should be unique within a Stackdriver Workspace in order to make it easier to identify; however, uniqueness is not enforced. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The GCP zone the Uptime check should egress from. Only respected for internal Uptime checks, where internal_network is specified. */
-  var gcpZone: js.UndefOr[String] = js.native
+  var gcpZone: js.UndefOr[String] = js.undefined
   
   /**
     * A unique resource name for this InternalChecker. The format is: projects/[PROJECT_ID_OR_NUMBER]/internalCheckers/[INTERNAL_CHECKER_ID] [PROJECT_ID_OR_NUMBER] is the Stackdriver
     * Workspace project for the Uptime check config associated with the internal checker.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The GCP VPC network (https://cloud.google.com/vpc/docs/vpc) where the internal resource lives (ex: "default"). */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /** The GCP project ID where the internal checker lives. Not necessary the same as the Workspace project. */
-  var peerProjectId: js.UndefOr[String] = js.native
+  var peerProjectId: js.UndefOr[String] = js.undefined
   
   /** The current operational state of the internal checker. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object InternalChecker {
   

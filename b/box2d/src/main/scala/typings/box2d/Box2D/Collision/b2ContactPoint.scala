@@ -4,56 +4,54 @@ import typings.box2d.Box2D.Collision.Shapes.b2Shape
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2ContactPoint extends StObject {
   
   /**
     * The combined friction coefficient.
     **/
-  var friction: Double = js.native
+  var friction: Double
   
   /**
     * The contact id identifies the features in contact.
     **/
-  var id: b2ContactID = js.native
+  var id: b2ContactID
   
   /**
     * Points from shape1 to shape2.
     **/
-  var normal: b2Vec2 = js.native
+  var normal: b2Vec2
   
   /**
     * Position in world coordinates.
     **/
-  var position: b2Vec2 = js.native
+  var position: b2Vec2
   
   /**
     * The combined restitution coefficient.
     **/
-  var restitution: Double = js.native
+  var restitution: Double
   
   /**
     * The separation is negative when shapes are touching.
     **/
-  var separation: Double = js.native
+  var separation: Double
   
   /**
     * The first shape.
     **/
-  var shape1: b2Shape = js.native
+  var shape1: b2Shape
   
   /**
     * The second shape.
     **/
-  var shape2: b2Shape = js.native
+  var shape2: b2Shape
   
   /**
     * Velocity of point on body2 relative to point on body1 (pre-solver).
     **/
-  var velocity: b2Vec2 = js.native
+  var velocity: b2Vec2
 }
 object b2ContactPoint {
   

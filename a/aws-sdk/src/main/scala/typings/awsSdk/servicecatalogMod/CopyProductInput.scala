@@ -2,46 +2,44 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The copy options. If the value is CopyTags, the tags from the source product are copied to the target product.
     */
-  var CopyOptions: js.UndefOr[typings.awsSdk.servicecatalogMod.CopyOptions] = js.native
+  var CopyOptions: js.UndefOr[typings.awsSdk.servicecatalogMod.CopyOptions] = js.undefined
   
   /**
     *  A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request. 
     */
-  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken = js.native
+  var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken
   
   /**
     * The Amazon Resource Name (ARN) of the source product.
     */
-  var SourceProductArn: ProductArn = js.native
+  var SourceProductArn: ProductArn
   
   /**
     * The identifiers of the provisioning artifacts (also known as versions) of the product to copy. By default, all provisioning artifacts are copied.
     */
-  var SourceProvisioningArtifactIdentifiers: js.UndefOr[SourceProvisioningArtifactProperties] = js.native
+  var SourceProvisioningArtifactIdentifiers: js.UndefOr[SourceProvisioningArtifactProperties] = js.undefined
   
   /**
     * The identifier of the target product. By default, a new product is created.
     */
-  var TargetProductId: js.UndefOr[Id] = js.native
+  var TargetProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * A name for the target product. The default is the name of the source product.
     */
-  var TargetProductName: js.UndefOr[ProductViewName] = js.native
+  var TargetProductName: js.UndefOr[ProductViewName] = js.undefined
 }
 object CopyProductInput {
   

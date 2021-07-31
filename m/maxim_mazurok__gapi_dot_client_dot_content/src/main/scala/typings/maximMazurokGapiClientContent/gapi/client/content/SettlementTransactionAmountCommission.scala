@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettlementTransactionAmountCommission extends StObject {
   
   /**
@@ -17,10 +15,10 @@ trait SettlementTransactionAmountCommission extends StObject {
     * "`majorAppliances`" - "`luggageAndBags`" - "`media`" - "`officeSupplies`" - "`softwareAndVideoGames`" - "`vehiclePartsAndAccessories`" - "`vehicleTiresAndWheels`" - "`vehicles`" -
     * "`everythingElse`"
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** Rate of the commission in percentage. */
-  var rate: js.UndefOr[String] = js.native
+  var rate: js.UndefOr[String] = js.undefined
 }
 object SettlementTransactionAmountCommission {
   

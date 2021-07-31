@@ -3,12 +3,13 @@ package typings.grammarkdown.grammarkdownMod
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** {@docCategory Nodes} */
 @js.native
-trait Node2[TKind /* <: SyntaxKind */] extends TextRange {
+trait Node2[TKind /* <: SyntaxKind */]
+  extends StObject
+     with TextRange {
   
   def children(): IterableIterator[Node2[SyntaxKind]] = js.native
   

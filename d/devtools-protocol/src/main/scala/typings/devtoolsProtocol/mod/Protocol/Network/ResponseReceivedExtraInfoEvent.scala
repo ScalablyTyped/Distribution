@@ -2,10 +2,8 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseReceivedExtraInfoEvent extends StObject {
   
   /**
@@ -13,23 +11,23 @@ trait ResponseReceivedExtraInfoEvent extends StObject {
     * reasons for blocking. The cookies here may not be valid due to syntax errors, which
     * are represented by the invalid cookie line string instead of a proper cookie.
     */
-  var blockedCookies: js.Array[BlockedSetCookieWithReason] = js.native
+  var blockedCookies: js.Array[BlockedSetCookieWithReason]
   
   /**
     * Raw response headers as they were received over the wire.
     */
-  var headers: Headers = js.native
+  var headers: Headers
   
   /**
     * Raw response header text as it was received over the wire. The raw text may not always be
     * available, such as in the case of HTTP/2 or QUIC.
     */
-  var headersText: js.UndefOr[String] = js.native
+  var headersText: js.UndefOr[String] = js.undefined
   
   /**
     * Request identifier. Used to match this information to another responseReceived event.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
 }
 object ResponseReceivedExtraInfoEvent {
   

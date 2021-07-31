@@ -2,28 +2,26 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductCategory extends StObject {
   
-  var children: js.Array[ProductCategory] = js.native
+  var children: js.Array[ProductCategory]
   
   /**
     * Indicator whether this is a leaf or there are children under this category
     */
-  var hasChildren: Boolean = js.native
+  var hasChildren: Boolean
   
   /**
     * Individual Guid of the Category
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Category Title in the requested language
     */
-  var title: String = js.native
+  var title: String
 }
 object ProductCategory {
   

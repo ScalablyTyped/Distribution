@@ -11,8 +11,8 @@ Get the current branch from the local git repository.
 | Full name          | git-branch |
 | Keywords           | branch, git |
 | # releases         | 0 |
-| # dependents       | 109 |
-| # downloads        | 1707359 |
+| # dependents       | 118 |
+| # downloads        | 2104669 |
 | # stars            | 2 |
 
 ## Links

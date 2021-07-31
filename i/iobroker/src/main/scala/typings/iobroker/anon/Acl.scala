@@ -2,19 +2,17 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acl[T] extends StObject {
   
   var _id: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var acl: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['acl'] */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object Acl {
   
@@ -25,7 +23,7 @@ object Acl {
   }
   
   @scala.inline
-  implicit class AclMutableBuilder[Self <: Acl[_], T] (val x: Self with Acl[T]) extends AnyVal {
+  implicit class AclMutableBuilder[Self <: Acl[?], T] (val x: Self & Acl[T]) extends AnyVal {
     
     @scala.inline
     def setAcl(value: /* import warning: importer.ImportType#apply Failed type conversion: T['acl'] */ js.Any): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])

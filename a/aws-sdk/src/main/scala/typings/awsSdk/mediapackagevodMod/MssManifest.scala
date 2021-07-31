@@ -2,18 +2,16 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MssManifest extends StObject {
   
   /**
     * An optional string to include in the name of the manifest.
     */
-  var ManifestName: js.UndefOr[string] = js.native
+  var ManifestName: js.UndefOr[string] = js.undefined
   
-  var StreamSelection: js.UndefOr[typings.awsSdk.mediapackagevodMod.StreamSelection] = js.native
+  var StreamSelection: js.UndefOr[typings.awsSdk.mediapackagevodMod.StreamSelection] = js.undefined
 }
 object MssManifest {
   

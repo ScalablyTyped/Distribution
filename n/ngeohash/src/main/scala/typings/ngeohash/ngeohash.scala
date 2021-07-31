@@ -2,19 +2,17 @@ package typings.ngeohash
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngeohash {
   
   type GeographicBoundingBox = js.Tuple4[Double, Double, Double, Double]
   
-  @js.native
   trait GeographicPoint extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object GeographicPoint {
     

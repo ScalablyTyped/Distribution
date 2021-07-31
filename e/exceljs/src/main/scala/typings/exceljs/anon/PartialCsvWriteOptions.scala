@@ -2,28 +2,26 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.CsvWriteOptions> */
-@js.native
 trait PartialCsvWriteOptions extends StObject {
   
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
-  var dateUTC: js.UndefOr[Boolean] = js.native
+  var dateUTC: js.UndefOr[Boolean] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var formatterOptions: js.UndefOr[PartialFastCsvFormatterOp] = js.native
+  var formatterOptions: js.UndefOr[PartialFastCsvFormatterOp] = js.undefined
   
-  var includeEmptyRows: js.UndefOr[Boolean] = js.native
+  var includeEmptyRows: js.UndefOr[Boolean] = js.undefined
   
-  var map: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, _]] = js.native
+  var map: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, js.Any]] = js.undefined
   
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
   
-  var sheetName: js.UndefOr[String] = js.native
+  var sheetName: js.UndefOr[String] = js.undefined
 }
 object PartialCsvWriteOptions {
   
@@ -67,7 +65,7 @@ object PartialCsvWriteOptions {
     def setIncludeEmptyRowsUndefined: Self = StObject.set(x, "includeEmptyRows", js.undefined)
     
     @scala.inline
-    def setMap(value: (/* value */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    def setMap(value: (/* value */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     @scala.inline
     def setMapUndefined: Self = StObject.set(x, "map", js.undefined)

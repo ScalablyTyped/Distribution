@@ -3,38 +3,49 @@ package typings.algoliasearchHelper
 import typings.algoliasearchHelper.mod.SearchParameters.Operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algoliasearchHelperStrings {
   
   @js.native
-  sealed trait Equalssign extends Operator
+  sealed trait Equalssign
+    extends StObject
+       with Operator
   @scala.inline
   def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends Operator
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with Operator
   @scala.inline
   def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait Greaterthansign extends Operator
+  sealed trait Greaterthansign
+    extends StObject
+       with Operator
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends Operator
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with Operator
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait Lessthansign extends Operator
+  sealed trait Lessthansign
+    extends StObject
+       with Operator
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends Operator
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with Operator
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   

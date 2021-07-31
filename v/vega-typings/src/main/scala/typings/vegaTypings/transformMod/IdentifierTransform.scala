@@ -4,22 +4,22 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentifierTransform extends _Transforms {
+trait IdentifierTransform
+  extends StObject
+     with _Transforms {
   
-  var as: String | SignalRef = js.native
+  var as: String | SignalRef
   
-  var `type`: identifier = js.native
+  var `type`: identifier
 }
 object IdentifierTransform {
   
   @scala.inline
-  def apply(as: String | SignalRef, `type`: identifier): IdentifierTransform = {
+  def apply(as: String | SignalRef): IdentifierTransform = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("identifier")
     __obj.asInstanceOf[IdentifierTransform]
   }
   

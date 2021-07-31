@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningArtifactProperties extends StObject {
   
   /**
     * The description of the provisioning artifact, including how it differs from the previous provisioning artifact.
     */
-  var Description: js.UndefOr[ProvisioningArtifactDescription] = js.native
+  var Description: js.UndefOr[ProvisioningArtifactDescription] = js.undefined
   
   /**
     * If set to true, AWS Service Catalog stops validating the specified provisioning artifact even if it is invalid.
     */
-  var DisableTemplateValidation: js.UndefOr[typings.awsSdk.servicecatalogMod.DisableTemplateValidation] = js.native
+  var DisableTemplateValidation: js.UndefOr[typings.awsSdk.servicecatalogMod.DisableTemplateValidation] = js.undefined
   
   /**
     * The URL of the CloudFormation template in Amazon S3. Specify the URL in JSON format as follows:  "LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..." 
     */
-  var Info: ProvisioningArtifactInfo = js.native
+  var Info: ProvisioningArtifactInfo
   
   /**
     * The name of the provisioning artifact (for example, v1 v2beta). No spaces are allowed.
     */
-  var Name: js.UndefOr[ProvisioningArtifactName] = js.native
+  var Name: js.UndefOr[ProvisioningArtifactName] = js.undefined
   
   /**
     * The type of provisioning artifact.    CLOUD_FORMATION_TEMPLATE - AWS CloudFormation template    MARKETPLACE_AMI - AWS Marketplace AMI    MARKETPLACE_CAR - AWS Marketplace Clusters and AWS Resources  
     */
-  var Type: js.UndefOr[ProvisioningArtifactType] = js.native
+  var Type: js.UndefOr[ProvisioningArtifactType] = js.undefined
 }
 object ProvisioningArtifactProperties {
   

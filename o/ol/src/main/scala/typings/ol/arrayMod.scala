@@ -3,83 +3,66 @@ package typings.ol
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayMod {
   
-  @JSImport("ol/array", "binarySearch")
+  @JSImport("ol/array", JSImport.Namespace)
   @js.native
-  def binarySearch(haystack: js.Array[_], needle: js.Any): Double = js.native
-  @JSImport("ol/array", "binarySearch")
-  @js.native
-  def binarySearch(haystack: js.Array[_], needle: js.Any, opt_comparator: js.Function0[Unit]): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/array", "equals")
-  @js.native
-  def equals_(arr1: js.Array[_], arr2: js.Array[_]): Boolean = js.native
-  @JSImport("ol/array", "equals")
-  @js.native
-  def equals_(arr1: js.Array[_], arr2: Uint8ClampedArray): Boolean = js.native
-  @JSImport("ol/array", "equals")
-  @js.native
-  def equals_(arr1: Uint8ClampedArray, arr2: js.Array[_]): Boolean = js.native
-  @JSImport("ol/array", "equals")
-  @js.native
-  def equals_(arr1: Uint8ClampedArray, arr2: Uint8ClampedArray): Boolean = js.native
+  @scala.inline
+  def binarySearch(haystack: js.Array[js.Any], needle: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearch")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def binarySearch(haystack: js.Array[js.Any], needle: js.Any, opt_comparator: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearch")(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], opt_comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/array", "extend")
-  @js.native
-  def extend[VALUE](arr: js.Array[VALUE], data: VALUE): Unit = js.native
-  @JSImport("ol/array", "extend")
-  @js.native
-  def extend[VALUE](arr: js.Array[VALUE], data: js.Array[VALUE]): Unit = js.native
+  @scala.inline
+  def equals_(arr1: js.Array[js.Any], arr2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(arr1: js.Array[js.Any], arr2: Uint8ClampedArray): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(arr1: Uint8ClampedArray, arr2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(arr1: Uint8ClampedArray, arr2: Uint8ClampedArray): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/array", "find")
-  @js.native
+  @scala.inline
+  def extend[VALUE](arr: js.Array[VALUE], data: VALUE): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(arr.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def extend[VALUE](arr: js.Array[VALUE], data: js.Array[VALUE]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(arr.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def find[VALUE](
     arr: js.Array[VALUE],
     func: js.Function3[/* p0 */ VALUE, /* p1 */ Double, /* p2 */ js.Any, Boolean]
-  ): VALUE | Null = js.native
+  ): VALUE | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[VALUE | Null]
   
-  @JSImport("ol/array", "findIndex")
-  @js.native
-  def findIndex(arr: js.Array[_], func: js.Function0[Unit]): Double = js.native
+  @scala.inline
+  def findIndex(arr: js.Array[js.Any], func: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/array", "includes")
-  @js.native
-  def includes(arr: js.Array[_], obj: js.Any): Boolean = js.native
+  @scala.inline
+  def includes(arr: js.Array[js.Any], obj: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(arr.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/array", "isSorted")
-  @js.native
-  def isSorted(arr: js.Array[_]): Boolean = js.native
-  @JSImport("ol/array", "isSorted")
-  @js.native
-  def isSorted(arr: js.Array[_], opt_func: js.UndefOr[scala.Nothing], opt_strict: Boolean): Boolean = js.native
-  @JSImport("ol/array", "isSorted")
-  @js.native
-  def isSorted(arr: js.Array[_], opt_func: js.Function0[Unit]): Boolean = js.native
-  @JSImport("ol/array", "isSorted")
-  @js.native
-  def isSorted(arr: js.Array[_], opt_func: js.Function0[Unit], opt_strict: Boolean): Boolean = js.native
+  @scala.inline
+  def isSorted(arr: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSorted")(arr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isSorted(arr: js.Array[js.Any], opt_func: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSorted")(arr.asInstanceOf[js.Any], opt_func.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSorted(arr: js.Array[js.Any], opt_func: js.Function0[Unit], opt_strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSorted")(arr.asInstanceOf[js.Any], opt_func.asInstanceOf[js.Any], opt_strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isSorted(arr: js.Array[js.Any], opt_func: Unit, opt_strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSorted")(arr.asInstanceOf[js.Any], opt_func.asInstanceOf[js.Any], opt_strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/array", "linearFindNearest")
-  @js.native
-  def linearFindNearest(arr: js.Array[Double], target: Double, direction: Double): Double = js.native
+  @scala.inline
+  def linearFindNearest(arr: js.Array[Double], target: Double, direction: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("linearFindNearest")(arr.asInstanceOf[js.Any], target.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/array", "numberSafeCompareFunction")
-  @js.native
-  def numberSafeCompareFunction(a: js.Any, b: js.Any): Double = js.native
+  @scala.inline
+  def numberSafeCompareFunction(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("numberSafeCompareFunction")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/array", "remove")
-  @js.native
-  def remove[VALUE](arr: js.Array[VALUE], obj: VALUE): Boolean = js.native
+  @scala.inline
+  def remove[VALUE](arr: js.Array[VALUE], obj: VALUE): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(arr.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/array", "reverseSubArray")
-  @js.native
-  def reverseSubArray(arr: js.Array[_], begin: Double, end: Double): Unit = js.native
+  @scala.inline
+  def reverseSubArray(arr: js.Array[js.Any], begin: Double, end: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseSubArray")(arr.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ol/array", "stableSort")
-  @js.native
-  def stableSort(arr: js.Array[_], compareFnc: js.Function2[/* p0 */ js.Any, /* p1 */ js.Any, Double]): Unit = js.native
+  @scala.inline
+  def stableSort(arr: js.Array[js.Any], compareFnc: js.Function2[/* p0 */ js.Any, /* p1 */ js.Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stableSort")(arr.asInstanceOf[js.Any], compareFnc.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

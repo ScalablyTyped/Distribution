@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accesscontextmanagerMod {
+  
+  @JSImport("googleapis/build/src/apis/accesscontextmanager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -72,18 +75,16 @@ object accesscontextmanagerMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/accesscontextmanager", "accesscontextmanager")
-  @js.native
-  def accesscontextmanager(options: Options): Accesscontextmanager = js.native
-  @JSImport("googleapis/build/src/apis/accesscontextmanager", "accesscontextmanager")
-  @js.native
-  def accesscontextmanager(options: typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Options): typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Accesscontextmanager = js.native
-  @JSImport("googleapis/build/src/apis/accesscontextmanager", "accesscontextmanager")
-  @js.native
-  def accesscontextmanager_v1(version: v1): Accesscontextmanager = js.native
-  @JSImport("googleapis/build/src/apis/accesscontextmanager", "accesscontextmanager")
-  @js.native
-  def accesscontextmanager_v1beta(version: v1beta): typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Accesscontextmanager = js.native
+  @scala.inline
+  def accesscontextmanager(options: Options): Accesscontextmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("accesscontextmanager")(options.asInstanceOf[js.Any]).asInstanceOf[Accesscontextmanager]
+  @scala.inline
+  def accesscontextmanager(options: typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Options): typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Accesscontextmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("accesscontextmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Accesscontextmanager]
+  
+  @scala.inline
+  def accesscontextmanager_v1(version: v1): Accesscontextmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("accesscontextmanager")(version.asInstanceOf[js.Any]).asInstanceOf[Accesscontextmanager]
+  
+  @scala.inline
+  def accesscontextmanager_v1beta(version: v1beta): typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Accesscontextmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("accesscontextmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1betaMod.accesscontextmanagerV1beta.Accesscontextmanager]
   
   object auth extends Shortcut {
     
@@ -114,9 +115,12 @@ object accesscontextmanagerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/accesscontextmanager", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/accesscontextmanager", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

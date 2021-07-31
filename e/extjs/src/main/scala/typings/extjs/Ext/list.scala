@@ -4,13 +4,13 @@ import typings.extjs.Ext.data.IStore
 import typings.extjs.Ext.panel.ITable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object list {
   
-  @js.native
-  trait IListView extends ITable {
+  trait IListView
+    extends StObject
+       with ITable {
     
     /** [Method] Reconfigures the grid with a new store columns
       * @param store Ext.data.Store The new store.
@@ -18,7 +18,7 @@ object list {
       */
     var reconfigure: js.UndefOr[
         js.Function2[/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IListView {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBundlesResult extends StObject {
   
   /**
     *  A list of bundles. 
     */
-  var bundleList: js.UndefOr[BundleList] = js.native
+  var bundleList: js.UndefOr[BundleList] = js.undefined
   
   /**
     *  Pagination token. If non-null pagination token is returned in a result, then pass its value in another request to fetch more entries. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListBundlesResult {
   

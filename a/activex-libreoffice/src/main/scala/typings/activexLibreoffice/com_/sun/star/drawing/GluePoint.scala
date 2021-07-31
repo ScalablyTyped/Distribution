@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see GluePoint2
   */
-@js.native
 trait GluePoint extends StObject {
   
   /** The alignment of a `GluePoint` defines how the position of the point is affected by resizing the parent `Shape` . */
-  var Alignment: Double = js.native
+  var Alignment: Double
   
   /** This is the direction in which the connector line leaves the {@link GluePoint} . */
-  var EscapeDirection: Double = js.native
+  var EscapeDirection: Double
   
   /** This is the position of this {@link GluePoint} . */
-  var Position: Point = js.native
+  var Position: Point
   
   /** If this is `TRUE` , then the position of this {@link GluePoint} is absolute on a page and is not relative to a shape. */
-  var PositionAbsolute: Boolean = js.native
+  var PositionAbsolute: Boolean
 }
 object GluePoint {
   

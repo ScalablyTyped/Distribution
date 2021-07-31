@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -59,9 +58,9 @@ trait RenderTarget extends StObject {
     * @returns True if the copy was successful, false otherwise.
     */
   def copy(source: RenderTarget): Boolean = js.native
-  def copy(source: RenderTarget, color: js.UndefOr[scala.Nothing], depth: Boolean): Boolean = js.native
   def copy(source: RenderTarget, color: Boolean): Boolean = js.native
   def copy(source: RenderTarget, color: Boolean, depth: Boolean): Boolean = js.native
+  def copy(source: RenderTarget, color: Unit, depth: Boolean): Boolean = js.native
   
   /**
     * Depth buffer set up on the render target. Only available, if depthBuffer was set in constructor.

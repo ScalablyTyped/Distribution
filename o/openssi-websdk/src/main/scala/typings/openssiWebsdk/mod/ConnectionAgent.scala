@@ -3,21 +3,19 @@ package typings.openssiWebsdk.mod
 import typings.openssiWebsdk.anon.Did
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionAgent extends StObject {
   
-  var name: AgentName = js.native
+  var name: AgentName
   
-  var pairwise: Did = js.native
+  var pairwise: Did
   
-  var public: Did = js.native
+  var public: Did
   
-  var role: String = js.native
+  var role: String
   
-  var url: AgentURL = js.native
+  var url: AgentURL
 }
 object ConnectionAgent {
   

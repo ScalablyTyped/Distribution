@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XrangePointOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Accessibility options for a data point.
     */
-  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
     * point's graphic representation.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Individual color for the point. By default
@@ -26,7 +24,7 @@ trait XrangePointOptionsObject extends StObject {
     * In styled mode, the `color` option doesn't take effect. Instead, use
     * `colorIndex`.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Gantt) A specific color index to use for the point, so its
@@ -35,7 +33,7 @@ trait XrangePointOptionsObject extends StObject {
     * mode, the color by is set by the `fill` attribute, so the change in class
     * name won't have a visual effect by default.
     */
-  var colorIndex: js.UndefOr[Double] = js.native
+  var colorIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Connect to a point. This option can be either a string, referring
@@ -44,97 +42,97 @@ trait XrangePointOptionsObject extends StObject {
     */
   var connect: js.UndefOr[
     String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A reserved subspace to store options and
     * values for customized functionality. Here you can add additional data for
     * your own event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[_]] = js.native
+  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Individual data label for each point. The
     * options are the same as the ones for plotOptions.series.dataLabels.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptions | js.Array[DataLabelsOptions]] = js.native
+  var dataLabels: js.UndefOr[DataLabelsOptions | js.Array[DataLabelsOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A description of the point to add to the
     * screen reader information about the point.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Point specific options for the
     * draggable-points module. Overrides options on `series.dragDrop`.
     */
-  var dragDrop: js.UndefOr[SeriesLineDataDragDropOptions] = js.native
+  var dragDrop: js.UndefOr[SeriesLineDataDragDropOptions] = js.undefined
   
   /**
     * (Highcharts) The `id` of a series in the drilldown.series array to use
     * for a drilldown for this point.
     */
-  var drilldown: js.UndefOr[String] = js.native
+  var drilldown: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The individual point events.
     */
-  var events: js.UndefOr[PointEventsOptionsObject] = js.native
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An id for the point. This can be used
     * after render time to get a pointer to the point object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The rank for this point's data label in
     * case of collision. If two data labels are about to overlap, only the one
     * with the highest `labelrank` will be drawn.
     */
-  var labelrank: js.UndefOr[Double] = js.native
+  var labelrank: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Options for the point markers of line-like
     * series.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The name of the point as shown in the
     * legend, tooltip, dataLabels, etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A partial fill for each point, typically
     * used to visualize how much of a task is performed. The partial fill
     * object can be set either on series or point level.
     */
-  var partialFill: js.UndefOr[XrangePointPartialFillOptionsObject] = js.native
+  var partialFill: js.UndefOr[XrangePointPartialFillOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether the data point is selected
     * initially.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The starting X value of the range point.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The ending X value of the range point.
     */
-  var x2: js.UndefOr[Double] = js.native
+  var x2: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The Y value of the range point.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object XrangePointOptionsObject {
   
@@ -183,7 +181,7 @@ object XrangePointOptionsObject {
     def setConnectVarargs(value: (String | XrangePointConnectorsOptionsObject)*): Self = StObject.set(x, "connect", js.Array(value :_*))
     
     @scala.inline
-    def setCustom(value: Dictionary[_]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

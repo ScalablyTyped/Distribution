@@ -3,7 +3,6 @@ package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for ACLs, APIs, App Engine Apps, VMs, and other Google Cloud Platform
   * resources.
   */
-@js.native
 trait SchemaProject extends StObject {
   
   /**
     * Creation time.  Read-only.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this Project.  Label keys must be between 1
@@ -31,12 +29,12 @@ trait SchemaProject extends StObject {
     * &lt;code&gt;&quot;environment&quot; : &quot;dev&quot;&lt;/code&gt;
     * Read-write.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The Project lifecycle state.  Read-only.
     */
-  var lifecycleState: js.UndefOr[String] = js.native
+  var lifecycleState: js.UndefOr[String] = js.undefined
   
   /**
     * The optional user-assigned display name of the Project. When present it
@@ -45,7 +43,7 @@ trait SchemaProject extends StObject {
     * and exclamation point.  Example: &lt;code&gt;My Project&lt;/code&gt;
     * Read-write.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An optional reference to a parent Resource.  Supported parent types
@@ -54,7 +52,7 @@ trait SchemaProject extends StObject {
     * the `UpdateProject` method; the end user must have the
     * `resourcemanager.projects.create` permission on the parent.  Read-write.
     */
-  var parent: js.UndefOr[SchemaResourceId] = js.native
+  var parent: js.UndefOr[SchemaResourceId] = js.undefined
   
   /**
     * The unique, user-assigned ID of the Project. It must be 6 to 30 lowercase
@@ -62,13 +60,13 @@ trait SchemaProject extends StObject {
     * hyphens are prohibited.  Example: &lt;code&gt;tokyo-rain-123&lt;/code&gt;
     * Read-only after creation.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The number uniquely identifying the project.  Example:
     * &lt;code&gt;415104041262&lt;/code&gt; Read-only.
     */
-  var projectNumber: js.UndefOr[String] = js.native
+  var projectNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaProject {
   

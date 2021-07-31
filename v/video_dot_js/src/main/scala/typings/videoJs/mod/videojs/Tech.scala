@@ -6,11 +6,12 @@ import typings.std.HTMLTrackElement
 import typings.videoJs.videoJsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tech extends Component {
+trait Tech
+  extends StObject
+     with Component {
   
   /**
     * Creates a remote text track object and returns an html track element.
@@ -406,18 +407,17 @@ object Tech {
     * `var SourceObject = {src: 'http://ex.com/video.mp4', type: 'video/mp4'};`
     * `var SourceString = 'http://example.com/some-video.mp4';`
     */
-  @js.native
   trait SourceObject extends StObject {
     
     /**
       * The url to the source
       */
-    var src: String = js.native
+    var src: String
     
     /**
       * The mime type of the source
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SourceObject {
     

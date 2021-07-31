@@ -12,460 +12,326 @@ import typings.wordpressCoreData.mod.Autosave
 import typings.wordpressEditor.anon.PartialEditorSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionsMod {
   
-  @JSImport("@wordpress/editor/store/actions", "autosave")
+  @JSImport("@wordpress/editor/store/actions", JSImport.Namespace)
   @js.native
-  def autosave(): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "autosave")
-  @js.native
-  def autosave(options: Record[String, Boolean]): IterableIterator[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/editor/store/actions", "clearSelectedBlock")
-  @js.native
-  def clearSelectedBlock(): Unit = js.native
+  @scala.inline
+  def autosave(): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("autosave")().asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def autosave(options: Record[String, Boolean]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("autosave")(options.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "createUndoLevel")
-  @js.native
-  def createUndoLevel(): Unit = js.native
+  @scala.inline
+  def clearSelectedBlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSelectedBlock")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "disablePublishSidebar")
-  @js.native
-  def disablePublishSidebar(): Unit = js.native
+  @scala.inline
+  def createUndoLevel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createUndoLevel")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "editPost")
-  @js.native
-  def editPost(edits: Record[String, _]): Unit = js.native
+  @scala.inline
+  def disablePublishSidebar(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disablePublishSidebar")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "enablePublishSidebar")
-  @js.native
-  def enablePublishSidebar(): Unit = js.native
+  @scala.inline
+  def editPost(edits: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("editPost")(edits.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "enterFormattedText")
-  @js.native
-  def enterFormattedText(): Unit = js.native
+  @scala.inline
+  def enablePublishSidebar(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePublishSidebar")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "exitFormattedText")
-  @js.native
-  def exitFormattedText(): Unit = js.native
+  @scala.inline
+  def enterFormattedText(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enterFormattedText")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "hideInsertionPoint")
-  @js.native
-  def hideInsertionPoint(): Unit = js.native
+  @scala.inline
+  def exitFormattedText(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exitFormattedText")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
-  def insertBlock(block: BlockInstance[StringDictionary[_]]): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
+  @scala.inline
+  def hideInsertionPoint(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideInsertionPoint")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
-    index: js.UndefOr[scala.Nothing],
-    rootClientId: js.UndefOr[scala.Nothing],
-    updateSelection: Boolean
-  ): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
-  def insertBlock(block: BlockInstance[StringDictionary[_]], index: js.UndefOr[scala.Nothing], rootClientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
-  def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
-    index: js.UndefOr[scala.Nothing],
-    rootClientId: String,
-    updateSelection: Boolean
-  ): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
-  def insertBlock(block: BlockInstance[StringDictionary[_]], index: Double): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
-  def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
-    index: Double,
-    rootClientId: js.UndefOr[scala.Nothing],
-    updateSelection: Boolean
-  ): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
-  def insertBlock(block: BlockInstance[StringDictionary[_]], index: Double, rootClientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlock")
-  @js.native
-  def insertBlock(
-    block: BlockInstance[StringDictionary[_]],
+    block: BlockInstance[StringDictionary[js.Any]],
     index: Double,
     rootClientId: String,
     updateSelection: Boolean
-  ): Unit = js.native
-  
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
-  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
-  def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: js.UndefOr[scala.Nothing],
-    rootClientId: js.UndefOr[scala.Nothing],
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertBlock(
+    block: BlockInstance[StringDictionary[js.Any]],
+    index: Double,
+    rootClientId: Unit,
     updateSelection: Boolean
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
-  def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: js.UndefOr[scala.Nothing],
-    rootClientId: String
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
-  def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: js.UndefOr[scala.Nothing],
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Unit, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertBlock(
+    block: BlockInstance[StringDictionary[js.Any]],
+    index: Unit,
     rootClientId: String,
     updateSelection: Boolean
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
-  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]], index: Double): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
-  def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
-    index: Double,
-    rootClientId: js.UndefOr[scala.Nothing],
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertBlock(
+    block: BlockInstance[StringDictionary[js.Any]],
+    index: Unit,
+    rootClientId: Unit,
     updateSelection: Boolean
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
-  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]], index: Double, rootClientId: String): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertBlocks")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double, rootClientId: String): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
   def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
     index: Double,
     rootClientId: String,
     updateSelection: Boolean
-  ): IterableIterator[Unit] = js.native
+  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def insertBlocks(
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    index: Double,
+    rootClientId: Unit,
+    updateSelection: Boolean
+  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Unit, rootClientId: String): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def insertBlocks(
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    index: Unit,
+    rootClientId: String,
+    updateSelection: Boolean
+  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def insertBlocks(
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    index: Unit,
+    rootClientId: Unit,
+    updateSelection: Boolean
+  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: String, index: Double): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(attributes: Record[String, _]): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(attributes: Record[String, _], rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(attributes: Record[String, _], rootClientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "insertDefaultBlock")
-  @js.native
-  def insertDefaultBlock(attributes: Record[String, _], rootClientId: String, index: Double): Unit = js.native
+  @scala.inline
+  def insertDefaultBlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")().asInstanceOf[Unit]
+  @scala.inline
+  def insertDefaultBlock(attributes: Unit, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertDefaultBlock(attributes: Unit, rootClientId: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertDefaultBlock(attributes: Unit, rootClientId: Unit, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertDefaultBlock(attributes: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: Unit, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "lockPostSaving")
-  @js.native
-  def lockPostSaving(lockName: String): Unit = js.native
+  @scala.inline
+  def lockPostSaving(lockName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockPostSaving")(lockName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "mergeBlocks")
-  @js.native
-  def mergeBlocks(firstBlockClientId: String, secondBlockClientId: String): Unit = js.native
+  @scala.inline
+  def mergeBlocks(firstBlockClientId: String, secondBlockClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeBlocks")(firstBlockClientId.asInstanceOf[js.Any], secondBlockClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: String,
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: String,
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(
-    clientId: js.UndefOr[scala.Nothing],
-    fromRootClientId: String,
-    toRootClientId: String,
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(
-    clientId: String,
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(
-    clientId: String,
-    fromRootClientId: js.UndefOr[scala.Nothing],
-    toRootClientId: String,
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(
-    clientId: String,
-    fromRootClientId: String,
-    toRootClientId: js.UndefOr[scala.Nothing],
-    index: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlockToPosition")
-  @js.native
-  def moveBlockToPosition(clientId: String, fromRootClientId: String, toRootClientId: String, index: Double): IterableIterator[Unit] = js.native
+  @scala.inline
+  def moveBlockToPosition(clientId: String, fromRootClientId: String, toRootClientId: String, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def moveBlockToPosition(clientId: String, fromRootClientId: String, toRootClientId: Unit, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def moveBlockToPosition(clientId: String, fromRootClientId: Unit, toRootClientId: String, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def moveBlockToPosition(clientId: String, fromRootClientId: Unit, toRootClientId: Unit, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: String, toRootClientId: String, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: String, toRootClientId: Unit, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: Unit, toRootClientId: String, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def moveBlockToPosition(clientId: Unit, fromRootClientId: Unit, toRootClientId: Unit, index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlockToPosition")(clientId.asInstanceOf[js.Any], fromRootClientId.asInstanceOf[js.Any], toRootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "moveBlocksDown")
-  @js.native
-  def moveBlocksDown(clientIds: String, rootClientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlocksDown")
-  @js.native
-  def moveBlocksDown(clientIds: js.Array[String], rootClientId: String): Unit = js.native
+  @scala.inline
+  def moveBlocksDown(clientIds: String, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlocksDown")(clientIds.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def moveBlocksDown(clientIds: js.Array[String], rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlocksDown")(clientIds.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "moveBlocksUp")
-  @js.native
-  def moveBlocksUp(clientIds: String, rootClientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "moveBlocksUp")
-  @js.native
-  def moveBlocksUp(clientIds: js.Array[String], rootClientId: String): Unit = js.native
+  @scala.inline
+  def moveBlocksUp(clientIds: String, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlocksUp")(clientIds.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def moveBlocksUp(clientIds: js.Array[String], rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBlocksUp")(clientIds.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "multiSelect")
-  @js.native
-  def multiSelect(start: String, end: String): Unit = js.native
+  @scala.inline
+  def multiSelect(start: String, end: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("multiSelect")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "receiveBlocks")
-  @js.native
-  def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
+  @scala.inline
+  def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("receiveBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "redo")
-  @js.native
-  def redo(): Unit = js.native
+  @scala.inline
+  def redo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("redo")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "refreshPost")
-  @js.native
-  def refreshPost(): IterableIterator[Unit] = js.native
+  @scala.inline
+  def refreshPost(): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshPost")().asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "removeBlock")
-  @js.native
-  def removeBlock(clientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "removeBlock")
-  @js.native
-  def removeBlock(clientId: String, selectPrevious: Boolean): Unit = js.native
+  @scala.inline
+  def removeBlock(clientId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def removeBlock(clientId: String, selectPrevious: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlock")(clientId.asInstanceOf[js.Any], selectPrevious.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "removeBlocks")
-  @js.native
-  def removeBlocks(clientIds: String): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "removeBlocks")
-  @js.native
-  def removeBlocks(clientIds: String, selectPrevious: Boolean): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "removeBlocks")
-  @js.native
-  def removeBlocks(clientIds: js.Array[String]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "removeBlocks")
-  @js.native
-  def removeBlocks(clientIds: js.Array[String], selectPrevious: Boolean): IterableIterator[Unit] = js.native
+  @scala.inline
+  def removeBlocks(clientIds: String): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlocks")(clientIds.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def removeBlocks(clientIds: String, selectPrevious: Boolean): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlocks")(clientIds.asInstanceOf[js.Any], selectPrevious.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def removeBlocks(clientIds: js.Array[String]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlocks")(clientIds.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def removeBlocks(clientIds: js.Array[String], selectPrevious: Boolean): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlocks")(clientIds.asInstanceOf[js.Any], selectPrevious.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "replaceBlock")
-  @js.native
-  def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlock")
-  @js.native
-  def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[_]]): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlock")
-  @js.native
-  def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlock")
-  @js.native
-  def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[_]]): Unit = js.native
+  @scala.inline
+  def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[js.Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[js.Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
-  def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
-  def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[_]]], indexToSelect: Double): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
-  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[_]]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
-  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[_]], indexToSelect: Double): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
-  def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
+  @scala.inline
+  def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def replaceBlocks(
+    clientIds: String,
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    indexToSelect: Double
+  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]], indexToSelect: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
   def replaceBlocks(
     clientIds: js.Array[String],
-    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
     indexToSelect: Double
-  ): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
-  def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[_]]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "replaceBlocks")
-  @js.native
-  def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[_]], indexToSelect: Double): IterableIterator[Unit] = js.native
+  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def replaceBlocks(
+    clientIds: js.Array[String],
+    blocks: BlockInstance[StringDictionary[js.Any]],
+    indexToSelect: Double
+  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "resetAutosave")
-  @js.native
-  def resetAutosave(newAutosave: Autosave): IterableIterator[Unit] = js.native
+  @scala.inline
+  def resetAutosave(newAutosave: Autosave): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAutosave")(newAutosave.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "resetBlocks")
-  @js.native
-  def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): Unit = js.native
+  @scala.inline
+  def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "resetEditorBlocks")
-  @js.native
-  def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "resetEditorBlocks")
-  @js.native
-  def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]], options: Record[String, _]): IterableIterator[Unit] = js.native
+  @scala.inline
+  def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetEditorBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], options: Record[String, js.Any]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("resetEditorBlocks")(blocks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "resetPost")
-  @js.native
-  def resetPost(post: Record[String, _]): Unit = js.native
+  @scala.inline
+  def resetPost(post: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPost")(post.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "savePost")
-  @js.native
-  def savePost(): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "savePost")
-  @js.native
-  def savePost(options: Record[String, _]): IterableIterator[Unit] = js.native
+  @scala.inline
+  def savePost(): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("savePost")().asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def savePost(options: Record[String, js.Any]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("savePost")(options.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "selectBlock")
-  @js.native
-  def selectBlock(clientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "selectBlock")
-  @js.native
-  def selectBlock(clientId: String, initialPosition: Double): Unit = js.native
+  @scala.inline
+  def selectBlock(clientId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def selectBlock(clientId: String, initialPosition: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectBlock")(clientId.asInstanceOf[js.Any], initialPosition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "setTemplateValidity")
-  @js.native
-  def setTemplateValidity(isValid: Boolean): Unit = js.native
+  @scala.inline
+  def setTemplateValidity(isValid: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateValidity")(isValid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "setupEditor")
-  @js.native
-  def setupEditor(post: Record[String, _]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "setupEditor")
-  @js.native
-  def setupEditor(post: Record[String, _], edits: js.UndefOr[scala.Nothing], template: TemplateArray): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "setupEditor")
-  @js.native
-  def setupEditor(post: Record[String, _], edits: Record[String, _]): IterableIterator[Unit] = js.native
-  @JSImport("@wordpress/editor/store/actions", "setupEditor")
-  @js.native
-  def setupEditor(post: Record[String, _], edits: Record[String, _], template: TemplateArray): IterableIterator[Unit] = js.native
+  @scala.inline
+  def setupEditor(post: Record[String, js.Any]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setupEditor")(post.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def setupEditor(post: Record[String, js.Any], edits: Unit, template: TemplateArray): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setupEditor")(post.asInstanceOf[js.Any], edits.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def setupEditor(post: Record[String, js.Any], edits: Record[String, js.Any]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setupEditor")(post.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  @scala.inline
+  def setupEditor(post: Record[String, js.Any], edits: Record[String, js.Any], template: TemplateArray): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setupEditor")(post.asInstanceOf[js.Any], edits.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "setupEditorState")
-  @js.native
-  def setupEditorState(post: Record[String, _]): Unit = js.native
+  @scala.inline
+  def setupEditorState(post: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupEditorState")(post.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "showInsertionPoint")
-  @js.native
-  def showInsertionPoint(): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "showInsertionPoint")
-  @js.native
-  def showInsertionPoint(rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "showInsertionPoint")
-  @js.native
-  def showInsertionPoint(rootClientId: String): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "showInsertionPoint")
-  @js.native
-  def showInsertionPoint(rootClientId: String, index: Double): Unit = js.native
+  @scala.inline
+  def showInsertionPoint(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showInsertionPoint")().asInstanceOf[Unit]
+  @scala.inline
+  def showInsertionPoint(rootClientId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showInsertionPoint")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def showInsertionPoint(rootClientId: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showInsertionPoint")(rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def showInsertionPoint(rootClientId: Unit, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showInsertionPoint")(rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "startMultiSelect")
-  @js.native
-  def startMultiSelect(): Unit = js.native
+  @scala.inline
+  def startMultiSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startMultiSelect")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "startTyping")
-  @js.native
-  def startTyping(): Unit = js.native
+  @scala.inline
+  def startTyping(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startTyping")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "stopMultiSelect")
-  @js.native
-  def stopMultiSelect(): Unit = js.native
+  @scala.inline
+  def stopMultiSelect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopMultiSelect")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "stopTyping")
-  @js.native
-  def stopTyping(): Unit = js.native
+  @scala.inline
+  def stopTyping(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopTyping")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "synchronizeTemplate")
-  @js.native
-  def synchronizeTemplate(): Unit = js.native
+  @scala.inline
+  def synchronizeTemplate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeTemplate")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "toggleBlockMode")
-  @js.native
-  def toggleBlockMode(clientId: String): Unit = js.native
+  @scala.inline
+  def toggleBlockMode(clientId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleBlockMode")(clientId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "toggleSelection")
-  @js.native
-  def toggleSelection(): Unit = js.native
-  @JSImport("@wordpress/editor/store/actions", "toggleSelection")
-  @js.native
-  def toggleSelection(isSelectionEnabled: Boolean): Unit = js.native
+  @scala.inline
+  def toggleSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSelection")().asInstanceOf[Unit]
+  @scala.inline
+  def toggleSelection(isSelectionEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSelection")(isSelectionEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "trashPost")
-  @js.native
-  def trashPost(): IterableIterator[Unit] = js.native
+  @scala.inline
+  def trashPost(): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("trashPost")().asInstanceOf[IterableIterator[Unit]]
   
-  @JSImport("@wordpress/editor/store/actions", "undo")
-  @js.native
-  def undo(): Unit = js.native
+  @scala.inline
+  def undo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("undo")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "unlockPostSaving")
-  @js.native
-  def unlockPostSaving(lockName: String): Unit = js.native
+  @scala.inline
+  def unlockPostSaving(lockName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlockPostSaving")(lockName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "updateBlock")
-  @js.native
-  def updateBlock(clientId: String, updates: PartialBlockInstancekstri): Unit = js.native
+  @scala.inline
+  def updateBlock(clientId: String, updates: PartialBlockInstancekstri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlock")(clientId.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "updateBlockAttributes")
-  @js.native
-  def updateBlockAttributes(clientId: String, attributes: Record[String, _]): Unit = js.native
+  @scala.inline
+  def updateBlockAttributes(clientId: String, attributes: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlockAttributes")(clientId.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "updateBlockListSettings")
-  @js.native
-  def updateBlockListSettings(clientId: String, settings: EditorBlockListSettings): Unit = js.native
+  @scala.inline
+  def updateBlockListSettings(clientId: String, settings: EditorBlockListSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlockListSettings")(clientId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "updateEditorSettings")
-  @js.native
-  def updateEditorSettings(settings: PartialEditorSettings): Unit = js.native
+  @scala.inline
+  def updateEditorSettings(settings: PartialEditorSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateEditorSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "updatePost")
-  @js.native
-  def updatePost(edits: Record[String, _]): Unit = js.native
+  @scala.inline
+  def updatePost(edits: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updatePost")(edits.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/editor/store/actions", "updatePostLock")
-  @js.native
-  def updatePostLock(lock: IsLocked): Unit = js.native
+  @scala.inline
+  def updatePostLock(lock: IsLocked): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updatePostLock")(lock.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

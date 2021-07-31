@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheSecurityGroupMessage extends StObject {
   
   /**
     * A list of cache security groups. Each element in the list contains detailed information about one group.
     */
-  var CacheSecurityGroups: js.UndefOr[typings.awsSdk.elasticacheMod.CacheSecurityGroups] = js.native
+  var CacheSecurityGroups: js.UndefOr[typings.awsSdk.elasticacheMod.CacheSecurityGroups] = js.undefined
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object CacheSecurityGroupMessage {
   

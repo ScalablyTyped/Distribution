@@ -3,7 +3,6 @@ package typings.sharepoint.global.Microsoft.SharePoint.Client.Search
 import typings.sharepoint.SP.ClientContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Portability {
@@ -11,14 +10,16 @@ object Portability {
   @JSGlobal("Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortability")
   @js.native
   class SearchConfigurationPortability protected ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortability {
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortability {
     def this(context: ClientContext) = this()
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames")
   @js.native
   class SearchConfigurationPortabilityPropertyNames ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames
   object SearchConfigurationPortabilityPropertyNames {
     
     @JSGlobal("Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames")

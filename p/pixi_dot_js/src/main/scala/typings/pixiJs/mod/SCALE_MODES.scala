@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SCALE_MODES extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.SCALE_MODES with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.SCALE_MODES & Double] = js.native
   
-  /* 0 */ val LINEAR: typings.pixiJs.PIXI.SCALE_MODES.LINEAR with Double = js.native
+  /* 0 */ val LINEAR: typings.pixiJs.PIXI.SCALE_MODES.LINEAR & Double = js.native
   
-  /* 1 */ val NEAREST: typings.pixiJs.PIXI.SCALE_MODES.NEAREST with Double = js.native
+  /* 1 */ val NEAREST: typings.pixiJs.PIXI.SCALE_MODES.NEAREST & Double = js.native
 }

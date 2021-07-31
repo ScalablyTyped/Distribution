@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.ApplicationModel.Resources
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides simplified access to app resources such as app UI strings. */
-@js.native
 trait ResourceLoader extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait ResourceLoader extends StObject {
     * @param resource The resource identifier of the resource to be resolved.
     * @return The most appropriate string value of the specified resource for the default ResourceContext .
     */
-  def getString(resource: String): String = js.native
+  def getString(resource: String): String
   
   /**
     * Returns the most appropriate string value of a resource, specified by a Uniform Resource Identifier (URI) resource identifier, for the default ResourceContext of the currently running app.
     * @param uri A URI that represents the resource to be retrieved.
     * @return The most appropriate string value of the specified resource for the default ResourceContext .
     */
-  def getStringForUri(uri: Uri): String = js.native
+  def getStringForUri(uri: Uri): String
 }
 object ResourceLoader {
   

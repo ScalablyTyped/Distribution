@@ -2,19 +2,17 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxDesignerDialogModel extends StObject {
   
-  def getUrl(): String = js.native
+  def getUrl(): String
   
-  def onShow(tab: ASPxDesignerNavigateTab): Unit = js.native
+  def onShow(tab: ASPxDesignerNavigateTab): Unit
   
-  var popupButtons: js.Array[_] = js.native
+  var popupButtons: js.Array[js.Any]
   
-  def setUrl(url: String): Unit = js.native
+  def setUrl(url: String): Unit
 }
 object ASPxDesignerDialogModel {
   
@@ -22,7 +20,7 @@ object ASPxDesignerDialogModel {
   def apply(
     getUrl: () => String,
     onShow: ASPxDesignerNavigateTab => Unit,
-    popupButtons: js.Array[_],
+    popupButtons: js.Array[js.Any],
     setUrl: String => Unit
   ): ASPxDesignerDialogModel = {
     val __obj = js.Dynamic.literal(getUrl = js.Any.fromFunction0(getUrl), onShow = js.Any.fromFunction1(onShow), popupButtons = popupButtons.asInstanceOf[js.Any], setUrl = js.Any.fromFunction1(setUrl))
@@ -39,7 +37,7 @@ object ASPxDesignerDialogModel {
     def setOnShow(value: ASPxDesignerNavigateTab => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPopupButtons(value: js.Array[_]): Self = StObject.set(x, "popupButtons", value.asInstanceOf[js.Any])
+    def setPopupButtons(value: js.Array[js.Any]): Self = StObject.set(x, "popupButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPopupButtonsVarargs(value: js.Any*): Self = StObject.set(x, "popupButtons", js.Array(value :_*))

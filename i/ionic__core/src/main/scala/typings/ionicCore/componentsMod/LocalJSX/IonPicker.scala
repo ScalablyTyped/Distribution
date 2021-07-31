@@ -10,86 +10,84 @@ import typings.ionicCore.pickerInterfaceMod.PickerColumn
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonPicker extends StObject {
   
   /**
     * If `true`, the picker will animate.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the picker will be dismissed when the backdrop is clicked.
     */
-  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of buttons to be displayed at the top of the picker.
     */
-  var buttons: js.UndefOr[js.Array[PickerButton]] = js.native
+  var buttons: js.UndefOr[js.Array[PickerButton]] = js.undefined
   
   /**
     * Array of columns to be displayed in the picker.
     */
-  var columns: js.UndefOr[js.Array[PickerColumn]] = js.native
+  var columns: js.UndefOr[js.Array[PickerColumn]] = js.undefined
   
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Number of milliseconds to wait before dismissing the picker.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Animation to use when the picker is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animation to use when the picker is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted after the picker has dismissed.
     */
-  var onIonPickerDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonPickerDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted after the picker has presented.
     */
-  var onIonPickerDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonPickerDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted before the picker has dismissed.
     */
-  var onIonPickerWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonPickerWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted before the picker has presented.
     */
-  var onIonPickerWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonPickerWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * If `true`, a backdrop will be displayed behind the picker.
     */
-  var showBackdrop: js.UndefOr[Boolean] = js.native
+  var showBackdrop: js.UndefOr[Boolean] = js.undefined
 }
 object IonPicker {
   
@@ -172,7 +170,7 @@ object IonPicker {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnIonPickerDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonPickerDidDismiss", js.Any.fromFunction1(value))
+    def setOnIonPickerDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPickerDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonPickerDidDismissUndefined: Self = StObject.set(x, "onIonPickerDidDismiss", js.undefined)
@@ -184,7 +182,7 @@ object IonPicker {
     def setOnIonPickerDidPresentUndefined: Self = StObject.set(x, "onIonPickerDidPresent", js.undefined)
     
     @scala.inline
-    def setOnIonPickerWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonPickerWillDismiss", js.Any.fromFunction1(value))
+    def setOnIonPickerWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPickerWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonPickerWillDismissUndefined: Self = StObject.set(x, "onIonPickerWillDismiss", js.undefined)

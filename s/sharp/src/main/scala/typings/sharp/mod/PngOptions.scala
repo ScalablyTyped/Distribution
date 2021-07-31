@@ -2,38 +2,36 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PngOptions extends StObject {
   
   /** use adaptive row filtering (optional, default false) */
-  var adaptiveFiltering: js.UndefOr[Boolean] = js.native
+  var adaptiveFiltering: js.UndefOr[Boolean] = js.undefined
   
   /** Alternative Spelling of "colours". Maximum number of palette entries, requires libimagequant (optional, default 256) */
-  var colors: js.UndefOr[Double] = js.native
+  var colors: js.UndefOr[Double] = js.undefined
   
   /** Maximum number of palette entries, requires libimagequant (optional, default 256) */
-  var colours: js.UndefOr[Double] = js.native
+  var colours: js.UndefOr[Double] = js.undefined
   
   /** zlib compression level, 0-9 (optional, default 9) */
-  var compressionLevel: js.UndefOr[Double] = js.native
+  var compressionLevel: js.UndefOr[Double] = js.undefined
   
   /**  Level of Floyd-Steinberg error diffusion, requires libimagequant (optional, default 1.0) */
-  var dither: js.UndefOr[Double] = js.native
+  var dither: js.UndefOr[Double] = js.undefined
   
   /** Force PNG output, otherwise attempt to use input format (optional, default  true) */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /** Quantise to a palette-based image with alpha transparency support, requires libimagequant (optional, default false) */
-  var palette: js.UndefOr[Boolean] = js.native
+  var palette: js.UndefOr[Boolean] = js.undefined
   
   /** Use progressive (interlace) scan (optional, default false) */
-  var progressive: js.UndefOr[Boolean] = js.native
+  var progressive: js.UndefOr[Boolean] = js.undefined
   
   /** use the lowest number of colours needed to achieve given quality, requires libimagequant (optional, default `100`) */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
 }
 object PngOptions {
   

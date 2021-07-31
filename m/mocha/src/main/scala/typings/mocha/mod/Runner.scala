@@ -4,7 +4,6 @@ import typings.mocha.Mocha.RunnerConstants
 import typings.mocha.Mocha.Suite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runner "pending" event
@@ -40,10 +39,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mocha", "Runner")
 @js.native
 class Runner protected ()
-  extends typings.mocha.Mocha.Runner {
+  extends StObject
+     with typings.mocha.Mocha.Runner {
   def this(suite: Suite, delay: Boolean) = this()
 }
 object Runner {
+  
+  @JSImport("mocha", "Runner")
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
   @JSImport("mocha", "Runner.constants")
@@ -54,7 +58,6 @@ object Runner {
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */
   /* static member */
-  @JSImport("mocha", "Runner.immediately")
-  @js.native
-  def immediately(callback: js.Function): Unit = js.native
+  @scala.inline
+  def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -6,13 +6,14 @@ import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.model.ListBinding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object message {
   
   @js.native
-  trait ControlMessageProcessor extends MessageProcessor {
+  trait ControlMessageProcessor
+    extends StObject
+       with MessageProcessor {
     
     /**
       * Check Messages and update controls with messages
@@ -21,10 +22,14 @@ object message {
   }
   
   @js.native
-  trait Message extends Object
+  trait Message
+    extends StObject
+       with Object
   
   @js.native
-  trait MessageManager extends EventProvider {
+  trait MessageManager
+    extends StObject
+       with EventProvider {
     
     def addMessages(vMessages: js.Array[Message]): Unit = js.native
     /**
@@ -81,7 +86,9 @@ object message {
   }
   
   @js.native
-  trait MessageParser extends Object {
+  trait MessageParser
+    extends StObject
+       with Object {
     
     /**
       * Returns the registered processor on which the events for message handling can be fired
@@ -93,56 +100,21 @@ object message {
       * Abstract parse method must be implemented in the inheriting class.
       */
     def parse(): Unit = js.native
-    def parse(
-      oResponse: js.UndefOr[scala.Nothing],
-      oRequest: js.UndefOr[scala.Nothing],
-      mGetEntities: js.UndefOr[scala.Nothing],
-      mChangeEntities: js.Any
-    ): Unit = js.native
-    def parse(oResponse: js.UndefOr[scala.Nothing], oRequest: js.UndefOr[scala.Nothing], mGetEntities: js.Any): Unit = js.native
-    def parse(
-      oResponse: js.UndefOr[scala.Nothing],
-      oRequest: js.UndefOr[scala.Nothing],
-      mGetEntities: js.Any,
-      mChangeEntities: js.Any
-    ): Unit = js.native
-    def parse(oResponse: js.UndefOr[scala.Nothing], oRequest: js.Any): Unit = js.native
-    def parse(
-      oResponse: js.UndefOr[scala.Nothing],
-      oRequest: js.Any,
-      mGetEntities: js.UndefOr[scala.Nothing],
-      mChangeEntities: js.Any
-    ): Unit = js.native
-    def parse(oResponse: js.UndefOr[scala.Nothing], oRequest: js.Any, mGetEntities: js.Any): Unit = js.native
-    def parse(
-      oResponse: js.UndefOr[scala.Nothing],
-      oRequest: js.Any,
-      mGetEntities: js.Any,
-      mChangeEntities: js.Any
-    ): Unit = js.native
     def parse(oResponse: js.Any): Unit = js.native
-    def parse(
-      oResponse: js.Any,
-      oRequest: js.UndefOr[scala.Nothing],
-      mGetEntities: js.UndefOr[scala.Nothing],
-      mChangeEntities: js.Any
-    ): Unit = js.native
-    def parse(oResponse: js.Any, oRequest: js.UndefOr[scala.Nothing], mGetEntities: js.Any): Unit = js.native
-    def parse(
-      oResponse: js.Any,
-      oRequest: js.UndefOr[scala.Nothing],
-      mGetEntities: js.Any,
-      mChangeEntities: js.Any
-    ): Unit = js.native
     def parse(oResponse: js.Any, oRequest: js.Any): Unit = js.native
-    def parse(
-      oResponse: js.Any,
-      oRequest: js.Any,
-      mGetEntities: js.UndefOr[scala.Nothing],
-      mChangeEntities: js.Any
-    ): Unit = js.native
     def parse(oResponse: js.Any, oRequest: js.Any, mGetEntities: js.Any): Unit = js.native
     def parse(oResponse: js.Any, oRequest: js.Any, mGetEntities: js.Any, mChangeEntities: js.Any): Unit = js.native
+    def parse(oResponse: js.Any, oRequest: js.Any, mGetEntities: Unit, mChangeEntities: js.Any): Unit = js.native
+    def parse(oResponse: js.Any, oRequest: Unit, mGetEntities: js.Any): Unit = js.native
+    def parse(oResponse: js.Any, oRequest: Unit, mGetEntities: js.Any, mChangeEntities: js.Any): Unit = js.native
+    def parse(oResponse: js.Any, oRequest: Unit, mGetEntities: Unit, mChangeEntities: js.Any): Unit = js.native
+    def parse(oResponse: Unit, oRequest: js.Any): Unit = js.native
+    def parse(oResponse: Unit, oRequest: js.Any, mGetEntities: js.Any): Unit = js.native
+    def parse(oResponse: Unit, oRequest: js.Any, mGetEntities: js.Any, mChangeEntities: js.Any): Unit = js.native
+    def parse(oResponse: Unit, oRequest: js.Any, mGetEntities: Unit, mChangeEntities: js.Any): Unit = js.native
+    def parse(oResponse: Unit, oRequest: Unit, mGetEntities: js.Any): Unit = js.native
+    def parse(oResponse: Unit, oRequest: Unit, mGetEntities: js.Any, mChangeEntities: js.Any): Unit = js.native
+    def parse(oResponse: Unit, oRequest: Unit, mGetEntities: Unit, mChangeEntities: js.Any): Unit = js.native
     
     /**
       * This method is used by the model to register itself as MessageProcessor for this parser
@@ -153,7 +125,9 @@ object message {
   }
   
   @js.native
-  trait MessageProcessor extends EventProvider {
+  trait MessageProcessor
+    extends StObject
+       with EventProvider {
     
     /**
       * Attach event-handler <code>fnFunction</code> to the 'messageChange' event of this

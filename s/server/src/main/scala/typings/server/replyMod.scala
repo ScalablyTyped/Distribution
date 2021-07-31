@@ -3,7 +3,6 @@ package typings.server
 import typings.express.mod.CookieOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replyMod {
@@ -44,6 +43,10 @@ object replyMod {
   @js.native
   val status: statusType = js.native
   
+  @JSImport("server/reply", "type")
+  @js.native
+  val `type`: typeType = js.native
+  
   @js.native
   trait Redirect_ extends StObject {
     
@@ -51,56 +54,109 @@ object replyMod {
     def apply(status: Double, path: String): Reply = js.native
   }
   
-  @js.native
   trait Reply extends StObject {
     
-    def cookie(name: String, value: String): Reply = js.native
-    def cookie(name: String, value: String, opts: CookieOptions): Reply = js.native
+    def cookie(name: String, value: String): Reply
+    def cookie(name: String, value: String, opts: CookieOptions): Reply
     @JSName("cookie")
-    var cookie_Original: cookieType = js.native
+    var cookie_Original: cookieType
     
-    def download(path: String): js.Any = js.native
-    def download(path: String, filename: String): js.Any = js.native
+    def download(path: String): js.Any
+    def download(path: String, filename: String): js.Any
     @JSName("download")
-    var download_Original: downloadType = js.native
+    var download_Original: downloadType
     
-    def header(field: String): Reply = js.native
-    def header(field: String, value: String): Reply = js.native
+    def header(field: String): Reply
+    def header(field: String, value: String): Reply
     @JSName("header")
-    var header_Original: headerType = js.native
+    var header_Original: headerType
     
-    def json(): js.Any = js.native
-    def json(data: js.Any): js.Any = js.native
+    def json(): js.Any
+    def json(data: js.Any): js.Any
     @JSName("json")
-    var json_Original: jsonpType = js.native
+    var json_Original: jsonpType
     
-    def jsonp(): js.Any = js.native
-    def jsonp(data: js.Any): js.Any = js.native
+    def jsonp(): js.Any
+    def jsonp(data: js.Any): js.Any
     @JSName("jsonp")
-    var jsonp_Original: jsonpType = js.native
+    var jsonp_Original: jsonpType
     
-    def redirect(path: String): Reply = js.native
-    def redirect(status: Double, path: String): Reply = js.native
+    def redirect(path: String): Reply
+    def redirect(status: Double, path: String): Reply
     @JSName("redirect")
-    var redirect_Original: Redirect_ = js.native
+    var redirect_Original: Redirect_
     
-    def render(view: String): js.Any = js.native
-    def render(view: String, locals: js.Object): js.Any = js.native
+    def render(view: String): js.Any
+    def render(view: String, locals: js.Object): js.Any
     @JSName("render")
-    var render_Original: renderType = js.native
+    var render_Original: renderType
     
-    def send(): js.Any = js.native
-    def send(body: js.Any): js.Any = js.native
+    def send(): js.Any
+    def send(body: js.Any): js.Any
     @JSName("send")
-    var send_Original: sendType = js.native
+    var send_Original: sendType
     
-    def status(code: Double): Reply = js.native
+    def status(code: Double): Reply
     @JSName("status")
-    var status_Original: statusType = js.native
+    var status_Original: statusType
     
-    def `type`(`type`: String): Reply = js.native
+    def `type`(`type`: String): Reply
     @JSName("type")
-    var type_Original: typeType = js.native
+    var type_Original: typeType
+  }
+  object Reply {
+    
+    @scala.inline
+    def apply(
+      cookie: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply,
+      download: (/* path */ String, /* filename */ js.UndefOr[String]) => js.Any,
+      header: (/* field */ String, /* value */ js.UndefOr[String]) => Reply,
+      json: /* data */ js.UndefOr[js.Any] => js.Any,
+      jsonp: /* data */ js.UndefOr[js.Any] => js.Any,
+      redirect: Redirect_,
+      render: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => js.Any,
+      send: /* body */ js.UndefOr[js.Any] => js.Any,
+      status: /* code */ Double => Reply,
+      `type`: /* type */ String => Reply
+    ): Reply = {
+      val __obj = js.Dynamic.literal(cookie = js.Any.fromFunction3(cookie), download = js.Any.fromFunction2(download), header = js.Any.fromFunction2(header), json = js.Any.fromFunction1(json), jsonp = js.Any.fromFunction1(jsonp), redirect = redirect.asInstanceOf[js.Any], render = js.Any.fromFunction2(render), send = js.Any.fromFunction1(send), status = js.Any.fromFunction1(status))
+      __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
+      __obj.asInstanceOf[Reply]
+    }
+    
+    @scala.inline
+    implicit class ReplyMutableBuilder[Self <: Reply] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCookie(value: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply): Self = StObject.set(x, "cookie", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setDownload(value: (/* path */ String, /* filename */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setHeader(value: (/* field */ String, /* value */ js.UndefOr[String]) => Reply): Self = StObject.set(x, "header", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setJson(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setJsonp(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRedirect(value: Redirect_): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRender(value: (/* view */ String, /* locals */ js.UndefOr[js.Object]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setSend(value: /* body */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setStatus(value: /* code */ Double => Reply): Self = StObject.set(x, "status", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setType(value: /* type */ String => Reply): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+    }
   }
   
   type cookieType = js.Function3[/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions], Reply]
@@ -118,10 +174,6 @@ object replyMod {
   type sendType = js.Function1[/* body */ js.UndefOr[js.Any], js.Any]
   
   type statusType = js.Function1[/* code */ Double, Reply]
-  
-  @JSImport("server/reply", "type")
-  @js.native
-  val `type`: typeType = js.native
   
   type typeType = js.Function1[/* type */ String, Reply]
 }

@@ -3,15 +3,13 @@ package typings.libsodiumWrappers.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageTag extends StObject {
   
-  var message: Uint8Array = js.native
+  var message: Uint8Array
   
-  var tag: Double = js.native
+  var tag: Double
 }
 object MessageTag {
   

@@ -3,7 +3,6 @@ package typings.cordovaPluginOuralabs
 import typings.cordovaPluginOuralabs.anon.DEBUG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OuralabsPlugin {
@@ -26,17 +25,13 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def init(channelId: String): Unit = js.native
-    def init(
-      channelId: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def init(channelId: String, successCallback: js.Function0[Unit]): Unit = js.native
     def init(
       channelId: String,
       successCallback: js.Function0[Unit],
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
+    def init(channelId: String, successCallback: Unit, failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
     
     /**
       * Logs a message with the given information.
@@ -49,43 +44,12 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def log(logLevel: Double, tag: String, message: String): Unit = js.native
-    def log(
-      logLevel: Double,
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def log(
-      logLevel: Double,
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def log(
-      logLevel: Double,
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def log(logLevel: Double, tag: String, message: String, metadata: js.Any): Unit = js.native
     def log(
       logLevel: Double,
       tag: String,
       message: String,
       metadata: js.Any,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def log(
-      logLevel: Double,
-      tag: String,
-      message: String,
-      metadata: js.Any,
       successCallback: js.Function0[Unit]
     ): Unit = js.native
     def log(
@@ -94,6 +58,37 @@ object OuralabsPlugin {
       message: String,
       metadata: js.Any,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def log(
+      logLevel: Double,
+      tag: String,
+      message: String,
+      metadata: js.Any,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def log(
+      logLevel: Double,
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit]
+    ): Unit = js.native
+    def log(
+      logLevel: Double,
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def log(
+      logLevel: Double,
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -107,40 +102,35 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def logDebug(tag: String, message: String): Unit = js.native
-    def logDebug(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logDebug(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logDebug(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logDebug(tag: String, message: String, metadata: js.Any): Unit = js.native
-    def logDebug(
-      tag: String,
-      message: String,
-      metadata: js.Any,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logDebug(tag: String, message: String, metadata: js.Any, successCallback: js.Function0[Unit]): Unit = js.native
     def logDebug(
       tag: String,
       message: String,
       metadata: js.Any,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logDebug(
+      tag: String,
+      message: String,
+      metadata: js.Any,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logDebug(tag: String, message: String, metadata: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logDebug(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logDebug(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -154,40 +144,35 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def logError(tag: String, message: String): Unit = js.native
-    def logError(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logError(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logError(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logError(tag: String, message: String, metadata: js.Any): Unit = js.native
-    def logError(
-      tag: String,
-      message: String,
-      metadata: js.Any,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logError(tag: String, message: String, metadata: js.Any, successCallback: js.Function0[Unit]): Unit = js.native
     def logError(
       tag: String,
       message: String,
       metadata: js.Any,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logError(
+      tag: String,
+      message: String,
+      metadata: js.Any,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logError(tag: String, message: String, metadata: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logError(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logError(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -201,40 +186,35 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def logFatal(tag: String, message: String): Unit = js.native
-    def logFatal(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logFatal(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logFatal(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logFatal(tag: String, message: String, metadata: js.Any): Unit = js.native
-    def logFatal(
-      tag: String,
-      message: String,
-      metadata: js.Any,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logFatal(tag: String, message: String, metadata: js.Any, successCallback: js.Function0[Unit]): Unit = js.native
     def logFatal(
       tag: String,
       message: String,
       metadata: js.Any,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logFatal(
+      tag: String,
+      message: String,
+      metadata: js.Any,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logFatal(tag: String, message: String, metadata: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logFatal(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logFatal(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -248,40 +228,35 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def logInfo(tag: String, message: String): Unit = js.native
-    def logInfo(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logInfo(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logInfo(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logInfo(tag: String, message: String, metadata: js.Any): Unit = js.native
-    def logInfo(
-      tag: String,
-      message: String,
-      metadata: js.Any,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logInfo(tag: String, message: String, metadata: js.Any, successCallback: js.Function0[Unit]): Unit = js.native
     def logInfo(
       tag: String,
       message: String,
       metadata: js.Any,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logInfo(
+      tag: String,
+      message: String,
+      metadata: js.Any,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logInfo(tag: String, message: String, metadata: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logInfo(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logInfo(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -295,40 +270,35 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def logTrace(tag: String, message: String): Unit = js.native
-    def logTrace(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logTrace(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logTrace(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logTrace(tag: String, message: String, metadata: js.Any): Unit = js.native
-    def logTrace(
-      tag: String,
-      message: String,
-      metadata: js.Any,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logTrace(tag: String, message: String, metadata: js.Any, successCallback: js.Function0[Unit]): Unit = js.native
     def logTrace(
       tag: String,
       message: String,
       metadata: js.Any,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logTrace(
+      tag: String,
+      message: String,
+      metadata: js.Any,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logTrace(tag: String, message: String, metadata: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logTrace(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logTrace(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -342,40 +312,35 @@ object OuralabsPlugin {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def logWarn(tag: String, message: String): Unit = js.native
-    def logWarn(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def logWarn(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def logWarn(
-      tag: String,
-      message: String,
-      metadata: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logWarn(tag: String, message: String, metadata: js.Any): Unit = js.native
-    def logWarn(
-      tag: String,
-      message: String,
-      metadata: js.Any,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def logWarn(tag: String, message: String, metadata: js.Any, successCallback: js.Function0[Unit]): Unit = js.native
     def logWarn(
       tag: String,
       message: String,
       metadata: js.Any,
       successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logWarn(
+      tag: String,
+      message: String,
+      metadata: js.Any,
+      successCallback: Unit,
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logWarn(tag: String, message: String, metadata: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def logWarn(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def logWarn(
+      tag: String,
+      message: String,
+      metadata: Unit,
+      successCallback: Unit,
       failureCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -389,166 +354,131 @@ object OuralabsPlugin {
       * @param [function] failureCallback - The failure callback for this asynchronous function; receives an error string.
       */
     def setAttributes(): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(attribute1: js.UndefOr[scala.Nothing], attribute2: js.UndefOr[scala.Nothing], attribute3: String): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: String,
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: String,
-      successCallback: js.Function0[Unit],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(attribute1: js.UndefOr[scala.Nothing], attribute2: String): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: String,
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: String,
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: String,
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(attribute1: js.UndefOr[scala.Nothing], attribute2: String, attribute3: String): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: String,
-      attribute3: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: String,
-      attribute3: String,
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: js.UndefOr[scala.Nothing],
-      attribute2: String,
-      attribute3: String,
-      successCallback: js.Function0[Unit],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def setAttributes(attribute1: String): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(attribute1: String, attribute2: js.UndefOr[scala.Nothing], attribute3: String): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: String,
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: js.UndefOr[scala.Nothing],
-      attribute3: String,
-      successCallback: js.Function0[Unit],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def setAttributes(attribute1: String, attribute2: String): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: String,
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: String,
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit]
-    ): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: String,
-      attribute3: js.UndefOr[scala.Nothing],
-      successCallback: js.Function0[Unit],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def setAttributes(attribute1: String, attribute2: String, attribute3: String): Unit = js.native
-    def setAttributes(
-      attribute1: String,
-      attribute2: String,
-      attribute3: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): Unit = js.native
     def setAttributes(attribute1: String, attribute2: String, attribute3: String, successCallback: js.Function0[Unit]): Unit = js.native
     def setAttributes(
       attribute1: String,
       attribute2: String,
       attribute3: String,
       successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: String,
+      attribute2: String,
+      attribute3: String,
+      successCallback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(attribute1: String, attribute2: String, attribute3: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def setAttributes(
+      attribute1: String,
+      attribute2: String,
+      attribute3: Unit,
+      successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: String,
+      attribute2: String,
+      attribute3: Unit,
+      successCallback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(attribute1: String, attribute2: Unit, attribute3: String): Unit = js.native
+    def setAttributes(attribute1: String, attribute2: Unit, attribute3: String, successCallback: js.Function0[Unit]): Unit = js.native
+    def setAttributes(
+      attribute1: String,
+      attribute2: Unit,
+      attribute3: String,
+      successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: String,
+      attribute2: Unit,
+      attribute3: String,
+      successCallback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(attribute1: String, attribute2: Unit, attribute3: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def setAttributes(
+      attribute1: String,
+      attribute2: Unit,
+      attribute3: Unit,
+      successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: String,
+      attribute2: Unit,
+      attribute3: Unit,
+      successCallback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(attribute1: Unit, attribute2: String): Unit = js.native
+    def setAttributes(attribute1: Unit, attribute2: String, attribute3: String): Unit = js.native
+    def setAttributes(attribute1: Unit, attribute2: String, attribute3: String, successCallback: js.Function0[Unit]): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: String,
+      attribute3: String,
+      successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: String,
+      attribute3: String,
+      successCallback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(attribute1: Unit, attribute2: String, attribute3: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: String,
+      attribute3: Unit,
+      successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: String,
+      attribute3: Unit,
+      successCallback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(attribute1: Unit, attribute2: Unit, attribute3: String): Unit = js.native
+    def setAttributes(attribute1: Unit, attribute2: Unit, attribute3: String, successCallback: js.Function0[Unit]): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: Unit,
+      attribute3: String,
+      successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: Unit,
+      attribute3: String,
+      successCallback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(attribute1: Unit, attribute2: Unit, attribute3: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: Unit,
+      attribute3: Unit,
+      successCallback: js.Function0[Unit],
+      errorCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def setAttributes(
+      attribute1: Unit,
+      attribute2: Unit,
+      attribute3: Unit,
+      successCallback: Unit,
       errorCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     

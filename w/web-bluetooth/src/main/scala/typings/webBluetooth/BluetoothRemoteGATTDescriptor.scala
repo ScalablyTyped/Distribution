@@ -4,21 +4,19 @@ import typings.std.BufferSource
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothRemoteGATTDescriptor extends StObject {
   
-  val characteristic: BluetoothRemoteGATTCharacteristic = js.native
+  val characteristic: BluetoothRemoteGATTCharacteristic
   
-  def readValue(): js.Promise[DataView] = js.native
+  def readValue(): js.Promise[DataView]
   
-  val uuid: String = js.native
+  val uuid: String
   
-  val value: js.UndefOr[DataView] = js.native
+  val value: js.UndefOr[DataView] = js.undefined
   
-  def writeValue(value: BufferSource): js.Promise[Unit] = js.native
+  def writeValue(value: BufferSource): js.Promise[Unit]
 }
 object BluetoothRemoteGATTDescriptor {
   

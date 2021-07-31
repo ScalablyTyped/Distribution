@@ -2,19 +2,17 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaxiFare extends StObject {
   
-  var day: TaxiFareDetail = js.native
+  var day: TaxiFareDetail
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var night: TaxiFareDetail = js.native
+  var night: TaxiFareDetail
   
-  var remark: String = js.native
+  var remark: String
 }
 object TaxiFare {
   

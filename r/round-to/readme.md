@@ -10,9 +10,9 @@ Round a number to a specific number of decimal places: `1.234` → `1.2`
 | ------------------ | :-------------: |
 | Full name          | round-to |
 | Keywords           | round, number, num, decimal, places, ceil, floor, math, increment |
-| # releases         | 3 |
-| # dependents       | 46 |
-| # downloads        | 630658 |
+| # releases         | 4 |
+| # dependents       | 51 |
+| # downloads        | 836705 |
 | # stars            | 3 |
 
 ## Links

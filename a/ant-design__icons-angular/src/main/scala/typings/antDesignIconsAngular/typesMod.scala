@@ -3,19 +3,17 @@ package typings.antDesignIconsAngular
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait CachedIconDefinition extends StObject {
     
-    var icon: SVGElement = js.native
+    var icon: SVGElement
     
-    var name: String = js.native
+    var name: String
     
-    var theme: String = js.native
+    var theme: String
   }
   object CachedIconDefinition {
     
@@ -39,14 +37,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IconDefinition extends StObject {
     
-    var icon: String = js.native
+    var icon: String
     
-    var name: String = js.native
+    var name: String
     
-    var theme: js.UndefOr[ThemeType] = js.native
+    var theme: js.UndefOr[ThemeType] = js.undefined
   }
   object IconDefinition {
     
@@ -73,14 +70,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Manifest extends StObject {
     
-    var fill: js.Array[String] = js.native
+    var fill: js.Array[String]
     
-    var outline: js.Array[String] = js.native
+    var outline: js.Array[String]
     
-    var twotone: js.Array[String] = js.native
+    var twotone: js.Array[String]
   }
   object Manifest {
     
@@ -131,11 +127,12 @@ object typesMod {
     def twotone: typings.antDesignIconsAngular.antDesignIconsAngularStrings.twotone = "twotone".asInstanceOf[typings.antDesignIconsAngular.antDesignIconsAngularStrings.twotone]
   }
   
-  @js.native
-  trait TwoToneColorPalette extends TwoToneColorPaletteSetter {
+  trait TwoToneColorPalette
+    extends StObject
+       with TwoToneColorPaletteSetter {
     
     @JSName("secondaryColor")
-    var secondaryColor_TwoToneColorPalette: String = js.native
+    var secondaryColor_TwoToneColorPalette: String
   }
   object TwoToneColorPalette {
     
@@ -153,12 +150,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TwoToneColorPaletteSetter extends StObject {
     
-    var primaryColor: String = js.native
+    var primaryColor: String
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
   }
   object TwoToneColorPaletteSetter {
     

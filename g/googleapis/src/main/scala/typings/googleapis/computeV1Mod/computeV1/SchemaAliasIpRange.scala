@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An alias IP range attached to an instance&#39;s network interface.
   */
-@js.native
 trait SchemaAliasIpRange extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait SchemaAliasIpRange extends StObject {
     * a single IP address (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR
     * format string (e.g. 10.1.2.0/24).
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * Optional subnetwork secondary range name specifying the secondary range
     * from which to allocate the IP CIDR range for this alias IP range. If left
     * unspecified, the primary range of the subnetwork will be used.
     */
-  var subnetworkRangeName: js.UndefOr[String] = js.native
+  var subnetworkRangeName: js.UndefOr[String] = js.undefined
 }
 object SchemaAliasIpRange {
   

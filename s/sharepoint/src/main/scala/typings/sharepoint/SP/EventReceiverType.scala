@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,230 +11,382 @@ sealed trait EventReceiverType extends StObject
 object EventReceiverType extends StObject {
   
   @js.native
-  sealed trait appInstalled extends EventReceiverType
+  sealed trait appInstalled
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait appUninstalling extends EventReceiverType
+  sealed trait appUninstalling
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait appUpgraded extends EventReceiverType
+  sealed trait appUpgraded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait contextEvent extends EventReceiverType
+  sealed trait contextEvent
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait emailReceived extends EventReceiverType
+  sealed trait emailReceived
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait entityInstanceAdded extends EventReceiverType
+  sealed trait entityInstanceAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait entityInstanceDeleted extends EventReceiverType
+  sealed trait entityInstanceDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait entityInstanceUpdated extends EventReceiverType
+  sealed trait entityInstanceUpdated
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait fieldAdded extends EventReceiverType
+  sealed trait fieldAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait fieldAdding extends EventReceiverType
+  sealed trait fieldAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait fieldDeleted extends EventReceiverType
+  sealed trait fieldDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait fieldDeleting extends EventReceiverType
+  sealed trait fieldDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait fieldUpdated extends EventReceiverType
+  sealed trait fieldUpdated
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait fieldUpdating extends EventReceiverType
+  sealed trait fieldUpdating
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupAdded extends EventReceiverType
+  sealed trait groupAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupAdding extends EventReceiverType
+  sealed trait groupAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupDeleted extends EventReceiverType
+  sealed trait groupDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupDeleting extends EventReceiverType
+  sealed trait groupDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupUpdated extends EventReceiverType
+  sealed trait groupUpdated
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupUpdating extends EventReceiverType
+  sealed trait groupUpdating
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupUserAdded extends EventReceiverType
+  sealed trait groupUserAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupUserAdding extends EventReceiverType
+  sealed trait groupUserAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupUserDeleted extends EventReceiverType
+  sealed trait groupUserDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait groupUserDeleting extends EventReceiverType
+  sealed trait groupUserDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait inheritanceBreaking extends EventReceiverType
+  sealed trait inheritanceBreaking
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait inheritanceBroken extends EventReceiverType
+  sealed trait inheritanceBroken
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait inheritanceReset extends EventReceiverType
+  sealed trait inheritanceReset
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait inheritanceResetting extends EventReceiverType
+  sealed trait inheritanceResetting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait invalidReceiver extends EventReceiverType
+  sealed trait invalidReceiver
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemAdded extends EventReceiverType
+  sealed trait itemAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemAdding extends EventReceiverType
+  sealed trait itemAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemAttachmentAdded extends EventReceiverType
+  sealed trait itemAttachmentAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemAttachmentAdding extends EventReceiverType
+  sealed trait itemAttachmentAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemAttachmentDeleted extends EventReceiverType
+  sealed trait itemAttachmentDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemAttachmentDeleting extends EventReceiverType
+  sealed trait itemAttachmentDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemCheckedIn extends EventReceiverType
+  sealed trait itemCheckedIn
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemCheckedOut extends EventReceiverType
+  sealed trait itemCheckedOut
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemCheckingIn extends EventReceiverType
+  sealed trait itemCheckingIn
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemCheckingOut extends EventReceiverType
+  sealed trait itemCheckingOut
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemDeleted extends EventReceiverType
+  sealed trait itemDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemDeleting extends EventReceiverType
+  sealed trait itemDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemFileConverted extends EventReceiverType
+  sealed trait itemFileConverted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemFileMoved extends EventReceiverType
+  sealed trait itemFileMoved
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemFileMoving extends EventReceiverType
+  sealed trait itemFileMoving
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemUncheckedOut extends EventReceiverType
+  sealed trait itemUncheckedOut
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemUncheckingOut extends EventReceiverType
+  sealed trait itemUncheckingOut
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemUpdated extends EventReceiverType
+  sealed trait itemUpdated
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemUpdating extends EventReceiverType
+  sealed trait itemUpdating
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemVersionDeleted extends EventReceiverType
+  sealed trait itemVersionDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait itemVersionDeleting extends EventReceiverType
+  sealed trait itemVersionDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait listAdded extends EventReceiverType
+  sealed trait listAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait listAdding extends EventReceiverType
+  sealed trait listAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait listDeleted extends EventReceiverType
+  sealed trait listDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait listDeleting extends EventReceiverType
+  sealed trait listDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleAssignmentAdded extends EventReceiverType
+  sealed trait roleAssignmentAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleAssignmentAdding extends EventReceiverType
+  sealed trait roleAssignmentAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleAssignmentDeleted extends EventReceiverType
+  sealed trait roleAssignmentDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleAssignmentDeleting extends EventReceiverType
+  sealed trait roleAssignmentDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleDefinitionAdded extends EventReceiverType
+  sealed trait roleDefinitionAdded
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleDefinitionAdding extends EventReceiverType
+  sealed trait roleDefinitionAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleDefinitionDeleted extends EventReceiverType
+  sealed trait roleDefinitionDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleDefinitionDeleting extends EventReceiverType
+  sealed trait roleDefinitionDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleDefinitionUpdated extends EventReceiverType
+  sealed trait roleDefinitionUpdated
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait roleDefinitionUpdating extends EventReceiverType
+  sealed trait roleDefinitionUpdating
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait siteDeleted extends EventReceiverType
+  sealed trait siteDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait siteDeleting extends EventReceiverType
+  sealed trait siteDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait webAdding extends EventReceiverType
+  sealed trait webAdding
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait webDeleted extends EventReceiverType
+  sealed trait webDeleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait webDeleting extends EventReceiverType
+  sealed trait webDeleting
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait webMoved extends EventReceiverType
+  sealed trait webMoved
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait webMoving extends EventReceiverType
+  sealed trait webMoving
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait webProvisioned extends EventReceiverType
+  sealed trait webProvisioned
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait workflowCompleted extends EventReceiverType
+  sealed trait workflowCompleted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait workflowPostponed extends EventReceiverType
+  sealed trait workflowPostponed
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait workflowStarted extends EventReceiverType
+  sealed trait workflowStarted
+    extends StObject
+       with EventReceiverType
   
   @js.native
-  sealed trait workflowStarting extends EventReceiverType
+  sealed trait workflowStarting
+    extends StObject
+       with EventReceiverType
 }

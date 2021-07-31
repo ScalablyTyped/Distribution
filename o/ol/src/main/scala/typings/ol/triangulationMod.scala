@@ -4,14 +4,15 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object triangulationMod {
   
   @JSImport("ol/reproj/Triangulation", JSImport.Default)
   @js.native
-  class default protected () extends Triangulation {
+  class default protected ()
+    extends StObject
+       with Triangulation {
     def this(
       sourceProj: typings.ol.projectionMod.default,
       targetProj: typings.ol.projectionMod.default,
@@ -20,14 +21,22 @@ object triangulationMod {
       errorThreshold: Double,
       opt_destinationResolution: Double
     ) = this()
+    
+    /**
+      * Calculates extent of the 'source' coordinates from all the triangles.
+      */
+    /* CompleteClass */
+    override def calculateSourceExtent(): Extent = js.native
+    
+    /* CompleteClass */
+    override def getTriangles(): js.Array[Triangle] = js.native
   }
   
-  @js.native
   trait Triangle extends StObject {
     
-    var source: js.Array[Coordinate] = js.native
+    var source: js.Array[Coordinate]
     
-    var target: js.Array[Coordinate] = js.native
+    var target: js.Array[Coordinate]
   }
   object Triangle {
     
@@ -54,15 +63,14 @@ object triangulationMod {
     }
   }
   
-  @js.native
   trait Triangulation extends StObject {
     
     /**
       * Calculates extent of the 'source' coordinates from all the triangles.
       */
-    def calculateSourceExtent(): Extent = js.native
+    def calculateSourceExtent(): Extent
     
-    def getTriangles(): js.Array[Triangle] = js.native
+    def getTriangles(): js.Array[Triangle]
   }
   object Triangulation {
     

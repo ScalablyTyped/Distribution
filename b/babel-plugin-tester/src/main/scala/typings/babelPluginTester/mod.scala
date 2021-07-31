@@ -57,28 +57,31 @@ import typings.std.RegExp
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("babel-plugin-tester", JSImport.Default)
+  @JSImport("babel-plugin-tester", JSImport.Namespace)
   @js.native
-  def default(options: PluginTesterOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("babel-plugin-tester", "prettierFormatter")
-  @js.native
-  def prettierFormatter(code: String, options: Options): String = js.native
+  @scala.inline
+  def default(options: PluginTesterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def prettierFormatter(code: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettierFormatter")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object unstringSnapshotSerializer {
     
-    @JSImport("babel-plugin-tester", "unstringSnapshotSerializer.print")
+    @JSImport("babel-plugin-tester", "unstringSnapshotSerializer")
     @js.native
-    def print(value: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("babel-plugin-tester", "unstringSnapshotSerializer.test")
-    @js.native
-    def test(value: js.Any): /* is string */ Boolean = js.native
+    @scala.inline
+    def print(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def test(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   }
   
   @js.native
@@ -106,7 +109,7 @@ object mod {
     
     def parse(code: String): ParseResult | Null = js.native
     def parse(code: String, callback: FileParseCallback): Unit = js.native
-    def parse(code: String, options: js.UndefOr[scala.Nothing], callback: FileParseCallback): Unit = js.native
+    def parse(code: String, options: Unit, callback: FileParseCallback): Unit = js.native
     def parse(code: String, options: TransformOptions): ParseResult | Null = js.native
     def parse(code: String, options: TransformOptions, callback: FileParseCallback): Unit = js.native
     
@@ -138,7 +141,7 @@ object mod {
     
     def transform(code: String): BabelFileResult | Null = js.native
     def transform(code: String, callback: FileResultCallback): Unit = js.native
-    def transform(code: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
+    def transform(code: String, opts: Unit, callback: FileResultCallback): Unit = js.native
     def transform(code: String, opts: TransformOptions): BabelFileResult | Null = js.native
     def transform(code: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
     
@@ -146,7 +149,7 @@ object mod {
     def transformAsync(code: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
     
     def transformFile(filename: String, callback: FileResultCallback): Unit = js.native
-    def transformFile(filename: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
+    def transformFile(filename: String, opts: Unit, callback: FileResultCallback): Unit = js.native
     def transformFile(filename: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
     
     def transformFileAsync(filename: String): js.Promise[BabelFileResult | Null] = js.native
@@ -155,27 +158,22 @@ object mod {
     def transformFileSync(filename: String): BabelFileResult | Null = js.native
     def transformFileSync(filename: String, opts: TransformOptions): BabelFileResult | Null = js.native
     
-    def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
-    def transformFromAst(
-      ast: Node,
-      code: js.UndefOr[scala.Nothing],
-      opts: js.UndefOr[scala.Nothing],
-      callback: FileResultCallback
-    ): Unit = js.native
-    def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions, callback: FileResultCallback): Unit = js.native
     def transformFromAst(ast: Node, code: String, callback: FileResultCallback): Unit = js.native
-    def transformFromAst(ast: Node, code: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
+    def transformFromAst(ast: Node, code: String, opts: Unit, callback: FileResultCallback): Unit = js.native
     def transformFromAst(ast: Node, code: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
+    def transformFromAst(ast: Node, code: Unit, callback: FileResultCallback): Unit = js.native
+    def transformFromAst(ast: Node, code: Unit, opts: Unit, callback: FileResultCallback): Unit = js.native
+    def transformFromAst(ast: Node, code: Unit, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
     
     def transformFromAstAsync(ast: Node): js.Promise[BabelFileResult | Null] = js.native
-    def transformFromAstAsync(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
     def transformFromAstAsync(ast: Node, code: String): js.Promise[BabelFileResult | Null] = js.native
     def transformFromAstAsync(ast: Node, code: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
+    def transformFromAstAsync(ast: Node, code: Unit, opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
     
     def transformFromAstSync(ast: Node): BabelFileResult | Null = js.native
-    def transformFromAstSync(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions): BabelFileResult | Null = js.native
     def transformFromAstSync(ast: Node, code: String): BabelFileResult | Null = js.native
     def transformFromAstSync(ast: Node, code: String, opts: TransformOptions): BabelFileResult | Null = js.native
+    def transformFromAstSync(ast: Node, code: Unit, opts: TransformOptions): BabelFileResult | Null = js.native
     
     def transformSync(code: String): BabelFileResult | Null = js.native
     def transformSync(code: String, opts: TransformOptions): BabelFileResult | Null = js.native
@@ -191,21 +189,20 @@ object mod {
   
   /* Inlined parent babel-plugin-tester.babel-plugin-tester.TestObject */
   /* Inlined parent babel-plugin-tester.babel-plugin-tester.Omit<@babel/core.@babel/core.TransformOptions, 'code' | 'only'> */
-  @js.native
   trait PluginTesterOptions extends StObject {
     
-    var ast: js.UndefOr[Boolean | Null] = js.native
+    var ast: js.UndefOr[Boolean | Null] = js.undefined
     
-    var auxiliaryCommentAfter: js.UndefOr[String | Null] = js.native
+    var auxiliaryCommentAfter: js.UndefOr[String | Null] = js.undefined
     
-    var auxiliaryCommentBefore: js.UndefOr[String | Null] = js.native
+    var auxiliaryCommentBefore: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Use this to provide your own implementation of babel. This is
       * particularly useful if you want to use a different version of babel than
       * what's included in this package.
       */
-    var babel: js.UndefOr[BabelType] = js.native
+    var babel: js.UndefOr[BabelType] = js.undefined
     
     /**
       * To use `babel.config.js` instead of `.babelrc`, set babelOptions to the
@@ -224,13 +221,13 @@ object mod {
       * ```
       *
       */
-    var babelOptions: js.UndefOr[TransformOptions] = js.native
+    var babelOptions: js.UndefOr[TransformOptions] = js.undefined
     
-    var babelrc: js.UndefOr[Boolean | Null] = js.native
+    var babelrc: js.UndefOr[Boolean | Null] = js.undefined
     
-    var babelrcRoots: js.UndefOr[Boolean | MatchPattern | js.Array[MatchPattern] | Null] = js.native
+    var babelrcRoots: js.UndefOr[Boolean | MatchPattern | js.Array[MatchPattern] | Null] = js.undefined
     
-    var caller: js.UndefOr[TransformCaller] = js.native
+    var caller: js.UndefOr[TransformCaller] = js.undefined
     
     /**
       * The code that you want to run through your babel plugin. This must be
@@ -238,15 +235,15 @@ object mod {
       * outputFixture and snapshot is not true, then the assertion is that this
       * code is unchanged by the plugin.
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var comments: js.UndefOr[Boolean | Null] = js.native
+    var comments: js.UndefOr[Boolean | Null] = js.undefined
     
-    var compact: js.UndefOr[Boolean | auto | Null] = js.native
+    var compact: js.UndefOr[Boolean | auto | Null] = js.undefined
     
-    var configFile: js.UndefOr[String | Boolean | Null] = js.native
+    var configFile: js.UndefOr[String | Boolean | Null] = js.undefined
     
-    var cwd: js.UndefOr[String | Null] = js.native
+    var cwd: js.UndefOr[String | Null] = js.undefined
     
     /**
       * This is used to control which line endings the output from babel should
@@ -259,11 +256,11 @@ object mod {
       *
       * @default 'lf'
       */
-    var endOfLine: js.UndefOr[lf | crlf | auto | preserve] = js.native
+    var endOfLine: js.UndefOr[lf | crlf | auto | preserve] = js.undefined
     
-    var env: js.UndefOr[(StringDictionary[js.UndefOr[TransformOptions | Null]]) | Null] = js.native
+    var env: js.UndefOr[(StringDictionary[js.UndefOr[TransformOptions | Null]]) | Null] = js.undefined
     
-    var envName: js.UndefOr[String] = js.native
+    var envName: js.UndefOr[String] = js.undefined
     
     /**
       * If a particular test case should be throwing an error, you can that using
@@ -284,11 +281,11 @@ object mod {
       * }
       * ```
       */
-    var error: js.UndefOr[Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])] = js.native
+    var error: js.UndefOr[Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])] = js.undefined
     
-    var exclude: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.native
+    var exclude: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
     
-    var `extends`: js.UndefOr[String | Null] = js.native
+    var `extends`: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Relative paths from the other options will be relative to this. Normally
@@ -298,16 +295,16 @@ object mod {
       * absolute paths, then they will be path.joined with path.dirname of the
       * filename.
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var filenameRelative: js.UndefOr[String | Null] = js.native
+    var filenameRelative: js.UndefOr[String | Null] = js.undefined
     
     /**
       * If you'd rather put your code in a separate file, you can specify a
       * filename here. If it's an absolute path, that's the file that will be
       * loaded, otherwise, this will be path.joined with the filename path.
       */
-    var fixture: js.UndefOr[String] = js.native
+    var fixture: js.UndefOr[String] = js.undefined
     
     /**
       * This is a path to a directory with this format:
@@ -339,7 +336,7 @@ object mod {
       * Options are inherited, placing a options.json file in __fixtures__ would
       * add those options to all fixtures.
       */
-    var fixtures: js.UndefOr[String] = js.native
+    var fixtures: js.UndefOr[String] = js.undefined
     
     /**
       * This defaults to a function which formats your code output with prettier.
@@ -358,50 +355,50 @@ object mod {
       * The use case for this originally was for testing codemods and formatting
       * their result with prettier-eslint.
       */
-    var formatResult: js.UndefOr[js.Function2[/* code */ String, /* options */ Filename, String]] = js.native
+    var formatResult: js.UndefOr[js.Function2[/* code */ String, /* options */ Filename, String]] = js.undefined
     
-    var generatorOpts: js.UndefOr[GeneratorOptions | Null] = js.native
+    var generatorOpts: js.UndefOr[GeneratorOptions | Null] = js.undefined
     
-    var getModuleId: js.UndefOr[(js.Function1[/* moduleName */ String, js.UndefOr[String | Null]]) | Null] = js.native
+    var getModuleId: js.UndefOr[(js.Function1[/* moduleName */ String, js.UndefOr[String | Null]]) | Null] = js.undefined
     
-    var highlightCode: js.UndefOr[Boolean | Null] = js.native
+    var highlightCode: js.UndefOr[Boolean | Null] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[MatchPattern] | Null] = js.native
+    var ignore: js.UndefOr[js.Array[MatchPattern] | Null] = js.undefined
     
-    var include: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.native
+    var include: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
     
-    var inputSourceMap: js.UndefOr[js.Object | Null] = js.native
+    var inputSourceMap: js.UndefOr[js.Object | Null] = js.undefined
     
-    var minified: js.UndefOr[Boolean | Null] = js.native
+    var minified: js.UndefOr[Boolean | Null] = js.undefined
     
-    var moduleId: js.UndefOr[String | Null] = js.native
+    var moduleId: js.UndefOr[String | Null] = js.undefined
     
-    var moduleIds: js.UndefOr[Boolean | Null] = js.native
+    var moduleIds: js.UndefOr[Boolean | Null] = js.undefined
     
-    var moduleRoot: js.UndefOr[String | Null] = js.native
+    var moduleRoot: js.UndefOr[String | Null] = js.undefined
     
     /**
       * To run only this test. Useful while developing to help focus on a single
       * test. Can be used on multiple tests.
       */
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this is provided, the result of the plugin will be compared with this
       * output for the assertion. It will have any indentation stripped and will
       * be trimmed as a convenience for template literals.
       */
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
     /**
       * If you'd rather put your output in a separate file, you can specify this
       * instead (works the same as fixture).
       */
-    var outputFixture: js.UndefOr[String] = js.native
+    var outputFixture: js.UndefOr[String] = js.undefined
     
-    var overrides: js.UndefOr[js.Array[TransformOptions]] = js.native
+    var overrides: js.UndefOr[js.Array[TransformOptions]] = js.undefined
     
-    var parserOpts: js.UndefOr[ParserOptions | Null] = js.native
+    var parserOpts: js.UndefOr[ParserOptions | Null] = js.undefined
     
     /**
       * Your babel plugin. For example:
@@ -426,29 +423,29 @@ object mod {
       * }
       * ```
       */
-    var plugin: js.Any = js.native
+    var plugin: js.Any
     
     /**
       * This is used for the describe title as well as the test titles. If it can be inferred from the plugin's name then it will be and you don't need to provide this option.
       */
-    var pluginName: js.UndefOr[String] = js.native
+    var pluginName: js.UndefOr[String] = js.undefined
     
     /**
       * This can be used to pass options into your plugin at transform time. This
       * option can be overwritten using the test object.
       *
       */
-    var pluginOptions: js.UndefOr[PluginOptions] = js.native
+    var pluginOptions: js.UndefOr[PluginOptions] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[PluginItem] | Null] = js.native
+    var plugins: js.UndefOr[js.Array[PluginItem] | Null] = js.undefined
     
-    var presets: js.UndefOr[js.Array[PluginItem] | Null] = js.native
+    var presets: js.UndefOr[js.Array[PluginItem] | Null] = js.undefined
     
-    var retainLines: js.UndefOr[Boolean | Null] = js.native
+    var retainLines: js.UndefOr[Boolean | Null] = js.undefined
     
-    var root: js.UndefOr[String | Null] = js.native
+    var root: js.UndefOr[String | Null] = js.undefined
     
-    var rootMode: js.UndefOr[root | upward | `upward-optional`] = js.native
+    var rootMode: js.UndefOr[root | upward | `upward-optional`] = js.undefined
     
     /**
       * If you need something set up before a particular test is run, you can do
@@ -461,15 +458,15 @@ object mod {
         js.Function0[
           Unit | (NonNullable[js.UndefOr[js.Function0[Unit | js.Promise[Unit]]]]) | (js.Promise[(NonNullable[js.UndefOr[js.Function0[Unit | js.Promise[Unit]]]]) | Unit])
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var shouldPrintComment: js.UndefOr[(js.Function1[/* commentContents */ String, Boolean]) | Null] = js.native
+    var shouldPrintComment: js.UndefOr[(js.Function1[/* commentContents */ String, Boolean]) | Null] = js.undefined
     
     /**
       * To skip running this test. Useful for when you're working on a feature
       * that is not yet supported.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you'd prefer to take a snapshot of your output rather than compare it
@@ -477,15 +474,15 @@ object mod {
       * snapshot with both the source code and the output, making the snapshot
       * easier to understand.
       */
-    var snapshot: js.UndefOr[Boolean] = js.native
+    var snapshot: js.UndefOr[Boolean] = js.undefined
     
-    var sourceFileName: js.UndefOr[String | Null] = js.native
+    var sourceFileName: js.UndefOr[String | Null] = js.undefined
     
-    var sourceMaps: js.UndefOr[Boolean | `inline` | both | Null] = js.native
+    var sourceMaps: js.UndefOr[Boolean | `inline` | both | Null] = js.undefined
     
-    var sourceRoot: js.UndefOr[String | Null] = js.native
+    var sourceRoot: js.UndefOr[String | Null] = js.undefined
     
-    var sourceType: js.UndefOr[script | module | unambiguous | Null] = js.native
+    var sourceType: js.UndefOr[script | module | unambiguous | Null] = js.undefined
     
     /**
       * If you set up some state, it's quite possible you want to tear it down.
@@ -493,9 +490,9 @@ object mod {
       * the setup function. This can likewise return a promise if it's
       * asynchronous.
       */
-    var teardown: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var teardown: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
     
-    var test: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.native
+    var test: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
     
     /**
       * You provide test objects as the tests option to babel-plugin-tester. You
@@ -510,22 +507,22 @@ object mod {
       *
       * Read more about test objects below.
       */
-    var tests: js.UndefOr[(js.Array[TestObject | String]) | (Record[String, TestObject | String])] = js.native
+    var tests: js.UndefOr[(js.Array[TestObject | String]) | (Record[String, TestObject | String])] = js.undefined
     
     /**
       * This can be used to specify a title for the describe block (rather than
       * using the pluginName).
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     var wrapPluginVisitorMethod: js.UndefOr[
         (js.Function3[
           /* pluginAlias */ String, 
           /* visitorType */ enter | exit, 
           /* callback */ js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit], 
-          js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ _, Unit]
+          js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit]
         ]) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object PluginTesterOptions {
     
@@ -1028,7 +1025,7 @@ object mod {
       
       @scala.inline
       def setWrapPluginVisitorMethod(
-        value: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit]) => js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ _, Unit]
+        value: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit]) => js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit]
       ): Self = StObject.set(x, "wrapPluginVisitorMethod", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -1039,7 +1036,6 @@ object mod {
     }
   }
   
-  @js.native
   trait TestObject extends StObject {
     
     /**
@@ -1059,7 +1055,7 @@ object mod {
       * ```
       *
       */
-    var babelOptions: js.UndefOr[TransformOptions] = js.native
+    var babelOptions: js.UndefOr[TransformOptions] = js.undefined
     
     /**
       * The code that you want to run through your babel plugin. This must be
@@ -1067,7 +1063,7 @@ object mod {
       * outputFixture and snapshot is not true, then the assertion is that this
       * code is unchanged by the plugin.
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * If a particular test case should be throwing an error, you can that using
@@ -1088,14 +1084,14 @@ object mod {
       * }
       * ```
       */
-    var error: js.UndefOr[Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])] = js.native
+    var error: js.UndefOr[Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])] = js.undefined
     
     /**
       * If you'd rather put your code in a separate file, you can specify a
       * filename here. If it's an absolute path, that's the file that will be
       * loaded, otherwise, this will be path.joined with the filename path.
       */
-    var fixture: js.UndefOr[String] = js.native
+    var fixture: js.UndefOr[String] = js.undefined
     
     /**
       * This defaults to a function which formats your code output with prettier.
@@ -1114,26 +1110,26 @@ object mod {
       * The use case for this originally was for testing codemods and formatting
       * their result with prettier-eslint.
       */
-    var formatResult: js.UndefOr[js.Function2[/* code */ String, /* options */ Filename, String]] = js.native
+    var formatResult: js.UndefOr[js.Function2[/* code */ String, /* options */ Filename, String]] = js.undefined
     
     /**
       * To run only this test. Useful while developing to help focus on a single
       * test. Can be used on multiple tests.
       */
-    var only: js.UndefOr[Boolean] = js.native
+    var only: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this is provided, the result of the plugin will be compared with this
       * output for the assertion. It will have any indentation stripped and will
       * be trimmed as a convenience for template literals.
       */
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
     /**
       * If you'd rather put your output in a separate file, you can specify this
       * instead (works the same as fixture).
       */
-    var outputFixture: js.UndefOr[String] = js.native
+    var outputFixture: js.UndefOr[String] = js.undefined
     
     /**
       * If you need something set up before a particular test is run, you can do
@@ -1146,13 +1142,13 @@ object mod {
         js.Function0[
           Unit | (NonNullable[js.UndefOr[js.Function0[Unit | js.Promise[Unit]]]]) | (js.Promise[(NonNullable[js.UndefOr[js.Function0[Unit | js.Promise[Unit]]]]) | Unit])
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * To skip running this test. Useful for when you're working on a feature
       * that is not yet supported.
       */
-    var skip: js.UndefOr[Boolean] = js.native
+    var skip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you'd prefer to take a snapshot of your output rather than compare it
@@ -1160,7 +1156,7 @@ object mod {
       * snapshot with both the source code and the output, making the snapshot
       * easier to understand.
       */
-    var snapshot: js.UndefOr[Boolean] = js.native
+    var snapshot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you set up some state, it's quite possible you want to tear it down.
@@ -1168,14 +1164,14 @@ object mod {
       * the setup function. This can likewise return a promise if it's
       * asynchronous.
       */
-    var teardown: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var teardown: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * If provided, this will be used instead of the pluginName. If you're using
       * the object API, then the key of this object will be the title (see
       * example below).
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object TestObject {
     

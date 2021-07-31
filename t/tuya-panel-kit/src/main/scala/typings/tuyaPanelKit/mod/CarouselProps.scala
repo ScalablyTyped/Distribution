@@ -10,49 +10,49 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.CurrentIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CarouselProps extends ViewPagerAndroidProps {
+trait CarouselProps
+  extends StObject
+     with ViewPagerAndroidProps {
   
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  var autoplayInterval: js.UndefOr[Double] = js.native
+  var autoplayInterval: js.UndefOr[Double] = js.undefined
   
-  var bounces: js.UndefOr[Boolean] = js.native
+  var bounces: js.UndefOr[Boolean] = js.undefined
   
-  var carouselChange: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+  var carouselChange: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
   
-  var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var dotWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dotWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var dots: js.UndefOr[ElementType[_] | (js.Function1[/* params */ CurrentIndex, ReactNode])] = js.native
+  var dots: js.UndefOr[ElementType[js.Any] | (js.Function1[/* params */ CurrentIndex, ReactNode])] = js.undefined
   
-  var hasDots: js.UndefOr[Boolean] = js.native
+  var hasDots: js.UndefOr[Boolean] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   var onMomentumScrollEnd: js.UndefOr[
     js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onScrollBeginDrag: js.UndefOr[
     js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onScrollEndDrag: js.UndefOr[
     js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var pageStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var pageStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var selectedIndex: js.UndefOr[Double] = js.native
+  var selectedIndex: js.UndefOr[Double] = js.undefined
   
-  var useViewPagerOnAndroid: js.UndefOr[Boolean] = js.native
+  var useViewPagerOnAndroid: js.UndefOr[Boolean] = js.undefined
 }
 object CarouselProps {
   
@@ -117,7 +117,7 @@ object CarouselProps {
     def setDotWrapperStyleUndefined: Self = StObject.set(x, "dotWrapperStyle", js.undefined)
     
     @scala.inline
-    def setDots(value: ElementType[_] | (js.Function1[/* params */ CurrentIndex, ReactNode])): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    def setDots(value: ElementType[js.Any] | (js.Function1[/* params */ CurrentIndex, ReactNode])): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDotsFunction1(value: /* params */ CurrentIndex => ReactNode): Self = StObject.set(x, "dots", js.Any.fromFunction1(value))

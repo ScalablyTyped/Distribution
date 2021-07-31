@@ -2,14 +2,14 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IstopRecord extends BaseParams {
+trait IstopRecord
+  extends StObject
+     with BaseParams {
   
   @JSName("success")
-  def success_MIstopRecord(res: Resouce): Unit = js.native
+  def success_MIstopRecord(res: Resouce): Unit
 }
 object IstopRecord {
   

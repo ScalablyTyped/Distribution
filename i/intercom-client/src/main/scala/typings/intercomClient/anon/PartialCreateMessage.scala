@@ -3,24 +3,22 @@ package typings.intercomClient.anon
 import typings.intercomClient.messageMod.FromToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Message.CreateMessage> */
-@js.native
 trait PartialCreateMessage extends StObject {
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[FromToObject] = js.native
+  var from: js.UndefOr[FromToObject] = js.undefined
   
-  var message_type: js.UndefOr[String] = js.native
+  var message_type: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[FromToObject] = js.native
+  var to: js.UndefOr[FromToObject] = js.undefined
 }
 object PartialCreateMessage {
   

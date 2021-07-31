@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An expansion definition. Each object respresents one set of expandable strings. For example, you could have expansions for the word `hot` in one object, and expansions for the word `cold` in another. */
-@js.native
 trait Expansion extends StObject {
   
   /** A list of terms that this expansion will be expanded to. If specified without **input_terms**, it also functions as the input term list. */
-  var expanded_terms: js.Array[String] = js.native
+  var expanded_terms: js.Array[String]
   
   /** A list of terms that will be expanded for this expansion. If specified, only the items in this list are expanded. */
-  var input_terms: js.UndefOr[js.Array[String]] = js.native
+  var input_terms: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Expansion {
   

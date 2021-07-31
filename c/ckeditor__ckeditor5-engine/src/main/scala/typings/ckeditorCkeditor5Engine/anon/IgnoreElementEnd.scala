@@ -3,19 +3,17 @@ package typings.ckeditorCkeditor5Engine.anon
 import typings.ckeditorCkeditor5Engine.mod.model.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreElementEnd extends StObject {
   
-  var ignoreElementEnd: Boolean = js.native
+  var ignoreElementEnd: Boolean
   
-  var shallow: Boolean = js.native
+  var shallow: Boolean
   
-  var singleCharacters: Boolean = js.native
+  var singleCharacters: Boolean
   
-  var startPosition: Position = js.native
+  var startPosition: Position
 }
 object IgnoreElementEnd {
   

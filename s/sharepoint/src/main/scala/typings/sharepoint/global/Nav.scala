@@ -7,96 +7,78 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Available only in SharePoint Online*/
 object Nav {
   
+  @JSGlobal("Nav")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSGlobal("Nav.ajaxNavigate")
   @js.native
   val ajaxNavigate: AjaxNavigate = js.native
   
-  @JSGlobal("Nav.convertRegularURLtoMDSURL")
-  @js.native
-  def convertRegularURLtoMDSURL(webUrl: String, fullPath: String): String = js.native
+  @scala.inline
+  def convertRegularURLtoMDSURL(webUrl: String, fullPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertRegularURLtoMDSURL")(webUrl.asInstanceOf[js.Any], fullPath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("Nav.getAjaxLocationWindow")
-  @js.native
-  def getAjaxLocationWindow(): String = js.native
+  @scala.inline
+  def getAjaxLocationWindow(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAjaxLocationWindow")().asInstanceOf[String]
   
-  @JSGlobal("Nav.getGoToLinkUrl")
-  @js.native
-  def getGoToLinkUrl(el: HTMLAnchorElement): String = js.native
+  @scala.inline
+  def getGoToLinkUrl(el: HTMLAnchorElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGoToLinkUrl")(el.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("Nav.getSource")
-  @js.native
-  def getSource(): String = js.native
-  @JSGlobal("Nav.getSource")
-  @js.native
-  def getSource(defaultSource: String): String = js.native
+  @scala.inline
+  def getSource(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSource")().asInstanceOf[String]
+  @scala.inline
+  def getSource(defaultSource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSource")(defaultSource.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("Nav.getUrlKeyValue")
-  @js.native
-  def getUrlKeyValue(keyName: String, bNoDecode: Boolean, url: String, bCaseInsensitive: Boolean): String = js.native
+  @scala.inline
+  def getUrlKeyValue(keyName: String, bNoDecode: Boolean, url: String, bCaseInsensitive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrlKeyValue")(keyName.asInstanceOf[js.Any], bNoDecode.asInstanceOf[js.Any], url.asInstanceOf[js.Any], bCaseInsensitive.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("Nav.getWindowLocationNoHash")
-  @js.native
-  def getWindowLocationNoHash(hre: String): String = js.native
+  @scala.inline
+  def getWindowLocationNoHash(hre: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowLocationNoHash")(hre.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("Nav.goToDiscussion")
-  @js.native
-  def goToDiscussion(url: String): Unit = js.native
+  @scala.inline
+  def goToDiscussion(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToDiscussion")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("Nav.goToHistoryLink")
-  @js.native
-  def goToHistoryLink(el: HTMLAnchorElement, strVersion: String): Unit = js.native
+  @scala.inline
+  def goToHistoryLink(el: HTMLAnchorElement, strVersion: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("goToHistoryLink")(el.asInstanceOf[js.Any], strVersion.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Nav.goToLink")
-  @js.native
-  def goToLink(el: HTMLAnchorElement): Unit = js.native
+  @scala.inline
+  def goToLink(el: HTMLAnchorElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToLink")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("Nav.goToLinkOrDialogNewWindow")
-  @js.native
-  def goToLinkOrDialogNewWindow(el: HTMLAnchorElement): Unit = js.native
+  @scala.inline
+  def goToLinkOrDialogNewWindow(el: HTMLAnchorElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToLinkOrDialogNewWindow")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("Nav.isMDSUrl")
-  @js.native
-  def isMDSUrl(url: String): Boolean = js.native
+  @scala.inline
+  def isMDSUrl(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMDSUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("Nav.isPageUrlValid")
-  @js.native
-  def isPageUrlValid(url: String): Boolean = js.native
+  @scala.inline
+  def isPageUrlValid(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPageUrlValid")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("Nav.isPortalTemplatePage")
-  @js.native
-  def isPortalTemplatePage(url: String): Boolean = js.native
+  @scala.inline
+  def isPortalTemplatePage(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortalTemplatePage")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("Nav.navigate")
-  @js.native
-  def navigate(url: String): Unit = js.native
+  @scala.inline
+  def navigate(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("Nav.onClickHook")
-  @js.native
-  def onClickHook(evt: Event, topElm: HTMLElement): Unit = js.native
+  @scala.inline
+  def onClickHook(evt: Event, topElm: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onClickHook")(evt.asInstanceOf[js.Any], topElm.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("Nav.pageUrlValidation")
-  @js.native
-  def pageUrlValidation(url: String, alertString: String): String = js.native
+  @scala.inline
+  def pageUrlValidation(url: String, alertString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pageUrlValidation")(url.asInstanceOf[js.Any], alertString.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("Nav.parseHash")
-  @js.native
-  def parseHash(hash: String): StringDictionary[String] = js.native
+  @scala.inline
+  def parseHash(hash: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHash")(hash.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @JSGlobal("Nav.removeMDSQueryParametersFromUrl")
-  @js.native
-  def removeMDSQueryParametersFromUrl(url: String): String = js.native
+  @scala.inline
+  def removeMDSQueryParametersFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMDSQueryParametersFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("Nav.urlFromHashBag")
-  @js.native
-  def urlFromHashBag(hashObject: StringDictionary[String]): String = js.native
+  @scala.inline
+  def urlFromHashBag(hashObject: StringDictionary[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlFromHashBag")(hashObject.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("Nav.wantsNewTab")
-  @js.native
-  def wantsNewTab(evt: Event): Boolean = js.native
+  @scala.inline
+  def wantsNewTab(evt: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("wantsNewTab")(evt.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

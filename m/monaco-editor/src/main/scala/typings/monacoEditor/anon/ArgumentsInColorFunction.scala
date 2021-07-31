@@ -5,47 +5,45 @@ import typings.monacoEditor.monacoEditorStrings.ignore
 import typings.monacoEditor.monacoEditorStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgumentsInColorFunction extends StObject {
   
-  val argumentsInColorFunction: js.UndefOr[ignore | warning | error] = js.native
+  val argumentsInColorFunction: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val boxModel: js.UndefOr[ignore | warning | error] = js.native
+  val boxModel: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val compatibleVendorPrefixes: js.UndefOr[ignore | warning | error] = js.native
+  val compatibleVendorPrefixes: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val duplicateProperties: js.UndefOr[ignore | warning | error] = js.native
+  val duplicateProperties: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val emptyRules: js.UndefOr[ignore | warning | error] = js.native
+  val emptyRules: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val float: js.UndefOr[ignore | warning | error] = js.native
+  val float: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val fontFaceProperties: js.UndefOr[ignore | warning | error] = js.native
+  val fontFaceProperties: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val hexColorLength: js.UndefOr[ignore | warning | error] = js.native
+  val hexColorLength: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val idSelector: js.UndefOr[ignore | warning | error] = js.native
+  val idSelector: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val ieHack: js.UndefOr[ignore | warning | error] = js.native
+  val ieHack: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val importStatement: js.UndefOr[ignore | warning | error] = js.native
+  val importStatement: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val important: js.UndefOr[ignore | warning | error] = js.native
+  val important: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val propertyIgnoredDueToDisplay: js.UndefOr[ignore | warning | error] = js.native
+  val propertyIgnoredDueToDisplay: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val universalSelector: js.UndefOr[ignore | warning | error] = js.native
+  val universalSelector: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val unknownProperties: js.UndefOr[ignore | warning | error] = js.native
+  val unknownProperties: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val unknownVendorSpecificProperties: js.UndefOr[ignore | warning | error] = js.native
+  val unknownVendorSpecificProperties: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val vendorPrefix: js.UndefOr[ignore | warning | error] = js.native
+  val vendorPrefix: js.UndefOr[ignore | warning | error] = js.undefined
   
-  val zeroUnits: js.UndefOr[ignore | warning | error] = js.native
+  val zeroUnits: js.UndefOr[ignore | warning | error] = js.undefined
 }
 object ArgumentsInColorFunction {
   

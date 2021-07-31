@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResourceServerRequest extends StObject {
   
   /**
     * The identifier for the resource server.
     */
-  var Identifier: ResourceServerIdentifierType = js.native
+  var Identifier: ResourceServerIdentifierType
   
   /**
     * The name of the resource server.
     */
-  var Name: ResourceServerNameType = js.native
+  var Name: ResourceServerNameType
   
   /**
     * The scope values to be set for the resource server.
     */
-  var Scopes: js.UndefOr[ResourceServerScopeListType] = js.native
+  var Scopes: js.UndefOr[ResourceServerScopeListType] = js.undefined
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object UpdateResourceServerRequest {
   

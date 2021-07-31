@@ -10,11 +10,12 @@ import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PantheonMinigame extends Minigame {
+trait PantheonMinigame
+  extends StObject
+     with Minigame {
   
   def dragGod(what: PantheonSpirit): Unit = js.native
   

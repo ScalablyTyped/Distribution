@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MatchQuery")
 @js.native
-class MatchQuery protected () extends Query {
+class MatchQuery protected ()
+  extends StObject
+     with Query {
   /*
     A Query that appects text, analyzes it, generates internal query based
     on the MatchQuery type.

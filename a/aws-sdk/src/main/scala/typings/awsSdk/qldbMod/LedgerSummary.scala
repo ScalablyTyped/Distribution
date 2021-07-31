@@ -2,26 +2,24 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LedgerSummary extends StObject {
   
   /**
     * The date and time, in epoch time format, when the ledger was created. (Epoch time format is the number of seconds elapsed since 12:00:00 AM January 1, 1970 UTC.)
     */
-  var CreationDateTime: js.UndefOr[Timestamp] = js.native
+  var CreationDateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the ledger.
     */
-  var Name: js.UndefOr[LedgerName] = js.native
+  var Name: js.UndefOr[LedgerName] = js.undefined
   
   /**
     * The current status of the ledger.
     */
-  var State: js.UndefOr[LedgerState] = js.native
+  var State: js.UndefOr[LedgerState] = js.undefined
 }
 object LedgerSummary {
   

@@ -2,10 +2,8 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListSessionsResponse extends StObject {
   
   /**
@@ -13,25 +11,25 @@ trait SchemaListSessionsResponse extends StObject {
     * sessions deleted with original end times that are within the startTime
     * and endTime frame.
     */
-  var deletedSession: js.UndefOr[js.Array[SchemaSession]] = js.native
+  var deletedSession: js.UndefOr[js.Array[SchemaSession]] = js.undefined
   
   /**
     * Flag to indicate server has more data to transfer
     */
-  var hasMoreData: js.UndefOr[Boolean] = js.native
+  var hasMoreData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The continuation token, which is used to page through large result sets.
     * Provide this value in a subsequent request to return the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Sessions with an end time that is between startTime and endTime of the
     * request.
     */
-  var session: js.UndefOr[js.Array[SchemaSession]] = js.native
+  var session: js.UndefOr[js.Array[SchemaSession]] = js.undefined
 }
 object SchemaListSessionsResponse {
   

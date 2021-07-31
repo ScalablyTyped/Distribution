@@ -5,7 +5,6 @@ import typings.std.RegExp
 import typings.typescriptServices.anon.Recursive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,7 +21,7 @@ trait IEnvironment extends StObject {
   def fileExists(path: String): Boolean = js.native
   
   def listFiles(path: String): js.Array[String] = js.native
-  def listFiles(path: String, re: js.UndefOr[scala.Nothing], options: Recursive): js.Array[String] = js.native
+  def listFiles(path: String, re: Unit, options: Recursive): js.Array[String] = js.native
   def listFiles(path: String, re: RegExp): js.Array[String] = js.native
   def listFiles(path: String, re: RegExp, options: Recursive): js.Array[String] = js.native
   

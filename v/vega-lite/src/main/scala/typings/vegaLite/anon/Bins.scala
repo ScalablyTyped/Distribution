@@ -5,21 +5,19 @@ import typings.vegaLite.transformMod.BinTransform
 import typings.vegaLite.transformMod.TimeUnitTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bins extends StObject {
   
-  var aggregate: js.Array[AggregatedFieldDef] = js.native
+  var aggregate: js.Array[AggregatedFieldDef]
   
-  var bins: js.Array[BinTransform] = js.native
+  var bins: js.Array[BinTransform]
   
-  var encoding: typings.vegaLite.encodingMod.Encoding[String] = js.native
+  var encoding: typings.vegaLite.encodingMod.Encoding[String]
   
-  var groupby: js.Array[String] = js.native
+  var groupby: js.Array[String]
   
-  var timeUnits: js.Array[TimeUnitTransform] = js.native
+  var timeUnits: js.Array[TimeUnitTransform]
 }
 object Bins {
   

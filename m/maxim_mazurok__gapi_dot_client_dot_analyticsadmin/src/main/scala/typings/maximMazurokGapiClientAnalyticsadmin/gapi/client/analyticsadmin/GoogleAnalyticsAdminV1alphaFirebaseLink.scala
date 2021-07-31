@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaFirebaseLink extends StObject {
   
   /** Output only. Time when this FirebaseLink was originally created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Maximum user access to the GA4 property allowed to admins of the linked Firebase project. */
-  var maximumUserAccess: js.UndefOr[String] = js.native
+  var maximumUserAccess: js.UndefOr[String] = js.undefined
   
   /** Output only. Example format: properties/1234/firebaseLinks/5678 */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable. Firebase project resource name. When creating a FirebaseLink, you may provide this resource name using either a project number or project ID. Once this resource has been
     * created, returned FirebaseLinks will always have a project_name that contains a project number. Format: 'projects/{project number}' Example: 'projects/1234'
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaFirebaseLink {
   

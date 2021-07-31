@@ -2,31 +2,29 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDetectorsRequest extends StObject {
   
   /**
     * The name of the detector model whose detectors (instances) are listed.
     */
-  var detectorModelName: DetectorModelName = js.native
+  var detectorModelName: DetectorModelName
   
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A filter that limits results to those detectors (instances) in the given state.
     */
-  var stateName: js.UndefOr[StateName] = js.native
+  var stateName: js.UndefOr[StateName] = js.undefined
 }
 object ListDetectorsRequest {
   

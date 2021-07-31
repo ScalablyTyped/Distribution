@@ -2,13 +2,13 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MockObserver[T] extends Observer[T] {
+trait MockObserver[T]
+  extends StObject
+     with Observer[T] {
   
-  var messages: js.Array[Recorded] = js.native
+  var messages: js.Array[Recorded]
 }
 object MockObserver {
   
@@ -29,7 +29,7 @@ object MockObserver {
   }
   
   @scala.inline
-  implicit class MockObserverMutableBuilder[Self <: MockObserver[_], T] (val x: Self with MockObserver[T]) extends AnyVal {
+  implicit class MockObserverMutableBuilder[Self <: MockObserver[?], T] (val x: Self & MockObserver[T]) extends AnyVal {
     
     @scala.inline
     def setMessages(value: js.Array[Recorded]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])

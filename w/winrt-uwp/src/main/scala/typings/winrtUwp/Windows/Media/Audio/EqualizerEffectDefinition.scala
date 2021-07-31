@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an equalizer effect definition supported by the audio graph. */
-@js.native
 trait EqualizerEffectDefinition extends StObject {
   
   /** Gets the activatable class ID for the equalizer effect definition object. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets the bands included in the equalizer effect definition. */
-  var bands: IVectorView[EqualizerBand] = js.native
+  var bands: IVectorView[EqualizerBand]
   
   /** Gets the properties supported by the equalizer effect definition. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
 object EqualizerEffectDefinition {
   

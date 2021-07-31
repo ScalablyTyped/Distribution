@@ -2,26 +2,24 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s read-only photo. A picture shown next to the person&#39;s
   * name to help others recognize the person.
   */
-@js.native
 trait SchemaPhoto extends StObject {
   
   /**
     * True if the photo is a default photo; false if the photo is a
     * user-provided photo.
     */
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Metadata about the photo.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The URL of the photo. You can change the desired size by appending a
@@ -29,7 +27,7 @@ trait SchemaPhoto extends StObject {
     * Example:
     * `https://lh3.googleusercontent.com/-T_wVWLlmg7w/AAAAAAAAAAI/AAAAAAAABa8/00gzXvDBYqw/s100/photo.jpg?sz=50`
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaPhoto {
   

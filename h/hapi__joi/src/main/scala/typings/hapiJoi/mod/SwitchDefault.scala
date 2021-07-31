@@ -2,23 +2,21 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchDefault extends StObject {
   
   /**
     * the alternative schema type if no cases matched.
     * Only one otherwise statement is allowed in switch as the last array item.
     */
-  var otherwise: SchemaLike = js.native
+  var otherwise: SchemaLike
 }
 object SwitchDefault {
   
   @scala.inline
   def apply(): SwitchDefault = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(otherwise = null)
     __obj.asInstanceOf[SwitchDefault]
   }
   

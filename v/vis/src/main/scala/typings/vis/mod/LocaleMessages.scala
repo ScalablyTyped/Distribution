@@ -2,37 +2,35 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocaleMessages extends StObject {
   
-  var addDescription: String = js.native
+  var addDescription: String
   
-  var addEdge: String = js.native
+  var addEdge: String
   
-  var addNode: String = js.native
+  var addNode: String
   
-  var back: String = js.native
+  var back: String
   
-  var createEdgeError: String = js.native
+  var createEdgeError: String
   
-  var del: String = js.native
+  var del: String
   
-  var deleteClusterError: String = js.native
+  var deleteClusterError: String
   
-  var edgeDescription: String = js.native
+  var edgeDescription: String
   
-  var edit: String = js.native
+  var edit: String
   
-  var editClusterError: String = js.native
+  var editClusterError: String
   
-  var editEdge: String = js.native
+  var editEdge: String
   
-  var editEdgeDescription: String = js.native
+  var editEdgeDescription: String
   
-  var editNode: String = js.native
+  var editNode: String
 }
 object LocaleMessages {
   

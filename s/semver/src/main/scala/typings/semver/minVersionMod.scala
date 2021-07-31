@@ -1,10 +1,8 @@
 package typings.semver
 
 import typings.semver.mod.Options
-import typings.semver.semverMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minVersionMod {
@@ -12,22 +10,20 @@ object minVersionMod {
   /**
     * Return the lowest version that can possibly match the given range.
     */
+  @scala.inline
+  def apply(range: String): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(range: String, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(range: String, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(range: typings.semver.rangeMod.^): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def apply(range: typings.semver.rangeMod.^, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  
   @JSImport("semver/ranges/min-version", JSImport.Namespace)
   @js.native
-  def apply(range: String): ^ | Null = js.native
-  @JSImport("semver/ranges/min-version", JSImport.Namespace)
-  @js.native
-  def apply(range: String, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/ranges/min-version", JSImport.Namespace)
-  @js.native
-  def apply(range: String, optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/ranges/min-version", JSImport.Namespace)
-  @js.native
-  def apply(range: typings.semver.rangeMod.^): ^ | Null = js.native
-  @JSImport("semver/ranges/min-version", JSImport.Namespace)
-  @js.native
-  def apply(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/ranges/min-version", JSImport.Namespace)
-  @js.native
-  def apply(range: typings.semver.rangeMod.^, optionsOrLoose: Options): ^ | Null = js.native
+  val ^ : js.Any = js.native
 }

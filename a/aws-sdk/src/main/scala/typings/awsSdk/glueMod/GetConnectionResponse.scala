@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectionResponse extends StObject {
   
   /**
     * The requested connection definition.
     */
-  var Connection: js.UndefOr[typings.awsSdk.glueMod.Connection] = js.native
+  var Connection: js.UndefOr[typings.awsSdk.glueMod.Connection] = js.undefined
 }
 object GetConnectionResponse {
   

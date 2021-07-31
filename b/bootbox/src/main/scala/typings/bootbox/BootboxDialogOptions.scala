@@ -7,31 +7,31 @@ import typings.std.HTMLElement
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Bootbox options available for custom modals */
-@js.native
-trait BootboxDialogOptions[T] extends BootboxBaseOptions[T] {
+trait BootboxDialogOptions[T]
+  extends StObject
+     with BootboxBaseOptions[T] {
   
-  var centerVertical: js.UndefOr[Boolean] = js.native
+  var centerVertical: js.UndefOr[Boolean] = js.undefined
   
-  var message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]]) = js.native
+  var message: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   
-  var swapButtonOrder: js.UndefOr[Boolean] = js.native
+  var swapButtonOrder: js.UndefOr[Boolean] = js.undefined
 }
 object BootboxDialogOptions {
   
   @scala.inline
   def apply[T](
-    message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+    message: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   ): BootboxDialogOptions[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxDialogOptions[T]]
   }
   
   @scala.inline
-  implicit class BootboxDialogOptionsMutableBuilder[Self <: BootboxDialogOptions[_], T] (val x: Self with BootboxDialogOptions[T]) extends AnyVal {
+  implicit class BootboxDialogOptionsMutableBuilder[Self <: BootboxDialogOptions[?], T] (val x: Self & BootboxDialogOptions[T]) extends AnyVal {
     
     @scala.inline
     def setCenterVertical(value: Boolean): Self = StObject.set(x, "centerVertical", value.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object BootboxDialogOptions {
     
     @scala.inline
     def setMessage(
-      value: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+      value: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
     ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline

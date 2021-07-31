@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KernelGatewayImageConfig extends StObject {
   
   /**
     * The Amazon Elastic File System (EFS) storage configuration for a SageMaker image.
     */
-  var FileSystemConfig: js.UndefOr[typings.awsSdk.sagemakerMod.FileSystemConfig] = js.native
+  var FileSystemConfig: js.UndefOr[typings.awsSdk.sagemakerMod.FileSystemConfig] = js.undefined
   
   /**
     * The specification of the Jupyter kernels in the image.
     */
-  var KernelSpecs: typings.awsSdk.sagemakerMod.KernelSpecs = js.native
+  var KernelSpecs: typings.awsSdk.sagemakerMod.KernelSpecs
 }
 object KernelGatewayImageConfig {
   

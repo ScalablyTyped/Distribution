@@ -14,7 +14,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object brokerMod {
@@ -134,6 +133,10 @@ object brokerMod {
   /* static members */
   object Broker {
     
+    @JSImport("@pulumi/aws/mq/broker", "Broker")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Broker resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -143,111 +146,105 @@ object brokerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/mq/broker", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Broker = js.native
-    @JSImport("@pulumi/aws/mq/broker", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Broker = js.native
-    @JSImport("@pulumi/aws/mq/broker", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BrokerState): Broker = js.native
-    @JSImport("@pulumi/aws/mq/broker", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): Broker = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Broker]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Broker]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BrokerState): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Broker]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Broker]
     
     /**
       * Returns true if the given object is an instance of Broker.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/mq/broker", "Broker.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean]
   }
   
-  @js.native
   trait BrokerArgs extends StObject {
     
     /**
       * Specifies whether any broker modifications
       * are applied immediately, or during the next maintenance window. Default is `false`.
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the broker.
       */
-    val brokerName: Input[String] = js.native
+    val brokerName: Input[String]
     
     /**
       * Configuration of the broker. See below.
       */
-    val configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]] = js.native
+    val configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]] = js.undefined
     
     /**
       * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
       */
-    val deploymentMode: js.UndefOr[Input[String]] = js.native
+    val deploymentMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing encryption options. See below.
       */
-    val encryptionOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]] = js.native
+    val encryptionOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]] = js.undefined
     
     /**
       * The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.
       */
-    val engineType: Input[String] = js.native
+    val engineType: Input[String]
     
     /**
       * The version of the broker engine. See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions.
       */
-    val engineVersion: Input[String] = js.native
+    val engineVersion: Input[String]
     
     /**
       * The broker's instance type. e.g. `mq.t2.micro` or `mq.m4.large`
       */
-    val hostInstanceType: Input[String] = js.native
+    val hostInstanceType: Input[String]
     
     /**
       * Logging configuration of the broker. See below.
       */
-    val logs: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerLogs]] = js.native
+    val logs: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerLogs]] = js.undefined
     
     /**
       * Maintenance window start time. See below.
       */
-    val maintenanceWindowStartTime: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]] = js.native
+    val maintenanceWindowStartTime: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]] = js.undefined
     
     /**
       * Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The list of security group IDs assigned to the broker.
       */
-    val securityGroups: Input[js.Array[Input[String]]] = js.native
+    val securityGroups: Input[js.Array[Input[String]]]
     
     /**
       * The list of subnet IDs in which to launch the broker. A `SINGLE_INSTANCE` deployment requires one subnet. An `ACTIVE_STANDBY_MULTI_AZ` deployment requires two subnets.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The list of all ActiveMQ usernames for the specified broker. See below.
       */
-    val users: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]] = js.native
+    val users: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]]
   }
   object BrokerArgs {
     
@@ -356,59 +353,58 @@ object brokerMod {
     }
   }
   
-  @js.native
   trait BrokerState extends StObject {
     
     /**
       * Specifies whether any broker modifications
       * are applied immediately, or during the next maintenance window. Default is `false`.
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the broker.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the broker.
       */
-    val brokerName: js.UndefOr[Input[String]] = js.native
+    val brokerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration of the broker. See below.
       */
-    val configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]] = js.native
+    val configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]] = js.undefined
     
     /**
       * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
       */
-    val deploymentMode: js.UndefOr[Input[String]] = js.native
+    val deploymentMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing encryption options. See below.
       */
-    val encryptionOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]] = js.native
+    val encryptionOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]] = js.undefined
     
     /**
       * The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.
       */
-    val engineType: js.UndefOr[Input[String]] = js.native
+    val engineType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the broker engine. See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The broker's instance type. e.g. `mq.t2.micro` or `mq.m4.large`
       */
-    val hostInstanceType: js.UndefOr[Input[String]] = js.native
+    val hostInstanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of information about allocated brokers (both active & standby).
@@ -421,42 +417,42 @@ object brokerMod {
       * * `mqtt+ssl://broker-id.mq.us-west-2.amazonaws.com:8883`
       * * `wss://broker-id.mq.us-west-2.amazonaws.com:61619`
       */
-    val instances: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerInstance]]]] = js.native
+    val instances: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerInstance]]]] = js.undefined
     
     /**
       * Logging configuration of the broker. See below.
       */
-    val logs: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerLogs]] = js.native
+    val logs: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerLogs]] = js.undefined
     
     /**
       * Maintenance window start time. See below.
       */
-    val maintenanceWindowStartTime: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]] = js.native
+    val maintenanceWindowStartTime: js.UndefOr[Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]] = js.undefined
     
     /**
       * Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The list of security group IDs assigned to the broker.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The list of subnet IDs in which to launch the broker. A `SINGLE_INSTANCE` deployment requires one subnet. An `ACTIVE_STANDBY_MULTI_AZ` deployment requires two subnets.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The list of all ActiveMQ usernames for the specified broker. See below.
       */
-    val users: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]]] = js.native
+    val users: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]]] = js.undefined
   }
   object BrokerState {
     

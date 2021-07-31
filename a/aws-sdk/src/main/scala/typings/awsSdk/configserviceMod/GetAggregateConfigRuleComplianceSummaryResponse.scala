@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAggregateConfigRuleComplianceSummaryResponse extends StObject {
   
   /**
     * Returns a list of AggregateComplianceCounts object.
     */
-  var AggregateComplianceCounts: js.UndefOr[AggregateComplianceCountList] = js.native
+  var AggregateComplianceCounts: js.UndefOr[AggregateComplianceCountList] = js.undefined
   
   /**
     * Groups the result based on ACCOUNT_ID or AWS_REGION.
     */
-  var GroupByKey: js.UndefOr[StringWithCharLimit256] = js.native
+  var GroupByKey: js.UndefOr[StringWithCharLimit256] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object GetAggregateConfigRuleComplianceSummaryResponse {
   

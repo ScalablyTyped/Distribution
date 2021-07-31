@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaMeasurement2DViewModelMeasurementLabel extends Object {
+trait AreaMeasurement2DViewModelMeasurementLabel
+  extends StObject
+     with Object {
   
   /**
     * The area (m²).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurementLabel)
     */
-  var area: Double = js.native
+  var area: Double
   
   /**
     * The perimeter (m).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurementLabel)
     */
-  var perimeter: Double = js.native
+  var perimeter: Double
 }
 object AreaMeasurement2DViewModelMeasurementLabel {
   

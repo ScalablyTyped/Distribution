@@ -2,7 +2,6 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "SpatialReference")
@@ -67,51 +66,43 @@ class SpatialReference () extends StObject {
 /* static members */
 object SpatialReference {
   
-  @JSImport("gdal", "SpatialReference.fromCRSURL")
+  @JSImport("gdal", "SpatialReference")
   @js.native
-  def fromCRSURL(input: String): SpatialReference = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gdal", "SpatialReference.fromEPSG")
-  @js.native
-  def fromEPSG(input: String): SpatialReference = js.native
+  @scala.inline
+  def fromCRSURL(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCRSURL")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromEPSGA")
-  @js.native
-  def fromEPSGA(input: Double): SpatialReference = js.native
+  @scala.inline
+  def fromEPSG(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromESRI")
-  @js.native
-  def fromESRI(input: js.Array[String]): SpatialReference = js.native
+  @scala.inline
+  def fromEPSGA(input: Double): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSGA")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromMICoordSys")
-  @js.native
-  def fromMICoordSys(input: String): SpatialReference = js.native
+  @scala.inline
+  def fromESRI(input: js.Array[String]): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESRI")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromProj4")
-  @js.native
-  def fromProj4(input: String): SpatialReference = js.native
+  @scala.inline
+  def fromMICoordSys(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMICoordSys")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromURL")
-  @js.native
-  def fromURL(url: String): SpatialReference = js.native
+  @scala.inline
+  def fromProj4(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProj4")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromURN")
-  @js.native
-  def fromURN(input: String): SpatialReference = js.native
+  @scala.inline
+  def fromURL(url: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromUserInput")
-  @js.native
-  def fromUserInput(input: String): SpatialReference = js.native
+  @scala.inline
+  def fromURN(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURN")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromWKT")
-  @js.native
-  def fromWKT(wkt: String): SpatialReference = js.native
+  @scala.inline
+  def fromUserInput(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUserInput")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromWMSAUTO")
-  @js.native
-  def fromWMSAUTO(input: String): SpatialReference = js.native
+  @scala.inline
+  def fromWKT(wkt: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKT")(wkt.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  @JSImport("gdal", "SpatialReference.fromXML")
-  @js.native
-  def fromXML(input: String): SpatialReference = js.native
+  @scala.inline
+  def fromWMSAUTO(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWMSAUTO")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  
+  @scala.inline
+  def fromXML(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromXML")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
 }

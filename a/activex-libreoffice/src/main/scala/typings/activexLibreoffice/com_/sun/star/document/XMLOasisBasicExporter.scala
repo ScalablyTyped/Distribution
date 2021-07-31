@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,10 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * data should be exported. After that, the export is started by calling the {@link XFilter.filter()} method.
   * @since OOo 2.0
   */
-@js.native
-trait XMLOasisBasicExporter extends XXMLBasicExporter {
+trait XMLOasisBasicExporter
+  extends StObject
+     with XXMLBasicExporter {
   
-  def createWithHandler(DocumentHandler: XDocumentHandler): Unit = js.native
+  def createWithHandler(DocumentHandler: XDocumentHandler): Unit
 }
 object XMLOasisBasicExporter {
   

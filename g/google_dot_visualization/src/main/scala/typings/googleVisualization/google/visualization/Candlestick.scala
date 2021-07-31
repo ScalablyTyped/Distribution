@@ -2,17 +2,15 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Candlestick extends StObject {
   
-  var fallingColor: js.UndefOr[ChartStrokeFill] = js.native
+  var fallingColor: js.UndefOr[ChartStrokeFill] = js.undefined
   
-  var hollowIsRising: js.UndefOr[Boolean] = js.native
+  var hollowIsRising: js.UndefOr[Boolean] = js.undefined
   
-  var risingColor: js.UndefOr[ChartStrokeFill] = js.native
+  var risingColor: js.UndefOr[ChartStrokeFill] = js.undefined
 }
 object Candlestick {
   

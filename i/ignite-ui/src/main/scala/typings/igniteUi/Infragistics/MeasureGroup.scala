@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeasureGroup extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait MeasureGroup extends StObject {
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns the name of the catalog to which this measure group belongs.
     *
     * @param value
     */
-  def catalogName(value: js.Object): String = js.native
+  def catalogName(value: js.Object): String
   
   /**
     * Returns the name of the cube to which this measure group belongs
     *
     * @param value
     */
-  def cubeName(value: js.Object): String = js.native
+  def cubeName(value: js.Object): String
   
   /**
     * Returns a user-friendly description of the measure group.
     *
     * @param value
     */
-  def description(value: js.Object): String = js.native
+  def description(value: js.Object): String
   
   /**
     * Returns the name of the measure group.
     *
     * @param value
     */
-  def name(value: js.Object): String = js.native
+  def name(value: js.Object): String
 }
 object MeasureGroup {
   

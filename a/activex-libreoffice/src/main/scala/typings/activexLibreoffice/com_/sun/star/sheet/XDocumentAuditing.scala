@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides auditing functions of a document. */
-@js.native
-trait XDocumentAuditing extends XInterface {
+trait XDocumentAuditing
+  extends StObject
+     with XInterface {
   
   /**
     * refreshes all existing auditing arrows on all sheets of the document.
     *
     * Dependencies are marked for all the cells that were marked before, but using current formulas.
     */
-  def refreshArrows(): Unit = js.native
+  def refreshArrows(): Unit
 }
 object XDocumentAuditing {
   

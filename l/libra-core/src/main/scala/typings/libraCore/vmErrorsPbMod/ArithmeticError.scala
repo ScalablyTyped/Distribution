@@ -10,7 +10,6 @@ import typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError")
@@ -35,32 +34,38 @@ object ArithmeticError {
   object ArithmeticErrorType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ArithmeticErrorType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ArithmeticErrorType & Double] = js.native
     
     @js.native
-    sealed trait DIVISIONBYZERO extends ArithmeticErrorType
-    /* 3 */ val DIVISIONBYZERO: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.DIVISIONBYZERO with Double = js.native
+    sealed trait DIVISIONBYZERO
+      extends StObject
+         with ArithmeticErrorType
+    /* 3 */ val DIVISIONBYZERO: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.DIVISIONBYZERO & Double = js.native
     
     @js.native
-    sealed trait OVERFLOW extends ArithmeticErrorType
-    /* 2 */ val OVERFLOW: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.OVERFLOW with Double = js.native
+    sealed trait OVERFLOW
+      extends StObject
+         with ArithmeticErrorType
+    /* 2 */ val OVERFLOW: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.OVERFLOW & Double = js.native
     
     @js.native
-    sealed trait UNDERFLOW extends ArithmeticErrorType
-    /* 1 */ val UNDERFLOW: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.UNDERFLOW with Double = js.native
+    sealed trait UNDERFLOW
+      extends StObject
+         with ArithmeticErrorType
+    /* 1 */ val UNDERFLOW: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.UNDERFLOW & Double = js.native
     
     @js.native
-    sealed trait UNKNOWNARITHMETICERROR extends ArithmeticErrorType
-    /* 0 */ val UNKNOWNARITHMETICERROR: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.UNKNOWNARITHMETICERROR with Double = js.native
+    sealed trait UNKNOWNARITHMETICERROR
+      extends StObject
+         with ArithmeticErrorType
+    /* 0 */ val UNKNOWNARITHMETICERROR: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.UNKNOWNARITHMETICERROR & Double = js.native
   }
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): ArithmeticError = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): ArithmeticError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ArithmeticError]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: ArithmeticError, reader: BinaryReader): ArithmeticError = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: ArithmeticError, reader: BinaryReader): ArithmeticError = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ArithmeticError]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError.extensions")
   @js.native
@@ -75,18 +80,15 @@ object ArithmeticError {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: ArithmeticError, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: ArithmeticError, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: ArithmeticError): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: ArithmeticError): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var errorCode: ArithmeticErrorType = js.native
+    var errorCode: ArithmeticErrorType
   }
   object AsObject {
     

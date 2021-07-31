@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.IconColor
 import typings.openui5.sap.ui.core.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IconTabFilter extends Item {
+trait IconTabFilter
+  extends StObject
+     with Item {
   
   /**
     * Adds some content to the aggregation <code>content</code>.

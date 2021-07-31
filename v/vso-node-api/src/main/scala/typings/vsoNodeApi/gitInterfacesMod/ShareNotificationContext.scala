@@ -3,21 +3,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareNotificationContext extends StObject {
   
   /**
     * Optional user note or message.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Identities of users who will receive a share notification.
     */
-  var receivers: js.Array[IdentityRef] = js.native
+  var receivers: js.Array[IdentityRef]
 }
 object ShareNotificationContext {
   

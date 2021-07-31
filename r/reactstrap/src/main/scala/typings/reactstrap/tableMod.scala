@@ -9,7 +9,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLTableElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -21,34 +20,34 @@ object tableMod {
   
   type Table = Component[TableProps, js.Object, js.Any]
   
-  @js.native
   trait TableProps
-    extends TableHTMLAttributes[HTMLTableElement]
+    extends StObject
+       with TableHTMLAttributes[HTMLTableElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var borderless: js.UndefOr[Boolean] = js.native
+    var borderless: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var hover: js.UndefOr[Boolean] = js.native
+    var hover: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLTableElement]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLTableElement]] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
-    var reflow: js.UndefOr[Boolean] = js.native
+    var reflow: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[Boolean | String] = js.native
+    var responsive: js.UndefOr[Boolean | String] = js.undefined
     
-    var responsiveTag: js.UndefOr[ElementType[_]] = js.native
+    var responsiveTag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var striped: js.UndefOr[Boolean] = js.native
+    var striped: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object TableProps {
     
@@ -113,7 +112,7 @@ object tableMod {
       def setResponsive(value: Boolean | String): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setResponsiveTag(value: ElementType[_]): Self = StObject.set(x, "responsiveTag", value.asInstanceOf[js.Any])
+      def setResponsiveTag(value: ElementType[js.Any]): Self = StObject.set(x, "responsiveTag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResponsiveTagUndefined: Self = StObject.set(x, "responsiveTag", js.undefined)
@@ -134,7 +133,7 @@ object tableMod {
       def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

@@ -1,35 +1,35 @@
 package typings.memfs
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object processMod extends Shortcut {
+object processMod {
+  
+  @JSImport("memfs/lib/process", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("memfs/lib/process", JSImport.Default)
   @js.native
   val default: IProcess = js.native
   
-  @JSImport("memfs/lib/process", "createProcess")
-  @js.native
-  def createProcess(): IProcess = js.native
+  @scala.inline
+  def createProcess(): IProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("createProcess")().asInstanceOf[IProcess]
   
-  @js.native
   trait IProcess extends StObject {
     
-    def cwd(): String = js.native
+    def cwd(): String
     
-    def emitWarning(message: String, `type`: String): Unit = js.native
+    def emitWarning(message: String, `type`: String): Unit
     
-    def getgid(): Double = js.native
+    def getgid(): Double
     
-    def getuid(): Double = js.native
+    def getuid(): Double
     
-    def nextTick(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit = js.native
+    def nextTick(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit
     
-    var platform: String = js.native
+    var platform: String
   }
   object IProcess {
     
@@ -68,9 +68,4 @@ object processMod extends Shortcut {
       def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = IProcess
-  
-  /* This means you don't have to write `default`, but can instead just say `processMod.foo` */
-  override def _to: IProcess = default
 }

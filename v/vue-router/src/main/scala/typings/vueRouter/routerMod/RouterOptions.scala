@@ -2,25 +2,23 @@ package typings.vueRouter.routerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterOptions extends StObject {
   
-  var base: js.UndefOr[String] = js.native
+  var base: js.UndefOr[String] = js.undefined
   
-  var fallback: js.UndefOr[Boolean] = js.native
+  var fallback: js.UndefOr[Boolean] = js.undefined
   
-  var linkActiveClass: js.UndefOr[String] = js.native
+  var linkActiveClass: js.UndefOr[String] = js.undefined
   
-  var linkExactActiveClass: js.UndefOr[String] = js.native
+  var linkExactActiveClass: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[RouterMode] = js.native
+  var mode: js.UndefOr[RouterMode] = js.undefined
   
-  var parseQuery: js.UndefOr[js.Function1[/* query */ String, js.Object]] = js.native
+  var parseQuery: js.UndefOr[js.Function1[/* query */ String, js.Object]] = js.undefined
   
-  var routes: js.UndefOr[js.Array[RouteConfig]] = js.native
+  var routes: js.UndefOr[js.Array[RouteConfig]] = js.undefined
   
   var scrollBehavior: js.UndefOr[
     js.Function3[
@@ -29,9 +27,9 @@ trait RouterOptions extends StObject {
       /* savedPosition */ Position | Unit, 
       js.UndefOr[PositionResult | js.Promise[PositionResult] | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var stringifyQuery: js.UndefOr[js.Function1[/* query */ js.Object, String]] = js.native
+  var stringifyQuery: js.UndefOr[js.Function1[/* query */ js.Object, String]] = js.undefined
 }
 object RouterOptions {
   

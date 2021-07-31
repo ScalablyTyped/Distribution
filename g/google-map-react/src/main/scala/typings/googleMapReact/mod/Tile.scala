@@ -2,13 +2,13 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Tile extends Point {
+trait Tile
+  extends StObject
+     with Point {
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object Tile {
   

@@ -2,10 +2,8 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCarrierRate extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait SchemaCarrierRate extends StObject {
     * of supported carriers can be retrieved via the getSupportedCarriers
     * method. Required.
     */
-  var carrierName: js.UndefOr[String] = js.native
+  var carrierName: js.UndefOr[String] = js.undefined
   
   /**
     * Carrier service, such as &quot;ground&quot; or &quot;2 days&quot;. The
     * list of supported services for a carrier can be retrieved via the
     * getSupportedCarriers method. Required.
     */
-  var carrierService: js.UndefOr[String] = js.native
+  var carrierService: js.UndefOr[String] = js.undefined
   
   /**
     * Additive shipping rate modifier. Can be negative. For example {
@@ -29,24 +27,24 @@ trait SchemaCarrierRate extends StObject {
     * &quot;currency&quot; : &quot;USD&quot; } removes $3 from the rate.
     * Optional.
     */
-  var flatAdjustment: js.UndefOr[SchemaPrice] = js.native
+  var flatAdjustment: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Name of the carrier rate. Must be unique per rate group. Required.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Shipping origin for this carrier rate. Required.
     */
-  var originPostalCode: js.UndefOr[String] = js.native
+  var originPostalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Multiplicative shipping rate modifier as a number in decimal notation.
     * Can be negative. For example &quot;5.4&quot; increases the rate by 5.4%,
     * &quot;-3&quot; decreases the rate by 3%. Optional.
     */
-  var percentageAdjustment: js.UndefOr[String] = js.native
+  var percentageAdjustment: js.UndefOr[String] = js.undefined
 }
 object SchemaCarrierRate {
   

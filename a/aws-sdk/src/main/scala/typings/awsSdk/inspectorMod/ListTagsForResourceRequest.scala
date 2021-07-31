@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment template whose tags you want to list.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
 }
 object ListTagsForResourceRequest {
   

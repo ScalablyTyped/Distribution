@@ -3,43 +3,41 @@ package typings.mssql.mod
 import typings.tedious.mod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait config extends StObject {
   
   /**
     * Invoked before opening the connection. The parameter conn is the configured
     * tedious Connection. It can be used for attaching event handlers.
     */
-  var beforeConnect: js.UndefOr[js.Function1[/* conn */ Connection, Unit]] = js.native
+  var beforeConnect: js.UndefOr[js.Function1[/* conn */ Connection, Unit]] = js.undefined
   
-  var connectionTimeout: js.UndefOr[Double] = js.native
+  var connectionTimeout: js.UndefOr[Double] = js.undefined
   
-  var database: String = js.native
+  var database: String
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var driver: js.UndefOr[String] = js.native
+  var driver: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[IOptions] = js.native
+  var options: js.UndefOr[IOptions] = js.undefined
   
-  var parseJSON: js.UndefOr[Boolean] = js.native
+  var parseJSON: js.UndefOr[Boolean] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var pool: js.UndefOr[IPool] = js.native
+  var pool: js.UndefOr[IPool] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var requestTimeout: js.UndefOr[Double] = js.native
+  var requestTimeout: js.UndefOr[Double] = js.undefined
   
-  var server: String = js.native
+  var server: String
   
-  var stream: js.UndefOr[Boolean] = js.native
+  var stream: js.UndefOr[Boolean] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object config {
   

@@ -2,16 +2,14 @@ package typings.pQueue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<p-queue.p-queue/dist/priority-queue.PriorityQueueOptions> */
-  @js.native
   trait PartialPriorityQueueOptio extends StObject {
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object PartialPriorityQueueOptio {
     
@@ -33,10 +31,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Partial<p-queue.p-queue/dist/priority-queue.PriorityQueueOptions>> */
-  @js.native
   trait ReadonlyPartialPriorityQu extends StObject {
     
-    val priority: js.UndefOr[Double] = js.native
+    val priority: js.UndefOr[Double] = js.undefined
   }
   object ReadonlyPartialPriorityQu {
     

@@ -5,15 +5,15 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupWindow extends BaseWindow {
+trait PopupWindow
+  extends StObject
+     with BaseWindow {
   
-  def popupWidget(widget: Widget): Unit = js.native
+  def popupWidget(widget: Widget): Unit
   
-  def popupXY(x: Double, y: Double): Unit = js.native
+  def popupXY(x: Double, y: Double): Unit
 }
 object PopupWindow {
   

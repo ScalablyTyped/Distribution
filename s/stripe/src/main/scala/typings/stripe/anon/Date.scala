@@ -2,28 +2,26 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
   /**
     * The unix timestamp that Stripe’s terms of service were agreed to by the
     * account holder
     */
-  var date: Double = js.native
+  var date: Double
   
   /**
     * The IP address from which Stripe’s terms of service were agreed to by the account holder
     */
-  var ip: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.undefined
   
   /**
     * The user agent of the browser from which Stripe’s terms of service
     * were agreed to by the account holder
     */
-  var user_agent: js.UndefOr[String] = js.native
+  var user_agent: js.UndefOr[String] = js.undefined
 }
 object Date {
   

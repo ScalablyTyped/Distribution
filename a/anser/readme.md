@@ -10,9 +10,9 @@ A low level parser for ANSI sequences.
 | ------------------ | :-------------: |
 | Full name          | anser |
 | Keywords           | ansi, html |
-| # releases         | 3 |
-| # dependents       | 60 |
-| # downloads        | 13639290 |
+| # releases         | 5 |
+| # dependents       | 79 |
+| # downloads        | 39404810 |
 | # stars            | 1 |
 
 ## Links

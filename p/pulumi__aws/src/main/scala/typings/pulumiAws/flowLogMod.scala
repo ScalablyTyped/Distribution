@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flowLogMod {
@@ -94,6 +93,10 @@ object flowLogMod {
   /* static members */
   object FlowLog {
     
+    @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FlowLog resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -103,62 +106,56 @@ object flowLogMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog.get")
-    @js.native
-    def get(name: String, id: Input[ID]): FlowLog = js.native
-    @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FlowLog = js.native
-    @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FlowLogState): FlowLog = js.native
-    @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FlowLogState, opts: CustomResourceOptions): FlowLog = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FlowLogState): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FlowLogState, opts: CustomResourceOptions): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
     
     /**
       * Returns true if the given object is an instance of FlowLog.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ Boolean]
   }
   
-  @js.native
   trait FlowLogArgs extends StObject {
     
     /**
       * Elastic Network Interface ID to attach to
       */
-    val eniId: js.UndefOr[Input[String]] = js.native
+    val eniId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN for the IAM role that's used to post flow logs to a CloudWatch Logs log group
       */
-    val iamRoleArn: js.UndefOr[Input[String]] = js.native
+    val iamRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the logging destination.
       */
-    val logDestination: js.UndefOr[Input[String]] = js.native
+    val logDestination: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the logging destination. Valid values: `cloud-watch-logs`, `s3`. Default: `cloud-watch-logs`.
       */
-    val logDestinationType: js.UndefOr[Input[String]] = js.native
+    val logDestinationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fields to include in the flow log record, in the order in which they should appear.
       */
-    val logFormat: js.UndefOr[Input[String]] = js.native
+    val logFormat: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * *Deprecated:* Use `logDestination` instead. The name of the CloudWatch log group.
       *
       * @deprecated use 'log_destination' argument instead
       */
-    val logGroupName: js.UndefOr[Input[String]] = js.native
+    val logGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum interval of time
@@ -166,27 +163,27 @@ object flowLogMod {
       * log record. Valid Values: `60` seconds (1 minute) or `600` seconds (10
       * minutes). Default: `600`.
       */
-    val maxAggregationInterval: js.UndefOr[Input[Double]] = js.native
+    val maxAggregationInterval: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Subnet ID to attach to
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
       */
-    val trafficType: Input[String] = js.native
+    val trafficType: Input[String]
     
     /**
       * VPC ID to attach to
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object FlowLogArgs {
     
@@ -264,45 +261,44 @@ object flowLogMod {
     }
   }
   
-  @js.native
   trait FlowLogState extends StObject {
     
     /**
       * The ARN of the Flow Log.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Elastic Network Interface ID to attach to
       */
-    val eniId: js.UndefOr[Input[String]] = js.native
+    val eniId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN for the IAM role that's used to post flow logs to a CloudWatch Logs log group
       */
-    val iamRoleArn: js.UndefOr[Input[String]] = js.native
+    val iamRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the logging destination.
       */
-    val logDestination: js.UndefOr[Input[String]] = js.native
+    val logDestination: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the logging destination. Valid values: `cloud-watch-logs`, `s3`. Default: `cloud-watch-logs`.
       */
-    val logDestinationType: js.UndefOr[Input[String]] = js.native
+    val logDestinationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fields to include in the flow log record, in the order in which they should appear.
       */
-    val logFormat: js.UndefOr[Input[String]] = js.native
+    val logFormat: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * *Deprecated:* Use `logDestination` instead. The name of the CloudWatch log group.
       *
       * @deprecated use 'log_destination' argument instead
       */
-    val logGroupName: js.UndefOr[Input[String]] = js.native
+    val logGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum interval of time
@@ -310,27 +306,27 @@ object flowLogMod {
       * log record. Valid Values: `60` seconds (1 minute) or `600` seconds (10
       * minutes). Default: `600`.
       */
-    val maxAggregationInterval: js.UndefOr[Input[Double]] = js.native
+    val maxAggregationInterval: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Subnet ID to attach to
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
       */
-    val trafficType: js.UndefOr[Input[String]] = js.native
+    val trafficType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * VPC ID to attach to
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object FlowLogState {
     

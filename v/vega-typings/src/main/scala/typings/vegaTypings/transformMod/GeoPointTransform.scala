@@ -5,26 +5,26 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.geopoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoPointTransform extends _Transforms {
+trait GeoPointTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var fields: Vector2[FieldRef] | SignalRef = js.native
+  var fields: Vector2[FieldRef] | SignalRef
   
-  var projection: ProjectionName = js.native
+  var projection: ProjectionName
   
-  var `type`: geopoint = js.native
+  var `type`: geopoint
 }
 object GeoPointTransform {
   
   @scala.inline
-  def apply(fields: Vector2[FieldRef] | SignalRef, projection: ProjectionName, `type`: geopoint): GeoPointTransform = {
+  def apply(fields: Vector2[FieldRef] | SignalRef, projection: ProjectionName): GeoPointTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("geopoint")
     __obj.asInstanceOf[GeoPointTransform]
   }
   

@@ -10,14 +10,15 @@ import typings.ionicCore.virtualScrollInterfaceMod.ItemHeightFn
 import typings.ionicCore.virtualScrollInterfaceMod.ItemRenderFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualScrollMod {
   
   @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll", "VirtualScroll")
   @js.native
-  class VirtualScroll () extends ComponentInterface {
+  class VirtualScroll ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The approximate width of each footer template's cell.
@@ -155,7 +156,7 @@ object virtualScrollMod {
       * entire virtual scroll is reset, which is an expensive operation and
       * should be avoided if possible.
       */
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.native
     
     def itemsChanged(): Unit = js.native
     
@@ -184,21 +185,21 @@ object virtualScrollMod {
       *
       * Provide a render function for the footer to be rendered. Returns a JSX virtual-dom.
       */
-    var renderFooter: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+    var renderFooter: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.native
     
     /**
       * NOTE: only JSX API for stencil.
       *
       * Provide a render function for the header to be rendered. Returns a JSX virtual-dom.
       */
-    var renderHeader: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+    var renderHeader: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.native
     
     /**
       * NOTE: only JSX API for stencil.
       *
       * Provide a render function for the items to be rendered. Returns a JSX virtual-dom.
       */
-    var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, _]] = js.native
+    var renderItem: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, js.Any]] = js.native
     
     var renderVirtualNode: js.Any = js.native
     

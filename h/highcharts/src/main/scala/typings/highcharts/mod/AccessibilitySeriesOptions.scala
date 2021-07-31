@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilitySeriesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether or not to add series
     * descriptions to charts with a single series.
     */
-  var describeSingleSeries: js.UndefOr[Boolean] = js.native
+  var describeSingleSeries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Formatter function to use
@@ -21,7 +19,7 @@ trait AccessibilitySeriesOptions extends StObject {
     * with the description of the series for a screen reader user. If `false`
     * is returned, the default formatter will be used for that series.
     */
-  var descriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Series]] = js.native
+  var descriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Series]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When a series contains more
@@ -30,7 +28,7 @@ trait AccessibilitySeriesOptions extends StObject {
     *
     * Set to `false` to disable.
     */
-  var pointDescriptionEnabledThreshold: js.UndefOr[Boolean | Double] = js.native
+  var pointDescriptionEnabledThreshold: js.UndefOr[Boolean | Double] = js.undefined
 }
 object AccessibilitySeriesOptions {
   

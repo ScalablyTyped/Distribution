@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Common usage: Getting a C++ object pointer in the same process, thus to use an implementation directly, most often because of a design flaw.
   */
-@js.native
-trait XUnoTunnel extends XInterface {
+trait XUnoTunnel
+  extends StObject
+     with XInterface {
   
   /**
     * Call this method to get something which is not specified in UNO, e.g. an address to some C++ object.
     * @param aIdentifier identifier
     * @returns something
     */
-  def getSomething(aIdentifier: SeqEquiv[Double]): Double = js.native
+  def getSomething(aIdentifier: SeqEquiv[Double]): Double
 }
 object XUnoTunnel {
   

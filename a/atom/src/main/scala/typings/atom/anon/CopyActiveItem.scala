@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyActiveItem extends StObject {
   
-  var copyActiveItem: js.UndefOr[Boolean] = js.native
+  var copyActiveItem: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.UndefOr[js.Array[js.Object]] = js.native
+  var items: js.UndefOr[js.Array[js.Object]] = js.undefined
 }
 object CopyActiveItem {
   

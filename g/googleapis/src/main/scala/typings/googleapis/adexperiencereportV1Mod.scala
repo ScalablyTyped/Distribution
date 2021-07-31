@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adexperiencereportV1Mod {
@@ -70,7 +69,7 @@ object adexperiencereportV1Mod {
         */
       def get(): GaxiosPromise[SchemaSiteSummaryResponse] = js.native
       def get(callback: BodyResponseCallback[SchemaSiteSummaryResponse]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteSummaryResponse] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSiteSummaryResponse] = js.native
       def get(params: ParamsResourceSitesGet): GaxiosPromise[SchemaSiteSummaryResponse] = js.native
       def get(params: ParamsResourceSitesGet, callback: BodyResponseCallback[SchemaSiteSummaryResponse]): Unit = js.native
       def get(
@@ -107,7 +106,7 @@ object adexperiencereportV1Mod {
         */
       def list(): GaxiosPromise[SchemaViolatingSitesResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaViolatingSitesResponse]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaViolatingSitesResponse] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaViolatingSitesResponse] = js.native
       def list(params: ParamsResourceViolatingsitesList): GaxiosPromise[SchemaViolatingSitesResponse] = js.native
       def list(
         params: ParamsResourceViolatingsitesList,
@@ -126,16 +125,17 @@ object adexperiencereportV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -147,13 +147,14 @@ object adexperiencereportV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceSitesGet extends StandardParameters {
+    trait ParamsResourceSitesGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The required site name. It should be the site property whose ad
@@ -165,7 +166,7 @@ object adexperiencereportV1Mod {
         * user to go through that process before they can gain access to the Ad
         * Experience Report.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceSitesGet {
       
@@ -192,13 +193,14 @@ object adexperiencereportV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceViolatingsitesList extends StandardParameters {
+    trait ParamsResourceViolatingsitesList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
     }
     object ParamsResourceViolatingsitesList {
       
@@ -222,43 +224,42 @@ object adexperiencereportV1Mod {
     /**
       * Summary of the ad experience rating of a site for a specific platform.
       */
-    @js.native
     trait SchemaPlatformSummary extends StObject {
       
       /**
         * The status of the site reviewed for the Better Ads Standards.
         */
-      var betterAdsStatus: js.UndefOr[String] = js.native
+      var betterAdsStatus: js.UndefOr[String] = js.undefined
       
       /**
         * The date on which ad filtering begins.
         */
-      var enforcementTime: js.UndefOr[String] = js.native
+      var enforcementTime: js.UndefOr[String] = js.undefined
       
       /**
         * The ad filtering status of the site.
         */
-      var filterStatus: js.UndefOr[String] = js.native
+      var filterStatus: js.UndefOr[String] = js.undefined
       
       /**
         * The last time that the site changed status.
         */
-      var lastChangeTime: js.UndefOr[String] = js.native
+      var lastChangeTime: js.UndefOr[String] = js.undefined
       
       /**
         * The assigned regions for the site and platform.
         */
-      var region: js.UndefOr[js.Array[String]] = js.native
+      var region: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * A link that leads to a full ad experience report.
         */
-      var reportUrl: js.UndefOr[String] = js.native
+      var reportUrl: js.UndefOr[String] = js.undefined
       
       /**
         * Whether the site is currently under review.
         */
-      var underReview: js.UndefOr[Boolean] = js.native
+      var underReview: js.UndefOr[Boolean] = js.undefined
     }
     object SchemaPlatformSummary {
       
@@ -321,23 +322,22 @@ object adexperiencereportV1Mod {
     /**
       * Response message for GetSiteSummary.
       */
-    @js.native
     trait SchemaSiteSummaryResponse extends StObject {
       
       /**
         * Summary for the desktop review of the site.
         */
-      var desktopSummary: js.UndefOr[SchemaPlatformSummary] = js.native
+      var desktopSummary: js.UndefOr[SchemaPlatformSummary] = js.undefined
       
       /**
         * Summary for the mobile review of the site.
         */
-      var mobileSummary: js.UndefOr[SchemaPlatformSummary] = js.native
+      var mobileSummary: js.UndefOr[SchemaPlatformSummary] = js.undefined
       
       /**
         * The name of the site reviewed.
         */
-      var reviewedSite: js.UndefOr[String] = js.native
+      var reviewedSite: js.UndefOr[String] = js.undefined
     }
     object SchemaSiteSummaryResponse {
       
@@ -373,13 +373,12 @@ object adexperiencereportV1Mod {
     /**
       * Response message for ListViolatingSites.
       */
-    @js.native
     trait SchemaViolatingSitesResponse extends StObject {
       
       /**
         * A list of summaries of violating sites.
         */
-      var violatingSites: js.UndefOr[js.Array[SchemaSiteSummaryResponse]] = js.native
+      var violatingSites: js.UndefOr[js.Array[SchemaSiteSummaryResponse]] = js.undefined
     }
     object SchemaViolatingSitesResponse {
       
@@ -403,68 +402,67 @@ object adexperiencereportV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

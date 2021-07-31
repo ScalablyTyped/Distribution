@@ -5,29 +5,28 @@ import typings.babelTypes.babelTypesStrings.module
 import typings.babelTypes.babelTypesStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait Program_
-  extends Block
+- typings.babelTypes.mod._Node because Already inherited */ trait Program_
+  extends StObject
      with BaseNode
+     with Block
      with BlockParent
      with Scopable {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
-  var directives: js.Array[Directive_] = js.native
+  var directives: js.Array[Directive_]
   
-  var interpreter: InterpreterDirective_ | Null = js.native
+  var interpreter: InterpreterDirective_ | Null
   
-  var sourceFile: String = js.native
+  var sourceFile: String
   
-  var sourceType: script | module = js.native
+  var sourceType: script | module
   
   @JSName("type")
-  var type_Program_ : Program = js.native
+  var type_Program_ : Program
 }
 object Program_ {
   
@@ -36,11 +35,10 @@ object Program_ {
     body: js.Array[Statement],
     directives: js.Array[Directive_],
     sourceFile: String,
-    sourceType: script | module,
-    `type`: Program
+    sourceType: script | module
   ): Program_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any], end = null, innerComments = null, interpreter = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("Program")
     __obj.asInstanceOf[Program_]
   }
   

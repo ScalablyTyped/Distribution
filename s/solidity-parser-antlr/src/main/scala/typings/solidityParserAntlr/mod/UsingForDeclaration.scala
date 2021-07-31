@@ -2,31 +2,26 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsingForDeclaration
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var libraryName: String = js.native
+  var libraryName: String
   
-  var typeName: TypeName = js.native
+  var typeName: TypeName
   
   @JSName("type")
-  var type_UsingForDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration = js.native
+  var type_UsingForDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration
 }
 object UsingForDeclaration {
   
   @scala.inline
-  def apply(
-    libraryName: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration,
-    typeName: TypeName
-  ): UsingForDeclaration = {
+  def apply(libraryName: String, typeName: TypeName): UsingForDeclaration = {
     val __obj = js.Dynamic.literal(libraryName = libraryName.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UsingForDeclaration")
     __obj.asInstanceOf[UsingForDeclaration]
   }
   

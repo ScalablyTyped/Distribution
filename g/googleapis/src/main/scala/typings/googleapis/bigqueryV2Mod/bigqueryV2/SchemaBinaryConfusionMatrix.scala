@@ -2,49 +2,47 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Confusion matrix for binary classification models.
   */
-@js.native
 trait SchemaBinaryConfusionMatrix extends StObject {
   
   /**
     * Number of false samples predicted as false.
     */
-  var falseNegatives: js.UndefOr[String] = js.native
+  var falseNegatives: js.UndefOr[String] = js.undefined
   
   /**
     * Number of false samples predicted as true.
     */
-  var falsePositives: js.UndefOr[String] = js.native
+  var falsePositives: js.UndefOr[String] = js.undefined
   
   /**
     * Threshold value used when computing each of the following metric.
     */
-  var positiveClassThreshold: js.UndefOr[Double] = js.native
+  var positiveClassThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Aggregate precision.
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * Aggregate recall.
     */
-  var recall: js.UndefOr[Double] = js.native
+  var recall: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of true samples predicted as false.
     */
-  var trueNegatives: js.UndefOr[String] = js.native
+  var trueNegatives: js.UndefOr[String] = js.undefined
   
   /**
     * Number of true samples predicted as true.
     */
-  var truePositives: js.UndefOr[String] = js.native
+  var truePositives: js.UndefOr[String] = js.undefined
 }
 object SchemaBinaryConfusionMatrix {
   

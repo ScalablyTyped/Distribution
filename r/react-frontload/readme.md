@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-Bind Async Data Dependencies to React Components
+Simple full stack data loading for React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-frontload |
-| Keywords           | react, load, data, async, bind, server, server render, ssr, server-side rendering, server side rendering, server rendering |
+| Keywords           | react, data, load, loading, data loading, data-loading, fullstack, full-stack, full stack, async, SSR, ssr, server, server render, server rendering, server rendered, server-rendered |
 | # releases         | 7 |
-| # dependents       | 5 |
-| # downloads        | 270203 |
+| # dependents       | 6 |
+| # downloads        | 409906 |
 | # stars            | 0 |
 
 ## Links

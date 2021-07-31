@@ -3,21 +3,19 @@ package typings.fhirJsClient.FHIR.SMART
 import typings.fhirJsClient.anon.DictpropName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonQueryFilters extends StObject {
   
   /**
     * Number of return records requested. The server is not bound to return the number requested, but cannot return more
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * Addition filters to be applied on the history query. The object will be converted into query string parameters.
     */
-  var params: js.UndefOr[DictpropName] = js.native
+  var params: js.UndefOr[DictpropName] = js.undefined
   
   /**
     * Only include resource versions that were created at or after the given instant in time
@@ -27,7 +25,7 @@ trait CommonQueryFilters extends StObject {
     * use date and dateTime. instant is a more constrained dateTime xs:dateTime A JSON string - an xs:dateTime
     * Note: This type is for system times, not human times (see date and dateTime below).
     */
-  var since: js.UndefOr[String] = js.native
+  var since: js.UndefOr[String] = js.undefined
 }
 object CommonQueryFilters {
   

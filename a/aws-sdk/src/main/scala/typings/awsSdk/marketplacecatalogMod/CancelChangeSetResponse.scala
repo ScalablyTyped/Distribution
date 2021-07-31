@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelChangeSetResponse extends StObject {
   
   /**
     * The ARN associated with the change set referenced in this request.
     */
-  var ChangeSetArn: js.UndefOr[ARN] = js.native
+  var ChangeSetArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The unique identifier for the change set referenced in this request.
     */
-  var ChangeSetId: js.UndefOr[ResourceId] = js.native
+  var ChangeSetId: js.UndefOr[ResourceId] = js.undefined
 }
 object CancelChangeSetResponse {
   

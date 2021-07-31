@@ -4,69 +4,67 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.imagekit.mod.global.ImageKit.TransformationPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApertureValue extends StObject {
     
-    var ApertureValue: Double = js.native
+    var ApertureValue: Double
     
-    var ColorSpace: Double = js.native
+    var ColorSpace: Double
     
-    var CreateDate: String = js.native
+    var CreateDate: String
     
-    var CustomRendered: Double = js.native
+    var CustomRendered: Double
     
-    var DateTimeOriginal: String = js.native
+    var DateTimeOriginal: String
     
-    var ExifImageHeight: Double = js.native
+    var ExifImageHeight: Double
     
-    var ExifImageWidth: Double = js.native
+    var ExifImageWidth: Double
     
-    var ExifVersion: String = js.native
+    var ExifVersion: String
     
-    var ExposureCompensation: Double = js.native
+    var ExposureCompensation: Double
     
-    var ExposureMode: Double = js.native
+    var ExposureMode: Double
     
-    var ExposureProgram: Double = js.native
+    var ExposureProgram: Double
     
-    var ExposureTime: Double = js.native
+    var ExposureTime: Double
     
-    var FNumber: Double = js.native
+    var FNumber: Double
     
-    var Flash: Double = js.native
+    var Flash: Double
     
-    var FlashpixVersion: String = js.native
+    var FlashpixVersion: String
     
-    var FocalLength: Double = js.native
+    var FocalLength: Double
     
-    var FocalPlaneResolutionUnit: Double = js.native
+    var FocalPlaneResolutionUnit: Double
     
-    var FocalPlaneXResolution: Double = js.native
+    var FocalPlaneXResolution: Double
     
-    var FocalPlaneYResolution: Double = js.native
+    var FocalPlaneYResolution: Double
     
-    var ISO: Double = js.native
+    var ISO: Double
     
-    var InteropOffset: Double = js.native
+    var InteropOffset: Double
     
-    var MeteringMode: Double = js.native
+    var MeteringMode: Double
     
-    var SceneCaptureType: Double = js.native
+    var SceneCaptureType: Double
     
-    var ShutterSpeedValue: Double = js.native
+    var ShutterSpeedValue: Double
     
-    var SubSecTime: String = js.native
+    var SubSecTime: String
     
-    var SubSecTimeDigitized: String = js.native
+    var SubSecTimeDigitized: String
     
-    var SubSecTimeOriginal: String = js.native
+    var SubSecTimeOriginal: String
     
-    var WhiteBalance: Double = js.native
+    var WhiteBalance: Double
   }
   object ApertureValue {
     
@@ -194,20 +192,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Compression extends StObject {
     
-    var Compression: Double = js.native
+    var Compression: Double
     
-    var ResolutionUnit: Double = js.native
+    var ResolutionUnit: Double
     
-    var ThumbnailLength: Double = js.native
+    var ThumbnailLength: Double
     
-    var ThumbnailOffset: Double = js.native
+    var ThumbnailOffset: Double
     
-    var XResolution: Double = js.native
+    var XResolution: Double
     
-    var YResolution: Double = js.native
+    var YResolution: Double
   }
   object Compression {
     
@@ -247,20 +244,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Exif extends StObject {
     
-    var exif: ApertureValue = js.native
+    var exif: ApertureValue
     
-    var gps: GPSVersionID = js.native
+    var gps: GPSVersionID
     
-    var image: ExifOffset = js.native
+    var image: ExifOffset
     
-    var interoperability: InteropIndex = js.native
+    var interoperability: InteropIndex
     
-    var makernote: StringDictionary[String] = js.native
+    var makernote: StringDictionary[String]
     
-    var thumbnail: Compression = js.native
+    var thumbnail: Compression
   }
   object Exif {
     
@@ -300,30 +296,29 @@ object anon {
     }
   }
   
-  @js.native
   trait ExifOffset extends StObject {
     
-    var ExifOffset: Double = js.native
+    var ExifOffset: Double
     
-    var GPSInfo: Double = js.native
+    var GPSInfo: Double
     
-    var Make: String = js.native
+    var Make: String
     
-    var Model: String = js.native
+    var Model: String
     
-    var ModifyDate: String = js.native
+    var ModifyDate: String
     
-    var Orientation: Double = js.native
+    var Orientation: Double
     
-    var ResolutionUnit: Double = js.native
+    var ResolutionUnit: Double
     
-    var Software: String = js.native
+    var Software: String
     
-    var XResolution: Double = js.native
+    var XResolution: Double
     
-    var YCbCrPositioning: Double = js.native
+    var YCbCrPositioning: Double
     
-    var YResolution: Double = js.native
+    var YResolution: Double
   }
   object ExifOffset {
     
@@ -383,14 +378,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Expire extends StObject {
     
-    var expire: Double = js.native
+    var expire: Double
     
-    var signature: String = js.native
+    var signature: String
     
-    var token: String = js.native
+    var token: String
   }
   object Expire {
     
@@ -414,10 +408,9 @@ object anon {
     }
   }
   
-  @js.native
   trait GPSVersionID extends StObject {
     
-    var GPSVersionID: js.Array[Double] = js.native
+    var GPSVersionID: js.Array[Double]
   }
   object GPSVersionID {
     
@@ -438,12 +431,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InteropIndex extends StObject {
     
-    var InteropIndex: String = js.native
+    var InteropIndex: String
     
-    var InteropVersion: String = js.native
+    var InteropVersion: String
   }
   object InteropIndex {
     
@@ -464,16 +456,15 @@ object anon {
     }
   }
   
-  @js.native
   trait PrivateKey extends StObject {
     
-    var privateKey: String = js.native
+    var privateKey: String
     
-    var publicKey: String = js.native
+    var publicKey: String
     
-    var transformationPosition: js.UndefOr[TransformationPosition] = js.native
+    var transformationPosition: js.UndefOr[TransformationPosition] = js.undefined
     
-    var urlEndpoint: String = js.native
+    var urlEndpoint: String
   }
   object PrivateKey {
     

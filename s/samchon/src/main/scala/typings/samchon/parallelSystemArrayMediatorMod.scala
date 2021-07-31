@@ -5,7 +5,6 @@ import typings.samchon.parallelSystemArrayMod.ParallelSystemArray
 import typings.samchon.parallelSystemMod.ParallelSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parallelSystemArrayMediatorMod {

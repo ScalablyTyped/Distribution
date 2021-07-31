@@ -2,7 +2,6 @@ package typings.jpm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,15 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object simplePrefsMod {
   
-  @JSImport("sdk/simple-prefs", "on")
+  @JSImport("sdk/simple-prefs", JSImport.Namespace)
   @js.native
-  def on(prefName: String, listener: js.Function1[/* prefName */ String, _]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def on(prefName: String, listener: js.Function1[/* prefName */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(prefName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sdk/simple-prefs", "prefs")
   @js.native
   val prefs: js.Object = js.native
   
-  @JSImport("sdk/simple-prefs", "removeListener")
-  @js.native
-  def removeListener(prefName: String, listener: js.Function): Unit = js.native
+  @scala.inline
+  def removeListener(prefName: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(prefName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

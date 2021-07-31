@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hasFinalUrlBuilder[B] extends StObject {
   
-  def withFinalUrl(url: String): B = js.native
+  def withFinalUrl(url: String): B
   
-  def withMobileFinalUrl(url: String): B = js.native
+  def withMobileFinalUrl(url: String): B
 }
 object hasFinalUrlBuilder {
   
@@ -21,7 +19,7 @@ object hasFinalUrlBuilder {
   }
   
   @scala.inline
-  implicit class hasFinalUrlBuilderMutableBuilder[Self <: hasFinalUrlBuilder[_], B] (val x: Self with hasFinalUrlBuilder[B]) extends AnyVal {
+  implicit class hasFinalUrlBuilderMutableBuilder[Self <: hasFinalUrlBuilder[?], B] (val x: Self & hasFinalUrlBuilder[B]) extends AnyVal {
     
     @scala.inline
     def setWithFinalUrl(value: String => B): Self = StObject.set(x, "withFinalUrl", js.Any.fromFunction1(value))

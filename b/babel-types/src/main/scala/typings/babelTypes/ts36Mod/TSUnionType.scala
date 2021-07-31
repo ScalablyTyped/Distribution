@@ -2,18 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSUnionType
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
   @JSName("type")
-  var type_TSUnionType: typings.babelTypes.babelTypesStrings.TSUnionType = js.native
+  var type_TSUnionType: typings.babelTypes.babelTypesStrings.TSUnionType
   
-  var types: js.Array[TSType] = js.native
+  var types: js.Array[TSType]
 }
 object TSUnionType {
   

@@ -2,16 +2,14 @@ package typings.cordovaPluginNativeKeyboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeKeyboardHideOptions extends StObject {
   
   /**
     * A boolean flag inidicating if the keyboard should be shown/hidden with an animation
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
 }
 object NativeKeyboardHideOptions {
   

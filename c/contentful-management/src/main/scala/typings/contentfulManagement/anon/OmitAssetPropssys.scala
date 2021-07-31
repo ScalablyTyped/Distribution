@@ -3,16 +3,14 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.commonTypesMod.MetadataProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/asset.AssetProps, 'sys'> */
-@js.native
 trait OmitAssetPropssys extends StObject {
   
-  var fields: Description = js.native
+  var fields: Description
   
-  var metadata: js.UndefOr[MetadataProps] = js.native
+  var metadata: js.UndefOr[MetadataProps] = js.undefined
 }
 object OmitAssetPropssys {
   

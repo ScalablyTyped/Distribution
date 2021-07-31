@@ -2,23 +2,23 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait ContentToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait ContentToken
+  extends StObject
+     with TagToken {
   
   /**
     * Is this a block element
     */
-  var block: js.UndefOr[Boolean] = js.native
+  var block: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A text token has a `content` property. This is passed to
     * the corresponding renderer to be converted for output.
     */
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
 }
 object ContentToken {
   

@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasemapGalleryItem extends Accessor {
+trait BasemapGalleryItem
+  extends StObject
+     with Accessor {
   
   /**
     * The item's associated basemap.

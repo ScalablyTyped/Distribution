@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactNativeWindows.flyoutPropsMod.IFlyoutProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flyoutMod {
@@ -19,17 +18,19 @@ object flyoutMod {
   /* static members */
   object Flyout {
     
-    @JSImport("react-native-windows/Libraries/Components/Flyout/Flyout", "Flyout.getDerivedStateFromProps")
+    @JSImport("react-native-windows/Libraries/Components/Flyout/Flyout", "Flyout")
     @js.native
-    def getDerivedStateFromProps(nextProps: IFlyoutProps, prevState: IFlyoutTargetState): IFlyoutTargetState = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IFlyoutProps, prevState: IFlyoutTargetState): IFlyoutTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IFlyoutTargetState]
   }
   
-  @js.native
   trait IFlyoutTargetState extends StObject {
     
-    var target: js.UndefOr[Double | Null] = js.native
+    var target: js.UndefOr[Double | Null] = js.undefined
     
-    var targetRef: js.UndefOr[ReactNode] = js.native
+    var targetRef: js.UndefOr[ReactNode] = js.undefined
   }
   object IFlyoutTargetState {
     

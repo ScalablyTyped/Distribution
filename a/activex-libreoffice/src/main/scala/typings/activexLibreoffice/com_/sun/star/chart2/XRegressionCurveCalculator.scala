@@ -8,11 +8,11 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XRegressionCurveCalculator extends XInterface {
+trait XRegressionCurveCalculator
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the value of the correlation coefficient for the given regression. This value is often denoted as **r** or **R** .
@@ -20,13 +20,13 @@ trait XRegressionCurveCalculator extends XInterface {
     * The value of **r** is signed. Often **r**<sup>2</sup> is used instead of **r** to denote a regression curve's accuracy.
     * @returns The return value is the fraction of the variance in the data that is explained by the regression.
     */
-  val CorrelationCoefficient: Double = js.native
+  val CorrelationCoefficient: Double
   
   /**
     * Retrieve a string showing the regression curve's function with calculated parameters.
     * @returns The string returned contains the regression curve's formula in a form `"f(x) = ..."` , where the calculated parts are filled out. For a linear re
     */
-  val Representation: String = js.native
+  val Representation: String
   
   /**
     * Returns the value of the correlation coefficient for the given regression. This value is often denoted as **r** or **R** .
@@ -34,7 +34,7 @@ trait XRegressionCurveCalculator extends XInterface {
     * The value of **r** is signed. Often **r**<sup>2</sup> is used instead of **r** to denote a regression curve's accuracy.
     * @returns The return value is the fraction of the variance in the data that is explained by the regression.
     */
-  def getCorrelationCoefficient(): Double = js.native
+  def getCorrelationCoefficient(): Double
   
   /**
     * calculates the value of the regression curve for **x** .
@@ -42,7 +42,7 @@ trait XRegressionCurveCalculator extends XInterface {
     * @returns If **x** is element of the domain of the regression curve function, the result is its value.
     * @throws com::sun::star::lang::IllegalArgumentException If **x** is not part of the domain of the regression function.
     */
-  def getCurveValue(x: Double): Double = js.native
+  def getCurveValue(x: Double): Double
   
   /**
     * calculate multiple points of a regression curve at once. Note that this method may optimize the output by returning less points, e.g. for a line you
@@ -64,27 +64,27 @@ trait XRegressionCurveCalculator extends XInterface {
     xScalingX: XScaling,
     xScalingY: XScaling,
     bMaySkipPointsInCalculation: Boolean
-  ): SafeArray[RealPoint2D] = js.native
+  ): SafeArray[RealPoint2D]
   
   /**
     * Returns a representation using the given number format for formatting all numbers contained in the formula. Wrap equation to fit in nFormulaLength
     * characters
     * @see getRepresentation
     */
-  def getFormattedRepresentation(xNumFmtSupplier: XNumberFormatsSupplier, nNumberFormatKey: Double, nFormulaLength: Double): String = js.native
+  def getFormattedRepresentation(xNumFmtSupplier: XNumberFormatsSupplier, nNumberFormatKey: Double, nFormulaLength: Double): String
   
   /**
     * Retrieve a string showing the regression curve's function with calculated parameters.
     * @returns The string returned contains the regression curve's formula in a form `"f(x) = ..."` , where the calculated parts are filled out. For a linear re
     */
-  def getRepresentation(): String = js.native
+  def getRepresentation(): String
   
   /**
     * recalculates the parameters of the internal regression curve according to the **x** - and **y** -values given.
     * @param aXValues All x-values that represent the measurement points on which the regression is based
     * @param aYValues All y-values that represent the measurement points on which the regression is based
     */
-  def recalculateRegression(aXValues: SeqEquiv[Double], aYValues: SeqEquiv[Double]): Unit = js.native
+  def recalculateRegression(aXValues: SeqEquiv[Double], aYValues: SeqEquiv[Double]): Unit
   
   /**
     * set calculation properties for curve calculation.
@@ -93,14 +93,14 @@ trait XRegressionCurveCalculator extends XInterface {
     * @param forceIntercept Should force the intercept value.
     * @param interceptValue Intercept value.
     */
-  def setRegressionProperties(degree: Double, forceIntercept: Boolean, interceptValue: Double, period: Double): Unit = js.native
+  def setRegressionProperties(degree: Double, forceIntercept: Boolean, interceptValue: Double, period: Double): Unit
   
   /**
     * Set the names of X and Y variables of the equation to replace "x" and "f(x)" in representation
     * @param aXName string of the name of X variable
     * @param aYName string of the name of Y variable
     */
-  def setXYNames(aXName: String, aYName: String): Unit = js.native
+  def setXYNames(aXName: String, aYName: String): Unit
 }
 object XRegressionCurveCalculator {
   

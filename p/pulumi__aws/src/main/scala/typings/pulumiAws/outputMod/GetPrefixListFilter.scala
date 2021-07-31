@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPrefixListFilter extends StObject {
   
   /**
     * The name of the filter field. Valid values can be found in the [EC2 DescribePrefixLists API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribePrefixLists.html).
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Set of values that are accepted for the given filter field. Results will be selected if any given value matches.
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object GetPrefixListFilter {
   

@@ -3,32 +3,31 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultCachedVideo
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: video = js.native
+  var `type`: video
   
-  var video_file_id: String = js.native
+  var video_file_id: String
 }
 object InlineQueryResultCachedVideo {
   
   @scala.inline
-  def apply(id: String, title: String, `type`: video, video_file_id: String): InlineQueryResultCachedVideo = {
+  def apply(id: String, title: String, video_file_id: String): InlineQueryResultCachedVideo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], video_file_id = video_file_id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[InlineQueryResultCachedVideo]
   }
   

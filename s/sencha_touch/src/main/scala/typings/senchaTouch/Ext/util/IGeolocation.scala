@@ -3,100 +3,100 @@ package typings.senchaTouch.Ext.util
 import typings.senchaTouch.Ext.IEvented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeolocation extends IEvented {
+trait IGeolocation
+  extends StObject
+     with IEvented {
   
   /** [Property] (Number) */
-  var accuracy: js.UndefOr[Double] = js.native
+  var accuracy: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var allowHighAccuracy: js.UndefOr[Boolean] = js.native
+  var allowHighAccuracy: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Number) */
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var altitudeAccuracy: js.UndefOr[Double] = js.native
+  var altitudeAccuracy: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoUpdate: js.UndefOr[Boolean] = js.native
+  var autoUpdate: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
   
   /** [Method] Returns the value of allowHighAccuracy
     * @returns Boolean
     */
-  var getAllowHighAccuracy: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAllowHighAccuracy: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of autoUpdate
     * @returns Boolean
     */
-  var getAutoUpdate: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoUpdate: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of frequency
     * @returns Number
     */
-  var getFrequency: js.UndefOr[js.Function0[Double]] = js.native
+  var getFrequency: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of maximumAge
     * @returns Number
     */
-  var getMaximumAge: js.UndefOr[js.Function0[Double]] = js.native
+  var getMaximumAge: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of timeout
     * @returns Number
     */
-  var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
+  var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Property] (Number) */
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Number) */
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var maximumAge: js.UndefOr[Double] = js.native
+  var maximumAge: js.UndefOr[Double] = js.undefined
   
   /** [Method] Sets the value of allowHighAccuracy
     * @param allowHighAccuracy Boolean The new value.
     */
-  var setAllowHighAccuracy: js.UndefOr[js.Function1[/* allowHighAccuracy */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAllowHighAccuracy: js.UndefOr[js.Function1[/* allowHighAccuracy */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoUpdate
     * @param autoUpdate Boolean The new value.
     */
-  var setAutoUpdate: js.UndefOr[js.Function1[/* autoUpdate */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoUpdate: js.UndefOr[js.Function1[/* autoUpdate */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of frequency
     * @param frequency Number The new value.
     */
-  var setFrequency: js.UndefOr[js.Function1[/* frequency */ js.UndefOr[Double], Unit]] = js.native
+  var setFrequency: js.UndefOr[js.Function1[/* frequency */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of maximumAge
     * @param maximumAge Number The new value.
     */
-  var setMaximumAge: js.UndefOr[js.Function1[/* maximumAge */ js.UndefOr[Double], Unit]] = js.native
+  var setMaximumAge: js.UndefOr[js.Function1[/* maximumAge */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of timeout
     * @param timeout Number The new value.
     */
-  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
+  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Property] (Number) */
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Date) */
-  var timestamp: js.UndefOr[js.Any] = js.native
+  var timestamp: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Executes a onetime location update operation raising either a locationupdate or locationerror event
     * @param callback Function A callback method to be called when the location retrieval has been completed. Will be called on both success and failure. The method will be passed one parameter, Ext.util.Geolocation (this reference), set to null on failure. geo.updateLocation(function (geo) {  alert('Latitude: ' + (geo !== null ? geo.latitude : 'failed')); });
@@ -104,7 +104,7 @@ trait IGeolocation extends IEvented {
     */
   var updateLocation: js.UndefOr[
     js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object IGeolocation {
   

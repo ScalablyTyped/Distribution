@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,13 +16,13 @@ trait Effect extends StObject {
     *   tFromNow seconds
     */
   def amp(): Unit = js.native
-  def amp(vol: js.UndefOr[scala.Nothing], rampTime: js.UndefOr[scala.Nothing], tFromNow: Double): Unit = js.native
-  def amp(vol: js.UndefOr[scala.Nothing], rampTime: Double): Unit = js.native
-  def amp(vol: js.UndefOr[scala.Nothing], rampTime: Double, tFromNow: Double): Unit = js.native
   def amp(vol: Double): Unit = js.native
-  def amp(vol: Double, rampTime: js.UndefOr[scala.Nothing], tFromNow: Double): Unit = js.native
   def amp(vol: Double, rampTime: Double): Unit = js.native
   def amp(vol: Double, rampTime: Double, tFromNow: Double): Unit = js.native
+  def amp(vol: Double, rampTime: Unit, tFromNow: Double): Unit = js.native
+  def amp(vol: Unit, rampTime: Double): Unit = js.native
+  def amp(vol: Unit, rampTime: Double, tFromNow: Double): Unit = js.native
+  def amp(vol: Unit, rampTime: Unit, tFromNow: Double): Unit = js.native
   
   /**
     *   Link effects together in a chainExample usage:

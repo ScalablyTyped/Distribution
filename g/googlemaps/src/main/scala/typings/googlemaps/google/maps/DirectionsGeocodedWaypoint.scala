@@ -2,20 +2,18 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single geocoded waypoint.
   */
-@js.native
 trait DirectionsGeocodedWaypoint extends StObject {
   
-  var partial_match: Boolean = js.native
+  var partial_match: Boolean
   
-  var place_id: String = js.native
+  var place_id: String
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object DirectionsGeocodedWaypoint {
   

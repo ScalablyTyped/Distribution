@@ -2,15 +2,13 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionButton extends StObject {
   
-  def callback(): Unit = js.native
+  def callback(): Unit
   
-  var icon: String = js.native
+  var icon: String
 }
 object ActionButton {
   

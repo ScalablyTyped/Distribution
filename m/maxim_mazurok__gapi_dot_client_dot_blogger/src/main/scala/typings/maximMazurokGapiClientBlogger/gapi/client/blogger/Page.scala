@@ -4,47 +4,45 @@ import typings.maximMazurokGapiClientBlogger.anon.DisplayName
 import typings.maximMazurokGapiClientBlogger.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
   /** The author of this Page. */
-  var author: js.UndefOr[DisplayName] = js.native
+  var author: js.UndefOr[DisplayName] = js.undefined
   
   /** Data about the blog containing this Page. */
-  var blog: js.UndefOr[Id] = js.native
+  var blog: js.UndefOr[Id] = js.undefined
   
   /** The body content of this Page, in HTML. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** Etag of the resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The identifier for this resource. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of this entity. Always blogger#page. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** RFC 3339 date-time when this Page was published. */
-  var published: js.UndefOr[String] = js.native
+  var published: js.UndefOr[String] = js.undefined
   
   /** The API REST URL to fetch this resource from. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** The status of the page for admin resources (either LIVE or DRAFT). */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The title of this entity. This is the name displayed in the Admin user interface. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** RFC 3339 date-time when this Page was last updated. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** The URL that this Page is displayed at. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Page {
   

@@ -3,17 +3,15 @@ package typings.googleMapReact.anon
 import typings.googleMapReact.mod.Bounds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Center extends StObject {
   
-  var center: Lat = js.native
+  var center: Lat
   
-  var newBounds: Bounds = js.native
+  var newBounds: Bounds
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object Center {
   

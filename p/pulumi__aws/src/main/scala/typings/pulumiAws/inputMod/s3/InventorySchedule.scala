@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySchedule extends StObject {
   
   /**
     * Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
     */
-  var frequency: Input[String] = js.native
+  var frequency: Input[String]
 }
 object InventorySchedule {
   

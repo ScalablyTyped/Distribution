@@ -7,54 +7,52 @@ import typings.winrtUwp.Windows.Security.Cryptography.Certificates.ChainValidati
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket information on a StreamSocket object. */
-@js.native
 trait StreamSocketInformation extends StObject {
   
   /** Gets bandwidth information for network data transfer on a StreamSocket object. */
-  var bandwidthStatistics: BandwidthStatistics = js.native
+  var bandwidthStatistics: BandwidthStatistics
   
   /** Gets the local IP address associated with a StreamSocket object. */
-  var localAddress: HostName = js.native
+  var localAddress: HostName
   
   /** Get the TCP port number associated with a StreamSocket . */
-  var localPort: String = js.native
+  var localPort: String
   
   /** Gets the protection level that represents the integrity and encryption set on a StreamSocket object. */
-  var protectionLevel: SocketProtectionLevel = js.native
+  var protectionLevel: SocketProtectionLevel
   
   /** Get the IP address or hostname of the remote network destination associated with a StreamSocket object. */
-  var remoteAddress: HostName = js.native
+  var remoteAddress: HostName
   
   /** Get the hostname or IP address of the remote network destination associated with a StreamSocket object. */
-  var remoteHostName: HostName = js.native
+  var remoteHostName: HostName
   
   /** Get the TCP port number or service name of the remote network destination associated with a StreamSocket object. */
-  var remotePort: String = js.native
+  var remotePort: String
   
   /** Get the service name or TCP port number of the remote network destination associated with a StreamSocket object. */
-  var remoteServiceName: String = js.native
+  var remoteServiceName: String
   
   /** Gets round trip time information for a StreamSocket object. */
-  var roundTripTimeStatistics: RoundTripTimeStatistics = js.native
+  var roundTripTimeStatistics: RoundTripTimeStatistics
   
   /** Gets the certificate from the server when making an SSL connection with a StreamSocket . */
-  var serverCertificate: Certificate = js.native
+  var serverCertificate: Certificate
   
   /** Gets the category of an error that occurred making an SSL connection with a StreamSocket . */
-  var serverCertificateErrorSeverity: SocketSslErrorSeverity = js.native
+  var serverCertificateErrorSeverity: SocketSslErrorSeverity
   
   /** Gets the list of errors that occurred making an SSL connection with a StreamSocket . */
-  var serverCertificateErrors: IVectorView[ChainValidationResult] = js.native
+  var serverCertificateErrors: IVectorView[ChainValidationResult]
   
   /** Gets the intermediate certificates sent by the server during SSL negotiation when making an SSL connection with a StreamSocket . */
-  var serverIntermediateCertificates: IVectorView[Certificate] = js.native
+  var serverIntermediateCertificates: IVectorView[Certificate]
   
   /** Get a byte array that represents the private shared secret exchanged by proximity devices. */
-  var sessionKey: IBuffer = js.native
+  var sessionKey: IBuffer
 }
 object StreamSocketInformation {
   

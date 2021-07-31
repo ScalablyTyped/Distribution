@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.datatransfer.XTransferable
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provide access to a {@link com.sun.star.datatransfer.XTransferable} implementation from the object. */
-@js.native
-trait XTransferableSupplier extends XInterface {
+trait XTransferableSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * allows to get access to {@link com.sun.star.datatransfer.XTransferable} implementation.
     * @returns {@link com.sun.star.datatransfer.XTransferable} implementation
     */
-  val Transferable: XTransferable = js.native
+  val Transferable: XTransferable
   
   /**
     * allows to get access to {@link com.sun.star.datatransfer.XTransferable} implementation.
     * @returns {@link com.sun.star.datatransfer.XTransferable} implementation
     */
-  def getTransferable(): XTransferable = js.native
+  def getTransferable(): XTransferable
 }
 object XTransferableSupplier {
   

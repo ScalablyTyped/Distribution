@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationSettings extends StObject {
   
   /** The configuration used for Asset Discovery runs. */
-  var assetDiscoveryConfig: js.UndefOr[AssetDiscoveryConfig] = js.native
+  var assetDiscoveryConfig: js.UndefOr[AssetDiscoveryConfig] = js.undefined
   
   /**
     * A flag that indicates if Asset Discovery should be enabled. If the flag is set to `true`, then discovery of assets will occur. If it is set to `false, all historical assets will
     * remain, but discovery of future assets will not occur.
     */
-  var enableAssetDiscovery: js.UndefOr[Boolean] = js.native
+  var enableAssetDiscovery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The relative resource name of the settings. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example:
     * "organizations/{organization_id}/organizationSettings".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object OrganizationSettings {
   

@@ -2,15 +2,13 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRAnchor extends StObject {
   
-  var anchorSpace: XRSpace = js.native
+  var anchorSpace: XRSpace
   
-  def delete(): Unit = js.native
+  def delete(): Unit
 }
 object XRAnchor {
   

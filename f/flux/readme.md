@@ -10,13 +10,13 @@ An application architecture based on a unidirectional data flow
 | ------------------ | :-------------: |
 | Full name          | flux |
 | Keywords           | flux, react, facebook, dispatcher |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 374 |
-| # downloads        | 11990300 |
+| # downloads        | 14288606 |
 | # stars            | 73 |
 
 ## Links
-- [Homepage](http://facebook.github.io/flux/)
+- [Homepage](https://facebook.github.io/flux/)
 - [Bugs](https://github.com/facebook/flux/issues)
 - [Repository](https://github.com/facebook/flux)
 - [Npm](https://www.npmjs.com/package/flux)

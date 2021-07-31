@@ -3,7 +3,6 @@ package typings.fridaGum.global
 import typings.fridaGum.CSymbols
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("CModule")
 @js.native
 class CModule protected ()
-  extends typings.fridaGum.CModule {
+  extends StObject
+     with typings.fridaGum.CModule {
   /**
     * Creates a new C module by compiling the provided C source code to machine
     * code, straight to memory.
@@ -44,4 +44,11 @@ class CModule protected ()
     */
   def this(source: String) = this()
   def this(source: String, symbols: CSymbols) = this()
+  
+  /**
+    * Eagerly unmaps the module from memory. Useful for short-lived modules
+    * when waiting for a future garbage collection isn't desirable.
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }

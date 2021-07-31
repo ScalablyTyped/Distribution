@@ -4,7 +4,6 @@ import typings.sharepoint.SP.Taxonomy.Term
 import typings.sharepoint.SP.Taxonomy.TermSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Publishing {
@@ -12,85 +11,182 @@ object Publishing {
   @JSGlobal("SP.Publishing.AddinPlugin")
   @js.native
   class AddinPlugin protected ()
-    extends typings.sharepoint.SP.Publishing.AddinPlugin {
+    extends StObject
+       with typings.sharepoint.SP.Publishing.AddinPlugin {
     def this(ctx: typings.sharepoint.SP.ClientContext) = this()
   }
   
   @JSGlobal("SP.Publishing.AddinSettings")
   @js.native
   class AddinSettings protected ()
-    extends typings.sharepoint.SP.Publishing.AddinSettings {
+    extends StObject
+       with typings.sharepoint.SP.Publishing.AddinSettings {
     def this(ctx: typings.sharepoint.SP.ClientContext, id: typings.sharepoint.SP.Guid) = this()
   }
   
   @JSGlobal("SP.Publishing.CustomizableString")
   @js.native
   class CustomizableString ()
-    extends typings.sharepoint.SP.Publishing.CustomizableString
+    extends StObject
+       with typings.sharepoint.SP.Publishing.CustomizableString
   
   @JSGlobal("SP.Publishing.DesignPackage")
   @js.native
   class DesignPackage ()
-    extends typings.sharepoint.SP.Publishing.DesignPackage
+    extends StObject
+       with typings.sharepoint.SP.Publishing.DesignPackage
   object DesignPackage {
     
-    /* static member */
-    @JSGlobal("SP.Publishing.DesignPackage.apply")
+    @JSGlobal("SP.Publishing.DesignPackage")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def apply(
       context: typings.sharepoint.SP.ClientContext,
       site: typings.sharepoint.SP.Site,
       info: typings.sharepoint.SP.Publishing.DesignPackageInfo
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SP.Publishing.DesignPackage.exportEnterprise")
-    @js.native
+    @scala.inline
     def exportEnterprise(
       context: typings.sharepoint.SP.ClientContext,
       site: typings.sharepoint.SP.Site,
       includeSearchConfiguration: Boolean
-    ): typings.sharepoint.SP.ClientResult[typings.sharepoint.SP.Publishing.DesignPackageInfo] = js.native
+    ): typings.sharepoint.SP.ClientResult[typings.sharepoint.SP.Publishing.DesignPackageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportEnterprise")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any], includeSearchConfiguration.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientResult[typings.sharepoint.SP.Publishing.DesignPackageInfo]]
     
     /* static member */
-    @JSGlobal("SP.Publishing.DesignPackage.exportSmallBusiness")
-    @js.native
+    @scala.inline
     def exportSmallBusiness(
       context: typings.sharepoint.SP.ClientContext,
       site: typings.sharepoint.SP.Site,
       packageName: String,
       includeSearchConfiguration: Boolean
-    ): typings.sharepoint.SP.ClientResult[typings.sharepoint.SP.Publishing.DesignPackageInfo] = js.native
+    ): typings.sharepoint.SP.ClientResult[typings.sharepoint.SP.Publishing.DesignPackageInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportSmallBusiness")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any], packageName.asInstanceOf[js.Any], includeSearchConfiguration.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientResult[typings.sharepoint.SP.Publishing.DesignPackageInfo]]
     
     /* static member */
-    @JSGlobal("SP.Publishing.DesignPackage.install")
-    @js.native
+    @scala.inline
     def install(
       context: typings.sharepoint.SP.ClientContext,
       site: typings.sharepoint.SP.Site,
       info: typings.sharepoint.SP.Publishing.DesignPackageInfo,
       path: String
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any], info.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SP.Publishing.DesignPackage.uninstall")
-    @js.native
+    @scala.inline
     def uninstall(
       context: typings.sharepoint.SP.ClientContext,
       site: typings.sharepoint.SP.Site,
       info: typings.sharepoint.SP.Publishing.DesignPackageInfo
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("SP.Publishing.DesignPackageInfo")
   @js.native
   class DesignPackageInfo ()
-    extends typings.sharepoint.SP.Publishing.DesignPackageInfo
+    extends StObject
+       with typings.sharepoint.SP.Publishing.DesignPackageInfo {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_majorVersion(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_minorVersion(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_packageGuid(): typings.sharepoint.SP.Guid = js.native
+    
+    /* CompleteClass */
+    override def get_packageName(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_majorVersion(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_minorVersion(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_packageGuid(value: typings.sharepoint.SP.Guid): typings.sharepoint.SP.Guid = js.native
+    
+    /* CompleteClass */
+    override def set_packageName(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Unit = js.native
+  }
   
   @JSGlobal("SP.Publishing.ImageRendition")
   @js.native
   class ImageRendition ()
-    extends typings.sharepoint.SP.Publishing.ImageRendition
+    extends StObject
+       with typings.sharepoint.SP.Publishing.ImageRendition {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_height(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_id(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_name(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_version(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_width(): Double = js.native
+    
+    /* CompleteClass */
+    override def set_height(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_name(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_width(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Unit = js.native
+  }
   
   object Navigation {
     
@@ -99,76 +195,84 @@ object Publishing {
     object NavigationLinkType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType & Double] = js.native
       
-      /* 1 */ val friendlyUrl: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.friendlyUrl with Double = js.native
+      /* 1 */ val friendlyUrl: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.friendlyUrl & Double = js.native
       
-      /* 0 */ val root: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.root with Double = js.native
+      /* 0 */ val root: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.root & Double = js.native
       
-      /* 2 */ val simpleLink: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.simpleLink with Double = js.native
+      /* 2 */ val simpleLink: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.simpleLink & Double = js.native
     }
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTerm")
     @js.native
     class NavigationTerm ()
-      extends typings.sharepoint.SP.Publishing.Navigation.NavigationTerm
+      extends StObject
+         with typings.sharepoint.SP.Publishing.Navigation.NavigationTerm
     object NavigationTerm {
       
-      /* static member */
-      @JSGlobal("SP.Publishing.Navigation.NavigationTerm.getAsResolvedByView")
+      @JSGlobal("SP.Publishing.Navigation.NavigationTerm")
       @js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
       def getAsResolvedByView(
         context: typings.sharepoint.SP.ClientContext,
         term: Term,
         view: typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView
-      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTerm = js.native
+      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTerm = (^.asInstanceOf[js.Dynamic].applyDynamic("getAsResolvedByView")(context.asInstanceOf[js.Any], term.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.Navigation.NavigationTerm]
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.NavigationTerm.getAsResolvedByWeb")
-      @js.native
+      @scala.inline
       def getAsResolvedByWeb(
         context: typings.sharepoint.SP.ClientContext,
         term: Term,
         web: typings.sharepoint.SP.Web,
         siteMapProviderName: String
-      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTerm = js.native
+      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTerm = (^.asInstanceOf[js.Dynamic].applyDynamic("getAsResolvedByWeb")(context.asInstanceOf[js.Any], term.asInstanceOf[js.Any], web.asInstanceOf[js.Any], siteMapProviderName.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.Navigation.NavigationTerm]
     }
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTermSet")
     @js.native
     class NavigationTermSet ()
-      extends typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet
+      extends StObject
+         with typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet
     object NavigationTermSet {
       
-      /* static member */
-      @JSGlobal("SP.Publishing.Navigation.NavigationTermSet.getAsResolvedByView")
+      @JSGlobal("SP.Publishing.Navigation.NavigationTermSet")
       @js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
       def getAsResolvedByView(
         context: typings.sharepoint.SP.ClientContext,
         termSet: TermSet,
         view: typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView
-      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet = js.native
+      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet = (^.asInstanceOf[js.Dynamic].applyDynamic("getAsResolvedByView")(context.asInstanceOf[js.Any], termSet.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet]
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.NavigationTermSet.getAsResolvedByWeb")
-      @js.native
+      @scala.inline
       def getAsResolvedByWeb(
         context: typings.sharepoint.SP.ClientContext,
         termSet: TermSet,
         web: typings.sharepoint.SP.Web,
         siteMapProviderName: String
-      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet = js.native
+      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet = (^.asInstanceOf[js.Dynamic].applyDynamic("getAsResolvedByWeb")(context.asInstanceOf[js.Any], termSet.asInstanceOf[js.Any], web.asInstanceOf[js.Any], siteMapProviderName.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet]
     }
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTermSetItem")
     @js.native
     class NavigationTermSetItem ()
-      extends typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetItem
+      extends StObject
+         with typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetItem
     
     @JSGlobal("SP.Publishing.Navigation.NavigationTermSetView")
     @js.native
     class NavigationTermSetView protected ()
-      extends typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView {
+      extends StObject
+         with typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView {
       def this(
         context: typings.sharepoint.SP.ClientContext,
         web: typings.sharepoint.SP.Web,
@@ -177,93 +281,96 @@ object Publishing {
     }
     object NavigationTermSetView {
       
-      /* static member */
-      @JSGlobal("SP.Publishing.Navigation.NavigationTermSetView.createEmptyInstance")
+      @JSGlobal("SP.Publishing.Navigation.NavigationTermSetView")
       @js.native
-      def createEmptyInstance(context: typings.sharepoint.SP.ClientContext): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView = js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
+      def createEmptyInstance(context: typings.sharepoint.SP.ClientContext): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyInstance")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.Publishing.Navigation.NavigationTermSetView]
     }
     
     @JSGlobal("SP.Publishing.Navigation.StandardNavigationSettings")
     @js.native
     class StandardNavigationSettings ()
-      extends typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSettings
+      extends StObject
+         with typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSettings
     
     @JSGlobal("SP.Publishing.Navigation.StandardNavigationSource")
     @js.native
     object StandardNavigationSource extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource & Double] = js.native
       
-      /* 3 */ val inheritFromParentWeb: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.inheritFromParentWeb with Double = js.native
+      /* 3 */ val inheritFromParentWeb: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.inheritFromParentWeb & Double = js.native
       
-      /* 1 */ val portalProvider: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.portalProvider with Double = js.native
+      /* 1 */ val portalProvider: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.portalProvider & Double = js.native
       
-      /* 2 */ val taxonomyProvider: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.taxonomyProvider with Double = js.native
+      /* 2 */ val taxonomyProvider: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.taxonomyProvider & Double = js.native
       
-      /* 0 */ val unknown: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.unknown with Double = js.native
+      /* 0 */ val unknown: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.unknown & Double = js.native
     }
     
     @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation")
     @js.native
     class TaxonomyNavigation ()
-      extends typings.sharepoint.SP.Publishing.Navigation.TaxonomyNavigation
+      extends StObject
+         with typings.sharepoint.SP.Publishing.Navigation.TaxonomyNavigation
     object TaxonomyNavigation {
       
-      /* static member */
-      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation.flushSiteFromCache")
+      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation")
       @js.native
-      def flushSiteFromCache(context: typings.sharepoint.SP.ClientContext, site: typings.sharepoint.SP.Site): Unit = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation.flushTermSetFromCache")
-      @js.native
+      @scala.inline
+      def flushSiteFromCache(context: typings.sharepoint.SP.ClientContext, site: typings.sharepoint.SP.Site): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flushSiteFromCache")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      /* static member */
+      @scala.inline
       def flushTermSetFromCache(
         context: typings.sharepoint.SP.ClientContext,
         webForPermissions: typings.sharepoint.SP.Web,
         termStoreId: typings.sharepoint.SP.Guid,
         termSetId: typings.sharepoint.SP.Guid
-      ): Unit = js.native
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flushTermSetFromCache")(context.asInstanceOf[js.Any], webForPermissions.asInstanceOf[js.Any], termStoreId.asInstanceOf[js.Any], termSetId.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation.flushWebFromCache")
-      @js.native
-      def flushWebFromCache(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): Unit = js.native
+      @scala.inline
+      def flushWebFromCache(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flushWebFromCache")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation.getNavigationLcidForWeb")
-      @js.native
-      def getNavigationLcidForWeb(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.IntResult = js.native
+      @scala.inline
+      def getNavigationLcidForWeb(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.IntResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationLcidForWeb")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.IntResult]
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation.getTermSetForWeb")
-      @js.native
+      @scala.inline
       def getTermSetForWeb(
         context: typings.sharepoint.SP.ClientContext,
         web: typings.sharepoint.SP.Web,
         siteMapProviderName: String,
         includeInheritedSettings: Boolean
-      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet = js.native
+      ): typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet = (^.asInstanceOf[js.Dynamic].applyDynamic("getTermSetForWeb")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any], siteMapProviderName.asInstanceOf[js.Any], includeInheritedSettings.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.Navigation.NavigationTermSet]
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation.getWebNavigationSettings")
-      @js.native
-      def getWebNavigationSettings(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.Publishing.Navigation.WebNavigationSettings = js.native
+      @scala.inline
+      def getWebNavigationSettings(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.Publishing.Navigation.WebNavigationSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebNavigationSettings")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.Navigation.WebNavigationSettings]
       
       /* static member */
-      @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation.setCrawlAsFriendlyUrlPage")
-      @js.native
+      @scala.inline
       def setCrawlAsFriendlyUrlPage(
         context: typings.sharepoint.SP.ClientContext,
         navigationTerm: Term,
         crawlAsFriendlyUrlPage: Boolean
-      ): typings.sharepoint.SP.BooleanResult = js.native
+      ): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("setCrawlAsFriendlyUrlPage")(context.asInstanceOf[js.Any], navigationTerm.asInstanceOf[js.Any], crawlAsFriendlyUrlPage.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
     }
     
     @JSGlobal("SP.Publishing.Navigation.WebNavigationSettings")
     @js.native
     class WebNavigationSettings protected ()
-      extends typings.sharepoint.SP.Publishing.Navigation.WebNavigationSettings {
+      extends StObject
+         with typings.sharepoint.SP.Publishing.Navigation.WebNavigationSettings {
       def this(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web) = this()
     }
   }
@@ -271,145 +378,260 @@ object Publishing {
   @JSGlobal("SP.Publishing.PageLayoutCreationInformation")
   @js.native
   class PageLayoutCreationInformation ()
-    extends typings.sharepoint.SP.Publishing.PageLayoutCreationInformation
+    extends StObject
+       with typings.sharepoint.SP.Publishing.PageLayoutCreationInformation {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_associatedContentTypeId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_masterPageUrl(): String = js.native
+    
+    /* CompleteClass */
+    override def get_newPageLayoutEditablePath(): String = js.native
+    
+    /* CompleteClass */
+    override def get_newPageLayoutNameWithoutExtension(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_web(): typings.sharepoint.SP.Web = js.native
+    
+    /* CompleteClass */
+    override def set_associatedContentTypeId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_masterPageUrl(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_newPageLayoutEditablePath(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_newPageLayoutNameWithoutExtension(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_web(value: typings.sharepoint.SP.Web): typings.sharepoint.SP.Web = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Unit = js.native
+  }
   
   @JSGlobal("SP.Publishing.PublishingPage")
   @js.native
   class PublishingPage ()
-    extends typings.sharepoint.SP.Publishing.PublishingPage
+    extends StObject
+       with typings.sharepoint.SP.Publishing.PublishingPage
   object PublishingPage {
     
-    /* static member */
-    @JSGlobal("SP.Publishing.PublishingPage.getPublishingPage")
+    @JSGlobal("SP.Publishing.PublishingPage")
     @js.native
-    def getPublishingPage(context: typings.sharepoint.SP.ClientContext, sourceListItem: typings.sharepoint.SP.ListItem[_]): typings.sharepoint.SP.Publishing.PublishingPage = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def getPublishingPage(
+      context: typings.sharepoint.SP.ClientContext,
+      sourceListItem: typings.sharepoint.SP.ListItem[js.Any]
+    ): typings.sharepoint.SP.Publishing.PublishingPage = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublishingPage")(context.asInstanceOf[js.Any], sourceListItem.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.PublishingPage]
   }
   
   @JSGlobal("SP.Publishing.PublishingPageInformation")
   @js.native
   class PublishingPageInformation ()
-    extends typings.sharepoint.SP.Publishing.PublishingPageInformation
+    extends StObject
+       with typings.sharepoint.SP.Publishing.PublishingPageInformation {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_folder(): typings.sharepoint.SP.Folder = js.native
+    
+    /* CompleteClass */
+    override def get_name(): String = js.native
+    
+    /* CompleteClass */
+    override def get_pageLayoutListItem(): typings.sharepoint.SP.ListItem[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_folder(value: typings.sharepoint.SP.Folder): typings.sharepoint.SP.Folder = js.native
+    
+    /* CompleteClass */
+    override def set_name(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_pageLayoutListItem(value: typings.sharepoint.SP.ListItem[js.Any]): typings.sharepoint.SP.ListItem[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(
+      writer: typings.sharepoint.SP.XmlWriter,
+      serializationContext: typings.sharepoint.SP.SerializationContext
+    ): Unit = js.native
+  }
   
   @JSGlobal("SP.Publishing.PublishingSite")
   @js.native
   class PublishingSite ()
-    extends typings.sharepoint.SP.ClientObject
+    extends StObject
+       with typings.sharepoint.SP.ClientObject
   object PublishingSite {
     
-    /* static member */
-    @JSGlobal("SP.Publishing.PublishingSite.createPageLayout")
+    @JSGlobal("SP.Publishing.PublishingSite")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def createPageLayout(
       context: typings.sharepoint.SP.ClientContext,
       parameters: typings.sharepoint.SP.Publishing.PageLayoutCreationInformation
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPageLayout")(context.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("SP.Publishing.PublishingWeb")
   @js.native
   class PublishingWeb ()
-    extends typings.sharepoint.SP.Publishing.PublishingWeb
+    extends StObject
+       with typings.sharepoint.SP.Publishing.PublishingWeb
   object PublishingWeb {
     
-    /* static member */
-    @JSGlobal("SP.Publishing.PublishingWeb.getPublishingWeb")
+    @JSGlobal("SP.Publishing.PublishingWeb")
     @js.native
-    def getPublishingWeb(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.Publishing.PublishingWeb = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def getPublishingWeb(context: typings.sharepoint.SP.ClientContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.Publishing.PublishingWeb = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublishingWeb")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.PublishingWeb]
   }
   
   @JSGlobal("SP.Publishing.ScheduledItem")
   @js.native
   class ScheduledItem ()
-    extends typings.sharepoint.SP.Publishing.ScheduledItem
+    extends StObject
+       with typings.sharepoint.SP.Publishing.ScheduledItem
   
   @JSGlobal("SP.Publishing.SiteImageRenditions")
   @js.native
   class SiteImageRenditions ()
-    extends typings.sharepoint.SP.Publishing.SiteImageRenditions
+    extends StObject
+       with typings.sharepoint.SP.Publishing.SiteImageRenditions
   object SiteImageRenditions {
     
-    /* static member */
-    @JSGlobal("SP.Publishing.SiteImageRenditions.getRenditions")
+    @JSGlobal("SP.Publishing.SiteImageRenditions")
     @js.native
-    def getRenditions(context: typings.sharepoint.SP.ClientContext): js.Array[typings.sharepoint.SP.Publishing.ImageRendition] = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("SP.Publishing.SiteImageRenditions.setRenditions")
-    @js.native
+    @scala.inline
+    def getRenditions(context: typings.sharepoint.SP.ClientContext): js.Array[typings.sharepoint.SP.Publishing.ImageRendition] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRenditions")(context.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sharepoint.SP.Publishing.ImageRendition]]
+    
+    /* static member */
+    @scala.inline
     def setRenditions(
       context: typings.sharepoint.SP.ClientContext,
       renditions: js.Array[typings.sharepoint.SP.Publishing.ImageRendition]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRenditions")(context.asInstanceOf[js.Any], renditions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("SP.Publishing.SiteServicesAddins")
   @js.native
   class SiteServicesAddins ()
-    extends typings.sharepoint.SP.Publishing.SiteServicesAddins
+    extends StObject
+       with typings.sharepoint.SP.Publishing.SiteServicesAddins
   object SiteServicesAddins {
     
-    /* static member */
-    @JSGlobal("SP.Publishing.SiteServicesAddins.deletePlugin")
+    @JSGlobal("SP.Publishing.SiteServicesAddins")
     @js.native
-    def deletePlugin(context: typings.sharepoint.SP.ClientContext, pluginName: String): Unit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("SP.Publishing.SiteServicesAddins.deleteSettings")
-    @js.native
-    def deleteSettings(context: typings.sharepoint.SP.ClientContext, addinId: typings.sharepoint.SP.Guid): Unit = js.native
+    @scala.inline
+    def deletePlugin(context: typings.sharepoint.SP.ClientContext, pluginName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deletePlugin")(context.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SP.Publishing.SiteServicesAddins.getPlugin")
-    @js.native
-    def getPlugin(context: typings.sharepoint.SP.ClientContext, pluginName: String): typings.sharepoint.SP.Publishing.AddinPlugin = js.native
+    @scala.inline
+    def deleteSettings(context: typings.sharepoint.SP.ClientContext, addinId: typings.sharepoint.SP.Guid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteSettings")(context.asInstanceOf[js.Any], addinId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SP.Publishing.SiteServicesAddins.getSettings")
-    @js.native
-    def getSettings(context: typings.sharepoint.SP.ClientContext, addinId: typings.sharepoint.SP.Guid): typings.sharepoint.SP.Publishing.AddinSettings = js.native
+    @scala.inline
+    def getPlugin(context: typings.sharepoint.SP.ClientContext, pluginName: String): typings.sharepoint.SP.Publishing.AddinPlugin = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(context.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.AddinPlugin]
     
     /* static member */
-    @JSGlobal("SP.Publishing.SiteServicesAddins.setPlugin")
-    @js.native
-    def setPlugin(context: typings.sharepoint.SP.ClientContext, addin: typings.sharepoint.SP.Publishing.AddinPlugin): Unit = js.native
+    @scala.inline
+    def getSettings(context: typings.sharepoint.SP.ClientContext, addinId: typings.sharepoint.SP.Guid): typings.sharepoint.SP.Publishing.AddinSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(context.asInstanceOf[js.Any], addinId.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.Publishing.AddinSettings]
     
     /* static member */
-    @JSGlobal("SP.Publishing.SiteServicesAddins.setSettings")
-    @js.native
+    @scala.inline
+    def setPlugin(context: typings.sharepoint.SP.ClientContext, addin: typings.sharepoint.SP.Publishing.AddinPlugin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPlugin")(context.asInstanceOf[js.Any], addin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /* static member */
+    @scala.inline
     def setSettings(
       context: typings.sharepoint.SP.ClientContext,
       addin: typings.sharepoint.SP.Publishing.AddinSettings
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSettings")(context.asInstanceOf[js.Any], addin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("SP.Publishing.VariationLabel")
   @js.native
   class VariationLabel ()
-    extends typings.sharepoint.SP.Publishing.VariationLabel
+    extends StObject
+       with typings.sharepoint.SP.Publishing.VariationLabel
   
   @JSGlobal("SP.Publishing.Variations")
   @js.native
   class Variations ()
-    extends typings.sharepoint.SP.ClientObject
+    extends StObject
+       with typings.sharepoint.SP.ClientObject
   object Variations {
     
-    /* static member */
-    @JSGlobal("SP.Publishing.Variations.getLabels")
+    @JSGlobal("SP.Publishing.Variations")
     @js.native
-    def getLabels(context: typings.sharepoint.SP.ClientContext): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.Publishing.VariationLabel] = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("SP.Publishing.Variations.getPeerUrl")
-    @js.native
-    def getPeerUrl(context: typings.sharepoint.SP.ClientContext, currentUrl: String, labelTitle: String): typings.sharepoint.SP.StringResult = js.native
+    @scala.inline
+    def getLabels(context: typings.sharepoint.SP.ClientContext): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.Publishing.VariationLabel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLabels")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.Publishing.VariationLabel]]
     
     /* static member */
-    @JSGlobal("SP.Publishing.Variations.updateListItems")
-    @js.native
+    @scala.inline
+    def getPeerUrl(context: typings.sharepoint.SP.ClientContext, currentUrl: String, labelTitle: String): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeerUrl")(context.asInstanceOf[js.Any], currentUrl.asInstanceOf[js.Any], labelTitle.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]
+    
+    /* static member */
+    @scala.inline
     def updateListItems(
       context: typings.sharepoint.SP.ClientContext,
       listId: typings.sharepoint.SP.Guid,
       itemIds: js.Array[Double]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateListItems")(context.asInstanceOf[js.Any], listId.asInstanceOf[js.Any], itemIds.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

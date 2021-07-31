@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3AccessPointMod {
@@ -81,6 +80,10 @@ object s3AccessPointMod {
   /* static members */
   object AccessPoint {
     
+    @JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AccessPoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -90,60 +93,54 @@ object s3AccessPointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AccessPoint = js.native
-    @JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccessPoint = js.native
-    @JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = js.native
-    @JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
     
     /**
       * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean]
   }
   
-  @js.native
   trait AccessPointArgs extends StObject {
     
     /**
       * The AWS account ID for the owner of the bucket for which you want to create an access point. Defaults to automatically determined account ID of the provider.
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of an AWS Partition S3 Bucket or the Amazon Resource Name (ARN) of S3 on Outposts Bucket that you want to associate this access point with.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * The name you want to assign to this access point.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid JSON document that specifies the policy that you want to apply to this access point.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to manage the `PublicAccessBlock` configuration that you want to apply to this Amazon S3 bucket. You can enable the configuration options in any combination. Detailed below.
       */
-    val publicAccessBlockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]] = js.native
+    val publicAccessBlockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]] = js.undefined
     
     /**
       * Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.
       */
-    val vpcConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]] = js.native
+    val vpcConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]] = js.undefined
   }
   object AccessPointArgs {
     
@@ -191,59 +188,58 @@ object s3AccessPointMod {
     }
   }
   
-  @js.native
   trait AccessPointState extends StObject {
     
     /**
       * The AWS account ID for the owner of the bucket for which you want to create an access point. Defaults to automatically determined account ID of the provider.
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the S3 Access Point.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of an AWS Partition S3 Bucket or the Amazon Resource Name (ARN) of S3 on Outposts Bucket that you want to associate this access point with.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS domain name of the S3 Access Point in the format _`name`_-_`accountId`_.s3-accesspoint._region_.amazonaws.com.
       * Note: S3 access points only support secure access by HTTPS. HTTP isn't supported.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether this access point currently has a policy that allows public access.
       */
-    val hasPublicAccessPolicy: js.UndefOr[Input[Boolean]] = js.native
+    val hasPublicAccessPolicy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name you want to assign to this access point.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether this access point allows access from the public Internet. Values are `VPC` (the access point doesn't allow access from the public Internet) and `Internet` (the access point allows access from the public Internet, subject to the access point and bucket access policies).
       */
-    val networkOrigin: js.UndefOr[Input[String]] = js.native
+    val networkOrigin: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid JSON document that specifies the policy that you want to apply to this access point.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to manage the `PublicAccessBlock` configuration that you want to apply to this Amazon S3 bucket. You can enable the configuration options in any combination. Detailed below.
       */
-    val publicAccessBlockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]] = js.native
+    val publicAccessBlockConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]] = js.undefined
     
     /**
       * Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.
       */
-    val vpcConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]] = js.native
+    val vpcConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]] = js.undefined
   }
   object AccessPointState {
     

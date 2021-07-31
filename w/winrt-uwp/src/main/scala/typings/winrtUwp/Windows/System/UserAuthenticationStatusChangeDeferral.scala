@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a user authentication status change deferral returned by the UserAuthenticationStatusChangingEventArgs.GetDeferral method. */
-@js.native
 trait UserAuthenticationStatusChangeDeferral extends StObject {
   
   /** Reports that the application has completed its user authentication status change deferral. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object UserAuthenticationStatusChangeDeferral {
   

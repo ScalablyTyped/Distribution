@@ -11,8 +11,8 @@ React Bootstrap 4 components
 | Full name          | reactstrap |
 | Keywords           | reactstrap, bootstrap, react, component, components, react-component, ui |
 | # releases         | 16 |
-| # dependents       | 685 |
-| # downloads        | 16086840 |
+| # dependents       | 740 |
+| # downloads        | 18664653 |
 | # stars            | 17 |
 
 ## Links

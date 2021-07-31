@@ -10,9 +10,9 @@ FixedHeader for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-fixedheader |
 | Keywords           | fixed headers, sticky, DataTables, jQuery, table, DataTables |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 14 |
-| # downloads        | 1228361 |
+| # downloads        | 1647993 |
 | # stars            | 0 |
 
 ## Links

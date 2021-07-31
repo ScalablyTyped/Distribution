@@ -2,13 +2,11 @@ package typings.kurentoClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseDataChannels extends StObject {
   
-  var useDataChannels: js.UndefOr[Boolean] = js.native
+  var useDataChannels: js.UndefOr[Boolean] = js.undefined
 }
 object UseDataChannels {
   

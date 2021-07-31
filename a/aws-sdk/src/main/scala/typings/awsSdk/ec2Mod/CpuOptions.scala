@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CpuOptions extends StObject {
   
   /**
     * The number of CPU cores for the instance.
     */
-  var CoreCount: js.UndefOr[Integer] = js.native
+  var CoreCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of threads per CPU core.
     */
-  var ThreadsPerCore: js.UndefOr[Integer] = js.native
+  var ThreadsPerCore: js.UndefOr[Integer] = js.undefined
 }
 object CpuOptions {
   

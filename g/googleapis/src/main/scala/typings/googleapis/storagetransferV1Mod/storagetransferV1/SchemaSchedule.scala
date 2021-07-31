@@ -2,27 +2,25 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transfers can be scheduled to recur or to run just once.
   */
-@js.native
 trait SchemaSchedule extends StObject {
   
   /**
     * The last day the recurring transfer will be run. If `scheduleEndDate` is
     * the same as `scheduleStartDate`, the transfer will be executed only once.
     */
-  var scheduleEndDate: js.UndefOr[SchemaDate] = js.native
+  var scheduleEndDate: js.UndefOr[SchemaDate] = js.undefined
   
   /**
     * The first day the recurring transfer is scheduled to run. If
     * `scheduleStartDate` is in the past, the transfer will run for the first
     * time on the following day. Required.
     */
-  var scheduleStartDate: js.UndefOr[SchemaDate] = js.native
+  var scheduleStartDate: js.UndefOr[SchemaDate] = js.undefined
   
   /**
     * The time in UTC at which the transfer will be scheduled to start in a
@@ -33,7 +31,7 @@ trait SchemaSchedule extends StObject {
     * when configuring a transfer with the Cloud Platform Console, the
     * transfer&#39;s start time in a day is specified in your local timezone.
     */
-  var startTimeOfDay: js.UndefOr[SchemaTimeOfDay] = js.native
+  var startTimeOfDay: js.UndefOr[SchemaTimeOfDay] = js.undefined
 }
 object SchemaSchedule {
   

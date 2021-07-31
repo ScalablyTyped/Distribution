@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetPartitionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the partitions in question reside. If none is supplied, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database where the partitions reside.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A list of partition values identifying the partitions to retrieve.
     */
-  var PartitionsToGet: BatchGetPartitionValueList = js.native
+  var PartitionsToGet: BatchGetPartitionValueList
   
   /**
     * The name of the partitions' table.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object BatchGetPartitionRequest {
   

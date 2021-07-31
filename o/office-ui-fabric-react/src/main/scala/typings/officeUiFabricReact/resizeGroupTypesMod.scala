@@ -11,7 +11,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeGroupTypesMod {
@@ -23,24 +22,27 @@ object resizeGroupTypesMod {
   object ResizeGroupDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ResizeGroupDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[ResizeGroupDirection & Double] = js.native
     
     @js.native
-    sealed trait horizontal extends ResizeGroupDirection
-    /* 0 */ val horizontal: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.horizontal with Double = js.native
+    sealed trait horizontal
+      extends StObject
+         with ResizeGroupDirection
+    /* 0 */ val horizontal: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.horizontal & Double = js.native
     
     @js.native
-    sealed trait vertical extends ResizeGroupDirection
-    /* 1 */ val vertical: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.vertical with Double = js.native
+    sealed trait vertical
+      extends StObject
+         with ResizeGroupDirection
+    /* 1 */ val vertical: typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.vertical & Double = js.native
   }
   
-  @js.native
   trait IResizeGroup extends StObject {
     
     /**
       * Remeasures the available space.
       */
-    def remeasure(): Unit = js.native
+    def remeasure(): Unit
   }
   object IResizeGroup {
     
@@ -58,14 +60,15 @@ object resizeGroupTypesMod {
     }
   }
   
-  @js.native
-  trait IResizeGroupProps extends HTMLAttributes[ResizeGroupBase | HTMLElement] {
+  trait IResizeGroupProps
+    extends StObject
+       with HTMLAttributes[ResizeGroupBase | HTMLElement] {
     
     /**
       * Optional callback to access the IResizeGroup interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IResizeGroup]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IResizeGroup]] = js.undefined
     
     /**
       * Initial data to be passed to the `onRenderData` function. When there is no `onGrowData` provided, this data should
@@ -74,7 +77,7 @@ object resizeGroupTypesMod {
       * with the same `cacheKey` will be assumed to take up the same width and will prevent measurements.
       * The type of `cacheKey` is a string.
       */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /**
       * Function to be called every time data is rendered. It provides the data that was actually rendered.
@@ -82,44 +85,44 @@ object resizeGroupTypesMod {
       * dropped as a result of onReduceData or to count the number of renders that an implementation of
       * onReduceData triggers.
       */
-    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ js.Any, Unit]] = js.native
+    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ js.Any, Unit]] = js.undefined
     
     /**
       * Direction of this resize group, vertical or horizontal
       * @defaultvalue ResizeGroupDirection.horizontal
       */
-    var direction: js.UndefOr[ResizeGroupDirection] = js.native
+    var direction: js.UndefOr[ResizeGroupDirection] = js.undefined
     
     /**
       * Function to be performed on the data in order to increase its width. It is called in scenarios where the
       * container has more room than the previous render and we may be able to fit more content. If there are no more
       * scaling operations to perform on teh data, it should return undefined to prevent an infinite render loop.
       */
-    var onGrowData: js.UndefOr[js.Function1[/* prevData */ js.Any, _]] = js.native
+    var onGrowData: js.UndefOr[js.Function1[/* prevData */ js.Any, js.Any]] = js.undefined
     
     /**
       * Function to be performed on the data in order to reduce its width and make it fit into the given space.
       * If there are no more scaling steps to apply, it should return undefined to prevent
       * an infinite render loop.
       */
-    def onReduceData(prevData: js.Any): js.Any = js.native
+    def onReduceData(prevData: js.Any): js.Any
     
     /**
       * Function to render the data. Called when rendering the contents to the screen and when
       * rendering in a hidden div to measure the size of the contents.
       */
-    def onRenderData(data: js.Any): Element = js.native
+    def onRenderData(data: js.Any): Element
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       * @deprecated Removed to reduce bundle size.  Please use `className` and add css rules to `className` instead.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IResizeGroupStyleProps, IResizeGroupStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IResizeGroupStyleProps, IResizeGroupStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IResizeGroupProps {
     
@@ -157,7 +160,7 @@ object resizeGroupTypesMod {
       def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       @scala.inline
-      def setOnGrowData(value: /* prevData */ js.Any => _): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
+      def setOnGrowData(value: /* prevData */ js.Any => js.Any): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnGrowDataUndefined: Self = StObject.set(x, "onGrowData", js.undefined)
@@ -185,18 +188,17 @@ object resizeGroupTypesMod {
     }
   }
   
-  @js.native
   trait IResizeGroupStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IResizeGroupStyleProps {
     
@@ -220,13 +222,12 @@ object resizeGroupTypesMod {
     }
   }
   
-  @js.native
   trait IResizeGroupStyles extends StObject {
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IResizeGroupStyles {
     

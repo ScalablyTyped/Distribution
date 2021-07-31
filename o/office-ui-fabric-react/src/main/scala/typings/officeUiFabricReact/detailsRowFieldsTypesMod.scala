@@ -7,50 +7,50 @@ import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsRowFieldsTypesMod {
   
-  @js.native
-  trait IDetailsRowFieldsProps extends IOverrideColumnRenderProps {
+  trait IDetailsRowFieldsProps
+    extends StObject
+       with IOverrideColumnRenderProps {
     
     /**
       * Style properties to customize cell render output.
       */
-    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
     
     /**
       * Index to start for the column
       */
-    var columnStartIndex: Double = js.native
+    var columnStartIndex: Double
     
     /**
       * Columns metadata
       */
-    var columns: js.Array[IColumn] = js.native
+    var columns: js.Array[IColumn]
     
     /**
       * whether to render as a compact field
       */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var enableUpdateAnimations: js.UndefOr[Boolean] = js.native
+    var enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Data source for this component
       */
-    var item: js.Any = js.native
+    var item: js.Any
     
     /**
       * The item index of the collection for the DetailsList
       */
-    var itemIndex: Double = js.native
+    var itemIndex: Double
     
     /**
       * Subset of classnames currently generated in DetailsRow that are used within DetailsRowFields.
       */
-    var rowClassNames: kinkeyofPickIDetailsRowSt = js.native
+    var rowClassNames: kinkeyofPickIDetailsRowSt
   }
   object IDetailsRowFieldsProps {
     
@@ -108,10 +108,9 @@ object detailsRowFieldsTypesMod {
   }
   
   /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.IDetailsListProps, 'onRenderItemColumn' | 'getCellValueKey'> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.IDetailsRowProps, 'cellsByColumn'> */
-  @js.native
   trait IOverrideColumnRenderProps extends StObject {
     
-    var cellsByColumn: js.UndefOr[StringDictionary[ReactNode]] = js.native
+    var cellsByColumn: js.UndefOr[StringDictionary[ReactNode]] = js.undefined
     
     var getCellValueKey: js.UndefOr[
         js.Function3[
@@ -120,7 +119,7 @@ object detailsRowFieldsTypesMod {
           /* column */ js.UndefOr[IColumn], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onRenderItemColumn: js.UndefOr[
         js.Function3[
@@ -129,7 +128,7 @@ object detailsRowFieldsTypesMod {
           /* column */ js.UndefOr[IColumn], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IOverrideColumnRenderProps {
     

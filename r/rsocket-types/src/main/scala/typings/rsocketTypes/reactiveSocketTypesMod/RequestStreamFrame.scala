@@ -3,39 +3,32 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 import typings.rsocketTypes.rsocketTypesNumbers.`0x06`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestStreamFrame extends Frame {
+trait RequestStreamFrame
+  extends StObject
+     with Frame {
   
-  var data: Encodable = js.native
+  var data: Encodable
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var metadata: Encodable = js.native
+  var metadata: Encodable
   
-  var requestN: Double = js.native
+  var requestN: Double
   
-  var streamId: Double = js.native
+  var streamId: Double
   
-  var `type`: `0x06` = js.native
+  var `type`: `0x06`
 }
 object RequestStreamFrame {
   
   @scala.inline
-  def apply(
-    data: Encodable,
-    flags: Double,
-    metadata: Encodable,
-    requestN: Double,
-    streamId: Double,
-    `type`: `0x06`
-  ): RequestStreamFrame = {
+  def apply(data: Encodable, flags: Double, metadata: Encodable, requestN: Double, streamId: Double): RequestStreamFrame = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(0x06)
     __obj.asInstanceOf[RequestStreamFrame]
   }
   

@@ -7,7 +7,6 @@ import typings.three.materialMod.MaterialParameters
 import typings.three.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshLambertMaterialMod {
@@ -130,52 +129,53 @@ object meshLambertMaterialMod {
     var wireframeLinewidth: Double = js.native
   }
   
-  @js.native
-  trait MeshLambertMaterialParameters extends MaterialParameters {
+  trait MeshLambertMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var alphaMap: js.UndefOr[Texture | Null] = js.native
+    var alphaMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var aoMap: js.UndefOr[Texture | Null] = js.native
+    var aoMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var aoMapIntensity: js.UndefOr[Double] = js.native
+    var aoMapIntensity: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[Color | String | Double] = js.undefined
     
-    var combine: js.UndefOr[Combine] = js.native
+    var combine: js.UndefOr[Combine] = js.undefined
     
-    var emissive: js.UndefOr[Color | String | Double] = js.native
+    var emissive: js.UndefOr[Color | String | Double] = js.undefined
     
-    var emissiveIntensity: js.UndefOr[Double] = js.native
+    var emissiveIntensity: js.UndefOr[Double] = js.undefined
     
-    var emissiveMap: js.UndefOr[Texture | Null] = js.native
+    var emissiveMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var envMap: js.UndefOr[Texture | Null] = js.native
+    var envMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var lightMap: js.UndefOr[Texture | Null] = js.native
+    var lightMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var lightMapIntensity: js.UndefOr[Double] = js.native
+    var lightMapIntensity: js.UndefOr[Double] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.native
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.native
+    var morphNormals: js.UndefOr[Boolean] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.native
+    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
-    var reflectivity: js.UndefOr[Double] = js.native
+    var reflectivity: js.UndefOr[Double] = js.undefined
     
-    var refractionRatio: js.UndefOr[Double] = js.native
+    var refractionRatio: js.UndefOr[Double] = js.undefined
     
-    var skinning: js.UndefOr[Boolean] = js.native
+    var skinning: js.UndefOr[Boolean] = js.undefined
     
-    var specularMap: js.UndefOr[Texture | Null] = js.native
+    var specularMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var wireframe: js.UndefOr[Boolean] = js.native
+    var wireframe: js.UndefOr[Boolean] = js.undefined
     
-    var wireframeLinecap: js.UndefOr[String] = js.native
+    var wireframeLinecap: js.UndefOr[String] = js.undefined
     
-    var wireframeLinejoin: js.UndefOr[String] = js.native
+    var wireframeLinejoin: js.UndefOr[String] = js.undefined
     
-    var wireframeLinewidth: js.UndefOr[Double] = js.native
+    var wireframeLinewidth: js.UndefOr[Double] = js.undefined
   }
   object MeshLambertMaterialParameters {
     

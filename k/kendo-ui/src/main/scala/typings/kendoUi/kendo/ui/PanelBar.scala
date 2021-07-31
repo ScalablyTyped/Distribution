@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.data.Node
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PanelBar extends Widget {
+trait PanelBar
+  extends StObject
+     with Widget {
   
   def append(item: String): PanelBar = js.native
   def append(item: String, referenceItem: String): PanelBar = js.native

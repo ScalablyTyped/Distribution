@@ -3,53 +3,53 @@ package typings.mysql.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MysqlError extends Error {
+trait MysqlError
+  extends StObject
+     with Error {
   
   /**
     * Either a MySQL server error (e.g. 'ER_ACCESS_DENIED_ERROR'),
     * a node.js error (e.g. 'ECONNREFUSED') or an internal error
     * (e.g. 'PROTOCOL_CONNECTION_LOST').
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * The error number for the error code
     */
-  var errno: Double = js.native
+  var errno: Double
   
   /**
     * Boolean, indicating if this error is terminal to the connection object.
     */
-  var fatal: Boolean = js.native
+  var fatal: Boolean
   
   /**
     * The field count
     */
-  var fieldCount: js.UndefOr[Double] = js.native
+  var fieldCount: js.UndefOr[Double] = js.undefined
   
   /**
     * SQL of failed query
     */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
   
   /**
     * Error message from MySQL
     */
-  var sqlMessage: js.UndefOr[String] = js.native
+  var sqlMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The sql state
     */
-  var sqlState: js.UndefOr[String] = js.native
+  var sqlState: js.UndefOr[String] = js.undefined
   
   /**
     * The sql state marker
     */
-  var sqlStateMarker: js.UndefOr[String] = js.native
+  var sqlStateMarker: js.UndefOr[String] = js.undefined
 }
 object MysqlError {
   

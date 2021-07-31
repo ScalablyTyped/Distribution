@@ -3,13 +3,11 @@ package typings.screeps.anon
 import typings.screeps.EventDestroyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeEventDestroyType extends StObject {
   
-  var `type`: EventDestroyType = js.native
+  var `type`: EventDestroyType
 }
 object TypeEventDestroyType {
   

@@ -4,15 +4,13 @@ import typings.react.mod.FormEvent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Values extends StObject {
   
-  var event: FormEvent[HTMLInputElement] = js.native
+  var event: FormEvent[HTMLInputElement]
   
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object Values {
   

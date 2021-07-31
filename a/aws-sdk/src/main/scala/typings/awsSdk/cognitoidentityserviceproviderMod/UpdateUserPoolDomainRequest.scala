@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserPoolDomainRequest extends StObject {
   
   /**
     * The configuration for a custom domain that hosts the sign-up and sign-in pages for your application. Use this object to specify an SSL certificate that is managed by ACM.
     */
-  var CustomDomainConfig: CustomDomainConfigType = js.native
+  var CustomDomainConfig: CustomDomainConfigType
   
   /**
     * The domain name for the custom domain that hosts the sign-up and sign-in pages for your application. For example: auth.example.com.  This string can include only lowercase letters, numbers, and hyphens. Do not use a hyphen for the first or last character. Use periods to separate subdomain names.
     */
-  var Domain: DomainType = js.native
+  var Domain: DomainType
   
   /**
     * The ID of the user pool that is associated with the custom domain that you are updating the certificate for.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object UpdateUserPoolDomainRequest {
   

@@ -2,91 +2,89 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The date on which this image was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The distribution configuration used when creating this image.
     */
-  var distributionConfiguration: js.UndefOr[DistributionConfiguration] = js.native
+  var distributionConfiguration: js.UndefOr[DistributionConfiguration] = js.undefined
   
   /**
     *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
     */
-  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.native
+  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The image recipe used when creating the image.
     */
-  var imageRecipe: js.UndefOr[ImageRecipe] = js.native
+  var imageRecipe: js.UndefOr[ImageRecipe] = js.undefined
   
   /**
     * The image tests configuration used when creating this image.
     */
-  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.native
+  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.undefined
   
   /**
     * The infrastructure used when creating this image.
     */
-  var infrastructureConfiguration: js.UndefOr[InfrastructureConfiguration] = js.native
+  var infrastructureConfiguration: js.UndefOr[InfrastructureConfiguration] = js.undefined
   
   /**
     * The name of the image.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019. 
     */
-  var osVersion: js.UndefOr[OsVersion] = js.native
+  var osVersion: js.UndefOr[OsVersion] = js.undefined
   
   /**
     * The output resources produced when creating this image.
     */
-  var outputResources: js.UndefOr[OutputResources] = js.native
+  var outputResources: js.UndefOr[OutputResources] = js.undefined
   
   /**
     * The platform of the image.
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image pipeline that created this image.
     */
-  var sourcePipelineArn: js.UndefOr[Arn] = js.native
+  var sourcePipelineArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the image pipeline that created this image.
     */
-  var sourcePipelineName: js.UndefOr[ResourceName] = js.native
+  var sourcePipelineName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The state of the image.
     */
-  var state: js.UndefOr[ImageState] = js.native
+  var state: js.UndefOr[ImageState] = js.undefined
   
   /**
     * The tags of the image.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The semantic version of the image.
     */
-  var version: js.UndefOr[VersionNumber] = js.native
+  var version: js.UndefOr[VersionNumber] = js.undefined
 }
 object Image {
   

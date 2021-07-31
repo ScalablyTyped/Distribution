@@ -2,19 +2,17 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameworkIdentityInfo extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var identifier: String = js.native
+  var identifier: String
   
-  var identityType: FrameworkIdentityType = js.native
+  var identityType: FrameworkIdentityType
   
-  var role: String = js.native
+  var role: String
 }
 object FrameworkIdentityInfo {
   

@@ -3,34 +3,26 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.MetaProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaProperty_
-  extends Node
+  extends StObject
+     with Node
      with Expression {
   
-  var meta: Identifier_ = js.native
+  var meta: Identifier_
   
-  var property: Identifier_ = js.native
+  var property: Identifier_
   
   @JSName("type")
-  var type_MetaProperty_ : MetaProperty = js.native
+  var type_MetaProperty_ : MetaProperty
 }
 object MetaProperty_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    meta: Identifier_,
-    property: Identifier_,
-    start: Double,
-    `type`: MetaProperty
-  ): MetaProperty_ = {
+  def apply(end: Double, loc: SourceLocation, meta: Identifier_, property: Identifier_, start: Double): MetaProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MetaProperty")
     __obj.asInstanceOf[MetaProperty_]
   }
   

@@ -2,49 +2,47 @@ package typings.cordovaPluginFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApplicationDirectory extends StObject {
     
     /* Read-only directory where the application is installed. */
-    var applicationDirectory: String = js.native
+    var applicationDirectory: String
     
     /* Root of app's private writable storage */
-    var applicationStorageDirectory: String = js.native
+    var applicationStorageDirectory: String
     
     /* Cached files that should survive app restarts. Apps should not rely on the OS to delete files in here. */
-    var cacheDirectory: String = js.native
+    var cacheDirectory: String
     
     /* Where to put app-specific data files. */
-    var dataDirectory: String = js.native
+    var dataDirectory: String
     
     /* iOS: Files private to the app, but that are meaningful to other applciations (e.g. Office files) */
-    var documentsDirectory: String = js.native
+    var documentsDirectory: String
     
     /* Android: the application space on external storage. */
-    var externalApplicationStorageDirectory: String = js.native
+    var externalApplicationStorageDirectory: String
     
     /* Android: the application cache on external storage. */
-    var externalCacheDirectory: String = js.native
+    var externalCacheDirectory: String
     
     /* Android: Where to put app-specific data files on external storage. */
-    var externalDataDirectory: String = js.native
+    var externalDataDirectory: String
     
     /* Android: the external storage (SD card) root. */
-    var externalRootDirectory: String = js.native
+    var externalRootDirectory: String
     
     /* BlackBerry10: Files globally available to all apps */
-    var sharedDirectory: String = js.native
+    var sharedDirectory: String
     
     /* iOS: Holds app-specific files that should be synced (e.g. to iCloud). */
-    var syncedDataDirectory: String = js.native
+    var syncedDataDirectory: String
     
     /* iOS: Temp directory that the OS can clear at will. */
-    var tempDirectory: String = js.native
+    var tempDirectory: String
   }
   object ApplicationDirectory {
     

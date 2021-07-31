@@ -3,33 +3,31 @@ package typings.meteor.meteorMod.Meteor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Login **/
 /** Event **/
-@js.native
 trait Event extends StObject {
   
-  var currentTarget: HTMLElement = js.native
+  var currentTarget: HTMLElement
   
-  def isDefaultPrevented(): Boolean = js.native
+  def isDefaultPrevented(): Boolean
   
-  def isImmediatePropagationStopped(): Boolean = js.native
+  def isImmediatePropagationStopped(): Boolean
   
-  def isPropagationStopped(): Boolean = js.native
+  def isPropagationStopped(): Boolean
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  def stopImmediatePropagation(): Unit = js.native
+  def stopImmediatePropagation(): Unit
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
-  var target: HTMLElement = js.native
+  var target: HTMLElement
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var which: Double = js.native
+  var which: Double
 }
 object Event {
   

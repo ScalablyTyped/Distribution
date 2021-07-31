@@ -4,13 +4,11 @@ import typings.reactBootstrapTable.mod.EditCheckboxOptionValue
 import typings.reactBootstrapTable.mod.EditSelectOptionValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Values[TRow /* <: js.Object */] extends StObject {
   
-  var values: EditSelectOptionValue | EditCheckboxOptionValue | (js.Function1[/* row */ TRow, EditCheckboxOptionValue | EditSelectOptionValue]) = js.native
+  var values: EditSelectOptionValue | EditCheckboxOptionValue | (js.Function1[/* row */ TRow, EditCheckboxOptionValue | EditSelectOptionValue])
 }
 object Values {
   
@@ -23,7 +21,7 @@ object Values {
   }
   
   @scala.inline
-  implicit class ValuesMutableBuilder[Self <: Values[_], TRow /* <: js.Object */] (val x: Self with Values[TRow]) extends AnyVal {
+  implicit class ValuesMutableBuilder[Self <: Values[?], TRow /* <: js.Object */] (val x: Self & Values[TRow]) extends AnyVal {
     
     @scala.inline
     def setValues(

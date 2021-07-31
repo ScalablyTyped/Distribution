@@ -8,7 +8,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialTextfieldFoundationMod {
@@ -21,7 +20,7 @@ object materialTextfieldFoundationMod {
     */
   class default () extends MDCTextFieldFoundation {
     def this(adapter: PartialMDCTextFieldAdapte) = this()
-    def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCTextFieldFounda) = this()
+    def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
     def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()
   }
   
@@ -33,7 +32,7 @@ object materialTextfieldFoundationMod {
     */
   class MDCTextFieldFoundation () extends MDCFoundation[MDCTextFieldAdapter] {
     def this(adapter: PartialMDCTextFieldAdapte) = this()
-    def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCTextFieldFounda) = this()
+    def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
     def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()
     
     /**

@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectRequest extends StObject {
   
   /**
     * The name of the project to create.
     */
-  var ProjectName: typings.awsSdk.rekognitionMod.ProjectName = js.native
+  var ProjectName: typings.awsSdk.rekognitionMod.ProjectName
 }
 object CreateProjectRequest {
   

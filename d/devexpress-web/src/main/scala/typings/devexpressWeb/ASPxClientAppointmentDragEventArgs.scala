@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.AppointmentDrag event.
   */
-@js.native
-trait ASPxClientAppointmentDragEventArgs extends ASPxClientEventArgs {
+trait ASPxClientAppointmentDragEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies whether or not appointments can be dropped into the intervals over which they are currently dragged.
     */
-  var allow: Boolean = js.native
+  var allow: Boolean
   
   /**
     * Provides information about dragged appointments.
     */
-  var dragInformation: js.Array[ASPxClientAppointmentDragInfo] = js.native
+  var dragInformation: js.Array[ASPxClientAppointmentDragInfo]
   
   /**
     * Gets a mouse event object related to the current drag operation.
     */
-  var mouseEvent: js.Any = js.native
+  var mouseEvent: js.Any
 }
 object ASPxClientAppointmentDragEventArgs {
   

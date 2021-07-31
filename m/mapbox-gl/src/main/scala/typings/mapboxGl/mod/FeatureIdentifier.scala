@@ -2,17 +2,15 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureIdentifier extends StObject {
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var source: String = js.native
+  var source: String
   
-  var sourceLayer: js.UndefOr[String] = js.native
+  var sourceLayer: js.UndefOr[String] = js.undefined
 }
 object FeatureIdentifier {
   

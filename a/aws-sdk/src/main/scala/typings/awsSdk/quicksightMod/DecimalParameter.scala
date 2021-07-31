@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecimalParameter extends StObject {
   
   /**
     * A display name for the decimal parameter.
     */
-  var Name: NonEmptyString = js.native
+  var Name: NonEmptyString
   
   /**
     * The values for the decimal parameter.
     */
-  var Values: DoubleList = js.native
+  var Values: DoubleList
 }
 object DecimalParameter {
   

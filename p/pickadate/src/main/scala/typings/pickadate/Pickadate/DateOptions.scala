@@ -2,14 +2,14 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateOptions extends Options {
+trait DateOptions
+  extends StObject
+     with Options {
   
   // default 'Today'
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
   /**
     * Disable a specific or arbitrary set of dates selectable on the
@@ -20,35 +20,35 @@ trait DateOptions extends Options {
     * Enable dates that fall within a range of disabled dates by
     * adding an `inverted` parameter to the item within the collection.
     */
-  var disable: js.UndefOr[js.Array[_]] = js.native
+  var disable: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The first day of the week can be set to either Sunday or Monday.
     * True or 1 sets it as Monday and false or 0 as Sunday.
     */
-  var firstDay: js.UndefOr[Boolean | Double] = js.native
+  var firstDay: js.UndefOr[Boolean | Double] = js.undefined
   
   // Classes
-  var klass: js.UndefOr[DateKlassOptions] = js.native
+  var klass: js.UndefOr[DateKlassOptions] = js.undefined
   
   // default 'Close'
   // Accessibility labels
-  var labelMonthNext: js.UndefOr[String] = js.native
+  var labelMonthNext: js.UndefOr[String] = js.undefined
   
   // default 'Next month'
-  var labelMonthPrev: js.UndefOr[String] = js.native
+  var labelMonthPrev: js.UndefOr[String] = js.undefined
   
   // default 'Previous month'
-  var labelMonthSelect: js.UndefOr[String] = js.native
+  var labelMonthSelect: js.UndefOr[String] = js.undefined
   
   // default 'Select a month'
-  var labelYearSelect: js.UndefOr[String] = js.native
+  var labelYearSelect: js.UndefOr[String] = js.undefined
   
   /**
     * Set the maximum selectable date on the picker.
     * Accepts the same values as the `min` property.
     */
-  var max: js.UndefOr[MinOrMaxDateOption] = js.native
+  var max: js.UndefOr[MinOrMaxDateOption] = js.undefined
   
   /**
     * Set the minimum selectable date on the picker. Accepts a Date object,
@@ -56,18 +56,18 @@ trait DateOptions extends Options {
     * for a date relative to today, or a boolean (`true` sets it to today,
     * `false` removes any limit).
     */
-  var min: js.UndefOr[MinOrMaxDateOption] = js.native
+  var min: js.UndefOr[MinOrMaxDateOption] = js.undefined
   
   // Strings and translations
-  var monthsFull: js.UndefOr[js.Array[String]] = js.native
+  var monthsFull: js.UndefOr[js.Array[String]] = js.undefined
   
   // default 'January' through 'December'
-  var monthsShort: js.UndefOr[js.Array[String]] = js.native
+  var monthsShort: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * True enables the dropdown selector and false replaces it with text
     */
-  var selectMonths: js.UndefOr[Boolean] = js.native
+  var selectMonths: js.UndefOr[Boolean] = js.undefined
   
   //default 'Select a year'
   /**
@@ -76,21 +76,21 @@ trait DateOptions extends Options {
     * using an even integer - half before and half after the year in focus.
     * If true the value will default to 10.
     */
-  var selectYears: js.UndefOr[Boolean | Double] = js.native
+  var selectYears: js.UndefOr[Boolean | Double] = js.undefined
   
   // default 'Sun' through 'Sat'
-  var showMonthsShort: js.UndefOr[Boolean] = js.native
+  var showMonthsShort: js.UndefOr[Boolean] = js.undefined
   
-  var showWeekdaysFull: js.UndefOr[Boolean] = js.native
+  var showWeekdaysFull: js.UndefOr[Boolean] = js.undefined
   
   // Buttons
-  var today: js.UndefOr[String] = js.native
+  var today: js.UndefOr[String] = js.undefined
   
   // default 'Jan' through 'Dec'
-  var weekdaysFull: js.UndefOr[js.Array[String]] = js.native
+  var weekdaysFull: js.UndefOr[js.Array[String]] = js.undefined
   
   // default 'Sunday' through 'Saturday'
-  var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
+  var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DateOptions {
   
@@ -110,7 +110,7 @@ object DateOptions {
     def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def setDisable(value: js.Array[_]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)

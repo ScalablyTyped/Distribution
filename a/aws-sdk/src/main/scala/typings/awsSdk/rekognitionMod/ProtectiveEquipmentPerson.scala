@@ -2,31 +2,29 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtectiveEquipmentPerson extends StObject {
   
   /**
     * An array of body parts detected on a person's body (including body parts without PPE). 
     */
-  var BodyParts: js.UndefOr[typings.awsSdk.rekognitionMod.BodyParts] = js.native
+  var BodyParts: js.UndefOr[typings.awsSdk.rekognitionMod.BodyParts] = js.undefined
   
   /**
     * A bounding box around the detected person.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
   
   /**
     * The confidence that Amazon Rekognition has that the bounding box contains a person.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * The identifier for the detected person. The identifier is only unique for a single call to DetectProtectiveEquipment.
     */
-  var Id: js.UndefOr[UInteger] = js.native
+  var Id: js.UndefOr[UInteger] = js.undefined
 }
 object ProtectiveEquipmentPerson {
   

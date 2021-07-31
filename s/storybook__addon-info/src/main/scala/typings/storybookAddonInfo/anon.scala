@@ -9,24 +9,22 @@ import typings.storybookAddonInfo.storybookAddonInfoStrings.padded
 import typings.storybookAddons.typesMod.OptionsParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DefaultValue extends StObject {
     
-    var defaultValue: js.Any = js.native
+    var defaultValue: js.Any
     
-    var description: String = js.native
+    var description: String
     
-    var propType: js.Object | String = js.native
+    var propType: js.Object | String
     
-    var property: String = js.native
+    var property: String
     
     // TODO: info about what this object is...
-    var required: Boolean = js.native
+    var required: Boolean
   }
   object DefaultValue {
     
@@ -63,20 +61,20 @@ object anon {
   }
   
   /* Inlined @storybook/addons.@storybook/addons.Parameters & {  info :@storybook/addon-info.@storybook/addon-info.Options} */
-  @js.native
   trait ParametersinfoOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var docsOnly: js.UndefOr[Boolean] = js.native
+    var docsOnly: js.UndefOr[Boolean] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var info: Options = js.native
+    var info: Options
     
     /** The layout property defines basic styles added to the preview body where the story is rendered. If you pass 'none', no styles are applied. */
-    var layout: js.UndefOr[centered | fullscreen | padded | none] = js.native
+    var layout: js.UndefOr[centered | fullscreen | padded | none] = js.undefined
     
-    var options: js.UndefOr[OptionsParameter] = js.native
+    var options: js.UndefOr[OptionsParameter] = js.undefined
   }
   object ParametersinfoOptions {
     

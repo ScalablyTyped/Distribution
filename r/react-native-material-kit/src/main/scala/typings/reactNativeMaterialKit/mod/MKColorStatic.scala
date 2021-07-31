@@ -3,71 +3,69 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNativeMaterialKit.anon.Amber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MKColorStatic extends StObject {
   
-  var default: Amber = js.native
+  var default: Amber
   
-  var Amber: String = js.native
+  var Amber: String
   
-  var Blue: String = js.native
+  var Blue: String
   
-  var BlueGrey: String = js.native
+  var BlueGrey: String
   
-  var Brown: String = js.native
+  var Brown: String
   
-  var Cyan: String = js.native
+  var Cyan: String
   
-  var DeepOrange: String = js.native
+  var DeepOrange: String
   
-  var DeepPurple: String = js.native
+  var DeepPurple: String
   
-  var Green: String = js.native
+  var Green: String
   
-  var Grey: String = js.native
+  var Grey: String
   
-  var Indigo: String = js.native
+  var Indigo: String
   
-  var LightBlue: String = js.native
+  var LightBlue: String
   
-  var LightGreen: String = js.native
+  var LightGreen: String
   
-  var Lime: String = js.native
+  var Lime: String
   
-  var Orange: String = js.native
+  var Orange: String
   
-  var Pink: String = js.native
+  var Pink: String
   
-  var Purple: String = js.native
+  var Purple: String
   
-  var RGBIndigo: String = js.native
+  var RGBIndigo: String
   
-  var RGBPink: String = js.native
+  var RGBPink: String
   
-  var RGBPurple: String = js.native
+  var RGBPurple: String
   
-  var RGBTeal: String = js.native
+  var RGBTeal: String
   
-  var Red: String = js.native
+  var Red: String
   
-  var Silver: String = js.native
+  var Silver: String
   
-  var Teal: String = js.native
+  var Teal: String
   
-  var Transparent: String = js.native
+  var Transparent: String
   
-  var Yellow: String = js.native
+  var Yellow: String
   
-  var palette_blue_400: String = js.native
+  var palette_blue_400: String
   
-  var palette_green_500: String = js.native
+  var palette_green_500: String
   
-  var palette_red_500: String = js.native
+  var palette_red_500: String
   
-  var palette_yellow_600: String = js.native
+  var palette_yellow_600: String
 }
 object MKColorStatic {
   

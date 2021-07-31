@@ -3,7 +3,6 @@ package typings.webAppManifest
 import typings.std.OrientationLockType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://w3c.github.io/manifest/#webappmanifest-dictionary
   */
-@js.native
 trait WebAppManifest extends StObject {
   
   /**
@@ -20,35 +18,35 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#background_color-member
     */
-  var background_color: js.UndefOr[String] = js.native
+  var background_color: js.UndefOr[String] = js.undefined
   
   /**
     * The `categories` member describes the expected application categories to which the web application belongs.
     *
     * @see https://w3c.github.io/manifest/#categories-member
     */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The `description` member allows the developer to describe the purpose of the web application.
     *
     * @see https://w3c.github.io/manifest/#description-member
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The `dir` member specifies the base direction for the directionality-capable members of the manifest.
     *
     * @see https://w3c.github.io/manifest/#dir-member
     */
-  var dir: js.UndefOr[TextDirectionType] = js.native
+  var dir: js.UndefOr[TextDirectionType] = js.undefined
   
   /**
     * The `display` member is a `DisplayModeType`, whose value is one of display modes values.
     *
     * @see https://w3c.github.io/manifest/#display-member
     */
-  var display: js.UndefOr[DisplayModeType] = js.native
+  var display: js.UndefOr[DisplayModeType] = js.undefined
   
   /**
     * The `iarc_rating_id` member is a `string` that represents the International Age Rating Coalition (IARC)
@@ -56,7 +54,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#iarc_rating_id-member
     */
-  var iarc_rating_id: js.UndefOr[String] = js.native
+  var iarc_rating_id: js.UndefOr[String] = js.undefined
   
   /**
     * The `icons` member is an array of `ImageResource`s that can serve as iconic representations of the web
@@ -64,7 +62,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#icons-member
     */
-  var icons: js.UndefOr[js.Array[ImageResource]] = js.native
+  var icons: js.UndefOr[js.Array[ImageResource]] = js.undefined
   
   /**
     * The `lang` member is a language tag (`string`) that specifies the primary language for the values of
@@ -72,7 +70,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#lang-member
     */
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     * The `name` member is a `string` that represents the name of the web application as it is usually displayed
@@ -80,7 +78,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#name-member
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The `orientation` member is a string that serves as the default screen orientation for all top-level
@@ -88,7 +86,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#orientation-member
     */
-  var orientation: js.UndefOr[OrientationLockType] = js.native
+  var orientation: js.UndefOr[OrientationLockType] = js.undefined
   
   /**
     * The `prefer_related_applications` member is a boolean value that is used as a hint for the user agent
@@ -96,7 +94,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#prefer_related_applications-member
     */
-  var prefer_related_applications: js.UndefOr[Boolean] = js.native
+  var prefer_related_applications: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The `related_applications` member lists related applications and serves as an indication of such a
@@ -104,7 +102,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#related_applications-member
     */
-  var related_applications: js.UndefOr[js.Array[ExternalApplicationResource]] = js.native
+  var related_applications: js.UndefOr[js.Array[ExternalApplicationResource]] = js.undefined
   
   /**
     * The `scope` member is a string that represents the navigation scope of this web application's
@@ -112,7 +110,7 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#scope-member
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * The `screenshots` member is an array of `ImageResource`s, representing the web application in common
@@ -120,21 +118,21 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#screenshots-member
     */
-  var screenshots: js.UndefOr[js.Array[ImageResource]] = js.native
+  var screenshots: js.UndefOr[js.Array[ImageResource]] = js.undefined
   
   /**
     * The `short_name` member is a `string` that represents a short version of the name of the web application.
     *
     * @see https://w3c.github.io/manifest/#short_name-member
     */
-  var short_name: js.UndefOr[String] = js.native
+  var short_name: js.UndefOr[String] = js.undefined
   
   /**
     * The `shortcuts` member is an `array` of `ShortcutItem`s that provide access to key tasks within a web application.
     *
     * @see https://w3c.github.io/manifest/#shortcuts-member
     */
-  var shortcuts: js.UndefOr[js.Array[ShortcutItem]] = js.native
+  var shortcuts: js.UndefOr[js.Array[ShortcutItem]] = js.undefined
   
   /**
     * The `start_url` member is a `string` that represents the start URL , which is URL that the developer
@@ -143,14 +141,14 @@ trait WebAppManifest extends StObject {
     *
     * @see https://w3c.github.io/manifest/#start_url-member
     */
-  var start_url: js.UndefOr[String] = js.native
+  var start_url: js.UndefOr[String] = js.undefined
   
   /**
     * The `theme_color` member serves as the default theme color for an application context.
     *
     * @see https://w3c.github.io/manifest/#theme_color-member
     */
-  var theme_color: js.UndefOr[String] = js.native
+  var theme_color: js.UndefOr[String] = js.undefined
 }
 object WebAppManifest {
   

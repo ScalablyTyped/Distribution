@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkRecipientsRequest extends StObject {
   
   /**
     * A complex type containing information about the bulk recipients in the request.
     */
-  var bulkRecipients: js.UndefOr[js.Array[BulkRecipient]] = js.native
+  var bulkRecipients: js.UndefOr[js.Array[BulkRecipient]] = js.undefined
 }
 object BulkRecipientsRequest {
   

@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidChangeConfigurationParams extends StObject {
   
   /**
     * The actual changed settings
     */
-  var settings: js.Any = js.native
+  var settings: js.Any
 }
 object DidChangeConfigurationParams {
   

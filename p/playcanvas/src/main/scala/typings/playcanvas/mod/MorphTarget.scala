@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Aabb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,6 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "MorphTarget")
 @js.native
 class MorphTarget protected ()
-  extends typings.playcanvas.pc.MorphTarget {
+  extends StObject
+     with typings.playcanvas.pc.MorphTarget {
   def this(options: Aabb) = this()
 }

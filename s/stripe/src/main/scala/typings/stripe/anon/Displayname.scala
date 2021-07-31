@@ -2,23 +2,21 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Displayname extends StObject {
   
   /**
     * The display name for this account. This is used on the Stripe Dashboard to
     * differentiate between accounts.
     */
-  var display_name: js.UndefOr[String] = js.native
+  var display_name: js.UndefOr[String] = js.undefined
   
   /**
     * The timezone used in the Stripe Dashboard for this account. A list of
     * possible time zone values is maintained at the IANA Time Zone Database.
     */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object Displayname {
   

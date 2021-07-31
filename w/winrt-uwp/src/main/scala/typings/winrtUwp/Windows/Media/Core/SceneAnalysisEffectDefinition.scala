@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the definition of a scene analysis video effect. */
-@js.native
 trait SceneAnalysisEffectDefinition extends StObject {
   
   /** Gets a string containing the activatable class ID of the scene analysis effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets the set of properties for configuring the SceneAnalysisEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
 object SceneAnalysisEffectDefinition {
   

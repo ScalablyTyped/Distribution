@@ -2,15 +2,13 @@ package typings.auth0Lock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0LockAvatarOptions extends StObject {
   
-  def displayName(email: String, callback: Auth0LockAvatarDisplayNameCallback): Unit = js.native
+  def displayName(email: String, callback: Auth0LockAvatarDisplayNameCallback): Unit
   
-  def url(email: String, callback: Auth0LockAvatarUrlCallback): Unit = js.native
+  def url(email: String, callback: Auth0LockAvatarUrlCallback): Unit
 }
 object Auth0LockAvatarOptions {
   

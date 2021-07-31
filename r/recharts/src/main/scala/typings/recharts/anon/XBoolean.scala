@@ -3,13 +3,13 @@ package typings.recharts.anon
 import typings.recharts.mod.AllowEscapeViewBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XBoolean extends AllowEscapeViewBox {
+trait XBoolean
+  extends StObject
+     with AllowEscapeViewBox {
   
-  var x: Boolean = js.native
+  var x: Boolean
 }
 object XBoolean {
   

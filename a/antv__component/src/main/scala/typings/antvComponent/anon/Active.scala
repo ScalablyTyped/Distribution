@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active extends StObject {
   
-  var active: LabelStyle = js.native
+  var active: LabelStyle
   
-  var inactive: LabelStyleFillString = js.native
+  var inactive: LabelStyleFillString
 }
 object Active {
   

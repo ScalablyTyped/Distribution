@@ -2,22 +2,20 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<downshift.downshift.UseComboboxState<Item>> */
-@js.native
 trait UseComboboxStateChange[Item] extends StObject {
   
-  var highlightedIndex: js.UndefOr[Double] = js.native
+  var highlightedIndex: js.UndefOr[Double] = js.undefined
   
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var `type`: UseComboboxStateChangeTypes = js.native
+  var `type`: UseComboboxStateChangeTypes
 }
 object UseComboboxStateChange {
   
@@ -29,7 +27,7 @@ object UseComboboxStateChange {
   }
   
   @scala.inline
-  implicit class UseComboboxStateChangeMutableBuilder[Self <: UseComboboxStateChange[_], Item] (val x: Self with UseComboboxStateChange[Item]) extends AnyVal {
+  implicit class UseComboboxStateChangeMutableBuilder[Self <: UseComboboxStateChange[?], Item] (val x: Self & UseComboboxStateChange[Item]) extends AnyVal {
     
     @scala.inline
     def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])

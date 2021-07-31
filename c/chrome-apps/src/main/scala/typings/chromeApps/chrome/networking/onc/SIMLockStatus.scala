@@ -6,20 +6,18 @@ import typings.chromeApps.chromeAppsStrings.`sim-pin`
 import typings.chromeApps.chromeAppsStrings.`sim-puk`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SIMLockStatus extends StObject {
   
   /** Whether SIM lock is enabled. */
-  var LockEnabled: Boolean = js.native
+  var LockEnabled: Boolean
   
   /** The status of SIM lock - possible values are 'sim-pin', 'sim-puk' and ''. */
-  var LockType: `sim-pin` | `sim-puk` | _empty = js.native
+  var LockType: `sim-pin` | `sim-puk` | _empty
   
   /** Number of PIN lock tries allowed before PUK is required to unlock the SIM. */
-  var RetriesLeft: js.UndefOr[integer] = js.native
+  var RetriesLeft: js.UndefOr[integer] = js.undefined
 }
 object SIMLockStatus {
   

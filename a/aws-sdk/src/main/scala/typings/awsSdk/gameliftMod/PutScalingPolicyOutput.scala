@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutScalingPolicyOutput extends StObject {
   
   /**
     * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
     */
-  var Name: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object PutScalingPolicyOutput {
   

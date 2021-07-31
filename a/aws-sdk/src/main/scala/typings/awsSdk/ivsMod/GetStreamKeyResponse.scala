@@ -2,13 +2,11 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStreamKeyResponse extends StObject {
   
-  var streamKey: js.UndefOr[StreamKey] = js.native
+  var streamKey: js.UndefOr[StreamKey] = js.undefined
 }
 object GetStreamKeyResponse {
   

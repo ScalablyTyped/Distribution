@@ -11,7 +11,6 @@ import typings.stompit.stompitStrings.connecting
 import typings.stompit.stompitStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectFailoverMod {
@@ -21,15 +20,16 @@ object connectFailoverMod {
   class ^ () extends ConnectFailover {
     def this(servers: String) = this()
     def this(servers: js.Array[ConnectOptions]) = this()
-    def this(servers: js.UndefOr[scala.Nothing], options: ConnectFailoverOptions) = this()
     def this(servers: String, options: ConnectFailoverOptions) = this()
     def this(servers: js.Array[ConnectOptions], options: ConnectFailoverOptions) = this()
+    def this(servers: Unit, options: ConnectFailoverOptions) = this()
   }
   
-  @js.native
-  trait ConnectError extends Error {
+  trait ConnectError
+    extends StObject
+       with Error {
     
-    var connectArgs: ConnectOptions = js.native
+    var connectArgs: ConnectOptions
   }
   object ConnectError {
     
@@ -73,7 +73,6 @@ object connectFailoverMod {
     def on_error(event: error, listener: js.Function2[/* err */ ConnectError, /* server */ ConnectState, Unit]): this.type = js.native
   }
   
-  @js.native
   trait ConnectFailoverOptions extends StObject {
     
     // Override the connect function
@@ -83,25 +82,25 @@ object connectFailoverMod {
           /* connectionListener */ js.UndefOr[ConnectionListener], 
           typings.stompit.clientMod.^
         ]
-      ] = js.native
+      ] = js.undefined
     
     // Milliseconds delay of the first reconnect
-    var initialReconnectDelay: js.UndefOr[Double] = js.native
+    var initialReconnectDelay: js.UndefOr[Double] = js.undefined
     
     // Maximum milliseconds delay of any reconnect
-    var maxReconnectDelay: js.UndefOr[Double] = js.native
+    var maxReconnectDelay: js.UndefOr[Double] = js.undefined
     
     // Maximum number of reconnects
-    var maxReconnects: js.UndefOr[Double] = js.native
+    var maxReconnects: js.UndefOr[Double] = js.undefined
     
     // Randomly choose a server to use for reconnect
-    var randomize: js.UndefOr[Boolean] = js.native
+    var randomize: js.UndefOr[Boolean] = js.undefined
     
     // The exponent used in the exponential backoff attempts
-    var reconnectDelayExponent: js.UndefOr[Double] = js.native
+    var reconnectDelayExponent: js.UndefOr[Double] = js.undefined
     
     // Exponential increase of the reconnect delay
-    var useExponentialBackOff: js.UndefOr[Boolean] = js.native
+    var useExponentialBackOff: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectFailoverOptions {
     
@@ -161,12 +160,11 @@ object connectFailoverMod {
   }
   
   // Internal class, which is not exported
-  @js.native
   trait ConnectState extends StObject {
     
-    var failedConnects: Double = js.native
+    var failedConnects: Double
     
-    var serverProperties: Server = js.native
+    var serverProperties: Server
   }
   object ConnectState {
     

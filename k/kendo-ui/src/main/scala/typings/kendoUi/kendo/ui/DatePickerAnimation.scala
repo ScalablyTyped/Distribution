@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatePickerAnimation extends StObject {
   
-  var close: js.UndefOr[DatePickerAnimationClose] = js.native
+  var close: js.UndefOr[DatePickerAnimationClose] = js.undefined
   
-  var open: js.UndefOr[DatePickerAnimationOpen] = js.native
+  var open: js.UndefOr[DatePickerAnimationOpen] = js.undefined
 }
 object DatePickerAnimation {
   

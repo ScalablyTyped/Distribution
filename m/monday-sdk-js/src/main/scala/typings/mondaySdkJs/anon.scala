@@ -9,36 +9,34 @@ import typings.mondaySdkJs.mondaySdkJsStrings.success
 import typings.mondaySdkJs.mondaySdkJsStrings.updates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CancelButton extends StObject {
     
     /**
       * The text for the cancel button
       * Defaults to "Cancel"
       */
-    var cancelButton: js.UndefOr[String] = js.native
+    var cancelButton: js.UndefOr[String] = js.undefined
     
     /**
       * The text for the confirmation button
       * Defaults to "OK"
       */
-    var confirmButton: js.UndefOr[String] = js.native
+    var confirmButton: js.UndefOr[String] = js.undefined
     
     /**
       * Either to exclude the cancel button
       * Defaults to `false`
       */
-    var excludeCancelButton: js.UndefOr[Boolean] = js.native
+    var excludeCancelButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The message to display in the dialog
       */
-    var message: String = js.native
+    var message: String
   }
   object CancelButton {
     
@@ -74,21 +72,20 @@ object anon {
     }
   }
   
-  @js.native
   trait GetItem extends StObject {
     
     /**
       * Returns a stored value from the database under `key`
       * @param key
       */
-    def getItem(key: String): js.Promise[GetResponse] = js.native
+    def getItem(key: String): js.Promise[GetResponse]
     
     /**
       * Stores `value` under `key` in the database
       * @param key
       * @param value
       */
-    def setItem(key: String, value: js.Any): js.Promise[SetResponse] = js.native
+    def setItem(key: String, value: js.Any): js.Promise[SetResponse]
   }
   object GetItem {
     
@@ -109,10 +106,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Instance extends StObject {
     
-    var instance: GetItem = js.native
+    var instance: GetItem
   }
   object Instance {
     
@@ -130,20 +126,19 @@ object anon {
     }
   }
   
-  @js.native
   trait ItemId extends StObject {
     
     /**
       * The ID of the item to open
       */
-    var itemId: Double = js.native
+    var itemId: Double
     
     /**
       * On which view to open the item card.
       * Can be "updates" / "columns"
       * Defaults to "columns"
       */
-    var kind: js.UndefOr[updates | columns] = js.native
+    var kind: js.UndefOr[updates | columns] = js.undefined
   }
   object ItemId {
     
@@ -167,25 +162,24 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
     /**
       * The message to display
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The number of milliseconds to show the message until it closes
       * Defaults to 5000
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The type of message to display. Can be "success" (green), "error" (red) or "info" (blue)
       * Defaults to "info"
       */
-    var `type`: js.UndefOr[success | error | info] = js.native
+    var `type`: js.UndefOr[success | error | info] = js.undefined
   }
   object Message {
     
@@ -216,12 +210,11 @@ object anon {
   }
   
   /* Inlined std.Partial<{  clientId :string,   apiToken :string}> */
-  @js.native
   trait PartialclientIdstringapiT extends StObject {
     
-    var apiToken: js.UndefOr[String] = js.native
+    var apiToken: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
   }
   object PartialclientIdstringapiT {
     
@@ -249,10 +242,9 @@ object anon {
   }
   
   /* Inlined std.Partial<{  token :string}> */
-  @js.native
   trait Partialtokenstring extends StObject {
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object Partialtokenstring {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotFilterSpec extends StObject {
   
   /** The column offset of the source range. */
-  var columnOffsetIndex: js.UndefOr[Double] = js.native
+  var columnOffsetIndex: js.UndefOr[Double] = js.undefined
   
   /** The reference to the data source column. */
-  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.native
+  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.undefined
   
   /** The criteria for the column. */
-  var filterCriteria: js.UndefOr[PivotFilterCriteria] = js.native
+  var filterCriteria: js.UndefOr[PivotFilterCriteria] = js.undefined
 }
 object PivotFilterSpec {
   

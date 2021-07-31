@@ -3,10 +3,8 @@ package typings.vscodeLanguageclient.clientMod
 import typings.vscode.mod.FileSystemWatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SynchronizeOptions extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SynchronizeOptions extends StObject {
     *
     * @deprecated Use the new pull model (`workspace/configuration` request)
     */
-  var configurationSection: js.UndefOr[String | js.Array[String]] = js.native
+  var configurationSection: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     *
     */
-  var fileEvents: js.UndefOr[FileSystemWatcher | js.Array[FileSystemWatcher]] = js.native
+  var fileEvents: js.UndefOr[FileSystemWatcher | js.Array[FileSystemWatcher]] = js.undefined
 }
 object SynchronizeOptions {
   

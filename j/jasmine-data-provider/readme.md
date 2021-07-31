@@ -12,7 +12,7 @@ simple data provider for jasmine
 | Keywords           | jasmine, data-provider |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 632340 |
+| # downloads        | 805677 |
 | # stars            | 2 |
 
 ## Links

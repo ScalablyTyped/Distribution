@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a request from the MediaStreamSource.Starting event for the application to start accumulating MediaStreamSample objects from a specific position in the media. */
-@js.native
 trait MediaStreamSourceStartingRequest extends StObject {
   
   /**
     * Defers completing the MediaStreamSource.Starting event.
     * @return The deferral.
     */
-  def getDeferral(): MediaStreamSourceStartingRequestDeferral = js.native
+  def getDeferral(): MediaStreamSourceStartingRequestDeferral
   
   /**
     * Specifies the starting position in the media time-line for subsequent MediaStreamSamples that will be delivered to the MediaStreamSource .
     * @param position The actual starting point in the media time-line chosen by the application.
     */
-  def setActualStartPosition(position: Double): Unit = js.native
+  def setActualStartPosition(position: Double): Unit
   
   /** Specifies a reference to a TimeSpan object which represents a time position in the media time-line from which the application should return MediaStreamSample objects. */
-  var startPosition: Double = js.native
+  var startPosition: Double
 }
 object MediaStreamSourceStartingRequest {
   

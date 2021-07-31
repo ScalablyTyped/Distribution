@@ -3,39 +3,37 @@ package typings.parquetjs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldInterfaceMod {
   
-  @js.native
   trait FieldInterface extends StObject {
     
-    var compression: js.UndefOr[String] = js.native
+    var compression: js.UndefOr[String] = js.undefined
     
-    var dLevelMax: Double = js.native
+    var dLevelMax: Double
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var fieldCount: js.UndefOr[Double] = js.native
+    var fieldCount: js.UndefOr[Double] = js.undefined
     
-    var fields: js.UndefOr[StringDictionary[FieldInterface]] = js.native
+    var fields: js.UndefOr[StringDictionary[FieldInterface]] = js.undefined
     
-    var isNested: js.UndefOr[Boolean] = js.native
+    var isNested: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var originalType: js.UndefOr[String | Null] = js.native
+    var originalType: js.UndefOr[String | Null] = js.undefined
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
     
-    var primitiveType: js.UndefOr[String | Null] = js.native
+    var primitiveType: js.UndefOr[String | Null] = js.undefined
     
-    var rLevelMax: Double = js.native
+    var rLevelMax: Double
     
-    var repetitionType: String = js.native
+    var repetitionType: String
     
-    var typeLength: js.UndefOr[Double | Null] = js.native
+    var typeLength: js.UndefOr[Double | Null] = js.undefined
   }
   object FieldInterface {
     

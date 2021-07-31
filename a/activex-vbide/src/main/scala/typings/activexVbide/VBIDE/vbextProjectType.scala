@@ -4,7 +4,6 @@ import typings.activexVbide.activexVbideNumbers.`100`
 import typings.activexVbide.activexVbideNumbers.`101`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

@@ -2,16 +2,14 @@ package typings.validator.mod.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsEmptyOptions extends StObject {
   
   /**
     * @default false
     */
-  var ignore_whitespace: js.UndefOr[Boolean] = js.native
+  var ignore_whitespace: js.UndefOr[Boolean] = js.undefined
 }
 object IsEmptyOptions {
   

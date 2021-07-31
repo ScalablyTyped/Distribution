@@ -2,17 +2,15 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSelectResultEvent extends StObject {
   
-  var result: SearchSelectResultEventResult = js.native
+  var result: SearchSelectResultEventResult
   
-  var source: js.Any = js.native
+  var source: js.Any
   
-  var sourceIndex: Double = js.native
+  var sourceIndex: Double
 }
 object SearchSelectResultEvent {
   

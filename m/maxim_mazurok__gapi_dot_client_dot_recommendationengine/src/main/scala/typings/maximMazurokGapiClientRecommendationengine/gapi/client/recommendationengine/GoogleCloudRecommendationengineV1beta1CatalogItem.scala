@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1CatalogItem extends StObject {
   
   /**
@@ -13,46 +11,46 @@ trait GoogleCloudRecommendationengineV1beta1CatalogItem extends StObject {
     * to both ["Shoes & Accessories" -> "Shoes"] and ["Sports & Fitness" -> "Athletic Clothing" -> "Shoes"], it could be represented as: "categoryHierarchies": [ { "categories": ["Shoes &
     * Accessories", "Shoes"]}, { "categories": ["Sports & Fitness", "Athletic Clothing", "Shoes"] } ]
     */
-  var categoryHierarchies: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]] = js.native
+  var categoryHierarchies: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]] = js.undefined
   
   /** Optional. Catalog item description. UTF-8 encoded string with a length limit of 5 KiB. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Catalog item identifier. UTF-8 encoded string with a length limit of 128 bytes. This id must be unique among all catalog items within the same catalog. It should also be
     * used when logging user events in order for the user events to be joined with the Catalog.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Highly encouraged. Extra catalog item attributes to be included in the recommendation model. For example, for retail products, this could include the store name, vendor,
     * style, color, etc. These are very strong signals for recommendation model, thus we highly recommend providing the item attributes here.
     */
-  var itemAttributes: js.UndefOr[GoogleCloudRecommendationengineV1beta1FeatureMap] = js.native
+  var itemAttributes: js.UndefOr[GoogleCloudRecommendationengineV1beta1FeatureMap] = js.undefined
   
   /**
     * Optional. Variant group identifier for prediction results. UTF-8 encoded string with a length limit of 128 bytes. This field must be enabled before it can be used. [Learn
     * more](/recommendations-ai/docs/catalog#item-group-id).
     */
-  var itemGroupId: js.UndefOr[String] = js.native
+  var itemGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Deprecated. The model automatically detects the text language. Your catalog can include text in different languages, but duplicating catalog items to provide text in
     * multiple languages can result in degraded model performance.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Optional. Metadata specific to retail products. */
-  var productMetadata: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductCatalogItem] = js.native
+  var productMetadata: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductCatalogItem] = js.undefined
   
   /**
     * Optional. Filtering tags associated with the catalog item. Each tag should be a UTF-8 encoded string with a length limit of 1 KiB. This tag can be used for filtering recommendation
     * results by passing the tag as part of the predict request filter.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. Catalog item title. UTF-8 encoded string with a length limit of 1 KiB. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1CatalogItem {
   

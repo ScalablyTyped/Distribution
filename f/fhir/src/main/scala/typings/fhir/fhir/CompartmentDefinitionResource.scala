@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * How a resource is related to the compartment
   */
-@js.native
-trait CompartmentDefinitionResource extends BackboneElement {
+trait CompartmentDefinitionResource
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.native
+  var _documentation: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'param'.
     */
-  var _param: js.UndefOr[js.Array[Element]] = js.native
+  var _param: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Name of resource type
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Additional documentation about the resource and compartment
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
   /**
     * Search Parameter Name, or chained parameters
     */
-  var param: js.UndefOr[js.Array[String]] = js.native
+  var param: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CompartmentDefinitionResource {
   

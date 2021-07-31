@@ -4,36 +4,34 @@ import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetVirtualTimePolicyRequest extends StObject {
   
   /**
     * If set, after this many virtual milliseconds have elapsed virtual time will be paused and a
     * virtualTimeBudgetExpired event is sent.
     */
-  var budget: js.UndefOr[Double] = js.native
+  var budget: js.UndefOr[Double] = js.undefined
   
   /**
     * If set, base::Time::Now will be overriden to initially return this value.
     */
-  var initialVirtualTime: js.UndefOr[TimeSinceEpoch] = js.native
+  var initialVirtualTime: js.UndefOr[TimeSinceEpoch] = js.undefined
   
   /**
     * If set this specifies the maximum number of tasks that can be run before virtual is forced
     * forwards to prevent deadlock.
     */
-  var maxVirtualTimeTaskStarvationCount: js.UndefOr[integer] = js.native
+  var maxVirtualTimeTaskStarvationCount: js.UndefOr[integer] = js.undefined
   
-  var policy: VirtualTimePolicy = js.native
+  var policy: VirtualTimePolicy
   
   /**
     * If set the virtual time policy change should be deferred until any frame starts navigating.
     * Note any previous deferred policy change is superseded.
     */
-  var waitForNavigation: js.UndefOr[Boolean] = js.native
+  var waitForNavigation: js.UndefOr[Boolean] = js.undefined
 }
 object SetVirtualTimePolicyRequest {
   

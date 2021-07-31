@@ -2,22 +2,20 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.stream.xlsx.ArchiverZipOptions> */
-@js.native
 trait PartialArchiverZipOptions extends StObject {
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var forceLocalTime: js.UndefOr[Boolean] = js.native
+  var forceLocalTime: js.UndefOr[Boolean] = js.undefined
   
-  var forceZip64: js.UndefOr[Boolean] = js.native
+  var forceZip64: js.UndefOr[Boolean] = js.undefined
   
-  var store: js.UndefOr[Boolean] = js.native
+  var store: js.UndefOr[Boolean] = js.undefined
   
-  var zlib: js.UndefOr[PartialZlibOptions] = js.native
+  var zlib: js.UndefOr[PartialZlibOptions] = js.undefined
 }
 object PartialArchiverZipOptions {
   

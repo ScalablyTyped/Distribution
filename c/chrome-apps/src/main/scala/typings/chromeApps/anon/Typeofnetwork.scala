@@ -3,14 +3,12 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.system.network.NetworkInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofnetwork extends StObject {
   
   /** Retrieves information about local adapters on this system. */
-  def getNetworkInterfaces(callback: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit]): Unit = js.native
+  def getNetworkInterfaces(callback: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit]): Unit
 }
 object Typeofnetwork {
   

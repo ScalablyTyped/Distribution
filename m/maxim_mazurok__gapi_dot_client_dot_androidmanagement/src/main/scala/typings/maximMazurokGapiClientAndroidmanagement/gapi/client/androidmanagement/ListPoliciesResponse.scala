@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPoliciesResponse extends StObject {
   
   /** If there are more results, a token to retrieve next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of policies. */
-  var policies: js.UndefOr[js.Array[Policy]] = js.native
+  var policies: js.UndefOr[js.Array[Policy]] = js.undefined
 }
 object ListPoliciesResponse {
   

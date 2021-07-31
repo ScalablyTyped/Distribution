@@ -2,31 +2,29 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebApiTagDefinition extends StObject {
   
   /**
     * Whether or not the tag definition is active.
     */
-  var active: Boolean = js.native
+  var active: Boolean
   
   /**
     * ID of the tag definition.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The name of the tag definition.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Resource URL for the Tag Definition.
     */
-  var url: String = js.native
+  var url: String
 }
 object WebApiTagDefinition {
   

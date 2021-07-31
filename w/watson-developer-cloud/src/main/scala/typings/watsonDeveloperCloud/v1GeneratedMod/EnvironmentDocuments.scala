@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Summary of the document usage statistics for the environment. */
-@js.native
 trait EnvironmentDocuments extends StObject {
   
   /** Number of documents indexed for the environment. */
-  var indexed: js.UndefOr[Double] = js.native
+  var indexed: js.UndefOr[Double] = js.undefined
   
   /** Total number of documents allowed in the environment's capacity. */
-  var maximum_allowed: js.UndefOr[Double] = js.native
+  var maximum_allowed: js.UndefOr[Double] = js.undefined
 }
 object EnvironmentDocuments {
   

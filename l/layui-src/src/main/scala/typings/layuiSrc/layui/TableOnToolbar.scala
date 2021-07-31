@@ -2,15 +2,13 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOnToolbar extends StObject {
   
-  var config: TableOption = js.native
+  var config: TableOption
   
-  var event: String = js.native
+  var event: String
 }
 object TableOnToolbar {
   

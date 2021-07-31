@@ -21,7 +21,6 @@ import typings.rdfJs.mod.QuadSubject
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataFactoryMod {
@@ -29,37 +28,33 @@ object dataFactoryMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("rdf-ext/lib/DataFactory", JSImport.Namespace)
   @js.native
-  class ^ () extends DataFactory[QuadExt, Quad]
+  class ^ ()
+    extends StObject
+       with DataFactory[QuadExt, Quad]
   @JSImport("rdf-ext/lib/DataFactory", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "blankNode")
-  @js.native
-  def blankNode(): BlankNodeExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "blankNode")
-  @js.native
-  def blankNode(value: String): BlankNodeExt = js.native
+  @scala.inline
+  def blankNode(): BlankNodeExt = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")().asInstanceOf[BlankNodeExt]
+  @scala.inline
+  def blankNode(value: String): BlankNodeExt = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")(value.asInstanceOf[js.Any]).asInstanceOf[BlankNodeExt]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "dataset")
-  @js.native
-  def dataset(): DatasetExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "dataset")
-  @js.native
-  def dataset(quads: js.Array[Quad]): DatasetExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "dataset")
-  @js.native
-  def dataset_graph(quads: js.UndefOr[scala.Nothing], graph: PropType[QuadExt, graph]): DatasetExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "dataset")
-  @js.native
-  def dataset_graph(quads: js.Array[Quad], graph: PropType[QuadExt, graph]): DatasetExt = js.native
+  @scala.inline
+  def dataset(): DatasetExt = ^.asInstanceOf[js.Dynamic].applyDynamic("dataset")().asInstanceOf[DatasetExt]
+  @scala.inline
+  def dataset(quads: js.Array[Quad]): DatasetExt = ^.asInstanceOf[js.Dynamic].applyDynamic("dataset")(quads.asInstanceOf[js.Any]).asInstanceOf[DatasetExt]
+  
+  @scala.inline
+  def dataset_graph(quads: js.Array[Quad], graph: PropType[QuadExt, graph]): DatasetExt = (^.asInstanceOf[js.Dynamic].applyDynamic("dataset")(quads.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[DatasetExt]
+  @scala.inline
+  def dataset_graph(quads: Unit, graph: PropType[QuadExt, graph]): DatasetExt = (^.asInstanceOf[js.Dynamic].applyDynamic("dataset")(quads.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[DatasetExt]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "defaultGraph")
-  @js.native
-  def defaultGraph(): DefaultGraphExt = js.native
+  @scala.inline
+  def defaultGraph(): DefaultGraphExt = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGraph")().asInstanceOf[DefaultGraphExt]
   
   /* static member */
   /* static member */
@@ -138,7 +133,9 @@ object dataFactoryMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rdf-ext/lib/DataFactory", "factory")
   @js.native
-  class factory () extends DataFactory[QuadExt, Quad]
+  class factory ()
+    extends StObject
+       with DataFactory[QuadExt, Quad]
   /* static member */
   @JSImport("rdf-ext/lib/DataFactory", "factory")
   @js.native
@@ -147,51 +144,40 @@ object dataFactoryMod {
   def factory_=(x: Instantiable0[DataFactoryExt]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("factory")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "graph")
-  @js.native
-  def graph(): DatasetExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "graph")
-  @js.native
-  def graph(quads: js.Any): DatasetExt = js.native
+  @scala.inline
+  def graph(): DatasetExt = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")().asInstanceOf[DatasetExt]
+  @scala.inline
+  def graph(quads: js.Any): DatasetExt = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(quads.asInstanceOf[js.Any]).asInstanceOf[DatasetExt]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "literal")
-  @js.native
-  def literal(value: String): LiteralExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "literal")
-  @js.native
-  def literal(value: String, languageOrDatatype: String): LiteralExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "literal")
-  @js.native
-  def literal(value: String, languageOrDatatype: NamedNode[String]): LiteralExt = js.native
+  @scala.inline
+  def literal(value: String): LiteralExt = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[LiteralExt]
+  @scala.inline
+  def literal(value: String, languageOrDatatype: String): LiteralExt = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[LiteralExt]
+  @scala.inline
+  def literal(value: String, languageOrDatatype: NamedNode[String]): LiteralExt = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[LiteralExt]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "namedNode")
-  @js.native
-  def namedNode[Iri /* <: String */](value: Iri): NamedNodeExt[Iri] = js.native
+  @scala.inline
+  def namedNode[Iri /* <: String */](value: Iri): NamedNodeExt[Iri] = ^.asInstanceOf[js.Dynamic].applyDynamic("namedNode")(value.asInstanceOf[js.Any]).asInstanceOf[NamedNodeExt[Iri]]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "prefixMap")
-  @js.native
-  def prefixMap(prefixes: Prefixes): typings.rdfExt.prefixMapMod.^ = js.native
+  @scala.inline
+  def prefixMap(prefixes: Prefixes): typings.rdfExt.prefixMapMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixMap")(prefixes.asInstanceOf[js.Any]).asInstanceOf[typings.rdfExt.prefixMapMod.^]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "quad")
-  @js.native
-  def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = js.native
-  @JSImport("rdf-ext/lib/DataFactory", "quad")
-  @js.native
-  def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph): QuadExt = js.native
+  @scala.inline
+  def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[QuadExt]
+  @scala.inline
+  def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph): QuadExt = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[QuadExt]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "triple")
-  @js.native
-  def triple(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = js.native
+  @scala.inline
+  def triple(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): QuadExt = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[QuadExt]
   
   /* static member */
-  @JSImport("rdf-ext/lib/DataFactory", "variable")
-  @js.native
-  def variable(value: String): VariableExt = js.native
+  @scala.inline
+  def variable(value: String): VariableExt = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(value.asInstanceOf[js.Any]).asInstanceOf[VariableExt]
   
   // tslint:disable-next-line no-unnecessary-class
   type DataFactoryExt = DataFactory[QuadExt, Quad]

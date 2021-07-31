@@ -2,21 +2,19 @@ package typings.cordovaPluginAppVersion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GetAppName extends StObject {
     
-    def getAppName(): js.Promise[String] = js.native
+    def getAppName(): js.Promise[String]
     
-    def getPackageName(): js.Promise[String] = js.native
+    def getPackageName(): js.Promise[String]
     
-    def getVersionCode(): js.Promise[String] = js.native
+    def getVersionCode(): js.Promise[String]
     
-    def getVersionNumber(): js.Promise[String] = js.native
+    def getVersionNumber(): js.Promise[String]
   }
   object GetAppName {
     

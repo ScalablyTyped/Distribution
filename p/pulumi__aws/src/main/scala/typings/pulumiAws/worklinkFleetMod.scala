@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object worklinkFleetMod {
@@ -26,7 +25,7 @@ object worklinkFleetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: FleetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: FleetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -87,6 +86,10 @@ object worklinkFleetMod {
   /* static members */
   object Fleet {
     
+    @JSImport("@pulumi/aws/worklink/fleet", "Fleet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Fleet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -96,65 +99,59 @@ object worklinkFleetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/worklink/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Fleet = js.native
-    @JSImport("@pulumi/aws/worklink/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Fleet = js.native
-    @JSImport("@pulumi/aws/worklink/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FleetState): Fleet = js.native
-    @JSImport("@pulumi/aws/worklink/fleet", "Fleet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FleetState): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Fleet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Fleet]
     
     /**
       * Returns true if the given object is an instance of Fleet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/worklink/fleet", "Fleet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/fleet.Fleet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/fleet.Fleet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/worklink/fleet.Fleet */ Boolean]
   }
   
-  @js.native
   trait FleetArgs extends StObject {
     
     /**
       * The ARN of the Amazon Kinesis data stream that receives the audit events. Kinesis data stream name must begin with `"AmazonWorkLink-"`.
       */
-    val auditStreamArn: js.UndefOr[Input[String]] = js.native
+    val auditStreamArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate chain, including intermediate certificates and the root certificate authority certificate used to issue device certificates.
       */
-    val deviceCaCertificate: js.UndefOr[Input[String]] = js.native
+    val deviceCaCertificate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the fleet.
       */
-    val displayName: js.UndefOr[Input[String]] = js.native
+    val displayName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Provide this to allow manage the identity provider configuration for the fleet. Fields documented below.
       */
-    val identityProvider: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]] = js.native
+    val identityProvider: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]] = js.undefined
     
     /**
       * A region-unique name for the AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Provide this to allow manage the company network configuration for the fleet. Fields documented below.
       */
-    val network: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]] = js.native
+    val network: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]] = js.undefined
     
     /**
       * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region. Defaults to `true`.
       */
-    val optimizeForEndUserLocation: js.UndefOr[Input[Boolean]] = js.native
+    val optimizeForEndUserLocation: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object FleetArgs {
     
@@ -211,63 +208,62 @@ object worklinkFleetMod {
     }
   }
   
-  @js.native
   trait FleetState extends StObject {
     
     /**
       * The ARN of the created WorkLink Fleet.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the Amazon Kinesis data stream that receives the audit events. Kinesis data stream name must begin with `"AmazonWorkLink-"`.
       */
-    val auditStreamArn: js.UndefOr[Input[String]] = js.native
+    val auditStreamArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier used by users to sign in to the Amazon WorkLink app.
       */
-    val companyCode: js.UndefOr[Input[String]] = js.native
+    val companyCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time that the fleet was created.
       */
-    val createdTime: js.UndefOr[Input[String]] = js.native
+    val createdTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate chain, including intermediate certificates and the root certificate authority certificate used to issue device certificates.
       */
-    val deviceCaCertificate: js.UndefOr[Input[String]] = js.native
+    val deviceCaCertificate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the fleet.
       */
-    val displayName: js.UndefOr[Input[String]] = js.native
+    val displayName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Provide this to allow manage the identity provider configuration for the fleet. Fields documented below.
       */
-    val identityProvider: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]] = js.native
+    val identityProvider: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetIdentityProvider]] = js.undefined
     
     /**
       * The time that the fleet was last updated.
       */
-    val lastUpdatedTime: js.UndefOr[Input[String]] = js.native
+    val lastUpdatedTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A region-unique name for the AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Provide this to allow manage the company network configuration for the fleet. Fields documented below.
       */
-    val network: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]] = js.native
+    val network: js.UndefOr[Input[typings.pulumiAws.inputMod.worklink.FleetNetwork]] = js.undefined
     
     /**
       * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region. Defaults to `true`.
       */
-    val optimizeForEndUserLocation: js.UndefOr[Input[Boolean]] = js.native
+    val optimizeForEndUserLocation: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object FleetState {
     

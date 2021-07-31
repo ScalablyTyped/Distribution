@@ -2,19 +2,17 @@ package typings.mapboxMapboxSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var fonts: js.Array[String] = js.native
+  var fonts: js.Array[String]
   
-  var ownerId: js.UndefOr[String] = js.native
+  var ownerId: js.UndefOr[String] = js.undefined
   
-  var start: Double = js.native
+  var start: Double
 }
 object End {
   

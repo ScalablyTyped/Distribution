@@ -12,7 +12,6 @@ import typings.jestTypes.configMod.Timers
 import typings.jestTypes.testResultMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestTypesStrings {
@@ -219,55 +218,73 @@ object jestTypesStrings {
   
   @js.native
   sealed trait afterAll
-    extends HookType
+    extends StObject
+       with HookType
        with SharedHookType
   @scala.inline
   def afterAll: afterAll = "afterAll".asInstanceOf[afterAll]
   
   @js.native
-  sealed trait afterEach extends HookType
+  sealed trait afterEach
+    extends StObject
+       with HookType
   @scala.inline
   def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   
   @js.native
-  sealed trait all extends SnapshotUpdateState
+  sealed trait all
+    extends StObject
+       with SnapshotUpdateState
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait always extends NotifyMode
+  sealed trait always
+    extends StObject
+       with NotifyMode
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait babel extends CoverageProvider
+  sealed trait babel
+    extends StObject
+       with CoverageProvider
   @scala.inline
   def babel: babel = "babel".asInstanceOf[babel]
   
   @js.native
   sealed trait beforeAll
-    extends HookType
+    extends StObject
+       with HookType
        with SharedHookType
   @scala.inline
   def beforeAll: beforeAll = "beforeAll".asInstanceOf[beforeAll]
   
   @js.native
-  sealed trait beforeEach extends HookType
+  sealed trait beforeEach
+    extends StObject
+       with HookType
   @scala.inline
   def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
   
   @js.native
-  sealed trait change extends NotifyMode
+  sealed trait change
+    extends StObject
+       with NotifyMode
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait clover extends CoverageReporterName
+  sealed trait clover
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def clover: clover = "clover".asInstanceOf[clover]
   
   @js.native
-  sealed trait cobertura extends CoverageReporterName
+  sealed trait cobertura
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
   
@@ -287,12 +304,16 @@ object jestTypesStrings {
   def describeBlock: describeBlock = "describeBlock".asInstanceOf[describeBlock]
   
   @js.native
-  sealed trait disabled extends Status
+  sealed trait disabled
+    extends StObject
+       with Status
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait done extends TestStatus
+  sealed trait done
+    extends StObject
+       with TestStatus
   @scala.inline
   def done: done = "done".asInstanceOf[done]
   
@@ -317,22 +338,30 @@ object jestTypesStrings {
   def eval: eval = "eval".asInstanceOf[eval]
   
   @js.native
-  sealed trait failed extends Status
+  sealed trait failed
+    extends StObject
+       with Status
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait failure extends NotifyMode
+  sealed trait failure
+    extends StObject
+       with NotifyMode
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
-  sealed trait `failure-change` extends NotifyMode
+  sealed trait `failure-change`
+    extends StObject
+       with NotifyMode
   @scala.inline
   def `failure-change`: `failure-change` = "failure-change".asInstanceOf[`failure-change`]
   
   @js.native
-  sealed trait fake extends Timers
+  sealed trait fake
+    extends StObject
+       with Timers
   @scala.inline
   def fake: fake = "fake".asInstanceOf[fake]
   
@@ -362,12 +391,16 @@ object jestTypesStrings {
   def hook_success: hook_success = "hook_success".asInstanceOf[hook_success]
   
   @js.native
-  sealed trait html extends CoverageReporterName
+  sealed trait html
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait `html-spa` extends CoverageReporterName
+  sealed trait `html-spa`
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def `html-spa`: `html-spa` = "html-spa".asInstanceOf[`html-spa`]
   
@@ -392,47 +425,65 @@ object jestTypesStrings {
   def `jest-runner`: `jest-runner` = "jest-runner".asInstanceOf[`jest-runner`]
   
   @js.native
-  sealed trait `json-summary` extends CoverageReporterName
+  sealed trait `json-summary`
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
   
   @js.native
-  sealed trait json_ extends CoverageReporterName
+  sealed trait json_
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def json_ : json_ = "json".asInstanceOf[json_]
   
   @js.native
-  sealed trait lcov extends CoverageReporterName
+  sealed trait lcov
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def lcov: lcov = "lcov".asInstanceOf[lcov]
   
   @js.native
-  sealed trait lcovonly extends CoverageReporterName
+  sealed trait lcovonly
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   
   @js.native
-  sealed trait legacy extends Timers
+  sealed trait legacy
+    extends StObject
+       with Timers
   @scala.inline
   def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
-  sealed trait modern extends Timers
+  sealed trait modern
+    extends StObject
+       with Timers
   @scala.inline
   def modern: modern = "modern".asInstanceOf[modern]
   
   @js.native
-  sealed trait `new` extends SnapshotUpdateState
+  sealed trait `new`
+    extends StObject
+       with SnapshotUpdateState
   @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait none extends SnapshotUpdateState
+  sealed trait none
+    extends StObject
+       with SnapshotUpdateState
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait only extends _BlockMode
+  sealed trait only
+    extends StObject
+       with _BlockMode
   @scala.inline
   def only: only = "only".asInstanceOf[only]
   
@@ -447,12 +498,16 @@ object jestTypesStrings {
   def parseInt: parseInt = "parseInt".asInstanceOf[parseInt]
   
   @js.native
-  sealed trait passed extends Status
+  sealed trait passed
+    extends StObject
+       with Status
   @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
   
   @js.native
-  sealed trait pending extends Status
+  sealed trait pending
+    extends StObject
+       with Status
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
@@ -462,7 +517,9 @@ object jestTypesStrings {
   def queueMicrotask: queueMicrotask = "queueMicrotask".asInstanceOf[queueMicrotask]
   
   @js.native
-  sealed trait real extends Timers
+  sealed trait real
+    extends StObject
+       with Timers
   @scala.inline
   def real: real = "real".asInstanceOf[real]
   
@@ -493,13 +550,16 @@ object jestTypesStrings {
   
   @js.native
   sealed trait skip
-    extends TestStatus
+    extends StObject
+       with TestStatus
        with _BlockMode
   @scala.inline
   def skip: skip = "skip".asInstanceOf[skip]
   
   @js.native
-  sealed trait skipped extends Status
+  sealed trait skipped
+    extends StObject
+       with Status
   @scala.inline
   def skipped: skipped = "skipped".asInstanceOf[skipped]
   
@@ -509,17 +569,23 @@ object jestTypesStrings {
   def start_describe_definition: start_describe_definition = "start_describe_definition".asInstanceOf[start_describe_definition]
   
   @js.native
-  sealed trait success extends NotifyMode
+  sealed trait success
+    extends StObject
+       with NotifyMode
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait `success-change` extends NotifyMode
+  sealed trait `success-change`
+    extends StObject
+       with NotifyMode
   @scala.inline
   def `success-change`: `success-change` = "success-change".asInstanceOf[`success-change`]
   
   @js.native
-  sealed trait teamcity extends CoverageReporterName
+  sealed trait teamcity
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
   
@@ -574,23 +640,30 @@ object jestTypesStrings {
   def test_todo: test_todo = "test_todo".asInstanceOf[test_todo]
   
   @js.native
-  sealed trait text extends CoverageReporterName
+  sealed trait text
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait `text-lcov` extends CoverageReporterName
+  sealed trait `text-lcov`
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def `text-lcov`: `text-lcov` = "text-lcov".asInstanceOf[`text-lcov`]
   
   @js.native
-  sealed trait `text-summary` extends CoverageReporterName
+  sealed trait `text-summary`
+    extends StObject
+       with CoverageReporterName
   @scala.inline
   def `text-summary`: `text-summary` = "text-summary".asInstanceOf[`text-summary`]
   
   @js.native
   sealed trait todo
-    extends Status
+    extends StObject
+       with Status
        with TestStatus
        with _BlockMode
   @scala.inline
@@ -602,7 +675,9 @@ object jestTypesStrings {
   def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait v8 extends CoverageProvider
+  sealed trait v8
+    extends StObject
+       with CoverageProvider
   @scala.inline
   def v8: v8 = "v8".asInstanceOf[v8]
   

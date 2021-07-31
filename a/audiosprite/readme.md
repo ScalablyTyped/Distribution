@@ -11,8 +11,8 @@ Concat small audio files into single file and export in many formats.
 | Full name          | audiosprite |
 | Keywords           | audio, audio-sprite, jukebox, ffmpeg |
 | # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 96567 |
+| # dependents       | 14 |
+| # downloads        | 93867 |
 | # stars            | 5 |
 
 ## Links

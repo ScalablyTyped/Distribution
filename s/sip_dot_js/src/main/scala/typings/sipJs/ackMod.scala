@@ -4,16 +4,14 @@ import typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ackMod {
   
-  @js.native
   trait IncomingAckRequest extends StObject {
     
     /** The incoming message. */
-    val message: IncomingRequestMessage = js.native
+    val message: IncomingRequestMessage
   }
   object IncomingAckRequest {
     
@@ -31,11 +29,10 @@ object ackMod {
     }
   }
   
-  @js.native
   trait OutgoingAckRequest extends StObject {
     
     /** The outgoing message. */
-    val message: OutgoingRequestMessage = js.native
+    val message: OutgoingRequestMessage
   }
   object OutgoingAckRequest {
     

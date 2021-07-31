@@ -10,14 +10,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.canceled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to an instance of a background task. */
 @js.native
 trait WebUIBackgroundTaskInstanceRuntimeClass extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_canceled(`type`: canceled, listener: BackgroundTaskCanceledEventHandler): Unit = js.native
   
@@ -31,7 +30,7 @@ trait WebUIBackgroundTaskInstanceRuntimeClass extends StObject {
   var instanceId: String = js.native
   
   /** Attaches a cancellation event handler to the background task instance. */
-  def oncanceled(ev: BackgroundTaskCancellationReason with WinRTEvent[IBackgroundTaskInstance]): Unit = js.native
+  def oncanceled(ev: BackgroundTaskCancellationReason & WinRTEvent[IBackgroundTaskInstance]): Unit = js.native
   /** Attaches a cancellation event handler to the background task instance. */
   @JSName("oncanceled")
   var oncanceled_Original: BackgroundTaskCanceledEventHandler = js.native
@@ -39,7 +38,7 @@ trait WebUIBackgroundTaskInstanceRuntimeClass extends StObject {
   /** Gets or sets progress status for a background task instance. */
   var progress: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_canceled(`type`: canceled, listener: BackgroundTaskCanceledEventHandler): Unit = js.native
   

@@ -2,7 +2,6 @@ package typings.cordovaPluginMapsforge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,13 +14,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def destroyCacheOnExit(destroy: Boolean): Unit = js.native
-  def destroyCacheOnExit(
-    destroy: Boolean,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def destroyCacheOnExit(destroy: Boolean, success: js.Function0[Unit]): Unit = js.native
   def destroyCacheOnExit(destroy: Boolean, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def destroyCacheOnExit(destroy: Boolean, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * This method is the one that provides the tiles, generating them if their are not in the cache.
@@ -29,18 +24,14 @@ trait MapsforgeCachePlugin extends StObject {
     * @param success Success callback. Gets the tile path.
     * @param error Error callback
     */
-  def getTile(args: js.Array[_]): Unit = js.native
+  def getTile(args: js.Array[js.Any]): Unit = js.native
+  def getTile(args: js.Array[js.Any], success: js.Function1[/* tilePath */ String, Unit]): Unit = js.native
   def getTile(
-    args: js.Array[_],
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
-  def getTile(args: js.Array[_], success: js.Function1[/* tilePath */ String, Unit]): Unit = js.native
-  def getTile(
-    args: js.Array[_],
+    args: js.Array[js.Any],
     success: js.Function1[/* tilePath */ String, Unit],
     error: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
+  def getTile(args: js.Array[js.Any], success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * You should call this method before any other one, and provide it with the absolute map file path.
@@ -49,13 +40,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def initialize(mapFilePath: String): Unit = js.native
-  def initialize(
-    mapFilePath: String,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def initialize(mapFilePath: String, success: js.Function0[Unit]): Unit = js.native
   def initialize(mapFilePath: String, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def initialize(mapFilePath: String, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Deletes the cache depending on the flag state.
@@ -63,9 +50,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def onDestroy(): Unit = js.native
-  def onDestroy(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def onDestroy(success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * This method sets the size in megabytes that will remain always available in memory in order to avoid that the application uses all space available.
@@ -74,13 +61,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def setCacheCleaningTrigger(sizeInMB: Double): Unit = js.native
-  def setCacheCleaningTrigger(
-    sizeInMB: Double,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def setCacheCleaningTrigger(sizeInMB: Double, success: js.Function0[Unit]): Unit = js.native
   def setCacheCleaningTrigger(sizeInMB: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setCacheCleaningTrigger(sizeInMB: Double, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Enables or disables the cache. If disabled, the plugin will generate the tiles always from scratch. Cache is enabled by default.
@@ -89,13 +72,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def setCacheEnabled(enabled: Boolean): Unit = js.native
-  def setCacheEnabled(
-    enabled: Boolean,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def setCacheEnabled(enabled: Boolean, success: js.Function0[Unit]): Unit = js.native
   def setCacheEnabled(enabled: Boolean, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setCacheEnabled(enabled: Boolean, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Sets whether or not the cache should be placed in the internal memory or in the SD card.
@@ -105,13 +84,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def setExternalCache(external: Boolean): Unit = js.native
-  def setExternalCache(
-    external: Boolean,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def setExternalCache(external: Boolean, success: js.Function0[Unit]): Unit = js.native
   def setExternalCache(external: Boolean, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setExternalCache(external: Boolean, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Sets the map file to be used for rendering to the map specified by its absolute path.
@@ -120,13 +95,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def setMapFile(absolutePath: String): Unit = js.native
-  def setMapFile(
-    absolutePath: String,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def setMapFile(absolutePath: String, success: js.Function0[Unit]): Unit = js.native
   def setMapFile(absolutePath: String, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setMapFile(absolutePath: String, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Sets the age for the generated images. This means that when the cache is being cleaned, all images younger than the specified value will be kept in the cache in order to avoid deleting images that are being used at the moment.
@@ -135,13 +106,9 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def setMaxCacheAge(milliseconds: Double): Unit = js.native
-  def setMaxCacheAge(
-    milliseconds: Double,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def setMaxCacheAge(milliseconds: Double, success: js.Function0[Unit]): Unit = js.native
   def setMaxCacheAge(milliseconds: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setMaxCacheAge(milliseconds: Double, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
   
   /**
     * Sets the maximum size for the cache. This size must be specified in megabytes. If there is not that space available, the cache will fit the maximum size.
@@ -150,11 +117,7 @@ trait MapsforgeCachePlugin extends StObject {
     * @param error Error callback
     */
   def setMaxCacheSize(sizeInMB: Double): Unit = js.native
-  def setMaxCacheSize(
-    sizeInMB: Double,
-    success: js.UndefOr[scala.Nothing],
-    error: js.Function1[/* message */ String, Unit]
-  ): Unit = js.native
   def setMaxCacheSize(sizeInMB: Double, success: js.Function0[Unit]): Unit = js.native
   def setMaxCacheSize(sizeInMB: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
+  def setMaxCacheSize(sizeInMB: Double, success: Unit, error: js.Function1[/* message */ String, Unit]): Unit = js.native
 }

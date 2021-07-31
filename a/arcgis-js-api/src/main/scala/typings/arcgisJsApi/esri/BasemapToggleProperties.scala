@@ -2,46 +2,46 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BasemapToggleProperties extends WidgetProperties {
+trait BasemapToggleProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The next basemap for toggling.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#nextBasemap)
     */
-  var nextBasemap: js.UndefOr[BasemapProperties | String] = js.native
+  var nextBasemap: js.UndefOr[BasemapProperties | String] = js.undefined
   
   /**
     * Indicates if the title of the basemap is visible in the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#titleVisible)
     */
-  var titleVisible: js.UndefOr[Boolean] = js.native
+  var titleVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#viewModel)
     */
-  var viewModel: js.UndefOr[BasemapToggleViewModelProperties] = js.native
+  var viewModel: js.UndefOr[BasemapToggleViewModelProperties] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[BasemapToggleVisibleElements] = js.native
+  var visibleElements: js.UndefOr[BasemapToggleVisibleElements] = js.undefined
 }
 object BasemapToggleProperties {
   

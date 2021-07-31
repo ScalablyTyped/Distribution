@@ -5,45 +5,43 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the 3D model in a 3D Manufacturing Format (3MF) package. */
-@js.native
 trait Printing3DModel extends StObject {
   
   /** Gets or sets the root 3D Manufacturing Format (3MF) component. It represents the build plate on a 3D printer and defines what will be printed. */
-  var build: Printing3DComponent = js.native
+  var build: Printing3DComponent
   
   /** Gets all 3D Manufacturing Format (3MF) components used in the 3D model. */
-  var components: IVector[Printing3DComponent] = js.native
+  var components: IVector[Printing3DComponent]
   
   /** Gets or sets the root material container for the 3D model. */
-  var material: Printing3DMaterial = js.native
+  var material: Printing3DMaterial
   
   /** Gets all meshes used in the 3D model. */
-  var meshes: IVector[Printing3DMesh] = js.native
+  var meshes: IVector[Printing3DMesh]
   
   /** Gets the metadata for the 3D Manufacturing Format (3MF) package. */
-  var metadata: IMap[String, String] = js.native
+  var metadata: IMap[String, String]
   
   /**
     * Repairs the 3D model.
     * @return Results of the operation.
     */
-  def repairAsync(): IPromiseWithIAsyncAction = js.native
+  def repairAsync(): IPromiseWithIAsyncAction
   
   /** Gets a list of the extensions required by the 3D Manufacturing Format (3MF) package. */
-  var requiredExtensions: IVector[String] = js.native
+  var requiredExtensions: IVector[String]
   
   /** Gets all textures used in the 3D model. */
-  var textures: IVector[Printing3DModelTexture] = js.native
+  var textures: IVector[Printing3DModelTexture]
   
   /** Gets or sets the units of measure used in the 3D model. */
-  var unit: Printing3DModelUnit = js.native
+  var unit: Printing3DModelUnit
   
   /** Gets or sets the version of the 3D Manufacturing Format (3MF) package. */
-  var version: String = js.native
+  var version: String
 }
 object Printing3DModel {
   

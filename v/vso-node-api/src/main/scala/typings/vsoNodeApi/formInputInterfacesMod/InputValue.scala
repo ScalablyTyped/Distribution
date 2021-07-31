@@ -3,26 +3,24 @@ package typings.vsoNodeApi.formInputInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputValue extends StObject {
   
   /**
     * Any other data about this input
     */
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
   /**
     * The text to show for the display of this value
     */
-  var displayValue: String = js.native
+  var displayValue: String
   
   /**
     * The value to store for this input
     */
-  var value: String = js.native
+  var value: String
 }
 object InputValue {
   

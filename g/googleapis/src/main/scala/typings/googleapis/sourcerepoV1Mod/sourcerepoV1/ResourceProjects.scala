@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sourcerepo/v1", "sourcerepo_v1.Resource$Projects")
@@ -30,7 +29,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getConfig(): GaxiosPromise[SchemaProjectConfig] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
-  def getConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectConfig] = js.native
+  def getConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectConfig] = js.native
   def getConfig(params: ParamsResourceProjectsGetconfig): GaxiosPromise[SchemaProjectConfig] = js.native
   def getConfig(params: ParamsResourceProjectsGetconfig, callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
   def getConfig(
@@ -62,7 +61,7 @@ class ResourceProjects protected () extends StObject {
     */
   def updateConfig(): GaxiosPromise[SchemaProjectConfig] = js.native
   def updateConfig(callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
-  def updateConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectConfig] = js.native
+  def updateConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectConfig] = js.native
   def updateConfig(params: ParamsResourceProjectsUpdateconfig): GaxiosPromise[SchemaProjectConfig] = js.native
   def updateConfig(params: ParamsResourceProjectsUpdateconfig, callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
   def updateConfig(

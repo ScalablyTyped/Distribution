@@ -2,16 +2,14 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHealthServiceStatusForOrganizationResponse extends StObject {
   
   /**
     * Information about the status of enabling or disabling AWS Health Organizational View in your organization. Valid values are ENABLED | DISABLED | PENDING. 
     */
-  var healthServiceAccessStatusForOrganization: js.UndefOr[typings.awsSdk.healthMod.healthServiceAccessStatusForOrganization] = js.native
+  var healthServiceAccessStatusForOrganization: js.UndefOr[typings.awsSdk.healthMod.healthServiceAccessStatusForOrganization] = js.undefined
 }
 object DescribeHealthServiceStatusForOrganizationResponse {
   

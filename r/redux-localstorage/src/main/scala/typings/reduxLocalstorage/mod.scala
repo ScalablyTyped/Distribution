@@ -4,64 +4,55 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Reducer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-localstorage", JSImport.Default)
+  @JSImport("redux-localstorage", JSImport.Namespace)
   @js.native
-  def default[A](): js.Any = js.native
-  @JSImport("redux-localstorage", JSImport.Default)
-  @js.native
-  def default[A](storage: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-  @JSImport("redux-localstorage", JSImport.Default)
-  @js.native
-  def default[A](storage: js.UndefOr[scala.Nothing], key: String): js.Any = js.native
-  @JSImport("redux-localstorage", JSImport.Default)
-  @js.native
-  def default[A](storage: js.UndefOr[scala.Nothing], key: String, callback: js.Function): js.Any = js.native
-  @JSImport("redux-localstorage", JSImport.Default)
-  @js.native
-  def default[A](storage: StorageAdapter[A]): js.Any = js.native
-  @JSImport("redux-localstorage", JSImport.Default)
-  @js.native
-  def default[A](storage: StorageAdapter[A], key: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-  @JSImport("redux-localstorage", JSImport.Default)
-  @js.native
-  def default[A](storage: StorageAdapter[A], key: String): js.Any = js.native
-  @JSImport("redux-localstorage", JSImport.Default)
-  @js.native
-  def default[A](storage: StorageAdapter[A], key: String, callback: js.Function): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[A](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  @scala.inline
+  def default[A](storage: Unit, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(storage.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default[A](storage: Unit, key: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(storage.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default[A](storage: Unit, key: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(storage.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default[A](storage: StorageAdapter[A]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(storage.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def default[A](storage: StorageAdapter[A], key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(storage.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default[A](storage: StorageAdapter[A], key: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(storage.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default[A](storage: StorageAdapter[A], key: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(storage.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("redux-localstorage", "actionTypes")
   @js.native
   val actionTypes: ActionTypes_ = js.native
   
-  @JSImport("redux-localstorage", "mergePersistedState")
-  @js.native
-  def mergePersistedState(): js.Function1[/* next */ Reducer[_, AnyAction], Reducer[_, AnyAction]] = js.native
-  @JSImport("redux-localstorage", "mergePersistedState")
-  @js.native
-  def mergePersistedState(merge: js.Function2[/* initialState */ js.Any, /* persistentState */ js.Any, js.Any]): js.Function1[/* next */ Reducer[_, AnyAction], Reducer[_, AnyAction]] = js.native
+  @scala.inline
+  def mergePersistedState(): js.Function1[/* next */ Reducer[js.Any, AnyAction], Reducer[js.Any, AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergePersistedState")().asInstanceOf[js.Function1[/* next */ Reducer[js.Any, AnyAction], Reducer[js.Any, AnyAction]]]
+  @scala.inline
+  def mergePersistedState(merge: js.Function2[/* initialState */ js.Any, /* persistentState */ js.Any, js.Any]): js.Function1[/* next */ Reducer[js.Any, AnyAction], Reducer[js.Any, AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergePersistedState")(merge.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* next */ Reducer[js.Any, AnyAction], Reducer[js.Any, AnyAction]]]
   
-  @JSImport("redux-localstorage", "transformState")
-  @js.native
-  def transformState[A1, A2](down: js.Array[js.Function1[/* state */ _, _]], up: js.Array[js.Function1[/* state */ _, _]]): js.Function1[/* storage */ StorageAdapter[A1], A2] = js.native
-  @JSImport("redux-localstorage", "transformState")
-  @js.native
-  def transformState[A1, A2](down: js.Array[js.Function1[/* state */ _, _]], up: js.Function1[/* state */ A2, A1]): js.Function1[/* storage */ StorageAdapter[A1], A2] = js.native
-  @JSImport("redux-localstorage", "transformState")
-  @js.native
-  def transformState[A1, A2](down: js.Function1[/* state */ A1, A2], up: js.Array[js.Function1[/* state */ _, _]]): js.Function1[/* storage */ StorageAdapter[A1], A2] = js.native
-  @JSImport("redux-localstorage", "transformState")
-  @js.native
-  def transformState[A1, A2](down: js.Function1[/* state */ A1, A2], up: js.Function1[/* state */ A2, A1]): js.Function1[/* storage */ StorageAdapter[A1], A2] = js.native
+  @scala.inline
+  def transformState[A1, A2](
+    down: js.Array[js.Function1[/* state */ js.Any, js.Any]],
+    up: js.Array[js.Function1[/* state */ js.Any, js.Any]]
+  ): js.Function1[/* storage */ StorageAdapter[A1], A2] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformState")(down.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* storage */ StorageAdapter[A1], A2]]
+  @scala.inline
+  def transformState[A1, A2](down: js.Array[js.Function1[/* state */ js.Any, js.Any]], up: js.Function1[/* state */ A2, A1]): js.Function1[/* storage */ StorageAdapter[A1], A2] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformState")(down.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* storage */ StorageAdapter[A1], A2]]
+  @scala.inline
+  def transformState[A1, A2](down: js.Function1[/* state */ A1, A2], up: js.Array[js.Function1[/* state */ js.Any, js.Any]]): js.Function1[/* storage */ StorageAdapter[A1], A2] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformState")(down.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* storage */ StorageAdapter[A1], A2]]
+  @scala.inline
+  def transformState[A1, A2](down: js.Function1[/* state */ A1, A2], up: js.Function1[/* state */ A2, A1]): js.Function1[/* storage */ StorageAdapter[A1], A2] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformState")(down.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* storage */ StorageAdapter[A1], A2]]
   
-  @js.native
   trait ActionTypes_ extends StObject {
     
-    var INIT: String = js.native
+    var INIT: String
   }
   object ActionTypes_ {
     
@@ -81,16 +72,15 @@ object mod {
   
   type AdapterCallback = js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], Unit]
   
-  @js.native
   trait StorageAdapter[A] extends StObject {
     
-    var `0`: A = js.native
+    var `0`: A
     
-    def del(key: String, callback: AdapterCallback): Unit = js.native
+    def del(key: String, callback: AdapterCallback): Unit
     
-    def get(key: String, callback: AdapterCallback): Unit = js.native
+    def get(key: String, callback: AdapterCallback): Unit
     
-    def put(key: String, value: js.Any, callback: AdapterCallback): Unit = js.native
+    def put(key: String, value: js.Any, callback: AdapterCallback): Unit
   }
   object StorageAdapter {
     
@@ -107,7 +97,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class StorageAdapterMutableBuilder[Self <: StorageAdapter[_], A] (val x: Self with StorageAdapter[A]) extends AnyVal {
+    implicit class StorageAdapterMutableBuilder[Self <: StorageAdapter[?], A] (val x: Self & StorageAdapter[A]) extends AnyVal {
       
       @scala.inline
       def set0(value: A): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
@@ -125,6 +115,5 @@ object mod {
   
   type StorageAdapterCreator[A] = js.Function1[/* storage */ A, StorageAdapter[A]]
   
-  @js.native
   trait StorageAdapterEnhancer extends StObject
 }

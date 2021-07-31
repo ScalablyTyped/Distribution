@@ -2,14 +2,12 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates that the type that implements the interface provides disposing notifications.
   * Implement this interface if the class must notify other objects when it is releasing resources. The base component class already implements this interface. Therefore, typically this interface is already available.
   */
-@js.native
 trait INotifyDisposing extends StObject {
   
   //#region Events
@@ -18,14 +16,14 @@ trait INotifyDisposing extends StObject {
     * @param handler
     *       The name of the event handler for the disposing event.
     */
-  def add_disposing(handler: js.Function): Unit = js.native
+  def add_disposing(handler: js.Function): Unit
   
   /**
     * Occurs when an object's resources are released.
     * @param handler
     *       The name of the event handler for the disposing event.
     */
-  def remove_disposing(handler: js.Function): Unit = js.native
+  def remove_disposing(handler: js.Function): Unit
 }
 object INotifyDisposing {
   

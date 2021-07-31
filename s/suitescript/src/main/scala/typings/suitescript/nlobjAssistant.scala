@@ -3,7 +3,6 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait nlobjAssistant
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
@@ -46,19 +46,13 @@ Instantiable0[js.Any] {
     * @return
     */
   def addField(name: String, `type`: String): js.Function0[Unit] = js.native
-  def addField(
-    name: String,
-    `type`: String,
-    label: js.UndefOr[scala.Nothing],
-    source: js.UndefOr[scala.Nothing],
-    group: String
-  ): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], source: js.Any): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], source: js.Any, group: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: String, source: js.UndefOr[scala.Nothing], group: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: js.Any, group: String): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: String, source: Unit, group: String): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: Unit, source: js.Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: Unit, source: js.Any, group: String): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: Unit, source: Unit, group: String): js.Function0[Unit] = js.native
   
   /**
     * add a field group to the page.
@@ -465,7 +459,6 @@ object nlobjAssistant {
     /**
       *
       */
-    @js.native
     trait SetCurrentStep0 extends StObject
   }
 }

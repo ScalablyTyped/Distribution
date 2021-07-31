@@ -4,13 +4,11 @@ import typings.reactMdAutocomplete.typesMod.AutoCompleteData
 import typings.reactMdUtils.utilsMod.GetItemValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined @react-md/autocomplete.@react-md/autocomplete/types/types.FilterFunctionOptions<{}> */
-  @js.native
   trait FilterFunctionOptions extends StObject {
     
     /**
@@ -24,31 +22,31 @@ object anon {
       * - return item[valueKey] if it's an object (this uses typeof item === "object")
       * - return the empty string for all other data types
       */
-    var getItemValue: js.UndefOr[GetItemValue_[AutoCompleteData]] = js.native
+    var getItemValue: js.UndefOr[GetItemValue_[AutoCompleteData]] = js.undefined
     
     /**
       * Boolean if all the whitespace should be ignored in the query string and for
       * each item.
       */
-    var ignoreWhitespace: js.UndefOr[Boolean] = js.native
+    var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the filter should also exclude all items that do not start with
       * the query string. The default behavior is to return all matches that
       * contain the query string anywhere.
       */
-    var startsWith: js.UndefOr[Boolean] = js.native
+    var startsWith: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the query string and each item should have the leading and
       * trailing spaces removed.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key to use to get a value string if the item is an object.
       */
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
   }
   object FilterFunctionOptions {
     
@@ -94,16 +92,15 @@ object anon {
   }
   
   /* Inlined std.Required<@react-md/transition.@react-md/transition.TransitionHooks> */
-  @js.native
   trait RequiredTransitionHooks extends StObject {
     
-    var onEnter: js.Any = js.native
+    var onEnter: js.Any
     
-    var onEntered: js.Any = js.native
+    var onEntered: js.Any
     
-    var onEntering: js.Any = js.native
+    var onEntering: js.Any
     
-    var onExited: js.Any = js.native
+    var onExited: js.Any
   }
   object RequiredTransitionHooks {
     

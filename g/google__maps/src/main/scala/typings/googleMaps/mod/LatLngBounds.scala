@@ -2,15 +2,13 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LatLngBounds extends StObject {
   
-  var northeast: LatLngLiteral = js.native
+  var northeast: LatLngLiteral
   
-  var southwest: LatLngLiteral = js.native
+  var southwest: LatLngLiteral
 }
 object LatLngBounds {
   

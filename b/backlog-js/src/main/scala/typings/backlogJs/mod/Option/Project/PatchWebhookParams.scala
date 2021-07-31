@@ -2,21 +2,19 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchWebhookParams extends StObject {
   
-  var activityTypeIds: js.UndefOr[js.Array[Double]] = js.native
+  var activityTypeIds: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var allEvent: js.UndefOr[Boolean] = js.native
+  var allEvent: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var hookUrl: js.UndefOr[String] = js.native
+  var hookUrl: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object PatchWebhookParams {
   

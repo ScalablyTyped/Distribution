@@ -2,13 +2,11 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLayoutOptions extends StObject {
   
-  var padding: js.UndefOr[ChartLayoutPaddingObject | Double] = js.native
+  var padding: js.UndefOr[ChartLayoutPaddingObject | Double] = js.undefined
 }
 object ChartLayoutOptions {
   

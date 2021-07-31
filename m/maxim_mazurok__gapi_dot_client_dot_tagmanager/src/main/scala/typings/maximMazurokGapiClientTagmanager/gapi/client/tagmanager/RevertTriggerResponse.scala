@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevertTriggerResponse extends StObject {
   
   /**
     * Trigger as it appears in the latest container version since the last workspace synchronization operation. If no trigger is present, that means the trigger was deleted in the latest
     * container version.
     */
-  var trigger: js.UndefOr[Trigger] = js.native
+  var trigger: js.UndefOr[Trigger] = js.undefined
 }
 object RevertTriggerResponse {
   

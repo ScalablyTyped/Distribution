@@ -2,17 +2,20 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "CalculatedValue")
 @js.native
 class CalculatedValue () extends Base {
   def this(name: String) = this()
-  def this(name: js.UndefOr[scala.Nothing], expression: String) = this()
   def this(name: String, expression: String) = this()
+  def this(name: Unit, expression: String) = this()
   
-  def doCalculation(calculatedValues: js.Array[CalculatedValue], values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  def doCalculation(
+    calculatedValues: js.Array[CalculatedValue],
+    values: HashTable[js.Any],
+    properties: HashTable[js.Any]
+  ): Unit = js.native
   
   /**
     * The Expression that used to calculate the value. You may use standard operators like +, -, * and /, squares (). Here is the example of accessing the question value {questionname}.
@@ -34,7 +37,7 @@ class CalculatedValue () extends Base {
   
   def resetCalculation(): Unit = js.native
   
-  def runExpression(values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  def runExpression(values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
   
   def setOwner(data: ISurveyData): Unit = js.native
   

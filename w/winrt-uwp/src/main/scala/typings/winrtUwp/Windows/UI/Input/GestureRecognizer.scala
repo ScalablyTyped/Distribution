@@ -16,14 +16,13 @@ import typings.winrtUwp.winrtUwpStrings.righttapped
 import typings.winrtUwp.winrtUwpStrings.tapped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides gesture and manipulation recognition, event listeners, and settings. */
 @js.native
 trait GestureRecognizer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_crosssliding(`type`: crosssliding, listener: TypedEventHandler[GestureRecognizer, CrossSlidingEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -111,55 +110,55 @@ trait GestureRecognizer extends StObject {
   var mouseWheelParameters: MouseWheelParameters = js.native
   
   /** Occurs when a user performs a slide or swipe gesture (through a single touch contact) within a content area that supports panning along a single axis only. The gesture must occur in a direction that is perpendicular to this panning axis. */
-  def oncrosssliding(ev: CrossSlidingEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def oncrosssliding(ev: CrossSlidingEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when a user performs a slide or swipe gesture (through a single touch contact) within a content area that supports panning along a single axis only. The gesture must occur in a direction that is perpendicular to this panning axis. */
   @JSName("oncrosssliding")
   var oncrosssliding_Original: TypedEventHandler[GestureRecognizer, CrossSlidingEventArgs] = js.native
   
   /** Occurs when a user performs a slide or swipe gesture with a mouse or pen/stylus (single contact). */
-  def ondragging(ev: DraggingEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def ondragging(ev: DraggingEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when a user performs a slide or swipe gesture with a mouse or pen/stylus (single contact). */
   @JSName("ondragging")
   var ondragging_Original: TypedEventHandler[GestureRecognizer, DraggingEventArgs] = js.native
   
   /** Occurs when a user performs a press and hold gesture (with a single touch, mouse, or pen/stylus contact). */
-  def onholding(ev: HoldingEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def onholding(ev: HoldingEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when a user performs a press and hold gesture (with a single touch, mouse, or pen/stylus contact). */
   @JSName("onholding")
   var onholding_Original: TypedEventHandler[GestureRecognizer, HoldingEventArgs] = js.native
   
   /** Occurs when the input points are lifted and all subsequent motion (translation, expansion, or rotation) through inertia has ended. */
-  def onmanipulationcompleted(ev: ManipulationCompletedEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def onmanipulationcompleted(ev: ManipulationCompletedEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when the input points are lifted and all subsequent motion (translation, expansion, or rotation) through inertia has ended. */
   @JSName("onmanipulationcompleted")
   var onmanipulationcompleted_Original: TypedEventHandler[GestureRecognizer, ManipulationCompletedEventArgs] = js.native
   
   /** Occurs when all contact points are lifted during a manipulation and the velocity of the manipulation is significant enough to initiate inertia behavior (translation, expansion, or rotation continue after the input pointers are lifted). */
-  def onmanipulationinertiastarting(ev: ManipulationInertiaStartingEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def onmanipulationinertiastarting(ev: ManipulationInertiaStartingEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when all contact points are lifted during a manipulation and the velocity of the manipulation is significant enough to initiate inertia behavior (translation, expansion, or rotation continue after the input pointers are lifted). */
   @JSName("onmanipulationinertiastarting")
   var onmanipulationinertiastarting_Original: TypedEventHandler[GestureRecognizer, ManipulationInertiaStartingEventArgs] = js.native
   
   /** Occurs when one or more input points have been initiated and subsequent motion (translation, expansion, or rotation) has begun. */
-  def onmanipulationstarted(ev: ManipulationStartedEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def onmanipulationstarted(ev: ManipulationStartedEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when one or more input points have been initiated and subsequent motion (translation, expansion, or rotation) has begun. */
   @JSName("onmanipulationstarted")
   var onmanipulationstarted_Original: TypedEventHandler[GestureRecognizer, ManipulationStartedEventArgs] = js.native
   
   /** Occurs after one or more input points have been initiated and subsequent motion (translation, expansion, or rotation) is under way. */
-  def onmanipulationupdated(ev: ManipulationUpdatedEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def onmanipulationupdated(ev: ManipulationUpdatedEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs after one or more input points have been initiated and subsequent motion (translation, expansion, or rotation) is under way. */
   @JSName("onmanipulationupdated")
   var onmanipulationupdated_Original: TypedEventHandler[GestureRecognizer, ManipulationUpdatedEventArgs] = js.native
   
   /** Occurs when the pointer input is interpreted as a right-tap gesture, regardless of input device. */
-  def onrighttapped(ev: RightTappedEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def onrighttapped(ev: RightTappedEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when the pointer input is interpreted as a right-tap gesture, regardless of input device. */
   @JSName("onrighttapped")
   var onrighttapped_Original: TypedEventHandler[GestureRecognizer, RightTappedEventArgs] = js.native
   
   /** Occurs when the pointer input is interpreted as a tap gesture. */
-  def ontapped(ev: TappedEventArgs with WinRTEvent[GestureRecognizer]): Unit = js.native
+  def ontapped(ev: TappedEventArgs & WinRTEvent[GestureRecognizer]): Unit = js.native
   /** Occurs when the pointer input is interpreted as a tap gesture. */
   @JSName("ontapped")
   var ontapped_Original: TypedEventHandler[GestureRecognizer, TappedEventArgs] = js.native
@@ -199,7 +198,7 @@ trait GestureRecognizer extends StObject {
     */
   def processUpEvent(value: PointerPoint): Unit = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_crosssliding(`type`: crosssliding, listener: TypedEventHandler[GestureRecognizer, CrossSlidingEventArgs]): Unit = js.native
   @JSName("removeEventListener")

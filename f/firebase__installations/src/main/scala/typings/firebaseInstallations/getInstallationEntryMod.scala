@@ -5,22 +5,23 @@ import typings.firebaseInstallations.installationEntryMod.InstallationEntry
 import typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInstallationEntryMod {
   
-  @JSImport("@firebase/installations/dist/src/helpers/get-installation-entry", "getInstallationEntry")
+  @JSImport("@firebase/installations/dist/src/helpers/get-installation-entry", JSImport.Namespace)
   @js.native
-  def getInstallationEntry(appConfig: AppConfig): js.Promise[InstallationEntryWithRegistrationPromise] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInstallationEntry(appConfig: AppConfig): js.Promise[InstallationEntryWithRegistrationPromise] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallationEntry")(appConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InstallationEntryWithRegistrationPromise]]
+  
   trait InstallationEntryWithRegistrationPromise extends StObject {
     
-    var installationEntry: InstallationEntry = js.native
+    var installationEntry: InstallationEntry
     
     /** Exist iff the installationEntry is not registered. */
-    var registrationPromise: js.UndefOr[js.Promise[RegisteredInstallationEntry]] = js.native
+    var registrationPromise: js.UndefOr[js.Promise[RegisteredInstallationEntry]] = js.undefined
   }
   object InstallationEntryWithRegistrationPromise {
     

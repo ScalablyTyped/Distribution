@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishResponse extends StObject {
   
   /** The server-assigned ID of each published message, in the same order as the messages in the request. IDs are guaranteed to be unique within the topic. */
-  var messageIds: js.UndefOr[js.Array[String]] = js.native
+  var messageIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PublishResponse {
   

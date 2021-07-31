@@ -2,10 +2,10 @@ package typings.storybookUi
 
 import typings.react.mod.FunctionComponent
 import typings.storybookAddons.distMod.Collection
+import typings.storybookApi.shortcutsMod.Shortcuts
 import typings.storybookUi.desktopMod.DesktopProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appMockdataMod {
@@ -28,5 +28,5 @@ object appMockdataMod {
   
   @JSImport("@storybook/ui/dist/components/layout/app.mockdata", "shortcuts")
   @js.native
-  val shortcuts: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['shortcuts'] */ js.Any = js.native
+  val shortcuts: Shortcuts = js.native
 }

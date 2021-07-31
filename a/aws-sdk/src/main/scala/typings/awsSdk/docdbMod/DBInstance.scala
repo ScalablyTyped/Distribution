@@ -2,141 +2,139 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBInstance extends StObject {
   
   /**
     * Indicates that minor version patches are applied automatically.
     */
-  var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.native
+  var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the name of the Availability Zone that the instance is located in.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the number of days for which automatic snapshots are retained.
     */
-  var BackupRetentionPeriod: js.UndefOr[Integer] = js.native
+  var BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined
   
   /**
     * The identifier of the CA certificate for this DB instance.
     */
-  var CACertificateIdentifier: js.UndefOr[String] = js.native
+  var CACertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the name of the cluster that the instance is a member of if the instance is a member of a cluster.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.native
+  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the instance.
     */
-  var DBInstanceArn: js.UndefOr[String] = js.native
+  var DBInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the name of the compute and memory capacity class of the instance.
     */
-  var DBInstanceClass: js.UndefOr[String] = js.native
+  var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a user-provided database identifier. This identifier is the unique key that identifies an instance.
     */
-  var DBInstanceIdentifier: js.UndefOr[String] = js.native
+  var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the current state of this database.
     */
-  var DBInstanceStatus: js.UndefOr[String] = js.native
+  var DBInstanceStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies information on the subnet group that is associated with the instance, including the name, description, and subnets in the subnet group.
     */
-  var DBSubnetGroup: js.UndefOr[typings.awsSdk.docdbMod.DBSubnetGroup] = js.native
+  var DBSubnetGroup: js.UndefOr[typings.awsSdk.docdbMod.DBSubnetGroup] = js.undefined
   
   /**
     * The AWS Region-unique, immutable identifier for the instance. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the instance is accessed.
     */
-  var DbiResourceId: js.UndefOr[String] = js.native
+  var DbiResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of log types that this instance is configured to export to Amazon CloudWatch Logs.
     */
-  var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.native
+  var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   
   /**
     * Specifies the connection endpoint.
     */
-  var Endpoint: js.UndefOr[typings.awsSdk.docdbMod.Endpoint] = js.native
+  var Endpoint: js.UndefOr[typings.awsSdk.docdbMod.Endpoint] = js.undefined
   
   /**
     * Provides the name of the database engine to be used for this instance.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the database engine version.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the date and time that the instance was created.
     */
-  var InstanceCreateTime: js.UndefOr[TStamp] = js.native
+  var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     *  If StorageEncrypted is true, the AWS KMS key identifier for the encrypted instance. 
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.native
+  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Specifies that changes to the instance are pending. This element is included only when changes are pending. Specific changes are identified by subelements.
     */
-  var PendingModifiedValues: js.UndefOr[typings.awsSdk.docdbMod.PendingModifiedValues] = js.native
+  var PendingModifiedValues: js.UndefOr[typings.awsSdk.docdbMod.PendingModifiedValues] = js.undefined
   
   /**
     *  Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
     */
-  var PreferredBackupWindow: js.UndefOr[String] = js.native
+  var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
     */
-  var PreferredMaintenanceWindow: js.UndefOr[String] = js.native
+  var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
   /**
     * A value that specifies the order in which an Amazon DocumentDB replica is promoted to the primary instance after a failure of the existing primary instance.
     */
-  var PromotionTier: js.UndefOr[IntegerOptional] = js.native
+  var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Not supported. Amazon DocumentDB does not currently support public endpoints. The value of PubliclyAccessible is always false.
     */
-  var PubliclyAccessible: js.UndefOr[Boolean] = js.native
+  var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The status of a read replica. If the instance is not a read replica, this is blank.
     */
-  var StatusInfos: js.UndefOr[DBInstanceStatusInfoList] = js.native
+  var StatusInfos: js.UndefOr[DBInstanceStatusInfoList] = js.undefined
   
   /**
     * Specifies whether or not the instance is encrypted.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.native
+  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provides a list of VPC security group elements that the instance belongs to.
     */
-  var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.native
+  var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.undefined
 }
 object DBInstance {
   

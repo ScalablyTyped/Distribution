@@ -2,29 +2,27 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s read-only membership in a group.
   */
-@js.native
 trait SchemaMembership extends StObject {
   
   /**
     * The contact group membership.
     */
-  var contactGroupMembership: js.UndefOr[SchemaContactGroupMembership] = js.native
+  var contactGroupMembership: js.UndefOr[SchemaContactGroupMembership] = js.undefined
   
   /**
     * The domain membership.
     */
-  var domainMembership: js.UndefOr[SchemaDomainMembership] = js.native
+  var domainMembership: js.UndefOr[SchemaDomainMembership] = js.undefined
   
   /**
     * Metadata about the membership.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
 }
 object SchemaMembership {
   

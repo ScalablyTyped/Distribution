@@ -2,16 +2,14 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * The S3Destination object.
     */
-  var s3: js.UndefOr[S3Destination] = js.native
+  var s3: js.UndefOr[S3Destination] = js.undefined
 }
 object Destination {
   

@@ -2,29 +2,27 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardObject extends StObject {
   
   /** Gets the Dashboard object that contains this object. */
-  def getDashboard(): Dashboard = js.native
+  def getDashboard(): Dashboard
   
   /**
     * Gets what the object represents, which is an enum with the following values:
     * BLANK, WORKSHEET, QUICK_FILTER, PARAMETER_CONTROL, PAGE_FILTER, LEGEND, TITLE, TEXT, IMAGE, WEB_PAGE.
     */
-  def getObjectType(): DashboardObjectType = js.native
+  def getObjectType(): DashboardObjectType
   
   /** Gets the coordinates relative to the top-left corner of the dashboard of the object. */
-  def getPosition(): Point = js.native
+  def getPosition(): Point
   
   /** Gets the size of the object. */
-  def getSize(): Size = js.native
+  def getSize(): Size
   
   /** If getType() returns WORKSHEET, this contains a pointer to the Worksheet object. */
-  def getWorksheet(): Worksheet = js.native
+  def getWorksheet(): Worksheet
 }
 object DashboardObject {
   

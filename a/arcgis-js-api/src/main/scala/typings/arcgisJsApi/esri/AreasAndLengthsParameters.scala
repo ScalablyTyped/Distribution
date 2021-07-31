@@ -18,12 +18,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.planar
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AreasAndLengthsParameters
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

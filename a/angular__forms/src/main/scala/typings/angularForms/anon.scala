@@ -6,15 +6,13 @@ import typings.angularForms.angularFormsStrings.once
 import typings.angularForms.mod.FormHooks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var emitEvent: js.UndefOr[Boolean] = js.native
+    var emitEvent: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait EmitEvent extends StObject {
     
-    var emitEvent: js.UndefOr[Boolean] = js.native
+    var emitEvent: js.UndefOr[Boolean] = js.undefined
     
-    var onlySelf: js.UndefOr[Boolean] = js.native
+    var onlySelf: js.UndefOr[Boolean] = js.undefined
   }
   object EmitEvent {
     
@@ -67,16 +64,15 @@ object anon {
     }
   }
   
-  @js.native
   trait EmitModelToViewChange extends StObject {
     
-    var emitEvent: js.UndefOr[Boolean] = js.native
+    var emitEvent: js.UndefOr[Boolean] = js.undefined
     
-    var emitModelToViewChange: js.UndefOr[Boolean] = js.native
+    var emitModelToViewChange: js.UndefOr[Boolean] = js.undefined
     
-    var emitViewToModelChange: js.UndefOr[Boolean] = js.native
+    var emitViewToModelChange: js.UndefOr[Boolean] = js.undefined
     
-    var onlySelf: js.UndefOr[Boolean] = js.native
+    var onlySelf: js.UndefOr[Boolean] = js.undefined
   }
   object EmitModelToViewChange {
     
@@ -115,14 +111,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var standalone: js.UndefOr[Boolean] = js.native
+    var standalone: js.UndefOr[Boolean] = js.undefined
     
-    var updateOn: js.UndefOr[FormHooks] = js.native
+    var updateOn: js.UndefOr[FormHooks] = js.undefined
   }
   object Name {
     
@@ -155,10 +150,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OnlySelf extends StObject {
     
-    var onlySelf: js.UndefOr[Boolean] = js.native
+    var onlySelf: js.UndefOr[Boolean] = js.undefined
   }
   object OnlySelf {
     
@@ -179,10 +173,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UpdateOn extends StObject {
     
-    var updateOn: js.UndefOr[FormHooks] = js.native
+    var updateOn: js.UndefOr[FormHooks] = js.undefined
   }
   object UpdateOn {
     
@@ -203,10 +196,9 @@ object anon {
     }
   }
   
-  @js.native
   trait WarnOnNgModelWithFormControl extends StObject {
     
-    /** @deprecated as of v6 */ var warnOnNgModelWithFormControl: never | once | always = js.native
+    /** @deprecated as of v6 */ var warnOnNgModelWithFormControl: never | once | always
   }
   object WarnOnNgModelWithFormControl {
     

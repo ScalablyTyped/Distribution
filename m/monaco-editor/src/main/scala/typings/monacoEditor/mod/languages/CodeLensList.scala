@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeLensList extends StObject {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  var lenses: js.Array[CodeLens] = js.native
+  var lenses: js.Array[CodeLens]
 }
 object CodeLensList {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUploadResult extends StObject {
   
   /**
     * A test spec uploaded to Device Farm.
     */
-  var upload: js.UndefOr[Upload] = js.native
+  var upload: js.UndefOr[Upload] = js.undefined
 }
 object UpdateUploadResult {
   

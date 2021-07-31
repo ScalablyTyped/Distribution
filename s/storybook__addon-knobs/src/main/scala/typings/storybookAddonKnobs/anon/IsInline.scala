@@ -5,17 +5,15 @@ import typings.storybookAddonKnobs.checkboxesMod.CheckboxesTypeKnob
 import typings.storybookAddonKnobs.checkboxesMod.CheckboxesTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsInline extends StObject {
   
-  var isInline: Validator[Boolean] = js.native
+  var isInline: Validator[Boolean]
   
-  var knob: Validator[CheckboxesTypeKnob] = js.native
+  var knob: Validator[CheckboxesTypeKnob]
   
-  var onChange: Validator[js.Function1[/* value */ CheckboxesTypeKnobValue, CheckboxesTypeKnobValue]] = js.native
+  var onChange: Validator[js.Function1[/* value */ CheckboxesTypeKnobValue, CheckboxesTypeKnobValue]]
 }
 object IsInline {
   

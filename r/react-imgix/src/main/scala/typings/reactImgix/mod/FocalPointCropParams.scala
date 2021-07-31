@@ -2,19 +2,17 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FocalPointCropParams extends StObject {
   
-  var `fp-debug`: js.UndefOr[ImgixParamType] = js.native
+  var `fp-debug`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `fp-x`: js.UndefOr[ImgixParamType] = js.native
+  var `fp-x`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `fp-y`: js.UndefOr[ImgixParamType] = js.native
+  var `fp-y`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `fp-z`: js.UndefOr[ImgixParamType] = js.native
+  var `fp-z`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object FocalPointCropParams {
   

@@ -10,20 +10,18 @@ import typings.backblazeB2.mod.UploadProgressFn
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {  applicationKeyId :string} & backblaze-b2.backblaze-b2.CommonArgs */
-  @js.native
   trait applicationKeyIdstringCom extends StObject {
     
-    var applicationKeyId: String = js.native
+    var applicationKeyId: String
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
   }
   object applicationKeyIdstringCom {
     
@@ -40,10 +38,10 @@ object anon {
       def setApplicationKeyId(value: String): Self = StObject.set(x, "applicationKeyId", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
@@ -54,14 +52,13 @@ object anon {
   }
   
   /* Inlined {  bucketId :string} & backblaze-b2.backblaze-b2.CommonArgs */
-  @js.native
   trait bucketIdstringCommonArgs extends StObject {
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var bucketId: String = js.native
+    var bucketId: String
   }
   object bucketIdstringCommonArgs {
     
@@ -75,10 +72,10 @@ object anon {
     implicit class bucketIdstringCommonArgsMutableBuilder[Self <: bucketIdstringCommonArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
@@ -92,16 +89,15 @@ object anon {
   }
   
   /* Inlined {  bucketId :string,   fileName :string} & backblaze-b2.backblaze-b2.CommonArgs */
-  @js.native
   trait bucketIdstringfileNamestr extends StObject {
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var bucketId: String = js.native
+    var bucketId: String
     
-    var fileName: String = js.native
+    var fileName: String
   }
   object bucketIdstringfileNamestr {
     
@@ -115,10 +111,10 @@ object anon {
     implicit class bucketIdstringfileNamestrMutableBuilder[Self <: bucketIdstringfileNamestr] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
@@ -135,14 +131,13 @@ object anon {
   }
   
   /* Inlined {  fileId :string} & backblaze-b2.backblaze-b2.CommonArgs */
-  @js.native
   trait fileIdstringCommonArgs extends StObject {
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var fileId: String = js.native
+    var fileId: String
   }
   object fileIdstringCommonArgs {
     
@@ -156,10 +151,10 @@ object anon {
     implicit class fileIdstringCommonArgsMutableBuilder[Self <: fileIdstringCommonArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
@@ -173,18 +168,17 @@ object anon {
   }
   
   /* Inlined {  fileId :string} & backblaze-b2.backblaze-b2.DownloadFileOpts */
-  @js.native
   trait fileIdstringDownloadFileO extends StObject {
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var fileId: String = js.native
+    var fileId: String
     
-    var onDownloadProgress: js.UndefOr[UploadProgressFn | Null] = js.native
+    var onDownloadProgress: js.UndefOr[UploadProgressFn | Null] = js.undefined
     
-    var responseType: arraybuffer | blob | document | json | text | stream = js.native
+    var responseType: arraybuffer | blob | document | json | text | stream
   }
   object fileIdstringDownloadFileO {
     
@@ -198,10 +192,10 @@ object anon {
     implicit class fileIdstringDownloadFileOMutableBuilder[Self <: fileIdstringDownloadFileO] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
@@ -227,16 +221,15 @@ object anon {
   }
   
   /* Inlined {  fileId :string,   fileName :string} & backblaze-b2.backblaze-b2.CommonArgs */
-  @js.native
   trait fileIdstringfileNamestrin extends StObject {
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var fileId: String = js.native
+    var fileId: String
     
-    var fileName: String = js.native
+    var fileName: String
   }
   object fileIdstringfileNamestrin {
     
@@ -250,10 +243,10 @@ object anon {
     implicit class fileIdstringfileNamestrinMutableBuilder[Self <: fileIdstringfileNamestrin] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
@@ -270,16 +263,15 @@ object anon {
   }
   
   /* Inlined {  fileId :string,   partSha1Array :std.Array<string>} & backblaze-b2.backblaze-b2.CommonArgs */
-  @js.native
   trait fileIdstringpartSha1Array extends StObject {
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var fileId: String = js.native
+    var fileId: String
     
-    var partSha1Array: js.Array[String] = js.native
+    var partSha1Array: js.Array[String]
   }
   object fileIdstringpartSha1Array {
     
@@ -293,10 +285,10 @@ object anon {
     implicit class fileIdstringpartSha1ArrayMutableBuilder[Self <: fileIdstringpartSha1Array] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
@@ -316,16 +308,15 @@ object anon {
   }
   
   /* Inlined {  maxKeyCount :number,   startApplicationKeyId :string} & backblaze-b2.backblaze-b2.CommonArgs */
-  @js.native
   trait maxKeyCountnumberstartApp extends StObject {
     
-    var axios: js.UndefOr[Record[String, _]] = js.native
+    var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var axiosOverride: js.UndefOr[Record[String, _]] = js.native
+    var axiosOverride: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var maxKeyCount: Double = js.native
+    var maxKeyCount: Double
     
-    var startApplicationKeyId: String = js.native
+    var startApplicationKeyId: String
   }
   object maxKeyCountnumberstartApp {
     
@@ -339,10 +330,10 @@ object anon {
     implicit class maxKeyCountnumberstartAppMutableBuilder[Self <: maxKeyCountnumberstartApp] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+      def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAxiosOverride(value: Record[String, _]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+      def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)

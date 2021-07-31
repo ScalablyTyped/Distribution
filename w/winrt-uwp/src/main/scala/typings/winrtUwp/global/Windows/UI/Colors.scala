@@ -3,14 +3,14 @@ package typings.winrtUwp.global.Windows.UI
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Implements a set of predefined colors. See Color for usage information. */
 @JSGlobal("Windows.UI.Colors")
 @js.native
 abstract class Colors ()
-  extends typings.winrtUwp.Windows.UI.Colors
+  extends StObject
+     with typings.winrtUwp.Windows.UI.Colors
 object Colors {
   
   @JSGlobal("Windows.UI.Colors")

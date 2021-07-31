@@ -7,7 +7,6 @@ import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polarGridHelperMod {
@@ -28,30 +27,6 @@ object polarGridHelperMod {
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: String) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Double) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Color) = this()
-    def this(
-      radius: Double,
-      radials: Double,
-      circles: Double,
-      divisions: Double,
-      color1: js.UndefOr[scala.Nothing],
-      color2: String
-    ) = this()
-    def this(
-      radius: Double,
-      radials: Double,
-      circles: Double,
-      divisions: Double,
-      color1: js.UndefOr[scala.Nothing],
-      color2: Double
-    ) = this()
-    def this(
-      radius: Double,
-      radials: Double,
-      circles: Double,
-      divisions: Double,
-      color1: js.UndefOr[scala.Nothing],
-      color2: Color
-    ) = this()
     def this(
       radius: Double,
       radials: Double,
@@ -86,6 +61,9 @@ object polarGridHelperMod {
       color2: Double
     ) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Double, color2: Color) = this()
+    def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Unit, color2: String) = this()
+    def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Unit, color2: Double) = this()
+    def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Unit, color2: Color) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Color, color2: String) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Color, color2: Double) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Color, color2: Color) = this()

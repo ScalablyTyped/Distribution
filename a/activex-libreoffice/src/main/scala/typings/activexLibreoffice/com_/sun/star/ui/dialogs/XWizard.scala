@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,16 +42,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XWizardPage
   * @since OOo 3.3
   */
-@js.native
-trait XWizard extends XExecutableDialog {
+trait XWizard
+  extends StObject
+     with XExecutableDialog {
   
   /** provides access to the current page of the wizard */
-  val CurrentPage: XWizardPage = js.native
+  val CurrentPage: XWizardPage
   
-  var DialogWindow: XWindow = js.native
+  var DialogWindow: XWindow
   
   /** is the help URL of the wizard's main window. */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /**
     * activates a path
@@ -71,7 +71,7 @@ trait XWizard extends XExecutableDialog {
     * @throws com::sun::star::container::NoSuchElementException if there is no path with the given index
     * @throws com::sun::star::util::InvalidStateException if the path cannot be activated in the current state of the wizard.
     */
-  def activatePath(PathIndex: Double, Final: Boolean): Unit = js.native
+  def activatePath(PathIndex: Double, Final: Boolean): Unit
   
   /**
     * advances to the given page, if possible.
@@ -79,7 +79,7 @@ trait XWizard extends XExecutableDialog {
     * Calling this method is equivalent to the user repeatedly pressing the **Next** button, until the given page is reached. Consequently, the method will
     * fail if one of the intermediate pages does not allow advancing to the next page.
     */
-  def advanceTo(PageId: Double): Boolean = js.native
+  def advanceTo(PageId: Double): Boolean
   
   /**
     * enables or disables a certain button in the wizard
@@ -89,7 +89,7 @@ trait XWizard extends XExecutableDialog {
     * @param WizardButton denotes the button to enable or disable, as one of the {@link WizardButton} constants. Must not be {@link WizardButton.NONE} .
     * @param Enable specifies whether the button should be enabled ( `TRUE` ) or disabled ( `FALSE` )
     */
-  def enableButton(WizardButton: Double, Enable: Boolean): Unit = js.native
+  def enableButton(WizardButton: Double, Enable: Boolean): Unit
   
   /**
     * enables or disables the given page
@@ -103,17 +103,17 @@ trait XWizard extends XExecutableDialog {
     * @throws com::sun::star::container::NoSuchElementException if there is no page with the given ID
     * @throws com::sun::star::util::InvalidStateException if the page shall be disabled, but is active currently.
     */
-  def enablePage(PageID: Double, Enable: Boolean): Unit = js.native
+  def enablePage(PageID: Double, Enable: Boolean): Unit
   
   /** provides access to the current page of the wizard */
-  def getCurrentPage(): XWizardPage = js.native
+  def getCurrentPage(): XWizardPage
   
   /**
     * goes back to the given page, if possible.
     *
     * Calling this method is equivalent to the user repeatedly pressing the **Back** button, until the given page is reached.
     */
-  def goBackTo(PageId: Double): Boolean = js.native
+  def goBackTo(PageId: Double): Boolean
   
   /**
     * sets a button in the wizard as default button
@@ -124,7 +124,7 @@ trait XWizard extends XExecutableDialog {
     * You can use this method, for instance, to make the **Next** button the default button on all pages except the last one, where **Finish** should be
     * defaulted.
     */
-  def setDefaultButton(WizardButton: Double): Unit = js.native
+  def setDefaultButton(WizardButton: Double): Unit
   
   /**
     * travels to the next page, if possible
@@ -132,14 +132,14 @@ trait XWizard extends XExecutableDialog {
     * Calling this method is equivalent to the user pressing the **Next** button in the wizard. Consequently, the method will fail if in the current state
     * of the wizard, it is not allowed to advance to a next page.
     */
-  def travelNext(): Boolean = js.native
+  def travelNext(): Boolean
   
   /**
     * travels to the next page, if possible
     *
     * Calling this method is equivalent to the user pressing the **Back** button in the wizard.
     */
-  def travelPrevious(): Boolean = js.native
+  def travelPrevious(): Boolean
   
   /**
     * updates the wizard elements which are related to traveling.
@@ -148,7 +148,7 @@ trait XWizard extends XExecutableDialog {
     *
     * You usually call this method from within a wizard page whose state changed in a way that it affects the user's ability to reach other pages.
     */
-  def updateTravelUI(): Unit = js.native
+  def updateTravelUI(): Unit
 }
 object XWizard {
   

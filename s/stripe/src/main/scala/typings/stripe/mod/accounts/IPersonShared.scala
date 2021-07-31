@@ -9,91 +9,89 @@ import typings.stripe.stripeStrings.female
 import typings.stripe.stripeStrings.male
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPersonShared extends StObject {
   
   /**
     * The account the person is associated with.
     */
-  var account: js.UndefOr[String] = js.native
+  var account: js.UndefOr[String] = js.undefined
   
   /**
     * The person’s address.
     */
-  var address: js.UndefOr[IAddress] = js.native
+  var address: js.UndefOr[IAddress] = js.undefined
   
   /**
     * The Kana variation of the person’s address (Japan only).
     */
-  var address_kana: js.UndefOr[IAddressKana] = js.native
+  var address_kana: js.UndefOr[IAddressKana] = js.undefined
   
   /**
     * The Kanji variation of the person’s address (Japan only).
     */
-  var address_kanji: js.UndefOr[IAddressKanji] = js.native
+  var address_kanji: js.UndefOr[IAddressKanji] = js.undefined
   
   /**
     * The person’s date of birth.
     */
-  var dob: js.UndefOr[Day] = js.native
+  var dob: js.UndefOr[Day] = js.undefined
   
   /**
     * The person’s email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The person’s first name.
     */
-  var first_name: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.undefined
   
   /**
     * The Kana variation of the the person’s first name (Japan only).
     */
-  var first_name_kana: js.UndefOr[String] = js.native
+  var first_name_kana: js.UndefOr[String] = js.undefined
   
   /**
     * The Kanji variation of the person’s first name (Japan only).
     */
-  var first_name_kanji: js.UndefOr[String] = js.native
+  var first_name_kanji: js.UndefOr[String] = js.undefined
   
   /**
     * The person’s gender (International regulations require either “male” or “female”).
     */
-  var gender: js.UndefOr[male | female] = js.native
+  var gender: js.UndefOr[male | female] = js.undefined
   
   /**
     * The person’s last name.
     */
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
   /**
     * The Kana variation of the person’s last name (Japan only).
     */
-  var last_name_kana: js.UndefOr[String] = js.native
+  var last_name_kana: js.UndefOr[String] = js.undefined
   
   /**
     * The Kanji variation of the person’s last name (Japan only).
     */
-  var last_name_kanji: js.UndefOr[String] = js.native
+  var last_name_kanji: js.UndefOr[String] = js.undefined
   
   /**
     * The person’s maiden name.
     */
-  var maiden_name: js.UndefOr[String] = js.native
+  var maiden_name: js.UndefOr[String] = js.undefined
   
   /**
     * The person’s phone number.
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * Describes the person’s relationship to the account.
     */
-  var relationship: js.UndefOr[Director] = js.native
+  var relationship: js.UndefOr[Director] = js.undefined
 }
 object IPersonShared {
   

@@ -10,9 +10,9 @@ React split-pane component
 | ------------------ | :-------------: |
 | Full name          | react-split-pane |
 | Keywords           | react, react-component, split-pane, react-split-pane, es6 |
-| # releases         | 8 |
-| # dependents       | 127 |
-| # downloads        | 12858900 |
+| # releases         | 7 |
+| # dependents       | 141 |
+| # downloads        | 11640405 |
 | # stars            | 8 |
 
 ## Links

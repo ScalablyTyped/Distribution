@@ -2,24 +2,23 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJsonReader
-  extends typings.extjs.Ext.data.reader.IReader {
+  extends StObject
+     with typings.extjs.Ext.data.reader.IReader {
   
   /** [Property] (Object) */
-  var jsonData: js.UndefOr[js.Any] = js.native
+  var jsonData: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var metaProperty: js.UndefOr[String] = js.native
+  var metaProperty: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var record: js.UndefOr[String] = js.native
+  var record: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useSimpleAccessors: js.UndefOr[Boolean] = js.native
+  var useSimpleAccessors: js.UndefOr[Boolean] = js.undefined
 }
 object IJsonReader {
   

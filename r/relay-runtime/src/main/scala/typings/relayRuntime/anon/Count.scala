@@ -2,15 +2,13 @@ package typings.relayRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
-  val count: String = js.native
+  val count: String
   
-  val cursor: String = js.native
+  val cursor: String
 }
 object Count {
   

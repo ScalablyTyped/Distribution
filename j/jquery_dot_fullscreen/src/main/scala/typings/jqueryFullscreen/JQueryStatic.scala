@@ -2,17 +2,15 @@ package typings.jqueryFullscreen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extends JqueryStatic ($)
   * i.e: To use $.fullscreen.functionName()
   */
-@js.native
 trait JQueryStatic extends StObject {
   
-  var fullscreen: JQueryFullscreen = js.native
+  var fullscreen: JQueryFullscreen
 }
 object JQueryStatic {
   

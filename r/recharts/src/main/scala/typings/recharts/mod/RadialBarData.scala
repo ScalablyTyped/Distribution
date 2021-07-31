@@ -2,21 +2,19 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialBarData extends StObject {
   
-  var cx: Double = js.native
+  var cx: Double
   
-  var cy: Double = js.native
+  var cy: Double
   
-  var innerRadius: Double = js.native
+  var innerRadius: Double
   
-  var outerRadius: Double = js.native
+  var outerRadius: Double
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object RadialBarData {
   

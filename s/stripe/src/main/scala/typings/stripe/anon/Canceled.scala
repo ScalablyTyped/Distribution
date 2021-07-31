@@ -2,19 +2,17 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Canceled extends StObject {
   
-  var canceled: Double = js.native
+  var canceled: Double
   
-  var fulfiled: Double = js.native
+  var fulfiled: Double
   
-  var paid: Double = js.native
+  var paid: Double
   
-  var returned: Double = js.native
+  var returned: Double
 }
 object Canceled {
   

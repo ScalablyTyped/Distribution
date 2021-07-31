@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directRepositoryRankedRecipientsResponseMod {
   
-  @js.native
   trait DirectRepositoryRankedRecipientsResponseRankedRecipientsItem extends StObject {
     
-    var thread: js.UndefOr[DirectRepositoryRankedRecipientsResponseThread] = js.native
+    var thread: js.UndefOr[DirectRepositoryRankedRecipientsResponseThread] = js.undefined
     
-    var user: js.UndefOr[DirectRepositoryRankedRecipientsResponseUser] = js.native
+    var user: js.UndefOr[DirectRepositoryRankedRecipientsResponseUser] = js.undefined
   }
   object DirectRepositoryRankedRecipientsResponseRankedRecipientsItem {
     
@@ -39,20 +37,19 @@ object directRepositoryRankedRecipientsResponseMod {
     }
   }
   
-  @js.native
   trait DirectRepositoryRankedRecipientsResponseRootObject extends StObject {
     
-    var expires: Double = js.native
+    var expires: Double
     
-    var filtered: Boolean = js.native
+    var filtered: Boolean
     
-    var rank_token: String = js.native
+    var rank_token: String
     
-    var ranked_recipients: js.Array[DirectRepositoryRankedRecipientsResponseRankedRecipientsItem] = js.native
+    var ranked_recipients: js.Array[DirectRepositoryRankedRecipientsResponseRankedRecipientsItem]
     
-    var request_id: String = js.native
+    var request_id: String
     
-    var status: String = js.native
+    var status: String
   }
   object DirectRepositoryRankedRecipientsResponseRootObject {
     
@@ -95,24 +92,23 @@ object directRepositoryRankedRecipientsResponseMod {
     }
   }
   
-  @js.native
   trait DirectRepositoryRankedRecipientsResponseThread extends StObject {
     
-    var canonical: Boolean = js.native
+    var canonical: Boolean
     
-    var named: Boolean = js.native
+    var named: Boolean
     
-    var pending: Boolean = js.native
+    var pending: Boolean
     
-    var thread_id: String = js.native
+    var thread_id: String
     
-    var thread_title: String = js.native
+    var thread_title: String
     
-    var thread_type: String = js.native
+    var thread_type: String
     
-    var users: js.Array[DirectRepositoryRankedRecipientsResponseUsersItem] = js.native
+    var users: js.Array[DirectRepositoryRankedRecipientsResponseUsersItem]
     
-    var viewer_id: Double = js.native
+    var viewer_id: Double
   }
   object DirectRepositoryRankedRecipientsResponseThread {
     
@@ -163,28 +159,27 @@ object directRepositoryRankedRecipientsResponseMod {
     }
   }
   
-  @js.native
   trait DirectRepositoryRankedRecipientsResponseUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_directapp_installed: Boolean = js.native
+    var is_directapp_installed: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_using_unified_inbox_for_direct: Boolean = js.native
+    var is_using_unified_inbox_for_direct: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectRepositoryRankedRecipientsResponseUser {
     
@@ -240,28 +235,27 @@ object directRepositoryRankedRecipientsResponseMod {
     }
   }
   
-  @js.native
   trait DirectRepositoryRankedRecipientsResponseUsersItem extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_directapp_installed: Boolean = js.native
+    var is_directapp_installed: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_using_unified_inbox_for_direct: Boolean = js.native
+    var is_using_unified_inbox_for_direct: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectRepositoryRankedRecipientsResponseUsersItem {
     

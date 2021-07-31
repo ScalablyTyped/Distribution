@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreAnalysisRequest extends StObject {
   
   /**
     * The ID of the analysis that you're restoring.
     */
-  var AnalysisId: RestrictiveResourceId = js.native
+  var AnalysisId: RestrictiveResourceId
   
   /**
     * The ID of the AWS account that contains the analysis.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
 }
 object RestoreAnalysisRequest {
   

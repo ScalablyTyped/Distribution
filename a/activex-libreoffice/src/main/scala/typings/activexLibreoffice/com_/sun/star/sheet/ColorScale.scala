@@ -4,13 +4,13 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorScale extends XConditionEntry {
+trait ColorScale
+  extends StObject
+     with XConditionEntry {
   
-  var ColorScaleEntries: SafeArray[XColorScaleEntry] = js.native
+  var ColorScaleEntries: SafeArray[XColorScaleEntry]
 }
 object ColorScale {
   

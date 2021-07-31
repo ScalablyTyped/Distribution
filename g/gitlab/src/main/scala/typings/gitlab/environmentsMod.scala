@@ -9,7 +9,6 @@ import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentsMod {
@@ -50,12 +49,13 @@ object environmentsMod {
     def stop(projectId: Double, environmentId: Double, options: Sudo): js.Promise[js.Object] = js.native
   }
   
-  @js.native
-  trait EnvironmentDetailSchema extends EnvironmentSchema {
+  trait EnvironmentDetailSchema
+    extends StObject
+       with EnvironmentSchema {
     
-    var deployable: js.UndefOr[DeploymentSchema] = js.native
+    var deployable: js.UndefOr[DeploymentSchema] = js.undefined
     
-    var last_deployment: js.UndefOr[DeploymentSchema] = js.native
+    var last_deployment: js.UndefOr[DeploymentSchema] = js.undefined
   }
   object EnvironmentDetailSchema {
     
@@ -82,20 +82,19 @@ object environmentsMod {
     }
   }
   
-  @js.native
   trait EnvironmentSchema extends StObject {
     
-    var external_url: js.UndefOr[String] = js.native
+    var external_url: js.UndefOr[String] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var project: js.UndefOr[ProjectSchema] = js.native
+    var project: js.UndefOr[ProjectSchema] = js.undefined
     
-    var slug: js.UndefOr[String] = js.native
+    var slug: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object EnvironmentSchema {
     

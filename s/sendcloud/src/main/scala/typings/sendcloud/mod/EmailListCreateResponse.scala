@@ -4,21 +4,19 @@ import typings.sendcloud.anon.Createdat
 import typings.sendcloud.sendcloudStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailListCreateResponse extends StObject {
   
-  var list: Createdat = js.native
+  var list: Createdat
   
-  var message: success = js.native
+  var message: success
 }
 object EmailListCreateResponse {
   
   @scala.inline
-  def apply(list: Createdat, message: success): EmailListCreateResponse = {
-    val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  def apply(list: Createdat): EmailListCreateResponse = {
+    val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], message = "success")
     __obj.asInstanceOf[EmailListCreateResponse]
   }
   

@@ -12,7 +12,7 @@ Numerical analysis in javascript
 | Keywords           | numeric, analysis, math |
 | # releases         | 0 |
 | # dependents       | 89 |
-| # downloads        | 3360229 |
+| # downloads        | 3961801 |
 | # stars            | 5 |
 
 ## Links

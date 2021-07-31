@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface describing old style basic dialog (SI controls) in binary data
   * @deprecated Deprecated
   */
-@js.native
-trait XStarBasicDialogInfo extends XInterface {
+trait XStarBasicDialogInfo
+  extends StObject
+     with XInterface {
   
   /** returns binary data describing the SIDialog in SBX stream format */
-  val Data: SafeArray[Double] = js.native
+  val Data: SafeArray[Double]
   
   /** returns the name of the dialog */
-  val Name: String = js.native
+  val Name: String
   
   /** returns binary data describing the SIDialog in SBX stream format */
-  def getData(): SafeArray[Double] = js.native
+  def getData(): SafeArray[Double]
   
   /** returns the name of the dialog */
-  def getName(): String = js.native
+  def getName(): String
 }
 object XStarBasicDialogInfo {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClientVpnEndpointsRequest extends StObject {
   
   /**
     * The ID of the Client VPN endpoint.
     */
-  var ClientVpnEndpointIds: js.UndefOr[ClientVpnEndpointIdList] = js.native
+  var ClientVpnEndpointIds: js.UndefOr[ClientVpnEndpointIdList] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more filters. Filter names and values are case-sensitive.    endpoint-id - The ID of the Client VPN endpoint.    transport-protocol - The transport protocol (tcp | udp).  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the nextToken value.
     */
-  var MaxResults: js.UndefOr[DescribeClientVpnEndpointMaxResults] = js.native
+  var MaxResults: js.UndefOr[DescribeClientVpnEndpointMaxResults] = js.undefined
   
   /**
     * The token to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.undefined
 }
 object DescribeClientVpnEndpointsRequest {
   

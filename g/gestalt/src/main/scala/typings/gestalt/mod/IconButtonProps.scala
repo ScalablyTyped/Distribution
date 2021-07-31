@@ -32,47 +32,45 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconButtonProps extends StObject {
   
-  var accessibilityControls: js.UndefOr[String] = js.native
+  var accessibilityControls: js.UndefOr[String] = js.undefined
   
-  var accessibilityExpanded: js.UndefOr[Boolean] = js.native
+  var accessibilityExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityHaspopup: js.UndefOr[Boolean] = js.native
+  var accessibilityHaspopup: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityLabel: String = js.native
+  var accessibilityLabel: String
   
-  var bgColor: js.UndefOr[transparent | darkGray | transparentDarkGray | gray | lightGray | white | red] = js.native
+  var bgColor: js.UndefOr[transparent | darkGray | transparentDarkGray | gray | lightGray | white | red] = js.undefined
   
-  var dangerouslySetSvgPath: js.UndefOr[Path] = js.native
+  var dangerouslySetSvgPath: js.UndefOr[Path] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[Icons] = js.native
+  var icon: js.UndefOr[Icons] = js.undefined
   
-  var iconColor: js.UndefOr[gray | darkGray | red | white] = js.native
+  var iconColor: js.UndefOr[gray | darkGray | red | white] = js.undefined
   
-  var onClick: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLButtonElement, NativeMouseEvent], js.Object]] = js.native
+  var onClick: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLButtonElement, NativeMouseEvent], js.Object]] = js.undefined
   
-  var padding: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.native
+  var padding: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
   
-  var rel: js.UndefOr[none | nofollow] = js.native
+  var rel: js.UndefOr[none | nofollow] = js.undefined
   
-  var role: js.UndefOr[button | link] = js.native
+  var role: js.UndefOr[button | link] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[xs | sm | md | lg | xl] = js.native
+  var size: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
   
-  var tabIndex: js.UndefOr[`-1` | `0`] = js.native
+  var tabIndex: js.UndefOr[`-1` | `0`] = js.undefined
   
-  var target: js.UndefOr[Null | self | blank] = js.native
+  var target: js.UndefOr[Null | self | blank] = js.undefined
 }
 object IconButtonProps {
   
@@ -143,7 +141,7 @@ object IconButtonProps {
     def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* arg */ js.Object with (Event[MouseEvent[HTMLButtonElement, NativeMouseEvent]]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* arg */ js.Object & (Event[MouseEvent[HTMLButtonElement, NativeMouseEvent]]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

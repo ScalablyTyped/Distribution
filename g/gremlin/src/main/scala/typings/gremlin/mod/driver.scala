@@ -8,7 +8,6 @@ import typings.gremlin.mod.process.Traverser
 import typings.std.MapConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driver {
@@ -23,10 +22,10 @@ object driver {
     
     def open(): js.Promise[Unit] = js.native
     
-    def submit(message: String): js.Promise[_] = js.native
-    def submit(message: String, bindings: js.Any): js.Promise[_] = js.native
-    def submit(message: Bytecode): js.Promise[_] = js.native
-    def submit(message: Bytecode, bindings: js.Any): js.Promise[_] = js.native
+    def submit(message: String): js.Promise[js.Any] = js.native
+    def submit(message: String, bindings: js.Any): js.Promise[js.Any] = js.native
+    def submit(message: Bytecode): js.Promise[js.Any] = js.native
+    def submit(message: Bytecode, bindings: js.Any): js.Promise[js.Any] = js.native
   }
   
   @JSImport("gremlin", "driver.DriverRemoteConnection")
@@ -51,7 +50,7 @@ object driver {
     
     def open(): js.Promise[Unit] = js.native
     
-    def submit(bytecode: Bytecode): js.Promise[_] = js.native
+    def submit(bytecode: Bytecode): js.Promise[js.Any] = js.native
   }
   
   @JSImport("gremlin", "driver.RemoteStrategy")
@@ -60,26 +59,26 @@ object driver {
     def this(connection: RemoteConnection) = this()
     
     @JSName("apply")
-    def apply(traversal: RemoteTraversal): js.Promise[_] = js.native
+    def apply(traversal: RemoteTraversal): js.Promise[js.Any] = js.native
   }
   
   @JSImport("gremlin", "driver.RemoteTraversal")
   @js.native
   class RemoteTraversal () extends Traversal_ {
     def this(traversers: js.Array[Traverser]) = this()
-    def this(traversers: js.UndefOr[scala.Nothing], sideEffects: TraversalSideEffects) = this()
     def this(traversers: js.Array[Traverser], sideEffects: TraversalSideEffects) = this()
+    def this(traversers: Unit, sideEffects: TraversalSideEffects) = this()
   }
   
   @JSImport("gremlin", "driver.ResultSet")
   @js.native
   class ResultSet protected () extends StObject {
-    def this(items: js.Array[_]) = this()
-    def this(items: js.Array[_], attributes: MapConstructor) = this()
+    def this(items: js.Array[js.Any]) = this()
+    def this(items: js.Array[js.Any], attributes: MapConstructor) = this()
     
     def first(): js.Any = js.native
     
-    def toArray(): js.Array[_] = js.native
+    def toArray(): js.Array[js.Any] = js.native
   }
   
   object auth {

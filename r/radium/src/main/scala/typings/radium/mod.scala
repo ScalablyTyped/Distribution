@@ -15,20 +15,18 @@ import typings.react.mod.HTMLProps
 import typings.std.MediaQueryList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("radium", JSImport.Default)
-    @js.native
-    def apply(config: RadiumConfig): js.Function1[/* component */ js.UndefOr[js.Any], _] = js.native
+    @scala.inline
+    def apply(config: RadiumConfig): js.Function1[/* component */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.UndefOr[js.Any], js.Any]]
     // @Radium decorator
-    @JSImport("radium", JSImport.Default)
-    @js.native
-    def apply[TElement /* <: js.Function */](component: TElement): TElement = js.native
+    @scala.inline
+    def apply[TElement /* <: js.Function */](component: TElement): TElement = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[TElement]
+    
     @JSImport("radium", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -49,54 +47,47 @@ object mod {
     @scala.inline
     def TestMode_=(x: RadiumTestMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TestMode")(x.asInstanceOf[js.Any])
     
-    @JSImport("radium", "default.getState")
-    @js.native
-    def getState_active(state: js.Any, elementKey: String, value: Colonactive): Boolean = js.native
-    @JSImport("radium", "default.getState")
-    @js.native
-    def getState_active(state: js.Any, elementKey: Unit, value: Colonactive): Boolean = js.native
-    @JSImport("radium", "default.getState")
-    @js.native
-    def getState_focus(state: js.Any, elementKey: String, value: Colonfocus): Boolean = js.native
-    @JSImport("radium", "default.getState")
-    @js.native
-    def getState_focus(state: js.Any, elementKey: Unit, value: Colonfocus): Boolean = js.native
-    @JSImport("radium", "default.getState")
-    @js.native
-    def getState_hover(state: js.Any, elementKey: String, value: Colonhover): Boolean = js.native
-    @JSImport("radium", "default.getState")
-    @js.native
-    def getState_hover(state: js.Any, elementKey: Unit, value: Colonhover): Boolean = js.native
+    @scala.inline
+    def getState_active(state: js.Any, elementKey: String, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def getState_active(state: js.Any, elementKey: Unit, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("radium", "default.keyframes")
-    @js.native
-    def keyframes(keyframes: StyleRules): js.Object = js.native
-    @JSImport("radium", "default.keyframes")
-    @js.native
-    def keyframes(keyframes: StyleRules, name: String): js.Object = js.native
+    @scala.inline
+    def getState_focus(state: js.Any, elementKey: String, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def getState_focus(state: js.Any, elementKey: Unit, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def getState_hover(state: js.Any, elementKey: String, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def getState_hover(state: js.Any, elementKey: Unit, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def keyframes(keyframes: StyleRules): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    @scala.inline
+    def keyframes(keyframes: StyleRules, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   }
   
   object Radium {
     
-    @js.native
     trait RadiumConfig extends StObject {
       
       /**
         * Allow to replace matchMedia function that Radium uses. The default one is window.matchMedia
         * @param mediaQuery
         */
-      var matchMedia: js.UndefOr[js.Function1[/* mediaQuery */ String, MediaQueryList]] = js.native
+      var matchMedia: js.UndefOr[js.Function1[/* mediaQuery */ String, MediaQueryList]] = js.undefined
       
       /**
         * List of plugins
         */
-      var plugins: js.UndefOr[js.Array[_]] = js.native
+      var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * Set the user agent passed to inline-style-prefixer to perform prefixing on style objects.
         * Mainly used during server rendering
         */
-      var userAgent: js.UndefOr[String] = js.native
+      var userAgent: js.UndefOr[String] = js.undefined
     }
     object RadiumConfig {
       
@@ -116,7 +107,7 @@ object mod {
         def setMatchMediaUndefined: Self = StObject.set(x, "matchMedia", js.undefined)
         
         @scala.inline
-        def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+        def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
@@ -136,23 +127,22 @@ object mod {
     /**
       * Used to control internal Radium state and behavior during tests. It is only available in non-production builds.
       */
-    @js.native
     trait RadiumTestMode extends StObject {
       
       /**
         * Clears the global Radium state, currently only the cache of media query listeners.
         */
-      def clearState(): Unit = js.native
+      def clearState(): Unit
       
       /**
         * Disables "test mode"
         */
-      def disable(): Unit = js.native
+      def disable(): Unit
       
       /**
         * Enables "test mode", which doesn’t throw or warn as much. Currently it just doesn’t throw when using addCSS without StyleRoot.
         */
-      def enable(): Unit = js.native
+      def enable(): Unit
     }
     object RadiumTestMode {
       
@@ -178,21 +168,20 @@ object mod {
     
     type Style = Component[StyleProps, js.Object, js.Any]
     
-    @js.native
     trait StyleProps extends StObject {
       
       /**
         * An object of styles, or an object of CSS rules to render. Each key of the rules object is a CSS
         * selector and the value is an object of styles. If rules is empty, the component will render nothing.
         */
-      var rules: CSSProperties | StyleRules = js.native
+      var rules: CSSProperties | StyleRules
       
       /**
         * A string that any included selectors in rules will be appended to.
         * Use to scope styles in the component to a particular element. A good use case might be to generate a unique
         * ID for a component to scope any styles to the particular component that owns the <Style> component instance.
         */
-      var scopeSelector: js.UndefOr[String] = js.native
+      var scopeSelector: js.UndefOr[String] = js.undefined
     }
     object StyleProps {
       
@@ -220,10 +209,11 @@ object mod {
     trait StyleRoot
       extends Component[StyleRootProps, js.Object, js.Any]
     
-    @js.native
-    trait StyleRootProps extends HTMLProps[StyleRoot] {
+    trait StyleRootProps
+      extends StObject
+         with HTMLProps[StyleRoot] {
       
-      var radiumConfig: js.UndefOr[RadiumConfig] = js.native
+      var radiumConfig: js.UndefOr[RadiumConfig] = js.undefined
     }
     object StyleRootProps {
       
@@ -244,8 +234,9 @@ object mod {
       }
     }
     
-    @js.native
-    trait StyleRules extends /* index */ StringDictionary[CSSProperties | StyleRules]
+    trait StyleRules
+      extends StObject
+         with /* index */ StringDictionary[CSSProperties | StyleRules]
     object StyleRules {
       
       @scala.inline

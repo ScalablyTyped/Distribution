@@ -2,17 +2,17 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarksEvent extends TableauEvent {
+trait MarksEvent
+  extends StObject
+     with TableauEvent {
   
   /** Gets the selected marks on the Worksheet that triggered the event. */
-  def getMarksAsync(): js.Promise[js.Array[Mark]] = js.native
+  def getMarksAsync(): js.Promise[js.Array[Mark]]
   
   /** Gets the Worksheet object associated with the event. */
-  def getWorksheet(): Worksheet = js.native
+  def getWorksheet(): Worksheet
 }
 object MarksEvent {
   

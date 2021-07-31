@@ -2,47 +2,45 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ODataAdaptorOptions extends StObject {
   
-  var accept: js.UndefOr[String] = js.native
+  var accept: js.UndefOr[String] = js.undefined
   
-  var batch: js.UndefOr[String] = js.native
+  var batch: js.UndefOr[String] = js.undefined
   
-  var batchChangeSetContentType: js.UndefOr[String] = js.native
+  var batchChangeSetContentType: js.UndefOr[String] = js.undefined
   
-  var batchContent: js.UndefOr[String] = js.native
+  var batchContent: js.UndefOr[String] = js.undefined
   
-  var batchPre: js.UndefOr[String] = js.native
+  var batchPre: js.UndefOr[String] = js.undefined
   
-  var changeSet: js.UndefOr[String] = js.native
+  var changeSet: js.UndefOr[String] = js.undefined
   
-  var changeSetContent: js.UndefOr[String] = js.native
+  var changeSetContent: js.UndefOr[String] = js.undefined
   
-  var contentId: js.UndefOr[String] = js.native
+  var contentId: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
-  var expand: js.UndefOr[String] = js.native
+  var expand: js.UndefOr[String] = js.undefined
   
-  var multipartAccept: js.UndefOr[String] = js.native
+  var multipartAccept: js.UndefOr[String] = js.undefined
   
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[String] = js.native
+  var select: js.UndefOr[String] = js.undefined
   
-  var skip: js.UndefOr[String] = js.native
+  var skip: js.UndefOr[String] = js.undefined
   
-  var sortBy: js.UndefOr[String] = js.native
+  var sortBy: js.UndefOr[String] = js.undefined
   
-  var take: js.UndefOr[String] = js.native
+  var take: js.UndefOr[String] = js.undefined
   
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object ODataAdaptorOptions {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAnalysisRequest extends StObject {
   
   /**
     * The ID for the analysis that you're updating. This ID displays in the URL of the analysis.
     */
-  var AnalysisId: RestrictiveResourceId = js.native
+  var AnalysisId: RestrictiveResourceId
   
   /**
     * The ID of the AWS account that contains the analysis that you're updating.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * A descriptive name for the analysis that you're updating. This name displays for the analysis in the QuickSight console.
     */
-  var Name: AnalysisName = js.native
+  var Name: AnalysisName
   
   /**
     * The parameter names and override values that you want to use. An analysis can have any parameter type, and some parameters might accept multiple values. 
     */
-  var Parameters: js.UndefOr[typings.awsSdk.quicksightMod.Parameters] = js.native
+  var Parameters: js.UndefOr[typings.awsSdk.quicksightMod.Parameters] = js.undefined
   
   /**
     * A source entity to use for the analysis that you're updating. This metadata structure contains details that describe a source template and one or more datasets.
     */
-  var SourceEntity: AnalysisSourceEntity = js.native
+  var SourceEntity: AnalysisSourceEntity
   
   /**
     * The Amazon Resource Name (ARN) for the theme to apply to the analysis that you're creating. To see the theme in the QuickSight console, make sure that you have access to it.
     */
-  var ThemeArn: js.UndefOr[Arn] = js.native
+  var ThemeArn: js.UndefOr[Arn] = js.undefined
 }
 object UpdateAnalysisRequest {
   

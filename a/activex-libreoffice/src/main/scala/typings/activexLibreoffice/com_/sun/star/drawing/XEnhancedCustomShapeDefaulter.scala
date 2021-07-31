@@ -4,11 +4,11 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XEnhancedCustomShapeDefaulter extends XInterface {
+trait XEnhancedCustomShapeDefaulter
+  extends StObject
+     with XInterface {
   
   /**
     * This interface allows to create shape properties for the given "ShapeType". The "ShapeType" string can be empty then the current "ShapeType" of the
@@ -426,7 +426,7 @@ trait XEnhancedCustomShapeDefaulter extends XInterface {
     * gallery: split-round-arrow gallery: s-sharped-arrow Gallery: star6 Gallery: star12 Gallery: concave-star6 Gallery: signet Gallery: doorplate gallery:
     * fontwork-arch-left-curve gallery: fontwork-arch-right-curve gallery: fontwork-arch-left-pour gallery: fontwork-arch-right-pour
     */
-  def createCustomShapeDefaults(aShapeType: String): Unit = js.native
+  def createCustomShapeDefaults(aShapeType: String): Unit
 }
 object XEnhancedCustomShapeDefaulter {
   

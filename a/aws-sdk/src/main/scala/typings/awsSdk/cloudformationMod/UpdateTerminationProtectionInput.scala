@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTerminationProtectionInput extends StObject {
   
   /**
     * Whether to enable termination protection on the specified stack.
     */
-  var EnableTerminationProtection: typings.awsSdk.cloudformationMod.EnableTerminationProtection = js.native
+  var EnableTerminationProtection: typings.awsSdk.cloudformationMod.EnableTerminationProtection
   
   /**
     * The name or unique ID of the stack for which you want to set termination protection.
     */
-  var StackName: StackNameOrId = js.native
+  var StackName: StackNameOrId
 }
 object UpdateTerminationProtectionInput {
   

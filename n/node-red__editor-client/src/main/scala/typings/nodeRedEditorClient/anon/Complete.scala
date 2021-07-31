@@ -2,25 +2,23 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Complete extends StObject {
   
-  def complete(value: String, cursor: Column): Unit = js.native
+  def complete(value: String, cursor: Column): Unit
   
-  var cursor: js.UndefOr[Column] = js.native
+  var cursor: js.UndefOr[Column] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var onclose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onclose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var width: String = js.native
+  var width: String
 }
 object Complete {
   

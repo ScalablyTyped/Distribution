@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An **entity entry** for an associated entity type.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2EntityTypeEntity extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaGoogleCloudDialogflowV2EntityTypeEntity extends StObject {
     * onions*.  For `KIND_LIST` entity types:  *   This collection must contain
     * exactly one synonym equal to `value`.
     */
-  var synonyms: js.UndefOr[js.Array[String]] = js.native
+  var synonyms: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The primary value associated with this entity entry. For
@@ -27,7 +25,7 @@ trait SchemaGoogleCloudDialogflowV2EntityTypeEntity extends StObject {
     * that can contain references to other entity types (with or     without
     * aliases).
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2EntityTypeEntity {
   

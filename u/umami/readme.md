@@ -12,7 +12,7 @@ Deliciously simple website stats
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 173 |
+| # downloads        | 265 |
 | # stars            | 0 |
 
 ## Links

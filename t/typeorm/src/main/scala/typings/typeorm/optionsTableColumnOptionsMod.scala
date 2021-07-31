@@ -7,143 +7,141 @@ import typings.typeorm.typeormStrings.rowid
 import typings.typeorm.typeormStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsTableColumnOptionsMod {
   
-  @js.native
   trait TableColumnOptions extends StObject {
     
     /**
       * Column's default value.
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Generated column expression. Supports only in MySQL.
       */
-    var asExpression: js.UndefOr[String] = js.native
+    var asExpression: js.UndefOr[String] = js.undefined
     
     /**
       * Defines column character set.
       */
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
     /**
       * Defines column collation.
       */
-    var collation: js.UndefOr[String] = js.native
+    var collation: js.UndefOr[String] = js.undefined
     
     /**
       * Column's comment.
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Array of possible enumerated values.
       */
-    var enum: js.UndefOr[js.Array[String]] = js.native
+    var `enum`: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Exact name of enum
       */
-    var enumName: js.UndefOr[String] = js.native
+    var enumName: js.UndefOr[String] = js.undefined
     
     /**
       * Generated column type. Supports only in MySQL.
       */
-    var generatedType: js.UndefOr[VIRTUAL | STORED] = js.native
+    var generatedType: js.UndefOr[VIRTUAL | STORED] = js.undefined
     
     /**
       * Specifies generation strategy if this column will use auto increment.
       */
-    var generationStrategy: js.UndefOr[uuid | increment | rowid] = js.native
+    var generationStrategy: js.UndefOr[uuid | increment | rowid] = js.undefined
     
     /**
       * Indicates if column stores array.
       */
-    var isArray: js.UndefOr[Boolean] = js.native
+    var isArray: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if column is auto-generated sequence.
       */
-    var isGenerated: js.UndefOr[Boolean] = js.native
+    var isGenerated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if column is NULL, or is NOT NULL in the database.
       */
-    var isNullable: js.UndefOr[Boolean] = js.native
+    var isNullable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if column is a primary key.
       */
-    var isPrimary: js.UndefOr[Boolean] = js.native
+    var isPrimary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if column has unique value.
       */
-    var isUnique: js.UndefOr[Boolean] = js.native
+    var isUnique: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column type's length. Used only on some column types.
       * For example type = "string" and length = "100" means that ORM will create a column with type varchar(100).
       */
-    var length: js.UndefOr[String] = js.native
+    var length: js.UndefOr[String] = js.undefined
     
     /**
       * Column name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * ON UPDATE trigger. Works only for MySQL.
       */
-    var onUpdate: js.UndefOr[String] = js.native
+    var onUpdate: js.UndefOr[String] = js.undefined
     
     /**
       * The precision for a decimal (exact numeric) column (applies only for decimal column), which is the maximum
       * number of digits that are stored for the values.
       */
-    var precision: js.UndefOr[Double | Null] = js.native
+    var precision: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * The scale for a decimal (exact numeric) column (applies only for decimal column), which represents the number
       * of digits to the right of the decimal point and must not be greater than precision.
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /**
       * Spatial Feature Type (Geometry, Point, Polygon, etc.)
       */
-    var spatialFeatureType: js.UndefOr[String] = js.native
+    var spatialFeatureType: js.UndefOr[String] = js.undefined
     
     /**
       * SRID (Spatial Reference ID (EPSG code))
       */
-    var srid: js.UndefOr[Double] = js.native
+    var srid: js.UndefOr[Double] = js.undefined
     
     /**
       * Column type.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Puts UNSIGNED attribute on to numeric column. Works only for MySQL.
       */
-    var unsigned: js.UndefOr[Boolean] = js.native
+    var unsigned: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Column type's display width. Used only on some column types in MySQL.
       * For example, INT(4) specifies an INT with a display width of four digits.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Puts ZEROFILL attribute on to numeric column. Works only for MySQL.
       * If you specify ZEROFILL for a numeric column, MySQL automatically adds the UNSIGNED attribute to the column
       */
-    var zerofill: js.UndefOr[Boolean] = js.native
+    var zerofill: js.UndefOr[Boolean] = js.undefined
   }
   object TableColumnOptions {
     

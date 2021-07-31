@@ -3,33 +3,25 @@ package typings.estree.mod
 import typings.estree.estreeStrings.init
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.estree.mod.Node because Already inherited */ @js.native
-trait AssignmentProperty extends Property {
+- typings.estree.mod.Node because Already inherited */ trait AssignmentProperty
+  extends StObject
+     with Property {
   
   @JSName("kind")
-  var kind_AssignmentProperty: init = js.native
+  var kind_AssignmentProperty: init
   
   @JSName("value")
-  var value_AssignmentProperty: Pattern = js.native
+  var value_AssignmentProperty: Pattern
 }
 object AssignmentProperty {
   
   @scala.inline
-  def apply(
-    computed: Boolean,
-    key: Expression,
-    kind: init,
-    method: Boolean,
-    shorthand: Boolean,
-    `type`: typings.estree.estreeStrings.Property,
-    value: Pattern
-  ): AssignmentProperty = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(computed: Boolean, key: Expression, method: Boolean, shorthand: Boolean, value: Pattern): AssignmentProperty = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = "init", method = method.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Property")
     __obj.asInstanceOf[AssignmentProperty]
   }
   

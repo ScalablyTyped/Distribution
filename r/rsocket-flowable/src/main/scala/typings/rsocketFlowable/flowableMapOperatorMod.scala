@@ -3,33 +3,47 @@ package typings.rsocketFlowable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flowableMapOperatorMod {
   
   @JSImport("rsocket-flowable/FlowableMapOperator", JSImport.Default)
   @js.native
-  class default[T, R] protected () extends FlowableMapOperator[T, R] {
+  class default[T, R] protected ()
+    extends StObject
+       with FlowableMapOperator[T, R] {
     def this(
       subscriber: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<R> */ js.Any,
       fn: js.Function1[/* t */ T, R]
     ) = this()
+    
+    /* CompleteClass */
+    override def onComplete(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onError(error: Error): Unit = js.native
+    
+    /* CompleteClass */
+    override def onNext(t: T): Unit = js.native
+    
+    /* CompleteClass */
+    override def onSubscribe(
+      subscription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscription */ js.Any
+    ): Unit = js.native
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> * / any */ @js.native
-  trait FlowableMapOperator[T, R] extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> * / any */ trait FlowableMapOperator[T, R] extends StObject {
     
-    def onComplete(): Unit = js.native
+    def onComplete(): Unit
     
-    def onError(error: Error): Unit = js.native
+    def onError(error: Error): Unit
     
-    def onNext(t: T): Unit = js.native
+    def onNext(t: T): Unit
     
     def onSubscribe(
       subscription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscription */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object FlowableMapOperator {
     
@@ -45,7 +59,7 @@ object flowableMapOperatorMod {
     }
     
     @scala.inline
-    implicit class FlowableMapOperatorMutableBuilder[Self <: FlowableMapOperator[_, _], T, R] (val x: Self with (FlowableMapOperator[T, R])) extends AnyVal {
+    implicit class FlowableMapOperatorMutableBuilder[Self <: FlowableMapOperator[?, ?], T, R] (val x: Self & (FlowableMapOperator[T, R])) extends AnyVal {
       
       @scala.inline
       def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))

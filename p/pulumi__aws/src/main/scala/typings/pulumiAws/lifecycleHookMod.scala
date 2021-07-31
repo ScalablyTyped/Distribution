@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lifecycleHookMod {
@@ -68,6 +67,10 @@ object lifecycleHookMod {
   /* static members */
   object LifecycleHook {
     
+    @JSImport("@pulumi/aws/autoscaling/lifecycleHook", "LifecycleHook")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LifecycleHook resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,70 +80,64 @@ object lifecycleHookMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/autoscaling/lifecycleHook", "LifecycleHook.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LifecycleHook = js.native
-    @JSImport("@pulumi/aws/autoscaling/lifecycleHook", "LifecycleHook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LifecycleHook = js.native
-    @JSImport("@pulumi/aws/autoscaling/lifecycleHook", "LifecycleHook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecycleHookState): LifecycleHook = js.native
-    @JSImport("@pulumi/aws/autoscaling/lifecycleHook", "LifecycleHook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecycleHookState, opts: CustomResourceOptions): LifecycleHook = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecycleHookState): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecycleHookState, opts: CustomResourceOptions): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
     
     /**
       * Returns true if the given object is an instance of LifecycleHook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/autoscaling/lifecycleHook", "LifecycleHook.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean]
   }
   
-  @js.native
   trait LifecycleHookArgs extends StObject {
     
     /**
       * The name of the Auto Scaling group to which you want to assign the lifecycle hook
       */
-    val autoscalingGroupName: Input[String] = js.native
+    val autoscalingGroupName: Input[String]
     
     /**
       * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The value for this parameter can be either CONTINUE or ABANDON. The default value for this parameter is ABANDON.
       */
-    val defaultResult: js.UndefOr[Input[String]] = js.native
+    val defaultResult: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the DefaultResult parameter
       */
-    val heartbeatTimeout: js.UndefOr[Input[Double]] = js.native
+    val heartbeatTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The instance state to which you want to attach the lifecycle hook. For a list of lifecycle hook types, see [describe-lifecycle-hook-types](https://docs.aws.amazon.com/cli/latest/reference/autoscaling/describe-lifecycle-hook-types.html#examples)
       */
-    val lifecycleTransition: Input[String] = js.native
+    val lifecycleTransition: Input[String]
     
     /**
       * The name of the lifecycle hook.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Contains additional information that you want to include any time Auto Scaling sends a message to the notification target.
       */
-    val notificationMetadata: js.UndefOr[Input[String]] = js.native
+    val notificationMetadata: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the notification target that Auto Scaling will use to notify you when an instance is in the transition state for the lifecycle hook. This ARN target can be either an SQS queue or an SNS topic.
       */
-    val notificationTargetArn: js.UndefOr[Input[String]] = js.native
+    val notificationTargetArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object LifecycleHookArgs {
     
@@ -197,48 +194,47 @@ object lifecycleHookMod {
     }
   }
   
-  @js.native
   trait LifecycleHookState extends StObject {
     
     /**
       * The name of the Auto Scaling group to which you want to assign the lifecycle hook
       */
-    val autoscalingGroupName: js.UndefOr[Input[String]] = js.native
+    val autoscalingGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The value for this parameter can be either CONTINUE or ABANDON. The default value for this parameter is ABANDON.
       */
-    val defaultResult: js.UndefOr[Input[String]] = js.native
+    val defaultResult: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Defines the amount of time, in seconds, that can elapse before the lifecycle hook times out. When the lifecycle hook times out, Auto Scaling performs the action defined in the DefaultResult parameter
       */
-    val heartbeatTimeout: js.UndefOr[Input[Double]] = js.native
+    val heartbeatTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The instance state to which you want to attach the lifecycle hook. For a list of lifecycle hook types, see [describe-lifecycle-hook-types](https://docs.aws.amazon.com/cli/latest/reference/autoscaling/describe-lifecycle-hook-types.html#examples)
       */
-    val lifecycleTransition: js.UndefOr[Input[String]] = js.native
+    val lifecycleTransition: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the lifecycle hook.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Contains additional information that you want to include any time Auto Scaling sends a message to the notification target.
       */
-    val notificationMetadata: js.UndefOr[Input[String]] = js.native
+    val notificationMetadata: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the notification target that Auto Scaling will use to notify you when an instance is in the transition state for the lifecycle hook. This ARN target can be either an SQS queue or an SNS topic.
       */
-    val notificationTargetArn: js.UndefOr[Input[String]] = js.native
+    val notificationTargetArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object LifecycleHookState {
     

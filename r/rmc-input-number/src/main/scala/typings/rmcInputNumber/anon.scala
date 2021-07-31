@@ -5,33 +5,31 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FocusOnUpDown extends StObject {
     
-    var focusOnUpDown: Boolean = js.native
+    var focusOnUpDown: Boolean
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    def onBlur(): Unit = js.native
+    def onBlur(): Unit
     
-    def onChange(): Unit = js.native
+    def onChange(): Unit
     
-    def onFocus(): Unit = js.native
+    def onFocus(): Unit
     
-    def parser(input: String): String = js.native
+    def parser(input: String): String
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var step: Double = js.native
+    var step: Double
     
-    var useTouch: Boolean = js.native
+    var useTouch: Boolean
   }
   object FocusOnUpDown {
     
@@ -87,22 +85,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    def onBlur(): Unit = js.native
+    def onBlur(): Unit
     
-    def onChange(): Unit = js.native
+    def onChange(): Unit
     
-    def onFocus(): Unit = js.native
+    def onFocus(): Unit
     
-    def parser(input: String): String = js.native
+    def parser(input: String): String
     
-    var step: Double = js.native
+    var step: Double
   }
   object Max {
     
@@ -146,10 +143,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RegisteredStyleBrand extends StObject {
     
-    var __registeredStyleBrand: ViewStyle | TextStyle | ImageStyle = js.native
+    var __registeredStyleBrand: ViewStyle | TextStyle | ImageStyle
   }
   object RegisteredStyleBrand {
     

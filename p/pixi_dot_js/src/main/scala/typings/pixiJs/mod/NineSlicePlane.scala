@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,54 +38,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "NineSlicePlane")
 @js.native
 class NineSlicePlane protected ()
-  extends typings.pixiJs.PIXI.NineSlicePlane {
+  extends StObject
+     with typings.pixiJs.PIXI.NineSlicePlane {
   def this(texture: typings.pixiJs.PIXI.Texture) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: Double) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: js.UndefOr[scala.Nothing], topHeight: Double) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: Double, topHeight: Double) = this()
-  def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: js.UndefOr[scala.Nothing],
-    topHeight: js.UndefOr[scala.Nothing],
-    rightWidth: Double
-  ) = this()
-  def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: js.UndefOr[scala.Nothing],
-    topHeight: Double,
-    rightWidth: Double
-  ) = this()
-  def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: Double,
-    topHeight: js.UndefOr[scala.Nothing],
-    rightWidth: Double
-  ) = this()
+  def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: Unit, topHeight: Double) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: Double, topHeight: Double, rightWidth: Double) = this()
+  def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: Double, topHeight: Unit, rightWidth: Double) = this()
+  def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: Unit, topHeight: Double, rightWidth: Double) = this()
+  def this(texture: typings.pixiJs.PIXI.Texture, leftWidth: Unit, topHeight: Unit, rightWidth: Double) = this()
   def this(
     texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: js.UndefOr[scala.Nothing],
-    topHeight: js.UndefOr[scala.Nothing],
-    rightWidth: js.UndefOr[scala.Nothing],
-    bottomHeight: Double
-  ) = this()
-  def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: js.UndefOr[scala.Nothing],
-    topHeight: js.UndefOr[scala.Nothing],
-    rightWidth: Double,
-    bottomHeight: Double
-  ) = this()
-  def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: js.UndefOr[scala.Nothing],
-    topHeight: Double,
-    rightWidth: js.UndefOr[scala.Nothing],
-    bottomHeight: Double
-  ) = this()
-  def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: js.UndefOr[scala.Nothing],
+    leftWidth: Double,
     topHeight: Double,
     rightWidth: Double,
     bottomHeight: Double
@@ -94,29 +58,50 @@ class NineSlicePlane protected ()
   def this(
     texture: typings.pixiJs.PIXI.Texture,
     leftWidth: Double,
-    topHeight: js.UndefOr[scala.Nothing],
-    rightWidth: js.UndefOr[scala.Nothing],
+    topHeight: Double,
+    rightWidth: Unit,
     bottomHeight: Double
   ) = this()
   def this(
     texture: typings.pixiJs.PIXI.Texture,
     leftWidth: Double,
-    topHeight: js.UndefOr[scala.Nothing],
+    topHeight: Unit,
     rightWidth: Double,
     bottomHeight: Double
   ) = this()
   def this(
     texture: typings.pixiJs.PIXI.Texture,
     leftWidth: Double,
-    topHeight: Double,
-    rightWidth: js.UndefOr[scala.Nothing],
+    topHeight: Unit,
+    rightWidth: Unit,
     bottomHeight: Double
   ) = this()
   def this(
     texture: typings.pixiJs.PIXI.Texture,
-    leftWidth: Double,
+    leftWidth: Unit,
     topHeight: Double,
     rightWidth: Double,
+    bottomHeight: Double
+  ) = this()
+  def this(
+    texture: typings.pixiJs.PIXI.Texture,
+    leftWidth: Unit,
+    topHeight: Double,
+    rightWidth: Unit,
+    bottomHeight: Double
+  ) = this()
+  def this(
+    texture: typings.pixiJs.PIXI.Texture,
+    leftWidth: Unit,
+    topHeight: Unit,
+    rightWidth: Double,
+    bottomHeight: Double
+  ) = this()
+  def this(
+    texture: typings.pixiJs.PIXI.Texture,
+    leftWidth: Unit,
+    topHeight: Unit,
+    rightWidth: Unit,
     bottomHeight: Double
   ) = this()
 }

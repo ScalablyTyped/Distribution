@@ -9,28 +9,26 @@ import typings.reactVis.reactVisStrings.vertical
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscreteColorLegendProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   // default: ''
-  var items: js.Array[Color | String | ReactChild] = js.native
+  var items: js.Array[Color | String | ReactChild]
   
-  var onItemClick: js.UndefOr[RVMouseEventHandler] = js.native
+  var onItemClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onItemMouseEnter: js.UndefOr[RVItemEventHandler] = js.native
+  var onItemMouseEnter: js.UndefOr[RVItemEventHandler] = js.undefined
   
-  var onItemMouseLeave: js.UndefOr[RVItemEventHandler] = js.native
+  var onItemMouseLeave: js.UndefOr[RVItemEventHandler] = js.undefined
   
-  var orientation: js.UndefOr[vertical | horizontal] = js.native
+  var orientation: js.UndefOr[vertical | horizontal] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DiscreteColorLegendProps {
   

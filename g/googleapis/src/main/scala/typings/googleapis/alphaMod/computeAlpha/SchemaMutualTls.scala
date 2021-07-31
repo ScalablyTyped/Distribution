@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for the mutual Tls mode for peer authentication.
   */
-@js.native
 trait SchemaMutualTls extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaMutualTls extends StObject {
     * must be presented, connection is in TLS. PERMISSIVE: Client certificate
     * can be omitted, connection can be either plaintext or TLS.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object SchemaMutualTls {
   

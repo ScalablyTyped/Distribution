@@ -2,28 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhileStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.WhileStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.WhileStatement]
+     with _Statement {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
-  var condition: Expression = js.native
+  var condition: Expression
 }
 object WhileStatement {
   
   @scala.inline
-  def apply(
-    body: js.Array[Statement],
-    condition: Expression,
-    `type`: typings.luaparse.luaparseStrings.WhileStatement
-  ): WhileStatement = {
+  def apply(body: js.Array[Statement], condition: Expression): WhileStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[WhileStatement]
   }
   

@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.azureArmResource.libModelsMod.Appliance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var expand: js.UndefOr[String] = js.native
+    var expand: js.UndefOr[String] = js.undefined
   }
   object `0` {
     
@@ -41,10 +39,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomHeaders extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object CustomHeaders {
     
@@ -65,14 +62,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomHeadersExpand extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var expand: js.UndefOr[String] = js.native
+    var expand: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object CustomHeadersExpand {
     
@@ -105,12 +101,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomHeadersTop extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object CustomHeadersTop {
     
@@ -137,14 +132,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Expand extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var expand: js.UndefOr[String] = js.native
+    var expand: js.UndefOr[String] = js.undefined
     
-    var recurse: js.UndefOr[Boolean] = js.native
+    var recurse: js.UndefOr[Boolean] = js.undefined
   }
   object Expand {
     
@@ -177,16 +171,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ExpandFilter extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var expand: js.UndefOr[String] = js.native
+    var expand: js.UndefOr[String] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object ExpandFilter {
     
@@ -225,12 +218,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
   }
   object Filter {
     
@@ -257,12 +249,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Parameters extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var parameters: js.UndefOr[Appliance] = js.native
+    var parameters: js.UndefOr[Appliance] = js.undefined
   }
   object Parameters {
     
@@ -289,12 +280,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Skiptoken extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var skiptoken: js.UndefOr[String] = js.native
+    var skiptoken: js.UndefOr[String] = js.undefined
   }
   object Skiptoken {
     
@@ -321,14 +311,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Top extends StObject {
     
-    var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Top {
     

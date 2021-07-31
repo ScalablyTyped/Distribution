@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Cpx1 extends js.Object {
+trait Cpx1 extends StObject {
   
   /**
     * x of control point.
@@ -13,7 +12,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.cpx1
     */
-  var cpx1: js.UndefOr[Double] = js.native
+  var cpx1: js.UndefOr[Double] = js.undefined
   
   /**
     * x of the second control point.
@@ -25,7 +24,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.cpx2
     */
-  var cpx2: js.UndefOr[Double] = js.native
+  var cpx2: js.UndefOr[Double] = js.undefined
   
   /**
     * y of control point.
@@ -33,7 +32,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.cpy1
     */
-  var cpy1: js.UndefOr[Double] = js.native
+  var cpy1: js.UndefOr[Double] = js.undefined
   
   /**
     * y of the second control point.
@@ -45,7 +44,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.cpy2
     */
-  var cpy2: js.UndefOr[Double] = js.native
+  var cpy2: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the percentage of drawing, useful in animation.
@@ -57,7 +56,7 @@ trait Cpx1 extends js.Object {
     * 1
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.percent
     */
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
   
   /**
     * x value of the start point.
@@ -65,7 +64,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.x1
     */
-  var x1: js.UndefOr[Double] = js.native
+  var x1: js.UndefOr[Double] = js.undefined
   
   /**
     * x value of the end point.
@@ -73,7 +72,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.x2
     */
-  var x2: js.UndefOr[Double] = js.native
+  var x2: js.UndefOr[Double] = js.undefined
   
   /**
     * y value of the start point.
@@ -81,7 +80,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.y1
     */
-  var y1: js.UndefOr[Double] = js.native
+  var y1: js.UndefOr[Double] = js.undefined
   
   /**
     * y value of the end point.
@@ -89,7 +88,7 @@ trait Cpx1 extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape.y2
     */
-  var y2: js.UndefOr[Double] = js.native
+  var y2: js.UndefOr[Double] = js.undefined
 }
 object Cpx1 {
   
@@ -100,72 +99,60 @@ object Cpx1 {
   }
   
   @scala.inline
-  implicit class Cpx1Ops[Self <: Cpx1] (val x: Self) extends AnyVal {
+  implicit class Cpx1MutableBuilder[Self <: Cpx1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpx1(value: Double): Self = StObject.set(x, "cpx1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpx1Undefined: Self = StObject.set(x, "cpx1", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpx2(value: Double): Self = StObject.set(x, "cpx2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpx1(value: Double): Self = this.set("cpx1", value.asInstanceOf[js.Any])
+    def setCpx2Undefined: Self = StObject.set(x, "cpx2", js.undefined)
     
     @scala.inline
-    def deleteCpx1: Self = this.set("cpx1", js.undefined)
+    def setCpy1(value: Double): Self = StObject.set(x, "cpy1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpx2(value: Double): Self = this.set("cpx2", value.asInstanceOf[js.Any])
+    def setCpy1Undefined: Self = StObject.set(x, "cpy1", js.undefined)
     
     @scala.inline
-    def deleteCpx2: Self = this.set("cpx2", js.undefined)
+    def setCpy2(value: Double): Self = StObject.set(x, "cpy2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpy1(value: Double): Self = this.set("cpy1", value.asInstanceOf[js.Any])
+    def setCpy2Undefined: Self = StObject.set(x, "cpy2", js.undefined)
     
     @scala.inline
-    def deleteCpy1: Self = this.set("cpy1", js.undefined)
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpy2(value: Double): Self = this.set("cpy2", value.asInstanceOf[js.Any])
+    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
     @scala.inline
-    def deleteCpy2: Self = this.set("cpy2", js.undefined)
+    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
     
     @scala.inline
-    def deletePercent: Self = this.set("percent", js.undefined)
+    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: Double): Self = this.set("x1", value.asInstanceOf[js.Any])
+    def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
     @scala.inline
-    def deleteX1: Self = this.set("x1", js.undefined)
+    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX2(value: Double): Self = this.set("x2", value.asInstanceOf[js.Any])
+    def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     
     @scala.inline
-    def deleteX2: Self = this.set("x2", js.undefined)
+    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY1(value: Double): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY1: Self = this.set("y1", js.undefined)
-    
-    @scala.inline
-    def setY2(value: Double): Self = this.set("y2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY2: Self = this.set("y2", js.undefined)
+    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
   }
 }

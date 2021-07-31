@@ -2,61 +2,59 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     *  The 0-based character offset in the input text that shows where the attribute begins. The offset returns the UTF-8 code point in the string. 
     */
-  var BeginOffset: js.UndefOr[Integer] = js.native
+  var BeginOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The category of attribute. 
     */
-  var Category: js.UndefOr[EntityType] = js.native
+  var Category: js.UndefOr[EntityType] = js.undefined
   
   /**
     *  The 0-based character offset in the input text that shows where the attribute ends. The offset returns the UTF-8 code point in the string.
     */
-  var EndOffset: js.UndefOr[Integer] = js.native
+  var EndOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The numeric identifier for this attribute. This is a monotonically increasing id unique within this response rather than a global unique identifier. 
     */
-  var Id: js.UndefOr[Integer] = js.native
+  var Id: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The level of confidence that Amazon Comprehend Medical has that this attribute is correctly related to this entity. 
     */
-  var RelationshipScore: js.UndefOr[Float] = js.native
+  var RelationshipScore: js.UndefOr[Float] = js.undefined
   
   /**
     * The type of relationship between the entity and attribute. Type for the relationship is OVERLAP, indicating that the entity occurred at the same time as the Date_Expression. 
     */
-  var RelationshipType: js.UndefOr[typings.awsSdk.comprehendmedicalMod.RelationshipType] = js.native
+  var RelationshipType: js.UndefOr[typings.awsSdk.comprehendmedicalMod.RelationshipType] = js.undefined
   
   /**
     *  The level of confidence that Amazon Comprehend Medical has that the segment of text is correctly recognized as an attribute. 
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
   
   /**
     *  The segment of input text extracted as this attribute.
     */
-  var Text: js.UndefOr[String] = js.native
+  var Text: js.UndefOr[String] = js.undefined
   
   /**
     *  Contextual information for this attribute. 
     */
-  var Traits: js.UndefOr[TraitList] = js.native
+  var Traits: js.UndefOr[TraitList] = js.undefined
   
   /**
     *  The type of attribute. 
     */
-  var Type: js.UndefOr[EntitySubType] = js.native
+  var Type: js.UndefOr[EntitySubType] = js.undefined
 }
 object Attribute {
   

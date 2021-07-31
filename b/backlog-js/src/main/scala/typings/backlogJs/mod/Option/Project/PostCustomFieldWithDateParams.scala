@@ -2,21 +2,21 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PostCustomFieldWithDateParams extends PostCustomFieldParams {
+trait PostCustomFieldWithDateParams
+  extends StObject
+     with PostCustomFieldParams {
   
-  var initialDate: js.UndefOr[String] = js.native
+  var initialDate: js.UndefOr[String] = js.undefined
   
-  var initialShift: js.UndefOr[Double] = js.native
+  var initialShift: js.UndefOr[Double] = js.undefined
   
-  var initialValueType: js.UndefOr[Double] = js.native
+  var initialValueType: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[String] = js.native
+  var max: js.UndefOr[String] = js.undefined
   
-  var min: js.UndefOr[String] = js.native
+  var min: js.UndefOr[String] = js.undefined
 }
 object PostCustomFieldWithDateParams {
   

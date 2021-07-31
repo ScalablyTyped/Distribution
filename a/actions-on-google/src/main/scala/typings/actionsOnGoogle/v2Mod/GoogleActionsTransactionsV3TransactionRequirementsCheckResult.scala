@@ -3,16 +3,16 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.requirementsMod.TransactionRequirementsArgument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoogleActionsTransactionsV3TransactionRequirementsCheckResult extends TransactionRequirementsArgument {
+trait GoogleActionsTransactionsV3TransactionRequirementsCheckResult
+  extends StObject
+     with TransactionRequirementsArgument {
   
   /**
     * Result type for transaction requirements check.
     */
-  var resultType: js.UndefOr[GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType] = js.native
+  var resultType: js.UndefOr[GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType] = js.undefined
 }
 object GoogleActionsTransactionsV3TransactionRequirementsCheckResult {
   

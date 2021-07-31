@@ -2,29 +2,30 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduceUtilMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/ops/reduce_util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/reduce_util", "PARALLELIZE_THRESHOLD")
   @js.native
   val PARALLELIZE_THRESHOLD: /* 30 */ Double = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/reduce_util", "computeOptimalWindowSize")
-  @js.native
-  def computeOptimalWindowSize(inSize: Double): Double = js.native
+  @scala.inline
+  def computeOptimalWindowSize(inSize: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeOptimalWindowSize")(inSize.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
   trait ReduceInfo extends StObject {
     
-    var batchSize: Double = js.native
+    var batchSize: Double
     
-    var inSize: Double = js.native
+    var inSize: Double
     
-    var outSize: Double = js.native
+    var outSize: Double
     
-    var windowSize: Double = js.native
+    var windowSize: Double
   }
   object ReduceInfo {
     

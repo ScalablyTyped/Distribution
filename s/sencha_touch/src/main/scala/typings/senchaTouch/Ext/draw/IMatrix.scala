@@ -4,14 +4,14 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMatrix extends IBase {
+trait IMatrix
+  extends StObject
+     with IBase {
   
   /** [Property] (Number) */
-  var a: js.UndefOr[Double] = js.native
+  var a: js.UndefOr[Double] = js.undefined
   
   /** [Method] Postpend a matrix onto the current
     * @param xx Number Coefficient from x to x.
@@ -32,93 +32,93 @@ trait IMatrix extends IBase {
       /* dy */ js.UndefOr[Double], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Postpend a matrix onto the current
     * @param matrix Ext.draw.Matrix
     * @returns Ext.draw.Matrix this
     */
-  var appendMatrix: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], this.type]] = js.native
+  var appendMatrix: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], this.type]] = js.undefined
   
   /** [Method] Clone this matrix
     * @returns Ext.draw.Matrix
     */
   @JSName("clone")
-  var clone_FIMatrix: js.UndefOr[js.Function0[this.type]] = js.native
+  var clone_FIMatrix: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Determines if this matrix has the same values as another matrix
     * @param matrix Ext.draw.Matrix
     * @returns Boolean
     */
   @JSName("equals")
-  var equals_FIMatrix: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], Boolean]] = js.native
+  var equals_FIMatrix: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], Boolean]] = js.undefined
   
   /** [Method] Horizontally flip the matrix
     * @returns Ext.draw.Matrix this
     */
-  var flipX: js.UndefOr[js.Function0[this.type]] = js.native
+  var flipX: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Vertically flip the matrix
     * @returns Ext.draw.Matrix this
     */
-  var flipY: js.UndefOr[js.Function0[this.type]] = js.native
+  var flipY: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Get offset x component of the matrix
     * @returns Number
     */
-  var getDX: js.UndefOr[js.Function0[Double]] = js.native
+  var getDX: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get offset y component of the matrix
     * @returns Number
     */
-  var getDY: js.UndefOr[js.Function0[Double]] = js.native
+  var getDY: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get the x scale of the matrix
     * @returns Number
     */
-  var getScaleX: js.UndefOr[js.Function0[Double]] = js.native
+  var getScaleX: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get the y scale of the matrix
     * @returns Number
     */
-  var getScaleY: js.UndefOr[js.Function0[Double]] = js.native
+  var getScaleY: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get x to x component of the matrix
     * @returns Number
     */
-  var getXX: js.UndefOr[js.Function0[Double]] = js.native
+  var getXX: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get x to y component of the matrix
     * @returns Number
     */
-  var getXY: js.UndefOr[js.Function0[Double]] = js.native
+  var getXY: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get y to x component of the matrix
     * @returns Number
     */
-  var getYX: js.UndefOr[js.Function0[Double]] = js.native
+  var getYX: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Get y to y component of the matrix
     * @returns Number
     */
-  var getYY: js.UndefOr[js.Function0[Double]] = js.native
+  var getYY: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Return a new matrix represents the opposite transformation of the current one
     * @param target Ext.draw.Matrix A target matrix. If present, it will receive the result of inversion to avoid creating a new object.
     * @returns Ext.draw.Matrix
     */
-  var inverse: js.UndefOr[js.Function1[/* target */ js.UndefOr[this.type], this.type]] = js.native
+  var inverse: js.UndefOr[js.Function1[/* target */ js.UndefOr[this.type], this.type]] = js.undefined
   
   /** [Method] Determines whether this matrix is an identity matrix no transform
     * @returns Boolean
     */
-  var isIdentity: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isIdentity: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Postpend a matrix onto the current
     * @param matrix Ext.draw.Matrix
     * @returns Ext.draw.Matrix this
     */
-  var multiply: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], this.type]] = js.native
+  var multiply: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], this.type]] = js.undefined
   
   /** [Method] Prepend a matrix onto the current
     * @param xx Number Coefficient from x to x.
@@ -139,18 +139,18 @@ trait IMatrix extends IBase {
       /* dy */ js.UndefOr[Double], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Prepend a matrix onto the current
     * @param matrix Ext.draw.Matrix
     * @returns Ext.draw.Matrix this
     */
-  var prependMatrix: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], this.type]] = js.native
+  var prependMatrix: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[this.type], this.type]] = js.undefined
   
   /** [Method] Reset the matrix to identical
     * @returns Ext.draw.Matrix this
     */
-  var reset: js.UndefOr[js.Function0[this.type]] = js.native
+  var reset: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Rotate the matrix
     * @param angle Number Radians to rotate
@@ -167,7 +167,7 @@ trait IMatrix extends IBase {
       /* prepend */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Rotate the matrix by the angle of a vector
     * @param x Number
@@ -182,7 +182,7 @@ trait IMatrix extends IBase {
       /* prepend */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Scale the matrix
     * @param sx Number
@@ -201,7 +201,7 @@ trait IMatrix extends IBase {
       /* prepend */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set the elements of a Matrix
     * @param xx Number
@@ -222,51 +222,51 @@ trait IMatrix extends IBase {
       /* dy */ js.UndefOr[Double], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Skew the matrix
     * @param angle Number
     * @returns Ext.draw.Matrix this
     */
-  var skewX: js.UndefOr[js.Function1[/* angle */ js.UndefOr[Double], this.type]] = js.native
+  var skewX: js.UndefOr[js.Function1[/* angle */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Method] Skew the matrix
     * @param angle Number
     * @returns Ext.draw.Matrix this
     */
-  var skewY: js.UndefOr[js.Function1[/* angle */ js.UndefOr[Double], this.type]] = js.native
+  var skewY: js.UndefOr[js.Function1[/* angle */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Method] Split matrix into Translate Scale Shear and Rotate
     * @returns Object
     */
-  var split: js.UndefOr[js.Function0[_]] = js.native
+  var split: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Create an array of elements by horizontal order xx yx dx yx yy dy
     * @returns Array
     */
-  var toArray: js.UndefOr[js.Function0[Array]] = js.native
+  var toArray: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Apply the matrix to a drawing context
     * @param ctx Object
     * @returns Ext.draw.Matrix this
     */
-  var toContext: js.UndefOr[js.Function1[/* ctx */ js.UndefOr[js.Any], this.type]] = js.native
+  var toContext: js.UndefOr[js.Function1[/* ctx */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Method] Get an array of elements
     * @returns Array
     */
   @JSName("toString")
-  var toString_FIMatrix: js.UndefOr[js.Function0[Array]] = js.native
+  var toString_FIMatrix: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Return a string that can be used as transform attribute in SVG
     * @returns String
     */
-  var toSvg: js.UndefOr[js.Function0[String]] = js.native
+  var toSvg: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Create an array of elements by vertical order xx xy yx yy dx dy
     * @returns Array|String
     */
-  var toVerticalArray: js.UndefOr[js.Function0[_]] = js.native
+  var toVerticalArray: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method]
     * @param bbox Object Given as {x: Number, y: Number, width: Number, height: Number}.
@@ -279,21 +279,21 @@ trait IMatrix extends IBase {
       /* bbox */ js.UndefOr[js.Any], 
       /* radius */ js.UndefOr[Double], 
       /* target */ js.UndefOr[js.Any], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Transform a list for points
     * @param list Array
     * @returns Array list
     */
-  var transformList: js.UndefOr[js.Function1[/* list */ js.UndefOr[Array], Array]] = js.native
+  var transformList: js.UndefOr[js.Function1[/* list */ js.UndefOr[Array], Array]] = js.undefined
   
   /** [Method] Transform a point to a new array
     * @param point Array
     * @returns Array
     */
-  var transformPoint: js.UndefOr[js.Function1[/* point */ js.UndefOr[Array], Array]] = js.native
+  var transformPoint: js.UndefOr[js.Function1[/* point */ js.UndefOr[Array], Array]] = js.undefined
   
   /** [Method] Translate the matrix
     * @param x Number
@@ -308,21 +308,21 @@ trait IMatrix extends IBase {
       /* prepend */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Transform point returning the x component of the result
     * @param x Number
     * @param y Number
     * @returns Number x component of the result.
     */
-  var x: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Double]] = js.native
+  var x: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Double]] = js.undefined
   
   /** [Method] Transform point returning the y component of the result
     * @param x Number
     * @param y Number
     * @returns Number y component of the result.
     */
-  var y: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Double]] = js.native
+  var y: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Double]] = js.undefined
 }
 object IMatrix {
   
@@ -510,7 +510,7 @@ object IMatrix {
     def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
     @scala.inline
-    def setSplit(value: () => _): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
+    def setSplit(value: () => js.Any): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
@@ -540,14 +540,14 @@ object IMatrix {
     def setToSvgUndefined: Self = StObject.set(x, "toSvg", js.undefined)
     
     @scala.inline
-    def setToVerticalArray(value: () => _): Self = StObject.set(x, "toVerticalArray", js.Any.fromFunction0(value))
+    def setToVerticalArray(value: () => js.Any): Self = StObject.set(x, "toVerticalArray", js.Any.fromFunction0(value))
     
     @scala.inline
     def setToVerticalArrayUndefined: Self = StObject.set(x, "toVerticalArray", js.undefined)
     
     @scala.inline
     def setTransformBBox(
-      value: (/* bbox */ js.UndefOr[js.Any], /* radius */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => _
+      value: (/* bbox */ js.UndefOr[js.Any], /* radius */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "transformBBox", js.Any.fromFunction3(value))
     
     @scala.inline

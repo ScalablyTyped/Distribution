@@ -2,76 +2,74 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceDetails extends StObject {
   
   /**
     * The Availability Zone of the EC2 instance.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The profile information of the EC2 instance.
     */
-  var IamInstanceProfile: js.UndefOr[typings.awsSdk.guarddutyMod.IamInstanceProfile] = js.native
+  var IamInstanceProfile: js.UndefOr[typings.awsSdk.guarddutyMod.IamInstanceProfile] = js.undefined
   
   /**
     * The image description of the EC2 instance.
     */
-  var ImageDescription: js.UndefOr[String] = js.native
+  var ImageDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The image ID of the EC2 instance.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the EC2 instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the EC2 instance.
     */
-  var InstanceState: js.UndefOr[String] = js.native
+  var InstanceState: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the EC2 instance.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The launch time of the EC2 instance.
     */
-  var LaunchTime: js.UndefOr[String] = js.native
+  var LaunchTime: js.UndefOr[String] = js.undefined
   
   /**
     * The elastic network interface information of the EC2 instance.
     */
-  var NetworkInterfaces: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkInterfaces] = js.native
+  var NetworkInterfaces: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkInterfaces] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Outpost. Only applicable to AWS Outposts instances.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The platform of the EC2 instance.
     */
-  var Platform: js.UndefOr[String] = js.native
+  var Platform: js.UndefOr[String] = js.undefined
   
   /**
     * The product code of the EC2 instance.
     */
-  var ProductCodes: js.UndefOr[typings.awsSdk.guarddutyMod.ProductCodes] = js.native
+  var ProductCodes: js.UndefOr[typings.awsSdk.guarddutyMod.ProductCodes] = js.undefined
   
   /**
     * The tags of the EC2 instance.
     */
-  var Tags: js.UndefOr[typings.awsSdk.guarddutyMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.guarddutyMod.Tags] = js.undefined
 }
 object InstanceDetails {
   

@@ -9,15 +9,13 @@ import typings.stripeV3.stripeV3Strings.nl
 import typings.stripeV3.stripeV3Strings.pl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Country extends StObject {
   
-  var country: String = js.native
+  var country: String
   
-  var preferred_language: js.UndefOr[de | en | es | it | fr | nl | pl] = js.native
+  var preferred_language: js.UndefOr[de | en | es | it | fr | nl | pl] = js.undefined
 }
 object Country {
   

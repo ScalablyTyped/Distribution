@@ -2,12 +2,13 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "LatLng")
 @js.native
-class LatLng_ protected () extends _LatLngExpression {
+class LatLng_ protected ()
+  extends StObject
+     with _LatLngExpression {
   def this(latitude: Double, longitude: Double) = this()
   def this(latitude: Double, longitude: Double, altitude: Double) = this()
   

@@ -3,13 +3,11 @@ package typings.jqueryPayment
 import typings.jqueryPayment.JQueryPayment.Payment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var payment: Payment = js.native
+  var payment: Payment
 }
 object JQueryStatic {
   

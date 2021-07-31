@@ -5,14 +5,16 @@ import typings.std.Map
 import typings.teenyRequest.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object agentsMod {
   
-  @JSImport("teeny-request/build/src/agents", "getAgent")
+  @JSImport("teeny-request/build/src/agents", JSImport.Namespace)
   @js.native
-  def getAgent(uri: String, reqOpts: Options): js.UndefOr[HttpAnyAgent] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getAgent(uri: String, reqOpts: Options): js.UndefOr[HttpAnyAgent] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAgent")(uri.asInstanceOf[js.Any], reqOpts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HttpAnyAgent]]
   
   @JSImport("teeny-request/build/src/agents", "pool")
   @js.native

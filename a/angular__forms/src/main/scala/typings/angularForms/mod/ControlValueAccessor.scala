@@ -2,10 +2,8 @@ package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ControlValueAccessor extends StObject {
   
   /**
@@ -41,7 +39,7 @@ trait ControlValueAccessor extends StObject {
     *
     * @param fn The callback function to register
     */
-  def registerOnChange(fn: js.Any): Unit = js.native
+  def registerOnChange(fn: js.Any): Unit
   
   /**
     * @description
@@ -74,7 +72,7 @@ trait ControlValueAccessor extends StObject {
     *
     * @param fn The callback function to register
     */
-  def registerOnTouched(fn: js.Any): Unit = js.native
+  def registerOnTouched(fn: js.Any): Unit
   
   /**
     * @description
@@ -93,7 +91,7 @@ trait ControlValueAccessor extends StObject {
     *
     * @param isDisabled The disabled status to set on the element
     */
-  var setDisabledState: js.UndefOr[js.Function1[/* isDisabled */ Boolean, Unit]] = js.native
+  var setDisabledState: js.UndefOr[js.Function1[/* isDisabled */ Boolean, Unit]] = js.undefined
   
   /**
     * @description
@@ -115,7 +113,7 @@ trait ControlValueAccessor extends StObject {
     *
     * @param obj The new value for the element
     */
-  def writeValue(obj: js.Any): Unit = js.native
+  def writeValue(obj: js.Any): Unit
 }
 object ControlValueAccessor {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLinkResponse extends StObject {
   
   /**
     * Information about the link.
     */
-  var Link: js.UndefOr[typings.awsSdk.networkmanagerMod.Link] = js.native
+  var Link: js.UndefOr[typings.awsSdk.networkmanagerMod.Link] = js.undefined
 }
 object DeleteLinkResponse {
   

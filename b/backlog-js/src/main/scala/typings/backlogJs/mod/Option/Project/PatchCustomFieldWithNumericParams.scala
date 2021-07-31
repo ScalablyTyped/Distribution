@@ -2,19 +2,19 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PatchCustomFieldWithNumericParams extends PatchCustomFieldParams {
+trait PatchCustomFieldWithNumericParams
+  extends StObject
+     with PatchCustomFieldParams {
   
-  var initialValue: js.UndefOr[Double] = js.native
+  var initialValue: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object PatchCustomFieldWithNumericParams {
   

@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDirectionsErrorEventArgs extends StObject {
   
   /** The error message. */
-  var message: String = js.native
+  var message: String
   
   /** The code which identifies the error that occurred. */
-  var responseCode: RouteResponseCode = js.native
+  var responseCode: RouteResponseCode
 }
 object IDirectionsErrorEventArgs {
   

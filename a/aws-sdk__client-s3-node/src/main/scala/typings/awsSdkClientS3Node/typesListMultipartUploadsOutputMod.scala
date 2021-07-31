@@ -8,75 +8,74 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListMultipartUploadsOutputMod {
   
-  @js.native
   trait ListMultipartUploadsOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Name of the bucket to which the multipart upload was initiated.</p>
       */
-    var Bucket: js.UndefOr[String] = js.native
+    var Bucket: js.UndefOr[String] = js.undefined
     
     /**
       * _CommonPrefixList shape
       */
-    var CommonPrefixes: js.UndefOr[js.Array[UnmarshalledCommonPrefix]] = js.native
+    var CommonPrefixes: js.UndefOr[js.Array[UnmarshalledCommonPrefix]] = js.undefined
     
     /**
       * _Delimiter shape
       */
-    var Delimiter: js.UndefOr[String] = js.native
+    var Delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Encoding type used by Amazon S3 to encode object keys in the response.</p>
       */
-    var EncodingType: js.UndefOr[url | String] = js.native
+    var EncodingType: js.UndefOr[url | String] = js.undefined
     
     /**
       * <p>Indicates whether the returned list of multipart uploads is truncated. A value of true indicates that the list was truncated. The list can be truncated if the number of multipart uploads exceeds the limit allowed or specified by max uploads.</p>
       */
-    var IsTruncated: js.UndefOr[Boolean] = js.native
+    var IsTruncated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>The key at or after which the listing began.</p>
       */
-    var KeyMarker: js.UndefOr[String] = js.native
+    var KeyMarker: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Maximum number of multipart uploads that could have been included in the response.</p>
       */
-    var MaxUploads: js.UndefOr[Double] = js.native
+    var MaxUploads: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>When a list is truncated, this element specifies the value that should be used for the key-marker request parameter in a subsequent request.</p>
       */
-    var NextKeyMarker: js.UndefOr[String] = js.native
+    var NextKeyMarker: js.UndefOr[String] = js.undefined
     
     /**
       * <p>When a list is truncated, this element specifies the value that should be used for the upload-id-marker request parameter in a subsequent request.</p>
       */
-    var NextUploadIdMarker: js.UndefOr[String] = js.native
+    var NextUploadIdMarker: js.UndefOr[String] = js.undefined
     
     /**
       * <p>When a prefix is provided in the request, this field contains the specified prefix. The result contains only keys starting with the specified prefix.</p>
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Upload ID after which listing began.</p>
       */
-    var UploadIdMarker: js.UndefOr[String] = js.native
+    var UploadIdMarker: js.UndefOr[String] = js.undefined
     
     /**
       * _MultipartUploadList shape
       */
-    var Uploads: js.UndefOr[js.Array[UnmarshalledMultipartUpload]] = js.native
+    var Uploads: js.UndefOr[js.Array[UnmarshalledMultipartUpload]] = js.undefined
   }
   object ListMultipartUploadsOutput {
     

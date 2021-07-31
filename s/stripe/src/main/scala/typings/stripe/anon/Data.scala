@@ -4,17 +4,15 @@ import typings.node.Buffer
 import typings.stripe.stripeStrings.`applicationSlashoctet-stream`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: String | Buffer = js.native
+  var data: String | Buffer
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String | `applicationSlashoctet-stream` = js.native
+  var `type`: String | `applicationSlashoctet-stream`
 }
 object Data {
   

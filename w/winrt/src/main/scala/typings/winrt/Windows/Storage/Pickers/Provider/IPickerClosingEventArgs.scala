@@ -2,15 +2,13 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPickerClosingEventArgs extends StObject {
   
-  var closingOperation: PickerClosingOperation = js.native
+  var closingOperation: PickerClosingOperation
   
-  var isCanceled: Boolean = js.native
+  var isCanceled: Boolean
 }
 object IPickerClosingEventArgs {
   

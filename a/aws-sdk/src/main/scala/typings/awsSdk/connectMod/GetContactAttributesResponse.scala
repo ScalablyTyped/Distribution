@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContactAttributesResponse extends StObject {
   
   /**
     * Information about the attributes.
     */
-  var Attributes: js.UndefOr[typings.awsSdk.connectMod.Attributes] = js.native
+  var Attributes: js.UndefOr[typings.awsSdk.connectMod.Attributes] = js.undefined
 }
 object GetContactAttributesResponse {
   

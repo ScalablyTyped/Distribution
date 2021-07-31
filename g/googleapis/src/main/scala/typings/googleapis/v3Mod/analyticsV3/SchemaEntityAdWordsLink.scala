@@ -3,50 +3,48 @@ package typings.googleapis.v3Mod.analyticsV3
 import typings.googleapis.anon.WebPropertyRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Analytics Entity Google Ads Link.
   */
-@js.native
 trait SchemaEntityAdWordsLink extends StObject {
   
   /**
     * A list of Google Ads client accounts. These cannot be MCC accounts. This
     * field is required when creating a Google Ads link. It cannot be empty.
     */
-  var adWordsAccounts: js.UndefOr[js.Array[SchemaAdWordsAccount]] = js.native
+  var adWordsAccounts: js.UndefOr[js.Array[SchemaAdWordsAccount]] = js.undefined
   
   /**
     * Web property being linked.
     */
-  var entity: js.UndefOr[WebPropertyRef] = js.native
+  var entity: js.UndefOr[WebPropertyRef] = js.undefined
   
   /**
     * Entity Google Ads link ID
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for entity Google Ads link.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the link. This field is required when creating a Google Ads link.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * IDs of linked Views (Profiles) represented as strings.
     */
-  var profileIds: js.UndefOr[js.Array[String]] = js.native
+  var profileIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * URL link for this Google Analytics - Google Ads link.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaEntityAdWordsLink {
   

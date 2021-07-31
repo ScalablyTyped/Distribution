@@ -2,25 +2,23 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Layer holds metadata specific to a layer of a Docker image.
   */
-@js.native
 trait SchemaLayer extends StObject {
   
   /**
     * The recovered arguments to the Dockerfile directive.
     */
-  var arguments: js.UndefOr[String] = js.native
+  var arguments: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The recovered Dockerfile directive used to construct this
     * layer.
     */
-  var directive: js.UndefOr[String] = js.native
+  var directive: js.UndefOr[String] = js.undefined
 }
 object SchemaLayer {
   

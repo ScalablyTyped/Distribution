@@ -2,51 +2,49 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragDropHandleOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) The class name of the drag handles.
     * Defaults to `highcharts-drag-handle`.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The fill color of the drag handles.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The mouse cursor to use for the drag
     * handles. By default this is intelligently switching between `ew-resize`
     * and `ns-resize` depending on the direction the point is being dragged.
     */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The line color of the drag handles.
     */
-  var lineColor: js.UndefOr[ColorString] = js.native
+  var lineColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The line width for the drag handles.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Function to define the SVG path to use for
     * the drag handles. Takes the point as argument. Should return an SVG path
     * in array format. The SVG path is automatically positioned on the point.
     */
-  var pathFormatter: js.UndefOr[js.Function] = js.native
+  var pathFormatter: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The z index for the drag handles.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object DragDropHandleOptionsObject {
   

@@ -7,21 +7,19 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDefaultLocaleGetInternalSlots extends StObject {
   
-  var availableLocales: Set[String] = js.native
+  var availableLocales: Set[String]
   
-  def getDefaultLocale(): String = js.native
+  def getDefaultLocale(): String
   
-  def getInternalSlots(rtf: RelativeTimeFormat): RelativeTimeFormatInternal = js.native
+  def getInternalSlots(rtf: RelativeTimeFormat): RelativeTimeFormatInternal
   
-  var localeData: Record[String, js.UndefOr[LocaleFieldsData]] = js.native
+  var localeData: Record[String, js.UndefOr[LocaleFieldsData]]
   
-  var relevantExtensionKeys: js.Array[String] = js.native
+  var relevantExtensionKeys: js.Array[String]
 }
 object GetDefaultLocaleGetInternalSlots {
   

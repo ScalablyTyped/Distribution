@@ -9,7 +9,6 @@ import typings.firebaseDatabase.repoMod.Repo
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryMod {
@@ -25,7 +24,6 @@ object queryMod {
       * @return {!Query}
       */
     def endAt(): Query = js.native
-    def endAt(value: js.UndefOr[scala.Nothing], name: String): Query = js.native
     def endAt(value: String): Query = js.native
     def endAt(value: String, name: String): Query = js.native
     def endAt(value: Boolean): Query = js.native
@@ -33,6 +31,7 @@ object queryMod {
     def endAt(value: Double): Query = js.native
     def endAt(value: Double, name: String): Query = js.native
     def endAt(value: Null, name: String): Query = js.native
+    def endAt(value: Unit, name: String): Query = js.native
     
     /**
       * Load the selection of children with exactly the specified value, and, optionally,
@@ -92,13 +91,13 @@ object queryMod {
       * @param {Object=} context
       */
     def off(): Unit = js.native
-    def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
-    def off(eventType: js.UndefOr[scala.Nothing], callback: SnapshotCallback): Unit = js.native
-    def off(eventType: js.UndefOr[scala.Nothing], callback: SnapshotCallback, context: js.Object): Unit = js.native
     def off(eventType: String): Unit = js.native
-    def off(eventType: String, callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
+    def off(eventType: String, callback: Unit, context: js.Object): Unit = js.native
     def off(eventType: String, callback: SnapshotCallback): Unit = js.native
     def off(eventType: String, callback: SnapshotCallback, context: js.Object): Unit = js.native
+    def off(eventType: Unit, callback: Unit, context: js.Object): Unit = js.native
+    def off(eventType: Unit, callback: SnapshotCallback): Unit = js.native
+    def off(eventType: Unit, callback: SnapshotCallback, context: js.Object): Unit = js.native
     
     /**
       * @param {!string} eventType
@@ -111,18 +110,12 @@ object queryMod {
     def on(
       eventType: String,
       callback: SnapshotCallback,
-      cancelCallbackOrContext: js.UndefOr[scala.Nothing],
-      context: js.Object
+      cancelCallbackOrContext: js.Function1[/* a */ Error, js.Any]
     ): SnapshotCallback = js.native
     def on(
       eventType: String,
       callback: SnapshotCallback,
-      cancelCallbackOrContext: js.Function1[/* a */ Error, _]
-    ): SnapshotCallback = js.native
-    def on(
-      eventType: String,
-      callback: SnapshotCallback,
-      cancelCallbackOrContext: js.Function1[/* a */ Error, _],
+      cancelCallbackOrContext: js.Function1[/* a */ Error, js.Any],
       context: js.Object
     ): SnapshotCallback = js.native
     def on(eventType: String, callback: SnapshotCallback, cancelCallbackOrContext: js.Object): SnapshotCallback = js.native
@@ -133,6 +126,7 @@ object queryMod {
       context: js.Object
     ): SnapshotCallback = js.native
     def on(eventType: String, callback: SnapshotCallback, cancelCallbackOrContext: Null, context: js.Object): SnapshotCallback = js.native
+    def on(eventType: String, callback: SnapshotCallback, cancelCallbackOrContext: Unit, context: js.Object): SnapshotCallback = js.native
     
     /**
       * @param {!Object.<string, !function(!DataSnapshot, ?string)>} callbacks
@@ -141,10 +135,10 @@ object queryMod {
       * @protected
       */
     def onChildEvent(callbacks: StringDictionary[SnapshotCallback]): Unit = js.native
-    def onChildEvent(callbacks: StringDictionary[SnapshotCallback], cancelCallback: js.Function1[/* a */ Error, _]): Unit = js.native
+    def onChildEvent(callbacks: StringDictionary[SnapshotCallback], cancelCallback: js.Function1[/* a */ Error, js.Any]): Unit = js.native
     def onChildEvent(
       callbacks: StringDictionary[SnapshotCallback],
-      cancelCallback: js.Function1[/* a */ Error, _],
+      cancelCallback: js.Function1[/* a */ Error, js.Any],
       context: js.Object
     ): Unit = js.native
     def onChildEvent(callbacks: StringDictionary[SnapshotCallback], cancelCallback: Null, context: js.Object): Unit = js.native
@@ -176,43 +170,18 @@ object queryMod {
       * @return {!firebase.Promise}
       */
     def once(eventType: String): js.Promise[DataSnapshot] = js.native
+    def once(eventType: String, userCallback: Unit, failureCallbackOrContext: js.Function1[/* a */ Error, Unit]): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: String,
-      userCallback: js.UndefOr[scala.Nothing],
-      failureCallbackOrContext: js.UndefOr[scala.Nothing],
-      context: js.Object
-    ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: String,
-      userCallback: js.UndefOr[scala.Nothing],
-      failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
-    ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: String,
-      userCallback: js.UndefOr[scala.Nothing],
+      userCallback: Unit,
       failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
-    def once(eventType: String, userCallback: js.UndefOr[scala.Nothing], failureCallbackOrContext: js.Object): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: String,
-      userCallback: js.UndefOr[scala.Nothing],
-      failureCallbackOrContext: js.Object,
-      context: js.Object
-    ): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: String,
-      userCallback: js.UndefOr[scala.Nothing],
-      failureCallbackOrContext: Null,
-      context: js.Object
-    ): js.Promise[DataSnapshot] = js.native
+    def once(eventType: String, userCallback: Unit, failureCallbackOrContext: js.Object): js.Promise[DataSnapshot] = js.native
+    def once(eventType: String, userCallback: Unit, failureCallbackOrContext: js.Object, context: js.Object): js.Promise[DataSnapshot] = js.native
+    def once(eventType: String, userCallback: Unit, failureCallbackOrContext: Null, context: js.Object): js.Promise[DataSnapshot] = js.native
+    def once(eventType: String, userCallback: Unit, failureCallbackOrContext: Unit, context: js.Object): js.Promise[DataSnapshot] = js.native
     def once(eventType: String, userCallback: SnapshotCallback): js.Promise[DataSnapshot] = js.native
-    def once(
-      eventType: String,
-      userCallback: SnapshotCallback,
-      failureCallbackOrContext: js.UndefOr[scala.Nothing],
-      context: js.Object
-    ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: String,
       userCallback: SnapshotCallback,
@@ -235,6 +204,12 @@ object queryMod {
       eventType: String,
       userCallback: SnapshotCallback,
       failureCallbackOrContext: Null,
+      context: js.Object
+    ): js.Promise[DataSnapshot] = js.native
+    def once(
+      eventType: String,
+      userCallback: SnapshotCallback,
+      failureCallbackOrContext: Unit,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     
@@ -290,7 +265,6 @@ object queryMod {
       * @return {!Query}
       */
     def startAt(): Query = js.native
-    def startAt(value: js.UndefOr[scala.Nothing], name: String): Query = js.native
     def startAt(value: String): Query = js.native
     def startAt(value: String, name: String): Query = js.native
     def startAt(value: Boolean): Query = js.native
@@ -298,6 +272,7 @@ object queryMod {
     def startAt(value: Double): Query = js.native
     def startAt(value: Double, name: String): Query = js.native
     def startAt(value: Null, name: String): Query = js.native
+    def startAt(value: Unit, name: String): Query = js.native
     
     def toJSON(): String = js.native
     

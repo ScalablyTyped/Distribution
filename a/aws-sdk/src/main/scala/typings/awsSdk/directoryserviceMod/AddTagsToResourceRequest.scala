@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsToResourceRequest extends StObject {
   
   /**
     * Identifier (ID) for the directory to which to add the tag.
     */
-  var ResourceId: typings.awsSdk.directoryserviceMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.directoryserviceMod.ResourceId
   
   /**
     * The tags to be assigned to the directory.
     */
-  var Tags: typings.awsSdk.directoryserviceMod.Tags = js.native
+  var Tags: typings.awsSdk.directoryserviceMod.Tags
 }
 object AddTagsToResourceRequest {
   

@@ -7,11 +7,12 @@ import typings.browserfs.inMemoryMod.InMemoryFileSystem
 import typings.browserfs.inMemoryMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofInMemory extends Instantiable0[default] {
+trait TypeofInMemory
+  extends StObject
+     with Instantiable0[default] {
   
   /**
     * Creates an InMemoryFileSystem instance.

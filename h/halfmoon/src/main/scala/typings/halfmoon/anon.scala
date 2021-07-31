@@ -2,25 +2,23 @@ package typings.halfmoon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AlertType extends StObject {
     
-    var alertType: js.UndefOr[String] = js.native
+    var alertType: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var fillType: js.UndefOr[String] = js.native
+    var fillType: js.UndefOr[String] = js.undefined
     
-    var hasDismissButton: js.UndefOr[Boolean] = js.native
+    var hasDismissButton: js.UndefOr[Boolean] = js.undefined
     
-    var timeShown: js.UndefOr[Double] = js.native
+    var timeShown: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object AlertType {
     

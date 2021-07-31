@@ -24,7 +24,6 @@ import typings.sharedb.sharedbStrings.reply
 import typings.sharedb.sharedbStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -43,9 +42,9 @@ trait sharedb extends StObject {
   def close(callback: BasicCallback): Unit = js.native
   
   def connect(): Connection = js.native
-  def connect(connection: js.UndefOr[scala.Nothing], req: js.Any): Connection = js.native
   def connect(connection: js.Any): Connection = js.native
   def connect(connection: js.Any, req: js.Any): Connection = js.native
+  def connect(connection: Unit, req: js.Any): Connection = js.native
   
   var db: DB = js.native
   

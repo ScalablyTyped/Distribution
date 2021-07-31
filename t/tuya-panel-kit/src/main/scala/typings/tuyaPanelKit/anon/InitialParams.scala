@@ -7,10 +7,8 @@ import typings.tuyaPanelKit.typesMod.EventMapBase
 import typings.tuyaPanelKit.typesMod.ScreenListeners
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitialParams[RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] extends StObject {
   
   /**
@@ -20,26 +18,26 @@ trait InitialParams[RouteName /* <: /* keyof ParamList */ String */, ScreenOptio
     Partial[
       /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Event listeners for this screen.
     */
   var listeners: js.UndefOr[
     (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenListeners[State, EventMap]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Route name of this screen.
     */
-  var name: RouteName = js.native
+  var name: RouteName
   
   /**
     * Navigator options for this screen.
     */
   var options: js.UndefOr[
     ScreenOptions | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenOptions])
-  ] = js.native
+  ] = js.undefined
 }
 object InitialParams {
   
@@ -50,7 +48,7 @@ object InitialParams {
   }
   
   @scala.inline
-  implicit class InitialParamsMutableBuilder[Self <: InitialParams[_, _, _, _, _], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] (val x: Self with (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) extends AnyVal {
+  implicit class InitialParamsMutableBuilder[Self <: InitialParams[?, ?, ?, ?, ?], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] (val x: Self & (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) extends AnyVal {
     
     @scala.inline
     def setInitialParams(

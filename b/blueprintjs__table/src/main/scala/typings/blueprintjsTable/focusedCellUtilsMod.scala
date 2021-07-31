@@ -5,51 +5,44 @@ import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusedCellUtilsMod {
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "expandFocusedRegion")
+  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", JSImport.Namespace)
   @js.native
-  def expandFocusedRegion(focusedCell: IFocusedCellCoordinates, newRegion: IRegion): IRegion = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "getFocusedOrLastSelectedIndex")
-  @js.native
-  def getFocusedOrLastSelectedIndex(selectedRegions: js.Array[IRegion]): Double = js.native
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "getFocusedOrLastSelectedIndex")
-  @js.native
-  def getFocusedOrLastSelectedIndex(selectedRegions: js.Array[IRegion], focusedCell: IFocusedCellCoordinates): Double = js.native
+  @scala.inline
+  def expandFocusedRegion(focusedCell: IFocusedCellCoordinates, newRegion: IRegion): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("expandFocusedRegion")(focusedCell.asInstanceOf[js.Any], newRegion.asInstanceOf[js.Any])).asInstanceOf[IRegion]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "getInitialFocusedCell")
-  @js.native
+  @scala.inline
+  def getFocusedOrLastSelectedIndex(selectedRegions: js.Array[IRegion]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedOrLastSelectedIndex")(selectedRegions.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getFocusedOrLastSelectedIndex(selectedRegions: js.Array[IRegion], focusedCell: IFocusedCellCoordinates): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedOrLastSelectedIndex")(selectedRegions.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
   def getInitialFocusedCell(
     enableFocusedCell: Boolean,
     focusedCellFromProps: IFocusedCellCoordinates,
     focusedCellFromState: IFocusedCellCoordinates,
     selectedRegions: js.Array[IRegion]
-  ): IFocusedCellCoordinates = js.native
+  ): IFocusedCellCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitialFocusedCell")(enableFocusedCell.asInstanceOf[js.Any], focusedCellFromProps.asInstanceOf[js.Any], focusedCellFromState.asInstanceOf[js.Any], selectedRegions.asInstanceOf[js.Any])).asInstanceOf[IFocusedCellCoordinates]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "isFocusedCellAtRegionBottom")
-  @js.native
-  def isFocusedCellAtRegionBottom(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = js.native
+  @scala.inline
+  def isFocusedCellAtRegionBottom(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFocusedCellAtRegionBottom")(region.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "isFocusedCellAtRegionLeft")
-  @js.native
-  def isFocusedCellAtRegionLeft(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = js.native
+  @scala.inline
+  def isFocusedCellAtRegionLeft(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFocusedCellAtRegionLeft")(region.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "isFocusedCellAtRegionRight")
-  @js.native
-  def isFocusedCellAtRegionRight(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = js.native
+  @scala.inline
+  def isFocusedCellAtRegionRight(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFocusedCellAtRegionRight")(region.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "isFocusedCellAtRegionTop")
-  @js.native
-  def isFocusedCellAtRegionTop(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = js.native
+  @scala.inline
+  def isFocusedCellAtRegionTop(region: IRegion, focusedCell: IFocusedCellCoordinates): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFocusedCellAtRegionTop")(region.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "toFullCoordinates")
-  @js.native
-  def toFullCoordinates(cellCoords: ICellCoordinates): IFocusedCellCoordinates = js.native
-  @JSImport("@blueprintjs/table/lib/esm/common/internal/focusedCellUtils", "toFullCoordinates")
-  @js.native
-  def toFullCoordinates(cellCoords: ICellCoordinates, focusSelectionIndex: Double): IFocusedCellCoordinates = js.native
+  @scala.inline
+  def toFullCoordinates(cellCoords: ICellCoordinates): IFocusedCellCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("toFullCoordinates")(cellCoords.asInstanceOf[js.Any]).asInstanceOf[IFocusedCellCoordinates]
+  @scala.inline
+  def toFullCoordinates(cellCoords: ICellCoordinates, focusSelectionIndex: Double): IFocusedCellCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("toFullCoordinates")(cellCoords.asInstanceOf[js.Any], focusSelectionIndex.asInstanceOf[js.Any])).asInstanceOf[IFocusedCellCoordinates]
 }

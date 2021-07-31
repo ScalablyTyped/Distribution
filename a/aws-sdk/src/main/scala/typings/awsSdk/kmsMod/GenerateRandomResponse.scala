@@ -2,16 +2,14 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateRandomResponse extends StObject {
   
   /**
     * The random byte string. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
-  var Plaintext: js.UndefOr[PlaintextType] = js.native
+  var Plaintext: js.UndefOr[PlaintextType] = js.undefined
 }
 object GenerateRandomResponse {
   

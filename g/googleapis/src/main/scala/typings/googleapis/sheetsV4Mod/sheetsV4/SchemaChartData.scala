@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The data included in a domain or series.
   */
-@js.native
 trait SchemaChartData extends StObject {
   
   /**
     * The source ranges of the data.
     */
-  var sourceRange: js.UndefOr[SchemaChartSourceRange] = js.native
+  var sourceRange: js.UndefOr[SchemaChartSourceRange] = js.undefined
 }
 object SchemaChartData {
   

@@ -44,7 +44,6 @@ import typings.std.Uint8Array
 import typings.walkSync.walkSyncStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -320,12 +319,7 @@ trait TypeoffsNode extends StObject {
   def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
   
   def watch(filename: PathLike): FSWatcher = js.native
-  def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
-  ): FSWatcher = js.native
+  def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, js.Any]): FSWatcher = js.native
   def watch(filename: PathLike, options: String): FSWatcher = js.native
   def watch(
     filename: PathLike,
@@ -336,6 +330,11 @@ trait TypeoffsNode extends StObject {
     filename: PathLike,
     options: Null,
     listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
+  ): FSWatcher = js.native
+  def watch(
+    filename: PathLike,
+    options: Unit,
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
   ): FSWatcher = js.native
   def watch(filename: PathLike, options: BufferEncoding): FSWatcher = js.native
   def watch(
@@ -359,7 +358,7 @@ trait TypeoffsNode extends StObject {
   def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
   def watchFile(
     filename: PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
   ): Unit = js.native
   def watchFile(
@@ -391,54 +390,24 @@ trait TypeoffsNode extends StObject {
   def writeFileSync(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
   
   def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    position: Double
-  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
   def writeSync(fd: Double, string: String): Double = js.native
-  def writeSync(fd: Double, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Double = js.native
   def writeSync(fd: Double, string: String, position: Double): Double = js.native
   def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
   def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = js.native
+  def writeSync(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = js.native
   
   val writev: Typeofwritev = js.native
   

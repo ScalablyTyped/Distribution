@@ -2,16 +2,14 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayPlatform extends StObject {
   
   /**
     * A gateway that runs on AWS IoT Greengrass.
     */
-  var greengrass: Greengrass = js.native
+  var greengrass: Greengrass
 }
 object GatewayPlatform {
   

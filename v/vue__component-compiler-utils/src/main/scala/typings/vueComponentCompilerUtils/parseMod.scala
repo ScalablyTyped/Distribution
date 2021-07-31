@@ -7,29 +7,30 @@ import typings.vueComponentCompilerUtils.typesMod.VueTemplateCompilerParseOption
 import typings.vueComponentCompilerUtils.vueComponentCompilerUtilsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
-  @JSImport("@vue/component-compiler-utils/dist/parse", "parse")
+  @JSImport("@vue/component-compiler-utils/dist/parse", JSImport.Namespace)
   @js.native
-  def parse(options: ParseOptions): SFCDescriptor = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parse(options: ParseOptions): SFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[SFCDescriptor]
+  
   trait ParseOptions extends StObject {
     
-    var compiler: VueTemplateCompiler = js.native
+    var compiler: VueTemplateCompiler
     
-    var compilerParseOptions: js.UndefOr[VueTemplateCompilerParseOptions] = js.native
+    var compilerParseOptions: js.UndefOr[VueTemplateCompilerParseOptions] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var needMap: js.UndefOr[Boolean] = js.native
+    var needMap: js.UndefOr[Boolean] = js.undefined
     
-    var source: String = js.native
+    var source: String
     
-    var sourceRoot: js.UndefOr[String] = js.native
+    var sourceRoot: js.UndefOr[String] = js.undefined
   }
   object ParseOptions {
     
@@ -74,16 +75,17 @@ object parseMod {
     }
   }
   
-  @js.native
-  trait SFCBlock extends SFCCustomBlock {
+  trait SFCBlock
+    extends StObject
+       with SFCCustomBlock {
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var module: js.UndefOr[String | Boolean] = js.native
+    var module: js.UndefOr[String | Boolean] = js.undefined
     
-    var scoped: js.UndefOr[Boolean] = js.native
+    var scoped: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object SFCBlock {
     
@@ -129,20 +131,19 @@ object parseMod {
     }
   }
   
-  @js.native
   trait SFCCustomBlock extends StObject {
     
-    var attrs: StringDictionary[String | `true`] = js.native
+    var attrs: StringDictionary[String | `true`]
     
-    var content: String = js.native
+    var content: String
     
-    var end: Double = js.native
+    var end: Double
     
-    var map: js.UndefOr[RawSourceMap] = js.native
+    var map: js.UndefOr[RawSourceMap] = js.undefined
     
-    var start: Double = js.native
+    var start: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SFCCustomBlock {
     
@@ -185,22 +186,21 @@ object parseMod {
     }
   }
   
-  @js.native
   trait SFCDescriptor extends StObject {
     
-    var customBlocks: js.Array[SFCCustomBlock] = js.native
+    var customBlocks: js.Array[SFCCustomBlock]
     
-    var script: SFCBlock | Null = js.native
+    var script: SFCBlock | Null
     
-    var styles: js.Array[SFCBlock] = js.native
+    var styles: js.Array[SFCBlock]
     
-    var template: SFCBlock | Null = js.native
+    var template: SFCBlock | Null
   }
   object SFCDescriptor {
     
     @scala.inline
     def apply(customBlocks: js.Array[SFCCustomBlock], styles: js.Array[SFCBlock]): SFCDescriptor = {
-      val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], script = null, template = null)
       __obj.asInstanceOf[SFCDescriptor]
     }
     

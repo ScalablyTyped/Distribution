@@ -2,27 +2,25 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisDateTimeLabelFormatsOptions extends StObject {
   
-  var day: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var day: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
   
-  var hour: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var hour: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
   
-  var millisecond: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var millisecond: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
   
-  var minute: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var minute: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
   
-  var month: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var month: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
   
-  var second: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var second: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
   
-  var week: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var week: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
   
-  var year: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.native
+  var year: js.UndefOr[String | AxisDateTimeLabelFormatsOptionsObject] = js.undefined
 }
 object AxisDateTimeLabelFormatsOptions {
   

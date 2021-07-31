@@ -3,22 +3,22 @@ package typings.nodeForge.mod.pki
 import typings.nodeForge.nodeForgeStrings.binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BinaryFingerprintOptions extends ByteBufferFingerprintOptions {
+trait BinaryFingerprintOptions
+  extends StObject
+     with ByteBufferFingerprintOptions {
   
   /**
     * @description if not specified, the function will return `ByteStringBuffer`
     */
-  var encoding: binary = js.native
+  var encoding: binary
 }
 object BinaryFingerprintOptions {
   
   @scala.inline
-  def apply(encoding: binary): BinaryFingerprintOptions = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  def apply(): BinaryFingerprintOptions = {
+    val __obj = js.Dynamic.literal(encoding = "binary")
     __obj.asInstanceOf[BinaryFingerprintOptions]
   }
   

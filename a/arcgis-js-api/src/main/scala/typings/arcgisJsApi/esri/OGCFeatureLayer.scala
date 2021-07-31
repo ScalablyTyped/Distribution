@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OGCFeatureLayer
-  extends Layer
+  extends StObject
+     with Layer
      with ScaleRangeLayer
      with RefreshableLayer
      with BlendLayer {

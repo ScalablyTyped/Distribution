@@ -8,7 +8,6 @@ import typings.winrt.Windows.Storage.IStorageItem
 import typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,7 +19,7 @@ trait IDataPackageView extends StObject {
   
   def getBitmapAsync(): IAsyncOperation[RandomAccessStreamReference] = js.native
   
-  def getDataAsync(formatId: String): IAsyncOperation[_] = js.native
+  def getDataAsync(formatId: String): IAsyncOperation[js.Any] = js.native
   
   def getHtmlFormatAsync(): IAsyncOperation[String] = js.native
   

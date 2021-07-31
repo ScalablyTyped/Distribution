@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GeometryVisualizer")
@@ -13,7 +12,7 @@ class GeometryVisualizer protected () extends Visualizer {
   def this(
     scene: Scene,
     entityCollection: EntityCollection,
-    primitives: js.UndefOr[scala.Nothing],
+    primitives: Unit,
     groundPrimitives: PrimitiveCollection
   ) = this()
   def this(

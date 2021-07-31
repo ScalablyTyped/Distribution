@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBundleTasksResult extends StObject {
   
   /**
     * Information about the bundle tasks.
     */
-  var BundleTasks: js.UndefOr[BundleTaskList] = js.native
+  var BundleTasks: js.UndefOr[BundleTaskList] = js.undefined
 }
 object DescribeBundleTasksResult {
   

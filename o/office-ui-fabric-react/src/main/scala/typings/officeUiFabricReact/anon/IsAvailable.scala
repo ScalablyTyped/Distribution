@@ -2,23 +2,21 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsAvailable extends StObject {
   
-  var isAvailable: Boolean = js.native
+  var isAvailable: Boolean
   
-  var isAway: Boolean = js.native
+  var isAway: Boolean
   
-  var isBlocked: Boolean = js.native
+  var isBlocked: Boolean
   
-  var isBusy: Boolean = js.native
+  var isBusy: Boolean
   
-  var isDoNotDisturb: Boolean = js.native
+  var isDoNotDisturb: Boolean
   
-  var isOffline: Boolean = js.native
+  var isOffline: Boolean
 }
 object IsAvailable {
   

@@ -5,36 +5,22 @@ import typings.rrule.typesMod.ByWeekday
 import typings.rrule.weekdayMod.Weekday
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object totextMod {
   
   @JSImport("rrule/dist/esm/src/nlp/totext", JSImport.Default)
   @js.native
-  class default protected () extends ToText {
+  class default protected ()
+    extends StObject
+       with ToText {
     def this(rrule: typings.rrule.mod.default) = this()
     def this(rrule: typings.rrule.mod.default, gettext: GetText) = this()
-    def this(rrule: typings.rrule.mod.default, gettext: js.UndefOr[scala.Nothing], language: Language) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: Unit, language: Language) = this()
     def this(rrule: typings.rrule.mod.default, gettext: GetText, language: Language) = this()
-    def this(
-      rrule: typings.rrule.mod.default,
-      gettext: js.UndefOr[scala.Nothing],
-      language: js.UndefOr[scala.Nothing],
-      dateFormatter: DateFormatter
-    ) = this()
-    def this(
-      rrule: typings.rrule.mod.default,
-      gettext: js.UndefOr[scala.Nothing],
-      language: Language,
-      dateFormatter: DateFormatter
-    ) = this()
-    def this(
-      rrule: typings.rrule.mod.default,
-      gettext: GetText,
-      language: js.UndefOr[scala.Nothing],
-      dateFormatter: DateFormatter
-    ) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: Unit, language: Unit, dateFormatter: DateFormatter) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: Unit, language: Language, dateFormatter: DateFormatter) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: GetText, language: Unit, dateFormatter: DateFormatter) = this()
     def this(
       rrule: typings.rrule.mod.default,
       gettext: GetText,
@@ -60,9 +46,8 @@ object totextMod {
       * @param {RRule} rrule
       * @return {Boolean}
       */
-    @JSImport("rrule/dist/esm/src/nlp/totext", "default.isFullyConvertible")
-    @js.native
-    def isFullyConvertible(rrule: typings.rrule.mod.default): Boolean = js.native
+    @scala.inline
+    def isFullyConvertible(rrule: typings.rrule.mod.default): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullyConvertible")(rrule.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   type DateFormatter = js.Function3[/* year */ Double, /* month */ String, /* day */ Double, String]
@@ -107,31 +92,21 @@ object totextMod {
     var language: js.Any = js.native
     
     def list(arr: js.Array[ByWeekday]): String = js.native
-    def list(
-      arr: js.Array[ByWeekday],
-      callback: js.UndefOr[scala.Nothing],
-      finalDelim: js.UndefOr[scala.Nothing],
-      delim: String
-    ): String = js.native
-    def list(arr: js.Array[ByWeekday], callback: js.UndefOr[scala.Nothing], finalDelim: String): String = js.native
-    def list(arr: js.Array[ByWeekday], callback: js.UndefOr[scala.Nothing], finalDelim: String, delim: String): String = js.native
+    def list(arr: js.Array[ByWeekday], callback: Unit, finalDelim: String): String = js.native
+    def list(arr: js.Array[ByWeekday], callback: Unit, finalDelim: String, delim: String): String = js.native
+    def list(arr: js.Array[ByWeekday], callback: Unit, finalDelim: Unit, delim: String): String = js.native
     def list(arr: js.Array[ByWeekday], callback: GetText): String = js.native
-    def list(arr: js.Array[ByWeekday], callback: GetText, finalDelim: js.UndefOr[scala.Nothing], delim: String): String = js.native
     def list(arr: js.Array[ByWeekday], callback: GetText, finalDelim: String): String = js.native
     def list(arr: js.Array[ByWeekday], callback: GetText, finalDelim: String, delim: String): String = js.native
+    def list(arr: js.Array[ByWeekday], callback: GetText, finalDelim: Unit, delim: String): String = js.native
     def list(arr: ByWeekday): String = js.native
-    def list(
-      arr: ByWeekday,
-      callback: js.UndefOr[scala.Nothing],
-      finalDelim: js.UndefOr[scala.Nothing],
-      delim: String
-    ): String = js.native
-    def list(arr: ByWeekday, callback: js.UndefOr[scala.Nothing], finalDelim: String): String = js.native
-    def list(arr: ByWeekday, callback: js.UndefOr[scala.Nothing], finalDelim: String, delim: String): String = js.native
+    def list(arr: ByWeekday, callback: Unit, finalDelim: String): String = js.native
+    def list(arr: ByWeekday, callback: Unit, finalDelim: String, delim: String): String = js.native
+    def list(arr: ByWeekday, callback: Unit, finalDelim: Unit, delim: String): String = js.native
     def list(arr: ByWeekday, callback: GetText): String = js.native
-    def list(arr: ByWeekday, callback: GetText, finalDelim: js.UndefOr[scala.Nothing], delim: String): String = js.native
     def list(arr: ByWeekday, callback: GetText, finalDelim: String): String = js.native
     def list(arr: ByWeekday, callback: GetText, finalDelim: String, delim: String): String = js.native
+    def list(arr: ByWeekday, callback: GetText, finalDelim: Unit, delim: String): String = js.native
     
     def monthtext(m: Double): String = js.native
     

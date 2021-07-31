@@ -6,7 +6,6 @@ import typings.activexWia.activexWiaNumbers.`2`
 import typings.activexWia.activexWiaNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The WiaImageIntent enumeration helps specify what type of data the image is intended to represent. */

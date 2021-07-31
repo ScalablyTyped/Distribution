@@ -10,9 +10,9 @@ TypeScript typings for Calendar API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.calendar |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 26 |
 | # dependents       | 1 |
-| # downloads        | 448 |
+| # downloads        | 7921 |
 | # stars            | 0 |
 
 ## Links

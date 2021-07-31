@@ -2,15 +2,13 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interval extends StObject {
   
-  var interval: js.UndefOr[js.Any] = js.native
+  var interval: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
 }
 object Interval {
   

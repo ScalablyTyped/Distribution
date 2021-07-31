@@ -2,28 +2,27 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestPaymentOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=* */
   @JSName("package")
-  var _package: String = js.native
+  var _package: String
   
   /** 随机字符串，长度为32个字符以下。 */
-  var nonceStr: String = js.native
+  var nonceStr: String
   
   /** 签名,具体签名方案参见微信公众号支付帮助文档; */
-  var paySign: String = js.native
+  var paySign: String
   
   /** 签名算法，默认为MD5，支持HMAC-SHA256和MD5 */
-  var signType: PaymentSignType = js.native
+  var signType: PaymentSignType
   
   /** 时间戳从1970年1月1日00:00:00至今的秒数,即当前的时间 */
-  var timeStamp: String | Double = js.native
+  var timeStamp: String | Double
 }
 object RequestPaymentOptions {
   

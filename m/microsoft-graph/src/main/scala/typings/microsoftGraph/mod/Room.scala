@@ -2,49 +2,49 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Room extends Place {
+trait Room
+  extends StObject
+     with Place {
   
   // Specifies the name of the audio device in the room.
-  var audioDeviceName: js.UndefOr[NullableOption[String]] = js.native
+  var audioDeviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Type of room. Possible values are standard, and reserved.
-  var bookingType: js.UndefOr[NullableOption[BookingType]] = js.native
+  var bookingType: js.UndefOr[NullableOption[BookingType]] = js.undefined
   
   // Specifies the building name or building number that the room is in.
-  var building: js.UndefOr[NullableOption[String]] = js.native
+  var building: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies the capacity of the room.
-  var capacity: js.UndefOr[NullableOption[Double]] = js.native
+  var capacity: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Specifies the name of the display device in the room.
-  var displayDeviceName: js.UndefOr[NullableOption[String]] = js.native
+  var displayDeviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Email address of the room.
-  var emailAddress: js.UndefOr[NullableOption[String]] = js.native
+  var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies a descriptive label for the floor, for example, P.
-  var floorLabel: js.UndefOr[NullableOption[String]] = js.native
+  var floorLabel: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies the floor number that the room is on.
-  var floorNumber: js.UndefOr[NullableOption[Double]] = js.native
+  var floorNumber: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  var isWheelChairAccessible: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isWheelChairAccessible: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Specifies a descriptive label for the room, for example, a number or name.
-  var label: js.UndefOr[NullableOption[String]] = js.native
+  var label: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies a nickname for the room, for example, 'conf room'.
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
   // Specifies additional features of the room, for example, details like the type of view or furniture type.
-  var tags: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var tags: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Specifies the name of the video device in the room.
-  var videoDeviceName: js.UndefOr[NullableOption[String]] = js.native
+  var videoDeviceName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Room {
   

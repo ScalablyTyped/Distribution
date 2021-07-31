@@ -2,13 +2,13 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaTrackConstraints extends MediaTrackConstraintSet {
+trait MediaTrackConstraints
+  extends StObject
+     with MediaTrackConstraintSet {
   
-  var advanced: js.UndefOr[js.Array[MediaTrackConstraintSet]] = js.native
+  var advanced: js.UndefOr[js.Array[MediaTrackConstraintSet]] = js.undefined
 }
 object MediaTrackConstraints {
   

@@ -3,15 +3,13 @@ package typings.instagramPrivateApi.anon
 import typings.instagramPrivateApi.instagramPrivateApiStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Countrycode extends StObject {
   
-  var country_code: String = js.native
+  var country_code: String
   
-  var source: js.Array[String | default] = js.native
+  var source: js.Array[String | default]
 }
 object Countrycode {
   

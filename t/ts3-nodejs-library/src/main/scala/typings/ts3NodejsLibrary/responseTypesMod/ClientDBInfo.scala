@@ -3,39 +3,39 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientDBInfo extends ResponseEntry {
+trait ClientDBInfo
+  extends StObject
+     with ResponseEntry {
   
-  var clientBase64HashClientUID: String = js.native
+  var clientBase64HashClientUID: String
   
-  var clientCreated: Double = js.native
+  var clientCreated: Double
   
-  var clientDatabaseId: String = js.native
+  var clientDatabaseId: String
   
-  var clientDescription: String = js.native
+  var clientDescription: String
   
-  var clientFlagAvatar: String = js.native
+  var clientFlagAvatar: String
   
-  var clientLastconnected: Double = js.native
+  var clientLastconnected: Double
   
-  var clientLastip: String = js.native
+  var clientLastip: String
   
-  var clientMonthBytesDownloaded: Double = js.native
+  var clientMonthBytesDownloaded: Double
   
-  var clientMonthBytesUploaded: Double = js.native
+  var clientMonthBytesUploaded: Double
   
-  var clientNickname: String = js.native
+  var clientNickname: String
   
-  var clientTotalBytesDownloaded: Double = js.native
+  var clientTotalBytesDownloaded: Double
   
-  var clientTotalBytesUploaded: Double = js.native
+  var clientTotalBytesUploaded: Double
   
-  var clientTotalconnections: Double = js.native
+  var clientTotalconnections: Double
   
-  var clientUniqueIdentifier: String = js.native
+  var clientUniqueIdentifier: String
 }
 object ClientDBInfo {
   

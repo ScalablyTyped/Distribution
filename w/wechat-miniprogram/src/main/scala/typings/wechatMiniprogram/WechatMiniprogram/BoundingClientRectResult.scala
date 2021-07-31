@@ -2,30 +2,28 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 目标边界 */
-@js.native
 trait BoundingClientRectResult extends StObject {
   
   /** 下边界 */
-  var bottom: Double = js.native
+  var bottom: Double
   
   /** 高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 左边界 */
-  var left: Double = js.native
+  var left: Double
   
   /** 右边界 */
-  var right: Double = js.native
+  var right: Double
   
   /** 上边界 */
-  var top: Double = js.native
+  var top: Double
   
   /** 宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object BoundingClientRectResult {
   

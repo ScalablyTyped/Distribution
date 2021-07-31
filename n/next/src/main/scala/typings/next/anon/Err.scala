@@ -2,13 +2,11 @@ package typings.next.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Err extends StObject {
   
-  var err: js.Any = js.native
+  var err: js.Any
 }
 object Err {
   

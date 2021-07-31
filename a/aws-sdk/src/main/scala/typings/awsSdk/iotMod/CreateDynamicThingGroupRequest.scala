@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDynamicThingGroupRequest extends StObject {
   
   /**
     * The dynamic thing group index name.  Currently one index is supported: "AWS_Things". 
     */
-  var indexName: js.UndefOr[IndexName] = js.native
+  var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The dynamic thing group search query string. See Query Syntax for information about query string syntax.
     */
-  var queryString: QueryString = js.native
+  var queryString: QueryString
   
   /**
     * The dynamic thing group query version.  Currently one query version is supported: "2017-09-30". If not specified, the query version defaults to this value. 
     */
-  var queryVersion: js.UndefOr[QueryVersion] = js.native
+  var queryVersion: js.UndefOr[QueryVersion] = js.undefined
   
   /**
     * Metadata which can be used to manage the dynamic thing group.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The dynamic thing group name to create.
     */
-  var thingGroupName: ThingGroupName = js.native
+  var thingGroupName: ThingGroupName
   
   /**
     * The dynamic thing group properties.
     */
-  var thingGroupProperties: js.UndefOr[ThingGroupProperties] = js.native
+  var thingGroupProperties: js.UndefOr[ThingGroupProperties] = js.undefined
 }
 object CreateDynamicThingGroupRequest {
   

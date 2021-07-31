@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPlan extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var appStoreProducts: js.UndefOr[js.Array[/* Contains information about an APP store product. */ AppStoreProduct]] = js.native
+  var appStoreProducts: js.UndefOr[js.Array[/* Contains information about an APP store product. */ AppStoreProduct]] = js.undefined
   
   /**
     * Contains the `currencyCode` and `currencySymbol` for the alternate currency values for `envelopeFee`, `fixedFee`, and `seatFee` that are configured for this plan feature set.
     */
-  var currencyPlanPrices: js.UndefOr[js.Array[CurrencyPlanPrice]] = js.native
+  var currencyPlanPrices: js.UndefOr[js.Array[CurrencyPlanPrice]] = js.undefined
   
   /**
     * When set to **true**, customer support is provided as part of the account plan.
     */
-  var enableSupport: js.UndefOr[String] = js.native
+  var enableSupport: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seats (users) included in the plan.
     */
-  var includedSeats: js.UndefOr[String] = js.native
+  var includedSeats: js.UndefOr[String] = js.undefined
   
   /**
     * Any other percentage discount for the plan.
     *
     * Example: `"0.00"`
     */
-  var otherDiscountPercent: js.UndefOr[String] = js.native
+  var otherDiscountPercent: js.UndefOr[String] = js.undefined
   
   /**
     * The payment cycle associated with the plan. The possible values are:
@@ -41,7 +39,7 @@ trait BillingPlan extends StObject {
     * - `Monthly`
     * - `Annually`
     */
-  var paymentCycle: js.UndefOr[String] = js.native
+  var paymentCycle: js.UndefOr[String] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -56,14 +54,14 @@ trait BillingPlan extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The per-seat price associated with the plan.
     *
     * Example: `"456.0000"`
     */
-  var perSeatPrice: js.UndefOr[String] = js.native
+  var perSeatPrice: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the type of plan. Examples include:
@@ -73,7 +71,7 @@ trait BillingPlan extends StObject {
     * - `enterprise`
     * - `free`
     */
-  var planClassification: js.UndefOr[String] = js.native
+  var planClassification: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
@@ -83,35 +81,35 @@ trait BillingPlan extends StObject {
       /* This object provides details about a feature set, or add-on product that is associated with an account.
     It is reserved for DocuSign internal use only. */ FeatureSet
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * DocuSign's id for the account plan.
     */
-  var planId: js.UndefOr[String] = js.native
+  var planId: js.UndefOr[String] = js.undefined
   
-  var planName: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.undefined
   
   /**
     * A complex type that returns information about any seat discounts. It contains the information `BeginSeatCount`, `EndSeatCount` and `SeatDiscountPercent`.
     */
   var seatDiscounts: js.UndefOr[
     js.Array[/* This object contains information about a seat discount. */ SeatDiscount]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The support incident fee charged for each support incident.
     *
     * Example: `"$0.00"`
     */
-  var supportIncidentFee: js.UndefOr[String] = js.native
+  var supportIncidentFee: js.UndefOr[String] = js.undefined
   
   /**
     * The support plan fee charged for this plan.
     *
     * Example: `"$0.00"`
     */
-  var supportPlanFee: js.UndefOr[String] = js.native
+  var supportPlanFee: js.UndefOr[String] = js.undefined
 }
 object BillingPlan {
   

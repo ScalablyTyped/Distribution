@@ -223,388 +223,387 @@ import typings.wordpressComponents.autocompleteMod.Autocomplete.Completer
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object richTextMod {
   
   object default {
     
-    @JSImport("@wordpress/block-editor/components/rich-text", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(
       props: Props[
           a | abbr | address | applet | area | article | aside | audio | b | base | basefont | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | dir | div | dl | dt | em | embed | fieldset | figcaption | figure | font | footer | form | frame | frameset | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | marquee | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | param | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
         ]
-    ): Element = js.native
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("@wordpress/block-editor/components/rich-text", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Should be used in the `save` function of your block to correctly save rich text content.
       */
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_a(props: ContentProps[a]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_abbr(props: ContentProps[abbr]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_address(props: ContentProps[address]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_applet(props: ContentProps[applet]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_area(props: ContentProps[area]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_article(props: ContentProps[article]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_aside(props: ContentProps[aside]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_audio(props: ContentProps[audio]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_b(props: ContentProps[b]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_base(props: ContentProps[base]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_basefont(props: ContentProps[basefont]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_bdi(props: ContentProps[bdi]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_bdo(props: ContentProps[bdo]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_blockquote(props: ContentProps[blockquote]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_body(props: ContentProps[body]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_br(props: ContentProps[br]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_button(props: ContentProps[button]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_canvas(props: ContentProps[canvas]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_caption(props: ContentProps[caption]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_cite(props: ContentProps[cite]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_code(props: ContentProps[code]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_col(props: ContentProps[col]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_colgroup(props: ContentProps[colgroup]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_data(props: ContentProps[data]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_datalist(props: ContentProps[datalist]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_dd(props: ContentProps[dd]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_del(props: ContentProps[del]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_details(props: ContentProps[details]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_dfn(props: ContentProps[dfn]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_dialog(props: ContentProps[dialog]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_dir(props: ContentProps[dir]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_div(props: ContentProps[div]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_dl(props: ContentProps[dl]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_dt(props: ContentProps[dt]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_em(props: ContentProps[em]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_embed(props: ContentProps[embed]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_fieldset(props: ContentProps[fieldset]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_figcaption(props: ContentProps[figcaption]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_figure(props: ContentProps[figure]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_font(props: ContentProps[font]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_footer(props: ContentProps[footer]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_form(props: ContentProps[form]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_frame(props: ContentProps[frame]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_frameset(props: ContentProps[frameset]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_h1(props: ContentProps[h1]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_h2(props: ContentProps[h2]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_h3(props: ContentProps[h3]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_h4(props: ContentProps[h4]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_h5(props: ContentProps[h5]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_h6(props: ContentProps[h6]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_head(props: ContentProps[head]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_header(props: ContentProps[header]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_hgroup(props: ContentProps[hgroup]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_hr(props: ContentProps[hr]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_html(props: ContentProps[html]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_i(props: ContentProps[i]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_iframe(props: ContentProps[iframe]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_img(props: ContentProps[img]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_input(props: ContentProps[input]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_ins(props: ContentProps[ins]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_kbd(props: ContentProps[kbd]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_label(props: ContentProps[label]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_legend(props: ContentProps[legend]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_li(props: ContentProps[li]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_link(props: ContentProps[link]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_main(props: ContentProps[main]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_map(props: ContentProps[map]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_mark(props: ContentProps[mark]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_marquee(props: ContentProps[marquee]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_menu(props: ContentProps[menu]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_meta(props: ContentProps[meta]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_meter(props: ContentProps[meter]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_nav(props: ContentProps[nav]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_noscript(props: ContentProps[noscript]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_object(props: ContentProps[`object`]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_ol(props: ContentProps[ol]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_optgroup(props: ContentProps[optgroup]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_option(props: ContentProps[option]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_output(props: ContentProps[output]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_p(props: ContentProps[p]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_param(props: ContentProps[param]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_picture(props: ContentProps[picture]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_pre(props: ContentProps[pre]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_progress(props: ContentProps[progress]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_q(props: ContentProps[q]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_rp(props: ContentProps[rp]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_rt(props: ContentProps[rt]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_ruby(props: ContentProps[ruby]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_s(props: ContentProps[s]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_samp(props: ContentProps[samp]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_script(props: ContentProps[script]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_section(props: ContentProps[section]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_select(props: ContentProps[select]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_slot(props: ContentProps[slot]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_small(props: ContentProps[small]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_source(props: ContentProps[source]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_span(props: ContentProps[span]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_strong(props: ContentProps[strong]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_style(props: ContentProps[style]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_sub(props: ContentProps[sub]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_summary(props: ContentProps[summary]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_sup(props: ContentProps[sup]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_table(props: ContentProps[table]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_tbody(props: ContentProps[tbody]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_td(props: ContentProps[td]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_template(props: ContentProps[template]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_textarea(props: ContentProps[textarea]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_tfoot(props: ContentProps[tfoot]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_th(props: ContentProps[th]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_thead(props: ContentProps[thead]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_time(props: ContentProps[time]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_title(props: ContentProps[title]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_tr(props: ContentProps[tr]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_track(props: ContentProps[track]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_u(props: ContentProps[u]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_ul(props: ContentProps[ul]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_var(props: ContentProps[`var`]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_video(props: ContentProps[video]): Element = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.Content")
-    @js.native
-    def Content_wbr(props: ContentProps[wbr]): Element = js.native
+    @scala.inline
+    def Content_a(props: ContentProps[a]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.isEmpty")
-    @js.native
-    def isEmpty(value: String): Boolean = js.native
-    @JSImport("@wordpress/block-editor/components/rich-text", "default.isEmpty")
-    @js.native
-    def isEmpty(value: js.Array[String]): Boolean = js.native
+    @scala.inline
+    def Content_abbr(props: ContentProps[abbr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_address(props: ContentProps[address]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_applet(props: ContentProps[applet]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_area(props: ContentProps[area]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_article(props: ContentProps[article]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_aside(props: ContentProps[aside]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_audio(props: ContentProps[audio]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_b(props: ContentProps[b]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_base(props: ContentProps[base]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_basefont(props: ContentProps[basefont]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_bdi(props: ContentProps[bdi]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_bdo(props: ContentProps[bdo]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_blockquote(props: ContentProps[blockquote]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_body(props: ContentProps[body]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_br(props: ContentProps[br]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_button(props: ContentProps[button]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_canvas(props: ContentProps[canvas]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_caption(props: ContentProps[caption]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_cite(props: ContentProps[cite]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_code(props: ContentProps[code]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_col(props: ContentProps[col]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_colgroup(props: ContentProps[colgroup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_data(props: ContentProps[data]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_datalist(props: ContentProps[datalist]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dd(props: ContentProps[dd]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_del(props: ContentProps[del]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_details(props: ContentProps[details]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dfn(props: ContentProps[dfn]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dialog(props: ContentProps[dialog]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dir(props: ContentProps[dir]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_div(props: ContentProps[div]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dl(props: ContentProps[dl]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dt(props: ContentProps[dt]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_em(props: ContentProps[em]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_embed(props: ContentProps[embed]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_fieldset(props: ContentProps[fieldset]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_figcaption(props: ContentProps[figcaption]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_figure(props: ContentProps[figure]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_font(props: ContentProps[font]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_footer(props: ContentProps[footer]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_form(props: ContentProps[form]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_frame(props: ContentProps[frame]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_frameset(props: ContentProps[frameset]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h1(props: ContentProps[h1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h2(props: ContentProps[h2]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h3(props: ContentProps[h3]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h4(props: ContentProps[h4]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h5(props: ContentProps[h5]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h6(props: ContentProps[h6]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_head(props: ContentProps[head]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_header(props: ContentProps[header]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_hgroup(props: ContentProps[hgroup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_hr(props: ContentProps[hr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_html(props: ContentProps[html]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_i(props: ContentProps[i]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_iframe(props: ContentProps[iframe]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_img(props: ContentProps[img]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_input(props: ContentProps[input]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ins(props: ContentProps[ins]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_kbd(props: ContentProps[kbd]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_label(props: ContentProps[label]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_legend(props: ContentProps[legend]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_li(props: ContentProps[li]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_link(props: ContentProps[link]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_main(props: ContentProps[main]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_map(props: ContentProps[map]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_mark(props: ContentProps[mark]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_marquee(props: ContentProps[marquee]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_menu(props: ContentProps[menu]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_meta(props: ContentProps[meta]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_meter(props: ContentProps[meter]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_nav(props: ContentProps[nav]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_noscript(props: ContentProps[noscript]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_object(props: ContentProps[`object`]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ol(props: ContentProps[ol]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_optgroup(props: ContentProps[optgroup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_option(props: ContentProps[option]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_output(props: ContentProps[output]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_p(props: ContentProps[p]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_param(props: ContentProps[param]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_picture(props: ContentProps[picture]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_pre(props: ContentProps[pre]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_progress(props: ContentProps[progress]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_q(props: ContentProps[q]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_rp(props: ContentProps[rp]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_rt(props: ContentProps[rt]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ruby(props: ContentProps[ruby]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_s(props: ContentProps[s]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_samp(props: ContentProps[samp]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_script(props: ContentProps[script]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_section(props: ContentProps[section]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_select(props: ContentProps[select]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_slot(props: ContentProps[slot]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_small(props: ContentProps[small]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_source(props: ContentProps[source]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_span(props: ContentProps[span]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_strong(props: ContentProps[strong]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_style(props: ContentProps[style]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_sub(props: ContentProps[sub]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_summary(props: ContentProps[summary]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_sup(props: ContentProps[sup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_table(props: ContentProps[table]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_tbody(props: ContentProps[tbody]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_td(props: ContentProps[td]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_template(props: ContentProps[template]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_textarea(props: ContentProps[textarea]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_tfoot(props: ContentProps[tfoot]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_th(props: ContentProps[th]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_thead(props: ContentProps[thead]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_time(props: ContentProps[time]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_title(props: ContentProps[title]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_tr(props: ContentProps[tr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_track(props: ContentProps[track]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_u(props: ContentProps[u]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ul(props: ContentProps[ul]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_var(props: ContentProps[`var`]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_video(props: ContentProps[video]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_wbr(props: ContentProps[wbr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def isEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isEmpty(value: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object RichTextShortcut extends Shortcut {
@@ -613,14 +612,13 @@ object richTextMod {
     @js.native
     val ^ : ComponentType[typings.wordpressBlockEditor.richTextMod.RichTextShortcut.Props] = js.native
     
-    @js.native
     trait Props extends StObject {
       
-      var character: String = js.native
+      var character: String
       
-      def onUse(): Unit = js.native
+      def onUse(): Unit
       
-      var `type`: /* keyof @wordpress/block-editor.anon.TypeofrawShortcut */ primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt = js.native
+      var `type`: /* keyof @wordpress/block-editor.anon.TypeofrawShortcut */ primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt
     }
     object Props {
       
@@ -663,17 +661,17 @@ object richTextMod {
     @js.native
     val ^ : ComponentType[typings.wordpressBlockEditor.richTextMod.RichTextToolbarButton.Props] = js.native
     
-    @js.native
     trait Props
-      extends typings.wordpressComponents.toolbarButtonMod.ToolbarButton.Props {
+      extends StObject
+         with typings.wordpressComponents.toolbarButtonMod.ToolbarButton.Props {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var shortcutCharacter: js.UndefOr[String] = js.native
+      var shortcutCharacter: js.UndefOr[String] = js.undefined
       
       var shortcutType: js.UndefOr[
             primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt
-          ] = js.native
+          ] = js.undefined
     }
     object Props {
       
@@ -716,18 +714,19 @@ object richTextMod {
   
   object RichText {
     
-    @js.native
-    trait ContentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */] extends HTMLProps[T] {
+    trait ContentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */]
+      extends StObject
+         with HTMLProps[T] {
       
       @JSName("children")
-      var children_ContentProps: js.UndefOr[scala.Nothing] = js.native
+      var children_ContentProps: js.UndefOr[scala.Nothing] = js.undefined
       
-      var multiline: js.UndefOr[Boolean | p | li] = js.native
+      var multiline: js.UndefOr[Boolean | p | li] = js.undefined
       
-      var tagName: js.UndefOr[T] = js.native
+      var tagName: js.UndefOr[T] = js.undefined
       
       @JSName("value")
-      var value_ContentProps: String = js.native
+      var value_ContentProps: String
     }
     object ContentProps {
       
@@ -738,7 +737,7 @@ object richTextMod {
       }
       
       @scala.inline
-      implicit class ContentPropsMutableBuilder[Self <: ContentProps[_], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */] (val x: Self with ContentProps[T]) extends AnyVal {
+      implicit class ContentPropsMutableBuilder[Self <: ContentProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */] (val x: Self & ContentProps[T]) extends AnyVal {
         
         @scala.inline
         def setMultiline(value: Boolean | p | li): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
@@ -758,640 +757,641 @@ object richTextMod {
     }
     
     /* Inlined parent std.Omit<react.react.HTMLProps<T>, 'onChange'> */
-    @js.native
     trait Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */] extends StObject {
       
-      var default: js.UndefOr[Boolean] = js.native
+      var default: js.UndefOr[Boolean] = js.undefined
       
-      var about: js.UndefOr[String] = js.native
+      var about: js.UndefOr[String] = js.undefined
       
-      var accept: js.UndefOr[String] = js.native
+      var accept: js.UndefOr[String] = js.undefined
       
-      var acceptCharset: js.UndefOr[String] = js.native
+      var acceptCharset: js.UndefOr[String] = js.undefined
       
-      var accessKey: js.UndefOr[String] = js.native
+      var accessKey: js.UndefOr[String] = js.undefined
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var allowFullScreen: js.UndefOr[Boolean] = js.native
+      var allowFullScreen: js.UndefOr[Boolean] = js.undefined
       
-      var allowTransparency: js.UndefOr[Boolean] = js.native
+      var allowTransparency: js.UndefOr[Boolean] = js.undefined
       
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
-      var `aria-activedescendant`: js.UndefOr[String] = js.native
+      var `aria-activedescendant`: js.UndefOr[String] = js.undefined
       
-      var `aria-atomic`: js.UndefOr[Boolean] = js.native
+      var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+      var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
       
-      var `aria-busy`: js.UndefOr[Boolean] = js.native
+      var `aria-busy`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+      var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
       
-      var `aria-colcount`: js.UndefOr[Double] = js.native
+      var `aria-colcount`: js.UndefOr[Double] = js.undefined
       
-      var `aria-colindex`: js.UndefOr[Double] = js.native
+      var `aria-colindex`: js.UndefOr[Double] = js.undefined
       
-      var `aria-colspan`: js.UndefOr[Double] = js.native
+      var `aria-colspan`: js.UndefOr[Double] = js.undefined
       
-      var `aria-controls`: js.UndefOr[String] = js.native
+      var `aria-controls`: js.UndefOr[String] = js.undefined
       
-      var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+      var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
       
-      var `aria-describedby`: js.UndefOr[String] = js.native
+      var `aria-describedby`: js.UndefOr[String] = js.undefined
       
-      var `aria-details`: js.UndefOr[String] = js.native
+      var `aria-details`: js.UndefOr[String] = js.undefined
       
-      var `aria-disabled`: js.UndefOr[Boolean] = js.native
+      var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+      var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
       
-      var `aria-errormessage`: js.UndefOr[String] = js.native
+      var `aria-errormessage`: js.UndefOr[String] = js.undefined
       
-      var `aria-expanded`: js.UndefOr[Boolean] = js.native
+      var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-flowto`: js.UndefOr[String] = js.native
+      var `aria-flowto`: js.UndefOr[String] = js.undefined
       
-      var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+      var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+      var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
       
-      var `aria-hidden`: js.UndefOr[Boolean] = js.native
+      var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+      var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
       
-      var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+      var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
       
-      var `aria-label`: js.UndefOr[String] = js.native
+      var `aria-label`: js.UndefOr[String] = js.undefined
       
-      var `aria-labelledby`: js.UndefOr[String] = js.native
+      var `aria-labelledby`: js.UndefOr[String] = js.undefined
       
-      var `aria-level`: js.UndefOr[Double] = js.native
+      var `aria-level`: js.UndefOr[Double] = js.undefined
       
-      var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+      var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
       
-      var `aria-modal`: js.UndefOr[Boolean] = js.native
+      var `aria-modal`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-multiline`: js.UndefOr[Boolean] = js.native
+      var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+      var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+      var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
       
-      var `aria-owns`: js.UndefOr[String] = js.native
+      var `aria-owns`: js.UndefOr[String] = js.undefined
       
-      var `aria-placeholder`: js.UndefOr[String] = js.native
+      var `aria-placeholder`: js.UndefOr[String] = js.undefined
       
-      var `aria-posinset`: js.UndefOr[Double] = js.native
+      var `aria-posinset`: js.UndefOr[Double] = js.undefined
       
-      var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+      var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
       
-      var `aria-readonly`: js.UndefOr[Boolean] = js.native
+      var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
       
       var `aria-relevant`: js.UndefOr[
             additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-          ] = js.native
+          ] = js.undefined
       
-      var `aria-required`: js.UndefOr[Boolean] = js.native
+      var `aria-required`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-roledescription`: js.UndefOr[String] = js.native
+      var `aria-roledescription`: js.UndefOr[String] = js.undefined
       
-      var `aria-rowcount`: js.UndefOr[Double] = js.native
+      var `aria-rowcount`: js.UndefOr[Double] = js.undefined
       
-      var `aria-rowindex`: js.UndefOr[Double] = js.native
+      var `aria-rowindex`: js.UndefOr[Double] = js.undefined
       
-      var `aria-rowspan`: js.UndefOr[Double] = js.native
+      var `aria-rowspan`: js.UndefOr[Double] = js.undefined
       
-      var `aria-selected`: js.UndefOr[Boolean] = js.native
+      var `aria-selected`: js.UndefOr[Boolean] = js.undefined
       
-      var `aria-setsize`: js.UndefOr[Double] = js.native
+      var `aria-setsize`: js.UndefOr[Double] = js.undefined
       
-      var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+      var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
       
-      var `aria-valuemax`: js.UndefOr[Double] = js.native
+      var `aria-valuemax`: js.UndefOr[Double] = js.undefined
       
-      var `aria-valuemin`: js.UndefOr[Double] = js.native
+      var `aria-valuemin`: js.UndefOr[Double] = js.undefined
       
-      var `aria-valuenow`: js.UndefOr[Double] = js.native
+      var `aria-valuenow`: js.UndefOr[Double] = js.undefined
       
-      var `aria-valuetext`: js.UndefOr[String] = js.native
+      var `aria-valuetext`: js.UndefOr[String] = js.undefined
       
-      var as: js.UndefOr[String] = js.native
+      var as: js.UndefOr[String] = js.undefined
       
-      var async: js.UndefOr[Boolean] = js.native
+      var async: js.UndefOr[Boolean] = js.undefined
       
-      var autoCapitalize: js.UndefOr[String] = js.native
+      var autoCapitalize: js.UndefOr[String] = js.undefined
       
-      var autoComplete: js.UndefOr[String] = js.native
+      var autoComplete: js.UndefOr[String] = js.undefined
       
-      var autoCorrect: js.UndefOr[String] = js.native
+      var autoCorrect: js.UndefOr[String] = js.undefined
       
-      var autoFocus: js.UndefOr[Boolean] = js.native
+      var autoFocus: js.UndefOr[Boolean] = js.undefined
       
-      var autoPlay: js.UndefOr[Boolean] = js.native
+      var autoPlay: js.UndefOr[Boolean] = js.undefined
       
-      var autoSave: js.UndefOr[String] = js.native
+      var autoSave: js.UndefOr[String] = js.undefined
       
       /**
         * A list of autocompleters to use instead of the default.
         */
-      var autocompleters: js.UndefOr[js.Array[Completer[_]]] = js.native
+      var autocompleters: js.UndefOr[js.Array[Completer[js.Any]]] = js.undefined
       
-      var capture: js.UndefOr[Boolean | String] = js.native
+      var capture: js.UndefOr[Boolean | String] = js.undefined
       
-      var cellPadding: js.UndefOr[Double | String] = js.native
+      var cellPadding: js.UndefOr[Double | String] = js.undefined
       
-      var cellSpacing: js.UndefOr[Double | String] = js.native
+      var cellSpacing: js.UndefOr[Double | String] = js.undefined
       
-      var challenge: js.UndefOr[String] = js.native
+      var challenge: js.UndefOr[String] = js.undefined
       
-      var charSet: js.UndefOr[String] = js.native
+      var charSet: js.UndefOr[String] = js.undefined
       
-      var checked: js.UndefOr[Boolean] = js.native
+      var checked: js.UndefOr[Boolean] = js.undefined
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var cite: js.UndefOr[String] = js.native
+      var cite: js.UndefOr[String] = js.undefined
       
-      var classID: js.UndefOr[String] = js.native
+      var classID: js.UndefOr[String] = js.undefined
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var colSpan: js.UndefOr[Double] = js.native
+      var colSpan: js.UndefOr[Double] = js.undefined
       
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
-      var cols: js.UndefOr[Double] = js.native
+      var cols: js.UndefOr[Double] = js.undefined
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+      var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
       
-      var contextMenu: js.UndefOr[String] = js.native
+      var contextMenu: js.UndefOr[String] = js.undefined
       
-      var controls: js.UndefOr[Boolean] = js.native
+      var controls: js.UndefOr[Boolean] = js.undefined
       
-      var coords: js.UndefOr[String] = js.native
+      var coords: js.UndefOr[String] = js.undefined
       
-      var crossOrigin: js.UndefOr[String] = js.native
+      var crossOrigin: js.UndefOr[String] = js.undefined
       
-      var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+      var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
       
-      var data: js.UndefOr[String] = js.native
+      var data: js.UndefOr[String] = js.undefined
       
-      var datatype: js.UndefOr[String] = js.native
+      var datatype: js.UndefOr[String] = js.undefined
       
-      var dateTime: js.UndefOr[String] = js.native
+      var dateTime: js.UndefOr[String] = js.undefined
       
-      var defaultChecked: js.UndefOr[Boolean] = js.native
+      var defaultChecked: js.UndefOr[Boolean] = js.undefined
       
-      var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+      var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
       
-      var defer: js.UndefOr[Boolean] = js.native
+      var defer: js.UndefOr[Boolean] = js.undefined
       
-      var dir: js.UndefOr[String] = js.native
+      var dir: js.UndefOr[String] = js.undefined
       
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var download: js.UndefOr[js.Any] = js.native
+      var download: js.UndefOr[js.Any] = js.undefined
       
-      var draggable: js.UndefOr[Booleanish] = js.native
+      var draggable: js.UndefOr[Booleanish] = js.undefined
       
-      var encType: js.UndefOr[String] = js.native
+      var encType: js.UndefOr[String] = js.undefined
       
-      var form: js.UndefOr[String] = js.native
+      var form: js.UndefOr[String] = js.undefined
       
-      var formAction: js.UndefOr[String] = js.native
+      var formAction: js.UndefOr[String] = js.undefined
       
-      var formEncType: js.UndefOr[String] = js.native
+      var formEncType: js.UndefOr[String] = js.undefined
       
-      var formMethod: js.UndefOr[String] = js.native
+      var formMethod: js.UndefOr[String] = js.undefined
       
-      var formNoValidate: js.UndefOr[Boolean] = js.native
+      var formNoValidate: js.UndefOr[Boolean] = js.undefined
       
-      var formTarget: js.UndefOr[String] = js.native
+      var formTarget: js.UndefOr[String] = js.undefined
       
-      var frameBorder: js.UndefOr[Double | String] = js.native
+      var frameBorder: js.UndefOr[Double | String] = js.undefined
       
-      var headers: js.UndefOr[String] = js.native
+      var headers: js.UndefOr[String] = js.undefined
       
-      var height: js.UndefOr[Double | String] = js.native
+      var height: js.UndefOr[Double | String] = js.undefined
       
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
-      var high: js.UndefOr[Double] = js.native
+      var high: js.UndefOr[Double] = js.undefined
       
-      var href: js.UndefOr[String] = js.native
+      var href: js.UndefOr[String] = js.undefined
       
-      var hrefLang: js.UndefOr[String] = js.native
+      var hrefLang: js.UndefOr[String] = js.undefined
       
-      var htmlFor: js.UndefOr[String] = js.native
+      var htmlFor: js.UndefOr[String] = js.undefined
       
-      var httpEquiv: js.UndefOr[String] = js.native
+      var httpEquiv: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var identifier: js.UndefOr[String] = js.native
+      var identifier: js.UndefOr[String] = js.undefined
       
-      var inlineToolbar: js.UndefOr[Boolean] = js.native
+      var inlineToolbar: js.UndefOr[Boolean] = js.undefined
       
-      var inlist: js.UndefOr[js.Any] = js.native
+      var inlist: js.UndefOr[js.Any] = js.undefined
       
-      var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+      var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
       
-      var integrity: js.UndefOr[String] = js.native
+      var integrity: js.UndefOr[String] = js.undefined
       
-      var is: js.UndefOr[String] = js.native
+      var is: js.UndefOr[String] = js.undefined
       
-      var itemID: js.UndefOr[String] = js.native
+      var itemID: js.UndefOr[String] = js.undefined
       
-      var itemProp: js.UndefOr[String] = js.native
+      var itemProp: js.UndefOr[String] = js.undefined
       
-      var itemRef: js.UndefOr[String] = js.native
+      var itemRef: js.UndefOr[String] = js.undefined
       
-      var itemScope: js.UndefOr[Boolean] = js.native
+      var itemScope: js.UndefOr[Boolean] = js.undefined
       
-      var itemType: js.UndefOr[String] = js.native
+      var itemType: js.UndefOr[String] = js.undefined
       
       /**
         * By default, the placeholder will hide as soon as the editable field receives focus. With
         * this setting it can be be kept while the field is focussed and empty.
         */
-      var keepPlaceholderOnFocus: js.UndefOr[Boolean] = js.native
+      var keepPlaceholderOnFocus: js.UndefOr[Boolean] = js.undefined
       
-      var key: js.UndefOr[Key | Null] = js.native
+      var key: js.UndefOr[Key | Null] = js.undefined
       
-      var keyParams: js.UndefOr[String] = js.native
+      var keyParams: js.UndefOr[String] = js.undefined
       
-      var keyType: js.UndefOr[String] = js.native
+      var keyType: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var lang: js.UndefOr[String] = js.native
+      var lang: js.UndefOr[String] = js.undefined
       
-      var list: js.UndefOr[String] = js.native
+      var list: js.UndefOr[String] = js.undefined
       
-      var loop: js.UndefOr[Boolean] = js.native
+      var loop: js.UndefOr[Boolean] = js.undefined
       
-      var low: js.UndefOr[Double] = js.native
+      var low: js.UndefOr[Double] = js.undefined
       
-      var manifest: js.UndefOr[String] = js.native
+      var manifest: js.UndefOr[String] = js.undefined
       
-      var marginHeight: js.UndefOr[Double] = js.native
+      var marginHeight: js.UndefOr[Double] = js.undefined
       
-      var marginWidth: js.UndefOr[Double] = js.native
+      var marginWidth: js.UndefOr[Double] = js.undefined
       
-      var max: js.UndefOr[Double | String] = js.native
+      var max: js.UndefOr[Double | String] = js.undefined
       
-      var maxLength: js.UndefOr[Double] = js.native
+      var maxLength: js.UndefOr[Double] = js.undefined
       
-      var media: js.UndefOr[String] = js.native
+      var media: js.UndefOr[String] = js.undefined
       
-      var mediaGroup: js.UndefOr[String] = js.native
+      var mediaGroup: js.UndefOr[String] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var min: js.UndefOr[Double | String] = js.native
+      var min: js.UndefOr[Double | String] = js.undefined
       
-      var minLength: js.UndefOr[Double] = js.native
+      var minLength: js.UndefOr[Double] = js.undefined
       
       var multiline: js.UndefOr[
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 121 */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var multiple: js.UndefOr[Boolean] = js.native
+      var multiple: js.UndefOr[Boolean] = js.undefined
       
-      var muted: js.UndefOr[Boolean] = js.native
+      var muted: js.UndefOr[Boolean] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var noValidate: js.UndefOr[Boolean] = js.native
+      var noValidate: js.UndefOr[Boolean] = js.undefined
       
-      var nonce: js.UndefOr[String] = js.native
+      var nonce: js.UndefOr[String] = js.undefined
       
-      var onAbort: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onAbort: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onAnimationEnd: js.UndefOr[AnimationEventHandler[T]] = js.native
+      var onAnimationEnd: js.UndefOr[AnimationEventHandler[T]] = js.undefined
       
-      var onAnimationIteration: js.UndefOr[AnimationEventHandler[T]] = js.native
+      var onAnimationIteration: js.UndefOr[AnimationEventHandler[T]] = js.undefined
       
-      var onAnimationStart: js.UndefOr[AnimationEventHandler[T]] = js.native
+      var onAnimationStart: js.UndefOr[AnimationEventHandler[T]] = js.undefined
       
-      var onAuxClick: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onAuxClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onBeforeInput: js.UndefOr[FormEventHandler[T]] = js.native
+      var onBeforeInput: js.UndefOr[FormEventHandler[T]] = js.undefined
       
-      var onBlur: js.UndefOr[FocusEventHandler[T]] = js.native
+      var onBlur: js.UndefOr[FocusEventHandler[T]] = js.undefined
       
-      var onCanPlay: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onCanPlay: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onCanPlayThrough: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onCanPlayThrough: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
       /**
         * Called when the value changes.
         */
-      def onChange(value: String): Unit = js.native
+      def onChange(value: String): Unit
       
-      var onClick: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onCompositionEnd: js.UndefOr[CompositionEventHandler[T]] = js.native
+      var onCompositionEnd: js.UndefOr[CompositionEventHandler[T]] = js.undefined
       
-      var onCompositionStart: js.UndefOr[CompositionEventHandler[T]] = js.native
+      var onCompositionStart: js.UndefOr[CompositionEventHandler[T]] = js.undefined
       
-      var onCompositionUpdate: js.UndefOr[CompositionEventHandler[T]] = js.native
+      var onCompositionUpdate: js.UndefOr[CompositionEventHandler[T]] = js.undefined
       
-      var onContextMenu: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onContextMenu: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onCopy: js.UndefOr[ClipboardEventHandler[T]] = js.native
+      var onCopy: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
       
-      var onCut: js.UndefOr[ClipboardEventHandler[T]] = js.native
+      var onCut: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
       
-      var onDoubleClick: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onDoubleClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onDrag: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDrag: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDragEnd: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDragEnd: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDragEnter: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDragEnter: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDragExit: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDragExit: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDragLeave: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDragLeave: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDragOver: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDragOver: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDragStart: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDragStart: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDrop: js.UndefOr[DragEventHandler[T]] = js.native
+      var onDrop: js.UndefOr[DragEventHandler[T]] = js.undefined
       
-      var onDurationChange: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onDurationChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onEmptied: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onEmptied: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onEncrypted: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onEncrypted: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onEnded: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onEnded: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onError: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onError: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onFocus: js.UndefOr[FocusEventHandler[T]] = js.native
+      var onFocus: js.UndefOr[FocusEventHandler[T]] = js.undefined
       
-      var onInput: js.UndefOr[FormEventHandler[T]] = js.native
+      var onInput: js.UndefOr[FormEventHandler[T]] = js.undefined
       
-      var onInvalid: js.UndefOr[FormEventHandler[T]] = js.native
+      var onInvalid: js.UndefOr[FormEventHandler[T]] = js.undefined
       
-      var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.native
+      var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
       
-      var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.native
+      var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
       
-      var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.native
+      var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
       
-      var onLoad: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onLoad: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onLoadStart: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onLoadStart: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onLoadedData: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onLoadedData: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onLoadedMetadata: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onLoadedMetadata: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
       /**
         * Called when blocks can be merged. `forward` is `true` when merging with the next block,
         * false when merging with the previous block.
         */
-      var onMerge: js.UndefOr[js.Function1[/* forward */ Boolean, Unit]] = js.native
+      var onMerge: js.UndefOr[js.Function1[/* forward */ Boolean, Unit]] = js.undefined
       
-      var onMouseDown: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onMouseDown: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onMouseEnter: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onMouseEnter: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onMouseLeave: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onMouseLeave: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onMouseMove: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onMouseMove: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onMouseOut: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onMouseOut: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onMouseOver: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onMouseOver: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onMouseUp: js.UndefOr[MouseEventHandler[T]] = js.native
+      var onMouseUp: js.UndefOr[MouseEventHandler[T]] = js.undefined
       
-      var onPaste: js.UndefOr[ClipboardEventHandler[T]] = js.native
+      var onPaste: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
       
-      var onPause: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onPause: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onPlay: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onPlay: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onPlaying: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onPlaying: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onPointerCancel: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerCancel: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onPointerDown: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerDown: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onPointerEnter: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerEnter: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onPointerLeave: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerLeave: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onPointerMove: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerMove: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onPointerOut: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerOut: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onPointerOver: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerOver: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onPointerUp: js.UndefOr[PointerEventHandler[T]] = js.native
+      var onPointerUp: js.UndefOr[PointerEventHandler[T]] = js.undefined
       
-      var onProgress: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onProgress: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onRateChange: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onRateChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
       /**
         * Called when the block can be removed. `forward` is `true` when the selection is expected to
         * move to the next block, `false` to the previous block.
         */
-      var onRemove: js.UndefOr[js.Function1[/* forward */ Boolean, Unit]] = js.native
+      var onRemove: js.UndefOr[js.Function1[/* forward */ Boolean, Unit]] = js.undefined
       
       /**
         * Called when the `RichText` instance can be replaced with the given blocks.
         */
-      var onReplace: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[_]]], Unit]] = js.native
+      var onReplace: js.UndefOr[
+            js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], Unit]
+          ] = js.undefined
       
-      var onReset: js.UndefOr[FormEventHandler[T]] = js.native
+      var onReset: js.UndefOr[FormEventHandler[T]] = js.undefined
       
-      var onScroll: js.UndefOr[UIEventHandler[T]] = js.native
+      var onScroll: js.UndefOr[UIEventHandler[T]] = js.undefined
       
-      var onSeeked: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onSeeked: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onSeeking: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onSeeking: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onSelect: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onSelect: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
       /**
         * Called when the content can be split, where `value` is a piece of content being split
         * off. Here you should create a new block with that content and return it. Note that you
         * also need to provide `onReplace` in order for this to take any effect.
         */
-      var onSplit: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+      var onSplit: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
       
-      var onStalled: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onStalled: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onSubmit: js.UndefOr[FormEventHandler[T]] = js.native
+      var onSubmit: js.UndefOr[FormEventHandler[T]] = js.undefined
       
-      var onSuspend: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onSuspend: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
       var onTagNameChange: js.UndefOr[
             js.Function1[
               /* tagName */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var onTimeUpdate: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onTimeUpdate: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onTouchCancel: js.UndefOr[TouchEventHandler[T]] = js.native
+      var onTouchCancel: js.UndefOr[TouchEventHandler[T]] = js.undefined
       
-      var onTouchEnd: js.UndefOr[TouchEventHandler[T]] = js.native
+      var onTouchEnd: js.UndefOr[TouchEventHandler[T]] = js.undefined
       
-      var onTouchMove: js.UndefOr[TouchEventHandler[T]] = js.native
+      var onTouchMove: js.UndefOr[TouchEventHandler[T]] = js.undefined
       
-      var onTouchStart: js.UndefOr[TouchEventHandler[T]] = js.native
+      var onTouchStart: js.UndefOr[TouchEventHandler[T]] = js.undefined
       
-      var onTransitionEnd: js.UndefOr[TransitionEventHandler[T]] = js.native
+      var onTransitionEnd: js.UndefOr[TransitionEventHandler[T]] = js.undefined
       
-      var onVolumeChange: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onVolumeChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onWaiting: js.UndefOr[ReactEventHandler[T]] = js.native
+      var onWaiting: js.UndefOr[ReactEventHandler[T]] = js.undefined
       
-      var onWheel: js.UndefOr[WheelEventHandler[T]] = js.native
+      var onWheel: js.UndefOr[WheelEventHandler[T]] = js.undefined
       
-      var open: js.UndefOr[Boolean] = js.native
+      var open: js.UndefOr[Boolean] = js.undefined
       
-      var optimum: js.UndefOr[Double] = js.native
+      var optimum: js.UndefOr[Double] = js.undefined
       
-      var pattern: js.UndefOr[String] = js.native
+      var pattern: js.UndefOr[String] = js.undefined
       
       /**
         * Placeholder text to show when the field is empty, similar to the `input` and `textarea`
         * attribute of the same name.
         * See: {@link https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/HTML5_updates#The_placeholder_attribute }
         */
-      var placeholder: js.UndefOr[String] = js.native
+      var placeholder: js.UndefOr[String] = js.undefined
       
-      var playsInline: js.UndefOr[Boolean] = js.native
+      var playsInline: js.UndefOr[Boolean] = js.undefined
       
-      var poster: js.UndefOr[String] = js.native
+      var poster: js.UndefOr[String] = js.undefined
       
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
       
-      var preload: js.UndefOr[String] = js.native
+      var preload: js.UndefOr[String] = js.undefined
       
-      var property: js.UndefOr[String] = js.native
+      var property: js.UndefOr[String] = js.undefined
       
-      var radioGroup: js.UndefOr[String] = js.native
+      var radioGroup: js.UndefOr[String] = js.undefined
       
-      var readOnly: js.UndefOr[Boolean] = js.native
+      var readOnly: js.UndefOr[Boolean] = js.undefined
       
-      var ref: js.UndefOr[LegacyRef[T]] = js.native
+      var ref: js.UndefOr[LegacyRef[T]] = js.undefined
       
-      var rel: js.UndefOr[String] = js.native
+      var rel: js.UndefOr[String] = js.undefined
       
-      var required: js.UndefOr[Boolean] = js.native
+      var required: js.UndefOr[Boolean] = js.undefined
       
-      var resource: js.UndefOr[String] = js.native
+      var resource: js.UndefOr[String] = js.undefined
       
-      var results: js.UndefOr[Double] = js.native
+      var results: js.UndefOr[Double] = js.undefined
       
-      var reversed: js.UndefOr[Boolean] = js.native
+      var reversed: js.UndefOr[Boolean] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var rowSpan: js.UndefOr[Double] = js.native
+      var rowSpan: js.UndefOr[Double] = js.undefined
       
-      var rows: js.UndefOr[Double] = js.native
+      var rows: js.UndefOr[Double] = js.undefined
       
-      var sandbox: js.UndefOr[String] = js.native
+      var sandbox: js.UndefOr[String] = js.undefined
       
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
       
-      var scoped: js.UndefOr[Boolean] = js.native
+      var scoped: js.UndefOr[Boolean] = js.undefined
       
-      var scrolling: js.UndefOr[String] = js.native
+      var scrolling: js.UndefOr[String] = js.undefined
       
-      var seamless: js.UndefOr[Boolean] = js.native
+      var seamless: js.UndefOr[Boolean] = js.undefined
       
-      var security: js.UndefOr[String] = js.native
+      var security: js.UndefOr[String] = js.undefined
       
-      var selected: js.UndefOr[Boolean] = js.native
+      var selected: js.UndefOr[Boolean] = js.undefined
       
-      var shape: js.UndefOr[String] = js.native
+      var shape: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
       
-      var sizes: js.UndefOr[String] = js.native
+      var sizes: js.UndefOr[String] = js.undefined
       
-      var slot: js.UndefOr[String] = js.native
+      var slot: js.UndefOr[String] = js.undefined
       
-      var span: js.UndefOr[Double] = js.native
+      var span: js.UndefOr[Double] = js.undefined
       
-      var spellCheck: js.UndefOr[Booleanish] = js.native
+      var spellCheck: js.UndefOr[Booleanish] = js.undefined
       
-      var src: js.UndefOr[String] = js.native
+      var src: js.UndefOr[String] = js.undefined
       
-      var srcDoc: js.UndefOr[String] = js.native
+      var srcDoc: js.UndefOr[String] = js.undefined
       
-      var srcLang: js.UndefOr[String] = js.native
+      var srcLang: js.UndefOr[String] = js.undefined
       
-      var srcSet: js.UndefOr[String] = js.native
+      var srcSet: js.UndefOr[String] = js.undefined
       
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
       
-      var step: js.UndefOr[Double | String] = js.native
+      var step: js.UndefOr[Double | String] = js.undefined
       
-      var style: js.UndefOr[CSSProperties] = js.native
+      var style: js.UndefOr[CSSProperties] = js.undefined
       
-      var summary: js.UndefOr[String] = js.native
+      var summary: js.UndefOr[String] = js.undefined
       
-      var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+      var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
       
-      var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+      var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
       
-      var tabIndex: js.UndefOr[Double] = js.native
+      var tabIndex: js.UndefOr[Double] = js.undefined
       
       /**
         * The tag name of the editable element.
         * @defaultValue div
         */
-      var tagName: js.UndefOr[T] = js.native
+      var tagName: js.UndefOr[T] = js.undefined
       
-      var target: js.UndefOr[String] = js.native
+      var target: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var translate: js.UndefOr[yes | no] = js.native
+      var translate: js.UndefOr[yes | no] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var typeof: js.UndefOr[String] = js.native
+      var typeof: js.UndefOr[String] = js.undefined
       
-      var unselectable: js.UndefOr[on | off] = js.native
+      var unselectable: js.UndefOr[on | off] = js.undefined
       
-      var useMap: js.UndefOr[String] = js.native
+      var useMap: js.UndefOr[String] = js.undefined
       
       /**
         * HTML string to make editable. The HTML should be valid, and valid inside the `tagName`,
         * if provided.
         */
-      var value: String = js.native
+      var value: String
       
-      var vocab: js.UndefOr[String] = js.native
+      var vocab: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double | String] = js.native
+      var width: js.UndefOr[Double | String] = js.undefined
       
-      var wmode: js.UndefOr[String] = js.native
+      var wmode: js.UndefOr[String] = js.undefined
       
-      var wrap: js.UndefOr[String] = js.native
+      var wrap: js.UndefOr[String] = js.undefined
       
-      var wrapperClassName: js.UndefOr[String] = js.native
+      var wrapperClassName: js.UndefOr[String] = js.undefined
     }
     object Props {
       
@@ -1402,7 +1402,7 @@ object richTextMod {
       }
       
       @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[_], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */] (val x: Self with Props[T]) extends AnyVal {
+      implicit class PropsMutableBuilder[Self <: Props[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */] (val x: Self & Props[T]) extends AnyVal {
         
         @scala.inline
         def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
@@ -1791,7 +1791,7 @@ object richTextMod {
         def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
         
         @scala.inline
-        def setAutocompleters(value: js.Array[Completer[_]]): Self = StObject.set(x, "autocompleters", value.asInstanceOf[js.Any])
+        def setAutocompleters(value: js.Array[Completer[js.Any]]): Self = StObject.set(x, "autocompleters", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setAutocompletersUndefined: Self = StObject.set(x, "autocompleters", js.undefined)
@@ -2691,7 +2691,7 @@ object richTextMod {
         def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
         
         @scala.inline
-        def setOnReplace(value: /* blocks */ js.Array[BlockInstance[StringDictionary[_]]] => Unit): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
+        def setOnReplace(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
         
         @scala.inline
         def setOnReplaceUndefined: Self = StObject.set(x, "onReplace", js.undefined)

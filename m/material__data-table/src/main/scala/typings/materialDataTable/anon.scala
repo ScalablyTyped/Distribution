@@ -7,80 +7,78 @@ import typings.materialDataTable.typesMod.SortActionEventDetail
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@material/data-table.@material/data-table/adapter.MDCDataTableAdapter> */
-  @js.native
   trait PartialMDCDataTableAdapte extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addClassAtRowIndex: js.UndefOr[js.Function2[/* rowIndex */ Double, /* cssClasses */ String, Unit]] = js.native
+    var addClassAtRowIndex: js.UndefOr[js.Function2[/* rowIndex */ Double, /* cssClasses */ String, Unit]] = js.undefined
     
-    var getAttributeByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* attribute */ String, String | Null]] = js.native
+    var getAttributeByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* attribute */ String, String | Null]] = js.undefined
     
-    var getHeaderCellCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getHeaderCellCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getHeaderCellElements: js.UndefOr[js.Function0[js.Array[Element]]] = js.native
+    var getHeaderCellElements: js.UndefOr[js.Function0[js.Array[Element]]] = js.undefined
     
-    var getRowCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getRowCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getRowElements: js.UndefOr[js.Function0[js.Array[Element]]] = js.native
+    var getRowElements: js.UndefOr[js.Function0[js.Array[Element]]] = js.undefined
     
-    var getRowIdAtIndex: js.UndefOr[js.Function1[/* rowIndex */ Double, String | Null]] = js.native
+    var getRowIdAtIndex: js.UndefOr[js.Function1[/* rowIndex */ Double, String | Null]] = js.undefined
     
-    var getRowIndexByChildElement: js.UndefOr[js.Function1[/* el */ Element, Double]] = js.native
+    var getRowIndexByChildElement: js.UndefOr[js.Function1[/* el */ Element, Double]] = js.undefined
     
-    var getSelectedRowCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getSelectedRowCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getTableContainerHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getTableContainerHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getTableHeaderHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getTableHeaderHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var isCheckboxAtRowIndexChecked: js.UndefOr[js.Function1[/* rowIndex */ Double, Boolean]] = js.native
+    var isCheckboxAtRowIndexChecked: js.UndefOr[js.Function1[/* rowIndex */ Double, Boolean]] = js.undefined
     
-    var isHeaderRowCheckboxChecked: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isHeaderRowCheckboxChecked: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isRowsSelectable: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRowsSelectable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notifyRowSelectionChanged: js.UndefOr[js.Function1[/* data */ MDCDataTableRowSelectionChangedEventDetail, Unit]] = js.native
+    var notifyRowSelectionChanged: js.UndefOr[js.Function1[/* data */ MDCDataTableRowSelectionChangedEventDetail, Unit]] = js.undefined
     
-    var notifySelectedAll: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifySelectedAll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifySortAction: js.UndefOr[js.Function1[/* data */ SortActionEventDetail, Unit]] = js.native
+    var notifySortAction: js.UndefOr[js.Function1[/* data */ SortActionEventDetail, Unit]] = js.undefined
     
-    var notifyUnselectedAll: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyUnselectedAll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var registerHeaderRowCheckbox: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+    var registerHeaderRowCheckbox: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
     
-    var registerRowCheckboxes: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+    var registerRowCheckboxes: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClassAtRowIndex: js.UndefOr[js.Function2[/* rowIndex */ Double, /* cssClasses */ String, Unit]] = js.native
+    var removeClassAtRowIndex: js.UndefOr[js.Function2[/* rowIndex */ Double, /* cssClasses */ String, Unit]] = js.undefined
     
-    var removeClassNameByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* className */ String, Unit]] = js.native
+    var removeClassNameByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* className */ String, Unit]] = js.undefined
     
-    var setAttributeAtRowIndex: js.UndefOr[js.Function3[/* rowIndex */ Double, /* attr */ String, /* value */ String, Unit]] = js.native
+    var setAttributeAtRowIndex: js.UndefOr[js.Function3[/* rowIndex */ Double, /* attr */ String, /* value */ String, Unit]] = js.undefined
     
     var setAttributeByHeaderCellIndex: js.UndefOr[
         js.Function3[/* columnIndex */ Double, /* attribute */ String, /* value */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var setClassNameByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* className */ String, Unit]] = js.native
+    var setClassNameByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* className */ String, Unit]] = js.undefined
     
-    var setHeaderRowCheckboxChecked: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+    var setHeaderRowCheckboxChecked: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
     
-    var setHeaderRowCheckboxIndeterminate: js.UndefOr[js.Function1[/* indeterminate */ Boolean, Unit]] = js.native
+    var setHeaderRowCheckboxIndeterminate: js.UndefOr[js.Function1[/* indeterminate */ Boolean, Unit]] = js.undefined
     
-    var setProgressIndicatorStyles: js.UndefOr[js.Function1[/* styles */ ProgressIndicatorStyles, Unit]] = js.native
+    var setProgressIndicatorStyles: js.UndefOr[js.Function1[/* styles */ ProgressIndicatorStyles, Unit]] = js.undefined
     
-    var setRowCheckboxCheckedAtIndex: js.UndefOr[js.Function2[/* rowIndex */ Double, /* checked */ Boolean, Unit]] = js.native
+    var setRowCheckboxCheckedAtIndex: js.UndefOr[js.Function2[/* rowIndex */ Double, /* checked */ Boolean, Unit]] = js.undefined
     
-    var setSortStatusLabelByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* sortValue */ SortValue, Unit]] = js.native
+    var setSortStatusLabelByHeaderCellIndex: js.UndefOr[js.Function2[/* columnIndex */ Double, /* sortValue */ SortValue, Unit]] = js.undefined
   }
   object PartialMDCDataTableAdapte {
     

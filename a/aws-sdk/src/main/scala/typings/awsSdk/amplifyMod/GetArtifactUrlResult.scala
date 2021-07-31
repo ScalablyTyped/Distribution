@@ -2,21 +2,19 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetArtifactUrlResult extends StObject {
   
   /**
     *  The unique ID for an artifact. 
     */
-  var artifactId: ArtifactId = js.native
+  var artifactId: ArtifactId
   
   /**
     *  The presigned URL for the artifact. 
     */
-  var artifactUrl: ArtifactUrl = js.native
+  var artifactUrl: ArtifactUrl
 }
 object GetArtifactUrlResult {
   

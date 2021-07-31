@@ -2,19 +2,17 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhononPageObject extends StObject {
   
-  var content: js.UndefOr[String | Null] = js.native
+  var content: js.UndefOr[String | Null] = js.undefined
   
-  var page: String = js.native
+  var page: String
   
-  var preventClose: js.UndefOr[Boolean] = js.native
+  var preventClose: js.UndefOr[Boolean] = js.undefined
   
-  var readyDelay: js.UndefOr[Double] = js.native
+  var readyDelay: js.UndefOr[Double] = js.undefined
 }
 object PhononPageObject {
   

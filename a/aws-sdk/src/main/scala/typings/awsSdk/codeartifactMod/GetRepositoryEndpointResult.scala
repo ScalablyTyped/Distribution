@@ -2,16 +2,14 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRepositoryEndpointResult extends StObject {
   
   /**
     *  A string that specifies the URL of the returned endpoint. 
     */
-  var repositoryEndpoint: js.UndefOr[String] = js.native
+  var repositoryEndpoint: js.UndefOr[String] = js.undefined
 }
 object GetRepositoryEndpointResult {
   

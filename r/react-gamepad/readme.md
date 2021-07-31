@@ -12,7 +12,7 @@ A Gamepad handler as a React component
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 77695 |
+| # downloads        | 74976 |
 | # stars            | 0 |
 
 ## Links

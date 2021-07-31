@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLogsResponse extends StObject {
   
   /** A list of log names. For example, "projects/my-project/logs/syslog" or "organizations/123/logs/cloudresourcemanager.googleapis.com%2Factivity". */
-  var logNames: js.UndefOr[js.Array[String]] = js.native
+  var logNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If there might be more results than those appearing in this response, then nextPageToken is included. To get the next set of results, call this method again using the value of
     * nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListLogsResponse {
   

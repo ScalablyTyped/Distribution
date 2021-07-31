@@ -2,15 +2,13 @@ package typings.reactAliceCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsPrevSlideDisabled extends StObject {
   
-  var isNextSlideDisabled: Boolean = js.native
+  var isNextSlideDisabled: Boolean
   
-  var isPrevSlideDisabled: Boolean = js.native
+  var isPrevSlideDisabled: Boolean
 }
 object IsPrevSlideDisabled {
   

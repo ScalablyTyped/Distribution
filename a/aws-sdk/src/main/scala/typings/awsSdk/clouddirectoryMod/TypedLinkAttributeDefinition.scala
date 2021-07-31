@@ -2,41 +2,39 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypedLinkAttributeDefinition extends StObject {
   
   /**
     * The default value of the attribute (if configured).
     */
-  var DefaultValue: js.UndefOr[TypedAttributeValue] = js.native
+  var DefaultValue: js.UndefOr[TypedAttributeValue] = js.undefined
   
   /**
     * Whether the attribute is mutable or not.
     */
-  var IsImmutable: js.UndefOr[Bool] = js.native
+  var IsImmutable: js.UndefOr[Bool] = js.undefined
   
   /**
     * The unique name of the typed link attribute.
     */
-  var Name: AttributeName = js.native
+  var Name: AttributeName
   
   /**
     * The required behavior of the TypedLinkAttributeDefinition.
     */
-  var RequiredBehavior: RequiredAttributeBehavior = js.native
+  var RequiredBehavior: RequiredAttributeBehavior
   
   /**
     * Validation rules that are attached to the attribute definition.
     */
-  var Rules: js.UndefOr[RuleMap] = js.native
+  var Rules: js.UndefOr[RuleMap] = js.undefined
   
   /**
     * The type of the attribute.
     */
-  var Type: FacetAttributeType = js.native
+  var Type: FacetAttributeType
 }
 object TypedLinkAttributeDefinition {
   

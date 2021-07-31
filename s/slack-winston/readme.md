@@ -12,7 +12,7 @@ A Slack transport for winston
 | Keywords           | logging, sysadmin, tools, chat, winston, slack, flatiron |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 38031 |
+| # downloads        | 37634 |
 | # stars            | 4 |
 
 ## Links

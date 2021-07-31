@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait NavigationProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#browserTouchPanEnabled)
     */
-  var browserTouchPanEnabled: js.UndefOr[Boolean] = js.native
+  var browserTouchPanEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gamepad navigation specific configuration settings.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#gamepad)
     */
-  var gamepad: js.UndefOr[gamepadGamepadSettingsProperties] = js.native
+  var gamepad: js.UndefOr[gamepadGamepadSettingsProperties] = js.undefined
   
   /**
     * When `true`, the view will temporarily continue to pan after the pointer (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#momentumEnabled)
     */
-  var momentumEnabled: js.UndefOr[Boolean] = js.native
+  var momentumEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the view can be zoomed in or out with the mouse wheel.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#mouseWheelZoomEnabled)
     */
-  var mouseWheelZoomEnabled: js.UndefOr[Boolean] = js.native
+  var mouseWheelZoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object NavigationProperties {
   

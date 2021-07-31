@@ -2,29 +2,27 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a POSIX account entry.
   */
-@js.native
 trait SchemaUserSshPublicKey extends StObject {
   
   /**
     * An expiration time in microseconds since epoch.
     */
-  var expirationTimeUsec: js.UndefOr[String] = js.native
+  var expirationTimeUsec: js.UndefOr[String] = js.undefined
   
   /**
     * A SHA-256 fingerprint of the SSH public key. (Read-only)
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * An SSH public key.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object SchemaUserSshPublicKey {
   

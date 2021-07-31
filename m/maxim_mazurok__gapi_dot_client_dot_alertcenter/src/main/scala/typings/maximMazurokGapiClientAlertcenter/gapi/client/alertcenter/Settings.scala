@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
   /** The list of notifications. */
-  var notifications: js.UndefOr[js.Array[Notification]] = js.native
+  var notifications: js.UndefOr[js.Array[Notification]] = js.undefined
 }
 object Settings {
   

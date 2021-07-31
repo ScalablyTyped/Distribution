@@ -14,7 +14,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeProviderMod {
@@ -42,42 +41,41 @@ object localeProviderMod {
   @js.native
   val ANT_MARK: /* "internalMark" */ String = js.native
   
-  @js.native
   trait Locale extends StObject {
     
-    var Calendar: js.UndefOr[js.Object] = js.native
+    var Calendar: js.UndefOr[js.Object] = js.undefined
     
-    var DatePicker: js.UndefOr[PickerLocale] = js.native
+    var DatePicker: js.UndefOr[PickerLocale] = js.undefined
     
-    var Empty: js.UndefOr[TransferLocale] = js.native
+    var Empty: js.UndefOr[TransferLocale] = js.undefined
     
-    var Form: js.UndefOr[DefaultValidateMessages] = js.native
+    var Form: js.UndefOr[DefaultValidateMessages] = js.undefined
     
-    var Icon: js.UndefOr[js.Object] = js.native
+    var Icon: js.UndefOr[js.Object] = js.undefined
     
-    var Modal: js.UndefOr[ModalLocale] = js.native
+    var Modal: js.UndefOr[ModalLocale] = js.undefined
     
-    var PageHeader: js.UndefOr[js.Object] = js.native
+    var PageHeader: js.UndefOr[js.Object] = js.undefined
     
-    var Pagination: js.UndefOr[PaginationLocale] = js.native
+    var Pagination: js.UndefOr[PaginationLocale] = js.undefined
     
-    var Popconfirm: js.UndefOr[PopconfirmLocale] = js.native
+    var Popconfirm: js.UndefOr[PopconfirmLocale] = js.undefined
     
-    var Select: js.UndefOr[js.Object] = js.native
+    var Select: js.UndefOr[js.Object] = js.undefined
     
-    var Table: js.UndefOr[TableLocale] = js.native
+    var Table: js.UndefOr[TableLocale] = js.undefined
     
-    var Text: js.UndefOr[js.Object] = js.native
+    var Text: js.UndefOr[js.Object] = js.undefined
     
-    var TimePicker: js.UndefOr[js.Object] = js.native
+    var TimePicker: js.UndefOr[js.Object] = js.undefined
     
-    var Transfer: js.UndefOr[PartialTransferLocale] = js.native
+    var Transfer: js.UndefOr[PartialTransferLocale] = js.undefined
     
-    var Upload: js.UndefOr[UploadLocale] = js.native
+    var Upload: js.UndefOr[UploadLocale] = js.undefined
     
-    var global: js.UndefOr[js.Object] = js.native
+    var global: js.UndefOr[js.Object] = js.undefined
     
-    var locale: String = js.native
+    var locale: String
   }
   object Locale {
     
@@ -202,14 +200,13 @@ object localeProviderMod {
     def componentWillUnmount_MLocaleProvider(): Unit = js.native
   }
   
-  @js.native
   trait LocaleProviderProps extends StObject {
     
-    var _ANT_MARK__ : js.UndefOr[String] = js.native
+    var _ANT_MARK__ : js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
   }
   object LocaleProviderProps {
     

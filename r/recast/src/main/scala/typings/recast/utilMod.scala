@@ -4,48 +4,41 @@ import typings.recast.anon.End
 import typings.recast.anon.Line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("recast/lib/util", "comparePos")
+  @JSImport("recast/lib/util", JSImport.Namespace)
   @js.native
-  def comparePos(pos1: js.Any, pos2: js.Any): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("recast/lib/util", "composeSourceMaps")
-  @js.native
-  def composeSourceMaps(formerMap: js.Any, latterMap: js.Any): js.Any = js.native
+  @scala.inline
+  def comparePos(pos1: js.Any, pos2: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("comparePos")(pos1.asInstanceOf[js.Any], pos2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("recast/lib/util", "copyPos")
-  @js.native
-  def copyPos(pos: js.Any): Line = js.native
+  @scala.inline
+  def composeSourceMaps(formerMap: js.Any, latterMap: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("composeSourceMaps")(formerMap.asInstanceOf[js.Any], latterMap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("recast/lib/util", "fixFaultyLocations")
-  @js.native
-  def fixFaultyLocations(node: js.Any, lines: js.Any): Unit = js.native
+  @scala.inline
+  def copyPos(pos: js.Any): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(pos.asInstanceOf[js.Any]).asInstanceOf[Line]
   
-  @JSImport("recast/lib/util", "getOption")
-  @js.native
-  def getOption(options: js.Any, key: js.Any, defaultValue: js.Any): js.Any = js.native
+  @scala.inline
+  def fixFaultyLocations(node: js.Any, lines: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixFaultyLocations")(node.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("recast/lib/util", "getParentExportDeclaration")
-  @js.native
-  def getParentExportDeclaration(path: js.Any): js.Any = js.native
+  @scala.inline
+  def getOption(options: js.Any, key: js.Any, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("recast/lib/util", "getTrueLoc")
-  @js.native
-  def getTrueLoc(node: js.Any, lines: js.Any): End | Null = js.native
+  @scala.inline
+  def getParentExportDeclaration(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentExportDeclaration")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("recast/lib/util", "getUnionOfKeys")
-  @js.native
-  def getUnionOfKeys(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def getTrueLoc(node: js.Any, lines: js.Any): End | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getTrueLoc")(node.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[End | Null]
   
-  @JSImport("recast/lib/util", "isExportDeclaration")
-  @js.native
-  def isExportDeclaration(node: js.Any): Boolean = js.native
+  @scala.inline
+  def getUnionOfKeys(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnionOfKeys")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("recast/lib/util", "isTrailingCommaEnabled")
-  @js.native
-  def isTrailingCommaEnabled(options: js.Any, context: js.Any): Boolean = js.native
+  @scala.inline
+  def isExportDeclaration(node: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isTrailingCommaEnabled(options: js.Any, context: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTrailingCommaEnabled")(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

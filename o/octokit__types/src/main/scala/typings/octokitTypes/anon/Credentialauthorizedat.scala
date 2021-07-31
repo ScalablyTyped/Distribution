@@ -2,23 +2,21 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentialauthorizedat extends StObject {
   
-  var credential_authorized_at: String = js.native
+  var credential_authorized_at: String
   
-  var credential_id: String = js.native
+  var credential_id: String
   
-  var credential_type: String = js.native
+  var credential_type: String
   
-  var login: String = js.native
+  var login: String
   
-  var scopes: js.Array[String] = js.native
+  var scopes: js.Array[String]
   
-  var token_last_eight: String = js.native
+  var token_last_eight: String
 }
 object Credentialauthorizedat {
   

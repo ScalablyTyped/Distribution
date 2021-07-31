@@ -3,69 +3,67 @@ package typings.chunkedDc.jasmine
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Env extends StObject {
   
-  def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = js.native
+  def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit
   
-  def addMatchers(matchers: CustomMatcherFactories): Unit = js.native
+  def addMatchers(matchers: CustomMatcherFactories): Unit
   
-  def addReporter(reporter: Reporter): Unit = js.native
+  def addReporter(reporter: Reporter): Unit
   
-  def afterAll(afterAllFunction: js.Function0[Unit]): Unit = js.native
+  def afterAll(afterAllFunction: js.Function0[Unit]): Unit
   
-  def afterEach(afterEachFunction: js.Function0[Unit]): Unit = js.native
+  def afterEach(afterEachFunction: js.Function0[Unit]): Unit
   
-  def beforeAll(beforeAllFunction: js.Function0[Unit]): Unit = js.native
+  def beforeAll(beforeAllFunction: js.Function0[Unit]): Unit
   
   // ddescribe(description: string, specDefinitions: () => void): Suite; Not a part of jasmine. Angular team adds these
-  def beforeEach(beforeEachFunction: js.Function0[Unit]): Unit = js.native
+  def beforeEach(beforeEachFunction: js.Function0[Unit]): Unit
   
-  var clearInterval: Unit = js.native
+  var clearInterval: Unit
   
-  var clearTimeout: Unit = js.native
+  var clearTimeout: Unit
   
-  def compareObjects_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
+  def compareObjects_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
   
-  def compareRegExps_(a: RegExp, b: RegExp, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
+  def compareRegExps_(a: RegExp, b: RegExp, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
   
-  def contains_(haystack: js.Any, needle: js.Any): Boolean = js.native
+  def contains_(haystack: js.Any, needle: js.Any): Boolean
   
-  def currentRunner(): Runner = js.native
+  def currentRunner(): Runner
   
-  var currentSpec: Spec = js.native
+  var currentSpec: Spec
   
-  def describe(description: String, specDefinitions: js.Function0[Unit]): Suite = js.native
+  def describe(description: String, specDefinitions: js.Function0[Unit]): Suite
   
-  def equals_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
+  def equals_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean
   
-  def execute(): Unit = js.native
+  def execute(): Unit
   
-  def it(description: String, func: js.Function0[Unit]): Spec = js.native
+  def it(description: String, func: js.Function0[Unit]): Spec
   
-  var matchersClass: Matchers = js.native
+  var matchersClass: Matchers
   
-  def nextSpecId(): Double = js.native
+  def nextSpecId(): Double
   
-  var setInterval: js.Any = js.native
+  var setInterval: js.Any
   
-  var setTimeout: js.Any = js.native
+  var setTimeout: js.Any
   
-  def specFilter(spec: Spec): Boolean = js.native
+  def specFilter(spec: Spec): Boolean
   
-  var updateInterval: Double = js.native
+  var updateInterval: Double
   
-  def version(): js.Any = js.native
+  def version(): js.Any
   
-  def versionString(): String = js.native
+  def versionString(): String
   
-  def xdescribe(desc: String, specDefinitions: js.Function0[Unit]): XSuite = js.native
+  def xdescribe(desc: String, specDefinitions: js.Function0[Unit]): XSuite
   
   // iit(description: string, func: () => void): Spec; Not a part of jasmine. Angular team adds these
-  def xit(desc: String, func: js.Function0[Unit]): XSpec = js.native
+  def xit(desc: String, func: js.Function0[Unit]): XSpec
 }
 object Env {
   

@@ -10,44 +10,42 @@ import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Scenes {
   
-  @js.native
   trait CreateSceneFromObjectConfig extends StObject {
     
     /**
       * The scene's create callback.
       */
-    var create: js.UndefOr[SceneCreateCallback] = js.native
+    var create: js.UndefOr[SceneCreateCallback] = js.undefined
     
     /**
       * Any additional properties, which will be copied to the Scene after it's created (except `data` or `sys`).
       */
-    var extend: js.UndefOr[js.Any] = js.native
+    var extend: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Any values, which will be merged into the Scene's Data Manager store.
       */
     @JSName("extend.data")
-    var extendDotdata: js.UndefOr[js.Any] = js.native
+    var extendDotdata: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The scene's init callback.
       */
-    var init: js.UndefOr[SceneInitCallback] = js.native
+    var init: js.UndefOr[SceneInitCallback] = js.undefined
     
     /**
       * The scene's preload callback.
       */
-    var preload: js.UndefOr[ScenePreloadCallback] = js.native
+    var preload: js.UndefOr[ScenePreloadCallback] = js.undefined
     
     /**
       * The scene's update callback. See {@link Phaser.Scene#update}.
       */
-    var update: js.UndefOr[js.Function] = js.native
+    var update: js.UndefOr[js.Function] = js.undefined
   }
   object CreateSceneFromObjectConfig {
     
@@ -118,58 +116,57 @@ object Scenes {
     */
   type ScenePreloadCallback = js.Function0[Unit]
   
-  @js.native
   trait SceneTransitionConfig extends StObject {
     
     /**
       * Will the Scenes Input system be able to process events while it is transitioning in or out?
       */
-    var allowInput: js.UndefOr[Boolean] = js.native
+    var allowInput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object containing any data you wish to be passed to the target scene's init / create methods (if sleep is false) or to the target scene's wake event callback (if sleep is true).
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The duration, in ms, for the transition to last.
       */
-    var duration: js.UndefOr[integer] = js.native
+    var duration: js.UndefOr[integer] = js.undefined
     
     /**
       * Move the target Scene to be above this one before the transition starts.
       */
-    var moveAbove: js.UndefOr[Boolean] = js.native
+    var moveAbove: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Move the target Scene to be below this one before the transition starts.
       */
-    var moveBelow: js.UndefOr[Boolean] = js.native
+    var moveBelow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This callback is invoked every frame for the duration of the transition.
       */
-    var onUpdate: js.UndefOr[js.Function] = js.native
+    var onUpdate: js.UndefOr[js.Function] = js.undefined
     
     /**
       * The context in which the callback is invoked.
       */
-    var onUpdateScope: js.UndefOr[js.Any] = js.native
+    var onUpdateScope: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Will the Scene responsible for the transition be removed from the Scene Manager after the transition completes?
       */
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will the Scene responsible for the transition be sent to sleep on completion (`true`), or stopped? (`false`)
       */
-    var sleep: js.UndefOr[Boolean] = js.native
+    var sleep: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The Scene key to transition to.
       */
-    var target: String = js.native
+    var target: String
   }
   object SceneTransitionConfig {
     
@@ -241,58 +238,57 @@ object Scenes {
     }
   }
   
-  @js.native
   trait SettingsConfig extends StObject {
     
     /**
       * Does the Scene start as active or not? An active Scene updates each step.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional Camera configuration object.
       */
-    var cameras: js.UndefOr[JSONCamera | js.Array[JSONCamera]] = js.native
+    var cameras: js.UndefOr[JSONCamera | js.Array[JSONCamera]] = js.undefined
     
     /**
       * The unique key of this Scene. Must be unique within the entire Game instance.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * The loader configuration object for the Scene.
       */
-    var loader: js.UndefOr[LoaderConfig] = js.native
+    var loader: js.UndefOr[LoaderConfig] = js.undefined
     
     /**
       * Overwrites the default injection map for a scene.
       */
-    var map: js.UndefOr[StringDictionary[String]] = js.native
+    var map: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Extends the injection map for a scene.
       */
-    var mapAdd: js.UndefOr[StringDictionary[String]] = js.native
+    var mapAdd: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Files to be loaded before the Scene begins.
       */
-    var pack: js.UndefOr[`false` | PackFileSection] = js.native
+    var pack: js.UndefOr[`false` | PackFileSection] = js.undefined
     
     /**
       * The physics configuration object for the Scene.
       */
-    var physics: js.UndefOr[PhysicsConfig] = js.native
+    var physics: js.UndefOr[PhysicsConfig] = js.undefined
     
     /**
       * The plugin configuration object for the Scene.
       */
-    var plugins: js.UndefOr[`false` | js.Any] = js.native
+    var plugins: js.UndefOr[`false` | js.Any] = js.undefined
     
     /**
       * Does the Scene start as visible or not? A visible Scene renders each step.
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SettingsConfig {
     
@@ -370,88 +366,87 @@ object Scenes {
     }
   }
   
-  @js.native
   trait SettingsObject extends StObject {
     
     /**
       * The active state of this Scene. An active Scene updates each step.
       */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /**
       * The Camera configuration object.
       */
-    var cameras: JSONCamera | js.Array[JSONCamera] = js.native
+    var cameras: JSONCamera | js.Array[JSONCamera]
     
     /**
       * a data bundle passed to this Scene from the Scene Manager.
       */
-    var data: js.Object = js.native
+    var data: js.Object
     
     /**
       * Has the Scene finished booting?
       */
-    var isBooted: Boolean = js.native
+    var isBooted: Boolean
     
     /**
       * Is the Scene in a state of transition?
       */
-    var isTransition: Boolean = js.native
+    var isTransition: Boolean
     
     /**
       * The unique key of this Scene. Unique within the entire Game instance.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The loader configuration object for the Scene.
       */
-    var loader: LoaderConfig = js.native
+    var loader: LoaderConfig
     
     /**
       * The Scene's Injection Map.
       */
-    var map: StringDictionary[String] = js.native
+    var map: StringDictionary[String]
     
     /**
       * Files to be loaded before the Scene begins.
       */
-    var pack: `false` | PackFileSection = js.native
+    var pack: `false` | PackFileSection
     
     /**
       * The physics configuration object for the Scene.
       */
-    var physics: PhysicsConfig = js.native
+    var physics: PhysicsConfig
     
     /**
       * The plugin configuration object for the Scene.
       */
-    var plugins: `false` | js.Any = js.native
+    var plugins: `false` | js.Any
     
     /**
       * The current status of the Scene. Maps to the Scene constants.
       */
-    var status: Double = js.native
+    var status: Double
     
     /**
       * Is this Scene allowed to receive input during transitions?
       */
-    var transitionAllowInput: Boolean = js.native
+    var transitionAllowInput: Boolean
     
     /**
       * The duration of the transition, if set.
       */
-    var transitionDuration: integer = js.native
+    var transitionDuration: integer
     
     /**
       * The Scene this Scene is transitioning from, if set.
       */
-    var transitionFrom: Scene = js.native
+    var transitionFrom: Scene
     
     /**
       * The visible state of this Scene. A visible Scene renders each step.
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object SettingsObject {
     

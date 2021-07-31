@@ -2,13 +2,11 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InheritanceOptions extends StObject {
   
-  var only: js.UndefOr[Boolean] = js.native
+  var only: js.UndefOr[Boolean] = js.undefined
 }
 object InheritanceOptions {
   

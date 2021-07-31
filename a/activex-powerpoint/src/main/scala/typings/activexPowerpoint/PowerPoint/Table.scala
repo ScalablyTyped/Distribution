@@ -2,7 +2,6 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,9 +16,9 @@ trait Table extends StObject {
     * @param boolean [SaveFormatting=false]
     */
   def ApplyStyle(): Unit = js.native
-  def ApplyStyle(StyleID: js.UndefOr[scala.Nothing], SaveFormatting: Boolean): Unit = js.native
   def ApplyStyle(StyleID: String): Unit = js.native
   def ApplyStyle(StyleID: String, SaveFormatting: Boolean): Unit = js.native
+  def ApplyStyle(StyleID: Unit, SaveFormatting: Boolean): Unit = js.native
   
   val Background: TableBackground = js.native
   

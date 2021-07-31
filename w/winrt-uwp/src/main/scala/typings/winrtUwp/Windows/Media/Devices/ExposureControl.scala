@@ -3,44 +3,42 @@ package typings.winrtUwp.Windows.Media.Devices
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the exposure settings on a capture device. */
-@js.native
 trait ExposureControl extends StObject {
   
   /** Gets a value that indicates if auto exposure is enabled. */
-  var auto: Boolean = js.native
+  var auto: Boolean
   
   /** Gets the maximum exposure time. */
-  var max: Double = js.native
+  var max: Double
   
   /** Gets the minimum exposure time. */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * Asynchronously enables or disable auto exposure.
     * @param value Specifies whether or not to enable or disable auto exposure.
     * @return The object that is used to control the asynchronous operation.
     */
-  def setAutoAsync(value: Boolean): IPromiseWithIAsyncAction = js.native
+  def setAutoAsync(value: Boolean): IPromiseWithIAsyncAction
   
   /**
     * Asynchronously sets the exposure time.
     * @param shutterDuration The exposure time to set the Value property to. The minimum and maximum values are specified by Min and Max .
     * @return The object that is used to control the asynchronous operation.
     */
-  def setValueAsync(shutterDuration: Double): IPromiseWithIAsyncAction = js.native
+  def setValueAsync(shutterDuration: Double): IPromiseWithIAsyncAction
   
   /** Gets the smallest exposure time increment supported by the capture device. */
-  var step: Double = js.native
+  var step: Double
   
   /** Gets a value that specifies if the capture device supports the exposure control. */
-  var supported: Boolean = js.native
+  var supported: Boolean
   
   /** Gets the exposure time. */
-  var value: Double = js.native
+  var value: Double
 }
 object ExposureControl {
   

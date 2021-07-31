@@ -7,20 +7,18 @@ import typings.algoliaClientAnalytics.mod.GetABTestsResponse
 import typings.algoliaClientAnalytics.mod.StopABTestResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<std.Promise<@algolia/client-analytics.@algolia/client-analytics.AddABTestResponse>> */
-  @js.native
   trait ReadonlyPromiseAddABTestR extends StObject {
     
-    def `catch`[TResult](): js.Promise[AddABTestResponse | TResult] = js.native
+    def `catch`[TResult](): js.Promise[AddABTestResponse | TResult]
     
-    def `finally`(): js.Promise[AddABTestResponse] = js.native
+    def `finally`(): js.Promise[AddABTestResponse]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseAddABTestR {
     
@@ -52,14 +50,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<@algolia/client-analytics.@algolia/client-analytics.DeleteABTestResponse>> */
-  @js.native
   trait ReadonlyPromiseDeleteABTe extends StObject {
     
-    def `catch`[TResult](): js.Promise[DeleteABTestResponse | TResult] = js.native
+    def `catch`[TResult](): js.Promise[DeleteABTestResponse | TResult]
     
-    def `finally`(): js.Promise[DeleteABTestResponse] = js.native
+    def `finally`(): js.Promise[DeleteABTestResponse]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseDeleteABTe {
     
@@ -91,14 +88,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<@algolia/client-analytics.@algolia/client-analytics.GetABTestResponse>> */
-  @js.native
   trait ReadonlyPromiseGetABTestR extends StObject {
     
-    def `catch`[TResult](): js.Promise[GetABTestResponse | TResult] = js.native
+    def `catch`[TResult](): js.Promise[GetABTestResponse | TResult]
     
-    def `finally`(): js.Promise[GetABTestResponse] = js.native
+    def `finally`(): js.Promise[GetABTestResponse]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseGetABTestR {
     
@@ -130,14 +126,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<@algolia/client-analytics.@algolia/client-analytics.GetABTestsResponse>> */
-  @js.native
   trait ReadonlyPromiseGetABTests extends StObject {
     
-    def `catch`[TResult](): js.Promise[GetABTestsResponse | TResult] = js.native
+    def `catch`[TResult](): js.Promise[GetABTestsResponse | TResult]
     
-    def `finally`(): js.Promise[GetABTestsResponse] = js.native
+    def `finally`(): js.Promise[GetABTestsResponse]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseGetABTests {
     
@@ -169,14 +164,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<@algolia/client-analytics.@algolia/client-analytics.StopABTestResponse>> */
-  @js.native
   trait ReadonlyPromiseStopABTest extends StObject {
     
-    def `catch`[TResult](): js.Promise[StopABTestResponse | TResult] = js.native
+    def `catch`[TResult](): js.Promise[StopABTestResponse | TResult]
     
-    def `finally`(): js.Promise[StopABTestResponse] = js.native
+    def `finally`(): js.Promise[StopABTestResponse]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseStopABTest {
     

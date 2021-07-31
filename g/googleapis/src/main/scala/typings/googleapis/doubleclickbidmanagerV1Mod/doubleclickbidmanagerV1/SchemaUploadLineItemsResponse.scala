@@ -2,19 +2,17 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Upload line items response.
   */
-@js.native
 trait SchemaUploadLineItemsResponse extends StObject {
   
   /**
     * Status of upload.
     */
-  var uploadStatus: js.UndefOr[SchemaUploadStatus] = js.native
+  var uploadStatus: js.UndefOr[SchemaUploadStatus] = js.undefined
 }
 object SchemaUploadLineItemsResponse {
   

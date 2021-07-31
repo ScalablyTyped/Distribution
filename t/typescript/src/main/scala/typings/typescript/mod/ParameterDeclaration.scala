@@ -3,18 +3,18 @@ package typings.typescript.mod
 import typings.typescript.mod.SyntaxKind.Parameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParameterDeclaration
-  extends NamedDeclaration
+  extends StObject
+     with NamedDeclaration
      with JSDocContainer
      with HasExpressionInitializer
+     with HasJSDoc
      with HasType
      with VariableLikeDeclaration
-     with _BindingOrAssignmentElement
-     with _HasJSDoc {
+     with _BindingOrAssignmentElement {
   
   val dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
   

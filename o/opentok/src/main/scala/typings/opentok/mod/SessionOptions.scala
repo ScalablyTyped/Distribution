@@ -2,17 +2,15 @@ package typings.opentok.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionOptions extends StObject {
   
-  var archiveMode: js.UndefOr[ArchiveMode] = js.native
+  var archiveMode: js.UndefOr[ArchiveMode] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var mediaMode: js.UndefOr[MediaMode] = js.native
+  var mediaMode: js.UndefOr[MediaMode] = js.undefined
 }
 object SessionOptions {
   

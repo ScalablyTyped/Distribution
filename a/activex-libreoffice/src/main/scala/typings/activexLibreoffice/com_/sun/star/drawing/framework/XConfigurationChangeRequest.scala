@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is typically used internally by the {@link XConfigurationController}
   * @see XConfigurationController
   */
-@js.native
 trait XConfigurationChangeRequest extends StObject {
   
   /**
     * Commit the configuration change request represented by the called object to the given configuration.
     * @param xConfiguration This is the configuration to commit the requested change to.
     */
-  def execute(xConfiguration: XConfiguration): Unit = js.native
+  def execute(xConfiguration: XConfiguration): Unit
 }
 object XConfigurationChangeRequest {
   

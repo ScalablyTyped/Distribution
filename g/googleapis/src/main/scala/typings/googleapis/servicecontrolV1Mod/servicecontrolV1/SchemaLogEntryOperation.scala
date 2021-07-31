@@ -2,33 +2,31 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional information about a potentially long-running operation with
   * which a log entry is associated.
   */
-@js.native
 trait SchemaLogEntryOperation extends StObject {
   
   /**
     * Optional. Set this to True if this is the first log entry in the
     * operation.
     */
-  var first: js.UndefOr[Boolean] = js.native
+  var first: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. An arbitrary operation identifier. Log entries with the same
     * identifier are assumed to be part of the same operation.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Set this to True if this is the last log entry in the
     * operation.
     */
-  var last: js.UndefOr[Boolean] = js.native
+  var last: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. An arbitrary producer identifier. The combination of `id` and
@@ -36,7 +34,7 @@ trait SchemaLogEntryOperation extends StObject {
     * `&quot;MyDivision.MyBigCompany.com&quot;`,
     * `&quot;github.com/MyProject/MyApplication&quot;`.
     */
-  var producer: js.UndefOr[String] = js.native
+  var producer: js.UndefOr[String] = js.undefined
 }
 object SchemaLogEntryOperation {
   

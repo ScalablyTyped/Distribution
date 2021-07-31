@@ -2,13 +2,11 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportedCompilerFacade extends StObject {
   
-  var ɵcompilerFacade: CompilerFacade = js.native
+  var ɵcompilerFacade: CompilerFacade
 }
 object ExportedCompilerFacade {
   

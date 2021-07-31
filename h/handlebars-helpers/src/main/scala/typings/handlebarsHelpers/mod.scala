@@ -5,46 +5,40 @@ import typings.handlebars.Handlebars.HelperDelegate
 import typings.handlebarsHelpers.anon.TypeofHandlebars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringDictionary[HelperDelegate]]
+  @scala.inline
+  def apply(groups: String): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
+  @scala.inline
+  def apply(groups: String, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  @scala.inline
+  def apply(groups: js.Array[String]): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
+  @scala.inline
+  def apply(groups: js.Array[String], options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  @scala.inline
+  def apply(groups: Unit, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  @scala.inline
+  def apply(groups: Options): StringDictionary[HelperDelegate] = ^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[HelperDelegate]]
+  @scala.inline
+  def apply(groups: Options, options: Options): StringDictionary[HelperDelegate] = (^.asInstanceOf[js.Dynamic].apply(groups.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[HelperDelegate]]
+  
   @JSImport("handlebars-helpers", JSImport.Namespace)
   @js.native
-  def apply(): StringDictionary[HelperDelegate] = js.native
-  @JSImport("handlebars-helpers", JSImport.Namespace)
-  @js.native
-  def apply(groups: js.UndefOr[scala.Nothing], options: Options): StringDictionary[HelperDelegate] = js.native
-  @JSImport("handlebars-helpers", JSImport.Namespace)
-  @js.native
-  def apply(groups: String): StringDictionary[HelperDelegate] = js.native
-  @JSImport("handlebars-helpers", JSImport.Namespace)
-  @js.native
-  def apply(groups: String, options: Options): StringDictionary[HelperDelegate] = js.native
-  @JSImport("handlebars-helpers", JSImport.Namespace)
-  @js.native
-  def apply(groups: js.Array[String]): StringDictionary[HelperDelegate] = js.native
-  @JSImport("handlebars-helpers", JSImport.Namespace)
-  @js.native
-  def apply(groups: js.Array[String], options: Options): StringDictionary[HelperDelegate] = js.native
-  @JSImport("handlebars-helpers", JSImport.Namespace)
-  @js.native
-  def apply(groups: Options): StringDictionary[HelperDelegate] = js.native
-  @JSImport("handlebars-helpers", JSImport.Namespace)
-  @js.native
-  def apply(groups: Options, options: Options): StringDictionary[HelperDelegate] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("handlebars-helpers", "utils")
   @js.native
   val utils: Utils_ = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var handlebars: js.UndefOr[TypeofHandlebars] = js.native
+    var handlebars: js.UndefOr[TypeofHandlebars] = js.undefined
     
-    var hbs: js.UndefOr[TypeofHandlebars] = js.native
+    var hbs: js.UndefOr[TypeofHandlebars] = js.undefined
   }
   object Options {
     
@@ -71,7 +65,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Utils_ extends StObject {
     
     /**
@@ -87,19 +80,19 @@ object mod {
       * //=> 'foo-bar-baz'
       * ```
       */
-    def changecase(str: String, fn: js.Function1[/* str */ String, String]): String = js.native
+    def changecase(str: String, fn: js.Function1[/* str */ String, String]): String
     
     /**
       * Remove leading and trailing whitespace and non-word
       * characters from the given string.
       */
-    def chop(str: String): String = js.native
+    def chop(str: String): String
     
     /**
       * Returns true if the given value contains the given
       * `object`, optionally passing a starting index.
       */
-    def contains[T](`val`: js.Array[T], obj: T, start: Double): Boolean = js.native
+    def contains[T](`val`: js.Array[T], obj: T, start: Double): Boolean
   }
   object Utils_ {
     

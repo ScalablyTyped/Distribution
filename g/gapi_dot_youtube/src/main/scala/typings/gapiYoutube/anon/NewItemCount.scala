@@ -2,21 +2,19 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewItemCount extends StObject {
   
   /**
     *
     */
-  var newItemCount: Double = js.native
+  var newItemCount: Double
   
   /**
     *
     */
-  var totalItemCount: Double = js.native
+  var totalItemCount: Double
 }
 object NewItemCount {
   

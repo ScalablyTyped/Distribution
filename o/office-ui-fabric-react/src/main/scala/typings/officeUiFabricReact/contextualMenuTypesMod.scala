@@ -55,7 +55,6 @@ import typings.uifabricUtilities.irectangleMod.IRectangle
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextualMenuTypesMod {
@@ -67,23 +66,31 @@ object contextualMenuTypesMod {
   object ContextualMenuItemType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContextualMenuItemType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ContextualMenuItemType & Double] = js.native
     
     @js.native
-    sealed trait Divider extends ContextualMenuItemType
-    /* 1 */ val Divider: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Divider with Double = js.native
+    sealed trait Divider
+      extends StObject
+         with ContextualMenuItemType
+    /* 1 */ val Divider: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Divider & Double = js.native
     
     @js.native
-    sealed trait Header extends ContextualMenuItemType
-    /* 2 */ val Header: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Header with Double = js.native
+    sealed trait Header
+      extends StObject
+         with ContextualMenuItemType
+    /* 2 */ val Header: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Header & Double = js.native
     
     @js.native
-    sealed trait Normal extends ContextualMenuItemType
-    /* 0 */ val Normal: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Normal with Double = js.native
+    sealed trait Normal
+      extends StObject
+         with ContextualMenuItemType
+    /* 0 */ val Normal: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Normal & Double = js.native
     
     @js.native
-    sealed trait Section extends ContextualMenuItemType
-    /* 3 */ val Section: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Section with Double = js.native
+    sealed trait Section
+      extends StObject
+         with ContextualMenuItemType
+    /* 3 */ val Section: typings.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Section & Double = js.native
   }
   
   object DirectionalHint {
@@ -221,12 +228,11 @@ object contextualMenuTypesMod {
     def topRightEdge_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRightEdge")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IContextualMenu extends StObject
   
-  @js.native
   trait IContextualMenuItem
-    extends /**
+    extends StObject
+       with /**
     * (Optional) Any additional properties to apply to the rendered links.
     */
   /* propertyName */ StringDictionary[js.Any] {
@@ -235,48 +241,48 @@ object contextualMenuTypesMod {
       * Custom accessible label for the element.
       * If no override is specified, the `aria-label` attribute will contain the item name.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not this menu item can be checked
       * @defaultvalue false
       */
-    var canCheck: js.UndefOr[Boolean] = js.native
+    var canCheck: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not this menu item is currently checked.
       * @defaultvalue false
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional CSS class to apply to the menu item.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IContextualMenuRenderItem interface.
       * This will get passed down to ContextualMenuItem.
       */
-    var componentRef: js.UndefOr[IRefObject[IContextualMenuRenderItem]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IContextualMenuRenderItem]] = js.undefined
     
     /**
       * When rendering a custom menu component that is passed in, the component might also be a list of
       * elements. We want to keep track of the correct index our menu is using based off of
       * the length of the custom list. It is up to the user to increment the count for their list.
       */
-    var customOnRenderListLength: js.UndefOr[Double] = js.native
+    var customOnRenderListLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Any custom data the developer wishes to associate with the menu item.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Whether the menu item is disabled
       * @defaultvalue false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Method to provide the classnames to style the individual items inside a menu.
@@ -297,53 +303,53 @@ object contextualMenuTypesMod {
           /* primaryDisabled */ js.UndefOr[Boolean], 
           IMenuItemClassNames
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Method to provide the classnames to style the Vertical Divider of a split button inside a menu.
       * Default value is the `getSplitButtonVerticalDividerClassNames` func defined in `ContextualMenu.classnames.ts`.
       * @defaultvalue getSplitButtonVerticalDividerClassNames
       */
-    var getSplitButtonVerticalDividerClassNames: js.UndefOr[js.Function1[/* theme */ ITheme, IVerticalDividerClassNames]] = js.native
+    var getSplitButtonVerticalDividerClassNames: js.UndefOr[js.Function1[/* theme */ ITheme, IVerticalDividerClassNames]] = js.undefined
     
     /**
       * Navigate to this URL when the menu item is clicked.
       */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /**
       * Props for an icon to display next to the item.
       */
-    var iconProps: js.UndefOr[IIconProps] = js.native
+    var iconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * This prop is no longer used. All contextual menu items are now focusable when disabled.
       * @deprecated in 6.38.2 will be removed in 7.0.0
       */
-    var inactive: js.UndefOr[Boolean] = js.native
+    var inactive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional IContextualMenuItemProps overrides to customize behaviors such as item styling via `styles`.
       */
-    var itemProps: js.UndefOr[PartialIContextualMenuIte] = js.native
+    var itemProps: js.UndefOr[PartialIContextualMenuIte] = js.undefined
     
-    var itemType: js.UndefOr[ContextualMenuItemType] = js.native
+    var itemType: js.UndefOr[ContextualMenuItemType] = js.undefined
     
     /**
       * Unique id to identify the item
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Keytip for this contextual menu item
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * Text of the menu item.
       * @deprecated Use `text` instead.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Callback for when the menu item is invoked. If `ev.preventDefault()` is called in `onClick`,
@@ -358,7 +364,7 @@ object contextualMenuTypesMod {
           /* item */ js.UndefOr[this.type], 
           Boolean | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function to be executed on mouse down. This is executed before an `onClick` event and can
@@ -367,7 +373,7 @@ object contextualMenuTypesMod {
       */
     var onMouseDown: js.UndefOr[
         js.Function2[/* item */ this.type, /* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Method to custom render this menu item.
@@ -385,7 +391,7 @@ object contextualMenuTypesMod {
           /* dismissMenu */ js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Method to customize sub-components rendering of this menu item.
@@ -399,57 +405,57 @@ object contextualMenuTypesMod {
           /* defaultRenders */ IContextualMenuItemRenderFunctions, 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom render function for the menu item icon
       */
-    var onRenderIcon: js.UndefOr[IRenderFunction[IContextualMenuItemProps]] = js.native
+    var onRenderIcon: js.UndefOr[IRenderFunction[IContextualMenuItemProps]] = js.undefined
     
     /**
       * If the menu item is a split button, this prop disables purely the primary action of the button.
       * @defaultvalue false
       */
-    var primaryDisabled: js.UndefOr[Boolean] = js.native
+    var primaryDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Link relation setting when using `href`.
       * If `target` is `_blank`, `rel` is defaulted to a value to prevent clickjacking.
       */
-    var rel: js.UndefOr[String] = js.native
+    var rel: js.UndefOr[String] = js.undefined
     
     /**
       * Optional override for the menu button's role. Defaults to `menuitem` or `menuitemcheckbox`.
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * Seconday description for the menu item to display
       */
-    var secondaryText: js.UndefOr[String] = js.native
+    var secondaryText: js.UndefOr[String] = js.undefined
     
     /**
       * Properties to apply to render this item as a section.
       * This prop is mutually exclusive with `subMenuProps`.
       */
-    var sectionProps: js.UndefOr[IContextualMenuSection] = js.native
+    var sectionProps: js.UndefOr[IContextualMenuSection] = js.undefined
     
     /**
       * @deprecated Not used
       */
-    var shortCut: js.UndefOr[String] = js.native
+    var shortCut: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not this menu item is a splitButton.
       * @defaultvalue false
       */
-    var split: js.UndefOr[Boolean] = js.native
+    var split: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional styles to apply to the menu item
       * @deprecated in favor of the `styles` prop to leverage mergeStyles API.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Properties to apply to a submenu to this item.
@@ -458,29 +464,29 @@ object contextualMenuTypesMod {
       * `id`, `shouldFocusOnMount`, `directionalHint`, `className`, and `gapSpace`, all of which
       * can be overridden.
       */
-    var subMenuProps: js.UndefOr[IContextualMenuProps] = js.native
+    var subMenuProps: js.UndefOr[IContextualMenuProps] = js.undefined
     
     /**
       * Props for the Icon used for the chevron.
       */
-    var submenuIconProps: js.UndefOr[IIconProps] = js.native
+    var submenuIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Target window when using `href`.
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /**
       * Text of the menu item.
       * If a standard hyphen (-) is passed in, then the item will be rendered as a divider.
       * If a dash must appear as text, use an emdash (—), figuredash (‒), or minus symbol (−) instead.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * Title (tooltip) text displayed when hovering over an item.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IContextualMenuItem {
     
@@ -721,18 +727,19 @@ object contextualMenuTypesMod {
     }
   }
   
-  @js.native
-  trait IContextualMenuItemRenderProps extends IContextualMenuItem {
+  trait IContextualMenuItemRenderProps
+    extends StObject
+       with IContextualMenuItem {
     
-    var focusableElementIndex: Double = js.native
+    var focusableElementIndex: Double
     
-    var hasCheckmarks: Boolean = js.native
+    var hasCheckmarks: Boolean
     
-    var hasIcons: Boolean = js.native
+    var hasIcons: Boolean
     
-    var index: Double = js.native
+    var index: Double
     
-    var totalItemCount: Double = js.native
+    var totalItemCount: Double
   }
   object IContextualMenuItemRenderProps {
     
@@ -769,20 +776,19 @@ object contextualMenuTypesMod {
     }
   }
   
-  @js.native
   trait IContextualMenuListProps extends StObject {
     
-    def defaultMenuItemRenderer(item: IContextualMenuItemRenderProps): ReactNode = js.native
+    def defaultMenuItemRenderer(item: IContextualMenuItemRenderProps): ReactNode
     
-    var hasCheckmarks: Boolean = js.native
+    var hasCheckmarks: Boolean
     
-    var hasIcons: Boolean = js.native
+    var hasIcons: Boolean
     
-    var items: js.Array[IContextualMenuItem] = js.native
+    var items: js.Array[IContextualMenuItem]
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var totalItemCount: Double = js.native
+    var totalItemCount: Double
   }
   object IContextualMenuListProps {
     
@@ -827,27 +833,27 @@ object contextualMenuTypesMod {
     }
   }
   
-  @js.native
   trait IContextualMenuProps
-    extends IBaseProps[IContextualMenu]
+    extends StObject
+       with IBaseProps[IContextualMenu]
        with IWithResponsiveModeState {
     
     /**
       * If true the positioning logic will prefer to flip edges rather than to nudge the rectangle to fit within bounds,
       * thus making sure the element aligns perfectly with target's alignment edge
       */
-    var alignTargetEdge: js.UndefOr[Boolean] = js.native
+    var alignTargetEdge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accessible label for the ContextualMenu's root element (inside the callout).
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The width of the beak.
       * @defaultvalue 16
       */
-    var beakWidth: js.UndefOr[Double] = js.native
+    var beakWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The bounding rectangle (or callback that returns a rectangle) which the contextual menu can appear in.
@@ -858,17 +864,17 @@ object contextualMenuTypesMod {
           /* targetWindow */ js.UndefOr[Window], 
           js.UndefOr[IRectangle]
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Additional custom props for the Callout.
       */
-    var calloutProps: js.UndefOr[ICalloutProps] = js.native
+    var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
     
     /**
       * Additional CSS class to apply to the ContextualMenu.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Custom component to use for rendering individual menu items.
@@ -876,45 +882,45 @@ object contextualMenuTypesMod {
       */
     var contextualMenuItemAs: js.UndefOr[
         (ComponentClass[IContextualMenuItemProps, ComponentState]) | FunctionComponent[IContextualMenuItemProps]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true, the menu will be positioned to cover the target.
       * If false, it will be positioned next to the target.
       * @defaultvalue false
       */
-    var coverTarget: js.UndefOr[Boolean] = js.native
+    var coverTarget: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the contextual menu will not be updated until focus enters the menu via other means.
       * This will only result in different behavior when `shouldFocusOnMount = false`.
       */
-    var delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.native
+    var delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How the menu should be positioned
       * @defaultvalue DirectionalHint.bottomAutoEdge
       */
-    var directionalHint: js.UndefOr[DirectionalHint] = js.native
+    var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * If true the position will not change sides in an attempt to fit the ContextualMenu within bounds.
       * It will still attempt to align it to whatever bounds are given.
       * @defaultvalue false
       */
-    var directionalHintFixed: js.UndefOr[Boolean] = js.native
+    var directionalHintFixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How the menu should be positioned in RTL layouts.
       * If not specified, a mirror of `directionalHint` will be used.
       */
-    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.native
+    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * If true do not render on a new layer. If false render on a new layer.
       * @defaultvalue false
       */
-    var doNotLayer: js.UndefOr[Boolean] = js.native
+    var doNotLayer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Props to pass down to the FocusZone.
@@ -922,13 +928,13 @@ object contextualMenuTypesMod {
       * is specified in the focusZoneProps (even if other focusZoneProps are defined)
       * @defaultvalue \{ direction: FocusZoneDirection.vertical \}
       */
-    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.native
+    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
     
     /**
       * The gap between the ContextualMenu and the target
       * @defaultvalue 0
       */
-    var gapSpace: js.UndefOr[Double] = js.native
+    var gapSpace: js.UndefOr[Double] = js.undefined
     
     /**
       * Method to provide the classnames to style the contextual menu.
@@ -936,7 +942,7 @@ object contextualMenuTypesMod {
       */
     var getMenuClassNames: js.UndefOr[
         js.Function2[/* theme */ ITheme, /* className */ js.UndefOr[String], IContextualMenuClassNames]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true, renders the ContextualMenu in a hidden state.
@@ -945,33 +951,33 @@ object contextualMenuTypesMod {
       * Note: When ContextualMenu is hidden its content will not be rendered. It will only render
       * once the ContextualMenu is visible.
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ID for the ContextualMenu's root element (inside the callout).
       * Should be used for `aria-owns` and other such uses, rather than direct reference for programmatic purposes.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * If true then the beak is visible. If false it will not be shown.
       */
-    var isBeakVisible: js.UndefOr[Boolean] = js.native
+    var isBeakVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this menu is a submenu of another menu.
       */
-    var isSubMenu: js.UndefOr[Boolean] = js.native
+    var isSubMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Menu items to display.
       */
-    var items: js.Array[IContextualMenuItem] = js.native
+    var items: js.Array[IContextualMenuItem]
     
     /**
       * Used as `aria-labelledby` for the menu element inside the callout.
       */
-    var labelElementId: js.UndefOr[String] = js.native
+    var labelElementId: js.UndefOr[String] = js.undefined
     
     /**
       * Callback when the ContextualMenu tries to close. If `dismissAll` is true then all
@@ -985,7 +991,7 @@ object contextualMenuTypesMod {
           /* dismissAll */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Click handler which is invoked if `onClick` is not passed for individual contextual
@@ -998,25 +1004,25 @@ object contextualMenuTypesMod {
           /* item */ js.UndefOr[IContextualMenuItem], 
           Boolean | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for when the menu is being closed (removing from the DOM).
       */
-    var onMenuDismissed: js.UndefOr[js.Function1[/* contextualMenu */ js.UndefOr[this.type], Unit]] = js.native
+    var onMenuDismissed: js.UndefOr[js.Function1[/* contextualMenu */ js.UndefOr[this.type], Unit]] = js.undefined
     
     /**
       * Callback for when the menu has been opened.
       */
-    var onMenuOpened: js.UndefOr[js.Function1[/* contextualMenu */ js.UndefOr[this.type], Unit]] = js.native
+    var onMenuOpened: js.UndefOr[js.Function1[/* contextualMenu */ js.UndefOr[this.type], Unit]] = js.undefined
     
     /**
       * Method to override the render of the list of menu items.
       */
-    var onRenderMenuList: js.UndefOr[IRenderFunction[IContextualMenuListProps]] = js.native
+    var onRenderMenuList: js.UndefOr[IRenderFunction[IContextualMenuListProps]] = js.undefined
     
     /** Custom render function for a submenu. */
-    var onRenderSubMenu: js.UndefOr[IRenderFunction[IContextualMenuProps]] = js.native
+    var onRenderSubMenu: js.UndefOr[IRenderFunction[IContextualMenuProps]] = js.undefined
     
     /**
       * Called when the component is unmounting, and focus needs to be restored.
@@ -1025,64 +1031,64 @@ object contextualMenuTypesMod {
       * contains focus. If this prop is provided, focus will not be restored automatically,
       * you'll need to call originalElement.focus()
       */
-    var onRestoreFocus: js.UndefOr[js.Function1[/* options */ ContainsFocus, Unit]] = js.native
+    var onRestoreFocus: js.UndefOr[js.Function1[/* options */ ContainsFocus, Unit]] = js.undefined
     
     /**
       * Whether to focus on the contextual menu container (as opposed to the first menu item).
       */
-    var shouldFocusOnContainer: js.UndefOr[Boolean] = js.native
+    var shouldFocusOnContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to focus on the menu when mounted.
       * @defaultvalue true
       */
-    var shouldFocusOnMount: js.UndefOr[Boolean] = js.native
+    var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the menu will be updated even when `hidden=true`. Note that this will consume
       * resources to update even when nothing is being shown to the user. This might be helpful if
       * your updates are small and you want the menu to display quickly when `hidden` is set to false.
       */
-    var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.native
+    var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IContextualMenuStyleProps, IContextualMenuStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IContextualMenuStyleProps, IContextualMenuStyles]] = js.undefined
     
     /**
       * Delay (in milliseconds) to wait before expanding / dismissing a submenu on mouseEnter or mouseLeave
       */
-    var subMenuHoverDelay: js.UndefOr[Double] = js.native
+    var subMenuHoverDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The target that the ContextualMenu should try to position itself based on.
       * It can be either an element, a query selector string resolving to a valid element,
       * or a MouseEvent. If a MouseEvent is given, the origin point of the event will be used.
       */
-    var target: js.UndefOr[Target] = js.native
+    var target: js.UndefOr[Target] = js.undefined
     
     /**
       * Theme provided by higher-order component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Title to be displayed at the top of the menu, above the items.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * If true the context menu will have a minimum width equal to the width of the target element
       * @defaultvalue false
       */
-    var useTargetAsMinWidth: js.UndefOr[Boolean] = js.native
+    var useTargetAsMinWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the context menu will render as the same width as the target element
       * @defaultvalue false
       */
-    var useTargetWidth: js.UndefOr[Boolean] = js.native
+    var useTargetWidth: js.UndefOr[Boolean] = js.undefined
   }
   object IContextualMenuProps {
     
@@ -1360,29 +1366,29 @@ object contextualMenuTypesMod {
     }
   }
   
-  @js.native
   trait IContextualMenuSection
-    extends ClassAttributes[js.Any] {
+    extends StObject
+       with ClassAttributes[js.Any] {
     
     /**
       * If set to true, the section will display a divider at the bottom of the section.
       */
-    var bottomDivider: js.UndefOr[Boolean] = js.native
+    var bottomDivider: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The items to include inside the section.
       */
-    var items: js.Array[IContextualMenuItem] = js.native
+    var items: js.Array[IContextualMenuItem]
     
     /**
       * The optional section title.
       */
-    var title: js.UndefOr[String | IContextualMenuItem] = js.native
+    var title: js.UndefOr[String | IContextualMenuItem] = js.undefined
     
     /**
       * If set to true, the section will display a divider at the top of the section.
       */
-    var topDivider: js.UndefOr[Boolean] = js.native
+    var topDivider: js.UndefOr[Boolean] = js.undefined
   }
   object IContextualMenuSection {
     
@@ -1421,12 +1427,11 @@ object contextualMenuTypesMod {
     }
   }
   
-  @js.native
   trait IContextualMenuStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IContextualMenuStyleProps {
     
@@ -1450,38 +1455,37 @@ object contextualMenuTypesMod {
     }
   }
   
-  @js.native
   trait IContextualMenuStyles extends StObject {
     
     /**
       * Style for the container which parents all menu items.
       */
-    var container: IStyle = js.native
+    var container: IStyle
     
     /**
       * Styles for the header item of a ContextualMenu
       */
-    var header: IStyle = js.native
+    var header: IStyle
     
     /**
       * Styles for the list that contains all menuItems.
       */
-    var list: IStyle = js.native
+    var list: IStyle
     
     /**
       * Base styles for the root element of all ContextualMenus.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * SubComponent styles.
       */
-    var subComponentStyles: IContextualMenuSubComponentStyles = js.native
+    var subComponentStyles: IContextualMenuSubComponentStyles
     
     /**
       * Style override for the contextual menu title.
       */
-    var title: IStyle = js.native
+    var title: IStyle
   }
   object IContextualMenuStyles {
     
@@ -1544,21 +1548,20 @@ object contextualMenuTypesMod {
     }
   }
   
-  @js.native
   trait IContextualMenuSubComponentStyles extends StObject {
     
     /** Styles for the callout that hosts the ContextualMenu options. */
-    var callout: IStyleFunctionOrObject[ICalloutContentStyleProps, _] = js.native
+    var callout: IStyleFunctionOrObject[ICalloutContentStyleProps, js.Any]
     
     /** Styles for each menu item. */
-    var menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, _] = js.native
+    var menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, js.Any]
   }
   object IContextualMenuSubComponentStyles {
     
     @scala.inline
     def apply(
-      callout: IStyleFunctionOrObject[ICalloutContentStyleProps, _],
-      menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, _]
+      callout: IStyleFunctionOrObject[ICalloutContentStyleProps, js.Any],
+      menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, js.Any]
     ): IContextualMenuSubComponentStyles = {
       val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], menuItem = menuItem.asInstanceOf[js.Any])
       __obj.asInstanceOf[IContextualMenuSubComponentStyles]
@@ -1568,56 +1571,57 @@ object contextualMenuTypesMod {
     implicit class IContextualMenuSubComponentStylesMutableBuilder[Self <: IContextualMenuSubComponentStyles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallout(value: IStyleFunctionOrObject[ICalloutContentStyleProps, _]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+      def setCallout(value: IStyleFunctionOrObject[ICalloutContentStyleProps, js.Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCalloutFunction1(value: ICalloutContentStyleProps => DeepPartial[_]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
+      def setCalloutFunction1(value: ICalloutContentStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "callout", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setMenuItem(value: IStyleFunctionOrObject[IContextualMenuItemStyleProps, _]): Self = StObject.set(x, "menuItem", value.asInstanceOf[js.Any])
+      def setMenuItem(value: IStyleFunctionOrObject[IContextualMenuItemStyleProps, js.Any]): Self = StObject.set(x, "menuItem", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMenuItemFunction1(value: IContextualMenuItemStyleProps => DeepPartial[_]): Self = StObject.set(x, "menuItem", js.Any.fromFunction1(value))
+      def setMenuItemFunction1(value: IContextualMenuItemStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "menuItem", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
-  trait IMenuItemStyles extends IButtonStyles {
+  trait IMenuItemStyles
+    extends StObject
+       with IButtonStyles {
     
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var anchorLink: IStyle = js.native
+    var anchorLink: IStyle
     
     /**
       * Default style for checkmark icons.
       */
-    var checkmarkIcon: IStyle = js.native
+    var checkmarkIcon: IStyle
     
     /**
       * Styles for a divider item of a ConextualMenu.
       */
-    var divider: IStyle = js.native
+    var divider: IStyle
     
     /**
       * Default icon color style for known icons.
       */
-    var iconColor: IStyle = js.native
+    var iconColor: IStyle
     
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var item: IStyle = js.native
+    var item: IStyle
     
     /**
       * Styles for the content inside the button/link of the menuItem.
       */
-    var linkContent: IStyle = js.native
+    var linkContent: IStyle
     
     /**
       * Styles for the submenu icon of a menu item.
       */
-    var subMenuIcon: IStyle = js.native
+    var subMenuIcon: IStyle
   }
   object IMenuItemStyles {
     

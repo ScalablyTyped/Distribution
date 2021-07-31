@@ -17,7 +17,6 @@ import typings.reactDates.mod.OrientationShape
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,7 +39,7 @@ trait AnchorDirection extends StObject {
   var dayAriaLabelFormat: js.UndefOr[String] = js.native
   
   // navigation related props
-  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, _]) | Null] = js.native
+  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, js.Any]) | Null] = js.native
   
   var daySize: js.UndefOr[Double] = js.native
   

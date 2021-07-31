@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerEncryptionKey extends StObject {
   
   /** The name of the encryption key that is stored in Google Cloud KMS. */
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
   
   /** The service account being used for the encryption request for the given KMS key. If absent, the Compute Engine default service account is used. */
-  var kmsKeyServiceAccount: js.UndefOr[String] = js.native
+  var kmsKeyServiceAccount: js.UndefOr[String] = js.undefined
   
   /** Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource. */
-  var rawKey: js.UndefOr[String] = js.native
+  var rawKey: js.UndefOr[String] = js.undefined
   
   /** [Output only] The RFC 4648 base64 encoded SHA-256 hash of the customer-supplied encryption key that protects this resource. */
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
 }
 object CustomerEncryptionKey {
   

@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Set of values bounded by low and high
   */
-@js.native
-trait Range extends Element {
+trait Range
+  extends StObject
+     with Element {
   
   /**
     * High limit
     */
-  var high: js.UndefOr[Quantity] = js.native
+  var high: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Low limit
     */
-  var low: js.UndefOr[Quantity] = js.native
+  var low: js.UndefOr[Quantity] = js.undefined
 }
 object Range {
   

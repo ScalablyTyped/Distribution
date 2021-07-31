@@ -4,30 +4,29 @@ import typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMarkdownCell
-  extends IBaseCell
+  extends StObject
+     with IBaseCell
      with _ICell {
   
   /**
     * Cell attachments.
     */
-  var attachments: js.UndefOr[IAttachments] = js.native
+  var attachments: js.UndefOr[IAttachments] = js.undefined
   
   /**
     * String identifying the type of cell.
     */
   @JSName("cell_type")
-  var cell_type_IMarkdownCell: markdown = js.native
+  var cell_type_IMarkdownCell: markdown
 }
 object IMarkdownCell {
   
   @scala.inline
-  def apply(cell_type: markdown, metadata: Partial[ICellMetadata], source: MultilineString): IMarkdownCell = {
-    val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  def apply(metadata: Partial[ICellMetadata], source: MultilineString): IMarkdownCell = {
+    val __obj = js.Dynamic.literal(cell_type = "markdown", metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarkdownCell]
   }
   

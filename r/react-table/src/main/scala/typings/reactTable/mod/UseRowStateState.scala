@@ -4,13 +4,11 @@ import typings.reactTable.anon.CellState
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseRowStateState[D /* <: js.Object */] extends StObject {
   
-  var rowState: Record[String, CellState[D]] = js.native
+  var rowState: Record[String, CellState[D]]
 }
 object UseRowStateState {
   
@@ -21,7 +19,7 @@ object UseRowStateState {
   }
   
   @scala.inline
-  implicit class UseRowStateStateMutableBuilder[Self <: UseRowStateState[_], D /* <: js.Object */] (val x: Self with UseRowStateState[D]) extends AnyVal {
+  implicit class UseRowStateStateMutableBuilder[Self <: UseRowStateState[?], D /* <: js.Object */] (val x: Self & UseRowStateState[D]) extends AnyVal {
     
     @scala.inline
     def setRowState(value: Record[String, CellState[D]]): Self = StObject.set(x, "rowState", value.asInstanceOf[js.Any])

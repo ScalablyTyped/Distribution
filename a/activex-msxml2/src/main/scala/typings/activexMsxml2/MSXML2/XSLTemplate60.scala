@@ -2,21 +2,19 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XSL Stylesheet Cache 6.0 */
-@js.native
 trait XSLTemplate60 extends StObject {
   
   @JSName("MSXML2.XSLTemplate60_typekey")
-  var MSXML2DotXSLTemplate60_typekey: XSLTemplate60 = js.native
+  var MSXML2DotXSLTemplate60_typekey: XSLTemplate60
   
   /** create a new processor object */
-  def createProcessor(): IXSLProcessor = js.native
+  def createProcessor(): IXSLProcessor
   
   /** stylesheet to use with processors */
-  var stylesheet: IXMLDOMNode = js.native
+  var stylesheet: IXMLDOMNode
 }
 object XSLTemplate60 {
   

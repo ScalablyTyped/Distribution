@@ -2,7 +2,6 @@ package typings.eggJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,9 @@ object global {
     * Egg.js is a simple JS library that has no prerequisites and allows you to easily add web easter
     * eggs by watching the user's key strokes.
     */
-  class Egg_ () extends Egg {
+  class Egg_ ()
+    extends StObject
+       with Egg {
     /**
       * Egg.js is a simple JS library that has no prerequisites and allows you to easily add web easter
       * eggs by watching the user's key strokes.
@@ -25,7 +26,7 @@ object global {
       *                    callback (which can either be in plain English or JavaScript key codes).
       * @param fn A function to trigger when it happens.
       */
-    def this(keySequence: String, fn: js.Function0[_]) = this()
+    def this(keySequence: String, fn: js.Function0[js.Any]) = this()
     /**
       * Egg.js is a simple JS library that has no prerequisites and allows you to easily add web easter
       * eggs by watching the user's key strokes.
@@ -34,7 +35,7 @@ object global {
       * @param fn A function to trigger when it happens.
       * @param metadata An optional set of metadata.
       */
-    def this(keySequence: String, fn: js.Function0[_], metadata: js.Any) = this()
+    def this(keySequence: String, fn: js.Function0[js.Any], metadata: js.Any) = this()
   }
   
   @JSGlobal("egg")

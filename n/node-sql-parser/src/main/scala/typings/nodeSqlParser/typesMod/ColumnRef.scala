@@ -3,24 +3,22 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.column_ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnRef extends StObject {
   
-  var column: String = js.native
+  var column: String
   
-  var table: String | Null = js.native
+  var table: String | Null
   
-  var `type`: column_ref = js.native
+  var `type`: column_ref
 }
 object ColumnRef {
   
   @scala.inline
-  def apply(column: String, `type`: column_ref): ColumnRef = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(column: String): ColumnRef = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], table = null)
+    __obj.updateDynamic("type")("column_ref")
     __obj.asInstanceOf[ColumnRef]
   }
   

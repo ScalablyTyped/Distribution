@@ -3,19 +3,17 @@ package typings.googleapis.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Initialurl extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var initial_url: js.UndefOr[String] = js.native
+  var initial_url: js.UndefOr[String] = js.undefined
   
-  var metrics: js.UndefOr[StringDictionary[Distributions]] = js.native
+  var metrics: js.UndefOr[StringDictionary[Distributions]] = js.undefined
   
-  var overall_category: js.UndefOr[String] = js.native
+  var overall_category: js.UndefOr[String] = js.undefined
 }
 object Initialurl {
   

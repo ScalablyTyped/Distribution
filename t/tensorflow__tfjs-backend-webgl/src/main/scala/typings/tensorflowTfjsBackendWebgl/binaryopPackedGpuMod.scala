@@ -3,16 +3,20 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryopPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/binaryop_packed_gpu", "BinaryOpPackedProgram")
   @js.native
-  class BinaryOpPackedProgram protected () extends GPGPUProgram {
+  class BinaryOpPackedProgram protected ()
+    extends StObject
+       with GPGPUProgram {
     def this(op: String, aShape: js.Array[Double], bShape: js.Array[Double]) = this()
     def this(op: String, aShape: js.Array[Double], bShape: js.Array[Double], checkOutOfBounds: Boolean) = this()
+    
+    /* CompleteClass */
+    var outputShape: js.Array[Double] = js.native
     
     @JSName("packedInputs")
     var packedInputs_BinaryOpPackedProgram: Boolean = js.native
@@ -21,6 +25,12 @@ object binaryopPackedGpuMod {
     var packedOutput_BinaryOpPackedProgram: Boolean = js.native
     
     var supportsBroadcasting: Boolean = js.native
+    
+    /* CompleteClass */
+    var userCode: String = js.native
+    
+    /* CompleteClass */
+    var variableNames: js.Array[String] = js.native
   }
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/binaryop_packed_gpu", "ELU_DER")

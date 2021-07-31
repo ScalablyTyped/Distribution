@@ -11,8 +11,8 @@ A collection of loading indicators animated with CSS for React
 | Full name          | react-spinkit |
 | Keywords           | react, react-component, spinkit, spinners |
 | # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 1616119 |
+| # dependents       | 73 |
+| # downloads        | 1647160 |
 | # stars            | 2 |
 
 ## Links

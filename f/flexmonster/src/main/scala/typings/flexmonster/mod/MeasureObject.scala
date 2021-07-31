@@ -2,15 +2,13 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeasureObject extends StObject {
   
-  var aggregation: js.UndefOr[String] = js.native
+  var aggregation: js.UndefOr[String] = js.undefined
   
-  var uniqueName: String = js.native
+  var uniqueName: String
 }
 object MeasureObject {
   

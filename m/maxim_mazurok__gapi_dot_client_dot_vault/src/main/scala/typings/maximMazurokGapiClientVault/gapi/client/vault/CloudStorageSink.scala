@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudStorageSink extends StObject {
   
   /** Output only. The exported files on cloud storage. */
-  var files: js.UndefOr[js.Array[CloudStorageFile]] = js.native
+  var files: js.UndefOr[js.Array[CloudStorageFile]] = js.undefined
 }
 object CloudStorageSink {
   

@@ -2,20 +2,18 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.upload method.
   */
-@js.native
 trait IUploadProperties extends StObject {
   
   /**
     * The id attribute of the <input> tag containing info about the file to
     * upload.
     */
-  var element: String = js.native
+  var element: String
   
   /**
     * Indicates whether the uploaded file should overwrite an existing
@@ -25,12 +23,12 @@ trait IUploadProperties extends StObject {
     * uploaded file.
     * @default "false"
     */
-  var overwrite: js.UndefOr[String] = js.native
+  var overwrite: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the file to upload.
     */
-  var path: String = js.native
+  var path: String
 }
 object IUploadProperties {
   

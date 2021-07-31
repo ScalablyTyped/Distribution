@@ -2,54 +2,52 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeServingDecision extends StObject {
   
   /**
     * The policy compliance of this creative in China. When approved or disapproved, this applies to both deals and open auction in China. When pending review, this creative is allowed to
     * serve for deals but not for open auction.
     */
-  var chinaPolicyCompliance: js.UndefOr[PolicyCompliance] = js.native
+  var chinaPolicyCompliance: js.UndefOr[PolicyCompliance] = js.undefined
   
   /** Policy compliance of this creative when bidding on Programmatic Guaranteed and Preferred Deals (outside of Russia and China). */
-  var dealsPolicyCompliance: js.UndefOr[PolicyCompliance] = js.native
+  var dealsPolicyCompliance: js.UndefOr[PolicyCompliance] = js.undefined
   
   /** Detected advertisers and brands. */
-  var detectedAdvertisers: js.UndefOr[js.Array[AdvertiserAndBrand]] = js.native
+  var detectedAdvertisers: js.UndefOr[js.Array[AdvertiserAndBrand]] = js.undefined
   
   /**
     * Publisher-excludable attributes that were detected for this creative. Can be used to filter the response of the creatives.list method. If the `excluded_attribute` field of a [bid
     * request](https://developers.google.com/authorized-buyers/rtb/downloads/realtime-bidding-proto) contains one of the attributes that were declared or detected for a given creative,
     * and a bid is submitted with that creative, the bid will be filtered before the auction.
     */
-  var detectedAttributes: js.UndefOr[js.Array[String]] = js.native
+  var detectedAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The set of detected destination URLs for the creative. Can be used to filter the response of the creatives.list method. */
-  var detectedClickThroughUrls: js.UndefOr[js.Array[String]] = js.native
+  var detectedClickThroughUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The detected domains for this creative. */
-  var detectedDomains: js.UndefOr[js.Array[String]] = js.native
+  var detectedDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The detected languages for this creative. The order is arbitrary. The codes are 2 or 5 characters and are documented at
     * https://developers.google.com/adwords/api/docs/appendix/languagecodes. Can be used to filter the response of the creatives.list method.
     */
-  var detectedLanguages: js.UndefOr[js.Array[String]] = js.native
+  var detectedLanguages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Detected product categories, if any. See the ad-product-categories.txt file in the technical documentation for a list of IDs. Can be used to filter the response of the
     * creatives.list method.
     */
-  var detectedProductCategories: js.UndefOr[js.Array[Double]] = js.native
+  var detectedProductCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Detected sensitive categories, if any. Can be used to filter the response of the creatives.list method. See the ad-sensitive-categories.txt file in the technical documentation for a
     * list of IDs. You should use these IDs along with the excluded-sensitive-category field in the bid request to filter your bids.
     */
-  var detectedSensitiveCategories: js.UndefOr[js.Array[Double]] = js.native
+  var detectedSensitiveCategories: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * IDs of the ad technology vendors that were detected to be used by this creative. See https://storage.googleapis.com/adx-rtb-dictionaries/vendors.txt for possible values. Can be used
@@ -57,25 +55,25 @@ trait CreativeServingDecision extends StObject {
     * request](https://developers.google.com/authorized-buyers/rtb/downloads/realtime-bidding-proto) does not contain one of the vendor type IDs that were declared or detected for a given
     * creative, and a bid is submitted with that creative, the bid will be filtered before the auction.
     */
-  var detectedVendorIds: js.UndefOr[js.Array[Double]] = js.native
+  var detectedVendorIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** The last time the creative status was updated. Can be used to filter the response of the creatives.list method. */
-  var lastStatusUpdate: js.UndefOr[String] = js.native
+  var lastStatusUpdate: js.UndefOr[String] = js.undefined
   
   /** Policy compliance of this creative when bidding in open auction, private auction, or auction packages (outside of Russia and China). */
-  var networkPolicyCompliance: js.UndefOr[PolicyCompliance] = js.native
+  var networkPolicyCompliance: js.UndefOr[PolicyCompliance] = js.undefined
   
   /**
     * Policy compliance of this creative when bidding in Open Bidding (outside of Russia and China). For the list of platform policies, see:
     * https://support.google.com/platformspolicy/answer/3013851.
     */
-  var platformPolicyCompliance: js.UndefOr[PolicyCompliance] = js.native
+  var platformPolicyCompliance: js.UndefOr[PolicyCompliance] = js.undefined
   
   /**
     * The policy compliance of this creative in Russia. When approved or disapproved, this applies to both deals and open auction in Russia. When pending review, this creative is allowed
     * to serve for deals but not for open auction.
     */
-  var russiaPolicyCompliance: js.UndefOr[PolicyCompliance] = js.native
+  var russiaPolicyCompliance: js.UndefOr[PolicyCompliance] = js.undefined
 }
 object CreativeServingDecision {
   

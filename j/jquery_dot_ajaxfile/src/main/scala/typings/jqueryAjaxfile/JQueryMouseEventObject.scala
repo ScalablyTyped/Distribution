@@ -2,11 +2,12 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryMouseEventObject extends JQueryInputEventObject {
+trait JQueryMouseEventObject
+  extends StObject
+     with JQueryInputEventObject {
   
   var button: Double = js.native
   

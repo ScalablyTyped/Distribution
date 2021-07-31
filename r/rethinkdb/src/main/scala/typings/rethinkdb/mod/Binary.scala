@@ -3,23 +3,23 @@ package typings.rethinkdb.mod
 import typings.rethinkdb.rethinkdbStrings.BINARY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Binary extends ReqlType {
+trait Binary
+  extends StObject
+     with ReqlType {
   
   @JSName("$reql_type$")
-  var Dollarreql_typeDollar_Binary: BINARY = js.native
+  var Dollarreql_typeDollar_Binary: BINARY
   
-  var data: String = js.native
+  var data: String
 }
 object Binary {
   
   @scala.inline
-  def apply(Dollarreql_typeDollar: BINARY, data: String): Binary = {
+  def apply(data: String): Binary = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("$reql_type$")(Dollarreql_typeDollar.asInstanceOf[js.Any])
+    __obj.updateDynamic("$reql_type$")("BINARY")
     __obj.asInstanceOf[Binary]
   }
   

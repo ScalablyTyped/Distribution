@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionExecutionOutput extends StObject {
   
   /**
     * Execution result information listed in the output details for an action execution.
     */
-  var executionResult: js.UndefOr[ActionExecutionResult] = js.native
+  var executionResult: js.UndefOr[ActionExecutionResult] = js.undefined
   
   /**
     * Details of output artifacts of the action that correspond to the action execution.
     */
-  var outputArtifacts: js.UndefOr[ArtifactDetailList] = js.native
+  var outputArtifacts: js.UndefOr[ArtifactDetailList] = js.undefined
   
   /**
     * The outputVariables field shows the key-value pairs that were output as part of that execution.
     */
-  var outputVariables: js.UndefOr[OutputVariablesMap] = js.native
+  var outputVariables: js.UndefOr[OutputVariablesMap] = js.undefined
 }
 object ActionExecutionOutput {
   

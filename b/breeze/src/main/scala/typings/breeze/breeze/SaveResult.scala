@@ -3,17 +3,15 @@ package typings.breeze.breeze
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveResult extends StObject {
   
-  var XHR: XMLHttpRequest = js.native
+  var XHR: XMLHttpRequest
   
-  var entities: js.Array[Entity] = js.native
+  var entities: js.Array[Entity]
   
-  var keyMappings: js.Array[KeyMapping] = js.native
+  var keyMappings: js.Array[KeyMapping]
 }
 object SaveResult {
   

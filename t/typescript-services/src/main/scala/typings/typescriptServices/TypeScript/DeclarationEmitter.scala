@@ -2,131 +2,129 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclarationEmitter extends StObject {
   
-  /* private */ def canEmitDeclarations(declAST: js.Any): js.Any = js.native
+  /* private */ def canEmitDeclarations(declAST: js.Any): js.Any
   
-  var compiler: js.Any = js.native
+  var compiler: js.Any
   
-  var declFile: js.Any = js.native
+  var declFile: js.Any
   
-  var document: Document = js.native
+  var document: Document
   
-  /* private */ def emitAccessorDeclarationComments(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitAccessorDeclarationComments(funcDecl: js.Any): js.Any
   
-  /* private */ def emitArgDecl(argDecl: js.Any, id: js.Any, isOptional: js.Any, isPrivate: js.Any): js.Any = js.native
+  /* private */ def emitArgDecl(argDecl: js.Any, id: js.Any, isOptional: js.Any, isPrivate: js.Any): js.Any
   
-  /* private */ def emitBaseList(bases: js.Any, useExtendsList: js.Any): js.Any = js.native
+  /* private */ def emitBaseList(bases: js.Any, useExtendsList: js.Any): js.Any
   
-  /* private */ def emitCallSignature(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitCallSignature(funcDecl: js.Any): js.Any
   
-  /* private */ def emitClassElementModifiers(modifiers: js.Any): js.Any = js.native
+  /* private */ def emitClassElementModifiers(modifiers: js.Any): js.Any
   
-  /* private */ def emitClassMembersFromConstructorDefinition(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitClassMembersFromConstructorDefinition(funcDecl: js.Any): js.Any
   
-  /* private */ def emitComment(comment: js.Any): js.Any = js.native
+  /* private */ def emitComment(comment: js.Any): js.Any
   
-  /* private */ def emitConstructSignature(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitConstructSignature(funcDecl: js.Any): js.Any
   
-  /* private */ def emitDeclFlags(declarationAST: js.Any, typeString: js.Any): js.Any = js.native
+  /* private */ def emitDeclFlags(declarationAST: js.Any, typeString: js.Any): js.Any
   
-  /* private */ def emitDeclarationComments(ast: js.Any, endLine: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationComments(ast: js.Any, endLine: js.Any): js.Any
   
-  def emitDeclarations(sourceUnit: SourceUnit): Unit = js.native
+  def emitDeclarations(sourceUnit: SourceUnit): Unit
   
-  /* private */ def emitDeclarationsForAST(ast: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForAST(ast: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForClassDeclaration(classDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForClassDeclaration(classDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForConstructorDeclaration(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForConstructorDeclaration(funcDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForEnumDeclaration(moduleDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForEnumDeclaration(moduleDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForExportAssignment(ast: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForExportAssignment(ast: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForFunctionDeclaration(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForFunctionDeclaration(funcDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForGetAccessor(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForGetAccessor(funcDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForImportDeclaration(importDeclAST: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForImportDeclaration(importDeclAST: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForInterfaceDeclaration(interfaceDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForInterfaceDeclaration(interfaceDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForList(list: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForList(list: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForMemberVariableDeclaration(varDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForMemberVariableDeclaration(varDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForModuleDeclaration(moduleDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForModuleDeclaration(moduleDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForSetAccessor(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForSetAccessor(funcDecl: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForSourceUnit(sourceUnit: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForSourceUnit(sourceUnit: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForVariableDeclaration(variableDeclaration: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForVariableDeclaration(variableDeclaration: js.Any): js.Any
   
-  /* private */ def emitDeclarationsForVariableStatement(variableStatement: js.Any): js.Any = js.native
+  /* private */ def emitDeclarationsForVariableStatement(variableStatement: js.Any): js.Any
   
-  /* private */ def emitHeritageClause(clause: js.Any): js.Any = js.native
+  /* private */ def emitHeritageClause(clause: js.Any): js.Any
   
-  /* private */ def emitHeritageClauses(clauses: js.Any): js.Any = js.native
+  /* private */ def emitHeritageClauses(clauses: js.Any): js.Any
   
-  /* private */ def emitIndent(): js.Any = js.native
+  /* private */ def emitIndent(): js.Any
   
-  /* private */ def emitIndexMemberDeclaration(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitIndexMemberDeclaration(funcDecl: js.Any): js.Any
   
-  /* private */ def emitIndexSignature(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitIndexSignature(funcDecl: js.Any): js.Any
   
-  /* private */ def emitMemberAccessorDeclaration(funcDecl: js.Any, modifiers: js.Any, name: js.Any): js.Any = js.native
+  /* private */ def emitMemberAccessorDeclaration(funcDecl: js.Any, modifiers: js.Any, name: js.Any): js.Any
   
-  /* private */ def emitMemberFunctionDeclaration(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitMemberFunctionDeclaration(funcDecl: js.Any): js.Any
   
-  /* private */ def emitMethodSignature(funcDecl: js.Any): js.Any = js.native
+  /* private */ def emitMethodSignature(funcDecl: js.Any): js.Any
   
-  var emitOptions: js.Any = js.native
+  var emitOptions: js.Any
   
-  /* private */ def emitParameterList(isPrivate: js.Any, parameterList: js.Any): js.Any = js.native
+  /* private */ def emitParameterList(isPrivate: js.Any, parameterList: js.Any): js.Any
   
-  /* private */ def emitParameters(isPrivate: js.Any, parameterList: js.Any): js.Any = js.native
+  /* private */ def emitParameters(isPrivate: js.Any, parameterList: js.Any): js.Any
   
-  /* private */ def emitPropertySignature(varDecl: js.Any): js.Any = js.native
+  /* private */ def emitPropertySignature(varDecl: js.Any): js.Any
   
-  /* private */ def emitReferencePaths(sourceUnit: js.Any): js.Any = js.native
+  /* private */ def emitReferencePaths(sourceUnit: js.Any): js.Any
   
-  /* private */ def emitSeparatedList(list: js.Any): js.Any = js.native
+  /* private */ def emitSeparatedList(list: js.Any): js.Any
   
-  /* private */ def emitTypeNamesMember(memberName: js.Any, emitIndent: js.Any): js.Any = js.native
+  /* private */ def emitTypeNamesMember(memberName: js.Any, emitIndent: js.Any): js.Any
   
-  /* private */ def emitTypeOfVariableDeclaratorOrParameter(boundDecl: js.Any): js.Any = js.native
+  /* private */ def emitTypeOfVariableDeclaratorOrParameter(boundDecl: js.Any): js.Any
   
-  /* private */ def emitTypeParameters(typeParams: js.Any, funcSignature: js.Any): js.Any = js.native
+  /* private */ def emitTypeParameters(typeParams: js.Any, funcSignature: js.Any): js.Any
   
-  /* private */ def emitTypeSignature(ast: js.Any, `type`: js.Any): js.Any = js.native
+  /* private */ def emitTypeSignature(ast: js.Any, `type`: js.Any): js.Any
   
-  /* private */ def emitVariableDeclarator(varDecl: js.Any, isFirstVarInList: js.Any, isLastVarInList: js.Any): js.Any = js.native
+  /* private */ def emitVariableDeclarator(varDecl: js.Any, isFirstVarInList: js.Any, isLastVarInList: js.Any): js.Any
   
-  var emittedReferencePaths: js.Any = js.native
+  var emittedReferencePaths: js.Any
   
-  var emittingFileName: js.Any = js.native
+  var emittingFileName: js.Any
   
-  /* private */ def getDeclFlagsString(pullDecl: js.Any, typeString: js.Any): js.Any = js.native
+  /* private */ def getDeclFlagsString(pullDecl: js.Any, typeString: js.Any): js.Any
   
-  /* private */ def getIndentString(declIndent: js.Any): js.Any = js.native
+  /* private */ def getIndentString(declIndent: js.Any): js.Any
   
-  def getOutputFile(): OutputFile = js.native
+  def getOutputFile(): OutputFile
   
-  var indenter: js.Any = js.native
+  var indenter: js.Any
   
-  /* private */ def isOverloadedCallSignature(funcDecl: js.Any): js.Any = js.native
+  /* private */ def isOverloadedCallSignature(funcDecl: js.Any): js.Any
   
-  /* private */ def resolveScriptReference(document: js.Any, reference: js.Any): js.Any = js.native
+  /* private */ def resolveScriptReference(document: js.Any, reference: js.Any): js.Any
   
-  var semanticInfoChain: js.Any = js.native
+  var semanticInfoChain: js.Any
   
-  /* private */ def writeDeclarationComments(declComments: js.Any, endLine: js.Any): js.Any = js.native
+  /* private */ def writeDeclarationComments(declComments: js.Any, endLine: js.Any): js.Any
 }
 object DeclarationEmitter {
   

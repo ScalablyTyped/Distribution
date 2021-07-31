@@ -3,25 +3,23 @@ package typings.roads
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CacheMaxAge extends StObject {
     
-    var cacheMaxAge: js.UndefOr[Double] = js.native
+    var cacheMaxAge: js.UndefOr[Double] = js.undefined
     
-    var requestHeaders: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var requestHeaders: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var responseHeaders: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var responseHeaders: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var supportsCredentials: js.UndefOr[Boolean] = js.native
+    var supportsCredentials: js.UndefOr[Boolean] = js.undefined
     
-    var validMethods: js.UndefOr[js.Array[String]] = js.native
+    var validMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var validOrigins: js.UndefOr[js.Array[String]] = js.native
+    var validOrigins: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CacheMaxAge {
     

@@ -2,24 +2,22 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // NotificationPayloads
-@js.native
 trait BaseNotificationPayload extends StObject {
   
-  var badge: js.UndefOr[Double] = js.native
+  var badge: js.UndefOr[Double] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var payload: js.Object = js.native
+  var payload: js.Object
   
-  var sound: js.UndefOr[String] = js.native
+  var sound: js.UndefOr[String] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object BaseNotificationPayload {
   

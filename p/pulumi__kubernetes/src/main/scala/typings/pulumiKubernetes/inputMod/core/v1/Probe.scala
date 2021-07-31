@@ -3,54 +3,52 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
   */
-@js.native
 trait Probe extends StObject {
   
   /**
     * One and only one of the following should be specified. Exec specifies the action to take.
     */
-  var exec: js.UndefOr[Input[ExecAction]] = js.native
+  var exec: js.UndefOr[Input[ExecAction]] = js.undefined
   
   /**
     * Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
     */
-  var failureThreshold: js.UndefOr[Input[Double]] = js.native
+  var failureThreshold: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * HTTPGet specifies the http request to perform.
     */
-  var httpGet: js.UndefOr[Input[HTTPGetAction]] = js.native
+  var httpGet: js.UndefOr[Input[HTTPGetAction]] = js.undefined
   
   /**
     * Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var initialDelaySeconds: js.UndefOr[Input[Double]] = js.native
+  var initialDelaySeconds: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
     */
-  var periodSeconds: js.UndefOr[Input[Double]] = js.native
+  var periodSeconds: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.
     */
-  var successThreshold: js.UndefOr[Input[Double]] = js.native
+  var successThreshold: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
     */
-  var tcpSocket: js.UndefOr[Input[TCPSocketAction]] = js.native
+  var tcpSocket: js.UndefOr[Input[TCPSocketAction]] = js.undefined
   
   /**
     * Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var timeoutSeconds: js.UndefOr[Input[Double]] = js.native
+  var timeoutSeconds: js.UndefOr[Input[Double]] = js.undefined
 }
 object Probe {
   

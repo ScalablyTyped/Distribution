@@ -2,7 +2,6 @@ package typings.naverWhale.whale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -15,54 +14,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object browsingData {
   
-  @js.native
   trait DataTypeSet extends StObject {
     
     /** Optional. Websites' appcaches.  */
-    var appcache: js.UndefOr[Boolean] = js.native
+    var appcache: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The browser's cache. Note: when removing data, this clears the entire cache: it is not limited to the range you specify.  */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The browser's cookies.  */
-    var cookies: js.UndefOr[Boolean] = js.native
+    var cookies: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The browser's download list.  */
-    var downloads: js.UndefOr[Boolean] = js.native
+    var downloads: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Websites' file systems.  */
-    var fileSystems: js.UndefOr[Boolean] = js.native
+    var fileSystems: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The browser's stored form data.  */
-    var formData: js.UndefOr[Boolean] = js.native
+    var formData: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The browser's history.  */
-    var history: js.UndefOr[Boolean] = js.native
+    var history: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Websites' IndexedDB data.  */
-    var indexedDB: js.UndefOr[Boolean] = js.native
+    var indexedDB: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Websites' local storage data.  */
-    var localStorage: js.UndefOr[Boolean] = js.native
+    var localStorage: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Stored passwords.  */
-    var passwords: js.UndefOr[Boolean] = js.native
+    var passwords: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Plugins' data.  */
-    var pluginData: js.UndefOr[Boolean] = js.native
+    var pluginData: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Server-bound certificates.  */
-    var serverBoundCertificates: js.UndefOr[Boolean] = js.native
+    var serverBoundCertificates: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional.
       * Since Chrome 39.
       * Service Workers.
       */
-    var serviceWorkers: js.UndefOr[Boolean] = js.native
+    var serviceWorkers: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Websites' WebSQL data.  */
-    var webSQL: js.UndefOr[Boolean] = js.native
+    var webSQL: js.UndefOr[Boolean] = js.undefined
   }
   object DataTypeSet {
     
@@ -161,17 +159,16 @@ object browsingData {
     }
   }
   
-  @js.native
   trait OriginTypes extends StObject {
     
     /** Optional. Extensions and packaged applications a user has installed (be _really_ careful!).  */
-    var extension: js.UndefOr[Boolean] = js.native
+    var `extension`: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Websites that have been installed as hosted applications (be careful!).  */
-    var protectedWeb: js.UndefOr[Boolean] = js.native
+    var protectedWeb: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. Normal websites.  */
-    var unprotectedWeb: js.UndefOr[Boolean] = js.native
+    var unprotectedWeb: js.UndefOr[Boolean] = js.undefined
   }
   object OriginTypes {
     
@@ -204,7 +201,6 @@ object browsingData {
     }
   }
   
-  @js.native
   trait RemovalOptions extends StObject {
     
     /**
@@ -212,10 +208,10 @@ object browsingData {
       * Since Chrome 21.
       * An object whose properties specify which origin types ought to be cleared. If this object isn't specified, it defaults to clearing only "unprotected" origins. Please ensure that you really want to remove application data before adding 'protectedWeb' or 'extensions'.
       */
-    var originTypes: js.UndefOr[typings.chrome.chrome.browsingData.OriginTypes] = js.native
+    var originTypes: js.UndefOr[typings.chrome.chrome.browsingData.OriginTypes] = js.undefined
     
     /** Optional. Remove data accumulated on or after this date, represented in milliseconds since the epoch (accessible via the getTime method of the JavaScript Date object). If absent, defaults to 0 (which would remove all browsing data).  */
-    var since: js.UndefOr[Double] = js.native
+    var since: js.UndefOr[Double] = js.undefined
   }
   object RemovalOptions {
     
@@ -242,16 +238,15 @@ object browsingData {
     }
   }
   
-  @js.native
   trait SettingsCallback extends StObject {
     
     /** All of the types will be present in the result, with values of true if they are permitted to be removed (e.g., by enterprise policy) and false if not. */
-    var dataRemovalPermitted: typings.chrome.chrome.browsingData.DataTypeSet = js.native
+    var dataRemovalPermitted: typings.chrome.chrome.browsingData.DataTypeSet
     
     /** All of the types will be present in the result, with values of true if they are both selected to be removed and permitted to be removed, otherwise false. */
-    var dataToRemove: typings.chrome.chrome.browsingData.DataTypeSet = js.native
+    var dataToRemove: typings.chrome.chrome.browsingData.DataTypeSet
     
-    var options: typings.chrome.chrome.browsingData.RemovalOptions = js.native
+    var options: typings.chrome.chrome.browsingData.RemovalOptions
   }
   object SettingsCallback {
     

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Service extends StObject {
   
   /** Type used for App Engine services. */
-  var appEngine: js.UndefOr[AppEngine] = js.native
+  var appEngine: js.UndefOr[AppEngine] = js.undefined
   
   /** Type used for Cloud Endpoints services. */
-  var cloudEndpoints: js.UndefOr[CloudEndpoints] = js.native
+  var cloudEndpoints: js.UndefOr[CloudEndpoints] = js.undefined
   
   /** Type used for Istio services that live in a Kubernetes cluster. */
-  var clusterIstio: js.UndefOr[ClusterIstio] = js.native
+  var clusterIstio: js.UndefOr[ClusterIstio] = js.undefined
   
   /** Custom service type. */
-  var custom: js.UndefOr[js.Any] = js.native
+  var custom: js.UndefOr[js.Any] = js.undefined
   
   /** Name used for UI elements listing this Service. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Type used for Istio services scoped to an Istio mesh. */
-  var meshIstio: js.UndefOr[MeshIstio] = js.native
+  var meshIstio: js.UndefOr[MeshIstio] = js.undefined
   
   /** Resource name for this Service. The format is: projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID] */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Configuration for how to query telemetry on a Service. */
-  var telemetry: js.UndefOr[Telemetry] = js.native
+  var telemetry: js.UndefOr[Telemetry] = js.undefined
 }
 object Service {
   

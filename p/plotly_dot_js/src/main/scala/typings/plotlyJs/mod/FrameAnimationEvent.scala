@@ -2,17 +2,15 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameAnimationEvent extends StObject {
   
-  var animation: typings.plotlyJs.anon.Frame = js.native
+  var animation: typings.plotlyJs.anon.Frame
   
-  var frame: Frame = js.native
+  var frame: Frame
   
-  var name: String = js.native
+  var name: String
 }
 object FrameAnimationEvent {
   

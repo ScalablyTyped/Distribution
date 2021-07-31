@@ -3,19 +3,17 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.data.Manager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanoramaMarker extends StObject {
   
-  def getIconSet(): js.Promise[IPanoramaMarkerIconSet] = js.native
+  def getIconSet(): js.Promise[IPanoramaMarkerIconSet]
   
-  def getPanorama(): IPanorama = js.native
+  def getPanorama(): IPanorama
   
-  def getPosition(): js.Array[Double] = js.native
+  def getPosition(): js.Array[Double]
   
-  var properties: Manager = js.native
+  var properties: Manager
 }
 object IPanoramaMarker {
   

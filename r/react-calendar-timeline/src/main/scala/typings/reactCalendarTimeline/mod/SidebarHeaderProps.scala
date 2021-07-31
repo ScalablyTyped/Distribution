@@ -5,17 +5,15 @@ import typings.reactCalendarTimeline.reactCalendarTimelineStrings.left
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SidebarHeaderProps[Data] extends StObject {
   
-  def children(props: SidebarHeaderChildrenFnProps[Data]): ReactNode = js.native
+  def children(props: SidebarHeaderChildrenFnProps[Data]): ReactNode
   
-  var headerData: js.UndefOr[Data] = js.native
+  var headerData: js.UndefOr[Data] = js.undefined
   
-  var variant: js.UndefOr[left | right] = js.native
+  var variant: js.UndefOr[left | right] = js.undefined
 }
 object SidebarHeaderProps {
   
@@ -26,7 +24,7 @@ object SidebarHeaderProps {
   }
   
   @scala.inline
-  implicit class SidebarHeaderPropsMutableBuilder[Self <: SidebarHeaderProps[_], Data] (val x: Self with SidebarHeaderProps[Data]) extends AnyVal {
+  implicit class SidebarHeaderPropsMutableBuilder[Self <: SidebarHeaderProps[?], Data] (val x: Self & SidebarHeaderProps[Data]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

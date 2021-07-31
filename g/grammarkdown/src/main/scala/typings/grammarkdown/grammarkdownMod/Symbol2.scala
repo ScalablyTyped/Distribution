@@ -2,21 +2,19 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Symbol2 extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var kind: SymbolKind = js.native
+  var kind: SymbolKind
   
-  var locals: js.UndefOr[SymbolTable] = js.native
+  var locals: js.UndefOr[SymbolTable] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var parent: js.UndefOr[Symbol2] = js.native
+  var parent: js.UndefOr[Symbol2] = js.undefined
 }
 object Symbol2 {
   

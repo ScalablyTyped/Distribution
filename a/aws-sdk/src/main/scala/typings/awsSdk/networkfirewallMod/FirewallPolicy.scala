@@ -2,36 +2,34 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallPolicy extends StObject {
   
   /**
     * References to the stateless rule groups that are used in the policy. These define the inspection criteria in stateful rules. 
     */
-  var StatefulRuleGroupReferences: js.UndefOr[typings.awsSdk.networkfirewallMod.StatefulRuleGroupReferences] = js.native
+  var StatefulRuleGroupReferences: js.UndefOr[typings.awsSdk.networkfirewallMod.StatefulRuleGroupReferences] = js.undefined
   
   /**
     * The custom action definitions that are available for use in the firewall policy's StatelessDefaultActions setting. You name each custom action that you define, and then you can use it by name in your default actions specifications.
     */
-  var StatelessCustomActions: js.UndefOr[CustomActions] = js.native
+  var StatelessCustomActions: js.UndefOr[CustomActions] = js.undefined
   
   /**
     * The actions to take on a packet if it doesn't match any of the stateless rules in the policy. If you want non-matching packets to be forwarded for stateful inspection, specify aws:forward_to_sfe.  You must specify one of the standard actions: aws:pass, aws:drop, or aws:forward_to_sfe. In addition, you can specify custom actions that are compatible with your standard section choice. For example, you could specify ["aws:pass"] or you could specify ["aws:pass", “customActionName”]. For information about compatibility, see the custom action descriptions under CustomAction.
     */
-  var StatelessDefaultActions: StatelessActions = js.native
+  var StatelessDefaultActions: StatelessActions
   
   /**
     * The actions to take on a fragmented packet if it doesn't match any of the stateless rules in the policy. If you want non-matching fragmented packets to be forwarded for stateful inspection, specify aws:forward_to_sfe.  You must specify one of the standard actions: aws:pass, aws:drop, or aws:forward_to_sfe. In addition, you can specify custom actions that are compatible with your standard section choice. For example, you could specify ["aws:pass"] or you could specify ["aws:pass", “customActionName”]. For information about compatibility, see the custom action descriptions under CustomAction.
     */
-  var StatelessFragmentDefaultActions: StatelessActions = js.native
+  var StatelessFragmentDefaultActions: StatelessActions
   
   /**
     * References to the stateless rule groups that are used in the policy. These define the matching criteria in stateless rules. 
     */
-  var StatelessRuleGroupReferences: js.UndefOr[typings.awsSdk.networkfirewallMod.StatelessRuleGroupReferences] = js.native
+  var StatelessRuleGroupReferences: js.UndefOr[typings.awsSdk.networkfirewallMod.StatelessRuleGroupReferences] = js.undefined
 }
 object FirewallPolicy {
   

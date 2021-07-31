@@ -7,14 +7,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolbarMod {
   
   @JSImport("@ionic/core/dist/types/components/toolbar/toolbar", "Toolbar")
   @js.native
-  class Toolbar () extends ComponentInterface {
+  class Toolbar ()
+    extends StObject
+       with ComponentInterface {
     
     def childrenStyle(ev: CustomEvent[StyleEventDetail]): Unit = js.native
     

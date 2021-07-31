@@ -8,7 +8,6 @@ import typings.react.mod.ReactText
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typingMod {
@@ -40,7 +39,7 @@ object typingMod {
   
   type ProFieldRequestData[T, U] = js.Function2[/* params */ U, /* props */ T, js.Promise[js.Array[Dictkey]]]
   
-  type ProSchema[T, U, Extra] = (DataIndex[T, U]) with Extra
+  type ProSchema[T, U, Extra] = (DataIndex[T, U]) & Extra
   
   /* Rewritten from type alias, can be one of: 
     - typings.antDesignProUtils.antDesignProUtilsStrings.form
@@ -48,7 +47,7 @@ object typingMod {
     - typings.antDesignProUtils.antDesignProUtilsStrings.descriptions
     - typings.antDesignProUtils.antDesignProUtilsStrings.table
     - typings.antDesignProUtils.antDesignProUtilsStrings.cardList
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type ProSchemaComponentTypes = js.UndefOr[_ProSchemaComponentTypes]
   
@@ -56,28 +55,27 @@ object typingMod {
   
   type ProSchemaValueEnumObj = StringDictionary[ProSchemaValueEnumType | ReactNode]
   
-  @js.native
   trait ProSchemaValueEnumType extends StObject {
     
     /**
       * @name 自定义的颜色
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * @name 是否禁用
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 预定的颜色
       */
-    var status: String = js.native
+    var status: String
     
     /**
       * @name 演示的文案
       */
-    var text: ReactNode = js.native
+    var text: ReactNode
   }
   object ProSchemaValueEnumType {
     

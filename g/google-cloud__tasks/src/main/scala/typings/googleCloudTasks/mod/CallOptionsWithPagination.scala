@@ -4,20 +4,20 @@ import typings.googleCloudTasks.googleCloudTasksBooleans.`false`
 import typings.googleGax.gaxMod.CallOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallOptionsWithPagination extends CallOptions {
+trait CallOptionsWithPagination
+  extends StObject
+     with CallOptions {
   
   @JSName("autoPaginate")
-  var autoPaginate_CallOptionsWithPagination: `false` = js.native
+  var autoPaginate_CallOptionsWithPagination: `false`
 }
 object CallOptionsWithPagination {
   
   @scala.inline
-  def apply(autoPaginate: `false`): CallOptionsWithPagination = {
-    val __obj = js.Dynamic.literal(autoPaginate = autoPaginate.asInstanceOf[js.Any])
+  def apply(): CallOptionsWithPagination = {
+    val __obj = js.Dynamic.literal(autoPaginate = false)
     __obj.asInstanceOf[CallOptionsWithPagination]
   }
   

@@ -4,33 +4,32 @@ import typings.reactNative.mod.ImageSourcePropType
 import typings.reactNative.mod.ImageURISource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageProps
-  extends ResponderProps
+  extends StObject
+     with ResponderProps
      with CommonMaskProps
      with ClipProps
      with TouchableProps {
   
-  var height: js.UndefOr[NumberProp] = js.native
+  var height: js.UndefOr[NumberProp] = js.undefined
   
-  var href: js.UndefOr[ImageSourcePropType] = js.native
+  var href: js.UndefOr[ImageSourcePropType] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[NumberProp] = js.native
+  var opacity: js.UndefOr[NumberProp] = js.undefined
   
-  var preserveAspectRatio: js.UndefOr[String] = js.native
+  var preserveAspectRatio: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[NumberProp] = js.native
+  var width: js.UndefOr[NumberProp] = js.undefined
   
-  var x: js.UndefOr[NumberProp] = js.native
+  var x: js.UndefOr[NumberProp] = js.undefined
   
-  var xlinkHref: js.UndefOr[ImageSourcePropType] = js.native
+  var xlinkHref: js.UndefOr[ImageSourcePropType] = js.undefined
   
-  var y: js.UndefOr[NumberProp] = js.native
+  var y: js.UndefOr[NumberProp] = js.undefined
 }
 object ImageProps {
   

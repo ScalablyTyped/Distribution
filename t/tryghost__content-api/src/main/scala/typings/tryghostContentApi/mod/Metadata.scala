@@ -2,15 +2,13 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var meta_description: js.UndefOr[Nullable[String]] = js.native
+  var meta_description: js.UndefOr[Nullable[String]] = js.undefined
   
-  var meta_title: js.UndefOr[Nullable[String]] = js.native
+  var meta_title: js.UndefOr[Nullable[String]] = js.undefined
 }
 object Metadata {
   

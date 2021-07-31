@@ -3,25 +3,23 @@ package typings.paypalPayoutsSdk.mod
 import typings.paypalPayoutsSdk.anon.Alternatefullname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayoutItemDetail extends StObject {
   
-  var amount: Currency = js.native
+  var amount: Currency
   
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
-  var receiver: String = js.native
+  var receiver: String
   
-  var recipient_name: js.UndefOr[Alternatefullname] = js.native
+  var recipient_name: js.UndefOr[Alternatefullname] = js.undefined
   
-  var recipient_type: js.UndefOr[RecipientType] = js.native
+  var recipient_type: js.UndefOr[RecipientType] = js.undefined
   
-  var recipient_wallet: js.UndefOr[RecipientWallet] = js.native
+  var recipient_wallet: js.UndefOr[RecipientWallet] = js.undefined
   
-  var sender_item_id: js.UndefOr[String] = js.native
+  var sender_item_id: js.UndefOr[String] = js.undefined
 }
 object PayoutItemDetail {
   

@@ -7,36 +7,34 @@ import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import typings.inversify.interfacesMod.interfaces.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializationMod {
   
-  @JSImport("inversify/dts/utils/serialization", "circularDependencyToException")
+  @JSImport("inversify/dts/utils/serialization", JSImport.Namespace)
   @js.native
-  def circularDependencyToException(request: Request): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("inversify/dts/utils/serialization", "getFunctionName")
-  @js.native
-  def getFunctionName(v: js.Any): String = js.native
+  @scala.inline
+  def circularDependencyToException(request: Request): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("circularDependencyToException")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("inversify/dts/utils/serialization", "getServiceIdentifierAsString")
-  @js.native
-  def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[_]): String = js.native
+  @scala.inline
+  def getFunctionName(v: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("inversify/dts/utils/serialization", "listMetadataForTarget")
-  @js.native
-  def listMetadataForTarget(serviceIdentifierString: String, target: Target): String = js.native
+  @scala.inline
+  def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceIdentifierAsString")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("inversify/dts/utils/serialization", "listRegisteredBindingsForServiceIdentifier")
-  @js.native
+  @scala.inline
+  def listMetadataForTarget(serviceIdentifierString: String, target: Target): String = (^.asInstanceOf[js.Dynamic].applyDynamic("listMetadataForTarget")(serviceIdentifierString.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
   def listRegisteredBindingsForServiceIdentifier(
     container: Container,
     serviceIdentifier: String,
     getBindings: js.Function2[
       /* container */ Container, 
-      /* serviceIdentifier */ ServiceIdentifier[_], 
-      js.Array[Binding[_]]
+      /* serviceIdentifier */ ServiceIdentifier[js.Any], 
+      js.Array[Binding[js.Any]]
     ]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("listRegisteredBindingsForServiceIdentifier")(container.asInstanceOf[js.Any], serviceIdentifier.asInstanceOf[js.Any], getBindings.asInstanceOf[js.Any])).asInstanceOf[String]
 }

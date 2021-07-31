@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddThingToThingGroupRequest extends StObject {
   
   /**
     * Override dynamic thing groups with static thing groups when 10-group limit is reached. If a thing belongs to 10 thing groups, and one or more of those groups are dynamic thing groups, adding a thing to a static group removes the thing from the last dynamic group.
     */
-  var overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.native
+  var overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined
   
   /**
     * The ARN of the thing to add to a group.
     */
-  var thingArn: js.UndefOr[ThingArn] = js.native
+  var thingArn: js.UndefOr[ThingArn] = js.undefined
   
   /**
     * The ARN of the group to which you are adding a thing.
     */
-  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.native
+  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.undefined
   
   /**
     * The name of the group to which you are adding a thing.
     */
-  var thingGroupName: js.UndefOr[ThingGroupName] = js.native
+  var thingGroupName: js.UndefOr[ThingGroupName] = js.undefined
   
   /**
     * The name of the thing to add to a group.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
 }
 object AddThingToThingGroupRequest {
   

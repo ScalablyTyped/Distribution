@@ -3,13 +3,13 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageLoadEventData extends ImageLoadEventDataAndroid {
+trait ImageLoadEventData
+  extends StObject
+     with ImageLoadEventDataAndroid {
   
-  var source: Url = js.native
+  var source: Url
 }
 object ImageLoadEventData {
   

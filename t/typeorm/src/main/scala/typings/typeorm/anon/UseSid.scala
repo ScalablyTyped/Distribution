@@ -2,13 +2,11 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseSid extends StObject {
   
-  var useSid: Boolean = js.native
+  var useSid: Boolean
 }
 object UseSid {
   

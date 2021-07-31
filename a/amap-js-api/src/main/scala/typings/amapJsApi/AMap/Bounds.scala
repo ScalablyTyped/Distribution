@@ -2,42 +2,40 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bounds extends StObject {
   
   /**
     * 指定点坐标是否在矩形范围内
     * @param point 制定坐标
     */
-  def contains(point: LocationValue): Boolean = js.native
+  def contains(point: LocationValue): Boolean
   
   /**
     * 获取当前Bounds的中心点经纬度坐标
     */
-  def getCenter(): LngLat = js.native
+  def getCenter(): LngLat
   
   /**
     * 获取东北角坐标
     */
-  def getNorthEast(): LngLat = js.native
+  def getNorthEast(): LngLat
   
   /**
     * 获取西北角坐标
     */
-  def getNorthWest(): LngLat = js.native
+  def getNorthWest(): LngLat
   
   /**
     * 获取东南角坐标
     */
-  def getSouthEast(): LngLat = js.native
+  def getSouthEast(): LngLat
   
   /**
     * 获取西南角坐标
     */
-  def getSouthWest(): LngLat = js.native
+  def getSouthWest(): LngLat
 }
 object Bounds {
   

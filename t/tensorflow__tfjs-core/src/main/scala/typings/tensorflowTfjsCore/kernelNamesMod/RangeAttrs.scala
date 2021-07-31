@@ -4,19 +4,17 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeAttrs extends StObject {
   
-  var dtype: float32 | int32 = js.native
+  var dtype: float32 | int32
   
-  var start: Double = js.native
+  var start: Double
   
-  var step: Double = js.native
+  var step: Double
   
-  var stop: Double = js.native
+  var stop: Double
 }
 object RangeAttrs {
   

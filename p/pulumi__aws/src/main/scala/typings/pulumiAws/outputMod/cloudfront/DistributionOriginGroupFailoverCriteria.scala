@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.cloudfront
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionOriginGroupFailoverCriteria extends StObject {
   
   /**
     * A list of HTTP status codes for the origin group
     */
-  var statusCodes: js.Array[Double] = js.native
+  var statusCodes: js.Array[Double]
 }
 object DistributionOriginGroupFailoverCriteria {
   

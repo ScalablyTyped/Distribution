@@ -2,25 +2,23 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response with the list of Process resources.
   */
-@js.native
 trait SchemaListScriptProcessesResponse extends StObject {
   
   /**
     * Token for the next page of results. If empty, there are no more pages
     * remaining.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of processes matching request parameters.
     */
-  var processes: js.UndefOr[js.Array[SchemaGoogleAppsScriptTypeProcess]] = js.native
+  var processes: js.UndefOr[js.Array[SchemaGoogleAppsScriptTypeProcess]] = js.undefined
 }
 object SchemaListScriptProcessesResponse {
   

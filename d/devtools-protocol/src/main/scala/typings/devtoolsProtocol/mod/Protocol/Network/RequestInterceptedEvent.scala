@@ -4,76 +4,74 @@ import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestInterceptedEvent extends StObject {
   
   /**
     * Details of the Authorization Challenge encountered. If this is set then
     * continueInterceptedRequest must contain an authChallengeResponse.
     */
-  var authChallenge: js.UndefOr[AuthChallenge] = js.native
+  var authChallenge: js.UndefOr[AuthChallenge] = js.undefined
   
   /**
     * The id of the frame that initiated the request.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Each request the page makes will have a unique id, however if any redirects are encountered
     * while processing that fetch, they will be reported with the same id as the original fetch.
     * Likewise if HTTP authentication is needed then the same fetch id will be used.
     */
-  var interceptionId: InterceptionId = js.native
+  var interceptionId: InterceptionId
   
   /**
     * Set if the request is a navigation that will result in a download.
     * Only present after response is received from the server (i.e. HeadersReceived stage).
     */
-  var isDownload: js.UndefOr[Boolean] = js.native
+  var isDownload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this is a navigation request, which can abort the navigation completely.
     */
-  var isNavigationRequest: Boolean = js.native
+  var isNavigationRequest: Boolean
   
   /**
     * Redirect location, only sent if a redirect was intercepted.
     */
-  var redirectUrl: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.undefined
   
-  var request: Request = js.native
+  var request: Request
   
   /**
     * If the intercepted request had a corresponding requestWillBeSent event fired for it, then
     * this requestId will be the same as the requestId present in the requestWillBeSent event.
     */
-  var requestId: js.UndefOr[RequestId] = js.native
+  var requestId: js.UndefOr[RequestId] = js.undefined
   
   /**
     * How the requested resource will be used.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
   
   /**
     * Response error if intercepted at response stage or if redirect occurred while intercepting
     * request.
     */
-  var responseErrorReason: js.UndefOr[ErrorReason] = js.native
+  var responseErrorReason: js.UndefOr[ErrorReason] = js.undefined
   
   /**
     * Response headers if intercepted at the response stage or if redirect occurred while
     * intercepting request or auth retry occurred.
     */
-  var responseHeaders: js.UndefOr[Headers] = js.native
+  var responseHeaders: js.UndefOr[Headers] = js.undefined
   
   /**
     * Response code if intercepted at response stage or if redirect occurred while intercepting
     * request or auth retry occurred.
     */
-  var responseStatusCode: js.UndefOr[integer] = js.native
+  var responseStatusCode: js.UndefOr[integer] = js.undefined
 }
 object RequestInterceptedEvent {
   

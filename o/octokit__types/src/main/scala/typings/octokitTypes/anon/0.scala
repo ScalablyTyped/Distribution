@@ -2,13 +2,11 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0`[T] extends StObject {
   
-  var previews: Array[T | String] = js.native
+  var previews: Array[T | String]
 }
 object `0` {
   
@@ -19,7 +17,7 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`[_], T] (val x: Self with `0`[T]) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`[?], T] (val x: Self & `0`[T]) extends AnyVal {
     
     @scala.inline
     def setPreviews(value: Array[T | String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])

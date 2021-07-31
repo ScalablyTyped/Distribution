@@ -2,7 +2,6 @@ package typings.markerAnimateUnobtrusive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,19 +9,24 @@ object global {
   @JSGlobal("MarkerWithGhost")
   @js.native
   class MarkerWithGhost ()
-    extends typings.markerAnimateUnobtrusive.MarkerWithGhost
+    extends StObject
+       with typings.markerAnimateUnobtrusive.MarkerWithGhost
   
   @JSGlobal("SlidingMarker")
   @js.native
   class SlidingMarker ()
-    extends typings.markerAnimateUnobtrusive.SlidingMarker {
+    extends StObject
+       with typings.markerAnimateUnobtrusive.SlidingMarker {
     def this(opts: SlidingMarkerOptions) = this()
   }
   object SlidingMarker {
     
-    /* static member */
-    @JSGlobal("SlidingMarker.initializeGlobally")
+    @JSGlobal("SlidingMarker")
     @js.native
-    def initializeGlobally(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def initializeGlobally(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeGlobally")().asInstanceOf[Unit]
   }
 }

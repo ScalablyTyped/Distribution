@@ -2,7 +2,6 @@ package typings.opentelemetryApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object samplingResultMod {
@@ -14,34 +13,39 @@ object samplingResultMod {
   object SamplingDecision extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SamplingDecision with Double] = js.native
+    def apply(value: Double): js.UndefOr[SamplingDecision & Double] = js.native
     
     /**
       * `Span.isRecording() === false`, span will not be recorded and all events
       * and attributes will be dropped.
       */
     @js.native
-    sealed trait NOT_RECORD extends SamplingDecision
-    /* 0 */ val NOT_RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.NOT_RECORD with Double = js.native
+    sealed trait NOT_RECORD
+      extends StObject
+         with SamplingDecision
+    /* 0 */ val NOT_RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.NOT_RECORD & Double = js.native
     
     /**
       * `Span.isRecording() === true`, but `Sampled` flag in {@link TraceFlags}
       * MUST NOT be set.
       */
     @js.native
-    sealed trait RECORD extends SamplingDecision
-    /* 1 */ val RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD with Double = js.native
+    sealed trait RECORD
+      extends StObject
+         with SamplingDecision
+    /* 1 */ val RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD & Double = js.native
     
     /**
       * `Span.isRecording() === true` AND `Sampled` flag in {@link TraceFlags}
       * MUST be set.
       */
     @js.native
-    sealed trait RECORD_AND_SAMPLED extends SamplingDecision
-    /* 2 */ val RECORD_AND_SAMPLED: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD_AND_SAMPLED with Double = js.native
+    sealed trait RECORD_AND_SAMPLED
+      extends StObject
+         with SamplingDecision
+    /* 2 */ val RECORD_AND_SAMPLED: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD_AND_SAMPLED & Double = js.native
   }
   
-  @js.native
   trait SamplingResult extends StObject {
     
     /**
@@ -49,12 +53,12 @@ object samplingResultMod {
       * Caller may call {@link Sampler}.shouldSample any number of times and
       * can safely cache the returned value.
       */
-    var attributes: js.UndefOr[js.Object] = js.native
+    var attributes: js.UndefOr[js.Object] = js.undefined
     
     /**
       * A sampling decision, refer to {@link SamplingDecision} for details.
       */
-    var decision: SamplingDecision = js.native
+    var decision: SamplingDecision
   }
   object SamplingResult {
     

@@ -3,26 +3,24 @@ package typings.reactNavigationRouters.anon
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<any> | @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.PartialState<std.Readonly<any>> | undefined}>,   type :string,   stale :false}>, 'stale' | 'key' | 'index' | 'routeNames' | 'history' | 'type'> & {  routes :std.Array<std.Pick<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.Route<string, object | undefined>, 'name' | 'params'>>} */
-@js.native
 trait PickReadonlykeystringinde extends StObject {
   
-  var history: js.UndefOr[js.Array[_]] = js.native
+  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var index: Double = js.native
+  var index: Double
   
-  var key: String = js.native
+  var key: String
   
-  var routeNames: js.Array[String] = js.native
+  var routeNames: js.Array[String]
   
-  var routes: js.Array[PickRoutestringobjectunde] = js.native
+  var routes: js.Array[PickRoutestringobjectunde]
   
-  var stale: `false` = js.native
+  var stale: `false`
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object PickReadonlykeystringinde {
   
@@ -32,10 +30,9 @@ object PickReadonlykeystringinde {
     key: String,
     routeNames: js.Array[String],
     routes: js.Array[PickRoutestringobjectunde],
-    stale: `false`,
     `type`: String
   ): PickReadonlykeystringinde = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickReadonlykeystringinde]
   }
@@ -44,7 +41,7 @@ object PickReadonlykeystringinde {
   implicit class PickReadonlykeystringindeMutableBuilder[Self <: PickReadonlykeystringinde] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

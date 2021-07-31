@@ -2,27 +2,36 @@ package typings.jsmediatags
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringUtilsMod {
   
   @JSImport("jsmediatags/build2/StringUtils", JSImport.Default)
   @js.native
-  class default protected () extends InternalDecodedString {
+  class default protected ()
+    extends StObject
+       with InternalDecodedString {
     def this(value: String, bytesReadCount: Double) = this()
+    
+    /* CompleteClass */
+    var _value: String = js.native
+    
+    /* CompleteClass */
+    var bytesReadCount: Double = js.native
+    
+    /* CompleteClass */
+    var length: Double = js.native
   }
   
   type DecodedString = InternalDecodedString
   
-  @js.native
   trait InternalDecodedString extends StObject {
     
-    var _value: String = js.native
+    var _value: String
     
-    var bytesReadCount: Double = js.native
+    var bytesReadCount: Double
     
-    var length: Double = js.native
+    var length: Double
   }
   object InternalDecodedString {
     

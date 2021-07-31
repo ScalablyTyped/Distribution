@@ -2,13 +2,11 @@ package typings.googleapis.languageV1Mod.languageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a sentence in the input document.
   */
-@js.native
 trait SchemaSentence extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaSentence extends StObject {
     * AnnotateTextRequest.Features.extract_document_sentiment is set to true,
     * this field will contain the sentiment for the sentence.
     */
-  var sentiment: js.UndefOr[SchemaSentiment] = js.native
+  var sentiment: js.UndefOr[SchemaSentiment] = js.undefined
   
   /**
     * The sentence text.
     */
-  var text: js.UndefOr[SchemaTextSpan] = js.native
+  var text: js.UndefOr[SchemaTextSpan] = js.undefined
 }
 object SchemaSentence {
   

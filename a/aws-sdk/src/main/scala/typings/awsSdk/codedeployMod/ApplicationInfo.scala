@@ -2,41 +2,39 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationInfo extends StObject {
   
   /**
     * The application ID.
     */
-  var applicationId: js.UndefOr[ApplicationId] = js.native
+  var applicationId: js.UndefOr[ApplicationId] = js.undefined
   
   /**
     * The application name.
     */
-  var applicationName: js.UndefOr[ApplicationName] = js.native
+  var applicationName: js.UndefOr[ApplicationName] = js.undefined
   
   /**
     * The destination platform type for deployment of the application (Lambda or Server).
     */
-  var computePlatform: js.UndefOr[ComputePlatform] = js.native
+  var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
   
   /**
     * The time at which the application was created.
     */
-  var createTime: js.UndefOr[Timestamp] = js.native
+  var createTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name for a connection to a GitHub account.
     */
-  var gitHubAccountName: js.UndefOr[GitHubAccountTokenName] = js.native
+  var gitHubAccountName: js.UndefOr[GitHubAccountTokenName] = js.undefined
   
   /**
     * True if the user has authenticated with GitHub for the specified application. Otherwise, false.
     */
-  var linkedToGitHub: js.UndefOr[Boolean] = js.native
+  var linkedToGitHub: js.UndefOr[Boolean] = js.undefined
 }
 object ApplicationInfo {
   

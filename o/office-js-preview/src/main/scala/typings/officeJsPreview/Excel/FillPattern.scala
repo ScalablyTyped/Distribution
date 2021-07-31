@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,65 +14,107 @@ sealed trait FillPattern extends StObject
 object FillPattern extends StObject {
   
   @js.native
-  sealed trait checker extends FillPattern
+  sealed trait checker
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait crissCross extends FillPattern
+  sealed trait crissCross
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait down extends FillPattern
+  sealed trait down
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait gray16 extends FillPattern
+  sealed trait gray16
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait gray25 extends FillPattern
+  sealed trait gray25
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait gray50 extends FillPattern
+  sealed trait gray50
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait gray75 extends FillPattern
+  sealed trait gray75
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait gray8 extends FillPattern
+  sealed trait gray8
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait grid extends FillPattern
+  sealed trait grid
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait horizontal extends FillPattern
+  sealed trait horizontal
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait lightDown extends FillPattern
+  sealed trait lightDown
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait lightHorizontal extends FillPattern
+  sealed trait lightHorizontal
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait lightUp extends FillPattern
+  sealed trait lightUp
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait lightVertical extends FillPattern
+  sealed trait lightVertical
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait linearGradient extends FillPattern
+  sealed trait linearGradient
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait none extends FillPattern
+  sealed trait none
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait rectangularGradient extends FillPattern
+  sealed trait rectangularGradient
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait semiGray75 extends FillPattern
+  sealed trait semiGray75
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait solid extends FillPattern
+  sealed trait solid
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait up extends FillPattern
+  sealed trait up
+    extends StObject
+       with FillPattern
   
   @js.native
-  sealed trait vertical extends FillPattern
+  sealed trait vertical
+    extends StObject
+       with FillPattern
 }

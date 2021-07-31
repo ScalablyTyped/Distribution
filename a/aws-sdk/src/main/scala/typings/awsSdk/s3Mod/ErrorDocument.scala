@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDocument extends StObject {
   
   /**
     * The object key name to use when a 4XX class error occurs.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
 }
 object ErrorDocument {
   

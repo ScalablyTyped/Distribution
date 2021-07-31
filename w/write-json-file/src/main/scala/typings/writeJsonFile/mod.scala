@@ -2,7 +2,6 @@ package typings.writeJsonFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,14 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(filePath: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(filePath: String, data: js.Any, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("write-json-file", JSImport.Namespace)
   @js.native
-  def apply(filePath: String, data: js.Any): js.Promise[Unit] = js.native
-  @JSImport("write-json-file", JSImport.Namespace)
-  @js.native
-  def apply(filePath: String, data: js.Any, options: Options): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Stringify and write JSON to a file atomically.
@@ -34,44 +35,41 @@ object mod {
   	writeJsonFile.sync('foo.json', {foo: true});
   	```
   	*/
-  @JSImport("write-json-file", "sync")
-  @js.native
-  def sync(filePath: String, data: js.Any): Unit = js.native
-  @JSImport("write-json-file", "sync")
-  @js.native
-  def sync(filePath: String, data: js.Any, options: Options): Unit = js.native
+  @scala.inline
+  def sync(filePath: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(filePath: String, data: js.Any, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Detect indentation automatically if the file exists.
     		@default false
     		*/
-    val detectIndent: js.UndefOr[Boolean] = js.native
+    val detectIndent: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Indentation as a string or number of spaces. Pass in `undefined` for no formatting.
     		@default '\t'
     		*/
-    val indent: js.UndefOr[String | Double] = js.native
+    val indent: js.UndefOr[String | Double] = js.undefined
     
     /**
     		Mode used when writing the file.
     		@default 0o666
     		*/
-    val mode: js.UndefOr[Double] = js.native
+    val mode: js.UndefOr[Double] = js.undefined
     
     /**
     		Passed into `JSON.stringify`.
     		*/
-    val replacer: js.UndefOr[Replacer | (js.Array[Double | String])] = js.native
+    val replacer: js.UndefOr[Replacer | (js.Array[Double | String])] = js.undefined
     
     /**
     		Sort the keys recursively. Optionally pass in a compare function.
     		@default false
     		*/
-    val sortKeys: js.UndefOr[Boolean | SortKeys] = js.native
+    val sortKeys: js.UndefOr[Boolean | SortKeys] = js.undefined
   }
   object Options {
     

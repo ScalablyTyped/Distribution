@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows to set a default size. This size will be used in case no further information si available. */
-@js.native
-trait XDefaultSizeTransmitter extends XInterface {
+trait XDefaultSizeTransmitter
+  extends StObject
+     with XInterface {
   
   /**
     * set a default size
     * @param aSize100ThMm specifies a size in hundredth mm.
     */
-  def setDefaultSize(aSize100ThMm: Size): Unit = js.native
+  def setDefaultSize(aSize100ThMm: Size): Unit
 }
 object XDefaultSizeTransmitter {
   

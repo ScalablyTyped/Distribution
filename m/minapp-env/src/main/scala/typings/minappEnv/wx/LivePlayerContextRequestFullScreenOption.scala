@@ -5,14 +5,12 @@ import typings.minappEnv.minappEnvNumbers.`0`
 import typings.minappEnv.minappEnvNumbers.`90`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LivePlayerContextRequestFullScreenOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[RequestFullScreenCompleteCallback] = js.native
+  var complete: js.UndefOr[RequestFullScreenCompleteCallback] = js.undefined
   
   /** 设置全屏时的方向
     *
@@ -20,13 +18,13 @@ trait LivePlayerContextRequestFullScreenOption extends StObject {
     * - 0: 正常竖向;
     * - 90: 屏幕逆时针90度;
     * - -90: 屏幕顺时针90度; */
-  var direction: js.UndefOr[`0` | `90` | `-90`] = js.native
+  var direction: js.UndefOr[`0` | `90` | `-90`] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[RequestFullScreenFailCallback] = js.native
+  var fail: js.UndefOr[RequestFullScreenFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[RequestFullScreenSuccessCallback] = js.native
+  var success: js.UndefOr[RequestFullScreenSuccessCallback] = js.undefined
 }
 object LivePlayerContextRequestFullScreenOption {
   

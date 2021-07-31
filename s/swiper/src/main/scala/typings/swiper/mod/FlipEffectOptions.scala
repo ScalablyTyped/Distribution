@@ -2,15 +2,13 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlipEffectOptions extends StObject {
   
-  var limitRotation: js.UndefOr[Boolean] = js.native
+  var limitRotation: js.UndefOr[Boolean] = js.undefined
   
-  var slideShadows: js.UndefOr[Boolean] = js.native
+  var slideShadows: js.UndefOr[Boolean] = js.undefined
 }
 object FlipEffectOptions {
   

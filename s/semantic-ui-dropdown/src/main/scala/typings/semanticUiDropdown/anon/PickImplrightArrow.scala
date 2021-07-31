@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl, 'rightArrow'> */
-@js.native
 trait PickImplrightArrow extends StObject {
   
-  var rightArrow: Double = js.native
+  var rightArrow: Double
 }
 object PickImplrightArrow {
   

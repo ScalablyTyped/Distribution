@@ -11,8 +11,8 @@ Resolve a relative path against a root path with validation
 | Full name          | resolve-path |
 | Keywords           | resolve, path, safe |
 | # releases         | 1 |
-| # dependents       | 37 |
-| # downloads        | 14662186 |
+| # dependents       | 41 |
+| # downloads        | 17715344 |
 | # stars            | 1 |
 
 ## Links

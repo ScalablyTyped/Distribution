@@ -8,7 +8,6 @@ import typings.workboxPrecaching.precacheControllerMod.PrecacheController.Instal
 import typings.workboxPrecaching.precacheEntryMod.PrecacheEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object precacheControllerMod {
@@ -33,14 +32,13 @@ object precacheControllerMod {
   }
   object PrecacheController {
     
-    @js.native
     trait InstallOptions extends StObject {
       
       var event: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.native
+      var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.undefined
     }
     object InstallOptions {
       

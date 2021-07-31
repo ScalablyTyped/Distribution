@@ -37,7 +37,6 @@ import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cytoscape.cytoscape.Css.EdgeLine */
@@ -53,23 +52,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Events<cytoscape.cytoscape.EdgeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.EdgeEndpoints<cytoscape.cytoscape.EdgeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.TransitionAnimation> */
-@js.native
 trait Edge extends StObject {
   
   /** The size of the arrow. */
-  var `arrow-scale`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `arrow-scale`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var color: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.native
+  var color: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.undefined
   
-  var `control-point-distance`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `control-point-distance`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var `control-point-distances`: js.UndefOr[PropertyValueEdge[String]] = js.native
+  var `control-point-distances`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
   
-  var `control-point-step-size`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `control-point-step-size`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var `control-point-weight`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `control-point-weight`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var `control-point-weights`: js.UndefOr[PropertyValueEdge[String]] = js.native
+  var `control-point-weights`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
   
   /**
     * The curving method used to separate two or more edges between two nodes;
@@ -84,222 +82,222 @@ trait Edge extends StObject {
     */
   var `curve-style`: js.UndefOr[
     PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]
-  ] = js.native
+  ] = js.undefined
   
-  var display: js.UndefOr[PropertyValue[EdgeSingular, none | displayed]] = js.native
+  var display: js.UndefOr[PropertyValue[EdgeSingular, none | displayed]] = js.undefined
   
-  var `edge-distances`: js.UndefOr[PropertyValueEdge[intersection | `node-position`]] = js.native
+  var `edge-distances`: js.UndefOr[PropertyValueEdge[intersection | `node-position`]] = js.undefined
   
-  var events: js.UndefOr[PropertyValue[EdgeSingular, yes | no]] = js.native
+  var events: js.UndefOr[PropertyValue[EdgeSingular, yes | no]] = js.undefined
   
-  var `font-family`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.native
+  var `font-family`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   
-  var `font-size`: js.UndefOr[PropertyValue[EdgeSingular, Double | String]] = js.native
+  var `font-size`: js.UndefOr[PropertyValue[EdgeSingular, Double | String]] = js.undefined
   
-  var `font-style`: js.UndefOr[PropertyValue[EdgeSingular, FontStyle]] = js.native
+  var `font-style`: js.UndefOr[PropertyValue[EdgeSingular, FontStyle]] = js.undefined
   
-  var `font-weight`: js.UndefOr[PropertyValue[EdgeSingular, FontWeight]] = js.native
+  var `font-weight`: js.UndefOr[PropertyValue[EdgeSingular, FontWeight]] = js.undefined
   
-  var `haystack-radius`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `haystack-radius`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var label: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.native
+  var label: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   
   /**
     * The cap of the edge's line.
     */
-  var `line-cap`: js.UndefOr[PropertyValueEdge[butt | round | square]] = js.native
+  var `line-cap`: js.UndefOr[PropertyValueEdge[butt | round | square]] = js.undefined
   
   /**
     * The colour of the edge’s line.
     */
-  var `line-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `line-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /**
     * The dashed line offset.
     */
-  var `line-dash-offset`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `line-dash-offset`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   /**
     * The dashed line pattern which specifies alternating lengths of lines and gaps.
     */
-  var `line-dash-pattern`: js.UndefOr[js.Array[PropertyValueEdge[Double]]] = js.native
+  var `line-dash-pattern`: js.UndefOr[js.Array[PropertyValueEdge[Double]]] = js.undefined
   
   /**
     * The filling style of the edge's line.
     */
-  var `line-fill`: js.UndefOr[PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]] = js.native
+  var `line-fill`: js.UndefOr[PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]] = js.undefined
   
-  var `line-gradient-stop-colors`: js.UndefOr[js.Array[PropertyValueEdge[Colour]]] = js.native
+  var `line-gradient-stop-colors`: js.UndefOr[js.Array[PropertyValueEdge[Colour]]] = js.undefined
   
-  var `line-gradient-stop-positions`: js.UndefOr[js.Array[PropertyValueEdge[Double]]] = js.native
+  var `line-gradient-stop-positions`: js.UndefOr[js.Array[PropertyValueEdge[Double]]] = js.undefined
   
   /**
     * The style of the edge’s line.
     */
-  var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.native
+  var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.undefined
   
   /** The colour of the edge’s "mid-source" arrow. */
-  var `mid-source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `mid-source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s mid-source arrow. */
-  var `mid-source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `mid-source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s mid-source arrow. */
-  var `mid-source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `mid-source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
   
   /** The colour of the edge’s "mid-target" arrow. */
-  var `mid-target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `mid-target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s mid-target arrow. */
-  var `mid-target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `mid-target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s mid-target arrow. */
-  var `mid-target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `mid-target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
   
-  var `min-zoomed-font-size`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `min-zoomed-font-size`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var opacity: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var opacity: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `overlay-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `overlay-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
-  var `overlay-opacity`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `overlay-opacity`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var `overlay-padding`: js.UndefOr[PropertyValueEdge[Double | String]] = js.native
+  var `overlay-padding`: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
   
-  var `segment-distances`: js.UndefOr[PropertyValueEdge[String]] = js.native
+  var `segment-distances`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
   
-  var `segment-weights`: js.UndefOr[PropertyValueEdge[String]] = js.native
+  var `segment-weights`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
   
   /** The colour of the edge’s source arrow. */
-  var `source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s source arrow. */
-  var `source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `source-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s source arrow. */
-  var `source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `source-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
   
   /**
     * The distance the edge ends from its source.
     */
-  var `source-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `source-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   var `source-endpoint`: js.UndefOr[
     PropertyValue[
       EdgeSingular, 
       `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `source-label`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.native
+  var `source-label`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   
-  var `source-text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `source-text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `source-text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `source-text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `source-text-offset`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `source-text-offset`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `source-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `source-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
   /** The colour of the edge’s target arrow. */
-  var `target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.native
+  var `target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   
   /** The fill state of the edge’s target arrow. */
-  var `target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.native
+  var `target-arrow-fill`: js.UndefOr[PropertyValueEdge[ArrowFill]] = js.undefined
   
   /** The shape of the edge’s target arrow. */
-  var `target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.native
+  var `target-arrow-shape`: js.UndefOr[PropertyValueEdge[ArrowShape]] = js.undefined
   
   /**
     * The distance the edge ends from its target.
     */
-  var `target-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.native
+  var `target-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   var `target-endpoint`: js.UndefOr[
     PropertyValue[
       EdgeSingular, 
       `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `target-label`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.native
+  var `target-label`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   
-  var `target-text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `target-text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `target-text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `target-text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `target-text-offset`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `target-text-offset`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `target-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `target-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-background-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.native
+  var `text-background-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.undefined
   
-  var `text-background-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-background-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-background-padding`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.native
+  var `text-background-padding`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   
-  var `text-background-shape`: js.UndefOr[PropertyValue[EdgeSingular, rectangle | roundrectangle]] = js.native
+  var `text-background-shape`: js.UndefOr[PropertyValue[EdgeSingular, rectangle | roundrectangle]] = js.undefined
   
-  var `text-border-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.native
+  var `text-border-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.undefined
   
-  var `text-border-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-border-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-border-style`: js.UndefOr[PropertyValue[EdgeSingular, LineStyle]] = js.native
+  var `text-border-style`: js.UndefOr[PropertyValue[EdgeSingular, LineStyle]] = js.undefined
   
-  var `text-border-width`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-border-width`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-events`: js.UndefOr[PropertyValue[EdgeSingular, yes | no]] = js.native
+  var `text-events`: js.UndefOr[PropertyValue[EdgeSingular, yes | no]] = js.undefined
   
-  var `text-halign`: js.UndefOr[PropertyValue[EdgeSingular, left | center | right]] = js.native
+  var `text-halign`: js.UndefOr[PropertyValue[EdgeSingular, left | center | right]] = js.undefined
   
-  var `text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-max-width`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.native
+  var `text-max-width`: js.UndefOr[PropertyValue[EdgeSingular, String]] = js.undefined
   
-  var `text-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-outline-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.native
+  var `text-outline-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.undefined
   
-  var `text-outline-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-outline-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-outline-width`: js.UndefOr[PropertyValue[EdgeSingular, Double | String]] = js.native
+  var `text-outline-width`: js.UndefOr[PropertyValue[EdgeSingular, Double | String]] = js.undefined
   
-  var `text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-shadow-blur`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-shadow-blur`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-shadow-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.native
+  var `text-shadow-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.undefined
   
-  var `text-shadow-offset-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-shadow-offset-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-shadow-offset-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-shadow-offset-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-shadow-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `text-shadow-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `text-transform`: js.UndefOr[PropertyValue[EdgeSingular, TextTranformation]] = js.native
+  var `text-transform`: js.UndefOr[PropertyValue[EdgeSingular, TextTranformation]] = js.undefined
   
-  var `text-valign`: js.UndefOr[PropertyValue[EdgeSingular, top | center | bottom]] = js.native
+  var `text-valign`: js.UndefOr[PropertyValue[EdgeSingular, top | center | bottom]] = js.undefined
   
-  var `text-wrap`: js.UndefOr[PropertyValue[EdgeSingular, none | wrap | ellipsis]] = js.native
+  var `text-wrap`: js.UndefOr[PropertyValue[EdgeSingular, none | wrap | ellipsis]] = js.undefined
   
-  var `transition-delay`: js.UndefOr[Double] = js.native
+  var `transition-delay`: js.UndefOr[Double] = js.undefined
   
-  var `transition-duration`: js.UndefOr[Double] = js.native
+  var `transition-duration`: js.UndefOr[Double] = js.undefined
   
-  var `transition-property`: js.UndefOr[String] = js.native
+  var `transition-property`: js.UndefOr[String] = js.undefined
   
-  var `transition-timing-function`: js.UndefOr[TransitionTimingFunction] = js.native
+  var `transition-timing-function`: js.UndefOr[TransitionTimingFunction] = js.undefined
   
-  var visibility: js.UndefOr[PropertyValue[EdgeSingular, hidden | visible]] = js.native
+  var visibility: js.UndefOr[PropertyValue[EdgeSingular, hidden | visible]] = js.undefined
   
   /**
     * The width of an edge’s line.
     */
-  var width: js.UndefOr[PropertyValueEdge[Double | String]] = js.native
+  var width: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
   
-  var `z-index`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.native
+  var `z-index`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
 }
 object Edge {
   

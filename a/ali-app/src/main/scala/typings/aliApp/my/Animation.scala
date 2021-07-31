@@ -2,7 +2,6 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 动画实例可以调用以下方法来描述动画，调用结束后会返回自身，支持链式调用的写法。 */
@@ -20,7 +19,7 @@ trait Animation extends StObject {
     *
     * 注意: export 方法每次调用后会清掉之前的动画操作
     */
-  def export(): Animator = js.native
+  def `export`(): Animator = js.native
   
   /** 长度值，如果传入 Number 则默认使用 px，可传入其他自定义单位的长度值 */
   def height(length: Double): Animation = js.native

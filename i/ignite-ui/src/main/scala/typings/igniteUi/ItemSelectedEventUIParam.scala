@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemSelectedEventUIParam extends StObject {
   
   /**
     * Gets a reference to jQuery UI date picker widget, used as a calendar from the igDatePicker.
     */
-  var calendar: js.UndefOr[js.Any] = js.native
+  var calendar: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the selected date object.
     */
-  var dateFromPicker: js.UndefOr[js.Any] = js.native
+  var dateFromPicker: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the selected html element from the calendar.
     */
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ItemSelectedEventUIParam {
   

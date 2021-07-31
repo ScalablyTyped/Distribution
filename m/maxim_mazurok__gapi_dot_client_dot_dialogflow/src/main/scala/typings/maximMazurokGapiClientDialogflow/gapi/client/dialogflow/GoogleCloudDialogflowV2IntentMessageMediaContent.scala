@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageMediaContent extends StObject {
   
   /** Required. List of media objects. */
-  var mediaObjects: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject]] = js.native
+  var mediaObjects: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject]] = js.undefined
   
   /** Optional. What type of media is the content (ie "audio"). */
-  var mediaType: js.UndefOr[String] = js.native
+  var mediaType: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageMediaContent {
   

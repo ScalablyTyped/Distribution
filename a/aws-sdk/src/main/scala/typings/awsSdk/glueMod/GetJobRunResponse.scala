@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobRunResponse extends StObject {
   
   /**
     * The requested job-run metadata.
     */
-  var JobRun: js.UndefOr[typings.awsSdk.glueMod.JobRun] = js.native
+  var JobRun: js.UndefOr[typings.awsSdk.glueMod.JobRun] = js.undefined
 }
 object GetJobRunResponse {
   

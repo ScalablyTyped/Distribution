@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationResponse extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait DeleteConfigurationResponse extends StObject {
     The Amazon Resource Name (ARN) that uniquely identifies an MSK configuration.
     
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The state of the configuration. The possible states are ACTIVE, DELETING, and DELETE_FAILED. 
     
     */
-  var State: js.UndefOr[ConfigurationState] = js.native
+  var State: js.UndefOr[ConfigurationState] = js.undefined
 }
 object DeleteConfigurationResponse {
   

@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tmpl {
@@ -10,7 +9,8 @@ object tmpl {
   @JSGlobal("sap.ui.core.tmpl.DOMAttribute")
   @js.native
   class DOMAttribute protected ()
-    extends typings.openui5.sap.ui.core.tmpl.DOMAttribute {
+    extends StObject
+       with typings.openui5.sap.ui.core.tmpl.DOMAttribute {
     /**
       * Constructor for a new tmpl/DOMAttribute.Accepts an object literal <code>mSettings</code> that
       * defines initialproperty values, aggregated and associated objects as well as event handlers.See
@@ -26,7 +26,8 @@ object tmpl {
   @JSGlobal("sap.ui.core.tmpl.DOMElement")
   @js.native
   class DOMElement protected ()
-    extends typings.openui5.sap.ui.core.tmpl.DOMElement {
+    extends StObject
+       with typings.openui5.sap.ui.core.tmpl.DOMElement {
     /**
       * Constructor for a new tmpl/DOMElement.Accepts an object literal <code>mSettings</code> that defines
       * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
@@ -42,7 +43,8 @@ object tmpl {
   @JSGlobal("sap.ui.core.tmpl.HandlebarsTemplate")
   @js.native
   abstract class HandlebarsTemplate protected ()
-    extends typings.openui5.sap.ui.core.tmpl.HandlebarsTemplate {
+    extends StObject
+       with typings.openui5.sap.ui.core.tmpl.HandlebarsTemplate {
     /**
       * Creates and initializes a new handlebars template with the given <code>sId</code>and settings.The
       * set of allowed entries in the <code>mSettings</code> object depends onthe concrete subclass and is
@@ -60,7 +62,8 @@ object tmpl {
   @JSGlobal("sap.ui.core.tmpl.Template")
   @js.native
   abstract class Template protected ()
-    extends typings.openui5.sap.ui.core.tmpl.Template {
+    extends StObject
+       with typings.openui5.sap.ui.core.tmpl.Template {
     /**
       * Creates and initializes a new template with the given <code>sId</code> andsettings.The set of
       * allowed entries in the <code>mSettings</code> object depends onthe concrete subclass and is
@@ -81,7 +84,8 @@ object tmpl {
   @JSGlobal("sap.ui.core.tmpl.TemplateControl")
   @js.native
   class TemplateControl protected ()
-    extends typings.openui5.sap.ui.core.tmpl.TemplateControl {
+    extends StObject
+       with typings.openui5.sap.ui.core.tmpl.TemplateControl {
     /**
       * Constructor for a new tmpl/TemplateControl.Accepts an object literal <code>mSettings</code> that
       * defines initialproperty values, aggregated and associated objects as well as event handlers.See

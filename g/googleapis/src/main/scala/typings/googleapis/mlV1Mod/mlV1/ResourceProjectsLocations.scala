@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects$Locations")
@@ -31,7 +30,7 @@ class ResourceProjectsLocations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudMlV1Location] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudMlV1Location]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1Location] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1Location] = js.native
   def get(params: ParamsResourceProjectsLocationsGet): GaxiosPromise[SchemaGoogleCloudMlV1Location] = js.native
   def get(
     params: ParamsResourceProjectsLocationsGet,
@@ -66,7 +65,7 @@ class ResourceProjectsLocations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudMlV1ListLocationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudMlV1ListLocationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1ListLocationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1ListLocationsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsList): GaxiosPromise[SchemaGoogleCloudMlV1ListLocationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsList,

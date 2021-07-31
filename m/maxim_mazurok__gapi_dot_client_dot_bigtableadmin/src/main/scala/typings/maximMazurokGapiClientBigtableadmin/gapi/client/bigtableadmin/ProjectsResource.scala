@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var instances: InstancesResource = js.native
+  var instances: InstancesResource
   
-  var locations: LocationsResource = js.native
+  var locations: LocationsResource
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
 }
 object ProjectsResource {
   

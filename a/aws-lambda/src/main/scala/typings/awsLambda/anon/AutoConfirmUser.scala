@@ -2,17 +2,15 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoConfirmUser extends StObject {
   
-  var autoConfirmUser: Boolean = js.native
+  var autoConfirmUser: Boolean
   
-  var autoVerifyEmail: Boolean = js.native
+  var autoVerifyEmail: Boolean
   
-  var autoVerifyPhone: Boolean = js.native
+  var autoVerifyPhone: Boolean
 }
 object AutoConfirmUser {
   

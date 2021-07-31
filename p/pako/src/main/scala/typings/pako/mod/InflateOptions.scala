@@ -3,21 +3,19 @@ package typings.pako.mod
 import typings.pako.pakoStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InflateOptions extends StObject {
   
-  var chunkSize: js.UndefOr[Double] = js.native
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
-  var dictionary: js.UndefOr[js.Any] = js.native
+  var dictionary: js.UndefOr[js.Any] = js.undefined
   
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
-  var to: js.UndefOr[string] = js.native
+  var to: js.UndefOr[string] = js.undefined
   
-  var windowBits: js.UndefOr[Double] = js.native
+  var windowBits: js.UndefOr[Double] = js.undefined
 }
 object InflateOptions {
   

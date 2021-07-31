@@ -7,34 +7,34 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetSamplingTargetsOutputMod {
   
-  @js.native
-  trait GetSamplingTargetsOutput extends OutputTypesUnion {
+  trait GetSamplingTargetsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The last time a user changed the sampling rule configuration. If the sampling rule configuration changed since the service last retrieved it, the service should call <a>GetSamplingRules</a> to get the latest version.</p>
       */
-    var LastRuleModification: js.UndefOr[Date] = js.native
+    var LastRuleModification: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Updated rules that the service should use to sample requests.</p>
       */
-    var SamplingTargetDocuments: js.UndefOr[js.Array[UnmarshalledSamplingTargetDocument]] = js.native
+    var SamplingTargetDocuments: js.UndefOr[js.Array[UnmarshalledSamplingTargetDocument]] = js.undefined
     
     /**
       * <p>Information about <a>SamplingStatisticsDocument</a> that X-Ray could not process.</p>
       */
-    var UnprocessedStatistics: js.UndefOr[js.Array[UnmarshalledUnprocessedStatistics]] = js.native
+    var UnprocessedStatistics: js.UndefOr[js.Array[UnmarshalledUnprocessedStatistics]] = js.undefined
   }
   object GetSamplingTargetsOutput {
     

@@ -3,17 +3,15 @@ package typings.nobleMac
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object Data {
     

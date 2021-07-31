@@ -2,13 +2,11 @@ package typings.babelWalk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type[`type` /* <: String */] extends StObject {
   
-  var `type`: `type` = js.native
+  var `type`: `type`
 }
 object Type {
   
@@ -20,7 +18,7 @@ object Type {
   }
   
   @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[_], `type` /* <: String */] (val x: Self with Type[`type`]) extends AnyVal {
+  implicit class TypeMutableBuilder[Self <: Type[?], `type` /* <: String */] (val x: Self & Type[`type`]) extends AnyVal {
     
     @scala.inline
     def setType(value: `type`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

@@ -2,15 +2,13 @@ package typings.doctrine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Midstream extends StObject {
     
-    var midstream: Boolean = js.native
+    var midstream: Boolean
   }
   object Midstream {
     

@@ -18,953 +18,621 @@ import typings.polished.timingFunctionMod.TimingFunction
 import typings.polished.triangleConfigurationMod.TriangleConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("polished", "adjustHue")
+  @JSImport("polished", JSImport.Namespace)
   @js.native
-  def adjustHue(degree: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "adjustHue")
-  @js.native
-  def adjustHue(degree: String, color: String): String = js.native
-  @JSImport("polished", "adjustHue")
-  @js.native
-  def adjustHue(degree: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "adjustHue")
-  @js.native
-  def adjustHue(degree: Double, color: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("polished", "animation")
-  @js.native
-  def animation(args: ((js.Array[String | Double]) | String | Double)*): Styles = js.native
+  @scala.inline
+  def adjustHue(degree: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustHue")(degree.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def adjustHue(degree: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustHue")(degree.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def adjustHue(degree: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustHue")(degree.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def adjustHue(degree: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustHue")(degree.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "backgroundImages")
-  @js.native
-  def backgroundImages(properties: String*): Styles = js.native
+  @scala.inline
+  def animation(args: ((js.Array[String | Double]) | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("animation")(args.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "backgrounds")
-  @js.native
-  def backgrounds(properties: String*): Styles = js.native
+  @scala.inline
+  def backgroundImages(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("backgroundImages")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: String, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: String, minScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: String, minScreen: String, maxScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: Double): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: Double, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: Double, minScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: String, toSize: Double, minScreen: String, maxScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: String, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: String, minScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: String, minScreen: String, maxScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: Double): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: Double, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: Double, minScreen: String): String = js.native
-  @JSImport("polished", "between")
-  @js.native
-  def between(fromSize: Double, toSize: Double, minScreen: String, maxScreen: String): String = js.native
+  @scala.inline
+  def backgrounds(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("backgrounds")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "border")
-  @js.native
-  def border(sideKeyword: String, values: (String | Double)*): Styles = js.native
-  @JSImport("polished", "border")
-  @js.native
-  def border(sideKeyword: Double, values: (String | Double)*): Styles = js.native
-  @JSImport("polished", "border")
-  @js.native
-  def border(sideKeyword: SideKeyword, values: (String | Double)*): Styles = js.native
+  @scala.inline
+  def between(fromSize: String, toSize: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: String, toSize: String, minScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: String, toSize: String, minScreen: String, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: String, toSize: String, minScreen: Unit, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: String, toSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: String, toSize: Double, minScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: String, toSize: Double, minScreen: String, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: String, toSize: Double, minScreen: Unit, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: String, minScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: String, minScreen: String, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: String, minScreen: Unit, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: Double, minScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: Double, minScreen: String, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def between(fromSize: Double, toSize: Double, minScreen: Unit, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "borderColor")
-  @js.native
-  def borderColor(values: (Null | Unit | String)*): Styles = js.native
+  @scala.inline
+  def border(sideKeyword: String, values: (String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("border")(sideKeyword.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def border(sideKeyword: Double, values: (String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("border")(sideKeyword.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def border(sideKeyword: SideKeyword, values: (String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("border")(sideKeyword.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  @JSImport("polished", "borderRadius")
-  @js.native
-  def borderRadius(side: String, radius: String): Styles = js.native
-  @JSImport("polished", "borderRadius")
-  @js.native
-  def borderRadius(side: String, radius: Double): Styles = js.native
+  @scala.inline
+  def borderColor(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderColor")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "borderStyle")
-  @js.native
-  def borderStyle(values: (Null | Unit | String)*): Styles = js.native
+  @scala.inline
+  def borderRadius(side: String, radius: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("borderRadius")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def borderRadius(side: String, radius: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("borderRadius")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  @JSImport("polished", "borderWidth")
-  @js.native
-  def borderWidth(values: (Null | Unit | String | Double)*): Styles = js.native
+  @scala.inline
+  def borderStyle(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderStyle")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "buttons")
-  @js.native
-  def buttons(states: InteractionState*): String = js.native
+  @scala.inline
+  def borderWidth(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderWidth")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "clearFix")
-  @js.native
-  def clearFix(): Styles = js.native
-  @JSImport("polished", "clearFix")
-  @js.native
-  def clearFix(parent: String): Styles = js.native
+  @scala.inline
+  def buttons(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttons")(states.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "complement")
-  @js.native
-  def complement(color: String): String = js.native
+  @scala.inline
+  def clearFix(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFix")().asInstanceOf[Styles]
+  @scala.inline
+  def clearFix(parent: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFix")(parent.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "cover")
-  @js.native
-  def cover(): Styles = js.native
-  @JSImport("polished", "cover")
-  @js.native
-  def cover(offset: String): Styles = js.native
-  @JSImport("polished", "cover")
-  @js.native
-  def cover(offset: Double): Styles = js.native
+  @scala.inline
+  def complement(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("complement")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "cssVar")
-  @js.native
-  def cssVar(cssVariable: String): String | Double = js.native
-  @JSImport("polished", "cssVar")
-  @js.native
-  def cssVar(cssVariable: String, passThrough: Boolean): String | Double = js.native
+  @scala.inline
+  def cover(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("cover")().asInstanceOf[Styles]
+  @scala.inline
+  def cover(offset: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("cover")(offset.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def cover(offset: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("cover")(offset.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "darken")
-  @js.native
-  def darken(amount: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "darken")
-  @js.native
-  def darken(amount: String, color: String): String = js.native
-  @JSImport("polished", "darken")
-  @js.native
-  def darken(amount: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "darken")
-  @js.native
-  def darken(amount: Double, color: String): String = js.native
+  @scala.inline
+  def cssVar(cssVariable: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cssVar")(cssVariable.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  @scala.inline
+  def cssVar(cssVariable: String, passThrough: Boolean): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cssVar")(cssVariable.asInstanceOf[js.Any], passThrough.asInstanceOf[js.Any])).asInstanceOf[String | Double]
   
-  @JSImport("polished", "desaturate")
-  @js.native
-  def desaturate(amount: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "desaturate")
-  @js.native
-  def desaturate(amount: String, color: String): String = js.native
-  @JSImport("polished", "desaturate")
-  @js.native
-  def desaturate(amount: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "desaturate")
-  @js.native
-  def desaturate(amount: Double, color: String): String = js.native
+  @scala.inline
+  def darken(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("darken")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def darken(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("darken")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def darken(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("darken")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def darken(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("darken")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "directionalProperty")
-  @js.native
-  def directionalProperty(property: String, values: (Null | Unit | String | Double)*): Styles = js.native
+  @scala.inline
+  def desaturate(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def desaturate(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def desaturate(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def desaturate(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "ellipsis")
-  @js.native
-  def ellipsis(): Styles = js.native
-  @JSImport("polished", "ellipsis")
-  @js.native
-  def ellipsis(width: String): Styles = js.native
-  @JSImport("polished", "ellipsis")
-  @js.native
-  def ellipsis(width: Double): Styles = js.native
+  @scala.inline
+  def directionalProperty(property: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("directionalProperty")(property.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  @JSImport("polished", "em")
-  @js.native
-  def em(value: String): String = js.native
-  @JSImport("polished", "em")
-  @js.native
-  def em(value: String, base: String): String = js.native
-  @JSImport("polished", "em")
-  @js.native
-  def em(value: String, base: Double): String = js.native
-  @JSImport("polished", "em")
-  @js.native
-  def em(value: Double): String = js.native
-  @JSImport("polished", "em")
-  @js.native
-  def em(value: Double, base: String): String = js.native
-  @JSImport("polished", "em")
-  @js.native
-  def em(value: Double, base: Double): String = js.native
+  @scala.inline
+  def ellipsis(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")().asInstanceOf[Styles]
+  @scala.inline
+  def ellipsis(width: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def ellipsis(width: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(cssProp: js.Array[FluidRangeConfiguration]): Styles = js.native
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(
-    cssProp: js.Array[FluidRangeConfiguration],
-    minScreen: js.UndefOr[scala.Nothing],
-    maxScreen: String
-  ): Styles = js.native
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(cssProp: js.Array[FluidRangeConfiguration], minScreen: String): Styles = js.native
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(cssProp: js.Array[FluidRangeConfiguration], minScreen: String, maxScreen: String): Styles = js.native
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(cssProp: FluidRangeConfiguration): Styles = js.native
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(cssProp: FluidRangeConfiguration, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): Styles = js.native
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(cssProp: FluidRangeConfiguration, minScreen: String): Styles = js.native
-  @JSImport("polished", "fluidRange")
-  @js.native
-  def fluidRange(cssProp: FluidRangeConfiguration, minScreen: String, maxScreen: String): Styles = js.native
+  @scala.inline
+  def em(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def em(value: String, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def em(value: String, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def em(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def em(value: Double, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def em(value: Double, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "fontFace")
-  @js.native
+  @scala.inline
+  def fluidRange(cssProp: js.Array[FluidRangeConfiguration]): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def fluidRange(cssProp: js.Array[FluidRangeConfiguration], minScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def fluidRange(cssProp: js.Array[FluidRangeConfiguration], minScreen: String, maxScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def fluidRange(cssProp: js.Array[FluidRangeConfiguration], minScreen: Unit, maxScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def fluidRange(cssProp: FluidRangeConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def fluidRange(cssProp: FluidRangeConfiguration, minScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def fluidRange(cssProp: FluidRangeConfiguration, minScreen: String, maxScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def fluidRange(cssProp: FluidRangeConfiguration, minScreen: Unit, maxScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  
+  @scala.inline
   def fontFace(
     hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings: FontFaceConfiguration
-  ): Styles = js.native
+  ): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "getContrast")
-  @js.native
-  def getContrast(color1: String, color2: String): Double = js.native
+  @scala.inline
+  def getContrast(color1: String, color2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getContrast")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("polished", "getLuminance")
-  @js.native
-  def getLuminance(color: String): Double = js.native
+  @scala.inline
+  def getLuminance(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("polished", "getValueAndUnit")
-  @js.native
-  def getValueAndUnit(value: String): js.Any = js.native
-  @JSImport("polished", "getValueAndUnit")
-  @js.native
-  def getValueAndUnit(value: Double): js.Any = js.native
+  @scala.inline
+  def getValueAndUnit(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAndUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getValueAndUnit(value: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAndUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("polished", "grayscale")
-  @js.native
-  def grayscale(color: String): String = js.native
+  @scala.inline
+  def grayscale(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscale")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "hiDPI")
-  @js.native
-  def hiDPI(): String = js.native
-  @JSImport("polished", "hiDPI")
-  @js.native
-  def hiDPI(ratio: Double): String = js.native
+  @scala.inline
+  def hiDPI(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hiDPI")().asInstanceOf[String]
+  @scala.inline
+  def hiDPI(ratio: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hiDPI")(ratio.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "hideText")
-  @js.native
-  def hideText(): Styles = js.native
+  @scala.inline
+  def hideText(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("hideText")().asInstanceOf[Styles]
   
-  @JSImport("polished", "hideVisually")
-  @js.native
-  def hideVisually(): Styles = js.native
+  @scala.inline
+  def hideVisually(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("hideVisually")().asInstanceOf[Styles]
   
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: Double): String = js.native
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: Double, saturation: Double): String = js.native
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: Double, saturation: Double, lightness: Double): String = js.native
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: HslColor): String = js.native
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: HslColor, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: HslColor, saturation: Double): String = js.native
-  @JSImport("polished", "hsl")
-  @js.native
-  def hsl(value: HslColor, saturation: Double, lightness: Double): String = js.native
+  @scala.inline
+  def hsl(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hsl(value: Double, saturation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsl(value: Double, saturation: Double, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsl(value: Double, saturation: Unit, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsl(value: HslColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hsl(value: HslColor, saturation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsl(value: HslColor, saturation: Double, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsl(value: HslColor, saturation: Unit, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "hslToColorString")
-  @js.native
-  def hslToColorString(color: Double): String = js.native
-  @JSImport("polished", "hslToColorString")
-  @js.native
-  def hslToColorString(color: HslColor): String = js.native
-  @JSImport("polished", "hslToColorString")
-  @js.native
-  def hslToColorString(color: HslaColor): String = js.native
+  @scala.inline
+  def hslToColorString(color: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hslToColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hslToColorString(color: HslColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hslToColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hslToColorString(color: HslaColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hslToColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(
-    value: Double,
-    saturation: js.UndefOr[scala.Nothing],
-    lightness: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double, alpha: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: Double, saturation: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: Double, saturation: Double, lightness: js.UndefOr[scala.Nothing], alpha: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: Double, saturation: Double, lightness: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: Double, saturation: Double, lightness: Double, alpha: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: HslaColor): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(
-    value: HslaColor,
-    saturation: js.UndefOr[scala.Nothing],
-    lightness: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: HslaColor, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: HslaColor, saturation: js.UndefOr[scala.Nothing], lightness: Double, alpha: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: HslaColor, saturation: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: HslaColor, saturation: Double, lightness: js.UndefOr[scala.Nothing], alpha: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: HslaColor, saturation: Double, lightness: Double): String = js.native
-  @JSImport("polished", "hsla")
-  @js.native
-  def hsla(value: HslaColor, saturation: Double, lightness: Double, alpha: Double): String = js.native
+  @scala.inline
+  def hsla(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: Double, saturation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: Double, saturation: Double, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: Double, saturation: Double, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: Double, saturation: Double, lightness: Unit, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: Double, saturation: Unit, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: Double, saturation: Unit, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: Double, saturation: Unit, lightness: Unit, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor, saturation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor, saturation: Double, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor, saturation: Double, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor, saturation: Double, lightness: Unit, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor, saturation: Unit, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor, saturation: Unit, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hsla(value: HslaColor, saturation: Unit, lightness: Unit, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "invert")
-  @js.native
-  def invert(color: String): String = js.native
+  @scala.inline
+  def invert(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "lighten")
-  @js.native
-  def lighten(amount: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "lighten")
-  @js.native
-  def lighten(amount: String, color: String): String = js.native
-  @JSImport("polished", "lighten")
-  @js.native
-  def lighten(amount: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "lighten")
-  @js.native
-  def lighten(amount: Double, color: String): String = js.native
+  @scala.inline
+  def lighten(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def lighten(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def lighten(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def lighten(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "linearGradient")
-  @js.native
-  def linearGradient(hasColorStopsFallbackToDirection: LinearGradientConfiguration): Styles = js.native
+  @scala.inline
+  def linearGradient(hasColorStopsFallbackToDirection: LinearGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("linearGradient")(hasColorStopsFallbackToDirection.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "margin")
-  @js.native
-  def margin(values: (Null | Unit | String | Double)*): Styles = js.native
+  @scala.inline
+  def margin(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("margin")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "math")
-  @js.native
-  def math(formula: String): String = js.native
-  @JSImport("polished", "math")
-  @js.native
-  def math(formula: String, additionalSymbols: js.Object): String = js.native
+  @scala.inline
+  def math(formula: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("math")(formula.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def math(formula: String, additionalSymbols: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("math")(formula.asInstanceOf[js.Any], additionalSymbols.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "meetsContrastGuidelines")
-  @js.native
-  def meetsContrastGuidelines(color1: String, color2: String): ContrastScores = js.native
+  @scala.inline
+  def meetsContrastGuidelines(color1: String, color2: String): ContrastScores = (^.asInstanceOf[js.Dynamic].applyDynamic("meetsContrastGuidelines")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[ContrastScores]
   
-  @JSImport("polished", "mix")
-  @js.native
-  def mix(weight: String): FnCall = js.native
-  @JSImport("polished", "mix")
-  @js.native
-  def mix(weight: String, color: String): js.Function1[/* otherColor */ String, String] = js.native
-  @JSImport("polished", "mix")
-  @js.native
-  def mix(weight: String, color: String, otherColor: String): String = js.native
-  @JSImport("polished", "mix")
-  @js.native
-  def mix(weight: Double): FnCall = js.native
-  @JSImport("polished", "mix")
-  @js.native
-  def mix(weight: Double, color: String): js.Function1[/* otherColor */ String, String] = js.native
-  @JSImport("polished", "mix")
-  @js.native
-  def mix(weight: Double, color: String, otherColor: String): String = js.native
+  @scala.inline
+  def mix(weight: String): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("mix")(weight.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  @scala.inline
+  def mix(weight: String, color: String): js.Function1[/* otherColor */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(weight.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* otherColor */ String, String]]
+  @scala.inline
+  def mix(weight: String, color: String, otherColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(weight.asInstanceOf[js.Any], color.asInstanceOf[js.Any], otherColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mix(weight: Double): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("mix")(weight.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  @scala.inline
+  def mix(weight: Double, color: String): js.Function1[/* otherColor */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(weight.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* otherColor */ String, String]]
+  @scala.inline
+  def mix(weight: Double, color: String, otherColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(weight.asInstanceOf[js.Any], color.asInstanceOf[js.Any], otherColor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "modularScale")
-  @js.native
-  def modularScale(steps: Double): String = js.native
-  @JSImport("polished", "modularScale")
-  @js.native
-  def modularScale(steps: Double, base: js.UndefOr[scala.Nothing], ratio: ModularScaleRatio): String = js.native
-  @JSImport("polished", "modularScale")
-  @js.native
-  def modularScale(steps: Double, base: String): String = js.native
-  @JSImport("polished", "modularScale")
-  @js.native
-  def modularScale(steps: Double, base: String, ratio: ModularScaleRatio): String = js.native
-  @JSImport("polished", "modularScale")
-  @js.native
-  def modularScale(steps: Double, base: Double): String = js.native
-  @JSImport("polished", "modularScale")
-  @js.native
-  def modularScale(steps: Double, base: Double, ratio: ModularScaleRatio): String = js.native
+  @scala.inline
+  def modularScale(steps: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(steps.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def modularScale(steps: Double, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def modularScale(steps: Double, base: String, ratio: ModularScaleRatio): String = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def modularScale(steps: Double, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def modularScale(steps: Double, base: Double, ratio: ModularScaleRatio): String = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def modularScale(steps: Double, base: Unit, ratio: ModularScaleRatio): String = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "normalize")
-  @js.native
-  def normalize(): js.Array[Styles] = js.native
+  @scala.inline
+  def normalize(): js.Array[Styles] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.Array[Styles]]
   
-  @JSImport("polished", "opacify")
-  @js.native
-  def opacify(amount: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "opacify")
-  @js.native
-  def opacify(amount: String, color: String): String = js.native
-  @JSImport("polished", "opacify")
-  @js.native
-  def opacify(amount: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "opacify")
-  @js.native
-  def opacify(amount: Double, color: String): String = js.native
+  @scala.inline
+  def opacify(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("opacify")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def opacify(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("opacify")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def opacify(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("opacify")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def opacify(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("opacify")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "padding")
-  @js.native
-  def padding(values: (Null | Unit | String | Double)*): Styles = js.native
+  @scala.inline
+  def padding(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("padding")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "parseToHsl")
-  @js.native
-  def parseToHsl(color: String): HslColor | HslaColor = js.native
+  @scala.inline
+  def parseToHsl(color: String): HslColor | HslaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseToHsl")(color.asInstanceOf[js.Any]).asInstanceOf[HslColor | HslaColor]
   
-  @JSImport("polished", "parseToRgb")
-  @js.native
-  def parseToRgb(color: String): RgbColor | RgbaColor = js.native
+  @scala.inline
+  def parseToRgb(color: String): RgbColor | RgbaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseToRgb")(color.asInstanceOf[js.Any]).asInstanceOf[RgbColor | RgbaColor]
   
-  @JSImport("polished", "position")
-  @js.native
-  def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = js.native
-  @JSImport("polished", "position")
-  @js.native
-  def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = js.native
-  @JSImport("polished", "position")
-  @js.native
-  def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = js.native
+  @scala.inline
+  def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  @JSImport("polished", "radialGradient")
-  @js.native
-  def radialGradient(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = js.native
+  @scala.inline
+  def radialGradient(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("radialGradient")(hasColorStopsExtentFallbackPositionShape.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(color: String): String = js.native
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(
-    color: String,
-    lightReturnColor: js.UndefOr[scala.Nothing],
-    darkReturnColor: js.UndefOr[scala.Nothing],
-    strict: Boolean
-  ): String = js.native
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(color: String, lightReturnColor: js.UndefOr[scala.Nothing], darkReturnColor: String): String = js.native
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(
-    color: String,
-    lightReturnColor: js.UndefOr[scala.Nothing],
-    darkReturnColor: String,
-    strict: Boolean
-  ): String = js.native
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(color: String, lightReturnColor: String): String = js.native
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(
-    color: String,
-    lightReturnColor: String,
-    darkReturnColor: js.UndefOr[scala.Nothing],
-    strict: Boolean
-  ): String = js.native
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(color: String, lightReturnColor: String, darkReturnColor: String): String = js.native
-  @JSImport("polished", "readableColor")
-  @js.native
-  def readableColor(color: String, lightReturnColor: String, darkReturnColor: String, strict: Boolean): String = js.native
+  @scala.inline
+  def readableColor(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def readableColor(color: String, lightReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readableColor(color: String, lightReturnColor: String, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readableColor(color: String, lightReturnColor: String, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readableColor(color: String, lightReturnColor: String, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readableColor(color: String, lightReturnColor: Unit, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readableColor(color: String, lightReturnColor: Unit, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readableColor(color: String, lightReturnColor: Unit, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "rem")
-  @js.native
-  def rem(value: String): String = js.native
-  @JSImport("polished", "rem")
-  @js.native
-  def rem(value: String, base: String): String = js.native
-  @JSImport("polished", "rem")
-  @js.native
-  def rem(value: String, base: Double): String = js.native
-  @JSImport("polished", "rem")
-  @js.native
-  def rem(value: Double): String = js.native
-  @JSImport("polished", "rem")
-  @js.native
-  def rem(value: Double, base: String): String = js.native
-  @JSImport("polished", "rem")
-  @js.native
-  def rem(value: Double, base: Double): String = js.native
+  @scala.inline
+  def rem(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rem(value: String, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rem(value: String, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rem(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rem(value: Double, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rem(value: Double, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(filename: String): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
+  @scala.inline
+  def retinaImage(filename: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(filename: String, backgroundSize: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(filename: String, backgroundSize: String, `extension`: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(filename: String, backgroundSize: String, `extension`: String, retinaFilename: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
   def retinaImage(
     filename: String,
-    backgroundSize: js.UndefOr[scala.Nothing],
-    extension: js.UndefOr[scala.Nothing],
-    retinaFilename: js.UndefOr[scala.Nothing],
-    retinaSuffix: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(
-    filename: String,
-    backgroundSize: js.UndefOr[scala.Nothing],
-    extension: js.UndefOr[scala.Nothing],
-    retinaFilename: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(
-    filename: String,
-    backgroundSize: js.UndefOr[scala.Nothing],
-    extension: js.UndefOr[scala.Nothing],
+    backgroundSize: String,
+    `extension`: String,
     retinaFilename: String,
     retinaSuffix: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(filename: String, backgroundSize: js.UndefOr[scala.Nothing], extension: String): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
   def retinaImage(
     filename: String,
-    backgroundSize: js.UndefOr[scala.Nothing],
-    extension: String,
-    retinaFilename: js.UndefOr[scala.Nothing],
+    backgroundSize: String,
+    `extension`: String,
+    retinaFilename: Unit,
     retinaSuffix: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(filename: String, backgroundSize: String, `extension`: Unit, retinaFilename: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
   def retinaImage(
     filename: String,
-    backgroundSize: js.UndefOr[scala.Nothing],
-    extension: String,
-    retinaFilename: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(
-    filename: String,
-    backgroundSize: js.UndefOr[scala.Nothing],
-    extension: String,
+    backgroundSize: String,
+    `extension`: Unit,
     retinaFilename: String,
     retinaSuffix: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(filename: String, backgroundSize: String): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
   def retinaImage(
     filename: String,
     backgroundSize: String,
-    extension: js.UndefOr[scala.Nothing],
-    retinaFilename: js.UndefOr[scala.Nothing],
+    `extension`: Unit,
+    retinaFilename: Unit,
     retinaSuffix: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(filename: String, backgroundSize: Unit, `extension`: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(filename: String, backgroundSize: Unit, `extension`: String, retinaFilename: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
   def retinaImage(
     filename: String,
-    backgroundSize: String,
-    extension: js.UndefOr[scala.Nothing],
-    retinaFilename: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(
-    filename: String,
-    backgroundSize: String,
-    extension: js.UndefOr[scala.Nothing],
+    backgroundSize: Unit,
+    `extension`: String,
     retinaFilename: String,
     retinaSuffix: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(filename: String, backgroundSize: String, extension: String): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
   def retinaImage(
     filename: String,
-    backgroundSize: String,
-    extension: String,
-    retinaFilename: js.UndefOr[scala.Nothing],
+    backgroundSize: Unit,
+    `extension`: String,
+    retinaFilename: Unit,
     retinaSuffix: String
-  ): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
-  def retinaImage(filename: String, backgroundSize: String, extension: String, retinaFilename: String): Styles = js.native
-  @JSImport("polished", "retinaImage")
-  @js.native
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(filename: String, backgroundSize: Unit, `extension`: Unit, retinaFilename: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
   def retinaImage(
     filename: String,
-    backgroundSize: String,
-    extension: String,
+    backgroundSize: Unit,
+    `extension`: Unit,
     retinaFilename: String,
     retinaSuffix: String
-  ): Styles = js.native
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def retinaImage(
+    filename: String,
+    backgroundSize: Unit,
+    `extension`: Unit,
+    retinaFilename: Unit,
+    retinaSuffix: String
+  ): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], retinaFilename.asInstanceOf[js.Any], retinaSuffix.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: Double): String = js.native
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: Double, green: js.UndefOr[scala.Nothing], blue: Double): String = js.native
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: Double, green: Double): String = js.native
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: Double, green: Double, blue: Double): String = js.native
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: RgbColor): String = js.native
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: RgbColor, green: js.UndefOr[scala.Nothing], blue: Double): String = js.native
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: RgbColor, green: Double): String = js.native
-  @JSImport("polished", "rgb")
-  @js.native
-  def rgb(value: RgbColor, green: Double, blue: Double): String = js.native
+  @scala.inline
+  def rgb(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rgb(value: Double, green: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgb(value: Double, green: Double, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgb(value: Double, green: Unit, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgb(value: RgbColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rgb(value: RgbColor, green: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgb(value: RgbColor, green: Double, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgb(value: RgbColor, green: Unit, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "rgbToColorString")
-  @js.native
-  def rgbToColorString(color: RgbColor): String = js.native
-  @JSImport("polished", "rgbToColorString")
-  @js.native
-  def rgbToColorString(color: RgbaColor): String = js.native
+  @scala.inline
+  def rgbToColorString(color: RgbColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgbToColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rgbToColorString(color: RgbaColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgbToColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: String): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: String,
-    secondValue: js.UndefOr[scala.Nothing],
-    thirdValue: js.UndefOr[scala.Nothing],
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: String, secondValue: js.UndefOr[scala.Nothing], thirdValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: String,
-    secondValue: js.UndefOr[scala.Nothing],
-    thirdValue: Double,
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: String, secondValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: String,
-    secondValue: Double,
-    thirdValue: js.UndefOr[scala.Nothing],
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: String, secondValue: Double, thirdValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: String, secondValue: Double, thirdValue: Double, fourthValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: Double,
-    secondValue: js.UndefOr[scala.Nothing],
-    thirdValue: js.UndefOr[scala.Nothing],
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: Double, secondValue: js.UndefOr[scala.Nothing], thirdValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: Double,
-    secondValue: js.UndefOr[scala.Nothing],
-    thirdValue: Double,
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: Double, secondValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: Double,
-    secondValue: Double,
-    thirdValue: js.UndefOr[scala.Nothing],
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: Double, secondValue: Double, thirdValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: Double, secondValue: Double, thirdValue: Double, fourthValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: RgbaColor): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: RgbaColor,
-    secondValue: js.UndefOr[scala.Nothing],
-    thirdValue: js.UndefOr[scala.Nothing],
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: RgbaColor, secondValue: js.UndefOr[scala.Nothing], thirdValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: RgbaColor,
-    secondValue: js.UndefOr[scala.Nothing],
-    thirdValue: Double,
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: RgbaColor, secondValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(
-    firstValue: RgbaColor,
-    secondValue: Double,
-    thirdValue: js.UndefOr[scala.Nothing],
-    fourthValue: Double
-  ): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: RgbaColor, secondValue: Double, thirdValue: Double): String = js.native
-  @JSImport("polished", "rgba")
-  @js.native
-  def rgba(firstValue: RgbaColor, secondValue: Double, thirdValue: Double, fourthValue: Double): String = js.native
+  @scala.inline
+  def rgba(firstValue: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: String, secondValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: String, secondValue: Double, thirdValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: String, secondValue: Double, thirdValue: Double, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: String, secondValue: Double, thirdValue: Unit, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: String, secondValue: Unit, thirdValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: String, secondValue: Unit, thirdValue: Double, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: String, secondValue: Unit, thirdValue: Unit, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double, secondValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double, secondValue: Double, thirdValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double, secondValue: Double, thirdValue: Double, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double, secondValue: Double, thirdValue: Unit, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double, secondValue: Unit, thirdValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double, secondValue: Unit, thirdValue: Double, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: Double, secondValue: Unit, thirdValue: Unit, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor, secondValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor, secondValue: Double, thirdValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor, secondValue: Double, thirdValue: Double, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor, secondValue: Double, thirdValue: Unit, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor, secondValue: Unit, thirdValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor, secondValue: Unit, thirdValue: Double, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def rgba(firstValue: RgbaColor, secondValue: Unit, thirdValue: Unit, fourthValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any], thirdValue.asInstanceOf[js.Any], fourthValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "saturate")
-  @js.native
-  def saturate(amount: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "saturate")
-  @js.native
-  def saturate(amount: String, color: String): String = js.native
-  @JSImport("polished", "saturate")
-  @js.native
-  def saturate(amount: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "saturate")
-  @js.native
-  def saturate(amount: Double, color: String): String = js.native
+  @scala.inline
+  def saturate(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saturate")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def saturate(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("saturate")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def saturate(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saturate")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def saturate(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("saturate")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "setHue")
-  @js.native
-  def setHue(hue: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "setHue")
-  @js.native
-  def setHue(hue: String, color: String): String = js.native
-  @JSImport("polished", "setHue")
-  @js.native
-  def setHue(hue: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "setHue")
-  @js.native
-  def setHue(hue: Double, color: String): String = js.native
+  @scala.inline
+  def setHue(hue: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setHue")(hue.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def setHue(hue: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setHue")(hue.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def setHue(hue: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setHue")(hue.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def setHue(hue: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setHue")(hue.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "setLightness")
-  @js.native
-  def setLightness(lightness: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "setLightness")
-  @js.native
-  def setLightness(lightness: String, color: String): String = js.native
-  @JSImport("polished", "setLightness")
-  @js.native
-  def setLightness(lightness: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "setLightness")
-  @js.native
-  def setLightness(lightness: Double, color: String): String = js.native
+  @scala.inline
+  def setLightness(lightness: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLightness")(lightness.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def setLightness(lightness: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setLightness")(lightness.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def setLightness(lightness: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLightness")(lightness.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def setLightness(lightness: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setLightness")(lightness.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "setSaturation")
-  @js.native
-  def setSaturation(saturation: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "setSaturation")
-  @js.native
-  def setSaturation(saturation: String, color: String): String = js.native
-  @JSImport("polished", "setSaturation")
-  @js.native
-  def setSaturation(saturation: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "setSaturation")
-  @js.native
-  def setSaturation(saturation: Double, color: String): String = js.native
+  @scala.inline
+  def setSaturation(saturation: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSaturation")(saturation.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def setSaturation(saturation: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setSaturation")(saturation.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def setSaturation(saturation: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSaturation")(saturation.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def setSaturation(saturation: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setSaturation")(saturation.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "shade")
-  @js.native
-  def shade(percentage: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "shade")
-  @js.native
-  def shade(percentage: String, color: String): String = js.native
-  @JSImport("polished", "shade")
-  @js.native
-  def shade(percentage: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "shade")
-  @js.native
-  def shade(percentage: Double, color: String): String = js.native
+  @scala.inline
+  def shade(percentage: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shade")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def shade(percentage: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("shade")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def shade(percentage: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shade")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def shade(percentage: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("shade")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "size")
-  @js.native
-  def size(height: String): Styles = js.native
-  @JSImport("polished", "size")
-  @js.native
-  def size(height: String, width: String): Styles = js.native
-  @JSImport("polished", "size")
-  @js.native
-  def size(height: String, width: Double): Styles = js.native
-  @JSImport("polished", "size")
-  @js.native
-  def size(height: Double): Styles = js.native
-  @JSImport("polished", "size")
-  @js.native
-  def size(height: Double, width: String): Styles = js.native
-  @JSImport("polished", "size")
-  @js.native
-  def size(height: Double, width: Double): Styles = js.native
+  @scala.inline
+  def size(height: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def size(height: String, width: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def size(height: String, width: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def size(height: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def size(height: Double, width: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  @scala.inline
+  def size(height: Double, width: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  @JSImport("polished", "stripUnit")
-  @js.native
-  def stripUnit(value: String): js.Any = js.native
-  @JSImport("polished", "stripUnit")
-  @js.native
-  def stripUnit(value: String, unitReturn: Boolean): js.Any = js.native
-  @JSImport("polished", "stripUnit")
-  @js.native
-  def stripUnit(value: Double): js.Any = js.native
-  @JSImport("polished", "stripUnit")
-  @js.native
-  def stripUnit(value: Double, unitReturn: Boolean): js.Any = js.native
+  @scala.inline
+  def stripUnit(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def stripUnit(value: String, unitReturn: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any], unitReturn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def stripUnit(value: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def stripUnit(value: Double, unitReturn: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any], unitReturn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("polished", "textInputs")
-  @js.native
-  def textInputs(states: InteractionState*): String = js.native
+  @scala.inline
+  def textInputs(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textInputs")(states.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "timingFunctions")
-  @js.native
-  def timingFunctions(timingFunction: TimingFunction): String = js.native
+  @scala.inline
+  def timingFunctions(timingFunction: TimingFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timingFunctions")(timingFunction.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "tint")
-  @js.native
-  def tint(percentage: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "tint")
-  @js.native
-  def tint(percentage: String, color: String): String = js.native
-  @JSImport("polished", "tint")
-  @js.native
-  def tint(percentage: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "tint")
-  @js.native
-  def tint(percentage: Double, color: String): String = js.native
+  @scala.inline
+  def tint(percentage: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tint")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def tint(percentage: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tint")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def tint(percentage: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tint")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def tint(percentage: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tint")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "toColorString")
-  @js.native
-  def toColorString(color: js.Object): String = js.native
+  @scala.inline
+  def toColorString(color: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("polished", "transitions")
-  @js.native
-  def transitions(properties: (String | js.Array[String])*): Styles = js.native
+  @scala.inline
+  def transitions(properties: (String | js.Array[String])*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("transitions")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "transparentize")
-  @js.native
-  def transparentize(amount: String): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "transparentize")
-  @js.native
-  def transparentize(amount: String, color: String): String = js.native
-  @JSImport("polished", "transparentize")
-  @js.native
-  def transparentize(amount: Double): js.Function1[/* color */ String, String] = js.native
-  @JSImport("polished", "transparentize")
-  @js.native
-  def transparentize(amount: Double, color: String): String = js.native
+  @scala.inline
+  def transparentize(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def transparentize(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def transparentize(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  @scala.inline
+  def transparentize(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("polished", "triangle")
-  @js.native
-  def triangle(hasPointingDirectionHeightWidthForegroundColorBackgroundColor: TriangleConfiguration): Styles = js.native
+  @scala.inline
+  def triangle(hasPointingDirectionHeightWidthForegroundColorBackgroundColor: TriangleConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("triangle")(hasPointingDirectionHeightWidthForegroundColorBackgroundColor.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @JSImport("polished", "wordWrap")
-  @js.native
-  def wordWrap(): Styles = js.native
-  @JSImport("polished", "wordWrap")
-  @js.native
-  def wordWrap(wrap: String): Styles = js.native
+  @scala.inline
+  def wordWrap(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")().asInstanceOf[Styles]
+  @scala.inline
+  def wordWrap(wrap: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(wrap.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

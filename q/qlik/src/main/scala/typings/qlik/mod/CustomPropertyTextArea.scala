@@ -4,31 +4,30 @@ import typings.qlik.qlikStrings.string
 import typings.qlik.qlikStrings.textarea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyTextArea
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: textarea = js.native
+  var component: textarea
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var maxlength: js.UndefOr[Double] = js.native
+  var maxlength: js.UndefOr[Double] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyTextArea: string = js.native
+  var type_CustomPropertyTextArea: string
 }
 object CustomPropertyTextArea {
   
   @scala.inline
-  def apply(component: textarea, `type`: string): CustomPropertyTextArea = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): CustomPropertyTextArea = {
+    val __obj = js.Dynamic.literal(component = "textarea")
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomPropertyTextArea]
   }
   

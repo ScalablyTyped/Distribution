@@ -3,30 +3,28 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * contains properties specifying the behavior of a {@link NumberFormatter} .
   * @see NumberFormatter
   */
-@js.native
 trait NumberFormatProperties extends StObject {
   
   /** contains a comment regarding the number format for display to the user. */
-  var Comment: String = js.native
+  var Comment: String
   
   /** contains the format string of the number format. */
-  var FormatString: String = js.native
+  var FormatString: String
   
   /** contains the locale of the number format. */
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /**
     * contains the type of the number format.
     * @see NumberFormat
     */
-  var Type: Double = js.native
+  var Type: Double
 }
 object NumberFormatProperties {
   

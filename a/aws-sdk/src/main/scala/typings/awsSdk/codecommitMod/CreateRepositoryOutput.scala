@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRepositoryOutput extends StObject {
   
   /**
     * Information about the newly created repository.
     */
-  var repositoryMetadata: js.UndefOr[RepositoryMetadata] = js.native
+  var repositoryMetadata: js.UndefOr[RepositoryMetadata] = js.undefined
 }
 object CreateRepositoryOutput {
   

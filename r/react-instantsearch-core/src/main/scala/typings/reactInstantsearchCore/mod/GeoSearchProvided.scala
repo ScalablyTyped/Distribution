@@ -3,29 +3,27 @@ package typings.reactInstantsearchCore.mod
 import typings.reactInstantsearchCore.anon.Lat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoSearchProvided[THit] extends StObject {
   
   /** a function to generate a URL for the corresponding search state */
-  def createURL(args: js.Any*): js.Any = js.native
+  def createURL(args: js.Any*): js.Any
   
   /** the refinement currently applied */
-  var currentRefinement: NESW = js.native
+  var currentRefinement: NESW
   
   /** the records that matched the search */
-  var hits: js.Array[THit] = js.native
+  var hits: js.Array[THit]
   
   /** true if the current refinement is set with the map bounds */
-  var isRefinedWithMap: Boolean = js.native
+  var isRefinedWithMap: Boolean
   
   /** the position of the search */
-  var position: Lat = js.native
+  var position: Lat
   
   /** a function to toggle the refinement */
-  def refine(refinement: NESW): Unit = js.native
+  def refine(refinement: NESW): Unit
 }
 object GeoSearchProvided {
   
@@ -43,7 +41,7 @@ object GeoSearchProvided {
   }
   
   @scala.inline
-  implicit class GeoSearchProvidedMutableBuilder[Self <: GeoSearchProvided[_], THit] (val x: Self with GeoSearchProvided[THit]) extends AnyVal {
+  implicit class GeoSearchProvidedMutableBuilder[Self <: GeoSearchProvided[?], THit] (val x: Self & GeoSearchProvided[THit]) extends AnyVal {
     
     @scala.inline
     def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))

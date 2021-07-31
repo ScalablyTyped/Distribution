@@ -3,14 +3,12 @@ package typings.xrm.Xrm.Controls
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for controls which methods provide immediate feedback or take actions as user types in a control.
   * Contains methods which can be used to perform data validations in a control even before the user commits (saves) the value in a form.
   */
-@js.native
 trait UiKeyPressable extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait UiKeyPressable extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param handler The function reference.
     */
-  def addOnKeyPress(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnKeyPress(handler: ContextSensitiveHandler): Unit
   
   /**
     * Use this to manually fire an event handler that you created for a specific text or number field to be executed on the keypress event.
     */
-  def fireOnKeyPress(): Unit = js.native
+  def fireOnKeyPress(): Unit
   
   /**
     * Use this to remove an event handler for a text or number field that you added using addOnKeyPress.
@@ -34,7 +32,7 @@ trait UiKeyPressable extends StObject {
     * Remarks:  If an anonymous function is set using addOnKeyPress, it can’t be removed using this method.
     * @param handler The function reference.
     */
-  def removeOnKeyPress(handler: ContextSensitiveHandler): Unit = js.native
+  def removeOnKeyPress(handler: ContextSensitiveHandler): Unit
 }
 object UiKeyPressable {
   

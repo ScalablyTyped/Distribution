@@ -2,17 +2,15 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyColor extends StObject {
   
-  var bodyColor: js.UndefOr[String] = js.native
+  var bodyColor: js.UndefOr[String] = js.undefined
   
-  var bodyFontSize: js.UndefOr[Double] = js.native
+  var bodyFontSize: js.UndefOr[Double] = js.undefined
   
-  var titleFontSize: js.UndefOr[Double] = js.native
+  var titleFontSize: js.UndefOr[Double] = js.undefined
 }
 object BodyColor {
   

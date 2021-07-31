@@ -2,19 +2,17 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MacroHandle extends StObject {
   
-  var invalidate: js.UndefOr[js.Function0[Unit]] = js.native
+  var invalidate: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var render: js.UndefOr[js.Function0[Unit]] = js.native
+  var render: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var teardown: js.UndefOr[js.Function0[Unit]] = js.native
+  var teardown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var update: js.UndefOr[js.Function1[/* attributes */ ValueMap, Unit]] = js.native
+  var update: js.UndefOr[js.Function1[/* attributes */ ValueMap, Unit]] = js.undefined
 }
 object MacroHandle {
   

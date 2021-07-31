@@ -6,31 +6,29 @@ import typings.zipkin.mod.JsonEncoder_
 import typings.zipkinTransportHttp.mod.ErrorLogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Agent extends StObject {
     
     var agent: js.UndefOr[
         typings.zipkinTransportHttp.mod.Agent | (js.Function1[/* url */ URL_, typings.zipkinTransportHttp.mod.Agent])
-      ] = js.native
+      ] = js.undefined
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var httpInterval: js.UndefOr[Double] = js.native
+    var httpInterval: js.UndefOr[Double] = js.undefined
     
-    var jsonEncoder: js.UndefOr[JsonEncoder_] = js.native
+    var jsonEncoder: js.UndefOr[JsonEncoder_] = js.undefined
     
-    var log: js.UndefOr[ErrorLogger] = js.native
+    var log: js.UndefOr[ErrorLogger] = js.undefined
     
-    var maxPayloadSize: js.UndefOr[Double] = js.native
+    var maxPayloadSize: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Agent {
     

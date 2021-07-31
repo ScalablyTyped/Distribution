@@ -3,61 +3,61 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemType extends WorkItemTrackingResource {
+trait WorkItemType
+  extends StObject
+     with WorkItemTrackingResource {
   
   /**
     * The color.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * The description of the work item type.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The fields that exist on the work item type.
     */
-  var fieldInstances: js.Array[WorkItemTypeFieldInstance] = js.native
+  var fieldInstances: js.Array[WorkItemTypeFieldInstance]
   
   /**
     * The fields that exist on the work item type.
     */
-  var fields: js.Array[WorkItemTypeFieldInstance] = js.native
+  var fields: js.Array[WorkItemTypeFieldInstance]
   
   /**
     * The icon of the work item type.
     */
-  var icon: WorkItemIcon = js.native
+  var icon: WorkItemIcon
   
   /**
     * True if work item type is disabled
     */
-  var isDisabled: Boolean = js.native
+  var isDisabled: Boolean
   
   /**
     * Gets the name of the work item type.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The reference name of the work item type.
     */
-  var referenceName: String = js.native
+  var referenceName: String
   
   /**
     * Gets the various state transition mappings in the work item type.
     */
-  var transitions: StringDictionary[js.Array[WorkItemStateTransition]] = js.native
+  var transitions: StringDictionary[js.Array[WorkItemStateTransition]]
   
   /**
     * The XML form.
     */
-  var xmlForm: String = js.native
+  var xmlForm: String
 }
 object WorkItemType {
   

@@ -2,13 +2,11 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flows extends StObject {
   
-  var flows: js.Array[TypeString] = js.native
+  var flows: js.Array[TypeString]
 }
 object Flows {
   

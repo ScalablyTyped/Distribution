@@ -1,12 +1,9 @@
 package typings.figma.mod.global
 
 import typings.figma.figmaStrings.JPG
-import typings.figma.figmaStrings.PDF
 import typings.figma.figmaStrings.PNG
-import typings.figma.figmaStrings.SVG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -24,14 +21,14 @@ object ExportSettings {
   }
   
   @scala.inline
-  def ExportSettingsPDF(format: PDF): typings.figma.mod.global.ExportSettingsPDF = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+  def ExportSettingsPDF(): typings.figma.mod.global.ExportSettingsPDF = {
+    val __obj = js.Dynamic.literal(format = "PDF")
     __obj.asInstanceOf[typings.figma.mod.global.ExportSettingsPDF]
   }
   
   @scala.inline
-  def ExportSettingsSVG(format: SVG): typings.figma.mod.global.ExportSettingsSVG = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+  def ExportSettingsSVG(): typings.figma.mod.global.ExportSettingsSVG = {
+    val __obj = js.Dynamic.literal(format = "SVG")
     __obj.asInstanceOf[typings.figma.mod.global.ExportSettingsSVG]
   }
 }

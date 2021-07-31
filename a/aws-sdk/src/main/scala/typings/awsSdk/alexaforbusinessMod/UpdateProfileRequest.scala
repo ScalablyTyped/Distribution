@@ -2,76 +2,74 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProfileRequest extends StObject {
   
   /**
     * The updated address for the room profile.
     */
-  var Address: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Address] = js.native
+  var Address: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Address] = js.undefined
   
   /**
     * The updated distance unit for the room profile.
     */
-  var DistanceUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DistanceUnit] = js.native
+  var DistanceUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DistanceUnit] = js.undefined
   
   /**
     * Sets the profile as default if selected. If this is missing, no update is done to the default status.
     */
-  var IsDefault: js.UndefOr[Boolean] = js.native
+  var IsDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The updated locale for the room profile. (This is currently only available to a limited preview audience.)
     */
-  var Locale: js.UndefOr[DeviceLocale] = js.native
+  var Locale: js.UndefOr[DeviceLocale] = js.undefined
   
   /**
     * The updated maximum volume limit for the room profile.
     */
-  var MaxVolumeLimit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxVolumeLimit] = js.native
+  var MaxVolumeLimit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxVolumeLimit] = js.undefined
   
   /**
     * The updated meeting room settings of a room profile.
     */
-  var MeetingRoomConfiguration: js.UndefOr[UpdateMeetingRoomConfiguration] = js.native
+  var MeetingRoomConfiguration: js.UndefOr[UpdateMeetingRoomConfiguration] = js.undefined
   
   /**
     * Whether the PSTN setting of the room profile is enabled.
     */
-  var PSTNEnabled: js.UndefOr[Boolean] = js.native
+  var PSTNEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the room profile to update. Required.
     */
-  var ProfileArn: js.UndefOr[Arn] = js.native
+  var ProfileArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The updated name for the room profile.
     */
-  var ProfileName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProfileName] = js.native
+  var ProfileName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProfileName] = js.undefined
   
   /**
     * Whether the setup mode of the profile is enabled.
     */
-  var SetupModeDisabled: js.UndefOr[Boolean] = js.native
+  var SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The updated temperature unit for the room profile.
     */
-  var TemperatureUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TemperatureUnit] = js.native
+  var TemperatureUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TemperatureUnit] = js.undefined
   
   /**
     * The updated timezone for the room profile.
     */
-  var Timezone: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Timezone] = js.native
+  var Timezone: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Timezone] = js.undefined
   
   /**
     * The updated wake word for the room profile.
     */
-  var WakeWord: js.UndefOr[typings.awsSdk.alexaforbusinessMod.WakeWord] = js.native
+  var WakeWord: js.UndefOr[typings.awsSdk.alexaforbusinessMod.WakeWord] = js.undefined
 }
 object UpdateProfileRequest {
   

@@ -2,17 +2,15 @@ package typings.reactTextMask
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IndexesOfPipedChars extends StObject {
     
-    var indexesOfPipedChars: js.Array[Double] = js.native
+    var indexesOfPipedChars: js.Array[Double]
     
-    var value: String = js.native
+    var value: String
   }
   object IndexesOfPipedChars {
     
@@ -36,10 +34,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SomeCharsRejected extends StObject {
     
-    var someCharsRejected: Boolean = js.native
+    var someCharsRejected: Boolean
   }
   object SomeCharsRejected {
     

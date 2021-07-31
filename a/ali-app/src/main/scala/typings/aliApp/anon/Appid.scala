@@ -2,31 +2,29 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Appid extends StObject {
   
-  var app_id: String = js.native
+  var app_id: String
   
   // 应用id
-  var auth_code: String = js.native
+  var auth_code: String
   
   // 会员卡表单信息请求Id
-  var out_string: String = js.native
+  var out_string: String
   
   // 会员卡模板Id
-  var request_id: String = js.native
+  var request_id: String
   
   // 授权的state
-  var scope: String = js.native
+  var scope: String
   
   // 授权码，用于换取authtoken
-  var state: String = js.native
+  var state: String
   
   // 授权scope
-  var template_id: String = js.native
+  var template_id: String
 }
 object Appid {
   

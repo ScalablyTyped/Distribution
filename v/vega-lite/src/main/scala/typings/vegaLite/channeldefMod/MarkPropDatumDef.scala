@@ -8,11 +8,9 @@ import typings.vegaLite.srcTypeMod.Type
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/channeldef.LegendMixins & vega-lite.vega-lite/build/src/channeldef.ScaleDatumDef<F> */
-@js.native
 trait MarkPropDatumDef[F /* <: Field */] extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait MarkPropDatumDef[F /* <: Field */] extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A constant value in data domain.
     */
-  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.native
+  var datum: js.UndefOr[PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef] = js.undefined
   
   /**
     * An object defining properties of the legend.
@@ -38,7 +36,7 @@ trait MarkPropDatumDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`legend`](https://vega.github.io/vega-lite/docs/legend.html) documentation.
     */
-  var legend: js.UndefOr[(Legend[ExprRef | SignalRef]) | Null] = js.native
+  var legend: js.UndefOr[(Legend[ExprRef | SignalRef]) | Null] = js.undefined
   
   /**
     * An object defining properties of the channel's scale, which is the function that transforms values in the data domain (numbers, dates, strings, etc) to visual values (pixels, colors, sizes) of the encoding channels.
@@ -49,9 +47,9 @@ trait MarkPropDatumDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`scale`](https://vega.github.io/vega-lite/docs/scale.html) documentation.
     */
-  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.native
+  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.undefined
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 object MarkPropDatumDef {
   
@@ -62,7 +60,7 @@ object MarkPropDatumDef {
   }
   
   @scala.inline
-  implicit class MarkPropDatumDefMutableBuilder[Self <: MarkPropDatumDef[_], F /* <: Field */] (val x: Self with MarkPropDatumDef[F]) extends AnyVal {
+  implicit class MarkPropDatumDefMutableBuilder[Self <: MarkPropDatumDef[?], F /* <: Field */] (val x: Self & MarkPropDatumDef[F]) extends AnyVal {
     
     @scala.inline
     def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])

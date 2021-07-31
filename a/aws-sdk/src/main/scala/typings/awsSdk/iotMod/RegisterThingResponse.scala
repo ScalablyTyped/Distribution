@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterThingResponse extends StObject {
   
   /**
     * The certificate data, in PEM format.
     */
-  var certificatePem: js.UndefOr[CertificatePem] = js.native
+  var certificatePem: js.UndefOr[CertificatePem] = js.undefined
   
   /**
     * ARNs for the generated resources.
     */
-  var resourceArns: js.UndefOr[ResourceArns] = js.native
+  var resourceArns: js.UndefOr[ResourceArns] = js.undefined
 }
 object RegisterThingResponse {
   

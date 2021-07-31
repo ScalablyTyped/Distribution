@@ -4,32 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(view: View): Transform = ^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def apply(view: View, options: Unit, partials: Hash): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any], partials.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(view: View, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(view: View, options: Options, partials: Hash): Transform = (^.asInstanceOf[js.Dynamic].apply(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any], partials.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  
   @JSImport("gulp-mustache", JSImport.Namespace)
   @js.native
-  def apply(view: View): Transform = js.native
-  @JSImport("gulp-mustache", JSImport.Namespace)
-  @js.native
-  def apply(view: View, options: js.UndefOr[scala.Nothing], partials: Hash): Transform = js.native
-  @JSImport("gulp-mustache", JSImport.Namespace)
-  @js.native
-  def apply(view: View, options: Options): Transform = js.native
-  @JSImport("gulp-mustache", JSImport.Namespace)
-  @js.native
-  def apply(view: View, options: Options, partials: Hash): Transform = js.native
+  val ^ : js.Any = js.native
   
   type Hash = StringDictionary[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameRequestedNavigationEvent extends StObject {
   
   /**
     * The disposition for the navigation.
     */
-  var disposition: ClientNavigationDisposition = js.native
+  var disposition: ClientNavigationDisposition
   
   /**
     * Id of the frame that is being navigated.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * The reason for the navigation.
     */
-  var reason: ClientNavigationReason = js.native
+  var reason: ClientNavigationReason
   
   /**
     * The destination URL for the requested navigation.
     */
-  var url: String = js.native
+  var url: String
 }
 object FrameRequestedNavigationEvent {
   

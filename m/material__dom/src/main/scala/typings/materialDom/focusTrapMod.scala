@@ -3,7 +3,6 @@ package typings.materialDom
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusTrapMod {
@@ -27,12 +26,11 @@ object focusTrapMod {
     def trapFocus(): Unit = js.native
   }
   
-  @js.native
   trait FocusOptions extends StObject {
     
-    var initialFocusEl: js.UndefOr[HTMLElement] = js.native
+    var initialFocusEl: js.UndefOr[HTMLElement] = js.undefined
     
-    var skipInitialFocus: js.UndefOr[Boolean] = js.native
+    var skipInitialFocus: js.UndefOr[Boolean] = js.undefined
   }
   object FocusOptions {
     

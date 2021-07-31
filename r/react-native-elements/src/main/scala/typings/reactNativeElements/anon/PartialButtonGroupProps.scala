@@ -8,62 +8,60 @@ import typings.reactNativeElements.mod.ElementObject
 import typings.reactNativeElements.mod.InnerBorderStyleProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.ButtonGroupProps> */
-@js.native
 trait PartialButtonGroupProps extends StObject {
   
-  var Component: js.UndefOr[ComponentType[_]] = js.native
+  var Component: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var buttonContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var buttons: js.UndefOr[js.Array[ElementObject | String]] = js.native
+  var buttons: js.UndefOr[js.Array[ElementObject | String]] = js.undefined
   
-  var containerBorderRadius: js.UndefOr[Double] = js.native
+  var containerBorderRadius: js.UndefOr[Double] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | js.Array[Double]] = js.native
+  var disabled: js.UndefOr[Boolean | js.Array[Double]] = js.undefined
   
-  var disabledSelectedStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledSelectedStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var disabledSelectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var disabledSelectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var disabledTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var disabledTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var innerBorderStyle: js.UndefOr[InnerBorderStyleProperty] = js.native
+  var innerBorderStyle: js.UndefOr[InnerBorderStyleProperty] = js.undefined
   
-  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* selectedIndex */ Double, Unit]] = js.undefined
   
-  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var selectMultiple: js.UndefOr[Boolean] = js.native
+  var selectMultiple: js.UndefOr[Boolean] = js.undefined
   
-  var selectedButtonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var selectedButtonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var selectedIndex: js.UndefOr[Double | Null] = js.native
+  var selectedIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var selectedIndexes: js.UndefOr[js.Array[Double]] = js.native
+  var selectedIndexes: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var selectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var selectedTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var setOpacityTo: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var setOpacityTo: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var underlayColor: js.UndefOr[String] = js.native
+  var underlayColor: js.UndefOr[String] = js.undefined
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object PartialButtonGroupProps {
   
@@ -110,7 +108,7 @@ object PartialButtonGroupProps {
     def setButtonsVarargs(value: (ElementObject | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setComponent(value: ComponentType[_]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)

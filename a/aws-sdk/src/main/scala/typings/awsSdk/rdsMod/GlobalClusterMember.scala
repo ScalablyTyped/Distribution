@@ -2,31 +2,29 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalClusterMember extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) for each Aurora cluster. 
     */
-  var DBClusterArn: js.UndefOr[String] = js.native
+  var DBClusterArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether a secondary cluster in an Aurora global database has write forwarding enabled, not enabled, or is in the process of enabling it.
     */
-  var GlobalWriteForwardingStatus: js.UndefOr[WriteForwardingStatus] = js.native
+  var GlobalWriteForwardingStatus: js.UndefOr[WriteForwardingStatus] = js.undefined
   
   /**
     *  Specifies whether the Aurora cluster is the primary cluster (that is, has read-write capability) for the Aurora global database with which it is associated. 
     */
-  var IsWriter: js.UndefOr[Boolean] = js.native
+  var IsWriter: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) for each read-only secondary cluster associated with the Aurora global database. 
     */
-  var Readers: js.UndefOr[ReadersArnList] = js.native
+  var Readers: js.UndefOr[ReadersArnList] = js.undefined
 }
 object GlobalClusterMember {
   

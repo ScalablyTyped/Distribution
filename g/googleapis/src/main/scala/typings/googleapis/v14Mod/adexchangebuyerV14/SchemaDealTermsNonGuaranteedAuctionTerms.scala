@@ -2,22 +2,20 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDealTermsNonGuaranteedAuctionTerms extends StObject {
   
   /**
     * True if open auction buyers are allowed to compete with invited buyers in
     * this private auction (buyer-readonly).
     */
-  var autoOptimizePrivateAuction: js.UndefOr[Boolean] = js.native
+  var autoOptimizePrivateAuction: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Reserve price for the specified buyer.
     */
-  var reservePricePerBuyers: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.native
+  var reservePricePerBuyers: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.undefined
 }
 object SchemaDealTermsNonGuaranteedAuctionTerms {
   

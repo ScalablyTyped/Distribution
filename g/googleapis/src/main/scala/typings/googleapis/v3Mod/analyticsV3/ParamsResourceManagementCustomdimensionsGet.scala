@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceManagementCustomdimensionsGet extends StandardParameters {
+trait ParamsResourceManagementCustomdimensionsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Account ID for the custom dimension to retrieve.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the custom dimension to retrieve.
     */
-  var customDimensionId: js.UndefOr[String] = js.native
+  var customDimensionId: js.UndefOr[String] = js.undefined
   
   /**
     * Web property ID for the custom dimension to retrieve.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceManagementCustomdimensionsGet {
   

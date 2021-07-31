@@ -2,141 +2,139 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * The architecture of the image.
     */
-  var Architecture: js.UndefOr[ArchitectureValues] = js.native
+  var Architecture: js.UndefOr[ArchitectureValues] = js.undefined
   
   /**
     * Any block device mapping entries.
     */
-  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
   /**
     * The date and time the image was created.
     */
-  var CreationDate: js.UndefOr[String] = js.native
+  var CreationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the AMI that was provided during image creation.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether enhanced networking with ENA is enabled.
     */
-  var EnaSupport: js.UndefOr[Boolean] = js.native
+  var EnaSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The hypervisor type of the image.
     */
-  var Hypervisor: js.UndefOr[HypervisorType] = js.native
+  var Hypervisor: js.UndefOr[HypervisorType] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The location of the AMI.
     */
-  var ImageLocation: js.UndefOr[String] = js.native
+  var ImageLocation: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account alias (for example, amazon, self) or the AWS account ID of the AMI owner.
     */
-  var ImageOwnerAlias: js.UndefOr[String] = js.native
+  var ImageOwnerAlias: js.UndefOr[String] = js.undefined
   
   /**
     * The type of image.
     */
-  var ImageType: js.UndefOr[ImageTypeValues] = js.native
+  var ImageType: js.UndefOr[ImageTypeValues] = js.undefined
   
   /**
     * The kernel associated with the image, if any. Only applicable for machine images.
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the AMI that was provided during image creation.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID of the image owner.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * This value is set to windows for Windows AMIs; otherwise, it is blank.
     */
-  var Platform: js.UndefOr[PlatformValues] = js.native
+  var Platform: js.UndefOr[PlatformValues] = js.undefined
   
   /**
     * The platform details associated with the billing code of the AMI. For more information, see Obtaining Billing Information in the Amazon Elastic Compute Cloud User Guide.
     */
-  var PlatformDetails: js.UndefOr[String] = js.native
+  var PlatformDetails: js.UndefOr[String] = js.undefined
   
   /**
     * Any product codes associated with the AMI.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
     * Indicates whether the image has public launch permissions. The value is true if this image has public launch permissions or false if it has only implicit and explicit launch permissions.
     */
-  var Public: js.UndefOr[Boolean] = js.native
+  var Public: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The RAM disk associated with the image, if any. Only applicable for machine images.
     */
-  var RamdiskId: js.UndefOr[String] = js.native
+  var RamdiskId: js.UndefOr[String] = js.undefined
   
   /**
     * The device name of the root device volume (for example, /dev/sda1).
     */
-  var RootDeviceName: js.UndefOr[String] = js.native
+  var RootDeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of root device used by the AMI. The AMI can use an EBS volume or an instance store volume.
     */
-  var RootDeviceType: js.UndefOr[DeviceType] = js.native
+  var RootDeviceType: js.UndefOr[DeviceType] = js.undefined
   
   /**
     * Specifies whether enhanced networking with the Intel 82599 Virtual Function interface is enabled.
     */
-  var SriovNetSupport: js.UndefOr[String] = js.native
+  var SriovNetSupport: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the AMI. If the state is available, the image is successfully registered and can be used to launch an instance.
     */
-  var State: js.UndefOr[ImageState] = js.native
+  var State: js.UndefOr[ImageState] = js.undefined
   
   /**
     * The reason for the state change.
     */
-  var StateReason: js.UndefOr[typings.awsSdk.ec2Mod.StateReason] = js.native
+  var StateReason: js.UndefOr[typings.awsSdk.ec2Mod.StateReason] = js.undefined
   
   /**
     * Any tags assigned to the image.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The operation of the Amazon EC2 instance and the billing code that is associated with the AMI. usageOperation corresponds to the lineitem/Operation column on your AWS Cost and Usage Report and in the AWS Price List API. For the list of UsageOperation codes, see Platform Details and Usage Operation Billing Codes in the Amazon Elastic Compute Cloud User Guide.
     */
-  var UsageOperation: js.UndefOr[String] = js.native
+  var UsageOperation: js.UndefOr[String] = js.undefined
   
   /**
     * The type of virtualization of the AMI.
     */
-  var VirtualizationType: js.UndefOr[typings.awsSdk.ec2Mod.VirtualizationType] = js.native
+  var VirtualizationType: js.UndefOr[typings.awsSdk.ec2Mod.VirtualizationType] = js.undefined
 }
 object Image {
   

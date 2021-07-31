@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.PointCloudReturnFilterConstructor
 import typings.arcgisJsApi.esri.PointCloudReturnFilterProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointCloudReturnFilterMod extends Shortcut {
   
   @JSImport("esri/layers/pointCloudFilters/PointCloudReturnFilter", JSImport.Namespace)
   @js.native
-  val ^ : PointCloudReturnFilterConstructor = js.native
+  val ^ : js.Object & PointCloudReturnFilterConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/pointCloudFilters/PointCloudReturnFilter", JSImport.Namespace)
@@ -23,12 +22,22 @@ object pointCloudReturnFilterMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html)
     */
-  class Class () extends PointCloudReturnFilter {
+  class Class ()
+    extends StObject
+       with PointCloudReturnFilter {
     def this(properties: PointCloudReturnFilterProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = PointCloudReturnFilterConstructor
+  type _To = js.Object & PointCloudReturnFilterConstructor
   
   /* This means you don't have to write `^`, but can instead just say `pointCloudReturnFilterMod.foo` */
-  override def _to: PointCloudReturnFilterConstructor = ^
+  override def _to: js.Object & PointCloudReturnFilterConstructor = ^
 }

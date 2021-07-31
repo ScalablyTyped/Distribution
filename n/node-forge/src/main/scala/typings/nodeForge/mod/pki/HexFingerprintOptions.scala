@@ -3,22 +3,22 @@ package typings.nodeForge.mod.pki
 import typings.nodeForge.nodeForgeStrings.hex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HexFingerprintOptions extends ByteBufferFingerprintOptions {
+trait HexFingerprintOptions
+  extends StObject
+     with ByteBufferFingerprintOptions {
   
   /**
     * @description if not specified, the function will return `ByteStringBuffer`
     */
-  var encoding: hex = js.native
+  var encoding: hex
 }
 object HexFingerprintOptions {
   
   @scala.inline
-  def apply(encoding: hex): HexFingerprintOptions = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  def apply(): HexFingerprintOptions = {
+    val __obj = js.Dynamic.literal(encoding = "hex")
     __obj.asInstanceOf[HexFingerprintOptions]
   }
   

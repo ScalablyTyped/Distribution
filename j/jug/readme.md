@@ -11,7 +11,7 @@ Graph engine prototype.
 | Keywords           | data-minering, machine-learning, graph-engine |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 465 |
+| # downloads        | 660 |
 | # stars            | 1 |
 
 ## Links

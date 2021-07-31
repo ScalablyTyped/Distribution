@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Uik
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type is superseded by {@link XInterfaceTypeDescription2} , which supports multiple inheritance.
   * @see XInterfaceMemberTypeDescription
   */
-@js.native
-trait XInterfaceTypeDescription extends XTypeDescription {
+trait XInterfaceTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the base interface or null, if the reflected interface is not inherited from another.
@@ -26,20 +26,20 @@ trait XInterfaceTypeDescription extends XTypeDescription {
     * @deprecated Deprecated
     * @returns base interface or null
     */
-  val BaseType: XTypeDescription = js.native
+  val BaseType: XTypeDescription
   
   /**
     * Returns the members of the interfaces, i.e. attributes and methods.
     * @returns interface members
     */
-  val Members: SafeArray[XInterfaceMemberTypeDescription] = js.native
+  val Members: SafeArray[XInterfaceMemberTypeDescription]
   
   /**
     * Deprecated. UIK are not used anymore, a type is uniquely identified by its name. ;  Returns the UIK, i.e. the unique identifier of the interface.
     * @deprecated Deprecated
     * @returns uik of the interface
     */
-  val Uik: typings.activexLibreoffice.com_.sun.star.uno.Uik = js.native
+  val Uik: typings.activexLibreoffice.com_.sun.star.uno.Uik
   
   /**
     * Returns the base interface or null, if the reflected interface is not inherited from another.
@@ -49,20 +49,20 @@ trait XInterfaceTypeDescription extends XTypeDescription {
     * @deprecated Deprecated
     * @returns base interface or null
     */
-  def getBaseType(): XTypeDescription = js.native
+  def getBaseType(): XTypeDescription
   
   /**
     * Returns the members of the interfaces, i.e. attributes and methods.
     * @returns interface members
     */
-  def getMembers(): SafeArray[XInterfaceMemberTypeDescription] = js.native
+  def getMembers(): SafeArray[XInterfaceMemberTypeDescription]
   
   /**
     * Deprecated. UIK are not used anymore, a type is uniquely identified by its name. ;  Returns the UIK, i.e. the unique identifier of the interface.
     * @deprecated Deprecated
     * @returns uik of the interface
     */
-  def getUik(): typings.activexLibreoffice.com_.sun.star.uno.Uik = js.native
+  def getUik(): typings.activexLibreoffice.com_.sun.star.uno.Uik
 }
 object XInterfaceTypeDescription {
   

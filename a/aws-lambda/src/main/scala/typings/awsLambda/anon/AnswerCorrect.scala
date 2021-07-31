@@ -8,49 +8,47 @@ import typings.awsLambda.awsLambdaStrings.SMS
 import typings.awsLambda.awsLambdaStrings.SUPPRESS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnswerCorrect extends StObject {
   
-  var answerCorrect: js.UndefOr[Boolean] = js.native
+  var answerCorrect: js.UndefOr[Boolean] = js.undefined
   
-  var autoConfirmUser: js.UndefOr[Boolean] = js.native
+  var autoConfirmUser: js.UndefOr[Boolean] = js.undefined
   
-  var autoVerifyEmail: js.UndefOr[Boolean] = js.native
+  var autoVerifyEmail: js.UndefOr[Boolean] = js.undefined
   
-  var autoVerifyPhone: js.UndefOr[Boolean] = js.native
+  var autoVerifyPhone: js.UndefOr[Boolean] = js.undefined
   
-  var challengeMetadata: js.UndefOr[String] = js.native
+  var challengeMetadata: js.UndefOr[String] = js.undefined
   
-  var challengeName: js.UndefOr[String] = js.native
+  var challengeName: js.UndefOr[String] = js.undefined
   
-  var claimsOverrideDetails: js.UndefOr[ClaimsToAddOrOverride] = js.native
+  var claimsOverrideDetails: js.UndefOr[ClaimsToAddOrOverride] = js.undefined
   
-  var desiredDeliveryMediums: js.UndefOr[js.Array[EMAIL | SMS]] = js.native
+  var desiredDeliveryMediums: js.UndefOr[js.Array[EMAIL | SMS]] = js.undefined
   
-  var emailMessage: js.UndefOr[String] = js.native
+  var emailMessage: js.UndefOr[String] = js.undefined
   
-  var emailSubject: js.UndefOr[String] = js.native
+  var emailSubject: js.UndefOr[String] = js.undefined
   
-  var failAuthentication: js.UndefOr[Boolean] = js.native
+  var failAuthentication: js.UndefOr[Boolean] = js.undefined
   
-  var finalUserStatus: js.UndefOr[CONFIRMED | RESET_REQUIRED] = js.native
+  var finalUserStatus: js.UndefOr[CONFIRMED | RESET_REQUIRED] = js.undefined
   
-  var forceAliasCreation: js.UndefOr[Boolean] = js.native
+  var forceAliasCreation: js.UndefOr[Boolean] = js.undefined
   
-  var issueTokens: js.UndefOr[Boolean] = js.native
+  var issueTokens: js.UndefOr[Boolean] = js.undefined
   
-  var messageAction: js.UndefOr[SUPPRESS] = js.native
+  var messageAction: js.UndefOr[SUPPRESS] = js.undefined
   
-  var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.native
+  var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var publicChallengeParameters: js.UndefOr[StringDictionary[String]] = js.native
+  var publicChallengeParameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var smsMessage: js.UndefOr[String] = js.native
+  var smsMessage: js.UndefOr[String] = js.undefined
   
-  var userAttributes: js.UndefOr[StringDictionary[String]] = js.native
+  var userAttributes: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object AnswerCorrect {
   

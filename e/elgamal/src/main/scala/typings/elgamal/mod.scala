@@ -5,14 +5,15 @@ import typings.jsbn.mod.RandomGenerator
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("elgamal", JSImport.Default)
   @js.native
-  class default protected () extends ElGamal {
+  class default protected ()
+    extends StObject
+       with ElGamal {
     def this(
       p: BigInteger | String | Double,
       g: BigInteger | String | Double,
@@ -23,12 +24,14 @@ object mod {
   /* static members */
   object default {
     
-    @JSImport("elgamal", "default.generateAsync")
+    @JSImport("elgamal", JSImport.Default)
     @js.native
-    def generateAsync(): js.Promise[ElGamal] = js.native
-    @JSImport("elgamal", "default.generateAsync")
-    @js.native
-    def generateAsync(primeBits: Double): js.Promise[ElGamal] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def generateAsync(): js.Promise[ElGamal] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAsync")().asInstanceOf[js.Promise[ElGamal]]
+    @scala.inline
+    def generateAsync(primeBits: Double): js.Promise[ElGamal] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAsync")(primeBits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElGamal]]
   }
   
   @JSImport("elgamal", "BigInt")
@@ -86,35 +89,42 @@ object mod {
   
   @JSImport("elgamal", "MissingPrivateKeyError")
   @js.native
-  class MissingPrivateKeyError () extends Error
+  class MissingPrivateKeyError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   object Utils {
+    
+    @JSImport("elgamal", "Utils")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("elgamal", "Utils.BIG_TWO")
     @js.native
     val BIG_TWO: BigInteger = js.native
     
-    @JSImport("elgamal", "Utils.getBigPrimeAsync")
-    @js.native
-    def getBigPrimeAsync(bits: Double): js.Promise[BigInteger] = js.native
+    @scala.inline
+    def getBigPrimeAsync(bits: Double): js.Promise[BigInteger] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBigPrimeAsync")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BigInteger]]
     
-    @JSImport("elgamal", "Utils.getRandomBigIntAsync")
-    @js.native
-    def getRandomBigIntAsync(min: BigInteger, max: BigInteger): js.Promise[BigInteger] = js.native
+    @scala.inline
+    def getRandomBigIntAsync(min: BigInteger, max: BigInteger): js.Promise[BigInteger] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntAsync")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BigInteger]]
     
-    @JSImport("elgamal", "Utils.getRandomNbitBigIntAsync")
-    @js.native
-    def getRandomNbitBigIntAsync(bits: Double): js.Promise[BigInteger] = js.native
+    @scala.inline
+    def getRandomNbitBigIntAsync(bits: Double): js.Promise[BigInteger] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomNbitBigIntAsync")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BigInteger]]
     
-    @JSImport("elgamal", "Utils.parseBigInt")
-    @js.native
-    def parseBigInt(obj: String): BigInteger | Null = js.native
-    @JSImport("elgamal", "Utils.parseBigInt")
-    @js.native
-    def parseBigInt(obj: Double): BigInteger | Null = js.native
-    @JSImport("elgamal", "Utils.parseBigInt")
-    @js.native
-    def parseBigInt(obj: BigInteger): BigInteger | Null = js.native
+    @scala.inline
+    def parseBigInt(obj: String): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
+    @scala.inline
+    def parseBigInt(obj: Double): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
+    @scala.inline
+    def parseBigInt(obj: BigInteger): BigInteger | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBigInt")(obj.asInstanceOf[js.Any]).asInstanceOf[BigInteger | Null]
   }
   
   @js.native

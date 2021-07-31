@@ -2,15 +2,13 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProjectsParams extends StObject {
   
-  var all: js.UndefOr[Boolean] = js.native
+  var all: js.UndefOr[Boolean] = js.undefined
   
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
 }
 object GetProjectsParams {
   

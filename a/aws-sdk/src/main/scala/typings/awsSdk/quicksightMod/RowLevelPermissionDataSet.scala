@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowLevelPermissionDataSet extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the permission dataset.
     */
-  var Arn: typings.awsSdk.quicksightMod.Arn = js.native
+  var Arn: typings.awsSdk.quicksightMod.Arn
   
   /**
     * The namespace associated with the row-level permissions dataset.
     */
-  var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.native
+  var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.undefined
   
   /**
     * Permission policy.
     */
-  var PermissionPolicy: RowLevelPermissionPolicy = js.native
+  var PermissionPolicy: RowLevelPermissionPolicy
 }
 object RowLevelPermissionDataSet {
   

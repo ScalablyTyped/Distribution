@@ -4,37 +4,35 @@ import typings.reactDayPicker.modifiersMod.RangeModifier
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateUtilsMod {
   
-  @js.native
   trait DateUtils extends StObject {
     
-    def addDayToRange(day: Date, range: RangeModifier): RangeModifier = js.native
+    def addDayToRange(day: Date, range: RangeModifier): RangeModifier
     
-    def addMonths(d: Date, n: Double): Date = js.native
+    def addMonths(d: Date, n: Double): Date
     
-    def clone(d: Date): Date = js.native
+    def clone(d: Date): Date
     
-    def isDate(d: Date): Boolean = js.native
+    def isDate(d: Date): Boolean
     
-    def isDayAfter(day1: Date, day2: Date): Boolean = js.native
+    def isDayAfter(day1: Date, day2: Date): Boolean
     
-    def isDayBefore(day1: Date, day2: Date): Boolean = js.native
+    def isDayBefore(day1: Date, day2: Date): Boolean
     
-    def isDayBetween(day: Date, begin: Date, end: Date): Boolean = js.native
+    def isDayBetween(day: Date, begin: Date, end: Date): Boolean
     
-    def isDayInRange(day: Date, range: RangeModifier): Boolean = js.native
+    def isDayInRange(day: Date, range: RangeModifier): Boolean
     
-    def isFutureDay(day: Date): Boolean = js.native
+    def isFutureDay(day: Date): Boolean
     
-    def isPastDay(day: Date): Boolean = js.native
+    def isPastDay(day: Date): Boolean
     
-    def isSameDay(day1: Date, day2: Date): Boolean = js.native
+    def isSameDay(day1: Date, day2: Date): Boolean
     
-    def isSameMonth(day1: Date, day2: Date): Boolean = js.native
+    def isSameMonth(day1: Date, day2: Date): Boolean
   }
   object DateUtils {
     
@@ -58,53 +56,45 @@ object dateUtilsMod {
       __obj.asInstanceOf[DateUtils]
     }
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.addDayToRange")
+    @JSImport("react-day-picker/types/DateUtils", "DateUtils")
     @js.native
-    def addDayToRange(day: Date, range: RangeModifier): RangeModifier = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.addMonths")
-    @js.native
-    def addMonths(d: Date, n: Double): Date = js.native
+    @scala.inline
+    def addDayToRange(day: Date, range: RangeModifier): RangeModifier = (^.asInstanceOf[js.Dynamic].applyDynamic("addDayToRange")(day.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[RangeModifier]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.clone")
-    @js.native
-    def clone_(d: Date): Date = js.native
+    @scala.inline
+    def addMonths(d: Date, n: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(d.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Date]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isDate")
-    @js.native
-    def isDate(d: Date): Boolean = js.native
+    @scala.inline
+    def clone_(d: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(d.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isDayAfter")
-    @js.native
-    def isDayAfter(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isDate(d: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isDayBefore")
-    @js.native
-    def isDayBefore(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isDayAfter(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayAfter")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isDayBetween")
-    @js.native
-    def isDayBetween(day: Date, begin: Date, end: Date): Boolean = js.native
+    @scala.inline
+    def isDayBefore(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayBefore")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isDayInRange")
-    @js.native
-    def isDayInRange(day: Date, range: RangeModifier): Boolean = js.native
+    @scala.inline
+    def isDayBetween(day: Date, begin: Date, end: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayBetween")(day.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isFutureDay")
-    @js.native
-    def isFutureDay(day: Date): Boolean = js.native
+    @scala.inline
+    def isDayInRange(day: Date, range: RangeModifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayInRange")(day.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isPastDay")
-    @js.native
-    def isPastDay(day: Date): Boolean = js.native
+    @scala.inline
+    def isFutureDay(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFutureDay")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isSameDay")
-    @js.native
-    def isSameDay(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isPastDay(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPastDay")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker/types/DateUtils", "DateUtils.isSameMonth")
-    @js.native
-    def isSameMonth(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isSameDay(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isSameMonth(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMonth")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @scala.inline
     implicit class DateUtilsMutableBuilder[Self <: DateUtils] (val x: Self) extends AnyVal {

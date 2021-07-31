@@ -2,21 +2,19 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var apiUrl: js.UndefOr[String] = js.native
+  var apiUrl: js.UndefOr[String] = js.undefined
   
-  var forceHttps: js.UndefOr[Boolean] = js.native
+  var forceHttps: js.UndefOr[Boolean] = js.undefined
   
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
-  var sandboxId: String = js.native
+  var sandboxId: String
   
-  var transports: js.UndefOr[js.Array[_]] = js.native
+  var transports: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object Options {
   
@@ -51,7 +49,7 @@ object Options {
     def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransports(value: js.Array[_]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+    def setTransports(value: js.Array[js.Any]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)

@@ -1,7 +1,8 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`2`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.action_required
+import typings.octokitTypes.octokitTypesStrings.antiope
 import typings.octokitTypes.octokitTypesStrings.cancelled
 import typings.octokitTypes.octokitTypesStrings.completed
 import typings.octokitTypes.octokitTypesStrings.failure
@@ -13,74 +14,71 @@ import typings.octokitTypes.octokitTypesStrings.success
 import typings.octokitTypes.octokitTypesStrings.timed_out
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   name :string,   head_sha :string,   details_url :string | undefined,   external_id :string | undefined,   status :'queued' | 'in_progress' | 'completed' | undefined,   started_at :string | undefined,   conclusion :'success' | 'failure' | 'neutral' | 'cancelled' | 'skipped' | 'timed_out' | 'action_required' | undefined,   completed_at :string | undefined,   output :@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksCreateParamsOutput | undefined,   actions :std.Array<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksCreateParamsActions> | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'antiope'> */
-@js.native
-trait ChecksCreateEndpoint extends StObject {
+trait ChecksCreateEndpoint
+  extends StObject
+     with RequiredPreview[antiope] {
   
   /**
     * Displays a button on GitHub that can be clicked to alert your app to do additional tasks. For example, a code linting app can display a button that automatically fixes detected errors. The button created in this object is displayed after the check run completes. When a user clicks the button, GitHub sends the [`check_run.requested_action` webhook](https://developer.github.com/webhooks/event-payloads/#check_run) to your app. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](https://developer.github.com/v3/checks/runs/#actions-object) description. To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)." To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
     */
-  var actions: js.UndefOr[js.Array[ChecksCreateParamsActions]] = js.native
+  var actions: js.UndefOr[js.Array[ChecksCreateParamsActions]] = js.undefined
   
   /**
     * The time the check completed. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var completed_at: js.UndefOr[String] = js.native
+  var completed_at: js.UndefOr[String] = js.undefined
   
   /**
     * **Required if you provide `completed_at` or a `status` of `completed`**. The final conclusion of the check. Can be one of `success`, `failure`, `neutral`, `cancelled`, `skipped`, `timed_out`, or `action_required`. When the conclusion is `action_required`, additional details should be provided on the site specified by `details_url`.
     * **Note:** Providing `conclusion` will automatically set the `status` parameter to `completed`. Only GitHub can change a check run conclusion to `stale`.
     */
-  var conclusion: js.UndefOr[success | failure | neutral | cancelled | skipped | timed_out | action_required] = js.native
+  var conclusion: js.UndefOr[success | failure | neutral | cancelled | skipped | timed_out | action_required] = js.undefined
   
   /**
     * The URL of the integrator's site that has the full details of the check. If the integrator does not provide this, then the homepage of the GitHub app is used.
     */
-  var details_url: js.UndefOr[String] = js.native
+  var details_url: js.UndefOr[String] = js.undefined
   
   /**
     * A reference for the run on the integrator's system.
     */
-  var external_id: js.UndefOr[String] = js.native
+  var external_id: js.UndefOr[String] = js.undefined
   
   /**
     * The SHA of the commit.
     */
-  var head_sha: String = js.native
-  
-  var mediaType: `2` = js.native
+  var head_sha: String
   
   /**
     * The name of the check. For example, "code-coverage".
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Check runs can accept a variety of data in the `output` object, including a `title` and `summary` and can optionally provide descriptive details about the run. See the [`output` object](https://developer.github.com/v3/checks/runs/#output-object) description.
     */
-  var output: js.UndefOr[ChecksCreateParamsOutput] = js.native
+  var output: js.UndefOr[ChecksCreateParamsOutput] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The time that the check run began. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var started_at: js.UndefOr[String] = js.native
+  var started_at: js.UndefOr[String] = js.undefined
   
   /**
     * The current status. Can be one of `queued`, `in_progress`, or `completed`.
     */
-  var status: js.UndefOr[queued | in_progress | completed] = js.native
+  var status: js.UndefOr[queued | in_progress | completed] = js.undefined
 }
 object ChecksCreateEndpoint {
   
   @scala.inline
-  def apply(head_sha: String, mediaType: `2`, name: String, owner: String, repo: String): ChecksCreateEndpoint = {
+  def apply(head_sha: String, mediaType: `0`[antiope], name: String, owner: String, repo: String): ChecksCreateEndpoint = {
     val __obj = js.Dynamic.literal(head_sha = head_sha.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksCreateEndpoint]
   }
@@ -123,9 +121,6 @@ object ChecksCreateEndpoint {
     
     @scala.inline
     def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `2`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

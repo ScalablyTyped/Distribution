@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /**
     * True to enable the configuration.
     */
-  var Enabled: js.UndefOr[typings.awsSdk.iotMod.Enabled] = js.native
+  var Enabled: js.UndefOr[typings.awsSdk.iotMod.Enabled] = js.undefined
 }
 object Configuration {
   

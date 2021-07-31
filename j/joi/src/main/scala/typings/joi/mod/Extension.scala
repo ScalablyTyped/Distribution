@@ -7,46 +7,46 @@ import typings.std.RegExp
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extension extends StObject {
   
-  var args: js.UndefOr[js.Function1[/* repeated */ SchemaLike, Schema]] = js.native
+  var args: js.UndefOr[js.Function1[/* repeated */ SchemaLike, Schema]] = js.undefined
   
-  var base: js.UndefOr[Schema] = js.native
+  var base: js.UndefOr[Schema] = js.undefined
   
   /**
     * undocumented options
     */
-  var cast: js.UndefOr[Record[String, To]] = js.native
+  var cast: js.UndefOr[Record[String, To]] = js.undefined
   
-  var coerce: js.UndefOr[CoerceFunction | CoerceObject] = js.native
+  var coerce: js.UndefOr[CoerceFunction | CoerceObject] = js.undefined
   
-  var flags: js.UndefOr[Record[String, ExtensionFlag]] = js.native
+  var flags: js.UndefOr[Record[String, ExtensionFlag]] = js.undefined
   
-  var manifest: js.UndefOr[Build] = js.native
+  var manifest: js.UndefOr[Build] = js.undefined
   
-  var messages: js.UndefOr[LanguageMessages | String] = js.native
+  var messages: js.UndefOr[LanguageMessages | String] = js.undefined
   
-  var modifiers: js.UndefOr[Record[String, js.Function2[/* rule */ _, /* enabled */ js.UndefOr[Boolean], _]]] = js.native
+  var modifiers: js.UndefOr[
+    Record[String, js.Function2[/* rule */ js.Any, /* enabled */ js.UndefOr[Boolean], js.Any]]
+  ] = js.undefined
   
-  var overrides: js.UndefOr[Record[String, js.Function1[/* value */ _, Schema]]] = js.native
+  var overrides: js.UndefOr[Record[String, js.Function1[/* value */ js.Any, Schema]]] = js.undefined
   
-  var prepare: js.UndefOr[js.Function2[/* value */ js.Any, /* helpers */ CustomHelpers[_], _]] = js.native
+  var prepare: js.UndefOr[js.Function2[/* value */ js.Any, /* helpers */ CustomHelpers[js.Any], js.Any]] = js.undefined
   
-  var properties: js.UndefOr[Record[String, _]] = js.native
+  var properties: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var rebuild: js.UndefOr[js.Function1[/* schema */ ExtensionBoundSchema, Unit]] = js.native
+  var rebuild: js.UndefOr[js.Function1[/* schema */ ExtensionBoundSchema, Unit]] = js.undefined
   
-  var rules: js.UndefOr[Record[String, ExtensionRule with ThisType[SchemaInternals]]] = js.native
+  var rules: js.UndefOr[Record[String, ExtensionRule & ThisType[SchemaInternals]]] = js.undefined
   
-  var terms: js.UndefOr[Record[String, ExtensionTerm]] = js.native
+  var terms: js.UndefOr[Record[String, ExtensionTerm]] = js.undefined
   
-  var `type`: String | RegExp = js.native
+  var `type`: String | RegExp
   
-  var validate: js.UndefOr[js.Function2[/* value */ js.Any, /* helpers */ CustomHelpers[_], _]] = js.native
+  var validate: js.UndefOr[js.Function2[/* value */ js.Any, /* helpers */ CustomHelpers[js.Any], js.Any]] = js.undefined
 }
 object Extension {
   
@@ -106,25 +106,25 @@ object Extension {
     def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def setModifiers(value: Record[String, js.Function2[/* rule */ _, /* enabled */ js.UndefOr[Boolean], _]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    def setModifiers(value: Record[String, js.Function2[/* rule */ js.Any, /* enabled */ js.UndefOr[Boolean], js.Any]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def setOverrides(value: Record[String, js.Function1[/* value */ _, Schema]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    def setOverrides(value: Record[String, js.Function1[/* value */ js.Any, Schema]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def setPrepare(value: (/* value */ js.Any, /* helpers */ CustomHelpers[_]) => _): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
+    def setPrepare(value: (/* value */ js.Any, /* helpers */ CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "prepare", js.Any.fromFunction2(value))
     
     @scala.inline
     def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
     
     @scala.inline
-    def setProperties(value: Record[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    def setProperties(value: Record[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -136,7 +136,7 @@ object Extension {
     def setRebuildUndefined: Self = StObject.set(x, "rebuild", js.undefined)
     
     @scala.inline
-    def setRules(value: Record[String, ExtensionRule with ThisType[SchemaInternals]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    def setRules(value: Record[String, ExtensionRule & ThisType[SchemaInternals]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
@@ -151,7 +151,7 @@ object Extension {
     def setType(value: String | RegExp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidate(value: (/* value */ js.Any, /* helpers */ CustomHelpers[_]) => _): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    def setValidate(value: (/* value */ js.Any, /* helpers */ CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     
     @scala.inline
     def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)

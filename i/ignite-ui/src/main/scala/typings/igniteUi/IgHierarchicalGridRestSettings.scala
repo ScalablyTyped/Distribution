@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgHierarchicalGridRestSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,34 +16,34 @@ trait IgHierarchicalGridRestSettings
     * Specifies a custom function to serialize content sent to the server. It should accept a single object or an array of objects and return a string. If not specified, JSON.stringify() will be used.
     *
     */
-  var contentSerializer: js.UndefOr[js.Function] = js.native
+  var contentSerializer: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Specifies the content type of the request. See http://api.jquery.com/jQuery.ajax/ => contentType
     *
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * Settings for create requests
     *
     */
-  var create: js.UndefOr[IgHierarchicalGridRestSettingsCreate] = js.native
+  var create: js.UndefOr[IgHierarchicalGridRestSettingsCreate] = js.undefined
   
   /**
     * Specifies whether the ids of the removed resources are send through the request URI
     */
-  var encodeRemoveInRequestUri: js.UndefOr[Boolean] = js.native
+  var encodeRemoveInRequestUri: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Settings for remove requests
     */
-  var remove: js.UndefOr[IgHierarchicalGridRestSettingsRemove] = js.native
+  var remove: js.UndefOr[IgHierarchicalGridRestSettingsRemove] = js.undefined
   
   /**
     * Settings for update requests
     */
-  var update: js.UndefOr[IgHierarchicalGridRestSettingsUpdate] = js.native
+  var update: js.UndefOr[IgHierarchicalGridRestSettingsUpdate] = js.undefined
 }
 object IgHierarchicalGridRestSettings {
   

@@ -5,29 +5,27 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxSortable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FromDataFromIndex extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[dxSortable] = js.native
+  var component: js.UndefOr[dxSortable] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var fromData: js.UndefOr[js.Any] = js.native
+  var fromData: js.UndefOr[js.Any] = js.undefined
   
-  var fromIndex: js.UndefOr[Double] = js.native
+  var fromIndex: js.UndefOr[Double] = js.undefined
   
-  var itemData: js.UndefOr[js.Any] = js.native
+  var itemData: js.UndefOr[js.Any] = js.undefined
   
-  var itemElement: js.UndefOr[dxElement] = js.native
+  var itemElement: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object FromDataFromIndex {
   

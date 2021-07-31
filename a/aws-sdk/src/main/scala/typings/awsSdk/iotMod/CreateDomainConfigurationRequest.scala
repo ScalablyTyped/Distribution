@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDomainConfigurationRequest extends StObject {
   
   /**
     * An object that specifies the authorization service for a domain.
     */
-  var authorizerConfig: js.UndefOr[AuthorizerConfig] = js.native
+  var authorizerConfig: js.UndefOr[AuthorizerConfig] = js.undefined
   
   /**
     * The name of the domain configuration. This value must be unique to a region.
     */
-  var domainConfigurationName: DomainConfigurationName = js.native
+  var domainConfigurationName: DomainConfigurationName
   
   /**
     * The name of the domain.
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     * The ARNs of the certificates that AWS IoT passes to the device during the TLS handshake. Currently you can specify only one certificate ARN. This value is not required for AWS-managed domains.
     */
-  var serverCertificateArns: js.UndefOr[ServerCertificateArns] = js.native
+  var serverCertificateArns: js.UndefOr[ServerCertificateArns] = js.undefined
   
   /**
     * The type of service delivered by the endpoint.  AWS IoT Core currently supports only the DATA service type. 
     */
-  var serviceType: js.UndefOr[ServiceType] = js.native
+  var serviceType: js.UndefOr[ServiceType] = js.undefined
   
   /**
     * Metadata which can be used to manage the domain configuration.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The certificate used to validate the server certificate and prove domain name ownership. This certificate must be signed by a public certificate authority. This value is not required for AWS-managed domains.
     */
-  var validationCertificateArn: js.UndefOr[AcmCertificateArn] = js.native
+  var validationCertificateArn: js.UndefOr[AcmCertificateArn] = js.undefined
 }
 object CreateDomainConfigurationRequest {
   

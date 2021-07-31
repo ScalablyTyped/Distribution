@@ -10,9 +10,9 @@ Get author property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-author |
 | Keywords           | author, metascraper |
-| # releases         | 82 |
-| # dependents       | 16 |
-| # downloads        | 450872 |
+| # releases         | 102 |
+| # dependents       | 17 |
+| # downloads        | 636599 |
 | # stars            | 0 |
 
 ## Links

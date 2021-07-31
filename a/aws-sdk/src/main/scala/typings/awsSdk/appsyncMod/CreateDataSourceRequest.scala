@@ -2,61 +2,59 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDataSourceRequest extends StObject {
   
   /**
     * The API ID for the GraphQL API for the DataSource.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * A description of the DataSource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon DynamoDB settings.
     */
-  var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.native
+  var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.undefined
   
   /**
     * Amazon Elasticsearch Service settings.
     */
-  var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.native
+  var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
   
   /**
     * HTTP endpoint settings.
     */
-  var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.native
+  var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
   
   /**
     * AWS Lambda settings.
     */
-  var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.native
+  var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.undefined
   
   /**
     * A user-supplied name for the DataSource.
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
   
   /**
     * Relational database settings.
     */
-  var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.native
+  var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.undefined
   
   /**
     * The AWS IAM service role ARN for the data source. The system assumes this role when accessing the data source.
     */
-  var serviceRoleArn: js.UndefOr[String] = js.native
+  var serviceRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the DataSource.
     */
-  var `type`: DataSourceType = js.native
+  var `type`: DataSourceType
 }
 object CreateDataSourceRequest {
   

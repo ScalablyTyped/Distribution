@@ -6,23 +6,22 @@ import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsNode.anon.DateSaved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioUtilsMod {
   
-  @JSImport("@tensorflow/tfjs-node/dist/io/io_utils", "getModelArtifactsInfoForJSON")
+  @JSImport("@tensorflow/tfjs-node/dist/io/io_utils", JSImport.Namespace)
   @js.native
-  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): DateSaved = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-node/dist/io/io_utils", "toArrayBuffer")
-  @js.native
-  def toArrayBuffer(buf: js.Array[Buffer]): ArrayBuffer = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/io/io_utils", "toArrayBuffer")
-  @js.native
-  def toArrayBuffer(buf: Buffer): ArrayBuffer = js.native
+  @scala.inline
+  def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): DateSaved = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[DateSaved]
   
-  @JSImport("@tensorflow/tfjs-node/dist/io/io_utils", "toBuffer")
-  @js.native
-  def toBuffer(ab: ArrayBuffer): Buffer = js.native
+  @scala.inline
+  def toArrayBuffer(buf: js.Array[Buffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  @scala.inline
+  def toArrayBuffer(buf: Buffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(buf.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  
+  @scala.inline
+  def toBuffer(ab: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

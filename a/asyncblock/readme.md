@@ -12,7 +12,7 @@ A simple and powerful abstraction of node-fibers
 | Keywords           | fiber, fibers, coroutine, stop, go, green, red |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 8464 |
+| # downloads        | 8675 |
 | # stars            | 4 |
 
 ## Links

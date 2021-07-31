@@ -6,81 +6,81 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersList extends StandardParameters {
+trait ParamsResourceUsersList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Comma-separated list of schema names. All fields from these schemas are
     * fetched. This should only be set when projection=custom.
     */
-  var customFieldMask: js.UndefOr[String] = js.native
+  var customFieldMask: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable ID of the G Suite account. In case of multi-domain, to fetch
     * all users for a customer, fill this field instead of domain.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the domain. Fill this field to get users from only this domain.
     * To return all users in a multi-domain fill customer field instead.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Event on which subscription is intended (if subscribing)
     */
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return. Default is 100. Max allowed is 500
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Column to use for sorting results
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Token to specify next page in the list
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * What subset of fields to fetch for this user.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Query string search. Should be of the form "". Complete documentation is
     * at
     * https://developers.google.com/admin-sdk/directory/v1/guides/search-users
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true retrieves the list of deleted users. Default is false
     */
-  var showDeleted: js.UndefOr[String] = js.native
+  var showDeleted: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to return results in ascending or descending order.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.
     */
-  var viewType: js.UndefOr[String] = js.native
+  var viewType: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersList {
   

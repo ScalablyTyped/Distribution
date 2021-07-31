@@ -3,15 +3,15 @@ package typings.baidumapWebSdk.BMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationControl extends Control {
+trait NavigationControl
+  extends StObject
+     with Control {
   
-  def getType(): NavigationControlOptions = js.native
+  def getType(): NavigationControlOptions
   
-  def setType(`type`: NavigationControlType): Unit = js.native
+  def setType(`type`: NavigationControlType): Unit
 }
 object NavigationControl {
   

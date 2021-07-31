@@ -2,61 +2,61 @@ package typings.jqueryPnotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PNotifyStyling extends StylingOptions {
+trait PNotifyStyling
+  extends StObject
+     with StylingOptions {
   
   // reference
-  var athing: js.UndefOr[String] = js.native
+  var athing: js.UndefOr[String] = js.undefined
   
   // confirm
-  var btn: js.UndefOr[String] = js.native
+  var btn: js.UndefOr[String] = js.undefined
   
-  var btnactive: js.UndefOr[String] = js.native
+  var btnactive: js.UndefOr[String] = js.undefined
   
-  var btnfocus: js.UndefOr[String] = js.native
+  var btnfocus: js.UndefOr[String] = js.undefined
   
-  var btnhover: js.UndefOr[String] = js.native
+  var btnhover: js.UndefOr[String] = js.undefined
   
   // buttons
-  var closer: js.UndefOr[String] = js.native
+  var closer: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var error_icon: js.UndefOr[String] = js.native
+  var error_icon: js.UndefOr[String] = js.undefined
   
-  var hi_btn: js.UndefOr[String] = js.native
+  var hi_btn: js.UndefOr[String] = js.undefined
   
-  var hi_btnhov: js.UndefOr[String] = js.native
+  var hi_btnhov: js.UndefOr[String] = js.undefined
   
-  var hi_hnd: js.UndefOr[String] = js.native
+  var hi_hnd: js.UndefOr[String] = js.undefined
   
   // history
-  var hi_menu: js.UndefOr[String] = js.native
+  var hi_menu: js.UndefOr[String] = js.undefined
   
-  var info: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.undefined
   
-  var info_icon: js.UndefOr[String] = js.native
+  var info_icon: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
-  var notice: js.UndefOr[String] = js.native
+  var notice: js.UndefOr[String] = js.undefined
   
-  var notice_icon: js.UndefOr[String] = js.native
+  var notice_icon: js.UndefOr[String] = js.undefined
   
-  var pin_down: js.UndefOr[String] = js.native
+  var pin_down: js.UndefOr[String] = js.undefined
   
-  var pin_up: js.UndefOr[String] = js.native
+  var pin_up: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[String] = js.native
+  var success: js.UndefOr[String] = js.undefined
   
-  var success_icon: js.UndefOr[String] = js.native
+  var success_icon: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object PNotifyStyling {
   

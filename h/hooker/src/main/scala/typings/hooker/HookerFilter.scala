@@ -2,20 +2,20 @@ package typings.hooker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HookerFilter extends IHookerPreHookResult {
+trait HookerFilter
+  extends StObject
+     with IHookerPreHookResult {
   
-  var args: js.Array[_] = js.native
+  var args: js.Array[js.Any]
   
-  var context: js.Any = js.native
+  var context: js.Any
 }
 object HookerFilter {
   
   @scala.inline
-  def apply(args: js.Array[_], context: js.Any): HookerFilter = {
+  def apply(args: js.Array[js.Any], context: js.Any): HookerFilter = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookerFilter]
   }
@@ -24,7 +24,7 @@ object HookerFilter {
   implicit class HookerFilterMutableBuilder[Self <: HookerFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))

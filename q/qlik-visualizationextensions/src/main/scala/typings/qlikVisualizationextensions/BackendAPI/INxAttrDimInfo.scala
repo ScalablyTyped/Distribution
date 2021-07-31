@@ -2,42 +2,40 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxAttrDimInfo extends StObject {
   
   /**
     * Cardinality of the attribute expression.
     *     Integer
     */
-  var qCardinal: Double = js.native
+  var qCardinal: Double
   
   /**
     * Validation error.
     * REF(NxValidationError)
     */
   // ?Type = REF(NxValidationError)?
-  var qError: INxValidationError = js.native
+  var qError: INxValidationError
   
   /**
     * The title for the attribute dimension.
     * String
     */
-  var qFallbackTitle: String = js.native
+  var qFallbackTitle: String
   
   /**
     * The Locked value of the dimension.
     * Boolean
     */
-  var qLocked: Boolean = js.native
+  var qLocked: Boolean
   
   /**
     * Number of rows.
     *     Size
     */
-  var qSize: Double = js.native
+  var qSize: Double
 }
 object INxAttrDimInfo {
   

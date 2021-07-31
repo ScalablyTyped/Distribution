@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSeals extends StObject {
   
   /**
     * A list of electronic seals to apply to documents.
     */
-  var seals: js.UndefOr[js.Array[SealIdentifier]] = js.native
+  var seals: js.UndefOr[js.Array[SealIdentifier]] = js.undefined
 }
 object AccountSeals {
   

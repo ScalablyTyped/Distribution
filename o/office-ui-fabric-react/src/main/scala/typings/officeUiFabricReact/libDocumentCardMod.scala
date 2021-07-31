@@ -13,7 +13,6 @@ import typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libDocumentCardMod {
@@ -63,10 +62,10 @@ object libDocumentCardMod {
   object DocumentCardType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType & Double] = js.native
     
-    /* 1 */ val compact: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.compact with Double = js.native
+    /* 1 */ val compact: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.compact & Double = js.native
     
-    /* 0 */ val normal: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.normal with Double = js.native
+    /* 0 */ val normal: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.normal & Double = js.native
   }
 }

@@ -2,42 +2,40 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an event status resource.
   */
-@js.native
 trait SchemaPlayerEvent extends StObject {
   
   /**
     * The ID of the event definition.
     */
-  var definitionId: js.UndefOr[String] = js.native
+  var definitionId: js.UndefOr[String] = js.undefined
   
   /**
     * The current number of times this event has occurred, as a string. The
     * formatting of this string depends on the configuration of your event in
     * the Play Games Developer Console.
     */
-  var formattedNumEvents: js.UndefOr[String] = js.native
+  var formattedNumEvents: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerEvent.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The current number of times this event has occurred.
     */
-  var numEvents: js.UndefOr[String] = js.native
+  var numEvents: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the player.
     */
-  var playerId: js.UndefOr[String] = js.native
+  var playerId: js.UndefOr[String] = js.undefined
 }
 object SchemaPlayerEvent {
   

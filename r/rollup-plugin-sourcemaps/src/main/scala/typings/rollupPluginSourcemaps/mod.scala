@@ -6,26 +6,26 @@ import typings.rollup.mod.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-sourcemaps", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("rollup-plugin-sourcemaps", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("rollup-plugin-sourcemaps", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
+    var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
     
-    var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
+    var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
     
-    var readFile: js.UndefOr[ReadFileFunction] = js.native
+    var readFile: js.UndefOr[ReadFileFunction] = js.undefined
   }
   object Options {
     

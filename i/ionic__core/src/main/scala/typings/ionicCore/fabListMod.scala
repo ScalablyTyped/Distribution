@@ -8,14 +8,15 @@ import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fabListMod {
   
   @JSImport("@ionic/core/dist/types/components/fab-list/fab-list", "FabList")
   @js.native
-  class FabList () extends ComponentInterface {
+  class FabList ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If `true`, the fab list will show all fab buttons in the list.

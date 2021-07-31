@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | @node-red/registry |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 38 |
 | # dependents       | 1 |
-| # downloads        | 823365 |
+| # downloads        | 925494 |
 | # stars            | 0 |
 
 ## Links

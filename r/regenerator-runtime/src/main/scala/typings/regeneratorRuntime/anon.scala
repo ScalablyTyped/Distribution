@@ -6,7 +6,6 @@ import typings.regeneratorRuntime.mod.ContextLocation
 import typings.regeneratorRuntime.regeneratorRuntimeStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -15,23 +14,22 @@ object anon {
   trait `0`[TYield] extends StObject {
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[typings.std.Iterator[TYield, _, _]] = js.native
+    var iterator: js.Function0[typings.std.Iterator[TYield, js.Any, js.Any]] = js.native
   }
   
   @js.native
-  trait Iterator[I /* <: typings.std.Iterator[_, _, _] */] extends StObject {
+  trait Iterator[I /* <: typings.std.Iterator[js.Any, js.Any, js.Any] */] extends StObject {
     
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[I] = js.native
   }
   
   /* Inlined std.Readonly<regenerator-runtime.regenerator-runtime.CompletionRecord> */
-  @js.native
   trait ReadonlyCompletionRecord extends StObject {
     
-    val arg: js.Any = js.native
+    val arg: js.Any
     
-    val `type`: CompletionType = js.native
+    val `type`: CompletionType
   }
   object ReadonlyCompletionRecord {
     
@@ -54,24 +52,23 @@ object anon {
   }
   
   /* Inlined { readonly tryLoc :'root'} & std.Omit<regenerator-runtime.regenerator-runtime.TryEntry, 'tryLoc'> */
-  @js.native
   trait readonlytryLocrootOmitTry extends StObject {
     
-    var afterLoc: js.UndefOr[ContextLocation] = js.native
+    var afterLoc: js.UndefOr[ContextLocation] = js.undefined
     
-    var catchLoc: js.UndefOr[Double] = js.native
+    var catchLoc: js.UndefOr[Double] = js.undefined
     
-    var completion: js.UndefOr[CompletionRecord] = js.native
+    var completion: js.UndefOr[CompletionRecord] = js.undefined
     
-    var finallyLoc: js.UndefOr[Double] = js.native
+    var finallyLoc: js.UndefOr[Double] = js.undefined
     
-    val tryLoc: root = js.native
+    val tryLoc: root
   }
   object readonlytryLocrootOmitTry {
     
     @scala.inline
-    def apply(tryLoc: root): readonlytryLocrootOmitTry = {
-      val __obj = js.Dynamic.literal(tryLoc = tryLoc.asInstanceOf[js.Any])
+    def apply(): readonlytryLocrootOmitTry = {
+      val __obj = js.Dynamic.literal(tryLoc = "root")
       __obj.asInstanceOf[readonlytryLocrootOmitTry]
     }
     

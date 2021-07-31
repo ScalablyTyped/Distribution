@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOTAUpdateResponse extends StObject {
   
   /**
     * The AWS IoT job ARN associated with the OTA update.
     */
-  var awsIotJobArn: js.UndefOr[AwsIotJobArn] = js.native
+  var awsIotJobArn: js.UndefOr[AwsIotJobArn] = js.undefined
   
   /**
     * The AWS IoT job ID associated with the OTA update.
     */
-  var awsIotJobId: js.UndefOr[AwsIotJobId] = js.native
+  var awsIotJobId: js.UndefOr[AwsIotJobId] = js.undefined
   
   /**
     * The OTA update ARN.
     */
-  var otaUpdateArn: js.UndefOr[OTAUpdateArn] = js.native
+  var otaUpdateArn: js.UndefOr[OTAUpdateArn] = js.undefined
   
   /**
     * The OTA update ID.
     */
-  var otaUpdateId: js.UndefOr[OTAUpdateId] = js.native
+  var otaUpdateId: js.UndefOr[OTAUpdateId] = js.undefined
   
   /**
     * The OTA update status.
     */
-  var otaUpdateStatus: js.UndefOr[OTAUpdateStatus] = js.native
+  var otaUpdateStatus: js.UndefOr[OTAUpdateStatus] = js.undefined
 }
 object CreateOTAUpdateResponse {
   

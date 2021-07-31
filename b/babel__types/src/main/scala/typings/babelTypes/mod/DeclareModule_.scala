@@ -5,33 +5,32 @@ import typings.babelTypes.babelTypesStrings.DeclareModule
 import typings.babelTypes.babelTypesStrings.ES
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait DeclareModule_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait DeclareModule_
+  extends StObject
      with BaseNode
+     with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var body: BlockStatement_ = js.native
+  var body: BlockStatement_
   
-  var id: Identifier_ | StringLiteral_ = js.native
+  var id: Identifier_ | StringLiteral_
   
-  var kind: CommonJS | ES | Null = js.native
+  var kind: CommonJS | ES | Null
   
   @JSName("type")
-  var type_DeclareModule_ : DeclareModule = js.native
+  var type_DeclareModule_ : DeclareModule
 }
 object DeclareModule_ {
   
   @scala.inline
-  def apply(body: BlockStatement_, id: Identifier_ | StringLiteral_, `type`: DeclareModule): DeclareModule_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: BlockStatement_, id: Identifier_ | StringLiteral_): DeclareModule_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, kind = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareModule")
     __obj.asInstanceOf[DeclareModule_]
   }
   

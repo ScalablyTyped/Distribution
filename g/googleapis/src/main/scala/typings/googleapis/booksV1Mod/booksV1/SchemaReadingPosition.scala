@@ -2,47 +2,45 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReadingPosition extends StObject {
   
   /**
     * Position in an EPUB as a CFI.
     */
-  var epubCfiPosition: js.UndefOr[String] = js.native
+  var epubCfiPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Position in a volume for image-based content.
     */
-  var gbImagePosition: js.UndefOr[String] = js.native
+  var gbImagePosition: js.UndefOr[String] = js.undefined
   
   /**
     * Position in a volume for text-based content.
     */
-  var gbTextPosition: js.UndefOr[String] = js.native
+  var gbTextPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for a reading position.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Position in a PDF file.
     */
-  var pdfPosition: js.UndefOr[String] = js.native
+  var pdfPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp when this reading position was last updated (formatted UTC
     * timestamp with millisecond resolution).
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * Volume id associated with this reading position.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object SchemaReadingPosition {
   

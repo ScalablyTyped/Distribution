@@ -51,25 +51,23 @@ import typings.devextreme.devextremeStrings.triangle
 import typings.devextreme.devextremeStrings.verticalContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayMode extends StObject {
   
-  var category: js.UndefOr[general | flowchart | orgChart | containers | custom | String] = js.native
+  var category: js.UndefOr[general | flowchart | orgChart | containers | custom | String] = js.undefined
   
-  var displayMode: js.UndefOr[icons | texts] = js.native
+  var displayMode: js.UndefOr[icons | texts] = js.undefined
   
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
   var shapes: js.UndefOr[
     js.Array[
       text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DisplayMode {
   

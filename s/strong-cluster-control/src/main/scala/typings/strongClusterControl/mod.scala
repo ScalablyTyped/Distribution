@@ -16,7 +16,6 @@ import typings.strongClusterControl.strongClusterControlStrings.stop
 import typings.strongClusterControl.strongClusterControlStrings.stopWorker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,16 +26,15 @@ object mod extends Shortcut {
   
   object StrongClusterControl {
     
-    @js.native
     trait CMD extends StObject {
       
-      var SHUTDOWN: CLUSTER_CONTROL_shutdown = js.native
+      var SHUTDOWN: CLUSTER_CONTROL_shutdown
     }
     object CMD {
       
       @scala.inline
-      def apply(SHUTDOWN: CLUSTER_CONTROL_shutdown): CMD = {
-        val __obj = js.Dynamic.literal(SHUTDOWN = SHUTDOWN.asInstanceOf[js.Any])
+      def apply(): CMD = {
+        val __obj = js.Dynamic.literal(SHUTDOWN = "CLUSTER_CONTROL_shutdown")
         __obj.asInstanceOf[CMD]
       }
       
@@ -48,14 +46,13 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ClusterMaster extends StObject {
       
-      var pid: Double = js.native
+      var pid: Double
       
-      var setSize: js.UndefOr[Double] = js.native
+      var setSize: js.UndefOr[Double] = js.undefined
       
-      var startTime: Double = js.native
+      var startTime: Double
     }
     object ClusterMaster {
       
@@ -82,12 +79,11 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ClusterStatus extends StObject {
       
-      var master: ClusterMaster = js.native
+      var master: ClusterMaster
       
-      var workers: js.Array[ClusterWorker] = js.native
+      var workers: js.Array[ClusterWorker]
     }
     object ClusterStatus {
       
@@ -111,10 +107,11 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
-    trait ClusterWorker extends ClusterMaster {
+    trait ClusterWorker
+      extends StObject
+         with ClusterMaster {
       
-      var id: Double = js.native
+      var id: Double
     }
     object ClusterWorker {
       
@@ -133,32 +130,34 @@ object mod extends Shortcut {
     }
     
     @js.native
-    trait Control extends EventEmitter {
+    trait Control
+      extends StObject
+         with EventEmitter {
       
       val CPUS: Double = js.native
       
       val cmd: CMD = js.native
       
       @JSName("on")
-      def on_error(event: error, handler: js.Function1[/* error */ Error | js.Array[Error], _]): this.type = js.native
+      def on_error(event: error, handler: js.Function1[/* error */ Error | js.Array[Error], js.Any]): this.type = js.native
       @JSName("on")
-      def on_resize(event: resize, handler: js.Function1[/* size */ Double, _]): this.type = js.native
+      def on_resize(event: resize, handler: js.Function1[/* size */ Double, js.Any]): this.type = js.native
       @JSName("on")
-      def on_restart(event: restart, handler: js.Function0[_]): this.type = js.native
+      def on_restart(event: restart, handler: js.Function0[js.Any]): this.type = js.native
       @JSName("on")
-      def on_setSize(event: setSize, handler: js.Function1[/* size */ Double, _]): this.type = js.native
+      def on_setSize(event: setSize, handler: js.Function1[/* size */ Double, js.Any]): this.type = js.native
       @JSName("on")
-      def on_start(event: start, handler: js.Function0[_]): this.type = js.native
+      def on_start(event: start, handler: js.Function0[js.Any]): this.type = js.native
       @JSName("on")
-      def on_startRestart(event: startRestart, handler: js.Function1[/* workers */ js.Array[pid], _]): this.type = js.native
+      def on_startRestart(event: startRestart, handler: js.Function1[/* workers */ js.Array[pid], js.Any]): this.type = js.native
       @JSName("on")
-      def on_startWorker(event: startWorker, handler: js.Function1[/* worker */ ClusterWorker, _]): this.type = js.native
+      def on_startWorker(event: startWorker, handler: js.Function1[/* worker */ ClusterWorker, js.Any]): this.type = js.native
       @JSName("on")
-      def on_stop(event: stop, handler: js.Function0[_]): this.type = js.native
+      def on_stop(event: stop, handler: js.Function0[js.Any]): this.type = js.native
       @JSName("on")
       def on_stopWorker(
         event: stopWorker,
-        handler: js.Function3[/* worker */ ClusterWorker, /* code */ Double, /* signal */ String, _]
+        handler: js.Function3[/* worker */ ClusterWorker, /* code */ Double, /* signal */ String, js.Any]
       ): this.type = js.native
       
       val options: StartOptions = js.native
@@ -191,10 +190,10 @@ object mod extends Shortcut {
         * @param [options.throttoleDelay] - Number of milliseconds to delay restarting workers after they are exiting abnormally. Abnormal is defined as as not suicide.
         */
       def start(): this.type = js.native
-      def start(callback: js.Function0[_]): this.type = js.native
-      def start(options: js.UndefOr[scala.Nothing], callback: js.Function0[_]): this.type = js.native
+      def start(callback: js.Function0[js.Any]): this.type = js.native
+      def start(options: Unit, callback: js.Function0[js.Any]): this.type = js.native
       def start(options: StartOptions): this.type = js.native
-      def start(options: StartOptions, callback: js.Function0[_]): this.type = js.native
+      def start(options: StartOptions, callback: js.Function0[js.Any]): this.type = js.native
       
       /**
         * @description Returns the current cluster status
@@ -205,7 +204,7 @@ object mod extends Shortcut {
         * @description Stop the controller, after stopping workers (if the size is being controlled, see setSize()).
         */
       def stop(): this.type = js.native
-      def stop(callback: js.Function0[_]): this.type = js.native
+      def stop(callback: js.Function0[js.Any]): this.type = js.native
       
       /**
         * @description Disconnect worker id and take increasingly agressive action until it exits.
@@ -214,18 +213,17 @@ object mod extends Shortcut {
       def terminate(id: Double): this.type = js.native
     }
     
-    @js.native
     trait StartOptions extends StObject {
       
-      var env: js.UndefOr[js.Object] = js.native
+      var env: js.UndefOr[js.Object] = js.undefined
       
-      var shutdownTimeout: js.UndefOr[Double] = js.native
+      var shutdownTimeout: js.UndefOr[Double] = js.undefined
       
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
       
-      var terminateTimeout: js.UndefOr[Double] = js.native
+      var terminateTimeout: js.UndefOr[Double] = js.undefined
       
-      var throttleDelay: js.UndefOr[Double] = js.native
+      var throttleDelay: js.UndefOr[Double] = js.undefined
     }
     object StartOptions {
       

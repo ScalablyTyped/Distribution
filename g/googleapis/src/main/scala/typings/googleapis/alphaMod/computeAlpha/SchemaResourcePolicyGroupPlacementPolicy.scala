@@ -2,30 +2,28 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A GroupPlacementPolicy specifies resource placement configuration. It
   * specifies the failure bucket separation as well as network locality
   */
-@js.native
 trait SchemaResourcePolicyGroupPlacementPolicy extends StObject {
   
   /**
     * Specifies network locality
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies instances to hosts placement relationship
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     * Number of vms in this placement group
     */
-  var vmCount: js.UndefOr[Double] = js.native
+  var vmCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaResourcePolicyGroupPlacementPolicy {
   

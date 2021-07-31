@@ -3,36 +3,34 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedExchangeHeader extends StObject {
   
   /**
     * Signed exchange header integrity hash in the form of "sha256-<base64-hash-value>".
     */
-  var headerIntegrity: String = js.native
+  var headerIntegrity: String
   
   /**
     * Signed exchange request URL.
     */
-  var requestUrl: String = js.native
+  var requestUrl: String
   
   /**
     * Signed exchange response code.
     */
-  var responseCode: integer = js.native
+  var responseCode: integer
   
   /**
     * Signed exchange response headers.
     */
-  var responseHeaders: Headers = js.native
+  var responseHeaders: Headers
   
   /**
     * Signed exchange response signature.
     */
-  var signatures: js.Array[SignedExchangeSignature] = js.native
+  var signatures: js.Array[SignedExchangeSignature]
 }
 object SignedExchangeHeader {
   

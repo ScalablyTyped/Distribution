@@ -4,26 +4,25 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pell", "exec")
+  @JSImport("pell", JSImport.Namespace)
   @js.native
-  def exec(command: String): Unit = js.native
-  @JSImport("pell", "exec")
-  @js.native
-  def exec(command: String, value: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pell", "init")
-  @js.native
-  def init[T /* <: HTMLElement */](c: pellConfig[T]): T with PellElement = js.native
+  @scala.inline
+  def exec(command: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def exec(command: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(command.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def init[T /* <: HTMLElement */](c: pellConfig[T]): T & PellElement = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(c.asInstanceOf[js.Any]).asInstanceOf[T & PellElement]
+  
   trait PellElement extends StObject {
     
-    var content: HTMLDivElement = js.native
+    var content: HTMLDivElement
   }
   object PellElement {
     
@@ -48,16 +47,17 @@ object mod {
   */
   trait pellAction extends StObject
   
-  @js.native
-  trait pellActionConfig extends pellAction {
+  trait pellActionConfig
+    extends StObject
+       with pellAction {
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var name: pellAction = js.native
+    var name: pellAction
     
-    def result(): Unit = js.native
+    def result(): Unit
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object pellActionConfig {
     
@@ -106,7 +106,9 @@ object mod {
     - typings.pell.pellStrings.link
     - typings.pell.pellStrings.image
   */
-  trait pellBuiltinAction extends pellAction
+  trait pellBuiltinAction
+    extends StObject
+       with pellAction
   object pellBuiltinAction {
     
     @scala.inline
@@ -152,16 +154,15 @@ object mod {
     def underline: typings.pell.pellStrings.underline = "underline".asInstanceOf[typings.pell.pellStrings.underline]
   }
   
-  @js.native
   trait pellClasses extends StObject {
     
-    var actionbar: js.UndefOr[String] = js.native
+    var actionbar: js.UndefOr[String] = js.undefined
     
-    var button: js.UndefOr[String] = js.native
+    var button: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
   }
   object pellClasses {
     
@@ -200,20 +201,19 @@ object mod {
     }
   }
   
-  @js.native
   trait pellConfig[T /* <: HTMLElement */] extends StObject {
     
-    var actions: js.Array[pellAction] = js.native
+    var actions: js.Array[pellAction]
     
-    var classes: js.UndefOr[pellClasses] = js.native
+    var classes: js.UndefOr[pellClasses] = js.undefined
     
-    var defaultParagraphSeparator: js.UndefOr[String] = js.native
+    var defaultParagraphSeparator: js.UndefOr[String] = js.undefined
     
-    var element: T = js.native
+    var element: T
     
-    def onChange(html: String): Unit = js.native
+    def onChange(html: String): Unit
     
-    var styleWithCSS: js.UndefOr[Boolean] = js.native
+    var styleWithCSS: js.UndefOr[Boolean] = js.undefined
   }
   object pellConfig {
     
@@ -224,7 +224,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class pellConfigMutableBuilder[Self <: pellConfig[_], T /* <: HTMLElement */] (val x: Self with pellConfig[T]) extends AnyVal {
+    implicit class pellConfigMutableBuilder[Self <: pellConfig[?], T /* <: HTMLElement */] (val x: Self & pellConfig[T]) extends AnyVal {
       
       @scala.inline
       def setActions(value: js.Array[pellAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
@@ -258,16 +258,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait pellCustomActionConfig extends pellAction {
+  trait pellCustomActionConfig
+    extends StObject
+       with pellAction {
     
-    var icon: String = js.native
+    var icon: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    def result(): Unit = js.native
+    def result(): Unit
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object pellCustomActionConfig {
     

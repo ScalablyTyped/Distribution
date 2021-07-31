@@ -8,14 +8,15 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RichResponse
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsLinkOutSuggestion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object richMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/rich", "RichResponse")
   @js.native
-  class RichResponse protected () extends GoogleActionsV2RichResponse {
+  class RichResponse protected ()
+    extends StObject
+       with GoogleActionsV2RichResponse {
     /**
       * @param items RichResponse items
       * @public
@@ -59,7 +60,6 @@ object richMod {
   */
   type RichResponseItem = _RichResponseItem | HtmlResponse[JsonObject] | String
   
-  @js.native
   trait RichResponseOptions extends StObject {
     
     /**
@@ -67,19 +67,19 @@ object richMod {
       * First item must be SimpleResponse. There can be at most one card.
       * @public
       */
-    var items: js.UndefOr[js.Array[RichResponseItem]] = js.native
+    var items: js.UndefOr[js.Array[RichResponseItem]] = js.undefined
     
     /**
       * Link Out Suggestion chip for this rich response. Optional.
       * @public
       */
-    var link: js.UndefOr[GoogleActionsV2UiElementsLinkOutSuggestion] = js.native
+    var link: js.UndefOr[GoogleActionsV2UiElementsLinkOutSuggestion] = js.undefined
     
     /**
       * Ordered list of text suggestions to display. Optional.
       * @public
       */
-    var suggestions: js.UndefOr[js.Array[String] | Suggestions] = js.native
+    var suggestions: js.UndefOr[js.Array[String] | Suggestions] = js.undefined
   }
   object RichResponseOptions {
     
@@ -118,5 +118,7 @@ object richMod {
     }
   }
   
-  trait _RichResponseItem extends _Response
+  trait _RichResponseItem
+    extends StObject
+       with _Response
 }

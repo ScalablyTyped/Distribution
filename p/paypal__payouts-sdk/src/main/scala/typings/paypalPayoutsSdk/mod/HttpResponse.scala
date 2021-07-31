@@ -3,19 +3,17 @@ package typings.paypalPayoutsSdk.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpResponse[R] extends StObject {
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var result: js.UndefOr[R] = js.native
+  var result: js.UndefOr[R] = js.undefined
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object HttpResponse {
   
@@ -26,7 +24,7 @@ object HttpResponse {
   }
   
   @scala.inline
-  implicit class HttpResponseMutableBuilder[Self <: HttpResponse[_], R] (val x: Self with HttpResponse[R]) extends AnyVal {
+  implicit class HttpResponseMutableBuilder[Self <: HttpResponse[?], R] (val x: Self & HttpResponse[R]) extends AnyVal {
     
     @scala.inline
     def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

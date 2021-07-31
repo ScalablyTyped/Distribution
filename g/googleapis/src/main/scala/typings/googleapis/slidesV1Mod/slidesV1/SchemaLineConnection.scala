@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties for one end of a Line connection.
   */
-@js.native
 trait SchemaLineConnection extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaLineConnection extends StObject {
     * groups, tables, and lines do not have connection sites and therefore
     * cannot be connected to a connector line.
     */
-  var connectedObjectId: js.UndefOr[String] = js.native
+  var connectedObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The index of the connection site on the connected page element.  In most
@@ -30,7 +28,7 @@ trait SchemaLineConnection extends StObject {
     * The position of each connection site can also be viewed from Slides
     * editor.
     */
-  var connectionSiteIndex: js.UndefOr[Double] = js.native
+  var connectionSiteIndex: js.UndefOr[Double] = js.undefined
 }
 object SchemaLineConnection {
   

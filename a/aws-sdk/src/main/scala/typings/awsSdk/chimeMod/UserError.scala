@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserError extends StObject {
   
   /**
     * The error code.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.chimeMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.chimeMod.ErrorCode] = js.undefined
   
   /**
     * The error message.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The user ID for which the action failed.
     */
-  var UserId: js.UndefOr[NonEmptyString] = js.native
+  var UserId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object UserError {
   

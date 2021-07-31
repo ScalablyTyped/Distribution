@@ -2,17 +2,15 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Outline extends StObject {
   
-  var border: js.UndefOr[`3`] = js.native
+  var border: js.UndefOr[`3`] = js.undefined
   
-  var outline: js.UndefOr[ColorSize] = js.native
+  var outline: js.UndefOr[ColorSize] = js.undefined
   
-  var shadow: js.UndefOr[ColorSize] = js.native
+  var shadow: js.UndefOr[ColorSize] = js.undefined
 }
 object Outline {
   

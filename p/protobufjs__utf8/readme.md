@@ -11,8 +11,8 @@ A minimal UTF8 implementation for number arrays.
 | Full name          | @protobufjs/utf8 |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 105279243 |
+| # dependents       | 41 |
+| # downloads        | 142234526 |
 | # stars            | 0 |
 
 ## Links

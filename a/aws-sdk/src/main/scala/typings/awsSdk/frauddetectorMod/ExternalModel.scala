@@ -2,56 +2,54 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalModel extends StObject {
   
   /**
     * The model ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * Timestamp of when the model was last created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The input configuration.
     */
-  var inputConfiguration: js.UndefOr[ModelInputConfiguration] = js.native
+  var inputConfiguration: js.UndefOr[ModelInputConfiguration] = js.undefined
   
   /**
     * The role used to invoke the model. 
     */
-  var invokeModelEndpointRoleArn: js.UndefOr[String] = js.native
+  var invokeModelEndpointRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp of when the model was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The Amazon SageMaker model endpoints.
     */
-  var modelEndpoint: js.UndefOr[String] = js.native
+  var modelEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Fraud Detector status for the external model endpoint
     */
-  var modelEndpointStatus: js.UndefOr[ModelEndpointStatus] = js.native
+  var modelEndpointStatus: js.UndefOr[ModelEndpointStatus] = js.undefined
   
   /**
     * The source of the model.
     */
-  var modelSource: js.UndefOr[ModelSource] = js.native
+  var modelSource: js.UndefOr[ModelSource] = js.undefined
   
   /**
     * The output configuration.
     */
-  var outputConfiguration: js.UndefOr[ModelOutputConfiguration] = js.native
+  var outputConfiguration: js.UndefOr[ModelOutputConfiguration] = js.undefined
 }
 object ExternalModel {
   

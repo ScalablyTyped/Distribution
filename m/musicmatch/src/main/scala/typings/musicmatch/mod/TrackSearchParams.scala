@@ -2,31 +2,31 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrackSearchParams extends Pageable {
+trait TrackSearchParams
+  extends StObject
+     with Pageable {
   
-  var f_artist_id: js.UndefOr[Double] = js.native
+  var f_artist_id: js.UndefOr[Double] = js.undefined
   
-  var f_artist_mbid: js.UndefOr[Double] = js.native
+  var f_artist_mbid: js.UndefOr[Double] = js.undefined
   
-  var f_has_lyrics: js.UndefOr[TBoolean] = js.native
+  var f_has_lyrics: js.UndefOr[TBoolean] = js.undefined
   
-  var f_lyrics_language: js.UndefOr[String] = js.native
+  var f_lyrics_language: js.UndefOr[String] = js.undefined
   
-  var f_music_genre_id: js.UndefOr[Double] = js.native
+  var f_music_genre_id: js.UndefOr[Double] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var q_lyrics: js.UndefOr[String] = js.native
+  var q_lyrics: js.UndefOr[String] = js.undefined
   
-  var quorum_factor: js.UndefOr[Double] = js.native
+  var quorum_factor: js.UndefOr[Double] = js.undefined
   
-  var s_artist_rating: js.UndefOr[TSort] = js.native
+  var s_artist_rating: js.UndefOr[TSort] = js.undefined
   
-  var s_track_rating: js.UndefOr[TSort] = js.native
+  var s_track_rating: js.UndefOr[TSort] = js.undefined
 }
 object TrackSearchParams {
   

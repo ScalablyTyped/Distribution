@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * registered, thus a client object will learn about the print progress.
   * @see XPrintableListener
   */
-@js.native
-trait XPrintableBroadcaster extends XInterface {
+trait XPrintableBroadcaster
+  extends StObject
+     with XInterface {
   
   /** adds an {@link XPrintableListener} to be notified about print progress. */
-  def addPrintableListener(xListener: XPrintableListener): Unit = js.native
+  def addPrintableListener(xListener: XPrintableListener): Unit
   
   /** removes an {@link XPrintableListener} . */
-  def removePrintableListener(xListener: XPrintableListener): Unit = js.native
+  def removePrintableListener(xListener: XPrintableListener): Unit
 }
 object XPrintableBroadcaster {
   

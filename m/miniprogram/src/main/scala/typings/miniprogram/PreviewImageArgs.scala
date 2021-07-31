@@ -2,15 +2,15 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PreviewImageArgs extends AsyncCallback[Unit] {
+trait PreviewImageArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
-  var current: js.UndefOr[Double] = js.native
+  var current: js.UndefOr[Double] = js.undefined
   
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object PreviewImageArgs {
   

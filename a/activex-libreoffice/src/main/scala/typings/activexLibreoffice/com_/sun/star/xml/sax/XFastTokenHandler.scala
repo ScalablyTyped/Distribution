@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,18 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A token value must be greater or equal to zero and less than {@link FastToken.NAMESPACE} . If a string identifier is not known to this instance,
   * {@link FastToken.DONTKNOW} is returned.
   */
-@js.native
-trait XFastTokenHandler extends XInterface {
+trait XFastTokenHandler
+  extends StObject
+     with XInterface {
   
   /**
     * returns a integer token for the given string
     * @param Identifier the string given as a byte sequence encoded in UTF-8
     * @returns a unique integer token for the given String or {@link FastToken.DONTKNOW} if the identifier is not known to this instance.
     */
-  def getTokenFromUTF8(Identifier: SeqEquiv[Double]): Double = js.native
+  def getTokenFromUTF8(Identifier: SeqEquiv[Double]): Double
   
   /** returns a identifier for the given integer token as a byte sequence encoded in UTF-8. */
-  def getUTF8Identifier(Token: Double): SafeArray[Double] = js.native
+  def getUTF8Identifier(Token: Double): SafeArray[Double]
 }
 object XFastTokenHandler {
   

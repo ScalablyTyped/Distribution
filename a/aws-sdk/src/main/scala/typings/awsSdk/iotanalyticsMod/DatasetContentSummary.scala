@@ -2,36 +2,34 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetContentSummary extends StObject {
   
   /**
     * The time the dataset content status was updated to SUCCEEDED or FAILED.
     */
-  var completionTime: js.UndefOr[Timestamp] = js.native
+  var completionTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The actual time the creation of the dataset contents was started.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time the creation of the dataset contents was scheduled to start.
     */
-  var scheduleTime: js.UndefOr[Timestamp] = js.native
+  var scheduleTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the data set contents.
     */
-  var status: js.UndefOr[DatasetContentStatus] = js.native
+  var status: js.UndefOr[DatasetContentStatus] = js.undefined
   
   /**
     * The version of the dataset contents.
     */
-  var version: js.UndefOr[DatasetContentVersion] = js.native
+  var version: js.UndefOr[DatasetContentVersion] = js.undefined
 }
 object DatasetContentSummary {
   

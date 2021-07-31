@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * string_value_histogram or long_value_histogram_bucketing_option has been
   * defined.
   */
-@js.native
 trait SchemaCustomAttributeHistogramRequest extends StObject {
   
   /**
@@ -19,20 +17,20 @@ trait SchemaCustomAttributeHistogramRequest extends StObject {
     * string values of the given `key` is triggered, otherwise histogram is
     * performed on long values.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Specifies buckets used to perform a range histogram on
     * Job&#39;s filterable long custom field values, or min/max value
     * requirements.
     */
-  var longValueHistogramBucketingOption: js.UndefOr[SchemaNumericBucketingOption] = js.native
+  var longValueHistogramBucketingOption: js.UndefOr[SchemaNumericBucketingOption] = js.undefined
   
   /**
     * Optional. If set to true, the response will include the histogram value
     * for each key as a string.
     */
-  var stringValueHistogram: js.UndefOr[Boolean] = js.native
+  var stringValueHistogram: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCustomAttributeHistogramRequest {
   

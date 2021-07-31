@@ -4,23 +4,21 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IApplicationDataContainer extends StObject {
   
-  var containers: IMapView[String, ApplicationDataContainer] = js.native
+  var containers: IMapView[String, ApplicationDataContainer]
   
-  def createContainer(name: String, disposition: ApplicationDataCreateDisposition): ApplicationDataContainer = js.native
+  def createContainer(name: String, disposition: ApplicationDataCreateDisposition): ApplicationDataContainer
   
-  def deleteContainer(name: String): Unit = js.native
+  def deleteContainer(name: String): Unit
   
-  var locality: ApplicationDataLocality = js.native
+  var locality: ApplicationDataLocality
   
-  var name: String = js.native
+  var name: String
   
-  var values: IPropertySet = js.native
+  var values: IPropertySet
 }
 object IApplicationDataContainer {
   

@@ -5,63 +5,61 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.titleMod.TitleAnchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatType extends StObject {
   
-  var format: js.UndefOr[String | (Record[String, _])] = js.native
+  var format: js.UndefOr[String | (Record[String, js.Any])] = js.undefined
   
-  var formatType: js.UndefOr[String] = js.native
+  var formatType: js.UndefOr[String] = js.undefined
   
-  var labelAlign: js.UndefOr[js.Any] = js.native
+  var labelAlign: js.UndefOr[js.Any] = js.undefined
   
-  var labelAnchor: js.UndefOr[TitleAnchor] = js.native
+  var labelAnchor: js.UndefOr[TitleAnchor] = js.undefined
   
-  var labelAngle: js.UndefOr[Double] = js.native
+  var labelAngle: js.UndefOr[Double] = js.undefined
   
-  var labelBaseline: js.UndefOr[js.Any] = js.native
+  var labelBaseline: js.UndefOr[js.Any] = js.undefined
   
-  var labelColor: js.UndefOr[js.Any] = js.native
+  var labelColor: js.UndefOr[js.Any] = js.undefined
   
-  var labelExpr: js.UndefOr[String] = js.native
+  var labelExpr: js.UndefOr[String] = js.undefined
   
-  var labelFont: js.UndefOr[js.Any] = js.native
+  var labelFont: js.UndefOr[js.Any] = js.undefined
   
-  var labelFontSize: js.UndefOr[js.Any] = js.native
+  var labelFontSize: js.UndefOr[js.Any] = js.undefined
   
-  var labelFontStyle: js.UndefOr[js.Any] = js.native
+  var labelFontStyle: js.UndefOr[js.Any] = js.undefined
   
-  var labelFontWeight: js.UndefOr[js.Any] = js.native
+  var labelFontWeight: js.UndefOr[js.Any] = js.undefined
   
-  var labelLimit: js.UndefOr[js.Any] = js.native
+  var labelLimit: js.UndefOr[js.Any] = js.undefined
   
-  var labelLineHeight: js.UndefOr[js.Any] = js.native
+  var labelLineHeight: js.UndefOr[js.Any] = js.undefined
   
-  var labelOrient: typings.vegaTypings.encodeMod.Orient = js.native
+  var labelOrient: typings.vegaTypings.encodeMod.Orient
   
-  var labelPadding: js.UndefOr[js.Any] = js.native
+  var labelPadding: js.UndefOr[js.Any] = js.undefined
   
-  var labels: js.UndefOr[Boolean] = js.native
+  var labels: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.native
+  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
   
-  var titleAlign: js.UndefOr[js.Any] = js.native
+  var titleAlign: js.UndefOr[js.Any] = js.undefined
   
-  var titleAnchor: js.UndefOr[TitleAnchor] = js.native
+  var titleAnchor: js.UndefOr[TitleAnchor] = js.undefined
   
-  var titleAngle: js.UndefOr[Double] = js.native
+  var titleAngle: js.UndefOr[Double] = js.undefined
   
-  var titleBaseline: js.UndefOr[js.Any] = js.native
+  var titleBaseline: js.UndefOr[js.Any] = js.undefined
   
-  var titleColor: js.UndefOr[js.Any] = js.native
+  var titleColor: js.UndefOr[js.Any] = js.undefined
   
-  var titleFont: js.UndefOr[js.Any] = js.native
+  var titleFont: js.UndefOr[js.Any] = js.undefined
   
-  var titleFontSize: js.UndefOr[js.Any] = js.native
+  var titleFontSize: js.UndefOr[js.Any] = js.undefined
   
-  var titleFontStyle: js.UndefOr[js.Any] = js.native
+  var titleFontStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A ValueDef with Condition<ValueDef | FieldDef> where either the condition or the value are optional.
@@ -73,15 +71,15 @@ trait FormatType extends StObject {
   /**
     * @minProperties 1
     */
-  var titleFontWeight: js.UndefOr[js.Any] = js.native
+  var titleFontWeight: js.UndefOr[js.Any] = js.undefined
   
-  var titleLimit: js.UndefOr[js.Any] = js.native
+  var titleLimit: js.UndefOr[js.Any] = js.undefined
   
-  var titleLineHeight: js.UndefOr[js.Any] = js.native
+  var titleLineHeight: js.UndefOr[js.Any] = js.undefined
   
-  var titleOrient: typings.vegaTypings.encodeMod.Orient = js.native
+  var titleOrient: typings.vegaTypings.encodeMod.Orient
   
-  var titlePadding: js.UndefOr[js.Any] = js.native
+  var titlePadding: js.UndefOr[js.Any] = js.undefined
 }
 object FormatType {
   
@@ -98,7 +96,7 @@ object FormatType {
   implicit class FormatTypeMutableBuilder[Self <: FormatType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFormat(value: String | (Record[String, _])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    def setFormat(value: String | (Record[String, js.Any])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])

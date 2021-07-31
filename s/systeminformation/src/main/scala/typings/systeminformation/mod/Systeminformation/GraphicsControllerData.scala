@@ -2,21 +2,19 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphicsControllerData extends StObject {
   
-  var bus: String = js.native
+  var bus: String
   
-  var model: String = js.native
+  var model: String
   
-  var vendor: String = js.native
+  var vendor: String
   
-  var vram: Double = js.native
+  var vram: Double
   
-  var vramDynamic: Boolean = js.native
+  var vramDynamic: Boolean
 }
 object GraphicsControllerData {
   

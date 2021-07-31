@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterAssociatedToSchedule extends StObject {
   
   /**
     * 
     */
-  var ClusterIdentifier: js.UndefOr[String] = js.native
+  var ClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * 
     */
-  var ScheduleAssociationState: js.UndefOr[ScheduleState] = js.native
+  var ScheduleAssociationState: js.UndefOr[ScheduleState] = js.undefined
 }
 object ClusterAssociatedToSchedule {
   

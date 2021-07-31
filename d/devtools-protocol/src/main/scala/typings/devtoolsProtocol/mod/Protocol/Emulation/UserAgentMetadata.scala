@@ -2,25 +2,23 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentMetadata extends StObject {
   
-  var architecture: String = js.native
+  var architecture: String
   
-  var brands: js.Array[UserAgentBrandVersion] = js.native
+  var brands: js.Array[UserAgentBrandVersion]
   
-  var fullVersion: String = js.native
+  var fullVersion: String
   
-  var mobile: Boolean = js.native
+  var mobile: Boolean
   
-  var model: String = js.native
+  var model: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var platformVersion: String = js.native
+  var platformVersion: String
 }
 object UserAgentMetadata {
   

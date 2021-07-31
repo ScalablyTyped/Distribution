@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -13,4 +12,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_HeapGraphEdge")
 @js.native
 class ClassHeapGraphEdge ()
-  extends typings.fibjs.ClassHeapGraphEdge
+  extends StObject
+     with typings.fibjs.ClassHeapGraphEdge

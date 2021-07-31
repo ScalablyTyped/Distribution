@@ -12,31 +12,32 @@ import typings.reactMdUtils.useKeyboardMovementMod.MovementHandler
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useActiveDescendantMovementMod {
   
-  @JSImport("@react-md/utils/types/wia-aria/movement/useActiveDescendantMovement", "useActiveDescendantMovement")
+  @JSImport("@react-md/utils/types/wia-aria/movement/useActiveDescendantMovement", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
     hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions: ActiveDescendantOptions[D, CE, IE]
-  ): ActiveDescendantMovementProviders[CE, IE] = js.native
+  ): ActiveDescendantMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantMovement")(hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantMovementProviders[CE, IE]]
   
   type ActiveDescendantId = String
   
-  @js.native
   trait ActiveDescendantMovementProviders[CE /* <: HTMLElement */, IE /* <: HTMLElement */] extends StObject {
     
-    var activeId: ActiveDescendantId = js.native
+    var activeId: ActiveDescendantId
     
-    var focusedIndex: Double = js.native
+    var focusedIndex: Double
     
-    var itemRefs: ItemRefList[IE] = js.native
+    var itemRefs: ItemRefList[IE]
     
-    var onKeyDown: MovementHandler[CE] = js.native
+    var onKeyDown: MovementHandler[CE]
     
-    var setFocusedIndex: Dispatch[SetStateAction[Double]] = js.native
+    var setFocusedIndex: Dispatch[SetStateAction[Double]]
   }
   object ActiveDescendantMovementProviders {
     
@@ -53,7 +54,7 @@ object useActiveDescendantMovementMod {
     }
     
     @scala.inline
-    implicit class ActiveDescendantMovementProvidersMutableBuilder[Self <: ActiveDescendantMovementProviders[_, _], CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self with (ActiveDescendantMovementProviders[CE, IE])) extends AnyVal {
+    implicit class ActiveDescendantMovementProvidersMutableBuilder[Self <: ActiveDescendantMovementProviders[?, ?], CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (ActiveDescendantMovementProviders[CE, IE])) extends AnyVal {
       
       @scala.inline
       def setActiveId(value: ActiveDescendantId): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
@@ -75,34 +76,35 @@ object useActiveDescendantMovementMod {
     }
   }
   
-  @js.native
-  trait ActiveDescendantOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] extends BaseKeyboardMovementOptions[D, CE, IE] {
+  trait ActiveDescendantOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */]
+    extends StObject
+       with BaseKeyboardMovementOptions[D, CE, IE] {
     
     /**
       * The base id that should be used to generate the `aria-activedescendant`
       * value id. This will be passed into the `getId` option.
       */
-    var baseId: String = js.native
+    var baseId: String
     
     /**
       * The default index that should be "focused" when the component mounts. This
       * is set to `-1` by default so that it only gains a new "focused" index when
       * the container element is focused.
       */
-    var defaultFocusedIndex: js.UndefOr[js.Function0[Double] | Double] = js.native
+    var defaultFocusedIndex: js.UndefOr[js.Function0[Double] | Double] = js.undefined
     
     /**
       * The function that should generate an id based on the provided `id` and
       * `index` of the item.
       */
-    var getId: js.UndefOr[js.Function2[/* id */ String, /* index */ Double, String]] = js.native
+    var getId: js.UndefOr[js.Function2[/* id */ String, /* index */ Double, String]] = js.undefined
     
     /**
       * An optional function to call when the enter key has been pressed while the
       * container element has keyboard focus. This is normally used for triggering
       * click events for that specific item.
       */
-    var onEnter: js.UndefOr[KeyHandler[IE]] = js.native
+    var onEnter: js.UndefOr[KeyHandler[IE]] = js.undefined
     
     /**
       * An optional function to call when the space key has been pressed while the
@@ -110,7 +112,7 @@ object useActiveDescendantMovementMod {
       * click events for that specific item and will always call
       * `event.preventDefault()` to prevent the page scrolling behavior.
       */
-    var onSpace: js.UndefOr[KeyHandler[IE]] = js.native
+    var onSpace: js.UndefOr[KeyHandler[IE]] = js.undefined
   }
   object ActiveDescendantOptions {
     
@@ -128,7 +130,7 @@ object useActiveDescendantMovementMod {
     }
     
     @scala.inline
-    implicit class ActiveDescendantOptionsMutableBuilder[Self <: ActiveDescendantOptions[_, _, _], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self with (ActiveDescendantOptions[D, CE, IE])) extends AnyVal {
+    implicit class ActiveDescendantOptionsMutableBuilder[Self <: ActiveDescendantOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (ActiveDescendantOptions[D, CE, IE])) extends AnyVal {
       
       @scala.inline
       def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])

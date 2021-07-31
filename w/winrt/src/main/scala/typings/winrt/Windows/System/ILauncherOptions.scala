@@ -4,27 +4,25 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILauncherOptions extends StObject {
   
-  var contentType: String = js.native
+  var contentType: String
   
-  var desiredRemainingView: ViewSizePreference = js.native
+  var desiredRemainingView: ViewSizePreference
   
-  var displayApplicationPicker: Boolean = js.native
+  var displayApplicationPicker: Boolean
   
-  var fallbackUri: Uri = js.native
+  var fallbackUri: Uri
   
-  var preferredApplicationDisplayName: String = js.native
+  var preferredApplicationDisplayName: String
   
-  var preferredApplicationPackageFamilyName: String = js.native
+  var preferredApplicationPackageFamilyName: String
   
-  var treatAsUntrusted: Boolean = js.native
+  var treatAsUntrusted: Boolean
   
-  var uI: LauncherUIOptions = js.native
+  var uI: LauncherUIOptions
 }
 object ILauncherOptions {
   

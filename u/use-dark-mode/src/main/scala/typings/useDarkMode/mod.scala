@@ -5,34 +5,32 @@ import typings.std.Window
 import typings.std.WindowLocalStorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("use-dark-mode", JSImport.Default)
+  @JSImport("use-dark-mode", JSImport.Namespace)
   @js.native
-  def default(): DarkMode = js.native
-  @JSImport("use-dark-mode", JSImport.Default)
-  @js.native
-  def default(initialState: js.UndefOr[scala.Nothing], config: DarkModeConfig): DarkMode = js.native
-  @JSImport("use-dark-mode", JSImport.Default)
-  @js.native
-  def default(initialState: Boolean): DarkMode = js.native
-  @JSImport("use-dark-mode", JSImport.Default)
-  @js.native
-  def default(initialState: Boolean, config: DarkModeConfig): DarkMode = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): DarkMode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[DarkMode]
+  @scala.inline
+  def default(initialState: Boolean): DarkMode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any]).asInstanceOf[DarkMode]
+  @scala.inline
+  def default(initialState: Boolean, config: DarkModeConfig): DarkMode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[DarkMode]
+  @scala.inline
+  def default(initialState: Unit, config: DarkModeConfig): DarkMode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[DarkMode]
+  
   trait DarkMode extends StObject {
     
-    def disable(): Unit = js.native
+    def disable(): Unit
     
-    def enable(): Unit = js.native
+    def enable(): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
     
-    val value: Boolean = js.native
+    val value: Boolean
   }
   object DarkMode {
     
@@ -59,28 +57,27 @@ object mod {
     }
   }
   
-  @js.native
   trait DarkModeConfig extends StObject {
     
-    var classNameDark: js.UndefOr[String] = js.native
+    var classNameDark: js.UndefOr[String] = js.undefined
     
     // A className to set "dark mode". Default = "dark-mode".
-    var classNameLight: js.UndefOr[String] = js.native
+    var classNameLight: js.UndefOr[String] = js.undefined
     
     // A className to set "light mode". Default = "light-mode".
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
     // A storage provider. Default = `localStorage`.
-    var global: js.UndefOr[Window] = js.native
+    var global: js.UndefOr[Window] = js.undefined
     
     // The element to apply the className. Default = `document.body`
-    var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[Boolean], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     // Overide the default className handler with a custom callback.
-    var storageKey: js.UndefOr[String] = js.native
+    var storageKey: js.UndefOr[String] = js.undefined
     
     // Specify the `localStorage` key. Default = "darkMode". Sewt to `null` to disable persistent storage.
-    var storageProvider: js.UndefOr[WindowLocalStorage] = js.native
+    var storageProvider: js.UndefOr[WindowLocalStorage] = js.undefined
   }
   object DarkModeConfig {
     

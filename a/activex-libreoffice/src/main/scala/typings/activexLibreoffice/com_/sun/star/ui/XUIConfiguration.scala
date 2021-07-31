@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This can be useful for UI to enable/disable some functions without actually accessing the data.
   * @since OOo 2.0
   */
-@js.native
-trait XUIConfiguration extends XInterface {
+trait XUIConfiguration
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive events when elements are changed, inserted or removed.
@@ -25,7 +25,7 @@ trait XUIConfiguration extends XInterface {
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     * @see XUIConfigurationListener
     */
-  def addConfigurationListener(Listener: XUIConfigurationListener): Unit = js.native
+  def addConfigurationListener(Listener: XUIConfigurationListener): Unit
   
   /**
     * removes the specified listener so it does not receive any events from this user interface configuration manager.
@@ -33,7 +33,7 @@ trait XUIConfiguration extends XInterface {
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     * @see XUIConfigurationListener
     */
-  def removeConfigurationListener(Listener: XUIConfigurationListener): Unit = js.native
+  def removeConfigurationListener(Listener: XUIConfigurationListener): Unit
 }
 object XUIConfiguration {
   

@@ -2,22 +2,20 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaShipmentInvoiceLineItemInvoice extends StObject {
   
   /**
     * ID of the line item. Either lineItemId or productId must be set.
     */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the product. This is the REST ID used in the products service.
     * Either lineItemId or productId must be set.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * [required] The shipment unit ID is assigned by the merchant and defines
@@ -25,12 +23,12 @@ trait SchemaShipmentInvoiceLineItemInvoice extends StObject {
     * units that are the same while units that differ must be assigned a
     * different ID (for example: free or promotional units).
     */
-  var shipmentUnitIds: js.UndefOr[js.Array[String]] = js.native
+  var shipmentUnitIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [required] Invoice details for a single unit.
     */
-  var unitInvoice: js.UndefOr[SchemaUnitInvoice] = js.native
+  var unitInvoice: js.UndefOr[SchemaUnitInvoice] = js.undefined
 }
 object SchemaShipmentInvoiceLineItemInvoice {
   

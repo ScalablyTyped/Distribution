@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGraphsRequest extends StObject {
   
   /**
     * The maximum number of graphs to return at a time. The total must be less than the overall limit on the number of results to return, which is currently 200.
     */
-  var MaxResults: js.UndefOr[MemberResultsLimit] = js.native
+  var MaxResults: js.UndefOr[MemberResultsLimit] = js.undefined
   
   /**
     * For requests to get the next page of results, the pagination token that was returned with the previous set of results. The initial request does not include a pagination token.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListGraphsRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHITsForQualificationTypeRequest extends StObject {
   
   /**
     *  Limit the number of results returned. 
     */
-  var MaxResults: js.UndefOr[ResultSize] = js.native
+  var MaxResults: js.UndefOr[ResultSize] = js.undefined
   
   /**
     * Pagination Token
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The ID of the Qualification type to use when querying HITs. 
     */
-  var QualificationTypeId: EntityId = js.native
+  var QualificationTypeId: EntityId
 }
 object ListHITsForQualificationTypeRequest {
   

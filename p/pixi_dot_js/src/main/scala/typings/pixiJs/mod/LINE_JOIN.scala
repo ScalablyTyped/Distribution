@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,11 +23,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LINE_JOIN extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_JOIN with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_JOIN & Double] = js.native
   
-  /* 1 */ val BEVEL: typings.pixiJs.PIXI.LINE_JOIN.BEVEL with Double = js.native
+  /* 1 */ val BEVEL: typings.pixiJs.PIXI.LINE_JOIN.BEVEL & Double = js.native
   
-  /* 0 */ val MITER: typings.pixiJs.PIXI.LINE_JOIN.MITER with Double = js.native
+  /* 0 */ val MITER: typings.pixiJs.PIXI.LINE_JOIN.MITER & Double = js.native
   
-  /* 2 */ val ROUND: typings.pixiJs.PIXI.LINE_JOIN.ROUND with Double = js.native
+  /* 2 */ val ROUND: typings.pixiJs.PIXI.LINE_JOIN.ROUND & Double = js.native
 }

@@ -5,17 +5,17 @@ import typings.parse.mod.global.Parse.File
 import typings.parse.mod.global.Parse.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileTriggerRequest extends TriggerRequest {
+trait FileTriggerRequest
+  extends StObject
+     with TriggerRequest {
   
-  var contentLength: Double = js.native
+  var contentLength: Double
   
-  var file: File = js.native
+  var file: File
   
-  var fileSize: Double = js.native
+  var fileSize: Double
 }
 object FileTriggerRequest {
   

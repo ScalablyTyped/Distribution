@@ -2,21 +2,19 @@ package typings.googleFeeds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait feedJSON extends StObject {
   
-  var author: String = js.native
+  var author: String
   
-  var description: String = js.native
+  var description: String
   
-  var entries: js.Array[feedEntry] = js.native
+  var entries: js.Array[feedEntry]
   
-  var feedURL: String = js.native
+  var feedURL: String
   
-  var link: String = js.native
+  var link: String
 }
 object feedJSON {
   

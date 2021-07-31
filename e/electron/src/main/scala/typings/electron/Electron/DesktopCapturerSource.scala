@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DesktopCapturerSource extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/desktop-capturer-source
@@ -14,7 +12,7 @@ trait DesktopCapturerSource extends StObject {
     * a type screen. The size of the icon is not known in advance and depends on what
     * the application provides.
     */
-  var appIcon: NativeImage_ = js.native
+  var appIcon: NativeImage_
   
   /**
     * A unique identifier that will correspond to the `id` of the matching Display
@@ -22,7 +20,7 @@ trait DesktopCapturerSource extends StObject {
     * portion of the `id` field above and on others it will differ. It will be an
     * empty string if not available.
     */
-  var display_id: String = js.native
+  var display_id: String
   
   /**
     * The identifier of a window or screen that can be used as a `chromeMediaSourceId`
@@ -30,13 +28,13 @@ trait DesktopCapturerSource extends StObject {
     * identifier will be `window:XX` or `screen:XX`, where `XX` is a random generated
     * number.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A screen source will be named either `Entire Screen` or `Screen <index>`, while
     * the name of a window source will match the window title.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A thumbnail image. **Note:** There is no guarantee that the size of the
@@ -44,7 +42,7 @@ trait DesktopCapturerSource extends StObject {
     * to `desktopCapturer.getSources`. The actual size depends on the scale of the
     * screen or window.
     */
-  var thumbnail: NativeImage_ = js.native
+  var thumbnail: NativeImage_
 }
 object DesktopCapturerSource {
   

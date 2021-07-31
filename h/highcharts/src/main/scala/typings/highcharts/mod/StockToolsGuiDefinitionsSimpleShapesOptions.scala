@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockToolsGuiDefinitionsSimpleShapesOptions extends StObject {
   
-  var circle: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesCircleOptions] = js.native
+  var circle: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesCircleOptions] = js.undefined
   
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var label: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesLabelOptions] = js.native
+  var label: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesLabelOptions] = js.undefined
   
-  var rectangle: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesRectangleOptions] = js.native
+  var rectangle: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesRectangleOptions] = js.undefined
 }
 object StockToolsGuiDefinitionsSimpleShapesOptions {
   
@@ -38,7 +36,7 @@ object StockToolsGuiDefinitionsSimpleShapesOptions {
     def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

@@ -2,17 +2,15 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WithResponse[T] extends StObject {
   
-  var body: T = js.native
+  var body: T
   
-  var headers: Headers = js.native
+  var headers: Headers
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object WithResponse {
   
@@ -23,7 +21,7 @@ object WithResponse {
   }
   
   @scala.inline
-  implicit class WithResponseMutableBuilder[Self <: WithResponse[_], T] (val x: Self with WithResponse[T]) extends AnyVal {
+  implicit class WithResponseMutableBuilder[Self <: WithResponse[?], T] (val x: Self & WithResponse[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

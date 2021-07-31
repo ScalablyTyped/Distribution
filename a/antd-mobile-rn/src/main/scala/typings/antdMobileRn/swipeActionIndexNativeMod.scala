@@ -7,7 +7,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swipeActionIndexNativeMod {
@@ -20,12 +19,13 @@ object swipeActionIndexNativeMod {
   trait SwipeAction
     extends Component[SwipeActionProps, js.Any, js.Any]
   
-  @js.native
-  trait SwipeActionProps extends SwipeActionPropsType[TextStyle] {
+  trait SwipeActionProps
+    extends StObject
+       with SwipeActionPropsType[TextStyle] {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
   }
   object SwipeActionProps {
     

@@ -4,10 +4,13 @@ import typings.firebaseStorage.anon.ServerResponse
 import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
+  
+  @JSImport("@firebase/storage/dist/src/implementation/error", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Code {
     
@@ -178,99 +181,75 @@ object errorMod {
     def serverResponse_=(serverResponse: String | Null): Unit = js.native
   }
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "appDeleted")
-  @js.native
-  def appDeleted(): FirebaseStorageError = js.native
+  @scala.inline
+  def appDeleted(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("appDeleted")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "bucketNotFound")
-  @js.native
-  def bucketNotFound(bucket: String): FirebaseStorageError = js.native
+  @scala.inline
+  def bucketNotFound(bucket: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketNotFound")(bucket.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "canceled")
-  @js.native
-  def canceled(): FirebaseStorageError = js.native
+  @scala.inline
+  def canceled(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("canceled")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "cannotSliceBlob")
-  @js.native
-  def cannotSliceBlob(): FirebaseStorageError = js.native
+  @scala.inline
+  def cannotSliceBlob(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotSliceBlob")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "internalError")
-  @js.native
-  def internalError(message: String): FirebaseStorageError = js.native
+  @scala.inline
+  def internalError(message: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("internalError")(message.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidArgument")
-  @js.native
-  def invalidArgument(message: String): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidArgument(message: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidArgument")(message.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidArgumentCount")
-  @js.native
-  def invalidArgumentCount(argMin: Double, argMax: Double, fnName: String, real: Double): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidArgumentCount(argMin: Double, argMax: Double, fnName: String, real: Double): FirebaseStorageError = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidArgumentCount")(argMin.asInstanceOf[js.Any], argMax.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], real.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidChecksum")
-  @js.native
-  def invalidChecksum(path: String, checksum: String, calculated: String): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidChecksum(path: String, checksum: String, calculated: String): FirebaseStorageError = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidChecksum")(path.asInstanceOf[js.Any], checksum.asInstanceOf[js.Any], calculated.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidDefaultBucket")
-  @js.native
-  def invalidDefaultBucket(bucket: String): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidDefaultBucket(bucket: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidDefaultBucket")(bucket.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidEventName")
-  @js.native
-  def invalidEventName(name: String): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidEventName(name: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidEventName")(name.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidFormat")
-  @js.native
-  def invalidFormat(format: String, message: String): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidFormat(format: String, message: String): FirebaseStorageError = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFormat")(format.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidRootOperation")
-  @js.native
-  def invalidRootOperation(name: String): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidRootOperation(name: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidRootOperation")(name.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "invalidUrl")
-  @js.native
-  def invalidUrl(url: String): FirebaseStorageError = js.native
+  @scala.inline
+  def invalidUrl(url: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidUrl")(url.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "noDefaultBucket")
-  @js.native
-  def noDefaultBucket(): FirebaseStorageError = js.native
+  @scala.inline
+  def noDefaultBucket(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("noDefaultBucket")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "noDownloadURL")
-  @js.native
-  def noDownloadURL(): FirebaseStorageError = js.native
+  @scala.inline
+  def noDownloadURL(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("noDownloadURL")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "objectNotFound")
-  @js.native
-  def objectNotFound(path: String): FirebaseStorageError = js.native
+  @scala.inline
+  def objectNotFound(path: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("objectNotFound")(path.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "prependCode")
-  @js.native
-  def prependCode(code: Code): String = js.native
+  @scala.inline
+  def prependCode(code: Code): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prependCode")(code.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "projectNotFound")
-  @js.native
-  def projectNotFound(project: String): FirebaseStorageError = js.native
+  @scala.inline
+  def projectNotFound(project: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("projectNotFound")(project.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "quotaExceeded")
-  @js.native
-  def quotaExceeded(bucket: String): FirebaseStorageError = js.native
+  @scala.inline
+  def quotaExceeded(bucket: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("quotaExceeded")(bucket.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "retryLimitExceeded")
-  @js.native
-  def retryLimitExceeded(): FirebaseStorageError = js.native
+  @scala.inline
+  def retryLimitExceeded(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("retryLimitExceeded")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "serverFileWrongSize")
-  @js.native
-  def serverFileWrongSize(): FirebaseStorageError = js.native
+  @scala.inline
+  def serverFileWrongSize(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("serverFileWrongSize")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "unauthenticated")
-  @js.native
-  def unauthenticated(): FirebaseStorageError = js.native
+  @scala.inline
+  def unauthenticated(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthenticated")().asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "unauthorized")
-  @js.native
-  def unauthorized(path: String): FirebaseStorageError = js.native
+  @scala.inline
+  def unauthorized(path: String): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(path.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageError]
   
-  @JSImport("@firebase/storage/dist/src/implementation/error", "unknown")
-  @js.native
-  def unknown(): FirebaseStorageError = js.native
+  @scala.inline
+  def unknown(): FirebaseStorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("unknown")().asInstanceOf[FirebaseStorageError]
 }

@@ -2,35 +2,33 @@ package typings.googleapis.genomicsV1Mod.genomicsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a Compute Engine resource that is being managed by a running
   * pipeline.
   */
-@js.native
 trait SchemaComputeEngine extends StObject {
   
   /**
     * The names of the disks that were created for this pipeline.
     */
-  var diskNames: js.UndefOr[js.Array[String]] = js.native
+  var diskNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The instance on which the operation is running.
     */
-  var instanceName: js.UndefOr[String] = js.native
+  var instanceName: js.UndefOr[String] = js.undefined
   
   /**
     * The machine type of the instance.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The availability zone in which the instance resides.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaComputeEngine {
   

@@ -31,15 +31,14 @@ import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsU
 import typings.awsSdkClientCodecommitNode.updateRepositoryNameExceptionsUnionMod.UpdateRepositoryNameExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidRepositoryNameExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRepositoryNameExceptionDetails> * / any */ @js.native
-  trait InvalidRepositoryNameException
-    extends BatchGetRepositoriesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRepositoryNameExceptionDetails> * / any */ trait InvalidRepositoryNameException
+    extends StObject
+       with BatchGetRepositoriesExceptionsUnion
        with CreateBranchExceptionsUnion
        with CreatePullRequestExceptionsUnion
        with CreateRepositoryExceptionsUnion
@@ -69,15 +68,13 @@ object typesInvalidRepositoryNameExceptionMod {
        with UpdateRepositoryDescriptionExceptionsUnion
        with UpdateRepositoryNameExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
   }
   object InvalidRepositoryNameException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
-    ): InvalidRepositoryNameException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidRepositoryNameException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRepositoryNameException")
       __obj.asInstanceOf[InvalidRepositoryNameException]
     }
     
@@ -91,6 +88,5 @@ object typesInvalidRepositoryNameExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidRepositoryNameExceptionDetails extends StObject
 }

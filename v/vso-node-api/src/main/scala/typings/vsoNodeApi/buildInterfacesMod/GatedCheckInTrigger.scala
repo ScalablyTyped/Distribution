@@ -2,23 +2,23 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GatedCheckInTrigger extends BuildTrigger {
+trait GatedCheckInTrigger
+  extends StObject
+     with BuildTrigger {
   
-  var pathFilters: js.Array[String] = js.native
+  var pathFilters: js.Array[String]
   
   /**
     * Indicates whether CI triggers should run after the gated check-in succeeds.
     */
-  var runContinuousIntegration: Boolean = js.native
+  var runContinuousIntegration: Boolean
   
   /**
     * Indicates whether to take workspace mappings into account when determining whether a build should run.
     */
-  var useWorkspaceMappings: Boolean = js.native
+  var useWorkspaceMappings: Boolean
 }
 object GatedCheckInTrigger {
   

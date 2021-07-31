@@ -2,23 +2,21 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpAuthorizer extends StObject {
   
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
-  var identitySource: js.UndefOr[String] = js.native
+  var identitySource: js.UndefOr[String] = js.undefined
   
-  var identityValidationExpression: js.UndefOr[String] = js.native
+  var identityValidationExpression: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var resultTtlInSeconds: js.UndefOr[Double | String] = js.native
+  var resultTtlInSeconds: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object HttpAuthorizer {
   

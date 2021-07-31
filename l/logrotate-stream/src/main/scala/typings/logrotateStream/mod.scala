@@ -3,7 +3,6 @@ package typings.logrotateStream
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,32 +11,34 @@ object mod {
     * Create a rotating log stream.
     * @returns a writable stream to a rotating log file
     */
+  @scala.inline
+  def apply(opts: Options): Writable = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  
   @JSImport("logrotate-stream", JSImport.Namespace)
   @js.native
-  def apply(opts: Options): Writable = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Optionally compress rotated files with gzip.
       */
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The file log file to write data to.
       */
-    var file: String = js.native
+    var file: String
     
     /**
       * The number of rotated log files to keep (including the primary log file). Additional logs are deleted no rotation.
       */
-    var keep: Double = js.native
+    var keep: Double
     
     /**
       * The max file size of a log before rotation occurs. Supports 1024, 1k, 1m, 1g
       */
-    var size: String = js.native
+    var size: String
   }
   object Options {
     

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientGridViewColumnMovingEventArgs")
 @js.native
 class ASPxClientGridViewColumnMovingEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientGridViewColumnMovingEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientGridViewColumnMovingEventArgs {
   /**
     * Initializes a new instance of the ASPxClientGridViewColumnMovingEventArgs class.
     * @param sourceColumn An ASPxClientGridViewColumn object that represents the column currently being dragged by an end-user. This value is assigned to the ASPxClientGridViewColumnMovingEventArgs.sourceColumn property.
@@ -25,4 +25,34 @@ class ASPxClientGridViewColumnMovingEventArgs protected ()
     isDropBefore: Boolean,
     isGroupPanel: Boolean
   ) = this()
+  
+  /**
+    * Gets or sets whether a column is allowed to be moved.
+    */
+  /* CompleteClass */
+  var allow: Boolean = js.native
+  
+  /**
+    * Gets the target column, before or after which the source column will be inserted (if dropped).
+    */
+  /* CompleteClass */
+  var destinationColumn: typings.devexpressWeb.ASPxClientGridViewColumn = js.native
+  
+  /**
+    * Gets whether the source column will be inserted before the target column (if dropped).
+    */
+  /* CompleteClass */
+  var isDropBefore: Boolean = js.native
+  
+  /**
+    * Gets whether the source column is currently over the Group Panel.
+    */
+  /* CompleteClass */
+  var isGroupPanel: Boolean = js.native
+  
+  /**
+    * Gets the column currently being dragged by an end-user.
+    */
+  /* CompleteClass */
+  var sourceColumn: typings.devexpressWeb.ASPxClientGridViewColumn = js.native
 }

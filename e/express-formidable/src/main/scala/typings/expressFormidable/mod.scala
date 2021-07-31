@@ -11,38 +11,38 @@ import typings.formidable.mod.Fields
 import typings.formidable.mod.Files
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-formidable", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-formidable", JSImport.Namespace)
-  @js.native
-  def apply(options: ExpressFormidableOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: ExpressFormidableOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("express-formidable", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ExpressFormidableOptions extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[Boolean | sha1 | md5] = js.native
+    var hash: js.UndefOr[Boolean | sha1 | md5] = js.undefined
     
-    var keepExtensions: js.UndefOr[Boolean] = js.native
+    var keepExtensions: js.UndefOr[Boolean] = js.undefined
     
-    var maxFields: js.UndefOr[Double] = js.native
+    var maxFields: js.UndefOr[Double] = js.undefined
     
-    var maxFieldsSize: js.UndefOr[Double] = js.native
+    var maxFieldsSize: js.UndefOr[Double] = js.undefined
     
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
-    var multiples: js.UndefOr[Boolean] = js.native
+    var multiples: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[multipart | urlencoded] = js.native
+    var `type`: js.UndefOr[multipart | urlencoded] = js.undefined
     
-    var uploadDir: js.UndefOr[String] = js.native
+    var uploadDir: js.UndefOr[String] = js.undefined
   }
   object ExpressFormidableOptions {
     
@@ -116,12 +116,11 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        var fields: js.UndefOr[Fields] = js.native
+        var fields: js.UndefOr[Fields] = js.undefined
         
-        var files: js.UndefOr[Files] = js.native
+        var files: js.UndefOr[Files] = js.undefined
       }
       object Request {
         

@@ -2,16 +2,14 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePipelinesInput extends StObject {
   
   /**
     * The IDs of the pipelines to describe. You can pass as many as 25 identifiers in a single call. To obtain pipeline IDs, call ListPipelines.
     */
-  var pipelineIds: idList = js.native
+  var pipelineIds: idList
 }
 object DescribePipelinesInput {
   

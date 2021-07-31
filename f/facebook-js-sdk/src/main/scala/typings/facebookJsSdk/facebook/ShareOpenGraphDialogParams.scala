@@ -5,36 +5,31 @@ import typings.facebookJsSdk.facebookJsSdkBooleans.`false`
 import typings.facebookJsSdk.facebookJsSdkStrings.share_open_graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareOpenGraphDialogParams extends DialogParams {
+trait ShareOpenGraphDialogParams
+  extends StObject
+     with DialogParams {
   
-  var action_properties: StringDictionary[js.Any] = js.native
+  var action_properties: StringDictionary[js.Any]
   
-  var action_type: String = js.native
+  var action_type: String
   
-  var hashtag: js.UndefOr[String] = js.native
+  var hashtag: js.UndefOr[String] = js.undefined
   
-  var href: String = js.native
+  var href: String
   
-  var method: share_open_graph = js.native
+  var method: share_open_graph
   
-  var mobile_iframe: js.UndefOr[`false`] = js.native
+  var mobile_iframe: js.UndefOr[`false`] = js.undefined
   
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
 }
 object ShareOpenGraphDialogParams {
   
   @scala.inline
-  def apply(
-    action_properties: StringDictionary[js.Any],
-    action_type: String,
-    href: String,
-    method: share_open_graph
-  ): ShareOpenGraphDialogParams = {
-    val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+  def apply(action_properties: StringDictionary[js.Any], action_type: String, href: String): ShareOpenGraphDialogParams = {
+    val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], method = "share_open_graph")
     __obj.asInstanceOf[ShareOpenGraphDialogParams]
   }
   

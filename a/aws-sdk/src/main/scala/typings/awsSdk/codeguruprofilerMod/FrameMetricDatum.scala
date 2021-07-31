@@ -2,18 +2,16 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameMetricDatum extends StObject {
   
-  var frameMetric: FrameMetric = js.native
+  var frameMetric: FrameMetric
   
   /**
     *  A list of values that are associated with a frame metric. 
     */
-  var values: FrameMetricValues = js.native
+  var values: FrameMetricValues
 }
 object FrameMetricDatum {
   

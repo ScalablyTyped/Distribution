@@ -9,7 +9,6 @@ import typings.sqltoolsFormatter.sqltoolsFormatterStrings.sql
 import typings.sqltoolsFormatter.sqltoolsFormatterStrings.upper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -21,85 +20,116 @@ object typesMod {
   object TokenTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TokenTypes with String] = js.native
+    def apply(value: String): js.UndefOr[TokenTypes & String] = js.native
     
     @js.native
-    sealed trait BLOCK_COMMENT extends TokenTypes
-    /* "block-comment" */ val BLOCK_COMMENT: typings.sqltoolsFormatter.typesMod.TokenTypes.BLOCK_COMMENT with String = js.native
+    sealed trait BLOCK_COMMENT
+      extends StObject
+         with TokenTypes
+    /* "block-comment" */ val BLOCK_COMMENT: typings.sqltoolsFormatter.typesMod.TokenTypes.BLOCK_COMMENT & String = js.native
     
     @js.native
-    sealed trait CLOSE_PAREN extends TokenTypes
-    /* "close-paren" */ val CLOSE_PAREN: typings.sqltoolsFormatter.typesMod.TokenTypes.CLOSE_PAREN with String = js.native
+    sealed trait CLOSE_PAREN
+      extends StObject
+         with TokenTypes
+    /* "close-paren" */ val CLOSE_PAREN: typings.sqltoolsFormatter.typesMod.TokenTypes.CLOSE_PAREN & String = js.native
     
     @js.native
-    sealed trait LINE_COMMENT extends TokenTypes
-    /* "line-comment" */ val LINE_COMMENT: typings.sqltoolsFormatter.typesMod.TokenTypes.LINE_COMMENT with String = js.native
+    sealed trait LINE_COMMENT
+      extends StObject
+         with TokenTypes
+    /* "line-comment" */ val LINE_COMMENT: typings.sqltoolsFormatter.typesMod.TokenTypes.LINE_COMMENT & String = js.native
     
     @js.native
-    sealed trait NO_SPACE_OPERATOR extends TokenTypes
-    /* "no-space-operator" */ val NO_SPACE_OPERATOR: typings.sqltoolsFormatter.typesMod.TokenTypes.NO_SPACE_OPERATOR with String = js.native
+    sealed trait NO_SPACE_OPERATOR
+      extends StObject
+         with TokenTypes
+    /* "no-space-operator" */ val NO_SPACE_OPERATOR: typings.sqltoolsFormatter.typesMod.TokenTypes.NO_SPACE_OPERATOR & String = js.native
     
     @js.native
-    sealed trait NUMBER extends TokenTypes
-    /* "number" */ val NUMBER: typings.sqltoolsFormatter.typesMod.TokenTypes.NUMBER with String = js.native
+    sealed trait NUMBER
+      extends StObject
+         with TokenTypes
+    /* "number" */ val NUMBER: typings.sqltoolsFormatter.typesMod.TokenTypes.NUMBER & String = js.native
     
     @js.native
-    sealed trait OPEN_PAREN extends TokenTypes
-    /* "open-paren" */ val OPEN_PAREN: typings.sqltoolsFormatter.typesMod.TokenTypes.OPEN_PAREN with String = js.native
+    sealed trait OPEN_PAREN
+      extends StObject
+         with TokenTypes
+    /* "open-paren" */ val OPEN_PAREN: typings.sqltoolsFormatter.typesMod.TokenTypes.OPEN_PAREN & String = js.native
     
     @js.native
-    sealed trait OPERATOR extends TokenTypes
-    /* "operator" */ val OPERATOR: typings.sqltoolsFormatter.typesMod.TokenTypes.OPERATOR with String = js.native
+    sealed trait OPERATOR
+      extends StObject
+         with TokenTypes
+    /* "operator" */ val OPERATOR: typings.sqltoolsFormatter.typesMod.TokenTypes.OPERATOR & String = js.native
     
     @js.native
-    sealed trait PLACEHOLDER extends TokenTypes
-    /* "placeholder" */ val PLACEHOLDER: typings.sqltoolsFormatter.typesMod.TokenTypes.PLACEHOLDER with String = js.native
+    sealed trait PLACEHOLDER
+      extends StObject
+         with TokenTypes
+    /* "placeholder" */ val PLACEHOLDER: typings.sqltoolsFormatter.typesMod.TokenTypes.PLACEHOLDER & String = js.native
     
     @js.native
-    sealed trait RESERVED extends TokenTypes
-    /* "reserved" */ val RESERVED: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED with String = js.native
+    sealed trait RESERVED
+      extends StObject
+         with TokenTypes
+    /* "reserved" */ val RESERVED: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED & String = js.native
     
     @js.native
-    sealed trait RESERVED_NEWLINE extends TokenTypes
-    /* "reserved-newline" */ val RESERVED_NEWLINE: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED_NEWLINE with String = js.native
+    sealed trait RESERVED_NEWLINE
+      extends StObject
+         with TokenTypes
+    /* "reserved-newline" */ val RESERVED_NEWLINE: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED_NEWLINE & String = js.native
     
     @js.native
-    sealed trait RESERVED_TOP_LEVEL extends TokenTypes
-    /* "reserved-top-level" */ val RESERVED_TOP_LEVEL: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED_TOP_LEVEL with String = js.native
+    sealed trait RESERVED_TOP_LEVEL
+      extends StObject
+         with TokenTypes
+    /* "reserved-top-level" */ val RESERVED_TOP_LEVEL: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED_TOP_LEVEL & String = js.native
     
     @js.native
-    sealed trait RESERVED_TOP_LEVEL_NO_INDENT extends TokenTypes
-    /* "reserved-top-level-no-indent" */ val RESERVED_TOP_LEVEL_NO_INDENT: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED_TOP_LEVEL_NO_INDENT with String = js.native
+    sealed trait RESERVED_TOP_LEVEL_NO_INDENT
+      extends StObject
+         with TokenTypes
+    /* "reserved-top-level-no-indent" */ val RESERVED_TOP_LEVEL_NO_INDENT: typings.sqltoolsFormatter.typesMod.TokenTypes.RESERVED_TOP_LEVEL_NO_INDENT & String = js.native
     
     @js.native
-    sealed trait SERVERVARIABLE extends TokenTypes
-    /* "servervariable" */ val SERVERVARIABLE: typings.sqltoolsFormatter.typesMod.TokenTypes.SERVERVARIABLE with String = js.native
+    sealed trait SERVERVARIABLE
+      extends StObject
+         with TokenTypes
+    /* "servervariable" */ val SERVERVARIABLE: typings.sqltoolsFormatter.typesMod.TokenTypes.SERVERVARIABLE & String = js.native
     
     @js.native
-    sealed trait STRING extends TokenTypes
-    /* "string" */ val STRING: typings.sqltoolsFormatter.typesMod.TokenTypes.STRING with String = js.native
+    sealed trait STRING
+      extends StObject
+         with TokenTypes
+    /* "string" */ val STRING: typings.sqltoolsFormatter.typesMod.TokenTypes.STRING & String = js.native
     
     @js.native
-    sealed trait WHITESPACE extends TokenTypes
-    /* "whitespace" */ val WHITESPACE: typings.sqltoolsFormatter.typesMod.TokenTypes.WHITESPACE with String = js.native
+    sealed trait WHITESPACE
+      extends StObject
+         with TokenTypes
+    /* "whitespace" */ val WHITESPACE: typings.sqltoolsFormatter.typesMod.TokenTypes.WHITESPACE & String = js.native
     
     @js.native
-    sealed trait WORD extends TokenTypes
-    /* "word" */ val WORD: typings.sqltoolsFormatter.typesMod.TokenTypes.WORD with String = js.native
+    sealed trait WORD
+      extends StObject
+         with TokenTypes
+    /* "word" */ val WORD: typings.sqltoolsFormatter.typesMod.TokenTypes.WORD & String = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[sql | db2 | n1ql | plSlashsql] = js.native
+    var language: js.UndefOr[sql | db2 | n1ql | plSlashsql] = js.undefined
     
-    var linesBetweenQueries: js.UndefOr[Double | preserve] = js.native
+    var linesBetweenQueries: js.UndefOr[Double | preserve] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var reservedWordCase: js.UndefOr[upper | lower] = js.native
+    var reservedWordCase: js.UndefOr[upper | lower] = js.undefined
   }
   object Config {
     
@@ -144,14 +174,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var `type`: TokenTypes = js.native
+    var `type`: TokenTypes
     
-    var value: String = js.native
+    var value: String
   }
   object Token {
     
@@ -179,30 +208,29 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TokenizerConfig extends StObject {
     
-    var closeParens: js.Array[String] = js.native
+    var closeParens: js.Array[String]
     
-    var indexedPlaceholderTypes: js.UndefOr[js.Array[String]] = js.native
+    var indexedPlaceholderTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var lineCommentTypes: js.Array[String] = js.native
+    var lineCommentTypes: js.Array[String]
     
-    var namedPlaceholderTypes: js.Array[String] = js.native
+    var namedPlaceholderTypes: js.Array[String]
     
-    var openParens: js.Array[String] = js.native
+    var openParens: js.Array[String]
     
-    var reservedNewlineWords: js.Array[String] = js.native
+    var reservedNewlineWords: js.Array[String]
     
-    var reservedTopLevelWords: js.Array[String] = js.native
+    var reservedTopLevelWords: js.Array[String]
     
-    var reservedTopLevelWordsNoIndent: js.Array[String] = js.native
+    var reservedTopLevelWordsNoIndent: js.Array[String]
     
-    var reservedWords: js.Array[String] = js.native
+    var reservedWords: js.Array[String]
     
-    var specialWordChars: js.Array[String] = js.native
+    var specialWordChars: js.Array[String]
     
-    var stringTypes: js.Array[String] = js.native
+    var stringTypes: js.Array[String]
   }
   object TokenizerConfig {
     

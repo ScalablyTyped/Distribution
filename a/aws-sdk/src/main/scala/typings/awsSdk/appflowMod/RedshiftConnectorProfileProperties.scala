@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftConnectorProfileProperties extends StObject {
   
   /**
     *  A name for the associated Amazon S3 bucket. 
     */
-  var bucketName: BucketName = js.native
+  var bucketName: BucketName
   
   /**
     *  The object key for the destination bucket in which Amazon AppFlow places the files. 
     */
-  var bucketPrefix: js.UndefOr[BucketPrefix] = js.native
+  var bucketPrefix: js.UndefOr[BucketPrefix] = js.undefined
   
   /**
     *  The JDBC URL of the Amazon Redshift cluster. 
     */
-  var databaseUrl: DatabaseUrl = js.native
+  var databaseUrl: DatabaseUrl
   
   /**
     *  The Amazon Resource Name (ARN) of the IAM role. 
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
 }
 object RedshiftConnectorProfileProperties {
   

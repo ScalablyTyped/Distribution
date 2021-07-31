@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events concerning client manipulations on popup windows.
   */
-@js.native
-trait ASPxClientPopupWindowEventArgs extends ASPxClientEventArgs {
+trait ASPxClientPopupWindowEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the popup window object related to the event.
     */
-  var window: ASPxClientPopupWindow = js.native
+  var window: ASPxClientPopupWindow
 }
 object ASPxClientPopupWindowEventArgs {
   

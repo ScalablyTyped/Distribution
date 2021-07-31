@@ -3,21 +3,19 @@ package typings.smCrypto
 import typings.smCrypto.mod.KeyPairPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Der extends StObject {
     
-    var der: js.UndefOr[Boolean] = js.native
+    var der: js.UndefOr[Boolean] = js.undefined
     
-    var hash: js.UndefOr[Boolean] = js.native
+    var hash: js.UndefOr[Boolean] = js.undefined
     
-    var pointPool: js.UndefOr[js.Array[KeyPairPoint]] = js.native
+    var pointPool: js.UndefOr[js.Array[KeyPairPoint]] = js.undefined
     
-    var publicKey: js.UndefOr[String] = js.native
+    var publicKey: js.UndefOr[String] = js.undefined
   }
   object Der {
     
@@ -59,14 +57,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Hash extends StObject {
     
-    var der: js.UndefOr[Boolean] = js.native
+    var der: js.UndefOr[Boolean] = js.undefined
     
-    var hash: js.UndefOr[Boolean] = js.native
+    var hash: js.UndefOr[Boolean] = js.undefined
     
-    var publicKey: js.UndefOr[String] = js.native
+    var publicKey: js.UndefOr[String] = js.undefined
   }
   object Hash {
     

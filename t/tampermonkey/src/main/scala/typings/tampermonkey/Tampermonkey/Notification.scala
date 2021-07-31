@@ -2,34 +2,32 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
   /** Flag whether to highlight the tab that sends the notification */
-  var highlight: js.UndefOr[Boolean] = js.native
+  var highlight: js.UndefOr[Boolean] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * Called when the notification is closed (no matter if this was
     * triggered by a timeout or a click) or the tab was highlighted
     */
-  var onclick: js.UndefOr[NotificationOnClick] = js.native
+  var onclick: js.UndefOr[NotificationOnClick] = js.undefined
   
   /** Called in case the user clicks the notification */
-  var ondone: js.UndefOr[NotificationOnDone] = js.native
+  var ondone: js.UndefOr[NotificationOnDone] = js.undefined
   
   /** Text of the notification (optional if highlight is set) */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** Time after that the notification will be hidden. `0` = disabled */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** Notification title. If not specified the script name is used */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Notification {
   

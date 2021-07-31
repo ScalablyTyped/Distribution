@@ -4,20 +4,18 @@ import typings.octokitTypes.octokitTypesStrings.day
 import typings.octokitTypes.octokitTypesStrings.week
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetClonesEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Must be one of: `day`, `week`.
     */
-  var per: js.UndefOr[day | week] = js.native
+  var per: js.UndefOr[day | week] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposGetClonesEndpoint {
   

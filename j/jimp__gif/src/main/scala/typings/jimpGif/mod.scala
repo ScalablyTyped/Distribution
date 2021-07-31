@@ -5,23 +5,24 @@ import typings.jimpGif.anon.ImagegifDecoderFn
 import typings.jimpGif.anon.MIMEGIF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/gif", JSImport.Default)
+  @JSImport("@jimp/gif", JSImport.Namespace)
   @js.native
-  def default(): Gif = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Gif = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Gif]
+  
   trait Gif extends StObject {
     
-    var constants: MIMEGIF = js.native
+    var constants: MIMEGIF
     
-    var decoders: ImagegifDecoderFn = js.native
+    var decoders: ImagegifDecoderFn
     
-    var mime: Imagegif = js.native
+    var mime: Imagegif
   }
   object Gif {
     

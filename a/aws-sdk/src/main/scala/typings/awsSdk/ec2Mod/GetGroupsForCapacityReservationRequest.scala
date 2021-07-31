@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGroupsForCapacityReservationRequest extends StObject {
   
   /**
     * The ID of the Capacity Reservation.
     */
-  var CapacityReservationId: typings.awsSdk.ec2Mod.CapacityReservationId = js.native
+  var CapacityReservationId: typings.awsSdk.ec2Mod.CapacityReservationId
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the returned nextToken value. This value can be between 5 and 500. If maxResults is given a larger value than 500, you receive an error.
     */
-  var MaxResults: js.UndefOr[GetGroupsForCapacityReservationRequestMaxResults] = js.native
+  var MaxResults: js.UndefOr[GetGroupsForCapacityReservationRequestMaxResults] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object GetGroupsForCapacityReservationRequest {
   

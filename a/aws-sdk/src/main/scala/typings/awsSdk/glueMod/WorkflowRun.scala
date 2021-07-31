@@ -2,61 +2,59 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowRun extends StObject {
   
   /**
     * The date and time when the workflow run completed.
     */
-  var CompletedOn: js.UndefOr[TimestampValue] = js.native
+  var CompletedOn: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * This error message describes any error that may have occurred in starting the workflow run. Currently the only error message is "Concurrent runs exceeded for workflow: foo."
     */
-  var ErrorMessage: js.UndefOr[ErrorString] = js.native
+  var ErrorMessage: js.UndefOr[ErrorString] = js.undefined
   
   /**
     * The graph representing all the AWS Glue components that belong to the workflow as nodes and directed connections between them as edges.
     */
-  var Graph: js.UndefOr[WorkflowGraph] = js.native
+  var Graph: js.UndefOr[WorkflowGraph] = js.undefined
   
   /**
     * Name of the workflow that was executed.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
   
   /**
     * The ID of the previous workflow run.
     */
-  var PreviousRunId: js.UndefOr[IdString] = js.native
+  var PreviousRunId: js.UndefOr[IdString] = js.undefined
   
   /**
     * The date and time when the workflow run was started.
     */
-  var StartedOn: js.UndefOr[TimestampValue] = js.native
+  var StartedOn: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * The statistics of the run.
     */
-  var Statistics: js.UndefOr[WorkflowRunStatistics] = js.native
+  var Statistics: js.UndefOr[WorkflowRunStatistics] = js.undefined
   
   /**
     * The status of the workflow run.
     */
-  var Status: js.UndefOr[WorkflowRunStatus] = js.native
+  var Status: js.UndefOr[WorkflowRunStatus] = js.undefined
   
   /**
     * The ID of this workflow run.
     */
-  var WorkflowRunId: js.UndefOr[IdString] = js.native
+  var WorkflowRunId: js.UndefOr[IdString] = js.undefined
   
   /**
     * The workflow run properties which were set during the run.
     */
-  var WorkflowRunProperties: js.UndefOr[typings.awsSdk.glueMod.WorkflowRunProperties] = js.native
+  var WorkflowRunProperties: js.UndefOr[typings.awsSdk.glueMod.WorkflowRunProperties] = js.undefined
 }
 object WorkflowRun {
   

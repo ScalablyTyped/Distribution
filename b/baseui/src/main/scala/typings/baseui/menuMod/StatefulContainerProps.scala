@@ -14,39 +14,37 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatefulContainerProps extends StObject {
   
-  var addMenuToNesting: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.native
+  var addMenuToNesting: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.undefined
   
-  var children: js.UndefOr[js.Function1[/* args */ RenderProps, ReactNode]] = js.native
+  var children: js.UndefOr[js.Function1[/* args */ RenderProps, ReactNode]] = js.undefined
   
-  var getChildMenu: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.native
+  var getChildMenu: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.undefined
   
-  var getParentMenu: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.native
+  var getParentMenu: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.undefined
   
-  var getRequiredItemProps: js.UndefOr[GetRequiredItemProps] = js.native
+  var getRequiredItemProps: js.UndefOr[GetRequiredItemProps] = js.undefined
   
-  var initialState: js.UndefOr[StatefulContainerState] = js.native
+  var initialState: js.UndefOr[StatefulContainerState] = js.undefined
   
-  var items: ItemsT = js.native
+  var items: ItemsT
   
-  var keyboardControlNode: js.UndefOr[Ref[_]] = js.native
+  var keyboardControlNode: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var onActiveDescendantChange: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.native
+  var onActiveDescendantChange: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   
-  var onItemSelect: js.UndefOr[OnItemSelect] = js.native
+  var onItemSelect: js.UndefOr[OnItemSelect] = js.undefined
   
-  var removeMenuFromNesting: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.native
+  var removeMenuFromNesting: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.undefined
   
-  var rootRef: js.UndefOr[Ref[_]] = js.native
+  var rootRef: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var stateReducer: js.UndefOr[StateReducer] = js.native
+  var stateReducer: js.UndefOr[StateReducer] = js.undefined
   
-  var typeAhead: js.UndefOr[Boolean] = js.native
+  var typeAhead: js.UndefOr[Boolean] = js.undefined
 }
 object StatefulContainerProps {
   
@@ -102,10 +100,10 @@ object StatefulContainerProps {
     def setItemsVarargs(value: ItemT*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setKeyboardControlNode(value: Ref[_]): Self = StObject.set(x, "keyboardControlNode", value.asInstanceOf[js.Any])
+    def setKeyboardControlNode(value: Ref[js.Any]): Self = StObject.set(x, "keyboardControlNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardControlNodeFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "keyboardControlNode", js.Any.fromFunction1(value))
+    def setKeyboardControlNodeFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "keyboardControlNode", js.Any.fromFunction1(value))
     
     @scala.inline
     def setKeyboardControlNodeNull: Self = StObject.set(x, "keyboardControlNode", null)
@@ -132,10 +130,10 @@ object StatefulContainerProps {
     def setRemoveMenuFromNestingUndefined: Self = StObject.set(x, "removeMenuFromNesting", js.undefined)
     
     @scala.inline
-    def setRootRef(value: Ref[_]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
+    def setRootRef(value: Ref[js.Any]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
+    def setRootRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRootRefNull: Self = StObject.set(x, "rootRef", null)

@@ -2,26 +2,24 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStackInstanceInput extends StObject {
   
   /**
     * The ID of an AWS account that's associated with this stack instance.
     */
-  var StackInstanceAccount: Account = js.native
+  var StackInstanceAccount: Account
   
   /**
     * The name of a Region that's associated with this stack instance.
     */
-  var StackInstanceRegion: Region = js.native
+  var StackInstanceRegion: Region
   
   /**
     * The name or the unique stack ID of the stack set that you want to get stack instance information for.
     */
-  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName = js.native
+  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName
 }
 object DescribeStackInstanceInput {
   

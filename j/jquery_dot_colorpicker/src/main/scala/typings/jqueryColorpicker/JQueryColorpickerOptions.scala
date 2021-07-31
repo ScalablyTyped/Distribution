@@ -3,109 +3,107 @@ package typings.jqueryColorpicker
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryColorpickerOptions extends StObject {
   
-  var alpha: js.UndefOr[Boolean] = js.native
+  var alpha: js.UndefOr[Boolean] = js.undefined
   
-  var altAlpha: js.UndefOr[Boolean] = js.native
+  var altAlpha: js.UndefOr[Boolean] = js.undefined
   
-  var altField: js.UndefOr[String] = js.native
+  var altField: js.UndefOr[String] = js.undefined
   
-  var altOnChange: js.UndefOr[Boolean] = js.native
+  var altOnChange: js.UndefOr[Boolean] = js.undefined
   
-  var altProperties: js.UndefOr[String] = js.native
+  var altProperties: js.UndefOr[String] = js.undefined
   
-  var autoOpen: js.UndefOr[Boolean] = js.native
+  var autoOpen: js.UndefOr[Boolean] = js.undefined
   
-  var buttonClass: js.UndefOr[String] = js.native
+  var buttonClass: js.UndefOr[String] = js.undefined
   
-  var buttonColorize: js.UndefOr[Boolean] = js.native
+  var buttonColorize: js.UndefOr[Boolean] = js.undefined
   
-  var buttonImage: js.UndefOr[String] = js.native
+  var buttonImage: js.UndefOr[String] = js.undefined
   
-  var buttonImageOnly: js.UndefOr[Boolean] = js.native
+  var buttonImageOnly: js.UndefOr[Boolean] = js.undefined
   
-  var buttonText: js.UndefOr[String] = js.native
+  var buttonText: js.UndefOr[String] = js.undefined
   
   // Events
   // TODO: Figure out actual types.
-  var cancel: js.UndefOr[js.Function] = js.native
+  var cancel: js.UndefOr[js.Function] = js.undefined
   
-  var close: js.UndefOr[js.Function] = js.native
+  var close: js.UndefOr[js.Function] = js.undefined
   
-  var closeOnEscape: js.UndefOr[Boolean] = js.native
+  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnOutside: js.UndefOr[Boolean] = js.native
+  var closeOnOutside: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var colorFormat: js.UndefOr[String] = js.native
+  var colorFormat: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var hsv: js.UndefOr[Boolean] = js.native
+  var hsv: js.UndefOr[Boolean] = js.undefined
   
-  var init: js.UndefOr[js.Function] = js.native
+  var init: js.UndefOr[js.Function] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var inlineFrame: js.UndefOr[Boolean] = js.native
+  var inlineFrame: js.UndefOr[Boolean] = js.undefined
   
-  var layout: js.UndefOr[StringDictionary[js.Array[Double]]] = js.native
+  var layout: js.UndefOr[StringDictionary[js.Array[Double]]] = js.undefined
   
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var ok: js.UndefOr[js.Function] = js.native
+  var ok: js.UndefOr[js.Function] = js.undefined
   
-  var okOnEnter: js.UndefOr[Boolean] = js.native
+  var okOnEnter: js.UndefOr[Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function] = js.native
+  var open: js.UndefOr[js.Function] = js.undefined
   
-  var part: js.UndefOr[js.Any] = js.native
+  var part: js.UndefOr[js.Any] = js.undefined
   
-  var parts: js.UndefOr[js.Any] = js.native
+  var parts: js.UndefOr[js.Any] = js.undefined
   
-  var regional: js.UndefOr[String] = js.native
+  var regional: js.UndefOr[String] = js.undefined
   
-  var revert: js.UndefOr[Boolean] = js.native
+  var revert: js.UndefOr[Boolean] = js.undefined
   
-  var rgb: js.UndefOr[Boolean] = js.native
+  var rgb: js.UndefOr[Boolean] = js.undefined
   
-  var select: js.UndefOr[js.Function] = js.native
+  var select: js.UndefOr[js.Function] = js.undefined
   
-  var showAnim: js.UndefOr[String] = js.native
+  var showAnim: js.UndefOr[String] = js.undefined
   
-  var showCancelButton: js.UndefOr[Boolean] = js.native
+  var showCancelButton: js.UndefOr[Boolean] = js.undefined
   
-  var showCloseButton: js.UndefOr[Boolean] = js.native
+  var showCloseButton: js.UndefOr[Boolean] = js.undefined
   
-  var showNoneButton: js.UndefOr[Boolean] = js.native
+  var showNoneButton: js.UndefOr[Boolean] = js.undefined
   
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
-  var showOptions: js.UndefOr[js.Any] = js.native
+  var showOptions: js.UndefOr[js.Any] = js.undefined
   
-  var swatches: js.UndefOr[js.Any] = js.native
+  var swatches: js.UndefOr[js.Any] = js.undefined
   
-  var swatchesWidth: js.UndefOr[Double] = js.native
+  var swatchesWidth: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object JQueryColorpickerOptions {
   

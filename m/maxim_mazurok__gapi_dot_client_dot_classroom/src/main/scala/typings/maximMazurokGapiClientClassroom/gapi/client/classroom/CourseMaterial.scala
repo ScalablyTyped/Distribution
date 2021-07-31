@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CourseMaterial extends StObject {
   
   /** Google Drive file attachment. */
-  var driveFile: js.UndefOr[DriveFile] = js.native
+  var driveFile: js.UndefOr[DriveFile] = js.undefined
   
   /** Google Forms attachment. */
-  var form: js.UndefOr[Form] = js.native
+  var form: js.UndefOr[Form] = js.undefined
   
   /** Link atatchment. */
-  var link: js.UndefOr[Link] = js.native
+  var link: js.UndefOr[Link] = js.undefined
   
   /** Youtube video attachment. */
-  var youTubeVideo: js.UndefOr[YouTubeVideo] = js.native
+  var youTubeVideo: js.UndefOr[YouTubeVideo] = js.undefined
 }
 object CourseMaterial {
   

@@ -17,7 +17,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,7 +24,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("leveldown", JSImport.Default)
   @js.native
-  class default protected () extends LevelDown {
+  class default protected ()
+    extends StObject
+       with LevelDown {
     def this(location: String) = this()
   }
   @JSImport("leveldown", JSImport.Default)
@@ -37,11 +38,13 @@ object mod extends Shortcut {
   type ErrorSizeCallback = js.Function2[/* err */ js.UndefOr[Error], /* size */ Double, Unit]
   
   @js.native
-  trait LevelDown extends AbstractLevelDOWN[Bytes, Bytes] {
+  trait LevelDown
+    extends StObject
+       with AbstractLevelDOWN[Bytes, Bytes] {
     
     def approximateSize(start: Bytes, end: Bytes, cb: ErrorSizeCallback): Unit = js.native
     
-    def batch(array: js.Array[AbstractBatch[_, _]], options: LevelDownBatchOptions, cb: ErrorCallback): AbstractChainedBatch[Bytes, Bytes] = js.native
+    def batch(array: js.Array[AbstractBatch[js.Any, js.Any]], options: LevelDownBatchOptions, cb: ErrorCallback): AbstractChainedBatch[Bytes, Bytes] = js.native
     
     def clear(cb: ErrorCallback): Unit = js.native
     def clear(options: LevelDownClearOptions, cb: ErrorCallback): Unit = js.native
@@ -61,10 +64,11 @@ object mod extends Shortcut {
     def put(key: Bytes, value: Bytes, options: LevelDownPutOptions, cb: ErrorCallback): Unit = js.native
   }
   
-  @js.native
-  trait LevelDownBatchOptions extends AbstractOptions {
+  trait LevelDownBatchOptions
+    extends StObject
+       with AbstractOptions {
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object LevelDownBatchOptions {
     
@@ -85,20 +89,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait LevelDownClearOptions extends StObject {
     
-    var gt: js.UndefOr[Bytes] = js.native
+    var gt: js.UndefOr[Bytes] = js.undefined
     
-    var gte: js.UndefOr[Bytes] = js.native
+    var gte: js.UndefOr[Bytes] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var lt: js.UndefOr[Bytes] = js.native
+    var lt: js.UndefOr[Bytes] = js.undefined
     
-    var lte: js.UndefOr[Bytes] = js.native
+    var lte: js.UndefOr[Bytes] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
   }
   object LevelDownClearOptions {
     
@@ -150,7 +153,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait LevelDownConstructor extends Instantiable1[/* location */ String, LevelDown] {
+  trait LevelDownConstructor
+    extends StObject
+       with Instantiable1[/* location */ String, LevelDown] {
     
     def apply(location: String): LevelDown = js.native
     
@@ -159,10 +164,11 @@ object mod extends Shortcut {
     def repair(location: String, cb: ErrorCallback): Unit = js.native
   }
   
-  @js.native
-  trait LevelDownDelOptions extends AbstractOptions {
+  trait LevelDownDelOptions
+    extends StObject
+       with AbstractOptions {
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object LevelDownDelOptions {
     
@@ -183,10 +189,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait LevelDownGetOptions extends AbstractGetOptions {
+  trait LevelDownGetOptions
+    extends StObject
+       with AbstractGetOptions {
     
-    var fillCache: js.UndefOr[Boolean] = js.native
+    var fillCache: js.UndefOr[Boolean] = js.undefined
   }
   object LevelDownGetOptions {
     
@@ -207,18 +214,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait LevelDownIterator extends AbstractIterator[Bytes, Bytes] {
+  trait LevelDownIterator
+    extends StObject
+       with AbstractIterator[Bytes, Bytes] {
     
-    var binding: js.Any = js.native
+    var binding: js.Any
     
-    var cache: js.Any = js.native
+    var cache: js.Any
     
-    var fastFuture: js.Any = js.native
+    var fastFuture: js.Any
     
-    var finished: js.Any = js.native
+    var finished: js.Any
     
-    def seek(key: Bytes): Unit = js.native
+    def seek(key: Bytes): Unit
   }
   object LevelDownIterator {
     
@@ -257,10 +265,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait LevelDownIteratorOptions extends AbstractIteratorOptions[Bytes] {
+  trait LevelDownIteratorOptions
+    extends StObject
+       with AbstractIteratorOptions[Bytes] {
     
-    var fillCache: js.UndefOr[Boolean] = js.native
+    var fillCache: js.UndefOr[Boolean] = js.undefined
   }
   object LevelDownIteratorOptions {
     
@@ -281,22 +290,23 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait LevelDownOpenOptions extends AbstractOpenOptions {
+  trait LevelDownOpenOptions
+    extends StObject
+       with AbstractOpenOptions {
     
-    var blockRestartInterval: js.UndefOr[Double] = js.native
+    var blockRestartInterval: js.UndefOr[Double] = js.undefined
     
-    var blockSize: js.UndefOr[Double] = js.native
+    var blockSize: js.UndefOr[Double] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
-    var maxOpenFiles: js.UndefOr[Double] = js.native
+    var maxOpenFiles: js.UndefOr[Double] = js.undefined
     
-    var writeBufferSize: js.UndefOr[Double] = js.native
+    var writeBufferSize: js.UndefOr[Double] = js.undefined
   }
   object LevelDownOpenOptions {
     
@@ -353,10 +363,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait LevelDownPutOptions extends AbstractOptions {
+  trait LevelDownPutOptions
+    extends StObject
+       with AbstractOptions {
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object LevelDownPutOptions {
     

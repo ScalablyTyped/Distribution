@@ -2,27 +2,25 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APNSAlert extends StObject {
   
-  var `action-loc-key`: String = js.native
+  var `action-loc-key`: String
   
-  var body: String = js.native
+  var body: String
   
-  var `launch-image`: String = js.native
+  var `launch-image`: String
   
-  var `loc-args`: js.Array[String] = js.native
+  var `loc-args`: js.Array[String]
   
-  var `loc-key`: String = js.native
+  var `loc-key`: String
   
-  var title: String = js.native
+  var title: String
   
-  var `title-loc-args`: js.Array[String] = js.native
+  var `title-loc-args`: js.Array[String]
   
-  var `title-loc-key`: String = js.native
+  var `title-loc-key`: String
 }
 object APNSAlert {
   

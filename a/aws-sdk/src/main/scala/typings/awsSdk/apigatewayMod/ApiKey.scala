@@ -2,61 +2,59 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiKey extends StObject {
   
   /**
     * The timestamp when the API Key was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * An AWS Marketplace customer identifier , when integrating with the AWS SaaS Marketplace.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the API Key.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the API Key can be used by callers.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The identifier of the API Key.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the API Key was last updated.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the API Key.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Stage resources that are associated with the ApiKey resource.
     */
-  var stageKeys: js.UndefOr[ListOfString] = js.native
+  var stageKeys: js.UndefOr[ListOfString] = js.undefined
   
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * The value of the API Key.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ApiKey {
   

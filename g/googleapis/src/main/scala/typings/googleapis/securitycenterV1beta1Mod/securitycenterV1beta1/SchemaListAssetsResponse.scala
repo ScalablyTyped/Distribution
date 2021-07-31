@@ -2,35 +2,33 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing assets.
   */
-@js.native
 trait SchemaListAssetsResponse extends StObject {
   
   /**
     * Assets matching the list request.
     */
-  var listAssetsResults: js.UndefOr[js.Array[SchemaListAssetsResult]] = js.native
+  var listAssetsResults: js.UndefOr[js.Array[SchemaListAssetsResult]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Time used for executing the list request.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of assets matching the query.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaListAssetsResponse {
   

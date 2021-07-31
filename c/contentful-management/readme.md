@@ -10,9 +10,9 @@ Client for Contentful's Content Management API
 | ------------------ | :-------------: |
 | Full name          | contentful-management |
 | Keywords           | - |
-| # releases         | 106 |
-| # dependents       | 61 |
-| # downloads        | 7892081 |
+| # releases         | 122 |
+| # dependents       | 70 |
+| # downloads        | 11714570 |
 | # stars            | 2 |
 
 ## Links

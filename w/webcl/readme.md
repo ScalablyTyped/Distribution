@@ -12,7 +12,7 @@ OpenCL bindings for Node.js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 79 |
+| # downloads        | 88 |
 | # stars            | 0 |
 
 ## Links

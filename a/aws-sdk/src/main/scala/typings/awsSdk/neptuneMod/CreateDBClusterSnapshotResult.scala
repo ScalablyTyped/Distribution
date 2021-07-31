@@ -2,13 +2,11 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBClusterSnapshotResult extends StObject {
   
-  var DBClusterSnapshot: js.UndefOr[typings.awsSdk.neptuneMod.DBClusterSnapshot] = js.native
+  var DBClusterSnapshot: js.UndefOr[typings.awsSdk.neptuneMod.DBClusterSnapshot] = js.undefined
 }
 object CreateDBClusterSnapshotResult {
   

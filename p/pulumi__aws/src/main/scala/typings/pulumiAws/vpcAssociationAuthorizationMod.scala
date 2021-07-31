@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcAssociationAuthorizationMod {
@@ -43,6 +42,10 @@ object vpcAssociationAuthorizationMod {
   /* static members */
   object VpcAssociationAuthorization {
     
+    @JSImport("@pulumi/aws/route53/vpcAssociationAuthorization", "VpcAssociationAuthorization")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcAssociationAuthorization resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object vpcAssociationAuthorizationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/vpcAssociationAuthorization", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcAssociationAuthorization = js.native
-    @JSImport("@pulumi/aws/route53/vpcAssociationAuthorization", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcAssociationAuthorization = js.native
-    @JSImport("@pulumi/aws/route53/vpcAssociationAuthorization", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState): VpcAssociationAuthorization = js.native
-    @JSImport("@pulumi/aws/route53/vpcAssociationAuthorization", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState, opts: CustomResourceOptions): VpcAssociationAuthorization = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState, opts: CustomResourceOptions): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
     
     /**
       * Returns true if the given object is an instance of VpcAssociationAuthorization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/vpcAssociationAuthorization", "VpcAssociationAuthorization.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean]
   }
   
-  @js.native
   trait VpcAssociationAuthorizationArgs extends StObject {
     
     /**
       * The VPC to authorize for association with the private hosted zone.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
     
     /**
       * The VPC's region. Defaults to the region of the AWS provider.
       */
-    val vpcRegion: js.UndefOr[Input[String]] = js.native
+    val vpcRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the private hosted zone that you want to authorize associating a VPC with.
       */
-    val zoneId: Input[String] = js.native
+    val zoneId: Input[String]
   }
   object VpcAssociationAuthorizationArgs {
     
@@ -117,23 +114,22 @@ object vpcAssociationAuthorizationMod {
     }
   }
   
-  @js.native
   trait VpcAssociationAuthorizationState extends StObject {
     
     /**
       * The VPC to authorize for association with the private hosted zone.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The VPC's region. Defaults to the region of the AWS provider.
       */
-    val vpcRegion: js.UndefOr[Input[String]] = js.native
+    val vpcRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the private hosted zone that you want to authorize associating a VPC with.
       */
-    val zoneId: js.UndefOr[Input[String]] = js.native
+    val zoneId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcAssociationAuthorizationState {
     

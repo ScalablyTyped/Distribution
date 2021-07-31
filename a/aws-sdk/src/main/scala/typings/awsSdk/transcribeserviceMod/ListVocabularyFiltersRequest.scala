@@ -2,26 +2,24 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVocabularyFiltersRequest extends StObject {
   
   /**
     * The maximum number of filters to return in the response. If there are fewer results in the list, this response contains only the actual results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
     * Filters the response so that it only contains vocabulary filters whose name contains the specified string.
     */
-  var NameContains: js.UndefOr[VocabularyFilterName] = js.native
+  var NameContains: js.UndefOr[VocabularyFilterName] = js.undefined
   
   /**
     * If the result of the previous request to ListVocabularyFilters was truncated, include the NextToken to fetch the next set of collections.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
 }
 object ListVocabularyFiltersRequest {
   

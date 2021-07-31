@@ -3,17 +3,15 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.anon.Errors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateErrorEntity[Values] extends StObject {
   
-  var errorFields: js.Array[Errors] = js.native
+  var errorFields: js.Array[Errors]
   
-  var outOfDate: Boolean = js.native
+  var outOfDate: Boolean
   
-  var values: Values = js.native
+  var values: Values
 }
 object ValidateErrorEntity {
   
@@ -24,7 +22,7 @@ object ValidateErrorEntity {
   }
   
   @scala.inline
-  implicit class ValidateErrorEntityMutableBuilder[Self <: ValidateErrorEntity[_], Values] (val x: Self with ValidateErrorEntity[Values]) extends AnyVal {
+  implicit class ValidateErrorEntityMutableBuilder[Self <: ValidateErrorEntity[?], Values] (val x: Self & ValidateErrorEntity[Values]) extends AnyVal {
     
     @scala.inline
     def setErrorFields(value: js.Array[Errors]): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])

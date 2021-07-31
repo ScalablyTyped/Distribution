@@ -2,6 +2,7 @@ package typings.devextreme.mod.default
 
 import typings.devextreme.anon.Buttons
 import typings.devextreme.anon.Compile
+import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.ui.CollectionWidgetOptions
 import typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions
 import typings.devextreme.mod.DevExpress.ui.DraggableBaseOptions
@@ -91,13 +92,13 @@ import typings.devextreme.mod.global.Promise
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("devextreme", "default.ui")
 @js.native
 class ui ()
-  extends typings.devextreme.mod.DevExpress.ui
+  extends StObject
+     with typings.devextreme.mod.DevExpress.ui
 /* static members */
 object ui {
   
@@ -108,7 +109,8 @@ object ui {
   @JSImport("devextreme", "default.ui.CollectionWidget")
   @js.native
   class CollectionWidget protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(
@@ -124,14 +126,22 @@ object ui {
   @JSImport("devextreme", "default.ui.DataExpressionMixin")
   @js.native
   class DataExpressionMixin ()
-    extends typings.devextreme.mod.DevExpress.ui.DataExpressionMixin {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.DataExpressionMixin {
     def this(options: DataExpressionMixinOptions[typings.devextreme.mod.DevExpress.ui.DataExpressionMixin]) = this()
+    
+    /**
+      * [descr:DataHelperMixin.getDataSource()]
+      */
+    /* CompleteClass */
+    override def getDataSource(): DataSource = js.native
   }
   
   @JSImport("devextreme", "default.ui.DraggableBase")
   @js.native
   class DraggableBase protected ()
-    extends typings.devextreme.mod.DevExpress.DOMComponent {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.DOMComponent {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: DraggableBaseOptions[typings.devextreme.mod.DevExpress.ui.DraggableBase]) = this()
@@ -144,7 +154,8 @@ object ui {
   @JSImport("devextreme", "default.ui.Editor")
   @js.native
   class Editor protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: EditorOptions[typings.devextreme.mod.DevExpress.ui.Editor]) = this()
@@ -154,7 +165,8 @@ object ui {
   @JSImport("devextreme", "default.ui.GridBase")
   @js.native
   class GridBase protected ()
-    extends typings.devextreme.mod.DevExpress.ui.GridBase {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.GridBase {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: GridBaseOptions[typings.devextreme.mod.DevExpress.ui.GridBase]) = this()
@@ -164,7 +176,8 @@ object ui {
   @JSImport("devextreme", "default.ui.HierarchicalCollectionWidget")
   @js.native
   class HierarchicalCollectionWidget protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(
@@ -180,14 +193,16 @@ object ui {
   @JSImport("devextreme", "default.ui.SearchBoxMixin")
   @js.native
   class SearchBoxMixin ()
-    extends typings.devextreme.mod.DevExpress.ui.SearchBoxMixin {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.SearchBoxMixin {
     def this(options: SearchBoxMixinOptions[typings.devextreme.mod.DevExpress.ui.SearchBoxMixin]) = this()
   }
   
   @JSImport("devextreme", "default.ui.Widget")
   @js.native
   class Widget protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Widget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Widget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: WidgetOptions[typings.devextreme.mod.DevExpress.ui.Widget]) = this()
@@ -196,23 +211,25 @@ object ui {
   
   object dialog {
     
-    @JSImport("devextreme", "default.ui.dialog.alert")
+    @JSImport("devextreme", "default.ui.dialog")
     @js.native
-    def alert(messageHtml: String, title: String): Promise[Unit] with JQueryPromise[Unit] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("devextreme", "default.ui.dialog.confirm")
-    @js.native
-    def confirm(messageHtml: String, title: String): Promise[Boolean] with JQueryPromise[Boolean] = js.native
+    @scala.inline
+    def alert(messageHtml: String, title: String): Promise[Unit] & JQueryPromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit] & JQueryPromise[Unit]]
     
-    @JSImport("devextreme", "default.ui.dialog.custom")
-    @js.native
-    def custom(options: Buttons): js.Any = js.native
+    @scala.inline
+    def confirm(messageHtml: String, title: String): Promise[Boolean] & JQueryPromise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Promise[Boolean] & JQueryPromise[Boolean]]
+    
+    @scala.inline
+    def custom(options: Buttons): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("devextreme", "default.ui.dxAccordion")
   @js.native
   class dxAccordion protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxAccordion {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxAccordion {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxAccordionOptions) = this()
@@ -222,7 +239,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxActionSheet")
   @js.native
   class dxActionSheet protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxActionSheet {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxActionSheet {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxActionSheetOptions) = this()
@@ -232,7 +250,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxAutocomplete")
   @js.native
   class dxAutocomplete protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownList {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownList {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxAutocompleteOptions) = this()
@@ -242,7 +261,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxBox")
   @js.native
   class dxBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxBoxOptions) = this()
@@ -252,7 +272,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxButton")
   @js.native
   class dxButton protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Widget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Widget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxButtonOptions) = this()
@@ -262,7 +283,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxButtonGroup")
   @js.native
   class dxButtonGroup protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Widget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Widget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxButtonGroupOptions) = this()
@@ -272,7 +294,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxCalendar")
   @js.native
   class dxCalendar protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxCalendarOptions) = this()
@@ -282,7 +305,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxCheckBox")
   @js.native
   class dxCheckBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxCheckBoxOptions) = this()
@@ -292,7 +316,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxColorBox")
   @js.native
   class dxColorBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownEditor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownEditor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxColorBoxOptions) = this()
@@ -302,7 +327,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxContextMenu")
   @js.native
   class dxContextMenu protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxContextMenu {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxContextMenu {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxContextMenuOptions) = this()
@@ -312,7 +338,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDataGrid")
   @js.native
   class dxDataGrid protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDataGrid {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDataGrid {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDataGridOptions) = this()
@@ -322,7 +349,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDateBox")
   @js.native
   class dxDateBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDateBox {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDateBox {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDateBoxOptions) = this()
@@ -332,7 +360,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDeferRendering")
   @js.native
   class dxDeferRendering protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Widget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Widget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDeferRenderingOptions) = this()
@@ -342,7 +371,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDiagram")
   @js.native
   class dxDiagram protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDiagram {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDiagram {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDiagramOptions) = this()
@@ -352,7 +382,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDraggable")
   @js.native
   class dxDraggable protected ()
-    extends typings.devextreme.mod.DevExpress.DOMComponent {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.DOMComponent {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDraggableOptions) = this()
@@ -362,7 +393,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDrawer")
   @js.native
   class dxDrawer protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDrawer {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDrawer {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDrawerOptions) = this()
@@ -372,7 +404,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDropDownBox")
   @js.native
   class dxDropDownBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownBox {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownBox {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDropDownBoxOptions) = this()
@@ -382,7 +415,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDropDownButton")
   @js.native
   class dxDropDownButton protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownButton {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownButton {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxDropDownButtonOptions) = this()
@@ -392,7 +426,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDropDownEditor")
   @js.native
   class dxDropDownEditor protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownEditor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownEditor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(
@@ -408,7 +443,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxDropDownList")
   @js.native
   class dxDropDownList protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownList {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownList {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(
@@ -424,7 +460,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxFileManager")
   @js.native
   class dxFileManager protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxFileManager {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxFileManager {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxFileManagerOptions) = this()
@@ -434,7 +471,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxFileUploader")
   @js.native
   class dxFileUploader protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxFileUploader {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxFileUploader {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxFileUploaderOptions) = this()
@@ -444,7 +482,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxFilterBuilder")
   @js.native
   class dxFilterBuilder protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxFilterBuilder {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxFilterBuilder {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxFilterBuilderOptions) = this()
@@ -454,7 +493,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxForm")
   @js.native
   class dxForm protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxForm {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxForm {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxFormOptions) = this()
@@ -464,7 +504,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxGallery")
   @js.native
   class dxGallery protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxGallery {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxGallery {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxGalleryOptions) = this()
@@ -474,7 +515,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxGantt")
   @js.native
   class dxGantt protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxGantt {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxGantt {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxGanttOptions) = this()
@@ -484,7 +526,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxHtmlEditor")
   @js.native
   class dxHtmlEditor protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxHtmlEditor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxHtmlEditor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxHtmlEditorOptions) = this()
@@ -500,7 +543,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxList")
   @js.native
   class dxList protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxList {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxList {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxListOptions) = this()
@@ -510,7 +554,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxLoadIndicator")
   @js.native
   class dxLoadIndicator protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Widget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Widget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxLoadIndicatorOptions) = this()
@@ -520,7 +565,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxLoadPanel")
   @js.native
   class dxLoadPanel protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxOverlay {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxOverlay {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxLoadPanelOptions) = this()
@@ -530,7 +576,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxLookup")
   @js.native
   class dxLookup protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownList {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownList {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxLookupOptions) = this()
@@ -540,7 +587,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxMap")
   @js.native
   class dxMap protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxMap {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxMap {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxMapOptions) = this()
@@ -550,7 +598,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxMenu")
   @js.native
   class dxMenu protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxMenuBase {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxMenuBase {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxMenuOptions) = this()
@@ -560,7 +609,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxMenuBase")
   @js.native
   class dxMenuBase protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxMenuBase {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxMenuBase {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxMenuBaseOptions[typings.devextreme.mod.DevExpress.ui.dxMenuBase]) = this()
@@ -570,7 +620,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxMultiView")
   @js.native
   class dxMultiView protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxMultiViewOptions[typings.devextreme.mod.DevExpress.ui.dxMultiView]) = this()
@@ -580,7 +631,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxNavBar")
   @js.native
   class dxNavBar protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxNavBarOptions) = this()
@@ -590,7 +642,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxNumberBox")
   @js.native
   class dxNumberBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxTextEditor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxTextEditor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxNumberBoxOptions) = this()
@@ -600,7 +653,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxOverlay")
   @js.native
   class dxOverlay protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxOverlay {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxOverlay {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxOverlayOptions[typings.devextreme.mod.DevExpress.ui.dxOverlay]) = this()
@@ -608,15 +662,19 @@ object ui {
   }
   object dxOverlay {
     
-    @JSImport("devextreme", "default.ui.dxOverlay.baseZIndex")
+    @JSImport("devextreme", "default.ui.dxOverlay")
     @js.native
-    def baseZIndex(zIndex: Double): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def baseZIndex(zIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("baseZIndex")(zIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("devextreme", "default.ui.dxPivotGrid")
   @js.native
   class dxPivotGrid protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxPivotGrid {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxPivotGrid {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxPivotGridOptions) = this()
@@ -626,7 +684,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxPivotGridFieldChooser")
   @js.native
   class dxPivotGridFieldChooser protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxPivotGridFieldChooser {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxPivotGridFieldChooser {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxPivotGridFieldChooserOptions) = this()
@@ -636,12 +695,14 @@ object ui {
   @JSImport("devextreme", "default.ui.dxPivotGridSummaryCell")
   @js.native
   class dxPivotGridSummaryCell ()
-    extends typings.devextreme.mod.DevExpress.ui.dxPivotGridSummaryCell
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxPivotGridSummaryCell
   
   @JSImport("devextreme", "default.ui.dxPopover")
   @js.native
   class dxPopover protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxPopover {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxPopover {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxPopoverOptions[typings.devextreme.mod.DevExpress.ui.dxPopover]) = this()
@@ -651,7 +712,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxPopup")
   @js.native
   class dxPopup protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxOverlay {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxOverlay {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxPopupOptions[typings.devextreme.mod.DevExpress.ui.dxPopup]) = this()
@@ -661,7 +723,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxProgressBar")
   @js.native
   class dxProgressBar protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxProgressBarOptions) = this()
@@ -671,7 +734,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxRadioGroup")
   @js.native
   class dxRadioGroup protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxRadioGroup {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxRadioGroup {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxRadioGroupOptions) = this()
@@ -681,7 +745,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxRangeSlider")
   @js.native
   class dxRangeSlider protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxRangeSliderOptions) = this()
@@ -691,7 +756,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxRecurrenceEditor")
   @js.native
   class dxRecurrenceEditor protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxRecurrenceEditorOptions) = this()
@@ -701,7 +767,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxResizable")
   @js.native
   class dxResizable protected ()
-    extends typings.devextreme.mod.DevExpress.DOMComponent {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.DOMComponent {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxResizableOptions) = this()
@@ -711,7 +778,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxResponsiveBox")
   @js.native
   class dxResponsiveBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxResponsiveBoxOptions) = this()
@@ -721,7 +789,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxScheduler")
   @js.native
   class dxScheduler protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxScheduler {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxScheduler {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSchedulerOptions) = this()
@@ -731,7 +800,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxScrollView")
   @js.native
   class dxScrollView protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxScrollView {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxScrollView {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxScrollViewOptions) = this()
@@ -741,7 +811,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxScrollable")
   @js.native
   class dxScrollable protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxScrollable {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxScrollable {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxScrollableOptions[typings.devextreme.mod.DevExpress.ui.dxScrollable]) = this()
@@ -751,7 +822,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSelectBox")
   @js.native
   class dxSelectBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownList {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownList {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSelectBoxOptions[typings.devextreme.mod.DevExpress.ui.dxSelectBox]) = this()
@@ -761,7 +833,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSlideOut")
   @js.native
   class dxSlideOut protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxSlideOut {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxSlideOut {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSlideOutOptions) = this()
@@ -771,7 +844,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSlideOutView")
   @js.native
   class dxSlideOutView protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxSlideOutView {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxSlideOutView {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSlideOutViewOptions) = this()
@@ -781,7 +855,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSlider")
   @js.native
   class dxSlider protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSliderOptions) = this()
@@ -791,7 +866,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSliderBase")
   @js.native
   class dxSliderBase protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSliderBaseOptions[typings.devextreme.mod.DevExpress.ui.dxSliderBase]) = this()
@@ -801,7 +877,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSortable")
   @js.native
   class dxSortable protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxSortable {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxSortable {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSortableOptions) = this()
@@ -811,7 +888,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSpeedDialAction")
   @js.native
   class dxSpeedDialAction protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Widget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Widget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSpeedDialActionOptions) = this()
@@ -821,7 +899,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxSwitch")
   @js.native
   class dxSwitch protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxSwitchOptions) = this()
@@ -831,7 +910,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTabPanel")
   @js.native
   class dxTabPanel protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTabPanelOptions) = this()
@@ -841,7 +921,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTabs")
   @js.native
   class dxTabs protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTabsOptions[typings.devextreme.mod.DevExpress.ui.dxTabs]) = this()
@@ -851,7 +932,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTagBox")
   @js.native
   class dxTagBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxDropDownList {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxDropDownList {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTagBoxOptions) = this()
@@ -861,7 +943,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTextArea")
   @js.native
   class dxTextArea protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxTextEditor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxTextEditor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTextAreaOptions) = this()
@@ -871,7 +954,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTextBox")
   @js.native
   class dxTextBox protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxTextEditor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxTextEditor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTextBoxOptions[typings.devextreme.mod.DevExpress.ui.dxTextBox]) = this()
@@ -881,7 +965,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTextEditor")
   @js.native
   class dxTextEditor protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxTextEditor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxTextEditor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTextEditorOptions[typings.devextreme.mod.DevExpress.ui.dxTextEditor]) = this()
@@ -891,7 +976,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTileView")
   @js.native
   class dxTileView protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxTileView {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxTileView {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTileViewOptions) = this()
@@ -901,7 +987,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxToast")
   @js.native
   class dxToast protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxOverlay {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxOverlay {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxToastOptions) = this()
@@ -911,7 +998,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxToolbar")
   @js.native
   class dxToolbar protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxToolbarOptions) = this()
@@ -921,7 +1009,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTooltip")
   @js.native
   class dxTooltip protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxPopover {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxPopover {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTooltipOptions) = this()
@@ -931,7 +1020,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTrackBar")
   @js.native
   class dxTrackBar protected ()
-    extends typings.devextreme.mod.DevExpress.ui.Editor {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.Editor {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTrackBarOptions[typings.devextreme.mod.DevExpress.ui.dxTrackBar]) = this()
@@ -941,7 +1031,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTreeList")
   @js.native
   class dxTreeList protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxTreeList {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxTreeList {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTreeListOptions) = this()
@@ -951,7 +1042,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxTreeView")
   @js.native
   class dxTreeView protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxTreeView {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxTreeView {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxTreeViewOptions) = this()
@@ -961,7 +1053,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxValidationGroup")
   @js.native
   class dxValidationGroup protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxValidationGroup {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxValidationGroup {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxValidationGroupOptions) = this()
@@ -971,7 +1064,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxValidationSummary")
   @js.native
   class dxValidationSummary protected ()
-    extends typings.devextreme.mod.DevExpress.ui.CollectionWidget {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.CollectionWidget {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxValidationSummaryOptions) = this()
@@ -981,7 +1075,8 @@ object ui {
   @JSImport("devextreme", "default.ui.dxValidator")
   @js.native
   class dxValidator protected ()
-    extends typings.devextreme.mod.DevExpress.ui.dxValidator {
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.dxValidator {
     def this(element: JQuery) = this()
     def this(element: Element) = this()
     def this(element: JQuery, options: dxValidatorOptions) = this()
@@ -991,86 +1086,76 @@ object ui {
   /**
     * [descr:ui.notify(message,type,displayTime)]
     */
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(message: String): Unit = js.native
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(message: String, `type`: js.UndefOr[scala.Nothing], displayTime: Double): Unit = js.native
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(message: String, `type`: String): Unit = js.native
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(message: String, `type`: String, displayTime: Double): Unit = js.native
+  @scala.inline
+  def notify(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def notify(message: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notify(message: String, `type`: String, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notify(message: String, `type`: Unit, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * [descr:ui.notify(options,type,displayTime)]
     */
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(options: js.Any): Unit = js.native
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(options: js.Any, `type`: js.UndefOr[scala.Nothing], displayTime: Double): Unit = js.native
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(options: js.Any, `type`: String): Unit = js.native
-  @JSImport("devextreme", "default.ui.notify")
-  @js.native
-  def notify(options: js.Any, `type`: String, displayTime: Double): Unit = js.native
+  @scala.inline
+  def notify(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def notify(options: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notify(options: js.Any, `type`: String, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def notify(options: js.Any, `type`: Unit, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * [descr:ui.repaintFloatingActionButton()]
     */
-  @JSImport("devextreme", "default.ui.repaintFloatingActionButton")
-  @js.native
-  def repaintFloatingActionButton(): Unit = js.native
+  @scala.inline
+  def repaintFloatingActionButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repaintFloatingActionButton")().asInstanceOf[Unit]
   
   /**
     * [descr:ui.setTemplateEngine(name)]
     */
-  @JSImport("devextreme", "default.ui.setTemplateEngine")
-  @js.native
-  def setTemplateEngine(templateEngineName: String): Unit = js.native
+  @scala.inline
+  def setTemplateEngine(templateEngineName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * [descr:ui.setTemplateEngine(options)]
     */
-  @JSImport("devextreme", "default.ui.setTemplateEngine")
-  @js.native
-  def setTemplateEngine(templateEngineOptions: Compile): Unit = js.native
+  @scala.inline
+  def setTemplateEngine(templateEngineOptions: Compile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("devextreme", "default.ui.themes")
   @js.native
   class themes ()
-    extends typings.devextreme.mod.DevExpress.ui.themes
+    extends StObject
+       with typings.devextreme.mod.DevExpress.ui.themes
   /* static members */
   object themes {
+    
+    @JSImport("devextreme", "default.ui.themes")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * [descr:ui.themes.current()]
       */
-    @JSImport("devextreme", "default.ui.themes.current")
-    @js.native
-    def current(): String = js.native
+    @scala.inline
+    def current(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[String]
     /**
       * [descr:ui.themes.current(themeName)]
       */
-    @JSImport("devextreme", "default.ui.themes.current")
-    @js.native
-    def current(themeName: String): Unit = js.native
+    @scala.inline
+    def current(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("current")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * [descr:ui.themes.initialized(callback)]
       */
-    @JSImport("devextreme", "default.ui.themes.initialized")
-    @js.native
-    def initialized(callback: js.Function): Unit = js.native
+    @scala.inline
+    def initialized(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialized")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * [descr:ui.themes.ready(callback)]
       */
-    @JSImport("devextreme", "default.ui.themes.ready")
-    @js.native
-    def ready(callback: js.Function): Unit = js.native
+    @scala.inline
+    def ready(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

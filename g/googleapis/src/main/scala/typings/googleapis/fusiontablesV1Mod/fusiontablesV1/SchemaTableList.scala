@@ -2,30 +2,28 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of tables.
   */
-@js.native
 trait SchemaTableList extends StObject {
   
   /**
     * List of all requested tables.
     */
-  var items: js.UndefOr[js.Array[SchemaTable]] = js.native
+  var items: js.UndefOr[js.Array[SchemaTable]] = js.undefined
   
   /**
     * Type name: a list of all tables.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access the next page of this result. No token is displayed
     * if there are no more pages left.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaTableList {
   

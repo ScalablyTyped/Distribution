@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.XSearchableDictionaryList
   * @since OOo 3.0.1
   */
-@js.native
 trait Dictionary
-  extends XSearchableDictionary
+  extends StObject
+     with XSearchableDictionary
      with XStorable
 object Dictionary {
   

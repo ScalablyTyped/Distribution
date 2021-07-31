@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of `begin` and `end` indexes that indicate the locations of the elements in the input document. */
-@js.native
 trait ElementLocations extends StObject {
   
   /** An integer that indicates the starting position of the element in the input document. */
-  var begin: js.UndefOr[Double] = js.native
+  var begin: js.UndefOr[Double] = js.undefined
   
   /** An integer that indicates the ending position of the element in the input document. */
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
 }
 object ElementLocations {
   

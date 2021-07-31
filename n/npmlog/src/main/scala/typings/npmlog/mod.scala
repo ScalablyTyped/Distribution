@@ -1,11 +1,9 @@
 package typings.npmlog
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -57,18 +55,23 @@ object mod extends Shortcut {
   }
   
   // TODO: newStream, newGroup, setGaugeTemplate and setGaugeTemplateSet need to be added
-  @js.native
-  trait Logger
-    extends EventEmitter
-       with // Allows for custom log levels
-  // npmlog.addLevel("custom", level)
-  // npmlog.custom(prefix, message)
-  /* key */ StringDictionary[js.Any] {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
+  trait Logger extends EventEmitter {
     
     def apply(): js.Any = js.native
     
     def addLevel(level: String, n: Double): Unit = js.native
-    def addLevel(level: String, n: Double, style: js.UndefOr[scala.Nothing], disp: String): Unit = js.native
+    def addLevel(level: String, n: Double, style: Unit, disp: String): Unit = js.native
     def addLevel(level: String, n: Double, style: StyleObject): Unit = js.native
     def addLevel(level: String, n: Double, style: StyleObject, disp: String): Unit = js.native
     
@@ -127,18 +130,17 @@ object mod extends Shortcut {
     def warn(prefix: String, message: String, args: js.Any*): Unit = js.native
   }
   
-  @js.native
   trait MessageObject extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var level: String = js.native
+    var level: String
     
-    var message: String = js.native
+    var message: String
     
-    var messageRaw: String = js.native
+    var messageRaw: String
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object MessageObject {
     
@@ -168,20 +170,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait StyleObject extends StObject {
     
-    var bell: js.UndefOr[Boolean] = js.native
+    var bell: js.UndefOr[Boolean] = js.undefined
     
-    var bg: js.UndefOr[String] = js.native
+    var bg: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var fg: js.UndefOr[String] = js.native
+    var fg: js.UndefOr[String] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object StyleObject {
     

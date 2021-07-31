@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke the Customize Numbered List dialog.
   */
-@js.native
-trait OpenCustomNumberingListDialogCommand extends CommandWithSimpleStateBase {
+trait OpenCustomNumberingListDialogCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the OpenCustomNumberingListDialogCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param abstractNumberingListIndex An integer value specifying index of abstract numbering list.
     */
-  def execute(abstractNumberingListIndex: Double): Boolean = js.native
+  def execute(abstractNumberingListIndex: Double): Boolean
 }
 object OpenCustomNumberingListDialogCommand {
   

@@ -4,16 +4,15 @@ import typings.amapJsApi.amapJsApiStrings.MultiLineString
 import typings.amapJsApi.amapJsApiStrings.MultiPolygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoordinatesArray
-  extends typings.amapJsApi.AMap.GeoJSON.Geometry {
+  extends StObject
+     with typings.amapJsApi.AMap.GeoJSON.Geometry {
   
-  var coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]] = js.native
+  var coordinates: js.Array[js.Array[js.Tuple2[Double, Double]]]
   
-  var `type`: MultiLineString | MultiPolygon = js.native
+  var `type`: MultiLineString | MultiPolygon
 }
 object CoordinatesArray {
   

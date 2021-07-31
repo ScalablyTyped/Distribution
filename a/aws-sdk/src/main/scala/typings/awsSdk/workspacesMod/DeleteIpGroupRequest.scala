@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIpGroupRequest extends StObject {
   
   /**
     * The identifier of the IP access control group.
     */
-  var GroupId: IpGroupId = js.native
+  var GroupId: IpGroupId
 }
 object DeleteIpGroupRequest {
   

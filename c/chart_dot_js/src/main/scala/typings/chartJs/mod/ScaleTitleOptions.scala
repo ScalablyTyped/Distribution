@@ -2,27 +2,25 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleTitleOptions extends StObject {
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
-  var fontColor: js.UndefOr[ChartColor] = js.native
+  var fontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var labelString: js.UndefOr[String] = js.native
+  var labelString: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[Double | String] = js.native
+  var lineHeight: js.UndefOr[Double | String] = js.undefined
   
-  var padding: js.UndefOr[ChartLayoutPaddingObject | Double] = js.native
+  var padding: js.UndefOr[ChartLayoutPaddingObject | Double] = js.undefined
 }
 object ScaleTitleOptions {
   

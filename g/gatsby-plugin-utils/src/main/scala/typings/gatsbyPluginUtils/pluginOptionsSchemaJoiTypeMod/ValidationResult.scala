@@ -2,19 +2,17 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationResult extends StObject {
   
-  var error: js.UndefOr[ValidationError] = js.native
+  var error: js.UndefOr[ValidationError] = js.undefined
   
-  var errors: js.UndefOr[ValidationError] = js.native
+  var errors: js.UndefOr[ValidationError] = js.undefined
   
-  var value: js.Any = js.native
+  var value: js.Any
   
-  var warning: js.UndefOr[ValidationError] = js.native
+  var warning: js.UndefOr[ValidationError] = js.undefined
 }
 object ValidationResult {
   

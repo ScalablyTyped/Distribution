@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,15 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.DictionaryListEvent
   * @see com.sun.star.linguistic2.XDictionaryList
   */
-@js.native
-trait XDictionaryListEventListener extends XEventListener {
+trait XDictionaryListEventListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is used to notify the object about dictionary-list events.
     * @param aDicListEvent the event to be notified of.
     * @see com.sun.star.linguistic2.DictionaryListEvent
     */
-  def processDictionaryListEvent(aDicListEvent: DictionaryListEvent): Unit = js.native
+  def processDictionaryListEvent(aDicListEvent: DictionaryListEvent): Unit
 }
 object XDictionaryListEventListener {
   

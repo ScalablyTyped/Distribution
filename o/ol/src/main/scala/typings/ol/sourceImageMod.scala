@@ -11,10 +11,13 @@ import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.stateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceImageMod {
+  
+  @JSImport("ol/source/Image", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/source/Image", JSImport.Default)
   @js.native
@@ -41,24 +44,29 @@ object sourceImageMod {
   object ImageSourceEventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ImageSourceEventType with String] = js.native
+    def apply(value: String): js.UndefOr[ImageSourceEventType & String] = js.native
     
     @js.native
-    sealed trait IMAGELOADEND extends ImageSourceEventType
-    /* "imageloadend" */ val IMAGELOADEND: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADEND with String = js.native
+    sealed trait IMAGELOADEND
+      extends StObject
+         with ImageSourceEventType
+    /* "imageloadend" */ val IMAGELOADEND: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADEND & String = js.native
     
     @js.native
-    sealed trait IMAGELOADERROR extends ImageSourceEventType
-    /* "imageloaderror" */ val IMAGELOADERROR: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADERROR with String = js.native
+    sealed trait IMAGELOADERROR
+      extends StObject
+         with ImageSourceEventType
+    /* "imageloaderror" */ val IMAGELOADERROR: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADERROR & String = js.native
     
     @js.native
-    sealed trait IMAGELOADSTART extends ImageSourceEventType
-    /* "imageloadstart" */ val IMAGELOADSTART: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADSTART with String = js.native
+    sealed trait IMAGELOADSTART
+      extends StObject
+         with ImageSourceEventType
+    /* "imageloadstart" */ val IMAGELOADSTART: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADSTART & String = js.native
   }
   
-  @JSImport("ol/source/Image", "defaultImageLoadFunction")
-  @js.native
-  def defaultImageLoadFunction(image: typings.ol.olImageMod.default, src: String): Unit = js.native
+  @scala.inline
+  def defaultImageLoadFunction(image: typings.ol.olImageMod.default, src: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultImageLoadFunction")(image.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait ImageSource
@@ -107,18 +115,17 @@ object sourceImageMod {
     def un_imageloadstart(`type`: imageloadstart, listener: js.Function1[/* evt */ ImageSourceEvent, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var resolutions: js.UndefOr[js.Array[Double]] = js.native
+    var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var state: js.UndefOr[State] = js.native
+    var state: js.UndefOr[State] = js.undefined
   }
   object Options {
     

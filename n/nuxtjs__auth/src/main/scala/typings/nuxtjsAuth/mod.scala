@@ -5,7 +5,6 @@ import typings.std.Partial
 import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -112,16 +111,15 @@ object mod {
   
   object nuxtTypesAugmentingMod {
     
-    @js.native
     trait Context extends StObject {
       
       @JSName("$auth")
-      var $auth: Auth[_] = js.native
+      var $auth: Auth[js.Any]
     }
     object Context {
       
       @scala.inline
-      def apply($auth: Auth[_]): Context = {
+      def apply($auth: Auth[js.Any]): Context = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[Context]
       }
@@ -130,23 +128,22 @@ object mod {
       implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def set$auth(value: Auth[_]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object nuxtVueAppAugmentingMod {
     
-    @js.native
     trait Context extends StObject {
       
       @JSName("$auth")
-      var $auth: Auth[_] = js.native
+      var $auth: Auth[js.Any]
     }
     object Context {
       
       @scala.inline
-      def apply($auth: Auth[_]): Context = {
+      def apply($auth: Auth[js.Any]): Context = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[Context]
       }
@@ -155,17 +152,16 @@ object mod {
       implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def set$auth(value: Auth[_]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object vueTypesOptionsAugmentingMod {
     
-    @js.native
     trait ComponentOptions[V /* <: Vue */] extends StObject {
       
-      var auth: js.UndefOr[Boolean | String] = js.native
+      var auth: js.UndefOr[Boolean | String] = js.undefined
     }
     object ComponentOptions {
       
@@ -176,7 +172,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[_], V /* <: Vue */] (val x: Self with ComponentOptions[V]) extends AnyVal {
+      implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
         
         @scala.inline
         def setAuth(value: Boolean | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
@@ -189,16 +185,15 @@ object mod {
   
   object vueTypesVueAugmentingMod {
     
-    @js.native
     trait Vue extends StObject {
       
       @JSName("$auth")
-      var $auth: Auth[_] = js.native
+      var $auth: Auth[js.Any]
     }
     object Vue {
       
       @scala.inline
-      def apply($auth: Auth[_]): typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue = {
+      def apply($auth: Auth[js.Any]): typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue]
       }
@@ -207,7 +202,7 @@ object mod {
       implicit class VueMutableBuilder[Self <: typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def set$auth(value: Auth[_]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }

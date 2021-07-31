@@ -2,7 +2,6 @@ package typings.vegaLite.srcMarkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ k in vega-lite.vega-lite/build/src/mark.Mark ]:? std.Array<keyof std.Required<vega-lite.vega-lite/build/src/mark.MarkConfigMixins<any>>[k]>} */

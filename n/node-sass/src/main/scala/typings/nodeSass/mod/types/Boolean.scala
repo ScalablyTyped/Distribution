@@ -2,13 +2,13 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Boolean extends Value {
+trait Boolean
+  extends StObject
+     with Value {
   
-  def getValue(): scala.Boolean = js.native
+  def getValue(): scala.Boolean
 }
 object Boolean {
   

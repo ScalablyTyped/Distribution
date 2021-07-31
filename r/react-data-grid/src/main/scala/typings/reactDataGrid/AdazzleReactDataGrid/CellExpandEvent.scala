@@ -2,34 +2,32 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *   Information about a cell expanded.
   */
-@js.native
 trait CellExpandEvent[T] extends StObject {
   
   /**
     * Expand data.
     */
-  var expandArgs: js.Any = js.native
+  var expandArgs: js.Any
   
   /**
     * The column index where the cell is being expanded.
     */
-  var idx: Double = js.native
+  var idx: Double
   
   /**
     * The values of the row.
     */
-  var rowData: T = js.native
+  var rowData: T
   
   /**
     * The row index where the cell is being expanded.
     */
-  var rowIdx: Double = js.native
+  var rowIdx: Double
 }
 object CellExpandEvent {
   
@@ -40,7 +38,7 @@ object CellExpandEvent {
   }
   
   @scala.inline
-  implicit class CellExpandEventMutableBuilder[Self <: CellExpandEvent[_], T] (val x: Self with CellExpandEvent[T]) extends AnyVal {
+  implicit class CellExpandEventMutableBuilder[Self <: CellExpandEvent[?], T] (val x: Self & CellExpandEvent[T]) extends AnyVal {
     
     @scala.inline
     def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])

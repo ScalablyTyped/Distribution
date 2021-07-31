@@ -2,15 +2,13 @@ package typings.jqueryAjaxfile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fast extends StObject {
   
-  var fast: Double = js.native
+  var fast: Double
   
-  var slow: Double = js.native
+  var slow: Double
 }
 object Fast {
   

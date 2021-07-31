@@ -2,33 +2,31 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an SMS message in raw PDU format. The data format differs depending on whether the message format (indicated by the value of the Format property) is GSM or CDMA. */
-@js.native
 trait SmsBinaryMessage extends StObject {
   
   /** Retrieves the detected protocol description unit (PDU) format of this message. */
-  var format: SmsDataFormat = js.native
+  var format: SmsDataFormat
   
   /**
     * Returns the raw buffer of the message in binary protocol description unit (PDU) format as a byte array.
     * @return A byte array representing message data. If there is no message data, the returned array is empty.
     */
-  def getData(): js.Array[Double] = js.native
+  def getData(): js.Array[Double]
   
   /** Indicates the ID of the asynchronous message operation. */
-  var id: Double = js.native
+  var id: Double
   
   /** Returns the message class, as determined by the operator's message network. The two most common classes are None (normal message) or Class0 (special operator message, such as a roaming warning that must be shown immediately to the user). A typical client for end-user messages ignores Class0 messages. */
-  var messageClass: SmsMessageClass = js.native
+  var messageClass: SmsMessageClass
   
   /**
     * Specifies the raw binary payload of the SMS message. It should be formatted according to the protocol description unit (PDU) standard.
     * @param value A byte array representing message data. If there is no message data, the returned array is empty.
     */
-  def setData(value: js.Array[Double]): Unit = js.native
+  def setData(value: js.Array[Double]): Unit
 }
 object SmsBinaryMessage {
   

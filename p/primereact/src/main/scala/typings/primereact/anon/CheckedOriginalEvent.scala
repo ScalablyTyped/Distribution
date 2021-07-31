@@ -2,19 +2,17 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckedOriginalEvent extends StObject {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
   
-  var target: Checked = js.native
+  var target: Checked
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object CheckedOriginalEvent {
   

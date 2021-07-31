@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFindingsResponse extends StObject {
   
   /**
     * Finding details that cannot be described. An error code is provided for each failed item.
     */
-  var failedItems: FailedItems = js.native
+  var failedItems: FailedItems
   
   /**
     * Information about the finding.
     */
-  var findings: FindingList = js.native
+  var findings: FindingList
 }
 object DescribeFindingsResponse {
   

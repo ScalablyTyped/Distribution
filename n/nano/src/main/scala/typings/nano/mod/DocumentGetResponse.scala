@@ -2,40 +2,38 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid
-@js.native
 trait DocumentGetResponse extends StObject {
   
   // Attachment’s stubs. Available if document has any attachments.
-  var _attachments: js.UndefOr[js.Any] = js.native
+  var _attachments: js.UndefOr[js.Any] = js.undefined
   
   // List of conflicted revisions. Available if requested with conflicts=true query parameter.
-  var _conflicts: js.UndefOr[js.Array[_]] = js.native
+  var _conflicts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   // Deletion flag. Available if document was removed.
-  var _deleted: js.UndefOr[Boolean] = js.native
+  var _deleted: js.UndefOr[Boolean] = js.undefined
   
   // List of deleted conflicted revisions. Available if requested with deleted_conflicts=true query parameter.
-  var _deleted_conflicts: js.UndefOr[js.Array[_]] = js.native
+  var _deleted_conflicts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   // Document ID.
-  var _id: String = js.native
+  var _id: String
   
   // Document’s update sequence in current database. Available if requested with local_seq=true query parameter.
-  var _local_seq: js.UndefOr[String] = js.native
+  var _local_seq: js.UndefOr[String] = js.undefined
   
   // Revision MVCC token.
-  var _rev: String = js.native
+  var _rev: String
   
   // List of local revision tokens without. Available if requested with revs=true query parameter.
-  var _revisions: js.UndefOr[js.Any] = js.native
+  var _revisions: js.UndefOr[js.Any] = js.undefined
   
   // List of objects with information about local revisions and their status. Available if requested with
   // open_revs query parameter.
-  var _revs_info: js.UndefOr[js.Array[_]] = js.native
+  var _revs_info: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object DocumentGetResponse {
   
@@ -55,7 +53,7 @@ object DocumentGetResponse {
     def set_attachmentsUndefined: Self = StObject.set(x, "_attachments", js.undefined)
     
     @scala.inline
-    def set_conflicts(value: js.Array[_]): Self = StObject.set(x, "_conflicts", value.asInstanceOf[js.Any])
+    def set_conflicts(value: js.Array[js.Any]): Self = StObject.set(x, "_conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_conflictsUndefined: Self = StObject.set(x, "_conflicts", js.undefined)
@@ -70,7 +68,7 @@ object DocumentGetResponse {
     def set_deletedUndefined: Self = StObject.set(x, "_deleted", js.undefined)
     
     @scala.inline
-    def set_deleted_conflicts(value: js.Array[_]): Self = StObject.set(x, "_deleted_conflicts", value.asInstanceOf[js.Any])
+    def set_deleted_conflicts(value: js.Array[js.Any]): Self = StObject.set(x, "_deleted_conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_deleted_conflictsUndefined: Self = StObject.set(x, "_deleted_conflicts", js.undefined)
@@ -97,7 +95,7 @@ object DocumentGetResponse {
     def set_revisionsUndefined: Self = StObject.set(x, "_revisions", js.undefined)
     
     @scala.inline
-    def set_revs_info(value: js.Array[_]): Self = StObject.set(x, "_revs_info", value.asInstanceOf[js.Any])
+    def set_revs_info(value: js.Array[js.Any]): Self = StObject.set(x, "_revs_info", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_revs_infoUndefined: Self = StObject.set(x, "_revs_info", js.undefined)

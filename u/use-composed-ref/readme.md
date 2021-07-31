@@ -10,9 +10,9 @@ React hook which creates a ref function from given refs. Useful when using forwa
 | ------------------ | :-------------: |
 | Full name          | use-composed-ref |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 4 |
-| # downloads        | 2883877 |
+| # downloads        | 24719722 |
 | # stars            | 0 |
 
 ## Links

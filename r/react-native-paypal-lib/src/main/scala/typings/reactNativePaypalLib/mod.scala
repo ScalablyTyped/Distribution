@@ -8,12 +8,15 @@ import typings.reactNativePaypalLib.reactNativePaypalLibStrings.SALE
 import typings.reactNativePaypalLib.reactNativePaypalLibStrings.SANDBOX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
+    
+    @JSImport("react-native-paypal-lib", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("react-native-paypal-lib", "default.ENVIRONMENT")
     @js.native
@@ -23,9 +26,8 @@ object mod {
     @js.native
     val INTENT: IntentParam = js.native
     
-    @JSImport("react-native-paypal-lib", "default.paymentRequest")
-    @js.native
-    def paymentRequest(params: PaymentParams): js.Promise[PaymentConfirmation] = js.native
+    @scala.inline
+    def paymentRequest(params: PaymentParams): js.Promise[PaymentConfirmation] = ^.asInstanceOf[js.Dynamic].applyDynamic("paymentRequest")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PaymentConfirmation]]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -156,20 +158,19 @@ object mod {
     def SANDBOX: typings.reactNativePaypalLib.reactNativePaypalLibStrings.SANDBOX = "SANDBOX".asInstanceOf[typings.reactNativePaypalLib.reactNativePaypalLibStrings.SANDBOX]
   }
   
-  @js.native
   trait EnvironmentParam extends StObject {
     
-    var NO_NETWORK: typings.reactNativePaypalLib.reactNativePaypalLibStrings.NO_NETWORK = js.native
+    var NO_NETWORK: typings.reactNativePaypalLib.reactNativePaypalLibStrings.NO_NETWORK
     
-    var PRODUCTION: typings.reactNativePaypalLib.reactNativePaypalLibStrings.PRODUCTION = js.native
+    var PRODUCTION: typings.reactNativePaypalLib.reactNativePaypalLibStrings.PRODUCTION
     
-    var SANDBOX: typings.reactNativePaypalLib.reactNativePaypalLibStrings.SANDBOX = js.native
+    var SANDBOX: typings.reactNativePaypalLib.reactNativePaypalLibStrings.SANDBOX
   }
   object EnvironmentParam {
     
     @scala.inline
-    def apply(NO_NETWORK: NO_NETWORK, PRODUCTION: PRODUCTION, SANDBOX: SANDBOX): EnvironmentParam = {
-      val __obj = js.Dynamic.literal(NO_NETWORK = NO_NETWORK.asInstanceOf[js.Any], PRODUCTION = PRODUCTION.asInstanceOf[js.Any], SANDBOX = SANDBOX.asInstanceOf[js.Any])
+    def apply(): EnvironmentParam = {
+      val __obj = js.Dynamic.literal(NO_NETWORK = "NO_NETWORK", PRODUCTION = "PRODUCTION", SANDBOX = "SANDBOX")
       __obj.asInstanceOf[EnvironmentParam]
     }
     
@@ -205,20 +206,19 @@ object mod {
     def SALE: typings.reactNativePaypalLib.reactNativePaypalLibStrings.SALE = "SALE".asInstanceOf[typings.reactNativePaypalLib.reactNativePaypalLibStrings.SALE]
   }
   
-  @js.native
   trait IntentParam extends StObject {
     
-    var AUTHORIZE: typings.reactNativePaypalLib.reactNativePaypalLibStrings.AUTHORIZE = js.native
+    var AUTHORIZE: typings.reactNativePaypalLib.reactNativePaypalLibStrings.AUTHORIZE
     
-    var ORDER: typings.reactNativePaypalLib.reactNativePaypalLibStrings.ORDER = js.native
+    var ORDER: typings.reactNativePaypalLib.reactNativePaypalLibStrings.ORDER
     
-    var SALE: typings.reactNativePaypalLib.reactNativePaypalLibStrings.SALE = js.native
+    var SALE: typings.reactNativePaypalLib.reactNativePaypalLibStrings.SALE
   }
   object IntentParam {
     
     @scala.inline
-    def apply(AUTHORIZE: AUTHORIZE, ORDER: ORDER, SALE: SALE): IntentParam = {
-      val __obj = js.Dynamic.literal(AUTHORIZE = AUTHORIZE.asInstanceOf[js.Any], ORDER = ORDER.asInstanceOf[js.Any], SALE = SALE.asInstanceOf[js.Any])
+    def apply(): IntentParam = {
+      val __obj = js.Dynamic.literal(AUTHORIZE = "AUTHORIZE", ORDER = "ORDER", SALE = "SALE")
       __obj.asInstanceOf[IntentParam]
     }
     
@@ -236,16 +236,15 @@ object mod {
     }
   }
   
-  @js.native
   trait PayPalPayment extends StObject {
     
-    var environment: String = js.native
+    var environment: String
     
-    var paypal_sdk_version: String = js.native
+    var paypal_sdk_version: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var product_name: String = js.native
+    var product_name: String
   }
   object PayPalPayment {
     
@@ -272,14 +271,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PaymentConfirmation extends StObject {
     
-    var client: PayPalPayment = js.native
+    var client: PayPalPayment
     
-    var response: ProofOfPayment = js.native
+    var response: ProofOfPayment
     
-    var response_type: String = js.native
+    var response_type: String
   }
   object PaymentConfirmation {
     
@@ -303,22 +301,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PaymentParams extends StObject {
     
-    var acceptCreditCards: Boolean = js.native
+    var acceptCreditCards: Boolean
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var currency: CURRENCIES = js.native
+    var currency: CURRENCIES
     
-    var description: String = js.native
+    var description: String
     
-    var environment: ENVIRONMENT = js.native
+    var environment: ENVIRONMENT
     
-    var intent: INTENT = js.native
+    var intent: INTENT
     
-    var price: Double = js.native
+    var price: Double
   }
   object PaymentParams {
     
@@ -362,16 +359,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ProofOfPayment extends StObject {
     
-    var create_time: String = js.native
+    var create_time: String
     
-    var id: String = js.native
+    var id: String
     
-    var intent: String = js.native
+    var intent: String
     
-    var state: String = js.native
+    var state: String
   }
   object ProofOfPayment {
     

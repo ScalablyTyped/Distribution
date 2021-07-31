@@ -2,57 +2,55 @@ package typings.vimeoPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var autopause: js.UndefOr[Boolean] = js.native
+  var autopause: js.UndefOr[Boolean] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.undefined
   
-  var byline: js.UndefOr[Boolean] = js.native
+  var byline: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
-  var dnt: js.UndefOr[Boolean] = js.native
+  var dnt: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var maxheight: js.UndefOr[Double] = js.native
+  var maxheight: js.UndefOr[Double] = js.undefined
   
-  var maxwidth: js.UndefOr[Double] = js.native
+  var maxwidth: js.UndefOr[Double] = js.undefined
   
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
-  var playsinline: js.UndefOr[Boolean] = js.native
+  var playsinline: js.UndefOr[Boolean] = js.undefined
   
-  var portrait: js.UndefOr[Boolean] = js.native
+  var portrait: js.UndefOr[Boolean] = js.undefined
   
-  var quality: js.UndefOr[VimeoVideoQuality] = js.native
+  var quality: js.UndefOr[VimeoVideoQuality] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
-  var speed: js.UndefOr[Boolean] = js.native
+  var speed: js.UndefOr[Boolean] = js.undefined
   
-  var texttrack: js.UndefOr[String] = js.native
+  var texttrack: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[Boolean] = js.undefined
   
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Options {
   

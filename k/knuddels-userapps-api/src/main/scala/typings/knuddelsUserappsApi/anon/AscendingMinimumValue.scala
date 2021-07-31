@@ -2,15 +2,13 @@ package typings.knuddelsUserappsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AscendingMinimumValue extends StObject {
   
-  var ascending: js.UndefOr[Boolean] = js.native
+  var ascending: js.UndefOr[Boolean] = js.undefined
   
-  var minimumValue: js.UndefOr[Double] = js.native
+  var minimumValue: js.UndefOr[Double] = js.undefined
 }
 object AscendingMinimumValue {
   

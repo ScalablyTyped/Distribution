@@ -15,195 +15,146 @@ import typings.std.Date
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bro-fs", "appendFile")
+  @JSImport("bro-fs", JSImport.Namespace)
   @js.native
-  def appendFile(path: String, data: String): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: ArrayBuffer): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: Blob): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: File): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "appendFile")
-  @js.native
-  def appendFile(path: FileEntry, data: String): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "appendFile")
-  @js.native
-  def appendFile(path: FileEntry, data: ArrayBuffer): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "appendFile")
-  @js.native
-  def appendFile(path: FileEntry, data: Blob): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "appendFile")
-  @js.native
-  def appendFile(path: FileEntry, data: File): js.Promise[FileSystem] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bro-fs", "clear")
-  @js.native
-  def clear(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
+  @scala.inline
+  def appendFile(path: String, data: String): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def appendFile(path: String, data: ArrayBuffer): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def appendFile(path: String, data: Blob): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def appendFile(path: String, data: File): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def appendFile(path: FileEntry, data: String): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def appendFile(path: FileEntry, data: ArrayBuffer): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def appendFile(path: FileEntry, data: Blob): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def appendFile(path: FileEntry, data: File): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
   
-  @JSImport("bro-fs", "copy")
-  @js.native
-  def copy(oldPath: String, newPath: String): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "copy")
-  @js.native
-  def copy(oldPath: String, newPath: String, options: Create): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "copy")
-  @js.native
-  def copy(oldPath: FileEntry, newPath: String): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "copy")
-  @js.native
-  def copy(oldPath: FileEntry, newPath: String, options: Create): js.Promise[FileEntry] = js.native
+  @scala.inline
+  def clear(): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[js.Array[Unit]]]
   
-  @JSImport("bro-fs", "exists")
-  @js.native
-  def exists(path: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def copy(oldPath: String, newPath: String): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def copy(oldPath: String, newPath: String, options: Create): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def copy(oldPath: FileEntry, newPath: String): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def copy(oldPath: FileEntry, newPath: String, options: Create): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
   
-  @JSImport("bro-fs", "getEntry")
-  @js.native
-  def getEntry(path: FileEntry): js.Promise[FileEntry] = js.native
+  @scala.inline
+  def exists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("bro-fs", "getRoot")
-  @js.native
-  def getRoot(): js.Promise[DirectoryEntry] = js.native
+  @scala.inline
+  def getEntry(path: FileEntry): js.Promise[FileEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntry")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileEntry]]
   
-  @JSImport("bro-fs", "getUrl")
-  @js.native
-  def getUrl(path: String): js.Promise[String] = js.native
-  @JSImport("bro-fs", "getUrl")
-  @js.native
-  def getUrl(path: FileEntry): js.Promise[String] = js.native
+  @scala.inline
+  def getRoot(): js.Promise[DirectoryEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoot")().asInstanceOf[js.Promise[DirectoryEntry]]
   
-  @JSImport("bro-fs", "init")
-  @js.native
-  def init(): js.Promise[FileSystem] = js.native
-  @JSImport("bro-fs", "init")
-  @js.native
-  def init(options: FSOptions): js.Promise[FileSystem] = js.native
+  @scala.inline
+  def getUrl(path: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getUrl(path: FileEntry): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("bro-fs", "isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def init(): js.Promise[FileSystem] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[FileSystem]]
+  @scala.inline
+  def init(options: FSOptions): js.Promise[FileSystem] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystem]]
   
-  @JSImport("bro-fs", "mkdir")
-  @js.native
-  def mkdir(path: String): js.Promise[DirectoryEntry] = js.native
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: String): js.Promise[String] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: String, options: Type): js.Promise[ArrayBuffer] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: String, options: `0`): js.Promise[Blob] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: String, options: `1`): js.Promise[File] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: String, options: `2`): js.Promise[String] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: FileEntry): js.Promise[String] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: FileEntry, options: Type): js.Promise[ArrayBuffer] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: FileEntry, options: `0`): js.Promise[Blob] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: FileEntry, options: `1`): js.Promise[File] = js.native
-  @JSImport("bro-fs", "readFile")
-  @js.native
-  def readFile(path: FileEntry, options: `2`): js.Promise[String] = js.native
+  @scala.inline
+  def mkdir(path: String): js.Promise[DirectoryEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DirectoryEntry]]
   
-  @JSImport("bro-fs", "readdir")
-  @js.native
-  def readdir(path: String): js.Promise[js.Array[FileEntry]] = js.native
-  @JSImport("bro-fs", "readdir")
-  @js.native
-  def readdir(path: String, options: Deep): js.Promise[js.Array[FileEntry]] = js.native
-  @JSImport("bro-fs", "readdir")
-  @js.native
-  def readdir(path: DirectoryEntry): js.Promise[js.Array[FileEntry]] = js.native
-  @JSImport("bro-fs", "readdir")
-  @js.native
-  def readdir(path: DirectoryEntry, options: Deep): js.Promise[js.Array[FileEntry]] = js.native
+  @scala.inline
+  def readFile(path: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def readFile(path: String, options: Type): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  @scala.inline
+  def readFile(path: String, options: `0`): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
+  @scala.inline
+  def readFile(path: String, options: `1`): js.Promise[File] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File]]
+  @scala.inline
+  def readFile(path: String, options: `2`): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def readFile(path: FileEntry): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def readFile(path: FileEntry, options: Type): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  @scala.inline
+  def readFile(path: FileEntry, options: `0`): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
+  @scala.inline
+  def readFile(path: FileEntry, options: `1`): js.Promise[File] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File]]
+  @scala.inline
+  def readFile(path: FileEntry, options: `2`): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("bro-fs", "rename")
-  @js.native
-  def rename(oldPath: String, newPath: String): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "rename")
-  @js.native
-  def rename(oldPath: String, newPath: String, options: Create): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "rename")
-  @js.native
-  def rename(oldPath: FileEntry, newPath: String): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "rename")
-  @js.native
-  def rename(oldPath: FileEntry, newPath: String, options: Create): js.Promise[FileEntry] = js.native
+  @scala.inline
+  def readdir(path: String): js.Promise[js.Array[FileEntry]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileEntry]]]
+  @scala.inline
+  def readdir(path: String, options: Deep): js.Promise[js.Array[FileEntry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[FileEntry]]]
+  @scala.inline
+  def readdir(path: DirectoryEntry): js.Promise[js.Array[FileEntry]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileEntry]]]
+  @scala.inline
+  def readdir(path: DirectoryEntry, options: Deep): js.Promise[js.Array[FileEntry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[FileEntry]]]
   
-  @JSImport("bro-fs", "rmdir")
-  @js.native
-  def rmdir(path: String): js.Promise[Boolean] = js.native
-  @JSImport("bro-fs", "rmdir")
-  @js.native
-  def rmdir(path: DirectoryEntry): js.Promise[Boolean] = js.native
+  @scala.inline
+  def rename(oldPath: String, newPath: String): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def rename(oldPath: String, newPath: String, options: Create): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def rename(oldPath: FileEntry, newPath: String): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def rename(oldPath: FileEntry, newPath: String, options: Create): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
   
-  @JSImport("bro-fs", "stat")
-  @js.native
-  def stat(path: String): js.Promise[StatObject] = js.native
-  @JSImport("bro-fs", "stat")
-  @js.native
-  def stat(path: FileEntry): js.Promise[StatObject] = js.native
+  @scala.inline
+  def rmdir(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def rmdir(path: DirectoryEntry): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("bro-fs", "unlink")
-  @js.native
-  def unlink(path: String): js.Promise[Boolean] = js.native
-  @JSImport("bro-fs", "unlink")
-  @js.native
-  def unlink(path: FileEntry): js.Promise[Boolean] = js.native
+  @scala.inline
+  def stat(path: String): js.Promise[StatObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StatObject]]
+  @scala.inline
+  def stat(path: FileEntry): js.Promise[StatObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StatObject]]
   
-  @JSImport("bro-fs", "usage")
-  @js.native
-  def usage(): js.Promise[UsageObject] = js.native
+  @scala.inline
+  def unlink(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def unlink(path: FileEntry): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("bro-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: String): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: ArrayBuffer): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: Blob): js.Promise[FileEntry] = js.native
-  @JSImport("bro-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: File): js.Promise[FileEntry] = js.native
+  @scala.inline
+  def usage(): js.Promise[UsageObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("usage")().asInstanceOf[js.Promise[UsageObject]]
   
-  @js.native
+  @scala.inline
+  def writeFile(path: String, data: String): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def writeFile(path: String, data: ArrayBuffer): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def writeFile(path: String, data: Blob): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  @scala.inline
+  def writeFile(path: String, data: File): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  
   trait FSOptions extends StObject {
     
-    var bytes: js.UndefOr[Double] = js.native
+    var bytes: js.UndefOr[Double] = js.undefined
     
     /**
       * show request quota popup for PERSISTENT type
       * (for Chrome extensions with `unlimitedStorage` permission it is useful to pass `options.requestQuota = false`)
       */
-    var requestQuota: js.UndefOr[Boolean] = js.native
+    var requestQuota: js.UndefOr[Boolean] = js.undefined
     
     /** `window.PERSISTENT` | `window.TEMPORARY` */
-    var `type`: js.UndefOr[Double] = js.native
+    var `type`: js.UndefOr[Double] = js.undefined
   }
   object FSOptions {
     
@@ -236,20 +187,19 @@ object mod {
     }
   }
   
-  @js.native
   trait StatObject extends StObject {
     
-    var fullPath: String = js.native
+    var fullPath: String
     
-    var isDirectory: Boolean = js.native
+    var isDirectory: Boolean
     
-    var isFile: Boolean = js.native
+    var isFile: Boolean
     
-    var modificationTime: Date = js.native
+    var modificationTime: Date
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object StatObject {
     
@@ -307,12 +257,11 @@ object mod {
     def Text: typings.broFs.broFsStrings.Text = "Text".asInstanceOf[typings.broFs.broFsStrings.Text]
   }
   
-  @js.native
   trait UsageObject extends StObject {
     
-    var grantedBytes: Double = js.native
+    var grantedBytes: Double
     
-    var usedBytes: Double = js.native
+    var usedBytes: Double
   }
   object UsageObject {
     

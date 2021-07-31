@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 import typings.activexLibreoffice.com_.sun.star.beans.StringPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDocumentMetadataAccess
   * @since OOo 3.2
   */
-@js.native
-trait XMetadatable extends XURI {
+trait XMetadatable
+  extends StObject
+     with XURI {
   
   /**
     * a metadata reference, comprising the stream name and the XML ID.
@@ -28,7 +28,7 @@ trait XMetadatable extends XURI {
     * two empty strings signifies "no metadata reference". For example: Pair("content.xml", "foo-element-1")
     * @throws com::sun::star::lang::IllegalArgumentException if the given metadata reference is invalid, or not unique
     */
-  var MetadataReference: StringPair = js.native
+  var MetadataReference: StringPair
   
   /**
     * creates a metadata reference for this object, if necessary.
@@ -36,7 +36,7 @@ trait XMetadatable extends XURI {
     * If this object already has a metadata reference, do nothing; otherwise, create metadata reference with a fresh, unique XML ID and assign it to the
     * MetadataReference attribute.
     */
-  def ensureMetadataReference(): Unit = js.native
+  def ensureMetadataReference(): Unit
 }
 object XMetadatable {
   

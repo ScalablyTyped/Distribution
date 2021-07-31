@@ -3,13 +3,11 @@ package typings.chromeApps.anon
 import typings.filesystem.FileEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entries extends StObject {
   
-  var entries: js.Array[FileEntry] = js.native
+  var entries: js.Array[FileEntry]
 }
 object Entries {
   

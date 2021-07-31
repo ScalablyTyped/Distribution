@@ -2,17 +2,15 @@ package typings.twig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Twigoptions extends StObject {
     
-    var `twig options`: js.Any = js.native
+    var `twig options`: js.Any
     
-    var views: js.Any = js.native
+    var views: js.Any
   }
   object Twigoptions {
     

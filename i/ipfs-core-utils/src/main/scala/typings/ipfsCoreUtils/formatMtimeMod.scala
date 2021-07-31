@@ -2,7 +2,6 @@ package typings.ipfsCoreUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatMtimeMod {
@@ -11,24 +10,26 @@ object formatMtimeMod {
     * @param {MTime} mtime
     * @returns {string}
     */
+  @scala.inline
+  def apply(mtime: MTime): String = ^.asInstanceOf[js.Dynamic].apply(mtime.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("ipfs-core-utils/dist/src/files/format-mtime", JSImport.Namespace)
   @js.native
-  def apply(mtime: MTime): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait MTime extends StObject {
     
     /**
       * - the number of nanoseconds since the last full
       * second.
       */
-    var nsecs: Double = js.native
+    var nsecs: Double
     
     /**
       * - the number of seconds since (positive) or before
       * (negative) the Unix Epoch began
       */
-    var secs: Double = js.native
+    var secs: Double
   }
   object MTime {
     

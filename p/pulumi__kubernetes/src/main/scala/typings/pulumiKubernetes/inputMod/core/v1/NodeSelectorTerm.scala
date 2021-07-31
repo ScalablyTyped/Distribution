@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
   */
-@js.native
 trait NodeSelectorTerm extends StObject {
   
   /**
     * A list of node selector requirements by node's labels.
     */
-  var matchExpressions: js.UndefOr[Input[js.Array[Input[NodeSelectorRequirement]]]] = js.native
+  var matchExpressions: js.UndefOr[Input[js.Array[Input[NodeSelectorRequirement]]]] = js.undefined
   
   /**
     * A list of node selector requirements by node's fields.
     */
-  var matchFields: js.UndefOr[Input[js.Array[Input[NodeSelectorRequirement]]]] = js.native
+  var matchFields: js.UndefOr[Input[js.Array[Input[NodeSelectorRequirement]]]] = js.undefined
 }
 object NodeSelectorTerm {
   

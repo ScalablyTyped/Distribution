@@ -4,26 +4,26 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XStyleSupplier extends XInterface {
+trait XStyleSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * get the currently set style.
     * @returns the style. If no style was set, the returned object may be empty (null). Otherwise, the returned object must support the service PropertyTemplate.
     */
-  var Style: XStyle = js.native
+  var Style: XStyle
   
   /**
     * get the currently set style.
     * @returns the style. If no style was set, the returned object may be empty (null). Otherwise, the returned object must support the service PropertyTemplate.
     */
-  def getStyle(): XStyle = js.native
+  def getStyle(): XStyle
   
   /** @param xStyle If you want to remove an existing style, you can set an empty (null) object. Otherwise, the object given must support the service Property */
-  def setStyle(xStyle: XStyle): Unit = js.native
+  def setStyle(xStyle: XStyle): Unit
 }
 object XStyleSupplier {
   

@@ -2,15 +2,23 @@ package typings.ioTs
 
 import typings.ioTs.mod.ValidationError
 import typings.ioTs.reporterMod.Reporter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("io-ts/lib/PathReporter", JSImport.Namespace)
-@js.native
-object pathReporterMod extends js.Object {
+object pathReporterMod {
+  
+  @JSImport("io-ts/lib/PathReporter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("io-ts/lib/PathReporter", "PathReporter")
+  @js.native
   val PathReporter: Reporter[js.Array[String]] = js.native
-  def failure(es: js.Array[ValidationError]): js.Array[String] = js.native
-  def success(): js.Array[String] = js.native
+  
+  @scala.inline
+  def failure(es: js.Array[ValidationError]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("failure")(es.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def success(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("success")().asInstanceOf[js.Array[String]]
 }
-

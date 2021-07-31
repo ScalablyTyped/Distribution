@@ -2,55 +2,53 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCustomField extends StObject {
   
   /**
     * If you are using merge fields, this property specifies the type of the merge field. The only supported value is `salesforce`.
     */
-  var configurationType: js.UndefOr[String] = js.native
+  var configurationType: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The id of the custom field.
     */
-  var fieldId: js.UndefOr[String] = js.native
+  var fieldId: js.UndefOr[String] = js.undefined
   
   /**
     * An array of strings that represents the options in a list.
     *
     * Maximum length: 2048 characters, but each individual option string can only be a maximum of 100 characters.
     */
-  var listItems: js.UndefOr[js.Array[String]] = js.native
+  var listItems: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the custom field.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, senders are required to select an option from the list before they can send the envelope.
     */
-  var required: js.UndefOr[String] = js.native
+  var required: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the field displays in the **Envelope Custom Fields** section when a user creates or sends an envelope.
     */
-  var show: js.UndefOr[String] = js.native
+  var show: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the custom field. This is the value that the user who creates or sends the envelope selects from the list.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ListCustomField {
   

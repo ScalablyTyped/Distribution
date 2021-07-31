@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindDeviceToGatewayRequest extends StObject {
   
   /** Required. The device to associate with the specified gateway. The value of `device_id` can be either the device numeric ID or the user-defined device identifier. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /** Required. The value of `gateway_id` can be either the device numeric ID or the user-defined device identifier. */
-  var gatewayId: js.UndefOr[String] = js.native
+  var gatewayId: js.UndefOr[String] = js.undefined
 }
 object BindDeviceToGatewayRequest {
   

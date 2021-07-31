@@ -3,13 +3,11 @@ package typings.phonegapPluginBarcodescanner
 import typings.phonegapPluginBarcodescanner.phonegapBarcode.BarcodeScanner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaPlugins extends StObject {
   
-  var barcodeScanner: BarcodeScanner = js.native
+  var barcodeScanner: BarcodeScanner
 }
 object CordovaPlugins {
   

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceGroupsMembershipsGet extends StandardParameters {
+trait ParamsResourceGroupsMembershipsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * [Resource name](https://cloud.google.com/apis/design/resource_names) of
@@ -24,7 +24,7 @@ trait ParamsResourceGroupsMembershipsGet extends StandardParameters {
     * unique id assigned to the Group to which Membership belongs to, and
     * `member_id` is the unique ID assigned to the member.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceGroupsMembershipsGet {
   

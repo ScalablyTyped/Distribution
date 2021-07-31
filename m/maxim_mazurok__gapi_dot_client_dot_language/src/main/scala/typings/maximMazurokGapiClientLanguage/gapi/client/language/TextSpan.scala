@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextSpan extends StObject {
   
   /** The API calculates the beginning offset of the content in the original document according to the EncodingType specified in the API request. */
-  var beginOffset: js.UndefOr[Double] = js.native
+  var beginOffset: js.UndefOr[Double] = js.undefined
   
   /** The content of the output text. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
 }
 object TextSpan {
   

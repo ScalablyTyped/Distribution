@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.systemMod.DayOfWeek
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamSettingsPatch extends StObject {
   
-  var backlogIteration: String = js.native
+  var backlogIteration: String
   
-  var backlogVisibilities: StringDictionary[Boolean] = js.native
+  var backlogVisibilities: StringDictionary[Boolean]
   
-  var bugsBehavior: BugsBehavior = js.native
+  var bugsBehavior: BugsBehavior
   
-  var defaultIteration: String = js.native
+  var defaultIteration: String
   
-  var defaultIterationMacro: String = js.native
+  var defaultIterationMacro: String
   
-  var workingDays: js.Array[DayOfWeek] = js.native
+  var workingDays: js.Array[DayOfWeek]
 }
 object TeamSettingsPatch {
   

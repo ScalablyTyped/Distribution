@@ -2,23 +2,21 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wegame-api.wx.types.Callbacks & {  muteConfig :{  muteMicrophone :boolean | undefined,   muteEarphone :boolean | undefined}} */
-@js.native
 trait CallbacksmuteConfigmuteMi extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 静音设置
     */
-  var muteConfig: MuteEarphone = js.native
+  var muteConfig: MuteEarphone
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object CallbacksmuteConfigmuteMi {
   

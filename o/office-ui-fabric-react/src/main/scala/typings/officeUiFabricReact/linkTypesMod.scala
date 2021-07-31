@@ -17,16 +17,14 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkTypesMod {
   
-  @js.native
   trait ILink extends StObject {
     
     /** Sets focus to the link. */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object ILink {
     
@@ -44,44 +42,44 @@ object linkTypesMod {
     }
   }
   
-  @js.native
   trait ILinkHTMLAttributes[T]
-    extends HTMLAttributes[T]
+    extends StObject
+       with HTMLAttributes[T]
        with /* index */ StringDictionary[js.Any] {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var download: js.UndefOr[js.Any] = js.native
+    var download: js.UndefOr[js.Any] = js.undefined
     
-    var form: js.UndefOr[String] = js.native
+    var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.native
+    var formAction: js.UndefOr[String] = js.undefined
     
-    var formEncType: js.UndefOr[String] = js.native
+    var formEncType: js.UndefOr[String] = js.undefined
     
-    var formMethod: js.UndefOr[String] = js.native
+    var formMethod: js.UndefOr[String] = js.undefined
     
-    var formNoValidate: js.UndefOr[Boolean] = js.native
+    var formNoValidate: js.UndefOr[Boolean] = js.undefined
     
-    var formTarget: js.UndefOr[String] = js.native
+    var formTarget: js.UndefOr[String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var hrefLang: js.UndefOr[String] = js.native
+    var hrefLang: js.UndefOr[String] = js.undefined
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var rel: js.UndefOr[String] = js.native
+    var rel: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+    var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   }
   object ILinkHTMLAttributes {
     
@@ -92,7 +90,7 @@ object linkTypesMod {
     }
     
     @scala.inline
-    implicit class ILinkHTMLAttributesMutableBuilder[Self <: ILinkHTMLAttributes[_], T] (val x: Self with ILinkHTMLAttributes[T]) extends AnyVal {
+    implicit class ILinkHTMLAttributesMutableBuilder[Self <: ILinkHTMLAttributes[?], T] (val x: Self & ILinkHTMLAttributes[T]) extends AnyVal {
       
       @scala.inline
       def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
@@ -201,36 +199,37 @@ object linkTypesMod {
     }
   }
   
-  @js.native
-  trait ILinkProps extends ILinkHTMLAttributes[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase] {
+  trait ILinkProps
+    extends StObject
+       with ILinkHTMLAttributes[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase] {
     
     /**
       * A component that should be used as the root element of the link returned from the Link component.
       */
     var as: js.UndefOr[
         String | (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional callback to access the ILink interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ILink]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ILink]] = js.undefined
     
     /**
       * Optional keytip for this Link
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ILinkStyleProps, ILinkStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ILinkStyleProps, ILinkStyles]] = js.undefined
     
     /**
       * Theme (provided through customization.)
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ILinkProps {
     
@@ -281,16 +280,15 @@ object linkTypesMod {
     }
   }
   
-  @js.native
   trait ILinkStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var isButton: js.UndefOr[Boolean] = js.native
+    var isButton: js.UndefOr[Boolean] = js.undefined
     
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ILinkStyleProps {
     
@@ -326,10 +324,9 @@ object linkTypesMod {
     }
   }
   
-  @js.native
   trait ILinkStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object ILinkStyles {
     

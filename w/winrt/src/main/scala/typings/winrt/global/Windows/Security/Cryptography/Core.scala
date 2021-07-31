@@ -3,7 +3,6 @@ package typings.winrt.global.Windows.Security.Cryptography
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Core {
@@ -11,7 +10,8 @@ object Core {
   @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames")
   @js.native
   class AsymmetricAlgorithmNames ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames
   /* static members */
   object AsymmetricAlgorithmNames {
     
@@ -131,79 +131,90 @@ object Core {
   @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
   @js.native
   class AsymmetricKeyAlgorithmProvider ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider
   /* static members */
   object AsymmetricKeyAlgorithmProvider {
     
-    @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider.openAlgorithm")
+    @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
     @js.native
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
   @js.native
   class CryptographicEngine ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.CryptographicEngine
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.CryptographicEngine
   /* static members */
   object CryptographicEngine {
     
-    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine.decrypt")
+    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
     @js.native
-    def decrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine.decryptAndAuthenticate")
-    @js.native
+    @scala.inline
+    def decrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
+    
+    @scala.inline
     def decryptAndAuthenticate(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       data: IBuffer,
       nonce: IBuffer,
       authenticationTag: IBuffer,
       authenticatedData: IBuffer
-    ): IBuffer = js.native
+    ): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptAndAuthenticate")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], authenticationTag.asInstanceOf[js.Any], authenticatedData.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine.deriveKeyMaterial")
-    @js.native
+    @scala.inline
     def deriveKeyMaterial(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       parameters: typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters,
       desiredKeySize: Double
-    ): IBuffer = js.native
+    ): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("deriveKeyMaterial")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], desiredKeySize.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine.encrypt")
-    @js.native
-    def encrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = js.native
+    @scala.inline
+    def encrypt(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine.encryptAndAuthenticate")
-    @js.native
+    @scala.inline
     def encryptAndAuthenticate(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       data: IBuffer,
       nonce: IBuffer,
       authenticatedData: IBuffer
-    ): typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData = js.native
+    ): typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptAndAuthenticate")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], authenticatedData.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData]
     
-    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine.sign")
-    @js.native
-    def sign(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IBuffer = js.native
+    @scala.inline
+    def sign(key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey, data: IBuffer): IBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[IBuffer]
     
-    @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine.verifySignature")
-    @js.native
+    @scala.inline
     def verifySignature(
       key: typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey,
       data: IBuffer,
       signature: IBuffer
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifySignature")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicHash")
   @js.native
   class CryptographicHash ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.CryptographicHash
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.CryptographicHash {
+    
+    /* CompleteClass */
+    override def append(data: IBuffer): Unit = js.native
+    
+    /* CompleteClass */
+    override def getValueAndReset(): IBuffer = js.native
+  }
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicKey")
   @js.native
   class CryptographicKey ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType")
   @js.native
@@ -211,16 +222,16 @@ object Core {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType with Double
+        typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType & Double
       ] = js.native
     
-    /* 2 */ val bCryptPrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.bCryptPrivateKey with Double = js.native
+    /* 2 */ val bCryptPrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.bCryptPrivateKey & Double = js.native
     
-    /* 3 */ val capi1PrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.capi1PrivateKey with Double = js.native
+    /* 3 */ val capi1PrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.capi1PrivateKey & Double = js.native
     
-    /* 1 */ val pkcs1RsaPrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs1RsaPrivateKey with Double = js.native
+    /* 1 */ val pkcs1RsaPrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs1RsaPrivateKey & Double = js.native
     
-    /* 0 */ val pkcs8RawPrivateKeyInfo: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs8RawPrivateKeyInfo with Double = js.native
+    /* 0 */ val pkcs8RawPrivateKeyInfo: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs8RawPrivateKeyInfo & Double = js.native
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType")
@@ -229,27 +240,36 @@ object Core {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType with Double
+        typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType & Double
       ] = js.native
     
-    /* 2 */ val bCryptPublicKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bCryptPublicKey with Double = js.native
+    /* 2 */ val bCryptPublicKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bCryptPublicKey & Double = js.native
     
-    /* 3 */ val capi1PublicKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.capi1PublicKey with Double = js.native
+    /* 3 */ val capi1PublicKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.capi1PublicKey & Double = js.native
     
-    /* 1 */ val pkcs1RsaPublicKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.pkcs1RsaPublicKey with Double = js.native
+    /* 1 */ val pkcs1RsaPublicKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.pkcs1RsaPublicKey & Double = js.native
     
-    /* 0 */ val x509SubjectPublicKeyInfo: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.x509SubjectPublicKeyInfo with Double = js.native
+    /* 0 */ val x509SubjectPublicKeyInfo: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.x509SubjectPublicKeyInfo & Double = js.native
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData")
   @js.native
   class EncryptedAndAuthenticatedData ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData {
+    
+    /* CompleteClass */
+    var authenticationTag: IBuffer = js.native
+    
+    /* CompleteClass */
+    var encryptedData: IBuffer = js.native
+  }
   
   @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmNames")
   @js.native
   class HashAlgorithmNames ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmNames
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmNames
   /* static members */
   object HashAlgorithmNames {
     
@@ -291,19 +311,37 @@ object Core {
   @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
   @js.native
   class HashAlgorithmProvider ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider {
+    
+    /* CompleteClass */
+    var algorithmName: String = js.native
+    
+    /* CompleteClass */
+    override def createHash(): typings.winrt.Windows.Security.Cryptography.Core.CryptographicHash = js.native
+    
+    /* CompleteClass */
+    override def hashData(data: IBuffer): IBuffer = js.native
+    
+    /* CompleteClass */
+    var hashLength: Double = js.native
+  }
   /* static members */
   object HashAlgorithmProvider {
     
-    @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider.openAlgorithm")
+    @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
     @js.native
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.HashAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames")
   @js.native
   class KeyDerivationAlgorithmNames ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames
   /* static members */
   object KeyDerivationAlgorithmNames {
     
@@ -405,45 +443,66 @@ object Core {
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
   @js.native
   class KeyDerivationAlgorithmProvider ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider {
+    
+    /* CompleteClass */
+    var algorithmName: String = js.native
+    
+    /* CompleteClass */
+    override def createKey(keyMaterial: IBuffer): typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey = js.native
+  }
   /* static members */
   object KeyDerivationAlgorithmProvider {
     
-    @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider.openAlgorithm")
+    @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
     @js.native
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
   @js.native
   class KeyDerivationParameters ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters {
+    
+    /* CompleteClass */
+    var iterationCount: Double = js.native
+    
+    /* CompleteClass */
+    var kdfGenericBinary: IBuffer = js.native
+  }
   /* static members */
   object KeyDerivationParameters {
     
-    @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters.buildForPbkdf2")
+    @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
     @js.native
-    def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters.buildForSP800108")
-    @js.native
-    def buildForSP800108(label: IBuffer, context: IBuffer): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = js.native
+    @scala.inline
+    def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForPbkdf2")(pbkdf2Salt.asInstanceOf[js.Any], iterationCount.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters]
     
-    @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters.buildForSP80056a")
-    @js.native
+    @scala.inline
+    def buildForSP800108(label: IBuffer, context: IBuffer): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForSP800108")(label.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters]
+    
+    @scala.inline
     def buildForSP80056a(
       algorithmId: IBuffer,
       partyUInfo: IBuffer,
       partyVInfo: IBuffer,
       suppPubInfo: IBuffer,
       suppPrivInfo: IBuffer
-    ): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = js.native
+    ): typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForSP80056a")(algorithmId.asInstanceOf[js.Any], partyUInfo.asInstanceOf[js.Any], partyVInfo.asInstanceOf[js.Any], suppPubInfo.asInstanceOf[js.Any], suppPrivInfo.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames")
   @js.native
   class MacAlgorithmNames ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmNames
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmNames
   /* static members */
   object MacAlgorithmNames {
     
@@ -491,19 +550,34 @@ object Core {
   @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
   @js.native
   class MacAlgorithmProvider ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider {
+    
+    /* CompleteClass */
+    var algorithmName: String = js.native
+    
+    /* CompleteClass */
+    override def createKey(keyMaterial: IBuffer): typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey = js.native
+    
+    /* CompleteClass */
+    var macLength: Double = js.native
+  }
   /* static members */
   object MacAlgorithmProvider {
     
-    @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider.openAlgorithm")
+    @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
     @js.native
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.MacAlgorithmProvider]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames")
   @js.native
   class SymmetricAlgorithmNames ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.SymmetricAlgorithmNames
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.SymmetricAlgorithmNames
   /* static members */
   object SymmetricAlgorithmNames {
     
@@ -637,12 +711,26 @@ object Core {
   @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
   @js.native
   class SymmetricKeyAlgorithmProvider ()
-    extends typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider
+    extends StObject
+       with typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider {
+    
+    /* CompleteClass */
+    var algorithmName: String = js.native
+    
+    /* CompleteClass */
+    var blockLength: Double = js.native
+    
+    /* CompleteClass */
+    override def createSymmetricKey(keyMaterial: IBuffer): typings.winrt.Windows.Security.Cryptography.Core.CryptographicKey = js.native
+  }
   /* static members */
   object SymmetricKeyAlgorithmProvider {
     
-    @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider.openAlgorithm")
+    @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
     @js.native
-    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openAlgorithm(algorithm: String): typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("openAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider]
   }
 }

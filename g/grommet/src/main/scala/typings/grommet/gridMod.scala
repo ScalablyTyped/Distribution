@@ -37,61 +37,57 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
   
   @JSImport("grommet/components/Grid", "Grid")
   @js.native
-  val Grid: FC[
-    GridProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Grid: FC[GridProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
-  @js.native
   trait GridProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var align: js.UndefOr[start | center | end | stretch] = js.native
+    var align: js.UndefOr[start | center | end | stretch] = js.undefined
     
-    var alignContent: js.UndefOr[AlignContentType] = js.native
+    var alignContent: js.UndefOr[AlignContentType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var areas: js.UndefOr[js.Array[js.Array[String] | End]] = js.native
+    var areas: js.UndefOr[js.Array[js.Array[String] | End]] = js.undefined
     
-    var as: js.UndefOr[PolymorphicType] = js.native
+    var as: js.UndefOr[PolymorphicType] = js.undefined
     
     var columns: js.UndefOr[
         (js.Array[
           xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
         ]) | xsmall | small | medium | large | xlarge | Count | String
-      ] = js.native
+      ] = js.undefined
     
-    var fill: js.UndefOr[FillType] = js.native
+    var fill: js.UndefOr[FillType] = js.undefined
     
-    var gap: js.UndefOr[GapType | Column] = js.native
+    var gap: js.UndefOr[GapType | Column] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var justify: js.UndefOr[start | center | end | stretch] = js.native
+    var justify: js.UndefOr[start | center | end | stretch] = js.undefined
     
-    var justifyContent: js.UndefOr[JustifyContentType] = js.native
+    var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var pad: js.UndefOr[PadType] = js.native
+    var pad: js.UndefOr[PadType] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
     var rows: js.UndefOr[
         (js.Array[
           xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
         ]) | xsmall | small | medium | large | xlarge | String
-      ] = js.native
+      ] = js.undefined
     
-    var tag: js.UndefOr[PolymorphicType] = js.native
+    var tag: js.UndefOr[PolymorphicType] = js.undefined
   }
   object GridProps {
     

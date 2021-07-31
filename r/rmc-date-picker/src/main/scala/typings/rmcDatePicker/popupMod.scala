@@ -5,7 +5,6 @@ import typings.react.mod.ReactElement
 import typings.rmcPicker.popupPickerTypesMod.IPopupPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupMod {
@@ -36,14 +35,15 @@ object popupMod {
     }
   }
   
-  @js.native
-  trait IPopupDatePickerProps extends IPopupPickerProps {
+  trait IPopupDatePickerProps
+    extends StObject
+       with IPopupPickerProps {
     
-    var date: js.UndefOr[js.Any] = js.native
+    var date: js.UndefOr[js.Any] = js.undefined
     
-    var datePicker: ReactElement = js.native
+    var datePicker: ReactElement
     
-    var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Any], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IPopupDatePickerProps {
     

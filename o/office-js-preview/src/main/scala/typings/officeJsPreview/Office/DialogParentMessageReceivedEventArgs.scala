@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link Office.UI} object.
   *
   */
-@js.native
 trait DialogParentMessageReceivedEventArgs extends StObject {
   
   /**
     * Gets the content of the message sent from the parent page, which can be any string or stringified data.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Get an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
     */
-  var `type`: EventType = js.native
+  var `type`: EventType
 }
 object DialogParentMessageReceivedEventArgs {
   

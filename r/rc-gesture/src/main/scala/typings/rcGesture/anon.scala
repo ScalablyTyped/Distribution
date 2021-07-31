@@ -5,21 +5,19 @@ import typings.rcGesture.mod.MultiFingerStatus
 import typings.rcGesture.mod.SingeFingerMoveStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Angle extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object Angle {
     
@@ -46,44 +44,43 @@ object anon {
     }
   }
   
-  @js.native
   trait AvailablePan extends StObject {
     
-    var availablePan: js.UndefOr[Boolean] = js.native
+    var availablePan: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[Double] = js.native
+    var direction: js.UndefOr[Double] = js.undefined
     
-    var moveStatus: js.UndefOr[SingeFingerMoveStatus] = js.native
+    var moveStatus: js.UndefOr[SingeFingerMoveStatus] = js.undefined
     
-    var mutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.native
+    var mutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
     
-    var pan: js.UndefOr[Boolean] = js.native
+    var pan: js.UndefOr[Boolean] = js.undefined
     
-    var pinch: js.UndefOr[Boolean] = js.native
+    var pinch: js.UndefOr[Boolean] = js.undefined
     
-    var preTouches: js.Array[Finger] = js.native
+    var preTouches: js.Array[Finger]
     
-    var press: js.UndefOr[Boolean] = js.native
+    var press: js.UndefOr[Boolean] = js.undefined
     
-    var rotate: js.UndefOr[Boolean] = js.native
+    var rotate: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var srcEvent: js.Any = js.native
+    var srcEvent: js.Any
     
-    var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.native
+    var startMutliFingerStatus: js.UndefOr[js.Array[MultiFingerStatus]] = js.undefined
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var startTouches: js.Array[Finger] = js.native
+    var startTouches: js.Array[Finger]
     
-    var swipe: js.UndefOr[Boolean] = js.native
+    var swipe: js.UndefOr[Boolean] = js.undefined
     
-    var time: Double = js.native
+    var time: Double
     
-    var touches: js.Array[Finger] = js.native
+    var touches: js.Array[Finger]
   }
   object AvailablePan {
     
@@ -210,14 +207,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Direction extends StObject {
     
-    var direction: String = js.native
+    var direction: String
     
-    var enablePinch: Boolean = js.native
+    var enablePinch: Boolean
     
-    var enableRotate: Boolean = js.native
+    var enableRotate: Boolean
   }
   object Direction {
     
@@ -241,20 +237,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Time extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var time: js.Any = js.native
+    var time: js.Any
     
-    var velocity: Double = js.native
+    var velocity: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object Time {
     

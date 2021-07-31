@@ -2,42 +2,40 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitCCPOptions extends StObject {
   
   /**
     * The URL of the CCP.
     * This is the page you would normally navigate to in order to use the CCP in a standalone page, it is different for each instance.
     */
-  val ccpUrl: String = js.native
+  val ccpUrl: String
   
   /**
     * Set to `false` to disable the login popup which is shown when the user's authentication expires.
     * @default true
     */
-  val loginPopup: js.UndefOr[Boolean] = js.native
+  val loginPopup: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to `true` in conjunction with the `loginPopup` parameter to automatically close the login Popup window once the authentication step has completed.
     * If the login page opened in a new tab, this parameter will also auto-close that tab.
     * @default false
     */
-  val loginPopupAutoClose: js.UndefOr[Boolean] = js.native
+  val loginPopupAutoClose: js.UndefOr[Boolean] = js.undefined
   
   /** Allows custom URL to be used to initiate the ccp, as in the case of SAML authentication. */
-  val loginUrl: js.UndefOr[String] = js.native
+  val loginUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon connect instance region. Only required for chat channel.
     * @example "us-west-2"
     */
-  val region: js.UndefOr[String] = js.native
+  val region: js.UndefOr[String] = js.undefined
   
   /** Allows you to specify some settings surrounding the softphone feature of Connect. */
-  val softphone: js.UndefOr[SoftPhoneOptions] = js.native
+  val softphone: js.UndefOr[SoftPhoneOptions] = js.undefined
 }
 object InitCCPOptions {
   

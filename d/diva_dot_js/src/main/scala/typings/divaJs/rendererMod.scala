@@ -5,42 +5,69 @@ import typings.divaJs.interfacesMod.SourceProvider
 import typings.divaJs.interfacesMod.ViewportPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rendererMod {
   
   @JSImport("diva.js/renderer", JSImport.Default)
   @js.native
-  class default protected () extends Renderer {
+  class default protected ()
+    extends StObject
+       with Renderer {
     def this(options: RendererConfig, hooks: js.Object) = this()
+    
+    /* CompleteClass */
+    override def adjust(): Unit = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getRenderedPages(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def goto(pageIndex: Double, verticalOffset: Double, horizontalOffset: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def isPageVisible(pageIndex: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    var layout: typings.divaJs.documentLayoutMod.default | Null = js.native
+    
+    /* CompleteClass */
+    override def load(config: js.Object, viewportPosition: ViewportPosition, sourceResolver: SourceProvider): Unit = js.native
+    
+    /* CompleteClass */
+    override def transitionViewportPosition(options: js.Object): Unit = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("diva.js/renderer", "default.getCompatibilityErrors")
+    @JSImport("diva.js/renderer", JSImport.Default)
     @js.native
-    def getCompatibilityErrors(): String | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getCompatibilityErrors(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompatibilityErrors")().asInstanceOf[String | Null]
   }
   
-  @js.native
   trait Renderer extends StObject {
     
-    def adjust(): Unit = js.native
+    def adjust(): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getRenderedPages(): js.Any = js.native
+    def getRenderedPages(): js.Any
     
-    def goto(pageIndex: Double, verticalOffset: Double, horizontalOffset: Double): Unit = js.native
+    def goto(pageIndex: Double, verticalOffset: Double, horizontalOffset: Double): Unit
     
-    def isPageVisible(pageIndex: Double): Boolean = js.native
+    def isPageVisible(pageIndex: Double): Boolean
     
-    var layout: typings.divaJs.documentLayoutMod.default | Null = js.native
+    var layout: typings.divaJs.documentLayoutMod.default | Null
     
-    def load(config: js.Object, viewportPosition: ViewportPosition, sourceResolver: SourceProvider): Unit = js.native
+    def load(config: js.Object, viewportPosition: ViewportPosition, sourceResolver: SourceProvider): Unit
     
-    def transitionViewportPosition(options: js.Object): Unit = js.native
+    def transitionViewportPosition(options: js.Object): Unit
   }
   object Renderer {
     
@@ -54,7 +81,7 @@ object rendererMod {
       load: (js.Object, ViewportPosition, SourceProvider) => Unit,
       transitionViewportPosition: js.Object => Unit
     ): Renderer = {
-      val __obj = js.Dynamic.literal(adjust = js.Any.fromFunction0(adjust), destroy = js.Any.fromFunction0(destroy), getRenderedPages = js.Any.fromFunction0(getRenderedPages), goto = js.Any.fromFunction3(goto), isPageVisible = js.Any.fromFunction1(isPageVisible), load = js.Any.fromFunction3(load), transitionViewportPosition = js.Any.fromFunction1(transitionViewportPosition))
+      val __obj = js.Dynamic.literal(adjust = js.Any.fromFunction0(adjust), destroy = js.Any.fromFunction0(destroy), getRenderedPages = js.Any.fromFunction0(getRenderedPages), goto = js.Any.fromFunction3(goto), isPageVisible = js.Any.fromFunction1(isPageVisible), load = js.Any.fromFunction3(load), transitionViewportPosition = js.Any.fromFunction1(transitionViewportPosition), layout = null)
       __obj.asInstanceOf[Renderer]
     }
     

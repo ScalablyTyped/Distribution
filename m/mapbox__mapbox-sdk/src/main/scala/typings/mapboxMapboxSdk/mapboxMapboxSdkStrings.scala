@@ -17,13 +17,14 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapboxProfile
 import typings.mapboxMapboxSdk.tilequeryMod.GeometryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapboxMapboxSdkStrings {
   
   @js.native
-  sealed trait address extends GeocodeQueryType
+  sealed trait address
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   
@@ -34,7 +35,8 @@ object mapboxMapboxSdkStrings {
   
   @js.native
   sealed trait arrive
-    extends ManeuverModifier
+    extends StObject
+       with ManeuverModifier
        with ManeuverType
   @scala.inline
   def arrive: arrive = "arrive".asInstanceOf[arrive]
@@ -45,28 +47,37 @@ object mapboxMapboxSdkStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait congestion extends DirectionsAnnotation
+  sealed trait congestion
+    extends StObject
+       with DirectionsAnnotation
   @scala.inline
   def congestion: congestion = "congestion".asInstanceOf[congestion]
   
   @js.native
-  sealed trait continue extends ManeuverType
+  sealed trait continue
+    extends StObject
+       with ManeuverType
   @scala.inline
   def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait country extends GeocodeQueryType
+  sealed trait country
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def country: country = "country".asInstanceOf[country]
   
   @js.native
-  sealed trait curb extends DirectionsApproach
+  sealed trait curb
+    extends StObject
+       with DirectionsApproach
   @scala.inline
   def curb: curb = "curb".asInstanceOf[curb]
   
   @js.native
   sealed trait cycling
-    extends DirectionsMode
+    extends StObject
+       with DirectionsMode
        with DirectionsProfile
        with MapboxProfile
   @scala.inline
@@ -74,51 +85,67 @@ object mapboxMapboxSdkStrings {
   
   @js.native
   sealed trait depart
-    extends ManeuverModifier
+    extends StObject
+       with ManeuverModifier
        with ManeuverType
   @scala.inline
   def depart: depart = "depart".asInstanceOf[depart]
   
   @js.native
-  sealed trait distance extends DirectionsAnnotation
+  sealed trait distance
+    extends StObject
+       with DirectionsAnnotation
   @scala.inline
   def distance: distance = "distance".asInstanceOf[distance]
   
   @js.native
-  sealed trait district extends GeocodeQueryType
+  sealed trait district
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def district: district = "district".asInstanceOf[district]
   
   @js.native
   sealed trait driving
-    extends DirectionsMode
+    extends StObject
+       with DirectionsMode
        with DirectionsProfile
        with MapboxProfile
   @scala.inline
   def driving: driving = "driving".asInstanceOf[driving]
   
   @js.native
-  sealed trait `driving-traffic` extends DirectionsProfile
+  sealed trait `driving-traffic`
+    extends StObject
+       with DirectionsProfile
   @scala.inline
   def `driving-traffic`: `driving-traffic` = "driving-traffic".asInstanceOf[`driving-traffic`]
   
   @js.native
-  sealed trait duration extends DirectionsAnnotation
+  sealed trait duration
+    extends StObject
+       with DirectionsAnnotation
   @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
-  sealed trait `end of road` extends ManeuverType
+  sealed trait `end of road`
+    extends StObject
+       with ManeuverType
   @scala.inline
   def `end of road`: `end of road` = ("end of road").asInstanceOf[`end of road`]
   
   @js.native
-  sealed trait `exit rotary` extends ManeuverType
+  sealed trait `exit rotary`
+    extends StObject
+       with ManeuverType
   @scala.inline
   def `exit rotary`: `exit rotary` = ("exit rotary").asInstanceOf[`exit rotary`]
   
   @js.native
-  sealed trait `exit roundabout` extends ManeuverType
+  sealed trait `exit roundabout`
+    extends StObject
+       with ManeuverType
   @scala.inline
   def `exit roundabout`: `exit roundabout` = ("exit roundabout").asInstanceOf[`exit roundabout`]
   
@@ -129,7 +156,8 @@ object mapboxMapboxSdkStrings {
   
   @js.native
   sealed trait ferry
-    extends DirectionsClass
+    extends StObject
+       with DirectionsClass
        with DirectionsMode
   @scala.inline
   def ferry: ferry = "ferry".asInstanceOf[ferry]
@@ -140,22 +168,30 @@ object mapboxMapboxSdkStrings {
   def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait fork extends ManeuverType
+  sealed trait fork
+    extends StObject
+       with ManeuverType
   @scala.inline
   def fork: fork = "fork".asInstanceOf[fork]
   
   @js.native
-  sealed trait full extends DirectionsOverview
+  sealed trait full
+    extends StObject
+       with DirectionsOverview
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait geojson extends DirectionsGeometry
+  sealed trait geojson
+    extends StObject
+       with DirectionsGeometry
   @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
   
   @js.native
-  sealed trait imperial extends DirectionsUnits
+  sealed trait imperial
+    extends StObject
+       with DirectionsUnits
   @scala.inline
   def imperial: imperial = "imperial".asInstanceOf[imperial]
   
@@ -176,73 +212,100 @@ object mapboxMapboxSdkStrings {
   
   @js.native
   sealed trait left
-    extends DirectionsSide
+    extends StObject
+       with DirectionsSide
        with ManeuverModifier
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait linestring extends GeometryType
+  sealed trait linestring
+    extends StObject
+       with GeometryType
   @scala.inline
   def linestring: linestring = "linestring".asInstanceOf[linestring]
   
   @js.native
-  sealed trait locality extends GeocodeQueryType
+  sealed trait locality
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def locality: locality = "locality".asInstanceOf[locality]
   
   @js.native
-  sealed trait mapboxDotplaces extends GeocodeMode
+  sealed trait mapboxDotplaces
+    extends StObject
+       with GeocodeMode
   @scala.inline
   def mapboxDotplaces: mapboxDotplaces = "mapbox.places".asInstanceOf[mapboxDotplaces]
   
   @js.native
-  sealed trait `mapboxDotplaces-permanent` extends GeocodeMode
+  sealed trait `mapboxDotplaces-permanent`
+    extends StObject
+       with GeocodeMode
   @scala.inline
   def `mapboxDotplaces-permanent`: `mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[`mapboxDotplaces-permanent`]
   
   @js.native
-  sealed trait merge extends ManeuverType
+  sealed trait merge
+    extends StObject
+       with ManeuverType
   @scala.inline
   def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
-  sealed trait metric extends DirectionsUnits
+  sealed trait metric
+    extends StObject
+       with DirectionsUnits
   @scala.inline
   def metric: metric = "metric".asInstanceOf[metric]
   
   @js.native
-  sealed trait motorway extends DirectionsClass
+  sealed trait motorway
+    extends StObject
+       with DirectionsClass
   @scala.inline
   def motorway: motorway = "motorway".asInstanceOf[motorway]
   
   @js.native
-  sealed trait neighborhood extends GeocodeQueryType
+  sealed trait neighborhood
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def neighborhood: neighborhood = "neighborhood".asInstanceOf[neighborhood]
   
   @js.native
-  sealed trait `new name` extends ManeuverType
+  sealed trait `new name`
+    extends StObject
+       with ManeuverType
   @scala.inline
   def `new name`: `new name` = ("new name").asInstanceOf[`new name`]
   
   @js.native
-  sealed trait notification extends ManeuverType
+  sealed trait notification
+    extends StObject
+       with ManeuverType
   @scala.inline
   def notification: notification = "notification".asInstanceOf[notification]
   
   @js.native
-  sealed trait `off ramp` extends ManeuverType
+  sealed trait `off ramp`
+    extends StObject
+       with ManeuverType
   @scala.inline
   def `off ramp`: `off ramp` = ("off ramp").asInstanceOf[`off ramp`]
   
   @js.native
-  sealed trait `on ramp` extends ManeuverType
+  sealed trait `on ramp`
+    extends StObject
+       with ManeuverType
   @scala.inline
   def `on ramp`: `on ramp` = ("on ramp").asInstanceOf[`on ramp`]
   
   @js.native
-  sealed trait place extends GeocodeQueryType
+  sealed trait place
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def place: place = "place".asInstanceOf[place]
   
@@ -252,94 +315,129 @@ object mapboxMapboxSdkStrings {
   def png: png = "png".asInstanceOf[png]
   
   @js.native
-  sealed trait poi extends GeocodeQueryType
+  sealed trait poi
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def poi: poi = "poi".asInstanceOf[poi]
   
   @js.native
-  sealed trait poiDotlandmark extends GeocodeQueryType
+  sealed trait poiDotlandmark
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def poiDotlandmark: poiDotlandmark = "poi.landmark".asInstanceOf[poiDotlandmark]
   
   @js.native
-  sealed trait point extends GeometryType
+  sealed trait point
+    extends StObject
+       with GeometryType
   @scala.inline
   def point: point = "point".asInstanceOf[point]
   
   @js.native
-  sealed trait polygon extends GeometryType
+  sealed trait polygon
+    extends StObject
+       with GeometryType
   @scala.inline
   def polygon: polygon = "polygon".asInstanceOf[polygon]
   
   @js.native
-  sealed trait polyline extends DirectionsGeometry
+  sealed trait polyline
+    extends StObject
+       with DirectionsGeometry
   @scala.inline
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait polyline6 extends DirectionsGeometry
+  sealed trait polyline6
+    extends StObject
+       with DirectionsGeometry
   @scala.inline
   def polyline6: polyline6 = "polyline6".asInstanceOf[polyline6]
   
   @js.native
-  sealed trait postcode extends GeocodeQueryType
+  sealed trait postcode
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def postcode: postcode = "postcode".asInstanceOf[postcode]
   
   @js.native
-  sealed trait region extends GeocodeQueryType
+  sealed trait region
+    extends StObject
+       with GeocodeQueryType
   @scala.inline
   def region: region = "region".asInstanceOf[region]
   
   @js.native
-  sealed trait restricted extends DirectionsClass
+  sealed trait restricted
+    extends StObject
+       with DirectionsClass
   @scala.inline
   def restricted: restricted = "restricted".asInstanceOf[restricted]
   
   @js.native
   sealed trait right
-    extends DirectionsSide
+    extends StObject
+       with DirectionsSide
        with ManeuverModifier
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rotary extends ManeuverType
+  sealed trait rotary
+    extends StObject
+       with ManeuverType
   @scala.inline
   def rotary: rotary = "rotary".asInstanceOf[rotary]
   
   @js.native
-  sealed trait roundabout extends ManeuverType
+  sealed trait roundabout
+    extends StObject
+       with ManeuverType
   @scala.inline
   def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
   
   @js.native
-  sealed trait `roundabout turn` extends ManeuverType
+  sealed trait `roundabout turn`
+    extends StObject
+       with ManeuverType
   @scala.inline
   def `roundabout turn`: `roundabout turn` = ("roundabout turn").asInstanceOf[`roundabout turn`]
   
   @js.native
-  sealed trait `sharp left` extends ManeuverModifier
+  sealed trait `sharp left`
+    extends StObject
+       with ManeuverModifier
   @scala.inline
   def `sharp left`: `sharp left` = ("sharp left").asInstanceOf[`sharp left`]
   
   @js.native
-  sealed trait `sharp right` extends ManeuverModifier
+  sealed trait `sharp right`
+    extends StObject
+       with ManeuverModifier
   @scala.inline
   def `sharp right`: `sharp right` = ("sharp right").asInstanceOf[`sharp right`]
   
   @js.native
-  sealed trait simplified extends DirectionsOverview
+  sealed trait simplified
+    extends StObject
+       with DirectionsOverview
   @scala.inline
   def simplified: simplified = "simplified".asInstanceOf[simplified]
   
   @js.native
-  sealed trait `slight left` extends ManeuverModifier
+  sealed trait `slight left`
+    extends StObject
+       with ManeuverModifier
   @scala.inline
   def `slight left`: `slight left` = ("slight left").asInstanceOf[`slight left`]
   
   @js.native
-  sealed trait `slight right` extends ManeuverModifier
+  sealed trait `slight right`
+    extends StObject
+       with ManeuverModifier
   @scala.inline
   def `slight right`: `slight right` = ("slight right").asInstanceOf[`slight right`]
   
@@ -349,37 +447,51 @@ object mapboxMapboxSdkStrings {
   def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait speed extends DirectionsAnnotation
+  sealed trait speed
+    extends StObject
+       with DirectionsAnnotation
   @scala.inline
   def speed: speed = "speed".asInstanceOf[speed]
   
   @js.native
-  sealed trait straight extends ManeuverModifier
+  sealed trait straight
+    extends StObject
+       with ManeuverModifier
   @scala.inline
   def straight: straight = "straight".asInstanceOf[straight]
   
   @js.native
-  sealed trait toll extends DirectionsClass
+  sealed trait toll
+    extends StObject
+       with DirectionsClass
   @scala.inline
   def toll: toll = "toll".asInstanceOf[toll]
   
   @js.native
-  sealed trait train extends DirectionsMode
+  sealed trait train
+    extends StObject
+       with DirectionsMode
   @scala.inline
   def train: train = "train".asInstanceOf[train]
   
   @js.native
-  sealed trait tunnel extends DirectionsClass
+  sealed trait tunnel
+    extends StObject
+       with DirectionsClass
   @scala.inline
   def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
   
   @js.native
-  sealed trait turn extends ManeuverType
+  sealed trait turn
+    extends StObject
+       with ManeuverType
   @scala.inline
   def turn: turn = "turn".asInstanceOf[turn]
   
   @js.native
-  sealed trait unaccessible extends DirectionsMode
+  sealed trait unaccessible
+    extends StObject
+       with DirectionsMode
   @scala.inline
   def unaccessible: unaccessible = "unaccessible".asInstanceOf[unaccessible]
   
@@ -389,18 +501,23 @@ object mapboxMapboxSdkStrings {
   def unlimited: unlimited = "unlimited".asInstanceOf[unlimited]
   
   @js.native
-  sealed trait unrestricted extends DirectionsApproach
+  sealed trait unrestricted
+    extends StObject
+       with DirectionsApproach
   @scala.inline
   def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
   
   @js.native
-  sealed trait uturn extends ManeuverModifier
+  sealed trait uturn
+    extends StObject
+       with ManeuverModifier
   @scala.inline
   def uturn: uturn = "uturn".asInstanceOf[uturn]
   
   @js.native
   sealed trait walking
-    extends DirectionsMode
+    extends StObject
+       with DirectionsMode
        with DirectionsProfile
        with MapboxProfile
   @scala.inline

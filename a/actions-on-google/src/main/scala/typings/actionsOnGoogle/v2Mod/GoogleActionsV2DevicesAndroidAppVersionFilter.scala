@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2DevicesAndroidAppVersionFilter extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait GoogleActionsV2DevicesAndroidAppVersionFilter extends StObject {
     * To specify all versions until max_version, leave min_version unspecified.
     * To specify all versions from min_version, leave max_version unspecified.
     */
-  var maxVersion: js.UndefOr[Double] = js.native
+  var maxVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * Min version code or 0, inclusive.
     */
-  var minVersion: js.UndefOr[Double] = js.native
+  var minVersion: js.UndefOr[Double] = js.undefined
 }
 object GoogleActionsV2DevicesAndroidAppVersionFilter {
   

@@ -4,17 +4,15 @@ import typings.plotlyJs.anon.PartialConfig
 import typings.plotlyJs.anon.PartialLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeforePlotEvent extends StObject {
   
-  var config: PartialConfig = js.native
+  var config: PartialConfig
   
-  var data: js.Array[Data] = js.native
+  var data: js.Array[Data]
   
-  var layout: PartialLayout = js.native
+  var layout: PartialLayout
 }
 object BeforePlotEvent {
   

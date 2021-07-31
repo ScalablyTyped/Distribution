@@ -2,13 +2,13 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataHTMLAttributes[T] extends HTMLAttributes[T] {
+trait DataHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
 }
 object DataHTMLAttributes {
   
@@ -19,7 +19,7 @@ object DataHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DataHTMLAttributesMutableBuilder[Self <: DataHTMLAttributes[_], T] (val x: Self with DataHTMLAttributes[T]) extends AnyVal {
+  implicit class DataHTMLAttributesMutableBuilder[Self <: DataHTMLAttributes[?], T] (val x: Self & DataHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

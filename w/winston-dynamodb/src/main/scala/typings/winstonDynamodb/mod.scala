@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,8 @@ object mod {
   @JSImport("winston-dynamodb", "DynamoDB")
   @js.native
   class DynamoDB ()
-    extends Transport
+    extends StObject
+       with Transport
        with DynamoDBTransportInstance {
     def this(options: DynamoDBTransportOptions) = this()
     
@@ -39,25 +39,25 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransportInstance * / any */ @js.native
   trait DynamoDBTransportInstance
-    extends Instantiable0[DynamoDBTransportInstance]
+    extends StObject
+       with Instantiable0[DynamoDBTransportInstance]
        with Instantiable1[/* options */ DynamoDBTransportOptions, DynamoDBTransportInstance]
   
-  @js.native
   trait DynamoDBTransportOptions extends StObject {
     
-    var accessKeyId: js.UndefOr[String] = js.native
+    var accessKeyId: js.UndefOr[String] = js.undefined
     
-    var dynamoDoc: js.UndefOr[Boolean] = js.native
+    var dynamoDoc: js.UndefOr[Boolean] = js.undefined
     
-    var level: String = js.native
+    var level: String
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var secretAccessKey: js.UndefOr[String] = js.native
+    var secretAccessKey: js.UndefOr[String] = js.undefined
     
-    var tableName: String = js.native
+    var tableName: String
     
-    var useEnvironment: js.UndefOr[Boolean] = js.native
+    var useEnvironment: js.UndefOr[Boolean] = js.undefined
   }
   object DynamoDBTransportOptions {
     
@@ -111,10 +111,9 @@ object mod {
   /* augmented module */
   object winstonAugmentingMod {
     
-    @js.native
     trait Transports extends StObject {
       
-      var DynamoDB: typings.winstonDynamodb.mod.DynamoDB = js.native
+      var DynamoDB: typings.winstonDynamodb.mod.DynamoDB
     }
     object Transports {
       

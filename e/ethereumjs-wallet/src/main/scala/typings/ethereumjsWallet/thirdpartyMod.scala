@@ -3,10 +3,13 @@ package typings.ethereumjsWallet
 import typings.ethereumjsWallet.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thirdpartyMod {
+  
+  @JSImport("ethereumjs-wallet/dist/thirdparty", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -17,9 +20,8 @@ object thirdpartyMod {
     @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromEtherCamp")
     @js.native
     def fromEtherCamp: js.Function1[/* passphrase */ String, typings.ethereumjsWallet.mod.default] = js.native
-    @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromEtherCamp")
-    @js.native
-    def fromEtherCamp(passphrase: String): typings.ethereumjsWallet.mod.default = js.native
+    @scala.inline
+    def fromEtherCamp(passphrase: String): typings.ethereumjsWallet.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherCamp")(passphrase.asInstanceOf[js.Any]).asInstanceOf[typings.ethereumjsWallet.mod.default]
     @scala.inline
     def fromEtherCamp_=(x: js.Function1[/* passphrase */ String, typings.ethereumjsWallet.mod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEtherCamp")(x.asInstanceOf[js.Any])
     
@@ -30,12 +32,10 @@ object thirdpartyMod {
         /* password */ String, 
         typings.ethereumjsWallet.mod.default
       ] = js.native
-    @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromEtherWallet")
-    @js.native
-    def fromEtherWallet(input: String, password: String): typings.ethereumjsWallet.mod.default = js.native
-    @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromEtherWallet")
-    @js.native
-    def fromEtherWallet(input: EtherWalletOptions, password: String): typings.ethereumjsWallet.mod.default = js.native
+    @scala.inline
+    def fromEtherWallet(input: String, password: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
+    @scala.inline
+    def fromEtherWallet(input: EtherWalletOptions, password: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
     @scala.inline
     def fromEtherWallet_=(
       x: js.Function2[
@@ -52,9 +52,8 @@ object thirdpartyMod {
         /* password */ String, 
         js.Promise[typings.ethereumjsWallet.mod.default]
       ] = js.native
-    @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromKryptoKit")
-    @js.native
-    def fromKryptoKit(entropy: String, password: String): js.Promise[typings.ethereumjsWallet.mod.default] = js.native
+    @scala.inline
+    def fromKryptoKit(entropy: String, password: String): js.Promise[typings.ethereumjsWallet.mod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromKryptoKit")(entropy.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethereumjsWallet.mod.default]]
     @scala.inline
     def fromKryptoKit_=(
       x: js.Function2[
@@ -67,48 +66,41 @@ object thirdpartyMod {
     @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromQuorumWallet")
     @js.native
     def fromQuorumWallet: js.Function2[/* passphrase */ String, /* userid */ String, typings.ethereumjsWallet.mod.default] = js.native
-    @JSImport("ethereumjs-wallet/dist/thirdparty", "default.fromQuorumWallet")
-    @js.native
-    def fromQuorumWallet(passphrase: String, userid: String): typings.ethereumjsWallet.mod.default = js.native
+    @scala.inline
+    def fromQuorumWallet(passphrase: String, userid: String): typings.ethereumjsWallet.mod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuorumWallet")(passphrase.asInstanceOf[js.Any], userid.asInstanceOf[js.Any])).asInstanceOf[typings.ethereumjsWallet.mod.default]
     @scala.inline
     def fromQuorumWallet_=(
       x: js.Function2[/* passphrase */ String, /* userid */ String, typings.ethereumjsWallet.mod.default]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromQuorumWallet")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("ethereumjs-wallet/dist/thirdparty", "fromEtherCamp")
-  @js.native
-  def fromEtherCamp(passphrase: String): default = js.native
+  @scala.inline
+  def fromEtherCamp(passphrase: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherCamp")(passphrase.asInstanceOf[js.Any]).asInstanceOf[default]
   
-  @JSImport("ethereumjs-wallet/dist/thirdparty", "fromEtherWallet")
-  @js.native
-  def fromEtherWallet(input: String, password: String): default = js.native
-  @JSImport("ethereumjs-wallet/dist/thirdparty", "fromEtherWallet")
-  @js.native
-  def fromEtherWallet(input: EtherWalletOptions, password: String): default = js.native
+  @scala.inline
+  def fromEtherWallet(input: String, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def fromEtherWallet(input: EtherWalletOptions, password: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEtherWallet")(input.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[default]
   
-  @JSImport("ethereumjs-wallet/dist/thirdparty", "fromKryptoKit")
-  @js.native
-  def fromKryptoKit(entropy: String, password: String): js.Promise[default] = js.native
+  @scala.inline
+  def fromKryptoKit(entropy: String, password: String): js.Promise[default] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromKryptoKit")(entropy.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default]]
   
-  @JSImport("ethereumjs-wallet/dist/thirdparty", "fromQuorumWallet")
-  @js.native
-  def fromQuorumWallet(passphrase: String, userid: String): default = js.native
+  @scala.inline
+  def fromQuorumWallet(passphrase: String, userid: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("fromQuorumWallet")(passphrase.asInstanceOf[js.Any], userid.asInstanceOf[js.Any])).asInstanceOf[default]
   
-  @js.native
   trait EtherWalletOptions extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var encrypted: Boolean = js.native
+    var encrypted: Boolean
     
-    var hash: String = js.native
+    var hash: String
     
-    var locked: Boolean = js.native
+    var locked: Boolean
     
-    var `private`: String = js.native
+    var `private`: String
     
-    var public: String = js.native
+    var public: String
   }
   object EtherWalletOptions {
     
@@ -149,16 +141,15 @@ object thirdpartyMod {
     }
   }
   
-  @js.native
   trait EvpKdfOpts extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var digest: String = js.native
+    var digest: String
     
-    var ivsize: Double = js.native
+    var ivsize: Double
     
-    var keysize: Double = js.native
+    var keysize: Double
   }
   object EvpKdfOpts {
     

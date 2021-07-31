@@ -3,13 +3,13 @@ package typings.winrt.Windows.UI.Core
 import typings.winrt.Windows.Foundation.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWindowSizeChangedEventArgs extends ICoreWindowEventArgs {
+trait IWindowSizeChangedEventArgs
+  extends StObject
+     with ICoreWindowEventArgs {
   
-  var size: Size = js.native
+  var size: Size
 }
 object IWindowSizeChangedEventArgs {
   

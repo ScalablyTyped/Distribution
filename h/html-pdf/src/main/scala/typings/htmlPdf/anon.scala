@@ -3,21 +3,19 @@ package typings.htmlPdf
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var right: js.UndefOr[String] = js.native
+    var right: js.UndefOr[String] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
   }
   object Bottom {
     
@@ -56,12 +54,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Contents extends StObject {
     
-    var contents: js.UndefOr[String] = js.native
+    var contents: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
   }
   object Contents {
     
@@ -88,10 +85,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Detached extends StObject {
     
-    var detached: js.UndefOr[Boolean] = js.native
+    var detached: js.UndefOr[Boolean] = js.undefined
   }
   object Detached {
     
@@ -112,14 +108,15 @@ object anon {
     }
   }
   
-  @js.native
-  trait Dictpage extends /* page */ NumberDictionary[String] {
+  trait Dictpage
+    extends StObject
+       with /* page */ NumberDictionary[String] {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var first: js.UndefOr[String] = js.native
+    var first: js.UndefOr[String] = js.undefined
     
-    var last: js.UndefOr[String] = js.native
+    var last: js.UndefOr[String] = js.undefined
   }
   object Dictpage {
     
@@ -152,22 +149,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Domain extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
-    var httponly: js.UndefOr[Boolean] = js.native
+    var httponly: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object Domain {
     
@@ -215,12 +211,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var contents: js.UndefOr[Dictpage] = js.native
+    var contents: js.UndefOr[Dictpage] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
   }
   object Height {
     

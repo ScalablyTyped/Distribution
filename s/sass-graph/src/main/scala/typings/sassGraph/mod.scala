@@ -4,24 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sassGraph.anon.ImportedBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sass-graph", "parseDir")
+  @JSImport("sass-graph", JSImport.Namespace)
   @js.native
-  def parseDir(dirpath: String): Graph = js.native
-  @JSImport("sass-graph", "parseDir")
-  @js.native
-  def parseDir(dirpath: String, options: Options): Graph = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sass-graph", "parseFile")
-  @js.native
-  def parseFile(filepath: String): Graph = js.native
-  @JSImport("sass-graph", "parseFile")
-  @js.native
-  def parseFile(filepath: String, options: Options): Graph = js.native
+  @scala.inline
+  def parseDir(dirpath: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDir")(dirpath.asInstanceOf[js.Any]).asInstanceOf[Graph]
+  @scala.inline
+  def parseDir(dirpath: String, options: Options): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDir")(dirpath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graph]
+  
+  @scala.inline
+  def parseFile(filepath: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filepath.asInstanceOf[js.Any]).asInstanceOf[Graph]
+  @scala.inline
+  def parseFile(filepath: String, options: Options): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graph]
   
   @js.native
   trait Graph extends StObject {
@@ -52,13 +51,13 @@ object mod {
       */
     def visit(
       filepath: String,
-      callback: js.Function2[/* edge */ String, /* node */ Node, _],
-      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, _]
+      callback: js.Function2[/* edge */ String, /* node */ Node, js.Any],
+      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, js.Any]
     ): Unit = js.native
     def visit(
       filepath: String,
-      callback: js.Function2[/* edge */ String, /* node */ Node, _],
-      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, _],
+      callback: js.Function2[/* edge */ String, /* node */ Node, js.Any],
+      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, js.Any],
       visited: js.Array[String]
     ): Unit = js.native
     
@@ -67,24 +66,23 @@ object mod {
       * @param {string}   filepath Path to the file to visit
       * @param {Function} callback Called when a node is visited
       */
-    def visitAncestors(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, _]): Unit = js.native
+    def visitAncestors(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, js.Any]): Unit = js.native
     
     /**
       * Visits all files that are descendents of the provided file
       * @param {string}   filepath Path to the file to visit
       * @param {Function} callback Called when a node is visited
       */
-    def visitDescendents(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, _]): Unit = js.native
+    def visitDescendents(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, js.Any]): Unit = js.native
   }
   
   type Node = StringDictionary[ImportedBy]
   
-  @js.native
   trait Options extends StObject {
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var loadPath: js.UndefOr[js.Array[String]] = js.native
+    var loadPath: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

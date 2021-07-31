@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudFirestore.anon.Clientemail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * The 'client_email' and 'private_key' properties of the service account
@@ -18,10 +17,10 @@ trait Settings
     * Default Credentials}. If your credentials are stored in a JSON file, you
     * can specify a `keyFilename` instead.
     */
-  var credentials: js.UndefOr[Clientemail] = js.native
+  var credentials: js.UndefOr[Clientemail] = js.undefined
   
   /** The hostname to connect to. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to skip nested properties that are set to `undefined` during
@@ -29,7 +28,7 @@ trait Settings
     * and not written to Firestore. If set `false` or omitted, the SDK throws
     * an exception when it encounters properties of type `undefined`.
     */
-  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.native
+  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Local file containing the Service Account credentials as downloaded from
@@ -39,7 +38,7 @@ trait Settings
     * the `credentials` property to provide the `client_email` and
     * `private_key` of your service account.
     */
-  var keyFilename: js.UndefOr[String] = js.native
+  var keyFilename: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of idle GRPC channels to keep. A smaller number of idle
@@ -47,10 +46,10 @@ trait Settings
     * with fluctuating request rates. If set to 0, shuts down all GRPC channels
     * when the client becomes idle. Defaults to 1.
     */
-  var maxIdleChannels: js.UndefOr[Double] = js.native
+  var maxIdleChannels: js.UndefOr[Double] = js.undefined
   
   /** The port to connect to. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * The project ID from the Google Developer's Console, e.g.
@@ -59,10 +58,10 @@ trait Settings
     * support {@link https://cloud.google.com/docs/authentication Application
     * Default Credentials}
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Whether to use SSL when connecting. */
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to use `BigInt` for integer types when deserializing Firestore
@@ -70,7 +69,7 @@ trait Settings
     * `BigInt` to match the precision of the Firestore backend. Floating point
     * numbers continue to use JavaScript's `number` type.
     */
-  var useBigInt: js.UndefOr[Boolean] = js.native
+  var useBigInt: js.UndefOr[Boolean] = js.undefined
 }
 object Settings {
   

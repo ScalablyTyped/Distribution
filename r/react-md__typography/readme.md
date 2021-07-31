@@ -10,9 +10,9 @@ The base package for including typography for react-md.
 | ------------------ | :-------------: |
 | Full name          | @react-md/typography |
 | Keywords           | react-md, material design, react, component, components, typography |
-| # releases         | 35 |
+| # releases         | 37 |
 | # dependents       | 18 |
-| # downloads        | 19158 |
+| # downloads        | 31700 |
 | # stars            | 0 |
 
 ## Links

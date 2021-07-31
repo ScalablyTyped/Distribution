@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetDevEndpointsResponse extends StObject {
   
   /**
     * A list of DevEndpoint definitions.
     */
-  var DevEndpoints: js.UndefOr[DevEndpointList] = js.native
+  var DevEndpoints: js.UndefOr[DevEndpointList] = js.undefined
   
   /**
     * A list of DevEndpoints not found.
     */
-  var DevEndpointsNotFound: js.UndefOr[DevEndpointNames] = js.native
+  var DevEndpointsNotFound: js.UndefOr[DevEndpointNames] = js.undefined
 }
 object BatchGetDevEndpointsResponse {
   

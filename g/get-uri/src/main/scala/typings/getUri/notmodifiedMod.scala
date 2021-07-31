@@ -3,21 +3,32 @@ package typings.getUri
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notmodifiedMod {
   
   @JSImport("get-uri/dist/notmodified", JSImport.Default)
   @js.native
-  class default () extends NotModifiedError {
+  class default ()
+    extends StObject
+       with NotModifiedError {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var code: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @js.native
-  trait NotModifiedError extends Error {
+  trait NotModifiedError
+    extends StObject
+       with Error {
     
-    var code: String = js.native
+    var code: String
   }
   object NotModifiedError {
     

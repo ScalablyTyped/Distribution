@@ -2,15 +2,13 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportParameters extends StObject {
   
-  var fileId: String = js.native
+  var fileId: String
   
-  var mimeType: String = js.native
+  var mimeType: String
 }
 object ExportParameters {
   

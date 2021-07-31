@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,24 +13,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetCellRange
   * @see com.sun.star.sheet.SubTotalDescriptor
   */
-@js.native
-trait XSubTotalCalculatable extends XInterface {
+trait XSubTotalCalculatable
+  extends StObject
+     with XInterface {
   
   /**
     * creates subtotals using the settings of the passed descriptor.
     * @param xDescriptor the subtotal descriptor with the settings used for the subtotal operation.
     * @param bReplace if set to `TRUE` , replaces previous subtotal results.
     */
-  def applySubTotals(xDescriptor: XSubTotalDescriptor, bReplace: Boolean): Unit = js.native
+  def applySubTotals(xDescriptor: XSubTotalDescriptor, bReplace: Boolean): Unit
   
   /**
     * creates a subtotal descriptor.
     * @param bEmpty if set to `TRUE` , creates an empty descriptor. If set to `FALSE` , fills the descriptor with previous settings of the current object (i.e
     */
-  def createSubTotalDescriptor(bEmpty: Boolean): XSubTotalDescriptor = js.native
+  def createSubTotalDescriptor(bEmpty: Boolean): XSubTotalDescriptor
   
   /** removes the subtotals from the current object. */
-  def removeSubTotals(): Unit = js.native
+  def removeSubTotals(): Unit
 }
 object XSubTotalCalculatable {
   

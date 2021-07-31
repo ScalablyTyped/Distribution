@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionInfo extends StObject {
   
   /** The encryption entity ID. This should match the encryption configuration for ad serving or Data Transfer. */
-  var encryptionEntityId: js.UndefOr[String] = js.native
+  var encryptionEntityId: js.UndefOr[String] = js.undefined
   
   /** The encryption entity type. This should match the encryption configuration for ad serving or Data Transfer. */
-  var encryptionEntityType: js.UndefOr[String] = js.native
+  var encryptionEntityType: js.UndefOr[String] = js.undefined
   
   /** Describes whether the encrypted cookie was received from ad serving (the %m macro) or from Data Transfer. */
-  var encryptionSource: js.UndefOr[String] = js.native
+  var encryptionSource: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#encryptionInfo". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object EncryptionInfo {
   

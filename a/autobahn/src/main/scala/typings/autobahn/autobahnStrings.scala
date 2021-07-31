@@ -3,7 +3,6 @@ package typings.autobahn
 import typings.autobahn.mod.DefaultTransportType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autobahnStrings {
@@ -19,7 +18,9 @@ object autobahnStrings {
   def last: last = "last".asInstanceOf[last]
   
   @js.native
-  sealed trait longpoll extends DefaultTransportType
+  sealed trait longpoll
+    extends StObject
+       with DefaultTransportType
   @scala.inline
   def longpoll: longpoll = "longpoll".asInstanceOf[longpoll]
   
@@ -29,7 +30,9 @@ object autobahnStrings {
   def random: random = "random".asInstanceOf[random]
   
   @js.native
-  sealed trait rawsocket extends DefaultTransportType
+  sealed trait rawsocket
+    extends StObject
+       with DefaultTransportType
   @scala.inline
   def rawsocket: rawsocket = "rawsocket".asInstanceOf[rawsocket]
   
@@ -44,7 +47,9 @@ object autobahnStrings {
   def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait websocket extends DefaultTransportType
+  sealed trait websocket
+    extends StObject
+       with DefaultTransportType
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
 }

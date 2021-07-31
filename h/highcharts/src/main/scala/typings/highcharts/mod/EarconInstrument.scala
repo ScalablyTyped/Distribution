@@ -2,25 +2,23 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Define an Instrument and the options for playing it.
   */
-@js.native
 trait EarconInstrument extends StObject {
   
   /**
     * An instrument instance or the name of the instrument in the
     * Highcharts.sonification.instruments map.
     */
-  var instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument = js.native
+  var instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument
   
   /**
     * The options to pass to Instrument.play.
     */
-  var playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject = js.native
+  var playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
 }
 object EarconInstrument {
   

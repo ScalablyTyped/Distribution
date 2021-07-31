@@ -6,25 +6,23 @@ import typings.angularCore.angularCoreStrings.document
 import typings.angularCore.angularCoreStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputDef extends StObject {
   
-  var eventName: String = js.native
+  var eventName: String
   
-  var propName: String | Null = js.native
+  var propName: String | Null
   
-  var target: window | document | body | component | Null = js.native
+  var target: window | document | body | component | Null
   
-  var `type`: OutputType = js.native
+  var `type`: OutputType
 }
 object OutputDef {
   
   @scala.inline
   def apply(eventName: String, `type`: OutputType): OutputDef = {
-    val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], propName = null, target = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputDef]
   }

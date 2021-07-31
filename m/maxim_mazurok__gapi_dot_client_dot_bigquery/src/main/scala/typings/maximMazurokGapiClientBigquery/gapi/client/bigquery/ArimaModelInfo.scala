@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArimaModelInfo extends StObject {
   
   /** Arima coefficients. */
-  var arimaCoefficients: js.UndefOr[ArimaCoefficients] = js.native
+  var arimaCoefficients: js.UndefOr[ArimaCoefficients] = js.undefined
   
   /** Arima fitting metrics. */
-  var arimaFittingMetrics: js.UndefOr[ArimaFittingMetrics] = js.native
+  var arimaFittingMetrics: js.UndefOr[ArimaFittingMetrics] = js.undefined
   
   /** Whether Arima model fitted with drift or not. It is always false when d is not 1. */
-  var hasDrift: js.UndefOr[Boolean] = js.native
+  var hasDrift: js.UndefOr[Boolean] = js.undefined
   
   /** Non-seasonal order. */
-  var nonSeasonalOrder: js.UndefOr[ArimaOrder] = js.native
+  var nonSeasonalOrder: js.UndefOr[ArimaOrder] = js.undefined
   
   /** Seasonal periods. Repeated because multiple periods are supported for one time series. */
-  var seasonalPeriods: js.UndefOr[js.Array[String]] = js.native
+  var seasonalPeriods: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The id to indicate different time series. */
-  var timeSeriesId: js.UndefOr[String] = js.native
+  var timeSeriesId: js.UndefOr[String] = js.undefined
 }
 object ArimaModelInfo {
   

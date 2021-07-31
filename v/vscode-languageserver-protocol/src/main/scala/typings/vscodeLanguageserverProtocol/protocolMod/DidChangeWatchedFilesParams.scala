@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidChangeWatchedFilesParams extends StObject {
   
   /**
     * The actual file events.
     */
-  var changes: js.Array[FileEvent] = js.native
+  var changes: js.Array[FileEvent]
 }
 object DidChangeWatchedFilesParams {
   

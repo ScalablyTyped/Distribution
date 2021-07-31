@@ -9,7 +9,6 @@ import typings.primereact.anon.Progress
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileUploadMod {
@@ -30,68 +29,67 @@ object fileUploadMod {
     def upload(): Unit = js.native
   }
   
-  @js.native
   trait FileUploadProps extends StObject {
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
-    var cancelLabel: js.UndefOr[String] = js.native
+    var cancelLabel: js.UndefOr[String] = js.undefined
     
-    var chooseLabel: js.UndefOr[String] = js.native
+    var chooseLabel: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var customUpload: js.UndefOr[Boolean] = js.native
+    var customUpload: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var emptyTemplate: js.UndefOr[js.Function1[/* props */ js.Object, _]] = js.native
+    var emptyTemplate: js.UndefOr[js.Function1[/* props */ js.Object, js.Any]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var invalidFileSizeMessageDetail: js.UndefOr[String] = js.native
+    var invalidFileSizeMessageDetail: js.UndefOr[String] = js.undefined
     
-    var invalidFileSizeMessageSummary: js.UndefOr[String] = js.native
+    var invalidFileSizeMessageSummary: js.UndefOr[String] = js.undefined
     
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBeforeSend: js.UndefOr[js.Function1[/* e */ FormData, Unit]] = js.native
+    var onBeforeSend: js.UndefOr[js.Function1[/* e */ FormData, Unit]] = js.undefined
     
-    var onBeforeUpload: js.UndefOr[js.Function1[/* e */ FormData, Unit]] = js.native
+    var onBeforeUpload: js.UndefOr[js.Function1[/* e */ FormData, Unit]] = js.undefined
     
-    var onClear: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* e */ Files, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* e */ Files, Unit]] = js.undefined
     
-    var onProgress: js.UndefOr[js.Function1[/* e */ Progress, Unit]] = js.native
+    var onProgress: js.UndefOr[js.Function1[/* e */ Progress, Unit]] = js.undefined
     
-    var onRemove: js.UndefOr[js.Function1[/* e */ File, Unit]] = js.native
+    var onRemove: js.UndefOr[js.Function1[/* e */ File, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ FilesOriginalEvent, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* e */ FilesOriginalEvent, Unit]] = js.undefined
     
-    var onUpload: js.UndefOr[js.Function1[/* e */ Files, Unit]] = js.native
+    var onUpload: js.UndefOr[js.Function1[/* e */ Files, Unit]] = js.undefined
     
-    var onValidationFail: js.UndefOr[js.Function1[/* file */ typings.std.File, Unit]] = js.native
+    var onValidationFail: js.UndefOr[js.Function1[/* file */ typings.std.File, Unit]] = js.undefined
     
-    var previewWidth: js.UndefOr[Double] = js.native
+    var previewWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var uploadHandler: js.UndefOr[js.Function1[/* e */ FilesAny, Unit]] = js.native
+    var uploadHandler: js.UndefOr[js.Function1[/* e */ FilesAny, Unit]] = js.undefined
     
-    var uploadLabel: js.UndefOr[String] = js.native
+    var uploadLabel: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object FileUploadProps {
     
@@ -147,7 +145,7 @@ object fileUploadMod {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setEmptyTemplate(value: /* props */ js.Object => _): Self = StObject.set(x, "emptyTemplate", js.Any.fromFunction1(value))
+      def setEmptyTemplate(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "emptyTemplate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setEmptyTemplateUndefined: Self = StObject.set(x, "emptyTemplate", js.undefined)

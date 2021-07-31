@@ -10,7 +10,6 @@ import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preventOverflowMod extends Shortcut {
@@ -19,28 +18,27 @@ object preventOverflowMod extends Shortcut {
   @js.native
   val default: Modifier[preventOverflow, Options] = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var altAxis: Boolean = js.native
+    var altAxis: Boolean
     
-    var altBoundary: Boolean = js.native
+    var altBoundary: Boolean
     
-    var boundary: Boundary = js.native
+    var boundary: Boundary
     
-    var mainAxis: Boolean = js.native
+    var mainAxis: Boolean
     
-    var padding: Padding = js.native
+    var padding: Padding
     
-    var rootBoundary: RootBoundary = js.native
+    var rootBoundary: RootBoundary
     
     /**
       * Allows the popper to overflow from its boundaries to keep it near its
       * reference element
       */
-    var tether: Boolean = js.native
+    var tether: Boolean
     
-    var tetherOffset: TetherOffset = js.native
+    var tetherOffset: TetherOffset
   }
   object Options {
     

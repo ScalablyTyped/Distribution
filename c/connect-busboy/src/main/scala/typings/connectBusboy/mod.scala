@@ -7,22 +7,24 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-busboy", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-busboy", JSImport.Namespace)
-  @js.native
-  def apply(options: ConnectBusboyOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: ConnectBusboyOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("connect-busboy", JSImport.Namespace)
   @js.native
-  trait ConnectBusboyOptions extends BusboyConfig {
+  val ^ : js.Any = js.native
+  
+  trait ConnectBusboyOptions
+    extends StObject
+       with BusboyConfig {
     
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectBusboyOptions {
     
@@ -47,10 +49,9 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        var busboy: Busboy = js.native
+        var busboy: Busboy
       }
       object Request {
         

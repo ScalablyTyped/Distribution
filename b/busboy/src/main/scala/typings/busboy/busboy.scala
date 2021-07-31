@@ -12,13 +12,14 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object busboy {
   
   @js.native
-  trait Busboy extends WritableStream {
+  trait Busboy
+    extends StObject
+       with WritableStream {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
@@ -56,20 +57,19 @@ object busboy {
     def on_partsLimit(event: partsLimit, callback: js.Function0[Unit]): this.type = js.native
   }
   
-  @js.native
   trait BusboyConfig extends StObject {
     
-    var defCharset: js.UndefOr[String] = js.native
+    var defCharset: js.UndefOr[String] = js.undefined
     
-    var fileHwm: js.UndefOr[Double] = js.native
+    var fileHwm: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var limits: js.UndefOr[FieldNameSize] = js.native
+    var limits: js.UndefOr[FieldNameSize] = js.undefined
     
-    var preservePath: js.UndefOr[Boolean] = js.native
+    var preservePath: js.UndefOr[Boolean] = js.undefined
   }
   object BusboyConfig {
     
@@ -121,12 +121,13 @@ object busboy {
   }
   
   @js.native
-  trait BusboyConstructor extends Instantiable1[/* options */ BusboyConfig, Busboy]
+  trait BusboyConstructor
+    extends StObject
+       with Instantiable1[/* options */ BusboyConfig, Busboy]
   
-  @js.native
   trait Options extends StObject {
     
-    var headers: js.Any = js.native
+    var headers: js.Any
   }
   object Options {
     

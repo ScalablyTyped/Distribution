@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphicsStatsBucket extends StObject {
   
   /** Number of frames in the bucket. */
-  var frameCount: js.UndefOr[String] = js.native
+  var frameCount: js.UndefOr[String] = js.undefined
   
   /** Lower bound of render time in milliseconds. */
-  var renderMillis: js.UndefOr[String] = js.native
+  var renderMillis: js.UndefOr[String] = js.undefined
 }
 object GraphicsStatsBucket {
   

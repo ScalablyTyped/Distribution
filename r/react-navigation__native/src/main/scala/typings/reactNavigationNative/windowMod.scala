@@ -6,7 +6,6 @@ import typings.reactNavigationNative.reactNavigationNativeStrings.popstate
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowMod {
@@ -17,9 +16,8 @@ object windowMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/native/lib/typescript/src/@/mocks/window", "default.addEventListener")
-    @js.native
-    def addEventListener_popstate(`type`: popstate, listener: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def addEventListener_popstate(`type`: popstate, listener: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@react-navigation/native/lib/typescript/src/@/mocks/window", "default.document")
     @js.native
@@ -39,8 +37,7 @@ object windowMod {
     @scala.inline
     def location_=(x: URL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
     
-    @JSImport("@react-navigation/native/lib/typescript/src/@/mocks/window", "default.removeEventListener")
-    @js.native
-    def removeEventListener_popstate(`type`: popstate, listener: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def removeEventListener_popstate(`type`: popstate, listener: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

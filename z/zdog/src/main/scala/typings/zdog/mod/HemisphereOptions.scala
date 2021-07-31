@@ -2,11 +2,11 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HemisphereOptions extends EllipseOptions
+trait HemisphereOptions
+  extends StObject
+     with EllipseOptions
 object HemisphereOptions {
   
   @scala.inline

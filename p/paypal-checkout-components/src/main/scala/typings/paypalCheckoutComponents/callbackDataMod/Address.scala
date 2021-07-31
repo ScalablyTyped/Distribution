@@ -2,51 +2,49 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   /**
     * City or locality.
     */
-  var city: String = js.native
+  var city: String
   
   /**
     * 2 character country code (e.g. US).
     */
-  var countryCode: String = js.native
+  var countryCode: String
   
   /**
     * Street number and name.
     */
-  var line1: String = js.native
+  var line1: String
   
   /**
     * Extended address.
     */
-  var line2: js.UndefOr[String] = js.native
+  var line2: js.UndefOr[String] = js.undefined
   
   /**
     * Phone number.
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * Postal code.
     */
-  var postalCode: String = js.native
+  var postalCode: String
   
   /**
     * Recipient of postage.
     */
-  var recipientName: js.UndefOr[String] = js.native
+  var recipientName: js.UndefOr[String] = js.undefined
   
   /**
     * State or region.
     */
-  var state: String = js.native
+  var state: String
 }
 object Address {
   

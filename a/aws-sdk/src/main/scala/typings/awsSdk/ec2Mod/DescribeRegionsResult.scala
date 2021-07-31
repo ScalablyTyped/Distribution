@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRegionsResult extends StObject {
   
   /**
     * Information about the Regions.
     */
-  var Regions: js.UndefOr[RegionList] = js.native
+  var Regions: js.UndefOr[RegionList] = js.undefined
 }
 object DescribeRegionsResult {
   

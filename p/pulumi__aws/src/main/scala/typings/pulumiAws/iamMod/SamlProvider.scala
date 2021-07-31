@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws/iam", "SamlProvider")
@@ -27,6 +26,10 @@ class SamlProvider protected ()
 /* static members */
 object SamlProvider {
   
+  @JSImport("@pulumi/aws/iam", "SamlProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get an existing SamlProvider resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -36,24 +39,19 @@ object SamlProvider {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/aws/iam", "SamlProvider.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiAws.samlProviderMod.SamlProvider = js.native
-  @JSImport("@pulumi/aws/iam", "SamlProvider.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.samlProviderMod.SamlProvider = js.native
-  @JSImport("@pulumi/aws/iam", "SamlProvider.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: SamlProviderState): typings.pulumiAws.samlProviderMod.SamlProvider = js.native
-  @JSImport("@pulumi/aws/iam", "SamlProvider.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: SamlProviderState, opts: CustomResourceOptions): typings.pulumiAws.samlProviderMod.SamlProvider = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiAws.samlProviderMod.SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samlProviderMod.SamlProvider]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.samlProviderMod.SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samlProviderMod.SamlProvider]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: SamlProviderState): typings.pulumiAws.samlProviderMod.SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samlProviderMod.SamlProvider]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: SamlProviderState, opts: CustomResourceOptions): typings.pulumiAws.samlProviderMod.SamlProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.samlProviderMod.SamlProvider]
   
   /**
     * Returns true if the given object is an instance of SamlProvider.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/aws/iam", "SamlProvider.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ Boolean]
 }

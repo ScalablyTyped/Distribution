@@ -3,41 +3,39 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageFrameConfig extends StObject {
   
   /**
     * The frame to stop parsing at. If not provided it will calculate the value based on the image and frame dimensions.
     */
-  var endFrame: js.UndefOr[integer] = js.native
+  var endFrame: js.UndefOr[integer] = js.undefined
   
   /**
     * The height of the frame in pixels. Uses the `frameWidth` value if not provided.
     */
-  var frameHeight: js.UndefOr[integer] = js.native
+  var frameHeight: js.UndefOr[integer] = js.undefined
   
   /**
     * The width of the frame in pixels.
     */
-  var frameWidth: integer = js.native
+  var frameWidth: integer
   
   /**
     * The margin in the image. This is the space around the edge of the frames.
     */
-  var margin: js.UndefOr[integer] = js.native
+  var margin: js.UndefOr[integer] = js.undefined
   
   /**
     * The spacing between each frame in the image.
     */
-  var spacing: js.UndefOr[integer] = js.native
+  var spacing: js.UndefOr[integer] = js.undefined
   
   /**
     * The first frame to start parsing from.
     */
-  var startFrame: js.UndefOr[integer] = js.native
+  var startFrame: js.UndefOr[integer] = js.undefined
 }
 object ImageFrameConfig {
   

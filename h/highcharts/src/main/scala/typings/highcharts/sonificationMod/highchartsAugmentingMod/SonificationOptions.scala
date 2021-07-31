@@ -4,20 +4,18 @@ import typings.highcharts.mod.Dictionary
 import typings.highcharts.mod.RangeObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for sonifying a chart.
   */
-@js.native
 trait SonificationOptions extends StObject {
   
   /**
     * Milliseconds of silent waiting to add between series. Note that
     * waiting time is considered part of the sonify duration.
     */
-  var afterSeriesWait: js.UndefOr[Double] = js.native
+  var afterSeriesWait: js.UndefOr[Double] = js.undefined
   
   /**
     * Optionally provide the minimum/maximum data values for the points. If
@@ -26,7 +24,7 @@ trait SonificationOptions extends StObject {
     * of point data properties to objects with min/max values: (see online
     * documentation for example)
     */
-  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.native
+  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.undefined
   
   /**
     * Duration for sonifying the entire chart. The duration is distributed
@@ -35,33 +33,33 @@ trait SonificationOptions extends StObject {
     * series, using `seriesOptions`. Note that points may continue to play
     * after the duration has passed, but no new points will start playing.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Earcons to add to the chart. Note that earcons can also be added per
     * series using `seriesOptions`.
     */
-  var earcons: js.UndefOr[js.Array[EarconConfiguration]] = js.native
+  var earcons: js.UndefOr[js.Array[EarconConfiguration]] = js.undefined
   
   /**
     * The instrument definitions for the points in this chart.
     */
-  var instruments: js.UndefOr[js.Array[PointInstrumentObject]] = js.native
+  var instruments: js.UndefOr[js.Array[PointInstrumentObject]] = js.undefined
   
   /**
     * Callback after the chart has played.
     */
-  var onEnd: js.UndefOr[js.Function] = js.native
+  var onEnd: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Callback after a series has finished playing.
     */
-  var onSeriesEnd: js.UndefOr[js.Function] = js.native
+  var onSeriesEnd: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Callback before a series is played.
     */
-  var onSeriesStart: js.UndefOr[js.Function] = js.native
+  var onSeriesStart: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Define the order to play the series in. This can be given as a
@@ -75,7 +73,7 @@ trait SonificationOptions extends StObject {
     * array will be played in order. To play elements simultaneously, group
     * the elements in an array.
     */
-  var order: String | (js.Array[String | Earcon | (js.Array[String | Earcon])]) = js.native
+  var order: String | (js.Array[String | Earcon | (js.Array[String | Earcon])])
   
   /**
     * The axis to use for when to play the points. Can be a string with a
@@ -86,7 +84,7 @@ trait SonificationOptions extends StObject {
     * distance between the numeric values. This option can not be
     * overridden per series.
     */
-  var pointPlayTime: String | js.Function = js.native
+  var pointPlayTime: String | js.Function
   
   /**
     * Options as given to `series.sonify` to override options per series.
@@ -95,7 +93,7 @@ trait SonificationOptions extends StObject {
     * option is supplied as a single object, the options apply to all
     * series.
     */
-  var seriesOptions: js.UndefOr[js.Object | js.Array[js.Object]] = js.native
+  var seriesOptions: js.UndefOr[js.Object | js.Array[js.Object]] = js.undefined
 }
 object SonificationOptions {
   

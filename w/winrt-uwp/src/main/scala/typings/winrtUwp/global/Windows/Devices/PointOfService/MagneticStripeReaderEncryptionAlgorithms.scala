@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the encryption algorithm supported by the device. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms")
 @js.native
 abstract class MagneticStripeReaderEncryptionAlgorithms ()
-  extends typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms
 object MagneticStripeReaderEncryptionAlgorithms {
   
   @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms")

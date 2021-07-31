@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTagsRequest extends StObject {
   
   /**
     * The identifier of the WorkSpaces resource. The supported resource types are WorkSpaces, registered directories, images, custom bundles, IP access control groups, and connection aliases.
     */
-  var ResourceId: NonEmptyString = js.native
+  var ResourceId: NonEmptyString
   
   /**
     * The tags. Each WorkSpaces resource can have a maximum of 50 tags.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object CreateTagsRequest {
   

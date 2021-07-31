@@ -21,26 +21,25 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the properties and methods of an embedded object. */
-@js.native
 trait TextEmbeddedObject
-  extends BaseFrame
+  extends StObject
+     with BaseFrame
      with XEmbeddedObjectSupplier {
   
-  var CLSID: String = js.native
+  var CLSID: String
   
   /** This is the component for the OLE2 object. */
-  var Component: XComponent = js.native
+  var Component: XComponent
   
   /**
     * This is the model for the OLE2 object.
     *
     * This property if void if the OLE2 is not an Office component.
     */
-  var Model: XModel = js.native
+  var Model: XModel
 }
 object TextEmbeddedObject {
   

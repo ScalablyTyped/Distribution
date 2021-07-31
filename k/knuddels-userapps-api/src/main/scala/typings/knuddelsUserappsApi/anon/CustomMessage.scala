@@ -2,17 +2,15 @@ package typings.knuddelsUserappsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomMessage extends StObject {
   
-  var customMessage: js.UndefOr[String] = js.native
+  var customMessage: js.UndefOr[String] = js.undefined
   
-  var toAccount: js.UndefOr[Boolean] = js.native
+  var toAccount: js.UndefOr[Boolean] = js.undefined
   
-  var transferReason: js.UndefOr[String] = js.native
+  var transferReason: js.UndefOr[String] = js.undefined
 }
 object CustomMessage {
   

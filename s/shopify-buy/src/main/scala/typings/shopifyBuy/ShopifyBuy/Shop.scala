@@ -2,31 +2,29 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shop extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var moneyFormat: String = js.native
+  var moneyFormat: String
   
-  var name: String = js.native
+  var name: String
   
   /**
     * TODO Add types for the Shop properties below
     * PaymentSettings, ShopPolicy etc
     */
-  var paymentSettings: js.Any = js.native
+  var paymentSettings: js.Any
   
-  var primaryDomain: js.Any = js.native
+  var primaryDomain: js.Any
   
-  var privacyPolicy: js.Any = js.native
+  var privacyPolicy: js.Any
   
-  var refundPolicy: js.Any = js.native
+  var refundPolicy: js.Any
   
-  var termsOfService: js.Any = js.native
+  var termsOfService: js.Any
 }
 object Shop {
   

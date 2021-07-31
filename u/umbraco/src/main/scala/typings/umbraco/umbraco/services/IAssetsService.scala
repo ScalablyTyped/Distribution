@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description
   * Promise-based utillity service to lazy-load client-side dependencies inside angular controllers.
   */
-@js.native
 trait IAssetsService extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait IAssetsService extends StObject {
     * @param {Scope} scope optional scope to pass into the loader
     * @returns {Promise} Promise object which resolves when all the files has loaded
     */
-  def load(pathArray: js.Array[String], scope: IScope): IPromise[_] = js.native
+  def load(pathArray: js.Array[String], scope: IScope): IPromise[js.Any]
   
   /**
     * @ngdoc method
@@ -49,7 +47,7 @@ trait IAssetsService extends StObject {
     * @param {Number} timeout in milliseconds
     * @returns {Promise} Promise object which resolves when the file has loaded
     */
-  def loadCss(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[_] = js.native
+  def loadCss(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[js.Any]
   
   /**
     * @ngdoc method
@@ -65,15 +63,15 @@ trait IAssetsService extends StObject {
     * @param {Number} timeout in milliseconds
     * @returns {Promise} Promise object which resolves when the file has loaded
     */
-  def loadJs(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[_] = js.native
+  def loadJs(path: String, scope: IScope, attributes: js.Object, timeout: Double): IPromise[js.Any]
 }
 object IAssetsService {
   
   @scala.inline
   def apply(
-    load: (js.Array[String], IScope) => IPromise[_],
-    loadCss: (String, IScope, js.Object, Double) => IPromise[_],
-    loadJs: (String, IScope, js.Object, Double) => IPromise[_]
+    load: (js.Array[String], IScope) => IPromise[js.Any],
+    loadCss: (String, IScope, js.Object, Double) => IPromise[js.Any],
+    loadJs: (String, IScope, js.Object, Double) => IPromise[js.Any]
   ): IAssetsService = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load), loadCss = js.Any.fromFunction4(loadCss), loadJs = js.Any.fromFunction4(loadJs))
     __obj.asInstanceOf[IAssetsService]
@@ -83,12 +81,12 @@ object IAssetsService {
   implicit class IAssetsServiceMutableBuilder[Self <: IAssetsService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setLoad(value: (js.Array[String], IScope) => IPromise[_]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    def setLoad(value: (js.Array[String], IScope) => IPromise[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = StObject.set(x, "loadCss", js.Any.fromFunction4(value))
+    def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadCss", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = StObject.set(x, "loadJs", js.Any.fromFunction4(value))
+    def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[js.Any]): Self = StObject.set(x, "loadJs", js.Any.fromFunction4(value))
   }
 }

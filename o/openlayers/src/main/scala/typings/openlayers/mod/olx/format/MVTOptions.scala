@@ -5,27 +5,25 @@ import typings.openlayers.mod.geom.Geometry
 import typings.openlayers.mod.geom.GeometryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MVTOptions extends StObject {
   
   var featureClass: js.UndefOr[
-    (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], _]) | (js.Function4[
+    (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], js.Any]) | (js.Function4[
       /* geom */ GeometryType, 
       /* arg2 */ js.Array[Double], 
       /* arg3 */ js.Array[js.Array[Double] | Double], 
       /* arg4 */ StringDictionary[js.Any], 
-      _
+      js.Any
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var geometryName: js.UndefOr[String] = js.native
+  var geometryName: js.UndefOr[String] = js.undefined
   
-  var layerName: js.UndefOr[String] = js.native
+  var layerName: js.UndefOr[String] = js.undefined
   
-  var layers: js.UndefOr[js.Array[String]] = js.native
+  var layers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object MVTOptions {
   
@@ -40,21 +38,21 @@ object MVTOptions {
     
     @scala.inline
     def setFeatureClass(
-      value: (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], _]) | (js.Function4[
+      value: (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], js.Any]) | (js.Function4[
           /* geom */ GeometryType, 
           /* arg2 */ js.Array[Double], 
           /* arg3 */ js.Array[js.Array[Double] | Double], 
           /* arg4 */ StringDictionary[js.Any], 
-          _
+          js.Any
         ])
     ): Self = StObject.set(x, "featureClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureClassFunction1(value: /* geom */ Geometry | StringDictionary[js.Any] => _): Self = StObject.set(x, "featureClass", js.Any.fromFunction1(value))
+    def setFeatureClassFunction1(value: /* geom */ Geometry | StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "featureClass", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFeatureClassFunction4(
-      value: (/* geom */ GeometryType, /* arg2 */ js.Array[Double], /* arg3 */ js.Array[js.Array[Double] | Double], /* arg4 */ StringDictionary[js.Any]) => _
+      value: (/* geom */ GeometryType, /* arg2 */ js.Array[Double], /* arg3 */ js.Array[js.Array[Double] | Double], /* arg4 */ StringDictionary[js.Any]) => js.Any
     ): Self = StObject.set(x, "featureClass", js.Any.fromFunction4(value))
     
     @scala.inline

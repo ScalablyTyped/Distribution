@@ -3,19 +3,17 @@ package typings.openfin.anon
 import typings.openfin.GoldenLayout.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: Config = js.native
+  var content: Config
   
-  var dimensions: HeightLeft = js.native
+  var dimensions: HeightLeft
   
-  var indexInParent: Double = js.native
+  var indexInParent: Double
   
-  var parentId: String = js.native
+  var parentId: String
 }
 object Content {
   

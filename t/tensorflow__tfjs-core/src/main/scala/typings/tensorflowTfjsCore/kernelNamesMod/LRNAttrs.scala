@@ -2,19 +2,17 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LRNAttrs extends StObject {
   
-  var alpha: Double = js.native
+  var alpha: Double
   
-  var beta: Double = js.native
+  var beta: Double
   
-  var bias: Double = js.native
+  var bias: Double
   
-  var depthRadius: Double = js.native
+  var depthRadius: Double
 }
 object LRNAttrs {
   

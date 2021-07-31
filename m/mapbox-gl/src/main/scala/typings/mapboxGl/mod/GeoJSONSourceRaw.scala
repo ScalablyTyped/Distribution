@@ -3,24 +3,23 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.geojson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoJSONSourceRaw
-  extends Source
+  extends StObject
+     with Source
      with GeoJSONSourceOptions
      with AnySourceData {
   
   @JSName("type")
-  var type_GeoJSONSourceRaw: geojson = js.native
+  var type_GeoJSONSourceRaw: geojson
 }
 object GeoJSONSourceRaw {
   
   @scala.inline
-  def apply(`type`: geojson): GeoJSONSourceRaw = {
+  def apply(): GeoJSONSourceRaw = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("geojson")
     __obj.asInstanceOf[GeoJSONSourceRaw]
   }
   

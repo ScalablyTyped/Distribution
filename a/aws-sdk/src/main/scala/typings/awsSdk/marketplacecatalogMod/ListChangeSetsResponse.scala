@@ -2,21 +2,19 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChangeSetsResponse extends StObject {
   
   /**
     *  Array of ChangeSetSummaryListItem objects.
     */
-  var ChangeSetSummaryList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetSummaryList] = js.native
+  var ChangeSetSummaryList: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetSummaryList] = js.undefined
   
   /**
     * The value of the next token, if it exists. Null if there are no more results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.marketplacecatalogMod.NextToken] = js.undefined
 }
 object ListChangeSetsResponse {
   

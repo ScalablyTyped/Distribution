@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CsmSettings extends StObject {
   
   /** Audience claim set in the generated RCToken. This value is not validated by IAP. */
-  var rctokenAud: js.UndefOr[String] = js.native
+  var rctokenAud: js.UndefOr[String] = js.undefined
 }
 object CsmSettings {
   

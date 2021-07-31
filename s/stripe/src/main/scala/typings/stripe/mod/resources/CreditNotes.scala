@@ -11,7 +11,6 @@ import typings.stripe.mod.creditNotes.ICreditNoteListOptions
 import typings.stripe.mod.creditNotes.ICreditNoteUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.CreditNotes")

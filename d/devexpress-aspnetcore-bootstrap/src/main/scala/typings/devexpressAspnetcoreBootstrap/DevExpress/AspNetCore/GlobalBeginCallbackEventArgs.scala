@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GlobalBeginCallbackEventArgs extends BeginCallbackEventArgs {
+trait GlobalBeginCallbackEventArgs
+  extends StObject
+     with BeginCallbackEventArgs {
   
-  val control: Control = js.native
+  val control: Control
 }
 object GlobalBeginCallbackEventArgs {
   

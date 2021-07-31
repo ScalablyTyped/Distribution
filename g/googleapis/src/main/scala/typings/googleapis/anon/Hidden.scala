@@ -2,23 +2,21 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hidden extends StObject {
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var modified: js.UndefOr[Boolean] = js.native
+  var modified: js.UndefOr[Boolean] = js.undefined
   
-  var restricted: js.UndefOr[Boolean] = js.native
+  var restricted: js.UndefOr[Boolean] = js.undefined
   
-  var starred: js.UndefOr[Boolean] = js.native
+  var starred: js.UndefOr[Boolean] = js.undefined
   
-  var trashed: js.UndefOr[Boolean] = js.native
+  var trashed: js.UndefOr[Boolean] = js.undefined
   
-  var viewed: js.UndefOr[Boolean] = js.native
+  var viewed: js.UndefOr[Boolean] = js.undefined
 }
 object Hidden {
   

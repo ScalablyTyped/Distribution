@@ -2,23 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandidateInferenceInfo extends StObject {
   
-  var _inferredTypeAfterFixing: PullTypeSymbol = js.native
+  var _inferredTypeAfterFixing: PullTypeSymbol
   
-  def addCandidate(candidate: PullTypeSymbol): Unit = js.native
+  def addCandidate(candidate: PullTypeSymbol): Unit
   
-  def fixTypeParameter(resolver: PullTypeResolver, context: PullTypeResolutionContext): Unit = js.native
+  def fixTypeParameter(resolver: PullTypeResolver, context: PullTypeResolutionContext): Unit
   
-  var inferenceCandidates: js.Array[PullTypeSymbol] = js.native
+  var inferenceCandidates: js.Array[PullTypeSymbol]
   
-  def isFixed(): Boolean = js.native
+  def isFixed(): Boolean
   
-  var typeParameter: PullTypeParameterSymbol = js.native
+  var typeParameter: PullTypeParameterSymbol
 }
 object CandidateInferenceInfo {
   

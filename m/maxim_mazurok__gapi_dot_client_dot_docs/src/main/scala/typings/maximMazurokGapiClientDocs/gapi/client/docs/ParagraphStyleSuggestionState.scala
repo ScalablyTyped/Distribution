@@ -2,71 +2,69 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParagraphStyleSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to alignment. */
-  var alignmentSuggested: js.UndefOr[Boolean] = js.native
+  var alignmentSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to avoid_widow_and_orphan. */
-  var avoidWidowAndOrphanSuggested: js.UndefOr[Boolean] = js.native
+  var avoidWidowAndOrphanSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to border_between. */
-  var borderBetweenSuggested: js.UndefOr[Boolean] = js.native
+  var borderBetweenSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to border_bottom. */
-  var borderBottomSuggested: js.UndefOr[Boolean] = js.native
+  var borderBottomSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to border_left. */
-  var borderLeftSuggested: js.UndefOr[Boolean] = js.native
+  var borderLeftSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to border_right. */
-  var borderRightSuggested: js.UndefOr[Boolean] = js.native
+  var borderRightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to border_top. */
-  var borderTopSuggested: js.UndefOr[Boolean] = js.native
+  var borderTopSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to direction. */
-  var directionSuggested: js.UndefOr[Boolean] = js.native
+  var directionSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to heading_id. */
-  var headingIdSuggested: js.UndefOr[Boolean] = js.native
+  var headingIdSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to indent_end. */
-  var indentEndSuggested: js.UndefOr[Boolean] = js.native
+  var indentEndSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to indent_first_line. */
-  var indentFirstLineSuggested: js.UndefOr[Boolean] = js.native
+  var indentFirstLineSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to indent_start. */
-  var indentStartSuggested: js.UndefOr[Boolean] = js.native
+  var indentStartSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to keep_lines_together. */
-  var keepLinesTogetherSuggested: js.UndefOr[Boolean] = js.native
+  var keepLinesTogetherSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to keep_with_next. */
-  var keepWithNextSuggested: js.UndefOr[Boolean] = js.native
+  var keepWithNextSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to line_spacing. */
-  var lineSpacingSuggested: js.UndefOr[Boolean] = js.native
+  var lineSpacingSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to named_style_type. */
-  var namedStyleTypeSuggested: js.UndefOr[Boolean] = js.native
+  var namedStyleTypeSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** A mask that indicates which of the fields in shading have been changed in this suggestion. */
-  var shadingSuggestionState: js.UndefOr[ShadingSuggestionState] = js.native
+  var shadingSuggestionState: js.UndefOr[ShadingSuggestionState] = js.undefined
   
   /** Indicates if there was a suggested change to space_above. */
-  var spaceAboveSuggested: js.UndefOr[Boolean] = js.native
+  var spaceAboveSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to space_below. */
-  var spaceBelowSuggested: js.UndefOr[Boolean] = js.native
+  var spaceBelowSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to spacing_mode. */
-  var spacingModeSuggested: js.UndefOr[Boolean] = js.native
+  var spacingModeSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object ParagraphStyleSuggestionState {
   

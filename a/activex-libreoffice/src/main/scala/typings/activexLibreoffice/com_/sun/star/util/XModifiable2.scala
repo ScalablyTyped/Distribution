@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface allows to prevent changing of the modified state of the object. It is introduced for performance optimizations, to allow to prevent
   * unnecessary updates, for example while importing a document. Please use this interface very carefully.
   */
-@js.native
-trait XModifiable2 extends XModifiable {
+trait XModifiable2
+  extends StObject
+     with XModifiable {
   
   /**
     * disable possibility to change modified state of the document
     * @returns the value that says whether the modified state change was enabled before the call `TRUE` the changing of the modified state was already disabled
     */
-  def disableSetModified(): Boolean = js.native
+  def disableSetModified(): Boolean
   
   /**
     * enable possibility to change modified state of the document
     * @returns the value that says whether the modified state change was enabled before the call `TRUE` the changing of the modified state was disabled `FALSE`
     */
-  def enableSetModified(): Boolean = js.native
+  def enableSetModified(): Boolean
   
   /** allows to detect whether the modified state change is enabled */
-  def isSetModifiedEnabled(): Boolean = js.native
+  def isSetModifiedEnabled(): Boolean
 }
 object XModifiable2 {
   

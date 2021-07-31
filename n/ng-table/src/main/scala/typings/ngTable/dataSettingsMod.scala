@@ -2,19 +2,17 @@ package typings.ngTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataSettingsMod {
   
-  @js.native
   trait IDataSettings extends StObject {
     
-    var applyFilter: js.UndefOr[Boolean] = js.native
+    var applyFilter: js.UndefOr[Boolean] = js.undefined
     
-    var applyPaging: js.UndefOr[Boolean] = js.native
+    var applyPaging: js.UndefOr[Boolean] = js.undefined
     
-    var applySort: js.UndefOr[Boolean] = js.native
+    var applySort: js.UndefOr[Boolean] = js.undefined
   }
   object IDataSettings {
     

@@ -2,53 +2,51 @@ package typings.instagramPrivateApi.igtvChannelFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvChannelFeedResponseUserDict extends StObject {
   
-  var biography: String = js.native
+  var biography: String
   
-  var biography_with_entities: IgtvChannelFeedResponseBiographyWithEntities = js.native
+  var biography_with_entities: IgtvChannelFeedResponseBiographyWithEntities
   
-  var external_lynx_url: String = js.native
+  var external_lynx_url: String
   
-  var external_url: String = js.native
+  var external_url: String
   
-  var follower_count: Double = js.native
+  var follower_count: Double
   
-  var following_count: Double = js.native
+  var following_count: Double
   
-  var following_tag_count: Double = js.native
+  var following_tag_count: Double
   
-  var friendship_status: IgtvChannelFeedResponseFriendshipStatus = js.native
+  var friendship_status: IgtvChannelFeedResponseFriendshipStatus
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var geo_media_count: Double = js.native
+  var geo_media_count: Double
   
-  var has_anonymous_profile_picture: Boolean = js.native
+  var has_anonymous_profile_picture: Boolean
   
-  var has_biography_translation: Boolean = js.native
+  var has_biography_translation: Boolean
   
-  var has_igtv_series: Boolean = js.native
+  var has_igtv_series: Boolean
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var media_count: Double = js.native
+  var media_count: Double
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: String = js.native
+  var profile_pic_id: String
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var total_igtv_videos: Double = js.native
+  var total_igtv_videos: Double
   
-  var username: String = js.native
+  var username: String
 }
 object IgtvChannelFeedResponseUserDict {
   

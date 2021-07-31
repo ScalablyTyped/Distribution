@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flag extends StObject {
   
   /** Use this field if only certain integers are accepted. Can be combined with min_value and max_value to add additional values. */
-  var allowedIntValues: js.UndefOr[js.Array[String]] = js.native
+  var allowedIntValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /** For *STRING* flags, a list of strings that the value can be set to. */
-  var allowedStringValues: js.UndefOr[js.Array[String]] = js.native
+  var allowedStringValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The database version this flag applies to. Can be *MYSQL_8_0*, *MYSQL_5_6*, or *MYSQL_5_7*. */
-  var appliesTo: js.UndefOr[js.Array[String]] = js.native
+  var appliesTo: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether or not the flag is considered in beta. */
-  var inBeta: js.UndefOr[Boolean] = js.native
+  var inBeta: js.UndefOr[Boolean] = js.undefined
   
   /** This is always *sql#flag*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** For *INTEGER* flags, the maximum allowed value. */
-  var maxValue: js.UndefOr[String] = js.native
+  var maxValue: js.UndefOr[String] = js.undefined
   
   /** For *INTEGER* flags, the minimum allowed value. */
-  var minValue: js.UndefOr[String] = js.native
+  var minValue: js.UndefOr[String] = js.undefined
   
   /** This is the name of the flag. Flag names always use underscores, not hyphens, for example: *max_allowed_packet* */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Indicates whether changing this flag will trigger a database restart. Only applicable to Second Generation instances. */
-  var requiresRestart: js.UndefOr[Boolean] = js.native
+  var requiresRestart: js.UndefOr[Boolean] = js.undefined
   
   /** The type of the flag. Flags are typed to being *BOOLEAN*, *STRING*, *INTEGER* or *NONE*. *NONE* is used for flags which do not take a value, such as *skip_grant_tables*. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Flag {
   

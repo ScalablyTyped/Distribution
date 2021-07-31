@@ -3,17 +3,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnFrameRecordedCallbackResult extends StObject {
   
   /** 录音分片数据 */
-  var frameBuffer: ArrayBuffer = js.native
+  var frameBuffer: ArrayBuffer
   
   /** 当前帧是否正常录音结束前的最后一帧 */
-  var isLastFrame: Boolean = js.native
+  var isLastFrame: Boolean
 }
 object OnFrameRecordedCallbackResult {
   

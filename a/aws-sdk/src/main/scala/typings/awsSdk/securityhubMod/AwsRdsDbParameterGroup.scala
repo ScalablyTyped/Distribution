@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbParameterGroup extends StObject {
   
   /**
     * 
     */
-  var DbParameterGroupName: js.UndefOr[NonEmptyString] = js.native
+  var DbParameterGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var ParameterApplyStatus: js.UndefOr[NonEmptyString] = js.native
+  var ParameterApplyStatus: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbParameterGroup {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateEnvironmentOperationsRoleMessage extends StObject {
   
   /**
     * The name of the environment to which to set the operations role.
     */
-  var EnvironmentName: typings.awsSdk.elasticbeanstalkMod.EnvironmentName = js.native
+  var EnvironmentName: typings.awsSdk.elasticbeanstalkMod.EnvironmentName
   
   /**
     * The Amazon Resource Name (ARN) of an existing IAM role to be used as the environment's operations role.
     */
-  var OperationsRole: typings.awsSdk.elasticbeanstalkMod.OperationsRole = js.native
+  var OperationsRole: typings.awsSdk.elasticbeanstalkMod.OperationsRole
 }
 object AssociateEnvironmentOperationsRoleMessage {
   

@@ -2,19 +2,17 @@ package typings.iotaLibJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Balances extends StObject {
   
-  var balances: js.Array[Double] = js.native
+  var balances: js.Array[Double]
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var milestone: String = js.native
+  var milestone: String
   
-  var milestoneIndex: Double = js.native
+  var milestoneIndex: Double
 }
 object Balances {
   

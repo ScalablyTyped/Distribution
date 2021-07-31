@@ -3,23 +3,21 @@ package typings.glReact.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SurfaceProps extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLoadError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+  var onLoadError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
   
-  var preload: js.UndefOr[js.Array[_]] = js.native
+  var preload: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
-  var visitor: js.UndefOr[Visitor] = js.native
+  var visitor: js.UndefOr[Visitor] = js.undefined
 }
 object SurfaceProps {
   
@@ -51,7 +49,7 @@ object SurfaceProps {
     def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def setPreload(value: js.Array[_]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    def setPreload(value: js.Array[js.Any]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDiscovery.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Multipart extends StObject {
   
   /** True if this endpoint supports upload multipart media. */
-  var multipart: js.UndefOr[Boolean] = js.native
+  var multipart: js.UndefOr[Boolean] = js.undefined
   
   /** The URI path to be used for upload. Should be used in conjunction with the basePath property at the api-level. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object Multipart {
   

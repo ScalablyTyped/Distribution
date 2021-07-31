@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesCampaignsResponseMod.Unmarshalle
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetCampaignVersionsOutputMod {
   
-  @js.native
-  trait GetCampaignVersionsOutput extends OutputTypesUnion {
+  trait GetCampaignVersionsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * List of available campaigns.
       */
-    var CampaignsResponse: UnmarshalledCampaignsResponse = js.native
+    var CampaignsResponse: UnmarshalledCampaignsResponse
   }
   object GetCampaignVersionsOutput {
     

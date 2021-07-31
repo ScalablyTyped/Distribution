@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICD10CMTrait extends StObject {
   
   /**
     * Provides a name or contextual description about the trait.
     */
-  var Name: js.UndefOr[ICD10CMTraitName] = js.native
+  var Name: js.UndefOr[ICD10CMTraitName] = js.undefined
   
   /**
     * The level of confidence that Amazon Comprehend Medical has that the segment of text is correctly recognized as a trait.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
 }
 object ICD10CMTrait {
   

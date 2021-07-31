@@ -2,30 +2,28 @@ package typings.cordovaPluginContacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ContactOrganization object stores a contact's organization properties. A Contact object stores
   * one or more ContactOrganization objects in an array.
   */
-@js.native
 trait ContactOrganization extends StObject {
   
   /** The department the contract works for. */
-  var department: js.UndefOr[String] = js.native
+  var department: js.UndefOr[String] = js.undefined
   
   /** The name of the organization. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Set to true if this ContactOrganization contains the user's preferred value. */
-  var pref: js.UndefOr[Boolean] = js.native
+  var pref: js.UndefOr[Boolean] = js.undefined
   
   /** The contact's title at the organization. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** A string that indicates what type of field this is, home for example. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ContactOrganization {
   

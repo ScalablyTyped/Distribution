@@ -8,7 +8,6 @@ import typings.stormReactDiagrams.baseWidgetMod.BaseWidgetProps
 import typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diagramWidgetMod {
@@ -69,30 +68,31 @@ object diagramWidgetMod {
     def defaultProps_=(x: DiagramProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait DiagramProps extends BaseWidgetProps {
+  trait DiagramProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var actionStartedFiring: js.UndefOr[js.Function1[/* action */ BaseAction, Boolean]] = js.native
+    var actionStartedFiring: js.UndefOr[js.Function1[/* action */ BaseAction, Boolean]] = js.undefined
     
-    var actionStillFiring: js.UndefOr[js.Function1[/* action */ BaseAction, Unit]] = js.native
+    var actionStillFiring: js.UndefOr[js.Function1[/* action */ BaseAction, Unit]] = js.undefined
     
-    var actionStoppedFiring: js.UndefOr[js.Function1[/* action */ BaseAction, Unit]] = js.native
+    var actionStoppedFiring: js.UndefOr[js.Function1[/* action */ BaseAction, Unit]] = js.undefined
     
-    var allowCanvasTranslation: js.UndefOr[Boolean] = js.native
+    var allowCanvasTranslation: js.UndefOr[Boolean] = js.undefined
     
-    var allowCanvasZoom: js.UndefOr[Boolean] = js.native
+    var allowCanvasZoom: js.UndefOr[Boolean] = js.undefined
     
-    var allowLooseLinks: js.UndefOr[Boolean] = js.native
+    var allowLooseLinks: js.UndefOr[Boolean] = js.undefined
     
-    var deleteKeys: js.UndefOr[js.Array[Double]] = js.native
+    var deleteKeys: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var diagramEngine: DiagramEngine = js.native
+    var diagramEngine: DiagramEngine
     
-    var inverseZoom: js.UndefOr[Boolean] = js.native
+    var inverseZoom: js.UndefOr[Boolean] = js.undefined
     
-    var maxNumberPointsPerLink: js.UndefOr[Double] = js.native
+    var maxNumberPointsPerLink: js.UndefOr[Double] = js.undefined
     
-    var smartRouting: js.UndefOr[Boolean] = js.native
+    var smartRouting: js.UndefOr[Boolean] = js.undefined
   }
   object DiagramProps {
     
@@ -173,20 +173,19 @@ object diagramWidgetMod {
     }
   }
   
-  @js.native
   trait DiagramState extends StObject {
     
-    var action: BaseAction | Null = js.native
+    var action: BaseAction | Null
     
-    var diagramEngineListener: js.Any = js.native
+    var diagramEngineListener: js.Any
     
-    var document: js.Any = js.native
+    var document: js.Any
     
-    var renderedNodes: Boolean = js.native
+    var renderedNodes: Boolean
     
-    var wasMoved: Boolean = js.native
+    var wasMoved: Boolean
     
-    var windowListener: js.Any = js.native
+    var windowListener: js.Any
   }
   object DiagramState {
     
@@ -198,7 +197,7 @@ object diagramWidgetMod {
       wasMoved: Boolean,
       windowListener: js.Any
     ): DiagramState = {
-      val __obj = js.Dynamic.literal(diagramEngineListener = diagramEngineListener.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], renderedNodes = renderedNodes.asInstanceOf[js.Any], wasMoved = wasMoved.asInstanceOf[js.Any], windowListener = windowListener.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(diagramEngineListener = diagramEngineListener.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], renderedNodes = renderedNodes.asInstanceOf[js.Any], wasMoved = wasMoved.asInstanceOf[js.Any], windowListener = windowListener.asInstanceOf[js.Any], action = null)
       __obj.asInstanceOf[DiagramState]
     }
     

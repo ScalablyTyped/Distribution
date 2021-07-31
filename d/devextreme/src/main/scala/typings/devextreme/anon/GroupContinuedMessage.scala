@@ -4,35 +4,33 @@ import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupContinuedMessage extends StObject {
   
-  var column: js.UndefOr[this.type] = js.native
+  var column: js.UndefOr[this.type] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var displayValue: js.UndefOr[js.Any] = js.native
+  var displayValue: js.UndefOr[js.Any] = js.undefined
   
-  var groupContinuedMessage: js.UndefOr[String] = js.native
+  var groupContinuedMessage: js.UndefOr[String] = js.undefined
   
-  var groupContinuesMessage: js.UndefOr[String] = js.native
+  var groupContinuesMessage: js.UndefOr[String] = js.undefined
   
-  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var summaryItems: js.UndefOr[js.Array[_]] = js.native
+  var summaryItems: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object GroupContinuedMessage {
   
@@ -100,7 +98,7 @@ object GroupContinuedMessage {
     def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     @scala.inline
-    def setSummaryItems(value: js.Array[_]): Self = StObject.set(x, "summaryItems", value.asInstanceOf[js.Any])
+    def setSummaryItems(value: js.Array[js.Any]): Self = StObject.set(x, "summaryItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSummaryItemsUndefined: Self = StObject.set(x, "summaryItems", js.undefined)

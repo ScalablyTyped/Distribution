@@ -12,51 +12,49 @@ import typings.hafasClient.hafasClientStrings.walking
 import typings.hafasClient.hafasClientStrings.watercraft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Line extends StObject {
   
-  var additionalName: js.UndefOr[String] = js.native
+  var additionalName: js.UndefOr[String] = js.undefined
   
-  var adminCode: js.UndefOr[String] = js.native
+  var adminCode: js.UndefOr[String] = js.undefined
   
-  var express: js.UndefOr[Boolean] = js.native
+  var express: js.UndefOr[Boolean] = js.undefined
   
-  var fahrtNr: js.UndefOr[String] = js.native
+  var fahrtNr: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var metro: js.UndefOr[Boolean] = js.native
+  var metro: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking] = js.native
+  var mode: js.UndefOr[train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var night: js.UndefOr[Boolean] = js.native
+  var night: js.UndefOr[Boolean] = js.undefined
   
-  var nr: js.UndefOr[Double] = js.native
+  var nr: js.UndefOr[Double] = js.undefined
   
-  var operator: js.UndefOr[Operator] = js.native
+  var operator: js.UndefOr[Operator] = js.undefined
   
-  var product: js.UndefOr[String] = js.native
+  var product: js.UndefOr[String] = js.undefined
   
-  var public: js.UndefOr[Boolean] = js.native
+  var public: js.UndefOr[Boolean] = js.undefined
   
   /** routes ids */
-  var routes: js.UndefOr[js.Array[String]] = js.native
+  var routes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
-  var `type`: line = js.native
+  var `type`: line
 }
 object Line {
   
   @scala.inline
-  def apply(`type`: line): Line = {
+  def apply(): Line = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("line")
     __obj.asInstanceOf[Line]
   }
   

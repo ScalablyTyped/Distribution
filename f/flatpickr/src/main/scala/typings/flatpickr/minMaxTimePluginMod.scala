@@ -5,26 +5,26 @@ import typings.flatpickr.optionsMod.Plugin
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minMaxTimePluginMod {
   
-  @JSImport("flatpickr/dist/plugins/minMaxTimePlugin", JSImport.Default)
+  @JSImport("flatpickr/dist/plugins/minMaxTimePlugin", JSImport.Namespace)
   @js.native
-  def default(): Plugin[js.Object] = js.native
-  @JSImport("flatpickr/dist/plugins/minMaxTimePlugin", JSImport.Default)
-  @js.native
-  def default(config: Config): Plugin[js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
+  @scala.inline
+  def default(config: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  
   trait Config extends StObject {
     
-    var getTimeLimits: js.UndefOr[js.Function1[/* date */ Date, MinMaxTime]] = js.native
+    var getTimeLimits: js.UndefOr[js.Function1[/* date */ Date, MinMaxTime]] = js.undefined
     
-    var table: js.UndefOr[Record[String, MinMaxTime]] = js.native
+    var table: js.UndefOr[Record[String, MinMaxTime]] = js.undefined
     
-    var tableDateFormat: js.UndefOr[String] = js.native
+    var tableDateFormat: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -57,12 +57,11 @@ object minMaxTimePluginMod {
     }
   }
   
-  @js.native
   trait MinMaxTime extends StObject {
     
-    var maxTime: js.UndefOr[String] = js.native
+    var maxTime: js.UndefOr[String] = js.undefined
     
-    var minTime: js.UndefOr[String] = js.native
+    var minTime: js.UndefOr[String] = js.undefined
   }
   object MinMaxTime {
     
@@ -89,14 +88,13 @@ object minMaxTimePluginMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var defaults: MinMaxTime = js.native
+    var defaults: MinMaxTime
     
-    def formatDate(date: Date, f: String): String = js.native
+    def formatDate(date: Date, f: String): String
     
-    var tableDateFormat: String = js.native
+    var tableDateFormat: String
   }
   object State {
     

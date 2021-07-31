@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaStatefulPolicyPreservedStateDiskDevice extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaStatefulPolicyPreservedStateDiskDevice extends StObject {
     * the given instance or the whole group is deleted. Note: disks attached in
     * READ_ONLY mode cannot be auto-deleted.
     */
-  var autoDelete: js.UndefOr[String] = js.native
+  var autoDelete: js.UndefOr[String] = js.undefined
 }
 object SchemaStatefulPolicyPreservedStateDiskDevice {
   

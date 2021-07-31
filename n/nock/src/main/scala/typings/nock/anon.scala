@@ -35,17 +35,15 @@ import typings.std.Record
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.UndefOr[Double] = js.native
+    var body: js.UndefOr[Double] = js.undefined
     
-    var head: js.UndefOr[Double] = js.native
+    var head: js.UndefOr[Double] = js.undefined
   }
   object Body {
     
@@ -178,7 +176,7 @@ object anon {
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -414,9 +412,9 @@ object anon {
     def setNoDelay(noDelay: Boolean): Unit = js.native
     
     def setSocketKeepAlive(): Unit = js.native
-    def setSocketKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
     def setSocketKeepAlive(enable: Boolean): Unit = js.native
     def setSocketKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
+    def setSocketKeepAlive(enable: Unit, initialDelay: Double): Unit = js.native
     
     def setTimeout(timeout: Double): this.type = js.native
     def setTimeout(timeout: Double, callback: js.Function0[Unit]): this.type = js.native
@@ -457,21 +455,16 @@ object anon {
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
-    def write(
-      str: String,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
-  @js.native
   trait Context extends StObject {
     
-    var context: BackContext = js.native
+    var context: BackContext
     
-    def nockDone(): Unit = js.native
+    def nockDone(): Unit
   }
   object Context {
     
@@ -492,12 +485,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Pass extends StObject {
     
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
-    var user: String = js.native
+    var user: String
   }
   object Pass {
     

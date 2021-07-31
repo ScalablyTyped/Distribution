@@ -2,7 +2,6 @@ package typings.angularOdataResources.OData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Instance calls always return the the promise of the request which retrieved the object
@@ -13,19 +12,19 @@ trait IResource[T] extends StObject {
   @JSName("$delete")
   def $delete(): js.Any = js.native
   @JSName("$delete")
-  def $delete(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
-  @JSName("$delete")
-  def $delete(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
-  @JSName("$delete")
-  def $delete(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
-  @JSName("$delete")
   def $delete(params: js.Object): js.Any = js.native
-  @JSName("$delete")
-  def $delete(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$delete")
   def $delete(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$delete")
   def $delete(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$delete")
+  def $delete(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  @JSName("$delete")
+  def $delete(params: Unit, success: js.Function): js.Any = js.native
+  @JSName("$delete")
+  def $delete(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$delete")
+  def $delete(params: Unit, success: Unit, error: js.Function): js.Any = js.native
   @JSName("$delete")
   def $delete(success: js.Function): js.Any = js.native
   @JSName("$delete")
@@ -34,19 +33,19 @@ trait IResource[T] extends StObject {
   @JSName("$get")
   def $get(): js.Any = js.native
   @JSName("$get")
-  def $get(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
-  @JSName("$get")
-  def $get(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
-  @JSName("$get")
-  def $get(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
-  @JSName("$get")
   def $get(params: js.Object): js.Any = js.native
-  @JSName("$get")
-  def $get(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$get")
   def $get(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$get")
   def $get(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$get")
+  def $get(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  @JSName("$get")
+  def $get(params: Unit, success: js.Function): js.Any = js.native
+  @JSName("$get")
+  def $get(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$get")
+  def $get(params: Unit, success: Unit, error: js.Function): js.Any = js.native
   @JSName("$get")
   def $get(success: js.Function): js.Any = js.native
   @JSName("$get")
@@ -59,19 +58,19 @@ trait IResource[T] extends StObject {
   @JSName("$query")
   def $query(): js.Any = js.native
   @JSName("$query")
-  def $query(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
-  @JSName("$query")
-  def $query(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
-  @JSName("$query")
-  def $query(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
-  @JSName("$query")
   def $query(params: js.Object): js.Any = js.native
-  @JSName("$query")
-  def $query(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$query")
   def $query(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$query")
   def $query(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$query")
+  def $query(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  @JSName("$query")
+  def $query(params: Unit, success: js.Function): js.Any = js.native
+  @JSName("$query")
+  def $query(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$query")
+  def $query(params: Unit, success: Unit, error: js.Function): js.Any = js.native
   @JSName("$query")
   def $query(success: js.Function): js.Any = js.native
   @JSName("$query")
@@ -80,19 +79,19 @@ trait IResource[T] extends StObject {
   @JSName("$remove")
   def $remove(): js.Any = js.native
   @JSName("$remove")
-  def $remove(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
-  @JSName("$remove")
-  def $remove(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
-  @JSName("$remove")
-  def $remove(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
-  @JSName("$remove")
   def $remove(params: js.Object): js.Any = js.native
-  @JSName("$remove")
-  def $remove(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$remove")
   def $remove(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$remove")
   def $remove(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$remove")
+  def $remove(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  @JSName("$remove")
+  def $remove(params: Unit, success: js.Function): js.Any = js.native
+  @JSName("$remove")
+  def $remove(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$remove")
+  def $remove(params: Unit, success: Unit, error: js.Function): js.Any = js.native
   @JSName("$remove")
   def $remove(success: js.Function): js.Any = js.native
   @JSName("$remove")
@@ -104,19 +103,19 @@ trait IResource[T] extends StObject {
   @JSName("$save")
   def $save(): js.Any = js.native
   @JSName("$save")
-  def $save(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
-  @JSName("$save")
-  def $save(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
-  @JSName("$save")
-  def $save(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
-  @JSName("$save")
   def $save(params: js.Object): js.Any = js.native
-  @JSName("$save")
-  def $save(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$save")
   def $save(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$save")
   def $save(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$save")
+  def $save(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  @JSName("$save")
+  def $save(params: Unit, success: js.Function): js.Any = js.native
+  @JSName("$save")
+  def $save(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$save")
+  def $save(params: Unit, success: Unit, error: js.Function): js.Any = js.native
   @JSName("$save")
   def $save(success: js.Function): js.Any = js.native
   @JSName("$save")
@@ -125,19 +124,19 @@ trait IResource[T] extends StObject {
   @JSName("$update")
   def $update(): js.Any = js.native
   @JSName("$update")
-  def $update(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
-  @JSName("$update")
-  def $update(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
-  @JSName("$update")
-  def $update(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
-  @JSName("$update")
   def $update(params: js.Object): js.Any = js.native
-  @JSName("$update")
-  def $update(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$update")
   def $update(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$update")
   def $update(params: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$update")
+  def $update(params: js.Object, success: Unit, error: js.Function): js.Any = js.native
+  @JSName("$update")
+  def $update(params: Unit, success: js.Function): js.Any = js.native
+  @JSName("$update")
+  def $update(params: Unit, success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$update")
+  def $update(params: Unit, success: Unit, error: js.Function): js.Any = js.native
   @JSName("$update")
   def $update(success: js.Function): js.Any = js.native
   @JSName("$update")

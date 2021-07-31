@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableCollection.toJSON()`. */
-@js.native
 trait TableCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[TableData]] = js.native
+  var items: js.UndefOr[js.Array[TableData]] = js.undefined
 }
 object TableCollectionData {
   

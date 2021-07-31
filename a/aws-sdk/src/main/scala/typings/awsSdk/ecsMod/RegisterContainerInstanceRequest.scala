@@ -2,56 +2,54 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterContainerInstanceRequest extends StObject {
   
   /**
     * The container instance attributes that this container instance supports.
     */
-  var attributes: js.UndefOr[Attributes] = js.native
+  var attributes: js.UndefOr[Attributes] = js.undefined
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster with which to register your container instance. If you do not specify a cluster, the default cluster is assumed.
     */
-  var cluster: js.UndefOr[String] = js.native
+  var cluster: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the container instance (if it was previously registered).
     */
-  var containerInstanceArn: js.UndefOr[String] = js.native
+  var containerInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The instance identity document for the EC2 instance to register. This document can be found by running the following command from the instance: curl http://169.254.169.254/latest/dynamic/instance-identity/document/ 
     */
-  var instanceIdentityDocument: js.UndefOr[String] = js.native
+  var instanceIdentityDocument: js.UndefOr[String] = js.undefined
   
   /**
     * The instance identity document signature for the EC2 instance to register. This signature can be found by running the following command from the instance: curl http://169.254.169.254/latest/dynamic/instance-identity/signature/ 
     */
-  var instanceIdentityDocumentSignature: js.UndefOr[String] = js.native
+  var instanceIdentityDocumentSignature: js.UndefOr[String] = js.undefined
   
   /**
     * The devices that are available on the container instance. The only supported device type is a GPU.
     */
-  var platformDevices: js.UndefOr[PlatformDevices] = js.native
+  var platformDevices: js.UndefOr[PlatformDevices] = js.undefined
   
   /**
     * The metadata that you apply to the container instance to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. The following basic restrictions apply to tags:   Maximum number of tags per resource - 50   For each resource, each tag key must be unique, and each tag key can have only one value.   Maximum key length - 128 Unicode characters in UTF-8   Maximum value length - 256 Unicode characters in UTF-8   If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.   Tag keys and values are case-sensitive.   Do not use aws:, AWS:, or any upper or lowercase combination of such as a prefix for either keys or values as it is reserved for AWS use. You cannot edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags per resource limit.  
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
   
   /**
     * The resources available on the instance.
     */
-  var totalResources: js.UndefOr[Resources] = js.native
+  var totalResources: js.UndefOr[Resources] = js.undefined
   
   /**
     * The version information for the Amazon ECS container agent and Docker daemon running on the container instance.
     */
-  var versionInfo: js.UndefOr[VersionInfo] = js.native
+  var versionInfo: js.UndefOr[VersionInfo] = js.undefined
 }
 object RegisterContainerInstanceRequest {
   

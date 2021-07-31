@@ -5,47 +5,41 @@ import typings.nextEnv.anon.CombinedEnv
 import typings.nextEnv.anon.Contents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@next/env", "loadEnvConfig")
+  @JSImport("@next/env", JSImport.Namespace)
   @js.native
-  def loadEnvConfig(dir: String): CombinedEnv = js.native
-  @JSImport("@next/env", "loadEnvConfig")
-  @js.native
-  def loadEnvConfig(dir: String, dev: js.UndefOr[scala.Nothing], log: Log): CombinedEnv = js.native
-  @JSImport("@next/env", "loadEnvConfig")
-  @js.native
-  def loadEnvConfig(dir: String, dev: Boolean): CombinedEnv = js.native
-  @JSImport("@next/env", "loadEnvConfig")
-  @js.native
-  def loadEnvConfig(dir: String, dev: Boolean, log: Log): CombinedEnv = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@next/env", "processEnv")
-  @js.native
-  def processEnv(loadedEnvFiles: LoadedEnvFiles): Env = js.native
-  @JSImport("@next/env", "processEnv")
-  @js.native
-  def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: js.UndefOr[scala.Nothing], log: Log): Env = js.native
-  @JSImport("@next/env", "processEnv")
-  @js.native
-  def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String): Env = js.native
-  @JSImport("@next/env", "processEnv")
-  @js.native
-  def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String, log: Log): Env = js.native
+  @scala.inline
+  def loadEnvConfig(dir: String): CombinedEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any]).asInstanceOf[CombinedEnv]
+  @scala.inline
+  def loadEnvConfig(dir: String, dev: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
+  @scala.inline
+  def loadEnvConfig(dir: String, dev: Boolean, log: Log): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
+  @scala.inline
+  def loadEnvConfig(dir: String, dev: Unit, log: Log): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
+  
+  @scala.inline
+  def processEnv(loadedEnvFiles: LoadedEnvFiles): Env = ^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any]).asInstanceOf[Env]
+  @scala.inline
+  def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Env]
+  @scala.inline
+  def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String, log: Log): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Env]
+  @scala.inline
+  def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: Unit, log: Log): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Env]
   
   type Env = StringDictionary[String]
   
   type LoadedEnvFiles = js.Array[Contents]
   
-  @js.native
   trait Log extends StObject {
     
-    def error(args: js.Any*): Unit = js.native
+    def error(args: js.Any*): Unit
     
-    def info(args: js.Any*): Unit = js.native
+    def info(args: js.Any*): Unit
   }
   object Log {
     

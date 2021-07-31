@@ -2,21 +2,19 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutApplicationPolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * An array of policy statements applied to the application.
     */
-  var Statements: listOfApplicationPolicyStatement = js.native
+  var Statements: listOfApplicationPolicyStatement
 }
 object PutApplicationPolicyRequest {
   

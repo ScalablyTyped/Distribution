@@ -7,7 +7,6 @@ import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -173,9 +172,8 @@ object Layout {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Layout.createIn")
-  @js.native
-  def createIn(container: IFolderBase): Layout = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): Layout = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Layout]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Layout.structureTypeName")

@@ -4,22 +4,23 @@ import typings.jsreportCore.mod.ExtensionDefinition
 import typings.jsreportJsrender.jsreportJsrenderStrings.jsrender
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  
   @JSImport("jsreport-jsrender", JSImport.Namespace)
   @js.native
-  def apply(): ExtensionDefinition = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var engine: jsrender | String = js.native
+      var engine: jsrender | String
     }
     object Template {
       

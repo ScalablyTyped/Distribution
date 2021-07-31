@@ -2,36 +2,34 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEnvironmentRequest extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * A description of the environment.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * Amazon CloudWatch alarms to monitor during the deployment process.
     */
-  var Monitors: js.UndefOr[MonitorList] = js.native
+  var Monitors: js.UndefOr[MonitorList] = js.undefined
   
   /**
     * A name for the environment.
     */
-  var Name: typings.awsSdk.appconfigMod.Name = js.native
+  var Name: typings.awsSdk.appconfigMod.Name
   
   /**
     * Metadata to assign to the environment. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateEnvironmentRequest {
   

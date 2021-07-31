@@ -2,91 +2,89 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OTAUpdateInfo extends StObject {
   
   /**
     * A collection of name/value pairs
     */
-  var additionalParameters: js.UndefOr[AdditionalParameterMap] = js.native
+  var additionalParameters: js.UndefOr[AdditionalParameterMap] = js.undefined
   
   /**
     * The AWS IoT job ARN associated with the OTA update.
     */
-  var awsIotJobArn: js.UndefOr[AwsIotJobArn] = js.native
+  var awsIotJobArn: js.UndefOr[AwsIotJobArn] = js.undefined
   
   /**
     * The AWS IoT job ID associated with the OTA update.
     */
-  var awsIotJobId: js.UndefOr[AwsIotJobId] = js.native
+  var awsIotJobId: js.UndefOr[AwsIotJobId] = js.undefined
   
   /**
     * Configuration for the rollout of OTA updates.
     */
-  var awsJobExecutionsRolloutConfig: js.UndefOr[AwsJobExecutionsRolloutConfig] = js.native
+  var awsJobExecutionsRolloutConfig: js.UndefOr[AwsJobExecutionsRolloutConfig] = js.undefined
   
   /**
     * Configuration information for pre-signed URLs. Valid when protocols contains HTTP.
     */
-  var awsJobPresignedUrlConfig: js.UndefOr[AwsJobPresignedUrlConfig] = js.native
+  var awsJobPresignedUrlConfig: js.UndefOr[AwsJobPresignedUrlConfig] = js.undefined
   
   /**
     * The date when the OTA update was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * A description of the OTA update.
     */
-  var description: js.UndefOr[OTAUpdateDescription] = js.native
+  var description: js.UndefOr[OTAUpdateDescription] = js.undefined
   
   /**
     * Error information associated with the OTA update.
     */
-  var errorInfo: js.UndefOr[ErrorInfo] = js.native
+  var errorInfo: js.UndefOr[ErrorInfo] = js.undefined
   
   /**
     * The date when the OTA update was last updated.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The OTA update ARN.
     */
-  var otaUpdateArn: js.UndefOr[OTAUpdateArn] = js.native
+  var otaUpdateArn: js.UndefOr[OTAUpdateArn] = js.undefined
   
   /**
     * A list of files associated with the OTA update.
     */
-  var otaUpdateFiles: js.UndefOr[OTAUpdateFiles] = js.native
+  var otaUpdateFiles: js.UndefOr[OTAUpdateFiles] = js.undefined
   
   /**
     * The OTA update ID.
     */
-  var otaUpdateId: js.UndefOr[OTAUpdateId] = js.native
+  var otaUpdateId: js.UndefOr[OTAUpdateId] = js.undefined
   
   /**
     * The status of the OTA update.
     */
-  var otaUpdateStatus: js.UndefOr[OTAUpdateStatus] = js.native
+  var otaUpdateStatus: js.UndefOr[OTAUpdateStatus] = js.undefined
   
   /**
     * The protocol used to transfer the OTA update image. Valid values are [HTTP], [MQTT], [HTTP, MQTT]. When both HTTP and MQTT are specified, the target device can choose the protocol.
     */
-  var protocols: js.UndefOr[Protocols] = js.native
+  var protocols: js.UndefOr[Protocols] = js.undefined
   
   /**
     * Specifies whether the OTA update will continue to run (CONTINUOUS), or will be complete after all those things specified as targets have completed the OTA update (SNAPSHOT). If continuous, the OTA update may also be run on a thing when a change is detected in a target. For example, an OTA update will run on a thing when the thing is added to a target group, even after the OTA update was completed by all things originally in the group. 
     */
-  var targetSelection: js.UndefOr[TargetSelection] = js.native
+  var targetSelection: js.UndefOr[TargetSelection] = js.undefined
   
   /**
     * The targets of the OTA update.
     */
-  var targets: js.UndefOr[Targets] = js.native
+  var targets: js.UndefOr[Targets] = js.undefined
 }
 object OTAUpdateInfo {
   

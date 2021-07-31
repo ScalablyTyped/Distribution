@@ -3,17 +3,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AzureKeyVaultVariableGroupProviderData extends VariableGroupProviderData {
+trait AzureKeyVaultVariableGroupProviderData
+  extends StObject
+     with VariableGroupProviderData {
   
-  var lastRefreshedOn: Date = js.native
+  var lastRefreshedOn: Date
   
-  var serviceEndpointId: String = js.native
+  var serviceEndpointId: String
   
-  var vault: String = js.native
+  var vault: String
 }
 object AzureKeyVaultVariableGroupProviderData {
   

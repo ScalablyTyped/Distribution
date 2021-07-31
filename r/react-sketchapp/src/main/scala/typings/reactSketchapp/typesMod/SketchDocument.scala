@@ -2,15 +2,13 @@ package typings.reactSketchapp.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchDocument extends StObject {
   
-  def documentData(): SketchDocumentData = js.native
+  def documentData(): SketchDocumentData
   
-  def showMessage(message: String): Unit = js.native
+  def showMessage(message: String): Unit
 }
 object SketchDocument {
   

@@ -2,194 +2,145 @@ package typings.random
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("random", "bates")
+  @JSImport("random", JSImport.Namespace)
   @js.native
-  def bates(): js.Function0[Double] = js.native
-  @JSImport("random", "bates")
-  @js.native
-  def bates(n: Double): js.Function0[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("random", "bernoulli")
-  @js.native
-  def bernoulli(): js.Function0[Double] = js.native
-  @JSImport("random", "bernoulli")
-  @js.native
-  def bernoulli(p: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def bates(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bates")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def bates(n: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bates")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "binomial")
-  @js.native
-  def binomial(): js.Function0[Double] = js.native
-  @JSImport("random", "binomial")
-  @js.native
-  def binomial(n: js.UndefOr[scala.Nothing], p: Double): js.Function0[Double] = js.native
-  @JSImport("random", "binomial")
-  @js.native
-  def binomial(n: Double): js.Function0[Double] = js.native
-  @JSImport("random", "binomial")
-  @js.native
-  def binomial(n: Double, p: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def bernoulli(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bernoulli")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def bernoulli(p: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bernoulli")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "bool")
-  @js.native
-  def bool(): Boolean = js.native
+  @scala.inline
+  def binomial(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("binomial")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def binomial(n: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("binomial")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def binomial(n: Double, p: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("binomial")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def binomial(n: Unit, p: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("binomial")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "boolean")
-  @js.native
-  def boolean(): Boolean = js.native
+  @scala.inline
+  def bool(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")().asInstanceOf[Boolean]
   
-  @JSImport("random", "exponential")
-  @js.native
-  def exponential(): js.Function0[Double] = js.native
-  @JSImport("random", "exponential")
-  @js.native
-  def exponential(lambda: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def boolean(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[Boolean]
   
-  @JSImport("random", "float")
-  @js.native
-  def float(): Double = js.native
-  @JSImport("random", "float")
-  @js.native
-  def float(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
-  @JSImport("random", "float")
-  @js.native
-  def float(min: Double): Double = js.native
-  @JSImport("random", "float")
-  @js.native
-  def float(min: Double, max: Double): Double = js.native
+  @scala.inline
+  def exponential(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def exponential(lambda: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "geometric")
-  @js.native
-  def geometric(): js.Function0[Double] = js.native
-  @JSImport("random", "geometric")
-  @js.native
-  def geometric(p: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def float(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("float")().asInstanceOf[Double]
+  @scala.inline
+  def float(min: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("float")(min.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def float(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def float(min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("random", "int")
-  @js.native
-  def int(): Double = js.native
-  @JSImport("random", "int")
-  @js.native
-  def int(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
-  @JSImport("random", "int")
-  @js.native
-  def int(min: Double): Double = js.native
-  @JSImport("random", "int")
-  @js.native
-  def int(min: Double, max: Double): Double = js.native
+  @scala.inline
+  def geometric(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geometric")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def geometric(p: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geometric")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "irwinHall")
-  @js.native
-  def irwinHall(): js.Function0[Double] = js.native
-  @JSImport("random", "irwinHall")
-  @js.native
-  def irwinHall(n: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def int(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("int")().asInstanceOf[Double]
+  @scala.inline
+  def int(min: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("int")(min.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def int(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("int")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def int(min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("int")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("random", "logNormal")
-  @js.native
-  def logNormal(): js.Function0[Double] = js.native
-  @JSImport("random", "logNormal")
-  @js.native
-  def logNormal(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
-  @JSImport("random", "logNormal")
-  @js.native
-  def logNormal(mu: Double): js.Function0[Double] = js.native
-  @JSImport("random", "logNormal")
-  @js.native
-  def logNormal(mu: Double, sigma: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def irwinHall(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("irwinHall")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def irwinHall(n: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("irwinHall")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "normal")
-  @js.native
-  def normal(): js.Function0[Double] = js.native
-  @JSImport("random", "normal")
-  @js.native
-  def normal(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
-  @JSImport("random", "normal")
-  @js.native
-  def normal(mu: Double): js.Function0[Double] = js.native
-  @JSImport("random", "normal")
-  @js.native
-  def normal(mu: Double, sigma: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def logNormal(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("logNormal")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def logNormal(mu: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("logNormal")(mu.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def logNormal(mu: Double, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("logNormal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def logNormal(mu: Unit, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("logNormal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "pareto")
-  @js.native
-  def pareto(): js.Function0[Double] = js.native
-  @JSImport("random", "pareto")
-  @js.native
-  def pareto(alpha: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def normal(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("normal")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def normal(mu: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("normal")(mu.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def normal(mu: Double, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("normal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def normal(mu: Unit, sigma: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("normal")(mu.asInstanceOf[js.Any], sigma.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "patch")
-  @js.native
-  def patch(): Unit = js.native
+  @scala.inline
+  def pareto(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pareto")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def pareto(alpha: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pareto")(alpha.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "poisson")
-  @js.native
-  def poisson(): js.Function0[Double] = js.native
-  @JSImport("random", "poisson")
-  @js.native
-  def poisson(lambda: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def patch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")().asInstanceOf[Unit]
   
-  @JSImport("random", "uniform")
-  @js.native
-  def uniform(): js.Function0[Double] = js.native
-  @JSImport("random", "uniform")
-  @js.native
-  def uniform(min: js.UndefOr[scala.Nothing], max: Double): js.Function0[Double] = js.native
-  @JSImport("random", "uniform")
-  @js.native
-  def uniform(min: Double): js.Function0[Double] = js.native
-  @JSImport("random", "uniform")
-  @js.native
-  def uniform(min: Double, max: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def poisson(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("poisson")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def poisson(lambda: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("poisson")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "uniformBoolean")
-  @js.native
-  def uniformBoolean(): js.Function0[Boolean] = js.native
+  @scala.inline
+  def uniform(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniform")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def uniform(min: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniform")(min.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def uniform(min: Double, max: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def uniform(min: Unit, max: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "uniformInt")
-  @js.native
-  def uniformInt(): js.Function0[Double] = js.native
-  @JSImport("random", "uniformInt")
-  @js.native
-  def uniformInt(min: js.UndefOr[scala.Nothing], max: Double): js.Function0[Double] = js.native
-  @JSImport("random", "uniformInt")
-  @js.native
-  def uniformInt(min: Double): js.Function0[Double] = js.native
-  @JSImport("random", "uniformInt")
-  @js.native
-  def uniformInt(min: Double, max: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def uniformBoolean(): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniformBoolean")().asInstanceOf[js.Function0[Boolean]]
   
-  @JSImport("random", "unpatch")
-  @js.native
-  def unpatch(): Unit = js.native
+  @scala.inline
+  def uniformInt(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniformInt")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def uniformInt(min: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniformInt")(min.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def uniformInt(min: Double, max: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformInt")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def uniformInt(min: Unit, max: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformInt")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
   
-  @JSImport("random", "use")
-  @js.native
-  def use(n: String): Unit = js.native
-  @JSImport("random", "use")
-  @js.native
-  def use(n: js.Function0[Double]): Unit = js.native
-  @JSImport("random", "use")
-  @js.native
-  def use(n: Double): Unit = js.native
-  @JSImport("random", "use")
-  @js.native
-  def use(n: RNG): Unit = js.native
+  @scala.inline
+  def unpatch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unpatch")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def use(n: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def use(n: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def use(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def use(n: RNG): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait RNG extends StObject {
     
-    def clone(seed: Double, opts: js.Object): RNG = js.native
+    def clone(seed: Double, opts: js.Object): RNG
     
-    var name: String = js.native
+    var name: String
     
-    def next(): Double = js.native
+    def next(): Double
     
-    def seed(seed: Double, opts: js.Object): Unit = js.native
+    def seed(seed: Double, opts: js.Object): Unit
   }
   object RNG {
     

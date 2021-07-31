@@ -2,7 +2,6 @@ package typings.nodegit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Pathspec")
@@ -12,33 +11,29 @@ class Pathspec ()
 /* static members */
 object Pathspec {
   
-  @JSImport("nodegit", "Pathspec.create")
+  @JSImport("nodegit", "Pathspec")
   @js.native
-  def create(pathspec: String): typings.nodegit.pathSpecMod.Pathspec = js.native
-  @JSImport("nodegit", "Pathspec.create")
-  @js.native
-  def create(pathspec: js.Array[String]): typings.nodegit.pathSpecMod.Pathspec = js.native
-  @JSImport("nodegit", "Pathspec.create")
-  @js.native
-  def create(pathspec: typings.nodegit.strArrayMod.Strarray): typings.nodegit.pathSpecMod.Pathspec = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("nodegit", "Pathspec.matchListDiffEntry")
-  @js.native
-  def matchListDiffEntry(m: js.Any, pos: Double): typings.nodegit.diffDeltaMod.DiffDelta = js.native
+  @scala.inline
+  def create(pathspec: String): typings.nodegit.pathSpecMod.Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.pathSpecMod.Pathspec]
+  @scala.inline
+  def create(pathspec: js.Array[String]): typings.nodegit.pathSpecMod.Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.pathSpecMod.Pathspec]
+  @scala.inline
+  def create(pathspec: typings.nodegit.strArrayMod.Strarray): typings.nodegit.pathSpecMod.Pathspec = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathspec.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.pathSpecMod.Pathspec]
   
-  @JSImport("nodegit", "Pathspec.matchListEntry")
-  @js.native
-  def matchListEntry(m: js.Any, pos: Double): String = js.native
+  @scala.inline
+  def matchListDiffEntry(m: js.Any, pos: Double): typings.nodegit.diffDeltaMod.DiffDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListDiffEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.nodegit.diffDeltaMod.DiffDelta]
   
-  @JSImport("nodegit", "Pathspec.matchListEntrycount")
-  @js.native
-  def matchListEntrycount(m: js.Any): Double = js.native
+  @scala.inline
+  def matchListEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nodegit", "Pathspec.matchListFailedEntry")
-  @js.native
-  def matchListFailedEntry(m: js.Any, pos: Double): String = js.native
+  @scala.inline
+  def matchListEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("nodegit", "Pathspec.matchListFailedEntrycount")
-  @js.native
-  def matchListFailedEntrycount(m: js.Any): Double = js.native
+  @scala.inline
+  def matchListFailedEntry(m: js.Any, pos: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntry")(m.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def matchListFailedEntrycount(m: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

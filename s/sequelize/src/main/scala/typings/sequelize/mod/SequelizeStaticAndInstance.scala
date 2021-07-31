@@ -5,14 +5,15 @@ import typings.bluebird.mod.Resolvable
 import typings.sequelize.anon.TypeofPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sequelize methods that are available both for the static and the instance class of Sequelize
   */
 @js.native
-trait SequelizeStaticAndInstance extends Errors {
+trait SequelizeStaticAndInstance
+  extends StObject
+     with Errors {
   
   /**
     * A reference to the deferrable collection. Use this to access the different deferrable options.
@@ -22,21 +23,21 @@ trait SequelizeStaticAndInstance extends Errors {
   /**
     * A reference to the sequelize instance class.
     */
-  var Instance: typings.sequelize.mod.Instance[_] = js.native
+  var Instance: typings.sequelize.mod.Instance[js.Any] = js.native
   
   /**
     * A Model represents a table in the database. Sometimes you might also see it referred to as model, or
     * simply as factory. This class should not be instantiated directly, it is created using sequelize.define,
     * and already created models can be loaded using sequelize.import
     */
-  var Model: typings.sequelize.mod.Model[_, _, _] = js.native
+  var Model: typings.sequelize.mod.Model[js.Any, js.Any, js.Any] = js.native
   
   var Op: Operators = js.native
   
   /**
     * A modified version of bluebird promises, that allows listening for sql events
     */
-  var Promise: TypeofPromise with (Instantiable1[
+  var Promise: TypeofPromise & (Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 

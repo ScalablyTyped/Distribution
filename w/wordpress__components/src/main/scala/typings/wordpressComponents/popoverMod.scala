@@ -17,7 +17,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.container
 import typings.wordpressComponents.wordpressComponentsStrings.firstElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -26,12 +25,12 @@ object popoverMod {
     
     @JSImport("@wordpress/components/popover", JSImport.Default)
     @js.native
-    val ^ : ComponentType[Props] with Slot = js.native
+    val ^ : ComponentType[Props] & Slot = js.native
     
-    type _To = ComponentType[Props] with Slot
+    type _To = ComponentType[Props] & Slot
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: ComponentType[Props] with Slot = ^
+    override def _to: ComponentType[Props] & Slot = ^
   }
   
   object Popover {
@@ -82,30 +81,31 @@ object popoverMod {
       def `top right`: typings.wordpressComponents.wordpressComponentsStrings.`top right` = ("top right").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`top right`]
     }
     
-    @js.native
-    trait Props extends HTMLProps[HTMLDivElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLDivElement] {
       
       /**
         * A custom `DOMRect` object at which to position the popover.
         */
-      var anchorRect: js.UndefOr[DOMRect | ClientRect] = js.native
+      var anchorRect: js.UndefOr[DOMRect | ClientRect] = js.undefined
       
       /**
         * Should the popover have an animation?
         * @defaultValue true
         */
-      var animate: js.UndefOr[Boolean] = js.native
+      var animate: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The content to be displayed within the popover.
         */
       @JSName("children")
-      var children_Props: ReactNode = js.native
+      var children_Props: ReactNode
       
       /**
         * Opt-in prop to show popovers fullscreen on mobile.
         */
-      var expandOnMobile: js.UndefOr[Boolean] = js.native
+      var expandOnMobile: js.UndefOr[Boolean] = js.undefined
       
       /**
         * By default, the first tabblable element in the popover will receive
@@ -119,7 +119,7 @@ object popoverMod {
         *
         * @defaultValue "firstElement"
         */
-      var focusOnMount: js.UndefOr[firstElement | container | `false`] = js.native
+      var focusOnMount: js.UndefOr[firstElement | container | `false`] = js.undefined
       
       /**
         * Function that should return a `DOMRect` of where to position the
@@ -130,20 +130,20 @@ object popoverMod {
               /* currentAnchorElement */ HTMLSpanElement | Null, 
               js.UndefOr[DOMRect | ClientRect]
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Set this to customize the text that is shown in popover's header
         * when it is fullscreen on mobile.
         */
-      var headerTitle: js.UndefOr[String] = js.native
+      var headerTitle: js.UndefOr[String] = js.undefined
       
       /**
         * Set this to hide the arrow which visually indicates what the popover
         * is anchored to. Note that the arrow will not display if `position` is
         * set to `"middle center"`.
         */
-      var noArrow: js.UndefOr[Boolean] = js.native
+      var noArrow: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A callback invoked when the user clicks outside the opened popover,
@@ -152,12 +152,12 @@ object popoverMod {
         *
         * @deprecated  use `onFocusOutside`
         */
-      var onClickOutside: js.UndefOr[js.Function0[Unit]] = js.native
+      var onClickOutside: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * A callback invoked when the popover should be closed.
         */
-      var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+      var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * A callback invoked when the focus leaves the opened popover. This
@@ -168,14 +168,14 @@ object popoverMod {
         *
         * Defaults to `onClose` when not provided.
         */
-      var onFocusOutside: js.UndefOr[js.Function1[/* event */ FocusEvent[Element], Unit]] = js.native
+      var onFocusOutside: js.UndefOr[js.Function1[/* event */ FocusEvent[Element], Unit]] = js.undefined
       
       /**
         * The direction in which the popover should open relative to its
         * parent node. Specify y- and x-axis as a space-separated string.
         * @defaultValue "top center"
         */
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
     }
     object Props {
       

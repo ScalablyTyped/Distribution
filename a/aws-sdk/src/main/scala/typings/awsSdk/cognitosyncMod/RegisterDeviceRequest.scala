@@ -2,31 +2,29 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterDeviceRequest extends StObject {
   
   /**
     * The unique ID for this identity.
     */
-  var IdentityId: typings.awsSdk.cognitosyncMod.IdentityId = js.native
+  var IdentityId: typings.awsSdk.cognitosyncMod.IdentityId
   
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. Here, the ID of the pool that the identity belongs to.
     */
-  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId
   
   /**
     * The SNS platform type (e.g. GCM, SDM, APNS, APNS_SANDBOX).
     */
-  var Platform: typings.awsSdk.cognitosyncMod.Platform = js.native
+  var Platform: typings.awsSdk.cognitosyncMod.Platform
   
   /**
     * The push token.
     */
-  var Token: PushToken = js.native
+  var Token: PushToken
 }
 object RegisterDeviceRequest {
   

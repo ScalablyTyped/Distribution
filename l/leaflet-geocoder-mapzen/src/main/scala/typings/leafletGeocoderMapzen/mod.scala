@@ -9,7 +9,6 @@ import typings.leafletGeocoderMapzen.mod.Control_.Geocoder
 import typings.leafletGeocoderMapzen.mod.Control_.GeocoderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -17,15 +16,17 @@ object mod {
   
   object control {
     
+    @JSImport("leaflet", "control")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a geocoder control.
       */
-    @JSImport("leaflet", "control.geocoder")
-    @js.native
-    def geocoder(api_key: String): Geocoder = js.native
-    @JSImport("leaflet", "control.geocoder")
-    @js.native
-    def geocoder(api_key: String, options: GeocoderOptions): Geocoder = js.native
+    @scala.inline
+    def geocoder(api_key: String): Geocoder = ^.asInstanceOf[js.Dynamic].applyDynamic("geocoder")(api_key.asInstanceOf[js.Any]).asInstanceOf[Geocoder]
+    @scala.inline
+    def geocoder(api_key: String, options: GeocoderOptions): Geocoder = (^.asInstanceOf[js.Dynamic].applyDynamic("geocoder")(api_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Geocoder]
   }
   
   object Control_ {
@@ -33,7 +34,6 @@ object mod {
     // tslint:disable-next-line:no-empty-interface
     type Geocoder = typings.leaflet.mod.Control_
     
-    @js.native
     trait GeocoderOptions extends StObject {
       
       /**
@@ -42,7 +42,7 @@ object mod {
         *
         * Default value: 'Geocoding by <a href="https://mapzen.com/projects/search/">Mapzen</a>'
         */
-      var attribution: js.UndefOr[String] = js.native
+      var attribution: js.UndefOr[String] = js.undefined
       
       /**
         * If true, suggested results are fetched on each keystroke.
@@ -51,7 +51,7 @@ object mod {
         *
         * Default value: true
         */
-      var autocomplete: js.UndefOr[Boolean] = js.native
+      var autocomplete: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If true, search is bounded by the current map view.
@@ -60,7 +60,7 @@ object mod {
         *
         * Default value: false.
         */
-      var bounds: js.UndefOr[LatLngBounds_ | Boolean] = js.native
+      var bounds: js.UndefOr[LatLngBounds_ | Boolean] = js.undefined
       
       /**
         * If true, the search input is always expanded.
@@ -68,7 +68,7 @@ object mod {
         *
         * Default value: false
         */
-      var expanded: js.UndefOr[Boolean] = js.native
+      var expanded: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If true, search and autocomplete prioritizes results near the center
@@ -78,7 +78,7 @@ object mod {
         *
         * Default value: 'true'.
         */
-      var focus: js.UndefOr[LatLng_ | Boolean] = js.native
+      var focus: js.UndefOr[LatLng_ | Boolean] = js.undefined
       
       /**
         * If true, the input box will expand to take up the full width of the map container.
@@ -87,7 +87,7 @@ object mod {
         *
         * Default value: 650
         */
-      var fullWidth: js.UndefOr[Double | Boolean] = js.native
+      var fullWidth: js.UndefOr[Double | Boolean] = js.undefined
       
       /**
         * Filters results by layers (documentation).
@@ -95,7 +95,7 @@ object mod {
         *
         * Default value: null.
         */
-      var layers: js.UndefOr[String | js.Array[_]] = js.native
+      var layers: js.UndefOr[String | js.Array[js.Any]] = js.undefined
       
       /**
         * If true, search results drops Leaflet's default blue markers onto the map.
@@ -104,14 +104,14 @@ object mod {
         *
         * Default value: true
         */
-      var markers: js.UndefOr[MarkerOptions | Boolean] = js.native
+      var markers: js.UndefOr[MarkerOptions | Boolean] = js.undefined
       
       /**
         * If true, highlighting a search result pans the map to that location.
         *
         * Default value: true
         */
-      var panToPoint: js.UndefOr[Boolean] = js.native
+      var panToPoint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An object of key-value pairs which will be serialized
@@ -130,7 +130,7 @@ object mod {
         *
         * Default value: null.
         */
-      var params: js.UndefOr[js.Object] = js.native
+      var params: js.UndefOr[js.Object] = js.undefined
       
       /**
         * If true, selected results will make a request to the service /place endpoint.
@@ -140,7 +140,7 @@ object mod {
         *
         * Default value: false
         */
-      var place: js.UndefOr[Boolean] = js.native
+      var place: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Placeholder text to display in the search input box.
@@ -148,7 +148,7 @@ object mod {
         *
         * Default value: 'Search'
         */
-      var placeholder: js.UndefOr[String] = js.native
+      var placeholder: js.UndefOr[String] = js.undefined
       
       /**
         * If true, an icon is used to indicate a polygonal result,
@@ -158,7 +158,7 @@ object mod {
         *
         * Default value: true
         */
-      var polygonIcon: js.UndefOr[Boolean | String] = js.native
+      var polygonIcon: js.UndefOr[Boolean | String] = js.undefined
       
       /**
         * The position of the control (one of the map corners).
@@ -168,21 +168,21 @@ object mod {
         */
       var position: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ js.Any
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Tooltip text to display on the search icon. Set to blank or null to disable.
         *
         * Default value: 'Search'
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
       /**
         * Host endpoint for a Pelias-compatible search API.
         *
         * Default value: 'https://search.mapzen.com/v1'.
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object GeocoderOptions {
       
@@ -232,7 +232,7 @@ object mod {
         def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
         
         @scala.inline
-        def setLayers(value: String | js.Array[_]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        def setLayers(value: String | js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
@@ -301,7 +301,8 @@ object mod {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClassStatic * / any */ @js.native
     trait GeocoderStatic
-      extends /**
+      extends StObject
+         with /**
       * Creates a geocoder control.
       */
     Instantiable0[Geocoder]

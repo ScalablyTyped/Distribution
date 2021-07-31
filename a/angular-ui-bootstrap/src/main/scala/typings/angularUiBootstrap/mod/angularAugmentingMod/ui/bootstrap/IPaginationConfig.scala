@@ -2,10 +2,8 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPaginationConfig extends StObject {
   
   /**
@@ -13,96 +11,96 @@ trait IPaginationConfig extends StObject {
     *
     * @default false
     */
-  var boundaryLinkNumbers: js.UndefOr[Boolean] = js.native
+  var boundaryLinkNumbers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to display First / Last buttons.
     *
     * @default false
     */
-  var boundaryLinks: js.UndefOr[Boolean] = js.native
+  var boundaryLinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to display Previous / Next buttons.
     *
     * @default true
     */
-  var directionLinks: js.UndefOr[Boolean] = js.native
+  var directionLinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Text for First button.
     *
     * @default 'First'
     */
-  var firstText: js.UndefOr[String] = js.native
+  var firstText: js.UndefOr[String] = js.undefined
   
   /**
     * Also displays ellipses when rotate is true and max-size is smaller than the number of pages.
     *
     * @default  false
     */
-  var forceEllipses: js.UndefOr[Boolean] = js.native
+  var forceEllipses: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of items per page. A value less than one indicates all items on one page.
     *
     * @default 10
     */
-  var itemsPerPage: js.UndefOr[Double] = js.native
+  var itemsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Text for Last button.
     *
     * @default 'Last'
     */
-  var lastText: js.UndefOr[String] = js.native
+  var lastText: js.UndefOr[String] = js.undefined
   
   /**
     * Limit number for pagination size.
     *
     * @default: null
     */
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Text for Next button.
     *
     * @default 'Next'
     */
-  var nextText: js.UndefOr[String] = js.native
+  var nextText: js.UndefOr[String] = js.undefined
   
   /**
     * An optional expression assigned the total number of pages to display.
     *
     * @default angular.noop
     */
-  var numPages: js.UndefOr[Double] = js.native
+  var numPages: js.UndefOr[Double] = js.undefined
   
   /**
     * Text for Previous button.
     *
     * @default 'Previous'
     */
-  var previousText: js.UndefOr[String] = js.native
+  var previousText: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to keep current page in the middle of the visible ones.
     *
     * @default true
     */
-  var rotate: js.UndefOr[Boolean] = js.native
+  var rotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Override the template for the component with a custom provided template.
     *
     * @default  'template/pagination/pagination.html'
     */
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of items in all pages.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object IPaginationConfig {
   

@@ -5,7 +5,6 @@ import typings.angularStrap.anon.Hide
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -14,65 +13,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object timepicker {
   
-  @js.native
   trait ITimepicker extends StObject
   
-  @js.native
   trait ITimepickerOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var arrowBehaviour: js.UndefOr[String] = js.native
+    var arrowBehaviour: js.UndefOr[String] = js.undefined
     
-    var autoclose: js.UndefOr[Boolean] = js.native
+    var autoclose: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var iconDown: js.UndefOr[String] = js.native
+    var iconDown: js.UndefOr[String] = js.undefined
     
-    var iconUp: js.UndefOr[String] = js.native
-    
-    // TODO
-    var length: js.UndefOr[Double] = js.native
+    var iconUp: js.UndefOr[String] = js.undefined
     
     // TODO
-    var maxTime: js.UndefOr[Date] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var minTime: js.UndefOr[Date] = js.native
+    // TODO
+    var maxTime: js.UndefOr[Date] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minTime: js.UndefOr[Date] = js.undefined
     
-    var modelTimeFormat: js.UndefOr[String] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.native
+    var modelTimeFormat: js.UndefOr[String] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var onShow: js.UndefOr[js.Function1[/* timepicker */ ITimepicker, Unit]] = js.undefined
     
-    var roundDisplay: js.UndefOr[Boolean] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.native
+    var roundDisplay: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var timeFormat: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var timeType: js.UndefOr[String] = js.native
+    var timeFormat: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var timeType: js.UndefOr[String] = js.undefined
     
-    var useNative: js.UndefOr[Boolean] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
+    
+    var useNative: js.UndefOr[Boolean] = js.undefined
   }
   object ITimepickerOptions {
     
@@ -243,10 +240,9 @@ object timepicker {
     }
   }
   
-  @js.native
   trait ITimepickerProvider extends StObject {
     
-    var defaults: ITimepickerOptions = js.native
+    var defaults: ITimepickerOptions
   }
   object ITimepickerProvider {
     

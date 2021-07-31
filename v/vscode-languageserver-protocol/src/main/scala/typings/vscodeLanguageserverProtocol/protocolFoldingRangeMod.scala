@@ -12,7 +12,6 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolFoldingRangeMod {
@@ -24,28 +23,34 @@ object protocolFoldingRangeMod {
   object FoldingRangeKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[FoldingRangeKind with String] = js.native
+    def apply(value: String): js.UndefOr[FoldingRangeKind & String] = js.native
     
     /**
       * Folding range for a comment
       */
     @js.native
-    sealed trait Comment extends FoldingRangeKind
-    /* "comment" */ val Comment: typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeKind.Comment with String = js.native
+    sealed trait Comment
+      extends StObject
+         with FoldingRangeKind
+    /* "comment" */ val Comment: typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeKind.Comment & String = js.native
     
     /**
       * Folding range for a imports or includes
       */
     @js.native
-    sealed trait Imports extends FoldingRangeKind
-    /* "imports" */ val Imports: typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeKind.Imports with String = js.native
+    sealed trait Imports
+      extends StObject
+         with FoldingRangeKind
+    /* "imports" */ val Imports: typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeKind.Imports & String = js.native
     
     /**
       * Folding range for a region (e.g. `#region`)
       */
     @js.native
-    sealed trait Region extends FoldingRangeKind
-    /* "region" */ val Region: typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeKind.Region with String = js.native
+    sealed trait Region
+      extends StObject
+         with FoldingRangeKind
+    /* "region" */ val Region: typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeKind.Region & String = js.native
   }
   
   object FoldingRangeRequest {
@@ -59,8 +64,6 @@ object protocolFoldingRangeMod {
     @js.native
     val resultType: ProgressType[js.Array[FoldingRange]] = js.native
     
-    type HandlerSignature = RequestHandler[FoldingRangeParams, js.Array[FoldingRange] | Null, Unit]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.foldingRange", "FoldingRangeRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
@@ -70,37 +73,38 @@ object protocolFoldingRangeMod {
         js.Any, 
         FoldingRangeRegistrationOptions
       ] = js.native
+    
+    type HandlerSignature = RequestHandler[FoldingRangeParams, js.Array[FoldingRange] | Null, Unit]
   }
   
-  @js.native
   trait FoldingRange extends StObject {
     
     /**
       * The zero-based character offset before the folded range ends. If not defined, defaults to the length of the end line.
       */
-    var endCharacter: js.UndefOr[Double] = js.native
+    var endCharacter: js.UndefOr[Double] = js.undefined
     
     /**
       * The zero-based line number where the folded range ends.
       */
-    var endLine: Double = js.native
+    var endLine: Double
     
     /**
       * Describes the kind of the folding range such as `comment' or 'region'. The kind
       * is used to categorize folding ranges and used by commands like 'Fold all comments'. See
       * [FoldingRangeKind](#FoldingRangeKind) for an enumeration of standardized kinds.
       */
-    var kind: js.UndefOr[String] = js.native
+    var kind: js.UndefOr[String] = js.undefined
     
     /**
       * The zero-based character offset from where the folded range starts. If not defined, defaults to the length of the start line.
       */
-    var startCharacter: js.UndefOr[Double] = js.native
+    var startCharacter: js.UndefOr[Double] = js.undefined
     
     /**
       * The zero-based line number from where the folded range starts.
       */
-    var startLine: Double = js.native
+    var startLine: Double
   }
   object FoldingRange {
     
@@ -139,7 +143,6 @@ object protocolFoldingRangeMod {
     }
   }
   
-  @js.native
   trait FoldingRangeClientCapabilities extends StObject {
     
     /**
@@ -147,19 +150,19 @@ object protocolFoldingRangeMod {
       * the client supports the new `FoldingRangeRegistrationOptions` return value for the corresponding server
       * capability as well.
       */
-    var dynamicRegistration: js.UndefOr[Boolean] = js.native
+    var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, the client signals that it only supports folding complete lines. If set, client will
       * ignore specified `startCharacter` and `endCharacter` properties in a FoldingRange.
       */
-    var lineFoldingOnly: js.UndefOr[Boolean] = js.native
+    var lineFoldingOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum number of folding ranges that the client prefers to receive per document. The value serves as a
       * hint, servers are free to follow the limit.
       */
-    var rangeLimit: js.UndefOr[Double] = js.native
+    var rangeLimit: js.UndefOr[Double] = js.undefined
   }
   object FoldingRangeClientCapabilities {
     
@@ -194,15 +197,15 @@ object protocolFoldingRangeMod {
   
   type FoldingRangeOptions = WorkDoneProgressOptions
   
-  @js.native
   trait FoldingRangeParams
-    extends WorkDoneProgressParams
+    extends StObject
+       with WorkDoneProgressParams
        with PartialResultParams {
     
     /**
       * The text document.
       */
-    var textDocument: TextDocumentIdentifier = js.native
+    var textDocument: TextDocumentIdentifier
   }
   object FoldingRangeParams {
     
@@ -220,16 +223,16 @@ object protocolFoldingRangeMod {
     }
   }
   
-  @js.native
   trait FoldingRangeRegistrationOptions
-    extends TextDocumentRegistrationOptions
+    extends StObject
+       with TextDocumentRegistrationOptions
        with WorkDoneProgressOptions
        with StaticRegistrationOptions
   object FoldingRangeRegistrationOptions {
     
     @scala.inline
     def apply(): FoldingRangeRegistrationOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[FoldingRangeRegistrationOptions]
     }
   }

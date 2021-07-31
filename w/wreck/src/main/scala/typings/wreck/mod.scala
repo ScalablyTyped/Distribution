@@ -18,7 +18,6 @@ import typings.wreck.wreckStrings.response
 import typings.wreck.wreckStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,16 +26,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : WreckObject = js.native
   
-  @js.native
   trait ReadOptions extends StObject {
     
-    var gunzip: js.UndefOr[Boolean | force] = js.native
+    var gunzip: js.UndefOr[Boolean | force] = js.undefined
     
-    var json: js.UndefOr[`true` | strict | force] = js.native
+    var json: js.UndefOr[`true` | strict | force] = js.undefined
     
-    var maxBytes: js.UndefOr[Double] = js.native
+    var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ReadOptions {
     
@@ -77,12 +75,11 @@ object mod extends Shortcut {
   
   type RequestCallback = js.Function2[/* uri */ String, /* options */ RequestOptionspayloadanyu, Unit]
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var agent: js.UndefOr[Http | `false`] = js.native
+    var agent: js.UndefOr[Http | `false`] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     var beforeRedirect: js.UndefOr[
         js.Function6[
@@ -94,35 +91,35 @@ object mod extends Shortcut {
           /* next */ js.Function0[js.Object], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var downstreamRes: js.UndefOr[js.Any] = js.native
+    var downstreamRes: js.UndefOr[js.Any] = js.undefined
     
-    var events: js.UndefOr[Boolean] = js.native
+    var events: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var maxBytes: js.UndefOr[Double] = js.native
+    var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
     
-    var redirect303: js.UndefOr[Boolean] = js.native
+    var redirect303: js.UndefOr[Boolean] = js.undefined
     
     var redirected: js.UndefOr[
         js.Function3[/* statusCode */ Double, /* location */ String, /* req */ ClientRequest, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var redirects: js.UndefOr[Double] = js.native
+    var redirects: js.UndefOr[Double] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RequestOptions {
     
@@ -235,12 +232,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RequestResponse extends StObject {
     
-    var payload: js.Any = js.native
+    var payload: js.Any
     
-    var res: IncomingMessage = js.native
+    var res: IncomingMessage
   }
   object RequestResponse {
     
@@ -279,21 +275,21 @@ object mod extends Shortcut {
     
     def defaults(options: RequestOptions): WreckObject = js.native
     
-    def delete(uri: String, options: RequestOptions with ReadOptions): js.Promise[RequestResponse] = js.native
+    def delete(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
     var events: js.UndefOr[WreckEventEmitter] = js.native
     
-    def get(uri: String, options: RequestOptions with ReadOptions): js.Promise[RequestResponse] = js.native
+    def get(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
     def parseCacheControl(field: String): js.Any = js.native
     
-    def patch(uri: String, options: RequestOptions with ReadOptions): js.Promise[RequestResponse] = js.native
+    def patch(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
-    def post(uri: String, options: RequestOptions with ReadOptions): js.Promise[RequestResponse] = js.native
+    def post(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
-    def put(uri: String, options: RequestOptions with ReadOptions): js.Promise[RequestResponse] = js.native
+    def put(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
-    def read(response: IncomingMessage, options: ReadOptions): js.Promise[_] = js.native
+    def read(response: IncomingMessage, options: ReadOptions): js.Promise[js.Any] = js.native
     
     def request(method: String, uri: String, options: RequestOptions): PromiseIncomingMessagereq = js.native
     

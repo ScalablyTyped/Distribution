@@ -2,13 +2,14 @@ package typings.geometryDom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GeometryDom {
   
   @js.native
-  trait DOMMatrix extends DOMMatrixReadOnly {
+  trait DOMMatrix
+    extends StObject
+       with DOMMatrixReadOnly {
     
     def invertSelf(): DOMMatrix = js.native
     
@@ -21,213 +22,56 @@ object GeometryDom {
     def rotateFromVectorSelf(x: Double, y: Double): DOMMatrix = js.native
     
     def rotateSelf(angle: Double): DOMMatrix = js.native
-    def rotateSelf(angle: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
     def rotateSelf(angle: Double, originX: Double): DOMMatrix = js.native
     def rotateSelf(angle: Double, originX: Double, originY: Double): DOMMatrix = js.native
+    def rotateSelf(angle: Double, originX: Unit, originY: Double): DOMMatrix = js.native
     
     def scale3dSelf(scale: Double): DOMMatrix = js.native
-    def scale3dSelf(
-      scale: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scale3dSelf(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
-    def scale3dSelf(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double, originZ: Double): DOMMatrix = js.native
     def scale3dSelf(scale: Double, originX: Double): DOMMatrix = js.native
-    def scale3dSelf(scale: Double, originX: Double, originY: js.UndefOr[scala.Nothing], originZ: Double): DOMMatrix = js.native
     def scale3dSelf(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
     def scale3dSelf(scale: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scale3dSelf(scale: Double, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scale3dSelf(scale: Double, originX: Unit, originY: Double): DOMMatrix = js.native
+    def scale3dSelf(scale: Double, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scale3dSelf(scale: Double, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
     
     def scaleNonUniformSelf(scaleX: Double): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: js.UndefOr[scala.Nothing],
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double,
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: Double,
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: Double,
-      originY: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: Double,
-      originY: Double,
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(scaleX: Double, scaleY: js.UndefOr[scala.Nothing], scaleZ: Double): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double,
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(scaleX: Double, scaleY: js.UndefOr[scala.Nothing], scaleZ: Double, originX: Double): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: Double,
-      originX: Double,
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: Double,
-      originX: Double,
-      originY: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: js.UndefOr[scala.Nothing],
-      scaleZ: Double,
-      originX: Double,
-      originY: Double,
-      originZ: Double
-    ): DOMMatrix = js.native
     def scaleNonUniformSelf(scaleX: Double, scaleY: Double): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: js.UndefOr[scala.Nothing],
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double,
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: js.UndefOr[scala.Nothing], originX: Double): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: Double,
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: Double,
-      originY: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: js.UndefOr[scala.Nothing],
-      originX: Double,
-      originY: Double,
-      originZ: Double
-    ): DOMMatrix = js.native
     def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double
-    ): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: Double,
-      originZ: Double
-    ): DOMMatrix = js.native
     def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Double): DOMMatrix = js.native
-    def scaleNonUniformSelf(
-      scaleX: Double,
-      scaleY: Double,
-      scaleZ: Double,
-      originX: Double,
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
     def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Double, originY: Double): DOMMatrix = js.native
     def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Unit, originY: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Unit, originX: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Unit, originX: Double, originY: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Unit, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Unit, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Unit, originX: Unit, originY: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Unit, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Unit, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double, originX: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double, originX: Double, originY: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double, originX: Unit, originY: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Double, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Unit, originX: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Unit, originX: Double, originY: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Unit, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Unit, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Unit, originX: Unit, originY: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Unit, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scaleNonUniformSelf(scaleX: Double, scaleY: Unit, scaleZ: Unit, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
     
     def scaleSelf(scale: Double): DOMMatrix = js.native
-    def scaleSelf(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
     def scaleSelf(scale: Double, originX: Double): DOMMatrix = js.native
     def scaleSelf(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
+    def scaleSelf(scale: Double, originX: Unit, originY: Double): DOMMatrix = js.native
     
     def setMatrixValue(transformList: DOMMatrix): DOMMatrix = js.native
     
@@ -302,32 +146,27 @@ object GeometryDom {
     def multiply(other: DOMMatrix): DOMMatrix = js.native
     
     def rotate(angle: Double): DOMMatrix = js.native
-    def rotate(angle: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
     def rotate(angle: Double, originX: Double): DOMMatrix = js.native
     def rotate(angle: Double, originX: Double, originY: Double): DOMMatrix = js.native
+    def rotate(angle: Double, originX: Unit, originY: Double): DOMMatrix = js.native
     
     def rotateAxisAngle(x: Double, y: Double, z: Double, angle: Double): DOMMatrix = js.native
     
     def rotateFromVector(x: Double, y: Double): DOMMatrix = js.native
     
     def scale(scale: Double): DOMMatrix = js.native
-    def scale(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
     def scale(scale: Double, originX: Double): DOMMatrix = js.native
     def scale(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
+    def scale(scale: Double, originX: Unit, originY: Double): DOMMatrix = js.native
     
     def scale3d(scale: Double): DOMMatrix = js.native
-    def scale3d(
-      scale: Double,
-      originX: js.UndefOr[scala.Nothing],
-      originY: js.UndefOr[scala.Nothing],
-      originZ: Double
-    ): DOMMatrix = js.native
-    def scale3d(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
-    def scale3d(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double, originZ: Double): DOMMatrix = js.native
     def scale3d(scale: Double, originX: Double): DOMMatrix = js.native
-    def scale3d(scale: Double, originX: Double, originY: js.UndefOr[scala.Nothing], originZ: Double): DOMMatrix = js.native
     def scale3d(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
     def scale3d(scale: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scale3d(scale: Double, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+    def scale3d(scale: Double, originX: Unit, originY: Double): DOMMatrix = js.native
+    def scale3d(scale: Double, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+    def scale3d(scale: Double, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
     
     def scaleNonUniform(
       scale: Double,
@@ -354,8 +193,9 @@ object GeometryDom {
     def translate(tx: Double, ty: Double, tz: Double): DOMMatrix = js.native
   }
   
-  @js.native
-  trait DOMPoint extends DOMPointReadOnly
+  trait DOMPoint
+    extends StObject
+       with DOMPointReadOnly
   object DOMPoint {
     
     @scala.inline
@@ -365,34 +205,33 @@ object GeometryDom {
     }
   }
   
-  @js.native
   trait DOMPointReadOnly extends StObject {
     
     /**
       * Post-multiply point with matrix.
       * @param matrix
       */
-    def matrixTransform(matrix: DOMMatrixReadOnly): DOMPoint = js.native
+    def matrixTransform(matrix: DOMMatrixReadOnly): DOMPoint
     
     /**
       * w coordinate / readonly
       */
-    var w: Double = js.native
+    var w: Double
     
     /**
       * x coordinate / readonly
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * y coordinate / readonly
       */
-    var y: Double = js.native
+    var y: Double
     
     /**
       * z coordinate / readonly
       */
-    var z: Double = js.native
+    var z: Double
   }
   object DOMPointReadOnly {
     
@@ -422,33 +261,32 @@ object GeometryDom {
     }
   }
   
-  @js.native
   trait DOMQuad extends StObject {
     
     /**
       * the associated bounding rectangle of the quadrilateral
       */
-    var bounds: DOMRectReadOnly = js.native
+    var bounds: DOMRectReadOnly
     
     /**
       * a DOMPoint that represents p1 of the quadrilateral
       */
-    var p1: DOMPoint = js.native
+    var p1: DOMPoint
     
     /**
       * a DOMPoint that represents p2 of the quadrilateral
       */
-    var p2: DOMPoint = js.native
+    var p2: DOMPoint
     
     /**
       * a DOMPoint that represents p3 of the quadrilateral
       */
-    var p3: DOMPoint = js.native
+    var p3: DOMPoint
     
     /**
       * a DOMPoint that represents p4 of the quadrilateral
       */
-    var p4: DOMPoint = js.native
+    var p4: DOMPoint
   }
   object DOMQuad {
     
@@ -478,8 +316,9 @@ object GeometryDom {
     }
   }
   
-  @js.native
-  trait DOMRect extends DOMRectReadOnly
+  trait DOMRect
+    extends StObject
+       with DOMRectReadOnly
   object DOMRect {
     
     @scala.inline
@@ -498,20 +337,19 @@ object GeometryDom {
     }
   }
   
-  @js.native
   trait DOMRectList extends StObject {
     
     /**
       * the DOMRect object at index must be returned.
       * @param index
       */
-    def item(index: Double): DOMRect = js.native
+    def item(index: Double): DOMRect
     
     /**
       * total number of DOMRect objects associated with the object.
       * readonly unsigned long length
       */
-    var length: Double = js.native
+    var length: Double
   }
   object DOMRectList {
     
@@ -532,48 +370,47 @@ object GeometryDom {
     }
   }
   
-  @js.native
   trait DOMRectReadOnly extends StObject {
     
     /**
       * max(y coordinate, y coordinate + height dimension)
       */
-    var bottom: Double = js.native
+    var bottom: Double
     
     /**
       * height value
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * min(x coordinate, x coordinate + width dimension)
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * max(x coordinate, x coordinate + width dimension)
       */
-    var right: Double = js.native
+    var right: Double
     
     /**
       * min(y coordinate, y coordinate + height dimension)
       */
-    var top: Double = js.native
+    var top: Double
     
     /**
       * width value
       */
-    var width: Double = js.native
+    var width: Double
     
     /**
       * x coordinate
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * y coordinate
       */
-    var y: Double = js.native
+    var y: Double
   }
   object DOMRectReadOnly {
     

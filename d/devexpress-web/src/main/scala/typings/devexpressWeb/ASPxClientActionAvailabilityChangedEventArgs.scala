@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.ActionAvailabilityChanged event.
   */
-@js.native
-trait ASPxClientActionAvailabilityChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientActionAvailabilityChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the component name of the dashboard item.
     */
-  var ItemName: String = js.native
+  var ItemName: String
 }
 object ASPxClientActionAvailabilityChangedEventArgs {
   

@@ -2,18 +2,16 @@ package typings.webpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object occurrenceOrderModuleIdsPluginMod {
   
-  @js.native
   trait OccurrenceOrderModuleIdsPluginOptions extends StObject {
     
     /**
     	 * Prioritise initial size over total size
     	 */
-    var prioritiseInitial: js.UndefOr[Boolean] = js.native
+    var prioritiseInitial: js.UndefOr[Boolean] = js.undefined
   }
   object OccurrenceOrderModuleIdsPluginOptions {
     

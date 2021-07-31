@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LaneSet extends BaseElement {
+trait LaneSet
+  extends StObject
+     with BaseElement {
   
-  var lanes: js.Array[Lane] = js.native
+  var lanes: js.Array[Lane]
   
-  var name: String = js.native
+  var name: String
 }
 object LaneSet {
   

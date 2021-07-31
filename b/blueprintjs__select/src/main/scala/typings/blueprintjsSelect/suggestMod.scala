@@ -9,7 +9,6 @@ import typings.blueprintjsSelect.anon.PartialISuggestPropsany
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestMod {
@@ -73,13 +72,14 @@ object suggestMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ ISuggestProps[U], Suggest[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ ISuggestProps[U], Suggest[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISuggestProps[U], Suggest[U]]]
   }
   
   @js.native
-  trait ISuggestProps[T] extends IListItemsProps[T] {
+  trait ISuggestProps[T]
+    extends StObject
+       with IListItemsProps[T] {
     
     /**
       * Whether the popover should close after selecting an item.
@@ -107,7 +107,7 @@ object suggestMod {
       * `query` and `onQueryChange` instead of `inputProps.value` and
       * `inputProps.onChange`.
       */
-    var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.native
     
     /** Custom renderer to transform an item into a string for the input value. */
     def inputValueRenderer(item: T): String = js.native
@@ -124,7 +124,7 @@ object suggestMod {
     var openOnKeyDown: js.UndefOr[Boolean] = js.native
     
     /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-    var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
     
     /**
       * Whether the active item should be reset to the first matching item _when
@@ -141,23 +141,22 @@ object suggestMod {
     var selectedItem: js.UndefOr[T | Null] = js.native
   }
   
-  @js.native
   trait ISuggestState[T] extends StObject {
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var selectedItem: T | Null = js.native
+    var selectedItem: T | Null
   }
   object ISuggestState {
     
     @scala.inline
     def apply[T](isOpen: Boolean): ISuggestState[T] = {
-      val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], selectedItem = null)
       __obj.asInstanceOf[ISuggestState[T]]
     }
     
     @scala.inline
-    implicit class ISuggestStateMutableBuilder[Self <: ISuggestState[_], T] (val x: Self with ISuggestState[T]) extends AnyVal {
+    implicit class ISuggestStateMutableBuilder[Self <: ISuggestState[?], T] (val x: Self & ISuggestState[T]) extends AnyVal {
       
       @scala.inline
       def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])

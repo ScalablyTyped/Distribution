@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemporalAsset extends StObject {
   
   /** An asset in Google Cloud. */
-  var asset: js.UndefOr[Asset] = js.native
+  var asset: js.UndefOr[Asset] = js.undefined
   
   /** Whether the asset has been deleted or not. */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /** Prior copy of the asset. Populated if prior_asset_state is PRESENT. Currently this is only set for responses in Real-Time Feed. */
-  var priorAsset: js.UndefOr[Asset] = js.native
+  var priorAsset: js.UndefOr[Asset] = js.undefined
   
   /** State of prior_asset. */
-  var priorAssetState: js.UndefOr[String] = js.native
+  var priorAssetState: js.UndefOr[String] = js.undefined
   
   /** The time window when the asset data and state was observed. */
-  var window: js.UndefOr[TimeWindow] = js.native
+  var window: js.UndefOr[TimeWindow] = js.undefined
 }
 object TemporalAsset {
   

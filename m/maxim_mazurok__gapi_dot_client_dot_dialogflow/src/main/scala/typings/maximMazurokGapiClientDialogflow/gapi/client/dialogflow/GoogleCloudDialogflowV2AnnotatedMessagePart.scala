@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2AnnotatedMessagePart extends StObject {
   
   /**
     * The [Dialogflow system entity type](https://cloud.google.com/dialogflow/docs/reference/system-entities) of this message part. If this is empty, Dialogflow could not annotate the
     * phrase part with a system entity.
     */
-  var entityType: js.UndefOr[String] = js.native
+  var entityType: js.UndefOr[String] = js.undefined
   
   /**
     * The [Dialogflow system entity formatted value ](https://cloud.google.com/dialogflow/docs/reference/system-entities) of this message part. For example for a system entity of type
     * `@sys.unit-currency`, this may contain: { "amount": 5, "currency": "USD" }
     */
-  var formattedValue: js.UndefOr[js.Any] = js.native
+  var formattedValue: js.UndefOr[js.Any] = js.undefined
   
   /** A part of a message possibly annotated with an entity. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2AnnotatedMessagePart {
   

@@ -2,23 +2,21 @@ package typings.leafletUtm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Band extends StObject {
     
-    var band: String = js.native
+    var band: String
     
-    var southHemi: Boolean = js.native
+    var southHemi: Boolean
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var zone: Double = js.native
+    var zone: Double
   }
   object Band {
     

@@ -2,46 +2,44 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLifecyclePolicyPreviewResponse extends StObject {
   
   /**
     * The JSON lifecycle policy text.
     */
-  var lifecyclePolicyText: js.UndefOr[LifecyclePolicyText] = js.native
+  var lifecyclePolicyText: js.UndefOr[LifecyclePolicyText] = js.undefined
   
   /**
     * The nextToken value to include in a future GetLifecyclePolicyPreview request. When the results of a GetLifecyclePolicyPreview request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The results of the lifecycle policy preview request.
     */
-  var previewResults: js.UndefOr[LifecyclePolicyPreviewResultList] = js.native
+  var previewResults: js.UndefOr[LifecyclePolicyPreviewResultList] = js.undefined
   
   /**
     * The registry ID associated with the request.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The repository name associated with the request.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
   
   /**
     * The status of the lifecycle policy preview request.
     */
-  var status: js.UndefOr[LifecyclePolicyPreviewStatus] = js.native
+  var status: js.UndefOr[LifecyclePolicyPreviewStatus] = js.undefined
   
   /**
     * The list of images that is returned as a result of the action.
     */
-  var summary: js.UndefOr[LifecyclePolicyPreviewSummary] = js.native
+  var summary: js.UndefOr[LifecyclePolicyPreviewSummary] = js.undefined
 }
 object GetLifecyclePolicyPreviewResponse {
   

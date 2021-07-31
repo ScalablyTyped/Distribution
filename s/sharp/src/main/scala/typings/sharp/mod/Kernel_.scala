@@ -3,26 +3,24 @@ package typings.sharp.mod
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Kernel_ extends StObject {
   
   /** height of the kernel in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /** Array of length width*height containing the kernel values. */
-  var kernel: ArrayLike[Double] = js.native
+  var kernel: ArrayLike[Double]
   
   /** the offset of the kernel in pixels. (optional, default 0) */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /** the scale of the kernel in pixels. (optional, default sum) */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /** width of the kernel in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object Kernel_ {
   

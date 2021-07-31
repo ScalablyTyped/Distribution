@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var oauth_identities: js.UndefOr[OAuthIdentity] = js.native
+  var oauth_identities: js.UndefOr[OAuthIdentity] = js.undefined
 }
 object User {
   

@@ -10,9 +10,9 @@ Simple but powerful graph traversing library
 | ------------------ | :-------------: |
 | Full name          | clownface |
 | Keywords           | rdf, graph, traversing |
-| # releases         | 9 |
-| # dependents       | 18 |
-| # downloads        | 53351 |
+| # releases         | 12 |
+| # dependents       | 20 |
+| # downloads        | 78866 |
 | # stars            | 1 |
 
 ## Links

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscription extends StObject {
   
   /** The contentDetails object contains basic statistics about the subscription. */
-  var contentDetails: js.UndefOr[SubscriptionContentDetails] = js.native
+  var contentDetails: js.UndefOr[SubscriptionContentDetails] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify the subscription. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#subscription". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The snippet object contains basic details about the subscription, including its title and the channel that the user subscribed to. */
-  var snippet: js.UndefOr[SubscriptionSnippet] = js.native
+  var snippet: js.UndefOr[SubscriptionSnippet] = js.undefined
   
   /** The subscriberSnippet object contains basic details about the subscriber. */
-  var subscriberSnippet: js.UndefOr[SubscriptionSubscriberSnippet] = js.native
+  var subscriberSnippet: js.UndefOr[SubscriptionSubscriberSnippet] = js.undefined
 }
 object Subscription {
   

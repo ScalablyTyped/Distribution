@@ -5,69 +5,56 @@ import typings.std.PropertyDescriptor
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Reflect {
   
-  @JSGlobal("Reflect.apply")
+  @JSGlobal("Reflect")
   @js.native
-  def apply(target: js.Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("Reflect.construct")
-  @js.native
-  def construct(target: js.Function, argumentsList: ArrayLike[_]): js.Any = js.native
-  @JSGlobal("Reflect.construct")
-  @js.native
-  def construct(target: js.Function, argumentsList: ArrayLike[_], newTarget: js.Any): js.Any = js.native
+  @scala.inline
+  def apply(target: js.Function, thisArgument: js.Any, argumentsList: ArrayLike[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(target.asInstanceOf[js.Any], thisArgument.asInstanceOf[js.Any], argumentsList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSGlobal("Reflect.defineProperty")
-  @js.native
-  def defineProperty(target: js.Object, propertyKey: PropertyKey, attributes: PropertyDescriptor): scala.Boolean = js.native
+  @scala.inline
+  def construct(target: js.Function, argumentsList: ArrayLike[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(target.asInstanceOf[js.Any], argumentsList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def construct(target: js.Function, argumentsList: ArrayLike[js.Any], newTarget: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(target.asInstanceOf[js.Any], argumentsList.asInstanceOf[js.Any], newTarget.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSGlobal("Reflect.deleteProperty")
-  @js.native
-  def deleteProperty(target: js.Object, propertyKey: PropertyKey): scala.Boolean = js.native
+  @scala.inline
+  def defineProperty(target: js.Object, propertyKey: PropertyKey, attributes: PropertyDescriptor): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
   
-  @JSGlobal("Reflect.get")
-  @js.native
-  def get(target: js.Object, propertyKey: PropertyKey): js.Any = js.native
-  @JSGlobal("Reflect.get")
-  @js.native
-  def get(target: js.Object, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
+  @scala.inline
+  def deleteProperty(target: js.Object, propertyKey: PropertyKey): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
   
-  @JSGlobal("Reflect.getOwnPropertyDescriptor")
-  @js.native
-  def getOwnPropertyDescriptor(target: js.Object, propertyKey: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
+  @scala.inline
+  def get(target: js.Object, propertyKey: PropertyKey): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(target: js.Object, propertyKey: PropertyKey, receiver: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSGlobal("Reflect.getPrototypeOf")
-  @js.native
-  def getPrototypeOf(target: js.Object): js.Object = js.native
+  @scala.inline
+  def getOwnPropertyDescriptor(target: js.Object, propertyKey: PropertyKey): js.UndefOr[PropertyDescriptor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertyDescriptor")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[PropertyDescriptor]]
   
-  @JSGlobal("Reflect.has")
-  @js.native
-  def has(target: js.Object, propertyKey: PropertyKey): scala.Boolean = js.native
+  @scala.inline
+  def getPrototypeOf(target: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototypeOf")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSGlobal("Reflect.isExtensible")
-  @js.native
-  def isExtensible(target: js.Object): scala.Boolean = js.native
+  @scala.inline
+  def has(target: js.Object, propertyKey: PropertyKey): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
   
-  @JSGlobal("Reflect.ownKeys")
-  @js.native
-  def ownKeys(target: js.Object): js.Array[PropertyKey] = js.native
+  @scala.inline
+  def isExtensible(target: js.Object): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtensible")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  @JSGlobal("Reflect.preventExtensions")
-  @js.native
-  def preventExtensions(target: js.Object): scala.Boolean = js.native
+  @scala.inline
+  def ownKeys(target: js.Object): js.Array[PropertyKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("ownKeys")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[PropertyKey]]
   
-  @JSGlobal("Reflect.set")
-  @js.native
-  def set(target: js.Object, propertyKey: PropertyKey, value: js.Any): scala.Boolean = js.native
-  @JSGlobal("Reflect.set")
-  @js.native
-  def set(target: js.Object, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): scala.Boolean = js.native
+  @scala.inline
+  def preventExtensions(target: js.Object): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preventExtensions")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  @JSGlobal("Reflect.setPrototypeOf")
-  @js.native
-  def setPrototypeOf(target: js.Object, proto: js.Any): scala.Boolean = js.native
+  @scala.inline
+  def set(target: js.Object, propertyKey: PropertyKey, value: js.Any): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+  @scala.inline
+  def set(target: js.Object, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+  
+  @scala.inline
+  def setPrototypeOf(target: js.Object, proto: js.Any): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(target.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 }

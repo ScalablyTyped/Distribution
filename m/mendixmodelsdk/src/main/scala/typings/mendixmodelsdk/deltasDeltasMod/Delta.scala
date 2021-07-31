@@ -1,15 +1,7 @@
 package typings.mendixmodelsdk.deltasDeltasMod
 
-import typings.mendixmodelsdk.mendixmodelsdkStrings.ATTACH_ELEMENT
-import typings.mendixmodelsdk.mendixmodelsdkStrings.CREATE_ELEMENT_TREE
-import typings.mendixmodelsdk.mendixmodelsdkStrings.CREATE_UNIT_TREE
-import typings.mendixmodelsdk.mendixmodelsdkStrings.DELETE_ELEMENT
-import typings.mendixmodelsdk.mendixmodelsdkStrings.DELETE_UNIT
-import typings.mendixmodelsdk.mendixmodelsdkStrings.DETACH_ELEMENT
-import typings.mendixmodelsdk.mendixmodelsdkStrings.UPDATE_PROPERTY_VALUE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -25,26 +17,14 @@ trait Delta extends StObject
 object Delta {
   
   @scala.inline
-  def IAttachElementDelta(
-    deltaType: ATTACH_ELEMENT,
-    elementId: String,
-    newParentId: String,
-    newParentPropertyName: String,
-    unitId: String
-  ): typings.mendixmodelsdk.deltasDeltasMod.IAttachElementDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], newParentId = newParentId.asInstanceOf[js.Any], newParentPropertyName = newParentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def IAttachElementDelta(elementId: String, newParentId: String, newParentPropertyName: String, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IAttachElementDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "ATTACH_ELEMENT", elementId = elementId.asInstanceOf[js.Any], newParentId = newParentId.asInstanceOf[js.Any], newParentPropertyName = newParentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IAttachElementDelta]
   }
   
   @scala.inline
-  def ICreateElementTreeDelta(
-    deltaType: CREATE_ELEMENT_TREE,
-    elementTree: IStructureJSON,
-    parentId: String,
-    parentPropertyName: String,
-    unitId: String
-  ): typings.mendixmodelsdk.deltasDeltasMod.ICreateElementTreeDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementTree = elementTree.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], parentPropertyName = parentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def ICreateElementTreeDelta(elementTree: IStructureJSON, parentId: String, parentPropertyName: String, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.ICreateElementTreeDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "CREATE_ELEMENT_TREE", elementTree = elementTree.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], parentPropertyName = parentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.ICreateElementTreeDelta]
   }
   
@@ -53,41 +33,34 @@ object Delta {
     containerId: String,
     containmentName: String,
     contentType: String,
-    deltaType: CREATE_UNIT_TREE,
     unitId: String,
     unitTree: IStructureJSON
   ): typings.mendixmodelsdk.deltasDeltasMod.ICreateUnitTreeDelta = {
-    val __obj = js.Dynamic.literal(containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any], unitTree = unitTree.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deltaType = "CREATE_UNIT_TREE", unitId = unitId.asInstanceOf[js.Any], unitTree = unitTree.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.ICreateUnitTreeDelta]
   }
   
   @scala.inline
-  def IDeleteElementDelta(deltaType: DELETE_ELEMENT, elementId: String, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IDeleteElementDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def IDeleteElementDelta(elementId: String, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IDeleteElementDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "DELETE_ELEMENT", elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IDeleteElementDelta]
   }
   
   @scala.inline
-  def IDeleteUnitDelta(deltaType: DELETE_UNIT, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IDeleteUnitDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def IDeleteUnitDelta(unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IDeleteUnitDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "DELETE_UNIT", unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IDeleteUnitDelta]
   }
   
   @scala.inline
-  def IDetachElementDelta(deltaType: DETACH_ELEMENT, elementId: String, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IDetachElementDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def IDetachElementDelta(elementId: String, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IDetachElementDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "DETACH_ELEMENT", elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IDetachElementDelta]
   }
   
   @scala.inline
-  def IUpdatePropertyValueDelta(
-    deltaType: UPDATE_PROPERTY_VALUE,
-    elementId: String,
-    mutator: Mutator,
-    propertyName: String,
-    unitId: String
-  ): typings.mendixmodelsdk.deltasDeltasMod.IUpdatePropertyValueDelta = {
-    val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], mutator = mutator.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
+  def IUpdatePropertyValueDelta(elementId: String, mutator: Mutator, propertyName: String, unitId: String): typings.mendixmodelsdk.deltasDeltasMod.IUpdatePropertyValueDelta = {
+    val __obj = js.Dynamic.literal(deltaType = "UPDATE_PROPERTY_VALUE", elementId = elementId.asInstanceOf[js.Any], mutator = mutator.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IUpdatePropertyValueDelta]
   }
 }

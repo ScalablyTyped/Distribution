@@ -3,95 +3,95 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardPreAuthorization {
   
-  @js.native
-  trait CardPreAuthorizationData extends EntityBaseData {
+  trait CardPreAuthorizationData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * Contains useful information related to the user billing
       */
-    var Billing: BillingData = js.native
+    var Billing: BillingData
     
     /**
       * The ID of a card
       */
-    var CardId: String = js.native
+    var CardId: String
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
     /**
       * How the PreAuthorization has been executed
       */
-    var ExecutionType: PreAuthorizationExecutionType = js.native
+    var ExecutionType: PreAuthorizationExecutionType
     
     /**
       * The date when the payment is to be processed by
       */
-    var ExpirationDate: Timestamp = js.native
+    var ExpirationDate: Timestamp
     
     /**
       * The Id of the associated PayIn
       */
-    var PayInId: String = js.native
+    var PayInId: String
     
     /**
       * The status of the payment after the PreAuthorization. You can pass the PaymentStatus from "WAITING" to "CANCELED" should you need/want to
       */
-    var PaymentStatus: typings.mangopay2NodejsSdk.mod.PaymentStatus = js.native
+    var PaymentStatus: typings.mangopay2NodejsSdk.mod.PaymentStatus
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * The SecureMode corresponds to '3D secure' for CB Visa and MasterCard. This field lets you activate it manually.
       * The field lets you activate it automatically with "DEFAULT" (Secured Mode will be activated from €50 or when MANGOPAY detects there is a higher risk ),
       * "FORCE" (if you wish to specifically force the secured mode).
       */
-    var SecureMode: typings.mangopay2NodejsSdk.mod.SecureMode = js.native
+    var SecureMode: typings.mangopay2NodejsSdk.mod.SecureMode
     
     /**
       * The value is 'true' if the SecureMode was used
       */
-    var SecureModeNeeded: Boolean = js.native
+    var SecureModeNeeded: Boolean
     
     /**
       * This is the URL where to redirect users to proceed to 3D secure validation
       */
-    var SecureModeRedirectURL: String = js.native
+    var SecureModeRedirectURL: String
     
     /**
       * This is the URL where users are automatically redirected after 3D secure validation (if activated)
       */
-    var SecureModeReturnURL: String = js.native
+    var SecureModeReturnURL: String
     
     /**
       * Contains useful information related to security and fraud
       */
-    var SecurityInfo: SecurityInfoData = js.native
+    var SecurityInfo: SecurityInfoData
     
     /**
       * Status of the PreAuthorization
       */
-    var Status: PreAuthorizationStatus = js.native
+    var Status: PreAuthorizationStatus
   }
   object CardPreAuthorizationData {
     
@@ -175,22 +175,21 @@ object cardPreAuthorization {
   }
   
   /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.cardPreAuthorization.CardPreAuthorizationData, 'Tag' | 'Billing' | 'SecureMode', 'AuthorId' | 'DebitedFunds' | 'CardId' | 'SecureModeReturnURL'> */
-  @js.native
   trait CreateCardPreAuthorization extends StObject {
     
-    var AuthorId: String = js.native
+    var AuthorId: String
     
-    var Billing: js.UndefOr[BillingData] = js.native
+    var Billing: js.UndefOr[BillingData] = js.undefined
     
-    var CardId: String = js.native
+    var CardId: String
     
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
-    var SecureMode: js.UndefOr[typings.mangopay2NodejsSdk.mod.SecureMode] = js.native
+    var SecureMode: js.UndefOr[typings.mangopay2NodejsSdk.mod.SecureMode] = js.undefined
     
-    var SecureModeReturnURL: String = js.native
+    var SecureModeReturnURL: String
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateCardPreAuthorization {
     
@@ -236,14 +235,13 @@ object cardPreAuthorization {
   }
   
   /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.cardPreAuthorization.CardPreAuthorizationData, 'Tag', 'PaymentStatus' | 'Id'> */
-  @js.native
   trait UpdateCardPreAuthorization extends StObject {
     
-    var Id: String = js.native
+    var Id: String
     
-    var PaymentStatus: typings.mangopay2NodejsSdk.mod.PaymentStatus = js.native
+    var PaymentStatus: typings.mangopay2NodejsSdk.mod.PaymentStatus
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object UpdateCardPreAuthorization {
     

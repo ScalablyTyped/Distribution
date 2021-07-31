@@ -4,14 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ethereumjsVm.typesMod.PrecompileFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object precompilesMod {
   
-  @JSImport("ethereumjs-vm/dist/evm/precompiles", "getPrecompile")
+  @JSImport("ethereumjs-vm/dist/evm/precompiles", JSImport.Namespace)
   @js.native
-  def getPrecompile(address: String): PrecompileFunc = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getPrecompile(address: String): PrecompileFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrecompile")(address.asInstanceOf[js.Any]).asInstanceOf[PrecompileFunc]
   
   @JSImport("ethereumjs-vm/dist/evm/precompiles", "precompiles")
   @js.native

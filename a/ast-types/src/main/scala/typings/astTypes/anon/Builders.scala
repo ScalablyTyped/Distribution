@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.astTypes.namedTypesMod.NamedTypes_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,10 +20,10 @@ trait Builders extends StObject {
   def defineMethod(name: js.Any): js.Function = js.native
   def defineMethod(name: js.Any, func: js.Function): js.Function = js.native
   
-  def eachField(`object`: js.Any, callback: js.Function2[/* name */ js.Any, /* value */ js.Any, _]): Unit = js.native
+  def eachField(`object`: js.Any, callback: js.Function2[/* name */ js.Any, /* value */ js.Any, js.Any]): Unit = js.native
   def eachField(
     `object`: js.Any,
-    callback: js.Function2[/* name */ js.Any, /* value */ js.Any, _],
+    callback: js.Function2[/* name */ js.Any, /* value */ js.Any, js.Any],
     context: js.Any
   ): Unit = js.native
   
@@ -40,10 +39,10 @@ trait Builders extends StObject {
   
   var namedTypes: NamedTypes_ = js.native
   
-  def someField(`object`: js.Any, callback: js.Function2[/* name */ js.Any, /* value */ js.Any, _]): Boolean = js.native
+  def someField(`object`: js.Any, callback: js.Function2[/* name */ js.Any, /* value */ js.Any, js.Any]): Boolean = js.native
   def someField(
     `object`: js.Any,
-    callback: js.Function2[/* name */ js.Any, /* value */ js.Any, _],
+    callback: js.Function2[/* name */ js.Any, /* value */ js.Any, js.Any],
     context: js.Any
   ): Boolean = js.native
 }

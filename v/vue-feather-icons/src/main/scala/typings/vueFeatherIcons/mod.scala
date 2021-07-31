@@ -4,7 +4,6 @@ import typings.vue.vueMod.ExtendedVue
 import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -1139,10 +1138,9 @@ object mod {
   
   type FeatherIconComponent = ExtendedVue[Vue, js.Object, js.Object, js.Object, FeatherIconProps]
   
-  @js.native
   trait FeatherIconProps extends StObject {
     
-    var size: String = js.native
+    var size: String
   }
   object FeatherIconProps {
     

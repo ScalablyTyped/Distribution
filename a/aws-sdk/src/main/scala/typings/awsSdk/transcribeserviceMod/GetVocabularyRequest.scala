@@ -2,16 +2,14 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVocabularyRequest extends StObject {
   
   /**
     * The name of the vocabulary to return information about. The name is case sensitive.
     */
-  var VocabularyName: typings.awsSdk.transcribeserviceMod.VocabularyName = js.native
+  var VocabularyName: typings.awsSdk.transcribeserviceMod.VocabularyName
 }
 object GetVocabularyRequest {
   

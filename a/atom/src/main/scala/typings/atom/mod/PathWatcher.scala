@@ -3,20 +3,20 @@ package typings.atom.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathWatcher extends DisposableLike {
+trait PathWatcher
+  extends StObject
+     with DisposableLike {
   
   /**
     *  Return a Promise that will resolve when the underlying native watcher is
     *  ready to begin sending events.
     */
-  def getStartPromise(): js.Promise[Unit] = js.native
+  def getStartPromise(): js.Promise[Unit]
   
   /** Invokes a function when any errors related to this watcher are reported. */
-  def onDidError(callback: js.Function1[/* error */ Error, Unit]): Disposable = js.native
+  def onDidError(callback: js.Function1[/* error */ Error, Unit]): Disposable
 }
 object PathWatcher {
   

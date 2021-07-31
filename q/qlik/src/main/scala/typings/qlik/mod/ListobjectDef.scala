@@ -6,27 +6,25 @@ import typings.qlik.qlikStrings.NX_FREQUENCY_RELATIVE
 import typings.qlik.qlikStrings.NX_FREQUENCY_VALUE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListobjectDef extends StObject {
   
-  var qAutoSortByState: NxAutoSortByStateDef = js.native
+  var qAutoSortByState: NxAutoSortByStateDef
   
-  var qDef: NxInlineDimensionDef = js.native
+  var qDef: NxInlineDimensionDef
   
-  var qExpressions: js.Array[NxListobjectExpressionDef] = js.native
+  var qExpressions: js.Array[NxListobjectExpressionDef]
   
-  var qFrequencyMode: NX_FREQUENCY_NONE | NX_FREQUENCY_VALUE | NX_FREQUENCY_PERCENT | NX_FREQUENCY_RELATIVE = js.native
+  var qFrequencyMode: NX_FREQUENCY_NONE | NX_FREQUENCY_VALUE | NX_FREQUENCY_PERCENT | NX_FREQUENCY_RELATIVE
   
-  var qInitialDataFetch: js.Array[NxPage] = js.native
+  var qInitialDataFetch: js.Array[NxPage]
   
-  var qLibraryId: String = js.native
+  var qLibraryId: String
   
-  var qShowAlternatives: Boolean = js.native
+  var qShowAlternatives: Boolean
   
-  var qStateName: String = js.native
+  var qStateName: String
 }
 object ListobjectDef {
   

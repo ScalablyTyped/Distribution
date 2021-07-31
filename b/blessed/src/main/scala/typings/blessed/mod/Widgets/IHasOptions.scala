@@ -2,13 +2,11 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHasOptions[T /* <: IOptions */] extends StObject {
   
-  var options: T = js.native
+  var options: T
 }
 object IHasOptions {
   
@@ -19,7 +17,7 @@ object IHasOptions {
   }
   
   @scala.inline
-  implicit class IHasOptionsMutableBuilder[Self <: IHasOptions[_], T /* <: IOptions */] (val x: Self with IHasOptions[T]) extends AnyVal {
+  implicit class IHasOptionsMutableBuilder[Self <: IHasOptions[?], T /* <: IOptions */] (val x: Self & IHasOptions[T]) extends AnyVal {
     
     @scala.inline
     def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])

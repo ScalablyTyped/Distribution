@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextEntry extends StObject {
   
   /**
     * The full name of a condition context key, including the service prefix. For example, aws:SourceIp or s3:VersionId.
     */
-  var ContextKeyName: js.UndefOr[ContextKeyNameType] = js.native
+  var ContextKeyName: js.UndefOr[ContextKeyNameType] = js.undefined
   
   /**
     * The data type of the value (or values) specified in the ContextKeyValues parameter.
     */
-  var ContextKeyType: js.UndefOr[ContextKeyTypeEnum] = js.native
+  var ContextKeyType: js.UndefOr[ContextKeyTypeEnum] = js.undefined
   
   /**
     * The value (or values, if the condition context key supports multiple values) to provide to the simulation when the key is referenced by a Condition element in an input policy.
     */
-  var ContextKeyValues: js.UndefOr[ContextKeyValueListType] = js.native
+  var ContextKeyValues: js.UndefOr[ContextKeyValueListType] = js.undefined
 }
 object ContextEntry {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementStatistics extends StObject {
   
   /**
     * The percentage of emails that were authenticated by using DomainKeys Identified Mail (DKIM) during the predictive inbox placement test.
     */
-  var DkimPercentage: js.UndefOr[Percentage] = js.native
+  var DkimPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The percentage of emails that arrived in recipients' inboxes during the predictive inbox placement test.
     */
-  var InboxPercentage: js.UndefOr[Percentage] = js.native
+  var InboxPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The percentage of emails that didn't arrive in recipients' inboxes at all during the predictive inbox placement test.
     */
-  var MissingPercentage: js.UndefOr[Percentage] = js.native
+  var MissingPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The percentage of emails that arrived in recipients' spam or junk mail folders during the predictive inbox placement test.
     */
-  var SpamPercentage: js.UndefOr[Percentage] = js.native
+  var SpamPercentage: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The percentage of emails that were authenticated by using Sender Policy Framework (SPF) during the predictive inbox placement test.
     */
-  var SpfPercentage: js.UndefOr[Percentage] = js.native
+  var SpfPercentage: js.UndefOr[Percentage] = js.undefined
 }
 object PlacementStatistics {
   

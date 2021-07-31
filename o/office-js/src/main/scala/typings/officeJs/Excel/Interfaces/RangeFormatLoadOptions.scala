@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait RangeFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoIndent: js.UndefOr[Boolean] = js.native
+  var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.native
+  var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var columnWidth: js.UndefOr[Boolean] = js.native
+  var columnWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var fill: js.UndefOr[RangeFillLoadOptions] = js.native
+  var fill: js.UndefOr[RangeFillLoadOptions] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var font: js.UndefOr[RangeFontLoadOptions] = js.native
+  var font: js.UndefOr[RangeFontLoadOptions] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var horizontalAlignment: js.UndefOr[Boolean] = js.native
+  var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var indentLevel: js.UndefOr[Boolean] = js.native
+  var indentLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var protection: js.UndefOr[FormatProtectionLoadOptions] = js.native
+  var protection: js.UndefOr[FormatProtectionLoadOptions] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[Boolean] = js.native
+  var readingOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var rowHeight: js.UndefOr[Boolean] = js.native
+  var rowHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shrinkToFit: js.UndefOr[Boolean] = js.native
+  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -116,7 +114,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var textOrientation: js.UndefOr[Boolean] = js.native
+  var textOrientation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var useStandardHeight: js.UndefOr[Boolean] = js.native
+  var useStandardHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var useStandardWidth: js.UndefOr[Boolean] = js.native
+  var useStandardWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var verticalAlignment: js.UndefOr[Boolean] = js.native
+  var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -154,7 +152,7 @@ trait RangeFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var wrapText: js.UndefOr[Boolean] = js.native
+  var wrapText: js.UndefOr[Boolean] = js.undefined
 }
 object RangeFormatLoadOptions {
   

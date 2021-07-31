@@ -2,41 +2,39 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMapElementStyle extends StObject {
   
   /**
     * Hex color used for filling polygons, the background of point icons, and for the center of lines if they have split.
     */
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
   /**
     * The hex color of a map label.
     */
-  var labelColor: js.UndefOr[String] = js.native
+  var labelColor: js.UndefOr[String] = js.undefined
   
   /**
     * The outline hex color of a map label.
     */
-  var labelOutlineColor: js.UndefOr[String] = js.native
+  var labelOutlineColor: js.UndefOr[String] = js.undefined
   
   /**
     * Species if a map label type is visible or not.
     */
-  var labelVisible: js.UndefOr[Boolean] = js.native
+  var labelVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Hex color used for the outline around polygons, the outline around point icons, and the color of lines.
     */
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies if the map element is visible or not.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IMapElementStyle {
   

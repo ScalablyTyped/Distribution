@@ -7,25 +7,23 @@ import typings.awsLambda.awsLambdaStrings.awsColonkafka
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mskMod {
   
-  @js.native
   trait MSKEvent extends StObject {
     
-    var eventSource: awsColonkafka = js.native
+    var eventSource: awsColonkafka
     
-    var eventSourceArn: String = js.native
+    var eventSourceArn: String
     
-    var records: StringDictionary[js.Array[MSKRecord]] = js.native
+    var records: StringDictionary[js.Array[MSKRecord]]
   }
   object MSKEvent {
     
     @scala.inline
-    def apply(eventSource: awsColonkafka, eventSourceArn: String, records: StringDictionary[js.Array[MSKRecord]]): MSKEvent = {
-      val __obj = js.Dynamic.literal(eventSource = eventSource.asInstanceOf[js.Any], eventSourceArn = eventSourceArn.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
+    def apply(eventSourceArn: String, records: StringDictionary[js.Array[MSKRecord]]): MSKEvent = {
+      val __obj = js.Dynamic.literal(eventSource = "aws:kafka", eventSourceArn = eventSourceArn.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
       __obj.asInstanceOf[MSKEvent]
     }
     
@@ -45,22 +43,21 @@ object mskMod {
   
   type MSKHandler = Handler[MSKEvent, Unit]
   
-  @js.native
   trait MSKRecord extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var partition: Double = js.native
+    var partition: Double
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var timestampType: CREATE_TIME | LOG_APPEND_TIME = js.native
+    var timestampType: CREATE_TIME | LOG_APPEND_TIME
     
-    var topic: String = js.native
+    var topic: String
     
-    var value: String = js.native
+    var value: String
   }
   object MSKRecord {
     

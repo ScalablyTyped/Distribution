@@ -4,10 +4,8 @@ import typings.stripe.stripeStrings.fraudulent
 import typings.stripe.stripeStrings.safe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Userreport extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Userreport extends StObject {
     * charge is safe, include a user_report key with a value of safe. Note that you must refund a charge before setting
     * the user_report to fraudulent. Stripe will use the information you send to improve our fraud detection algorithm
     */
-  var user_report: js.UndefOr[fraudulent | safe] = js.native
+  var user_report: js.UndefOr[fraudulent | safe] = js.undefined
 }
 object Userreport {
   

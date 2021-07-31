@@ -2,16 +2,14 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionDataCollectionQuery extends StObject {
   
   /**
     * A list of collections to query
     */
-  var collections: js.Array[ExtensionDataCollection] = js.native
+  var collections: js.Array[ExtensionDataCollection]
 }
 object ExtensionDataCollectionQuery {
   

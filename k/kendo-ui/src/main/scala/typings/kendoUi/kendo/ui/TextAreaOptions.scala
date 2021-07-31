@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextAreaOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ TextAreaChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ TextAreaChangeEvent, Unit]] = js.undefined
   
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String | js.Function | TextAreaLabel] = js.native
+  var label: js.UndefOr[String | js.Function | TextAreaLabel] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var resizable: js.UndefOr[String] = js.native
+  var resizable: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TextAreaOptions {
   

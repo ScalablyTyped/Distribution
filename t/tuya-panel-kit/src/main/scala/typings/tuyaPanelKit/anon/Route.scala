@@ -4,15 +4,13 @@ import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.typesMod.RouteProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
-  var navigation: js.Any = js.native
+  var navigation: js.Any
   
-  var route: RouteProp[ParamList, RouteName] = js.native
+  var route: RouteProp[ParamList, RouteName]
 }
 object Route {
   
@@ -23,7 +21,7 @@ object Route {
   }
   
   @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route[_, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self with (Route[ParamList, RouteName])) extends AnyVal {
+  implicit class RouteMutableBuilder[Self <: Route[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (Route[ParamList, RouteName])) extends AnyVal {
     
     @scala.inline
     def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])

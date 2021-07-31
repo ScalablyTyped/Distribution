@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayRouteTarget extends StObject {
   
   /**
     * An object that represents a virtual service gateway route target.
     */
-  var virtualService: GatewayRouteVirtualService = js.native
+  var virtualService: GatewayRouteVirtualService
 }
 object GatewayRouteTarget {
   

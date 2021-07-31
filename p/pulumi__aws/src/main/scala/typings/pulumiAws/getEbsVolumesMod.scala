@@ -5,37 +5,35 @@ import typings.pulumiAws.inputMod.ebs.GetEbsVolumesFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getEbsVolumesMod {
   
-  @JSImport("@pulumi/aws/ebs/getEbsVolumes", "getEbsVolumes")
+  @JSImport("@pulumi/aws/ebs/getEbsVolumes", JSImport.Namespace)
   @js.native
-  def getEbsVolumes(): js.Promise[GetEbsVolumesResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getEbsVolumes", "getEbsVolumes")
-  @js.native
-  def getEbsVolumes(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getEbsVolumes", "getEbsVolumes")
-  @js.native
-  def getEbsVolumes(args: GetEbsVolumesArgs): js.Promise[GetEbsVolumesResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getEbsVolumes", "getEbsVolumes")
-  @js.native
-  def getEbsVolumes(args: GetEbsVolumesArgs, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getEbsVolumes(): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")().asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  @scala.inline
+  def getEbsVolumes(args: Unit, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  @scala.inline
+  def getEbsVolumes(args: GetEbsVolumesArgs): js.Promise[GetEbsVolumesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  @scala.inline
+  def getEbsVolumes(args: GetEbsVolumesArgs, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEbsVolumes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEbsVolumesResult]]
+  
   trait GetEbsVolumesArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetEbsVolumesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetEbsVolumesFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired volumes.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetEbsVolumesArgs {
     
@@ -65,23 +63,22 @@ object getEbsVolumesMod {
     }
   }
   
-  @js.native
   trait GetEbsVolumesResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetEbsVolumesFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetEbsVolumesFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A set of all the EBS Volume IDs found. This data source will fail if
       * no volumes match the provided criteria.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetEbsVolumesResult {
     

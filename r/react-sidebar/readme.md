@@ -12,7 +12,7 @@ A sidebar component for React.
 | Keywords           | react, react-component, sidebar, drawer, navigation |
 | # releases         | 0 |
 | # dependents       | 50 |
-| # downloads        | 1208774 |
+| # downloads        | 1263983 |
 | # stars            | 4 |
 
 ## Links

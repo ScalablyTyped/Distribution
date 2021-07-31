@@ -2,132 +2,130 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration data for an Ad Exchange performance report list.
   */
-@js.native
 trait SchemaPerformanceReport extends StObject {
   
   /**
     * The number of bid responses with an ad.
     */
-  var bidRate: js.UndefOr[Double] = js.native
+  var bidRate: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of bid requests sent to your bidder.
     */
-  var bidRequestRate: js.UndefOr[Double] = js.native
+  var bidRequestRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Rate of various prefiltering statuses per match. Please refer to the
     * callout-status-codes.txt file for different statuses.
     */
-  var calloutStatusRate: js.UndefOr[js.Array[_]] = js.native
+  var calloutStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Average QPS for cookie matcher operations.
     */
-  var cookieMatcherStatusRate: js.UndefOr[js.Array[_]] = js.native
+  var cookieMatcherStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Rate of ads with a given status. Please refer to the
     * creative-status-codes.txt file for different statuses.
     */
-  var creativeStatusRate: js.UndefOr[js.Array[_]] = js.native
+  var creativeStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The number of bid responses that were filtered due to a policy violation
     * or other errors.
     */
-  var filteredBidRate: js.UndefOr[Double] = js.native
+  var filteredBidRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Average QPS for hosted match operations.
     */
-  var hostedMatchStatusRate: js.UndefOr[js.Array[_]] = js.native
+  var hostedMatchStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The number of potential queries based on your pretargeting settings.
     */
-  var inventoryMatchRate: js.UndefOr[Double] = js.native
+  var inventoryMatchRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The 50th percentile round trip latency(ms) as perceived from Google
     * servers for the duration period covered by the report.
     */
-  var latency50thPercentile: js.UndefOr[Double] = js.native
+  var latency50thPercentile: js.UndefOr[Double] = js.undefined
   
   /**
     * The 85th percentile round trip latency(ms) as perceived from Google
     * servers for the duration period covered by the report.
     */
-  var latency85thPercentile: js.UndefOr[Double] = js.native
+  var latency85thPercentile: js.UndefOr[Double] = js.undefined
   
   /**
     * The 95th percentile round trip latency(ms) as perceived from Google
     * servers for the duration period covered by the report.
     */
-  var latency95thPercentile: js.UndefOr[Double] = js.native
+  var latency95thPercentile: js.UndefOr[Double] = js.undefined
   
   /**
     * Rate of various quota account statuses per quota check.
     */
-  var noQuotaInRegion: js.UndefOr[Double] = js.native
+  var noQuotaInRegion: js.UndefOr[Double] = js.undefined
   
   /**
     * Rate of various quota account statuses per quota check.
     */
-  var outOfQuota: js.UndefOr[Double] = js.native
+  var outOfQuota: js.UndefOr[Double] = js.undefined
   
   /**
     * Average QPS for pixel match requests from clients.
     */
-  var pixelMatchRequests: js.UndefOr[Double] = js.native
+  var pixelMatchRequests: js.UndefOr[Double] = js.undefined
   
   /**
     * Average QPS for pixel match responses from clients.
     */
-  var pixelMatchResponses: js.UndefOr[Double] = js.native
+  var pixelMatchResponses: js.UndefOr[Double] = js.undefined
   
   /**
     * The configured quota limits for this account.
     */
-  var quotaConfiguredLimit: js.UndefOr[Double] = js.native
+  var quotaConfiguredLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * The throttled quota limits for this account.
     */
-  var quotaThrottledLimit: js.UndefOr[Double] = js.native
+  var quotaThrottledLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * The trading location of this data.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * The number of properly formed bid responses received by our servers
     * within the deadline.
     */
-  var successfulRequestRate: js.UndefOr[Double] = js.native
+  var successfulRequestRate: js.UndefOr[Double] = js.undefined
   
   /**
     * The unix timestamp of the starting time of this performance data.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * The number of bid responses that were unsuccessful due to timeouts,
     * incorrect formatting, etc.
     */
-  var unsuccessfulRequestRate: js.UndefOr[Double] = js.native
+  var unsuccessfulRequestRate: js.UndefOr[Double] = js.undefined
 }
 object SchemaPerformanceReport {
   
@@ -153,7 +151,7 @@ object SchemaPerformanceReport {
     def setBidRequestRateUndefined: Self = StObject.set(x, "bidRequestRate", js.undefined)
     
     @scala.inline
-    def setCalloutStatusRate(value: js.Array[_]): Self = StObject.set(x, "calloutStatusRate", value.asInstanceOf[js.Any])
+    def setCalloutStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "calloutStatusRate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCalloutStatusRateUndefined: Self = StObject.set(x, "calloutStatusRate", js.undefined)
@@ -162,7 +160,7 @@ object SchemaPerformanceReport {
     def setCalloutStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "calloutStatusRate", js.Array(value :_*))
     
     @scala.inline
-    def setCookieMatcherStatusRate(value: js.Array[_]): Self = StObject.set(x, "cookieMatcherStatusRate", value.asInstanceOf[js.Any])
+    def setCookieMatcherStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "cookieMatcherStatusRate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCookieMatcherStatusRateUndefined: Self = StObject.set(x, "cookieMatcherStatusRate", js.undefined)
@@ -171,7 +169,7 @@ object SchemaPerformanceReport {
     def setCookieMatcherStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "cookieMatcherStatusRate", js.Array(value :_*))
     
     @scala.inline
-    def setCreativeStatusRate(value: js.Array[_]): Self = StObject.set(x, "creativeStatusRate", value.asInstanceOf[js.Any])
+    def setCreativeStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "creativeStatusRate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCreativeStatusRateUndefined: Self = StObject.set(x, "creativeStatusRate", js.undefined)
@@ -186,7 +184,7 @@ object SchemaPerformanceReport {
     def setFilteredBidRateUndefined: Self = StObject.set(x, "filteredBidRate", js.undefined)
     
     @scala.inline
-    def setHostedMatchStatusRate(value: js.Array[_]): Self = StObject.set(x, "hostedMatchStatusRate", value.asInstanceOf[js.Any])
+    def setHostedMatchStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "hostedMatchStatusRate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHostedMatchStatusRateUndefined: Self = StObject.set(x, "hostedMatchStatusRate", js.undefined)

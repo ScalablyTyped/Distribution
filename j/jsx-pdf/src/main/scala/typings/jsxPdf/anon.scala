@@ -38,21 +38,19 @@ import typings.pdfmake.interfacesMod.UnorderedListType
 import typings.pdfmake.interfacesMod.Watermark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var fit: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var fit: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Content {
     
@@ -89,10 +87,9 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<{}> */
-  @js.native
   trait Ele extends StObject {
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
   }
   object Ele {
     
@@ -117,78 +114,77 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.EleNoChidlren<std.Omit<pdfmake.pdfmake/interfaces.ContentImage, 'image'> & {  src :string}> */
-  @js.native
   trait EleNoChidlrenOmitContentI extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var fit: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var fit: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var linkToDestination: js.UndefOr[String] = js.native
+    var linkToDestination: js.UndefOr[String] = js.undefined
     
-    var linkToPage: js.UndefOr[Double] = js.native
+    var linkToPage: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object EleNoChidlrenOmitContentI {
     
@@ -417,78 +413,77 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.EleNoChidlren<std.Omit<pdfmake.pdfmake/interfaces.ContentQr, 'qr'> & {  content :string}> */
-  @js.native
   trait EleNoChidlrenOmitContentQ extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var content: String = js.native
+    var content: String
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var eccLevel: js.UndefOr[L | M | Q | H] = js.native
+    var eccLevel: js.UndefOr[L | M | Q | H] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var fit: js.UndefOr[Double] = js.native
+    var fit: js.UndefOr[Double] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var foreground: js.UndefOr[String] = js.native
+    var foreground: js.UndefOr[String] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[Double] = js.native
+    var mask: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[numeric | alphanumeric | octet] = js.native
+    var mode: js.UndefOr[numeric | alphanumeric | octet] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object EleNoChidlrenOmitContentQ {
     
@@ -717,66 +712,65 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentColumns, 'columns'>> */
-  @js.native
   trait EleOmitContentColumnscolu extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
   }
   object EleOmitContentColumnscolu {
     
@@ -975,74 +969,73 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentOrderedList, 'ol'>> */
-  @js.native
   trait EleOmitContentOrderedList extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String | (js.Tuple2[String, String])] = js.native
+    var separator: js.UndefOr[String | (js.Tuple2[String, String])] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
     
-    var `type`: js.UndefOr[OrderedListType] = js.native
+    var `type`: js.UndefOr[OrderedListType] = js.undefined
   }
   object EleOmitContentOrderedList {
     
@@ -1265,68 +1258,67 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentStack, 'stack'>> */
-  @js.native
   trait EleOmitContentStackstack extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
     
-    var unbreakable: js.UndefOr[Boolean] = js.native
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
   }
   object EleOmitContentStackstack {
     
@@ -1531,78 +1523,77 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentTable, 'table'> & std.Omit<pdfmake.pdfmake/interfaces.Table, 'body'>> */
-  @js.native
   trait EleOmitContentTabletableO extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var dontBreakRows: js.UndefOr[Boolean] = js.native
+    var dontBreakRows: js.UndefOr[Boolean] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var headerRows: js.UndefOr[Double] = js.native
+    var headerRows: js.UndefOr[Double] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var heights: js.UndefOr[Double | js.Array[Double] | DynamicRowSize] = js.native
+    var heights: js.UndefOr[Double | js.Array[Double] | DynamicRowSize] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var keepWithHeaderRows: js.UndefOr[Double] = js.native
+    var keepWithHeaderRows: js.UndefOr[Double] = js.undefined
     
-    var layout: js.UndefOr[TableLayout] = js.native
+    var layout: js.UndefOr[TableLayout] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
     
-    var widths: js.UndefOr[Asterisk | auto | js.Array[Size]] = js.native
+    var widths: js.UndefOr[Asterisk | auto | js.Array[Size]] = js.undefined
   }
   object EleOmitContentTabletableO {
     
@@ -1846,72 +1837,71 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentText, 'text'>> */
-  @js.native
   trait EleOmitContentTexttext extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var linkToDestination: js.UndefOr[String] = js.native
+    var linkToDestination: js.UndefOr[String] = js.undefined
     
-    var linkToPage: js.UndefOr[Double] = js.native
+    var linkToPage: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
   }
   object EleOmitContentTexttext {
     
@@ -2128,68 +2118,67 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentUnorderedList, 'ul'>> */
-  @js.native
   trait EleOmitContentUnorderedLi extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.native
+    var absolutePosition: js.UndefOr[X] = js.undefined
     
-    var alignment: js.UndefOr[Alignment] = js.native
+    var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var characterSpacing: js.UndefOr[Double] = js.native
+    var characterSpacing: js.UndefOr[Double] = js.undefined
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.native
+    var columnGap: js.UndefOr[Size] = js.undefined
     
-    var decoration: js.UndefOr[Decoration] = js.native
+    var decoration: js.UndefOr[Decoration] = js.undefined
     
-    var decorationColor: js.UndefOr[String] = js.native
+    var decorationColor: js.UndefOr[String] = js.undefined
     
-    var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+    var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+    var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var headlineLevel: js.UndefOr[Double] = js.native
+    var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var italics: js.UndefOr[Boolean] = js.native
+    var italics: js.UndefOr[Boolean] = js.undefined
     
-    var leadingIndent: js.UndefOr[Double] = js.native
+    var leadingIndent: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Margins] = js.native
+    var margin: js.UndefOr[Margins] = js.undefined
     
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
-    var noWrap: js.UndefOr[Boolean] = js.native
+    var noWrap: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var pageBreak: js.UndefOr[PageBreak] = js.native
+    var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+    var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.native
+    var relativePosition: js.UndefOr[X] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
     
-    var `type`: js.UndefOr[UnorderedListType] = js.native
+    var `type`: js.UndefOr[UnorderedListType] = js.undefined
   }
   object EleOmitContentUnorderedLi {
     
@@ -2394,22 +2383,21 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.TDocumentDefinitions, 'content' | 'header' | 'footer'>> */
-  @js.native
   trait EleOmitTDocumentDefinitio extends StObject {
     
-    var background: js.UndefOr[DynamicBackground | typings.pdfmake.interfacesMod.Content] = js.native
+    var background: js.UndefOr[DynamicBackground | typings.pdfmake.interfacesMod.Content] = js.undefined
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var defaultStyle: js.UndefOr[Style] = js.native
+    var defaultStyle: js.UndefOr[Style] = js.undefined
     
-    var images: js.UndefOr[StringDictionary[String]] = js.native
+    var images: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var info: js.UndefOr[TDocumentInformation] = js.native
+    var info: js.UndefOr[TDocumentInformation] = js.undefined
     
-    var ownerPassword: js.UndefOr[String] = js.native
+    var ownerPassword: js.UndefOr[String] = js.undefined
     
     var pageBreakBefore: js.UndefOr[
         js.Function4[
@@ -2419,23 +2407,23 @@ object anon {
           /* previousNodesOnPage */ js.Array[Node], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var pageMargins: js.UndefOr[Margins] = js.native
+    var pageMargins: js.UndefOr[Margins] = js.undefined
     
-    var pageOrientation: js.UndefOr[PageOrientation] = js.native
+    var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
-    var pageSize: js.UndefOr[PageSize] = js.native
+    var pageSize: js.UndefOr[PageSize] = js.undefined
     
-    var permissions: js.UndefOr[DocumentPermissions] = js.native
+    var permissions: js.UndefOr[DocumentPermissions] = js.undefined
     
-    var styles: js.UndefOr[StyleDictionary] = js.native
+    var styles: js.UndefOr[StyleDictionary] = js.undefined
     
-    var userPassword: js.UndefOr[String] = js.native
+    var userPassword: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[PDFVersion] = js.native
+    var version: js.UndefOr[PDFVersion] = js.undefined
     
-    var watermark: js.UndefOr[String | Watermark] = js.native
+    var watermark: js.UndefOr[String | Watermark] = js.undefined
   }
   object EleOmitTDocumentDefinitio {
     
@@ -2557,12 +2545,11 @@ object anon {
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<{  width :number | string}> */
-  @js.native
   trait Elewidthnumberstring extends StObject {
     
-    var children: DynamicChild = js.native
+    var children: DynamicChild
     
-    var width: Double | String = js.native
+    var width: Double | String
   }
   object Elewidthnumberstring {
     

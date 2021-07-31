@@ -4,27 +4,27 @@ import typings.nodeSqlParser.nodeSqlParserStrings.insert
 import typings.nodeSqlParser.nodeSqlParserStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InsertReplace extends AST {
+trait InsertReplace
+  extends StObject
+     with AST {
   
-  var columns: js.Array[String] | Null = js.native
+  var columns: js.Array[String] | Null
   
-  var db: String | Null = js.native
+  var db: String | Null
   
-  var table: js.Any = js.native
+  var table: js.Any
   
-  var `type`: replace | insert = js.native
+  var `type`: replace | insert
   
-  var values: js.Array[InsertReplaceValue] = js.native
+  var values: js.Array[InsertReplaceValue]
 }
 object InsertReplace {
   
   @scala.inline
   def apply(table: js.Any, `type`: replace | insert, values: js.Array[InsertReplaceValue]): InsertReplace = {
-    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], columns = null, db = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertReplace]
   }

@@ -7,28 +7,27 @@ import typings.vueInbrowserCompilerUtils.typesMod.ParamType
 import typings.vueInbrowserCompilerUtils.typesMod.SlotDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slotHandlerMod {
   
-  @JSImport("vue-docgen-api/dist/script-handlers/slotHandler", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/script-handlers/slotHandler", JSImport.Namespace)
   @js.native
-  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-docgen-api/dist/script-handlers/slotHandler", "getSlotComment")
-  @js.native
-  def getSlotComment(path: NodePath[_, _], descriptor: SlotDescriptor): js.UndefOr[SlotComment] = js.native
+  @scala.inline
+  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("vue-docgen-api/dist/script-handlers/slotHandler", "parseSlotDocBlock")
-  @js.native
-  def parseSlotDocBlock(str: String, descriptor: SlotDescriptor): js.UndefOr[Bindings] = js.native
+  @scala.inline
+  def getSlotComment(path: NodePath[js.Any, js.Any], descriptor: SlotDescriptor): js.UndefOr[SlotComment] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlotComment")(path.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SlotComment]]
+  
+  @scala.inline
+  def parseSlotDocBlock(str: String, descriptor: SlotDescriptor): js.UndefOr[Bindings] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSlotDocBlock")(str.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Bindings]]
   
   /* Inlined std.Pick<vue-docgen-api.vue-docgen-api/dist/Documentation.SlotDescriptor, 'bindings'> */
-  @js.native
   trait SlotComment extends StObject {
     
-    var bindings: js.UndefOr[js.Array[ParamTag]] = js.native
+    var bindings: js.UndefOr[js.Array[ParamTag]] = js.undefined
   }
   object SlotComment {
     
@@ -52,11 +51,12 @@ object slotHandlerMod {
     }
   }
   
-  @js.native
-  trait TypedParamTag extends ParamTag {
+  trait TypedParamTag
+    extends StObject
+       with ParamTag {
     
     @JSName("type")
-    var type_TypedParamTag: ParamType = js.native
+    var type_TypedParamTag: ParamType
   }
   object TypedParamTag {
     

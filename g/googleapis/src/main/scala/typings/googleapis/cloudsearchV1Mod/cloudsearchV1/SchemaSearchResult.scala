@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Results containing indexed information for a document.
   */
-@js.native
 trait SchemaSearchResult extends StObject {
   
   /**
@@ -16,33 +14,33 @@ trait SchemaSearchResult extends StObject {
     * only be one level of clustered results. If current source is not enabled
     * for clustering, this field will be empty.
     */
-  var clusteredResults: js.UndefOr[js.Array[SchemaSearchResult]] = js.native
+  var clusteredResults: js.UndefOr[js.Array[SchemaSearchResult]] = js.undefined
   
   /**
     * Debugging information about this search result.
     */
-  var debugInfo: js.UndefOr[SchemaResultDebugInfo] = js.native
+  var debugInfo: js.UndefOr[SchemaResultDebugInfo] = js.undefined
   
   /**
     * Metadata of the search result.
     */
-  var metadata: js.UndefOr[SchemaMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMetadata] = js.undefined
   
   /**
     * The concatenation of all snippets (summaries) available for this result.
     */
-  var snippet: js.UndefOr[SchemaSnippet] = js.native
+  var snippet: js.UndefOr[SchemaSnippet] = js.undefined
   
   /**
     * Title of the search result.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the search result. The URL contains a Google redirect to the
     * actual item.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchResult {
   

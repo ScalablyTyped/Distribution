@@ -6,29 +6,29 @@ import typings.awsSdkClientLambdaNode.typesAccountUsageMod.UnmarshalledAccountUs
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetAccountSettingsOutputMod {
   
-  @js.native
-  trait GetAccountSettingsOutput extends OutputTypesUnion {
+  trait GetAccountSettingsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Limits related to concurrency and code storage.</p>
       */
-    var AccountLimit: js.UndefOr[UnmarshalledAccountLimit] = js.native
+    var AccountLimit: js.UndefOr[UnmarshalledAccountLimit] = js.undefined
     
     /**
       * <p>The number of functions and amount of storage in use.</p>
       */
-    var AccountUsage: js.UndefOr[UnmarshalledAccountUsage] = js.native
+    var AccountUsage: js.UndefOr[UnmarshalledAccountUsage] = js.undefined
   }
   object GetAccountSettingsOutput {
     

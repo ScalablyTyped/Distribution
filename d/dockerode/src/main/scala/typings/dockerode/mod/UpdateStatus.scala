@@ -2,19 +2,17 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateStatus extends StObject {
   
-  var CompletedAt: js.UndefOr[String] = js.native
+  var CompletedAt: js.UndefOr[String] = js.undefined
   
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
-  var StartedAt: js.UndefOr[String] = js.native
+  var StartedAt: js.UndefOr[String] = js.undefined
   
-  var State: js.UndefOr[UpdateState] = js.native
+  var State: js.UndefOr[UpdateState] = js.undefined
 }
 object UpdateStatus {
   

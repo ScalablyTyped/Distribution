@@ -2,17 +2,15 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZMW extends StObject {
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
   
-  var ZMW: js.Array[String] = js.native
+  var ZMW: js.Array[String]
 }
 object ZMW {
   

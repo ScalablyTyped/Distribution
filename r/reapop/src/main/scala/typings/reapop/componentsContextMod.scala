@@ -5,7 +5,6 @@ import typings.react.mod.global.JSX.Element
 import typings.reapop.notificationMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsContextMod {
@@ -14,21 +13,20 @@ object componentsContextMod {
   @js.native
   val ComponentsContext: Context[ComponentContextType] = js.native
   
-  @js.native
   trait ComponentContextType extends StObject {
     
-    var Notification: js.UndefOr[js.Function1[/* props */ Props, Element]] = js.native
+    var Notification: js.UndefOr[js.Function1[/* props */ Props, Element]] = js.undefined
     
     var NotificationIcon: js.UndefOr[
         js.Function1[/* props */ typings.reapop.notificationIconMod.Props, Element | Null]
-      ] = js.native
+      ] = js.undefined
     
     var Transition: js.UndefOr[
         js.Function1[
           (/* props */ typings.reapop.slideTransitionMod.Props) | (/* props */ typings.reapop.growTransitionMod.Props) | (/* props */ typings.reapop.fadeTransitionMod.Props), 
           Element
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ComponentContextType {
     

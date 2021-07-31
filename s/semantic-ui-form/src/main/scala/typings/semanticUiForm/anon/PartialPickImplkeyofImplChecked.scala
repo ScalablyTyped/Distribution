@@ -2,64 +2,62 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.PromptSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.PromptSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplChecked extends StObject {
   
-  var checked: js.UndefOr[String] = js.native
+  var checked: js.UndefOr[String] = js.undefined
   
-  var contain: js.UndefOr[String] = js.native
+  var contain: js.UndefOr[String] = js.undefined
   
-  var containExactly: js.UndefOr[String] = js.native
+  var containExactly: js.UndefOr[String] = js.undefined
   
-  var creditCard: js.UndefOr[String] = js.native
+  var creditCard: js.UndefOr[String] = js.undefined
   
-  var decimal: js.UndefOr[String] = js.native
+  var decimal: js.UndefOr[String] = js.undefined
   
-  var different: js.UndefOr[String] = js.native
+  var different: js.UndefOr[String] = js.undefined
   
-  var doesntContain: js.UndefOr[String] = js.native
+  var doesntContain: js.UndefOr[String] = js.undefined
   
-  var doesntContainExactly: js.UndefOr[String] = js.native
+  var doesntContainExactly: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[String] = js.native
+  var empty: js.UndefOr[String] = js.undefined
   
-  var exactCount: js.UndefOr[String] = js.native
+  var exactCount: js.UndefOr[String] = js.undefined
   
-  var exactLength: js.UndefOr[String] = js.native
+  var exactLength: js.UndefOr[String] = js.undefined
   
-  var integer: js.UndefOr[String] = js.native
+  var integer: js.UndefOr[String] = js.undefined
   
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var isExactly: js.UndefOr[String] = js.native
+  var isExactly: js.UndefOr[String] = js.undefined
   
-  var length: js.UndefOr[String] = js.native
+  var length: js.UndefOr[String] = js.undefined
   
-  var `match`: js.UndefOr[String] = js.native
+  var `match`: js.UndefOr[String] = js.undefined
   
-  var maxCount: js.UndefOr[String] = js.native
+  var maxCount: js.UndefOr[String] = js.undefined
   
-  var maxLength: js.UndefOr[String] = js.native
+  var maxLength: js.UndefOr[String] = js.undefined
   
-  var minCount: js.UndefOr[String] = js.native
+  var minCount: js.UndefOr[String] = js.undefined
   
-  var minLength: js.UndefOr[String] = js.native
+  var minLength: js.UndefOr[String] = js.undefined
   
-  var not: js.UndefOr[String] = js.native
+  var not: js.UndefOr[String] = js.undefined
   
-  var notExactly: js.UndefOr[String] = js.native
+  var notExactly: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  var regExp: js.UndefOr[String] = js.native
+  var regExp: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplChecked {
   

@@ -3,31 +3,29 @@ package typings.minappEnv.wx
 import typings.minappEnv.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectSocketOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ConnectSocketCompleteCallback] = js.native
+  var complete: js.UndefOr[ConnectSocketCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ConnectSocketFailCallback] = js.native
+  var fail: js.UndefOr[ConnectSocketFailCallback] = js.undefined
   
   /** HTTP Header，Header 中不能设置 Referer */
-  var header: js.UndefOr[js.Object] = js.native
+  var header: js.UndefOr[js.Object] = js.undefined
   
   /** 子协议数组
     *
     * 最低基础库： `1.4.0` */
-  var protocols: js.UndefOr[Array[String]] = js.native
+  var protocols: js.UndefOr[Array[String]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ConnectSocketSuccessCallback] = js.native
+  var success: js.UndefOr[ConnectSocketSuccessCallback] = js.undefined
   
   /** 开发者服务器 wss 接口地址 */
-  var url: String = js.native
+  var url: String
 }
 object ConnectSocketOption {
   

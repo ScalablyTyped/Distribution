@@ -2,15 +2,13 @@ package typings.reactNativeCommunityCliTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Platforms extends StObject {
   
-  var platforms: AndroidIos = js.native
+  var platforms: AndroidIos
   
-  var root: String = js.native
+  var root: String
 }
 object Platforms {
   

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContributionBase extends StObject {
   
   /**
     * Description of the contribution/type
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Fully qualified identifier of the contribution/type
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * VisibleTo can be used to restrict whom can reference a given contribution/type. This value should be a list of publishers or extensions access is restricted too.  Examples: "ms" - Means only the "ms" publisher can reference this. "ms.vss-web" - Means only the "vss-web" extension from the "ms" publisher can reference this.
     */
-  var visibleTo: js.Array[String] = js.native
+  var visibleTo: js.Array[String]
 }
 object ContributionBase {
   

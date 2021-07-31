@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Obsolete. Use the MVCxClientDocumentViewer class instead.
   */
 @js.native
-trait MVCxClientReportViewer extends ASPxClientReportViewer {
+trait MVCxClientReportViewer
+  extends StObject
+     with ASPxClientReportViewer {
   
   /**
     * Occurs before performing a document export request.

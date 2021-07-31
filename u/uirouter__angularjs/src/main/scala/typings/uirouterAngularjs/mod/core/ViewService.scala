@@ -7,7 +7,6 @@ import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import typings.uirouterCore.viewInterfaceMod.ViewContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.ViewService")
@@ -19,6 +18,10 @@ class ViewService protected ()
 }
 /* static members */
 object ViewService {
+  
+  @JSImport("@uirouter/angularjs", "core.ViewService")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Given a ui-view and a ViewConfig, determines if they "match".
@@ -77,9 +80,8 @@ object ViewService {
     *
     * @internal
     */
-  @JSImport("@uirouter/angularjs", "core.ViewService.matches")
-  @js.native
-  def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
+  @scala.inline
+  def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(uiViewsByFqn.asInstanceOf[js.Any], uiView.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* viewConfig */ ViewConfig, Boolean]]
   
   /**
     * Normalizes a view's name from a state.views configuration block.
@@ -92,10 +94,8 @@ object ViewService {
     *
     * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
     */
-  @JSImport("@uirouter/angularjs", "core.ViewService.normalizeUIViewTarget")
-  @js.native
-  def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = js.native
-  @JSImport("@uirouter/angularjs", "core.ViewService.normalizeUIViewTarget")
-  @js.native
-  def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = js.native
+  @scala.inline
+  def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any]).asInstanceOf[UiViewContextAnchor]
+  @scala.inline
+  def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any], rawViewName.asInstanceOf[js.Any])).asInstanceOf[UiViewContextAnchor]
 }

@@ -3,15 +3,13 @@ package typings.ckeditor.anon
 import typings.ckeditor.CKEDITOR.dom.element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FocusElement extends StObject {
   
-  var focusElement: js.UndefOr[element | Boolean] = js.native
+  var focusElement: js.UndefOr[element | Boolean] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object FocusElement {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesRequest extends StObject {
   
   /**
     * Any applicable row-level and/or column-level filtering conditions for the resources.
     */
-  var FilterConditionList: js.UndefOr[typings.awsSdk.lakeformationMod.FilterConditionList] = js.native
+  var FilterConditionList: js.UndefOr[typings.awsSdk.lakeformationMod.FilterConditionList] = js.undefined
   
   /**
     * The maximum number of resource results.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A continuation token, if this is not the first call to retrieve these resources.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListResourcesRequest {
   

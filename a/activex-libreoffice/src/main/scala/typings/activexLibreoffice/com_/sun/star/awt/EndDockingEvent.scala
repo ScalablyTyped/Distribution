@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies an end docking event. */
-@js.native
-trait EndDockingEvent extends EventObject {
+trait EndDockingEvent
+  extends StObject
+     with EventObject {
   
   /** specifies the new bounding rectangle of the window */
-  var WindowRectangle: Rectangle = js.native
+  var WindowRectangle: Rectangle
   
   /** specifies that the docking procedure was canceled */
-  var bCancelled: Boolean = js.native
+  var bCancelled: Boolean
   
   /** specifies if the window is now floating `TRUE` or docked `FALSE` */
-  var bFloating: Boolean = js.native
+  var bFloating: Boolean
 }
 object EndDockingEvent {
   

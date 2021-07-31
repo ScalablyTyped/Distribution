@@ -8,14 +8,15 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("pbf", JSImport.Namespace)
   @js.native
-  class ^ () extends Pbf {
+  class ^ ()
+    extends StObject
+       with Pbf {
     def this(buffer: ArrayBuffer) = this()
     def this(buffer: Uint8Array) = this()
   }
@@ -73,7 +74,7 @@ object mod {
     ): T = js.native
     def readFields[T](
       readField: js.Function3[/* tag */ Double, /* result */ js.UndefOr[T], /* pbf */ js.UndefOr[this.type], Unit],
-      result: js.UndefOr[scala.Nothing],
+      result: Unit,
       end: Double
     ): T = js.native
     
@@ -116,9 +117,9 @@ object mod {
     def readPackedSVarint(arr: js.Array[Double]): js.Array[Double] = js.native
     
     def readPackedVarint(): js.Array[Double] = js.native
-    def readPackedVarint(arr: js.UndefOr[scala.Nothing], isSigned: Boolean): js.Array[Double] = js.native
     def readPackedVarint(arr: js.Array[Double]): js.Array[Double] = js.native
     def readPackedVarint(arr: js.Array[Double], isSigned: Boolean): js.Array[Double] = js.native
+    def readPackedVarint(arr: Unit, isSigned: Boolean): js.Array[Double] = js.native
     
     def readSFixed32(): Double = js.native
     

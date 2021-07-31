@@ -3,13 +3,11 @@ package typings.inboxsdk.mod.Router
 import typings.inboxsdk.mod.Common.DropdownView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SectionDropdownClickEvent extends StObject {
   
-  var dropdown: DropdownView = js.native
+  var dropdown: DropdownView
 }
 object SectionDropdownClickEvent {
   

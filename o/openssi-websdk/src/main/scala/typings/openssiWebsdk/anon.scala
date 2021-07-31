@@ -7,17 +7,15 @@ import typings.openssiWebsdk.mod.DID
 import typings.openssiWebsdk.mod.Verkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var attributes: StringDictionary[String] = js.native
+    var attributes: StringDictionary[String]
     
-    var data: String = js.native
+    var data: String
   }
   object Attributes {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Did extends StObject {
     
-    var did: DID = js.native
+    var did: DID
     
-    var verkey: Verkey = js.native
+    var verkey: Verkey
   }
   object Did {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[AgentName] = js.native
+    var name: js.UndefOr[AgentName] = js.undefined
     
-    var url: js.UndefOr[AgentURL] = js.native
+    var url: js.UndefOr[AgentURL] = js.undefined
   }
   object Name {
     

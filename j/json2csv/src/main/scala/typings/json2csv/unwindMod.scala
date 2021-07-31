@@ -3,24 +3,24 @@ package typings.json2csv
 import typings.json2csv.baseMod.Json2CsvTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unwindMod {
   
-  @JSImport("json2csv/transforms/unwind", "unwind")
+  @JSImport("json2csv/transforms/unwind", JSImport.Namespace)
   @js.native
-  def unwind(): Json2CsvTransform[_, js.Array[_]] = js.native
-  @JSImport("json2csv/transforms/unwind", "unwind")
-  @js.native
-  def unwind(options: UnwindOptions): Json2CsvTransform[_, js.Array[_]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def unwind(): Json2CsvTransform[js.Any, js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwind")().asInstanceOf[Json2CsvTransform[js.Any, js.Array[js.Any]]]
+  @scala.inline
+  def unwind(options: UnwindOptions): Json2CsvTransform[js.Any, js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwind")(options.asInstanceOf[js.Any]).asInstanceOf[Json2CsvTransform[js.Any, js.Array[js.Any]]]
+  
   trait UnwindOptions extends StObject {
     
-    var blankOut: js.UndefOr[Boolean] = js.native
+    var blankOut: js.UndefOr[Boolean] = js.undefined
     
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnwindOptions {
     

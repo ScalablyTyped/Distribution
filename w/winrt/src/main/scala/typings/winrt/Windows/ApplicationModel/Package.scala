@@ -5,11 +5,11 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Package extends IPackage
+trait Package
+  extends StObject
+     with IPackage
 object Package {
   
   @scala.inline

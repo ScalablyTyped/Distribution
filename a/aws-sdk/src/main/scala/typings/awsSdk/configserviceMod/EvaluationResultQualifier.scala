@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluationResultQualifier extends StObject {
   
   /**
     * The name of the AWS Config rule that was used in the evaluation.
     */
-  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.native
+  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.undefined
   
   /**
     * The ID of the evaluated AWS resource.
     */
-  var ResourceId: js.UndefOr[BaseResourceId] = js.native
+  var ResourceId: js.UndefOr[BaseResourceId] = js.undefined
   
   /**
     * The type of AWS resource that was evaluated.
     */
-  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.native
+  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object EvaluationResultQualifier {
   

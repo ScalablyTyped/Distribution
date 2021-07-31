@@ -2,16 +2,14 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/Checkbox/Checkbox.base.ICheckboxState> */
-@js.native
 trait ReadonlyICheckboxState extends StObject {
   
-  val isChecked: js.UndefOr[Boolean] = js.native
+  val isChecked: js.UndefOr[Boolean] = js.undefined
   
-  val isIndeterminate: js.UndefOr[Boolean] = js.native
+  val isIndeterminate: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyICheckboxState {
   

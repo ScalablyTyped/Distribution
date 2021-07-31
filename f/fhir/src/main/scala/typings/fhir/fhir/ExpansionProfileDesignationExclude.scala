@@ -2,19 +2,19 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Designations to be excluded
   */
-@js.native
-trait ExpansionProfileDesignationExclude extends BackboneElement {
+trait ExpansionProfileDesignationExclude
+  extends StObject
+     with BackboneElement {
   
   /**
     * The designation to be excluded
     */
-  var designation: js.UndefOr[js.Array[ExpansionProfileDesignationExcludeDesignation]] = js.native
+  var designation: js.UndefOr[js.Array[ExpansionProfileDesignationExcludeDesignation]] = js.undefined
 }
 object ExpansionProfileDesignationExclude {
   

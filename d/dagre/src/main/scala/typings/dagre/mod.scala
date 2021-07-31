@@ -10,10 +10,13 @@ import typings.dagre.dagreStrings.r
 import typings.dagre.mod.graphlib.Graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dagre", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object graphlib {
     
@@ -79,9 +82,9 @@ object mod {
       def setEdge(params: Edge, value: String): Graph[T] = js.native
       def setEdge(params: Edge, value: StringDictionary[js.Any]): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String): Graph[T] = js.native
-      def setEdge(sourceId: String, targetId: String, value: js.UndefOr[scala.Nothing], name: String): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String, value: String): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String, value: String, name: String): Graph[T] = js.native
+      def setEdge(sourceId: String, targetId: String, value: Unit, name: String): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String, value: Label): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String, value: Label, name: String): Graph[T] = js.native
       
@@ -101,114 +104,94 @@ object mod {
     
     object alg {
       
-      @JSImport("dagre", "graphlib.alg.components")
+      @JSImport("dagre", "graphlib.alg")
       @js.native
-      def components(graph: Graph[js.Object]): js.Array[js.Array[String]] = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("dagre", "graphlib.alg.dijkstra")
-      @js.native
-      def dijkstra(graph: Graph[js.Object], source: String): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.dijkstra")
-      @js.native
-      def dijkstra(graph: Graph[js.Object], source: String, weightFn: js.UndefOr[scala.Nothing], edgeFn: EdgeFn): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.dijkstra")
-      @js.native
-      def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.dijkstra")
-      @js.native
-      def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
+      @scala.inline
+      def components(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("components")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
       
-      @JSImport("dagre", "graphlib.alg.dijkstraAll")
-      @js.native
-      def dijkstraAll(graph: Graph[js.Object]): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.dijkstraAll")
-      @js.native
-      def dijkstraAll(graph: Graph[js.Object], weightFn: js.UndefOr[scala.Nothing], edgeFn: EdgeFn): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.dijkstraAll")
-      @js.native
-      def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.dijkstraAll")
-      @js.native
-      def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
+      @scala.inline
+      def dijkstra(graph: Graph[js.Object], source: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def dijkstra(graph: Graph[js.Object], source: String, weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("dagre", "graphlib.alg.findCycles")
-      @js.native
-      def findCycles(graph: Graph[js.Object]): js.Array[js.Array[String]] = js.native
+      @scala.inline
+      def dijkstraAll(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def dijkstraAll(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("dagre", "graphlib.alg.floydWarchall")
-      @js.native
-      def floydWarchall(graph: Graph[js.Object]): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.floydWarchall")
-      @js.native
-      def floydWarchall(graph: Graph[js.Object], weightFn: js.UndefOr[scala.Nothing], edgeFn: EdgeFn): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.floydWarchall")
-      @js.native
-      def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn): js.Any = js.native
-      @JSImport("dagre", "graphlib.alg.floydWarchall")
-      @js.native
-      def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
+      @scala.inline
+      def findCycles(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findCycles")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
       
-      @JSImport("dagre", "graphlib.alg.isAcyclic")
-      @js.native
-      def isAcyclic(graph: Graph[js.Object]): Boolean = js.native
+      @scala.inline
+      def floydWarchall(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def floydWarchall(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("dagre", "graphlib.alg.postorder")
-      @js.native
-      def postorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = js.native
-      @JSImport("dagre", "graphlib.alg.postorder")
-      @js.native
-      def postorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = js.native
+      @scala.inline
+      def isAcyclic(graph: Graph[js.Object]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAcyclic")(graph.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSImport("dagre", "graphlib.alg.preorder")
-      @js.native
-      def preorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = js.native
-      @JSImport("dagre", "graphlib.alg.preorder")
-      @js.native
-      def preorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = js.native
+      @scala.inline
+      def postorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      @scala.inline
+      def postorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       
-      @JSImport("dagre", "graphlib.alg.prim")
-      @js.native
-      def prim[T](graph: Graph[T]): Graph[T] = js.native
-      @JSImport("dagre", "graphlib.alg.prim")
-      @js.native
-      def prim[T](graph: Graph[T], weightFn: WeightFn): Graph[T] = js.native
+      @scala.inline
+      def preorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("preorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      @scala.inline
+      def preorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("preorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       
-      @JSImport("dagre", "graphlib.alg.tarjam")
-      @js.native
-      def tarjam(graph: Graph[js.Object]): js.Array[js.Array[String]] = js.native
+      @scala.inline
+      def prim[T](graph: Graph[T]): Graph[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prim")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[T]]
+      @scala.inline
+      def prim[T](graph: Graph[T], weightFn: WeightFn): Graph[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("prim")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[Graph[T]]
       
-      @JSImport("dagre", "graphlib.alg.topsort")
-      @js.native
-      def topsort(graph: Graph[js.Object]): js.Array[String] = js.native
+      @scala.inline
+      def tarjam(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tarjam")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+      
+      @scala.inline
+      def topsort(graph: Graph[js.Object]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("topsort")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     }
     
     object json {
       
-      @JSImport("dagre", "graphlib.json.read")
+      @JSImport("dagre", "graphlib.json")
       @js.native
-      def read(graph: js.Any): Graph[js.Object] = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("dagre", "graphlib.json.write")
-      @js.native
-      def write(graph: Graph[js.Object]): js.Any = js.native
+      @scala.inline
+      def read(graph: js.Any): Graph[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[js.Object]]
+      
+      @scala.inline
+      def write(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     }
   }
   
-  @JSImport("dagre", "layout")
-  @js.native
-  def layout(graph: Graph[js.Object]): Unit = js.native
-  @JSImport("dagre", "layout")
-  @js.native
-  def layout(graph: Graph[js.Object], layout: GraphLabel with NodeConfig with EdgeConfig): Unit = js.native
+  @scala.inline
+  def layout(graph: Graph[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def layout(graph: Graph[js.Object], layout: GraphLabel & NodeConfig & EdgeConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Edge extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var v: String = js.native
+    var v: String
     
-    var w: String = js.native
+    var w: String
   }
   object Edge {
     
@@ -235,20 +218,19 @@ object mod {
     }
   }
   
-  @js.native
   trait EdgeConfig extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var labeloffest: js.UndefOr[Double] = js.native
+    var labeloffest: js.UndefOr[Double] = js.undefined
     
-    var lablepos: js.UndefOr[l | c | r] = js.native
+    var lablepos: js.UndefOr[l | c | r] = js.undefined
     
-    var minlen: js.UndefOr[Double] = js.native
+    var minlen: js.UndefOr[Double] = js.undefined
     
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object EdgeConfig {
     
@@ -301,11 +283,11 @@ object mod {
   
   type EdgeFn = js.Function1[/* outNodeName */ String, js.Array[GraphEdge]]
   
-  @js.native
   trait GraphEdge
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var points: js.Array[X] = js.native
+    var points: js.Array[X]
   }
   object GraphEdge {
     
@@ -326,32 +308,31 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphLabel extends StObject {
     
-    var acyclicer: js.UndefOr[String] = js.native
+    var acyclicer: js.UndefOr[String] = js.undefined
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var compound: js.UndefOr[Boolean] = js.native
+    var compound: js.UndefOr[Boolean] = js.undefined
     
-    var edgesep: js.UndefOr[Double] = js.native
+    var edgesep: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var marginx: js.UndefOr[Double] = js.native
+    var marginx: js.UndefOr[Double] = js.undefined
     
-    var marginy: js.UndefOr[Double] = js.native
+    var marginy: js.UndefOr[Double] = js.undefined
     
-    var nodesep: js.UndefOr[Double] = js.native
+    var nodesep: js.UndefOr[Double] = js.undefined
     
-    var rankdir: js.UndefOr[String] = js.native
+    var rankdir: js.UndefOr[String] = js.undefined
     
-    var ranker: js.UndefOr[String] = js.native
+    var ranker: js.UndefOr[String] = js.undefined
     
-    var ranksep: js.UndefOr[Double] = js.native
+    var ranksep: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object GraphLabel {
     
@@ -440,14 +421,13 @@ object mod {
   
   type Label = StringDictionary[js.Any]
   
-  type Node[T] = T with Class
+  type Node[T] = T & Class
   
-  @js.native
   trait NodeConfig extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object NodeConfig {
     

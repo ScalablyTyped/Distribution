@@ -2,29 +2,29 @@ package typings.senchaTouch.Ext.draw.sprite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IText extends ISprite {
+trait IText
+  extends StObject
+     with ISprite {
   
   /** [Config Option] (String) */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var fontSize: js.UndefOr[js.Any] = js.native
+  var fontSize: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var fontVariant: js.UndefOr[String] = js.native
+  var fontVariant: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
   /** [Method] Render method
     * @param surface Object
@@ -32,22 +32,24 @@ trait IText extends ISprite {
     * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
     */
   @JSName("render")
-  var render_IText: js.UndefOr[js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], _]] = js.native
+  var render_IText: js.UndefOr[
+    js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var textBaseline: js.UndefOr[String] = js.native
+  var textBaseline: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object IText {
   
@@ -97,7 +99,7 @@ object IText {
     def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

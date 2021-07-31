@@ -2,19 +2,17 @@ package typings.breeze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowConcurrentSaves extends StObject {
   
-  var allowConcurrentSaves: js.UndefOr[Boolean] = js.native
+  var allowConcurrentSaves: js.UndefOr[Boolean] = js.undefined
   
-  var dataService: js.UndefOr[typings.breeze.breeze.DataService] = js.native
+  var dataService: js.UndefOr[typings.breeze.breeze.DataService] = js.undefined
   
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
-  var tag: js.UndefOr[js.Any] = js.native
+  var tag: js.UndefOr[js.Any] = js.undefined
 }
 object AllowConcurrentSaves {
   

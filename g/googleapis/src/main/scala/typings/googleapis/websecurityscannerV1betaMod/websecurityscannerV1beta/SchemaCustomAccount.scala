@@ -2,31 +2,29 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes authentication configuration that uses a custom account.
   */
-@js.native
 trait SchemaCustomAccount extends StObject {
   
   /**
     * Required. The login form URL of the website.
     */
-  var loginUrl: js.UndefOr[String] = js.native
+  var loginUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Input only. Required. The password of the custom account. The credential
     * is stored encrypted and not returned in any response nor included in
     * audit logs.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The user name of the custom account.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomAccount {
   

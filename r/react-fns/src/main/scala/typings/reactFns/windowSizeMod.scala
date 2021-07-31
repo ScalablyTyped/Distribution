@@ -7,21 +7,24 @@ import typings.reactFns.windowSizeWindowSizeMod.WindowSizeConfig
 import typings.reactFns.windowSizeWindowSizeMod.WindowSizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowSizeMod {
+  
+  @JSImport("react-fns/dist/WindowSize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-fns/dist/WindowSize", "WindowSize")
   @js.native
   class WindowSize protected ()
     extends typings.reactFns.windowSizeWindowSizeMod.WindowSize {
-    def this(props: WindowSizeConfig with SharedRenderProps[WindowSizeProps]) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WindowSizeConfig with SharedRenderProps[WindowSizeProps], context: js.Any) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: js.Any) = this()
   }
   /* static members */
   object WindowSize {
@@ -37,7 +40,6 @@ object windowSizeMod {
     def defaultProps_=(x: PartialWindowSizeConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-fns/dist/WindowSize", "withWindowSize")
-  @js.native
-  def withWindowSize[Props](Component: ComponentType[Props with WindowSizeProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withWindowSize[Props](Component: ComponentType[Props & WindowSizeProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWindowSize")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

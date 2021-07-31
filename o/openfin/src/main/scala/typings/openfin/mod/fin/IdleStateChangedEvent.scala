@@ -4,32 +4,30 @@ import typings.openfin.openfinStrings.`idle-state-changed`
 import typings.openfin.openfinStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdleStateChangedEvent extends StObject {
   
   /**
     * How long in milliseconds since the user has been idle.
     */
-  var elapsedTime: Double = js.native
+  var elapsedTime: Double
   
   /**
     * true when the user is idle,false when the user has returned;
     */
-  var isIdle: Boolean = js.native
+  var isIdle: Boolean
   
-  var topic: system = js.native
+  var topic: system
   
-  var `type`: `idle-state-changed` = js.native
+  var `type`: `idle-state-changed`
 }
 object IdleStateChangedEvent {
   
   @scala.inline
-  def apply(elapsedTime: Double, isIdle: Boolean, topic: system, `type`: `idle-state-changed`): IdleStateChangedEvent = {
-    val __obj = js.Dynamic.literal(elapsedTime = elapsedTime.asInstanceOf[js.Any], isIdle = isIdle.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(elapsedTime: Double, isIdle: Boolean): IdleStateChangedEvent = {
+    val __obj = js.Dynamic.literal(elapsedTime = elapsedTime.asInstanceOf[js.Any], isIdle = isIdle.asInstanceOf[js.Any], topic = "system")
+    __obj.updateDynamic("type")("idle-state-changed")
     __obj.asInstanceOf[IdleStateChangedEvent]
   }
   

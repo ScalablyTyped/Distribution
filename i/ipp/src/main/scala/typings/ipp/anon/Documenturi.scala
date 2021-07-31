@@ -4,35 +4,33 @@ import typings.ipp.mod.CharacterSet
 import typings.ipp.mod.MimeMediaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Documenturi extends StObject {
   
-  var `attributes-charset`: js.UndefOr[CharacterSet] = js.native
+  var `attributes-charset`: js.UndefOr[CharacterSet] = js.undefined
   
-  var `attributes-natural-language`: js.UndefOr[String] = js.native
+  var `attributes-natural-language`: js.UndefOr[String] = js.undefined
   
-  var compression: js.UndefOr[typings.ipp.mod.Compression] = js.native
+  var compression: js.UndefOr[typings.ipp.mod.Compression] = js.undefined
   
-  var `document-format`: js.UndefOr[MimeMediaType] = js.native
+  var `document-format`: js.UndefOr[MimeMediaType] = js.undefined
   
-  var `document-name`: js.UndefOr[String] = js.native
+  var `document-name`: js.UndefOr[String] = js.undefined
   
-  var `document-natural-language`: js.UndefOr[String] = js.native
+  var `document-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `document-uri`: String = js.native
+  var `document-uri`: String
   
-  var `job-id`: js.UndefOr[Double] = js.native
+  var `job-id`: js.UndefOr[Double] = js.undefined
   
-  var `job-uri`: js.UndefOr[String] = js.native
+  var `job-uri`: js.UndefOr[String] = js.undefined
   
-  var `last-document`: Boolean = js.native
+  var `last-document`: Boolean
   
-  var `printer-uri`: js.UndefOr[String] = js.native
+  var `printer-uri`: js.UndefOr[String] = js.undefined
   
-  var `requesting-user-name`: String = js.native
+  var `requesting-user-name`: String
 }
 object Documenturi {
   

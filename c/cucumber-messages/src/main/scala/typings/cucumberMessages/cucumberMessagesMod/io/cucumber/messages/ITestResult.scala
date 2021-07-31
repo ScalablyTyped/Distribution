@@ -3,24 +3,22 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestResult.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestResult. */
-@js.native
 trait ITestResult extends StObject {
   
   /** TestResult duration */
-  var duration: js.UndefOr[IDuration | Null] = js.native
+  var duration: js.UndefOr[IDuration | Null] = js.undefined
   
   /** TestResult message */
-  var message: js.UndefOr[String | Null] = js.native
+  var message: js.UndefOr[String | Null] = js.undefined
   
   /** TestResult status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
   
   /** TestResult willBeRetried */
-  var willBeRetried: js.UndefOr[Boolean | Null] = js.native
+  var willBeRetried: js.UndefOr[Boolean | Null] = js.undefined
 }
 object ITestResult {
   

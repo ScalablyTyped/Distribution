@@ -5,27 +5,29 @@ import typings.typedGithubApi.typedGithubApiStrings.`thor-preview`
 import typings.typedGithubApi.typedGithubApiStrings.v3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiFetchMod {
   
-  @JSImport("typed-github-api/dist/api-fetch", "getAllPagesAsync")
+  @JSImport("typed-github-api/dist/api-fetch", JSImport.Namespace)
   @js.native
-  def getAllPagesAsync[T](uri: String, options: Options): js.Promise[js.Array[T] | Null] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typed-github-api/dist/api-fetch", "getAsync")
-  @js.native
-  def getAsync[T](uri: String, options: Options): js.Promise[Response[T] | Null] = js.native
+  @scala.inline
+  def getAllPagesAsync[T](uri: String, options: Options): js.Promise[js.Array[T] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllPagesAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[T] | Null]]
   
-  @js.native
-  trait Options extends OptionsOrRef {
+  @scala.inline
+  def getAsync[T](uri: String, options: Options): js.Promise[Response[T] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAsync")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response[T] | Null]]
+  
+  trait Options
+    extends StObject
+       with OptionsOrRef {
     
-    var oAuthToken: js.UndefOr[String] = js.native
+    var oAuthToken: js.UndefOr[String] = js.undefined
     
-    var userAgent: String = js.native
+    var userAgent: String
     
-    var version: js.UndefOr[v3 | `thor-preview`] = js.native
+    var version: js.UndefOr[v3 | `thor-preview`] = js.undefined
   }
   object Options {
     
@@ -55,12 +57,11 @@ object apiFetchMod {
     }
   }
   
-  @js.native
   trait Response[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var nextLink: js.UndefOr[String] = js.native
+    var nextLink: js.UndefOr[String] = js.undefined
   }
   object Response {
     
@@ -71,7 +72,7 @@ object apiFetchMod {
     }
     
     @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
+    implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

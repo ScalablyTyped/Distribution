@@ -3,7 +3,6 @@ package typings.reactNative.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "SwipeableListView")
@@ -20,7 +19,10 @@ class SwipeableListView protected ()
 /* static members */
 object SwipeableListView {
   
-  @JSImport("react-native", "SwipeableListView.getNewDataSource")
+  @JSImport("react-native", "SwipeableListView")
   @js.native
-  def getNewDataSource(): SwipeableListViewDataSource = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getNewDataSource(): SwipeableListViewDataSource = ^.asInstanceOf[js.Dynamic].applyDynamic("getNewDataSource")().asInstanceOf[SwipeableListViewDataSource]
 }

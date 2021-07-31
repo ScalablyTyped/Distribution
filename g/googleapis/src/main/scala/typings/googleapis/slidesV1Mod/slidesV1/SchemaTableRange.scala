@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,23 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * location = (0, 0), row span = 3 and column span = 2 specifies the following
   * cells:        x     x       [ x    x    x ]
   */
-@js.native
 trait SchemaTableRange extends StObject {
   
   /**
     * The column span of the table range.
     */
-  var columnSpan: js.UndefOr[Double] = js.native
+  var columnSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * The starting location of the table range.
     */
-  var location: js.UndefOr[SchemaTableCellLocation] = js.native
+  var location: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The row span of the table range.
     */
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
 }
 object SchemaTableRange {
   

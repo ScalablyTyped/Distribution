@@ -10,20 +10,18 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/ClickAwayListener.ClickAwayListenerProps> */
-@js.native
 trait PartialClickAwayListenerP extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.native
+  var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.undefined
   
-  var onClickAway: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.native
+  var onClickAway: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
   
-  var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.native
+  var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.undefined
 }
 object PartialClickAwayListenerP {
   

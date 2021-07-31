@@ -4,7 +4,6 @@ import typings.angularCompiler.compileMetadataMod.CompileTypeSummary
 import typings.angularCompiler.coreMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcSummaryResolverMod {
@@ -45,14 +44,13 @@ object srcSummaryResolverMod {
     def toSummaryFileName(fileName: String, referringSrcFileName: String): String = js.native
   }
   
-  @js.native
   trait Summary[T] extends StObject {
     
-    var metadata: js.Any = js.native
+    var metadata: js.Any
     
-    var symbol: T = js.native
+    var symbol: T
     
-    var `type`: js.UndefOr[CompileTypeSummary] = js.native
+    var `type`: js.UndefOr[CompileTypeSummary] = js.undefined
   }
   object Summary {
     
@@ -63,7 +61,7 @@ object srcSummaryResolverMod {
     }
     
     @scala.inline
-    implicit class SummaryMutableBuilder[Self <: Summary[_], T] (val x: Self with Summary[T]) extends AnyVal {
+    implicit class SummaryMutableBuilder[Self <: Summary[?], T] (val x: Self & Summary[T]) extends AnyVal {
       
       @scala.inline
       def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])

@@ -2,14 +2,12 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An HttpRouteRule specifies how to match an HTTP request and the
   * corresponding routing action that load balancing proxies will perform.
   */
-@js.native
 trait SchemaHttpRouteRule extends StObject {
   
   /**
@@ -18,9 +16,9 @@ trait SchemaHttpRouteRule extends StObject {
     * are applied before the matching pathMatchers[].headerAction and after
     * pathMatchers[].routeRules[].routeAction.weightedBackendService.backendServiceWeightAction[].headerAction
     */
-  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.native
+  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.undefined
   
-  var matchRules: js.UndefOr[js.Array[SchemaHttpRouteRuleMatch]] = js.native
+  var matchRules: js.UndefOr[js.Array[SchemaHttpRouteRuleMatch]] = js.undefined
   
   /**
     * In response to a matching matchRule, the load balancer performs advanced
@@ -30,14 +28,14 @@ trait SchemaHttpRouteRule extends StObject {
     * service is set, routeAction cannot contain any  weightedBackendServices.
     * Only one of routeAction or urlRedirect must be set.
     */
-  var routeAction: js.UndefOr[SchemaHttpRouteAction] = js.native
+  var routeAction: js.UndefOr[SchemaHttpRouteAction] = js.undefined
   
   /**
     * When this rule is matched, the request is redirected to a URL specified
     * by urlRedirect. If urlRedirect is specified, service or routeAction must
     * not be set.
     */
-  var urlRedirect: js.UndefOr[SchemaHttpRedirectAction] = js.native
+  var urlRedirect: js.UndefOr[SchemaHttpRedirectAction] = js.undefined
 }
 object SchemaHttpRouteRule {
   

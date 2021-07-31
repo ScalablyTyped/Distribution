@@ -2,19 +2,27 @@ package typings.smartFoxServer.global.SFS2X.Requests
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.MessageRecipientMode")
 @js.native
 class MessageRecipientMode protected ()
-  extends typings.smartFoxServer.SFS2X.Requests.MessageRecipientMode {
+  extends StObject
+     with typings.smartFoxServer.SFS2X.Requests.MessageRecipientMode {
   /**
     * Creates a new MessageRecipientMode instance.
     * @param {number} mode   One of the costants contained in this class, describing the recipient mode.
     * @param {any}    target The moderator/administrator message recipient/s, according to the selected recipient mode.
     */
   def this(mode: Double, target: js.Any) = this()
+  
+  /** @type {number} Returns the selected recipient mode. */
+  /* CompleteClass */
+  var mode: Double = js.native
+  
+  /** @type {any} Returns the moderator/administrator message target, according to the selected recipient mode. */
+  /* CompleteClass */
+  var target: js.Any = js.native
 }
 /* static members */
 object MessageRecipientMode {

@@ -2,43 +2,41 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnpackagedExtensionData extends StObject {
   
-  var categories: js.Array[String] = js.native
+  var categories: js.Array[String]
   
-  var description: String = js.native
+  var description: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var draftId: String = js.native
+  var draftId: String
   
-  var extensionName: String = js.native
+  var extensionName: String
   
-  var installationTargets: js.Array[InstallationTarget] = js.native
+  var installationTargets: js.Array[InstallationTarget]
   
-  var isConvertedToMarkdown: Boolean = js.native
+  var isConvertedToMarkdown: Boolean
   
-  var pricingCategory: String = js.native
+  var pricingCategory: String
   
-  var product: String = js.native
+  var product: String
   
-  var publisherName: String = js.native
+  var publisherName: String
   
-  var qnAEnabled: Boolean = js.native
+  var qnAEnabled: Boolean
   
-  var referralUrl: String = js.native
+  var referralUrl: String
   
-  var repositoryUrl: String = js.native
+  var repositoryUrl: String
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var version: String = js.native
+  var version: String
   
-  var vsixId: String = js.native
+  var vsixId: String
 }
 object UnpackagedExtensionData {
   

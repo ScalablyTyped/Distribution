@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PanelBarContentLoadEvent extends PanelBarEvent {
+trait PanelBarContentLoadEvent
+  extends StObject
+     with PanelBarEvent {
   
-  var contentElement: js.UndefOr[Element] = js.native
+  var contentElement: js.UndefOr[Element] = js.undefined
   
-  var item: js.UndefOr[Element] = js.native
+  var item: js.UndefOr[Element] = js.undefined
 }
 object PanelBarContentLoadEvent {
   

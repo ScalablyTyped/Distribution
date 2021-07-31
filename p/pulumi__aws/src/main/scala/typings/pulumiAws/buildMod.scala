@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildMod {
@@ -60,6 +59,10 @@ object buildMod {
   /* static members */
   object Build {
     
+    @JSImport("@pulumi/aws/gamelift/build", "Build")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Build resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -69,55 +72,49 @@ object buildMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/gamelift/build", "Build.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Build = js.native
-    @JSImport("@pulumi/aws/gamelift/build", "Build.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Build = js.native
-    @JSImport("@pulumi/aws/gamelift/build", "Build.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BuildState): Build = js.native
-    @JSImport("@pulumi/aws/gamelift/build", "Build.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BuildState, opts: CustomResourceOptions): Build = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Build = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Build]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Build = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Build]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BuildState): Build = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Build]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BuildState, opts: CustomResourceOptions): Build = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Build]
     
     /**
       * Returns true if the given object is an instance of Build.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/gamelift/build", "Build.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/build.Build */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/build.Build */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/gamelift/build.Build */ Boolean]
   }
   
-  @js.native
   trait BuildArgs extends StObject {
     
     /**
       * Name of the build
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Operating system that the game server binaries are built to run on. e.g. `WINDOWS_2012` or `AMAZON_LINUX`.
       */
-    val operatingSystem: Input[String] = js.native
+    val operatingSystem: Input[String]
     
     /**
       * Information indicating where your game build files are stored. See below.
       */
-    val storageLocation: Input[typings.pulumiAws.inputMod.gamelift.BuildStorageLocation] = js.native
+    val storageLocation: Input[typings.pulumiAws.inputMod.gamelift.BuildStorageLocation]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Version that is associated with this build.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object BuildArgs {
     
@@ -159,38 +156,37 @@ object buildMod {
     }
   }
   
-  @js.native
   trait BuildState extends StObject {
     
     /**
       * Gamelift Build ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the build
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Operating system that the game server binaries are built to run on. e.g. `WINDOWS_2012` or `AMAZON_LINUX`.
       */
-    val operatingSystem: js.UndefOr[Input[String]] = js.native
+    val operatingSystem: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information indicating where your game build files are stored. See below.
       */
-    val storageLocation: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.BuildStorageLocation]] = js.native
+    val storageLocation: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.BuildStorageLocation]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Version that is associated with this build.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object BuildState {
     

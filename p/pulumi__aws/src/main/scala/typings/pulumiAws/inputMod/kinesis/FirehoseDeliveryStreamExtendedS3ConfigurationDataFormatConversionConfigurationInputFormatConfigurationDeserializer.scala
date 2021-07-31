@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     Input[
       FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Nested argument that specifies the OpenX SerDe. More details below.
@@ -25,7 +23,7 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     Input[
       FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer {
   

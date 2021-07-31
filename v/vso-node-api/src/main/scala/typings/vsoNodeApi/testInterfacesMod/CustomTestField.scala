@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomTestField extends StObject {
   
-  var fieldName: String = js.native
+  var fieldName: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object CustomTestField {
   

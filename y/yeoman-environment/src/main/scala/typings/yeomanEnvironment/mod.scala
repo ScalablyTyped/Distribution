@@ -17,7 +17,6 @@ import typings.yeomanGenerator.mod.GeneratorConstructor
 import typings.yeomanGenerator.mod.GeneratorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -47,16 +46,19 @@ object mod {
   class ^[TOptions /* <: Options */] () extends Environment[TOptions] {
     def this(args: String) = this()
     def this(args: js.Array[String]) = this()
-    def this(args: js.UndefOr[scala.Nothing], opts: TOptions) = this()
     def this(args: String, opts: TOptions) = this()
     def this(args: js.Array[String], opts: TOptions) = this()
-    def this(args: js.UndefOr[scala.Nothing], opts: TOptions, adapter: Adapter) = this()
-    def this(args: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], adapter: Adapter) = this()
+    def this(args: Unit, opts: TOptions) = this()
     def this(args: String, opts: TOptions, adapter: Adapter) = this()
-    def this(args: String, opts: js.UndefOr[scala.Nothing], adapter: Adapter) = this()
+    def this(args: String, opts: Unit, adapter: Adapter) = this()
     def this(args: js.Array[String], opts: TOptions, adapter: Adapter) = this()
-    def this(args: js.Array[String], opts: js.UndefOr[scala.Nothing], adapter: Adapter) = this()
+    def this(args: js.Array[String], opts: Unit, adapter: Adapter) = this()
+    def this(args: Unit, opts: TOptions, adapter: Adapter) = this()
+    def this(args: Unit, opts: Unit, adapter: Adapter) = this()
   }
+  @JSImport("yeoman-environment", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Createas a new `Environment` instance.
@@ -66,42 +68,30 @@ object mod {
     * @param adapter A `TerminalAdapter` instance for handling input/output.
     */
   /* static member */
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: js.UndefOr[scala.Nothing], opts: TOptions): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: js.UndefOr[scala.Nothing], opts: TOptions, adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: String): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: String, opts: TOptions): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: String, opts: js.UndefOr[scala.Nothing], adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: js.Array[String]): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnv")
-  @js.native
-  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: js.UndefOr[scala.Nothing], adapter: Adapter): Environment[TOptions] = js.native
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")().asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: String): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: String, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: String, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: js.Array[String]): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: js.Array[String], opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: Unit, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: Unit, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnv[TOptions /* <: Options */](args: Unit, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
   
   /**
     * Creates a new `Environment` instance with the specified `version`.
@@ -112,47 +102,30 @@ object mod {
     * @param adapter A `TerminalAdapter` instance for handling input/output.
     */
   /* static member */
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.UndefOr[scala.Nothing], opts: TOptions): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.UndefOr[scala.Nothing], opts: TOptions, adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](
-    version: String,
-    args: js.UndefOr[scala.Nothing],
-    opts: js.UndefOr[scala.Nothing],
-    adapter: Adapter
-  ): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: js.UndefOr[scala.Nothing], adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String]): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = js.native
-  @JSImport("yeoman-environment", "createEnvWithVersion")
-  @js.native
-  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: js.UndefOr[scala.Nothing], adapter: Adapter): Environment[TOptions] = js.native
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: String, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String]): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: js.Array[String], opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: TOptions): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: TOptions, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
+  @scala.inline
+  def createEnvWithVersion[TOptions /* <: Options */](version: String, args: Unit, opts: Unit, adapter: Adapter): Environment[TOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[Environment[TOptions]]
   
   /**
     * Makes sure the Environment present expected methods if an old version is passed to a Generator.
@@ -161,9 +134,8 @@ object mod {
     * @returns The updated `env`.
     */
   /* static member */
-  @JSImport("yeoman-environment", "enforceUpdate")
-  @js.native
-  def enforceUpdate[TEnv /* <: Environment[Options] */](env: TEnv): TEnv = js.native
+  @scala.inline
+  def enforceUpdate[TEnv /* <: Environment[Options] */](env: TEnv): TEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceUpdate")(env.asInstanceOf[js.Any]).asInstanceOf[TEnv]
   
   /**
     * Invokes a lookup for a specific generator.
@@ -172,12 +144,10 @@ object mod {
     * @param options Options for searching the generator.
     */
   /* static member */
-  @JSImport("yeoman-environment", "lookupGenerator")
-  @js.native
-  def lookupGenerator(namespace: String): String = js.native
-  @JSImport("yeoman-environment", "lookupGenerator")
-  @js.native
-  def lookupGenerator(namespace: String, options: GeneratorLookupOptions): String = js.native
+  @scala.inline
+  def lookupGenerator(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def lookupGenerator(namespace: String, options: GeneratorLookupOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Converts a generator namespace to its name.
@@ -185,9 +155,8 @@ object mod {
     * @param namespace The generator namespace.
     */
   /* static member */
-  @JSImport("yeoman-environment", "namespaceToName")
-  @js.native
-  def namespaceToName(namespace: String): String = js.native
+  @scala.inline
+  def namespaceToName(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespaceToName")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * The utilities of the module.
@@ -199,9 +168,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("yeoman-environment", "util.duplicateEnv")
-    @js.native
-    def duplicateEnv(initialEnv: typings.yeomanEnvironment.mod.^[Options]): typings.yeomanEnvironment.mod.^[Options] = js.native
+    @scala.inline
+    def duplicateEnv(initialEnv: typings.yeomanEnvironment.mod.^[Options]): typings.yeomanEnvironment.mod.^[Options] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicateEnv")(initialEnv.asInstanceOf[js.Any]).asInstanceOf[typings.yeomanEnvironment.mod.^[Options]]
     
     @JSImport("yeoman-environment", "util.log")
     @js.native
@@ -220,18 +188,17 @@ object mod {
   /**
     * Represents an alias.
     */
-  @js.native
   trait Alias extends StObject {
     
     /**
       * The pattern to match.
       */
-    var `match`: RegExp = js.native
+    var `match`: RegExp
     
     /**
       * The replacement of the `match`.
       */
-    var value: String = js.native
+    var value: String
   }
   object Alias {
     
@@ -501,7 +468,7 @@ object mod {
       * @returns A list of generators.
       */
     def lookup(): js.Array[LookupGeneratorMeta] = js.native
-    def lookup(options: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ Null | Error, Unit]): js.Array[LookupGeneratorMeta] = js.native
+    def lookup(options: Unit, cb: js.Function1[/* err */ Null | Error, Unit]): js.Array[LookupGeneratorMeta] = js.native
     def lookup(options: LookupOptions): js.Array[LookupGeneratorMeta] = js.native
     def lookup(options: LookupOptions, cb: js.Function1[/* err */ Null | Error, Unit]): js.Array[LookupGeneratorMeta] = js.native
     
@@ -546,9 +513,9 @@ object mod {
       * @param packagePath The path to the npm package of the generator.
       */
     def register(name: String): this.type = js.native
-    def register(name: String, namespace: js.UndefOr[scala.Nothing], packagePath: String): this.type = js.native
     def register(name: String, namespace: String): this.type = js.native
     def register(name: String, namespace: String, packagePath: String): this.type = js.native
+    def register(name: String, namespace: Unit, packagePath: String): this.type = js.native
     
     /**
       * Registers a stubbed generator to this environment.
@@ -559,14 +526,9 @@ object mod {
       * @param packagePath The path to the npm package of the generator.
       */
     def registerStub(generator: GeneratorConstructor, namespace: String): this.type = js.native
-    def registerStub(
-      generator: GeneratorConstructor,
-      namespace: String,
-      resolved: js.UndefOr[scala.Nothing],
-      packagePath: String
-    ): this.type = js.native
     def registerStub(generator: GeneratorConstructor, namespace: String, resolved: String): this.type = js.native
     def registerStub(generator: GeneratorConstructor, namespace: String, resolved: String, packagePath: String): this.type = js.native
+    def registerStub(generator: GeneratorConstructor, namespace: String, resolved: Unit, packagePath: String): this.type = js.native
     
     /**
       * Resolves the path of the specified module.
@@ -639,18 +601,19 @@ object mod {
   /**
     * Provides options for generator-lookups.
     */
-  @js.native
-  trait GeneratorLookupOptions extends LookupOptionBase {
+  trait GeneratorLookupOptions
+    extends StObject
+       with LookupOptionBase {
     
     /**
       * A value indicating whether the path to the package should be returned instead of the path to the generator.
       */
-    var packagePath: js.UndefOr[Boolean] = js.native
+    var packagePath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether only one result should be returned.
       */
-    var singleResult: js.UndefOr[Boolean] = js.native
+    var singleResult: js.UndefOr[Boolean] = js.undefined
   }
   object GeneratorLookupOptions {
     
@@ -680,23 +643,22 @@ object mod {
   /**
     * Provides information about a generator.
     */
-  @js.native
   trait GeneratorMeta extends StObject {
     
     /**
       * The namespace of the generator.
       */
-    var namespace: String = js.native
+    var namespace: String
     
     /**
       * The path to the package containing the generator.
       */
-    var packagePath: String = js.native
+    var packagePath: String
     
     /**
       * The resolved path to the generator.
       */
-    var resolved: String = js.native
+    var resolved: String
   }
   object GeneratorMeta {
     
@@ -723,13 +685,12 @@ object mod {
   /**
     * Provides options for the `findGeneratorsIn` method.
     */
-  @js.native
   trait GeneratorsInOptions extends StObject {
     
     /**
       * The package-patterns to look for.
       */
-    var packagePatterns: js.UndefOr[js.Array[String]] = js.native
+    var packagePatterns: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GeneratorsInOptions {
     
@@ -756,18 +717,17 @@ object mod {
   /**
     * Provides options for instantiating a generator.
     */
-  @js.native
   trait InstantiateOptions[TOptions /* <: GeneratorOptions */] extends StObject {
     
     /**
       * The arguments to pass to the generator.
       */
-    var arguments: js.UndefOr[String | js.Array[String]] = js.native
+    var arguments: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The options for creating the generator.
       */
-    var options: js.UndefOr[TOptions] = js.native
+    var options: js.UndefOr[TOptions] = js.undefined
   }
   object InstantiateOptions {
     
@@ -778,7 +738,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class InstantiateOptionsMutableBuilder[Self <: InstantiateOptions[_], TOptions /* <: GeneratorOptions */] (val x: Self with InstantiateOptions[TOptions]) extends AnyVal {
+    implicit class InstantiateOptionsMutableBuilder[Self <: InstantiateOptions[?], TOptions /* <: GeneratorOptions */] (val x: Self & InstantiateOptions[TOptions]) extends AnyVal {
       
       @scala.inline
       def setArguments(value: String | js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
@@ -819,22 +779,22 @@ object mod {
       * Writes a log-message.
       */
     def apply(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Console['error']> is not an array type */ args: Parameters[js.Function1[/* repeated */ _, Unit]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Console['error']> is not an array type */ args: Parameters[js.Function1[/* repeated */ js.Any, Unit]]
     ): LoggerDefaultCategories = js.native
-    def apply(format: js.UndefOr[scala.Nothing], params: Record[String, _]): LoggerDefaultCategories = js.native
     def apply(format: String): LoggerDefaultCategories = js.native
-    def apply(format: String, params: Record[String, _]): LoggerDefaultCategories = js.native
+    def apply(format: String, params: Record[String, js.Any]): LoggerDefaultCategories = js.native
+    def apply(format: Unit, params: Record[String, js.Any]): LoggerDefaultCategories = js.native
     
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     
     var conflict: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         LoggerDefaultCategories
       ] = js.native
     
     var create: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         LoggerDefaultCategories
       ] = js.native
     
@@ -845,30 +805,30 @@ object mod {
       * Writes an error-message with a prepended cross mark.
       */
     def error(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): LoggerDefaultCategories = js.native
     
     def eventNames(): js.Array[String | js.Symbol] = js.native
     
     var force: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         LoggerDefaultCategories
       ] = js.native
     
     def getMaxListeners(): Double = js.native
     
     var identical: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         LoggerDefaultCategories
       ] = js.native
     
     var info: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         LoggerDefaultCategories
       ] = js.native
     
     var invoke: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         LoggerDefaultCategories
       ] = js.native
     
@@ -885,7 +845,7 @@ object mod {
       * Writes a success status with a check mark `✔`.
       */
     def ok(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): LoggerDefaultCategories = js.native
     
     def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -914,7 +874,7 @@ object mod {
     def setMaxListeners(n: Double): this.type = js.native
     
     var skip: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ _, /* repeated */ _, String]], 
+        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
         LoggerDefaultCategories
       ] = js.native
     
@@ -927,27 +887,28 @@ object mod {
       * Writes a log-message.
       */
     def write(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): LoggerDefaultCategories = js.native
     
     /**
       * Writes a log-message with an appended newline character.
       */
     def writeln(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ _, /* repeated */ _, String]]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
     ): LoggerDefaultCategories = js.native
   }
   
   /**
     * Provides information about a generator.
     */
-  @js.native
-  trait LookupGeneratorMeta extends GeneratorMeta {
+  trait LookupGeneratorMeta
+    extends StObject
+       with GeneratorMeta {
     
     /**
       * A value indicating whether the generator could be registered.
       */
-    var registered: Boolean = js.native
+    var registered: Boolean
   }
   object LookupGeneratorMeta {
     
@@ -968,13 +929,12 @@ object mod {
   /**
     * Provides options for lookups.
     */
-  @js.native
   trait LookupOptionBase extends StObject {
     
     /**
       * A value indicating whether globally installed packages should be ignored.
       */
-    var localOnly: js.UndefOr[Boolean] = js.native
+    var localOnly: js.UndefOr[Boolean] = js.undefined
   }
   object LookupOptionBase {
     
@@ -998,38 +958,39 @@ object mod {
   /**
     * Provides options for the `lookup` method.
     */
-  @js.native
-  trait LookupOptions extends LookupOptionBase {
+  trait LookupOptions
+    extends StObject
+       with LookupOptionBase {
     
     /**
       * The file-patterns to look for.
       */
-    var filePatterns: js.UndefOr[js.Array[String]] = js.native
+    var filePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The `deep` option to pass to `globby`.
       */
-    var globbyDeep: js.UndefOr[Double] = js.native
+    var globbyDeep: js.UndefOr[Double] = js.undefined
     
     /**
       * The repüository paths to look for generator packages.
       */
-    var npmPaths: js.UndefOr[js.Array[String]] = js.native
+    var npmPaths: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The paths to look for generators.
       */
-    var packagePaths: js.UndefOr[js.Array[String]] = js.native
+    var packagePaths: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The package patterns to look for.
       */
-    var packagePatterns: js.UndefOr[js.Array[String]] = js.native
+    var packagePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A value indicating whether the lookup should be stopped after finding the first result.
       */
-    var singleResult: js.UndefOr[Boolean] = js.native
+    var singleResult: js.UndefOr[Boolean] = js.undefined
   }
   object LookupOptions {
     
@@ -1095,13 +1056,14 @@ object mod {
   /**
     * Provides options for the `getNpmPaths` method.
     */
-  @js.native
-  trait NpmPathsOptions extends LookupOptionBase {
+  trait NpmPathsOptions
+    extends StObject
+       with LookupOptionBase {
     
     /**
       * A value indicating whether paths which don't end with a supported directory-name should be filtered (unless they are part of `NODE_PATH`).
       */
-    var filterPaths: js.UndefOr[Boolean] = js.native
+    var filterPaths: js.UndefOr[Boolean] = js.undefined
   }
   object NpmPathsOptions {
     
@@ -1125,9 +1087,9 @@ object mod {
   /**
     * Represents options for an `Environment`.
     */
-  @js.native
   trait Options
-    extends /**
+    extends StObject
+       with /**
     * Additional options.
     */
   /* key */ StringDictionary[js.Any] {
@@ -1135,7 +1097,7 @@ object mod {
     /**
       * The working-directory of the environment.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
   }
   object Options {
     

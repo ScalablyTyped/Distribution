@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,20 +12,32 @@ sealed trait SocialThreadAttributes extends StObject
 object SocialThreadAttributes extends StObject {
   
   @js.native
-  sealed trait canLock extends SocialThreadAttributes
+  sealed trait canLock
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait canReply extends SocialThreadAttributes
+  sealed trait canReply
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait isDigest extends SocialThreadAttributes
+  sealed trait isDigest
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait isLocked extends SocialThreadAttributes
+  sealed trait isLocked
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait none extends SocialThreadAttributes
+  sealed trait none
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait replyLimitReached extends SocialThreadAttributes
+  sealed trait replyLimitReached
+    extends StObject
+       with SocialThreadAttributes
 }

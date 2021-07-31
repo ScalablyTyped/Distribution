@@ -6,19 +6,19 @@ import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Typ
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.RequiredLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FieldPropertyMetadata {
   
-  @js.native
-  trait DateTimeMetadata extends Metadata {
+  trait DateTimeMetadata
+    extends StObject
+       with Metadata {
     
-    var Behavior: DateTimeFieldBehavior = js.native
+    var Behavior: DateTimeFieldBehavior
     
-    var Format: String = js.native
+    var Format: String
     
-    var ImeMode: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.ImeMode = js.native
+    var ImeMode: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.ImeMode
   }
   object DateTimeMetadata {
     
@@ -52,10 +52,11 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait DecimalNumberMetadata extends NumberMetadata {
+  trait DecimalNumberMetadata
+    extends StObject
+       with NumberMetadata {
     
-    var Precision: Double = js.native
+    var Precision: Double
   }
   object DecimalNumberMetadata {
     
@@ -84,10 +85,11 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait FloatingNumberMetadata extends NumberMetadata {
+  trait FloatingNumberMetadata
+    extends StObject
+       with NumberMetadata {
     
-    var Precision: Double = js.native
+    var Precision: Double
   }
   object FloatingNumberMetadata {
     
@@ -116,10 +118,11 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait LookupMetadata extends Metadata {
+  trait LookupMetadata
+    extends StObject
+       with Metadata {
     
-    var Targets: js.Array[String] = js.native
+    var Targets: js.Array[String]
   }
   object LookupMetadata {
     
@@ -148,20 +151,19 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var Description: String = js.native
+    var Description: String
     
-    var DisplayName: String = js.native
+    var DisplayName: String
     
-    var IsSecured: Boolean = js.native
+    var IsSecured: Boolean
     
-    var LogicalName: String = js.native
+    var LogicalName: String
     
-    var RequiredLevel: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.RequiredLevel = js.native
+    var RequiredLevel: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.RequiredLevel
     
-    var SourceType: Double = js.native
+    var SourceType: Double
   }
   object Metadata {
     
@@ -201,14 +203,15 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait NumberMetadata extends Metadata {
+  trait NumberMetadata
+    extends StObject
+       with Metadata {
     
-    var ImeMode: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.ImeMode = js.native
+    var ImeMode: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.ImeMode
     
-    var MaxValue: Double = js.native
+    var MaxValue: Double
     
-    var MinValue: Double = js.native
+    var MinValue: Double
   }
   object NumberMetadata {
     
@@ -242,12 +245,13 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait OptionSetMetadata extends Metadata {
+  trait OptionSetMetadata
+    extends StObject
+       with Metadata {
     
-    var DefaultValue: Double = js.native
+    var DefaultValue: Double
     
-    var Options: js.Array[OptionMetadata] = js.native
+    var Options: js.Array[OptionMetadata]
   }
   object OptionSetMetadata {
     
@@ -280,14 +284,15 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait StringMetadata extends Metadata {
+  trait StringMetadata
+    extends StObject
+       with Metadata {
     
-    var Format: String = js.native
+    var Format: String
     
-    var ImeMode: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.ImeMode = js.native
+    var ImeMode: typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.ImeMode
     
-    var MaxLength: Double = js.native
+    var MaxLength: Double
   }
   object StringMetadata {
     
@@ -321,12 +326,13 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait TwoOptionMetadata extends Metadata {
+  trait TwoOptionMetadata
+    extends StObject
+       with Metadata {
     
-    var DefaultValue: Boolean = js.native
+    var DefaultValue: Boolean
     
-    var Options: js.Tuple2[OptionMetadata, OptionMetadata] = js.native
+    var Options: js.Tuple2[OptionMetadata, OptionMetadata]
   }
   object TwoOptionMetadata {
     
@@ -356,14 +362,15 @@ object FieldPropertyMetadata {
     }
   }
   
-  @js.native
-  trait WholeNumberMetadata extends NumberMetadata {
+  trait WholeNumberMetadata
+    extends StObject
+       with NumberMetadata {
     
-    var Format: String = js.native
+    var Format: String
     
-    var LanguageByCode: js.UndefOr[Dictionary] = js.native
+    var LanguageByCode: js.UndefOr[Dictionary] = js.undefined
     
-    var TimeZoneByCode: js.UndefOr[Dictionary] = js.native
+    var TimeZoneByCode: js.UndefOr[Dictionary] = js.undefined
   }
   object WholeNumberMetadata {
     

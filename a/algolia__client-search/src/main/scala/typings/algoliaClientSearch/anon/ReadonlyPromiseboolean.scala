@@ -2,18 +2,16 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<boolean>> */
-@js.native
 trait ReadonlyPromiseboolean extends StObject {
   
-  def `catch`[TResult](): js.Promise[Boolean | TResult] = js.native
+  def `catch`[TResult](): js.Promise[Boolean | TResult]
   
-  def `finally`(): js.Promise[Boolean] = js.native
+  def `finally`(): js.Promise[Boolean]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseboolean {
   

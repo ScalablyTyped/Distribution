@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRoomsRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[ResultMax] = js.native
+  var MaxResults: js.UndefOr[ResultMax] = js.undefined
   
   /**
     * The member ID (user ID or bot ID).
     */
-  var MemberId: js.UndefOr[String] = js.native
+  var MemberId: js.UndefOr[String] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListRoomsRequest {
   

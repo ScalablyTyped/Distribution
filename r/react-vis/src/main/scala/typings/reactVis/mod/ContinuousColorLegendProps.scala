@@ -2,32 +2,30 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousColorLegendProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var endColor: js.UndefOr[String] = js.native
+  var endColor: js.UndefOr[String] = js.undefined
   
   // default: '#FF9833'
-  var endTitle: Double | String = js.native
+  var endTitle: Double | String
   
   // default: ''
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var midColor: js.UndefOr[String] = js.native
+  var midColor: js.UndefOr[String] = js.undefined
   
-  var midTitle: js.UndefOr[Double | String] = js.native
+  var midTitle: js.UndefOr[Double | String] = js.undefined
   
-  var startColor: js.UndefOr[String] = js.native
+  var startColor: js.UndefOr[String] = js.undefined
   
   // default: '#EF5D28'
-  var startTitle: Double | String = js.native
+  var startTitle: Double | String
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ContinuousColorLegendProps {
   

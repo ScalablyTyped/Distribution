@@ -11,8 +11,8 @@ Use this module to start and stop the V8 inspector manually and collect precise 
 | Full name          | collect-v8-coverage |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 60973937 |
+| # dependents       | 37 |
+| # downloads        | 161386726 |
 | # stars            | 0 |
 
 ## Links

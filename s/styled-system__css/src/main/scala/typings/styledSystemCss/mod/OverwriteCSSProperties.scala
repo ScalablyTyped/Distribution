@@ -2,10 +2,8 @@ package typings.styledSystemCss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverwriteCSSProperties extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait OverwriteCSSProperties extends StObject {
     */
   var boxShadow: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`font-weight`** CSS property specifies the weight (or boldness) of the font. The font weights available to you will depend on the `font-family` you are using. Some fonts are only
@@ -39,7 +37,7 @@ trait OverwriteCSSProperties extends StObject {
     */
   var fontWeight: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`z-index`** CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
@@ -54,7 +52,7 @@ trait OverwriteCSSProperties extends StObject {
     */
   var zIndex: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
-  ] = js.native
+  ] = js.undefined
 }
 object OverwriteCSSProperties {
   

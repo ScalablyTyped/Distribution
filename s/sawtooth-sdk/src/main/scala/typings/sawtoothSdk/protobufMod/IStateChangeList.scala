@@ -2,14 +2,12 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStateChangeList extends StObject {
   
   /** StateChangeList stateChanges */
-  var stateChanges: js.UndefOr[js.Array[IStateChange] | Null] = js.native
+  var stateChanges: js.UndefOr[js.Array[IStateChange] | Null] = js.undefined
 }
 object IStateChangeList {
   

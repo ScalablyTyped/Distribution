@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserContext extends StObject {
   
   /**
     * The user context token. It must be a JWT or a JSON token.
     */
-  var Token: js.UndefOr[typings.awsSdk.kendraMod.Token] = js.native
+  var Token: js.UndefOr[typings.awsSdk.kendraMod.Token] = js.undefined
 }
 object UserContext {
   

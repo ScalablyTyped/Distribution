@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mskGetClusterMod {
   
-  @JSImport("@pulumi/aws/msk/getCluster", "getCluster")
+  @JSImport("@pulumi/aws/msk/getCluster", JSImport.Namespace)
   @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/msk/getCluster", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  
   trait GetClusterArgs extends StObject {
     
     /**
       * Name of the cluster.
       */
-    val clusterName: String = js.native
+    val clusterName: String
     
     /**
       * Map of key-value pairs assigned to the cluster.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetClusterArgs {
     
@@ -51,50 +51,49 @@ object mskGetClusterMod {
     }
   }
   
-  @js.native
   trait GetClusterResult extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the MSK cluster.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * A comma separated list of one or more hostname:port pairs of Kafka brokers suitable to boostrap connectivity to the Kafka cluster.
       */
-    val bootstrapBrokers: String = js.native
+    val bootstrapBrokers: String
     
     /**
       * A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster.
       */
-    val bootstrapBrokersTls: String = js.native
+    val bootstrapBrokersTls: String
     
-    val clusterName: String = js.native
+    val clusterName: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Apache Kafka version.
       */
-    val kafkaVersion: String = js.native
+    val kafkaVersion: String
     
     /**
       * Number of broker nodes in the cluster.
       */
-    val numberOfBrokerNodes: Double = js.native
+    val numberOfBrokerNodes: Double
     
     /**
       * Map of key-value pairs assigned to the cluster.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
       */
-    val zookeeperConnectString: String = js.native
+    val zookeeperConnectString: String
   }
   object GetClusterResult {
     

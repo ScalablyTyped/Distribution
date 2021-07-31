@@ -7,14 +7,16 @@ import typings.arangodb.arangodbStrings.PLAINTEXT
 import typings.arangodb.arangodbStrings.`HMAC-SHA1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oauth1Mod {
   
+  @scala.inline
+  def apply(options: OAuth1Options): OAuth1Client = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OAuth1Client]
+  
   @JSImport("@arangodb/foxx/oauth1", JSImport.Namespace)
   @js.native
-  def apply(options: OAuth1Options): OAuth1Client = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait OAuth1Client extends StObject {
@@ -48,22 +50,21 @@ object oauth1Mod {
     def getAuthUrl(oauth_token: String, qs: StringDictionary[js.UndefOr[String]]): String = js.native
   }
   
-  @js.native
   trait OAuth1Options extends StObject {
     
-    var accessTokenEndpoint: String = js.native
+    var accessTokenEndpoint: String
     
-    var activeUserEndpoint: js.UndefOr[String] = js.native
+    var activeUserEndpoint: js.UndefOr[String] = js.undefined
     
-    var authEndpoint: String = js.native
+    var authEndpoint: String
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var requestTokenEndpoint: String = js.native
+    var requestTokenEndpoint: String
     
-    var signatureMethod: js.UndefOr[`HMAC-SHA1` | PLAINTEXT] = js.native
+    var signatureMethod: js.UndefOr[`HMAC-SHA1` | PLAINTEXT] = js.undefined
   }
   object OAuth1Options {
     

@@ -3,20 +3,20 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPrintItemListOptionDetails extends IPrintOptionDetails {
+trait IPrintItemListOptionDetails
+  extends StObject
+     with IPrintOptionDetails {
   
-  var items: IVectorView[_] = js.native
+  var items: IVectorView[js.Any]
 }
 object IPrintItemListOptionDetails {
   
   @scala.inline
   def apply(
     errorText: String,
-    items: IVectorView[_],
+    items: IVectorView[js.Any],
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,
@@ -31,6 +31,6 @@ object IPrintItemListOptionDetails {
   implicit class IPrintItemListOptionDetailsMutableBuilder[Self <: IPrintItemListOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setItems(value: IVectorView[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: IVectorView[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

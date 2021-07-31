@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.dataviz.map.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapClickEvent extends MapEvent {
+trait MapClickEvent
+  extends StObject
+     with MapEvent {
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 object MapClickEvent {
   

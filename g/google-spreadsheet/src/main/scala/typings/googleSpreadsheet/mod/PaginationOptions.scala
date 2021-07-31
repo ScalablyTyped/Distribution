@@ -2,15 +2,13 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationOptions extends StObject {
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var offset: Double = js.native
+  var offset: Double
 }
 object PaginationOptions {
   

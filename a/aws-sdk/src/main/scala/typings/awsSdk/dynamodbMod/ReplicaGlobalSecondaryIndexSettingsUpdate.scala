@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaGlobalSecondaryIndexSettingsUpdate extends StObject {
   
   /**
     * The name of the global secondary index. The name must be unique among all other indexes on this table.
     */
-  var IndexName: typings.awsSdk.dynamodbMod.IndexName = js.native
+  var IndexName: typings.awsSdk.dynamodbMod.IndexName
   
   /**
     * Auto scaling settings for managing a global secondary index replica's read capacity units.
     */
-  var ProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+  var ProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
   
   /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException.
     */
-  var ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 object ReplicaGlobalSecondaryIndexSettingsUpdate {
   

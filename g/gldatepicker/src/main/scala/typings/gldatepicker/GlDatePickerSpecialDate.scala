@@ -3,15 +3,15 @@ package typings.gldatepicker
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GlDatePickerSpecialDate extends GlDatePickerDate {
+trait GlDatePickerSpecialDate
+  extends StObject
+     with GlDatePickerDate {
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
 }
 object GlDatePickerSpecialDate {
   

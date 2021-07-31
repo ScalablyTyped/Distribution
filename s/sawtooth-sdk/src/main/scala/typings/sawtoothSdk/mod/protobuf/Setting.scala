@@ -9,7 +9,6 @@ import typings.sawtoothSdk.protobufMod.Setting.IEntry
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.Setting")
@@ -25,6 +24,10 @@ class Setting ()
 /* static members */
 object Setting {
   
+  @JSImport("sawtooth-sdk", "protobuf.Setting")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents an Entry. */
   @JSImport("sawtooth-sdk", "protobuf.Setting.Entry")
   @js.native
@@ -38,18 +41,20 @@ object Setting {
   }
   object Entry {
     
+    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Entry instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Entry instance
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.create")
-    @js.native
-    def create(): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.create")
-    @js.native
-    def create(properties: IEntry): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
+    @scala.inline
+    def create(): typings.sawtoothSdk.protobufMod.Setting.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
+    @scala.inline
+    def create(properties: IEntry): typings.sawtoothSdk.protobufMod.Setting.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
     
     /**
       * Decodes an Entry message from the specified reader or buffer.
@@ -60,18 +65,14 @@ object Setting {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.decode")
-    @js.native
-    def decode(reader: Reader): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.sawtoothSdk.protobufMod.Setting.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Setting.Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Setting.Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
     
     /**
       * Decodes an Entry message from the specified reader or buffer, length delimited.
@@ -81,12 +82,10 @@ object Setting {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Setting.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
     
     /**
       * Encodes the specified Entry message. Does not implicitly {@link Setting.Entry.verify|verify} messages.
@@ -95,12 +94,10 @@ object Setting {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.encode")
-    @js.native
-    def encode(message: IEntry): Writer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.encode")
-    @js.native
-    def encode(message: IEntry, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Entry message, length delimited. Does not implicitly {@link Setting.Entry.verify|verify} messages.
@@ -109,12 +106,10 @@ object Setting {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEntry): Writer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEntry, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an Entry message from a plain object. Also converts values to their respective internal types.
@@ -122,9 +117,8 @@ object Setting {
       * @returns Entry
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Setting.Entry = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Setting.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting.Entry]
     
     /**
       * Creates a plain object from an Entry message. Also converts values to other types if specified.
@@ -133,12 +127,10 @@ object Setting {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.toObject")
-    @js.native
-    def toObject(message: typings.sawtoothSdk.protobufMod.Setting.Entry): StringDictionary[js.Any] = js.native
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.toObject")
-    @js.native
-    def toObject(message: typings.sawtoothSdk.protobufMod.Setting.Entry, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: typings.sawtoothSdk.protobufMod.Setting.Entry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: typings.sawtoothSdk.protobufMod.Setting.Entry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an Entry message.
@@ -146,9 +138,8 @@ object Setting {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.Setting.Entry.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -156,12 +147,10 @@ object Setting {
     * @param [properties] Properties to set
     * @returns Setting instance
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.create")
-  @js.native
-  def create(): typings.sawtoothSdk.protobufMod.Setting = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.create")
-  @js.native
-  def create(properties: ISetting): typings.sawtoothSdk.protobufMod.Setting = js.native
+  @scala.inline
+  def create(): typings.sawtoothSdk.protobufMod.Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
+  @scala.inline
+  def create(properties: ISetting): typings.sawtoothSdk.protobufMod.Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
   
   /**
     * Decodes a Setting message from the specified reader or buffer.
@@ -171,18 +160,14 @@ object Setting {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.decode")
-  @js.native
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.Setting = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Setting = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Setting = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Setting = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Setting = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
   
   /**
     * Decodes a Setting message from the specified reader or buffer, length delimited.
@@ -191,12 +176,10 @@ object Setting {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Setting = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
   
   /**
     * Encodes the specified Setting message. Does not implicitly {@link Setting.verify|verify} messages.
@@ -204,12 +187,10 @@ object Setting {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.encode")
-  @js.native
-  def encode(message: ISetting): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.encode")
-  @js.native
-  def encode(message: ISetting, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ISetting): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ISetting, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Setting message, length delimited. Does not implicitly {@link Setting.verify|verify} messages.
@@ -217,21 +198,18 @@ object Setting {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISetting): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISetting, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ISetting): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ISetting, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Setting message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Setting
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Setting = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Setting]
   
   /**
     * Creates a plain object from a Setting message. Also converts values to other types if specified.
@@ -239,19 +217,16 @@ object Setting {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.Setting): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk", "protobuf.Setting.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.Setting, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.Setting): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.Setting, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Setting message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk", "protobuf.Setting.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

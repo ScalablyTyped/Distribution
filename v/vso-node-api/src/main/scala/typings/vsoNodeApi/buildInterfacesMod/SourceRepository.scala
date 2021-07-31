@@ -3,43 +3,41 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceRepository extends StObject {
   
   /**
     * The name of the default branch.
     */
-  var defaultBranch: String = js.native
+  var defaultBranch: String
   
   /**
     * The full name of the repository.
     */
-  var fullName: String = js.native
+  var fullName: String
   
   /**
     * The ID of the repository.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The friendly name of the repository.
     */
-  var name: String = js.native
+  var name: String
   
-  var properties: StringDictionary[String] = js.native
+  var properties: StringDictionary[String]
   
   /**
     * The name of the source provider the repository is from.
     */
-  var sourceProviderName: String = js.native
+  var sourceProviderName: String
   
   /**
     * The URL of the repository.
     */
-  var url: String = js.native
+  var url: String
 }
 object SourceRepository {
   

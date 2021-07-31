@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ForStatementSyntax
-  extends IIterationStatementSyntax
-     with SyntaxNode {
+  extends StObject
+     with SyntaxNode
+     with IIterationStatementSyntax {
   
   var closeParenToken: ISyntaxToken = js.native
   

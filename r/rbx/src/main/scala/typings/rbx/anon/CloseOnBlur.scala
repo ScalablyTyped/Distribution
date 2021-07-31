@@ -2,15 +2,13 @@ package typings.rbx.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseOnBlur extends StObject {
   
-  var closeOnBlur: Boolean = js.native
+  var closeOnBlur: Boolean
   
-  var closeOnEsc: Boolean = js.native
+  var closeOnEsc: Boolean
 }
 object CloseOnBlur {
   

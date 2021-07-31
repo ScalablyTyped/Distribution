@@ -5,7 +5,6 @@ import typings.locatePath.locatePathStrings.file
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,40 +27,41 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(paths: Iterable[String]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def apply(paths: Iterable[String], options: AsyncOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
   @JSImport("locate-path", JSImport.Namespace)
   @js.native
-  def apply(paths: Iterable[String]): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("locate-path", JSImport.Namespace)
-  @js.native
-  def apply(paths: Iterable[String], options: AsyncOptions): js.Promise[js.UndefOr[String]] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously get the first path that exists on disk of multiple paths.
   	@param paths - Paths to check.
   	@returns The first path that exists or `undefined` if none exists.
   	*/
-  @JSImport("locate-path", "sync")
-  @js.native
-  def sync(paths: Iterable[String]): js.UndefOr[String] = js.native
-  @JSImport("locate-path", "sync")
-  @js.native
-  def sync(paths: Iterable[String], options: Options): js.UndefOr[String] = js.native
+  @scala.inline
+  def sync(paths: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def sync(paths: Iterable[String], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @js.native
-  trait AsyncOptions extends Options {
+  trait AsyncOptions
+    extends StObject
+       with Options {
     
     /**
     		Number of concurrently pending promises. Minimum: `1`.
     		@default Infinity
     		*/
-    val concurrency: js.UndefOr[Double] = js.native
+    val concurrency: js.UndefOr[Double] = js.undefined
     
     /**
     		Preserve `paths` order when searching.
     		Disable this to improve performance if you don't care about the order.
     		@default true
     		*/
-    val preserveOrder: js.UndefOr[Boolean] = js.native
+    val preserveOrder: js.UndefOr[Boolean] = js.undefined
   }
   object AsyncOptions {
     
@@ -88,26 +88,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Allow symbolic links to match if they point to the requested path type.
     		@default true
     		*/
-    val allowSymlinks: js.UndefOr[Boolean] = js.native
+    val allowSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Current working directory.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
     /**
     		Type of path to match.
     		@default 'file'
     		*/
-    val `type`: js.UndefOr[file | directory] = js.native
+    val `type`: js.UndefOr[file | directory] = js.undefined
   }
   object Options {
     

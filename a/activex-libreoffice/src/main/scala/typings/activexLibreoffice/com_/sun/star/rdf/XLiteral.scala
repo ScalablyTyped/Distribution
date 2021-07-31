@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.0
   */
-@js.native
-trait XLiteral extends XNode {
+trait XLiteral
+  extends StObject
+     with XNode {
   
-  var Datatype: XURI = js.native
+  var Datatype: XURI
   
-  var Language: String = js.native
+  var Language: String
   
-  var Value: String = js.native
+  var Value: String
 }
 object XLiteral {
   

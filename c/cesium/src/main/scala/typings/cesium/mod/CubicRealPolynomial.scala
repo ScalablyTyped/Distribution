@@ -2,16 +2,17 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CubicRealPolynomial {
   
-  @JSImport("cesium", "CubicRealPolynomial.computeDiscriminant")
+  @JSImport("cesium", "CubicRealPolynomial")
   @js.native
-  def computeDiscriminant(a: Double, b: Double, c: Double, d: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cesium", "CubicRealPolynomial.computeRealRoots")
-  @js.native
-  def computeRealRoots(a: Double, b: Double, c: Double, d: Double): js.Array[Double] = js.native
+  @scala.inline
+  def computeDiscriminant(a: Double, b: Double, c: Double, d: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDiscriminant")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def computeRealRoots(a: Double, b: Double, c: Double, d: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeRealRoots")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

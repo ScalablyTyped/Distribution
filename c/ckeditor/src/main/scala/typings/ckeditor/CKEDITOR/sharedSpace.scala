@@ -3,15 +3,13 @@ package typings.ckeditor.CKEDITOR
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait sharedSpace extends StObject {
   
-  var bottom: js.UndefOr[String | HTMLElement] = js.native
+  var bottom: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var top: js.UndefOr[String | HTMLElement] = js.native
+  var top: js.UndefOr[String | HTMLElement] = js.undefined
 }
 object sharedSpace {
   

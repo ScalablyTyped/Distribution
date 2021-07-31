@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SqlQuery[T] extends Generic {
+trait SqlQuery[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object SqlQuery {
   
@@ -21,7 +21,7 @@ object SqlQuery {
   }
   
   @scala.inline
-  implicit class SqlQueryMutableBuilder[Self <: SqlQuery[_], T] (val x: Self with SqlQuery[T]) extends AnyVal {
+  implicit class SqlQueryMutableBuilder[Self <: SqlQuery[?], T] (val x: Self & SqlQuery[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -5,29 +5,29 @@ import typings.awsSdkClientKinesisBrowser.typesTagMod.UnmarshalledTag
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListTagsForStreamOutputMod {
   
-  @js.native
-  trait ListTagsForStreamOutput extends OutputTypesUnion {
+  trait ListTagsForStreamOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>If set to <code>true</code>, more tags are available. To request additional tags, set <code>ExclusiveStartTagKey</code> to the key of the last tag returned.</p>
       */
-    var HasMoreTags: Boolean = js.native
+    var HasMoreTags: Boolean
     
     /**
       * <p>A list of tags associated with <code>StreamName</code>, starting with the first tag after <code>ExclusiveStartTagKey</code> and up to the specified <code>Limit</code>. </p>
       */
-    var Tags: js.Array[UnmarshalledTag] = js.native
+    var Tags: js.Array[UnmarshalledTag]
   }
   object ListTagsForStreamOutput {
     

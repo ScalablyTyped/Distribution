@@ -11,7 +11,7 @@ Session management and security simplifier
 | Keywords           | session, management, rbac |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 2397 |
+| # downloads        | 2382 |
 | # stars            | 4 |
 
 ## Links

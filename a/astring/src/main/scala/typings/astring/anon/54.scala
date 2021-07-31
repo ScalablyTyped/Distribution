@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.CatchClause
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `54` extends StObject {
   
-  var `type`: CatchClause = js.native
+  var `type`: CatchClause
 }
 object `54` {
   
   @scala.inline
-  def apply(`type`: CatchClause): `54` = {
+  def apply(): `54` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[`54`]
   }
   

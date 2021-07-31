@@ -3,12 +3,11 @@ package typings.styledSystemCss.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSSelectorObject
-  extends /* cssSelector */ StringDictionary[SystemStyleObject]
+  extends StObject
+     with /* cssSelector */ StringDictionary[SystemStyleObject]
      with _SystemStyleObject
 object CSSSelectorObject {
   

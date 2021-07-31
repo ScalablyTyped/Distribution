@@ -2,7 +2,6 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zetapush-js", "Authentication")
@@ -11,19 +10,19 @@ class Authentication () extends StObject
 /* static members */
 object Authentication {
   
-  @JSImport("zetapush-js", "Authentication.create")
+  @JSImport("zetapush-js", "Authentication")
   @js.native
-  def create(authData: AbstractAuthData): CredentialsHandshake | TokenHandshake = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("zetapush-js", "Authentication.delegating")
-  @js.native
-  def delegating(authData: TokenAuthData): TokenHandshake = js.native
+  @scala.inline
+  def create(authData: AbstractAuthData): CredentialsHandshake | TokenHandshake = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(authData.asInstanceOf[js.Any]).asInstanceOf[CredentialsHandshake | TokenHandshake]
   
-  @JSImport("zetapush-js", "Authentication.simple")
-  @js.native
-  def simple(authData: CredentialsAuthData): CredentialsHandshake = js.native
+  @scala.inline
+  def delegating(authData: TokenAuthData): TokenHandshake = ^.asInstanceOf[js.Dynamic].applyDynamic("delegating")(authData.asInstanceOf[js.Any]).asInstanceOf[TokenHandshake]
   
-  @JSImport("zetapush-js", "Authentication.weak")
-  @js.native
-  def weak(authData: TokenAuthData): TokenHandshake = js.native
+  @scala.inline
+  def simple(authData: CredentialsAuthData): CredentialsHandshake = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")(authData.asInstanceOf[js.Any]).asInstanceOf[CredentialsHandshake]
+  
+  @scala.inline
+  def weak(authData: TokenAuthData): TokenHandshake = ^.asInstanceOf[js.Dynamic].applyDynamic("weak")(authData.asInstanceOf[js.Any]).asInstanceOf[TokenHandshake]
 }

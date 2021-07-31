@@ -10,9 +10,9 @@ A logger for just about everything.
 | ------------------ | :-------------: |
 | Full name          | winston |
 | Keywords           | winston, logger, logging, logs, sysadmin, bunyan, pino, loglevel, tools, json, stream |
-| # releases         | 8 |
-| # dependents       | 8133 |
-| # downloads        | 216912855 |
+| # releases         | 6 |
+| # dependents       | 8706 |
+| # downloads        | 246578135 |
 | # stars            | 439 |
 
 ## Links

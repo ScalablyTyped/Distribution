@@ -9,41 +9,39 @@ import typings.ionicCore.mod.Mode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalInterfaceMod {
   
-  @js.native
   trait ModalOptions[T /* <: ComponentRef */] extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var backdropDismiss: js.UndefOr[Boolean] = js.native
+    var backdropDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var component: T = js.native
+    var component: T
     
-    var componentProps: js.UndefOr[ComponentProps[T]] = js.native
+    var componentProps: js.UndefOr[ComponentProps[T]] = js.undefined
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var delegate: js.UndefOr[FrameworkDelegate] = js.native
+    var delegate: js.UndefOr[FrameworkDelegate] = js.undefined
     
-    var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var presentingElement: js.UndefOr[HTMLElement] = js.native
+    var presentingElement: js.UndefOr[HTMLElement] = js.undefined
     
-    var showBackdrop: js.UndefOr[Boolean] = js.native
+    var showBackdrop: js.UndefOr[Boolean] = js.undefined
     
-    var swipeToClose: js.UndefOr[Boolean] = js.native
+    var swipeToClose: js.UndefOr[Boolean] = js.undefined
   }
   object ModalOptions {
     
@@ -54,7 +52,7 @@ object modalInterfaceMod {
     }
     
     @scala.inline
-    implicit class ModalOptionsMutableBuilder[Self <: ModalOptions[_], T /* <: ComponentRef */] (val x: Self with ModalOptions[T]) extends AnyVal {
+    implicit class ModalOptionsMutableBuilder[Self <: ModalOptions[?], T /* <: ComponentRef */] (val x: Self & ModalOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])

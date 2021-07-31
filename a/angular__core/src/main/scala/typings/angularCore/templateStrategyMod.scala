@@ -1,18 +1,21 @@
 package typings.angularCore
 
 import typings.angularCore.ngQueryVisitorMod.ClassMetadataMap
+import typings.angularCore.queryDefinitionMod.NgQueryDefinition
+import typings.angularCore.timingStrategyMod.TimingResult
 import typings.angularCore.timingStrategyMod.TimingStrategy
 import typings.typescript.mod.CompilerHost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateStrategyMod {
   
   @JSImport("@angular/core/schematics/migrations/static-queries/strategies/template_strategy/template_strategy", "QueryTemplateStrategy")
   @js.native
-  class QueryTemplateStrategy protected () extends TimingStrategy {
+  class QueryTemplateStrategy protected ()
+    extends StObject
+       with TimingStrategy {
     def this(projectPath: String, classMetadata: ClassMetadataMap, host: CompilerHost) = this()
     
     /** Analyzes a given directive by determining the timing of all matched view queries. */
@@ -36,10 +39,18 @@ object templateStrategyMod {
     
     var compiler: js.Any = js.native
     
+    /** Detects the timing result for a given query. */
+    /* CompleteClass */
+    override def detectTiming(query: NgQueryDefinition): TimingResult = js.native
+    
     var host: js.Any = js.native
     
     var metadataResolver: js.Any = js.native
     
     var projectPath: js.Any = js.native
+    
+    /** Sets up the given strategy. Throws if the strategy could not be set up. */
+    /* CompleteClass */
+    override def setup(): Unit = js.native
   }
 }

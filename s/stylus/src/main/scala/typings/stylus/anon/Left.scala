@@ -3,25 +3,23 @@ package typings.stylus.anon
 import typings.stylus.mod.Stylus.Nodes.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Left extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var column: Double = js.native
+  var column: Double
   
-  var filename: String = js.native
+  var filename: String
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var op: String = js.native
+  var op: String
   
-  var right: Expression = js.native
+  var right: Expression
 }
 object Left {
   

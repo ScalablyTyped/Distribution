@@ -2,10 +2,8 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoplayOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait AutoplayOptions extends StObject {
     *
     * @default 3000
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * Set to false and autoplay will not be disabled after
@@ -29,21 +27,21 @@ trait AutoplayOptions extends StObject {
     *
     * @default true
     */
-  var disableOnInteraction: js.UndefOr[Boolean] = js.native
+  var disableOnInteraction: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables autoplay in reverse direction
     *
     * @default false
     */
-  var reverseDirection: js.UndefOr[Boolean] = js.native
+  var reverseDirection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable this parameter and autoplay will be stopped when it reaches last slide (has no effect in loop mode)
     *
     * @default false
     */
-  var stopOnLastSlide: js.UndefOr[Boolean] = js.native
+  var stopOnLastSlide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When enabled autoplay will wait for wrapper transition to continue.
@@ -52,7 +50,7 @@ trait AutoplayOptions extends StObject {
     *
     * @default true
     */
-  var waitForTransition: js.UndefOr[Boolean] = js.native
+  var waitForTransition: js.UndefOr[Boolean] = js.undefined
 }
 object AutoplayOptions {
   

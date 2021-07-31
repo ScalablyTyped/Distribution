@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAuditMitigationActionsTaskResponse extends StObject {
   
   /**
     * Specifies the mitigation actions and their parameters that are applied as part of this task.
     */
-  var actionsDefinition: js.UndefOr[MitigationActionList] = js.native
+  var actionsDefinition: js.UndefOr[MitigationActionList] = js.undefined
   
   /**
     * Specifies the mitigation actions that should be applied to specific audit checks.
     */
-  var auditCheckToActionsMapping: js.UndefOr[AuditCheckToActionsMapping] = js.native
+  var auditCheckToActionsMapping: js.UndefOr[AuditCheckToActionsMapping] = js.undefined
   
   /**
     * The date and time when the task was completed or canceled.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time when the task was started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Identifies the findings to which the mitigation actions are applied. This can be by audit checks, by audit task, or a set of findings.
     */
-  var target: js.UndefOr[AuditMitigationActionsTaskTarget] = js.native
+  var target: js.UndefOr[AuditMitigationActionsTaskTarget] = js.undefined
   
   /**
     * Aggregate counts of the results when the mitigation tasks were applied to the findings for this audit mitigation actions task.
     */
-  var taskStatistics: js.UndefOr[AuditMitigationActionsTaskStatistics] = js.native
+  var taskStatistics: js.UndefOr[AuditMitigationActionsTaskStatistics] = js.undefined
   
   /**
     * The current status of the task.
     */
-  var taskStatus: js.UndefOr[AuditMitigationActionsTaskStatus] = js.native
+  var taskStatus: js.UndefOr[AuditMitigationActionsTaskStatus] = js.undefined
 }
 object DescribeAuditMitigationActionsTaskResponse {
   

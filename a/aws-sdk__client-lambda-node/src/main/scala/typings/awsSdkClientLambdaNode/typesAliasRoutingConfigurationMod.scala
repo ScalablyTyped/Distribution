@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAliasRoutingConfigurationMod {
   
-  @js.native
   trait AliasRoutingConfiguration extends StObject {
     
     /**
       * <p>The name of the second alias, and the percentage of traffic that is routed to it.</p>
       */
-    var AdditionalVersionWeights: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.native
+    var AdditionalVersionWeights: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
   }
   object AliasRoutingConfiguration {
     
@@ -36,14 +34,15 @@ object typesAliasRoutingConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAliasRoutingConfiguration extends AliasRoutingConfiguration {
+  trait UnmarshalledAliasRoutingConfiguration
+    extends StObject
+       with AliasRoutingConfiguration {
     
     /**
       * <p>The name of the second alias, and the percentage of traffic that is routed to it.</p>
       */
     @JSName("AdditionalVersionWeights")
-    var AdditionalVersionWeights_UnmarshalledAliasRoutingConfiguration: js.UndefOr[StringDictionary[Double]] = js.native
+    var AdditionalVersionWeights_UnmarshalledAliasRoutingConfiguration: js.UndefOr[StringDictionary[Double]] = js.undefined
   }
   object UnmarshalledAliasRoutingConfiguration {
     

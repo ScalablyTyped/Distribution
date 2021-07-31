@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analyticsreporting/v4", "analyticsreporting_v4.Resource$Useractivity")
@@ -30,7 +29,7 @@ class ResourceUseractivity protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaSearchUserActivityResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchUserActivityResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchUserActivityResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchUserActivityResponse] = js.native
   def search(params: ParamsResourceUseractivitySearch): GaxiosPromise[SchemaSearchUserActivityResponse] = js.native
   def search(
     params: ParamsResourceUseractivitySearch,

@@ -3,15 +3,13 @@ package typings.atom.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectHistory extends StObject {
   
-  var lastOpened: Date = js.native
+  var lastOpened: Date
   
-  var paths: js.Array[String] = js.native
+  var paths: js.Array[String]
 }
 object ProjectHistory {
   

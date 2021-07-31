@@ -27,39 +27,39 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.tb
 import typings.elasticElasticsearch.elasticElasticsearchStrings.yellow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatIndices extends Generic {
+trait CatIndices
+  extends StObject
+     with Generic {
   
-  var bytes: js.UndefOr[b | k | kb | m | mb | g | gb | t | tb | p | pb] = js.native
+  var bytes: js.UndefOr[b | k | kb | m | mb | g | gb | t | tb | p | pb] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var h: js.UndefOr[String | js.Array[String]] = js.native
+  var h: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var health: js.UndefOr[green | yellow | red] = js.native
+  var health: js.UndefOr[green | yellow | red] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var include_unloaded_segments: js.UndefOr[Boolean] = js.native
+  var include_unloaded_segments: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var pri: js.UndefOr[Boolean] = js.native
+  var pri: js.UndefOr[Boolean] = js.undefined
   
-  var s: js.UndefOr[String | js.Array[String]] = js.native
+  var s: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var time: js.UndefOr[d | h | m | s | ms | micros | nanos] = js.native
+  var time: js.UndefOr[d | h | m | s | ms | micros | nanos] = js.undefined
   
-  var v: js.UndefOr[Boolean] = js.native
+  var v: js.UndefOr[Boolean] = js.undefined
 }
 object CatIndices {
   

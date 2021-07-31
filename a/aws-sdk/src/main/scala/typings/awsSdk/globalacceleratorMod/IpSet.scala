@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpSet extends StObject {
   
   /**
     * The array of IP addresses in the IP address set. An IP address set can have a maximum of two IP addresses.
     */
-  var IpAddresses: js.UndefOr[typings.awsSdk.globalacceleratorMod.IpAddresses] = js.native
+  var IpAddresses: js.UndefOr[typings.awsSdk.globalacceleratorMod.IpAddresses] = js.undefined
   
   /**
     * The types of IP addresses included in this IP set.
     */
-  var IpFamily: js.UndefOr[GenericString] = js.native
+  var IpFamily: js.UndefOr[GenericString] = js.undefined
 }
 object IpSet {
   

@@ -11,8 +11,8 @@ jwt as promised
 | Full name          | jwt-then |
 | Keywords           | jwt, then, promise |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 19393 |
+| # dependents       | 7 |
+| # downloads        | 23237 |
 | # stars            | 0 |
 
 ## Links

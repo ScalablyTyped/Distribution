@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDeviceMetadataRequest extends StObject {
   
   /** Required. The metadata to attach to the device. */
-  var deviceMetadata: js.UndefOr[DeviceMetadata] = js.native
+  var deviceMetadata: js.UndefOr[DeviceMetadata] = js.undefined
 }
 object UpdateDeviceMetadataRequest {
   

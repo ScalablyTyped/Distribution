@@ -2,14 +2,12 @@ package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An admission whitelist pattern exempts images from checks by admission
   * rules.
   */
-@js.native
 trait SchemaAdmissionWhitelistPattern extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaAdmissionWhitelistPattern extends StObject {
     * This supports a trailing `*` as a wildcard, but this is allowed only in
     * text after the `registry/` part.
     */
-  var namePattern: js.UndefOr[String] = js.native
+  var namePattern: js.UndefOr[String] = js.undefined
 }
 object SchemaAdmissionWhitelistPattern {
   

@@ -7,17 +7,15 @@ import typings.d3pie.d3pieStrings.linear
 import typings.d3pie.d3pieStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
-  var effect: js.UndefOr[none | linear | bounce | elastic | back] = js.native
+  var effect: js.UndefOr[none | linear | bounce | elastic | back] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
 }
 object Size {
   

@@ -43,10 +43,13 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.symmetric
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTensorMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/tensor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/tensor", "Tensor")
   @js.native
@@ -67,22 +70,21 @@ object distTensorMod {
     def add[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def add[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def addStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def addStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def addStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def all[T /* <: Tensor[Rank] */](): T = js.native
-    def all[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def all[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def all[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def all[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def all[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def all[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def any[T /* <: Tensor[Rank] */](): T = js.native
-    def any[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def any[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def any[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def any[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def any[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def any[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def argMax[T /* <: Tensor[Rank] */](): T = js.native
     def argMax[T /* <: Tensor[Rank] */](axis: Double): T = js.native
@@ -319,13 +321,13 @@ object distTensorMod {
     def cosh[T /* <: Tensor[Rank] */](): T = js.native
     
     def cumsum[R /* <: Rank */](): Tensor[R] = js.native
-    def cumsum[R /* <: Rank */](axis: js.UndefOr[scala.Nothing], exclusive: js.UndefOr[scala.Nothing], reverse: Boolean): Tensor[R] = js.native
-    def cumsum[R /* <: Rank */](axis: js.UndefOr[scala.Nothing], exclusive: Boolean): Tensor[R] = js.native
-    def cumsum[R /* <: Rank */](axis: js.UndefOr[scala.Nothing], exclusive: Boolean, reverse: Boolean): Tensor[R] = js.native
     def cumsum[R /* <: Rank */](axis: Double): Tensor[R] = js.native
-    def cumsum[R /* <: Rank */](axis: Double, exclusive: js.UndefOr[scala.Nothing], reverse: Boolean): Tensor[R] = js.native
     def cumsum[R /* <: Rank */](axis: Double, exclusive: Boolean): Tensor[R] = js.native
     def cumsum[R /* <: Rank */](axis: Double, exclusive: Boolean, reverse: Boolean): Tensor[R] = js.native
+    def cumsum[R /* <: Rank */](axis: Double, exclusive: Unit, reverse: Boolean): Tensor[R] = js.native
+    def cumsum[R /* <: Rank */](axis: Unit, exclusive: Boolean): Tensor[R] = js.native
+    def cumsum[R /* <: Rank */](axis: Unit, exclusive: Boolean, reverse: Boolean): Tensor[R] = js.native
+    def cumsum[R /* <: Rank */](axis: Unit, exclusive: Unit, reverse: Boolean): Tensor[R] = js.native
     
     /**
       * Asynchronously downloads the values from the `tf.Tensor`. Returns a
@@ -382,13 +384,6 @@ object distTensorMod {
       filter: Tensor3D,
       strides: js.Tuple2[Double, Double],
       pad: same_,
-      dilations: js.UndefOr[scala.Nothing],
-      dataFormat: NHWC
-    ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: js.Tuple2[Double, Double],
-      pad: same_,
       dilations: js.Tuple2[Double, Double],
       dataFormat: NHWC
     ): T = js.native
@@ -402,8 +397,8 @@ object distTensorMod {
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor3D,
       strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: js.UndefOr[scala.Nothing],
+      pad: same_,
+      dilations: Unit,
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
@@ -422,9 +417,9 @@ object distTensorMod {
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor3D,
-      strides: Double,
-      pad: same_,
-      dilations: js.UndefOr[scala.Nothing],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_,
+      dilations: Unit,
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
@@ -435,13 +430,7 @@ object distTensorMod {
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: same_, dilations: Double, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: Double,
-      pad: valid_,
-      dilations: js.UndefOr[scala.Nothing],
-      dataFormat: NHWC
-    ): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: same_, dilations: Unit, dataFormat: NHWC): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor3D,
       strides: Double,
@@ -450,13 +439,7 @@ object distTensorMod {
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_, dilations: Double, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dilations: js.UndefOr[scala.Nothing],
-      dataFormat: NHWC
-    ): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_, dilations: Unit, dataFormat: NHWC): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
       strides: js.Tuple2[Double, Double],
@@ -474,8 +457,8 @@ object distTensorMod {
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
       strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: js.UndefOr[scala.Nothing],
+      pad: same_,
+      dilations: Unit,
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
@@ -494,9 +477,9 @@ object distTensorMod {
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
-      strides: Double,
-      pad: same_,
-      dilations: js.UndefOr[scala.Nothing],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_,
+      dilations: Unit,
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
@@ -507,13 +490,7 @@ object distTensorMod {
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: same_, dilations: Double, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: Double,
-      pad: valid_,
-      dilations: js.UndefOr[scala.Nothing],
-      dataFormat: NHWC
-    ): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: same_, dilations: Unit, dataFormat: NHWC): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
       strides: Double,
@@ -522,6 +499,7 @@ object distTensorMod {
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_, dilations: Double, dataFormat: NHWC): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_, dilations: Unit, dataFormat: NHWC): T = js.native
     @JSName("dilation2d")
     def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: same_): T = js.native
     @JSName("dilation2d")
@@ -604,8 +582,7 @@ object distTensorMod {
     def divNoNan[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def divNoNan[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def divStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def divStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def divStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def dot[T /* <: Tensor[Rank] */](b: Tensor[Rank]): Tensor[Rank] = js.native
     def dot[T /* <: Tensor[Rank] */](b: TensorLike): Tensor[Rank] = js.native
@@ -618,8 +595,7 @@ object distTensorMod {
     def equal[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def equal[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def equalStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def equalStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def equalStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def erf[T /* <: Tensor[Rank] */](): T = js.native
     
@@ -650,11 +626,9 @@ object distTensorMod {
     def greaterEqual[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def greaterEqual[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def greaterEqualStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def greaterEqualStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def greaterEqualStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
-    def greaterStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def greaterStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def greaterStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     /** Unique id of this tensor. */
     val id: Double = js.native
@@ -684,48 +658,26 @@ object distTensorMod {
     def lessEqual[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def lessEqual[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def lessEqualStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def lessEqualStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def lessEqualStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
-    def lessStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def lessStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def lessStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def localResponseNormalization[T /* <: Tensor[Rank] */](): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](
-      depthRadius: js.UndefOr[scala.Nothing],
-      bias: js.UndefOr[scala.Nothing],
-      alpha: js.UndefOr[scala.Nothing],
-      beta: Double
-    ): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: js.UndefOr[scala.Nothing], bias: js.UndefOr[scala.Nothing], alpha: Double): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](
-      depthRadius: js.UndefOr[scala.Nothing],
-      bias: js.UndefOr[scala.Nothing],
-      alpha: Double,
-      beta: Double
-    ): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: js.UndefOr[scala.Nothing], bias: Double): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](
-      depthRadius: js.UndefOr[scala.Nothing],
-      bias: Double,
-      alpha: js.UndefOr[scala.Nothing],
-      beta: Double
-    ): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: js.UndefOr[scala.Nothing], bias: Double, alpha: Double): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: js.UndefOr[scala.Nothing], bias: Double, alpha: Double, beta: Double): T = js.native
     def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](
-      depthRadius: Double,
-      bias: js.UndefOr[scala.Nothing],
-      alpha: js.UndefOr[scala.Nothing],
-      beta: Double
-    ): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: js.UndefOr[scala.Nothing], alpha: Double): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: js.UndefOr[scala.Nothing], alpha: Double, beta: Double): T = js.native
     def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Double): T = js.native
-    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Double, alpha: js.UndefOr[scala.Nothing], beta: Double): T = js.native
     def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Double, alpha: Double): T = js.native
     def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Double, alpha: Double, beta: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Double, alpha: Unit, beta: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Unit, alpha: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Unit, alpha: Double, beta: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double, bias: Unit, alpha: Unit, beta: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Unit, bias: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Unit, bias: Double, alpha: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Unit, bias: Double, alpha: Double, beta: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Unit, bias: Double, alpha: Unit, beta: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Unit, bias: Unit, alpha: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Unit, bias: Unit, alpha: Double, beta: Double): T = js.native
+    def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Unit, bias: Unit, alpha: Unit, beta: Double): T = js.native
     
     def log[T /* <: Tensor[Rank] */](): T = js.native
     
@@ -737,11 +689,11 @@ object distTensorMod {
     def logSoftmax[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     
     def logSumExp[T /* <: Tensor[Rank] */](): T = js.native
-    def logSumExp[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def logSumExp[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def logSumExp[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def logSumExp[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def logSumExp[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def logSumExp[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def logicalAnd[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def logicalAnd[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
@@ -755,20 +707,20 @@ object distTensorMod {
     def logicalXor[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
     def matMul[T /* <: Tensor[Rank] */](b: Tensor[Rank]): Tensor[Rank] = js.native
-    def matMul[T /* <: Tensor[Rank] */](b: Tensor[Rank], transposeA: js.UndefOr[scala.Nothing], transposeB: Boolean): Tensor[Rank] = js.native
     def matMul[T /* <: Tensor[Rank] */](b: Tensor[Rank], transposeA: Boolean): Tensor[Rank] = js.native
     def matMul[T /* <: Tensor[Rank] */](b: Tensor[Rank], transposeA: Boolean, transposeB: Boolean): Tensor[Rank] = js.native
+    def matMul[T /* <: Tensor[Rank] */](b: Tensor[Rank], transposeA: Unit, transposeB: Boolean): Tensor[Rank] = js.native
     def matMul[T /* <: Tensor[Rank] */](b: TensorLike): Tensor[Rank] = js.native
-    def matMul[T /* <: Tensor[Rank] */](b: TensorLike, transposeA: js.UndefOr[scala.Nothing], transposeB: Boolean): Tensor[Rank] = js.native
     def matMul[T /* <: Tensor[Rank] */](b: TensorLike, transposeA: Boolean): Tensor[Rank] = js.native
     def matMul[T /* <: Tensor[Rank] */](b: TensorLike, transposeA: Boolean, transposeB: Boolean): Tensor[Rank] = js.native
+    def matMul[T /* <: Tensor[Rank] */](b: TensorLike, transposeA: Unit, transposeB: Boolean): Tensor[Rank] = js.native
     
     def max[T /* <: Tensor[Rank] */](): T = js.native
-    def max[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def max[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def max[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def max[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def max[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def max[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: Double): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](
@@ -887,28 +839,26 @@ object distTensorMod {
     def maximum[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def maximum[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def maximumStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def maximumStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def maximumStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def mean[T /* <: Tensor[Rank] */](): T = js.native
-    def mean[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def mean[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def mean[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def mean[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def mean[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def mean[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def min[T /* <: Tensor[Rank] */](): T = js.native
-    def min[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def min[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def min[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def min[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def min[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def min[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def minimum[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def minimum[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def minimumStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def minimumStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def minimumStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     @JSName("mirrorPad")
     def mirrorPad_reflect[T /* <: Tensor[Rank] */](paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = js.native
@@ -918,33 +868,29 @@ object distTensorMod {
     def mod[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def mod[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def modStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def modStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def modStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def mul[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def mul[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def mulStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def mulStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def mulStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def neg[T /* <: Tensor[Rank] */](): T = js.native
     
     def norm[T /* <: Tensor[Rank] */](): Tensor[Rank] = js.native
-    def norm[T /* <: Tensor[Rank] */](ord: js.UndefOr[scala.Nothing], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): Tensor[Rank] = js.native
-    def norm[T /* <: Tensor[Rank] */](ord: js.UndefOr[scala.Nothing], axis: js.Array[Double]): Tensor[Rank] = js.native
-    def norm[T /* <: Tensor[Rank] */](ord: js.UndefOr[scala.Nothing], axis: js.Array[Double], keepDims: Boolean): Tensor[Rank] = js.native
-    def norm[T /* <: Tensor[Rank] */](ord: js.UndefOr[scala.Nothing], axis: Double): Tensor[Rank] = js.native
-    def norm[T /* <: Tensor[Rank] */](ord: js.UndefOr[scala.Nothing], axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double): Tensor[Rank] = js.native
-    def norm[T /* <: Tensor[Rank] */](ord: Double, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double, axis: js.Array[Double]): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double, axis: js.Array[Double], keepDims: Boolean): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double, axis: Double): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: Double, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: js.Array[Double]): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: js.Array[Double], keepDims: Boolean): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: Double): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
     @JSName("norm")
     def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): Tensor[Rank] = js.native
     @JSName("norm")
     def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: js.Array[Double]): Tensor[Rank] = js.native
     @JSName("norm")
@@ -954,9 +900,9 @@ object distTensorMod {
     @JSName("norm")
     def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
     @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro): Tensor[Rank] = js.native
+    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
     @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): Tensor[Rank] = js.native
+    def norm_fro[T /* <: Tensor[Rank] */](ord: fro): Tensor[Rank] = js.native
     @JSName("norm")
     def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: js.Array[Double]): Tensor[Rank] = js.native
     @JSName("norm")
@@ -965,12 +911,13 @@ object distTensorMod {
     def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: Double): Tensor[Rank] = js.native
     @JSName("norm")
     def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
+    @JSName("norm")
+    def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
     
     def notEqual[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def notEqual[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def notEqualStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def notEqualStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def notEqualStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def oneHot(depth: Double, onValue: Double, offValue: Double): Tensor[Rank] = js.native
     
@@ -992,8 +939,7 @@ object distTensorMod {
     
     def powStrict[T /* <: Tensor[Rank] */](exp: Tensor[Rank]): Tensor[Rank] = js.native
     
-    def prelu[T /* <: Tensor[Rank] */](alpha: T): T = js.native
-    def prelu[T /* <: Tensor[Rank] */](alpha: TensorLike): T = js.native
+    def prelu[T /* <: Tensor[Rank] */](alpha: T | TensorLike): T = js.native
     
     /**
       * Prints the `tf.Tensor`. See `tf.print` for details.
@@ -1007,11 +953,11 @@ object distTensorMod {
     def print(verbose: Boolean): Unit = js.native
     
     def prod[T /* <: Tensor[Rank] */](): T = js.native
-    def prod[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def prod[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def prod[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def prod[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def prod[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def prod[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     val rank: Double = js.native
     
@@ -1098,8 +1044,7 @@ object distTensorMod {
     def squaredDifference[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def squaredDifference[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def squaredDifferenceStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def squaredDifferenceStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def squaredDifferenceStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def squeeze[T /* <: Tensor[Rank] */](): T = js.native
     def squeeze[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
@@ -1113,217 +1058,12 @@ object distTensorMod {
     def step[T /* <: Tensor[Rank] */](alpha: Double): T = js.native
     
     def stridedSlice[T /* <: Tensor[Rank] */](begin: js.Array[Double], end: js.Array[Double], strides: js.Array[Double]): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double,
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double,
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double,
-      newAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double,
-      newAxisMask: Double,
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double,
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double,
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double,
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double,
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double,
-      ellipsisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double,
-      ellipsisMask: Double,
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double,
-      ellipsisMask: Double,
-      newAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: js.UndefOr[scala.Nothing],
-      endMask: Double,
-      ellipsisMask: Double,
-      newAxisMask: Double,
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
     def stridedSlice[T /* <: Tensor[Rank] */](begin: js.Array[Double], end: js.Array[Double], strides: js.Array[Double], beginMask: Double): Tensor[Rank] = js.native
     def stridedSlice[T /* <: Tensor[Rank] */](
       begin: js.Array[Double],
       end: js.Array[Double],
       strides: js.Array[Double],
       beginMask: Double,
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double,
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double,
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double,
-      newAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: js.UndefOr[scala.Nothing],
-      ellipsisMask: Double,
-      newAxisMask: Double,
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
       endMask: Double
     ): Tensor[Rank] = js.native
     def stridedSlice[T /* <: Tensor[Rank] */](
@@ -1332,35 +1072,6 @@ object distTensorMod {
       strides: js.Array[Double],
       beginMask: Double,
       endMask: Double,
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: Double,
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: Double,
-      ellipsisMask: js.UndefOr[scala.Nothing],
-      newAxisMask: Double,
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: Double,
       ellipsisMask: Double
     ): Tensor[Rank] = js.native
     def stridedSlice[T /* <: Tensor[Rank] */](
@@ -1370,16 +1081,6 @@ object distTensorMod {
       beginMask: Double,
       endMask: Double,
       ellipsisMask: Double,
-      newAxisMask: js.UndefOr[scala.Nothing],
-      shrinkAxisMask: Double
-    ): Tensor[Rank] = js.native
-    def stridedSlice[T /* <: Tensor[Rank] */](
-      begin: js.Array[Double],
-      end: js.Array[Double],
-      strides: js.Array[Double],
-      beginMask: Double,
-      endMask: Double,
-      ellipsisMask: Double,
       newAxisMask: Double
     ): Tensor[Rank] = js.native
     def stridedSlice[T /* <: Tensor[Rank] */](
@@ -1390,6 +1091,250 @@ object distTensorMod {
       endMask: Double,
       ellipsisMask: Double,
       newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Double,
+      ellipsisMask: Double,
+      newAxisMask: Unit,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Double,
+      ellipsisMask: Unit,
+      newAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Double,
+      ellipsisMask: Unit,
+      newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Double,
+      ellipsisMask: Unit,
+      newAxisMask: Unit,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Unit,
+      ellipsisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Unit,
+      ellipsisMask: Double,
+      newAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Unit,
+      ellipsisMask: Double,
+      newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Unit,
+      ellipsisMask: Double,
+      newAxisMask: Unit,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Unit,
+      ellipsisMask: Unit,
+      newAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Unit,
+      ellipsisMask: Unit,
+      newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Double,
+      endMask: Unit,
+      ellipsisMask: Unit,
+      newAxisMask: Unit,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double,
+      ellipsisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double,
+      ellipsisMask: Double,
+      newAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double,
+      ellipsisMask: Double,
+      newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double,
+      ellipsisMask: Double,
+      newAxisMask: Unit,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double,
+      ellipsisMask: Unit,
+      newAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double,
+      ellipsisMask: Unit,
+      newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Double,
+      ellipsisMask: Unit,
+      newAxisMask: Unit,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Unit,
+      ellipsisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Unit,
+      ellipsisMask: Double,
+      newAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Unit,
+      ellipsisMask: Double,
+      newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Unit,
+      ellipsisMask: Double,
+      newAxisMask: Unit,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Unit,
+      ellipsisMask: Unit,
+      newAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Unit,
+      ellipsisMask: Unit,
+      newAxisMask: Double,
+      shrinkAxisMask: Double
+    ): Tensor[Rank] = js.native
+    def stridedSlice[T /* <: Tensor[Rank] */](
+      begin: js.Array[Double],
+      end: js.Array[Double],
+      strides: js.Array[Double],
+      beginMask: Unit,
+      endMask: Unit,
+      ellipsisMask: Unit,
+      newAxisMask: Unit,
       shrinkAxisMask: Double
     ): Tensor[Rank] = js.native
     
@@ -1403,15 +1348,14 @@ object distTensorMod {
     def sub[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def sub[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def subStrict[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def subStrict[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+    def subStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def sum[T /* <: Tensor[Rank] */](): T = js.native
-    def sum[T /* <: Tensor[Rank] */](axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
     def sum[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def sum[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
     def sum[T /* <: Tensor[Rank] */](axis: Double): T = js.native
     def sum[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def sum[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def tan[T /* <: Tensor[Rank] */](): T = js.native
     
@@ -1430,9 +1374,9 @@ object distTensorMod {
     def toString(verbose: Boolean): String = js.native
     
     def topk[T /* <: Tensor[Rank] */](): Indices[T] = js.native
-    def topk[T /* <: Tensor[Rank] */](k: js.UndefOr[scala.Nothing], sorted: Boolean): Indices[T] = js.native
     def topk[T /* <: Tensor[Rank] */](k: Double): Indices[T] = js.native
     def topk[T /* <: Tensor[Rank] */](k: Double, sorted: Boolean): Indices[T] = js.native
+    def topk[T /* <: Tensor[Rank] */](k: Unit, sorted: Boolean): Indices[T] = js.native
     
     def transpose[T /* <: Tensor[Rank] */](): T = js.native
     def transpose[T /* <: Tensor[Rank] */](perm: js.Array[Double]): T = js.native
@@ -1447,13 +1391,13 @@ object distTensorMod {
     def unstack[T /* <: Tensor[Rank] */](axis: Double): js.Array[T] = js.native
     
     def variable(): Variable[R] = js.native
-    def variable(trainable: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], dtype: DataType): Variable[R] = js.native
-    def variable(trainable: js.UndefOr[scala.Nothing], name: String): Variable[R] = js.native
-    def variable(trainable: js.UndefOr[scala.Nothing], name: String, dtype: DataType): Variable[R] = js.native
     def variable(trainable: Boolean): Variable[R] = js.native
-    def variable(trainable: Boolean, name: js.UndefOr[scala.Nothing], dtype: DataType): Variable[R] = js.native
     def variable(trainable: Boolean, name: String): Variable[R] = js.native
     def variable(trainable: Boolean, name: String, dtype: DataType): Variable[R] = js.native
+    def variable(trainable: Boolean, name: Unit, dtype: DataType): Variable[R] = js.native
+    def variable(trainable: Unit, name: String): Variable[R] = js.native
+    def variable(trainable: Unit, name: String, dtype: DataType): Variable[R] = js.native
+    def variable(trainable: Unit, name: Unit, dtype: DataType): Variable[R] = js.native
     
     def where[T /* <: Tensor[Rank] */](condition: Tensor[Rank], x: Tensor[Rank]): T = js.native
     def where[T /* <: Tensor[Rank] */](condition: Tensor[Rank], x: TensorLike): T = js.native
@@ -1542,19 +1486,15 @@ object distTensorMod {
     var trainable: Boolean = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor", "setDeprecationWarningFn")
-  @js.native
-  def setDeprecationWarningFn(fn: js.Function1[/* msg */ String, Unit]): Unit = js.native
+  @scala.inline
+  def setDeprecationWarningFn(fn: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeprecationWarningFn")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor", "setOpHandler")
-  @js.native
-  def setOpHandler(handler: OpHandler): Unit = js.native
+  @scala.inline
+  def setOpHandler(handler: OpHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor", "setTensorTracker")
-  @js.native
-  def setTensorTracker(fn: js.Function0[TensorTracker]): Unit = js.native
+  @scala.inline
+  def setTensorTracker(fn: js.Function0[TensorTracker]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTensorTracker")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Backend extends StObject
   
   type DataId = js.Object
@@ -1653,14 +1593,13 @@ object distTensorMod {
   
   type Tensor6D = Tensor[R6]
   
-  @js.native
   trait TensorData[D /* <: DataType */] extends StObject {
     
-    var dataId: js.UndefOr[DataId] = js.native
+    var dataId: js.UndefOr[DataId] = js.undefined
     
     var values: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object TensorData {
     
@@ -1671,7 +1610,7 @@ object distTensorMod {
     }
     
     @scala.inline
-    implicit class TensorDataMutableBuilder[Self <: TensorData[_], D /* <: DataType */] (val x: Self with TensorData[D]) extends AnyVal {
+    implicit class TensorDataMutableBuilder[Self <: TensorData[?], D /* <: DataType */] (val x: Self & TensorData[D]) extends AnyVal {
       
       @scala.inline
       def setDataId(value: DataId): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
@@ -1702,18 +1641,13 @@ object distTensorMod {
     def makeTensor(values: DataValues, shape: js.Array[Double], dtype: DataType, backend: Backend): Tensor[Rank] = js.native
     
     def makeVariable(initialValue: Tensor[Rank]): Variable[Rank] = js.native
-    def makeVariable(
-      initialValue: Tensor[Rank],
-      trainable: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      dtype: DataType
-    ): Variable[Rank] = js.native
-    def makeVariable(initialValue: Tensor[Rank], trainable: js.UndefOr[scala.Nothing], name: String): Variable[Rank] = js.native
-    def makeVariable(initialValue: Tensor[Rank], trainable: js.UndefOr[scala.Nothing], name: String, dtype: DataType): Variable[Rank] = js.native
     def makeVariable(initialValue: Tensor[Rank], trainable: Boolean): Variable[Rank] = js.native
-    def makeVariable(initialValue: Tensor[Rank], trainable: Boolean, name: js.UndefOr[scala.Nothing], dtype: DataType): Variable[Rank] = js.native
     def makeVariable(initialValue: Tensor[Rank], trainable: Boolean, name: String): Variable[Rank] = js.native
     def makeVariable(initialValue: Tensor[Rank], trainable: Boolean, name: String, dtype: DataType): Variable[Rank] = js.native
+    def makeVariable(initialValue: Tensor[Rank], trainable: Boolean, name: Unit, dtype: DataType): Variable[Rank] = js.native
+    def makeVariable(initialValue: Tensor[Rank], trainable: Unit, name: String): Variable[Rank] = js.native
+    def makeVariable(initialValue: Tensor[Rank], trainable: Unit, name: String, dtype: DataType): Variable[Rank] = js.native
+    def makeVariable(initialValue: Tensor[Rank], trainable: Unit, name: Unit, dtype: DataType): Variable[Rank] = js.native
     
     def read(dataId: DataId): js.Promise[BackendValues] = js.native
     

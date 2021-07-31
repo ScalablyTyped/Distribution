@@ -9,7 +9,6 @@ import typings.html5plus.html5plusStrings.rtl
 import typings.html5plus.html5plusStrings.silent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewDragOptions extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait PlusWebviewWebviewDragOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var callbackStep: js.UndefOr[Double] = js.native
+  var callbackStep: js.UndefOr[Double] = js.undefined
   
   /**
     * 设置的手势类型
@@ -45,7 +43,7 @@ trait PlusWebviewWebviewDragOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var direction: js.UndefOr[rtl | left | ltr | right] = js.native
+  var direction: js.UndefOr[rtl | left | ltr | right] = js.undefined
   
   /**
     * 滑动手势模式
@@ -59,7 +57,7 @@ trait PlusWebviewWebviewDragOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var moveMode: js.UndefOr[followFinger | silent | bounce] = js.native
+  var moveMode: js.UndefOr[followFinger | silent | bounce] = js.undefined
 }
 object PlusWebviewWebviewDragOptions {
   

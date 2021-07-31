@@ -3,14 +3,16 @@ package typings.ionicons
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
   
-  @JSImport("ionicons/dist/types/components/icon/request", "getSvgContent")
+  @JSImport("ionicons/dist/types/components/icon/request", JSImport.Namespace)
   @js.native
-  def getSvgContent(url: String, sanitize: Boolean): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getSvgContent(url: String, sanitize: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSvgContent")(url.asInstanceOf[js.Any], sanitize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("ionicons/dist/types/components/icon/request", "ioniconContent")
   @js.native

@@ -2,31 +2,29 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogChannel extends StObject {
   
   /**
     * The log channel path.
     */
-  var channel: String = js.native
+  var channel: String
   
   /**
     * The various log levels.
     */
-  var configuration: String = js.native
+  var configuration: String
   
   /**
     * Whether or not a log type is enabled.
     */
-  var status: String = js.native
+  var status: String
   
   /**
     * Types of logs for the log channel.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object LogChannel {
   

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MLTransformSchema extends StObject {
   
   /**
     * The type of data in the column.
     */
-  var dataType: String = js.native
+  var dataType: String
   
   /**
     * The name you assign to this ML Transform. It must be unique in your account.
     */
-  var name: String = js.native
+  var name: String
 }
 object MLTransformSchema {
   

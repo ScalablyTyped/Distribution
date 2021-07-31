@@ -2,19 +2,17 @@ package typings.reactLatexNext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Delimiter extends StObject {
     
-    var display: Boolean = js.native
+    var display: Boolean
     
-    var left: String = js.native
+    var left: String
     
-    var right: String = js.native
+    var right: String
   }
   object Delimiter {
     
@@ -38,16 +36,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait KatexData extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var display: js.UndefOr[Boolean] = js.native
+    var display: js.UndefOr[Boolean] = js.undefined
     
-    var rawData: js.UndefOr[String] = js.native
+    var rawData: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object KatexData {
     

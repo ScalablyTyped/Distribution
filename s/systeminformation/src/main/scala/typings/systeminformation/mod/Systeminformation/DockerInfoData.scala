@@ -2,104 +2,102 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 8. Docker
-@js.native
 trait DockerInfoData extends StObject {
   
-  var architecture: String = js.native
+  var architecture: String
   
-  var bridgeNfIp6tables: Boolean = js.native
+  var bridgeNfIp6tables: Boolean
   
-  var bridgeNfIptables: Boolean = js.native
+  var bridgeNfIptables: Boolean
   
-  var cgroupDriver: String = js.native
+  var cgroupDriver: String
   
-  var clusterAdvertise: String = js.native
+  var clusterAdvertise: String
   
-  var clusterStore: String = js.native
+  var clusterStore: String
   
-  var containers: Double = js.native
+  var containers: Double
   
-  var containersPaused: Double = js.native
+  var containersPaused: Double
   
-  var containersRunning: Double = js.native
+  var containersRunning: Double
   
-  var containersStopped: Double = js.native
+  var containersStopped: Double
   
-  var cpuCfsPeriod: Boolean = js.native
+  var cpuCfsPeriod: Boolean
   
-  var cpuCfsQuota: Boolean = js.native
+  var cpuCfsQuota: Boolean
   
-  var cpuSet: Boolean = js.native
+  var cpuSet: Boolean
   
-  var cpuShares: Boolean = js.native
+  var cpuShares: Boolean
   
-  var debug: Boolean = js.native
+  var debug: Boolean
   
-  var defaultRuntime: String = js.native
+  var defaultRuntime: String
   
-  var dockerRootDir: String = js.native
+  var dockerRootDir: String
   
-  var driver: String = js.native
+  var driver: String
   
-  var experimentalBuild: Boolean = js.native
+  var experimentalBuild: Boolean
   
-  var httpProxy: String = js.native
+  var httpProxy: String
   
-  var httpsProxy: String = js.native
+  var httpsProxy: String
   
-  var id: String = js.native
+  var id: String
   
-  var images: Double = js.native
+  var images: Double
   
-  var initBinary: String = js.native
+  var initBinary: String
   
-  var ipv4Forwarding: Boolean = js.native
+  var ipv4Forwarding: Boolean
   
-  var isolation: String = js.native
+  var isolation: String
   
-  var kernelMemory: Boolean = js.native
+  var kernelMemory: Boolean
   
-  var kernelVersion: String = js.native
+  var kernelVersion: String
   
-  var labels: js.Array[String] = js.native
+  var labels: js.Array[String]
   
-  var liveRestoreEnabled: Boolean = js.native
+  var liveRestoreEnabled: Boolean
   
-  var loggingDriver: String = js.native
+  var loggingDriver: String
   
-  var memTotal: Double = js.native
+  var memTotal: Double
   
-  var memoryLimit: Boolean = js.native
+  var memoryLimit: Boolean
   
-  var mfd: Double = js.native
+  var mfd: Double
   
-  var nEventsListener: Double = js.native
+  var nEventsListener: Double
   
-  var name: String = js.native
+  var name: String
   
-  var ncpu: Double = js.native
+  var ncpu: Double
   
-  var ngoroutines: Double = js.native
+  var ngoroutines: Double
   
-  var noProxy: String = js.native
+  var noProxy: String
   
-  var oomKillDisable: Boolean = js.native
+  var oomKillDisable: Boolean
   
-  var operatingSystem: String = js.native
+  var operatingSystem: String
   
-  var osType: String = js.native
+  var osType: String
   
-  var productLicense: String = js.native
+  var productLicense: String
   
-  var serverVersion: String = js.native
+  var serverVersion: String
   
-  var swapLimit: Boolean = js.native
+  var swapLimit: Boolean
   
-  var systemTime: String = js.native
+  var systemTime: String
 }
 object DockerInfoData {
   

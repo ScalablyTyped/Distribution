@@ -8,46 +8,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait colorGetMatchingSchemesParams extends Object {
+trait colorGetMatchingSchemesParams
+  extends StObject
+     with Object {
   
   /**
     * An array of colors used to match with schemes for the given theme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * The geometry type of the layer for which the color scheme will be applied.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
     */
-  var geometryType: String = js.native
+  var geometryType: String
   
   /**
     * The name of the theme from which to get color schemes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
     */
-  var theme: `high-to-low` | `above-and-below` | `centered-on` | extremes = js.native
+  var theme: `high-to-low` | `above-and-below` | `centered-on` | extremes
   
   /**
     * The [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) instance used to calculate the suggested sizes of the symbols.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[SceneView] = js.native
+  var view: js.UndefOr[SceneView] = js.undefined
   
   /**
     * Indicates whether 3D volumetric symbols will be used in the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
     */
-  var worldScale: js.UndefOr[Boolean] = js.native
+  var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object colorGetMatchingSchemesParams {
   

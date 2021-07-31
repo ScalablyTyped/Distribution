@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object productSubscriptionMod {
@@ -38,6 +37,10 @@ object productSubscriptionMod {
   /* static members */
   object ProductSubscription {
     
+    @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ProductSubscription resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,35 +50,29 @@ object productSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ProductSubscription = js.native
-    @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ProductSubscription = js.native
-    @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProductSubscriptionState): ProductSubscription = js.native
-    @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProductSubscriptionState, opts: CustomResourceOptions): ProductSubscription = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProductSubscriptionState): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProductSubscriptionState, opts: CustomResourceOptions): ProductSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProductSubscription]
     
     /**
       * Returns true if the given object is an instance of ProductSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ Boolean]
   }
   
-  @js.native
   trait ProductSubscriptionArgs extends StObject {
     
     /**
       * The ARN of the product that generates findings that you want to import into Security Hub - see below.
       */
-    val productArn: Input[String] = js.native
+    val productArn: Input[String]
   }
   object ProductSubscriptionArgs {
     
@@ -93,18 +90,17 @@ object productSubscriptionMod {
     }
   }
   
-  @js.native
   trait ProductSubscriptionState extends StObject {
     
     /**
       * The ARN of a resource that represents your subscription to the product that generates the findings that you want to import into Security Hub.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the product that generates findings that you want to import into Security Hub - see below.
       */
-    val productArn: js.UndefOr[Input[String]] = js.native
+    val productArn: js.UndefOr[Input[String]] = js.undefined
   }
   object ProductSubscriptionState {
     

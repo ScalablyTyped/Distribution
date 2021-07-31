@@ -19,29 +19,29 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * extends a {@link TextFrame} which shares the same {@link Text} with other {@link ChainedTextFrame} instances that will make the text flow through the
   * chained frames. The text flows in the next frame if there is no space left in the current frame.
   */
-@js.native
-trait ChainedTextFrame extends TextFrame {
+trait ChainedTextFrame
+  extends StObject
+     with TextFrame {
   
   /**
     * name of the previous frame in the chain
     *
     * An empty string indicates that there is no previous frame.
     */
-  var ChainNextName: String = js.native
+  var ChainNextName: String
   
   /**
     * name of the next frame in the chain
     *
     * An empty string indicates that there is no next frame.
     */
-  var ChainPrevName: String = js.native
+  var ChainPrevName: String
 }
 object ChainedTextFrame {
   

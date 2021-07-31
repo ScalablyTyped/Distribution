@@ -3,13 +3,11 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.NavigationModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentModule extends StObject {
   
-  val CurrentModule: NavigationModule = js.native
+  val CurrentModule: NavigationModule
 }
 object CurrentModule {
   

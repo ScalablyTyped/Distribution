@@ -10,56 +10,54 @@ import typings.aliApp.my.PageScrollToOptions
 import typings.aliApp.my.SelectorQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.PageOptions & ali-app.my.Page> */
-@js.native
 trait PartialPageOptionsPage extends StObject {
   
   var createIntersectionObserver: js.UndefOr[
     js.Function1[/* options */ js.UndefOr[CreateIntersectionObserverOption], IntersectionObserver]
-  ] = js.native
+  ] = js.undefined
   
-  var createSelectorQuery: js.UndefOr[js.Function0[SelectorQuery]] = js.native
+  var createSelectorQuery: js.UndefOr[js.Function0[SelectorQuery]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
-  var forceUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+  var forceUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var getRelationNodes: js.UndefOr[js.Function1[/* relationKey */ String, js.Array[ComponentRelation]]] = js.native
+  var getRelationNodes: js.UndefOr[js.Function1[/* relationKey */ String, js.Array[ComponentRelation]]] = js.undefined
   
-  var hasBehavior: js.UndefOr[js.Function1[/* behavior */ js.Any, Boolean]] = js.native
+  var hasBehavior: js.UndefOr[js.Function1[/* behavior */ js.Any, Boolean]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var onError: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var onError: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
   
-  var onLaunch: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ Options, Unit]] = js.native
+  var onLaunch: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ Options, Unit]] = js.undefined
   
-  var onPullDownRefresh: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var onPullDownRefresh: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ Options, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ Options, Unit]] = js.undefined
   
-  var pageScrollTo: js.UndefOr[js.Function1[/* option */ js.UndefOr[PageScrollToOptions], Unit]] = js.native
+  var pageScrollTo: js.UndefOr[js.Function1[/* option */ js.UndefOr[PageScrollToOptions], Unit]] = js.undefined
   
-  var properties: js.UndefOr[js.Any] = js.native
+  var properties: js.UndefOr[js.Any] = js.undefined
   
-  var route: js.UndefOr[js.Function0[Unit]] = js.native
+  var route: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var selectAllComponents: js.UndefOr[js.Function1[/* selector */ String, js.Array[Component]]] = js.native
+  var selectAllComponents: js.UndefOr[js.Function1[/* selector */ String, js.Array[Component]]] = js.undefined
   
-  var selectComponent: js.UndefOr[js.Function1[/* selector */ String, Component]] = js.native
+  var selectComponent: js.UndefOr[js.Function1[/* selector */ String, Component]] = js.undefined
   
   var setData: js.UndefOr[
     js.Function2[/* data */ js.Any, /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var triggerEvent: js.UndefOr[
     js.Function3[
@@ -68,9 +66,9 @@ trait PartialPageOptionsPage extends StObject {
       /* options */ js.UndefOr[Partialbubblesbooleancomp], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var update: js.UndefOr[js.Function0[Unit]] = js.native
+  var update: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object PartialPageOptionsPage {
   

@@ -3,10 +3,13 @@ package typings.timezonecomplete
 import typings.timezonecomplete.basicsMod.TimeUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object durationMod {
+  
+  @JSImport("timezonecomplete/dist/lib/duration", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("timezonecomplete/dist/lib/duration", "Duration")
   @js.native
@@ -333,15 +336,18 @@ object durationMod {
   /* static members */
   object Duration {
     
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Construct a time duration
       * @param amount Number of days (may be fractional or negative)
       * @return A duration of n days
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete/dist/lib/duration", "Duration.days")
-    @js.native
-    def days(amount: Double): Duration = js.native
+    @scala.inline
+    def days(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -349,9 +355,8 @@ object durationMod {
       * @return A duration of n hours
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete/dist/lib/duration", "Duration.hours")
-    @js.native
-    def hours(amount: Double): Duration = js.native
+    @scala.inline
+    def hours(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -359,9 +364,8 @@ object durationMod {
       * @return A duration of n milliseconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete/dist/lib/duration", "Duration.milliseconds")
-    @js.native
-    def milliseconds(amount: Double): Duration = js.native
+    @scala.inline
+    def milliseconds(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -369,9 +373,8 @@ object durationMod {
       * @return A duration of n minutes
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete/dist/lib/duration", "Duration.minutes")
-    @js.native
-    def minutes(amount: Double): Duration = js.native
+    @scala.inline
+    def minutes(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -379,9 +382,8 @@ object durationMod {
       * @return A duration of n months
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete/dist/lib/duration", "Duration.months")
-    @js.native
-    def months(amount: Double): Duration = js.native
+    @scala.inline
+    def months(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -389,9 +391,8 @@ object durationMod {
       * @return A duration of n seconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete/dist/lib/duration", "Duration.seconds")
-    @js.native
-    def seconds(amount: Double): Duration = js.native
+    @scala.inline
+    def seconds(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -399,40 +400,31 @@ object durationMod {
       * @return A duration of n years
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @JSImport("timezonecomplete/dist/lib/duration", "Duration.years")
-    @js.native
-    def years(amount: Double): Duration = js.native
+    @scala.inline
+    def years(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
   }
   
-  @JSImport("timezonecomplete/dist/lib/duration", "days")
-  @js.native
-  def days(n: Double): Duration = js.native
+  @scala.inline
+  def days(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @JSImport("timezonecomplete/dist/lib/duration", "hours")
-  @js.native
-  def hours(n: Double): Duration = js.native
+  @scala.inline
+  def hours(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @JSImport("timezonecomplete/dist/lib/duration", "isDuration")
-  @js.native
-  def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = js.native
+  @scala.inline
+  def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
   
-  @JSImport("timezonecomplete/dist/lib/duration", "milliseconds")
-  @js.native
-  def milliseconds(n: Double): Duration = js.native
+  @scala.inline
+  def milliseconds(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @JSImport("timezonecomplete/dist/lib/duration", "minutes")
-  @js.native
-  def minutes(n: Double): Duration = js.native
+  @scala.inline
+  def minutes(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @JSImport("timezonecomplete/dist/lib/duration", "months")
-  @js.native
-  def months(n: Double): Duration = js.native
+  @scala.inline
+  def months(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @JSImport("timezonecomplete/dist/lib/duration", "seconds")
-  @js.native
-  def seconds(n: Double): Duration = js.native
+  @scala.inline
+  def seconds(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @JSImport("timezonecomplete/dist/lib/duration", "years")
-  @js.native
-  def years(n: Double): Duration = js.native
+  @scala.inline
+  def years(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
 }

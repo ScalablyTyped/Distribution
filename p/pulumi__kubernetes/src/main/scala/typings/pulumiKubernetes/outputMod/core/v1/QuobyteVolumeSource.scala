@@ -2,44 +2,42 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.
   */
-@js.native
 trait QuobyteVolumeSource extends StObject {
   
   /**
     * Group to map volume access to Default is no group
     */
-  var group: String = js.native
+  var group: String
   
   /**
     * ReadOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes
     */
-  var registry: String = js.native
+  var registry: String
   
   /**
     * Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin
     */
-  var tenant: String = js.native
+  var tenant: String
   
   /**
     * User to map volume access to Defaults to serivceaccount user
     */
-  var user: String = js.native
+  var user: String
   
   /**
     * Volume is a string that references an already created Quobyte volume by name.
     */
-  var volume: String = js.native
+  var volume: String
 }
 object QuobyteVolumeSource {
   

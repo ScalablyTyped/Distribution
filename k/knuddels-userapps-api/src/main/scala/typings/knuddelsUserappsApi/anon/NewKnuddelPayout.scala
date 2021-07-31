@@ -2,21 +2,19 @@ package typings.knuddelsUserappsApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewKnuddelPayout extends StObject {
   
-  var newKnuddelPayout: js.UndefOr[Double] = js.native
+  var newKnuddelPayout: js.UndefOr[Double] = js.undefined
   
-  var newPriceCents: js.UndefOr[Double] = js.native
+  var newPriceCents: js.UndefOr[Double] = js.undefined
   
-  var origKnuddelPayout: Double = js.native
+  var origKnuddelPayout: Double
   
-  var origPriceCents: Double = js.native
+  var origPriceCents: Double
   
-  var productId: String = js.native
+  var productId: String
 }
 object NewKnuddelPayout {
   

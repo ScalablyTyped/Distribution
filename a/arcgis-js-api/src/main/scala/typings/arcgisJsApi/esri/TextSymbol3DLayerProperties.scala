@@ -2,46 +2,46 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait TextSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
   
   /**
     * The font of the text label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#font)
     */
-  var font: js.UndefOr[FontProperties] = js.native
+  var font: js.UndefOr[FontProperties] = js.undefined
   
   /**
     * The halo surrounding the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
     */
-  var halo: js.UndefOr[TextSymbol3DLayerHaloProperties] = js.native
+  var halo: js.UndefOr[TextSymbol3DLayerHaloProperties] = js.undefined
   
   /**
     * The material used to color the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
     */
-  var material: js.UndefOr[TextSymbol3DLayerMaterialProperties] = js.native
+  var material: js.UndefOr[TextSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
     * Size of the text label in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#size)
     */
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The text to be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#text)
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TextSymbol3DLayerProperties {
   

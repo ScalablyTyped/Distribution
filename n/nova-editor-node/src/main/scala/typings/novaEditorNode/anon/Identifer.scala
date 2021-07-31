@@ -2,15 +2,13 @@ package typings.novaEditorNode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identifer extends StObject {
   
-  var identifer: String = js.native
+  var identifer: String
   
-  var name: String = js.native
+  var name: String
 }
 object Identifer {
   

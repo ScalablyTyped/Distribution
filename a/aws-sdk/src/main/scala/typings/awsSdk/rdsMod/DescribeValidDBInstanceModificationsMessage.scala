@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeValidDBInstanceModificationsMessage extends StObject {
   
   /**
     * The customer identifier or the ARN of your DB instance. 
     */
-  var DBInstanceIdentifier: String = js.native
+  var DBInstanceIdentifier: String
 }
 object DescribeValidDBInstanceModificationsMessage {
   

@@ -22,7 +22,6 @@ import typings.openfin.windowOptionMod.WindowOption
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowWindowMod {
@@ -369,7 +368,7 @@ object windowWindowMod {
       * @return {Promise.<any>}
       * @tutorial Window.getOptions
       */
-    def getOptions(): js.Promise[_] = js.native
+    def getOptions(): js.Promise[js.Any] = js.native
     
     /**
       * Gets the parent application.
@@ -568,9 +567,9 @@ object windowWindowMod {
       * @tutorial Window.showAt
       */
     def showAt(left: Double, top: Double): js.Promise[Unit] = js.native
-    def showAt(left: Double, top: Double, force: js.UndefOr[scala.Nothing], options: WindowMovementOptions): js.Promise[Unit] = js.native
     def showAt(left: Double, top: Double, force: Boolean): js.Promise[Unit] = js.native
     def showAt(left: Double, top: Double, force: Boolean, options: WindowMovementOptions): js.Promise[Unit] = js.native
+    def showAt(left: Double, top: Double, force: Unit, options: WindowMovementOptions): js.Promise[Unit] = js.native
     
     /**
       * Stops the taskbar icon from flashing.
@@ -596,16 +595,15 @@ object windowWindowMod {
     var windowListFromNameList: js.Any = js.native
   }
   
-  @js.native
   trait Area extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Area {
     
@@ -632,16 +630,15 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait CloseEventShape extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var topic: String = js.native
+    var topic: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object CloseEventShape {
     
@@ -669,12 +666,11 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait Dpi extends StObject {
     
-    var horizontal: js.UndefOr[Double] = js.native
+    var horizontal: js.UndefOr[Double] = js.undefined
     
-    var vertical: js.UndefOr[Double] = js.native
+    var vertical: js.UndefOr[Double] = js.undefined
   }
   object Dpi {
     
@@ -701,18 +697,17 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait FindInPageOptions extends StObject {
     
-    var findNext: js.UndefOr[Boolean] = js.native
+    var findNext: js.UndefOr[Boolean] = js.undefined
     
-    var forward: js.UndefOr[Boolean] = js.native
+    var forward: js.UndefOr[Boolean] = js.undefined
     
-    var matchCase: js.UndefOr[Boolean] = js.native
+    var matchCase: js.UndefOr[Boolean] = js.undefined
     
-    var medialCapitalAsWordStart: js.UndefOr[Boolean] = js.native
+    var medialCapitalAsWordStart: js.UndefOr[Boolean] = js.undefined
     
-    var wordStart: js.UndefOr[Boolean] = js.native
+    var wordStart: js.UndefOr[Boolean] = js.undefined
   }
   object FindInPageOptions {
     
@@ -757,16 +752,15 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait FrameInfo extends StObject {
     
-    var entityType: EntityType = js.native
+    var entityType: EntityType
     
-    var name: String = js.native
+    var name: String
     
-    var parent: js.UndefOr[Identity] = js.native
+    var parent: js.UndefOr[Identity] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object FrameInfo {
     
@@ -796,18 +790,17 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait Margins extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var marginType: js.UndefOr[typings.openfin.openfinStrings.default | none | printableArea | custom] = js.native
+    var marginType: js.UndefOr[typings.openfin.openfinStrings.default | none | printableArea | custom] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Margins {
     
@@ -852,34 +845,33 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait PrintOptions extends StObject {
     
-    var collate: js.UndefOr[Boolean] = js.native
+    var collate: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
-    var copies: js.UndefOr[Double] = js.native
+    var copies: js.UndefOr[Double] = js.undefined
     
-    var deviceName: js.UndefOr[String] = js.native
+    var deviceName: js.UndefOr[String] = js.undefined
     
-    var dpi: js.UndefOr[Dpi] = js.native
+    var dpi: js.UndefOr[Dpi] = js.undefined
     
-    var duplexMode: js.UndefOr[simplex | shortEdge | longEdge] = js.native
+    var duplexMode: js.UndefOr[simplex | shortEdge | longEdge] = js.undefined
     
-    var landscape: js.UndefOr[Boolean] = js.native
+    var landscape: js.UndefOr[Boolean] = js.undefined
     
-    var margins: js.UndefOr[Margins] = js.native
+    var margins: js.UndefOr[Margins] = js.undefined
     
-    var pageRanges: js.UndefOr[Record[String, Double]] = js.native
+    var pageRanges: js.UndefOr[Record[String, Double]] = js.undefined
     
-    var pagesPerSheet: js.UndefOr[Double] = js.native
+    var pagesPerSheet: js.UndefOr[Double] = js.undefined
     
-    var printBackground: js.UndefOr[Boolean] = js.native
+    var printBackground: js.UndefOr[Boolean] = js.undefined
     
-    var scaleFactor: js.UndefOr[Double] = js.native
+    var scaleFactor: js.UndefOr[Double] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object PrintOptions {
     
@@ -972,16 +964,15 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait PrinterInfo extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var isDefault: Boolean = js.native
+    var isDefault: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var status: Double = js.native
+    var status: Double
   }
   object PrinterInfo {
     
@@ -1008,18 +999,17 @@ object windowWindowMod {
     }
   }
   
-  @js.native
   trait WindowInfo extends StObject {
     
-    var canNavigateBack: Boolean = js.native
+    var canNavigateBack: Boolean
     
-    var canNavigateForward: Boolean = js.native
+    var canNavigateForward: Boolean
     
-    var preloadScripts: js.Array[_] = js.native
+    var preloadScripts: js.Array[js.Any]
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
   }
   object WindowInfo {
     
@@ -1027,7 +1017,7 @@ object windowWindowMod {
     def apply(
       canNavigateBack: Boolean,
       canNavigateForward: Boolean,
-      preloadScripts: js.Array[_],
+      preloadScripts: js.Array[js.Any],
       title: String,
       url: String
     ): WindowInfo = {
@@ -1045,7 +1035,7 @@ object windowWindowMod {
       def setCanNavigateForward(value: Boolean): Self = StObject.set(x, "canNavigateForward", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreloadScripts(value: js.Array[_]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
+      def setPreloadScripts(value: js.Array[js.Any]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreloadScriptsVarargs(value: js.Any*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
@@ -1105,10 +1095,9 @@ object windowWindowMod {
     def wrapSync(identity: Identity): Window = js.native
   }
   
-  @js.native
   trait WindowMovementOptions extends StObject {
     
-    var moveIndependently: Boolean = js.native
+    var moveIndependently: Boolean
   }
   object WindowMovementOptions {
     

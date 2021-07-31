@@ -19,25 +19,23 @@ import typings.stripeV3.stripeV3Strings.rule
 import typings.stripeV3.stripeV3Strings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Networkstatus extends StObject {
   
-  var network_status: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval = js.native
+  var network_status: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval
   
-  var reason: highest_risk_level | elevated_risk_level | rule | Null = js.native
+  var reason: highest_risk_level | elevated_risk_level | rule | Null
   
-  var risk_level: normal | elevated | highest | not_assessed | unknown_ = js.native
+  var risk_level: normal | elevated | highest | not_assessed | unknown_
   
-  var risk_score: Double = js.native
+  var risk_score: Double
   
-  var rule: js.UndefOr[String] = js.native
+  var rule: js.UndefOr[String] = js.undefined
   
-  var seller_message: String = js.native
+  var seller_message: String
   
-  var `type`: authorized | manual_review | issuer_declined | blocked | invalid = js.native
+  var `type`: authorized | manual_review | issuer_declined | blocked | invalid
 }
 object Networkstatus {
   
@@ -49,7 +47,7 @@ object Networkstatus {
     seller_message: String,
     `type`: authorized | manual_review | issuer_declined | blocked | invalid
   ): Networkstatus = {
-    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], risk_level = risk_level.asInstanceOf[js.Any], risk_score = risk_score.asInstanceOf[js.Any], seller_message = seller_message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], risk_level = risk_level.asInstanceOf[js.Any], risk_score = risk_score.asInstanceOf[js.Any], seller_message = seller_message.asInstanceOf[js.Any], reason = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Networkstatus]
   }

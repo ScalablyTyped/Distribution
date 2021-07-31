@@ -50,10 +50,13 @@ import typings.ionicCore.utilsConfigMod.IonicConfig
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
+  
+  @JSImport("@ionic/core/dist/types/global/config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/core/dist/types/global/config", "Config")
   @js.native
@@ -97,15 +100,12 @@ object configMod {
   @js.native
   val config: Config_ = js.native
   
-  @JSImport("@ionic/core/dist/types/global/config", "configFromSession")
-  @js.native
-  def configFromSession(win: Window): js.Any = js.native
+  @scala.inline
+  def configFromSession(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromSession")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core/dist/types/global/config", "configFromURL")
-  @js.native
-  def configFromURL(win: Window): js.Any = js.native
+  @scala.inline
+  def configFromURL(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromURL")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core/dist/types/global/config", "saveConfig")
-  @js.native
-  def saveConfig(win: Window, c: js.Any): Unit = js.native
+  @scala.inline
+  def saveConfig(win: Window, c: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveConfig")(win.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

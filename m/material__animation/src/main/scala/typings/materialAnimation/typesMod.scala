@@ -2,17 +2,15 @@ package typings.materialAnimation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait CssVendorProperty extends StObject {
     
-    var prefixed: PrefixedCssPropertyName = js.native
+    var prefixed: PrefixedCssPropertyName
     
-    var standard: StandardCssPropertyName = js.native
+    var standard: StandardCssPropertyName
   }
   object CssVendorProperty {
     
@@ -34,14 +32,13 @@ object typesMod {
   }
   
   /* Inlined {[ K in @material/animation.@material/animation/types.StandardCssPropertyName ]: @material/animation.@material/animation/types.CssVendorProperty} */
-  @js.native
   trait CssVendorPropertyMap extends StObject {
     
-    var animation: CssVendorProperty = js.native
+    var animation: CssVendorProperty
     
-    var transform: CssVendorProperty = js.native
+    var transform: CssVendorProperty
     
-    var transition: CssVendorProperty = js.native
+    var transition: CssVendorProperty
   }
   object CssVendorPropertyMap {
     
@@ -65,14 +62,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait JsVendorProperty extends StObject {
     
-    var cssProperty: StandardCssPropertyName = js.native
+    var cssProperty: StandardCssPropertyName
     
-    var prefixed: PrefixedJsEventType = js.native
+    var prefixed: PrefixedJsEventType
     
-    var standard: StandardJsEventType = js.native
+    var standard: StandardJsEventType
   }
   object JsVendorProperty {
     
@@ -97,16 +93,15 @@ object typesMod {
   }
   
   /* Inlined {[ K in @material/animation.@material/animation/types.StandardJsEventType ]: @material/animation.@material/animation/types.JsVendorProperty} */
-  @js.native
   trait JsVendorPropertyMap extends StObject {
     
-    var animationend: JsVendorProperty = js.native
+    var animationend: JsVendorProperty
     
-    var animationiteration: JsVendorProperty = js.native
+    var animationiteration: JsVendorProperty
     
-    var animationstart: JsVendorProperty = js.native
+    var animationstart: JsVendorProperty
     
-    var transitionend: JsVendorProperty = js.native
+    var transitionend: JsVendorProperty
   }
   object JsVendorPropertyMap {
     

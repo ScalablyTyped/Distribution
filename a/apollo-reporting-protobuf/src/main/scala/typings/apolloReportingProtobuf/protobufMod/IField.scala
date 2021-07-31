@@ -2,17 +2,15 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IField extends StObject {
   
   /** Field name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Field returnType */
-  var returnType: js.UndefOr[String | Null] = js.native
+  var returnType: js.UndefOr[String | Null] = js.undefined
 }
 object IField {
   

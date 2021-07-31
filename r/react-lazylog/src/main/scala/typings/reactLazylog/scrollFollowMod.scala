@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactLazylog.anon.ClientHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollFollowMod {
@@ -33,12 +32,11 @@ object scrollFollowMod {
     def this(props: ScrollFollowProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ScrollFollowProps extends StObject {
     
-    def render(props: ScrollFollowRenderProps): ReactNode = js.native
+    def render(props: ScrollFollowRenderProps): ReactNode
     
-    var startFollowing: js.UndefOr[Boolean] = js.native
+    var startFollowing: js.UndefOr[Boolean] = js.undefined
   }
   object ScrollFollowProps {
     
@@ -62,16 +60,15 @@ object scrollFollowMod {
     }
   }
   
-  @js.native
   trait ScrollFollowRenderProps extends StObject {
     
-    var follow: Boolean = js.native
+    var follow: Boolean
     
-    def onScroll(args: ClientHeight): Unit = js.native
+    def onScroll(args: ClientHeight): Unit
     
-    def startFollowing(): Unit = js.native
+    def startFollowing(): Unit
     
-    def stopFollowing(): Unit = js.native
+    def stopFollowing(): Unit
   }
   object ScrollFollowRenderProps {
     

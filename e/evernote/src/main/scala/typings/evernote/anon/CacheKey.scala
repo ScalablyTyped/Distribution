@@ -3,23 +3,21 @@ package typings.evernote.anon
 import typings.evernote.mod.NoteStore.NoteFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheKey extends StObject {
   
-  var cacheKey: js.UndefOr[String] = js.native
+  var cacheKey: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[NoteFilter] = js.native
+  var filter: js.UndefOr[NoteFilter] = js.undefined
   
-  var noteGuid: js.UndefOr[String] = js.native
+  var noteGuid: js.UndefOr[String] = js.undefined
   
-  var plainText: js.UndefOr[String] = js.native
+  var plainText: js.UndefOr[String] = js.undefined
   
-  var referenceUri: js.UndefOr[String] = js.native
+  var referenceUri: js.UndefOr[String] = js.undefined
 }
 object CacheKey {
   

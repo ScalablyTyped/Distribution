@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSimulationApplicationRequest extends StObject {
   
   /**
     * The application information for the simulation application to delete.
     */
-  var application: Arn = js.native
+  var application: Arn
   
   /**
     * The version of the simulation application to delete.
     */
-  var applicationVersion: js.UndefOr[Version] = js.native
+  var applicationVersion: js.UndefOr[Version] = js.undefined
 }
 object DeleteSimulationApplicationRequest {
   

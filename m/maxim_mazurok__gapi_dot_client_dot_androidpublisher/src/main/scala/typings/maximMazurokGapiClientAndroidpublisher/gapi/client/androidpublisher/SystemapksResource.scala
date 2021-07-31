@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemapksResource extends StObject {
   
-  var variants: VariantsResource = js.native
+  var variants: VariantsResource
 }
 object SystemapksResource {
   

@@ -2,30 +2,28 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocodingComponents extends StObject {
   
   /** matches all the administrative_area levels. */
-  var administrative_area: js.UndefOr[String] = js.native
+  var administrative_area: js.UndefOr[String] = js.undefined
   
   /**
     * matches a country name or a two letter [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code.
     * **Note:** The API follows the ISO standard for defining countries, and the filtering works best when using
     * the corresponding ISO code of the country
     */
-  var country: js.UndefOr[String | js.Array[String]] = js.native
+  var country: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** matches against `locality` and `sublocality` types. */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /** matches `postal_code` and `postal_code_prefix`. */
-  var postal_code: js.UndefOr[String] = js.native
+  var postal_code: js.UndefOr[String] = js.undefined
   
   /** matches the long or short name of a route. */
-  var route: js.UndefOr[String] = js.native
+  var route: js.UndefOr[String] = js.undefined
 }
 object GeocodingComponents {
   

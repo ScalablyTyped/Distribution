@@ -2,13 +2,11 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFLoadingTask[T] extends StObject {
   
-  var promise: PDFPromise[T] = js.native
+  var promise: PDFPromise[T]
 }
 object PDFLoadingTask {
   
@@ -19,7 +17,7 @@ object PDFLoadingTask {
   }
   
   @scala.inline
-  implicit class PDFLoadingTaskMutableBuilder[Self <: PDFLoadingTask[_], T] (val x: Self with PDFLoadingTask[T]) extends AnyVal {
+  implicit class PDFLoadingTaskMutableBuilder[Self <: PDFLoadingTask[?], T] (val x: Self & PDFLoadingTask[T]) extends AnyVal {
     
     @scala.inline
     def setPromise(value: PDFPromise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])

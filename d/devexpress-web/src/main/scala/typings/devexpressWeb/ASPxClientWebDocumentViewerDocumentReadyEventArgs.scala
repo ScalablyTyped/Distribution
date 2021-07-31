@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.DocumentReady  and ASPxClientReportDesigner.PreviewDocumentReady events.
   */
-@js.native
-trait ASPxClientWebDocumentViewerDocumentReadyEventArgs extends ASPxClientEventArgs {
+trait ASPxClientWebDocumentViewerDocumentReadyEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies the report document ID.
     */
-  var DocumentId: String = js.native
+  var DocumentId: String
   
   /**
     * Specifies the total number of pages in a report document.
     */
-  var PageCount: Double = js.native
+  var PageCount: Double
   
   /**
     * Specifies the report ID.
     */
-  var ReportId: String = js.native
+  var ReportId: String
 }
 object ASPxClientWebDocumentViewerDocumentReadyEventArgs {
   

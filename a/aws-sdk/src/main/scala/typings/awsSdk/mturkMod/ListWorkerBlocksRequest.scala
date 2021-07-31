@@ -2,18 +2,16 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWorkerBlocksRequest extends StObject {
   
-  var MaxResults: js.UndefOr[ResultSize] = js.native
+  var MaxResults: js.UndefOr[ResultSize] = js.undefined
   
   /**
     * Pagination token
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListWorkerBlocksRequest {
   

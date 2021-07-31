@@ -3,7 +3,6 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.wechatMiniprogram.WechatMiniprogram.Component.TrivialInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,7 +13,7 @@ trait SelectorQuery extends StObject {
     * 执行所有的请求。请求结果按请求次序构成数组，在callback的第一个参数中返回。 */
   def exec(): NodesRef = js.native
   def exec(/** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): NodesRef = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): NodesRef = js.native
   
   /** [[SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) SelectorQuery.in(Component component)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.in.html)
   *

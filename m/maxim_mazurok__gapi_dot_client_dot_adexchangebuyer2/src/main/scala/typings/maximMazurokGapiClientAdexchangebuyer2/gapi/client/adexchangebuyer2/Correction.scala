@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Correction extends StObject {
   
   /** The contexts for the correction. */
-  var contexts: js.UndefOr[js.Array[ServingContext]] = js.native
+  var contexts: js.UndefOr[js.Array[ServingContext]] = js.undefined
   
   /** Additional details about what was corrected. */
-  var details: js.UndefOr[js.Array[String]] = js.native
+  var details: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The type of correction that was applied to the creative. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Correction {
   

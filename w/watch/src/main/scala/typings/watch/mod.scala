@@ -9,35 +9,33 @@ import typings.watch.watchStrings.created
 import typings.watch.watchStrings.removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("watch", "createMonitor")
+  @JSImport("watch", JSImport.Namespace)
   @js.native
-  def createMonitor(root: String, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = js.native
-  @JSImport("watch", "createMonitor")
-  @js.native
-  def createMonitor(root: String, options: Options, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("watch", "unwatchTree")
-  @js.native
-  def unwatchTree(root: String): Unit = js.native
+  @scala.inline
+  def createMonitor(root: String, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createMonitor")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createMonitor(root: String, options: Options, callback: js.Function1[/* monitor */ Monitor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createMonitor")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("watch", "watchTree")
-  @js.native
+  @scala.inline
+  def unwatchTree(root: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchTree")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
   def watchTree(
     root: String,
     callback: js.Function3[/* f */ FileOrFiles, /* curr */ Stats, /* prev */ Stats, Unit]
-  ): Unit = js.native
-  @JSImport("watch", "watchTree")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchTree")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def watchTree(
     root: String,
     options: Options,
     callback: js.Function3[/* f */ FileOrFiles, /* curr */ Stats, /* prev */ Stats, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchTree")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type FileOrFiles = Stats | StringDictionary[Stats]
   
@@ -59,20 +57,19 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ Stats, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* path */ String, /* stat */ Stats, Boolean]] = js.undefined
     
-    var ignoreDirectoryPattern: js.UndefOr[RegExp] = js.native
+    var ignoreDirectoryPattern: js.UndefOr[RegExp] = js.undefined
     
-    var ignoreDotFiles: js.UndefOr[Boolean] = js.native
+    var ignoreDotFiles: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreNotPermitted: js.UndefOr[Boolean] = js.native
+    var ignoreNotPermitted: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreUnreadableDir: js.UndefOr[Boolean] = js.native
+    var ignoreUnreadableDir: js.UndefOr[Boolean] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,17 +2,15 @@ package typings.vueInbrowserCompilerUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Func extends StObject {
     
-    var func: js.UndefOr[Boolean] = js.native
+    var func: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Func {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var func: js.UndefOr[Boolean] = js.native
+    var func: js.UndefOr[Boolean] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

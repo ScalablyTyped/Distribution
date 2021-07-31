@@ -4,11 +4,11 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XTransferable2 extends XTransferable {
+trait XTransferable2
+  extends StObject
+     with XTransferable {
   
   /**
     * This is equivalent of getTransferData of {@link XTransferable} , but takes an additional parameter that specifies the destination document type.
@@ -18,7 +18,7 @@ trait XTransferable2 extends XTransferable {
     * @throws com::sun::star::io::IOException if the data is no longer available in the requested flavor.
     * @throws com::sun::star::datatransfer::UnsupportedFlavorException if the requested {@link DataFlavor} is not supported.
     */
-  def getTransferData2(aFlavor: DataFlavor, aDestShellID: String): js.Any = js.native
+  def getTransferData2(aFlavor: DataFlavor, aDestShellID: String): js.Any
 }
 object XTransferable2 {
   

@@ -2,7 +2,6 @@ package typings.expoErrorRecovery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoErrorRecoveryWebMod {
@@ -23,8 +22,7 @@ object expoErrorRecoveryWebMod {
     @scala.inline
     def recoveredProps_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recoveredProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("expo-error-recovery/build/ExpoErrorRecovery.web", "default.saveRecoveryProps")
-    @js.native
-    def saveRecoveryProps(props: String): Unit = js.native
+    @scala.inline
+    def saveRecoveryProps(props: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveRecoveryProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

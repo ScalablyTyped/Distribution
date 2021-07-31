@@ -3,12 +3,11 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ForOfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForOfStatement_
-  extends Node
+  extends StObject
+     with Node
      with BlockParent
      with For
      with ForXStatement
@@ -16,14 +15,14 @@ trait ForOfStatement_
      with Scopable
      with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var left: VariableDeclaration_ | LVal = js.native
+  var left: VariableDeclaration_ | LVal
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_ForOfStatement_ : ForOfStatement = js.native
+  var type_ForOfStatement_ : ForOfStatement
 }
 object ForOfStatement_ {
   
@@ -34,11 +33,10 @@ object ForOfStatement_ {
     left: VariableDeclaration_ | LVal,
     loc: SourceLocation,
     right: Expression,
-    start: Double,
-    `type`: ForOfStatement
+    start: Double
   ): ForOfStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[ForOfStatement_]
   }
   

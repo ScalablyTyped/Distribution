@@ -5,12 +5,13 @@ import typings.kdbxweb.anon.DefaultSequence
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Entry")
 @js.native
-class Entry () extends KdbxObject {
+class Entry ()
+  extends StObject
+     with KdbxObject {
   
   var autoType: DefaultSequence = js.native
   
@@ -49,11 +50,13 @@ class Entry () extends KdbxObject {
 /* static members */
 object Entry {
   
-  @JSImport("kdbxweb", "Entry.create")
+  @JSImport("kdbxweb", "Entry")
   @js.native
-  def create(meta: Meta, parentGroup: Group): Entry = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "Entry.read")
-  @js.native
-  def read(xmlNode: Node, ctx: Context, parentGroup: Group): Entry = js.native
+  @scala.inline
+  def create(meta: Meta, parentGroup: Group): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(meta.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Entry]
+  
+  @scala.inline
+  def read(xmlNode: Node, ctx: Context, parentGroup: Group): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Entry]
 }

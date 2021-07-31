@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IpNamedLocation extends NamedLocation {
+trait IpNamedLocation
+  extends StObject
+     with NamedLocation {
   
   // List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC596.
-  var ipRanges: js.UndefOr[js.Array[IpRange]] = js.native
+  var ipRanges: js.UndefOr[js.Array[IpRange]] = js.undefined
   
   // True if this location is explicitly trusted.
-  var isTrusted: js.UndefOr[Boolean] = js.native
+  var isTrusted: js.UndefOr[Boolean] = js.undefined
 }
 object IpNamedLocation {
   

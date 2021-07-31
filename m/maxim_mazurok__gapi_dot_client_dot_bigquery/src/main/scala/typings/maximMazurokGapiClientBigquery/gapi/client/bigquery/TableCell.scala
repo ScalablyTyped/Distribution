@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableCell extends StObject {
   
-  var v: js.UndefOr[js.Any] = js.native
+  var v: js.UndefOr[js.Any] = js.undefined
 }
 object TableCell {
   

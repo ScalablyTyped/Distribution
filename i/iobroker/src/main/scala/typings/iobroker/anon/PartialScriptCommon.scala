@@ -3,48 +3,46 @@ package typings.iobroker.anon
 import typings.iobroker.iobrokerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.ScriptCommon> */
-@js.native
 trait PartialScriptCommon extends StObject {
   
-  var compiled: js.UndefOr[String] = js.native
+  var compiled: js.UndefOr[String] = js.undefined
   
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var declarations: js.UndefOr[String] = js.native
+  var declarations: js.UndefOr[String] = js.undefined
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var engine: js.UndefOr[String] = js.native
+  var engine: js.UndefOr[String] = js.undefined
   
-  var engineType: js.UndefOr[String] = js.native
+  var engineType: js.UndefOr[String] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var sourceHash: js.UndefOr[String] = js.native
+  var sourceHash: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialScriptCommon {
   
   @scala.inline
-  def apply(): PartialScriptCommon = {
-    val __obj = js.Dynamic.literal()
+  def apply(custom: Unit): PartialScriptCommon = {
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialScriptCommon]
   }
   
@@ -56,6 +54,9 @@ object PartialScriptCommon {
     
     @scala.inline
     def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])

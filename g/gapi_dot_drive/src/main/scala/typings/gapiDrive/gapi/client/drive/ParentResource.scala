@@ -3,33 +3,25 @@ package typings.gapiDrive.gapi.client.drive
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignparentReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentResource extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var isRoot: Boolean = js.native
+  var isRoot: Boolean
   
-  var kind: driveNumbersignparentReference = js.native
+  var kind: driveNumbersignparentReference
   
-  var parentLink: String = js.native
+  var parentLink: String
   
-  var selfLink: String = js.native
+  var selfLink: String
 }
 object ParentResource {
   
   @scala.inline
-  def apply(
-    id: String,
-    isRoot: Boolean,
-    kind: driveNumbersignparentReference,
-    parentLink: String,
-    selfLink: String
-  ): ParentResource = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isRoot = isRoot.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], parentLink = parentLink.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any])
+  def apply(id: String, isRoot: Boolean, parentLink: String, selfLink: String): ParentResource = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isRoot = isRoot.asInstanceOf[js.Any], kind = "drive#parentReference", parentLink = parentLink.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParentResource]
   }
   

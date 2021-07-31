@@ -4,22 +4,22 @@ import typings.relayRuntime.relayRuntimeStrings.executeDotcomplete
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'execute.complete',   transactionID :number}> */
-@js.native
-trait Readonlynameexecutecomple extends LogEvent {
+trait Readonlynameexecutecomple
+  extends StObject
+     with LogEvent {
   
-  val name: executeDotcomplete = js.native
+  val name: executeDotcomplete
   
-  val transactionID: Double = js.native
+  val transactionID: Double
 }
 object Readonlynameexecutecomple {
   
   @scala.inline
-  def apply(name: executeDotcomplete, transactionID: Double): Readonlynameexecutecomple = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
+  def apply(transactionID: Double): Readonlynameexecutecomple = {
+    val __obj = js.Dynamic.literal(name = "execute.complete", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecutecomple]
   }
   

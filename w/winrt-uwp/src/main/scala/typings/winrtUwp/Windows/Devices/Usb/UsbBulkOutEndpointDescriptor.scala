@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The endpoint descriptor for a USB bulk OUT endpoint. The descriptor specifies the endpoint type, direction, number and also the maximum number of bytes that can be written to the endpoint, in a single transfer. */
-@js.native
 trait UsbBulkOutEndpointDescriptor extends StObject {
   
   /** Gets the USB endpoint number of the bulk OUT endpoint. */
-  var endpointNumber: Double = js.native
+  var endpointNumber: Double
   
   /** Gets the maximum number of bytes that can be sent to or received from this endpoint. */
-  var maxPacketSize: Double = js.native
+  var maxPacketSize: Double
   
   /** Gets the object that represents the pipe that the host opens to communicate with the bulk IN endpoint. */
-  var pipe: UsbBulkOutPipe = js.native
+  var pipe: UsbBulkOutPipe
 }
 object UsbBulkOutEndpointDescriptor {
   

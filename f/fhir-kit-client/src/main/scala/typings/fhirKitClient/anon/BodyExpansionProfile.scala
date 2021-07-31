@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ExpansionProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyExpansionProfile extends StObject {
   
-  var body: ExpansionProfile = js.native
+  var body: ExpansionProfile
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ExpansionProfile = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ExpansionProfile
 }
 object BodyExpansionProfile {
   
   @scala.inline
-  def apply(body: ExpansionProfile, resourceType: typings.fhirKitClient.fhirKitClientStrings.ExpansionProfile): BodyExpansionProfile = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ExpansionProfile): BodyExpansionProfile = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ExpansionProfile")
     __obj.asInstanceOf[BodyExpansionProfile]
   }
   

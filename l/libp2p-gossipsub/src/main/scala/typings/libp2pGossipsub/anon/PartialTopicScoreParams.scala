@@ -2,46 +2,44 @@ package typings.libp2pGossipsub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-score-params.TopicScoreParams> */
-@js.native
 trait PartialTopicScoreParams extends StObject {
   
-  var firstMessageDeliveriesCap: js.UndefOr[Double] = js.native
+  var firstMessageDeliveriesCap: js.UndefOr[Double] = js.undefined
   
-  var firstMessageDeliveriesDecay: js.UndefOr[Double] = js.native
+  var firstMessageDeliveriesDecay: js.UndefOr[Double] = js.undefined
   
-  var firstMessageDeliveriesWeight: js.UndefOr[Double] = js.native
+  var firstMessageDeliveriesWeight: js.UndefOr[Double] = js.undefined
   
-  var invalidMessageDeliveriesDecay: js.UndefOr[Double] = js.native
+  var invalidMessageDeliveriesDecay: js.UndefOr[Double] = js.undefined
   
-  var invalidMessageDeliveriesWeight: js.UndefOr[Double] = js.native
+  var invalidMessageDeliveriesWeight: js.UndefOr[Double] = js.undefined
   
-  var meshFailurePenaltyDecay: js.UndefOr[Double] = js.native
+  var meshFailurePenaltyDecay: js.UndefOr[Double] = js.undefined
   
-  var meshFailurePenaltyWeight: js.UndefOr[Double] = js.native
+  var meshFailurePenaltyWeight: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveriesActivation: js.UndefOr[Double] = js.native
+  var meshMessageDeliveriesActivation: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveriesCap: js.UndefOr[Double] = js.native
+  var meshMessageDeliveriesCap: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveriesDecay: js.UndefOr[Double] = js.native
+  var meshMessageDeliveriesDecay: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveriesThreshold: js.UndefOr[Double] = js.native
+  var meshMessageDeliveriesThreshold: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveriesWeight: js.UndefOr[Double] = js.native
+  var meshMessageDeliveriesWeight: js.UndefOr[Double] = js.undefined
   
-  var meshMessageDeliveriesWindow: js.UndefOr[Double] = js.native
+  var meshMessageDeliveriesWindow: js.UndefOr[Double] = js.undefined
   
-  var timeInMeshCap: js.UndefOr[Double] = js.native
+  var timeInMeshCap: js.UndefOr[Double] = js.undefined
   
-  var timeInMeshQuantum: js.UndefOr[Double] = js.native
+  var timeInMeshQuantum: js.UndefOr[Double] = js.undefined
   
-  var timeInMeshWeight: js.UndefOr[Double] = js.native
+  var timeInMeshWeight: js.UndefOr[Double] = js.undefined
   
-  var topicWeight: js.UndefOr[Double] = js.native
+  var topicWeight: js.UndefOr[Double] = js.undefined
 }
 object PartialTopicScoreParams {
   

@@ -3,61 +3,59 @@ package typings.winrtUwp.Windows.Graphics.Printing
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of methods and properties for managing the options which define how the content is to be printed. */
-@js.native
 trait PrintTaskOptions extends StObject {
   
   /** Gets or sets the binding option for the print task. */
-  var binding: PrintBinding = js.native
+  var binding: PrintBinding
   
   /** Gets or sets the collation option of the print tasks. */
-  var collation: PrintCollation = js.native
+  var collation: PrintCollation
   
   /** Gets or sets the color mode option of the print task. */
-  var colorMode: PrintColorMode = js.native
+  var colorMode: PrintColorMode
   
   /** Gets the list of options displayed for the print experience. */
-  var displayedOptions: IVector[String] = js.native
+  var displayedOptions: IVector[String]
   
   /** Gets or sets the duplex option of the print task. */
-  var duplex: PrintDuplex = js.native
+  var duplex: PrintDuplex
   
   /**
     * Retrieves the physical dimensions of the printed page.
     * @param jobPageNumber The page number.
     * @return The page description data.
     */
-  def getPageDescription(jobPageNumber: Double): PrintPageDescription = js.native
+  def getPageDescription(jobPageNumber: Double): PrintPageDescription
   
   /** Gets or sets the hole punch option of the print task. */
-  var holePunch: PrintHolePunch = js.native
+  var holePunch: PrintHolePunch
   
   /** Gets the maximum number of copies supported for the print task. */
-  var maxCopies: Double = js.native
+  var maxCopies: Double
   
   /** Gets or sets the media size option of the print task. */
-  var mediaSize: PrintMediaSize = js.native
+  var mediaSize: PrintMediaSize
   
   /** Gets or sets the media type option for the print task. */
-  var mediaType: PrintMediaType = js.native
+  var mediaType: PrintMediaType
   
   /** Gets the minimum number of copies allowed for the print task. */
-  var minCopies: Double = js.native
+  var minCopies: Double
   
   /** Gets or sets the value for the number of copies for the print task. */
-  var numberOfCopies: Double = js.native
+  var numberOfCopies: Double
   
   /** Gets or sets the orientation option for the print task. */
-  var orientation: PrintOrientation = js.native
+  var orientation: PrintOrientation
   
   /** Gets or sets the print quality option for the print task. */
-  var printQuality: PrintQuality = js.native
+  var printQuality: PrintQuality
   
   /** Gets or sets the staple option for the print task. */
-  var staple: PrintStaple = js.native
+  var staple: PrintStaple
 }
 object PrintTaskOptions {
   

@@ -4,12 +4,14 @@ import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionS
 import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object choiceGroupOptionStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.styles", "getStyles")
+  @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.styles", JSImport.Namespace)
   @js.native
-  def getStyles(props: IChoiceGroupOptionStyleProps): IChoiceGroupOptionStyles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getStyles(props: IChoiceGroupOptionStyleProps): IChoiceGroupOptionStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IChoiceGroupOptionStyles]
 }

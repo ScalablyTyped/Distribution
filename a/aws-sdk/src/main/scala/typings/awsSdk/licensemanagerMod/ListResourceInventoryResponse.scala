@@ -2,21 +2,19 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourceInventoryResponse extends StObject {
   
   /**
     * Token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the resources.
     */
-  var ResourceInventoryList: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceInventoryList] = js.native
+  var ResourceInventoryList: js.UndefOr[typings.awsSdk.licensemanagerMod.ResourceInventoryList] = js.undefined
 }
 object ListResourceInventoryResponse {
   

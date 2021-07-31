@@ -2,16 +2,16 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceTokenCredentialsOptions extends LoginWithUsernamePasswordOptions {
+trait DeviceTokenCredentialsOptions
+  extends StObject
+     with LoginWithUsernamePasswordOptions {
   
   /**
     * The user name for account in the form: 'user@example.com'. Default value is 'user@example.com'.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object DeviceTokenCredentialsOptions {
   

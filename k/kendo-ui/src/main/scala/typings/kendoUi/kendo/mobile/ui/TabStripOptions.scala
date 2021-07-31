@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabStripOptions extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ TabStripSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ TabStripSelectEvent, Unit]] = js.undefined
   
-  var selectedIndex: js.UndefOr[Double] = js.native
+  var selectedIndex: js.UndefOr[Double] = js.undefined
 }
 object TabStripOptions {
   

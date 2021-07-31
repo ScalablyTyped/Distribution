@@ -2,19 +2,17 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntersectNode extends StObject {
   
-  var edge1: TEdge = js.native
+  var edge1: TEdge
   
-  var edge2: TEdge = js.native
+  var edge2: TEdge
   
-  var next: TEdge = js.native
+  var next: TEdge
   
-  var pt: TEdge = js.native
+  var pt: TEdge
 }
 object IntersectNode {
   

@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonGroupSelectEvent extends ButtonGroupEvent {
+trait ButtonGroupSelectEvent
+  extends StObject
+     with ButtonGroupEvent {
   
-  var indices: js.UndefOr[js.Any] = js.native
+  var indices: js.UndefOr[js.Any] = js.undefined
 }
 object ButtonGroupSelectEvent {
   

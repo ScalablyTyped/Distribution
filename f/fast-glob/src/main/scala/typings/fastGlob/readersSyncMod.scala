@@ -7,7 +7,6 @@ import typings.nodelibFsStat.settingsMod.Options
 import typings.nodelibFsStat.typesMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readersSyncMod {

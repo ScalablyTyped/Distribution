@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabLinkMod {
@@ -22,34 +21,33 @@ object tabLinkMod {
     def this(props: TabLinkProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TabLinkProps extends StObject {
     
-    var default: js.UndefOr[Boolean] = js.native
+    var default: js.UndefOr[Boolean] = js.undefined
     
-    var activeClassName: js.UndefOr[String] = js.native
+    var activeClassName: js.UndefOr[String] = js.undefined
     
-    var activeStyle: js.UndefOr[js.Object] = js.native
+    var activeStyle: js.UndefOr[js.Object] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
-    var disableInlineStyles: js.UndefOr[Boolean] = js.native
+    var disableInlineStyles: js.UndefOr[Boolean] = js.undefined
     
-    var handleSelect: js.UndefOr[js.Function2[/* tab */ String, /* name */ String, Unit]] = js.native
+    var handleSelect: js.UndefOr[js.Function2[/* tab */ String, /* name */ String, Unit]] = js.undefined
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var to: Double | String = js.native
+    var to: Double | String
   }
   object TabLinkProps {
     

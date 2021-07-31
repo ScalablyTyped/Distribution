@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a reusable hashing object and contains the result of a hashing operation. */
-@js.native
 trait CryptographicHash extends StObject {
   
   /**
     * Appends a binary encoded string to the data stored in the CryptographicHash object.
     * @param data Data to append.
     */
-  def append(data: IBuffer): Unit = js.native
+  def append(data: IBuffer): Unit
   
   /**
     * Gets hashed data from the CryptographicHash object and resets the object.
     * @return Hashed data.
     */
-  def getValueAndReset(): IBuffer = js.native
+  def getValueAndReset(): IBuffer
 }
 object CryptographicHash {
   

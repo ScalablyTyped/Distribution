@@ -4,7 +4,6 @@ import typings.businessRulesEngine.anon.Contains
 import typings.businessRulesEngine.mod.IError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeValidationMod {
@@ -19,19 +18,19 @@ object nodeValidationMod {
   object CompareOperator extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.businessRulesEngine.mod.CompareOperator with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.businessRulesEngine.mod.CompareOperator & Double] = js.native
     
-    /* 2 */ val Equal: typings.businessRulesEngine.mod.CompareOperator.Equal with Double = js.native
+    /* 2 */ val Equal: typings.businessRulesEngine.mod.CompareOperator.Equal & Double = js.native
     
-    /* 5 */ val GreaterThan: typings.businessRulesEngine.mod.CompareOperator.GreaterThan with Double = js.native
+    /* 5 */ val GreaterThan: typings.businessRulesEngine.mod.CompareOperator.GreaterThan & Double = js.native
     
-    /* 4 */ val GreaterThanEqual: typings.businessRulesEngine.mod.CompareOperator.GreaterThanEqual with Double = js.native
+    /* 4 */ val GreaterThanEqual: typings.businessRulesEngine.mod.CompareOperator.GreaterThanEqual & Double = js.native
     
-    /* 0 */ val LessThan: typings.businessRulesEngine.mod.CompareOperator.LessThan with Double = js.native
+    /* 0 */ val LessThan: typings.businessRulesEngine.mod.CompareOperator.LessThan & Double = js.native
     
-    /* 1 */ val LessThanEqual: typings.businessRulesEngine.mod.CompareOperator.LessThanEqual with Double = js.native
+    /* 1 */ val LessThanEqual: typings.businessRulesEngine.mod.CompareOperator.LessThanEqual & Double = js.native
     
-    /* 3 */ val NotEqual: typings.businessRulesEngine.mod.CompareOperator.NotEqual with Double = js.native
+    /* 3 */ val NotEqual: typings.businessRulesEngine.mod.CompareOperator.NotEqual & Double = js.native
   }
   
   @JSImport("node-validation", "CompositeValidationResult")
@@ -57,9 +56,8 @@ object nodeValidationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("node-validation", "MessageLocalization.GetValidationMessage")
-    @js.native
-    def GetValidationMessage(validator: js.Any): String = js.native
+    @scala.inline
+    def GetValidationMessage(validator: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("node-validation", "MessageLocalization.ValidationMessages")
     @js.native

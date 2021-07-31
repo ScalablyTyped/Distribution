@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInstallationMediaMessage extends StObject {
   
   /**
     * The installation medium ID.
     */
-  var InstallationMediaId: String = js.native
+  var InstallationMediaId: String
 }
 object DeleteInstallationMediaMessage {
   

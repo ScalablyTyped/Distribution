@@ -2,21 +2,19 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatistics3 extends StObject {
   
-  var badRecords: js.UndefOr[String] = js.native
+  var badRecords: js.UndefOr[String] = js.undefined
   
-  var inputFileBytes: js.UndefOr[String] = js.native
+  var inputFileBytes: js.UndefOr[String] = js.undefined
   
-  var inputFiles: js.UndefOr[String] = js.native
+  var inputFiles: js.UndefOr[String] = js.undefined
   
-  var outputBytes: js.UndefOr[String] = js.native
+  var outputBytes: js.UndefOr[String] = js.undefined
   
-  var outputRows: js.UndefOr[String] = js.native
+  var outputRows: js.UndefOr[String] = js.undefined
 }
 object JobStatistics3 {
   

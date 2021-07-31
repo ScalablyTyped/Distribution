@@ -11,8 +11,8 @@ Utility for mocking XMLHttpRequest.
 | Full name          | xhr-mock |
 | Keywords           | mock, xhr, test, fake, request, ajax, browser, xmlhttprequest, jquery, superagent, axios |
 | # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 3108045 |
+| # dependents       | 29 |
+| # downloads        | 4277511 |
 | # stars            | 2 |
 
 ## Links

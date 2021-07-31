@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInvitationsRequest extends StObject {
   
   /**
     * The maximum number of items to return in the response. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.undefined
   
   /**
     * The token that is required for pagination. On your first call to the ListInvitations operation, set the value of this parameter to NULL. For subsequent calls to the operation, to continue listing data, set the value of this parameter to the value returned from the previous response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
 }
 object ListInvitationsRequest {
   

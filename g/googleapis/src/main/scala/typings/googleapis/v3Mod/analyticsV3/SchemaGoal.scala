@@ -6,107 +6,105 @@ import typings.googleapis.anon.FirstStepRequired
 import typings.googleapis.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Analytics goal resource.
   */
-@js.native
 trait SchemaGoal extends StObject {
   
   /**
     * Account ID to which this goal belongs.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Determines whether this goal is active.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Time this goal was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * Details for the goal of the type EVENT.
     */
-  var eventDetails: js.UndefOr[EventConditions] = js.native
+  var eventDetails: js.UndefOr[EventConditions] = js.undefined
   
   /**
     * Goal ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Internal ID for the web property to which this goal belongs.
     */
-  var internalWebPropertyId: js.UndefOr[String] = js.native
+  var internalWebPropertyId: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for an Analytics goal.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Goal name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Parent link for a goal. Points to the view (profile) to which this goal
     * belongs.
     */
-  var parentLink: js.UndefOr[Href] = js.native
+  var parentLink: js.UndefOr[Href] = js.undefined
   
   /**
     * View (Profile) ID to which this goal belongs.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Link for this goal.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Goal type. Possible values are URL_DESTINATION, VISIT_TIME_ON_SITE,
     * VISIT_NUM_PAGES, AND EVENT.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Time this goal was last modified.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * Details for the goal of the type URL_DESTINATION.
     */
-  var urlDestinationDetails: js.UndefOr[FirstStepRequired] = js.native
+  var urlDestinationDetails: js.UndefOr[FirstStepRequired] = js.undefined
   
   /**
     * Goal value.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * Details for the goal of the type VISIT_NUM_PAGES.
     */
-  var visitNumPagesDetails: js.UndefOr[ComparisonValue] = js.native
+  var visitNumPagesDetails: js.UndefOr[ComparisonValue] = js.undefined
   
   /**
     * Details for the goal of the type VISIT_TIME_ON_SITE.
     */
-  var visitTimeOnSiteDetails: js.UndefOr[ComparisonValue] = js.native
+  var visitTimeOnSiteDetails: js.UndefOr[ComparisonValue] = js.undefined
   
   /**
     * Web property ID to which this goal belongs. The web property ID is of the
     * form UA-XXXXX-YY.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object SchemaGoal {
   

@@ -10,9 +10,9 @@ Undo history for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-history |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 106 |
-| # downloads        | 4717112 |
+| # releases         | 6 |
+| # dependents       | 129 |
+| # downloads        | 6475069 |
 | # stars            | 0 |
 
 ## Links

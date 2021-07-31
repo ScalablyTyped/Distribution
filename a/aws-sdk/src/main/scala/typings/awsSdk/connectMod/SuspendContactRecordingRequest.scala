@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuspendContactRecordingRequest extends StObject {
   
   /**
     * The identifier of the contact.
     */
-  var ContactId: typings.awsSdk.connectMod.ContactId = js.native
+  var ContactId: typings.awsSdk.connectMod.ContactId
   
   /**
     * The identifier of the contact. This is the identifier of the contact associated with the first interaction with the contact center.
     */
-  var InitialContactId: ContactId = js.native
+  var InitialContactId: ContactId
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
 }
 object SuspendContactRecordingRequest {
   

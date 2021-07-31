@@ -3,7 +3,6 @@ package typings.chartist.mod
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -70,7 +69,7 @@ trait ChartistStatic extends StObject {
   def roundWithPrecision(value: Double): Double = js.native
   def roundWithPrecision(value: Double, digits: Double): Double = js.native
   
-  def serialMap(arr: js.Array[_], cb: js.Function): js.Array[_] = js.native
+  def serialMap(arr: js.Array[js.Any], cb: js.Function): js.Array[js.Any] = js.native
   
   def serialize(data: String): String = js.native
   // this method is not documented, but it is used in the examples
@@ -79,5 +78,5 @@ trait ChartistStatic extends StObject {
   
   def sum(previous: Double, current: Double): Double = js.native
   
-  def times(length: Double): js.Array[_] = js.native
+  def times(length: Double): js.Array[js.Any] = js.native
 }

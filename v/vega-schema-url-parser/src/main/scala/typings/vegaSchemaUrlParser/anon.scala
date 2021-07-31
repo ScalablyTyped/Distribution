@@ -4,17 +4,15 @@ import typings.vegaSchemaUrlParser.vegaSchemaUrlParserStrings.`vega-lite`
 import typings.vegaSchemaUrlParser.vegaSchemaUrlParserStrings.vega
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Library extends StObject {
     
-    var library: vega | `vega-lite` = js.native
+    var library: vega | `vega-lite`
     
-    var version: String = js.native
+    var version: String
   }
   object Library {
     

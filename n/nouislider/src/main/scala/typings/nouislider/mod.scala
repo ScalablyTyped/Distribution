@@ -15,20 +15,25 @@ import typings.nouislider.nouisliderStrings.steps
 import typings.nouislider.nouisliderStrings.upper
 import typings.nouislider.nouisliderStrings.values
 import typings.nouislider.nouisliderStrings.vertical
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("nouislider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * To create a slider, call noUiSlider.create() with an element and your options.
     */
-  @JSImport("nouislider", "create")
-  @js.native
-  def create(target: HTMLElement, options: Options): noUiSlider = js.native
+  @scala.inline
+  def create(target: HTMLElement, options: Options): noUiSlider = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[noUiSlider]
   
   type Callback = js.Function3[
     /* values */ js.Array[js.Any], 
@@ -38,29 +43,44 @@ object mod {
   ]
   
   @js.native
-  trait Instance extends HTMLElement {
+  trait Instance
+    extends StObject
+       with HTMLElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var noUiSlider: typings.nouislider.mod.noUiSlider = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Set the animate option to false to prevent the slider from animating to a new value with when calling .val().
       */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The animationDuration option can be used to set the animation speed assumed by the slider library.
       * In addition to this, you must manually set the CSS (-webkit-)transition property for the .noUi-state-tap .noUi-origin selector.
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * All values on the slider are part of a range. The range has a minimum and maximum value.
       */
-    var behaviour: js.UndefOr[String] = js.native
+    var behaviour: js.UndefOr[String] = js.undefined
     
     /**
       * The connect option can be used to control the bar between the handles or the edges of the slider.
@@ -69,14 +89,14 @@ object mod {
       * including the edges of the slider. The length of this array must match the handle `count + 1`.
       * Setting `true` sets the bars between the handles, but not between the handles and the sliders edges.
       */
-    var connect: js.UndefOr[lower | upper | Boolean | js.Array[Boolean]] = js.native
+    var connect: js.UndefOr[lower | upper | Boolean | js.Array[Boolean]] = js.undefined
     
     /**
       * By default the sliders are top-to-bottom and left-to-right,
       * but you can change this using the direction option,
       * which decides where the upper side of the slider is.
       */
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
     /**
       * To format the slider output, noUiSlider offers a format option.
@@ -84,62 +104,62 @@ object mod {
       * See manual formatting to the right for usage information.
       * By default, noUiSlider will format output with 2 decimals.
       */
-    var format: js.UndefOr[js.Object | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var format: js.UndefOr[js.Object | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
     /**
       * The limit option is the opposite of the margin option,
       * limiting the maximum distance between two handles.
       * As with the margin option, the limit option can only be used on linear sliders.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * When using two handles, the minimum distance between the handles can be set using the margin option.
       * The margin value is relative to the value set in 'range'.
       * This option is only available on standard linear sliders.
       */
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     /**
       * The orientation setting can be used to set the slider to "vertical" or "horizontal".
       * Set dimensions! Vertical sliders don't assume a default height, so you'll need to set one.
       * You can use any unit you want, including % or px.
       */
-    var orientation: js.UndefOr[vertical | horizontal] = js.native
+    var orientation: js.UndefOr[vertical | horizontal] = js.undefined
     
     /**
       * Padding limits how close to the slider edges handles can be.
       */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
     /**
       * Allows you to generate points along the slider.
       */
-    var pips: js.UndefOr[PipsOptions] = js.native
+    var pips: js.UndefOr[PipsOptions] = js.undefined
     
     /**
       * All values on the slider are part of a range. The range has a minimum and maximum value.
       * The minimum value cannot be equal to the maximum value.
       */
-    var range: StringDictionary[Double | js.Array[Double]] = js.native
+    var range: StringDictionary[Double | js.Array[Double]]
     
     /**
       * When a non-linear slider has been configured, the snap option can be set to true to force the slider to jump
       * between the specified values.
       */
-    var snap: js.UndefOr[Boolean] = js.native
+    var snap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The start option sets the number of handles and their start positions, relative to range.
       */
-    var start: Double | (js.Array[js.Array[Double] | Double]) = js.native
+    var start: Double | (js.Array[js.Array[Double] | Double])
     
     /**
       * By default, the slider slides fluently.
       * In order to make the handles jump between intervals, you can use this option.
       * The step option is relative to the values provided to range.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * noUiSlider can provide a basic tooltip without using its events system.
@@ -147,7 +167,7 @@ object mod {
       * This option can also accept formatting options to format the tooltips content.
       * In that case, pass an array with a formatter for each handle, true to use the default or false to display no tooltip.
       */
-    var tooltips: js.UndefOr[Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var tooltips: js.UndefOr[Boolean | js.Object | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
   }
   object Options {
     
@@ -197,10 +217,10 @@ object mod {
       def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       @scala.inline
-      def setFormat(value: js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      def setFormat(value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFormatFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      def setFormatFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -257,10 +277,10 @@ object mod {
       def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
       @scala.inline
-      def setTooltips(value: Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+      def setTooltips(value: Boolean | js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTooltipsFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "tooltips", js.Any.fromFunction1(value))
+      def setTooltipsFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "tooltips", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
@@ -285,7 +305,6 @@ object mod {
     def SmallValue: `2` = 2.asInstanceOf[`2`]
   }
   
-  @js.native
   trait PipsOptions extends StObject {
     
     /**
@@ -294,19 +313,19 @@ object mod {
       * Positions Mode: percentage-based positions on the slider
       * Count Mode: positions between pips
       */
-    var density: js.UndefOr[Double] = js.native
+    var density: js.UndefOr[Double] = js.undefined
     
     /**
       * Step Mode: The filter option can be used to filter the generated pips.
       * The filter function must return 0 (no value), 1 (large value) or 2 (small value).
       */
-    var filter: js.UndefOr[js.Function1[/* repeated */ js.Any, PipFilterResult]] = js.native
+    var filter: js.UndefOr[js.Function1[/* repeated */ js.Any, PipFilterResult]] = js.undefined
     
     /**
       * format for step mode
       * see noUiSlider format
       */
-    var format: js.UndefOr[js.Object | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var format: js.UndefOr[js.Object | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
     /**
       * The 'range' mode uses the slider range to determine where the pips should be. A pip is generated for every percentage specified.
@@ -323,19 +342,19 @@ object mod {
       * The 'values' mode is similar to positions, but it accepts values instead of percentages. The stepped option can be used for this mode.
       *
       */
-    var mode: range | steps | positions | count | values = js.native
+    var mode: range | steps | positions | count | values
     
     /**
       * stepped option for positions, values and count mode
       */
-    var stepped: js.UndefOr[Boolean] = js.native
+    var stepped: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
       * values for positions and values mode
       * number pips for count mode
       */
-    var values: js.UndefOr[Double | js.Array[Double]] = js.native
+    var values: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object PipsOptions {
     
@@ -361,10 +380,10 @@ object mod {
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       @scala.inline
-      def setFormat(value: js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      def setFormat(value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFormatFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      def setFormatFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -394,40 +413,39 @@ object mod {
     * The value null can be used to unset a previously set value.
     */
   /* Inlined std.Partial<nouislider.nouislider.Options> */
-  @js.native
   trait UpdateOptions extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var behaviour: js.UndefOr[String] = js.native
+    var behaviour: js.UndefOr[String] = js.undefined
     
-    var connect: js.UndefOr[lower | upper | Boolean | js.Array[Boolean]] = js.native
+    var connect: js.UndefOr[lower | upper | Boolean | js.Array[Boolean]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var format: js.UndefOr[js.Object | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var format: js.UndefOr[js.Object | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[vertical | horizontal] = js.native
+    var orientation: js.UndefOr[vertical | horizontal] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var pips: js.UndefOr[PipsOptions] = js.native
+    var pips: js.UndefOr[PipsOptions] = js.undefined
     
-    var range: js.UndefOr[StringDictionary[Double | js.Array[Double]]] = js.native
+    var range: js.UndefOr[StringDictionary[Double | js.Array[Double]]] = js.undefined
     
-    var snap: js.UndefOr[Boolean] = js.native
+    var snap: js.UndefOr[Boolean] = js.undefined
     
-    var start: js.UndefOr[Double | (js.Array[js.Array[Double] | Double])] = js.native
+    var start: js.UndefOr[Double | (js.Array[js.Array[Double] | Double])] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var tooltips: js.UndefOr[Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var tooltips: js.UndefOr[Boolean | js.Object | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
   }
   object UpdateOptions {
     
@@ -474,10 +492,10 @@ object mod {
       def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       @scala.inline
-      def setFormat(value: js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      def setFormat(value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFormatFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      def setFormatFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -540,10 +558,10 @@ object mod {
       def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
       @scala.inline
-      def setTooltips(value: Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+      def setTooltips(value: Boolean | js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTooltipsFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "tooltips", js.Any.fromFunction1(value))
+      def setTooltipsFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "tooltips", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)

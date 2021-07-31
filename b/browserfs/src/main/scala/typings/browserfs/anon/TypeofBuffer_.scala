@@ -6,11 +6,12 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofBuffer_ extends Instantiable1[/* str */ String, Buffer] {
+trait TypeofBuffer_
+  extends StObject
+     with Instantiable1[/* str */ String, Buffer] {
   
   /**
     * Allocates a new buffer of {size} octets.
@@ -21,11 +22,11 @@ trait TypeofBuffer_ extends Instantiable1[/* str */ String, Buffer] {
     * @param encoding encoding used for call to buf.fill while initializing
     */
   def alloc(size: Double): Buffer = js.native
-  def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: String): Buffer = js.native
   def alloc(size: Double, fill: String): Buffer = js.native
   def alloc(size: Double, fill: String, encoding: String): Buffer = js.native
   def alloc(size: Double, fill: Double): Buffer = js.native
   def alloc(size: Double, fill: Double, encoding: String): Buffer = js.native
+  def alloc(size: Double, fill: Unit, encoding: String): Buffer = js.native
   def alloc(size: Double, fill: Buffer): Buffer = js.native
   def alloc(size: Double, fill: Buffer, encoding: String): Buffer = js.native
   
@@ -85,15 +86,15 @@ trait TypeofBuffer_ extends Instantiable1[/* str */ String, Buffer] {
     * @param length
     */
   def from(arrayBuffer: ArrayBuffer): Buffer = js.native
-  def from(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: Double): Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): Buffer = js.native
+  def from(arrayBuffer: ArrayBuffer, byteOffset: Unit, length: Double): Buffer = js.native
   /**
     * Allocates a new Buffer using an {array} of octets.
     *
     * @param array
     */
-  def from(array: js.Array[_]): Buffer = js.native
+  def from(array: js.Array[js.Any]): Buffer = js.native
   /**
     * Copies the passed {buffer} data onto a new Buffer instance.
     *

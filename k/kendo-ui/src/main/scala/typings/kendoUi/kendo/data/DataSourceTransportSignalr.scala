@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceTransportSignalr extends StObject {
   
-  var client: js.UndefOr[DataSourceTransportSignalrClient] = js.native
+  var client: js.UndefOr[DataSourceTransportSignalrClient] = js.undefined
   
-  var hub: js.UndefOr[js.Any] = js.native
+  var hub: js.UndefOr[js.Any] = js.undefined
   
-  var promise: js.UndefOr[js.Any] = js.native
+  var promise: js.UndefOr[js.Any] = js.undefined
   
-  var server: js.UndefOr[DataSourceTransportSignalrServer] = js.native
+  var server: js.UndefOr[DataSourceTransportSignalrServer] = js.undefined
 }
 object DataSourceTransportSignalr {
   

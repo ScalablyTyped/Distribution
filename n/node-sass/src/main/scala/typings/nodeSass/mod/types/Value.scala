@@ -2,7 +2,6 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeSass.mod.types.List
   - typings.nodeSass.mod.types.Map
 */
-trait Value extends ReturnValue
+trait Value
+  extends StObject
+     with ReturnValue
 object Value {
   
   @scala.inline

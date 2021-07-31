@@ -2,22 +2,20 @@ package typings.nodeRedRegistry.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Node Instance Definition Object
   */
-@js.native
 trait NodeDef extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var z: String = js.native
+  var z: String
 }
 object NodeDef {
   

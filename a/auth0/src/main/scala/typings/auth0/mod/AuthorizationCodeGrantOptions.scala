@@ -2,15 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationCodeGrantOptions extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var redirect_uri: String = js.native
+  var redirect_uri: String
 }
 object AuthorizationCodeGrantOptions {
   

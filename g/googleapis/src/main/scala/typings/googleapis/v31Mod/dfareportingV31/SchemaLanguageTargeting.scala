@@ -2,13 +2,11 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Language Targeting.
   */
-@js.native
 trait SchemaLanguageTargeting extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaLanguageTargeting extends StObject {
     * required. The other fields are populated automatically when the ad is
     * inserted or updated.
     */
-  var languages: js.UndefOr[js.Array[SchemaLanguage]] = js.native
+  var languages: js.UndefOr[js.Array[SchemaLanguage]] = js.undefined
 }
 object SchemaLanguageTargeting {
   

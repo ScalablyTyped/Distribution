@@ -9,172 +9,170 @@ import typings.googleapis.anon.ReportTime
 import typings.googleapis.anon.VolumeInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Chrome Os Device resource in Directory API.
   */
-@js.native
 trait SchemaChromeOsDevice extends StObject {
   
   /**
     * List of active time ranges (Read-only)
     */
-  var activeTimeRanges: js.UndefOr[js.Array[ActiveTime]] = js.native
+  var activeTimeRanges: js.UndefOr[js.Array[ActiveTime]] = js.undefined
   
   /**
     * AssetId specified during enrollment or through later annotation
     */
-  var annotatedAssetId: js.UndefOr[String] = js.native
+  var annotatedAssetId: js.UndefOr[String] = js.undefined
   
   /**
     * Address or location of the device as noted by the administrator
     */
-  var annotatedLocation: js.UndefOr[String] = js.native
+  var annotatedLocation: js.UndefOr[String] = js.undefined
   
   /**
     * User of the device
     */
-  var annotatedUser: js.UndefOr[String] = js.native
+  var annotatedUser: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook boot mode (Read-only)
     */
-  var bootMode: js.UndefOr[String] = js.native
+  var bootMode: js.UndefOr[String] = js.undefined
   
   /**
     * Reports of CPU utilization and temperature (Read-only)
     */
-  var cpuStatusReports: js.UndefOr[js.Array[CpuTemperatureInfo]] = js.native
+  var cpuStatusReports: js.UndefOr[js.Array[CpuTemperatureInfo]] = js.undefined
   
   /**
     * List of device files to download (Read-only)
     */
-  var deviceFiles: js.UndefOr[js.Array[CreateTime]] = js.native
+  var deviceFiles: js.UndefOr[js.Array[CreateTime]] = js.undefined
   
   /**
     * Unique identifier of Chrome OS Device (Read-only)
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * Reports of disk space and other info about mounted/connected volumes.
     */
-  var diskVolumeReports: js.UndefOr[js.Array[VolumeInfo]] = js.native
+  var diskVolumeReports: js.UndefOr[js.Array[VolumeInfo]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook Mac Address on ethernet network interface (Read-only)
     */
-  var ethernetMacAddress: js.UndefOr[String] = js.native
+  var ethernetMacAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook firmware version (Read-only)
     */
-  var firmwareVersion: js.UndefOr[String] = js.native
+  var firmwareVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Date and time the device was last enrolled (Read-only)
     */
-  var lastEnrollmentTime: js.UndefOr[String] = js.native
+  var lastEnrollmentTime: js.UndefOr[String] = js.undefined
   
   /**
     * Date and time the device was last synchronized with the policy settings
     * in the G Suite administrator control panel (Read-only)
     */
-  var lastSync: js.UndefOr[String] = js.native
+  var lastSync: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook Mac Address on wifi network interface (Read-only)
     */
-  var macAddress: js.UndefOr[String] = js.native
+  var macAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Equipment identifier for the 3G mobile card in the Chromebook
     * (Read-only)
     */
-  var meid: js.UndefOr[String] = js.native
+  var meid: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook Model (Read-only)
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * Notes added by the administrator
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook order number (Read-only)
     */
-  var orderNumber: js.UndefOr[String] = js.native
+  var orderNumber: js.UndefOr[String] = js.undefined
   
   /**
     * OrgUnit of the device
     */
-  var orgUnitPath: js.UndefOr[String] = js.native
+  var orgUnitPath: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook Os Version (Read-only)
     */
-  var osVersion: js.UndefOr[String] = js.native
+  var osVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Chromebook platform version (Read-only)
     */
-  var platformVersion: js.UndefOr[String] = js.native
+  var platformVersion: js.UndefOr[String] = js.undefined
   
   /**
     * List of recent device users, in descending order by last login time
     * (Read-only)
     */
-  var recentUsers: js.UndefOr[js.Array[Email]] = js.native
+  var recentUsers: js.UndefOr[js.Array[Email]] = js.undefined
   
   /**
     * Chromebook serial number (Read-only)
     */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
   
   /**
     * status of the device (Read-only)
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Final date the device will be supported (Read-only)
     */
-  var supportEndDate: js.UndefOr[String] = js.native
+  var supportEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * Reports of amounts of available RAM memory (Read-only)
     */
-  var systemRamFreeReports: js.UndefOr[js.Array[ReportTime]] = js.native
+  var systemRamFreeReports: js.UndefOr[js.Array[ReportTime]] = js.undefined
   
   /**
     * Total RAM on the device [in bytes] (Read-only)
     */
-  var systemRamTotal: js.UndefOr[String] = js.native
+  var systemRamTotal: js.UndefOr[String] = js.undefined
   
   /**
     * Trusted Platform Module (TPM) (Read-only)
     */
-  var tpmVersionInfo: js.UndefOr[Family] = js.native
+  var tpmVersionInfo: js.UndefOr[Family] = js.undefined
   
   /**
     * Will Chromebook auto renew after support end date (Read-only)
     */
-  var willAutoRenew: js.UndefOr[Boolean] = js.native
+  var willAutoRenew: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaChromeOsDevice {
   

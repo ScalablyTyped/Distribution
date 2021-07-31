@@ -3,15 +3,13 @@ package typings.reactOnsenui.anon
 import typings.reactOnsenui.mod.Navigator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnClick extends StObject {
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* navigator */ Navigator, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* navigator */ Navigator, Unit]] = js.undefined
 }
 object OnClick {
   

@@ -3,42 +3,42 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to perform cursor movements through sentences. */
-@js.native
-trait XSentenceCursor extends XTextCursor {
+trait XSentenceCursor
+  extends StObject
+     with XTextCursor {
   
   /**
     * moves the cursor to the end of the current sentence.
     * @returns `TRUE` if the cursor is now at the end of a sentence, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoEndOfSentence(Expand: Boolean): Boolean = js.native
+  def gotoEndOfSentence(Expand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the next sentence.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoNextSentence(Expand: Boolean): Boolean = js.native
+  def gotoNextSentence(Expand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the previous sentence.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoPreviousSentence(Expand: Boolean): Boolean = js.native
+  def gotoPreviousSentence(Expand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the current sentence.
     * @returns `TRUE` if the cursor is now at the start of a sentence, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoStartOfSentence(Expand: Boolean): Boolean = js.native
+  def gotoStartOfSentence(Expand: Boolean): Boolean
   
   /** determines if the cursor is positioned at the end of a sentence. */
-  def isEndOfSentence(): Boolean = js.native
+  def isEndOfSentence(): Boolean
   
   /** determines if the cursor is positioned at the start of a sentence. */
-  def isStartOfSentence(): Boolean = js.native
+  def isStartOfSentence(): Boolean
 }
 object XSentenceCursor {
   

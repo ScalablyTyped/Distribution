@@ -2,14 +2,12 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICanvasPattern extends StObject {
   
   @JSName("MSHTML.ICanvasPattern_typekey")
-  var MSHTMLDotICanvasPattern_typekey: ICanvasPattern = js.native
+  var MSHTMLDotICanvasPattern_typekey: ICanvasPattern
 }
 object ICanvasPattern {
   

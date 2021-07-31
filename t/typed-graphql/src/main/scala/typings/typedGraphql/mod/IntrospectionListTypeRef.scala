@@ -3,21 +3,21 @@ package typings.typedGraphql.mod
 import typings.typedGraphql.typedGraphqlStrings.LIST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IntrospectionListTypeRef extends IntrospectionTypeRef {
+trait IntrospectionListTypeRef
+  extends StObject
+     with IntrospectionTypeRef {
   
-  var kind: LIST = js.native
+  var kind: LIST
   
-  var ofType: js.UndefOr[IntrospectionTypeRef] = js.native
+  var ofType: js.UndefOr[IntrospectionTypeRef] = js.undefined
 }
 object IntrospectionListTypeRef {
   
   @scala.inline
-  def apply(kind: LIST): IntrospectionListTypeRef = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def apply(): IntrospectionListTypeRef = {
+    val __obj = js.Dynamic.literal(kind = "LIST")
     __obj.asInstanceOf[IntrospectionListTypeRef]
   }
   

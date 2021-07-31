@@ -2,15 +2,13 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableMixedMap extends StObject {
   
-  var disableMixedMap: js.UndefOr[Boolean] = js.native
+  var disableMixedMap: js.UndefOr[Boolean] = js.undefined
   
-  var relations: js.UndefOr[js.Array[String]] = js.native
+  var relations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DisableMixedMap {
   

@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxPopupControl control.
   */
 @js.native
-trait ASPxClientPopupControl extends ASPxClientPopupControlBase {
+trait ASPxClientPopupControl
+  extends StObject
+     with ASPxClientPopupControlBase {
   
   /**
     * Brings the specified popup window to the front of the z-order.

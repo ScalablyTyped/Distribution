@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * An opaque string that indicates the position at which to begin returning the next list of resource tags.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
   
   /**
     * Array of resource tags.
     */
-  var Tags: js.UndefOr[OutputTagList] = js.native
+  var Tags: js.UndefOr[OutputTagList] = js.undefined
 }
 object ListTagsForResourceResponse {
   

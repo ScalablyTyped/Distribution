@@ -3,34 +3,34 @@ package typings.sbd
 import typings.sbd.sbdBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sbd", "sentences")
+  @JSImport("sbd", JSImport.Namespace)
   @js.native
-  def sentences(text: String): js.Array[String] = js.native
-  @JSImport("sbd", "sentences")
-  @js.native
-  def sentences(text: String, options: Options): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def sentences(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sentences")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sentences(text: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sentences")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait Options extends StObject {
     
-    var abbreviations: js.UndefOr[js.Array[String]] = js.native
+    var abbreviations: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowed_tags: js.UndefOr[`false` | js.Array[String]] = js.native
+    var allowed_tags: js.UndefOr[`false` | js.Array[String]] = js.undefined
     
-    var html_boundaries: js.UndefOr[Boolean] = js.native
+    var html_boundaries: js.UndefOr[Boolean] = js.undefined
     
-    var html_boundaries_tags: js.UndefOr[js.Array[String]] = js.native
+    var html_boundaries_tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var newline_boundaries: js.UndefOr[Boolean] = js.native
+    var newline_boundaries: js.UndefOr[Boolean] = js.undefined
     
-    var preserve_whitespace: js.UndefOr[Boolean] = js.native
+    var preserve_whitespace: js.UndefOr[Boolean] = js.undefined
     
-    var sanitize: js.UndefOr[Boolean] = js.native
+    var sanitize: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

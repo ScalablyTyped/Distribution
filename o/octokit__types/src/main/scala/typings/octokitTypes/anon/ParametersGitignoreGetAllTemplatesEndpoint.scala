@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.GitignoreGetAllTemplatesResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersGitignoreGetAllTemplatesEndpoint extends StObject {
   
-  var parameters: GitignoreGetAllTemplatesEndpoint = js.native
+  var parameters: GitignoreGetAllTemplatesEndpoint
   
-  var request: GitignoreGetAllTemplatesRequestOptions = js.native
+  var request: GitignoreGetAllTemplatesRequestOptions
   
-  var response: OctokitResponse[GitignoreGetAllTemplatesResponseData] = js.native
+  var response: OctokitResponse[GitignoreGetAllTemplatesResponseData]
 }
 object ParametersGitignoreGetAllTemplatesEndpoint {
   

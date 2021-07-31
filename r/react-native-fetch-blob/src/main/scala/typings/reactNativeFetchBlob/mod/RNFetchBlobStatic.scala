@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeFetchBlob.anon.Decode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,9 +19,9 @@ trait RNFetchBlobStatic extends StObject {
   def config(options: RNFetchBlobConfig): RNFetchBlobStatic = js.native
   
   def fetch(method: Methods, url: String): StatefulPromise[FetchBlobResponse] = js.native
-  def fetch(method: Methods, url: String, headers: js.UndefOr[scala.Nothing], body: js.Any): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(method: Methods, url: String, headers: StringDictionary[String]): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(method: Methods, url: String, headers: StringDictionary[String], body: js.Any): StatefulPromise[FetchBlobResponse] = js.native
+  def fetch(method: Methods, url: String, headers: Unit, body: js.Any): StatefulPromise[FetchBlobResponse] = js.native
   
   var fs: FS = js.native
   

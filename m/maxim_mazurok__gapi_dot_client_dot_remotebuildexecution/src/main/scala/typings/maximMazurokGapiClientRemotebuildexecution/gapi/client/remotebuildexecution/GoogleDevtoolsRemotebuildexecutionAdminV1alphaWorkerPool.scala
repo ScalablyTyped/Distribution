@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends StObject {
   
   /** The autoscale policy to apply on a pool. */
-  var autoscale: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale] = js.native
+  var autoscale: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale] = js.undefined
   
   /** Channel specifies the release channel of the pool. */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /**
     * WorkerPool resource name formatted as: `projects/[PROJECT_ID]/instances/[INSTANCE_ID]/workerpools/[POOL_ID]`. name should not be populated when creating a worker pool since it is
     * provided in the `poolId` field.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. State of the worker pool. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Specifies the properties, such as machine type and disk size, used for creating workers in a worker pool. */
-  var workerConfig: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] = js.native
+  var workerConfig: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] = js.undefined
   
   /** The desired number of workers in the worker pool. Must be a value between 0 and 15000. */
-  var workerCount: js.UndefOr[String] = js.native
+  var workerCount: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
   

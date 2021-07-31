@@ -2,23 +2,21 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of connection.getStatementInfo().
   */
-@js.native
 trait StatementInfo[T] extends StObject {
   
   /** Array of strings corresponding to the unique names of the bind variables used in the SQL statement. */
-  var bindNames: js.UndefOr[js.Array[String]] = js.native
+  var bindNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Extended metadata properties. */
-  var metaData: js.UndefOr[js.Array[Metadata[T]]] = js.native
+  var metaData: js.UndefOr[js.Array[Metadata[T]]] = js.undefined
   
   /** One of the SQL Statement Type Constants. */
-  var statementType: js.UndefOr[Double] = js.native
+  var statementType: js.UndefOr[Double] = js.undefined
 }
 object StatementInfo {
   
@@ -29,7 +27,7 @@ object StatementInfo {
   }
   
   @scala.inline
-  implicit class StatementInfoMutableBuilder[Self <: StatementInfo[_], T] (val x: Self with StatementInfo[T]) extends AnyVal {
+  implicit class StatementInfoMutableBuilder[Self <: StatementInfo[?], T] (val x: Self & StatementInfo[T]) extends AnyVal {
     
     @scala.inline
     def setBindNames(value: js.Array[String]): Self = StObject.set(x, "bindNames", value.asInstanceOf[js.Any])

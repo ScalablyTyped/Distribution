@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListComplianceSummariesRequest extends StObject {
   
   /**
     * One or more compliance or inventory filters. Use a filter to return a more specific list of results.
     */
-  var Filters: js.UndefOr[ComplianceStringFilterList] = js.native
+  var Filters: js.UndefOr[ComplianceStringFilterList] = js.undefined
   
   /**
     * The maximum number of items to return for this call. Currently, you can specify null or 50. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object ListComplianceSummariesRequest {
   

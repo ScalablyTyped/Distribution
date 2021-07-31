@@ -2,15 +2,13 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait After extends StObject {
   
-  var after: String = js.native
+  var after: String
   
-  var before: String = js.native
+  var before: String
 }
 object After {
   

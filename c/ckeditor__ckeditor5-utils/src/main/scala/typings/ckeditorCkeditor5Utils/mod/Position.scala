@@ -2,17 +2,15 @@ package typings.ckeditorCkeditor5Utils.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var left: Double = js.native
+  var left: Double
   
-  var name: String = js.native
+  var name: String
   
-  var top: Double = js.native
+  var top: Double
 }
 object Position {
   

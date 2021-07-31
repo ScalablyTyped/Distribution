@@ -6,19 +6,17 @@ import typings.jsmediatags.mediaFileReaderMod.default
 import typings.jsmediatags.typesMod.ByteRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AvoidHeadRequests extends StObject {
     
-    var avoidHeadRequests: Boolean = js.native
+    var avoidHeadRequests: Boolean
     
-    var disallowedXhrHeaders: js.Array[String] = js.native
+    var disallowedXhrHeaders: js.Array[String]
     
-    var timeoutInSec: Double = js.native
+    var timeoutInSec: Double
   }
   object AvoidHeadRequests {
     
@@ -45,14 +43,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CRC extends StObject {
     
-    var CRC: Double = js.native
+    var CRC: Double
     
-    var RESTRICTIONS: Double = js.native
+    var RESTRICTIONS: Double
     
-    var UPDATE: Double = js.native
+    var UPDATE: Double
   }
   object CRC {
     
@@ -76,18 +73,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Compression extends StObject {
     
-    var compression: Boolean = js.native
+    var compression: Boolean
     
-    var data_length_indicator: Boolean = js.native
+    var data_length_indicator: Boolean
     
-    var encryption: Boolean = js.native
+    var encryption: Boolean
     
-    var grouping_identity: Boolean = js.native
+    var grouping_identity: Boolean
     
-    var unsynchronisation: Boolean = js.native
+    var unsynchronisation: Boolean
   }
   object Compression {
     
@@ -123,14 +119,13 @@ object anon {
     }
   }
   
-  @js.native
   trait EndIx extends StObject {
     
-    var endIx: Double = js.native
+    var endIx: Double
     
-    var insertIx: js.UndefOr[Double] = js.native
+    var insertIx: js.UndefOr[Double] = js.undefined
     
-    var startIx: Double = js.native
+    var startIx: Double
   }
   object EndIx {
     
@@ -157,14 +152,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Filealterpreservation extends StObject {
     
-    var file_alter_preservation: Boolean = js.native
+    var file_alter_preservation: Boolean
     
-    var read_only: Boolean = js.native
+    var read_only: Boolean
     
-    var tag_alter_preservation: Boolean = js.native
+    var tag_alter_preservation: Boolean
   }
   object Filealterpreservation {
     
@@ -190,7 +184,8 @@ object anon {
   
   @js.native
   trait TypeofMediaFileReader
-    extends Instantiable0[default]
+    extends StObject
+       with Instantiable0[default]
        with Instantiable1[/* path */ js.Any, default] {
     
     def canReadFile(file: js.Any): Boolean = js.native
@@ -198,7 +193,8 @@ object anon {
   
   @js.native
   trait TypeofMediaTagReader
-    extends Instantiable1[/* mediaFileReader */ default, typings.jsmediatags.mediaTagReaderMod.default] {
+    extends StObject
+       with Instantiable1[/* mediaFileReader */ default, typings.jsmediatags.mediaTagReaderMod.default] {
     
     def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
     

@@ -2,27 +2,26 @@ package typings.meteorAccountsPhone
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object Accounts {
     
-    @JSGlobal("Accounts.createUserWithPhone")
+    @JSGlobal("Accounts")
     @js.native
-    def createUserWithPhone(options: js.Object): Unit = js.native
-    @JSGlobal("Accounts.createUserWithPhone")
-    @js.native
-    def createUserWithPhone(options: js.Object, callback: js.Function): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Accounts.isPhoneVerified")
-    @js.native
-    def isPhoneVerified(): Boolean = js.native
+    @scala.inline
+    def createUserWithPhone(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserWithPhone")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def createUserWithPhone(options: js.Object, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUserWithPhone")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("Accounts.onPhoneVerification")
-    @js.native
-    def onPhoneVerification(func: js.Function): Unit = js.native
+    @scala.inline
+    def isPhoneVerified(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhoneVerified")().asInstanceOf[Boolean]
+    
+    @scala.inline
+    def onPhoneVerification(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPhoneVerification")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     object options {
       
@@ -79,50 +78,46 @@ object global {
       def verificationWaitTime_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verificationWaitTime")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("Accounts.requestPhoneVerification")
-    @js.native
-    def requestPhoneVerification(phone: String): Unit = js.native
-    @JSGlobal("Accounts.requestPhoneVerification")
-    @js.native
-    def requestPhoneVerification(phone: String, callback: js.Function): Unit = js.native
+    @scala.inline
+    def requestPhoneVerification(phone: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPhoneVerification")(phone.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def requestPhoneVerification(phone: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestPhoneVerification")(phone.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("Accounts.verifyPhone")
-    @js.native
-    def verifyPhone(phone: String, code: String): Unit = js.native
-    @JSGlobal("Accounts.verifyPhone")
-    @js.native
-    def verifyPhone(phone: String, code: String, newPassword: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
-    @JSGlobal("Accounts.verifyPhone")
-    @js.native
-    def verifyPhone(phone: String, code: String, newPassword: String): Unit = js.native
-    @JSGlobal("Accounts.verifyPhone")
-    @js.native
-    def verifyPhone(phone: String, code: String, newPassword: String, callback: js.Function): Unit = js.native
-    @JSGlobal("Accounts.verifyPhone")
-    @js.native
-    def verifyPhone(phone: String, code: String, newPassword: js.Function): Unit = js.native
-    @JSGlobal("Accounts.verifyPhone")
-    @js.native
-    def verifyPhone(phone: String, code: String, newPassword: js.Function, callback: js.Function): Unit = js.native
+    @scala.inline
+    def verifyPhone(phone: String, code: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPhone")(phone.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def verifyPhone(phone: String, code: String, newPassword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPhone")(phone.asInstanceOf[js.Any], code.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def verifyPhone(phone: String, code: String, newPassword: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPhone")(phone.asInstanceOf[js.Any], code.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def verifyPhone(phone: String, code: String, newPassword: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPhone")(phone.asInstanceOf[js.Any], code.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def verifyPhone(phone: String, code: String, newPassword: js.Function, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPhone")(phone.asInstanceOf[js.Any], code.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def verifyPhone(phone: String, code: String, newPassword: Unit, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPhone")(phone.asInstanceOf[js.Any], code.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object Meteor {
     
-    @JSGlobal("Meteor.loginWithPhoneAndPassword")
+    @JSGlobal("Meteor")
     @js.native
-    def loginWithPhoneAndPassword(selector: String, password: String): Unit = js.native
-    @JSGlobal("Meteor.loginWithPhoneAndPassword")
-    @js.native
-    def loginWithPhoneAndPassword(selector: String, password: String, callback: js.Function): Unit = js.native
-    @JSGlobal("Meteor.loginWithPhoneAndPassword")
-    @js.native
-    def loginWithPhoneAndPassword(selector: js.Object, password: String): Unit = js.native
-    @JSGlobal("Meteor.loginWithPhoneAndPassword")
-    @js.native
-    def loginWithPhoneAndPassword(selector: js.Object, password: String, callback: js.Function): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def loginWithPhoneAndPassword(selector: String, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loginWithPhoneAndPassword(selector: String, password: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loginWithPhoneAndPassword(selector: js.Object, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loginWithPhoneAndPassword(selector: js.Object, password: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPhoneAndPassword")(selector.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object SMS {
+    
+    @JSGlobal("SMS")
+    @js.native
+    val ^ : js.Any = js.native
     
     object phoneTemplate {
       
@@ -143,12 +138,10 @@ object global {
       def text_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("SMS.send")
-    @js.native
-    def send(options: js.Object): Unit = js.native
-    @JSGlobal("SMS.send")
-    @js.native
-    def send(options: js.Object, callback: js.Function): Unit = js.native
+    @scala.inline
+    def send(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def send(options: js.Object, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     object twilio {
       

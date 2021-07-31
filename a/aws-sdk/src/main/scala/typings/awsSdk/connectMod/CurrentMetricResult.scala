@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentMetricResult extends StObject {
   
   /**
     * The set of metrics.
     */
-  var Collections: js.UndefOr[CurrentMetricDataCollections] = js.native
+  var Collections: js.UndefOr[CurrentMetricDataCollections] = js.undefined
   
   /**
     * The dimensions for the metrics.
     */
-  var Dimensions: js.UndefOr[typings.awsSdk.connectMod.Dimensions] = js.native
+  var Dimensions: js.UndefOr[typings.awsSdk.connectMod.Dimensions] = js.undefined
 }
 object CurrentMetricResult {
   

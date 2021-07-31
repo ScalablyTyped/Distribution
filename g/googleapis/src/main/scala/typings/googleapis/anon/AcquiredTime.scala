@@ -4,49 +4,47 @@ import typings.googleapis.booksV1Mod.booksV1.SchemaReadingPosition
 import typings.googleapis.booksV1Mod.booksV1.SchemaReview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquiredTime extends StObject {
   
-  var acquiredTime: js.UndefOr[String] = js.native
+  var acquiredTime: js.UndefOr[String] = js.undefined
   
-  var acquisitionType: js.UndefOr[Double] = js.native
+  var acquisitionType: js.UndefOr[Double] = js.undefined
   
-  var copy: js.UndefOr[LimitType] = js.native
+  var copy: js.UndefOr[LimitType] = js.undefined
   
-  var entitlementType: js.UndefOr[Double] = js.native
+  var entitlementType: js.UndefOr[Double] = js.undefined
   
-  var familySharing: js.UndefOr[FamilyRole] = js.native
+  var familySharing: js.UndefOr[FamilyRole] = js.undefined
   
-  var isFamilySharedFromUser: js.UndefOr[Boolean] = js.native
+  var isFamilySharedFromUser: js.UndefOr[Boolean] = js.undefined
   
-  var isFamilySharedToUser: js.UndefOr[Boolean] = js.native
+  var isFamilySharedToUser: js.UndefOr[Boolean] = js.undefined
   
-  var isFamilySharingAllowed: js.UndefOr[Boolean] = js.native
+  var isFamilySharingAllowed: js.UndefOr[Boolean] = js.undefined
   
-  var isFamilySharingDisabledByFop: js.UndefOr[Boolean] = js.native
+  var isFamilySharingDisabledByFop: js.UndefOr[Boolean] = js.undefined
   
-  var isInMyBooks: js.UndefOr[Boolean] = js.native
+  var isInMyBooks: js.UndefOr[Boolean] = js.undefined
   
-  var isPreordered: js.UndefOr[Boolean] = js.native
+  var isPreordered: js.UndefOr[Boolean] = js.undefined
   
-  var isPurchased: js.UndefOr[Boolean] = js.native
+  var isPurchased: js.UndefOr[Boolean] = js.undefined
   
-  var isUploaded: js.UndefOr[Boolean] = js.native
+  var isUploaded: js.UndefOr[Boolean] = js.undefined
   
-  var readingPosition: js.UndefOr[SchemaReadingPosition] = js.native
+  var readingPosition: js.UndefOr[SchemaReadingPosition] = js.undefined
   
-  var rentalPeriod: js.UndefOr[EndUtcSec] = js.native
+  var rentalPeriod: js.UndefOr[EndUtcSec] = js.undefined
   
-  var rentalState: js.UndefOr[String] = js.native
+  var rentalState: js.UndefOr[String] = js.undefined
   
-  var review: js.UndefOr[SchemaReview] = js.native
+  var review: js.UndefOr[SchemaReview] = js.undefined
   
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
-  var userUploadedVolumeInfo: js.UndefOr[ProcessingState] = js.native
+  var userUploadedVolumeInfo: js.UndefOr[ProcessingState] = js.undefined
 }
 object AcquiredTime {
   

@@ -19,10 +19,13 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object key {
+  
+  @JSImport("openpgp", "key")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Class that represents an OpenPGP key. Must contain a primary key.
@@ -70,8 +73,8 @@ object key {
       */
     def encrypt(passphrases: String): js.Promise[js.Array[SecretKey | SecretSubkey]] = js.native
     def encrypt(passphrases: String, keyId: Keyid): js.Promise[js.Array[SecretKey | SecretSubkey]] = js.native
-    def encrypt(passphrases: js.Array[_]): js.Promise[js.Array[SecretKey | SecretSubkey]] = js.native
-    def encrypt(passphrases: js.Array[_], keyId: Keyid): js.Promise[js.Array[SecretKey | SecretSubkey]] = js.native
+    def encrypt(passphrases: js.Array[js.Any]): js.Promise[js.Array[SecretKey | SecretSubkey]] = js.native
+    def encrypt(passphrases: js.Array[js.Any], keyId: Keyid): js.Promise[js.Array[SecretKey | SecretSubkey]] = js.native
     
     /**
       * Returns algorithm information
@@ -93,11 +96,11 @@ object key {
       * @returns key or null if no encryption key has been found
       */
     def getEncryptionKey(): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
-    def getEncryptionKey(keyId: js.UndefOr[scala.Nothing], date: js.UndefOr[scala.Nothing], userId: String): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
-    def getEncryptionKey(keyId: js.UndefOr[scala.Nothing], date: Date): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
-    def getEncryptionKey(keyId: js.UndefOr[scala.Nothing], date: Date, userId: String): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
+    def getEncryptionKey(keyId: Unit, date: Unit, userId: String): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
+    def getEncryptionKey(keyId: Unit, date: Date): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
+    def getEncryptionKey(keyId: Unit, date: Date, userId: String): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
     def getEncryptionKey(keyId: Keyid): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
-    def getEncryptionKey(keyId: Keyid, date: js.UndefOr[scala.Nothing], userId: String): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
+    def getEncryptionKey(keyId: Keyid, date: Unit, userId: String): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
     def getEncryptionKey(keyId: Keyid, date: Date): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
     def getEncryptionKey(keyId: Keyid, date: Date, userId: String): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
     
@@ -112,17 +115,13 @@ object key {
       * @returns
       */
     def getExpirationTime(): js.Promise[Date | Infinity | Null] = js.native
-    def getExpirationTime(capabilities: js.UndefOr[scala.Nothing], keyId: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
-    def getExpirationTime(capabilities: js.UndefOr[scala.Nothing], keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
-    def getExpirationTime(capabilities: js.UndefOr[scala.Nothing], keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+    def getExpirationTime(capabilities: Unit, keyId: Unit, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+    def getExpirationTime(capabilities: Unit, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
+    def getExpirationTime(capabilities: Unit, keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
     def getExpirationTime_encrypt(capabilities: typings.openpgp.openpgpStrings.encrypt): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
-    def getExpirationTime_encrypt(
-      capabilities: typings.openpgp.openpgpStrings.encrypt,
-      keyId: js.UndefOr[scala.Nothing],
-      userId: js.Object
-    ): js.Promise[Date | Infinity | Null] = js.native
+    def getExpirationTime_encrypt(capabilities: typings.openpgp.openpgpStrings.encrypt, keyId: Unit, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
     def getExpirationTime_encrypt(capabilities: typings.openpgp.openpgpStrings.encrypt, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
@@ -130,7 +129,7 @@ object key {
     @JSName("getExpirationTime")
     def getExpirationTime_encryptsign(capabilities: encrypt_sign): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
-    def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+    def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: Unit, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
     def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
@@ -138,11 +137,7 @@ object key {
     @JSName("getExpirationTime")
     def getExpirationTime_sign(capabilities: typings.openpgp.openpgpStrings.sign): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
-    def getExpirationTime_sign(
-      capabilities: typings.openpgp.openpgpStrings.sign,
-      keyId: js.UndefOr[scala.Nothing],
-      userId: js.Object
-    ): js.Promise[Date | Infinity | Null] = js.native
+    def getExpirationTime_sign(capabilities: typings.openpgp.openpgpStrings.sign, keyId: Unit, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
     def getExpirationTime_sign(capabilities: typings.openpgp.openpgpStrings.sign, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
     @JSName("getExpirationTime")
@@ -164,7 +159,7 @@ object key {
       * Returns key IDs of all keys
       * @returns
       */
-    def getKeyIds(): js.Array[_] = js.native
+    def getKeyIds(): js.Array[js.Any] = js.native
     
     /**
       * Returns an array containing all public or private keys matching keyId.
@@ -172,7 +167,7 @@ object key {
       * @param keyId
       * @returns
       */
-    def getKeys(keyId: Keyid): js.Array[_] = js.native
+    def getKeys(keyId: Keyid): js.Array[js.Any] = js.native
     
     /**
       * Returns primary user and most significant (latest valid) self signature
@@ -183,7 +178,7 @@ object key {
       * @returns The primary user and the self signature
       */
     def getPrimaryUser(): js.Promise[SelfCertification] = js.native
-    def getPrimaryUser(date: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[SelfCertification] = js.native
+    def getPrimaryUser(date: Unit, userId: js.Object): js.Promise[SelfCertification] = js.native
     def getPrimaryUser(date: Date): js.Promise[SelfCertification] = js.native
     def getPrimaryUser(date: Date, userId: js.Object): js.Promise[SelfCertification] = js.native
     
@@ -202,7 +197,7 @@ object key {
       * @returns key or null if no signing key has been found
       */
     def getSigningKey(keyId: Keyid): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
-    def getSigningKey(keyId: Keyid, date: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
+    def getSigningKey(keyId: Keyid, date: Unit, userId: js.Object): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
     def getSigningKey(keyId: Keyid, date: Date): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
     def getSigningKey(keyId: Keyid, date: Date, userId: js.Object): js.Promise[Key | typings.openpgp.mod.key.SubKey | Null] = js.native
     
@@ -212,7 +207,7 @@ object key {
       * @param keyId
       * @returns
       */
-    def getSubkeys(keyId: Keyid): js.Array[_] = js.native
+    def getSubkeys(keyId: Keyid): js.Array[js.Any] = js.native
     
     /**
       * Returns userids
@@ -253,7 +248,7 @@ object key {
       * @returns True if the certificate is revoked
       */
     def isRevoked(signature: Signature): js.Promise[Boolean] = js.native
-    def isRevoked(signature: Signature, key: js.UndefOr[scala.Nothing], date: Date): js.Promise[Boolean] = js.native
+    def isRevoked(signature: Signature, key: Unit, date: Date): js.Promise[Boolean] = js.native
     def isRevoked(signature: Signature, key: PublicKey): js.Promise[Boolean] = js.native
     def isRevoked(signature: Signature, key: PublicKey, date: Date): js.Promise[Boolean] = js.native
     def isRevoked(signature: Signature, key: PublicSubkey): js.Promise[Boolean] = js.native
@@ -286,7 +281,7 @@ object key {
       * @param privateKeys decrypted private keys for signing
       * @returns new public key with new certificate signature
       */
-    def signAllUsers(privateKeys: js.Array[_]): js.Promise[Key] = js.native
+    def signAllUsers(privateKeys: js.Array[js.Any]): js.Promise[Key] = js.native
     
     /**
       * Signs primary user of key
@@ -295,7 +290,7 @@ object key {
       * @param userId (optional) user ID to get instead of the primary user, if it exists
       * @returns new public key with new certificate signature
       */
-    def signPrimaryUser(privateKey: js.Array[_], date: Date, userId: js.Object): js.Promise[Key] = js.native
+    def signPrimaryUser(privateKey: js.Array[js.Any], date: Date, userId: js.Object): js.Promise[Key] = js.native
     
     /**
       * Transforms structured key data to packetlist
@@ -318,7 +313,7 @@ object key {
       * @param key Source key to merge
       * @returns
       */
-    def update(key: Key): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def update(key: Key): js.Promise[Unit] = js.native
     
     /**
       * Verifies all users of key
@@ -327,7 +322,7 @@ object key {
       * @param keys array of keys to verify certificate signatures
       * @returns list of userid, signer's keyid and validity of signature
       */
-    def verifyAllUsers(keys: js.Array[_]): js.Promise[js.Array[Userid]] = js.native
+    def verifyAllUsers(keys: js.Array[js.Any]): js.Promise[js.Array[Userid]] = js.native
     
     /**
       * Verify primary key. Checks for revocation signatures, expiration time
@@ -337,7 +332,7 @@ object key {
       * @returns The status of the primary key
       */
     def verifyPrimaryKey(): js.Promise[keyStatus] = js.native
-    def verifyPrimaryKey(date: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[keyStatus] = js.native
+    def verifyPrimaryKey(date: Unit, userId: js.Object): js.Promise[keyStatus] = js.native
     def verifyPrimaryKey(date: Date): js.Promise[keyStatus] = js.native
     def verifyPrimaryKey(date: Date, userId: js.Object): js.Promise[keyStatus] = js.native
     
@@ -350,7 +345,7 @@ object key {
       * @param userId (optional) user ID to get instead of the primary user, if it exists
       * @returns List of signer's keyid and validity of signature
       */
-    def verifyPrimaryUser(keys: js.Array[_], date: Date, userId: js.Object): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
+    def verifyPrimaryUser(keys: js.Array[js.Any], date: Date, userId: js.Object): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
   }
   
   /**
@@ -446,8 +441,8 @@ object key {
       * @param primaryKey primary key used for validation
       * @returns
       */
-    def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-    def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretKey): js.Promise[Unit] = js.native
+    def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretSubkey): js.Promise[Unit] = js.native
     
     def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
     /**
@@ -484,14 +479,14 @@ object key {
     def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretKey, date: Date): js.Promise[Boolean] = js.native
     def isRevoked(primaryKey: SecretKey, certificate: Signature, key: SecretSubkey, date: Date): js.Promise[Boolean] = js.native
     
-    def sign(primaryKey: PublicKey, privateKeys: js.Array[_]): js.Promise[Key] = js.native
+    def sign(primaryKey: PublicKey, privateKeys: js.Array[js.Any]): js.Promise[Key] = js.native
     /**
       * Signs user
       * @param primaryKey The primary key packet
       * @param privateKeys Decrypted private keys for signing
       * @returns New user with new certificate signatures
       */
-    def sign(primaryKey: SecretKey, privateKeys: js.Array[_]): js.Promise[Key] = js.native
+    def sign(primaryKey: SecretKey, privateKeys: js.Array[js.Any]): js.Promise[Key] = js.native
     
     /**
       * Transforms structured user data to packetlist
@@ -505,8 +500,8 @@ object key {
       * @param primaryKey primary key used for validation
       * @returns
       */
-    def update(user: typings.openpgp.mod.key.User, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-    def update(user: typings.openpgp.mod.key.User, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+    def update(user: typings.openpgp.mod.key.User, primaryKey: SecretKey): js.Promise[Unit] = js.native
+    def update(user: typings.openpgp.mod.key.User, primaryKey: SecretSubkey): js.Promise[Unit] = js.native
     
     var userId: typings.openpgp.mod.packet.Userid = js.native
     
@@ -520,7 +515,7 @@ object key {
       */
     def verify(primaryKey: SecretKey, date: Date): js.Promise[keyStatus] = js.native
     
-    def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[_], date: Date): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
+    def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[js.Any], date: Date): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
     /**
       * Verifies all user certificates
       * @param primaryKey The primary key packet
@@ -528,9 +523,9 @@ object key {
       * @param date Use the given date instead of the current time
       * @returns List of signer's keyid and validity of signature
       */
-    def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[_], date: Date): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
+    def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[js.Any], date: Date): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
     
-    def verifyCertificate(primaryKey: PublicKey, certificate: Signature, keys: js.Array[_], date: Date): js.Promise[keyStatus] = js.native
+    def verifyCertificate(primaryKey: PublicKey, certificate: Signature, keys: js.Array[js.Any], date: Date): js.Promise[keyStatus] = js.native
     /**
       * Verifies the user certificate
       * @param primaryKey The primary key packet
@@ -539,7 +534,7 @@ object key {
       * @param date Use the given date instead of the current time
       * @returns status of the certificate
       */
-    def verifyCertificate(primaryKey: SecretKey, certificate: Signature, keys: js.Array[_], date: Date): js.Promise[keyStatus] = js.native
+    def verifyCertificate(primaryKey: SecretKey, certificate: Signature, keys: js.Array[js.Any], date: Date): js.Promise[keyStatus] = js.native
   }
   
   /**
@@ -548,9 +543,8 @@ object key {
     * @param signature The certificate or signature to check
     * @param keyId Check only certificates or signatures from a certain issuer key ID
     */
-  @JSImport("openpgp", "key.checkRevocationKey")
-  @js.native
-  def checkRevocationKey(signature: Signature, keyId: Keyid): Unit = js.native
+  @scala.inline
+  def checkRevocationKey(signature: Signature, keyId: Keyid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRevocationKey")(signature.asInstanceOf[js.Any], keyId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create signature packet
@@ -561,24 +555,22 @@ object key {
     * @param userId (optional) user ID
     * @returns signature packet
     */
-  @JSImport("openpgp", "key.createSignaturePacket")
-  @js.native
+  @scala.inline
   def createSignaturePacket(
     dataToSign: js.Object,
     signingKeyPacket: SecretKey,
     signatureProperties: js.Object,
     date: Date,
     userId: js.Object
-  ): Signature = js.native
-  @JSImport("openpgp", "key.createSignaturePacket")
-  @js.native
+  ): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignaturePacket")(dataToSign.asInstanceOf[js.Any], signingKeyPacket.asInstanceOf[js.Any], signatureProperties.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[Signature]
+  @scala.inline
   def createSignaturePacket(
     dataToSign: js.Object,
     signingKeyPacket: SecretSubkey,
     signatureProperties: js.Object,
     date: Date,
     userId: js.Object
-  ): Signature = js.native
+  ): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignaturePacket")(dataToSign.asInstanceOf[js.Any], signingKeyPacket.asInstanceOf[js.Any], signatureProperties.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[Signature]
   
   /**
     * Generates a new OpenPGP key. Supports RSA and ECC keys.
@@ -596,9 +588,8 @@ object key {
     *        sign parameter defaults to false, and indicates whether the subkey should sign rather than encrypt
     * @returns
     */
-  @JSImport("openpgp", "key.generate")
-  @js.native
-  def generate(options: KeyOptions): js.Promise[Key] = js.native
+  @scala.inline
+  def generate(options: KeyOptions): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
   
   /**
     * Returns the valid and non-expired signature that has the latest creation date, while ignoring signatures created in the future.
@@ -606,13 +597,12 @@ object key {
     * @param date Use the given date instead of the current time
     * @returns The latest valid signature
     */
-  @JSImport("openpgp", "key.getLatestValidSignature")
-  @js.native
-  def getLatestValidSignature(signatures: js.Array[_], date: Date): js.Promise[Signature] = js.native
+  @scala.inline
+  def getLatestValidSignature(signatures: js.Array[js.Any], date: Date): js.Promise[Signature] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLatestValidSignature")(signatures.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signature]]
   
-  @JSImport("openpgp", "key.getPreferredAlgo")
-  @js.native
-  def getPreferredAlgo_aead(`type`: aead, keys: js.Array[_], date: Date, userIds: js.Array[_]): js.Promise[symmetric] = js.native
+  @scala.inline
+  def getPreferredAlgo_aead(`type`: aead, keys: js.Array[js.Any], date: Date, userIds: js.Array[js.Any]): js.Promise[symmetric] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredAlgo")(`type`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[symmetric]]
+  
   /**
     * Returns the preferred symmetric/aead algorithm for a set of keys
     * @param type Type of preference to return
@@ -621,14 +611,13 @@ object key {
     * @param userIds (optional) user IDs
     * @returns Preferred symmetric algorithm
     */
-  @JSImport("openpgp", "key.getPreferredAlgo")
-  @js.native
+  @scala.inline
   def getPreferredAlgo_symmetric(
     `type`: typings.openpgp.openpgpStrings.symmetric,
-    keys: js.Array[_],
+    keys: js.Array[js.Any],
     date: Date,
-    userIds: js.Array[_]
-  ): js.Promise[symmetric] = js.native
+    userIds: js.Array[js.Any]
+  ): js.Promise[symmetric] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredAlgo")(`type`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[symmetric]]
   
   /**
     * Returns the preferred signature hash algorithm of a key
@@ -638,12 +627,10 @@ object key {
     * @param userId (optional) user ID
     * @returns
     */
-  @JSImport("openpgp", "key.getPreferredHashAlgo")
-  @js.native
-  def getPreferredHashAlgo(key: Key, keyPacket: SecretKey, date: Date, userId: js.Object): js.Promise[String] = js.native
-  @JSImport("openpgp", "key.getPreferredHashAlgo")
-  @js.native
-  def getPreferredHashAlgo(key: Key, keyPacket: SecretSubkey, date: Date, userId: js.Object): js.Promise[String] = js.native
+  @scala.inline
+  def getPreferredHashAlgo(key: Key, keyPacket: SecretKey, date: Date, userId: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredHashAlgo")(key.asInstanceOf[js.Any], keyPacket.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getPreferredHashAlgo(key: Key, keyPacket: SecretSubkey, date: Date, userId: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreferredHashAlgo")(key.asInstanceOf[js.Any], keyPacket.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * Returns whether aead is supported by all keys in the set
@@ -652,60 +639,54 @@ object key {
     * @param userIds (optional) user IDs
     * @returns
     */
-  @JSImport("openpgp", "key.isAeadSupported")
-  @js.native
-  def isAeadSupported(keys: js.Array[_], date: Date, userIds: js.Array[_]): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isAeadSupported(keys: js.Array[js.Any], date: Date, userIds: js.Array[js.Any]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isAeadSupported")(keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  @scala.inline
   def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: PublicKey,
     date: Date
-  ): js.Promise[Boolean] = js.native
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: PublicSubkey,
     date: Date
-  ): js.Promise[Boolean] = js.native
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: SecretKey,
     date: Date
-  ): js.Promise[Boolean] = js.native
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def isDataRevoked(
     primaryKey: PublicKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: SecretSubkey,
     date: Date
-  ): js.Promise[Boolean] = js.native
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: PublicKey,
     date: Date
-  ): js.Promise[Boolean] = js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   /**
     * Checks if a given certificate or binding signature is revoked
     * @param primaryKey The primary key packet
@@ -716,57 +697,51 @@ object key {
     * @param date Use the given date instead of the current time
     * @returns True if the signature revokes the data
     */
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  @scala.inline
   def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: PublicSubkey,
     date: Date
-  ): js.Promise[Boolean] = js.native
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: SecretKey,
     date: Date
-  ): js.Promise[Boolean] = js.native
-  @JSImport("openpgp", "key.isDataRevoked")
-  @js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
   def isDataRevoked(
     primaryKey: SecretKey,
     dataToVerify: js.Object,
-    revocations: js.Array[_],
+    revocations: js.Array[js.Any],
     signature: Signature,
     key: SecretSubkey,
     date: Date
-  ): js.Promise[Boolean] = js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isDataRevoked")(primaryKey.asInstanceOf[js.Any], dataToVerify.asInstanceOf[js.Any], revocations.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], key.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Reads an unarmored OpenPGP key list and returns one or multiple key objects
     * @param data to be parsed
     * @returns result object with key and error arrays
     */
-  @JSImport("openpgp", "key.read")
-  @js.native
-  def read(data: Uint8Array): js.Promise[Err] = js.native
+  @scala.inline
+  def read(data: Uint8Array): js.Promise[Err] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Err]]
   
   /**
     * Reads an OpenPGP armored text and returns one or multiple key objects
     * @param armoredText text to be parsed
     * @returns result object with key and error arrays
     */
-  @JSImport("openpgp", "key.readArmored")
-  @js.native
-  def readArmored(armoredText: String): js.Promise[KeyResult] = js.native
-  @JSImport("openpgp", "key.readArmored")
-  @js.native
-  def readArmored(armoredText: ReadableStream[String]): js.Promise[KeyResult] = js.native
+  @scala.inline
+  def readArmored(armoredText: String): js.Promise[KeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyResult]]
+  @scala.inline
+  def readArmored(armoredText: ReadableStream[String]): js.Promise[KeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyResult]]
   
   /**
     * Reformats and signs an OpenPGP key with a given User ID. Currently only supports RSA keys.
@@ -780,22 +755,20 @@ object key {
     * @param subkeys (optional) options for each subkey, default to main key options. e.g. [ {sign: true, passphrase: '123'}]
     * @returns
     */
-  @JSImport("openpgp", "key.reformat")
-  @js.native
-  def reformat(date: Date, subkeys: js.Array[_]): js.Promise[Key] = js.native
+  @scala.inline
+  def reformat(date: Date, subkeys: js.Array[js.Any]): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformat")(date.asInstanceOf[js.Any], subkeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
-  @js.native
   trait KeyResult extends StObject {
     
-    var err: js.Array[Error] | Null = js.native
+    var err: js.Array[Error] | Null
     
-    var keys: js.Array[Key] = js.native
+    var keys: js.Array[Key]
   }
   object KeyResult {
     
     @scala.inline
     def apply(keys: js.Array[Key]): KeyResult = {
-      val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], err = null)
       __obj.asInstanceOf[KeyResult]
     }
     

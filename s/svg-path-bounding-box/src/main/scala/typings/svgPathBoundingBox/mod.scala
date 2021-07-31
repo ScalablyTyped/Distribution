@@ -2,14 +2,16 @@ package typings.svgPathBoundingBox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String): BoundingBoxView = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[BoundingBoxView]
+  
   @JSImport("svg-path-bounding-box", JSImport.Namespace)
   @js.native
-  def apply(path: String): BoundingBoxView = js.native
+  val ^ : js.Any = js.native
   
   /**
     * pass in initial points if you want

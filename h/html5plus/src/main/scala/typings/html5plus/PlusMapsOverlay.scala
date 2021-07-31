@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsOverlay extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlusMapsOverlay extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * 判断地图覆盖物是否可见
@@ -30,7 +28,7 @@ trait PlusMapsOverlay extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
   /**
     * 显示地图上的覆盖物
@@ -40,7 +38,7 @@ trait PlusMapsOverlay extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object PlusMapsOverlay {
   

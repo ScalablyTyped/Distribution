@@ -4,22 +4,22 @@ import typings.stripe.anon.Accountnumber
 import typings.stripe.stripeStrings.ach_credit_transfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAchCreditTransferPaymentMethodDetails extends IPaymentMethodDetails {
+trait IAchCreditTransferPaymentMethodDetails
+  extends StObject
+     with IPaymentMethodDetails {
   
-  var ach_credit_transfer: Accountnumber = js.native
+  var ach_credit_transfer: Accountnumber
   
-  var `type`: ach_credit_transfer = js.native
+  var `type`: ach_credit_transfer
 }
 object IAchCreditTransferPaymentMethodDetails {
   
   @scala.inline
-  def apply(ach_credit_transfer: Accountnumber, `type`: ach_credit_transfer): IAchCreditTransferPaymentMethodDetails = {
+  def apply(ach_credit_transfer: Accountnumber): IAchCreditTransferPaymentMethodDetails = {
     val __obj = js.Dynamic.literal(ach_credit_transfer = ach_credit_transfer.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ach_credit_transfer")
     __obj.asInstanceOf[IAchCreditTransferPaymentMethodDetails]
   }
   

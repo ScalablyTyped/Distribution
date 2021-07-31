@@ -7,7 +7,6 @@ import typings.xrm.Xrm.Events.ProcessStatusChangeHandler
 import typings.xrm.anon.GetValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ProcessFlow {
@@ -28,7 +27,6 @@ object ProcessFlow {
   /**
     * Interface for a CRM Business Process Flow instance.
     */
-  @js.native
   trait Process extends StObject {
     
     /**
@@ -36,26 +34,26 @@ object ProcessFlow {
       * @returns The identifier for this process, in GUID format.
       * @example Example: "{825CB223-A651-DF11-AA8B-00155DBA3804}".
       */
-    def getId(): String = js.native
+    def getId(): String
     
     /**
       * Returns the name of the process.
       * @returns The name.
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * Returns an collection of stages in the process.
       * @returns The stages.
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    def getStages(): ItemCollection[Stage] = js.native
+    def getStages(): ItemCollection[Stage]
     
     /**
       * Returns a boolean value to indicate if the process is rendered.
       * @returns true if the process is rendered, false if not.
       */
-    def isRendered(): Boolean = js.native
+    def isRendered(): Boolean
   }
   object Process {
     
@@ -361,7 +359,6 @@ object ProcessFlow {
   /**
     * Interface for CRM Business Process Flow stages.
     */
-  @js.native
   trait Stage extends StObject {
     
     /**
@@ -369,38 +366,38 @@ object ProcessFlow {
       * category.
       * @returns The stage category.
       */
-    def getCategory(): GetValue = js.native
+    def getCategory(): GetValue
     
     /**
       * Returns the logical name of the entity associated with the stage.
       * @returns The entity name.
       */
-    def getEntityName(): String = js.native
+    def getEntityName(): String
     
     /**
       * Returns the unique identifier of the stage.
       * @returns The identifier of the Stage, in GUID format.
       * @example Example: "{825CB223-A651-DF11-AA8B-00155DBA3804}".
       */
-    def getId(): String = js.native
+    def getId(): String
     
     /**
       * Returns the name of the stage.
       * @returns The name.
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * Returns the status of the stage.
       * @returns The status, either "active" or "inactive".
       */
-    def getStatus(): StageStatus = js.native
+    def getStatus(): StageStatus
     
     /**
       * Returns a collection of steps in the stage.
       * @returns An array of Step.
       */
-    def getSteps(): js.Array[Step] = js.native
+    def getSteps(): js.Array[Step]
   }
   object Stage {
     
@@ -476,7 +473,6 @@ object ProcessFlow {
     def inactive: typings.xrm.xrmStrings.inactive = "inactive".asInstanceOf[typings.xrm.xrmStrings.inactive]
   }
   
-  @js.native
   trait Step extends StObject {
     
     /**
@@ -484,13 +480,13 @@ object ProcessFlow {
       * @returns The attribute.
       * @remarks Some steps don’t contain an attribute value.
       */
-    def getAttribute(): String = js.native
+    def getAttribute(): String
     
     /**
       * Returns the name of the step.
       * @returns The name.
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * Returns whether the step is required in the business process flow.
@@ -499,7 +495,7 @@ object ProcessFlow {
       *              There is no connection between this value and the values you can change in the formContext.data.entity
       *              attribute RequiredLevel methods.
       */
-    def isRequired(): Boolean = js.native
+    def isRequired(): Boolean
   }
   object Step {
     

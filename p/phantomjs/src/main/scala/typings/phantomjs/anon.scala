@@ -2,19 +2,17 @@ package typings.phantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Architecture extends StObject {
     
-    var architecture: String = js.native
+    var architecture: String
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Architecture {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Charset extends StObject {
     
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
-    var mode: String = js.native
+    var mode: String
   }
   object Charset {
     
@@ -67,14 +64,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Major extends StObject {
     
-    var major: Double = js.native
+    var major: Double
     
-    var minor: Double = js.native
+    var minor: Double
     
-    var patch: Double = js.native
+    var patch: Double
   }
   object Major {
     

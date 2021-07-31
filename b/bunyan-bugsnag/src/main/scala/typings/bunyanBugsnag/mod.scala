@@ -3,25 +3,26 @@ package typings.bunyanBugsnag
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bunyan-bugsnag", JSImport.Default)
+  @JSImport("bunyan-bugsnag", JSImport.Namespace)
   @js.native
-  def default(options: Options): Writable = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(options: Options): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  
   trait Options extends StObject {
     
-    var bugsnagClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any = js.native
+    var bugsnagClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
     
-    var errorLevel: js.UndefOr[Double | String] = js.native
+    var errorLevel: js.UndefOr[Double | String] = js.undefined
     
-    var systemInfo: js.UndefOr[js.Array[String]] = js.native
+    var systemInfo: js.UndefOr[js.Array[String]] = js.undefined
     
-    var warningLevel: js.UndefOr[Double | String] = js.native
+    var warningLevel: js.UndefOr[Double | String] = js.undefined
   }
   object Options {
     

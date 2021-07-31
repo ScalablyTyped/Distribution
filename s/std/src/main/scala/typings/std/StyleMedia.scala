@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleMedia extends StObject {
   
-  def matchMedium(mediaquery: java.lang.String): scala.Boolean = js.native
+  def matchMedium(mediaquery: java.lang.String): scala.Boolean
   
-  val `type`: java.lang.String = js.native
+  val `type`: java.lang.String
 }
 object StyleMedia {
   

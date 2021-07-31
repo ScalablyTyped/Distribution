@@ -11,8 +11,8 @@ A set of cookie helpers for Next.js
 | Full name          | nookies |
 | Keywords           | cookie, cookies, next, nextjs, js, auth, destory, parse, create, nookies |
 | # releases         | 21 |
-| # dependents       | 21 |
-| # downloads        | 1443257 |
+| # dependents       | 23 |
+| # downloads        | 2375500 |
 | # stars            | 0 |
 
 ## Links

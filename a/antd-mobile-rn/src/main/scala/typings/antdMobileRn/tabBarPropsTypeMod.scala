@@ -4,25 +4,23 @@ import typings.antdMobileRn.anon.Uri
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarPropsTypeMod {
   
-  @js.native
   trait TabBarItemProps extends StObject {
     
-    var badge: js.UndefOr[String | Double] = js.native
+    var badge: js.UndefOr[String | Double] = js.undefined
     
-    var icon: js.UndefOr[TabIcon] = js.native
+    var icon: js.UndefOr[TabIcon] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var selectedIcon: js.UndefOr[TabIcon] = js.native
+    var selectedIcon: js.UndefOr[TabIcon] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object TabBarItemProps {
     
@@ -70,23 +68,22 @@ object tabBarPropsTypeMod {
     }
   }
   
-  @js.native
   trait TabBarProps extends StObject {
     
     /** default: false */
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var barTintColor: js.UndefOr[String] = js.native
+    var barTintColor: js.UndefOr[String] = js.undefined
     
     /** rn android only**/
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
     
     /** default: false */
-    var swipeable: js.UndefOr[Boolean] = js.native
+    var swipeable: js.UndefOr[Boolean] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var unselectedTintColor: js.UndefOr[String] = js.native
+    var unselectedTintColor: js.UndefOr[String] = js.undefined
   }
   object TabBarProps {
     

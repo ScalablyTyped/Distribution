@@ -3,14 +3,12 @@ package typings.mongodb.anon
 import typings.mongodb.mod.MetaSortOperators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Meta extends StObject {
   
   @JSName("$meta")
-  var $meta: js.UndefOr[MetaSortOperators] = js.native
+  var $meta: js.UndefOr[MetaSortOperators] = js.undefined
 }
 object Meta {
   

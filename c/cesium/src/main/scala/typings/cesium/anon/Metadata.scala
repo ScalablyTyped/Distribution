@@ -5,21 +5,19 @@ import typings.cesium.mod.Resource
 import typings.cesium.mod.TileDiscardPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var metadata: GoogleEarthEnterpriseMetadata = js.native
+  var metadata: GoogleEarthEnterpriseMetadata
   
-  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.native
+  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
   
-  var url: Resource | String = js.native
+  var url: Resource | String
 }
 object Metadata {
   

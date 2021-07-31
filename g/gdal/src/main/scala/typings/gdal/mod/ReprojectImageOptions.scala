@@ -2,43 +2,41 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReprojectImageOptions extends StObject {
   
-  var cutline: js.UndefOr[Geometry] = js.native
+  var cutline: js.UndefOr[Geometry] = js.undefined
   
-  var dst: Dataset = js.native
+  var dst: Dataset
   
-  var dstAlphaBand: js.UndefOr[Double] = js.native
+  var dstAlphaBand: js.UndefOr[Double] = js.undefined
   
-  var dstBands: js.UndefOr[js.Array[Double]] = js.native
+  var dstBands: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var dstNodata: js.UndefOr[Double] = js.native
+  var dstNodata: js.UndefOr[Double] = js.undefined
   
-  var maxError: js.UndefOr[Double] = js.native
+  var maxError: js.UndefOr[Double] = js.undefined
   
-  var memoryLimit: js.UndefOr[Double] = js.native
+  var memoryLimit: js.UndefOr[Double] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var options: js.UndefOr[js.Array[String] | js.Object] = js.native
+  var options: js.UndefOr[js.Array[String] | js.Object] = js.undefined
   
-  var resampling: js.UndefOr[String] = js.native
+  var resampling: js.UndefOr[String] = js.undefined
   
-  var s_srs: SpatialReference = js.native
+  var s_srs: SpatialReference
   
-  var src: Dataset = js.native
+  var src: Dataset
   
-  var srcAlphaBand: js.UndefOr[Double] = js.native
+  var srcAlphaBand: js.UndefOr[Double] = js.undefined
   
-  var srcBands: js.UndefOr[js.Array[Double]] = js.native
+  var srcBands: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var srcNodata: js.UndefOr[Double] = js.native
+  var srcNodata: js.UndefOr[Double] = js.undefined
   
-  var t_srs: SpatialReference = js.native
+  var t_srs: SpatialReference
 }
 object ReprojectImageOptions {
   

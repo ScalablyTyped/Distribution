@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddFlowVpcInterfacesResponse extends StObject {
   
   /**
     * The ARN of the flow that these VPC interfaces were added to.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
   
   /**
     * The details of the newly added VPC interfaces.
     */
-  var VpcInterfaces: js.UndefOr[listOfVpcInterface] = js.native
+  var VpcInterfaces: js.UndefOr[listOfVpcInterface] = js.undefined
 }
 object AddFlowVpcInterfacesResponse {
   

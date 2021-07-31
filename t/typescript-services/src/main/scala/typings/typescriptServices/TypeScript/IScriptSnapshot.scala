@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScriptSnapshot extends StObject {
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def getLineStartPositions(): js.Array[Double] = js.native
+  def getLineStartPositions(): js.Array[Double]
   
-  def getText(start: Double, end: Double): String = js.native
+  def getText(start: Double, end: Double): String
   
-  def getTextChangeRangeSinceVersion(scriptVersion: Double): TextChangeRange = js.native
+  def getTextChangeRangeSinceVersion(scriptVersion: Double): TextChangeRange
 }
 object IScriptSnapshot {
   

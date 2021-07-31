@@ -6,19 +6,17 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.story
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadBroadcastMediaOptionsMod {
   
-  @js.native
   trait DirectThreadBroadcastPhotoOptions extends StObject {
     
-    var allowFullAspectRatio: js.UndefOr[Boolean] = js.native
+    var allowFullAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var file: Buffer = js.native
+    var file: Buffer
     
-    var uploadId: js.UndefOr[String] = js.native
+    var uploadId: js.UndefOr[String] = js.undefined
   }
   object DirectThreadBroadcastPhotoOptions {
     
@@ -48,10 +46,11 @@ object directThreadBroadcastMediaOptionsMod {
     }
   }
   
-  @js.native
-  trait DirectThreadBroadcastPhotoStoryOptions extends DirectThreadBroadcastStoryOptions {
+  trait DirectThreadBroadcastPhotoStoryOptions
+    extends StObject
+       with DirectThreadBroadcastStoryOptions {
     
-    var file: Buffer = js.native
+    var file: Buffer
   }
   object DirectThreadBroadcastPhotoStoryOptions {
     
@@ -69,14 +68,13 @@ object directThreadBroadcastMediaOptionsMod {
     }
   }
   
-  @js.native
   trait DirectThreadBroadcastStoryOptions extends StObject {
     
-    var replyType: js.UndefOr[story | String] = js.native
+    var replyType: js.UndefOr[story | String] = js.undefined
     
-    var uploadId: js.UndefOr[Double] = js.native
+    var uploadId: js.UndefOr[Double] = js.undefined
     
-    var viewMode: js.UndefOr[replayable | once | String] = js.native
+    var viewMode: js.UndefOr[replayable | once | String] = js.undefined
   }
   object DirectThreadBroadcastStoryOptions {
     
@@ -109,16 +107,15 @@ object directThreadBroadcastMediaOptionsMod {
     }
   }
   
-  @js.native
   trait DirectThreadBroadcastVideoOptions extends StObject {
     
-    var sampled: js.UndefOr[Boolean] = js.native
+    var sampled: js.UndefOr[Boolean] = js.undefined
     
-    var transcodeDelay: js.UndefOr[Double] = js.native
+    var transcodeDelay: js.UndefOr[Double] = js.undefined
     
-    var uploadId: js.UndefOr[String] = js.native
+    var uploadId: js.UndefOr[String] = js.undefined
     
-    var video: Buffer = js.native
+    var video: Buffer
   }
   object DirectThreadBroadcastVideoOptions {
     
@@ -154,12 +151,13 @@ object directThreadBroadcastMediaOptionsMod {
     }
   }
   
-  @js.native
-  trait DirectThreadBroadcastVideoStoryOptions extends DirectThreadBroadcastStoryOptions {
+  trait DirectThreadBroadcastVideoStoryOptions
+    extends StObject
+       with DirectThreadBroadcastStoryOptions {
     
-    var coverImage: Buffer = js.native
+    var coverImage: Buffer
     
-    var video: Buffer = js.native
+    var video: Buffer
   }
   object DirectThreadBroadcastVideoStoryOptions {
     
@@ -180,18 +178,17 @@ object directThreadBroadcastMediaOptionsMod {
     }
   }
   
-  @js.native
   trait DirectThreadBroadcastVoiceOptions extends StObject {
     
-    var file: Buffer = js.native
+    var file: Buffer
     
-    var transcodeDelay: js.UndefOr[Double] = js.native
+    var transcodeDelay: js.UndefOr[Double] = js.undefined
     
-    var uploadId: js.UndefOr[String] = js.native
+    var uploadId: js.UndefOr[String] = js.undefined
     
-    var waveform: js.UndefOr[js.Array[Double]] = js.native
+    var waveform: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var waveformSamplingFrequencyHz: js.UndefOr[Double] = js.native
+    var waveformSamplingFrequencyHz: js.UndefOr[Double] = js.undefined
   }
   object DirectThreadBroadcastVoiceOptions {
     

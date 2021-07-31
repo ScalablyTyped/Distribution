@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Metros")
@@ -30,7 +29,7 @@ class ResourceMetros protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaMetrosListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaMetrosListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetrosListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetrosListResponse] = js.native
   def list(params: ParamsResourceMetrosList): GaxiosPromise[SchemaMetrosListResponse] = js.native
   def list(params: ParamsResourceMetrosList, callback: BodyResponseCallback[SchemaMetrosListResponse]): Unit = js.native
   def list(

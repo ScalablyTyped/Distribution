@@ -3,21 +3,19 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.createGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait T extends StObject {
   
-  var groups: js.UndefOr[js.Array[js.Object]] = js.native
+  var groups: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var t: createGroup = js.native
+  var t: createGroup
 }
 object T {
   
   @scala.inline
-  def apply(t: createGroup): T = {
-    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+  def apply(): T = {
+    val __obj = js.Dynamic.literal(t = "createGroup")
     __obj.asInstanceOf[T]
   }
   

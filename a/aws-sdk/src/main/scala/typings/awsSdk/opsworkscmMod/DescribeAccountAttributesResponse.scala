@@ -2,16 +2,14 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountAttributesResponse extends StObject {
   
   /**
     *  The attributes that are currently set for the account. 
     */
-  var Attributes: js.UndefOr[AccountAttributes] = js.native
+  var Attributes: js.UndefOr[AccountAttributes] = js.undefined
 }
 object DescribeAccountAttributesResponse {
   

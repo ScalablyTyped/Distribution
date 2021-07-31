@@ -2,21 +2,19 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorCorrectionLevel extends StObject {
   
-  val Bits: Double = js.native
+  val Bits: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  var bits: Double = js.native
+  var bits: Double
   
-  var name: String = js.native
+  var name: String
   
-  var ordinal_Renamed_Field: Double = js.native
+  var ordinal_Renamed_Field: Double
 }
 object ErrorCorrectionLevel {
   

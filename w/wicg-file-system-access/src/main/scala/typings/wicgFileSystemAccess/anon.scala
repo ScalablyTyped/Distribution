@@ -15,22 +15,20 @@ import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.truncate
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined wicg-file-system-access.wicg-file-system-access.<global>.ChooseFileSystemEntriesFileOptions & {  type :'open-file' | undefined,   multiple :false | undefined} */
-  @js.native
   trait ChooseFileSystemEntriesFi extends StObject {
     
-    var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.native
+    var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.undefined
     
-    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.native
+    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.undefined
     
-    var multiple: js.UndefOr[`false`] = js.native
+    var multiple: js.UndefOr[`false`] = js.undefined
     
-    var `type`: js.UndefOr[`open-file`] = js.native
+    var `type`: js.UndefOr[`open-file`] = js.undefined
   }
   object ChooseFileSystemEntriesFi {
     
@@ -73,22 +71,21 @@ object anon {
   }
   
   /* Inlined wicg-file-system-access.wicg-file-system-access.<global>.ChooseFileSystemEntriesFileOptions & {  type :'open-file' | undefined,   multiple :true} */
-  @js.native
   trait ChooseFileSystemEntriesFiAccepts extends StObject {
     
-    var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.native
+    var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.undefined
     
-    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.native
+    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.undefined
     
-    var multiple: `true` = js.native
+    var multiple: `true`
     
-    var `type`: js.UndefOr[`open-file`] = js.native
+    var `type`: js.UndefOr[`open-file`] = js.undefined
   }
   object ChooseFileSystemEntriesFiAccepts {
     
     @scala.inline
-    def apply(multiple: `true`): ChooseFileSystemEntriesFiAccepts = {
-      val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
+    def apply(): ChooseFileSystemEntriesFiAccepts = {
+      val __obj = js.Dynamic.literal(multiple = true)
       __obj.asInstanceOf[ChooseFileSystemEntriesFiAccepts]
     }
     
@@ -122,21 +119,20 @@ object anon {
   }
   
   /* Inlined wicg-file-system-access.wicg-file-system-access.<global>.ChooseFileSystemEntriesFileOptions & {  type :'save-file'} */
-  @js.native
   trait ChooseFileSystemEntriesFiExcludeAcceptAllOption extends StObject {
     
-    var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.native
+    var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.undefined
     
-    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.native
+    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: `save-file` = js.native
+    var `type`: `save-file`
   }
   object ChooseFileSystemEntriesFiExcludeAcceptAllOption {
     
     @scala.inline
-    def apply(`type`: `save-file`): ChooseFileSystemEntriesFiExcludeAcceptAllOption = {
+    def apply(): ChooseFileSystemEntriesFiExcludeAcceptAllOption = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("save-file")
       __obj.asInstanceOf[ChooseFileSystemEntriesFiExcludeAcceptAllOption]
     }
     
@@ -163,21 +159,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait Data extends WriteParams {
+  trait Data
+    extends StObject
+       with WriteParams {
     
-    var data: BufferSource | Blob | String = js.native
+    var data: BufferSource | Blob | String
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var `type`: write = js.native
+    var `type`: write
   }
   object Data {
     
     @scala.inline
-    def apply(data: BufferSource | Blob | String, `type`: write): Data = {
+    def apply(data: BufferSource | Blob | String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("write")
       __obj.asInstanceOf[Data]
     }
     
@@ -199,19 +196,18 @@ object anon {
   }
   
   /* Inlined wicg-file-system-access.wicg-file-system-access.<global>.OpenFilePickerOptions & {  multiple :false | undefined} */
-  @js.native
   trait OpenFilePickerOptionsmult extends StObject {
     
-    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.native
+    var excludeAcceptAllOption: js.UndefOr[Boolean] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var multiple: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
-    var types: js.UndefOr[js.Array[FilePickerAcceptType]] = js.native
+    var types: js.UndefOr[js.Array[FilePickerAcceptType]] = js.undefined
   }
   object OpenFilePickerOptionsmult {
     
     @scala.inline
-    def apply(multiple: js.UndefOr[Boolean] with js.UndefOr[`false`]): OpenFilePickerOptionsmult = {
+    def apply(multiple: js.UndefOr[Boolean] & js.UndefOr[`false`]): OpenFilePickerOptionsmult = {
       val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenFilePickerOptionsmult]
     }
@@ -226,7 +222,7 @@ object anon {
       def setExcludeAcceptAllOptionUndefined: Self = StObject.set(x, "excludeAcceptAllOption", js.undefined)
       
       @scala.inline
-      def setMultiple(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      def setMultiple(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTypes(value: js.Array[FilePickerAcceptType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
@@ -239,19 +235,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait Position extends WriteParams {
+  trait Position
+    extends StObject
+       with WriteParams {
     
-    var position: Double = js.native
+    var position: Double
     
-    var `type`: seek = js.native
+    var `type`: seek
   }
   object Position {
     
     @scala.inline
-    def apply(position: Double, `type`: seek): Position = {
+    def apply(position: Double): Position = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("seek")
       __obj.asInstanceOf[Position]
     }
     
@@ -266,19 +263,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait Size extends WriteParams {
+  trait Size
+    extends StObject
+       with WriteParams {
     
-    var size: Double = js.native
+    var size: Double
     
-    var `type`: truncate = js.native
+    var `type`: truncate
   }
   object Size {
     
     @scala.inline
-    def apply(size: Double, `type`: truncate): Size = {
+    def apply(size: Double): Size = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("truncate")
       __obj.asInstanceOf[Size]
     }
     
@@ -293,17 +291,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: `open-directory` = js.native
+    var `type`: `open-directory`
   }
   object Type {
     
     @scala.inline
-    def apply(`type`: `open-directory`): Type = {
+    def apply(): Type = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("open-directory")
       __obj.asInstanceOf[Type]
     }
     

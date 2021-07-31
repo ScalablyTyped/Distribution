@@ -2,51 +2,49 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeOptions extends StObject {
   
-  var connectorDefaults: js.UndefOr[ShapeConnectorDefaults] = js.native
+  var connectorDefaults: js.UndefOr[ShapeConnectorDefaults] = js.undefined
   
-  var connectors: js.UndefOr[js.Array[ShapeConnector]] = js.native
+  var connectors: js.UndefOr[js.Array[ShapeConnector]] = js.undefined
   
-  var content: js.UndefOr[ShapeContent] = js.native
+  var content: js.UndefOr[ShapeContent] = js.undefined
   
-  var editable: js.UndefOr[Boolean | ShapeEditable] = js.native
+  var editable: js.UndefOr[Boolean | ShapeEditable] = js.undefined
   
-  var fill: js.UndefOr[String | ShapeFill] = js.native
+  var fill: js.UndefOr[String | ShapeFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[ShapeHover] = js.native
+  var hover: js.UndefOr[ShapeHover] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var rotation: js.UndefOr[ShapeRotation] = js.native
+  var rotation: js.UndefOr[ShapeRotation] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var stroke: js.UndefOr[ShapeStroke] = js.native
+  var stroke: js.UndefOr[ShapeStroke] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ShapeOptions {
   

@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalItemUpdateParams extends Object {
+trait PortalItemUpdateParams
+  extends StObject
+     with Object {
   
   /**
     * **Optional**.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#update)
     */
-  var data: String | js.Any = js.native
+  var data: String | js.Any
 }
 object PortalItemUpdateParams {
   

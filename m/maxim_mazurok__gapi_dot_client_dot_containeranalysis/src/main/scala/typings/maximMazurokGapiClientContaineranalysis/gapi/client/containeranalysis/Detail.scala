@@ -2,42 +2,40 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Detail extends StObject {
   
   /** Required. The name of the package where the vulnerability was found. */
   @JSName("package")
-  var _package: js.UndefOr[String] = js.native
+  var _package: js.UndefOr[String] = js.undefined
   
   /** Required. The CPE URI in [cpe format](https://cpe.mitre.org/specification/) in which the vulnerability manifests. Examples include distro or storage location for vulnerable jar. */
-  var cpeUri: js.UndefOr[String] = js.native
+  var cpeUri: js.UndefOr[String] = js.undefined
   
   /** A vendor-specific description of this note. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The fix for this specific package version. */
-  var fixedLocation: js.UndefOr[VulnerabilityLocation] = js.native
+  var fixedLocation: js.UndefOr[VulnerabilityLocation] = js.undefined
   
   /** Whether this detail is obsolete. Occurrences are expected not to point to obsolete details. */
-  var isObsolete: js.UndefOr[Boolean] = js.native
+  var isObsolete: js.UndefOr[Boolean] = js.undefined
   
   /** The max version of the package in which the vulnerability exists. */
-  var maxAffectedVersion: js.UndefOr[Version] = js.native
+  var maxAffectedVersion: js.UndefOr[Version] = js.undefined
   
   /** The min version of the package in which the vulnerability exists. */
-  var minAffectedVersion: js.UndefOr[Version] = js.native
+  var minAffectedVersion: js.UndefOr[Version] = js.undefined
   
   /** The type of package; whether native or non native(ruby gems, node.js packages etc). */
-  var packageType: js.UndefOr[String] = js.native
+  var packageType: js.UndefOr[String] = js.undefined
   
   /** The severity (eg: distro assigned severity) for this vulnerability. */
-  var severityName: js.UndefOr[String] = js.native
+  var severityName: js.UndefOr[String] = js.undefined
   
   /** The time this information was last changed at the source. This is an upstream timestamp from the underlying information source - e.g. Ubuntu security tracker. */
-  var sourceUpdateTime: js.UndefOr[String] = js.native
+  var sourceUpdateTime: js.UndefOr[String] = js.undefined
 }
 object Detail {
   

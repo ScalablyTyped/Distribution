@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChecksUpdateParamsActions extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var identifier: String = js.native
+  var identifier: String
   
-  var label: String = js.native
+  var label: String
 }
 object ChecksUpdateParamsActions {
   

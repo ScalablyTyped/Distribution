@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadialMenu extends Widget_ {
+trait RadialMenu
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -26,13 +27,13 @@ trait RadialMenu extends Widget_ {
     * @param {any[]} items of the Radialmenu item to disable.
     * @returns {void}
     */
-  def disableItems(items: js.Array[_]): Unit = js.native
+  def disableItems(items: js.Array[js.Any]): Unit = js.native
   
   /** To disable menu items using indices
     * @param {any[]} items of the Radialmenu to disable.
     * @returns {void}
     */
-  def disableItemsByIndices(itemIndices: js.Array[_]): Unit = js.native
+  def disableItemsByIndices(itemIndices: js.Array[js.Any]): Unit = js.native
   
   /** To enable menu item using item text
     * @param {string} item of the Radialmenu item to enable.
@@ -50,13 +51,13 @@ trait RadialMenu extends Widget_ {
     * @param {any[]} items of the Radialmenu item to enable.
     * @returns {void}
     */
-  def enableItems(items: js.Array[_]): Unit = js.native
+  def enableItems(items: js.Array[js.Any]): Unit = js.native
   
   /** To enable menu items using indices
     * @param {any[]} Index of the Radialmenu to be enabled.
     * @returns {void}
     */
-  def enableItemsByIndices(itemIndices: js.Array[_]): Unit = js.native
+  def enableItemsByIndices(itemIndices: js.Array[js.Any]): Unit = js.native
   
   /** To hide the radialmenu
     * @returns {void}
@@ -102,28 +103,27 @@ trait RadialMenu extends Widget_ {
 }
 object RadialMenu {
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the item of element
       */
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of item
       */
-    var itemName: js.UndefOr[String] = js.native
+    var itemName: js.UndefOr[String] = js.undefined
     
     /** returns the Radialmenu model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -168,20 +168,19 @@ object RadialMenu {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialmenu model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -214,44 +213,43 @@ object RadialMenu {
     }
   }
   
-  @js.native
   trait Item extends StObject {
     
     /** Specifies radialmenu item badges.
       */
-    var badge: js.UndefOr[ItemsBadge] = js.native
+    var badge: js.UndefOr[ItemsBadge] = js.undefined
     
     /** specify the click event to corresponding image/text for performing some specific action.
       */
-    var click: js.UndefOr[String] = js.native
+    var click: js.UndefOr[String] = js.undefined
     
     /** Specifies the enable state of RadialMenu item.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the URL of the frame background image for radial menu item.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies to add sub level items .
       */
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the template property of RadialMenu for SVG icon.
       */
-    var prependTo: js.UndefOr[String] = js.native
+    var prependTo: js.UndefOr[String] = js.undefined
     
     /** Specifies the sliderSettings ticks for nested radial menu items.
       */
-    var sliderSettings: js.UndefOr[ItemsSliderSettings] = js.native
+    var sliderSettings: js.UndefOr[ItemsSliderSettings] = js.undefined
     
     /** Specifies the text of RadialMenu item.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the type of nested radial menu item.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Item {
     
@@ -289,7 +287,7 @@ object RadialMenu {
       def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -323,16 +321,15 @@ object RadialMenu {
     }
   }
   
-  @js.native
   trait ItemsBadge extends StObject {
     
     /** Specifies whether to enable radialmenu item badge or not.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the value of radial menu item badge.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ItemsBadge {
     
@@ -359,20 +356,19 @@ object RadialMenu {
     }
   }
   
-  @js.native
   trait ItemsSliderSettings extends StObject {
     
     /** Specifies the value of sliderSettings labelSpace .
       */
-    var labelSpace: js.UndefOr[Double] = js.native
+    var labelSpace: js.UndefOr[Double] = js.undefined
     
     /** Specifies the sliderSettings stroke Width value.
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the sliderSettings ticks values of nested radial menu items.
       */
-    var ticks: js.UndefOr[js.Array[_]] = js.native
+    var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ItemsSliderSettings {
     
@@ -398,7 +394,7 @@ object RadialMenu {
       def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
       @scala.inline
-      def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+      def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
@@ -408,57 +404,56 @@ object RadialMenu {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** To show the Radial in initial render.
       */
-    var autoOpen: js.UndefOr[Boolean] = js.native
+    var autoOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Renders the back button Image for Radial using class.
       */
-    var backImageClass: js.UndefOr[String] = js.native
+    var backImageClass: js.UndefOr[String] = js.undefined
     
     /** Event triggers when we click an item.
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the menu is closed.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Sets the root class for RadialMenu theme. This cssClass API helps to use custom skinning option for RadialMenu control. By defining the root class using this API, we need to
       * include this root class in CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** To enable Animation for Radial Menu.
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Renders the Image for Radial using Class.
       */
-    var imageClass: js.UndefOr[String] = js.native
+    var imageClass: js.UndefOr[String] = js.undefined
     
     /** Specify the items of radial menu
       */
-    var items: js.UndefOr[js.Array[Item]] = js.native
+    var items: js.UndefOr[js.Array[Item]] = js.undefined
     
     /** Event triggers when the menu is opened.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** To set radial render position.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the radius of radial menu
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** To show the Radial while clicking given target element.
       */
-    var targetElementId: js.UndefOr[String] = js.native
+    var targetElementId: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -548,20 +543,19 @@ object RadialMenu {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Radialmenu model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     

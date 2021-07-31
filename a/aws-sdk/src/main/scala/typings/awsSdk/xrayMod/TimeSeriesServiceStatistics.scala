@@ -2,30 +2,28 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeSeriesServiceStatistics extends StObject {
   
-  var EdgeSummaryStatistics: js.UndefOr[EdgeStatistics] = js.native
+  var EdgeSummaryStatistics: js.UndefOr[EdgeStatistics] = js.undefined
   
   /**
     * The response time histogram for the selected entities.
     */
-  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.native
+  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.undefined
   
   /**
     * The forecasted high and low fault count values.
     */
-  var ServiceForecastStatistics: js.UndefOr[ForecastStatistics] = js.native
+  var ServiceForecastStatistics: js.UndefOr[ForecastStatistics] = js.undefined
   
-  var ServiceSummaryStatistics: js.UndefOr[ServiceStatistics] = js.native
+  var ServiceSummaryStatistics: js.UndefOr[ServiceStatistics] = js.undefined
   
   /**
     * Timestamp of the window for which statistics are aggregated.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.xrayMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.xrayMod.Timestamp] = js.undefined
 }
 object TimeSeriesServiceStatistics {
   

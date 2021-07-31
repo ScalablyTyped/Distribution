@@ -4,24 +4,22 @@ import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Gherkin
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.GherkinDocument.IFeature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a GherkinDocument. */
-@js.native
 trait IGherkinDocument extends StObject {
   
   /** GherkinDocument comments */
-  var comments: js.UndefOr[js.Array[IComment] | Null] = js.native
+  var comments: js.UndefOr[js.Array[IComment] | Null] = js.undefined
   
   /** GherkinDocument feature */
-  var feature: js.UndefOr[IFeature | Null] = js.native
+  var feature: js.UndefOr[IFeature | Null] = js.undefined
   
   /**
     * The [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
     * of the source, typically a file path relative to the root directory
     */
-  var uri: js.UndefOr[String | Null] = js.native
+  var uri: js.UndefOr[String | Null] = js.undefined
 }
 object IGherkinDocument {
   

@@ -2,24 +2,22 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Column headers.
   */
-@js.native
 trait SchemaColumnHeader extends StObject {
   
   /**
     * The dimension names in the response.
     */
-  var dimensions: js.UndefOr[js.Array[String]] = js.native
+  var dimensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Metric headers for the metrics in the response.
     */
-  var metricHeader: js.UndefOr[SchemaMetricHeader] = js.native
+  var metricHeader: js.UndefOr[SchemaMetricHeader] = js.undefined
 }
 object SchemaColumnHeader {
   

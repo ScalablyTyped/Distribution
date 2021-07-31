@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeidentifyDicomStoreRequest extends StObject {
   
   /** De-identify configuration. */
-  var config: js.UndefOr[DeidentifyConfig] = js.native
+  var config: js.UndefOr[DeidentifyConfig] = js.undefined
   
   /**
     * The name of the DICOM store to create and write the redacted data to. For example,
@@ -17,10 +15,10 @@ trait DeidentifyDicomStoreRequest extends StObject {
     * dataset must both reside in the same project. De-identifying data across multiple projects is not supported. * The destination DICOM store must not exist. * The caller must have the
     * necessary permissions to create the destination DICOM store.
     */
-  var destinationStore: js.UndefOr[String] = js.native
+  var destinationStore: js.UndefOr[String] = js.undefined
   
   /** Filter configuration. */
-  var filterConfig: js.UndefOr[DicomFilterConfig] = js.native
+  var filterConfig: js.UndefOr[DicomFilterConfig] = js.undefined
 }
 object DeidentifyDicomStoreRequest {
   

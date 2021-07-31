@@ -5,29 +5,29 @@ import typings.awsSdkClientCodecommitNode.typesRepositoryTriggerMod.Unmarshalled
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetRepositoryTriggersOutputMod {
   
-  @js.native
-  trait GetRepositoryTriggersOutput extends OutputTypesUnion {
+  trait GetRepositoryTriggersOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The system-generated unique ID for the trigger.</p>
       */
-    var configurationId: js.UndefOr[String] = js.native
+    var configurationId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The JSON block of configuration information for each trigger.</p>
       */
-    var triggers: js.UndefOr[js.Array[UnmarshalledRepositoryTrigger]] = js.native
+    var triggers: js.UndefOr[js.Array[UnmarshalledRepositoryTrigger]] = js.undefined
   }
   object GetRepositoryTriggersOutput {
     

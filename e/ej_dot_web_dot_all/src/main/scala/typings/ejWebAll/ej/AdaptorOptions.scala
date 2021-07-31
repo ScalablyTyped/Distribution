@@ -2,33 +2,31 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdaptorOptions extends StObject {
   
-  var aggregates: js.UndefOr[String] = js.native
+  var aggregates: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[String] = js.native
+  var select: js.UndefOr[String] = js.undefined
   
-  var skip: js.UndefOr[String] = js.native
+  var skip: js.UndefOr[String] = js.undefined
   
-  var sortBy: js.UndefOr[String] = js.native
+  var sortBy: js.UndefOr[String] = js.undefined
   
-  var take: js.UndefOr[String] = js.native
+  var take: js.UndefOr[String] = js.undefined
   
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object AdaptorOptions {
   

@@ -5,31 +5,29 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.png
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptureScreenshotRequest extends StObject {
   
   /**
     * Capture the screenshot of a given region only.
     */
-  var clip: js.UndefOr[Viewport] = js.native
+  var clip: js.UndefOr[Viewport] = js.undefined
   
   /**
     * Image compression format (defaults to png). (CaptureScreenshotRequestFormat enum)
     */
-  var format: js.UndefOr[jpeg | png] = js.native
+  var format: js.UndefOr[jpeg | png] = js.undefined
   
   /**
     * Capture the screenshot from the surface, rather than the view. Defaults to true.
     */
-  var fromSurface: js.UndefOr[Boolean] = js.native
+  var fromSurface: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Compression quality from range [0..100] (jpeg only).
     */
-  var quality: js.UndefOr[integer] = js.native
+  var quality: js.UndefOr[integer] = js.undefined
 }
 object CaptureScreenshotRequest {
   

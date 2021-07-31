@@ -5,20 +5,20 @@ import typings.geojson.mod.GeoJSON
 import typings.geojson.mod.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(geoJson: GeoJSON): BBox = ^.asInstanceOf[js.Dynamic].apply(geoJson.asInstanceOf[js.Any]).asInstanceOf[BBox]
+  
   @JSImport("@mapbox/geojson-extent", JSImport.Namespace)
   @js.native
-  def apply(geoJson: GeoJSON): BBox = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@mapbox/geojson-extent", "bboxify")
-  @js.native
-  def bboxify(geoJson: GeoJSON): GeoJSON = js.native
+  @scala.inline
+  def bboxify(geoJson: GeoJSON): GeoJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("bboxify")(geoJson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON]
   
-  @JSImport("@mapbox/geojson-extent", "polygon")
-  @js.native
-  def polygon(geoJson: GeoJSON): Polygon | Null = js.native
+  @scala.inline
+  def polygon(geoJson: GeoJSON): Polygon | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(geoJson.asInstanceOf[js.Any]).asInstanceOf[Polygon | Null]
 }

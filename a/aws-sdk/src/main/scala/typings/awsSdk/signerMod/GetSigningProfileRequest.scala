@@ -2,16 +2,14 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSigningProfileRequest extends StObject {
   
   /**
     * The name of the target signing profile.
     */
-  var profileName: ProfileName = js.native
+  var profileName: ProfileName
 }
 object GetSigningProfileRequest {
   

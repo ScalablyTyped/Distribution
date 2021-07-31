@@ -43,7 +43,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleRpcStatus
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argumentArgumentMod {
@@ -220,7 +219,7 @@ object argumentArgumentMod {
   
   /* Rewritten from type alias, can be one of: 
     - scala.Double
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.actionsOnGoogle.v2Mod.GoogleRpcStatus
     - scala.Boolean
     - java.lang.String
@@ -232,7 +231,6 @@ object argumentArgumentMod {
   
   type ArgumentsIndexable = StringDictionary[Argument]
   
-  @js.native
   trait ArgumentsNamed extends StObject {
     
     /**
@@ -240,34 +238,34 @@ object argumentArgumentMod {
       * Only use after calling {@link CompletePurchase|conv.ask(new CompletePurchase)}.
       * @public
       */
-    var COMPLETE_PURCHASE_VALUE: js.UndefOr[CompletePurchaseArgument] = js.native
+    var COMPLETE_PURCHASE_VALUE: js.UndefOr[CompletePurchaseArgument] = js.undefined
     
     /**
       * The confirmation decision.
       * Use after {@link Confirmation|conv.ask(new Confirmation)}
       * @public
       */
-    var CONFIRMATION: js.UndefOr[ConfirmationArgument] = js.native
+    var CONFIRMATION: js.UndefOr[ConfirmationArgument] = js.undefined
     
     /**
       * The user provided date and time.
       * Use after {@link DateTime|conv.ask(new DateTime)}
       * @public
       */
-    var DATETIME: js.UndefOr[DateTimeArgument] = js.native
+    var DATETIME: js.UndefOr[DateTimeArgument] = js.undefined
     
     /**
       * The order delivery address.
       * Only use after calling {@link DeliveryAddress|conv.ask(new DeliveryAddress)}.
       * @public
       */
-    var DELIVERY_ADDRESS_VALUE: js.UndefOr[DeliveryAddressArgument] = js.native
+    var DELIVERY_ADDRESS_VALUE: js.UndefOr[DeliveryAddressArgument] = js.undefined
     
     /**
       * Only use after calling {@link DigitalPurchaseCheck|conv.ask(new DigitalPurchaseCheck)}.
       * @public
       */
-    var DIGITAL_PURCHASE_CHECK_RESULT: js.UndefOr[DigitalPurchaseCheckArgument] = js.native
+    var DIGITAL_PURCHASE_CHECK_RESULT: js.UndefOr[DigitalPurchaseCheckArgument] = js.undefined
     
     /**
       * True if it is the final reprompt related to silent input from the user.
@@ -276,7 +274,7 @@ object argumentArgumentMod {
       * which ends the conversation.
       * @public
       */
-    var IS_FINAL_REPROMPT: js.UndefOr[FinalRepromptArgument] = js.native
+    var IS_FINAL_REPROMPT: js.UndefOr[FinalRepromptArgument] = js.undefined
     
     /**
       * The link non status argument.
@@ -285,13 +283,13 @@ object argumentArgumentMod {
       * @public
       * @deprecated
       */
-    var LINK: js.UndefOr[DeepLinkArgument] = js.native
+    var LINK: js.UndefOr[DeepLinkArgument] = js.undefined
     
     /**
       * The status of MEDIA_STATUS intent.
       * @public
       */
-    var MEDIA_STATUS: js.UndefOr[MediaStatusArgument] = js.native
+    var MEDIA_STATUS: js.UndefOr[MediaStatusArgument] = js.undefined
     
     /**
       * The result of {@link NewSurface|conv.ask(new NewSurface)}
@@ -299,7 +297,7 @@ object argumentArgumentMod {
       * `actions.intent.NEW_SURFACE` intent.
       * @public
       */
-    var NEW_SURFACE: js.UndefOr[NewSurfaceArgument] = js.native
+    var NEW_SURFACE: js.UndefOr[NewSurfaceArgument] = js.undefined
     
     /**
       * The option key user chose from options response.
@@ -307,7 +305,7 @@ object argumentArgumentMod {
       * or {@link Carousel|conv.ask(new Carousel)}.
       * @public
       */
-    var OPTION: js.UndefOr[OptionArgument] = js.native
+    var OPTION: js.UndefOr[OptionArgument] = js.undefined
     
     /**
       * True if the request follows a previous request asking for
@@ -317,21 +315,21 @@ object argumentArgumentMod {
       * or {@link UpdatePermission|conv.ask(new UpdatePermission)}.
       * @public
       */
-    var PERMISSION: js.UndefOr[PermissionArgument] = js.native
+    var PERMISSION: js.UndefOr[PermissionArgument] = js.undefined
     
     /**
       * The user provided place.
       * Use after {@link Place|conv.ask(new Place)}.
       * @public
       */
-    var PLACE: js.UndefOr[PlaceArgument] = js.native
+    var PLACE: js.UndefOr[PlaceArgument] = js.undefined
     
     /**
       * True if user accepted update registration request.
       * Used with {@link RegisterUpdate|conv.ask(new RegisterUpdate)}
       * @public
       */
-    var REGISTER_UPDATE: js.UndefOr[RegisterUpdateArgument] = js.native
+    var REGISTER_UPDATE: js.UndefOr[RegisterUpdateArgument] = js.undefined
     
     /**
       * The number of subsequent reprompts related to silent input from the user.
@@ -339,14 +337,14 @@ object argumentArgumentMod {
       * user for input in cases where the Google Assistant could not pick up any speech.
       * @public
       */
-    var REPROMPT_COUNT: js.UndefOr[RepromptArgument] = js.native
+    var REPROMPT_COUNT: js.UndefOr[RepromptArgument] = js.undefined
     
     /**
       * The status of user sign in request.
       * Use after {@link SignIn|conv.ask(new SignIn)}
       * @public
       */
-    var SIGN_IN: js.UndefOr[SignInArgument] = js.native
+    var SIGN_IN: js.UndefOr[SignInArgument] = js.undefined
     
     /**
       * The transaction decision information.
@@ -355,7 +353,7 @@ object argumentArgumentMod {
       * Only use after calling {@link TransactionDecision|conv.ask(new TransactionDecision)}.
       * @public
       */
-    var TRANSACTION_DECISION_VALUE: js.UndefOr[TransactionDecisionArgument] = js.native
+    var TRANSACTION_DECISION_VALUE: js.UndefOr[TransactionDecisionArgument] = js.undefined
     
     /**
       * The transactability of user.
@@ -363,14 +361,14 @@ object argumentArgumentMod {
       * Undefined if no result given.
       * @public
       */
-    var TRANSACTION_REQUIREMENTS_CHECK_RESULT: js.UndefOr[TransactionRequirementsArgument] = js.native
+    var TRANSACTION_REQUIREMENTS_CHECK_RESULT: js.UndefOr[TransactionRequirementsArgument] = js.undefined
     
     /**
       * The updates user id.
       * Only use after calling {@link UpdatePermission|conv.ask(new UpdatePermission)}.
       * @public
       */
-    var UPDATES_USER_ID: js.UndefOr[UpdatePermissionUserIdArgument] = js.native
+    var UPDATES_USER_ID: js.UndefOr[UpdatePermissionUserIdArgument] = js.undefined
   }
   object ArgumentsNamed {
     
@@ -493,9 +491,9 @@ object argumentArgumentMod {
     }
   }
   
-  @js.native
   trait ArgumentsParsed
-    extends ArgumentsNamed
+    extends StObject
+       with ArgumentsNamed
        with /** @public */
   /* name */ StringDictionary[js.UndefOr[Argument]]
   object ArgumentsParsed {

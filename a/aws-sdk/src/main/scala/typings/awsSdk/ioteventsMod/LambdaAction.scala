@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaAction extends StObject {
   
   /**
     * The ARN of the Lambda function that is executed.
     */
-  var functionArn: AmazonResourceName = js.native
+  var functionArn: AmazonResourceName
   
   /**
     * You can configure the action payload when you send a message to a Lambda function.
     */
-  var payload: js.UndefOr[Payload] = js.native
+  var payload: js.UndefOr[Payload] = js.undefined
 }
 object LambdaAction {
   

@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexedDBContentUpdatedEvent extends StObject {
   
   /**
     * Database to update.
     */
-  var databaseName: String = js.native
+  var databaseName: String
   
   /**
     * ObjectStore to update.
     */
-  var objectStoreName: String = js.native
+  var objectStoreName: String
   
   /**
     * Origin to update.
     */
-  var origin: String = js.native
+  var origin: String
 }
 object IndexedDBContentUpdatedEvent {
   

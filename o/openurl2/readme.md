@@ -12,7 +12,7 @@ Open a URL via the operating system (http: in default browser, mailto: in mail c
 | Keywords           | desktop, browser |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 946 |
+| # downloads        | 1081 |
 | # stars            | 0 |
 
 ## Links

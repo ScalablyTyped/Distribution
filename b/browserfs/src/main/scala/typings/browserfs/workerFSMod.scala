@@ -13,7 +13,6 @@ import typings.std.Date
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workerFSMod {
@@ -33,9 +32,12 @@ object workerFSMod {
   /* static members */
   object default {
     
-    @JSImport("browserfs/dist/node/backend/WorkerFS", "default.Create")
+    @JSImport("browserfs/dist/node/backend/WorkerFS", JSImport.Default)
     @js.native
-    def Create(opts: WorkerFSOptions, cb: BFSCallback[WorkerFS]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def Create(opts: WorkerFSOptions, cb: BFSCallback[WorkerFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/WorkerFS", "default.Name")
     @js.native
@@ -48,13 +50,11 @@ object workerFSMod {
     /**
       * Attaches a listener to the remote worker for file system requests.
       */
-    @JSImport("browserfs/dist/node/backend/WorkerFS", "default.attachRemoteListener")
-    @js.native
-    def attachRemoteListener(worker: Worker): Unit = js.native
+    @scala.inline
+    def attachRemoteListener(worker: Worker): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachRemoteListener")(worker.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("browserfs/dist/node/backend/WorkerFS", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -98,7 +98,7 @@ object workerFSMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -222,10 +222,9 @@ object workerFSMod {
     override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
-  @js.native
   trait WorkerFSOptions extends StObject {
     
-    var worker: Worker = js.native
+    var worker: Worker
   }
   object WorkerFSOptions {
     

@@ -2,37 +2,35 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTrackRelease extends StObject {
   
-  var countryTargeting: js.UndefOr[SchemaCountryTargeting] = js.native
+  var countryTargeting: js.UndefOr[SchemaCountryTargeting] = js.undefined
   
   /**
     * The release name, used to identify this release in the Play Console UI.
     * Not required to be unique. This is optional, if not set it will be
     * generated from the version_name in the APKs.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The description of what is new in the app in this release.
     */
-  var releaseNotes: js.UndefOr[js.Array[SchemaLocalizedText]] = js.native
+  var releaseNotes: js.UndefOr[js.Array[SchemaLocalizedText]] = js.undefined
   
   /**
     * The desired status of this release.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Fraction of users who are eligible to receive the release. 0 &lt;
     * fraction &lt; 1. To be set, release status must be &quot;inProgress&quot;
     * or &quot;halted&quot;.
     */
-  var userFraction: js.UndefOr[Double] = js.native
+  var userFraction: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of all version codes of APKs that will be exposed to the users of
@@ -40,7 +38,7 @@ trait SchemaTrackRelease extends StObject {
     * contain all versions you wish to be active, including those you wish to
     * retain from previous releases.
     */
-  var versionCodes: js.UndefOr[js.Array[String]] = js.native
+  var versionCodes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTrackRelease {
   

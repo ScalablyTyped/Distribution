@@ -6,7 +6,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/kubernetes", "core.v1.NodeList")
@@ -22,11 +21,15 @@ class NodeList protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: NodeListArgs) = this()
-  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+  def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
   def this(name: String, args: NodeListArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
 object NodeList {
+  
+  @JSImport("@pulumi/kubernetes", "core.v1.NodeList")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Get an existing NodeList resource's state with the given name, ID, and optional extra
@@ -36,18 +39,15 @@ object NodeList {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/kubernetes", "core.v1.NodeList.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiKubernetes.nodeListMod.NodeList = js.native
-  @JSImport("@pulumi/kubernetes", "core.v1.NodeList.get")
-  @js.native
-  def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.nodeListMod.NodeList = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiKubernetes.nodeListMod.NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.nodeListMod.NodeList]
+  @scala.inline
+  def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.nodeListMod.NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.nodeListMod.NodeList]
   
   /**
     * Returns true if the given object is an instance of NodeList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/kubernetes", "core.v1.NodeList.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/nodeList.NodeList */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/nodeList.NodeList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/nodeList.NodeList */ Boolean]
 }

@@ -616,42 +616,39 @@ import typings.std.Element
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ui extends StObject
 object ui {
   
-  @js.native
   trait AsyncRule extends StObject {
     
     /**
       * [descr:AsyncRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:AsyncRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:AsyncRule.reevaluate]
       */
-    var reevaluate: js.UndefOr[Boolean] = js.native
+    var reevaluate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:AsyncRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:AsyncRule.validationCallback]
       */
-    var validationCallback: js.UndefOr[js.Function1[/* options */ Column, Promise[_] | JQueryPromise[_]]] = js.native
+    var validationCallback: js.UndefOr[js.Function1[/* options */ Column, Promise[js.Any] | JQueryPromise[js.Any]]] = js.undefined
   }
   object AsyncRule {
     
@@ -689,35 +686,34 @@ object ui {
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       @scala.inline
-      def setValidationCallback(value: /* options */ Column => Promise[_] | JQueryPromise[_]): Self = StObject.set(x, "validationCallback", js.Any.fromFunction1(value))
+      def setValidationCallback(value: /* options */ Column => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "validationCallback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValidationCallbackUndefined: Self = StObject.set(x, "validationCallback", js.undefined)
     }
   }
   
-  @js.native
   trait ColCountResponsible extends StObject {
     
     /**
       * [descr:ColCountResponsible.lg]
       */
-    var lg: js.UndefOr[Double] = js.native
+    var lg: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:ColCountResponsible.md]
       */
-    var md: js.UndefOr[Double] = js.native
+    var md: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:ColCountResponsible.sm]
       */
-    var sm: js.UndefOr[Double] = js.native
+    var sm: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:ColCountResponsible.xs]
       */
-    var xs: js.UndefOr[Double] = js.native
+    var xs: js.UndefOr[Double] = js.undefined
   }
   object ColCountResponsible {
     
@@ -757,7 +753,9 @@ object ui {
   }
   
   @js.native
-  trait CollectionWidget extends Widget {
+  trait CollectionWidget
+    extends StObject
+       with Widget {
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
@@ -765,35 +763,34 @@ object ui {
     def getDataSource(): DataSource = js.native
   }
   
-  @js.native
   trait CollectionWidgetItem extends StObject {
     
     /**
       * [descr:CollectionWidgetItem.disabled]
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:CollectionWidgetItem.html]
       */
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CollectionWidgetItem.template]
       */
     var template: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:CollectionWidgetItem.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CollectionWidgetItem.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CollectionWidgetItem {
     
@@ -843,20 +840,21 @@ object ui {
   
   type CollectionWidgetItemTemplate = CollectionWidgetItem
   
-  @js.native
-  trait CollectionWidgetOptions[T] extends WidgetOptions[T] {
+  trait CollectionWidgetOptions[T]
+    extends StObject
+       with WidgetOptions[T] {
     
     /**
       * [descr:CollectionWidget.Options.dataSource]
       */
     var dataSource: js.UndefOr[
         String | (js.Array[String | CollectionWidgetItem]) | DataSource | DataSourceOptions
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.itemHoldTimeout]
       */
-    var itemHoldTimeout: js.UndefOr[Double] = js.native
+    var itemHoldTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.itemTemplate]
@@ -868,67 +866,67 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.items]
       */
-    var items: js.UndefOr[js.Array[String | CollectionWidgetItem | _]] = js.native
+    var items: js.UndefOr[js.Array[String | CollectionWidgetItem | js.Any]] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.keyExpr]
       */
-    var keyExpr: js.UndefOr[String | js.Function] = js.native
+    var keyExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.noDataText]
       */
-    var noDataText: js.UndefOr[String] = js.native
+    var noDataText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.onItemClick]
       */
-    var onItemClick: js.UndefOr[(js.Function1[/* e */ Event[T], _]) | String] = js.native
+    var onItemClick: js.UndefOr[(js.Function1[/* e */ Event[T], js.Any]) | String] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.onItemContextMenu]
       */
-    var onItemContextMenu: js.UndefOr[js.Function1[/* e */ Event[T], _]] = js.native
+    var onItemContextMenu: js.UndefOr[js.Function1[/* e */ Event[T], js.Any]] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.onItemHold]
       */
-    var onItemHold: js.UndefOr[js.Function1[/* e */ Event[T], _]] = js.native
+    var onItemHold: js.UndefOr[js.Function1[/* e */ Event[T], js.Any]] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.onItemRendered]
       */
-    var onItemRendered: js.UndefOr[js.Function1[/* e */ ItemData[T], _]] = js.native
+    var onItemRendered: js.UndefOr[js.Function1[/* e */ ItemData[T], js.Any]] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AddedItems[T], _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AddedItems[T], js.Any]] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.selectedIndex]
       */
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.selectedItem]
       */
-    var selectedItem: js.UndefOr[js.Any] = js.native
+    var selectedItem: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.selectedItemKeys]
       */
-    var selectedItemKeys: js.UndefOr[js.Array[_]] = js.native
+    var selectedItemKeys: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:CollectionWidget.Options.selectedItems]
       */
-    var selectedItems: js.UndefOr[js.Array[_]] = js.native
+    var selectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object CollectionWidgetOptions {
     
@@ -939,7 +937,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class CollectionWidgetOptionsMutableBuilder[Self <: CollectionWidgetOptions[_], T] (val x: Self with CollectionWidgetOptions[T]) extends AnyVal {
+    implicit class CollectionWidgetOptionsMutableBuilder[Self <: CollectionWidgetOptions[?], T] (val x: Self & CollectionWidgetOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDataSource(value: String | (js.Array[String | CollectionWidgetItem]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
@@ -975,7 +973,7 @@ object ui {
       def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | CollectionWidgetItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | CollectionWidgetItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -996,34 +994,34 @@ object ui {
       def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
       @scala.inline
-      def setOnItemClick(value: (js.Function1[/* e */ Event[T], _]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
+      def setOnItemClick(value: (js.Function1[/* e */ Event[T], js.Any]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnItemClickFunction1(value: /* e */ Event[T] => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnItemClickFunction1(value: /* e */ Event[T] => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnItemContextMenu(value: /* e */ Event[T] => _): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction1(value))
+      def setOnItemContextMenu(value: /* e */ Event[T] => js.Any): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
       
       @scala.inline
-      def setOnItemHold(value: /* e */ Event[T] => _): Self = StObject.set(x, "onItemHold", js.Any.fromFunction1(value))
+      def setOnItemHold(value: /* e */ Event[T] => js.Any): Self = StObject.set(x, "onItemHold", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemHoldUndefined: Self = StObject.set(x, "onItemHold", js.undefined)
       
       @scala.inline
-      def setOnItemRendered(value: /* e */ ItemData[T] => _): Self = StObject.set(x, "onItemRendered", js.Any.fromFunction1(value))
+      def setOnItemRendered(value: /* e */ ItemData[T] => js.Any): Self = StObject.set(x, "onItemRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemRenderedUndefined: Self = StObject.set(x, "onItemRendered", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ AddedItems[T] => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ AddedItems[T] => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
@@ -1038,7 +1036,7 @@ object ui {
       def setSelectedItem(value: js.Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSelectedItemKeys(value: js.Array[_]): Self = StObject.set(x, "selectedItemKeys", value.asInstanceOf[js.Any])
+      def setSelectedItemKeys(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItemKeys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemKeysUndefined: Self = StObject.set(x, "selectedItemKeys", js.undefined)
@@ -1050,7 +1048,7 @@ object ui {
       def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
       
       @scala.inline
-      def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
@@ -1060,42 +1058,41 @@ object ui {
     }
   }
   
-  @js.native
   trait CompareRule extends StObject {
     
     /**
       * [descr:CompareRule.comparisonTarget]
       */
-    var comparisonTarget: js.UndefOr[js.Function0[_]] = js.native
+    var comparisonTarget: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * [descr:CompareRule.comparisonType]
       */
     var comparisonType: js.UndefOr[
         ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | EqualssignEqualssign | EqualssignEqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:CompareRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:CompareRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CompareRule.reevaluate]
       */
-    var reevaluate: js.UndefOr[Boolean] = js.native
+    var reevaluate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:CompareRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
   }
   object CompareRule {
     
@@ -1109,7 +1106,7 @@ object ui {
     implicit class CompareRuleMutableBuilder[Self <: CompareRule] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComparisonTarget(value: () => _): Self = StObject.set(x, "comparisonTarget", js.Any.fromFunction0(value))
+      def setComparisonTarget(value: () => js.Any): Self = StObject.set(x, "comparisonTarget", js.Any.fromFunction0(value))
       
       @scala.inline
       def setComparisonTargetUndefined: Self = StObject.set(x, "comparisonTarget", js.undefined)
@@ -1148,35 +1145,34 @@ object ui {
     }
   }
   
-  @js.native
   trait CustomRule extends StObject {
     
     /**
       * [descr:CustomRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:CustomRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CustomRule.reevaluate]
       */
-    var reevaluate: js.UndefOr[Boolean] = js.native
+    var reevaluate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:CustomRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:CustomRule.validationCallback]
       */
-    var validationCallback: js.UndefOr[js.Function1[/* options */ Column, Boolean]] = js.native
+    var validationCallback: js.UndefOr[js.Function1[/* options */ Column, Boolean]] = js.undefined
   }
   object CustomRule {
     
@@ -1221,13 +1217,12 @@ object ui {
     }
   }
   
-  @js.native
   trait DataExpressionMixin extends StObject {
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
       */
-    def getDataSource(): DataSource = js.native
+    def getDataSource(): DataSource
   }
   object DataExpressionMixin {
     
@@ -1247,18 +1242,19 @@ object ui {
   
   type DataExpressionMixinItemTemplate = CollectionWidgetItem
   
-  @js.native
   trait DataExpressionMixinOptions[T] extends StObject {
     
     /**
       * [descr:DataExpressionMixin.Options.dataSource]
       */
-    var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource: js.UndefOr[
+        String | (js.Array[CollectionWidgetItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.displayExpr]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
+    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.itemTemplate]
@@ -1270,22 +1266,22 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.items]
       */
-    var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.native
+    var items: js.UndefOr[js.Array[CollectionWidgetItem | js.Any]] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.value]
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.valueExpr]
       */
-    var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.native
+    var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.undefined
   }
   object DataExpressionMixinOptions {
     
@@ -1296,10 +1292,10 @@ object ui {
     }
     
     @scala.inline
-    implicit class DataExpressionMixinOptionsMutableBuilder[Self <: DataExpressionMixinOptions[_], T] (val x: Self with DataExpressionMixinOptions[T]) extends AnyVal {
+    implicit class DataExpressionMixinOptionsMutableBuilder[Self <: DataExpressionMixinOptions[?], T] (val x: Self & DataExpressionMixinOptions[T]) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[CollectionWidgetItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -1335,7 +1331,7 @@ object ui {
       def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[CollectionWidgetItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[CollectionWidgetItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -1362,58 +1358,59 @@ object ui {
   
   type DraggableBase = DOMComponent
   
-  @js.native
-  trait DraggableBaseOptions[T] extends DOMComponentOptions[T] {
+  trait DraggableBaseOptions[T]
+    extends StObject
+       with DOMComponentOptions[T] {
     
     /**
       * [descr:DraggableBase.Options.autoScroll]
       */
-    var autoScroll: js.UndefOr[Boolean] = js.native
+    var autoScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.boundary]
       */
-    var boundary: js.UndefOr[String | Element | JQuery] = js.native
+    var boundary: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.container]
       */
-    var container: js.UndefOr[String | Element | JQuery] = js.native
+    var container: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.cursorOffset]
       */
-    var cursorOffset: js.UndefOr[String | Y] = js.native
+    var cursorOffset: js.UndefOr[String | Y] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.data]
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.dragDirection]
       */
-    var dragDirection: js.UndefOr[both | horizontal | vertical] = js.native
+    var dragDirection: js.UndefOr[both | horizontal | vertical] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.group]
       */
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.handle]
       */
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.scrollSensitivity]
       */
-    var scrollSensitivity: js.UndefOr[Double] = js.native
+    var scrollSensitivity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:DraggableBase.Options.scrollSpeed]
       */
-    var scrollSpeed: js.UndefOr[Double] = js.native
+    var scrollSpeed: js.UndefOr[Double] = js.undefined
   }
   object DraggableBaseOptions {
     
@@ -1424,7 +1421,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class DraggableBaseOptionsMutableBuilder[Self <: DraggableBaseOptions[_], T] (val x: Self with DraggableBaseOptions[T]) extends AnyVal {
+    implicit class DraggableBaseOptionsMutableBuilder[Self <: DraggableBaseOptions[?], T] (val x: Self & DraggableBaseOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
@@ -1489,7 +1486,9 @@ object ui {
   }
   
   @js.native
-  trait Editor extends Widget {
+  trait Editor
+    extends StObject
+       with Widget {
     
     /**
       * [descr:Editor.reset()]
@@ -1497,48 +1496,49 @@ object ui {
     def reset(): Unit = js.native
   }
   
-  @js.native
-  trait EditorOptions[T] extends WidgetOptions[T] {
+  trait EditorOptions[T]
+    extends StObject
+       with WidgetOptions[T] {
     
     /**
       * [descr:Editor.Options.isValid]
       */
-    var isValid: js.UndefOr[Boolean] = js.native
+    var isValid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:Editor.Options.onValueChanged]
       */
-    var onValueChanged: js.UndefOr[js.Function1[/* e */ PreviousValue[T], _]] = js.native
+    var onValueChanged: js.UndefOr[js.Function1[/* e */ PreviousValue[T], js.Any]] = js.undefined
     
     /**
       * [descr:Editor.Options.readOnly]
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:Editor.Options.validationError]
       */
-    var validationError: js.UndefOr[js.Any] = js.native
+    var validationError: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:Editor.Options.validationErrors]
       */
-    var validationErrors: js.UndefOr[js.Array[_]] = js.native
+    var validationErrors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:Editor.Options.validationMessageMode]
       */
-    var validationMessageMode: js.UndefOr[always | auto] = js.native
+    var validationMessageMode: js.UndefOr[always | auto] = js.undefined
     
     /**
       * [descr:Editor.Options.validationStatus]
       */
-    var validationStatus: js.UndefOr[valid | invalid | pending] = js.native
+    var validationStatus: js.UndefOr[valid | invalid | pending] = js.undefined
     
     /**
       * [descr:Editor.Options.value]
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object EditorOptions {
     
@@ -1549,7 +1549,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class EditorOptionsMutableBuilder[Self <: EditorOptions[_], T] (val x: Self with EditorOptions[T]) extends AnyVal {
+    implicit class EditorOptionsMutableBuilder[Self <: EditorOptions[?], T] (val x: Self & EditorOptions[T]) extends AnyVal {
       
       @scala.inline
       def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
@@ -1558,7 +1558,7 @@ object ui {
       def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
       
       @scala.inline
-      def setOnValueChanged(value: /* e */ PreviousValue[T] => _): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      def setOnValueChanged(value: /* e */ PreviousValue[T] => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
@@ -1576,7 +1576,7 @@ object ui {
       def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
       
       @scala.inline
-      def setValidationErrors(value: js.Array[_]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+      def setValidationErrors(value: js.Array[js.Any]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
@@ -1604,25 +1604,24 @@ object ui {
     }
   }
   
-  @js.native
   trait EmailRule extends StObject {
     
     /**
       * [descr:EmailRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:EmailRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:EmailRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
   }
   object EmailRule {
     
@@ -1656,19 +1655,21 @@ object ui {
   }
   
   @js.native
-  trait GridBase extends Widget {
+  trait GridBase
+    extends StObject
+       with Widget {
     
     /**
       * [descr:GridBase.beginCustomLoading(messageText)]
       */
     def beginCustomLoading(messageText: String): Unit = js.native
     
-    def byKey(key: String): Promise[_] with JQueryPromise[_] = js.native
+    def byKey(key: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
     /**
       * [descr:GridBase.byKey(key)]
       */
-    def byKey(key: js.Any): Promise[_] with JQueryPromise[_] = js.native
-    def byKey(key: Double): Promise[_] with JQueryPromise[_] = js.native
+    def byKey(key: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    def byKey(key: Double): Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:GridBase.cancelEditData()]
@@ -1761,12 +1762,12 @@ object ui {
     /**
       * [descr:GridBase.deselectAll()]
       */
-    def deselectAll(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def deselectAll(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:GridBase.deselectRows(keys)]
       */
-    def deselectRows(keys: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
+    def deselectRows(keys: js.Array[js.Any]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:GridBase.editCell(rowIndex, dataField)]
@@ -1838,7 +1839,7 @@ object ui {
     /**
       * [descr:GridBase.getRowElement(rowIndex)]
       */
-    def getRowElement(rowIndex: Double): js.UndefOr[js.Array[Element] with JQuery] = js.native
+    def getRowElement(rowIndex: Double): js.UndefOr[js.Array[Element] & JQuery] = js.native
     
     def getRowIndexByKey(key: String): Double = js.native
     /**
@@ -1905,7 +1906,7 @@ object ui {
     /**
       * [descr:GridBase.pageIndex(newIndex)]
       */
-    def pageIndex(newIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def pageIndex(newIndex: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:GridBase.pageSize()]
@@ -1919,11 +1920,11 @@ object ui {
     /**
       * [descr:GridBase.refresh()]
       */
-    def refresh(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def refresh(): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:GridBase.refresh(changesOnly)]
       */
-    def refresh(changesOnly: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def refresh(changesOnly: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:GridBase.repaintRows(rowIndexes)]
@@ -1933,7 +1934,7 @@ object ui {
     /**
       * [descr:GridBase.saveEditData()]
       */
-    def saveEditData(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def saveEditData(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:GridBase.searchByText(text)]
@@ -1943,17 +1944,17 @@ object ui {
     /**
       * [descr:GridBase.selectAll()]
       */
-    def selectAll(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def selectAll(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:GridBase.selectRows(keys, preserve)]
       */
-    def selectRows(keys: js.Array[_], preserve: Boolean): Promise[_] with JQueryPromise[_] = js.native
+    def selectRows(keys: js.Array[js.Any], preserve: Boolean): Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:GridBase.selectRowsByIndexes(indexes)]
       */
-    def selectRowsByIndexes(indexes: js.Array[Double]): Promise[_] with JQueryPromise[_] = js.native
+    def selectRowsByIndexes(indexes: js.Array[Double]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:GridBase.showColumnChooser()]
@@ -1980,68 +1981,67 @@ object ui {
     def updateDimensions(): Unit = js.native
   }
   
-  @js.native
   trait GridBaseColumn extends StObject {
     
     /**
       * [descr:GridBaseColumn.alignment]
       */
-    var alignment: js.UndefOr[center | left | right] = js.native
+    var alignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowEditing]
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowFiltering]
       */
-    var allowFiltering: js.UndefOr[Boolean] = js.native
+    var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowFixing]
       */
-    var allowFixing: js.UndefOr[Boolean] = js.native
+    var allowFixing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowHeaderFiltering]
       */
-    var allowHeaderFiltering: js.UndefOr[Boolean] = js.native
+    var allowHeaderFiltering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowHiding]
       */
-    var allowHiding: js.UndefOr[Boolean] = js.native
+    var allowHiding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowReordering]
       */
-    var allowReordering: js.UndefOr[Boolean] = js.native
+    var allowReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowResizing]
       */
-    var allowResizing: js.UndefOr[Boolean] = js.native
+    var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowSearch]
       */
-    var allowSearch: js.UndefOr[Boolean] = js.native
+    var allowSearch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.allowSorting]
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.calculateCellValue]
       */
-    var calculateCellValue: js.UndefOr[js.Function1[/* rowData */ js.Any, _]] = js.native
+    var calculateCellValue: js.UndefOr[js.Function1[/* rowData */ js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:GridBaseColumn.calculateDisplayValue]
       */
-    var calculateDisplayValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, _])] = js.native
+    var calculateDisplayValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, js.Any])] = js.undefined
     
     /**
       * [descr:GridBaseColumn.calculateFilterExpression]
@@ -2051,54 +2051,54 @@ object ui {
           /* filterValue */ js.Any, 
           /* selectedFilterOperation */ String, 
           /* target */ String, 
-          String | js.Array[_] | js.Function
+          String | js.Array[js.Any] | js.Function
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:GridBaseColumn.calculateSortValue]
       */
-    var calculateSortValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, _])] = js.native
+    var calculateSortValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, js.Any])] = js.undefined
     
     /**
       * [descr:GridBaseColumn.caption]
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumn.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumn.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* cellInfo */ GroupInterval, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* cellInfo */ GroupInterval, String]] = js.undefined
     
     /**
       * [descr:GridBaseColumn.dataField]
       */
-    var dataField: js.UndefOr[String] = js.native
+    var dataField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumn.dataType]
       */
-    var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.native
+    var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.undefined
     
     /**
       * [descr:GridBaseColumn.editorOptions]
       */
-    var editorOptions: js.UndefOr[js.Any] = js.native
+    var editorOptions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:GridBaseColumn.encodeHtml]
       */
-    var encodeHtml: js.UndefOr[Boolean] = js.native
+    var encodeHtml: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.falseText]
       */
-    var falseText: js.UndefOr[String] = js.native
+    var falseText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumn.filterOperations]
@@ -2107,89 +2107,89 @@ object ui {
         js.Array[
           Equalssign | LessthansignGreaterthansign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | contains | endswith | isblank | isnotblank | notcontains | startswith | between | anyof | noneof | String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:GridBaseColumn.filterType]
       */
-    var filterType: js.UndefOr[exclude | include] = js.native
+    var filterType: js.UndefOr[exclude | include] = js.undefined
     
     /**
       * [descr:GridBaseColumn.filterValue]
       */
-    var filterValue: js.UndefOr[js.Any] = js.native
+    var filterValue: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:GridBaseColumn.filterValues]
       */
-    var filterValues: js.UndefOr[js.Array[_]] = js.native
+    var filterValues: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:GridBaseColumn.fixed]
       */
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.fixedPosition]
       */
-    var fixedPosition: js.UndefOr[left | right] = js.native
+    var fixedPosition: js.UndefOr[left | right] = js.undefined
     
     /**
       * [descr:GridBaseColumn.formItem]
       */
-    var formItem: js.UndefOr[dxFormSimpleItem] = js.native
+    var formItem: js.UndefOr[dxFormSimpleItem] = js.undefined
     
     /**
       * [descr:GridBaseColumn.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
     
     /**
       * [descr:GridBaseColumn.headerFilter]
       */
-    var headerFilter: js.UndefOr[SearchMode] = js.native
+    var headerFilter: js.UndefOr[SearchMode] = js.undefined
     
     /**
       * [descr:GridBaseColumn.hidingPriority]
       */
-    var hidingPriority: js.UndefOr[Double] = js.native
+    var hidingPriority: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBaseColumn.isBand]
       */
-    var isBand: js.UndefOr[Boolean] = js.native
+    var isBand: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.lookup]
       */
-    var lookup: js.UndefOr[AllowClearing] = js.native
+    var lookup: js.UndefOr[AllowClearing] = js.undefined
     
     /**
       * [descr:GridBaseColumn.minWidth]
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBaseColumn.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumn.ownerBand]
       */
-    var ownerBand: js.UndefOr[Double] = js.native
+    var ownerBand: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBaseColumn.renderAsync]
       */
-    var renderAsync: js.UndefOr[Boolean] = js.native
+    var renderAsync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.selectedFilterOperation]
       */
     var selectedFilterOperation: js.UndefOr[
         Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | Greaterthansign | GreaterthansignEqualssign | between | contains | endswith | notcontains | startswith
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:GridBaseColumn.setCellValue]
@@ -2201,37 +2201,37 @@ object ui {
           /* currentRowData */ js.Any, 
           Unit | Promise[Unit] | JQueryPromise[Unit]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:GridBaseColumn.showEditorAlways]
       */
-    var showEditorAlways: js.UndefOr[Boolean] = js.native
+    var showEditorAlways: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.showInColumnChooser]
       */
-    var showInColumnChooser: js.UndefOr[Boolean] = js.native
+    var showInColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.sortIndex]
       */
-    var sortIndex: js.UndefOr[Double] = js.native
+    var sortIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBaseColumn.sortOrder]
       */
-    var sortOrder: js.UndefOr[asc | desc] = js.native
+    var sortOrder: js.UndefOr[asc | desc] = js.undefined
     
     /**
       * [descr:GridBaseColumn.sortingMethod]
       */
-    var sortingMethod: js.UndefOr[js.Function2[/* value1 */ js.Any, /* value2 */ js.Any, Double]] = js.native
+    var sortingMethod: js.UndefOr[js.Function2[/* value1 */ js.Any, /* value2 */ js.Any, Double]] = js.undefined
     
     /**
       * [descr:GridBaseColumn.trueText]
       */
-    var trueText: js.UndefOr[String] = js.native
+    var trueText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumn.validationRules]
@@ -2240,22 +2240,22 @@ object ui {
         js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:GridBaseColumn.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBaseColumn.visibleIndex]
       */
-    var visibleIndex: js.UndefOr[Double] = js.native
+    var visibleIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBaseColumn.width]
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object GridBaseColumn {
     
@@ -2329,33 +2329,33 @@ object ui {
       def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
       
       @scala.inline
-      def setCalculateCellValue(value: /* rowData */ js.Any => _): Self = StObject.set(x, "calculateCellValue", js.Any.fromFunction1(value))
+      def setCalculateCellValue(value: /* rowData */ js.Any => js.Any): Self = StObject.set(x, "calculateCellValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCalculateCellValueUndefined: Self = StObject.set(x, "calculateCellValue", js.undefined)
       
       @scala.inline
-      def setCalculateDisplayValue(value: String | (js.Function1[/* rowData */ js.Any, _])): Self = StObject.set(x, "calculateDisplayValue", value.asInstanceOf[js.Any])
+      def setCalculateDisplayValue(value: String | (js.Function1[/* rowData */ js.Any, js.Any])): Self = StObject.set(x, "calculateDisplayValue", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCalculateDisplayValueFunction1(value: /* rowData */ js.Any => _): Self = StObject.set(x, "calculateDisplayValue", js.Any.fromFunction1(value))
+      def setCalculateDisplayValueFunction1(value: /* rowData */ js.Any => js.Any): Self = StObject.set(x, "calculateDisplayValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCalculateDisplayValueUndefined: Self = StObject.set(x, "calculateDisplayValue", js.undefined)
       
       @scala.inline
       def setCalculateFilterExpression(
-        value: (/* filterValue */ js.Any, /* selectedFilterOperation */ String, /* target */ String) => String | js.Array[_] | js.Function
+        value: (/* filterValue */ js.Any, /* selectedFilterOperation */ String, /* target */ String) => String | js.Array[js.Any] | js.Function
       ): Self = StObject.set(x, "calculateFilterExpression", js.Any.fromFunction3(value))
       
       @scala.inline
       def setCalculateFilterExpressionUndefined: Self = StObject.set(x, "calculateFilterExpression", js.undefined)
       
       @scala.inline
-      def setCalculateSortValue(value: String | (js.Function1[/* rowData */ js.Any, _])): Self = StObject.set(x, "calculateSortValue", value.asInstanceOf[js.Any])
+      def setCalculateSortValue(value: String | (js.Function1[/* rowData */ js.Any, js.Any])): Self = StObject.set(x, "calculateSortValue", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCalculateSortValueFunction1(value: /* rowData */ js.Any => _): Self = StObject.set(x, "calculateSortValue", js.Any.fromFunction1(value))
+      def setCalculateSortValueFunction1(value: /* rowData */ js.Any => js.Any): Self = StObject.set(x, "calculateSortValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCalculateSortValueUndefined: Self = StObject.set(x, "calculateSortValue", js.undefined)
@@ -2436,7 +2436,7 @@ object ui {
       def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
       
       @scala.inline
-      def setFilterValues(value: js.Array[_]): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
+      def setFilterValues(value: js.Array[js.Any]): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
@@ -2606,28 +2606,27 @@ object ui {
     }
   }
   
-  @js.native
   trait GridBaseColumnButton extends StObject {
     
     /**
       * [descr:GridBaseColumnButton.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumnButton.hint]
       */
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumnButton.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBaseColumnButton.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object GridBaseColumnButton {
     
@@ -2666,68 +2665,67 @@ object ui {
     }
   }
   
-  @js.native
   trait GridBaseEditing extends StObject {
     
     /**
       * [descr:GridBase.Options.editing.changes]
       */
-    var changes: js.UndefOr[js.Array[_]] = js.native
+    var changes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.confirmDelete]
       */
-    var confirmDelete: js.UndefOr[Boolean] = js.native
+    var confirmDelete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.editColumnName]
       */
-    var editColumnName: js.UndefOr[String] = js.native
+    var editColumnName: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.editRowKey]
       */
-    var editRowKey: js.UndefOr[js.Any] = js.native
+    var editRowKey: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.form]
       */
-    var form: js.UndefOr[dxFormOptions] = js.native
+    var form: js.UndefOr[dxFormOptions] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.mode]
       */
-    var mode: js.UndefOr[batch | cell | row | form | popup] = js.native
+    var mode: js.UndefOr[batch | cell | row | form | popup] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.popup]
       */
-    var popup: js.UndefOr[dxPopupOptions[dxPopup]] = js.native
+    var popup: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.refreshMode]
       */
-    var refreshMode: js.UndefOr[full | reshape | repaint] = js.native
+    var refreshMode: js.UndefOr[full | reshape | repaint] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.selectTextOnEditStart]
       */
-    var selectTextOnEditStart: js.UndefOr[Boolean] = js.native
+    var selectTextOnEditStart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.startEditAction]
       */
-    var startEditAction: js.UndefOr[click | dblClick] = js.native
+    var startEditAction: js.UndefOr[click | dblClick] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts]
       */
-    var texts: js.UndefOr[GridBaseEditingTexts] = js.native
+    var texts: js.UndefOr[GridBaseEditingTexts] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.useIcons]
       */
-    var useIcons: js.UndefOr[Boolean] = js.native
+    var useIcons: js.UndefOr[Boolean] = js.undefined
   }
   object GridBaseEditing {
     
@@ -2741,7 +2739,7 @@ object ui {
     implicit class GridBaseEditingMutableBuilder[Self <: GridBaseEditing] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChanges(value: js.Array[_]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      def setChanges(value: js.Array[js.Any]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
@@ -2817,63 +2815,62 @@ object ui {
     }
   }
   
-  @js.native
   trait GridBaseEditingTexts extends StObject {
     
     /**
       * [descr:GridBase.Options.editing.texts.addRow]
       */
-    var addRow: js.UndefOr[String] = js.native
+    var addRow: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.cancelAllChanges]
       */
-    var cancelAllChanges: js.UndefOr[String] = js.native
+    var cancelAllChanges: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.cancelRowChanges]
       */
-    var cancelRowChanges: js.UndefOr[String] = js.native
+    var cancelRowChanges: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.confirmDeleteMessage]
       */
-    var confirmDeleteMessage: js.UndefOr[String] = js.native
+    var confirmDeleteMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.confirmDeleteTitle]
       */
-    var confirmDeleteTitle: js.UndefOr[String] = js.native
+    var confirmDeleteTitle: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.deleteRow]
       */
-    var deleteRow: js.UndefOr[String] = js.native
+    var deleteRow: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.editRow]
       */
-    var editRow: js.UndefOr[String] = js.native
+    var editRow: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.saveAllChanges]
       */
-    var saveAllChanges: js.UndefOr[String] = js.native
+    var saveAllChanges: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.saveRowChanges]
       */
-    var saveRowChanges: js.UndefOr[String] = js.native
+    var saveRowChanges: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.undeleteRow]
       */
-    var undeleteRow: js.UndefOr[String] = js.native
+    var undeleteRow: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing.texts.validationCancelChanges]
       */
-    var validationCancelChanges: js.UndefOr[String] = js.native
+    var validationCancelChanges: js.UndefOr[String] = js.undefined
   }
   object GridBaseEditingTexts {
     
@@ -2954,363 +2951,364 @@ object ui {
     }
   }
   
-  @js.native
-  trait GridBaseOptions[T] extends WidgetOptions[T] {
+  trait GridBaseOptions[T]
+    extends StObject
+       with WidgetOptions[T] {
     
     /**
       * [descr:GridBase.Options.allowColumnReordering]
       */
-    var allowColumnReordering: js.UndefOr[Boolean] = js.native
+    var allowColumnReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.allowColumnResizing]
       */
-    var allowColumnResizing: js.UndefOr[Boolean] = js.native
+    var allowColumnResizing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.autoNavigateToFocusedRow]
       */
-    var autoNavigateToFocusedRow: js.UndefOr[Boolean] = js.native
+    var autoNavigateToFocusedRow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.cacheEnabled]
       */
-    var cacheEnabled: js.UndefOr[Boolean] = js.native
+    var cacheEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.cellHintEnabled]
       */
-    var cellHintEnabled: js.UndefOr[Boolean] = js.native
+    var cellHintEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.columnAutoWidth]
       */
-    var columnAutoWidth: js.UndefOr[Boolean] = js.native
+    var columnAutoWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.columnChooser]
       */
-    var columnChooser: js.UndefOr[EmptyPanelText] = js.native
+    var columnChooser: js.UndefOr[EmptyPanelText] = js.undefined
     
     /**
       * [descr:GridBase.Options.columnFixing]
       */
-    var columnFixing: js.UndefOr[Enabled] = js.native
+    var columnFixing: js.UndefOr[Enabled] = js.undefined
     
     /**
       * [descr:GridBase.Options.columnHidingEnabled]
       */
-    var columnHidingEnabled: js.UndefOr[Boolean] = js.native
+    var columnHidingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.columnMinWidth]
       */
-    var columnMinWidth: js.UndefOr[Double] = js.native
+    var columnMinWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBase.Options.columnResizingMode]
       */
-    var columnResizingMode: js.UndefOr[nextColumn | widget] = js.native
+    var columnResizingMode: js.UndefOr[nextColumn | widget] = js.undefined
     
     /**
       * [descr:GridBase.Options.columnWidth]
       */
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBase.Options.columns]
       */
-    var columns: js.UndefOr[js.Array[GridBaseColumn | String]] = js.native
+    var columns: js.UndefOr[js.Array[GridBaseColumn | String]] = js.undefined
     
     /**
       * [descr:GridBase.Options.dataSource]
       */
-    var dataSource: js.UndefOr[String | js.Array[_] | DataSource | DataSourceOptions] = js.native
+    var dataSource: js.UndefOr[String | js.Array[js.Any] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:GridBase.Options.dateSerializationFormat]
       */
-    var dateSerializationFormat: js.UndefOr[String] = js.native
+    var dateSerializationFormat: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.editing]
       */
-    var editing: js.UndefOr[GridBaseEditing] = js.native
+    var editing: js.UndefOr[GridBaseEditing] = js.undefined
     
     /**
       * [descr:GridBase.Options.errorRowEnabled]
       */
-    var errorRowEnabled: js.UndefOr[Boolean] = js.native
+    var errorRowEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.filterBuilder]
       */
-    var filterBuilder: js.UndefOr[dxFilterBuilderOptions] = js.native
+    var filterBuilder: js.UndefOr[dxFilterBuilderOptions] = js.undefined
     
     /**
       * [descr:GridBase.Options.filterBuilderPopup]
       */
-    var filterBuilderPopup: js.UndefOr[dxPopupOptions[dxPopup]] = js.native
+    var filterBuilderPopup: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
     
     /**
       * [descr:GridBase.Options.filterPanel]
       */
-    var filterPanel: js.UndefOr[CustomizeText[T]] = js.native
+    var filterPanel: js.UndefOr[CustomizeText[T]] = js.undefined
     
     /**
       * [descr:GridBase.Options.filterRow]
       */
-    var filterRow: js.UndefOr[ApplyFilter] = js.native
+    var filterRow: js.UndefOr[ApplyFilter] = js.undefined
     
     /**
       * [descr:GridBase.Options.filterSyncEnabled]
       */
-    var filterSyncEnabled: js.UndefOr[Boolean | auto] = js.native
+    var filterSyncEnabled: js.UndefOr[Boolean | auto] = js.undefined
     
     /**
       * [descr:GridBase.Options.filterValue]
       */
-    var filterValue: js.UndefOr[String | js.Array[_] | js.Function] = js.native
+    var filterValue: js.UndefOr[String | js.Array[js.Any] | js.Function] = js.undefined
     
     /**
       * [descr:GridBase.Options.focusedColumnIndex]
       */
-    var focusedColumnIndex: js.UndefOr[Double] = js.native
+    var focusedColumnIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBase.Options.focusedRowEnabled]
       */
-    var focusedRowEnabled: js.UndefOr[Boolean] = js.native
+    var focusedRowEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.focusedRowIndex]
       */
-    var focusedRowIndex: js.UndefOr[Double] = js.native
+    var focusedRowIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBase.Options.focusedRowKey]
       */
-    var focusedRowKey: js.UndefOr[js.Any] = js.native
+    var focusedRowKey: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:GridBase.Options.headerFilter]
       */
-    var headerFilter: js.UndefOr[Height] = js.native
+    var headerFilter: js.UndefOr[Height] = js.undefined
     
     /**
       * [descr:GridBase.Options.highlightChanges]
       */
-    var highlightChanges: js.UndefOr[Boolean] = js.native
+    var highlightChanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.keyboardNavigation]
       */
-    var keyboardNavigation: js.UndefOr[EditOnKeyPress] = js.native
+    var keyboardNavigation: js.UndefOr[EditOnKeyPress] = js.undefined
     
     /**
       * [descr:GridBase.Options.loadPanel]
       */
-    var loadPanel: js.UndefOr[IndicatorSrc] = js.native
+    var loadPanel: js.UndefOr[IndicatorSrc] = js.undefined
     
     /**
       * [descr:GridBase.Options.noDataText]
       */
-    var noDataText: js.UndefOr[String] = js.native
+    var noDataText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:GridBase.Options.onAdaptiveDetailRowPreparing]
       */
-    var onAdaptiveDetailRowPreparing: js.UndefOr[js.Function1[/* e */ FormOptions[T], _]] = js.native
+    var onAdaptiveDetailRowPreparing: js.UndefOr[js.Function1[/* e */ FormOptions[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onDataErrorOccurred]
       */
-    var onDataErrorOccurred: js.UndefOr[js.Function1[/* e */ Error[T], _]] = js.native
+    var onDataErrorOccurred: js.UndefOr[js.Function1[/* e */ Error[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onEditCanceled]
       */
-    var onEditCanceled: js.UndefOr[js.Function1[/* e */ ChangesComponent[T], _]] = js.native
+    var onEditCanceled: js.UndefOr[js.Function1[/* e */ ChangesComponent[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onEditCanceling]
       */
-    var onEditCanceling: js.UndefOr[js.Function1[/* e */ CancelChanges[T], _]] = js.native
+    var onEditCanceling: js.UndefOr[js.Function1[/* e */ CancelChanges[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onInitNewRow]
       */
-    var onInitNewRow: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.Promise[T], _]] = js.native
+    var onInitNewRow: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.Promise[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onKeyDown]
       */
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ Handled[T], _]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ Handled[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowCollapsed]
       */
-    var onRowCollapsed: js.UndefOr[js.Function1[/* e */ Key[T], _]] = js.native
+    var onRowCollapsed: js.UndefOr[js.Function1[/* e */ Key[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowCollapsing]
       */
-    var onRowCollapsing: js.UndefOr[js.Function1[/* e */ CancelComponent[T], _]] = js.native
+    var onRowCollapsing: js.UndefOr[js.Function1[/* e */ CancelComponent[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowExpanded]
       */
-    var onRowExpanded: js.UndefOr[js.Function1[/* e */ Key[T], _]] = js.native
+    var onRowExpanded: js.UndefOr[js.Function1[/* e */ Key[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowExpanding]
       */
-    var onRowExpanding: js.UndefOr[js.Function1[/* e */ CancelComponent[T], _]] = js.native
+    var onRowExpanding: js.UndefOr[js.Function1[/* e */ CancelComponent[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowInserted]
       */
-    var onRowInserted: js.UndefOr[js.Function1[/* e */ ComponentData[T], _]] = js.native
+    var onRowInserted: js.UndefOr[js.Function1[/* e */ ComponentData[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowInserting]
       */
-    var onRowInserting: js.UndefOr[js.Function1[/* e */ DataElement[T], _]] = js.native
+    var onRowInserting: js.UndefOr[js.Function1[/* e */ DataElement[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowRemoved]
       */
-    var onRowRemoved: js.UndefOr[js.Function1[/* e */ ComponentData[T], _]] = js.native
+    var onRowRemoved: js.UndefOr[js.Function1[/* e */ ComponentData[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowRemoving]
       */
-    var onRowRemoving: js.UndefOr[js.Function1[/* e */ ElementKey[T], _]] = js.native
+    var onRowRemoving: js.UndefOr[js.Function1[/* e */ ElementKey[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowUpdated]
       */
-    var onRowUpdated: js.UndefOr[js.Function1[/* e */ ComponentData[T], _]] = js.native
+    var onRowUpdated: js.UndefOr[js.Function1[/* e */ ComponentData[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowUpdating]
       */
-    var onRowUpdating: js.UndefOr[js.Function1[/* e */ NewData[T], _]] = js.native
+    var onRowUpdating: js.UndefOr[js.Function1[/* e */ NewData[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onRowValidating]
       */
-    var onRowValidating: js.UndefOr[js.Function1[/* e */ BrokenRules[T], _]] = js.native
+    var onRowValidating: js.UndefOr[js.Function1[/* e */ BrokenRules[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onSaved]
       */
-    var onSaved: js.UndefOr[js.Function1[/* e */ ChangesComponent[T], _]] = js.native
+    var onSaved: js.UndefOr[js.Function1[/* e */ ChangesComponent[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onSaving]
       */
-    var onSaving: js.UndefOr[js.Function1[/* e */ ComponentElement[T], _]] = js.native
+    var onSaving: js.UndefOr[js.Function1[/* e */ ComponentElement[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ CurrentDeselectedRowKeys[T], _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ CurrentDeselectedRowKeys[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.onToolbarPreparing]
       */
-    var onToolbarPreparing: js.UndefOr[js.Function1[/* e */ ToolbarOptions[T], _]] = js.native
+    var onToolbarPreparing: js.UndefOr[js.Function1[/* e */ ToolbarOptions[T], js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.pager]
       */
-    var pager: js.UndefOr[AllowedPageSizes] = js.native
+    var pager: js.UndefOr[AllowedPageSizes] = js.undefined
     
     /**
       * [descr:GridBase.Options.paging]
       */
-    var paging: js.UndefOr[GridBasePaging] = js.native
+    var paging: js.UndefOr[GridBasePaging] = js.undefined
     
     /**
       * [descr:GridBase.Options.renderAsync]
       */
-    var renderAsync: js.UndefOr[Boolean] = js.native
+    var renderAsync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.repaintChangesOnly]
       */
-    var repaintChangesOnly: js.UndefOr[Boolean] = js.native
+    var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.rowAlternationEnabled]
       */
-    var rowAlternationEnabled: js.UndefOr[Boolean] = js.native
+    var rowAlternationEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.rowDragging]
       */
-    var rowDragging: js.UndefOr[AllowDropInsideItem] = js.native
+    var rowDragging: js.UndefOr[AllowDropInsideItem] = js.undefined
     
     /**
       * [descr:GridBase.Options.scrolling]
       */
-    var scrolling: js.UndefOr[GridBaseScrolling] = js.native
+    var scrolling: js.UndefOr[GridBaseScrolling] = js.undefined
     
     /**
       * [descr:GridBase.Options.searchPanel]
       */
-    var searchPanel: js.UndefOr[HighlightCaseSensitive] = js.native
+    var searchPanel: js.UndefOr[HighlightCaseSensitive] = js.undefined
     
     /**
       * [descr:GridBase.Options.selectedRowKeys]
       */
-    var selectedRowKeys: js.UndefOr[js.Array[_]] = js.native
+    var selectedRowKeys: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:GridBase.Options.selection]
       */
-    var selection: js.UndefOr[GridBaseSelection] = js.native
+    var selection: js.UndefOr[GridBaseSelection] = js.undefined
     
     /**
       * [descr:GridBase.Options.showBorders]
       */
-    var showBorders: js.UndefOr[Boolean] = js.native
+    var showBorders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.showColumnHeaders]
       */
-    var showColumnHeaders: js.UndefOr[Boolean] = js.native
+    var showColumnHeaders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.showColumnLines]
       */
-    var showColumnLines: js.UndefOr[Boolean] = js.native
+    var showColumnLines: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.showRowLines]
       */
-    var showRowLines: js.UndefOr[Boolean] = js.native
+    var showRowLines: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.sorting]
       */
-    var sorting: js.UndefOr[AscendingText] = js.native
+    var sorting: js.UndefOr[AscendingText] = js.undefined
     
     /**
       * [descr:GridBase.Options.stateStoring]
       */
-    var stateStoring: js.UndefOr[CustomLoad] = js.native
+    var stateStoring: js.UndefOr[CustomLoad] = js.undefined
     
     /**
       * [descr:GridBase.Options.twoWayBindingEnabled]
       */
-    var twoWayBindingEnabled: js.UndefOr[Boolean] = js.native
+    var twoWayBindingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.wordWrapEnabled]
       */
-    var wordWrapEnabled: js.UndefOr[Boolean] = js.native
+    var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object GridBaseOptions {
     
@@ -3321,7 +3319,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class GridBaseOptionsMutableBuilder[Self <: GridBaseOptions[_], T] (val x: Self with GridBaseOptions[T]) extends AnyVal {
+    implicit class GridBaseOptionsMutableBuilder[Self <: GridBaseOptions[?], T] (val x: Self & GridBaseOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAllowColumnReordering(value: Boolean): Self = StObject.set(x, "allowColumnReordering", value.asInstanceOf[js.Any])
@@ -3405,7 +3403,7 @@ object ui {
       def setColumnsVarargs(value: (GridBaseColumn | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
       @scala.inline
-      def setDataSource(value: String | js.Array[_] | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | js.Array[js.Any] | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -3462,7 +3460,7 @@ object ui {
       def setFilterSyncEnabledUndefined: Self = StObject.set(x, "filterSyncEnabled", js.undefined)
       
       @scala.inline
-      def setFilterValue(value: String | js.Array[_] | js.Function): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
+      def setFilterValue(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
@@ -3525,127 +3523,127 @@ object ui {
       def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
       @scala.inline
-      def setOnAdaptiveDetailRowPreparing(value: /* e */ FormOptions[T] => _): Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.Any.fromFunction1(value))
+      def setOnAdaptiveDetailRowPreparing(value: /* e */ FormOptions[T] => js.Any): Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAdaptiveDetailRowPreparingUndefined: Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.undefined)
       
       @scala.inline
-      def setOnDataErrorOccurred(value: /* e */ Error[T] => _): Self = StObject.set(x, "onDataErrorOccurred", js.Any.fromFunction1(value))
+      def setOnDataErrorOccurred(value: /* e */ Error[T] => js.Any): Self = StObject.set(x, "onDataErrorOccurred", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDataErrorOccurredUndefined: Self = StObject.set(x, "onDataErrorOccurred", js.undefined)
       
       @scala.inline
-      def setOnEditCanceled(value: /* e */ ChangesComponent[T] => _): Self = StObject.set(x, "onEditCanceled", js.Any.fromFunction1(value))
+      def setOnEditCanceled(value: /* e */ ChangesComponent[T] => js.Any): Self = StObject.set(x, "onEditCanceled", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditCanceledUndefined: Self = StObject.set(x, "onEditCanceled", js.undefined)
       
       @scala.inline
-      def setOnEditCanceling(value: /* e */ CancelChanges[T] => _): Self = StObject.set(x, "onEditCanceling", js.Any.fromFunction1(value))
+      def setOnEditCanceling(value: /* e */ CancelChanges[T] => js.Any): Self = StObject.set(x, "onEditCanceling", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditCancelingUndefined: Self = StObject.set(x, "onEditCanceling", js.undefined)
       
       @scala.inline
-      def setOnInitNewRow(value: /* e */ typings.devextreme.anon.Promise[T] => _): Self = StObject.set(x, "onInitNewRow", js.Any.fromFunction1(value))
+      def setOnInitNewRow(value: /* e */ typings.devextreme.anon.Promise[T] => js.Any): Self = StObject.set(x, "onInitNewRow", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnInitNewRowUndefined: Self = StObject.set(x, "onInitNewRow", js.undefined)
       
       @scala.inline
-      def setOnKeyDown(value: /* e */ Handled[T] => _): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      def setOnKeyDown(value: /* e */ Handled[T] => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       @scala.inline
-      def setOnRowCollapsed(value: /* e */ Key[T] => _): Self = StObject.set(x, "onRowCollapsed", js.Any.fromFunction1(value))
+      def setOnRowCollapsed(value: /* e */ Key[T] => js.Any): Self = StObject.set(x, "onRowCollapsed", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowCollapsedUndefined: Self = StObject.set(x, "onRowCollapsed", js.undefined)
       
       @scala.inline
-      def setOnRowCollapsing(value: /* e */ CancelComponent[T] => _): Self = StObject.set(x, "onRowCollapsing", js.Any.fromFunction1(value))
+      def setOnRowCollapsing(value: /* e */ CancelComponent[T] => js.Any): Self = StObject.set(x, "onRowCollapsing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowCollapsingUndefined: Self = StObject.set(x, "onRowCollapsing", js.undefined)
       
       @scala.inline
-      def setOnRowExpanded(value: /* e */ Key[T] => _): Self = StObject.set(x, "onRowExpanded", js.Any.fromFunction1(value))
+      def setOnRowExpanded(value: /* e */ Key[T] => js.Any): Self = StObject.set(x, "onRowExpanded", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowExpandedUndefined: Self = StObject.set(x, "onRowExpanded", js.undefined)
       
       @scala.inline
-      def setOnRowExpanding(value: /* e */ CancelComponent[T] => _): Self = StObject.set(x, "onRowExpanding", js.Any.fromFunction1(value))
+      def setOnRowExpanding(value: /* e */ CancelComponent[T] => js.Any): Self = StObject.set(x, "onRowExpanding", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowExpandingUndefined: Self = StObject.set(x, "onRowExpanding", js.undefined)
       
       @scala.inline
-      def setOnRowInserted(value: /* e */ ComponentData[T] => _): Self = StObject.set(x, "onRowInserted", js.Any.fromFunction1(value))
+      def setOnRowInserted(value: /* e */ ComponentData[T] => js.Any): Self = StObject.set(x, "onRowInserted", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowInsertedUndefined: Self = StObject.set(x, "onRowInserted", js.undefined)
       
       @scala.inline
-      def setOnRowInserting(value: /* e */ DataElement[T] => _): Self = StObject.set(x, "onRowInserting", js.Any.fromFunction1(value))
+      def setOnRowInserting(value: /* e */ DataElement[T] => js.Any): Self = StObject.set(x, "onRowInserting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowInsertingUndefined: Self = StObject.set(x, "onRowInserting", js.undefined)
       
       @scala.inline
-      def setOnRowRemoved(value: /* e */ ComponentData[T] => _): Self = StObject.set(x, "onRowRemoved", js.Any.fromFunction1(value))
+      def setOnRowRemoved(value: /* e */ ComponentData[T] => js.Any): Self = StObject.set(x, "onRowRemoved", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowRemovedUndefined: Self = StObject.set(x, "onRowRemoved", js.undefined)
       
       @scala.inline
-      def setOnRowRemoving(value: /* e */ ElementKey[T] => _): Self = StObject.set(x, "onRowRemoving", js.Any.fromFunction1(value))
+      def setOnRowRemoving(value: /* e */ ElementKey[T] => js.Any): Self = StObject.set(x, "onRowRemoving", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowRemovingUndefined: Self = StObject.set(x, "onRowRemoving", js.undefined)
       
       @scala.inline
-      def setOnRowUpdated(value: /* e */ ComponentData[T] => _): Self = StObject.set(x, "onRowUpdated", js.Any.fromFunction1(value))
+      def setOnRowUpdated(value: /* e */ ComponentData[T] => js.Any): Self = StObject.set(x, "onRowUpdated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowUpdatedUndefined: Self = StObject.set(x, "onRowUpdated", js.undefined)
       
       @scala.inline
-      def setOnRowUpdating(value: /* e */ NewData[T] => _): Self = StObject.set(x, "onRowUpdating", js.Any.fromFunction1(value))
+      def setOnRowUpdating(value: /* e */ NewData[T] => js.Any): Self = StObject.set(x, "onRowUpdating", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowUpdatingUndefined: Self = StObject.set(x, "onRowUpdating", js.undefined)
       
       @scala.inline
-      def setOnRowValidating(value: /* e */ BrokenRules[T] => _): Self = StObject.set(x, "onRowValidating", js.Any.fromFunction1(value))
+      def setOnRowValidating(value: /* e */ BrokenRules[T] => js.Any): Self = StObject.set(x, "onRowValidating", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowValidatingUndefined: Self = StObject.set(x, "onRowValidating", js.undefined)
       
       @scala.inline
-      def setOnSaved(value: /* e */ ChangesComponent[T] => _): Self = StObject.set(x, "onSaved", js.Any.fromFunction1(value))
+      def setOnSaved(value: /* e */ ChangesComponent[T] => js.Any): Self = StObject.set(x, "onSaved", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSavedUndefined: Self = StObject.set(x, "onSaved", js.undefined)
       
       @scala.inline
-      def setOnSaving(value: /* e */ ComponentElement[T] => _): Self = StObject.set(x, "onSaving", js.Any.fromFunction1(value))
+      def setOnSaving(value: /* e */ ComponentElement[T] => js.Any): Self = StObject.set(x, "onSaving", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSavingUndefined: Self = StObject.set(x, "onSaving", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ CurrentDeselectedRowKeys[T] => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ CurrentDeselectedRowKeys[T] => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnToolbarPreparing(value: /* e */ ToolbarOptions[T] => _): Self = StObject.set(x, "onToolbarPreparing", js.Any.fromFunction1(value))
+      def setOnToolbarPreparing(value: /* e */ ToolbarOptions[T] => js.Any): Self = StObject.set(x, "onToolbarPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnToolbarPreparingUndefined: Self = StObject.set(x, "onToolbarPreparing", js.undefined)
@@ -3699,7 +3697,7 @@ object ui {
       def setSearchPanelUndefined: Self = StObject.set(x, "searchPanel", js.undefined)
       
       @scala.inline
-      def setSelectedRowKeys(value: js.Array[_]): Self = StObject.set(x, "selectedRowKeys", value.asInstanceOf[js.Any])
+      def setSelectedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRowKeys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedRowKeysUndefined: Self = StObject.set(x, "selectedRowKeys", js.undefined)
@@ -3763,23 +3761,22 @@ object ui {
     }
   }
   
-  @js.native
   trait GridBasePaging extends StObject {
     
     /**
       * [descr:GridBase.Options.paging.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.paging.pageIndex]
       */
-    var pageIndex: js.UndefOr[Double] = js.native
+    var pageIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:GridBase.Options.paging.pageSize]
       */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
   }
   object GridBasePaging {
     
@@ -3812,43 +3809,42 @@ object ui {
     }
   }
   
-  @js.native
   trait GridBaseScrolling extends StObject {
     
     /**
       * [descr:GridBase.Options.scrolling.columnRenderingMode]
       */
-    var columnRenderingMode: js.UndefOr[standard | virtual] = js.native
+    var columnRenderingMode: js.UndefOr[standard | virtual] = js.undefined
     
     /**
       * [descr:GridBase.Options.scrolling.preloadEnabled]
       */
-    var preloadEnabled: js.UndefOr[Boolean] = js.native
+    var preloadEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.scrolling.rowRenderingMode]
       */
-    var rowRenderingMode: js.UndefOr[standard | virtual] = js.native
+    var rowRenderingMode: js.UndefOr[standard | virtual] = js.undefined
     
     /**
       * [descr:GridBase.Options.scrolling.scrollByContent]
       */
-    var scrollByContent: js.UndefOr[Boolean] = js.native
+    var scrollByContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.scrolling.scrollByThumb]
       */
-    var scrollByThumb: js.UndefOr[Boolean] = js.native
+    var scrollByThumb: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.scrolling.showScrollbar]
       */
-    var showScrollbar: js.UndefOr[always | never | onHover | onScroll] = js.native
+    var showScrollbar: js.UndefOr[always | never | onHover | onScroll] = js.undefined
     
     /**
       * [descr:GridBase.Options.scrolling.useNative]
       */
-    var useNative: js.UndefOr[Boolean | auto] = js.native
+    var useNative: js.UndefOr[Boolean | auto] = js.undefined
   }
   object GridBaseScrolling {
     
@@ -3905,18 +3901,17 @@ object ui {
     }
   }
   
-  @js.native
   trait GridBaseSelection extends StObject {
     
     /**
       * [descr:GridBase.Options.selection.allowSelectAll]
       */
-    var allowSelectAll: js.UndefOr[Boolean] = js.native
+    var allowSelectAll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:GridBase.Options.selection.mode]
       */
-    var mode: js.UndefOr[multiple | none | single_] = js.native
+    var mode: js.UndefOr[multiple | none | single_] = js.undefined
   }
   object GridBaseSelection {
     
@@ -3945,28 +3940,29 @@ object ui {
   
   type HierarchicalCollectionWidget = CollectionWidget
   
-  @js.native
-  trait HierarchicalCollectionWidgetOptions[T] extends CollectionWidgetOptions[T] {
+  trait HierarchicalCollectionWidgetOptions[T]
+    extends StObject
+       with CollectionWidgetOptions[T] {
     
     /**
       * [descr:HierarchicalCollectionWidget.Options.disabledExpr]
       */
-    var disabledExpr: js.UndefOr[String | js.Function] = js.native
+    var disabledExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:HierarchicalCollectionWidget.Options.displayExpr]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
+    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
     
     /**
       * [descr:HierarchicalCollectionWidget.Options.itemsExpr]
       */
-    var itemsExpr: js.UndefOr[String | js.Function] = js.native
+    var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:HierarchicalCollectionWidget.Options.selectedExpr]
       */
-    var selectedExpr: js.UndefOr[String | js.Function] = js.native
+    var selectedExpr: js.UndefOr[String | js.Function] = js.undefined
   }
   object HierarchicalCollectionWidgetOptions {
     
@@ -3977,7 +3973,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class HierarchicalCollectionWidgetOptionsMutableBuilder[Self <: HierarchicalCollectionWidgetOptions[_], T] (val x: Self with HierarchicalCollectionWidgetOptions[T]) extends AnyVal {
+    implicit class HierarchicalCollectionWidgetOptionsMutableBuilder[Self <: HierarchicalCollectionWidgetOptions[?], T] (val x: Self & HierarchicalCollectionWidgetOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDisabledExpr(value: String | js.Function): Self = StObject.set(x, "disabledExpr", value.asInstanceOf[js.Any])
@@ -4008,18 +4004,17 @@ object ui {
     }
   }
   
-  @js.native
   trait MapLocation extends StObject {
     
     /**
       * [descr:MapLocation.lat]
       */
-    var lat: js.UndefOr[Double] = js.native
+    var lat: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:MapLocation.lng]
       */
-    var lng: js.UndefOr[Double] = js.native
+    var lng: js.UndefOr[Double] = js.undefined
   }
   object MapLocation {
     
@@ -4046,25 +4041,24 @@ object ui {
     }
   }
   
-  @js.native
   trait NumericRule extends StObject {
     
     /**
       * [descr:NumericRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:NumericRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:NumericRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
   }
   object NumericRule {
     
@@ -4097,30 +4091,29 @@ object ui {
     }
   }
   
-  @js.native
   trait PatternRule extends StObject {
     
     /**
       * [descr:PatternRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:PatternRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:PatternRule.pattern]
       */
-    var pattern: js.UndefOr[RegExp | String] = js.native
+    var pattern: js.UndefOr[RegExp | String] = js.undefined
     
     /**
       * [descr:PatternRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
   }
   object PatternRule {
     
@@ -4159,40 +4152,39 @@ object ui {
     }
   }
   
-  @js.native
   trait RangeRule extends StObject {
     
     /**
       * [descr:RangeRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:RangeRule.max]
       */
-    var max: js.UndefOr[Date | Double] = js.native
+    var max: js.UndefOr[Date | Double] = js.undefined
     
     /**
       * [descr:RangeRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:RangeRule.min]
       */
-    var min: js.UndefOr[Date | Double] = js.native
+    var min: js.UndefOr[Date | Double] = js.undefined
     
     /**
       * [descr:RangeRule.reevaluate]
       */
-    var reevaluate: js.UndefOr[Boolean] = js.native
+    var reevaluate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:RangeRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
   }
   object RangeRule {
     
@@ -4243,25 +4235,24 @@ object ui {
     }
   }
   
-  @js.native
   trait RequiredRule extends StObject {
     
     /**
       * [descr:RequiredRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:RequiredRule.trim]
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:RequiredRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
   }
   object RequiredRule {
     
@@ -4294,41 +4285,39 @@ object ui {
     }
   }
   
-  @js.native
   trait SearchBoxMixin extends StObject
   
-  @js.native
   trait SearchBoxMixinOptions[T] extends StObject {
     
     /**
       * [descr:SearchBoxMixin.Options.searchEditorOptions]
       */
-    var searchEditorOptions: js.UndefOr[dxTextBoxOptions[dxTextBox]] = js.native
+    var searchEditorOptions: js.UndefOr[dxTextBoxOptions[dxTextBox]] = js.undefined
     
     /**
       * [descr:SearchBoxMixin.Options.searchEnabled]
       */
-    var searchEnabled: js.UndefOr[Boolean] = js.native
+    var searchEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:SearchBoxMixin.Options.searchExpr]
       */
-    var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.native
+    var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
     
     /**
       * [descr:SearchBoxMixin.Options.searchMode]
       */
-    var searchMode: js.UndefOr[contains | startswith | equals] = js.native
+    var searchMode: js.UndefOr[contains | startswith | equals] = js.undefined
     
     /**
       * [descr:SearchBoxMixin.Options.searchTimeout]
       */
-    var searchTimeout: js.UndefOr[Double] = js.native
+    var searchTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:SearchBoxMixin.Options.searchValue]
       */
-    var searchValue: js.UndefOr[String] = js.native
+    var searchValue: js.UndefOr[String] = js.undefined
   }
   object SearchBoxMixinOptions {
     
@@ -4339,7 +4328,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class SearchBoxMixinOptionsMutableBuilder[Self <: SearchBoxMixinOptions[_], T] (val x: Self with SearchBoxMixinOptions[T]) extends AnyVal {
+    implicit class SearchBoxMixinOptionsMutableBuilder[Self <: SearchBoxMixinOptions[?], T] (val x: Self & SearchBoxMixinOptions[T]) extends AnyVal {
       
       @scala.inline
       def setSearchEditorOptions(value: dxTextBoxOptions[dxTextBox]): Self = StObject.set(x, "searchEditorOptions", value.asInstanceOf[js.Any])
@@ -4382,40 +4371,39 @@ object ui {
     }
   }
   
-  @js.native
   trait StringLengthRule extends StObject {
     
     /**
       * [descr:StringLengthRule.ignoreEmptyValue]
       */
-    var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:StringLengthRule.max]
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:StringLengthRule.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:StringLengthRule.min]
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:StringLengthRule.trim]
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:StringLengthRule.type]
       */
     var `type`: js.UndefOr[
         required | numeric | range | stringLength | custom | compare | pattern | email | async
-      ] = js.native
+      ] = js.undefined
   }
   object StringLengthRule {
     
@@ -4467,7 +4455,9 @@ object ui {
   }
   
   @js.native
-  trait Widget extends DOMComponent {
+  trait Widget
+    extends StObject
+       with DOMComponent {
     
     /**
       * [descr:Widget.focus()]
@@ -4485,53 +4475,54 @@ object ui {
     def repaint(): Unit = js.native
   }
   
-  @js.native
-  trait WidgetOptions[T] extends DOMComponentOptions[T] {
+  trait WidgetOptions[T]
+    extends StObject
+       with DOMComponentOptions[T] {
     
     /**
       * [descr:Widget.Options.accessKey]
       */
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:Widget.Options.activeStateEnabled]
       */
-    var activeStateEnabled: js.UndefOr[Boolean] = js.native
+    var activeStateEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:Widget.Options.disabled]
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:Widget.Options.focusStateEnabled]
       */
-    var focusStateEnabled: js.UndefOr[Boolean] = js.native
+    var focusStateEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:Widget.Options.hint]
       */
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:Widget.Options.hoverStateEnabled]
       */
-    var hoverStateEnabled: js.UndefOr[Boolean] = js.native
+    var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:Widget.Options.onContentReady]
       */
-    var onContentReady: js.UndefOr[js.Function1[/* e */ ElementModel[T], _]] = js.native
+    var onContentReady: js.UndefOr[js.Function1[/* e */ ElementModel[T], js.Any]] = js.undefined
     
     /**
       * [descr:Widget.Options.tabIndex]
       */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:Widget.Options.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object WidgetOptions {
     
@@ -4542,7 +4533,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class WidgetOptionsMutableBuilder[Self <: WidgetOptions[_], T] (val x: Self with WidgetOptions[T]) extends AnyVal {
+    implicit class WidgetOptionsMutableBuilder[Self <: WidgetOptions[?], T] (val x: Self & WidgetOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
@@ -4581,7 +4572,7 @@ object ui {
       def setHoverStateEnabledUndefined: Self = StObject.set(x, "hoverStateEnabled", js.undefined)
       
       @scala.inline
-      def setOnContentReady(value: /* e */ ElementModel[T] => _): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
+      def setOnContentReady(value: /* e */ ElementModel[T] => js.Any): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
@@ -4603,36 +4594,39 @@ object ui {
   trait _format extends StObject
   
   @js.native
-  trait dxAccordion extends CollectionWidget {
+  trait dxAccordion
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxAccordion.collapseItem(index)]
       */
-    def collapseItem(index: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def collapseItem(index: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxAccordion.expandItem(index)]
       */
-    def expandItem(index: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def expandItem(index: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxAccordion.updateDimensions()]
       */
-    def updateDimensions(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def updateDimensions(): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxAccordionItem extends CollectionWidgetItem {
+  trait dxAccordionItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxAccordionItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxAccordionItem.title]
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object dxAccordionItem {
     
@@ -4661,31 +4655,32 @@ object ui {
   
   type dxAccordionItemTemplate = dxAccordionItem
   
-  @js.native
-  trait dxAccordionOptions extends CollectionWidgetOptions[dxAccordion] {
+  trait dxAccordionOptions
+    extends StObject
+       with CollectionWidgetOptions[dxAccordion] {
     
     /**
       * [descr:dxAccordion.Options.animationDuration]
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.collapsible]
       */
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.dataSource]
       */
     @JSName("dataSource")
     var dataSource_dxAccordionOptions: js.UndefOr[
-        String | (js.Array[String | dxAccordionItem | _]) | DataSource | DataSourceOptions
-      ] = js.native
+        String | (js.Array[String | dxAccordionItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.deferRendering]
       */
-    var deferRendering: js.UndefOr[Boolean] = js.native
+    var deferRendering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.itemTitleTemplate]
@@ -4697,28 +4692,28 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.items]
       */
     @JSName("items")
-    var items_dxAccordionOptions: js.UndefOr[js.Array[String | dxAccordionItem | _]] = js.native
+    var items_dxAccordionOptions: js.UndefOr[js.Array[String | dxAccordionItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.multiple]
       */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.onItemTitleClick]
       */
-    var onItemTitleClick: js.UndefOr[(js.Function1[/* e */ ItemIndex, _]) | String] = js.native
+    var onItemTitleClick: js.UndefOr[(js.Function1[/* e */ ItemIndex, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxAccordion.Options.repaintChangesOnly]
       */
-    var repaintChangesOnly: js.UndefOr[Boolean] = js.native
+    var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
   }
   object dxAccordionOptions {
     
@@ -4744,7 +4739,7 @@ object ui {
       def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxAccordionItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxAccordionItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -4777,7 +4772,7 @@ object ui {
       def setItemTitleTemplateUndefined: Self = StObject.set(x, "itemTitleTemplate", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | dxAccordionItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxAccordionItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -4792,10 +4787,10 @@ object ui {
       def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
       @scala.inline
-      def setOnItemTitleClick(value: (js.Function1[/* e */ ItemIndex, _]) | String): Self = StObject.set(x, "onItemTitleClick", value.asInstanceOf[js.Any])
+      def setOnItemTitleClick(value: (js.Function1[/* e */ ItemIndex, js.Any]) | String): Self = StObject.set(x, "onItemTitleClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnItemTitleClickFunction1(value: /* e */ ItemIndex => _): Self = StObject.set(x, "onItemTitleClick", js.Any.fromFunction1(value))
+      def setOnItemTitleClickFunction1(value: /* e */ ItemIndex => js.Any): Self = StObject.set(x, "onItemTitleClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemTitleClickUndefined: Self = StObject.set(x, "onItemTitleClick", js.undefined)
@@ -4809,41 +4804,44 @@ object ui {
   }
   
   @js.native
-  trait dxActionSheet extends CollectionWidget {
+  trait dxActionSheet
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxActionSheet.hide()]
       */
-    def hide(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def hide(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxActionSheet.show()]
       */
-    def show(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def show(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxActionSheet.toggle(showing)]
       */
-    def toggle(showing: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def toggle(showing: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxActionSheetItem extends CollectionWidgetItem {
+  trait dxActionSheetItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxActionSheetItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxActionSheetItem.onClick]
       */
-    var onClick: js.UndefOr[(js.Function1[/* e */ ElementEvent, _]) | String] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* e */ ElementEvent, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxActionSheetItem.type]
       */
-    var `type`: js.UndefOr[back | danger | default | normal | success] = js.native
+    var `type`: js.UndefOr[back | danger | default | normal | success] = js.undefined
   }
   object dxActionSheetItem {
     
@@ -4863,10 +4861,10 @@ object ui {
       def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
       @scala.inline
-      def setOnClick(value: (js.Function1[/* e */ ElementEvent, _]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: (js.Function1[/* e */ ElementEvent, js.Any]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickFunction1(value: /* e */ ElementEvent => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClickFunction1(value: /* e */ ElementEvent => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -4881,57 +4879,58 @@ object ui {
   
   type dxActionSheetItemTemplate = dxActionSheetItem
   
-  @js.native
-  trait dxActionSheetOptions extends CollectionWidgetOptions[dxActionSheet] {
+  trait dxActionSheetOptions
+    extends StObject
+       with CollectionWidgetOptions[dxActionSheet] {
     
     /**
       * [descr:dxActionSheet.Options.cancelText]
       */
-    var cancelText: js.UndefOr[String] = js.native
+    var cancelText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.dataSource]
       */
     @JSName("dataSource")
     var dataSource_dxActionSheetOptions: js.UndefOr[
-        String | (js.Array[String | dxActionSheetItem | _]) | DataSource | DataSourceOptions
-      ] = js.native
+        String | (js.Array[String | dxActionSheetItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.items]
       */
     @JSName("items")
-    var items_dxActionSheetOptions: js.UndefOr[js.Array[String | dxActionSheetItem | _]] = js.native
+    var items_dxActionSheetOptions: js.UndefOr[js.Array[String | dxActionSheetItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.onCancelClick]
       */
-    var onCancelClick: js.UndefOr[(js.Function1[/* e */ CancelComponentElement, _]) | String] = js.native
+    var onCancelClick: js.UndefOr[(js.Function1[/* e */ CancelComponentElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.showCancelButton]
       */
-    var showCancelButton: js.UndefOr[Boolean] = js.native
+    var showCancelButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.showTitle]
       */
-    var showTitle: js.UndefOr[Boolean] = js.native
+    var showTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.target]
       */
-    var target: js.UndefOr[String | Element | JQuery] = js.native
+    var target: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.title]
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxActionSheet.Options.usePopover]
       */
-    var usePopover: js.UndefOr[Boolean] = js.native
+    var usePopover: js.UndefOr[Boolean] = js.undefined
   }
   object dxActionSheetOptions {
     
@@ -4951,7 +4950,7 @@ object ui {
       def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxActionSheetItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxActionSheetItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -4960,7 +4959,7 @@ object ui {
       def setDataSourceVarargs(value: (String | dxActionSheetItem | js.Any)*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
       @scala.inline
-      def setItems(value: js.Array[String | dxActionSheetItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxActionSheetItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -4969,10 +4968,10 @@ object ui {
       def setItemsVarargs(value: (String | dxActionSheetItem | js.Any)*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setOnCancelClick(value: (js.Function1[/* e */ CancelComponentElement, _]) | String): Self = StObject.set(x, "onCancelClick", value.asInstanceOf[js.Any])
+      def setOnCancelClick(value: (js.Function1[/* e */ CancelComponentElement, js.Any]) | String): Self = StObject.set(x, "onCancelClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCancelClickFunction1(value: /* e */ CancelComponentElement => _): Self = StObject.set(x, "onCancelClick", js.Any.fromFunction1(value))
+      def setOnCancelClickFunction1(value: /* e */ CancelComponentElement => js.Any): Self = StObject.set(x, "onCancelClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCancelClickUndefined: Self = StObject.set(x, "onCancelClick", js.undefined)
@@ -5011,13 +5010,20 @@ object ui {
   
   type dxAutocomplete = dxDropDownList
   
-  @js.native
-  trait dxAutocompleteOptions extends dxDropDownListOptions[dxAutocomplete] {
+  trait dxAutocompleteOptions
+    extends StObject
+       with dxDropDownListOptions[dxAutocomplete] {
     
     /**
       * [descr:dxAutocomplete.Options.maxItemCount]
       */
-    var maxItemCount: js.UndefOr[Double] = js.native
+    var maxItemCount: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * [descr:dxAutocomplete.Options.value]
+      */
+    @JSName("value")
+    var value_dxAutocompleteOptions: js.UndefOr[String] = js.undefined
   }
   object dxAutocompleteOptions {
     
@@ -5035,33 +5041,40 @@ object ui {
       
       @scala.inline
       def setMaxItemCountUndefined: Self = StObject.set(x, "maxItemCount", js.undefined)
+      
+      @scala.inline
+      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
   type dxBox = CollectionWidget
   
-  @js.native
-  trait dxBoxItem extends CollectionWidgetItem {
+  trait dxBoxItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxBoxItem.baseSize]
       */
-    var baseSize: js.UndefOr[Double | auto] = js.native
+    var baseSize: js.UndefOr[Double | auto] = js.undefined
     
     /**
       * [descr:dxBoxItem.box]
       */
-    var box: js.UndefOr[dxBoxOptions] = js.native
+    var box: js.UndefOr[dxBoxOptions] = js.undefined
     
     /**
       * [descr:dxBoxItem.ratio]
       */
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBoxItem.shrink]
       */
-    var shrink: js.UndefOr[Double] = js.native
+    var shrink: js.UndefOr[Double] = js.undefined
   }
   object dxBoxItem {
     
@@ -5102,35 +5115,38 @@ object ui {
   
   type dxBoxItemTemplate = dxBoxItem
   
-  @js.native
-  trait dxBoxOptions extends CollectionWidgetOptions[dxBox] {
+  trait dxBoxOptions
+    extends StObject
+       with CollectionWidgetOptions[dxBox] {
     
     /**
       * [descr:dxBox.Options.align]
       */
-    var align: js.UndefOr[center | end | `space-around` | `space-between` | start] = js.native
+    var align: js.UndefOr[center | end | `space-around` | `space-between` | start] = js.undefined
     
     /**
       * [descr:dxBox.Options.crossAlign]
       */
-    var crossAlign: js.UndefOr[center | end | start | stretch] = js.native
+    var crossAlign: js.UndefOr[center | end | start | stretch] = js.undefined
     
     /**
       * [descr:dxBox.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxBoxOptions: js.UndefOr[String | (js.Array[String | dxBoxItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxBoxOptions: js.UndefOr[
+        String | (js.Array[String | dxBoxItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxBox.Options.direction]
       */
-    var direction: js.UndefOr[col | row] = js.native
+    var direction: js.UndefOr[col | row] = js.undefined
     
     /**
       * [descr:dxBox.Options.items]
       */
     @JSName("items")
-    var items_dxBoxOptions: js.UndefOr[js.Array[String | dxBoxItem | _]] = js.native
+    var items_dxBoxOptions: js.UndefOr[js.Array[String | dxBoxItem | js.Any]] = js.undefined
   }
   object dxBoxOptions {
     
@@ -5156,7 +5172,7 @@ object ui {
       def setCrossAlignUndefined: Self = StObject.set(x, "crossAlign", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxBoxItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxBoxItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -5171,7 +5187,7 @@ object ui {
       def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | dxBoxItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxBoxItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -5185,23 +5201,24 @@ object ui {
   
   type dxButtonGroup = Widget
   
-  @js.native
-  trait dxButtonGroupItem extends CollectionWidgetItem {
+  trait dxButtonGroupItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxButtonGroupItem.hint]
       */
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxButtonGroupItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxButtonGroupItem.type]
       */
-    var `type`: js.UndefOr[back | danger | default | normal | success] = js.native
+    var `type`: js.UndefOr[back | danger | default | normal | success] = js.undefined
   }
   object dxButtonGroupItem {
     
@@ -5234,55 +5251,56 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxButtonGroupOptions extends WidgetOptions[dxButtonGroup] {
+  trait dxButtonGroupOptions
+    extends StObject
+       with WidgetOptions[dxButtonGroup] {
     
     /**
       * [descr:dxButtonGroup.Options.buttonTemplate]
       */
     var buttonTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ js.Any, /* buttonContent */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.items]
       */
-    var items: js.UndefOr[js.Array[dxButtonGroupItem]] = js.native
+    var items: js.UndefOr[js.Array[dxButtonGroupItem]] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.keyExpr]
       */
-    var keyExpr: js.UndefOr[String | js.Function] = js.native
+    var keyExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.onItemClick]
       */
-    var onItemClick: js.UndefOr[js.Function1[/* e */ EventItemData, _]] = js.native
+    var onItemClick: js.UndefOr[js.Function1[/* e */ EventItemData, js.Any]] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ RemovedItems, _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ RemovedItems, js.Any]] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.selectedItemKeys]
       */
-    var selectedItemKeys: js.UndefOr[js.Array[_]] = js.native
+    var selectedItemKeys: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.selectedItems]
       */
-    var selectedItems: js.UndefOr[js.Array[_]] = js.native
+    var selectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[multiple | single_] = js.native
+    var selectionMode: js.UndefOr[multiple | single_] = js.undefined
     
     /**
       * [descr:dxButtonGroup.Options.stylingMode]
       */
-    var stylingMode: js.UndefOr[text | outlined | contained] = js.native
+    var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
   }
   object dxButtonGroupOptions {
     
@@ -5322,19 +5340,19 @@ object ui {
       def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
       
       @scala.inline
-      def setOnItemClick(value: /* e */ EventItemData => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnItemClick(value: /* e */ EventItemData => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ RemovedItems => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ RemovedItems => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
       @scala.inline
-      def setSelectedItemKeys(value: js.Array[_]): Self = StObject.set(x, "selectedItemKeys", value.asInstanceOf[js.Any])
+      def setSelectedItemKeys(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItemKeys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemKeysUndefined: Self = StObject.set(x, "selectedItemKeys", js.undefined)
@@ -5343,7 +5361,7 @@ object ui {
       def setSelectedItemKeysVarargs(value: js.Any*): Self = StObject.set(x, "selectedItemKeys", js.Array(value :_*))
       
       @scala.inline
-      def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
@@ -5365,50 +5383,51 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxButtonOptions extends WidgetOptions[dxButton] {
+  trait dxButtonOptions
+    extends StObject
+       with WidgetOptions[dxButton] {
     
     /**
       * [descr:dxButton.Options.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxButton.Options.onClick]
       */
-    var onClick: js.UndefOr[js.Function1[/* e */ ValidationGroup, _]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ ValidationGroup, js.Any]] = js.undefined
     
     /**
       * [descr:dxButton.Options.stylingMode]
       */
-    var stylingMode: js.UndefOr[text | outlined | contained] = js.native
+    var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
     
     /**
       * [descr:dxButton.Options.template]
       */
     var template: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxButton.Options.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxButton.Options.type]
       */
-    var `type`: js.UndefOr[back | danger | default | normal | success] = js.native
+    var `type`: js.UndefOr[back | danger | default | normal | success] = js.undefined
     
     /**
       * [descr:dxButton.Options.useSubmitBehavior]
       */
-    var useSubmitBehavior: js.UndefOr[Boolean] = js.native
+    var useSubmitBehavior: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxButton.Options.validationGroup]
       */
-    var validationGroup: js.UndefOr[String] = js.native
+    var validationGroup: js.UndefOr[String] = js.undefined
   }
   object dxButtonOptions {
     
@@ -5428,7 +5447,7 @@ object ui {
       def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* e */ ValidationGroup => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* e */ ValidationGroup => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -5478,8 +5497,9 @@ object ui {
   
   type dxCalendar = Editor
   
-  @js.native
-  trait dxCalendarOptions extends EditorOptions[dxCalendar] {
+  trait dxCalendarOptions
+    extends StObject
+       with EditorOptions[dxCalendar] {
     
     /**
       * [descr:dxCalendar.Options.cellTemplate]
@@ -5491,63 +5511,63 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.dateSerializationFormat]
       */
-    var dateSerializationFormat: js.UndefOr[String] = js.native
+    var dateSerializationFormat: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.disabledDates]
       */
-    var disabledDates: js.UndefOr[js.Array[Date] | (js.Function1[/* data */ View, Boolean])] = js.native
+    var disabledDates: js.UndefOr[js.Array[Date] | (js.Function1[/* data */ View, Boolean])] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.firstDayOfWeek]
       */
-    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.max]
       */
-    var max: js.UndefOr[Date | Double | String] = js.native
+    var max: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.maxZoomLevel]
       */
-    var maxZoomLevel: js.UndefOr[century | decade | month | year] = js.native
+    var maxZoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.min]
       */
-    var min: js.UndefOr[Date | Double | String] = js.native
+    var min: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.minZoomLevel]
       */
-    var minZoomLevel: js.UndefOr[century | decade | month | year] = js.native
+    var minZoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.showTodayButton]
       */
-    var showTodayButton: js.UndefOr[Boolean] = js.native
+    var showTodayButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.value]
       */
     @JSName("value")
-    var value_dxCalendarOptions: js.UndefOr[Date | Double | String] = js.native
+    var value_dxCalendarOptions: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxCalendar.Options.zoomLevel]
       */
-    var zoomLevel: js.UndefOr[century | decade | month | year] = js.native
+    var zoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
   }
   object dxCalendarOptions {
     
@@ -5654,24 +5674,25 @@ object ui {
   
   type dxCheckBox = Editor
   
-  @js.native
-  trait dxCheckBoxOptions extends EditorOptions[dxCheckBox] {
+  trait dxCheckBoxOptions
+    extends StObject
+       with EditorOptions[dxCheckBox] {
     
     /**
       * [descr:dxCheckBox.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxCheckBox.Options.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxCheckBox.Options.value]
       */
     @JSName("value")
-    var value_dxCheckBoxOptions: js.UndefOr[Boolean] = js.native
+    var value_dxCheckBoxOptions: js.UndefOr[Boolean] = js.undefined
   }
   object dxCheckBoxOptions {
     
@@ -5706,35 +5727,36 @@ object ui {
   
   type dxColorBox = dxDropDownEditor
   
-  @js.native
-  trait dxColorBoxOptions extends dxDropDownEditorOptions[dxColorBox] {
+  trait dxColorBoxOptions
+    extends StObject
+       with dxDropDownEditorOptions[dxColorBox] {
     
     /**
       * [descr:dxColorBox.Options.applyButtonText]
       */
-    var applyButtonText: js.UndefOr[String] = js.native
+    var applyButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxColorBox.Options.cancelButtonText]
       */
-    var cancelButtonText: js.UndefOr[String] = js.native
+    var cancelButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxColorBox.Options.editAlphaChannel]
       */
-    var editAlphaChannel: js.UndefOr[Boolean] = js.native
+    var editAlphaChannel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxColorBox.Options.fieldTemplate]
       */
     var fieldTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* value */ String, /* fieldElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxColorBox.Options.keyStep]
       */
-    var keyStep: js.UndefOr[Double] = js.native
+    var keyStep: js.UndefOr[Double] = js.undefined
   }
   object dxColorBoxOptions {
     
@@ -5785,32 +5807,35 @@ object ui {
   }
   
   @js.native
-  trait dxContextMenu extends dxMenuBase {
+  trait dxContextMenu
+    extends StObject
+       with dxMenuBase {
     
     /**
       * [descr:dxContextMenu.hide()]
       */
-    def hide(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def hide(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxContextMenu.show()]
       */
-    def show(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def show(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxContextMenu.toggle(showing)]
       */
-    def toggle(showing: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def toggle(showing: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxContextMenuItem extends dxMenuBaseItem {
+  trait dxContextMenuItem
+    extends StObject
+       with dxMenuBaseItem {
     
     /**
       * [descr:dxContextMenuItem.items]
       */
     @JSName("items")
-    var items_dxContextMenuItem: js.UndefOr[js.Array[dxContextMenuItem]] = js.native
+    var items_dxContextMenuItem: js.UndefOr[js.Array[dxContextMenuItem]] = js.undefined
   }
   object dxContextMenuItem {
     
@@ -5836,72 +5861,73 @@ object ui {
   
   type dxContextMenuItemTemplate = dxContextMenuItem
   
-  @js.native
-  trait dxContextMenuOptions extends dxMenuBaseOptions[dxContextMenu] {
+  trait dxContextMenuOptions
+    extends StObject
+       with dxMenuBaseOptions[dxContextMenu] {
     
     /**
       * [descr:dxContextMenu.Options.closeOnOutsideClick]
       */
     var closeOnOutsideClick: js.UndefOr[
         Boolean | (js.Function1[/* event */ typings.devextreme.mod.DevExpress.events.event, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxContextMenuOptions: js.UndefOr[String | js.Array[dxContextMenuItem] | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxContextMenuOptions: js.UndefOr[String | js.Array[dxContextMenuItem] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.items]
       */
     @JSName("items")
-    var items_dxContextMenuOptions: js.UndefOr[js.Array[dxContextMenuItem]] = js.native
+    var items_dxContextMenuOptions: js.UndefOr[js.Array[dxContextMenuItem]] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.onHidden]
       */
-    var onHidden: js.UndefOr[js.Function1[/* e */ ComponentElementModel, _]] = js.native
+    var onHidden: js.UndefOr[js.Function1[/* e */ ComponentElementModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.onHiding]
       */
-    var onHiding: js.UndefOr[js.Function1[/* e */ CancelComponentElementModel, _]] = js.native
+    var onHiding: js.UndefOr[js.Function1[/* e */ CancelComponentElementModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.onPositioning]
       */
-    var onPositioning: js.UndefOr[js.Function1[/* e */ Position, _]] = js.native
+    var onPositioning: js.UndefOr[js.Function1[/* e */ Position, js.Any]] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.onShowing]
       */
-    var onShowing: js.UndefOr[js.Function1[/* e */ CancelComponentElementModel, _]] = js.native
+    var onShowing: js.UndefOr[js.Function1[/* e */ CancelComponentElementModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.onShown]
       */
-    var onShown: js.UndefOr[js.Function1[/* e */ ComponentElementModel, _]] = js.native
+    var onShown: js.UndefOr[js.Function1[/* e */ ComponentElementModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.position]
       */
-    var position: js.UndefOr[positionConfig] = js.native
+    var position: js.UndefOr[positionConfig] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.showEvent]
       */
-    var showEvent: js.UndefOr[Delay | String] = js.native
+    var showEvent: js.UndefOr[Delay | String] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.submenuDirection]
       */
-    var submenuDirection: js.UndefOr[auto | left | right] = js.native
+    var submenuDirection: js.UndefOr[auto | left | right] = js.undefined
     
     /**
       * [descr:dxContextMenu.Options.target]
       */
-    var target: js.UndefOr[String | Element | JQuery] = js.native
+    var target: js.UndefOr[String | Element | JQuery] = js.undefined
   }
   object dxContextMenuOptions {
     
@@ -5944,31 +5970,31 @@ object ui {
       def setItemsVarargs(value: dxContextMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setOnHidden(value: /* e */ ComponentElementModel => _): Self = StObject.set(x, "onHidden", js.Any.fromFunction1(value))
+      def setOnHidden(value: /* e */ ComponentElementModel => js.Any): Self = StObject.set(x, "onHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
       
       @scala.inline
-      def setOnHiding(value: /* e */ CancelComponentElementModel => _): Self = StObject.set(x, "onHiding", js.Any.fromFunction1(value))
+      def setOnHiding(value: /* e */ CancelComponentElementModel => js.Any): Self = StObject.set(x, "onHiding", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHidingUndefined: Self = StObject.set(x, "onHiding", js.undefined)
       
       @scala.inline
-      def setOnPositioning(value: /* e */ Position => _): Self = StObject.set(x, "onPositioning", js.Any.fromFunction1(value))
+      def setOnPositioning(value: /* e */ Position => js.Any): Self = StObject.set(x, "onPositioning", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPositioningUndefined: Self = StObject.set(x, "onPositioning", js.undefined)
       
       @scala.inline
-      def setOnShowing(value: /* e */ CancelComponentElementModel => _): Self = StObject.set(x, "onShowing", js.Any.fromFunction1(value))
+      def setOnShowing(value: /* e */ CancelComponentElementModel => js.Any): Self = StObject.set(x, "onShowing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnShowingUndefined: Self = StObject.set(x, "onShowing", js.undefined)
       
       @scala.inline
-      def setOnShown(value: /* e */ ComponentElementModel => _): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
+      def setOnShown(value: /* e */ ComponentElementModel => js.Any): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
@@ -6000,7 +6026,9 @@ object ui {
   }
   
   @js.native
-  trait dxDataGrid extends GridBase {
+  trait dxDataGrid
+    extends StObject
+       with GridBase {
     
     def addColumn(columnOptions: String): Unit = js.native
     /**
@@ -6011,7 +6039,7 @@ object ui {
     /**
       * [descr:dxDataGrid.addRow()]
       */
-    def addRow(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def addRow(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxDataGrid.clearGrouping()]
@@ -6027,7 +6055,7 @@ object ui {
     /**
       * [descr:dxDataGrid.collapseRow(key)]
       */
-    def collapseRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def collapseRow(key: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxDataGrid.expandAll(groupIndex)]
@@ -6038,7 +6066,7 @@ object ui {
     /**
       * [descr:dxDataGrid.expandRow(key)]
       */
-    def expandRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def expandRow(key: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxDataGrid.exportToExcel(selectionOnly)]
@@ -6049,12 +6077,12 @@ object ui {
     /**
       * [descr:dxDataGrid.getSelectedRowKeys()]
       */
-    def getSelectedRowKeys(): js.Array[_] with Promise[_] with JQueryPromise[_] = js.native
+    def getSelectedRowKeys(): js.Array[js.Any] & Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:dxDataGrid.getSelectedRowsData()]
       */
-    def getSelectedRowsData(): js.Array[_] with Promise[_] with JQueryPromise[_] = js.native
+    def getSelectedRowsData(): js.Array[js.Any] & Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:dxDataGrid.getTotalSummaryValue(summaryItemName)]
@@ -6086,81 +6114,82 @@ object ui {
     def totalCount(): Double = js.native
   }
   
-  @js.native
-  trait dxDataGridColumn extends GridBaseColumn {
+  trait dxDataGridColumn
+    extends StObject
+       with GridBaseColumn {
     
     /**
       * [descr:dxDataGridColumn.allowExporting]
       */
-    var allowExporting: js.UndefOr[Boolean] = js.native
+    var allowExporting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.allowGrouping]
       */
-    var allowGrouping: js.UndefOr[Boolean] = js.native
+    var allowGrouping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.autoExpandGroup]
       */
-    var autoExpandGroup: js.UndefOr[Boolean] = js.native
+    var autoExpandGroup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.buttons]
       */
-    var buttons: js.UndefOr[js.Array[cancel | delete | edit | save | undelete | dxDataGridColumnButton]] = js.native
+    var buttons: js.UndefOr[js.Array[cancel | delete | edit | save | undelete | dxDataGridColumnButton]] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.calculateGroupValue]
       */
-    var calculateGroupValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, _])] = js.native
+    var calculateGroupValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, js.Any])] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.cellTemplate]
       */
     var cellTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ OldValue, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ OldValue, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.columns]
       */
-    var columns: js.UndefOr[js.Array[dxDataGridColumn | String]] = js.native
+    var columns: js.UndefOr[js.Array[dxDataGridColumn | String]] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.editCellTemplate]
       */
     var editCellTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ RowIndex, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ RowIndex, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.groupCellTemplate]
       */
     var groupCellTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ GroupContinuedMessage, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ GroupContinuedMessage, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.groupIndex]
       */
-    var groupIndex: js.UndefOr[Double] = js.native
+    var groupIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.headerCellTemplate]
       */
     var headerCellTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndex, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndex, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.showWhenGrouped]
       */
-    var showWhenGrouped: js.UndefOr[Boolean] = js.native
+    var showWhenGrouped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridColumn.type]
       */
-    var `type`: js.UndefOr[adaptive | buttons | detailExpand | groupExpand | selection | drag] = js.native
+    var `type`: js.UndefOr[adaptive | buttons | detailExpand | groupExpand | selection | drag] = js.undefined
   }
   object dxDataGridColumn {
     
@@ -6201,21 +6230,21 @@ object ui {
       def setButtonsVarargs(value: (cancel | delete | edit | save | undelete | dxDataGridColumnButton)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
       @scala.inline
-      def setCalculateGroupValue(value: String | (js.Function1[/* rowData */ js.Any, _])): Self = StObject.set(x, "calculateGroupValue", value.asInstanceOf[js.Any])
+      def setCalculateGroupValue(value: String | (js.Function1[/* rowData */ js.Any, js.Any])): Self = StObject.set(x, "calculateGroupValue", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCalculateGroupValueFunction1(value: /* rowData */ js.Any => _): Self = StObject.set(x, "calculateGroupValue", js.Any.fromFunction1(value))
+      def setCalculateGroupValueFunction1(value: /* rowData */ js.Any => js.Any): Self = StObject.set(x, "calculateGroupValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCalculateGroupValueUndefined: Self = StObject.set(x, "calculateGroupValue", js.undefined)
       
       @scala.inline
       def setCellTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ OldValue, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ OldValue, js.Any])
       ): Self = StObject.set(x, "cellTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ OldValue) => _): Self = StObject.set(x, "cellTemplate", js.Any.fromFunction2(value))
+      def setCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ OldValue) => js.Any): Self = StObject.set(x, "cellTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCellTemplateUndefined: Self = StObject.set(x, "cellTemplate", js.undefined)
@@ -6231,22 +6260,22 @@ object ui {
       
       @scala.inline
       def setEditCellTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ RowIndex, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ RowIndex, js.Any])
       ): Self = StObject.set(x, "editCellTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEditCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ RowIndex) => _): Self = StObject.set(x, "editCellTemplate", js.Any.fromFunction2(value))
+      def setEditCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ RowIndex) => js.Any): Self = StObject.set(x, "editCellTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEditCellTemplateUndefined: Self = StObject.set(x, "editCellTemplate", js.undefined)
       
       @scala.inline
       def setGroupCellTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ GroupContinuedMessage, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ GroupContinuedMessage, js.Any])
       ): Self = StObject.set(x, "groupCellTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ GroupContinuedMessage) => _): Self = StObject.set(x, "groupCellTemplate", js.Any.fromFunction2(value))
+      def setGroupCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ GroupContinuedMessage) => js.Any): Self = StObject.set(x, "groupCellTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGroupCellTemplateUndefined: Self = StObject.set(x, "groupCellTemplate", js.undefined)
@@ -6259,11 +6288,11 @@ object ui {
       
       @scala.inline
       def setHeaderCellTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndex, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndex, js.Any])
       ): Self = StObject.set(x, "headerCellTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHeaderCellTemplateFunction2(value: (/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndex) => _): Self = StObject.set(x, "headerCellTemplate", js.Any.fromFunction2(value))
+      def setHeaderCellTemplateFunction2(value: (/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndex) => js.Any): Self = StObject.set(x, "headerCellTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setHeaderCellTemplateUndefined: Self = StObject.set(x, "headerCellTemplate", js.undefined)
@@ -6282,30 +6311,31 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDataGridColumnButton extends GridBaseColumnButton {
+  trait dxDataGridColumnButton
+    extends StObject
+       with GridBaseColumnButton {
     
     /**
       * [descr:dxDataGridColumnButton.name]
       */
-    var name: js.UndefOr[cancel | delete | edit | save | undelete | String] = js.native
+    var name: js.UndefOr[cancel | delete | edit | save | undelete | String] = js.undefined
     
     /**
       * [descr:dxDataGridColumnButton.onClick]
       */
-    var onClick: js.UndefOr[(js.Function1[/* e */ ColumnComponent, _]) | String] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* e */ ColumnComponent, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxDataGridColumnButton.template]
       */
     var template: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ RowType, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDataGridColumnButton.visible]
       */
-    var visible: js.UndefOr[Boolean | (js.Function1[/* options */ ColumnComponentRow, Boolean])] = js.native
+    var visible: js.UndefOr[Boolean | (js.Function1[/* options */ ColumnComponentRow, Boolean])] = js.undefined
   }
   object dxDataGridColumnButton {
     
@@ -6325,10 +6355,10 @@ object ui {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnClick(value: (js.Function1[/* e */ ColumnComponent, _]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: (js.Function1[/* e */ ColumnComponent, js.Any]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickFunction1(value: /* e */ ColumnComponent => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClickFunction1(value: /* e */ ColumnComponent => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -6355,29 +6385,30 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDataGridEditing extends GridBaseEditing {
+  trait dxDataGridEditing
+    extends StObject
+       with GridBaseEditing {
     
     /**
       * [descr:dxDataGrid.Options.editing.allowAdding]
       */
-    var allowAdding: js.UndefOr[Boolean] = js.native
+    var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.editing.allowDeleting]
       */
-    var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.native
+    var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.editing.allowUpdating]
       */
-    var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.native
+    var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.editing.texts]
       */
     @JSName("texts")
-    var texts_dxDataGridEditing: js.UndefOr[js.Any] = js.native
+    var texts_dxDataGridEditing: js.UndefOr[js.Any] = js.undefined
   }
   object dxDataGridEditing {
     
@@ -6422,19 +6453,20 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDataGridOptions extends GridBaseOptions[dxDataGrid] {
+  trait dxDataGridOptions
+    extends StObject
+       with GridBaseOptions[dxDataGrid] {
     
     /**
       * [descr:dxDataGrid.Options.columns]
       */
     @JSName("columns")
-    var columns_dxDataGridOptions: js.UndefOr[js.Array[dxDataGridColumn | String]] = js.native
+    var columns_dxDataGridOptions: js.UndefOr[js.Array[dxDataGridColumn | String]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.customizeColumns]
       */
-    var customizeColumns: js.UndefOr[js.Function1[/* columns */ js.Array[dxDataGridColumn], _]] = js.native
+    var customizeColumns: js.UndefOr[js.Function1[/* columns */ js.Array[dxDataGridColumn], js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.customizeExportData]
@@ -6444,171 +6476,171 @@ object ui {
         js.Function2[
           /* columns */ js.Array[dxDataGridColumn], 
           /* rows */ js.Array[dxDataGridRowObject], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.editing]
       */
     @JSName("editing")
-    var editing_dxDataGridOptions: js.UndefOr[dxDataGridEditing] = js.native
+    var editing_dxDataGridOptions: js.UndefOr[dxDataGridEditing] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.export]
       */
-    var export: js.UndefOr[AllowExportSelectedData] = js.native
+    var `export`: js.UndefOr[AllowExportSelectedData] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.groupPanel]
       */
-    var groupPanel: js.UndefOr[AllowColumnDragging] = js.native
+    var groupPanel: js.UndefOr[AllowColumnDragging] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.grouping]
       */
-    var grouping: js.UndefOr[AllowCollapsing] = js.native
+    var grouping: js.UndefOr[AllowCollapsing] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.keyExpr]
       */
-    var keyExpr: js.UndefOr[String | js.Array[String]] = js.native
+    var keyExpr: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.masterDetail]
       */
-    var masterDetail: js.UndefOr[AutoExpandAll] = js.native
+    var masterDetail: js.UndefOr[AutoExpandAll] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onCellClick]
       */
-    var onCellClick: js.UndefOr[(js.Function1[/* e */ CellElement, _]) | String] = js.native
+    var onCellClick: js.UndefOr[(js.Function1[/* e */ CellElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onCellDblClick]
       */
-    var onCellDblClick: js.UndefOr[js.Function1[/* e */ ColumnIndex, _]] = js.native
+    var onCellDblClick: js.UndefOr[js.Function1[/* e */ ColumnIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onCellHoverChanged]
       */
-    var onCellHoverChanged: js.UndefOr[js.Function1[/* e */ DisplayValue, _]] = js.native
+    var onCellHoverChanged: js.UndefOr[js.Function1[/* e */ DisplayValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onCellPrepared]
       */
-    var onCellPrepared: js.UndefOr[js.Function1[/* e */ IsExpanded, _]] = js.native
+    var onCellPrepared: js.UndefOr[js.Function1[/* e */ IsExpanded, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onContextMenuPreparing]
       */
-    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ Items, _]] = js.native
+    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ Items, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onEditingStart]
       */
-    var onEditingStart: js.UndefOr[js.Function1[/* e */ CancelColumn, _]] = js.native
+    var onEditingStart: js.UndefOr[js.Function1[/* e */ CancelColumn, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onEditorPrepared]
       */
-    var onEditorPrepared: js.UndefOr[js.Function1[/* options */ DataField, _]] = js.native
+    var onEditorPrepared: js.UndefOr[js.Function1[/* options */ DataField, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onEditorPreparing]
       */
-    var onEditorPreparing: js.UndefOr[js.Function1[/* e */ Disabled, _]] = js.native
+    var onEditorPreparing: js.UndefOr[js.Function1[/* e */ Disabled, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onExported]
       * @deprecated [depNote:dxDataGrid.Options.onExported]
       */
-    var onExported: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`0`, _]] = js.native
+    var onExported: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`0`, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onExporting]
       */
-    var onExporting: js.UndefOr[js.Function1[/* e */ ElementFileName, _]] = js.native
+    var onExporting: js.UndefOr[js.Function1[/* e */ ElementFileName, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onFileSaving]
       * @deprecated [depNote:dxDataGrid.Options.onFileSaving]
       */
-    var onFileSaving: js.UndefOr[js.Function1[/* e */ Format, _]] = js.native
+    var onFileSaving: js.UndefOr[js.Function1[/* e */ Format, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onFocusedCellChanged]
       */
-    var onFocusedCellChanged: js.UndefOr[js.Function1[/* e */ Row, _]] = js.native
+    var onFocusedCellChanged: js.UndefOr[js.Function1[/* e */ Row, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onFocusedCellChanging]
       */
-    var onFocusedCellChanging: js.UndefOr[js.Function1[/* e */ Columns, _]] = js.native
+    var onFocusedCellChanging: js.UndefOr[js.Function1[/* e */ Columns, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onFocusedRowChanged]
       */
-    var onFocusedRowChanged: js.UndefOr[js.Function1[/* e */ RowElement, _]] = js.native
+    var onFocusedRowChanged: js.UndefOr[js.Function1[/* e */ RowElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onFocusedRowChanging]
       */
-    var onFocusedRowChanging: js.UndefOr[js.Function1[/* e */ NewRowIndex, _]] = js.native
+    var onFocusedRowChanging: js.UndefOr[js.Function1[/* e */ NewRowIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onRowClick]
       */
-    var onRowClick: js.UndefOr[(js.Function1[/* e */ GroupIndex, _]) | String] = js.native
+    var onRowClick: js.UndefOr[(js.Function1[/* e */ GroupIndex, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onRowDblClick]
       */
-    var onRowDblClick: js.UndefOr[js.Function1[/* e */ IsNewRow, _]] = js.native
+    var onRowDblClick: js.UndefOr[js.Function1[/* e */ IsNewRow, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.onRowPrepared]
       */
-    var onRowPrepared: js.UndefOr[js.Function1[/* e */ IsSelected, _]] = js.native
+    var onRowPrepared: js.UndefOr[js.Function1[/* e */ IsSelected, js.Any]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.remoteOperations]
       */
-    var remoteOperations: js.UndefOr[Boolean | Filtering | auto] = js.native
+    var remoteOperations: js.UndefOr[Boolean | Filtering | auto] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.rowTemplate]
       */
     var rowTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* rowElement */ dxElement, /* rowInfo */ js.Any, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* rowElement */ dxElement, /* rowInfo */ js.Any, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.scrolling]
       */
     @JSName("scrolling")
-    var scrolling_dxDataGridOptions: js.UndefOr[dxDataGridScrolling] = js.native
+    var scrolling_dxDataGridOptions: js.UndefOr[dxDataGridScrolling] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.selectionFilter]
       */
-    var selectionFilter: js.UndefOr[String | js.Array[_] | js.Function] = js.native
+    var selectionFilter: js.UndefOr[String | js.Array[js.Any] | js.Function] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.selection]
       */
     @JSName("selection")
-    var selection_dxDataGridOptions: js.UndefOr[dxDataGridSelection] = js.native
+    var selection_dxDataGridOptions: js.UndefOr[dxDataGridSelection] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.sortByGroupSummaryInfo]
       */
-    var sortByGroupSummaryInfo: js.UndefOr[js.Array[GroupColumn]] = js.native
+    var sortByGroupSummaryInfo: js.UndefOr[js.Array[GroupColumn]] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.summary]
       */
-    var summary: js.UndefOr[CalculateCustomSummary] = js.native
+    var summary: js.UndefOr[CalculateCustomSummary] = js.undefined
   }
   object dxDataGridOptions {
     
@@ -6631,13 +6663,15 @@ object ui {
       def setColumnsVarargs(value: (dxDataGridColumn | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
       @scala.inline
-      def setCustomizeColumns(value: /* columns */ js.Array[dxDataGridColumn] => _): Self = StObject.set(x, "customizeColumns", js.Any.fromFunction1(value))
+      def setCustomizeColumns(value: /* columns */ js.Array[dxDataGridColumn] => js.Any): Self = StObject.set(x, "customizeColumns", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeColumnsUndefined: Self = StObject.set(x, "customizeColumns", js.undefined)
       
       @scala.inline
-      def setCustomizeExportData(value: (/* columns */ js.Array[dxDataGridColumn], /* rows */ js.Array[dxDataGridRowObject]) => _): Self = StObject.set(x, "customizeExportData", js.Any.fromFunction2(value))
+      def setCustomizeExportData(
+        value: (/* columns */ js.Array[dxDataGridColumn], /* rows */ js.Array[dxDataGridRowObject]) => js.Any
+      ): Self = StObject.set(x, "customizeExportData", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCustomizeExportDataUndefined: Self = StObject.set(x, "customizeExportData", js.undefined)
@@ -6682,115 +6716,115 @@ object ui {
       def setMasterDetailUndefined: Self = StObject.set(x, "masterDetail", js.undefined)
       
       @scala.inline
-      def setOnCellClick(value: (js.Function1[/* e */ CellElement, _]) | String): Self = StObject.set(x, "onCellClick", value.asInstanceOf[js.Any])
+      def setOnCellClick(value: (js.Function1[/* e */ CellElement, js.Any]) | String): Self = StObject.set(x, "onCellClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCellClickFunction1(value: /* e */ CellElement => _): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
+      def setOnCellClickFunction1(value: /* e */ CellElement => js.Any): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
       @scala.inline
-      def setOnCellDblClick(value: /* e */ ColumnIndex => _): Self = StObject.set(x, "onCellDblClick", js.Any.fromFunction1(value))
+      def setOnCellDblClick(value: /* e */ ColumnIndex => js.Any): Self = StObject.set(x, "onCellDblClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellDblClickUndefined: Self = StObject.set(x, "onCellDblClick", js.undefined)
       
       @scala.inline
-      def setOnCellHoverChanged(value: /* e */ DisplayValue => _): Self = StObject.set(x, "onCellHoverChanged", js.Any.fromFunction1(value))
+      def setOnCellHoverChanged(value: /* e */ DisplayValue => js.Any): Self = StObject.set(x, "onCellHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellHoverChangedUndefined: Self = StObject.set(x, "onCellHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnCellPrepared(value: /* e */ IsExpanded => _): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1(value))
+      def setOnCellPrepared(value: /* e */ IsExpanded => js.Any): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellPreparedUndefined: Self = StObject.set(x, "onCellPrepared", js.undefined)
       
       @scala.inline
-      def setOnContextMenuPreparing(value: /* e */ Items => _): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
+      def setOnContextMenuPreparing(value: /* e */ Items => js.Any): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
       
       @scala.inline
-      def setOnEditingStart(value: /* e */ CancelColumn => _): Self = StObject.set(x, "onEditingStart", js.Any.fromFunction1(value))
+      def setOnEditingStart(value: /* e */ CancelColumn => js.Any): Self = StObject.set(x, "onEditingStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditingStartUndefined: Self = StObject.set(x, "onEditingStart", js.undefined)
       
       @scala.inline
-      def setOnEditorPrepared(value: /* options */ DataField => _): Self = StObject.set(x, "onEditorPrepared", js.Any.fromFunction1(value))
+      def setOnEditorPrepared(value: /* options */ DataField => js.Any): Self = StObject.set(x, "onEditorPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditorPreparedUndefined: Self = StObject.set(x, "onEditorPrepared", js.undefined)
       
       @scala.inline
-      def setOnEditorPreparing(value: /* e */ Disabled => _): Self = StObject.set(x, "onEditorPreparing", js.Any.fromFunction1(value))
+      def setOnEditorPreparing(value: /* e */ Disabled => js.Any): Self = StObject.set(x, "onEditorPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditorPreparingUndefined: Self = StObject.set(x, "onEditorPreparing", js.undefined)
       
       @scala.inline
-      def setOnExported(value: /* e */ typings.devextreme.anon.`0` => _): Self = StObject.set(x, "onExported", js.Any.fromFunction1(value))
+      def setOnExported(value: /* e */ typings.devextreme.anon.`0` => js.Any): Self = StObject.set(x, "onExported", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
       
       @scala.inline
-      def setOnExporting(value: /* e */ ElementFileName => _): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
+      def setOnExporting(value: /* e */ ElementFileName => js.Any): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
       
       @scala.inline
-      def setOnFileSaving(value: /* e */ Format => _): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1(value))
+      def setOnFileSaving(value: /* e */ Format => js.Any): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
       
       @scala.inline
-      def setOnFocusedCellChanged(value: /* e */ Row => _): Self = StObject.set(x, "onFocusedCellChanged", js.Any.fromFunction1(value))
+      def setOnFocusedCellChanged(value: /* e */ Row => js.Any): Self = StObject.set(x, "onFocusedCellChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedCellChangedUndefined: Self = StObject.set(x, "onFocusedCellChanged", js.undefined)
       
       @scala.inline
-      def setOnFocusedCellChanging(value: /* e */ Columns => _): Self = StObject.set(x, "onFocusedCellChanging", js.Any.fromFunction1(value))
+      def setOnFocusedCellChanging(value: /* e */ Columns => js.Any): Self = StObject.set(x, "onFocusedCellChanging", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedCellChangingUndefined: Self = StObject.set(x, "onFocusedCellChanging", js.undefined)
       
       @scala.inline
-      def setOnFocusedRowChanged(value: /* e */ RowElement => _): Self = StObject.set(x, "onFocusedRowChanged", js.Any.fromFunction1(value))
+      def setOnFocusedRowChanged(value: /* e */ RowElement => js.Any): Self = StObject.set(x, "onFocusedRowChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedRowChangedUndefined: Self = StObject.set(x, "onFocusedRowChanged", js.undefined)
       
       @scala.inline
-      def setOnFocusedRowChanging(value: /* e */ NewRowIndex => _): Self = StObject.set(x, "onFocusedRowChanging", js.Any.fromFunction1(value))
+      def setOnFocusedRowChanging(value: /* e */ NewRowIndex => js.Any): Self = StObject.set(x, "onFocusedRowChanging", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedRowChangingUndefined: Self = StObject.set(x, "onFocusedRowChanging", js.undefined)
       
       @scala.inline
-      def setOnRowClick(value: (js.Function1[/* e */ GroupIndex, _]) | String): Self = StObject.set(x, "onRowClick", value.asInstanceOf[js.Any])
+      def setOnRowClick(value: (js.Function1[/* e */ GroupIndex, js.Any]) | String): Self = StObject.set(x, "onRowClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnRowClickFunction1(value: /* e */ GroupIndex => _): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
+      def setOnRowClickFunction1(value: /* e */ GroupIndex => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
       
       @scala.inline
-      def setOnRowDblClick(value: /* e */ IsNewRow => _): Self = StObject.set(x, "onRowDblClick", js.Any.fromFunction1(value))
+      def setOnRowDblClick(value: /* e */ IsNewRow => js.Any): Self = StObject.set(x, "onRowDblClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowDblClickUndefined: Self = StObject.set(x, "onRowDblClick", js.undefined)
       
       @scala.inline
-      def setOnRowPrepared(value: /* e */ IsSelected => _): Self = StObject.set(x, "onRowPrepared", js.Any.fromFunction1(value))
+      def setOnRowPrepared(value: /* e */ IsSelected => js.Any): Self = StObject.set(x, "onRowPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowPreparedUndefined: Self = StObject.set(x, "onRowPrepared", js.undefined)
@@ -6803,11 +6837,11 @@ object ui {
       
       @scala.inline
       def setRowTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* rowElement */ dxElement, /* rowInfo */ js.Any, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* rowElement */ dxElement, /* rowInfo */ js.Any, js.Any])
       ): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRowTemplateFunction2(value: (/* rowElement */ dxElement, /* rowInfo */ js.Any) => _): Self = StObject.set(x, "rowTemplate", js.Any.fromFunction2(value))
+      def setRowTemplateFunction2(value: (/* rowElement */ dxElement, /* rowInfo */ js.Any) => js.Any): Self = StObject.set(x, "rowTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
@@ -6822,7 +6856,7 @@ object ui {
       def setSelection(value: dxDataGridSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSelectionFilter(value: String | js.Array[_] | js.Function): Self = StObject.set(x, "selectionFilter", value.asInstanceOf[js.Any])
+      def setSelectionFilter(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "selectionFilter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectionFilterUndefined: Self = StObject.set(x, "selectionFilter", js.undefined)
@@ -6850,58 +6884,57 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDataGridRowObject extends StObject {
     
     /**
       * [descr:dxDataGridRowObject.data]
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.groupIndex]
       */
-    var groupIndex: js.UndefOr[Double] = js.native
+    var groupIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.isEditing]
       */
-    var isEditing: js.UndefOr[Boolean] = js.native
+    var isEditing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.isExpanded]
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.isNewRow]
       */
-    var isNewRow: js.UndefOr[Boolean] = js.native
+    var isNewRow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.isSelected]
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.key]
       */
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.rowIndex]
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.rowType]
       */
-    var rowType: js.UndefOr[String] = js.native
+    var rowType: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDataGridRowObject.values]
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object dxDataGridRowObject {
     
@@ -6969,7 +7002,7 @@ object ui {
       def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -6979,13 +7012,14 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDataGridScrolling extends GridBaseScrolling {
+  trait dxDataGridScrolling
+    extends StObject
+       with GridBaseScrolling {
     
     /**
       * [descr:dxDataGrid.Options.scrolling.mode]
       */
-    var mode: js.UndefOr[infinite | standard | virtual] = js.native
+    var mode: js.UndefOr[infinite | standard | virtual] = js.undefined
   }
   object dxDataGridScrolling {
     
@@ -7006,23 +7040,24 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDataGridSelection extends GridBaseSelection {
+  trait dxDataGridSelection
+    extends StObject
+       with GridBaseSelection {
     
     /**
       * [descr:dxDataGrid.Options.selection.deferred]
       */
-    var deferred: js.UndefOr[Boolean] = js.native
+    var deferred: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.selection.selectAllMode]
       */
-    var selectAllMode: js.UndefOr[allPages | page] = js.native
+    var selectAllMode: js.UndefOr[allPages | page] = js.undefined
     
     /**
       * [descr:dxDataGrid.Options.selection.showCheckBoxesMode]
       */
-    var showCheckBoxesMode: js.UndefOr[always | none | onClick | onLongTap] = js.native
+    var showCheckBoxesMode: js.UndefOr[always | none | onClick | onLongTap] = js.undefined
   }
   object dxDataGridSelection {
     
@@ -7056,96 +7091,99 @@ object ui {
   }
   
   @js.native
-  trait dxDateBox extends dxDropDownEditor
+  trait dxDateBox
+    extends StObject
+       with dxDropDownEditor
   
-  @js.native
-  trait dxDateBoxOptions extends dxDropDownEditorOptions[dxDateBox] {
+  trait dxDateBoxOptions
+    extends StObject
+       with dxDropDownEditorOptions[dxDateBox] {
     
     /**
       * [descr:dxDateBox.Options.adaptivityEnabled]
       */
-    var adaptivityEnabled: js.UndefOr[Boolean] = js.native
+    var adaptivityEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.applyButtonText]
       */
-    var applyButtonText: js.UndefOr[String] = js.native
+    var applyButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.calendarOptions]
       */
-    var calendarOptions: js.UndefOr[dxCalendarOptions] = js.native
+    var calendarOptions: js.UndefOr[dxCalendarOptions] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.cancelButtonText]
       */
-    var cancelButtonText: js.UndefOr[String] = js.native
+    var cancelButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.dateOutOfRangeMessage]
       */
-    var dateOutOfRangeMessage: js.UndefOr[String] = js.native
+    var dateOutOfRangeMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.dateSerializationFormat]
       */
-    var dateSerializationFormat: js.UndefOr[String] = js.native
+    var dateSerializationFormat: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.disabledDates]
       */
-    var disabledDates: js.UndefOr[js.Array[Date] | (js.Function1[/* data */ ComponentDate, Boolean])] = js.native
+    var disabledDates: js.UndefOr[js.Array[Date] | (js.Function1[/* data */ ComponentDate, Boolean])] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.displayFormat]
       */
-    var displayFormat: js.UndefOr[format] = js.native
+    var displayFormat: js.UndefOr[format] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.interval]
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.invalidDateMessage]
       */
-    var invalidDateMessage: js.UndefOr[String] = js.native
+    var invalidDateMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.max]
       */
-    var max: js.UndefOr[Date | Double | String] = js.native
+    var max: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.min]
       */
-    var min: js.UndefOr[Date | Double | String] = js.native
+    var min: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.pickerType]
       */
-    var pickerType: js.UndefOr[calendar | list | native | rollers] = js.native
+    var pickerType: js.UndefOr[calendar | list | native | rollers] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.showAnalogClock]
       */
-    var showAnalogClock: js.UndefOr[Boolean] = js.native
+    var showAnalogClock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.type]
       */
-    var `type`: js.UndefOr[date | datetime | time] = js.native
+    var `type`: js.UndefOr[date | datetime | time] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.useMaskBehavior]
       */
-    var useMaskBehavior: js.UndefOr[Boolean] = js.native
+    var useMaskBehavior: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDateBox.Options.value]
       */
     @JSName("value")
-    var value_dxDateBoxOptions: js.UndefOr[Date | Double | String] = js.native
+    var value_dxDateBoxOptions: js.UndefOr[Date | Double | String] = js.undefined
   }
   object dxDateBoxOptions {
     
@@ -7273,38 +7311,39 @@ object ui {
   
   type dxDeferRendering = Widget
   
-  @js.native
-  trait dxDeferRenderingOptions extends WidgetOptions[dxDeferRendering] {
+  trait dxDeferRenderingOptions
+    extends StObject
+       with WidgetOptions[dxDeferRendering] {
     
     /**
       * [descr:dxDeferRendering.Options.animation]
       */
-    var animation: js.UndefOr[animationConfig] = js.native
+    var animation: js.UndefOr[animationConfig] = js.undefined
     
     /**
       * [descr:dxDeferRendering.Options.onRendered]
       */
-    var onRendered: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`1`, _]] = js.native
+    var onRendered: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`1`, js.Any]] = js.undefined
     
     /**
       * [descr:dxDeferRendering.Options.onShown]
       */
-    var onShown: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`1`, _]] = js.native
+    var onShown: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`1`, js.Any]] = js.undefined
     
     /**
       * [descr:dxDeferRendering.Options.renderWhen]
       */
-    var renderWhen: js.UndefOr[Promise[Unit] | JQueryPromise[Unit] | Boolean] = js.native
+    var renderWhen: js.UndefOr[Promise[Unit] | JQueryPromise[Unit] | Boolean] = js.undefined
     
     /**
       * [descr:dxDeferRendering.Options.showLoadIndicator]
       */
-    var showLoadIndicator: js.UndefOr[Boolean] = js.native
+    var showLoadIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDeferRendering.Options.staggerItemSelector]
       */
-    var staggerItemSelector: js.UndefOr[String] = js.native
+    var staggerItemSelector: js.UndefOr[String] = js.undefined
   }
   object dxDeferRenderingOptions {
     
@@ -7324,13 +7363,13 @@ object ui {
       def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
       @scala.inline
-      def setOnRendered(value: /* e */ typings.devextreme.anon.`1` => _): Self = StObject.set(x, "onRendered", js.Any.fromFunction1(value))
+      def setOnRendered(value: /* e */ typings.devextreme.anon.`1` => js.Any): Self = StObject.set(x, "onRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRenderedUndefined: Self = StObject.set(x, "onRendered", js.undefined)
       
       @scala.inline
-      def setOnShown(value: /* e */ typings.devextreme.anon.`1` => _): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
+      def setOnShown(value: /* e */ typings.devextreme.anon.`1` => js.Any): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
@@ -7356,12 +7395,14 @@ object ui {
   }
   
   @js.native
-  trait dxDiagram extends Widget {
+  trait dxDiagram
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxDiagram.export()]
       */
-    def export(): String = js.native
+    def `export`(): String = js.native
     
     @JSName("exportTo")
     def exportTo_jpg(format: jpg, callback: js.Function): Unit = js.native
@@ -7400,18 +7441,17 @@ object ui {
     def `import`(data: String, updateExistingItemsOnly: Boolean): Unit = js.native
   }
   
-  @js.native
   trait dxDiagramAddShapeArgs extends StObject {
     
     /**
       * [descr:dxDiagramAddShapeArgs.position]
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDiagramAddShapeArgs.shape]
       */
-    var shape: js.UndefOr[dxDiagramShape] = js.native
+    var shape: js.UndefOr[dxDiagramShape] = js.undefined
   }
   object dxDiagramAddShapeArgs {
     
@@ -7438,7 +7478,6 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramAddShapeFromToolboxArgs extends StObject {
     
     /**
@@ -7446,7 +7485,7 @@ object ui {
       */
     var shapeType: js.UndefOr[
         text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | typings.devextreme.devextremeStrings.data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-      ] = js.native
+      ] = js.undefined
   }
   object dxDiagramAddShapeFromToolboxArgs {
     
@@ -7469,18 +7508,17 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramBeforeChangeConnectorTextArgs extends StObject {
     
     /**
       * [descr:dxDiagramBeforeChangeConnectorTextArgs.connector]
       */
-    var connector: js.UndefOr[dxDiagramConnector] = js.native
+    var connector: js.UndefOr[dxDiagramConnector] = js.undefined
     
     /**
       * [descr:dxDiagramBeforeChangeConnectorTextArgs.index]
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
   }
   object dxDiagramBeforeChangeConnectorTextArgs {
     
@@ -7507,13 +7545,12 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramBeforeChangeShapeTextArgs extends StObject {
     
     /**
       * [descr:dxDiagramBeforeChangeShapeTextArgs.shape]
       */
-    var shape: js.UndefOr[dxDiagramShape] = js.native
+    var shape: js.UndefOr[dxDiagramShape] = js.undefined
   }
   object dxDiagramBeforeChangeShapeTextArgs {
     
@@ -7534,33 +7571,32 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramChangeConnectionArgs extends StObject {
     
     /**
       * [descr:dxDiagramChangeConnectionArgs.connectionPointIndex]
       */
-    var connectionPointIndex: js.UndefOr[Double] = js.native
+    var connectionPointIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectionArgs.connector]
       */
-    var connector: js.UndefOr[dxDiagramConnector] = js.native
+    var connector: js.UndefOr[dxDiagramConnector] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectionArgs.connectorPosition]
       */
-    var connectorPosition: js.UndefOr[start | end] = js.native
+    var connectorPosition: js.UndefOr[start | end] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectionArgs.newShape]
       */
-    var newShape: js.UndefOr[dxDiagramShape] = js.native
+    var newShape: js.UndefOr[dxDiagramShape] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectionArgs.oldShape]
       */
-    var oldShape: js.UndefOr[dxDiagramShape] = js.native
+    var oldShape: js.UndefOr[dxDiagramShape] = js.undefined
   }
   object dxDiagramChangeConnectionArgs {
     
@@ -7605,23 +7641,22 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramChangeConnectorPointsArgs extends StObject {
     
     /**
       * [descr:dxDiagramChangeConnectorPointsArgs.connector]
       */
-    var connector: js.UndefOr[dxDiagramConnector] = js.native
+    var connector: js.UndefOr[dxDiagramConnector] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectorPointsArgs.newPoints]
       */
-    var newPoints: js.UndefOr[js.Array[_]] = js.native
+    var newPoints: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectorPointsArgs.oldPoints]
       */
-    var oldPoints: js.UndefOr[js.Array[_]] = js.native
+    var oldPoints: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object dxDiagramChangeConnectorPointsArgs {
     
@@ -7641,7 +7676,7 @@ object ui {
       def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
       
       @scala.inline
-      def setNewPoints(value: js.Array[_]): Self = StObject.set(x, "newPoints", value.asInstanceOf[js.Any])
+      def setNewPoints(value: js.Array[js.Any]): Self = StObject.set(x, "newPoints", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNewPointsUndefined: Self = StObject.set(x, "newPoints", js.undefined)
@@ -7650,7 +7685,7 @@ object ui {
       def setNewPointsVarargs(value: js.Any*): Self = StObject.set(x, "newPoints", js.Array(value :_*))
       
       @scala.inline
-      def setOldPoints(value: js.Array[_]): Self = StObject.set(x, "oldPoints", value.asInstanceOf[js.Any])
+      def setOldPoints(value: js.Array[js.Any]): Self = StObject.set(x, "oldPoints", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOldPointsUndefined: Self = StObject.set(x, "oldPoints", js.undefined)
@@ -7660,23 +7695,22 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramChangeConnectorTextArgs extends StObject {
     
     /**
       * [descr:dxDiagramChangeConnectorTextArgs.connector]
       */
-    var connector: js.UndefOr[dxDiagramConnector] = js.native
+    var connector: js.UndefOr[dxDiagramConnector] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectorTextArgs.index]
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDiagramChangeConnectorTextArgs.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxDiagramChangeConnectorTextArgs {
     
@@ -7709,18 +7743,17 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramChangeShapeTextArgs extends StObject {
     
     /**
       * [descr:dxDiagramChangeShapeTextArgs.shape]
       */
-    var shape: js.UndefOr[dxDiagramShape] = js.native
+    var shape: js.UndefOr[dxDiagramShape] = js.undefined
     
     /**
       * [descr:dxDiagramChangeShapeTextArgs.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxDiagramChangeShapeTextArgs {
     
@@ -7747,48 +7780,49 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDiagramConnector extends dxDiagramItem {
+  trait dxDiagramConnector
+    extends StObject
+       with dxDiagramItem {
     
     /**
       * [descr:dxDiagramConnector.fromId]
       */
-    var fromId: js.UndefOr[String] = js.native
+    var fromId: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDiagramConnector.fromKey]
       */
-    var fromKey: js.UndefOr[js.Any] = js.native
+    var fromKey: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDiagramConnector.fromPointIndex]
       */
-    var fromPointIndex: js.UndefOr[Double] = js.native
+    var fromPointIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDiagramConnector.points]
       */
-    var points: js.UndefOr[js.Array[_]] = js.native
+    var points: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagramConnector.texts]
       */
-    var texts: js.UndefOr[js.Array[String]] = js.native
+    var texts: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxDiagramConnector.toId]
       */
-    var toId: js.UndefOr[String] = js.native
+    var toId: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDiagramConnector.toKey]
       */
-    var toKey: js.UndefOr[js.Any] = js.native
+    var toKey: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDiagramConnector.toPointIndex]
       */
-    var toPointIndex: js.UndefOr[Double] = js.native
+    var toPointIndex: js.UndefOr[Double] = js.undefined
   }
   object dxDiagramConnector {
     
@@ -7820,7 +7854,7 @@ object ui {
       def setFromPointIndexUndefined: Self = StObject.set(x, "fromPointIndex", js.undefined)
       
       @scala.inline
-      def setPoints(value: js.Array[_]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
@@ -7857,30 +7891,29 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramCustomCommand extends StObject {
     
     /**
       * [descr:dxDiagramCustomCommand.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDiagramCustomCommand.items]
       */
-    var items: js.UndefOr[js.Array[dxDiagramCustomCommand]] = js.native
+    var items: js.UndefOr[js.Array[dxDiagramCustomCommand]] = js.undefined
     
     /**
       * [descr:dxDiagramCustomCommand.name]
       */
     var name: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 51 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDiagramCustomCommand.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxDiagramCustomCommand {
     
@@ -7922,13 +7955,12 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramDeleteConnectorArgs extends StObject {
     
     /**
       * [descr:dxDiagramDeleteConnectorArgs.connector]
       */
-    var connector: js.UndefOr[dxDiagramConnector] = js.native
+    var connector: js.UndefOr[dxDiagramConnector] = js.undefined
   }
   object dxDiagramDeleteConnectorArgs {
     
@@ -7949,13 +7981,12 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramDeleteShapeArgs extends StObject {
     
     /**
       * [descr:dxDiagramDeleteShapeArgs.shape]
       */
-    var shape: js.UndefOr[dxDiagramShape] = js.native
+    var shape: js.UndefOr[dxDiagramShape] = js.undefined
   }
   object dxDiagramDeleteShapeArgs {
     
@@ -7976,28 +8007,27 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramItem extends StObject {
     
     /**
       * [descr:dxDiagramItem.dataItem]
       */
-    var dataItem: js.UndefOr[js.Any] = js.native
+    var dataItem: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDiagramItem.id]
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDiagramItem.itemType]
       */
-    var itemType: js.UndefOr[shape | connector] = js.native
+    var itemType: js.UndefOr[shape | connector] = js.undefined
     
     /**
       * [descr:dxDiagramItem.key]
       */
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
   }
   object dxDiagramItem {
     
@@ -8036,23 +8066,22 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramMoveShapeArgs extends StObject {
     
     /**
       * [descr:dxDiagramMoveShapeArgs.newPosition]
       */
-    var newPosition: js.UndefOr[js.Array[_]] = js.native
+    var newPosition: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagramMoveShapeArgs.oldPosition]
       */
-    var oldPosition: js.UndefOr[js.Array[_]] = js.native
+    var oldPosition: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagramMoveShapeArgs.shape]
       */
-    var shape: js.UndefOr[dxDiagramShape] = js.native
+    var shape: js.UndefOr[dxDiagramShape] = js.undefined
   }
   object dxDiagramMoveShapeArgs {
     
@@ -8066,7 +8095,7 @@ object ui {
     implicit class dxDiagramMoveShapeArgsMutableBuilder[Self <: dxDiagramMoveShapeArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setNewPosition(value: js.Array[_]): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
+      def setNewPosition(value: js.Array[js.Any]): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNewPositionUndefined: Self = StObject.set(x, "newPosition", js.undefined)
@@ -8075,7 +8104,7 @@ object ui {
       def setNewPositionVarargs(value: js.Any*): Self = StObject.set(x, "newPosition", js.Array(value :_*))
       
       @scala.inline
-      def setOldPosition(value: js.Array[_]): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
+      def setOldPosition(value: js.Array[js.Any]): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOldPositionUndefined: Self = StObject.set(x, "oldPosition", js.undefined)
@@ -8091,187 +8120,188 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDiagramOptions extends WidgetOptions[dxDiagram] {
+  trait dxDiagramOptions
+    extends StObject
+       with WidgetOptions[dxDiagram] {
     
     /**
       * [descr:dxDiagram.Options.autoZoomMode]
       */
-    var autoZoomMode: js.UndefOr[fitContent | fitWidth | disabled] = js.native
+    var autoZoomMode: js.UndefOr[fitContent | fitWidth | disabled] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.contextMenu]
       */
-    var contextMenu: js.UndefOr[Commands] = js.native
+    var contextMenu: js.UndefOr[Commands] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.contextToolbox]
       */
-    var contextToolbox: js.UndefOr[Category] = js.native
+    var contextToolbox: js.UndefOr[Category] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.customShapeTemplate]
       */
     var customShapeTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.customShapeToolboxTemplate]
       */
     var customShapeToolboxTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.customShapes]
       */
-    var customShapes: js.UndefOr[js.Array[AllowEditImage]] = js.native
+    var customShapes: js.UndefOr[js.Array[AllowEditImage]] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.defaultItemProperties]
       */
-    var defaultItemProperties: js.UndefOr[ConnectorLineEnd] = js.native
+    var defaultItemProperties: js.UndefOr[ConnectorLineEnd] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.edges]
       */
-    var edges: js.UndefOr[CustomDataExpr] = js.native
+    var edges: js.UndefOr[CustomDataExpr] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.editing]
       */
-    var editing: js.UndefOr[AllowAddShape] = js.native
+    var editing: js.UndefOr[AllowAddShape] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.export]
       */
-    var export: js.UndefOr[ProxyUrl] = js.native
+    var `export`: js.UndefOr[ProxyUrl] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.fullScreen]
       */
-    var fullScreen: js.UndefOr[Boolean] = js.native
+    var fullScreen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.gridSize]
       */
-    var gridSize: js.UndefOr[Double | ItemsValue] = js.native
+    var gridSize: js.UndefOr[Double | ItemsValue] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.hasChanges]
       */
-    var hasChanges: js.UndefOr[Boolean] = js.native
+    var hasChanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.historyToolbar]
       */
-    var historyToolbar: js.UndefOr[Visible] = js.native
+    var historyToolbar: js.UndefOr[Visible] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.mainToolbar]
       */
-    var mainToolbar: js.UndefOr[Visible] = js.native
+    var mainToolbar: js.UndefOr[Visible] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.nodes]
       */
-    var nodes: js.UndefOr[AutoLayout] = js.native
+    var nodes: js.UndefOr[AutoLayout] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.onCustomCommand]
       */
-    var onCustomCommand: js.UndefOr[js.Function1[/* e */ ElementName, _]] = js.native
+    var onCustomCommand: js.UndefOr[js.Function1[/* e */ ElementName, js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.onItemClick]
       */
-    var onItemClick: js.UndefOr[js.Function1[/* e */ ElementItem, _]] = js.native
+    var onItemClick: js.UndefOr[js.Function1[/* e */ ElementItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.onItemDblClick]
       */
-    var onItemDblClick: js.UndefOr[js.Function1[/* e */ ElementItem, _]] = js.native
+    var onItemDblClick: js.UndefOr[js.Function1[/* e */ ElementItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.onRequestEditOperation]
       */
-    var onRequestEditOperation: js.UndefOr[js.Function1[/* e */ Allowed, _]] = js.native
+    var onRequestEditOperation: js.UndefOr[js.Function1[/* e */ Allowed, js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.onRequestLayoutUpdate]
       */
-    var onRequestLayoutUpdate: js.UndefOr[js.Function1[/* e */ AllowedChanges, _]] = js.native
+    var onRequestLayoutUpdate: js.UndefOr[js.Function1[/* e */ AllowedChanges, js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementItems, _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementItems, js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.pageColor]
       */
-    var pageColor: js.UndefOr[String] = js.native
+    var pageColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.pageOrientation]
       */
-    var pageOrientation: js.UndefOr[portrait | landscape] = js.native
+    var pageOrientation: js.UndefOr[portrait | landscape] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.pageSize]
       */
-    var pageSize: js.UndefOr[Width] = js.native
+    var pageSize: js.UndefOr[Width] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.propertiesPanel]
       */
-    var propertiesPanel: js.UndefOr[Tabs] = js.native
+    var propertiesPanel: js.UndefOr[Tabs] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.readOnly]
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.showGrid]
       */
-    var showGrid: js.UndefOr[Boolean] = js.native
+    var showGrid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.simpleView]
       */
-    var simpleView: js.UndefOr[Boolean] = js.native
+    var simpleView: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.snapToGrid]
       */
-    var snapToGrid: js.UndefOr[Boolean] = js.native
+    var snapToGrid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.toolbox]
       */
-    var toolbox: js.UndefOr[ShapeIconsPerRow] = js.native
+    var toolbox: js.UndefOr[ShapeIconsPerRow] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.units]
       */
-    var units: js.UndefOr[in | cm | px] = js.native
+    var units: js.UndefOr[in | cm | px] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.viewToolbar]
       */
-    var viewToolbar: js.UndefOr[Visible] = js.native
+    var viewToolbar: js.UndefOr[Visible] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.viewUnits]
       */
-    var viewUnits: js.UndefOr[in | cm | px] = js.native
+    var viewUnits: js.UndefOr[in | cm | px] = js.undefined
     
     /**
       * [descr:dxDiagram.Options.zoomLevel]
       */
-    var zoomLevel: js.UndefOr[Double | ItemsValue] = js.native
+    var zoomLevel: js.UndefOr[Double | ItemsValue] = js.undefined
   }
   object dxDiagramOptions {
     
@@ -8304,22 +8334,22 @@ object ui {
       
       @scala.inline
       def setCustomShapeTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])
       ): Self = StObject.set(x, "customShapeTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCustomShapeTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => _): Self = StObject.set(x, "customShapeTemplate", js.Any.fromFunction2(value))
+      def setCustomShapeTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "customShapeTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCustomShapeTemplateUndefined: Self = StObject.set(x, "customShapeTemplate", js.undefined)
       
       @scala.inline
       def setCustomShapeToolboxTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])
       ): Self = StObject.set(x, "customShapeToolboxTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCustomShapeToolboxTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => _): Self = StObject.set(x, "customShapeToolboxTemplate", js.Any.fromFunction2(value))
+      def setCustomShapeToolboxTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "customShapeToolboxTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCustomShapeToolboxTemplateUndefined: Self = StObject.set(x, "customShapeToolboxTemplate", js.undefined)
@@ -8394,37 +8424,37 @@ object ui {
       def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
       @scala.inline
-      def setOnCustomCommand(value: /* e */ ElementName => _): Self = StObject.set(x, "onCustomCommand", js.Any.fromFunction1(value))
+      def setOnCustomCommand(value: /* e */ ElementName => js.Any): Self = StObject.set(x, "onCustomCommand", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCustomCommandUndefined: Self = StObject.set(x, "onCustomCommand", js.undefined)
       
       @scala.inline
-      def setOnItemClick(value: /* e */ ElementItem => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnItemClick(value: /* e */ ElementItem => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnItemDblClick(value: /* e */ ElementItem => _): Self = StObject.set(x, "onItemDblClick", js.Any.fromFunction1(value))
+      def setOnItemDblClick(value: /* e */ ElementItem => js.Any): Self = StObject.set(x, "onItemDblClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemDblClickUndefined: Self = StObject.set(x, "onItemDblClick", js.undefined)
       
       @scala.inline
-      def setOnRequestEditOperation(value: /* e */ Allowed => _): Self = StObject.set(x, "onRequestEditOperation", js.Any.fromFunction1(value))
+      def setOnRequestEditOperation(value: /* e */ Allowed => js.Any): Self = StObject.set(x, "onRequestEditOperation", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRequestEditOperationUndefined: Self = StObject.set(x, "onRequestEditOperation", js.undefined)
       
       @scala.inline
-      def setOnRequestLayoutUpdate(value: /* e */ AllowedChanges => _): Self = StObject.set(x, "onRequestLayoutUpdate", js.Any.fromFunction1(value))
+      def setOnRequestLayoutUpdate(value: /* e */ AllowedChanges => js.Any): Self = StObject.set(x, "onRequestLayoutUpdate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRequestLayoutUpdateUndefined: Self = StObject.set(x, "onRequestLayoutUpdate", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ ElementItems => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ ElementItems => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
@@ -8509,23 +8539,22 @@ object ui {
     }
   }
   
-  @js.native
   trait dxDiagramResizeShapeArgs extends StObject {
     
     /**
       * [descr:dxDiagramResizeShapeArgs.newSize]
       */
-    var newSize: js.UndefOr[js.Array[_]] = js.native
+    var newSize: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagramResizeShapeArgs.oldSize]
       */
-    var oldSize: js.UndefOr[js.Array[_]] = js.native
+    var oldSize: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxDiagramResizeShapeArgs.shape]
       */
-    var shape: js.UndefOr[dxDiagramShape] = js.native
+    var shape: js.UndefOr[dxDiagramShape] = js.undefined
   }
   object dxDiagramResizeShapeArgs {
     
@@ -8539,7 +8568,7 @@ object ui {
     implicit class dxDiagramResizeShapeArgsMutableBuilder[Self <: dxDiagramResizeShapeArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setNewSize(value: js.Array[_]): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
+      def setNewSize(value: js.Array[js.Any]): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNewSizeUndefined: Self = StObject.set(x, "newSize", js.undefined)
@@ -8548,7 +8577,7 @@ object ui {
       def setNewSizeVarargs(value: js.Any*): Self = StObject.set(x, "newSize", js.Array(value :_*))
       
       @scala.inline
-      def setOldSize(value: js.Array[_]): Self = StObject.set(x, "oldSize", value.asInstanceOf[js.Any])
+      def setOldSize(value: js.Array[js.Any]): Self = StObject.set(x, "oldSize", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOldSizeUndefined: Self = StObject.set(x, "oldSize", js.undefined)
@@ -8564,35 +8593,36 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxDiagramShape extends dxDiagramItem {
+  trait dxDiagramShape
+    extends StObject
+       with dxDiagramItem {
     
     /**
       * [descr:dxDiagramShape.attachedConnectorIds]
       */
-    var attachedConnectorIds: js.UndefOr[js.Array[String]] = js.native
+    var attachedConnectorIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxDiagramShape.position]
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDiagramShape.size]
       */
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxDiagramShape.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDiagramShape.type]
       */
     var `type`: js.UndefOr[
         text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | typings.devextreme.devextremeStrings.data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-      ] = js.native
+      ] = js.undefined
   }
   object dxDiagramShape {
     
@@ -8644,14 +8674,15 @@ object ui {
   
   type dxDraggable = DraggableBase
   
-  @js.native
-  trait dxDraggableOptions extends DraggableBaseOptions[dxDraggable] {
+  trait dxDraggableOptions
+    extends StObject
+       with DraggableBaseOptions[dxDraggable] {
     
     /**
       * [descr:dxDraggable.Options.clone]
       */
     @JSName("clone")
-    var clone_FdxDraggableOptions: js.UndefOr[Boolean] = js.native
+    var clone_FdxDraggableOptions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDraggable.Options.dragTemplate]
@@ -8662,22 +8693,22 @@ object ui {
           /* containerElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDraggable.Options.onDragEnd]
       */
-    var onDragEnd: js.UndefOr[js.Function1[/* e */ ToData, _]] = js.native
+    var onDragEnd: js.UndefOr[js.Function1[/* e */ ToData, js.Any]] = js.undefined
     
     /**
       * [descr:dxDraggable.Options.onDragMove]
       */
-    var onDragMove: js.UndefOr[js.Function1[/* e */ ToData, _]] = js.native
+    var onDragMove: js.UndefOr[js.Function1[/* e */ ToData, js.Any]] = js.undefined
     
     /**
       * [descr:dxDraggable.Options.onDragStart]
       */
-    var onDragStart: js.UndefOr[js.Function1[/* e */ EventFromData, _]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* e */ EventFromData, js.Any]] = js.undefined
   }
   object dxDraggableOptions {
     
@@ -8712,19 +8743,19 @@ object ui {
       def setDragTemplateUndefined: Self = StObject.set(x, "dragTemplate", js.undefined)
       
       @scala.inline
-      def setOnDragEnd(value: /* e */ ToData => _): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      def setOnDragEnd(value: /* e */ ToData => js.Any): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
       @scala.inline
-      def setOnDragMove(value: /* e */ ToData => _): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
+      def setOnDragMove(value: /* e */ ToData => js.Any): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
       
       @scala.inline
-      def setOnDragStart(value: /* e */ EventFromData => _): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      def setOnDragStart(value: /* e */ EventFromData => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
@@ -8732,7 +8763,9 @@ object ui {
   }
   
   @js.native
-  trait dxDrawer extends Widget {
+  trait dxDrawer
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxDrawer.content()]
@@ -8742,86 +8775,87 @@ object ui {
     /**
       * [descr:dxDrawer.hide()]
       */
-    def hide(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def hide(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxDrawer.show()]
       */
-    def show(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def show(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxDrawer.toggle()]
       */
-    def toggle(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def toggle(): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxDrawerOptions extends WidgetOptions[dxDrawer] {
+  trait dxDrawerOptions
+    extends StObject
+       with WidgetOptions[dxDrawer] {
     
     /**
       * [descr:dxDrawer.Options.animationDuration]
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.animationEnabled]
       */
-    var animationEnabled: js.UndefOr[Boolean] = js.native
+    var animationEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.closeOnOutsideClick]
       */
     var closeOnOutsideClick: js.UndefOr[
         Boolean | (js.Function1[/* event */ typings.devextreme.mod.DevExpress.events.event, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.maxSize]
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.minSize]
       */
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.opened]
       */
-    var opened: js.UndefOr[Boolean] = js.native
+    var opened: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.openedStateMode]
       */
-    var openedStateMode: js.UndefOr[overlap | shrink | push] = js.native
+    var openedStateMode: js.UndefOr[overlap | shrink | push] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.position]
       */
-    var position: js.UndefOr[left | right | top | bottom | before | after] = js.native
+    var position: js.UndefOr[left | right | top | bottom | before | after] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.revealMode]
       */
-    var revealMode: js.UndefOr[slide | expand] = js.native
+    var revealMode: js.UndefOr[slide | expand] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.shading]
       */
-    var shading: js.UndefOr[Boolean] = js.native
+    var shading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.target]
       * @deprecated [depNote:dxDrawer.Options.target]
       */
-    var target: js.UndefOr[String | Element | JQuery] = js.native
+    var target: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:dxDrawer.Options.template]
       */
     var template: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* Element */ dxElement, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* Element */ dxElement, js.Any])
+      ] = js.undefined
   }
   object dxDrawerOptions {
     
@@ -8907,11 +8941,11 @@ object ui {
       
       @scala.inline
       def setTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* Element */ dxElement, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* Element */ dxElement, js.Any])
       ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTemplateFunction1(value: /* Element */ dxElement => _): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+      def setTemplateFunction1(value: /* Element */ dxElement => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
@@ -8919,7 +8953,9 @@ object ui {
   }
   
   @js.native
-  trait dxDropDownBox extends dxDropDownEditor {
+  trait dxDropDownBox
+    extends StObject
+       with dxDropDownEditor {
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
@@ -8928,8 +8964,39 @@ object ui {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ @js.native
-  trait dxDropDownBoxOptions extends dxDropDownEditorOptions[dxDropDownBox] {
+  - typings.devextreme.mod.DevExpress.ui.WidgetOptions because var conflicts: activeStateEnabled, focusStateEnabled, hoverStateEnabled. Inlined accessKey, disabled, hint, onContentReady, tabIndex, visible
+  - typings.devextreme.mod.DevExpress.ui.EditorOptions because var conflicts: activeStateEnabled, focusStateEnabled, hoverStateEnabled, value. Inlined isValid, onValueChanged, readOnly, validationError, validationErrors, validationMessageMode, validationStatus
+  - typings.devextreme.mod.DevExpress.ui.dxTextEditorOptions because var conflicts: activeStateEnabled, buttons, value. Inlined focusStateEnabled, hoverStateEnabled, inputAttr, mask, maskChar, maskInvalidMessage, maskRules, name, onChange, onCopy, onCut, onEnterKey, onFocusIn, onFocusOut, onInput, onKeyDown, onKeyPress, onKeyUp, onPaste, placeholder, showClearButton, showMaskMode, spellcheck, stylingMode, text, useMaskedValue, valueChangeEvent
+  - typings.devextreme.mod.DevExpress.ui.dxTextBoxOptions because var conflicts: activeStateEnabled, buttons, value. Inlined maxLength, mode
+  - typings.devextreme.mod.DevExpress.ui.dxDropDownEditorOptions because var conflicts: value. Inlined acceptCustomValue, activeStateEnabled, applyValueMode, buttons, deferRendering, dropDownButtonTemplate, dropDownOptions, onClosed, onOpened, openOnFieldClick, opened, showDropDownButton */ trait dxDropDownBoxOptions
+    extends StObject
+       with DataExpressionMixinOptions[dxDropDownBox]
+       with DOMComponentOptions[dxDropDownBox] {
+    
+    /**
+      * [descr:dxDropDownBox.Options.acceptCustomValue]
+      */
+    var acceptCustomValue: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.accessKey]
+      */
+    var accessKey: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.activeStateEnabled]
+      */
+    var activeStateEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.applyValueMode]
+      */
+    var applyValueMode: js.UndefOr[instantly | useButtons] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.buttons]
+      */
+    var buttons: js.UndefOr[js.Array[clear | dropDown | dxTextEditorButton]] = js.undefined
     
     /**
       * [descr:dxDropDownBox.Options.contentTemplate]
@@ -8940,51 +9007,267 @@ object ui {
           /* contentElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.dataSource]
+      * [descr:dxDropDownEditor.Options.deferRendering]
       */
-    var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.native
+    var deferRendering: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.displayExpr]
+      * [descr:Widget.Options.disabled]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownBox.Options.displayValueFormatter]
       */
-    var displayValueFormatter: js.UndefOr[js.Function1[/* value */ String | js.Array[_], String]] = js.native
+    var displayValueFormatter: js.UndefOr[js.Function1[/* value */ String | js.Array[js.Any], String]] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.dropDownButtonTemplate]
+      */
+    var dropDownButtonTemplate: js.UndefOr[
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
+      ] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.dropDownOptions]
+      */
+    var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
     
     /**
       * [descr:dxDropDownBox.Options.fieldTemplate]
       */
     var fieldTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* value */ js.Any, /* fieldElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.itemTemplate]
+      * [descr:dxTextEditor.Options.focusStateEnabled]
       */
-    var itemTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-          /* itemData */ js.Any, 
-          /* itemIndex */ Double, 
-          /* itemElement */ dxElement, 
-          String | Element | JQuery
-        ])
-      ] = js.native
+    var focusStateEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.items]
+      * [descr:Widget.Options.hint]
       */
-    var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.valueExpr]
+      * [descr:dxTextEditor.Options.hoverStateEnabled]
       */
-    var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.native
+    var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.inputAttr]
+      */
+    var inputAttr: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.isValid]
+      */
+    var isValid: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.mask]
+      */
+    var mask: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.maskChar]
+      */
+    var maskChar: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.maskInvalidMessage]
+      */
+    var maskInvalidMessage: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.maskRules]
+      */
+    var maskRules: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * [descr:dxTextBox.Options.maxLength]
+      */
+    var maxLength: js.UndefOr[String | Double] = js.undefined
+    
+    /**
+      * [descr:dxTextBox.Options.mode]
+      */
+    var mode: js.UndefOr[email | password | search | tel | text | url] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.name]
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onChange]
+      */
+    var onChange: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.onClosed]
+      */
+    var onClosed: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.onContentReady]
+      */
+    var onContentReady: js.UndefOr[js.Function1[/* e */ ElementModel[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onCopy]
+      */
+    var onCopy: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onCut]
+      */
+    var onCut: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onEnterKey]
+      */
+    var onEnterKey: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onFocusIn]
+      */
+    var onFocusIn: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onFocusOut]
+      */
+    var onFocusOut: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onInput]
+      */
+    var onInput: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onKeyDown]
+      */
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onKeyPress]
+      * @deprecated [depNote:dxTextEditor.Options.onKeyPress]
+      */
+    var onKeyPress: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onKeyUp]
+      */
+    var onKeyUp: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.onOpened]
+      */
+    var onOpened: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onPaste]
+      */
+    var onPaste: js.UndefOr[js.Function1[/* e */ `13`[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.onValueChanged]
+      */
+    var onValueChanged: js.UndefOr[js.Function1[/* e */ PreviousValue[dxDropDownBox], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxDropDownBox.Options.openOnFieldClick]
+      */
+    var openOnFieldClick: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.opened]
+      */
+    var opened: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.placeholder]
+      */
+    var placeholder: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.readOnly]
+      */
+    var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.showClearButton]
+      */
+    var showClearButton: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.showDropDownButton]
+      */
+    var showDropDownButton: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.showMaskMode]
+      */
+    var showMaskMode: js.UndefOr[always | onFocus] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.spellcheck]
+      */
+    var spellcheck: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.stylingMode]
+      */
+    var stylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.tabIndex]
+      */
+    var tabIndex: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.text]
+      */
+    var text: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.useMaskedValue]
+      */
+    var useMaskedValue: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationError]
+      */
+    var validationError: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationErrors]
+      */
+    var validationErrors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationMessageMode]
+      */
+    var validationMessageMode: js.UndefOr[always | auto] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationStatus]
+      */
+    var validationStatus: js.UndefOr[valid | invalid | pending] = js.undefined
+    
+    /**
+      * [descr:dxDropDownBox.Options.valueChangeEvent]
+      */
+    var valueChangeEvent: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.visible]
+      */
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxDropDownBoxOptions {
     
@@ -8996,6 +9279,39 @@ object ui {
     
     @scala.inline
     implicit class dxDropDownBoxOptionsMutableBuilder[Self <: dxDropDownBoxOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAcceptCustomValue(value: Boolean): Self = StObject.set(x, "acceptCustomValue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAcceptCustomValueUndefined: Self = StObject.set(x, "acceptCustomValue", js.undefined)
+      
+      @scala.inline
+      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      
+      @scala.inline
+      def setActiveStateEnabled(value: Boolean): Self = StObject.set(x, "activeStateEnabled", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setActiveStateEnabledUndefined: Self = StObject.set(x, "activeStateEnabled", js.undefined)
+      
+      @scala.inline
+      def setApplyValueMode(value: instantly | useButtons): Self = StObject.set(x, "applyValueMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setApplyValueModeUndefined: Self = StObject.set(x, "applyValueMode", js.undefined)
+      
+      @scala.inline
+      def setButtons(value: js.Array[clear | dropDown | dxTextEditorButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      
+      @scala.inline
+      def setButtonsVarargs(value: (clear | dropDown | dxTextEditorButton)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
       @scala.inline
       def setContentTemplate(
@@ -9015,28 +9331,39 @@ object ui {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDeferRendering(value: Boolean): Self = StObject.set(x, "deferRendering", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+      def setDeferRenderingUndefined: Self = StObject.set(x, "deferRendering", js.undefined)
       
       @scala.inline
-      def setDataSourceVarargs(value: (CollectionWidgetItem | js.Any)*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDisplayExpr(value: String | (js.Function1[/* item */ js.Any, String])): Self = StObject.set(x, "displayExpr", value.asInstanceOf[js.Any])
+      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setDisplayExprFunction1(value: /* item */ js.Any => String): Self = StObject.set(x, "displayExpr", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setDisplayExprUndefined: Self = StObject.set(x, "displayExpr", js.undefined)
-      
-      @scala.inline
-      def setDisplayValueFormatter(value: /* value */ String | js.Array[_] => String): Self = StObject.set(x, "displayValueFormatter", js.Any.fromFunction1(value))
+      def setDisplayValueFormatter(value: /* value */ String | js.Array[js.Any] => String): Self = StObject.set(x, "displayValueFormatter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDisplayValueFormatterUndefined: Self = StObject.set(x, "displayValueFormatter", js.undefined)
+      
+      @scala.inline
+      def setDropDownButtonTemplate(
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
+      ): Self = StObject.set(x, "dropDownButtonTemplate", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDropDownButtonTemplateFunction2(value: (/* buttonData */ Icon, /* contentElement */ dxElement) => String | Element | JQuery): Self = StObject.set(x, "dropDownButtonTemplate", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDropDownButtonTemplateUndefined: Self = StObject.set(x, "dropDownButtonTemplate", js.undefined)
+      
+      @scala.inline
+      def setDropDownOptions(value: dxPopupOptions[dxPopup]): Self = StObject.set(x, "dropDownOptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDropDownOptionsUndefined: Self = StObject.set(x, "dropDownOptions", js.undefined)
       
       @scala.inline
       def setFieldTemplate(
@@ -9050,50 +9377,289 @@ object ui {
       def setFieldTemplateUndefined: Self = StObject.set(x, "fieldTemplate", js.undefined)
       
       @scala.inline
-      def setItemTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-              /* itemData */ js.Any, 
-              /* itemIndex */ Double, 
-              /* itemElement */ dxElement, 
-              String | Element | JQuery
-            ])
-      ): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      def setFocusStateEnabled(value: Boolean): Self = StObject.set(x, "focusStateEnabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItemTemplateFunction3(
-        value: (/* itemData */ js.Any, /* itemIndex */ Double, /* itemElement */ dxElement) => String | Element | JQuery
-      ): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction3(value))
+      def setFocusStateEnabledUndefined: Self = StObject.set(x, "focusStateEnabled", js.undefined)
       
       @scala.inline
-      def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
+      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItems(value: js.Array[CollectionWidgetItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
       @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      def setHoverStateEnabled(value: Boolean): Self = StObject.set(x, "hoverStateEnabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItemsVarargs(value: (CollectionWidgetItem | js.Any)*): Self = StObject.set(x, "items", js.Array(value :_*))
+      def setHoverStateEnabledUndefined: Self = StObject.set(x, "hoverStateEnabled", js.undefined)
       
       @scala.inline
-      def setValueExpr(value: String | (js.Function1[/* item */ js.Any, String | Double | Boolean])): Self = StObject.set(x, "valueExpr", value.asInstanceOf[js.Any])
+      def setInputAttr(value: js.Any): Self = StObject.set(x, "inputAttr", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValueExprFunction1(value: /* item */ js.Any => String | Double | Boolean): Self = StObject.set(x, "valueExpr", js.Any.fromFunction1(value))
+      def setInputAttrUndefined: Self = StObject.set(x, "inputAttr", js.undefined)
       
       @scala.inline
-      def setValueExprUndefined: Self = StObject.set(x, "valueExpr", js.undefined)
+      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+      
+      @scala.inline
+      def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
+      
+      @scala.inline
+      def setMaskInvalidMessage(value: String): Self = StObject.set(x, "maskInvalidMessage", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskInvalidMessageUndefined: Self = StObject.set(x, "maskInvalidMessage", js.undefined)
+      
+      @scala.inline
+      def setMaskRules(value: js.Any): Self = StObject.set(x, "maskRules", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskRulesUndefined: Self = StObject.set(x, "maskRules", js.undefined)
+      
+      @scala.inline
+      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      @scala.inline
+      def setMaxLength(value: String | Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      
+      @scala.inline
+      def setMode(value: email | password | search | tel | text | url): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      @scala.inline
+      def setOnChange(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      @scala.inline
+      def setOnClosed(value: /* e */ typings.devextreme.anon.`2`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
+      
+      @scala.inline
+      def setOnContentReady(value: /* e */ ElementModel[dxDropDownBox] => js.Any): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
+      
+      @scala.inline
+      def setOnCopy(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      
+      @scala.inline
+      def setOnCut(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
+      
+      @scala.inline
+      def setOnEnterKey(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onEnterKey", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnEnterKeyUndefined: Self = StObject.set(x, "onEnterKey", js.undefined)
+      
+      @scala.inline
+      def setOnFocusIn(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onFocusIn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnFocusInUndefined: Self = StObject.set(x, "onFocusIn", js.undefined)
+      
+      @scala.inline
+      def setOnFocusOut(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnFocusOutUndefined: Self = StObject.set(x, "onFocusOut", js.undefined)
+      
+      @scala.inline
+      def setOnInput(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      
+      @scala.inline
+      def setOnKeyDown(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      
+      @scala.inline
+      def setOnKeyPress(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      
+      @scala.inline
+      def setOnKeyUp(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      
+      @scala.inline
+      def setOnOpened(value: /* e */ typings.devextreme.anon.`2`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
+      
+      @scala.inline
+      def setOnPaste(value: /* e */ `13`[dxDropDownBox] => js.Any): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
+      
+      @scala.inline
+      def setOnValueChanged(value: /* e */ PreviousValue[dxDropDownBox] => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
+      
+      @scala.inline
+      def setOpenOnFieldClick(value: Boolean): Self = StObject.set(x, "openOnFieldClick", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOpenOnFieldClickUndefined: Self = StObject.set(x, "openOnFieldClick", js.undefined)
+      
+      @scala.inline
+      def setOpened(value: Boolean): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+      
+      @scala.inline
+      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      @scala.inline
+      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      
+      @scala.inline
+      def setShowClearButton(value: Boolean): Self = StObject.set(x, "showClearButton", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShowClearButtonUndefined: Self = StObject.set(x, "showClearButton", js.undefined)
+      
+      @scala.inline
+      def setShowDropDownButton(value: Boolean): Self = StObject.set(x, "showDropDownButton", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShowDropDownButtonUndefined: Self = StObject.set(x, "showDropDownButton", js.undefined)
+      
+      @scala.inline
+      def setShowMaskMode(value: always | onFocus): Self = StObject.set(x, "showMaskMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShowMaskModeUndefined: Self = StObject.set(x, "showMaskMode", js.undefined)
+      
+      @scala.inline
+      def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpellcheckUndefined: Self = StObject.set(x, "spellcheck", js.undefined)
+      
+      @scala.inline
+      def setStylingMode(value: outlined | underlined | filled): Self = StObject.set(x, "stylingMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStylingModeUndefined: Self = StObject.set(x, "stylingMode", js.undefined)
+      
+      @scala.inline
+      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      @scala.inline
+      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      
+      @scala.inline
+      def setUseMaskedValue(value: Boolean): Self = StObject.set(x, "useMaskedValue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUseMaskedValueUndefined: Self = StObject.set(x, "useMaskedValue", js.undefined)
+      
+      @scala.inline
+      def setValidationError(value: js.Any): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
+      
+      @scala.inline
+      def setValidationErrors(value: js.Array[js.Any]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+      
+      @scala.inline
+      def setValidationErrorsVarargs(value: js.Any*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+      
+      @scala.inline
+      def setValidationMessageMode(value: always | auto): Self = StObject.set(x, "validationMessageMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationMessageModeUndefined: Self = StObject.set(x, "validationMessageMode", js.undefined)
+      
+      @scala.inline
+      def setValidationStatus(value: valid | invalid | pending): Self = StObject.set(x, "validationStatus", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationStatusUndefined: Self = StObject.set(x, "validationStatus", js.undefined)
+      
+      @scala.inline
+      def setValueChangeEvent(value: String): Self = StObject.set(x, "valueChangeEvent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValueChangeEventUndefined: Self = StObject.set(x, "valueChangeEvent", js.undefined)
+      
+      @scala.inline
+      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
   @js.native
-  trait dxDropDownButton extends Widget {
+  trait dxDropDownButton
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxDropDownButton.close()]
       */
-    def close(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def close(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
@@ -9103,25 +9669,26 @@ object ui {
     /**
       * [descr:dxDropDownButton.open()]
       */
-    def open(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def open(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxDropDownButton.toggle()]
       */
-    def toggle(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def toggle(): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxDropDownButton.toggle(visibility)]
       */
-    def toggle(visibility: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def toggle(visibility: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxDropDownButtonItem extends dxListItem {
+  trait dxDropDownButtonItem
+    extends StObject
+       with dxListItem {
     
     /**
       * [descr:dxDropDownButtonItem.onClick]
       */
-    var onClick: js.UndefOr[(js.Function1[/* e */ EventModel, _]) | String] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* e */ EventModel, js.Any]) | String] = js.undefined
   }
   object dxDropDownButtonItem {
     
@@ -9135,54 +9702,57 @@ object ui {
     implicit class dxDropDownButtonItemMutableBuilder[Self <: dxDropDownButtonItem] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnClick(value: (js.Function1[/* e */ EventModel, _]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: (js.Function1[/* e */ EventModel, js.Any]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickFunction1(value: /* e */ EventModel => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClickFunction1(value: /* e */ EventModel => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
   
-  @js.native
-  trait dxDropDownButtonOptions extends WidgetOptions[dxDropDownButton] {
+  trait dxDropDownButtonOptions
+    extends StObject
+       with WidgetOptions[dxDropDownButton] {
     
     /**
       * [descr:dxDropDownButton.Options.dataSource]
       */
-    var dataSource: js.UndefOr[String | (js.Array[dxDropDownButtonItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource: js.UndefOr[
+        String | (js.Array[dxDropDownButtonItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.deferRendering]
       */
-    var deferRendering: js.UndefOr[Boolean] = js.native
+    var deferRendering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.displayExpr]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* itemData */ js.Any, String])] = js.native
+    var displayExpr: js.UndefOr[String | (js.Function1[/* itemData */ js.Any, String])] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.dropDownContentTemplate]
       */
     var dropDownContentTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-          /* data */ (js.Array[String | Double | _]) | DataSource, 
+          /* data */ (js.Array[String | Double | js.Any]) | DataSource, 
           /* contentElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.dropDownOptions]
       */
-    var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.native
+    var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.itemTemplate]
@@ -9194,82 +9764,82 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.items]
       */
-    var items: js.UndefOr[js.Array[dxDropDownButtonItem | _]] = js.native
+    var items: js.UndefOr[js.Array[dxDropDownButtonItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.keyExpr]
       */
-    var keyExpr: js.UndefOr[String] = js.native
+    var keyExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.noDataText]
       */
-    var noDataText: js.UndefOr[String] = js.native
+    var noDataText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.onButtonClick]
       */
-    var onButtonClick: js.UndefOr[(js.Function1[/* e */ SelectedItem, _]) | String] = js.native
+    var onButtonClick: js.UndefOr[(js.Function1[/* e */ SelectedItem, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.onItemClick]
       */
-    var onItemClick: js.UndefOr[(js.Function1[/* e */ ItemDataItemElement, _]) | String] = js.native
+    var onItemClick: js.UndefOr[(js.Function1[/* e */ ItemDataItemElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[(js.Function1[/* e */ PreviousItem, _]) | String] = js.native
+    var onSelectionChanged: js.UndefOr[(js.Function1[/* e */ PreviousItem, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.opened]
       */
-    var opened: js.UndefOr[Boolean] = js.native
+    var opened: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.selectedItem]
       */
-    var selectedItem: js.UndefOr[String | Double | js.Any] = js.native
+    var selectedItem: js.UndefOr[String | Double | js.Any] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.selectedItemKey]
       */
-    var selectedItemKey: js.UndefOr[String | Double] = js.native
+    var selectedItemKey: js.UndefOr[String | Double] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.showArrowIcon]
       */
-    var showArrowIcon: js.UndefOr[Boolean] = js.native
+    var showArrowIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.splitButton]
       */
-    var splitButton: js.UndefOr[Boolean] = js.native
+    var splitButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.stylingMode]
       */
-    var stylingMode: js.UndefOr[text | outlined | contained] = js.native
+    var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.useSelectMode]
       */
-    var useSelectMode: js.UndefOr[Boolean] = js.native
+    var useSelectMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownButton.Options.wrapItemText]
       */
-    var wrapItemText: js.UndefOr[Boolean] = js.native
+    var wrapItemText: js.UndefOr[Boolean] = js.undefined
   }
   object dxDropDownButtonOptions {
     
@@ -9283,7 +9853,7 @@ object ui {
     implicit class dxDropDownButtonOptionsMutableBuilder[Self <: dxDropDownButtonOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[dxDropDownButtonItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[dxDropDownButtonItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -9309,7 +9879,7 @@ object ui {
       @scala.inline
       def setDropDownContentTemplate(
         value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-              /* data */ (js.Array[String | Double | _]) | DataSource, 
+              /* data */ (js.Array[String | Double | js.Any]) | DataSource, 
               /* contentElement */ dxElement, 
               String | Element | JQuery
             ])
@@ -9317,7 +9887,7 @@ object ui {
       
       @scala.inline
       def setDropDownContentTemplateFunction2(
-        value: (/* data */ (js.Array[String | Double | _]) | DataSource, /* contentElement */ dxElement) => String | Element | JQuery
+        value: (/* data */ (js.Array[String | Double | js.Any]) | DataSource, /* contentElement */ dxElement) => String | Element | JQuery
       ): Self = StObject.set(x, "dropDownContentTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -9354,7 +9924,7 @@ object ui {
       def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[dxDropDownButtonItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[dxDropDownButtonItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -9375,28 +9945,28 @@ object ui {
       def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
       @scala.inline
-      def setOnButtonClick(value: (js.Function1[/* e */ SelectedItem, _]) | String): Self = StObject.set(x, "onButtonClick", value.asInstanceOf[js.Any])
+      def setOnButtonClick(value: (js.Function1[/* e */ SelectedItem, js.Any]) | String): Self = StObject.set(x, "onButtonClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnButtonClickFunction1(value: /* e */ SelectedItem => _): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction1(value))
+      def setOnButtonClickFunction1(value: /* e */ SelectedItem => js.Any): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnButtonClickUndefined: Self = StObject.set(x, "onButtonClick", js.undefined)
       
       @scala.inline
-      def setOnItemClick(value: (js.Function1[/* e */ ItemDataItemElement, _]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
+      def setOnItemClick(value: (js.Function1[/* e */ ItemDataItemElement, js.Any]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnItemClickFunction1(value: /* e */ ItemDataItemElement => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnItemClickFunction1(value: /* e */ ItemDataItemElement => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: (js.Function1[/* e */ PreviousItem, _]) | String): Self = StObject.set(x, "onSelectionChanged", value.asInstanceOf[js.Any])
+      def setOnSelectionChanged(value: (js.Function1[/* e */ PreviousItem, js.Any]) | String): Self = StObject.set(x, "onSelectionChanged", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSelectionChangedFunction1(value: /* e */ PreviousItem => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChangedFunction1(value: /* e */ PreviousItem => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
@@ -9458,7 +10028,9 @@ object ui {
   }
   
   @js.native
-  trait dxDropDownEditor extends dxTextEditor {
+  trait dxDropDownEditor
+    extends StObject
+       with dxTextEditor {
     
     /**
       * [descr:dxDropDownEditor.close()]
@@ -9481,66 +10053,67 @@ object ui {
     def open(): Unit = js.native
   }
   
-  @js.native
-  trait dxDropDownEditorOptions[T] extends dxTextBoxOptions[T] {
+  trait dxDropDownEditorOptions[T]
+    extends StObject
+       with dxTextBoxOptions[T] {
     
     /**
       * [descr:dxDropDownEditor.Options.acceptCustomValue]
       */
-    var acceptCustomValue: js.UndefOr[Boolean] = js.native
+    var acceptCustomValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.applyValueMode]
       */
-    var applyValueMode: js.UndefOr[instantly | useButtons] = js.native
+    var applyValueMode: js.UndefOr[instantly | useButtons] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.buttons]
       */
     @JSName("buttons")
-    var buttons_dxDropDownEditorOptions: js.UndefOr[js.Array[clear | dropDown | dxTextEditorButton]] = js.native
+    var buttons_dxDropDownEditorOptions: js.UndefOr[js.Array[clear | dropDown | dxTextEditorButton]] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.deferRendering]
       */
-    var deferRendering: js.UndefOr[Boolean] = js.native
+    var deferRendering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.dropDownButtonTemplate]
       */
     var dropDownButtonTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.dropDownOptions]
       */
-    var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.native
+    var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.onClosed]
       */
-    var onClosed: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[T], _]] = js.native
+    var onClosed: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.onOpened]
       */
-    var onOpened: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[T], _]] = js.native
+    var onOpened: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.openOnFieldClick]
       */
-    var openOnFieldClick: js.UndefOr[Boolean] = js.native
+    var openOnFieldClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.opened]
       */
-    var opened: js.UndefOr[Boolean] = js.native
+    var opened: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownEditor.Options.showDropDownButton]
       */
-    var showDropDownButton: js.UndefOr[Boolean] = js.native
+    var showDropDownButton: js.UndefOr[Boolean] = js.undefined
   }
   object dxDropDownEditorOptions {
     
@@ -9551,7 +10124,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxDropDownEditorOptionsMutableBuilder[Self <: dxDropDownEditorOptions[_], T] (val x: Self with dxDropDownEditorOptions[T]) extends AnyVal {
+    implicit class dxDropDownEditorOptionsMutableBuilder[Self <: dxDropDownEditorOptions[?], T] (val x: Self & dxDropDownEditorOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAcceptCustomValue(value: Boolean): Self = StObject.set(x, "acceptCustomValue", value.asInstanceOf[js.Any])
@@ -9598,13 +10171,13 @@ object ui {
       def setDropDownOptionsUndefined: Self = StObject.set(x, "dropDownOptions", js.undefined)
       
       @scala.inline
-      def setOnClosed(value: /* e */ typings.devextreme.anon.`2`[T] => _): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
+      def setOnClosed(value: /* e */ typings.devextreme.anon.`2`[T] => js.Any): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
       
       @scala.inline
-      def setOnOpened(value: /* e */ typings.devextreme.anon.`2`[T] => _): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
+      def setOnOpened(value: /* e */ typings.devextreme.anon.`2`[T] => js.Any): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
@@ -9630,7 +10203,9 @@ object ui {
   }
   
   @js.native
-  trait dxDropDownList extends dxDropDownEditor {
+  trait dxDropDownList
+    extends StObject
+       with dxDropDownEditor {
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
@@ -9639,23 +10214,71 @@ object ui {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ @js.native
-  trait dxDropDownListOptions[T] extends dxDropDownEditorOptions[T] {
+  - typings.devextreme.mod.DevExpress.ui.WidgetOptions because var conflicts: activeStateEnabled, focusStateEnabled, hoverStateEnabled. Inlined accessKey, disabled, hint, onContentReady, tabIndex, visible
+  - typings.devextreme.mod.DevExpress.ui.EditorOptions because var conflicts: activeStateEnabled, focusStateEnabled, hoverStateEnabled, value. Inlined isValid, onValueChanged, readOnly, validationError, validationErrors, validationMessageMode, validationStatus
+  - typings.devextreme.mod.DevExpress.ui.dxTextEditorOptions because var conflicts: activeStateEnabled, buttons, value. Inlined focusStateEnabled, hoverStateEnabled, inputAttr, mask, maskChar, maskInvalidMessage, maskRules, name, onChange, onCopy, onCut, onEnterKey, onFocusIn, onFocusOut, onInput, onKeyDown, onKeyPress, onKeyUp, onPaste, placeholder, showClearButton, showMaskMode, spellcheck, stylingMode, text, useMaskedValue, valueChangeEvent
+  - typings.devextreme.mod.DevExpress.ui.dxTextBoxOptions because var conflicts: activeStateEnabled, buttons, value. Inlined maxLength, mode
+  - typings.devextreme.mod.DevExpress.ui.dxDropDownEditorOptions because var conflicts: value. Inlined acceptCustomValue, activeStateEnabled, applyValueMode, buttons, deferRendering, dropDownButtonTemplate, dropDownOptions, onClosed, onOpened, openOnFieldClick, opened, showDropDownButton */ trait dxDropDownListOptions[T]
+    extends StObject
+       with DataExpressionMixinOptions[T]
+       with DOMComponentOptions[T] {
     
     /**
-      * [descr:DataExpressionMixin.Options.dataSource]
+      * [descr:dxDropDownEditor.Options.acceptCustomValue]
       */
-    var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.native
+    var acceptCustomValue: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.displayExpr]
+      * [descr:Widget.Options.accessKey]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.activeStateEnabled]
+      */
+    var activeStateEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.applyValueMode]
+      */
+    var applyValueMode: js.UndefOr[instantly | useButtons] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.buttons]
+      */
+    var buttons: js.UndefOr[js.Array[clear | dropDown | dxTextEditorButton]] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.deferRendering]
+      */
+    var deferRendering: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.disabled]
+      */
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.displayValue]
       */
-    var displayValue: js.UndefOr[String] = js.native
+    var displayValue: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.dropDownButtonTemplate]
+      */
+    var dropDownButtonTemplate: js.UndefOr[
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
+      ] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.dropDownOptions]
+      */
+    var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.focusStateEnabled]
+      */
+    var focusStateEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.groupTemplate]
@@ -9667,95 +10290,290 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.grouped]
       */
-    var grouped: js.UndefOr[Boolean] = js.native
+    var grouped: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.itemTemplate]
+      * [descr:Widget.Options.hint]
       */
-    var itemTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-          /* itemData */ js.Any, 
-          /* itemIndex */ Double, 
-          /* itemElement */ dxElement, 
-          String | Element | JQuery
-        ])
-      ] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.items]
+      * [descr:dxTextEditor.Options.hoverStateEnabled]
       */
-    var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.native
+    var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.inputAttr]
+      */
+    var inputAttr: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.isValid]
+      */
+    var isValid: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.mask]
+      */
+    var mask: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.maskChar]
+      */
+    var maskChar: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.maskInvalidMessage]
+      */
+    var maskInvalidMessage: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.maskRules]
+      */
+    var maskRules: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * [descr:dxTextBox.Options.maxLength]
+      */
+    var maxLength: js.UndefOr[String | Double] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.minSearchLength]
       */
-    var minSearchLength: js.UndefOr[Double] = js.native
+    var minSearchLength: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * [descr:dxTextBox.Options.mode]
+      */
+    var mode: js.UndefOr[email | password | search | tel | text | url] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.name]
+      */
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.noDataText]
       */
-    var noDataText: js.UndefOr[String] = js.native
+    var noDataText: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onChange]
+      */
+    var onChange: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.onClosed]
+      */
+    var onClosed: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.onContentReady]
+      */
+    var onContentReady: js.UndefOr[js.Function1[/* e */ ElementModel[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onCopy]
+      */
+    var onCopy: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onCut]
+      */
+    var onCut: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onEnterKey]
+      */
+    var onEnterKey: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onFocusIn]
+      */
+    var onFocusIn: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onFocusOut]
+      */
+    var onFocusOut: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onInput]
+      */
+    var onInput: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.onItemClick]
       */
-    var onItemClick: js.UndefOr[js.Function1[/* e */ ItemElementItemIndex[T], _]] = js.native
+    var onItemClick: js.UndefOr[js.Function1[/* e */ ItemElementItemIndex[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onKeyDown]
+      */
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onKeyPress]
+      * @deprecated [depNote:dxTextEditor.Options.onKeyPress]
+      */
+    var onKeyPress: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onKeyUp]
+      */
+    var onKeyUp: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.onOpened]
+      */
+    var onOpened: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`2`[T], js.Any]] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.onPaste]
+      */
+    var onPaste: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ModelSelectedItem[T], _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ModelSelectedItem[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.onValueChanged]
       */
-    @JSName("onValueChanged")
-    var onValueChanged_dxDropDownListOptions: js.UndefOr[js.Function1[/* e */ ModelPreviousValue[T], _]] = js.native
+    var onValueChanged: js.UndefOr[
+        js.Function1[(/* e */ ModelPreviousValue[T]) | (/* e */ PreviousValue[T]), js.Any]
+      ] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.openOnFieldClick]
+      */
+    var openOnFieldClick: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxDropDownEditor.Options.opened]
+      */
+    var opened: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.placeholder]
+      */
+    var placeholder: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.readOnly]
+      */
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.searchEnabled]
       */
-    var searchEnabled: js.UndefOr[Boolean] = js.native
+    var searchEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.searchExpr]
       */
-    var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.native
+    var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.searchMode]
       */
-    var searchMode: js.UndefOr[contains | startswith] = js.native
+    var searchMode: js.UndefOr[contains | startswith] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.searchTimeout]
       */
-    var searchTimeout: js.UndefOr[Double] = js.native
+    var searchTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.selectedItem]
       */
-    var selectedItem: js.UndefOr[js.Any] = js.native
+    var selectedItem: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.showClearButton]
+      */
+    var showClearButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.showDataBeforeSearch]
       */
-    var showDataBeforeSearch: js.UndefOr[Boolean] = js.native
+    var showDataBeforeSearch: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:DataExpressionMixin.Options.valueExpr]
+      * [descr:dxDropDownEditor.Options.showDropDownButton]
       */
-    var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.native
+    var showDropDownButton: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.showMaskMode]
+      */
+    var showMaskMode: js.UndefOr[always | onFocus] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.spellcheck]
+      */
+    var spellcheck: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.stylingMode]
+      */
+    var stylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.tabIndex]
+      */
+    var tabIndex: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.text]
+      */
+    var text: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:dxTextEditor.Options.useMaskedValue]
+      */
+    var useMaskedValue: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationError]
+      */
+    var validationError: js.UndefOr[js.Any] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationErrors]
+      */
+    var validationErrors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationMessageMode]
+      */
+    var validationMessageMode: js.UndefOr[always | auto] = js.undefined
+    
+    /**
+      * [descr:Editor.Options.validationStatus]
+      */
+    var validationStatus: js.UndefOr[valid | invalid | pending] = js.undefined
+    
+    /**
+      * [descr:dxDropDownList.Options.valueChangeEvent]
+      */
+    var valueChangeEvent: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [descr:Widget.Options.visible]
+      */
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxDropDownList.Options.wrapItemText]
       */
-    var wrapItemText: js.UndefOr[Boolean] = js.native
+    var wrapItemText: js.UndefOr[Boolean] = js.undefined
   }
   object dxDropDownListOptions {
     
@@ -9766,31 +10584,81 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxDropDownListOptionsMutableBuilder[Self <: dxDropDownListOptions[_], T] (val x: Self with dxDropDownListOptions[T]) extends AnyVal {
+    implicit class dxDropDownListOptionsMutableBuilder[Self <: dxDropDownListOptions[?], T] (val x: Self & dxDropDownListOptions[T]) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setAcceptCustomValue(value: Boolean): Self = StObject.set(x, "acceptCustomValue", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+      def setAcceptCustomValueUndefined: Self = StObject.set(x, "acceptCustomValue", js.undefined)
       
       @scala.inline
-      def setDataSourceVarargs(value: (CollectionWidgetItem | js.Any)*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDisplayExpr(value: String | (js.Function1[/* item */ js.Any, String])): Self = StObject.set(x, "displayExpr", value.asInstanceOf[js.Any])
+      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
       @scala.inline
-      def setDisplayExprFunction1(value: /* item */ js.Any => String): Self = StObject.set(x, "displayExpr", js.Any.fromFunction1(value))
+      def setActiveStateEnabled(value: Boolean): Self = StObject.set(x, "activeStateEnabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDisplayExprUndefined: Self = StObject.set(x, "displayExpr", js.undefined)
+      def setActiveStateEnabledUndefined: Self = StObject.set(x, "activeStateEnabled", js.undefined)
+      
+      @scala.inline
+      def setApplyValueMode(value: instantly | useButtons): Self = StObject.set(x, "applyValueMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setApplyValueModeUndefined: Self = StObject.set(x, "applyValueMode", js.undefined)
+      
+      @scala.inline
+      def setButtons(value: js.Array[clear | dropDown | dxTextEditorButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      
+      @scala.inline
+      def setButtonsVarargs(value: (clear | dropDown | dxTextEditorButton)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      
+      @scala.inline
+      def setDeferRendering(value: Boolean): Self = StObject.set(x, "deferRendering", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDeferRenderingUndefined: Self = StObject.set(x, "deferRendering", js.undefined)
+      
+      @scala.inline
+      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
       def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisplayValueUndefined: Self = StObject.set(x, "displayValue", js.undefined)
+      
+      @scala.inline
+      def setDropDownButtonTemplate(
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
+      ): Self = StObject.set(x, "dropDownButtonTemplate", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDropDownButtonTemplateFunction2(value: (/* buttonData */ Icon, /* contentElement */ dxElement) => String | Element | JQuery): Self = StObject.set(x, "dropDownButtonTemplate", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDropDownButtonTemplateUndefined: Self = StObject.set(x, "dropDownButtonTemplate", js.undefined)
+      
+      @scala.inline
+      def setDropDownOptions(value: dxPopupOptions[dxPopup]): Self = StObject.set(x, "dropDownOptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDropDownOptionsUndefined: Self = StObject.set(x, "dropDownOptions", js.undefined)
+      
+      @scala.inline
+      def setFocusStateEnabled(value: Boolean): Self = StObject.set(x, "focusStateEnabled", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFocusStateEnabledUndefined: Self = StObject.set(x, "focusStateEnabled", js.undefined)
       
       @scala.inline
       def setGroupTemplate(
@@ -9817,31 +10685,58 @@ object ui {
       def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
       
       @scala.inline
-      def setItemTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-              /* itemData */ js.Any, 
-              /* itemIndex */ Double, 
-              /* itemElement */ dxElement, 
-              String | Element | JQuery
-            ])
-      ): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItemTemplateFunction3(
-        value: (/* itemData */ js.Any, /* itemIndex */ Double, /* itemElement */ dxElement) => String | Element | JQuery
-      ): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction3(value))
+      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
       @scala.inline
-      def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
+      def setHoverStateEnabled(value: Boolean): Self = StObject.set(x, "hoverStateEnabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItems(value: js.Array[CollectionWidgetItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setHoverStateEnabledUndefined: Self = StObject.set(x, "hoverStateEnabled", js.undefined)
       
       @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      def setInputAttr(value: js.Any): Self = StObject.set(x, "inputAttr", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItemsVarargs(value: (CollectionWidgetItem | js.Any)*): Self = StObject.set(x, "items", js.Array(value :_*))
+      def setInputAttrUndefined: Self = StObject.set(x, "inputAttr", js.undefined)
+      
+      @scala.inline
+      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+      
+      @scala.inline
+      def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
+      
+      @scala.inline
+      def setMaskInvalidMessage(value: String): Self = StObject.set(x, "maskInvalidMessage", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskInvalidMessageUndefined: Self = StObject.set(x, "maskInvalidMessage", js.undefined)
+      
+      @scala.inline
+      def setMaskRules(value: js.Any): Self = StObject.set(x, "maskRules", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaskRulesUndefined: Self = StObject.set(x, "maskRules", js.undefined)
+      
+      @scala.inline
+      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      @scala.inline
+      def setMaxLength(value: String | Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
       @scala.inline
       def setMinSearchLength(value: Double): Self = StObject.set(x, "minSearchLength", value.asInstanceOf[js.Any])
@@ -9850,28 +10745,148 @@ object ui {
       def setMinSearchLengthUndefined: Self = StObject.set(x, "minSearchLength", js.undefined)
       
       @scala.inline
+      def setMode(value: email | password | search | tel | text | url): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      @scala.inline
       def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
       @scala.inline
-      def setOnItemClick(value: /* e */ ItemElementItemIndex[T] => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnChange(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      @scala.inline
+      def setOnClosed(value: /* e */ typings.devextreme.anon.`2`[T] => js.Any): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
+      
+      @scala.inline
+      def setOnContentReady(value: /* e */ ElementModel[T] => js.Any): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
+      
+      @scala.inline
+      def setOnCopy(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      
+      @scala.inline
+      def setOnCut(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
+      
+      @scala.inline
+      def setOnEnterKey(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onEnterKey", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnEnterKeyUndefined: Self = StObject.set(x, "onEnterKey", js.undefined)
+      
+      @scala.inline
+      def setOnFocusIn(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onFocusIn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnFocusInUndefined: Self = StObject.set(x, "onFocusIn", js.undefined)
+      
+      @scala.inline
+      def setOnFocusOut(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnFocusOutUndefined: Self = StObject.set(x, "onFocusOut", js.undefined)
+      
+      @scala.inline
+      def setOnInput(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      
+      @scala.inline
+      def setOnItemClick(value: /* e */ ItemElementItemIndex[T] => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ ModelSelectedItem[T] => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnKeyDown(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      
+      @scala.inline
+      def setOnKeyPress(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      
+      @scala.inline
+      def setOnKeyUp(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      
+      @scala.inline
+      def setOnOpened(value: /* e */ typings.devextreme.anon.`2`[T] => js.Any): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
+      
+      @scala.inline
+      def setOnPaste(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
+      
+      @scala.inline
+      def setOnSelectionChanged(value: /* e */ ModelSelectedItem[T] => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnValueChanged(value: /* e */ ModelPreviousValue[T] => _): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      def setOnValueChanged(value: (/* e */ ModelPreviousValue[T]) | (/* e */ PreviousValue[T]) => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
+      
+      @scala.inline
+      def setOpenOnFieldClick(value: Boolean): Self = StObject.set(x, "openOnFieldClick", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOpenOnFieldClickUndefined: Self = StObject.set(x, "openOnFieldClick", js.undefined)
+      
+      @scala.inline
+      def setOpened(value: Boolean): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+      
+      @scala.inline
+      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      @scala.inline
+      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
       @scala.inline
       def setSearchEnabled(value: Boolean): Self = StObject.set(x, "searchEnabled", value.asInstanceOf[js.Any])
@@ -9907,19 +10922,97 @@ object ui {
       def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
       
       @scala.inline
+      def setShowClearButton(value: Boolean): Self = StObject.set(x, "showClearButton", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShowClearButtonUndefined: Self = StObject.set(x, "showClearButton", js.undefined)
+      
+      @scala.inline
       def setShowDataBeforeSearch(value: Boolean): Self = StObject.set(x, "showDataBeforeSearch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setShowDataBeforeSearchUndefined: Self = StObject.set(x, "showDataBeforeSearch", js.undefined)
       
       @scala.inline
-      def setValueExpr(value: String | (js.Function1[/* item */ js.Any, String | Double | Boolean])): Self = StObject.set(x, "valueExpr", value.asInstanceOf[js.Any])
+      def setShowDropDownButton(value: Boolean): Self = StObject.set(x, "showDropDownButton", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValueExprFunction1(value: /* item */ js.Any => String | Double | Boolean): Self = StObject.set(x, "valueExpr", js.Any.fromFunction1(value))
+      def setShowDropDownButtonUndefined: Self = StObject.set(x, "showDropDownButton", js.undefined)
       
       @scala.inline
-      def setValueExprUndefined: Self = StObject.set(x, "valueExpr", js.undefined)
+      def setShowMaskMode(value: always | onFocus): Self = StObject.set(x, "showMaskMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShowMaskModeUndefined: Self = StObject.set(x, "showMaskMode", js.undefined)
+      
+      @scala.inline
+      def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpellcheckUndefined: Self = StObject.set(x, "spellcheck", js.undefined)
+      
+      @scala.inline
+      def setStylingMode(value: outlined | underlined | filled): Self = StObject.set(x, "stylingMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStylingModeUndefined: Self = StObject.set(x, "stylingMode", js.undefined)
+      
+      @scala.inline
+      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      @scala.inline
+      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      
+      @scala.inline
+      def setUseMaskedValue(value: Boolean): Self = StObject.set(x, "useMaskedValue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUseMaskedValueUndefined: Self = StObject.set(x, "useMaskedValue", js.undefined)
+      
+      @scala.inline
+      def setValidationError(value: js.Any): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
+      
+      @scala.inline
+      def setValidationErrors(value: js.Array[js.Any]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+      
+      @scala.inline
+      def setValidationErrorsVarargs(value: js.Any*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+      
+      @scala.inline
+      def setValidationMessageMode(value: always | auto): Self = StObject.set(x, "validationMessageMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationMessageModeUndefined: Self = StObject.set(x, "validationMessageMode", js.undefined)
+      
+      @scala.inline
+      def setValidationStatus(value: valid | invalid | pending): Self = StObject.set(x, "validationStatus", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidationStatusUndefined: Self = StObject.set(x, "validationStatus", js.undefined)
+      
+      @scala.inline
+      def setValueChangeEvent(value: String): Self = StObject.set(x, "valueChangeEvent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValueChangeEventUndefined: Self = StObject.set(x, "valueChangeEvent", js.undefined)
+      
+      @scala.inline
+      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
       @scala.inline
       def setWrapItemText(value: Boolean): Self = StObject.set(x, "wrapItemText", value.asInstanceOf[js.Any])
@@ -9930,7 +11023,9 @@ object ui {
   }
   
   @js.native
-  trait dxFileManager extends Widget {
+  trait dxFileManager
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxFileManager.getCurrentDirectory()]
@@ -9940,15 +11035,14 @@ object ui {
     /**
       * [descr:dxFileManager.getSelectedItems()]
       */
-    def getSelectedItems(): js.Array[_] = js.native
+    def getSelectedItems(): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxFileManager.refresh()]
       */
-    def refresh(): Promise[_] with JQueryPromise[_] = js.native
+    def refresh(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   }
   
-  @js.native
   trait dxFileManagerContextMenu extends StObject {
     
     /**
@@ -9958,7 +11052,7 @@ object ui {
         js.Array[
           dxFileManagerContextMenuItem | create | upload | refresh | download | move | copy | rename | delete
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object dxFileManagerContextMenu {
     
@@ -9988,19 +11082,20 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxFileManagerContextMenuItem extends dxContextMenuItem {
+  trait dxFileManagerContextMenuItem
+    extends StObject
+       with dxContextMenuItem {
     
     /**
       * [descr:dxFileManagerContextMenuItem.items]
       */
     @JSName("items")
-    var items_dxFileManagerContextMenuItem: js.UndefOr[js.Array[dxFileManagerContextMenuItem]] = js.native
+    var items_dxFileManagerContextMenuItem: js.UndefOr[js.Array[dxFileManagerContextMenuItem]] = js.undefined
     
     /**
       * [descr:dxFileManagerContextMenuItem.name]
       */
-    var name: js.UndefOr[create | upload | refresh | download | move | copy | rename | delete | String] = js.native
+    var name: js.UndefOr[create | upload | refresh | download | move | copy | rename | delete | String] = js.undefined
   }
   object dxFileManagerContextMenuItem {
     
@@ -10030,63 +11125,62 @@ object ui {
     }
   }
   
-  @js.native
   trait dxFileManagerDetailsColumn extends StObject {
     
     /**
       * [descr:dxFileManagerDetailsColumn.alignment]
       */
-    var alignment: js.UndefOr[center | left | right] = js.native
+    var alignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.caption]
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.dataField]
       */
-    var dataField: js.UndefOr[String] = js.native
+    var dataField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.dataType]
       */
-    var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.native
+    var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.hidingPriority]
       */
-    var hidingPriority: js.UndefOr[Double] = js.native
+    var hidingPriority: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.sortIndex]
       */
-    var sortIndex: js.UndefOr[Double] = js.native
+    var sortIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.sortOrder]
       */
-    var sortOrder: js.UndefOr[asc | desc] = js.native
+    var sortOrder: js.UndefOr[asc | desc] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.visibleIndex]
       */
-    var visibleIndex: js.UndefOr[Double] = js.native
+    var visibleIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFileManagerDetailsColumn.width]
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object dxFileManagerDetailsColumn {
     
@@ -10167,28 +11261,29 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxFileManagerOptions extends WidgetOptions[dxFileManager] {
+  trait dxFileManagerOptions
+    extends StObject
+       with WidgetOptions[dxFileManager] {
     
     /**
       * [descr:dxFileManager.Options.allowedFileExtensions]
       */
-    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.native
+    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.contextMenu]
       */
-    var contextMenu: js.UndefOr[dxFileManagerContextMenu] = js.native
+    var contextMenu: js.UndefOr[dxFileManagerContextMenu] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.currentPath]
       */
-    var currentPath: js.UndefOr[String] = js.native
+    var currentPath: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.currentPathKeys]
       */
-    var currentPathKeys: js.UndefOr[js.Array[String]] = js.native
+    var currentPathKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.customizeDetailColumns]
@@ -10198,92 +11293,92 @@ object ui {
           /* columns */ js.Array[dxFileManagerDetailsColumn], 
           js.Array[dxFileManagerDetailsColumn]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.customizeThumbnail]
       */
-    var customizeThumbnail: js.UndefOr[js.Function1[/* fileSystemItem */ FileSystemItem, String]] = js.native
+    var customizeThumbnail: js.UndefOr[js.Function1[/* fileSystemItem */ FileSystemItem, String]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.fileSystemProvider]
       */
-    var fileSystemProvider: js.UndefOr[js.Any] = js.native
+    var fileSystemProvider: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.focusedItemKey]
       */
-    var focusedItemKey: js.UndefOr[String] = js.native
+    var focusedItemKey: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.itemView]
       */
-    var itemView: js.UndefOr[Details] = js.native
+    var itemView: js.UndefOr[Details] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.onContextMenuItemClick]
       */
-    var onContextMenuItemClick: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.FileSystemItem, _]] = js.native
+    var onContextMenuItemClick: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.FileSystemItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.onCurrentDirectoryChanged]
       */
-    var onCurrentDirectoryChanged: js.UndefOr[js.Function1[/* e */ Directory, _]] = js.native
+    var onCurrentDirectoryChanged: js.UndefOr[js.Function1[/* e */ Directory, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.onErrorOccurred]
       */
-    var onErrorOccurred: js.UndefOr[js.Function1[/* e */ ErrorCode, _]] = js.native
+    var onErrorOccurred: js.UndefOr[js.Function1[/* e */ ErrorCode, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.onFocusedItemChanged]
       */
-    var onFocusedItemChanged: js.UndefOr[js.Function1[/* e */ ItemItemElement, _]] = js.native
+    var onFocusedItemChanged: js.UndefOr[js.Function1[/* e */ ItemItemElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.onSelectedFileOpened]
       */
-    var onSelectedFileOpened: js.UndefOr[js.Function1[/* e */ File, _]] = js.native
+    var onSelectedFileOpened: js.UndefOr[js.Function1[/* e */ File, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ CurrentDeselectedItemKeys, _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ CurrentDeselectedItemKeys, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.onToolbarItemClick]
       */
-    var onToolbarItemClick: js.UndefOr[js.Function1[/* e */ ItemIndexModel, _]] = js.native
+    var onToolbarItemClick: js.UndefOr[js.Function1[/* e */ ItemIndexModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.permissions]
       */
-    var permissions: js.UndefOr[Copy] = js.native
+    var permissions: js.UndefOr[Copy] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.rootFolderName]
       */
-    var rootFolderName: js.UndefOr[String] = js.native
+    var rootFolderName: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.selectedItemKeys]
       */
-    var selectedItemKeys: js.UndefOr[js.Array[String]] = js.native
+    var selectedItemKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[multiple | single_] = js.native
+    var selectionMode: js.UndefOr[multiple | single_] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.toolbar]
       */
-    var toolbar: js.UndefOr[dxFileManagerToolbar] = js.native
+    var toolbar: js.UndefOr[dxFileManagerToolbar] = js.undefined
     
     /**
       * [descr:dxFileManager.Options.upload]
       */
-    var upload: js.UndefOr[ChunkSize] = js.native
+    var upload: js.UndefOr[ChunkSize] = js.undefined
   }
   object dxFileManagerOptions {
     
@@ -10357,43 +11452,43 @@ object ui {
       def setItemViewUndefined: Self = StObject.set(x, "itemView", js.undefined)
       
       @scala.inline
-      def setOnContextMenuItemClick(value: /* e */ typings.devextreme.anon.FileSystemItem => _): Self = StObject.set(x, "onContextMenuItemClick", js.Any.fromFunction1(value))
+      def setOnContextMenuItemClick(value: /* e */ typings.devextreme.anon.FileSystemItem => js.Any): Self = StObject.set(x, "onContextMenuItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContextMenuItemClickUndefined: Self = StObject.set(x, "onContextMenuItemClick", js.undefined)
       
       @scala.inline
-      def setOnCurrentDirectoryChanged(value: /* e */ Directory => _): Self = StObject.set(x, "onCurrentDirectoryChanged", js.Any.fromFunction1(value))
+      def setOnCurrentDirectoryChanged(value: /* e */ Directory => js.Any): Self = StObject.set(x, "onCurrentDirectoryChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCurrentDirectoryChangedUndefined: Self = StObject.set(x, "onCurrentDirectoryChanged", js.undefined)
       
       @scala.inline
-      def setOnErrorOccurred(value: /* e */ ErrorCode => _): Self = StObject.set(x, "onErrorOccurred", js.Any.fromFunction1(value))
+      def setOnErrorOccurred(value: /* e */ ErrorCode => js.Any): Self = StObject.set(x, "onErrorOccurred", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnErrorOccurredUndefined: Self = StObject.set(x, "onErrorOccurred", js.undefined)
       
       @scala.inline
-      def setOnFocusedItemChanged(value: /* e */ ItemItemElement => _): Self = StObject.set(x, "onFocusedItemChanged", js.Any.fromFunction1(value))
+      def setOnFocusedItemChanged(value: /* e */ ItemItemElement => js.Any): Self = StObject.set(x, "onFocusedItemChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedItemChangedUndefined: Self = StObject.set(x, "onFocusedItemChanged", js.undefined)
       
       @scala.inline
-      def setOnSelectedFileOpened(value: /* e */ File => _): Self = StObject.set(x, "onSelectedFileOpened", js.Any.fromFunction1(value))
+      def setOnSelectedFileOpened(value: /* e */ File => js.Any): Self = StObject.set(x, "onSelectedFileOpened", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectedFileOpenedUndefined: Self = StObject.set(x, "onSelectedFileOpened", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ CurrentDeselectedItemKeys => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ CurrentDeselectedItemKeys => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnToolbarItemClick(value: /* e */ ItemIndexModel => _): Self = StObject.set(x, "onToolbarItemClick", js.Any.fromFunction1(value))
+      def setOnToolbarItemClick(value: /* e */ ItemIndexModel => js.Any): Self = StObject.set(x, "onToolbarItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnToolbarItemClickUndefined: Self = StObject.set(x, "onToolbarItemClick", js.undefined)
@@ -10439,7 +11534,6 @@ object ui {
     }
   }
   
-  @js.native
   trait dxFileManagerToolbar extends StObject {
     
     /**
@@ -10449,7 +11543,7 @@ object ui {
         js.Array[
           dxFileManagerToolbarItem | showNavPane | create | upload | refresh | switchView | download | move | copy | rename | delete | clearSelection | separator
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFileManagerToolbar.items]
@@ -10458,7 +11552,7 @@ object ui {
         js.Array[
           dxFileManagerToolbarItem | showNavPane | create | upload | refresh | switchView | download | move | copy | rename | delete | clearSelection | separator
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object dxFileManagerToolbar {
     
@@ -10503,20 +11597,21 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxFileManagerToolbarItem extends dxToolbarItem {
+  trait dxFileManagerToolbarItem
+    extends StObject
+       with dxToolbarItem {
     
     /**
       * [descr:dxFileManagerToolbarItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileManagerToolbarItem.name]
       */
     var name: js.UndefOr[
         showNavPane | create | upload | refresh | switchView | download | move | copy | rename | delete | clearSelection | separator | String
-      ] = js.native
+      ] = js.undefined
   }
   object dxFileManagerToolbarItem {
     
@@ -10546,7 +11641,9 @@ object ui {
   }
   
   @js.native
-  trait dxFileUploader extends Editor {
+  trait dxFileUploader
+    extends StObject
+       with Editor {
     
     /**
       * [descr:dxFileUploader.abortUpload()]
@@ -10584,8 +11681,9 @@ object ui {
     def upload(file: typings.std.File): Unit = js.native
   }
   
-  @js.native
-  trait dxFileUploaderOptions extends EditorOptions[dxFileUploader] {
+  trait dxFileUploaderOptions
+    extends StObject
+       with EditorOptions[dxFileUploader] {
     
     /**
       * [descr:dxFileUploader.Options.abortUpload]
@@ -10594,165 +11692,165 @@ object ui {
         js.Function2[
           /* file */ typings.std.File, 
           /* uploadInfo */ js.UndefOr[UploadInfo], 
-          Promise[_] | JQueryPromise[_] | _
+          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.accept]
       */
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.allowCanceling]
       */
-    var allowCanceling: js.UndefOr[Boolean] = js.native
+    var allowCanceling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.allowedFileExtensions]
       */
-    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.native
+    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.chunkSize]
       */
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.dialogTrigger]
       */
-    var dialogTrigger: js.UndefOr[String | Element | JQuery] = js.native
+    var dialogTrigger: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.dropZone]
       */
-    var dropZone: js.UndefOr[String | Element | JQuery] = js.native
+    var dropZone: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.inputAttr]
       */
-    var inputAttr: js.UndefOr[js.Any] = js.native
+    var inputAttr: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.invalidFileExtensionMessage]
       */
-    var invalidFileExtensionMessage: js.UndefOr[String] = js.native
+    var invalidFileExtensionMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.invalidMaxFileSizeMessage]
       */
-    var invalidMaxFileSizeMessage: js.UndefOr[String] = js.native
+    var invalidMaxFileSizeMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.invalidMinFileSizeMessage]
       */
-    var invalidMinFileSizeMessage: js.UndefOr[String] = js.native
+    var invalidMinFileSizeMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.labelText]
       */
-    var labelText: js.UndefOr[String] = js.native
+    var labelText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.maxFileSize]
       */
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.minFileSize]
       */
-    var minFileSize: js.UndefOr[Double] = js.native
+    var minFileSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.multiple]
       */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onBeforeSend]
       */
-    var onBeforeSend: js.UndefOr[js.Function1[/* e */ Request, _]] = js.native
+    var onBeforeSend: js.UndefOr[js.Function1[/* e */ Request, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onDropZoneEnter]
       */
-    var onDropZoneEnter: js.UndefOr[js.Function1[/* e */ DropZoneElement, _]] = js.native
+    var onDropZoneEnter: js.UndefOr[js.Function1[/* e */ DropZoneElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onDropZoneLeave]
       */
-    var onDropZoneLeave: js.UndefOr[js.Function1[/* e */ DropZoneElement, _]] = js.native
+    var onDropZoneLeave: js.UndefOr[js.Function1[/* e */ DropZoneElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onFilesUploaded]
       */
-    var onFilesUploaded: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`4`, _]] = js.native
+    var onFilesUploaded: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`4`, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onProgress]
       */
-    var onProgress: js.UndefOr[js.Function1[/* e */ BytesLoaded, _]] = js.native
+    var onProgress: js.UndefOr[js.Function1[/* e */ BytesLoaded, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onUploadAborted]
       */
-    var onUploadAborted: js.UndefOr[js.Function1[/* e */ EventFile, _]] = js.native
+    var onUploadAborted: js.UndefOr[js.Function1[/* e */ EventFile, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onUploadError]
       */
-    var onUploadError: js.UndefOr[js.Function1[/* e */ ElementError, _]] = js.native
+    var onUploadError: js.UndefOr[js.Function1[/* e */ ElementError, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onUploadStarted]
       */
-    var onUploadStarted: js.UndefOr[js.Function1[/* e */ FileModel, _]] = js.native
+    var onUploadStarted: js.UndefOr[js.Function1[/* e */ FileModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onUploaded]
       */
-    var onUploaded: js.UndefOr[js.Function1[/* e */ EventFile, _]] = js.native
+    var onUploaded: js.UndefOr[js.Function1[/* e */ EventFile, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.onValueChanged]
       */
     @JSName("onValueChanged")
-    var onValueChanged_dxFileUploaderOptions: js.UndefOr[js.Function1[/* e */ PreviousValueValue, _]] = js.native
+    var onValueChanged_dxFileUploaderOptions: js.UndefOr[js.Function1[/* e */ PreviousValueValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.progress]
       */
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.readyToUploadMessage]
       */
-    var readyToUploadMessage: js.UndefOr[String] = js.native
+    var readyToUploadMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.selectButtonText]
       */
-    var selectButtonText: js.UndefOr[String] = js.native
+    var selectButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.showFileList]
       */
-    var showFileList: js.UndefOr[Boolean] = js.native
+    var showFileList: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadAbortedMessage]
       */
-    var uploadAbortedMessage: js.UndefOr[String] = js.native
+    var uploadAbortedMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadButtonText]
       */
-    var uploadButtonText: js.UndefOr[String] = js.native
+    var uploadButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadChunk]
@@ -10761,19 +11859,19 @@ object ui {
         js.Function2[
           /* file */ typings.std.File, 
           /* uploadInfo */ UploadInfo, 
-          Promise[_] | JQueryPromise[_] | _
+          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadCustomData]
       */
-    var uploadCustomData: js.UndefOr[js.Any] = js.native
+    var uploadCustomData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadFailedMessage]
       */
-    var uploadFailedMessage: js.UndefOr[String] = js.native
+    var uploadFailedMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadFile]
@@ -10782,40 +11880,40 @@ object ui {
         js.Function2[
           /* file */ typings.std.File, 
           /* progressCallback */ js.Function, 
-          Promise[_] | JQueryPromise[_] | _
+          Promise[js.Any] | JQueryPromise[js.Any] | js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadHeaders]
       */
-    var uploadHeaders: js.UndefOr[js.Any] = js.native
+    var uploadHeaders: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadMethod]
       */
-    var uploadMethod: js.UndefOr[POST | PUT] = js.native
+    var uploadMethod: js.UndefOr[POST | PUT] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadMode]
       */
-    var uploadMode: js.UndefOr[instantly | useButtons | useForm] = js.native
+    var uploadMode: js.UndefOr[instantly | useButtons | useForm] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadUrl]
       */
-    var uploadUrl: js.UndefOr[String] = js.native
+    var uploadUrl: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.uploadedMessage]
       */
-    var uploadedMessage: js.UndefOr[String] = js.native
+    var uploadedMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFileUploader.Options.value]
       */
     @JSName("value")
-    var value_dxFileUploaderOptions: js.UndefOr[js.Array[typings.std.File]] = js.native
+    var value_dxFileUploaderOptions: js.UndefOr[js.Array[typings.std.File]] = js.undefined
   }
   object dxFileUploaderOptions {
     
@@ -10830,7 +11928,7 @@ object ui {
       
       @scala.inline
       def setAbortUpload(
-        value: (/* file */ typings.std.File, /* uploadInfo */ js.UndefOr[UploadInfo]) => Promise[_] | JQueryPromise[_] | _
+        value: (/* file */ typings.std.File, /* uploadInfo */ js.UndefOr[UploadInfo]) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "abortUpload", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -10930,61 +12028,61 @@ object ui {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnBeforeSend(value: /* e */ Request => _): Self = StObject.set(x, "onBeforeSend", js.Any.fromFunction1(value))
+      def setOnBeforeSend(value: /* e */ Request => js.Any): Self = StObject.set(x, "onBeforeSend", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBeforeSendUndefined: Self = StObject.set(x, "onBeforeSend", js.undefined)
       
       @scala.inline
-      def setOnDropZoneEnter(value: /* e */ DropZoneElement => _): Self = StObject.set(x, "onDropZoneEnter", js.Any.fromFunction1(value))
+      def setOnDropZoneEnter(value: /* e */ DropZoneElement => js.Any): Self = StObject.set(x, "onDropZoneEnter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDropZoneEnterUndefined: Self = StObject.set(x, "onDropZoneEnter", js.undefined)
       
       @scala.inline
-      def setOnDropZoneLeave(value: /* e */ DropZoneElement => _): Self = StObject.set(x, "onDropZoneLeave", js.Any.fromFunction1(value))
+      def setOnDropZoneLeave(value: /* e */ DropZoneElement => js.Any): Self = StObject.set(x, "onDropZoneLeave", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDropZoneLeaveUndefined: Self = StObject.set(x, "onDropZoneLeave", js.undefined)
       
       @scala.inline
-      def setOnFilesUploaded(value: /* e */ typings.devextreme.anon.`4` => _): Self = StObject.set(x, "onFilesUploaded", js.Any.fromFunction1(value))
+      def setOnFilesUploaded(value: /* e */ typings.devextreme.anon.`4` => js.Any): Self = StObject.set(x, "onFilesUploaded", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFilesUploadedUndefined: Self = StObject.set(x, "onFilesUploaded", js.undefined)
       
       @scala.inline
-      def setOnProgress(value: /* e */ BytesLoaded => _): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      def setOnProgress(value: /* e */ BytesLoaded => js.Any): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
       @scala.inline
-      def setOnUploadAborted(value: /* e */ EventFile => _): Self = StObject.set(x, "onUploadAborted", js.Any.fromFunction1(value))
+      def setOnUploadAborted(value: /* e */ EventFile => js.Any): Self = StObject.set(x, "onUploadAborted", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUploadAbortedUndefined: Self = StObject.set(x, "onUploadAborted", js.undefined)
       
       @scala.inline
-      def setOnUploadError(value: /* e */ ElementError => _): Self = StObject.set(x, "onUploadError", js.Any.fromFunction1(value))
+      def setOnUploadError(value: /* e */ ElementError => js.Any): Self = StObject.set(x, "onUploadError", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUploadErrorUndefined: Self = StObject.set(x, "onUploadError", js.undefined)
       
       @scala.inline
-      def setOnUploadStarted(value: /* e */ FileModel => _): Self = StObject.set(x, "onUploadStarted", js.Any.fromFunction1(value))
+      def setOnUploadStarted(value: /* e */ FileModel => js.Any): Self = StObject.set(x, "onUploadStarted", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUploadStartedUndefined: Self = StObject.set(x, "onUploadStarted", js.undefined)
       
       @scala.inline
-      def setOnUploaded(value: /* e */ EventFile => _): Self = StObject.set(x, "onUploaded", js.Any.fromFunction1(value))
+      def setOnUploaded(value: /* e */ EventFile => js.Any): Self = StObject.set(x, "onUploaded", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUploadedUndefined: Self = StObject.set(x, "onUploaded", js.undefined)
       
       @scala.inline
-      def setOnValueChanged(value: /* e */ PreviousValueValue => _): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      def setOnValueChanged(value: /* e */ PreviousValueValue => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
@@ -11027,7 +12125,7 @@ object ui {
       
       @scala.inline
       def setUploadChunk(
-        value: (/* file */ typings.std.File, /* uploadInfo */ UploadInfo) => Promise[_] | JQueryPromise[_] | _
+        value: (/* file */ typings.std.File, /* uploadInfo */ UploadInfo) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "uploadChunk", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -11047,7 +12145,7 @@ object ui {
       
       @scala.inline
       def setUploadFile(
-        value: (/* file */ typings.std.File, /* progressCallback */ js.Function) => Promise[_] | JQueryPromise[_] | _
+        value: (/* file */ typings.std.File, /* progressCallback */ js.Function) => Promise[js.Any] | JQueryPromise[js.Any] | js.Any
       ): Self = StObject.set(x, "uploadFile", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -11095,15 +12193,16 @@ object ui {
   }
   
   @js.native
-  trait dxFilterBuilder extends Widget {
+  trait dxFilterBuilder
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxFilterBuilder.getFilterExpression()]
       */
-    def getFilterExpression(): String | js.Array[_] | js.Function = js.native
+    def getFilterExpression(): String | js.Array[js.Any] | js.Function = js.native
   }
   
-  @js.native
   trait dxFilterBuilderCustomOperation extends StObject {
     
     /**
@@ -11113,46 +12212,46 @@ object ui {
         js.Function2[
           /* filterValue */ js.Any, 
           /* field */ dxFilterBuilderField, 
-          String | js.Array[_] | js.Function
+          String | js.Array[js.Any] | js.Function
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFilterBuilderCustomOperation.caption]
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFilterBuilderCustomOperation.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ Field, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ Field, String]] = js.undefined
     
     /**
       * [descr:dxFilterBuilderCustomOperation.dataTypes]
       */
-    var dataTypes: js.UndefOr[js.Array[string_ | number | date | boolean_ | `object` | datetime]] = js.native
+    var dataTypes: js.UndefOr[js.Array[string_ | number | date | boolean_ | `object` | datetime]] = js.undefined
     
     /**
       * [descr:dxFilterBuilderCustomOperation.editorTemplate]
       */
     var editorTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* conditionInfo */ SetValue, /* container */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFilterBuilderCustomOperation.hasValue]
       */
-    var hasValue: js.UndefOr[Boolean] = js.native
+    var hasValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFilterBuilderCustomOperation.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFilterBuilderCustomOperation.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object dxFilterBuilderCustomOperation {
     
@@ -11167,7 +12266,7 @@ object ui {
       
       @scala.inline
       def setCalculateFilterExpression(
-        value: (/* filterValue */ js.Any, /* field */ dxFilterBuilderField) => String | js.Array[_] | js.Function
+        value: (/* filterValue */ js.Any, /* field */ dxFilterBuilderField) => String | js.Array[js.Any] | js.Function
       ): Self = StObject.set(x, "calculateFilterExpression", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -11225,7 +12324,6 @@ object ui {
     }
   }
   
-  @js.native
   trait dxFilterBuilderField extends StObject {
     
     /**
@@ -11235,34 +12333,34 @@ object ui {
         js.Function2[
           /* filterValue */ js.Any, 
           /* selectedFilterOperation */ String, 
-          String | js.Array[_] | js.Function
+          String | js.Array[js.Any] | js.Function
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.caption]
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ Value, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ Value, String]] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.dataField]
       */
-    var dataField: js.UndefOr[String] = js.native
+    var dataField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.dataType]
       */
-    var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.native
+    var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.editorOptions]
       */
-    var editorOptions: js.UndefOr[js.Any] = js.native
+    var editorOptions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.editorTemplate]
@@ -11273,12 +12371,12 @@ object ui {
           /* container */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.falseText]
       */
-    var falseText: js.UndefOr[String] = js.native
+    var falseText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.filterOperations]
@@ -11287,27 +12385,27 @@ object ui {
         js.Array[
           Equalssign | LessthansignGreaterthansign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | contains | endswith | isblank | isnotblank | notcontains | startswith | between | String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.lookup]
       */
-    var lookup: js.UndefOr[DisplayExpr] = js.native
+    var lookup: js.UndefOr[DisplayExpr] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFilterBuilderField.trueText]
       */
-    var trueText: js.UndefOr[String] = js.native
+    var trueText: js.UndefOr[String] = js.undefined
   }
   object dxFilterBuilderField {
     
@@ -11322,7 +12420,7 @@ object ui {
       
       @scala.inline
       def setCalculateFilterExpression(
-        value: (/* filterValue */ js.Any, /* selectedFilterOperation */ String) => String | js.Array[_] | js.Function
+        value: (/* filterValue */ js.Any, /* selectedFilterOperation */ String) => String | js.Array[js.Any] | js.Function
       ): Self = StObject.set(x, "calculateFilterExpression", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -11425,63 +12523,64 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxFilterBuilderOptions extends WidgetOptions[dxFilterBuilder] {
+  trait dxFilterBuilderOptions
+    extends StObject
+       with WidgetOptions[dxFilterBuilder] {
     
     /**
       * [descr:dxFilterBuilder.Options.allowHierarchicalFields]
       */
-    var allowHierarchicalFields: js.UndefOr[Boolean] = js.native
+    var allowHierarchicalFields: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.customOperations]
       */
-    var customOperations: js.UndefOr[js.Array[dxFilterBuilderCustomOperation]] = js.native
+    var customOperations: js.UndefOr[js.Array[dxFilterBuilderCustomOperation]] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.fields]
       */
-    var fields: js.UndefOr[js.Array[dxFilterBuilderField]] = js.native
+    var fields: js.UndefOr[js.Array[dxFilterBuilderField]] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.filterOperationDescriptions]
       */
-    var filterOperationDescriptions: js.UndefOr[Contains] = js.native
+    var filterOperationDescriptions: js.UndefOr[Contains] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.groupOperationDescriptions]
       */
-    var groupOperationDescriptions: js.UndefOr[And] = js.native
+    var groupOperationDescriptions: js.UndefOr[And] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.groupOperations]
       */
-    var groupOperations: js.UndefOr[js.Array[and | or | notAnd | notOr]] = js.native
+    var groupOperations: js.UndefOr[js.Array[and | or | notAnd | notOr]] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.maxGroupLevel]
       */
-    var maxGroupLevel: js.UndefOr[Double] = js.native
+    var maxGroupLevel: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.onEditorPrepared]
       */
-    var onEditorPrepared: js.UndefOr[js.Function1[/* e */ EditorElement, _]] = js.native
+    var onEditorPrepared: js.UndefOr[js.Function1[/* e */ EditorElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.onEditorPreparing]
       */
-    var onEditorPreparing: js.UndefOr[js.Function1[/* e */ EditorName, _]] = js.native
+    var onEditorPreparing: js.UndefOr[js.Function1[/* e */ EditorName, js.Any]] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.onValueChanged]
       */
-    var onValueChanged: js.UndefOr[js.Function1[/* e */ ElementModelPreviousValue, _]] = js.native
+    var onValueChanged: js.UndefOr[js.Function1[/* e */ ElementModelPreviousValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxFilterBuilder.Options.value]
       */
-    var value: js.UndefOr[String | js.Array[_] | js.Function] = js.native
+    var value: js.UndefOr[String | js.Array[js.Any] | js.Function] = js.undefined
   }
   object dxFilterBuilderOptions {
     
@@ -11546,25 +12645,25 @@ object ui {
       def setMaxGroupLevelUndefined: Self = StObject.set(x, "maxGroupLevel", js.undefined)
       
       @scala.inline
-      def setOnEditorPrepared(value: /* e */ EditorElement => _): Self = StObject.set(x, "onEditorPrepared", js.Any.fromFunction1(value))
+      def setOnEditorPrepared(value: /* e */ EditorElement => js.Any): Self = StObject.set(x, "onEditorPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditorPreparedUndefined: Self = StObject.set(x, "onEditorPrepared", js.undefined)
       
       @scala.inline
-      def setOnEditorPreparing(value: /* e */ EditorName => _): Self = StObject.set(x, "onEditorPreparing", js.Any.fromFunction1(value))
+      def setOnEditorPreparing(value: /* e */ EditorName => js.Any): Self = StObject.set(x, "onEditorPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditorPreparingUndefined: Self = StObject.set(x, "onEditorPreparing", js.undefined)
       
       @scala.inline
-      def setOnValueChanged(value: /* e */ ElementModelPreviousValue => _): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      def setOnValueChanged(value: /* e */ ElementModelPreviousValue => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
       
       @scala.inline
-      def setValue(value: String | js.Array[_] | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -11575,7 +12674,9 @@ object ui {
   }
   
   @js.native
-  trait dxForm extends Widget {
+  trait dxForm
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxForm.getButton(name)]
@@ -11617,7 +12718,7 @@ object ui {
     /**
       * [descr:dxForm.updateDimensions()]
       */
-    def updateDimensions(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def updateDimensions(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxForm.validate()]
@@ -11625,53 +12726,52 @@ object ui {
     def validate(): dxValidationGroupResult = js.native
   }
   
-  @js.native
   trait dxFormButtonItem extends StObject {
     
     /**
       * [descr:dxFormButtonItem.buttonOptions]
       */
-    var buttonOptions: js.UndefOr[dxButtonOptions] = js.native
+    var buttonOptions: js.UndefOr[dxButtonOptions] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.colSpan]
       */
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.itemType]
       */
-    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
+    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFormButtonItem.visibleIndex]
       */
-    var visibleIndex: js.UndefOr[Double] = js.native
+    var visibleIndex: js.UndefOr[Double] = js.undefined
   }
   object dxFormButtonItem {
     
@@ -11740,38 +12840,37 @@ object ui {
     }
   }
   
-  @js.native
   trait dxFormEmptyItem extends StObject {
     
     /**
       * [descr:dxFormEmptyItem.colSpan]
       */
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFormEmptyItem.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormEmptyItem.itemType]
       */
-    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
+    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
     
     /**
       * [descr:dxFormEmptyItem.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormEmptyItem.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFormEmptyItem.visibleIndex]
       */
-    var visibleIndex: js.UndefOr[Double] = js.native
+    var visibleIndex: js.UndefOr[Double] = js.undefined
   }
   object dxFormEmptyItem {
     
@@ -11822,43 +12921,42 @@ object ui {
     }
   }
   
-  @js.native
   trait dxFormGroupItem extends StObject {
     
     /**
       * [descr:dxFormGroupItem.alignItemLabels]
       */
-    var alignItemLabels: js.UndefOr[Boolean] = js.native
+    var alignItemLabels: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.caption]
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.colCount]
       */
-    var colCount: js.UndefOr[Double] = js.native
+    var colCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.colCountByScreen]
       */
-    var colCountByScreen: js.UndefOr[js.Any] = js.native
+    var colCountByScreen: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.colSpan]
       */
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.itemType]
       */
-    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
+    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.items]
@@ -11867,29 +12965,29 @@ object ui {
         js.Array[
           dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.template]
       */
     var template: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ FormData, /* itemElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFormGroupItem.visibleIndex]
       */
-    var visibleIndex: js.UndefOr[Double] = js.native
+    var visibleIndex: js.UndefOr[Double] = js.undefined
   }
   object dxFormGroupItem {
     
@@ -11990,28 +13088,29 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxFormOptions extends WidgetOptions[dxForm] {
+  trait dxFormOptions
+    extends StObject
+       with WidgetOptions[dxForm] {
     
     /**
       * [descr:dxForm.Options.alignItemLabels]
       */
-    var alignItemLabels: js.UndefOr[Boolean] = js.native
+    var alignItemLabels: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.alignItemLabelsInAllGroups]
       */
-    var alignItemLabelsInAllGroups: js.UndefOr[Boolean] = js.native
+    var alignItemLabelsInAllGroups: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.colCount]
       */
-    var colCount: js.UndefOr[Double | auto] = js.native
+    var colCount: js.UndefOr[Double | auto] = js.undefined
     
     /**
       * [descr:dxForm.Options.colCountByScreen]
       */
-    var colCountByScreen: js.UndefOr[js.Any] = js.native
+    var colCountByScreen: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxForm.Options.customizeItem]
@@ -12019,14 +13118,14 @@ object ui {
     var customizeItem: js.UndefOr[
         js.Function1[
           /* item */ dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxForm.Options.formData]
       */
-    var formData: js.UndefOr[js.Any] = js.native
+    var formData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxForm.Options.items]
@@ -12035,82 +13134,82 @@ object ui {
         js.Array[
           dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxForm.Options.labelLocation]
       */
-    var labelLocation: js.UndefOr[left | right | top] = js.native
+    var labelLocation: js.UndefOr[left | right | top] = js.undefined
     
     /**
       * [descr:dxForm.Options.minColWidth]
       */
-    var minColWidth: js.UndefOr[Double] = js.native
+    var minColWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxForm.Options.onEditorEnterKey]
       */
-    var onEditorEnterKey: js.UndefOr[js.Function1[/* e */ ComponentDataField, _]] = js.native
+    var onEditorEnterKey: js.UndefOr[js.Function1[/* e */ ComponentDataField, js.Any]] = js.undefined
     
     /**
       * [descr:dxForm.Options.onFieldDataChanged]
       */
-    var onFieldDataChanged: js.UndefOr[js.Function1[/* e */ DataFieldElement, _]] = js.native
+    var onFieldDataChanged: js.UndefOr[js.Function1[/* e */ DataFieldElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxForm.Options.optionalMark]
       */
-    var optionalMark: js.UndefOr[String] = js.native
+    var optionalMark: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxForm.Options.readOnly]
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.requiredMark]
       */
-    var requiredMark: js.UndefOr[String] = js.native
+    var requiredMark: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxForm.Options.requiredMessage]
       */
-    var requiredMessage: js.UndefOr[String] = js.native
+    var requiredMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxForm.Options.screenByWidth]
       */
-    var screenByWidth: js.UndefOr[js.Function] = js.native
+    var screenByWidth: js.UndefOr[js.Function] = js.undefined
     
     /**
       * [descr:dxForm.Options.scrollingEnabled]
       */
-    var scrollingEnabled: js.UndefOr[Boolean] = js.native
+    var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.showColonAfterLabel]
       */
-    var showColonAfterLabel: js.UndefOr[Boolean] = js.native
+    var showColonAfterLabel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.showOptionalMark]
       */
-    var showOptionalMark: js.UndefOr[Boolean] = js.native
+    var showOptionalMark: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.showRequiredMark]
       */
-    var showRequiredMark: js.UndefOr[Boolean] = js.native
+    var showRequiredMark: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.showValidationSummary]
       */
-    var showValidationSummary: js.UndefOr[Boolean] = js.native
+    var showValidationSummary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxForm.Options.validationGroup]
       */
-    var validationGroup: js.UndefOr[String] = js.native
+    var validationGroup: js.UndefOr[String] = js.undefined
   }
   object dxFormOptions {
     
@@ -12149,7 +13248,7 @@ object ui {
       
       @scala.inline
       def setCustomizeItem(
-        value: /* item */ dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem => _
+        value: /* item */ dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem => js.Any
       ): Self = StObject.set(x, "customizeItem", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -12189,13 +13288,13 @@ object ui {
       def setMinColWidthUndefined: Self = StObject.set(x, "minColWidth", js.undefined)
       
       @scala.inline
-      def setOnEditorEnterKey(value: /* e */ ComponentDataField => _): Self = StObject.set(x, "onEditorEnterKey", js.Any.fromFunction1(value))
+      def setOnEditorEnterKey(value: /* e */ ComponentDataField => js.Any): Self = StObject.set(x, "onEditorEnterKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditorEnterKeyUndefined: Self = StObject.set(x, "onEditorEnterKey", js.undefined)
       
       @scala.inline
-      def setOnFieldDataChanged(value: /* e */ DataFieldElement => _): Self = StObject.set(x, "onFieldDataChanged", js.Any.fromFunction1(value))
+      def setOnFieldDataChanged(value: /* e */ DataFieldElement => js.Any): Self = StObject.set(x, "onFieldDataChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFieldDataChangedUndefined: Self = StObject.set(x, "onFieldDataChanged", js.undefined)
@@ -12268,60 +13367,59 @@ object ui {
     }
   }
   
-  @js.native
   trait dxFormSimpleItem extends StObject {
     
     /**
       * [descr:dxFormSimpleItem.colSpan]
       */
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.dataField]
       */
-    var dataField: js.UndefOr[String] = js.native
+    var dataField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.editorOptions]
       */
-    var editorOptions: js.UndefOr[js.Any] = js.native
+    var editorOptions: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.editorType]
       */
     var editorType: js.UndefOr[
         typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxCalendar | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxColorBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxDropDownBox | typings.devextreme.devextremeStrings.dxHtmlEditor | typings.devextreme.devextremeStrings.dxLookup | typings.devextreme.devextremeStrings.dxNumberBox | typings.devextreme.devextremeStrings.dxRadioGroup | typings.devextreme.devextremeStrings.dxRangeSlider | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxSlider | typings.devextreme.devextremeStrings.dxSwitch | typings.devextreme.devextremeStrings.dxTagBox | typings.devextreme.devextremeStrings.dxTextArea | typings.devextreme.devextremeStrings.dxTextBox
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.helpText]
       */
-    var helpText: js.UndefOr[String] = js.native
+    var helpText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.isRequired]
       */
-    var isRequired: js.UndefOr[Boolean] = js.native
+    var isRequired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.itemType]
       */
-    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
+    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.label]
       */
-    var label: js.UndefOr[Location] = js.native
+    var label: js.UndefOr[Location] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.template]
@@ -12332,7 +13430,7 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.validationRules]
@@ -12341,17 +13439,17 @@ object ui {
         js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFormSimpleItem.visibleIndex]
       */
-    var visibleIndex: js.UndefOr[Double] = js.native
+    var visibleIndex: js.UndefOr[Double] = js.undefined
   }
   object dxFormSimpleItem {
     
@@ -12472,48 +13570,47 @@ object ui {
     }
   }
   
-  @js.native
   trait dxFormTabbedItem extends StObject {
     
     /**
       * [descr:dxFormTabbedItem.colSpan]
       */
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFormTabbedItem.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormTabbedItem.itemType]
       */
-    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
+    var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
     
     /**
       * [descr:dxFormTabbedItem.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFormTabbedItem.tabPanelOptions]
       */
-    var tabPanelOptions: js.UndefOr[dxTabPanelOptions] = js.native
+    var tabPanelOptions: js.UndefOr[dxTabPanelOptions] = js.undefined
     
     /**
       * [descr:dxFormTabbedItem.tabs]
       */
-    var tabs: js.UndefOr[js.Array[AlignItemLabels]] = js.native
+    var tabs: js.UndefOr[js.Array[AlignItemLabels]] = js.undefined
     
     /**
       * [descr:dxFormTabbedItem.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFormTabbedItem.visibleIndex]
       */
-    var visibleIndex: js.UndefOr[Double] = js.native
+    var visibleIndex: js.UndefOr[Double] = js.undefined
   }
   object dxFormTabbedItem {
     
@@ -12580,36 +13677,39 @@ object ui {
   }
   
   @js.native
-  trait dxGallery extends CollectionWidget {
+  trait dxGallery
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxGallery.goToItem(itemIndex, animation)]
       */
-    def goToItem(itemIndex: Double, animation: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def goToItem(itemIndex: Double, animation: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxGallery.nextItem(animation)]
       */
-    def nextItem(animation: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def nextItem(animation: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxGallery.prevItem(animation)]
       */
-    def prevItem(animation: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def prevItem(animation: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxGalleryItem extends CollectionWidgetItem {
+  trait dxGalleryItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxGalleryItem.imageAlt]
       */
-    var imageAlt: js.UndefOr[String] = js.native
+    var imageAlt: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxGalleryItem.imageSrc]
       */
-    var imageSrc: js.UndefOr[String] = js.native
+    var imageSrc: js.UndefOr[String] = js.undefined
   }
   object dxGalleryItem {
     
@@ -12638,75 +13738,78 @@ object ui {
   
   type dxGalleryItemTemplate = dxGalleryItem
   
-  @js.native
-  trait dxGalleryOptions extends CollectionWidgetOptions[dxGallery] {
+  trait dxGalleryOptions
+    extends StObject
+       with CollectionWidgetOptions[dxGallery] {
     
     /**
       * [descr:dxGallery.Options.animationDuration]
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxGallery.Options.animationEnabled]
       */
-    var animationEnabled: js.UndefOr[Boolean] = js.native
+    var animationEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGallery.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxGalleryOptions: js.UndefOr[String | (js.Array[String | dxGalleryItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxGalleryOptions: js.UndefOr[
+        String | (js.Array[String | dxGalleryItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxGallery.Options.indicatorEnabled]
       */
-    var indicatorEnabled: js.UndefOr[Boolean] = js.native
+    var indicatorEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGallery.Options.initialItemWidth]
       */
-    var initialItemWidth: js.UndefOr[Double] = js.native
+    var initialItemWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxGallery.Options.items]
       */
     @JSName("items")
-    var items_dxGalleryOptions: js.UndefOr[js.Array[String | dxGalleryItem | _]] = js.native
+    var items_dxGalleryOptions: js.UndefOr[js.Array[String | dxGalleryItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxGallery.Options.loop]
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGallery.Options.showIndicator]
       */
-    var showIndicator: js.UndefOr[Boolean] = js.native
+    var showIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGallery.Options.showNavButtons]
       */
-    var showNavButtons: js.UndefOr[Boolean] = js.native
+    var showNavButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGallery.Options.slideshowDelay]
       */
-    var slideshowDelay: js.UndefOr[Double] = js.native
+    var slideshowDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxGallery.Options.stretchImages]
       */
-    var stretchImages: js.UndefOr[Boolean] = js.native
+    var stretchImages: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGallery.Options.swipeEnabled]
       */
-    var swipeEnabled: js.UndefOr[Boolean] = js.native
+    var swipeEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGallery.Options.wrapAround]
       */
-    var wrapAround: js.UndefOr[Boolean] = js.native
+    var wrapAround: js.UndefOr[Boolean] = js.undefined
   }
   object dxGalleryOptions {
     
@@ -12732,7 +13835,7 @@ object ui {
       def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxGalleryItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxGalleryItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -12753,7 +13856,7 @@ object ui {
       def setInitialItemWidthUndefined: Self = StObject.set(x, "initialItemWidth", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | dxGalleryItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxGalleryItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -12806,7 +13909,9 @@ object ui {
   }
   
   @js.native
-  trait dxGantt extends Widget {
+  trait dxGantt
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxGantt.assignResourceToTask(resourceKey, taskKey)]
@@ -12851,27 +13956,27 @@ object ui {
     /**
       * [descr:dxGantt.getTaskResources(key)]
       */
-    def getTaskResources(key: js.Any): js.Array[_] = js.native
+    def getTaskResources(key: js.Any): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxGantt.getVisibleDependencyKeys()]
       */
-    def getVisibleDependencyKeys(): js.Array[_] = js.native
+    def getVisibleDependencyKeys(): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxGantt.getVisibleResourceAssignmentKeys()]
       */
-    def getVisibleResourceAssignmentKeys(): js.Array[_] = js.native
+    def getVisibleResourceAssignmentKeys(): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxGantt.getVisibleResourceKeys()]
       */
-    def getVisibleResourceKeys(): js.Array[_] = js.native
+    def getVisibleResourceKeys(): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxGantt.getVisibleTaskKeys()]
       */
-    def getVisibleTaskKeys(): js.Array[_] = js.native
+    def getVisibleTaskKeys(): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxGantt.insertDependency(data)]
@@ -12882,7 +13987,7 @@ object ui {
       * [descr:dxGantt.insertResource(data, taskKeys)]
       */
     def insertResource(data: js.Any): Unit = js.native
-    def insertResource(data: js.Any, taskKeys: js.Array[_]): Unit = js.native
+    def insertResource(data: js.Any, taskKeys: js.Array[js.Any]): Unit = js.native
     
     /**
       * [descr:dxGantt.insertTask(data)]
@@ -12900,13 +14005,12 @@ object ui {
     def updateTask(key: js.Any, data: js.Any): Unit = js.native
   }
   
-  @js.native
   trait dxGanttContextMenu extends StObject {
     
     /**
       * [descr:dxGanttContextMenu.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGanttContextMenu.items]
@@ -12915,7 +14019,7 @@ object ui {
         js.Array[
           dxGanttContextMenuItem | undo | redo | expandAll | collapseAll | addTask | deleteTask | zoomIn | zoomOut | deleteDependency | taskDetails
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object dxGanttContextMenu {
     
@@ -12951,15 +14055,16 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxGanttContextMenuItem extends dxContextMenuItem {
+  trait dxGanttContextMenuItem
+    extends StObject
+       with dxContextMenuItem {
     
     /**
       * [descr:dxGanttContextMenuItem.name]
       */
     var name: js.UndefOr[
         undo | redo | expandAll | collapseAll | addTask | deleteTask | zoomIn | zoomOut | deleteDependency | taskDetails | String
-      ] = js.native
+      ] = js.undefined
   }
   object dxGanttContextMenuItem {
     
@@ -12982,190 +14087,191 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxGanttOptions extends WidgetOptions[dxGantt] {
+  trait dxGanttOptions
+    extends StObject
+       with WidgetOptions[dxGantt] {
     
     /**
       * [descr:dxGantt.Options.allowSelection]
       */
-    var allowSelection: js.UndefOr[Boolean] = js.native
+    var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGantt.Options.columns]
       */
-    var columns: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.native
+    var columns: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.contextMenu]
       */
-    var contextMenu: js.UndefOr[dxGanttContextMenu] = js.native
+    var contextMenu: js.UndefOr[dxGanttContextMenu] = js.undefined
     
     /**
       * [descr:dxGantt.Options.dependencies]
       */
-    var dependencies: js.UndefOr[KeyExpr] = js.native
+    var dependencies: js.UndefOr[KeyExpr] = js.undefined
     
     /**
       * [descr:dxGantt.Options.editing]
       */
-    var editing: js.UndefOr[AllowDependencyAdding] = js.native
+    var editing: js.UndefOr[AllowDependencyAdding] = js.undefined
     
     /**
       * [descr:dxGantt.Options.firstDayOfWeek]
       */
-    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onContextMenuPreparing]
       */
-    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ TargetKey, _]] = js.native
+    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ TargetKey, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onCustomCommand]
       */
-    var onCustomCommand: js.UndefOr[js.Function1[/* e */ ComponentElementName, _]] = js.native
+    var onCustomCommand: js.UndefOr[js.Function1[/* e */ ComponentElementName, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onDependencyDeleting]
       */
-    var onDependencyDeleting: js.UndefOr[js.Function1[/* e */ Values, _]] = js.native
+    var onDependencyDeleting: js.UndefOr[js.Function1[/* e */ Values, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onDependencyInserting]
       */
-    var onDependencyInserting: js.UndefOr[js.Function1[/* e */ ModelValues, _]] = js.native
+    var onDependencyInserting: js.UndefOr[js.Function1[/* e */ ModelValues, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onResourceAssigning]
       */
-    var onResourceAssigning: js.UndefOr[js.Function1[/* e */ ModelValues, _]] = js.native
+    var onResourceAssigning: js.UndefOr[js.Function1[/* e */ ModelValues, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onResourceDeleting]
       */
-    var onResourceDeleting: js.UndefOr[js.Function1[/* e */ Values, _]] = js.native
+    var onResourceDeleting: js.UndefOr[js.Function1[/* e */ Values, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onResourceInserting]
       */
-    var onResourceInserting: js.UndefOr[js.Function1[/* e */ ModelValues, _]] = js.native
+    var onResourceInserting: js.UndefOr[js.Function1[/* e */ ModelValues, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onResourceUnassigning]
       */
-    var onResourceUnassigning: js.UndefOr[js.Function1[/* e */ Values, _]] = js.native
+    var onResourceUnassigning: js.UndefOr[js.Function1[/* e */ Values, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ SelectedRowKey, _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ SelectedRowKey, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onTaskClick]
       */
-    var onTaskClick: js.UndefOr[js.Function1[/* e */ EventKey, _]] = js.native
+    var onTaskClick: js.UndefOr[js.Function1[/* e */ EventKey, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onTaskDblClick]
       */
-    var onTaskDblClick: js.UndefOr[js.Function1[/* e */ KeyModel, _]] = js.native
+    var onTaskDblClick: js.UndefOr[js.Function1[/* e */ KeyModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onTaskDeleting]
       */
-    var onTaskDeleting: js.UndefOr[js.Function1[/* e */ Values, _]] = js.native
+    var onTaskDeleting: js.UndefOr[js.Function1[/* e */ Values, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onTaskEditDialogShowing]
       */
-    var onTaskEditDialogShowing: js.UndefOr[js.Function1[/* e */ HiddenFields, _]] = js.native
+    var onTaskEditDialogShowing: js.UndefOr[js.Function1[/* e */ HiddenFields, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onTaskInserting]
       */
-    var onTaskInserting: js.UndefOr[js.Function1[/* e */ ModelValues, _]] = js.native
+    var onTaskInserting: js.UndefOr[js.Function1[/* e */ ModelValues, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onTaskMoving]
       */
-    var onTaskMoving: js.UndefOr[js.Function1[/* e */ NewValues, _]] = js.native
+    var onTaskMoving: js.UndefOr[js.Function1[/* e */ NewValues, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.onTaskUpdating]
       */
-    var onTaskUpdating: js.UndefOr[js.Function1[/* e */ NewValues, _]] = js.native
+    var onTaskUpdating: js.UndefOr[js.Function1[/* e */ NewValues, js.Any]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.resourceAssignments]
       */
-    var resourceAssignments: js.UndefOr[ResourceIdExpr] = js.native
+    var resourceAssignments: js.UndefOr[ResourceIdExpr] = js.undefined
     
     /**
       * [descr:dxGantt.Options.resources]
       */
-    var resources: js.UndefOr[ColorExpr] = js.native
+    var resources: js.UndefOr[ColorExpr] = js.undefined
     
     /**
       * [descr:dxGantt.Options.rootValue]
       */
-    var rootValue: js.UndefOr[js.Any] = js.native
+    var rootValue: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxGantt.Options.scaleType]
       */
-    var scaleType: js.UndefOr[auto | minutes | hours | days | weeks | months | quarters | years] = js.native
+    var scaleType: js.UndefOr[auto | minutes | hours | days | weeks | months | quarters | years] = js.undefined
     
     /**
       * [descr:dxGantt.Options.selectedRowKey]
       */
-    var selectedRowKey: js.UndefOr[js.Any] = js.native
+    var selectedRowKey: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxGantt.Options.showResources]
       */
-    var showResources: js.UndefOr[Boolean] = js.native
+    var showResources: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGantt.Options.showRowLines]
       */
-    var showRowLines: js.UndefOr[Boolean] = js.native
+    var showRowLines: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxGantt.Options.stripLines]
       */
-    var stripLines: js.UndefOr[js.Array[dxGanttStripLine]] = js.native
+    var stripLines: js.UndefOr[js.Array[dxGanttStripLine]] = js.undefined
     
     /**
       * [descr:dxGantt.Options.taskListWidth]
       */
-    var taskListWidth: js.UndefOr[Double] = js.native
+    var taskListWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxGantt.Options.taskTitlePosition]
       */
-    var taskTitlePosition: js.UndefOr[inside | outside | none] = js.native
+    var taskTitlePosition: js.UndefOr[inside | outside | none] = js.undefined
     
     /**
       * [descr:dxGantt.Options.taskTooltipContentTemplate]
       */
     var taskTooltipContentTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxElement, /* task */ js.Any, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxElement, /* task */ js.Any, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxGantt.Options.tasks]
       */
-    var tasks: js.UndefOr[EndExpr] = js.native
+    var tasks: js.UndefOr[EndExpr] = js.undefined
     
     /**
       * [descr:dxGantt.Options.toolbar]
       */
-    var toolbar: js.UndefOr[dxGanttToolbar] = js.native
+    var toolbar: js.UndefOr[dxGanttToolbar] = js.undefined
     
     /**
       * [descr:dxGantt.Options.validation]
       */
-    var validation: js.UndefOr[AutoUpdateParentTasks] = js.native
+    var validation: js.UndefOr[AutoUpdateParentTasks] = js.undefined
   }
   object dxGanttOptions {
     
@@ -13218,97 +14324,97 @@ object ui {
       def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
       @scala.inline
-      def setOnContextMenuPreparing(value: /* e */ TargetKey => _): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
+      def setOnContextMenuPreparing(value: /* e */ TargetKey => js.Any): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
       
       @scala.inline
-      def setOnCustomCommand(value: /* e */ ComponentElementName => _): Self = StObject.set(x, "onCustomCommand", js.Any.fromFunction1(value))
+      def setOnCustomCommand(value: /* e */ ComponentElementName => js.Any): Self = StObject.set(x, "onCustomCommand", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCustomCommandUndefined: Self = StObject.set(x, "onCustomCommand", js.undefined)
       
       @scala.inline
-      def setOnDependencyDeleting(value: /* e */ Values => _): Self = StObject.set(x, "onDependencyDeleting", js.Any.fromFunction1(value))
+      def setOnDependencyDeleting(value: /* e */ Values => js.Any): Self = StObject.set(x, "onDependencyDeleting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDependencyDeletingUndefined: Self = StObject.set(x, "onDependencyDeleting", js.undefined)
       
       @scala.inline
-      def setOnDependencyInserting(value: /* e */ ModelValues => _): Self = StObject.set(x, "onDependencyInserting", js.Any.fromFunction1(value))
+      def setOnDependencyInserting(value: /* e */ ModelValues => js.Any): Self = StObject.set(x, "onDependencyInserting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDependencyInsertingUndefined: Self = StObject.set(x, "onDependencyInserting", js.undefined)
       
       @scala.inline
-      def setOnResourceAssigning(value: /* e */ ModelValues => _): Self = StObject.set(x, "onResourceAssigning", js.Any.fromFunction1(value))
+      def setOnResourceAssigning(value: /* e */ ModelValues => js.Any): Self = StObject.set(x, "onResourceAssigning", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResourceAssigningUndefined: Self = StObject.set(x, "onResourceAssigning", js.undefined)
       
       @scala.inline
-      def setOnResourceDeleting(value: /* e */ Values => _): Self = StObject.set(x, "onResourceDeleting", js.Any.fromFunction1(value))
+      def setOnResourceDeleting(value: /* e */ Values => js.Any): Self = StObject.set(x, "onResourceDeleting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResourceDeletingUndefined: Self = StObject.set(x, "onResourceDeleting", js.undefined)
       
       @scala.inline
-      def setOnResourceInserting(value: /* e */ ModelValues => _): Self = StObject.set(x, "onResourceInserting", js.Any.fromFunction1(value))
+      def setOnResourceInserting(value: /* e */ ModelValues => js.Any): Self = StObject.set(x, "onResourceInserting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResourceInsertingUndefined: Self = StObject.set(x, "onResourceInserting", js.undefined)
       
       @scala.inline
-      def setOnResourceUnassigning(value: /* e */ Values => _): Self = StObject.set(x, "onResourceUnassigning", js.Any.fromFunction1(value))
+      def setOnResourceUnassigning(value: /* e */ Values => js.Any): Self = StObject.set(x, "onResourceUnassigning", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResourceUnassigningUndefined: Self = StObject.set(x, "onResourceUnassigning", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ SelectedRowKey => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ SelectedRowKey => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnTaskClick(value: /* e */ EventKey => _): Self = StObject.set(x, "onTaskClick", js.Any.fromFunction1(value))
+      def setOnTaskClick(value: /* e */ EventKey => js.Any): Self = StObject.set(x, "onTaskClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTaskClickUndefined: Self = StObject.set(x, "onTaskClick", js.undefined)
       
       @scala.inline
-      def setOnTaskDblClick(value: /* e */ KeyModel => _): Self = StObject.set(x, "onTaskDblClick", js.Any.fromFunction1(value))
+      def setOnTaskDblClick(value: /* e */ KeyModel => js.Any): Self = StObject.set(x, "onTaskDblClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTaskDblClickUndefined: Self = StObject.set(x, "onTaskDblClick", js.undefined)
       
       @scala.inline
-      def setOnTaskDeleting(value: /* e */ Values => _): Self = StObject.set(x, "onTaskDeleting", js.Any.fromFunction1(value))
+      def setOnTaskDeleting(value: /* e */ Values => js.Any): Self = StObject.set(x, "onTaskDeleting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTaskDeletingUndefined: Self = StObject.set(x, "onTaskDeleting", js.undefined)
       
       @scala.inline
-      def setOnTaskEditDialogShowing(value: /* e */ HiddenFields => _): Self = StObject.set(x, "onTaskEditDialogShowing", js.Any.fromFunction1(value))
+      def setOnTaskEditDialogShowing(value: /* e */ HiddenFields => js.Any): Self = StObject.set(x, "onTaskEditDialogShowing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTaskEditDialogShowingUndefined: Self = StObject.set(x, "onTaskEditDialogShowing", js.undefined)
       
       @scala.inline
-      def setOnTaskInserting(value: /* e */ ModelValues => _): Self = StObject.set(x, "onTaskInserting", js.Any.fromFunction1(value))
+      def setOnTaskInserting(value: /* e */ ModelValues => js.Any): Self = StObject.set(x, "onTaskInserting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTaskInsertingUndefined: Self = StObject.set(x, "onTaskInserting", js.undefined)
       
       @scala.inline
-      def setOnTaskMoving(value: /* e */ NewValues => _): Self = StObject.set(x, "onTaskMoving", js.Any.fromFunction1(value))
+      def setOnTaskMoving(value: /* e */ NewValues => js.Any): Self = StObject.set(x, "onTaskMoving", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTaskMovingUndefined: Self = StObject.set(x, "onTaskMoving", js.undefined)
       
       @scala.inline
-      def setOnTaskUpdating(value: /* e */ NewValues => _): Self = StObject.set(x, "onTaskUpdating", js.Any.fromFunction1(value))
+      def setOnTaskUpdating(value: /* e */ NewValues => js.Any): Self = StObject.set(x, "onTaskUpdating", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTaskUpdatingUndefined: Self = StObject.set(x, "onTaskUpdating", js.undefined)
@@ -13378,11 +14484,11 @@ object ui {
       
       @scala.inline
       def setTaskTooltipContentTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxElement, /* task */ js.Any, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxElement, /* task */ js.Any, js.Any])
       ): Self = StObject.set(x, "taskTooltipContentTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTaskTooltipContentTemplateFunction2(value: (/* container */ dxElement, /* task */ js.Any) => _): Self = StObject.set(x, "taskTooltipContentTemplate", js.Any.fromFunction2(value))
+      def setTaskTooltipContentTemplateFunction2(value: (/* container */ dxElement, /* task */ js.Any) => js.Any): Self = StObject.set(x, "taskTooltipContentTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTaskTooltipContentTemplateUndefined: Self = StObject.set(x, "taskTooltipContentTemplate", js.undefined)
@@ -13407,28 +14513,27 @@ object ui {
     }
   }
   
-  @js.native
   trait dxGanttStripLine extends StObject {
     
     /**
       * [descr:dxGanttStripLine.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxGanttStripLine.end]
       */
-    var end: js.UndefOr[Date | Double | String | (js.Function0[Date | Double | String])] = js.native
+    var end: js.UndefOr[Date | Double | String | (js.Function0[Date | Double | String])] = js.undefined
     
     /**
       * [descr:dxGanttStripLine.start]
       */
-    var start: js.UndefOr[Date | Double | String | (js.Function0[Date | Double | String])] = js.native
+    var start: js.UndefOr[Date | Double | String | (js.Function0[Date | Double | String])] = js.undefined
     
     /**
       * [descr:dxGanttStripLine.title]
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object dxGanttStripLine {
     
@@ -13473,7 +14578,6 @@ object ui {
     }
   }
   
-  @js.native
   trait dxGanttToolbar extends StObject {
     
     /**
@@ -13483,7 +14587,7 @@ object ui {
         js.Array[
           dxGanttToolbarItem | separator | undo | redo | expandAll | collapseAll | addTask | deleteTask | zoomIn | zoomOut
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object dxGanttToolbar {
     
@@ -13513,15 +14617,16 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxGanttToolbarItem extends dxToolbarItem {
+  trait dxGanttToolbarItem
+    extends StObject
+       with dxToolbarItem {
     
     /**
       * [descr:dxGanttToolbarItem.name]
       */
     var name: js.UndefOr[
         separator | undo | redo | expandAll | collapseAll | addTask | deleteTask | zoomIn | zoomOut | String
-      ] = js.native
+      ] = js.undefined
   }
   object dxGanttToolbarItem {
     
@@ -13545,7 +14650,9 @@ object ui {
   }
   
   @js.native
-  trait dxHtmlEditor extends Editor {
+  trait dxHtmlEditor
+    extends StObject
+       with Editor {
     
     /**
       * [descr:dxHtmlEditor.clearHistory()]
@@ -13743,18 +14850,17 @@ object ui {
     def undo(): Unit = js.native
   }
   
-  @js.native
   trait dxHtmlEditorMediaResizing extends StObject {
     
     /**
       * [descr:dxHtmlEditorMediaResizing.allowedTargets]
       */
-    var allowedTargets: js.UndefOr[js.Array[String]] = js.native
+    var allowedTargets: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMediaResizing.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
   }
   object dxHtmlEditorMediaResizing {
     
@@ -13784,18 +14890,17 @@ object ui {
     }
   }
   
-  @js.native
   trait dxHtmlEditorMention extends StObject {
     
     /**
       * [descr:dxHtmlEditorMention.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[String] | DataSource | DataSourceOptions] = js.native
+    var dataSource: js.UndefOr[js.Array[String] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.displayExpr]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
+    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.itemTemplate]
@@ -13807,39 +14912,39 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.marker]
       */
-    var marker: js.UndefOr[String] = js.native
+    var marker: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.minSearchLength]
       */
-    var minSearchLength: js.UndefOr[Double] = js.native
+    var minSearchLength: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.searchExpr]
       */
-    var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.native
+    var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.searchTimeout]
       */
-    var searchTimeout: js.UndefOr[Double] = js.native
+    var searchTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.template]
       */
     var template: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* mentionData */ Id, /* contentElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxHtmlEditorMention.valueExpr]
       */
-    var valueExpr: js.UndefOr[String | js.Function] = js.native
+    var valueExpr: js.UndefOr[String | js.Function] = js.undefined
   }
   object dxHtmlEditorMention {
     
@@ -13934,58 +15039,59 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxHtmlEditorOptions extends EditorOptions[dxHtmlEditor] {
+  trait dxHtmlEditorOptions
+    extends StObject
+       with EditorOptions[dxHtmlEditor] {
     
     /**
       * [descr:dxHtmlEditor.Options.customizeModules]
       */
-    var customizeModules: js.UndefOr[js.Function1[/* config */ js.Any, _]] = js.native
+    var customizeModules: js.UndefOr[js.Function1[/* config */ js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.mediaResizing]
       */
-    var mediaResizing: js.UndefOr[dxHtmlEditorMediaResizing] = js.native
+    var mediaResizing: js.UndefOr[dxHtmlEditorMediaResizing] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.mentions]
       */
-    var mentions: js.UndefOr[js.Array[dxHtmlEditorMention]] = js.native
+    var mentions: js.UndefOr[js.Array[dxHtmlEditorMention]] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.onFocusIn]
       */
-    var onFocusIn: js.UndefOr[js.Function1[/* e */ ComponentElementEvent, _]] = js.native
+    var onFocusIn: js.UndefOr[js.Function1[/* e */ ComponentElementEvent, js.Any]] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.onFocusOut]
       */
-    var onFocusOut: js.UndefOr[js.Function1[/* e */ ComponentElementEvent, _]] = js.native
+    var onFocusOut: js.UndefOr[js.Function1[/* e */ ComponentElementEvent, js.Any]] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.placeholder]
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.toolbar]
       */
-    var toolbar: js.UndefOr[dxHtmlEditorToolbar] = js.native
+    var toolbar: js.UndefOr[dxHtmlEditorToolbar] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.valueType]
       */
-    var valueType: js.UndefOr[html | markdown] = js.native
+    var valueType: js.UndefOr[html | markdown] = js.undefined
     
     /**
       * [descr:dxHtmlEditor.Options.variables]
       */
-    var variables: js.UndefOr[dxHtmlEditorVariables] = js.native
+    var variables: js.UndefOr[dxHtmlEditorVariables] = js.undefined
   }
   object dxHtmlEditorOptions {
     
@@ -13999,7 +15105,7 @@ object ui {
     implicit class dxHtmlEditorOptionsMutableBuilder[Self <: dxHtmlEditorOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCustomizeModules(value: /* config */ js.Any => _): Self = StObject.set(x, "customizeModules", js.Any.fromFunction1(value))
+      def setCustomizeModules(value: /* config */ js.Any => js.Any): Self = StObject.set(x, "customizeModules", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeModulesUndefined: Self = StObject.set(x, "customizeModules", js.undefined)
@@ -14026,13 +15132,13 @@ object ui {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnFocusIn(value: /* e */ ComponentElementEvent => _): Self = StObject.set(x, "onFocusIn", js.Any.fromFunction1(value))
+      def setOnFocusIn(value: /* e */ ComponentElementEvent => js.Any): Self = StObject.set(x, "onFocusIn", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusInUndefined: Self = StObject.set(x, "onFocusIn", js.undefined)
       
       @scala.inline
-      def setOnFocusOut(value: /* e */ ComponentElementEvent => _): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
+      def setOnFocusOut(value: /* e */ ComponentElementEvent => js.Any): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusOutUndefined: Self = StObject.set(x, "onFocusOut", js.undefined)
@@ -14063,13 +15169,12 @@ object ui {
     }
   }
   
-  @js.native
   trait dxHtmlEditorToolbar extends StObject {
     
     /**
       * [descr:dxHtmlEditorToolbar.container]
       */
-    var container: js.UndefOr[String | Element | JQuery] = js.native
+    var container: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:dxHtmlEditorToolbar.items]
@@ -14078,12 +15183,12 @@ object ui {
         js.Array[
           dxHtmlEditorToolbarItem | background | bold | color | font | italic | link | image | size | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear | insertTable | insertRowAbove | insertRowBelow | insertColumnLeft | insertColumnRight | deleteColumn | deleteRow | deleteTable
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxHtmlEditorToolbar.multiline]
       */
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
   }
   object dxHtmlEditorToolbar {
     
@@ -14125,20 +15230,21 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxHtmlEditorToolbarItem extends dxToolbarItem {
+  trait dxHtmlEditorToolbarItem
+    extends StObject
+       with dxToolbarItem {
     
     /**
       * [descr:dxHtmlEditorToolbarItem.formatName]
       */
     var formatName: js.UndefOr[
         background | bold | color | font | italic | link | image | size | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear | insertTable | insertRowAbove | insertRowBelow | insertColumnLeft | insertColumnRight | deleteColumn | deleteRow | deleteTable | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxHtmlEditorToolbarItem.formatValues]
       */
-    var formatValues: js.UndefOr[js.Array[String | Double | Boolean]] = js.native
+    var formatValues: js.UndefOr[js.Array[String | Double | Boolean]] = js.undefined
   }
   object dxHtmlEditorToolbarItem {
     
@@ -14170,18 +15276,17 @@ object ui {
     }
   }
   
-  @js.native
   trait dxHtmlEditorVariables extends StObject {
     
     /**
       * [descr:dxHtmlEditorVariables.dataSource]
       */
-    var dataSource: js.UndefOr[String | js.Array[String] | DataSource | DataSourceOptions] = js.native
+    var dataSource: js.UndefOr[String | js.Array[String] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:dxHtmlEditorVariables.escapeChar]
       */
-    var escapeChar: js.UndefOr[String | js.Array[String]] = js.native
+    var escapeChar: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object dxHtmlEditorVariables {
     
@@ -14215,7 +15320,9 @@ object ui {
   }
   
   @js.native
-  trait dxList extends CollectionWidget {
+  trait dxList
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxList.clientHeight()]
@@ -14225,22 +15332,22 @@ object ui {
     /**
       * [descr:dxList.collapseGroup(groupIndex)]
       */
-    def collapseGroup(groupIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def collapseGroup(groupIndex: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxList.deleteItem(itemElement)]
       */
-    def deleteItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def deleteItem(itemIndex: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def deleteItem(itemElement: Element): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def deleteItem(itemIndex: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxList.deleteItem(itemIndex)]
       */
-    def deleteItem(itemIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def deleteItem(itemIndex: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxList.expandGroup(groupIndex)]
       */
-    def expandGroup(groupIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def expandGroup(groupIndex: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxList.isItemSelected(itemElement)]
@@ -14260,14 +15367,14 @@ object ui {
     /**
       * [descr:dxList.reorderItem(itemElement, toItemElement)]
       */
-    def reorderItem(itemElement: Element, toItemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def reorderItem(itemIndex: js.Any, toItemIndex: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def reorderItem(itemIndex: js.Any, toItemIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def reorderItem(itemIndex: Double, toItemIndex: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def reorderItem(itemElement: Element, toItemElement: Element): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def reorderItem(itemIndex: js.Any, toItemIndex: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def reorderItem(itemIndex: js.Any, toItemIndex: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def reorderItem(itemIndex: Double, toItemIndex: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxList.reorderItem(itemIndex, toItemIndex)]
       */
-    def reorderItem(itemIndex: Double, toItemIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def reorderItem(itemIndex: Double, toItemIndex: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxList.scrollBy(distance)]
@@ -14332,31 +15439,32 @@ object ui {
     /**
       * [descr:dxList.updateDimensions()]
       */
-    def updateDimensions(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def updateDimensions(): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxListItem extends CollectionWidgetItem {
+  trait dxListItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxListItem.badge]
       */
-    var badge: js.UndefOr[String] = js.native
+    var badge: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxListItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxListItem.key]
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxListItem.showChevron]
       */
-    var showChevron: js.UndefOr[Boolean] = js.native
+    var showChevron: js.UndefOr[Boolean] = js.undefined
   }
   object dxListItem {
     
@@ -14397,36 +15505,38 @@ object ui {
   
   type dxListItemTemplate = dxListItem
   
-  @js.native
   trait dxListOptions
-    extends CollectionWidgetOptions[dxList]
+    extends StObject
+       with CollectionWidgetOptions[dxList]
        with SearchBoxMixinOptions[dxList] {
     
     /**
       * [descr:dxList.Options.allowItemDeleting]
       */
-    var allowItemDeleting: js.UndefOr[Boolean] = js.native
+    var allowItemDeleting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.bounceEnabled]
       */
-    var bounceEnabled: js.UndefOr[Boolean] = js.native
+    var bounceEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.collapsibleGroups]
       */
-    var collapsibleGroups: js.UndefOr[Boolean] = js.native
+    var collapsibleGroups: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxListOptions: js.UndefOr[String | (js.Array[String | dxListItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxListOptions: js.UndefOr[
+        String | (js.Array[String | dxListItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxList.Options.displayExpr]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
+    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
     
     /**
       * [descr:dxList.Options.groupTemplate]
@@ -14438,186 +15548,186 @@ object ui {
           /* groupElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxList.Options.grouped]
       */
-    var grouped: js.UndefOr[Boolean] = js.native
+    var grouped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.indicateLoading]
       */
-    var indicateLoading: js.UndefOr[Boolean] = js.native
+    var indicateLoading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.itemDeleteMode]
       */
-    var itemDeleteMode: js.UndefOr[context | slideButton | slideItem | static | swipe | toggle] = js.native
+    var itemDeleteMode: js.UndefOr[context | slideButton | slideItem | static | swipe | toggle] = js.undefined
     
     /**
       * [descr:dxList.Options.itemDragging]
       */
-    var itemDragging: js.UndefOr[dxSortableOptions] = js.native
+    var itemDragging: js.UndefOr[dxSortableOptions] = js.undefined
     
     /**
       * [descr:dxList.Options.items]
       */
     @JSName("items")
-    var items_dxListOptions: js.UndefOr[js.Array[String | dxListItem | _]] = js.native
+    var items_dxListOptions: js.UndefOr[js.Array[String | dxListItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.menuItems]
       */
-    var menuItems: js.UndefOr[js.Array[Action]] = js.native
+    var menuItems: js.UndefOr[js.Array[Action]] = js.undefined
     
     /**
       * [descr:dxList.Options.menuMode]
       */
-    var menuMode: js.UndefOr[context | slide] = js.native
+    var menuMode: js.UndefOr[context | slide] = js.undefined
     
     /**
       * [descr:dxList.Options.nextButtonText]
       */
-    var nextButtonText: js.UndefOr[String] = js.native
+    var nextButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxList.Options.onGroupRendered]
       */
-    var onGroupRendered: js.UndefOr[js.Function1[/* e */ GroupData, _]] = js.native
+    var onGroupRendered: js.UndefOr[js.Function1[/* e */ GroupData, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onItemClick]
       */
     @JSName("onItemClick")
-    var onItemClick_dxListOptions: js.UndefOr[(js.Function1[/* e */ ElementEventItemData, _]) | String] = js.native
+    var onItemClick_dxListOptions: js.UndefOr[(js.Function1[/* e */ ElementEventItemData, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxList.Options.onItemContextMenu]
       */
     @JSName("onItemContextMenu")
-    var onItemContextMenu_dxListOptions: js.UndefOr[js.Function1[/* e */ ElementEventItemData, _]] = js.native
+    var onItemContextMenu_dxListOptions: js.UndefOr[js.Function1[/* e */ ElementEventItemData, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onItemDeleted]
       */
-    var onItemDeleted: js.UndefOr[js.Function1[/* e */ ElementItemData, _]] = js.native
+    var onItemDeleted: js.UndefOr[js.Function1[/* e */ ElementItemData, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onItemDeleting]
       */
-    var onItemDeleting: js.UndefOr[js.Function1[/* e */ ComponentElementItemData, _]] = js.native
+    var onItemDeleting: js.UndefOr[js.Function1[/* e */ ComponentElementItemData, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onItemHold]
       */
     @JSName("onItemHold")
-    var onItemHold_dxListOptions: js.UndefOr[js.Function1[/* e */ ElementEventItemData, _]] = js.native
+    var onItemHold_dxListOptions: js.UndefOr[js.Function1[/* e */ ElementEventItemData, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onItemReordered]
       */
-    var onItemReordered: js.UndefOr[js.Function1[/* e */ ToIndex, _]] = js.native
+    var onItemReordered: js.UndefOr[js.Function1[/* e */ ToIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onItemSwipe]
       */
-    var onItemSwipe: js.UndefOr[js.Function1[/* e */ Direction, _]] = js.native
+    var onItemSwipe: js.UndefOr[js.Function1[/* e */ Direction, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onPageLoading]
       */
-    var onPageLoading: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`5`, _]] = js.native
+    var onPageLoading: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`5`, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onPullRefresh]
       */
-    var onPullRefresh: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`5`, _]] = js.native
+    var onPullRefresh: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`5`, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onScroll]
       */
-    var onScroll: js.UndefOr[js.Function1[/* e */ ReachedBottom, _]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* e */ ReachedBottom, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.onSelectAllValueChanged]
       */
-    var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ ModelValue, _]] = js.native
+    var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ ModelValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxList.Options.pageLoadMode]
       */
-    var pageLoadMode: js.UndefOr[nextButton | scrollBottom] = js.native
+    var pageLoadMode: js.UndefOr[nextButton | scrollBottom] = js.undefined
     
     /**
       * [descr:dxList.Options.pageLoadingText]
       */
-    var pageLoadingText: js.UndefOr[String] = js.native
+    var pageLoadingText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxList.Options.pullRefreshEnabled]
       */
-    var pullRefreshEnabled: js.UndefOr[Boolean] = js.native
+    var pullRefreshEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.pulledDownText]
       */
-    var pulledDownText: js.UndefOr[String] = js.native
+    var pulledDownText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxList.Options.pullingDownText]
       */
-    var pullingDownText: js.UndefOr[String] = js.native
+    var pullingDownText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxList.Options.refreshingText]
       */
-    var refreshingText: js.UndefOr[String] = js.native
+    var refreshingText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxList.Options.repaintChangesOnly]
       */
-    var repaintChangesOnly: js.UndefOr[Boolean] = js.native
+    var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.scrollByContent]
       */
-    var scrollByContent: js.UndefOr[Boolean] = js.native
+    var scrollByContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.scrollByThumb]
       */
-    var scrollByThumb: js.UndefOr[Boolean] = js.native
+    var scrollByThumb: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.scrollingEnabled]
       */
-    var scrollingEnabled: js.UndefOr[Boolean] = js.native
+    var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.selectAllMode]
       */
-    var selectAllMode: js.UndefOr[allPages | page] = js.native
+    var selectAllMode: js.UndefOr[allPages | page] = js.undefined
     
     /**
       * [descr:dxList.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[all | multiple | none | single_] = js.native
+    var selectionMode: js.UndefOr[all | multiple | none | single_] = js.undefined
     
     /**
       * [descr:dxList.Options.showScrollbar]
       */
-    var showScrollbar: js.UndefOr[always | never | onHover | onScroll] = js.native
+    var showScrollbar: js.UndefOr[always | never | onHover | onScroll] = js.undefined
     
     /**
       * [descr:dxList.Options.showSelectionControls]
       */
-    var showSelectionControls: js.UndefOr[Boolean] = js.native
+    var showSelectionControls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxList.Options.useNativeScrolling]
       */
-    var useNativeScrolling: js.UndefOr[Boolean] = js.native
+    var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
   }
   object dxListOptions {
     
@@ -14649,7 +15759,7 @@ object ui {
       def setCollapsibleGroupsUndefined: Self = StObject.set(x, "collapsibleGroups", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxListItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxListItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -14709,7 +15819,7 @@ object ui {
       def setItemDraggingUndefined: Self = StObject.set(x, "itemDragging", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | dxListItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxListItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -14739,76 +15849,76 @@ object ui {
       def setNextButtonTextUndefined: Self = StObject.set(x, "nextButtonText", js.undefined)
       
       @scala.inline
-      def setOnGroupRendered(value: /* e */ GroupData => _): Self = StObject.set(x, "onGroupRendered", js.Any.fromFunction1(value))
+      def setOnGroupRendered(value: /* e */ GroupData => js.Any): Self = StObject.set(x, "onGroupRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnGroupRenderedUndefined: Self = StObject.set(x, "onGroupRendered", js.undefined)
       
       @scala.inline
-      def setOnItemClick(value: (js.Function1[/* e */ ElementEventItemData, _]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
+      def setOnItemClick(value: (js.Function1[/* e */ ElementEventItemData, js.Any]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnItemClickFunction1(value: /* e */ ElementEventItemData => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnItemClickFunction1(value: /* e */ ElementEventItemData => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnItemContextMenu(value: /* e */ ElementEventItemData => _): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction1(value))
+      def setOnItemContextMenu(value: /* e */ ElementEventItemData => js.Any): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
       
       @scala.inline
-      def setOnItemDeleted(value: /* e */ ElementItemData => _): Self = StObject.set(x, "onItemDeleted", js.Any.fromFunction1(value))
+      def setOnItemDeleted(value: /* e */ ElementItemData => js.Any): Self = StObject.set(x, "onItemDeleted", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemDeletedUndefined: Self = StObject.set(x, "onItemDeleted", js.undefined)
       
       @scala.inline
-      def setOnItemDeleting(value: /* e */ ComponentElementItemData => _): Self = StObject.set(x, "onItemDeleting", js.Any.fromFunction1(value))
+      def setOnItemDeleting(value: /* e */ ComponentElementItemData => js.Any): Self = StObject.set(x, "onItemDeleting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemDeletingUndefined: Self = StObject.set(x, "onItemDeleting", js.undefined)
       
       @scala.inline
-      def setOnItemHold(value: /* e */ ElementEventItemData => _): Self = StObject.set(x, "onItemHold", js.Any.fromFunction1(value))
+      def setOnItemHold(value: /* e */ ElementEventItemData => js.Any): Self = StObject.set(x, "onItemHold", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemHoldUndefined: Self = StObject.set(x, "onItemHold", js.undefined)
       
       @scala.inline
-      def setOnItemReordered(value: /* e */ ToIndex => _): Self = StObject.set(x, "onItemReordered", js.Any.fromFunction1(value))
+      def setOnItemReordered(value: /* e */ ToIndex => js.Any): Self = StObject.set(x, "onItemReordered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemReorderedUndefined: Self = StObject.set(x, "onItemReordered", js.undefined)
       
       @scala.inline
-      def setOnItemSwipe(value: /* e */ Direction => _): Self = StObject.set(x, "onItemSwipe", js.Any.fromFunction1(value))
+      def setOnItemSwipe(value: /* e */ Direction => js.Any): Self = StObject.set(x, "onItemSwipe", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemSwipeUndefined: Self = StObject.set(x, "onItemSwipe", js.undefined)
       
       @scala.inline
-      def setOnPageLoading(value: /* e */ typings.devextreme.anon.`5` => _): Self = StObject.set(x, "onPageLoading", js.Any.fromFunction1(value))
+      def setOnPageLoading(value: /* e */ typings.devextreme.anon.`5` => js.Any): Self = StObject.set(x, "onPageLoading", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPageLoadingUndefined: Self = StObject.set(x, "onPageLoading", js.undefined)
       
       @scala.inline
-      def setOnPullRefresh(value: /* e */ typings.devextreme.anon.`5` => _): Self = StObject.set(x, "onPullRefresh", js.Any.fromFunction1(value))
+      def setOnPullRefresh(value: /* e */ typings.devextreme.anon.`5` => js.Any): Self = StObject.set(x, "onPullRefresh", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPullRefreshUndefined: Self = StObject.set(x, "onPullRefresh", js.undefined)
       
       @scala.inline
-      def setOnScroll(value: /* e */ ReachedBottom => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      def setOnScroll(value: /* e */ ReachedBottom => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       @scala.inline
-      def setOnSelectAllValueChanged(value: /* e */ ModelValue => _): Self = StObject.set(x, "onSelectAllValueChanged", js.Any.fromFunction1(value))
+      def setOnSelectAllValueChanged(value: /* e */ ModelValue => js.Any): Self = StObject.set(x, "onSelectAllValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectAllValueChangedUndefined: Self = StObject.set(x, "onSelectAllValueChanged", js.undefined)
@@ -14907,13 +16017,14 @@ object ui {
   
   type dxLoadIndicator = Widget
   
-  @js.native
-  trait dxLoadIndicatorOptions extends WidgetOptions[dxLoadIndicator] {
+  trait dxLoadIndicatorOptions
+    extends StObject
+       with WidgetOptions[dxLoadIndicator] {
     
     /**
       * [descr:dxLoadIndicator.Options.indicatorSrc]
       */
-    var indicatorSrc: js.UndefOr[String] = js.native
+    var indicatorSrc: js.UndefOr[String] = js.undefined
   }
   object dxLoadIndicatorOptions {
     
@@ -14936,8 +16047,9 @@ object ui {
   
   type dxLoadPanel = dxOverlay
   
-  @js.native
-  trait dxLoadPanelAnimation extends dxOverlayAnimation
+  trait dxLoadPanelAnimation
+    extends StObject
+       with dxOverlayAnimation
   object dxLoadPanelAnimation {
     
     @scala.inline
@@ -14947,34 +16059,35 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxLoadPanelOptions extends dxOverlayOptions[dxLoadPanel] {
+  trait dxLoadPanelOptions
+    extends StObject
+       with dxOverlayOptions[dxLoadPanel] {
     
     /**
       * [descr:dxLoadPanel.Options.animation]
       */
     @JSName("animation")
-    var animation_dxLoadPanelOptions: js.UndefOr[dxLoadPanelAnimation] = js.native
+    var animation_dxLoadPanelOptions: js.UndefOr[dxLoadPanelAnimation] = js.undefined
     
     /**
       * [descr:dxLoadPanel.Options.container]
       */
-    var container: js.UndefOr[String | Element | JQuery] = js.native
+    var container: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:dxLoadPanel.Options.delay]
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxLoadPanel.Options.indicatorSrc]
       */
-    var indicatorSrc: js.UndefOr[String] = js.native
+    var indicatorSrc: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLoadPanel.Options.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLoadPanel.Options.position]
@@ -14982,17 +16095,17 @@ object ui {
     @JSName("position")
     var position_dxLoadPanelOptions: js.UndefOr[
         bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxLoadPanel.Options.showIndicator]
       */
-    var showIndicator: js.UndefOr[Boolean] = js.native
+    var showIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLoadPanel.Options.showPane]
       */
-    var showPane: js.UndefOr[Boolean] = js.native
+    var showPane: js.UndefOr[Boolean] = js.undefined
   }
   object dxLoadPanelOptions {
     
@@ -15059,172 +16172,173 @@ object ui {
   
   type dxLookup = dxDropDownList
   
-  @js.native
-  trait dxLookupOptions extends dxDropDownListOptions[dxLookup] {
+  trait dxLookupOptions
+    extends StObject
+       with dxDropDownListOptions[dxLookup] {
     
     /**
       * [descr:dxLookup.Options.animation]
       * @deprecated [depNote:dxLookup.Options.animation]
       */
-    var animation: js.UndefOr[Hide] = js.native
+    var animation: js.UndefOr[Hide] = js.undefined
     
     /**
       * [descr:dxLookup.Options.applyButtonText]
       */
-    var applyButtonText: js.UndefOr[String] = js.native
+    var applyButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.cancelButtonText]
       */
-    var cancelButtonText: js.UndefOr[String] = js.native
+    var cancelButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.cleanSearchOnOpening]
       */
-    var cleanSearchOnOpening: js.UndefOr[Boolean] = js.native
+    var cleanSearchOnOpening: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.clearButtonText]
       */
-    var clearButtonText: js.UndefOr[String] = js.native
+    var clearButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.closeOnOutsideClick]
       * @deprecated [depNote:dxLookup.Options.closeOnOutsideClick]
       */
-    var closeOnOutsideClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var closeOnOutsideClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
     /**
       * [descr:dxLookup.Options.dropDownCentered]
       */
-    var dropDownCentered: js.UndefOr[Boolean] = js.native
+    var dropDownCentered: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.dropDownOptions]
       */
     @JSName("dropDownOptions")
-    var dropDownOptions_dxLookupOptions: js.UndefOr[dxPopoverOptions[dxPopover]] = js.native
+    var dropDownOptions_dxLookupOptions: js.UndefOr[dxPopoverOptions[dxPopover]] = js.undefined
     
     /**
       * [descr:dxLookup.Options.fieldTemplate]
       */
     var fieldTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* selectedItem */ js.Any, /* fieldElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxLookup.Options.fullScreen]
       * @deprecated [depNote:dxLookup.Options.fullScreen]
       */
-    var fullScreen: js.UndefOr[Boolean] = js.native
+    var fullScreen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.nextButtonText]
       */
-    var nextButtonText: js.UndefOr[String] = js.native
+    var nextButtonText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.onPageLoading]
       */
-    var onPageLoading: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`6`, _]] = js.native
+    var onPageLoading: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`6`, js.Any]] = js.undefined
     
     /**
       * [descr:dxLookup.Options.onPullRefresh]
       */
-    var onPullRefresh: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`6`, _]] = js.native
+    var onPullRefresh: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.`6`, js.Any]] = js.undefined
     
     /**
       * [descr:dxLookup.Options.onScroll]
       */
-    var onScroll: js.UndefOr[js.Function1[/* e */ ReachedLeft, _]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* e */ ReachedLeft, js.Any]] = js.undefined
     
     /**
       * [descr:dxLookup.Options.onTitleRendered]
       * @deprecated [depNote:dxLookup.Options.onTitleRendered]
       */
-    var onTitleRendered: js.UndefOr[js.Function1[/* e */ TitleElement, _]] = js.native
+    var onTitleRendered: js.UndefOr[js.Function1[/* e */ TitleElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxLookup.Options.onValueChanged]
       */
     @JSName("onValueChanged")
-    var onValueChanged_dxLookupOptions: js.UndefOr[js.Function1[/* e */ ElementEventModel, _]] = js.native
+    var onValueChanged_dxLookupOptions: js.UndefOr[js.Function1[/* e */ ElementEventModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxLookup.Options.pageLoadMode]
       */
-    var pageLoadMode: js.UndefOr[nextButton | scrollBottom] = js.native
+    var pageLoadMode: js.UndefOr[nextButton | scrollBottom] = js.undefined
     
     /**
       * [descr:dxLookup.Options.pageLoadingText]
       */
-    var pageLoadingText: js.UndefOr[String] = js.native
+    var pageLoadingText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.popupHeight]
       * @deprecated [depNote:dxLookup.Options.popupHeight]
       */
-    var popupHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+    var popupHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
     
     /**
       * [descr:dxLookup.Options.popupWidth]
       * @deprecated [depNote:dxLookup.Options.popupWidth]
       */
-    var popupWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+    var popupWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
     
     /**
       * [descr:dxLookup.Options.position]
       * @deprecated [depNote:dxLookup.Options.position]
       */
-    var position: js.UndefOr[positionConfig] = js.native
+    var position: js.UndefOr[positionConfig] = js.undefined
     
     /**
       * [descr:dxLookup.Options.pullRefreshEnabled]
       */
-    var pullRefreshEnabled: js.UndefOr[Boolean] = js.native
+    var pullRefreshEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.pulledDownText]
       */
-    var pulledDownText: js.UndefOr[String] = js.native
+    var pulledDownText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.pullingDownText]
       */
-    var pullingDownText: js.UndefOr[String] = js.native
+    var pullingDownText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.refreshingText]
       */
-    var refreshingText: js.UndefOr[String] = js.native
+    var refreshingText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.searchPlaceholder]
       */
-    var searchPlaceholder: js.UndefOr[String] = js.native
+    var searchPlaceholder: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.shading]
       * @deprecated [depNote:dxLookup.Options.shading]
       */
-    var shading: js.UndefOr[Boolean] = js.native
+    var shading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.showCancelButton]
       */
-    var showCancelButton: js.UndefOr[Boolean] = js.native
+    var showCancelButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.showPopupTitle]
       * @deprecated [depNote:dxLookup.Options.showPopupTitle]
       */
-    var showPopupTitle: js.UndefOr[Boolean] = js.native
+    var showPopupTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.title]
       * @deprecated [depNote:dxLookup.Options.title]
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxLookup.Options.titleTemplate]
@@ -15232,17 +16346,17 @@ object ui {
       */
     var titleTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* titleElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxLookup.Options.useNativeScrolling]
       */
-    var useNativeScrolling: js.UndefOr[Boolean] = js.native
+    var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxLookup.Options.usePopover]
       */
-    var usePopover: js.UndefOr[Boolean] = js.native
+    var usePopover: js.UndefOr[Boolean] = js.undefined
   }
   object dxLookupOptions {
     
@@ -15330,31 +16444,31 @@ object ui {
       def setNextButtonTextUndefined: Self = StObject.set(x, "nextButtonText", js.undefined)
       
       @scala.inline
-      def setOnPageLoading(value: /* e */ typings.devextreme.anon.`6` => _): Self = StObject.set(x, "onPageLoading", js.Any.fromFunction1(value))
+      def setOnPageLoading(value: /* e */ typings.devextreme.anon.`6` => js.Any): Self = StObject.set(x, "onPageLoading", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPageLoadingUndefined: Self = StObject.set(x, "onPageLoading", js.undefined)
       
       @scala.inline
-      def setOnPullRefresh(value: /* e */ typings.devextreme.anon.`6` => _): Self = StObject.set(x, "onPullRefresh", js.Any.fromFunction1(value))
+      def setOnPullRefresh(value: /* e */ typings.devextreme.anon.`6` => js.Any): Self = StObject.set(x, "onPullRefresh", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPullRefreshUndefined: Self = StObject.set(x, "onPullRefresh", js.undefined)
       
       @scala.inline
-      def setOnScroll(value: /* e */ ReachedLeft => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      def setOnScroll(value: /* e */ ReachedLeft => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       @scala.inline
-      def setOnTitleRendered(value: /* e */ TitleElement => _): Self = StObject.set(x, "onTitleRendered", js.Any.fromFunction1(value))
+      def setOnTitleRendered(value: /* e */ TitleElement => js.Any): Self = StObject.set(x, "onTitleRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTitleRenderedUndefined: Self = StObject.set(x, "onTitleRendered", js.undefined)
       
       @scala.inline
-      def setOnValueChanged(value: /* e */ ElementEventModel => _): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      def setOnValueChanged(value: /* e */ ElementEventModel => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
@@ -15475,117 +16589,120 @@ object ui {
   }
   
   @js.native
-  trait dxMap extends Widget {
+  trait dxMap
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxMap.addMarker(markerOptions)]
       */
-    def addMarker(markerOptions: js.Any): Promise[_] with JQueryPromise[_] = js.native
-    def addMarker(markerOptions: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
+    def addMarker(markerOptions: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    def addMarker(markerOptions: js.Array[js.Any]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:dxMap.addRoute(routeOptions)]
       */
-    def addRoute(options: js.Any): Promise[_] with JQueryPromise[_] = js.native
-    def addRoute(options: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
+    def addRoute(options: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+    def addRoute(options: js.Array[js.Any]): Promise[js.Any] & JQueryPromise[js.Any] = js.native
     
     /**
       * [descr:dxMap.removeMarker(marker)]
       */
-    def removeMarker(marker: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def removeMarker(marker: js.Array[_]): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def removeMarker(marker: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def removeMarker(marker: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def removeMarker(marker: js.Array[js.Any]): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def removeMarker(marker: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxMap.removeRoute(route)]
       */
-    def removeRoute(route: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def removeRoute(route: js.Array[_]): Promise[Unit] with JQueryPromise[Unit] = js.native
-    def removeRoute(route: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def removeRoute(route: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def removeRoute(route: js.Array[js.Any]): Promise[Unit] & JQueryPromise[Unit] = js.native
+    def removeRoute(route: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxMapOptions extends WidgetOptions[dxMap] {
+  trait dxMapOptions
+    extends StObject
+       with WidgetOptions[dxMap] {
     
     /**
       * [descr:dxMap.Options.autoAdjust]
       */
-    var autoAdjust: js.UndefOr[Boolean] = js.native
+    var autoAdjust: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMap.Options.center]
       */
-    var center: js.UndefOr[js.Any | String | js.Array[Double]] = js.native
+    var center: js.UndefOr[js.Any | String | js.Array[Double]] = js.undefined
     
     /**
       * [descr:dxMap.Options.controls]
       */
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMap.Options.key]
       */
-    var key: js.UndefOr[String | Bing] = js.native
+    var key: js.UndefOr[String | Bing] = js.undefined
     
     /**
       * [descr:dxMap.Options.markerIconSrc]
       */
-    var markerIconSrc: js.UndefOr[String] = js.native
+    var markerIconSrc: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxMap.Options.markers]
       */
-    var markers: js.UndefOr[js.Array[IconSrc]] = js.native
+    var markers: js.UndefOr[js.Array[IconSrc]] = js.undefined
     
     /**
       * [descr:dxMap.Options.onClick]
       */
-    var onClick: js.UndefOr[(js.Function1[/* e */ EventLocation, _]) | String] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* e */ EventLocation, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxMap.Options.onMarkerAdded]
       */
-    var onMarkerAdded: js.UndefOr[js.Function1[/* e */ Options, _]] = js.native
+    var onMarkerAdded: js.UndefOr[js.Function1[/* e */ Options, js.Any]] = js.undefined
     
     /**
       * [descr:dxMap.Options.onMarkerRemoved]
       */
-    var onMarkerRemoved: js.UndefOr[js.Function1[/* e */ ModelOptions, _]] = js.native
+    var onMarkerRemoved: js.UndefOr[js.Function1[/* e */ ModelOptions, js.Any]] = js.undefined
     
     /**
       * [descr:dxMap.Options.onReady]
       */
-    var onReady: js.UndefOr[js.Function1[/* e */ OriginalMap, _]] = js.native
+    var onReady: js.UndefOr[js.Function1[/* e */ OriginalMap, js.Any]] = js.undefined
     
     /**
       * [descr:dxMap.Options.onRouteAdded]
       */
-    var onRouteAdded: js.UndefOr[js.Function1[/* e */ OriginalRoute, _]] = js.native
+    var onRouteAdded: js.UndefOr[js.Function1[/* e */ OriginalRoute, js.Any]] = js.undefined
     
     /**
       * [descr:dxMap.Options.onRouteRemoved]
       */
-    var onRouteRemoved: js.UndefOr[js.Function1[/* e */ ModelOptions, _]] = js.native
+    var onRouteRemoved: js.UndefOr[js.Function1[/* e */ ModelOptions, js.Any]] = js.undefined
     
     /**
       * [descr:dxMap.Options.provider]
       */
-    var provider: js.UndefOr[bing | google | googleStatic] = js.native
+    var provider: js.UndefOr[bing | google | googleStatic] = js.undefined
     
     /**
       * [descr:dxMap.Options.routes]
       */
-    var routes: js.UndefOr[js.Array[Color]] = js.native
+    var routes: js.UndefOr[js.Array[Color]] = js.undefined
     
     /**
       * [descr:dxMap.Options.type]
       */
-    var `type`: js.UndefOr[hybrid | roadmap | satellite] = js.native
+    var `type`: js.UndefOr[hybrid | roadmap | satellite] = js.undefined
     
     /**
       * [descr:dxMap.Options.zoom]
       */
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object dxMapOptions {
     
@@ -15641,40 +16758,40 @@ object ui {
       def setMarkersVarargs(value: IconSrc*): Self = StObject.set(x, "markers", js.Array(value :_*))
       
       @scala.inline
-      def setOnClick(value: (js.Function1[/* e */ EventLocation, _]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: (js.Function1[/* e */ EventLocation, js.Any]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickFunction1(value: /* e */ EventLocation => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClickFunction1(value: /* e */ EventLocation => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnMarkerAdded(value: /* e */ Options => _): Self = StObject.set(x, "onMarkerAdded", js.Any.fromFunction1(value))
+      def setOnMarkerAdded(value: /* e */ Options => js.Any): Self = StObject.set(x, "onMarkerAdded", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMarkerAddedUndefined: Self = StObject.set(x, "onMarkerAdded", js.undefined)
       
       @scala.inline
-      def setOnMarkerRemoved(value: /* e */ ModelOptions => _): Self = StObject.set(x, "onMarkerRemoved", js.Any.fromFunction1(value))
+      def setOnMarkerRemoved(value: /* e */ ModelOptions => js.Any): Self = StObject.set(x, "onMarkerRemoved", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMarkerRemovedUndefined: Self = StObject.set(x, "onMarkerRemoved", js.undefined)
       
       @scala.inline
-      def setOnReady(value: /* e */ OriginalMap => _): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+      def setOnReady(value: /* e */ OriginalMap => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
       @scala.inline
-      def setOnRouteAdded(value: /* e */ OriginalRoute => _): Self = StObject.set(x, "onRouteAdded", js.Any.fromFunction1(value))
+      def setOnRouteAdded(value: /* e */ OriginalRoute => js.Any): Self = StObject.set(x, "onRouteAdded", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRouteAddedUndefined: Self = StObject.set(x, "onRouteAdded", js.undefined)
       
       @scala.inline
-      def setOnRouteRemoved(value: /* e */ ModelOptions => _): Self = StObject.set(x, "onRouteRemoved", js.Any.fromFunction1(value))
+      def setOnRouteRemoved(value: /* e */ ModelOptions => js.Any): Self = StObject.set(x, "onRouteRemoved", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRouteRemovedUndefined: Self = StObject.set(x, "onRouteRemoved", js.undefined)
@@ -15711,7 +16828,9 @@ object ui {
   type dxMenu = dxMenuBase
   
   @js.native
-  trait dxMenuBase extends CollectionWidget {
+  trait dxMenuBase
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxMenuBase.selectItem(itemElement)]
@@ -15724,38 +16843,39 @@ object ui {
     def unselectItem(itemElement: Element): Unit = js.native
   }
   
-  @js.native
-  trait dxMenuBaseItem extends CollectionWidgetItem {
+  trait dxMenuBaseItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxMenuBaseItem.beginGroup]
       */
-    var beginGroup: js.UndefOr[Boolean] = js.native
+    var beginGroup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMenuBaseItem.closeMenuOnClick]
       */
-    var closeMenuOnClick: js.UndefOr[Boolean] = js.native
+    var closeMenuOnClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMenuBaseItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxMenuBaseItem.items]
       */
-    var items: js.UndefOr[js.Array[dxMenuBaseItem]] = js.native
+    var items: js.UndefOr[js.Array[dxMenuBaseItem]] = js.undefined
     
     /**
       * [descr:dxMenuBaseItem.selectable]
       */
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMenuBaseItem.selected]
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
   }
   object dxMenuBaseItem {
     
@@ -15811,45 +16931,46 @@ object ui {
   
   type dxMenuBaseItemTemplate = dxMenuBaseItem
   
-  @js.native
-  trait dxMenuBaseOptions[T] extends HierarchicalCollectionWidgetOptions[T] {
+  trait dxMenuBaseOptions[T]
+    extends StObject
+       with HierarchicalCollectionWidgetOptions[T] {
     
     /**
       * [descr:dxMenuBase.Options.animation]
       */
-    var animation: js.UndefOr[Hide] = js.native
+    var animation: js.UndefOr[Hide] = js.undefined
     
     /**
       * [descr:dxMenuBase.Options.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxMenuBase.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxMenuBaseOptions: js.UndefOr[String | js.Array[dxMenuBaseItem] | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxMenuBaseOptions: js.UndefOr[String | js.Array[dxMenuBaseItem] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:dxMenuBase.Options.items]
       */
     @JSName("items")
-    var items_dxMenuBaseOptions: js.UndefOr[js.Array[dxMenuBaseItem]] = js.native
+    var items_dxMenuBaseOptions: js.UndefOr[js.Array[dxMenuBaseItem]] = js.undefined
     
     /**
       * [descr:dxMenuBase.Options.selectByClick]
       */
-    var selectByClick: js.UndefOr[Boolean] = js.native
+    var selectByClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMenuBase.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[none | single_] = js.native
+    var selectionMode: js.UndefOr[none | single_] = js.undefined
     
     /**
       * [descr:dxMenuBase.Options.showSubmenuMode]
       */
-    var showSubmenuMode: js.UndefOr[DelayName | onClick | onHover] = js.native
+    var showSubmenuMode: js.UndefOr[DelayName | onClick | onHover] = js.undefined
   }
   object dxMenuBaseOptions {
     
@@ -15860,7 +16981,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxMenuBaseOptionsMutableBuilder[Self <: dxMenuBaseOptions[_], T] (val x: Self with dxMenuBaseOptions[T]) extends AnyVal {
+    implicit class dxMenuBaseOptionsMutableBuilder[Self <: dxMenuBaseOptions[?], T] (val x: Self & dxMenuBaseOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAnimation(value: Hide): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
@@ -15912,14 +17033,15 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxMenuItem extends dxMenuBaseItem {
+  trait dxMenuItem
+    extends StObject
+       with dxMenuBaseItem {
     
     /**
       * [descr:dxMenuItem.items]
       */
     @JSName("items")
-    var items_dxMenuItem: js.UndefOr[js.Array[dxMenuItem]] = js.native
+    var items_dxMenuItem: js.UndefOr[js.Array[dxMenuItem]] = js.undefined
   }
   object dxMenuItem {
     
@@ -15945,65 +17067,66 @@ object ui {
   
   type dxMenuItemTemplate = dxMenuItem
   
-  @js.native
-  trait dxMenuOptions extends dxMenuBaseOptions[dxMenu] {
+  trait dxMenuOptions
+    extends StObject
+       with dxMenuBaseOptions[dxMenu] {
     
     /**
       * [descr:dxMenu.Options.adaptivityEnabled]
       */
-    var adaptivityEnabled: js.UndefOr[Boolean] = js.native
+    var adaptivityEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMenu.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxMenuOptions: js.UndefOr[String | js.Array[dxMenuItem] | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxMenuOptions: js.UndefOr[String | js.Array[dxMenuItem] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:dxMenu.Options.hideSubmenuOnMouseLeave]
       */
-    var hideSubmenuOnMouseLeave: js.UndefOr[Boolean] = js.native
+    var hideSubmenuOnMouseLeave: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMenu.Options.items]
       */
     @JSName("items")
-    var items_dxMenuOptions: js.UndefOr[js.Array[dxMenuItem]] = js.native
+    var items_dxMenuOptions: js.UndefOr[js.Array[dxMenuItem]] = js.undefined
     
     /**
       * [descr:dxMenu.Options.onSubmenuHidden]
       */
-    var onSubmenuHidden: js.UndefOr[js.Function1[/* e */ RootItem, _]] = js.native
+    var onSubmenuHidden: js.UndefOr[js.Function1[/* e */ RootItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxMenu.Options.onSubmenuHiding]
       */
-    var onSubmenuHiding: js.UndefOr[js.Function1[/* e */ ModelRootItem, _]] = js.native
+    var onSubmenuHiding: js.UndefOr[js.Function1[/* e */ ModelRootItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxMenu.Options.onSubmenuShowing]
       */
-    var onSubmenuShowing: js.UndefOr[js.Function1[/* e */ RootItem, _]] = js.native
+    var onSubmenuShowing: js.UndefOr[js.Function1[/* e */ RootItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxMenu.Options.onSubmenuShown]
       */
-    var onSubmenuShown: js.UndefOr[js.Function1[/* e */ RootItem, _]] = js.native
+    var onSubmenuShown: js.UndefOr[js.Function1[/* e */ RootItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxMenu.Options.orientation]
       */
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * [descr:dxMenu.Options.showFirstSubmenuMode]
       */
-    var showFirstSubmenuMode: js.UndefOr[DelayName | onClick | onHover] = js.native
+    var showFirstSubmenuMode: js.UndefOr[DelayName | onClick | onHover] = js.undefined
     
     /**
       * [descr:dxMenu.Options.submenuDirection]
       */
-    var submenuDirection: js.UndefOr[auto | leftOrTop | rightOrBottom] = js.native
+    var submenuDirection: js.UndefOr[auto | leftOrTop | rightOrBottom] = js.undefined
   }
   object dxMenuOptions {
     
@@ -16047,25 +17170,25 @@ object ui {
       def setItemsVarargs(value: dxMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setOnSubmenuHidden(value: /* e */ RootItem => _): Self = StObject.set(x, "onSubmenuHidden", js.Any.fromFunction1(value))
+      def setOnSubmenuHidden(value: /* e */ RootItem => js.Any): Self = StObject.set(x, "onSubmenuHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSubmenuHiddenUndefined: Self = StObject.set(x, "onSubmenuHidden", js.undefined)
       
       @scala.inline
-      def setOnSubmenuHiding(value: /* e */ ModelRootItem => _): Self = StObject.set(x, "onSubmenuHiding", js.Any.fromFunction1(value))
+      def setOnSubmenuHiding(value: /* e */ ModelRootItem => js.Any): Self = StObject.set(x, "onSubmenuHiding", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSubmenuHidingUndefined: Self = StObject.set(x, "onSubmenuHiding", js.undefined)
       
       @scala.inline
-      def setOnSubmenuShowing(value: /* e */ RootItem => _): Self = StObject.set(x, "onSubmenuShowing", js.Any.fromFunction1(value))
+      def setOnSubmenuShowing(value: /* e */ RootItem => js.Any): Self = StObject.set(x, "onSubmenuShowing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSubmenuShowingUndefined: Self = StObject.set(x, "onSubmenuShowing", js.undefined)
       
       @scala.inline
-      def setOnSubmenuShown(value: /* e */ RootItem => _): Self = StObject.set(x, "onSubmenuShown", js.Any.fromFunction1(value))
+      def setOnSubmenuShown(value: /* e */ RootItem => js.Any): Self = StObject.set(x, "onSubmenuShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSubmenuShownUndefined: Self = StObject.set(x, "onSubmenuShown", js.undefined)
@@ -16096,42 +17219,43 @@ object ui {
   
   type dxMultiViewItemTemplate = dxMultiViewItem
   
-  @js.native
-  trait dxMultiViewOptions[T] extends CollectionWidgetOptions[T] {
+  trait dxMultiViewOptions[T]
+    extends StObject
+       with CollectionWidgetOptions[T] {
     
     /**
       * [descr:dxMultiView.Options.animationEnabled]
       */
-    var animationEnabled: js.UndefOr[Boolean] = js.native
+    var animationEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMultiView.Options.dataSource]
       */
     @JSName("dataSource")
     var dataSource_dxMultiViewOptions: js.UndefOr[
-        String | (js.Array[String | dxMultiViewItem | _]) | DataSource | DataSourceOptions
-      ] = js.native
+        String | (js.Array[String | dxMultiViewItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxMultiView.Options.deferRendering]
       */
-    var deferRendering: js.UndefOr[Boolean] = js.native
+    var deferRendering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMultiView.Options.items]
       */
     @JSName("items")
-    var items_dxMultiViewOptions: js.UndefOr[js.Array[String | dxMultiViewItem | _]] = js.native
+    var items_dxMultiViewOptions: js.UndefOr[js.Array[String | dxMultiViewItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxMultiView.Options.loop]
       */
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxMultiView.Options.swipeEnabled]
       */
-    var swipeEnabled: js.UndefOr[Boolean] = js.native
+    var swipeEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object dxMultiViewOptions {
     
@@ -16142,7 +17266,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxMultiViewOptionsMutableBuilder[Self <: dxMultiViewOptions[_], T] (val x: Self with dxMultiViewOptions[T]) extends AnyVal {
+    implicit class dxMultiViewOptionsMutableBuilder[Self <: dxMultiViewOptions[?], T] (val x: Self & dxMultiViewOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
@@ -16151,7 +17275,7 @@ object ui {
       def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxMultiViewItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxMultiViewItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -16166,7 +17290,7 @@ object ui {
       def setDeferRenderingUndefined: Self = StObject.set(x, "deferRendering", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | dxMultiViewItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxMultiViewItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -16190,8 +17314,9 @@ object ui {
   
   type dxNavBar = dxTabs
   
-  @js.native
-  trait dxNavBarItem extends dxTabsItem
+  trait dxNavBarItem
+    extends StObject
+       with dxTabsItem
   object dxNavBarItem {
     
     @scala.inline
@@ -16203,8 +17328,9 @@ object ui {
   
   type dxNavBarItemTemplate = dxNavBarItem
   
-  @js.native
-  trait dxNavBarOptions extends dxTabsOptions[dxNavBar]
+  trait dxNavBarOptions
+    extends StObject
+       with dxTabsOptions[dxNavBar]
   object dxNavBarOptions {
     
     @scala.inline
@@ -16216,60 +17342,61 @@ object ui {
   
   type dxNumberBox = dxTextEditor
   
-  @js.native
-  trait dxNumberBoxOptions extends dxTextEditorOptions[dxNumberBox] {
+  trait dxNumberBoxOptions
+    extends StObject
+       with dxTextEditorOptions[dxNumberBox] {
     
     /**
       * [descr:dxNumberBox.Options.buttons]
       */
     @JSName("buttons")
-    var buttons_dxNumberBoxOptions: js.UndefOr[js.Array[clear | spins | dxTextEditorButton]] = js.native
+    var buttons_dxNumberBoxOptions: js.UndefOr[js.Array[clear | spins | dxTextEditorButton]] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.invalidValueMessage]
       */
-    var invalidValueMessage: js.UndefOr[String] = js.native
+    var invalidValueMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.max]
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.min]
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.mode]
       */
-    var mode: js.UndefOr[number | text | tel] = js.native
+    var mode: js.UndefOr[number | text | tel] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.showSpinButtons]
       */
-    var showSpinButtons: js.UndefOr[Boolean] = js.native
+    var showSpinButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.step]
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.useLargeSpinButtons]
       */
-    var useLargeSpinButtons: js.UndefOr[Boolean] = js.native
+    var useLargeSpinButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxNumberBox.Options.value]
       */
     @JSName("value")
-    var value_dxNumberBoxOptions: js.UndefOr[Double] = js.native
+    var value_dxNumberBoxOptions: js.UndefOr[Double] = js.undefined
   }
   object dxNumberBoxOptions {
     
@@ -16351,7 +17478,9 @@ object ui {
   }
   
   @js.native
-  trait dxOverlay extends Widget {
+  trait dxOverlay
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxOverlay.content()]
@@ -16361,31 +17490,30 @@ object ui {
     /**
       * [descr:dxOverlay.hide()]
       */
-    def hide(): Promise[Boolean] with JQueryPromise[Boolean] = js.native
+    def hide(): Promise[Boolean] & JQueryPromise[Boolean] = js.native
     
     /**
       * [descr:dxOverlay.show()]
       */
-    def show(): Promise[Boolean] with JQueryPromise[Boolean] = js.native
+    def show(): Promise[Boolean] & JQueryPromise[Boolean] = js.native
     
     /**
       * [descr:dxOverlay.toggle(showing)]
       */
-    def toggle(showing: Boolean): Promise[Boolean] with JQueryPromise[Boolean] = js.native
+    def toggle(showing: Boolean): Promise[Boolean] & JQueryPromise[Boolean] = js.native
   }
   
-  @js.native
   trait dxOverlayAnimation extends StObject {
     
     /**
       * [descr:dxOverlay.Options.animation.hide]
       */
-    var hide: js.UndefOr[animationConfig] = js.native
+    var hide: js.UndefOr[animationConfig] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.animation.show]
       */
-    var show: js.UndefOr[animationConfig] = js.native
+    var show: js.UndefOr[animationConfig] = js.undefined
   }
   object dxOverlayAnimation {
     
@@ -16412,92 +17540,93 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxOverlayOptions[T] extends WidgetOptions[T] {
+  trait dxOverlayOptions[T]
+    extends StObject
+       with WidgetOptions[T] {
     
     /**
       * [descr:dxOverlay.Options.animation]
       */
-    var animation: js.UndefOr[dxOverlayAnimation] = js.native
+    var animation: js.UndefOr[dxOverlayAnimation] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.closeOnOutsideClick]
       */
     var closeOnOutsideClick: js.UndefOr[
         Boolean | (js.Function1[/* event */ typings.devextreme.mod.DevExpress.events.event, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.deferRendering]
       */
-    var deferRendering: js.UndefOr[Boolean] = js.native
+    var deferRendering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.dragEnabled]
       */
-    var dragEnabled: js.UndefOr[Boolean] = js.native
+    var dragEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.maxHeight]
       */
-    var maxHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+    var maxHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.maxWidth]
       */
-    var maxWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+    var maxWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.minHeight]
       */
-    var minHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+    var minHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.minWidth]
       */
-    var minWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+    var minWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.onHidden]
       */
-    var onHidden: js.UndefOr[js.Function1[/* e */ `7`[T], _]] = js.native
+    var onHidden: js.UndefOr[js.Function1[/* e */ `7`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.onHiding]
       */
-    var onHiding: js.UndefOr[js.Function1[/* e */ `8`[T], _]] = js.native
+    var onHiding: js.UndefOr[js.Function1[/* e */ `8`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.onShowing]
       */
-    var onShowing: js.UndefOr[js.Function1[/* e */ `7`[T], _]] = js.native
+    var onShowing: js.UndefOr[js.Function1[/* e */ `7`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.onShown]
       */
-    var onShown: js.UndefOr[js.Function1[/* e */ `7`[T], _]] = js.native
+    var onShown: js.UndefOr[js.Function1[/* e */ `7`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.position]
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.shading]
       */
-    var shading: js.UndefOr[Boolean] = js.native
+    var shading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxOverlay.Options.shadingColor]
       */
-    var shadingColor: js.UndefOr[String] = js.native
+    var shadingColor: js.UndefOr[String] = js.undefined
   }
   object dxOverlayOptions {
     
@@ -16508,7 +17637,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxOverlayOptionsMutableBuilder[Self <: dxOverlayOptions[_], T] (val x: Self with dxOverlayOptions[T]) extends AnyVal {
+    implicit class dxOverlayOptionsMutableBuilder[Self <: dxOverlayOptions[?], T] (val x: Self & dxOverlayOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAnimation(value: dxOverlayAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
@@ -16587,25 +17716,25 @@ object ui {
       def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
       @scala.inline
-      def setOnHidden(value: /* e */ `7`[T] => _): Self = StObject.set(x, "onHidden", js.Any.fromFunction1(value))
+      def setOnHidden(value: /* e */ `7`[T] => js.Any): Self = StObject.set(x, "onHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
       
       @scala.inline
-      def setOnHiding(value: /* e */ `8`[T] => _): Self = StObject.set(x, "onHiding", js.Any.fromFunction1(value))
+      def setOnHiding(value: /* e */ `8`[T] => js.Any): Self = StObject.set(x, "onHiding", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHidingUndefined: Self = StObject.set(x, "onHiding", js.undefined)
       
       @scala.inline
-      def setOnShowing(value: /* e */ `7`[T] => _): Self = StObject.set(x, "onShowing", js.Any.fromFunction1(value))
+      def setOnShowing(value: /* e */ `7`[T] => js.Any): Self = StObject.set(x, "onShowing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnShowingUndefined: Self = StObject.set(x, "onShowing", js.undefined)
       
       @scala.inline
-      def setOnShown(value: /* e */ `7`[T] => _): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
+      def setOnShown(value: /* e */ `7`[T] => js.Any): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
@@ -16631,14 +17760,16 @@ object ui {
   }
   
   @js.native
-  trait dxPivotGrid extends Widget {
+  trait dxPivotGrid
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxPivotGrid.bindChart(chart, integrationOptions)]
       */
-    def bindChart(chart: String, integrationOptions: AlternateDataFields): js.Function with Null = js.native
-    def bindChart(chart: js.Any, integrationOptions: AlternateDataFields): js.Function with Null = js.native
-    def bindChart(chart: JQuery, integrationOptions: AlternateDataFields): js.Function with Null = js.native
+    def bindChart(chart: String, integrationOptions: AlternateDataFields): js.Function & Null = js.native
+    def bindChart(chart: js.Any, integrationOptions: AlternateDataFields): js.Function & Null = js.native
+    def bindChart(chart: JQuery, integrationOptions: AlternateDataFields): js.Function & Null = js.native
     
     /**
       * [descr:dxPivotGrid.exportToExcel()]
@@ -16663,7 +17794,9 @@ object ui {
   }
   
   @js.native
-  trait dxPivotGridFieldChooser extends Widget {
+  trait dxPivotGridFieldChooser
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxPivotGridFieldChooser.applyChanges()]
@@ -16686,53 +17819,54 @@ object ui {
     def updateDimensions(): Unit = js.native
   }
   
-  @js.native
-  trait dxPivotGridFieldChooserOptions extends WidgetOptions[dxPivotGridFieldChooser] {
+  trait dxPivotGridFieldChooserOptions
+    extends StObject
+       with WidgetOptions[dxPivotGridFieldChooser] {
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.allowSearch]
       */
-    var allowSearch: js.UndefOr[Boolean] = js.native
+    var allowSearch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.applyChangesMode]
       */
-    var applyChangesMode: js.UndefOr[instantly | onDemand] = js.native
+    var applyChangesMode: js.UndefOr[instantly | onDemand] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.dataSource]
       */
-    var dataSource: js.UndefOr[PivotGridDataSource] = js.native
+    var dataSource: js.UndefOr[PivotGridDataSource] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.headerFilter]
       */
-    var headerFilter: js.UndefOr[SearchTimeout] = js.native
+    var headerFilter: js.UndefOr[SearchTimeout] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.layout]
       */
-    var layout: js.UndefOr[`0` | `1` | `2`] = js.native
+    var layout: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.onContextMenuPreparing]
       */
-    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AreaComponent, _]] = js.native
+    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AreaComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.searchTimeout]
       */
-    var searchTimeout: js.UndefOr[Double] = js.native
+    var searchTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.state]
       */
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPivotGridFieldChooser.Options.texts]
       */
-    var texts: js.UndefOr[AllFields] = js.native
+    var texts: js.UndefOr[AllFields] = js.undefined
   }
   object dxPivotGridFieldChooserOptions {
     
@@ -16776,7 +17910,7 @@ object ui {
       def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
       @scala.inline
-      def setOnContextMenuPreparing(value: /* e */ AreaComponent => _): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
+      def setOnContextMenuPreparing(value: /* e */ AreaComponent => js.Any): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
@@ -16801,155 +17935,156 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxPivotGridOptions extends WidgetOptions[dxPivotGrid] {
+  trait dxPivotGridOptions
+    extends StObject
+       with WidgetOptions[dxPivotGrid] {
     
     /**
       * [descr:dxPivotGrid.Options.allowExpandAll]
       */
-    var allowExpandAll: js.UndefOr[Boolean] = js.native
+    var allowExpandAll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.allowFiltering]
       */
-    var allowFiltering: js.UndefOr[Boolean] = js.native
+    var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.allowSorting]
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.allowSortingBySummary]
       */
-    var allowSortingBySummary: js.UndefOr[Boolean] = js.native
+    var allowSortingBySummary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.dataFieldArea]
       */
-    var dataFieldArea: js.UndefOr[column | row] = js.native
+    var dataFieldArea: js.UndefOr[column | row] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[_] | PivotGridDataSource | PivotGridDataSourceOptions] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | PivotGridDataSource | PivotGridDataSourceOptions] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.export]
       */
-    var export: js.UndefOr[IgnoreExcelErrors] = js.native
+    var `export`: js.UndefOr[IgnoreExcelErrors] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.fieldChooser]
       */
-    var fieldChooser: js.UndefOr[ApplyChangesMode] = js.native
+    var fieldChooser: js.UndefOr[ApplyChangesMode] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.fieldPanel]
       */
-    var fieldPanel: js.UndefOr[AllowFieldDragging] = js.native
+    var fieldPanel: js.UndefOr[AllowFieldDragging] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.headerFilter]
       */
-    var headerFilter: js.UndefOr[SearchTimeout] = js.native
+    var headerFilter: js.UndefOr[SearchTimeout] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.hideEmptySummaryCells]
       */
-    var hideEmptySummaryCells: js.UndefOr[Boolean] = js.native
+    var hideEmptySummaryCells: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.loadPanel]
       */
-    var loadPanel: js.UndefOr[Shading] = js.native
+    var loadPanel: js.UndefOr[Shading] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.onCellClick]
       */
-    var onCellClick: js.UndefOr[js.Function1[/* e */ Area, _]] = js.native
+    var onCellClick: js.UndefOr[js.Function1[/* e */ Area, js.Any]] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.onCellPrepared]
       */
-    var onCellPrepared: js.UndefOr[js.Function1[/* e */ Cell, _]] = js.native
+    var onCellPrepared: js.UndefOr[js.Function1[/* e */ Cell, js.Any]] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.onContextMenuPreparing]
       */
-    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ ColumnFields, _]] = js.native
+    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ ColumnFields, js.Any]] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.onExported]
       * @deprecated [depNote:dxPivotGrid.Options.onExported]
       */
-    var onExported: js.UndefOr[js.Function1[/* e */ `9`, _]] = js.native
+    var onExported: js.UndefOr[js.Function1[/* e */ `9`, js.Any]] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.onExporting]
       */
-    var onExporting: js.UndefOr[js.Function1[/* e */ FileNameModel, _]] = js.native
+    var onExporting: js.UndefOr[js.Function1[/* e */ FileNameModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.onFileSaving]
       * @deprecated [depNote:dxPivotGrid.Options.onFileSaving]
       */
-    var onFileSaving: js.UndefOr[js.Function1[/* e */ FileNameFormat, _]] = js.native
+    var onFileSaving: js.UndefOr[js.Function1[/* e */ FileNameFormat, js.Any]] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.rowHeaderLayout]
       */
-    var rowHeaderLayout: js.UndefOr[standard | tree] = js.native
+    var rowHeaderLayout: js.UndefOr[standard | tree] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.scrolling]
       */
-    var scrolling: js.UndefOr[Mode] = js.native
+    var scrolling: js.UndefOr[Mode] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.showBorders]
       */
-    var showBorders: js.UndefOr[Boolean] = js.native
+    var showBorders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.showColumnGrandTotals]
       */
-    var showColumnGrandTotals: js.UndefOr[Boolean] = js.native
+    var showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.showColumnTotals]
       */
-    var showColumnTotals: js.UndefOr[Boolean] = js.native
+    var showColumnTotals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.showRowGrandTotals]
       */
-    var showRowGrandTotals: js.UndefOr[Boolean] = js.native
+    var showRowGrandTotals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.showRowTotals]
       */
-    var showRowTotals: js.UndefOr[Boolean] = js.native
+    var showRowTotals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.showTotalsPrior]
       */
-    var showTotalsPrior: js.UndefOr[both | columns | none | rows] = js.native
+    var showTotalsPrior: js.UndefOr[both | columns | none | rows] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.stateStoring]
       */
-    var stateStoring: js.UndefOr[CustomLoad] = js.native
+    var stateStoring: js.UndefOr[CustomLoad] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.texts]
       */
-    var texts: js.UndefOr[CollapseAll] = js.native
+    var texts: js.UndefOr[CollapseAll] = js.undefined
     
     /**
       * [descr:dxPivotGrid.Options.wordWrapEnabled]
       */
-    var wordWrapEnabled: js.UndefOr[Boolean] = js.native
+    var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object dxPivotGridOptions {
     
@@ -16993,7 +18128,7 @@ object ui {
       def setDataFieldAreaUndefined: Self = StObject.set(x, "dataFieldArea", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | PivotGridDataSource | PivotGridDataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | PivotGridDataSource | PivotGridDataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -17038,37 +18173,37 @@ object ui {
       def setLoadPanelUndefined: Self = StObject.set(x, "loadPanel", js.undefined)
       
       @scala.inline
-      def setOnCellClick(value: /* e */ Area => _): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
+      def setOnCellClick(value: /* e */ Area => js.Any): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
       @scala.inline
-      def setOnCellPrepared(value: /* e */ Cell => _): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1(value))
+      def setOnCellPrepared(value: /* e */ Cell => js.Any): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellPreparedUndefined: Self = StObject.set(x, "onCellPrepared", js.undefined)
       
       @scala.inline
-      def setOnContextMenuPreparing(value: /* e */ ColumnFields => _): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
+      def setOnContextMenuPreparing(value: /* e */ ColumnFields => js.Any): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
       
       @scala.inline
-      def setOnExported(value: /* e */ `9` => _): Self = StObject.set(x, "onExported", js.Any.fromFunction1(value))
+      def setOnExported(value: /* e */ `9` => js.Any): Self = StObject.set(x, "onExported", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
       
       @scala.inline
-      def setOnExporting(value: /* e */ FileNameModel => _): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
+      def setOnExporting(value: /* e */ FileNameModel => js.Any): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
       
       @scala.inline
-      def setOnFileSaving(value: /* e */ FileNameFormat => _): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1(value))
+      def setOnFileSaving(value: /* e */ FileNameFormat => js.Any): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
@@ -17141,58 +18276,57 @@ object ui {
     }
   }
   
-  @js.native
   trait dxPivotGridPivotGridCell extends StObject {
     
     /**
       * [descr:dxPivotGridPivotGridCell.columnPath]
       */
-    var columnPath: js.UndefOr[js.Array[String | Double | Date]] = js.native
+    var columnPath: js.UndefOr[js.Array[String | Double | Date]] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.columnType]
       */
-    var columnType: js.UndefOr[D | T | GT] = js.native
+    var columnType: js.UndefOr[D | T | GT] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.dataIndex]
       */
-    var dataIndex: js.UndefOr[Double] = js.native
+    var dataIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.expanded]
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.path]
       */
-    var path: js.UndefOr[js.Array[String | Double | Date]] = js.native
+    var path: js.UndefOr[js.Array[String | Double | Date]] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.rowPath]
       */
-    var rowPath: js.UndefOr[js.Array[String | Double | Date]] = js.native
+    var rowPath: js.UndefOr[js.Array[String | Double | Date]] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.rowType]
       */
-    var rowType: js.UndefOr[D | T | GT] = js.native
+    var rowType: js.UndefOr[D | T | GT] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.type]
       */
-    var `type`: js.UndefOr[D | T | GT] = js.native
+    var `type`: js.UndefOr[D | T | GT] = js.undefined
     
     /**
       * [descr:dxPivotGridPivotGridCell.value]
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object dxPivotGridPivotGridCell {
     
@@ -17360,18 +18494,21 @@ object ui {
   }
   
   @js.native
-  trait dxPopover extends dxOverlay {
+  trait dxPopover
+    extends StObject
+       with dxOverlay {
     
     /**
       * [descr:dxPopover.show(target)]
       */
-    def show(target: String): Promise[Boolean] with JQueryPromise[Boolean] = js.native
-    def show(target: JQuery): Promise[Boolean] with JQueryPromise[Boolean] = js.native
-    def show(target: Element): Promise[Boolean] with JQueryPromise[Boolean] = js.native
+    def show(target: String): Promise[Boolean] & JQueryPromise[Boolean] = js.native
+    def show(target: JQuery): Promise[Boolean] & JQueryPromise[Boolean] = js.native
+    def show(target: Element): Promise[Boolean] & JQueryPromise[Boolean] = js.native
   }
   
-  @js.native
-  trait dxPopoverAnimation extends dxPopupAnimation
+  trait dxPopoverAnimation
+    extends StObject
+       with dxPopupAnimation
   object dxPopoverAnimation {
     
     @scala.inline
@@ -17381,35 +18518,36 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxPopoverOptions[T] extends dxPopupOptions[T] {
+  trait dxPopoverOptions[T]
+    extends StObject
+       with dxPopupOptions[T] {
     
     /**
       * [descr:dxPopover.Options.animation]
       */
     @JSName("animation")
-    var animation_dxPopoverOptions: js.UndefOr[dxPopoverAnimation] = js.native
+    var animation_dxPopoverOptions: js.UndefOr[dxPopoverAnimation] = js.undefined
     
     /**
       * [descr:dxPopover.Options.hideEvent]
       */
-    var hideEvent: js.UndefOr[Delay | String] = js.native
+    var hideEvent: js.UndefOr[Delay | String] = js.undefined
     
     /**
       * [descr:dxPopover.Options.position]
       */
     @JSName("position")
-    var position_dxPopoverOptions: js.UndefOr[bottom | left | right | top | positionConfig] = js.native
+    var position_dxPopoverOptions: js.UndefOr[bottom | left | right | top | positionConfig] = js.undefined
     
     /**
       * [descr:dxPopover.Options.showEvent]
       */
-    var showEvent: js.UndefOr[Delay | String] = js.native
+    var showEvent: js.UndefOr[Delay | String] = js.undefined
     
     /**
       * [descr:dxPopover.Options.target]
       */
-    var target: js.UndefOr[String | Element | JQuery] = js.native
+    var target: js.UndefOr[String | Element | JQuery] = js.undefined
   }
   object dxPopoverOptions {
     
@@ -17420,7 +18558,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxPopoverOptionsMutableBuilder[Self <: dxPopoverOptions[_], T] (val x: Self with dxPopoverOptions[T]) extends AnyVal {
+    implicit class dxPopoverOptionsMutableBuilder[Self <: dxPopoverOptions[?], T] (val x: Self & dxPopoverOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAnimation(value: dxPopoverAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
@@ -17456,8 +18594,9 @@ object ui {
   
   type dxPopup = dxOverlay
   
-  @js.native
-  trait dxPopupAnimation extends dxOverlayAnimation
+  trait dxPopupAnimation
+    extends StObject
+       with dxOverlayAnimation
   object dxPopupAnimation {
     
     @scala.inline
@@ -17467,44 +18606,45 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxPopupOptions[T] extends dxOverlayOptions[T] {
+  trait dxPopupOptions[T]
+    extends StObject
+       with dxOverlayOptions[T] {
     
     /**
       * [descr:dxPopup.Options.animation]
       */
     @JSName("animation")
-    var animation_dxPopupOptions: js.UndefOr[dxPopupAnimation] = js.native
+    var animation_dxPopupOptions: js.UndefOr[dxPopupAnimation] = js.undefined
     
     /**
       * [descr:dxPopup.Options.container]
       */
-    var container: js.UndefOr[String | Element | JQuery] = js.native
+    var container: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:dxPopup.Options.fullScreen]
       */
-    var fullScreen: js.UndefOr[Boolean] = js.native
+    var fullScreen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPopup.Options.onResize]
       */
-    var onResize: js.UndefOr[js.Function1[/* e */ `10`[T], _]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* e */ `10`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxPopup.Options.onResizeEnd]
       */
-    var onResizeEnd: js.UndefOr[js.Function1[/* e */ `10`[T], _]] = js.native
+    var onResizeEnd: js.UndefOr[js.Function1[/* e */ `10`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxPopup.Options.onResizeStart]
       */
-    var onResizeStart: js.UndefOr[js.Function1[/* e */ `10`[T], _]] = js.native
+    var onResizeStart: js.UndefOr[js.Function1[/* e */ `10`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxPopup.Options.onTitleRendered]
       */
-    var onTitleRendered: js.UndefOr[js.Function1[/* e */ ModelTitleElement[T], _]] = js.native
+    var onTitleRendered: js.UndefOr[js.Function1[/* e */ ModelTitleElement[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxPopup.Options.position]
@@ -17512,39 +18652,39 @@ object ui {
     @JSName("position")
     var position_dxPopupOptions: js.UndefOr[
         bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPopup.Options.resizeEnabled]
       */
-    var resizeEnabled: js.UndefOr[Boolean] = js.native
+    var resizeEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPopup.Options.showCloseButton]
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPopup.Options.showTitle]
       */
-    var showTitle: js.UndefOr[Boolean] = js.native
+    var showTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPopup.Options.title]
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPopup.Options.titleTemplate]
       */
     var titleTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* titleElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems]
       */
-    var toolbarItems: js.UndefOr[js.Array[dxPopupToolbarItem]] = js.native
+    var toolbarItems: js.UndefOr[js.Array[dxPopupToolbarItem]] = js.undefined
   }
   object dxPopupOptions {
     
@@ -17555,7 +18695,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxPopupOptionsMutableBuilder[Self <: dxPopupOptions[_], T] (val x: Self with dxPopupOptions[T]) extends AnyVal {
+    implicit class dxPopupOptionsMutableBuilder[Self <: dxPopupOptions[?], T] (val x: Self & dxPopupOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAnimation(value: dxPopupAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
@@ -17576,16 +18716,16 @@ object ui {
       def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
       
       @scala.inline
-      def setOnResize(value: /* e */ `10`[T] => _): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      def setOnResize(value: /* e */ `10`[T] => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnResizeEnd(value: /* e */ `10`[T] => _): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
+      def setOnResizeEnd(value: /* e */ `10`[T] => js.Any): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResizeEndUndefined: Self = StObject.set(x, "onResizeEnd", js.undefined)
       
       @scala.inline
-      def setOnResizeStart(value: /* e */ `10`[T] => _): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction1(value))
+      def setOnResizeStart(value: /* e */ `10`[T] => js.Any): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResizeStartUndefined: Self = StObject.set(x, "onResizeStart", js.undefined)
@@ -17594,7 +18734,7 @@ object ui {
       def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       @scala.inline
-      def setOnTitleRendered(value: /* e */ ModelTitleElement[T] => _): Self = StObject.set(x, "onTitleRendered", js.Any.fromFunction1(value))
+      def setOnTitleRendered(value: /* e */ ModelTitleElement[T] => js.Any): Self = StObject.set(x, "onTitleRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTitleRenderedUndefined: Self = StObject.set(x, "onTitleRendered", js.undefined)
@@ -17653,55 +18793,54 @@ object ui {
     }
   }
   
-  @js.native
   trait dxPopupToolbarItem extends StObject {
     
     /**
       * [descr:dxPopup.Options.toolbarItems.disabled]
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.html]
       */
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.location]
       */
-    var location: js.UndefOr[after | before | center] = js.native
+    var location: js.UndefOr[after | before | center] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.options]
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.template]
       */
-    var template: js.UndefOr[typings.devextreme.mod.DevExpress.core.template] = js.native
+    var template: js.UndefOr[typings.devextreme.mod.DevExpress.core.template] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.toolbar]
       */
-    var toolbar: js.UndefOr[bottom | top] = js.native
+    var toolbar: js.UndefOr[bottom | top] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPopup.Options.toolbarItems.widget]
       */
     var widget: js.UndefOr[
         typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxButton | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxMenu | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxTabs | typings.devextreme.devextremeStrings.dxTextBox | typings.devextreme.devextremeStrings.dxButtonGroup | typings.devextreme.devextremeStrings.dxDropDownButton
-      ] = js.native
+      ] = js.undefined
   }
   object dxPopupToolbarItem {
     
@@ -17774,29 +18913,30 @@ object ui {
   
   type dxProgressBar = dxTrackBar
   
-  @js.native
-  trait dxProgressBarOptions extends dxTrackBarOptions[dxProgressBar] {
+  trait dxProgressBarOptions
+    extends StObject
+       with dxTrackBarOptions[dxProgressBar] {
     
     /**
       * [descr:dxProgressBar.Options.onComplete]
       */
-    var onComplete: js.UndefOr[js.Function1[/* e */ ComponentElementEventModel, _]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* e */ ComponentElementEventModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxProgressBar.Options.showStatus]
       */
-    var showStatus: js.UndefOr[Boolean] = js.native
+    var showStatus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxProgressBar.Options.statusFormat]
       */
-    var statusFormat: js.UndefOr[String | (js.Function2[/* ratio */ Double, /* value */ Double, String])] = js.native
+    var statusFormat: js.UndefOr[String | (js.Function2[/* ratio */ Double, /* value */ Double, String])] = js.undefined
     
     /**
       * [descr:dxProgressBar.Options.value]
       */
     @JSName("value")
-    var value_dxProgressBarOptions: js.UndefOr[Double] = js.native
+    var value_dxProgressBarOptions: js.UndefOr[Double] = js.undefined
   }
   object dxProgressBarOptions {
     
@@ -17810,7 +18950,7 @@ object ui {
     implicit class dxProgressBarOptionsMutableBuilder[Self <: dxProgressBarOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnComplete(value: /* e */ ComponentElementEventModel => _): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      def setOnComplete(value: /* e */ ComponentElementEventModel => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -17839,7 +18979,9 @@ object ui {
   }
   
   @js.native
-  trait dxRadioGroup extends Editor {
+  trait dxRadioGroup
+    extends StObject
+       with Editor {
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
@@ -17848,18 +18990,21 @@ object ui {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ @js.native
-  trait dxRadioGroupOptions extends EditorOptions[dxRadioGroup] {
+  - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ trait dxRadioGroupOptions
+    extends StObject
+       with EditorOptions[dxRadioGroup] {
     
     /**
       * [descr:DataExpressionMixin.Options.dataSource]
       */
-    var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource: js.UndefOr[
+        String | (js.Array[CollectionWidgetItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.displayExpr]
       */
-    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
+    var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.itemTemplate]
@@ -17871,27 +19016,27 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.items]
       */
-    var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.native
+    var items: js.UndefOr[js.Array[CollectionWidgetItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxRadioGroup.Options.layout]
       */
-    var layout: js.UndefOr[horizontal | vertical] = js.native
+    var layout: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * [descr:dxRadioGroup.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:DataExpressionMixin.Options.valueExpr]
       */
-    var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.native
+    var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.undefined
   }
   object dxRadioGroupOptions {
     
@@ -17905,7 +19050,7 @@ object ui {
     implicit class dxRadioGroupOptionsMutableBuilder[Self <: dxRadioGroupOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[CollectionWidgetItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -17941,7 +19086,7 @@ object ui {
       def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[CollectionWidgetItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[CollectionWidgetItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -17974,40 +19119,41 @@ object ui {
   
   type dxRangeSlider = dxSliderBase
   
-  @js.native
-  trait dxRangeSliderOptions extends dxSliderBaseOptions[dxRangeSlider] {
+  trait dxRangeSliderOptions
+    extends StObject
+       with dxSliderBaseOptions[dxRangeSlider] {
     
     /**
       * [descr:dxRangeSlider.Options.end]
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxRangeSlider.Options.endName]
       */
-    var endName: js.UndefOr[String] = js.native
+    var endName: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxRangeSlider.Options.onValueChanged]
       */
     @JSName("onValueChanged")
-    var onValueChanged_dxRangeSliderOptions: js.UndefOr[js.Function1[/* e */ End, _]] = js.native
+    var onValueChanged_dxRangeSliderOptions: js.UndefOr[js.Function1[/* e */ End, js.Any]] = js.undefined
     
     /**
       * [descr:dxRangeSlider.Options.start]
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxRangeSlider.Options.startName]
       */
-    var startName: js.UndefOr[String] = js.native
+    var startName: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxRangeSlider.Options.value]
       */
     @JSName("value")
-    var value_dxRangeSliderOptions: js.UndefOr[js.Array[Double]] = js.native
+    var value_dxRangeSliderOptions: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object dxRangeSliderOptions {
     
@@ -18033,7 +19179,7 @@ object ui {
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
       @scala.inline
-      def setOnValueChanged(value: /* e */ End => _): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      def setOnValueChanged(value: /* e */ End => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
@@ -18063,14 +19209,15 @@ object ui {
   
   type dxRecurrenceEditor = Editor
   
-  @js.native
-  trait dxRecurrenceEditorOptions extends EditorOptions[dxRecurrenceEditor] {
+  trait dxRecurrenceEditorOptions
+    extends StObject
+       with EditorOptions[dxRecurrenceEditor] {
     
     /**
       * [descr:dxRecurrenceEditor.Options.value]
       */
     @JSName("value")
-    var value_dxRecurrenceEditorOptions: js.UndefOr[String] = js.native
+    var value_dxRecurrenceEditorOptions: js.UndefOr[String] = js.undefined
   }
   object dxRecurrenceEditorOptions {
     
@@ -18093,48 +19240,49 @@ object ui {
   
   type dxResizable = DOMComponent
   
-  @js.native
-  trait dxResizableOptions extends DOMComponentOptions[dxResizable] {
+  trait dxResizableOptions
+    extends StObject
+       with DOMComponentOptions[dxResizable] {
     
     /**
       * [descr:dxResizable.Options.handles]
       */
-    var handles: js.UndefOr[bottom | left | right | top | all | String] = js.native
+    var handles: js.UndefOr[bottom | left | right | top | all | String] = js.undefined
     
     /**
       * [descr:dxResizable.Options.maxHeight]
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxResizable.Options.maxWidth]
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxResizable.Options.minHeight]
       */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxResizable.Options.minWidth]
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxResizable.Options.onResize]
       */
-    var onResize: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* e */ EventHeight, js.Any]] = js.undefined
     
     /**
       * [descr:dxResizable.Options.onResizeEnd]
       */
-    var onResizeEnd: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.native
+    var onResizeEnd: js.UndefOr[js.Function1[/* e */ EventHeight, js.Any]] = js.undefined
     
     /**
       * [descr:dxResizable.Options.onResizeStart]
       */
-    var onResizeStart: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.native
+    var onResizeStart: js.UndefOr[js.Function1[/* e */ EventHeight, js.Any]] = js.undefined
   }
   object dxResizableOptions {
     
@@ -18178,16 +19326,16 @@ object ui {
       def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
       @scala.inline
-      def setOnResize(value: /* e */ EventHeight => _): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      def setOnResize(value: /* e */ EventHeight => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOnResizeEnd(value: /* e */ EventHeight => _): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
+      def setOnResizeEnd(value: /* e */ EventHeight => js.Any): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResizeEndUndefined: Self = StObject.set(x, "onResizeEnd", js.undefined)
       
       @scala.inline
-      def setOnResizeStart(value: /* e */ EventHeight => _): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction1(value))
+      def setOnResizeStart(value: /* e */ EventHeight => js.Any): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResizeStartUndefined: Self = StObject.set(x, "onResizeStart", js.undefined)
@@ -18199,13 +19347,14 @@ object ui {
   
   type dxResponsiveBox = CollectionWidget
   
-  @js.native
-  trait dxResponsiveBoxItem extends CollectionWidgetItem {
+  trait dxResponsiveBoxItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxResponsiveBoxItem.location]
       */
-    var location: js.UndefOr[Col | js.Array[Col]] = js.native
+    var location: js.UndefOr[Col | js.Array[Col]] = js.undefined
   }
   object dxResponsiveBoxItem {
     
@@ -18231,42 +19380,43 @@ object ui {
   
   type dxResponsiveBoxItemTemplate = dxResponsiveBoxItem
   
-  @js.native
-  trait dxResponsiveBoxOptions extends CollectionWidgetOptions[dxResponsiveBox] {
+  trait dxResponsiveBoxOptions
+    extends StObject
+       with CollectionWidgetOptions[dxResponsiveBox] {
     
     /**
       * [descr:dxResponsiveBox.Options.cols]
       */
-    var cols: js.UndefOr[js.Array[BaseSize]] = js.native
+    var cols: js.UndefOr[js.Array[BaseSize]] = js.undefined
     
     /**
       * [descr:dxResponsiveBox.Options.dataSource]
       */
     @JSName("dataSource")
     var dataSource_dxResponsiveBoxOptions: js.UndefOr[
-        String | (js.Array[String | dxResponsiveBoxItem | _]) | DataSource | DataSourceOptions
-      ] = js.native
+        String | (js.Array[String | dxResponsiveBoxItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxResponsiveBox.Options.items]
       */
     @JSName("items")
-    var items_dxResponsiveBoxOptions: js.UndefOr[js.Array[String | dxResponsiveBoxItem | _]] = js.native
+    var items_dxResponsiveBoxOptions: js.UndefOr[js.Array[String | dxResponsiveBoxItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxResponsiveBox.Options.rows]
       */
-    var rows: js.UndefOr[js.Array[BaseSize]] = js.native
+    var rows: js.UndefOr[js.Array[BaseSize]] = js.undefined
     
     /**
       * [descr:dxResponsiveBox.Options.screenByWidth]
       */
-    var screenByWidth: js.UndefOr[js.Function] = js.native
+    var screenByWidth: js.UndefOr[js.Function] = js.undefined
     
     /**
       * [descr:dxResponsiveBox.Options.singleColumnScreen]
       */
-    var singleColumnScreen: js.UndefOr[String] = js.native
+    var singleColumnScreen: js.UndefOr[String] = js.undefined
   }
   object dxResponsiveBoxOptions {
     
@@ -18289,7 +19439,7 @@ object ui {
       def setColsVarargs(value: BaseSize*): Self = StObject.set(x, "cols", js.Array(value :_*))
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxResponsiveBoxItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxResponsiveBoxItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -18298,7 +19448,7 @@ object ui {
       def setDataSourceVarargs(value: (String | dxResponsiveBoxItem | js.Any)*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
       @scala.inline
-      def setItems(value: js.Array[String | dxResponsiveBoxItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxResponsiveBoxItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -18330,7 +19480,9 @@ object ui {
   }
   
   @js.native
-  trait dxScheduler extends Widget {
+  trait dxScheduler
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxScheduler.addAppointment(appointment)]
@@ -18378,25 +19530,13 @@ object ui {
       * [descr:dxScheduler.showAppointmentPopup(appointmentData, createNewAppointment, currentAppointmentData)]
       */
     def showAppointmentPopup(): Unit = js.native
-    def showAppointmentPopup(
-      appointmentData: js.UndefOr[scala.Nothing],
-      createNewAppointment: js.UndefOr[scala.Nothing],
-      currentAppointmentData: js.Any
-    ): Unit = js.native
-    def showAppointmentPopup(appointmentData: js.UndefOr[scala.Nothing], createNewAppointment: Boolean): Unit = js.native
-    def showAppointmentPopup(
-      appointmentData: js.UndefOr[scala.Nothing],
-      createNewAppointment: Boolean,
-      currentAppointmentData: js.Any
-    ): Unit = js.native
     def showAppointmentPopup(appointmentData: js.Any): Unit = js.native
-    def showAppointmentPopup(
-      appointmentData: js.Any,
-      createNewAppointment: js.UndefOr[scala.Nothing],
-      currentAppointmentData: js.Any
-    ): Unit = js.native
     def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean): Unit = js.native
     def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean, currentAppointmentData: js.Any): Unit = js.native
+    def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Unit, currentAppointmentData: js.Any): Unit = js.native
+    def showAppointmentPopup(appointmentData: Unit, createNewAppointment: Boolean): Unit = js.native
+    def showAppointmentPopup(appointmentData: Unit, createNewAppointment: Boolean, currentAppointmentData: js.Any): Unit = js.native
+    def showAppointmentPopup(appointmentData: Unit, createNewAppointment: Unit, currentAppointmentData: js.Any): Unit = js.native
     
     /**
       * [descr:dxScheduler.showAppointmentTooltip(appointmentData, target, currentAppointmentData)]
@@ -18414,54 +19554,55 @@ object ui {
     def updateAppointment(target: js.Any, appointment: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait dxSchedulerAppointment extends CollectionWidgetItem {
+  trait dxSchedulerAppointment
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxSchedulerAppointment.allDay]
       */
-    var allDay: js.UndefOr[Boolean] = js.native
+    var allDay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.description]
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.endDate]
       */
-    var endDate: js.UndefOr[Date] = js.native
+    var endDate: js.UndefOr[Date] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.endDateTimeZone]
       */
-    var endDateTimeZone: js.UndefOr[String] = js.native
+    var endDateTimeZone: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.recurrenceException]
       */
-    var recurrenceException: js.UndefOr[String] = js.native
+    var recurrenceException: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.recurrenceRule]
       */
-    var recurrenceRule: js.UndefOr[String] = js.native
+    var recurrenceRule: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.startDate]
       */
-    var startDate: js.UndefOr[Date] = js.native
+    var startDate: js.UndefOr[Date] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.startDateTimeZone]
       */
-    var startDateTimeZone: js.UndefOr[String] = js.native
+    var startDateTimeZone: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSchedulerAppointment.template]
       */
     @JSName("template")
-    var template_dxSchedulerAppointment: js.UndefOr[typings.devextreme.mod.DevExpress.core.template] = js.native
+    var template_dxSchedulerAppointment: js.UndefOr[typings.devextreme.mod.DevExpress.core.template] = js.undefined
   }
   object dxSchedulerAppointment {
     
@@ -18532,18 +19673,19 @@ object ui {
   
   type dxSchedulerAppointmentTemplate = dxSchedulerAppointment
   
-  @js.native
-  trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
+  trait dxSchedulerOptions
+    extends StObject
+       with WidgetOptions[dxScheduler] {
     
     /**
       * [descr:dxScheduler.Options.adaptivityEnabled]
       */
-    var adaptivityEnabled: js.UndefOr[Boolean] = js.native
+    var adaptivityEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.allDayExpr]
       */
-    var allDayExpr: js.UndefOr[String] = js.native
+    var allDayExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.appointmentCollectorTemplate]
@@ -18554,12 +19696,12 @@ object ui {
           /* collectorElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.appointmentDragging]
       */
-    var appointmentDragging: js.UndefOr[AutoScroll] = js.native
+    var appointmentDragging: js.UndefOr[AutoScroll] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.appointmentTemplate]
@@ -18571,7 +19713,7 @@ object ui {
           /* contentElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.appointmentTooltipTemplate]
@@ -18583,34 +19725,34 @@ object ui {
           /* contentElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.cellDuration]
       */
-    var cellDuration: js.UndefOr[Double] = js.native
+    var cellDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.crossScrollingEnabled]
       */
-    var crossScrollingEnabled: js.UndefOr[Boolean] = js.native
+    var crossScrollingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.currentDate]
       */
-    var currentDate: js.UndefOr[Date | Double | String] = js.native
+    var currentDate: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.currentView]
       */
     var currentView: js.UndefOr[
         agenda | day | month | timelineDay | timelineMonth | timelineWeek | timelineWorkWeek | week | workWeek
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.customizeDateNavigatorText]
       */
-    var customizeDateNavigatorText: js.UndefOr[js.Function1[/* info */ EndDate, String]] = js.native
+    var customizeDateNavigatorText: js.UndefOr[js.Function1[/* info */ EndDate, String]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.dataCellTemplate]
@@ -18622,12 +19764,12 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.dataSource]
       */
-    var dataSource: js.UndefOr[String | js.Array[dxSchedulerAppointment] | DataSource | DataSourceOptions] = js.native
+    var dataSource: js.UndefOr[String | js.Array[dxSchedulerAppointment] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.dateCellTemplate]
@@ -18639,17 +19781,17 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.dateSerializationFormat]
       */
-    var dateSerializationFormat: js.UndefOr[String] = js.native
+    var dateSerializationFormat: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.descriptionExpr]
       */
-    var descriptionExpr: js.UndefOr[String] = js.native
+    var descriptionExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.dropDownAppointmentTemplate]
@@ -18662,152 +19804,152 @@ object ui {
           /* contentElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.editing]
       */
-    var editing: js.UndefOr[Boolean | AllowAdding] = js.native
+    var editing: js.UndefOr[Boolean | AllowAdding] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.endDateExpr]
       */
-    var endDateExpr: js.UndefOr[String] = js.native
+    var endDateExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.endDateTimeZoneExpr]
       */
-    var endDateTimeZoneExpr: js.UndefOr[String] = js.native
+    var endDateTimeZoneExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.endDayHour]
       */
-    var endDayHour: js.UndefOr[Double] = js.native
+    var endDayHour: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.firstDayOfWeek]
       */
-    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.groupByDate]
       */
-    var groupByDate: js.UndefOr[Boolean] = js.native
+    var groupByDate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.groups]
       */
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.indicatorUpdateInterval]
       */
-    var indicatorUpdateInterval: js.UndefOr[Double] = js.native
+    var indicatorUpdateInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.max]
       */
-    var max: js.UndefOr[Date | Double | String] = js.native
+    var max: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.maxAppointmentsPerCell]
       */
-    var maxAppointmentsPerCell: js.UndefOr[Double | auto | unlimited] = js.native
+    var maxAppointmentsPerCell: js.UndefOr[Double | auto | unlimited] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.min]
       */
-    var min: js.UndefOr[Date | Double | String] = js.native
+    var min: js.UndefOr[Date | Double | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.noDataText]
       */
-    var noDataText: js.UndefOr[String] = js.native
+    var noDataText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentAdded]
       */
-    var onAppointmentAdded: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, _]] = js.native
+    var onAppointmentAdded: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentAdding]
       */
-    var onAppointmentAdding: js.UndefOr[js.Function1[/* e */ AppointmentDataCancel, _]] = js.native
+    var onAppointmentAdding: js.UndefOr[js.Function1[/* e */ AppointmentDataCancel, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentClick]
       */
-    var onAppointmentClick: js.UndefOr[(js.Function1[/* e */ AppointmentElement, _]) | String] = js.native
+    var onAppointmentClick: js.UndefOr[(js.Function1[/* e */ AppointmentElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentContextMenu]
       */
-    var onAppointmentContextMenu: js.UndefOr[(js.Function1[/* e */ TargetedAppointmentData, _]) | String] = js.native
+    var onAppointmentContextMenu: js.UndefOr[(js.Function1[/* e */ TargetedAppointmentData, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentDblClick]
       */
-    var onAppointmentDblClick: js.UndefOr[(js.Function1[/* e */ AppointmentElement, _]) | String] = js.native
+    var onAppointmentDblClick: js.UndefOr[(js.Function1[/* e */ AppointmentElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentDeleted]
       */
-    var onAppointmentDeleted: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, _]] = js.native
+    var onAppointmentDeleted: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentDeleting]
       */
-    var onAppointmentDeleting: js.UndefOr[js.Function1[/* e */ AppointmentDataCancel, _]] = js.native
+    var onAppointmentDeleting: js.UndefOr[js.Function1[/* e */ AppointmentDataCancel, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentFormOpening]
       */
-    var onAppointmentFormOpening: js.UndefOr[js.Function1[/* e */ Form, _]] = js.native
+    var onAppointmentFormOpening: js.UndefOr[js.Function1[/* e */ Form, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentRendered]
       */
-    var onAppointmentRendered: js.UndefOr[js.Function1[/* e */ AppointmentDataAppointmentElement, _]] = js.native
+    var onAppointmentRendered: js.UndefOr[js.Function1[/* e */ AppointmentDataAppointmentElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentUpdated]
       */
-    var onAppointmentUpdated: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, _]] = js.native
+    var onAppointmentUpdated: js.UndefOr[js.Function1[/* e */ AppointmentDataComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onAppointmentUpdating]
       */
-    var onAppointmentUpdating: js.UndefOr[js.Function1[/* e */ OldData, _]] = js.native
+    var onAppointmentUpdating: js.UndefOr[js.Function1[/* e */ OldData, js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onCellClick]
       */
-    var onCellClick: js.UndefOr[(js.Function1[/* e */ CellData, _]) | String] = js.native
+    var onCellClick: js.UndefOr[(js.Function1[/* e */ CellData, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.onCellContextMenu]
       */
-    var onCellContextMenu: js.UndefOr[(js.Function1[/* e */ CellDataCellElement, _]) | String] = js.native
+    var onCellContextMenu: js.UndefOr[(js.Function1[/* e */ CellDataCellElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.recurrenceEditMode]
       */
-    var recurrenceEditMode: js.UndefOr[dialog | occurrence | series] = js.native
+    var recurrenceEditMode: js.UndefOr[dialog | occurrence | series] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.recurrenceExceptionExpr]
       */
-    var recurrenceExceptionExpr: js.UndefOr[String] = js.native
+    var recurrenceExceptionExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.recurrenceRuleExpr]
       */
-    var recurrenceRuleExpr: js.UndefOr[String] = js.native
+    var recurrenceRuleExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.remoteFiltering]
       */
-    var remoteFiltering: js.UndefOr[Boolean] = js.native
+    var remoteFiltering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.resourceCellTemplate]
@@ -18819,57 +19961,57 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.resources]
       */
-    var resources: js.UndefOr[js.Array[AllowMultiple]] = js.native
+    var resources: js.UndefOr[js.Array[AllowMultiple]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.scrolling]
       */
-    var scrolling: js.UndefOr[dxSchedulerScrolling] = js.native
+    var scrolling: js.UndefOr[dxSchedulerScrolling] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.selectedCellData]
       */
-    var selectedCellData: js.UndefOr[js.Array[_]] = js.native
+    var selectedCellData: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.shadeUntilCurrentTime]
       */
-    var shadeUntilCurrentTime: js.UndefOr[Boolean] = js.native
+    var shadeUntilCurrentTime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.showAllDayPanel]
       */
-    var showAllDayPanel: js.UndefOr[Boolean] = js.native
+    var showAllDayPanel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.showCurrentTimeIndicator]
       */
-    var showCurrentTimeIndicator: js.UndefOr[Boolean] = js.native
+    var showCurrentTimeIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.startDateExpr]
       */
-    var startDateExpr: js.UndefOr[String] = js.native
+    var startDateExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.startDateTimeZoneExpr]
       */
-    var startDateTimeZoneExpr: js.UndefOr[String] = js.native
+    var startDateTimeZoneExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.startDayHour]
       */
-    var startDayHour: js.UndefOr[Double] = js.native
+    var startDayHour: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.textExpr]
       */
-    var textExpr: js.UndefOr[String] = js.native
+    var textExpr: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.timeCellTemplate]
@@ -18881,17 +20023,17 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.timeZone]
       */
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.useDropDownViewSwitcher]
       */
-    var useDropDownViewSwitcher: js.UndefOr[Boolean] = js.native
+    var useDropDownViewSwitcher: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScheduler.Options.views]
@@ -18900,7 +20042,7 @@ object ui {
         js.Array[
           day | week | workWeek | month | timelineDay | timelineWeek | timelineWorkWeek | timelineMonth | agenda | AgendaDuration
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object dxSchedulerOptions {
     
@@ -19167,94 +20309,94 @@ object ui {
       def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
       @scala.inline
-      def setOnAppointmentAdded(value: /* e */ AppointmentDataComponent => _): Self = StObject.set(x, "onAppointmentAdded", js.Any.fromFunction1(value))
+      def setOnAppointmentAdded(value: /* e */ AppointmentDataComponent => js.Any): Self = StObject.set(x, "onAppointmentAdded", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentAddedUndefined: Self = StObject.set(x, "onAppointmentAdded", js.undefined)
       
       @scala.inline
-      def setOnAppointmentAdding(value: /* e */ AppointmentDataCancel => _): Self = StObject.set(x, "onAppointmentAdding", js.Any.fromFunction1(value))
+      def setOnAppointmentAdding(value: /* e */ AppointmentDataCancel => js.Any): Self = StObject.set(x, "onAppointmentAdding", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentAddingUndefined: Self = StObject.set(x, "onAppointmentAdding", js.undefined)
       
       @scala.inline
-      def setOnAppointmentClick(value: (js.Function1[/* e */ AppointmentElement, _]) | String): Self = StObject.set(x, "onAppointmentClick", value.asInstanceOf[js.Any])
+      def setOnAppointmentClick(value: (js.Function1[/* e */ AppointmentElement, js.Any]) | String): Self = StObject.set(x, "onAppointmentClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnAppointmentClickFunction1(value: /* e */ AppointmentElement => _): Self = StObject.set(x, "onAppointmentClick", js.Any.fromFunction1(value))
+      def setOnAppointmentClickFunction1(value: /* e */ AppointmentElement => js.Any): Self = StObject.set(x, "onAppointmentClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentClickUndefined: Self = StObject.set(x, "onAppointmentClick", js.undefined)
       
       @scala.inline
-      def setOnAppointmentContextMenu(value: (js.Function1[/* e */ TargetedAppointmentData, _]) | String): Self = StObject.set(x, "onAppointmentContextMenu", value.asInstanceOf[js.Any])
+      def setOnAppointmentContextMenu(value: (js.Function1[/* e */ TargetedAppointmentData, js.Any]) | String): Self = StObject.set(x, "onAppointmentContextMenu", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnAppointmentContextMenuFunction1(value: /* e */ TargetedAppointmentData => _): Self = StObject.set(x, "onAppointmentContextMenu", js.Any.fromFunction1(value))
+      def setOnAppointmentContextMenuFunction1(value: /* e */ TargetedAppointmentData => js.Any): Self = StObject.set(x, "onAppointmentContextMenu", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentContextMenuUndefined: Self = StObject.set(x, "onAppointmentContextMenu", js.undefined)
       
       @scala.inline
-      def setOnAppointmentDblClick(value: (js.Function1[/* e */ AppointmentElement, _]) | String): Self = StObject.set(x, "onAppointmentDblClick", value.asInstanceOf[js.Any])
+      def setOnAppointmentDblClick(value: (js.Function1[/* e */ AppointmentElement, js.Any]) | String): Self = StObject.set(x, "onAppointmentDblClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnAppointmentDblClickFunction1(value: /* e */ AppointmentElement => _): Self = StObject.set(x, "onAppointmentDblClick", js.Any.fromFunction1(value))
+      def setOnAppointmentDblClickFunction1(value: /* e */ AppointmentElement => js.Any): Self = StObject.set(x, "onAppointmentDblClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentDblClickUndefined: Self = StObject.set(x, "onAppointmentDblClick", js.undefined)
       
       @scala.inline
-      def setOnAppointmentDeleted(value: /* e */ AppointmentDataComponent => _): Self = StObject.set(x, "onAppointmentDeleted", js.Any.fromFunction1(value))
+      def setOnAppointmentDeleted(value: /* e */ AppointmentDataComponent => js.Any): Self = StObject.set(x, "onAppointmentDeleted", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentDeletedUndefined: Self = StObject.set(x, "onAppointmentDeleted", js.undefined)
       
       @scala.inline
-      def setOnAppointmentDeleting(value: /* e */ AppointmentDataCancel => _): Self = StObject.set(x, "onAppointmentDeleting", js.Any.fromFunction1(value))
+      def setOnAppointmentDeleting(value: /* e */ AppointmentDataCancel => js.Any): Self = StObject.set(x, "onAppointmentDeleting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentDeletingUndefined: Self = StObject.set(x, "onAppointmentDeleting", js.undefined)
       
       @scala.inline
-      def setOnAppointmentFormOpening(value: /* e */ Form => _): Self = StObject.set(x, "onAppointmentFormOpening", js.Any.fromFunction1(value))
+      def setOnAppointmentFormOpening(value: /* e */ Form => js.Any): Self = StObject.set(x, "onAppointmentFormOpening", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentFormOpeningUndefined: Self = StObject.set(x, "onAppointmentFormOpening", js.undefined)
       
       @scala.inline
-      def setOnAppointmentRendered(value: /* e */ AppointmentDataAppointmentElement => _): Self = StObject.set(x, "onAppointmentRendered", js.Any.fromFunction1(value))
+      def setOnAppointmentRendered(value: /* e */ AppointmentDataAppointmentElement => js.Any): Self = StObject.set(x, "onAppointmentRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentRenderedUndefined: Self = StObject.set(x, "onAppointmentRendered", js.undefined)
       
       @scala.inline
-      def setOnAppointmentUpdated(value: /* e */ AppointmentDataComponent => _): Self = StObject.set(x, "onAppointmentUpdated", js.Any.fromFunction1(value))
+      def setOnAppointmentUpdated(value: /* e */ AppointmentDataComponent => js.Any): Self = StObject.set(x, "onAppointmentUpdated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentUpdatedUndefined: Self = StObject.set(x, "onAppointmentUpdated", js.undefined)
       
       @scala.inline
-      def setOnAppointmentUpdating(value: /* e */ OldData => _): Self = StObject.set(x, "onAppointmentUpdating", js.Any.fromFunction1(value))
+      def setOnAppointmentUpdating(value: /* e */ OldData => js.Any): Self = StObject.set(x, "onAppointmentUpdating", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAppointmentUpdatingUndefined: Self = StObject.set(x, "onAppointmentUpdating", js.undefined)
       
       @scala.inline
-      def setOnCellClick(value: (js.Function1[/* e */ CellData, _]) | String): Self = StObject.set(x, "onCellClick", value.asInstanceOf[js.Any])
+      def setOnCellClick(value: (js.Function1[/* e */ CellData, js.Any]) | String): Self = StObject.set(x, "onCellClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCellClickFunction1(value: /* e */ CellData => _): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
+      def setOnCellClickFunction1(value: /* e */ CellData => js.Any): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
       @scala.inline
-      def setOnCellContextMenu(value: (js.Function1[/* e */ CellDataCellElement, _]) | String): Self = StObject.set(x, "onCellContextMenu", value.asInstanceOf[js.Any])
+      def setOnCellContextMenu(value: (js.Function1[/* e */ CellDataCellElement, js.Any]) | String): Self = StObject.set(x, "onCellContextMenu", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCellContextMenuFunction1(value: /* e */ CellDataCellElement => _): Self = StObject.set(x, "onCellContextMenu", js.Any.fromFunction1(value))
+      def setOnCellContextMenuFunction1(value: /* e */ CellDataCellElement => js.Any): Self = StObject.set(x, "onCellContextMenu", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellContextMenuUndefined: Self = StObject.set(x, "onCellContextMenu", js.undefined)
@@ -19317,7 +20459,7 @@ object ui {
       def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
       
       @scala.inline
-      def setSelectedCellData(value: js.Array[_]): Self = StObject.set(x, "selectedCellData", value.asInstanceOf[js.Any])
+      def setSelectedCellData(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCellData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedCellDataUndefined: Self = StObject.set(x, "selectedCellData", js.undefined)
@@ -19414,13 +20556,12 @@ object ui {
     }
   }
   
-  @js.native
   trait dxSchedulerScrolling extends StObject {
     
     /**
       * [descr:dxSchedulerScrolling.mode]
       */
-    var mode: js.UndefOr[standard | virtual] = js.native
+    var mode: js.UndefOr[standard | virtual] = js.undefined
   }
   object dxSchedulerScrolling {
     
@@ -19442,7 +20583,9 @@ object ui {
   }
   
   @js.native
-  trait dxScrollView extends dxScrollable {
+  trait dxScrollView
+    extends StObject
+       with dxScrollable {
     
     /**
       * [descr:dxScrollView.refresh()]
@@ -19452,41 +20595,42 @@ object ui {
     /**
       * [descr:dxScrollView.release(preventScrollBottom)]
       */
-    def release(preventScrollBottom: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def release(preventScrollBottom: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxScrollViewOptions extends dxScrollableOptions[dxScrollView] {
+  trait dxScrollViewOptions
+    extends StObject
+       with dxScrollableOptions[dxScrollView] {
     
     /**
       * [descr:dxScrollView.Options.onPullDown]
       */
-    var onPullDown: js.UndefOr[js.Function1[/* e */ `11`, _]] = js.native
+    var onPullDown: js.UndefOr[js.Function1[/* e */ `11`, js.Any]] = js.undefined
     
     /**
       * [descr:dxScrollView.Options.onReachBottom]
       */
-    var onReachBottom: js.UndefOr[js.Function1[/* e */ `11`, _]] = js.native
+    var onReachBottom: js.UndefOr[js.Function1[/* e */ `11`, js.Any]] = js.undefined
     
     /**
       * [descr:dxScrollView.Options.pulledDownText]
       */
-    var pulledDownText: js.UndefOr[String] = js.native
+    var pulledDownText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScrollView.Options.pullingDownText]
       */
-    var pullingDownText: js.UndefOr[String] = js.native
+    var pullingDownText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScrollView.Options.reachBottomText]
       */
-    var reachBottomText: js.UndefOr[String] = js.native
+    var reachBottomText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxScrollView.Options.refreshingText]
       */
-    var refreshingText: js.UndefOr[String] = js.native
+    var refreshingText: js.UndefOr[String] = js.undefined
   }
   object dxScrollViewOptions {
     
@@ -19500,13 +20644,13 @@ object ui {
     implicit class dxScrollViewOptionsMutableBuilder[Self <: dxScrollViewOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnPullDown(value: /* e */ `11` => _): Self = StObject.set(x, "onPullDown", js.Any.fromFunction1(value))
+      def setOnPullDown(value: /* e */ `11` => js.Any): Self = StObject.set(x, "onPullDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPullDownUndefined: Self = StObject.set(x, "onPullDown", js.undefined)
       
       @scala.inline
-      def setOnReachBottom(value: /* e */ `11` => _): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction1(value))
+      def setOnReachBottom(value: /* e */ `11` => js.Any): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnReachBottomUndefined: Self = StObject.set(x, "onReachBottom", js.undefined)
@@ -19538,7 +20682,9 @@ object ui {
   }
   
   @js.native
-  trait dxScrollable extends DOMComponent {
+  trait dxScrollable
+    extends StObject
+       with DOMComponent {
     
     /**
       * [descr:dxScrollable.clientHeight()]
@@ -19607,56 +20753,57 @@ object ui {
     /**
       * [descr:dxScrollable.update()]
       */
-    def update(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def update(): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxScrollableOptions[T] extends DOMComponentOptions[T] {
+  trait dxScrollableOptions[T]
+    extends StObject
+       with DOMComponentOptions[T] {
     
     /**
       * [descr:dxScrollable.Options.bounceEnabled]
       */
-    var bounceEnabled: js.UndefOr[Boolean] = js.native
+    var bounceEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.direction]
       */
-    var direction: js.UndefOr[both | horizontal | vertical] = js.native
+    var direction: js.UndefOr[both | horizontal | vertical] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.disabled]
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.onScroll]
       */
-    var onScroll: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* e */ ReachedRight[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.onUpdated]
       */
-    var onUpdated: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.native
+    var onUpdated: js.UndefOr[js.Function1[/* e */ ReachedRight[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.scrollByContent]
       */
-    var scrollByContent: js.UndefOr[Boolean] = js.native
+    var scrollByContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.scrollByThumb]
       */
-    var scrollByThumb: js.UndefOr[Boolean] = js.native
+    var scrollByThumb: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.showScrollbar]
       */
-    var showScrollbar: js.UndefOr[onScroll | onHover | always | never] = js.native
+    var showScrollbar: js.UndefOr[onScroll | onHover | always | never] = js.undefined
     
     /**
       * [descr:dxScrollable.Options.useNative]
       */
-    var useNative: js.UndefOr[Boolean] = js.native
+    var useNative: js.UndefOr[Boolean] = js.undefined
   }
   object dxScrollableOptions {
     
@@ -19667,7 +20814,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxScrollableOptionsMutableBuilder[Self <: dxScrollableOptions[_], T] (val x: Self with dxScrollableOptions[T]) extends AnyVal {
+    implicit class dxScrollableOptionsMutableBuilder[Self <: dxScrollableOptions[?], T] (val x: Self & dxScrollableOptions[T]) extends AnyVal {
       
       @scala.inline
       def setBounceEnabled(value: Boolean): Self = StObject.set(x, "bounceEnabled", value.asInstanceOf[js.Any])
@@ -19688,13 +20835,13 @@ object ui {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setOnScroll(value: /* e */ ReachedRight[T] => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      def setOnScroll(value: /* e */ ReachedRight[T] => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       @scala.inline
-      def setOnUpdated(value: /* e */ ReachedRight[T] => _): Self = StObject.set(x, "onUpdated", js.Any.fromFunction1(value))
+      def setOnUpdated(value: /* e */ ReachedRight[T] => js.Any): Self = StObject.set(x, "onUpdated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnUpdatedUndefined: Self = StObject.set(x, "onUpdated", js.undefined)
@@ -19727,25 +20874,32 @@ object ui {
   
   type dxSelectBox = dxDropDownList
   
-  @js.native
-  trait dxSelectBoxOptions[T] extends dxDropDownListOptions[T] {
+  trait dxSelectBoxOptions[T]
+    extends StObject
+       with dxDropDownListOptions[T] {
     
     /**
       * [descr:dxSelectBox.Options.fieldTemplate]
       */
     var fieldTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* selectedItem */ js.Any, /* fieldElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxSelectBox.Options.onCustomItemCreating]
       */
-    var onCustomItemCreating: js.UndefOr[js.Function1[/* e */ CustomItem[T], _]] = js.native
+    var onCustomItemCreating: js.UndefOr[js.Function1[/* e */ CustomItem[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxSelectBox.Options.showSelectionControls]
       */
-    var showSelectionControls: js.UndefOr[Boolean] = js.native
+    var showSelectionControls: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * [descr:dxSelectBox.Options.valueChangeEvent]
+      */
+    @JSName("valueChangeEvent")
+    var valueChangeEvent_dxSelectBoxOptions: js.UndefOr[String] = js.undefined
   }
   object dxSelectBoxOptions {
     
@@ -19756,7 +20910,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxSelectBoxOptionsMutableBuilder[Self <: dxSelectBoxOptions[_], T] (val x: Self with dxSelectBoxOptions[T]) extends AnyVal {
+    implicit class dxSelectBoxOptionsMutableBuilder[Self <: dxSelectBoxOptions[?], T] (val x: Self & dxSelectBoxOptions[T]) extends AnyVal {
       
       @scala.inline
       def setFieldTemplate(
@@ -19770,7 +20924,7 @@ object ui {
       def setFieldTemplateUndefined: Self = StObject.set(x, "fieldTemplate", js.undefined)
       
       @scala.inline
-      def setOnCustomItemCreating(value: /* e */ CustomItem[T] => _): Self = StObject.set(x, "onCustomItemCreating", js.Any.fromFunction1(value))
+      def setOnCustomItemCreating(value: /* e */ CustomItem[T] => js.Any): Self = StObject.set(x, "onCustomItemCreating", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCustomItemCreatingUndefined: Self = StObject.set(x, "onCustomItemCreating", js.undefined)
@@ -19780,37 +20934,46 @@ object ui {
       
       @scala.inline
       def setShowSelectionControlsUndefined: Self = StObject.set(x, "showSelectionControls", js.undefined)
+      
+      @scala.inline
+      def setValueChangeEvent(value: String): Self = StObject.set(x, "valueChangeEvent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValueChangeEventUndefined: Self = StObject.set(x, "valueChangeEvent", js.undefined)
     }
   }
   
   @js.native
-  trait dxSlideOut extends CollectionWidget {
+  trait dxSlideOut
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxSlideOut.hideMenu()]
       */
-    def hideMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def hideMenu(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxSlideOut.showMenu()]
       */
-    def showMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def showMenu(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxSlideOut.toggleMenuVisibility(showing)]
       */
-    def toggleMenuVisibility(showing: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def toggleMenuVisibility(showing: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxSlideOutItem extends CollectionWidgetItem {
+  trait dxSlideOutItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxSlideOutItem.menuTemplate]
       */
     var menuTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
   }
   object dxSlideOutItem {
     
@@ -19836,29 +20999,30 @@ object ui {
   
   type dxSlideOutItemTemplate = dxSlideOutItem
   
-  @js.native
-  trait dxSlideOutOptions extends CollectionWidgetOptions[dxSlideOut] {
+  trait dxSlideOutOptions
+    extends StObject
+       with CollectionWidgetOptions[dxSlideOut] {
     
     /**
       * [descr:dxSlideOut.Options.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* container */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.dataSource]
       */
     @JSName("dataSource")
     var dataSource_dxSlideOutOptions: js.UndefOr[
-        String | (js.Array[String | dxSlideOutItem | _]) | DataSource | DataSourceOptions
-      ] = js.native
+        String | (js.Array[String | dxSlideOutItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.items]
       */
     @JSName("items")
-    var items_dxSlideOutOptions: js.UndefOr[js.Array[String | dxSlideOutItem | _]] = js.native
+    var items_dxSlideOutOptions: js.UndefOr[js.Array[String | dxSlideOutItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.menuGroupTemplate]
@@ -19870,12 +21034,12 @@ object ui {
           /* groupElement */ js.Any, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.menuGrouped]
       */
-    var menuGrouped: js.UndefOr[Boolean] = js.native
+    var menuGrouped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.menuItemTemplate]
@@ -19887,32 +21051,32 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.menuPosition]
       */
-    var menuPosition: js.UndefOr[inverted | normal] = js.native
+    var menuPosition: js.UndefOr[inverted | normal] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.menuVisible]
       */
-    var menuVisible: js.UndefOr[Boolean] = js.native
+    var menuVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.onMenuGroupRendered]
       */
-    var onMenuGroupRendered: js.UndefOr[js.Function1[/* e */ `12`, _]] = js.native
+    var onMenuGroupRendered: js.UndefOr[js.Function1[/* e */ `12`, js.Any]] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.onMenuItemRendered]
       */
-    var onMenuItemRendered: js.UndefOr[js.Function1[/* e */ `12`, _]] = js.native
+    var onMenuItemRendered: js.UndefOr[js.Function1[/* e */ `12`, js.Any]] = js.undefined
     
     /**
       * [descr:dxSlideOut.Options.swipeEnabled]
       */
-    var swipeEnabled: js.UndefOr[Boolean] = js.native
+    var swipeEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object dxSlideOutOptions {
     
@@ -19937,7 +21101,7 @@ object ui {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxSlideOutItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxSlideOutItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -19946,7 +21110,7 @@ object ui {
       def setDataSourceVarargs(value: (String | dxSlideOutItem | js.Any)*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
       @scala.inline
-      def setItems(value: js.Array[String | dxSlideOutItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxSlideOutItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -20009,13 +21173,13 @@ object ui {
       def setMenuVisibleUndefined: Self = StObject.set(x, "menuVisible", js.undefined)
       
       @scala.inline
-      def setOnMenuGroupRendered(value: /* e */ `12` => _): Self = StObject.set(x, "onMenuGroupRendered", js.Any.fromFunction1(value))
+      def setOnMenuGroupRendered(value: /* e */ `12` => js.Any): Self = StObject.set(x, "onMenuGroupRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMenuGroupRenderedUndefined: Self = StObject.set(x, "onMenuGroupRendered", js.undefined)
       
       @scala.inline
-      def setOnMenuItemRendered(value: /* e */ `12` => _): Self = StObject.set(x, "onMenuItemRendered", js.Any.fromFunction1(value))
+      def setOnMenuItemRendered(value: /* e */ `12` => js.Any): Self = StObject.set(x, "onMenuItemRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMenuItemRenderedUndefined: Self = StObject.set(x, "onMenuItemRendered", js.undefined)
@@ -20029,7 +21193,9 @@ object ui {
   }
   
   @js.native
-  trait dxSlideOutView extends Widget {
+  trait dxSlideOutView
+    extends StObject
+       with Widget {
     
     /**
       * [descr:dxSlideOutView.content()]
@@ -20039,7 +21205,7 @@ object ui {
     /**
       * [descr:dxSlideOutView.hideMenu()]
       */
-    def hideMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def hideMenu(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxSlideOutView.menuContent()]
@@ -20049,45 +21215,46 @@ object ui {
     /**
       * [descr:dxSlideOutView.showMenu()]
       */
-    def showMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def showMenu(): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxSlideOutView.toggleMenuVisibility()]
       */
-    def toggleMenuVisibility(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def toggleMenuVisibility(): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxSlideOutViewOptions extends WidgetOptions[dxSlideOutView] {
+  trait dxSlideOutViewOptions
+    extends StObject
+       with WidgetOptions[dxSlideOutView] {
     
     /**
       * [descr:dxSlideOutView.Options.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxSlideOutView.Options.menuPosition]
       */
-    var menuPosition: js.UndefOr[inverted | normal] = js.native
+    var menuPosition: js.UndefOr[inverted | normal] = js.undefined
     
     /**
       * [descr:dxSlideOutView.Options.menuTemplate]
       */
     var menuTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* menuElement */ dxElement, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* menuElement */ dxElement, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxSlideOutView.Options.menuVisible]
       */
-    var menuVisible: js.UndefOr[Boolean] = js.native
+    var menuVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSlideOutView.Options.swipeEnabled]
       */
-    var swipeEnabled: js.UndefOr[Boolean] = js.native
+    var swipeEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object dxSlideOutViewOptions {
     
@@ -20102,11 +21269,11 @@ object ui {
       
       @scala.inline
       def setContentTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, js.Any])
       ): Self = StObject.set(x, "contentTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setContentTemplateFunction1(value: /* contentElement */ dxElement => _): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
+      def setContentTemplateFunction1(value: /* contentElement */ dxElement => js.Any): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
@@ -20119,11 +21286,11 @@ object ui {
       
       @scala.inline
       def setMenuTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* menuElement */ dxElement, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* menuElement */ dxElement, js.Any])
       ): Self = StObject.set(x, "menuTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMenuTemplateFunction1(value: /* menuElement */ dxElement => _): Self = StObject.set(x, "menuTemplate", js.Any.fromFunction1(value))
+      def setMenuTemplateFunction1(value: /* menuElement */ dxElement => js.Any): Self = StObject.set(x, "menuTemplate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMenuTemplateUndefined: Self = StObject.set(x, "menuTemplate", js.undefined)
@@ -20146,38 +21313,39 @@ object ui {
   
   type dxSliderBase = dxTrackBar
   
-  @js.native
-  trait dxSliderBaseOptions[T] extends dxTrackBarOptions[T] {
+  trait dxSliderBaseOptions[T]
+    extends StObject
+       with dxTrackBarOptions[T] {
     
     /**
       * [descr:dxSliderBase.Options.keyStep]
       */
-    var keyStep: js.UndefOr[Double] = js.native
+    var keyStep: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxSliderBase.Options.label]
       */
-    var label: js.UndefOr[FormatPosition] = js.native
+    var label: js.UndefOr[FormatPosition] = js.undefined
     
     /**
       * [descr:dxSliderBase.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSliderBase.Options.showRange]
       */
-    var showRange: js.UndefOr[Boolean] = js.native
+    var showRange: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSliderBase.Options.step]
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxSliderBase.Options.tooltip]
       */
-    var tooltip: js.UndefOr[ShowMode] = js.native
+    var tooltip: js.UndefOr[ShowMode] = js.undefined
   }
   object dxSliderBaseOptions {
     
@@ -20188,7 +21356,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxSliderBaseOptionsMutableBuilder[Self <: dxSliderBaseOptions[_], T] (val x: Self with dxSliderBaseOptions[T]) extends AnyVal {
+    implicit class dxSliderBaseOptionsMutableBuilder[Self <: dxSliderBaseOptions[?], T] (val x: Self & dxSliderBaseOptions[T]) extends AnyVal {
       
       @scala.inline
       def setKeyStep(value: Double): Self = StObject.set(x, "keyStep", value.asInstanceOf[js.Any])
@@ -20228,14 +21396,15 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxSliderOptions extends dxSliderBaseOptions[dxSlider] {
+  trait dxSliderOptions
+    extends StObject
+       with dxSliderBaseOptions[dxSlider] {
     
     /**
       * [descr:dxSlider.Options.value]
       */
     @JSName("value")
-    var value_dxSliderOptions: js.UndefOr[Double] = js.native
+    var value_dxSliderOptions: js.UndefOr[Double] = js.undefined
   }
   object dxSliderOptions {
     
@@ -20257,7 +21426,9 @@ object ui {
   }
   
   @js.native
-  trait dxSortable extends DOMComponent {
+  trait dxSortable
+    extends StObject
+       with DOMComponent {
     
     /**
       * [descr:dxSortable.update()]
@@ -20265,18 +21436,19 @@ object ui {
     def update(): Unit = js.native
   }
   
-  @js.native
-  trait dxSortableOptions extends DraggableBaseOptions[dxSortable] {
+  trait dxSortableOptions
+    extends StObject
+       with DraggableBaseOptions[dxSortable] {
     
     /**
       * [descr:dxSortable.Options.allowDropInsideItem]
       */
-    var allowDropInsideItem: js.UndefOr[Boolean] = js.native
+    var allowDropInsideItem: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSortable.Options.allowReordering]
       */
-    var allowReordering: js.UndefOr[Boolean] = js.native
+    var allowReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSortable.Options.dragTemplate]
@@ -20287,62 +21459,62 @@ object ui {
           /* containerElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxSortable.Options.dropFeedbackMode]
       */
-    var dropFeedbackMode: js.UndefOr[push | indicate] = js.native
+    var dropFeedbackMode: js.UndefOr[push | indicate] = js.undefined
     
     /**
       * [descr:dxSortable.Options.filter]
       */
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSortable.Options.itemOrientation]
       */
-    var itemOrientation: js.UndefOr[horizontal | vertical] = js.native
+    var itemOrientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * [descr:dxSortable.Options.moveItemOnDrop]
       */
-    var moveItemOnDrop: js.UndefOr[Boolean] = js.native
+    var moveItemOnDrop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSortable.Options.onAdd]
       */
-    var onAdd: js.UndefOr[js.Function1[/* e */ ComponentDropInsideItem, _]] = js.native
+    var onAdd: js.UndefOr[js.Function1[/* e */ ComponentDropInsideItem, js.Any]] = js.undefined
     
     /**
       * [descr:dxSortable.Options.onDragChange]
       */
-    var onDragChange: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, _]] = js.native
+    var onDragChange: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxSortable.Options.onDragEnd]
       */
-    var onDragEnd: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, _]] = js.native
+    var onDragEnd: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxSortable.Options.onDragMove]
       */
-    var onDragMove: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, _]] = js.native
+    var onDragMove: js.UndefOr[js.Function1[/* e */ DropInsideItemElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxSortable.Options.onDragStart]
       */
-    var onDragStart: js.UndefOr[js.Function1[/* e */ FromDataFromIndex, _]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* e */ FromDataFromIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxSortable.Options.onRemove]
       */
-    var onRemove: js.UndefOr[js.Function1[/* e */ ItemElementModel, _]] = js.native
+    var onRemove: js.UndefOr[js.Function1[/* e */ ItemElementModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxSortable.Options.onReorder]
       */
-    var onReorder: js.UndefOr[js.Function1[/* e */ ModelPromise, _]] = js.native
+    var onReorder: js.UndefOr[js.Function1[/* e */ ModelPromise, js.Any]] = js.undefined
   }
   object dxSortableOptions {
     
@@ -20409,43 +21581,43 @@ object ui {
       def setMoveItemOnDropUndefined: Self = StObject.set(x, "moveItemOnDrop", js.undefined)
       
       @scala.inline
-      def setOnAdd(value: /* e */ ComponentDropInsideItem => _): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      def setOnAdd(value: /* e */ ComponentDropInsideItem => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
       @scala.inline
-      def setOnDragChange(value: /* e */ DropInsideItemElement => _): Self = StObject.set(x, "onDragChange", js.Any.fromFunction1(value))
+      def setOnDragChange(value: /* e */ DropInsideItemElement => js.Any): Self = StObject.set(x, "onDragChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragChangeUndefined: Self = StObject.set(x, "onDragChange", js.undefined)
       
       @scala.inline
-      def setOnDragEnd(value: /* e */ DropInsideItemElement => _): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      def setOnDragEnd(value: /* e */ DropInsideItemElement => js.Any): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
       @scala.inline
-      def setOnDragMove(value: /* e */ DropInsideItemElement => _): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
+      def setOnDragMove(value: /* e */ DropInsideItemElement => js.Any): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
       
       @scala.inline
-      def setOnDragStart(value: /* e */ FromDataFromIndex => _): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      def setOnDragStart(value: /* e */ FromDataFromIndex => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
       @scala.inline
-      def setOnRemove(value: /* e */ ItemElementModel => _): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+      def setOnRemove(value: /* e */ ItemElementModel => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
       @scala.inline
-      def setOnReorder(value: /* e */ ModelPromise => _): Self = StObject.set(x, "onReorder", js.Any.fromFunction1(value))
+      def setOnReorder(value: /* e */ ModelPromise => js.Any): Self = StObject.set(x, "onReorder", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnReorderUndefined: Self = StObject.set(x, "onReorder", js.undefined)
@@ -20454,34 +21626,35 @@ object ui {
   
   type dxSpeedDialAction = Widget
   
-  @js.native
-  trait dxSpeedDialActionOptions extends WidgetOptions[dxSpeedDialAction] {
+  trait dxSpeedDialActionOptions
+    extends StObject
+       with WidgetOptions[dxSpeedDialAction] {
     
     /**
       * [descr:dxSpeedDialAction.Options.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSpeedDialAction.Options.index]
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxSpeedDialAction.Options.label]
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSpeedDialAction.Options.onClick]
       */
-    var onClick: js.UndefOr[js.Function1[/* e */ ActionElement, _]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ ActionElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxSpeedDialAction.Options.onContentReady]
       */
     @JSName("onContentReady")
-    var onContentReady_dxSpeedDialActionOptions: js.UndefOr[js.Function1[/* e */ ActionElementComponent, _]] = js.native
+    var onContentReady_dxSpeedDialActionOptions: js.UndefOr[js.Function1[/* e */ ActionElementComponent, js.Any]] = js.undefined
   }
   object dxSpeedDialActionOptions {
     
@@ -20513,13 +21686,13 @@ object ui {
       def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* e */ ActionElement => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* e */ ActionElement => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnContentReady(value: /* e */ ActionElementComponent => _): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
+      def setOnContentReady(value: /* e */ ActionElementComponent => js.Any): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
@@ -20528,29 +21701,30 @@ object ui {
   
   type dxSwitch = Editor
   
-  @js.native
-  trait dxSwitchOptions extends EditorOptions[dxSwitch] {
+  trait dxSwitchOptions
+    extends StObject
+       with EditorOptions[dxSwitch] {
     
     /**
       * [descr:dxSwitch.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSwitch.Options.switchedOffText]
       */
-    var switchedOffText: js.UndefOr[String] = js.native
+    var switchedOffText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSwitch.Options.switchedOnText]
       */
-    var switchedOnText: js.UndefOr[String] = js.native
+    var switchedOnText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSwitch.Options.value]
       */
     @JSName("value")
-    var value_dxSwitchOptions: js.UndefOr[Boolean] = js.native
+    var value_dxSwitchOptions: js.UndefOr[Boolean] = js.undefined
   }
   object dxSwitchOptions {
     
@@ -20591,30 +21765,31 @@ object ui {
   
   type dxTabPanel = dxMultiView
   
-  @js.native
-  trait dxTabPanelItem extends CollectionWidgetItem {
+  trait dxTabPanelItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxTabPanelItem.badge]
       */
-    var badge: js.UndefOr[String] = js.native
+    var badge: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTabPanelItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTabPanelItem.tabTemplate]
       */
     var tabTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxTabPanelItem.title]
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object dxTabPanelItem {
     
@@ -20658,16 +21833,17 @@ object ui {
   
   type dxTabPanelItemTemplate = dxTabPanelItem
   
-  @js.native
-  trait dxTabPanelOptions extends dxMultiViewOptions[dxTabPanel] {
+  trait dxTabPanelOptions
+    extends StObject
+       with dxMultiViewOptions[dxTabPanel] {
     
     /**
       * [descr:dxTabPanel.Options.dataSource]
       */
     @JSName("dataSource")
     var dataSource_dxTabPanelOptions: js.UndefOr[
-        String | (js.Array[String | dxTabPanelItem | _]) | DataSource | DataSourceOptions
-      ] = js.native
+        String | (js.Array[String | dxTabPanelItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.itemTitleTemplate]
@@ -20679,48 +21855,48 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.items]
       */
     @JSName("items")
-    var items_dxTabPanelOptions: js.UndefOr[js.Array[String | dxTabPanelItem | _]] = js.native
+    var items_dxTabPanelOptions: js.UndefOr[js.Array[String | dxTabPanelItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.onTitleClick]
       */
-    var onTitleClick: js.UndefOr[(js.Function1[/* e */ EventItemDataItemElement, _]) | String] = js.native
+    var onTitleClick: js.UndefOr[(js.Function1[/* e */ EventItemDataItemElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.onTitleHold]
       */
-    var onTitleHold: js.UndefOr[js.Function1[/* e */ EventItemDataItemElement, _]] = js.native
+    var onTitleHold: js.UndefOr[js.Function1[/* e */ EventItemDataItemElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.onTitleRendered]
       */
-    var onTitleRendered: js.UndefOr[js.Function1[/* e */ ElementItemDataItemElement, _]] = js.native
+    var onTitleRendered: js.UndefOr[js.Function1[/* e */ ElementItemDataItemElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.repaintChangesOnly]
       */
-    var repaintChangesOnly: js.UndefOr[Boolean] = js.native
+    var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.scrollByContent]
       */
-    var scrollByContent: js.UndefOr[Boolean] = js.native
+    var scrollByContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.scrollingEnabled]
       */
-    var scrollingEnabled: js.UndefOr[Boolean] = js.native
+    var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTabPanel.Options.showNavButtons]
       */
-    var showNavButtons: js.UndefOr[Boolean] = js.native
+    var showNavButtons: js.UndefOr[Boolean] = js.undefined
   }
   object dxTabPanelOptions {
     
@@ -20734,7 +21910,7 @@ object ui {
     implicit class dxTabPanelOptionsMutableBuilder[Self <: dxTabPanelOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxTabPanelItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxTabPanelItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -20761,7 +21937,7 @@ object ui {
       def setItemTitleTemplateUndefined: Self = StObject.set(x, "itemTitleTemplate", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | dxTabPanelItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxTabPanelItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -20770,22 +21946,22 @@ object ui {
       def setItemsVarargs(value: (String | dxTabPanelItem | js.Any)*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setOnTitleClick(value: (js.Function1[/* e */ EventItemDataItemElement, _]) | String): Self = StObject.set(x, "onTitleClick", value.asInstanceOf[js.Any])
+      def setOnTitleClick(value: (js.Function1[/* e */ EventItemDataItemElement, js.Any]) | String): Self = StObject.set(x, "onTitleClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnTitleClickFunction1(value: /* e */ EventItemDataItemElement => _): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction1(value))
+      def setOnTitleClickFunction1(value: /* e */ EventItemDataItemElement => js.Any): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTitleClickUndefined: Self = StObject.set(x, "onTitleClick", js.undefined)
       
       @scala.inline
-      def setOnTitleHold(value: /* e */ EventItemDataItemElement => _): Self = StObject.set(x, "onTitleHold", js.Any.fromFunction1(value))
+      def setOnTitleHold(value: /* e */ EventItemDataItemElement => js.Any): Self = StObject.set(x, "onTitleHold", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTitleHoldUndefined: Self = StObject.set(x, "onTitleHold", js.undefined)
       
       @scala.inline
-      def setOnTitleRendered(value: /* e */ ElementItemDataItemElement => _): Self = StObject.set(x, "onTitleRendered", js.Any.fromFunction1(value))
+      def setOnTitleRendered(value: /* e */ ElementItemDataItemElement => js.Any): Self = StObject.set(x, "onTitleRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTitleRenderedUndefined: Self = StObject.set(x, "onTitleRendered", js.undefined)
@@ -20818,18 +21994,19 @@ object ui {
   
   type dxTabs = CollectionWidget
   
-  @js.native
-  trait dxTabsItem extends CollectionWidgetItem {
+  trait dxTabsItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxTabsItem.badge]
       */
-    var badge: js.UndefOr[String] = js.native
+    var badge: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTabsItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
   }
   object dxTabsItem {
     
@@ -20858,51 +22035,54 @@ object ui {
   
   type dxTabsItemTemplate = dxTabsItem
   
-  @js.native
-  trait dxTabsOptions[T] extends CollectionWidgetOptions[T] {
+  trait dxTabsOptions[T]
+    extends StObject
+       with CollectionWidgetOptions[T] {
     
     /**
       * [descr:dxTabs.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxTabsOptions: js.UndefOr[String | (js.Array[String | dxTabsItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxTabsOptions: js.UndefOr[
+        String | (js.Array[String | dxTabsItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxTabs.Options.items]
       */
     @JSName("items")
-    var items_dxTabsOptions: js.UndefOr[js.Array[String | dxTabsItem | _]] = js.native
+    var items_dxTabsOptions: js.UndefOr[js.Array[String | dxTabsItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxTabs.Options.repaintChangesOnly]
       */
-    var repaintChangesOnly: js.UndefOr[Boolean] = js.native
+    var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTabs.Options.scrollByContent]
       */
-    var scrollByContent: js.UndefOr[Boolean] = js.native
+    var scrollByContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTabs.Options.scrollingEnabled]
       */
-    var scrollingEnabled: js.UndefOr[Boolean] = js.native
+    var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTabs.Options.selectedItems]
       */
     @JSName("selectedItems")
-    var selectedItems_dxTabsOptions: js.UndefOr[js.Array[String | Double | _]] = js.native
+    var selectedItems_dxTabsOptions: js.UndefOr[js.Array[String | Double | js.Any]] = js.undefined
     
     /**
       * [descr:dxTabs.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[multiple | single_] = js.native
+    var selectionMode: js.UndefOr[multiple | single_] = js.undefined
     
     /**
       * [descr:dxTabs.Options.showNavButtons]
       */
-    var showNavButtons: js.UndefOr[Boolean] = js.native
+    var showNavButtons: js.UndefOr[Boolean] = js.undefined
   }
   object dxTabsOptions {
     
@@ -20913,10 +22093,10 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxTabsOptionsMutableBuilder[Self <: dxTabsOptions[_], T] (val x: Self with dxTabsOptions[T]) extends AnyVal {
+    implicit class dxTabsOptionsMutableBuilder[Self <: dxTabsOptions[?], T] (val x: Self & dxTabsOptions[T]) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxTabsItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxTabsItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -20925,7 +22105,7 @@ object ui {
       def setDataSourceVarargs(value: (String | dxTabsItem | js.Any)*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
       @scala.inline
-      def setItems(value: js.Array[String | dxTabsItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxTabsItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -20952,7 +22132,7 @@ object ui {
       def setScrollingEnabledUndefined: Self = StObject.set(x, "scrollingEnabled", js.undefined)
       
       @scala.inline
-      def setSelectedItems(value: js.Array[String | Double | _]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      def setSelectedItems(value: js.Array[String | Double | js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
@@ -20976,67 +22156,68 @@ object ui {
   
   type dxTagBox = dxSelectBox
   
-  @js.native
-  trait dxTagBoxOptions extends dxSelectBoxOptions[dxTagBox] {
+  trait dxTagBoxOptions
+    extends StObject
+       with dxSelectBoxOptions[dxTagBox] {
     
     /**
       * [descr:dxTagBox.Options.hideSelectedItems]
       */
-    var hideSelectedItems: js.UndefOr[Boolean] = js.native
+    var hideSelectedItems: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.maxDisplayedTags]
       */
-    var maxDisplayedTags: js.UndefOr[Double] = js.native
+    var maxDisplayedTags: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.multiline]
       */
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.onMultiTagPreparing]
       */
-    var onMultiTagPreparing: js.UndefOr[js.Function1[/* e */ MultiTagElement, _]] = js.native
+    var onMultiTagPreparing: js.UndefOr[js.Function1[/* e */ MultiTagElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.onSelectAllValueChanged]
       */
-    var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ ElementModelValue, _]] = js.native
+    var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ ElementModelValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.onSelectionChanged]
       */
     @JSName("onSelectionChanged")
-    var onSelectionChanged_dxTagBoxOptions: js.UndefOr[js.Function1[/* e */ AddedItemsComponent, _]] = js.native
+    var onSelectionChanged_dxTagBoxOptions: js.UndefOr[js.Function1[/* e */ AddedItemsComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.selectAllMode]
       */
-    var selectAllMode: js.UndefOr[allPages | page] = js.native
+    var selectAllMode: js.UndefOr[allPages | page] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.selectedItems]
       */
-    var selectedItems: js.UndefOr[js.Array[String | Double | _]] = js.native
+    var selectedItems: js.UndefOr[js.Array[String | Double | js.Any]] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.showMultiTagOnly]
       */
-    var showMultiTagOnly: js.UndefOr[Boolean] = js.native
+    var showMultiTagOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.tagTemplate]
       */
     var tagTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* itemData */ js.Any, /* itemElement */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxTagBox.Options.value]
       */
     @JSName("value")
-    var value_dxTagBoxOptions: js.UndefOr[js.Array[String | Double | _]] = js.native
+    var value_dxTagBoxOptions: js.UndefOr[js.Array[String | Double | js.Any]] = js.undefined
   }
   object dxTagBoxOptions {
     
@@ -21068,19 +22249,19 @@ object ui {
       def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
       @scala.inline
-      def setOnMultiTagPreparing(value: /* e */ MultiTagElement => _): Self = StObject.set(x, "onMultiTagPreparing", js.Any.fromFunction1(value))
+      def setOnMultiTagPreparing(value: /* e */ MultiTagElement => js.Any): Self = StObject.set(x, "onMultiTagPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMultiTagPreparingUndefined: Self = StObject.set(x, "onMultiTagPreparing", js.undefined)
       
       @scala.inline
-      def setOnSelectAllValueChanged(value: /* e */ ElementModelValue => _): Self = StObject.set(x, "onSelectAllValueChanged", js.Any.fromFunction1(value))
+      def setOnSelectAllValueChanged(value: /* e */ ElementModelValue => js.Any): Self = StObject.set(x, "onSelectAllValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectAllValueChangedUndefined: Self = StObject.set(x, "onSelectAllValueChanged", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ AddedItemsComponent => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ AddedItemsComponent => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
@@ -21092,7 +22273,7 @@ object ui {
       def setSelectAllModeUndefined: Self = StObject.set(x, "selectAllMode", js.undefined)
       
       @scala.inline
-      def setSelectedItems(value: js.Array[String | Double | _]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      def setSelectedItems(value: js.Array[String | Double | js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
@@ -21118,7 +22299,7 @@ object ui {
       def setTagTemplateUndefined: Self = StObject.set(x, "tagTemplate", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Array[String | Double | _]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[String | Double | js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -21130,23 +22311,24 @@ object ui {
   
   type dxTextArea = dxTextBox
   
-  @js.native
-  trait dxTextAreaOptions extends dxTextBoxOptions[dxTextArea] {
+  trait dxTextAreaOptions
+    extends StObject
+       with dxTextBoxOptions[dxTextArea] {
     
     /**
       * [descr:dxTextArea.Options.autoResizeEnabled]
       */
-    var autoResizeEnabled: js.UndefOr[Boolean] = js.native
+    var autoResizeEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTextArea.Options.maxHeight]
       */
-    var maxHeight: js.UndefOr[Double | String] = js.native
+    var maxHeight: js.UndefOr[Double | String] = js.undefined
     
     /**
       * [descr:dxTextArea.Options.minHeight]
       */
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
   }
   object dxTextAreaOptions {
     
@@ -21181,24 +22363,25 @@ object ui {
   
   type dxTextBox = dxTextEditor
   
-  @js.native
-  trait dxTextBoxOptions[T] extends dxTextEditorOptions[T] {
+  trait dxTextBoxOptions[T]
+    extends StObject
+       with dxTextEditorOptions[T] {
     
     /**
       * [descr:dxTextBox.Options.maxLength]
       */
-    var maxLength: js.UndefOr[String | Double] = js.native
+    var maxLength: js.UndefOr[String | Double] = js.undefined
     
     /**
       * [descr:dxTextBox.Options.mode]
       */
-    var mode: js.UndefOr[email | password | search | tel | text | url] = js.native
+    var mode: js.UndefOr[email | password | search | tel | text | url] = js.undefined
     
     /**
       * [descr:dxTextBox.Options.value]
       */
     @JSName("value")
-    var value_dxTextBoxOptions: js.UndefOr[String] = js.native
+    var value_dxTextBoxOptions: js.UndefOr[String] = js.undefined
   }
   object dxTextBoxOptions {
     
@@ -21209,7 +22392,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxTextBoxOptionsMutableBuilder[Self <: dxTextBoxOptions[_], T] (val x: Self with dxTextBoxOptions[T]) extends AnyVal {
+    implicit class dxTextBoxOptionsMutableBuilder[Self <: dxTextBoxOptions[?], T] (val x: Self & dxTextBoxOptions[T]) extends AnyVal {
       
       @scala.inline
       def setMaxLength(value: String | Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
@@ -21232,7 +22415,9 @@ object ui {
   }
   
   @js.native
-  trait dxTextEditor extends Editor {
+  trait dxTextEditor
+    extends StObject
+       with Editor {
     
     /**
       * [descr:dxTextEditor.blur()]
@@ -21245,23 +22430,22 @@ object ui {
     def getButton(name: String): js.UndefOr[dxButton] = js.native
   }
   
-  @js.native
   trait dxTextEditorButton extends StObject {
     
     /**
       * [descr:dxTextEditorButton.location]
       */
-    var location: js.UndefOr[after | before] = js.native
+    var location: js.UndefOr[after | before] = js.undefined
     
     /**
       * [descr:dxTextEditorButton.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTextEditorButton.options]
       */
-    var options: js.UndefOr[dxButtonOptions] = js.native
+    var options: js.UndefOr[dxButtonOptions] = js.undefined
   }
   object dxTextEditorButton {
     
@@ -21294,139 +22478,140 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTextEditorOptions[T] extends EditorOptions[T] {
+  trait dxTextEditorOptions[T]
+    extends StObject
+       with EditorOptions[T] {
     
     /**
       * [descr:dxTextEditor.Options.buttons]
       */
-    var buttons: js.UndefOr[js.Array[String | clear | dxTextEditorButton]] = js.native
+    var buttons: js.UndefOr[js.Array[String | clear | dxTextEditorButton]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.inputAttr]
       */
-    var inputAttr: js.UndefOr[js.Any] = js.native
+    var inputAttr: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.mask]
       */
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.maskChar]
       */
-    var maskChar: js.UndefOr[String] = js.native
+    var maskChar: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.maskInvalidMessage]
       */
-    var maskInvalidMessage: js.UndefOr[String] = js.native
+    var maskInvalidMessage: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.maskRules]
       */
-    var maskRules: js.UndefOr[js.Any] = js.native
+    var maskRules: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onChange]
       */
-    var onChange: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onCopy]
       */
-    var onCopy: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onCopy: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onCut]
       */
-    var onCut: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onCut: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onEnterKey]
       */
-    var onEnterKey: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onEnterKey: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onFocusIn]
       */
-    var onFocusIn: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onFocusIn: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onFocusOut]
       */
-    var onFocusOut: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onFocusOut: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onInput]
       */
-    var onInput: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onInput: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onKeyDown]
       */
-    var onKeyDown: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onKeyPress]
       * @deprecated [depNote:dxTextEditor.Options.onKeyPress]
       */
-    var onKeyPress: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onKeyUp]
       */
-    var onKeyUp: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onKeyUp: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.onPaste]
       */
-    var onPaste: js.UndefOr[js.Function1[/* e */ `13`[T], _]] = js.native
+    var onPaste: js.UndefOr[js.Function1[/* e */ `13`[T], js.Any]] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.placeholder]
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.showClearButton]
       */
-    var showClearButton: js.UndefOr[Boolean] = js.native
+    var showClearButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.showMaskMode]
       */
-    var showMaskMode: js.UndefOr[always | onFocus] = js.native
+    var showMaskMode: js.UndefOr[always | onFocus] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.spellcheck]
       */
-    var spellcheck: js.UndefOr[Boolean] = js.native
+    var spellcheck: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.stylingMode]
       */
-    var stylingMode: js.UndefOr[outlined | underlined | filled] = js.native
+    var stylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.useMaskedValue]
       */
-    var useMaskedValue: js.UndefOr[Boolean] = js.native
+    var useMaskedValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTextEditor.Options.valueChangeEvent]
       */
-    var valueChangeEvent: js.UndefOr[String] = js.native
+    var valueChangeEvent: js.UndefOr[String] = js.undefined
   }
   object dxTextEditorOptions {
     
@@ -21437,7 +22622,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxTextEditorOptionsMutableBuilder[Self <: dxTextEditorOptions[_], T] (val x: Self with dxTextEditorOptions[T]) extends AnyVal {
+    implicit class dxTextEditorOptionsMutableBuilder[Self <: dxTextEditorOptions[?], T] (val x: Self & dxTextEditorOptions[T]) extends AnyVal {
       
       @scala.inline
       def setButtons(value: js.Array[String | clear | dxTextEditorButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
@@ -21485,67 +22670,67 @@ object ui {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnCopy(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      def setOnCopy(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
       @scala.inline
-      def setOnCut(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      def setOnCut(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
       
       @scala.inline
-      def setOnEnterKey(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onEnterKey", js.Any.fromFunction1(value))
+      def setOnEnterKey(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onEnterKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEnterKeyUndefined: Self = StObject.set(x, "onEnterKey", js.undefined)
       
       @scala.inline
-      def setOnFocusIn(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onFocusIn", js.Any.fromFunction1(value))
+      def setOnFocusIn(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onFocusIn", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusInUndefined: Self = StObject.set(x, "onFocusIn", js.undefined)
       
       @scala.inline
-      def setOnFocusOut(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
+      def setOnFocusOut(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusOutUndefined: Self = StObject.set(x, "onFocusOut", js.undefined)
       
       @scala.inline
-      def setOnInput(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      def setOnInput(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
       @scala.inline
-      def setOnKeyDown(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      def setOnKeyDown(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       @scala.inline
-      def setOnKeyPress(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      def setOnKeyPress(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
       @scala.inline
-      def setOnKeyUp(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      def setOnKeyUp(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
       @scala.inline
-      def setOnPaste(value: /* e */ `13`[T] => _): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      def setOnPaste(value: /* e */ `13`[T] => js.Any): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
@@ -21601,7 +22786,9 @@ object ui {
   }
   
   @js.native
-  trait dxTileView extends CollectionWidget {
+  trait dxTileView
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxTileView.scrollPosition()]
@@ -21609,18 +22796,19 @@ object ui {
     def scrollPosition(): Double = js.native
   }
   
-  @js.native
-  trait dxTileViewItem extends CollectionWidgetItem {
+  trait dxTileViewItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxTileViewItem.heightRatio]
       */
-    var heightRatio: js.UndefOr[Double] = js.native
+    var heightRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTileViewItem.widthRatio]
       */
-    var widthRatio: js.UndefOr[Double] = js.native
+    var widthRatio: js.UndefOr[Double] = js.undefined
   }
   object dxTileViewItem {
     
@@ -21649,47 +22837,48 @@ object ui {
   
   type dxTileViewItemTemplate = dxTileViewItem
   
-  @js.native
-  trait dxTileViewOptions extends CollectionWidgetOptions[dxTileView] {
+  trait dxTileViewOptions
+    extends StObject
+       with CollectionWidgetOptions[dxTileView] {
     
     /**
       * [descr:dxTileView.Options.baseItemHeight]
       */
-    var baseItemHeight: js.UndefOr[Double] = js.native
+    var baseItemHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTileView.Options.baseItemWidth]
       */
-    var baseItemWidth: js.UndefOr[Double] = js.native
+    var baseItemWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTileView.Options.dataSource]
       */
     @JSName("dataSource")
     var dataSource_dxTileViewOptions: js.UndefOr[
-        String | (js.Array[String | dxTileViewItem | _]) | DataSource | DataSourceOptions
-      ] = js.native
+        String | (js.Array[String | dxTileViewItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxTileView.Options.direction]
       */
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * [descr:dxTileView.Options.itemMargin]
       */
-    var itemMargin: js.UndefOr[Double] = js.native
+    var itemMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTileView.Options.items]
       */
     @JSName("items")
-    var items_dxTileViewOptions: js.UndefOr[js.Array[String | dxTileViewItem | _]] = js.native
+    var items_dxTileViewOptions: js.UndefOr[js.Array[String | dxTileViewItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxTileView.Options.showScrollbar]
       */
-    var showScrollbar: js.UndefOr[Boolean] = js.native
+    var showScrollbar: js.UndefOr[Boolean] = js.undefined
   }
   object dxTileViewOptions {
     
@@ -21715,7 +22904,7 @@ object ui {
       def setBaseItemWidthUndefined: Self = StObject.set(x, "baseItemWidth", js.undefined)
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxTileViewItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxTileViewItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -21736,7 +22925,7 @@ object ui {
       def setItemMarginUndefined: Self = StObject.set(x, "itemMargin", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[String | dxTileViewItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxTileViewItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -21754,8 +22943,9 @@ object ui {
   
   type dxToast = dxOverlay
   
-  @js.native
-  trait dxToastAnimation extends dxOverlayAnimation
+  trait dxToastAnimation
+    extends StObject
+       with dxOverlayAnimation
   object dxToastAnimation {
     
     @scala.inline
@@ -21765,45 +22955,46 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxToastOptions extends dxOverlayOptions[dxToast] {
+  trait dxToastOptions
+    extends StObject
+       with dxOverlayOptions[dxToast] {
     
     /**
       * [descr:dxToast.Options.animation]
       */
     @JSName("animation")
-    var animation_dxToastOptions: js.UndefOr[dxToastAnimation] = js.native
+    var animation_dxToastOptions: js.UndefOr[dxToastAnimation] = js.undefined
     
     /**
       * [descr:dxToast.Options.closeOnClick]
       */
-    var closeOnClick: js.UndefOr[Boolean] = js.native
+    var closeOnClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxToast.Options.closeOnSwipe]
       */
-    var closeOnSwipe: js.UndefOr[Boolean] = js.native
+    var closeOnSwipe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxToast.Options.displayTime]
       */
-    var displayTime: js.UndefOr[Double] = js.native
+    var displayTime: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxToast.Options.message]
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxToast.Options.position]
       */
     @JSName("position")
-    var position_dxToastOptions: js.UndefOr[positionConfig | String] = js.native
+    var position_dxToastOptions: js.UndefOr[positionConfig | String] = js.undefined
     
     /**
       * [descr:dxToast.Options.type]
       */
-    var `type`: js.UndefOr[custom | error | info | success | warning] = js.native
+    var `type`: js.UndefOr[custom | error | info | success | warning] = js.undefined
   }
   object dxToastOptions {
     
@@ -21862,47 +23053,48 @@ object ui {
   
   type dxToolbar = CollectionWidget
   
-  @js.native
-  trait dxToolbarItem extends CollectionWidgetItem {
+  trait dxToolbarItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxToolbarItem.cssClass]
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxToolbarItem.locateInMenu]
       */
-    var locateInMenu: js.UndefOr[always | auto | never] = js.native
+    var locateInMenu: js.UndefOr[always | auto | never] = js.undefined
     
     /**
       * [descr:dxToolbarItem.location]
       */
-    var location: js.UndefOr[after | before | center] = js.native
+    var location: js.UndefOr[after | before | center] = js.undefined
     
     /**
       * [descr:dxToolbarItem.menuItemTemplate]
       */
     var menuItemTemplate: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxToolbarItem.options]
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxToolbarItem.showText]
       */
-    var showText: js.UndefOr[always | inMenu] = js.native
+    var showText: js.UndefOr[always | inMenu] = js.undefined
     
     /**
       * [descr:dxToolbarItem.widget]
       */
     var widget: js.UndefOr[
         typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxButton | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxMenu | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxTabs | typings.devextreme.devextremeStrings.dxTextBox | typings.devextreme.devextremeStrings.dxButtonGroup | typings.devextreme.devextremeStrings.dxDropDownButton
-      ] = js.native
+      ] = js.undefined
   }
   object dxToolbarItem {
     
@@ -21966,20 +23158,23 @@ object ui {
   
   type dxToolbarItemTemplate = dxToolbarItem
   
-  @js.native
-  trait dxToolbarOptions extends CollectionWidgetOptions[dxToolbar] {
+  trait dxToolbarOptions
+    extends StObject
+       with CollectionWidgetOptions[dxToolbar] {
     
     /**
       * [descr:dxToolbar.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxToolbarOptions: js.UndefOr[String | (js.Array[String | dxToolbarItem | _]) | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxToolbarOptions: js.UndefOr[
+        String | (js.Array[String | dxToolbarItem | js.Any]) | DataSource | DataSourceOptions
+      ] = js.undefined
     
     /**
       * [descr:dxToolbar.Options.items]
       */
     @JSName("items")
-    var items_dxToolbarOptions: js.UndefOr[js.Array[String | dxToolbarItem | _]] = js.native
+    var items_dxToolbarOptions: js.UndefOr[js.Array[String | dxToolbarItem | js.Any]] = js.undefined
     
     /**
       * [descr:dxToolbar.Options.menuItemTemplate]
@@ -21991,7 +23186,7 @@ object ui {
           /* itemElement */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxToolbarOptions {
     
@@ -22005,7 +23200,7 @@ object ui {
     implicit class dxToolbarOptionsMutableBuilder[Self <: dxToolbarOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: String | (js.Array[String | dxToolbarItem | _]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: String | (js.Array[String | dxToolbarItem | js.Any]) | DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -22014,7 +23209,7 @@ object ui {
       def setDataSourceVarargs(value: (String | dxToolbarItem | js.Any)*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
       @scala.inline
-      def setItems(value: js.Array[String | dxToolbarItem | _]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[String | dxToolbarItem | js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -22048,18 +23243,19 @@ object ui {
   
   type dxTrackBar = Editor
   
-  @js.native
-  trait dxTrackBarOptions[T] extends EditorOptions[T] {
+  trait dxTrackBarOptions[T]
+    extends StObject
+       with EditorOptions[T] {
     
     /**
       * [descr:dxTrackBar.Options.max]
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTrackBar.Options.min]
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object dxTrackBarOptions {
     
@@ -22070,7 +23266,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class dxTrackBarOptionsMutableBuilder[Self <: dxTrackBarOptions[_], T] (val x: Self with dxTrackBarOptions[T]) extends AnyVal {
+    implicit class dxTrackBarOptionsMutableBuilder[Self <: dxTrackBarOptions[?], T] (val x: Self & dxTrackBarOptions[T]) extends AnyVal {
       
       @scala.inline
       def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
@@ -22087,7 +23283,9 @@ object ui {
   }
   
   @js.native
-  trait dxTreeList extends GridBase {
+  trait dxTreeList
+    extends StObject
+       with GridBase {
     
     def addColumn(columnOptions: String): Unit = js.native
     /**
@@ -22098,21 +23296,21 @@ object ui {
     /**
       * [descr:dxTreeList.addRow()]
       */
-    def addRow(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def addRow(): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxTreeList.addRow(parentId)]
       */
-    def addRow(parentId: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def addRow(parentId: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxTreeList.collapseRow(key)]
       */
-    def collapseRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def collapseRow(key: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxTreeList.expandRow(key)]
       */
-    def expandRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def expandRow(key: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxTreeList.forEachNode(callback)]
@@ -22138,20 +23336,20 @@ object ui {
     /**
       * [descr:dxTreeList.getSelectedRowKeys()]
       */
-    def getSelectedRowKeys(): js.Array[_] = js.native
+    def getSelectedRowKeys(): js.Array[js.Any] = js.native
     /**
       * [descr:dxTreeList.getSelectedRowKeys(mode)]
       */
-    def getSelectedRowKeys(mode: String): js.Array[_] = js.native
+    def getSelectedRowKeys(mode: String): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxTreeList.getSelectedRowsData()]
       */
-    def getSelectedRowsData(): js.Array[_] = js.native
+    def getSelectedRowsData(): js.Array[js.Any] = js.native
     /**
       * [descr:dxTreeList.getSelectedRowsData(mode)]
       */
-    def getSelectedRowsData(mode: String): js.Array[_] = js.native
+    def getSelectedRowsData(mode: String): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxTreeList.getVisibleColumns()]
@@ -22175,57 +23373,58 @@ object ui {
     /**
       * [descr:dxTreeList.loadDescendants()]
       */
-    def loadDescendants(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def loadDescendants(): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxTreeList.loadDescendants(keys)]
       */
-    def loadDescendants(keys: js.Array[_]): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def loadDescendants(keys: js.Array[js.Any]): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxTreeList.loadDescendants(keys, childrenOnly)]
       */
-    def loadDescendants(keys: js.Array[_], childrenOnly: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def loadDescendants(keys: js.Array[js.Any], childrenOnly: Boolean): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxTreeListColumn extends GridBaseColumn {
+  trait dxTreeListColumn
+    extends StObject
+       with GridBaseColumn {
     
     /**
       * [descr:dxTreeListColumn.buttons]
       */
     var buttons: js.UndefOr[
         js.Array[add | cancel | delete | edit | save | undelete | dxTreeListColumnButton]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxTreeListColumn.cellTemplate]
       */
     var cellTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueOldValue, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueOldValue, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxTreeListColumn.columns]
       */
-    var columns: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.native
+    var columns: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.undefined
     
     /**
       * [descr:dxTreeListColumn.editCellTemplate]
       */
     var editCellTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueRow, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueRow, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxTreeListColumn.headerCellTemplate]
       */
     var headerCellTemplate: js.UndefOr[
-        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndexComponent, _])
-      ] = js.native
+        typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndexComponent, js.Any])
+      ] = js.undefined
     
     /**
       * [descr:dxTreeListColumn.type]
       */
-    var `type`: js.UndefOr[adaptive | buttons | drag] = js.native
+    var `type`: js.UndefOr[adaptive | buttons | drag] = js.undefined
   }
   object dxTreeListColumn {
     
@@ -22249,11 +23448,11 @@ object ui {
       
       @scala.inline
       def setCellTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueOldValue, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueOldValue, js.Any])
       ): Self = StObject.set(x, "cellTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ DisplayValueOldValue) => _): Self = StObject.set(x, "cellTemplate", js.Any.fromFunction2(value))
+      def setCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ DisplayValueOldValue) => js.Any): Self = StObject.set(x, "cellTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCellTemplateUndefined: Self = StObject.set(x, "cellTemplate", js.undefined)
@@ -22269,22 +23468,22 @@ object ui {
       
       @scala.inline
       def setEditCellTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueRow, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ DisplayValueRow, js.Any])
       ): Self = StObject.set(x, "editCellTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEditCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ DisplayValueRow) => _): Self = StObject.set(x, "editCellTemplate", js.Any.fromFunction2(value))
+      def setEditCellTemplateFunction2(value: (/* cellElement */ dxElement, /* cellInfo */ DisplayValueRow) => js.Any): Self = StObject.set(x, "editCellTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEditCellTemplateUndefined: Self = StObject.set(x, "editCellTemplate", js.undefined)
       
       @scala.inline
       def setHeaderCellTemplate(
-        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndexComponent, _])
+        value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndexComponent, js.Any])
       ): Self = StObject.set(x, "headerCellTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHeaderCellTemplateFunction2(value: (/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndexComponent) => _): Self = StObject.set(x, "headerCellTemplate", js.Any.fromFunction2(value))
+      def setHeaderCellTemplateFunction2(value: (/* columnHeader */ dxElement, /* headerInfo */ ColumnColumnIndexComponent) => js.Any): Self = StObject.set(x, "headerCellTemplate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setHeaderCellTemplateUndefined: Self = StObject.set(x, "headerCellTemplate", js.undefined)
@@ -22297,30 +23496,31 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTreeListColumnButton extends GridBaseColumnButton {
+  trait dxTreeListColumnButton
+    extends StObject
+       with GridBaseColumnButton {
     
     /**
       * [descr:dxTreeListColumnButton.name]
       */
-    var name: js.UndefOr[add | cancel | delete | edit | save | undelete | String] = js.native
+    var name: js.UndefOr[add | cancel | delete | edit | save | undelete | String] = js.undefined
     
     /**
       * [descr:dxTreeListColumnButton.onClick]
       */
-    var onClick: js.UndefOr[(js.Function1[/* e */ ColumnComponentElement, _]) | String] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* e */ ColumnComponentElement, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxTreeListColumnButton.template]
       */
     var template: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ KeyRow, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxTreeListColumnButton.visible]
       */
-    var visible: js.UndefOr[Boolean | (js.Function1[/* options */ `15`, Boolean])] = js.native
+    var visible: js.UndefOr[Boolean | (js.Function1[/* options */ `15`, Boolean])] = js.undefined
   }
   object dxTreeListColumnButton {
     
@@ -22340,10 +23540,10 @@ object ui {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnClick(value: (js.Function1[/* e */ ColumnComponentElement, _]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: (js.Function1[/* e */ ColumnComponentElement, js.Any]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickFunction1(value: /* e */ ColumnComponentElement => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClickFunction1(value: /* e */ ColumnComponentElement => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -22370,29 +23570,30 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTreeListEditing extends GridBaseEditing {
+  trait dxTreeListEditing
+    extends StObject
+       with GridBaseEditing {
     
     /**
       * [descr:dxTreeList.Options.editing.allowAdding]
       */
-    var allowAdding: js.UndefOr[Boolean | (js.Function1[/* options */ `14`, Boolean])] = js.native
+    var allowAdding: js.UndefOr[Boolean | (js.Function1[/* options */ `14`, Boolean])] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.editing.allowDeleting]
       */
-    var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ `14`, Boolean])] = js.native
+    var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ `14`, Boolean])] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.editing.allowUpdating]
       */
-    var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ `14`, Boolean])] = js.native
+    var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ `14`, Boolean])] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.editing.texts]
       */
     @JSName("texts")
-    var texts_dxTreeListEditing: js.UndefOr[dxTreeListEditingTexts] = js.native
+    var texts_dxTreeListEditing: js.UndefOr[dxTreeListEditingTexts] = js.undefined
   }
   object dxTreeListEditing {
     
@@ -22440,13 +23641,14 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTreeListEditingTexts extends GridBaseEditingTexts {
+  trait dxTreeListEditingTexts
+    extends StObject
+       with GridBaseEditingTexts {
     
     /**
       * [descr:dxTreeList.Options.editing.texts.addRowToNode]
       */
-    var addRowToNode: js.UndefOr[String] = js.native
+    var addRowToNode: js.UndefOr[String] = js.undefined
   }
   object dxTreeListEditingTexts {
     
@@ -22467,43 +23669,42 @@ object ui {
     }
   }
   
-  @js.native
   trait dxTreeListNode extends StObject {
     
     /**
       * [descr:dxTreeListNode.children]
       */
-    var children: js.UndefOr[js.Array[dxTreeListNode]] = js.native
+    var children: js.UndefOr[js.Array[dxTreeListNode]] = js.undefined
     
     /**
       * [descr:dxTreeListNode.data]
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTreeListNode.hasChildren]
       */
-    var hasChildren: js.UndefOr[Boolean] = js.native
+    var hasChildren: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeListNode.key]
       */
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTreeListNode.level]
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTreeListNode.parent]
       */
-    var parent: js.UndefOr[dxTreeListNode] = js.native
+    var parent: js.UndefOr[dxTreeListNode] = js.undefined
     
     /**
       * [descr:dxTreeListNode.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxTreeListNode {
     
@@ -22563,178 +23764,179 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTreeListOptions extends GridBaseOptions[dxTreeList] {
+  trait dxTreeListOptions
+    extends StObject
+       with GridBaseOptions[dxTreeList] {
     
     /**
       * [descr:dxTreeList.Options.autoExpandAll]
       */
-    var autoExpandAll: js.UndefOr[Boolean] = js.native
+    var autoExpandAll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.columns]
       */
     @JSName("columns")
-    var columns_dxTreeListOptions: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.native
+    var columns_dxTreeListOptions: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.customizeColumns]
       */
-    var customizeColumns: js.UndefOr[js.Function1[/* columns */ js.Array[dxTreeListColumn], _]] = js.native
+    var customizeColumns: js.UndefOr[js.Function1[/* columns */ js.Array[dxTreeListColumn], js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.dataStructure]
       */
-    var dataStructure: js.UndefOr[plain | tree] = js.native
+    var dataStructure: js.UndefOr[plain | tree] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.editing]
       */
     @JSName("editing")
-    var editing_dxTreeListOptions: js.UndefOr[dxTreeListEditing] = js.native
+    var editing_dxTreeListOptions: js.UndefOr[dxTreeListEditing] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.expandNodesOnFiltering]
       */
-    var expandNodesOnFiltering: js.UndefOr[Boolean] = js.native
+    var expandNodesOnFiltering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.expandedRowKeys]
       */
-    var expandedRowKeys: js.UndefOr[js.Array[_]] = js.native
+    var expandedRowKeys: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.filterMode]
       */
-    var filterMode: js.UndefOr[fullBranch | withAncestors | matchOnly] = js.native
+    var filterMode: js.UndefOr[fullBranch | withAncestors | matchOnly] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.hasItemsExpr]
       */
-    var hasItemsExpr: js.UndefOr[String | js.Function] = js.native
+    var hasItemsExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.itemsExpr]
       */
-    var itemsExpr: js.UndefOr[String | js.Function] = js.native
+    var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.keyExpr]
       */
-    var keyExpr: js.UndefOr[String | js.Function] = js.native
+    var keyExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onCellClick]
       */
-    var onCellClick: js.UndefOr[(js.Function1[/* e */ CellElementColumn, _]) | String] = js.native
+    var onCellClick: js.UndefOr[(js.Function1[/* e */ CellElementColumn, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onCellDblClick]
       */
-    var onCellDblClick: js.UndefOr[js.Function1[/* e */ ColumnIndexComponent, _]] = js.native
+    var onCellDblClick: js.UndefOr[js.Function1[/* e */ ColumnIndexComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onCellHoverChanged]
       */
-    var onCellHoverChanged: js.UndefOr[js.Function1[/* e */ EventType, _]] = js.native
+    var onCellHoverChanged: js.UndefOr[js.Function1[/* e */ EventType, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onCellPrepared]
       */
-    var onCellPrepared: js.UndefOr[js.Function1[/* e */ DataDisplayValue, _]] = js.native
+    var onCellPrepared: js.UndefOr[js.Function1[/* e */ DataDisplayValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onContextMenuPreparing]
       */
-    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ Target, _]] = js.native
+    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ Target, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onEditingStart]
       */
-    var onEditingStart: js.UndefOr[js.Function1[/* e */ CancelColumnComponent, _]] = js.native
+    var onEditingStart: js.UndefOr[js.Function1[/* e */ CancelColumnComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onEditorPrepared]
       */
-    var onEditorPrepared: js.UndefOr[js.Function1[/* options */ ParentType, _]] = js.native
+    var onEditorPrepared: js.UndefOr[js.Function1[/* options */ ParentType, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onEditorPreparing]
       */
-    var onEditorPreparing: js.UndefOr[js.Function1[/* e */ ReadOnly, _]] = js.native
+    var onEditorPreparing: js.UndefOr[js.Function1[/* e */ ReadOnly, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onFocusedCellChanged]
       */
-    var onFocusedCellChanged: js.UndefOr[js.Function1[/* e */ ModelRow, _]] = js.native
+    var onFocusedCellChanged: js.UndefOr[js.Function1[/* e */ ModelRow, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onFocusedCellChanging]
       */
-    var onFocusedCellChanging: js.UndefOr[js.Function1[/* e */ IsHighlighted, _]] = js.native
+    var onFocusedCellChanging: js.UndefOr[js.Function1[/* e */ IsHighlighted, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onFocusedRowChanged]
       */
-    var onFocusedRowChanged: js.UndefOr[js.Function1[/* e */ RowRowElement, _]] = js.native
+    var onFocusedRowChanged: js.UndefOr[js.Function1[/* e */ RowRowElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onFocusedRowChanging]
       */
-    var onFocusedRowChanging: js.UndefOr[js.Function1[/* e */ PrevRowIndex, _]] = js.native
+    var onFocusedRowChanging: js.UndefOr[js.Function1[/* e */ PrevRowIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onNodesInitialized]
       */
-    var onNodesInitialized: js.UndefOr[js.Function1[/* e */ Root, _]] = js.native
+    var onNodesInitialized: js.UndefOr[js.Function1[/* e */ Root, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onRowClick]
       */
-    var onRowClick: js.UndefOr[(js.Function1[/* e */ Level, _]) | String] = js.native
+    var onRowClick: js.UndefOr[(js.Function1[/* e */ Level, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onRowDblClick]
       */
-    var onRowDblClick: js.UndefOr[js.Function1[/* e */ ColumnsComponent, _]] = js.native
+    var onRowDblClick: js.UndefOr[js.Function1[/* e */ ColumnsComponent, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.onRowPrepared]
       */
-    var onRowPrepared: js.UndefOr[js.Function1[/* e */ Node, _]] = js.native
+    var onRowPrepared: js.UndefOr[js.Function1[/* e */ Node, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.paging]
       */
     @JSName("paging")
-    var paging_dxTreeListOptions: js.UndefOr[dxTreeListPaging] = js.native
+    var paging_dxTreeListOptions: js.UndefOr[dxTreeListPaging] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.parentIdExpr]
       */
-    var parentIdExpr: js.UndefOr[String | js.Function] = js.native
+    var parentIdExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.remoteOperations]
       */
-    var remoteOperations: js.UndefOr[Grouping | auto] = js.native
+    var remoteOperations: js.UndefOr[Grouping | auto] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.rootValue]
       */
-    var rootValue: js.UndefOr[js.Any] = js.native
+    var rootValue: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.scrolling]
       */
     @JSName("scrolling")
-    var scrolling_dxTreeListOptions: js.UndefOr[dxTreeListScrolling] = js.native
+    var scrolling_dxTreeListOptions: js.UndefOr[dxTreeListScrolling] = js.undefined
     
     /**
       * [descr:dxTreeList.Options.selection]
       */
     @JSName("selection")
-    var selection_dxTreeListOptions: js.UndefOr[dxTreeListSelection] = js.native
+    var selection_dxTreeListOptions: js.UndefOr[dxTreeListSelection] = js.undefined
   }
   object dxTreeListOptions {
     
@@ -22763,7 +23965,7 @@ object ui {
       def setColumnsVarargs(value: (dxTreeListColumn | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
       @scala.inline
-      def setCustomizeColumns(value: /* columns */ js.Array[dxTreeListColumn] => _): Self = StObject.set(x, "customizeColumns", js.Any.fromFunction1(value))
+      def setCustomizeColumns(value: /* columns */ js.Array[dxTreeListColumn] => js.Any): Self = StObject.set(x, "customizeColumns", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeColumnsUndefined: Self = StObject.set(x, "customizeColumns", js.undefined)
@@ -22787,7 +23989,7 @@ object ui {
       def setExpandNodesOnFilteringUndefined: Self = StObject.set(x, "expandNodesOnFiltering", js.undefined)
       
       @scala.inline
-      def setExpandedRowKeys(value: js.Array[_]): Self = StObject.set(x, "expandedRowKeys", value.asInstanceOf[js.Any])
+      def setExpandedRowKeys(value: js.Array[js.Any]): Self = StObject.set(x, "expandedRowKeys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExpandedRowKeysUndefined: Self = StObject.set(x, "expandedRowKeys", js.undefined)
@@ -22820,103 +24022,103 @@ object ui {
       def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
       
       @scala.inline
-      def setOnCellClick(value: (js.Function1[/* e */ CellElementColumn, _]) | String): Self = StObject.set(x, "onCellClick", value.asInstanceOf[js.Any])
+      def setOnCellClick(value: (js.Function1[/* e */ CellElementColumn, js.Any]) | String): Self = StObject.set(x, "onCellClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCellClickFunction1(value: /* e */ CellElementColumn => _): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
+      def setOnCellClickFunction1(value: /* e */ CellElementColumn => js.Any): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
       @scala.inline
-      def setOnCellDblClick(value: /* e */ ColumnIndexComponent => _): Self = StObject.set(x, "onCellDblClick", js.Any.fromFunction1(value))
+      def setOnCellDblClick(value: /* e */ ColumnIndexComponent => js.Any): Self = StObject.set(x, "onCellDblClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellDblClickUndefined: Self = StObject.set(x, "onCellDblClick", js.undefined)
       
       @scala.inline
-      def setOnCellHoverChanged(value: /* e */ EventType => _): Self = StObject.set(x, "onCellHoverChanged", js.Any.fromFunction1(value))
+      def setOnCellHoverChanged(value: /* e */ EventType => js.Any): Self = StObject.set(x, "onCellHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellHoverChangedUndefined: Self = StObject.set(x, "onCellHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnCellPrepared(value: /* e */ DataDisplayValue => _): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1(value))
+      def setOnCellPrepared(value: /* e */ DataDisplayValue => js.Any): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCellPreparedUndefined: Self = StObject.set(x, "onCellPrepared", js.undefined)
       
       @scala.inline
-      def setOnContextMenuPreparing(value: /* e */ Target => _): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
+      def setOnContextMenuPreparing(value: /* e */ Target => js.Any): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
       
       @scala.inline
-      def setOnEditingStart(value: /* e */ CancelColumnComponent => _): Self = StObject.set(x, "onEditingStart", js.Any.fromFunction1(value))
+      def setOnEditingStart(value: /* e */ CancelColumnComponent => js.Any): Self = StObject.set(x, "onEditingStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditingStartUndefined: Self = StObject.set(x, "onEditingStart", js.undefined)
       
       @scala.inline
-      def setOnEditorPrepared(value: /* options */ ParentType => _): Self = StObject.set(x, "onEditorPrepared", js.Any.fromFunction1(value))
+      def setOnEditorPrepared(value: /* options */ ParentType => js.Any): Self = StObject.set(x, "onEditorPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditorPreparedUndefined: Self = StObject.set(x, "onEditorPrepared", js.undefined)
       
       @scala.inline
-      def setOnEditorPreparing(value: /* e */ ReadOnly => _): Self = StObject.set(x, "onEditorPreparing", js.Any.fromFunction1(value))
+      def setOnEditorPreparing(value: /* e */ ReadOnly => js.Any): Self = StObject.set(x, "onEditorPreparing", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEditorPreparingUndefined: Self = StObject.set(x, "onEditorPreparing", js.undefined)
       
       @scala.inline
-      def setOnFocusedCellChanged(value: /* e */ ModelRow => _): Self = StObject.set(x, "onFocusedCellChanged", js.Any.fromFunction1(value))
+      def setOnFocusedCellChanged(value: /* e */ ModelRow => js.Any): Self = StObject.set(x, "onFocusedCellChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedCellChangedUndefined: Self = StObject.set(x, "onFocusedCellChanged", js.undefined)
       
       @scala.inline
-      def setOnFocusedCellChanging(value: /* e */ IsHighlighted => _): Self = StObject.set(x, "onFocusedCellChanging", js.Any.fromFunction1(value))
+      def setOnFocusedCellChanging(value: /* e */ IsHighlighted => js.Any): Self = StObject.set(x, "onFocusedCellChanging", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedCellChangingUndefined: Self = StObject.set(x, "onFocusedCellChanging", js.undefined)
       
       @scala.inline
-      def setOnFocusedRowChanged(value: /* e */ RowRowElement => _): Self = StObject.set(x, "onFocusedRowChanged", js.Any.fromFunction1(value))
+      def setOnFocusedRowChanged(value: /* e */ RowRowElement => js.Any): Self = StObject.set(x, "onFocusedRowChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedRowChangedUndefined: Self = StObject.set(x, "onFocusedRowChanged", js.undefined)
       
       @scala.inline
-      def setOnFocusedRowChanging(value: /* e */ PrevRowIndex => _): Self = StObject.set(x, "onFocusedRowChanging", js.Any.fromFunction1(value))
+      def setOnFocusedRowChanging(value: /* e */ PrevRowIndex => js.Any): Self = StObject.set(x, "onFocusedRowChanging", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusedRowChangingUndefined: Self = StObject.set(x, "onFocusedRowChanging", js.undefined)
       
       @scala.inline
-      def setOnNodesInitialized(value: /* e */ Root => _): Self = StObject.set(x, "onNodesInitialized", js.Any.fromFunction1(value))
+      def setOnNodesInitialized(value: /* e */ Root => js.Any): Self = StObject.set(x, "onNodesInitialized", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnNodesInitializedUndefined: Self = StObject.set(x, "onNodesInitialized", js.undefined)
       
       @scala.inline
-      def setOnRowClick(value: (js.Function1[/* e */ Level, _]) | String): Self = StObject.set(x, "onRowClick", value.asInstanceOf[js.Any])
+      def setOnRowClick(value: (js.Function1[/* e */ Level, js.Any]) | String): Self = StObject.set(x, "onRowClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnRowClickFunction1(value: /* e */ Level => _): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
+      def setOnRowClickFunction1(value: /* e */ Level => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
       
       @scala.inline
-      def setOnRowDblClick(value: /* e */ ColumnsComponent => _): Self = StObject.set(x, "onRowDblClick", js.Any.fromFunction1(value))
+      def setOnRowDblClick(value: /* e */ ColumnsComponent => js.Any): Self = StObject.set(x, "onRowDblClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowDblClickUndefined: Self = StObject.set(x, "onRowDblClick", js.undefined)
       
       @scala.inline
-      def setOnRowPrepared(value: /* e */ Node => _): Self = StObject.set(x, "onRowPrepared", js.Any.fromFunction1(value))
+      def setOnRowPrepared(value: /* e */ Node => js.Any): Self = StObject.set(x, "onRowPrepared", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnRowPreparedUndefined: Self = StObject.set(x, "onRowPrepared", js.undefined)
@@ -22959,8 +24161,9 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTreeListPaging extends GridBasePaging
+  trait dxTreeListPaging
+    extends StObject
+       with GridBasePaging
   object dxTreeListPaging {
     
     @scala.inline
@@ -22970,58 +24173,57 @@ object ui {
     }
   }
   
-  @js.native
   trait dxTreeListRowObject extends StObject {
     
     /**
       * [descr:dxTreeListRowObject.isEditing]
       */
-    var isEditing: js.UndefOr[Boolean] = js.native
+    var isEditing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.isExpanded]
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.isNewRow]
       */
-    var isNewRow: js.UndefOr[Boolean] = js.native
+    var isNewRow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.isSelected]
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.key]
       */
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.level]
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.node]
       */
-    var node: js.UndefOr[dxTreeListNode] = js.native
+    var node: js.UndefOr[dxTreeListNode] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.rowIndex]
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.rowType]
       */
-    var rowType: js.UndefOr[String] = js.native
+    var rowType: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeListRowObject.values]
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object dxTreeListRowObject {
     
@@ -23089,7 +24291,7 @@ object ui {
       def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -23099,13 +24301,14 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTreeListScrolling extends GridBaseScrolling {
+  trait dxTreeListScrolling
+    extends StObject
+       with GridBaseScrolling {
     
     /**
       * [descr:dxTreeList.Options.scrolling.mode]
       */
-    var mode: js.UndefOr[standard | virtual] = js.native
+    var mode: js.UndefOr[standard | virtual] = js.undefined
   }
   object dxTreeListScrolling {
     
@@ -23126,13 +24329,14 @@ object ui {
     }
   }
   
-  @js.native
-  trait dxTreeListSelection extends GridBaseSelection {
+  trait dxTreeListSelection
+    extends StObject
+       with GridBaseSelection {
     
     /**
       * [descr:dxTreeList.Options.selection.recursive]
       */
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
   }
   object dxTreeListSelection {
     
@@ -23154,7 +24358,9 @@ object ui {
   }
   
   @js.native
-  trait dxTreeView extends CollectionWidget {
+  trait dxTreeView
+    extends StObject
+       with CollectionWidget {
     
     /**
       * [descr:dxTreeView.collapseAll()]
@@ -23164,11 +24370,11 @@ object ui {
     /**
       * [descr:dxTreeView.collapseItem(itemData)]
       */
-    def collapseItem(itemData: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def collapseItem(itemData: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxTreeView.collapseItem(itemElement)]
       */
-    def collapseItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def collapseItem(itemElement: Element): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxTreeView.expandAll()]
@@ -23178,11 +24384,11 @@ object ui {
     /**
       * [descr:dxTreeView.expandItem(itemData)]
       */
-    def expandItem(itemData: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def expandItem(itemData: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxTreeView.expandItem(itemElement)]
       */
-    def expandItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def expandItem(itemElement: Element): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxTreeView.getNodes()]
@@ -23192,7 +24398,7 @@ object ui {
     /**
       * [descr:dxTreeView.getSelectedNodeKeys()]
       */
-    def getSelectedNodeKeys(): js.Array[_] = js.native
+    def getSelectedNodeKeys(): js.Array[js.Any] = js.native
     
     /**
       * [descr:dxTreeView.getSelectedNodes()]
@@ -23202,11 +24408,11 @@ object ui {
     /**
       * [descr:dxTreeView.scrollToItem(itemData)]
       */
-    def scrollToItem(itemData: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def scrollToItem(itemData: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
     /**
       * [descr:dxTreeView.scrollToItem(itemElement)]
       */
-    def scrollToItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def scrollToItem(itemElement: Element): Promise[Unit] & JQueryPromise[Unit] = js.native
     
     /**
       * [descr:dxTreeView.selectAll()]
@@ -23239,41 +24445,42 @@ object ui {
     /**
       * [descr:dxTreeView.updateDimensions()]
       */
-    def updateDimensions(): Promise[Unit] with JQueryPromise[Unit] = js.native
+    def updateDimensions(): Promise[Unit] & JQueryPromise[Unit] = js.native
   }
   
-  @js.native
-  trait dxTreeViewItem extends CollectionWidgetItem {
+  trait dxTreeViewItem
+    extends StObject
+       with CollectionWidgetItem {
     
     /**
       * [descr:dxTreeViewItem.expanded]
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeViewItem.hasItems]
       */
-    var hasItems: js.UndefOr[Boolean] = js.native
+    var hasItems: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeViewItem.icon]
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeViewItem.items]
       */
-    var items: js.UndefOr[js.Array[dxTreeViewItem]] = js.native
+    var items: js.UndefOr[js.Array[dxTreeViewItem]] = js.undefined
     
     /**
       * [descr:dxTreeViewItem.parentId]
       */
-    var parentId: js.UndefOr[Double | String] = js.native
+    var parentId: js.UndefOr[Double | String] = js.undefined
     
     /**
       * [descr:dxTreeViewItem.selected]
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
   }
   object dxTreeViewItem {
     
@@ -23329,48 +24536,47 @@ object ui {
   
   type dxTreeViewItemTemplate = dxTreeViewItem
   
-  @js.native
   trait dxTreeViewNode extends StObject {
     
     /**
       * [descr:dxTreeViewNode.children]
       */
-    var children: js.UndefOr[js.Array[dxTreeViewNode]] = js.native
+    var children: js.UndefOr[js.Array[dxTreeViewNode]] = js.undefined
     
     /**
       * [descr:dxTreeViewNode.disabled]
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeViewNode.expanded]
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeViewNode.itemData]
       */
-    var itemData: js.UndefOr[js.Any] = js.native
+    var itemData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTreeViewNode.key]
       */
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTreeViewNode.parent]
       */
-    var parent: js.UndefOr[dxTreeViewNode] = js.native
+    var parent: js.UndefOr[dxTreeViewNode] = js.undefined
     
     /**
       * [descr:dxTreeViewNode.selected]
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeViewNode.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxTreeViewNode {
     
@@ -23436,159 +24642,162 @@ object ui {
     }
   }
   
-  @js.native
   trait dxTreeViewOptions
-    extends HierarchicalCollectionWidgetOptions[dxTreeView]
+    extends StObject
+       with HierarchicalCollectionWidgetOptions[dxTreeView]
        with SearchBoxMixinOptions[dxTreeView] {
     
     /**
       * [descr:dxTreeView.Options.animationEnabled]
       */
-    var animationEnabled: js.UndefOr[Boolean] = js.native
+    var animationEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.createChildren]
       */
     var createChildren: js.UndefOr[
-        js.Function1[/* parentNode */ dxTreeViewNode, Promise[_] | JQueryPromise[_] | js.Array[_]]
-      ] = js.native
+        js.Function1[
+          /* parentNode */ dxTreeViewNode, 
+          Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]
+        ]
+      ] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.dataSource]
       */
     @JSName("dataSource")
-    var dataSource_dxTreeViewOptions: js.UndefOr[String | js.Array[dxTreeViewItem] | DataSource | DataSourceOptions] = js.native
+    var dataSource_dxTreeViewOptions: js.UndefOr[String | js.Array[dxTreeViewItem] | DataSource | DataSourceOptions] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.dataStructure]
       */
-    var dataStructure: js.UndefOr[plain | tree] = js.native
+    var dataStructure: js.UndefOr[plain | tree] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.expandAllEnabled]
       */
-    var expandAllEnabled: js.UndefOr[Boolean] = js.native
+    var expandAllEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.expandEvent]
       */
-    var expandEvent: js.UndefOr[dblclick_ | click] = js.native
+    var expandEvent: js.UndefOr[dblclick_ | click] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.expandNodesRecursive]
       */
-    var expandNodesRecursive: js.UndefOr[Boolean] = js.native
+    var expandNodesRecursive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.expandedExpr]
       */
-    var expandedExpr: js.UndefOr[String | js.Function] = js.native
+    var expandedExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.hasItemsExpr]
       */
-    var hasItemsExpr: js.UndefOr[String | js.Function] = js.native
+    var hasItemsExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.items]
       */
     @JSName("items")
-    var items_dxTreeViewOptions: js.UndefOr[js.Array[dxTreeViewItem]] = js.native
+    var items_dxTreeViewOptions: js.UndefOr[js.Array[dxTreeViewItem]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onItemClick]
       */
     @JSName("onItemClick")
-    var onItemClick_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ModelNode, _]] = js.native
+    var onItemClick_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ModelNode, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onItemCollapsed]
       */
-    var onItemCollapsed: js.UndefOr[js.Function1[/* e */ ItemDataItemElementItemIndex, _]] = js.native
+    var onItemCollapsed: js.UndefOr[js.Function1[/* e */ ItemDataItemElementItemIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onItemContextMenu]
       */
     @JSName("onItemContextMenu")
-    var onItemContextMenu_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ModelNode, _]] = js.native
+    var onItemContextMenu_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ModelNode, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onItemExpanded]
       */
-    var onItemExpanded: js.UndefOr[js.Function1[/* e */ ItemDataItemElementItemIndex, _]] = js.native
+    var onItemExpanded: js.UndefOr[js.Function1[/* e */ ItemDataItemElementItemIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onItemHold]
       */
     @JSName("onItemHold")
-    var onItemHold_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ItemDataItemElementItemIndex, _]] = js.native
+    var onItemHold_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ItemDataItemElementItemIndex, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onItemRendered]
       */
     @JSName("onItemRendered")
-    var onItemRendered_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ItemElementItemIndexModel, _]] = js.native
+    var onItemRendered_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ ItemElementItemIndexModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onItemSelectionChanged]
       */
-    var onItemSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementItemElement, _]] = js.native
+    var onItemSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementItemElement, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onSelectAllValueChanged]
       */
-    var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ ComponentElementModelValue, _]] = js.native
+    var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ ComponentElementModelValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.onSelectionChanged]
       */
     @JSName("onSelectionChanged")
-    var onSelectionChanged_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ `16`, _]] = js.native
+    var onSelectionChanged_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ `16`, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.parentIdExpr]
       */
-    var parentIdExpr: js.UndefOr[String | js.Function] = js.native
+    var parentIdExpr: js.UndefOr[String | js.Function] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.rootValue]
       */
-    var rootValue: js.UndefOr[js.Any] = js.native
+    var rootValue: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.scrollDirection]
       */
-    var scrollDirection: js.UndefOr[both | horizontal | vertical] = js.native
+    var scrollDirection: js.UndefOr[both | horizontal | vertical] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.selectAllText]
       */
-    var selectAllText: js.UndefOr[String] = js.native
+    var selectAllText: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.selectByClick]
       */
-    var selectByClick: js.UndefOr[Boolean] = js.native
+    var selectByClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.selectNodesRecursive]
       */
-    var selectNodesRecursive: js.UndefOr[Boolean] = js.native
+    var selectNodesRecursive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[multiple | single_] = js.native
+    var selectionMode: js.UndefOr[multiple | single_] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.showCheckBoxesMode]
       */
-    var showCheckBoxesMode: js.UndefOr[none | normal | selectAll] = js.native
+    var showCheckBoxesMode: js.UndefOr[none | normal | selectAll] = js.undefined
     
     /**
       * [descr:dxTreeView.Options.virtualModeEnabled]
       */
-    var virtualModeEnabled: js.UndefOr[Boolean] = js.native
+    var virtualModeEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object dxTreeViewOptions {
     
@@ -23608,7 +24817,9 @@ object ui {
       def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
       
       @scala.inline
-      def setCreateChildren(value: /* parentNode */ dxTreeViewNode => Promise[_] | JQueryPromise[_] | js.Array[_]): Self = StObject.set(x, "createChildren", js.Any.fromFunction1(value))
+      def setCreateChildren(
+        value: /* parentNode */ dxTreeViewNode => Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]
+      ): Self = StObject.set(x, "createChildren", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCreateChildrenUndefined: Self = StObject.set(x, "createChildren", js.undefined)
@@ -23668,55 +24879,55 @@ object ui {
       def setItemsVarargs(value: dxTreeViewItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setOnItemClick(value: /* e */ ModelNode => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnItemClick(value: /* e */ ModelNode => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnItemCollapsed(value: /* e */ ItemDataItemElementItemIndex => _): Self = StObject.set(x, "onItemCollapsed", js.Any.fromFunction1(value))
+      def setOnItemCollapsed(value: /* e */ ItemDataItemElementItemIndex => js.Any): Self = StObject.set(x, "onItemCollapsed", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemCollapsedUndefined: Self = StObject.set(x, "onItemCollapsed", js.undefined)
       
       @scala.inline
-      def setOnItemContextMenu(value: /* e */ ModelNode => _): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction1(value))
+      def setOnItemContextMenu(value: /* e */ ModelNode => js.Any): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
       
       @scala.inline
-      def setOnItemExpanded(value: /* e */ ItemDataItemElementItemIndex => _): Self = StObject.set(x, "onItemExpanded", js.Any.fromFunction1(value))
+      def setOnItemExpanded(value: /* e */ ItemDataItemElementItemIndex => js.Any): Self = StObject.set(x, "onItemExpanded", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemExpandedUndefined: Self = StObject.set(x, "onItemExpanded", js.undefined)
       
       @scala.inline
-      def setOnItemHold(value: /* e */ ItemDataItemElementItemIndex => _): Self = StObject.set(x, "onItemHold", js.Any.fromFunction1(value))
+      def setOnItemHold(value: /* e */ ItemDataItemElementItemIndex => js.Any): Self = StObject.set(x, "onItemHold", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemHoldUndefined: Self = StObject.set(x, "onItemHold", js.undefined)
       
       @scala.inline
-      def setOnItemRendered(value: /* e */ ItemElementItemIndexModel => _): Self = StObject.set(x, "onItemRendered", js.Any.fromFunction1(value))
+      def setOnItemRendered(value: /* e */ ItemElementItemIndexModel => js.Any): Self = StObject.set(x, "onItemRendered", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemRenderedUndefined: Self = StObject.set(x, "onItemRendered", js.undefined)
       
       @scala.inline
-      def setOnItemSelectionChanged(value: /* e */ ElementItemElement => _): Self = StObject.set(x, "onItemSelectionChanged", js.Any.fromFunction1(value))
+      def setOnItemSelectionChanged(value: /* e */ ElementItemElement => js.Any): Self = StObject.set(x, "onItemSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemSelectionChangedUndefined: Self = StObject.set(x, "onItemSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnSelectAllValueChanged(value: /* e */ ComponentElementModelValue => _): Self = StObject.set(x, "onSelectAllValueChanged", js.Any.fromFunction1(value))
+      def setOnSelectAllValueChanged(value: /* e */ ComponentElementModelValue => js.Any): Self = StObject.set(x, "onSelectAllValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectAllValueChangedUndefined: Self = StObject.set(x, "onSelectAllValueChanged", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ `16` => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ `16` => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
@@ -23778,7 +24989,9 @@ object ui {
   }
   
   @js.native
-  trait dxValidationGroup extends DOMComponent {
+  trait dxValidationGroup
+    extends StObject
+       with DOMComponent {
     
     /**
       * [descr:dxValidationGroup.reset()]
@@ -23793,7 +25006,6 @@ object ui {
   
   type dxValidationGroupOptions = DOMComponentOptions[dxValidationGroup]
   
-  @js.native
   trait dxValidationGroupResult extends StObject {
     
     /**
@@ -23803,27 +25015,27 @@ object ui {
         js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxValidationGroupResult.complete]
       */
-    var complete: js.UndefOr[Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult]] = js.native
+    var complete: js.UndefOr[Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult]] = js.undefined
     
     /**
       * [descr:dxValidationGroupResult.isValid]
       */
-    var isValid: js.UndefOr[Boolean] = js.native
+    var isValid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxValidationGroupResult.status]
       */
-    var status: js.UndefOr[valid | invalid | pending] = js.native
+    var status: js.UndefOr[valid | invalid | pending] = js.undefined
     
     /**
       * [descr:dxValidationGroupResult.validators]
       */
-    var validators: js.UndefOr[js.Array[_]] = js.native
+    var validators: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object dxValidationGroupResult {
     
@@ -23870,7 +25082,7 @@ object ui {
       def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
       @scala.inline
-      def setValidators(value: js.Array[_]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+      def setValidators(value: js.Array[js.Any]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
@@ -23882,13 +25094,14 @@ object ui {
   
   type dxValidationSummary = CollectionWidget
   
-  @js.native
-  trait dxValidationSummaryOptions extends CollectionWidgetOptions[dxValidationSummary] {
+  trait dxValidationSummaryOptions
+    extends StObject
+       with CollectionWidgetOptions[dxValidationSummary] {
     
     /**
       * [descr:dxValidationSummary.Options.validationGroup]
       */
-    var validationGroup: js.UndefOr[String] = js.native
+    var validationGroup: js.UndefOr[String] = js.undefined
   }
   object dxValidationSummaryOptions {
     
@@ -23910,7 +25123,9 @@ object ui {
   }
   
   @js.native
-  trait dxValidator extends DOMComponent {
+  trait dxValidator
+    extends StObject
+       with DOMComponent {
     
     /**
       * [descr:dxValidator.focus()]
@@ -23928,28 +25143,29 @@ object ui {
     def validate(): dxValidatorResult = js.native
   }
   
-  @js.native
-  trait dxValidatorOptions extends DOMComponentOptions[dxValidator] {
+  trait dxValidatorOptions
+    extends StObject
+       with DOMComponentOptions[dxValidator] {
     
     /**
       * [descr:dxValidator.Options.adapter]
       */
-    var adapter: js.UndefOr[ApplyValidationResults] = js.native
+    var adapter: js.UndefOr[ApplyValidationResults] = js.undefined
     
     /**
       * [descr:dxValidator.Options.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxValidator.Options.onValidated]
       */
-    var onValidated: js.UndefOr[js.Function1[/* validatedInfo */ BrokenRule, _]] = js.native
+    var onValidated: js.UndefOr[js.Function1[/* validatedInfo */ BrokenRule, js.Any]] = js.undefined
     
     /**
       * [descr:dxValidator.Options.validationGroup]
       */
-    var validationGroup: js.UndefOr[String] = js.native
+    var validationGroup: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxValidator.Options.validationRules]
@@ -23958,7 +25174,7 @@ object ui {
         js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object dxValidatorOptions {
     
@@ -23984,7 +25200,7 @@ object ui {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnValidated(value: /* validatedInfo */ BrokenRule => _): Self = StObject.set(x, "onValidated", js.Any.fromFunction1(value))
+      def setOnValidated(value: /* validatedInfo */ BrokenRule => js.Any): Self = StObject.set(x, "onValidated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValidatedUndefined: Self = StObject.set(x, "onValidated", js.undefined)
@@ -24012,7 +25228,6 @@ object ui {
     }
   }
   
-  @js.native
   trait dxValidatorResult extends StObject {
     
     /**
@@ -24020,7 +25235,7 @@ object ui {
       */
     var brokenRule: js.UndefOr[
         RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxValidatorResult.brokenRules]
@@ -24029,27 +25244,27 @@ object ui {
         js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxValidatorResult.complete]
       */
-    var complete: js.UndefOr[Promise[dxValidatorResult] | JQueryPromise[dxValidatorResult]] = js.native
+    var complete: js.UndefOr[Promise[dxValidatorResult] | JQueryPromise[dxValidatorResult]] = js.undefined
     
     /**
       * [descr:dxValidatorResult.isValid]
       */
-    var isValid: js.UndefOr[Boolean] = js.native
+    var isValid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxValidatorResult.pendingRules]
       */
-    var pendingRules: js.UndefOr[js.Array[AsyncRule]] = js.native
+    var pendingRules: js.UndefOr[js.Array[AsyncRule]] = js.undefined
     
     /**
       * [descr:dxValidatorResult.status]
       */
-    var status: js.UndefOr[valid | invalid | pending] = js.native
+    var status: js.UndefOr[valid | invalid | pending] = js.undefined
     
     /**
       * [descr:dxValidatorResult.validationRules]
@@ -24058,12 +25273,12 @@ object ui {
         js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxValidatorResult.value]
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object dxValidatorResult {
     
@@ -24186,6 +25401,5 @@ object ui {
   
   type template = typings.devextreme.mod.DevExpress.core.template
   
-  @js.native
   trait themes extends StObject
 }

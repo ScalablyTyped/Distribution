@@ -10,21 +10,19 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP_BOTT
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TR_BL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Angle extends StObject {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var colors: js.UndefOr[js.Array[typings.reactNativeChartsWrapper.mod.Color]] = js.native
+  var colors: js.UndefOr[js.Array[typings.reactNativeChartsWrapper.mod.Color]] = js.undefined
   
   var orientation: js.UndefOr[
     TOP_BOTTOM | TR_BL | RIGHT_LEFT | BR_TL | BOTTOM_TOP | BL_TR | LEFT_RIGHT | TL_BR
-  ] = js.native
+  ] = js.undefined
   
-  var positions: js.UndefOr[js.Array[Double]] = js.native
+  var positions: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Angle {
   

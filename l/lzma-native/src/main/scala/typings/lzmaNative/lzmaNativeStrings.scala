@@ -4,28 +4,35 @@ import typings.lzmaNative.mod.Check
 import typings.lzmaNative.mod.Coders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lzmaNativeStrings {
   
   @js.native
-  sealed trait CHECK_CRC32 extends Check
+  sealed trait CHECK_CRC32
+    extends StObject
+       with Check
   @scala.inline
   def CHECK_CRC32: CHECK_CRC32 = "CHECK_CRC32".asInstanceOf[CHECK_CRC32]
   
   @js.native
-  sealed trait CHECK_CRC64 extends Check
+  sealed trait CHECK_CRC64
+    extends StObject
+       with Check
   @scala.inline
   def CHECK_CRC64: CHECK_CRC64 = "CHECK_CRC64".asInstanceOf[CHECK_CRC64]
   
   @js.native
-  sealed trait CHECK_NONE extends Check
+  sealed trait CHECK_NONE
+    extends StObject
+       with Check
   @scala.inline
   def CHECK_NONE: CHECK_NONE = "CHECK_NONE".asInstanceOf[CHECK_NONE]
   
   @js.native
-  sealed trait CHECK_SHA256 extends Check
+  sealed trait CHECK_SHA256
+    extends StObject
+       with Check
   @scala.inline
   def CHECK_SHA256: CHECK_SHA256 = "CHECK_SHA256".asInstanceOf[CHECK_SHA256]
   
@@ -50,37 +57,51 @@ object lzmaNativeStrings {
   def TELL_UNSUPPORTED_CHECK: TELL_UNSUPPORTED_CHECK = "TELL_UNSUPPORTED_CHECK".asInstanceOf[TELL_UNSUPPORTED_CHECK]
   
   @js.native
-  sealed trait aloneDecoder extends Coders
+  sealed trait aloneDecoder
+    extends StObject
+       with Coders
   @scala.inline
   def aloneDecoder: aloneDecoder = "aloneDecoder".asInstanceOf[aloneDecoder]
   
   @js.native
-  sealed trait aloneEncoder extends Coders
+  sealed trait aloneEncoder
+    extends StObject
+       with Coders
   @scala.inline
   def aloneEncoder: aloneEncoder = "aloneEncoder".asInstanceOf[aloneEncoder]
   
   @js.native
-  sealed trait autoDecoder extends Coders
+  sealed trait autoDecoder
+    extends StObject
+       with Coders
   @scala.inline
   def autoDecoder: autoDecoder = "autoDecoder".asInstanceOf[autoDecoder]
   
   @js.native
-  sealed trait easyEncoder extends Coders
+  sealed trait easyEncoder
+    extends StObject
+       with Coders
   @scala.inline
   def easyEncoder: easyEncoder = "easyEncoder".asInstanceOf[easyEncoder]
   
   @js.native
-  sealed trait rawEncoder extends Coders
+  sealed trait rawEncoder
+    extends StObject
+       with Coders
   @scala.inline
   def rawEncoder: rawEncoder = "rawEncoder".asInstanceOf[rawEncoder]
   
   @js.native
-  sealed trait streamDecoder extends Coders
+  sealed trait streamDecoder
+    extends StObject
+       with Coders
   @scala.inline
   def streamDecoder: streamDecoder = "streamDecoder".asInstanceOf[streamDecoder]
   
   @js.native
-  sealed trait streamEncoder extends Coders
+  sealed trait streamEncoder
+    extends StObject
+       with Coders
   @scala.inline
   def streamEncoder: streamEncoder = "streamEncoder".asInstanceOf[streamEncoder]
 }

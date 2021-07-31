@@ -2,17 +2,17 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeSetObject extends SetObject {
+trait TimeSetObject
+  extends StObject
+     with SetObject {
   
   /**
     * Choose the minutes interval between each time in the list.
     * Defaults to 30.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
 }
 object TimeSetObject {
   

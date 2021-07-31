@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is fired when a change becomes effective on the source of the event
   * @see XBackendChangesNotifier
   */
-@js.native
-trait ComponentChangeEvent extends EventObject {
+trait ComponentChangeEvent
+  extends StObject
+     with EventObject {
   
   /** The name of the Component that changed */
-  var Component: String = js.native
+  var Component: String
 }
 object ComponentChangeEvent {
   

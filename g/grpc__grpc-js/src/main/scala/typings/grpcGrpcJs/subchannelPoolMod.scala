@@ -7,10 +7,13 @@ import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subchannelPoolMod {
+  
+  @JSImport("@grpc/grpc-js/build/src/subchannel-pool", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@grpc/grpc-js/build/src/subchannel-pool", "SubchannelPool")
   @js.native
@@ -59,7 +62,6 @@ object subchannelPoolMod {
     def unrefUnusedSubchannels(): Unit = js.native
   }
   
-  @JSImport("@grpc/grpc-js/build/src/subchannel-pool", "getSubchannelPool")
-  @js.native
-  def getSubchannelPool(global: Boolean): SubchannelPool = js.native
+  @scala.inline
+  def getSubchannelPool(global: Boolean): SubchannelPool = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubchannelPool")(global.asInstanceOf[js.Any]).asInstanceOf[SubchannelPool]
 }

@@ -2,15 +2,13 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeridiemAM extends StObject {
   
-  var meridiemAM: js.UndefOr[String] = js.native
+  var meridiemAM: js.UndefOr[String] = js.undefined
   
-  var meridiemPM: js.UndefOr[String] = js.native
+  var meridiemPM: js.UndefOr[String] = js.undefined
 }
 object MeridiemAM {
   

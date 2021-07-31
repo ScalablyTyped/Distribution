@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/securitycenter/v1", "securitycenter_v1.Resource$Organizations")
@@ -32,7 +31,7 @@ class ResourceOrganizations protected () extends StObject {
     */
   def getOrganizationSettings(): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def getOrganizationSettings(callback: BodyResponseCallback[SchemaOrganizationSettings]): Unit = js.native
-  def getOrganizationSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrganizationSettings] = js.native
+  def getOrganizationSettings(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def getOrganizationSettings(params: ParamsResourceOrganizationsGetorganizationsettings): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def getOrganizationSettings(
     params: ParamsResourceOrganizationsGetorganizationsettings,
@@ -70,7 +69,7 @@ class ResourceOrganizations protected () extends StObject {
     */
   def updateOrganizationSettings(): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def updateOrganizationSettings(callback: BodyResponseCallback[SchemaOrganizationSettings]): Unit = js.native
-  def updateOrganizationSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrganizationSettings] = js.native
+  def updateOrganizationSettings(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def updateOrganizationSettings(params: ParamsResourceOrganizationsUpdateorganizationsettings): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def updateOrganizationSettings(
     params: ParamsResourceOrganizationsUpdateorganizationsettings,

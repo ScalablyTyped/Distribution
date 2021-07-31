@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPreservedStatePreservedDisk extends StObject {
   
   /**
@@ -15,19 +13,19 @@ trait SchemaPreservedStatePreservedDisk extends StObject {
     * given instance or the whole MIG is deleted. Note: disks attached in
     * READ_ONLY mode cannot be auto-deleted.
     */
-  var autoDelete: js.UndefOr[String] = js.native
+  var autoDelete: js.UndefOr[String] = js.undefined
   
   /**
     * The mode in which to attach this disk, either READ_WRITE or READ_ONLY. If
     * not specified, the default is to attach the disk in READ_WRITE mode.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the disk resource that is stateful and should be attached to
     * the VM instance.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object SchemaPreservedStatePreservedDisk {
   

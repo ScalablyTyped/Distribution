@@ -1,7 +1,6 @@
 package typings.updateNotifier
 
 import typings.boxen.mod.Options
-import typings.configstore.mod.^
 import typings.updateNotifier.updateNotifierStrings.build
 import typings.updateNotifier.updateNotifierStrings.latest
 import typings.updateNotifier.updateNotifierStrings.major
@@ -10,18 +9,19 @@ import typings.updateNotifier.updateNotifierStrings.patch
 import typings.updateNotifier.updateNotifierStrings.prerelease
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /** Checks if there is an available update */
+  @scala.inline
+  def apply(): UpdateNotifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UpdateNotifier]
+  @scala.inline
+  def apply(settings: Settings): UpdateNotifier = ^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any]).asInstanceOf[UpdateNotifier]
+  
   @JSImport("update-notifier", JSImport.Namespace)
   @js.native
-  def apply(): UpdateNotifier = js.native
-  @JSImport("update-notifier", JSImport.Namespace)
-  @js.native
-  def apply(settings: Settings): UpdateNotifier = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("update-notifier", "UpdateNotifier")
   @js.native
@@ -30,7 +30,7 @@ object mod {
     
     def check(): Unit = js.native
     
-    val config: ^ = js.native
+    val config: typings.configstore.mod.^ = js.native
     
     /**
       * Check update information
@@ -43,23 +43,22 @@ object mod {
     val update: js.UndefOr[UpdateInfo] = js.native
   }
   
-  @js.native
   trait NotifyOptions extends StObject {
     
     /**
       * Options object that will be passed to `boxen`
       * See https://github.com/sindresorhus/boxen/blob/master/index.d.ts
       */
-    var boxenOptions: js.UndefOr[Options] = js.native
+    var boxenOptions: js.UndefOr[Options] = js.undefined
     
     /** Defer showing the notification to after the process has exited */
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
     /** Include the -g argument in the default message's npm i recommendation */
-    var isGlobal: js.UndefOr[Boolean] = js.native
+    var isGlobal: js.UndefOr[Boolean] = js.undefined
     
     /** Message that will be shown when an update is available */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object NotifyOptions {
     
@@ -98,12 +97,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Package extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Package {
     
@@ -124,32 +122,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * Which dist-tag to use to find the latest version
       * @default 'latest'
       */
-    var distTag: js.UndefOr[String] = js.native
+    var distTag: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated use `pkg.name`
       */
-    var packageName: js.UndefOr[String] = js.native
+    var packageName: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated use `pkg.version`
       */
-    var packageVersion: js.UndefOr[String] = js.native
+    var packageVersion: js.UndefOr[String] = js.undefined
     
-    var pkg: js.UndefOr[Package] = js.native
+    var pkg: js.UndefOr[Package] = js.undefined
     
     /** Allows notification to be shown when running as an npm script */
-    var shouldNotifyInNpmScript: js.UndefOr[Boolean] = js.native
+    var shouldNotifyInNpmScript: js.UndefOr[Boolean] = js.undefined
     
     /** How often to check for updates */
-    var updateCheckInterval: js.UndefOr[Double] = js.native
+    var updateCheckInterval: js.UndefOr[Double] = js.undefined
   }
   object Settings {
     
@@ -200,20 +197,19 @@ object mod {
     }
   }
   
-  @js.native
   trait UpdateInfo extends StObject {
     
     /** Current version */
-    val current: String = js.native
+    val current: String
     
     /** Latest version */
-    val latest: String = js.native
+    val latest: String
     
     /** Package name */
-    var name: String = js.native
+    var name: String
     
     /** Type of current update */
-    val `type`: typings.updateNotifier.updateNotifierStrings.latest | major | minor | patch | prerelease | build = js.native
+    val `type`: typings.updateNotifier.updateNotifierStrings.latest | major | minor | patch | prerelease | build
   }
   object UpdateInfo {
     

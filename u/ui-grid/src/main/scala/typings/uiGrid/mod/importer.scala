@@ -3,19 +3,17 @@ package typings.uiGrid.mod
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object importer {
   
-  @js.native
   trait IGridImporterApi extends StObject {
     
     /**
       * Imports a file into the grid using the file object provided. Bypasses the grid menu
       * @param {File} fileObject The file we want to import as a javascript File object
       */
-    def importFile(fileObject: File): Unit = js.native
+    def importFile(fileObject: File): Unit
   }
   object IGridImporterApi {
     
@@ -33,7 +31,6 @@ object importer {
     }
   }
   
-  @js.native
   trait IGridOptions[TEntity] extends StObject {
     
     /**
@@ -42,7 +39,7 @@ object importer {
       * Otherwise defaults to true.
       * @default true
       */
-    var enableImporter: js.UndefOr[Boolean] = js.native
+    var enableImporter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A mandatory callback function that adds data to the source data array.
@@ -53,7 +50,7 @@ object importer {
       */
     var importerDataAddCallback: js.UndefOr[
         js.Function2[/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback function that provides custom error handling,
@@ -79,7 +76,7 @@ object importer {
           /* context */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback function that will filter (usually translate) a single header.
@@ -88,7 +85,7 @@ object importer {
       * @param {string} displayName The displayName to translate
       * @returns {string} The translated name
       */
-    var importerHeaderFilter: js.UndefOr[js.Function1[/* displayName */ String, String]] = js.native
+    var importerHeaderFilter: js.UndefOr[js.Function1[/* displayName */ String, String]] = js.undefined
     
     /**
       * An object on which we call `new` to create each new row before inserting it into
@@ -98,7 +95,7 @@ object importer {
       * Defaults to a vanilla javascript object
       * @default {}
       */
-    var importerNewObject: js.UndefOr[js.Function] = js.native
+    var importerNewObject: js.UndefOr[js.Function] = js.undefined
     
     /**
       * A callback that massages the data for each object.
@@ -113,7 +110,7 @@ object importer {
       */
     var importerObjectCallback: js.UndefOr[
         js.Function2[/* grid */ IGridInstanceOf[TEntity], /* newObject */ TEntity, TEntity]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback function that will process headers using custom
@@ -139,14 +136,14 @@ object importer {
           /* headerArray */ js.Array[String], 
           js.Array[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether or not to show an item in the grid menu.
       * Defaults to true.
       * @default true
       */
-    var importerShowMenu: js.UndefOr[Boolean] = js.native
+    var importerShowMenu: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -157,7 +154,7 @@ object importer {
     }
     
     @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.importer.IGridOptions[_], TEntity] (val x: Self with typings.uiGrid.mod.importer.IGridOptions[TEntity]) extends AnyVal {
+    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.importer.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.importer.IGridOptions[TEntity]) extends AnyVal {
       
       @scala.inline
       def setEnableImporter(value: Boolean): Self = StObject.set(x, "enableImporter", value.asInstanceOf[js.Any])
@@ -213,10 +210,9 @@ object importer {
     }
   }
   
-  @js.native
   trait IUiGridImporterConstants extends StObject {
     
-    var featureName: String = js.native
+    var featureName: String
   }
   object IUiGridImporterConstants {
     

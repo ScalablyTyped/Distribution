@@ -2,17 +2,18 @@ package typings.tocktimer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Tock = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Tock]
+  @scala.inline
+  def apply(opts: TockOptions): Tock = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Tock]
+  
   @JSImport("tocktimer", JSImport.Namespace)
   @js.native
-  def apply(): Tock = js.native
-  @JSImport("tocktimer", JSImport.Namespace)
-  @js.native
-  def apply(opts: TockOptions): Tock = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tocktimer", "Tock")
   @js.native
@@ -70,28 +71,27 @@ object mod {
     def timeToMS(time: String): Double = js.native
   }
   
-  @js.native
   trait TockOptions extends StObject {
     
     /**
       * Callback function executed on each tick
       */
-    def callback(): Unit = js.native
+    def callback(): Unit
     
     /**
       * Callback function executed when the timer is complete
       */
-    def complete(): Unit = js.native
+    def complete(): Unit
     
     /**
       * Defaults to false. If true, the clock will count down from a given time, otherwise it will count up from 0:00.
       */
-    var countdown: js.UndefOr[Boolean] = js.native
+    var countdown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defaults to 10 milliseconds. How often, in milliseconds, that the clock will tick.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
   }
   object TockOptions {
     

@@ -2,26 +2,24 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic details about a video category, such as its localized title.
   */
-@js.native
 trait SchemaVideoCategorySnippet extends StObject {
   
-  var assignable: js.UndefOr[Boolean] = js.native
+  var assignable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The YouTube channel that created the video category.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The video category&#39;s title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoCategorySnippet {
   

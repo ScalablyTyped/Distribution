@@ -2,31 +2,29 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRule extends StObject {
   
   /**
     * The schedule, as a Cron expression. The schedule interval must be between 1 hour and 1 year. For more information, see Cron expressions in the Amazon CloudWatch User Guide.
     */
-  var CronExpression: js.UndefOr[typings.awsSdk.dlmMod.CronExpression] = js.native
+  var CronExpression: js.UndefOr[typings.awsSdk.dlmMod.CronExpression] = js.undefined
   
   /**
     * The interval between snapshots. The supported values are 1, 2, 3, 4, 6, 8, 12, and 24.
     */
-  var Interval: js.UndefOr[typings.awsSdk.dlmMod.Interval] = js.native
+  var Interval: js.UndefOr[typings.awsSdk.dlmMod.Interval] = js.undefined
   
   /**
     * The interval unit.
     */
-  var IntervalUnit: js.UndefOr[IntervalUnitValues] = js.native
+  var IntervalUnit: js.UndefOr[IntervalUnitValues] = js.undefined
   
   /**
     * The time, in UTC, to start the operation. The supported format is hh:mm. The operation occurs within a one-hour window following the specified time. If you do not specify a time, Amazon DLM selects a time within the next 24 hours.
     */
-  var Times: js.UndefOr[TimesList] = js.native
+  var Times: js.UndefOr[TimesList] = js.undefined
 }
 object CreateRule {
   

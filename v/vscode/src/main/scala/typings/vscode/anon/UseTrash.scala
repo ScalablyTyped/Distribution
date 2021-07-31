@@ -2,15 +2,13 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseTrash extends StObject {
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
-  var useTrash: js.UndefOr[Boolean] = js.native
+  var useTrash: js.UndefOr[Boolean] = js.undefined
 }
 object UseTrash {
   

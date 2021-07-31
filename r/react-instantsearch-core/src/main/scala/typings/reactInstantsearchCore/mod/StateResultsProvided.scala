@@ -2,36 +2,34 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateResultsProvided[TDoc] extends StObject {
   
   /** In case of multiple indices you can retrieve all the results */
-  var allSearchResults: AllSearchResults[TDoc] = js.native
+  var allSearchResults: AllSearchResults[TDoc]
   
   /** If the search failed, the error will be logged here. */
-  var error: AlgoliaError = js.native
+  var error: AlgoliaError
   
   /** Flag that indicates if React InstantSearch has detected that searches are stalled. */
-  var isSearchStalled: js.Any = js.native
+  var isSearchStalled: js.Any
   
   /**
     * The search results.
     * In case of multiple indices: if used under <Index>, results will be those of the corresponding index
     * otherwise it’ll be those of the root index
     */
-  var searchResults: SearchResults[TDoc] = js.native
+  var searchResults: SearchResults[TDoc]
   
   /** The search state of the instant search component.  */
-  var searchState: SearchState = js.native
+  var searchState: SearchState
   
   /** If there is a search in progress. */
-  var searching: Boolean = js.native
+  var searching: Boolean
   
   /** If there is a search in a list in progress. */
-  var searchingForFacetValues: js.Any = js.native
+  var searchingForFacetValues: js.Any
 }
 object StateResultsProvided {
   
@@ -50,7 +48,7 @@ object StateResultsProvided {
   }
   
   @scala.inline
-  implicit class StateResultsProvidedMutableBuilder[Self <: StateResultsProvided[_], TDoc] (val x: Self with StateResultsProvided[TDoc]) extends AnyVal {
+  implicit class StateResultsProvidedMutableBuilder[Self <: StateResultsProvided[?], TDoc] (val x: Self & StateResultsProvided[TDoc]) extends AnyVal {
     
     @scala.inline
     def setAllSearchResults(value: AllSearchResults[TDoc]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])

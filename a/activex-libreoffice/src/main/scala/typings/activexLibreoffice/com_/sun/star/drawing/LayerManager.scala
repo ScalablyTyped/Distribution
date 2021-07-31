@@ -5,16 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This service is provided by documents to support Layers.
   * @see DrawingDocument
   */
-@js.native
 trait LayerManager
-  extends XLayerManager
+  extends StObject
+     with XLayerManager
      with XNameAccess
 object LayerManager {
   

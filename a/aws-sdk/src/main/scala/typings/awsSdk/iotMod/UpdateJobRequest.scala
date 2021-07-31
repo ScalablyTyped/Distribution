@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobRequest extends StObject {
   
   /**
     * Allows you to create criteria to abort a job.
     */
-  var abortConfig: js.UndefOr[AbortConfig] = js.native
+  var abortConfig: js.UndefOr[AbortConfig] = js.undefined
   
   /**
     * A short text description of the job.
     */
-  var description: js.UndefOr[JobDescription] = js.native
+  var description: js.UndefOr[JobDescription] = js.undefined
   
   /**
     * Allows you to create a staged rollout of the job.
     */
-  var jobExecutionsRolloutConfig: js.UndefOr[JobExecutionsRolloutConfig] = js.native
+  var jobExecutionsRolloutConfig: js.UndefOr[JobExecutionsRolloutConfig] = js.undefined
   
   /**
     * The ID of the job to be updated.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
   
   /**
     * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
-  var namespaceId: js.UndefOr[NamespaceId] = js.native
+  var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
   /**
     * Configuration information for pre-signed S3 URLs.
     */
-  var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.native
+  var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
   
   /**
     * Specifies the amount of time each device has to finish its execution of the job. The timer is started when the job execution status is set to IN_PROGRESS. If the job execution status is not set to another terminal state before the time expires, it will be automatically set to TIMED_OUT. 
     */
-  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.native
+  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
 }
 object UpdateJobRequest {
   

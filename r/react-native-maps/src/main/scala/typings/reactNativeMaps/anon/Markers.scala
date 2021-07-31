@@ -3,13 +3,11 @@ package typings.reactNativeMaps.anon
 import typings.reactNativeMaps.mod.KmlMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Markers extends StObject {
   
-  var markers: js.Array[KmlMarker] = js.native
+  var markers: js.Array[KmlMarker]
 }
 object Markers {
   

@@ -6,164 +6,138 @@ import typings.tsconfigPaths.filesystemMod.ReadJsonSync
 import typings.tsconfigPaths.mappingEntryMod.MappingEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchPathSyncMod {
   
-  @JSImport("tsconfig-paths/lib/match-path-sync", "createMatchPath")
+  @JSImport("tsconfig-paths/lib/match-path-sync", JSImport.Namespace)
   @js.native
-  def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPath = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "createMatchPath")
-  @js.native
-  def createMatchPath(
-    absoluteBaseUrl: String,
-    paths: StringDictionary[js.Array[String]],
-    mainFields: js.UndefOr[scala.Nothing],
-    addMatchAll: Boolean
-  ): MatchPath = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "createMatchPath")
-  @js.native
-  def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]], mainFields: js.Array[String]): MatchPath = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "createMatchPath")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPath = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPath")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[MatchPath]
+  @scala.inline
+  def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]], mainFields: js.Array[String]): MatchPath = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPath")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[MatchPath]
+  @scala.inline
   def createMatchPath(
     absoluteBaseUrl: String,
     paths: StringDictionary[js.Array[String]],
     mainFields: js.Array[String],
     addMatchAll: Boolean
-  ): MatchPath = js.native
+  ): MatchPath = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPath")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any], addMatchAll.asInstanceOf[js.Any])).asInstanceOf[MatchPath]
+  @scala.inline
+  def createMatchPath(
+    absoluteBaseUrl: String,
+    paths: StringDictionary[js.Array[String]],
+    mainFields: Unit,
+    addMatchAll: Boolean
+  ): MatchPath = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPath")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any], addMatchAll.asInstanceOf[js.Any])).asInstanceOf[MatchPath]
   
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
-  def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  @scala.inline
+  def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: js.UndefOr[scala.Nothing],
-    fileExists: js.UndefOr[scala.Nothing],
-    extensions: js.UndefOr[scala.Nothing],
-    mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
-  def matchFromAbsolutePaths(
-    absolutePathMappings: js.Array[MappingEntry],
-    requestedModule: String,
-    readJson: js.UndefOr[scala.Nothing],
-    fileExists: js.UndefOr[scala.Nothing],
+    readJson: Unit,
+    fileExists: Unit,
     extensions: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: js.UndefOr[scala.Nothing],
-    fileExists: js.UndefOr[scala.Nothing],
+    readJson: Unit,
+    fileExists: Unit,
     extensions: js.Array[String],
     mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: js.UndefOr[scala.Nothing],
+    readJson: Unit,
+    fileExists: Unit,
+    extensions: Unit,
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: Unit,
     fileExists: FileExistsSync_
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: js.UndefOr[scala.Nothing],
-    fileExists: FileExistsSync_,
-    extensions: js.UndefOr[scala.Nothing],
-    mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
-  def matchFromAbsolutePaths(
-    absolutePathMappings: js.Array[MappingEntry],
-    requestedModule: String,
-    readJson: js.UndefOr[scala.Nothing],
+    readJson: Unit,
     fileExists: FileExistsSync_,
     extensions: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: js.UndefOr[scala.Nothing],
+    readJson: Unit,
     fileExists: FileExistsSync_,
     extensions: js.Array[String],
     mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
-  def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String, readJson: ReadJsonSync): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: ReadJsonSync,
-    fileExists: js.UndefOr[scala.Nothing],
-    extensions: js.UndefOr[scala.Nothing],
+    readJson: Unit,
+    fileExists: FileExistsSync_,
+    extensions: Unit,
     mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String, readJson: ReadJsonSync): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
     readJson: ReadJsonSync,
-    fileExists: js.UndefOr[scala.Nothing],
+    fileExists: Unit,
     extensions: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
     readJson: ReadJsonSync,
-    fileExists: js.UndefOr[scala.Nothing],
+    fileExists: Unit,
     extensions: js.Array[String],
     mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: Unit,
+    extensions: Unit,
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
     readJson: ReadJsonSync,
     fileExists: FileExistsSync_
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
-  def matchFromAbsolutePaths(
-    absolutePathMappings: js.Array[MappingEntry],
-    requestedModule: String,
-    readJson: ReadJsonSync,
-    fileExists: FileExistsSync_,
-    extensions: js.UndefOr[scala.Nothing],
-    mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
     readJson: ReadJsonSync,
     fileExists: FileExistsSync_,
     extensions: js.Array[String]
-  ): js.UndefOr[String] = js.native
-  @JSImport("tsconfig-paths/lib/match-path-sync", "matchFromAbsolutePaths")
-  @js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
@@ -171,7 +145,16 @@ object matchPathSyncMod {
     fileExists: FileExistsSync_,
     extensions: js.Array[String],
     mainFields: js.Array[String]
-  ): js.UndefOr[String] = js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: FileExistsSync_,
+    extensions: Unit,
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePaths")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   type MatchPath = js.Function4[
     /* requestedModule */ String, 

@@ -10,9 +10,9 @@ Drag and drop sans the GUI
 | ------------------ | :-------------: |
 | Full name          | dnd-core |
 | Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 65 |
-| # downloads        | 28692699 |
+| # releases         | 26 |
+| # dependents       | 72 |
+| # downloads        | 35929634 |
 | # stars            | 1 |
 
 ## Links

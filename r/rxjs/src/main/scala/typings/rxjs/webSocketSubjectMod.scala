@@ -16,7 +16,6 @@ import typings.std.Event
 import typings.std.MessageEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webSocketSubjectMod {
@@ -61,15 +60,14 @@ object webSocketSubjectMod {
       * from the server for the output stream.
       */
     def multiplex(
-      subMsg: js.Function0[_],
-      unsubMsg: js.Function0[_],
+      subMsg: js.Function0[js.Any],
+      unsubMsg: js.Function0[js.Any],
       messageFilter: js.Function1[/* value */ T, Boolean]
-    ): Observable[_] = js.native
+    ): Observable[js.Any] = js.native
   }
   
   type WebSocketMessage = String | ArrayBuffer | Blob | ArrayBufferView
   
-  @js.native
   trait WebSocketSubjectConfig[T] extends StObject {
     
     /**
@@ -77,47 +75,47 @@ object webSocketSubjectMod {
       * WebSocket impl in Node (WebSocket is a DOM API), or for mocking a WebSocket
       * for testing purposes
       */
-    var WebSocketCtor: js.UndefOr[Instantiable] = js.native
+    var WebSocketCtor: js.UndefOr[Instantiable] = js.undefined
     
     /** Sets the `binaryType` property of the underlying WebSocket. */
-    var binaryType: js.UndefOr[blob | arraybuffer] = js.native
+    var binaryType: js.UndefOr[blob | arraybuffer] = js.undefined
     
     /**
       * An Observer than watches when close events occur on the underlying webSocket
       */
-    var closeObserver: js.UndefOr[NextObserver[CloseEvent]] = js.native
+    var closeObserver: js.UndefOr[NextObserver[CloseEvent]] = js.undefined
     
     /**
       * An Observer that watches when a close is about to occur due to
       * unsubscription.
       */
-    var closingObserver: js.UndefOr[NextObserver[Unit]] = js.native
+    var closingObserver: js.UndefOr[NextObserver[Unit]] = js.undefined
     
     /**
       * A deserializer used for messages arriving on the socket from the
       * server. Defaults to JSON.parse.
       */
-    var deserializer: js.UndefOr[js.Function1[/* e */ MessageEvent[_], T]] = js.native
+    var deserializer: js.UndefOr[js.Function1[/* e */ MessageEvent[js.Any], T]] = js.undefined
     
     /**
       * An Observer that watches when open events occur on the underlying web socket.
       */
-    var openObserver: js.UndefOr[NextObserver[Event]] = js.native
+    var openObserver: js.UndefOr[NextObserver[Event]] = js.undefined
     
     /** The protocol to use to connect */
-    var protocol: js.UndefOr[String | js.Array[String]] = js.native
+    var protocol: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** @deprecated use {@link deserializer} */
-    var resultSelector: js.UndefOr[js.Function1[/* e */ MessageEvent[_], T]] = js.native
+    var resultSelector: js.UndefOr[js.Function1[/* e */ MessageEvent[js.Any], T]] = js.undefined
     
     /**
       * A serializer used to create messages from passed values before the
       * messages are sent to the server. Defaults to JSON.stringify.
       */
-    var serializer: js.UndefOr[js.Function1[/* value */ T, WebSocketMessage]] = js.native
+    var serializer: js.UndefOr[js.Function1[/* value */ T, WebSocketMessage]] = js.undefined
     
     /** The url of the socket server to connect to */
-    var url: String = js.native
+    var url: String
   }
   object WebSocketSubjectConfig {
     
@@ -128,7 +126,7 @@ object webSocketSubjectMod {
     }
     
     @scala.inline
-    implicit class WebSocketSubjectConfigMutableBuilder[Self <: WebSocketSubjectConfig[_], T] (val x: Self with WebSocketSubjectConfig[T]) extends AnyVal {
+    implicit class WebSocketSubjectConfigMutableBuilder[Self <: WebSocketSubjectConfig[?], T] (val x: Self & WebSocketSubjectConfig[T]) extends AnyVal {
       
       @scala.inline
       def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
@@ -149,7 +147,7 @@ object webSocketSubjectMod {
       def setClosingObserverUndefined: Self = StObject.set(x, "closingObserver", js.undefined)
       
       @scala.inline
-      def setDeserializer(value: /* e */ MessageEvent[_] => T): Self = StObject.set(x, "deserializer", js.Any.fromFunction1(value))
+      def setDeserializer(value: /* e */ MessageEvent[js.Any] => T): Self = StObject.set(x, "deserializer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDeserializerUndefined: Self = StObject.set(x, "deserializer", js.undefined)
@@ -170,7 +168,7 @@ object webSocketSubjectMod {
       def setProtocolVarargs(value: String*): Self = StObject.set(x, "protocol", js.Array(value :_*))
       
       @scala.inline
-      def setResultSelector(value: /* e */ MessageEvent[_] => T): Self = StObject.set(x, "resultSelector", js.Any.fromFunction1(value))
+      def setResultSelector(value: /* e */ MessageEvent[js.Any] => T): Self = StObject.set(x, "resultSelector", js.Any.fromFunction1(value))
       
       @scala.inline
       def setResultSelectorUndefined: Self = StObject.set(x, "resultSelector", js.undefined)

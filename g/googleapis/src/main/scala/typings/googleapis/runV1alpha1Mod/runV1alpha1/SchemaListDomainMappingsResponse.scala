@@ -2,34 +2,32 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListDomainMappingsResponse is a list of DomainMapping resources.
   */
-@js.native
 trait SchemaListDomainMappingsResponse extends StObject {
   
   /**
     * The API version for this call such as &quot;v1alpha1&quot;.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * List of DomainMappings.
     */
-  var items: js.UndefOr[js.Array[SchemaDomainMapping]] = js.native
+  var items: js.UndefOr[js.Array[SchemaDomainMapping]] = js.undefined
   
   /**
     * The kind of this resource, in this case &quot;DomainMappingList&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata associated with this DomainMapping list.
     */
-  var metadata: js.UndefOr[SchemaListMeta] = js.native
+  var metadata: js.UndefOr[SchemaListMeta] = js.undefined
 }
 object SchemaListDomainMappingsResponse {
   

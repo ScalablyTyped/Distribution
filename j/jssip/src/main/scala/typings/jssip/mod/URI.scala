@@ -3,7 +3,6 @@ package typings.jssip.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jssip", "URI")
@@ -17,62 +16,14 @@ class URI protected () extends StObject {
   def this(scheme: String, user: Null, host: String, port: Double) = this()
   def this(scheme: Null, user: String, host: String, port: Double) = this()
   def this(scheme: Null, user: Null, host: String, port: Double) = this()
-  def this(
-    scheme: String,
-    user: String,
-    host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: StringDictionary[String]
-  ) = this()
   def this(scheme: String, user: String, host: String, port: Double, parameters: StringDictionary[String]) = this()
-  def this(
-    scheme: String,
-    user: Null,
-    host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: StringDictionary[String]
-  ) = this()
+  def this(scheme: String, user: String, host: String, port: Unit, parameters: StringDictionary[String]) = this()
   def this(scheme: String, user: Null, host: String, port: Double, parameters: StringDictionary[String]) = this()
-  def this(
-    scheme: Null,
-    user: String,
-    host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: StringDictionary[String]
-  ) = this()
+  def this(scheme: String, user: Null, host: String, port: Unit, parameters: StringDictionary[String]) = this()
   def this(scheme: Null, user: String, host: String, port: Double, parameters: StringDictionary[String]) = this()
-  def this(
-    scheme: Null,
-    user: Null,
-    host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: StringDictionary[String]
-  ) = this()
+  def this(scheme: Null, user: String, host: String, port: Unit, parameters: StringDictionary[String]) = this()
   def this(scheme: Null, user: Null, host: String, port: Double, parameters: StringDictionary[String]) = this()
-  def this(
-    scheme: String,
-    user: String,
-    host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
-    headers: StringDictionary[String]
-  ) = this()
-  def this(
-    scheme: String,
-    user: String,
-    host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: StringDictionary[String],
-    headers: StringDictionary[String]
-  ) = this()
-  def this(
-    scheme: String,
-    user: String,
-    host: String,
-    port: Double,
-    parameters: js.UndefOr[scala.Nothing],
-    headers: StringDictionary[String]
-  ) = this()
+  def this(scheme: Null, user: Null, host: String, port: Unit, parameters: StringDictionary[String]) = this()
   def this(
     scheme: String,
     user: String,
@@ -83,26 +34,26 @@ class URI protected () extends StObject {
   ) = this()
   def this(
     scheme: String,
-    user: Null,
+    user: String,
     host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
+    port: Double,
+    parameters: Unit,
     headers: StringDictionary[String]
   ) = this()
   def this(
     scheme: String,
-    user: Null,
+    user: String,
     host: String,
-    port: js.UndefOr[scala.Nothing],
+    port: Unit,
     parameters: StringDictionary[String],
     headers: StringDictionary[String]
   ) = this()
   def this(
     scheme: String,
-    user: Null,
+    user: String,
     host: String,
-    port: Double,
-    parameters: js.UndefOr[scala.Nothing],
+    port: Unit,
+    parameters: Unit,
     headers: StringDictionary[String]
   ) = this()
   def this(
@@ -114,27 +65,27 @@ class URI protected () extends StObject {
     headers: StringDictionary[String]
   ) = this()
   def this(
-    scheme: Null,
-    user: String,
+    scheme: String,
+    user: Null,
     host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
+    port: Double,
+    parameters: Unit,
     headers: StringDictionary[String]
   ) = this()
   def this(
-    scheme: Null,
-    user: String,
+    scheme: String,
+    user: Null,
     host: String,
-    port: js.UndefOr[scala.Nothing],
+    port: Unit,
     parameters: StringDictionary[String],
     headers: StringDictionary[String]
   ) = this()
   def this(
-    scheme: Null,
-    user: String,
+    scheme: String,
+    user: Null,
     host: String,
-    port: Double,
-    parameters: js.UndefOr[scala.Nothing],
+    port: Unit,
+    parameters: Unit,
     headers: StringDictionary[String]
   ) = this()
   def this(
@@ -147,17 +98,33 @@ class URI protected () extends StObject {
   ) = this()
   def this(
     scheme: Null,
-    user: Null,
+    user: String,
     host: String,
-    port: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
+    port: Double,
+    parameters: Unit,
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: String,
+    host: String,
+    port: Unit,
+    parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: String,
+    host: String,
+    port: Unit,
+    parameters: Unit,
     headers: StringDictionary[String]
   ) = this()
   def this(
     scheme: Null,
     user: Null,
     host: String,
-    port: js.UndefOr[scala.Nothing],
+    port: Double,
     parameters: StringDictionary[String],
     headers: StringDictionary[String]
   ) = this()
@@ -166,15 +133,23 @@ class URI protected () extends StObject {
     user: Null,
     host: String,
     port: Double,
-    parameters: js.UndefOr[scala.Nothing],
+    parameters: Unit,
     headers: StringDictionary[String]
   ) = this()
   def this(
     scheme: Null,
     user: Null,
     host: String,
-    port: Double,
+    port: Unit,
     parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: Null,
+    host: String,
+    port: Unit,
+    parameters: Unit,
     headers: StringDictionary[String]
   ) = this()
   
@@ -203,7 +178,10 @@ class URI protected () extends StObject {
 }
 object URI {
   
-  @JSImport("jssip", "URI.parse")
+  @JSImport("jssip", "URI")
   @js.native
-  def parse(uri: String): URI = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(uri: String): URI = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uri.asInstanceOf[js.Any]).asInstanceOf[URI]
 }

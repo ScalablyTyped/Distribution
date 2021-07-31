@@ -2,34 +2,32 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceRecordSet extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** For example, www.example.com. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Configures dynamic query responses based on geo location of querying user or a weighted round robin based routing policy. A ResourceRecordSet should only have either rrdata (static)
     * or routing_policy(dynamic). An error is returned otherwise.
     */
-  var routingPolicy: js.UndefOr[RRSetRoutingPolicy] = js.native
+  var routingPolicy: js.UndefOr[RRSetRoutingPolicy] = js.undefined
   
   /** As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1) -- see examples. */
-  var rrdatas: js.UndefOr[js.Array[String]] = js.native
+  var rrdatas: js.UndefOr[js.Array[String]] = js.undefined
   
   /** As defined in RFC 4034 (section 3.2). */
-  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.native
+  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Number of seconds that this ResourceRecordSet can be cached by resolvers. */
-  var ttl: js.UndefOr[Double] = js.native
+  var ttl: js.UndefOr[Double] = js.undefined
   
   /** The identifier of a supported record type. See the list of Supported DNS record types. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ResourceRecordSet {
   

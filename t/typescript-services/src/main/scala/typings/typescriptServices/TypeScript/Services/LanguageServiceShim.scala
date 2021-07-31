@@ -2,23 +2,22 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageServiceShim
-  extends ShimBase
+  extends StObject
+     with ShimBase
      with ILanguageServiceShim {
   
-  /* private */ def _navigateToItemsToString(items: js.Any): js.Any = js.native
+  /* private */ def _navigateToItemsToString(items: js.Any): js.Any
   
-  def forwardJSONCall(actionDescription: String, action: js.Function0[_]): String = js.native
+  def forwardJSONCall(actionDescription: String, action: js.Function0[js.Any]): String
   
-  var host: js.Any = js.native
+  var host: js.Any
   
-  var logger: js.Any = js.native
+  var logger: js.Any
   
-  /* private */ def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any = js.native
+  /* private */ def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any
 }
 object LanguageServiceShim {
   
@@ -28,7 +27,7 @@ object LanguageServiceShim {
     cleanupSemanticCache: () => Unit,
     dispose: js.Any => Unit,
     factory: js.Any,
-    forwardJSONCall: (String, js.Function0[_]) => String,
+    forwardJSONCall: (String, js.Function0[js.Any]) => String,
     getBraceMatchingAtPosition: (String, Double) => String,
     getBreakpointStatementAtPosition: (String, Double) => String,
     getCompilerOptionsDiagnostics: () => String,
@@ -66,7 +65,7 @@ object LanguageServiceShim {
   implicit class LanguageServiceShimMutableBuilder[Self <: LanguageServiceShim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setForwardJSONCall(value: (String, js.Function0[_]) => String): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
+    def setForwardJSONCall(value: (String, js.Function0[js.Any]) => String): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
     
     @scala.inline
     def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])

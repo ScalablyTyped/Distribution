@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementsListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#placementsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Pagination token to be used for the next list operation. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Placement collection. */
-  var placements: js.UndefOr[js.Array[Placement]] = js.native
+  var placements: js.UndefOr[js.Array[Placement]] = js.undefined
 }
 object PlacementsListResponse {
   

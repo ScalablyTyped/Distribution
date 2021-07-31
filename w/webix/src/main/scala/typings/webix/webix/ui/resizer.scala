@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait resizer extends baseview {
+trait resizer
+  extends StObject
+     with baseview {
   
   @JSName("$scope")
   var $scope: js.Any = js.native

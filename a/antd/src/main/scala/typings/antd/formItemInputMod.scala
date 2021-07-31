@@ -8,34 +8,32 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formItemInputMod extends Shortcut {
   
   @JSImport("antd/lib/form/FormItemInput", JSImport.Default)
   @js.native
-  val default: FC[FormItemInputProps with FormItemInputMiscProps] = js.native
+  val default: FC[FormItemInputProps & FormItemInputMiscProps] = js.native
   
-  @js.native
   trait FormItemInputMiscProps extends StObject {
     
     /**
       * @private Internal usage, do not use in any of your production.
       */
-    var _internalItemRender: js.UndefOr[Mark] = js.native
+    var _internalItemRender: js.UndefOr[Mark] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var errors: js.Array[ReactNode] = js.native
+    var errors: js.Array[ReactNode]
     
-    var hasFeedback: js.UndefOr[Boolean] = js.native
+    var hasFeedback: js.UndefOr[Boolean] = js.undefined
     
-    def onDomErrorVisibleChange(visible: Boolean): Unit = js.native
+    def onDomErrorVisibleChange(visible: Boolean): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var validateStatus: js.UndefOr[ValidateStatus] = js.native
+    var validateStatus: js.UndefOr[ValidateStatus] = js.undefined
   }
   object FormItemInputMiscProps {
     
@@ -86,16 +84,15 @@ object formItemInputMod extends Shortcut {
     }
   }
   
-  @js.native
   trait FormItemInputProps extends StObject {
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var help: js.UndefOr[ReactNode] = js.native
+    var help: js.UndefOr[ReactNode] = js.undefined
     
-    var status: js.UndefOr[ValidateStatus] = js.native
+    var status: js.UndefOr[ValidateStatus] = js.undefined
     
-    var wrapperCol: js.UndefOr[ColProps] = js.native
+    var wrapperCol: js.UndefOr[ColProps] = js.undefined
   }
   object FormItemInputProps {
     
@@ -134,8 +131,8 @@ object formItemInputMod extends Shortcut {
     }
   }
   
-  type _To = FC[FormItemInputProps with FormItemInputMiscProps]
+  type _To = FC[FormItemInputProps & FormItemInputMiscProps]
   
   /* This means you don't have to write `default`, but can instead just say `formItemInputMod.foo` */
-  override def _to: FC[FormItemInputProps with FormItemInputMiscProps] = default
+  override def _to: FC[FormItemInputProps & FormItemInputMiscProps] = default
 }

@@ -2,14 +2,14 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectOptions extends SuccessFailOptions {
+trait ConnectOptions
+  extends StObject
+     with SuccessFailOptions {
   
   /** The queue ARN to associate the contact with. */
-  val queueARN: js.UndefOr[String] = js.native
+  val queueARN: js.UndefOr[String] = js.undefined
 }
 object ConnectOptions {
   

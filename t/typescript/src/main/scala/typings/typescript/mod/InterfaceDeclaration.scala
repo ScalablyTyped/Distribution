@@ -2,16 +2,16 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InterfaceDeclaration
-  extends DeclarationStatement
+  extends StObject
+     with DeclarationStatement
      with JSDocContainer
      with DeclarationWithTypeParameterChildren
-     with ObjectTypeDeclaration
-     with _HasJSDoc {
+     with HasJSDoc
+     with ObjectTypeDeclaration {
   
   val heritageClauses: js.UndefOr[NodeArray[HeritageClause]] = js.native
   

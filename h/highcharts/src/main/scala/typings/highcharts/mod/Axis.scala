@@ -4,7 +4,6 @@ import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Axis")
@@ -124,7 +123,7 @@ class Axis protected () extends StObject {
     * @fires Highcharts.Axis#drawCrosshair
     */
   def drawCrosshair(): Unit = js.native
-  def drawCrosshair(e: js.UndefOr[scala.Nothing], point: Point): Unit = js.native
+  def drawCrosshair(e: Unit, point: Point): Unit = js.native
   def drawCrosshair(e: PointerEventObject): Unit = js.native
   def drawCrosshair(e: PointerEventObject, point: Point): Unit = js.native
   
@@ -370,9 +369,9 @@ class Axis protected () extends StObject {
     *        Chart#redraw.
     */
   def setCompare(): Unit = js.native
-  def setCompare(compare: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
   def setCompare(compare: String): Unit = js.native
   def setCompare(compare: String, redraw: Boolean): Unit = js.native
+  def setCompare(compare: Unit, redraw: Boolean): Unit = js.native
   
   /**
     * (Highstock) Highstock only. Force data grouping on all the axis'
@@ -387,9 +386,9 @@ class Axis protected () extends StObject {
     *        Chart#redraw.
     */
   def setDataGrouping(): Unit = js.native
-  def setDataGrouping(dataGrouping: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
   def setDataGrouping(dataGrouping: Boolean): Unit = js.native
   def setDataGrouping(dataGrouping: Boolean, redraw: Boolean): Unit = js.native
+  def setDataGrouping(dataGrouping: Unit, redraw: Boolean): Unit = js.native
   def setDataGrouping(dataGrouping: DataGroupingOptionsObject): Unit = js.native
   def setDataGrouping(dataGrouping: DataGroupingOptionsObject, redraw: Boolean): Unit = js.native
   
@@ -420,243 +419,98 @@ class Axis protected () extends StObject {
     * @fires Highcharts.Axis#setExtremes
     */
   def setExtremes(): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(newMin: js.UndefOr[scala.Nothing], newMax: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: Boolean
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: Boolean,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(newMin: js.UndefOr[scala.Nothing], newMax: Double): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(newMin: js.UndefOr[scala.Nothing], newMax: Double, redraw: Boolean): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: Boolean,
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(newMin: js.UndefOr[scala.Nothing], newMax: Double, redraw: Boolean, animation: Boolean): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: Boolean,
-    animation: Boolean,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: Boolean,
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setExtremes(
-    newMin: js.UndefOr[scala.Nothing],
-    newMax: Double,
-    redraw: Boolean,
-    animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
-  ): Unit = js.native
   def setExtremes(newMin: Double): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(newMin: Double, newMax: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(newMin: Double, newMax: js.UndefOr[scala.Nothing], redraw: Boolean, animation: Boolean): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: Boolean,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: js.UndefOr[scala.Nothing],
-    redraw: Boolean,
-    animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
-  ): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(newMin: Double, newMax: Double, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: Boolean,
-    eventArguments: js.Any
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb
-  ): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: Double,
-    redraw: js.UndefOr[scala.Nothing],
-    animation: PartialAnimationOptionsOb,
-    eventArguments: js.Any
-  ): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Boolean): Unit = js.native
-  def setExtremes(
-    newMin: Double,
-    newMax: Double,
-    redraw: Boolean,
-    animation: js.UndefOr[scala.Nothing],
-    eventArguments: js.Any
-  ): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Boolean): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
   def setExtremes(newMin: Double, newMax: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
   def setExtremes(
     newMin: Double,
     newMax: Double,
     redraw: Boolean,
+    animation: PartialAnimationOptionsOb,
+    eventArguments: js.Any
+  ): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Boolean): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setExtremes(
+    newMin: Double,
+    newMax: Double,
+    redraw: Unit,
+    animation: PartialAnimationOptionsOb,
+    eventArguments: js.Any
+  ): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Boolean): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setExtremes(
+    newMin: Double,
+    newMax: Unit,
+    redraw: Boolean,
+    animation: PartialAnimationOptionsOb,
+    eventArguments: js.Any
+  ): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Boolean): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Double, newMax: Unit, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setExtremes(
+    newMin: Double,
+    newMax: Unit,
+    redraw: Unit,
+    animation: PartialAnimationOptionsOb,
+    eventArguments: js.Any
+  ): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Boolean): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setExtremes(
+    newMin: Unit,
+    newMax: Double,
+    redraw: Boolean,
+    animation: PartialAnimationOptionsOb,
+    eventArguments: js.Any
+  ): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Boolean): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Double, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setExtremes(
+    newMin: Unit,
+    newMax: Double,
+    redraw: Unit,
+    animation: PartialAnimationOptionsOb,
+    eventArguments: js.Any
+  ): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Boolean): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setExtremes(
+    newMin: Unit,
+    newMax: Unit,
+    redraw: Boolean,
+    animation: PartialAnimationOptionsOb,
+    eventArguments: js.Any
+  ): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Boolean): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Boolean, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: Unit, eventArguments: js.Any): Unit = js.native
+  def setExtremes(newMin: Unit, newMax: Unit, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
+  def setExtremes(
+    newMin: Unit,
+    newMax: Unit,
+    redraw: Unit,
     animation: PartialAnimationOptionsOb,
     eventArguments: js.Any
   ): Unit = js.native

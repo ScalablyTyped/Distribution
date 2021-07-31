@@ -2,22 +2,20 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatpchaConfiguration extends StObject {
   
   /**
     * The ISO code of the language for recaptcha
     * @default 'en'
     */
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     *  An object containaing templates for each captcha provider
     */
-  var templates: js.UndefOr[CaptchaTemplates] = js.native
+  var templates: js.UndefOr[CaptchaTemplates] = js.undefined
 }
 object CatpchaConfiguration {
   

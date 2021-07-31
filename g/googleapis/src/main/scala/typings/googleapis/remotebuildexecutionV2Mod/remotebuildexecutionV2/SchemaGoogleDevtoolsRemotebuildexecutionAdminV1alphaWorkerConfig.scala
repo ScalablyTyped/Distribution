@@ -2,28 +2,26 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the configuration to be used for a creating workers in the worker
   * pool.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObject {
   
   /**
     * Required. Size of the disk attached to the worker, in GB. See
     * https://cloud.google.com/compute/docs/disks/
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Disk Type to use for the worker. See [Storage
     * options](https://cloud.google.com/compute/docs/disks/#introduction).
     * Currently only `pd-standard` is supported.
     */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Machine type of the worker, such as `n1-standard-2`. See
@@ -31,20 +29,20 @@ trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends S
     * supported machine types. Note that `f1-micro` and `g1-small` are not yet
     * supported.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum CPU platform to use when creating the worker. See [CPU
     * Platforms](https://cloud.google.com/compute/docs/cpu-platforms).
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * Determines whether the worker is reserved (equivalent to a Compute Engine
     * on-demand VM and therefore won&#39;t be preempted). See [Preemptible
     * VMs](https://cloud.google.com/preemptible-vms/) for more details.
     */
-  var reserved: js.UndefOr[Boolean] = js.native
+  var reserved: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
   

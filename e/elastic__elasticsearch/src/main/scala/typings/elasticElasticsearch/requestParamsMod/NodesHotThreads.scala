@@ -5,25 +5,25 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.cpu
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodesHotThreads extends Generic {
+trait NodesHotThreads
+  extends StObject
+     with Generic {
   
-  var ignore_idle_threads: js.UndefOr[Boolean] = js.native
+  var ignore_idle_threads: js.UndefOr[Boolean] = js.undefined
   
-  var interval: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[String] = js.undefined
   
-  var node_id: js.UndefOr[String | js.Array[String]] = js.native
+  var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var snapshots: js.UndefOr[Double] = js.native
+  var snapshots: js.UndefOr[Double] = js.undefined
   
-  var threads: js.UndefOr[Double] = js.native
+  var threads: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[cpu | wait | block] = js.native
+  var `type`: js.UndefOr[cpu | wait | block] = js.undefined
 }
 object NodesHotThreads {
   

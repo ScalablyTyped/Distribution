@@ -2,12 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Base
 @js.native
-trait Point extends Coord {
+trait Point
+  extends StObject
+     with Coord {
   
   def add(point: Coord): Point = js.native
   def add(point: PointLiteral): Point = js.native

@@ -8,22 +8,22 @@ import typings.passport.mod.Strategy
 import typings.passport.mod.StrategyCreatedStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
-  trait `0` extends Instantiable0[Strategy with StrategyCreatedStatic]
+  trait `0`
+    extends StObject
+       with Instantiable0[Strategy & StrategyCreatedStatic]
   
-  @js.native
   trait FamilyName extends StObject {
     
-    var familyName: String = js.native
+    var familyName: String
     
-    var givenName: String = js.native
+    var givenName: String
     
-    var middleName: js.UndefOr[String] = js.native
+    var middleName: js.UndefOr[String] = js.undefined
   }
   object FamilyName {
     
@@ -52,12 +52,12 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable0[Authenticator[Handler, js.Any, js.Any, AuthenticateOptions]]
+    extends StObject
+       with Instantiable0[Authenticator[Handler, js.Any, js.Any, AuthenticateOptions]]
   
-  @js.native
   trait PauseStream extends StObject {
     
-    var pauseStream: Boolean = js.native
+    var pauseStream: Boolean
   }
   object PauseStream {
     
@@ -75,12 +75,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object Type {
     
@@ -104,10 +103,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UserProperty extends StObject {
     
-    var userProperty: String = js.native
+    var userProperty: String
   }
   object UserProperty {
     
@@ -125,10 +123,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

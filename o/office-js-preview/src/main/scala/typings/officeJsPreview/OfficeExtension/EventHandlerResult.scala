@@ -2,16 +2,14 @@ package typings.officeJsPreview.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventHandlerResult[T] extends StObject {
   
   /** The request context associated with the object */
-  var context: ClientRequestContext = js.native
+  var context: ClientRequestContext
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object EventHandlerResult {
   
@@ -22,7 +20,7 @@ object EventHandlerResult {
   }
   
   @scala.inline
-  implicit class EventHandlerResultMutableBuilder[Self <: EventHandlerResult[_], T] (val x: Self with EventHandlerResult[T]) extends AnyVal {
+  implicit class EventHandlerResultMutableBuilder[Self <: EventHandlerResult[?], T] (val x: Self & EventHandlerResult[T]) extends AnyVal {
     
     @scala.inline
     def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

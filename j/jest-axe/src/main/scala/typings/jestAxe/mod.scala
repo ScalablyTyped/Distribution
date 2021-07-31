@@ -8,21 +8,22 @@ import typings.jestAxe.anon.PartialAxeResults
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jest-axe", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jest-axe", "axe")
   @js.native
   val axe: JestAxe = js.native
   
-  @JSImport("jest-axe", "configureAxe")
-  @js.native
-  def configureAxe(): JestAxe = js.native
-  @JSImport("jest-axe", "configureAxe")
-  @js.native
-  def configureAxe(options: JestAxeConfigureOptions): JestAxe = js.native
+  @scala.inline
+  def configureAxe(): JestAxe = ^.asInstanceOf[js.Dynamic].applyDynamic("configureAxe")().asInstanceOf[JestAxe]
+  @scala.inline
+  def configureAxe(options: JestAxeConfigureOptions): JestAxe = ^.asInstanceOf[js.Dynamic].applyDynamic("configureAxe")(options.asInstanceOf[js.Any]).asInstanceOf[JestAxe]
   
   object toHaveNoViolations {
     
@@ -36,23 +37,22 @@ object mod {
     def toHaveNoViolations_=(x: IToHaveNoViolations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toHaveNoViolations")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AssertionsResult extends StObject {
     
     /**
       * Actual checked aXe verification results.
       */
-    var actual: js.Array[Result] = js.native
+    var actual: js.Array[Result]
     
     /**
       * @returns Message from the Jest assertion.
       */
-    def message(): String = js.native
+    def message(): String
     
     /**
       * Whether the assertion passed.
       */
-    var pass: Boolean = js.native
+    var pass: Boolean
   }
   object AssertionsResult {
     
@@ -87,10 +87,11 @@ object mod {
     js.Promise[AxeResults]
   ]
   
-  @js.native
-  trait JestAxeConfigureOptions extends RunOptions {
+  trait JestAxeConfigureOptions
+    extends StObject
+       with RunOptions {
     
-    var globalOptions: js.UndefOr[Spec] = js.native
+    var globalOptions: js.UndefOr[Spec] = js.undefined
   }
   object JestAxeConfigureOptions {
     
@@ -115,10 +116,9 @@ object mod {
     
     object jest {
       
-      @js.native
       trait Matchers[R, T] extends StObject {
         
-        def toHaveNoViolations(): R = js.native
+        def toHaveNoViolations(): R
       }
       object Matchers {
         
@@ -129,7 +129,7 @@ object mod {
         }
         
         @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[_, _], R, T] (val x: Self with (Matchers[R, T])) extends AnyVal {
+        implicit class MatchersMutableBuilder[Self <: Matchers[?, ?], R, T] (val x: Self & (Matchers[R, T])) extends AnyVal {
           
           @scala.inline
           def setToHaveNoViolations(value: () => R): Self = StObject.set(x, "toHaveNoViolations", js.Any.fromFunction0(value))

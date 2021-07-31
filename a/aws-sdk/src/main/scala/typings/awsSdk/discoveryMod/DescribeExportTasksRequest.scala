@@ -2,31 +2,29 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExportTasksRequest extends StObject {
   
   /**
     * One or more unique identifiers used to query the status of an export request.
     */
-  var exportIds: js.UndefOr[ExportIds] = js.native
+  var exportIds: js.UndefOr[ExportIds] = js.undefined
   
   /**
     * One or more filters.    AgentId - ID of the agent whose collected data will be exported  
     */
-  var filters: js.UndefOr[ExportFilters] = js.native
+  var filters: js.UndefOr[ExportFilters] = js.undefined
   
   /**
     * The maximum number of volume results returned by DescribeExportTasks in paginated output. When this parameter is used, DescribeExportTasks only returns maxResults results in a single page along with a nextToken response element.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * The nextToken value returned from a previous paginated DescribeExportTasks request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeExportTasksRequest {
   

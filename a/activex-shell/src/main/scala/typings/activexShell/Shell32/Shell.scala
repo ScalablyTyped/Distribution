@@ -11,7 +11,6 @@ import typings.activexShell.activexShellStrings.ProcessorLevel
 import typings.activexShell.activexShellStrings.ProcessorSpeed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Object Type Information */
@@ -77,13 +76,13 @@ trait Shell extends StObject {
   
   /** Find a Printer in the Directory Service */
   def FindPrinter(): Unit = js.native
-  def FindPrinter(Name: js.UndefOr[scala.Nothing], location: js.UndefOr[scala.Nothing], model: String): Unit = js.native
-  def FindPrinter(Name: js.UndefOr[scala.Nothing], location: String): Unit = js.native
-  def FindPrinter(Name: js.UndefOr[scala.Nothing], location: String, model: String): Unit = js.native
   def FindPrinter(Name: String): Unit = js.native
-  def FindPrinter(Name: String, location: js.UndefOr[scala.Nothing], model: String): Unit = js.native
   def FindPrinter(Name: String, location: String): Unit = js.native
   def FindPrinter(Name: String, location: String, model: String): Unit = js.native
+  def FindPrinter(Name: String, location: Unit, model: String): Unit = js.native
+  def FindPrinter(Name: Unit, location: String): Unit = js.native
+  def FindPrinter(Name: Unit, location: String, model: String): Unit = js.native
+  def FindPrinter(Name: Unit, location: Unit, model: String): Unit = js.native
   
   /** Return shell global setting */
   def GetSetting(lSetting: Double): Boolean = js.native
@@ -192,68 +191,21 @@ trait Shell extends StObject {
     * @param [vShow] A recommendation as to how the application window should be displayed initially. The application can ignore this recommendation.
     */
   def ShellExecute(File: String): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: js.UndefOr[scala.Nothing],
-    vDir: js.UndefOr[scala.Nothing],
-    vOperation: js.UndefOr[scala.Nothing],
-    vShow: ShellExecuteShow
-  ): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: js.UndefOr[scala.Nothing],
-    vDir: js.UndefOr[scala.Nothing],
-    vOperation: String
-  ): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: js.UndefOr[scala.Nothing],
-    vDir: js.UndefOr[scala.Nothing],
-    vOperation: String,
-    vShow: ShellExecuteShow
-  ): Unit = js.native
-  def ShellExecute(File: String, vArgs: js.UndefOr[scala.Nothing], vDir: String): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: js.UndefOr[scala.Nothing],
-    vDir: String,
-    vOperation: js.UndefOr[scala.Nothing],
-    vShow: ShellExecuteShow
-  ): Unit = js.native
-  def ShellExecute(File: String, vArgs: js.UndefOr[scala.Nothing], vDir: String, vOperation: String): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: js.UndefOr[scala.Nothing],
-    vDir: String,
-    vOperation: String,
-    vShow: ShellExecuteShow
-  ): Unit = js.native
   def ShellExecute(File: String, vArgs: String): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: String,
-    vDir: js.UndefOr[scala.Nothing],
-    vOperation: js.UndefOr[scala.Nothing],
-    vShow: ShellExecuteShow
-  ): Unit = js.native
-  def ShellExecute(File: String, vArgs: String, vDir: js.UndefOr[scala.Nothing], vOperation: String): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: String,
-    vDir: js.UndefOr[scala.Nothing],
-    vOperation: String,
-    vShow: ShellExecuteShow
-  ): Unit = js.native
   def ShellExecute(File: String, vArgs: String, vDir: String): Unit = js.native
-  def ShellExecute(
-    File: String,
-    vArgs: String,
-    vDir: String,
-    vOperation: js.UndefOr[scala.Nothing],
-    vShow: ShellExecuteShow
-  ): Unit = js.native
   def ShellExecute(File: String, vArgs: String, vDir: String, vOperation: String): Unit = js.native
   def ShellExecute(File: String, vArgs: String, vDir: String, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: String, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: Unit, vOperation: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: Unit, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: Unit, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String, vOperation: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: Unit, vOperation: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: Unit, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: Unit, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
   
   /** Show/Hide browser bar. */
   def ShowBrowserBar(bstrClsid: ExplorerBarCLSID, bShow: Boolean): js.Any = js.native

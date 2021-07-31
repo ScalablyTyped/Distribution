@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BqmlIterationResult extends StObject {
   
   /** [Output-only, Beta] Time taken to run the training iteration in milliseconds. */
-  var durationMs: js.UndefOr[String] = js.native
+  var durationMs: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only, Beta] Eval loss computed on the eval data at the end of the iteration. The eval loss is used for early stopping to avoid overfitting. No eval loss if eval_split_method
     * option is specified as no_split or auto_split with input data size less than 500 rows.
     */
-  var evalLoss: js.UndefOr[Double] = js.native
+  var evalLoss: js.UndefOr[Double] = js.undefined
   
   /** [Output-only, Beta] Index of the ML training iteration, starting from zero for each training run. */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** [Output-only, Beta] Learning rate used for this iteration, it varies for different training iterations if learn_rate_strategy option is not constant. */
-  var learnRate: js.UndefOr[Double] = js.native
+  var learnRate: js.UndefOr[Double] = js.undefined
   
   /** [Output-only, Beta] Training loss computed on the training data at the end of the iteration. The training loss function is defined by model type. */
-  var trainingLoss: js.UndefOr[Double] = js.native
+  var trainingLoss: js.UndefOr[Double] = js.undefined
 }
 object BqmlIterationResult {
   

@@ -2,23 +2,21 @@ package typings.awsSdkClientDynamodbNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEndpointMod {
   
-  @js.native
   trait Endpoint extends StObject {
     
     /**
       * _String shape
       */
-    var Address: String = js.native
+    var Address: String
     
     /**
       * _Long shape
       */
-    var CachePeriodInMinutes: Double = js.native
+    var CachePeriodInMinutes: Double
   }
   object Endpoint {
     

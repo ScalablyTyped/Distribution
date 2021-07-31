@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,6 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.CollisionComponent")
 @js.native
 class CollisionComponent protected ()
-  extends typings.playcanvas.pc.CollisionComponent {
+  extends StObject
+     with typings.playcanvas.pc.CollisionComponent {
   def this(system: typings.playcanvas.pc.CollisionComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

@@ -4,102 +4,100 @@ import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AlignX extends StObject {
     
-    var alignX: Requireable[_] = js.native
+    var alignX: Requireable[js.Any]
     
-    var alignY: Requireable[_] = js.native
+    var alignY: Requireable[js.Any]
     
-    var breakpoint: Validator[_] = js.native
+    var breakpoint: Validator[js.Any]
     
-    var centerAlign: Requireable[_] = js.native
+    var centerAlign: Requireable[js.Any]
     
-    var flexChild: Requireable[_] = js.native
+    var flexChild: Requireable[js.Any]
     
-    var flexContainer: Requireable[_] = js.native
+    var flexContainer: Requireable[js.Any]
     
-    var flexDirCol: Requireable[_] = js.native
+    var flexDirCol: Requireable[js.Any]
     
-    var flexDirColRev: Requireable[_] = js.native
+    var flexDirColRev: Requireable[js.Any]
     
-    var flexDirRow: Requireable[_] = js.native
+    var flexDirRow: Requireable[js.Any]
     
-    var flexDirRowRev: Requireable[_] = js.native
+    var flexDirRowRev: Requireable[js.Any]
     
-    var flexOrder: Requireable[_] = js.native
+    var flexOrder: Requireable[js.Any]
     
-    var flexOrderLarge: Requireable[_] = js.native
+    var flexOrderLarge: Requireable[js.Any]
     
-    var flexOrderMedium: Requireable[_] = js.native
+    var flexOrderMedium: Requireable[js.Any]
     
-    var flexOrderSmall: Requireable[_] = js.native
+    var flexOrderSmall: Requireable[js.Any]
     
-    var float: Requireable[_] = js.native
+    var float: Requireable[js.Any]
     
-    var hideFor: Requireable[_] = js.native
+    var hideFor: Requireable[js.Any]
     
-    var hideOnlyFor: Requireable[_] = js.native
+    var hideOnlyFor: Requireable[js.Any]
     
-    var isClearfix: Requireable[_] = js.native
+    var isClearfix: Requireable[js.Any]
     
-    var isHidden: Requireable[_] = js.native
+    var isHidden: Requireable[js.Any]
     
-    var isInvisible: Requireable[_] = js.native
+    var isInvisible: Requireable[js.Any]
     
-    var selfAlignX: Requireable[_] = js.native
+    var selfAlignX: Requireable[js.Any]
     
-    var selfAlignY: Requireable[_] = js.native
+    var selfAlignY: Requireable[js.Any]
     
-    var showFor: Requireable[_] = js.native
+    var showFor: Requireable[js.Any]
     
-    var showForLandscape: Requireable[_] = js.native
+    var showForLandscape: Requireable[js.Any]
     
-    var showForPortrait: Requireable[_] = js.native
+    var showForPortrait: Requireable[js.Any]
     
-    var showForSr: Requireable[_] = js.native
+    var showForSr: Requireable[js.Any]
     
-    var showOnFocus: Requireable[_] = js.native
+    var showOnFocus: Requireable[js.Any]
     
-    var showOnlyFor: Requireable[_] = js.native
+    var showOnlyFor: Requireable[js.Any]
   }
   object AlignX {
     
     @scala.inline
     def apply(
-      alignX: Requireable[_],
-      alignY: Requireable[_],
-      breakpoint: Validator[_],
-      centerAlign: Requireable[_],
-      flexChild: Requireable[_],
-      flexContainer: Requireable[_],
-      flexDirCol: Requireable[_],
-      flexDirColRev: Requireable[_],
-      flexDirRow: Requireable[_],
-      flexDirRowRev: Requireable[_],
-      flexOrder: Requireable[_],
-      flexOrderLarge: Requireable[_],
-      flexOrderMedium: Requireable[_],
-      flexOrderSmall: Requireable[_],
-      float: Requireable[_],
-      hideFor: Requireable[_],
-      hideOnlyFor: Requireable[_],
-      isClearfix: Requireable[_],
-      isHidden: Requireable[_],
-      isInvisible: Requireable[_],
-      selfAlignX: Requireable[_],
-      selfAlignY: Requireable[_],
-      showFor: Requireable[_],
-      showForLandscape: Requireable[_],
-      showForPortrait: Requireable[_],
-      showForSr: Requireable[_],
-      showOnFocus: Requireable[_],
-      showOnlyFor: Requireable[_]
+      alignX: Requireable[js.Any],
+      alignY: Requireable[js.Any],
+      breakpoint: Validator[js.Any],
+      centerAlign: Requireable[js.Any],
+      flexChild: Requireable[js.Any],
+      flexContainer: Requireable[js.Any],
+      flexDirCol: Requireable[js.Any],
+      flexDirColRev: Requireable[js.Any],
+      flexDirRow: Requireable[js.Any],
+      flexDirRowRev: Requireable[js.Any],
+      flexOrder: Requireable[js.Any],
+      flexOrderLarge: Requireable[js.Any],
+      flexOrderMedium: Requireable[js.Any],
+      flexOrderSmall: Requireable[js.Any],
+      float: Requireable[js.Any],
+      hideFor: Requireable[js.Any],
+      hideOnlyFor: Requireable[js.Any],
+      isClearfix: Requireable[js.Any],
+      isHidden: Requireable[js.Any],
+      isInvisible: Requireable[js.Any],
+      selfAlignX: Requireable[js.Any],
+      selfAlignY: Requireable[js.Any],
+      showFor: Requireable[js.Any],
+      showForLandscape: Requireable[js.Any],
+      showForPortrait: Requireable[js.Any],
+      showForSr: Requireable[js.Any],
+      showOnFocus: Requireable[js.Any],
+      showOnlyFor: Requireable[js.Any]
     ): AlignX = {
       val __obj = js.Dynamic.literal(alignX = alignX.asInstanceOf[js.Any], alignY = alignY.asInstanceOf[js.Any], breakpoint = breakpoint.asInstanceOf[js.Any], centerAlign = centerAlign.asInstanceOf[js.Any], flexChild = flexChild.asInstanceOf[js.Any], flexContainer = flexContainer.asInstanceOf[js.Any], flexDirCol = flexDirCol.asInstanceOf[js.Any], flexDirColRev = flexDirColRev.asInstanceOf[js.Any], flexDirRow = flexDirRow.asInstanceOf[js.Any], flexDirRowRev = flexDirRowRev.asInstanceOf[js.Any], flexOrder = flexOrder.asInstanceOf[js.Any], flexOrderLarge = flexOrderLarge.asInstanceOf[js.Any], flexOrderMedium = flexOrderMedium.asInstanceOf[js.Any], flexOrderSmall = flexOrderSmall.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], hideFor = hideFor.asInstanceOf[js.Any], hideOnlyFor = hideOnlyFor.asInstanceOf[js.Any], isClearfix = isClearfix.asInstanceOf[js.Any], isHidden = isHidden.asInstanceOf[js.Any], isInvisible = isInvisible.asInstanceOf[js.Any], selfAlignX = selfAlignX.asInstanceOf[js.Any], selfAlignY = selfAlignY.asInstanceOf[js.Any], showFor = showFor.asInstanceOf[js.Any], showForLandscape = showForLandscape.asInstanceOf[js.Any], showForPortrait = showForPortrait.asInstanceOf[js.Any], showForSr = showForSr.asInstanceOf[js.Any], showOnFocus = showOnFocus.asInstanceOf[js.Any], showOnlyFor = showOnlyFor.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlignX]
@@ -109,95 +107,94 @@ object anon {
     implicit class AlignXMutableBuilder[Self <: AlignX] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAlignX(value: Requireable[_]): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
+      def setAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAlignY(value: Requireable[_]): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
+      def setAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBreakpoint(value: Validator[_]): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      def setBreakpoint(value: Validator[js.Any]): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCenterAlign(value: Requireable[_]): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
+      def setCenterAlign(value: Requireable[js.Any]): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexChild(value: Requireable[_]): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
+      def setFlexChild(value: Requireable[js.Any]): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexContainer(value: Requireable[_]): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+      def setFlexContainer(value: Requireable[js.Any]): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexDirCol(value: Requireable[_]): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
+      def setFlexDirCol(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexDirColRev(value: Requireable[_]): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
+      def setFlexDirColRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexDirRow(value: Requireable[_]): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
+      def setFlexDirRow(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexDirRowRev(value: Requireable[_]): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
+      def setFlexDirRowRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexOrder(value: Requireable[_]): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
+      def setFlexOrder(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexOrderLarge(value: Requireable[_]): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
+      def setFlexOrderLarge(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexOrderMedium(value: Requireable[_]): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
+      def setFlexOrderMedium(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFlexOrderSmall(value: Requireable[_]): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
+      def setFlexOrderSmall(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFloat(value: Requireable[_]): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      def setFloat(value: Requireable[js.Any]): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHideFor(value: Requireable[_]): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
+      def setHideFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHideOnlyFor(value: Requireable[_]): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
+      def setHideOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIsClearfix(value: Requireable[_]): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
+      def setIsClearfix(value: Requireable[js.Any]): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIsHidden(value: Requireable[_]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      def setIsHidden(value: Requireable[js.Any]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIsInvisible(value: Requireable[_]): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
+      def setIsInvisible(value: Requireable[js.Any]): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSelfAlignX(value: Requireable[_]): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
+      def setSelfAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSelfAlignY(value: Requireable[_]): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
+      def setSelfAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setShowFor(value: Requireable[_]): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
+      def setShowFor(value: Requireable[js.Any]): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setShowForLandscape(value: Requireable[_]): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
+      def setShowForLandscape(value: Requireable[js.Any]): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setShowForPortrait(value: Requireable[_]): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
+      def setShowForPortrait(value: Requireable[js.Any]): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setShowForSr(value: Requireable[_]): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
+      def setShowForSr(value: Requireable[js.Any]): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setShowOnFocus(value: Requireable[_]): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
+      def setShowOnFocus(value: Requireable[js.Any]): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setShowOnlyFor(value: Requireable[_]): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
+      def setShowOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Breakpoint extends StObject {
     
-    var breakpoint: Double = js.native
+    var breakpoint: Double
   }
   object Breakpoint {
     
@@ -215,48 +212,47 @@ object anon {
     }
   }
   
-  @js.native
   trait Clearfix extends StObject {
     
-    var clearfix: js.UndefOr[Boolean] = js.native
+    var clearfix: js.UndefOr[Boolean] = js.undefined
     
-    var `float-center`: Boolean = js.native
+    var `float-center`: Boolean
     
-    var `float-left`: Boolean = js.native
+    var `float-left`: Boolean
     
-    var `float-right`: Boolean = js.native
+    var `float-right`: Boolean
     
-    var hide: js.UndefOr[Boolean] = js.native
+    var hide: js.UndefOr[Boolean] = js.undefined
     
-    var `hide-for-large`: Boolean = js.native
+    var `hide-for-large`: Boolean
     
-    var `hide-for-large-only`: Boolean = js.native
+    var `hide-for-large-only`: Boolean
     
-    var `hide-for-medium`: Boolean = js.native
+    var `hide-for-medium`: Boolean
     
-    var `hide-for-medium-only`: Boolean = js.native
+    var `hide-for-medium-only`: Boolean
     
-    var `hide-for-small-only`: Boolean = js.native
+    var `hide-for-small-only`: Boolean
     
-    var invisible: js.UndefOr[Boolean] = js.native
+    var invisible: js.UndefOr[Boolean] = js.undefined
     
-    var `show-for-landscape`: js.UndefOr[Boolean] = js.native
+    var `show-for-landscape`: js.UndefOr[Boolean] = js.undefined
     
-    var `show-for-large`: Boolean = js.native
+    var `show-for-large`: Boolean
     
-    var `show-for-large-only`: Boolean = js.native
+    var `show-for-large-only`: Boolean
     
-    var `show-for-medium`: Boolean = js.native
+    var `show-for-medium`: Boolean
     
-    var `show-for-medium-only`: Boolean = js.native
+    var `show-for-medium-only`: Boolean
     
-    var `show-for-portrait`: js.UndefOr[Boolean] = js.native
+    var `show-for-portrait`: js.UndefOr[Boolean] = js.undefined
     
-    var `show-for-small-only`: Boolean = js.native
+    var `show-for-small-only`: Boolean
     
-    var `show-for-sr`: js.UndefOr[Boolean] = js.native
+    var `show-for-sr`: js.UndefOr[Boolean] = js.undefined
     
-    var `show-on-focus`: js.UndefOr[Boolean] = js.native
+    var `show-on-focus`: js.UndefOr[Boolean] = js.undefined
   }
   object Clearfix {
     

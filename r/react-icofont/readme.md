@@ -11,8 +11,8 @@ React wrapper for icofont project (https://icofont.com/)
 | Full name          | react-icofont |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 0 |
-| # downloads        | 11460 |
+| # dependents       | 1 |
+| # downloads        | 13475 |
 | # stars            | 0 |
 
 ## Links

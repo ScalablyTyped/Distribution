@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConfigurationAggregatorResponse extends StObject {
   
   /**
     * Returns a ConfigurationAggregator object.
     */
-  var ConfigurationAggregator: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationAggregator] = js.native
+  var ConfigurationAggregator: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationAggregator] = js.undefined
 }
 object PutConfigurationAggregatorResponse {
   

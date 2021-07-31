@@ -2,23 +2,21 @@ package typings.tensorflowTfjsConverter.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrParamMapper extends StObject {
   
-  var AttrParamMapper: Required = js.native
+  var AttrParamMapper: Required
   
-  var Category: Enum = js.native
+  var Category: Enum
   
-  var InputParamMapper: Properties = js.native
+  var InputParamMapper: Properties
   
-  var OpExecutor: AdditionalPropertiesType = js.native
+  var OpExecutor: AdditionalPropertiesType
   
-  var OpMapper: AdditionalProperties = js.native
+  var OpMapper: AdditionalProperties
   
-  var ParamTypes: Enum = js.native
+  var ParamTypes: Enum
 }
 object AttrParamMapper {
   

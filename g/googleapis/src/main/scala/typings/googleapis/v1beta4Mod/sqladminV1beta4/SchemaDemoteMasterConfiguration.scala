@@ -2,19 +2,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Read-replica configuration for connecting to the on-premises master.
   */
-@js.native
 trait SchemaDemoteMasterConfiguration extends StObject {
   
   /**
     * This is always sql#demoteMasterConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * MySQL specific configuration when replicating from a MySQL on-premises
@@ -24,7 +22,7 @@ trait SchemaDemoteMasterConfiguration extends StObject {
     * connection and is stored by MySQL in a file named master.info in the data
     * directory.
     */
-  var mysqlReplicaConfiguration: js.UndefOr[SchemaDemoteMasterMySqlReplicaConfiguration] = js.native
+  var mysqlReplicaConfiguration: js.UndefOr[SchemaDemoteMasterMySqlReplicaConfiguration] = js.undefined
 }
 object SchemaDemoteMasterConfiguration {
   

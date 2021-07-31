@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.CrossOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,19 +45,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "Asset")
 @js.native
 class Asset protected ()
-  extends typings.playcanvas.pc.Asset {
+  extends StObject
+     with typings.playcanvas.pc.Asset {
   def this(name: String, `type`: String) = this()
   def this(name: String, `type`: String, file: js.Any) = this()
-  def this(name: String, `type`: String, file: js.UndefOr[scala.Nothing], data: js.Any) = this()
   def this(name: String, `type`: String, file: js.Any, data: js.Any) = this()
-  def this(
-    name: String,
-    `type`: String,
-    file: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    options: CrossOrigin
-  ) = this()
-  def this(name: String, `type`: String, file: js.UndefOr[scala.Nothing], data: js.Any, options: CrossOrigin) = this()
-  def this(name: String, `type`: String, file: js.Any, data: js.UndefOr[scala.Nothing], options: CrossOrigin) = this()
+  def this(name: String, `type`: String, file: Unit, data: js.Any) = this()
   def this(name: String, `type`: String, file: js.Any, data: js.Any, options: CrossOrigin) = this()
+  def this(name: String, `type`: String, file: js.Any, data: Unit, options: CrossOrigin) = this()
+  def this(name: String, `type`: String, file: Unit, data: js.Any, options: CrossOrigin) = this()
+  def this(name: String, `type`: String, file: Unit, data: Unit, options: CrossOrigin) = this()
 }

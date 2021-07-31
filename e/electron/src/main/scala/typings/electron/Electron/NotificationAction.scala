@@ -3,29 +3,27 @@ package typings.electron.Electron
 import typings.electron.electronStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationAction extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/notification-action
   /**
     * The label for the given action.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The type of action, can be `button`.
     */
-  var `type`: button = js.native
+  var `type`: button
 }
 object NotificationAction {
   
   @scala.inline
-  def apply(`type`: button): NotificationAction = {
+  def apply(): NotificationAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("button")
     __obj.asInstanceOf[NotificationAction]
   }
   

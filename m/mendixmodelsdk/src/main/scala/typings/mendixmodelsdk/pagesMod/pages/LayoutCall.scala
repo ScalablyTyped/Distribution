@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -85,9 +84,8 @@ object LayoutCall {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.create")
-  @js.native
-  def create(model: IModel): LayoutCall = js.native
+  @scala.inline
+  def create(model: IModel): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -98,9 +96,8 @@ object LayoutCall {
     *  6.0.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.createInLayoutUnderLayoutCall")
-  @js.native
-  def createInLayoutUnderLayoutCall(container: Layout): LayoutCall = js.native
+  @scala.inline
+  def createInLayoutUnderLayoutCall(container: Layout): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -111,9 +108,8 @@ object LayoutCall {
     *  7.7.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.createInPageTemplateUnderLayoutCall")
-  @js.native
-  def createInPageTemplateUnderLayoutCall(container: PageTemplate): LayoutCall = js.native
+  @scala.inline
+  def createInPageTemplateUnderLayoutCall(container: PageTemplate): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageTemplateUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -121,9 +117,8 @@ object LayoutCall {
     * of the parent Page element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.createInPageUnderLayoutCall")
-  @js.native
-  def createInPageUnderLayoutCall(container: Page): LayoutCall = js.native
+  @scala.inline
+  def createInPageUnderLayoutCall(container: Page): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /**
     * Creates and returns a new LayoutCall instance in the SDK and on the server.
@@ -134,9 +129,8 @@ object LayoutCall {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.createInWebLayoutContentUnderLayoutCall")
-  @js.native
-  def createInWebLayoutContentUnderLayoutCall(container: WebLayoutContent): LayoutCall = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderLayoutCall(container: WebLayoutContent): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.structureTypeName")

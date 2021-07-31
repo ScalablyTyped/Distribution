@@ -2,24 +2,22 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the rights a user or group has to change objects */
-@js.native
 trait ObjectPermissions extends StObject {
   
   /** The access rights for files */
-  var file: ObjectOperationPermissions = js.native
+  var file: ObjectOperationPermissions
   
   /** The access rights for objects */
-  var `object`: ObjectOperationPermissions = js.native
+  var `object`: ObjectOperationPermissions
   
   /** The access rights for states */
-  var state: js.UndefOr[ObjectOperationPermissions] = js.native
+  var state: js.UndefOr[ObjectOperationPermissions] = js.undefined
   
   /** The access rights for users/groups */
-  var users: ObjectOperationPermissions = js.native
+  var users: ObjectOperationPermissions
 }
 object ObjectPermissions {
   

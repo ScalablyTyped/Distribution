@@ -2,26 +2,24 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response when retrieving more than one range of values in a
   * spreadsheet.
   */
-@js.native
 trait SchemaBatchGetValuesResponse extends StObject {
   
   /**
     * The ID of the spreadsheet the data was retrieved from.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /**
     * The requested values. The order of the ValueRanges is the same as the
     * order of the requested ranges.
     */
-  var valueRanges: js.UndefOr[js.Array[SchemaValueRange]] = js.native
+  var valueRanges: js.UndefOr[js.Array[SchemaValueRange]] = js.undefined
 }
 object SchemaBatchGetValuesResponse {
   

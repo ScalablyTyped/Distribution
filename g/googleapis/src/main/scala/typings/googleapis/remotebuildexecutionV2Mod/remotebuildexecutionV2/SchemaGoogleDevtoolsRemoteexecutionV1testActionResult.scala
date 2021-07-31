@@ -2,19 +2,17 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An ActionResult represents the result of an Action being run.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends StObject {
   
   /**
     * The exit code of the command.
     */
-  var exitCode: js.UndefOr[Double] = js.native
+  var exitCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The output directories of the action. For each output directory requested
@@ -40,7 +38,7 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends StObject {
     * &quot;b2c941073e...&quot;,           size: 1294,         },
     * is_executable: true       }     ]   } } ```
     */
-  var outputDirectories: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory]] = js.native
+  var outputDirectories: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory]] = js.undefined
   
   /**
     * The output files of the action. For each output file requested in the
@@ -52,14 +50,14 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends StObject {
     * output list as desired; clients MUST NOT assume that the output list is
     * sorted.
     */
-  var outputFiles: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile]] = js.native
+  var outputFiles: js.UndefOr[js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile]] = js.undefined
   
   /**
     * The digest for a blob containing the standard error of the action, which
     * can be retrieved from the ContentAddressableStorage. See `stderr_raw` for
     * when this will be set.
     */
-  var stderrDigest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.native
+  var stderrDigest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.undefined
   
   /**
     * The standard error buffer of the action. The server will determine, based
@@ -69,14 +67,14 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends StObject {
     * the raw buffer or a digest on any given request and should be prepared to
     * handle either.
     */
-  var stderrRaw: js.UndefOr[String] = js.native
+  var stderrRaw: js.UndefOr[String] = js.undefined
   
   /**
     * The digest for a blob containing the standard output of the action, which
     * can be retrieved from the ContentAddressableStorage. See `stdout_raw` for
     * when this will be set.
     */
-  var stdoutDigest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.native
+  var stdoutDigest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.undefined
   
   /**
     * The standard output buffer of the action. The server will determine,
@@ -86,7 +84,7 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends StObject {
     * get one of the raw buffer or a digest on any given request and should be
     * prepared to handle either.
     */
-  var stdoutRaw: js.UndefOr[String] = js.native
+  var stdoutRaw: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testActionResult {
   

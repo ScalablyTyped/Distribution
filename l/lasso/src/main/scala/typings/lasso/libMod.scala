@@ -8,92 +8,69 @@ import typings.lasso.writersMod.Writer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
   
-  @JSImport("lasso/lib", "clearCaches")
+  @JSImport("lasso/lib", JSImport.Namespace)
   @js.native
-  def clearCaches(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: js.UndefOr[scala.Nothing], baseDir: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: js.UndefOr[scala.Nothing], baseDir: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: js.UndefOr[scala.Nothing], baseDir: String, filename: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: String, baseDir: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: String, baseDir: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: String, baseDir: String, filename: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: LassoConfig): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: LassoConfig, baseDir: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: LassoConfig, baseDir: String): Unit = js.native
-  @JSImport("lasso/lib", "configure")
-  @js.native
-  def configure(config: LassoConfig, baseDir: String, filename: String): Unit = js.native
+  @scala.inline
+  def clearCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCaches")().asInstanceOf[Unit]
   
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: js.UndefOr[scala.Nothing], baseDir: js.UndefOr[scala.Nothing], filename: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: js.UndefOr[scala.Nothing], baseDir: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: js.UndefOr[scala.Nothing], baseDir: String, filename: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: String, baseDir: js.UndefOr[scala.Nothing], filename: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: String, baseDir: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: String, baseDir: String, filename: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: LassoConfig): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: LassoConfig, baseDir: js.UndefOr[scala.Nothing], filename: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: LassoConfig, baseDir: String): default = js.native
-  @JSImport("lasso/lib", "create")
-  @js.native
-  def create(config: LassoConfig, baseDir: String, filename: String): default = js.native
+  @scala.inline
+  def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: String, baseDir: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: String, baseDir: String, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: String, baseDir: Unit, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: Unit, baseDir: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: Unit, baseDir: String, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: Unit, baseDir: Unit, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: LassoConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: LassoConfig, baseDir: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: LassoConfig, baseDir: String, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def configure(config: LassoConfig, baseDir: Unit, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lasso/lib", "createFlagSet")
-  @js.native
-  def createFlagSet(flags: js.Any): js.Any = js.native
+  @scala.inline
+  def create(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[default]
+  @scala.inline
+  def create(config: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def create(config: String, baseDir: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: String, baseDir: String, filename: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: String, baseDir: Unit, filename: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: Unit, baseDir: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: Unit, baseDir: String, filename: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: Unit, baseDir: Unit, filename: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: LassoConfig): default = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def create(config: LassoConfig, baseDir: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: LassoConfig, baseDir: String, filename: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def create(config: LassoConfig, baseDir: Unit, filename: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[default]
+  
+  @scala.inline
+  def createFlagSet(flags: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlagSet")(flags.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("lasso/lib", "defaultConfig")
   @js.native
@@ -107,31 +84,24 @@ object libMod {
   @js.native
   val defaultConfigFilename: String | Null = js.native
   
-  @JSImport("lasso/lib", "flushAllCaches")
-  @js.native
-  def flushAllCaches(): Unit = js.native
-  @JSImport("lasso/lib", "flushAllCaches")
-  @js.native
-  def flushAllCaches(callback: js.Any): Unit = js.native
+  @scala.inline
+  def flushAllCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushAllCaches")().asInstanceOf[Unit]
+  @scala.inline
+  def flushAllCaches(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushAllCaches")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("lasso/lib", "getClientPath")
-  @js.native
-  def getClientPath(path: String): String = js.native
-  @JSImport("lasso/lib", "getClientPath")
-  @js.native
-  def getClientPath(path: String, options: js.Any): String = js.native
+  @scala.inline
+  def getClientPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getClientPath(path: String, options: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getClientPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("lasso/lib", "getDefaultLasso")
-  @js.native
-  def getDefaultLasso(): default = js.native
+  @scala.inline
+  def getDefaultLasso(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLasso")().asInstanceOf[default]
   
-  @JSImport("lasso/lib", "handleWatchedFileChanged")
-  @js.native
-  def handleWatchedFileChanged(path: String): Unit = js.native
+  @scala.inline
+  def handleWatchedFileChanged(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleWatchedFileChanged")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("lasso/lib", "isFlagSet")
-  @js.native
-  def isFlagSet(o: js.Any): Boolean = js.native
+  @scala.inline
+  def isFlagSet(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFlagSet")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("lasso/lib", "lassoPage")
   @js.native
@@ -141,29 +111,33 @@ object libMod {
   @js.native
   val lassoResource: LassoResource = js.native
   
-  @JSImport("lasso/lib", "setDevelopmentMode")
-  @js.native
-  def setDevelopmentMode(): Unit = js.native
+  @scala.inline
+  def setDevelopmentMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDevelopmentMode")().asInstanceOf[Unit]
   
   object transforms {
     
-    @JSImport("lasso/lib", "transforms.createTransformer")
+    @JSImport("lasso/lib", "transforms")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def createTransformer(
-      unfilteredTransforms: js.Array[_],
+      unfilteredTransforms: js.Array[js.Any],
       lassoContext: typings.lasso.lassoContextMod.default,
-      callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], _]
-    ): Unit = js.native
+      callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(unfilteredTransforms.asInstanceOf[js.Any], lassoContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object writers {
     
-    @JSImport("lasso/lib", "writers.createWriter")
+    @JSImport("lasso/lib", "writers")
     @js.native
-    def createWriter(writerImpl: js.Any): Writer = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("lasso/lib", "writers.fileWriter")
-    @js.native
-    def fileWriter(fileWriterConfig: js.Any, lassoConfig: LassoConfig): js.Any = js.native
+    @scala.inline
+    def createWriter(writerImpl: js.Any): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writerImpl.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    
+    @scala.inline
+    def fileWriter(fileWriterConfig: js.Any, lassoConfig: LassoConfig): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fileWriter")(fileWriterConfig.asInstanceOf[js.Any], lassoConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

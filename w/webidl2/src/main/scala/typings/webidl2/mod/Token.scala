@@ -2,21 +2,19 @@ package typings.webidl2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var line: Double = js.native
+  var line: Double
   
-  var trivia: String = js.native
+  var trivia: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var value: String = js.native
+  var value: String
 }
 object Token {
   

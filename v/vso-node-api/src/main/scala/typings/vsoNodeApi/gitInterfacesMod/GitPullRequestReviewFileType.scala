@@ -2,7 +2,6 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait GitPullRequestReviewFileType extends StObject
 object GitPullRequestReviewFileType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GitPullRequestReviewFileType with Double] = js.native
+  def apply(value: Double): js.UndefOr[GitPullRequestReviewFileType & Double] = js.native
   
   @js.native
-  sealed trait Attachment extends GitPullRequestReviewFileType
-  /* 1 */ val Attachment: typings.vsoNodeApi.gitInterfacesMod.GitPullRequestReviewFileType.Attachment with Double = js.native
+  sealed trait Attachment
+    extends StObject
+       with GitPullRequestReviewFileType
+  /* 1 */ val Attachment: typings.vsoNodeApi.gitInterfacesMod.GitPullRequestReviewFileType.Attachment & Double = js.native
   
   @js.native
-  sealed trait ChangeEntry extends GitPullRequestReviewFileType
-  /* 0 */ val ChangeEntry: typings.vsoNodeApi.gitInterfacesMod.GitPullRequestReviewFileType.ChangeEntry with Double = js.native
+  sealed trait ChangeEntry
+    extends StObject
+       with GitPullRequestReviewFileType
+  /* 0 */ val ChangeEntry: typings.vsoNodeApi.gitInterfacesMod.GitPullRequestReviewFileType.ChangeEntry & Double = js.native
 }

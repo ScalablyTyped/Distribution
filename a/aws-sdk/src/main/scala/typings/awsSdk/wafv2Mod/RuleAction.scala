@@ -2,26 +2,24 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleAction extends StObject {
   
   /**
     * Instructs AWS WAF to allow the web request.
     */
-  var Allow: js.UndefOr[AllowAction] = js.native
+  var Allow: js.UndefOr[AllowAction] = js.undefined
   
   /**
     * Instructs AWS WAF to block the web request.
     */
-  var Block: js.UndefOr[BlockAction] = js.native
+  var Block: js.UndefOr[BlockAction] = js.undefined
   
   /**
     * Instructs AWS WAF to count the web request and allow it.
     */
-  var Count: js.UndefOr[CountAction] = js.native
+  var Count: js.UndefOr[CountAction] = js.undefined
 }
 object RuleAction {
   

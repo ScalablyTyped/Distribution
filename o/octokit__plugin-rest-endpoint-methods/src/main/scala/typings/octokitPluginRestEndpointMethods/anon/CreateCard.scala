@@ -2,61 +2,59 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCard extends StObject {
   
-  var addCollaborator: `820` = js.native
+  var addCollaborator: `820`
   
-  var createCard: `821` = js.native
+  var createCard: `821`
   
-  var createColumn: `822` = js.native
+  var createColumn: `822`
   
-  var createForAuthenticatedUser: `823` = js.native
+  var createForAuthenticatedUser: `823`
   
-  var createForOrg: `824` = js.native
+  var createForOrg: `824`
   
-  var createForRepo: `825` = js.native
+  var createForRepo: `825`
   
-  var delete: `826` = js.native
+  var delete: `826`
   
-  var deleteCard: `827` = js.native
+  var deleteCard: `827`
   
-  var deleteColumn: `828` = js.native
+  var deleteColumn: `828`
   
-  var get: `829` = js.native
+  var get: `829`
   
-  var getCard: `830` = js.native
+  var getCard: `830`
   
-  var getColumn: `831` = js.native
+  var getColumn: `831`
   
-  var getPermissionForUser: `832` = js.native
+  var getPermissionForUser: `832`
   
-  var listCards: `833` = js.native
+  var listCards: `833`
   
-  var listCollaborators: `834` = js.native
+  var listCollaborators: `834`
   
-  var listColumns: `835` = js.native
+  var listColumns: `835`
   
-  var listForOrg: `836` = js.native
+  var listForOrg: `836`
   
-  var listForRepo: `837` = js.native
+  var listForRepo: `837`
   
-  var listForUser: `838` = js.native
+  var listForUser: `838`
   
-  var moveCard: `839` = js.native
+  var moveCard: `839`
   
-  var moveColumn: `840` = js.native
+  var moveColumn: `840`
   
-  var removeCollaborator: `841` = js.native
+  var removeCollaborator: `841`
   
-  var update: `842` = js.native
+  var update: `842`
   
-  var updateCard: `843` = js.native
+  var updateCard: `843`
   
-  var updateColumn: `844` = js.native
+  var updateColumn: `844`
 }
 object CreateCard {
   

@@ -2,23 +2,21 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSegmentRequest extends StObject {
   
   /**
     * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The unique identifier for the segment.
     */
-  var SegmentId: string = js.native
+  var SegmentId: string
   
-  var WriteSegmentRequest: typings.awsSdk.pinpointMod.WriteSegmentRequest = js.native
+  var WriteSegmentRequest: typings.awsSdk.pinpointMod.WriteSegmentRequest
 }
 object UpdateSegmentRequest {
   

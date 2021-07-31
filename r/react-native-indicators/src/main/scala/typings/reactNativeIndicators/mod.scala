@@ -8,7 +8,6 @@ import typings.reactNativeIndicators.reactNativeIndicatorsStrings.fill
 import typings.reactNativeIndicators.reactNativeIndicatorsStrings.outline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -121,26 +120,27 @@ object mod {
     def this(props: WaveIndicatorProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait BallIndicatorProps extends BaseIndicatorProps {
+  trait BallIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Component count
       * @default 8
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Base component size
       * @default 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object BallIndicatorProps {
     
@@ -173,26 +173,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait BarIndicatorProps extends BaseIndicatorProps {
+  trait BarIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Component count
       * @default 3
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Base component size
       * @default 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object BarIndicatorProps {
     
@@ -225,44 +226,43 @@ object mod {
     }
   }
   
-  @js.native
   trait BaseIndicatorProps extends StObject {
     
     /**
       * Animation toggle
       * @default true
       */
-    var animating: js.UndefOr[Boolean] = js.native
+    var animating: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Animation duration in ms
       * @default 1200
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Animation easing function
       * @default Easing.linear
       */
-    var animationEasing: js.UndefOr[EasingFunction] = js.native
+    var animationEasing: js.UndefOr[EasingFunction] = js.undefined
     
     /**
       * Hide when not animating
       * @default true
       */
-    var hidesWhenStopped: js.UndefOr[Boolean] = js.native
+    var hidesWhenStopped: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Animation is interaction
       * @default true
       */
-    var interaction: js.UndefOr[Boolean] = js.native
+    var interaction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Style is proxied to the underlying View
       * @default undefined
       */
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object BaseIndicatorProps {
     
@@ -316,26 +316,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait DotIndicatorProps extends BaseIndicatorProps {
+  trait DotIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Component count
       * @default 4
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Base component size
       * @default 16
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object DotIndicatorProps {
     
@@ -368,26 +369,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait MaterialIndicatorProps extends BaseIndicatorProps {
+  trait MaterialIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Base component size
       * @default 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicator track width
       * @default 'size / 10'
       */
-    var trackWidth: js.UndefOr[Double] = js.native
+    var trackWidth: js.UndefOr[Double] = js.undefined
   }
   object MaterialIndicatorProps {
     
@@ -420,20 +422,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait PacmanIndicatorProps extends BaseIndicatorProps {
+  trait PacmanIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Base component size
       * @default 48
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object PacmanIndicatorProps {
     
@@ -460,20 +463,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait PulseIndicatorProps extends BaseIndicatorProps {
+  trait PulseIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Base component size
       * @default 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object PulseIndicatorProps {
     
@@ -500,38 +504,39 @@ object mod {
     }
   }
   
-  @js.native
-  trait SkypeIndicatorProps extends BaseIndicatorProps {
+  trait SkypeIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Component count
       * @default 5
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum component scale
       * @default 1.0
       */
-    var maxScale: js.UndefOr[Double] = js.native
+    var maxScale: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum component scale
       * @default 0.2
       */
-    var minScale: js.UndefOr[Double] = js.native
+    var minScale: js.UndefOr[Double] = js.undefined
     
     /**
       * Base component size
       * @default 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object SkypeIndicatorProps {
     
@@ -576,26 +581,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait UIActivityIndicatorProps extends BaseIndicatorProps {
+  trait UIActivityIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Component count
       * @default 12
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Base component size
       * @default 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object UIActivityIndicatorProps {
     
@@ -628,38 +634,39 @@ object mod {
     }
   }
   
-  @js.native
-  trait WaveIndicatorProps extends BaseIndicatorProps {
+  trait WaveIndicatorProps
+    extends StObject
+       with BaseIndicatorProps {
     
     /**
       * Component color
       * @default 'rgb(0, 0, 0)'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Component count
       * @default 4
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Base component size
       * @default 40
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum component scale
       * @default 0.54
       */
-    var waveFactor: js.UndefOr[Double] = js.native
+    var waveFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum component scale
       * @default 'fill'
       */
-    var waveMode: js.UndefOr[fill | outline] = js.native
+    var waveMode: js.UndefOr[fill | outline] = js.undefined
   }
   object WaveIndicatorProps {
     

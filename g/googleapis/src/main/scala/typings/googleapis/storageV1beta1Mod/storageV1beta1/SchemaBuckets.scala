@@ -2,31 +2,29 @@ package typings.googleapis.storageV1beta1Mod.storageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of buckets.
   */
-@js.native
 trait SchemaBuckets extends StObject {
   
   /**
     * The list of items.
     */
-  var items: js.UndefOr[js.Array[SchemaBucket]] = js.native
+  var items: js.UndefOr[js.Array[SchemaBucket]] = js.undefined
   
   /**
     * The kind of item this is. For lists of buckets, this is always
     * storage#buckets.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, used to page through large result sets. Provide
     * this value in a subsequent request to return the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaBuckets {
   

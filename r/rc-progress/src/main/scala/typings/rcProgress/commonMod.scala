@@ -7,10 +7,13 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
+  
+  @JSImport("rc-progress/es/common", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Partial<rc-progress.rc-progress/es/interface.ProgressProps> */
   object defaultProps {
@@ -92,7 +95,6 @@ object commonMod {
     def transition_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transition")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("rc-progress/es/common", "useTransitionDuration")
-  @js.native
-  def useTransitionDuration(percentList: js.Array[Double]): js.Array[js.Array[MutableRefObject[js.UndefOr[scala.Nothing]]]] = js.native
+  @scala.inline
+  def useTransitionDuration(percentList: js.Array[Double]): js.Array[js.Array[MutableRefObject[Unit]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransitionDuration")(percentList.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[MutableRefObject[Unit]]]]
 }

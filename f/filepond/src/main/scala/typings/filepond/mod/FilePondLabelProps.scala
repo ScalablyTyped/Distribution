@@ -2,144 +2,142 @@ package typings.filepond.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePondLabelProps extends StObject {
   
   /**
     * Label used for abort load button.
     * @default 'Abort'
     */
-  var labelButtonAbortItemLoad: js.UndefOr[String] = js.native
+  var labelButtonAbortItemLoad: js.UndefOr[String] = js.undefined
   
   /**
     * Label used for abort upload button.
     * @default 'Cancel'
     */
-  var labelButtonAbortItemProcessing: js.UndefOr[String] = js.native
+  var labelButtonAbortItemProcessing: js.UndefOr[String] = js.undefined
   
   /**
     * Label used for upload button.
     * @default 'Upload'
     */
-  var labelButtonProcessItem: js.UndefOr[String] = js.native
+  var labelButtonProcessItem: js.UndefOr[String] = js.undefined
   
   /**
     * Label used for remove button.
     * @default 'Remove'
     */
-  var labelButtonRemoveItem: js.UndefOr[String] = js.native
+  var labelButtonRemoveItem: js.UndefOr[String] = js.undefined
   
   /**
     * Label used for retry load.
     * @default 'Retry'
     */
-  var labelButtonRetryItemLoad: js.UndefOr[String] = js.native
+  var labelButtonRetryItemLoad: js.UndefOr[String] = js.undefined
   
   /**
     * Label used for retry upload button.
     * @default 'Retry'
     */
-  var labelButtonRetryItemProcessing: js.UndefOr[String] = js.native
+  var labelButtonRetryItemProcessing: js.UndefOr[String] = js.undefined
   
   /**
     * Label used for undo upload button.
     * @default 'Undo'
     */
-  var labelButtonUndoItemProcessing: js.UndefOr[String] = js.native
+  var labelButtonUndoItemProcessing: js.UndefOr[String] = js.undefined
   
   /**
     * The decimal separator used to render numbers.
     * By default this is determined automatically.
     * @default 'auto'
     */
-  var labelDecimalSeparator: js.UndefOr[String] = js.native
+  var labelDecimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when file is added (assistive only).
     * @default 'Added'
     */
-  var labelFileAdded: js.UndefOr[String] = js.native
+  var labelFileAdded: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when showing the number of files and there is more than one.
     * @default 'files in list'
     */
-  var labelFileCountPlural: js.UndefOr[String] = js.native
+  var labelFileCountPlural: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when showing the number of files and there is only one.
     * @default 'file in list'
     */
-  var labelFileCountSingular: js.UndefOr[String] = js.native
+  var labelFileCountSingular: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when file load failed.
     * @default 'Error during load'
     */
-  var labelFileLoadError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.native
+  var labelFileLoadError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
   
   /**
     * Label used while loading a file.
     * @default 'Loading'
     */
-  var labelFileLoading: js.UndefOr[String] = js.native
+  var labelFileLoading: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when uploading a file.
     * @default 'Uploading'
     */
-  var labelFileProcessing: js.UndefOr[String] = js.native
+  var labelFileProcessing: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when upload was cancelled.
     * @default 'Upload cancelled'
     */
-  var labelFileProcessingAborted: js.UndefOr[String] = js.native
+  var labelFileProcessingAborted: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when file upload has completed.
     * @default 'Upload complete'
     */
-  var labelFileProcessingComplete: js.UndefOr[String] = js.native
+  var labelFileProcessingComplete: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when something went wrong during file upload.
     * @default 'Error during upload'
     */
-  var labelFileProcessingError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.native
+  var labelFileProcessingError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
   
   /**
     * Label used when something went wrong during reverting the file upload.
     * @default 'Error during revert'
     */
-  var labelFileProcessingRevertError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.native
+  var labelFileProcessingRevertError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
   
   /**
     * Label used when something went during during removing the file upload.
     * @default 'Error during remove'
     */
-  var labelFileRemoveError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.native
+  var labelFileRemoveError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
   
   /**
     * Label used when file is removed (assistive only).
     * @default 'Removed'
     */
-  var labelFileRemoved: js.UndefOr[String] = js.native
+  var labelFileRemoved: js.UndefOr[String] = js.undefined
   
   /**
     * Label used when no file size information was received.
     * @default 'Size not available'
     */
-  var labelFileSizeNotAvailable: js.UndefOr[String] = js.native
+  var labelFileSizeNotAvailable: js.UndefOr[String] = js.undefined
   
   /**
     * Label used while waiting for file size information.
     * @default 'Waiting for size'
     */
-  var labelFileWaitingForSize: js.UndefOr[String] = js.native
+  var labelFileWaitingForSize: js.UndefOr[String] = js.undefined
   
   /**
     * Default label shown to indicate this is a drop area.
@@ -147,38 +145,38 @@ trait FilePondLabelProps extends StObject {
     * the element with CSS class .filepond--label-action.
     * @default 'Drag & Drop your files or <span class="filepond--label-action"> Browse </span>'
     */
-  var labelIdle: js.UndefOr[String] = js.native
+  var labelIdle: js.UndefOr[String] = js.undefined
   
   /**
     * Label shown when the field contains invalid files and is validated by the parent form.
     * @default 'Field contains invalid files'
     */
-  var labelInvalidField: js.UndefOr[String] = js.native
+  var labelInvalidField: js.UndefOr[String] = js.undefined
   
   /**
     * Label used to indicate to the user that an action can be cancelled.
     * @default 'tap to cancel'
     */
-  var labelTapToCancel: js.UndefOr[String] = js.native
+  var labelTapToCancel: js.UndefOr[String] = js.undefined
   
   /**
     * Label used to indicate to the user that an action can be retried.
     * @default 'tap to retry'
     */
-  var labelTapToRetry: js.UndefOr[String] = js.native
+  var labelTapToRetry: js.UndefOr[String] = js.undefined
   
   /**
     * Label used to indicate to the user that an action can be undone.
     * @default 'tap to undo'
     */
-  var labelTapToUndo: js.UndefOr[String] = js.native
+  var labelTapToUndo: js.UndefOr[String] = js.undefined
   
   /**
     * The thousands separator used to render numbers.
     * By default this is determined automatically.
     * @default 'auto'
     */
-  var labelThousandsSeparator: js.UndefOr[String] = js.native
+  var labelThousandsSeparator: js.UndefOr[String] = js.undefined
 }
 object FilePondLabelProps {
   

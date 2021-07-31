@@ -3,10 +3,8 @@ package typings.angularCore.anon
 import typings.angularCore.angularCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
@@ -14,27 +12,27 @@ trait Attribute extends StObject {
     * attribute name is a dynamic expression instead of a string literal, this will be the unknown
     * type.
     */
-  var attribute: js.UndefOr[String | js.Any] = js.native
+  var attribute: js.UndefOr[String | js.Any] = js.undefined
   
   /**
     * If `@Host` is used, this key is set to true.
     */
-  var host: js.UndefOr[`true`] = js.native
+  var host: js.UndefOr[`true`] = js.undefined
   
   /**
     * If `@Optional()` is used, this key is set to true.
     */
-  var optional: js.UndefOr[`true`] = js.native
+  var optional: js.UndefOr[`true`] = js.undefined
   
   /**
     * If `@Self` is used, this key is set to true.
     */
-  var self: js.UndefOr[`true`] = js.native
+  var self: js.UndefOr[`true`] = js.undefined
   
   /**
     * If `@SkipSelf` is used, this key is set to true.
     */
-  var skipSelf: js.UndefOr[`true`] = js.native
+  var skipSelf: js.UndefOr[`true`] = js.undefined
 }
 object Attribute {
   

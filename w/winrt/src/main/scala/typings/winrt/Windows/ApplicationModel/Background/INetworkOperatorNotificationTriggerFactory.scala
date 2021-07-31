@@ -2,13 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INetworkOperatorNotificationTriggerFactory extends StObject {
   
-  def create(networkAccountId: String): NetworkOperatorNotificationTrigger = js.native
+  def create(networkAccountId: String): NetworkOperatorNotificationTrigger
 }
 object INetworkOperatorNotificationTriggerFactory {
   

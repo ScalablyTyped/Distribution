@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildingExplorerViewModelProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait BuildingExplorerViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingExplorerViewModel.html#layers)
     */
-  var layers: js.UndefOr[CollectionProperties[BuildingSceneLayerProperties]] = js.native
+  var layers: js.UndefOr[CollectionProperties[BuildingSceneLayerProperties]] = js.undefined
   
   /**
     * The view in which the BuildingExplorer is used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingExplorerViewModel.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object BuildingExplorerViewModelProperties {
   

@@ -2,14 +2,15 @@ package typings.eev
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("eev", JSImport.Namespace)
   @js.native
-  class ^ () extends Eev
+  class ^ ()
+    extends StObject
+       with Eev
   
   type CallbackFunction = js.Function1[/* data */ js.Any, Unit]
   

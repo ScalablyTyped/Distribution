@@ -9,7 +9,6 @@ import typings.cliColor.windowSizeMod.WindowSize
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,14 +19,15 @@ object mod extends Shortcut {
   
   @js.native
   trait Color
-    extends typings.cliColor.bareMod.Format {
+    extends StObject
+       with typings.cliColor.bareMod.Format {
     
     def art(text: String, styleConf: Record[String, String]): String = js.native
     
     val beep: String = js.native
     
-    def columns(data: js.Array[js.Array[_]]): String = js.native
-    def columns(data: js.Array[js.Array[_]], options: typings.cliColor.columnsMod.ColumnsOptions): String = js.native
+    def columns(data: js.Array[js.Array[js.Any]]): String = js.native
+    def columns(data: js.Array[js.Array[js.Any]], options: typings.cliColor.columnsMod.ColumnsOptions): String = js.native
     def columns(data: Data): String = js.native
     def columns(data: Data, options: typings.cliColor.columnsMod.ColumnsOptions): String = js.native
     
@@ -39,18 +39,18 @@ object mod extends Shortcut {
       * Move cursor x columns and y rows away. Values can be positive or negative
       */
     def move(): String = js.native
-    def move(x: js.UndefOr[scala.Nothing], y: Double): String = js.native
     def move(x: Double): String = js.native
     def move(x: Double, y: Double): String = js.native
+    def move(x: Unit, y: Double): String = js.native
     @JSName("move")
     val move_Original: Move = js.native
     
     val reset: String = js.native
     
     def slice(str: String): String = js.native
-    def slice(str: String, begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
     def slice(str: String, begin: Double): String = js.native
     def slice(str: String, begin: Double, end: Double): String = js.native
+    def slice(str: String, begin: Unit, end: Double): String = js.native
     
     def strip(str: String): String = js.native
     

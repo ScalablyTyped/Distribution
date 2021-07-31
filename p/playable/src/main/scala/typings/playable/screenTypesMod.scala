@@ -5,7 +5,6 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenTypesMod {
@@ -17,37 +16,42 @@ object screenTypesMod {
   object VideoViewMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[VideoViewMode with String] = js.native
+    def apply(value: String): js.UndefOr[VideoViewMode & String] = js.native
     
     @js.native
-    sealed trait BLUR extends VideoViewMode
-    /* "BLUR" */ val BLUR: typings.playable.screenTypesMod.VideoViewMode.BLUR with String = js.native
+    sealed trait BLUR
+      extends StObject
+         with VideoViewMode
+    /* "BLUR" */ val BLUR: typings.playable.screenTypesMod.VideoViewMode.BLUR & String = js.native
     
     @js.native
-    sealed trait FILL extends VideoViewMode
-    /* "FILL" */ val FILL: typings.playable.screenTypesMod.VideoViewMode.FILL with String = js.native
+    sealed trait FILL
+      extends StObject
+         with VideoViewMode
+    /* "FILL" */ val FILL: typings.playable.screenTypesMod.VideoViewMode.FILL & String = js.native
     
     @js.native
-    sealed trait REGULAR extends VideoViewMode
-    /* "REGULAR" */ val REGULAR: typings.playable.screenTypesMod.VideoViewMode.REGULAR with String = js.native
+    sealed trait REGULAR
+      extends StObject
+         with VideoViewMode
+    /* "REGULAR" */ val REGULAR: typings.playable.screenTypesMod.VideoViewMode.REGULAR & String = js.native
   }
   
-  @js.native
   trait IScreen extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def hideCursor(): Unit = js.native
+    def hideCursor(): Unit
     
-    def setVideoViewMode(viewMode: VideoViewMode): Unit = js.native
+    def setVideoViewMode(viewMode: VideoViewMode): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def showCursor(): Unit = js.native
+    def showCursor(): Unit
   }
   object IScreen {
     
@@ -91,10 +95,9 @@ object screenTypesMod {
     }
   }
   
-  @js.native
   trait IScreenAPI extends StObject {
     
-    var setVideoViewMode: js.UndefOr[js.Function1[/* viewMode */ VideoViewMode, Unit]] = js.native
+    var setVideoViewMode: js.UndefOr[js.Function1[/* viewMode */ VideoViewMode, Unit]] = js.undefined
   }
   object IScreenAPI {
     
@@ -115,12 +118,11 @@ object screenTypesMod {
     }
   }
   
-  @js.native
   trait IScreenViewCallbacks extends StObject {
     
-    var onWrapperMouseClick: EventListenerOrEventListenerObject = js.native
+    var onWrapperMouseClick: EventListenerOrEventListenerObject
     
-    var onWrapperMouseDblClick: EventListenerOrEventListenerObject = js.native
+    var onWrapperMouseDblClick: EventListenerOrEventListenerObject
   }
   object IScreenViewCallbacks {
     
@@ -150,14 +152,13 @@ object screenTypesMod {
     }
   }
   
-  @js.native
   trait IScreenViewConfig extends StObject {
     
-    var callbacks: IScreenViewCallbacks = js.native
+    var callbacks: IScreenViewCallbacks
     
-    var nativeControls: Boolean = js.native
+    var nativeControls: Boolean
     
-    var playbackViewElement: HTMLElement = js.native
+    var playbackViewElement: HTMLElement
   }
   object IScreenViewConfig {
     
@@ -181,30 +182,29 @@ object screenTypesMod {
     }
   }
   
-  @js.native
   trait IScreenViewStyles extends StObject {
     
-    var blurMode: String = js.native
+    var blurMode: String
     
-    var fillMode: String = js.native
+    var fillMode: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var hiddenCursor: String = js.native
+    var hiddenCursor: String
     
-    var horizontalStripes: String = js.native
+    var horizontalStripes: String
     
-    var regularMode: String = js.native
+    var regularMode: String
     
-    var screen: String = js.native
+    var screen: String
     
-    var screenBottomBackground: String = js.native
+    var screenBottomBackground: String
     
-    var screenTopBackground: String = js.native
+    var screenTopBackground: String
     
-    var verticalStripes: String = js.native
+    var verticalStripes: String
     
-    var visible: String = js.native
+    var visible: String
   }
   object IScreenViewStyles {
     

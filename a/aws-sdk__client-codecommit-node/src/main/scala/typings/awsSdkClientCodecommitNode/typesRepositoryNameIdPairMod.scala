@@ -2,23 +2,21 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryNameIdPairMod {
   
-  @js.native
   trait RepositoryNameIdPair extends StObject {
     
     /**
       * <p>The ID associated with the repository.</p>
       */
-    var repositoryId: js.UndefOr[String] = js.native
+    var repositoryId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The name associated with the repository.</p>
       */
-    var repositoryName: js.UndefOr[String] = js.native
+    var repositoryName: js.UndefOr[String] = js.undefined
   }
   object RepositoryNameIdPair {
     

@@ -9,15 +9,13 @@ import typings.vegaLite.vegaLiteStrings.title
 import typings.vegaLite.vegaSchemaMod.VgEncodeChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Part extends StObject {
   
-  var part: /* keyof vega-typings.vega-typings/types/spec/axis.AxisEncode */ axis | ticks | labels | title | grid | domain = js.native
+  var part: /* keyof vega-typings.vega-typings/types/spec/axis.AxisEncode */ axis | ticks | labels | title | grid | domain
   
-  var vgProp: VgEncodeChannel = js.native
+  var vgProp: VgEncodeChannel
 }
 object Part {
   

@@ -2,25 +2,23 @@ package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The sentiment analysis request message.
   */
-@js.native
 trait SchemaAnalyzeSentimentRequest extends StObject {
   
   /**
     * Input document.
     */
-  var document: js.UndefOr[SchemaDocument] = js.native
+  var document: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
     * The encoding type used by the API to calculate sentence offsets for the
     * sentence sentiment.
     */
-  var encodingType: js.UndefOr[String] = js.native
+  var encodingType: js.UndefOr[String] = js.undefined
 }
 object SchemaAnalyzeSentimentRequest {
   

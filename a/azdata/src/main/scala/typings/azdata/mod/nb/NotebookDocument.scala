@@ -4,51 +4,49 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookDocument extends StObject {
   
   /**
     * All cells.
     */
-  val cells: js.Array[NotebookCell] = js.native
+  val cells: js.Array[NotebookCell]
   
   /**
     * The file system path of the associated resource. Shorthand
     * notation for [TextDocument.uri.fsPath](#TextDocument.uri). Independent of the uri scheme.
     */
-  val fileName: String = js.native
+  val fileName: String
   
   /**
     * `true` if the document have been closed. A closed document isn't synchronized anymore
     * and won't be re-used when the same resource is opened again.
     */
-  val isClosed: Boolean = js.native
+  val isClosed: Boolean
   
   /**
     * `true` if there are unpersisted changes.
     */
-  val isDirty: Boolean = js.native
+  val isDirty: Boolean
   
   /**
     * Is this document representing an untitled file which has never been saved yet. *Note* that
     * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
     * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
     */
-  val isUntitled: Boolean = js.native
+  val isUntitled: Boolean
   
   /**
     * The spec for current kernel, if applicable. This will be undefined
     * until a kernel has been started
     */
-  val kernelSpec: IKernelSpec = js.native
+  val kernelSpec: IKernelSpec
   
   /**
     * The identifier of the Notebook provider associated with this document.
     */
-  val providerId: String = js.native
+  val providerId: String
   
   /**
     * Save the underlying file.
@@ -57,7 +55,7 @@ trait NotebookDocument extends StObject {
     * has been saved. If the file was not dirty or the save failed,
     * will return false.
     */
-  def save(): Thenable[Boolean] = js.native
+  def save(): Thenable[Boolean]
   
   /**
     * The associated uri for this notebook document.
@@ -66,7 +64,7 @@ trait NotebookDocument extends StObject {
     * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
     *
     */
-  val uri: Uri = js.native
+  val uri: Uri
   
   /**
     * Ensure a cell range is completely contained in this document.
@@ -74,7 +72,7 @@ trait NotebookDocument extends StObject {
     * @param range A cell range.
     * @return The given range or a new, adjusted range.
     */
-  def validateCellRange(range: CellRange): CellRange = js.native
+  def validateCellRange(range: CellRange): CellRange
 }
 object NotebookDocument {
   

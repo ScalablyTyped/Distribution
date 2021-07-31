@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,15 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.ToolbarController
   * @since OOo 2.0
   */
-@js.native
-trait XToolbarControllerListener extends XInterface {
+trait XToolbarControllerListener
+  extends StObject
+     with XInterface {
   
   /**
     * gets called to notify a controller that a toolbar function has been selected.
     * @param aToolbarRes a string which identifies the toolbar where the function has been selected.
     * @param aCommand a string which identifies the function that has been selected.  This notification is normally used to implement the toolbar button/sub-t
     */
-  def functionSelected(aToolbarRes: String, aCommand: String): Unit = js.native
+  def functionSelected(aToolbarRes: String, aCommand: String): Unit
 }
 object XToolbarControllerListener {
   

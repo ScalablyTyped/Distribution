@@ -2,28 +2,26 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSharedTargeting extends StObject {
   
   /**
     * The list of values to exclude from targeting. Each value is AND&#39;d
     * together.
     */
-  var exclusions: js.UndefOr[js.Array[SchemaTargetingValue]] = js.native
+  var exclusions: js.UndefOr[js.Array[SchemaTargetingValue]] = js.undefined
   
   /**
     * The list of value to include as part of the targeting. Each value is
     * OR&#39;d together.
     */
-  var inclusions: js.UndefOr[js.Array[SchemaTargetingValue]] = js.native
+  var inclusions: js.UndefOr[js.Array[SchemaTargetingValue]] = js.undefined
   
   /**
     * The key representing the shared targeting criterion.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object SchemaSharedTargeting {
   

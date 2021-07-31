@@ -6,32 +6,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureViewModelLastEditInfo extends Object {
+trait FeatureViewModelLastEditInfo
+  extends StObject
+     with Object {
   
   /**
     * Date that the edit was performed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#lastEditInfo)
     */
-  var date: String = js.native
+  var date: String
   
   /**
     * The type of edit that was performed on the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#lastEditInfo)
     */
-  var `type`: edit | create = js.native
+  var `type`: edit | create
   
   /**
     * User who performed the last edit on a feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#lastEditInfo)
     */
-  var user: String = js.native
+  var user: String
 }
 object FeatureViewModelLastEditInfo {
   

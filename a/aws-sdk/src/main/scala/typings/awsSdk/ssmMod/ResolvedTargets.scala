@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedTargets extends StObject {
   
   /**
     * A list of parameter values sent to targets that resolved during the Automation execution.
     */
-  var ParameterValues: js.UndefOr[TargetParameterList] = js.native
+  var ParameterValues: js.UndefOr[TargetParameterList] = js.undefined
   
   /**
     * A boolean value indicating whether the resolved target list is truncated.
     */
-  var Truncated: js.UndefOr[Boolean] = js.native
+  var Truncated: js.UndefOr[Boolean] = js.undefined
 }
 object ResolvedTargets {
   

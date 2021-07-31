@@ -12,7 +12,6 @@ import typings.firebaseAnalytics.firebaseAnalyticsStrings.`no-app-id`
 import typings.firebaseUtil.mod.ErrorFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {

@@ -6,25 +6,26 @@ import typings.storybookAddonJest.anon.Instantiable
 import typings.storybookApi.mod.API
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object provideJestResultMod {
   
-  @JSImport("@storybook/addon-jest/dist/hoc/provideJestResult", JSImport.Default)
+  @JSImport("@storybook/addon-jest/dist/hoc/provideJestResult", JSImport.Namespace)
   @js.native
-  def default(Component: ComponentType[InjectedProps]): Instantiable = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(Component: ComponentType[InjectedProps]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  
   trait AssertionResult extends StObject {
     
-    var failureMessages: js.Array[String] = js.native
+    var failureMessages: js.Array[String]
     
-    var fullName: String = js.native
+    var fullName: String
     
-    var status: String = js.native
+    var status: String
     
-    var title: String = js.native
+    var title: String
   }
   object AssertionResult {
     
@@ -54,12 +55,11 @@ object provideJestResultMod {
     }
   }
   
-  @js.native
   trait HocProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var api: API = js.native
+    var api: API
   }
   object HocProps {
     
@@ -83,14 +83,13 @@ object provideJestResultMod {
     }
   }
   
-  @js.native
   trait HocState extends StObject {
     
-    var kind: js.UndefOr[String] = js.native
+    var kind: js.UndefOr[String] = js.undefined
     
-    var storyName: js.UndefOr[String] = js.native
+    var storyName: js.UndefOr[String] = js.undefined
     
-    var tests: js.UndefOr[js.Array[Test]] = js.native
+    var tests: js.UndefOr[js.Array[Test]] = js.undefined
   }
   object HocState {
     
@@ -126,10 +125,9 @@ object provideJestResultMod {
     }
   }
   
-  @js.native
   trait InjectedProps extends StObject {
     
-    var tests: js.UndefOr[js.Array[Test]] = js.native
+    var tests: js.UndefOr[js.Array[Test]] = js.undefined
   }
   object InjectedProps {
     
@@ -153,12 +151,11 @@ object provideJestResultMod {
     }
   }
   
-  @js.native
   trait Test extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var result: AssertionResults = js.native
+    var result: AssertionResults
   }
   object Test {
     

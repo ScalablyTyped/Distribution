@@ -3,31 +3,29 @@ package typings.gapiCalendar.gapi.client.calendar
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersigncalendar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calendar extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
+  var etag: typings.gapiCalendar.gapi.client.calendar.etag
   
-  var id: String = js.native
+  var id: String
   
-  var kind: calendarNumbersigncalendar = js.native
+  var kind: calendarNumbersigncalendar
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var summary: String = js.native
+  var summary: String
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object Calendar {
   
   @scala.inline
-  def apply(etag: etag, id: String, kind: calendarNumbersigncalendar, summary: String): Calendar = {
-    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+  def apply(etag: etag, id: String, summary: String): Calendar = {
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = "calendar#calendar", summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calendar]
   }
   

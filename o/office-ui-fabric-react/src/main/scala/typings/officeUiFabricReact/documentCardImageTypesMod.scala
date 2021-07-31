@@ -10,64 +10,62 @@ import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardImageTypesMod {
   
-  @js.native
   trait IDocumentCardImage extends StObject
   
-  @js.native
   trait IDocumentCardImageProps
-    extends IBaseProps[js.Object] {
+    extends StObject
+       with IBaseProps[js.Object] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
     @JSName("componentRef")
-    var componentRef_IDocumentCardImageProps: js.UndefOr[IRefObject[IDocumentCardImage]] = js.native
+    var componentRef_IDocumentCardImageProps: js.UndefOr[IRefObject[IDocumentCardImage]] = js.undefined
     
     /**
       * If provided, forces the preview image to be this height.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The props for the icon associated with this document type.
       */
-    var iconProps: js.UndefOr[IIconProps] = js.native
+    var iconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Used to determine how to size the image to fit the dimensions of the component.
       * If both dimensions are provided, then the image is fit using ImageFit.scale, otherwise ImageFit.none is used.
       */
-    var imageFit: js.UndefOr[ImageFit] = js.native
+    var imageFit: js.UndefOr[ImageFit] = js.undefined
     
     /**
       * Path to the preview image.
       */
-    var imageSrc: js.UndefOr[String] = js.native
+    var imageSrc: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardImageStyleProps, IDocumentCardImageStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardImageStyleProps, IDocumentCardImageStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * If provided, forces the preview image to be this width.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IDocumentCardImageProps {
     
@@ -144,16 +142,15 @@ object documentCardImageTypesMod {
   
   type IDocumentCardImageStyleProps = IDocumentCardImageProps
   
-  @js.native
   trait IDocumentCardImageStyles extends StObject {
     
-    var centeredIcon: IStyle = js.native
+    var centeredIcon: IStyle
     
-    var centeredIconWrapper: IStyle = js.native
+    var centeredIconWrapper: IStyle
     
-    var cornerIcon: IStyle = js.native
+    var cornerIcon: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardImageStyles {
     

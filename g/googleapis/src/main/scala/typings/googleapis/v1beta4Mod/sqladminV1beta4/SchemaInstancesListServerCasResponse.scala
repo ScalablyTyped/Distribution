@@ -2,26 +2,24 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Instances ListServerCas response.
   */
-@js.native
 trait SchemaInstancesListServerCasResponse extends StObject {
   
-  var activeVersion: js.UndefOr[String] = js.native
+  var activeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * List of server CA certificates for the instance.
     */
-  var certs: js.UndefOr[js.Array[SchemaSslCert]] = js.native
+  var certs: js.UndefOr[js.Array[SchemaSslCert]] = js.undefined
   
   /**
     * This is always sql#instancesListServerCas.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaInstancesListServerCasResponse {
   

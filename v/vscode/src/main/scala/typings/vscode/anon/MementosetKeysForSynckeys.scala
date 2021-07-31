@@ -3,7 +3,6 @@ package typings.vscode.anon
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vscode.vscode.Memento & {setKeysForSync (keys : std.Array<string>): void} */

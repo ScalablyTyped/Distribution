@@ -5,7 +5,6 @@ import typings.std.PropertyDecorator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,25 +13,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("decorum", "Alpha")
-  @js.native
-  def Alpha(): PropertyDecorator = js.native
-  @JSImport("decorum", "Alpha")
-  @js.native
-  def Alpha(message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "Alpha")
-  @js.native
-  def Alpha(message: MessageHandler[PatternValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def Alpha(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Alpha")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Alpha(message: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Alpha")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Alpha(message: MessageHandler[PatternValidator]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Alpha")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("decorum", "AlphaNumeric")
-  @js.native
-  def AlphaNumeric(): PropertyDecorator = js.native
-  @JSImport("decorum", "AlphaNumeric")
-  @js.native
-  def AlphaNumeric(message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "AlphaNumeric")
-  @js.native
-  def AlphaNumeric(message: MessageHandler[PatternValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def AlphaNumeric(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AlphaNumeric")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def AlphaNumeric(message: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AlphaNumeric")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def AlphaNumeric(message: MessageHandler[PatternValidator]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AlphaNumeric")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "BaseValidator")
   @js.native
@@ -45,7 +38,7 @@ object mod {
       *     enable customizing error messages.
       */
     def this(validatorKey: String, message: String) = this()
-    def this(validatorKey: String, message: MessageHandler[_]) = this()
+    def this(validatorKey: String, message: MessageHandler[js.Any]) = this()
     
     /**
       * Gets the custom error message set on this validator.
@@ -99,15 +92,12 @@ object mod {
     ) = this()
   }
   
-  @JSImport("decorum", "Email")
-  @js.native
-  def Email(): PropertyDecorator = js.native
-  @JSImport("decorum", "Email")
-  @js.native
-  def Email(message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "Email")
-  @js.native
-  def Email(message: MessageHandler[EmailValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def Email(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Email")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Email(message: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Email")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Email(message: MessageHandler[EmailValidator]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Email")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "EmailValidator")
   @js.native
@@ -129,9 +119,8 @@ object mod {
     def EmailRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmailRegex")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("decorum", "FieldName")
-  @js.native
-  def FieldName(name: String): PropertyDecorator = js.native
+  @scala.inline
+  def FieldName(name: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("FieldName")(name.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "FieldOptions")
   @js.native
@@ -174,15 +163,12 @@ object mod {
     def validateValue(value: js.Any, model: js.Any): js.Array[String] = js.native
   }
   
-  @JSImport("decorum", "Length")
-  @js.native
-  def Length(length: Double): PropertyDecorator = js.native
-  @JSImport("decorum", "Length")
-  @js.native
-  def Length(length: Double, message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "Length")
-  @js.native
-  def Length(length: Double, message: MessageHandler[LengthValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def Length(length: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Length")(length.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Length(length: Double, message: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Length")(length.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Length(length: Double, message: MessageHandler[LengthValidator]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Length")(length.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "LengthValidator")
   @js.native
@@ -196,15 +182,12 @@ object mod {
     var length: Double = js.native
   }
   
-  @JSImport("decorum", "MaxLength")
-  @js.native
-  def MaxLength(maxLength: Double): PropertyDecorator = js.native
-  @JSImport("decorum", "MaxLength")
-  @js.native
-  def MaxLength(maxLength: Double, message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "MaxLength")
-  @js.native
-  def MaxLength(maxLength: Double, message: MessageHandler[MaxLengthValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def MaxLength(maxLength: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(maxLength.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MaxLength(maxLength: Double, message: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(maxLength.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MaxLength(maxLength: Double, message: MessageHandler[MaxLengthValidator]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(maxLength.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "MaxLengthValidator")
   @js.native
@@ -224,15 +207,12 @@ object mod {
   @scala.inline
   def MessageHandlers_=(x: IMessageHandlerMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MessageHandlers")(x.asInstanceOf[js.Any])
   
-  @JSImport("decorum", "MinLength")
-  @js.native
-  def MinLength(minLength: Double): PropertyDecorator = js.native
-  @JSImport("decorum", "MinLength")
-  @js.native
-  def MinLength(minLength: Double, message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "MinLength")
-  @js.native
-  def MinLength(minLength: Double, message: MessageHandler[MinLengthValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def MinLength(minLength: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(minLength.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MinLength(minLength: Double, message: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(minLength.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def MinLength(minLength: Double, message: MessageHandler[MinLengthValidator]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(minLength.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "MinLengthValidator")
   @js.native
@@ -284,15 +264,12 @@ object mod {
     def validateField(fieldKey: String, proposedValue: js.Any): js.Array[String] = js.native
   }
   
-  @JSImport("decorum", "Pattern")
-  @js.native
-  def Pattern(regex: RegExp): PropertyDecorator = js.native
-  @JSImport("decorum", "Pattern")
-  @js.native
-  def Pattern(regex: RegExp, message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "Pattern")
-  @js.native
-  def Pattern(regex: RegExp, message: MessageHandler[PatternValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def Pattern(regex: RegExp): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Pattern(regex: RegExp, message: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Pattern(regex: RegExp, message: MessageHandler[PatternValidator]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "PatternValidator")
   @js.native
@@ -306,15 +283,12 @@ object mod {
     var pattern: RegExp = js.native
   }
   
-  @JSImport("decorum", "Required")
-  @js.native
-  def Required(): PropertyDecorator = js.native
-  @JSImport("decorum", "Required")
-  @js.native
-  def Required(message: String): PropertyDecorator = js.native
-  @JSImport("decorum", "Required")
-  @js.native
-  def Required(message: MessageHandler[RequiredFieldValidator]): PropertyDecorator = js.native
+  @scala.inline
+  def Required(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Required")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Required(message: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Required")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Required(message: MessageHandler[RequiredFieldValidator]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Required")(message.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "RequiredFieldValidator")
   @js.native
@@ -325,21 +299,23 @@ object mod {
     def isValid(value: js.Any): Boolean = js.native
   }
   
-  @JSImport("decorum", "Validation")
-  @js.native
-  def Validation[TModel](message: String, predicate: js.Function2[/* value */ js.Any, /* model */ TModel, Boolean]): PropertyDecorator = js.native
-  @JSImport("decorum", "Validation")
-  @js.native
+  @scala.inline
+  def Validation[TModel](message: String, predicate: js.Function2[/* value */ js.Any, /* model */ TModel, Boolean]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validation")(message.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def Validation[TModel](
     message: MessageHandler[CustomValidator[TModel]],
     predicate: js.Function2[/* value */ js.Any, /* model */ TModel, Boolean]
-  ): PropertyDecorator = js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validation")(message.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("decorum", "Validator")
   @js.native
   class Validator () extends StObject
   /* static members */
   object Validator {
+    
+    @JSImport("decorum", "Validator")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Adds a validator to the given object prototype for the given property. Meant to be used inside of validation
@@ -348,9 +324,8 @@ object mod {
       * @param property The property to add the validator for.
       * @param validator The validator to add.
       */
-    @JSImport("decorum", "Validator.addValidator")
-    @js.native
-    def addValidator(targetPrototype: js.Object, property: String, validator: BaseValidator): Unit = js.native
+    @scala.inline
+    def addValidator(targetPrototype: js.Object, property: String, validator: BaseValidator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValidator")(targetPrototype.asInstanceOf[js.Any], property.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Decorates the passed class with model validations. Use this when you do not have access to ES7 decorators.
@@ -358,18 +333,8 @@ object mod {
       * @param objectType The class to decorate.
       * @param definitions One or more field validation definitions of the form { "fieldName": [ decorators ] }.
       */
-    @JSImport("decorum", "Validator.decorate")
-    @js.native
-    def decorate(objectType: js.Any, definitions: ValidationDefinitions): Unit = js.native
-    
-    /**
-      * Creates an anonymous validator, immediately validates the model, and returns any validation errors on the
-      * model as a result.
-      * @param model The model to validate.
-      */
-    @JSImport("decorum", "Validator.validate")
-    @js.native
-    def validate(model: js.Any): IValidationResult = js.native
+    @scala.inline
+    def decorate(objectType: js.Any, definitions: ValidationDefinitions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(objectType.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a new model validator for the given model. Model should be a valid class that has a valid constructor
@@ -377,28 +342,34 @@ object mod {
       * @param model The model to create the validator for.
       * @returns {ModelValidator} An instance of {ModelValidator}
       */
-    @JSImport("decorum", "Validator.new")
-    @js.native
-    def `new`(model: js.Any): ModelValidator = js.native
+    @scala.inline
+    def `new`(model: js.Any): ModelValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("new")(model.asInstanceOf[js.Any]).asInstanceOf[ModelValidator]
+    
+    /**
+      * Creates an anonymous validator, immediately validates the model, and returns any validation errors on the
+      * model as a result.
+      * @param model The model to validate.
+      */
+    @scala.inline
+    def validate(model: js.Any): IValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(model.asInstanceOf[js.Any]).asInstanceOf[IValidationResult]
   }
   
-  @js.native
   trait IFieldValidationError extends StObject {
     
     /**
       * One or more field validation errors. Empty if no errors.
       */
-    var errors: js.Array[String] = js.native
+    var errors: js.Array[String]
     
     /**
       * The property name of the field on the model.
       */
-    var field: String = js.native
+    var field: String
     
     /**
       * The "friendly" name of the field. If not set on the model via @FieldName(...), it will default to "Field".
       */
-    var fieldName: String = js.native
+    var fieldName: String
   }
   object IFieldValidationError {
     
@@ -427,23 +398,22 @@ object mod {
   
   type IMessageHandlerMap = StringDictionary[MessageHandler[js.Any]]
   
-  @js.native
   trait IMessageOpts extends StObject {
     
     /**
       * The friendly name for the field. I.e. 'Email address', 'Password Confirmation', etc.
       */
-    var friendlyName: String = js.native
+    var friendlyName: String
     
     /**
       * The property name from the model. I.e. 'emailAddress', 'username', etc.
       */
-    var property: String = js.native
+    var property: String
     
     /**
       * The current value of the field at the time the validation error was generated.
       */
-    var value: String = js.native
+    var value: String
   }
   object IMessageOpts {
     
@@ -467,18 +437,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IValidationResult extends StObject {
     
     /**
       * A map of field name to validation errors.
       */
-    var errors: js.Array[IFieldValidationError] = js.native
+    var errors: js.Array[IFieldValidationError]
     
     /**
       * Whether or not the model is valid.
       */
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object IValidationResult {
     

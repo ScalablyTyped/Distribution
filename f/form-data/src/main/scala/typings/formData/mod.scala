@@ -11,7 +11,6 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,18 +21,17 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait AppendOptions extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var filepath: js.UndefOr[String] = js.native
+    var filepath: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String | Headers] = js.native
+    var header: js.UndefOr[String | Headers] = js.undefined
     
-    var knownLength: js.UndefOr[Double] = js.native
+    var knownLength: js.UndefOr[Double] = js.undefined
   }
   object AppendOptions {
     
@@ -112,18 +110,19 @@ object mod {
   
   type Headers = StringDictionary[js.Any]
   
-  @js.native
-  trait Options extends ReadableOptions {
+  trait Options
+    extends StObject
+       with ReadableOptions {
     
-    var dataSize: js.UndefOr[Double] = js.native
+    var dataSize: js.UndefOr[Double] = js.undefined
     
-    var maxDataSize: js.UndefOr[Double] = js.native
+    var maxDataSize: js.UndefOr[Double] = js.undefined
     
-    var pauseStreams: js.UndefOr[Boolean] = js.native
+    var pauseStreams: js.UndefOr[Boolean] = js.undefined
     
-    var readable: js.UndefOr[Boolean] = js.native
+    var readable: js.UndefOr[Boolean] = js.undefined
     
-    var writable: js.UndefOr[Boolean] = js.native
+    var writable: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -169,10 +168,9 @@ object mod {
   }
   
   // Extracted because @types/node doesn't export interfaces.
-  @js.native
   trait ReadableOptions extends StObject {
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
     var destroy: js.UndefOr[
         js.ThisFunction2[
@@ -181,15 +179,15 @@ object mod {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.native
+    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.undefined
   }
   object ReadableOptions {
     
@@ -247,11 +245,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait SubmitOptions extends ClientRequestArgs {
+  trait SubmitOptions
+    extends StObject
+       with ClientRequestArgs {
     
     @JSName("protocol")
-    var protocol_SubmitOptions: js.UndefOr[httpsColon | httpColon] = js.native
+    var protocol_SubmitOptions: js.UndefOr[httpsColon | httpColon] = js.undefined
   }
   object SubmitOptions {
     

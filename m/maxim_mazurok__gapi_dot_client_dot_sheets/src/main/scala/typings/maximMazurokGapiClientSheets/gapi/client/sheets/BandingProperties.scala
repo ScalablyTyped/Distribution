@@ -2,48 +2,46 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BandingProperties extends StObject {
   
   /** The first color that is alternating. (Required) */
-  var firstBandColor: js.UndefOr[Color] = js.native
+  var firstBandColor: js.UndefOr[Color] = js.undefined
   
   /** The first color that is alternating. (Required) If first_band_color is also set, this field takes precedence. */
-  var firstBandColorStyle: js.UndefOr[ColorStyle] = js.native
+  var firstBandColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /**
     * The color of the last row or column. If this field is not set, the last row or column is filled with either first_band_color or second_band_color, depending on the color of the
     * previous row or column.
     */
-  var footerColor: js.UndefOr[Color] = js.native
+  var footerColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The color of the last row or column. If this field is not set, the last row or column is filled with either first_band_color or second_band_color, depending on the color of the
     * previous row or column. If footer_color is also set, this field takes precedence.
     */
-  var footerColorStyle: js.UndefOr[ColorStyle] = js.native
+  var footerColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /**
     * The color of the first row or column. If this field is set, the first row or column is filled with this color and the colors alternate between first_band_color and second_band_color
     * starting from the second row or column. Otherwise, the first row or column is filled with first_band_color and the colors proceed to alternate as they normally would.
     */
-  var headerColor: js.UndefOr[Color] = js.native
+  var headerColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The color of the first row or column. If this field is set, the first row or column is filled with this color and the colors alternate between first_band_color and second_band_color
     * starting from the second row or column. Otherwise, the first row or column is filled with first_band_color and the colors proceed to alternate as they normally would. If
     * header_color is also set, this field takes precedence.
     */
-  var headerColorStyle: js.UndefOr[ColorStyle] = js.native
+  var headerColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The second color that is alternating. (Required) */
-  var secondBandColor: js.UndefOr[Color] = js.native
+  var secondBandColor: js.UndefOr[Color] = js.undefined
   
   /** The second color that is alternating. (Required) If second_band_color is also set, this field takes precedence. */
-  var secondBandColorStyle: js.UndefOr[ColorStyle] = js.native
+  var secondBandColorStyle: js.UndefOr[ColorStyle] = js.undefined
 }
 object BandingProperties {
   

@@ -4,17 +4,15 @@ import typings.three.lightMod.Light
 import typings.three.webGLLightsMod.WebGLLights
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lights extends StObject {
   
-  var lights: WebGLLights = js.native
+  var lights: WebGLLights
   
-  var lightsArray: js.Array[Light] = js.native
+  var lightsArray: js.Array[Light]
   
-  var shadowsArray: js.Array[Light] = js.native
+  var shadowsArray: js.Array[Light]
 }
 object Lights {
   

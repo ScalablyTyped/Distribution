@@ -7,27 +7,26 @@ import typings.awsSdkClientKmsBrowser.listResourceTagsExceptionsUnionMod.ListRes
 import typings.awsSdkClientKmsBrowser.listRetirableGrantsExceptionsUnionMod.ListRetirableGrantsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidMarkerExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidMarkerExceptionDetails> * / any */ @js.native
-  trait InvalidMarkerException
-    extends ListAliasesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidMarkerExceptionDetails> * / any */ trait InvalidMarkerException
+    extends StObject
+       with ListAliasesExceptionsUnion
        with ListGrantsExceptionsUnion
        with ListKeysExceptionsUnion
        with ListResourceTagsExceptionsUnion
        with ListRetirableGrantsExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidMarkerException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidMarkerException
   }
   object InvalidMarkerException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidMarkerException): InvalidMarkerException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidMarkerException = {
+      val __obj = js.Dynamic.literal(name = "InvalidMarkerException")
       __obj.asInstanceOf[InvalidMarkerException]
     }
     
@@ -39,13 +38,12 @@ object typesInvalidMarkerExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidMarkerExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidMarkerExceptionDetails {
     

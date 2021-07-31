@@ -5,66 +5,64 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the source device for a photo import session. */
-@js.native
 trait PhotoImportSource extends StObject {
   
   /** The battery level of the source device. */
-  var batteryLevelPercent: Double = js.native
+  var batteryLevelPercent: Double
   
   /** Gets the connection protocol that is being used to communicate with the source device. */
-  var connectionProtocol: String = js.native
+  var connectionProtocol: String
   
   /** Gets a value indicating the transport mechanism that is being used for importing items from the source device. */
-  var connectionTransport: PhotoImportConnectionTransport = js.native
+  var connectionTransport: PhotoImportConnectionTransport
   
   /**
     * Creates a new photo import session.
     * @return The new PhotoImportSession object.
     */
-  def createImportSession(): PhotoImportSession = js.native
+  def createImportSession(): PhotoImportSession
   
   /** Gets the current date and time on the device. */
-  var dateTime: Date = js.native
+  var dateTime: Date
   
   /** Gets a human-readable description of the source device. */
-  var description: String = js.native
+  var description: String
   
   /** Gets the human-readable display name for the source device. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** Gets a unique 16-byte identifier that is common across multiple transports supported by the device. */
-  var id: String = js.native
+  var id: String
   
   /** Gets a value indicating if the source device is locked. */
-  var isLocked: Boolean = js.native
+  var isLocked: Boolean
   
   /** Gets a value indicating if the source device is a mass storage device. */
-  var isMassStorage: Boolean = js.native
+  var isMassStorage: Boolean
   
   /** Gets the source device's human-readable manufacturer name. */
-  var manufacturer: String = js.native
+  var manufacturer: String
   
   /** Gets the device model name. */
-  var model: String = js.native
+  var model: String
   
   /** Gets a value indicating the type of power source being used by the source device, if it is known. */
-  var powerSource: PhotoImportPowerSource = js.native
+  var powerSource: PhotoImportPowerSource
   
   /** Gets the serial number of the device. */
-  var serialNumber: String = js.native
+  var serialNumber: String
   
   /** Gets a list of objects representing the different storage media exposed by the source device. */
-  var storageMedia: IVectorView[PhotoImportStorageMedium] = js.native
+  var storageMedia: IVectorView[PhotoImportStorageMedium]
   
   /** Gets a reference to a stream containing the thumbnail image for the source device. */
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
   
   /** Gets a value indicating the type of the source device. */
-  var `type`: PhotoImportSourceType = js.native
+  var `type`: PhotoImportSourceType
 }
 object PhotoImportSource {
   

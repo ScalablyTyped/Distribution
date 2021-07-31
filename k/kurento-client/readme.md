@@ -10,9 +10,9 @@ JavaScript Client API for Kurento Media Server
 | ------------------ | :-------------: |
 | Full name          | kurento-client |
 | Keywords           | kurento, mcu, sfu, rpc, mediaserver, pipe, audio, video, media, recording, stream, streaming, videoconference, broadcast, multicast, client, server, browser, chrome, edge, firefox, safari, webrtc, datachannel, sdp, ice, stun, turn, h264, h.264, opus, vp8, rtp, srtp, rtsp |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 8 |
-| # downloads        | 40539 |
+| # downloads        | 50031 |
 | # stars            | 0 |
 
 ## Links

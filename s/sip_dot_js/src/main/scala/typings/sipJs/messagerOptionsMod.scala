@@ -3,19 +3,17 @@ package typings.sipJs
 import typings.sipJs.anon.FromDisplayName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagerOptionsMod {
   
-  @js.native
   trait MessagerOptions extends StObject {
     
     /** Array of extra headers added to the MESSAGE. */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /** @deprecated TODO: provide alternative. */
-    var params: js.UndefOr[FromDisplayName] = js.native
+    var params: js.UndefOr[FromDisplayName] = js.undefined
   }
   object MessagerOptions {
     

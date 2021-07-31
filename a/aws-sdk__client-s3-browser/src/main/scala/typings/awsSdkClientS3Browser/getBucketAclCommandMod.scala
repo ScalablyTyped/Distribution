@@ -7,16 +7,18 @@ import typings.awsSdkClientS3Browser.typesGetBucketAclInputMod.GetBucketAclInput
 import typings.awsSdkClientS3Browser.typesGetBucketAclOutputMod.GetBucketAclOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBucketAclCommandMod {
   
   @JSImport("@aws-sdk/client-s3-browser/commands/GetBucketAclCommand", "GetBucketAclCommand")
   @js.native
-  class GetBucketAclCommand protected () extends Command[
+  class GetBucketAclCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetBucketAclInput, 
           OutputTypesUnion, 
@@ -25,11 +27,23 @@ object getBucketAclCommandMod {
         ] {
     def this(input: GetBucketAclInput) = this()
     
+    /* CompleteClass */
+    override val input: GetBucketAclInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetBucketAclInput, GetBucketAclOutput] = js.native
+    
     val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
     
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: S3ResolvedConfiguration
+    ): Handler[GetBucketAclInput, GetBucketAclOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: S3ResolvedConfiguration,
+      options: js.Any
     ): Handler[GetBucketAclInput, GetBucketAclOutput] = js.native
   }
 }

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the type of mouse pointer. */
-@js.native
-trait XPointer extends XInterface {
+trait XPointer
+  extends StObject
+     with XInterface {
   
   /** returns the currently set {@link SystemPointer} of this mouse pointer. */
-  var Type: Double = js.native
+  var Type: Double
   
   /** returns the currently set {@link SystemPointer} of this mouse pointer. */
-  def getType(): Double = js.native
+  def getType(): Double
   
   /** selects a {@link SystemPointer} for this mouse pointer. */
-  def setType(nType: Double): Unit = js.native
+  def setType(nType: Double): Unit
 }
 object XPointer {
   

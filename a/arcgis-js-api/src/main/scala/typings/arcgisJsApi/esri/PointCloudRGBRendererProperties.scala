@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCloudRGBRendererProperties extends PointCloudRendererProperties {
+trait PointCloudRGBRendererProperties
+  extends StObject
+     with PointCloudRendererProperties {
   
   /**
     * The name of the field containing RGB values used to drive the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#field)
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
 }
 object PointCloudRGBRendererProperties {
   

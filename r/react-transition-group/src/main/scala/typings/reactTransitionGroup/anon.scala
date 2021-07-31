@@ -6,19 +6,17 @@ import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Appear extends StObject {
     
-    var appear: js.UndefOr[Double] = js.native
+    var appear: js.UndefOr[Double] = js.undefined
     
-    var enter: js.UndefOr[Double] = js.native
+    var enter: js.UndefOr[Double] = js.undefined
     
-    var exit: js.UndefOr[Double] = js.native
+    var exit: js.UndefOr[Double] = js.undefined
   }
   object Appear {
     
@@ -51,7 +49,6 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassNames extends StObject {
     
     /**
@@ -77,7 +74,7 @@ object anon {
       * }}
       * ```
       */
-    var classNames: js.UndefOr[String | CSSTransitionClassNames] = js.native
+    var classNames: js.UndefOr[String | CSSTransitionClassNames] = js.undefined
   }
   object ClassNames {
     
@@ -98,13 +95,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictprop
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
-    var childFactory: js.UndefOr[js.Function1[/* child */ ReactElement, ReactElement]] = js.native
+    var childFactory: js.UndefOr[js.Function1[/* child */ ReactElement, ReactElement]] = js.undefined
     
-    var children: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.native
+    var children: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
   }
   object Dictprop {
     
@@ -134,12 +131,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Explicit[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */] extends StObject {
     
-    var explicit: ExplicitRefHandler = js.native
+    var explicit: ExplicitRefHandler
     
-    var `implicit`: ImplicitRefHandler = js.native
+    var `implicit`: ImplicitRefHandler
   }
   object Explicit {
     
@@ -151,7 +147,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ExplicitMutableBuilder[Self <: Explicit[_, _], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */] (val x: Self with (Explicit[ImplicitRefHandler, ExplicitRefHandler])) extends AnyVal {
+    implicit class ExplicitMutableBuilder[Self <: Explicit[?, ?], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */] (val x: Self & (Explicit[ImplicitRefHandler, ExplicitRefHandler])) extends AnyVal {
       
       @scala.inline
       def setExplicit(value: ExplicitRefHandler): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])

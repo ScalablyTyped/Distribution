@@ -2,17 +2,15 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseCreateParams extends StObject {
   
-  var n: js.UndefOr[Double] = js.native
+  var n: js.UndefOr[Double] = js.undefined
   
-  var partitioned: js.UndefOr[Boolean] = js.native
+  var partitioned: js.UndefOr[Boolean] = js.undefined
   
-  var q: js.UndefOr[Double] = js.native
+  var q: js.UndefOr[Double] = js.undefined
 }
 object DatabaseCreateParams {
   

@@ -3,23 +3,23 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.timeSetAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimePickerAndroidTimeSetAction extends TimePickerAndroidOpenReturn {
+trait TimePickerAndroidTimeSetAction
+  extends StObject
+     with TimePickerAndroidOpenReturn {
   
-  var action: timeSetAction = js.native
+  var action: timeSetAction
   
-  var hour: Double = js.native
+  var hour: Double
   
-  var minute: Double = js.native
+  var minute: Double
 }
 object TimePickerAndroidTimeSetAction {
   
   @scala.inline
-  def apply(action: timeSetAction, hour: Double, minute: Double): TimePickerAndroidTimeSetAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
+  def apply(hour: Double, minute: Double): TimePickerAndroidTimeSetAction = {
+    val __obj = js.Dynamic.literal(action = "timeSetAction", hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerAndroidTimeSetAction]
   }
   

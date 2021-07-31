@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResult extends StObject {
   
   /**
     *  A complex type that contains zero or more Tag elements.
     */
-  var Tags: typings.awsSdk.cloudfrontMod.Tags = js.native
+  var Tags: typings.awsSdk.cloudfrontMod.Tags
 }
 object ListTagsForResourceResult {
   

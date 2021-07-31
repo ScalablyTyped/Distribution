@@ -3,7 +3,6 @@ package typings.amazonConnectStreams.connect
 import typings.amazonConnectStreams.connect.MediaType.CHAT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If you need to, store the `contactId` and `connectionId` of the connection and make sure that the contact and connection still exist by fetching them in order from the `Agent` API object before calling methods on them.
   */
 @js.native
-trait ChatConnection extends BaseConnection {
+trait ChatConnection
+  extends StObject
+     with BaseConnection {
   
   /** Provides a promise which resolves with the API response from createTransport transportType chat_token for this connection. */
   def getConnectionToken(): js.Promise[ConnectionToken] = js.native
@@ -22,7 +23,7 @@ trait ChatConnection extends BaseConnection {
     * Gets a `Promise` with the media controller associated with this connection.
     * The promise resolves to a `ChatSession` object from `amazon-connect-chatjs` library.
     */
-  def getMediaController(): js.Promise[_] = js.native
+  def getMediaController(): js.Promise[js.Any] = js.native
   
   /** Get the media info object associated with this connection. */
   def getMediaInfo(): ChatMediaInfo = js.native

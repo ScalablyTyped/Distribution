@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCacheSecurityGroupMessage extends StObject {
   
   /**
     * The name of the cache security group to delete.  You cannot delete the default security group. 
     */
-  var CacheSecurityGroupName: String = js.native
+  var CacheSecurityGroupName: String
 }
 object DeleteCacheSecurityGroupMessage {
   

@@ -12,17 +12,15 @@ import typings.trezorConnect.trezorConnectStrings.unacquired
 import typings.trezorConnect.trezorConnectStrings.unreadable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var received: Double = js.native
+    var received: Double
   }
   object Address {
     
@@ -44,18 +42,19 @@ object anon {
   }
   
   /* Inlined trezor-connect.trezor-connect.CommonParams & {callback (): trezor-connect.trezor-connect.LoginChallenge} */
-  @js.native
-  trait CommonParamscallbackLogin extends RequestLoginParams {
+  trait CommonParamscallbackLogin
+    extends StObject
+       with RequestLoginParams {
     
-    var allowSeedlessDevice: js.UndefOr[Boolean] = js.native
+    var allowSeedlessDevice: js.UndefOr[Boolean] = js.undefined
     
-    def callback(): LoginChallenge = js.native
+    def callback(): LoginChallenge
     
-    var device: js.UndefOr[Instance] = js.native
+    var device: js.UndefOr[Instance] = js.undefined
     
-    var keepSession: js.UndefOr[Boolean] = js.native
+    var keepSession: js.UndefOr[Boolean] = js.undefined
     
-    var useEmptyPassphrase: js.UndefOr[Boolean] = js.native
+    var useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined
   }
   object CommonParamscallbackLogin {
     
@@ -97,10 +96,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: String = js.native
+    var error: String
   }
   object Error {
     
@@ -118,26 +116,27 @@ object anon {
     }
   }
   
-  @js.native
-  trait Features extends Device {
+  trait Features
+    extends StObject
+       with Device {
     
-    var features: typings.trezorConnect.mod.Features = js.native
+    var features: typings.trezorConnect.mod.Features
     
-    var firmware: DeviceFirmwareStatus = js.native
+    var firmware: DeviceFirmwareStatus
     
-    var firmwareRelease: FirmwareRelease = js.native
+    var firmwareRelease: FirmwareRelease
     
-    var label: String = js.native
+    var label: String
     
-    var mode: DeviceMode = js.native
+    var mode: DeviceMode
     
-    var path: String = js.native
+    var path: String
     
-    var state: String | Null = js.native
+    var state: String | Null
     
-    var status: DeviceStatus = js.native
+    var status: DeviceStatus
     
-    var `type`: acquired = js.native
+    var `type`: acquired
   }
   object Features {
     
@@ -149,11 +148,10 @@ object anon {
       label: String,
       mode: DeviceMode,
       path: String,
-      status: DeviceStatus,
-      `type`: acquired
+      status: DeviceStatus
     ): Features = {
-      val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], firmware = firmware.asInstanceOf[js.Any], firmwareRelease = firmwareRelease.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], firmware = firmware.asInstanceOf[js.Any], firmwareRelease = firmwareRelease.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], state = null)
+      __obj.updateDynamic("type")("acquired")
       __obj.asInstanceOf[Features]
     }
     
@@ -192,14 +190,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Instance extends StObject {
     
-    var instance: js.UndefOr[Double] = js.native
+    var instance: js.UndefOr[Double] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Instance {
     
@@ -229,21 +226,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait Label extends Device {
+  trait Label
+    extends StObject
+       with Device {
     
-    var label: String = js.native
+    var label: String
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: unacquired = js.native
+    var `type`: unacquired
   }
   object Label {
     
     @scala.inline
-    def apply(label: String, path: String, `type`: unacquired): Label = {
+    def apply(label: String, path: String): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("unacquired")
       __obj.asInstanceOf[Label]
     }
     
@@ -261,21 +259,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait Path extends Device {
+  trait Path
+    extends StObject
+       with Device {
     
-    var label: String = js.native
+    var label: String
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: unreadable = js.native
+    var `type`: unreadable
   }
   object Path {
     
     @scala.inline
-    def apply(label: String, path: String, `type`: unreadable): Path = {
+    def apply(label: String, path: String): Path = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("unreadable")
       __obj.asInstanceOf[Path]
     }
     

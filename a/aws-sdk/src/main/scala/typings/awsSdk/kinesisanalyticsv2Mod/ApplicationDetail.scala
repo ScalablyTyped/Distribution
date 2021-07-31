@@ -2,66 +2,64 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationDetail extends StObject {
   
   /**
     * The ARN of the application.
     */
-  var ApplicationARN: ResourceARN = js.native
+  var ApplicationARN: ResourceARN
   
   /**
     * Provides details about the application's Java, SQL, or Scala code and starting parameters.
     */
-  var ApplicationConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationConfigurationDescription] = js.native
+  var ApplicationConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationConfigurationDescription] = js.undefined
   
   /**
     * The description of the application.
     */
-  var ApplicationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationDescription] = js.native
+  var ApplicationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationDescription] = js.undefined
   
   /**
     * The name of the application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * The status of the application.
     */
-  var ApplicationStatus: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationStatus = js.native
+  var ApplicationStatus: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationStatus
   
   /**
     * Provides the current application version. Kinesis Data Analytics updates the ApplicationVersionId each time you update the application.
     */
-  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId = js.native
+  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId
   
   /**
     * Describes the application Amazon CloudWatch logging options.
     */
-  var CloudWatchLoggingOptionDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptionDescriptions] = js.native
+  var CloudWatchLoggingOptionDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptionDescriptions] = js.undefined
   
   /**
     * The current timestamp when the application was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current timestamp when the application was last updated.
     */
-  var LastUpdateTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdateTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The runtime environment for the application (SQL-1.0, FLINK-1_6, or FLINK-1_8).
     */
-  var RuntimeEnvironment: typings.awsSdk.kinesisanalyticsv2Mod.RuntimeEnvironment = js.native
+  var RuntimeEnvironment: typings.awsSdk.kinesisanalyticsv2Mod.RuntimeEnvironment
   
   /**
     * Specifies the IAM role that the application uses to access external resources.
     */
-  var ServiceExecutionRole: js.UndefOr[RoleARN] = js.native
+  var ServiceExecutionRole: js.UndefOr[RoleARN] = js.undefined
 }
 object ApplicationDetail {
   

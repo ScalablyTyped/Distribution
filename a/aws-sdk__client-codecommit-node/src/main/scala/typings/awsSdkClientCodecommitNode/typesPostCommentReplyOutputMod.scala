@@ -5,24 +5,24 @@ import typings.awsSdkClientCodecommitNode.typesCommentMod.UnmarshalledComment
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPostCommentReplyOutputMod {
   
-  @js.native
-  trait PostCommentReplyOutput extends OutputTypesUnion {
+  trait PostCommentReplyOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Information about the reply to a comment.</p>
       */
-    var comment: js.UndefOr[UnmarshalledComment] = js.native
+    var comment: js.UndefOr[UnmarshalledComment] = js.undefined
   }
   object PostCommentReplyOutput {
     

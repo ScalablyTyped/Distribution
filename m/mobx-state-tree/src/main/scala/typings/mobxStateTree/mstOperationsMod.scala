@@ -13,202 +13,157 @@ import typings.mobxStateTree.typeMod.IType
 import typings.mobxStateTree.utilsMod.IDisposer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mstOperationsMod {
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "addDisposer")
+  @JSImport("mobx-state-tree/dist/core/mst-operations", JSImport.Namespace)
   @js.native
-  def addDisposer(target: IAnyStateTreeNode, disposer: IDisposer): IDisposer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "applyPatch")
-  @js.native
-  def applyPatch(target: IAnyStateTreeNode, patch: js.Array[IJsonPatch]): Unit = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "applyPatch")
-  @js.native
-  def applyPatch(target: IAnyStateTreeNode, patch: IJsonPatch): Unit = js.native
+  @scala.inline
+  def addDisposer(target: IAnyStateTreeNode, disposer: IDisposer): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("addDisposer")(target.asInstanceOf[js.Any], disposer.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "applySnapshot")
-  @js.native
-  def applySnapshot[C](target: IStateTreeNode[IType[C, _, _]], snapshot: C): Unit = js.native
+  @scala.inline
+  def applyPatch(target: IAnyStateTreeNode, patch: js.Array[IJsonPatch]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(target.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyPatch(target: IAnyStateTreeNode, patch: IJsonPatch): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(target.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
-  def cast(snapshotOrInstance: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
-  def cast(snapshotOrInstance: String): String = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
-  def cast(snapshotOrInstance: Boolean): Boolean = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
-  def cast(snapshotOrInstance: Double): Double = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
-  def cast(snapshotOrInstance: Null): Null = js.native
+  @scala.inline
+  def applySnapshot[C](target: IStateTreeNode[IType[C, js.Any, js.Any]], snapshot: C): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applySnapshot")(target.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "castToReferenceSnapshot")
-  @js.native
-  def castToReferenceSnapshot[I](instance: I): ReferenceIdentifier | I = js.native
+  @scala.inline
+  def cast(snapshotOrInstance: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def cast(snapshotOrInstance: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def cast(snapshotOrInstance: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def cast(snapshotOrInstance: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[Null]
+  @scala.inline
+  def cast(snapshotOrInstance: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "castToSnapshot")
-  @js.native
-  def castToSnapshot[I](snapshotOrInstance: I): (/* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<I>['CreationType'] */ js.Any) | I = js.native
+  @scala.inline
+  def castToReferenceSnapshot[I](instance: I): ReferenceIdentifier | I = ^.asInstanceOf[js.Dynamic].applyDynamic("castToReferenceSnapshot")(instance.asInstanceOf[js.Any]).asInstanceOf[ReferenceIdentifier | I]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
+  @scala.inline
+  def castToSnapshot[I](snapshotOrInstance: I): (/* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<I>['CreationType'] */ js.Any) | I = ^.asInstanceOf[js.Dynamic].applyDynamic("castToSnapshot")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<I>['CreationType'] */ js.Any) | I]
+  
+  @scala.inline
   def cast_CreationType[O](
     snapshotOrInstance: /* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<O>['CreationType'] */ js.Any
-  ): O = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
+  ): O = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[O]
+  
+  @scala.inline
   def cast_SnapshotType[O](
     snapshotOrInstance: /* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<O>['SnapshotType'] */ js.Any
-  ): O = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "cast")
-  @js.native
+  ): O = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[O]
+  
+  @scala.inline
   def cast_Type[O](
     snapshotOrInstance: /* import warning: importer.ImportType#apply Failed type conversion: mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.TypeOfValue<O>['Type'] */ js.Any
-  ): O = js.native
+  ): O = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[O]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "clone")
-  @js.native
-  def clone_[T /* <: IAnyStateTreeNode */](source: T): T = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "clone")
-  @js.native
-  def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: js.Any): T = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "clone")
-  @js.native
-  def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: Boolean): T = js.native
+  @scala.inline
+  def clone_[T /* <: IAnyStateTreeNode */](source: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "destroy")
-  @js.native
-  def destroy(target: IAnyStateTreeNode): Unit = js.native
+  @scala.inline
+  def destroy(target: IAnyStateTreeNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "detach")
-  @js.native
-  def detach[T /* <: IAnyStateTreeNode */](target: T): T = js.native
+  @scala.inline
+  def detach[T /* <: IAnyStateTreeNode */](target: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getChildType")
-  @js.native
-  def getChildType(`object`: IAnyStateTreeNode): IAnyType = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getChildType")
-  @js.native
-  def getChildType(`object`: IAnyStateTreeNode, propertyName: String): IAnyType = js.native
+  @scala.inline
+  def getChildType(`object`: IAnyStateTreeNode): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildType")(`object`.asInstanceOf[js.Any]).asInstanceOf[IAnyType]
+  @scala.inline
+  def getChildType(`object`: IAnyStateTreeNode, propertyName: String): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildType")(`object`.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getEnv")
-  @js.native
-  def getEnv[T](target: IAnyStateTreeNode): T = js.native
+  @scala.inline
+  def getEnv[T](target: IAnyStateTreeNode): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")(target.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getIdentifier")
-  @js.native
-  def getIdentifier(target: IAnyStateTreeNode): String | Null = js.native
+  @scala.inline
+  def getIdentifier(target: IAnyStateTreeNode): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIdentifier")(target.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getMembers")
-  @js.native
-  def getMembers(target: IAnyStateTreeNode): IModelReflectionData = js.native
+  @scala.inline
+  def getMembers(target: IAnyStateTreeNode): IModelReflectionData = ^.asInstanceOf[js.Dynamic].applyDynamic("getMembers")(target.asInstanceOf[js.Any]).asInstanceOf[IModelReflectionData]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getNodeId")
-  @js.native
-  def getNodeId(target: IAnyStateTreeNode): Double = js.native
+  @scala.inline
+  def getNodeId(target: IAnyStateTreeNode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeId")(target.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getParent")
-  @js.native
-  def getParent[IT /* <: IAnyStateTreeNode | IAnyComplexType */](target: IAnyStateTreeNode): TypeOrStateTreeNodeToStateTreeNode[IT] = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getParent")
-  @js.native
-  def getParent[IT /* <: IAnyStateTreeNode | IAnyComplexType */](target: IAnyStateTreeNode, depth: Double): TypeOrStateTreeNodeToStateTreeNode[IT] = js.native
+  @scala.inline
+  def getParent[IT /* <: IAnyStateTreeNode | IAnyComplexType */](target: IAnyStateTreeNode): TypeOrStateTreeNodeToStateTreeNode[IT] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(target.asInstanceOf[js.Any]).asInstanceOf[TypeOrStateTreeNodeToStateTreeNode[IT]]
+  @scala.inline
+  def getParent[IT /* <: IAnyStateTreeNode | IAnyComplexType */](target: IAnyStateTreeNode, depth: Double): TypeOrStateTreeNodeToStateTreeNode[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(target.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[TypeOrStateTreeNodeToStateTreeNode[IT]]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getParentOfType")
-  @js.native
-  def getParentOfType[IT /* <: IAnyComplexType */](target: IAnyStateTreeNode, `type`: IT): /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any = js.native
+  @scala.inline
+  def getParentOfType[IT /* <: IAnyComplexType */](target: IAnyStateTreeNode, `type`: IT): /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getParentOfType")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getPath")
-  @js.native
-  def getPath(target: IAnyStateTreeNode): String = js.native
+  @scala.inline
+  def getPath(target: IAnyStateTreeNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(target.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getPathParts")
-  @js.native
-  def getPathParts(target: IAnyStateTreeNode): js.Array[String] = js.native
+  @scala.inline
+  def getPathParts(target: IAnyStateTreeNode): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathParts")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getPropertyMembers")
-  @js.native
-  def getPropertyMembers(typeOrNode: IAnyModelType): IModelReflectionPropertiesData = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getPropertyMembers")
-  @js.native
-  def getPropertyMembers(typeOrNode: IAnyStateTreeNode): IModelReflectionPropertiesData = js.native
+  @scala.inline
+  def getPropertyMembers(typeOrNode: IAnyModelType): IModelReflectionPropertiesData = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyMembers")(typeOrNode.asInstanceOf[js.Any]).asInstanceOf[IModelReflectionPropertiesData]
+  @scala.inline
+  def getPropertyMembers(typeOrNode: IAnyStateTreeNode): IModelReflectionPropertiesData = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyMembers")(typeOrNode.asInstanceOf[js.Any]).asInstanceOf[IModelReflectionPropertiesData]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getRelativePath")
-  @js.native
-  def getRelativePath(base: IAnyStateTreeNode, target: IAnyStateTreeNode): String = js.native
+  @scala.inline
+  def getRelativePath(base: IAnyStateTreeNode, target: IAnyStateTreeNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativePath")(base.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getRoot")
-  @js.native
-  def getRoot[IT /* <: IAnyComplexType | IAnyStateTreeNode */](target: IAnyStateTreeNode): TypeOrStateTreeNodeToStateTreeNode[IT] = js.native
+  @scala.inline
+  def getRoot[IT /* <: IAnyComplexType | IAnyStateTreeNode */](target: IAnyStateTreeNode): TypeOrStateTreeNodeToStateTreeNode[IT] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoot")(target.asInstanceOf[js.Any]).asInstanceOf[TypeOrStateTreeNodeToStateTreeNode[IT]]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getSnapshot")
-  @js.native
-  def getSnapshot[S](target: IStateTreeNode[IType[_, S, _]]): S = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getSnapshot")
-  @js.native
-  def getSnapshot[S](target: IStateTreeNode[IType[_, S, _]], applyPostProcess: Boolean): S = js.native
+  @scala.inline
+  def getSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]]): S = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any]).asInstanceOf[S]
+  @scala.inline
+  def getSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]], applyPostProcess: Boolean): S = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any], applyPostProcess.asInstanceOf[js.Any])).asInstanceOf[S]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "getType")
-  @js.native
-  def getType(`object`: IAnyStateTreeNode): IAnyComplexType = js.native
+  @scala.inline
+  def getType(`object`: IAnyStateTreeNode): IAnyComplexType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(`object`.asInstanceOf[js.Any]).asInstanceOf[IAnyComplexType]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "hasParent")
-  @js.native
-  def hasParent(target: IAnyStateTreeNode): Boolean = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "hasParent")
-  @js.native
-  def hasParent(target: IAnyStateTreeNode, depth: Double): Boolean = js.native
+  @scala.inline
+  def hasParent(target: IAnyStateTreeNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasParent")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def hasParent(target: IAnyStateTreeNode, depth: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasParent")(target.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "hasParentOfType")
-  @js.native
-  def hasParentOfType(target: IAnyStateTreeNode, `type`: IAnyComplexType): Boolean = js.native
+  @scala.inline
+  def hasParentOfType(target: IAnyStateTreeNode, `type`: IAnyComplexType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasParentOfType")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "isAlive")
-  @js.native
-  def isAlive(target: IAnyStateTreeNode): Boolean = js.native
+  @scala.inline
+  def isAlive(target: IAnyStateTreeNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlive")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "isProtected")
-  @js.native
-  def isProtected(target: IAnyStateTreeNode): Boolean = js.native
+  @scala.inline
+  def isProtected(target: IAnyStateTreeNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProtected")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "isRoot")
-  @js.native
-  def isRoot(target: IAnyStateTreeNode): Boolean = js.native
+  @scala.inline
+  def isRoot(target: IAnyStateTreeNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "isValidReference")
-  @js.native
-  def isValidReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]]): Boolean = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "isValidReference")
-  @js.native
-  def isValidReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]], checkIfAlive: Boolean): Boolean = js.native
+  @scala.inline
+  def isValidReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidReference")(getter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValidReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]], checkIfAlive: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidReference")(getter.asInstanceOf[js.Any], checkIfAlive.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "onPatch")
-  @js.native
+  @scala.inline
   def onPatch(
     target: IAnyStateTreeNode,
     callback: js.Function2[/* patch */ IJsonPatch, /* reversePatch */ IJsonPatch, Unit]
-  ): IDisposer = js.native
+  ): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onPatch")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "onSnapshot")
-  @js.native
-  def onSnapshot[S](target: IStateTreeNode[IType[_, S, _]], callback: js.Function1[/* snapshot */ S, Unit]): IDisposer = js.native
+  @scala.inline
+  def onSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]], callback: js.Function1[/* snapshot */ S, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "protect")
-  @js.native
-  def protect(target: IAnyStateTreeNode): Unit = js.native
+  @scala.inline
+  def protect(target: IAnyStateTreeNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("protect")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "recordPatches")
-  @js.native
-  def recordPatches(subject: IAnyStateTreeNode): IPatchRecorder = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "recordPatches")
-  @js.native
+  @scala.inline
+  def recordPatches(subject: IAnyStateTreeNode): IPatchRecorder = ^.asInstanceOf[js.Dynamic].applyDynamic("recordPatches")(subject.asInstanceOf[js.Any]).asInstanceOf[IPatchRecorder]
+  @scala.inline
   def recordPatches(
     subject: IAnyStateTreeNode,
     filter: js.Function3[
@@ -217,45 +172,41 @@ object mstOperationsMod {
       /* actionContext */ js.UndefOr[IActionContext], 
       Boolean
     ]
-  ): IPatchRecorder = js.native
+  ): IPatchRecorder = (^.asInstanceOf[js.Dynamic].applyDynamic("recordPatches")(subject.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[IPatchRecorder]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "resolveIdentifier")
-  @js.native
+  @scala.inline
   def resolveIdentifier[IT /* <: IAnyModelType */](`type`: IT, target: IAnyStateTreeNode, identifier: ReferenceIdentifier): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveIdentifier")(`type`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any
+  ]]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "resolvePath")
-  @js.native
-  def resolvePath(target: IAnyStateTreeNode, path: String): js.Any = js.native
+  @scala.inline
+  def resolvePath(target: IAnyStateTreeNode, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "tryReference")
-  @js.native
-  def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]]): js.UndefOr[N] = js.native
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "tryReference")
-  @js.native
-  def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]], checkIfAlive: Boolean): js.UndefOr[N] = js.native
+  @scala.inline
+  def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]]): js.UndefOr[N] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryReference")(getter.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[N]]
+  @scala.inline
+  def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]], checkIfAlive: Boolean): js.UndefOr[N] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryReference")(getter.asInstanceOf[js.Any], checkIfAlive.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[N]]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "tryResolve")
-  @js.native
-  def tryResolve(target: IAnyStateTreeNode, path: String): js.Any = js.native
+  @scala.inline
+  def tryResolve(target: IAnyStateTreeNode, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryResolve")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "unprotect")
-  @js.native
-  def unprotect(target: IAnyStateTreeNode): Unit = js.native
+  @scala.inline
+  def unprotect(target: IAnyStateTreeNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unprotect")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-state-tree/dist/core/mst-operations", "walk")
-  @js.native
-  def walk(target: IAnyStateTreeNode, processor: js.Function1[/* item */ IAnyStateTreeNode, Unit]): Unit = js.native
+  @scala.inline
+  def walk(target: IAnyStateTreeNode, processor: js.Function1[/* item */ IAnyStateTreeNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(target.asInstanceOf[js.Any], processor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait IModelReflectionData extends IModelReflectionPropertiesData {
+  trait IModelReflectionData
+    extends StObject
+       with IModelReflectionPropertiesData {
     
-    var actions: js.Array[String] = js.native
+    var actions: js.Array[String]
     
-    var views: js.Array[String] = js.native
+    var views: js.Array[String]
     
-    var volatile: js.Array[String] = js.native
+    var volatile: js.Array[String]
   }
   object IModelReflectionData {
     
@@ -294,12 +245,11 @@ object mstOperationsMod {
     }
   }
   
-  @js.native
   trait IModelReflectionPropertiesData extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var properties: StringDictionary[IAnyType] = js.native
+    var properties: StringDictionary[IAnyType]
   }
   object IModelReflectionPropertiesData {
     
@@ -342,5 +292,5 @@ object mstOperationsMod {
     def undo(target: IAnyStateTreeNode): Unit = js.native
   }
   
-  type TypeOrStateTreeNodeToStateTreeNode[T /* <: IAnyType | IAnyStateTreeNode */] = T | (js.Any with IStateTreeNode[T])
+  type TypeOrStateTreeNodeToStateTreeNode[T /* <: IAnyType | IAnyStateTreeNode */] = T | (js.Any & IStateTreeNode[T])
 }

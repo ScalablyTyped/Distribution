@@ -2,27 +2,25 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 启动参数 */
-@js.native
 trait LaunchOptionsApp extends StObject {
   
   /** 启动小程序的路径 */
-  var path: String = js.native
+  var path: String
   
   /** 启动小程序的 query 参数 */
-  var query: js.Object = js.native
+  var query: js.Object
   
   /** 来源信息。从另一个小程序、公众号或 App 进入小程序时返回。否则返回 `{}`。(参见后文注意) */
-  var referrerInfo: ReferrerInfo = js.native
+  var referrerInfo: ReferrerInfo
   
   /** 启动小程序的[场景值]((scene)) */
-  var scene: Double = js.native
+  var scene: Double
   
   /** shareTicket，详见[获取更多转发信息]((转发#获取更多转发信息)) */
-  var shareTicket: String = js.native
+  var shareTicket: String
 }
 object LaunchOptionsApp {
   

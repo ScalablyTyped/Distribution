@@ -5,18 +5,18 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
-@js.native
-trait Image extends Widget {
+trait Image
+  extends StObject
+     with Widget {
   
-  var height: Double = js.native
+  var height: Double
   
-  var url: String = js.native
+  var url: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object Image {
   

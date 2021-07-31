@@ -5,14 +5,15 @@ import typings.antvGBase.interfacesMod.IShape
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventContollerMod {
   
   @JSImport("@antv/g-base/lib/event/event-contoller", JSImport.Default)
   @js.native
-  class default protected () extends EventController {
+  class default protected ()
+    extends StObject
+       with EventController {
     def this(cfg: js.Any) = this()
   }
   
@@ -28,14 +29,6 @@ object eventContollerMod {
     def _emitDragoverEvents(event: js.Any, pointInfo: js.Any, fromShape: js.Any, toShape: js.Any, isCanvasEmit: js.Any): Unit = js.native
     
     def _emitEvent(`type`: js.Any, event: js.Any, pointInfo: js.Any, shape: js.Any): Unit = js.native
-    def _emitEvent(
-      `type`: js.Any,
-      event: js.Any,
-      pointInfo: js.Any,
-      shape: js.Any,
-      fromShape: js.UndefOr[scala.Nothing],
-      toShape: js.Any
-    ): Unit = js.native
     def _emitEvent(`type`: js.Any, event: js.Any, pointInfo: js.Any, shape: js.Any, fromShape: js.Any): Unit = js.native
     def _emitEvent(
       `type`: js.Any,
@@ -45,6 +38,7 @@ object eventContollerMod {
       fromShape: js.Any,
       toShape: js.Any
     ): Unit = js.native
+    def _emitEvent(`type`: js.Any, event: js.Any, pointInfo: js.Any, shape: js.Any, fromShape: Unit, toShape: js.Any): Unit = js.native
     
     def _emitMouseoverEvents(event: js.Any, pointInfo: js.Any, fromShape: js.Any, toShape: js.Any): Unit = js.native
     

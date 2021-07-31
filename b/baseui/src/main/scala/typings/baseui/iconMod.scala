@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
@@ -130,12 +129,11 @@ object iconMod {
   @js.native
   val Upload: FC[IconProps] = js.native
   
-  @js.native
   trait IconOverrides extends StObject {
     
     var Svg: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<StyledComponentArgsT> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object IconOverrides {
     
@@ -158,18 +156,17 @@ object iconMod {
     }
   }
   
-  @js.native
   trait IconProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var overrides: js.UndefOr[IconOverrides] = js.native
+    var overrides: js.UndefOr[IconOverrides] = js.undefined
     
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IconProps {
     
@@ -214,14 +211,13 @@ object iconMod {
     }
   }
   
-  @js.native
   trait StyledComponentArgsT extends StObject {
     
     @JSName("$color")
-    var $color: js.UndefOr[String] = js.native
+    var $color: js.UndefOr[String] = js.undefined
     
     @JSName("$size")
-    var $size: js.UndefOr[Double | String] = js.native
+    var $size: js.UndefOr[Double | String] = js.undefined
   }
   object StyledComponentArgsT {
     

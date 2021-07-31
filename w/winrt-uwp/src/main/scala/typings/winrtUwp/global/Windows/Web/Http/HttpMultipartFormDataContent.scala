@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Web.Http
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides HTTP content that uses the multipart/form-data MIME type. */
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Initializes a new instance of the HttpMultipartFormDataContent class. */
 class HttpMultipartFormDataContent ()
-  extends typings.winrtUwp.Windows.Web.Http.HttpMultipartFormDataContent {
+  extends StObject
+     with typings.winrtUwp.Windows.Web.Http.HttpMultipartFormDataContent {
   /**
     * Initializes a new instance of the HttpMultipartFormDataContent class with the specified boundary string.
     * @param boundary The boundary string for the multipart content.

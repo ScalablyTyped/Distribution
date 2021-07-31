@@ -2,21 +2,19 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServicesResponse extends StObject {
   
   /**
     * If the response contains NextToken, submit another ListServices request to get the next group of results. Specify the value of NextToken from the previous response in the next request.  AWS Cloud Map gets MaxResults services and then filters them based on the specified criteria. It's possible that no services in the first MaxResults services matched the specified criteria but that subsequent groups of MaxResults services do contain services that match the criteria. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.undefined
   
   /**
     * An array that contains one ServiceSummary object for each service that matches the specified filter criteria.
     */
-  var Services: js.UndefOr[ServiceSummariesList] = js.native
+  var Services: js.UndefOr[ServiceSummariesList] = js.undefined
 }
 object ListServicesResponse {
   

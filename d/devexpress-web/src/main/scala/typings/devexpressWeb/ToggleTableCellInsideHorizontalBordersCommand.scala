@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle inner horizontal borders for selected cells on/off.
   */
-@js.native
-trait ToggleTableCellInsideHorizontalBordersCommand extends CommandWithBooleanStateBase {
+trait ToggleTableCellInsideHorizontalBordersCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ToggleTableCellInsideHorizontalBordersCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTableCellInsideHorizontalBordersCommand {
   

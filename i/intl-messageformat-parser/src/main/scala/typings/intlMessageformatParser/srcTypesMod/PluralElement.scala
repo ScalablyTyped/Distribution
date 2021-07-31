@@ -5,19 +5,18 @@ import typings.std.Intl.PluralRuleType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluralElement
-  extends BaseElement[plural]
+  extends StObject
+     with BaseElement[plural]
      with _MessageFormatElement {
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var options: Record[ValidPluralRule, PluralOrSelectOption] = js.native
+  var options: Record[ValidPluralRule, PluralOrSelectOption]
   
-  var pluralType: js.UndefOr[PluralRuleType] = js.native
+  var pluralType: js.UndefOr[PluralRuleType] = js.undefined
 }
 object PluralElement {
   

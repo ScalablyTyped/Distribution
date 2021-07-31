@@ -2,61 +2,59 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SenderEmailNotifications extends StObject {
   
   /**
     * When set to **true**, the sender receives an email notification if the signer changes.
     */
-  var changedSigner: js.UndefOr[String] = js.native
+  var changedSigner: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives only comments that mention their own user name.
     */
-  var commentsOnlyPrivateAndMention: js.UndefOr[String] = js.native
+  var commentsOnlyPrivateAndMention: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives all comments.
     */
-  var commentsReceiveAll: js.UndefOr[String] = js.native
+  var commentsReceiveAll: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender receives an email notification if envelope delivery fails.
     */
-  var deliveryFailed: js.UndefOr[String] = js.native
+  var deliveryFailed: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives an email notification when the envelope has been completed.
     */
-  var envelopeComplete: js.UndefOr[String] = js.native
+  var envelopeComplete: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives an email notification if offline signing failed.
     */
-  var offlineSigningFailed: js.UndefOr[String] = js.native
+  var offlineSigningFailed: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives an email notification when a document purge occurs.
     */
-  var purgeDocuments: js.UndefOr[String] = js.native
+  var purgeDocuments: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender receives notification that a recipient viewed the envelope.
     */
-  var recipientViewed: js.UndefOr[String] = js.native
+  var recipientViewed: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the sender receives notification that the envelope was declined.
     */
-  var senderEnvelopeDeclined: js.UndefOr[String] = js.native
+  var senderEnvelopeDeclined: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives an email notification if consent is withdrawn.
     */
-  var withdrawnConsent: js.UndefOr[String] = js.native
+  var withdrawnConsent: js.UndefOr[String] = js.undefined
 }
 object SenderEmailNotifications {
   

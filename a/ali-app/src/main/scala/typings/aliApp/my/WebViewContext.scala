@@ -2,15 +2,13 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region webview组件控制 https://docs.alipay.com/mini/api/webview-context
-@js.native
 trait WebViewContext extends StObject {
   
-  def postMessage(param: js.Any): Unit = js.native
+  def postMessage(param: js.Any): Unit
 }
 object WebViewContext {
   

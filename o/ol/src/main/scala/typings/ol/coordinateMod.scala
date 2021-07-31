@@ -3,96 +3,77 @@ package typings.ol
 import typings.ol.circleMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coordinateMod {
   
-  @JSImport("ol/coordinate", "add")
+  @JSImport("ol/coordinate", JSImport.Namespace)
   @js.native
-  def add(coordinate: Coordinate, delta: Coordinate): Coordinate = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/coordinate", "closestOnCircle")
-  @js.native
-  def closestOnCircle(coordinate: Coordinate, circle: default): Coordinate = js.native
+  @scala.inline
+  def add(coordinate: Coordinate, delta: Coordinate): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(coordinate.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/coordinate", "closestOnSegment")
-  @js.native
-  def closestOnSegment(coordinate: Coordinate, segment: js.Array[Coordinate]): Coordinate = js.native
+  @scala.inline
+  def closestOnCircle(coordinate: Coordinate, circle: default): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("closestOnCircle")(coordinate.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/coordinate", "createStringXY")
-  @js.native
-  def createStringXY(): CoordinateFormat = js.native
-  @JSImport("ol/coordinate", "createStringXY")
-  @js.native
-  def createStringXY(opt_fractionDigits: Double): CoordinateFormat = js.native
+  @scala.inline
+  def closestOnSegment(coordinate: Coordinate, segment: js.Array[Coordinate]): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("closestOnSegment")(coordinate.asInstanceOf[js.Any], segment.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/coordinate", "degreesToStringHDMS")
-  @js.native
-  def degreesToStringHDMS(hemispheres: String, degrees: Double): String = js.native
-  @JSImport("ol/coordinate", "degreesToStringHDMS")
-  @js.native
-  def degreesToStringHDMS(hemispheres: String, degrees: Double, opt_fractionDigits: Double): String = js.native
+  @scala.inline
+  def createStringXY(): CoordinateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringXY")().asInstanceOf[CoordinateFormat]
+  @scala.inline
+  def createStringXY(opt_fractionDigits: Double): CoordinateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringXY")(opt_fractionDigits.asInstanceOf[js.Any]).asInstanceOf[CoordinateFormat]
   
-  @JSImport("ol/coordinate", "distance")
-  @js.native
-  def distance(coord1: Coordinate, coord2: Coordinate): Double = js.native
+  @scala.inline
+  def degreesToStringHDMS(hemispheres: String, degrees: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("degreesToStringHDMS")(hemispheres.asInstanceOf[js.Any], degrees.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def degreesToStringHDMS(hemispheres: String, degrees: Double, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("degreesToStringHDMS")(hemispheres.asInstanceOf[js.Any], degrees.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ol/coordinate", "equals")
-  @js.native
-  def equals_(coordinate1: Coordinate, coordinate2: Coordinate): Boolean = js.native
+  @scala.inline
+  def distance(coord1: Coordinate, coord2: Coordinate): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(coord1.asInstanceOf[js.Any], coord2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/coordinate", "format")
-  @js.native
-  def format(coordinate: Coordinate, template: String): String = js.native
-  @JSImport("ol/coordinate", "format")
-  @js.native
-  def format(coordinate: Coordinate, template: String, opt_fractionDigits: Double): String = js.native
+  @scala.inline
+  def equals_(coordinate1: Coordinate, coordinate2: Coordinate): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(coordinate1.asInstanceOf[js.Any], coordinate2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/coordinate", "getWorldsAway")
-  @js.native
-  def getWorldsAway(coordinate: Coordinate, projection: typings.ol.projectionMod.default): Double = js.native
-  @JSImport("ol/coordinate", "getWorldsAway")
-  @js.native
+  @scala.inline
+  def format(coordinate: Coordinate, template: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(coordinate.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(coordinate: Coordinate, template: String, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(coordinate.asInstanceOf[js.Any], template.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def getWorldsAway(coordinate: Coordinate, projection: typings.ol.projectionMod.default): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorldsAway")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def getWorldsAway(
     coordinate: Coordinate,
     projection: typings.ol.projectionMod.default,
     opt_sourceExtentWidth: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorldsAway")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], opt_sourceExtentWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/coordinate", "rotate")
-  @js.native
-  def rotate(coordinate: Coordinate, angle: Double): Coordinate = js.native
+  @scala.inline
+  def rotate(coordinate: Coordinate, angle: Double): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(coordinate.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/coordinate", "scale")
-  @js.native
-  def scale(coordinate: Coordinate, scale: Double): Coordinate = js.native
+  @scala.inline
+  def scale(coordinate: Coordinate, scale: Double): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(coordinate.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/coordinate", "squaredDistance")
-  @js.native
-  def squaredDistance(coord1: Coordinate, coord2: Coordinate): Double = js.native
+  @scala.inline
+  def squaredDistance(coord1: Coordinate, coord2: Coordinate): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDistance")(coord1.asInstanceOf[js.Any], coord2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/coordinate", "squaredDistanceToSegment")
-  @js.native
-  def squaredDistanceToSegment(coordinate: Coordinate, segment: js.Array[Coordinate]): Double = js.native
+  @scala.inline
+  def squaredDistanceToSegment(coordinate: Coordinate, segment: js.Array[Coordinate]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDistanceToSegment")(coordinate.asInstanceOf[js.Any], segment.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/coordinate", "toStringHDMS")
-  @js.native
-  def toStringHDMS(coordinate: Coordinate): String = js.native
-  @JSImport("ol/coordinate", "toStringHDMS")
-  @js.native
-  def toStringHDMS(coordinate: Coordinate, opt_fractionDigits: Double): String = js.native
+  @scala.inline
+  def toStringHDMS(coordinate: Coordinate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringHDMS")(coordinate.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toStringHDMS(coordinate: Coordinate, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringHDMS")(coordinate.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ol/coordinate", "toStringXY")
-  @js.native
-  def toStringXY(coordinate: Coordinate): String = js.native
-  @JSImport("ol/coordinate", "toStringXY")
-  @js.native
-  def toStringXY(coordinate: Coordinate, opt_fractionDigits: Double): String = js.native
+  @scala.inline
+  def toStringXY(coordinate: Coordinate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")(coordinate.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toStringXY(coordinate: Coordinate, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")(coordinate.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ol/coordinate", "wrapX")
-  @js.native
-  def wrapX(coordinate: Coordinate, projection: typings.ol.projectionMod.default): Coordinate = js.native
+  @scala.inline
+  def wrapX(coordinate: Coordinate, projection: typings.ol.projectionMod.default): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapX")(coordinate.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
   type Coordinate = js.Array[Double]
   

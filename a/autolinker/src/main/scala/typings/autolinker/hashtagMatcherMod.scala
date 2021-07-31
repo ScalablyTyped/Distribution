@@ -7,7 +7,6 @@ import typings.autolinker.matcherMatcherMod.MatcherConfig
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hashtagMatcherMod {
@@ -52,10 +51,11 @@ object hashtagMatcherMod {
     val serviceName: HashtagServices = js.native
   }
   
-  @js.native
-  trait HashtagMatcherConfig extends MatcherConfig {
+  trait HashtagMatcherConfig
+    extends StObject
+       with MatcherConfig {
     
-    var serviceName: HashtagServices = js.native
+    var serviceName: HashtagServices
   }
   object HashtagMatcherConfig {
     

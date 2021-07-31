@@ -4,7 +4,6 @@ import typings.protractor.loggerMod.Logger
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exitCodesMod {
@@ -60,20 +59,30 @@ object exitCodesMod {
   /* static members */
   object ErrorHandler {
     
-    @JSImport("protractor/built/exitCodes", "ErrorHandler.isError")
+    @JSImport("protractor/built/exitCodes", "ErrorHandler")
     @js.native
-    def isError(errMsgs: js.Array[String], e: Error): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("protractor/built/exitCodes", "ErrorHandler.parseError")
-    @js.native
-    def parseError(e: Error): Double = js.native
+    @scala.inline
+    def isError(errMsgs: js.Array[String], e: Error): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isError")(errMsgs.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def parseError(e: Error): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseError")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @JSImport("protractor/built/exitCodes", "IError")
   @js.native
-  class IError () extends Error {
+  class IError ()
+    extends StObject
+       with Error {
     
     var code: js.UndefOr[Double] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("protractor/built/exitCodes", "ProtractorError")
@@ -107,8 +116,7 @@ object exitCodesMod {
     @scala.inline
     def SUPRESS_EXIT_CODE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPRESS_EXIT_CODE")(x.asInstanceOf[js.Any])
     
-    @JSImport("protractor/built/exitCodes", "ProtractorError.log")
-    @js.native
-    def log(logger: Logger, code: Double, message: String, stack: String): Unit = js.native
+    @scala.inline
+    def log(logger: Logger, code: Double, message: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(logger.asInstanceOf[js.Any], code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

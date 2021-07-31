@@ -3,7 +3,6 @@ package typings.pulumiQuery
 import typings.pulumiQuery.interfacesMod.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
@@ -21,7 +20,9 @@ object baseMod {
   
   @JSImport("@pulumi/query/base", "IterableBase")
   @js.native
-  abstract class IterableBase[T] protected () extends AsyncIterableIterator[T] {
+  abstract class IterableBase[T] protected ()
+    extends StObject
+       with AsyncIterableIterator[T] {
     def this(core: AsyncIterableIterator[T]) = this()
     
     val core: js.Any = js.native

@@ -6,10 +6,13 @@ import typings.node.tlsMod.ConnectionOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelCredentialsMod {
+  
+  @JSImport("@grpc/grpc-js/build/src/channel-credentials", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@grpc/grpc-js/build/src/channel-credentials", "ChannelCredentials")
   @js.native
@@ -53,12 +56,15 @@ object channelCredentialsMod {
   /* static members */
   object ChannelCredentials {
     
+    @JSImport("@grpc/grpc-js/build/src/channel-credentials", "ChannelCredentials")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Return a new ChannelCredentials instance with no credentials.
       */
-    @JSImport("@grpc/grpc-js/build/src/channel-credentials", "ChannelCredentials.createInsecure")
-    @js.native
-    def createInsecure(): ChannelCredentials = js.native
+    @scala.inline
+    def createInsecure(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[ChannelCredentials]
     
     /**
       * Return a new ChannelCredentials instance with a given set of credentials.
@@ -68,27 +74,24 @@ object channelCredentialsMod {
       * @param privateKey The client certificate private key, if available.
       * @param certChain The client certificate key chain, if available.
       */
-    @JSImport("@grpc/grpc-js/build/src/channel-credentials", "ChannelCredentials.createSsl")
-    @js.native
+    @scala.inline
     def createSsl(
       rootCerts: js.UndefOr[Buffer | Null],
       privateKey: js.UndefOr[Buffer | Null],
       certChain: js.UndefOr[Buffer | Null],
       verifyOptions: js.UndefOr[VerifyOptions]
-    ): ChannelCredentials = js.native
+    ): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
   }
   
-  @JSImport("@grpc/grpc-js/build/src/channel-credentials", "createGoogleDefaultCredentials")
-  @js.native
-  def createGoogleDefaultCredentials(): ChannelCredentials = js.native
+  @scala.inline
+  def createGoogleDefaultCredentials(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createGoogleDefaultCredentials")().asInstanceOf[ChannelCredentials]
   
-  @js.native
   trait Certificate extends StObject {
     
     /**
       * The raw certificate in DER form.
       */
-    var raw: Buffer = js.native
+    var raw: Buffer
   }
   object Certificate {
     
@@ -108,14 +111,13 @@ object channelCredentialsMod {
   
   type CheckServerIdentityCallback = js.Function2[/* hostname */ String, /* cert */ Certificate, js.UndefOr[Error]]
   
-  @js.native
   trait VerifyOptions extends StObject {
     
     /**
       * If set, this callback will be invoked after the usual hostname verification
       * has been performed on the peer certificate.
       */
-    var checkServerIdentity: js.UndefOr[CheckServerIdentityCallback] = js.native
+    var checkServerIdentity: js.UndefOr[CheckServerIdentityCallback] = js.undefined
   }
   object VerifyOptions {
     

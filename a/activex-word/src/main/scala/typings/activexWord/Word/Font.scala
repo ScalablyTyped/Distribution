@@ -4,128 +4,126 @@ import typings.activexWord.activexWordNumbers.`9999998`
 import typings.activexWord.activexWordNumbers.`9999999`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  var AllCaps: Boolean | `9999999` | `9999998` = js.native
+  var AllCaps: Boolean | `9999999` | `9999998`
   
-  var Animation: WdAnimation = js.native
+  var Animation: WdAnimation
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Bold: Boolean | `9999999` | `9999998` = js.native
+  var Bold: Boolean | `9999999` | `9999998`
   
-  var BoldBi: Boolean | `9999999` | `9999998` = js.native
+  var BoldBi: Boolean | `9999999` | `9999998`
   
-  var Borders: typings.activexWord.Word.Borders = js.native
+  var Borders: typings.activexWord.Word.Borders
   
-  var Color: WdColor = js.native
+  var Color: WdColor
   
-  var ColorIndex: WdColorIndex = js.native
+  var ColorIndex: WdColorIndex
   
-  var ColorIndexBi: WdColorIndex = js.native
+  var ColorIndexBi: WdColorIndex
   
-  var ContextualAlternates: Double = js.native
+  var ContextualAlternates: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DiacriticColor: WdColor = js.native
+  var DiacriticColor: WdColor
   
-  var DisableCharacterSpaceGrid: Boolean = js.native
+  var DisableCharacterSpaceGrid: Boolean
   
-  var DoubleStrikeThrough: Double = js.native
+  var DoubleStrikeThrough: Double
   
-  val Duplicate: Font = js.native
+  val Duplicate: Font
   
-  var Emboss: Boolean | `9999999` | `9999998` = js.native
+  var Emboss: Boolean | `9999999` | `9999998`
   
-  var EmphasisMark: WdEmphasisMark = js.native
+  var EmphasisMark: WdEmphasisMark
   
-  var Engrave: Boolean | `9999999` | `9999998` = js.native
+  var Engrave: Boolean | `9999999` | `9999998`
   
-  var Fill: FillFormat = js.native
+  var Fill: FillFormat
   
-  var Glow: GlowFormat = js.native
+  var Glow: GlowFormat
   
-  def Grow(): Unit = js.native
+  def Grow(): Unit
   
-  var Hidden: Double = js.native
+  var Hidden: Double
   
-  var Italic: Boolean | `9999999` | `9999998` = js.native
+  var Italic: Boolean | `9999999` | `9999998`
   
-  var ItalicBi: Boolean | `9999999` | `9999998` = js.native
+  var ItalicBi: Boolean | `9999999` | `9999998`
   
-  var Kerning: Double = js.native
+  var Kerning: Double
   
-  var Ligatures: WdLigatures = js.native
+  var Ligatures: WdLigatures
   
-  var Line: LineFormat = js.native
+  var Line: LineFormat
   
-  var Name: String = js.native
+  var Name: String
   
-  var NameAscii: String = js.native
+  var NameAscii: String
   
-  var NameBi: String = js.native
+  var NameBi: String
   
-  var NameFarEast: String = js.native
+  var NameFarEast: String
   
-  var NameOther: String = js.native
+  var NameOther: String
   
-  var NumberForm: WdNumberForm = js.native
+  var NumberForm: WdNumberForm
   
-  var NumberSpacing: WdNumberSpacing = js.native
+  var NumberSpacing: WdNumberSpacing
   
-  var Outline: Double = js.native
+  var Outline: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: Double = js.native
+  var Position: Double
   
-  var Reflection: ReflectionFormat = js.native
+  var Reflection: ReflectionFormat
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  var Scaling: Double = js.native
+  var Scaling: Double
   
-  def SetAsTemplateDefault(): Unit = js.native
+  def SetAsTemplateDefault(): Unit
   
-  val Shading: typings.activexWord.Word.Shading = js.native
+  val Shading: typings.activexWord.Word.Shading
   
-  var Shadow: Double = js.native
+  var Shadow: Double
   
-  def Shrink(): Unit = js.native
+  def Shrink(): Unit
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var SizeBi: Double = js.native
+  var SizeBi: Double
   
-  var SmallCaps: Boolean | `9999999` | `9999998` = js.native
+  var SmallCaps: Boolean | `9999999` | `9999998`
   
-  var Spacing: Double = js.native
+  var Spacing: Double
   
-  var StrikeThrough: Double = js.native
+  var StrikeThrough: Double
   
-  var StylisticSet: WdStylisticSet = js.native
+  var StylisticSet: WdStylisticSet
   
-  var Subscript: Boolean | `9999999` | `9999998` = js.native
+  var Subscript: Boolean | `9999999` | `9999998`
   
-  var Superscript: Boolean | `9999999` | `9999998` = js.native
+  var Superscript: Boolean | `9999999` | `9999998`
   
-  val TextColor: ColorFormat = js.native
+  val TextColor: ColorFormat
   
-  var TextShadow: ShadowFormat = js.native
+  var TextShadow: ShadowFormat
   
-  var ThreeD: ThreeDFormat = js.native
+  var ThreeD: ThreeDFormat
   
-  var Underline: WdUnderline = js.native
+  var Underline: WdUnderline
   
-  var UnderlineColor: WdColor = js.native
+  var UnderlineColor: WdColor
   
   @JSName("Word.Font_typekey")
-  var WordDotFont_typekey: Font = js.native
+  var WordDotFont_typekey: Font
 }
 object Font {
   

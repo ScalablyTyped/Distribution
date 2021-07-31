@@ -2,21 +2,19 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentCollection extends StObject {
   
-  var ConsumedCapacity: typings.dynogels.mod.ConsumedCapacity = js.native
+  var ConsumedCapacity: typings.dynogels.mod.ConsumedCapacity
   
-  var Count: Double = js.native
+  var Count: Double
   
-  var Items: js.Array[Document] = js.native
+  var Items: js.Array[Document]
   
-  var LastEvaluatedKey: js.UndefOr[js.Any] = js.native
+  var LastEvaluatedKey: js.UndefOr[js.Any] = js.undefined
   
-  var ScannedCount: Double = js.native
+  var ScannedCount: Double
 }
 object DocumentCollection {
   

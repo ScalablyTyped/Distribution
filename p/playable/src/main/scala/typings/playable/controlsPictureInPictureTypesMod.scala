@@ -6,21 +6,19 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlsPictureInPictureTypesMod {
   
-  @js.native
   trait IPictureInPictureControl extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IPictureInPictureControl {
     
@@ -47,10 +45,9 @@ object controlsPictureInPictureTypesMod {
     }
   }
   
-  @js.native
   trait IPictureInPictureViewCallbacks extends StObject {
     
-    def onButtonClick(): Unit = js.native
+    def onButtonClick(): Unit
   }
   object IPictureInPictureViewCallbacks {
     
@@ -68,16 +65,15 @@ object controlsPictureInPictureTypesMod {
     }
   }
   
-  @js.native
   trait IPictureInPictureViewConfig extends StObject {
     
-    var callbacks: IPictureInPictureViewCallbacks = js.native
+    var callbacks: IPictureInPictureViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object IPictureInPictureViewConfig {
     
@@ -109,18 +105,17 @@ object controlsPictureInPictureTypesMod {
     }
   }
   
-  @js.native
   trait IPictureInPictureViewStyles extends StObject {
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var inPictureInPicture: String = js.native
+    var inPictureInPicture: String
     
-    var pictureInPictureControl: String = js.native
+    var pictureInPictureControl: String
     
-    var pictureInPictureToggle: String = js.native
+    var pictureInPictureToggle: String
   }
   object IPictureInPictureViewStyles {
     

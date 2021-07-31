@@ -2,17 +2,15 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Triple extends StObject {
   
-  var `object`: Term = js.native
+  var `object`: Term
   
-  var predicate: IriTerm | VariableTerm | PropertyPath = js.native
+  var predicate: IriTerm | VariableTerm | PropertyPath
   
-  var subject: IriTerm | BlankTerm | VariableTerm | QuadTerm = js.native
+  var subject: IriTerm | BlankTerm | VariableTerm | QuadTerm
 }
 object Triple {
   

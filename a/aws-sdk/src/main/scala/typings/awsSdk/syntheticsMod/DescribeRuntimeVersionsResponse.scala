@@ -2,21 +2,19 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRuntimeVersionsResponse extends StObject {
   
   /**
     * A token that indicates that there is more data available. You can use this token in a subsequent DescribeRuntimeVersions operation to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * An array of objects that display the details about each Synthetics canary runtime version.
     */
-  var RuntimeVersions: js.UndefOr[RuntimeVersionList] = js.native
+  var RuntimeVersions: js.UndefOr[RuntimeVersionList] = js.undefined
 }
 object DescribeRuntimeVersionsResponse {
   

@@ -2,33 +2,31 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataItem extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var content: String = js.native
+  var content: String
   
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[DateType] = js.native
+  var end: js.UndefOr[DateType] = js.undefined
   
-  var group: js.UndefOr[js.Any] = js.native
+  var group: js.UndefOr[js.Any] = js.undefined
   
-  var id: js.UndefOr[IdType] = js.native
+  var id: js.UndefOr[IdType] = js.undefined
   
-  var start: DateType = js.native
+  var start: DateType
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var subgroup: js.UndefOr[SubgroupType] = js.native
+  var subgroup: js.UndefOr[SubgroupType] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DataItem {
   

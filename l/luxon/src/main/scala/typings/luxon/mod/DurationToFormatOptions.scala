@@ -2,16 +2,15 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationToFormatOptions
-  extends typings.std.Intl.DateTimeFormatOptions {
+  extends StObject
+     with typings.std.Intl.DateTimeFormatOptions {
   
-  var floor: js.UndefOr[Boolean] = js.native
+  var floor: js.UndefOr[Boolean] = js.undefined
   
-  var round: js.UndefOr[Boolean] = js.native
+  var round: js.UndefOr[Boolean] = js.undefined
 }
 object DurationToFormatOptions {
   

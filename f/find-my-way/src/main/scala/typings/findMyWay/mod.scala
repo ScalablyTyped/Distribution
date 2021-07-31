@@ -8,17 +8,18 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[V /* <: HTTPVersion */](): Instance[V] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance[V]]
+  @scala.inline
+  def apply[V /* <: HTTPVersion */](config: Config[V]): Instance[V] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Instance[V]]
+  
   @JSImport("find-my-way", JSImport.Namespace)
   @js.native
-  def apply[V /* <: HTTPVersion */](): Instance[V] = js.native
-  @JSImport("find-my-way", JSImport.Namespace)
-  @js.native
-  def apply[V /* <: HTTPVersion */](config: Config[V]): Instance[V] = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait HTTPVersion extends StObject
@@ -27,33 +28,36 @@ object mod {
   object HTTPVersion extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[HTTPVersion with String] = js.native
+    def apply(value: String): js.UndefOr[HTTPVersion & String] = js.native
     
     @js.native
-    sealed trait V1 extends HTTPVersion
-    /* "http1" */ val V1: typings.findMyWay.mod.HTTPVersion.V1 with String = js.native
+    sealed trait V1
+      extends StObject
+         with HTTPVersion
+    /* "http1" */ val V1: typings.findMyWay.mod.HTTPVersion.V1 & String = js.native
     
     @js.native
-    sealed trait V2 extends HTTPVersion
-    /* "http2" */ val V2: typings.findMyWay.mod.HTTPVersion.V2 with String = js.native
+    sealed trait V2
+      extends StObject
+         with HTTPVersion
+    /* "http2" */ val V2: typings.findMyWay.mod.HTTPVersion.V2 & String = js.native
   }
   
-  @js.native
   trait Config[V /* <: HTTPVersion */] extends StObject {
     
-    var allowUnsafeRegex: js.UndefOr[Boolean] = js.native
+    var allowUnsafeRegex: js.UndefOr[Boolean] = js.undefined
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var defaultRoute: js.UndefOr[js.Function2[/* req */ Req[V], /* res */ Res[V], Unit]] = js.native
+    var defaultRoute: js.UndefOr[js.Function2[/* req */ Req[V], /* res */ Res[V], Unit]] = js.undefined
     
-    var ignoreTrailingSlash: js.UndefOr[Boolean] = js.native
+    var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
-    var maxParamLength: js.UndefOr[Double] = js.native
+    var maxParamLength: js.UndefOr[Double] = js.undefined
     
-    var onBadUrl: js.UndefOr[js.Function3[/* path */ String, /* req */ Req[V], /* res */ Res[V], Unit]] = js.native
+    var onBadUrl: js.UndefOr[js.Function3[/* path */ String, /* req */ Req[V], /* res */ Res[V], Unit]] = js.undefined
     
-    var versioning: js.UndefOr[DeriveVersion[V]] = js.native
+    var versioning: js.UndefOr[DeriveVersion[V]] = js.undefined
   }
   object Config {
     
@@ -64,7 +68,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_], V /* <: HTTPVersion */] (val x: Self with Config[V]) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?], V /* <: HTTPVersion */] (val x: Self & Config[V]) extends AnyVal {
       
       @scala.inline
       def setAllowUnsafeRegex(value: Boolean): Self = StObject.set(x, "allowUnsafeRegex", value.asInstanceOf[js.Any])
@@ -110,16 +114,42 @@ object mod {
     }
   }
   
-  @js.native
   trait FindResult[V /* <: HTTPVersion */] extends StObject {
     
-    def handler(req: Req[V], res: Res[V], params: StringDictionary[js.UndefOr[String]], store: js.Any): Unit = js.native
+    def handler(req: Req[V], res: Res[V], params: StringDictionary[js.UndefOr[String]], store: js.Any): Unit
     @JSName("handler")
-    var handler_Original: Handler[V] = js.native
+    var handler_Original: Handler[V]
     
-    var params: StringDictionary[js.UndefOr[String]] = js.native
+    var params: StringDictionary[js.UndefOr[String]]
     
-    var store: js.Any = js.native
+    var store: js.Any
+  }
+  object FindResult {
+    
+    @scala.inline
+    def apply[V /* <: HTTPVersion */](
+      handler: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ js.Any) => Unit,
+      params: StringDictionary[js.UndefOr[String]],
+      store: js.Any
+    ): FindResult[V] = {
+      val __obj = js.Dynamic.literal(handler = js.Any.fromFunction4(handler), params = params.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FindResult[V]]
+    }
+    
+    @scala.inline
+    implicit class FindResultMutableBuilder[Self <: FindResult[?], V /* <: HTTPVersion */] (val x: Self & FindResult[V]) extends AnyVal {
+      
+      @scala.inline
+      def setHandler(
+        value: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ js.Any) => Unit
+      ): Self = StObject.set(x, "handler", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setParams(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -553,10 +583,9 @@ object mod {
   
   type Res[V] = Http2ServerResponse | ServerResponse
   
-  @js.native
   trait RouteOptions extends StObject {
     
-    var version: String = js.native
+    var version: String
   }
   object RouteOptions {
     

@@ -3,28 +3,27 @@ package typings.saucelabs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Completed
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var completed: js.UndefOr[Double] = js.native
+  var completed: js.UndefOr[Double] = js.undefined
   
-  var errored: js.UndefOr[Double] = js.native
+  var errored: js.UndefOr[Double] = js.undefined
   
-  var failed: js.UndefOr[Double] = js.native
+  var failed: js.UndefOr[Double] = js.undefined
   
-  var finished: js.UndefOr[Double] = js.native
+  var finished: js.UndefOr[Double] = js.undefined
   
-  var passed: js.UndefOr[Double] = js.native
+  var passed: js.UndefOr[Double] = js.undefined
   
-  var public: js.UndefOr[Double] = js.native
+  var public: js.UndefOr[Double] = js.undefined
   
-  var queued: js.UndefOr[Double] = js.native
+  var queued: js.UndefOr[Double] = js.undefined
   
-  var running: js.UndefOr[Double] = js.native
+  var running: js.UndefOr[Double] = js.undefined
 }
 object Completed {
   

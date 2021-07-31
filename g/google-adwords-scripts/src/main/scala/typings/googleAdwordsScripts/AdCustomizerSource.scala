@@ -2,19 +2,19 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdCustomizerSource extends AdWordsEntity {
+trait AdCustomizerSource
+  extends StObject
+     with AdWordsEntity {
   
-  def adCustomizerItemBuilder(): AdCustomizerItemBuilder[AdCustomizerItem] = js.native
+  def adCustomizerItemBuilder(): AdCustomizerItemBuilder[AdCustomizerItem]
   
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Object
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def items(): AdWordsSelector[AdCustomizerItem] = js.native
+  def items(): AdWordsSelector[AdCustomizerItem]
 }
 object AdCustomizerSource {
   

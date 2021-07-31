@@ -5,95 +5,61 @@ import typings.istextorbinary.istextorbinaryStrings.utf8
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("istextorbinary", "getEncoding")
+  @JSImport("istextorbinary", JSImport.Namespace)
   @js.native
-  def getEncoding(
-    buffer: Buffer,
-    opts: js.UndefOr[scala.Nothing],
-    next: js.Function2[/* err */ Null, /* result */ utf8 | binary, Unit]
-  ): Unit = js.native
-  @JSImport("istextorbinary", "getEncoding")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getEncoding(buffer: Buffer, opts: Unit, next: js.Function2[/* err */ Null, /* result */ utf8 | binary, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getEncoding(
     buffer: Buffer,
     opts: Options,
     next: js.Function2[/* err */ Null, /* result */ utf8 | binary, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("istextorbinary", "getEncodingSync")
-  @js.native
-  def getEncodingSync(buffer: Buffer): utf8 | binary = js.native
-  @JSImport("istextorbinary", "getEncodingSync")
-  @js.native
-  def getEncodingSync(buffer: Buffer, opts: Options): utf8 | binary = js.native
+  @scala.inline
+  def getEncodingSync(buffer: Buffer): utf8 | binary = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncodingSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[utf8 | binary]
+  @scala.inline
+  def getEncodingSync(buffer: Buffer, opts: Options): utf8 | binary = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncodingSync")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[utf8 | binary]
   
-  @JSImport("istextorbinary", "isBinary")
-  @js.native
-  def isBinary(
-    filename: js.UndefOr[scala.Nothing],
-    buffer: Buffer,
-    next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]
-  ): Unit = js.native
-  @JSImport("istextorbinary", "isBinary")
-  @js.native
-  def isBinary(
-    filename: String,
-    buffer: js.UndefOr[scala.Nothing],
-    next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]
-  ): Unit = js.native
-  @JSImport("istextorbinary", "isBinary")
-  @js.native
-  def isBinary(filename: String, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isBinary(filename: String, buffer: Unit, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def isBinary(filename: String, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def isBinary(filename: Unit, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("istextorbinary", "isBinarySync")
-  @js.native
-  def isBinarySync(filename: js.UndefOr[scala.Nothing], buffer: Buffer): Boolean = js.native
-  @JSImport("istextorbinary", "isBinarySync")
-  @js.native
-  def isBinarySync(filename: String): Boolean = js.native
-  @JSImport("istextorbinary", "isBinarySync")
-  @js.native
-  def isBinarySync(filename: String, buffer: Buffer): Boolean = js.native
+  @scala.inline
+  def isBinarySync(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinarySync")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isBinarySync(filename: String, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinarySync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isBinarySync(filename: Unit, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinarySync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("istextorbinary", "isText")
-  @js.native
-  def isText(
-    filename: js.UndefOr[scala.Nothing],
-    buffer: Buffer,
-    next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]
-  ): Unit = js.native
-  @JSImport("istextorbinary", "isText")
-  @js.native
-  def isText(
-    filename: String,
-    buffer: js.UndefOr[scala.Nothing],
-    next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]
-  ): Unit = js.native
-  @JSImport("istextorbinary", "isText")
-  @js.native
-  def isText(filename: String, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isText(filename: String, buffer: Unit, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def isText(filename: String, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def isText(filename: Unit, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("istextorbinary", "isTextSync")
-  @js.native
-  def isTextSync(filename: js.UndefOr[scala.Nothing], buffer: Buffer): Boolean = js.native
-  @JSImport("istextorbinary", "isTextSync")
-  @js.native
-  def isTextSync(filename: String): Boolean = js.native
-  @JSImport("istextorbinary", "isTextSync")
-  @js.native
-  def isTextSync(filename: String, buffer: Buffer): Boolean = js.native
+  @scala.inline
+  def isTextSync(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isTextSync(filename: String, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTextSync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isTextSync(filename: Unit, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTextSync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var chunkBegin: js.UndefOr[Double] = js.native
+    var chunkBegin: js.UndefOr[Double] = js.undefined
     
-    var chunkLength: js.UndefOr[Double] = js.native
+    var chunkLength: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerConnectionDraining extends StObject {
   
   /**
     * Indicates whether connection draining is enabled for the load balancer.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum time, in seconds, to keep the existing connections open before deregistering the instances.
     */
-  var Timeout: js.UndefOr[Integer] = js.native
+  var Timeout: js.UndefOr[Integer] = js.undefined
 }
 object AwsElbLoadBalancerConnectionDraining {
   

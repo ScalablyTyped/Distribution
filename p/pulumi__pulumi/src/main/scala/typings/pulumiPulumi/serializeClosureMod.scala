@@ -3,32 +3,30 @@ package typings.pulumiPulumi
 import typings.pulumiPulumi.resourceMod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serializeClosureMod {
   
-  @JSImport("@pulumi/pulumi/runtime/closure/serializeClosure", "serializeFunction")
+  @JSImport("@pulumi/pulumi/runtime/closure/serializeClosure", JSImport.Namespace)
   @js.native
-  def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = js.native
-  @JSImport("@pulumi/pulumi/runtime/closure/serializeClosure", "serializeFunction")
-  @js.native
-  def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@pulumi/pulumi/runtime/closure/serializeClosure", "serializeFunctionAsync")
-  @js.native
-  def serializeFunctionAsync(func: js.Function): js.Promise[String] = js.native
-  @JSImport("@pulumi/pulumi/runtime/closure/serializeClosure", "serializeFunctionAsync")
-  @js.native
-  def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = js.native
+  @scala.inline
+  def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SerializedFunction]]
+  @scala.inline
+  def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SerializedFunction]]
   
-  @js.native
+  @scala.inline
+  def serializeFunctionAsync(func: js.Function): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any], serialize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   trait SerializeFunctionArgs extends StObject {
     
     /**
       * The name to export from the module defined by the generated module text.  Defaults to 'handler'.
       */
-    var exportName: js.UndefOr[String] = js.native
+    var exportName: js.UndefOr[String] = js.undefined
     
     /**
       * If this is a function which, when invoked, will produce the actual entrypoint function.
@@ -40,18 +38,18 @@ object serializeClosureMod {
       * In other words, the function will be invoked (once) and the resulting inner function will
       * be what is exported.
       */
-    var isFactoryFunction: js.UndefOr[Boolean] = js.native
+    var isFactoryFunction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The resource to log any errors we encounter against.
       */
-    var logResource: js.UndefOr[Resource] = js.native
+    var logResource: js.UndefOr[Resource] = js.undefined
     
     /**
       * A function to prevent serialization of certain objects captured during the serialization.  Primarily used to
       * prevent potential cycles.
       */
-    var serialize: js.UndefOr[js.Function1[/* o */ js.Any, Boolean]] = js.native
+    var serialize: js.UndefOr[js.Function1[/* o */ js.Any, Boolean]] = js.undefined
   }
   object SerializeFunctionArgs {
     
@@ -90,20 +88,19 @@ object serializeClosureMod {
     }
   }
   
-  @js.native
   trait SerializedFunction extends StObject {
     
     /**
       * The name of the exported module member.
       */
-    var exportName: String = js.native
+    var exportName: String
     
     /**
       * The text of a JavaScript module which exports a single name bound to an appropriate value.
       * In the case of a normal function, this value will just be serialized function.  In the case
       * of a factory function this value will be the result of invoking the factory function.
       */
-    var text: String = js.native
+    var text: String
   }
   object SerializedFunction {
     

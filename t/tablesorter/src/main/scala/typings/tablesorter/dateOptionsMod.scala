@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateOptionsMod {
   
-  @js.native
   trait DateOptions extends StObject {
     
     /**
       * A value indicating whether the filter's time-value should be set to the end of the day.
       */
-    var endOfDay: js.UndefOr[Boolean] = js.native
+    var endOfDay: js.UndefOr[Boolean] = js.undefined
   }
   object DateOptions {
     

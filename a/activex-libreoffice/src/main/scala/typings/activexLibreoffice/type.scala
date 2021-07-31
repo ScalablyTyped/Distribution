@@ -2,13 +2,11 @@ package typings.activexLibreoffice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `type` extends StObject {
   
-  var typekey: `type` = js.native
+  var typekey: `type`
 }
 object `type` {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,36 +14,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * possessive genitive case month names and sequences of {@link CalendarItem2} items..
   * @since LibreOffice 3.5
   */
-@js.native
-trait XCalendar3 extends XExtendedCalendar {
+trait XCalendar3
+  extends StObject
+     with XExtendedCalendar {
   
   /** returns a sequence of {@link CalendarItem2} describing the day names. */
-  val Days2: SafeArray[CalendarItem2] = js.native
+  val Days2: SafeArray[CalendarItem2]
   
   /** returns a sequence of {@link CalendarItem2} describing the genitive case month names. */
-  val GenitiveMonths2: SafeArray[CalendarItem2] = js.native
+  val GenitiveMonths2: SafeArray[CalendarItem2]
   
-  val LoadedCalendar2: Calendar2 = js.native
+  val LoadedCalendar2: Calendar2
   
   /** returns a sequence of {@link CalendarItem2} describing the month names. */
-  val Months2: SafeArray[CalendarItem2] = js.native
+  val Months2: SafeArray[CalendarItem2]
   
   /** returns a sequence of {@link CalendarItem2} describing the partitive case month names. */
-  val PartitiveMonths2: SafeArray[CalendarItem2] = js.native
+  val PartitiveMonths2: SafeArray[CalendarItem2]
   
   /** returns a sequence of {@link CalendarItem2} describing the day names. */
-  def getDays2(): SafeArray[CalendarItem2] = js.native
+  def getDays2(): SafeArray[CalendarItem2]
   
   /** returns a sequence of {@link CalendarItem2} describing the genitive case month names. */
-  def getGenitiveMonths2(): SafeArray[CalendarItem2] = js.native
+  def getGenitiveMonths2(): SafeArray[CalendarItem2]
   
-  def getLoadedCalendar2(): Calendar2 = js.native
+  def getLoadedCalendar2(): Calendar2
   
   /** returns a sequence of {@link CalendarItem2} describing the month names. */
-  def getMonths2(): SafeArray[CalendarItem2] = js.native
+  def getMonths2(): SafeArray[CalendarItem2]
   
   /** returns a sequence of {@link CalendarItem2} describing the partitive case month names. */
-  def getPartitiveMonths2(): SafeArray[CalendarItem2] = js.native
+  def getPartitiveMonths2(): SafeArray[CalendarItem2]
 }
 object XCalendar3 {
   

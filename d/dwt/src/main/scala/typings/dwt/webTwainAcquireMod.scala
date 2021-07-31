@@ -21,23 +21,21 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTUnitType
 import typings.dwt.webTwainEditMod.WebTwainEdit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webTwainAcquireMod {
   
-  @js.native
   trait Capabilities extends StObject {
     
     /**
       * Specifies how to set capabilities
       */
-    var capabilities: js.Array[CapabilitySetup] = js.native
+    var capabilities: js.Array[CapabilitySetup]
     
     /**
       * Whether to "ignore" or "fail" the request if an exception occurs. This is an overall setting that is inherited by all capabilities.
       */
-    var exceptition: String = js.native
+    var exceptition: String
   }
   object Capabilities {
     
@@ -61,38 +59,37 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait CapabilityDetails extends StObject {
     
     /**
       * The Capability.
       */
-    var capability: ValueAndLabel = js.native
+    var capability: ValueAndLabel
     
     /**
       * The container type of the Capability
       */
-    var conType: ValueAndLabel = js.native
+    var conType: ValueAndLabel
     
     /**
       * The index for the current value of the Capability
       */
-    var curIndex: Double = js.native
+    var curIndex: Double
     
     /**
       * The current value of the Capability
       */
-    var curValue: ValueAndLabel = js.native
+    var curValue: ValueAndLabel
     
     /**
       * The index for the default value of the Capability
       */
-    var defIndex: Double = js.native
+    var defIndex: Double
     
     /**
       * The operation types that are supported by the Capability. Types include {"get", "set", "reset" "getdefault", "getcurrent"}
       */
-    var query: js.Array[String] = js.native
+    var query: js.Array[String]
     
     /**
       * The value type of the Capability. Value types include
@@ -110,12 +107,12 @@ object webTwainAcquireMod {
       * TWTY_UINT16: 4
       * TWTY_int: 5
       */
-    var valueType: ValueAndLabel = js.native
+    var valueType: ValueAndLabel
     
     /**
       * The available values of the Capability
       */
-    var values: js.Array[ValueAndLabel] = js.native
+    var values: js.Array[ValueAndLabel]
   }
   object CapabilityDetails {
     
@@ -169,27 +166,26 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait CapabilitySetup extends StObject {
     
     /**
       * Specify a capability
       */
-    var capability: EnumDWTCap | Double = js.native
+    var capability: EnumDWTCap | Double
     
     /**
       * The value to set to the capability or the value of the capability after setting.
       */
-    var curValue: Double | String = js.native
+    var curValue: Double | String
     
-    var errorCode: js.UndefOr[Double] = js.native
+    var errorCode: js.UndefOr[Double] = js.undefined
     
-    var errorString: js.UndefOr[String] = js.native
+    var errorString: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to "ignore" or "fail" the request if an exception occurs when setting this specific capability.
       */
-    var exception: js.UndefOr[String] = js.native
+    var exception: js.UndefOr[String] = js.undefined
   }
   object CapabilitySetup {
     
@@ -228,53 +224,52 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait DeviceConfiguration extends StObject {
     
     /**
       * Whether to close the built-in User Interface after aquisition. Only valid when {IfShowUI} is true.
       */
-    var IfDisableSourceAfterAcquire: js.UndefOr[Boolean] = js.native
+    var IfDisableSourceAfterAcquire: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to scan one side or both sides of each paper.
       */
-    var IfDuplexEnabled: js.UndefOr[Boolean] = js.native
+    var IfDuplexEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use the document feeder or the flatbed of the device.
       */
-    var IfFeederEnabled: js.UndefOr[Boolean] = js.native
+    var IfFeederEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to retrieve extended information about the image after it's transferred.
       */
-    var IfGetExtImageInfo: js.UndefOr[Boolean] = js.native
+    var IfGetExtImageInfo: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to retrieve information about the image after it's transferred.
       */
-    var IfGetImageInfo: js.UndefOr[Boolean] = js.native
+    var IfGetImageInfo: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the built-in User Interface from the device vendor
       */
-    var IfShowUI: js.UndefOr[Boolean] = js.native
+    var IfShowUI: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How a pixel is represented. Basically it means whether to scan in color, grey or black & white
       */
-    var PixelType: js.UndefOr[EnumDWTPixelType | Double | String] = js.native
+    var PixelType: js.UndefOr[EnumDWTPixelType | Double | String] = js.undefined
     
     /**
       * How detailed is the acquisition. Measured by dots per pixel (DPI)
       */
-    var Resolution: js.UndefOr[Double] = js.native
+    var Resolution: js.UndefOr[Double] = js.undefined
     
     /**
       * How much extended information is retrieved. Only valid when {IfGetExtImageInfo} is true.
       */
-    var extendedImageInfoQueryLevel: js.UndefOr[Double] = js.native
+    var extendedImageInfoQueryLevel: js.UndefOr[Double] = js.undefined
   }
   object DeviceConfiguration {
     
@@ -343,62 +338,61 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait ScanSetup extends StObject {
     
     /**
       * Whether to ignore or fail the acquistion when an exception is raised. Set "ignore" or "fail".
       */
-    var exception: js.UndefOr[String] = js.native
+    var exception: js.UndefOr[String] = js.undefined
     
     /**
       * Set how the transfer is done.
       */
-    var fileXfer: js.UndefOr[CompressionType] = js.native
+    var fileXfer: js.UndefOr[CompressionType] = js.undefined
     
     /**
       * A callback triggered before the scan, after the scan and after each page has been transferred.
       */
-    var funcScanStatus: js.UndefOr[js.Function1[/* status */ Status, Unit]] = js.native
+    var funcScanStatus: js.UndefOr[js.Function1[/* status */ Status, Unit]] = js.undefined
     
     /**
       * Set where the scanned images are inserted.
       */
-    var insertingIndex: js.UndefOr[Double] = js.native
+    var insertingIndex: js.UndefOr[Double] = js.undefined
     
-    var moreSettings: js.UndefOr[AutoBorderDetection] = js.native
+    var moreSettings: js.UndefOr[AutoBorderDetection] = js.undefined
     
     /**
       * Set up how the scanned images are outputted.
       */
-    var outputSetup: js.UndefOr[Format] = js.native
+    var outputSetup: js.UndefOr[Format] = js.undefined
     
     /**
       * The profile is a base64 string, if present, it overrides settings and more settings.
       */
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the data source (the scanner). If not set, the default data source is used.
       */
-    var scanner: js.UndefOr[String] = js.native
+    var scanner: js.UndefOr[String] = js.undefined
     
     /**
       * Basic settings.
       */
-    var settings: js.UndefOr[BDuplex] = js.native
+    var settings: js.UndefOr[BDuplex] = js.undefined
     
     /**
       * An id that specifies this specific setup.
       */
-    var setupId: js.UndefOr[String] = js.native
+    var setupId: js.UndefOr[String] = js.undefined
     
     /**
       * The TWAIN transfer mode.
       */
-    var transferMode: js.UndefOr[EnumDWTTransferMode | Double] = js.native
+    var transferMode: js.UndefOr[EnumDWTTransferMode | Double] = js.undefined
     
-    var ui: js.UndefOr[BShowIndicator] = js.native
+    var ui: js.UndefOr[BShowIndicator] = js.undefined
   }
   object ScanSetup {
     
@@ -485,60 +479,59 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait SourceDetails extends StObject {
     
     /**
       * Information about the driver if it's DriverType is "ICA"
       */
-    var DeviceInfo: js.UndefOr[js.Any] = js.native
+    var DeviceInfo: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The driver type which can be "TWAIN" | "ICA" | "SANE"
       */
-    var DriverType: js.UndefOr[String] = js.native
+    var DriverType: js.UndefOr[String] = js.undefined
     
     /**
       * Whether it is the current source.
       */
-    var IsCurrentSource: js.UndefOr[Boolean] = js.native
+    var IsCurrentSource: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether it is the default source.
       */
-    var IsDefaultSource: js.UndefOr[Boolean] = js.native
+    var IsDefaultSource: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The manufacturer of the data source. E.g. "TWAIN Working Group".
       */
-    var Manufacturer: js.UndefOr[String] = js.native
+    var Manufacturer: js.UndefOr[String] = js.undefined
     
     /**
       * The family name of the data source. E.g. "Software Scan".
       */
-    var ProductFamily: js.UndefOr[String] = js.native
+    var ProductFamily: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the data source. E.g. "TWAIN2 FreeImage Software Scanner".
       */
-    var ProductName: js.UndefOr[String] = js.native
+    var ProductName: js.UndefOr[String] = js.undefined
     
     /**
       * The version of the protocol based on which the data source is developed.
       */
-    var ProtocolMajor: js.UndefOr[Double] = js.native
+    var ProtocolMajor: js.UndefOr[Double] = js.undefined
     
-    var ProtocolMinor: js.UndefOr[Double] = js.native
+    var ProtocolMinor: js.UndefOr[Double] = js.undefined
     
     /**
       * Supported Groups
       */
-    var SupportedGroups: js.UndefOr[Double] = js.native
+    var SupportedGroups: js.UndefOr[Double] = js.undefined
     
     /**
       * Detailed version of the data source.
       */
-    var Version: js.UndefOr[typings.dwt.webTwainAcquireMod.Version] = js.native
+    var Version: js.UndefOr[typings.dwt.webTwainAcquireMod.Version] = js.undefined
   }
   object SourceDetails {
     
@@ -619,14 +612,13 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait Status extends StObject {
     
-    var bScanCompleted: js.UndefOr[Boolean] = js.native
+    var bScanCompleted: js.UndefOr[Boolean] = js.undefined
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var result: js.UndefOr[CurrentPageNum] = js.native
+    var result: js.UndefOr[CurrentPageNum] = js.undefined
   }
   object Status {
     
@@ -659,14 +651,13 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait TiffTag extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var tagIdentifier: js.UndefOr[Double] = js.native
+    var tagIdentifier: js.UndefOr[Double] = js.undefined
     
-    var useBase64Encoding: js.UndefOr[Boolean] = js.native
+    var useBase64Encoding: js.UndefOr[Boolean] = js.undefined
   }
   object TiffTag {
     
@@ -699,18 +690,17 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait ValueAndLabel extends StObject {
     
     /**
       * Label or name of the item
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * Numeric representation of the item
       */
-    var value: EnumDWTCap | EnumDWTCapType | EnumDWTCapValueType | Double = js.native
+    var value: EnumDWTCap | EnumDWTCapType | EnumDWTCapValueType | Double
   }
   object ValueAndLabel {
     
@@ -731,18 +721,17 @@ object webTwainAcquireMod {
     }
   }
   
-  @js.native
   trait Version extends StObject {
     
-    var Country: js.UndefOr[Double] = js.native
+    var Country: js.UndefOr[Double] = js.undefined
     
-    var Info: js.UndefOr[String] = js.native
+    var Info: js.UndefOr[String] = js.undefined
     
-    var Language: js.UndefOr[Double] = js.native
+    var Language: js.UndefOr[Double] = js.undefined
     
-    var MajorNum: js.UndefOr[Double] = js.native
+    var MajorNum: js.UndefOr[Double] = js.undefined
     
-    var MinorNum: js.UndefOr[Double] = js.native
+    var MinorNum: js.UndefOr[Double] = js.undefined
   }
   object Version {
     
@@ -788,7 +777,9 @@ object webTwainAcquireMod {
   }
   
   @js.native
-  trait WebTwainAcquire extends WebTwainEdit {
+  trait WebTwainAcquire
+    extends StObject
+       with WebTwainEdit {
     
     /**
       * Start image acquisition.
@@ -799,19 +790,9 @@ object webTwainAcquireMod {
       * @argument errorString The error string.
       */
     def AcquireImage(): Unit = js.native
+    def AcquireImage(deviceConfiguration: Unit, successCallBack: js.Function0[Unit]): Unit = js.native
     def AcquireImage(
-      deviceConfiguration: js.UndefOr[scala.Nothing],
-      successCallBack: js.UndefOr[scala.Nothing],
-      failureCallBack: js.Function3[
-          /* deviceConfiguration */ DeviceConfiguration, 
-          /* errorCode */ Double, 
-          /* errorString */ String, 
-          Unit
-        ]
-    ): Unit = js.native
-    def AcquireImage(deviceConfiguration: js.UndefOr[scala.Nothing], successCallBack: js.Function0[Unit]): Unit = js.native
-    def AcquireImage(
-      deviceConfiguration: js.UndefOr[scala.Nothing],
+      deviceConfiguration: Unit,
       successCallBack: js.Function0[Unit],
       failureCallBack: js.Function3[
           /* deviceConfiguration */ DeviceConfiguration, 
@@ -820,10 +801,9 @@ object webTwainAcquireMod {
           Unit
         ]
     ): Unit = js.native
-    def AcquireImage(deviceConfiguration: DeviceConfiguration): Unit = js.native
     def AcquireImage(
-      deviceConfiguration: DeviceConfiguration,
-      successCallBack: js.UndefOr[scala.Nothing],
+      deviceConfiguration: Unit,
+      successCallBack: Unit,
       failureCallBack: js.Function3[
           /* deviceConfiguration */ DeviceConfiguration, 
           /* errorCode */ Double, 
@@ -831,6 +811,7 @@ object webTwainAcquireMod {
           Unit
         ]
     ): Unit = js.native
+    def AcquireImage(deviceConfiguration: DeviceConfiguration): Unit = js.native
     def AcquireImage(deviceConfiguration: DeviceConfiguration, successCallBack: js.Function0[Unit]): Unit = js.native
     def AcquireImage(
       deviceConfiguration: DeviceConfiguration,
@@ -843,12 +824,22 @@ object webTwainAcquireMod {
         ]
     ): Unit = js.native
     def AcquireImage(
-      successCallBack: js.UndefOr[scala.Nothing],
-      failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+      deviceConfiguration: DeviceConfiguration,
+      successCallBack: Unit,
+      failureCallBack: js.Function3[
+          /* deviceConfiguration */ DeviceConfiguration, 
+          /* errorCode */ Double, 
+          /* errorString */ String, 
+          Unit
+        ]
     ): Unit = js.native
     def AcquireImage(successCallBack: js.Function0[Unit]): Unit = js.native
     def AcquireImage(
       successCallBack: js.Function0[Unit],
+      failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Unit = js.native
+    def AcquireImage(
+      successCallBack: Unit,
       failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Unit = js.native
     
@@ -1407,13 +1398,13 @@ object webTwainAcquireMod {
       * @argument errorString The error string.
       */
     def SelectSource(): Boolean | Unit = js.native
-    def SelectSource(
-      successCallBack: js.UndefOr[scala.Nothing],
-      failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): Boolean | Unit = js.native
     def SelectSource(successCallBack: js.Function0[Unit]): Boolean | Unit = js.native
     def SelectSource(
       successCallBack: js.Function0[Unit],
+      failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): Boolean | Unit = js.native
+    def SelectSource(
+      successCallBack: Unit,
       failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): Boolean | Unit = js.native
     
@@ -1425,13 +1416,13 @@ object webTwainAcquireMod {
       * @argument errorString The error string.
       */
     def SelectSourceAsync(): js.Promise[Boolean] = js.native
-    def SelectSourceAsync(
-      successCallBack: js.UndefOr[scala.Nothing],
-      failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-    ): js.Promise[Boolean] = js.native
     def SelectSourceAsync(successCallBack: js.Function0[Unit]): js.Promise[Boolean] = js.native
     def SelectSourceAsync(
       successCallBack: js.Function0[Unit],
+      failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
+    ): js.Promise[Boolean] = js.native
+    def SelectSourceAsync(
+      successCallBack: Unit,
       failureCallBack: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
     ): js.Promise[Boolean] = js.native
     

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachSecurityProfileRequest extends StObject {
   
   /**
     * The security profile that is detached.
     */
-  var securityProfileName: SecurityProfileName = js.native
+  var securityProfileName: SecurityProfileName
   
   /**
     * The ARN of the thing group from which the security profile is detached.
     */
-  var securityProfileTargetArn: SecurityProfileTargetArn = js.native
+  var securityProfileTargetArn: SecurityProfileTargetArn
 }
 object DetachSecurityProfileRequest {
   

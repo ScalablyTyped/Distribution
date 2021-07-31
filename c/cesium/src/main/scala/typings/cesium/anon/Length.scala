@@ -2,21 +2,19 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Length extends StObject {
   
-  var bottomRadius: Double = js.native
+  var bottomRadius: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var numberOfVerticalLines: js.UndefOr[Double] = js.native
+  var numberOfVerticalLines: js.UndefOr[Double] = js.undefined
   
-  var slices: js.UndefOr[Double] = js.native
+  var slices: js.UndefOr[Double] = js.undefined
   
-  var topRadius: Double = js.native
+  var topRadius: Double
 }
 object Length {
   

@@ -2,29 +2,27 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBooleanFieldExpression extends StObject {
   
   /** Checks whether the value of the field is equal to the specified value */
-  def EqualTo(value: Boolean): IExpression = js.native
+  def EqualTo(value: Boolean): IExpression
   
   /** Checks whether the value of the field is False */
-  def IsFalse(): IExpression = js.native
+  def IsFalse(): IExpression
   
   /** Checks whether the value of the field was not specified by user */
-  def IsNotNull(): IExpression = js.native
+  def IsNotNull(): IExpression
   
   /** Checks whether the value of the field was specified by user */
-  def IsNull(): IExpression = js.native
+  def IsNull(): IExpression
   
   /** Checks whether the value of the field is True */
-  def IsTrue(): IExpression = js.native
+  def IsTrue(): IExpression
   
   /** Checks whether the value of the field is not equal to the specified value */
-  def NotEqualTo(value: Boolean): IExpression = js.native
+  def NotEqualTo(value: Boolean): IExpression
 }
 object IBooleanFieldExpression {
   

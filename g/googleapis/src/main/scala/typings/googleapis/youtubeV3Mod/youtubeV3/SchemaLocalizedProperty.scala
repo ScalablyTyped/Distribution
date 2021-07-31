@@ -2,20 +2,18 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLocalizedProperty extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
   /**
     * The language of the default property.
     */
-  var defaultLanguage: js.UndefOr[SchemaLanguageTag] = js.native
+  var defaultLanguage: js.UndefOr[SchemaLanguageTag] = js.undefined
   
-  var localized: js.UndefOr[js.Array[SchemaLocalizedString]] = js.native
+  var localized: js.UndefOr[js.Array[SchemaLocalizedString]] = js.undefined
 }
 object SchemaLocalizedProperty {
   

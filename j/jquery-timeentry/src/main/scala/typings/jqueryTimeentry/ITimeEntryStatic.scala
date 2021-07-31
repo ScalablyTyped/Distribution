@@ -2,15 +2,13 @@ package typings.jqueryTimeentry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITimeEntryStatic extends StObject {
   
-  var regionalOptions: ITimeEntryLocales = js.native
+  var regionalOptions: ITimeEntryLocales
   
-  def setDefaults(settings: ITimeEntryOptions): Unit = js.native
+  def setDefaults(settings: ITimeEntryOptions): Unit
 }
 object ITimeEntryStatic {
   

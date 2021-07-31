@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateDocumentsResult extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait TemplateDocumentsResult extends StObject {
     */
   var templateDocuments: js.UndefOr[
     js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The id of the template.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object TemplateDocumentsResult {
   

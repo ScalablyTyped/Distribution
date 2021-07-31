@@ -11,8 +11,8 @@ Map pan control for Leaflet
 | Full name          | leaflet.pancontrol |
 | Keywords           | leaflet, map, pan |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1238 |
+| # dependents       | 1 |
+| # downloads        | 1260 |
 | # stars            | 0 |
 
 ## Links

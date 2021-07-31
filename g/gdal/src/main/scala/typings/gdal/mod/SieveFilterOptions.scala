@@ -2,21 +2,19 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SieveFilterOptions extends StObject {
   
-  var connectedness: js.UndefOr[Double] = js.native
+  var connectedness: js.UndefOr[Double] = js.undefined
   
-  var dst: RasterBand = js.native
+  var dst: RasterBand
   
-  var mask: js.UndefOr[RasterBand] = js.native
+  var mask: js.UndefOr[RasterBand] = js.undefined
   
-  var src: RasterBand = js.native
+  var src: RasterBand
   
-  var threshold: Double = js.native
+  var threshold: Double
 }
 object SieveFilterOptions {
   

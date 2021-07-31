@@ -2,13 +2,11 @@ package typings.w3cScreenOrientation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Screen extends StObject {
   
-  val orientation: ScreenOrientation = js.native
+  val orientation: ScreenOrientation
 }
 object Screen {
   

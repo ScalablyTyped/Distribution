@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * We're extending {@link OpenCommandArgument} even more, to provide some opening flags on to webdav.
   * @see XCommandProcessor
   */
-@js.native
-trait OpenCommandArgument3 extends OpenCommandArgument2 {
+trait OpenCommandArgument3
+  extends StObject
+     with OpenCommandArgument2 {
   
   /**
     * Flags to use for opening.
     *
     * WebDav e.g. uses "KeepAlive" to enable/disable the respective http feature.
     */
-  var OpeningFlags: SafeArray[NamedValue] = js.native
+  var OpeningFlags: SafeArray[NamedValue]
 }
 object OpenCommandArgument3 {
   

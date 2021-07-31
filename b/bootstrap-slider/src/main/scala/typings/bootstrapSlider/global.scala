@@ -2,7 +2,6 @@ package typings.bootstrapSlider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -15,7 +14,8 @@ object global {
   @JSGlobal("Slider")
   @js.native
   class Slider protected ()
-    extends typings.bootstrapSlider.Slider {
+    extends StObject
+       with typings.bootstrapSlider.Slider {
     def this(selector: String, opts: SliderOptions) = this()
   }
 }

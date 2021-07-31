@@ -2,23 +2,21 @@ package typings.fsExtra.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyOptions extends StObject {
   
-  var dereference: js.UndefOr[Boolean] = js.native
+  var dereference: js.UndefOr[Boolean] = js.undefined
   
-  var errorOnExist: js.UndefOr[Boolean] = js.native
+  var errorOnExist: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[CopyFilterSync | CopyFilterAsync] = js.native
+  var filter: js.UndefOr[CopyFilterSync | CopyFilterAsync] = js.undefined
   
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
   
-  var preserveTimestamps: js.UndefOr[Boolean] = js.native
+  var preserveTimestamps: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object CopyOptions {
   

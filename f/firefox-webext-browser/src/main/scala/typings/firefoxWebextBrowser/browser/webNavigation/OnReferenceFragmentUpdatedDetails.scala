@@ -2,42 +2,40 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnReferenceFragmentUpdatedDetails extends StObject {
   
   /**
     * 0 indicates the navigation happens in the tab content window; a positive value indicates navigation in a subframe. Frame IDs are unique within a tab.
     */
-  var frameId: Double = js.native
+  var frameId: Double
   
   /**
     * The ID of the process runs the renderer for this tab.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var processId: js.UndefOr[Double] = js.native
+  var processId: js.UndefOr[Double] = js.undefined
   
   /** The ID of the tab in which the navigation occurs. */
-  var tabId: Double = js.native
+  var tabId: Double
   
   /** The time when the navigation was committed, in milliseconds since the epoch. */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
   /**
     * A list of transition qualifiers.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var transitionQualifiers: js.UndefOr[js.Array[TransitionQualifier]] = js.native
+  var transitionQualifiers: js.UndefOr[js.Array[TransitionQualifier]] = js.undefined
   
   /**
     * Cause of the navigation.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var transitionType: js.UndefOr[TransitionType] = js.native
+  var transitionType: js.UndefOr[TransitionType] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object OnReferenceFragmentUpdatedDetails {
   

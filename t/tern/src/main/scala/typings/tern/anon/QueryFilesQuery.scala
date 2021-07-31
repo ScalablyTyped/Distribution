@@ -4,15 +4,13 @@ import typings.tern.ternMod.FilesQuery
 import typings.tern.ternMod.FilesQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryFilesQuery extends StObject {
   
-  var query: FilesQuery = js.native
+  var query: FilesQuery
   
-  var result: FilesQueryResult = js.native
+  var result: FilesQueryResult
 }
 object QueryFilesQuery {
   

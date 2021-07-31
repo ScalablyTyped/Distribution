@@ -3,20 +3,18 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.contentTypeFieldsMod.ContentFields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined type-fest.type-fest.Except<contentful-management.contentful-management/dist/typings/entities/content-type.ContentTypeProps, 'sys'> */
-@js.native
 trait ExceptContentTypePropssys extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var displayField: String = js.native
+  var displayField: String
   
-  var fields: js.Array[ContentFields] = js.native
+  var fields: js.Array[ContentFields]
   
-  var name: String = js.native
+  var name: String
 }
 object ExceptContentTypePropssys {
   

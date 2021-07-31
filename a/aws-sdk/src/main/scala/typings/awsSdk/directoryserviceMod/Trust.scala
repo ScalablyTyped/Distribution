@@ -2,66 +2,64 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trust extends StObject {
   
   /**
     * The date and time that the trust relationship was created.
     */
-  var CreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.CreatedDateTime] = js.native
+  var CreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.CreatedDateTime] = js.undefined
   
   /**
     * The Directory ID of the AWS directory involved in the trust relationship.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The date and time that the trust relationship was last updated.
     */
-  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.native
+  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.undefined
   
   /**
     * The Fully Qualified Domain Name (FQDN) of the external domain involved in the trust relationship.
     */
-  var RemoteDomainName: js.UndefOr[typings.awsSdk.directoryserviceMod.RemoteDomainName] = js.native
+  var RemoteDomainName: js.UndefOr[typings.awsSdk.directoryserviceMod.RemoteDomainName] = js.undefined
   
   /**
     * Current state of selective authentication for the trust.
     */
-  var SelectiveAuth: js.UndefOr[typings.awsSdk.directoryserviceMod.SelectiveAuth] = js.native
+  var SelectiveAuth: js.UndefOr[typings.awsSdk.directoryserviceMod.SelectiveAuth] = js.undefined
   
   /**
     * The date and time that the TrustState was last updated.
     */
-  var StateLastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StateLastUpdatedDateTime] = js.native
+  var StateLastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StateLastUpdatedDateTime] = js.undefined
   
   /**
     * The trust relationship direction.
     */
-  var TrustDirection: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustDirection] = js.native
+  var TrustDirection: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustDirection] = js.undefined
   
   /**
     * The unique ID of the trust relationship.
     */
-  var TrustId: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustId] = js.native
+  var TrustId: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustId] = js.undefined
   
   /**
     * The trust relationship state.
     */
-  var TrustState: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustState] = js.native
+  var TrustState: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustState] = js.undefined
   
   /**
     * The reason for the TrustState.
     */
-  var TrustStateReason: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustStateReason] = js.native
+  var TrustStateReason: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustStateReason] = js.undefined
   
   /**
     * The trust relationship type. Forest is the default.
     */
-  var TrustType: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustType] = js.native
+  var TrustType: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustType] = js.undefined
 }
 object Trust {
   

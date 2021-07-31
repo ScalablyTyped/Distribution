@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ambient-light sensor reading-changed event. */
-@js.native
 trait LightSensorReadingChangedEventArgs extends StObject {
   
   /** Gets the current ambient light-sensor reading. */
-  var reading: LightSensorReading = js.native
+  var reading: LightSensorReading
 }
 object LightSensorReadingChangedEventArgs {
   

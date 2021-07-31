@@ -2,44 +2,44 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the FloatingObjectMoved event.
   */
-@js.native
-trait ASPxClientRichEditFloatingObjectMovedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditFloatingObjectMovedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * The floating object's new position.
     */
-  var newPosition: Double = js.native
+  var newPosition: Double
   
   /**
     * The x-coordinate (in pixels) of the upper-left corner of the floating object relative to the page.
     */
-  var objectX: Double = js.native
+  var objectX: Double
   
   /**
     * The y-coordinate (in pixels) of the upper-left corner of the floating object relative to the page.
     */
-  var objectY: Double = js.native
+  var objectY: Double
   
   /**
     * Returns an index of a page where a floating object has been moved.
     */
-  val pageIndex: Double = js.native
+  val pageIndex: Double
   
   /**
     * Returns an array of intervals that are belongs to the current page (pageIndex).
     */
-  val pageIntervals: js.Array[Interval] = js.native
+  val pageIntervals: js.Array[Interval]
   
   /**
     * Returns the active sub-document's identifier.
     */
-  val subDocumentId: Double = js.native
+  val subDocumentId: Double
 }
 object ASPxClientRichEditFloatingObjectMovedEventArgs {
   

@@ -3,19 +3,17 @@ package typings.ionic.definitionsMod
 import typings.ionic.anon.Req
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClient extends StObject {
   
-  var config: IConfig = js.native
+  var config: IConfig
   
-  def `do`(req: SuperAgentRequest): js.Promise[APIResponseSuccess] = js.native
+  def `do`(req: SuperAgentRequest): js.Promise[APIResponseSuccess]
   
-  def make(method: HttpMethod, path: String): js.Promise[Req] = js.native
+  def make(method: HttpMethod, path: String): js.Promise[Req]
   
-  def paginate[T /* <: Response[js.Array[js.Object]] */](args: PaginateArgs[T]): IPaginator[T, PaginatorState] = js.native
+  def paginate[T /* <: Response[js.Array[js.Object]] */](args: PaginateArgs[T]): IPaginator[T, PaginatorState]
 }
 object IClient {
   

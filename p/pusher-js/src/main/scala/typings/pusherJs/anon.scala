@@ -3,23 +3,21 @@ package typings.pusherJs
 import typings.pusherJs.mod.AuthInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Activity extends StObject {
     
-    def activity(): Unit = js.native
+    def activity(): Unit
     
-    def closed(): Unit = js.native
+    def closed(): Unit
     
-    def error(error: js.Any): Unit = js.native
+    def error(error: js.Any): Unit
     
-    def message(message: String): Unit = js.native
+    def message(message: String): Unit
     
-    def ping(): Unit = js.native
+    def ping(): Unit
   }
   object Activity {
     
@@ -55,13 +53,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Authorize extends StObject {
     
     def authorize(
       socketId: String,
       callback: js.Function2[/* errored */ Boolean, /* authInfo */ js.UndefOr[AuthInfo], Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object Authorize {
     
@@ -83,16 +80,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Backoff extends StObject {
     
-    def backoff(): Unit = js.native
+    def backoff(): Unit
     
-    def refused(): Unit = js.native
+    def refused(): Unit
     
-    def retry(): Unit = js.native
+    def retry(): Unit
     
-    def ssl_only(): Unit = js.native
+    def ssl_only(): Unit
   }
   object Backoff {
     
@@ -119,18 +115,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Connected extends StObject {
     
-    def backoff(): Unit = js.native
+    def backoff(): Unit
     
-    def connected(handshake: js.Any): Unit = js.native
+    def connected(handshake: js.Any): Unit
     
-    def refused(): Unit = js.native
+    def refused(): Unit
     
-    def retry(): Unit = js.native
+    def retry(): Unit
     
-    def ssl_only(): Unit = js.native
+    def ssl_only(): Unit
   }
   object Connected {
     

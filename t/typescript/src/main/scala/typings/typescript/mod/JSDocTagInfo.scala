@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSDocTagInfo extends StObject {
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var text: js.UndefOr[java.lang.String] = js.native
+  var text: js.UndefOr[java.lang.String] = js.undefined
 }
 object JSDocTagInfo {
   

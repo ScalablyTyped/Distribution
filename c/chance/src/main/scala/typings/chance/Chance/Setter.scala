@@ -12,7 +12,6 @@ import typings.chance.chanceStrings.territories
 import typings.chance.chanceStrings.us_states_and_dc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,33 +2,31 @@ package typings.materialCheckbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCCheckboxAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def forceLayout(): Unit = js.native
+    def forceLayout(): Unit
     
-    def hasNativeControl(): Boolean = js.native
+    def hasNativeControl(): Boolean
     
-    def isAttachedToDOM(): Boolean = js.native
+    def isAttachedToDOM(): Boolean
     
-    def isChecked(): Boolean = js.native
+    def isChecked(): Boolean
     
-    def isIndeterminate(): Boolean = js.native
+    def isIndeterminate(): Boolean
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
-    def removeNativeControlAttr(attr: String): Unit = js.native
+    def removeNativeControlAttr(attr: String): Unit
     
-    def setNativeControlAttr(attr: String, value: String): Unit = js.native
+    def setNativeControlAttr(attr: String, value: String): Unit
     
-    def setNativeControlDisabled(disabled: Boolean): Unit = js.native
+    def setNativeControlDisabled(disabled: Boolean): Unit
   }
   object MDCCheckboxAdapter {
     

@@ -8,7 +8,6 @@ import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -17,25 +16,25 @@ object typesMod {
   
   type Constructor[T] = Instantiable1[/* args (repeated) */ js.Any, T]
   
-  @js.native
   trait OctokitOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var auth: js.UndefOr[js.Any] = js.native
+    var auth: js.UndefOr[js.Any] = js.undefined
     
-    var authStrategy: js.UndefOr[js.Any] = js.native
+    var authStrategy: js.UndefOr[js.Any] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[Debug] = js.native
+    var log: js.UndefOr[Debug] = js.undefined
     
-    var previews: js.UndefOr[js.Array[String]] = js.native
+    var previews: js.UndefOr[js.Array[String]] = js.undefined
     
-    var request: js.UndefOr[RequestRequestOptions] = js.native
+    var request: js.UndefOr[RequestRequestOptions] = js.undefined
     
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object OctokitOptions {
     

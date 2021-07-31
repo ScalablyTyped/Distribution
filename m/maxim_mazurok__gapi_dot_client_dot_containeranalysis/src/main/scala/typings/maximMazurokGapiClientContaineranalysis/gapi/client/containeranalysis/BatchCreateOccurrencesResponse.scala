@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateOccurrencesResponse extends StObject {
   
   /** The occurrences that were created. */
-  var occurrences: js.UndefOr[js.Array[Occurrence]] = js.native
+  var occurrences: js.UndefOr[js.Array[Occurrence]] = js.undefined
 }
 object BatchCreateOccurrencesResponse {
   

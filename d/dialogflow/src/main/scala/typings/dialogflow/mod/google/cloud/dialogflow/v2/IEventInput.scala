@@ -3,21 +3,19 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 import typings.dialogflow.mod.google.protobuf.IStruct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an EventInput. */
-@js.native
 trait IEventInput extends StObject {
   
   /** EventInput languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** EventInput name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** EventInput parameters */
-  var parameters: js.UndefOr[IStruct | Null] = js.native
+  var parameters: js.UndefOr[IStruct | Null] = js.undefined
 }
 object IEventInput {
   

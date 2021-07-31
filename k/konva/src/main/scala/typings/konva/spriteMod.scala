@@ -8,7 +8,6 @@ import typings.std.CanvasImageSource
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spriteMod {
@@ -38,7 +37,7 @@ object spriteMod {
     def animations(): js.Any = js.native
     def animations(v: js.Any): this.type = js.native
     @JSName("animations")
-    var animations_Original: GetSet[_, this.type] = js.native
+    var animations_Original: GetSet[js.Any, this.type] = js.native
     
     def frameIndex(): Double = js.native
     def frameIndex(v: Double): this.type = js.native
@@ -48,7 +47,7 @@ object spriteMod {
     def frameOffsets(): js.Any = js.native
     def frameOffsets(v: js.Any): this.type = js.native
     @JSName("frameOffsets")
-    var frameOffsets_Original: GetSet[_, this.type] = js.native
+    var frameOffsets_Original: GetSet[js.Any, this.type] = js.native
     
     def frameRate(): Double = js.native
     def frameRate(v: Double): this.type = js.native
@@ -69,18 +68,19 @@ object spriteMod {
     def stop(): Unit = js.native
   }
   
-  @js.native
-  trait SpriteConfig extends ShapeConfig {
+  trait SpriteConfig
+    extends StObject
+       with ShapeConfig {
     
-    var animation: String = js.native
+    var animation: String
     
-    var animations: js.Any = js.native
+    var animations: js.Any
     
-    var frameIndex: js.UndefOr[Double] = js.native
+    var frameIndex: js.UndefOr[Double] = js.undefined
     
-    var frameRate: js.UndefOr[Double] = js.native
+    var frameRate: js.UndefOr[Double] = js.undefined
     
-    var image: HTMLImageElement = js.native
+    var image: HTMLImageElement
   }
   object SpriteConfig {
     

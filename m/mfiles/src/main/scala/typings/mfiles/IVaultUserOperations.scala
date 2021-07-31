@@ -2,31 +2,29 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultUserOperations extends StObject {
   
-  def AddOrUndeleteUserAccount(User: IUserAccount): IUserAccount = js.native
+  def AddOrUndeleteUserAccount(User: IUserAccount): IUserAccount
   
-  def AddUserAccount(User: IUserAccount): IUserAccount = js.native
+  def AddUserAccount(User: IUserAccount): IUserAccount
   
-  def GetLoginAccountOfUser(UserID: Double): ILoginAccount = js.native
+  def GetLoginAccountOfUser(UserID: Double): ILoginAccount
   
-  def GetLoginAccounts(): ILoginAccounts = js.native
+  def GetLoginAccounts(): ILoginAccounts
   
-  def GetUserAccount(UserID: Double): IUserAccount = js.native
+  def GetUserAccount(UserID: Double): IUserAccount
   
-  def GetUserAccounts(): IUserAccounts = js.native
+  def GetUserAccounts(): IUserAccounts
   
-  def GetUserIDByGUID(UserGUID: String): Double = js.native
+  def GetUserIDByGUID(UserGUID: String): Double
   
-  def GetUserList(): IKeyNamePairs = js.native
+  def GetUserList(): IKeyNamePairs
   
-  def ModifyUserAccount(User: IUserAccount): Unit = js.native
+  def ModifyUserAccount(User: IUserAccount): Unit
   
-  def RemoveUserAccount(UserID: Double): Unit = js.native
+  def RemoveUserAccount(UserID: Double): Unit
 }
 object IVaultUserOperations {
   

@@ -2,27 +2,25 @@ package typings.carbonIconHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Focusable extends StObject {
     
-    var focusable: String = js.native
+    var focusable: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var preserveAspectRatio: String = js.native
+    var preserveAspectRatio: String
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var viewBox: String = js.native
+    var viewBox: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object Focusable {
     
@@ -64,20 +62,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var tabindex: js.UndefOr[Double | String] = js.native
+    var tabindex: js.UndefOr[Double | String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Height {
     

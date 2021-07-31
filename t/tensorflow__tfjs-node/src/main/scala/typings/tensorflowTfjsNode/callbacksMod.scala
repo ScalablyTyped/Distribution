@@ -5,10 +5,13 @@ import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.batch
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.epoch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callbacksMod {
+  
+  @JSImport("@tensorflow/tfjs-node/dist/callbacks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-node/dist/callbacks", "ProgbarLogger")
   @js.native
@@ -42,8 +45,8 @@ object callbacksMod {
   @js.native
   class TensorBoardCallback () extends CustomCallback {
     def this(logdir: String) = this()
-    def this(logdir: js.UndefOr[scala.Nothing], args: TensorBoardCallbackArgs) = this()
     def this(logdir: String, args: TensorBoardCallbackArgs) = this()
+    def this(logdir: Unit, args: TensorBoardCallbackArgs) = this()
     
     val args: js.Any = js.native
     
@@ -62,13 +65,11 @@ object callbacksMod {
     var valWriter: js.Any = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-node/dist/callbacks", "getDisplayDecimalPlaces")
-  @js.native
-  def getDisplayDecimalPlaces(x: Double): Double = js.native
+  @scala.inline
+  def getDisplayDecimalPlaces(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayDecimalPlaces")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-node/dist/callbacks", "getSuccinctNumberDisplay")
-  @js.native
-  def getSuccinctNumberDisplay(x: Double): String = js.native
+  @scala.inline
+  def getSuccinctNumberDisplay(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuccinctNumberDisplay")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object progressBarHelper {
     
@@ -89,20 +90,15 @@ object callbacksMod {
     def log_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-node/dist/callbacks", "tensorBoard")
-  @js.native
-  def tensorBoard(): TensorBoardCallback = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/callbacks", "tensorBoard")
-  @js.native
-  def tensorBoard(logdir: js.UndefOr[scala.Nothing], args: TensorBoardCallbackArgs): TensorBoardCallback = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/callbacks", "tensorBoard")
-  @js.native
-  def tensorBoard(logdir: String): TensorBoardCallback = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/callbacks", "tensorBoard")
-  @js.native
-  def tensorBoard(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = js.native
+  @scala.inline
+  def tensorBoard(): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")().asInstanceOf[TensorBoardCallback]
+  @scala.inline
+  def tensorBoard(logdir: String): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any]).asInstanceOf[TensorBoardCallback]
+  @scala.inline
+  def tensorBoard(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
+  @scala.inline
+  def tensorBoard(logdir: Unit, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
   
-  @js.native
   trait TensorBoardCallbackArgs extends StObject {
     
     /**
@@ -118,7 +114,7 @@ object callbacksMod {
       *
       * Default: 'epoch'.
       */
-    var updateFreq: js.UndefOr[batch | epoch] = js.native
+    var updateFreq: js.UndefOr[batch | epoch] = js.undefined
   }
   object TensorBoardCallbackArgs {
     

@@ -2,13 +2,13 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreatableAilment extends IAilment {
+trait TreatableAilment
+  extends StObject
+     with IAilment {
   
-  val treatable: Boolean = js.native
+  val treatable: Boolean
 }
 object TreatableAilment {
   

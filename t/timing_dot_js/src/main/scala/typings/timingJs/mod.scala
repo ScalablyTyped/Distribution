@@ -2,93 +2,92 @@ package typings.timingJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("timing.js", "getTimes")
+  @JSImport("timing.js", JSImport.Namespace)
   @js.native
-  def getTimes(): Timings = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("timing.js", "printSimpleTable")
-  @js.native
-  def printSimpleTable(): Unit = js.native
+  @scala.inline
+  def getTimes(): Timings = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimes")().asInstanceOf[Timings]
   
-  @JSImport("timing.js", "printTable")
-  @js.native
-  def printTable(): Unit = js.native
+  @scala.inline
+  def printSimpleTable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printSimpleTable")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def printTable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printTable")().asInstanceOf[Unit]
+  
   trait Timings extends StObject {
     
-    var appcacheTime: Double = js.native
+    var appcacheTime: Double
     
-    var connectEnd: Double = js.native
+    var connectEnd: Double
     
-    var connectStart: Double = js.native
+    var connectStart: Double
     
-    var connectTime: Double = js.native
+    var connectTime: Double
     
-    var domComplete: Double = js.native
+    var domComplete: Double
     
-    var domContentLoadedEventEnd: Double = js.native
+    var domContentLoadedEventEnd: Double
     
-    var domContentLoadedEventStart: Double = js.native
+    var domContentLoadedEventStart: Double
     
-    var domInteractive: Double = js.native
+    var domInteractive: Double
     
-    var domLoading: Double = js.native
+    var domLoading: Double
     
-    var domReadyTime: Double = js.native
+    var domReadyTime: Double
     
-    var domainLookupEnd: Double = js.native
+    var domainLookupEnd: Double
     
-    var domainLookupStart: Double = js.native
+    var domainLookupStart: Double
     
-    var fetchStart: Double = js.native
+    var fetchStart: Double
     
-    var firstPaint: Double = js.native
+    var firstPaint: Double
     
-    var firstPaintTime: Double = js.native
+    var firstPaintTime: Double
     
-    var initDomTreeTime: Double = js.native
+    var initDomTreeTime: Double
     
-    var loadEventEnd: Double = js.native
+    var loadEventEnd: Double
     
-    var loadEventStart: Double = js.native
+    var loadEventStart: Double
     
-    var loadEventTime: Double = js.native
+    var loadEventTime: Double
     
-    var loadTime: Double = js.native
+    var loadTime: Double
     
-    var lookupDomainTime: Double = js.native
+    var lookupDomainTime: Double
     
-    var navigationStart: Double = js.native
+    var navigationStart: Double
     
-    var readyStart: Double = js.native
+    var readyStart: Double
     
-    var redirectEnd: Double = js.native
+    var redirectEnd: Double
     
-    var redirectStart: Double = js.native
+    var redirectStart: Double
     
-    var redirectTime: Double = js.native
+    var redirectTime: Double
     
-    var requestStart: Double = js.native
+    var requestStart: Double
     
-    var requestTime: Double = js.native
+    var requestTime: Double
     
-    var responseEnd: Double = js.native
+    var responseEnd: Double
     
-    var responseStart: Double = js.native
+    var responseStart: Double
     
-    var secureConnectionStart: Double = js.native
+    var secureConnectionStart: Double
     
-    var unloadEventEnd: Double = js.native
+    var unloadEventEnd: Double
     
-    var unloadEventStart: Double = js.native
+    var unloadEventStart: Double
     
-    var unloadEventTime: Double = js.native
+    var unloadEventTime: Double
   }
   object Timings {
     

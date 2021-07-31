@@ -2,15 +2,13 @@ package typings.rmcFeedback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Active extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
   }
   object Active {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
   }
   object Disabled {
     

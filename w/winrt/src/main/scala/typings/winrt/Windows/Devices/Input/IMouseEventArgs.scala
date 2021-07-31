@@ -2,13 +2,11 @@ package typings.winrt.Windows.Devices.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMouseEventArgs extends StObject {
   
-  var mouseDelta: MouseDelta = js.native
+  var mouseDelta: MouseDelta
 }
 object IMouseEventArgs {
   

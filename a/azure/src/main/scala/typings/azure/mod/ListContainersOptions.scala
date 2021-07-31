@@ -2,19 +2,19 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListContainersOptions extends TimeoutIntervalOptions {
+trait ListContainersOptions
+  extends StObject
+     with TimeoutIntervalOptions {
   
-  var include: js.UndefOr[String] = js.native
+  var include: js.UndefOr[String] = js.undefined
   
-  var marker: String = js.native
+  var marker: String
   
-  var maxresults: js.UndefOr[Double] = js.native
+  var maxresults: js.UndefOr[Double] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object ListContainersOptions {
   

@@ -4,28 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.abbrev.mod.global.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("abbrev", JSImport.Namespace)
-  @js.native
-  def apply(words: String*): StringDictionary[String] = js.native
-  @JSImport("abbrev", JSImport.Namespace)
-  @js.native
-  def apply(words: Array[String]): StringDictionary[String] = js.native
+  @scala.inline
+  def apply(words: String*): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  @scala.inline
+  def apply(words: Array[String]): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @JSImport("abbrev", "monkeyPatch")
+  @JSImport("abbrev", JSImport.Namespace)
   @js.native
-  def monkeyPatch(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def monkeyPatch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monkeyPatch")().asInstanceOf[Unit]
   
   object global {
     
-    @js.native
     trait Array[T] extends StObject {
       
-      def abbrev(): StringDictionary[String] = js.native
+      def abbrev(): StringDictionary[String]
     }
     object Array {
       
@@ -36,17 +35,16 @@ object mod {
       }
       
       @scala.inline
-      implicit class ArrayMutableBuilder[Self <: Array[_], T] (val x: Self with Array[T]) extends AnyVal {
+      implicit class ArrayMutableBuilder[Self <: Array[?], T] (val x: Self & Array[T]) extends AnyVal {
         
         @scala.inline
         def setAbbrev(value: () => StringDictionary[String]): Self = StObject.set(x, "abbrev", js.Any.fromFunction0(value))
       }
     }
     
-    @js.native
     trait Object extends StObject {
       
-      def abbrev(): StringDictionary[String] = js.native
+      def abbrev(): StringDictionary[String]
     }
     object Object {
       
@@ -64,10 +62,9 @@ object mod {
       }
     }
     
-    @js.native
     trait ReadonlyArray[T] extends StObject {
       
-      def abbrev(): StringDictionary[String] = js.native
+      def abbrev(): StringDictionary[String]
     }
     object ReadonlyArray {
       
@@ -78,7 +75,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class ReadonlyArrayMutableBuilder[Self <: ReadonlyArray[_], T] (val x: Self with ReadonlyArray[T]) extends AnyVal {
+      implicit class ReadonlyArrayMutableBuilder[Self <: ReadonlyArray[?], T] (val x: Self & ReadonlyArray[T]) extends AnyVal {
         
         @scala.inline
         def setAbbrev(value: () => StringDictionary[String]): Self = StObject.set(x, "abbrev", js.Any.fromFunction0(value))

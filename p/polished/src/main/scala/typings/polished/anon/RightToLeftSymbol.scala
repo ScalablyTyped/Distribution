@@ -6,36 +6,29 @@ import typings.polished.polishedStrings.Leftparenthesis
 import typings.polished.polishedStrings.prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightToLeftSymbol extends StObject {
   
-  var argCount: `1` = js.native
+  var argCount: `1`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any = js.native
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any
   
-  var notation: prefix = js.native
+  var notation: prefix
   
-  var precedence: `0` = js.native
+  var precedence: `0`
   
-  var rightToLeft: `0` = js.native
+  var rightToLeft: `0`
   
-  var symbol: Leftparenthesis = js.native
+  var symbol: Leftparenthesis
 }
 object RightToLeftSymbol {
   
   @scala.inline
   def apply(
-    argCount: `1`,
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any,
-    notation: prefix,
-    precedence: `0`,
-    rightToLeft: `0`,
-    symbol: Leftparenthesis
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ js.Any
   ): RightToLeftSymbol = {
-    val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "prefix", precedence = 0, rightToLeft = 0, symbol = "(")
     __obj.asInstanceOf[RightToLeftSymbol]
   }
   

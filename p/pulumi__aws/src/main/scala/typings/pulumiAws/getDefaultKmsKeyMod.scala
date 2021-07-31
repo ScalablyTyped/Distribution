@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDefaultKmsKeyMod {
   
-  @JSImport("@pulumi/aws/ebs/getDefaultKmsKey", "getDefaultKmsKey")
+  @JSImport("@pulumi/aws/ebs/getDefaultKmsKey", JSImport.Namespace)
   @js.native
-  def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getDefaultKmsKey", "getDefaultKmsKey")
-  @js.native
-  def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")().asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
+  @scala.inline
+  def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultKmsKey")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDefaultKmsKeyResult]]
+  
   trait GetDefaultKmsKeyResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Amazon Resource Name (ARN) of the default KMS key uses to encrypt an EBS volume in this region when no key is specified in an API call that creates the volume and encryption by default is enabled.
       */
-    val keyArn: String = js.native
+    val keyArn: String
   }
   object GetDefaultKmsKeyResult {
     

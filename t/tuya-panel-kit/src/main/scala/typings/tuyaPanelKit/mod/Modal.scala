@@ -5,7 +5,6 @@ import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tuya-panel-kit", "Modal")
@@ -50,11 +49,9 @@ object Modal {
   @scala.inline
   def Picker_=(x: ElementType[PopupPickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Picker")(x.asInstanceOf[js.Any])
   
-  @JSImport("tuya-panel-kit", "Modal.close")
-  @js.native
-  def close(): Unit = js.native
+  @scala.inline
+  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
-  @JSImport("tuya-panel-kit", "Modal.render")
-  @js.native
-  def render(option: ReactNode, props: ModalProps): Unit = js.native
+  @scala.inline
+  def render(option: ReactNode, props: ModalProps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(option.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

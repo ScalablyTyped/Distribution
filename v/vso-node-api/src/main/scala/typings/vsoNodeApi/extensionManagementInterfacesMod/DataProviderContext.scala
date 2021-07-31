@@ -3,16 +3,14 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProviderContext extends StObject {
   
   /**
     * Generic property bag that contains context-specific properties that data providers can use when populating their data dictionary
     */
-  var properties: StringDictionary[js.Any] = js.native
+  var properties: StringDictionary[js.Any]
 }
 object DataProviderContext {
   

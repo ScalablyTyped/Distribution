@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkEndpointWithHealthStatus extends StObject {
   
   /** [Output only] The health status of network endpoint; */
-  var healths: js.UndefOr[js.Array[HealthStatusForNetworkEndpoint]] = js.native
+  var healths: js.UndefOr[js.Array[HealthStatusForNetworkEndpoint]] = js.undefined
   
   /** [Output only] The network endpoint; */
-  var networkEndpoint: js.UndefOr[NetworkEndpoint] = js.native
+  var networkEndpoint: js.UndefOr[NetworkEndpoint] = js.undefined
 }
 object NetworkEndpointWithHealthStatus {
   

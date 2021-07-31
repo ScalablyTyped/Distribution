@@ -2,16 +2,17 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crypto {
   
-  @JSGlobal("KSR.crypto.aes_decrypt")
+  @JSGlobal("KSR.crypto")
   @js.native
-  def aesDecrypt(ins: String, keys: String, dpv: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.crypto.aes_encrypt")
-  @js.native
-  def aesEncrypt(ins: String, keys: String, dpv: String): Double = js.native
+  @scala.inline
+  def aesDecrypt(ins: String, keys: String, dpv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("aes_decrypt")(ins.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], dpv.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def aesEncrypt(ins: String, keys: String, dpv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("aes_encrypt")(ins.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], dpv.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

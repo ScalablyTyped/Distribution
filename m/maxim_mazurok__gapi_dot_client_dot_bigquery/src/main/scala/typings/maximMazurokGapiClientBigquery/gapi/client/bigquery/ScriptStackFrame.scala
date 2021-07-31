@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptStackFrame extends StObject {
   
   /** [Output-only] One-based end column. */
-  var endColumn: js.UndefOr[Double] = js.native
+  var endColumn: js.UndefOr[Double] = js.undefined
   
   /** [Output-only] One-based end line. */
-  var endLine: js.UndefOr[Double] = js.native
+  var endLine: js.UndefOr[Double] = js.undefined
   
   /** [Output-only] Name of the active procedure, empty if in a top-level script. */
-  var procedureId: js.UndefOr[String] = js.native
+  var procedureId: js.UndefOr[String] = js.undefined
   
   /** [Output-only] One-based start column. */
-  var startColumn: js.UndefOr[Double] = js.native
+  var startColumn: js.UndefOr[Double] = js.undefined
   
   /** [Output-only] One-based start line. */
-  var startLine: js.UndefOr[Double] = js.native
+  var startLine: js.UndefOr[Double] = js.undefined
   
   /** [Output-only] Text of the current statement/expression. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ScriptStackFrame {
   

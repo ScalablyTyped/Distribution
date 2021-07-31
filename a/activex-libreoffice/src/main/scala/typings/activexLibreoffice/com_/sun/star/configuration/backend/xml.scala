@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xml {
@@ -22,9 +21,9 @@ object xml {
     * @see com.sun.star.configuration.backend.xml.LayerWriter Service that writes OOR Update XML for data described via com.sun.star.configuration.backend.X
     * @since OOo 1.1.2
     */
-  @js.native
   trait LayerParser
-    extends XLayer
+    extends StObject
+       with XLayer
        with XActiveDataSink
        with XInitialization
   object LayerParser {
@@ -34,7 +33,7 @@ object xml {
       InputStream: XInputStream,
       acquire: () => Unit,
       getInputStream: () => XInputStream,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       readData: XLayerHandler => Unit,
       release: () => Unit,
@@ -52,9 +51,9 @@ object xml {
     * @see com.sun.star.configuration.backend.xml.LayerParser Service that parses configuration layer XML.
     * @since OOo 1.1.2
     */
-  @js.native
   trait LayerWriter
-    extends XLayerHandler
+    extends StObject
+       with XLayerHandler
        with XActiveDataSource
        with XInitialization
   object LayerWriter {
@@ -72,7 +71,7 @@ object xml {
       endNode: () => Unit,
       endProperty: () => Unit,
       getOutputStream: () => XOutputStream,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       overrideNode: (String, Double, Boolean) => Unit,
       overrideProperty: (String, Double, `type`, Boolean) => Unit,
       queryInterface: `type` => js.Any,
@@ -94,9 +93,9 @@ object xml {
     * @see com.sun.star.configuration.backend.xml.LayerParser Service that parses configuration layer XML.
     * @since OOo 1.1.2
     */
-  @js.native
   trait SchemaParser
-    extends XSchema
+    extends StObject
+       with XSchema
        with XActiveDataSink
        with XInitialization
   object SchemaParser {
@@ -106,7 +105,7 @@ object xml {
       InputStream: XInputStream,
       acquire: () => Unit,
       getInputStream: () => XInputStream,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       readComponent: XSchemaHandler => Unit,
       readSchema: XSchemaHandler => Unit,

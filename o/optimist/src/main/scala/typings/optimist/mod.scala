@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,18 +12,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : Parser = js.native
   
-  @js.native
   trait Opt extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var alias: js.UndefOr[String | js.Array[String]] = js.native
+    var alias: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var demand: js.UndefOr[String | Double | js.Array[String]] = js.native
+    var demand: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var describe: js.UndefOr[String] = js.native
+    var describe: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Opt {
     
@@ -106,7 +104,7 @@ object mod extends Shortcut {
     /** Check that certain conditions are met in the provided arguments. If fn
       throws or returns false, show the thrown error, usage information, and exit.
       */
-    def check(fn: js.Function1[/* argv */ js.Any, _]): Parser = js.native
+    def check(fn: js.Function1[/* argv */ js.Any, js.Any]): Parser = js.native
     
     /** Show the usage information and exit if key wasn't specified in process.argv */
     def demand(key: String): Parser = js.native

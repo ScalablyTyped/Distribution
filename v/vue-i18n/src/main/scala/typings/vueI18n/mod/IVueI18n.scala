@@ -7,7 +7,6 @@ import typings.vue.vueMod.Vue
 import typings.vueI18n.mod.VueI18n.PluralizationRulesMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,12 +14,12 @@ trait IVueI18n extends StObject {
   
   def d(value: Double): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
-  def d(value: Double, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
+  def d(value: Double, key: Unit, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Double, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
-  def d(value: Date, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
+  def d(value: Date, key: Unit, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   
@@ -70,7 +69,7 @@ trait IVueI18n extends StObject {
   
   def n(value: Double): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
-  def n(value: Double, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
+  def n(value: Double, key: Unit, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   
@@ -108,11 +107,7 @@ trait IVueI18n extends StObject {
   def t(key: typings.vueI18n.mod.VueI18n.Path, values: typings.vueI18n.mod.VueI18n.Values): typings.vueI18n.mod.VueI18n.TranslateResult = js.native
   
   def tc(key: typings.vueI18n.mod.VueI18n.Path): String = js.native
-  def tc(
-    key: typings.vueI18n.mod.VueI18n.Path,
-    choice: js.UndefOr[scala.Nothing],
-    values: typings.vueI18n.mod.VueI18n.Values
-  ): String = js.native
+  def tc(key: typings.vueI18n.mod.VueI18n.Path, choice: Unit, values: typings.vueI18n.mod.VueI18n.Values): String = js.native
   def tc(key: typings.vueI18n.mod.VueI18n.Path, choice: typings.vueI18n.mod.VueI18n.Choice): String = js.native
   def tc(
     key: typings.vueI18n.mod.VueI18n.Path,

@@ -6,13 +6,12 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryPieProps
-  extends VictoryMultiLabeableProps
-     with VictoryCommonProps {
+  extends StObject
+     with VictoryCommonProps
+     with VictoryMultiLabeableProps {
   
   /**
     * The colorScale prop is an optional prop that defines the color scale the pie
@@ -21,12 +20,12 @@ trait VictoryPieProps
     * values from this color scale to the pie slices unless colors are explicitly provided in the
     * data object
     */
-  var colorScale: js.UndefOr[ColorScalePropType] = js.native
+  var colorScale: js.UndefOr[ColorScalePropType] = js.undefined
   
   /**
     * Set the cornerRadius for every dataComponent (Slice by default) within VictoryPie
     */
-  var cornerRadius: js.UndefOr[Double] = js.native
+  var cornerRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * The data prop specifies the data to be plotted,
@@ -38,7 +37,7 @@ trait VictoryPieProps
     * @example [{x: 1, y: 2}, {x: 2, y: 3}], [[1, 2], [2, 3]],
     * [[{x: "a", y: 1}, {x: "b", y: 2}], [{x: "a", y: 2}, {x: "b", y: 3}]]
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The dataComponent prop takes an entire, HTML-complete data component which will be used to
@@ -49,19 +48,19 @@ trait VictoryPieProps
     * the VictoryPie; and the d3 compatible slice object.
     * If a dataComponent is not provided, VictoryPie's Slice component will be used.
     */
-  var dataComponent: js.UndefOr[ReactElement] = js.native
+  var dataComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The overall end angle of the pie in degrees. This prop is used in conjunction with
     * startAngle to create a pie that spans only a segment of a circle.
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The event prop takes an array of event objects. Event objects are composed of
@@ -107,7 +106,7 @@ trait VictoryPieProps
     js.Array[
       EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback | (js.Array[Double | String])]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The `innerRadius` prop determines the number of pixels between the center of the chart
@@ -115,32 +114,32 @@ trait VictoryPieProps
     * When this prop is given as a function, `innerRadius` will be evaluated for each slice
     * of the pie with the props corresponding to that slice
     */
-  var innerRadius: js.UndefOr[Double | (js.Function1[/* props */ VictorySliceProps, Double])] = js.native
+  var innerRadius: js.UndefOr[Double | (js.Function1[/* props */ VictorySliceProps, Double])] = js.undefined
   
   /**
     * The labelRadius prop defines the radius of the arc that will be used for positioning each slice label.
     * If this prop is not set, the label radius will default to the radius of the pie + label padding.
     */
-  var labelRadius: js.UndefOr[Double] = js.native
+  var labelRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * The padAngle prop determines the amount of separation between adjacent data slices
     * in number of degrees
     */
-  var padAngle: js.UndefOr[Double] = js.native
+  var padAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the radius of the chart. If this property is not provided it is computed
     * from width, height, and padding props
     *
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * The overall start angle of the pie in degrees. This prop is used in conjunction with
     * endAngle to create a pie that spans only a segment of a circle.
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * The style prop specifies styles for your pie. VictoryPie relies on Radium,
@@ -148,7 +147,7 @@ trait VictoryPieProps
     * padding should be specified via the height, width, and padding props.
     * @example {data: {stroke: "black"}, label: {fontSize: 10}}
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.native
+  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
   
   /**
     * The x prop specifies how to access the X value of each data point.
@@ -160,7 +159,7 @@ trait VictoryPieProps
     * If `null` or `undefined`, the data value will be used as is (identity function/pass-through).
     * @example 0, 'x', 'x.value.nested.1.thing', 'x[2].also.nested', null, d => Math.sin(d)
     */
-  var x: js.UndefOr[DataGetterPropType] = js.native
+  var x: js.UndefOr[DataGetterPropType] = js.undefined
   
   /**
     * The y prop specifies how to access the Y value of each data point.
@@ -172,7 +171,7 @@ trait VictoryPieProps
     * If `null` or `undefined`, the data value will be used as is (identity function/pass-through).
     * @example 0, 'y', 'y.value.nested.1.thing', 'y[2].also.nested', null, d => Math.sin(d)
     */
-  var y: js.UndefOr[DataGetterPropType] = js.native
+  var y: js.UndefOr[DataGetterPropType] = js.undefined
 }
 object VictoryPieProps {
   
@@ -201,7 +200,7 @@ object VictoryPieProps {
     def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])

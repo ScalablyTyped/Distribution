@@ -3,32 +3,29 @@ package typings.anyPromise
 import org.scalablytyped.runtime.Instantiable1
 import typings.anyPromise.anon.TypeofPromise
 import typings.anyPromise.mod.Thenable
-import typings.anyPromise.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registerMod {
   
-  @JSImport("any-promise/register", JSImport.Namespace)
-  @js.native
-  def apply(): Register = js.native
-  @JSImport("any-promise/register", JSImport.Namespace)
-  @js.native
-  def apply(module: js.UndefOr[scala.Nothing], options: Options): Register = js.native
-  @JSImport("any-promise/register", JSImport.Namespace)
-  @js.native
-  def apply(module: String): Register = js.native
-  @JSImport("any-promise/register", JSImport.Namespace)
-  @js.native
-  def apply(module: String, options: Options): Register = js.native
+  @scala.inline
+  def apply(): Register = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Register]
+  @scala.inline
+  def apply(module: String): Register = ^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any]).asInstanceOf[Register]
+  @scala.inline
+  def apply(module: String, options: Options): Register = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Register]
+  @scala.inline
+  def apply(module: Unit, options: Options): Register = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Register]
   
+  @JSImport("any-promise/register", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     var Promise: js.UndefOr[
-        TypeofPromise with (Instantiable1[
+        TypeofPromise & (Instantiable1[
           /* callback */ js.Function2[
             /* resolve */ js.Function1[
               /* value */ js.UndefOr[
@@ -39,11 +36,11 @@ object registerMod {
             /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
             Unit
           ], 
-          ^[js.Object]
+          typings.anyPromise.mod.^[js.Object]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -64,7 +61,7 @@ object registerMod {
       
       @scala.inline
       def setPromise(
-        value: TypeofPromise with (Instantiable1[
+        value: TypeofPromise & (Instantiable1[
               /* callback */ js.Function2[
                 /* resolve */ js.Function1[
                   /* value */ js.UndefOr[
@@ -75,7 +72,7 @@ object registerMod {
                 /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
                 Unit
               ], 
-              ^[js.Object]
+              typings.anyPromise.mod.^[js.Object]
             ])
       ): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
@@ -84,10 +81,9 @@ object registerMod {
     }
   }
   
-  @js.native
   trait Register extends StObject {
     
-    var Promise: TypeofPromise with (Instantiable1[
+    var Promise: TypeofPromise & (Instantiable1[
         /* callback */ js.Function2[
           /* resolve */ js.Function1[
             /* value */ js.UndefOr[
@@ -98,16 +94,16 @@ object registerMod {
           /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
           Unit
         ], 
-        ^[js.Object]
-      ]) = js.native
+        typings.anyPromise.mod.^[js.Object]
+      ])
     
-    var implementation: String = js.native
+    var implementation: String
   }
   object Register {
     
     @scala.inline
     def apply(
-      Promise: TypeofPromise with (Instantiable1[
+      Promise: TypeofPromise & (Instantiable1[
           /* callback */ js.Function2[
             /* resolve */ js.Function1[
               /* value */ js.UndefOr[
@@ -118,7 +114,7 @@ object registerMod {
             /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
             Unit
           ], 
-          ^[js.Object]
+          typings.anyPromise.mod.^[js.Object]
         ]),
       implementation: String
     ): Register = {
@@ -134,7 +130,7 @@ object registerMod {
       
       @scala.inline
       def setPromise(
-        value: TypeofPromise with (Instantiable1[
+        value: TypeofPromise & (Instantiable1[
               /* callback */ js.Function2[
                 /* resolve */ js.Function1[
                   /* value */ js.UndefOr[
@@ -145,7 +141,7 @@ object registerMod {
                 /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
                 Unit
               ], 
-              ^[js.Object]
+              typings.anyPromise.mod.^[js.Object]
             ])
       ): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
     }

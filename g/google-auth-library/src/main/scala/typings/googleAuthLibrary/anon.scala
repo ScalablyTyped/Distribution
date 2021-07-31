@@ -5,17 +5,15 @@ import typings.googleAuthLibrary.loginticketMod.TokenPayload
 import typings.googleAuthLibrary.transportersMod.DefaultTransporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Envelope extends StObject {
     
-    var envelope: js.UndefOr[String] = js.native
+    var envelope: js.UndefOr[String] = js.undefined
     
-    var payload: js.UndefOr[TokenPayload] = js.native
+    var payload: js.UndefOr[TokenPayload] = js.undefined
   }
   object Envelope {
     
@@ -42,14 +40,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: js.UndefOr[typings.googleAuthLibrary.oauth2clientMod.Headers] = js.native
+    var headers: js.UndefOr[typings.googleAuthLibrary.oauth2clientMod.Headers] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Headers {
     
@@ -83,7 +80,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofDefaultTransporter extends Instantiable0[DefaultTransporter] {
+  trait TypeofDefaultTransporter
+    extends StObject
+       with Instantiable0[DefaultTransporter] {
     
     /**
       * Default user agent.
@@ -91,12 +90,11 @@ object anon {
     val USER_AGENT: String = js.native
   }
   
-  @js.native
   trait Xgoogiamauthorityselector extends StObject {
     
-    var `x-goog-iam-authority-selector`: String = js.native
+    var `x-goog-iam-authority-selector`: String
     
-    var `x-goog-iam-authorization-token`: String = js.native
+    var `x-goog-iam-authorization-token`: String
   }
   object Xgoogiamauthorityselector {
     

@@ -2,19 +2,17 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerVersion extends StObject {
   
-  var instanceTemplate: js.UndefOr[String] = js.native
+  var instanceTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the version. Unique among all versions in the scope of this
     * managed instance group.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the intended number of instances to be created from the
@@ -27,7 +25,7 @@ trait SchemaInstanceGroupManagerVersion extends StObject {
     * not updated by another version. Read Starting a canary update for more
     * information.
     */
-  var targetSize: js.UndefOr[SchemaFixedOrPercent] = js.native
+  var targetSize: js.UndefOr[SchemaFixedOrPercent] = js.undefined
 }
 object SchemaInstanceGroupManagerVersion {
   

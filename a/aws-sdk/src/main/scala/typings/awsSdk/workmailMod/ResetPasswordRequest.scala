@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetPasswordRequest extends StObject {
   
   /**
     * The identifier of the organization that contains the user for which the password is reset.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The new password for the user.
     */
-  var Password: typings.awsSdk.workmailMod.Password = js.native
+  var Password: typings.awsSdk.workmailMod.Password
   
   /**
     * The identifier of the user for whom the password is reset.
     */
-  var UserId: WorkMailIdentifier = js.native
+  var UserId: WorkMailIdentifier
 }
 object ResetPasswordRequest {
   

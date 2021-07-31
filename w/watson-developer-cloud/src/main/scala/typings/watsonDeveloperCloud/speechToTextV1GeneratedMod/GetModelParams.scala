@@ -3,22 +3,20 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.GetModelConstants.ModelId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * request interfaces
   ************************/
 /** Parameters for the `getModel` operation. */
-@js.native
 trait GetModelParams extends StObject {
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The identifier of the model in the form of its name from the output of the **Get a model** method. */
-  var model_id: ModelId | String = js.native
+  var model_id: ModelId | String
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object GetModelParams {
   

@@ -3,15 +3,13 @@ package typings.materialUiCore.anon
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var node: HTMLInputElement = js.native
+  var node: HTMLInputElement
   
-  var value: String | Double | Boolean | (js.Array[String | Double | Boolean]) = js.native
+  var value: String | Double | Boolean | (js.Array[String | Double | Boolean])
 }
 object Value {
   

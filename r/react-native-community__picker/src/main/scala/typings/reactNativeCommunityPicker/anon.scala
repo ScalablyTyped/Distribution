@@ -3,17 +3,15 @@ package typings.reactNativeCommunityPicker
 import typings.reactNativeCommunityPicker.pickerMod.ItemValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ItemIndex extends StObject {
     
-    var itemIndex: Double = js.native
+    var itemIndex: Double
     
-    var itemValue: ItemValue = js.native
+    var itemValue: ItemValue
   }
   object ItemIndex {
     

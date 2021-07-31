@@ -11,8 +11,8 @@ Calls a function repeatedly while a condition returns true and then resolves the
 | Full name          | p-do-whilst |
 | Keywords           | promise, do, whilst, while, loop, wait, condition, conditional, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 174626 |
+| # dependents       | 9 |
+| # downloads        | 280966 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.list
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait ListQuestion[T /* <: Answers */] extends ListQuestionOptions[T] {
+trait ListQuestion[T /* <: Answers */]
+  extends StObject
+     with ListQuestionOptions[T] {
   
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_ListQuestion: list = js.native
+  var type_ListQuestion: list
 }
 object ListQuestion {
   
   @scala.inline
-  def apply[T /* <: Answers */](`type`: list): ListQuestion[T] = {
+  def apply[T /* <: Answers */](): ListQuestion[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("list")
     __obj.asInstanceOf[ListQuestion[T]]
   }
   
   @scala.inline
-  implicit class ListQuestionMutableBuilder[Self <: ListQuestion[_], T /* <: Answers */] (val x: Self with ListQuestion[T]) extends AnyVal {
+  implicit class ListQuestionMutableBuilder[Self <: ListQuestion[?], T /* <: Answers */] (val x: Self & ListQuestion[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

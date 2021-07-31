@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1TextDetectionConfig extends StObject {
   
   /**
     * Language hint can be specified if the language to be detected is known a priori. It can increase the accuracy of the detection. Language hint must be language code in BCP-47 format.
     * Automatic language detection is performed if no hint is provided.
     */
-  var languageHints: js.UndefOr[js.Array[String]] = js.native
+  var languageHints: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Model to use for text detection. Supported values: "builtin/stable" (the default if unset) and "builtin/latest". */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1TextDetectionConfig {
   

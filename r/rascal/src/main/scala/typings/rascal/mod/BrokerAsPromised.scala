@@ -4,7 +4,6 @@ import typings.amqplib.mod.Connection
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rascal", "BrokerAsPromised")
@@ -42,11 +41,13 @@ class BrokerAsPromised protected () extends EventEmitter {
 }
 object BrokerAsPromised {
   
+  @JSImport("rascal", "BrokerAsPromised")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* static member */
-  @JSImport("rascal", "BrokerAsPromised.create")
-  @js.native
-  def create(config: BrokerConfig): js.Promise[BrokerAsPromised] = js.native
-  @JSImport("rascal", "BrokerAsPromised.create")
-  @js.native
-  def create(config: BrokerConfig, components: js.Any): js.Promise[BrokerAsPromised] = js.native
+  @scala.inline
+  def create(config: BrokerConfig): js.Promise[BrokerAsPromised] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BrokerAsPromised]]
+  @scala.inline
+  def create(config: BrokerConfig, components: js.Any): js.Promise[BrokerAsPromised] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrokerAsPromised]]
 }

@@ -2,21 +2,19 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrCodeErrMsg extends StObject {
   
   /**
     * 错误码
     */
-  var errCode: Double = js.native
+  var errCode: Double
   
   /**
     * 调用结果（错误原因）
     */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object ErrCodeErrMsg {
   

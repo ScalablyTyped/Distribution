@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Search operators let users restrict the query to specific fields relevant
   * to the type of item being searched.
   */
-@js.native
 trait SchemaDoubleOperatorOptions extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaDoubleOperatorOptions extends StObject {
     * double property in sorting or as a facet. The operator name can only
     * contain lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object SchemaDoubleOperatorOptions {
   

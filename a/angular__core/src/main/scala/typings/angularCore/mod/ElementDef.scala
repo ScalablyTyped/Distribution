@@ -3,46 +3,44 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementDef extends StObject {
   
   /**
     * same as visiblePublicProviders, but also includes private providers
     * that are located on this element.
     */
-  var allProviders: StringDictionary[NodeDef] | Null = js.native
+  var allProviders: StringDictionary[NodeDef] | Null
   
   /** ns, name, value */
-  var attrs: (js.Array[js.Tuple3[String, String, String]]) | Null = js.native
+  var attrs: (js.Array[js.Tuple3[String, String, String]]) | Null
   
-  var componentProvider: NodeDef | Null = js.native
+  var componentProvider: NodeDef | Null
   
-  var componentRendererType: RendererType2 | Null = js.native
+  var componentRendererType: RendererType2 | Null
   
-  var componentView: ViewDefinitionFactory | Null = js.native
+  var componentView: ViewDefinitionFactory | Null
   
-  var handleEvent: ElementHandleEventFn | Null = js.native
+  var handleEvent: ElementHandleEventFn | Null
   
-  var name: String | Null = js.native
+  var name: String | Null
   
-  var ns: String | Null = js.native
+  var ns: String | Null
   
   /**
     * visible public providers for DI in the view,
     * as see from this element. This does not include private providers.
     */
-  var publicProviders: StringDictionary[NodeDef] | Null = js.native
+  var publicProviders: StringDictionary[NodeDef] | Null
   
-  var template: ɵViewDefinition | Null = js.native
+  var template: ɵViewDefinition | Null
 }
 object ElementDef {
   
   @scala.inline
   def apply(): ElementDef = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(allProviders = null, attrs = null, componentProvider = null, componentRendererType = null, componentView = null, handleEvent = null, name = null, ns = null, publicProviders = null, template = null)
     __obj.asInstanceOf[ElementDef]
   }
   

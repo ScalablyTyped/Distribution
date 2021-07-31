@@ -3,7 +3,6 @@ package typings.jaegerClient.mod
 import typings.opentracing.mod.Tracer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jaeger-client", "JaegerTracer")

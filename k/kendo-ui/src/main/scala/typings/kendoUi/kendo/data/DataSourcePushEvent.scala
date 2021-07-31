@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourcePushEvent extends DataSourceEvent {
+trait DataSourcePushEvent
+  extends StObject
+     with DataSourceEvent {
   
-  var items: js.UndefOr[js.Array[DataSourceItemOrGroup]] = js.native
+  var items: js.UndefOr[js.Array[DataSourceItemOrGroup]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DataSourcePushEvent {
   

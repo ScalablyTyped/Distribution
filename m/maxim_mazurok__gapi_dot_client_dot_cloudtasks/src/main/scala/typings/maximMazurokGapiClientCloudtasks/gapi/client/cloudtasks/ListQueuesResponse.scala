@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQueuesResponse extends StObject {
   
   /**
     * A token to retrieve next page of results. To return the next page of results, call ListQueues with this value as the page_token. If the next_page_token is empty, there are no more
     * results. The page token is valid for only 2 hours.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of queues. */
-  var queues: js.UndefOr[js.Array[Queue]] = js.native
+  var queues: js.UndefOr[js.Array[Queue]] = js.undefined
 }
 object ListQueuesResponse {
   

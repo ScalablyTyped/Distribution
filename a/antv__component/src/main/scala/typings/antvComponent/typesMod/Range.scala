@@ -2,23 +2,21 @@ package typings.antvComponent.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
   /**
     * 结束值
     * @type {number}
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * 开始值
     * @type {number}
     */
-  var min: Double = js.native
+  var min: Double
 }
 object Range {
   

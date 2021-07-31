@@ -2,14 +2,12 @@ package typings.semanticUiVisibility.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'includeMargin'> */
-@js.native
 trait PickImplincludeMargin extends StObject {
   
-  var includeMargin: Boolean = js.native
+  var includeMargin: Boolean
 }
 object PickImplincludeMargin {
   

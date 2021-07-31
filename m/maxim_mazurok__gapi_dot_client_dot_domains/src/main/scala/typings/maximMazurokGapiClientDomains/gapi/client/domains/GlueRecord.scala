@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlueRecord extends StObject {
   
   /** Required. Domain name of the host in Punycode format. */
-  var hostName: js.UndefOr[String] = js.native
+  var hostName: js.UndefOr[String] = js.undefined
   
   /** List of IPv4 addresses corresponding to this host in the standard decimal format (e.g. `198.51.100.1`). At least one of `ipv4_address` and `ipv6_address` must be set. */
-  var ipv4Addresses: js.UndefOr[js.Array[String]] = js.native
+  var ipv4Addresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of IPv6 addresses corresponding to this host in the standard hexadecimal format (e.g. `2001:db8::`). At least one of `ipv4_address` and `ipv6_address` must be set. */
-  var ipv6Addresses: js.UndefOr[js.Array[String]] = js.native
+  var ipv6Addresses: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GlueRecord {
   

@@ -11,17 +11,16 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecatedis the top level service for accessing database components.  It enables the service user to establish connections to databases or to us */
-@js.native
 trait DatabaseEnvironment
-  extends XDatabaseEnvironment
+  extends StObject
+     with XDatabaseEnvironment
      with XPropertySet {
   
   /** provides an object for formatting numbers. */
-  var NumberFormatsSupplier: XNumberFormatsSupplier = js.native
+  var NumberFormatsSupplier: XNumberFormatsSupplier
 }
 object DatabaseEnvironment {
   

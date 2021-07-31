@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressNux.dotTipMod.DotTip.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dotTipMod {
@@ -25,20 +24,19 @@ object dotTipMod {
   
   object DotTip {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * Any React element or elements can be passed as children. They will be rendered within the
         * tip bubble.
         */
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * A string that uniquely identifies the tip. Identifiers should be prefixed with the name
         * of the plugin, followed by a `/`. For example, `acme/add-to-cart`.
         */
-      var tipId: String = js.native
+      var tipId: String
     }
     object Props {
       

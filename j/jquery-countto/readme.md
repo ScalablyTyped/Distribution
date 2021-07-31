@@ -12,7 +12,7 @@ A jQuery plugin that will count up (or down) to a target number at a specified s
 | Keywords           | jQuery, counter, count, increment, decrement |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 92687 |
+| # downloads        | 97966 |
 | # stars            | 0 |
 
 ## Links

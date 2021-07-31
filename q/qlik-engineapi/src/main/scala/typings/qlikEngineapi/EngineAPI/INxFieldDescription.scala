@@ -2,73 +2,71 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxFieldDescription...
   */
-@js.native
 trait INxFieldDescription extends StObject {
   
   /**
     * If set to true a logical AND (instead of a logical OR) is used when making selections in a field.
     * >> The default value is false.
     */
-  var qAndMode: js.UndefOr[Boolean] = js.native
+  var qAndMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of distinct field values
     */
-  var qCardinal: Double = js.native
+  var qCardinal: Double
   
   /**
     * Lists the derived fields if any.
     */
-  var qDerivedFieldData: INxDerivedFieldDescriptionList = js.native
+  var qDerivedFieldData: INxDerivedFieldDescriptionList
   
   /**
     * If set to true, it means that the field is a field on the fly.
     */
-  var qIsDefinitionOnly: Boolean = js.native
+  var qIsDefinitionOnly: Boolean
   
   /**
     * Is used for Direct Discovery.
     * If set to true, it means that the type of the field is detail.
     */
-  var qIsDetail: Boolean = js.native
+  var qIsDetail: Boolean
   
   /**
     * If set to true, it means that the field is hidden.
     */
-  var qIsHidden: Boolean = js.native
+  var qIsHidden: Boolean
   
   /**
     * Is used for Direct Discovery.
     * If set to true, it means that the type of the field is measure.
     */
-  var qIsImplicit: Boolean = js.native
+  var qIsImplicit: Boolean
   
   /**
     * If set to true, it means that the field is a semantic.
     */
-  var qIsSemantic: Boolean = js.native
+  var qIsSemantic: Boolean
   
   /**
     * If set to true, it means that the field is a system field.
     */
-  var qIsSystem: Boolean = js.native
+  var qIsSystem: Boolean
   
   /**
     * Name of the field
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Gives information on a field. For example, it can return the type of the field.
     * Examples: key, text, ASCII
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
 }
 object INxFieldDescription {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportTaskS3Location extends StObject {
   
   /**
     * The destination Amazon S3 bucket.
     */
-  var S3Bucket: js.UndefOr[String] = js.native
+  var S3Bucket: js.UndefOr[String] = js.undefined
   
   /**
     * The prefix (logical hierarchy) in the bucket.
     */
-  var S3Prefix: js.UndefOr[String] = js.native
+  var S3Prefix: js.UndefOr[String] = js.undefined
 }
 object ExportTaskS3Location {
   

@@ -3,15 +3,13 @@ package typings.spectacle.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
-  var style: Record[String, String] = js.native
+  var style: Record[String, String]
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object Style {
   

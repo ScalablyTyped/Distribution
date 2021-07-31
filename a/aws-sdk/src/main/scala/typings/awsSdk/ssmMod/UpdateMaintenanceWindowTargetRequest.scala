@@ -2,46 +2,44 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMaintenanceWindowTargetRequest extends StObject {
   
   /**
     * An optional description for the update.
     */
-  var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
+  var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   
   /**
     * A name for the update.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
     * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this maintenance window.
     */
-  var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.native
+  var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.undefined
   
   /**
     * If True, then all fields that are required by the RegisterTargetWithMaintenanceWindow action are also required for this API request. Optional fields that are not specified are set to null.
     */
-  var Replace: js.UndefOr[Boolean] = js.native
+  var Replace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The targets to add or replace.
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
   /**
     * The maintenance window ID with which to modify the target.
     */
-  var WindowId: MaintenanceWindowId = js.native
+  var WindowId: MaintenanceWindowId
   
   /**
     * The target ID to modify.
     */
-  var WindowTargetId: MaintenanceWindowTargetId = js.native
+  var WindowTargetId: MaintenanceWindowTargetId
 }
 object UpdateMaintenanceWindowTargetRequest {
   

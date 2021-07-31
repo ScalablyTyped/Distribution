@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAilmentRegistry extends StObject {
   
-  var ailments: js.Array[IAilment] = js.native
+  var ailments: js.Array[IAilment]
   
-  def get(id: String): js.UndefOr[IAilment] = js.native
+  def get(id: String): js.UndefOr[IAilment]
   
-  def register(ailment: IAilment): Unit = js.native
+  def register(ailment: IAilment): Unit
 }
 object IAilmentRegistry {
   

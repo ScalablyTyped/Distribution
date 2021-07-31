@@ -3,17 +3,15 @@ package typings.deezerSdk
 import typings.deezerSdk.DeezerSdk.Track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken_ extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var expire: String = js.native
+    var expire: String
   }
   object AccessToken_ {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Accesstoken extends StObject {
     
-    val access_token: String = js.native
+    val access_token: String
     
-    val expire: String = js.native
+    val expire: String
   }
   object Accesstoken {
     
@@ -60,14 +57,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Artist extends StObject {
     
-    var artist: String = js.native
+    var artist: String
     
-    var cover: String = js.native
+    var cover: String
     
-    var title: String = js.native
+    var title: String
   }
   object Artist {
     
@@ -91,14 +87,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Expire extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var expire: String = js.native
+    var expire: String
     
-    var userID: String = js.native
+    var userID: String
   }
   object Expire {
     
@@ -122,12 +117,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var track: Track = js.native
+    var track: Track
   }
   object Index {
     

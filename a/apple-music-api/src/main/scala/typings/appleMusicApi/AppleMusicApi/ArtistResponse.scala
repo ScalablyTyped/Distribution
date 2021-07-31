@@ -2,14 +2,12 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/artistresponse
-@js.native
 trait ArtistResponse extends StObject {
   
-  var data: js.Array[Artist] = js.native
+  var data: js.Array[Artist]
 }
 object ArtistResponse {
   

@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MLTransformInputRecordTable extends StObject {
   
   /**
     * A unique identifier for the AWS Glue Data Catalog.
     */
-  var catalogId: js.UndefOr[Input[String]] = js.native
+  var catalogId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the connection to the AWS Glue Data Catalog.
     */
-  var connectionName: js.UndefOr[Input[String]] = js.native
+  var connectionName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A database name in the AWS Glue Data Catalog.
     */
-  var databaseName: Input[String] = js.native
+  var databaseName: Input[String]
   
   /**
     * A table name in the AWS Glue Data Catalog.
     */
-  var tableName: Input[String] = js.native
+  var tableName: Input[String]
 }
 object MLTransformInputRecordTable {
   

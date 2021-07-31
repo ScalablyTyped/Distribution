@@ -14,21 +14,19 @@ import typings.nodal.mod.RelationshipNode
 import typings.nodal.mod.RelationshipPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait As extends StObject {
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var via: js.UndefOr[String] = js.native
+    var via: js.UndefOr[String] = js.undefined
   }
   object As {
     
@@ -67,12 +65,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Columns extends StObject {
     
-    var columns: js.Array[IColumn] = js.native
+    var columns: js.Array[IColumn]
     
-    var table: String = js.native
+    var table: String
   }
   object Columns {
     
@@ -96,10 +93,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Convert extends StObject {
     
-    var convert: js.Function = js.native
+    var convert: js.Function
   }
   object Convert {
     
@@ -117,20 +113,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var resource: js.Any = js.native
+    var resource: js.Any
     
-    var summary: js.UndefOr[String | Null] = js.native
+    var summary: js.UndefOr[String | Null] = js.undefined
     
-    var total: Double = js.native
+    var total: Double
   }
   object Count {
     
@@ -169,14 +164,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Createdat extends StObject {
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var id: String = js.native
+    var id: String
     
-    var updated_at: String = js.native
+    var updated_at: String
   }
   object Createdat {
     
@@ -200,12 +194,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var meta: Count = js.native
+    var meta: Count
   }
   object Data {
     
@@ -226,17 +219,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.Array[_] = js.native
+    var fields: js.Array[js.Any]
     
-    var name: String = js.native
+    var name: String
   }
   object Fields {
     
     @scala.inline
-    def apply(fields: js.Array[_], name: String): Fields = {
+    def apply(fields: js.Array[js.Any], name: String): Fields = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
@@ -245,7 +237,7 @@ object anon {
     implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFields(value: js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
@@ -255,10 +247,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Joins extends StObject {
     
-    var structure: js.Any = js.native
+    var structure: js.Any
   }
   object Joins {
     
@@ -276,12 +267,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Meta extends StObject {
     
-    var data: js.Array[scala.Nothing] = js.native
+    var data: js.Array[scala.Nothing]
     
-    var meta: Count = js.native
+    var meta: Count
   }
   object Meta {
     
@@ -305,12 +295,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var params: js.Any = js.native
+    var params: js.Any
     
-    var sql: js.Any = js.native
+    var sql: js.Any
   }
   object Params {
     
@@ -333,11 +322,12 @@ object anon {
   
   @js.native
   trait TypeofModel
-    extends Instantiable1[/* modelData */ js.Object, Model]
+    extends StObject
+       with Instantiable1[/* modelData */ js.Object, Model]
        with Instantiable2[/* modelData */ js.Object, /* fromStorage */ Boolean, Model]
        with Instantiable3[
           /* modelData */ js.Object, 
-          js.UndefOr[/* fromStorage */ Boolean], 
+          (/* fromStorage */ Boolean) | (/* fromStorage */ Unit), 
           /* fromSeed */ Boolean, 
           Model
         ] {
@@ -512,11 +502,12 @@ object anon {
   
   @js.native
   trait TypeofModelInstantiable
-    extends Instantiable1[/* modelData */ js.Object, Model]
+    extends StObject
+       with Instantiable1[/* modelData */ js.Object, Model]
        with Instantiable2[/* modelData */ js.Object, /* fromStorage */ Boolean, Model]
        with Instantiable3[
           /* modelData */ js.Object, 
-          js.UndefOr[/* fromStorage */ Boolean], 
+          (/* fromStorage */ Boolean) | (/* fromStorage */ Unit), 
           /* fromSeed */ Boolean, 
           Model
         ] {

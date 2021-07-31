@@ -3,21 +3,19 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Codeofconduct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetCommunityProfileMetricsResponseData extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var documentation: Boolean = js.native
+  var documentation: Boolean
   
-  var files: Codeofconduct = js.native
+  var files: Codeofconduct
   
-  var health_percentage: Double = js.native
+  var health_percentage: Double
   
-  var updated_at: String = js.native
+  var updated_at: String
 }
 object ReposGetCommunityProfileMetricsResponseData {
   

@@ -4,15 +4,16 @@ import typings.ink.domMod.DOMElement
 import typings.ink.domMod.TextNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calculateWrappedTextMod {
   
-  @JSImport("ink/build/calculate-wrapped-text", "calculateWrappedText")
+  @JSImport("ink/build/calculate-wrapped-text", JSImport.Namespace)
   @js.native
-  def calculateWrappedText(node: DOMElement): Unit = js.native
-  @JSImport("ink/build/calculate-wrapped-text", "calculateWrappedText")
-  @js.native
-  def calculateWrappedText(node: TextNode): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def calculateWrappedText(node: DOMElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateWrappedText")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def calculateWrappedText(node: TextNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateWrappedText")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

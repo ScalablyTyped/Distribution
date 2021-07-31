@@ -2,21 +2,19 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNodeAssociationStatusResponse extends StObject {
   
   /**
     * Attributes specific to the node association. In Puppet, the attibute PUPPET_NODE_CERT contains the signed certificate (the result of the CSR). 
     */
-  var EngineAttributes: js.UndefOr[typings.awsSdk.opsworkscmMod.EngineAttributes] = js.native
+  var EngineAttributes: js.UndefOr[typings.awsSdk.opsworkscmMod.EngineAttributes] = js.undefined
   
   /**
     * The status of the association or disassociation request.   Possible values:     SUCCESS: The association or disassociation succeeded.     FAILED: The association or disassociation failed.     IN_PROGRESS: The association or disassociation is still in progress.   
     */
-  var NodeAssociationStatus: js.UndefOr[typings.awsSdk.opsworkscmMod.NodeAssociationStatus] = js.native
+  var NodeAssociationStatus: js.UndefOr[typings.awsSdk.opsworkscmMod.NodeAssociationStatus] = js.undefined
 }
 object DescribeNodeAssociationStatusResponse {
   

@@ -2,23 +2,21 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointLabelOptions extends StObject {
   
-  var callback: js.UndefOr[js.Function1[/* arg */ js.Any, _]] = js.native
+  var callback: js.UndefOr[js.Function1[/* arg */ js.Any, js.Any]] = js.undefined
   
-  var fontColor: js.UndefOr[ChartColor] = js.native
+  var fontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[Double | String] = js.native
+  var lineHeight: js.UndefOr[Double | String] = js.undefined
 }
 object PointLabelOptions {
   
@@ -32,7 +30,7 @@ object PointLabelOptions {
   implicit class PointLabelOptionsMutableBuilder[Self <: PointLabelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCallback(value: /* arg */ js.Any => _): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    def setCallback(value: /* arg */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

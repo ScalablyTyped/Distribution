@@ -3,25 +3,25 @@ package typings.algoliaCacheInMemory
 import typings.algoliaCacheCommon.mod.Cache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@algolia/cache-in-memory", "createInMemoryCache")
+  @JSImport("@algolia/cache-in-memory", JSImport.Namespace)
   @js.native
-  def createInMemoryCache(): Cache = js.native
-  @JSImport("@algolia/cache-in-memory", "createInMemoryCache")
-  @js.native
-  def createInMemoryCache(options: InMemoryCacheOptions): Cache = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createInMemoryCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryCache")().asInstanceOf[Cache]
+  @scala.inline
+  def createInMemoryCache(options: InMemoryCacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  
   trait InMemoryCacheOptions extends StObject {
     
     /**
       * If keys and values should be serialized using `JSON.stringify`.
       */
-    val serializable: js.UndefOr[Boolean] = js.native
+    val serializable: js.UndefOr[Boolean] = js.undefined
   }
   object InMemoryCacheOptions {
     

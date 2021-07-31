@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteExperimentRequest extends StObject {
   
   /**
     * The name of the experiment to delete.
     */
-  var ExperimentName: ExperimentEntityName = js.native
+  var ExperimentName: ExperimentEntityName
 }
 object DeleteExperimentRequest {
   

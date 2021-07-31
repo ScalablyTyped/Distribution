@@ -2,17 +2,15 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioSelectorSettings extends StObject {
   
-  var AudioLanguageSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioLanguageSelection] = js.native
+  var AudioLanguageSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioLanguageSelection] = js.undefined
   
-  var AudioPidSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioPidSelection] = js.native
+  var AudioPidSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioPidSelection] = js.undefined
   
-  var AudioTrackSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioTrackSelection] = js.native
+  var AudioTrackSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioTrackSelection] = js.undefined
 }
 object AudioSelectorSettings {
   

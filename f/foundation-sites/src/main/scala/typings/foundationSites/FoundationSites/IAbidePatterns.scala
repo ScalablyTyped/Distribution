@@ -3,43 +3,41 @@ package typings.foundationSites.FoundationSites
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAbidePatterns extends StObject {
   
-  var alpha: js.UndefOr[RegExp] = js.native
+  var alpha: js.UndefOr[RegExp] = js.undefined
   
-  var alpha_numeric: js.UndefOr[RegExp] = js.native
+  var alpha_numeric: js.UndefOr[RegExp] = js.undefined
   
-  var card: js.UndefOr[RegExp] = js.native
+  var card: js.UndefOr[RegExp] = js.undefined
   
-  var color: js.UndefOr[RegExp] = js.native
+  var color: js.UndefOr[RegExp] = js.undefined
   
-  var cvv: js.UndefOr[RegExp] = js.native
+  var cvv: js.UndefOr[RegExp] = js.undefined
   
-  var date: js.UndefOr[RegExp] = js.native
+  var date: js.UndefOr[RegExp] = js.undefined
   
-  var dateISO: js.UndefOr[RegExp] = js.native
+  var dateISO: js.UndefOr[RegExp] = js.undefined
   
-  var datetime: js.UndefOr[RegExp] = js.native
+  var datetime: js.UndefOr[RegExp] = js.undefined
   
-  var day_month_year: js.UndefOr[RegExp] = js.native
+  var day_month_year: js.UndefOr[RegExp] = js.undefined
   
-  var domain: js.UndefOr[RegExp] = js.native
+  var domain: js.UndefOr[RegExp] = js.undefined
   
-  var email: js.UndefOr[RegExp] = js.native
+  var email: js.UndefOr[RegExp] = js.undefined
   
-  var integer: js.UndefOr[RegExp] = js.native
+  var integer: js.UndefOr[RegExp] = js.undefined
   
-  var month_day_year: js.UndefOr[RegExp] = js.native
+  var month_day_year: js.UndefOr[RegExp] = js.undefined
   
-  var number: js.UndefOr[RegExp] = js.native
+  var number: js.UndefOr[RegExp] = js.undefined
   
-  var time: js.UndefOr[RegExp] = js.native
+  var time: js.UndefOr[RegExp] = js.undefined
   
-  var url: js.UndefOr[RegExp] = js.native
+  var url: js.UndefOr[RegExp] = js.undefined
 }
 object IAbidePatterns {
   

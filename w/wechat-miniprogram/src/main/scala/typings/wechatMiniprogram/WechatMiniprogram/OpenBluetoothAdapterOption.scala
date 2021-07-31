@@ -4,17 +4,15 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.central
 import typings.wechatMiniprogram.wechatMiniprogramStrings.peripheral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenBluetoothAdapterOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[OpenBluetoothAdapterCompleteCallback] = js.native
+  var complete: js.UndefOr[OpenBluetoothAdapterCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[OpenBluetoothAdapterFailCallback] = js.native
+  var fail: js.UndefOr[OpenBluetoothAdapterFailCallback] = js.undefined
   
   /** 蓝牙模式，可作为主/从设备，仅 iOS 需要。
     *
@@ -23,10 +21,10 @@ trait OpenBluetoothAdapterOption extends StObject {
     * - 'peripheral': 从机模式;
     *
     * 最低基础库： `2.10.0` */
-  var mode: js.UndefOr[central | peripheral] = js.native
+  var mode: js.UndefOr[central | peripheral] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[OpenBluetoothAdapterSuccessCallback] = js.native
+  var success: js.UndefOr[OpenBluetoothAdapterSuccessCallback] = js.undefined
 }
 object OpenBluetoothAdapterOption {
   

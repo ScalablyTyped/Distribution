@@ -2,33 +2,31 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateValuesByDataFilterRequest extends StObject {
   
   /** The new values to apply to the spreadsheet. If more than one range is matched by the specified DataFilter the specified values are applied to all of those ranges. */
-  var data: js.UndefOr[js.Array[DataFilterValueRange]] = js.native
+  var data: js.UndefOr[js.Array[DataFilterValueRange]] = js.undefined
   
   /**
     * Determines if the update response should include the values of the cells that were updated. By default, responses do not include the updated values. The `updatedData` field within
     * each of the BatchUpdateValuesResponse.responses contains the updated values. If the range to write was larger than the range actually written, the response includes all values in
     * the requested range (excluding trailing empty rows and columns).
     */
-  var includeValuesInResponse: js.UndefOr[Boolean] = js.native
+  var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines how dates, times, and durations in the response should be rendered. This is ignored if response_value_render_option is FORMATTED_VALUE. The default dateTime render option
     * is DateTimeRenderOption.SERIAL_NUMBER.
     */
-  var responseDateTimeRenderOption: js.UndefOr[String] = js.native
+  var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
   
   /** Determines how values in the response should be rendered. The default render option is ValueRenderOption.FORMATTED_VALUE. */
-  var responseValueRenderOption: js.UndefOr[String] = js.native
+  var responseValueRenderOption: js.UndefOr[String] = js.undefined
   
   /** How the input data should be interpreted. */
-  var valueInputOption: js.UndefOr[String] = js.native
+  var valueInputOption: js.UndefOr[String] = js.undefined
 }
 object BatchUpdateValuesByDataFilterRequest {
   

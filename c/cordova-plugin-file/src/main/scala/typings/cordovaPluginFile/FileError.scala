@@ -2,14 +2,12 @@ package typings.cordovaPluginFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileError extends StObject {
   
   /** Error code */
-  var code: Double = js.native
+  var code: Double
 }
 object FileError {
   

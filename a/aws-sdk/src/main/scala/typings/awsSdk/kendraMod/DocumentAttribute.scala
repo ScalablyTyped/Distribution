@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentAttribute extends StObject {
   
   /**
     * The identifier for the attribute.
     */
-  var Key: DocumentAttributeKey = js.native
+  var Key: DocumentAttributeKey
   
   /**
     * The value of the attribute.
     */
-  var Value: DocumentAttributeValue = js.native
+  var Value: DocumentAttributeValue
 }
 object DocumentAttribute {
   

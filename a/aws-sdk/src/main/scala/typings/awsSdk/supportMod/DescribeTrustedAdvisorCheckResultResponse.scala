@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTrustedAdvisorCheckResultResponse extends StObject {
   
   /**
     * The detailed results of the Trusted Advisor check.
     */
-  var result: js.UndefOr[TrustedAdvisorCheckResult] = js.native
+  var result: js.UndefOr[TrustedAdvisorCheckResult] = js.undefined
 }
 object DescribeTrustedAdvisorCheckResultResponse {
   

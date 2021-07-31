@@ -2,18 +2,16 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivitySetThreadSubscriptionEndpoint extends StObject {
   
   /**
     * Unsubscribes and subscribes you to a conversation. Set `ignored` to `true` to block all notifications from this thread.
     */
-  var ignored: js.UndefOr[Boolean] = js.native
+  var ignored: js.UndefOr[Boolean] = js.undefined
   
-  var thread_id: Double = js.native
+  var thread_id: Double
 }
 object ActivitySetThreadSubscriptionEndpoint {
   

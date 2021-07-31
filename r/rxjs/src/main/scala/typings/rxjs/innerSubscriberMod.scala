@@ -4,7 +4,6 @@ import typings.rxjs.outerSubscriberMod.OuterSubscriber
 import typings.rxjs.subscriberMod.Subscriber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object innerSubscriberMod {

@@ -2,15 +2,13 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionSelector extends StObject {
   
-  var expression: typings.angularCompiler.outputAstMod.Expression = js.native
+  var expression: typings.angularCompiler.outputAstMod.Expression
   
-  var selector: String = js.native
+  var selector: String
 }
 object ExpressionSelector {
   

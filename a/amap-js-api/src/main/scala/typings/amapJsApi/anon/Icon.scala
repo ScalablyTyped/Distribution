@@ -4,19 +4,17 @@ import typings.amapJsApi.AMap.LabelMarker.IconOptions
 import typings.amapJsApi.AMap.LabelMarker.TextOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: IconOptions = js.native
+  var icon: IconOptions
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var text: TextOptions = js.native
+  var text: TextOptions
   
-  var zIndex: Double = js.native
+  var zIndex: Double
 }
 object Icon {
   

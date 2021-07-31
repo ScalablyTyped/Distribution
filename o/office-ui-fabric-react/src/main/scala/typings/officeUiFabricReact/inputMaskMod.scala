@@ -4,73 +4,61 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMaskMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "clearNext")
+  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", JSImport.Namespace)
   @js.native
-  def clearNext(maskCharData: js.Array[IMaskValue], selectionStart: Double): js.Array[IMaskValue] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "clearPrev")
-  @js.native
-  def clearPrev(maskCharData: js.Array[IMaskValue], selectionStart: Double): js.Array[IMaskValue] = js.native
+  @scala.inline
+  def clearNext(maskCharData: js.Array[IMaskValue], selectionStart: Double): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("clearNext")(maskCharData.asInstanceOf[js.Any], selectionStart.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "clearRange")
-  @js.native
-  def clearRange(maskCharData: js.Array[IMaskValue], selectionStart: Double, selectionCount: Double): js.Array[IMaskValue] = js.native
+  @scala.inline
+  def clearPrev(maskCharData: js.Array[IMaskValue], selectionStart: Double): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("clearPrev")(maskCharData.asInstanceOf[js.Any], selectionStart.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "getLeftFormatIndex")
-  @js.native
-  def getLeftFormatIndex(maskCharData: js.Array[IMaskValue], index: Double): Double = js.native
+  @scala.inline
+  def clearRange(maskCharData: js.Array[IMaskValue], selectionStart: Double, selectionCount: Double): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("clearRange")(maskCharData.asInstanceOf[js.Any], selectionStart.asInstanceOf[js.Any], selectionCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "getMaskDisplay")
-  @js.native
-  def getMaskDisplay(mask: js.UndefOr[scala.Nothing], maskCharData: js.Array[IMaskValue]): String = js.native
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "getMaskDisplay")
-  @js.native
-  def getMaskDisplay(mask: js.UndefOr[scala.Nothing], maskCharData: js.Array[IMaskValue], maskChar: String): String = js.native
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "getMaskDisplay")
-  @js.native
-  def getMaskDisplay(mask: String, maskCharData: js.Array[IMaskValue]): String = js.native
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "getMaskDisplay")
-  @js.native
-  def getMaskDisplay(mask: String, maskCharData: js.Array[IMaskValue], maskChar: String): String = js.native
+  @scala.inline
+  def getLeftFormatIndex(maskCharData: js.Array[IMaskValue], index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLeftFormatIndex")(maskCharData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "getRightFormatIndex")
-  @js.native
-  def getRightFormatIndex(maskCharData: js.Array[IMaskValue], index: Double): Double = js.native
+  @scala.inline
+  def getMaskDisplay(mask: String, maskCharData: js.Array[IMaskValue]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaskDisplay")(mask.asInstanceOf[js.Any], maskCharData.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getMaskDisplay(mask: String, maskCharData: js.Array[IMaskValue], maskChar: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaskDisplay")(mask.asInstanceOf[js.Any], maskCharData.asInstanceOf[js.Any], maskChar.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getMaskDisplay(mask: Unit, maskCharData: js.Array[IMaskValue]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaskDisplay")(mask.asInstanceOf[js.Any], maskCharData.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getMaskDisplay(mask: Unit, maskCharData: js.Array[IMaskValue], maskChar: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaskDisplay")(mask.asInstanceOf[js.Any], maskCharData.asInstanceOf[js.Any], maskChar.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "insertString")
-  @js.native
-  def insertString(maskCharData: js.Array[IMaskValue], selectionStart: Double, newString: String): Double = js.native
+  @scala.inline
+  def getRightFormatIndex(maskCharData: js.Array[IMaskValue], index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRightFormatIndex")(maskCharData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "parseMask")
-  @js.native
-  def parseMask(): js.Array[IMaskValue] = js.native
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "parseMask")
-  @js.native
-  def parseMask(mask: js.UndefOr[scala.Nothing], formatChars: StringDictionary[RegExp]): js.Array[IMaskValue] = js.native
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "parseMask")
-  @js.native
-  def parseMask(mask: String): js.Array[IMaskValue] = js.native
-  @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/inputMask", "parseMask")
-  @js.native
-  def parseMask(mask: String, formatChars: StringDictionary[RegExp]): js.Array[IMaskValue] = js.native
+  @scala.inline
+  def insertString(maskCharData: js.Array[IMaskValue], selectionStart: Double, newString: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("insertString")(maskCharData.asInstanceOf[js.Any], selectionStart.asInstanceOf[js.Any], newString.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def parseMask(): js.Array[IMaskValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")().asInstanceOf[js.Array[IMaskValue]]
+  @scala.inline
+  def parseMask(mask: String): js.Array[IMaskValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any]).asInstanceOf[js.Array[IMaskValue]]
+  @scala.inline
+  def parseMask(mask: String, formatChars: StringDictionary[RegExp]): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any], formatChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
+  @scala.inline
+  def parseMask(mask: Unit, formatChars: StringDictionary[RegExp]): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any], formatChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
+  
   trait IMaskValue extends StObject {
     
     /**
       * This index refers to the index in the displayMask rather than the inputMask.
       * This means that any escaped characters do not count toward this index.
       */
-    var displayIndex: Double = js.native
+    var displayIndex: Double
     
-    var format: RegExp = js.native
+    var format: RegExp
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IMaskValue {
     

@@ -2,26 +2,24 @@ package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizeOptions extends StObject {
   
   /**
     * Allow clients to specify an empty state
     */
-  var allowEmptyState: js.UndefOr[Boolean] = js.native
+  var allowEmptyState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The authenticate handler
     */
-  var authenticateHandler: js.UndefOr[js.Object] = js.native
+  var authenticateHandler: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Lifetime of generated authorization codes in seconds (default = 5 minutes).
     */
-  var authorizationCodeLifetime: js.UndefOr[Double] = js.native
+  var authorizationCodeLifetime: js.UndefOr[Double] = js.undefined
 }
 object AuthorizeOptions {
   

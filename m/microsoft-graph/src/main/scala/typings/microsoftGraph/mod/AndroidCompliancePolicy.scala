@@ -2,83 +2,83 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AndroidCompliancePolicy extends DeviceCompliancePolicy {
+trait AndroidCompliancePolicy
+  extends StObject
+     with DeviceCompliancePolicy {
   
   // Require that devices have enabled device threat protection.
-  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.native
+  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured,
     * low, medium, high, notSet.
     */
-  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.native
+  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.undefined
   
   // Minimum Android security patch level.
-  var minAndroidSecurityPatchLevel: js.UndefOr[NullableOption[String]] = js.native
+  var minAndroidSecurityPatchLevel: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Maximum Android version.
-  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Minimum Android version.
-  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Number of days before the password expires. Valid values 1 to 365
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum password length. Valid values 4 to 16
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before a password is required.
-  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passwords to block. Valid values 1 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Require a password to unlock device.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type of characters in password. Possible values are: deviceDefault, alphabetic, alphanumeric, alphanumericWithSymbols,
     * lowSecurityBiometric, numeric, numericComplex, any.
     */
-  var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.undefined
   
   // Devices must not be jailbroken or rooted.
-  var securityBlockJailbrokenDevices: js.UndefOr[Boolean] = js.native
+  var securityBlockJailbrokenDevices: js.UndefOr[Boolean] = js.undefined
   
   // Disable USB debugging on Android devices.
-  var securityDisableUsbDebugging: js.UndefOr[Boolean] = js.native
+  var securityDisableUsbDebugging: js.UndefOr[Boolean] = js.undefined
   
   // Require that devices disallow installation of apps from unknown sources.
-  var securityPreventInstallAppsFromUnknownSources: js.UndefOr[Boolean] = js.native
+  var securityPreventInstallAppsFromUnknownSources: js.UndefOr[Boolean] = js.undefined
   
   // Require the device to pass the Company Portal client app runtime integrity check.
-  var securityRequireCompanyPortalAppIntegrity: js.UndefOr[Boolean] = js.native
+  var securityRequireCompanyPortalAppIntegrity: js.UndefOr[Boolean] = js.undefined
   
   // Require Google Play Services to be installed and enabled on the device.
-  var securityRequireGooglePlayServices: js.UndefOr[Boolean] = js.native
+  var securityRequireGooglePlayServices: js.UndefOr[Boolean] = js.undefined
   
   // Require the device to pass the SafetyNet basic integrity check.
-  var securityRequireSafetyNetAttestationBasicIntegrity: js.UndefOr[Boolean] = js.native
+  var securityRequireSafetyNetAttestationBasicIntegrity: js.UndefOr[Boolean] = js.undefined
   
   // Require the device to pass the SafetyNet certified device check.
-  var securityRequireSafetyNetAttestationCertifiedDevice: js.UndefOr[Boolean] = js.native
+  var securityRequireSafetyNetAttestationCertifiedDevice: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Require the device to have up to date security providers. The device will require Google Play Services to be enabled
     * and up to date.
     */
-  var securityRequireUpToDateSecurityProviders: js.UndefOr[Boolean] = js.native
+  var securityRequireUpToDateSecurityProviders: js.UndefOr[Boolean] = js.undefined
   
   // Require the Android Verify apps feature is turned on.
-  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.native
+  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.undefined
   
   // Require encryption on Android devices.
-  var storageRequireEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireEncryption: js.UndefOr[Boolean] = js.undefined
 }
 object AndroidCompliancePolicy {
   

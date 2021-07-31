@@ -3,19 +3,17 @@ package typings.firefoxWebextBrowser.browser.manifest
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeExperiment extends StObject {
   
-  var colors: js.UndefOr[StringDictionary[String]] = js.native
+  var colors: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var images: js.UndefOr[StringDictionary[String]] = js.native
+  var images: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var stylesheet: js.UndefOr[ExtensionURL] = js.native
+  var stylesheet: js.UndefOr[ExtensionURL] = js.undefined
 }
 object ThemeExperiment {
   

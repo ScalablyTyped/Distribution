@@ -2,15 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobEvent extends StObject {
   
-  var jobId: String = js.native
+  var jobId: String
   
-  var name: String = js.native
+  var name: String
 }
 object JobEvent {
   

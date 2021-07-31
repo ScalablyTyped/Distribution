@@ -2,7 +2,6 @@ package typings.amapJsApiArrivalRange
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -15,6 +14,7 @@ object global {
     @JSGlobal("AMap.ArrivalRange")
     @js.native
     class ArrivalRange ()
-      extends typings.amapJsApiArrivalRange.AMap.ArrivalRange
+      extends StObject
+         with typings.amapJsApiArrivalRange.AMap.ArrivalRange
   }
 }

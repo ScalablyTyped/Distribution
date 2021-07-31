@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetChangeTokenResponse extends StObject {
   
   /**
     * The ChangeToken that you used in the request. Use this value in a GetChangeTokenStatus request to get the current status of the request. 
     */
-  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.native
+  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.undefined
 }
 object GetChangeTokenResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.mediastoreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMetricPolicyOutput extends StObject {
   
   /**
     * The metric policy that is associated with the specific container.
     */
-  var MetricPolicy: typings.awsSdk.mediastoreMod.MetricPolicy = js.native
+  var MetricPolicy: typings.awsSdk.mediastoreMod.MetricPolicy
 }
 object GetMetricPolicyOutput {
   

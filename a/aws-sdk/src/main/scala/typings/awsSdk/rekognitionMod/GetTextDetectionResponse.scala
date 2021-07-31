@@ -2,38 +2,36 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTextDetectionResponse extends StObject {
   
   /**
     * Current status of the text detection job.
     */
-  var JobStatus: js.UndefOr[VideoJobStatus] = js.native
+  var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
   
   /**
     * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of text.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * If the job fails, StatusMessage provides a descriptive error message.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.undefined
   
   /**
     * An array of text detected in the video. Each element contains the detected text, the time in milliseconds from the start of the video that the text was detected, and where it was detected on the screen.
     */
-  var TextDetections: js.UndefOr[TextDetectionResults] = js.native
+  var TextDetections: js.UndefOr[TextDetectionResults] = js.undefined
   
   /**
     * Version number of the text detection model that was used to detect text.
     */
-  var TextModelVersion: js.UndefOr[String] = js.native
+  var TextModelVersion: js.UndefOr[String] = js.undefined
   
-  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.native
+  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.undefined
 }
 object GetTextDetectionResponse {
   

@@ -2,21 +2,19 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableSearch extends StObject {
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var onHide: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onHide: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var onSearch: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onSearch: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var options: js.UndefOr[MUIDataTableOptions] = js.native
+  var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
-  var searchText: js.UndefOr[String] = js.native
+  var searchText: js.UndefOr[String] = js.undefined
 }
 object MUIDataTableSearch {
   
@@ -36,13 +34,13 @@ object MUIDataTableSearch {
     def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setOnHide(value: /* args */ js.Any => _): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+    def setOnHide(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def setOnSearch(value: /* args */ js.Any => _): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+    def setOnSearch(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)

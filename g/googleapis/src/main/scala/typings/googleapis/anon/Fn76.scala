@@ -5,7 +5,6 @@ import typings.googleapis.v1managementMod.gamesManagementV1management.Gamesmanag
 import typings.googleapis.v1managementMod.gamesManagementV1management.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

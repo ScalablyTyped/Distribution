@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDeploymentmanager.gapi.client.deploymentma
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationsListResponse extends StObject {
   
   /** Output only. A token used to continue a truncated list request. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Output only. Operations contained in this list response. */
-  var operations: js.UndefOr[js.Array[Operation]] = js.native
+  var operations: js.UndefOr[js.Array[Operation]] = js.undefined
 }
 object OperationsListResponse {
   

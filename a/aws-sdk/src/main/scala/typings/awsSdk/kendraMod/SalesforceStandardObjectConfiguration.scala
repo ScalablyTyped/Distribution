@@ -2,31 +2,29 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceStandardObjectConfiguration extends StObject {
   
   /**
     * The name of the field in the standard object table that contains the document contents.
     */
-  var DocumentDataFieldName: DataSourceFieldName = js.native
+  var DocumentDataFieldName: DataSourceFieldName
   
   /**
     * The name of the field in the standard object table that contains the document titleB.
     */
-  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.native
+  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.undefined
   
   /**
     * One or more objects that map fields in the standard object to Amazon Kendra index fields. The index field must exist before you can map a Salesforce field to it.
     */
-  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.native
+  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
   
   /**
     * The name of the standard object.
     */
-  var Name: SalesforceStandardObjectName = js.native
+  var Name: SalesforceStandardObjectName
 }
 object SalesforceStandardObjectConfiguration {
   

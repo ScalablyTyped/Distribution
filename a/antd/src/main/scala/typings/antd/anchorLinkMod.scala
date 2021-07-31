@@ -11,7 +11,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anchorLinkMod {
@@ -55,7 +54,7 @@ object anchorLinkMod {
     def componentDidMount_MAnchorLink(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MAnchorLink(hasHref: AnchorLinkProps): Unit = js.native
+    def componentDidUpdate_MAnchorLink(hasPrevHref: AnchorLinkProps): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAnchorLink(): Unit = js.native
@@ -68,20 +67,19 @@ object anchorLinkMod {
     def renderAnchorLink(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   }
   
-  @js.native
   trait AnchorLinkProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var href: String = js.native
+    var href: String
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object AnchorLinkProps {
     

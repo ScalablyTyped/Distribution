@@ -2,24 +2,22 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ODBCError extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  val ErrorString: String = js.native
+  val ErrorString: String
   
   @JSName("Excel.ODBCError_typekey")
-  var ExcelDotODBCError_typekey: ODBCError = js.native
+  var ExcelDotODBCError_typekey: ODBCError
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val SqlState: String = js.native
+  val SqlState: String
 }
 object ODBCError {
   

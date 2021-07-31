@@ -5,69 +5,69 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and settings of a time field. */
-@js.native
-trait XTimeField extends XInterface {
+trait XTimeField
+  extends StObject
+     with XInterface {
   
   /** returns the currently set first value which is set on POS1 key. */
-  var First: Time = js.native
+  var First: Time
   
   /** returns the currently set last value which is set on END key. */
-  var Last: Time = js.native
+  var Last: Time
   
   /** returns the currently set maximum time value that can be entered by the user. */
-  var Max: Time = js.native
+  var Max: Time
   
   /** returns the currently set minimum time value that can be entered by the user. */
-  var Min: Time = js.native
+  var Min: Time
   
   /** returns the time value which is currently displayed in the time field. */
-  var Time: typings.activexLibreoffice.com_.sun.star.util.Time = js.native
+  var Time: typings.activexLibreoffice.com_.sun.star.util.Time
   
   /** returns the currently set first value which is set on POS1 key. */
-  def getFirst(): Time = js.native
+  def getFirst(): Time
   
   /** returns the currently set last value which is set on END key. */
-  def getLast(): Time = js.native
+  def getLast(): Time
   
   /** returns the currently set maximum time value that can be entered by the user. */
-  def getMax(): Time = js.native
+  def getMax(): Time
   
   /** returns the currently set minimum time value that can be entered by the user. */
-  def getMin(): Time = js.native
+  def getMin(): Time
   
   /** returns the time value which is currently displayed in the time field. */
-  def getTime(): Time = js.native
+  def getTime(): Time
   
   /** returns whether currently an empty value is set for the time. */
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
   /** returns whether the format is currently checked during user input. */
-  def isStrictFormat(): Boolean = js.native
+  def isStrictFormat(): Boolean
   
   /** sets an empty value for the time. */
-  def setEmpty(): Unit = js.native
+  def setEmpty(): Unit
   
   /** sets the first value to be set on POS1 key. */
-  def setFirst(Time: Time): Unit = js.native
+  def setFirst(Time: Time): Unit
   
   /** sets the last value to be set on END key. */
-  def setLast(Time: Time): Unit = js.native
+  def setLast(Time: Time): Unit
   
   /** sets the maximum time value that can be entered by the user. */
-  def setMax(Time: Time): Unit = js.native
+  def setMax(Time: Time): Unit
   
   /** sets the minimum time value that can be entered by the user. */
-  def setMin(Time: Time): Unit = js.native
+  def setMin(Time: Time): Unit
   
   /** determines if the format is checked during user input. */
-  def setStrictFormat(bStrict: Boolean): Unit = js.native
+  def setStrictFormat(bStrict: Boolean): Unit
   
   /** sets the time value which is displayed in the time field. */
-  def setTime(Time: Time): Unit = js.native
+  def setTime(Time: Time): Unit
 }
 object XTimeField {
   

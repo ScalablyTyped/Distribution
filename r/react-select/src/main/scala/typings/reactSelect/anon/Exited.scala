@@ -2,15 +2,13 @@ package typings.reactSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exited extends StObject {
   
-  var exited: js.Any = js.native
+  var exited: js.Any
   
-  var exiting: js.Any = js.native
+  var exiting: js.Any
 }
 object Exited {
   

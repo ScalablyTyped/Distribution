@@ -2,86 +2,84 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailChannelResponse extends StObject {
   
   /**
     * The unique identifier for the application that the email channel applies to.
     */
-  var ApplicationId: js.UndefOr[string] = js.native
+  var ApplicationId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon SES configuration set that's applied to messages that are sent through the channel.
     */
-  var ConfigurationSet: js.UndefOr[string] = js.native
+  var ConfigurationSet: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in ISO 8601 format, when the email channel was enabled.
     */
-  var CreationDate: js.UndefOr[string] = js.native
+  var CreationDate: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether the email channel is enabled for the application.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * The verified email address that email is sent from when you send email through the channel.
     */
-  var FromAddress: js.UndefOr[string] = js.native
+  var FromAddress: js.UndefOr[string] = js.undefined
   
   /**
     * (Not used) This property is retained only for backward compatibility.
     */
-  var HasCredential: js.UndefOr[boolean] = js.native
+  var HasCredential: js.UndefOr[boolean] = js.undefined
   
   /**
     * (Deprecated) An identifier for the email channel. This property is retained only for backward compatibility.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the identity, verified with Amazon Simple Email Service (Amazon SES), that's used when you send email through the channel.
     */
-  var Identity: js.UndefOr[string] = js.native
+  var Identity: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether the email channel is archived.
     */
-  var IsArchived: js.UndefOr[boolean] = js.native
+  var IsArchived: js.UndefOr[boolean] = js.undefined
   
   /**
     * The user who last modified the email channel.
     */
-  var LastModifiedBy: js.UndefOr[string] = js.native
+  var LastModifiedBy: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in ISO 8601 format, when the email channel was last modified.
     */
-  var LastModifiedDate: js.UndefOr[string] = js.native
+  var LastModifiedDate: js.UndefOr[string] = js.undefined
   
   /**
     * The maximum number of emails that can be sent through the channel each second.
     */
-  var MessagesPerSecond: js.UndefOr[integer] = js.native
+  var MessagesPerSecond: js.UndefOr[integer] = js.undefined
   
   /**
     * The type of messaging or notification platform for the channel. For the email channel, this value is EMAIL.
     */
-  var Platform: string = js.native
+  var Platform: string
   
   /**
     *  The ARN of the AWS Identity and Access Management (IAM) role that Amazon Pinpoint uses to submit email-related event data for the channel.
     */
-  var RoleArn: js.UndefOr[string] = js.native
+  var RoleArn: js.UndefOr[string] = js.undefined
   
   /**
     * The current version of the email channel.
     */
-  var Version: js.UndefOr[integer] = js.native
+  var Version: js.UndefOr[integer] = js.undefined
 }
 object EmailChannelResponse {
   

@@ -2,15 +2,13 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KiiMqttInstallationResponse extends StObject {
   
-  var installationID: String = js.native
+  var installationID: String
   
-  var installationRegistrationID: String = js.native
+  var installationRegistrationID: String
 }
 object KiiMqttInstallationResponse {
   

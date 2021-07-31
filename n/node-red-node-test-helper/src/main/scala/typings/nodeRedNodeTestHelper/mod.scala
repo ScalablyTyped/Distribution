@@ -18,7 +18,6 @@ import typings.supertest.mod.SuperTest
 import typings.supertest.mod.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node-red-node-test-helper.node-red-node-test-helper.NodeTestHelper & {  NodeTestHelper :new (): node-red-node-test-helper.node-red-node-test-helper.NodeTestHelper} */
@@ -57,12 +56,6 @@ object mod {
       * @param cb Function to call back when testFlows has been started.
       */
     def load(testNode: TestNodeInitializer, testFlows: TestFlows): js.Promise[Unit] = js.native
-    def load(
-      testNode: TestNodeInitializer,
-      testFlows: TestFlows,
-      testCredentials: js.UndefOr[scala.Nothing],
-      cb: js.Function0[Unit]
-    ): js.Promise[Unit] = js.native
     def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: js.Object): js.Promise[Unit] = js.native
     def load(
       testNode: TestNodeInitializer,
@@ -70,6 +63,7 @@ object mod {
       testCredentials: js.Object,
       cb: js.Function0[Unit]
     ): js.Promise[Unit] = js.native
+    def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: Unit, cb: js.Function0[Unit]): js.Promise[Unit] = js.native
     
     /**
       * Return a spy on the logs to look for events from the node under test. For example:
@@ -79,7 +73,7 @@ object mod {
       * });
       * ```
       */
-    def log(): SinonSpy[js.Array[_], _] = js.native
+    def log(): SinonSpy[js.Array[js.Any], js.Any] = js.native
     
     /**
       * Create http (supertest) request to the editor/admin url.
@@ -161,71 +155,55 @@ object mod {
   @scala.inline
   def NodeTestHelper_=(x: Instantiable0[NodeTestHelper]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NodeTestHelper")(x.asInstanceOf[js.Any])
   
-  @JSImport("node-red-node-test-helper", "addListener")
-  @js.native
-  def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  @JSImport("node-red-node-test-helper", "addListener")
-  @js.native
-  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  @scala.inline
+  def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  @scala.inline
+  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
   /**
     * Stop all flows.
     */
-  @JSImport("node-red-node-test-helper", "clearFlows")
-  @js.native
-  def clearFlows(): js.Promise[Unit] = js.native
+  @scala.inline
+  def clearFlows(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFlows")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("node-red-node-test-helper", "constructor")
-  @js.native
-  def constructor(): js.Any = js.native
-  @JSImport("node-red-node-test-helper", "constructor")
-  @js.native
-  def constructor(options: EventEmitterOptions): js.Any = js.native
+  @scala.inline
+  def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+  @scala.inline
+  def constructor(options: EventEmitterOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("node-red-node-test-helper", "emit")
-  @js.native
-  def emit(event: String, args: js.Any*): Boolean = js.native
-  @JSImport("node-red-node-test-helper", "emit")
-  @js.native
-  def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+  @scala.inline
+  def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def emit(event: js.Symbol, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("node-red-node-test-helper", "eventNames")
-  @js.native
-  def eventNames(): js.Array[String | js.Symbol] = js.native
+  @scala.inline
+  def eventNames(): js.Array[String | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventNames")().asInstanceOf[js.Array[String | js.Symbol]]
   
-  @JSImport("node-red-node-test-helper", "getMaxListeners")
-  @js.native
-  def getMaxListeners(): Double = js.native
+  @scala.inline
+  def getMaxListeners(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxListeners")().asInstanceOf[Double]
   
   /**
     * Returns a node instance by id in the testFlow. Any node that is defined in testFlows
     * can be retrieved, including any helper node added to the flow.
     * @param id Node id
     */
-  @JSImport("node-red-node-test-helper", "getNode")
-  @js.native
-  def getNode(id: String): Node = js.native
+  @scala.inline
+  def getNode(id: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(id.asInstanceOf[js.Any]).asInstanceOf[Node]
   
-  @JSImport("node-red-node-test-helper", "init")
-  @js.native
-  def init(nodeRedRuntime: String): Unit = js.native
-  @JSImport("node-red-node-test-helper", "init")
-  @js.native
-  def init(nodeRedRuntime: String, userSettings: LocalSettings): Unit = js.native
+  @scala.inline
+  def init(nodeRedRuntime: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(nodeRedRuntime.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def init(nodeRedRuntime: String, userSettings: LocalSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(nodeRedRuntime.asInstanceOf[js.Any], userSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-red-node-test-helper", "listenerCount")
-  @js.native
-  def listenerCount(event: String): Double = js.native
-  @JSImport("node-red-node-test-helper", "listenerCount")
-  @js.native
-  def listenerCount(event: js.Symbol): Double = js.native
+  @scala.inline
+  def listenerCount(event: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def listenerCount(event: js.Symbol): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("node-red-node-test-helper", "listeners")
-  @js.native
-  def listeners(event: String): js.Array[js.Function] = js.native
-  @JSImport("node-red-node-test-helper", "listeners")
-  @js.native
-  def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+  @scala.inline
+  def listeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
+  @scala.inline
+  def listeners(event: js.Symbol): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
   
   /**
     * Loads a flow then starts the flow.
@@ -237,28 +215,19 @@ object mod {
     * @param testCredentials Optional node credentials.
     * @param cb Function to call back when testFlows has been started.
     */
-  @JSImport("node-red-node-test-helper", "load")
-  @js.native
-  def load(testNode: TestNodeInitializer, testFlows: TestFlows): js.Promise[Unit] = js.native
-  @JSImport("node-red-node-test-helper", "load")
-  @js.native
-  def load(
-    testNode: TestNodeInitializer,
-    testFlows: TestFlows,
-    testCredentials: js.UndefOr[scala.Nothing],
-    cb: js.Function0[Unit]
-  ): js.Promise[Unit] = js.native
-  @JSImport("node-red-node-test-helper", "load")
-  @js.native
-  def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: js.Object): js.Promise[Unit] = js.native
-  @JSImport("node-red-node-test-helper", "load")
-  @js.native
+  @scala.inline
+  def load(testNode: TestNodeInitializer, testFlows: TestFlows): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def load(
     testNode: TestNodeInitializer,
     testFlows: TestFlows,
     testCredentials: js.Object,
     cb: js.Function0[Unit]
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: Unit, cb: js.Function0[Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Return a spy on the logs to look for events from the node under test. For example:
@@ -268,69 +237,51 @@ object mod {
     * });
     * ```
     */
-  @JSImport("node-red-node-test-helper", "log")
-  @js.native
-  def log(): SinonSpy[js.Array[_], _] = js.native
+  @scala.inline
+  def log(): SinonSpy[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[SinonSpy[js.Array[js.Any], js.Any]]
   
-  @JSImport("node-red-node-test-helper", "off")
-  @js.native
-  def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  @JSImport("node-red-node-test-helper", "off")
-  @js.native
-  def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  @scala.inline
+  def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  @scala.inline
+  def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @JSImport("node-red-node-test-helper", "on")
-  @js.native
-  def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  @JSImport("node-red-node-test-helper", "on")
-  @js.native
-  def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  @scala.inline
+  def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  @scala.inline
+  def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @JSImport("node-red-node-test-helper", "once")
-  @js.native
-  def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  @JSImport("node-red-node-test-helper", "once")
-  @js.native
-  def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  @scala.inline
+  def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  @scala.inline
+  def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
   // Added in Node 6...
-  @JSImport("node-red-node-test-helper", "prependListener")
-  @js.native
-  def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  @JSImport("node-red-node-test-helper", "prependListener")
-  @js.native
-  def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  @scala.inline
+  def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  @scala.inline
+  def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @JSImport("node-red-node-test-helper", "prependOnceListener")
-  @js.native
-  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  @JSImport("node-red-node-test-helper", "prependOnceListener")
-  @js.native
-  def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  @scala.inline
+  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependOnceListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  @scala.inline
+  def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependOnceListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @JSImport("node-red-node-test-helper", "rawListeners")
-  @js.native
-  def rawListeners(event: String): js.Array[js.Function] = js.native
-  @JSImport("node-red-node-test-helper", "rawListeners")
-  @js.native
-  def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  @scala.inline
+  def rawListeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
+  @scala.inline
+  def rawListeners(event: js.Symbol): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
   
-  @JSImport("node-red-node-test-helper", "removeAllListeners")
-  @js.native
-  def removeAllListeners(): this.type = js.native
-  @JSImport("node-red-node-test-helper", "removeAllListeners")
-  @js.native
-  def removeAllListeners(event: String): this.type = js.native
-  @JSImport("node-red-node-test-helper", "removeAllListeners")
-  @js.native
-  def removeAllListeners(event: js.Symbol): this.type = js.native
+  @scala.inline
+  def removeAllListeners(): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[this.type]
+  @scala.inline
+  def removeAllListeners(event: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[this.type]
+  @scala.inline
+  def removeAllListeners(event: js.Symbol): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[this.type]
   
-  @JSImport("node-red-node-test-helper", "removeListener")
-  @js.native
-  def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  @JSImport("node-red-node-test-helper", "removeListener")
-  @js.native
-  def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  @scala.inline
+  def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  @scala.inline
+  def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
   /**
     * Create http (supertest) request to the editor/admin url.
@@ -339,13 +290,11 @@ object mod {
     * helper.request().post('/inject/invalid').expect(404).end(done);
     * ```
     */
-  @JSImport("node-red-node-test-helper", "request")
-  @js.native
-  def request(): SuperTest[Test] = js.native
+  @scala.inline
+  def request(): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[SuperTest[Test]]
   
-  @JSImport("node-red-node-test-helper", "setMaxListeners")
-  @js.native
-  def setMaxListeners(n: Double): this.type = js.native
+  @scala.inline
+  def setMaxListeners(n: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(n.asInstanceOf[js.Any]).asInstanceOf[this.type]
   
   /**
     * Merges any userSettings with the defaults returned by `RED.settings`. Each
@@ -366,9 +315,8 @@ object mod {
     * @param userSettings - an object containing the runtime settings
     * @returns custom userSettings merged with default RED.settings
     */
-  @JSImport("node-red-node-test-helper", "settings")
-  @js.native
-  def settings(userSettings: PartialLocalSettings): LocalSettings = js.native
+  @scala.inline
+  def settings(userSettings: PartialLocalSettings): LocalSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(userSettings.asInstanceOf[js.Any]).asInstanceOf[LocalSettings]
   
   /**
     * Starts a Node-RED server for testing nodes that depend on http or web sockets endpoints
@@ -380,12 +328,10 @@ object mod {
     * ```
     * @param done callback
     */
-  @JSImport("node-red-node-test-helper", "startServer")
-  @js.native
-  def startServer(): Unit = js.native
-  @JSImport("node-red-node-test-helper", "startServer")
-  @js.native
-  def startServer(done: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def startServer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startServer")().asInstanceOf[Unit]
+  @scala.inline
+  def startServer(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startServer")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Stop server. Generally called after unload() complete. For example, to unload a flow then
@@ -399,32 +345,28 @@ object mod {
     * ```
     * @param done callback
     */
-  @JSImport("node-red-node-test-helper", "stopServer")
-  @js.native
-  def stopServer(): Unit = js.native
-  @JSImport("node-red-node-test-helper", "stopServer")
-  @js.native
-  def stopServer(done: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def stopServer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopServer")().asInstanceOf[Unit]
+  @scala.inline
+  def stopServer(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopServer")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns promise to stop all flows, clean up test runtime.
     */
-  @JSImport("node-red-node-test-helper", "unload")
-  @js.native
-  def unload(): js.Promise[Unit] = js.native
+  @scala.inline
+  def unload(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * Return the URL of the helper server including the ephemeral port used when starting the server.
     */
-  @JSImport("node-red-node-test-helper", "url")
-  @js.native
-  def url(): String = js.native
+  @scala.inline
+  def url(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[String]
   
   type TestCredentials[TCred] = NodeCredentials[TCred]
   
   type TestFlows = js.Array[TestFlowsItemNodeDef]
   
-  type TestFlowsItem[TNodeDef /* <: NodeDef */] = Partial[TNodeDef] with Id
+  type TestFlowsItem[TNodeDef /* <: NodeDef */] = Partial[TNodeDef] & Id
   
   type TestNodeInitializer = NodeInitializer[NodeAPISettingsWithData] | js.Array[NodeInitializer[NodeAPISettingsWithData]]
 }

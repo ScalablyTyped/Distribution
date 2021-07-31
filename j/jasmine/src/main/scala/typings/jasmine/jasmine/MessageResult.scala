@@ -2,15 +2,15 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MessageResult extends Result {
+trait MessageResult
+  extends StObject
+     with Result {
   
-  var trace: Trace = js.native
+  var trace: Trace
   
-  var values: js.Any = js.native
+  var values: js.Any
 }
 object MessageResult {
   

@@ -2,14 +2,12 @@ package typings.semanticUiSticky.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sticky.SemanticUI.Sticky.ClassNameSettings._Impl, 'fixed'> */
-@js.native
 trait PickImplfixed extends StObject {
   
-  var fixed: String = js.native
+  var fixed: String
 }
 object PickImplfixed {
   

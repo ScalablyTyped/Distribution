@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedAppPolicyDeploymentSummaryPerApp extends StObject {
   
   // Number of users the policy is applied.
-  var configurationAppliedUserCount: js.UndefOr[Double] = js.native
+  var configurationAppliedUserCount: js.UndefOr[Double] = js.undefined
   
   // Deployment of an app.
-  var mobileAppIdentifier: js.UndefOr[NullableOption[MobileAppIdentifier]] = js.native
+  var mobileAppIdentifier: js.UndefOr[NullableOption[MobileAppIdentifier]] = js.undefined
 }
 object ManagedAppPolicyDeploymentSummaryPerApp {
   

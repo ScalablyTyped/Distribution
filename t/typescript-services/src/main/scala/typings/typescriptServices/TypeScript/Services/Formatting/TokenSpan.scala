@@ -4,15 +4,15 @@ import typings.typescriptServices.TypeScript.SyntaxKind
 import typings.typescriptServices.TypeScript.TextSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TokenSpan extends TextSpan {
+trait TokenSpan
+  extends StObject
+     with TextSpan {
   
-  var _kind: js.Any = js.native
+  var _kind: js.Any
   
-  def kind(): SyntaxKind = js.native
+  def kind(): SyntaxKind
 }
 object TokenSpan {
   

@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToken extends StObject {
   
-  var scopes: String = js.native
+  var scopes: String
   
-  var startIndex: Double = js.native
+  var startIndex: Double
 }
 object IToken {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJobInput extends StObject {
   
-  var APIVersion: js.UndefOr[APIVersion_] = js.native
+  var APIVersion: js.UndefOr[APIVersion_] = js.undefined
   
-  var JobType: typings.awsSdk.importexportMod.JobType = js.native
+  var JobType: typings.awsSdk.importexportMod.JobType
   
-  var Manifest: typings.awsSdk.importexportMod.Manifest = js.native
+  var Manifest: typings.awsSdk.importexportMod.Manifest
   
-  var ManifestAddendum: js.UndefOr[typings.awsSdk.importexportMod.ManifestAddendum] = js.native
+  var ManifestAddendum: js.UndefOr[typings.awsSdk.importexportMod.ManifestAddendum] = js.undefined
   
-  var ValidateOnly: typings.awsSdk.importexportMod.ValidateOnly = js.native
+  var ValidateOnly: typings.awsSdk.importexportMod.ValidateOnly
 }
 object CreateJobInput {
   

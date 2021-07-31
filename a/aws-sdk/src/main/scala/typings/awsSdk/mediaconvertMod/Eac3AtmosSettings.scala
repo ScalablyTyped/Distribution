@@ -2,42 +2,40 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Eac3AtmosSettings extends StObject {
   
   /**
     * Specify the average bitrate in bits per second.
   Valid values: 384k, 448k, 640k, 768k
     */
-  var Bitrate: js.UndefOr[integerMin384000Max768000] = js.native
+  var Bitrate: js.UndefOr[integerMin384000Max768000] = js.undefined
   
   /**
     * Specify the bitstream mode for the E-AC-3 stream that the encoder emits. For more information about the EAC3 bitstream mode, see ATSC A/52-2012 (Annex E).
     */
-  var BitstreamMode: js.UndefOr[Eac3AtmosBitstreamMode] = js.native
+  var BitstreamMode: js.UndefOr[Eac3AtmosBitstreamMode] = js.undefined
   
   /**
     * The coding mode for Dolby Digital Plus JOC (Atmos) is always 9.1.6 (CODING_MODE_9_1_6).
     */
-  var CodingMode: js.UndefOr[Eac3AtmosCodingMode] = js.native
+  var CodingMode: js.UndefOr[Eac3AtmosCodingMode] = js.undefined
   
   /**
     * Enable Dolby Dialogue Intelligence to adjust loudness based on dialogue analysis.
     */
-  var DialogueIntelligence: js.UndefOr[Eac3AtmosDialogueIntelligence] = js.native
+  var DialogueIntelligence: js.UndefOr[Eac3AtmosDialogueIntelligence] = js.undefined
   
   /**
     * Specify the absolute peak level for a signal with dynamic range compression.
     */
-  var DynamicRangeCompressionLine: js.UndefOr[Eac3AtmosDynamicRangeCompressionLine] = js.native
+  var DynamicRangeCompressionLine: js.UndefOr[Eac3AtmosDynamicRangeCompressionLine] = js.undefined
   
   /**
     * Specify how the service limits the audio dynamic range when compressing the audio.
     */
-  var DynamicRangeCompressionRf: js.UndefOr[Eac3AtmosDynamicRangeCompressionRf] = js.native
+  var DynamicRangeCompressionRf: js.UndefOr[Eac3AtmosDynamicRangeCompressionRf] = js.undefined
   
   /**
     * Specify a value for the following Dolby Atmos setting: Left only/Right only center mix
@@ -45,47 +43,47 @@ trait Eac3AtmosSettings extends StObject {
   value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix).
   Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, and -6.0.
     */
-  var LoRoCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.native
+  var LoRoCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.undefined
   
   /**
     * Specify a value for the following Dolby Atmos setting: Left only/Right only (Lo/Ro surround). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel.
     */
-  var LoRoSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.native
+  var LoRoSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.undefined
   
   /**
     * Specify a value for the following Dolby Atmos setting: Left total/Right total center mix (Lt/Rt center). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, and -6.0.
     */
-  var LtRtCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.native
+  var LtRtCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.undefined
   
   /**
     * Specify a value for the following Dolby Atmos setting: Left total/Right total surround mix (Lt/Rt surround). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel.
     */
-  var LtRtSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.native
+  var LtRtSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.undefined
   
   /**
     * Choose how the service meters the loudness of your audio.
     */
-  var MeteringMode: js.UndefOr[Eac3AtmosMeteringMode] = js.native
+  var MeteringMode: js.UndefOr[Eac3AtmosMeteringMode] = js.undefined
   
   /**
     * This value is always 48000. It represents the sample rate in Hz.
     */
-  var SampleRate: js.UndefOr[integerMin48000Max48000] = js.native
+  var SampleRate: js.UndefOr[integerMin48000Max48000] = js.undefined
   
   /**
     * Specify the percentage of audio content that must be speech before the encoder uses the measured speech loudness as the overall program loudness.
     */
-  var SpeechThreshold: js.UndefOr[integerMin1Max100] = js.native
+  var SpeechThreshold: js.UndefOr[integerMin1Max100] = js.undefined
   
   /**
     * Choose how the service does stereo downmixing.
     */
-  var StereoDownmix: js.UndefOr[Eac3AtmosStereoDownmix] = js.native
+  var StereoDownmix: js.UndefOr[Eac3AtmosStereoDownmix] = js.undefined
   
   /**
     * Specify whether your input audio has an additional center rear surround channel matrix encoded into your left and right surround channels.
     */
-  var SurroundExMode: js.UndefOr[Eac3AtmosSurroundExMode] = js.native
+  var SurroundExMode: js.UndefOr[Eac3AtmosSurroundExMode] = js.undefined
 }
 object Eac3AtmosSettings {
   

@@ -2,28 +2,29 @@ package typings.flushable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(onComplete: FlushableOnCompleteHandler, delay: Double): FlushableOperation = (^.asInstanceOf[js.Dynamic].apply(onComplete.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[FlushableOperation]
+  
   @JSImport("flushable", JSImport.Namespace)
   @js.native
-  def apply(onComplete: FlushableOnCompleteHandler, delay: Double): FlushableOperation = js.native
+  val ^ : js.Any = js.native
   
   type FlushableOnCompleteHandler = js.Function1[/* flushed */ Boolean, js.Any]
   
-  @js.native
   trait FlushableOperation extends StObject {
     
     /** Stops the callback from being executed */
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
     /** Immediately executes the callback */
-    def flush(): Unit = js.native
+    def flush(): Unit
     
     /** Returns whether or not the callback has been executed */
-    def pending(): Boolean = js.native
+    def pending(): Boolean
   }
   object FlushableOperation {
     

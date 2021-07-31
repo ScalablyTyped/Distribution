@@ -2,15 +2,13 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorRegion extends StObject {
   
-  val loops: js.Array[js.Array[Double]] = js.native
+  val loops: js.Array[js.Array[Double]]
   
-  val windingRule: WindingRule = js.native
+  val windingRule: WindingRule
 }
 object VectorRegion {
   

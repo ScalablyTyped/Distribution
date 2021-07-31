@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Different {@link Diagram} Types, e.g., {@link PieDiagram} or {@link LineDiagram} , can be instantiated by the {@link
   * com.sun.star.lang.XMultiServiceFactory} of the {@link XChartDocument} .
   */
-@js.native
 trait Diagram
-  extends XDiagram
+  extends StObject
+     with XDiagram
      with XAxisSupplier
      with XSecondAxisTitleSupplier
      with XDiagramPositioning
@@ -38,33 +37,33 @@ trait Diagram
     * use the interface {@link com.sun.star.drawing.XShape} to set a concrete position (note {@link com.sun.star.chart.XDiagram} is derived from {@link
     * com.sun.star.drawing.XShape} ).
     */
-  var AutomaticPosition: Boolean = js.native
+  var AutomaticPosition: Boolean
   
   /**
     * If this property is `TRUE` the size is calculated by the application automatically. Setting this property to false will have no effect. Instead use
     * the interface {@link com.sun.star.drawing.XShape} to set a concrete size (note {@link com.sun.star.chart.XDiagram} is derived from {@link
     * com.sun.star.drawing.XShape} ).
     */
-  var AutomaticSize: Boolean = js.native
+  var AutomaticSize: Boolean
   
   /**
     * specifies how the caption of data points is displayed.
     * @see ChartDataCaption
     */
-  var DataCaption: Double = js.native
+  var DataCaption: Double
   
   /**
     * determines if the data for a data row is contained in the columns or in the rows of the data array.
     * @see ChartDataRowSource
     * @see ChartDataArray
     */
-  var DataRowSource: ChartDataRowSource = js.native
+  var DataRowSource: ChartDataRowSource
   
   /**
     * specifies how empty or invalid cells in the provided data should be handled when displayed
     * @see MissingValueTreatment
     */
-  var MissingValueTreatment: Double = js.native
+  var MissingValueTreatment: Double
 }
 object Diagram {
   

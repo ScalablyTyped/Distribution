@@ -2,17 +2,15 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPeerRegisterRequest extends StObject {
   
   /** PeerRegisterRequest endpoint */
-  var endpoint: js.UndefOr[String | Null] = js.native
+  var endpoint: js.UndefOr[String | Null] = js.undefined
   
   /** PeerRegisterRequest protocolVersion */
-  var protocolVersion: js.UndefOr[Double | Null] = js.native
+  var protocolVersion: js.UndefOr[Double | Null] = js.undefined
 }
 object IPeerRegisterRequest {
   

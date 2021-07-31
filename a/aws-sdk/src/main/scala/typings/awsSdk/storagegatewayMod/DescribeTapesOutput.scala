@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTapesOutput extends StObject {
   
   /**
     * An opaque string which can be used as part of a subsequent DescribeTapes call to retrieve the next page of results. If a response does not contain a marker, then there are no more results to be retrieved.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * An array of virtual tape descriptions.
     */
-  var Tapes: js.UndefOr[typings.awsSdk.storagegatewayMod.Tapes] = js.native
+  var Tapes: js.UndefOr[typings.awsSdk.storagegatewayMod.Tapes] = js.undefined
 }
 object DescribeTapesOutput {
   

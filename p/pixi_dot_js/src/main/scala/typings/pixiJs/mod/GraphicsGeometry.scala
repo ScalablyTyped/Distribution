@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "GraphicsGeometry")
 @js.native
 class GraphicsGeometry ()
-  extends typings.pixiJs.PIXI.GraphicsGeometry
+  extends StObject
+     with typings.pixiJs.PIXI.GraphicsGeometry {
+  
+  /**
+    * Buffer used for position, color, texture IDs
+    *
+    * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
+    * @protected
+    */
+  /* CompleteClass */
+  var _buffer: typings.pixiJs.PIXI.Buffer = js.native
+  
+  /**
+    * Index buffer data
+    *
+    * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
+    * @protected
+    */
+  /* CompleteClass */
+  var _indexBuffer: typings.pixiJs.PIXI.Buffer = js.native
+}
 object GraphicsGeometry {
   
   @JSImport("pixi.js", "GraphicsGeometry")

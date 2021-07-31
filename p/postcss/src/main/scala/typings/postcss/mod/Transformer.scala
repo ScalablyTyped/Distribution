@@ -2,7 +2,6 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,7 +10,7 @@ trait Transformer
      with _AcceptedPlugin {
   
   /* InferMemberOverrides */
-  override def apply(T0: /* root */ Root_, T1: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
+  override def apply(arg1: /* root */ Root_, arg2: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
   
   var postcssPlugin: js.UndefOr[String] = js.native
   

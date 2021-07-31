@@ -6,19 +6,17 @@ import typings.d3pie.d3pieStrings.`top-center`
 import typings.d3pie.d3pieStrings.`top-left`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var location: js.UndefOr[`top-center` | `top-left` | `pie-center`] = js.native
+  var location: js.UndefOr[`top-center` | `top-left` | `pie-center`] = js.undefined
   
-  var subtitle: js.UndefOr[ID3PieTextOptions] = js.native
+  var subtitle: js.UndefOr[ID3PieTextOptions] = js.undefined
   
-  var title: js.UndefOr[ID3PieTextOptions] = js.native
+  var title: js.UndefOr[ID3PieTextOptions] = js.undefined
   
-  var titleSubtitlePadding: js.UndefOr[Double] = js.native
+  var titleSubtitlePadding: js.UndefOr[Double] = js.undefined
 }
 object Location {
   

@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingHeapProfile extends StObject {
   
-  var head: SamplingHeapProfileNode = js.native
+  var head: SamplingHeapProfileNode
   
-  var samples: js.Array[SamplingHeapProfileSample] = js.native
+  var samples: js.Array[SamplingHeapProfileSample]
 }
 object SamplingHeapProfile {
   

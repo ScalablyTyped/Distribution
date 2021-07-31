@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.ImageEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofImageEditor extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ImageEditor = js.native
+  def extend(proto: js.Object): ImageEditor
   
   /* static member */
-  var fn: ImageEditor = js.native
+  var fn: ImageEditor
 }
 object TypeofImageEditor {
   

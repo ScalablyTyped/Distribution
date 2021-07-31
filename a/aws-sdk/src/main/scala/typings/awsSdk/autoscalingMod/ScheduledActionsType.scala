@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledActionsType extends StObject {
   
   /**
     * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The scheduled actions.
     */
-  var ScheduledUpdateGroupActions: js.UndefOr[typings.awsSdk.autoscalingMod.ScheduledUpdateGroupActions] = js.native
+  var ScheduledUpdateGroupActions: js.UndefOr[typings.awsSdk.autoscalingMod.ScheduledUpdateGroupActions] = js.undefined
 }
 object ScheduledActionsType {
   

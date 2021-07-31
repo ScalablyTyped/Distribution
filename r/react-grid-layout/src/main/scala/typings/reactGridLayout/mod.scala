@@ -15,7 +15,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,6 +23,9 @@ object mod {
   @js.native
   class ^ ()
     extends Component[ReactGridLayoutProps, js.Object, js.Any]
+  @JSImport("react-grid-layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-grid-layout", "Responsive")
   @js.native
@@ -37,30 +39,27 @@ object mod {
     def this(props: ResponsiveProps, context: js.Any) = this()
   }
   
-  @JSImport("react-grid-layout", "WidthProvider")
-  @js.native
-  def WidthProvider[P](component: ComponentClass[P, ComponentState]): ComponentClass[P with WidthProviderProps, ComponentState] = js.native
-  @JSImport("react-grid-layout", "WidthProvider")
-  @js.native
-  def WidthProvider[P](component: FunctionComponent[P]): ComponentClass[P with WidthProviderProps, ComponentState] = js.native
+  @scala.inline
+  def WidthProvider[P](component: ComponentClass[P, ComponentState]): ComponentClass[P & WidthProviderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("WidthProvider")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & WidthProviderProps, ComponentState]]
+  @scala.inline
+  def WidthProvider[P](component: FunctionComponent[P]): ComponentClass[P & WidthProviderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("WidthProvider")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & WidthProviderProps, ComponentState]]
   
-  @js.native
   trait CoreProps extends StObject {
     
     /**
       * If true, the container height swells and contracts to fit contents.
       */
-    var autoSize: js.UndefOr[Boolean] = js.native
+    var autoSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The classname to add to the root element.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Compaction type.
       */
-    var compactType: js.UndefOr[vertical | horizontal | Null] = js.native
+    var compactType: js.UndefOr[vertical | horizontal | Null] = js.undefined
     
     /**
       * A CSS selector for tags that will not be draggable.
@@ -69,7 +68,7 @@ object mod {
       *
       * If you forget the leading. it will not work.
       */
-    var draggableCancel: js.UndefOr[String] = js.native
+    var draggableCancel: js.UndefOr[String] = js.undefined
     
     /**
       * A CSS selector for tags that will act as the draggable handle.
@@ -78,33 +77,33 @@ object mod {
       *
       * If you forget the leading . it will not work.
       */
-    var draggableHandle: js.UndefOr[String] = js.native
+    var draggableHandle: js.UndefOr[String] = js.undefined
     
     /**
       * Configuration of a dropping element. Dropping element is a "virtual" element
       * which appears when you drag over some element from outside.
       */
-    var droppingItem: js.UndefOr[H] = js.native
+    var droppingItem: js.UndefOr[H] = js.undefined
     
     /**
       * If true and draggable, all items will be moved only within grid.
       */
-    var isBounded: js.UndefOr[Boolean] = js.native
+    var isBounded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to false it will disable dragging on all children.
       */
-    var isDraggable: js.UndefOr[Boolean] = js.native
+    var isDraggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to false it will not call `onDrop()` callback.
       */
-    var isDroppable: js.UndefOr[Boolean] = js.native
+    var isDroppable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to false it will disable resizing on all children.
       */
-    var isResizable: js.UndefOr[Boolean] = js.native
+    var isResizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default Infinity, but you can specify a max here if you like.
@@ -113,54 +112,54 @@ object mod {
       * an item past the barrier. They can push items beyond the barrier, though.
       * Intentionally not documented for this reason.
       */
-    var maxRows: js.UndefOr[Double] = js.native
+    var maxRows: js.UndefOr[Double] = js.undefined
     
     /**
       * Calls on each drag movement.
       */
-    var onDrag: js.UndefOr[ItemCallback] = js.native
+    var onDrag: js.UndefOr[ItemCallback] = js.undefined
     
     /**
       * Calls when drag starts.
       */
-    var onDragStart: js.UndefOr[ItemCallback] = js.native
+    var onDragStart: js.UndefOr[ItemCallback] = js.undefined
     
     /**
       * Calls when drag is complete.
       */
-    var onDragStop: js.UndefOr[ItemCallback] = js.native
+    var onDragStop: js.UndefOr[ItemCallback] = js.undefined
     
     /**
       * Calls when some element has been dropped
       */
     var onDrop: js.UndefOr[
         js.Function3[/* layout */ js.Array[Layout], /* item */ Layout, /* e */ Event, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Calls when resize movement happens.
       */
-    var onResize: js.UndefOr[ItemCallback] = js.native
+    var onResize: js.UndefOr[ItemCallback] = js.undefined
     
     /**
       * Calls when resize starts.
       */
-    var onResizeStart: js.UndefOr[ItemCallback] = js.native
+    var onResizeStart: js.UndefOr[ItemCallback] = js.undefined
     
     /**
       * Calls when resize is complete.
       */
-    var onResizeStop: js.UndefOr[ItemCallback] = js.native
+    var onResizeStop: js.UndefOr[ItemCallback] = js.undefined
     
     /**
       * If true, grid items won't change position when being dragged over.
       */
-    var preventCollision: js.UndefOr[Boolean] = js.native
+    var preventCollision: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines custom component for resize handle
       */
-    var resizeHandle: js.UndefOr[ReactNode | (js.Function1[/* resizeHandle */ ResizeHandle, ReactNode])] = js.native
+    var resizeHandle: js.UndefOr[ReactNode | (js.Function1[/* resizeHandle */ ResizeHandle, ReactNode])] = js.undefined
     
     /**
       * Defines which resize handles should be rendered
@@ -174,39 +173,39 @@ object mod {
       * 'se' - Southeast handle (bottom-right)
       * 'ne' - Northeast handle (top-right)
       */
-    var resizeHandles: js.UndefOr[js.Array[ResizeHandle]] = js.native
+    var resizeHandles: js.UndefOr[js.Array[ResizeHandle]] = js.undefined
     
     /**
       * Rows have a static height, but you can change this based on breakpoints if you like.
       */
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Inline-style object to pass to the root element.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Scale coefficient for CSS3 `transform: scale()`
       */
-    var transformScale: js.UndefOr[Double] = js.native
+    var transformScale: js.UndefOr[Double] = js.undefined
     
     /**
       * Uses CSS3 `translate()` instead of position top/left.
       * This makes about 6x faster paint performance.
       */
-    var useCSSTransforms: js.UndefOr[Boolean] = js.native
+    var useCSSTransforms: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the layout will compact vertically.
       */
-    var verticalCompact: js.UndefOr[Boolean] = js.native
+    var verticalCompact: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This allows setting the initial width on the server side.
       * This is required unless using the HOC <WidthProvider> or similar.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CoreProps {
     
@@ -414,85 +413,84 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Layout extends StObject {
     
     /**
       * Height in grid units.
       */
-    var h: Double = js.native
+    var h: Double
     
     /**
       * A string corresponding to the component key.
       * Uses the index of components instead if not provided.
       */
-    var i: String = js.native
+    var i: String
     
     /**
       * If true and draggable, item will be moved only within grid.
       */
-    var isBounded: js.UndefOr[Boolean] = js.native
+    var isBounded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If false, will not be draggable. Overrides `static`.
       */
-    var isDraggable: js.UndefOr[Boolean] = js.native
+    var isDraggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If false, will not be resizable. Overrides `static`.
       */
-    var isResizable: js.UndefOr[Boolean] = js.native
+    var isResizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum height in grid units.
       */
-    var maxH: js.UndefOr[Double] = js.native
+    var maxH: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum width in grid units.
       */
-    var maxW: js.UndefOr[Double] = js.native
+    var maxW: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum height in grid units.
       */
-    var minH: js.UndefOr[Double] = js.native
+    var minH: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum width in grid units.
       */
-    var minW: js.UndefOr[Double] = js.native
+    var minW: js.UndefOr[Double] = js.undefined
     
     /**
       * set by DragEvents (onDragStart, onDrag, onDragStop) and ResizeEvents (onResizeStart, onResize, onResizeStop)
       */
-    var moved: js.UndefOr[Boolean] = js.native
+    var moved: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, a handle is only shown on the bottom-right (southeast) corner.
       * Note that resizing from the top or left is generally not intuitive.
       */
-    var resizeHandles: js.UndefOr[js.Array[ResizeHandle]] = js.native
+    var resizeHandles: js.UndefOr[js.Array[ResizeHandle]] = js.undefined
     
     /**
       * If true, equal to `isDraggable: false` and `isResizable: false`.
       */
-    var static: js.UndefOr[Boolean] = js.native
+    var static: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Width in grid units.
       */
-    var w: Double = js.native
+    var w: Double
     
     /**
       * X position in grid units.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * Y position in grid units.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object Layout {
     
@@ -589,18 +587,19 @@ object mod {
   
   type ReactGridLayout = Component[ReactGridLayoutProps, js.Object, js.Any]
   
-  @js.native
-  trait ReactGridLayoutProps extends CoreProps {
+  trait ReactGridLayoutProps
+    extends StObject
+       with CoreProps {
     
     /**
       * Number of columns in this layout.
       */
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
     /**
       * Padding inside the container `[x, y]` in px.
       */
-    var containerPadding: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var containerPadding: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     /**
       * Layout is an array of object with the format:
@@ -615,18 +614,18 @@ object mod {
       *
       * If not provided, use data-grid props on children.
       */
-    var layout: js.UndefOr[js.Array[Layout]] = js.native
+    var layout: js.UndefOr[js.Array[Layout]] = js.undefined
     
     /**
       * Margin between items `[x, y]` in px.
       */
-    var margin: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var margin: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     /**
       * Callback so you can save the layout.
       * Calls back with (currentLayout) after every drag or resize stop.
       */
-    var onLayoutChange: js.UndefOr[js.Function1[/* layout */ js.Array[Layout], Unit]] = js.native
+    var onLayoutChange: js.UndefOr[js.Function1[/* layout */ js.Array[Layout], Unit]] = js.undefined
   }
   object ReactGridLayoutProps {
     
@@ -712,49 +711,50 @@ object mod {
     def w: typings.reactGridLayout.reactGridLayoutStrings.w = "w".asInstanceOf[typings.reactGridLayout.reactGridLayoutStrings.w]
   }
   
-  @js.native
-  trait ResponsiveProps extends CoreProps {
+  trait ResponsiveProps
+    extends StObject
+       with CoreProps {
     
     /**
       * `{name: pxVal}, e.g. {lg: 1200, md: 996, sm: 768, xs: 480}`
       *
       * Breakpoint names are arbitrary but must match in the cols and layouts objects.
       */
-    var breakpoints: js.UndefOr[StringDictionary[Double]] = js.native
+    var breakpoints: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /**
       * Number of cols. This is a breakpoint -> cols map, e.g. `{lg: 12, md: 10, ...}`.
       */
-    var cols: js.UndefOr[StringDictionary[Double]] = js.native
+    var cols: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /**
       * Padding inside the container in px and formatt [x, y] or { breakpoint: [x, y] }.
       */
-    var containerPadding: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.native
+    var containerPadding: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.undefined
     
     /**
       * layouts is an object mapping breakpoints to layouts.
       *
       * e.g. `{lg: Layout[], md: Layout[], ...}`
       */
-    var layouts: js.UndefOr[Layouts] = js.native
+    var layouts: js.UndefOr[Layouts] = js.undefined
     
     /**
       * Margin between items in px and formatt [x, y] or { breakpoint: [x, y] }.
       */
-    var margin: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.native
+    var margin: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.undefined
     
     /**
       * Calls back with breakpoint and new number pf cols.
       */
-    var onBreakpointChange: js.UndefOr[js.Function2[/* newBreakpoint */ String, /* newCols */ Double, Unit]] = js.native
+    var onBreakpointChange: js.UndefOr[js.Function2[/* newBreakpoint */ String, /* newCols */ Double, Unit]] = js.undefined
     
     /**
       * Callback so you can save the layout.
       */
     var onLayoutChange: js.UndefOr[
         js.Function2[/* currentLayout */ js.Array[Layout], /* allLayouts */ Layouts, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback when the width changes, so you can modify the layout as needed.
@@ -767,7 +767,7 @@ object mod {
           /* containerPadding */ js.Tuple2[Double, Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ResponsiveProps {
     
@@ -832,7 +832,6 @@ object mod {
     }
   }
   
-  @js.native
   trait WidthProviderProps extends StObject {
     
     /**
@@ -840,7 +839,7 @@ object mod {
       * Use this if you'd like to completely eliminate any resizing animation on
       * application/component mount.
       */
-    var measureBeforeMount: js.UndefOr[Boolean] = js.native
+    var measureBeforeMount: js.UndefOr[Boolean] = js.undefined
   }
   object WidthProviderProps {
     

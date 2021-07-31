@@ -2,59 +2,49 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorManipulatorMod {
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "convertHexToRGB")
+  @JSImport("@material-ui/core/styles/colorManipulator", JSImport.Namespace)
   @js.native
-  def convertHexToRGB(hex: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "darken")
-  @js.native
-  def darken(color: String): String = js.native
-  @JSImport("@material-ui/core/styles/colorManipulator", "darken")
-  @js.native
-  def darken(color: String, coefficient: Double): String = js.native
+  @scala.inline
+  def convertHexToRGB(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertHexToRGB")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "decomposeColor")
-  @js.native
-  def decomposeColor(color: String): ColorObject = js.native
+  @scala.inline
+  def darken(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("darken")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def darken(color: String, coefficient: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("darken")(color.asInstanceOf[js.Any], coefficient.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "emphasize")
-  @js.native
-  def emphasize(color: String): String = js.native
-  @JSImport("@material-ui/core/styles/colorManipulator", "emphasize")
-  @js.native
-  def emphasize(color: String, coefficient: Double): String = js.native
+  @scala.inline
+  def decomposeColor(color: String): ColorObject = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeColor")(color.asInstanceOf[js.Any]).asInstanceOf[ColorObject]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "fade")
-  @js.native
-  def fade(color: String, value: Double): String = js.native
+  @scala.inline
+  def emphasize(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emphasize")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def emphasize(color: String, coefficient: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emphasize")(color.asInstanceOf[js.Any], coefficient.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "getContrastRatio")
-  @js.native
-  def getContrastRatio(foreground: String, background: String): Double = js.native
+  @scala.inline
+  def fade(color: String, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fade")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "getLuminance")
-  @js.native
-  def getLuminance(color: String): Double = js.native
+  @scala.inline
+  def getContrastRatio(foreground: String, background: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getContrastRatio")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "lighten")
-  @js.native
-  def lighten(color: String): String = js.native
-  @JSImport("@material-ui/core/styles/colorManipulator", "lighten")
-  @js.native
-  def lighten(color: String, coefficient: Double): String = js.native
+  @scala.inline
+  def getLuminance(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "recomposeColor")
-  @js.native
-  def recomposeColor(color: ColorObject): String = js.native
+  @scala.inline
+  def lighten(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def lighten(color: String, coefficient: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(color.asInstanceOf[js.Any], coefficient.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@material-ui/core/styles/colorManipulator", "rgbToHex")
-  @js.native
-  def rgbToHex(color: String): String = js.native
+  @scala.inline
+  def recomposeColor(color: ColorObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("recomposeColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def rgbToHex(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rgbToHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreStrings.rgb
@@ -78,12 +68,11 @@ object colorManipulatorMod {
     def rgba: typings.materialUiCore.materialUiCoreStrings.rgba = "rgba".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rgba]
   }
   
-  @js.native
   trait ColorObject extends StObject {
     
-    var `type`: ColorFormat = js.native
+    var `type`: ColorFormat
     
-    var values: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]) = js.native
+    var values: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
   }
   object ColorObject {
     

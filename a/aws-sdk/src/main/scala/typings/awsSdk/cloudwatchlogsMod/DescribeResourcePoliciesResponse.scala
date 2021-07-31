@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeResourcePoliciesResponse extends StObject {
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The resource policies that exist in this account.
     */
-  var resourcePolicies: js.UndefOr[ResourcePolicies] = js.native
+  var resourcePolicies: js.UndefOr[ResourcePolicies] = js.undefined
 }
 object DescribeResourcePoliciesResponse {
   

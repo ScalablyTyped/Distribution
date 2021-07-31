@@ -6,16 +6,16 @@ import typings.nodeZendesk.mod.ZendeskID
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Fields {
   
-  @js.native
-  trait CreateUserField extends UserField {
+  trait CreateUserField
+    extends StObject
+       with UserField {
     
     @JSName("key")
-    var key_CreateUserField: String = js.native
+    var key_CreateUserField: String
   }
   object CreateUserField {
     
@@ -38,59 +38,58 @@ object Fields {
   @js.native
   trait Methods extends StObject {
     
-    def create(field: CreateUserField): js.Promise[_] = js.native
-    def create(field: CreateUserField, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def create(field: CreateUserField): js.Promise[js.Any] = js.native
+    def create(field: CreateUserField, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
     
-    def delete(fieldId: ZendeskID): js.Promise[_] = js.native
-    def delete(fieldId: ZendeskID, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def delete(fieldId: ZendeskID): js.Promise[js.Any] = js.native
+    def delete(fieldId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
     
-    def list(): js.Promise[_] = js.native
-    def list(cb: ZendeskCallback[_, _]): js.Any = js.native
+    def list(): js.Promise[js.Any] = js.native
+    def list(cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
     
-    def show(fieldId: ZendeskID): js.Promise[_] = js.native
-    def show(fieldId: ZendeskID, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def show(fieldId: ZendeskID): js.Promise[js.Any] = js.native
+    def show(fieldId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
     
-    def update(fieldId: ZendeskID, field: js.Any): js.Promise[_] = js.native
-    def update(fieldId: ZendeskID, field: js.Any, cb: ZendeskCallback[_, _]): js.Any = js.native
+    def update(fieldId: ZendeskID, field: js.Any): js.Promise[js.Any] = js.native
+    def update(fieldId: ZendeskID, field: js.Any, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
   }
   
   /**
     * Represents 'user_field'
     */
-  @js.native
   trait UserField extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var created_at: js.UndefOr[Date] = js.native
+    var created_at: js.UndefOr[Date] = js.undefined
     
-    var custom_field_options: js.UndefOr[js.Array[CustomFieldOptions]] = js.native
+    var custom_field_options: js.UndefOr[js.Array[CustomFieldOptions]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    val id: js.UndefOr[Double] = js.native
+    val id: js.UndefOr[Double] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var raw_description: js.UndefOr[String] = js.native
+    var raw_description: js.UndefOr[String] = js.undefined
     
-    var raw_title: js.UndefOr[String] = js.native
+    var raw_title: js.UndefOr[String] = js.undefined
     
-    var regexp_for_validation: js.UndefOr[String] = js.native
+    var regexp_for_validation: js.UndefOr[String] = js.undefined
     
-    val system: js.UndefOr[Boolean] = js.native
+    val system: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    val `type`: js.UndefOr[UserFieldType] = js.native
+    val `type`: js.UndefOr[UserFieldType] = js.undefined
     
-    var updated_at: js.UndefOr[Date] = js.native
+    var updated_at: js.UndefOr[Date] = js.undefined
     
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
   }
   object UserField {
     

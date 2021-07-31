@@ -2,31 +2,29 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScroll extends StObject {
   
-  var autoScroll: js.UndefOr[Boolean] = js.native
+  var autoScroll: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var onAdd: js.UndefOr[js.Function1[/* e */ EventFromComponent, _]] = js.native
+  var onAdd: js.UndefOr[js.Function1[/* e */ EventFromComponent, js.Any]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* e */ CancelEvent, _]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* e */ CancelEvent, js.Any]] = js.undefined
   
-  var onDragMove: js.UndefOr[js.Function1[/* e */ CancelEvent, _]] = js.native
+  var onDragMove: js.UndefOr[js.Function1[/* e */ CancelEvent, js.Any]] = js.undefined
   
-  var onDragStart: js.UndefOr[js.Function1[/* e */ FromDataItemData, _]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* e */ FromDataItemData, js.Any]] = js.undefined
   
-  var onRemove: js.UndefOr[js.Function1[/* e */ FromComponentFromData, _]] = js.native
+  var onRemove: js.UndefOr[js.Function1[/* e */ FromComponentFromData, js.Any]] = js.undefined
   
-  var scrollSensitivity: js.UndefOr[Double] = js.native
+  var scrollSensitivity: js.UndefOr[Double] = js.undefined
   
-  var scrollSpeed: js.UndefOr[Double] = js.native
+  var scrollSpeed: js.UndefOr[Double] = js.undefined
 }
 object AutoScroll {
   
@@ -58,31 +56,31 @@ object AutoScroll {
     def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setOnAdd(value: /* e */ EventFromComponent => _): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    def setOnAdd(value: /* e */ EventFromComponent => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
     @scala.inline
-    def setOnDragEnd(value: /* e */ CancelEvent => _): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: /* e */ CancelEvent => js.Any): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def setOnDragMove(value: /* e */ CancelEvent => _): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
+    def setOnDragMove(value: /* e */ CancelEvent => js.Any): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
     
     @scala.inline
-    def setOnDragStart(value: /* e */ FromDataItemData => _): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    def setOnDragStart(value: /* e */ FromDataItemData => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def setOnRemove(value: /* e */ FromComponentFromData => _): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+    def setOnRemove(value: /* e */ FromComponentFromData => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)

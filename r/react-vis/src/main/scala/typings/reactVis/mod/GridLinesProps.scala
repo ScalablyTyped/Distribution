@@ -5,44 +5,42 @@ import typings.reactVis.reactVisStrings.horizontal
 import typings.reactVis.reactVisStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridLinesProps extends StObject {
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
   // default: 'vertical'
-  var attr: String = js.native
+  var attr: String
   
-  var direction: js.UndefOr[vertical | horizontal] = js.native
+  var direction: js.UndefOr[vertical | horizontal] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var innerHeight: js.UndefOr[Double] = js.native
+  var innerHeight: js.UndefOr[Double] = js.undefined
   
-  var innerWidth: js.UndefOr[Double] = js.native
+  var innerWidth: js.UndefOr[Double] = js.undefined
   
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginRight: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var tickTotal: js.UndefOr[Double] = js.native
+  var tickTotal: js.UndefOr[Double] = js.undefined
   
-  var tickValues: js.UndefOr[js.Array[_]] = js.native
+  var tickValues: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GridLinesProps {
   
@@ -131,7 +129,7 @@ object GridLinesProps {
     def setTickTotalUndefined: Self = StObject.set(x, "tickTotal", js.undefined)
     
     @scala.inline
-    def setTickValues(value: js.Array[_]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
+    def setTickValues(value: js.Array[js.Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)

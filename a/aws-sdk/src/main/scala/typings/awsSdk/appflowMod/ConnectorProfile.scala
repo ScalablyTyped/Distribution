@@ -2,51 +2,49 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorProfile extends StObject {
   
   /**
     *  Indicates the connection mode and if it is public or private. 
     */
-  var connectionMode: js.UndefOr[ConnectionMode] = js.native
+  var connectionMode: js.UndefOr[ConnectionMode] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the connector profile. 
     */
-  var connectorProfileArn: js.UndefOr[ConnectorProfileArn] = js.native
+  var connectorProfileArn: js.UndefOr[ConnectorProfileArn] = js.undefined
   
   /**
     *  The name of the connector profile. The name is unique for each ConnectorProfile in the AWS account. 
     */
-  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.native
+  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.undefined
   
   /**
     *  The connector-specific properties of the profile configuration. 
     */
-  var connectorProfileProperties: js.UndefOr[ConnectorProfileProperties] = js.native
+  var connectorProfileProperties: js.UndefOr[ConnectorProfileProperties] = js.undefined
   
   /**
     *  The type of connector, such as Salesforce, Amplitude, and so on. 
     */
-  var connectorType: js.UndefOr[ConnectorType] = js.native
+  var connectorType: js.UndefOr[ConnectorType] = js.undefined
   
   /**
     *  Specifies when the connector profile was created. 
     */
-  var createdAt: js.UndefOr[Date] = js.native
+  var createdAt: js.UndefOr[Date] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the connector profile credentials. 
     */
-  var credentialsArn: js.UndefOr[ARN] = js.native
+  var credentialsArn: js.UndefOr[ARN] = js.undefined
   
   /**
     *  Specifies when the connector profile was last updated. 
     */
-  var lastUpdatedAt: js.UndefOr[Date] = js.native
+  var lastUpdatedAt: js.UndefOr[Date] = js.undefined
 }
 object ConnectorProfile {
   

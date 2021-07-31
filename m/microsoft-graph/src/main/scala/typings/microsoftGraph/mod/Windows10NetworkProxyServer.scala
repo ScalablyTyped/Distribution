@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Windows10NetworkProxyServer extends StObject {
   
   // Address to the proxy server. Specify an address in the format &amp;lt;server&amp;gt;[:&amp;lt;port&amp;gt;]
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with
     * what is specified in this node.
     */
-  var exceptions: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var exceptions: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Specifies whether the proxy server should be used for local (intranet) addresses.
-  var useForLocalAddresses: js.UndefOr[Boolean] = js.native
+  var useForLocalAddresses: js.UndefOr[Boolean] = js.undefined
 }
 object Windows10NetworkProxyServer {
   

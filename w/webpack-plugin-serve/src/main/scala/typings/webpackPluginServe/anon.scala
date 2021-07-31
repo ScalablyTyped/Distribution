@@ -7,19 +7,17 @@ import typings.webpackPluginServe.webpackPluginServeStrings.trace
 import typings.webpackPluginServe.webpackPluginServeStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var retry: js.UndefOr[Boolean] = js.native
+    var retry: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object Address {
     
@@ -52,13 +50,12 @@ object anon {
     }
   }
   
-  @js.native
   trait App extends StObject {
     
-    var app: js.UndefOr[String | js.Array[String]] = js.native
+    var app: js.UndefOr[String | js.Array[String]] = js.undefined
     
     @JSName("wait")
-    var wait_FApp: js.UndefOr[Boolean] = js.native
+    var wait_FApp: js.UndefOr[Boolean] = js.undefined
   }
   object App {
     
@@ -88,11 +85,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Apply[Compiler] extends StObject {
     
     @JSName("apply")
-    def apply(compiler: Compiler): Unit = js.native
+    def apply(compiler: Compiler): Unit
   }
   object Apply {
     
@@ -103,19 +99,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class ApplyMutableBuilder[Self <: Apply[_], Compiler] (val x: Self with Apply[Compiler]) extends AnyVal {
+    implicit class ApplyMutableBuilder[Self <: Apply[?], Compiler] (val x: Self & Apply[Compiler]) extends AnyVal {
       
       @scala.inline
       def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
-    var level: trace | debug | info | warn | error = js.native
+    var level: trace | debug | info | warn | error
     
-    var timestamp: js.UndefOr[Boolean] = js.native
+    var timestamp: js.UndefOr[Boolean] = js.undefined
   }
   object Level {
     

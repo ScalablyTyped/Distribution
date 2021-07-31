@@ -9,18 +9,16 @@ import typings.pulumiAws.pulumiAwsStrings.untagged
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lifecyclePolicyDocumentMod {
   
-  @js.native
   trait Action extends StObject {
     
     /**
       * The specified action type - the only supported value is `expire`.
       */
-    var `type`: Input[expire] = js.native
+    var `type`: Input[expire]
   }
   object Action {
     
@@ -39,10 +37,9 @@ object lifecyclePolicyDocumentMod {
     }
   }
   
-  @js.native
   trait LifecyclePolicyDocument extends StObject {
     
-    var rules: js.Array[PolicyRule] = js.native
+    var rules: js.Array[PolicyRule]
   }
   object LifecyclePolicyDocument {
     
@@ -63,28 +60,27 @@ object lifecyclePolicyDocumentMod {
     }
   }
   
-  @js.native
   trait PolicyRule extends StObject {
     
     /**
       * The action to perform when selection criteria is met.
       */
-    var action: Action = js.native
+    var action: Action
     
     /**
       * An optional description for the rule.
       */
-    var description: js.UndefOr[Input[String]] = js.native
+    var description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicate the Rule Priority - each rule must have a different priority.
       */
-    var rulePriority: Input[Double] = js.native
+    var rulePriority: Input[Double]
     
     /**
       * The selection criteria for the rule.
       */
-    var selection: Selection = js.native
+    var selection: Selection
   }
   object PolicyRule {
     
@@ -114,33 +110,32 @@ object lifecyclePolicyDocumentMod {
     }
   }
   
-  @js.native
   trait Selection extends StObject {
     
     /**
       * The maximum number of images or the max age for which to apply the image selection.
       */
-    var countNumber: Input[Double] = js.native
+    var countNumber: Input[Double]
     
     /**
       * Indicate whether to evaluate the rule based on `imageCountMoreThan` or `sinceImagePushed`.
       */
-    var countType: Input[imageCountMoreThan | sinceImagePushed] = js.native
+    var countType: Input[imageCountMoreThan | sinceImagePushed]
     
     /**
       * The unit of time e.g. days for which to apply the selection.
       */
-    var countUnit: js.UndefOr[Input[String]] = js.native
+    var countUnit: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify one or more image tag prefixes for selection.
       */
-    var tagPrefixList: js.UndefOr[Input[String] | js.Array[Input[String]]] = js.native
+    var tagPrefixList: js.UndefOr[Input[String] | js.Array[Input[String]]] = js.undefined
     
     /**
       * Indicate whether to select `tagged`, `untagged` or `any` images in the repository.
       */
-    var tagStatus: Input[tagged | untagged | any] = js.native
+    var tagStatus: Input[tagged | untagged | any]
   }
   object Selection {
     

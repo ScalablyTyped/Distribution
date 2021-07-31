@@ -2,13 +2,11 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filters extends StObject {
   
-  var filters: js.Any = js.native
+  var filters: js.Any
 }
 object Filters {
   

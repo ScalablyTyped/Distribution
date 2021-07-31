@@ -12,7 +12,7 @@ Check if a year is a leap year
 | Keywords           | leap, year, date |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 5788 |
+| # downloads        | 5253 |
 | # stars            | 1 |
 
 ## Links

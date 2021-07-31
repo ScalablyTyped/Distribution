@@ -5,47 +5,45 @@ import typings.monacoEditor.mod.Range
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMouseTarget extends StObject {
   
   /**
     * Some extra detail.
     */
-  val detail: js.Any = js.native
+  val detail: js.Any
   
   /**
     * The target element
     */
-  val element: Element | Null = js.native
+  val element: Element | Null
   
   /**
     * Desired mouse column (e.g. when position.column gets clamped to text length -- clicking after text on a line).
     */
-  val mouseColumn: Double = js.native
+  val mouseColumn: Double
   
   /**
     * The 'approximate' editor position
     */
-  val position: Position | Null = js.native
+  val position: Position | Null
   
   /**
     * The 'approximate' editor range
     */
-  val range: Range | Null = js.native
+  val range: Range | Null
   
   /**
     * The target type
     */
-  val `type`: MouseTargetType = js.native
+  val `type`: MouseTargetType
 }
 object IMouseTarget {
   
   @scala.inline
   def apply(detail: js.Any, mouseColumn: Double, `type`: MouseTargetType): IMouseTarget = {
-    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], mouseColumn = mouseColumn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], mouseColumn = mouseColumn.asInstanceOf[js.Any], element = null, position = null, range = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMouseTarget]
   }

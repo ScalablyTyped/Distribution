@@ -3,25 +3,24 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blob
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with Shape {
   
-  var streaming: js.UndefOr[scala.Boolean] = js.native
+  var streaming: js.UndefOr[scala.Boolean] = js.undefined
   
   @JSName("type")
-  val type_Blob: blob = js.native
+  val type_Blob: blob
 }
 object Blob {
   
   @scala.inline
-  def apply(`type`: blob): Blob = {
+  def apply(): Blob = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("blob")
     __obj.asInstanceOf[Blob]
   }
   

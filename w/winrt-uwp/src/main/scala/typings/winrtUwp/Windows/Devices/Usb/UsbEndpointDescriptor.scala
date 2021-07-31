@@ -2,33 +2,31 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Derives information from the USB endpoint descriptor of the endpoint, such as type, direction, and endpoint number. This object also gets the specific endpoint descriptors based on the type of endpoint. For an explanation of an endpoint descriptor, see Section 9.6.5 in the Universal Serial Bus Specification: */
-@js.native
 trait UsbEndpointDescriptor extends StObject {
   
   /** Gets an object that represents the endpoint descriptor for the USB bulk IN endpoint. */
-  var asBulkInEndpointDescriptor: UsbBulkInEndpointDescriptor = js.native
+  var asBulkInEndpointDescriptor: UsbBulkInEndpointDescriptor
   
   /** Gets an object that represents the endpoint descriptor for the USB bulk OUT endpoint. */
-  var asBulkOutEndpointDescriptor: UsbBulkOutEndpointDescriptor = js.native
+  var asBulkOutEndpointDescriptor: UsbBulkOutEndpointDescriptor
   
   /** Gets an object that represents the endpoint descriptor for the USB interrupt IN endpoint. */
-  var asInterruptInEndpointDescriptor: UsbInterruptInEndpointDescriptor = js.native
+  var asInterruptInEndpointDescriptor: UsbInterruptInEndpointDescriptor
   
   /** Gets an object that represents the endpoint descriptor for the USB interrupt OUT endpoint. */
-  var asInterruptOutEndpointDescriptor: UsbInterruptOutEndpointDescriptor = js.native
+  var asInterruptOutEndpointDescriptor: UsbInterruptOutEndpointDescriptor
   
   /** Gets the direction of the USB endpoint. */
-  var direction: UsbTransferDirection = js.native
+  var direction: UsbTransferDirection
   
   /** Gets the USB endpoint number. */
-  var endpointNumber: Double = js.native
+  var endpointNumber: Double
   
   /** Gets the type of USB endpoint. */
-  var endpointType: UsbEndpointType = js.native
+  var endpointType: UsbEndpointType
 }
 object UsbEndpointDescriptor {
   

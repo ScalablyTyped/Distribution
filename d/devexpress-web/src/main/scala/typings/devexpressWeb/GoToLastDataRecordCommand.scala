@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to navigate to the last data record of the bound data source.
   */
-@js.native
-trait GoToLastDataRecordCommand extends CommandWithSimpleStateBase {
+trait GoToLastDataRecordCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the GoToLastDataRecordCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object GoToLastDataRecordCommand {
   

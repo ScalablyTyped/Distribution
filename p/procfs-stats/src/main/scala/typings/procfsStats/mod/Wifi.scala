@@ -5,33 +5,31 @@ import typings.procfsStats.anon.Missed
 import typings.procfsStats.anon.Quality
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Wifi extends StObject {
   
-  var Interface: String = js.native
+  var Interface: String
   
-  var beacon: Missed = js.native
+  var beacon: Missed
   
-  var crypt: Discardedpackets = js.native
+  var crypt: Discardedpackets
   
-  var frag: Discardedpackets = js.native
+  var frag: Discardedpackets
   
-  var level: Quality = js.native
+  var level: Quality
   
-  var link: Quality = js.native
+  var link: Quality
   
-  var misc: Discardedpackets = js.native
+  var misc: Discardedpackets
   
-  var noise: Quality = js.native
+  var noise: Quality
   
-  var nwid: Discardedpackets = js.native
+  var nwid: Discardedpackets
   
-  var retry: Discardedpackets = js.native
+  var retry: Discardedpackets
   
-  var status: String = js.native
+  var status: String
 }
 object Wifi {
   

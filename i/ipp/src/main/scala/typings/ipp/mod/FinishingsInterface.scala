@@ -2,39 +2,37 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingsInterface extends StObject {
   
-  var baling: js.UndefOr[FinishingBailing] = js.native
+  var baling: js.UndefOr[FinishingBailing] = js.undefined
   
-  var binding: js.UndefOr[FinishingBinding] = js.native
+  var binding: js.UndefOr[FinishingBinding] = js.undefined
   
-  var coating: js.UndefOr[FinishingCoating] = js.native
+  var coating: js.UndefOr[FinishingCoating] = js.undefined
   
-  var covering: js.UndefOr[FinishingCovering] = js.native
+  var covering: js.UndefOr[FinishingCovering] = js.undefined
   
-  var `finishing-template`: js.UndefOr[Finishings] = js.native
+  var `finishing-template`: js.UndefOr[Finishings] = js.undefined
   
-  var folding: js.UndefOr[js.Array[FinishingFolding]] = js.native
+  var folding: js.UndefOr[js.Array[FinishingFolding]] = js.undefined
   
-  var `imposition-template`: js.UndefOr[ImpositionTemplate] = js.native
+  var `imposition-template`: js.UndefOr[ImpositionTemplate] = js.undefined
   
-  var laminating: js.UndefOr[FinishingLaminating] = js.native
+  var laminating: js.UndefOr[FinishingLaminating] = js.undefined
   
-  var `media-sheets-supported`: js.UndefOr[String] = js.native
+  var `media-sheets-supported`: js.UndefOr[String] = js.undefined
   
-  var `media-size`: js.UndefOr[MediaSize] = js.native
+  var `media-size`: js.UndefOr[MediaSize] = js.undefined
   
-  var `media-size-name`: js.UndefOr[String] = js.native
+  var `media-size-name`: js.UndefOr[String] = js.undefined
   
-  var punching: js.UndefOr[FinishingPunching] = js.native
+  var punching: js.UndefOr[FinishingPunching] = js.undefined
   
-  var stitching: js.UndefOr[FinishingStitching] = js.native
+  var stitching: js.UndefOr[FinishingStitching] = js.undefined
   
-  var trimming: js.UndefOr[js.Array[FinishingTrimming]] = js.native
+  var trimming: js.UndefOr[js.Array[FinishingTrimming]] = js.undefined
 }
 object FinishingsInterface {
   

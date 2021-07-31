@@ -11,8 +11,8 @@ convert buffer to readable stream
 | Full name          | buffer-to-stream |
 | Keywords           | buffer, stream |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 137657 |
+| # dependents       | 10 |
+| # downloads        | 161889 |
 | # stars            | 0 |
 
 ## Links

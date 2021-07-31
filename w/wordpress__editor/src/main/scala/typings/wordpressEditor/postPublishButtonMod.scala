@@ -7,7 +7,6 @@ import typings.wordpressEditor.wordpressEditorBooleans.`false`
 import typings.wordpressEditor.wordpressEditorBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postPublishButtonMod {
@@ -26,18 +25,17 @@ object postPublishButtonMod {
   
   object PostPublishButton {
     
-    @js.native
     trait BaseProps extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var focusOnMount: js.UndefOr[Boolean] = js.native
+      var focusOnMount: js.UndefOr[Boolean] = js.undefined
       
-      var forceIsDirty: js.UndefOr[Boolean] = js.native
+      var forceIsDirty: js.UndefOr[Boolean] = js.undefined
       
-      var forceIsSaving: js.UndefOr[Boolean] = js.native
+      var forceIsSaving: js.UndefOr[Boolean] = js.undefined
       
-      var isOpen: js.UndefOr[Boolean] = js.native
+      var isOpen: js.UndefOr[Boolean] = js.undefined
     }
     object BaseProps {
       
@@ -90,20 +88,20 @@ object postPublishButtonMod {
       }
       
       @scala.inline
-      def ToggleProps(isToggle: `true`, onToggle: () => Unit): typings.wordpressEditor.postPublishButtonMod.PostPublishButton.ToggleProps = {
-        val __obj = js.Dynamic.literal(isToggle = isToggle.asInstanceOf[js.Any], onToggle = js.Any.fromFunction0(onToggle))
+      def ToggleProps(onToggle: () => Unit): typings.wordpressEditor.postPublishButtonMod.PostPublishButton.ToggleProps = {
+        val __obj = js.Dynamic.literal(isToggle = true, onToggle = js.Any.fromFunction0(onToggle))
         __obj.asInstanceOf[typings.wordpressEditor.postPublishButtonMod.PostPublishButton.ToggleProps]
       }
     }
     
-    @js.native
     trait SubmitProps
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
-      var isToggle: js.UndefOr[`false`] = js.native
+      var isToggle: js.UndefOr[`false`] = js.undefined
       
-      var onSubmit: js.UndefOr[js.Function0[Unit]] = js.native
+      var onSubmit: js.UndefOr[js.Function0[Unit]] = js.undefined
     }
     object SubmitProps {
       
@@ -130,20 +128,20 @@ object postPublishButtonMod {
       }
     }
     
-    @js.native
     trait ToggleProps
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
-      var isToggle: `true` = js.native
+      var isToggle: `true`
       
-      def onToggle(): Unit = js.native
+      def onToggle(): Unit
     }
     object ToggleProps {
       
       @scala.inline
-      def apply(isToggle: `true`, onToggle: () => Unit): ToggleProps = {
-        val __obj = js.Dynamic.literal(isToggle = isToggle.asInstanceOf[js.Any], onToggle = js.Any.fromFunction0(onToggle))
+      def apply(onToggle: () => Unit): ToggleProps = {
+        val __obj = js.Dynamic.literal(isToggle = true, onToggle = js.Any.fromFunction0(onToggle))
         __obj.asInstanceOf[ToggleProps]
       }
       

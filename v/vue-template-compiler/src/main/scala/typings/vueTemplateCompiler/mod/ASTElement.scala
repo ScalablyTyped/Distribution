@@ -8,136 +8,135 @@ import typings.vueTemplateCompiler.vueTemplateCompilerBooleans.`true`
 import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ASTElement extends ASTNode {
+trait ASTElement
+  extends StObject
+     with ASTNode {
   
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   // weex specific
-  var appendAsTree: js.UndefOr[Boolean] = js.native
+  var appendAsTree: js.UndefOr[Boolean] = js.undefined
   
-  var attrs: js.UndefOr[js.Array[Name]] = js.native
+  var attrs: js.UndefOr[js.Array[Name]] = js.undefined
   
-  var attrsList: js.Array[Name] = js.native
+  var attrsList: js.Array[Name]
   
-  var attrsMap: Record[String, _] = js.native
+  var attrsMap: Record[String, js.Any]
   
-  var children: js.Array[ASTNode] = js.native
+  var children: js.Array[ASTNode]
   
-  var classBinding: js.UndefOr[String] = js.native
+  var classBinding: js.UndefOr[String] = js.undefined
   
-  var component: js.UndefOr[String] = js.native
+  var component: js.UndefOr[String] = js.undefined
   
-  var directives: js.UndefOr[js.Array[ASTDirective]] = js.native
+  var directives: js.UndefOr[js.Array[ASTDirective]] = js.undefined
   
-  var `else`: js.UndefOr[`true`] = js.native
+  var `else`: js.UndefOr[`true`] = js.undefined
   
-  var elseif: js.UndefOr[String] = js.native
+  var elseif: js.UndefOr[String] = js.undefined
   
-  var events: js.UndefOr[ASTElementHandlers] = js.native
+  var events: js.UndefOr[ASTElementHandlers] = js.undefined
   
-  var `for`: js.UndefOr[String] = js.native
+  var `for`: js.UndefOr[String] = js.undefined
   
-  var forProcessed: js.UndefOr[Boolean] = js.native
+  var forProcessed: js.UndefOr[Boolean] = js.undefined
   
-  var forbidden: js.UndefOr[`true`] = js.native
+  var forbidden: js.UndefOr[`true`] = js.undefined
   
-  var hasBindings: js.UndefOr[Boolean] = js.native
+  var hasBindings: js.UndefOr[Boolean] = js.undefined
   
-  var `if`: js.UndefOr[String] = js.native
+  var `if`: js.UndefOr[String] = js.undefined
   
-  var ifConditions: js.UndefOr[js.Array[ASTIfCondition]] = js.native
+  var ifConditions: js.UndefOr[js.Array[ASTIfCondition]] = js.undefined
   
-  var ifProcessed: js.UndefOr[Boolean] = js.native
+  var ifProcessed: js.UndefOr[Boolean] = js.undefined
   
-  var inlineTemplate: js.UndefOr[`true`] = js.native
+  var inlineTemplate: js.UndefOr[`true`] = js.undefined
   
-  var iterator1: js.UndefOr[String] = js.native
+  var iterator1: js.UndefOr[String] = js.undefined
   
-  var iterator2: js.UndefOr[String] = js.native
+  var iterator2: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var model: js.UndefOr[Callback] = js.native
+  var model: js.UndefOr[Callback] = js.undefined
   
-  var nativeEvents: js.UndefOr[ASTElementHandlers] = js.native
+  var nativeEvents: js.UndefOr[ASTElementHandlers] = js.undefined
   
-  var ns: js.UndefOr[String] = js.native
+  var ns: js.UndefOr[String] = js.undefined
   
-  var once: js.UndefOr[`true`] = js.native
+  var once: js.UndefOr[`true`] = js.undefined
   
-  var onceProcessed: js.UndefOr[Boolean] = js.native
+  var onceProcessed: js.UndefOr[Boolean] = js.undefined
   
-  var parent: js.UndefOr[ASTElement] = js.native
+  var parent: js.UndefOr[ASTElement] = js.undefined
   
-  var plain: js.UndefOr[Boolean] = js.native
+  var plain: js.UndefOr[Boolean] = js.undefined
   
-  var pre: js.UndefOr[`true`] = js.native
+  var pre: js.UndefOr[`true`] = js.undefined
   
-  var processed: js.UndefOr[`true`] = js.native
+  var processed: js.UndefOr[`true`] = js.undefined
   
-  var props: js.UndefOr[js.Array[Value]] = js.native
+  var props: js.UndefOr[js.Array[Value]] = js.undefined
   
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
   
-  var refInFor: js.UndefOr[Boolean] = js.native
+  var refInFor: js.UndefOr[Boolean] = js.undefined
   
-  var scopedSlots: js.UndefOr[Record[String, ASTElement]] = js.native
+  var scopedSlots: js.UndefOr[Record[String, ASTElement]] = js.undefined
   
-  var slotName: js.UndefOr[String] = js.native
+  var slotName: js.UndefOr[String] = js.undefined
   
-  var slotScope: js.UndefOr[String] = js.native
+  var slotScope: js.UndefOr[String] = js.undefined
   
-  var slotTarget: js.UndefOr[String] = js.native
+  var slotTarget: js.UndefOr[String] = js.undefined
   
   // 2.4 ssr optimization
-  var ssrOptimizability: js.UndefOr[SSROptimizability] = js.native
+  var ssrOptimizability: js.UndefOr[SSROptimizability] = js.undefined
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
   
-  var staticClass: js.UndefOr[String] = js.native
+  var staticClass: js.UndefOr[String] = js.undefined
   
-  var staticInFor: js.UndefOr[Boolean] = js.native
+  var staticInFor: js.UndefOr[Boolean] = js.undefined
   
-  var staticProcessed: js.UndefOr[Boolean] = js.native
+  var staticProcessed: js.UndefOr[Boolean] = js.undefined
   
-  var staticRoot: js.UndefOr[Boolean] = js.native
+  var staticRoot: js.UndefOr[Boolean] = js.undefined
   
-  var staticStyle: js.UndefOr[String] = js.native
+  var staticStyle: js.UndefOr[String] = js.undefined
   
-  var styleBinding: js.UndefOr[String] = js.native
+  var styleBinding: js.UndefOr[String] = js.undefined
   
-  var tag: String = js.native
+  var tag: String
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String | `true`] = js.native
+  var transition: js.UndefOr[String | `true`] = js.undefined
   
-  var transitionMode: js.UndefOr[String | Null] = js.native
+  var transitionMode: js.UndefOr[String | Null] = js.undefined
   
-  var transitionOnAppear: js.UndefOr[Boolean] = js.native
+  var transitionOnAppear: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: `1` = js.native
+  var `type`: `1`
   
-  var wrapData: js.UndefOr[js.Function1[/* code */ String, String]] = js.native
+  var wrapData: js.UndefOr[js.Function1[/* code */ String, String]] = js.undefined
   
-  var wrapListeners: js.UndefOr[js.Function1[/* code */ String, String]] = js.native
+  var wrapListeners: js.UndefOr[js.Function1[/* code */ String, String]] = js.undefined
 }
 object ASTElement {
   
   @scala.inline
   def apply(
     attrsList: js.Array[Name],
-    attrsMap: Record[String, _],
+    attrsMap: Record[String, js.Any],
     children: js.Array[ASTNode],
-    tag: String,
-    `type`: `1`
+    tag: String
   ): ASTElement = {
     val __obj = js.Dynamic.literal(attrsList = attrsList.asInstanceOf[js.Any], attrsMap = attrsMap.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[ASTElement]
   }
   
@@ -166,7 +165,7 @@ object ASTElement {
     def setAttrsListVarargs(value: Name*): Self = StObject.set(x, "attrsList", js.Array(value :_*))
     
     @scala.inline
-    def setAttrsMap(value: Record[String, _]): Self = StObject.set(x, "attrsMap", value.asInstanceOf[js.Any])
+    def setAttrsMap(value: Record[String, js.Any]): Self = StObject.set(x, "attrsMap", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/composer/v1", "composer_v1.Resource$Projects$Locations$Imageversions")
@@ -32,7 +31,7 @@ class ResourceProjectsLocationsImageversions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListImageVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListImageVersionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListImageVersionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListImageVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsImageversionsList): GaxiosPromise[SchemaListImageVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsImageversionsList,

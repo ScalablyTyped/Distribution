@@ -21,7 +21,6 @@ import typings.prismicDom.prismicDomStrings.span
 import typings.prismicDom.prismicDomStrings.strong
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -73,17 +72,13 @@ object mod {
     var Elements: typings.prismicDom.mod.Elements = js.native
     
     def asHtml(richText: js.Any): String = js.native
-    def asHtml(
-      richText: js.Any,
-      linkResolver: js.UndefOr[scala.Nothing],
-      serializer: typings.prismicDom.mod.HTMLSerializer[String]
-    ): String = js.native
     def asHtml(richText: js.Any, linkResolver: js.Function1[/* doc */ js.Any, String]): String = js.native
     def asHtml(
       richText: js.Any,
       linkResolver: js.Function1[/* doc */ js.Any, String],
       serializer: typings.prismicDom.mod.HTMLSerializer[String]
     ): String = js.native
+    def asHtml(richText: js.Any, linkResolver: Unit, serializer: typings.prismicDom.mod.HTMLSerializer[String]): String = js.native
     
     def asText(richText: js.Any): String = js.native
     def asText(richText: js.Any, joinString: String): String = js.native
@@ -175,72 +170,51 @@ object mod {
     def strong: typings.prismicDom.prismicDomStrings.strong = "strong".asInstanceOf[typings.prismicDom.prismicDomStrings.strong]
   }
   
-  @js.native
   trait Elements extends StObject {
     
-    var em: typings.prismicDom.prismicDomStrings.em = js.native
+    var em: typings.prismicDom.prismicDomStrings.em
     
-    var embed: typings.prismicDom.prismicDomStrings.embed = js.native
+    var embed: typings.prismicDom.prismicDomStrings.embed
     
-    var heading1: typings.prismicDom.prismicDomStrings.heading1 = js.native
+    var heading1: typings.prismicDom.prismicDomStrings.heading1
     
-    var heading2: typings.prismicDom.prismicDomStrings.heading2 = js.native
+    var heading2: typings.prismicDom.prismicDomStrings.heading2
     
-    var heading3: typings.prismicDom.prismicDomStrings.heading3 = js.native
+    var heading3: typings.prismicDom.prismicDomStrings.heading3
     
-    var heading4: typings.prismicDom.prismicDomStrings.heading4 = js.native
+    var heading4: typings.prismicDom.prismicDomStrings.heading4
     
-    var heading5: typings.prismicDom.prismicDomStrings.heading5 = js.native
+    var heading5: typings.prismicDom.prismicDomStrings.heading5
     
-    var heading6: typings.prismicDom.prismicDomStrings.heading6 = js.native
+    var heading6: typings.prismicDom.prismicDomStrings.heading6
     
-    var hyperlink: typings.prismicDom.prismicDomStrings.hyperlink = js.native
+    var hyperlink: typings.prismicDom.prismicDomStrings.hyperlink
     
-    var image: typings.prismicDom.prismicDomStrings.image = js.native
+    var image: typings.prismicDom.prismicDomStrings.image
     
-    var label: typings.prismicDom.prismicDomStrings.label = js.native
+    var label: typings.prismicDom.prismicDomStrings.label
     
-    var list: `group-list-item` = js.native
+    var list: `group-list-item`
     
-    var listItem: `list-item` = js.native
+    var listItem: `list-item`
     
-    var oList: `group-o-list-item` = js.native
+    var oList: `group-o-list-item`
     
-    var oListItem: `o-list-item` = js.native
+    var oListItem: `o-list-item`
     
-    var paragraph: typings.prismicDom.prismicDomStrings.paragraph = js.native
+    var paragraph: typings.prismicDom.prismicDomStrings.paragraph
     
-    var preformatted: typings.prismicDom.prismicDomStrings.preformatted = js.native
+    var preformatted: typings.prismicDom.prismicDomStrings.preformatted
     
-    var span: typings.prismicDom.prismicDomStrings.span = js.native
+    var span: typings.prismicDom.prismicDomStrings.span
     
-    var strong: typings.prismicDom.prismicDomStrings.strong = js.native
+    var strong: typings.prismicDom.prismicDomStrings.strong
   }
   object Elements {
     
     @scala.inline
-    def apply(
-      em: em,
-      embed: embed,
-      heading1: heading1,
-      heading2: heading2,
-      heading3: heading3,
-      heading4: heading4,
-      heading5: heading5,
-      heading6: heading6,
-      hyperlink: hyperlink,
-      image: image,
-      label: label,
-      list: `group-list-item`,
-      listItem: `list-item`,
-      oList: `group-o-list-item`,
-      oListItem: `o-list-item`,
-      paragraph: paragraph,
-      preformatted: preformatted,
-      span: span,
-      strong: strong
-    ): Elements = {
-      val __obj = js.Dynamic.literal(em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], heading1 = heading1.asInstanceOf[js.Any], heading2 = heading2.asInstanceOf[js.Any], heading3 = heading3.asInstanceOf[js.Any], heading4 = heading4.asInstanceOf[js.Any], heading5 = heading5.asInstanceOf[js.Any], heading6 = heading6.asInstanceOf[js.Any], hyperlink = hyperlink.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listItem = listItem.asInstanceOf[js.Any], oList = oList.asInstanceOf[js.Any], oListItem = oListItem.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], preformatted = preformatted.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any])
+    def apply(): Elements = {
+      val __obj = js.Dynamic.literal(em = "em", embed = "embed", heading1 = "heading1", heading2 = "heading2", heading3 = "heading3", heading4 = "heading4", heading5 = "heading5", heading6 = "heading6", hyperlink = "hyperlink", image = "image", label = "label", list = "group-list-item", listItem = "list-item", oList = "group-o-list-item", oListItem = "o-list-item", paragraph = "paragraph", preformatted = "preformatted", span = "span", strong = "strong")
       __obj.asInstanceOf[Elements]
     }
     

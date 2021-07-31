@@ -6,7 +6,6 @@ import typings.reactMove.mod.GetInterpolator
 import typings.reactMove.mod.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animateMod {
@@ -18,22 +17,21 @@ object animateMod {
   
   type IAnimate = Component[IAnimateProps, js.Object, js.Any]
   
-  @js.native
   trait IAnimateProps extends StObject {
     
-    def children(state: HashMap): ReactElement = js.native
+    def children(state: HashMap): ReactElement
     
-    var enter: js.UndefOr[js.Any] = js.native
+    var enter: js.UndefOr[js.Any] = js.undefined
     
-    var interpolation: js.UndefOr[GetInterpolator] = js.native
+    var interpolation: js.UndefOr[GetInterpolator] = js.undefined
     
-    var leave: js.UndefOr[js.Any] = js.native
+    var leave: js.UndefOr[js.Any] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var start: js.Any = js.native
+    var start: js.Any
     
-    var update: js.UndefOr[js.Any] = js.native
+    var update: js.UndefOr[js.Any] = js.undefined
   }
   object IAnimateProps {
     

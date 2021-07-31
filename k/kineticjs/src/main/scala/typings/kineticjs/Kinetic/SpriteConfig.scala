@@ -2,21 +2,20 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpriteConfig
-  extends DrawOptionsConfig
+  extends StObject
+     with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var animation: js.UndefOr[js.Any] = js.native
+  var animation: js.UndefOr[js.Any] = js.undefined
   
-  var animations: js.UndefOr[js.Any] = js.native
+  var animations: js.UndefOr[js.Any] = js.undefined
   
-  var frameRate: js.UndefOr[Double] = js.native
+  var frameRate: js.UndefOr[Double] = js.undefined
   
-  var image: js.Any = js.native
+  var image: js.Any
 }
 object SpriteConfig {
   

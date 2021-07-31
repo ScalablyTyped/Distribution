@@ -3,65 +3,63 @@ package typings.jqueryMockjax
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MockJaxSettings extends StObject {
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[MockJaxSettingsHeaders] = js.native
+  var headers: js.UndefOr[MockJaxSettingsHeaders] = js.undefined
   
-  var isTimeout: js.UndefOr[Boolean] = js.native
+  var isTimeout: js.UndefOr[Boolean] = js.undefined
   
-  var lastModified: js.UndefOr[String] = js.native
+  var lastModified: js.UndefOr[String] = js.undefined
   
-  var logLevelMethods: js.UndefOr[js.Array[String]] = js.native
+  var logLevelMethods: js.UndefOr[js.Array[String]] = js.undefined
   
-  var logger: js.UndefOr[MockJaxStandardLogger | MockJaxCustomLogger] = js.native
+  var logger: js.UndefOr[MockJaxStandardLogger | MockJaxCustomLogger] = js.undefined
   
-  var logging: js.UndefOr[Boolean | Double] = js.native
+  var logging: js.UndefOr[Boolean | Double] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var onAfterComplete: js.UndefOr[js.Function] = js.native
+  var onAfterComplete: js.UndefOr[js.Function] = js.undefined
   
-  var onAfterError: js.UndefOr[js.Function] = js.native
+  var onAfterError: js.UndefOr[js.Function] = js.undefined
   
-  var onAfterSuccess: js.UndefOr[js.Function] = js.native
+  var onAfterSuccess: js.UndefOr[js.Function] = js.undefined
   
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
-  var proxyType: js.UndefOr[String] = js.native
+  var proxyType: js.UndefOr[String] = js.undefined
   
-  var response: js.UndefOr[js.Function2[/* settings */ js.Any, /* done */ js.UndefOr[js.Function], Unit]] = js.native
+  var response: js.UndefOr[js.Function2[/* settings */ js.Any, /* done */ js.UndefOr[js.Function], Unit]] = js.undefined
   
-  var responseText: js.UndefOr[String | js.Object] = js.native
+  var responseText: js.UndefOr[String | js.Object] = js.undefined
   
-  var responseTime: js.UndefOr[Double] = js.native
+  var responseTime: js.UndefOr[Double] = js.undefined
   
-  var responseXml: js.UndefOr[String] = js.native
+  var responseXml: js.UndefOr[String] = js.undefined
   
-  var retainAjaxCalls: js.UndefOr[Boolean] = js.native
+  var retainAjaxCalls: js.UndefOr[Boolean] = js.undefined
   
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
   
-  var throwUnmocked: js.UndefOr[Boolean] = js.native
+  var throwUnmocked: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String | RegExp] = js.native
+  var url: js.UndefOr[String | RegExp] = js.undefined
   
-  var urlParams: js.UndefOr[js.Array[String]] = js.native
+  var urlParams: js.UndefOr[js.Array[String]] = js.undefined
 }
 object MockJaxSettings {
   

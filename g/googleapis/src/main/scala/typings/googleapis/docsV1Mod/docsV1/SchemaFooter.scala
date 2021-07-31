@@ -2,25 +2,23 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A document footer.
   */
-@js.native
 trait SchemaFooter extends StObject {
   
   /**
     * The contents of the footer.  The indexes for a footer&#39;s content begin
     * at zero.
     */
-  var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.native
+  var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.undefined
   
   /**
     * The ID of the footer.
     */
-  var footerId: js.UndefOr[String] = js.native
+  var footerId: js.UndefOr[String] = js.undefined
 }
 object SchemaFooter {
   

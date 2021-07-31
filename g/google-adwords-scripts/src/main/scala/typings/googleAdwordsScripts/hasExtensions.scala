@@ -2,39 +2,37 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hasExtensions extends StObject {
   
-  def addCallout(calloutExtension: Callout): AdWordsOperation[Callout] = js.native
+  def addCallout(calloutExtension: Callout): AdWordsOperation[Callout]
   
-  def addMessage(messageExtension: Message): AdWordsOperation[Message] = js.native
+  def addMessage(messageExtension: Message): AdWordsOperation[Message]
   
-  def addMobileApp(mobileAppExtension: MobileApp): AdWordsOperation[MobileApp] = js.native
+  def addMobileApp(mobileAppExtension: MobileApp): AdWordsOperation[MobileApp]
   
-  def addPhoneNumber(phoneNumberExtension: PhoneNumber): AdWordsOperation[PhoneNumber] = js.native
+  def addPhoneNumber(phoneNumberExtension: PhoneNumber): AdWordsOperation[PhoneNumber]
   
-  def addReview(reviewExtension: Review): AdWordsOperation[Review] = js.native
+  def addReview(reviewExtension: Review): AdWordsOperation[Review]
   
-  def addSitelink(sitelinkExtension: Sitelink): AdWordsOperation[Sitelink] = js.native
+  def addSitelink(sitelinkExtension: Sitelink): AdWordsOperation[Sitelink]
   
-  def addSnippet(snippetExtension: Snippet): AdWordsOperation[Snippet] = js.native
+  def addSnippet(snippetExtension: Snippet): AdWordsOperation[Snippet]
   
-  def removeCallout(calloutExtension: Callout): Unit = js.native
+  def removeCallout(calloutExtension: Callout): Unit
   
-  def removeMessage(messageExtension: Message): Unit = js.native
+  def removeMessage(messageExtension: Message): Unit
   
-  def removeMobileApp(mobileAppExtension: MobileApp): Unit = js.native
+  def removeMobileApp(mobileAppExtension: MobileApp): Unit
   
-  def removePhoneNumber(phoneNumberExtension: PhoneNumber): Unit = js.native
+  def removePhoneNumber(phoneNumberExtension: PhoneNumber): Unit
   
-  def removeReview(reviewExtension: Review): Unit = js.native
+  def removeReview(reviewExtension: Review): Unit
   
-  def removeSitelink(sitelinkExtension: Sitelink): Unit = js.native
+  def removeSitelink(sitelinkExtension: Sitelink): Unit
   
-  def removeSnippet(snippetExtension: Snippet): Unit = js.native
+  def removeSnippet(snippetExtension: Snippet): Unit
 }
 object hasExtensions {
   

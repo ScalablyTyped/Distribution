@@ -3,14 +3,13 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseListAllTunnels200
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var tunnels: js.UndefOr[js.Array[Tunnel]] = js.native
+  var tunnels: js.UndefOr[js.Array[Tunnel]] = js.undefined
 }
 object ResponseListAllTunnels200 {
   

@@ -2,18 +2,16 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeclarationNewProps extends StObject {
   
   /**
     * The declaration's property name.
     */
-  var prop: js.UndefOr[String] = js.native
+  var prop: js.UndefOr[String] = js.undefined
   
-  var raws: js.UndefOr[DeclarationRaws] = js.native
+  var raws: js.UndefOr[DeclarationRaws] = js.undefined
   
   /**
     * The declaration's value. This value will be cleaned of comments. If the
@@ -21,7 +19,7 @@ trait DeclarationNewProps extends StObject {
     * _value.raws property. If you have not changed the value, the result of
     * decl.toString() will include the original raws value (comments and all).
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object DeclarationNewProps {
   

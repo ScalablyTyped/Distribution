@@ -5,24 +5,24 @@ import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'execute.error',   transactionID :number,   error :std.Error}> */
-@js.native
-trait Readonlynameexecuteerrort extends LogEvent {
+trait Readonlynameexecuteerrort
+  extends StObject
+     with LogEvent {
   
-  val error: Error = js.native
+  val error: Error
   
-  val name: executeDoterror = js.native
+  val name: executeDoterror
   
-  val transactionID: Double = js.native
+  val transactionID: Double
 }
 object Readonlynameexecuteerrort {
   
   @scala.inline
-  def apply(error: Error, name: executeDoterror, transactionID: Double): Readonlynameexecuteerrort = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
+  def apply(error: Error, transactionID: Double): Readonlynameexecuteerrort = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = "execute.error", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecuteerrort]
   }
   

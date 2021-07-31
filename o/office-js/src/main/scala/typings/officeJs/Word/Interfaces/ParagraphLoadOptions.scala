@@ -2,7 +2,6 @@ package typings.officeJs.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: WordApi 1.1]
   */
-@js.native
 trait ParagraphLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var alignment: js.UndefOr[Boolean] = js.native
+  var alignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var firstLineIndent: js.UndefOr[Boolean] = js.native
+  var firstLineIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontLoadOptions] = js.native
+  var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var isLastParagraph: js.UndefOr[Boolean] = js.native
+  var isLastParagraph: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var isListItem: js.UndefOr[Boolean] = js.native
+  var isListItem: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var leftIndent: js.UndefOr[Boolean] = js.native
+  var leftIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lineSpacing: js.UndefOr[Boolean] = js.native
+  var lineSpacing: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lineUnitAfter: js.UndefOr[Boolean] = js.native
+  var lineUnitAfter: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lineUnitBefore: js.UndefOr[Boolean] = js.native
+  var lineUnitBefore: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var list: js.UndefOr[ListLoadOptions] = js.native
+  var list: js.UndefOr[ListLoadOptions] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var listItem: js.UndefOr[ListItemLoadOptions] = js.native
+  var listItem: js.UndefOr[ListItemLoadOptions] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var listItemOrNullObject: js.UndefOr[ListItemLoadOptions] = js.native
+  var listItemOrNullObject: js.UndefOr[ListItemLoadOptions] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var listOrNullObject: js.UndefOr[ListLoadOptions] = js.native
+  var listOrNullObject: js.UndefOr[ListLoadOptions] = js.undefined
   
   /**
     *
@@ -130,7 +128,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var outlineLevel: js.UndefOr[Boolean] = js.native
+  var outlineLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentBody: js.UndefOr[BodyLoadOptions] = js.native
+  var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.native
+  var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
     *
@@ -154,7 +152,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.native
+  var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
     *
@@ -162,7 +160,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTable: js.UndefOr[TableLoadOptions] = js.native
+  var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -170,7 +168,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -178,7 +176,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -186,7 +184,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.native
+  var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -194,7 +192,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var rightIndent: js.UndefOr[Boolean] = js.native
+  var rightIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -202,7 +200,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var spaceAfter: js.UndefOr[Boolean] = js.native
+  var spaceAfter: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -210,7 +208,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var spaceBefore: js.UndefOr[Boolean] = js.native
+  var spaceBefore: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -218,7 +216,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -226,7 +224,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: js.UndefOr[Boolean] = js.native
+  var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -234,7 +232,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var tableNestingLevel: js.UndefOr[Boolean] = js.native
+  var tableNestingLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -242,7 +240,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var text: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[Boolean] = js.undefined
 }
 object ParagraphLoadOptions {
   

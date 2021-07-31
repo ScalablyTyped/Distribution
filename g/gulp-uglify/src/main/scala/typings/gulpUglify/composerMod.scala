@@ -9,7 +9,6 @@ import typings.uglifyJs.mod.MinifyOptions
 import typings.uglifyJs.mod.MinifyOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object composerMod extends Shortcut {
@@ -24,25 +23,53 @@ object composerMod extends Shortcut {
     js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   ]
   
-  @js.native
   trait Logger extends StObject {
     
-    def warn(data: js.Any*): Unit = js.native
+    def warn(data: js.Any*): Unit
     @JSName("warn")
-    var warn_Original: js.Function1[/* repeated */ js.Any, Unit] = js.native
+    var warn_Original: js.Function1[/* repeated */ js.Any, Unit]
+  }
+  object Logger {
+    
+    @scala.inline
+    def apply(warn: /* repeated */ js.Any => Unit): Logger = {
+      val __obj = js.Dynamic.literal(warn = js.Any.fromFunction1(warn))
+      __obj.asInstanceOf[Logger]
+    }
+    
+    @scala.inline
+    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Uglify extends StObject {
     
-    def minify(files: String): MinifyOutput = js.native
-    def minify(files: String, options: MinifyOptions): MinifyOutput = js.native
-    def minify(files: js.Array[String]): MinifyOutput = js.native
-    def minify(files: js.Array[String], options: MinifyOptions): MinifyOutput = js.native
-    def minify(files: StringDictionary[String]): MinifyOutput = js.native
-    def minify(files: StringDictionary[String], options: MinifyOptions): MinifyOutput = js.native
+    def minify(files: String): MinifyOutput
+    def minify(files: String, options: MinifyOptions): MinifyOutput
+    def minify(files: js.Array[String]): MinifyOutput
+    def minify(files: js.Array[String], options: MinifyOptions): MinifyOutput
+    def minify(files: StringDictionary[String]): MinifyOutput
+    def minify(files: StringDictionary[String], options: MinifyOptions): MinifyOutput
     @JSName("minify")
-    var minify_Original: FnCall = js.native
+    var minify_Original: FnCall
+  }
+  object Uglify {
+    
+    @scala.inline
+    def apply(minify: FnCall): Uglify = {
+      val __obj = js.Dynamic.literal(minify = minify.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Uglify]
+    }
+    
+    @scala.inline
+    implicit class UglifyMutableBuilder[Self <: Uglify] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMinify(value: FnCall): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+    }
   }
   
   type _To = Composer

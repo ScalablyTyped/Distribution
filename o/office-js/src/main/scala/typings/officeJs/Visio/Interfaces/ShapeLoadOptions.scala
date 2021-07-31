@@ -2,7 +2,6 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set:  1.1]
   */
-@js.native
 trait ShapeLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ShapeLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ShapeLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ShapeLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var select: js.UndefOr[Boolean] = js.native
+  var select: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait ShapeLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var text: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait ShapeLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[ShapeViewLoadOptions] = js.native
+  var view: js.UndefOr[ShapeViewLoadOptions] = js.undefined
 }
 object ShapeLoadOptions {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalFormatRuleLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ConditionalFormatRuleLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formula: js.UndefOr[Boolean] = js.native
+  var formula: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ConditionalFormatRuleLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formulaLocal: js.UndefOr[Boolean] = js.native
+  var formulaLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ConditionalFormatRuleLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formulaR1C1: js.UndefOr[Boolean] = js.native
+  var formulaR1C1: js.UndefOr[Boolean] = js.undefined
 }
 object ConditionalFormatRuleLoadOptions {
   

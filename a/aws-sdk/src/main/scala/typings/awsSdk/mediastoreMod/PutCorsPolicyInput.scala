@@ -2,21 +2,19 @@ package typings.awsSdk.mediastoreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutCorsPolicyInput extends StObject {
   
   /**
     * The name of the container that you want to assign the CORS policy to.
     */
-  var ContainerName: typings.awsSdk.mediastoreMod.ContainerName = js.native
+  var ContainerName: typings.awsSdk.mediastoreMod.ContainerName
   
   /**
     * The CORS policy to apply to the container. 
     */
-  var CorsPolicy: typings.awsSdk.mediastoreMod.CorsPolicy = js.native
+  var CorsPolicy: typings.awsSdk.mediastoreMod.CorsPolicy
 }
 object PutCorsPolicyInput {
   

@@ -2,16 +2,14 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface that represents an auth provider.
   */
-@js.native
 trait AuthProvider extends StObject {
   
-  var providerId: String = js.native
+  var providerId: String
 }
 object AuthProvider {
   

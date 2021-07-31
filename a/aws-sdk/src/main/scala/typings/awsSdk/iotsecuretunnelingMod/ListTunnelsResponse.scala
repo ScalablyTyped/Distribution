@@ -2,21 +2,19 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTunnelsResponse extends StObject {
   
   /**
     * A token to used to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A short description of the tunnels in an AWS account.
     */
-  var tunnelSummaries: js.UndefOr[TunnelSummaryList] = js.native
+  var tunnelSummaries: js.UndefOr[TunnelSummaryList] = js.undefined
 }
 object ListTunnelsResponse {
   

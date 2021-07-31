@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitmentInterval extends StObject {
   
-  var commitmentInterval: js.UndefOr[EndTime] = js.native
+  var commitmentInterval: js.UndefOr[EndTime] = js.undefined
   
-  var isCommitmentPlan: js.UndefOr[Boolean] = js.native
+  var isCommitmentPlan: js.UndefOr[Boolean] = js.undefined
   
-  var planName: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.undefined
 }
 object CommitmentInterval {
   

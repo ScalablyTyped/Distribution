@@ -3,22 +3,22 @@ package typings.reactBeautifulDnd.mod
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.REORDER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReorderImpact extends ImpactLocation {
+trait ReorderImpact
+  extends StObject
+     with ImpactLocation {
   
-  var destination: DraggableLocation = js.native
+  var destination: DraggableLocation
   
-  var `type`: REORDER = js.native
+  var `type`: REORDER
 }
 object ReorderImpact {
   
   @scala.inline
-  def apply(destination: DraggableLocation, `type`: REORDER): ReorderImpact = {
+  def apply(destination: DraggableLocation): ReorderImpact = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("REORDER")
     __obj.asInstanceOf[ReorderImpact]
   }
   

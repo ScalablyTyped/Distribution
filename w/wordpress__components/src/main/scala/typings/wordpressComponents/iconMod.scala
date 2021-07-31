@@ -7,7 +7,6 @@ import typings.std.SVGSVGElement
 import typings.wordpressComponents.iconMod.Icon.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
@@ -15,9 +14,12 @@ object iconMod {
   object default {
     
     // tslint:disable-next-line:no-unnecessary-generics
+    @scala.inline
+    def apply[P](props: Props[P]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/components/icon", JSImport.Default)
     @js.native
-    def apply[P](props: Props[P]): Element = js.native
+    val ^ : js.Any = js.native
   }
   
   object Icon {
@@ -25,7 +27,6 @@ object iconMod {
     // prettier-ignore
     type AdditionalProps[T] = js.Object | SVGProps[SVGSVGElement]
     
-    @js.native
     trait BaseProps[P] extends StObject {
       
       /**
@@ -33,13 +34,13 @@ object iconMod {
         * strings), functions, WPComponent instances and `null`.
         * @defaultValue null
         */
-      var icon: js.UndefOr[IconType[P]] = js.native
+      var icon: js.UndefOr[IconType[P]] = js.undefined
       
       /**
         * The size (width and height) of the icon.
         * @defaultValue `20` (when using Dashicon), `24` otherwise
         */
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
     }
     object BaseProps {
       
@@ -50,7 +51,7 @@ object iconMod {
       }
       
       @scala.inline
-      implicit class BasePropsMutableBuilder[Self <: BaseProps[_], P] (val x: Self with BaseProps[P]) extends AnyVal {
+      implicit class BasePropsMutableBuilder[Self <: BaseProps[?], P] (val x: Self & BaseProps[P]) extends AnyVal {
         
         @scala.inline
         def setIcon(value: IconType[P]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
@@ -68,6 +69,6 @@ object iconMod {
     
     type IconType[P] = typings.wordpressComponents.dashiconMod.Dashicon.Icon | ComponentType[P] | Element
     
-    type Props[P] = BaseProps[P] with AdditionalProps[IconType[P]]
+    type Props[P] = BaseProps[P] & AdditionalProps[IconType[P]]
   }
 }

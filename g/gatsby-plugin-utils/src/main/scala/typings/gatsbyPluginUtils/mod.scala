@@ -10,10 +10,13 @@ import typings.gatsbyPluginUtils.validateMod.IOptions
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gatsby-plugin-utils/dist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Joi extends Shortcut {
     
@@ -24,8 +27,16 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("gatsby-plugin-utils/dist", "Joi.ValidationError")
     @js.native
-    class ValidationErrorCls protected () extends ValidationError {
+    class ValidationErrorCls protected ()
+      extends StObject
+         with ValidationError {
       def this(message: String, details: js.Any, original: js.Any) = this()
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
     }
     
     type _To = PluginOptionsSchemaJoi
@@ -34,20 +45,17 @@ object mod {
     override def _to: PluginOptionsSchemaJoi = ^
   }
   
-  @JSImport("gatsby-plugin-utils/dist", "testPluginOptionsSchema")
-  @js.native
+  @scala.inline
   def testPluginOptionsSchema_pluginOptionsSchema(
     pluginSchemaFunction: Exclude[
       /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GatsbyNode * / any['pluginOptionsSchema'] */ js.Any, 
-      js.UndefOr[scala.Nothing]
+      Unit
     ],
     pluginOptions: IPluginInfoOptions
-  ): js.Promise[ITestPluginOptionsSchemaReturnType] = js.native
+  ): js.Promise[ITestPluginOptionsSchemaReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("testPluginOptionsSchema")(pluginSchemaFunction.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ITestPluginOptionsSchemaReturnType]]
   
-  @JSImport("gatsby-plugin-utils/dist", "validateOptionsSchema")
-  @js.native
-  def validateOptionsSchema(pluginSchema: ObjectSchema[_], pluginOptions: IPluginInfoOptions): js.Promise[IPluginInfoOptions] = js.native
-  @JSImport("gatsby-plugin-utils/dist", "validateOptionsSchema")
-  @js.native
-  def validateOptionsSchema(pluginSchema: ObjectSchema[_], pluginOptions: IPluginInfoOptions, options: IOptions): js.Promise[IPluginInfoOptions] = js.native
+  @scala.inline
+  def validateOptionsSchema(pluginSchema: ObjectSchema[js.Any], pluginOptions: IPluginInfoOptions): js.Promise[IPluginInfoOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOptionsSchema")(pluginSchema.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IPluginInfoOptions]]
+  @scala.inline
+  def validateOptionsSchema(pluginSchema: ObjectSchema[js.Any], pluginOptions: IPluginInfoOptions, options: IOptions): js.Promise[IPluginInfoOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOptionsSchema")(pluginSchema.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IPluginInfoOptions]]
 }

@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A participant in the test execution, either the execution engine, a client, or a server
   */
-@js.native
-trait TestReportParticipant extends BackboneElement {
+trait TestReportParticipant
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'uri'.
     */
-  var _uri: js.UndefOr[Element] = js.native
+  var _uri: js.UndefOr[Element] = js.undefined
   
   /**
     * The display name of the participant
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * test-engine | client | server
     */
-  var `type`: code = js.native
+  var `type`: code
   
   /**
     * The uri of the participant. An absolute URL is preferred
     */
-  var uri: typings.fhir.fhir.uri = js.native
+  var uri: typings.fhir.fhir.uri
 }
 object TestReportParticipant {
   

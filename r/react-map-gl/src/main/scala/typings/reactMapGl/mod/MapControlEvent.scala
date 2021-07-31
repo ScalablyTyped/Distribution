@@ -2,33 +2,31 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapControlEvent extends StObject {
   
-  var center: Center = js.native
+  var center: Center
   
-  var delta: js.UndefOr[Double] = js.native
+  var delta: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[Double] = js.native
+  var key: js.UndefOr[Double] = js.undefined
   
-  var leftButton: js.UndefOr[Boolean] = js.native
+  var leftButton: js.UndefOr[Boolean] = js.undefined
   
-  var middleButton: js.UndefOr[Boolean] = js.native
+  var middleButton: js.UndefOr[Boolean] = js.undefined
   
-  var offsetCenter: Center = js.native
+  var offsetCenter: Center
   
-  var pointerType: js.UndefOr[String] = js.native
+  var pointerType: js.UndefOr[String] = js.undefined
   
-  var rightButton: js.UndefOr[Boolean] = js.native
+  var rightButton: js.UndefOr[Boolean] = js.undefined
   
-  var srcEvent: js.Any = js.native
+  var srcEvent: js.Any
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object MapControlEvent {
   

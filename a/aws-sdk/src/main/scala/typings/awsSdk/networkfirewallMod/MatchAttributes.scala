@@ -2,41 +2,39 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchAttributes extends StObject {
   
   /**
     * The destination ports to inspect for. If not specified, this matches with any destination port. This setting is only used for protocols 6 (TCP) and 17 (UDP).  You can specify individual ports, for example 1994 and you can specify port ranges, for example 1990-1994. 
     */
-  var DestinationPorts: js.UndefOr[PortRanges] = js.native
+  var DestinationPorts: js.UndefOr[PortRanges] = js.undefined
   
   /**
     * The destination IP addresses and address ranges to inspect for, in CIDR notation. If not specified, this matches with any destination address. 
     */
-  var Destinations: js.UndefOr[Addresses] = js.native
+  var Destinations: js.UndefOr[Addresses] = js.undefined
   
   /**
     * The protocols to inspect for, specified using each protocol's assigned internet protocol number (IANA). If not specified, this matches with any protocol. 
     */
-  var Protocols: js.UndefOr[ProtocolNumbers] = js.native
+  var Protocols: js.UndefOr[ProtocolNumbers] = js.undefined
   
   /**
     * The source ports to inspect for. If not specified, this matches with any source port. This setting is only used for protocols 6 (TCP) and 17 (UDP).  You can specify individual ports, for example 1994 and you can specify port ranges, for example 1990-1994. 
     */
-  var SourcePorts: js.UndefOr[PortRanges] = js.native
+  var SourcePorts: js.UndefOr[PortRanges] = js.undefined
   
   /**
     * The source IP addresses and address ranges to inspect for, in CIDR notation. If not specified, this matches with any source address. 
     */
-  var Sources: js.UndefOr[Addresses] = js.native
+  var Sources: js.UndefOr[Addresses] = js.undefined
   
   /**
     * The TCP flags and masks to inspect for. If not specified, this matches with any settings. This setting is only used for protocol 6 (TCP).
     */
-  var TCPFlags: js.UndefOr[typings.awsSdk.networkfirewallMod.TCPFlags] = js.native
+  var TCPFlags: js.UndefOr[typings.awsSdk.networkfirewallMod.TCPFlags] = js.undefined
 }
 object MatchAttributes {
   

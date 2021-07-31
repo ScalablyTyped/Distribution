@@ -4,30 +4,29 @@ import typings.d3Quadtree.d3QuadtreeNumbers.`4`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-quadtree", "quadtree")
+  @JSImport("d3-quadtree", JSImport.Namespace)
   @js.native
-  def quadtree[T](): Quadtree_[T] = js.native
-  @JSImport("d3-quadtree", "quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T]): Quadtree_[T] = js.native
-  @JSImport("d3-quadtree", "quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T], x: js.UndefOr[scala.Nothing], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
-  @JSImport("d3-quadtree", "quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
-  @JSImport("d3-quadtree", "quadtree")
-  @js.native
-  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def quadtree[T](): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")().asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T]): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any]).asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
+  @scala.inline
+  def quadtree[T](data: js.Array[T], x: Unit, y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
   
   @js.native
   trait QuadtreeInternalNode[T]
-    extends Array[js.UndefOr[QuadtreeInternalNode[T] | QuadtreeLeaf[T]]] {
+    extends StObject
+       with Array[js.UndefOr[QuadtreeInternalNode[T] | QuadtreeLeaf[T]]] {
     
     /**
       * The length property may be used to distinguish leaf nodes from internal nodes: it is undefined for leaf nodes, and 4 for internal nodes.
@@ -36,37 +35,39 @@ object mod {
     var length_QuadtreeInternalNode: `4` = js.native
   }
   
-  @js.native
   trait QuadtreeLeaf[T] extends StObject {
     
     /**
       * The data associated with this point, as passed to quadtree.add.
       */
-    var data: T = js.native
+    var data: T
     
     /**
       * The length property may be used to distinguish leaf nodes from internal nodes: it is undefined for leaf nodes, and 4 for internal nodes.
       */
-    var length: js.UndefOr[scala.Nothing] = js.native
+    var length: Unit
     
     /**
       * The next datum in this leaf, if any.
       */
-    var next: js.UndefOr[QuadtreeLeaf[T]] = js.native
+    var next: js.UndefOr[QuadtreeLeaf[T]] = js.undefined
   }
   object QuadtreeLeaf {
     
     @scala.inline
-    def apply[T](data: T): QuadtreeLeaf[T] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    def apply[T](data: T, length: Unit): QuadtreeLeaf[T] = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuadtreeLeaf[T]]
     }
     
     @scala.inline
-    implicit class QuadtreeLeafMutableBuilder[Self <: QuadtreeLeaf[_], T] (val x: Self with QuadtreeLeaf[T]) extends AnyVal {
+    implicit class QuadtreeLeafMutableBuilder[Self <: QuadtreeLeaf[?], T] (val x: Self & QuadtreeLeaf[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLength(value: Unit): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNext(value: QuadtreeLeaf[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.lazyBrush
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -133,16 +132,23 @@ object mod {
   
   @JSImport("lazy-brush", "Point")
   @js.native
-  class Point protected () extends Coordinates {
+  class Point protected ()
+    extends StObject
+       with Coordinates {
     def this(x: Double, y: Double) = this()
-  }
-  
-  @js.native
-  trait Coordinates extends StObject {
     
+    /* CompleteClass */
     var x: Double = js.native
     
+    /* CompleteClass */
     var y: Double = js.native
+  }
+  
+  trait Coordinates extends StObject {
+    
+    var x: Double
+    
+    var y: Double
   }
   object Coordinates {
     
@@ -163,14 +169,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var initialPoint: js.UndefOr[Coordinates] = js.native
+    var initialPoint: js.UndefOr[Coordinates] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -203,10 +208,9 @@ object mod {
     }
   }
   
-  @js.native
   trait UpdateOptions extends StObject {
     
-    var both: Boolean = js.native
+    var both: Boolean
   }
   object UpdateOptions {
     

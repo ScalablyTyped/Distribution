@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductSet extends StObject {
   
   /** The list of product IDs making up the set of products. */
-  var productId: js.UndefOr[js.Array[String]] = js.native
+  var productId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The interpretation of this product set. "unknown" should never be sent and is ignored if received. "whitelist" means that the user is entitled to access the product set.
@@ -18,14 +16,14 @@ trait ProductSet extends StObject {
     * value is provided, it is interpreted as "whitelist" for backwards compatibility. Further "allApproved" or "includeAll" does not enable automatic visibility of "alpha" or "beta"
     * tracks for Android app. Use ProductVisibility to enable "alpha" or "beta" tracks per user.
     */
-  var productSetBehavior: js.UndefOr[String] = js.native
+  var productSetBehavior: js.UndefOr[String] = js.undefined
   
   /**
     * Additional list of product IDs making up the product set. Unlike the productID array, in this list It's possible to specify which tracks (alpha, beta, production) of a product are
     * visible to the user. See ProductVisibility and its fields for more information. Specifying the same product ID both here and in the productId array is not allowed and it will result
     * in an error.
     */
-  var productVisibility: js.UndefOr[js.Array[ProductVisibility]] = js.native
+  var productVisibility: js.UndefOr[js.Array[ProductVisibility]] = js.undefined
 }
 object ProductSet {
   

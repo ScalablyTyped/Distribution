@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internetGatewayMod {
@@ -25,7 +24,7 @@ object internetGatewayMod {
       */
     def this(name: String) = this()
     def this(name: String, args: InternetGatewayArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: InternetGatewayArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -51,6 +50,10 @@ object internetGatewayMod {
   /* static members */
   object InternetGateway {
     
+    @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing InternetGateway resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -60,40 +63,34 @@ object internetGatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): InternetGateway = js.native
-    @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InternetGateway = js.native
-    @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InternetGatewayState): InternetGateway = js.native
-    @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InternetGatewayState, opts: CustomResourceOptions): InternetGateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): InternetGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[InternetGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): InternetGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InternetGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InternetGatewayState): InternetGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[InternetGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InternetGatewayState, opts: CustomResourceOptions): InternetGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InternetGateway]
     
     /**
       * Returns true if the given object is an instance of InternetGateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/internetGateway.InternetGateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/internetGateway.InternetGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/internetGateway.InternetGateway */ Boolean]
   }
   
-  @js.native
   trait InternetGatewayArgs extends StObject {
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC ID to create in.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object InternetGatewayArgs {
     
@@ -120,28 +117,27 @@ object internetGatewayMod {
     }
   }
   
-  @js.native
   trait InternetGatewayState extends StObject {
     
     /**
       * The ARN of the Internet Gateway.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the internet gateway.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC ID to create in.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object InternetGatewayState {
     

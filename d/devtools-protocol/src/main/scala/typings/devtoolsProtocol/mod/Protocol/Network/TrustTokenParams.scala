@@ -4,25 +4,23 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.Refresh
 import typings.devtoolsProtocol.devtoolsProtocolStrings.UseCached
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustTokenParams extends StObject {
   
   /**
     * Origins of issuers from whom to request tokens or redemption
     * records.
     */
-  var issuers: js.UndefOr[js.Array[String]] = js.native
+  var issuers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Only set for "srr-token-redemption" type and determine whether
     * to request a fresh SRR or use a still valid cached SRR. (TrustTokenParamsRefreshPolicy enum)
     */
-  var refreshPolicy: UseCached | Refresh = js.native
+  var refreshPolicy: UseCached | Refresh
   
-  var `type`: TrustTokenOperationType = js.native
+  var `type`: TrustTokenOperationType
 }
 object TrustTokenParams {
   

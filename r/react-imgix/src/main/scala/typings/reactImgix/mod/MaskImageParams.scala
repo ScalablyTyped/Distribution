@@ -2,15 +2,13 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaskImageParams extends StObject {
   
-  var `corner-radius`: js.UndefOr[ImgixParamType] = js.native
+  var `corner-radius`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var mask: js.UndefOr[ImgixParamType] = js.native
+  var mask: js.UndefOr[ImgixParamType] = js.undefined
 }
 object MaskImageParams {
   

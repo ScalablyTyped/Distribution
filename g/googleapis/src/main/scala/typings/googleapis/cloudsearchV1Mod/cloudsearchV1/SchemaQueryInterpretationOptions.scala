@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to interpret user query.
   */
-@js.native
 trait SchemaQueryInterpretationOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaQueryInterpretationOptions extends StObject {
     * is false, Set to true to disable natural language interpretation. NL
     * interpretation only applies to predefined datasources.
     */
-  var disableNlInterpretation: js.UndefOr[Boolean] = js.native
+  var disableNlInterpretation: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaQueryInterpretationOptions {
   

@@ -6,19 +6,20 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("url-assembler", JSImport.Namespace)
   @js.native
-  val ^ : UrlAssemblerConstructor = js.native
+  val ^ : js.Object & UrlAssemblerConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("url-assembler", JSImport.Namespace)
   @js.native
-  class Class () extends UrlAssembler {
+  class Class ()
+    extends StObject
+       with UrlAssembler {
     def this(baseUrl: String) = this()
     def this(urlAssembler: UrlAssembler) = this()
   }
@@ -45,7 +46,8 @@ object mod extends Shortcut {
   
   @js.native
   trait UrlAssemblerConstructor
-    extends Instantiable0[UrlAssembler]
+    extends StObject
+       with Instantiable0[UrlAssembler]
        with Instantiable1[(/* baseUrl */ String) | (/* urlAssembler */ UrlAssembler), UrlAssembler] {
     
     def apply(): UrlAssembler = js.native
@@ -53,8 +55,8 @@ object mod extends Shortcut {
     def apply(urlAssembler: UrlAssembler): UrlAssembler = js.native
   }
   
-  type _To = UrlAssemblerConstructor
+  type _To = js.Object & UrlAssemblerConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: UrlAssemblerConstructor = ^
+  override def _to: js.Object & UrlAssemblerConstructor = ^
 }

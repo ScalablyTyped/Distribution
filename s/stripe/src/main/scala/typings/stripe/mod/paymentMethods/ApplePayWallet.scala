@@ -3,22 +3,21 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.stripeStrings.apple_pay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplePayWallet
-  extends TokenizedWallet
+  extends StObject
+     with TokenizedWallet
      with CardWallet {
   
-  var `type`: apple_pay = js.native
+  var `type`: apple_pay
 }
 object ApplePayWallet {
   
   @scala.inline
-  def apply(`type`: apple_pay): ApplePayWallet = {
+  def apply(): ApplePayWallet = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("apple_pay")
     __obj.asInstanceOf[ApplePayWallet]
   }
   

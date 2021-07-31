@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDeploymentmanager.gapi.client.deploymentma
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypesListResponse extends StObject {
   
   /** A token used to continue a truncated list request. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Output only. A list of resource types supported by Deployment Manager. */
-  var types: js.UndefOr[js.Array[Type]] = js.native
+  var types: js.UndefOr[js.Array[Type]] = js.undefined
 }
 object TypesListResponse {
   

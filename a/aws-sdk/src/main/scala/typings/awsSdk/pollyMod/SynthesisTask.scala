@@ -2,86 +2,84 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SynthesisTask extends StObject {
   
   /**
     * Timestamp for the time the synthesis task was started.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Specifies the engine (standard or neural) for Amazon Polly to use when processing input text for speech synthesis. Using a voice that is not supported for the engine selected will result in an error.
     */
-  var Engine: js.UndefOr[typings.awsSdk.pollyMod.Engine] = js.native
+  var Engine: js.UndefOr[typings.awsSdk.pollyMod.Engine] = js.undefined
   
   /**
     * Optional language code for a synthesis task. This is only necessary if using a bilingual voice, such as Aditi, which can be used for either Indian English (en-IN) or Hindi (hi-IN).  If a bilingual voice is used and no language code is specified, Amazon Polly will use the default language of the bilingual voice. The default language for any voice is the one returned by the DescribeVoices operation for the LanguageCode parameter. For example, if no language code is specified, Aditi will use Indian English rather than Hindi.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.pollyMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.pollyMod.LanguageCode] = js.undefined
   
   /**
     * List of one or more pronunciation lexicon names you want the service to apply during synthesis. Lexicons are applied only if the language of the lexicon is the same as the language of the voice. 
     */
-  var LexiconNames: js.UndefOr[LexiconNameList] = js.native
+  var LexiconNames: js.UndefOr[LexiconNameList] = js.undefined
   
   /**
     * The format in which the returned output will be encoded. For audio stream, this will be mp3, ogg_vorbis, or pcm. For speech marks, this will be json. 
     */
-  var OutputFormat: js.UndefOr[typings.awsSdk.pollyMod.OutputFormat] = js.native
+  var OutputFormat: js.UndefOr[typings.awsSdk.pollyMod.OutputFormat] = js.undefined
   
   /**
     * Pathway for the output speech file.
     */
-  var OutputUri: js.UndefOr[typings.awsSdk.pollyMod.OutputUri] = js.native
+  var OutputUri: js.UndefOr[typings.awsSdk.pollyMod.OutputUri] = js.undefined
   
   /**
     * Number of billable characters synthesized.
     */
-  var RequestCharacters: js.UndefOr[typings.awsSdk.pollyMod.RequestCharacters] = js.native
+  var RequestCharacters: js.UndefOr[typings.awsSdk.pollyMod.RequestCharacters] = js.undefined
   
   /**
     * The audio frequency specified in Hz. The valid values for mp3 and ogg_vorbis are "8000", "16000", "22050", and "24000". The default value for standard voices is "22050". The default value for neural voices is "24000". Valid values for pcm are "8000" and "16000" The default value is "16000". 
     */
-  var SampleRate: js.UndefOr[typings.awsSdk.pollyMod.SampleRate] = js.native
+  var SampleRate: js.UndefOr[typings.awsSdk.pollyMod.SampleRate] = js.undefined
   
   /**
     * ARN for the SNS topic optionally used for providing status notification for a speech synthesis task.
     */
-  var SnsTopicArn: js.UndefOr[typings.awsSdk.pollyMod.SnsTopicArn] = js.native
+  var SnsTopicArn: js.UndefOr[typings.awsSdk.pollyMod.SnsTopicArn] = js.undefined
   
   /**
     * The type of speech marks returned for the input text.
     */
-  var SpeechMarkTypes: js.UndefOr[SpeechMarkTypeList] = js.native
+  var SpeechMarkTypes: js.UndefOr[SpeechMarkTypeList] = js.undefined
   
   /**
     * The Amazon Polly generated identifier for a speech synthesis task.
     */
-  var TaskId: js.UndefOr[typings.awsSdk.pollyMod.TaskId] = js.native
+  var TaskId: js.UndefOr[typings.awsSdk.pollyMod.TaskId] = js.undefined
   
   /**
     * Current status of the individual speech synthesis task.
     */
-  var TaskStatus: js.UndefOr[typings.awsSdk.pollyMod.TaskStatus] = js.native
+  var TaskStatus: js.UndefOr[typings.awsSdk.pollyMod.TaskStatus] = js.undefined
   
   /**
     * Reason for the current status of a specific speech synthesis task, including errors if the task has failed.
     */
-  var TaskStatusReason: js.UndefOr[typings.awsSdk.pollyMod.TaskStatusReason] = js.native
+  var TaskStatusReason: js.UndefOr[typings.awsSdk.pollyMod.TaskStatusReason] = js.undefined
   
   /**
     * Specifies whether the input text is plain text or SSML. The default value is plain text. 
     */
-  var TextType: js.UndefOr[typings.awsSdk.pollyMod.TextType] = js.native
+  var TextType: js.UndefOr[typings.awsSdk.pollyMod.TextType] = js.undefined
   
   /**
     * Voice ID to use for the synthesis. 
     */
-  var VoiceId: js.UndefOr[typings.awsSdk.pollyMod.VoiceId] = js.native
+  var VoiceId: js.UndefOr[typings.awsSdk.pollyMod.VoiceId] = js.undefined
 }
 object SynthesisTask {
   

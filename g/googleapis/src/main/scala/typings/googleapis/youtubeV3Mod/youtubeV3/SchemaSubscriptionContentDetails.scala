@@ -2,30 +2,28 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about the content to witch a subscription refers.
   */
-@js.native
 trait SchemaSubscriptionContentDetails extends StObject {
   
   /**
     * The type of activity this subscription is for (only uploads, everything).
     */
-  var activityType: js.UndefOr[String] = js.native
+  var activityType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of new items in the subscription since its content was last
     * read.
     */
-  var newItemCount: js.UndefOr[Double] = js.native
+  var newItemCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The approximate number of items that the subscription points to.
     */
-  var totalItemCount: js.UndefOr[Double] = js.native
+  var totalItemCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaSubscriptionContentDetails {
   

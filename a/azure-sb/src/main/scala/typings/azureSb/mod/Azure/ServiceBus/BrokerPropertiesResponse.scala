@@ -2,40 +2,38 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined azure-sb.azure-sb.Azure.ServiceBus.IBrokerPropertiesResponse & std.Partial<azure-sb.azure-sb.Azure.ServiceBus.IBrokerProperties> */
-@js.native
 trait BrokerPropertiesResponse extends StObject {
   
-  var CorrelationId: js.UndefOr[String] = js.native
+  var CorrelationId: js.UndefOr[String] = js.undefined
   
-  val DeliveryCount: Double = js.native
+  val DeliveryCount: Double
   
-  var Label: js.UndefOr[String] = js.native
+  var Label: js.UndefOr[String] = js.undefined
   
-  val LockToken: String = js.native
+  val LockToken: String
   
-  val LockedUntil: DateString = js.native
+  val LockedUntil: DateString
   
-  var MessageId: js.UndefOr[String] = js.native
+  var MessageId: js.UndefOr[String] = js.undefined
   
-  var PartitionKey: js.UndefOr[String] = js.native
+  var PartitionKey: js.UndefOr[String] = js.undefined
   
-  var ReplyTo: js.UndefOr[String] = js.native
+  var ReplyTo: js.UndefOr[String] = js.undefined
   
-  var ReplyToSessionId: js.UndefOr[String] = js.native
+  var ReplyToSessionId: js.UndefOr[String] = js.undefined
   
-  var ScheduledEnqueueTimeUtc: js.UndefOr[String] = js.native
+  var ScheduledEnqueueTimeUtc: js.UndefOr[String] = js.undefined
   
-  val SequenceNumber: Double = js.native
+  val SequenceNumber: Double
   
-  var SessionId: js.UndefOr[String] = js.native
+  var SessionId: js.UndefOr[String] = js.undefined
   
-  var TimeToLive: js.UndefOr[String] = js.native
+  var TimeToLive: js.UndefOr[String] = js.undefined
   
-  var To: js.UndefOr[String] = js.native
+  var To: js.UndefOr[String] = js.undefined
 }
 object BrokerPropertiesResponse {
   

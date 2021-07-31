@@ -2,26 +2,24 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventTypesRequest extends StObject {
   
   /**
     * The maximum number of objects to return for the request.
     */
-  var maxResults: js.UndefOr[eventTypesMaxResults] = js.native
+  var maxResults: js.UndefOr[eventTypesMaxResults] = js.undefined
   
   /**
     * The name.
     */
-  var name: js.UndefOr[identifier] = js.native
+  var name: js.UndefOr[identifier] = js.undefined
   
   /**
     * The next token for the subsequent request.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object GetEventTypesRequest {
   

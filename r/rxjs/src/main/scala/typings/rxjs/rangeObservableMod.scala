@@ -2,7 +2,6 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeObservableMod {
@@ -15,45 +14,41 @@ object rangeObservableMod {
   /* static members */
   object RangeObservable {
     
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
+    @JSImport("rxjs/observable/RangeObservable", "RangeObservable")
     @js.native
-    def create(): js.Any = js.native
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
-    @js.native
-    def create(
-      start: js.UndefOr[scala.Nothing],
-      count: js.UndefOr[scala.Nothing],
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = js.native
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
-    @js.native
-    def create(start: js.UndefOr[scala.Nothing], count: Double): js.Any = js.native
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
-    @js.native
-    def create(
-      start: js.UndefOr[scala.Nothing],
-      count: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = js.native
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
-    @js.native
-    def create(start: Double): js.Any = js.native
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
-    @js.native
-    def create(
-      start: Double,
-      count: js.UndefOr[scala.Nothing],
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = js.native
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
-    @js.native
-    def create(start: Double, count: Double): js.Any = js.native
-    @JSImport("rxjs/observable/RangeObservable", "RangeObservable.create")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+    @scala.inline
+    def create(start: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def create(start: Double, count: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def create(
       start: Double,
       count: Double,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def create(
+      start: Double,
+      count: Unit,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def create(start: Unit, count: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def create(
+      start: Unit,
+      count: Double,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def create(
+      start: Unit,
+      count: Unit,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

@@ -2,30 +2,30 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxMenu object.
   */
-@js.native
-trait ASPxClientMenu extends ASPxClientMenuBase {
+trait ASPxClientMenu
+  extends StObject
+     with ASPxClientMenuBase {
   
   /**
     * Gets a value specifying the menu orientation.
     */
-  def GetOrientation(): String = js.native
+  def GetOrientation(): String
   
   /**
     * Sets the menu orientation.
     * @param orientation 'Vertical' to orient the menu vertically; 'Horizontal' to orient the menu horizontally.
     */
-  def SetOrientation(orientation: String): Unit = js.native
+  def SetOrientation(orientation: String): Unit
   
   /**
     * Expands or collapses the side menu.
     */
-  def ToggleSideMenu(): Unit = js.native
+  def ToggleSideMenu(): Unit
 }
 object ASPxClientMenu {
   

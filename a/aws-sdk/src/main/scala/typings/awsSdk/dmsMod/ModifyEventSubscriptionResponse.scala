@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyEventSubscriptionResponse extends StObject {
   
   /**
     * The modified event subscription.
     */
-  var EventSubscription: js.UndefOr[typings.awsSdk.dmsMod.EventSubscription] = js.native
+  var EventSubscription: js.UndefOr[typings.awsSdk.dmsMod.EventSubscription] = js.undefined
 }
 object ModifyEventSubscriptionResponse {
   

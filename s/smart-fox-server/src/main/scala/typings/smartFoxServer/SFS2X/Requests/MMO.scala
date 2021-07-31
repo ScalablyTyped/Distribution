@@ -3,7 +3,6 @@ package typings.smartFoxServer.SFS2X.Requests
 import typings.smartFoxServer.SFS2X.Entities.Data.Vec3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Requests.MMO.html
 object MMO {
   
-  @js.native
   trait MMORoomSettings extends StObject {
     
     /** @type {Entities.Data.Vec3D} Defines the Area of Interest (AoI) for the MMORoom. */
-    var defaultAOI: Vec3D = js.native
+    var defaultAOI: Vec3D
     
     /** @type {MapLimits} Defines the limits of the virtual environment represented by the MMORoom. */
-    var mapLimits: MapLimits = js.native
+    var mapLimits: MapLimits
     
     /** @type {number} Configures the speed at which the SFSEvent.PROXIMITY_LIST_UPDATE event is sent by the server. */
-    var proximityListUpdateMillis: Double = js.native
+    var proximityListUpdateMillis: Double
     
     /** @type {boolean} Sets if the users entry points in the current user's Area of Interest should be transmitted in the SFSEvent.PROXIMITY_LIST_UPDATE event. */
-    var sendAOIEntryPoint: Boolean = js.native
+    var sendAOIEntryPoint: Boolean
     
     /** @type {number} Defines the time limit before a user without a physical position set inside the MMORoom is kicked from the Room. */
-    var userMaxLimboSeconds: Double = js.native
+    var userMaxLimboSeconds: Double
   }
   object MMORoomSettings {
     
@@ -63,14 +61,13 @@ object MMO {
     }
   }
   
-  @js.native
   trait MapLimits extends StObject {
     
     /** @type {Entities.Data.Vec3D} Returns the higher coordinates limit of the virtual environment along the X,Y,Z axes. */
-    var higherLimit: Vec3D = js.native
+    var higherLimit: Vec3D
     
     /** @type {Entities.Data.Vec3D} Returns the lower coordinates limit of the virtual environment along the X,Y,Z axes. */
-    var lowerLimit: Vec3D = js.native
+    var lowerLimit: Vec3D
   }
   object MapLimits {
     
@@ -91,6 +88,5 @@ object MMO {
     }
   }
   
-  @js.native
   trait SetUserPositionRequest extends StObject
 }

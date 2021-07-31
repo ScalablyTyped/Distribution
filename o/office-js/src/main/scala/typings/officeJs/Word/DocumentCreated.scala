@@ -8,7 +8,6 @@ import typings.officeJs.Word.Interfaces.DocumentCreatedUpdateData
 import typings.officeJs.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait DocumentCreated extends ClientObject {
+trait DocumentCreated
+  extends StObject
+     with ClientObject {
   
   /**
     *

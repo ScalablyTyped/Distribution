@@ -3,19 +3,19 @@ package typings.w3cCssTypedObjectModelLevel1
 import typings.std.DOMMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CSSRotate extends CSSTransformComponent {
+trait CSSRotate
+  extends StObject
+     with CSSTransformComponent {
   
-  var angle: CSSNumericValue = js.native
+  var angle: CSSNumericValue
   
-  var x: CSSNumberish = js.native
+  var x: CSSNumberish
   
-  var y: CSSNumberish = js.native
+  var y: CSSNumberish
   
-  var z: CSSNumberish = js.native
+  var z: CSSNumberish
 }
 object CSSRotate {
   

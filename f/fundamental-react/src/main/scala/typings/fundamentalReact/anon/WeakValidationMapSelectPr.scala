@@ -12,40 +12,38 @@ import typings.std.MouseEvent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Select/Select.SelectProps> */
-@js.native
 trait WeakValidationMapSelectPr extends StObject {
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var compact: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var compact: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var emptyAriaLabel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var emptyAriaLabel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var formMessageProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, _])]]] = js.native
+  var formMessageProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, js.Any])]]] = js.undefined
   
-  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var includeEmptyOption: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var includeEmptyOption: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var innerRefClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var innerRefClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var listClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var listClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var listItemClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var listItemClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var listItemTextClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var listItemTextClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
   var onBlur: js.UndefOr[
     Validator[js.UndefOr[(js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]) | Null]]
-  ] = js.native
+  ] = js.undefined
   
   var onClick: js.UndefOr[
     Validator[
@@ -53,7 +51,7 @@ trait WeakValidationMapSelectPr extends StObject {
         (js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onSelect: js.UndefOr[
     Validator[
@@ -65,27 +63,27 @@ trait WeakValidationMapSelectPr extends StObject {
         ]) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var options: js.UndefOr[Validator[js.UndefOr[js.Array[Option] | Null]]] = js.native
+  var options: js.UndefOr[Validator[js.UndefOr[js.Array[Option] | Null]]] = js.undefined
   
-  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var popperClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var popperClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var referenceClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var referenceClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var selectedKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var selectedKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var textContentClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var textContentClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var triggerClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var triggerClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var validationState: js.UndefOr[Validator[js.UndefOr[Null | State]]] = js.native
+  var validationState: js.UndefOr[Validator[js.UndefOr[Null | State]]] = js.undefined
   
-  var wrapperProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, _])]]] = js.native
+  var wrapperProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, js.Any])]]] = js.undefined
 }
 object WeakValidationMapSelectPr {
   
@@ -129,7 +127,7 @@ object WeakValidationMapSelectPr {
     def setEmptyAriaLabelUndefined: Self = StObject.set(x, "emptyAriaLabel", js.undefined)
     
     @scala.inline
-    def setFormMessageProps(value: Validator[js.UndefOr[Null | (Record[String, _])]]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
+    def setFormMessageProps(value: Validator[js.UndefOr[Null | (Record[String, js.Any])]]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormMessagePropsUndefined: Self = StObject.set(x, "formMessageProps", js.undefined)
@@ -259,7 +257,7 @@ object WeakValidationMapSelectPr {
     def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
     
     @scala.inline
-    def setWrapperProps(value: Validator[js.UndefOr[Null | (Record[String, _])]]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
+    def setWrapperProps(value: Validator[js.UndefOr[Null | (Record[String, js.Any])]]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWrapperPropsUndefined: Self = StObject.set(x, "wrapperProps", js.undefined)

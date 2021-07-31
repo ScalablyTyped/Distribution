@@ -8,7 +8,6 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
@@ -21,18 +20,17 @@ object utilMod {
   
   type Provider[T] = js.Function0[js.Promise[T]]
   
-  @js.native
   trait RegionInfo extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var partition: String = js.native
+    var partition: String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var signingRegion: js.UndefOr[String] = js.native
+    var signingRegion: js.UndefOr[String] = js.undefined
     
-    var signingService: js.UndefOr[String] = js.native
+    var signingService: js.UndefOr[String] = js.undefined
   }
   object RegionInfo {
     
@@ -77,7 +75,6 @@ object utilMod {
     js.Promise[js.UndefOr[RegionInfo]]
   ]
   
-  @js.native
   trait RetryStrategy extends StObject {
     
     /**
@@ -85,7 +82,7 @@ object utilMod {
       * This function should also update the $metadata from the response accordingly.
       * @see {@link ResponseMetadata}
       */
-    def retry[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: FinalizeHandler[Input, Output], args: FinalizeHandlerArguments[Input]): js.Promise[FinalizeHandlerOutput[Output]] = js.native
+    def retry[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: FinalizeHandler[Input, Output], args: FinalizeHandlerArguments[Input]): js.Promise[FinalizeHandlerOutput[Output]]
   }
   object RetryStrategy {
     

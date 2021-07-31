@@ -2,7 +2,6 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "Management")
@@ -23,7 +22,7 @@ class Management protected () extends StObject {
     * Link two users. https://auth0.com/docs/api/management/v2#!/Users/post_identities
     *
     */
-  def linkUser(userId: String, secondaryUserToken: String, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def linkUser(userId: String, secondaryUserToken: String, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Updates the user attributes.

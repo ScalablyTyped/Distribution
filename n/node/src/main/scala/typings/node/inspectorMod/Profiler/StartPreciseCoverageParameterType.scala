@@ -2,21 +2,19 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartPreciseCoverageParameterType extends StObject {
   
   /**
     * Collect accurate call counts beyond simple 'covered' or 'not covered'.
     */
-  var callCount: js.UndefOr[Boolean] = js.native
+  var callCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Collect block-based coverage.
     */
-  var detailed: js.UndefOr[Boolean] = js.native
+  var detailed: js.UndefOr[Boolean] = js.undefined
 }
 object StartPreciseCoverageParameterType {
   

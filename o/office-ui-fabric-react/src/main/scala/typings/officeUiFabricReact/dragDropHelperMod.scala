@@ -1,18 +1,23 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.Dispose
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
+import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropOptions
+import typings.officeUiFabricReact.utilitiesMod.EventGroup
+import typings.std.HTMLElement
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import typings.uifabricUtilities.selectionTypesMod.ISelection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragDropHelperMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/dragdrop/DragDropHelper", "DragDropHelper")
   @js.native
-  class DragDropHelper protected () extends IDragDropHelper {
+  class DragDropHelper protected ()
+    extends StObject
+       with IDragDropHelper {
     def this(params: IDragDropHelperParams) = this()
     
     var _activeTargets: js.Any = js.native
@@ -68,14 +73,31 @@ object dragDropHelperMod {
     var _onMouseUp: js.Any = js.native
     
     var _selection: js.Any = js.native
+    
+    /**
+      * Dispose of listeners bound to instance of helper.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Subscribe to events on a DOM node with drag and drop configuration.
+      */
+    /* CompleteClass */
+    override def subscribe(root: HTMLElement, events: EventGroup, options: IDragDropOptions): Dispose = js.native
+    
+    /**
+      * Unsubscribe to events registered on a DOM node with key.
+      */
+    /* CompleteClass */
+    override def unsubscribe(root: HTMLElement, key: String): Unit = js.native
   }
   
-  @js.native
   trait IDragDropHelperParams extends StObject {
     
-    var minimumPixelsForDrag: js.UndefOr[Double] = js.native
+    var minimumPixelsForDrag: js.UndefOr[Double] = js.undefined
     
-    var selection: ISelection[IObjectWithKey] = js.native
+    var selection: ISelection[IObjectWithKey]
   }
   object IDragDropHelperParams {
     

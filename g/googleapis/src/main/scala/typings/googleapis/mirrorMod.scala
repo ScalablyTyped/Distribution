@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mirrorMod {
+  
+  @JSImport("googleapis/build/src/apis/mirror", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -66,9 +69,12 @@ object mirrorMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/mirror", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/mirror", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -112,10 +118,9 @@ object mirrorMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/mirror", "mirror")
-  @js.native
-  def mirror(options: Options): Mirror = js.native
-  @JSImport("googleapis/build/src/apis/mirror", "mirror")
-  @js.native
-  def mirror_v1(version: v1): Mirror = js.native
+  @scala.inline
+  def mirror(options: Options): Mirror = ^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(options.asInstanceOf[js.Any]).asInstanceOf[Mirror]
+  
+  @scala.inline
+  def mirror_v1(version: v1): Mirror = ^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(version.asInstanceOf[js.Any]).asInstanceOf[Mirror]
 }

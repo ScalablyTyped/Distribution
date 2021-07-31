@@ -10,53 +10,52 @@ import typings.winrtUwp.Windows.Web.Http.Headers.HttpContentHeaderCollection
 import typings.winrtUwp.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a base interface for an HTTP entity body and content headers. */
-@js.native
 trait IHttpContent
-  extends IClosable
+  extends StObject
+     with IClosable
      with IStringable {
   
   /**
     * Serialize the HTTP content into memory as an asynchronous operation.
     * @return The object that represents the asynchronous operation.
     */
-  def bufferAllAsync(): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def bufferAllAsync(): IPromiseWithIAsyncOperationWithProgress[Double, Double]
   
   /** Get a collection of content headers set on the IHttpContent . */
-  var headers: HttpContentHeaderCollection = js.native
+  var headers: HttpContentHeaderCollection
   
   /**
     * Serialize the HTTP content to a buffer as an asynchronous operation.
     * @return The object representing the asynchronous operation.
     */
-  def readAsBufferAsync(): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsBufferAsync(): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   
   /**
     * Serialize the HTTP content and return an input stream that represents the content as an asynchronous operation.
     * @return The object representing the asynchronous operation.
     */
-  def readAsInputStreamAsync(): IPromiseWithIAsyncOperationWithProgress[IInputStream, Double] = js.native
+  def readAsInputStreamAsync(): IPromiseWithIAsyncOperationWithProgress[IInputStream, Double]
   
   /**
     * Serialize the HTTP content to a String as an asynchronous operation.
     * @return The object representing the asynchronous operation.
     */
-  def readAsStringAsync(): IPromiseWithIAsyncOperationWithProgress[String, Double] = js.native
+  def readAsStringAsync(): IPromiseWithIAsyncOperationWithProgress[String, Double]
   
   /**
     * Determines whether the HTTP content has a valid length in bytes.
     */
-  def tryComputeLength(): Length = js.native
+  def tryComputeLength(): Length
   
   /**
     * Write the HTTP content to an output stream as an asynchronous operation.
     * @param outputStream The output stream to write to.
     * @return The object representing the asynchronous operation.
     */
-  def writeToStreamAsync(outputStream: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeToStreamAsync(outputStream: IOutputStream): IPromiseWithIAsyncOperationWithProgress[Double, Double]
 }
 object IHttpContent {
   

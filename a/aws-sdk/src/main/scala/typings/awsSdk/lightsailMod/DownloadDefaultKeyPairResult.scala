@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadDefaultKeyPairResult extends StObject {
   
   /**
     * A base64-encoded RSA private key.
     */
-  var privateKeyBase64: js.UndefOr[Base64] = js.native
+  var privateKeyBase64: js.UndefOr[Base64] = js.undefined
   
   /**
     * A base64-encoded public key of the ssh-rsa type.
     */
-  var publicKeyBase64: js.UndefOr[Base64] = js.native
+  var publicKeyBase64: js.UndefOr[Base64] = js.undefined
 }
 object DownloadDefaultKeyPairResult {
   

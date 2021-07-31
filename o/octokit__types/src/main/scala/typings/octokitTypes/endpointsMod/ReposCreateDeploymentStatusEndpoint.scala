@@ -12,10 +12,8 @@ import typings.octokitTypes.octokitTypesStrings.staging
 import typings.octokitTypes.octokitTypesStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateDeploymentStatusEndpoint extends StObject {
   
   /**
@@ -23,45 +21,45 @@ trait ReposCreateDeploymentStatusEndpoint extends StObject {
     * **Note:** To add an `inactive` status to `production` environments, you must use the [`application/vnd.github.flash-preview+json`](https://developer.github.com/v3/previews/#deployment-statuses) custom media type.
     * **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type.
     */
-  var auto_inactive: js.UndefOr[Boolean] = js.native
+  var auto_inactive: js.UndefOr[Boolean] = js.undefined
   
-  var deployment_id: Double = js.native
+  var deployment_id: Double
   
   /**
     * A short description of the status. The maximum description length is 140 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Name for the target deployment environment, which can be changed when setting a deploy status. For example, `production`, `staging`, or `qa`. **Note:** This parameter requires you to use the [`application/vnd.github.flash-preview+json`](https://developer.github.com/v3/previews/#deployment-statuses) custom media type.
     */
-  var environment: js.UndefOr[production | staging | qa] = js.native
+  var environment: js.UndefOr[production | staging | qa] = js.undefined
   
   /**
     * Sets the URL for accessing your environment. Default: `""`
     * **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type. **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type.
     */
-  var environment_url: js.UndefOr[String] = js.native
+  var environment_url: js.UndefOr[String] = js.undefined
   
   /**
     * The full URL of the deployment's output. This parameter replaces `target_url`. We will continue to accept `target_url` to support legacy uses, but we recommend replacing `target_url` with `log_url`. Setting `log_url` will automatically set `target_url` to the same value. Default: `""`
     * **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type. **Note:** This parameter requires you to use the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type.
     */
-  var log_url: js.UndefOr[String] = js.native
+  var log_url: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The state of the status. Can be one of `error`, `failure`, `inactive`, `in_progress`, `queued` `pending`, or `success`. **Note:** To use the `inactive` state, you must provide the [`application/vnd.github.ant-man-preview+json`](https://developer.github.com/v3/previews/#enhanced-deployments) custom media type. To use the `in_progress` and `queued` states, you must provide the [`application/vnd.github.flash-preview+json`](https://developer.github.com/v3/previews/#deployment-statuses) custom media type. When you set a transient deployment to `inactive`, the deployment will be shown as `destroyed` in GitHub.
     */
-  var state: error | failure | inactive | in_progress | queued | pending | success = js.native
+  var state: error | failure | inactive | in_progress | queued | pending | success
   
   /**
     * The target URL to associate with this status. This URL should contain output to keep the user updated while the task is running or serve as historical information for what happened in the deployment. **Note:** It's recommended to use the `log_url` parameter, which replaces `target_url`.
     */
-  var target_url: js.UndefOr[String] = js.native
+  var target_url: js.UndefOr[String] = js.undefined
 }
 object ReposCreateDeploymentStatusEndpoint {
   

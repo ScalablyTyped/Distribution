@@ -20,7 +20,6 @@ import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Sec
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////// Parameter ////////////////////////
@@ -29,7 +28,6 @@ object PropertyTypes {
   /**
     * The structure of a dataset property as it would be passed to a control
     */
-  @js.native
   trait DataSet extends StObject {
     
     /**
@@ -37,100 +35,100 @@ object PropertyTypes {
       * @param name column name to be added to the columnset
       * @param entityAlias entity alias for which the column name needs to be added
       */
-    var addColumn: js.UndefOr[js.Function2[/* name */ String, /* entityAlias */ js.UndefOr[String], Unit]] = js.native
+    var addColumn: js.UndefOr[js.Function2[/* name */ String, /* entityAlias */ js.UndefOr[String], Unit]] = js.undefined
     
     /**
       * Clear selected record ids list
       */
-    def clearSelectedRecordIds(): Unit = js.native
+    def clearSelectedRecordIds(): Unit
     
     /**
       * Set of columns available in this dataset.
       */
-    var columns: js.Array[Column] = js.native
+    var columns: js.Array[Column]
     
     /**
       * True if encountered error while data retrieval
       */
-    var error: Boolean = js.native
+    var error: Boolean
     
     /**
       * The error message associated with the last encountered error, if applicable
       */
-    var errorMessage: String = js.native
+    var errorMessage: String
     
     /**
       * The column filtering for the current query.
       */
-    var filtering: Filtering = js.native
+    var filtering: Filtering
     
     /**
       * Retrieves all selected record ids
       */
-    def getSelectedRecordIds(): js.Array[String] = js.native
+    def getSelectedRecordIds(): js.Array[String]
     
     /**
       * Get DataSet target entity logical name
       */
-    def getTargetEntityType(): String = js.native
+    def getTargetEntityType(): String
     
     /**
       * Retrieves the view display name used by the dataset property
       */
-    def getTitle(): String = js.native
+    def getTitle(): String
     
     /**
       * Gets Id of view used by the dataset property
       */
-    def getViewId(): String = js.native
+    def getViewId(): String
     
     /**
       * Related entity info
       */
-    var linking: Linking = js.native
+    var linking: Linking
     
     /**
       * Indicate if the dataset property is in loading state or not
       */
-    var loading: Boolean = js.native
+    var loading: Boolean
     
     /**
       * Open dataSet item for a given EntityReference. It will check if there is a command with command button id "Mscrm.OpenRecordItem".
       * If there is, it will execute the command, otherwise it will just navigate to the associated form of the entityReference
       * @param entityReference entity reference
       */
-    def openDatasetItem(entityReference: EntityReference): Unit = js.native
+    def openDatasetItem(entityReference: EntityReference): Unit
     
     /**
       * Pagination status and actions.
       */
-    var paging: Paging = js.native
+    var paging: Paging
     
     /**
       * Map of IDs to the full record object
       */
-    var records: StringDictionary[EntityRecord] = js.native
+    var records: StringDictionary[EntityRecord]
     
     /**
       * Refreshes the dataset based on filters, sorting, linking, new column. New data will be pushed to control in another 'updateView' cycle.
       */
-    def refresh(): Unit = js.native
+    def refresh(): Unit
     
     /**
       * Set the ids of the selected records
       * @ids List of recordId's
       */
-    def setSelectedRecordIds(ids: js.Array[String]): Unit = js.native
+    def setSelectedRecordIds(ids: js.Array[String]): Unit
     
     /**
       * IDs of the records in the dataset, order by the query response result
       */
-    var sortedRecordIds: js.Array[String] = js.native
+    var sortedRecordIds: js.Array[String]
     
     /**
       * The sorting status for the current query.
       */
-    var sorting: js.Array[SortStatus] = js.native
+    var sorting: js.Array[SortStatus]
   }
   object DataSet {
     
@@ -236,20 +234,21 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type starts from DateTime
     */
-  @js.native
-  trait DateTimeProperty extends Property {
+  trait DateTimeProperty
+    extends StObject
+       with Property {
     
     @JSName("attributes")
-    var attributes_DateTimeProperty: js.UndefOr[DateTimeMetadata] = js.native
+    var attributes_DateTimeProperty: js.UndefOr[DateTimeMetadata] = js.undefined
     
     @JSName("raw")
-    var raw_DateTimeProperty: Date | Null = js.native
+    var raw_DateTimeProperty: Date | Null
   }
   object DateTimeProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): DateTimeProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateTimeProperty]
     }
@@ -274,17 +273,18 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is Decimal
     */
-  @js.native
-  trait DecimalNumberProperty extends NumberProperty {
+  trait DecimalNumberProperty
+    extends StObject
+       with NumberProperty {
     
     @JSName("attributes")
-    var attributes_DecimalNumberProperty: js.UndefOr[DecimalNumberMetadata] = js.native
+    var attributes_DecimalNumberProperty: js.UndefOr[DecimalNumberMetadata] = js.undefined
   }
   object DecimalNumberProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): DecimalNumberProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecimalNumberProperty]
     }
@@ -303,12 +303,11 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is Enum
     */
-  @js.native
   trait EnumProperty[EnumType] extends StObject {
     
-    var raw: EnumType = js.native
+    var raw: EnumType
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object EnumProperty {
     
@@ -320,7 +319,7 @@ object PropertyTypes {
     }
     
     @scala.inline
-    implicit class EnumPropertyMutableBuilder[Self <: EnumProperty[_], EnumType] (val x: Self with EnumProperty[EnumType]) extends AnyVal {
+    implicit class EnumPropertyMutableBuilder[Self <: EnumProperty[?], EnumType] (val x: Self & EnumProperty[EnumType]) extends AnyVal {
       
       @scala.inline
       def setRaw(value: EnumType): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
@@ -333,17 +332,18 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is FP
     */
-  @js.native
-  trait FloatingNumberProperty extends NumberProperty {
+  trait FloatingNumberProperty
+    extends StObject
+       with NumberProperty {
     
     @JSName("attributes")
-    var attributes_FloatingNumberProperty: js.UndefOr[FloatingNumberMetadata] = js.native
+    var attributes_FloatingNumberProperty: js.UndefOr[FloatingNumberMetadata] = js.undefined
   }
   object FloatingNumberProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): FloatingNumberProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FloatingNumberProperty]
     }
@@ -362,18 +362,17 @@ object PropertyTypes {
   /**
     * The structure returned by getCellImageInfo and propagated down to the control to display conditional images.
     */
-  @js.native
   trait ImageInfo extends StObject {
     
     /**
       * The tooltip associated with that image.
       */
-    var Tooltip: String = js.native
+    var Tooltip: String
     
     /**
       * The Url of the conditional image.
       */
-    var Url: String = js.native
+    var Url: String
   }
   object ImageInfo {
     
@@ -397,20 +396,21 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is MultiSelectOptionSet
     */
-  @js.native
-  trait MultiSelectOptionSetProperty extends Property {
+  trait MultiSelectOptionSetProperty
+    extends StObject
+       with Property {
     
     @JSName("attributes")
-    var attributes_MultiSelectOptionSetProperty: js.UndefOr[OptionSetMetadata] = js.native
+    var attributes_MultiSelectOptionSetProperty: js.UndefOr[OptionSetMetadata] = js.undefined
     
     @JSName("raw")
-    var raw_MultiSelectOptionSetProperty: js.Array[Double] | Null = js.native
+    var raw_MultiSelectOptionSetProperty: js.Array[Double] | Null
   }
   object MultiSelectOptionSetProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): MultiSelectOptionSetProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiSelectOptionSetProperty]
     }
@@ -438,20 +438,21 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is Whole.None|FP|Decimal
     */
-  @js.native
-  trait NumberProperty extends Property {
+  trait NumberProperty
+    extends StObject
+       with Property {
     
     @JSName("attributes")
-    var attributes_NumberProperty: js.UndefOr[NumberMetadata] = js.native
+    var attributes_NumberProperty: js.UndefOr[NumberMetadata] = js.undefined
     
     @JSName("raw")
-    var raw_NumberProperty: Double | Null = js.native
+    var raw_NumberProperty: Double | Null
   }
   object NumberProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): NumberProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberProperty]
     }
@@ -476,20 +477,21 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is OptionSet
     */
-  @js.native
-  trait OptionSetProperty extends Property {
+  trait OptionSetProperty
+    extends StObject
+       with Property {
     
     @JSName("attributes")
-    var attributes_OptionSetProperty: js.UndefOr[OptionSetMetadata] = js.native
+    var attributes_OptionSetProperty: js.UndefOr[OptionSetMetadata] = js.undefined
     
     @JSName("raw")
-    var raw_OptionSetProperty: Double | Null = js.native
+    var raw_OptionSetProperty: Double | Null
   }
   object OptionSetProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): OptionSetProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionSetProperty]
     }
@@ -514,22 +516,21 @@ object PropertyTypes {
   /**
     * Interface for context.parameters.[property_key]
     */
-  @js.native
   trait Property extends StObject {
     
-    var attributes: js.UndefOr[Metadata] = js.native
+    var attributes: js.UndefOr[Metadata] = js.undefined
     
-    var error: Boolean = js.native
+    var error: Boolean
     
-    var errorMessage: String = js.native
+    var errorMessage: String
     
-    var formatted: js.UndefOr[String] = js.native
+    var formatted: js.UndefOr[String] = js.undefined
     
-    var raw: js.Any = js.native
+    var raw: js.Any
     
-    var security: js.UndefOr[SecurityValues] = js.native
+    var security: js.UndefOr[SecurityValues] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Property {
     
@@ -578,20 +579,21 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type starts from SingleLine
     */
-  @js.native
-  trait StringProperty extends Property {
+  trait StringProperty
+    extends StObject
+       with Property {
     
     @JSName("attributes")
-    var attributes_StringProperty: js.UndefOr[StringMetadata] = js.native
+    var attributes_StringProperty: js.UndefOr[StringMetadata] = js.undefined
     
     @JSName("raw")
-    var raw_StringProperty: String | Null = js.native
+    var raw_StringProperty: String | Null
   }
   object StringProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): StringProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StringProperty]
     }
@@ -616,14 +618,15 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is TwoOptions
     */
-  @js.native
-  trait TwoOptionsProperty extends Property {
+  trait TwoOptionsProperty
+    extends StObject
+       with Property {
     
     @JSName("attributes")
-    var attributes_TwoOptionsProperty: js.UndefOr[TwoOptionMetadata] = js.native
+    var attributes_TwoOptionsProperty: js.UndefOr[TwoOptionMetadata] = js.undefined
     
     @JSName("raw")
-    var raw_TwoOptionsProperty: Boolean = js.native
+    var raw_TwoOptionsProperty: Boolean
   }
   object TwoOptionsProperty {
     
@@ -651,17 +654,18 @@ object PropertyTypes {
   /**
     * Property Interface for context.parameters.[property_key], when property manifest type is Whole.None
     */
-  @js.native
-  trait WholeNumberProperty extends NumberProperty {
+  trait WholeNumberProperty
+    extends StObject
+       with NumberProperty {
     
     @JSName("attributes")
-    var attributes_WholeNumberProperty: js.UndefOr[WholeNumberMetadata] = js.native
+    var attributes_WholeNumberProperty: js.UndefOr[WholeNumberMetadata] = js.undefined
   }
   object WholeNumberProperty {
     
     @scala.inline
     def apply(error: Boolean, errorMessage: String, `type`: String): WholeNumberProperty = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WholeNumberProperty]
     }

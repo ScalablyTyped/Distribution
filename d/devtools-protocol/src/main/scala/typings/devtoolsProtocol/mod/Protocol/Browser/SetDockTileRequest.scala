@@ -2,18 +2,16 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDockTileRequest extends StObject {
   
-  var badgeLabel: js.UndefOr[String] = js.native
+  var badgeLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Png encoded image.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
 }
 object SetDockTileRequest {
   

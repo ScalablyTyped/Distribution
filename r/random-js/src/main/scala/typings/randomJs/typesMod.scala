@@ -2,17 +2,15 @@ package typings.randomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type Distribution[T] = js.Function1[/* engine */ Engine, T]
   
-  @js.native
   trait Engine extends StObject {
     
-    def next(): Double = js.native
+    def next(): Double
   }
   object Engine {
     

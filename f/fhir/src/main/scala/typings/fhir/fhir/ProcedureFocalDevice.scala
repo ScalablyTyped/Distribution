@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Device changed in procedure
   */
-@js.native
-trait ProcedureFocalDevice extends BackboneElement {
+trait ProcedureFocalDevice
+  extends StObject
+     with BackboneElement {
   
   /**
     * Kind of change to device
     */
-  var action: js.UndefOr[CodeableConcept] = js.native
+  var action: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Device that was changed
     */
-  var manipulated: Reference = js.native
+  var manipulated: Reference
 }
 object ProcedureFocalDevice {
   

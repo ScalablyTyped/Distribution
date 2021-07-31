@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeKeyAndValue extends StObject {
   
   /**
     * The key of the attribute.
     */
-  var Key: AttributeKey = js.native
+  var Key: AttributeKey
   
   /**
     * The value of the attribute.
     */
-  var Value: TypedAttributeValue = js.native
+  var Value: TypedAttributeValue
 }
 object AttributeKeyAndValue {
   

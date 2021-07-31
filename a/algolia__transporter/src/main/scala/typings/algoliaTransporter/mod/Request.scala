@@ -4,31 +4,29 @@ import typings.algoliaRequesterCommon.mod.MethodType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
   /**
     * If the response should persist on cache.
     */
-  val cacheable: js.UndefOr[Boolean] = js.native
+  val cacheable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The data to transfer to the server.
     */
-  val data: js.UndefOr[(Record[String, _]) | (js.Array[Record[String, _]])] = js.native
+  val data: js.UndefOr[(Record[String, js.Any]) | (js.Array[Record[String, js.Any]])] = js.undefined
   
   /**
     * The method of the request. `GET`, etc.
     */
-  val method: MethodType = js.native
+  val method: MethodType
   
   /**
     * The path of the request. i.e: `/1/indexes`.
     */
-  val path: String = js.native
+  val path: String
 }
 object Request {
   
@@ -48,7 +46,7 @@ object Request {
     def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
     @scala.inline
-    def setData(value: (Record[String, _]) | (js.Array[Record[String, _]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: (Record[String, js.Any]) | (js.Array[Record[String, js.Any]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

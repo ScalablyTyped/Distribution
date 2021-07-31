@@ -4,35 +4,35 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromEventMod {
   
-  @JSImport("rxjs/internal/observable/fromEvent", "fromEvent")
+  @JSImport("rxjs/internal/observable/fromEvent", JSImport.Namespace)
   @js.native
-  def fromEvent[T](target: FromEventTarget[T], eventName: String): Observable[T] = js.native
-  @JSImport("rxjs/internal/observable/fromEvent", "fromEvent")
-  @js.native
-  def fromEvent[T](target: FromEventTarget[T], eventName: String, options: EventListenerOptions): Observable[T] = js.native
-  @JSImport("rxjs/internal/observable/fromEvent", "fromEvent")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromEvent[T](target: FromEventTarget[T], eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromEvent[T](target: FromEventTarget[T], eventName: String, options: EventListenerOptions): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
   def fromEvent[T](
     target: FromEventTarget[T],
     eventName: String,
     options: EventListenerOptions,
     resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = js.native
-  @JSImport("rxjs/internal/observable/fromEvent", "fromEvent")
-  @js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
   def fromEvent[T](
     target: FromEventTarget[T],
     eventName: String,
     resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = js.native
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @js.native
-  trait AddEventListenerOptions extends EventListenerOptions
+  trait AddEventListenerOptions
+    extends StObject
+       with EventListenerOptions
   object AddEventListenerOptions {
     
     @scala.inline
@@ -42,14 +42,13 @@ object fromEventMod {
     }
   }
   
-  @js.native
   trait EventListenerOptions extends StObject {
     
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
   }
   object EventListenerOptions {
     
@@ -93,7 +92,9 @@ object fromEventMod {
   type FromEventTarget[T] = EventTargetLike[T] | ArrayLike[EventTargetLike[T]]
   
   @js.native
-  trait HasEventTargetAddRemove[E] extends EventTargetLike[E] {
+  trait HasEventTargetAddRemove[E]
+    extends StObject
+       with EventTargetLike[E] {
     
     def addEventListener(`type`: String): Unit = js.native
     def addEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit]): Unit = js.native
@@ -103,22 +104,22 @@ object fromEventMod {
     def addEventListener(`type`: String, listener: Null, options: AddEventListenerOptions): Unit = js.native
     
     def removeEventListener(`type`: String): Unit = js.native
-    def removeEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
-    def removeEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], options: EventListenerOptions): Unit = js.native
     def removeEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit]): Unit = js.native
     def removeEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit], options: Boolean): Unit = js.native
     def removeEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit], options: EventListenerOptions): Unit = js.native
     def removeEventListener(`type`: String, listener: Null, options: Boolean): Unit = js.native
     def removeEventListener(`type`: String, listener: Null, options: EventListenerOptions): Unit = js.native
+    def removeEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
+    def removeEventListener(`type`: String, listener: Unit, options: EventListenerOptions): Unit = js.native
   }
   
-  @js.native
   trait JQueryStyleEventEmitter
-    extends EventTargetLike[js.Any] {
+    extends StObject
+       with EventTargetLike[js.Any] {
     
-    def off(eventName: String, handler: js.Function): Unit = js.native
+    def off(eventName: String, handler: js.Function): Unit
     
-    def on(eventName: String, handler: js.Function): Unit = js.native
+    def on(eventName: String, handler: js.Function): Unit
   }
   object JQueryStyleEventEmitter {
     
@@ -139,13 +140,13 @@ object fromEventMod {
     }
   }
   
-  @js.native
   trait NodeCompatibleEventEmitter
-    extends EventTargetLike[js.Any] {
+    extends StObject
+       with EventTargetLike[js.Any] {
     
-    def addListener(eventName: String, handler: NodeEventHandler): Unit | js.Object = js.native
+    def addListener(eventName: String, handler: NodeEventHandler): Unit | js.Object
     
-    def removeListener(eventName: String, handler: NodeEventHandler): Unit | js.Object = js.native
+    def removeListener(eventName: String, handler: NodeEventHandler): Unit | js.Object
   }
   object NodeCompatibleEventEmitter {
     
@@ -169,11 +170,16 @@ object fromEventMod {
     }
   }
   
-  type NodeEventHandler = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait NodeEventHandler extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   @js.native
   trait NodeStyleEventEmitter
-    extends EventTargetLike[js.Any] {
+    extends StObject
+       with EventTargetLike[js.Any] {
     
     def addListener(eventName: String, handler: NodeEventHandler): this.type = js.native
     def addListener(eventName: js.Symbol, handler: NodeEventHandler): this.type = js.native

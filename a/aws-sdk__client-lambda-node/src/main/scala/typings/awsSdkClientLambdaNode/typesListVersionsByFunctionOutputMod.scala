@@ -5,29 +5,29 @@ import typings.awsSdkClientLambdaNode.typesFunctionConfigurationMod.Unmarshalled
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListVersionsByFunctionOutputMod {
   
-  @js.native
-  trait ListVersionsByFunctionOutput extends OutputTypesUnion {
+  trait ListVersionsByFunctionOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A string, present if there are more function versions.</p>
       */
-    var NextMarker: js.UndefOr[String] = js.native
+    var NextMarker: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A list of Lambda function versions.</p>
       */
-    var Versions: js.UndefOr[js.Array[UnmarshalledFunctionConfiguration]] = js.native
+    var Versions: js.UndefOr[js.Array[UnmarshalledFunctionConfiguration]] = js.undefined
   }
   object ListVersionsByFunctionOutput {
     

@@ -2,55 +2,55 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PanGestureHandlerProperties extends GestureHandlerProperties {
+trait PanGestureHandlerProperties
+  extends StObject
+     with GestureHandlerProperties {
   
-  var activeOffsetX: js.UndefOr[Double | js.Array[Double]] = js.native
+  var activeOffsetX: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var activeOffsetY: js.UndefOr[Double | js.Array[Double]] = js.native
+  var activeOffsetY: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var avgTouches: js.UndefOr[Boolean] = js.native
+  var avgTouches: js.UndefOr[Boolean] = js.undefined
   
-  var failOffsetX: js.UndefOr[Double | js.Array[Double]] = js.native
+  var failOffsetX: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var failOffsetY: js.UndefOr[Double | js.Array[Double]] = js.native
+  var failOffsetY: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /** @deprecated  use failOffsetX*/
-  var maxDeltaX: js.UndefOr[Double] = js.native
+  var maxDeltaX: js.UndefOr[Double] = js.undefined
   
   /** @deprecated  use failOffsetY*/
-  var maxDeltaY: js.UndefOr[Double] = js.native
+  var maxDeltaY: js.UndefOr[Double] = js.undefined
   
-  var maxPointers: js.UndefOr[Double] = js.native
+  var maxPointers: js.UndefOr[Double] = js.undefined
   
   /** @deprecated  use activeOffsetX*/
-  var minDeltaX: js.UndefOr[Double] = js.native
+  var minDeltaX: js.UndefOr[Double] = js.undefined
   
   /** @deprecated  use activeOffsetY*/
-  var minDeltaY: js.UndefOr[Double] = js.native
+  var minDeltaY: js.UndefOr[Double] = js.undefined
   
-  var minDist: js.UndefOr[Double] = js.native
+  var minDist: js.UndefOr[Double] = js.undefined
   
   /** @deprecated  use activeOffsetX*/
-  var minOffsetX: js.UndefOr[Double] = js.native
+  var minOffsetX: js.UndefOr[Double] = js.undefined
   
   /** @deprecated  use failOffsetY*/
-  var minOffsetY: js.UndefOr[Double] = js.native
+  var minOffsetY: js.UndefOr[Double] = js.undefined
   
-  var minPointers: js.UndefOr[Double] = js.native
+  var minPointers: js.UndefOr[Double] = js.undefined
   
-  var minVelocity: js.UndefOr[Double] = js.native
+  var minVelocity: js.UndefOr[Double] = js.undefined
   
-  var minVelocityX: js.UndefOr[Double] = js.native
+  var minVelocityX: js.UndefOr[Double] = js.undefined
   
-  var minVelocityY: js.UndefOr[Double] = js.native
+  var minVelocityY: js.UndefOr[Double] = js.undefined
   
-  var onGestureEvent: js.UndefOr[js.Function1[/* event */ PanGestureHandlerGestureEvent, Unit]] = js.native
+  var onGestureEvent: js.UndefOr[js.Function1[/* event */ PanGestureHandlerGestureEvent, Unit]] = js.undefined
   
-  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ PanGestureHandlerStateChangeEvent, Unit]] = js.native
+  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ PanGestureHandlerStateChangeEvent, Unit]] = js.undefined
 }
 object PanGestureHandlerProperties {
   

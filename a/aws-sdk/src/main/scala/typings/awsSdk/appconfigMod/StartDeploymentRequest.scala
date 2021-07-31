@@ -2,46 +2,44 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartDeploymentRequest extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The configuration profile ID.
     */
-  var ConfigurationProfileId: Id = js.native
+  var ConfigurationProfileId: Id
   
   /**
     * The configuration version to deploy.
     */
-  var ConfigurationVersion: Version = js.native
+  var ConfigurationVersion: Version
   
   /**
     * The deployment strategy ID.
     */
-  var DeploymentStrategyId: typings.awsSdk.appconfigMod.DeploymentStrategyId = js.native
+  var DeploymentStrategyId: typings.awsSdk.appconfigMod.DeploymentStrategyId
   
   /**
     * A description of the deployment.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The environment ID.
     */
-  var EnvironmentId: Id = js.native
+  var EnvironmentId: Id
   
   /**
     * Metadata to assign to the deployment. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object StartDeploymentRequest {
   

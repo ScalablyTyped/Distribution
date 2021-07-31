@@ -2,26 +2,24 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRegexPatternSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken
   
   /**
     * The RegexPatternSetId of the RegexPatternSet that you want to update. RegexPatternSetId is returned by CreateRegexPatternSet and by ListRegexPatternSets.
     */
-  var RegexPatternSetId: ResourceId = js.native
+  var RegexPatternSetId: ResourceId
   
   /**
     * An array of RegexPatternSetUpdate objects that you want to insert into or delete from a RegexPatternSet.
     */
-  var Updates: RegexPatternSetUpdates = js.native
+  var Updates: RegexPatternSetUpdates
 }
 object UpdateRegexPatternSetRequest {
   

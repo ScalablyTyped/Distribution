@@ -2,15 +2,13 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortByColumn extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var desc: Boolean = js.native
+  var desc: Boolean
 }
 object SortByColumn {
   

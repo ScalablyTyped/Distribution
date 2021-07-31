@@ -2,32 +2,32 @@ package typings.sidewayPinpoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object location {
     
-    @JSImport("@sideway/pinpoint", "location")
-    @js.native
-    def apply(): Location = js.native
-    @JSImport("@sideway/pinpoint", "location")
-    @js.native
-    def apply(depth: Double): Location = js.native
+    @scala.inline
+    def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
+    @scala.inline
+    def apply(depth: Double): Location = ^.asInstanceOf[js.Dynamic].apply(depth.asInstanceOf[js.Any]).asInstanceOf[Location]
     
+    @JSImport("@sideway/pinpoint", "location")
     @js.native
+    val ^ : js.Any = js.native
+    
     trait Location extends StObject {
       
       /**
         The fully qualified filename.
         */
-      val filename: String = js.native
+      val filename: String
       
       /**
         The file line number.
         */
-      val line: Double = js.native
+      val line: Double
     }
     object Location {
       

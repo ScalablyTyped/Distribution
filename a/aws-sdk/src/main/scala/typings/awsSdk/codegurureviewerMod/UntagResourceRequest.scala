@@ -2,21 +2,19 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * A list of the keys for each tag you want to remove from an associated repository.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
   
   /**
     *  The Amazon Resource Name (ARN) of the  RepositoryAssociation  object. You can retrieve this ARN by calling  ListRepositoryAssociations . 
     */
-  var resourceArn: AssociationArn = js.native
+  var resourceArn: AssociationArn
 }
 object UntagResourceRequest {
   

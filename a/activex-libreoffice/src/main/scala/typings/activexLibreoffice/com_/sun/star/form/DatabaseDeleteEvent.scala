@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,15 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Please do **not** use anymore, this struct is deprecated.
   * @deprecated Deprecated
   */
-@js.native
-trait DatabaseDeleteEvent extends EventObject {
+trait DatabaseDeleteEvent
+  extends StObject
+     with EventObject {
   
-  var Bookmarks: SafeArray[_] = js.native
+  var Bookmarks: SafeArray[js.Any]
 }
 object DatabaseDeleteEvent {
   
   @scala.inline
-  def apply(Bookmarks: SafeArray[_], Source: XInterface): DatabaseDeleteEvent = {
+  def apply(Bookmarks: SafeArray[js.Any], Source: XInterface): DatabaseDeleteEvent = {
     val __obj = js.Dynamic.literal(Bookmarks = Bookmarks.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseDeleteEvent]
   }
@@ -31,6 +31,6 @@ object DatabaseDeleteEvent {
   implicit class DatabaseDeleteEventMutableBuilder[Self <: DatabaseDeleteEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBookmarks(value: SafeArray[_]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
+    def setBookmarks(value: SafeArray[js.Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
   }
 }

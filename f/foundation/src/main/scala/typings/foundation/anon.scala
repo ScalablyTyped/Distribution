@@ -3,7 +3,6 @@ package typings.foundation
 import typings.foundation.Foundation.RevealCSSOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -17,9 +16,9 @@ object anon {
     
     def data_options(el: JQuery): js.Object = js.native
     
-    def debounce(func: js.Function1[/* repeated */ js.Any, _], delay: Double, immediate: Boolean): js.Function1[/* repeated */ js.Any, _] = js.native
+    def debounce(func: js.Function1[/* repeated */ js.Any, js.Any], delay: Double, immediate: Boolean): js.Function1[/* repeated */ js.Any, js.Any] = js.native
     
-    def image_loaded(images: JQuery, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def image_loaded(images: JQuery, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
     
     def is_large_only(): Boolean = js.native
     
@@ -46,19 +45,18 @@ object anon {
     
     def register_media(media: String, media_class: String): Unit = js.native
     
-    def throttle(func: js.Function1[/* repeated */ js.Any, _], delay: Double): js.Function1[/* repeated */ js.Any, _] = js.native
+    def throttle(func: js.Function1[/* repeated */ js.Any, js.Any], delay: Double): js.Function1[/* repeated */ js.Any, js.Any] = js.native
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[js.Array[String]] = js.native
+    var bottom: js.UndefOr[js.Array[String]] = js.undefined
     
-    var left: js.UndefOr[js.Array[String]] = js.native
+    var left: js.UndefOr[js.Array[String]] = js.undefined
     
-    var right: js.UndefOr[js.Array[String]] = js.native
+    var right: js.UndefOr[js.Array[String]] = js.undefined
     
-    var top: js.UndefOr[js.Array[String]] = js.native
+    var top: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Bottom {
     
@@ -109,26 +107,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Button extends StObject {
     
-    var button: js.UndefOr[String] = js.native
+    var button: js.UndefOr[String] = js.undefined
     
-    var expose: js.UndefOr[String] = js.native
+    var expose: js.UndefOr[String] = js.undefined
     
-    var expose_cover: js.UndefOr[String] = js.native
+    var expose_cover: js.UndefOr[String] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var modal: js.UndefOr[String] = js.native
+    var modal: js.UndefOr[String] = js.undefined
     
-    var prev_button: js.UndefOr[String] = js.native
+    var prev_button: js.UndefOr[String] = js.undefined
     
-    var timer: js.UndefOr[String] = js.native
+    var timer: js.UndefOr[String] = js.undefined
     
-    var tip: js.UndefOr[String] = js.native
+    var tip: js.UndefOr[String] = js.undefined
     
-    var wrapper: js.UndefOr[String] = js.native
+    var wrapper: js.UndefOr[String] = js.undefined
   }
   object Button {
     
@@ -197,12 +194,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Close extends StObject {
     
-    var close: js.UndefOr[RevealCSSOptions] = js.native
+    var close: js.UndefOr[RevealCSSOptions] = js.undefined
     
-    var open: js.UndefOr[RevealCSSOptions] = js.native
+    var open: js.UndefOr[RevealCSSOptions] = js.undefined
   }
   object Close {
     
@@ -229,10 +225,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Namespace extends StObject {
     
-    var namespace: String = js.native
+    var namespace: String
   }
   object Namespace {
     

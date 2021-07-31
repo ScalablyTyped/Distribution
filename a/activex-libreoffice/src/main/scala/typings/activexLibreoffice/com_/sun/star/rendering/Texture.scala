@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gradient. The transformation member can then be used to scale the complete texture as it fits suit.
   * @since OOo 2.0
   */
-@js.native
 trait Texture extends StObject {
   
   /**
@@ -26,14 +24,14 @@ trait Texture extends StObject {
     * texture space to the device coordinate space is the concatenation of texture, render state, and view state transformation (with only render state and
     * view state transformation being applied to the textured primitive).
     */
-  var AffineTransform: AffineMatrix2D = js.native
+  var AffineTransform: AffineMatrix2D
   
   /**
     * Overall transparency of the texturing.
     *
     * The valid range for this value is [0,1], where 0 denotes complete transparency, and 1 denotes fully opaque.
     */
-  var Alpha: Double = js.native
+  var Alpha: Double
   
   /**
     * {@link Texture} bitmap.
@@ -42,28 +40,28 @@ trait Texture extends StObject {
     *
     * The bitmap is scaled to a one-by-one rectangle, to cover the same area as both the gradient and the hatching.
     */
-  var Bitmap: XBitmap = js.native
+  var Bitmap: XBitmap
   
   /**
     * {@link Texture} gradient.
     *
     * This member can be used together with bitmap and hatching. The parametric polygons color value is used to fill the returned polygonal outlines.
     */
-  var Gradient: XParametricPolyPolygon2D = js.native
+  var Gradient: XParametricPolyPolygon2D
   
   /**
     * Specifies the stroke attributes used for hatching.
     *
     * Use 0.0 as the strokeWidth here to indicate hair lines.
     */
-  var HatchAttributes: StrokeAttributes = js.native
+  var HatchAttributes: StrokeAttributes
   
   /**
     * {@link Texture} hatching.
     *
     * This member can be used together with bitmap and gradient. The parametric polygons color value is used to stroke the returned polygonal outlines.
     */
-  var Hatching: XParametricPolyPolygon2D = js.native
+  var Hatching: XParametricPolyPolygon2D
   
   /**
     * Specifies the number of parameterized polygons used for the texture.
@@ -73,21 +71,21 @@ trait Texture extends StObject {
     * interval is plugged into the getOutline method. For example, if numberOfHatchPolygons is 2, then getOutline is called twice, once with 0.0 and once
     * with 0.5. Use this parameter to control the density of the hatching.
     */
-  var NumberOfHatchPolygons: Double = js.native
+  var NumberOfHatchPolygons: Double
   
   /**
     * Repeat mode of the texture, x direction.
     *
     * The repeat mode is separated into x and y direction, this is the x direction part. Permissible values are from the {@link TexturingMode} constants.
     */
-  var RepeatModeX: Double = js.native
+  var RepeatModeX: Double
   
   /**
     * Repeat mode of the texture, y direction.
     *
     * The repeat mode is separated into x and y direction, this is the y direction part. Permissible values are from the {@link TexturingMode} constants.
     */
-  var RepeatModeY: Double = js.native
+  var RepeatModeY: Double
 }
 object Texture {
   

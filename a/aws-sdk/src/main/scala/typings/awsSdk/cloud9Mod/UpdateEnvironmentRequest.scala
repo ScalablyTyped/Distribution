@@ -2,26 +2,24 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEnvironmentRequest extends StObject {
   
   /**
     * Any new or replacement description for the environment.
     */
-  var description: js.UndefOr[EnvironmentDescription] = js.native
+  var description: js.UndefOr[EnvironmentDescription] = js.undefined
   
   /**
     * The ID of the environment to change settings.
     */
-  var environmentId: EnvironmentId = js.native
+  var environmentId: EnvironmentId
   
   /**
     * A replacement name for the environment.
     */
-  var name: js.UndefOr[EnvironmentName] = js.native
+  var name: js.UndefOr[EnvironmentName] = js.undefined
 }
 object UpdateEnvironmentRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBackendEnvironmentRequest extends StObject {
   
   /**
     *  The unique ID of an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  The name of a backend environment of an Amplify app. 
     */
-  var environmentName: EnvironmentName = js.native
+  var environmentName: EnvironmentName
 }
 object DeleteBackendEnvironmentRequest {
   

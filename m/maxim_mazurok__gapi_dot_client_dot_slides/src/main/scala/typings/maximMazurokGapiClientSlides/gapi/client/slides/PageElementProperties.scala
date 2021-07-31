@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageElementProperties extends StObject {
   
   /** The object ID of the page where the element is located. */
-  var pageObjectId: js.UndefOr[String] = js.native
+  var pageObjectId: js.UndefOr[String] = js.undefined
   
   /** The size of the element. */
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
   /** The transform for the element. */
-  var transform: js.UndefOr[AffineTransform] = js.native
+  var transform: js.UndefOr[AffineTransform] = js.undefined
 }
 object PageElementProperties {
   

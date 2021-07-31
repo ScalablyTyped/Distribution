@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the Chart control.
   */
-@js.native
-trait BootstrapClientChart extends BootstrapClientChartBase {
+trait BootstrapClientChart
+  extends StObject
+     with BootstrapClientChartBase {
   
   /**
     * Fires when a chart zooming or scrolling ends.
     */
-  var ZoomEnd: ASPxClientEvent[BootstrapClientChartZoomEndEventHandler[BootstrapClientChart]] = js.native
+  var ZoomEnd: ASPxClientEvent[BootstrapClientChartZoomEndEventHandler[BootstrapClientChart]]
   
   /**
     * Fires when a chart zooming or scrolling begins.
     */
-  var ZoomStart: ASPxClientEvent[BootstrapClientChartZoomStartEventHandler[BootstrapClientChart]] = js.native
+  var ZoomStart: ASPxClientEvent[BootstrapClientChartZoomStartEventHandler[BootstrapClientChart]]
 }
 object BootstrapClientChart {
   

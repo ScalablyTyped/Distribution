@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessUrls extends StObject {
   
   /** The URL where this CertificateAuthority's CA certificate is published. This will only be set for CAs that have been activated. */
-  var caCertificateAccessUrl: js.UndefOr[String] = js.native
+  var caCertificateAccessUrl: js.UndefOr[String] = js.undefined
   
   /** The URL where this CertificateAuthority's CRLs are published. This will only be set for CAs that have been activated. */
-  var crlAccessUrl: js.UndefOr[String] = js.native
+  var crlAccessUrl: js.UndefOr[String] = js.undefined
 }
 object AccessUrls {
   

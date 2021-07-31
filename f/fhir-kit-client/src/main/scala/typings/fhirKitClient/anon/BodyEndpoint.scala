@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Endpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyEndpoint extends StObject {
   
-  var body: Endpoint = js.native
+  var body: Endpoint
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Endpoint = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Endpoint
 }
 object BodyEndpoint {
   
   @scala.inline
-  def apply(body: Endpoint, resourceType: typings.fhirKitClient.fhirKitClientStrings.Endpoint): BodyEndpoint = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Endpoint): BodyEndpoint = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "Endpoint")
     __obj.asInstanceOf[BodyEndpoint]
   }
   

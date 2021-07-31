@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGuardianInvitationsResponse extends StObject {
   
   /** Guardian invitations that matched the list request. */
-  var guardianInvitations: js.UndefOr[js.Array[GuardianInvitation]] = js.native
+  var guardianInvitations: js.UndefOr[js.Array[GuardianInvitation]] = js.undefined
   
   /** Token identifying the next page of results to return. If empty, no further results are available. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListGuardianInvitationsResponse {
   

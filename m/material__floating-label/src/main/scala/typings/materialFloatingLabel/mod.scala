@@ -4,7 +4,6 @@ import typings.materialFloatingLabel.anon.PartialMDCFloatingLabelAd
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,7 @@ object mod {
   @js.native
   class MDCFloatingLabel protected ()
     extends typings.materialFloatingLabel.componentMod.MDCFloatingLabel {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialFloatingLabel.foundationMod.MDCFloatingLabelFoundation,
@@ -23,9 +22,12 @@ object mod {
   /* static members */
   object MDCFloatingLabel {
     
-    @JSImport("@material/floating-label", "MDCFloatingLabel.attachTo")
+    @JSImport("@material/floating-label", "MDCFloatingLabel")
     @js.native
-    def attachTo(root: Element): typings.materialFloatingLabel.componentMod.MDCFloatingLabel = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialFloatingLabel.componentMod.MDCFloatingLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialFloatingLabel.componentMod.MDCFloatingLabel]
   }
   
   @JSImport("@material/floating-label", "MDCFloatingLabelFoundation")

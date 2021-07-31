@@ -3,7 +3,6 @@ package typings.scrollmagic.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scrollmagic", "Controller")
@@ -32,7 +31,7 @@ class Controller () extends StObject {
   def scrollPos(calcFn: js.Function0[Double]): Controller = js.native
   
   def scrollTo(scrollTarget: ScrollTarget): Controller = js.native
-  def scrollTo(scrollTarget: ScrollTarget, additionalParameter: js.Array[_]): Controller = js.native
+  def scrollTo(scrollTarget: ScrollTarget, additionalParameter: js.Array[js.Any]): Controller = js.native
   
   def update(): Controller = js.native
   def update(immediately: Boolean): Controller = js.native

@@ -2,88 +2,86 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEmailChannelResponseMod {
   
-  @js.native
   trait EmailChannelResponse extends StObject {
     
     /**
       * The unique ID of the application to which the email channel belongs.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * The configuration set that you want to use when you send email using the Pinpoint Email API.
       */
-    var ConfigurationSet: js.UndefOr[String] = js.native
+    var ConfigurationSet: js.UndefOr[String] = js.undefined
     
     /**
       * The date that the settings were last updated in ISO 8601 format.
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * If the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The email address used to send emails from.
       */
-    var FromAddress: js.UndefOr[String] = js.native
+    var FromAddress: js.UndefOr[String] = js.undefined
     
     /**
       * Not used. Retained for backwards compatibility.
       */
-    var HasCredential: js.UndefOr[Boolean] = js.native
+    var HasCredential: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Channel ID. Not used, only for backwards compatibility.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * The ARN of an identity verified with SES.
       */
-    var Identity: js.UndefOr[String] = js.native
+    var Identity: js.UndefOr[String] = js.undefined
     
     /**
       * Is this channel archived
       */
-    var IsArchived: js.UndefOr[Boolean] = js.native
+    var IsArchived: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Who last updated this entry
       */
-    var LastModifiedBy: js.UndefOr[String] = js.native
+    var LastModifiedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Last date this was updated
       */
-    var LastModifiedDate: js.UndefOr[String] = js.native
+    var LastModifiedDate: js.UndefOr[String] = js.undefined
     
     /**
       * Messages per second that can be sent
       */
-    var MessagesPerSecond: js.UndefOr[Double] = js.native
+    var MessagesPerSecond: js.UndefOr[Double] = js.undefined
     
     /**
       * Platform type. Will be "EMAIL"
       */
-    var Platform: js.UndefOr[String] = js.native
+    var Platform: js.UndefOr[String] = js.undefined
     
     /**
       * The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service
       */
-    var RoleArn: js.UndefOr[String] = js.native
+    var RoleArn: js.UndefOr[String] = js.undefined
     
     /**
       * Version of channel
       */
-    var Version: js.UndefOr[Double] = js.native
+    var Version: js.UndefOr[Double] = js.undefined
   }
   object EmailChannelResponse {
     

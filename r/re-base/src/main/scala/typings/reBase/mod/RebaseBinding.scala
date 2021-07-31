@@ -2,19 +2,17 @@ package typings.reBase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RebaseBinding extends StObject {
   
-  var context: js.Object = js.native
+  var context: js.Object
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var method: String = js.native
+  var method: String
 }
 object RebaseBinding {
   

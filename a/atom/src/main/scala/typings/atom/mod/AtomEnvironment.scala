@@ -13,7 +13,6 @@ import typings.atom.atomStrings.nightly
 import typings.atom.atomStrings.stable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -92,7 +91,7 @@ trait AtomEnvironment extends StObject {
     * Restores the full screen and maximized state after the window has resized to prevent resize
     * glitches.
     */
-  def displayWindow(): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def displayWindow(): js.Promise[Unit] = js.native
   
   /** Execute code in dev tools. */
   def executeJavaScriptInDevTools(code: String): Unit = js.native

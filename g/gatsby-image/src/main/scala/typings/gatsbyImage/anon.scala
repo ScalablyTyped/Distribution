@@ -7,17 +7,15 @@ import typings.gatsbyImage.gatsbyImageStrings.fill
 import typings.gatsbyImage.gatsbyImageStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ObjectFit extends StObject {
     
-    var objectFit: js.UndefOr[fill | contain | cover | none | `scale-down`] = js.native
+    var objectFit: js.UndefOr[fill | contain | cover | none | `scale-down`] = js.undefined
     
-    var objectPosition: js.UndefOr[String] = js.native
+    var objectPosition: js.UndefOr[String] = js.undefined
   }
   object ObjectFit {
     
@@ -44,10 +42,9 @@ object anon {
     }
   }
   
-  @js.native
   trait WasCached extends StObject {
     
-    var wasCached: Boolean = js.native
+    var wasCached: Boolean
   }
   object WasCached {
     

@@ -3,13 +3,13 @@ package typings.ionic.definitionsMod
 import typings.node.childProcessMod.SpawnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellSpawnOptions extends SpawnOptions {
+trait IShellSpawnOptions
+  extends StObject
+     with SpawnOptions {
   
-  var showCommand: js.UndefOr[Boolean] = js.native
+  var showCommand: js.UndefOr[Boolean] = js.undefined
 }
 object IShellSpawnOptions {
   

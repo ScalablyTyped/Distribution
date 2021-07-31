@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OTAUpdateSummary extends StObject {
   
   /**
     * The date when the OTA update was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The OTA update ARN.
     */
-  var otaUpdateArn: js.UndefOr[OTAUpdateArn] = js.native
+  var otaUpdateArn: js.UndefOr[OTAUpdateArn] = js.undefined
   
   /**
     * The OTA update ID.
     */
-  var otaUpdateId: js.UndefOr[OTAUpdateId] = js.native
+  var otaUpdateId: js.UndefOr[OTAUpdateId] = js.undefined
 }
 object OTAUpdateSummary {
   

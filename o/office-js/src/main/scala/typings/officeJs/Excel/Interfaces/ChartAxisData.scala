@@ -48,11 +48,9 @@ import typings.officeJs.officeJsStrings.Value
 import typings.officeJs.officeJsStrings.Years
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartAxis.toJSON()`. */
-@js.native
 trait ChartAxisData extends StObject {
   
   /**
@@ -61,7 +59,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var alignment: js.UndefOr[ChartTickLabelAlignment | Center | Left | Right] = js.native
+  var alignment: js.UndefOr[ChartTickLabelAlignment | Center | Left | Right] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var axisGroup: js.UndefOr[ChartAxisGroup | Primary | Secondary] = js.native
+  var axisGroup: js.UndefOr[ChartAxisGroup | Primary | Secondary] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var baseTimeUnit: js.UndefOr[ChartAxisTimeUnit | Days | Months | Years] = js.native
+  var baseTimeUnit: js.UndefOr[ChartAxisTimeUnit | Days | Months | Years] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var categoryType: js.UndefOr[ChartAxisCategoryType | Automatic | TextAxis | DateAxis] = js.native
+  var categoryType: js.UndefOr[ChartAxisCategoryType | Automatic | TextAxis | DateAxis] = js.undefined
   
   /**
     *
@@ -93,7 +91,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var customDisplayUnit: js.UndefOr[Double] = js.native
+  var customDisplayUnit: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait ChartAxisData extends StObject {
     */
   var displayUnit: js.UndefOr[
     ChartAxisDisplayUnit | None | Hundreds | Thousands | TenThousands | HundredThousands | Millions | TenMillions | HundredMillions | Billions | Trillions | Custom
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -111,7 +109,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartAxisFormatData] = js.native
+  var format: js.UndefOr[ChartAxisFormatData] = js.undefined
   
   /**
     *
@@ -119,7 +117,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var isBetweenCategories: js.UndefOr[Boolean] = js.native
+  var isBetweenCategories: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -135,7 +133,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -143,7 +141,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var linkNumberFormat: js.UndefOr[Boolean] = js.native
+  var linkNumberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -151,7 +149,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var logBase: js.UndefOr[Double] = js.native
+  var logBase: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -159,7 +157,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var majorGridlines: js.UndefOr[ChartGridlinesData] = js.native
+  var majorGridlines: js.UndefOr[ChartGridlinesData] = js.undefined
   
   /**
     *
@@ -167,7 +165,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var majorTickMark: js.UndefOr[ChartAxisTickMark | None | Cross | Inside | Outside] = js.native
+  var majorTickMark: js.UndefOr[ChartAxisTickMark | None | Cross | Inside | Outside] = js.undefined
   
   /**
     *
@@ -175,7 +173,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var majorTimeUnitScale: js.UndefOr[ChartAxisTimeUnit | Days | Months | Years] = js.native
+  var majorTimeUnitScale: js.UndefOr[ChartAxisTimeUnit | Days | Months | Years] = js.undefined
   
   /**
     *
@@ -183,7 +181,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var majorUnit: js.UndefOr[js.Any] = js.native
+  var majorUnit: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -191,7 +189,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var maximum: js.UndefOr[js.Any] = js.native
+  var maximum: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -199,7 +197,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var minimum: js.UndefOr[js.Any] = js.native
+  var minimum: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -207,7 +205,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var minorGridlines: js.UndefOr[ChartGridlinesData] = js.native
+  var minorGridlines: js.UndefOr[ChartGridlinesData] = js.undefined
   
   /**
     *
@@ -215,7 +213,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var minorTickMark: js.UndefOr[ChartAxisTickMark | None | Cross | Inside | Outside] = js.native
+  var minorTickMark: js.UndefOr[ChartAxisTickMark | None | Cross | Inside | Outside] = js.undefined
   
   /**
     *
@@ -223,7 +221,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var minorTimeUnitScale: js.UndefOr[ChartAxisTimeUnit | Days | Months | Years] = js.native
+  var minorTimeUnitScale: js.UndefOr[ChartAxisTimeUnit | Days | Months | Years] = js.undefined
   
   /**
     *
@@ -231,7 +229,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var minorUnit: js.UndefOr[js.Any] = js.native
+  var minorUnit: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -239,7 +237,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var multiLevel: js.UndefOr[Boolean] = js.native
+  var multiLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -247,7 +245,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -255,7 +253,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -263,7 +261,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var position: js.UndefOr[ChartAxisPosition | Automatic | Maximum | Minimum | Custom] = js.native
+  var position: js.UndefOr[ChartAxisPosition | Automatic | Maximum | Minimum | Custom] = js.undefined
   
   /**
     *
@@ -271,7 +269,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var positionAt: js.UndefOr[Double] = js.native
+  var positionAt: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -279,7 +277,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var reversePlotOrder: js.UndefOr[Boolean] = js.native
+  var reversePlotOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -287,7 +285,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var scaleType: js.UndefOr[ChartAxisScaleType | Linear | Logarithmic] = js.native
+  var scaleType: js.UndefOr[ChartAxisScaleType | Linear | Logarithmic] = js.undefined
   
   /**
     *
@@ -295,7 +293,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showDisplayUnitLabel: js.UndefOr[Boolean] = js.native
+  var showDisplayUnitLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -303,7 +301,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var textOrientation: js.UndefOr[js.Any] = js.native
+  var textOrientation: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -311,7 +309,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tickLabelPosition: js.UndefOr[ChartAxisTickLabelPosition | NextToAxis | High | Low | None] = js.native
+  var tickLabelPosition: js.UndefOr[ChartAxisTickLabelPosition | NextToAxis | High | Low | None] = js.undefined
   
   /**
     *
@@ -319,7 +317,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tickLabelSpacing: js.UndefOr[js.Any] = js.native
+  var tickLabelSpacing: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -327,7 +325,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tickMarkSpacing: js.UndefOr[Double] = js.native
+  var tickMarkSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -335,7 +333,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var title: js.UndefOr[ChartAxisTitleData] = js.native
+  var title: js.UndefOr[ChartAxisTitleData] = js.undefined
   
   /**
     *
@@ -343,7 +341,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -351,7 +349,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: js.UndefOr[ChartAxisType | Invalid | Category | Value | Series] = js.native
+  var `type`: js.UndefOr[ChartAxisType | Invalid | Category | Value | Series] = js.undefined
   
   /**
     *
@@ -359,7 +357,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -367,7 +365,7 @@ trait ChartAxisData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartAxisData {
   

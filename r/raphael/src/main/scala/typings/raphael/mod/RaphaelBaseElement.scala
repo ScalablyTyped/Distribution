@@ -42,7 +42,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -68,7 +67,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
   def animate(
     targetAttributes: PartialRaphaelAttributes,
     durationMilliseconds: Double,
-    easing: js.UndefOr[scala.Nothing],
+    easing: Unit,
     onAnimationComplete: RaphaelOnAnimationCompleteHandler[this.type]
   ): this.type = js.native
   def animate(
@@ -139,7 +138,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
     otherAnimation: RaphaelAnimation,
     targetAttributes: PartialRaphaelAttributes,
     durationMilliseconds: Double,
-    easing: js.UndefOr[scala.Nothing],
+    easing: Unit,
     onAnimationComplete: RaphaelOnAnimationCompleteHandler[this.type]
   ): this.type = js.native
   def animateWith(
@@ -201,7 +200,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
   // https://github.com/microsoft/TypeScript/issues/22679
   K /* <: ArraykeyofRaphaelReadAttr */](attributeNames: K): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof K ]: K[P] extends 'transform'? raphael.raphael.RaphaelReadAttributes[K[P]] | undefined : never}
-    */ typings.raphael.raphaelStrings.RaphaelBaseElement with TopLevel[js.Any] = js.native
+    */ typings.raphael.raphaelStrings.RaphaelBaseElement & TopLevel[js.Any] = js.native
   /**
     * Set the given attribute of this element to the given value.
     * @typeparam K Type of the attribute name to set.
@@ -494,21 +493,21 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
     onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
     onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
     moveThisContext: MoveThisContext,
-    startThisContext: js.UndefOr[scala.Nothing],
+    startThisContext: Unit,
     endThisContext: EndThisContext
   ): this.type = js.native
   def drag[MoveThisContext, StartThisContext, EndThisContext](
     onMoveHandler: RaphaelDragOnMoveHandler[MoveThisContext],
     onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
     onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
-    moveThisContext: js.UndefOr[scala.Nothing],
+    moveThisContext: Unit,
     startThisContext: StartThisContext
   ): this.type = js.native
   def drag[MoveThisContext, StartThisContext, EndThisContext](
     onMoveHandler: RaphaelDragOnMoveHandler[MoveThisContext],
     onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
     onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
-    moveThisContext: js.UndefOr[scala.Nothing],
+    moveThisContext: Unit,
     startThisContext: StartThisContext,
     endThisContext: EndThisContext
   ): this.type = js.native
@@ -516,8 +515,8 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
     onMoveHandler: RaphaelDragOnMoveHandler[MoveThisContext],
     onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
     onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
-    moveThisContext: js.UndefOr[scala.Nothing],
-    startThisContext: js.UndefOr[scala.Nothing],
+    moveThisContext: Unit,
+    startThisContext: Unit,
     endThisContext: EndThisContext
   ): this.type = js.native
   
@@ -574,7 +573,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
   def hover[HoverInThisContext, HoverOutThisContext](
     onHoverInHandler: RaphaelBasicEventHandler[HoverInThisContext, MouseEvent],
     onHoverOutHandler: RaphaelBasicEventHandler[HoverOutThisContext, MouseEvent],
-    hoverInThisContext: js.UndefOr[scala.Nothing],
+    hoverInThisContext: Unit,
     hoverOutThisContext: HoverOutThisContext
   ): this.type = js.native
   
@@ -918,8 +917,8 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
     * @return this element for chaining.
     */
   def unhover(
-    onHoverInHandler: RaphaelBasicEventHandler[_, MouseEvent],
-    onHoverOutHandler: RaphaelBasicEventHandler[_, MouseEvent]
+    onHoverInHandler: RaphaelBasicEventHandler[js.Any, MouseEvent],
+    onHoverOutHandler: RaphaelBasicEventHandler[js.Any, MouseEvent]
   ): this.type = js.native
   
   /**

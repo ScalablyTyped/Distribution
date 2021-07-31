@@ -5,20 +5,19 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
   @js.native
   trait WebpackPlugin
-    extends Instantiable0[Plugin]
+    extends StObject
+       with Instantiable0[Plugin]
        with Instantiable1[/* options */ WebpackPluginOptions, Plugin]
   
-  @js.native
   trait WebpackPluginOptions extends StObject {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object WebpackPluginOptions {
     

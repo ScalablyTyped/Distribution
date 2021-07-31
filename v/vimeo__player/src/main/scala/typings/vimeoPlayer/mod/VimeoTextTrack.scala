@@ -2,19 +2,17 @@ package typings.vimeoPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VimeoTextTrack extends StObject {
   
-  var kind: String = js.native
+  var kind: String
   
-  var label: String = js.native
+  var label: String
   
-  var language: String = js.native
+  var language: String
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object VimeoTextTrack {
   

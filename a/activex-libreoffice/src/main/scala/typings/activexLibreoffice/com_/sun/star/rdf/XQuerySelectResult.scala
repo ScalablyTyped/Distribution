@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,14 +17,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XNode
   * @since OOo 3.0
   */
-@js.native
-trait XQuerySelectResult extends XEnumeration {
+trait XQuerySelectResult
+  extends StObject
+     with XEnumeration {
   
   /** get the names of the query variables. */
-  val BindingNames: SafeArray[String] = js.native
+  val BindingNames: SafeArray[String]
   
   /** get the names of the query variables. */
-  def getBindingNames(): SafeArray[String] = js.native
+  def getBindingNames(): SafeArray[String]
 }
 object XQuerySelectResult {
   

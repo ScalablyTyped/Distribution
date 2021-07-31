@@ -3,7 +3,6 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.IBound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Bounds")
 @js.native
 class Bounds ()
-  extends typings.phaser.MatterJS.Bounds
+  extends StObject
+     with typings.phaser.MatterJS.Bounds
 object Bounds {
+  
+  @JSImport("matter", "Bounds")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns true if the bounds contains the given point.
@@ -25,9 +29,8 @@ object Bounds {
     * @return {boolean} True if the bounds contain the point, otherwise false
     */
   /* static member */
-  @JSImport("matter", "Bounds.contains")
-  @js.native
-  def contains(bounds: IBound, point: typings.phaser.MatterJS.Vector): Boolean = js.native
+  @scala.inline
+  def contains(bounds: IBound, point: typings.phaser.MatterJS.Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(bounds.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Creates a new axis-aligned bounding box (AABB) for the given vertices.
@@ -36,9 +39,8 @@ object Bounds {
     * @return {IBound} A new bounds object
     */
   /* static member */
-  @JSImport("matter", "Bounds.create")
-  @js.native
-  def create(vertices: typings.phaser.MatterJS.Vertices): IBound = js.native
+  @scala.inline
+  def create(vertices: typings.phaser.MatterJS.Vertices): IBound = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vertices.asInstanceOf[js.Any]).asInstanceOf[IBound]
   
   /**
     * Returns true if the two bounds intersect.
@@ -48,9 +50,8 @@ object Bounds {
     * @return {boolean} True if the bounds overlap, otherwise false
     */
   /* static member */
-  @JSImport("matter", "Bounds.overlaps")
-  @js.native
-  def overlaps(boundsA: IBound, boundsB: IBound): Boolean = js.native
+  @scala.inline
+  def overlaps(boundsA: IBound, boundsB: IBound): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlaps")(boundsA.asInstanceOf[js.Any], boundsB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Shifts the bounds to the given position.
@@ -59,9 +60,8 @@ object Bounds {
     * @param {vector} position
     */
   /* static member */
-  @JSImport("matter", "Bounds.shift")
-  @js.native
-  def shift(bounds: IBound, position: typings.phaser.MatterJS.Vector): Unit = js.native
+  @scala.inline
+  def shift(bounds: IBound, position: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shift")(bounds.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Translates the bounds by the given vector.
@@ -70,9 +70,8 @@ object Bounds {
     * @param {vector} vector
     */
   /* static member */
-  @JSImport("matter", "Bounds.translate")
-  @js.native
-  def translate(bounds: IBound, vector: typings.phaser.MatterJS.Vector): Unit = js.native
+  @scala.inline
+  def translate(bounds: IBound, vector: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(bounds.asInstanceOf[js.Any], vector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Updates bounds using the given vertices and extends the bounds given a velocity.
@@ -82,11 +81,10 @@ object Bounds {
     * @param {vector} velocity
     */
   /* static member */
-  @JSImport("matter", "Bounds.update")
-  @js.native
+  @scala.inline
   def update(
     bounds: IBound,
     vertices: typings.phaser.MatterJS.Vertices,
     velocity: typings.phaser.MatterJS.Vector
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(bounds.asInstanceOf[js.Any], vertices.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,23 +2,21 @@ package typings.materialTopAppBar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIONITEMSELECTOR extends StObject {
     
-    var ACTION_ITEM_SELECTOR: String = js.native
+    var ACTION_ITEM_SELECTOR: String
     
-    var NAVIGATION_EVENT: String = js.native
+    var NAVIGATION_EVENT: String
     
-    var NAVIGATION_ICON_SELECTOR: String = js.native
+    var NAVIGATION_ICON_SELECTOR: String
     
-    var ROOT_SELECTOR: String = js.native
+    var ROOT_SELECTOR: String
     
-    var TITLE_SELECTOR: String = js.native
+    var TITLE_SELECTOR: String
   }
   object ACTIONITEMSELECTOR {
     
@@ -54,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DEBOUNCETHROTTLERESIZETIMEMS extends StObject {
     
-    var DEBOUNCE_THROTTLE_RESIZE_TIME_MS: Double = js.native
+    var DEBOUNCE_THROTTLE_RESIZE_TIME_MS: Double
     
-    var MAX_TOP_APP_BAR_HEIGHT: Double = js.native
+    var MAX_TOP_APP_BAR_HEIGHT: Double
   }
   object DEBOUNCETHROTTLERESIZETIMEMS {
     
@@ -80,18 +77,17 @@ object anon {
     }
   }
   
-  @js.native
   trait FIXEDCLASS extends StObject {
     
-    var FIXED_CLASS: String = js.native
+    var FIXED_CLASS: String
     
-    var FIXED_SCROLLED_CLASS: String = js.native
+    var FIXED_SCROLLED_CLASS: String
     
-    var SHORT_CLASS: String = js.native
+    var SHORT_CLASS: String
     
-    var SHORT_COLLAPSED_CLASS: String = js.native
+    var SHORT_COLLAPSED_CLASS: String
     
-    var SHORT_HAS_ACTION_ITEM_CLASS: String = js.native
+    var SHORT_HAS_ACTION_ITEM_CLASS: String
   }
   object FIXEDCLASS {
     
@@ -128,24 +124,23 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/top-app-bar.@material/top-app-bar/adapter.MDCTopAppBarAdapter> */
-  @js.native
   trait PartialMDCTopAppBarAdapte extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var getTopAppBarHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getTopAppBarHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getTotalActionItems: js.UndefOr[js.Function0[Double]] = js.native
+    var getTotalActionItems: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getViewportScrollY: js.UndefOr[js.Function0[Double]] = js.native
+    var getViewportScrollY: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var notifyNavigationIconClicked: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyNavigationIconClicked: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setStyle: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.native
+    var setStyle: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCTopAppBarAdapte {
     

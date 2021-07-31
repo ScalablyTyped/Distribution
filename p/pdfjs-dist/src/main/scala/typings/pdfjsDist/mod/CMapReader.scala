@@ -4,13 +4,11 @@ import typings.pdfjsDist.anon.CMapData
 import typings.pdfjsDist.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CMapReader extends StObject {
   
-  def fetch(params: Name): js.Promise[CMapData] = js.native
+  def fetch(params: Name): js.Promise[CMapData]
 }
 object CMapReader {
   

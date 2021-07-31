@@ -2,41 +2,39 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitAsyncRefOperationDetail extends StObject {
   
   /**
     * Indicates if there was a conflict generated when trying to cherry pick or revert the changes.
     */
-  var conflict: Boolean = js.native
+  var conflict: Boolean
   
   /**
     * The current commit from the list of commits that are being cherry picked or reverted.
     */
-  var currentCommitId: String = js.native
+  var currentCommitId: String
   
   /**
     * Detailed information about why the cherry pick or revert failed to complete.
     */
-  var failureMessage: String = js.native
+  var failureMessage: String
   
   /**
     * A number between 0 and 1 indicating the percent complete of the operation.
     */
-  var progress: Double = js.native
+  var progress: Double
   
   /**
     * Provides a status code that indicates the reason the cherry pick or revert failed.
     */
-  var status: GitAsyncRefOperationFailureStatus = js.native
+  var status: GitAsyncRefOperationFailureStatus
   
   /**
     * Indicates if the operation went beyond the maximum time allowed for a cherry pick or revert operation.
     */
-  var timedout: Boolean = js.native
+  var timedout: Boolean
 }
 object GitAsyncRefOperationDetail {
   

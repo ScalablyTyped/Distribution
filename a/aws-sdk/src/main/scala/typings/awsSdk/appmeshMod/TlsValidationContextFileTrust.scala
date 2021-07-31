@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TlsValidationContextFileTrust extends StObject {
   
   /**
     * The certificate trust chain for a certificate stored on the file system of the virtual node that the proxy is running on.
     */
-  var certificateChain: FilePath = js.native
+  var certificateChain: FilePath
 }
 object TlsValidationContextFileTrust {
   

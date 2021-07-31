@@ -4,26 +4,24 @@ import typings.fecha.mod.Days
 import typings.fecha.mod.Months
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<fecha.fecha.I18nSettings> */
-  @js.native
   trait PartialI18nSettings extends StObject {
     
-    var DoFn: js.UndefOr[js.Function1[/* dayOfMonth */ Double, String]] = js.native
+    var DoFn: js.UndefOr[js.Function1[/* dayOfMonth */ Double, String]] = js.undefined
     
-    var amPm: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var amPm: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var dayNames: js.UndefOr[Days] = js.native
+    var dayNames: js.UndefOr[Days] = js.undefined
     
-    var dayNamesShort: js.UndefOr[Days] = js.native
+    var dayNamesShort: js.UndefOr[Days] = js.undefined
     
-    var monthNames: js.UndefOr[Months] = js.native
+    var monthNames: js.UndefOr[Months] = js.undefined
     
-    var monthNamesShort: js.UndefOr[Months] = js.native
+    var monthNamesShort: js.UndefOr[Months] = js.undefined
   }
   object PartialI18nSettings {
     

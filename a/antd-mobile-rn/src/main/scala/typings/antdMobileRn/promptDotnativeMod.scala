@@ -10,7 +10,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promptDotnativeMod {
@@ -59,20 +58,19 @@ object promptDotnativeMod {
     def message_=(x: FontSizeMarginTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPromptStyle extends StObject {
     
-    var input: TextStyle = js.native
+    var input: TextStyle
     
-    var inputFirst: ViewStyle = js.native
+    var inputFirst: ViewStyle
     
-    var inputGroup: ViewStyle = js.native
+    var inputGroup: ViewStyle
     
-    var inputLast: ViewStyle = js.native
+    var inputLast: ViewStyle
     
-    var inputWrapper: ViewStyle = js.native
+    var inputWrapper: ViewStyle
     
-    var message: TextStyle = js.native
+    var message: TextStyle
   }
   object IPromptStyle {
     

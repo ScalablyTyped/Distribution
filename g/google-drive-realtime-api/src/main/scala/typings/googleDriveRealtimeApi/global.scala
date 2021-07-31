@@ -1,6 +1,8 @@
 package typings.googleDriveRealtimeApi
 
 import typings.googleDriveRealtimeApi.anon.SHIFTAFTERDELETE
+import typings.googleDriveRealtimeApi.gapi.drive.realtime.Error
+import typings.googleDriveRealtimeApi.gapi.drive.realtime.ErrorType
 import typings.googleDriveRealtimeApi.gapi.drive.realtime.databinding.Binding
 import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.EditableString
 import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List
@@ -25,7 +27,6 @@ import typings.googleDriveRealtimeApi.rtclient.RealtimeLoaderFactory
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -36,10 +37,15 @@ object global {
       
       object realtime {
         
+        @JSGlobal("gapi.drive.realtime")
+        @js.native
+        val ^ : js.Any = js.native
+        
         @JSGlobal("gapi.drive.realtime.CollaborativeList")
         @js.native
         class CollaborativeList[V] ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeList[V]
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeList[V]
         /* static members */
         object CollaborativeList {
           
@@ -51,7 +57,8 @@ object global {
         @JSGlobal("gapi.drive.realtime.CollaborativeMap")
         @js.native
         class CollaborativeMap[V] ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeMap[V]
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeMap[V]
         /* static members */
         object CollaborativeMap {
           
@@ -63,12 +70,14 @@ object global {
         @JSGlobal("gapi.drive.realtime.CollaborativeObject")
         @js.native
         class CollaborativeObject ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeObject
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeObject
         
         @JSGlobal("gapi.drive.realtime.CollaborativeString")
         @js.native
         class CollaborativeString ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeString
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeString
         /* static members */
         object CollaborativeString {
           
@@ -80,7 +89,8 @@ object global {
         @JSGlobal("gapi.drive.realtime.Collaborator")
         @js.native
         class Collaborator protected ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.Collaborator {
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.Collaborator {
           def this(
             sessionId: String,
             userId: String,
@@ -91,18 +101,70 @@ object global {
             photoUrl: String,
             permissionId: String
           ) = this()
+          
+          // The HTML color associated with this collaborator. When possible, collaborators are assigned unique colors.
+          /* CompleteClass */
+          var color: String = js.native
+          
+          // The display name for this collaborator.
+          /* CompleteClass */
+          var displayName: String = js.native
+          
+          // True if this collaborator is anonymous, false otherwise.
+          /* CompleteClass */
+          var isAnonymous: Boolean = js.native
+          
+          // True if this collaborator is the local user, false otherwise.
+          /* CompleteClass */
+          var isMe: Boolean = js.native
+          
+          // The permission ID for this collaborator. This ID is stable for a given user and is compatible with the
+          // Drive API permissions APIs. Use the userId property for all other uses.
+          /* CompleteClass */
+          var permissionId: String = js.native
+          
+          // A URL that points to the profile photo for this collaborator, or to a generic profile photo for
+          // anonymous collaborators.
+          /* CompleteClass */
+          var photoUrl: String = js.native
+          
+          // The session ID for this collaborator. A single user may have multiple sessions if they have the same document
+          // open on multiple devices or in multiple browser tabs.
+          /* CompleteClass */
+          var sessionId: String = js.native
+          
+          // The user ID for this collaborator. This ID is stable for a given user and is compatible with most Google APIs
+          // except the Drive API permission APIs. For an ID which is compatible with the Drive API permission APIs,
+          // use the permissionId property.
+          /* CompleteClass */
+          var userId: String = js.native
         }
         
         @JSGlobal("gapi.drive.realtime.Document")
         @js.native
         class Document ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.Document
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.Document
         
         @JSGlobal("gapi.drive.realtime.Error")
         @js.native
         class Error protected ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.Error {
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.Error {
           def this(`type`: String, message: String, isFatal: Boolean) = this()
+          
+          // Whether the error is fatal. Fatal errors cannot be recovered
+          // from and require the document to be reloaded.
+          /* CompleteClass */
+          var isFatal: Boolean = js.native
+          
+          // A message describing the error.
+          /* CompleteClass */
+          var message: String = js.native
+          
+          // The type of the error that occurred.
+          /* CompleteClass */
+          var `type`: ErrorType = js.native
         }
         
         object ErrorType {
@@ -338,7 +400,8 @@ object global {
         @JSGlobal("gapi.drive.realtime.IndexReference")
         @js.native
         class IndexReference[V] ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.IndexReference[V]
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.IndexReference[V]
         /* static members */
         object IndexReference {
           
@@ -357,160 +420,141 @@ object global {
         @JSGlobal("gapi.drive.realtime.Model")
         @js.native
         class Model ()
-          extends typings.googleDriveRealtimeApi.gapi.drive.realtime.Model
+          extends StObject
+             with typings.googleDriveRealtimeApi.gapi.drive.realtime.Model
         
         object databinding {
           
-          @JSGlobal("gapi.drive.realtime.databinding.bindString")
+          @JSGlobal("gapi.drive.realtime.databinding")
           @js.native
+          val ^ : js.Any = js.native
+          
+          @scala.inline
           def bindString(
             s: typings.googleDriveRealtimeApi.gapi.drive.realtime.CollaborativeString,
             textinput: HTMLInputElement
-          ): Binding = js.native
+          ): Binding = (^.asInstanceOf[js.Dynamic].applyDynamic("bindString")(s.asInstanceOf[js.Any], textinput.asInstanceOf[js.Any])).asInstanceOf[Binding]
         }
         
-        @JSGlobal("gapi.drive.realtime.debug")
-        @js.native
-        def debug(): Unit = js.native
+        @scala.inline
+        def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
         
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
-        def load(fileId: String): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
-        def load(
-          fileId: String,
-          onLoaded: js.UndefOr[scala.Nothing],
-          opt_initializerFn: js.UndefOr[scala.Nothing],
-          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
-        def load(
-          fileId: String,
-          onLoaded: js.UndefOr[scala.Nothing],
-          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
-        def load(
-          fileId: String,
-          onLoaded: js.UndefOr[scala.Nothing],
-          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit],
-          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
+        @scala.inline
+        def load(fileId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        @scala.inline
         def load(
           fileId: String,
           onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
-        def load(
-          fileId: String,
-          onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
-          opt_initializerFn: js.UndefOr[scala.Nothing],
-          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any], onLoaded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
         def load(
           fileId: String,
           onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
           opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.load")
-        @js.native
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any], onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
         def load(
           fileId: String,
           onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
           opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit],
           opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): Unit = js.native
-        
-        @JSGlobal("gapi.drive.realtime.loadAppDataDocument")
-        @js.native
-        def loadAppDataDocument(onLoaded: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit]): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.loadAppDataDocument")
-        @js.native
-        def loadAppDataDocument(
-          onLoaded: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
-          opt_initializerFn: js.UndefOr[scala.Nothing],
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any], onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def load(
+          fileId: String,
+          onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
+          opt_initializerFn: Unit,
           opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.loadAppDataDocument")
-        @js.native
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any], onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def load(
+          fileId: String,
+          onLoaded: Unit,
+          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit]
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any], onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def load(
+          fileId: String,
+          onLoaded: Unit,
+          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit],
+          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any], onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def load(
+          fileId: String,
+          onLoaded: Unit,
+          opt_initializerFn: Unit,
+          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fileId.asInstanceOf[js.Any], onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        
+        @scala.inline
+        def loadAppDataDocument(onLoaded: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAppDataDocument")(onLoaded.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        @scala.inline
         def loadAppDataDocument(
           onLoaded: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
           opt_initializerFn: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit]
-        ): Unit = js.native
-        @JSGlobal("gapi.drive.realtime.loadAppDataDocument")
-        @js.native
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAppDataDocument")(onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
         def loadAppDataDocument(
           onLoaded: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
           opt_initializerFn: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit],
           opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): Unit = js.native
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAppDataDocument")(onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        @scala.inline
+        def loadAppDataDocument(
+          onLoaded: js.Function1[/* x */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
+          opt_initializerFn: Unit,
+          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
+        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAppDataDocument")(onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
-        @JSGlobal("gapi.drive.realtime.loadFromJson")
-        @js.native
-        def loadFromJson(json: String): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.loadFromJson")
-        @js.native
+        @scala.inline
+        def loadFromJson(json: String): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromJson")(json.asInstanceOf[js.Any]).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
         def loadFromJson(
           json: String,
           opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromJson")(json.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
         
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
-        def newInMemoryDocument(): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
-        def newInMemoryDocument(
-          opt_onLoaded: js.UndefOr[scala.Nothing],
-          opt_initializerFn: js.UndefOr[scala.Nothing],
-          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
-        def newInMemoryDocument(
-          opt_onLoaded: js.UndefOr[scala.Nothing],
-          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
-        def newInMemoryDocument(
-          opt_onLoaded: js.UndefOr[scala.Nothing],
-          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit],
-          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
+        @scala.inline
+        def newInMemoryDocument(): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")().asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
         def newInMemoryDocument(
           opt_onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
-        def newInMemoryDocument(
-          opt_onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
-          opt_initializerFn: js.UndefOr[scala.Nothing],
-          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")(opt_onLoaded.asInstanceOf[js.Any]).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
         def newInMemoryDocument(
           opt_onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
           opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
-        @JSGlobal("gapi.drive.realtime.newInMemoryDocument")
-        @js.native
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")(opt_onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any])).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
         def newInMemoryDocument(
           opt_onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
           opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit],
           opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
-        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = js.native
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")(opt_onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
+        def newInMemoryDocument(
+          opt_onLoaded: js.Function1[/* d */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Document, Unit],
+          opt_initializerFn: Unit,
+          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")(opt_onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
+        def newInMemoryDocument(
+          opt_onLoaded: Unit,
+          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit]
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")(opt_onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any])).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
+        def newInMemoryDocument(
+          opt_onLoaded: Unit,
+          opt_initializerFn: js.Function1[/* m */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Model, Unit],
+          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")(opt_onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
+        @scala.inline
+        def newInMemoryDocument(
+          opt_onLoaded: Unit,
+          opt_initializerFn: Unit,
+          opt_errorFn: js.Function1[/* e */ typings.googleDriveRealtimeApi.gapi.drive.realtime.Error, Unit]
+        ): typings.googleDriveRealtimeApi.gapi.drive.realtime.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("newInMemoryDocument")(opt_onLoaded.asInstanceOf[js.Any], opt_initializerFn.asInstanceOf[js.Any], opt_errorFn.asInstanceOf[js.Any])).asInstanceOf[typings.googleDriveRealtimeApi.gapi.drive.realtime.Document]
       }
     }
   }
@@ -529,16 +573,26 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("rtclient.RealtimeLoader")
     @js.native
-    class RealtimeLoaderCls protected () extends RealtimeLoader {
+    class RealtimeLoaderCls protected ()
+      extends StObject
+         with RealtimeLoader {
       def this(options: LoaderOptions) = this()
+      
+      /* CompleteClass */
+      override def handleErrors(e: Error): Unit = js.native
+      
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /* CompleteClass */
+      override def start(): Unit = js.native
     }
     
     @scala.inline
     def RealtimeLoader_=(x: RealtimeLoaderFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RealtimeLoader")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("rtclient.createRealtimeFile")
-    @js.native
-    def createRealtimeFile(title: String, mimeType: String, callback: js.Function1[/* file */ DriveAPIFileResource, Unit]): Unit = js.native
+    @scala.inline
+    def createRealtimeFile(title: String, mimeType: String, callback: js.Function1[/* file */ DriveAPIFileResource, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createRealtimeFile")(title.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // INCOMPLETE
     object params {

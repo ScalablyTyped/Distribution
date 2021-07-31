@@ -28,14 +28,13 @@ import typings.std.RegExp
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("jszip", JSImport.Namespace)
   @js.native
-  val ^ : JSZip = js.native
+  val ^ : js.Object & JSZip = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jszip", JSImport.Namespace)
@@ -50,9 +49,12 @@ object mod extends Shortcut {
     * @param data Serialized zip archive
     * @param options Description of the serialized zip archive
     */
-  class Class () extends JSZip {
+  class Class ()
+    extends StObject
+       with JSZip {
     def this(data: InputFileFormat) = this()
-    def this(data: js.UndefOr[InputFileFormat], options: JSZipLoadOptions) = this()
+    def this(data: Unit, options: JSZipLoadOptions) = this()
+    def this(data: InputFileFormat, options: JSZipLoadOptions) = this()
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -69,26 +71,25 @@ object mod extends Shortcut {
     def STORE: typings.jszip.jszipStrings.STORE = "STORE".asInstanceOf[typings.jszip.jszipStrings.STORE]
   }
   
-  @js.native
   trait InputByType extends StObject {
     
-    var array: js.Array[Double] = js.native
+    var array: js.Array[Double]
     
-    var arraybuffer: ArrayBuffer = js.native
+    var arraybuffer: ArrayBuffer
     
-    var base64: String = js.native
+    var base64: String
     
-    var binarystring: String = js.native
+    var binarystring: String
     
-    var blob: Blob = js.native
+    var blob: Blob
     
-    var stream: ReadableStream = js.native
+    var stream: ReadableStream
     
-    var string: String = js.native
+    var string: String
     
-    var text: String = js.native
+    var text: String
     
-    var uint8array: Uint8Array = js.native
+    var uint8array: Uint8Array
   }
   object InputByType {
     
@@ -169,7 +170,8 @@ object mod extends Shortcut {
   
   @js.native
   trait JSZip
-    extends /**
+    extends StObject
+       with /**
     * Create JSZip instance
     */
   /**
@@ -181,7 +183,11 @@ object mod extends Shortcut {
     */
   Instantiable0[JSZip]
        with Instantiable1[/* data */ InputFileFormat, JSZip]
-       with Instantiable2[js.UndefOr[/* data */ InputFileFormat], /* options */ JSZipLoadOptions, JSZip] {
+       with Instantiable2[
+          (/* data */ InputFileFormat) | (/* data */ Unit), 
+          /* options */ JSZipLoadOptions, 
+          JSZip
+        ] {
     
     def apply(): JSZip = js.native
     
@@ -274,7 +280,7 @@ object mod extends Shortcut {
       * @return The serialized archive
       */
     def generateAsync(): js.Promise[String] = js.native
-    def generateAsync(options: js.UndefOr[scala.Nothing], onUpdate: OnUpdateCallback): js.Promise[String] = js.native
+    def generateAsync(options: Unit, onUpdate: OnUpdateCallback): js.Promise[String] = js.native
     @JSName("generateAsync")
     def generateAsync_array(options: JSZipGeneratorOptions[array]): js.Promise[js.Array[Double]] = js.native
     @JSName("generateAsync")
@@ -320,7 +326,7 @@ object mod extends Shortcut {
       * @return A Node.js `ReadableStream`
       */
     def generateNodeStream(): ReadableStream = js.native
-    def generateNodeStream(options: js.UndefOr[scala.Nothing], onUpdate: OnUpdateCallback): ReadableStream = js.native
+    def generateNodeStream(options: Unit, onUpdate: OnUpdateCallback): ReadableStream = js.native
     @JSName("generateNodeStream")
     def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): ReadableStream = js.native
     @JSName("generateNodeStream")
@@ -349,44 +355,43 @@ object mod extends Shortcut {
     var version: String = js.native
   }
   
-  @js.native
   trait JSZipFileOptions extends StObject {
     
     /** Set to `true` if the data is `base64` encoded. For example image data from a `<canvas>` element. Plain text and HTML do not need this option. */
-    var base64: js.UndefOr[Boolean] = js.native
+    var base64: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to `true` if the data should be treated as raw content, `false` if this is a text. If `base64` is used,
       * this defaults to `true`, if the data is not a `string`, this will be set to `true`.
       */
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var compression: js.UndefOr[String] = js.native
+    var compression: js.UndefOr[String] = js.undefined
     
     /** Set to `true` if folders in the file path should be automatically created, otherwise there will only be virtual folders that represent the path to the file. */
-    var createFolders: js.UndefOr[Boolean] = js.native
+    var createFolders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The last modification date, defaults to the current date.
       */
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
     /** Set to `true` if this is a directory and content should be ignored. */
-    var dir: js.UndefOr[Boolean] = js.native
+    var dir: js.UndefOr[Boolean] = js.undefined
     
     /** 6 bits number. The DOS permissions of the file, if any. */
-    var dosPermissions: js.UndefOr[Double | Null] = js.native
+    var dosPermissions: js.UndefOr[Double | Null] = js.undefined
     
     /** Set to `true` if (and only if) the input is a "binary string" and has already been prepared with a `0xFF` mask. */
-    var optimizedBinaryString: js.UndefOr[Boolean] = js.native
+    var optimizedBinaryString: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 16 bits number. The UNIX permissions of the file, if any.
       * Also accepts a `string` representing the octal value: `"644"`, `"755"`, etc.
       */
-    var unixPermissions: js.UndefOr[Double | String | Null] = js.native
+    var unixPermissions: js.UndefOr[Double | String | Null] = js.undefined
   }
   object JSZipFileOptions {
     
@@ -467,31 +472,30 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait JSZipGeneratorOptions[T /* <: OutputType */] extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var compression: js.UndefOr[Compression] = js.native
+    var compression: js.UndefOr[Compression] = js.undefined
     
-    var compressionOptions: js.UndefOr[Null | Level] = js.native
+    var compressionOptions: js.UndefOr[Null | Level] = js.undefined
     
-    var encodeFileName: js.UndefOr[js.Function1[/* filename */ String, String]] = js.native
+    var encodeFileName: js.UndefOr[js.Function1[/* filename */ String, String]] = js.undefined
     
     /**
       * mime-type for the generated file.
       * Useful when you need to generate a file with a different extension, ie: “.ods”.
       * @default 'application/zip'
       */
-    var mimeType: js.UndefOr[String] = js.native
+    var mimeType: js.UndefOr[String] = js.undefined
     
     /** DOS (default) or UNIX */
-    var platform: js.UndefOr[DOS | UNIX] = js.native
+    var platform: js.UndefOr[DOS | UNIX] = js.undefined
     
     /** Stream the files and create file descriptors */
-    var streamFiles: js.UndefOr[Boolean] = js.native
+    var streamFiles: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[T] = js.native
+    var `type`: js.UndefOr[T] = js.undefined
   }
   object JSZipGeneratorOptions {
     
@@ -502,7 +506,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class JSZipGeneratorOptionsMutableBuilder[Self <: JSZipGeneratorOptions[_], T /* <: OutputType */] (val x: Self with JSZipGeneratorOptions[T]) extends AnyVal {
+    implicit class JSZipGeneratorOptionsMutableBuilder[Self <: JSZipGeneratorOptions[?], T /* <: OutputType */] (val x: Self & JSZipGeneratorOptions[T]) extends AnyVal {
       
       @scala.inline
       def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
@@ -557,16 +561,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait JSZipLoadOptions extends StObject {
     
-    var base64: js.UndefOr[Boolean] = js.native
+    var base64: js.UndefOr[Boolean] = js.undefined
     
-    var checkCRC32: js.UndefOr[Boolean] = js.native
+    var checkCRC32: js.UndefOr[Boolean] = js.undefined
     
-    var createFolders: js.UndefOr[Boolean] = js.native
+    var createFolders: js.UndefOr[Boolean] = js.undefined
     
-    var optimizedBinaryString: js.UndefOr[Boolean] = js.native
+    var optimizedBinaryString: js.UndefOr[Boolean] = js.undefined
   }
   object JSZipLoadOptions {
     
@@ -663,7 +666,7 @@ object mod extends Shortcut {
     var name: String = js.native
     
     def nodeStream(): ReadableStream = js.native
-    def nodeStream(`type`: js.UndefOr[scala.Nothing], onUpdate: OnUpdateCallback): ReadableStream = js.native
+    def nodeStream(`type`: Unit, onUpdate: OnUpdateCallback): ReadableStream = js.native
     @JSName("nodeStream")
     def nodeStream_nodebuffer(`type`: nodebuffer): ReadableStream = js.native
     @JSName("nodeStream")
@@ -675,10 +678,9 @@ object mod extends Shortcut {
     var unixPermissions: Double | String | Null = js.native
   }
   
-  @js.native
   trait JSZipObjectOptions extends StObject {
     
-    var compression: Compression = js.native
+    var compression: Compression
   }
   object JSZipObjectOptions {
     
@@ -696,16 +698,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait JSZipSupport extends StObject {
     
-    var arraybuffer: Boolean = js.native
+    var arraybuffer: Boolean
     
-    var blob: Boolean = js.native
+    var blob: Boolean
     
-    var nodebuffer: Boolean = js.native
+    var nodebuffer: Boolean
     
-    var uint8array: Boolean = js.native
+    var uint8array: Boolean
   }
   object JSZipSupport {
     
@@ -732,12 +733,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var currentFile: String = js.native
+    var currentFile: String
     
-    var percent: Double = js.native
+    var percent: Double
   }
   object Metadata {
     
@@ -760,26 +760,25 @@ object mod extends Shortcut {
   
   type OnUpdateCallback = js.Function1[/* metadata */ Metadata, Unit]
   
-  @js.native
   trait OutputByType extends StObject {
     
-    var array: js.Array[Double] = js.native
+    var array: js.Array[Double]
     
-    var arraybuffer: ArrayBuffer = js.native
+    var arraybuffer: ArrayBuffer
     
-    var base64: String = js.native
+    var base64: String
     
-    var binarystring: String = js.native
+    var binarystring: String
     
-    var blob: Blob = js.native
+    var blob: Blob
     
-    var nodebuffer: Buffer = js.native
+    var nodebuffer: Buffer
     
-    var string: String = js.native
+    var string: String
     
-    var text: String = js.native
+    var text: String
     
-    var uint8array: Uint8Array = js.native
+    var uint8array: Uint8Array
   }
   object OutputByType {
     
@@ -847,8 +846,8 @@ object mod extends Shortcut {
   */
   trait OutputType extends StObject
   
-  type _To = JSZip
+  type _To = js.Object & JSZip
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: JSZip = ^
+  override def _to: js.Object & JSZip = ^
 }

@@ -12,7 +12,6 @@ import typings.std.Error
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,12 +20,12 @@ trait ComponentDidCatch[Props /* <: GenericSliderProps */] extends StObject {
   var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   
   var UNSAFE_componentWillReceiveProps: js.UndefOr[
-    js.Function2[/* nextProps */ ComponentWrapperProps with Props, /* nextContext */ js.Any, Unit]
+    js.Function2[/* nextProps */ ComponentWrapperProps & Props, /* nextContext */ js.Any, Unit]
   ] = js.native
   
   var UNSAFE_componentWillUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ ComponentWrapperProps with Props, 
+      /* nextProps */ ComponentWrapperProps & Props, 
       /* nextState */ ReadonlyComponentWrapperS, 
       /* nextContext */ js.Any, 
       Unit
@@ -39,7 +38,7 @@ trait ComponentDidCatch[Props /* <: GenericSliderProps */] extends StObject {
   
   var componentDidUpdate: js.UndefOr[
     js.Function3[
-      /* prevProps */ ComponentWrapperProps with Props, 
+      /* prevProps */ ComponentWrapperProps & Props, 
       /* prevState */ ReadonlyComponentWrapperS, 
       /* snapshot */ js.UndefOr[js.Any], 
       Unit
@@ -49,14 +48,14 @@ trait ComponentDidCatch[Props /* <: GenericSliderProps */] extends StObject {
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   
   var componentWillReceiveProps: js.UndefOr[
-    js.Function2[/* nextProps */ ComponentWrapperProps with Props, /* nextContext */ js.Any, Unit]
+    js.Function2[/* nextProps */ ComponentWrapperProps & Props, /* nextContext */ js.Any, Unit]
   ] = js.native
   
   var componentWillUnmount: js.UndefOr[js.Function0[Unit]] = js.native
   
   var componentWillUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ ComponentWrapperProps with Props, 
+      /* nextProps */ ComponentWrapperProps & Props, 
       /* nextState */ ReadonlyComponentWrapperS, 
       /* nextContext */ js.Any, 
       Unit
@@ -70,9 +69,9 @@ trait ComponentDidCatch[Props /* <: GenericSliderProps */] extends StObject {
   
   var getSnapshotBeforeUpdate: js.UndefOr[
     js.Function2[
-      /* prevProps */ ComponentWrapperProps with Props, 
+      /* prevProps */ ComponentWrapperProps & Props, 
       /* prevState */ ReadonlyComponentWrapperS, 
-      _
+      js.Any
     ]
   ] = js.native
   
@@ -80,7 +79,7 @@ trait ComponentDidCatch[Props /* <: GenericSliderProps */] extends StObject {
   
   def handleWithTooltip(hasValueDraggingIndexDisabledRestProps: Dictx): Element = js.native
   
-  val props: ComponentWrapperProps with Props with ReadonlychildrenReactNode = js.native
+  val props: ComponentWrapperProps & Props & ReadonlychildrenReactNode = js.native
   
   var refs: StringDictionary[ReactInstance] = js.native
   
@@ -89,14 +88,14 @@ trait ComponentDidCatch[Props /* <: GenericSliderProps */] extends StObject {
   def setState[K /* <: visibles */](
     state: js.Function2[
       /* prevState */ ReadonlyComponentWrapperS, 
-      /* props */ ComponentWrapperProps with Props, 
+      /* props */ ComponentWrapperProps & Props, 
       ComponentWrapperState | (Pick[ComponentWrapperState, K])
     ]
   ): Unit = js.native
   def setState[K /* <: visibles */](
     state: js.Function2[
       /* prevState */ ReadonlyComponentWrapperS, 
-      /* props */ ComponentWrapperProps with Props, 
+      /* props */ ComponentWrapperProps & Props, 
       ComponentWrapperState | (Pick[ComponentWrapperState, K])
     ],
     callback: js.Function0[Unit]
@@ -108,7 +107,7 @@ trait ComponentDidCatch[Props /* <: GenericSliderProps */] extends StObject {
   
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ ComponentWrapperProps with Props, 
+      /* nextProps */ ComponentWrapperProps & Props, 
       /* nextState */ ReadonlyComponentWrapperS, 
       /* nextContext */ js.Any, 
       Boolean

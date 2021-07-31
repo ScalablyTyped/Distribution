@@ -5,10 +5,13 @@ import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@tensorflow/tfjs-converter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-converter", "GraphModel")
   @js.native
@@ -29,26 +32,20 @@ object mod {
     def this(modelUrl: IOHandler, loadOptions: LoadOptions) = this()
   }
   
-  @JSImport("@tensorflow/tfjs-converter", "deregisterOp")
-  @js.native
-  def deregisterOp(name: String): Unit = js.native
+  @scala.inline
+  def deregisterOp(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterOp")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-converter", "loadGraphModel")
-  @js.native
-  def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
-  @JSImport("@tensorflow/tfjs-converter", "loadGraphModel")
-  @js.native
-  def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
-  @JSImport("@tensorflow/tfjs-converter", "loadGraphModel")
-  @js.native
-  def loadGraphModel(modelUrl: IOHandler): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
-  @JSImport("@tensorflow/tfjs-converter", "loadGraphModel")
-  @js.native
-  def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
+  @scala.inline
+  def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
+  @scala.inline
+  def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
+  @scala.inline
+  def loadGraphModel(modelUrl: IOHandler): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
+  @scala.inline
+  def loadGraphModel(modelUrl: IOHandler, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGraphModel")(modelUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel]]
   
-  @JSImport("@tensorflow/tfjs-converter", "registerOp")
-  @js.native
-  def registerOp(name: String, opFunc: OpExecutor): Unit = js.native
+  @scala.inline
+  def registerOp(name: String, opFunc: OpExecutor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOp")(name.asInstanceOf[js.Any], opFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@tensorflow/tfjs-converter", "version_converter")
   @js.native

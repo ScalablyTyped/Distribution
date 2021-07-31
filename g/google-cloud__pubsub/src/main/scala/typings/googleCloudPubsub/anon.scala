@@ -4,7 +4,6 @@ import typings.googleCloudPubsub.pubsubMod.RequestCallback
 import typings.googleCloudPubsub.pubsubMod.RequestConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -15,14 +14,13 @@ object anon {
     def apply[T, R](config: RequestConfig, callback: RequestCallback[T, R]): Unit = js.native
   }
   
-  @js.native
   trait MaxDelayMillis extends StObject {
     
-    var maxDelayMillis: Double = js.native
+    var maxDelayMillis: Double
     
-    var maxOutstandingBytes: Double = js.native
+    var maxOutstandingBytes: Double
     
-    var maxOutstandingMessages: Double = js.native
+    var maxOutstandingMessages: Double
   }
   object MaxDelayMillis {
     
@@ -46,16 +44,15 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxExtensionMinutes extends StObject {
     
-    var maxExtensionMinutes: Double = js.native
+    var maxExtensionMinutes: Double
     
-    var maxOutstandingBytes: Double = js.native
+    var maxOutstandingBytes: Double
     
-    var maxOutstandingMessages: Double = js.native
+    var maxOutstandingMessages: Double
     
-    var maxStreams: Double = js.native
+    var maxStreams: Double
   }
   object MaxExtensionMinutes {
     

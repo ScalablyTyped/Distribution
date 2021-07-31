@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignMod {
@@ -39,13 +38,11 @@ object alignMod {
       @scala.inline
       def monitorWindowResize_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("monitorWindowResize")(x.asInstanceOf[js.Any])
       
-      @JSImport("rmc-align/lib/Align", "default.defaultProps.onAlign")
-      @js.native
-      def onAlign(): Unit = js.native
+      @scala.inline
+      def onAlign(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAlign")().asInstanceOf[Unit]
       
-      @JSImport("rmc-align/lib/Align", "default.defaultProps.target")
-      @js.native
-      def target(): Window = js.native
+      @scala.inline
+      def target(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("target")().asInstanceOf[Window]
     }
   }
   
@@ -73,20 +70,19 @@ object alignMod {
     def stopMonitorWindowResize(): Unit = js.native
   }
   
-  @js.native
   trait IAlignProps extends StObject {
     
-    var childrenProps: js.UndefOr[js.Object] = js.native
+    var childrenProps: js.UndefOr[js.Object] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var monitorBufferTime: js.UndefOr[Double] = js.native
+    var monitorBufferTime: js.UndefOr[Double] = js.undefined
     
-    var monitorWindowResize: js.UndefOr[Boolean] = js.native
+    var monitorWindowResize: js.UndefOr[Boolean] = js.undefined
     
-    var onAlign: js.UndefOr[js.Function2[/* source */ js.Any, /* align */ js.Any, Unit]] = js.native
+    var onAlign: js.UndefOr[js.Function2[/* source */ js.Any, /* align */ js.Any, Unit]] = js.undefined
     
-    def target(): Unit = js.native
+    def target(): Unit
   }
   object IAlignProps {
     

@@ -2,19 +2,19 @@ package typings.localforage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalForageOptions extends LocalForageDbInstanceOptions {
+trait LocalForageOptions
+  extends StObject
+     with LocalForageDbInstanceOptions {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var driver: js.UndefOr[String | js.Array[String]] = js.native
+  var driver: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object LocalForageOptions {
   

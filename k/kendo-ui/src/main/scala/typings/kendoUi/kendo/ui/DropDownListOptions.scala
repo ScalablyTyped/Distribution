@@ -3,87 +3,85 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDownListOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean | DropDownListAnimation] = js.native
+  var animation: js.UndefOr[Boolean | DropDownListAnimation] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var cascade: js.UndefOr[js.Function1[/* e */ DropDownListCascadeEvent, Unit]] = js.native
+  var cascade: js.UndefOr[js.Function1[/* e */ DropDownListCascadeEvent, Unit]] = js.undefined
   
-  var cascadeFrom: js.UndefOr[String] = js.native
+  var cascadeFrom: js.UndefOr[String] = js.undefined
   
-  var cascadeFromField: js.UndefOr[String] = js.native
+  var cascadeFromField: js.UndefOr[String] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ DropDownListChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ DropDownListChangeEvent, Unit]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ DropDownListCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ DropDownListCloseEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ DropDownListDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ DropDownListDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var dataTextField: js.UndefOr[String] = js.native
+  var dataTextField: js.UndefOr[String] = js.undefined
   
-  var dataValueField: js.UndefOr[String] = js.native
+  var dataValueField: js.UndefOr[String] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var enforceMinLength: js.UndefOr[Boolean] = js.native
+  var enforceMinLength: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var filtering: js.UndefOr[js.Function1[/* e */ DropDownListFilteringEvent, Unit]] = js.native
+  var filtering: js.UndefOr[js.Function1[/* e */ DropDownListFilteringEvent, Unit]] = js.undefined
   
-  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.native
+  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var groupTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.native
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ DropDownListOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ DropDownListOpenEvent, Unit]] = js.undefined
   
-  var optionLabel: js.UndefOr[String | js.Any] = js.native
+  var optionLabel: js.UndefOr[String | js.Any] = js.undefined
   
-  var optionLabelTemplate: js.UndefOr[String | js.Function] = js.native
+  var optionLabelTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var popup: js.UndefOr[DropDownListPopup] = js.native
+  var popup: js.UndefOr[DropDownListPopup] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ DropDownListSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ DropDownListSelectEvent, Unit]] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var valuePrimitive: js.UndefOr[Boolean] = js.native
+  var valuePrimitive: js.UndefOr[Boolean] = js.undefined
   
-  var valueTemplate: js.UndefOr[String | js.Function] = js.native
+  var valueTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var virtual: js.UndefOr[Boolean | DropDownListVirtual] = js.native
+  var virtual: js.UndefOr[Boolean | DropDownListVirtual] = js.undefined
 }
 object DropDownListOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortIncompleteMultipartUpload extends StObject {
   
   /**
     * Specifies the number of days after which Amazon S3 aborts an incomplete multipart upload to the Outposts bucket.
     */
-  var DaysAfterInitiation: js.UndefOr[typings.awsSdk.s3controlMod.DaysAfterInitiation] = js.native
+  var DaysAfterInitiation: js.UndefOr[typings.awsSdk.s3controlMod.DaysAfterInitiation] = js.undefined
 }
 object AbortIncompleteMultipartUpload {
   

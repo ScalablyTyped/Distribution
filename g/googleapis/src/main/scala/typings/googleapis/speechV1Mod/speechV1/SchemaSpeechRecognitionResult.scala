@@ -2,13 +2,11 @@ package typings.googleapis.speechV1Mod.speechV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A speech recognition result corresponding to a portion of the audio.
   */
-@js.native
 trait SchemaSpeechRecognitionResult extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSpeechRecognitionResult extends StObject {
     * in terms of accuracy, with the top (first) alternative being the most
     * probable, as ranked by the recognizer.
     */
-  var alternatives: js.UndefOr[js.Array[SchemaSpeechRecognitionAlternative]] = js.native
+  var alternatives: js.UndefOr[js.Array[SchemaSpeechRecognitionAlternative]] = js.undefined
   
   /**
     * For multi-channel audio, this is the channel number corresponding to the
@@ -25,7 +23,7 @@ trait SchemaSpeechRecognitionResult extends StObject {
     * audio_channel_count = N, its output values can range from &#39;1&#39; to
     * &#39;N&#39;.
     */
-  var channelTag: js.UndefOr[Double] = js.native
+  var channelTag: js.UndefOr[Double] = js.undefined
 }
 object SchemaSpeechRecognitionResult {
   

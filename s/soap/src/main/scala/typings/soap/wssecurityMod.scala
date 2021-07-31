@@ -3,14 +3,15 @@ package typings.soap
 import typings.soap.typesMod.ISecurity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wssecurityMod {
   
   @JSImport("soap/lib/security/WSSecurity", "WSSecurity")
   @js.native
-  class WSSecurity protected () extends ISecurity {
+  class WSSecurity protected ()
+    extends StObject
+       with ISecurity {
     def this(username: String, password: String) = this()
     def this(username: String, password: String, options: String) = this()
     def this(username: String, password: String, options: IWSSecurityOptions) = this()
@@ -35,20 +36,19 @@ object wssecurityMod {
     def toXML_MWSSecurity(): String = js.native
   }
   
-  @js.native
   trait IWSSecurityOptions extends StObject {
     
-    var actor: js.UndefOr[String] = js.native
+    var actor: js.UndefOr[String] = js.undefined
     
-    var hasNonce: js.UndefOr[Boolean] = js.native
+    var hasNonce: js.UndefOr[Boolean] = js.undefined
     
-    var hasTimeStamp: js.UndefOr[Boolean] = js.native
+    var hasTimeStamp: js.UndefOr[Boolean] = js.undefined
     
-    var hasTokenCreated: js.UndefOr[Boolean] = js.native
+    var hasTokenCreated: js.UndefOr[Boolean] = js.undefined
     
-    var mustUnderstand: js.UndefOr[js.Any] = js.native
+    var mustUnderstand: js.UndefOr[js.Any] = js.undefined
     
-    var passwordType: js.UndefOr[String] = js.native
+    var passwordType: js.UndefOr[String] = js.undefined
   }
   object IWSSecurityOptions {
     

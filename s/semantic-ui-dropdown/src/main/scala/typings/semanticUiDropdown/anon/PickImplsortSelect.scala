@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'sortSelect'> */
-@js.native
 trait PickImplsortSelect extends StObject {
   
-  var sortSelect: Boolean = js.native
+  var sortSelect: Boolean
 }
 object PickImplsortSelect {
   

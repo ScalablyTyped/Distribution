@@ -4,7 +4,6 @@ import typings.paypalPayoutsSdk.mod.RecipientType
 import typings.paypalPayoutsSdk.mod.RecipientWallet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paypalPayoutsSdkStrings {
@@ -40,7 +39,9 @@ object paypalPayoutsSdkStrings {
   def DENIED: DENIED = "DENIED".asInstanceOf[DENIED]
   
   @js.native
-  sealed trait EMAIL extends RecipientType
+  sealed trait EMAIL
+    extends StObject
+       with RecipientType
   @scala.inline
   def EMAIL: EMAIL = "EMAIL".asInstanceOf[EMAIL]
   
@@ -75,12 +76,16 @@ object paypalPayoutsSdkStrings {
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait PAYPAL extends RecipientWallet
+  sealed trait PAYPAL
+    extends StObject
+       with RecipientWallet
   @scala.inline
   def PAYPAL: PAYPAL = "PAYPAL".asInstanceOf[PAYPAL]
   
   @js.native
-  sealed trait PAYPAL_ID extends RecipientType
+  sealed trait PAYPAL_ID
+    extends StObject
+       with RecipientType
   @scala.inline
   def PAYPAL_ID: PAYPAL_ID = "PAYPAL_ID".asInstanceOf[PAYPAL_ID]
   
@@ -90,7 +95,9 @@ object paypalPayoutsSdkStrings {
   def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
   
   @js.native
-  sealed trait PHONE extends RecipientType
+  sealed trait PHONE
+    extends StObject
+       with RecipientType
   @scala.inline
   def PHONE: PHONE = "PHONE".asInstanceOf[PHONE]
   
@@ -135,7 +142,9 @@ object paypalPayoutsSdkStrings {
   def UNCLAIMED: UNCLAIMED = "UNCLAIMED".asInstanceOf[UNCLAIMED]
   
   @js.native
-  sealed trait VENMO extends RecipientWallet
+  sealed trait VENMO
+    extends StObject
+       with RecipientWallet
   @scala.inline
   def VENMO: VENMO = "VENMO".asInstanceOf[VENMO]
 }

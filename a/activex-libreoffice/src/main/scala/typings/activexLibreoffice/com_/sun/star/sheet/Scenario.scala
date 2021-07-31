@@ -11,40 +11,39 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a scenario in a spreadsheet document. */
-@js.native
 trait Scenario
-  extends XScenario
+  extends StObject
+     with XScenario
      with XScenarioEnhanced
      with XPropertySet
      with XNamed {
   
   /** specifies the color of the border of the scenario. */
-  var BorderColor: Double = js.native
+  var BorderColor: Double
   
   /** specifies if the data should be copied back into the scenario. */
-  var CopyBack: Boolean = js.native
+  var CopyBack: Boolean
   
   /** specifies if the formulas are copied or only the results. */
-  var CopyFormulas: Boolean = js.native
+  var CopyFormulas: Boolean
   
   /** specifies if the styles are copied. */
-  var CopyStyles: Boolean = js.native
+  var CopyStyles: Boolean
   
   /** specifies if the scenario is active. */
-  var IsActive: Boolean = js.native
+  var IsActive: Boolean
   
   /** specifies if the scenario prints a border. */
-  var PrintBorder: Boolean = js.native
+  var PrintBorder: Boolean
   
   /** specifies if the scenario is protected. */
-  var Protected: Boolean = js.native
+  var Protected: Boolean
   
   /** specifies if the scenario shows a border. */
-  var ShowBorder: Boolean = js.native
+  var ShowBorder: Boolean
 }
 object Scenario {
   

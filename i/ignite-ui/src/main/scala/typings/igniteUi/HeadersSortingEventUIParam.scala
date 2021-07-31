@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersSortingEventUIParam extends StObject {
   
   /**
     * Gets an array of the level names and sort directions that will be used.
     */
-  var levelSortDirections: js.UndefOr[js.Array[_]] = js.native
+  var levelSortDirections: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to the pivot grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object HeadersSortingEventUIParam {
   
@@ -30,7 +28,7 @@ object HeadersSortingEventUIParam {
   implicit class HeadersSortingEventUIParamMutableBuilder[Self <: HeadersSortingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setLevelSortDirections(value: js.Array[_]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
+    def setLevelSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLevelSortDirectionsUndefined: Self = StObject.set(x, "levelSortDirections", js.undefined)

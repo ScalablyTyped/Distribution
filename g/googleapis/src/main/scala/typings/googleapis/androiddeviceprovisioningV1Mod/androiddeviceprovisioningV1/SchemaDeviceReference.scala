@@ -2,7 +2,6 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for the caller. To learn more about device identifiers, read
   * [Identifiers](/zero-touch/guides/identifiers).
   */
-@js.native
 trait SchemaDeviceReference extends StObject {
   
   /**
     * The ID of the device.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The hardware IDs of the device.
     */
-  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.undefined
 }
 object SchemaDeviceReference {
   

@@ -2,7 +2,6 @@ package typings.angularCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "ThrowStmt")
@@ -16,12 +15,12 @@ class ThrowStmt protected ()
   ) = this()
   def this(
     error: typings.angularCompiler.outputAstMod.Expression,
-    sourceSpan: js.UndefOr[scala.Nothing],
+    sourceSpan: Null,
     leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
   ) = this()
   def this(
     error: typings.angularCompiler.outputAstMod.Expression,
-    sourceSpan: Null,
+    sourceSpan: Unit,
     leadingComments: js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]
   ) = this()
   def this(

@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,17 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object proxy {
   
-  @js.native
   trait ErrorDetails extends StObject {
     
     /** Additional details about the error such as a JavaScript runtime error. */
-    var details: String = js.native
+    var details: String
     
     /** The error description. */
-    var error: String = js.native
+    var error: String
     
     /** If true, the error was fatal and the network transaction was aborted. Otherwise, a direct connection is used instead. */
-    var fatal: Boolean = js.native
+    var fatal: Boolean
   }
   object ErrorDetails {
     
@@ -50,17 +48,16 @@ object proxy {
     }
   }
   
-  @js.native
   trait PacScript extends StObject {
     
     /** Optional. A PAC script. */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Optional. If true, an invalid PAC script will prevent the network stack from falling back to direct connections. Defaults to false. */
-    var mandatory: js.UndefOr[Boolean] = js.native
+    var mandatory: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. URL of the PAC file to be used. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object PacScript {
     
@@ -93,7 +90,6 @@ object proxy {
     }
   }
   
-  @js.native
   trait ProxyConfig extends StObject {
     
     /**
@@ -103,13 +99,13 @@ object proxy {
       * 'fixed_servers' = Manually specify proxy servers
       * 'system' = Use system proxy settings
       */
-    var mode: String = js.native
+    var mode: String
     
     /** Optional. The proxy auto-config (PAC) script for this configuration. Use this for 'pac_script' mode. */
-    var pacScript: js.UndefOr[PacScript] = js.native
+    var pacScript: js.UndefOr[PacScript] = js.undefined
     
     /** Optional. The proxy rules describing this configuration. Use this for 'fixed_servers' mode. */
-    var rules: js.UndefOr[ProxyRules] = js.native
+    var rules: js.UndefOr[ProxyRules] = js.undefined
   }
   object ProxyConfig {
     
@@ -141,26 +137,25 @@ object proxy {
   
   type ProxyErrorEvent = Event[js.Function1[/* details */ ErrorDetails, Unit]]
   
-  @js.native
   trait ProxyRules extends StObject {
     
     /** Optional. List of servers to connect to without a proxy server. */
-    var bypassList: js.UndefOr[js.Array[String]] = js.native
+    var bypassList: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Optional. The proxy server to be used for everthing else or if any of the specific proxyFor... is not specified. */
-    var fallbackProxy: js.UndefOr[ProxyServer] = js.native
+    var fallbackProxy: js.UndefOr[ProxyServer] = js.undefined
     
     /** Optional. The proxy server to be used for FTP requests. */
-    var proxyForFtp: js.UndefOr[ProxyServer] = js.native
+    var proxyForFtp: js.UndefOr[ProxyServer] = js.undefined
     
     /** Optional. The proxy server to be used for HTTP requests. */
-    var proxyForHttp: js.UndefOr[ProxyServer] = js.native
+    var proxyForHttp: js.UndefOr[ProxyServer] = js.undefined
     
     /** Optional. The proxy server to be used for HTTPS requests. */
-    var proxyForHttps: js.UndefOr[ProxyServer] = js.native
+    var proxyForHttps: js.UndefOr[ProxyServer] = js.undefined
     
     /** Optional. The proxy server to be used for all per-URL requests (that is http, https, and ftp). */
-    var singleProxy: js.UndefOr[ProxyServer] = js.native
+    var singleProxy: js.UndefOr[ProxyServer] = js.undefined
   }
   object ProxyRules {
     
@@ -214,17 +209,16 @@ object proxy {
     }
   }
   
-  @js.native
   trait ProxyServer extends StObject {
     
     /** The URI of the proxy server. This must be an ASCII hostname (in Punycode format). IDNA is not supported, yet. */
-    var host: String = js.native
+    var host: String
     
     /** Optional. The port of the proxy server. Defaults to a port that depends on the scheme. */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** Optional. The scheme (protocol) of the proxy server itself. Defaults to 'http'. */
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
   }
   object ProxyServer {
     

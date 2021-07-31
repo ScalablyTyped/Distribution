@@ -11,7 +11,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioMod extends Shortcut {
@@ -22,18 +21,20 @@ object radioMod extends Shortcut {
   
   @JSImport("antd/lib/radio", "Button")
   @js.native
-  val Button: ForwardRefExoticComponent[RadioButtonProps with RefAttributes[_]] = js.native
+  val Button: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[js.Any]] = js.native
   
   @JSImport("antd/lib/radio", "Group")
   @js.native
-  val Group: MemoExoticComponent[ForwardRefExoticComponent[RadioGroupProps with RefAttributes[HTMLDivElement]]] = js.native
+  val Group: MemoExoticComponent[ForwardRefExoticComponent[RadioGroupProps & RefAttributes[HTMLDivElement]]] = js.native
   
   @js.native
-  trait CompoundedComponent extends ForwardRefExoticComponent[RadioProps with RefAttributes[HTMLElement]] {
+  trait CompoundedComponent
+    extends StObject
+       with ForwardRefExoticComponent[RadioProps & RefAttributes[HTMLElement]] {
     
-    var Button: ForwardRefExoticComponent[RadioButtonProps with RefAttributes[_]] = js.native
+    var Button: ForwardRefExoticComponent[RadioButtonProps & RefAttributes[js.Any]] = js.native
     
-    var Group: MemoExoticComponent[ForwardRefExoticComponent[RadioGroupProps with RefAttributes[HTMLDivElement]]] = js.native
+    var Group: MemoExoticComponent[ForwardRefExoticComponent[RadioGroupProps & RefAttributes[HTMLDivElement]]] = js.native
   }
   
   type _To = CompoundedComponent

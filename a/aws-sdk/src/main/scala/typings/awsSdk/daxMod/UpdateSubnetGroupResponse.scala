@@ -2,16 +2,14 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSubnetGroupResponse extends StObject {
   
   /**
     * The subnet group that has been modified.
     */
-  var SubnetGroup: js.UndefOr[typings.awsSdk.daxMod.SubnetGroup] = js.native
+  var SubnetGroup: js.UndefOr[typings.awsSdk.daxMod.SubnetGroup] = js.undefined
 }
 object UpdateSubnetGroupResponse {
   

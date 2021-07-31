@@ -2,30 +2,28 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * properties of the current business app in Customer Engagement.
   */
-@js.native
 trait AppProperties extends StObject {
   
-  var appId: js.UndefOr[String] = js.native
+  var appId: js.UndefOr[String] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var uniqueName: js.UndefOr[String] = js.native
+  var uniqueName: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var webResourceId: js.UndefOr[String] = js.native
+  var webResourceId: js.UndefOr[String] = js.undefined
   
-  var webResourceName: js.UndefOr[String] = js.native
+  var webResourceName: js.UndefOr[String] = js.undefined
   
-  var welcomePageId: js.UndefOr[String] = js.native
+  var welcomePageId: js.UndefOr[String] = js.undefined
   
-  var welcomePageName: js.UndefOr[String] = js.native
+  var welcomePageName: js.UndefOr[String] = js.undefined
 }
 object AppProperties {
   

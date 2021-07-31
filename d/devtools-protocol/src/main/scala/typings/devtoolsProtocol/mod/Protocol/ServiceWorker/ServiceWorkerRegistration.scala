@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceWorkerRegistration extends StObject {
   
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
-  var registrationId: RegistrationID = js.native
+  var registrationId: RegistrationID
   
-  var scopeURL: String = js.native
+  var scopeURL: String
 }
 object ServiceWorkerRegistration {
   

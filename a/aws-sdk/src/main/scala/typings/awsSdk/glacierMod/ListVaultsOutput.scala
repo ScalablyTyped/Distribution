@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVaultsOutput extends StObject {
   
   /**
     * The vault ARN at which to continue pagination of the results. You use the marker in another List Vaults request to obtain more vaults in the list.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * List of vaults.
     */
-  var VaultList: js.UndefOr[typings.awsSdk.glacierMod.VaultList] = js.native
+  var VaultList: js.UndefOr[typings.awsSdk.glacierMod.VaultList] = js.undefined
 }
 object ListVaultsOutput {
   

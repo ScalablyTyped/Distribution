@@ -2,29 +2,27 @@ package typings.wechatMiniprogram.WechatMiniprogram.Component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerEventOption extends StObject {
   
   /** 事件是否冒泡
     *
     * 默认值： `false`
     */
-  var bubbles: js.UndefOr[Boolean] = js.native
+  var bubbles: js.UndefOr[Boolean] = js.undefined
   
   /** 事件是否拥有捕获阶段
     *
     * 默认值： `false`
     */
-  var capturePhase: js.UndefOr[Boolean] = js.native
+  var capturePhase: js.UndefOr[Boolean] = js.undefined
   
   /** 事件是否可以穿越组件边界，为false时，事件将只能在引用组件的节点树上触发，不进入其他任何组件内部
     *
     * 默认值： `false`
     */
-  var composed: js.UndefOr[Boolean] = js.native
+  var composed: js.UndefOr[Boolean] = js.undefined
 }
 object TriggerEventOption {
   

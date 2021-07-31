@@ -4,38 +4,38 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XNamedNodeMap extends XInterface {
+trait XNamedNodeMap
+  extends StObject
+     with XInterface {
   
   /** The number of nodes in this map. */
-  val Length: Double = js.native
+  val Length: Double
   
   /** The number of nodes in this map. */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /** Retrieves a node specified by local name. */
-  def getNamedItem(name: String): XNode = js.native
+  def getNamedItem(name: String): XNode
   
   /** Retrieves a node specified by local name and namespace URI. */
-  def getNamedItemNS(namespaceURI: String, localName: String): XNode = js.native
+  def getNamedItemNS(namespaceURI: String, localName: String): XNode
   
   /** Returns a node specified by index. */
-  def item(index: Double): XNode = js.native
+  def item(index: Double): XNode
   
   /**
     * Removes a node specified by name. Throws: {@link DOMException} - NOT_FOUND_ERR: Raised if there is no node named name in this map.
     * NO_MODIFICATION_ALLOWED_ERR: Raised if this map is readonly.
     */
-  def removeNamedItem(name: String): XNode = js.native
+  def removeNamedItem(name: String): XNode
   
   /**
     * Removes a node specified by local name and namespace URI. Throws: {@link DOMException} - NOT_FOUND_ERR: Raised if there is no node with the specified
     * namespaceURI and localName in this map. NO_MODIFICATION_ALLOWED_ERR: Raised if this map is readonly.
     */
-  def removeNamedItemNS(namespaceURI: String, localName: String): XNode = js.native
+  def removeNamedItemNS(namespaceURI: String, localName: String): XNode
   
   /**
     * Adds a node using its nodeName attribute. Throws: {@link DOMException} - WRONG_DOCUMENT_ERR: Raised if arg was created from a different document than
@@ -44,7 +44,7 @@ trait XNamedNodeMap extends XInterface {
     * Raised if an attempt is made to add a node doesn't belong in this NamedNodeMap. Examples would include trying to insert something other than an Attr
     * node into an Element's map of attributes, or a non-Entity node into the DocumentType's map of Entities.
     */
-  def setNamedItem(arg: XNode): XNode = js.native
+  def setNamedItem(arg: XNode): XNode
   
   /**
     * Adds a node using its namespaceURI and localName. Throws: {@link DOMException} - WRONG_DOCUMENT_ERR: Raised if arg was created from a different
@@ -54,7 +54,7 @@ trait XNamedNodeMap extends XInterface {
     * something other than an Attr node into an Element's map of attributes, or a non-Entity node into the DocumentType's map of Entities.
     * NOT_SUPPORTED_ERR: Always thrown if the current document does not support the "XML" feature, since namespaces were defined by XML.
     */
-  def setNamedItemNS(arg: XNode): XNode = js.native
+  def setNamedItemNS(arg: XNode): XNode
 }
 object XNamedNodeMap {
   

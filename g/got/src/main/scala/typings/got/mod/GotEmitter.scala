@@ -11,7 +11,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.urlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,11 +31,7 @@ trait GotEmitter extends StObject {
   @JSName("addListener")
   def addListener_redirect(
     event: redirect,
-    listener: js.Function2[
-      /* res */ IncomingMessage, 
-      /* nextOptions */ (GotOptions[String | Null]) with Url, 
-      Unit
-    ]
+    listener: js.Function2[/* res */ IncomingMessage, /* nextOptions */ (GotOptions[String | Null]) & Url, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_request(event: request, listener: js.Function1[/* req */ ClientRequest, Unit]): this.type = js.native
@@ -60,11 +55,7 @@ trait GotEmitter extends StObject {
   @JSName("on")
   def on_redirect(
     event: redirect,
-    listener: js.Function2[
-      /* res */ IncomingMessage, 
-      /* nextOptions */ (GotOptions[String | Null]) with Url, 
-      Unit
-    ]
+    listener: js.Function2[/* res */ IncomingMessage, /* nextOptions */ (GotOptions[String | Null]) & Url, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_request(event: request, listener: js.Function1[/* req */ ClientRequest, Unit]): this.type = js.native
@@ -88,11 +79,7 @@ trait GotEmitter extends StObject {
   @JSName("once")
   def once_redirect(
     event: redirect,
-    listener: js.Function2[
-      /* res */ IncomingMessage, 
-      /* nextOptions */ (GotOptions[String | Null]) with Url, 
-      Unit
-    ]
+    listener: js.Function2[/* res */ IncomingMessage, /* nextOptions */ (GotOptions[String | Null]) & Url, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_request(event: request, listener: js.Function1[/* req */ ClientRequest, Unit]): this.type = js.native
@@ -116,11 +103,7 @@ trait GotEmitter extends StObject {
   @JSName("prependListener")
   def prependListener_redirect(
     event: redirect,
-    listener: js.Function2[
-      /* res */ IncomingMessage, 
-      /* nextOptions */ (GotOptions[String | Null]) with Url, 
-      Unit
-    ]
+    listener: js.Function2[/* res */ IncomingMessage, /* nextOptions */ (GotOptions[String | Null]) & Url, Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_request(event: request, listener: js.Function1[/* req */ ClientRequest, Unit]): this.type = js.native
@@ -144,11 +127,7 @@ trait GotEmitter extends StObject {
   @JSName("prependOnceListener")
   def prependOnceListener_redirect(
     event: redirect,
-    listener: js.Function2[
-      /* res */ IncomingMessage, 
-      /* nextOptions */ (GotOptions[String | Null]) with Url, 
-      Unit
-    ]
+    listener: js.Function2[/* res */ IncomingMessage, /* nextOptions */ (GotOptions[String | Null]) & Url, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_request(event: request, listener: js.Function1[/* req */ ClientRequest, Unit]): this.type = js.native
@@ -172,11 +151,7 @@ trait GotEmitter extends StObject {
   @JSName("removeListener")
   def removeListener_redirect(
     event: redirect,
-    listener: js.Function2[
-      /* res */ IncomingMessage, 
-      /* nextOptions */ (GotOptions[String | Null]) with Url, 
-      Unit
-    ]
+    listener: js.Function2[/* res */ IncomingMessage, /* nextOptions */ (GotOptions[String | Null]) & Url, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_request(event: request, listener: js.Function1[/* req */ ClientRequest, Unit]): this.type = js.native

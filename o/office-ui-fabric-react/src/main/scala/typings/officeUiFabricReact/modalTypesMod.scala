@@ -19,44 +19,42 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalTypesMod {
   
-  @js.native
   trait IDragOptions extends StObject {
     
     /**
       * The text to use for the modal close menu item
       */
-    var closeMenuItemText: String = js.native
+    var closeMenuItemText: String
     
     /**
       * Optional selector for the element where the drag can be initiated. If not supplied when
       * isDraggable is true dragging can be initated by the whole contents of the modal
       */
-    var dragHandleSelector: js.UndefOr[String] = js.native
+    var dragHandleSelector: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the draggable content should be prevented from going off-screen
       */
-    var keepInBounds: js.UndefOr[Boolean] = js.native
+    var keepInBounds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * IconProps for the icon used to indicate that the dialog is in keyboard move mode
       */
-    var keyboardMoveIconProps: js.UndefOr[IIconProps] = js.native
+    var keyboardMoveIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * The Draggable Control Menu so that the draggable zone can be moved via the keyboard
       */
-    var menu: FunctionComponent[IContextualMenuProps] = js.native
+    var menu: FunctionComponent[IContextualMenuProps]
     
     /**
       * The text to use for the modal move menu item
       */
-    var moveMenuItemText: String = js.native
+    var moveMenuItemText: String
   }
   object IDragOptions {
     
@@ -98,13 +96,12 @@ object modalTypesMod {
     }
   }
   
-  @js.native
   trait IModal extends StObject {
     
     /**
       * Sets focus on the first focusable, or configured, child in focus trap zone
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object IModal {
     
@@ -122,9 +119,9 @@ object modalTypesMod {
     }
   }
   
-  @js.native
   trait IModalProps
-    extends ClassAttributes[ModalBase]
+    extends StObject
+       with ClassAttributes[ModalBase]
        with IWithResponsiveModeState
        with IAccessiblePopupProps {
     
@@ -132,119 +129,119 @@ object modalTypesMod {
       * Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.
       * @defaultvalue false
       */
-    var allowTouchBodyScroll: js.UndefOr[Boolean] = js.native
+    var allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional class name to be added to the root class
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IDialog interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IModal]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IModal]] = js.undefined
     
     /**
       * Optional override for container class
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The options to make the modal draggable
       */
-    var dragOptions: js.UndefOr[IDragOptions] = js.native
+    var dragOptions: js.UndefOr[IDragOptions] = js.undefined
     
     /**
       * Puts aria-hidden=true on all non-ancestors of the current modal, for screen readers.
       * This is an experimental feature that will be graduated to default behavior after testing.
       * This flag will be removed with the next major release.
       */
-    var enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.native
+    var enableAriaHiddenSiblings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
       * @defaultvalue false
       */
-    var isBlocking: js.UndefOr[Boolean] = js.native
+    var isBlocking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the overlay is dark themed.
       * @defaultvalue true
       */
-    var isDarkOverlay: js.UndefOr[Boolean] = js.native
+    var isDarkOverlay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the dialog should be modeless (e.g. not dismiss when focusing/clicking outside of the dialog).
       * if true: isBlocking is ignored, there will be no overlay (isDarkOverlay is ignored),
       * isClickableOutsideFocusTrap is true, and forceFocusInsideTrap is false
       */
-    var isModeless: js.UndefOr[Boolean] = js.native
+    var isModeless: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the dialog is displayed.
       * @defaultvalue false
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines an optional set of props to be passed through to Layer
       */
-    var layerProps: js.UndefOr[ILayerProps] = js.native
+    var layerProps: js.UndefOr[ILayerProps] = js.undefined
     
     /**
       * A callback function for when the Modal is dismissed light dismiss, before the animation completes.
       */
     var onDismiss: js.UndefOr[
-        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], _]
-      ] = js.native
+        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], js.Any]
+      ] = js.undefined
     
     /**
       * A callback function which is called after the Modal is dismissed and the animation is complete.
       */
-    var onDismissed: js.UndefOr[js.Function0[_]] = js.native
+    var onDismissed: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * A callback function for when the Modal content is mounted on the overlay layer
       * @deprecated Use layerProps.onLayerDidMount instead
       */
-    var onLayerDidMount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayerDidMount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Defines an optional set of props to be passed through to Overlay
       */
-    var overlay: js.UndefOr[IOverlayProps] = js.native
+    var overlay: js.UndefOr[IOverlayProps] = js.undefined
     
     /**
       * Optional override for scrollable content class
       */
-    var scrollableContentClassName: js.UndefOr[String] = js.native
+    var scrollableContentClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IModalStyleProps, IModalStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IModalStyleProps, IModalStyles]] = js.undefined
     
     /**
       * ARIA id for the subtitle of the Modal, if any
       */
-    var subtitleAriaId: js.UndefOr[String] = js.native
+    var subtitleAriaId: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * ARIA id for the title of the Modal, if any
       */
-    var titleAriaId: js.UndefOr[String] = js.native
+    var titleAriaId: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the modal should have top offset fixed once opened and expand from the bottom only
       * when the content changes dynamically.
       */
-    var topOffsetFixed: js.UndefOr[Boolean] = js.native
+    var topOffsetFixed: js.UndefOr[Boolean] = js.undefined
   }
   object IModalProps {
     
@@ -327,13 +324,13 @@ object modalTypesMod {
       def setLayerPropsUndefined: Self = StObject.set(x, "layerProps", js.undefined)
       
       @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => _): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
       @scala.inline
-      def setOnDismissed(value: () => _): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
+      def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
@@ -392,38 +389,37 @@ object modalTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Modal/Modal.types.IModalProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Modal/Modal.types.IModalProps, 'className' | 'containerClassName' | 'scrollableContentClassName' | 'topOffsetFixed' | 'isModeless'> & {  isOpen :boolean | undefined,   isVisible :boolean | undefined,   hasBeenOpened :boolean | undefined,   modalRectangleTop :number | undefined,   layerClassName :string | undefined,   isDefaultDragHandle :boolean | undefined} */
-  @js.native
   trait IModalStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /** Modal has been opened state. */
-    var hasBeenOpened: js.UndefOr[Boolean] = js.native
+    var hasBeenOpened: js.UndefOr[Boolean] = js.undefined
     
     /** Whether this modal is draggable and using the default handler */
-    var isDefaultDragHandle: js.UndefOr[Boolean] = js.native
+    var isDefaultDragHandle: js.UndefOr[Boolean] = js.undefined
     
-    var isModeless: js.UndefOr[Boolean] = js.native
+    var isModeless: js.UndefOr[Boolean] = js.undefined
     
     /** Modal open state. */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Modal visible state. */
-    var isVisible: js.UndefOr[Boolean] = js.native
+    var isVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Classname for layer element */
-    var layerClassName: js.UndefOr[String] = js.native
+    var layerClassName: js.UndefOr[String] = js.undefined
     
     /** Positioning of modal on first render */
-    var modalRectangleTop: js.UndefOr[Double] = js.native
+    var modalRectangleTop: js.UndefOr[Double] = js.undefined
     
-    var scrollableContentClassName: js.UndefOr[String] = js.native
+    var scrollableContentClassName: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
-    var topOffsetFixed: js.UndefOr[Boolean] = js.native
+    var topOffsetFixed: js.UndefOr[Boolean] = js.undefined
   }
   object IModalStyleProps {
     
@@ -507,20 +503,19 @@ object modalTypesMod {
     }
   }
   
-  @js.native
   trait IModalStyles extends StObject {
     
-    var keyboardMoveIcon: IStyle = js.native
+    var keyboardMoveIcon: IStyle
     
-    var keyboardMoveIconContainer: IStyle = js.native
+    var keyboardMoveIconContainer: IStyle
     
-    var layer: IStyle = js.native
+    var layer: IStyle
     
-    var main: IStyle = js.native
+    var main: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var scrollableContent: IStyle = js.native
+    var scrollableContent: IStyle
   }
   object IModalStyles {
     

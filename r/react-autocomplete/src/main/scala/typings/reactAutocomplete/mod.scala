@@ -11,7 +11,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -84,7 +83,7 @@ object mod {
     /**
       * The items to display in the dropdown menu
       */
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any] = js.native
     
     /**
       * Styles that are applied to the dropdown menu in the default `renderMenu`
@@ -204,33 +203,32 @@ object mod {
     var wrapperStyle: js.UndefOr[CSSProperties] = js.native
   }
   
-  @js.native
   trait State extends StObject {
     
     /**
       * Index of the highlighted item, `null` if none currently is.
       */
-    var highlightedIndex: Double | Null = js.native
+    var highlightedIndex: Double | Null
     
     /**
       * True when the menu is visible. Provided to `onMenuVisibilityChange`.
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * These three `menu___` values are used in CSS to layout the menu.
       */
-    var menuLeft: js.UndefOr[Double] = js.native
+    var menuLeft: js.UndefOr[Double] = js.undefined
     
-    var menuTop: js.UndefOr[Double] = js.native
+    var menuTop: js.UndefOr[Double] = js.undefined
     
-    var menuWidth: js.UndefOr[Double] = js.native
+    var menuWidth: js.UndefOr[Double] = js.undefined
   }
   object State {
     
     @scala.inline
     def apply(isOpen: Boolean): State = {
-      val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], highlightedIndex = null)
       __obj.asInstanceOf[State]
     }
     

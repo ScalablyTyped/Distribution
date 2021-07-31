@@ -2,17 +2,15 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChangesObject[T] extends StObject {
   
-  var currentValue: T = js.native
+  var currentValue: T
   
-  def isFirstChange(): Boolean = js.native
+  def isFirstChange(): Boolean
   
-  var previousValue: T = js.native
+  var previousValue: T
 }
 object IChangesObject {
   
@@ -23,7 +21,7 @@ object IChangesObject {
   }
   
   @scala.inline
-  implicit class IChangesObjectMutableBuilder[Self <: IChangesObject[_], T] (val x: Self with IChangesObject[T]) extends AnyVal {
+  implicit class IChangesObjectMutableBuilder[Self <: IChangesObject[?], T] (val x: Self & IChangesObject[T]) extends AnyVal {
     
     @scala.inline
     def setCurrentValue(value: T): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])

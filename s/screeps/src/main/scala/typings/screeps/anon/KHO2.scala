@@ -2,17 +2,15 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KHO2 extends StObject {
   
-  var KHO2: RangedMassAttack = js.native
+  var KHO2: RangedMassAttack
   
-  var KO: RangedAttack = js.native
+  var KO: RangedAttack
   
-  var XKHO2: RangedAttackRangedMassAttack = js.native
+  var XKHO2: RangedAttackRangedMassAttack
 }
 object KHO2 {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAssuredworkloads.gapi.client.assuredworklo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings extends StObject {
   
   /** Required. Input only. Immutable. Settings used to create a CMEK crypto key. */
-  var kmsSettings: js.UndefOr[GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings] = js.native
+  var kmsSettings: js.UndefOr[GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings] = js.undefined
 }
 object GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings {
   

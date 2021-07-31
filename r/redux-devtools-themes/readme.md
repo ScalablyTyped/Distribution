@@ -12,7 +12,7 @@ Color themes for Redux DevTools monitors
 | Keywords           | base16, color schemes |
 | # releases         | 0 |
 | # dependents       | 55 |
-| # downloads        | 2516184 |
+| # downloads        | 2503577 |
 | # stars            | 0 |
 
 ## Links

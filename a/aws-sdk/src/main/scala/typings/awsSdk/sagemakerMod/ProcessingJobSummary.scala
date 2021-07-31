@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingJobSummary extends StObject {
   
   /**
     * The time at which the processing job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * An optional string, up to one KB in size, that contains metadata from the processing container when the processing job exits.
     */
-  var ExitMessage: js.UndefOr[typings.awsSdk.sagemakerMod.ExitMessage] = js.native
+  var ExitMessage: js.UndefOr[typings.awsSdk.sagemakerMod.ExitMessage] = js.undefined
   
   /**
     * A string, up to one KB in size, that contains the reason a processing job failed, if it failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * A timestamp that indicates the last time the processing job was modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time at which the processing job completed.
     */
-  var ProcessingEndTime: js.UndefOr[Timestamp] = js.native
+  var ProcessingEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the processing job..
     */
-  var ProcessingJobArn: typings.awsSdk.sagemakerMod.ProcessingJobArn = js.native
+  var ProcessingJobArn: typings.awsSdk.sagemakerMod.ProcessingJobArn
   
   /**
     * The name of the processing job.
     */
-  var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName = js.native
+  var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName
   
   /**
     * The status of the processing job.
     */
-  var ProcessingJobStatus: typings.awsSdk.sagemakerMod.ProcessingJobStatus = js.native
+  var ProcessingJobStatus: typings.awsSdk.sagemakerMod.ProcessingJobStatus
 }
 object ProcessingJobSummary {
   

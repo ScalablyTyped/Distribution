@@ -2,21 +2,19 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule to tag.
     */
-  var Arn: NotificationRuleArn = js.native
+  var Arn: NotificationRuleArn
   
   /**
     * The list of tags to associate with the resource. Tag key names cannot start with "aws".
     */
-  var Tags: typings.awsSdk.codestarnotificationsMod.Tags = js.native
+  var Tags: typings.awsSdk.codestarnotificationsMod.Tags
 }
 object TagResourceRequest {
   

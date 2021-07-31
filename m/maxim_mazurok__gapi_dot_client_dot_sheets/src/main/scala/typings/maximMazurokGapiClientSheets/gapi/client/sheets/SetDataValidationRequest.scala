@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDataValidationRequest extends StObject {
   
   /** The range the data validation rule should apply to. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
   
   /** The data validation rule to set on each cell in the range, or empty to clear the data validation in the range. */
-  var rule: js.UndefOr[DataValidationRule] = js.native
+  var rule: js.UndefOr[DataValidationRule] = js.undefined
 }
 object SetDataValidationRequest {
   

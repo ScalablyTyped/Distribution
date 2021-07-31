@@ -5,7 +5,6 @@ import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editableTextMod {
@@ -63,9 +62,9 @@ object editableTextMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IEditableTextProps
-    extends IIntentProps
+    extends StObject
+       with IIntentProps
        with IProps {
     
     /**
@@ -79,7 +78,7 @@ object editableTextMod {
       * context menu is used to supply clipboard copy and paste functionality.
       * @default false
       */
-    var alwaysRenderInput: js.UndefOr[Boolean] = js.native
+    var alwaysRenderInput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` and in multiline mode, the `enter` key will trigger onConfirm and `mod+enter`
@@ -87,61 +86,61 @@ object editableTextMod {
       * adds a newline.
       * @default false
       */
-    var confirmOnEnterKey: js.UndefOr[Boolean] = js.native
+    var confirmOnEnterKey: js.UndefOr[Boolean] = js.undefined
     
     /** Default text value of uncontrolled input. */
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the text can be edited.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the component is currently being edited. */
-    var isEditing: js.UndefOr[Boolean] = js.native
+    var isEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Maximum number of characters allowed. Unlimited by default. */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of lines before scrolling begins, when `multiline`.
       */
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum number of lines (essentially minimum height), when `multiline`.
       * @default 1
       */
-    var minLines: js.UndefOr[Double] = js.native
+    var minLines: js.UndefOr[Double] = js.undefined
     
     /** Minimum width in pixels of the input, when not `multiline`. */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the component supports multiple lines of text.
       * This prop should not be changed during the component's lifetime.
       * @default false
       */
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     /** Callback invoked when user cancels input with the `esc` key. Receives last confirmed value. */
-    var onCancel: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
     /** Callback invoked when user changes input in any way. */
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
     /** Callback invoked when user confirms value with `enter` key or by blurring input. */
-    var onConfirm: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onConfirm: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
     /** Callback invoked after the user enters edit mode. */
-    var onEdit: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.native
+    var onEdit: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.undefined
     
     /**
       * Placeholder text when there is no value.
       * @default "Click to Edit"
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the entire text field should be selected on focus.
@@ -149,15 +148,15 @@ object editableTextMod {
       * This prop is ignored on inputs with type other then text, search, url, tel and password. See https://html.spec.whatwg.org/multipage/input.html#do-not-apply for details.
       * @default false
       */
-    var selectAllOnFocus: js.UndefOr[Boolean] = js.native
+    var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The type of input that should be shown, when not `multiline`.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Text value of controlled input. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IEditableTextProps {
     
@@ -280,23 +279,22 @@ object editableTextMod {
     }
   }
   
-  @js.native
   trait IEditableTextState extends StObject {
     
     /** Pixel height of the input, measured from span size */
-    var inputHeight: js.UndefOr[Double] = js.native
+    var inputHeight: js.UndefOr[Double] = js.undefined
     
     /** Pixel width of the input, measured from span size */
-    var inputWidth: js.UndefOr[Double] = js.native
+    var inputWidth: js.UndefOr[Double] = js.undefined
     
     /** Whether the value is currently being edited */
-    var isEditing: js.UndefOr[Boolean] = js.native
+    var isEditing: js.UndefOr[Boolean] = js.undefined
     
     /** The last confirmed value */
-    var lastValue: js.UndefOr[String] = js.native
+    var lastValue: js.UndefOr[String] = js.undefined
     
     /** The controlled input value, may be different from prop during editing */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IEditableTextState {
     

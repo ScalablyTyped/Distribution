@@ -2,31 +2,29 @@ package typings.casperjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpResponse extends StObject {
   
-  var contentType: String = js.native
+  var contentType: String
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var headers: js.Array[Header] = js.native
+  var headers: js.Array[Header]
   
-  var id: Double = js.native
+  var id: Double
   
-  var redirectURL: String | Null = js.native
+  var redirectURL: String | Null
   
-  var stage: String = js.native
+  var stage: String
   
-  var status: Double = js.native
+  var status: Double
   
-  var statusText: String = js.native
+  var statusText: String
   
-  var time: String = js.native
+  var time: String
   
-  var url: String = js.native
+  var url: String
 }
 object HttpResponse {
   
@@ -42,7 +40,7 @@ object HttpResponse {
     time: String,
     url: String
   ): HttpResponse = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], redirectURL = null)
     __obj.asInstanceOf[HttpResponse]
   }
   

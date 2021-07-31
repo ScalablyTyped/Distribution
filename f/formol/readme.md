@@ -10,15 +10,15 @@ An opiniated react form framework.
 | ------------------ | :-------------: |
 | Full name          | formol |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 17 |
 | # dependents       | 0 |
-| # downloads        | 3907 |
+| # downloads        | 2514 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/paradoxxxzero/formol#readme)
-- [Bugs](https://github.com/paradoxxxzero/formol/issues)
-- [Repository](https://github.com/paradoxxxzero/formol)
+- [Homepage](https://github.com/Kozea/formol#readme)
+- [Bugs](https://github.com/Kozea/formol/issues)
+- [Repository](https://github.com/Kozea/formol)
 - [Npm](https://www.npmjs.com/package/formol)
     
 

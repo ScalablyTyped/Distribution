@@ -11,7 +11,6 @@ import typings.reactNative.mod.StyleProp
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarItemMod {
@@ -37,30 +36,29 @@ object tabBarItemMod {
   trait TabBarItem
     extends Component[TabBarItemProps, js.Any, js.Any]
   
-  @js.native
   trait TabBarItemProps extends StObject {
     
-    var badge: js.UndefOr[String | Double] = js.native
+    var badge: js.UndefOr[String | Double] = js.undefined
     
-    var icon: js.UndefOr[TabBarIcon] = js.native
+    var icon: js.UndefOr[TabBarIcon] = js.undefined
     
-    var iconStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var iconStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderAsOriginal: js.UndefOr[Boolean] = js.native
+    var renderAsOriginal: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var selectedIcon: js.UndefOr[TabBarIcon] = js.native
+    var selectedIcon: js.UndefOr[TabBarIcon] = js.undefined
     
-    var styles: js.UndefOr[ReturnType[js.Function1[/* theme */ Theme, TabBarStyle]]] = js.native
+    var styles: js.UndefOr[ReturnType[js.Function1[/* theme */ Theme, TabBarStyle]]] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var unselectedTintColor: js.UndefOr[String] = js.native
+    var unselectedTintColor: js.UndefOr[String] = js.undefined
   }
   object TabBarItemProps {
     

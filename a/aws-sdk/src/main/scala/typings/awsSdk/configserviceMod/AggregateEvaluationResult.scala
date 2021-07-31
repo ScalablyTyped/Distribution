@@ -2,46 +2,44 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateEvaluationResult extends StObject {
   
   /**
     * The 12-digit account ID of the source account.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.undefined
   
   /**
     * Supplementary information about how the agrregate evaluation determined the compliance.
     */
-  var Annotation: js.UndefOr[StringWithCharLimit256] = js.native
+  var Annotation: js.UndefOr[StringWithCharLimit256] = js.undefined
   
   /**
     * The source region from where the data is aggregated.
     */
-  var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.native
+  var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.undefined
   
   /**
     * The resource compliance status. For the AggregationEvaluationResult data type, AWS Config supports only the COMPLIANT and NON_COMPLIANT. AWS Config does not support the NOT_APPLICABLE and INSUFFICIENT_DATA value.
     */
-  var ComplianceType: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceType] = js.native
+  var ComplianceType: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceType] = js.undefined
   
   /**
     * The time when the AWS Config rule evaluated the AWS resource.
     */
-  var ConfigRuleInvokedTime: js.UndefOr[Date] = js.native
+  var ConfigRuleInvokedTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Uniquely identifies the evaluation result.
     */
-  var EvaluationResultIdentifier: js.UndefOr[typings.awsSdk.configserviceMod.EvaluationResultIdentifier] = js.native
+  var EvaluationResultIdentifier: js.UndefOr[typings.awsSdk.configserviceMod.EvaluationResultIdentifier] = js.undefined
   
   /**
     * The time when AWS Config recorded the aggregate evaluation result.
     */
-  var ResultRecordedTime: js.UndefOr[Date] = js.native
+  var ResultRecordedTime: js.UndefOr[Date] = js.undefined
 }
 object AggregateEvaluationResult {
   

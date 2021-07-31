@@ -2,19 +2,17 @@ package typings.webAnimationsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationKeyFrame extends StObject {
   
-  var easing: js.UndefOr[String | js.Array[String]] = js.native
+  var easing: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var offset: js.UndefOr[Double | (js.Array[Double | Null]) | Null] = js.native
+  var offset: js.UndefOr[Double | (js.Array[Double | Null]) | Null] = js.undefined
   
-  var opacity: js.UndefOr[Double | js.Array[Double]] = js.native
+  var opacity: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var transform: js.UndefOr[String | js.Array[String]] = js.native
+  var transform: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object AnimationKeyFrame {
   

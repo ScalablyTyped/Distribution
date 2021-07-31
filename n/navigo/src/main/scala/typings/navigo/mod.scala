@@ -7,7 +7,6 @@ import typings.navigo.anon.Hooks
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,23 +18,24 @@ object mod {
     * @param root The main URL of your application.
     * @param useHash If useHash set to true then the router uses an old routing approach with hash in the URL. Navigo anyways falls back to this mode if there is no History API supported.
     */
-  class ^ () extends Navigo {
+  class ^ ()
+    extends StObject
+       with Navigo {
     def this(root: String) = this()
-    def this(root: js.UndefOr[scala.Nothing], useHash: Boolean) = this()
     def this(root: String, useHash: Boolean) = this()
     def this(root: Null, useHash: Boolean) = this()
-    def this(root: js.UndefOr[scala.Nothing], useHash: js.UndefOr[scala.Nothing], hash: String) = this()
-    def this(root: js.UndefOr[scala.Nothing], useHash: Boolean, hash: String) = this()
-    def this(root: String, useHash: js.UndefOr[scala.Nothing], hash: String) = this()
+    def this(root: Unit, useHash: Boolean) = this()
     def this(root: String, useHash: Boolean, hash: String) = this()
-    def this(root: Null, useHash: js.UndefOr[scala.Nothing], hash: String) = this()
+    def this(root: String, useHash: Unit, hash: String) = this()
     def this(root: Null, useHash: Boolean, hash: String) = this()
+    def this(root: Null, useHash: Unit, hash: String) = this()
+    def this(root: Unit, useHash: Boolean, hash: String) = this()
+    def this(root: Unit, useHash: Unit, hash: String) = this()
   }
   
-  @js.native
   trait GenericHooks extends StObject {
     
-    var after: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.native
+    var after: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
     
     var before: js.UndefOr[
         js.Function2[
@@ -43,7 +43,7 @@ object mod {
           /* params */ js.UndefOr[Params], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object GenericHooks {
     
@@ -122,12 +122,11 @@ object mod {
     def updatePageLinks(): Unit = js.native
   }
   
-  @js.native
   trait NavigoHooks extends StObject {
     
-    var after: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.native
+    var after: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
     
-    var already: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.native
+    var already: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
     
     var before: js.UndefOr[
         js.Function2[
@@ -135,9 +134,9 @@ object mod {
           /* params */ js.UndefOr[Params], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var leave: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.native
+    var leave: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
   }
   object NavigoHooks {
     
@@ -184,5 +183,5 @@ object mod {
   
   type State = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in navigo.navigo.Keys ]: any}
-    */ typings.navigo.navigoStrings.State with TopLevel[js.Any]
+    */ typings.navigo.navigoStrings.State & TopLevel[js.Any]
 }

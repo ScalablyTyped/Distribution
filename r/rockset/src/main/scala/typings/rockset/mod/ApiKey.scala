@@ -2,20 +2,18 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiKey extends StObject {
   
   // ISO-8601 date
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
   // string of 64 alphanumeric characters
-  var key: String = js.native
+  var key: String
   
   // descriptive label
-  var name: String = js.native
+  var name: String
 }
 object ApiKey {
   

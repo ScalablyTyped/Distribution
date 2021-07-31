@@ -7,13 +7,11 @@ import typings.octokitTypes.octokitTypesStrings.push
 import typings.octokitTypes.octokitTypesStrings.triage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposAddCollaboratorEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * The permission to grant the collaborator. **Only valid on organization-owned repositories.** Can be one of:
@@ -23,11 +21,11 @@ trait ReposAddCollaboratorEndpoint extends StObject {
     * \* `maintain` - Recommended for project managers who need to manage the repository without access to sensitive or destructive actions.
     * \* `triage` - Recommended for contributors who need to proactively manage issues and pull requests without write access.
     */
-  var permission: js.UndefOr[pull | push | admin | maintain | triage] = js.native
+  var permission: js.UndefOr[pull | push | admin | maintain | triage] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
-  var username: String = js.native
+  var username: String
 }
 object ReposAddCollaboratorEndpoint {
   

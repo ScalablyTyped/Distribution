@@ -12,68 +12,56 @@ import typings.tensorflowTfjsLayers.initializersMod.VarianceScalingArgs
 import typings.tensorflowTfjsLayers.initializersMod.Zeros
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object initializers {
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.constant")
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers")
   @js.native
-  def constant(args: ConstantArgs): Initializer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.glorotNormal")
-  @js.native
-  def glorotNormal(args: SeedOnlyInitializerArgs): Initializer = js.native
+  @scala.inline
+  def constant(args: ConstantArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.glorotUniform")
-  @js.native
-  def glorotUniform(args: SeedOnlyInitializerArgs): Initializer = js.native
+  @scala.inline
+  def glorotNormal(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("glorotNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.heNormal")
-  @js.native
-  def heNormal(args: SeedOnlyInitializerArgs): Initializer = js.native
+  @scala.inline
+  def glorotUniform(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("glorotUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.heUniform")
-  @js.native
-  def heUniform(args: SeedOnlyInitializerArgs): Initializer = js.native
+  @scala.inline
+  def heNormal(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("heNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.identity")
-  @js.native
-  def identity(args: IdentityArgs): Initializer = js.native
+  @scala.inline
+  def heUniform(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("heUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.leCunNormal")
-  @js.native
-  def leCunNormal(args: SeedOnlyInitializerArgs): Initializer = js.native
+  @scala.inline
+  def identity(args: IdentityArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.leCunUniform")
-  @js.native
-  def leCunUniform(args: SeedOnlyInitializerArgs): Initializer = js.native
+  @scala.inline
+  def leCunNormal(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("leCunNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.ones")
-  @js.native
-  def ones(): Initializer = js.native
+  @scala.inline
+  def leCunUniform(args: SeedOnlyInitializerArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("leCunUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.orthogonal")
-  @js.native
-  def orthogonal(args: OrthogonalArgs): Initializer = js.native
+  @scala.inline
+  def ones(): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")().asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.randomNormal")
-  @js.native
-  def randomNormal(args: RandomNormalArgs): Initializer = js.native
+  @scala.inline
+  def orthogonal(args: OrthogonalArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("orthogonal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.randomUniform")
-  @js.native
-  def randomUniform(args: RandomUniformArgs): Initializer = js.native
+  @scala.inline
+  def randomNormal(args: RandomNormalArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.truncatedNormal")
-  @js.native
-  def truncatedNormal(args: TruncatedNormalArgs): Initializer = js.native
+  @scala.inline
+  def randomUniform(args: RandomUniformArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.varianceScaling")
-  @js.native
-  def varianceScaling(config: VarianceScalingArgs): Initializer = js.native
+  @scala.inline
+  def truncatedNormal(args: TruncatedNormalArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(args.asInstanceOf[js.Any]).asInstanceOf[Initializer]
   
-  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "initializers.zeros")
-  @js.native
-  def zeros(): Zeros = js.native
+  @scala.inline
+  def varianceScaling(config: VarianceScalingArgs): Initializer = ^.asInstanceOf[js.Dynamic].applyDynamic("varianceScaling")(config.asInstanceOf[js.Any]).asInstanceOf[Initializer]
+  
+  @scala.inline
+  def zeros(): Zeros = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")().asInstanceOf[Zeros]
 }

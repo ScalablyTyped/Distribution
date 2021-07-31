@@ -2,7 +2,6 @@ package typings.reduxSagaIs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,6 +42,10 @@ object mod {
   @js.native
   val number: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<number> */ js.Any = js.native
   
+  @JSImport("@redux-saga/is", "object")
+  @js.native
+  val `object`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<object> */ js.Any = js.native
+  
   @JSImport("@redux-saga/is", "observable")
   @js.native
   val observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<{  subscribe :Function}> */ js.Any = js.native
@@ -74,8 +77,4 @@ object mod {
   @JSImport("@redux-saga/is", "undef")
   @js.native
   val undef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<undefined> */ js.Any = js.native
-  
-  @JSImport("@redux-saga/is", "object")
-  @js.native
-  val `object`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<object> */ js.Any = js.native
 }

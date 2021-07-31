@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeIconMod {
@@ -34,34 +33,33 @@ object noticeIconMod {
   
   type NoticeIcon = Component[NoticeIconProps, js.Any, js.Any]
   
-  @js.native
   trait NoticeIconProps extends StObject {
     
-    var bell: js.UndefOr[ReactNode] = js.native
+    var bell: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearClose: js.UndefOr[Boolean] = js.native
+    var clearClose: js.UndefOr[Boolean] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[Dictkey] = js.native
+    var locale: js.UndefOr[Dictkey] = js.undefined
     
-    var onClear: js.UndefOr[js.Function1[/* tabName */ String, Unit]] = js.native
+    var onClear: js.UndefOr[js.Function1[/* tabName */ String, Unit]] = js.undefined
     
-    var onItemClick: js.UndefOr[js.Function2[/* item */ NoticeIconData, /* tabProps */ this.type, Unit]] = js.native
+    var onItemClick: js.UndefOr[js.Function2[/* item */ NoticeIconData, /* tabProps */ this.type, Unit]] = js.undefined
     
-    var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* tabTile */ String, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* tabTile */ String, Unit]] = js.undefined
     
-    var onViewMore: js.UndefOr[js.Function2[/* tabProps */ this.type, /* e */ MouseEvent, Unit]] = js.native
+    var onViewMore: js.UndefOr[js.Function2[/* tabProps */ this.type, /* e */ MouseEvent, Unit]] = js.undefined
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object NoticeIconProps {
     

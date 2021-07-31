@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingTypeStats extends StObject {
   
   /** Output only. The count of findings belonging to this finding type. */
-  var findingCount: js.UndefOr[Double] = js.native
+  var findingCount: js.UndefOr[Double] = js.undefined
   
   /** Output only. The finding type associated with the stats. */
-  var findingType: js.UndefOr[String] = js.native
+  var findingType: js.UndefOr[String] = js.undefined
 }
 object FindingTypeStats {
   

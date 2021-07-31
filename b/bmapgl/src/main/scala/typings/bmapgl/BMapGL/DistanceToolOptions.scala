@@ -7,31 +7,29 @@ import typings.bmapgl.bmapglStrings.solid
 import typings.bmapgl.bmapglStrings.us
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceToolOptions extends StObject {
   
-  var closeIcon: js.UndefOr[Icon] = js.native
+  var closeIcon: js.UndefOr[Icon] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var followText: js.UndefOr[String] = js.native
+  var followText: js.UndefOr[String] = js.undefined
   
-  var lineColor: js.UndefOr[String] = js.native
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  var lineStroke: js.UndefOr[Double] = js.native
+  var lineStroke: js.UndefOr[Double] = js.undefined
   
-  var lineStyle: js.UndefOr[solid | dashed | dotted] = js.native
+  var lineStyle: js.UndefOr[solid | dashed | dotted] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var secIcon: js.UndefOr[Icon] = js.native
+  var secIcon: js.UndefOr[Icon] = js.undefined
   
-  var tips: js.UndefOr[String] = js.native
+  var tips: js.UndefOr[String] = js.undefined
   
-  var unit: js.UndefOr[metric | us] = js.native
+  var unit: js.UndefOr[metric | us] = js.undefined
 }
 object DistanceToolOptions {
   

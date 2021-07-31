@@ -3,7 +3,6 @@ package typings.wechatMiniprogram.DB
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -42,7 +41,7 @@ object GeoInstance {
   }
   
   @scala.inline
-  def GeoPoint(latitude: Double, longitude: Double, toJSON: () => Record[String, _]): typings.wechatMiniprogram.DB.GeoPoint = {
+  def GeoPoint(latitude: Double, longitude: Double, toJSON: () => Record[String, js.Any]): typings.wechatMiniprogram.DB.GeoPoint = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[typings.wechatMiniprogram.DB.GeoPoint]
   }

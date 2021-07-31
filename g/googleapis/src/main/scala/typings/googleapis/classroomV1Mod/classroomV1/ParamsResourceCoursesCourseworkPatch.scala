@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCoursesCourseworkPatch extends StandardParameters {
+trait ParamsResourceCoursesCourseworkPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifier of the course. This identifier can be either the
     * Classroom-assigned identifier or an alias.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the course work.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCourseWork] = js.native
+  var requestBody: js.UndefOr[SchemaCourseWork] = js.undefined
   
   /**
     * Mask that identifies which fields on the course work to update. This
@@ -44,7 +44,7 @@ trait ParamsResourceCoursesCourseworkPatch extends StandardParameters {
     * * `description` * `state` * `due_date` * `due_time` * `max_points` *
     * `scheduled_time` * `submission_modification_mode`
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCoursesCourseworkPatch {
   

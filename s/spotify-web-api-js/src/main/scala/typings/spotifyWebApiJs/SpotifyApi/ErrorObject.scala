@@ -2,19 +2,17 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Error object
   * [error object](https://developer.spotify.com/web-api/object-model/)
   */
-@js.native
 trait ErrorObject extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var status: Double = js.native
+  var status: Double
 }
 object ErrorObject {
   

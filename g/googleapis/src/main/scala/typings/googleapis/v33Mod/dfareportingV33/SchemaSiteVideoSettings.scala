@@ -2,44 +2,42 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video Settings
   */
-@js.native
 trait SchemaSiteVideoSettings extends StObject {
   
   /**
     * Settings for the companion creatives of video creatives served to this
     * site.
     */
-  var companionSettings: js.UndefOr[SchemaSiteCompanionSetting] = js.native
+  var companionSettings: js.UndefOr[SchemaSiteCompanionSetting] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#siteVideoSettings&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Orientation of a site template used for video. This will act as default
     * for new placements created under this site.
     */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /**
     * Settings for the skippability of video creatives served to this site.
     * This will act as default for new placements created under this site.
     */
-  var skippableSettings: js.UndefOr[SchemaSiteSkippableSetting] = js.native
+  var skippableSettings: js.UndefOr[SchemaSiteSkippableSetting] = js.undefined
   
   /**
     * Settings for the transcodes of video creatives served to this site. This
     * will act as default for new placements created under this site.
     */
-  var transcodeSettings: js.UndefOr[SchemaSiteTranscodeSetting] = js.native
+  var transcodeSettings: js.UndefOr[SchemaSiteTranscodeSetting] = js.undefined
 }
 object SchemaSiteVideoSettings {
   

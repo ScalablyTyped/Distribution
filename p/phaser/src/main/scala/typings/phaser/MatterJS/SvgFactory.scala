@@ -3,10 +3,8 @@ package typings.phaser.MatterJS
 import typings.std.SVGPathElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SvgFactory extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SvgFactory extends StObject {
     * @param {Number} [sampleLength=15]
     * @return {Vector[]} points
     */
-  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = js.native
+  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector]
 }
 object SvgFactory {
   

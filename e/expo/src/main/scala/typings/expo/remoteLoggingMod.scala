@@ -4,10 +4,13 @@ import typings.expo.anon.Response
 import typings.fbemitter.mod.EventSubscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteLoggingMod {
+  
+  @JSImport("expo/build/logs/RemoteLogging", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -40,20 +43,18 @@ object remoteLoggingMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enqueueRemoteLogAsync")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("expo/build/logs/RemoteLogging", "__waitForEmptyLogQueueAsync")
-  @js.native
-  def waitForEmptyLogQueueAsync(): js.Promise[Unit] = js.native
+  @scala.inline
+  def waitForEmptyLogQueueAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("__waitForEmptyLogQueueAsync")().asInstanceOf[js.Promise[Unit]]
   
   type LogData = String | LogErrorData
   
-  @js.native
   trait LogEntryFields extends StObject {
     
-    var groupCollapsed: js.UndefOr[Boolean] = js.native
+    var groupCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var groupDepth: js.UndefOr[Double] = js.native
+    var groupDepth: js.UndefOr[Double] = js.undefined
     
-    var shouldHide: js.UndefOr[Boolean] = js.native
+    var shouldHide: js.UndefOr[Boolean] = js.undefined
   }
   object LogEntryFields {
     
@@ -86,12 +87,11 @@ object remoteLoggingMod {
     }
   }
   
-  @js.native
   trait LogErrorData extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var stack: String = js.native
+    var stack: String
   }
   object LogErrorData {
     

@@ -4,15 +4,13 @@ import typings.jointjs.mod.dia.Element.PositionType
 import typings.jointjs.mod.dia.MarkupJSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Markup extends StObject {
   
-  var markup: js.UndefOr[String | MarkupJSON] = js.native
+  var markup: js.UndefOr[String | MarkupJSON] = js.undefined
   
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
 }
 object Markup {
   

@@ -12,7 +12,7 @@ Fill PDF forms and return rendered PDF in buffer. No temporary files created.
 | Keywords           | pdf, forms, poppler, qt5, cairo |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 197282 |
+| # downloads        | 122897 |
 | # stars            | 3 |
 
 ## Links

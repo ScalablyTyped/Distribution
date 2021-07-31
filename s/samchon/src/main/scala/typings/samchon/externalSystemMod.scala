@@ -1,14 +1,17 @@
 package typings.samchon
 
+import typings.ecol.collectionEventMod.CollectionEvent
+import typings.ecol.collectionEventMod.CollectionEvent.Listener
+import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.samchon.entityCollectionMod.EntityDequeCollection
 import typings.samchon.externalSystemArrayMod.ExternalSystemArray
 import typings.samchon.externalSystemRoleMod.ExternalSystemRole
 import typings.samchon.iclientdriverMod.IClientDriver
 import typings.samchon.icommunicatorMod.ICommunicator
+import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalSystemMod {
@@ -36,6 +39,17 @@ object externalSystemMod {
       * @hidden
       */
     var _Handle_close: js.Any = js.native
+    
+    /* InferMemberOverrides */
+    override def addEventListener(
+      `type`: Type,
+      listener: Listener[
+          ExternalSystemRole, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+        ]
+    ): Unit = js.native
     
     /**
       * Close connection.
@@ -84,6 +98,16 @@ object externalSystemMod {
       */
     /* protected */ def destructor(): Unit = js.native
     
+    /* InferMemberOverrides */
+    override def dispatchEvent(
+      event: CollectionEvent[
+          ExternalSystemRole, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+        ]
+    ): Unit = js.native
+    
     /**
       * Get {@link name}.
       */
@@ -99,10 +123,44 @@ object externalSystemMod {
     @JSName("getSystemArray")
     def getSystemArray_SystemArray_ExternalSystemArrayExternalSystem_SystemArray[SystemArray /* <: ExternalSystemArray[ExternalSystem] */](): SystemArray = js.native
     
+    /* InferMemberOverrides */
+    override def hasEventListener(`type`: Type): Boolean = js.native
+    
     /**
       * The name represents external system have connected.
       */
     var name: String = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(
+      `type`: Type,
+      listener: Listener[
+          ExternalSystemRole, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+        ]
+    ): Unit = js.native
+    
+    /**
+      * Sending message.
+      *
+      * Sends message to related system or shifts the responsibility to chain.
+      *
+      * @param invoke Invoke message to send
+      */
+    /* CompleteClass */
+    override def replyData(invoke: Invoke): Unit = js.native
+    
+    /**
+      * Handling replied message.
+      *
+      * Handles replied message or shifts the responsibility to chain.
+      *
+      * @param invoke An {@link Invoke} message has received.
+      */
+    /* CompleteClass */
+    override def sendData(invoke: Invoke): Unit = js.native
     
     /**
       * @hidden

@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DerivedFieldsInTableData...
   */
-@js.native
 trait IDerivedFieldsInTableData extends StObject {
   
   /**
     * Is set to true is the derived field is in use.
     */
-  var qActive: Boolean = js.native
+  var qActive: Boolean
   
   /**
     * Name of the derived definition.
     */
-  var qDefinitionName: String = js.native
+  var qDefinitionName: String
   
   /**
     * List of tags.
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
 }
 object IDerivedFieldsInTableData {
   

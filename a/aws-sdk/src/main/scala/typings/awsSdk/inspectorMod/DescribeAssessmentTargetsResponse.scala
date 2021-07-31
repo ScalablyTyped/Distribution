@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssessmentTargetsResponse extends StObject {
   
   /**
     * Information about the assessment targets.
     */
-  var assessmentTargets: AssessmentTargetList = js.native
+  var assessmentTargets: AssessmentTargetList
   
   /**
     * Assessment target details that cannot be described. An error code is provided for each failed item.
     */
-  var failedItems: FailedItems = js.native
+  var failedItems: FailedItems
 }
 object DescribeAssessmentTargetsResponse {
   

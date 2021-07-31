@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetInfoChangedEvent extends StObject {
   
-  var targetInfo: TargetInfo = js.native
+  var targetInfo: TargetInfo
 }
 object TargetInfoChangedEvent {
   

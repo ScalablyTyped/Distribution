@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterprisesSendTestPushNotificationResponse extends StObject {
   
   /** The message ID of the test push notification that was sent. */
-  var messageId: js.UndefOr[String] = js.native
+  var messageId: js.UndefOr[String] = js.undefined
   
   /** The name of the Cloud Pub/Sub topic to which notifications for this enterprise's enrolled account will be sent. */
-  var topicName: js.UndefOr[String] = js.native
+  var topicName: js.UndefOr[String] = js.undefined
 }
 object EnterprisesSendTestPushNotificationResponse {
   

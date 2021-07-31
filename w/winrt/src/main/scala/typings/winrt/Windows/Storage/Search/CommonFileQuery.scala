@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait CommonFileQuery extends StObject
 object CommonFileQuery extends StObject {
   
   @js.native
-  sealed trait defaultQuery extends CommonFileQuery
+  sealed trait defaultQuery
+    extends StObject
+       with CommonFileQuery
   
   @js.native
-  sealed trait orderByDate extends CommonFileQuery
+  sealed trait orderByDate
+    extends StObject
+       with CommonFileQuery
   
   @js.native
-  sealed trait orderByMusicProperties extends CommonFileQuery
+  sealed trait orderByMusicProperties
+    extends StObject
+       with CommonFileQuery
   
   @js.native
-  sealed trait orderByName extends CommonFileQuery
+  sealed trait orderByName
+    extends StObject
+       with CommonFileQuery
   
   @js.native
-  sealed trait orderBySearchRank extends CommonFileQuery
+  sealed trait orderBySearchRank
+    extends StObject
+       with CommonFileQuery
   
   @js.native
-  sealed trait orderByTitle extends CommonFileQuery
+  sealed trait orderByTitle
+    extends StObject
+       with CommonFileQuery
 }

@@ -2,12 +2,10 @@ package typings.agenda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Address extends StObject {
     
     /**
@@ -15,18 +13,18 @@ object anon {
       * Required when using `db` option to connect.
       * Not required when an existing connection is passed as `mongo` property.
       */
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the collection to use.
       */
-    var collection: js.UndefOr[String] = js.native
+    var collection: js.UndefOr[String] = js.undefined
     
     /**
       * Connection options to pass to MongoDB.
       * Not required when an existing connection is passed as `mongo` property.
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
   }
   object Address {
     
@@ -59,10 +57,9 @@ object anon {
     }
   }
   
-  @js.native
   trait InsertOnly extends StObject {
     
-    var insertOnly: js.UndefOr[Boolean] = js.native
+    var insertOnly: js.UndefOr[Boolean] = js.undefined
   }
   object InsertOnly {
     
@@ -83,12 +80,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SkipImmediate extends StObject {
     
-    var skipImmediate: js.UndefOr[Boolean] = js.native
+    var skipImmediate: js.UndefOr[Boolean] = js.undefined
     
-    var timezone: js.UndefOr[String] = js.native
+    var timezone: js.UndefOr[String] = js.undefined
   }
   object SkipImmediate {
     

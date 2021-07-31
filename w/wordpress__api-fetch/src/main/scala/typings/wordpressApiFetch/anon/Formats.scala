@@ -3,17 +3,15 @@ package typings.wordpressApiFetch.anon
 import typings.wordpressApiFetch.mod.Schema.PostFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Formats extends StObject {
   
-  var formats: js.Array[PostFormat] = js.native
+  var formats: js.Array[PostFormat]
   
-  var `post-thumbnails`: Boolean = js.native
+  var `post-thumbnails`: Boolean
   
-  var `responsive-embeds`: Boolean = js.native
+  var `responsive-embeds`: Boolean
 }
 object Formats {
   

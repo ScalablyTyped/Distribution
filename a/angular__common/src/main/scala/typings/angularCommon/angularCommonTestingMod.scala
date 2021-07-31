@@ -6,7 +6,6 @@ import typings.angularCommon.mod.PlatformLocation
 import typings.angularCore.mod.InjectionToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCommonTestingMod {
@@ -72,12 +71,11 @@ object angularCommonTestingMod {
     var urlChanges: js.Array[String] = js.native
   }
   
-  @js.native
   trait MockPlatformLocationConfig extends StObject {
     
-    var appBaseHref: js.UndefOr[String] = js.native
+    var appBaseHref: js.UndefOr[String] = js.undefined
     
-    var startUrl: js.UndefOr[String] = js.native
+    var startUrl: js.UndefOr[String] = js.undefined
   }
   object MockPlatformLocationConfig {
     

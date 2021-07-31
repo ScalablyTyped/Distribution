@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeMap extends Widget_ {
+trait TreeMap
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -35,19 +36,27 @@ object TreeMap {
     
     //specifies the bottom position
     @js.native
-    sealed trait Bottom extends DockPosition
+    sealed trait Bottom
+      extends StObject
+         with DockPosition
     
     //specifies the left position
     @js.native
-    sealed trait Left extends DockPosition
+    sealed trait Left
+      extends StObject
+         with DockPosition
     
     //specifies the bottom position
     @js.native
-    sealed trait Right extends DockPosition
+    sealed trait Right
+      extends StObject
+         with DockPosition
     
     //specifies the top position
     @js.native
-    sealed trait Top extends DockPosition
+    sealed trait Top
+      extends StObject
+         with DockPosition
   }
   
   @js.native
@@ -58,19 +67,27 @@ object TreeMap {
     
     //specifies the sliceanddiceauto as layout type position
     @js.native
-    sealed trait Sliceanddiceauto extends ItemsLayoutMode
+    sealed trait Sliceanddiceauto
+      extends StObject
+         with ItemsLayoutMode
     
     //specifies the sliceanddicehorizontal as layout type position
     @js.native
-    sealed trait Sliceanddicehorizontal extends ItemsLayoutMode
+    sealed trait Sliceanddicehorizontal
+      extends StObject
+         with ItemsLayoutMode
     
     //specifies the sliceanddicevertical as layout type position
     @js.native
-    sealed trait Sliceanddicevertical extends ItemsLayoutMode
+    sealed trait Sliceanddicevertical
+      extends StObject
+         with ItemsLayoutMode
     
     //specifies the squarified as layout type position
     @js.native
-    sealed trait Squarified extends ItemsLayoutMode
+    sealed trait Squarified
+      extends StObject
+         with ItemsLayoutMode
   }
   
   @js.native
@@ -81,43 +98,63 @@ object TreeMap {
     
     //specifies the bottomcenter position
     @js.native
-    sealed trait Bottomcenter extends Position
+    sealed trait Bottomcenter
+      extends StObject
+         with Position
     
     //specifies the bottomleft position
     @js.native
-    sealed trait Bottomleft extends Position
+    sealed trait Bottomleft
+      extends StObject
+         with Position
     
     //specifies the bottomright position
     @js.native
-    sealed trait Bottomright extends Position
+    sealed trait Bottomright
+      extends StObject
+         with Position
     
     //specifies the center position
     @js.native
-    sealed trait Center extends Position
+    sealed trait Center
+      extends StObject
+         with Position
     
     //specifies the centerleft position
     @js.native
-    sealed trait Centerleft extends Position
+    sealed trait Centerleft
+      extends StObject
+         with Position
     
     //specifies the centerright position
     @js.native
-    sealed trait Centerright extends Position
+    sealed trait Centerright
+      extends StObject
+         with Position
     
     //specifies the none position
     @js.native
-    sealed trait None extends Position
+    sealed trait None
+      extends StObject
+         with Position
     
     //specifies the topcenter position
     @js.native
-    sealed trait Topcenter extends Position
+    sealed trait Topcenter
+      extends StObject
+         with Position
     
     //specifies the topleft position
     @js.native
-    sealed trait Topleft extends Position
+    sealed trait Topleft
+      extends StObject
+         with Position
     
     //specifies the topright position
     @js.native
-    sealed trait Topright extends Position
+    sealed trait Topright
+      extends StObject
+         with Position
   }
   
   @js.native
@@ -128,19 +165,27 @@ object TreeMap {
     
     //Hides the label when its width exceeds grid width
     @js.native
-    sealed trait Hide extends TextOverflow
+    sealed trait Hide
+      extends StObject
+         with TextOverflow
     
     //Displays the label within the grid width
     @js.native
-    sealed trait None extends TextOverflow
+    sealed trait None
+      extends StObject
+         with TextOverflow
     
     //Wrap the label by letter when its width exceeds grid width
     @js.native
-    sealed trait Wrap extends TextOverflow
+    sealed trait Wrap
+      extends StObject
+         with TextOverflow
     
     //Wrap the label by word when its width exceeds grid width
     @js.native
-    sealed trait WrapByWord extends TextOverflow
+    sealed trait WrapByWord
+      extends StObject
+         with TextOverflow
   }
   
   @js.native
@@ -151,11 +196,15 @@ object TreeMap {
     
     //specifies the hide on exceeded length mode
     @js.native
-    sealed trait Hideonexceededlength extends VisibilityMode
+    sealed trait Hideonexceededlength
+      extends StObject
+         with VisibilityMode
     
     //specifies the visible mode
     @js.native
-    sealed trait Top extends VisibilityMode
+    sealed trait Top
+      extends StObject
+         with VisibilityMode
   }
   
   @js.native
@@ -166,11 +215,15 @@ object TreeMap {
     
     //specifies the default mode
     @js.native
-    sealed trait Default extends groupSelectionMode
+    sealed trait Default
+      extends StObject
+         with groupSelectionMode
     
     //specifies the multiple mode
     @js.native
-    sealed trait Multiple extends groupSelectionMode
+    sealed trait Multiple
+      extends StObject
+         with groupSelectionMode
   }
   
   @js.native
@@ -181,19 +234,22 @@ object TreeMap {
     
     //specifies the default mode
     @js.native
-    sealed trait Default extends selectionMode
+    sealed trait Default
+      extends StObject
+         with selectionMode
     
     //specifies the multiple mode
     @js.native
-    sealed trait Multiple extends selectionMode
+    sealed trait Multiple
+      extends StObject
+         with selectionMode
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** Returns the clicked group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object ClickEventArgs {
     
@@ -214,33 +270,32 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait DesaturationColorMapping extends StObject {
     
     /** Specifies the color for desaturationColorMapping
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the from value for desaturation color mapping
       * @Default {0}
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /** Specifies the rangeMaximum value for desaturation color mapping
       * @Default {0}
       */
-    var rangeMaximum: js.UndefOr[Double] = js.native
+    var rangeMaximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the rangeMinimum value for desaturation color mapping
       * @Default {0}
       */
-    var rangeMinimum: js.UndefOr[Double] = js.native
+    var rangeMinimum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the to value for desaturation color mapping
       * @Default {0}
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object DesaturationColorMapping {
     
@@ -285,12 +340,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** Returns the  double clicked group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -311,12 +365,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait DrillDownItemSelectedEventArgs extends StObject {
     
     /** Returns selected drilldown treeMap object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object DrillDownItemSelectedEventArgs {
     
@@ -337,12 +390,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait DrillStartedEventArgs extends StObject {
     
     /** Returns selected drilled treeMap object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object DrillStartedEventArgs {
     
@@ -363,13 +415,12 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait GroupColorMapping extends StObject {
     
     /** Specifies the groupID for GroupColorMapping.
       * @Default {null}
       */
-    var groupID: js.UndefOr[String] = js.native
+    var groupID: js.UndefOr[String] = js.undefined
   }
   object GroupColorMapping {
     
@@ -390,12 +441,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait HeaderTemplateRenderingEventArgs extends StObject {
     
     /** Returns drilldown header.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object HeaderTemplateRenderingEventArgs {
     
@@ -416,12 +466,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait ItemRenderingEventArgs extends StObject {
     
     /** Returns treemap leaf item
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object ItemRenderingEventArgs {
     
@@ -442,53 +491,52 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait LeafItemSettings extends StObject {
     
     /** Specifies the border brush color of the leaf item.
       * @Default {white}
       */
-    var borderBrush: js.UndefOr[String] = js.native
+    var borderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness of the leaf item.
       * @Default {1}
       */
-    var borderThickness: js.UndefOr[Double] = js.native
+    var borderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the space between the leaf items.
       * @Default {0}
       */
-    var gap: js.UndefOr[Double] = js.native
+    var gap: js.UndefOr[Double] = js.undefined
     
     /** Specifies the label template of the leaf item.
       * @Default {null}
       */
-    var itemTemplate: js.UndefOr[String] = js.native
+    var itemTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the label path of the leaf item.
       * @Default {null}
       */
-    var labelPath: js.UndefOr[String] = js.native
+    var labelPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of the leaf labels.
       * @Default {center}
       */
-    var labelPosition: js.UndefOr[Position | String] = js.native
+    var labelPosition: js.UndefOr[Position | String] = js.undefined
     
     /** Specifies the mode of label visibility
       * @Default {visible}
       */
-    var labelVisibilityMode: js.UndefOr[VisibilityMode | String] = js.native
+    var labelVisibilityMode: js.UndefOr[VisibilityMode | String] = js.undefined
     
     /** Shows or hides the label of the leaf item.
       * @Default {false}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the overflow options for leaf labels.
       * @Default {none}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
   }
   object LeafItemSettings {
     
@@ -557,12 +605,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait LegendItemRenderingEventArgs extends StObject {
     
     /** Returns treemap legend item
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object LegendItemRenderingEventArgs {
     
@@ -583,65 +630,64 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait LegendSettings extends StObject {
     
     /** Specifies the alignment text for legend
       * @Default {near}
       */
-    var alignment: js.UndefOr[String] = js.native
+    var alignment: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment text for legend
       * @Default {0}
       */
-    var columnCount: js.UndefOr[Double] = js.native
+    var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the dockPosition text for legend
       * @Default {top}
       */
-    var dockPosition: js.UndefOr[String] = js.native
+    var dockPosition: js.UndefOr[String] = js.undefined
     
     /** Specifies the height for legend
       * @Default {30}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the iconHeight for legend
       * @Default {15}
       */
-    var iconHeight: js.UndefOr[Double] = js.native
+    var iconHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the iconWidth for legend
       * @Default {15}
       */
-    var iconWidth: js.UndefOr[Double] = js.native
+    var iconWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the leftLabel text for legend
       */
-    var leftLabel: js.UndefOr[String] = js.native
+    var leftLabel: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode for legendSettings whether default or interactive mode
       * @Default {default}
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
     /** Specifies the rightLabel text for legend
       */
-    var rightLabel: js.UndefOr[String] = js.native
+    var rightLabel: js.UndefOr[String] = js.undefined
     
     /** Specifies the template for legendSettings
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Specifies the title text for legend
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Specifies the width for legend
       * @Default {100}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendSettings {
     
@@ -728,82 +774,81 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
     /** specifies the group background
       * @Default {null}
       */
-    var groupBackground: js.UndefOr[String] = js.native
+    var groupBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the group border color for tree map level.
       * @Default {null}
       */
-    var groupBorderColor: js.UndefOr[String] = js.native
+    var groupBorderColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the group border thickness for tree map level.
       * @Default {1}
       */
-    var groupBorderThickness: js.UndefOr[Double] = js.native
+    var groupBorderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the group gap for tree map level.
       * @Default {1}
       */
-    var groupGap: js.UndefOr[Double] = js.native
+    var groupGap: js.UndefOr[Double] = js.undefined
     
     /** Specifies the group padding for tree map level.
       * @Default {4}
       */
-    var groupPadding: js.UndefOr[Double] = js.native
+    var groupPadding: js.UndefOr[Double] = js.undefined
     
     /** Specifies the group path for tree map level.
       */
-    var groupPath: js.UndefOr[String] = js.native
+    var groupPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the header height for tree map level.
       * @Default {0}
       */
-    var headerHeight: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the header template for tree map level.
       * @Default {null}
       */
-    var headerTemplate: js.UndefOr[String] = js.native
+    var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of header visibility
       * @Default {visible}
       */
-    var headerVisibilityMode: js.UndefOr[VisibilityMode | String] = js.native
+    var headerVisibilityMode: js.UndefOr[VisibilityMode | String] = js.undefined
     
     /** Specifies the position of the labels.
       * @Default {center}
       */
-    var labelPosition: js.UndefOr[Position | String] = js.native
+    var labelPosition: js.UndefOr[Position | String] = js.undefined
     
     /** Specifies the label template for tree map level.
       * @Default {null}
       */
-    var labelTemplate: js.UndefOr[String] = js.native
+    var labelTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of label visibility
       * @Default {visible}
       */
-    var labelVisibilityMode: js.UndefOr[VisibilityMode | String] = js.native
+    var labelVisibilityMode: js.UndefOr[VisibilityMode | String] = js.undefined
     
     /** Shows or hides the header for tree map level.
       * @Default {false}
       */
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the labels for tree map level.
       * @Default {false}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the overflow options for leaf labels.
       * @Default {none}
       */
-    var textOverflow: js.UndefOr[TextOverflow | String] = js.native
+    var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
   }
   object Level {
     
@@ -908,256 +953,255 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires, on clicking the tree map items.
       */
-    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the border brush color of the treemap
       * @Default {white}
       */
-    var borderBrush: js.UndefOr[String] = js.native
+    var borderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness of the treemap
       * @Default {1}
       */
-    var borderThickness: js.UndefOr[Double] = js.native
+    var borderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the field name in the datasource that contains color values for treemap items.
       * @Default {null}
       */
-    var colorPath: js.UndefOr[String] = js.native
+    var colorPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the color value path of the treemap
       * @Default {null}
       */
-    var colorValuePath: js.UndefOr[String] = js.native
+    var colorValuePath: js.UndefOr[String] = js.undefined
     
     /** Specifies the datasource of the treemap
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the desaturationColorMapping settings of the treemap
       */
-    var desaturationColorMapping: js.UndefOr[DesaturationColorMapping] = js.native
+    var desaturationColorMapping: js.UndefOr[DesaturationColorMapping] = js.undefined
     
     /** Specifies the dockPosition for legend
       * @Default {top}
       */
-    var dockPosition: js.UndefOr[DockPosition | String] = js.native
+    var dockPosition: js.UndefOr[DockPosition | String] = js.undefined
     
     /** Fires, on double clicking the tree map items.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** This property is used to select group of treemap items while clicking and dragging
       * @Default {false}
       */
-    var draggingGroupOnSelection: js.UndefOr[Boolean] = js.native
+    var draggingGroupOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** This property is used to select treemap items while clicking and dragging
       * @Default {false}
       */
-    var draggingOnSelection: js.UndefOr[Boolean] = js.native
+    var draggingOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** specifies the drillDown header color
       * @Default {'null'}
       */
-    var drillDownHeaderColor: js.UndefOr[String] = js.native
+    var drillDownHeaderColor: js.UndefOr[String] = js.undefined
     
     /** Triggers on treemap  drilldown  item  selected.
       */
-    var drillDownItemSelected: js.UndefOr[js.Function1[/* e */ DrillDownItemSelectedEventArgs, Unit]] = js.native
+    var drillDownItemSelected: js.UndefOr[js.Function1[/* e */ DrillDownItemSelectedEventArgs, Unit]] = js.undefined
     
     /** Specifies to render particular level of the treemap.
       * @Default {0}
       */
-    var drillDownLevel: js.UndefOr[Double] = js.native
+    var drillDownLevel: js.UndefOr[Double] = js.undefined
     
     /** specifies the drillDown selection color
       * @Default {'#000000'}
       */
-    var drillDownSelectionColor: js.UndefOr[String] = js.native
+    var drillDownSelectionColor: js.UndefOr[String] = js.undefined
     
     /** Specifies to drill the particular data of the treemap.
       * @Default {null}
       */
-    var drillDownValue: js.UndefOr[String] = js.native
+    var drillDownValue: js.UndefOr[String] = js.undefined
     
     /** Triggers when drilldown is started
       */
-    var drillStarted: js.UndefOr[js.Function1[/* e */ DrillStartedEventArgs, Unit]] = js.native
+    var drillStarted: js.UndefOr[js.Function1[/* e */ DrillStartedEventArgs, Unit]] = js.undefined
     
     /** Enable/Disable the drillDown for treemap
       * @Default {false}
       */
-    var enableDrillDown: js.UndefOr[Boolean] = js.native
+    var enableDrillDown: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether gradient color has to be applied for treemap items
       * @Default {false}
       */
-    var enableGradient: js.UndefOr[Boolean] = js.native
+    var enableGradient: js.UndefOr[Boolean] = js.undefined
     
     /** Specify to convert the date object to string, using locale settings.
       * @Default {false}
       */
-    var enableGroupSeparator: js.UndefOr[Boolean] = js.native
+    var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether treemap need to resize when container is resized
       * @Default {true}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the group color mapping of the treemap
       * @Default {[]}
       */
-    var groupColorMapping: js.UndefOr[js.Array[GroupColorMapping]] = js.native
+    var groupColorMapping: js.UndefOr[js.Array[GroupColorMapping]] = js.undefined
     
     /** Specifies the selection mode of the treemap. Accepted selection mode values are Default and Multiple.
       * @Default {default}
       */
-    var groupSelectionMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.groupSelectionMode | String] = js.native
+    var groupSelectionMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.groupSelectionMode | String] = js.undefined
     
     /** Specifies the header for parent item during drilldown. This is applicable only for hierarchical data source.
       * @Default {null}
       */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /** Triggers before rendering the treemap drilldown header template
       */
-    var headerTemplateRendering: js.UndefOr[js.Function1[/* e */ HeaderTemplateRenderingEventArgs, Unit]] = js.native
+    var headerTemplateRendering: js.UndefOr[js.Function1[/* e */ HeaderTemplateRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the highlight border brush of treemap
       * @Default {gray}
       */
-    var highlightBorderBrush: js.UndefOr[String] = js.native
+    var highlightBorderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness when treemap items is highlighted in the treemap
       * @Default {5}
       */
-    var highlightBorderThickness: js.UndefOr[Double] = js.native
+    var highlightBorderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the highlight border brush of treemap
       * @Default {gray}
       */
-    var highlightGroupBorderBrush: js.UndefOr[String] = js.native
+    var highlightGroupBorderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness when treemap items is highlighted in the treemap
       * @Default {5}
       */
-    var highlightGroupBorderThickness: js.UndefOr[Double] = js.native
+    var highlightGroupBorderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether treemap item need to highlighted on selection
       * @Default {false}
       */
-    var highlightGroupOnSelection: js.UndefOr[Boolean] = js.native
+    var highlightGroupOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether treemap item need to highlighted on selection
       * @Default {false}
       */
-    var highlightOnSelection: js.UndefOr[Boolean] = js.native
+    var highlightOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether datasource is hierarchical or not.
       * @Default {false}
       */
-    var isHierarchicalDatasource: js.UndefOr[Boolean] = js.native
+    var isHierarchicalDatasource: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether Treemap has to be responsive while resizing the window.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers while rendering each treemap items.
       */
-    var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.native
+    var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values are Squarified, SliceAndDiceHorizontal, SliceAndDiceVertical and SliceAndDiceAuto
       * @Default {Squarified}
       */
-    var itemsLayoutMode: js.UndefOr[ItemsLayoutMode | String] = js.native
+    var itemsLayoutMode: js.UndefOr[ItemsLayoutMode | String] = js.undefined
     
     /** Specifies the leaf settings of the treemap
       */
-    var leafItemSettings: js.UndefOr[LeafItemSettings] = js.native
+    var leafItemSettings: js.UndefOr[LeafItemSettings] = js.undefined
     
     /** Triggers while rendering each legend item
       */
-    var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, Unit]] = js.native
+    var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the legend settings of the treemap
       */
-    var legendSettings: js.UndefOr[LegendSettings] = js.native
+    var legendSettings: js.UndefOr[LegendSettings] = js.undefined
     
     /** Specify levels of treemap for grouped visualization of data
       * @Default {[]}
       */
-    var levels: js.UndefOr[js.Array[Level]] = js.native
+    var levels: js.UndefOr[js.Array[Level]] = js.undefined
     
     /** Name of the culture based on which Tree Map should be localized.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the paletteColorMapping of the treemap
       */
-    var paletteColorMapping: js.UndefOr[PaletteColorMapping] = js.native
+    var paletteColorMapping: js.UndefOr[PaletteColorMapping] = js.undefined
     
     /** Specifies the rangeColorMapping settings of the treemap
       * @Default {[]}
       */
-    var rangeColorMapping: js.UndefOr[js.Array[RangeColorMapping]] = js.native
+    var rangeColorMapping: js.UndefOr[js.Array[RangeColorMapping]] = js.undefined
     
     /** Triggers after refreshing the treemap items.
       */
-    var refreshed: js.UndefOr[js.Function1[/* e */ RefreshedEventArgs, Unit]] = js.native
+    var refreshed: js.UndefOr[js.Function1[/* e */ RefreshedEventArgs, Unit]] = js.undefined
     
     /** Fires, on right clicking the tree map items.
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the selection mode of treemap item. Accepted selection mode values are Default and Multiple.
       * @Default {default}
       */
-    var selectionMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.selectionMode | String] = js.native
+    var selectionMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.selectionMode | String] = js.undefined
     
     /** Specifies the legend visibility status of the treemap
       * @Default {false}
       */
-    var showLegend: js.UndefOr[Boolean] = js.native
+    var showLegend: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether treemap showTooltip need to be visible
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the tooltip template of the treemap
       * @Default {null}
       */
-    var tooltipTemplate: js.UndefOr[String] = js.native
+    var tooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Triggers when the group selection is performed on treemap items.
       */
-    var treeMapGroupSelected: js.UndefOr[js.Function1[/* e */ TreeMapGroupSelectedEventArgs, Unit]] = js.native
+    var treeMapGroupSelected: js.UndefOr[js.Function1[/* e */ TreeMapGroupSelectedEventArgs, Unit]] = js.undefined
     
     /** Triggers on treemap item selected.
       */
-    var treeMapItemSelected: js.UndefOr[js.Function1[/* e */ TreeMapItemSelectedEventArgs, Unit]] = js.native
+    var treeMapItemSelected: js.UndefOr[js.Function1[/* e */ TreeMapItemSelectedEventArgs, Unit]] = js.undefined
     
     /** Hold the treeMapItems to be displayed in treemap
       * @Default {[]}
       */
-    var treeMapItems: js.UndefOr[js.Array[_]] = js.native
+    var treeMapItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the uniColorMapping settings of the treemap
       */
-    var uniColorMapping: js.UndefOr[UniColorMapping] = js.native
+    var uniColorMapping: js.UndefOr[UniColorMapping] = js.undefined
     
     /** Specifies the weight value path of the treemap
       * @Default {null}
       */
-    var weightValuePath: js.UndefOr[String] = js.native
+    var weightValuePath: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -1480,7 +1524,7 @@ object TreeMap {
       def setTreeMapItemSelectedUndefined: Self = StObject.set(x, "treeMapItemSelected", js.undefined)
       
       @scala.inline
-      def setTreeMapItems(value: js.Array[_]): Self = StObject.set(x, "treeMapItems", value.asInstanceOf[js.Any])
+      def setTreeMapItems(value: js.Array[js.Any]): Self = StObject.set(x, "treeMapItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTreeMapItemsUndefined: Self = StObject.set(x, "treeMapItems", js.undefined)
@@ -1502,13 +1546,12 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait PaletteColorMapping extends StObject {
     
     /** Specifies the colors of the paletteColorMapping
       * @Default {[]}
       */
-    var colors: js.UndefOr[js.Array[_]] = js.native
+    var colors: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object PaletteColorMapping {
     
@@ -1522,7 +1565,7 @@ object TreeMap {
     implicit class PaletteColorMappingMutableBuilder[Self <: PaletteColorMapping] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setColors(value: js.Array[_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
@@ -1532,33 +1575,32 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait RangeColorMapping extends StObject {
     
     /** Specifies the color value for rangeColorMapping.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the from value for rangeColorMapping.
       * @Default {-1}
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /** specifies the gradient colors for th given range value
       * @Default {[]}
       */
-    var gradientColors: js.UndefOr[js.Array[_]] = js.native
+    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the legend label value for rangeColorMapping.
       * @Default {null}
       */
-    var legendLabel: js.UndefOr[String] = js.native
+    var legendLabel: js.UndefOr[String] = js.undefined
     
     /** Specifies the to value for rangeColorMapping.
       * @Default {-1}
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object RangeColorMapping {
     
@@ -1584,7 +1626,7 @@ object TreeMap {
       def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
       @scala.inline
-      def setGradientColors(value: js.Array[_]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
@@ -1606,12 +1648,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait RefreshedEventArgs extends StObject {
     
     /** Refresh and load the treemap.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object RefreshedEventArgs {
     
@@ -1632,12 +1673,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** Returns the right clicked group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -1658,12 +1698,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait TreeMapGroupSelectedEventArgs extends StObject {
     
     /** Returns the  selected group of treeMapItems as  object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object TreeMapGroupSelectedEventArgs {
     
@@ -1684,12 +1723,11 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait TreeMapItemSelectedEventArgs extends StObject {
     
     /** Returns selected treeMapItem object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object TreeMapItemSelectedEventArgs {
     
@@ -1710,13 +1748,12 @@ object TreeMap {
     }
   }
   
-  @js.native
   trait UniColorMapping extends StObject {
     
     /** Specifies the uniform color mapping of the treemap
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object UniColorMapping {
     

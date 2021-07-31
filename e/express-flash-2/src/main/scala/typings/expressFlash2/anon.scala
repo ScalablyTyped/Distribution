@@ -2,15 +2,13 @@ package typings.expressFlash2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Flash extends StObject {
     
-    var flash: js.UndefOr[typings.expressFlash2.mod.global.Express.Flash] = js.native
+    var flash: js.UndefOr[typings.expressFlash2.mod.global.Express.Flash] = js.undefined
   }
   object Flash {
     

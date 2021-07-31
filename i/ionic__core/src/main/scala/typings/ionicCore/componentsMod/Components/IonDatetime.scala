@@ -5,131 +5,129 @@ import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonDatetime extends StObject {
   
   /**
     * The text to display on the picker's cancel button.
     */
-  var cancelText: String = js.native
+  var cancelText: String
   
   /**
     * Full day of the week names. This can be used to provide locale names for each day in the week. Defaults to English.
     */
-  var dayNames: js.UndefOr[js.Array[String] | String] = js.native
+  var dayNames: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /**
     * Short abbreviated day of the week names. This can be used to provide locale names for each day in the week. Defaults to English. Defaults to: `['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']`
     */
-  var dayShortNames: js.UndefOr[js.Array[String] | String] = js.native
+  var dayShortNames: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /**
     * Values used to create the list of selectable days. By default every day is shown for the given month. However, to control exactly which days of the month to display, the `dayValues` input can take a number, an array of numbers, or a string of comma separated numbers. Note that even if the array days have an invalid number for the selected month, like `31` in February, it will correctly not show days which are not valid for the selected month.
     */
-  var dayValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+  var dayValues: js.UndefOr[js.Array[Double] | Double | String] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the datetime.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * The display format of the date and time as text that shows within the item. When the `pickerFormat` input is not used, then the `displayFormat` is used for both display the formatted text, and determining the datetime picker's columns. See the `pickerFormat` input description for more info. Defaults to `MMM D, YYYY`.
     */
-  var displayFormat: String = js.native
+  var displayFormat: String
   
   /**
     * The timezone to use for display purposes only. See [Date.prototype.toLocaleString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString) for a list of supported timezones. If no value is provided, the component will default to displaying times in the user's local timezone.
     */
-  var displayTimezone: js.UndefOr[String] = js.native
+  var displayTimezone: js.UndefOr[String] = js.undefined
   
   /**
     * The text to display on the picker's "Done" button.
     */
-  var doneText: String = js.native
+  var doneText: String
   
   /**
     * Values used to create the list of selectable hours. By default the hour values range from `0` to `23` for 24-hour, or `1` to `12` for 12-hour. However, to control exactly which hours to display, the `hourValues` input can take a number, an array of numbers, or a string of comma separated numbers.
     */
-  var hourValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+  var hourValues: js.UndefOr[js.Array[Double] | Double | String] = js.undefined
   
   /**
     * The maximum datetime allowed. Value must be a date string following the [ISO 8601 datetime format standard](https://www.w3.org/TR/NOTE-datetime), `1996-12-19`. The format does not have to be specific to an exact datetime. For example, the maximum could just be the year, such as `1994`. Defaults to the end of this year.
     */
-  var max: js.UndefOr[String] = js.native
+  var max: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum datetime allowed. Value must be a date string following the [ISO 8601 datetime format standard](https://www.w3.org/TR/NOTE-datetime), such as `1996-12-19`. The format does not have to be specific to an exact datetime. For example, the minimum could just be the year, such as `1994`. Defaults to the beginning of the year, 100 years ago from today.
     */
-  var min: js.UndefOr[String] = js.native
+  var min: js.UndefOr[String] = js.undefined
   
   /**
     * Values used to create the list of selectable minutes. By default the minutes range from `0` to `59`. However, to control exactly which minutes to display, the `minuteValues` input can take a number, an array of numbers, or a string of comma separated numbers. For example, if the minute selections should only be every 15 minutes, then this input value would be `minuteValues="0,15,30,45"`.
     */
-  var minuteValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+  var minuteValues: js.UndefOr[js.Array[Double] | Double | String] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Full names for each month name. This can be used to provide locale month names. Defaults to English.
     */
-  var monthNames: js.UndefOr[js.Array[String] | String] = js.native
+  var monthNames: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /**
     * Short abbreviated names for each month name. This can be used to provide locale month names. Defaults to English.
     */
-  var monthShortNames: js.UndefOr[js.Array[String] | String] = js.native
+  var monthShortNames: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /**
     * Values used to create the list of selectable months. By default the month values range from `1` to `12`. However, to control exactly which months to display, the `monthValues` input can take a number, an array of numbers, or a string of comma separated numbers. For example, if only summer months should be shown, then this input value would be `monthValues="6,7,8"`. Note that month numbers do *not* have a zero-based index, meaning January's value is `1`, and December's is `12`.
     */
-  var monthValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+  var monthValues: js.UndefOr[js.Array[Double] | Double | String] = js.undefined
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Opens the datetime overlay.
     */
-  def open(): js.Promise[Unit] = js.native
+  def open(): js.Promise[Unit]
   
   /**
     * The format of the date and time picker columns the user selects. A datetime input can have one or many datetime parts, each getting their own column which allow individual selection of that particular datetime part. For example, year and month columns are two individually selectable columns which help choose an exact date from the datetime picker. Each column follows the string parse format. Defaults to use `displayFormat`.
     */
-  var pickerFormat: js.UndefOr[String] = js.native
+  var pickerFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Any additional options that the picker interface can accept. See the [Picker API docs](../picker) for the picker options.
     */
-  var pickerOptions: js.UndefOr[DatetimeOptions] = js.native
+  var pickerOptions: js.UndefOr[DatetimeOptions] = js.undefined
   
   /**
     * The text to display when there's no date selected yet. Using lowercase to match the input attribute
     */
-  var placeholder: js.UndefOr[String | Null] = js.native
+  var placeholder: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If `true`, the datetime appears normal but is not interactive.
     */
-  var readonly: Boolean = js.native
+  var readonly: Boolean
   
   /**
     * The value of the datetime as a valid ISO 8601 datetime string.
     */
-  var value: js.UndefOr[String | Null] = js.native
+  var value: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Values used to create the list of selectable years. By default the year values range between the `min` and `max` datetime inputs. However, to control exactly which years to display, the `yearValues` input can take a number, an array of numbers, or string of comma separated numbers. For example, to show upcoming and recent leap years, then this input's value would be `yearValues="2024,2020,2016,2012,2008"`.
     */
-  var yearValues: js.UndefOr[js.Array[Double] | Double | String] = js.native
+  var yearValues: js.UndefOr[js.Array[Double] | Double | String] = js.undefined
 }
 object IonDatetime {
   

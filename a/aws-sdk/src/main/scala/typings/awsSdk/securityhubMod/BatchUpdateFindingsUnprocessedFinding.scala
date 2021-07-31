@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateFindingsUnprocessedFinding extends StObject {
   
   /**
     * The code associated with the error.
     */
-  var ErrorCode: NonEmptyString = js.native
+  var ErrorCode: NonEmptyString
   
   /**
     * The message associated with the error.
     */
-  var ErrorMessage: NonEmptyString = js.native
+  var ErrorMessage: NonEmptyString
   
   /**
     * The identifier of the finding that was not updated.
     */
-  var FindingIdentifier: AwsSecurityFindingIdentifier = js.native
+  var FindingIdentifier: AwsSecurityFindingIdentifier
 }
 object BatchUpdateFindingsUnprocessedFinding {
   

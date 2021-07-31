@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeploymentJobRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the deployment job.
     */
-  var job: Arn = js.native
+  var job: Arn
 }
 object DescribeDeploymentJobRequest {
   

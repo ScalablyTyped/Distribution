@@ -9,56 +9,54 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.IconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.CheckBoxProps> */
-@js.native
 trait PartialCheckBoxProps extends StObject {
   
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var checkedColor: js.UndefOr[String] = js.native
+  var checkedColor: js.UndefOr[String] = js.undefined
   
-  var checkedIcon: js.UndefOr[String | ReactElement] = js.native
+  var checkedIcon: js.UndefOr[String | ReactElement] = js.undefined
   
-  var checkedTitle: js.UndefOr[String] = js.native
+  var checkedTitle: js.UndefOr[String] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var iconRight: js.UndefOr[Boolean] = js.native
+  var iconRight: js.UndefOr[Boolean] = js.undefined
   
-  var iconType: js.UndefOr[IconType] = js.native
+  var iconType: js.UndefOr[IconType] = js.undefined
   
-  var onIconPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onIconPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLongIconPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongIconPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var right: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var title: js.UndefOr[String | ReactElement] = js.native
+  var title: js.UndefOr[String | ReactElement] = js.undefined
   
-  var titleProps: js.UndefOr[PartialTextProperties] = js.native
+  var titleProps: js.UndefOr[PartialTextProperties] = js.undefined
   
-  var uncheckedColor: js.UndefOr[String] = js.native
+  var uncheckedColor: js.UndefOr[String] = js.undefined
   
-  var uncheckedIcon: js.UndefOr[String | ReactElement] = js.native
+  var uncheckedIcon: js.UndefOr[String | ReactElement] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object PartialCheckBoxProps {
   

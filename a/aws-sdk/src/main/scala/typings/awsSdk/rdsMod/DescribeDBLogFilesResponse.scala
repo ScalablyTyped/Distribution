@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDBLogFilesResponse extends StObject {
   
   /**
     * The DB log files returned.
     */
-  var DescribeDBLogFiles: js.UndefOr[DescribeDBLogFilesList] = js.native
+  var DescribeDBLogFiles: js.UndefOr[DescribeDBLogFilesList] = js.undefined
   
   /**
     * A pagination token that can be used in a later DescribeDBLogFiles request.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object DescribeDBLogFilesResponse {
   

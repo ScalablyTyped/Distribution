@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a USSD message that is used for sending messages to and receiving messages from the network. */
-@js.native
 trait UssdMessage extends StObject {
   
   /** Gets or sets the encoding scheme of the payload of this UssdMessage . */
-  var dataCodingScheme: Double = js.native
+  var dataCodingScheme: Double
   
   /**
     * Gets the raw payload of this UssdMessage .
     * @return The raw payload of this UssdMessage .
     */
-  def getPayload(): js.Array[Double] = js.native
+  def getPayload(): js.Array[Double]
   
   /** Gets or sets the payload of this UssdMessage as text. */
-  var payloadAsText: String = js.native
+  var payloadAsText: String
   
   /**
     * Sets the raw payload of this UssdMessage .
     * @param value The raw payload of this UssdMessage .
     */
-  def setPayload(value: js.Array[Double]): Unit = js.native
+  def setPayload(value: js.Array[Double]): Unit
 }
 object UssdMessage {
   

@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainAdvancedSecurityOptions extends StObject {
   
   /**
     * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Whether the internal user database is enabled. If not set, defaults to `false` by the AWS API.
     */
-  var internalUserDatabaseEnabled: js.UndefOr[Boolean] = js.native
+  var internalUserDatabaseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Credentials for the master user: username and password, or ARN
     */
-  var masterUserOptions: js.UndefOr[DomainAdvancedSecurityOptionsMasterUserOptions] = js.native
+  var masterUserOptions: js.UndefOr[DomainAdvancedSecurityOptionsMasterUserOptions] = js.undefined
 }
 object DomainAdvancedSecurityOptions {
   

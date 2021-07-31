@@ -4,7 +4,6 @@ import typings.playcanvas.anon.Gamepads
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,8 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Controller")
 @js.native
 class Controller ()
-  extends typings.playcanvas.pc.Controller {
+  extends StObject
+     with typings.playcanvas.pc.Controller {
   def this(element: Element) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: Gamepads) = this()
+  def this(element: Unit, options: Gamepads) = this()
   def this(element: Element, options: Gamepads) = this()
 }

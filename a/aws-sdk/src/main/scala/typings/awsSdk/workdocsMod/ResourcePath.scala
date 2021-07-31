@@ -2,16 +2,14 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePath extends StObject {
   
   /**
     * The components of the resource path.
     */
-  var Components: js.UndefOr[ResourcePathComponentList] = js.native
+  var Components: js.UndefOr[ResourcePathComponentList] = js.undefined
 }
 object ResourcePath {
   

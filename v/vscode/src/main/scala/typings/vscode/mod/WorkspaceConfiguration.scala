@@ -5,12 +5,12 @@ import typings.vscode.Thenable
 import typings.vscode.anon.DefaultLanguageValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WorkspaceConfiguration
-  extends /**
+  extends StObject
+     with /**
   * Additional debug type specific properties.
   */
 /* key */ StringDictionary[js.Any] {
@@ -85,14 +85,9 @@ trait WorkspaceConfiguration
     *    - configuration to workspace folder when [WorkspaceConfiguration](#WorkspaceConfiguration) is not scoped to a resource.
     */
   def update(section: String, value: js.Any): Thenable[Unit] = js.native
-  def update(
-    section: String,
-    value: js.Any,
-    configurationTarget: js.UndefOr[scala.Nothing],
-    overrideInLanguage: Boolean
-  ): Thenable[Unit] = js.native
   def update(section: String, value: js.Any, configurationTarget: Boolean): Thenable[Unit] = js.native
   def update(section: String, value: js.Any, configurationTarget: Boolean, overrideInLanguage: Boolean): Thenable[Unit] = js.native
+  def update(section: String, value: js.Any, configurationTarget: Unit, overrideInLanguage: Boolean): Thenable[Unit] = js.native
   def update(section: String, value: js.Any, configurationTarget: ConfigurationTarget): Thenable[Unit] = js.native
   def update(
     section: String,

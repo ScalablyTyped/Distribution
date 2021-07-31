@@ -2,21 +2,19 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallerID extends StObject {
   
   /**
     * Name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Number.
     */
-  var number: String = js.native
+  var number: String
 }
 object CallerID {
   

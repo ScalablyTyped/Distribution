@@ -2,11 +2,9 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`. */
-@js.native
 trait CustomPropertyUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CustomPropertyUpdateData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CustomPropertyUpdateData {
   

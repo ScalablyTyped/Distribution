@@ -3,23 +3,21 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISidenavObject extends StObject {
   
-  def close(): IPromise[Unit] = js.native
+  def close(): IPromise[Unit]
   
-  def isLockedOpen(): Boolean = js.native
+  def isLockedOpen(): Boolean
   
-  def isOpen(): Boolean = js.native
+  def isOpen(): Boolean
   
-  def onClose(onClose: js.Function0[Unit]): Unit = js.native
+  def onClose(onClose: js.Function0[Unit]): Unit
   
-  def open(): IPromise[Unit] = js.native
+  def open(): IPromise[Unit]
   
-  def toggle(): IPromise[Unit] = js.native
+  def toggle(): IPromise[Unit]
 }
 object ISidenavObject {
   

@@ -9,7 +9,6 @@ import typings.reactSound.reactSoundStrings.PLAYING
 import typings.reactSound.reactSoundStrings.STOPPED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,42 +25,41 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[ReactSoundProps, ComponentState] = js.native
   
-  @js.native
   trait ReactSoundProps extends StObject {
     
-    var autoLoad: js.UndefOr[Boolean] = js.native
+    var autoLoad: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var onBufferChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBufferChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function0[Unit]] = js.native
+    var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFinishedPlaying: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFinishedPlaying: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoading: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoading: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPause: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPlaying: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPlaying: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onResume: js.UndefOr[js.Function0[Unit]] = js.native
+    var onResume: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onStop: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var playFromPosition: js.UndefOr[Double] = js.native
+    var playFromPosition: js.UndefOr[Double] = js.undefined
     
-    var playStatus: PLAYING | STOPPED | PAUSED = js.native
+    var playStatus: PLAYING | STOPPED | PAUSED
     
-    var playbackRate: js.UndefOr[Double] = js.native
+    var playbackRate: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object ReactSoundProps {
     

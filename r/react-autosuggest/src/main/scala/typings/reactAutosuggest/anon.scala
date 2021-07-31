@@ -3,23 +3,21 @@ package typings.reactAutosuggest
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var id: String = js.native
+    var id: String
     
-    var key: String = js.native
+    var key: String
     
-    var ref: js.Any = js.native
+    var ref: js.Any
     
-    var role: String = js.native
+    var role: String
   }
   object ClassName {
     
@@ -50,36 +48,35 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Record<react-autosuggest.react-autosuggest.ThemeKey, string | react.react.CSSProperties>> */
-  @js.native
   trait PartialRecordThemeKeystri extends StObject {
     
-    var container: js.UndefOr[String | CSSProperties] = js.native
+    var container: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var containerOpen: js.UndefOr[String | CSSProperties] = js.native
+    var containerOpen: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var input: js.UndefOr[String | CSSProperties] = js.native
+    var input: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var inputFocused: js.UndefOr[String | CSSProperties] = js.native
+    var inputFocused: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var inputOpen: js.UndefOr[String | CSSProperties] = js.native
+    var inputOpen: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var sectionContainer: js.UndefOr[String | CSSProperties] = js.native
+    var sectionContainer: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var sectionContainerFirst: js.UndefOr[String | CSSProperties] = js.native
+    var sectionContainerFirst: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var sectionTitle: js.UndefOr[String | CSSProperties] = js.native
+    var sectionTitle: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var suggestion: js.UndefOr[String | CSSProperties] = js.native
+    var suggestion: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var suggestionFirst: js.UndefOr[String | CSSProperties] = js.native
+    var suggestionFirst: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var suggestionHighlighted: js.UndefOr[String | CSSProperties] = js.native
+    var suggestionHighlighted: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var suggestionsContainer: js.UndefOr[String | CSSProperties] = js.native
+    var suggestionsContainer: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var suggestionsContainerOpen: js.UndefOr[String | CSSProperties] = js.native
+    var suggestionsContainerOpen: js.UndefOr[String | CSSProperties] = js.undefined
     
-    var suggestionsList: js.UndefOr[String | CSSProperties] = js.native
+    var suggestionsList: js.UndefOr[String | CSSProperties] = js.undefined
   }
   object PartialRecordThemeKeystri {
     

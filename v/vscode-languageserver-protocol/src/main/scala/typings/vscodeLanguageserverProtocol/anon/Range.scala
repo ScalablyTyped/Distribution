@@ -3,28 +3,28 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentContentChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Range extends TextDocumentContentChangeEvent {
+trait Range
+  extends StObject
+     with TextDocumentContentChangeEvent {
   
   /**
     * The range of the document that changed.
     */
-  var range: typings.vscodeLanguageserverTypes.mod.Range = js.native
+  var range: typings.vscodeLanguageserverTypes.mod.Range
   
   /**
     * The optional length of the range that got replaced.
     *
     * @deprecated use range instead.
     */
-  var rangeLength: js.UndefOr[Double] = js.native
+  var rangeLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The new text for the provided range.
     */
-  var text: String = js.native
+  var text: String
 }
 object Range {
   

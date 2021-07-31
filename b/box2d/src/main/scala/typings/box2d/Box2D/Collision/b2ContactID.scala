@@ -2,33 +2,31 @@ package typings.box2d.Box2D.Collision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2ContactID extends StObject {
   
   /**
     * Copies the Contact ID.
     * @return Copied Contact ID.
     **/
-  def Copy(): b2ContactID = js.native
+  def Copy(): b2ContactID
   
   /**
     * ID Key
     **/
-  var Key: Double = js.native
+  var Key: Double
   
   /**
     * Sets the Contact ID from a Contact ID.
     * @param id The Contact ID to copy values from.
     **/
-  def Set(id: b2ContactID): Unit = js.native
+  def Set(id: b2ContactID): Unit
   
   /**
     * Features
     **/
-  var features: Features = js.native
+  var features: Features
 }
 object b2ContactID {
   

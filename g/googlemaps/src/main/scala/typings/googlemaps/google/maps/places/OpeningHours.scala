@@ -3,7 +3,6 @@ package typings.googlemaps.google.maps.places
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO rename to PlaceOpeningHours https://developers.google.com/maps/documentation/javascript/reference/places-service#PlaceOpeningHours

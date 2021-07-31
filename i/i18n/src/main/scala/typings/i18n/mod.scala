@@ -11,10 +11,13 @@ import typings.i18n.i18n.Replacements
 import typings.i18n.i18n.TranslateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("i18n", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   //#region __()
   /**
@@ -22,32 +25,27 @@ object mod {
     * @param phraseOrOptions - The phrase to translate or options for translation
     * @returns The translated phrase
     */
-  @JSImport("i18n", "__")
-  @js.native
-  def __(phraseOrOptions: String, replace: String*): String = js.native
+  @scala.inline
+  def __(phraseOrOptions: String, replace: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(phraseOrOptions.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Translate the given phrase using locale configuration
     * @param phraseOrOptions - The phrase to translate or options for translation
     * @param replacements - An object containing replacements
     * @returns The translated phrase
     */
-  @JSImport("i18n", "__")
-  @js.native
-  def __(phraseOrOptions: String, replacements: Replacements): String = js.native
-  @JSImport("i18n", "__")
-  @js.native
-  def __(phraseOrOptions: TranslateOptions, replace: String*): String = js.native
-  @JSImport("i18n", "__")
-  @js.native
-  def __(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+  @scala.inline
+  def __(phraseOrOptions: String, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def __(phraseOrOptions: TranslateOptions, replace: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(phraseOrOptions.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def __(phraseOrOptions: TranslateOptions, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Configure current i18n instance
     * @param options - configuration options for i18n
     */
-  @JSImport("i18n", "configure")
-  @js.native
-  def configure(options: ConfigurationOptions): Unit = js.native
+  @scala.inline
+  def configure(options: ConfigurationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   //#endregion
   //#region Catalog
@@ -55,48 +53,41 @@ object mod {
     * Get the current global catalog
     * @returns The current global catalog
     */
-  @JSImport("i18n", "getCatalog")
-  @js.native
-  def getCatalog(): GlobalCatalog = js.native
+  @scala.inline
+  def getCatalog(): GlobalCatalog = ^.asInstanceOf[js.Dynamic].applyDynamic("getCatalog")().asInstanceOf[GlobalCatalog]
   /**
     * Get the catalog for the given locale
     * @param locale - The locale to get catalog for
     * @returns The specified locale catalog
     */
-  @JSImport("i18n", "getCatalog")
-  @js.native
-  def getCatalog(locale: String): LocaleCatalog = js.native
+  @scala.inline
+  def getCatalog(locale: String): LocaleCatalog = ^.asInstanceOf[js.Dynamic].applyDynamic("getCatalog")(locale.asInstanceOf[js.Any]).asInstanceOf[LocaleCatalog]
   /**
     * Get the current active locale catalog for specified request
     * @param request - The request to get locale catalog for
     * @param [locale] - The locale to get catalog for
     * @returns The current locale catalog for the specified request
     */
-  @JSImport("i18n", "getCatalog")
-  @js.native
-  def getCatalog(request: Request): LocaleCatalog = js.native
-  @JSImport("i18n", "getCatalog")
-  @js.native
-  def getCatalog(request: Request, locale: String): LocaleCatalog = js.native
+  @scala.inline
+  def getCatalog(request: Request): LocaleCatalog = ^.asInstanceOf[js.Dynamic].applyDynamic("getCatalog")(request.asInstanceOf[js.Any]).asInstanceOf[LocaleCatalog]
+  @scala.inline
+  def getCatalog(request: Request, locale: String): LocaleCatalog = (^.asInstanceOf[js.Dynamic].applyDynamic("getCatalog")(request.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[LocaleCatalog]
   
   /**
     * Get the current active locale for specified request
     * @param [request] - The request to get locale for
     * @returns The current locale in request
     */
-  @JSImport("i18n", "getLocale")
-  @js.native
-  def getLocale(): String = js.native
-  @JSImport("i18n", "getLocale")
-  @js.native
-  def getLocale(request: Request): String = js.native
+  @scala.inline
+  def getLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")().asInstanceOf[String]
+  @scala.inline
+  def getLocale(request: Request): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")(request.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Get a list with all configured locales
     */
-  @JSImport("i18n", "getLocales")
-  @js.native
-  def getLocales(): js.Array[String] = js.native
+  @scala.inline
+  def getLocales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")().asInstanceOf[js.Array[String]]
   
   //#endregion
   //#region __h()
@@ -105,9 +96,8 @@ object mod {
     * @param phrase - The phrase to get translations in each language
     * @returns The phrase in each language
     */
-  @JSImport("i18n", "__h")
-  @js.native
-  def h(phrase: String): js.Array[HashedList] = js.native
+  @scala.inline
+  def h(phrase: String): js.Array[HashedList] = ^.asInstanceOf[js.Dynamic].applyDynamic("__h")(phrase.asInstanceOf[js.Any]).asInstanceOf[js.Array[HashedList]]
   
   /**
     * Initialize i18n middleware for express
@@ -115,12 +105,10 @@ object mod {
     * @param response - Current express response
     * @param next - Callback to continue process
     */
-  @JSImport("i18n", "init")
-  @js.native
-  def init(request: Request, response: Response): Unit = js.native
-  @JSImport("i18n", "init")
-  @js.native
-  def init(request: Request, response: Response, next: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def init(request: Request, response: Response): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def init(request: Request, response: Response, next: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   //#endregion
   //#region __l()
@@ -129,9 +117,8 @@ object mod {
     * @param phrase - The phrase to get translations in each language
     * @returns The phrase in each language
     */
-  @JSImport("i18n", "__l")
-  @js.native
-  def l(phrase: String): js.Array[String] = js.native
+  @scala.inline
+  def l(phrase: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("__l")(phrase.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   //#endregion
   //#region __mf()
@@ -140,24 +127,20 @@ object mod {
     * @param phraseOrOptions - The phrase to translate or options for translation
     * @returns The translated phrase
     */
-  @JSImport("i18n", "__mf")
-  @js.native
-  def mf(phraseOrOptions: String, replace: js.Any*): String = js.native
+  @scala.inline
+  def mf(phraseOrOptions: String, replace: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(phraseOrOptions.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Translate the given phrase using locale configuration and MessageFormat
     * @param phraseOrOptions - The phrase to translate or options for translation
     * @param replacements - An object containing replacements
     * @returns The translated phrase
     */
-  @JSImport("i18n", "__mf")
-  @js.native
-  def mf(phraseOrOptions: String, replacements: Replacements): String = js.native
-  @JSImport("i18n", "__mf")
-  @js.native
-  def mf(phraseOrOptions: TranslateOptions, replace: js.Any*): String = js.native
-  @JSImport("i18n", "__mf")
-  @js.native
-  def mf(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
+  @scala.inline
+  def mf(phraseOrOptions: String, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mf(phraseOrOptions: TranslateOptions, replace: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(phraseOrOptions.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mf(phraseOrOptions: TranslateOptions, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Translate with plural condition the given phrase and count using locale configuration
@@ -165,12 +148,10 @@ object mod {
     * @param [count] - The number which allow to select from plural to singular
     * @returns The translated phrase
     */
-  @JSImport("i18n", "__n")
-  @js.native
-  def n(options: PluralOptions): String = js.native
-  @JSImport("i18n", "__n")
-  @js.native
-  def n(options: PluralOptions, count: Double): String = js.native
+  @scala.inline
+  def n(options: PluralOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__n")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def n(options: PluralOptions, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__n")(options.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   //#endregion
   //#region __n()
   /**
@@ -179,12 +160,10 @@ object mod {
     * @param count - The number which allow to select from plural to singular
     * @returns The translated phrase
     */
-  @JSImport("i18n", "__n")
-  @js.native
-  def n(phrase: String, count: Double): String = js.native
-  @JSImport("i18n", "__n")
-  @js.native
-  def n(singular: String, plural: String, count: String): String = js.native
+  @scala.inline
+  def n(phrase: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__n")(phrase.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def n(singular: String, plural: String, count: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__n")(singular.asInstanceOf[js.Any], plural.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Translate with plural condition the given phrase and count using locale configuration
     * @param singular - The singular phrase to translate if count is <= 1
@@ -192,21 +171,18 @@ object mod {
     * @param count - The number which allow to select from plural to singular
     * @returns The translated phrase
     */
-  @JSImport("i18n", "__n")
-  @js.native
-  def n(singular: String, plural: String, count: Double): String = js.native
+  @scala.inline
+  def n(singular: String, plural: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__n")(singular.asInstanceOf[js.Any], plural.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   
   //#endregion
   /**
     * Override the current request locale by using the query param (?locale=en)
     * @param [request] - The request to override locale for
     */
-  @JSImport("i18n", "overrideLocaleFromQuery")
-  @js.native
-  def overrideLocaleFromQuery(): Unit = js.native
-  @JSImport("i18n", "overrideLocaleFromQuery")
-  @js.native
-  def overrideLocaleFromQuery(request: Request): Unit = js.native
+  @scala.inline
+  def overrideLocaleFromQuery(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideLocaleFromQuery")().asInstanceOf[Unit]
+  @scala.inline
+  def overrideLocaleFromQuery(request: Request): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideLocaleFromQuery")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   //#endregion
   //#region Locale
@@ -214,9 +190,8 @@ object mod {
     * Change the current active locale
     * @param locale - The locale to set as default
     */
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(locale: String): Unit = js.native
+  @scala.inline
+  def setLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Change the current active locale for specified response
     * @param objects - The object(s) to change locale on
@@ -224,36 +199,28 @@ object mod {
     * @param [inheritance=false] - Disables inheritance if true
     */
   // tslint:disable-next-line:unified-signatures
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(objects: js.Any, locale: String): Unit = js.native
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(objects: js.Any, locale: String, inheritance: Boolean): Unit = js.native
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(objects: js.Array[_], locale: String): Unit = js.native
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(objects: js.Array[_], locale: String, inheritance: Boolean): Unit = js.native
+  @scala.inline
+  def setLocale(objects: js.Any, locale: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(objects.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setLocale(objects: js.Any, locale: String, inheritance: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(objects.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], inheritance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setLocale(objects: js.Array[js.Any], locale: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(objects.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setLocale(objects: js.Array[js.Any], locale: String, inheritance: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(objects.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], inheritance.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Change the current active locale for specified response
     * @param response - The request or response to change locale on
     * @param locale - The locale to set as default
     * @param [inheritance=false] - Disables inheritance if true
     */
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(requestOrResponse: Request, locale: String): Unit = js.native
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(requestOrResponse: Request, locale: String, inheritance: Boolean): Unit = js.native
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(requestOrResponse: Response, locale: String): Unit = js.native
-  @JSImport("i18n", "setLocale")
-  @js.native
-  def setLocale(requestOrResponse: Response, locale: String, inheritance: Boolean): Unit = js.native
+  @scala.inline
+  def setLocale(requestOrResponse: Request, locale: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(requestOrResponse.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setLocale(requestOrResponse: Request, locale: String, inheritance: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(requestOrResponse.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], inheritance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setLocale(requestOrResponse: Response, locale: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(requestOrResponse.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setLocale(requestOrResponse: Response, locale: String, inheritance: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(requestOrResponse.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], inheritance.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get current i18n-node version

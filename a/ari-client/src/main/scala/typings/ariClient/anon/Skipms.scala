@@ -2,23 +2,21 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Skipms extends StObject {
   
-  var channelId: String = js.native
+  var channelId: String
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var media: String | js.Array[String] = js.native
+  var media: String | js.Array[String]
   
-  var offsetms: js.UndefOr[Double] = js.native
+  var offsetms: js.UndefOr[Double] = js.undefined
   
-  var playbackId: js.UndefOr[String] = js.native
+  var playbackId: js.UndefOr[String] = js.undefined
   
-  var skipms: js.UndefOr[Double] = js.native
+  var skipms: js.UndefOr[Double] = js.undefined
 }
 object Skipms {
   

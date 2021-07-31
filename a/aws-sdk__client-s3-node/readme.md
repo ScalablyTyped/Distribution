@@ -11,8 +11,8 @@ Node SDK for Amazon Simple Storage Service
 | Full name          | @aws-sdk/client-s3-node |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 28611 |
+| # dependents       | 1 |
+| # downloads        | 47944 |
 | # stars            | 0 |
 
 ## Links

@@ -32,7 +32,6 @@ import typings.activexIwshruntimelibrary.activexIwshruntimelibraryStrings.Volati
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IWshRuntimeLibrary {
@@ -213,7 +212,6 @@ object IWshRuntimeLibrary {
     def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
   }
   
-  @js.native
   trait TextStreamBase extends StObject {
     
     /**
@@ -221,17 +219,17 @@ object IWshRuntimeLibrary {
       * It is not necessary to close standard streams; they close automatically when the process ends. If
       * you close a standard stream, be aware that any other pointers to that standard stream become invalid.
       */
-    def Close(): Unit = js.native
+    def Close(): Unit
     
     /**
       * The column number of the current character position in an input stream.
       */
-    var Column: Double = js.native
+    var Column: Double
     
     /**
       * The current line number in an input stream.
       */
-    var Line: Double = js.native
+    var Line: Double
   }
   object TextStreamBase {
     
@@ -255,54 +253,55 @@ object IWshRuntimeLibrary {
     }
   }
   
-  @js.native
-  trait TextStreamReader extends TextStreamBase {
+  trait TextStreamReader
+    extends StObject
+       with TextStreamBase {
     
     /**
       * Indicates whether the stream pointer position is at the end of a line.
       */
-    var AtEndOfLine: Boolean = js.native
+    var AtEndOfLine: Boolean
     
     /**
       * Indicates whether the stream pointer position is at the end of a stream.
       */
-    var AtEndOfStream: Boolean = js.native
+    var AtEndOfStream: Boolean
     
     @JSName("IWshRuntimeLibrary.TextStreamReader_typekey")
-    var IWshRuntimeLibraryDotTextStreamReader_typekey: TextStreamReader = js.native
+    var IWshRuntimeLibraryDotTextStreamReader_typekey: TextStreamReader
     
     /**
       * Returns a specified number of characters from an input stream, starting at the current pointer position.
       * Does not return until the ENTER key is pressed.
       * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
       */
-    def Read(characters: Double): String = js.native
+    def Read(characters: Double): String
     
     /**
       * Returns all characters from an input stream.
       * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
       */
-    def ReadAll(): String = js.native
+    def ReadAll(): String
     
     /**
       * Returns an entire line from an input stream.
       * Although this method extracts the newline character, it does not add it to the returned string.
       * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
       */
-    def ReadLine(): String = js.native
+    def ReadLine(): String
     
     /**
       * Skips a specified number of characters when reading from an input text stream.
       * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
       * @param characters Positive number of characters to skip forward. (Backward skipping is not supported.)
       */
-    def Skip(characters: Double): Unit = js.native
+    def Skip(characters: Double): Unit
     
     /**
       * Skips the next line when reading from an input text stream.
       * Can only be used on a stream in reading mode, not writing or appending mode.
       */
-    def SkipLine(): Unit = js.native
+    def SkipLine(): Unit
   }
   object TextStreamReader {
     
@@ -354,26 +353,27 @@ object IWshRuntimeLibrary {
     }
   }
   
-  @js.native
-  trait TextStreamWriter extends TextStreamBase {
+  trait TextStreamWriter
+    extends StObject
+       with TextStreamBase {
     
     @JSName("IWshRuntimeLibrary.TextStreamWriter_typekey")
-    var IWshRuntimeLibraryDotTextStreamWriter_typekey: TextStreamWriter = js.native
+    var IWshRuntimeLibraryDotTextStreamWriter_typekey: TextStreamWriter
     
     /**
       * Sends a string to an output stream.
       */
-    def Write(s: String): Unit = js.native
+    def Write(s: String): Unit
     
     /**
       * Sends a specified number of blank lines (newline characters) to an output stream.
       */
-    def WriteBlankLines(intLines: Double): Unit = js.native
+    def WriteBlankLines(intLines: Double): Unit
     
     /**
       * Sends a string followed by a newline character to an output stream.
       */
-    def WriteLine(s: String): Unit = js.native
+    def WriteLine(s: String): Unit
   }
   object TextStreamWriter {
     
@@ -488,25 +488,24 @@ object IWshRuntimeLibrary {
   }
   
   /** WSHExec object */
-  @js.native
   trait WshExec extends StObject {
     
-    val ExitCode: Double = js.native
+    val ExitCode: Double
     
     @JSName("IWshRuntimeLibrary.WshExec_typekey")
-    var IWshRuntimeLibraryDotWshExec_typekey: WshExec = js.native
+    var IWshRuntimeLibraryDotWshExec_typekey: WshExec
     
-    val ProcessID: Double = js.native
+    val ProcessID: Double
     
-    val Status: WshExecStatus = js.native
+    val Status: WshExecStatus
     
-    val StdErr: TextStreamWriter = js.native
+    val StdErr: TextStreamWriter
     
-    val StdIn: TextStreamReader = js.native
+    val StdIn: TextStreamReader
     
-    val StdOut: TextStreamWriter = js.native
+    val StdOut: TextStreamWriter
     
-    def Terminate(): Unit = js.native
+    def Terminate(): Unit
   }
   object WshExec {
     
@@ -586,31 +585,13 @@ object IWshRuntimeLibrary {
       * If you are mapping a remote printer using the profile of someone other than current user, you can specify _UserName_ and _Password_.
       */
     def AddPrinterConnection(LocalName: String, RemoteName: String): Unit = js.native
-    def AddPrinterConnection(
-      LocalName: String,
-      RemoteName: String,
-      UpdateProfile: js.UndefOr[scala.Nothing],
-      UserName: js.UndefOr[scala.Nothing],
-      Password: String
-    ): Unit = js.native
-    def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: js.UndefOr[scala.Nothing], UserName: String): Unit = js.native
-    def AddPrinterConnection(
-      LocalName: String,
-      RemoteName: String,
-      UpdateProfile: js.UndefOr[scala.Nothing],
-      UserName: String,
-      Password: String
-    ): Unit = js.native
     def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean): Unit = js.native
-    def AddPrinterConnection(
-      LocalName: String,
-      RemoteName: String,
-      UpdateProfile: Boolean,
-      UserName: js.UndefOr[scala.Nothing],
-      Password: String
-    ): Unit = js.native
     def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String): Unit = js.native
     def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String, Password: String): Unit = js.native
+    def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: Unit, Password: String): Unit = js.native
+    def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Unit, UserName: String): Unit = js.native
+    def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Unit, UserName: String, Password: String): Unit = js.native
+    def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Unit, UserName: Unit, Password: String): Unit = js.native
     
     /**
       * @param string Path to printer connection
@@ -620,9 +601,9 @@ object IWshRuntimeLibrary {
       * Unlike the **AddPrinterConnection** method, this method allows you to create a printer connection without directing it to a specific port, such as LPT1.
       */
     def AddWindowsPrinterConnection(PrinterName: String): Unit = js.native
-    def AddWindowsPrinterConnection(PrinterName: String, DriverName: js.UndefOr[scala.Nothing], Port: String): Unit = js.native
     def AddWindowsPrinterConnection(PrinterName: String, DriverName: String): Unit = js.native
     def AddWindowsPrinterConnection(PrinterName: String, DriverName: String, Port: String): Unit = js.native
+    def AddWindowsPrinterConnection(PrinterName: String, DriverName: Unit, Port: String): Unit = js.native
     
     val ComputerName: String = js.native
     
@@ -642,31 +623,13 @@ object IWshRuntimeLibrary {
       * If you are mapping a network drive using the profile of someone other than current user, you can specify _UserName_ and _Password_.
       */
     def MapNetworkDrive(LocalName: String, RemoteName: String): Unit = js.native
-    def MapNetworkDrive(
-      LocalName: String,
-      RemoteName: String,
-      UpdateProfile: js.UndefOr[scala.Nothing],
-      UserName: js.UndefOr[scala.Nothing],
-      Password: String
-    ): Unit = js.native
-    def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: js.UndefOr[scala.Nothing], UserName: String): Unit = js.native
-    def MapNetworkDrive(
-      LocalName: String,
-      RemoteName: String,
-      UpdateProfile: js.UndefOr[scala.Nothing],
-      UserName: String,
-      Password: String
-    ): Unit = js.native
     def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean): Unit = js.native
-    def MapNetworkDrive(
-      LocalName: String,
-      RemoteName: String,
-      UpdateProfile: Boolean,
-      UserName: js.UndefOr[scala.Nothing],
-      Password: String
-    ): Unit = js.native
     def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String): Unit = js.native
     def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String, Password: String): Unit = js.native
+    def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: Unit, Password: String): Unit = js.native
+    def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Unit, UserName: String): Unit = js.native
+    def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Unit, UserName: String, Password: String): Unit = js.native
+    def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Unit, UserName: Unit, Password: String): Unit = js.native
     
     val Organization: String = js.native
     
@@ -678,9 +641,9 @@ object IWshRuntimeLibrary {
       * @param UpdateProfile [false] Remove the mapping from the user's profile
       */
     def RemoveNetworkDrive(Name: String): Unit = js.native
-    def RemoveNetworkDrive(Name: String, Force: js.UndefOr[scala.Nothing], UpdateProfile: Boolean): Unit = js.native
     def RemoveNetworkDrive(Name: String, Force: Boolean): Unit = js.native
     def RemoveNetworkDrive(Name: String, Force: Boolean, UpdateProfile: Boolean): Unit = js.native
+    def RemoveNetworkDrive(Name: String, Force: Unit, UpdateProfile: Boolean): Unit = js.native
     
     /**
       * Removes a shared network printer connection from your computer system
@@ -694,7 +657,7 @@ object IWshRuntimeLibrary {
       */
     def RemovePrinterConnection(Name: String): Unit = js.native
     @JSName("RemovePrinterConnection")
-    def RemovePrinterConnection_true(Name: String, Force: js.UndefOr[scala.Nothing], UpdateProfile: `true`): Unit = js.native
+    def RemovePrinterConnection_true(Name: String, Force: Unit, UpdateProfile: `true`): Unit = js.native
     @JSName("RemovePrinterConnection")
     def RemovePrinterConnection_true(Name: String, Force: `true`): Unit = js.native
     @JSName("RemovePrinterConnection")
@@ -766,7 +729,7 @@ object IWshRuntimeLibrary {
       * will return an empty string, unless there is an environment variable named `System`
       */
     @JSName("Environment")
-    var Environment_Original: WshEnvironment with (js.Function1[/* Type */ System | User | Process | Volatile, WshEnvironment]) = js.native
+    var Environment_Original: WshEnvironment & (js.Function1[/* Type */ System | User | Process | Volatile, WshEnvironment]) = js.native
     @JSName("Environment")
     def Environment_Process(Type: Process): WshEnvironment = js.native
     /**
@@ -796,36 +759,21 @@ object IWshRuntimeLibrary {
     def LogEvent(Type: EventType, Message: String, Target: String): Boolean = js.native
     
     def Popup(Text: String): PopupSelection = js.native
-    def Popup(
-      Text: String,
-      SecondsToWait: js.UndefOr[scala.Nothing],
-      Title: js.UndefOr[scala.Nothing],
-      Type: ButtonType
-    ): PopupSelection = js.native
-    def Popup(
-      Text: String,
-      SecondsToWait: js.UndefOr[scala.Nothing],
-      Title: js.UndefOr[scala.Nothing],
-      Type: IconType
-    ): PopupSelection = js.native
-    def Popup(
-      Text: String,
-      SecondsToWait: js.UndefOr[scala.Nothing],
-      Title: js.UndefOr[scala.Nothing],
-      Type: PopupType
-    ): PopupSelection = js.native
-    def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String): PopupSelection = js.native
-    def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String, Type: ButtonType): PopupSelection = js.native
-    def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String, Type: IconType): PopupSelection = js.native
-    def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String, Type: PopupType): PopupSelection = js.native
     def Popup(Text: String, SecondsToWait: Double): PopupSelection = js.native
-    def Popup(Text: String, SecondsToWait: Double, Title: js.UndefOr[scala.Nothing], Type: ButtonType): PopupSelection = js.native
-    def Popup(Text: String, SecondsToWait: Double, Title: js.UndefOr[scala.Nothing], Type: IconType): PopupSelection = js.native
-    def Popup(Text: String, SecondsToWait: Double, Title: js.UndefOr[scala.Nothing], Type: PopupType): PopupSelection = js.native
     def Popup(Text: String, SecondsToWait: Double, Title: String): PopupSelection = js.native
     def Popup(Text: String, SecondsToWait: Double, Title: String, Type: ButtonType): PopupSelection = js.native
     def Popup(Text: String, SecondsToWait: Double, Title: String, Type: IconType): PopupSelection = js.native
     def Popup(Text: String, SecondsToWait: Double, Title: String, Type: PopupType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Double, Title: Unit, Type: ButtonType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Double, Title: Unit, Type: IconType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Double, Title: Unit, Type: PopupType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Unit, Title: String): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Unit, Title: String, Type: ButtonType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Unit, Title: String, Type: IconType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Unit, Title: String, Type: PopupType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Unit, Title: Unit, Type: ButtonType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Unit, Title: Unit, Type: IconType): PopupSelection = js.native
+    def Popup(Text: String, SecondsToWait: Unit, Title: Unit, Type: PopupType): PopupSelection = js.native
     
     def RegDelete(Name: String): Unit = js.native
     
@@ -890,7 +838,7 @@ object IWshRuntimeLibrary {
       * * **10** -- Sets the show-state based on the state of the program that started the application.
       */
     def Run(Command: String): Double = js.native
-    def Run(Command: String, WindowStyle: js.UndefOr[scala.Nothing], WaitOnReturn: Boolean): Double = js.native
+    def Run(Command: String, WindowStyle: Unit, WaitOnReturn: Boolean): Double = js.native
     def Run(Command: String, WindowStyle: WindowStyle): Double = js.native
     def Run(Command: String, WindowStyle: WindowStyle, WaitOnReturn: Boolean): Double = js.native
     
@@ -903,29 +851,28 @@ object IWshRuntimeLibrary {
   }
   
   /** Shortcut Object */
-  @js.native
   trait WshShortcut extends StObject {
     
-    var Arguments: String = js.native
+    var Arguments: String
     
-    var Description: String = js.native
+    var Description: String
     
-    val FullName: String = js.native
+    val FullName: String
     
-    var Hotkey: String = js.native
+    var Hotkey: String
     
     @JSName("IWshRuntimeLibrary.WshShortcut_typekey")
-    var IWshRuntimeLibraryDotWshShortcut_typekey: WshShortcut = js.native
+    var IWshRuntimeLibraryDotWshShortcut_typekey: WshShortcut
     
-    var IconLocation: String = js.native
+    var IconLocation: String
     
-    def Load(PathLink: String): Unit = js.native
+    def Load(PathLink: String): Unit
     
-    val RelativePath: String = js.native
+    val RelativePath: String
     
-    def Save(): Unit = js.native
+    def Save(): Unit
     
-    var TargetPath: String = js.native
+    var TargetPath: String
     
     /**
       * Possible values:
@@ -935,9 +882,9 @@ object IWshRuntimeLibrary {
       * * **3** -- Activates the window and displays it as a maximized window.
       * * **7** -- Displays the window as a minimized window. The active window remains active.
       */
-    var WindowStyle: ShortcutWindowStyle = js.native
+    var WindowStyle: ShortcutWindowStyle
     
-    var WorkingDirectory: String = js.native
+    var WorkingDirectory: String
   }
   object WshShortcut {
     
@@ -1003,19 +950,18 @@ object IWshRuntimeLibrary {
   }
   
   /** URLShortcut Object */
-  @js.native
   trait WshURLShortcut extends StObject {
     
-    val FullName: String = js.native
+    val FullName: String
     
     @JSName("IWshRuntimeLibrary.WshURLShortcut_typekey")
-    var IWshRuntimeLibraryDotWshURLShortcut_typekey: WshURLShortcut = js.native
+    var IWshRuntimeLibraryDotWshURLShortcut_typekey: WshURLShortcut
     
-    def Load(PathLink: String): Unit = js.native
+    def Load(PathLink: String): Unit
     
-    def Save(): Unit = js.native
+    def Save(): Unit
     
-    var TargetPath: String = js.native
+    var TargetPath: String
   }
   object WshURLShortcut {
     

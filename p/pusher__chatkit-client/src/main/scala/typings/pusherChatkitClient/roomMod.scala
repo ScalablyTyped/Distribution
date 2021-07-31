@@ -3,23 +3,21 @@ package typings.pusherChatkitClient
 import typings.pusherChatkitClient.userMod.PusherUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roomMod {
   
-  @js.native
   trait PusherReadCursor extends StObject {
     
-    var position: Double = js.native
+    var position: Double
     
-    var room: PusherRoom = js.native
+    var room: PusherRoom
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var updatedAt: String = js.native
+    var updatedAt: String
     
-    var user: PusherUser = js.native
+    var user: PusherUser
   }
   object PusherReadCursor {
     
@@ -50,28 +48,27 @@ object roomMod {
     }
   }
   
-  @js.native
   trait PusherRoom extends StObject {
     
-    var createdAt: String = js.native
+    var createdAt: String
     
-    var createdByUserId: String = js.native
+    var createdByUserId: String
     
-    var customData: js.UndefOr[js.Any] = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var isPrivate: Boolean = js.native
+    var isPrivate: Boolean
     
-    var lastMessageAt: String = js.native
+    var lastMessageAt: String
     
-    var name: String = js.native
+    var name: String
     
-    var unreadCount: Double = js.native
+    var unreadCount: Double
     
-    var updatedAt: String = js.native
+    var updatedAt: String
     
-    var users: js.Array[PusherUser] = js.native
+    var users: js.Array[PusherUser]
   }
   object PusherRoom {
     

@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceGroups extends Service {
   
   @JSName("config")
-  var config_ResourceGroups: ConfigBase with ClientConfiguration = js.native
+  var config_ResourceGroups: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a resource group with the specified name and description. You can optionally include a resource query, or a service configuration.

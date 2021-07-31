@@ -6,14 +6,13 @@ import typings.coinlist.coinlistStrings.name
 import typings.coinlist.coinlistStrings.symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("coinlist", JSImport.Namespace)
   @js.native
-  val ^ : js.Array[Coin] with CoinsAPI = js.native
+  val ^ : js.Array[Coin] & CoinsAPI = js.native
   
   type Coin = typings.coinlist.coinsJsonMod.Coin
   
@@ -29,8 +28,8 @@ object mod extends Shortcut {
     def get_symbol(symbol: String, property: symbol): js.UndefOr[String] = js.native
   }
   
-  type _To = js.Array[Coin] with CoinsAPI
+  type _To = js.Array[Coin] & CoinsAPI
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Array[Coin] with CoinsAPI = ^
+  override def _to: js.Array[Coin] & CoinsAPI = ^
 }

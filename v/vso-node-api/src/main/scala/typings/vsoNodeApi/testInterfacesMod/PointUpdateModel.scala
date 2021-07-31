@@ -3,17 +3,15 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointUpdateModel extends StObject {
   
-  var outcome: String = js.native
+  var outcome: String
   
-  var resetToActive: Boolean = js.native
+  var resetToActive: Boolean
   
-  var tester: IdentityRef = js.native
+  var tester: IdentityRef
 }
 object PointUpdateModel {
   

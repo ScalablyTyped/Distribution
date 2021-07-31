@@ -2,18 +2,16 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteExpressionRequest extends StObject {
   
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
   
   /**
     * The name of the Expression to delete.
     */
-  var ExpressionName: StandardName = js.native
+  var ExpressionName: StandardName
 }
 object DeleteExpressionRequest {
   

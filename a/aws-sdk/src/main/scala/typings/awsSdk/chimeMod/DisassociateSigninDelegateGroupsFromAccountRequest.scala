@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateSigninDelegateGroupsFromAccountRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The sign-in delegate group names.
     */
-  var GroupNames: NonEmptyStringList = js.native
+  var GroupNames: NonEmptyStringList
 }
 object DisassociateSigninDelegateGroupsFromAccountRequest {
   

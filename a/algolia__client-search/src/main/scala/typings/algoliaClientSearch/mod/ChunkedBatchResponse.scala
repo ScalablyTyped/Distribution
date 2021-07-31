@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkedBatchResponse extends StObject {
   
   /**
     * The object ids created/updated/deleted by the multiple requests.
     */
-  var objectIDs: js.Array[String] = js.native
+  var objectIDs: js.Array[String]
   
   /**
     * The operations task ids. May be used to perform a wait task.
     */
-  var taskIDs: js.Array[Double] = js.native
+  var taskIDs: js.Array[Double]
 }
 object ChunkedBatchResponse {
   

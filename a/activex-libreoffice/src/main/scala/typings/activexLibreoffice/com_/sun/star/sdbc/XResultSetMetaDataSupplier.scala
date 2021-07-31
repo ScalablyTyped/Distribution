@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,22 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The number, types, and properties of a {@link ResultSet} 's columns are provided by the {@link com.sun.star.sdbc.XResultSetMetaData} interface
   * returned by the {@link com.sun.star.sdbc.XResultSetMetaDataSupplier.getMetaData()} method.
   */
-@js.native
-trait XResultSetMetaDataSupplier extends XInterface {
+trait XResultSetMetaDataSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the number, types, and properties of a {@link ResultSet} 's columns.
     * @returns the meta data of the {@link ResultSet} .
     * @throws SQLException if a database access error occurs.
     */
-  val MetaData: XResultSetMetaData = js.native
+  val MetaData: XResultSetMetaData
   
   /**
     * retrieves the number, types, and properties of a {@link ResultSet} 's columns.
     * @returns the meta data of the {@link ResultSet} .
     * @throws SQLException if a database access error occurs.
     */
-  def getMetaData(): XResultSetMetaData = js.native
+  def getMetaData(): XResultSetMetaData
 }
 object XResultSetMetaDataSupplier {
   

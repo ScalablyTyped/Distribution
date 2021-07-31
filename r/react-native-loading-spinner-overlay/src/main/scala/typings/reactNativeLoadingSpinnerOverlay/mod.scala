@@ -12,7 +12,6 @@ import typings.reactNativeLoadingSpinnerOverlay.reactNativeLoadingSpinnerOverlay
 import typings.reactNativeLoadingSpinnerOverlay.reactNativeLoadingSpinnerOverlayStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,26 +23,25 @@ object mod {
   
   type Spinner = Component[SpinnerProps, js.Object, js.Any]
   
-  @js.native
   trait SpinnerProps extends StObject {
     
-    var animation: js.UndefOr[none | slide | fade] = js.native
+    var animation: js.UndefOr[none | slide | fade] = js.undefined
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var customIndicator: js.UndefOr[ReactElement] = js.native
+    var customIndicator: js.UndefOr[ReactElement] = js.undefined
     
-    var overlayColor: js.UndefOr[String] = js.native
+    var overlayColor: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[normal | small | large] = js.native
+    var size: js.UndefOr[normal | small | large] = js.undefined
     
-    var textContent: js.UndefOr[String] = js.native
+    var textContent: js.UndefOr[String] = js.undefined
     
-    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SpinnerProps {
     

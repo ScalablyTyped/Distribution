@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketMod {
@@ -59,6 +58,10 @@ object bucketMod {
   /* static members */
   object Bucket {
     
+    @JSImport("@pulumi/aws/s3control/bucket", "Bucket")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Bucket resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,45 +71,39 @@ object bucketMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3control/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Bucket = js.native
-    @JSImport("@pulumi/aws/s3control/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Bucket = js.native
-    @JSImport("@pulumi/aws/s3control/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketState): Bucket = js.native
-    @JSImport("@pulumi/aws/s3control/bucket", "Bucket.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): Bucket = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketState): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Bucket]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): Bucket = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bucket]
     
     /**
       * Returns true if the given object is an instance of Bucket.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3control/bucket", "Bucket.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3control/bucket.Bucket */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3control/bucket.Bucket */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3control/bucket.Bucket */ Boolean]
   }
   
-  @js.native
   trait BucketArgs extends StObject {
     
     /**
       * Name of the bucket.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Identifier of the Outpost to contain this bucket.
       */
-    val outpostId: Input[String] = js.native
+    val outpostId: Input[String]
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object BucketArgs {
     
@@ -133,38 +130,37 @@ object bucketMod {
     }
   }
   
-  @js.native
   trait BucketState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the bucket.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the bucket.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * UTC creation date in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8).
       */
-    val creationDate: js.UndefOr[Input[String]] = js.native
+    val creationDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the Outpost to contain this bucket.
       */
-    val outpostId: js.UndefOr[Input[String]] = js.native
+    val outpostId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean whether Public Access Block is enabled.
       */
-    val publicAccessBlockEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val publicAccessBlockEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object BucketState {
     

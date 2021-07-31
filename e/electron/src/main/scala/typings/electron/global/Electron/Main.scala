@@ -1,6 +1,7 @@
 package typings.electron.global.Electron
 
 import typings.electron.Electron.App
+import typings.electron.Electron.AutoResizeOptions
 import typings.electron.Electron.AutoUpdater
 import typings.electron.Electron.ContentTracing
 import typings.electron.Electron.Dialog
@@ -13,12 +14,20 @@ import typings.electron.Electron.NetLog
 import typings.electron.Electron.PowerMonitor
 import typings.electron.Electron.PowerSaveBlocker
 import typings.electron.Electron.Protocol
+import typings.electron.Electron.Rectangle
 import typings.electron.Electron.Screen
 import typings.electron.Electron.SystemPreferences
+import typings.electron.electronStrings.checkbox
+import typings.electron.electronStrings.left
+import typings.electron.electronStrings.normal
+import typings.electron.electronStrings.overlay
+import typings.electron.electronStrings.radio
+import typings.electron.electronStrings.right
+import typings.electron.electronStrings.separator
+import typings.electron.electronStrings.submenu
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Main {
@@ -26,7 +35,34 @@ object Main {
   @JSGlobal("Electron.Main.BrowserView")
   @js.native
   class BrowserView ()
-    extends typings.electron.Electron.BrowserView
+    extends StObject
+       with typings.electron.Electron.BrowserView {
+    
+    /**
+      * The `bounds` of this BrowserView instance as `Object`.
+      *
+      * @experimental
+      */
+    /* CompleteClass */
+    override def getBounds(): Rectangle = js.native
+    
+    /* CompleteClass */
+    override def setAutoResize(options: AutoResizeOptions): Unit = js.native
+    
+    /* CompleteClass */
+    override def setBackgroundColor(color: String): Unit = js.native
+    
+    /**
+      * Resizes and moves the view to the supplied bounds relative to the window.
+      *
+      * @experimental
+      */
+    /* CompleteClass */
+    override def setBounds(bounds: Rectangle): Unit = js.native
+    
+    /* CompleteClass */
+    var webContents: typings.electron.Electron.WebContents_ = js.native
+  }
   
   @JSGlobal("Electron.Main.BrowserWindow")
   @js.native
@@ -41,7 +77,8 @@ object Main {
   @JSGlobal("Electron.Main.CommandLine")
   @js.native
   class CommandLine ()
-    extends typings.electron.Electron.CommandLine
+    extends StObject
+       with typings.electron.Electron.CommandLine
   
   @JSGlobal("Electron.Main.Cookies")
   @js.native
@@ -56,7 +93,8 @@ object Main {
   @JSGlobal("Electron.Main.Dock")
   @js.native
   class Dock ()
-    extends typings.electron.Electron.Dock
+    extends StObject
+       with typings.electron.Electron.Dock
   
   @JSGlobal("Electron.Main.DownloadItem")
   @js.native
@@ -71,12 +109,51 @@ object Main {
   @JSGlobal("Electron.Main.Menu")
   @js.native
   class Menu ()
-    extends typings.electron.Electron.Menu
+    extends StObject
+       with typings.electron.Electron.Menu
   
   @JSGlobal("Electron.Main.MenuItem")
   @js.native
   class MenuItem ()
-    extends typings.electron.Electron.MenuItem
+    extends StObject
+       with typings.electron.Electron.MenuItem {
+    
+    /* CompleteClass */
+    var checked: Boolean = js.native
+    
+    /* CompleteClass */
+    var click: js.Function = js.native
+    
+    /* CompleteClass */
+    var commandId: Double = js.native
+    
+    /* CompleteClass */
+    var enabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /* CompleteClass */
+    var label: String = js.native
+    
+    /* CompleteClass */
+    var menu: typings.electron.Electron.Menu = js.native
+    
+    /* CompleteClass */
+    var registerAccelerator: Boolean = js.native
+    
+    /* CompleteClass */
+    var sublabel: String = js.native
+    
+    /* CompleteClass */
+    var toolTip: String = js.native
+    
+    /* CompleteClass */
+    var `type`: normal | separator | submenu | checkbox | radio = js.native
+    
+    /* CompleteClass */
+    var visible: Boolean = js.native
+  }
   
   @JSGlobal("Electron.Main.MessageChannelMain")
   @js.native
@@ -106,12 +183,37 @@ object Main {
   @JSGlobal("Electron.Main.TouchBar")
   @js.native
   class TouchBar ()
-    extends typings.electron.Electron.TouchBar
+    extends StObject
+       with typings.electron.Electron.TouchBar {
+    
+    /* CompleteClass */
+    var escapeItem: typings.electron.Electron.TouchBarButton | typings.electron.Electron.TouchBarColorPicker | typings.electron.Electron.TouchBarGroup | typings.electron.Electron.TouchBarLabel | typings.electron.Electron.TouchBarPopover | typings.electron.Electron.TouchBarScrubber | typings.electron.Electron.TouchBarSegmentedControl | typings.electron.Electron.TouchBarSlider | typings.electron.Electron.TouchBarSpacer | Null = js.native
+  }
   
   @JSGlobal("Electron.Main.TouchBarButton")
   @js.native
   class TouchBarButton ()
-    extends typings.electron.Electron.TouchBarButton
+    extends StObject
+       with typings.electron.Electron.TouchBarButton {
+    
+    /* CompleteClass */
+    var accessibilityLabel: String = js.native
+    
+    /* CompleteClass */
+    var backgroundColor: String = js.native
+    
+    /* CompleteClass */
+    var enabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var icon: typings.electron.Electron.NativeImage_ = js.native
+    
+    /* CompleteClass */
+    var iconPosition: left | right | overlay = js.native
+    
+    /* CompleteClass */
+    var label: String = js.native
+  }
   
   @JSGlobal("Electron.Main.TouchBarColorPicker")
   @js.native
@@ -169,7 +271,8 @@ object Main {
   @JSGlobal("Electron.Main.WebRequest")
   @js.native
   class WebRequest ()
-    extends typings.electron.Electron.WebRequest
+    extends StObject
+       with typings.electron.Electron.WebRequest
   
   @JSGlobal("Electron.Main.app")
   @js.native

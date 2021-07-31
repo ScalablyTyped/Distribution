@@ -7,14 +7,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.podium.anon.Channel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("podium", JSImport.Namespace)
   @js.native
-  val ^ : Podium = js.native
+  val ^ : js.Object & Podium = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("podium", JSImport.Namespace)
@@ -23,21 +22,22 @@ object mod extends Shortcut {
     * Creates a new podium emitter
     * @param events  if present, the value is passed to podium.registerEvent().
     */
-  class Class () extends Podium {
+  class Class ()
+    extends StObject
+       with Podium {
     def this(events: js.Array[Events]) = this()
     def this(events: Events) = this()
   }
   
   type Criteria = String | CriteriaObject
   
-  @js.native
   trait CriteriaFilterOptionsObject extends StObject {
     
     /** if true, all tags must be present for the event update to match the subscription. Defaults to false (at least one matching tag). */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /** a tag string or array of tag strings. */
-    var tags: js.UndefOr[String | js.Array[String]] = js.native
+    var tags: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object CriteriaFilterOptionsObject {
     
@@ -67,21 +67,20 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CriteriaObject extends StObject {
     
     /** if true, the listener method receives an additional callback argument which must be called when the method completes. No other event will be emitted until the callback methods is called. The method signature is function(). If block is set to a positive integer, the value is used to set a timeout after which any pending events will be emitted, ignoring the eventual call to callback. Defaults to false (non blocking). */
-    var block: js.UndefOr[Boolean | Double] = js.native
+    var block: js.UndefOr[Boolean | Double] = js.undefined
     
     /** a string or array of strings specifying the event channels to subscribe to. If the event registration specified a list of allowed channels, the channels array must match the allowed channels. If channels are specified, event updates without any channel designation will not be included in the subscription. Defaults to no channels filter. */
-    var channels: js.UndefOr[String | js.Array[String]] = js.native
+    var channels: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** if true, the data object passed to podium.emit() is cloned before it is passed to the listener method. Defaults to the event registration option (which defaults to false). */
     @JSName("clone")
-    var clone_FCriteriaObject: js.UndefOr[Boolean] = js.native
+    var clone_FCriteriaObject: js.UndefOr[Boolean] = js.undefined
     
     /** a positive integer indicating the number of times the listener can be called after which the subscription is automatically removed. A count of 1 is the same as calling podium.once(). Defaults to no limit. */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * the event tags (if present) to subscribe to which can be one of:
@@ -89,19 +88,19 @@ object mod extends Shortcut {
       *  * an array of tag strings.
       *  * an object with the following:
       */
-    var filter: js.UndefOr[String | js.Array[String] | CriteriaFilterOptionsObject] = js.native
+    var filter: js.UndefOr[String | js.Array[String] | CriteriaFilterOptionsObject] = js.undefined
     
     /** the handler method set to receive event updates. The function signature depends on the block, spread, and tags options. */
-    var listener: js.UndefOr[Listener] = js.native
+    var listener: js.UndefOr[Listener] = js.undefined
     
     /** the event name string (required). */
-    var name: String = js.native
+    var name: String
     
     /** if true, and the data object passed to podium.emit() is an array, the listener method is called with each array element passed as a separate argument. This should only be used when the emitted data structure is known and predictable. Defaults to the event registration option (which defaults to false). */
-    var spread: js.UndefOr[Boolean] = js.native
+    var spread: js.UndefOr[Boolean] = js.undefined
     
     /** if true and the criteria object passed to podium.emit() includes tags, the tags are mapped to an object (where each tag string is the key and the value is true) which is appended to the arguments list at the end (but before the callback argument if block is set). Defaults to the event registration option (which defaults to false). */
-    var tags: js.UndefOr[Boolean] = js.native
+    var tags: js.UndefOr[Boolean] = js.undefined
   }
   object CriteriaObject {
     
@@ -175,27 +174,28 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait EventOptionsObject extends _Events {
+  trait EventOptionsObject
+    extends StObject
+       with _Events {
     
     /** a string or array of strings specifying the event channels available. Defaults to no channel restrictions (event updates can specify a channel or not). */
-    var channels: js.UndefOr[String | js.Array[String]] = js.native
+    var channels: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** if true, the data object passed to podium.emit() is cloned before it is passed to the listeners (unless an override specified by each listener). Defaults to false (data is passed as-is). */
     @JSName("clone")
-    var clone_FEventOptionsObject: js.UndefOr[Boolean] = js.native
+    var clone_FEventOptionsObject: js.UndefOr[Boolean] = js.undefined
     
     /** the event name string (required). */
-    var name: String = js.native
+    var name: String
     
     /** if true, the same event name can be registered multiple times where the second registration is ignored. Note that if the registration config is changed between registrations, only the first configuration is used. Defaults to false (a duplicate registration will throw an error). */
-    var shared: js.UndefOr[Boolean] = js.native
+    var shared: js.UndefOr[Boolean] = js.undefined
     
     /** if true, the data object passed to podium.emit() must be an array and the listener method is called with each array element passed as a separate argument (unless an override specified by each listener). This should only be used when the emitted data structure is known and predictable. Defaults to false (data is emitted as a single argument regardless of its type). */
-    var spread: js.UndefOr[Boolean] = js.native
+    var spread: js.UndefOr[Boolean] = js.undefined
     
     /** if true and the criteria object passed to podium.emit() includes tags, the tags are mapped to an object (where each tag string is the key and the value is true) which is appended to the arguments list at the end (but before the callback argument if block is set). A configuration override can be set by each listener. Defaults to false. */
-    var tags: js.UndefOr[Boolean] = js.native
+    var tags: js.UndefOr[Boolean] = js.undefined
   }
   object EventOptionsObject {
     
@@ -262,13 +262,14 @@ object mod extends Shortcut {
   
   @js.native
   trait Podium
-    extends _Events
+    extends StObject
        with /**
     * Creates a new podium emitter
     * @param events  if present, the value is passed to podium.registerEvent().
     */
   Instantiable0[Podium]
-       with Instantiable1[(/* events */ js.Array[Events]) | (/* events */ Events), Podium] {
+       with Instantiable1[(/* events */ js.Array[Events]) | (/* events */ Events), Podium]
+       with _Events {
     
     /**
       * podium.addListener(criteria, listener)
@@ -363,8 +364,8 @@ object mod extends Shortcut {
   
   trait _Events extends StObject
   
-  type _To = Podium
+  type _To = js.Object & Podium
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Podium = ^
+  override def _to: js.Object & Podium = ^
 }

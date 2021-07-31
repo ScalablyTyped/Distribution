@@ -3,27 +3,25 @@ package typings.athenajs.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameOptions extends StObject {
   
-  var debug: Boolean = js.native
+  var debug: Boolean
   
-  var height: Double = js.native
+  var height: Double
   
-  var name: String = js.native
+  var name: String
   
-  var scene: js.UndefOr[Scene] = js.native
+  var scene: js.UndefOr[Scene] = js.undefined
   
-  var showFps: Boolean = js.native
+  var showFps: Boolean
   
-  var sound: js.UndefOr[Boolean] = js.native
+  var sound: js.UndefOr[Boolean] = js.undefined
   
-  var target: js.UndefOr[String | HTMLElement] = js.native
+  var target: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object GameOptions {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataFilter extends StObject {
   
   /**
     * The list of label value pairs that must match labels in the provided metadata based on filterMatchCriteria
     * This list must not be empty and can have at the most 64 entries.
     */
-  var filterLabels: js.UndefOr[js.Array[MetadataFilterLabelMatch]] = js.native
+  var filterLabels: js.UndefOr[js.Array[MetadataFilterLabelMatch]] = js.undefined
   
   /**
     * Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match.
@@ -20,7 +18,7 @@ trait MetadataFilter extends StObject {
     * - MATCH_ANY: At least one of the filterLabels must have a matching label in the provided metadata.
     * - MATCH_ALL: All filterLabels must have matching labels in the provided metadata.
     */
-  var filterMatchCriteria: js.UndefOr[String] = js.native
+  var filterMatchCriteria: js.UndefOr[String] = js.undefined
 }
 object MetadataFilter {
   

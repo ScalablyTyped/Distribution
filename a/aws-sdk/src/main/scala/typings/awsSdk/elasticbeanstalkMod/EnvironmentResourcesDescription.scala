@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentResourcesDescription extends StObject {
   
   /**
     * Describes the LoadBalancer.
     */
-  var LoadBalancer: js.UndefOr[LoadBalancerDescription] = js.native
+  var LoadBalancer: js.UndefOr[LoadBalancerDescription] = js.undefined
 }
 object EnvironmentResourcesDescription {
   

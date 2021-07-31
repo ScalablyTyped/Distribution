@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomImage extends StObject {
   
   /**
     * The name of the AppImageConfig.
     */
-  var AppImageConfigName: typings.awsSdk.sagemakerMod.AppImageConfigName = js.native
+  var AppImageConfigName: typings.awsSdk.sagemakerMod.AppImageConfigName
   
   /**
     * The name of the CustomImage. Must be unique to your account.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
   
   /**
     * The version number of the CustomImage.
     */
-  var ImageVersionNumber: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersionNumber] = js.native
+  var ImageVersionNumber: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersionNumber] = js.undefined
 }
 object CustomImage {
   

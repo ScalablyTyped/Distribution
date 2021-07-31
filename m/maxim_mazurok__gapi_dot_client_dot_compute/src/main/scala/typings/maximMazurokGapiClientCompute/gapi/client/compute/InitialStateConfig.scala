@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitialStateConfig extends StObject {
   
   /** The Key Database (db). */
-  var dbs: js.UndefOr[js.Array[FileContentBuffer]] = js.native
+  var dbs: js.UndefOr[js.Array[FileContentBuffer]] = js.undefined
   
   /** The forbidden key database (dbx). */
-  var dbxs: js.UndefOr[js.Array[FileContentBuffer]] = js.native
+  var dbxs: js.UndefOr[js.Array[FileContentBuffer]] = js.undefined
   
   /** The Key Exchange Key (KEK). */
-  var keks: js.UndefOr[js.Array[FileContentBuffer]] = js.native
+  var keks: js.UndefOr[js.Array[FileContentBuffer]] = js.undefined
   
   /** The Platform Key (PK). */
-  var pk: js.UndefOr[FileContentBuffer] = js.native
+  var pk: js.UndefOr[FileContentBuffer] = js.undefined
 }
 object InitialStateConfig {
   

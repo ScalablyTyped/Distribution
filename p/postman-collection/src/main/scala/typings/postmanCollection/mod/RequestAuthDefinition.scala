@@ -13,35 +13,35 @@ import typings.postmanCollection.postmanCollectionStrings.oauth1
 import typings.postmanCollection.postmanCollectionStrings.oauth2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestAuthDefinition extends PropertyDefinition {
+trait RequestAuthDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var apikey: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var apikey: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var awsv4: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var awsv4: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var basic: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var basic: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var bearer: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var bearer: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var digest: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var digest: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var edgegrid: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var edgegrid: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var hawk: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var hawk: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var ntlm: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var ntlm: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var oauth1: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var oauth1: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
-  var oauth2: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var oauth2: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
   
   var `type`: js.UndefOr[
     oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm
-  ] = js.native
+  ] = js.undefined
 }
 object RequestAuthDefinition {
   

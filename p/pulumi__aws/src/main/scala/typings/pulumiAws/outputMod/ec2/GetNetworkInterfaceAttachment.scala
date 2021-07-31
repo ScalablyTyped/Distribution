@@ -2,19 +2,17 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkInterfaceAttachment extends StObject {
   
-  var attachmentId: String = js.native
+  var attachmentId: String
   
-  var deviceIndex: Double = js.native
+  var deviceIndex: Double
   
-  var instanceId: String = js.native
+  var instanceId: String
   
-  var instanceOwnerId: String = js.native
+  var instanceOwnerId: String
 }
 object GetNetworkInterfaceAttachment {
   

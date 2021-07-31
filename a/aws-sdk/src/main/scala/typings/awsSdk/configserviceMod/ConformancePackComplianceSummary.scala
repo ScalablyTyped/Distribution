@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConformancePackComplianceSummary extends StObject {
   
   /**
     * The status of the conformance pack. The allowed values are COMPLIANT and NON_COMPLIANT. 
     */
-  var ConformancePackComplianceStatus: ConformancePackComplianceType = js.native
+  var ConformancePackComplianceStatus: ConformancePackComplianceType
   
   /**
     * The name of the conformance pack name.
     */
-  var ConformancePackName: typings.awsSdk.configserviceMod.ConformancePackName = js.native
+  var ConformancePackName: typings.awsSdk.configserviceMod.ConformancePackName
 }
 object ConformancePackComplianceSummary {
   

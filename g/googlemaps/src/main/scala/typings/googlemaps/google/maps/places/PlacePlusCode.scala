@@ -2,15 +2,13 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacePlusCode extends StObject {
   
-  var compound_code: js.UndefOr[String] = js.native
+  var compound_code: js.UndefOr[String] = js.undefined
   
-  var global_code: String = js.native
+  var global_code: String
 }
 object PlacePlusCode {
   

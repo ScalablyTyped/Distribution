@@ -2,23 +2,21 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WBProps extends StObject {
   
   /** Defined Names */
-  var Names: js.UndefOr[js.Array[DefinedName]] = js.native
+  var Names: js.UndefOr[js.Array[DefinedName]] = js.undefined
   
   /** Sheet Properties */
-  var Sheets: js.UndefOr[js.Array[SheetProps]] = js.native
+  var Sheets: js.UndefOr[js.Array[SheetProps]] = js.undefined
   
   /** Workbook Views */
-  var Views: js.UndefOr[js.Array[WBView]] = js.native
+  var Views: js.UndefOr[js.Array[WBView]] = js.undefined
   
   /** Other Workbook Properties */
-  var WBProps: js.UndefOr[WorkbookProperties] = js.native
+  var WBProps: js.UndefOr[WorkbookProperties] = js.undefined
 }
 object WBProps {
   

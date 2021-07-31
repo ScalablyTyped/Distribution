@@ -4,17 +4,37 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.playable.anon.EventEmitterTextMap
 import typings.playable.liveIndicatorTypesMod.ILiveIndicator
 import typings.playable.liveIndicatorTypesMod.ILiveIndicatorViewConfig
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveIndicatorMod {
   
   @JSImport("playable/dist/src/modules/ui/live-indicator/live-indicator", JSImport.Default)
   @js.native
-  class default protected () extends LiveIndicator {
+  class default protected ()
+    extends StObject
+       with LiveIndicator {
     def this(hasEngineEventEmitterTextMapTooltipService: EventEmitterTextMap) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isActive: Boolean = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
   }
   /* static members */
   object default {
@@ -51,7 +71,9 @@ object liveIndicatorMod {
   }
   
   @js.native
-  trait LiveIndicator extends ILiveIndicator {
+  trait LiveIndicator
+    extends StObject
+       with ILiveIndicator {
     
     var _bindCallbacks: js.Any = js.native
     

@@ -6,46 +6,43 @@ import typings.std.Element
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libUtilsMod {
   
-  @JSImport("ecmarkup/lib/utils", "attrValueLocation")
+  @JSImport("ecmarkup/lib/utils", JSImport.Namespace)
   @js.native
-  def attrValueLocation(
-    source: js.UndefOr[scala.Nothing],
-    loc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any,
-    attr: String
-  ): Line = js.native
-  @JSImport("ecmarkup/lib/utils", "attrValueLocation")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def attrValueLocation(
     source: String,
     loc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any,
     attr: String
-  ): Line = js.native
+  ): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("attrValueLocation")(source.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[Line]
+  @scala.inline
+  def attrValueLocation(
+    source: Unit,
+    loc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any,
+    attr: String
+  ): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("attrValueLocation")(source.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[Line]
   
-  @JSImport("ecmarkup/lib/utils", "offsetToLineAndColumn")
-  @js.native
-  def offsetToLineAndColumn(string: String, offset: Double): Line = js.native
+  @scala.inline
+  def offsetToLineAndColumn(string: String, offset: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("offsetToLineAndColumn")(string.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Line]
   
-  @JSImport("ecmarkup/lib/utils", "warnEmdFailure")
-  @js.native
+  @scala.inline
   def warnEmdFailure_warn(
     report: /* import warning: importer.ImportType#apply Failed type conversion: ecmarkup.ecmarkup/lib/Spec.Spec['warn'] */ js.Any,
     node: Element,
     e: SyntaxErrorlinenumberunde
-  ): Unit = js.native
-  @JSImport("ecmarkup/lib/utils", "warnEmdFailure")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnEmdFailure")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def warnEmdFailure_warn(
     report: /* import warning: importer.ImportType#apply Failed type conversion: ecmarkup.ecmarkup/lib/Spec.Spec['warn'] */ js.Any,
     node: Text,
     e: SyntaxErrorlinenumberunde
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnEmdFailure")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ecmarkup/lib/utils", "wrapEmdFailure")
-  @js.native
-  def wrapEmdFailure(src: String): String = js.native
+  @scala.inline
+  def wrapEmdFailure(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapEmdFailure")(src.asInstanceOf[js.Any]).asInstanceOf[String]
 }

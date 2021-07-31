@@ -2,22 +2,23 @@ package typings.mysqlImport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mysql-import", "config")
+  @JSImport("mysql-import", JSImport.Namespace)
   @js.native
-  def config(settings: Settings): Importer = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def config(settings: Settings): Importer = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(settings.asInstanceOf[js.Any]).asInstanceOf[Importer]
+  
   trait Importer extends StObject {
     
     /**
       * Import an .sql file to the database.
       */
-    def `import`(filename: String): js.Promise[Unit] = js.native
+    def `import`(filename: String): js.Promise[Unit]
   }
   object Importer {
     
@@ -36,38 +37,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * The database to connect to.
       */
-    var database: String = js.native
+    var database: String
     
     /**
       * The MySQL host to connect to.
       */
-    var host: String = js.native
+    var host: String
     
     /**
       * Function to handle errors. The function will receive the Error. If not provided the error will be thrown.
       */
-    var onerror: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
     
     /**
       * The password for the user.
       */
-    var password: String = js.native
+    var password: String
     
     /**
       * The MySQL port to connect to.
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * The MySQL user to connect with.
       */
-    var user: String = js.native
+    var user: String
   }
   object Settings {
     

@@ -19,11 +19,12 @@ import typings.ckeditor.ckeditorStrings.top
 import typings.ckeditor.ckeditorStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ui extends event {
+trait ui
+  extends StObject
+     with event {
   
   def add(name: String, `type`: StringDictionary[js.Any], definition: StringDictionary[js.Any]): Unit = js.native
   
@@ -127,12 +128,11 @@ object ui {
   }
   object balloonPanel {
     
-    @js.native
     trait definition extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object definition {
       
@@ -159,22 +159,21 @@ object ui {
       }
     }
     
-    @js.native
     trait parts extends StObject {
       
-      var close: js.UndefOr[element] = js.native
+      var close: js.UndefOr[element] = js.undefined
       
-      var content: js.UndefOr[element] = js.native
+      var content: js.UndefOr[element] = js.undefined
       
-      var panel: js.UndefOr[element] = js.native
+      var panel: js.UndefOr[element] = js.undefined
       
-      var title: js.UndefOr[element] = js.native
+      var title: js.UndefOr[element] = js.undefined
       
-      var triangle: js.UndefOr[element] = js.native
+      var triangle: js.UndefOr[element] = js.undefined
       
-      var triangleInner: js.UndefOr[element] = js.native
+      var triangleInner: js.UndefOr[element] = js.undefined
       
-      var triangleOuter: js.UndefOr[element] = js.native
+      var triangleOuter: js.UndefOr[element] = js.undefined
     }
     object parts {
       
@@ -231,18 +230,17 @@ object ui {
       }
     }
     
-    @js.native
     trait rect extends StObject {
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var left: js.UndefOr[Double] = js.native
+      var left: js.UndefOr[Double] = js.undefined
       
-      var top: js.UndefOr[Double] = js.native
+      var top: js.UndefOr[Double] = js.undefined
       
-      var visible: js.UndefOr[Boolean] = js.native
+      var visible: js.UndefOr[Boolean] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object rect {
       
@@ -287,22 +285,21 @@ object ui {
       }
     }
     
-    @js.native
     trait templateDefinitions extends StObject {
       
-      var close: js.UndefOr[String] = js.native
+      var close: js.UndefOr[String] = js.undefined
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var panel: js.UndefOr[String] = js.native
+      var panel: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var triangle: js.UndefOr[String] = js.native
+      var triangle: js.UndefOr[String] = js.undefined
       
-      var triangleInner: js.UndefOr[String] = js.native
+      var triangleInner: js.UndefOr[String] = js.undefined
       
-      var triangleOuter: js.UndefOr[String] = js.native
+      var triangleOuter: js.UndefOr[String] = js.undefined
     }
     object templateDefinitions {
       
@@ -359,22 +356,21 @@ object ui {
       }
     }
     
-    @js.native
     trait templates extends StObject {
       
-      var close: js.UndefOr[template] = js.native
+      var close: js.UndefOr[template] = js.undefined
       
-      var content: js.UndefOr[template] = js.native
+      var content: js.UndefOr[template] = js.undefined
       
-      var panel: js.UndefOr[template] = js.native
+      var panel: js.UndefOr[template] = js.undefined
       
-      var title: js.UndefOr[template] = js.native
+      var title: js.UndefOr[template] = js.undefined
       
-      var triangle: js.UndefOr[template] = js.native
+      var triangle: js.UndefOr[template] = js.undefined
       
-      var triangleInner: js.UndefOr[template] = js.native
+      var triangleInner: js.UndefOr[template] = js.undefined
       
-      var triangleOuter: js.UndefOr[template] = js.native
+      var triangleOuter: js.UndefOr[template] = js.undefined
     }
     object templates {
       
@@ -453,16 +449,15 @@ object ui {
     def show(): Unit = js.native
   }
   
-  @js.native
   trait button extends StObject {
     
-    def getState(): Double = js.native
+    def getState(): Double
     
-    def render(editor: editor, output: js.Array[String]): Unit = js.native
+    def render(editor: editor, output: js.Array[String]): Unit
     
-    def setState(state: Double): Unit = js.native
+    def setState(state: Double): Unit
     
-    def toFeature(editor: editor): feature = js.native
+    def toFeature(editor: editor): feature
   }
   object button {
     
@@ -496,14 +491,15 @@ object ui {
   
   object dialog {
     
-    @js.native
-    trait button extends uiElement {
+    trait button
+      extends StObject
+         with uiElement {
       
-      def accessKeyDown(): Unit = js.native
+      def accessKeyDown(): Unit
       
-      def accessKeyUp(): Unit = js.native
+      def accessKeyUp(): Unit
       
-      def click(): js.Any = js.native
+      def click(): js.Any
     }
     object button {
       
@@ -546,12 +542,13 @@ object ui {
       }
     }
     
-    @js.native
-    trait checkbox extends uiElement {
+    trait checkbox
+      extends StObject
+         with uiElement {
       
-      def accessKeyUp(): Unit = js.native
+      def accessKeyUp(): Unit
       
-      def setValue(checked: Boolean, noChangeEvent: Boolean): js.UndefOr[scala.Nothing] = js.native
+      def setValue(checked: Boolean, noChangeEvent: Boolean): Unit
     }
     object checkbox {
       
@@ -573,7 +570,7 @@ object ui {
         isVisible: () => Boolean,
         registerEvents: typings.ckeditor.CKEDITOR.dialog.definition.uiElement => uiElement,
         selectParentTab: () => uiElement,
-        setValue: (Boolean, Boolean) => js.UndefOr[scala.Nothing]
+        setValue: (Boolean, Boolean) => Unit
       ): checkbox = {
         val __obj = js.Dynamic.literal(accessKeyDown = js.Any.fromFunction2(accessKeyDown), accessKeyUp = js.Any.fromFunction0(accessKeyUp), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), eventProcessors = eventProcessors.asInstanceOf[js.Any], focus = js.Any.fromFunction0(focus), getDialog = js.Any.fromFunction0(getDialog), getElement = js.Any.fromFunction0(getElement), getInputElement = js.Any.fromFunction0(getInputElement), getValue = js.Any.fromFunction0(getValue), isChanged = js.Any.fromFunction0(isChanged), isEnabled = js.Any.fromFunction0(isEnabled), isFocusable = js.Any.fromFunction0(isFocusable), isVisible = js.Any.fromFunction0(isVisible), registerEvents = js.Any.fromFunction1(registerEvents), selectParentTab = js.Any.fromFunction0(selectParentTab), setValue = js.Any.fromFunction2(setValue))
         __obj.asInstanceOf[checkbox]
@@ -586,18 +583,17 @@ object ui {
         def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
         @scala.inline
-        def setSetValue(value: (Boolean, Boolean) => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+        def setSetValue(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       }
     }
     
     object definitions {
       
-      @js.native
       trait button extends StObject {
         
-        var disabled: js.UndefOr[Boolean] = js.native
+        var disabled: js.UndefOr[Boolean] = js.undefined
         
-        var label: String = js.native
+        var label: String
       }
       object button {
         
@@ -621,14 +617,13 @@ object ui {
         }
       }
       
-      @js.native
       trait checkbox extends StObject {
         
-        var checked: js.UndefOr[Boolean] = js.native
+        var checked: js.UndefOr[Boolean] = js.undefined
         
-        var label: js.UndefOr[String] = js.native
+        var label: js.UndefOr[String] = js.undefined
         
-        var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+        var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       }
       object checkbox {
         
@@ -661,17 +656,16 @@ object ui {
         }
       }
       
-      @js.native
       trait fieldSet extends StObject {
         
-        var children: js.Array[_] = js.native
+        var children: js.Array[js.Any]
         
-        var label: js.UndefOr[String] = js.native
+        var label: js.UndefOr[String] = js.undefined
       }
       object fieldSet {
         
         @scala.inline
-        def apply(children: js.Array[_]): fieldSet = {
+        def apply(children: js.Array[js.Any]): fieldSet = {
           val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
           __obj.asInstanceOf[fieldSet]
         }
@@ -680,7 +674,7 @@ object ui {
         implicit class fieldSetMutableBuilder[Self <: fieldSet] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+          def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
@@ -693,10 +687,9 @@ object ui {
         }
       }
       
-      @js.native
       trait file extends StObject {
         
-        var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+        var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       }
       object file {
         
@@ -717,12 +710,11 @@ object ui {
         }
       }
       
-      @js.native
       trait fileButton extends StObject {
         
-        var `for`: String = js.native
+        var `for`: String
         
-        var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+        var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       }
       object fileButton {
         
@@ -747,16 +739,15 @@ object ui {
         }
       }
       
-      @js.native
       trait hbox extends StObject {
         
-        var align: js.UndefOr[String] = js.native
+        var align: js.UndefOr[String] = js.undefined
         
-        var height: js.UndefOr[String] = js.native
+        var height: js.UndefOr[String] = js.undefined
         
-        var padding: js.UndefOr[String] = js.native
+        var padding: js.UndefOr[String] = js.undefined
         
-        var widths: js.UndefOr[js.Array[String]] = js.native
+        var widths: js.UndefOr[js.Array[String]] = js.undefined
       }
       object hbox {
         
@@ -798,10 +789,9 @@ object ui {
         }
       }
       
-      @js.native
       trait html extends StObject {
         
-        var html: String = js.native
+        var html: String
       }
       object html {
         
@@ -819,16 +809,15 @@ object ui {
         }
       }
       
-      @js.native
       trait iframeElement extends StObject {
         
-        var height: String = js.native
+        var height: String
         
-        var onContentLoad: js.UndefOr[js.Function0[Unit]] = js.native
+        var onContentLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var src: String = js.native
+        var src: String
         
-        var width: String = js.native
+        var width: String
       }
       object iframeElement {
         
@@ -858,18 +847,17 @@ object ui {
         }
       }
       
-      @js.native
       trait labeledElement extends StObject {
         
-        var includeLabel: js.UndefOr[Boolean] = js.native
+        var includeLabel: js.UndefOr[Boolean] = js.undefined
         
-        var label: String = js.native
+        var label: String
         
-        var labelLayout: js.UndefOr[horizontal | vertical] = js.native
+        var labelLayout: js.UndefOr[horizontal | vertical] = js.undefined
         
-        var role: js.UndefOr[String] = js.native
+        var role: js.UndefOr[String] = js.undefined
         
-        var widths: js.UndefOr[js.Tuple2[String, String]] = js.native
+        var widths: js.UndefOr[js.Tuple2[String, String]] = js.undefined
       }
       object labeledElement {
         
@@ -911,14 +899,13 @@ object ui {
         }
       }
       
-      @js.native
       trait radio extends StObject {
         
-        var default: js.Any = js.native
+        var default: js.Any
         
-        var items: js.Array[(js.Tuple2[String, String]) | js.Array[String]] = js.native
+        var items: js.Array[(js.Tuple2[String, String]) | js.Array[String]]
         
-        var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+        var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       }
       object radio {
         
@@ -948,18 +935,17 @@ object ui {
         }
       }
       
-      @js.native
       trait select extends StObject {
         
-        var default: js.Any = js.native
+        var default: js.Any
         
-        var items: js.Array[(js.Tuple2[String, String]) | js.Array[String]] = js.native
+        var items: js.Array[(js.Tuple2[String, String]) | js.Array[String]]
         
-        var multiple: js.UndefOr[Boolean] = js.native
+        var multiple: js.UndefOr[Boolean] = js.undefined
         
-        var size: js.UndefOr[Double] = js.native
+        var size: js.UndefOr[Double] = js.undefined
         
-        var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+        var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       }
       object select {
         
@@ -1001,16 +987,15 @@ object ui {
         }
       }
       
-      @js.native
       trait textInput extends StObject {
         
-        var default: js.UndefOr[String] = js.native
+        var default: js.UndefOr[String] = js.undefined
         
-        var maxLength: js.UndefOr[Double] = js.native
+        var maxLength: js.UndefOr[Double] = js.undefined
         
-        var size: js.UndefOr[String] = js.native
+        var size: js.UndefOr[String] = js.undefined
         
-        var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+        var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       }
       object textInput {
         
@@ -1049,16 +1034,15 @@ object ui {
         }
       }
       
-      @js.native
       trait textarea extends StObject {
         
-        var default: js.UndefOr[String] = js.native
+        var default: js.UndefOr[String] = js.undefined
         
-        var cols: js.UndefOr[Double] = js.native
+        var cols: js.UndefOr[Double] = js.undefined
         
-        var rows: js.UndefOr[Double] = js.native
+        var rows: js.UndefOr[Double] = js.undefined
         
-        var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+        var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       }
       object textarea {
         
@@ -1097,22 +1081,21 @@ object ui {
         }
       }
       
-      @js.native
       trait uiElement extends StObject {
         
-        var accessKey: js.UndefOr[String] = js.native
+        var accessKey: js.UndefOr[String] = js.undefined
         
-        var className: js.UndefOr[String] = js.native
+        var className: js.UndefOr[String] = js.undefined
         
-        var hidden: js.UndefOr[Boolean] = js.native
+        var hidden: js.UndefOr[Boolean] = js.undefined
         
-        var id: String = js.native
+        var id: String
         
-        var style: js.UndefOr[String] = js.native
+        var style: js.UndefOr[String] = js.undefined
         
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
-        var `type`: Double = js.native
+        var `type`: Double
       }
       object uiElement {
         
@@ -1164,18 +1147,17 @@ object ui {
         }
       }
       
-      @js.native
       trait vbox extends StObject {
         
-        var align: js.UndefOr[String] = js.native
+        var align: js.UndefOr[String] = js.undefined
         
-        var expand: js.UndefOr[Boolean] = js.native
+        var expand: js.UndefOr[Boolean] = js.undefined
         
-        var heights: js.UndefOr[js.Array[String]] = js.native
+        var heights: js.UndefOr[js.Array[String]] = js.undefined
         
-        var padding: js.UndefOr[String] = js.native
+        var padding: js.UndefOr[String] = js.undefined
         
-        var width: js.UndefOr[String] = js.native
+        var width: js.UndefOr[String] = js.undefined
       }
       object vbox {
         
@@ -1226,18 +1208,19 @@ object ui {
     
     type fieldset = uiElement
     
-    @js.native
-    trait file extends labeledElement {
+    trait file
+      extends StObject
+         with labeledElement {
       
-      def getAction(): String = js.native
+      def getAction(): String
       
-      def registerEvents(definition: StringDictionary[js.Any]): file = js.native
+      def registerEvents(definition: StringDictionary[js.Any]): file
       
-      def reset(): Unit = js.native
+      def reset(): Unit
       
-      def setInitValue(): Unit = js.native
+      def setInitValue(): Unit
       
-      def submit(): file = js.native
+      def submit(): file
     }
     object file {
       
@@ -1294,7 +1277,9 @@ object ui {
     type fileButton = typings.ckeditor.CKEDITOR.ui.dialog.button
     
     @js.native
-    trait hbox extends uiElement {
+    trait hbox
+      extends StObject
+         with uiElement {
       
       def getChild(indices: js.Array[Double]): js.Array[uiElement] = js.native
       def getChild(indices: Double): uiElement = js.native
@@ -1304,12 +1289,13 @@ object ui {
     
     type iframeElement = uiElement
     
-    @js.native
-    trait labeledElement extends uiElement {
+    trait labeledElement
+      extends StObject
+         with uiElement {
       
-      def getLabel(): String = js.native
+      def getLabel(): String
       
-      def setlabel(label: String): labeledElement = js.native
+      def setlabel(label: String): labeledElement
     }
     object labeledElement {
       
@@ -1350,12 +1336,13 @@ object ui {
       }
     }
     
-    @js.native
-    trait radio extends labeledElement {
+    trait radio
+      extends StObject
+         with labeledElement {
       
-      def accessKeyUp(): Unit = js.native
+      def accessKeyUp(): Unit
       
-      def setValue(value: String, noChangeEvent: Boolean): js.UndefOr[scala.Nothing] = js.native
+      def setValue(value: String, noChangeEvent: Boolean): Unit
     }
     object radio {
       
@@ -1378,7 +1365,7 @@ object ui {
         isVisible: () => Boolean,
         registerEvents: typings.ckeditor.CKEDITOR.dialog.definition.uiElement => uiElement,
         selectParentTab: () => uiElement,
-        setValue: (String, Boolean) => js.UndefOr[scala.Nothing],
+        setValue: (String, Boolean) => Unit,
         setlabel: String => labeledElement
       ): radio = {
         val __obj = js.Dynamic.literal(accessKeyDown = js.Any.fromFunction2(accessKeyDown), accessKeyUp = js.Any.fromFunction0(accessKeyUp), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), eventProcessors = eventProcessors.asInstanceOf[js.Any], focus = js.Any.fromFunction0(focus), getDialog = js.Any.fromFunction0(getDialog), getElement = js.Any.fromFunction0(getElement), getInputElement = js.Any.fromFunction0(getInputElement), getLabel = js.Any.fromFunction0(getLabel), getValue = js.Any.fromFunction0(getValue), isChanged = js.Any.fromFunction0(isChanged), isEnabled = js.Any.fromFunction0(isEnabled), isFocusable = js.Any.fromFunction0(isFocusable), isVisible = js.Any.fromFunction0(isVisible), registerEvents = js.Any.fromFunction1(registerEvents), selectParentTab = js.Any.fromFunction0(selectParentTab), setValue = js.Any.fromFunction2(setValue), setlabel = js.Any.fromFunction1(setlabel))
@@ -1392,35 +1379,38 @@ object ui {
         def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
         @scala.inline
-        def setSetValue(value: (String, Boolean) => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+        def setSetValue(value: (String, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       }
     }
     
     @js.native
-    trait select extends uiElement {
+    trait select
+      extends StObject
+         with uiElement {
       
       def add(label: String): select = js.native
-      def add(label: String, value: js.UndefOr[scala.Nothing], indexedDB: Double): select = js.native
       def add(label: String, value: String): select = js.native
       def add(label: String, value: String, indexedDB: Double): select = js.native
+      def add(label: String, value: Unit, indexedDB: Double): select = js.native
       
       def clear(): select = js.native
       
       def remove(index: Double): select = js.native
     }
     
-    @js.native
-    trait textInput extends labeledElement {
+    trait textInput
+      extends StObject
+         with labeledElement {
       
-      def accessKeyUp(): Unit = js.native
+      def accessKeyUp(): Unit
       
-      def getDirectionMarker(): String = js.native
+      def getDirectionMarker(): String
       
-      def select(): Unit = js.native
+      def select(): Unit
       
-      def setDirectionMarker(dir: String): Unit = js.native
+      def setDirectionMarker(dir: String): Unit
       
-      def setValue(value: String, noChangeEvent: Boolean): textInput = js.native
+      def setValue(value: String, noChangeEvent: Boolean): textInput
     }
     object textInput {
       
@@ -1475,42 +1465,41 @@ object ui {
     
     type textarea = labeledElement
     
-    @js.native
     trait uiElement extends StObject {
       
-      def accessKeyDown(dialog: typings.ckeditor.CKEDITOR.dialog, key: String): Unit = js.native
+      def accessKeyDown(dialog: typings.ckeditor.CKEDITOR.dialog, key: String): Unit
       
-      def accessKeyUp(dialog: typings.ckeditor.CKEDITOR.dialog, key: String): Unit = js.native
+      def accessKeyUp(dialog: typings.ckeditor.CKEDITOR.dialog, key: String): Unit
       
-      def disable(): Unit = js.native
+      def disable(): Unit
       
-      def enable(): Unit = js.native
+      def enable(): Unit
       
-      var eventProcessors: js.Any = js.native
+      var eventProcessors: js.Any
       
-      def focus(): js.UndefOr[uiElement] = js.native
+      def focus(): js.UndefOr[uiElement]
       
-      def getDialog(): typings.ckeditor.CKEDITOR.dialog = js.native
+      def getDialog(): typings.ckeditor.CKEDITOR.dialog
       
-      def getElement(): element = js.native
+      def getElement(): element
       
-      def getInputElement(): element = js.native
+      def getInputElement(): element
       
-      def getValue(): js.Any = js.native
+      def getValue(): js.Any
       
-      def isChanged(): Boolean = js.native
+      def isChanged(): Boolean
       
-      def isEnabled(): Boolean = js.native
+      def isEnabled(): Boolean
       
-      def isFocusable(): Boolean = js.native
+      def isFocusable(): Boolean
       
-      def isVisible(): Boolean = js.native
+      def isVisible(): Boolean
       
-      def registerEvents(definition: typings.ckeditor.CKEDITOR.dialog.definition.uiElement): uiElement = js.native
+      def registerEvents(definition: typings.ckeditor.CKEDITOR.dialog.definition.uiElement): uiElement
       
-      def selectParentTab(): uiElement = js.native
+      def selectParentTab(): uiElement
       
-      def setValue(value: js.Any, noChangeEvent: Boolean): js.UndefOr[uiElement] = js.native
+      def setValue(value: js.Any, noChangeEvent: Boolean): js.UndefOr[uiElement]
     }
     object uiElement {
       
@@ -1619,14 +1608,6 @@ object ui {
     def reposition(): Unit = js.native
     
     def showAsChild(panel: floatPanel, blckName: String, offsetParent: element, corner: Double): Unit = js.native
-    def showAsChild(
-      panel: floatPanel,
-      blckName: String,
-      offsetParent: element,
-      corner: Double,
-      offsetX: js.UndefOr[scala.Nothing],
-      offsetY: Double
-    ): Unit = js.native
     def showAsChild(panel: floatPanel, blckName: String, offsetParent: element, corner: Double, offsetX: Double): Unit = js.native
     def showAsChild(
       panel: floatPanel,
@@ -1636,40 +1617,17 @@ object ui {
       offsetX: Double,
       offsetY: Double
     ): Unit = js.native
-    
-    def showBlock(name: String, offsetParent: element, corner: Double): Unit = js.native
-    def showBlock(
-      name: String,
+    def showAsChild(
+      panel: floatPanel,
+      blckName: String,
       offsetParent: element,
       corner: Double,
-      offsetX: js.UndefOr[scala.Nothing],
-      offsetY: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def showBlock(
-      name: String,
-      offsetParent: element,
-      corner: Double,
-      offsetX: js.UndefOr[scala.Nothing],
+      offsetX: Unit,
       offsetY: Double
     ): Unit = js.native
-    def showBlock(
-      name: String,
-      offsetParent: element,
-      corner: Double,
-      offsetX: js.UndefOr[scala.Nothing],
-      offsetY: Double,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    
+    def showBlock(name: String, offsetParent: element, corner: Double): Unit = js.native
     def showBlock(name: String, offsetParent: element, corner: Double, offsetX: Double): Unit = js.native
-    def showBlock(
-      name: String,
-      offsetParent: element,
-      corner: Double,
-      offsetX: Double,
-      offsetY: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def showBlock(name: String, offsetParent: element, corner: Double, offsetX: Double, offsetY: Double): Unit = js.native
     def showBlock(
       name: String,
@@ -1679,14 +1637,38 @@ object ui {
       offsetY: Double,
       callback: js.Function0[Unit]
     ): Unit = js.native
+    def showBlock(
+      name: String,
+      offsetParent: element,
+      corner: Double,
+      offsetX: Double,
+      offsetY: Unit,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def showBlock(name: String, offsetParent: element, corner: Double, offsetX: Unit, offsetY: Double): Unit = js.native
+    def showBlock(
+      name: String,
+      offsetParent: element,
+      corner: Double,
+      offsetX: Unit,
+      offsetY: Double,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def showBlock(
+      name: String,
+      offsetParent: element,
+      corner: Double,
+      offsetX: Unit,
+      offsetY: Unit,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
   }
   
-  @js.native
   trait handlerDefinition[T] extends StObject {
     
-    var contentsElement: element = js.native
+    var contentsElement: element
     
-    def create(definition: StringDictionary[js.Any]): T = js.native
+    def create(definition: StringDictionary[js.Any]): T
   }
   object handlerDefinition {
     
@@ -1697,7 +1679,7 @@ object ui {
     }
     
     @scala.inline
-    implicit class handlerDefinitionMutableBuilder[Self <: handlerDefinition[_], T] (val x: Self with handlerDefinition[T]) extends AnyVal {
+    implicit class handlerDefinitionMutableBuilder[Self <: handlerDefinition[?], T] (val x: Self & handlerDefinition[T]) extends AnyVal {
       
       @scala.inline
       def setContentsElement(value: element): Self = StObject.set(x, "contentsElement", value.asInstanceOf[js.Any])
@@ -1723,12 +1705,11 @@ object ui {
   }
   object panel {
     
-    @js.native
     trait block extends StObject {
       
-      def getItems(): nodeList = js.native
+      def getItems(): nodeList
       
-      def markItem(index: Double): Unit = js.native
+      def markItem(index: Double): Unit
     }
     object block {
       
@@ -1752,10 +1733,9 @@ object ui {
   
   type panelButton = button
   
-  @js.native
   trait richCombo extends StObject {
     
-    def render(editor: editor, output: js.Array[String]): Unit = js.native
+    def render(editor: editor, output: js.Array[String]): Unit
   }
   object richCombo {
     

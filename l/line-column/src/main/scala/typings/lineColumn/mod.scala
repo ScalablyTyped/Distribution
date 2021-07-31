@@ -2,7 +2,6 @@ package typings.lineColumn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,15 +12,16 @@ object mod {
     * @param options options for the finder or a number representing the 'from' index.
     * @returns a `LineColumnFinder` instance.
     */
+  @scala.inline
+  def apply(str: String): LineColumnFinder = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[LineColumnFinder]
+  @scala.inline
+  def apply(str: String, options: Double): LineColumnFinder = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineColumnFinder]
+  @scala.inline
+  def apply(str: String, options: LineColumnOptions): LineColumnFinder = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineColumnFinder]
+  
   @JSImport("line-column", JSImport.Namespace)
   @js.native
-  def apply(str: String): LineColumnFinder = js.native
-  @JSImport("line-column", JSImport.Namespace)
-  @js.native
-  def apply(str: String, options: Double): LineColumnFinder = js.native
-  @JSImport("line-column", JSImport.Namespace)
-  @js.native
-  def apply(str: String, options: LineColumnOptions): LineColumnFinder = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Utility type for using an array as an input to the `toIndex` function.
@@ -56,12 +56,13 @@ object mod {
     def toIndex(line: LineColumnObject, col: Double): Double = js.native
   }
   
-  @js.native
-  trait LineColumnInfo extends LineColumnObject {
+  trait LineColumnInfo
+    extends StObject
+       with LineColumnObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object LineColumnInfo {
     
@@ -109,10 +110,9 @@ object mod {
   /**
     * Options for the main `lineColumn` function.
     */
-  @js.native
   trait LineColumnOptions extends StObject {
     
-    var origin: Double = js.native
+    var origin: Double
   }
   object LineColumnOptions {
     

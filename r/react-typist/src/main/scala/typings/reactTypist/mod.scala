@@ -7,7 +7,6 @@ import typings.reactTypist.mod.Typist.CursorProps
 import typings.reactTypist.mod.Typist.DelayProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -86,12 +85,11 @@ object mod {
       def this(props: DelayProps, context: js.Any) = this()
     }
     
-    @js.native
     trait BackSpaceProps extends StObject {
       
-      var count: js.UndefOr[Double] = js.native
+      var count: js.UndefOr[Double] = js.undefined
       
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
     }
     object BackSpaceProps {
       
@@ -118,18 +116,17 @@ object mod {
       }
     }
     
-    @js.native
     trait CurrentTextProps extends StObject {
       
-      var charIdx: Double = js.native
+      var charIdx: Double
       
-      var character: String = js.native
+      var character: String
       
-      def defDelayGenerator(mn: Double, st: Double): js.Function1[/* params */ js.Any, Double] = js.native
+      def defDelayGenerator(mn: Double, st: Double): js.Function1[/* params */ js.Any, Double]
       
-      var line: String = js.native
+      var line: String
       
-      var lineIdx: Double = js.native
+      var lineIdx: Double
     }
     object CurrentTextProps {
       
@@ -165,18 +162,17 @@ object mod {
       }
     }
     
-    @js.native
     trait CursorProps extends StObject {
       
-      var blink: js.UndefOr[Boolean] = js.native
+      var blink: js.UndefOr[Boolean] = js.undefined
       
-      var element: js.UndefOr[String] = js.native
+      var element: js.UndefOr[String] = js.undefined
       
-      var hideWhenDone: js.UndefOr[Boolean] = js.native
+      var hideWhenDone: js.UndefOr[Boolean] = js.undefined
       
-      var hideWhenDoneDelay: js.UndefOr[Double] = js.native
+      var hideWhenDoneDelay: js.UndefOr[Double] = js.undefined
       
-      var show: js.UndefOr[Boolean] = js.native
+      var show: js.UndefOr[Boolean] = js.undefined
     }
     object CursorProps {
       
@@ -221,10 +217,9 @@ object mod {
       }
     }
     
-    @js.native
     trait DelayProps extends StObject {
       
-      var ms: Double = js.native
+      var ms: Double
     }
     object DelayProps {
       
@@ -243,28 +238,27 @@ object mod {
     }
   }
   
-  @js.native
   trait TypistProps extends StObject {
     
-    var avgTypingDelay: js.UndefOr[Double] = js.native
+    var avgTypingDelay: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cursor: js.UndefOr[CursorProps] = js.native
+    var cursor: js.UndefOr[CursorProps] = js.undefined
     
     var delayGenerator: js.UndefOr[
         js.Function3[/* mean */ Double, /* std */ Double, /* current */ CurrentTextProps, Double]
-      ] = js.native
+      ] = js.undefined
     
-    var onCharacterTyped: js.UndefOr[js.Function2[/* char */ String, /* charIndex */ Double, Unit]] = js.native
+    var onCharacterTyped: js.UndefOr[js.Function2[/* char */ String, /* charIndex */ Double, Unit]] = js.undefined
     
-    var onLineTyped: js.UndefOr[js.Function2[/* line */ String, /* lineIndex */ Double, Unit]] = js.native
+    var onLineTyped: js.UndefOr[js.Function2[/* line */ String, /* lineIndex */ Double, Unit]] = js.undefined
     
-    var onTypingDone: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTypingDone: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var startDelay: js.UndefOr[Double] = js.native
+    var startDelay: js.UndefOr[Double] = js.undefined
     
-    var stdTypingDelay: js.UndefOr[Double] = js.native
+    var stdTypingDelay: js.UndefOr[Double] = js.undefined
   }
   object TypistProps {
     

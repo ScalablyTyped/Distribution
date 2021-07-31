@@ -5,14 +5,12 @@ import typings.node.urlMod.UrlWithStringQuery
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("get-uri", JSImport.Namespace)
-  @js.native
-  def apply(uri: String): js.Promise[Readable] = js.native
+  @scala.inline
+  def apply(uri: String): js.Promise[Readable] = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Readable]]
   /**
     * Async function that returns a `stream.Readable` instance to the
     * callback function that will output the contents of the given URI.
@@ -29,22 +27,22 @@ object mod {
     * @param {Function} fn callback function
     * @api public
     */
+  @scala.inline
+  def apply(uri: String, fn: GetUriCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(uri: String, opts: GetUriOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  @scala.inline
+  def apply(uri: String, opts: GetUriOptions, fn: GetUriCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("get-uri", JSImport.Namespace)
   @js.native
-  def apply(uri: String, fn: GetUriCallback): Unit = js.native
-  @JSImport("get-uri", JSImport.Namespace)
-  @js.native
-  def apply(uri: String, opts: GetUriOptions): js.Promise[Readable] = js.native
-  @JSImport("get-uri", JSImport.Namespace)
-  @js.native
-  def apply(uri: String, opts: GetUriOptions, fn: GetUriCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type GetUriCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* res */ js.UndefOr[Readable], Unit]
   
-  @js.native
   trait GetUriOptions extends StObject {
     
-    var cache: js.UndefOr[Readable] = js.native
+    var cache: js.UndefOr[Readable] = js.undefined
   }
   object GetUriOptions {
     

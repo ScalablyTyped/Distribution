@@ -2,46 +2,44 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotFilter extends StObject {
   
-  val Active: Boolean = js.native
+  val Active: Boolean
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  val DataCubeField: CubeField = js.native
+  val DataCubeField: CubeField
   
-  val DataField: typings.activexExcel.Excel.PivotField = js.native
+  val DataField: typings.activexExcel.Excel.PivotField
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Description: String = js.native
+  val Description: String
   
   @JSName("Excel.PivotFilter_typekey")
-  var ExcelDotPivotFilter_typekey: PivotFilter = js.native
+  var ExcelDotPivotFilter_typekey: PivotFilter
   
-  val FilterType: XlPivotFilterType = js.native
+  val FilterType: XlPivotFilterType
   
-  val IsMemberPropertyFilter: Boolean = js.native
+  val IsMemberPropertyFilter: Boolean
   
-  val MemberPropertyField: typings.activexExcel.Excel.PivotField = js.native
+  val MemberPropertyField: typings.activexExcel.Excel.PivotField
   
-  val Name: String = js.native
+  val Name: String
   
-  var Order: Double = js.native
+  var Order: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PivotField: typings.activexExcel.Excel.PivotField = js.native
+  val PivotField: typings.activexExcel.Excel.PivotField
   
-  val Value1: js.Any = js.native
+  val Value1: js.Any
   
-  val Value2: js.Any = js.native
+  val Value2: js.Any
 }
 object PivotFilter {
   

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a range of cells that can possibly be merged or unmerged. */
-@js.native
-trait XMergeableCellRange extends XInterface {
+trait XMergeableCellRange
+  extends StObject
+     with XInterface {
   
   /** @returns `TRUE` if all cells from this range can be merged to one or `FALSE` otherwise. */
-  def isMergeable(): Boolean = js.native
+  def isMergeable(): Boolean
   
   /**
     * merges the area specified by this range.
     * @throws com::sun::star::lang::NoSupportException if a merge is not possible for this range. You can use {@link isMergeable()} to check if a merge is possible.
     */
-  def merge(): Unit = js.native
+  def merge(): Unit
   
   /**
     * splits the cells in this range. This will be done by inserting rows and columns if needed or unmerging cells that are already split.
@@ -27,7 +27,7 @@ trait XMergeableCellRange extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if at least one of the parameters is less than zero.
     * @throws com::sun::star::lang::NoSupportException if a split is not possible for this range.
     */
-  def split(Columns: Double, Rows: Double): Unit = js.native
+  def split(Columns: Double, Rows: Double): Unit
 }
 object XMergeableCellRange {
   

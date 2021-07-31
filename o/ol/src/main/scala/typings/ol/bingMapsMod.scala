@@ -5,10 +5,13 @@ import typings.ol.olTileMod.Tile
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bingMapsMod {
+  
+  @JSImport("ol/source/BingMaps", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/source/BingMaps", JSImport.Default)
   @js.native
@@ -16,9 +19,8 @@ object bingMapsMod {
     def this(options: Options) = this()
   }
   
-  @JSImport("ol/source/BingMaps", "quadKey")
-  @js.native
-  def quadKey(tileCoord: TileCoord): String = js.native
+  @scala.inline
+  def quadKey(tileCoord: TileCoord): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quadKey")(tileCoord.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait BingMaps
@@ -37,16 +39,15 @@ object bingMapsMod {
     def handleImageryMetadataResponse(response: BingMapsImageryMetadataResponse): Unit = js.native
   }
   
-  @js.native
   trait BingMapsImageryMetadataResponse extends StObject {
     
-    var authenticationResultCode: String = js.native
+    var authenticationResultCode: String
     
-    var resourceSets: js.Array[ResourceSet] = js.native
+    var resourceSets: js.Array[ResourceSet]
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var statusDescription: String = js.native
+    var statusDescription: String
   }
   object BingMapsImageryMetadataResponse {
     
@@ -81,14 +82,13 @@ object bingMapsMod {
     }
   }
   
-  @js.native
   trait CoverageArea extends StObject {
     
-    var bbox: js.Array[Double] = js.native
+    var bbox: js.Array[Double]
     
-    var zoomMax: Double = js.native
+    var zoomMax: Double
     
-    var zoomMin: Double = js.native
+    var zoomMin: Double
   }
   object CoverageArea {
     
@@ -115,12 +115,11 @@ object bingMapsMod {
     }
   }
   
-  @js.native
   trait ImageryProvider extends StObject {
     
-    var attribution: js.UndefOr[String] = js.native
+    var attribution: js.UndefOr[String] = js.undefined
     
-    var coverageAreas: js.Array[CoverageArea] = js.native
+    var coverageAreas: js.Array[CoverageArea]
   }
   object ImageryProvider {
     
@@ -147,30 +146,29 @@ object bingMapsMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var culture: js.UndefOr[String] = js.native
+    var culture: js.UndefOr[String] = js.undefined
     
-    var hidpi: js.UndefOr[Boolean] = js.native
+    var hidpi: js.UndefOr[Boolean] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var imagerySet: String = js.native
+    var imagerySet: String
     
-    var key: String = js.native
+    var key: String
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+    var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
-    var tileLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var transition: js.UndefOr[Double] = js.native
+    var transition: js.UndefOr[Double] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -245,22 +243,21 @@ object bingMapsMod {
     }
   }
   
-  @js.native
   trait Resource extends StObject {
     
-    var imageHeight: Double = js.native
+    var imageHeight: Double
     
-    var imageUrl: String = js.native
+    var imageUrl: String
     
-    var imageUrlSubdomains: js.Array[String] = js.native
+    var imageUrlSubdomains: js.Array[String]
     
-    var imageWidth: Double = js.native
+    var imageWidth: Double
     
-    var imageryProviders: js.UndefOr[js.Array[ImageryProvider]] = js.native
+    var imageryProviders: js.UndefOr[js.Array[ImageryProvider]] = js.undefined
     
-    var zoomMax: Double = js.native
+    var zoomMax: Double
     
-    var zoomMin: Double = js.native
+    var zoomMin: Double
   }
   object Resource {
     
@@ -312,10 +309,9 @@ object bingMapsMod {
     }
   }
   
-  @js.native
   trait ResourceSet extends StObject {
     
-    var resources: js.Array[Resource] = js.native
+    var resources: js.Array[Resource]
   }
   object ResourceSet {
     

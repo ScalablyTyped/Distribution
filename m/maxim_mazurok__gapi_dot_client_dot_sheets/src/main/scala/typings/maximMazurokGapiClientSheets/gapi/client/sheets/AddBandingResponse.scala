@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddBandingResponse extends StObject {
   
   /** The banded range that was added. */
-  var bandedRange: js.UndefOr[BandedRange] = js.native
+  var bandedRange: js.UndefOr[BandedRange] = js.undefined
 }
 object AddBandingResponse {
   

@@ -10,9 +10,9 @@ A menagerie of useful type operators for TypeScript
 | ------------------ | :-------------: |
 | Full name          | type-zoo |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 19 |
-| # downloads        | 409946 |
+| # releases         | 3 |
+| # dependents       | 17 |
+| # downloads        | 378443 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,14 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MetadataRequestedEventOptions extends EntryPathRequestedEventOptions {
+trait MetadataRequestedEventOptions
+  extends StObject
+     with EntryPathRequestedEventOptions {
   
   /** Set to true if the thumbnail is requested. */
-  var thumbnail: Boolean = js.native
+  var thumbnail: Boolean
 }
 object MetadataRequestedEventOptions {
   

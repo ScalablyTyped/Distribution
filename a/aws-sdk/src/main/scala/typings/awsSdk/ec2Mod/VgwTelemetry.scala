@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VgwTelemetry extends StObject {
   
   /**
     * The number of accepted routes.
     */
-  var AcceptedRouteCount: js.UndefOr[Integer] = js.native
+  var AcceptedRouteCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the VPN tunnel endpoint certificate.
     */
-  var CertificateArn: js.UndefOr[String] = js.native
+  var CertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time of the last change in status.
     */
-  var LastStatusChange: js.UndefOr[DateTime] = js.native
+  var LastStatusChange: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The Internet-routable IP address of the virtual private gateway's outside interface.
     */
-  var OutsideIpAddress: js.UndefOr[String] = js.native
+  var OutsideIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the VPN tunnel.
     */
-  var Status: js.UndefOr[TelemetryStatus] = js.native
+  var Status: js.UndefOr[TelemetryStatus] = js.undefined
   
   /**
     * If an error occurs, a description of the error.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
 }
 object VgwTelemetry {
   

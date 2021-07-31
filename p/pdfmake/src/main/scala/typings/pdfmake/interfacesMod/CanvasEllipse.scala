@@ -3,31 +3,30 @@ package typings.pdfmake.interfacesMod
 import typings.pdfmake.pdfmakeStrings.ellipse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasEllipse
-  extends CanvasLineElement
+  extends StObject
+     with CanvasLineElement
      with CanvasFilledElement
      with CanvasElement {
   
-  var r1: Double = js.native
+  var r1: Double
   
-  var r2: js.UndefOr[Double] = js.native
+  var r2: js.UndefOr[Double] = js.undefined
   
-  var `type`: ellipse = js.native
+  var `type`: ellipse
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object CanvasEllipse {
   
   @scala.inline
-  def apply(r1: Double, `type`: ellipse, x: Double, y: Double): CanvasEllipse = {
+  def apply(r1: Double, x: Double, y: Double): CanvasEllipse = {
     val __obj = js.Dynamic.literal(r1 = r1.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ellipse")
     __obj.asInstanceOf[CanvasEllipse]
   }
   

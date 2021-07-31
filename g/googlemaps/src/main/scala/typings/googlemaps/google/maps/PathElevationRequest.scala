@@ -2,15 +2,13 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathElevationRequest extends StObject {
   
-  var path: js.UndefOr[js.Array[LatLngLiteral | LatLng]] = js.native
+  var path: js.UndefOr[js.Array[LatLngLiteral | LatLng]] = js.undefined
   
-  var samples: js.UndefOr[Double] = js.native
+  var samples: js.UndefOr[Double] = js.undefined
 }
 object PathElevationRequest {
   

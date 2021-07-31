@@ -2,36 +2,34 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartContinuousExportResponse extends StObject {
   
   /**
     * The type of data collector used to gather this data (currently only offered for AGENT).
     */
-  var dataSource: js.UndefOr[DataSource] = js.native
+  var dataSource: js.UndefOr[DataSource] = js.undefined
   
   /**
     * The unique ID assigned to this export.
     */
-  var exportId: js.UndefOr[ConfigurationsExportId] = js.native
+  var exportId: js.UndefOr[ConfigurationsExportId] = js.undefined
   
   /**
     * The name of the s3 bucket where the export data parquet files are stored.
     */
-  var s3Bucket: js.UndefOr[S3Bucket] = js.native
+  var s3Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * A dictionary which describes how the data is stored.    databaseName - the name of the Glue database used to store the schema.  
     */
-  var schemaStorageConfig: js.UndefOr[SchemaStorageConfig] = js.native
+  var schemaStorageConfig: js.UndefOr[SchemaStorageConfig] = js.undefined
   
   /**
     * The timestamp representing when the continuous export was started.
     */
-  var startTime: js.UndefOr[TimeStamp] = js.native
+  var startTime: js.UndefOr[TimeStamp] = js.undefined
 }
 object StartContinuousExportResponse {
   

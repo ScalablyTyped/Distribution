@@ -5,16 +5,20 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The static side to the Range class. */
 @js.native
 trait RangeStatic
-  extends /** Construct a Range object. */
+  extends StObject
+     with /** Construct a Range object. */
 Instantiable0[Range]
      with Instantiable1[/* pointA */ PointCompatible, Range]
-     with Instantiable2[js.UndefOr[/* pointA */ PointCompatible], /* pointB */ PointCompatible, Range] {
+     with Instantiable2[
+      (/* pointA */ PointCompatible) | (/* pointA */ Unit), 
+      /* pointB */ PointCompatible, 
+      Range
+    ] {
   
   /** Call this with the result of Range::serialize to construct a new Range. */
   def deserialize(array: js.Object): Range = js.native

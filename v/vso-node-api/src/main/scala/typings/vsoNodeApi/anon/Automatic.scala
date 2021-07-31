@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Automatic extends StObject {
   
-  var automatic: scala.Double = js.native
+  var automatic: scala.Double
   
-  var deploymentSubmitter: scala.Double = js.native
+  var deploymentSubmitter: scala.Double
   
-  var firstPreDeploymentApprover: scala.Double = js.native
+  var firstPreDeploymentApprover: scala.Double
 }
 object Automatic {
   

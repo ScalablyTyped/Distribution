@@ -2,21 +2,19 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SegmentDefinition defines the segment to be a set of SegmentFilters which
   * are combined together with a logical `AND` operation.
   */
-@js.native
 trait SchemaSegmentDefinition extends StObject {
   
   /**
     * A segment is defined by a set of segment filters which are combined
     * together with a logical `AND` operation.
     */
-  var segmentFilters: js.UndefOr[js.Array[SchemaSegmentFilter]] = js.native
+  var segmentFilters: js.UndefOr[js.Array[SchemaSegmentFilter]] = js.undefined
 }
 object SchemaSegmentDefinition {
   

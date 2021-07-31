@@ -2,7 +2,6 @@ package typings.jasmineDataDrivenTests
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -15,9 +14,7 @@ object global {
   
   @JSGlobal("using")
   @js.native
-  def using: JasmineDataDrivenTest = js.native
-  @scala.inline
-  def using_=(x: JasmineDataDrivenTest): Unit = js.Dynamic.global.updateDynamic("using")(x.asInstanceOf[js.Any])
+  val `using`: JasmineDataDrivenTest = js.native
   
   @JSGlobal("xall")
   @js.native

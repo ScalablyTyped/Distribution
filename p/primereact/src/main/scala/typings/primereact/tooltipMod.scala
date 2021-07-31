@@ -4,7 +4,6 @@ import typings.primereact.anon.TargetHTMLElement
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -21,48 +20,47 @@ object tooltipMod {
     def this(props: TooltipProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TooltipProps extends StObject {
     
-    var appendTo: js.UndefOr[js.Object] = js.native
+    var appendTo: js.UndefOr[js.Object] = js.undefined
     
-    var at: js.UndefOr[String] = js.native
+    var at: js.UndefOr[String] = js.undefined
     
-    var autoZIndex: js.UndefOr[Boolean] = js.native
+    var autoZIndex: js.UndefOr[Boolean] = js.undefined
     
-    var baseZIndex: js.UndefOr[Double] = js.native
+    var baseZIndex: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var hideEvent: js.UndefOr[String] = js.native
+    var hideEvent: js.UndefOr[String] = js.undefined
     
-    var mouseTrack: js.UndefOr[Boolean] = js.native
+    var mouseTrack: js.UndefOr[Boolean] = js.undefined
     
-    var mouseTrackLeft: js.UndefOr[Double] = js.native
+    var mouseTrackLeft: js.UndefOr[Double] = js.undefined
     
-    var mouseTrackTop: js.UndefOr[Double] = js.native
+    var mouseTrackTop: js.UndefOr[Double] = js.undefined
     
-    var my: js.UndefOr[String] = js.native
+    var my: js.UndefOr[String] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* e */ TargetHTMLElement, Unit]] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var showEvent: js.UndefOr[String] = js.native
+    var showEvent: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object TooltipProps {
     

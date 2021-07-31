@@ -2,31 +2,29 @@ package typings.awsSdkBuildTypes.apiModelMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Operation extends StObject {
   
   var authtype: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var deprecated: js.UndefOr[scala.Boolean] = js.native
+  var deprecated: js.UndefOr[scala.Boolean] = js.undefined
   
-  var documentation: js.UndefOr[java.lang.String] = js.native
+  var documentation: js.UndefOr[java.lang.String] = js.undefined
   
-  var documentationUrl: js.UndefOr[java.lang.String] = js.native
+  var documentationUrl: js.UndefOr[java.lang.String] = js.undefined
   
-  var errors: js.UndefOr[js.Array[StructureMember]] = js.native
+  var errors: js.UndefOr[js.Array[StructureMember]] = js.undefined
   
-  var http: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait */ js.Any = js.native
+  var http: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait */ js.Any
   
-  var input: js.UndefOr[StructureMember] = js.native
+  var input: js.UndefOr[StructureMember] = js.undefined
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var output: js.UndefOr[StructureMember] = js.native
+  var output: js.UndefOr[StructureMember] = js.undefined
 }
 object Operation {
   

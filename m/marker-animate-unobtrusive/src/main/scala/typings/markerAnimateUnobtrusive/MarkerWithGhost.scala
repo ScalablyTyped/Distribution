@@ -4,11 +4,12 @@ import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerWithGhost extends SlidingMarker {
+trait MarkerWithGhost
+  extends StObject
+     with SlidingMarker {
   
   def getGhostAnimationPosition(): LatLng = js.native
   

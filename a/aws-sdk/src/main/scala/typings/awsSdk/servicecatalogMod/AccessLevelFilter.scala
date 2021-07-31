@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessLevelFilter extends StObject {
   
   /**
     * The access level.    Account - Filter results based on the account.    Role - Filter results based on the federated role of the specified user.    User - Filter results based on the specified user.  
     */
-  var Key: js.UndefOr[AccessLevelFilterKey] = js.native
+  var Key: js.UndefOr[AccessLevelFilterKey] = js.undefined
   
   /**
     * The user to which the access level applies. The only supported value is Self.
     */
-  var Value: js.UndefOr[AccessLevelFilterValue] = js.native
+  var Value: js.UndefOr[AccessLevelFilterValue] = js.undefined
 }
 object AccessLevelFilter {
   

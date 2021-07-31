@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorAxisOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps) Accessibility options for an axis.
     * Requires the accessibility module.
     */
-  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to allow decimals on the color
     * axis.
     */
-  var allowDecimals: js.UndefOr[Boolean] = js.native
+  var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) In a polar chart, this is the angle of the Y axis in
@@ -27,26 +25,26 @@ trait ColorAxisOptions extends StObject {
     * unaffected. Since v8.0.0 this option is also applicable for X axis
     * (inverted polar).
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The highest allowed value for
     * automatically computed axis extremes.
     */
-  var ceiling: js.UndefOr[Double] = js.native
+  var ceiling: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) A class name that opens for styling the
     * axis by CSS, especially in Highcharts styled mode. The class name is
     * applied to group elements for the grid, axis elements and labels.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) Show an indicator on the axis for the current date and time. Can
     * be a boolean or a configuration object similar to xAxis.plotLines.
     */
-  var currentDateIndicator: js.UndefOr[Boolean | AxisCurrentDateIndicatorOptions] = js.native
+  var currentDateIndicator: js.UndefOr[Boolean | AxisCurrentDateIndicatorOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Determines how to set each data class'
@@ -55,48 +53,48 @@ trait ColorAxisOptions extends StObject {
     * value, `category`, pulls colors from the global or chart specific colors
     * array.
     */
-  var dataClassColor: js.UndefOr[OptionsDataClassColorValue] = js.native
+  var dataClassColor: js.UndefOr[OptionsDataClassColorValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) An array of data classes or ranges for
     * the choropleth map. If none given, the color axis is scalar and values
     * are distributed as a gradient between the minimum and maximum colors.
     */
-  var dataClasses: js.UndefOr[js.Array[ColorAxisDataClassesOptions]] = js.native
+  var dataClasses: js.UndefOr[js.Array[ColorAxisDataClassesOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to force the axis to end on a
     * tick. Use this option with the maxPadding option to control the axis end.
     */
-  var endOnTick: js.UndefOr[Boolean] = js.native
+  var endOnTick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Event handlers for the axis.
     */
-  var events: js.UndefOr[ColorAxisEventsOptions] = js.native
+  var events: js.UndefOr[ColorAxisEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The lowest allowed value for automatically
     * computed axis extremes.
     */
-  var floor: js.UndefOr[Double] = js.native
+  var floor: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Set grid options for the axis labels. Requires Highcharts Gantt.
     */
-  var grid: js.UndefOr[ColorAxisGridOptions] = js.native
+  var grid: js.UndefOr[ColorAxisGridOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Color of the grid lines extending from
     * the axis across the gradient.
     */
-  var gridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var gridLineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The dash or dot style of the grid
     * lines. For possible values, see this demonstration.
     */
-  var gridLineDashStyle: js.UndefOr[DashStyleValue] = js.native
+  var gridLineDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts) Polar charts only. Whether the grid lines should draw as a
@@ -104,25 +102,25 @@ trait ColorAxisOptions extends StObject {
     * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
     * for X axis (inverted polar).
     */
-  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.native
+  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The width of the grid lines extending
     * from the axis across the gradient of a scalar color axis.
     */
-  var gridLineWidth: js.UndefOr[Double] = js.native
+  var gridLineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The Z index of the grid lines.
     */
-  var gridZIndex: js.UndefOr[Double] = js.native
+  var gridZIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) An id for the axis. This can be used
     * after render time to get a pointer to the axis object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The axis labels show the number for
@@ -131,14 +129,14 @@ trait ColorAxisOptions extends StObject {
     * For more live examples on label options, see xAxis.labels in the
     * Highcharts API.
     */
-  var labels: js.UndefOr[ColorAxisLabelsOptions] = js.native
+  var labels: js.UndefOr[ColorAxisLabelsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The layout of the color axis. Can be
     * `'horizontal'` or `'vertical'`. If none given, the color axis has the
     * same layout as the legend.
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The color of the line marking the axis
@@ -147,21 +145,21 @@ trait ColorAxisOptions extends StObject {
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorType] = js.native
+  var lineColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) If there are multiple axes on the same
     * side of the chart, the pixel margin between the axes. Defaults to 0 on
     * vertical axes, 15 on horizontal axes.
     */
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The triangular marker on a scalar color
     * axis that points to the value of the hovered area. To disable the marker,
     * set `marker: null`.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The maximum value of the axis in terms
@@ -169,7 +167,7 @@ trait ColorAxisOptions extends StObject {
     * calculated. If the `endOnTick` option is true, the max value might be
     * rounded up.
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The color to represent the maximum of
@@ -179,20 +177,20 @@ trait ColorAxisOptions extends StObject {
     * If dataClasses are set, the color is based on minColor and maxColor
     * unless a color is set for each data class, or the dataClassColor is set.
     */
-  var maxColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var maxColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Padding of the max value relative to
     * the length of the axis. A padding of 0.05 will make a 100px axis 5px
     * longer.
     */
-  var maxPadding: js.UndefOr[Double] = js.native
+  var maxPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Maximum range which can be set using the navigator's
     * handles. Opposite of xAxis.minRange.
     */
-  var maxRange: js.UndefOr[Double] = js.native
+  var maxRange: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The minimum value of the axis in terms
@@ -200,7 +198,7 @@ trait ColorAxisOptions extends StObject {
     * calculated. If the `startOnTick` option is true, the min value might be
     * rounded down.
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The color to represent the minimum of
@@ -210,14 +208,14 @@ trait ColorAxisOptions extends StObject {
     * If dataClasses are set, the color is based on minColor and maxColor
     * unless a color is set for each data class, or the dataClassColor is set.
     */
-  var minColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var minColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Padding of the min value relative to
     * the length of the axis. A padding of 0.05 will make a 100px axis 5px
     * longer.
     */
-  var minPadding: js.UndefOr[Double] = js.native
+  var minPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Color of the minor, secondary grid
@@ -226,13 +224,13 @@ trait ColorAxisOptions extends StObject {
     * In styled mode, the stroke width is given in the
     * `.highcharts-minor-grid-line` class.
     */
-  var minorGridLineColor: js.UndefOr[ColorType] = js.native
+  var minorGridLineColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The dash or dot style of the minor grid
     * lines. For possible values, see this demonstration.
     */
-  var minorGridLineDashStyle: js.UndefOr[DashStyleValue] = js.native
+  var minorGridLineDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Width of the minor, secondary grid
@@ -241,12 +239,12 @@ trait ColorAxisOptions extends StObject {
     * In styled mode, the stroke width is given in the `.highcharts-grid-line`
     * class.
     */
-  var minorGridLineWidth: js.UndefOr[Double] = js.native
+  var minorGridLineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorType] = js.native
+  var minorTickColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Specific tick interval in axis units
@@ -262,24 +260,24 @@ trait ColorAxisOptions extends StObject {
     * If user settings dictate minor ticks to become too dense, they don't make
     * sense, and will be ignored to prevent performance problems.
     */
-  var minorTickInterval: js.UndefOr[Double | String | Null] = js.native
+  var minorTickInterval: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The pixel length of the minor tick
     * marks.
     */
-  var minorTickLength: js.UndefOr[Double] = js.native
+  var minorTickLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The position of the minor tick marks
     * relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.native
+  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The pixel width of the minor tick mark.
     */
-  var minorTickWidth: js.UndefOr[Double] = js.native
+  var minorTickWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Enable or disable minor ticks. Unless
@@ -292,7 +290,7 @@ trait ColorAxisOptions extends StObject {
     * Prior to v6.0.0, ticks were unabled in auto layout by setting
     * `minorTickInterval` to `"auto"`.
     */
-  var minorTicks: js.UndefOr[Boolean] = js.native
+  var minorTicks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) In an ordinal axis, the points are equally spaced in the
@@ -306,21 +304,21 @@ trait ColorAxisOptions extends StObject {
     * is used and at least one of the series' data length exceeds the
     * boostThreshold.
     */
-  var ordinal: js.UndefOr[Boolean] = js.native
+  var ordinal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Additional range on the right side of the xAxis. Works
     * similar to `xAxis.maxPadding`, but value is set in milliseconds. Can be
     * set for both main `xAxis` and the navigator's `xAxis`.
     */
-  var overscroll: js.UndefOr[Double] = js.native
+  var overscroll: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The zoomed range to display when only defining one or none of
     * `min` or `max`. For example, to show the latest month, a range of one
     * month can be set.
     */
-  var range: js.UndefOr[Double] = js.native
+  var range: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to reverse the axis so that the
@@ -328,7 +326,7 @@ trait ColorAxisOptions extends StObject {
     * horizontal legend and `true` in a vertical legend, where the smallest
     * value starts on top.
     */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) An optional scrollbar to display on the X axis in response to
@@ -339,24 +337,24 @@ trait ColorAxisOptions extends StObject {
     * `.highcharts-scrollbar-arrow`, `.highcharts-scrollbar-button`,
     * `.highcharts-scrollbar-rifles` and `.highcharts-scrollbar-track`.
     */
-  var scrollbar: js.UndefOr[ColorAxisScrollbarOptions] = js.native
+  var scrollbar: js.UndefOr[ColorAxisScrollbarOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to show the first tick label.
     */
-  var showFirstLabel: js.UndefOr[Boolean] = js.native
+  var showFirstLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to display the colorAxis in the
     * legend.
     */
-  var showInLegend: js.UndefOr[Boolean] = js.native
+  var showInLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to show the last tick label.
     * Defaults to `true` on cartesian charts, and `false` on polar charts.
     */
-  var showLastLabel: js.UndefOr[Boolean] = js.native
+  var showLastLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A soft maximum for the axis. If the series
@@ -364,7 +362,7 @@ trait ColorAxisOptions extends StObject {
     * if the series data maximum is higher, the axis will flex to show all
     * data.
     */
-  var softMax: js.UndefOr[Double] = js.native
+  var softMax: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A soft minimum for the axis. If the series
@@ -372,20 +370,20 @@ trait ColorAxisOptions extends StObject {
     * but if the series data minimum is lower, the axis will flex to show all
     * data.
     */
-  var softMin: js.UndefOr[Double] = js.native
+  var softMin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For datetime axes, this decides where to
     * put the tick between weeks. 0 = Sunday, 1 = Monday.
     */
-  var startOfWeek: js.UndefOr[Double] = js.native
+  var startOfWeek: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to force the axis to start on a
     * tick. Use this option with the `maxPadding` option to control the axis
     * start.
     */
-  var startOnTick: js.UndefOr[Boolean] = js.native
+  var startOnTick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Color stops for the gradient of a
@@ -394,7 +392,7 @@ trait ColorAxisOptions extends StObject {
     * tuples, where the first item is a float between 0 and 1 assigning the
     * relative position in the gradient, and the second item is the color.
     */
-  var stops: js.UndefOr[js.Array[js.Tuple2[Double, ColorString]]] = js.native
+  var stops: js.UndefOr[js.Array[js.Tuple2[Double, ColorString]]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The amount of ticks to draw on the axis.
@@ -404,39 +402,39 @@ trait ColorAxisOptions extends StObject {
     * This option only has an effect on linear axes. Datetime, logarithmic or
     * category axes are not affected.
     */
-  var tickAmount: js.UndefOr[Double] = js.native
+  var tickAmount: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Color for the main tick marks.
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorType] = js.native
+  var tickColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The interval of the tick marks in axis
     * units. When `null`, the tick interval is computed to approximately follow
     * the `tickPixelInterval`.
     */
-  var tickInterval: js.UndefOr[Double] = js.native
+  var tickInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The pixel length of the main tick marks
     * on the color axis.
     */
-  var tickLength: js.UndefOr[Double] = js.native
+  var tickLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) If tickInterval is `null` this option
     * sets the approximate pixel interval of the tick marks.
     */
-  var tickPixelInterval: js.UndefOr[Double] = js.native
+  var tickPixelInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The position of the major tick marks
     * relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.native
+  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) A callback function returning array
@@ -445,14 +443,14 @@ trait ColorAxisOptions extends StObject {
     * tick positions are accessible through `this.tickPositions` and can be
     * modified by the callback.
     */
-  var tickPositioner: js.UndefOr[AxisTickPositionerCallbackFunction] = js.native
+  var tickPositioner: js.UndefOr[AxisTickPositionerCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) An array defining where the ticks are
     * laid out on the axis. This overrides the default behaviour of
     * tickPixelInterval and tickInterval.
     */
-  var tickPositions: js.UndefOr[js.Array[Double]] = js.native
+  var tickPositions: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The pixel width of the major tick
@@ -462,7 +460,7 @@ trait ColorAxisOptions extends StObject {
     * class, but in order for the element to be generated on category axes, the
     * option must be explicitly set to 1.
     */
-  var tickWidth: js.UndefOr[Double] = js.native
+  var tickWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Gantt) For categorized axes only. If `on` the tick mark is
@@ -470,13 +468,13 @@ trait ColorAxisOptions extends StObject {
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.native
+  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The type of interpolation to use for
     * the color axis. Can be `linear` or `logarithmic`.
     */
-  var `type`: js.UndefOr[ColorAxisTypeValue] = js.native
+  var `type`: js.UndefOr[ColorAxisTypeValue] = js.undefined
   
   /**
     * (Highcharts, Gantt) Applies only when the axis `type` is `category`. When
@@ -487,7 +485,7 @@ trait ColorAxisOptions extends StObject {
     * X positions regardless of their names, and the X axis category will take
     * the name of the last point in each position.
     */
-  var uniqueNames: js.UndefOr[Boolean] = js.native
+  var uniqueNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Datetime axis only. An array determining
@@ -497,13 +495,13 @@ trait ColorAxisOptions extends StObject {
     *
     * Defaults to: (see online documentation for example)
     */
-  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.native
+  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether axis, including axis title, line,
     * ticks and labels, should be visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ColorAxisOptions {
   

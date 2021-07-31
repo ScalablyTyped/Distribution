@@ -5,19 +5,19 @@ import typings.googleCloudStorage.fileMod.File
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadOptions extends CreateWriteStreamOptions {
+trait UploadOptions
+  extends StObject
+     with CreateWriteStreamOptions {
   
-  var destination: js.UndefOr[String | File] = js.native
+  var destination: js.UndefOr[String | File] = js.undefined
   
-  var encryptionKey: js.UndefOr[String | Buffer] = js.native
+  var encryptionKey: js.UndefOr[String | Buffer] = js.undefined
   
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
   
-  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.native
+  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
 }
 object UploadOptions {
   

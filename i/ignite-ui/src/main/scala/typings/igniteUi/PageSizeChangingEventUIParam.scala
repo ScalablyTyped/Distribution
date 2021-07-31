@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageSizeChangingEventUIParam extends StObject {
   
   /**
     * Gets the current page size.
     */
-  var currentPageSize: js.UndefOr[Double] = js.native
+  var currentPageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the new page size.
     */
-  var newPageSize: js.UndefOr[Double] = js.native
+  var newPageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets reference to GridPaging.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object PageSizeChangingEventUIParam {
   

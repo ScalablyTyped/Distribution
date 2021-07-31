@@ -5,61 +5,50 @@ import typings.libp2pNoise.basicMod.bytes32
 import typings.libp2pNoise.handshakeMod.Hkdf
 import typings.libp2pNoise.libp2pMod.KeyPair
 import typings.libp2pNoise.payloadMod.pb.INoiseHandshakePayload
-import typings.peerId.mod.^
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("libp2p-noise/dist/src/utils", "createHandshakePayload")
+  @JSImport("libp2p-noise/dist/src/utils", JSImport.Namespace)
   @js.native
-  def createHandshakePayload(libp2pPublicKey: Uint8Array, signedPayload: Uint8Array): bytes = js.native
-  @JSImport("libp2p-noise/dist/src/utils", "createHandshakePayload")
-  @js.native
-  def createHandshakePayload(libp2pPublicKey: Uint8Array, signedPayload: Uint8Array, earlyData: Uint8Array): bytes = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("libp2p-noise/dist/src/utils", "decodePayload")
-  @js.native
-  def decodePayload(payload: bytes): INoiseHandshakePayload = js.native
-  @JSImport("libp2p-noise/dist/src/utils", "decodePayload")
-  @js.native
-  def decodePayload(payload: Uint8Array): INoiseHandshakePayload = js.native
+  @scala.inline
+  def createHandshakePayload(libp2pPublicKey: Uint8Array, signedPayload: Uint8Array): bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("createHandshakePayload")(libp2pPublicKey.asInstanceOf[js.Any], signedPayload.asInstanceOf[js.Any])).asInstanceOf[bytes]
+  @scala.inline
+  def createHandshakePayload(libp2pPublicKey: Uint8Array, signedPayload: Uint8Array, earlyData: Uint8Array): bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("createHandshakePayload")(libp2pPublicKey.asInstanceOf[js.Any], signedPayload.asInstanceOf[js.Any], earlyData.asInstanceOf[js.Any])).asInstanceOf[bytes]
   
-  @JSImport("libp2p-noise/dist/src/utils", "generateKeypair")
-  @js.native
-  def generateKeypair(): KeyPair = js.native
+  @scala.inline
+  def decodePayload(payload: bytes): INoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePayload")(payload.asInstanceOf[js.Any]).asInstanceOf[INoiseHandshakePayload]
+  @scala.inline
+  def decodePayload(payload: Uint8Array): INoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePayload")(payload.asInstanceOf[js.Any]).asInstanceOf[INoiseHandshakePayload]
   
-  @JSImport("libp2p-noise/dist/src/utils", "getHandshakePayload")
-  @js.native
-  def getHandshakePayload(publicKey: bytes): bytes = js.native
+  @scala.inline
+  def generateKeypair(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")().asInstanceOf[KeyPair]
   
-  @JSImport("libp2p-noise/dist/src/utils", "getHkdf")
-  @js.native
-  def getHkdf(ck: bytes32, ikm: bytes): Hkdf = js.native
+  @scala.inline
+  def getHandshakePayload(publicKey: bytes): bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandshakePayload")(publicKey.asInstanceOf[js.Any]).asInstanceOf[bytes]
   
-  @JSImport("libp2p-noise/dist/src/utils", "getPayload")
-  @js.native
-  def getPayload(localPeer: ^, staticPublicKey: bytes): js.Promise[bytes] = js.native
-  @JSImport("libp2p-noise/dist/src/utils", "getPayload")
-  @js.native
-  def getPayload(localPeer: ^, staticPublicKey: bytes, earlyData: bytes): js.Promise[bytes] = js.native
+  @scala.inline
+  def getHkdf(ck: bytes32, ikm: bytes): Hkdf = (^.asInstanceOf[js.Dynamic].applyDynamic("getHkdf")(ck.asInstanceOf[js.Any], ikm.asInstanceOf[js.Any])).asInstanceOf[Hkdf]
   
-  @JSImport("libp2p-noise/dist/src/utils", "getPeerIdFromPayload")
-  @js.native
-  def getPeerIdFromPayload(payload: INoiseHandshakePayload): js.Promise[^] = js.native
+  @scala.inline
+  def getPayload(localPeer: typings.peerId.mod.^, staticPublicKey: bytes): js.Promise[bytes] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayload")(localPeer.asInstanceOf[js.Any], staticPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[bytes]]
+  @scala.inline
+  def getPayload(localPeer: typings.peerId.mod.^, staticPublicKey: bytes, earlyData: bytes): js.Promise[bytes] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayload")(localPeer.asInstanceOf[js.Any], staticPublicKey.asInstanceOf[js.Any], earlyData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[bytes]]
   
-  @JSImport("libp2p-noise/dist/src/utils", "isValidPublicKey")
-  @js.native
-  def isValidPublicKey(pk: bytes): Boolean = js.native
+  @scala.inline
+  def getPeerIdFromPayload(payload: INoiseHandshakePayload): js.Promise[typings.peerId.mod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeerIdFromPayload")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.peerId.mod.^]]
   
-  @JSImport("libp2p-noise/dist/src/utils", "signPayload")
-  @js.native
-  def signPayload(peerId: ^, payload: bytes): js.Promise[bytes] = js.native
+  @scala.inline
+  def isValidPublicKey(pk: bytes): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPublicKey")(pk.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("libp2p-noise/dist/src/utils", "verifySignedPayload")
-  @js.native
-  def verifySignedPayload(noiseStaticKey: bytes, payload: INoiseHandshakePayload, remotePeer: ^): js.Promise[^] = js.native
+  @scala.inline
+  def signPayload(peerId: typings.peerId.mod.^, payload: bytes): js.Promise[bytes] = (^.asInstanceOf[js.Dynamic].applyDynamic("signPayload")(peerId.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[bytes]]
+  
+  @scala.inline
+  def verifySignedPayload(noiseStaticKey: bytes, payload: INoiseHandshakePayload, remotePeer: typings.peerId.mod.^): js.Promise[typings.peerId.mod.^] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifySignedPayload")(noiseStaticKey.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], remotePeer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.peerId.mod.^]]
 }

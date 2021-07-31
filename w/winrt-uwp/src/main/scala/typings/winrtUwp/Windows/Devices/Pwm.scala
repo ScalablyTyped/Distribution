@@ -2,31 +2,29 @@ package typings.winrtUwp.Windows.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pwm {
   
-  @js.native
   trait PwmController extends StObject {
     
     /* unmapped type */
-    var actualFrequency: js.Any = js.native
+    var actualFrequency: js.Any
     
     /* unmapped type */
-    var maxFrequency: js.Any = js.native
+    var maxFrequency: js.Any
     
     /* unmapped type */
-    var minFrequency: js.Any = js.native
+    var minFrequency: js.Any
     
     /* unmapped type */
-    var openPin: js.Any = js.native
+    var openPin: js.Any
     
     /* unmapped type */
-    var pinCount: js.Any = js.native
+    var pinCount: js.Any
     
     /* unmapped type */
-    var setDesiredFrequency: js.Any = js.native
+    var setDesiredFrequency: js.Any
   }
   object PwmController {
     
@@ -66,31 +64,30 @@ object Pwm {
     }
   }
   
-  @js.native
   trait PwmPin extends StObject {
     
-    var close: js.Any = js.native
+    var close: js.Any
     
     /* unmapped type */
-    var controller: js.Any = js.native
+    var controller: js.Any
     
     /* unmapped type */
-    var getActiveDutyCyclePercentage: js.Any = js.native
+    var getActiveDutyCyclePercentage: js.Any
     
     /* unmapped type */
-    var isStarted: js.Any = js.native
+    var isStarted: js.Any
     
     /* unmapped type */
-    var polarity: js.Any = js.native
+    var polarity: js.Any
     
     /* unmapped type */
-    var setActiveDutyCyclePercentage: js.Any = js.native
+    var setActiveDutyCyclePercentage: js.Any
     
     /* unmapped type */
-    var start: js.Any = js.native
+    var start: js.Any
     
     /* unmapped type */
-    var stop: js.Any = js.native
+    var stop: js.Any
   }
   object PwmPin {
     

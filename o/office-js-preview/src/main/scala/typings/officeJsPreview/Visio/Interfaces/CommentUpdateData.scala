@@ -2,11 +2,9 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Comment object, for use in "comment.set({ ... })". */
-@js.native
 trait CommentUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CommentUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait CommentUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait CommentUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object CommentUpdateData {
   

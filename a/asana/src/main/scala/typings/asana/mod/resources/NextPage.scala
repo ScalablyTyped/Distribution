@@ -2,17 +2,15 @@ package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextPage extends StObject {
   
-  var offset: String = js.native
+  var offset: String
   
-  var path: String = js.native
+  var path: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object NextPage {
   

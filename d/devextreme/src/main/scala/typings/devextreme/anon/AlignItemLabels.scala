@@ -9,39 +9,37 @@ import typings.devextreme.mod.DevExpress.ui.dxFormSimpleItem
 import typings.devextreme.mod.DevExpress.ui.dxFormTabbedItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignItemLabels extends StObject {
   
-  var alignItemLabels: js.UndefOr[Boolean] = js.native
+  var alignItemLabels: js.UndefOr[Boolean] = js.undefined
   
-  var badge: js.UndefOr[String] = js.native
+  var badge: js.UndefOr[String] = js.undefined
   
-  var colCount: js.UndefOr[Double] = js.native
+  var colCount: js.UndefOr[Double] = js.undefined
   
-  var colCountByScreen: js.UndefOr[js.Any] = js.native
+  var colCountByScreen: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   var items: js.UndefOr[
     js.Array[
       dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
     ]
-  ] = js.native
+  ] = js.undefined
   
   var tabTemplate: js.UndefOr[
-    template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, _])
-  ] = js.native
+    template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, js.Any])
+  ] = js.undefined
   
   var template: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, _])
-  ] = js.native
+    typings.devextreme.mod.DevExpress.core.template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, js.Any])
+  ] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object AlignItemLabels {
   
@@ -107,22 +105,22 @@ object AlignItemLabels {
     
     @scala.inline
     def setTabTemplate(
-      value: template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, _])
+      value: template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, js.Any])
     ): Self = StObject.set(x, "tabTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => _): Self = StObject.set(x, "tabTemplate", js.Any.fromFunction3(value))
+    def setTabTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => js.Any): Self = StObject.set(x, "tabTemplate", js.Any.fromFunction3(value))
     
     @scala.inline
     def setTabTemplateUndefined: Self = StObject.set(x, "tabTemplate", js.undefined)
     
     @scala.inline
     def setTemplate(
-      value: template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, _])
+      value: template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, js.Any])
     ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => _): Self = StObject.set(x, "template", js.Any.fromFunction3(value))
+    def setTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction3(value))
     
     @scala.inline
     def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)

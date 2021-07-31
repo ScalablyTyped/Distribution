@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateDRTLogBucketRequest extends StObject {
   
   /**
     * The Amazon S3 bucket that contains your AWS WAF logs.
     */
-  var LogBucket: typings.awsSdk.shieldMod.LogBucket = js.native
+  var LogBucket: typings.awsSdk.shieldMod.LogBucket
 }
 object DisassociateDRTLogBucketRequest {
   

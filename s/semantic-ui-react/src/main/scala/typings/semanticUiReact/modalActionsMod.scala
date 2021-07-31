@@ -15,7 +15,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalActionsMod extends Shortcut {
@@ -32,9 +31,9 @@ object modalActionsMod extends Shortcut {
   @js.native
   val default: ComponentClass[ModalActionsProps, ComponentState] = js.native
   
-  @js.native
   trait ModalActionsProps
-    extends StrictModalActionsProps
+    extends StObject
+       with StrictModalActionsProps
        with /* key */ StringDictionary[js.Any]
   object ModalActionsProps {
     
@@ -45,23 +44,22 @@ object modalActionsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictModalActionsProps extends StObject {
     
     /** Array of shorthand buttons. */
-    var actions: js.UndefOr[SemanticShorthandCollection[ButtonProps]] = js.native
+    var actions: js.UndefOr[SemanticShorthandCollection[ButtonProps]] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /**
       * onClick handler for an action. Mutually exclusive with children.
@@ -75,7 +73,7 @@ object modalActionsMod extends Shortcut {
           /* data */ ButtonProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object StrictModalActionsProps {
     

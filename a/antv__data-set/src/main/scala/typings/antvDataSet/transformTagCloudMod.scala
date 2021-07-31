@@ -5,19 +5,17 @@ import typings.antvDataSet.antvDataSetStrings.rectangular
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformTagCloudMod {
   
-  @js.native
   trait DataItem extends StObject {
     
     /** 文本内容 */
-    var text: String = js.native
+    var text: String
     
     /** 该文本所占权重 */
-    var value: Double = js.native
+    var value: Double
   }
   object DataItem {
     
@@ -47,33 +45,32 @@ object transformTagCloudMod {
   */
   type FontWeight = _FontWeight | Double
   
-  @js.native
   trait Options extends StObject {
     
-    var fields: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var fields: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var font: js.UndefOr[String | (js.Function1[/* row */ DataItem, String])] = js.native
+    var font: js.UndefOr[String | (js.Function1[/* row */ DataItem, String])] = js.undefined
     
-    var fontSize: js.UndefOr[Double | (js.Function1[/* row */ DataItem, Double])] = js.native
+    var fontSize: js.UndefOr[Double | (js.Function1[/* row */ DataItem, Double])] = js.undefined
     
-    var fontWeight: js.UndefOr[FontWeight | (js.Function1[/* row */ DataItem, FontWeight])] = js.native
+    var fontWeight: js.UndefOr[FontWeight | (js.Function1[/* row */ DataItem, FontWeight])] = js.undefined
     
-    var imageMask: js.UndefOr[HTMLImageElement] = js.native
+    var imageMask: js.UndefOr[HTMLImageElement] = js.undefined
     
-    var padding: js.UndefOr[Double | (js.Function1[/* row */ DataItem, Double])] = js.native
+    var padding: js.UndefOr[Double | (js.Function1[/* row */ DataItem, Double])] = js.undefined
     
-    var rotate: js.UndefOr[Double | (js.Function1[/* row */ DataItem, Double])] = js.native
+    var rotate: js.UndefOr[Double | (js.Function1[/* row */ DataItem, Double])] = js.undefined
     
-    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     var spiral: js.UndefOr[
         archimedean | rectangular | (js.Function1[
           /* size */ js.Tuple2[Double, Double], 
           js.Function1[/* t */ Double, js.Array[Double]]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var timeInterval: js.UndefOr[Double] = js.native
+    var timeInterval: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

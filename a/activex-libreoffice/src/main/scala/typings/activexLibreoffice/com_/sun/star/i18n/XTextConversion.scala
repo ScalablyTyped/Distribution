@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Method to convert text from one type to another
   * @since OOo 1.1.2
   */
-@js.native
-trait XTextConversion extends XInterface {
+trait XTextConversion
+  extends StObject
+     with XInterface {
   
   /**
     * Method to search dictionaries for the conversion candidate, if there are multiple candidates, it will return first one. This is for the conversion in
@@ -34,7 +34,7 @@ trait XTextConversion extends XInterface {
     Locale: Locale,
     nTextConversionType: Double,
     nTextConversionOptions: Double
-  ): String = js.native
+  ): String
   
   /**
     * Method to search dictionaries for the conversion candidates.
@@ -54,7 +54,7 @@ trait XTextConversion extends XInterface {
     Locale: Locale,
     nTextConversionType: Double,
     nTextConversionOptions: Double
-  ): TextConversionResult = js.native
+  ): TextConversionResult
   
   /**
     * Method to query if the conversion type should be interactive or non-interactive mode.
@@ -64,7 +64,7 @@ trait XTextConversion extends XInterface {
     * @returns `TRUE` if the entry is a valid entry for the dictionary `FALSE` otherwise.
     * @throws NoSupportException when **nConversionDictionaryType** is not known by the implementation, or when the locale is not supported.
     */
-  def interactiveConversion(Locale: Locale, nTextConversionType: Double, nTextConversionOptions: Double): Boolean = js.native
+  def interactiveConversion(Locale: Locale, nTextConversionType: Double, nTextConversionOptions: Double): Boolean
 }
 object XTextConversion {
   

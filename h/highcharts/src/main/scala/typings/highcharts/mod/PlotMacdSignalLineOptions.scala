@@ -2,13 +2,11 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotMacdSignalLineOptions extends StObject {
   
-  var styles: js.UndefOr[PlotMacdSignalLineStylesOptions] = js.native
+  var styles: js.UndefOr[PlotMacdSignalLineStylesOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) An array defining zones within a series. Zones
@@ -20,7 +18,7 @@ trait PlotMacdSignalLineOptions extends StObject {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.native
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 object PlotMacdSignalLineOptions {
   

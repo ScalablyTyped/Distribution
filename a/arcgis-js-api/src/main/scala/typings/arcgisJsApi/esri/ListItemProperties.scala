@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItemProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ListItemProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsOpen)
     */
-  var actionsOpen: js.UndefOr[Boolean] = js.native
+  var actionsOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A nested 2-dimensional collection of actions that could be triggered on the item.
@@ -21,78 +19,78 @@ trait ListItemProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsSections)
     */
   var actionsSections: js.UndefOr[
-    (CollectionProperties[CollectionProperties[ActionButtonProperties | ActionToggleProperties]]) | js.Array[js.Array[_]]
-  ] = js.native
+    (CollectionProperties[CollectionProperties[ActionButtonProperties | ActionToggleProperties]]) | js.Array[js.Array[js.Any]]
+  ] = js.undefined
   
   /**
     * When a layer contains sublayers, this property is a Collection of ListItem objects belonging to the given layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#children)
     */
-  var children: js.UndefOr[CollectionProperties[ListItemProperties]] = js.native
+  var children: js.UndefOr[CollectionProperties[ListItemProperties]] = js.undefined
   
   /**
     * Indicates if the children of a list item (or sublayers in a GroupLayer) can be sorted or moved/reordered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#childrenSortable)
     */
-  var childrenSortable: js.UndefOr[Boolean] = js.native
+  var childrenSortable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer associated with the triggered action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#layer)
     */
-  var layer: js.UndefOr[LayerProperties] = js.native
+  var layer: js.UndefOr[LayerProperties] = js.undefined
   
   /**
     * Whether the layer is open in the LayerList.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#open)
     */
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows you to display custom content for each ListItem in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#panel)
     */
-  var panel: js.UndefOr[ListItemPanel] = js.native
+  var panel: js.UndefOr[ListItemPanel] = js.undefined
   
   /**
     * The parent of this item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#parent)
     */
-  var parent: js.UndefOr[ListItemProperties] = js.native
+  var parent: js.UndefOr[ListItemProperties] = js.undefined
   
   /**
     * Indicates if the list item (or layer in the map) can be sorted or moved/reordered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#sortable)
     */
-  var sortable: js.UndefOr[Boolean] = js.native
+  var sortable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The title of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * Indicates if the ListItem is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#visible)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ListItemProperties {
   
@@ -113,7 +111,7 @@ object ListItemProperties {
     
     @scala.inline
     def setActionsSections(
-      value: (CollectionProperties[CollectionProperties[ActionButtonProperties | ActionToggleProperties]]) | js.Array[js.Array[_]]
+      value: (CollectionProperties[CollectionProperties[ActionButtonProperties | ActionToggleProperties]]) | js.Array[js.Array[js.Any]]
     ): Self = StObject.set(x, "actionsSections", value.asInstanceOf[js.Any])
     
     @scala.inline

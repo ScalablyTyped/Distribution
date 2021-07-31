@@ -2,30 +2,28 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 菜单按钮的布局位置信息 */
-@js.native
 trait Rect extends StObject {
   
   /** 下边界坐标，单位：px */
-  var bottom: Double = js.native
+  var bottom: Double
   
   /** 高度，单位：px */
-  var height: Double = js.native
+  var height: Double
   
   /** 左边界坐标，单位：px */
-  var left: Double = js.native
+  var left: Double
   
   /** 右边界坐标，单位：px */
-  var right: Double = js.native
+  var right: Double
   
   /** 上边界坐标，单位：px */
-  var top: Double = js.native
+  var top: Double
   
   /** 宽度，单位：px */
-  var width: Double = js.native
+  var width: Double
 }
 object Rect {
   

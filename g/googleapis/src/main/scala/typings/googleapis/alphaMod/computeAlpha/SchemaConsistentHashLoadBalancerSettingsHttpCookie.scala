@@ -2,30 +2,28 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The information about the HTTP Cookie on which the hash function is based
   * for load balancing policies that use a consistent hash.
   */
-@js.native
 trait SchemaConsistentHashLoadBalancerSettingsHttpCookie extends StObject {
   
   /**
     * Name of the cookie.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Path to set for the cookie.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Lifetime of the cookie.
     */
-  var ttl: js.UndefOr[SchemaDuration] = js.native
+  var ttl: js.UndefOr[SchemaDuration] = js.undefined
 }
 object SchemaConsistentHashLoadBalancerSettingsHttpCookie {
   

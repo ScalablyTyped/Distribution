@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesForWebACLResponse extends StObject {
   
   /**
     * An array of ARNs (Amazon Resource Names) of the resources associated with the specified web ACL. An array with zero elements is returned if there are no resources associated with the web ACL.
     */
-  var ResourceArns: js.UndefOr[typings.awsSdk.wafregionalMod.ResourceArns] = js.native
+  var ResourceArns: js.UndefOr[typings.awsSdk.wafregionalMod.ResourceArns] = js.undefined
 }
 object ListResourcesForWebACLResponse {
   

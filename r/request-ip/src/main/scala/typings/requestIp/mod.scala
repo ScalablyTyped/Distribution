@@ -5,26 +5,25 @@ import typings.requestIp.anon.RemoteAddress
 import typings.requestIp.anon.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("request-ip", "getClientIp")
+  @JSImport("request-ip", JSImport.Namespace)
   @js.native
-  def getClientIp(req: Request): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("request-ip", "mw")
-  @js.native
-  def mw(): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, _] = js.native
-  @JSImport("request-ip", "mw")
-  @js.native
-  def mw(options: Options): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, _] = js.native
+  @scala.inline
+  def getClientIp(req: Request): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientIp")(req.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @js.native
+  @scala.inline
+  def mw(): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")().asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
+  @scala.inline
+  def mw(options: Options): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
+  
   trait Options extends StObject {
     
-    var attributeName: String = js.native
+    var attributeName: String
   }
   object Options {
     
@@ -42,16 +41,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var connection: Socket = js.native
+    var connection: Socket
     
-    var headers: RequestHeaders = js.native
+    var headers: RequestHeaders
     
-    var info: js.UndefOr[RemoteAddress] = js.native
+    var info: js.UndefOr[RemoteAddress] = js.undefined
     
-    var socket: js.UndefOr[RemoteAddress] = js.native
+    var socket: js.UndefOr[RemoteAddress] = js.undefined
   }
   object Request {
     
@@ -84,20 +82,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait RequestHeaders extends IncomingHttpHeaders {
+  trait RequestHeaders
+    extends StObject
+       with IncomingHttpHeaders {
     
-    var `forwarded-for`: js.UndefOr[String] = js.native
+    var `forwarded-for`: js.UndefOr[String] = js.undefined
     
-    var `x-client-ip`: js.UndefOr[String] = js.native
+    var `x-client-ip`: js.UndefOr[String] = js.undefined
     
-    var `x-cluster-client-ip`: js.UndefOr[String] = js.native
+    var `x-cluster-client-ip`: js.UndefOr[String] = js.undefined
     
-    var `x-forwarded`: js.UndefOr[String] = js.native
+    var `x-forwarded`: js.UndefOr[String] = js.undefined
     
-    var `x-forwarded-for`: js.UndefOr[String] = js.native
+    var `x-forwarded-for`: js.UndefOr[String] = js.undefined
     
-    var `x-real-ip`: js.UndefOr[String] = js.native
+    var `x-real-ip`: js.UndefOr[String] = js.undefined
   }
   object RequestHeaders {
     
@@ -152,10 +151,9 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        var clientIp: js.UndefOr[String] = js.native
+        var clientIp: js.UndefOr[String] = js.undefined
       }
       object Request {
         

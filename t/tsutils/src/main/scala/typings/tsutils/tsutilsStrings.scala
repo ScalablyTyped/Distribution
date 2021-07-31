@@ -3,7 +3,6 @@ package typings.tsutils
 import typings.tsutils.utilUtilMod.StrictCompilerOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tsutilsStrings {
@@ -49,7 +48,9 @@ object tsutilsStrings {
   def allowUnusedLabels: allowUnusedLabels = "allowUnusedLabels".asInstanceOf[allowUnusedLabels]
   
   @js.native
-  sealed trait alwaysStrict extends StrictCompilerOption
+  sealed trait alwaysStrict
+    extends StObject
+       with StrictCompilerOption
   @scala.inline
   def alwaysStrict: alwaysStrict = "alwaysStrict".asInstanceOf[alwaysStrict]
   
@@ -264,7 +265,9 @@ object tsutilsStrings {
   def noFallthroughCasesInSwitch: noFallthroughCasesInSwitch = "noFallthroughCasesInSwitch".asInstanceOf[noFallthroughCasesInSwitch]
   
   @js.native
-  sealed trait noImplicitAny extends StrictCompilerOption
+  sealed trait noImplicitAny
+    extends StObject
+       with StrictCompilerOption
   @scala.inline
   def noImplicitAny: noImplicitAny = "noImplicitAny".asInstanceOf[noImplicitAny]
   
@@ -274,7 +277,9 @@ object tsutilsStrings {
   def noImplicitReturns: noImplicitReturns = "noImplicitReturns".asInstanceOf[noImplicitReturns]
   
   @js.native
-  sealed trait noImplicitThis extends StrictCompilerOption
+  sealed trait noImplicitThis
+    extends StObject
+       with StrictCompilerOption
   @scala.inline
   def noImplicitThis: noImplicitThis = "noImplicitThis".asInstanceOf[noImplicitThis]
   
@@ -404,22 +409,30 @@ object tsutilsStrings {
   def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait strictBindCallApply extends StrictCompilerOption
+  sealed trait strictBindCallApply
+    extends StObject
+       with StrictCompilerOption
   @scala.inline
   def strictBindCallApply: strictBindCallApply = "strictBindCallApply".asInstanceOf[strictBindCallApply]
   
   @js.native
-  sealed trait strictFunctionTypes extends StrictCompilerOption
+  sealed trait strictFunctionTypes
+    extends StObject
+       with StrictCompilerOption
   @scala.inline
   def strictFunctionTypes: strictFunctionTypes = "strictFunctionTypes".asInstanceOf[strictFunctionTypes]
   
   @js.native
-  sealed trait strictNullChecks extends StrictCompilerOption
+  sealed trait strictNullChecks
+    extends StObject
+       with StrictCompilerOption
   @scala.inline
   def strictNullChecks: strictNullChecks = "strictNullChecks".asInstanceOf[strictNullChecks]
   
   @js.native
-  sealed trait strictPropertyInitialization extends StrictCompilerOption
+  sealed trait strictPropertyInitialization
+    extends StObject
+       with StrictCompilerOption
   @scala.inline
   def strictPropertyInitialization: strictPropertyInitialization = "strictPropertyInitialization".asInstanceOf[strictPropertyInitialization]
   

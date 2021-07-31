@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterState extends StObject {
   
   /** Output only. The state of replication for the table in this cluster. */
-  var replicationState: js.UndefOr[String] = js.native
+  var replicationState: js.UndefOr[String] = js.undefined
 }
 object ClusterState {
   

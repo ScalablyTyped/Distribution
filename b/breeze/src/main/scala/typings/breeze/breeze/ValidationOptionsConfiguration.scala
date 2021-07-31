@@ -2,19 +2,17 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationOptionsConfiguration extends StObject {
   
-  var validateOnAttach: js.UndefOr[Boolean] = js.native
+  var validateOnAttach: js.UndefOr[Boolean] = js.undefined
   
-  var validateOnPropertyChange: js.UndefOr[Boolean] = js.native
+  var validateOnPropertyChange: js.UndefOr[Boolean] = js.undefined
   
-  var validateOnQuery: js.UndefOr[Boolean] = js.native
+  var validateOnQuery: js.UndefOr[Boolean] = js.undefined
   
-  var validateOnSave: js.UndefOr[Boolean] = js.native
+  var validateOnSave: js.UndefOr[Boolean] = js.undefined
 }
 object ValidationOptionsConfiguration {
   

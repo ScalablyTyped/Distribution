@@ -2,17 +2,17 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsnResponse extends Response {
+trait AsnResponse
+  extends StObject
+     with Response {
   
-  val autonomous_system_number: Double = js.native
+  val autonomous_system_number: Double
   
-  val autonomous_system_organization: String = js.native
+  val autonomous_system_organization: String
   
-  var ip_address: js.UndefOr[String] = js.native
+  var ip_address: js.UndefOr[String] = js.undefined
 }
 object AsnResponse {
   

@@ -2,20 +2,20 @@ package typings.webidl2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AbstractContainer extends AbstractBase {
+trait AbstractContainer
+  extends StObject
+     with AbstractBase {
   
   /** An array of container members (attributes, operations, etc.). Empty if there are none. */
-  var members: js.Array[AbstractBase] = js.native
+  var members: js.Array[AbstractBase]
   
   /** The name of the container. */
-  var name: String = js.native
+  var name: String
   
   /** A boolean indicating whether this container is partial. */
-  var partial: Boolean = js.native
+  var partial: Boolean
 }
 object AbstractContainer {
   
@@ -26,7 +26,8 @@ object AbstractContainer {
     name: String,
     partial: Boolean
   ): AbstractContainer = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], parent = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[AbstractContainer]
   }
   

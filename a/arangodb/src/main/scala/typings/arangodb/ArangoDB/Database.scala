@@ -4,42 +4,41 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.arangodbBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Database extends StObject {
   
   // Collection
-  def _collection(name: String): Collection[_] = js.native
+  def _collection(name: String): Collection[js.Any] = js.native
   
-  def _collections(): js.Array[Collection[_]] = js.native
+  def _collections(): js.Array[Collection[js.Any]] = js.native
   
-  def _create(name: String): Collection[_] = js.native
-  def _create(name: String, properties: CreateCollectionOptions): Collection[_] = js.native
+  def _create(name: String): Collection[js.Any] = js.native
+  def _create(name: String, properties: CreateCollectionOptions): Collection[js.Any] = js.native
   
   // Database
   def _createDatabase(name: String): `true` = js.native
-  def _createDatabase(name: String, options: js.UndefOr[scala.Nothing], users: js.Array[DatabaseUser]): `true` = js.native
   def _createDatabase(name: String, options: scala.Nothing): `true` = js.native
   def _createDatabase(name: String, options: scala.Nothing, users: js.Array[DatabaseUser]): `true` = js.native
+  def _createDatabase(name: String, options: Unit, users: js.Array[DatabaseUser]): `true` = js.native
   
-  def _createDocumentCollection(name: String): Collection[_] = js.native
-  def _createDocumentCollection(name: String, properties: CreateCollectionOptions): Collection[_] = js.native
+  def _createDocumentCollection(name: String): Collection[js.Any] = js.native
+  def _createDocumentCollection(name: String, properties: CreateCollectionOptions): Collection[js.Any] = js.native
   
-  def _createEdgeCollection(name: String): Collection[_] = js.native
-  def _createEdgeCollection(name: String, properties: CreateCollectionOptions): Collection[_] = js.native
+  def _createEdgeCollection(name: String): Collection[js.Any] = js.native
+  def _createEdgeCollection(name: String, properties: CreateCollectionOptions): Collection[js.Any] = js.native
   
-  def _createStatement(query: String): Statement[_] = js.native
+  def _createStatement(query: String): Statement[js.Any] = js.native
   // AQL
-  def _createStatement(query: Query): Statement[_] = js.native
+  def _createStatement(query: Query): Statement[js.Any] = js.native
   
   def _createView(name: String, `type`: ViewType, properties: ArangoSearchViewPropertiesOptions): ArangoSearchView = js.native
   
   def _databases(): js.Array[String] = js.native
   
   // Document
-  def _document(name: String): Document[_] = js.native
+  def _document(name: String): Document[js.Any] = js.native
   
   def _drop(name: String): Unit = js.native
   
@@ -67,8 +66,8 @@ trait Database extends StObject {
   def _id(): String = js.native
   
   // Indexes
-  def _index(index: String): Index[_] | Null = js.native
-  def _index(index: IndexLike): Index[_] | Null = js.native
+  def _index(index: String): Index[js.Any] | Null = js.native
+  def _index(index: IndexLike): Index[js.Any] | Null = js.native
   
   def _isSystem(): Boolean = js.native
   
@@ -78,12 +77,12 @@ trait Database extends StObject {
   
   def _path(): String = js.native
   
-  def _query(query: String): Cursor[_] = js.native
-  def _query(query: String, bindVars: js.UndefOr[scala.Nothing], options: QueryOptions): Cursor[_] = js.native
-  def _query(query: String, bindVars: js.Object): Cursor[_] = js.native
-  def _query(query: String, bindVars: js.Object, options: QueryOptions): Cursor[_] = js.native
-  def _query(query: Query): Cursor[_] = js.native
-  def _query(query: Query, options: QueryOptions): Cursor[_] = js.native
+  def _query(query: String): Cursor[js.Any] = js.native
+  def _query(query: String, bindVars: js.Object): Cursor[js.Any] = js.native
+  def _query(query: String, bindVars: js.Object, options: QueryOptions): Cursor[js.Any] = js.native
+  def _query(query: String, bindVars: Unit, options: QueryOptions): Cursor[js.Any] = js.native
+  def _query(query: Query): Cursor[js.Any] = js.native
+  def _query(query: Query, options: QueryOptions): Cursor[js.Any] = js.native
   
   def _remove(selector: String): DocumentMetadata = js.native
   def _remove(selector: ObjectWithId): DocumentMetadata = js.native

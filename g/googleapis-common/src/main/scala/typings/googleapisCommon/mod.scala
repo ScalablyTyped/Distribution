@@ -11,10 +11,13 @@ import typings.googleapisCommon.apiMod.ServiceOptions
 import typings.googleapisCommon.discoveryMod.DiscoveryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("googleapis-common", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("googleapis-common", "AuthPlus")
   @js.native
@@ -58,15 +61,19 @@ object mod {
     extends typings.googleAuthLibrary.mod.OAuth2Client {
     def this(clientId: String) = this()
     def this(options: OAuth2ClientOptions) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
     def this(clientId: String, clientSecret: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, redirectUri: String) = this()
-    def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
+    def this(clientId: Unit, clientSecret: String) = this()
     def this(clientId: String, clientSecret: String, redirectUri: String) = this()
+    def this(clientId: String, clientSecret: Unit, redirectUri: String) = this()
+    def this(clientId: Unit, clientSecret: String, redirectUri: String) = this()
+    def this(clientId: Unit, clientSecret: Unit, redirectUri: String) = this()
   }
   /* static members */
   object OAuth2Client {
+    
+    @JSImport("googleapis-common", "OAuth2Client")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Clock skew - five minutes in seconds
@@ -139,33 +146,26 @@ object mod {
       * Generates an URL to revoke the given token.
       * @param token The existing token to be revoked.
       */
-    @JSImport("googleapis-common", "OAuth2Client.getRevokeTokenUrl")
-    @js.native
-    def getRevokeTokenUrl(token: String): String = js.native
+    @scala.inline
+    def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("googleapis-common", "createAPIRequest")
-  @js.native
-  def createAPIRequest[T](parameters: APIRequestParams[_]): GaxiosPromise[T] = js.native
-  @JSImport("googleapis-common", "createAPIRequest")
-  @js.native
-  def createAPIRequest[T](parameters: APIRequestParams[_], callback: BodyResponseCallback[T]): Unit = js.native
+  @scala.inline
+  def createAPIRequest[T](parameters: APIRequestParams[js.Any]): GaxiosPromise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAPIRequest")(parameters.asInstanceOf[js.Any]).asInstanceOf[GaxiosPromise[T]]
+  @scala.inline
+  def createAPIRequest[T](parameters: APIRequestParams[js.Any], callback: BodyResponseCallback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAPIRequest")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("googleapis-common", "getAPI")
-  @js.native
-  def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any]): T = js.native
-  @JSImport("googleapis-common", "getAPI")
-  @js.native
-  def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any], context: GoogleConfigurable): T = js.native
-  @JSImport("googleapis-common", "getAPI")
-  @js.native
-  def getAPI[T](api: String, options: ServiceOptions, versions: StringDictionary[js.Any]): T = js.native
-  @JSImport("googleapis-common", "getAPI")
-  @js.native
+  @scala.inline
+  def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getAPI")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any], context: GoogleConfigurable): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getAPI")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], versions.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def getAPI[T](api: String, options: ServiceOptions, versions: StringDictionary[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getAPI")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def getAPI[T](
     api: String,
     options: ServiceOptions,
     versions: StringDictionary[js.Any],
     context: GoogleConfigurable
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getAPI")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any], versions.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
 }

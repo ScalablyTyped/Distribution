@@ -2,23 +2,21 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMetricDimensionMod {
   
-  @js.native
   trait MetricDimension extends StObject {
     
     /**
       * The operator that you're using to compare metric values. Possible values: GREATER_THAN, LESS_THAN, GREATER_THAN_OR_EQUAL, LESS_THAN_OR_EQUAL, or EQUAL
       */
-    var ComparisonOperator: js.UndefOr[String] = js.native
+    var ComparisonOperator: js.UndefOr[String] = js.undefined
     
     /**
       * Value to be compared.
       */
-    var Value: js.UndefOr[Double] = js.native
+    var Value: js.UndefOr[Double] = js.undefined
   }
   object MetricDimension {
     

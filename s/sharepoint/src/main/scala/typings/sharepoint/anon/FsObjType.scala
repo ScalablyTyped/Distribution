@@ -3,15 +3,13 @@ package typings.sharepoint.anon
 import typings.sharepoint.SP.FileSystemObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FsObjType extends StObject {
   
-  var fsObjType: FileSystemObjectType = js.native
+  var fsObjType: FileSystemObjectType
   
-  var id: Double = js.native
+  var id: Double
 }
 object FsObjType {
   

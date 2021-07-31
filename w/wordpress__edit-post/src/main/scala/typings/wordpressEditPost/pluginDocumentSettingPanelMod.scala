@@ -8,7 +8,6 @@ import typings.wordpressEditPost.anon.OmitPropsname
 import typings.wordpressEditPost.pluginDocumentSettingPanelMod.PluginDocumentSettingPanel.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginDocumentSettingPanelMod {
@@ -32,9 +31,9 @@ object pluginDocumentSettingPanelMod {
     */
   object default {
     
-    @JSImport("@wordpress/edit-post/components/sidebar/plugin-document-setting-panel", JSImport.Default)
-    @js.native
-    def apply(props: Props): Element = js.native
+    @scala.inline
+    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/edit-post/components/sidebar/plugin-document-setting-panel", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -48,31 +47,30 @@ object pluginDocumentSettingPanelMod {
   
   object PluginDocumentSettingPanel {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * An optional class name added to the row.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * A Dashicon slug or a custom JSX element to be rendered when the sidebar is pinned to
         * toolbar.
         */
-      var icon: js.UndefOr[Icon | Element] = js.native
+      var icon: js.UndefOr[Icon | Element] = js.undefined
       
       /**
         * The machine-friendly name for the panel.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The title of the panel.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Props {
       

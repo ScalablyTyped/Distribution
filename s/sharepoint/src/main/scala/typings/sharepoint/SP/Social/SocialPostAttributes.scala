@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,20 +12,32 @@ sealed trait SocialPostAttributes extends StObject
 object SocialPostAttributes extends StObject {
   
   @js.native
-  sealed trait canDelete extends SocialPostAttributes
+  sealed trait canDelete
+    extends StObject
+       with SocialPostAttributes
   
   @js.native
-  sealed trait canFollowUp extends SocialPostAttributes
+  sealed trait canFollowUp
+    extends StObject
+       with SocialPostAttributes
   
   @js.native
-  sealed trait canLike extends SocialPostAttributes
+  sealed trait canLike
+    extends StObject
+       with SocialPostAttributes
   
   @js.native
-  sealed trait none extends SocialPostAttributes
+  sealed trait none
+    extends StObject
+       with SocialPostAttributes
   
   @js.native
-  sealed trait useAuthorImage extends SocialPostAttributes
+  sealed trait useAuthorImage
+    extends StObject
+       with SocialPostAttributes
   
   @js.native
-  sealed trait useSmallImage extends SocialPostAttributes
+  sealed trait useSmallImage
+    extends StObject
+       with SocialPostAttributes
 }

@@ -20,15 +20,14 @@ import typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityExceptionsUnionM
 import typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInternalErrorExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InternalErrorExceptionDetails> * / any */ @js.native
-  trait InternalErrorException
-    extends CreateIdentityPoolExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InternalErrorExceptionDetails> * / any */ trait InternalErrorException
+    extends StObject
+       with CreateIdentityPoolExceptionsUnion
        with DeleteIdentitiesExceptionsUnion
        with DeleteIdentityPoolExceptionsUnion
        with DescribeIdentityExceptionsUnion
@@ -47,15 +46,13 @@ object typesInternalErrorExceptionMod {
        with UnlinkIdentityExceptionsUnion
        with UpdateIdentityPoolExceptionsUnion {
     
-    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException = js.native
+    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException
   }
   object InternalErrorException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException
-    ): InternalErrorException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InternalErrorException = {
+      val __obj = js.Dynamic.literal(name = "InternalErrorException")
       __obj.asInstanceOf[InternalErrorException]
     }
     
@@ -69,13 +66,12 @@ object typesInternalErrorExceptionMod {
     }
   }
   
-  @js.native
   trait InternalErrorExceptionDetails extends StObject {
     
     /**
       * <p>The message returned by an InternalErrorException.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InternalErrorExceptionDetails {
     

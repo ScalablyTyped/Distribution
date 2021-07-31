@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trafficMirrorTargetMod {
@@ -25,7 +24,7 @@ object trafficMirrorTargetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: TrafficMirrorTargetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: TrafficMirrorTargetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -56,6 +55,10 @@ object trafficMirrorTargetMod {
   /* static members */
   object TrafficMirrorTarget {
     
+    @JSImport("@pulumi/aws/ec2/trafficMirrorTarget", "TrafficMirrorTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TrafficMirrorTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,50 +68,44 @@ object trafficMirrorTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/trafficMirrorTarget", "TrafficMirrorTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TrafficMirrorTarget = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorTarget", "TrafficMirrorTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TrafficMirrorTarget = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorTarget", "TrafficMirrorTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrafficMirrorTargetState): TrafficMirrorTarget = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorTarget", "TrafficMirrorTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrafficMirrorTargetState, opts: CustomResourceOptions): TrafficMirrorTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TrafficMirrorTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TrafficMirrorTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrafficMirrorTargetState): TrafficMirrorTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrafficMirrorTargetState, opts: CustomResourceOptions): TrafficMirrorTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorTarget]
     
     /**
       * Returns true if the given object is an instance of TrafficMirrorTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/trafficMirrorTarget", "TrafficMirrorTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorTarget.TrafficMirrorTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorTarget.TrafficMirrorTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorTarget.TrafficMirrorTarget */ Boolean]
   }
   
-  @js.native
   trait TrafficMirrorTargetArgs extends StObject {
     
     /**
       * A description of the traffic mirror session.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The network interface ID that is associated with the target.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Network Load Balancer that is associated with the target.
       */
-    val networkLoadBalancerArn: js.UndefOr[Input[String]] = js.native
+    val networkLoadBalancerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TrafficMirrorTargetArgs {
     
@@ -147,33 +144,32 @@ object trafficMirrorTargetMod {
     }
   }
   
-  @js.native
   trait TrafficMirrorTargetState extends StObject {
     
     /**
       * The ARN of the traffic mirror target.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the traffic mirror session.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The network interface ID that is associated with the target.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Network Load Balancer that is associated with the target.
       */
-    val networkLoadBalancerArn: js.UndefOr[Input[String]] = js.native
+    val networkLoadBalancerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TrafficMirrorTargetState {
     

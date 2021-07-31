@@ -2,51 +2,49 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlEvent extends StObject {
   
   /**
     * Indicates whether or not an event is a bubbling event.
     */
-  def getBubbles(): Boolean = js.native
+  def getBubbles(): Boolean
   
   /**
     * Indicates whether the event can be cancelled.
     *
     * Note: Currently, cancelable has no effect.
     */
-  def getCancelable(): Boolean = js.native
+  def getCancelable(): Boolean
   
   /**
     * The target whose event listeners are currently being processed.
     */
-  var getCurrentTarget: GEEventEmitter = js.native
+  var getCurrentTarget: GEEventEmitter
   
   /**
     * The current stage of the flow of events.
     */
-  def getEventPhase(): GEEventPhaseEnum = js.native
+  def getEventPhase(): GEEventPhaseEnum
   
   /**
     * The object to which the KMLEvent was originally dispatched.
     */
-  def getTarget(): GEEventEmitter = js.native
+  def getTarget(): GEEventEmitter
   
   /**
     * Cancels the default action of the event.
     * For example, calling this method in a placemark click handler prevents the placemark's default balloon from popping up.
     */
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
   /**
     * Prevents event propagation.
     * For example, if click event handlers are set up on both the GEGlobe and GEWindow objects,
     * and stopPropagation is called in the GEGlobe click event handler, the GEWindow event handler will not be triggered when the globe is clicked.
     */
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
 }
 object KmlEvent {
   

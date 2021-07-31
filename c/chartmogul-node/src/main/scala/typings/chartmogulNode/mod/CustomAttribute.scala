@@ -7,30 +7,28 @@ import typings.chartmogulNode.commonMod.Entries
 import typings.chartmogulNode.commonMod.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CustomAttribute {
   
-  @JSImport("chartmogul-node", "CustomAttribute.add")
+  @JSImport("chartmogul-node", "CustomAttribute")
   @js.native
-  def add(config: Config, uuid: String, data: Custom): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = js.native
-  @JSImport("chartmogul-node", "CustomAttribute.add")
-  @js.native
-  def add(config: Config, uuid: String, data: CustomArray): js.Promise[CustomAttributes] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chartmogul-node", "CustomAttribute.remove")
-  @js.native
-  def remove(config: Config, uuid: String, data: CustomStrings): js.Promise[CustomAttributes] = js.native
+  @scala.inline
+  def add(config: Config, uuid: String, data: Custom): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
+  @scala.inline
+  def add(config: Config, uuid: String, data: CustomArray): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
   
-  @JSImport("chartmogul-node", "CustomAttribute.update")
-  @js.native
-  def update(config: Config, uuid: String, data: CustomAttributes): js.Promise[CustomAttributes] = js.native
+  @scala.inline
+  def remove(config: Config, uuid: String, data: CustomStrings): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
   
-  @js.native
+  @scala.inline
+  def update(config: Config, uuid: String, data: CustomAttributes): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
+  
   trait CustomAttributes extends StObject {
     
-    var custom: Map = js.native
+    var custom: Map
   }
   object CustomAttributes {
     

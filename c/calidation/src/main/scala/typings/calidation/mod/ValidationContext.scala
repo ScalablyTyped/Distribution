@@ -3,30 +3,28 @@ package typings.calidation.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<calidation.calidation.FormContext<T>, 'register' | 'unregister'> */
-@js.native
 trait ValidationContext[T /* <: js.Object */] extends StObject {
   
-  var dirty: Dirty[T] = js.native
+  var dirty: Dirty[T]
   
-  var errors: Errors[T] = js.native
+  var errors: Errors[T]
   
-  var fields: Fields[T] = js.native
+  var fields: Fields[T]
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
-  var resetAll: js.Function0[Unit] = js.native
+  var resetAll: js.Function0[Unit]
   
-  var setError: js.Function1[/* delta */ Errors[T], Unit] = js.native
+  var setError: js.Function1[/* delta */ Errors[T], Unit]
   
-  var setField: js.Function1[/* delta */ Partial[T], Unit] = js.native
+  var setField: js.Function1[/* delta */ Partial[T], Unit]
   
-  var submit: js.Function0[Unit] = js.native
+  var submit: js.Function0[Unit]
   
-  var submitted: Boolean = js.native
+  var submitted: Boolean
 }
 object ValidationContext {
   
@@ -47,7 +45,7 @@ object ValidationContext {
   }
   
   @scala.inline
-  implicit class ValidationContextMutableBuilder[Self <: ValidationContext[_], T /* <: js.Object */] (val x: Self with ValidationContext[T]) extends AnyVal {
+  implicit class ValidationContextMutableBuilder[Self <: ValidationContext[?], T /* <: js.Object */] (val x: Self & ValidationContext[T]) extends AnyVal {
     
     @scala.inline
     def setDirty(value: Dirty[T]): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])

@@ -6,7 +6,6 @@ import typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
 import typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,28 +30,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {Resource.OnCompleteSignal} [callback] - Alias for `onComplete`.
   * @property {Resource.IMetadata} [metadata] - Extra configuration for middleware and the Resource object.
   */
-@js.native
 trait IAddOptions extends StObject {
   
-  var callback: js.UndefOr[OnCompleteSignal] = js.native
+  var callback: js.UndefOr[OnCompleteSignal] = js.undefined
   
-  var crossOrigin: js.UndefOr[String | Boolean] = js.native
+  var crossOrigin: js.UndefOr[String | Boolean] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var loadType: js.UndefOr[LOAD_TYPE] = js.native
+  var loadType: js.UndefOr[LOAD_TYPE] = js.undefined
   
-  var metadata: js.UndefOr[IMetadata] = js.native
+  var metadata: js.UndefOr[IMetadata] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onComplete: js.UndefOr[OnCompleteSignal] = js.native
+  var onComplete: js.UndefOr[OnCompleteSignal] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var xhrType: js.UndefOr[XHR_RESPONSE_TYPE] = js.native
+  var xhrType: js.UndefOr[XHR_RESPONSE_TYPE] = js.undefined
 }
 object IAddOptions {
   

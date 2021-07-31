@@ -3,27 +3,25 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.anon.BarLabelStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineOptions extends StObject {
   
-  var avoidOverlappingGridLines: js.UndefOr[Boolean] = js.native
+  var avoidOverlappingGridLines: js.UndefOr[Boolean] = js.undefined
   
-  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   
-  var colors: js.UndefOr[js.Array[String]] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var enableInteractivity: js.UndefOr[Boolean] = js.native
+  var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   
-  var forceIFrame: js.UndefOr[Boolean] = js.native
+  var forceIFrame: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var timeline: js.UndefOr[BarLabelStyle] = js.native
+  var timeline: js.UndefOr[BarLabelStyle] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TimelineOptions {
   

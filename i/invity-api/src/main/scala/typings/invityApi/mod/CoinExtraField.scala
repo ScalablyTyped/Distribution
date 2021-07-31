@@ -5,19 +5,17 @@ import typings.invityApi.invityApiStrings.number
 import typings.invityApi.invityApiStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoinExtraField extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var `type`: number | text | hex = js.native
+  var `type`: number | text | hex
 }
 object CoinExtraField {
   

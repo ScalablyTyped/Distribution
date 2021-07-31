@@ -3,7 +3,6 @@ package typings.vaultAuthAws
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,30 +10,36 @@ object mod {
   @JSImport("vault-auth-aws", JSImport.Namespace)
   @js.native
   class ^ ()
-    extends typings.vaultAuthAws.mod.vaultAuthAws {
+    extends StObject
+       with typings.vaultAuthAws.mod.vaultAuthAws {
     def this(config: Config) = this()
+    
+    /* CompleteClass */
+    override def authenticate(): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def getOptions(creds: Creds): Options = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var apiVersion: js.UndefOr[String] = js.native
+    var apiVersion: js.UndefOr[String] = js.undefined
     
-    var certFilePath: js.UndefOr[String] = js.native
+    var certFilePath: js.UndefOr[String] = js.undefined
     
-    var followAllRedirects: js.UndefOr[Boolean] = js.native
+    var followAllRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var ssl: js.UndefOr[Boolean] = js.native
+    var ssl: js.UndefOr[Boolean] = js.undefined
     
-    var sslRejectUnAuthorized: js.UndefOr[Boolean] = js.native
+    var sslRejectUnAuthorized: js.UndefOr[Boolean] = js.undefined
     
-    var vaultAppName: js.UndefOr[String] = js.native
+    var vaultAppName: js.UndefOr[String] = js.undefined
     
-    var vaultLoginUrl: js.UndefOr[String] = js.native
+    var vaultLoginUrl: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -103,14 +108,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Creds extends StObject {
     
-    var accessKeyId: js.UndefOr[String] = js.native
+    var accessKeyId: js.UndefOr[String] = js.undefined
     
-    var secretAccessKey: js.UndefOr[String] = js.native
+    var secretAccessKey: js.UndefOr[String] = js.undefined
     
-    var sessionToken: js.UndefOr[String] = js.native
+    var sessionToken: js.UndefOr[String] = js.undefined
   }
   object Creds {
     
@@ -143,16 +147,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var cert: js.UndefOr[Buffer] = js.native
+    var cert: js.UndefOr[Buffer] = js.undefined
     
-    var followAllRedirects: Boolean = js.native
+    var followAllRedirects: Boolean
     
-    var url: String = js.native
+    var url: String
   }
   object Options {
     
@@ -182,17 +185,16 @@ object mod {
     }
   }
   
-  @js.native
   trait vaultAuthAws extends StObject {
     
-    def authenticate(): js.Promise[_] = js.native
+    def authenticate(): js.Promise[js.Any]
     
-    def getOptions(creds: Creds): Options = js.native
+    def getOptions(creds: Creds): Options
   }
   object vaultAuthAws {
     
     @scala.inline
-    def apply(authenticate: () => js.Promise[_], getOptions: Creds => Options): typings.vaultAuthAws.mod.vaultAuthAws = {
+    def apply(authenticate: () => js.Promise[js.Any], getOptions: Creds => Options): typings.vaultAuthAws.mod.vaultAuthAws = {
       val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction0(authenticate), getOptions = js.Any.fromFunction1(getOptions))
       __obj.asInstanceOf[typings.vaultAuthAws.mod.vaultAuthAws]
     }
@@ -201,7 +203,7 @@ object mod {
     implicit class vaultAuthAwsMutableBuilder[Self <: typings.vaultAuthAws.mod.vaultAuthAws] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAuthenticate(value: () => js.Promise[_]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
+      def setAuthenticate(value: () => js.Promise[js.Any]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetOptions(value: Creds => Options): Self = StObject.set(x, "getOptions", js.Any.fromFunction1(value))

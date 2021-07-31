@@ -3,7 +3,6 @@ package typings.linkifyjs
 import typings.linkifyjs.mod.LinkEntityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkifyjsStrings {
@@ -14,7 +13,9 @@ object linkifyjsStrings {
   def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait email extends LinkEntityType
+  sealed trait email
+    extends StObject
+       with LinkEntityType
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
@@ -29,7 +30,9 @@ object linkifyjsStrings {
   def ftps: ftps = "ftps".asInstanceOf[ftps]
   
   @js.native
-  sealed trait hashtag extends LinkEntityType
+  sealed trait hashtag
+    extends StObject
+       with LinkEntityType
   @scala.inline
   def hashtag: hashtag = "hashtag".asInstanceOf[hashtag]
   
@@ -44,12 +47,16 @@ object linkifyjsStrings {
   def https: https = "https".asInstanceOf[https]
   
   @js.native
-  sealed trait mention extends LinkEntityType
+  sealed trait mention
+    extends StObject
+       with LinkEntityType
   @scala.inline
   def mention: mention = "mention".asInstanceOf[mention]
   
   @js.native
-  sealed trait url extends LinkEntityType
+  sealed trait url
+    extends StObject
+       with LinkEntityType
   @scala.inline
   def url: url = "url".asInstanceOf[url]
 }

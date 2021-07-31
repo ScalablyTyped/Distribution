@@ -22,41 +22,39 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colDefMod {
   
-  @js.native
   trait AbstractColDef extends StObject {
     
     /** Whether to show the column when the group is open / closed. */
-    var columnGroupShow: js.UndefOr[String] = js.native
+    var columnGroupShow: js.UndefOr[String] = js.undefined
     
     /** CSS class for the header */
     var headerClass: js.UndefOr[
         String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]])
-      ] = js.native
+      ] = js.undefined
     
     /** The name to render in the column header */
-    var headerName: js.UndefOr[String] = js.native
+    var headerName: js.UndefOr[String] = js.undefined
     
     /** Tooltip for the column header */
-    var headerTooltip: js.UndefOr[String] = js.native
+    var headerTooltip: js.UndefOr[String] = js.undefined
     
     /** Expression or function to get the cells value. */
-    var headerValueGetter: js.UndefOr[String | js.Function] = js.native
+    var headerValueGetter: js.UndefOr[String | js.Function] = js.undefined
     
     /** Never set this, it is used internally by grid when doing in-grid pivoting */
-    var pivotKeys: js.UndefOr[js.Array[String]] = js.native
+    var pivotKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Set to true to not include this column in the toolpanel */
-    var suppressToolPanel: js.UndefOr[Boolean] = js.native
+    var suppressToolPanel: js.UndefOr[Boolean] = js.undefined
     
     /** CSS class for the header */
     var toolPanelClass: js.UndefOr[
         String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]])
-      ] = js.native
+      ] = js.undefined
   }
   object AbstractColDef {
     
@@ -134,22 +132,21 @@ object colDefMod {
     }
   }
   
-  @js.native
   trait BaseColDefParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    var column: Column = js.native
+    var column: Column
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
   }
   object BaseColDefParams {
     
@@ -193,10 +190,11 @@ object colDefMod {
     }
   }
   
-  @js.native
-  trait BaseWithValueColDefParams extends BaseColDefParams {
+  trait BaseWithValueColDefParams
+    extends StObject
+       with BaseColDefParams {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object BaseWithValueColDefParams {
     
@@ -223,25 +221,24 @@ object colDefMod {
     }
   }
   
-  @js.native
   trait CellClassParams extends StObject {
     
     @JSName("$scope")
-    var $scope: js.Any = js.native
+    var $scope: js.Any
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object CellClassParams {
     
@@ -289,59 +286,59 @@ object colDefMod {
     }
   }
   
-  @js.native
   trait ColDef
-    extends AbstractColDef
+    extends StObject
+       with AbstractColDef
        with ComponentHolder {
     
     /** Name of function to use for aggregation. One of [sum,min,max,first,last] or a function. */
-    var aggFunc: js.UndefOr[String | IAggFunc] = js.native
+    var aggFunc: js.UndefOr[String | IAggFunc] = js.undefined
     
     /** Agg funcs allowed on this column. If missing, all installed agg funcs are allowed.
       * Can be eg ['sum','avg']. This will restrict what the GUI allows to select only.*/
-    var allowedAggFuncs: js.UndefOr[js.Array[String]] = js.native
+    var allowedAggFuncs: js.UndefOr[js.Array[String]] = js.undefined
     
     /** True if this column should stretch rows height to fit contents */
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
     /** Class to use for the cell. Can be string, array of strings, or function. */
     var cellClass: js.UndefOr[
         String | js.Array[String] | (js.Function1[/* cellClassParams */ CellClassParams, String | js.Array[String]])
-      ] = js.native
+      ] = js.undefined
     
     /** Rules for applying css classes */
-    var cellClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.native
+    var cellClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.undefined
     
     /** Cell editor */
-    var cellEditor: js.UndefOr[InstantiableICellEditorComp | String] = js.native
+    var cellEditor: js.UndefOr[InstantiableICellEditorComp | String] = js.undefined
     
-    var cellEditorFramework: js.UndefOr[js.Any] = js.native
+    var cellEditorFramework: js.UndefOr[js.Any] = js.undefined
     
-    var cellEditorParams: js.UndefOr[js.Any] = js.native
+    var cellEditorParams: js.UndefOr[js.Any] = js.undefined
     
-    var cellEditorSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.native
+    var cellEditorSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.undefined
     
     /** A function for rendering a cell. */
-    var cellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
+    var cellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
     
-    var cellRendererFramework: js.UndefOr[js.Any] = js.native
+    var cellRendererFramework: js.UndefOr[js.Any] = js.undefined
     
-    var cellRendererParams: js.UndefOr[js.Any] = js.native
+    var cellRendererParams: js.UndefOr[js.Any] = js.undefined
     
-    var cellRendererSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.native
+    var cellRendererSelector: js.UndefOr[js.Function1[/* params */ DynamicComponentParams, DynamicComponentDef]] = js.undefined
     
     /** An object of css values. Or a function returning an object of css values. */
-    var cellStyle: js.UndefOr[js.Object | (js.Function1[/* params */ js.Any, js.Object])] = js.native
+    var cellStyle: js.UndefOr[js.Object | (js.Function1[/* params */ js.Any, js.Object])] = js.undefined
     
     /** Set to true to render a selection checkbox in the column. */
-    var checkboxSelection: js.UndefOr[Boolean | (js.Function1[/* params */ js.Any, Boolean])] = js.native
+    var checkboxSelection: js.UndefOr[Boolean | (js.Function1[/* params */ js.Any, Boolean])] = js.undefined
     
     /** The unique ID to give the column. This is optional. If missing, the ID will default to the field.
       *  If both field and colId are missing, a unique ID will be generated.
       *  This ID is used to identify the column in the API for sorting, filtering etc. */
-    var colId: js.UndefOr[String] = js.native
+    var colId: js.UndefOr[String] = js.undefined
     
-    var colSpan: js.UndefOr[js.Function1[/* params */ ColSpanParams, Double]] = js.native
+    var colSpan: js.UndefOr[js.Function1[/* params */ ColSpanParams, Double]] = js.undefined
     
     /** Comparator function for custom sorting. */
     var comparator: js.UndefOr[
@@ -353,234 +350,234 @@ object colDefMod {
           /* isInverted */ js.UndefOr[Boolean], 
           Double
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Set to true if this col is editable, otherwise false. Can also be a function to have different rows editable. */
-    var editable: js.UndefOr[Boolean | IsColumnFunc] = js.native
+    var editable: js.UndefOr[Boolean | IsColumnFunc] = js.undefined
     
     /** If true, grid will flash cell after cell is refreshed */
-    var enableCellChangeFlash: js.UndefOr[Boolean] = js.native
+    var enableCellChangeFlash: js.UndefOr[Boolean] = js.undefined
     
     /** If true, GUI will allow adding this columns as a pivot */
-    var enablePivot: js.UndefOr[Boolean] = js.native
+    var enablePivot: js.UndefOr[Boolean] = js.undefined
     
     /** If true, GUI will allow adding this columns as a row group */
-    var enableRowGroup: js.UndefOr[Boolean] = js.native
+    var enableRowGroup: js.UndefOr[Boolean] = js.undefined
     
     /** If true, GUI will allow adding this columns as a value */
-    var enableValue: js.UndefOr[Boolean] = js.native
+    var enableValue: js.UndefOr[Boolean] = js.undefined
     
     /** Comparator for values, used by renderer to know if values have changed. Cells who's values have not changed don't get refreshed. */
     @JSName("equals")
-    var equals_FColDef: js.UndefOr[js.Function2[/* valueA */ js.Any, /* valueB */ js.Any, Boolean]] = js.native
+    var equals_FColDef: js.UndefOr[js.Function2[/* valueA */ js.Any, /* valueB */ js.Any, Boolean]] = js.undefined
     
     /** The field of the row to get the cells data from */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** one of the built in filter names: [set, number, text], or a filter function*/
-    var filter: js.UndefOr[String | InstantiableIFilterComp] = js.native
+    var filter: js.UndefOr[String | InstantiableIFilterComp] = js.undefined
     
-    var filterFramework: js.UndefOr[js.Any] = js.native
+    var filterFramework: js.UndefOr[js.Any] = js.undefined
     
     /** The filter params are specific to each filter! */
-    var filterParams: js.UndefOr[js.Any] = js.native
+    var filterParams: js.UndefOr[js.Any] = js.undefined
     
     /** Expression or function to get the cells value for filtering. */
-    var filterValueGetter: js.UndefOr[(js.Function1[/* params */ ValueGetterParams, _]) | String] = js.native
+    var filterValueGetter: js.UndefOr[(js.Function1[/* params */ ValueGetterParams, js.Any]) | String] = js.undefined
     
     /** The custom header component to be used for rendering the floating filter. If none specified the default ag-Grid is used**/
-    var floatingFilterComponent: js.UndefOr[InstantiableIFloatingFilterComp] = js.native
+    var floatingFilterComponent: js.UndefOr[InstantiableIFloatingFilterComp] = js.undefined
     
-    var floatingFilterComponentFramework: js.UndefOr[InstantiableAny] = js.native
+    var floatingFilterComponentFramework: js.UndefOr[InstantiableAny] = js.undefined
     
-    var floatingFilterComponentParams: js.UndefOr[js.Any] = js.native
+    var floatingFilterComponentParams: js.UndefOr[js.Any] = js.undefined
     
     /** To create the quick filter text for this column, if toString is not good enough on the value. */
-    var getQuickFilterText: js.UndefOr[js.Function1[/* params */ GetQuickFilterTextParams, String]] = js.native
+    var getQuickFilterText: js.UndefOr[js.Function1[/* params */ GetQuickFilterTextParams, String]] = js.undefined
     
     /** If true, a 'select all' checkbox will be put into the header */
-    var headerCheckboxSelection: js.UndefOr[Boolean | (js.Function1[/* params */ js.Any, Boolean])] = js.native
+    var headerCheckboxSelection: js.UndefOr[Boolean | (js.Function1[/* params */ js.Any, Boolean])] = js.undefined
     
     /** If true, the header checkbox selection will work on filtered items*/
-    var headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.native
+    var headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.undefined
     
     /** The custom header component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-    var headerComponent: js.UndefOr[String | InstantiableAny] = js.native
+    var headerComponent: js.UndefOr[String | InstantiableAny] = js.undefined
     
     /** The custom header component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-    var headerComponentFramework: js.UndefOr[InstantiableAny] = js.native
+    var headerComponentFramework: js.UndefOr[InstantiableAny] = js.undefined
     
     /** The custom header component parameters**/
-    var headerComponentParams: js.UndefOr[js.Any] = js.native
+    var headerComponentParams: js.UndefOr[js.Any] = js.undefined
     
     /** Set to true for this column to be hidden. Naturally you might think, it would make more sense to call this field 'visible' and mark it false to hide,
       *  however we want all default values to be false and we want columns to be visible by default. */
-    var hide: js.UndefOr[Boolean] = js.native
+    var hide: js.UndefOr[Boolean] = js.undefined
     
     /** Icons for this column. Leave blank to use default. */
-    var icons: js.UndefOr[StringDictionary[String]] = js.native
+    var icons: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Function to return the key for a value - use this if the value is an object (not a primitive type) and you
       * want to a) group by this field or b) use set filter on this field. */
-    var keyCreator: js.UndefOr[js.Function] = js.native
+    var keyCreator: js.UndefOr[js.Function] = js.undefined
     
     /** Set to true to block the user pinning the column, the column can only be pinned via definitions or API */
-    var lockPinned: js.UndefOr[Boolean] = js.native
+    var lockPinned: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true to make sure this column is always first. Other columns, if movable, cannot move before this column. */
-    var lockPosition: js.UndefOr[Boolean] = js.native
+    var lockPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true to block the user showing / hiding the column, the column can only be shown / hidden via definitions or API */
-    var lockVisible: js.UndefOr[Boolean] = js.native
+    var lockVisible: js.UndefOr[Boolean] = js.undefined
     
     /** Max width, in pixels, of the cell */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /** The menu tabs to show, and in which order, the valid values for this property are:
       * filterMenuTab, generalMenuTab, columnsMenuTab **/
-    var menuTabs: js.UndefOr[js.Array[String]] = js.native
+    var menuTabs: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Min width, in pixels, of the cell */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /** Callbacks for editing. See editing section for further details.
       * Return true if the update was successful, or false if not.
       * If false, then skips the UI refresh and no events are emitted.
       * Return false if the values are the same (ie no update). */
-    var newValueHandler: js.UndefOr[js.Function1[/* params */ js.Any, Boolean]] = js.native
+    var newValueHandler: js.UndefOr[js.Function1[/* params */ js.Any, Boolean]] = js.undefined
     
     /** Function callback, gets called when a cell is clicked. */
-    var onCellClicked: js.UndefOr[js.Function1[/* event */ CellClickedEvent, Unit]] = js.native
+    var onCellClicked: js.UndefOr[js.Function1[/* event */ CellClickedEvent, Unit]] = js.undefined
     
     /** Function callback, gets called when a cell is right clicked. */
-    var onCellContextMenu: js.UndefOr[js.Function1[/* event */ CellContextMenuEvent, Unit]] = js.native
+    var onCellContextMenu: js.UndefOr[js.Function1[/* event */ CellContextMenuEvent, Unit]] = js.undefined
     
     /** Function callback, gets called when a cell is double clicked. */
-    var onCellDoubleClicked: js.UndefOr[js.Function1[/* event */ CellDoubleClickedEvent, Unit]] = js.native
+    var onCellDoubleClicked: js.UndefOr[js.Function1[/* event */ CellDoubleClickedEvent, Unit]] = js.undefined
     
     /** Callbacks for editing.See editing section for further details. */
-    var onCellValueChanged: js.UndefOr[js.Function] = js.native
+    var onCellValueChanged: js.UndefOr[js.Function] = js.undefined
     
     /** Whether this column is pinned or not. */
-    var pinned: js.UndefOr[Boolean | String] = js.native
+    var pinned: js.UndefOr[Boolean | String] = js.undefined
     
     /** A function for rendering a pinned row cell. */
-    var pinnedRowCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
+    var pinnedRowCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
     
-    var pinnedRowCellRendererFramework: js.UndefOr[js.Any] = js.native
+    var pinnedRowCellRendererFramework: js.UndefOr[js.Any] = js.undefined
     
-    var pinnedRowCellRendererParams: js.UndefOr[js.Any] = js.native
+    var pinnedRowCellRendererParams: js.UndefOr[js.Any] = js.undefined
     
     /** A function to format a pinned row value, should return a string. Not used for CSV export or copy to clipboard, only for UI cell rendering. */
-    var pinnedRowValueFormatter: js.UndefOr[js.Function1[/* params */ ValueFormatterParams, String]] = js.native
+    var pinnedRowValueFormatter: js.UndefOr[js.Function1[/* params */ ValueFormatterParams, String]] = js.undefined
     
-    var pivot: js.UndefOr[Boolean] = js.native
+    var pivot: js.UndefOr[Boolean] = js.undefined
     
     /** Comparator for ordering the pivot columns */
-    var pivotComparator: js.UndefOr[js.Function2[/* valueA */ String, /* valueB */ String, Double]] = js.native
+    var pivotComparator: js.UndefOr[js.Function2[/* valueA */ String, /* valueB */ String, Double]] = js.undefined
     
     /** To pivot by this column by default, either provide an index (eg pivotIndex=1), or set pivot=true. */
-    var pivotIndex: js.UndefOr[Double] = js.native
+    var pivotIndex: js.UndefOr[Double] = js.undefined
     
     /** Never set this, it is used internally by grid when doing in-grid pivoting */
-    var pivotTotalColumnIds: js.UndefOr[js.Array[String]] = js.native
+    var pivotTotalColumnIds: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Never set this, it is used internally by grid when doing in-grid pivoting */
-    var pivotValueColumn: js.UndefOr[Column] = js.native
+    var pivotValueColumn: js.UndefOr[Column] = js.undefined
     
-    var refData: js.UndefOr[StringDictionary[String]] = js.native
+    var refData: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var rowDrag: js.UndefOr[Boolean | (js.Function1[/* params */ js.Any, Boolean])] = js.native
+    var rowDrag: js.UndefOr[Boolean | (js.Function1[/* params */ js.Any, Boolean])] = js.undefined
     
-    var rowGroup: js.UndefOr[Boolean] = js.native
+    var rowGroup: js.UndefOr[Boolean] = js.undefined
     
     /** To group by this column by default, either provide an index (eg rowGroupIndex=1), or set rowGroup=true. */
-    var rowGroupIndex: js.UndefOr[Double] = js.native
+    var rowGroupIndex: js.UndefOr[Double] = js.undefined
     
-    var rowSpan: js.UndefOr[js.Function1[/* params */ RowSpanParams, Double]] = js.native
+    var rowSpan: js.UndefOr[js.Function1[/* params */ RowSpanParams, Double]] = js.undefined
     
     /** Set to true to have the grid place the values for the group into the cell, or put the name of a grouped column to just show that group. */
-    var showRowGroup: js.UndefOr[String | Boolean] = js.native
+    var showRowGroup: js.UndefOr[String | Boolean] = js.undefined
     
     /** If true, this cell will be in editing mode after first click. */
-    var singleClickEdit: js.UndefOr[Boolean] = js.native
+    var singleClickEdit: js.UndefOr[Boolean] = js.undefined
     
     /** If sorting by default, set it here. Set to 'asc' or 'desc' */
-    var sort: js.UndefOr[String] = js.native
+    var sort: js.UndefOr[String] = js.undefined
     
     /** If sorting more than one column by default, the milliseconds when this column was sorted, so we know what order to sort the columns in. */
-    var sortedAt: js.UndefOr[Double] = js.native
+    var sortedAt: js.UndefOr[Double] = js.undefined
     
     /** The sort order, provide an array with any of the following in any order ['asc','desc',null] */
-    var sortingOrder: js.UndefOr[js.Array[String]] = js.native
+    var sortingOrder: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Set to true if you do not want this column to be auto-resizable by double clicking it's edge. */
-    var suppressAutoSize: js.UndefOr[Boolean] = js.native
+    var suppressAutoSize: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true to not flash this column for value changes */
-    var suppressCellFlash: js.UndefOr[Boolean] = js.native
+    var suppressCellFlash: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true to not allow filter on this column */
-    var suppressFilter: js.UndefOr[Boolean] = js.native
+    var suppressFilter: js.UndefOr[Boolean] = js.undefined
     
-    var suppressKeyboardEvent: js.UndefOr[js.Function1[/* params */ SuppressKeyboardEventParams, Boolean]] = js.native
+    var suppressKeyboardEvent: js.UndefOr[js.Function1[/* params */ SuppressKeyboardEventParams, Boolean]] = js.undefined
     
     /** Set to true if no menu should be shown for this column header. */
-    var suppressMenu: js.UndefOr[Boolean] = js.native
+    var suppressMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true to not allow moving this column via dragging it's header */
-    var suppressMovable: js.UndefOr[Boolean] = js.native
+    var suppressMovable: js.UndefOr[Boolean] = js.undefined
     
     /** Set to tru if this col should not be navigable with the tab key. Can also be a function to have different rows editable. */
-    var suppressNavigable: js.UndefOr[Boolean | IsColumnFunc] = js.native
+    var suppressNavigable: js.UndefOr[Boolean | IsColumnFunc] = js.undefined
     
     /** Set to true if this col should not be allowed take new values from teh clipboard . */
-    var suppressPaste: js.UndefOr[Boolean | IsColumnFunc] = js.native
+    var suppressPaste: js.UndefOr[Boolean | IsColumnFunc] = js.undefined
     
     /** Set to true if you do not want this column to be resizable by dragging it's edge. */
-    var suppressResize: js.UndefOr[Boolean] = js.native
+    var suppressResize: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true if you want this columns width to be fixed during 'size to fit' operation. */
-    var suppressSizeToFit: js.UndefOr[Boolean] = js.native
+    var suppressSizeToFit: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true if no sorting should be done for this column. */
-    var suppressSorting: js.UndefOr[Boolean] = js.native
+    var suppressSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Cell template to use for cell. Useful for AngularJS cells. */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Cell template URL to load template from to use for cell. Useful for AngularJS cells. */
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
     
     /** The function used to calculate the tooltip of the object, tooltipField takes precedence*/
-    var tooltip: js.UndefOr[js.Function1[/* params */ TooltipParams, String]] = js.native
+    var tooltip: js.UndefOr[js.Function1[/* params */ TooltipParams, String]] = js.undefined
     
     /** The field where we get the tooltip on the object */
-    var tooltipField: js.UndefOr[String] = js.native
+    var tooltipField: js.UndefOr[String] = js.undefined
     
     /**
       * A comma separated string or array of strings containing ColumnType keys which can be used as a template for a column.
       * This helps to reduce duplication of properties when you have a lot of common column properties.
       */
-    var `type`: js.UndefOr[String | js.Array[String]] = js.native
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Set to true if you want the unsorted icon to be shown when no sort is applied to this column. */
-    var unSortIcon: js.UndefOr[Boolean] = js.native
+    var unSortIcon: js.UndefOr[Boolean] = js.undefined
     
     /** A function to format a value, should return a string. Not used for CSV export or copy to clipboard, only for UI cell rendering. */
-    var valueFormatter: js.UndefOr[js.Function1[/* params */ ValueFormatterParams, String]] = js.native
+    var valueFormatter: js.UndefOr[js.Function1[/* params */ ValueFormatterParams, String]] = js.undefined
     
     /** Expression or function to get the cells value. */
-    var valueGetter: js.UndefOr[(js.Function1[/* params */ ValueGetterParams, _]) | String] = js.native
+    var valueGetter: js.UndefOr[(js.Function1[/* params */ ValueGetterParams, js.Any]) | String] = js.undefined
     
     /** Gets called after editing, converts the value in the cell. */
-    var valueParser: js.UndefOr[js.Function1[/* params */ ValueParserParams, _ | String]] = js.native
+    var valueParser: js.UndefOr[js.Function1[/* params */ ValueParserParams, js.Any | String]] = js.undefined
     
     /** If not using a field, then this puts the value into the cell */
-    var valueSetter: js.UndefOr[(js.Function1[/* params */ ValueSetterParams, Boolean]) | String] = js.native
+    var valueSetter: js.UndefOr[(js.Function1[/* params */ ValueSetterParams, Boolean]) | String] = js.undefined
     
     /** Initial width, in pixels, of the cell */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ColDef {
     
@@ -790,10 +787,10 @@ object colDefMod {
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       @scala.inline
-      def setFilterValueGetter(value: (js.Function1[/* params */ ValueGetterParams, _]) | String): Self = StObject.set(x, "filterValueGetter", value.asInstanceOf[js.Any])
+      def setFilterValueGetter(value: (js.Function1[/* params */ ValueGetterParams, js.Any]) | String): Self = StObject.set(x, "filterValueGetter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFilterValueGetterFunction1(value: /* params */ ValueGetterParams => _): Self = StObject.set(x, "filterValueGetter", js.Any.fromFunction1(value))
+      def setFilterValueGetterFunction1(value: /* params */ ValueGetterParams => js.Any): Self = StObject.set(x, "filterValueGetter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFilterValueGetterUndefined: Self = StObject.set(x, "filterValueGetter", js.undefined)
@@ -1192,16 +1189,16 @@ object colDefMod {
       def setValueFormatterUndefined: Self = StObject.set(x, "valueFormatter", js.undefined)
       
       @scala.inline
-      def setValueGetter(value: (js.Function1[/* params */ ValueGetterParams, _]) | String): Self = StObject.set(x, "valueGetter", value.asInstanceOf[js.Any])
+      def setValueGetter(value: (js.Function1[/* params */ ValueGetterParams, js.Any]) | String): Self = StObject.set(x, "valueGetter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValueGetterFunction1(value: /* params */ ValueGetterParams => _): Self = StObject.set(x, "valueGetter", js.Any.fromFunction1(value))
+      def setValueGetterFunction1(value: /* params */ ValueGetterParams => js.Any): Self = StObject.set(x, "valueGetter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValueGetterUndefined: Self = StObject.set(x, "valueGetter", js.undefined)
       
       @scala.inline
-      def setValueParser(value: /* params */ ValueParserParams => _ | String): Self = StObject.set(x, "valueParser", js.Any.fromFunction1(value))
+      def setValueParser(value: /* params */ ValueParserParams => js.Any | String): Self = StObject.set(x, "valueParser", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValueParserUndefined: Self = StObject.set(x, "valueParser", js.undefined)
@@ -1223,31 +1220,31 @@ object colDefMod {
     }
   }
   
-  @js.native
   trait ColGroupDef
-    extends AbstractColDef
+    extends StObject
+       with AbstractColDef
        with ComponentHolder {
     
     /** Columns in this group */
-    var children: js.Array[ColDef | ColGroupDef] = js.native
+    var children: js.Array[ColDef | ColGroupDef]
     
     /** Group ID */
-    var groupId: js.UndefOr[String] = js.native
+    var groupId: js.UndefOr[String] = js.undefined
     
     /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-    var headerGroupComponent: js.UndefOr[String | InstantiableIHeaderGroupComp] = js.native
+    var headerGroupComponent: js.UndefOr[String | InstantiableIHeaderGroupComp] = js.undefined
     
     /** The custom header group component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-    var headerGroupComponentFramework: js.UndefOr[InstantiableAny] = js.native
+    var headerGroupComponentFramework: js.UndefOr[InstantiableAny] = js.undefined
     
     /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-    var headerGroupComponentParams: js.UndefOr[js.Any] = js.native
+    var headerGroupComponentParams: js.UndefOr[js.Any] = js.undefined
     
     /** If true, group cannot be broken up by column moving, child columns will always appear side by side, however you can rearrange child columns within the group */
-    var marryChildren: js.UndefOr[Boolean] = js.native
+    var marryChildren: js.UndefOr[Boolean] = js.undefined
     
     /** Open by Default */
-    var openByDefault: js.UndefOr[Boolean] = js.native
+    var openByDefault: js.UndefOr[Boolean] = js.undefined
   }
   object ColGroupDef {
     
@@ -1306,18 +1303,17 @@ object colDefMod {
   
   type ColSpanParams = BaseColDefParams
   
-  @js.native
   trait GetQuickFilterTextParams extends StObject {
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    var column: Column = js.native
+    var column: Column
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object GetQuickFilterTextParams {
     
@@ -1351,22 +1347,21 @@ object colDefMod {
   
   type IsColumnFunc = js.Function1[/* params */ IsColumnFuncParams, Boolean]
   
-  @js.native
   trait IsColumnFuncParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    var column: Column = js.native
+    var column: Column
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
   }
   object IsColumnFuncParams {
     
@@ -1410,12 +1405,13 @@ object colDefMod {
     }
   }
   
-  @js.native
-  trait NewValueParams extends BaseColDefParams {
+  trait NewValueParams
+    extends StObject
+       with BaseColDefParams {
     
-    var newValue: js.Any = js.native
+    var newValue: js.Any
     
-    var oldValue: js.Any = js.native
+    var oldValue: js.Any
   }
   object NewValueParams {
     
@@ -1448,12 +1444,13 @@ object colDefMod {
   
   type RowSpanParams = BaseColDefParams
   
-  @js.native
-  trait SuppressKeyboardEventParams extends IsColumnFuncParams {
+  trait SuppressKeyboardEventParams
+    extends StObject
+       with IsColumnFuncParams {
     
-    var editing: Boolean = js.native
+    var editing: Boolean
     
-    var event: KeyboardEvent = js.native
+    var event: KeyboardEvent
   }
   object SuppressKeyboardEventParams {
     
@@ -1484,27 +1481,26 @@ object colDefMod {
     }
   }
   
-  @js.native
   trait TooltipParams extends StObject {
     
     @JSName("$scope")
-    var $scope: js.Any = js.native
+    var $scope: js.Any
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
     
-    var value: js.Any = js.native
+    var value: js.Any
     
-    var valueFormatted: js.Any = js.native
+    var valueFormatted: js.Any
   }
   object TooltipParams {
     
@@ -1558,10 +1554,11 @@ object colDefMod {
   
   type ValueFormatterParams = BaseWithValueColDefParams
   
-  @js.native
-  trait ValueGetterParams extends BaseColDefParams {
+  trait ValueGetterParams
+    extends StObject
+       with BaseColDefParams {
     
-    def getValue(field: String): js.Any = js.native
+    def getValue(field: String): js.Any
   }
   object ValueGetterParams {
     

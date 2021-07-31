@@ -10,9 +10,9 @@ Transforms the string to lower case
 | ------------------ | :-------------: |
 | Full name          | lower-case |
 | Keywords           | lower, case, downcase, locale, convert, transform |
-| # releases         | 3 |
-| # dependents       | 52 |
-| # downloads        | 313238658 |
+| # releases         | 4 |
+| # dependents       | 67 |
+| # downloads        | 402209092 |
 | # stars            | 0 |
 
 ## Links

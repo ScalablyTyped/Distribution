@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourceServerRequest extends StObject {
   
   /**
     * The identifier for the resource server.
     */
-  var Identifier: ResourceServerIdentifierType = js.native
+  var Identifier: ResourceServerIdentifierType
   
   /**
     * The user pool ID for the user pool that hosts the resource server.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object DeleteResourceServerRequest {
   

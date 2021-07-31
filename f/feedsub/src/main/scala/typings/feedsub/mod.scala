@@ -5,14 +5,15 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("feedsub", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FeedSub {
+  class ^ protected ()
+    extends StObject
+       with FeedSub {
     /**
       * Creates a new instance of FeedSub.
       * @param feed URL of feed to subscribe
@@ -32,7 +33,9 @@ object mod {
   type FeedItem = Record[String, js.Any]
   
   @js.native
-  trait FeedSub extends TypedEventEmitter[FeedSubEvents] {
+  trait FeedSub
+    extends StObject
+       with TypedEventEmitter[FeedSubEvents] {
     
     /**
       * Options that were passed to the constructor along with any defaults are kept here.
@@ -59,18 +62,17 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait FeedSubEvents extends StObject {
     
     // Emitted when there is an error downloading or parsing the feed.
     // Not emitted if callback is given for read or readInterval.
-    def error(error: Error): Unit = js.native
+    def error(error: Error): Unit
     
     // Emitted whenever there is a new item.
-    def item(item: FeedItem): Unit = js.native
+    def item(item: FeedItem): Unit
     
     // Emits all new items from one request in one array.
-    def items(items: js.Array[FeedItem]): Unit = js.native
+    def items(items: js.Array[FeedItem]): Unit
   }
   object FeedSubEvents {
     
@@ -94,46 +96,45 @@ object mod {
     }
   }
   
-  @js.native
   trait FeedSubOptions extends StObject {
     
     // If true, calls `reader.start()` when initialized. [default: false]
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
     // Specify exactly what days to skip, ex: ['Saturday', 'Sunday']. [default: []]
-    var daysToSkip: js.UndefOr[js.Array[String]] = js.native
+    var daysToSkip: js.UndefOr[js.Array[String]] = js.undefined
     
     // Emits items on the very first request.
     // After which, it should consider those items read. [default: false]
-    var emitOnStart: js.UndefOr[Boolean] = js.native
+    var emitOnStart: js.UndefOr[Boolean] = js.undefined
     
     // Some feeds contain a `ttl` tag that specify the
     // number of minutes to cache the feed.
     // Setting this to true will ignore that. [default: false]
-    var forceInterval: js.UndefOr[Boolean] = js.native
+    var forceInterval: js.UndefOr[Boolean] = js.undefined
     
     // If you'd like to specify exactly what hours to skip. [default: []]
-    var hoursToSkip: js.UndefOr[js.Array[Double]] = js.native
+    var hoursToSkip: js.UndefOr[js.Array[Double]] = js.undefined
     
     // Number of minutes to wait between checking the feed for new items. [default: 10]
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     // Keeps track of last date of the feed. [default: null]
-    var lastDate: js.UndefOr[Double] = js.native
+    var lastDate: js.UndefOr[Double] = js.undefined
     
     // Maximum size of `history` array. [default: 10]
-    var maxHistory: js.UndefOr[Double] = js.native
+    var maxHistory: js.UndefOr[Double] = js.undefined
     
     // Options object passed to [miniget](https://github.com/fent/node-miniget). [default: {}]
-    var requestOpts: js.UndefOr[RequestOptions] = js.native
+    var requestOpts: js.UndefOr[RequestOptions] = js.undefined
     
     // Same as `skipHours`, but with days. [default: false]
-    var skipDays: js.UndefOr[Boolean] = js.native
+    var skipDays: js.UndefOr[Boolean] = js.undefined
     
     // Some feeds have a `skipHours` tag with a list of
     // hours in which the feed should not be read.
     // if this is set to true and the feed has that tag, it obeys that rule [default: false]
-    var skipHours: js.UndefOr[Boolean] = js.native
+    var skipHours: js.UndefOr[Boolean] = js.undefined
   }
   object FeedSubOptions {
     

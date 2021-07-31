@@ -2,13 +2,11 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for `BindDeviceToGateway`.
   */
-@js.native
 trait SchemaBindDeviceToGatewayRequest extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaBindDeviceToGatewayRequest extends StObject {
     * `device_id` can be either the device numeric ID or the user-defined
     * device identifier.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The value of `gateway_id` can be either the device numeric ID or the
     * user-defined device identifier.
     */
-  var gatewayId: js.UndefOr[String] = js.native
+  var gatewayId: js.UndefOr[String] = js.undefined
 }
 object SchemaBindDeviceToGatewayRequest {
   

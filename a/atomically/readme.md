@@ -10,9 +10,9 @@ Read and write files atomically and reliably.
 | ------------------ | :-------------: |
 | Full name          | atomically |
 | Keywords           | atomic, read, write, file, reliable |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 153652 |
+| # releases         | 12 |
+| # dependents       | 7 |
+| # downloads        | 1234532 |
 | # stars            | 0 |
 
 ## Links

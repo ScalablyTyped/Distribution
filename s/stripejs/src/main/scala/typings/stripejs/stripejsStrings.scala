@@ -7,7 +7,6 @@ import typings.stripejs.paymentMod.completeStatus
 import typings.stripejs.sourceMod.paymentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stripejsStrings {
@@ -68,17 +67,23 @@ object stripejsStrings {
   def account: account = "account".asInstanceOf[account]
   
   @js.native
-  sealed trait ach_credit_transfer extends paymentOptions
+  sealed trait ach_credit_transfer
+    extends StObject
+       with paymentOptions
   @scala.inline
   def ach_credit_transfer: ach_credit_transfer = "ach_credit_transfer".asInstanceOf[ach_credit_transfer]
   
   @js.native
-  sealed trait ach_debit extends paymentOptions
+  sealed trait ach_debit
+    extends StObject
+       with paymentOptions
   @scala.inline
   def ach_debit: ach_debit = "ach_debit".asInstanceOf[ach_debit]
   
   @js.native
-  sealed trait alipay extends paymentOptions
+  sealed trait alipay
+    extends StObject
+       with paymentOptions
   @scala.inline
   def alipay: alipay = "alipay".asInstanceOf[alipay]
   
@@ -88,12 +93,16 @@ object stripejsStrings {
   def android_pay: android_pay = "android_pay".asInstanceOf[android_pay]
   
   @js.native
-  sealed trait api_connection_error extends errorType
+  sealed trait api_connection_error
+    extends StObject
+       with errorType
   @scala.inline
   def api_connection_error: api_connection_error = "api_connection_error".asInstanceOf[api_connection_error]
   
   @js.native
-  sealed trait api_error extends errorType
+  sealed trait api_error
+    extends StObject
+       with errorType
   @scala.inline
   def api_error: api_error = "api_error".asInstanceOf[api_error]
   
@@ -108,7 +117,9 @@ object stripejsStrings {
   def attempts_remaining: attempts_remaining = "attempts_remaining".asInstanceOf[attempts_remaining]
   
   @js.native
-  sealed trait authentication_error extends errorType
+  sealed trait authentication_error
+    extends StObject
+       with errorType
   @scala.inline
   def authentication_error: authentication_error = "authentication_error".asInstanceOf[authentication_error]
   
@@ -118,7 +129,9 @@ object stripejsStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bancontact extends paymentOptions
+  sealed trait bancontact
+    extends StObject
+       with paymentOptions
   @scala.inline
   def bancontact: bancontact = "bancontact".asInstanceOf[bancontact]
   
@@ -159,33 +172,44 @@ object stripejsStrings {
   
   @js.native
   sealed trait card
-    extends ElementType
+    extends StObject
+       with ElementType
        with paymentOptions
   @scala.inline
   def card: card = "card".asInstanceOf[card]
   
   @js.native
-  sealed trait cardCvc extends ElementType
+  sealed trait cardCvc
+    extends StObject
+       with ElementType
   @scala.inline
   def cardCvc: cardCvc = "cardCvc".asInstanceOf[cardCvc]
   
   @js.native
-  sealed trait cardExpiry extends ElementType
+  sealed trait cardExpiry
+    extends StObject
+       with ElementType
   @scala.inline
   def cardExpiry: cardExpiry = "cardExpiry".asInstanceOf[cardExpiry]
   
   @js.native
-  sealed trait cardNumber extends ElementType
+  sealed trait cardNumber
+    extends StObject
+       with ElementType
   @scala.inline
   def cardNumber: cardNumber = "cardNumber".asInstanceOf[cardNumber]
   
   @js.native
-  sealed trait card_error extends errorType
+  sealed trait card_error
+    extends StObject
+       with errorType
   @scala.inline
   def card_error: card_error = "card_error".asInstanceOf[card_error]
   
   @js.native
-  sealed trait card_present extends paymentOptions
+  sealed trait card_present
+    extends StObject
+       with paymentOptions
   @scala.inline
   def card_present: card_present = "card_present".asInstanceOf[card_present]
   
@@ -265,7 +289,9 @@ object stripejsStrings {
   def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait eps extends paymentOptions
+  sealed trait eps
+    extends StObject
+       with paymentOptions
   @scala.inline
   def eps: eps = "eps".asInstanceOf[eps]
   
@@ -281,7 +307,8 @@ object stripejsStrings {
   
   @js.native
   sealed trait fail
-    extends checkStatus
+    extends StObject
+       with checkStatus
        with completeStatus
   @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
@@ -307,17 +334,23 @@ object stripejsStrings {
   def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
-  sealed trait giropay extends paymentOptions
+  sealed trait giropay
+    extends StObject
+       with paymentOptions
   @scala.inline
   def giropay: giropay = "giropay".asInstanceOf[giropay]
   
   @js.native
-  sealed trait ideal extends paymentOptions
+  sealed trait ideal
+    extends StObject
+       with paymentOptions
   @scala.inline
   def ideal: ideal = "ideal".asInstanceOf[ideal]
   
   @js.native
-  sealed trait idempotency_error extends errorType
+  sealed trait idempotency_error
+    extends StObject
+       with errorType
   @scala.inline
   def idempotency_error: idempotency_error = "idempotency_error".asInstanceOf[idempotency_error]
   
@@ -342,27 +375,37 @@ object stripejsStrings {
   def instant: instant = "instant".asInstanceOf[instant]
   
   @js.native
-  sealed trait invalid_payer_email extends completeStatus
+  sealed trait invalid_payer_email
+    extends StObject
+       with completeStatus
   @scala.inline
   def invalid_payer_email: invalid_payer_email = "invalid_payer_email".asInstanceOf[invalid_payer_email]
   
   @js.native
-  sealed trait invalid_payer_name extends completeStatus
+  sealed trait invalid_payer_name
+    extends StObject
+       with completeStatus
   @scala.inline
   def invalid_payer_name: invalid_payer_name = "invalid_payer_name".asInstanceOf[invalid_payer_name]
   
   @js.native
-  sealed trait invalid_payer_phone extends completeStatus
+  sealed trait invalid_payer_phone
+    extends StObject
+       with completeStatus
   @scala.inline
   def invalid_payer_phone: invalid_payer_phone = "invalid_payer_phone".asInstanceOf[invalid_payer_phone]
   
   @js.native
-  sealed trait invalid_request_error extends errorType
+  sealed trait invalid_request_error
+    extends StObject
+       with errorType
   @scala.inline
   def invalid_request_error: invalid_request_error = "invalid_request_error".asInstanceOf[invalid_request_error]
   
   @js.native
-  sealed trait invalid_shipping_address extends completeStatus
+  sealed trait invalid_shipping_address
+    extends StObject
+       with completeStatus
   @scala.inline
   def invalid_shipping_address: invalid_shipping_address = "invalid_shipping_address".asInstanceOf[invalid_shipping_address]
   
@@ -402,7 +445,9 @@ object stripejsStrings {
   def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait multibanco extends paymentOptions
+  sealed trait multibanco
+    extends StObject
+       with paymentOptions
   @scala.inline
   def multibanco: multibanco = "multibanco".asInstanceOf[multibanco]
   
@@ -442,22 +487,30 @@ object stripejsStrings {
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   
   @js.native
-  sealed trait p24 extends paymentOptions
+  sealed trait p24
+    extends StObject
+       with paymentOptions
   @scala.inline
   def p24: p24 = "p24".asInstanceOf[p24]
   
   @js.native
-  sealed trait paper_check extends paymentOptions
+  sealed trait paper_check
+    extends StObject
+       with paymentOptions
   @scala.inline
   def paper_check: paper_check = "paper_check".asInstanceOf[paper_check]
   
   @js.native
-  sealed trait pass extends checkStatus
+  sealed trait pass
+    extends StObject
+       with checkStatus
   @scala.inline
   def pass: pass = "pass".asInstanceOf[pass]
   
   @js.native
-  sealed trait paymentRequestButton extends ElementType
+  sealed trait paymentRequestButton
+    extends StObject
+       with ElementType
   @scala.inline
   def paymentRequestButton: paymentRequestButton = "paymentRequestButton".asInstanceOf[paymentRequestButton]
   
@@ -472,7 +525,9 @@ object stripejsStrings {
   def pii: pii = "pii".asInstanceOf[pii]
   
   @js.native
-  sealed trait postalCode extends ElementType
+  sealed trait postalCode
+    extends StObject
+       with ElementType
   @scala.inline
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   
@@ -487,7 +542,9 @@ object stripejsStrings {
   def processing_error: processing_error = "processing_error".asInstanceOf[processing_error]
   
   @js.native
-  sealed trait rate_limit_error extends errorType
+  sealed trait rate_limit_error
+    extends StObject
+       with errorType
   @scala.inline
   def rate_limit_error: rate_limit_error = "rate_limit_error".asInstanceOf[rate_limit_error]
   
@@ -522,12 +579,16 @@ object stripejsStrings {
   def revert: revert = "revert".asInstanceOf[revert]
   
   @js.native
-  sealed trait sepa_credit_transfer extends paymentOptions
+  sealed trait sepa_credit_transfer
+    extends StObject
+       with paymentOptions
   @scala.inline
   def sepa_credit_transfer: sepa_credit_transfer = "sepa_credit_transfer".asInstanceOf[sepa_credit_transfer]
   
   @js.native
-  sealed trait sepa_debit extends paymentOptions
+  sealed trait sepa_debit
+    extends StObject
+       with paymentOptions
   @scala.inline
   def sepa_debit: sepa_debit = "sepa_debit".asInstanceOf[sepa_debit]
   
@@ -547,7 +608,9 @@ object stripejsStrings {
   def single_use: single_use = "single_use".asInstanceOf[single_use]
   
   @js.native
-  sealed trait sofort extends paymentOptions
+  sealed trait sofort
+    extends StObject
+       with paymentOptions
   @scala.inline
   def sofort: sofort = "sofort".asInstanceOf[sofort]
   
@@ -572,7 +635,9 @@ object stripejsStrings {
   def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
   
   @js.native
-  sealed trait success extends completeStatus
+  sealed trait success
+    extends StObject
+       with completeStatus
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
@@ -582,7 +647,9 @@ object stripejsStrings {
   def sv: sv = "sv".asInstanceOf[sv]
   
   @js.native
-  sealed trait three_d_secure extends paymentOptions
+  sealed trait three_d_secure
+    extends StObject
+       with paymentOptions
   @scala.inline
   def three_d_secure: three_d_secure = "three_d_secure".asInstanceOf[three_d_secure]
   
@@ -592,12 +659,16 @@ object stripejsStrings {
   def token: token = "token".asInstanceOf[token]
   
   @js.native
-  sealed trait unavailable extends checkStatus
+  sealed trait unavailable
+    extends StObject
+       with checkStatus
   @scala.inline
   def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   
   @js.native
-  sealed trait unchecked extends checkStatus
+  sealed trait unchecked
+    extends StObject
+       with checkStatus
   @scala.inline
   def unchecked: unchecked = "unchecked".asInstanceOf[unchecked]
   

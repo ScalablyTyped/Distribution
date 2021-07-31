@@ -2,17 +2,15 @@ package typings.nodeHueApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScene extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var lights: js.Array[Double] = js.native
+  var lights: js.Array[Double]
   
-  var name: String = js.native
+  var name: String
 }
 object IScene {
   

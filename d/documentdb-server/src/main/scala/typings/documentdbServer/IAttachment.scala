@@ -4,17 +4,17 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAttachment extends Object {
+trait IAttachment
+  extends StObject
+     with Object {
   
   /** MIME contentType of the attachment */
-  var contentType: String = js.native
+  var contentType: String
   
   /** media link associated with the attachment content */
-  var media: String = js.native
+  var media: String
 }
 object IAttachment {
   

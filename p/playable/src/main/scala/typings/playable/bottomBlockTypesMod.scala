@@ -6,7 +6,6 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bottomBlockTypesMod {
@@ -62,38 +61,37 @@ object bottomBlockTypesMod {
     def showVolumeControl(): Unit = js.native
   }
   
-  @js.native
   trait IBottomBlockAPI extends StObject {
     
-    var hideDownloadButton: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideDownloadButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hideFullScreenControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideFullScreenControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hideLogo: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideLogo: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hidePlayControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var hidePlayControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hideProgressControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideProgressControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hideTimeControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideTimeControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hideVolumeControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideVolumeControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setAlwaysShowLogo: js.UndefOr[js.Function1[/* flag */ Boolean, Unit]] = js.native
+    var setAlwaysShowLogo: js.UndefOr[js.Function1[/* flag */ Boolean, Unit]] = js.undefined
     
-    var showDownloadButton: js.UndefOr[js.Function0[Unit]] = js.native
+    var showDownloadButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showFullScreenControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var showFullScreenControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showLogo: js.UndefOr[js.Function0[Unit]] = js.native
+    var showLogo: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showPlayControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var showPlayControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showProgressControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var showProgressControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showTimeControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var showTimeControl: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showVolumeControl: js.UndefOr[js.Function0[Unit]] = js.native
+    var showVolumeControl: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IBottomBlockAPI {
     
@@ -198,12 +196,11 @@ object bottomBlockTypesMod {
     }
   }
   
-  @js.native
   trait IBottomBlockViewCallbacks extends StObject {
     
-    var onBlockMouseMove: EventListenerOrEventListenerObject = js.native
+    var onBlockMouseMove: EventListenerOrEventListenerObject
     
-    var onBlockMouseOut: EventListenerOrEventListenerObject = js.native
+    var onBlockMouseOut: EventListenerOrEventListenerObject
   }
   object IBottomBlockViewCallbacks {
     
@@ -233,12 +230,11 @@ object bottomBlockTypesMod {
     }
   }
   
-  @js.native
   trait IBottomBlockViewConfig extends StObject {
     
-    var callbacks: IBottomBlockViewCallbacks = js.native
+    var callbacks: IBottomBlockViewCallbacks
     
-    var elements: IBottomBlockViewElements = js.native
+    var elements: IBottomBlockViewElements
   }
   object IBottomBlockViewConfig {
     
@@ -259,24 +255,23 @@ object bottomBlockTypesMod {
     }
   }
   
-  @js.native
   trait IBottomBlockViewElements extends StObject {
     
-    var download: HTMLElement = js.native
+    var download: HTMLElement
     
-    var fullScreen: HTMLElement = js.native
+    var fullScreen: HTMLElement
     
-    var logo: HTMLElement = js.native
+    var logo: HTMLElement
     
-    var pictureInPicture: HTMLElement = js.native
+    var pictureInPicture: HTMLElement
     
-    var play: HTMLElement = js.native
+    var play: HTMLElement
     
-    var progress: HTMLElement = js.native
+    var progress: HTMLElement
     
-    var time: HTMLElement = js.native
+    var time: HTMLElement
     
-    var volume: HTMLElement = js.native
+    var volume: HTMLElement
   }
   object IBottomBlockViewElements {
     
@@ -324,52 +319,51 @@ object bottomBlockTypesMod {
     }
   }
   
-  @js.native
   trait IBottomBlockViewStyles extends StObject {
     
-    var activated: String = js.native
+    var activated: String
     
-    var additionalButton: String = js.native
+    var additionalButton: String
     
-    var bottomBlock: String = js.native
+    var bottomBlock: String
     
-    var controlsContainerLeft: String = js.native
+    var controlsContainerLeft: String
     
-    var controlsContainerRight: String = js.native
+    var controlsContainerRight: String
     
-    var downloadButtonHidden: String = js.native
+    var downloadButtonHidden: String
     
-    var elementsContainer: String = js.native
+    var elementsContainer: String
     
-    var fullScreenContainer: String = js.native
+    var fullScreenContainer: String
     
-    var fullScreenControlHidden: String = js.native
+    var fullScreenControlHidden: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var logoContainer: String = js.native
+    var logoContainer: String
     
-    var logoHidden: String = js.native
+    var logoHidden: String
     
-    var pictureInPictureButtonHidden: String = js.native
+    var pictureInPictureButtonHidden: String
     
-    var playContainer: String = js.native
+    var playContainer: String
     
-    var playControlHidden: String = js.native
+    var playControlHidden: String
     
-    var progressBarContainer: String = js.native
+    var progressBarContainer: String
     
-    var progressControlHidden: String = js.native
+    var progressControlHidden: String
     
-    var showLogoAlways: String = js.native
+    var showLogoAlways: String
     
-    var timeContainer: String = js.native
+    var timeContainer: String
     
-    var timeControlHidden: String = js.native
+    var timeControlHidden: String
     
-    var volumeContainer: String = js.native
+    var volumeContainer: String
     
-    var volumeControlHidden: String = js.native
+    var volumeControlHidden: String
   }
   object IBottomBlockViewStyles {
     

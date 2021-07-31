@@ -2,30 +2,28 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartTextDetectionRequest extends StObject {
   
   /**
     * Idempotent token used to identify the start request. If you use the same token with multiple StartTextDetection requests, the same JobId is returned. Use ClientRequestToken to prevent the same job from being accidentaly started more than once.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.rekognitionMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.rekognitionMod.ClientRequestToken] = js.undefined
   
   /**
     * Optional parameters that let you set criteria the text must meet to be included in your response.
     */
-  var Filters: js.UndefOr[StartTextDetectionFilters] = js.native
+  var Filters: js.UndefOr[StartTextDetectionFilters] = js.undefined
   
   /**
     * An identifier returned in the completion status published by your Amazon Simple Notification Service topic. For example, you can use JobTag to group related jobs and identify them in the completion notification.
     */
-  var JobTag: js.UndefOr[typings.awsSdk.rekognitionMod.JobTag] = js.native
+  var JobTag: js.UndefOr[typings.awsSdk.rekognitionMod.JobTag] = js.undefined
   
-  var NotificationChannel: js.UndefOr[typings.awsSdk.rekognitionMod.NotificationChannel] = js.native
+  var NotificationChannel: js.UndefOr[typings.awsSdk.rekognitionMod.NotificationChannel] = js.undefined
   
-  var Video: typings.awsSdk.rekognitionMod.Video = js.native
+  var Video: typings.awsSdk.rekognitionMod.Video
 }
 object StartTextDetectionRequest {
   

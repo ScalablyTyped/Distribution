@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an AudioConfig. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new AudioConfig.
   * @param [properties] Properties to set
   */
-class AudioConfig () extends IAudioConfig {
+class AudioConfig ()
+  extends StObject
+     with IAudioConfig {
   def this(properties: IAudioConfig) = this()
   
   /** AudioConfig audioEncoding. */
@@ -52,18 +53,20 @@ class AudioConfig () extends IAudioConfig {
 }
 object AudioConfig {
   
+  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new AudioConfig instance using the specified properties.
     * @param [properties] Properties to set
     * @returns AudioConfig instance
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.create")
-  @js.native
-  def create(): AudioConfig = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.create")
-  @js.native
-  def create(properties: IAudioConfig): AudioConfig = js.native
+  @scala.inline
+  def create(): AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AudioConfig]
+  @scala.inline
+  def create(properties: IAudioConfig): AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[AudioConfig]
   
   /**
     * Decodes an AudioConfig message from the specified reader or buffer.
@@ -74,18 +77,14 @@ object AudioConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.decode")
-  @js.native
-  def decode(reader: Reader): AudioConfig = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): AudioConfig = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array): AudioConfig = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): AudioConfig = js.native
+  @scala.inline
+  def decode(reader: Reader): AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AudioConfig]
+  @scala.inline
+  def decode(reader: Reader, length: Double): AudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AudioConfig]
+  @scala.inline
+  def decode(reader: Uint8Array): AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AudioConfig]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): AudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AudioConfig]
   
   /**
     * Decodes an AudioConfig message from the specified reader or buffer, length delimited.
@@ -95,12 +94,10 @@ object AudioConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): AudioConfig = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): AudioConfig = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AudioConfig]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AudioConfig]
   
   /**
     * Encodes the specified AudioConfig message. Does not implicitly {@link google.cloud.texttospeech.v1.AudioConfig.verify|verify} messages.
@@ -109,12 +106,10 @@ object AudioConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.encode")
-  @js.native
-  def encode(message: IAudioConfig): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.encode")
-  @js.native
-  def encode(message: IAudioConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified AudioConfig message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.AudioConfig.verify|verify} messages.
@@ -123,12 +118,10 @@ object AudioConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAudioConfig): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAudioConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an AudioConfig message from a plain object. Also converts values to their respective internal types.
@@ -136,9 +129,8 @@ object AudioConfig {
     * @returns AudioConfig
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): AudioConfig = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AudioConfig]
   
   /**
     * Creates a plain object from an AudioConfig message. Also converts values to other types if specified.
@@ -147,12 +139,10 @@ object AudioConfig {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.toObject")
-  @js.native
-  def toObject(message: AudioConfig): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.toObject")
-  @js.native
-  def toObject(message: AudioConfig, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: AudioConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: AudioConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an AudioConfig message.
@@ -160,7 +150,6 @@ object AudioConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1.AudioConfig.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

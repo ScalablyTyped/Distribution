@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceConnectorSettings extends StObject {
   
   /**
     * The Amazon S3 bucket designated for call detail record storage.
     */
-  var CdrBucket: js.UndefOr[String] = js.native
+  var CdrBucket: js.UndefOr[String] = js.undefined
 }
 object VoiceConnectorSettings {
   

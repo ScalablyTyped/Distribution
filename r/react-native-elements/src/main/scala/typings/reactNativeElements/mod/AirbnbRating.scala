@@ -4,7 +4,6 @@ import typings.reactNativeElements.anon.ReadonlyAirbnbRatingProps
 import typings.reactNativeRatings.mod.AirbnbRatingProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-elements", "AirbnbRating")

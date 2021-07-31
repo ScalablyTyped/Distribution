@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,41 +29,40 @@ object mod {
     def execute(
       db: js.Any,
       query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[_], Unit]
+      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit]
     ): js.Any = js.native
     def execute(
       db: js.Any,
       query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[_], Unit],
+      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit],
       properties: js.Any
     ): js.Any = js.native
     
     def executeMgmt(
       db: js.Any,
       query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[_], Unit],
+      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit],
       properties: js.Any
     ): js.Any = js.native
     
     def executeQuery(
       db: js.Any,
       query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[_], Unit],
+      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit],
       properties: js.Any
     ): js.Any = js.native
   }
   object Client {
     
-    @js.native
     trait KustoResponseDataSet[T] extends StObject {
       
-      var primaryResults: js.Array[KustoResultTable[T]] = js.native
+      var primaryResults: js.Array[KustoResultTable[T]]
       
-      var statusTable: KustoResultTable[T] = js.native
+      var statusTable: KustoResultTable[T]
       
-      var tableNames: js.Array[String] = js.native
+      var tableNames: js.Array[String]
       
-      var tables: js.Array[KustoResultTable[T]] = js.native
+      var tables: js.Array[KustoResultTable[T]]
     }
     object KustoResponseDataSet {
       
@@ -80,7 +78,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class KustoResponseDataSetMutableBuilder[Self <: KustoResponseDataSet[_], T] (val x: Self with KustoResponseDataSet[T]) extends AnyVal {
+      implicit class KustoResponseDataSetMutableBuilder[Self <: KustoResponseDataSet[?], T] (val x: Self & KustoResponseDataSet[T]) extends AnyVal {
         
         @scala.inline
         def setPrimaryResults(value: js.Array[KustoResultTable[T]]): Self = StObject.set(x, "primaryResults", value.asInstanceOf[js.Any])
@@ -105,16 +103,17 @@ object mod {
       }
     }
     
-    @js.native
-    trait KustoResponseDataSetV2[T] extends KustoResponseDataSet[T] {
+    trait KustoResponseDataSetV2[T]
+      extends StObject
+         with KustoResponseDataSet[T] {
       
-      def getCridColumn(): String = js.native
+      def getCridColumn(): String
       
-      def getErrorColumn(): String = js.native
+      def getErrorColumn(): String
       
-      def getStatusColumn(): String = js.native
+      def getStatusColumn(): String
       
-      var version: String = js.native
+      var version: String
     }
     object KustoResponseDataSetV2 {
       
@@ -134,7 +133,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class KustoResponseDataSetV2MutableBuilder[Self <: KustoResponseDataSetV2[_], T] (val x: Self with KustoResponseDataSetV2[T]) extends AnyVal {
+      implicit class KustoResponseDataSetV2MutableBuilder[Self <: KustoResponseDataSetV2[?], T] (val x: Self & KustoResponseDataSetV2[T]) extends AnyVal {
         
         @scala.inline
         def setGetCridColumn(value: () => String): Self = StObject.set(x, "getCridColumn", js.Any.fromFunction0(value))
@@ -152,28 +151,27 @@ object mod {
     
     type KustoResultRow[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: T[P]}
-      */ typings.azureKustoData.azureKustoDataStrings.KustoResultRow with TopLevel[T]
+      */ typings.azureKustoData.azureKustoDataStrings.KustoResultRow & TopLevel[T]
     
-    @js.native
     trait KustoResultTable[T] extends StObject {
       
-      var columns: js.Array[_] = js.native
+      var columns: js.Array[js.Any]
       
-      var id: String = js.native
+      var id: String
       
-      var kind: String = js.native
+      var kind: String
       
-      var name: String = js.native
+      var name: String
       
-      def rows(): IterableIterator[KustoResultRow[T]] = js.native
+      def rows(): IterableIterator[KustoResultRow[T]]
       
-      def toJson(): js.Any = js.native
+      def toJson(): js.Any
     }
     object KustoResultTable {
       
       @scala.inline
       def apply[T](
-        columns: js.Array[_],
+        columns: js.Array[js.Any],
         id: String,
         kind: String,
         name: String,
@@ -185,10 +183,10 @@ object mod {
       }
       
       @scala.inline
-      implicit class KustoResultTableMutableBuilder[Self <: KustoResultTable[_], T] (val x: Self with KustoResultTable[T]) extends AnyVal {
+      implicit class KustoResultTableMutableBuilder[Self <: KustoResultTable[?], T] (val x: Self & KustoResultTable[T]) extends AnyVal {
         
         @scala.inline
-        def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
@@ -215,8 +213,8 @@ object mod {
   @js.native
   class ClientRequestProperties () extends StObject {
     def this(options: js.Any) = this()
-    def this(options: js.UndefOr[scala.Nothing], parameters: js.Any) = this()
     def this(options: js.Any, parameters: js.Any) = this()
+    def this(options: Unit, parameters: js.Any) = this()
     
     def clearOptions(): Unit = js.native
     
@@ -261,49 +259,43 @@ object mod {
   /* static members */
   object KustoConnectionStringBuilder {
     
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadApplicationCertificateAuthentication")
+    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def withAadApplicationCertificateAuthentication(
       connectionString: String,
       aadAppId: String,
       certificate: String,
       thumbprint: String,
       authorityId: String
-    ): KustoConnectionStringBuilder = js.native
+    ): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], thumbprint.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadApplicationKeyAuthentication")
-    @js.native
-    def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String, authorityId: String): KustoConnectionStringBuilder = js.native
+    @scala.inline
+    def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationKeyAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadDeviceAuthentication")
-    @js.native
-    def withAadDeviceAuthentication(connectionString: String, authorityId: String): KustoConnectionStringBuilder = js.native
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadDeviceAuthentication")
-    @js.native
+    @scala.inline
+    def withAadDeviceAuthentication(connectionString: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    @scala.inline
     def withAadDeviceAuthentication(
       connectionString: String,
       authorityId: String,
       authCallback: js.Function1[/* tokenReponse */ UserCodeInfo, Unit]
-    ): KustoConnectionStringBuilder = js.native
+    ): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], authCallback.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadManagedIdentities")
-    @js.native
-    def withAadManagedIdentities(connectionString: String): KustoConnectionStringBuilder = js.native
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadManagedIdentities")
-    @js.native
-    def withAadManagedIdentities(connectionString: String, msiEndpoint: js.UndefOr[scala.Nothing], clientId: String): KustoConnectionStringBuilder = js.native
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadManagedIdentities")
-    @js.native
-    def withAadManagedIdentities(connectionString: String, msiEndpoint: String): KustoConnectionStringBuilder = js.native
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadManagedIdentities")
-    @js.native
-    def withAadManagedIdentities(connectionString: String, msiEndpoint: String, clientId: String): KustoConnectionStringBuilder = js.native
+    @scala.inline
+    def withAadManagedIdentities(connectionString: String): KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any]).asInstanceOf[KustoConnectionStringBuilder]
+    @scala.inline
+    def withAadManagedIdentities(connectionString: String, msiEndpoint: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    @scala.inline
+    def withAadManagedIdentities(connectionString: String, msiEndpoint: String, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    @scala.inline
+    def withAadManagedIdentities(connectionString: String, msiEndpoint: Unit, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
     
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadUserPasswordAuthentication")
-    @js.native
-    def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String): KustoConnectionStringBuilder = js.native
-    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadUserPasswordAuthentication")
-    @js.native
-    def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String, authorityId: js.Any): KustoConnectionStringBuilder = js.native
+    @scala.inline
+    def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    @scala.inline
+    def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String, authorityId: js.Any): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
   }
 }

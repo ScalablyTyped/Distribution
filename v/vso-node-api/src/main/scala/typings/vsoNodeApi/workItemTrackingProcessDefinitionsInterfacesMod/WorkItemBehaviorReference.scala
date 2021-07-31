@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemBehaviorReference extends StObject {
   
   /**
     * The ID of the reference behavior
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The url of the reference behavior
     */
-  var url: String = js.native
+  var url: String
 }
 object WorkItemBehaviorReference {
   

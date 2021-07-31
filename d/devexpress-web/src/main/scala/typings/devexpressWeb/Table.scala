@@ -2,44 +2,42 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a table in the document.
   */
-@js.native
 trait Table extends StObject {
   
   /**
     * Gets an index of the table.
     */
-  val index: Double = js.native
+  val index: Double
   
   /**
     * Gets the text buffer interval occupied by the current table element.
     */
-  val interval: Interval = js.native
+  val interval: Interval
   
   /**
     * Gets the table length in characters.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Provides access to a collection of table rows.
     */
-  val rows: js.Array[TableRow] = js.native
+  val rows: js.Array[TableRow]
   
   /**
     * Gets the table's start position in the document.
     */
-  val start: Double = js.native
+  val start: Double
   
   /**
     * Gets the name of the style applied to the table (see StyleBase.name).
     */
-  val styleName: String = js.native
+  val styleName: String
 }
 object Table {
   

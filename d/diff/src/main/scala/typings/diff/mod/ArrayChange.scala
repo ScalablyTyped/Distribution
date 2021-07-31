@@ -2,19 +2,17 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayChange[T] extends StObject {
   
-  var added: js.UndefOr[Boolean] = js.native
+  var added: js.UndefOr[Boolean] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var removed: js.UndefOr[Boolean] = js.native
+  var removed: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.Array[T] = js.native
+  var value: js.Array[T]
 }
 object ArrayChange {
   
@@ -25,7 +23,7 @@ object ArrayChange {
   }
   
   @scala.inline
-  implicit class ArrayChangeMutableBuilder[Self <: ArrayChange[_], T] (val x: Self with ArrayChange[T]) extends AnyVal {
+  implicit class ArrayChangeMutableBuilder[Self <: ArrayChange[?], T] (val x: Self & ArrayChange[T]) extends AnyVal {
     
     @scala.inline
     def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])

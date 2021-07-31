@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,11 +23,15 @@ object ValueFormat extends StObject {
     * Return formatted data.
     */
   @js.native
-  sealed trait Formatted extends ValueFormat
+  sealed trait Formatted
+    extends StObject
+       with ValueFormat
   
   /**
     * Return unformatted data.
     */
   @js.native
-  sealed trait Unformatted extends ValueFormat
+  sealed trait Unformatted
+    extends StObject
+       with ValueFormat
 }

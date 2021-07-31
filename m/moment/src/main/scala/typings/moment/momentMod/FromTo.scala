@@ -2,15 +2,15 @@ package typings.moment.momentMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FromTo extends _DurationInputArg1 {
+trait FromTo
+  extends StObject
+     with _DurationInputArg1 {
   
-  var from: MomentInput = js.native
+  var from: MomentInput
   
-  var to: MomentInput = js.native
+  var to: MomentInput
 }
 object FromTo {
   

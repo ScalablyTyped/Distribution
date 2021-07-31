@@ -2,33 +2,31 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemediationExecutionStatus extends StObject {
   
   /**
     * Start time when the remediation was executed.
     */
-  var InvocationTime: js.UndefOr[Date] = js.native
+  var InvocationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time when the remediation execution was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Date] = js.native
+  var LastUpdatedTime: js.UndefOr[Date] = js.undefined
   
-  var ResourceKey: js.UndefOr[typings.awsSdk.configserviceMod.ResourceKey] = js.native
+  var ResourceKey: js.UndefOr[typings.awsSdk.configserviceMod.ResourceKey] = js.undefined
   
   /**
     * ENUM of the values.
     */
-  var State: js.UndefOr[RemediationExecutionState] = js.native
+  var State: js.UndefOr[RemediationExecutionState] = js.undefined
   
   /**
     * Details of every step.
     */
-  var StepDetails: js.UndefOr[RemediationExecutionSteps] = js.native
+  var StepDetails: js.UndefOr[RemediationExecutionSteps] = js.undefined
 }
 object RemediationExecutionStatus {
   

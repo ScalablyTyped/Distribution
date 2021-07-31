@@ -2,16 +2,14 @@ package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest extends StObject {
   
   /**
     * The resource name of the destination product that is copied to.
     */
-  var destinationProductName: js.UndefOr[String] = js.native
+  var destinationProductName: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest {
   

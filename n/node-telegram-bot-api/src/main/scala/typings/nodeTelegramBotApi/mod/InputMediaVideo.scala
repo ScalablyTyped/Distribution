@@ -3,30 +3,29 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputMediaVideo
-  extends InputMediaBase
+  extends StObject
+     with InputMediaBase
      with InputMedia {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var supports_streaming: js.UndefOr[Boolean] = js.native
+  var supports_streaming: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: video = js.native
+  var `type`: video
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object InputMediaVideo {
   
   @scala.inline
-  def apply(media: String, `type`: video): InputMediaVideo = {
+  def apply(media: String): InputMediaVideo = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[InputMediaVideo]
   }
   

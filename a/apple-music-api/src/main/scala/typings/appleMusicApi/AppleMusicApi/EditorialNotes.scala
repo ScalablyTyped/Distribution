@@ -2,16 +2,14 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/editorialnotes
-@js.native
 trait EditorialNotes extends StObject {
   
-  var short: String = js.native
+  var short: String
   
-  var standard: String = js.native
+  var standard: String
 }
 object EditorialNotes {
   

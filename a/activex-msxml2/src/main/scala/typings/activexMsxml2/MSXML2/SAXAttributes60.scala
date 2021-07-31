@@ -2,27 +2,25 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SAX Attributes 6.0 */
-@js.native
 trait SAXAttributes60 extends StObject {
   
   @JSName("MSXML2.SAXAttributes60_typekey")
-  var MSXML2DotSAXAttributes60_typekey: SAXAttributes60 = js.native
+  var MSXML2DotSAXAttributes60_typekey: SAXAttributes60
   
   /** Add an attribute to the end of the list. */
-  def addAttribute(strURI: String, strLocalName: String, strQName: String, strType: String, strValue: String): Unit = js.native
+  def addAttribute(strURI: String, strLocalName: String, strQName: String, strType: String, strValue: String): Unit
   
   /** Add an attribute, whose value is equal to the indexed attribute in the input attributes object, to the end of the list. */
-  def addAttributeFromIndex(varAtts: js.Any, nIndex: Double): Unit = js.native
+  def addAttributeFromIndex(varAtts: js.Any, nIndex: Double): Unit
   
   /** Clear the attribute list for reuse. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /** Remove an attribute from the list. */
-  def removeAttribute(nIndex: Double): Unit = js.native
+  def removeAttribute(nIndex: Double): Unit
   
   /** Set an attribute in the list. */
   def setAttribute(
@@ -32,25 +30,25 @@ trait SAXAttributes60 extends StObject {
     strQName: String,
     strType: String,
     strValue: String
-  ): Unit = js.native
+  ): Unit
   
   /** Copy an entire Attributes object. */
-  def setAttributes(varAtts: js.Any): Unit = js.native
+  def setAttributes(varAtts: js.Any): Unit
   
   /** Set the local name of a specific attribute. */
-  def setLocalName(nIndex: Double, strLocalName: String): Unit = js.native
+  def setLocalName(nIndex: Double, strLocalName: String): Unit
   
   /** Set the qualified name of a specific attribute. */
-  def setQName(nIndex: Double, strQName: String): Unit = js.native
+  def setQName(nIndex: Double, strQName: String): Unit
   
   /** Set the type of a specific attribute. */
-  def setType(nIndex: Double, strType: String): Unit = js.native
+  def setType(nIndex: Double, strType: String): Unit
   
   /** Set the Namespace URI of a specific attribute. */
-  def setURI(nIndex: Double, strURI: String): Unit = js.native
+  def setURI(nIndex: Double, strURI: String): Unit
   
   /** Set the value of a specific attribute. */
-  def setValue(nIndex: Double, strValue: String): Unit = js.native
+  def setValue(nIndex: Double, strValue: String): Unit
 }
 object SAXAttributes60 {
   

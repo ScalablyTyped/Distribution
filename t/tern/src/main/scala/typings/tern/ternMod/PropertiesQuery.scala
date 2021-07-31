@@ -3,30 +3,29 @@ package typings.tern.ternMod
 import typings.tern.ternStrings.properties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertiesQuery
-  extends BaseQuery
+  extends StObject
+     with BaseQuery
      with Query {
   
   /** Causes the server to only return properties that start with the given string. */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /** Whether the result should be sorted. Default `true` */
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
   
   /** Get a list of all known object property names (for any object). */
   @JSName("type")
-  var type_PropertiesQuery: properties = js.native
+  var type_PropertiesQuery: properties
 }
 object PropertiesQuery {
   
   @scala.inline
-  def apply(`type`: properties): PropertiesQuery = {
+  def apply(): PropertiesQuery = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("properties")
     __obj.asInstanceOf[PropertiesQuery]
   }
   

@@ -2,24 +2,22 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeshakingOptions extends StObject {
   
-  var annotations: js.UndefOr[Boolean] = js.native
+  var annotations: js.UndefOr[Boolean] = js.undefined
   
-  var moduleSideEffects: js.UndefOr[ModuleSideEffectsOption] = js.native
+  var moduleSideEffects: js.UndefOr[ModuleSideEffectsOption] = js.undefined
   
-  var propertyReadSideEffects: js.UndefOr[Boolean] = js.native
+  var propertyReadSideEffects: js.UndefOr[Boolean] = js.undefined
   
   /** @deprecated Use `moduleSideEffects` instead */
-  var pureExternalModules: js.UndefOr[PureModulesOption] = js.native
+  var pureExternalModules: js.UndefOr[PureModulesOption] = js.undefined
   
-  var tryCatchDeoptimization: js.UndefOr[Boolean] = js.native
+  var tryCatchDeoptimization: js.UndefOr[Boolean] = js.undefined
   
-  var unknownGlobalSideEffects: js.UndefOr[Boolean] = js.native
+  var unknownGlobalSideEffects: js.UndefOr[Boolean] = js.undefined
 }
 object TreeshakingOptions {
   

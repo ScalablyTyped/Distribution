@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofFilter extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Filter = js.native
+  def extend(proto: js.Object): Filter
   
   /* static member */
-  var fn: Filter = js.native
+  var fn: Filter
 }
 object TypeofFilter {
   

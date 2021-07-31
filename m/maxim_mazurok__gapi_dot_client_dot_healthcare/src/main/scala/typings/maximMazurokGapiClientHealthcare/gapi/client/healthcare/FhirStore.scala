@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FhirStore extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait FhirStore extends StObject {
     * referential integrity and fails the requests that result in inconsistent state in the FHIR store. When this field is set to true, the API skips referential integrity checks.
     * Consequently, operations that rely on references, such as GetPatientEverything, do not return all the results if broken references exist.
     */
-  var disableReferentialIntegrity: js.UndefOr[Boolean] = js.native
+  var disableReferentialIntegrity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Immutable. Whether to disable resource versioning for this FHIR store. This field can not be changed after the creation of FHIR store. If set to false, which is the default
     * behavior, all write operations cause historical versions to be recorded automatically. The historical versions can be fetched through the history APIs, but cannot be updated. If set
     * to true, no historical versions are kept. The server sends errors for attempts to read the historical versions.
     */
-  var disableResourceVersioning: js.UndefOr[Boolean] = js.native
+  var disableResourceVersioning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this FHIR store has the [updateCreate capability](https://www.hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.rest.resource.updateCreate). This
@@ -29,7 +27,7 @@ trait FhirStore extends StObject {
     * attempts to update a non-existent resource return errors. Be careful with the audit logs if client-specified resource IDs contain sensitive data such as patient identifiers, those
     * IDs are part of the FHIR resource path recorded in Cloud audit logs and Cloud Pub/Sub notifications.
     */
-  var enableUpdateCreate: js.UndefOr[Boolean] = js.native
+  var enableUpdateCreate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User-supplied key-value pairs used to organize FHIR stores. Label keys must be between 1 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes, and must conform to the
@@ -39,17 +37,17 @@ trait FhirStore extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. Resource name of the FHIR store, of the form `projects/{project_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If non-empty, publish all resource modifications of this FHIR store to this destination. The Cloud Pub/Sub message attributes contain a map with a string describing the action that
     * has triggered the notification. For example, "action":"CreateResource".
     */
-  var notificationConfig: js.UndefOr[NotificationConfig] = js.native
+  var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
   
   /**
     * A list of streaming configs that configure the destinations of streaming export for every resource mutation in this FHIR store. Each store is allowed to have up to 10 streaming
@@ -59,13 +57,13 @@ trait FhirStore extends StObject {
     * account](https://cloud.google.com/iam/docs/service-accounts). Some lag (typically on the order of dozens of seconds) is expected before the results show up in the streaming
     * destination.
     */
-  var streamConfigs: js.UndefOr[js.Array[StreamConfig]] = js.native
+  var streamConfigs: js.UndefOr[js.Array[StreamConfig]] = js.undefined
   
   /**
     * Immutable. The FHIR specification version that this FHIR store supports natively. This field is immutable after store creation. Requests are rejected if they contain FHIR resources
     * of a different version. Version is required for every FHIR store.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object FhirStore {
   
@@ -100,7 +98,7 @@ object FhirStore {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.FhirStore & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

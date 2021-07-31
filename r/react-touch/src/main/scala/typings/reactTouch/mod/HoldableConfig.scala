@@ -2,15 +2,13 @@ package typings.reactTouch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoldableConfig extends StObject {
   
-  def holdComplete(callback: js.Function0[Unit]): js.Function0[js.Function0[Unit]] = js.native
+  def holdComplete(callback: js.Function0[Unit]): js.Function0[js.Function0[Unit]]
   
-  def holdProgress(callback: js.Function0[Unit]): js.Function1[/* updateState */ js.Function1[/* holdLength */ Double, Unit], js.Function0[Unit]] = js.native
+  def holdProgress(callback: js.Function0[Unit]): js.Function1[/* updateState */ js.Function1[/* holdLength */ Double, Unit], js.Function0[Unit]]
 }
 object HoldableConfig {
   

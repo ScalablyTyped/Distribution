@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRoutingProfileResponse extends StObject {
   
   /**
     * The routing profile.
     */
-  var RoutingProfile: js.UndefOr[typings.awsSdk.connectMod.RoutingProfile] = js.native
+  var RoutingProfile: js.UndefOr[typings.awsSdk.connectMod.RoutingProfile] = js.undefined
 }
 object DescribeRoutingProfileResponse {
   

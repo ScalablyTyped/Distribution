@@ -2,16 +2,14 @@ package typings.winrtUwp.Windows.Management
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Orchestration {
   
-  @js.native
   trait CurrentAppOrchestration extends StObject {
     
     /* unmapped type */
-    var startSingleAppMode: js.Any = js.native
+    var startSingleAppMode: js.Any
   }
   object CurrentAppOrchestration {
     
@@ -29,10 +27,9 @@ object Orchestration {
     }
   }
   
-  @js.native
   trait SingleAppModeContext extends StObject {
     
-    var close: js.Any = js.native
+    var close: js.Any
   }
   object SingleAppModeContext {
     

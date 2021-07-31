@@ -2,65 +2,55 @@ package typings.reduxRouter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionCreatorsMod {
   
-  @JSImport("redux-router/lib/actionCreators", "go")
+  @JSImport("redux-router/lib/actionCreators", JSImport.Namespace)
   @js.native
-  def go(args: js.Object*): ReduxRouterAction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("redux-router/lib/actionCreators", "goBack")
-  @js.native
-  def goBack(args: js.Object*): ReduxRouterAction = js.native
+  @scala.inline
+  def go(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "goForward")
-  @js.native
-  def goForward(args: js.Object*): ReduxRouterAction = js.native
+  @scala.inline
+  def goBack(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "historyAPI")
-  @js.native
-  def historyAPI(method: js.Any): js.Function1[/* repeated */ js.Object, ReduxRouterAction] = js.native
+  @scala.inline
+  def goForward(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "initRoutes")
-  @js.native
-  def initRoutes(routes: js.Any): ReduxRouterAction = js.native
+  @scala.inline
+  def historyAPI(method: js.Any): js.Function1[/* repeated */ js.Object, ReduxRouterAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("historyAPI")(method.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Object, ReduxRouterAction]]
   
-  @JSImport("redux-router/lib/actionCreators", "push")
-  @js.native
-  def push(args: js.Object*): ReduxRouterAction = js.native
+  @scala.inline
+  def initRoutes(routes: js.Any): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("initRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "pushState")
-  @js.native
-  def pushState(args: js.Object*): ReduxRouterAction = js.native
+  @scala.inline
+  def push(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "replace")
-  @js.native
-  def replace(args: js.Object*): ReduxRouterAction = js.native
+  @scala.inline
+  def pushState(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("pushState")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "replaceRoutes")
-  @js.native
-  def replaceRoutes(routes: js.Any): ReduxRouterAction = js.native
+  @scala.inline
+  def replace(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "replaceState")
-  @js.native
-  def replaceState(args: js.Object*): ReduxRouterAction = js.native
+  @scala.inline
+  def replaceRoutes(routes: js.Any): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "routerDidChange")
-  @js.native
-  def routerDidChange(state: js.Any): ReduxRouterAction = js.native
+  @scala.inline
+  def replaceState(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceState")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @JSImport("redux-router/lib/actionCreators", "setState")
-  @js.native
-  def setState(args: js.Object*): ReduxRouterAction = js.native
+  @scala.inline
+  def routerDidChange(state: js.Any): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("routerDidChange")(state.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
   
-  @js.native
+  @scala.inline
+  def setState(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(args.asInstanceOf[js.Any]).asInstanceOf[ReduxRouterAction]
+  
   trait ReduxRouterAction extends StObject {
     
-    var payload: js.Any = js.native
+    var payload: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ReduxRouterAction {
     

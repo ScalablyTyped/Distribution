@@ -2,17 +2,15 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorNetwork extends StObject {
   
-  val regions: js.UndefOr[js.Array[VectorRegion]] = js.native
+  val regions: js.UndefOr[js.Array[VectorRegion]] = js.undefined
   
-  val segments: js.Array[VectorSegment] = js.native
+  val segments: js.Array[VectorSegment]
   
-  val vertices: js.Array[VectorVertex] = js.native
+  val vertices: js.Array[VectorVertex]
 }
 object VectorNetwork {
   

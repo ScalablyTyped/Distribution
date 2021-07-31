@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostalAddress extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait PostalAddress extends StObject {
     * the address components until it was at least partially resolved. Creating an address only containing a region_code and address_lines, and then geocoding is the recommended way to
     * handle completely unstructured addresses (as opposed to guessing which parts of the address should be localities or administrative areas).
     */
-  var addressLines: js.UndefOr[js.Array[String]] = js.native
+  var addressLines: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Highest administrative subdivision which is used for postal addresses of a country or region. For example, this can be a state, a province, an oblast, or a prefecture.
     * Specifically, for Spain this is the province and not the autonomous community (e.g. "Barcelona" and not "Catalonia"). Many countries don't use an administrative area in postal
     * addresses. E.g. in Switzerland this should be left unpopulated.
     */
-  var administrativeArea: js.UndefOr[String] = js.native
+  var administrativeArea: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. BCP-47 language code of the contents of this address (if known). This is often the UI language of the input form or is expected to match one of the languages used in the
@@ -32,43 +30,43 @@ trait PostalAddress extends StObject {
     * affect any validation or other non-formatting related operations. If this value is not known, it should be omitted (rather than specifying a possibly incorrect default). Examples:
     * "zh-Hant", "ja", "ja-Latn", "en".
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Generally refers to the city/town portion of the address. Examples: US city, IT comune, UK post town. In regions of the world where localities are not well defined or do
     * not fit into this structure well, leave locality empty and use address_lines.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /** Optional. The name of the organization at the address. */
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Postal code of the address. Not all countries use or require postal codes to be present, but where they are used, they may trigger additional validation with other parts
     * of the address (e.g. state/zip validation in the U.S.A.).
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /** Optional. The recipient at the address. This field may, under certain circumstances, contain multiline information. For example, it might contain "care of" information. */
-  var recipients: js.UndefOr[js.Array[String]] = js.native
+  var recipients: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. CLDR region code of the country/region of the address. This is never inferred and it is up to the user to ensure the value is correct. See http://cldr.unicode.org/ and
     * http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html for details. Example: "CH" for Switzerland.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /** The schema revision of the `PostalAddress`. This must be set to 0, which is the latest revision. All new revisions **must** be backward compatible with old revisions. */
-  var revision: js.UndefOr[Double] = js.native
+  var revision: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Additional, country-specific, sorting code. This is not used in most regions. Where it is used, the value is either a string like "CEDEX", optionally followed by a number
     * (e.g. "CEDEX 7"), or just a number alone, representing the "sector code" (Jamaica), "delivery area indicator" (Malawi) or "post office indicator" (e.g. Côte d'Ivoire).
     */
-  var sortingCode: js.UndefOr[String] = js.native
+  var sortingCode: js.UndefOr[String] = js.undefined
   
   /** Optional. Sublocality of the address. For example, this can be neighborhoods, boroughs, districts. */
-  var sublocality: js.UndefOr[String] = js.native
+  var sublocality: js.UndefOr[String] = js.undefined
 }
 object PostalAddress {
   

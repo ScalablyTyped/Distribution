@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceMethod extends StObject {
   
   /**
     * The type of the device, such as "button".
     */
-  var DeviceType: js.UndefOr[string] = js.native
+  var DeviceType: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the method applicable to the deviceType.
     */
-  var MethodName: js.UndefOr[string] = js.native
+  var MethodName: js.UndefOr[string] = js.undefined
 }
 object DeviceMethod {
   

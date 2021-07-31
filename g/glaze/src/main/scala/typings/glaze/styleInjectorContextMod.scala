@@ -6,25 +6,26 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleInjectorContextMod {
+  
+  @JSImport("glaze/dist-types/StyleInjectorContext", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("glaze/dist-types/StyleInjectorContext", "StyleInjectorContext")
   @js.native
   val StyleInjectorContext: Context[StyleInjector] = js.native
   
-  @JSImport("glaze/dist-types/StyleInjectorContext", "StyleInjectorProvider")
-  @js.native
-  def StyleInjectorProvider(hasChildrenInjector: StyleInjectorProviderProps): Element = js.native
+  @scala.inline
+  def StyleInjectorProvider(hasChildrenInjector: StyleInjectorProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleInjectorProvider")(hasChildrenInjector.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait StyleInjectorProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var injector: js.UndefOr[StyleInjector] = js.native
+    var injector: js.UndefOr[StyleInjector] = js.undefined
   }
   object StyleInjectorProviderProps {
     

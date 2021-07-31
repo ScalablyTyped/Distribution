@@ -2,19 +2,17 @@ package typings.xregexp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Unicode character range base interface.
   */
-@js.native
 trait UnicodeCharacterRangeBase extends StObject {
   
   /**
     * An alternate name for the character range.
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
     * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -23,7 +21,7 @@ trait UnicodeCharacterRangeBase extends StObject {
     * When this is present, it is used in combination with `bmp` in astral mode.
     * This can additionally use character classes and alternation, and should use surrogate pairs to represent astral code points.
     */
-  var astral: js.UndefOr[String] = js.native
+  var astral: js.UndefOr[String] = js.undefined
   
   /**
     * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -31,22 +29,22 @@ trait UnicodeCharacterRangeBase extends StObject {
     * When `astral` is not present, this is used BMP and astral modes.
     * When this is present, it is used in BMP mode and in combination with `astral` in astral mode.
     */
-  var bmp: js.UndefOr[String] = js.native
+  var bmp: js.UndefOr[String] = js.undefined
   
   /**
     * Can be used to avoid duplicating character data if a Unicode token is defined as the exact inverse of another token.
     */
-  var inverseOf: js.UndefOr[String] = js.native
+  var inverseOf: js.UndefOr[String] = js.undefined
   
   /**
     * This is needed when a token matches orphan high surrogates *and* uses surrogate pairs to match astral code points.
     */
-  var isBmpLast: js.UndefOr[Boolean] = js.native
+  var isBmpLast: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the character range.
     */
-  var name: String = js.native
+  var name: String
 }
 object UnicodeCharacterRangeBase {
   

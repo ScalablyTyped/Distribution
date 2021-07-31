@@ -2,7 +2,6 @@ package typings.sharepoint.SP.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object DialogResult extends StObject {
   
   /** Dialog actions completed successfully */
   @js.native
-  sealed trait OK extends DialogResult
+  sealed trait OK
+    extends StObject
+       with DialogResult
   
   /** User closed dialog, cancelling the action */
   @js.native
-  sealed trait cancel extends DialogResult
+  sealed trait cancel
+    extends StObject
+       with DialogResult
   
   /** Do not use this */
   @js.native
-  sealed trait invalid extends DialogResult
+  sealed trait invalid
+    extends StObject
+       with DialogResult
 }

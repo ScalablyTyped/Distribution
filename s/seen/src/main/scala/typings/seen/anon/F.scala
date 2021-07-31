@@ -2,15 +2,13 @@ package typings.seen.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait F extends StObject {
   
-  def f(f: js.Any): js.Any = js.native
+  def f(f: js.Any): js.Any
   
-  def v(v: js.Any): js.Any = js.native
+  def v(v: js.Any): js.Any
 }
 object F {
   

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewSummary extends StObject {
   
   /**
     * Average Rating
     */
-  var averageRating: Double = js.native
+  var averageRating: Double
   
   /**
     * Count of total ratings
     */
-  var ratingCount: Double = js.native
+  var ratingCount: Double
   
   /**
     * Split of count accross rating
     */
-  var ratingSplit: js.Array[RatingCountPerRating] = js.native
+  var ratingSplit: js.Array[RatingCountPerRating]
 }
 object ReviewSummary {
   

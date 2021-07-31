@@ -12,16 +12,15 @@ import typings.winrtUwp.winrtUwpStrings.deviceselected
 import typings.winrtUwp.winrtUwpStrings.disconnectbuttonclicked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a picker flyout that contains a list of devices for the user to choose from. */
 @js.native
 trait DevicePicker extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, _]): Unit = js.native
+  def addEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deviceselected(`type`: deviceselected, listener: TypedEventHandler[DevicePicker, DeviceSelectedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -40,19 +39,19 @@ trait DevicePicker extends StObject {
   def hide(): Unit = js.native
   
   /** Indicates that the device picker was light dismissed by the user. Light dismiss happens when the user clicks somewhere other than the picker UI and the picker UI disappears. */
-  def ondevicepickerdismissed(ev: js.Any with WinRTEvent[DevicePicker]): Unit = js.native
+  def ondevicepickerdismissed(ev: js.Any & WinRTEvent[DevicePicker]): Unit = js.native
   /** Indicates that the device picker was light dismissed by the user. Light dismiss happens when the user clicks somewhere other than the picker UI and the picker UI disappears. */
   @JSName("ondevicepickerdismissed")
-  var ondevicepickerdismissed_Original: TypedEventHandler[DevicePicker, _] = js.native
+  var ondevicepickerdismissed_Original: TypedEventHandler[DevicePicker, js.Any] = js.native
   
   /** Indicates that the user selected a device in the picker. */
-  def ondeviceselected(ev: DeviceSelectedEventArgs with WinRTEvent[DevicePicker]): Unit = js.native
+  def ondeviceselected(ev: DeviceSelectedEventArgs & WinRTEvent[DevicePicker]): Unit = js.native
   /** Indicates that the user selected a device in the picker. */
   @JSName("ondeviceselected")
   var ondeviceselected_Original: TypedEventHandler[DevicePicker, DeviceSelectedEventArgs] = js.native
   
   /** Indicates that the user clicked or tapped the disconnect button for a device in the picker. */
-  def ondisconnectbuttonclicked(ev: DeviceDisconnectButtonClickedEventArgs with WinRTEvent[DevicePicker]): Unit = js.native
+  def ondisconnectbuttonclicked(ev: DeviceDisconnectButtonClickedEventArgs & WinRTEvent[DevicePicker]): Unit = js.native
   /** Indicates that the user clicked or tapped the disconnect button for a device in the picker. */
   @JSName("ondisconnectbuttonclicked")
   var ondisconnectbuttonclicked_Original: TypedEventHandler[DevicePicker, DeviceDisconnectButtonClickedEventArgs] = js.native
@@ -71,9 +70,9 @@ trait DevicePicker extends StObject {
     */
   def pickSingleDeviceAsync(selection: Rect, placement: Placement): IPromiseWithIAsyncOperation[DeviceInformation] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, _]): Unit = js.native
+  def removeEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deviceselected(`type`: deviceselected, listener: TypedEventHandler[DevicePicker, DeviceSelectedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

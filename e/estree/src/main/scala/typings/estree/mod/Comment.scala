@@ -4,16 +4,16 @@ import typings.estree.estreeStrings.Block
 import typings.estree.estreeStrings.Line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Comment extends BaseNodeWithoutComments {
+trait Comment
+  extends StObject
+     with BaseNodeWithoutComments {
   
   @JSName("type")
-  var type_Comment: Line | Block = js.native
+  var type_Comment: Line | Block
   
-  var value: String = js.native
+  var value: String
 }
 object Comment {
   

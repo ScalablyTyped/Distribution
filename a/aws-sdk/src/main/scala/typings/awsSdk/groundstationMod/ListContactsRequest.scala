@@ -2,51 +2,49 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContactsRequest extends StObject {
   
   /**
     * End time of a contact.
     */
-  var endTime: Timestamp = js.native
+  var endTime: Timestamp
   
   /**
     * Name of a ground station.
     */
-  var groundStation: js.UndefOr[String] = js.native
+  var groundStation: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of contacts returned.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * ARN of a mission profile.
     */
-  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.native
+  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.undefined
   
   /**
     * Next token returned in the request of a previous ListContacts call. Used to get the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * ARN of a satellite.
     */
-  var satelliteArn: js.UndefOr[typings.awsSdk.groundstationMod.satelliteArn] = js.native
+  var satelliteArn: js.UndefOr[typings.awsSdk.groundstationMod.satelliteArn] = js.undefined
   
   /**
     * Start time of a contact.
     */
-  var startTime: Timestamp = js.native
+  var startTime: Timestamp
   
   /**
     * Status of a contact reservation.
     */
-  var statusList: StatusList = js.native
+  var statusList: StatusList
 }
 object ListContactsRequest {
   

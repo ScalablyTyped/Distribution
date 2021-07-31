@@ -25,65 +25,54 @@ import typings.redux.mod.Dispatch
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalActionsMod {
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "activityTick")
+  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", JSImport.Namespace)
   @js.native
-  def activityTick(hasIdIncrement: Increment): IUpdateActivity | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "createLog")
-  @js.native
+  @scala.inline
+  def activityTick(hasIdIncrement: Increment): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("activityTick")(hasIdIncrement.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
+  
+  @scala.inline
   def createLog(
     hasLevelTextStatusTextDurationGroupCodeTypeCategoryFilePathLocationDocsUrlContextActivity_currentActivity_totalActivity_typeActivity_uuidStackPluginName: Activitytotal
-  ): ICreateLog = js.native
+  ): ICreateLog = ^.asInstanceOf[js.Dynamic].applyDynamic("createLog")(hasLevelTextStatusTextDurationGroupCodeTypeCategoryFilePathLocationDocsUrlContextActivity_currentActivity_totalActivity_typeActivity_uuidStackPluginName.asInstanceOf[js.Any]).asInstanceOf[ICreateLog]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "createPendingActivity")
-  @js.native
-  def createPendingActivity(hasIdStatus: Id): ActionsToEmit = js.native
+  @scala.inline
+  def createPendingActivity(hasIdStatus: Id): ActionsToEmit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPendingActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[ActionsToEmit]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "endActivity")
-  @js.native
-  def endActivity(hasIdStatus: Status): QueuedEndActivity | Null = js.native
+  @scala.inline
+  def endActivity(hasIdStatus: Status): QueuedEndActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("endActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[QueuedEndActivity | Null]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setActivityErrored")
-  @js.native
-  def setActivityErrored(hasId: IdString): IActivityErrored | Null = js.native
+  @scala.inline
+  def setActivityErrored(hasId: IdString): IActivityErrored | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityErrored")(hasId.asInstanceOf[js.Any]).asInstanceOf[IActivityErrored | Null]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setActivityStatusText")
-  @js.native
-  def setActivityStatusText(hasIdStatusText: IdStatusText): IUpdateActivity | Null = js.native
+  @scala.inline
+  def setActivityStatusText(hasIdStatusText: IdStatusText): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityStatusText")(hasIdStatusText.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setActivityTotal")
-  @js.native
-  def setActivityTotal(hasIdTotal: Total): IUpdateActivity | Null = js.native
+  @scala.inline
+  def setActivityTotal(hasIdTotal: Total): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityTotal")(hasIdTotal.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setLogs")
-  @js.native
-  def setLogs(logs: IGatsbyCLIState): ISetLogs = js.native
+  @scala.inline
+  def setLogs(logs: IGatsbyCLIState): ISetLogs = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogs")(logs.asInstanceOf[js.Any]).asInstanceOf[ISetLogs]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setStatus")
-  @js.native
-  def setStatus(status: ActivityStatuses): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = js.native
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setStatus")
-  @js.native
-  def setStatus(status: ActivityStatuses, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = js.native
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setStatus")
-  @js.native
-  def setStatus(status: _empty): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = js.native
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "setStatus")
-  @js.native
-  def setStatus(status: _empty, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = js.native
+  @scala.inline
+  def setStatus(status: ActivityStatuses): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
+  @scala.inline
+  def setStatus(status: ActivityStatuses, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
+  @scala.inline
+  def setStatus(status: _empty): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
+  @scala.inline
+  def setStatus(status: _empty, force: Boolean): js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatus")(status.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "startActivity")
-  @js.native
-  def startActivity(hasIdTextTypeStatusCurrentTotal: Current): QueuedStartActivityActions = js.native
+  @scala.inline
+  def startActivity(hasIdTextTypeStatusCurrentTotal: Current): QueuedStartActivityActions = ^.asInstanceOf[js.Dynamic].applyDynamic("startActivity")(hasIdTextTypeStatusCurrentTotal.asInstanceOf[js.Any]).asInstanceOf[QueuedStartActivityActions]
   
-  @JSImport("gatsby-cli/lib/reporter/redux/internal-actions", "updateActivity")
-  @js.native
-  def updateActivity(hasIdRest: StatusText): IUpdateActivity | Null = js.native
+  @scala.inline
+  def updateActivity(hasIdRest: StatusText): IUpdateActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("updateActivity")(hasIdRest.asInstanceOf[js.Any]).asInstanceOf[IUpdateActivity | Null]
   
   type ActionsToEmit = js.Array[
     IPendingActivity | (ReturnType[

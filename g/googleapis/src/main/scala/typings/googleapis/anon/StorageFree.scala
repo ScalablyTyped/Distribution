@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageFree extends StObject {
   
-  var storageFree: js.UndefOr[String] = js.native
+  var storageFree: js.UndefOr[String] = js.undefined
   
-  var storageTotal: js.UndefOr[String] = js.native
+  var storageTotal: js.UndefOr[String] = js.undefined
   
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object StorageFree {
   

@@ -6,25 +6,24 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request
-  extends Object
+  extends StObject
+     with Object
      with Body {
   
-  val credentials: RequestCredentials = js.native
+  val credentials: RequestCredentials
   
-  val headers: Headers = js.native
+  val headers: Headers
   
-  val method: String = js.native
+  val method: String
   
-  val mode: RequestMode = js.native
+  val mode: RequestMode
   
-  val referrer: String = js.native
+  val referrer: String
   
-  val url: String = js.native
+  val url: String
 }
 object Request {
   
@@ -38,7 +37,7 @@ object Request {
     formData: () => js.Promise[FormData],
     hasOwnProperty: PropertyKey => Boolean,
     headers: Headers,
-    json: () => js.Promise[_],
+    json: () => js.Promise[js.Any],
     method: String,
     mode: RequestMode,
     propertyIsEnumerable: PropertyKey => Boolean,

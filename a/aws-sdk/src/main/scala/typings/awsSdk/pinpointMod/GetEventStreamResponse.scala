@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventStreamResponse extends StObject {
   
-  var EventStream: typings.awsSdk.pinpointMod.EventStream = js.native
+  var EventStream: typings.awsSdk.pinpointMod.EventStream
 }
 object GetEventStreamResponse {
   

@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.AttributionConstructor
 import typings.arcgisJsApi.esri.AttributionProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attributionMod extends Shortcut {
   
   @JSImport("esri/widgets/Attribution", JSImport.Namespace)
   @js.native
-  val ^ : AttributionConstructor = js.native
+  val ^ : js.Object & AttributionConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Attribution", JSImport.Namespace)
@@ -23,12 +22,14 @@ object attributionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
     */
-  class Class () extends Attribution {
+  class Class ()
+    extends StObject
+       with Attribution {
     def this(properties: AttributionProperties) = this()
   }
   
-  type _To = AttributionConstructor
+  type _To = js.Object & AttributionConstructor
   
   /* This means you don't have to write `^`, but can instead just say `attributionMod.foo` */
-  override def _to: AttributionConstructor = ^
+  override def _to: js.Object & AttributionConstructor = ^
 }

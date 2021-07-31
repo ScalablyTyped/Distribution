@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | @node-red/editor-api |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 38 |
 | # dependents       | 3 |
-| # downloads        | 826586 |
+| # downloads        | 930124 |
 | # stars            | 0 |
 
 ## Links

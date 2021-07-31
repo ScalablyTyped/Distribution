@@ -2,68 +2,66 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGcmchannelresponseMod {
   
-  @js.native
   trait GCMChannelResponse extends StObject {
     
     /**
       * The ID of the application to which the channel applies.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * When was this segment created
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
     
     /**
       * The GCM API key from Google.
       */
-    var Credential: js.UndefOr[String] = js.native
+    var Credential: js.UndefOr[String] = js.undefined
     
     /**
       * If the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Not used. Retained for backwards compatibility.
       */
-    var HasCredential: js.UndefOr[Boolean] = js.native
+    var HasCredential: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Channel ID. Not used. Present only for backwards compatibility.
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * Is this channel archived
       */
-    var IsArchived: js.UndefOr[Boolean] = js.native
+    var IsArchived: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Who last updated this entry
       */
-    var LastModifiedBy: js.UndefOr[String] = js.native
+    var LastModifiedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Last date this was updated
       */
-    var LastModifiedDate: js.UndefOr[String] = js.native
+    var LastModifiedDate: js.UndefOr[String] = js.undefined
     
     /**
       * The platform type. Will be GCM
       */
-    var Platform: js.UndefOr[String] = js.native
+    var Platform: js.UndefOr[String] = js.undefined
     
     /**
       * Version of channel
       */
-    var Version: js.UndefOr[Double] = js.native
+    var Version: js.UndefOr[Double] = js.undefined
   }
   object GCMChannelResponse {
     

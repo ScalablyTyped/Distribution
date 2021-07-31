@@ -2,17 +2,15 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
   /** >= 0 */
-  var column: Double = js.native
+  var column: Double
   
   /** >= 1 */
-  var line: Double = js.native
+  var line: Double
 }
 object Position {
   

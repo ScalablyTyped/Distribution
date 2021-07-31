@@ -2,19 +2,17 @@ package typings.koaJoiRouterDocs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var title: String = js.native
+    var title: String
     
-    var version: String = js.native
+    var version: String
   }
   object Description {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     

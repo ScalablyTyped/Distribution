@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientGridViewCallbackCommand")
 @js.native
 class ASPxClientGridViewCallbackCommand ()
-  extends typings.devexpressWeb.ASPxClientGridViewCallbackCommand
+  extends StObject
+     with typings.devexpressWeb.ASPxClientGridViewCallbackCommand
 object ASPxClientGridViewCallbackCommand {
   
   /**

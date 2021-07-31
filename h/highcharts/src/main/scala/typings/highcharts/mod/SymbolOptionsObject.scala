@@ -2,49 +2,47 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolOptionsObject extends StObject {
   
   /**
     * The anchor X position for the `callout` symbol. This is where the chevron
     * points to.
     */
-  var anchorX: js.UndefOr[Double] = js.native
+  var anchorX: js.UndefOr[Double] = js.undefined
   
   /**
     * The anchor Y position for the `callout` symbol. This is where the chevron
     * points to.
     */
-  var anchorY: js.UndefOr[Double] = js.native
+  var anchorY: js.UndefOr[Double] = js.undefined
   
   /**
     * The end angle of an `arc` symbol.
     */
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to draw `arc` symbol open or closed.
     */
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The radius of an `arc` symbol, or the border radius for the `callout`
     * symbol.
     */
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to draw rounded edges.
     */
-  var rounded: js.UndefOr[Boolean] = js.native
+  var rounded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The start angle of an `arc` symbol.
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object SymbolOptionsObject {
   

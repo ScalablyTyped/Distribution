@@ -5,51 +5,49 @@ import typings.pulumiAws.inputMod.ec2.GetVpcEndpointServiceFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcEndpointServiceMod {
   
-  @JSImport("@pulumi/aws/ec2/getVpcEndpointService", "getVpcEndpointService")
+  @JSImport("@pulumi/aws/ec2/getVpcEndpointService", JSImport.Namespace)
   @js.native
-  def getVpcEndpointService(): js.Promise[GetVpcEndpointServiceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcEndpointService", "getVpcEndpointService")
-  @js.native
-  def getVpcEndpointService(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcEndpointService", "getVpcEndpointService")
-  @js.native
-  def getVpcEndpointService(args: GetVpcEndpointServiceArgs): js.Promise[GetVpcEndpointServiceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcEndpointService", "getVpcEndpointService")
-  @js.native
-  def getVpcEndpointService(args: GetVpcEndpointServiceArgs, opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpcEndpointService(): js.Promise[GetVpcEndpointServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")().asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  @scala.inline
+  def getVpcEndpointService(args: Unit, opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  @scala.inline
+  def getVpcEndpointService(args: GetVpcEndpointServiceArgs): js.Promise[GetVpcEndpointServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  @scala.inline
+  def getVpcEndpointService(args: GetVpcEndpointServiceArgs, opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  
   trait GetVpcEndpointServiceArgs extends StObject {
     
     /**
       * Configuration block(s) for filtering. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetVpcEndpointServiceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpcEndpointServiceFilter]] = js.undefined
     
     /**
       * The common name of an AWS service (e.g. `s3`).
       */
-    val service: js.UndefOr[String] = js.native
+    val service: js.UndefOr[String] = js.undefined
     
     /**
       * The service name that is specified when creating a VPC endpoint. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
       */
-    val serviceName: js.UndefOr[String] = js.native
+    val serviceName: js.UndefOr[String] = js.undefined
     
     /**
       * The service type, `Gateway` or `Interface`.
       */
-    val serviceType: js.UndefOr[String] = js.native
+    val serviceType: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match a pair on the desired VPC Endpoint Service.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpcEndpointServiceArgs {
     
@@ -97,71 +95,70 @@ object getVpcEndpointServiceMod {
     }
   }
   
-  @js.native
   trait GetVpcEndpointServiceResult extends StObject {
     
     /**
       * Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - `true` or `false`.
       */
-    val acceptanceRequired: Boolean = js.native
+    val acceptanceRequired: Boolean
     
     /**
       * The Amazon Resource Name (ARN) of the VPC endpoint service.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The Availability Zones in which the service is available.
       */
-    val availabilityZones: js.Array[String] = js.native
+    val availabilityZones: js.Array[String]
     
     /**
       * The DNS names for the service.
       */
-    val baseEndpointDnsNames: js.Array[String] = js.native
+    val baseEndpointDnsNames: js.Array[String]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcEndpointServiceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcEndpointServiceFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Whether or not the service manages its VPC endpoints - `true` or `false`.
       */
-    val managesVpcEndpoints: Boolean = js.native
+    val managesVpcEndpoints: Boolean
     
     /**
       * The AWS account ID of the service owner or `amazon`.
       */
-    val owner: String = js.native
+    val owner: String
     
     /**
       * The private DNS name for the service.
       */
-    val privateDnsName: String = js.native
+    val privateDnsName: String
     
-    val service: js.UndefOr[String] = js.native
+    val service: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the endpoint service.
       */
-    val serviceId: String = js.native
+    val serviceId: String
     
-    val serviceName: String = js.native
+    val serviceName: String
     
-    val serviceType: String = js.native
+    val serviceType: String
     
     /**
       * A map of tags assigned to the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Whether or not the service supports endpoint policies - `true` or `false`.
       */
-    val vpcEndpointPolicySupported: Boolean = js.native
+    val vpcEndpointPolicySupported: Boolean
   }
   object GetVpcEndpointServiceResult {
     

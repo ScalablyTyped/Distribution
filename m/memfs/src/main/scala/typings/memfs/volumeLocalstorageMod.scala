@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.memfs.volumeMod.Volume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object volumeLocalstorageMod {
+  
+  @JSImport("memfs/lib/volume-localstorage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("memfs/lib/volume-localstorage", "ObjectStore")
   @js.native
@@ -23,24 +26,20 @@ object volumeLocalstorageMod {
     def setItem(key: String, json: js.Any): Unit = js.native
   }
   
-  @JSImport("memfs/lib/volume-localstorage", "createVolume")
-  @js.native
-  def createVolume(namespace: String): Instantiable1[/* args (repeated) */ js.Any, Volume] = js.native
-  @JSImport("memfs/lib/volume-localstorage", "createVolume")
-  @js.native
-  def createVolume(namespace: String, LS: js.Object): Instantiable1[/* args (repeated) */ js.Any, Volume] = js.native
-  @JSImport("memfs/lib/volume-localstorage", "createVolume")
-  @js.native
-  def createVolume(namespace: String, LS: IStore): Instantiable1[/* args (repeated) */ js.Any, Volume] = js.native
+  @scala.inline
+  def createVolume(namespace: String): Instantiable1[/* args (repeated) */ js.Any, Volume] = ^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
+  @scala.inline
+  def createVolume(namespace: String, LS: js.Object): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
+  @scala.inline
+  def createVolume(namespace: String, LS: IStore): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
   
-  @js.native
   trait IStore extends StObject {
     
-    def getItem(key: String): js.Any = js.native
+    def getItem(key: String): js.Any
     
-    def removeItem(key: String): js.Any = js.native
+    def removeItem(key: String): js.Any
     
-    def setItem(key: String, json: js.Any): js.Any = js.native
+    def setItem(key: String, json: js.Any): js.Any
   }
   object IStore {
     

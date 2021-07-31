@@ -7,21 +7,19 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DepthwiseConv2dNativeBackpropFilterAttrs extends StObject {
   
-  var dilations: (js.Tuple2[Double, Double]) | Double = js.native
+  var dilations: (js.Tuple2[Double, Double]) | Double
   
-  var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.native
+  var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.undefined
   
-  var filterShape: js.Tuple4[Double, Double, Double, Double] = js.native
+  var filterShape: js.Tuple4[Double, Double, Double, Double]
   
-  var pad: valid_ | same_ | Double = js.native
+  var pad: valid_ | same_ | Double
   
-  var strides: (js.Tuple2[Double, Double]) | Double = js.native
+  var strides: (js.Tuple2[Double, Double]) | Double
 }
 object DepthwiseConv2dNativeBackpropFilterAttrs {
   

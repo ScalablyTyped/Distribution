@@ -2,47 +2,45 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A StructuralElement describes content that provides structure to the
   * document.
   */
-@js.native
 trait SchemaStructuralElement extends StObject {
   
   /**
     * The zero-based end index of this structural element, exclusive, in UTF-16
     * code units.
     */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * A paragraph type of structural element.
     */
-  var paragraph: js.UndefOr[SchemaParagraph] = js.native
+  var paragraph: js.UndefOr[SchemaParagraph] = js.undefined
   
   /**
     * A section break type of structural element.
     */
-  var sectionBreak: js.UndefOr[SchemaSectionBreak] = js.native
+  var sectionBreak: js.UndefOr[SchemaSectionBreak] = js.undefined
   
   /**
     * The zero-based start index of this structural element, in UTF-16 code
     * units.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * A table type of structural element.
     */
-  var table: js.UndefOr[SchemaTable] = js.native
+  var table: js.UndefOr[SchemaTable] = js.undefined
   
   /**
     * A table of contents type of structural element.
     */
-  var tableOfContents: js.UndefOr[SchemaTableOfContents] = js.native
+  var tableOfContents: js.UndefOr[SchemaTableOfContents] = js.undefined
 }
 object SchemaStructuralElement {
   

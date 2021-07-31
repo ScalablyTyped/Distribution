@@ -20,7 +20,6 @@ import typings.meteor.Tracker.Computation
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -38,7 +37,9 @@ object mod {
       * but can use a differen type for updates.
       */
     @js.native
-    trait AngularMeteorCollection2[T, U] extends Array[T] {
+    trait AngularMeteorCollection2[T, U]
+      extends StObject
+         with Array[T] {
       
       /**
         * @param [keys] - The keys of the object to remove from the Meteor Collection.
@@ -213,8 +214,8 @@ object mod {
         *
         * @return The promise solved successfully when the picture is taken with the data as a parameter or rejected with an error as a parameter in case of error.
         */
-      def getPicture(): IPromise[_] = js.native
-      def getPicture(options: Height): IPromise[_] = js.native
+      def getPicture(): IPromise[js.Any] = js.native
+      def getPicture(options: Height): IPromise[js.Any] = js.native
       
       var loginWithFacebook: ILoginWithExternalService = js.native
       
@@ -339,7 +340,8 @@ object mod {
     
     @js.native
     trait IRootScopeService
-      extends typings.angular.mod.IRootScopeService {
+      extends StObject
+         with typings.angular.mod.IRootScopeService {
       
       /**
         * The current logged in user and it's data. it is null if the user is not logged in. A reactive data source.
@@ -354,7 +356,9 @@ object mod {
     }
     
     @js.native
-    trait IScope extends IRootScopeService {
+    trait IScope
+      extends StObject
+         with IRootScopeService {
       
       /**
         * This method is a wrapper of Tracker.autorun and shares exactly the same API.
@@ -385,7 +389,7 @@ object mod {
         * @param definitions - Object containing `name` => `function` definition, where each name is a string and each function is the helper function. Should return a [MongoDB Cursor](http://docs.meteor.com/#/full/mongo_cursor)
         * @return This method returns this, which the the reactive context, in order to provide the ability to chain the logic.
         */
-      def helpers(definitions: StringDictionary[js.Function0[Cursor[_, _]]]): IScope = js.native
+      def helpers(definitions: StringDictionary[js.Function0[Cursor[js.Any, js.Any]]]): IScope = js.native
       
       /**
         * A service which is a wrapper for Meteor.subscribe. It subscribes to a Meteor.publish method in the client and returns a AngularJS promise when ready.
@@ -399,7 +403,6 @@ object mod {
       def subscribe(name: String, publisherArguments: js.Any*): IPromise[SubscriptionHandle] = js.native
     }
     
-    @js.native
     trait ReactiveResult extends StObject
   }
 }

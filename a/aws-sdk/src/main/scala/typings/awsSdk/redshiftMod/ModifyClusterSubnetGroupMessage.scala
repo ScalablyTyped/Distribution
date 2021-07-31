@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClusterSubnetGroupMessage extends StObject {
   
   /**
     * The name of the subnet group to be modified.
     */
-  var ClusterSubnetGroupName: String = js.native
+  var ClusterSubnetGroupName: String
   
   /**
     * A text description of the subnet group to be modified.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * An array of VPC subnet IDs. A maximum of 20 subnets can be modified in a single request.
     */
-  var SubnetIds: SubnetIdentifierList = js.native
+  var SubnetIds: SubnetIdentifierList
 }
 object ModifyClusterSubnetGroupMessage {
   

@@ -2,38 +2,36 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a language that can be targeted by ads.
   */
-@js.native
 trait SchemaLanguage extends StObject {
   
   /**
     * Language ID of this language. This is the ID used for targeting and
     * generating reports.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#language&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Format of language code is an ISO 639 two-letter language code optionally
     * followed by an underscore followed by an ISO 3166 code. Examples are
     * &quot;en&quot; for English or &quot;zh_CN&quot; for Simplified Chinese.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this language.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaLanguage {
   

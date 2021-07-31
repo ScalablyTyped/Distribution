@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.succeeded_
 import typings.chromeApps.chromeAppsStrings.unhandled_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FAILED extends StObject {
   
-  var FAILED: failed_ = js.native
+  var FAILED: failed_
   
-  var REJECTED: rejected_ = js.native
+  var REJECTED: rejected_
   
-  var SUCCEEDED: succeeded_ = js.native
+  var SUCCEEDED: succeeded_
   
-  var UNHANDLED: unhandled_ = js.native
+  var UNHANDLED: unhandled_
 }
 object FAILED {
   
   @scala.inline
-  def apply(FAILED: failed_, REJECTED: rejected_, SUCCEEDED: succeeded_, UNHANDLED: unhandled_): FAILED = {
-    val __obj = js.Dynamic.literal(FAILED = FAILED.asInstanceOf[js.Any], REJECTED = REJECTED.asInstanceOf[js.Any], SUCCEEDED = SUCCEEDED.asInstanceOf[js.Any], UNHANDLED = UNHANDLED.asInstanceOf[js.Any])
+  def apply(): FAILED = {
+    val __obj = js.Dynamic.literal(FAILED = "failed", REJECTED = "rejected", SUCCEEDED = "succeeded", UNHANDLED = "unhandled")
     __obj.asInstanceOf[FAILED]
   }
   

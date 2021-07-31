@@ -2,31 +2,29 @@ package typings.stripeV2.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeApplePayPaymentRequest extends StObject {
   
-  var billingContact: StripeApplePayPaymentContact = js.native
+  var billingContact: StripeApplePayPaymentContact
   
-  var countryCode: String = js.native
+  var countryCode: String
   
-  var currencyCode: String = js.native
+  var currencyCode: String
   
-  var lineItems: js.UndefOr[js.Array[StripeApplePayLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[StripeApplePayLineItem]] = js.undefined
   
-  var requiredBillingContactFields: js.UndefOr[js.Array[StripeApplePayBillingContactField]] = js.native
+  var requiredBillingContactFields: js.UndefOr[js.Array[StripeApplePayBillingContactField]] = js.undefined
   
-  var requiredShippingContactFields: js.UndefOr[js.Array[StripeApplePayShippingContactField]] = js.native
+  var requiredShippingContactFields: js.UndefOr[js.Array[StripeApplePayShippingContactField]] = js.undefined
   
-  var shippingContact: js.UndefOr[StripeApplePayPaymentContact] = js.native
+  var shippingContact: js.UndefOr[StripeApplePayPaymentContact] = js.undefined
   
-  var shippingMethods: js.UndefOr[js.Array[StripeApplePayShippingMethod]] = js.native
+  var shippingMethods: js.UndefOr[js.Array[StripeApplePayShippingMethod]] = js.undefined
   
-  var shippingType: js.UndefOr[js.Array[StripeApplePayShipping]] = js.native
+  var shippingType: js.UndefOr[js.Array[StripeApplePayShipping]] = js.undefined
   
-  var total: StripeApplePayLineItem = js.native
+  var total: StripeApplePayLineItem
 }
 object StripeApplePayPaymentRequest {
   

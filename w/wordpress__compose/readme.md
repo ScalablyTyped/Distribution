@@ -10,13 +10,13 @@ WordPress higher-order components (HOCs).
 | ------------------ | :-------------: |
 | Full name          | @wordpress/compose |
 | Keywords           | wordpress, gutenberg, react, hoc, hooks |
-| # releases         | 37 |
-| # dependents       | 27 |
-| # downloads        | 850114 |
+| # releases         | 38 |
+| # dependents       | 32 |
+| # downloads        | 1265476 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/compose/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/compose/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fcompose)

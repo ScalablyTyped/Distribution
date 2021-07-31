@@ -2,19 +2,17 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EnvVar represents an environment variable present in a Container.
   */
-@js.native
 trait SchemaEnvVar extends StObject {
   
   /**
     * Name of the environment variable. Must be a C_IDENTIFIER.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Variable references $(VAR_NAME) are expanded using the previous defined
@@ -25,7 +23,7 @@ trait SchemaEnvVar extends StObject {
     * regardless of whether the variable exists or not. Defaults to
     * &quot;&quot;. +optional
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaEnvVar {
   

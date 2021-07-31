@@ -4,15 +4,13 @@ import typings.actioncable.ActionCable.Cable
 import typings.actioncable.ActionCable.Channel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppInterface extends StObject {
   
-  var cable: js.UndefOr[Cable] = js.native
+  var cable: js.UndefOr[Cable] = js.undefined
   
-  var network: js.UndefOr[Channel] = js.native
+  var network: js.UndefOr[Channel] = js.undefined
 }
 object AppInterface {
   

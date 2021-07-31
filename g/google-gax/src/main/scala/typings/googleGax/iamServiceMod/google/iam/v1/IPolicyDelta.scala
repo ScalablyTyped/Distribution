@@ -2,18 +2,16 @@ package typings.googleGax.iamServiceMod.google.iam.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PolicyDelta. */
-@js.native
 trait IPolicyDelta extends StObject {
   
   /** PolicyDelta auditConfigDeltas */
-  var auditConfigDeltas: js.UndefOr[js.Array[IAuditConfigDelta] | Null] = js.native
+  var auditConfigDeltas: js.UndefOr[js.Array[IAuditConfigDelta] | Null] = js.undefined
   
   /** PolicyDelta bindingDeltas */
-  var bindingDeltas: js.UndefOr[js.Array[IBindingDelta] | Null] = js.native
+  var bindingDeltas: js.UndefOr[js.Array[IBindingDelta] | Null] = js.undefined
 }
 object IPolicyDelta {
   

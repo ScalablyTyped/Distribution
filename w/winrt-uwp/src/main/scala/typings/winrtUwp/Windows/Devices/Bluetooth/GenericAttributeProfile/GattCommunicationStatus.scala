@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object GattCommunicationStatus extends StObject {
   
   /** The operation completed successfully. */
   @js.native
-  sealed trait success extends GattCommunicationStatus
+  sealed trait success
+    extends StObject
+       with GattCommunicationStatus
   
   /** No communication can be performed with the device, at this time. */
   @js.native
-  sealed trait unreachable extends GattCommunicationStatus
+  sealed trait unreachable
+    extends StObject
+       with GattCommunicationStatus
 }

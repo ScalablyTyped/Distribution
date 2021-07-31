@@ -2,21 +2,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionQuery extends StObject {
   
   /**
     * One or more conditions to query on. If more than 2 conditions are specified, the combined results of each condition is returned (i.e. conditions are logically OR'ed).
     */
-  var conditions: js.Array[SubscriptionQueryCondition] = js.native
+  var conditions: js.Array[SubscriptionQueryCondition]
   
   /**
     * Flags the refine the types of subscriptions that will be returned from the query.
     */
-  var queryFlags: SubscriptionQueryFlags = js.native
+  var queryFlags: SubscriptionQueryFlags
 }
 object SubscriptionQuery {
   

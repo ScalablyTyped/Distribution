@@ -6,23 +6,21 @@ import typings.reactVirtualized.reactVirtualizedStrings.end
 import typings.reactVirtualized.reactVirtualizedStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: auto | start | end | center = js.native
+  var align: auto | start | end | center
   
-  var cellIndex: Double = js.native
+  var cellIndex: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Align {
   

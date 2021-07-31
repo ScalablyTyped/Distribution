@@ -2,15 +2,13 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checked extends StObject {
   
-  var checked: js.UndefOr[js.Any] = js.native
+  var checked: js.UndefOr[js.Any] = js.undefined
   
-  var unchecked: js.UndefOr[js.Any] = js.native
+  var unchecked: js.UndefOr[js.Any] = js.undefined
 }
 object Checked {
   

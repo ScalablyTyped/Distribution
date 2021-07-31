@@ -2,41 +2,39 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationResultType extends StObject {
   
   /**
     * The access token.
     */
-  var AccessToken: js.UndefOr[TokenModelType] = js.native
+  var AccessToken: js.UndefOr[TokenModelType] = js.undefined
   
   /**
     * The expiration period of the authentication result in seconds.
     */
-  var ExpiresIn: js.UndefOr[IntegerType] = js.native
+  var ExpiresIn: js.UndefOr[IntegerType] = js.undefined
   
   /**
     * The ID token.
     */
-  var IdToken: js.UndefOr[TokenModelType] = js.native
+  var IdToken: js.UndefOr[TokenModelType] = js.undefined
   
   /**
     * The new device metadata from an authentication result.
     */
-  var NewDeviceMetadata: js.UndefOr[NewDeviceMetadataType] = js.native
+  var NewDeviceMetadata: js.UndefOr[NewDeviceMetadataType] = js.undefined
   
   /**
     * The refresh token.
     */
-  var RefreshToken: js.UndefOr[TokenModelType] = js.native
+  var RefreshToken: js.UndefOr[TokenModelType] = js.undefined
   
   /**
     * The token type.
     */
-  var TokenType: js.UndefOr[StringType] = js.native
+  var TokenType: js.UndefOr[StringType] = js.undefined
 }
 object AuthenticationResultType {
   

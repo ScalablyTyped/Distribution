@@ -2,84 +2,82 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidNotification extends StObject {
   
   /** The notification's body text. If present, it will override google.firebase.fcm.v1.Notification.body. */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Variable string values to be used in place of the format specifiers in body_loc_key to use to localize the body text to the user's current localization. See [Formatting and
     * Styling](https://goo.gl/MalYE3) for more information.
     */
-  var bodyLocArgs: js.UndefOr[js.Array[String]] = js.native
+  var bodyLocArgs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The key to the body string in the app's string resources to use to localize the body text to the user's current localization. See [String Resources](https://goo.gl/NdFZGI) for more
     * information.
     */
-  var bodyLocKey: js.UndefOr[String] = js.native
+  var bodyLocKey: js.UndefOr[String] = js.undefined
   
   /**
     * The [notification's channel id](https://developer.android.com/guide/topics/ui/notifiers/notifications#ManageChannels) (new in Android O). The app must create a channel with this
     * channel ID before any notification with this channel ID is received. If you don't send this channel ID in the request, or if the channel ID provided has not yet been created by the
     * app, FCM uses the channel ID specified in the app manifest.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** The action associated with a user click on the notification. If specified, an activity with a matching intent filter is launched when a user clicks on the notification. */
-  var clickAction: js.UndefOr[String] = js.native
+  var clickAction: js.UndefOr[String] = js.undefined
   
   /** The notification's icon color, expressed in #rrggbb format. */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, use the Android framework's default LED light settings for the notification. Default values are specified in
     * [config.xml](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml). If `default_light_settings` is set to true and `light_settings` is
     * also set, the user-specified `light_settings` is used instead of the default value.
     */
-  var defaultLightSettings: js.UndefOr[Boolean] = js.native
+  var defaultLightSettings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, use the Android framework's default sound for the notification. Default values are specified in
     * [config.xml](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml).
     */
-  var defaultSound: js.UndefOr[Boolean] = js.native
+  var defaultSound: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, use the Android framework's default vibrate pattern for the notification. Default values are specified in
     * [config.xml](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml). If `default_vibrate_timings` is set to true and `vibrate_timings` is
     * also set, the default value is used instead of the user-specified `vibrate_timings`.
     */
-  var defaultVibrateTimings: js.UndefOr[Boolean] = js.native
+  var defaultVibrateTimings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the time that the event in the notification occurred. Notifications in the panel are sorted by this time. A point in time is represented using
     * [protobuf.Timestamp](https://developers.google.com/protocol-buffers/docs/reference/java/com/google/protobuf/Timestamp).
     */
-  var eventTime: js.UndefOr[String] = js.native
+  var eventTime: js.UndefOr[String] = js.undefined
   
   /**
     * The notification's icon. Sets the notification icon to myicon for drawable resource myicon. If you don't send this key in the request, FCM displays the launcher icon specified in
     * your app manifest.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /** Contains the URL of an image that is going to be displayed in a notification. If present, it will override google.firebase.fcm.v1.Notification.image. */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /** Settings to control the notification's LED blinking rate and color if LED is available on the device. The total blinking time is controlled by the OS. */
-  var lightSettings: js.UndefOr[LightSettings] = js.native
+  var lightSettings: js.UndefOr[LightSettings] = js.undefined
   
   /**
     * Set whether or not this notification is relevant only to the current device. Some notifications can be bridged to other devices for remote display, such as a Wear OS watch. This
     * hint can be set to recommend this notification not be bridged. See [Wear OS
     * guides](https://developer.android.com/training/wearables/notifications/bridger#existing-method-of-preventing-bridging)
     */
-  var localOnly: js.UndefOr[Boolean] = js.native
+  var localOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the number of items this notification represents. May be displayed as a badge count for launchers that support badging.See [Notification
@@ -87,7 +85,7 @@ trait AndroidNotification extends StObject {
     * want the count here to represent the number of total new messages. If zero or unspecified, systems that support badging use the default, which is to increment a number displayed on
     * the long-press menu each time a new notification arrives.
     */
-  var notificationCount: js.UndefOr[Double] = js.native
+  var notificationCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the relative priority for this notification. Priority is an indication of how much of the user's attention should be consumed by this notification. Low-priority notifications
@@ -96,43 +94,43 @@ trait AndroidNotification extends StObject {
     * [AndroidMessagePriority](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidmessagepriority) is an FCM concept that controls when the message is
     * delivered.
     */
-  var notificationPriority: js.UndefOr[String] = js.native
+  var notificationPriority: js.UndefOr[String] = js.undefined
   
   /** The sound to play when the device receives the notification. Supports "default" or the filename of a sound resource bundled in the app. Sound files must reside in /res/raw/. */
-  var sound: js.UndefOr[String] = js.native
+  var sound: js.UndefOr[String] = js.undefined
   
   /**
     * When set to false or unset, the notification is automatically dismissed when the user clicks it in the panel. When set to true, the notification persists even when the user clicks
     * it.
     */
-  var sticky: js.UndefOr[Boolean] = js.native
+  var sticky: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifier used to replace existing notifications in the notification drawer. If not specified, each request creates a new notification. If specified and a notification with the
     * same tag is already being shown, the new notification replaces the existing one in the notification drawer.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the "ticker" text, which is sent to accessibility services. Prior to API level 21 (`Lollipop`), sets the text that is displayed in the status bar when the notification first
     * arrives.
     */
-  var ticker: js.UndefOr[String] = js.native
+  var ticker: js.UndefOr[String] = js.undefined
   
   /** The notification's title. If present, it will override google.firebase.fcm.v1.Notification.title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Variable string values to be used in place of the format specifiers in title_loc_key to use to localize the title text to the user's current localization. See [Formatting and
     * Styling](https://goo.gl/MalYE3) for more information.
     */
-  var titleLocArgs: js.UndefOr[js.Array[String]] = js.native
+  var titleLocArgs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The key to the title string in the app's string resources to use to localize the title text to the user's current localization. See [String Resources](https://goo.gl/NdFZGI) for
     * more information.
     */
-  var titleLocKey: js.UndefOr[String] = js.native
+  var titleLocKey: js.UndefOr[String] = js.undefined
   
   /**
     * Set the vibration pattern to use. Pass in an array of [protobuf.Duration](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#google.protobuf.Duration) to
@@ -140,10 +138,10 @@ trait AndroidNotification extends StObject {
     * Subsequent values alternate between `Duration` to turn the vibrator off and to turn the vibrator on. If `vibrate_timings` is set and `default_vibrate_timings` is set to `true`, the
     * default value is used instead of the user-specified `vibrate_timings`.
     */
-  var vibrateTimings: js.UndefOr[js.Array[String]] = js.native
+  var vibrateTimings: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Set the [Notification.visibility](https://developer.android.com/reference/android/app/Notification.html#visibility) of the notification. */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object AndroidNotification {
   

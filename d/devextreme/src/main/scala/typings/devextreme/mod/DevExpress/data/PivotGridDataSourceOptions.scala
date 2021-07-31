@@ -3,63 +3,61 @@ package typings.devextreme.mod.DevExpress.data
 import typings.devextreme.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGridDataSourceOptions extends StObject {
   
   /**
     * [descr:PivotGridDataSource.Options.fields]
     */
-  var fields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.native
+  var fields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.filter]
     */
-  var filter: js.UndefOr[String | js.Array[_] | js.Function] = js.native
+  var filter: js.UndefOr[String | js.Array[js.Any] | js.Function] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.onChanged]
     */
-  var onChanged: js.UndefOr[js.Function] = js.native
+  var onChanged: js.UndefOr[js.Function] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.onFieldsPrepared]
     */
-  var onFieldsPrepared: js.UndefOr[js.Function1[/* fields */ js.Array[PivotGridDataSourceField], _]] = js.native
+  var onFieldsPrepared: js.UndefOr[js.Function1[/* fields */ js.Array[PivotGridDataSourceField], js.Any]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.onLoadError]
     */
-  var onLoadError: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.native
+  var onLoadError: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.onLoadingChanged]
     */
-  var onLoadingChanged: js.UndefOr[js.Function1[/* isLoading */ Boolean, _]] = js.native
+  var onLoadingChanged: js.UndefOr[js.Function1[/* isLoading */ Boolean, js.Any]] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.paginate]
     */
-  var paginate: js.UndefOr[Boolean] = js.native
+  var paginate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.remoteOperations]
     */
-  var remoteOperations: js.UndefOr[Boolean] = js.native
+  var remoteOperations: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.retrieveFields]
     */
-  var retrieveFields: js.UndefOr[Boolean] = js.native
+  var retrieveFields: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:PivotGridDataSource.Options.store]
     */
   var store: js.UndefOr[
     Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[Type] | Type
-  ] = js.native
+  ] = js.undefined
 }
 object PivotGridDataSourceOptions {
   
@@ -82,7 +80,7 @@ object PivotGridDataSourceOptions {
     def setFieldsVarargs(value: PivotGridDataSourceField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFilter(value: String | js.Array[_] | js.Function): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -97,19 +95,19 @@ object PivotGridDataSourceOptions {
     def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
     
     @scala.inline
-    def setOnFieldsPrepared(value: /* fields */ js.Array[PivotGridDataSourceField] => _): Self = StObject.set(x, "onFieldsPrepared", js.Any.fromFunction1(value))
+    def setOnFieldsPrepared(value: /* fields */ js.Array[PivotGridDataSourceField] => js.Any): Self = StObject.set(x, "onFieldsPrepared", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnFieldsPreparedUndefined: Self = StObject.set(x, "onFieldsPrepared", js.undefined)
     
     @scala.inline
-    def setOnLoadError(value: /* error */ js.Any => _): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+    def setOnLoadError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
     
     @scala.inline
-    def setOnLoadingChanged(value: /* isLoading */ Boolean => _): Self = StObject.set(x, "onLoadingChanged", js.Any.fromFunction1(value))
+    def setOnLoadingChanged(value: /* isLoading */ Boolean => js.Any): Self = StObject.set(x, "onLoadingChanged", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnLoadingChangedUndefined: Self = StObject.set(x, "onLoadingChanged", js.undefined)

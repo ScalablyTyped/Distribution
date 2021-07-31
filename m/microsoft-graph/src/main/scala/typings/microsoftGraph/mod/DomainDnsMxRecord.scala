@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DomainDnsMxRecord extends DomainDnsRecord {
+trait DomainDnsMxRecord
+  extends StObject
+     with DomainDnsRecord {
   
   // Value used when configuring the answer/destination/value of the MX record at the DNS host.
-  var mailExchange: js.UndefOr[String] = js.native
+  var mailExchange: js.UndefOr[String] = js.undefined
   
   // Value used when configuring the Preference/Priority property of the MX record at the DNS host.
-  var preference: js.UndefOr[NullableOption[Double]] = js.native
+  var preference: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object DomainDnsMxRecord {
   

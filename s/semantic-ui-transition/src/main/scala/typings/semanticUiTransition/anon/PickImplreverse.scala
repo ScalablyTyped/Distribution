@@ -3,14 +3,12 @@ package typings.semanticUiTransition.anon
 import typings.semanticUiTransition.semanticUiTransitionStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.TransitionSettings._Impl, 'reverse'> */
-@js.native
 trait PickImplreverse extends StObject {
   
-  var reverse: auto | Boolean = js.native
+  var reverse: auto | Boolean
 }
 object PickImplreverse {
   

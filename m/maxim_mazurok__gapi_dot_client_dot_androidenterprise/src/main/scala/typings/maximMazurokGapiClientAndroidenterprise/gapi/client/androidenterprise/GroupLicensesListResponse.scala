@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupLicensesListResponse extends StObject {
   
   /** A group license for a product approved for use in the enterprise. */
-  var groupLicense: js.UndefOr[js.Array[GroupLicense]] = js.native
+  var groupLicense: js.UndefOr[js.Array[GroupLicense]] = js.undefined
 }
 object GroupLicensesListResponse {
   

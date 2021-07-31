@@ -2,48 +2,46 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An axis that contains data points corresponding to the specified value hierarchy.
   */
-@js.native
 trait ASPxClientDashboardItemDataAxis extends StObject {
   
   /**
     * Gets the dimensions used to create a hierarchy of axis points belonging to the current axis.
     */
-  def GetDimensions(): js.Array[ASPxClientDashboardItemDataDimension] = js.native
+  def GetDimensions(): js.Array[ASPxClientDashboardItemDataDimension]
   
   /**
     * Returns the data point for the specified axis by unique values. An ASPxClientDashboardItemDataAxisPoint object representing the data point belonging to the specified axis.
     * @param uniqueValues A hierarchy of unique values identifying the required data point.
     */
-  def GetPointByUniqueValues(uniqueValues: js.Array[_]): ASPxClientDashboardItemDataAxisPoint = js.native
+  def GetPointByUniqueValues(uniqueValues: js.Array[js.Any]): ASPxClientDashboardItemDataAxisPoint
   
   /**
     * Returns axis points corresponding to values of the last-level dimension.
     */
-  def GetPoints(): js.Array[ASPxClientDashboardItemDataAxisPoint] = js.native
+  def GetPoints(): js.Array[ASPxClientDashboardItemDataAxisPoint]
   
   /**
     * Returns axis points corresponding to the specified dimension. An array of ASPxClientDashboardItemDataAxisPoint objects that represent data points in a multidimensional space.
     * @param dimensionId A String that is the dimension identifier.
     */
-  def GetPointsByDimension(dimensionId: String): js.Array[ASPxClientDashboardItemDataAxisPoint] = js.native
+  def GetPointsByDimension(dimensionId: String): js.Array[ASPxClientDashboardItemDataAxisPoint]
   
   /**
     * Gets the root axis point belonging to the current ASPxClientDashboardItemDataAxis.
     */
-  def GetRootPoint(): ASPxClientDashboardItemDataAxisPoint = js.native
+  def GetRootPoint(): ASPxClientDashboardItemDataAxisPoint
 }
 object ASPxClientDashboardItemDataAxis {
   
   @scala.inline
   def apply(
     GetDimensions: () => js.Array[ASPxClientDashboardItemDataDimension],
-    GetPointByUniqueValues: js.Array[_] => ASPxClientDashboardItemDataAxisPoint,
+    GetPointByUniqueValues: js.Array[js.Any] => ASPxClientDashboardItemDataAxisPoint,
     GetPoints: () => js.Array[ASPxClientDashboardItemDataAxisPoint],
     GetPointsByDimension: String => js.Array[ASPxClientDashboardItemDataAxisPoint],
     GetRootPoint: () => ASPxClientDashboardItemDataAxisPoint
@@ -59,7 +57,7 @@ object ASPxClientDashboardItemDataAxis {
     def setGetDimensions(value: () => js.Array[ASPxClientDashboardItemDataDimension]): Self = StObject.set(x, "GetDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPointByUniqueValues(value: js.Array[_] => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetPointByUniqueValues", js.Any.fromFunction1(value))
+    def setGetPointByUniqueValues(value: js.Array[js.Any] => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetPointByUniqueValues", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetPoints(value: () => js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "GetPoints", js.Any.fromFunction0(value))

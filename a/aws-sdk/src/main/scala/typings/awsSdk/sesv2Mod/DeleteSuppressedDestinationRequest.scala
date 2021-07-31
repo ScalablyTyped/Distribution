@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSuppressedDestinationRequest extends StObject {
   
   /**
     * The suppressed email destination to remove from the account suppression list.
     */
-  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress = js.native
+  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress
 }
 object DeleteSuppressedDestinationRequest {
   

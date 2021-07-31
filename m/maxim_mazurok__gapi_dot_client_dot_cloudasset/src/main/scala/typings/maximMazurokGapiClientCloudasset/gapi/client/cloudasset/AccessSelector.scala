@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessSelector extends StObject {
   
   /** Optional. The permissions to appear in result. */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. The roles to appear in result. */
-  var roles: js.UndefOr[js.Array[String]] = js.native
+  var roles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AccessSelector {
   

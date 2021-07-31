@@ -4,131 +4,130 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.highcharts.highchartsStrings.contrast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSObject
-  extends /* key */ StringDictionary[js.UndefOr[Boolean | Double | String]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[Boolean | Double | String]] {
   
   /**
     * Background style for the element.
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * Background color of the element.
     */
-  var backgroundColor: js.UndefOr[ColorString] = js.native
+  var backgroundColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * Border style for the element.
     */
-  var border: js.UndefOr[String] = js.native
+  var border: js.UndefOr[String] = js.undefined
   
   /**
     * Radius of the element border.
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * Color used in the element. The 'contrast' option is a Highcharts custom
     * property that results in black or white, depending on the background of
     * the element.
     */
-  var color: js.UndefOr[contrast | ColorString] = js.native
+  var color: js.UndefOr[contrast | ColorString] = js.undefined
   
   /**
     * Style of the mouse cursor when resting over the element.
     */
-  var cursor: js.UndefOr[CursorValue] = js.native
+  var cursor: js.UndefOr[CursorValue] = js.undefined
   
   /**
     * Font family of the element text. Multiple values have to be in decreasing
     * preference order and separated by comma.
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Font size of the element text.
     */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /**
     * Font weight of the element text.
     */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
   /**
     * Height of the element.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Width of the element border.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Opacity of the element.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Space around the element content.
     */
-  var padding: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[String] = js.undefined
   
   /**
     * Behaviour of the element when the mouse cursor rests over it.
     */
-  var pointerEvents: js.UndefOr[String] = js.native
+  var pointerEvents: js.UndefOr[String] = js.undefined
   
   /**
     * Positioning of the element.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Alignment of the element text.
     */
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
   /**
     * Additional decoration of the element text.
     */
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
   
   /**
     * Outline style of the element text.
     */
-  var textOutline: js.UndefOr[String] = js.native
+  var textOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Line break style of the element text. Highcharts SVG elements support
     * `ellipsis` when a `width` is set.
     */
-  var textOverflow: js.UndefOr[String] = js.native
+  var textOverflow: js.UndefOr[String] = js.undefined
   
   /**
     * Top spacing of the element relative to the parent element.
     */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
   /**
     * Animated transition of selected element properties.
     */
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
   /**
     * Line break style of the element text.
     */
-  var whiteSpace: js.UndefOr[String] = js.native
+  var whiteSpace: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the element.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CSSObject {
   

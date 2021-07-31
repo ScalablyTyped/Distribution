@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePatchBaselinesResult extends StObject {
   
   /**
     * An array of PatchBaselineIdentity elements.
     */
-  var BaselineIdentities: js.UndefOr[PatchBaselineIdentityList] = js.native
+  var BaselineIdentities: js.UndefOr[PatchBaselineIdentityList] = js.undefined
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribePatchBaselinesResult {
   

@@ -3,19 +3,17 @@ package typings.pulumiAws
 import typings.pulumiAws.arnMod.ARN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redriveMod {
   
-  @js.native
   trait RedrivePolicy extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the dead-letter queue to which Amazon SQS moves messages after the value of
       * `maxReceiveCount` is exceeded.
       */
-    var deadLetterTargetArn: ARN = js.native
+    var deadLetterTargetArn: ARN
     
     /**
       * The number of times a message is delivered to the source queue before being moved to the dead-letter queue.
@@ -23,7 +21,7 @@ object redriveMod {
       * Note: The dead-letter queue of a FIFO queue must also be a FIFO queue. Similarly, the dead-letter queue of a
       * standard queue must also be a standard queue.
       */
-    var maxReceiveCount: Double = js.native
+    var maxReceiveCount: Double
   }
   object RedrivePolicy {
     

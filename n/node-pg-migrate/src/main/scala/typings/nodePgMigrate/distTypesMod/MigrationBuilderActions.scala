@@ -4,17 +4,15 @@ import typings.nodePgMigrate.nodePgMigrateBooleans.`false`
 import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationBuilderActions extends StObject {
   
-  var down: js.UndefOr[MigrationAction | `false`] = js.native
+  var down: js.UndefOr[MigrationAction | `false`] = js.undefined
   
-  var shorthands: js.UndefOr[ColumnDefinitions] = js.native
+  var shorthands: js.UndefOr[ColumnDefinitions] = js.undefined
   
-  var up: js.UndefOr[MigrationAction | `false`] = js.native
+  var up: js.UndefOr[MigrationAction | `false`] = js.undefined
 }
 object MigrationBuilderActions {
   

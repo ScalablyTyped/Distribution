@@ -2,14 +2,14 @@ package typings.c3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YAxisConfigurationWithTime extends YAxisConfiguration {
+trait YAxisConfigurationWithTime
+  extends StObject
+     with YAxisConfiguration {
   
   @JSName("tick")
-  var tick_YAxisConfigurationWithTime: js.UndefOr[YTickConfigurationWithTime] = js.native
+  var tick_YAxisConfigurationWithTime: js.UndefOr[YTickConfigurationWithTime] = js.undefined
 }
 object YAxisConfigurationWithTime {
   

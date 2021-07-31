@@ -4,23 +4,23 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isIntMod {
+  
+  @JSImport("class-validator/types/decorator/typechecker/IsInt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/typechecker/IsInt", "IS_INT")
   @js.native
   val IS_INT: /* "isInt" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/typechecker/IsInt", "IsInt")
-  @js.native
-  def IsInt_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/typechecker/IsInt", "IsInt")
-  @js.native
-  def IsInt_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsInt_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsInt")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsInt_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsInt")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/typechecker/IsInt", "isInt")
-  @js.native
-  def isInt(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isInt(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

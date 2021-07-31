@@ -4,13 +4,11 @@ import typings.walkdir.walkdirBooleans.`false`
 import typings.walkdir.walkdirBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined walkdir.walkdir/walkdir.WalkOptions & {  return_object :boolean | undefined} */
-  @js.native
   trait WalkOptionsreturnobjectbo extends StObject {
     
     /**
@@ -22,54 +20,54 @@ object anon {
           /* files */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*** 
       * default True. if false this will use stat insteqad of lstat and not find links at all.
       */
-    var find_links: js.UndefOr[Boolean] = js.native
+    var find_links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symlinks. default FALSE
       */
-    var follow_symlinks: js.UndefOr[Boolean] = js.native
+    var follow_symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
       */
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
     /**
       * only go one level deep. convenience param.
       */ 
-    var no_recurse: js.UndefOr[Boolean] = js.native
+    var no_recurse: js.UndefOr[Boolean] = js.undefined
     
     // if true the sync return will be in {path:stat} format instead of [path,path,...]
     /**
       * dont build up an internal list or object of all of the paths. this can be an important optimization for listing HUGE trees.
       */
-    var no_return: js.UndefOr[Boolean] = js.native
+    var no_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[Boolean] = js.native
+    var return_object: js.UndefOr[Boolean] = js.undefined
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
       * turning off this behavior may be required but at the same time may lead to hitting max_depth via link loop.
       */
-    var track_inodes: js.UndefOr[Boolean] = js.native
+    var track_inodes: js.UndefOr[Boolean] = js.undefined
   }
   object WalkOptionsreturnobjectbo {
     
@@ -147,7 +145,6 @@ object anon {
   }
   
   /* Inlined walkdir.walkdir/walkdir.WalkOptions & {  return_object :false | undefined} */
-  @js.native
   trait WalkOptionsreturnobjectfa extends StObject {
     
     /**
@@ -159,59 +156,59 @@ object anon {
           /* files */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*** 
       * default True. if false this will use stat insteqad of lstat and not find links at all.
       */
-    var find_links: js.UndefOr[Boolean] = js.native
+    var find_links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symlinks. default FALSE
       */
-    var follow_symlinks: js.UndefOr[Boolean] = js.native
+    var follow_symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
       */
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
     /**
       * only go one level deep. convenience param.
       */ 
-    var no_recurse: js.UndefOr[Boolean] = js.native
+    var no_recurse: js.UndefOr[Boolean] = js.undefined
     
     // if true the sync return will be in {path:stat} format instead of [path,path,...]
     /**
       * dont build up an internal list or object of all of the paths. this can be an important optimization for listing HUGE trees.
       */
-    var no_return: js.UndefOr[Boolean] = js.native
+    var no_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[Boolean] with js.UndefOr[`false`] = js.native
+    var return_object: js.UndefOr[Boolean] & js.UndefOr[`false`]
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
       * turning off this behavior may be required but at the same time may lead to hitting max_depth via link loop.
       */
-    var track_inodes: js.UndefOr[Boolean] = js.native
+    var track_inodes: js.UndefOr[Boolean] = js.undefined
   }
   object WalkOptionsreturnobjectfa {
     
     @scala.inline
-    def apply(return_object: js.UndefOr[Boolean] with js.UndefOr[`false`]): WalkOptionsreturnobjectfa = {
+    def apply(return_object: js.UndefOr[Boolean] & js.UndefOr[`false`]): WalkOptionsreturnobjectfa = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any])
       __obj.asInstanceOf[WalkOptionsreturnobjectfa]
     }
@@ -264,7 +261,7 @@ object anon {
       def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
       @scala.inline
-      def setReturn_object(value: js.UndefOr[Boolean] with js.UndefOr[`false`]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      def setReturn_object(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
@@ -281,7 +278,6 @@ object anon {
   }
   
   /* Inlined walkdir.walkdir/walkdir.WalkOptions & {  return_object :true} */
-  @js.native
   trait WalkOptionsreturnobjecttr extends StObject {
     
     /**
@@ -293,59 +289,59 @@ object anon {
           /* files */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*** 
       * default True. if false this will use stat insteqad of lstat and not find links at all.
       */
-    var find_links: js.UndefOr[Boolean] = js.native
+    var find_links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symlinks. default FALSE
       */
-    var follow_symlinks: js.UndefOr[Boolean] = js.native
+    var follow_symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
       */
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
     /**
       * only go one level deep. convenience param.
       */ 
-    var no_recurse: js.UndefOr[Boolean] = js.native
+    var no_recurse: js.UndefOr[Boolean] = js.undefined
     
     // if true the sync return will be in {path:stat} format instead of [path,path,...]
     /**
       * dont build up an internal list or object of all of the paths. this can be an important optimization for listing HUGE trees.
       */
-    var no_return: js.UndefOr[Boolean] = js.native
+    var no_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[Boolean] with `true` = js.native
+    var return_object: js.UndefOr[Boolean] & `true`
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
       * turning off this behavior may be required but at the same time may lead to hitting max_depth via link loop.
       */
-    var track_inodes: js.UndefOr[Boolean] = js.native
+    var track_inodes: js.UndefOr[Boolean] = js.undefined
   }
   object WalkOptionsreturnobjecttr {
     
     @scala.inline
-    def apply(return_object: js.UndefOr[Boolean] with `true`): WalkOptionsreturnobjecttr = {
+    def apply(return_object: js.UndefOr[Boolean] & `true`): WalkOptionsreturnobjecttr = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any])
       __obj.asInstanceOf[WalkOptionsreturnobjecttr]
     }
@@ -398,7 +394,7 @@ object anon {
       def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
       @scala.inline
-      def setReturn_object(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      def setReturn_object(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
@@ -415,7 +411,6 @@ object anon {
   }
   
   /* Inlined {  sync :false | undefined} & walkdir.walkdir/walkdir.WalkOptions */
-  @js.native
   trait syncfalseundefinedWalkOpt extends StObject {
     
     /**
@@ -427,59 +422,59 @@ object anon {
           /* files */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*** 
       * default True. if false this will use stat insteqad of lstat and not find links at all.
       */
-    var find_links: js.UndefOr[Boolean] = js.native
+    var find_links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symlinks. default FALSE
       */
-    var follow_symlinks: js.UndefOr[Boolean] = js.native
+    var follow_symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
       */
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
     /**
       * only go one level deep. convenience param.
       */ 
-    var no_recurse: js.UndefOr[Boolean] = js.native
+    var no_recurse: js.UndefOr[Boolean] = js.undefined
     
     // if true the sync return will be in {path:stat} format instead of [path,path,...]
     /**
       * dont build up an internal list or object of all of the paths. this can be an important optimization for listing HUGE trees.
       */
-    var no_return: js.UndefOr[Boolean] = js.native
+    var no_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[Boolean] = js.native
+    var return_object: js.UndefOr[Boolean] = js.undefined
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: js.UndefOr[`false`] with js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[`false`] & js.UndefOr[Boolean]
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
       * turning off this behavior may be required but at the same time may lead to hitting max_depth via link loop.
       */
-    var track_inodes: js.UndefOr[Boolean] = js.native
+    var track_inodes: js.UndefOr[Boolean] = js.undefined
   }
   object syncfalseundefinedWalkOpt {
     
     @scala.inline
-    def apply(sync: js.UndefOr[`false`] with js.UndefOr[Boolean]): syncfalseundefinedWalkOpt = {
+    def apply(sync: js.UndefOr[`false`] & js.UndefOr[Boolean]): syncfalseundefinedWalkOpt = {
       val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[syncfalseundefinedWalkOpt]
     }
@@ -538,7 +533,7 @@ object anon {
       def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
       
       @scala.inline
-      def setSync(value: js.UndefOr[`false`] with js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      def setSync(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
@@ -549,7 +544,6 @@ object anon {
   }
   
   /* Inlined {  sync :true,   return_object :false | undefined} & walkdir.walkdir/walkdir.WalkOptions */
-  @js.native
   trait synctruereturnobjectfalse extends StObject {
     
     /**
@@ -561,59 +555,59 @@ object anon {
           /* files */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*** 
       * default True. if false this will use stat insteqad of lstat and not find links at all.
       */
-    var find_links: js.UndefOr[Boolean] = js.native
+    var find_links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symlinks. default FALSE
       */
-    var follow_symlinks: js.UndefOr[Boolean] = js.native
+    var follow_symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
       */
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
     /**
       * only go one level deep. convenience param.
       */ 
-    var no_recurse: js.UndefOr[Boolean] = js.native
+    var no_recurse: js.UndefOr[Boolean] = js.undefined
     
     // if true the sync return will be in {path:stat} format instead of [path,path,...]
     /**
       * dont build up an internal list or object of all of the paths. this can be an important optimization for listing HUGE trees.
       */
-    var no_return: js.UndefOr[Boolean] = js.native
+    var no_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[`false`] with js.UndefOr[Boolean] = js.native
+    var return_object: js.UndefOr[`false`] & js.UndefOr[Boolean]
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: `true` with js.UndefOr[Boolean] = js.native
+    var sync: `true` & js.UndefOr[Boolean]
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
       * turning off this behavior may be required but at the same time may lead to hitting max_depth via link loop.
       */
-    var track_inodes: js.UndefOr[Boolean] = js.native
+    var track_inodes: js.UndefOr[Boolean] = js.undefined
   }
   object synctruereturnobjectfalse {
     
     @scala.inline
-    def apply(return_object: js.UndefOr[`false`] with js.UndefOr[Boolean], sync: `true` with js.UndefOr[Boolean]): synctruereturnobjectfalse = {
+    def apply(return_object: js.UndefOr[`false`] & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjectfalse = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[synctruereturnobjectfalse]
     }
@@ -666,10 +660,10 @@ object anon {
       def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
       @scala.inline
-      def setReturn_object(value: js.UndefOr[`false`] with js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      def setReturn_object(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSync(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
@@ -680,7 +674,6 @@ object anon {
   }
   
   /* Inlined {  sync :true,   return_object :true} & walkdir.walkdir/walkdir.WalkOptions */
-  @js.native
   trait synctruereturnobjecttrueW extends StObject {
     
     /**
@@ -692,59 +685,59 @@ object anon {
           /* files */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*** 
       * default True. if false this will use stat insteqad of lstat and not find links at all.
       */
-    var find_links: js.UndefOr[Boolean] = js.native
+    var find_links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symlinks. default FALSE
       */
-    var follow_symlinks: js.UndefOr[Boolean] = js.native
+    var follow_symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
       */
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
     /**
       * only go one level deep. convenience param.
       */ 
-    var no_recurse: js.UndefOr[Boolean] = js.native
+    var no_recurse: js.UndefOr[Boolean] = js.undefined
     
     // if true the sync return will be in {path:stat} format instead of [path,path,...]
     /**
       * dont build up an internal list or object of all of the paths. this can be an important optimization for listing HUGE trees.
       */
-    var no_return: js.UndefOr[Boolean] = js.native
+    var no_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: `true` with js.UndefOr[Boolean] = js.native
+    var return_object: `true` & js.UndefOr[Boolean]
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: `true` with js.UndefOr[Boolean] = js.native
+    var sync: `true` & js.UndefOr[Boolean]
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
       * turning off this behavior may be required but at the same time may lead to hitting max_depth via link loop.
       */
-    var track_inodes: js.UndefOr[Boolean] = js.native
+    var track_inodes: js.UndefOr[Boolean] = js.undefined
   }
   object synctruereturnobjecttrueW {
     
     @scala.inline
-    def apply(return_object: `true` with js.UndefOr[Boolean], sync: `true` with js.UndefOr[Boolean]): synctruereturnobjecttrueW = {
+    def apply(return_object: `true` & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjecttrueW = {
       val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[synctruereturnobjecttrueW]
     }
@@ -797,10 +790,10 @@ object anon {
       def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
       @scala.inline
-      def setReturn_object(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      def setReturn_object(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSync(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])

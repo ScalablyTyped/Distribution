@@ -4,13 +4,13 @@ import typings.googleAppsScript.GoogleAppsScript.Base.User
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SheetsOnChange extends AppsScriptEvent {
+trait SheetsOnChange
+  extends StObject
+     with AppsScriptEvent {
   
-  var changeType: SheetsOnChangeChangeType = js.native
+  var changeType: SheetsOnChangeChangeType
 }
 object SheetsOnChange {
   

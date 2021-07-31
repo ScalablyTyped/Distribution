@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetCellRanges
   * @see com.sun.star.sheet.CellFormatRanges
   */
-@js.native
 trait UniqueCellFormatRanges
-  extends XIndexAccess
+  extends StObject
+     with XIndexAccess
      with XEnumerationAccess
 object UniqueCellFormatRanges {
   

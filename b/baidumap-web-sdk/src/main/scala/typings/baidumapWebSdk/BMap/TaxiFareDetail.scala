@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaxiFareDetail extends StObject {
   
-  var initialFare: Double = js.native
+  var initialFare: Double
   
-  var totalFare: Double = js.native
+  var totalFare: Double
   
-  var unitFare: Double = js.native
+  var unitFare: Double
 }
 object TaxiFareDetail {
   

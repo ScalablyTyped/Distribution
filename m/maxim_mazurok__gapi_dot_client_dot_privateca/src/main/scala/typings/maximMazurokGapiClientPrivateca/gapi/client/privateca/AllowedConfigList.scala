@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowedConfigList extends StObject {
   
   /**
     * Required. All Certificates issued by the CertificateAuthority must match at least one listed ReusableConfigWrapper. If a ReusableConfigWrapper has an empty field, any value will be
     * allowed for that field.
     */
-  var allowedConfigValues: js.UndefOr[js.Array[ReusableConfigWrapper]] = js.native
+  var allowedConfigValues: js.UndefOr[js.Array[ReusableConfigWrapper]] = js.undefined
 }
 object AllowedConfigList {
   

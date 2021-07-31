@@ -7,19 +7,17 @@ import typings.jwplayer.jwplayerStrings.pre
 import typings.jwplayer.jwplayerStrings.vast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdRequestParam extends StObject {
   
-  var adposition: pre | mid | post = js.native
+  var adposition: pre | mid | post
   
-  var client: vast | googima = js.native
+  var client: vast | googima
   
-  var offset: pre | mid | post = js.native
+  var offset: pre | mid | post
   
-  var tag: String = js.native
+  var tag: String
 }
 object AdRequestParam {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPermissionsResponse extends StObject {
   
   /**
     * A continuation token, if this is not the first call to retrieve this list.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of principals and their permissions on the resource for the specified principal and resource types.
     */
-  var PrincipalResourcePermissions: js.UndefOr[PrincipalResourcePermissionsList] = js.native
+  var PrincipalResourcePermissions: js.UndefOr[PrincipalResourcePermissionsList] = js.undefined
 }
 object ListPermissionsResponse {
   

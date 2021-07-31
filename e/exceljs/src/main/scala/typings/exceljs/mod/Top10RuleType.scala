@@ -3,28 +3,27 @@ package typings.exceljs.mod
 import typings.exceljs.exceljsStrings.top10
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Top10RuleType
-  extends ConditionalFormattingBaseRule
+  extends StObject
+     with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var bottom: Boolean = js.native
+  var bottom: Boolean
   
-  var percent: Boolean = js.native
+  var percent: Boolean
   
-  var rank: Double = js.native
+  var rank: Double
   
-  var `type`: top10 = js.native
+  var `type`: top10
 }
 object Top10RuleType {
   
   @scala.inline
-  def apply(bottom: Boolean, percent: Boolean, priority: Double, rank: Double, `type`: top10): Top10RuleType = {
+  def apply(bottom: Boolean, percent: Boolean, priority: Double, rank: Double): Top10RuleType = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("top10")
     __obj.asInstanceOf[Top10RuleType]
   }
   

@@ -5,20 +5,19 @@ import typings.saucelabs.saucelabsStrings.ASCENDING
 import typings.saucelabs.saucelabsStrings.DESCENDING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationSettings
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var searchTerm: js.UndefOr[String] = js.native
+  var searchTerm: js.UndefOr[String] = js.undefined
   
-  var sortDirection: js.UndefOr[ASCENDING | DESCENDING] = js.native
+  var sortDirection: js.UndefOr[ASCENDING | DESCENDING] = js.undefined
 }
 object PaginationSettings {
   

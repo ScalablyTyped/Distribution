@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataInfo extends StObject {
   
   /**
     * The time at which the entry was created.
     */
-  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.native
+  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.undefined
   
   /**
     * The metadata key’s corresponding value.
     */
-  var MetadataValue: js.UndefOr[MetadataValueString] = js.native
+  var MetadataValue: js.UndefOr[MetadataValueString] = js.undefined
 }
 object MetadataInfo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentHyperParameterTuningJob extends StObject {
   
   /**
     * The name of the hyperparameter tuning job to be used as a starting point for a new hyperparameter tuning job.
     */
-  var HyperParameterTuningJobName: js.UndefOr[typings.awsSdk.sagemakerMod.HyperParameterTuningJobName] = js.native
+  var HyperParameterTuningJobName: js.UndefOr[typings.awsSdk.sagemakerMod.HyperParameterTuningJobName] = js.undefined
 }
 object ParentHyperParameterTuningJob {
   

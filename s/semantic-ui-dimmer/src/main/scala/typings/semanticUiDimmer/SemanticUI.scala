@@ -93,7 +93,6 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.variation
 import typings.semanticUiDimmer.semanticUiDimmerStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -184,52 +183,55 @@ object SemanticUI {
       * Hides dimmer
       */
     def apply(behavior: hide): JQuery = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
     def apply(behavior: setting, name: closable, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: closable, value: Unit): auto | Boolean = js.native
     def apply(behavior: setting, name: closable, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: dimmerName, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: dimmerName, value: String): JQuery = js.native
+    def apply(behavior: setting, name: dimmerName, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: dimmerName, value: `false`): JQuery = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double | DurationSettings = js.native
     def apply(behavior: setting, name: duration, value: DurationSettings): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): `false` | hover | click = js.native
+    def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: on, value: Unit): `false` | hover | click = js.native
     def apply(behavior: setting, name: on, value: `false`): JQuery = js.native
     def apply(behavior: setting, name: on, value: click): JQuery = js.native
     def apply(behavior: setting, name: on, value: hover): JQuery = js.native
-    def apply(behavior: setting, name: opacity, value: js.UndefOr[scala.Nothing]): auto | Double = js.native
     def apply(behavior: setting, name: opacity, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: opacity, value: Unit): auto | Double = js.native
     def apply(behavior: setting, name: opacity, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
     def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: template, value: js.UndefOr[scala.Nothing]): TemplateSettings = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: template, value: Unit): TemplateSettings = js.native
     def apply(behavior: setting, name: template, value: TemplateSettings): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: useCSS, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: transition, value: Unit): String = js.native
     def apply(behavior: setting, name: useCSS, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: variation, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: useCSS, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: variation, value: String): JQuery = js.native
+    def apply(behavior: setting, name: variation, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: variation, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: DimmerSettings): JQuery = js.native
     /**
       * Shows dimmer
@@ -247,48 +249,47 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'dimmable'
           */
-        var dimmable: String = js.native
+        var dimmable: String
         
         /**
           * @default 'dimmed'
           */
-        var dimmed: String = js.native
+        var dimmed: String
         
         /**
           * @default 'disabled'
           */
-        var disabled: String = js.native
+        var disabled: String
         
         /**
           * @default 'hide'
           */
-        var hide: String = js.native
+        var hide: String
         
         /**
           * @default 'page'
           */
-        var pageDimmer: String = js.native
+        var pageDimmer: String
         
         /**
           * @default 'show'
           */
-        var show: String = js.native
+        var show: String
         
         /**
           * @default 'transition'
           */
-        var transition: String = js.native
+        var transition: String
       }
       object Impl {
         
@@ -336,24 +337,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImpldimmable | PickImpldimmed | PickImpldisabled | PickImplpageDimmer | PickImplhideHide | PickImplshowShow | PickImpltransition) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImpldimmable | PickImpldimmed | PickImpldisabled | PickImplpageDimmer | PickImplhideHide | PickImplshowShow | PickImpltransition) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     object DurationSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 500
           */
-        var hide: Double = js.native
+        var hide: Double
         
         /**
           * @default 500
           */
-        var show: Double = js.native
+        var show: Double
       }
       object Impl {
         
@@ -374,20 +374,19 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplshow | PickImplhide) with PartialPickImplkeyofImplHide
+      type Param = (PickImplshow | PickImplhide) & PartialPickImplkeyofImplHide
     }
     type DurationSettings = typings.semanticUiDimmer.SemanticUI.Dimmer.DurationSettings.Param
     
     /* Inlined semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings.Param */
-    @js.native
     trait ErrorSettings extends StObject {
       
-      var method: String with js.UndefOr[String] = js.native
+      var method: String & js.UndefOr[String]
     }
     object ErrorSettings {
       
       @scala.inline
-      def apply(method: String with js.UndefOr[String]): ErrorSettings = {
+      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -396,16 +395,15 @@ object SemanticUI {
       implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
       }
       object Impl {
         
@@ -424,15 +422,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var method: String with js.UndefOr[String] = js.native
+        var method: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(method: String with js.UndefOr[String]): typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param = {
+        def apply(method: String & js.UndefOr[String]): typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param]
         }
@@ -441,30 +438,29 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.ui.dimmer > .content, .ui.dimmer > .content > .center'
           */
-        var content: String = js.native
+        var content: String
         
         /**
           * @default '.dimmable'
           */
-        var dimmable: String = js.native
+        var dimmable: String
         
         /**
           * @default '.ui.dimmer'
           */
-        var dimmer: String = js.native
+        var dimmer: String
       }
       object Impl {
         
@@ -488,24 +484,28 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpldimmable | PickImpldimmer | PickImplcontent) with PartialPickImplkeyofImplContent
+      type Param = (PickImpldimmable | PickImpldimmer | PickImplcontent) & PartialPickImplkeyofImplContent
     }
     type SelectorSettings = typings.semanticUiDimmer.SemanticUI.Dimmer.SelectorSettings.Param
     
     /* Inlined semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings.Param */
-    @js.native
     trait TemplateSettings extends StObject {
       
-      def dimmer(): JQuery = js.native
+      def dimmer(): JQuery
       @JSName("dimmer")
-      var dimmer_Original: js.Function0[JQuery] with js.UndefOr[js.Function0[JQuery]] = js.native
+      var dimmer_Original: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]
     }
     object TemplateSettings {
       
-      @js.native
+      @scala.inline
+      def apply(dimmer: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): TemplateSettings = {
+        val __obj = js.Dynamic.literal(dimmer = dimmer.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateSettings]
+      }
+      
       trait Impl extends StObject {
         
-        def dimmer(): JQuery = js.native
+        def dimmer(): JQuery
       }
       object Impl {
         
@@ -524,63 +524,83 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl, 'dimmer'> & std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        def dimmer(): JQuery = js.native
+        def dimmer(): JQuery
         @JSName("dimmer")
-        var dimmer_Original: js.Function0[JQuery] with js.UndefOr[js.Function0[JQuery]] = js.native
+        var dimmer_Original: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]
+      }
+      object Param {
+        
+        @scala.inline
+        def apply(dimmer: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param = {
+          val __obj = js.Dynamic.literal(dimmer = dimmer.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param]
+        }
+        
+        @scala.inline
+        implicit class ParamMutableBuilder[Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param] (val x: Self) extends AnyVal {
+          
+          @scala.inline
+          def setDimmer(value: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+        }
+      }
+      
+      @scala.inline
+      implicit class TemplateSettingsMutableBuilder[Self <: TemplateSettings] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setDimmer(value: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object DimmerSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Whether clicking on the dimmer should hide the dimmer (Defaults to auto, closable only when settings.on is not hover
         *
         * @default 'auto'
         */
-      var closable: auto | Boolean = js.native
+      var closable: auto | Boolean
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * If initializing a dimmer on a dimmable context, you can use dimmerName to distinguish between multiple dimmers in that context.
         *
         * @default false
         */
-      var dimmerName: `false` | String = js.native
+      var dimmerName: `false` | String
       
       /**
         * Animation duration of dimming. If an integer is used, that value will apply to both show and hide animations.
         */
-      var duration: Double | DurationSettings = js.native
+      var duration: Double | DurationSettings
       
       // endregion
       // region Debug Settings
       /**
         * Error messages displayed to console
         */
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -588,31 +608,31 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Can be set to hover or click to show/hide dimmer on dimmable event
         *
         * @default false
         */
-      var on: `false` | hover | click = js.native
+      var on: `false` | hover | click
       
       /**
         * Callback on element show or hide
         */
-      def onChange(): Unit = js.native
+      def onChange(): Unit
       
       /**
         * Callback on element hide
         */
-      def onHide(): Unit = js.native
+      def onHide(): Unit
       
       // endregion
       // region Callbacks
       /**
         * Callback on element show
         */
-      def onShow(): Unit = js.native
+      def onShow(): Unit
       
       // region Behavior
       /**
@@ -620,29 +640,29 @@ object SemanticUI {
         *
         * @default 'auto'
         */
-      var opacity: auto | Double = js.native
+      var opacity: auto | Double
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Object containing selectors used by module.
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Templates used to generate dimmer content
         */
-      var template: TemplateSettings = js.native
+      var template: TemplateSettings
       
       /**
         * Named transition to use when animating menu in and out. Fade and slide down are available without including ui transitions
@@ -650,26 +670,26 @@ object SemanticUI {
         * @default 'fade'
         * @see {@link http://semantic-ui.com/modules/transition.html}
         */
-      var transition: String = js.native
+      var transition: String
       
       /**
         * Whether to dim dimmers using CSS transitions.
         *
         * @default true
         */
-      var useCSS: Boolean = js.native
+      var useCSS: Boolean
       
       /**
         * Specify a variation to add when generating dimmer, like inverted
         *
         * @default false
         */
-      var variation: `false` | String = js.native
+      var variation: `false` | String
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -769,7 +789,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplopacity | PickImplvariation | PickImpldimmerName | PickImplclosable | PickImplon | PickImpluseCSS | PickImplduration | PickImpltransition | PickImplonShow | PickImplonHide | PickImplonChange | PickImplselector | PickImpltemplate | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplopacity | PickImplvariation | PickImpldimmerName | PickImplclosable | PickImplon | PickImpluseCSS | PickImplduration | PickImpltransition | PickImplonShow | PickImplonHide | PickImplonChange | PickImplselector | PickImpltemplate | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/dimmer.html#/settings}

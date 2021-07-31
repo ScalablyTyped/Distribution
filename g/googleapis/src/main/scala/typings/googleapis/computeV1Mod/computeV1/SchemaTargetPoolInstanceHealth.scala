@@ -2,19 +2,17 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetPoolInstanceHealth extends StObject {
   
-  var healthStatus: js.UndefOr[js.Array[SchemaHealthStatus]] = js.native
+  var healthStatus: js.UndefOr[js.Array[SchemaHealthStatus]] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#targetPoolInstanceHealth
     * when checking the health of an instance.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetPoolInstanceHealth {
   

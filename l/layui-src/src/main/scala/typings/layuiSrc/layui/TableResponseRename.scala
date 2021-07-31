@@ -2,21 +2,19 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableResponseRename extends StObject {
   
-  var countName: String = js.native
+  var countName: String
   
-  var dataName: String = js.native
+  var dataName: String
   
-  var msgName: String = js.native
+  var msgName: String
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusName: String = js.native
+  var statusName: String
 }
 object TableResponseRename {
   

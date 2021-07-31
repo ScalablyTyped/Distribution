@@ -95,53 +95,53 @@ import typings.typescriptServices.TypeScript.WhileStatementSyntax
 import typings.typescriptServices.TypeScript.WithStatementSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndentationTrackingWalker extends SyntaxWalker {
+trait IndentationTrackingWalker
+  extends StObject
+     with SyntaxWalker {
   
-  var _indentationNodeContextPool: js.Any = js.native
+  var _indentationNodeContextPool: js.Any
   
-  var _lastTriviaWasNewLine: js.Any = js.native
+  var _lastTriviaWasNewLine: js.Any
   
-  var _parent: js.Any = js.native
+  var _parent: js.Any
   
-  var _position: js.Any = js.native
+  var _position: js.Any
   
-  var _snapshot: js.Any = js.native
+  var _snapshot: js.Any
   
-  var _textSpan: js.Any = js.native
+  var _textSpan: js.Any
   
-  def forceIndentNextToken(tokenStart: Double): Unit = js.native
+  def forceIndentNextToken(tokenStart: Double): Unit
   
-  /* private */ def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+  /* private */ def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any
   
-  def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
+  def forceSkipIndentingNextToken(tokenStart: Double): Unit
   
-  /* private */ def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+  /* private */ def getCommentIndentationAmount(token: js.Any): js.Any
   
-  /* private */ def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+  /* private */ def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any
   
-  /* private */ def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+  /* private */ def getTokenIndentationAmount(token: js.Any): js.Any
   
-  def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
+  def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit
   
-  def indentationNodeContextPool(): IndentationNodeContextPool = js.native
+  def indentationNodeContextPool(): IndentationNodeContextPool
   
-  var options: FormattingOptions = js.native
+  var options: FormattingOptions
   
-  def parent(): IndentationNodeContext = js.native
+  def parent(): IndentationNodeContext
   
-  def position(): Double = js.native
+  def position(): Double
   
-  /* private */ def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+  /* private */ def shouldIndentBlockInParent(parent: js.Any): js.Any
   
-  def snapshot(): ITextSnapshot = js.native
+  def snapshot(): ITextSnapshot
   
-  def textSpan(): TextSpan = js.native
+  def textSpan(): TextSpan
   
-  def visitTokenInSpan(token: ISyntaxToken): Unit = js.native
+  def visitTokenInSpan(token: ISyntaxToken): Unit
 }
 object IndentationTrackingWalker {
   

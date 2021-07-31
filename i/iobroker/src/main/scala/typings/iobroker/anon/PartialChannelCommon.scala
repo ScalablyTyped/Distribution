@@ -4,37 +4,38 @@ import typings.iobroker.iobrokerBooleans.`true`
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.ChannelCommon> */
-@js.native
 trait PartialChannelCommon extends StObject {
   
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var desc: js.UndefOr[String] = js.native
+  var desc: js.UndefOr[String] = js.undefined
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[StringOrTranslated] = js.native
+  var name: js.UndefOr[StringOrTranslated] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object PartialChannelCommon {
   
   @scala.inline
-  def apply(): PartialChannelCommon = {
-    val __obj = js.Dynamic.literal()
+  def apply(custom: Unit): PartialChannelCommon = {
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialChannelCommon]
   }
   
   @scala.inline
   implicit class PartialChannelCommonMutableBuilder[Self <: PartialChannelCommon] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])

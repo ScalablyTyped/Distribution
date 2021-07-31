@@ -3,15 +3,15 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.TextTrackCueList.TextTrackCue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChaptersTrackMenuItemOptions extends MenuItemOptions {
+trait ChaptersTrackMenuItemOptions
+  extends StObject
+     with MenuItemOptions {
   
-  var cue: TextTrackCue = js.native
+  var cue: TextTrackCue
   
-  var track: TextTrack = js.native
+  var track: TextTrack
 }
 object ChaptersTrackMenuItemOptions {
   

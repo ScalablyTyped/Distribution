@@ -4,24 +4,23 @@ import typings.mapboxGl.mapboxGlStrings.canvas
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasSourceRaw
-  extends Source
+  extends StObject
+     with Source
      with CanvasSourceOptions
      with AnySourceData {
   
   @JSName("type")
-  var type_CanvasSourceRaw: canvas = js.native
+  var type_CanvasSourceRaw: canvas
 }
 object CanvasSourceRaw {
   
   @scala.inline
-  def apply(canvas: String | HTMLCanvasElement, coordinates: js.Array[js.Array[Double]], `type`: canvas): CanvasSourceRaw = {
+  def apply(canvas: String | HTMLCanvasElement, coordinates: js.Array[js.Array[Double]]): CanvasSourceRaw = {
     val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("canvas")
     __obj.asInstanceOf[CanvasSourceRaw]
   }
   

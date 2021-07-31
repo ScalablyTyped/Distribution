@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElevationResult extends StObject {
   
-  var elevation: Double = js.native
+  var elevation: Double
   
-  var location: LatLng = js.native
+  var location: LatLng
   
-  var resolution: Double = js.native
+  var resolution: Double
 }
 object ElevationResult {
   

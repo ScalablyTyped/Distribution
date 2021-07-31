@@ -3,107 +3,87 @@ package typings.wordpressUrl
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/url", "addQueryArgs")
+  @JSImport("@wordpress/url", JSImport.Namespace)
   @js.native
-  def addQueryArgs(): String = js.native
-  @JSImport("@wordpress/url", "addQueryArgs")
-  @js.native
-  def addQueryArgs(url: js.UndefOr[scala.Nothing], args: js.Object): String = js.native
-  @JSImport("@wordpress/url", "addQueryArgs")
-  @js.native
-  def addQueryArgs(url: String): String = js.native
-  @JSImport("@wordpress/url", "addQueryArgs")
-  @js.native
-  def addQueryArgs(url: String, args: js.Object): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/url", "cleanForSlug")
-  @js.native
-  def cleanForSlug(string: String): String = js.native
+  @scala.inline
+  def addQueryArgs(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")().asInstanceOf[String]
+  @scala.inline
+  def addQueryArgs(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def addQueryArgs(url: String, args: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def addQueryArgs(url: Unit, args: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/url", "filterURLForDisplay")
-  @js.native
-  def filterURLForDisplay(url: String): String = js.native
+  @scala.inline
+  def cleanForSlug(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanForSlug")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/url", "getAuthority")
-  @js.native
-  def getAuthority(url: String): String | Unit = js.native
+  @scala.inline
+  def filterURLForDisplay(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("filterURLForDisplay")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/url", "getFragment")
-  @js.native
-  def getFragment(url: String): String | Unit = js.native
+  @scala.inline
+  def getAuthority(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthority")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
-  @JSImport("@wordpress/url", "getPath")
-  @js.native
-  def getPath(url: String): String | Unit = js.native
+  @scala.inline
+  def getFragment(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFragment")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
-  @JSImport("@wordpress/url", "getPathAndQueryString")
-  @js.native
-  def getPathAndQueryString(url: String): String = js.native
+  @scala.inline
+  def getPath(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
-  @JSImport("@wordpress/url", "getProtocol")
-  @js.native
-  def getProtocol(url: String): String | Unit = js.native
+  @scala.inline
+  def getPathAndQueryString(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathAndQueryString")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/url", "getQueryArg")
-  @js.native
+  @scala.inline
+  def getProtocol(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtocol")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  
+  @scala.inline
   def getQueryArg(url: String, arg: String): js.UndefOr[
     String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])
+  ]]
   
-  @JSImport("@wordpress/url", "getQueryString")
-  @js.native
-  def getQueryString(url: String): String | Unit = js.native
+  @scala.inline
+  def getQueryString(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryString")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
-  @JSImport("@wordpress/url", "hasQueryArg")
-  @js.native
-  def hasQueryArg(url: String, arg: String): Boolean = js.native
+  @scala.inline
+  def hasQueryArg(url: String, arg: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "isEmail")
-  @js.native
-  def isEmail(email: String): Boolean = js.native
+  @scala.inline
+  def isEmail(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "isURL")
-  @js.native
-  def isURL(url: String): Boolean = js.native
+  @scala.inline
+  def isURL(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "isValidAuthority")
-  @js.native
-  def isValidAuthority(authority: String): Boolean = js.native
+  @scala.inline
+  def isValidAuthority(authority: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAuthority")(authority.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "isValidFragment")
-  @js.native
-  def isValidFragment(fragment: String): Boolean = js.native
+  @scala.inline
+  def isValidFragment(fragment: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFragment")(fragment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "isValidPath")
-  @js.native
-  def isValidPath(path: String): Boolean = js.native
+  @scala.inline
+  def isValidPath(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPath")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "isValidProtocol")
-  @js.native
-  def isValidProtocol(protocol: String): Boolean = js.native
+  @scala.inline
+  def isValidProtocol(protocol: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidProtocol")(protocol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "isValidQueryString")
-  @js.native
-  def isValidQueryString(queryString: String): Boolean = js.native
+  @scala.inline
+  def isValidQueryString(queryString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidQueryString")(queryString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/url", "prependHTTP")
-  @js.native
-  def prependHTTP(url: String): String = js.native
+  @scala.inline
+  def prependHTTP(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prependHTTP")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/url", "removeQueryArgs")
-  @js.native
-  def removeQueryArgs(url: String, args: String*): String = js.native
+  @scala.inline
+  def removeQueryArgs(url: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@wordpress/url", "safeDecodeURI")
-  @js.native
-  def safeDecodeURI(uri: String): String = js.native
+  @scala.inline
+  def safeDecodeURI(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeDecodeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/url", "safeDecodeURIComponent")
-  @js.native
-  def safeDecodeURIComponent(uriComponent: String): String = js.native
+  @scala.inline
+  def safeDecodeURIComponent(uriComponent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeDecodeURIComponent")(uriComponent.asInstanceOf[js.Any]).asInstanceOf[String]
 }

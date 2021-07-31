@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GdataDiffChecksumsResponse extends StObject {
   
   /** gdata */
-  var checksumsLocation: js.UndefOr[GdataCompositeMedia] = js.native
+  var checksumsLocation: js.UndefOr[GdataCompositeMedia] = js.undefined
   
   /** gdata */
-  var chunkSizeBytes: js.UndefOr[String] = js.native
+  var chunkSizeBytes: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var objectLocation: js.UndefOr[GdataCompositeMedia] = js.native
+  var objectLocation: js.UndefOr[GdataCompositeMedia] = js.undefined
   
   /** gdata */
-  var objectSizeBytes: js.UndefOr[String] = js.native
+  var objectSizeBytes: js.UndefOr[String] = js.undefined
   
   /** gdata */
-  var objectVersion: js.UndefOr[String] = js.native
+  var objectVersion: js.UndefOr[String] = js.undefined
 }
 object GdataDiffChecksumsResponse {
   

@@ -2,15 +2,13 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlushUpdates extends StObject {
   
-  def flushUpdates(): Unit = js.native
+  def flushUpdates(): Unit
   
-  def scheduleUpdate(callback: js.Function0[Unit]): Unit = js.native
+  def scheduleUpdate(callback: js.Function0[Unit]): Unit
 }
 object FlushUpdates {
   

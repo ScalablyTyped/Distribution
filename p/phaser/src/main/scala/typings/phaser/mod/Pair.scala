@@ -5,7 +5,6 @@ import typings.phaser.MatterJS.ICollisionData
 import typings.phaser.MatterJS.IPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Pair")
 @js.native
 class Pair ()
-  extends typings.phaser.MatterJS.Pair
+  extends StObject
+     with typings.phaser.MatterJS.Pair
 object Pair {
+  
+  @JSImport("matter", "Pair")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a pair.
@@ -27,9 +31,8 @@ object Pair {
     * @return {IPair} A new pair
     */
   /* static member */
-  @JSImport("matter", "Pair.create")
-  @js.native
-  def create(collision: ICollisionData, timestamp: Double): IPair = js.native
+  @scala.inline
+  def create(collision: ICollisionData, timestamp: Double): IPair = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(collision.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[IPair]
   
   /**
     * Get the id for the given pair.
@@ -39,9 +42,8 @@ object Pair {
     * @return {string} Unique pairId
     */
   /* static member */
-  @JSImport("matter", "Pair.id")
-  @js.native
-  def id(bodyA: BodyType, bodyB: BodyType): String = js.native
+  @scala.inline
+  def id(bodyA: BodyType, bodyB: BodyType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("id")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Set a pair as active or inactive.
@@ -51,9 +53,8 @@ object Pair {
     * @param {number} timestamp
     */
   /* static member */
-  @JSImport("matter", "Pair.setActive")
-  @js.native
-  def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit = js.native
+  @scala.inline
+  def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setActive")(pair.asInstanceOf[js.Any], isActive.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Updates a pair given a collision.
@@ -63,7 +64,6 @@ object Pair {
     * @param {number} timestamp
     */
   /* static member */
-  @JSImport("matter", "Pair.update")
-  @js.native
-  def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit = js.native
+  @scala.inline
+  def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(pair.asInstanceOf[js.Any], collision.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

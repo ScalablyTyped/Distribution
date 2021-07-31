@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersPaymentOptions extends StObject {
   
   /**
     * Info for an Action-provided payment instrument for display on receipt.
     */
-  var actionProvidedOptions: js.UndefOr[GoogleActionsV2OrdersActionProvidedPaymentOptions] = js.native
+  var actionProvidedOptions: js.UndefOr[GoogleActionsV2OrdersActionProvidedPaymentOptions] = js.undefined
   
   /**
     * Requirements for Google provided payment instrument.
     */
-  var googleProvidedOptions: js.UndefOr[GoogleActionsV2OrdersGoogleProvidedPaymentOptions] = js.native
+  var googleProvidedOptions: js.UndefOr[GoogleActionsV2OrdersGoogleProvidedPaymentOptions] = js.undefined
 }
 object GoogleActionsV2OrdersPaymentOptions {
   

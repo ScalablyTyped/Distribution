@@ -4,7 +4,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,42 +15,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var item = form.addDateItem();
   *     item.setTitle('When were you born?');
   */
-@js.native
 trait DateItem extends StObject {
   
-  def createResponse(response: Date): ItemResponse = js.native
+  def createResponse(response: Date): ItemResponse
   
-  def duplicate(): DateItem = js.native
+  def duplicate(): DateItem
   
-  def getGeneralFeedback(): QuizFeedback = js.native
+  def getGeneralFeedback(): QuizFeedback
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getPoints(): Integer = js.native
+  def getPoints(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def includesYear(): Boolean = js.native
+  def includesYear(): Boolean
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setGeneralFeedback(feedback: QuizFeedback): DateItem = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): DateItem
   
-  def setHelpText(text: String): DateItem = js.native
+  def setHelpText(text: String): DateItem
   
-  def setIncludesYear(enableYear: Boolean): DateItem = js.native
+  def setIncludesYear(enableYear: Boolean): DateItem
   
-  def setPoints(points: Integer): DateItem = js.native
+  def setPoints(points: Integer): DateItem
   
-  def setRequired(enabled: Boolean): DateItem = js.native
+  def setRequired(enabled: Boolean): DateItem
   
-  def setTitle(title: String): DateItem = js.native
+  def setTitle(title: String): DateItem
 }
 object DateItem {
   

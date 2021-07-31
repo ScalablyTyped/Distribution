@@ -3,7 +3,6 @@ package typings.istanbulLibReport
 import typings.istanbulLibReport.mod.Summarizers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object istanbulLibReportStrings {
@@ -14,12 +13,16 @@ object istanbulLibReportStrings {
   def branches: branches = "branches".asInstanceOf[branches]
   
   @js.native
-  sealed trait defaultSummarizer extends Summarizers
+  sealed trait defaultSummarizer
+    extends StObject
+       with Summarizers
   @scala.inline
   def defaultSummarizer: defaultSummarizer = "defaultSummarizer".asInstanceOf[defaultSummarizer]
   
   @js.native
-  sealed trait flat extends Summarizers
+  sealed trait flat
+    extends StObject
+       with Summarizers
   @scala.inline
   def flat: flat = "flat".asInstanceOf[flat]
   
@@ -34,12 +37,16 @@ object istanbulLibReportStrings {
   def lines: lines = "lines".asInstanceOf[lines]
   
   @js.native
-  sealed trait nested extends Summarizers
+  sealed trait nested
+    extends StObject
+       with Summarizers
   @scala.inline
   def nested: nested = "nested".asInstanceOf[nested]
   
   @js.native
-  sealed trait pkg extends Summarizers
+  sealed trait pkg
+    extends StObject
+       with Summarizers
   @scala.inline
   def pkg: pkg = "pkg".asInstanceOf[pkg]
   

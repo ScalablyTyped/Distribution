@@ -12,7 +12,7 @@ Do calculations with Complex numbers
 | Keywords           | Complex Numbers, Numbers, Math, Calculus |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5269 |
+| # downloads        | 5017 |
 | # stars            | 1 |
 
 ## Links

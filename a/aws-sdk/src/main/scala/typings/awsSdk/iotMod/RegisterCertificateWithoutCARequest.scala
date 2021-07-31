@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterCertificateWithoutCARequest extends StObject {
   
   /**
     * The certificate data, in PEM format.
     */
-  var certificatePem: CertificatePem = js.native
+  var certificatePem: CertificatePem
   
   /**
     * The status of the register certificate request.
     */
-  var status: js.UndefOr[CertificateStatus] = js.native
+  var status: js.UndefOr[CertificateStatus] = js.undefined
 }
 object RegisterCertificateWithoutCARequest {
   

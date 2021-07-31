@@ -10,9 +10,9 @@ Create beautiful JavaScript charts with one line of Vue
 | ------------------ | :-------------: |
 | Full name          | vue-chartkick |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 6 |
-| # downloads        | 316016 |
+| # downloads        | 305266 |
 | # stars            | 1 |
 
 ## Links

@@ -14,7 +14,6 @@ import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardGroupMod extends Shortcut {
@@ -23,9 +22,9 @@ object cardGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[CardGroupProps] = js.native
   
-  @js.native
   trait CardGroupProps
-    extends StrictCardGroupProps
+    extends StObject
+       with StrictCardGroupProps
        with /* key */ StringDictionary[js.Any]
   object CardGroupProps {
     
@@ -36,38 +35,37 @@ object cardGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictCardGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A group of cards can center itself inside its container. */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A group of cards can double its column width for mobile. */
-    var doubling: js.UndefOr[Boolean] = js.native
+    var doubling: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand array of props for Card. */
-    var items: js.UndefOr[SemanticShorthandCollection[CardProps]] = js.native
+    var items: js.UndefOr[SemanticShorthandCollection[CardProps]] = js.undefined
     
     /** A group of cards can set how many cards should exist in a row. */
-    var itemsPerRow: js.UndefOr[SemanticWIDTHS] = js.native
+    var itemsPerRow: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** A group of cards can automatically stack rows to a single columns on mobile devices. */
-    var stackable: js.UndefOr[Boolean] = js.native
+    var stackable: js.UndefOr[Boolean] = js.undefined
     
     /** A card group can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.native
+    var textAlign: js.UndefOr[center | left | right] = js.undefined
   }
   object StrictCardGroupProps {
     

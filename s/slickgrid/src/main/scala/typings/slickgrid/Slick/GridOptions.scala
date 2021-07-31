@@ -2,239 +2,237 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridOptions[T /* <: SlickData */] extends StObject {
   
-  var addNewRowCssClass: js.UndefOr[String] = js.native
+  var addNewRowCssClass: js.UndefOr[String] = js.undefined
   
-  var alwaysAllowHorizontalScroll: js.UndefOr[Boolean] = js.native
+  var alwaysAllowHorizontalScroll: js.UndefOr[Boolean] = js.undefined
   
-  var alwaysShowVerticalScroll: js.UndefOr[Boolean] = js.native
+  var alwaysShowVerticalScroll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Delay after which cell editor is loaded. Ignored unless asyncEditorLoading is true.
     **/
-  var asyncEditorLoadDelay: js.UndefOr[Double] = js.native
+  var asyncEditorLoadDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Makes cell editors load asynchronously after a small delay. This greatly increases keyboard navigation speed.
     **/
-  var asyncEditorLoading: js.UndefOr[Boolean] = js.native
+  var asyncEditorLoading: js.UndefOr[Boolean] = js.undefined
   
-  var asyncPostRenderCleanupDelay: js.UndefOr[Double] = js.native
+  var asyncPostRenderCleanupDelay: js.UndefOr[Double] = js.undefined
   
   /**
     *
     **/
-  var asyncPostRenderDelay: js.UndefOr[Double] = js.native
+  var asyncPostRenderDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Cell will not automatically go into edit mode when selected.
     **/
-  var autoEdit: js.UndefOr[Boolean] = js.native
+  var autoEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     **/
-  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A CSS class to apply to flashing cells via flashCell().
     **/
-  var cellFlashingCssClass: js.UndefOr[String] = js.native
+  var cellFlashingCssClass: js.UndefOr[String] = js.undefined
   
   /**
     * A CSS class to apply to cells highlighted via setHighlightedCells().
     **/
-  var cellHighlightCssClass: js.UndefOr[String] = js.native
+  var cellHighlightCssClass: js.UndefOr[String] = js.undefined
   
-  var createFooterRow: js.UndefOr[Boolean] = js.native
+  var createFooterRow: js.UndefOr[Boolean] = js.undefined
   
-  var createPreHeaderPanel: js.UndefOr[Boolean] = js.native
-  
-  /**
-    *
-    **/
-  var dataItemColumnValueExtractor: js.UndefOr[js.Function2[/* item */ js.Any, /* columnDef */ js.Any, _]] = js.native
+  var createPreHeaderPanel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     **/
-  var defaultColumnWidth: js.UndefOr[Double] = js.native
+  var dataItemColumnValueExtractor: js.UndefOr[js.Function2[/* item */ js.Any, /* columnDef */ js.Any, js.Any]] = js.undefined
   
   /**
     *
     **/
-  var defaultFormatter: js.UndefOr[Formatter[T]] = js.native
+  var defaultColumnWidth: js.UndefOr[Double] = js.undefined
   
-  var doPaging: js.UndefOr[Boolean] = js.native
+  /**
+    *
+    **/
+  var defaultFormatter: js.UndefOr[Formatter[T]] = js.undefined
+  
+  var doPaging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Not listed as a default under options in slick.grid.js
     **/
-  var editCommandHandler: js.UndefOr[js.Any] = js.native
+  var editCommandHandler: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
     **/
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
-  var editorCellNavOnLRKeys: js.UndefOr[Boolean] = js.native
+  var editorCellNavOnLRKeys: js.UndefOr[Boolean] = js.undefined
   
   // queueAndExecuteCommand
   /**
     * A factory object responsible to creating an editor for a given cell. Must implement getEditor(column).
     **/
-  var editorFactory: js.UndefOr[EditorFactory] = js.native
+  var editorFactory: js.UndefOr[EditorFactory] = js.undefined
   
   /**
     * A Slick.EditorLock instance to use for controlling concurrent data edits.
     **/
-  var editorLock: js.UndefOr[EditorLock[T]] = js.native
+  var editorLock: js.UndefOr[EditorLock[T]] = js.undefined
   
-  var emulatePagingWhenScrolling: js.UndefOr[Boolean] = js.native
+  var emulatePagingWhenScrolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, a blank row will be displayed at the bottom - typing values in that row will add a new one. Must subscribe to onAddNewRow to save values.
     **/
-  var enableAddRow: js.UndefOr[Boolean] = js.native
+  var enableAddRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, async post rendering will occur and asyncPostRender delegates on columns will be called.
     **/
-  var enableAsyncPostRender: js.UndefOr[Boolean] = js.native
+  var enableAsyncPostRender: js.UndefOr[Boolean] = js.undefined
   
-  var enableAsyncPostRenderCleanup: js.UndefOr[Boolean] = js.native
+  var enableAsyncPostRenderCleanup: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Appears to enable cell virtualisation for optimised speed with large datasets
     **/
-  var enableCellNavigation: js.UndefOr[Boolean] = js.native
+  var enableCellNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
     **/
-  var enableCellRangeSelection: js.UndefOr[js.Any] = js.native
+  var enableCellRangeSelection: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
     **/
-  var enableColumnReorder: js.UndefOr[Boolean] = js.native
+  var enableColumnReorder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
     **/
-  var enableRowReordering: js.UndefOr[js.Any] = js.native
+  var enableRowReordering: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
     **/
-  var enableTextSelectionOnCells: js.UndefOr[Boolean] = js.native
+  var enableTextSelectionOnCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @see Example: Explicit Initialization
     **/
-  var explicitInitialization: js.UndefOr[Boolean] = js.native
+  var explicitInitialization: js.UndefOr[Boolean] = js.undefined
   
-  var footerRowHeight: js.UndefOr[Double] = js.native
+  var footerRowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Force column sizes to fit into the container (preventing horizontal scrolling). Effectively sets column width to be 1/Number of Columns which on small containers may not be desirable
     **/
-  var forceFitColumns: js.UndefOr[Boolean] = js.native
+  var forceFitColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     **/
-  var forceSyncScrolling: js.UndefOr[Boolean] = js.native
+  var forceSyncScrolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A factory object responsible to creating a formatter for a given cell. Must implement getFormatter(column).
     **/
-  var formatterFactory: js.UndefOr[FormatterFactory[T]] = js.native
+  var formatterFactory: js.UndefOr[FormatterFactory[T]] = js.undefined
   
-  var frozenBottom: js.UndefOr[Boolean] = js.native
+  var frozenBottom: js.UndefOr[Boolean] = js.undefined
   
-  var frozenColumn: js.UndefOr[Double] = js.native
+  var frozenColumn: js.UndefOr[Double] = js.undefined
   
-  var frozenRow: js.UndefOr[Double] = js.native
+  var frozenRow: js.UndefOr[Double] = js.undefined
   
   /**
     * Will expand the table row divs to the full width of the container, table cell divs will remain aligned to the left
     **/
-  var fullWidthRows: js.UndefOr[Boolean] = js.native
+  var fullWidthRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     **/
-  var headerRowHeight: js.UndefOr[Double] = js.native
+  var headerRowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     *
     **/
-  var leaveSpaceForNewRows: js.UndefOr[Boolean] = js.native
+  var leaveSpaceForNewRows: js.UndefOr[Boolean] = js.undefined
   
-  var minRowBuffer: js.UndefOr[Double] = js.native
+  var minRowBuffer: js.UndefOr[Double] = js.undefined
   
   /**
     * @see Example: Multi-Column Sort
     **/
-  var multiColumnSort: js.UndefOr[Boolean] = js.native
+  var multiColumnSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     **/
-  var multiSelect: js.UndefOr[Boolean] = js.native
+  var multiSelect: js.UndefOr[Boolean] = js.undefined
   
-  var numberedMultiColumnSort: js.UndefOr[Boolean] = js.native
+  var numberedMultiColumnSort: js.UndefOr[Boolean] = js.undefined
   
-  var preHeaderPanelHeight: js.UndefOr[Double] = js.native
+  var preHeaderPanelHeight: js.UndefOr[Double] = js.undefined
   
-  var preserveCopiedSelectionOnPaste: js.UndefOr[Boolean] = js.native
-  
-  /**
-    *
-    **/
-  var rowHeight: js.UndefOr[Double] = js.native
+  var preserveCopiedSelectionOnPaste: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     **/
-  var selectedCellCssClass: js.UndefOr[String] = js.native
-  
-  var showCellSelection: js.UndefOr[Boolean] = js.native
-  
-  var showFooterRow: js.UndefOr[Boolean] = js.native
+  var rowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     *
     **/
-  var showHeaderRow: js.UndefOr[Boolean] = js.native
+  var selectedCellCssClass: js.UndefOr[String] = js.undefined
   
-  var showPreHeaderPanel: js.UndefOr[Boolean] = js.native
+  var showCellSelection: js.UndefOr[Boolean] = js.undefined
   
-  var showTopPanel: js.UndefOr[Boolean] = js.native
+  var showFooterRow: js.UndefOr[Boolean] = js.undefined
   
-  var sortColNumberInSeparateSpan: js.UndefOr[Boolean] = js.native
+  /**
+    *
+    **/
+  var showHeaderRow: js.UndefOr[Boolean] = js.undefined
   
-  var suppressActiveCellChangeOnEdit: js.UndefOr[Boolean] = js.native
+  var showPreHeaderPanel: js.UndefOr[Boolean] = js.undefined
+  
+  var showTopPanel: js.UndefOr[Boolean] = js.undefined
+  
+  var sortColNumberInSeparateSpan: js.UndefOr[Boolean] = js.undefined
+  
+  var suppressActiveCellChangeOnEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the column being resized will change its width as the mouse is dragging the resize handle. If false, the column will resize after mouse drag ends.
     **/
-  var syncColumnCellResize: js.UndefOr[Boolean] = js.native
+  var syncColumnCellResize: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     **/
-  var topPanelHeight: js.UndefOr[Double] = js.native
+  var topPanelHeight: js.UndefOr[Double] = js.undefined
   
-  var tristateMultiColumnSort: js.UndefOr[Boolean] = js.native
+  var tristateMultiColumnSort: js.UndefOr[Boolean] = js.undefined
   
-  var viewportClass: js.UndefOr[String] = js.native
+  var viewportClass: js.UndefOr[String] = js.undefined
 }
 object GridOptions {
   
@@ -245,7 +243,7 @@ object GridOptions {
   }
   
   @scala.inline
-  implicit class GridOptionsMutableBuilder[Self <: GridOptions[_], T /* <: SlickData */] (val x: Self with GridOptions[T]) extends AnyVal {
+  implicit class GridOptionsMutableBuilder[Self <: GridOptions[?], T /* <: SlickData */] (val x: Self & GridOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAddNewRowCssClass(value: String): Self = StObject.set(x, "addNewRowCssClass", value.asInstanceOf[js.Any])
@@ -326,7 +324,7 @@ object GridOptions {
     def setCreatePreHeaderPanelUndefined: Self = StObject.set(x, "createPreHeaderPanel", js.undefined)
     
     @scala.inline
-    def setDataItemColumnValueExtractor(value: (/* item */ js.Any, /* columnDef */ js.Any) => _): Self = StObject.set(x, "dataItemColumnValueExtractor", js.Any.fromFunction2(value))
+    def setDataItemColumnValueExtractor(value: (/* item */ js.Any, /* columnDef */ js.Any) => js.Any): Self = StObject.set(x, "dataItemColumnValueExtractor", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDataItemColumnValueExtractorUndefined: Self = StObject.set(x, "dataItemColumnValueExtractor", js.undefined)

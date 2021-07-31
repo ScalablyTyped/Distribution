@@ -2,10 +2,8 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeoutConfig extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TimeoutConfig extends StObject {
     *
     * **NOTE: We recommend that you share Suspense Config between different modules.**
     */
-  var timeoutMs: Double = js.native
+  var timeoutMs: Double
 }
 object TimeoutConfig {
   

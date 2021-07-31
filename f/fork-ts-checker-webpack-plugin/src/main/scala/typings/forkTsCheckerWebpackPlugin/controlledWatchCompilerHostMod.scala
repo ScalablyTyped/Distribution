@@ -11,317 +11,291 @@ import typings.typescript.mod.WatchCompilerHostOfFilesAndCompilerOptions
 import typings.typescript.mod.WatchStatusReporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlledWatchCompilerHostMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", JSImport.Namespace)
   @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](typescript: Typeofts, parsedCommandLine: ParsedCommandLine, system: ControlledTypeScriptSystem): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](typescript: Typeofts, parsedCommandLine: ParsedCommandLine, system: ControlledTypeScriptSystem): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: js.UndefOr[scala.Nothing],
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
+    reportDiagnostic: Unit,
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
+    reportDiagnostic: Unit,
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
+    reportDiagnostic: Unit,
+    reportWatchStatus: Unit,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: Unit,
+    reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: WatchStatusReporter,
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
+    reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
+    reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
+    reportDiagnostic: Unit,
+    reportWatchStatus: WatchStatusReporter,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: Unit,
     reportDiagnostic: DiagnosticReporter
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
     reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: js.UndefOr[scala.Nothing],
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
     reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
+    reportDiagnostic: DiagnosticReporter,
+    reportWatchStatus: Unit,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: Unit,
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
-    reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: WatchStatusReporter,
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
-    createProgram: js.UndefOr[scala.Nothing],
+    createProgram: Unit,
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: Unit,
+    reportDiagnostic: DiagnosticReporter,
+    reportWatchStatus: WatchStatusReporter,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: js.UndefOr[scala.Nothing],
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    reportDiagnostic: Unit,
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    reportDiagnostic: Unit,
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
+    reportDiagnostic: Unit,
+    reportWatchStatus: Unit,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: CreateProgram_[TProgram],
+    reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
-    reportWatchStatus: WatchStatusReporter,
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
+    reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: js.UndefOr[scala.Nothing],
+    reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: CreateProgram_[TProgram],
+    reportDiagnostic: Unit,
+    reportWatchStatus: WatchStatusReporter,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
     reportDiagnostic: DiagnosticReporter
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
     reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: js.UndefOr[scala.Nothing],
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
     reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: js.UndefOr[scala.Nothing],
+    reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: CreateProgram_[TProgram],
+    reportDiagnostic: DiagnosticReporter,
+    reportWatchStatus: Unit,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
@@ -329,21 +303,8 @@ object controlledWatchCompilerHostMod {
     createProgram: CreateProgram_[TProgram],
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
-    typescript: Typeofts,
-    parsedCommandLine: ParsedCommandLine,
-    system: ControlledTypeScriptSystem,
-    createProgram: CreateProgram_[TProgram],
-    reportDiagnostic: DiagnosticReporter,
-    reportWatchStatus: WatchStatusReporter,
-    afterProgramCreate: js.UndefOr[scala.Nothing],
-    hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
@@ -352,9 +313,8 @@ object controlledWatchCompilerHostMod {
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledWatchCompilerHost", "createControlledWatchCompilerHost")
-  @js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
   def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
@@ -364,5 +324,16 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
-  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = js.native
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  @scala.inline
+  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+    typescript: Typeofts,
+    parsedCommandLine: ParsedCommandLine,
+    system: ControlledTypeScriptSystem,
+    createProgram: CreateProgram_[TProgram],
+    reportDiagnostic: DiagnosticReporter,
+    reportWatchStatus: WatchStatusReporter,
+    afterProgramCreate: Unit,
+    hostExtensions: js.Array[TypeScriptHostExtension]
+  ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
 }

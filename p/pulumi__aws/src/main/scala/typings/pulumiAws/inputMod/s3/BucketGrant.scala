@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketGrant extends StObject {
   
   /**
     * Canonical user id to grant for. Used only when `type` is `CanonicalUser`.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * List of permissions to apply for grantee. Valid values are `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
     */
-  var permissions: Input[js.Array[Input[String]]] = js.native
+  var permissions: Input[js.Array[Input[String]]]
   
   /**
     * - Type of grantee to apply for. Valid values are `CanonicalUser` and `Group`. `AmazonCustomerByEmail` is not supported.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
   
   /**
     * Uri address to grant for. Used only when `type` is `Group`.
     */
-  var uri: js.UndefOr[Input[String]] = js.native
+  var uri: js.UndefOr[Input[String]] = js.undefined
 }
 object BucketGrant {
   

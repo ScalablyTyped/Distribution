@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMeetingDialOutResponse extends StObject {
   
   /**
     * Unique ID that tracks API calls.
     */
-  var TransactionId: js.UndefOr[GuidString] = js.native
+  var TransactionId: js.UndefOr[GuidString] = js.undefined
 }
 object CreateMeetingDialOutResponse {
   

@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,9 +48,8 @@ object LayoutGrid {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.create")
-  @js.native
-  def create(model: IModel): LayoutGrid = js.native
+  @scala.inline
+  def create(model: IModel): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -62,9 +60,8 @@ object LayoutGrid {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): LayoutGrid = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -75,9 +72,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): LayoutGrid = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -88,9 +84,8 @@ object LayoutGrid {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): LayoutGrid = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -101,9 +96,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): LayoutGrid = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -114,9 +108,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): LayoutGrid = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -127,9 +120,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): LayoutGrid = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -140,9 +132,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): LayoutGrid = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -153,9 +144,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): LayoutGrid = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -166,9 +156,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): LayoutGrid = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -179,9 +168,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): LayoutGrid = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -192,9 +180,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): LayoutGrid = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -205,9 +192,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): LayoutGrid = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -218,9 +204,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): LayoutGrid = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -231,9 +216,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): LayoutGrid = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -244,9 +228,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LayoutGrid = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -257,9 +240,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): LayoutGrid = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -270,9 +252,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LayoutGrid = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -283,9 +264,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): LayoutGrid = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -296,9 +276,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): LayoutGrid = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -309,9 +288,8 @@ object LayoutGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): LayoutGrid = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -322,9 +300,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): LayoutGrid = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -335,9 +312,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): LayoutGrid = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -348,9 +324,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): LayoutGrid = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -361,9 +336,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): LayoutGrid = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -374,9 +348,8 @@ object LayoutGrid {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LayoutGrid = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -387,9 +360,8 @@ object LayoutGrid {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): LayoutGrid = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -400,9 +372,8 @@ object LayoutGrid {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): LayoutGrid = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -413,9 +384,8 @@ object LayoutGrid {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): LayoutGrid = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -426,9 +396,8 @@ object LayoutGrid {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): LayoutGrid = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -439,9 +408,8 @@ object LayoutGrid {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): LayoutGrid = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -452,9 +420,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): LayoutGrid = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -465,9 +432,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): LayoutGrid = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -478,9 +444,8 @@ object LayoutGrid {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): LayoutGrid = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -491,9 +456,8 @@ object LayoutGrid {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): LayoutGrid = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -504,9 +468,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LayoutGrid = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -517,9 +480,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): LayoutGrid = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -530,9 +492,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): LayoutGrid = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -543,9 +504,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): LayoutGrid = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -556,9 +516,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): LayoutGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -569,9 +528,8 @@ object LayoutGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): LayoutGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -582,9 +540,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): LayoutGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -595,9 +552,8 @@ object LayoutGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): LayoutGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -608,9 +564,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): LayoutGrid = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -621,9 +576,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): LayoutGrid = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -634,9 +588,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): LayoutGrid = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -647,9 +600,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): LayoutGrid = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -660,9 +612,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LayoutGrid = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -673,9 +624,8 @@ object LayoutGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): LayoutGrid = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -686,9 +636,8 @@ object LayoutGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): LayoutGrid = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -699,9 +648,8 @@ object LayoutGrid {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): LayoutGrid = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /**
     * Creates and returns a new LayoutGrid instance in the SDK and on the server.
@@ -712,9 +660,8 @@ object LayoutGrid {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): LayoutGrid = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): LayoutGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGrid]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGrid.structureTypeName")

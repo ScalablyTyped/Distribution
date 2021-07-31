@@ -3,7 +3,6 @@ package typings.officeJs.Office
 import typings.officeJs.Office.MailboxEnums.AttachmentContentFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,13 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait AttachmentContent extends StObject {
   
   /**
     * The content of an attachment as a string.
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * The string format to use for an attachment's content.
@@ -40,7 +38,7 @@ trait AttachmentContent extends StObject {
     * 
     * For cloud attachments, the formatting is a URL string.
     */
-  var format: AttachmentContentFormat | String = js.native
+  var format: AttachmentContentFormat | String
 }
 object AttachmentContent {
   

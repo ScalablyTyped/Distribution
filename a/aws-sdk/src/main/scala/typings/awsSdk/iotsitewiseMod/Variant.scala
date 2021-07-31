@@ -2,31 +2,29 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Variant extends StObject {
   
   /**
     * Asset property data of type Boolean (true or false).
     */
-  var booleanValue: js.UndefOr[PropertyValueBooleanValue] = js.native
+  var booleanValue: js.UndefOr[PropertyValueBooleanValue] = js.undefined
   
   /**
     * Asset property data of type double (floating point number).
     */
-  var doubleValue: js.UndefOr[PropertyValueDoubleValue] = js.native
+  var doubleValue: js.UndefOr[PropertyValueDoubleValue] = js.undefined
   
   /**
     * Asset property data of type integer (whole number).
     */
-  var integerValue: js.UndefOr[PropertyValueIntegerValue] = js.native
+  var integerValue: js.UndefOr[PropertyValueIntegerValue] = js.undefined
   
   /**
     * Asset property data of type string (sequence of characters).
     */
-  var stringValue: js.UndefOr[PropertyValueStringValue] = js.native
+  var stringValue: js.UndefOr[PropertyValueStringValue] = js.undefined
 }
 object Variant {
   

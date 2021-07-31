@@ -11,8 +11,8 @@ A process lookup utility
 | Full name          | ps-node |
 | Keywords           | ps, process, lookup, pid |
 | # releases         | 0 |
-| # dependents       | 128 |
-| # downloads        | 3586243 |
+| # dependents       | 129 |
+| # downloads        | 2885347 |
 | # stars            | 19 |
 
 ## Links

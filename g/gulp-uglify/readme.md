@@ -11,8 +11,8 @@ Minify files with UglifyJS.
 | Full name          | gulp-uglify |
 | Keywords           | gulpplugin |
 | # releases         | 2 |
-| # dependents       | 1970 |
-| # downloads        | 20663784 |
+| # dependents       | 2094 |
+| # downloads        | 20864520 |
 | # stars            | 546 |
 
 ## Links

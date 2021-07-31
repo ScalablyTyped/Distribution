@@ -3,7 +3,6 @@ package typings.phaser.phaserMod
 import typings.phaser.Phaser.Events.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Data {
@@ -16,7 +15,8 @@ object Data {
   @JSImport("phaser", "Data.DataManager")
   @js.native
   class DataManager protected ()
-    extends typings.phaser.Phaser.Data.DataManager {
+    extends StObject
+       with typings.phaser.Phaser.Data.DataManager {
     /**
       * 
       * @param parent The object that this DataManager belongs to.
@@ -34,7 +34,8 @@ object Data {
   @JSImport("phaser", "Data.DataManagerPlugin")
   @js.native
   class DataManagerPlugin protected ()
-    extends typings.phaser.Phaser.Data.DataManagerPlugin {
+    extends StObject
+       with typings.phaser.Phaser.Data.DataManagerPlugin {
     /**
       * 
       * @param scene A reference to the Scene that this DataManager belongs to.

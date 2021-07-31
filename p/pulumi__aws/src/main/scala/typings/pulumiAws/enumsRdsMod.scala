@@ -70,7 +70,6 @@ import typings.pulumiAws.pulumiAwsStrings.serverless
 import typings.pulumiAws.pulumiAwsStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enumsRdsMod {

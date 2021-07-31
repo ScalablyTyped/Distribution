@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of past encounter classes
   */
-@js.native
-trait EncounterClassHistory extends BackboneElement {
+trait EncounterClassHistory
+  extends StObject
+     with BackboneElement {
   
   /**
     * inpatient | outpatient | ambulatory | emergency +
     */
-  var `class`: Coding = js.native
+  var `class`: Coding
   
   /**
     * The time that the episode was in the specified class
     */
-  var period: Period = js.native
+  var period: Period
 }
 object EncounterClassHistory {
   

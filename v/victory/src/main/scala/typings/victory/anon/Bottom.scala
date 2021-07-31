@@ -4,23 +4,21 @@ import typings.victory.mod.CallbackArgs
 import typings.victory.mod.NumberOrCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: js.UndefOr[NumberOrCallback] = js.native
+  var bottom: js.UndefOr[NumberOrCallback] = js.undefined
   
-  var bottomLeft: js.UndefOr[NumberOrCallback] = js.native
+  var bottomLeft: js.UndefOr[NumberOrCallback] = js.undefined
   
-  var bottomRight: js.UndefOr[NumberOrCallback] = js.native
+  var bottomRight: js.UndefOr[NumberOrCallback] = js.undefined
   
-  var top: js.UndefOr[NumberOrCallback] = js.native
+  var top: js.UndefOr[NumberOrCallback] = js.undefined
   
-  var topLeft: js.UndefOr[NumberOrCallback] = js.native
+  var topLeft: js.UndefOr[NumberOrCallback] = js.undefined
   
-  var topRight: js.UndefOr[NumberOrCallback] = js.native
+  var topRight: js.UndefOr[NumberOrCallback] = js.undefined
 }
 object Bottom {
   

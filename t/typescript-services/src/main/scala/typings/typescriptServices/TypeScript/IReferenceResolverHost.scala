@@ -2,21 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IReferenceResolverHost extends StObject {
   
-  def directoryExists(path: String): Boolean = js.native
+  def directoryExists(path: String): Boolean
   
-  def fileExists(path: String): Boolean = js.native
+  def fileExists(path: String): Boolean
   
-  def getParentDirectory(path: String): String = js.native
+  def getParentDirectory(path: String): String
   
-  def getScriptSnapshot(fileName: String): IScriptSnapshot = js.native
+  def getScriptSnapshot(fileName: String): IScriptSnapshot
   
-  def resolveRelativePath(path: String, directory: String): String = js.native
+  def resolveRelativePath(path: String, directory: String): String
 }
 object IReferenceResolverHost {
   

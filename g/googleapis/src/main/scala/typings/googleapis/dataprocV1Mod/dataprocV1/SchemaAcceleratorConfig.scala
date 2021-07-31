@@ -2,21 +2,19 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the type and number of accelerator cards attached to the
   * instances of an instance. See GPUs on Compute Engine.
   */
-@js.native
 trait SchemaAcceleratorConfig extends StObject {
   
   /**
     * The number of the accelerator cards of this type exposed to this
     * instance.
     */
-  var acceleratorCount: js.UndefOr[Double] = js.native
+  var acceleratorCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Full URL, partial URI, or short name of the accelerator type resource to
@@ -27,7 +25,7 @@ trait SchemaAcceleratorConfig extends StObject {
     * Auto Zone Placement feature, you must use the short name of the
     * accelerator type resource, for example, nvidia-tesla-k80.
     */
-  var acceleratorTypeUri: js.UndefOr[String] = js.native
+  var acceleratorTypeUri: js.UndefOr[String] = js.undefined
 }
 object SchemaAcceleratorConfig {
   

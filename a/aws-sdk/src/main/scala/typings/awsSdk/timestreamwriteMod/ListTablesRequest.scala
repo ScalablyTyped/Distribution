@@ -2,26 +2,24 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTablesRequest extends StObject {
   
   /**
     * The name of the Timestream database.
     */
-  var DatabaseName: js.UndefOr[ResourceName] = js.native
+  var DatabaseName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The total number of items to return in the output. If the total number of items available is more than the value specified, a NextToken is provided in the output. To resume pagination, provide the NextToken value as argument of a subsequent API invocation.
     */
-  var MaxResults: js.UndefOr[PaginationLimit] = js.native
+  var MaxResults: js.UndefOr[PaginationLimit] = js.undefined
   
   /**
     * The pagination token. To resume pagination, provide the NextToken value as argument of a subsequent API invocation.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListTablesRequest {
   

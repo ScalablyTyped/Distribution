@@ -2,11 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BackgroundTaskRegistration extends IBackgroundTaskRegistration
+trait BackgroundTaskRegistration
+  extends StObject
+     with IBackgroundTaskRegistration
 object BackgroundTaskRegistration {
   
   @scala.inline

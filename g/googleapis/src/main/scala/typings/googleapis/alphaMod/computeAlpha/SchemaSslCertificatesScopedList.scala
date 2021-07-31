@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSslCertificatesScopedList extends StObject {
   
   /**
     * List of SslCertificates contained in this scope.
     */
-  var sslCertificates: js.UndefOr[js.Array[SchemaSslCertificate]] = js.native
+  var sslCertificates: js.UndefOr[js.Array[SchemaSslCertificate]] = js.undefined
   
   /**
     * Informational warning which replaces the list of backend services when
     * the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaSslCertificatesScopedList {
   

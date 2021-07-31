@@ -10,7 +10,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fallbackErrorMod {
@@ -36,16 +35,44 @@ object fallbackErrorMod {
     var statusType: Type = js.native
   }
   
-  type FallbackServiceError = FallbackStatusObject with Error
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.std.Error because var conflicts: message. Inlined name, stack */ trait FallbackServiceError
+    extends StObject
+       with FallbackStatusObject {
+    
+    var name: String
+    
+    var stack: js.UndefOr[String] = js.undefined
+  }
+  object FallbackServiceError {
+    
+    @scala.inline
+    def apply(code: Status, details: js.Array[js.Object], message: String, name: String): FallbackServiceError = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FallbackServiceError]
+    }
+    
+    @scala.inline
+    implicit class FallbackServiceErrorMutableBuilder[Self <: FallbackServiceError] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    }
+  }
   
-  @js.native
   trait FallbackStatusObject extends StObject {
     
-    var code: Status = js.native
+    var code: Status
     
-    var details: js.Array[js.Object] = js.native
+    var details: js.Array[js.Object]
     
-    var message: String = js.native
+    var message: String
   }
   object FallbackStatusObject {
     
@@ -72,12 +99,11 @@ object fallbackErrorMod {
     }
   }
   
-  @js.native
   trait ProtobufAny extends StObject {
     
-    var type_url: String = js.native
+    var type_url: String
     
-    var value: Uint8Array = js.native
+    var value: Uint8Array
   }
   object ProtobufAny {
     

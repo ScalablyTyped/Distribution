@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CMimeTypes extends StObject {
   
   @JSName("MSHTML.CMimeTypes_typekey")
-  var MSHTMLDotCMimeTypes_typekey: CMimeTypes = js.native
+  var MSHTMLDotCMimeTypes_typekey: CMimeTypes
   
-  val length: Double = js.native
+  val length: Double
 }
 object CMimeTypes {
   

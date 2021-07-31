@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.SetNodeNameRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.SetNodeNameResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSetNodeNameResponse extends StObject {
   
-  var paramsType: js.Array[SetNodeNameRequest] = js.native
+  var paramsType: js.Array[SetNodeNameRequest]
   
-  var returnType: SetNodeNameResponse = js.native
+  var returnType: SetNodeNameResponse
 }
 object ReturnTypeSetNodeNameResponse {
   

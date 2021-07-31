@@ -2,16 +2,14 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryInfo extends StObject {
   
   /**
     *  The size in mebibytes of the Elastic Inference Accelerator type. 
     */
-  var sizeInMiB: js.UndefOr[Integer] = js.native
+  var sizeInMiB: js.UndefOr[Integer] = js.undefined
 }
 object MemoryInfo {
   

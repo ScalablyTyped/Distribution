@@ -2,19 +2,17 @@ package typings.googleFeeds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait findEntry extends StObject {
   
-  var contentSnippet: String = js.native
+  var contentSnippet: String
   
-  var link: String = js.native
+  var link: String
   
-  var title: String = js.native
+  var title: String
   
-  var url: String = js.native
+  var url: String
 }
 object findEntry {
   

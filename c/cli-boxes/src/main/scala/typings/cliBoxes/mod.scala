@@ -2,7 +2,6 @@ package typings.cliBoxes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -123,20 +122,19 @@ object mod {
   /**
   	Style of the box border.
   	*/
-  @js.native
   trait BoxStyle extends StObject {
     
-    val bottomLeft: String = js.native
+    val bottomLeft: String
     
-    val bottomRight: String = js.native
+    val bottomRight: String
     
-    val horizontal: String = js.native
+    val horizontal: String
     
-    val topLeft: String = js.native
+    val topLeft: String
     
-    val topRight: String = js.native
+    val topRight: String
     
-    val vertical: String = js.native
+    val vertical: String
   }
   object BoxStyle {
     
@@ -179,7 +177,6 @@ object mod {
   /**
   	All box styles.
   	*/
-  @js.native
   trait Boxes extends StObject {
     
     /**
@@ -190,7 +187,7 @@ object mod {
     		┗━━━━┛
     		```
     		*/
-    val bold: BoxStyle = js.native
+    val bold: BoxStyle
     
     /**
     		@example
@@ -200,7 +197,7 @@ object mod {
     		+----+
     		```
     		*/
-    val classic: BoxStyle = js.native
+    val classic: BoxStyle
     
     /**
     		@example
@@ -210,7 +207,7 @@ object mod {
     		╚════╝
     		```
     		*/
-    val double: BoxStyle = js.native
+    val double: BoxStyle
     
     /**
     		@example
@@ -220,7 +217,7 @@ object mod {
     		╘════╛
     		```
     		*/
-    val doubleSingle: BoxStyle = js.native
+    val doubleSingle: BoxStyle
     
     /**
     		@example
@@ -230,7 +227,7 @@ object mod {
     		╰────╯
     		```
     		*/
-    val round: BoxStyle = js.native
+    val round: BoxStyle
     
     /**
     		@example
@@ -240,7 +237,7 @@ object mod {
     		└────┘
     		```
     		*/
-    val single: BoxStyle = js.native
+    val single: BoxStyle
     
     /**
     		@example
@@ -250,7 +247,7 @@ object mod {
     		╙────╜
     		```
     		*/
-    val singleDouble: BoxStyle = js.native
+    val singleDouble: BoxStyle
   }
   object Boxes {
     

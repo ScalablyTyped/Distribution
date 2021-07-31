@@ -2,25 +2,23 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message of customer&#39;s liting devices.
   */
-@js.native
 trait SchemaCustomerListDevicesResponse extends StObject {
   
   /**
     * The customer&#39;s devices.
     */
-  var devices: js.UndefOr[js.Array[SchemaDevice]] = js.native
+  var devices: js.UndefOr[js.Array[SchemaDevice]] = js.undefined
   
   /**
     * A token used to access the next page of results. Omitted if no further
     * results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomerListDevicesResponse {
   

@@ -9,7 +9,6 @@ import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object builderMod {
@@ -42,9 +41,9 @@ object builderMod {
     
     var coordinates: js.Array[Double] = js.native
     
-    def createFill(state: FillStrokeState): js.Array[_] = js.native
+    def createFill(state: FillStrokeState): js.Array[js.Any] = js.native
     
-    def createStroke(state: FillStrokeState): js.Array[_] = js.native
+    def createStroke(state: FillStrokeState): js.Array[js.Any] = js.native
     
     def drawCustomCoordinates_(
       flatCoordinates: js.Array[Double],
@@ -65,9 +64,9 @@ object builderMod {
       */
     /* protected */ def getBufferedMaxExtent(): Extent = js.native
     
-    var hitDetectionInstructions: js.Array[_] = js.native
+    var hitDetectionInstructions: js.Array[js.Any] = js.native
     
-    var instructions: js.Array[_] = js.native
+    var instructions: js.Array[js.Any] = js.native
     
     var maxExtent: Extent = js.native
     
@@ -88,7 +87,7 @@ object builderMod {
     
     def updateFillStyle(
       state: FillStrokeState,
-      createFill: js.ThisFunction1[/* this */ this.type, /* p0 */ FillStrokeState, js.Array[_]]
+      createFill: js.ThisFunction1[/* this */ this.type, /* p0 */ FillStrokeState, js.Array[js.Any]]
     ): Unit = js.native
     
     def updateStrokeStyle(
@@ -97,25 +96,28 @@ object builderMod {
     ): Unit = js.native
   }
   
-  @js.native
   trait SerializableInstructions extends StObject {
     
-    var coordinates: js.Array[Double] = js.native
+    var coordinates: js.Array[Double]
     
-    var fillStates: js.UndefOr[StringDictionary[FillState]] = js.native
+    var fillStates: js.UndefOr[StringDictionary[FillState]] = js.undefined
     
-    var hitDetectionInstructions: js.Array[_] = js.native
+    var hitDetectionInstructions: js.Array[js.Any]
     
-    var instructions: js.Array[_] = js.native
+    var instructions: js.Array[js.Any]
     
-    var strokeStates: js.UndefOr[StringDictionary[StrokeState]] = js.native
+    var strokeStates: js.UndefOr[StringDictionary[StrokeState]] = js.undefined
     
-    var textStates: js.UndefOr[StringDictionary[TextState]] = js.native
+    var textStates: js.UndefOr[StringDictionary[TextState]] = js.undefined
   }
   object SerializableInstructions {
     
     @scala.inline
-    def apply(coordinates: js.Array[Double], hitDetectionInstructions: js.Array[_], instructions: js.Array[_]): SerializableInstructions = {
+    def apply(
+      coordinates: js.Array[Double],
+      hitDetectionInstructions: js.Array[js.Any],
+      instructions: js.Array[js.Any]
+    ): SerializableInstructions = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], hitDetectionInstructions = hitDetectionInstructions.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializableInstructions]
     }
@@ -136,13 +138,13 @@ object builderMod {
       def setFillStatesUndefined: Self = StObject.set(x, "fillStates", js.undefined)
       
       @scala.inline
-      def setHitDetectionInstructions(value: js.Array[_]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
+      def setHitDetectionInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHitDetectionInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value :_*))
       
       @scala.inline
-      def setInstructions(value: js.Array[_]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      def setInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "instructions", js.Array(value :_*))

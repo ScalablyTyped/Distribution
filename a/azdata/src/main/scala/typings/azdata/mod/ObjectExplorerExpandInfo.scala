@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectExplorerExpandInfo extends StObject {
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var nodePath: String = js.native
+  var nodePath: String
   
-  var nodes: js.Array[NodeInfo] = js.native
+  var nodes: js.Array[NodeInfo]
   
-  var sessionId: String = js.native
+  var sessionId: String
 }
 object ObjectExplorerExpandInfo {
   

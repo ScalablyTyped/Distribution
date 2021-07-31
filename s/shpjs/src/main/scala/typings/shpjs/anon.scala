@@ -3,15 +3,13 @@ package typings.shpjs
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Buffer extends StObject {
     
-    var buffer: ArrayBuffer = js.native
+    var buffer: ArrayBuffer
   }
   object Buffer {
     

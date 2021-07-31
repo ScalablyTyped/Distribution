@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,29 +17,47 @@ sealed trait ConditionalCellValueOperator extends StObject
 object ConditionalCellValueOperator extends StObject {
   
   @js.native
-  sealed trait between extends ConditionalCellValueOperator
+  sealed trait between
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait equalTo extends ConditionalCellValueOperator
+  sealed trait equalTo
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait greaterThan extends ConditionalCellValueOperator
+  sealed trait greaterThan
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait greaterThanOrEqual extends ConditionalCellValueOperator
+  sealed trait greaterThanOrEqual
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait invalid extends ConditionalCellValueOperator
+  sealed trait invalid
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait lessThan extends ConditionalCellValueOperator
+  sealed trait lessThan
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait lessThanOrEqual extends ConditionalCellValueOperator
+  sealed trait lessThanOrEqual
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait notBetween extends ConditionalCellValueOperator
+  sealed trait notBetween
+    extends StObject
+       with ConditionalCellValueOperator
   
   @js.native
-  sealed trait notEqualTo extends ConditionalCellValueOperator
+  sealed trait notEqualTo
+    extends StObject
+       with ConditionalCellValueOperator
 }

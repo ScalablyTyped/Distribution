@@ -5,63 +5,51 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("react-movable/lib/utils", "arrayMove")
+  @JSImport("react-movable/lib/utils", JSImport.Namespace)
   @js.native
-  def arrayMove[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-movable/lib/utils", "arrayRemove")
-  @js.native
-  def arrayRemove[T](array: js.Array[T], index: Double): js.Array[T] = js.native
+  @scala.inline
+  def arrayMove[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("react-movable/lib/utils", "binarySearch")
-  @js.native
-  def binarySearch(array: js.Array[Double], targetValue: Double): Double = js.native
+  @scala.inline
+  def arrayRemove[T](array: js.Array[T], index: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("react-movable/lib/utils", "checkIfInteractive")
-  @js.native
-  def checkIfInteractive(target: Element, rootElement: Element): Boolean = js.native
+  @scala.inline
+  def binarySearch(array: js.Array[Double], targetValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearch")(array.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-movable/lib/utils", "getTranslateOffset")
-  @js.native
-  def getTranslateOffset(element: Element): Double = js.native
+  @scala.inline
+  def checkIfInteractive(target: Element, rootElement: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIfInteractive")(target.asInstanceOf[js.Any], rootElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-movable/lib/utils", "isItemTransformed")
-  @js.native
-  def isItemTransformed(element: Element): Boolean = js.native
+  @scala.inline
+  def getTranslateOffset(element: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslateOffset")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-movable/lib/utils", "isTouchEvent")
-  @js.native
-  def isTouchEvent(event: TouchEvent with MouseEvent): Double = js.native
+  @scala.inline
+  def isItemTransformed(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemTransformed")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-movable/lib/utils", "schd")
-  @js.native
-  def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @scala.inline
+  def isTouchEvent(event: TouchEvent & MouseEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-movable/lib/utils", "setItemTransition")
-  @js.native
-  def setItemTransition(element: Element, duration: Double): Unit = js.native
-  @JSImport("react-movable/lib/utils", "setItemTransition")
-  @js.native
-  def setItemTransition(element: Element, duration: Double, timing: String): Unit = js.native
+  @scala.inline
+  def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("schd")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   
-  @JSImport("react-movable/lib/utils", "transformItem")
-  @js.native
-  def transformItem(element: Element): Unit = js.native
-  @JSImport("react-movable/lib/utils", "transformItem")
-  @js.native
-  def transformItem(element: Element, offsetY: js.UndefOr[scala.Nothing], offsetX: Double): Unit = js.native
-  @JSImport("react-movable/lib/utils", "transformItem")
-  @js.native
-  def transformItem(element: Element, offsetY: Double): Unit = js.native
-  @JSImport("react-movable/lib/utils", "transformItem")
-  @js.native
-  def transformItem(element: Element, offsetY: Double, offsetX: Double): Unit = js.native
-  @JSImport("react-movable/lib/utils", "transformItem")
-  @js.native
-  def transformItem(element: Element, offsetY: Null, offsetX: Double): Unit = js.native
+  @scala.inline
+  def setItemTransition(element: Element, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemTransition")(element.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setItemTransition(element: Element, duration: Double, timing: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemTransition")(element.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], timing.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def transformItem(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transformItem")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def transformItem(element: Element, offsetY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformItem")(element.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformItem(element: Element, offsetY: Double, offsetX: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformItem")(element.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformItem(element: Element, offsetY: Null, offsetX: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformItem")(element.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def transformItem(element: Element, offsetY: Unit, offsetX: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformItem")(element.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.SelectorSettings._Impl, 'siblingLabel'> */
-@js.native
 trait PickImplsiblingLabel extends StObject {
   
-  var siblingLabel: String = js.native
+  var siblingLabel: String
 }
 object PickImplsiblingLabel {
   

@@ -10,15 +10,13 @@ import typings.atom.atomStrings.`28px`
 import typings.atom.atomStrings.`32px`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `24` extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor = js.native
+  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
   
-  var value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px` = js.native
+  var value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
 }
 object `24` {
   

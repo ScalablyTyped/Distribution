@@ -3,7 +3,6 @@ package typings.reactNative.mod
 import typings.react.mod.ElementRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,7 @@ trait TextInputState extends StObject {
     * noop if it wasn't focused
     */
   def blurTextInput(): Unit = js.native
-  def blurTextInput(textField: ElementRef[HostComponent[_]]): Unit = js.native
+  def blurTextInput(textField: ElementRef[HostComponent[js.Any]]): Unit = js.native
   
   /**
     * @deprecated Use currentlyFocusedInput
@@ -33,7 +32,7 @@ trait TextInputState extends StObject {
     * Returns the ref of the currently focused text field, if one exists
     * If no text field is focused it returns null
     */
-  def currentlyFocusedInput(): ElementRef[HostComponent[_]] = js.native
+  def currentlyFocusedInput(): ElementRef[HostComponent[js.Any]] = js.native
   
   /**
     * @param textField ref of the text field to focus
@@ -41,5 +40,5 @@ trait TextInputState extends StObject {
     * noop if the text field was already focused
     */
   def focusTextInput(): Unit = js.native
-  def focusTextInput(textField: ElementRef[HostComponent[_]]): Unit = js.native
+  def focusTextInput(textField: ElementRef[HostComponent[js.Any]]): Unit = js.native
 }

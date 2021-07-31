@@ -7,90 +7,78 @@ import typings.std.HTMLImageElement
 import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("browser-image-compression", JSImport.Namespace)
-  @js.native
-  def apply(image: Blob, options: Options): js.Promise[File | Blob] = js.native
-  @JSImport("browser-image-compression", JSImport.Namespace)
-  @js.native
-  def apply(image: File, options: Options): js.Promise[File | Blob] = js.native
+  @scala.inline
+  def apply(image: Blob, options: Options): js.Promise[File | Blob] = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File | Blob]]
+  @scala.inline
+  def apply(image: File, options: Options): js.Promise[File | Blob] = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File | Blob]]
   
-  @JSImport("browser-image-compression", "canvasToFile")
+  @JSImport("browser-image-compression", JSImport.Namespace)
   @js.native
-  def canvasToFile(canvas: HTMLCanvasElement, fileType: String, fileName: String, fileLastModified: Double): js.Promise[File | Blob] = js.native
-  @JSImport("browser-image-compression", "canvasToFile")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def canvasToFile(canvas: HTMLCanvasElement, fileType: String, fileName: String, fileLastModified: Double): js.Promise[File | Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("canvasToFile")(canvas.asInstanceOf[js.Any], fileType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], fileLastModified.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File | Blob]]
+  @scala.inline
   def canvasToFile(
     canvas: HTMLCanvasElement,
     fileType: String,
     fileName: String,
     fileLastModified: Double,
     quality: Double
-  ): js.Promise[File | Blob] = js.native
+  ): js.Promise[File | Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("canvasToFile")(canvas.asInstanceOf[js.Any], fileType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], fileLastModified.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File | Blob]]
   
-  @JSImport("browser-image-compression", "drawFileInCanvas")
-  @js.native
-  def drawFileInCanvas(file: Blob): js.Promise[js.Tuple2[ImageBitmap | HTMLImageElement, HTMLCanvasElement]] = js.native
-  @JSImport("browser-image-compression", "drawFileInCanvas")
-  @js.native
-  def drawFileInCanvas(file: File): js.Promise[js.Tuple2[ImageBitmap | HTMLImageElement, HTMLCanvasElement]] = js.native
+  @scala.inline
+  def drawFileInCanvas(file: Blob): js.Promise[js.Tuple2[ImageBitmap | HTMLImageElement, HTMLCanvasElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("drawFileInCanvas")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[ImageBitmap | HTMLImageElement, HTMLCanvasElement]]]
+  @scala.inline
+  def drawFileInCanvas(file: File): js.Promise[js.Tuple2[ImageBitmap | HTMLImageElement, HTMLCanvasElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("drawFileInCanvas")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[ImageBitmap | HTMLImageElement, HTMLCanvasElement]]]
   
-  @JSImport("browser-image-compression", "drawImageInCanvas")
-  @js.native
-  def drawImageInCanvas(img: HTMLImageElement): HTMLCanvasElement = js.native
+  @scala.inline
+  def drawImageInCanvas(img: HTMLImageElement): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("drawImageInCanvas")(img.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
   
-  @JSImport("browser-image-compression", "getDataUrlFromFile")
-  @js.native
-  def getDataUrlFromFile(file: Blob): js.Promise[String] = js.native
-  @JSImport("browser-image-compression", "getDataUrlFromFile")
-  @js.native
-  def getDataUrlFromFile(file: File): js.Promise[String] = js.native
+  @scala.inline
+  def getDataUrlFromFile(file: Blob): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDataUrlFromFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getDataUrlFromFile(file: File): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDataUrlFromFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("browser-image-compression", "getExifOrientation")
-  @js.native
-  def getExifOrientation(file: Blob): js.Promise[Double] = js.native
-  @JSImport("browser-image-compression", "getExifOrientation")
-  @js.native
-  def getExifOrientation(file: File): js.Promise[Double] = js.native
+  @scala.inline
+  def getExifOrientation(file: Blob): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExifOrientation")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def getExifOrientation(file: File): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExifOrientation")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
-  @JSImport("browser-image-compression", "getFilefromDataUrl")
-  @js.native
-  def getFilefromDataUrl(dataUrl: String, filename: String): js.Promise[File | Blob] = js.native
-  @JSImport("browser-image-compression", "getFilefromDataUrl")
-  @js.native
-  def getFilefromDataUrl(dataUrl: String, filename: String, lastModified: Double): js.Promise[File | Blob] = js.native
+  @scala.inline
+  def getFilefromDataUrl(dataUrl: String, filename: String): js.Promise[File | Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilefromDataUrl")(dataUrl.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File | Blob]]
+  @scala.inline
+  def getFilefromDataUrl(dataUrl: String, filename: String, lastModified: Double): js.Promise[File | Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilefromDataUrl")(dataUrl.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], lastModified.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File | Blob]]
   
-  @JSImport("browser-image-compression", "loadImage")
-  @js.native
-  def loadImage(src: String): js.Promise[HTMLImageElement] = js.native
+  @scala.inline
+  def loadImage(src: String): js.Promise[HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLImageElement]]
   
-  @js.native
   trait Options extends StObject {
     
     /** Default to be the exif orientation from the image file */
-    var exifOrientation: js.UndefOr[Double] = js.native
+    var exifOrientation: js.UndefOr[Double] = js.undefined
     
     /** Default to be the original mime type from the image file */
-    var fileType: js.UndefOr[String] = js.native
+    var fileType: js.UndefOr[String] = js.undefined
     
     /** @default 10 */
-    var maxIteration: js.UndefOr[Double] = js.native
+    var maxIteration: js.UndefOr[Double] = js.undefined
     
     /** @default Number.POSITIVE_INFINITY */
-    var maxSizeMB: js.UndefOr[Double] = js.native
+    var maxSizeMB: js.UndefOr[Double] = js.undefined
     
     /** @default undefined */
-    var maxWidthOrHeight: js.UndefOr[Double] = js.native
+    var maxWidthOrHeight: js.UndefOr[Double] = js.undefined
     
     /** A function takes one progress argument (progress from 0 to 100) */
-    var onProgress: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.native
+    var onProgress: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.undefined
     
     /** @default false */
-    var useWebWorker: js.UndefOr[Boolean] = js.native
+    var useWebWorker: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

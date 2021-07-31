@@ -8,10 +8,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.sigmoid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterStretchRendererProperties extends StObject {
   
   /**
@@ -19,77 +17,77 @@ trait RasterStretchRendererProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#colorRamp)
     */
-  var colorRamp: js.UndefOr[ColorRampProperties] = js.native
+  var colorRamp: js.UndefOr[ColorRampProperties] = js.undefined
   
   /**
     * The computeGamma automatically calculates best gamma value to render exported image based on empirical model.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#computeGamma)
     */
-  var computeGamma: js.UndefOr[Boolean] = js.native
+  var computeGamma: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When Dynamic Range Adjustment is `true`, the statistics based on the current display extent are calculated as you zoom and pan around the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#dynamicRangeAdjustment)
     */
-  var dynamicRangeAdjustment: js.UndefOr[Boolean] = js.native
+  var dynamicRangeAdjustment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The gamma values to be used if [useGamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#useGamma) is set to `false`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#gamma)
     */
-  var gamma: js.UndefOr[js.Array[Double]] = js.native
+  var gamma: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `percent-clip`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#maxPercent)
     */
-  var maxPercent: js.UndefOr[Double] = js.native
+  var maxPercent: js.UndefOr[Double] = js.undefined
   
   /**
     * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `percent-clip`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#minPercent)
     */
-  var minPercent: js.UndefOr[Double] = js.native
+  var minPercent: js.UndefOr[Double] = js.undefined
   
   /**
     * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `standard-deviation`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#numberOfStandardDeviations)
     */
-  var numberOfStandardDeviations: js.UndefOr[Double] = js.native
+  var numberOfStandardDeviations: js.UndefOr[Double] = js.undefined
   
   /**
     * The outputMax denotes the output maximum, which is the highest pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#outputMax)
     */
-  var outputMax: js.UndefOr[Double] = js.native
+  var outputMax: js.UndefOr[Double] = js.undefined
   
   /**
     * The outputMin denotes the output minimum, which is the lowest pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#outputMin)
     */
-  var outputMin: js.UndefOr[Double] = js.native
+  var outputMin: js.UndefOr[Double] = js.undefined
   
   /**
     * The sigmoid strength level determines how much of the sigmoidal function will be used in the stretch.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#sigmoidStrengthLevel)
     */
-  var sigmoidStrengthLevel: js.UndefOr[Double] = js.native
+  var sigmoidStrengthLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * The input statistics can be specified through the statistics property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
     */
-  var statistics: js.UndefOr[(js.Array[_ | js.Array[Double]]) | RasterStretchRendererStatistics] = js.native
+  var statistics: js.UndefOr[(js.Array[js.Any | js.Array[Double]]) | RasterStretchRendererStatistics] = js.undefined
   
   /**
     * The stretch type defines a histogram stretch that will be applied to the rasters to enhance their appearance.
@@ -98,14 +96,14 @@ trait RasterStretchRendererProperties extends StObject {
     */
   var stretchType: js.UndefOr[
     none | `standard-deviation` | `histogram-equalization` | `min-max` | `percent-clip` | sigmoid
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Denotes whether the [gamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#gamma) value should be used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#useGamma)
     */
-  var useGamma: js.UndefOr[Boolean] = js.native
+  var useGamma: js.UndefOr[Boolean] = js.undefined
 }
 object RasterStretchRendererProperties {
   
@@ -182,7 +180,7 @@ object RasterStretchRendererProperties {
     def setSigmoidStrengthLevelUndefined: Self = StObject.set(x, "sigmoidStrengthLevel", js.undefined)
     
     @scala.inline
-    def setStatistics(value: (js.Array[_ | js.Array[Double]]) | RasterStretchRendererStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    def setStatistics(value: (js.Array[js.Any | js.Array[Double]]) | RasterStretchRendererStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)

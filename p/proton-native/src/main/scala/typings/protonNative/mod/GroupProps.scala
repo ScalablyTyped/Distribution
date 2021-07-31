@@ -3,39 +3,38 @@ package typings.protonNative.mod
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
   
   /**
     * Group can only have one child. To have more than one child, use boxes.
     */
-  var children: js.UndefOr[Element] = js.native
+  var children: js.UndefOr[Element] = js.undefined
   
   /**
     * Whether the Group is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether there is a margin inside the group.
     */
-  var margined: js.UndefOr[Boolean] = js.native
+  var margined: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the group.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the Grid can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object GroupProps {
   

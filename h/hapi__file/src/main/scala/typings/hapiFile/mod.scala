@@ -2,15 +2,16 @@ package typings.hapiFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@hapi/file", "uniqueFilename")
+  @JSImport("@hapi/file", JSImport.Namespace)
   @js.native
-  def uniqueFilename(path: String): String = js.native
-  @JSImport("@hapi/file", "uniqueFilename")
-  @js.native
-  def uniqueFilename(path: String, extension: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def uniqueFilename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueFilename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def uniqueFilename(path: String, `extension`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueFilename")(path.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[String]
 }

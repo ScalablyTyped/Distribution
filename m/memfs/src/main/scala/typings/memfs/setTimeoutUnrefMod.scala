@@ -2,27 +2,26 @@ package typings.memfs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object setTimeoutUnrefMod {
+  
+  @JSImport("memfs/lib/setTimeoutUnref", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * `setTimeoutUnref` is just like `setTimeout`,
     * only in Node's environment it will "unref" its macro task.
     */
-  @JSImport("memfs/lib/setTimeoutUnref", JSImport.Default)
-  @js.native
-  def default(callback: js.Any): js.Object = js.native
-  @JSImport("memfs/lib/setTimeoutUnref", JSImport.Default)
-  @js.native
-  def default(callback: js.Any, time: js.UndefOr[scala.Nothing], args: js.Any): js.Object = js.native
-  @JSImport("memfs/lib/setTimeoutUnref", JSImport.Default)
-  @js.native
-  def default(callback: js.Any, time: js.Any): js.Object = js.native
-  @JSImport("memfs/lib/setTimeoutUnref", JSImport.Default)
-  @js.native
-  def default(callback: js.Any, time: js.Any, args: js.Any): js.Object = js.native
+  @scala.inline
+  def default(callback: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def default(callback: js.Any, time: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def default(callback: js.Any, time: js.Any, args: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], time.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def default(callback: js.Any, time: Unit, args: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], time.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   type TSetTimeout = js.Function3[
     /* callback */ js.Function1[/* repeated */ js.Any, Unit], 

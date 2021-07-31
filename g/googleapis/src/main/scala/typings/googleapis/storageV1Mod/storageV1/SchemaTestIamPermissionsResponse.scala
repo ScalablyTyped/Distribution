@@ -2,19 +2,17 @@ package typings.googleapis.storageV1Mod.storageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A storage.(buckets|objects).testIamPermissions response.
   */
-@js.native
 trait SchemaTestIamPermissionsResponse extends StObject {
   
   /**
     * The kind of item this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The permissions held by the caller. Permissions are always of the format
@@ -32,7 +30,7 @@ trait SchemaTestIamPermissionsResponse extends StObject {
     * Update object IAM policy.   - storage.objects.update — Update object
     * metadata.
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTestIamPermissionsResponse {
   

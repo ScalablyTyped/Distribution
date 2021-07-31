@@ -2,26 +2,24 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionAuditLog extends StObject {
   
   /**
     * Collection of audit log entries
     */
-  var entries: js.Array[ExtensionAuditLogEntry] = js.native
+  var entries: js.Array[ExtensionAuditLogEntry]
   
   /**
     * Extension that the change was made for
     */
-  var extensionName: String = js.native
+  var extensionName: String
   
   /**
     * Publisher that the extension is part of
     */
-  var publisherName: String = js.native
+  var publisherName: String
 }
 object ExtensionAuditLog {
   

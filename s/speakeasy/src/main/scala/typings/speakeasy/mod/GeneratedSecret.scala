@@ -2,21 +2,19 @@ package typings.speakeasy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeneratedSecret extends StObject {
   
   /**
     * ASCII representation of the secret
     */
-  var ascii: String = js.native
+  var ascii: String
   
   /**
     * Base32 representation of the secret
     */
-  var base32: String = js.native
+  var base32: String
   
   /**
     * URL for the Google Authenticator otpauth
@@ -24,38 +22,38 @@ trait GeneratedSecret extends StObject {
     *
     * @deprecated use a separate QR code library
     */
-  var google_auth_qr: String = js.native
+  var google_auth_qr: String
   
   /**
     * Hex representation of the secret
     */
-  var hex: String = js.native
+  var hex: String
   
   /**
     * Google Authenticator-compatible otpauth URL.
     */
-  var otpauth_url: js.UndefOr[String] = js.native
+  var otpauth_url: js.UndefOr[String] = js.undefined
   
   /**
     * URL for the QR code for the ASCII secret.
     *
     * @deprecated use a separate QR code library
     */
-  var qr_code_ascii: js.UndefOr[String] = js.native
+  var qr_code_ascii: js.UndefOr[String] = js.undefined
   
   /**
     * URL for the QR code for the base32 secret.
     *
     * @deprecated use a separate QR code library
     */
-  var qr_code_base32: js.UndefOr[String] = js.native
+  var qr_code_base32: js.UndefOr[String] = js.undefined
   
   /**
     * URL for the QR code for the hex secret.
     *
     * @deprecated use a separate QR code library
     */
-  var qr_code_hex: js.UndefOr[String] = js.native
+  var qr_code_hex: js.UndefOr[String] = js.undefined
 }
 object GeneratedSecret {
   

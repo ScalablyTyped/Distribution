@@ -5,11 +5,12 @@ import typings.rollup.anon.`1`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginHooks extends OutputPluginHooks {
+trait PluginHooks
+  extends StObject
+     with OutputPluginHooks {
   
   def buildEnd(): js.Promise[Unit] | Unit = js.native
   def buildEnd(err: Error): js.Promise[Unit] | Unit = js.native
@@ -33,8 +34,8 @@ trait PluginHooks extends OutputPluginHooks {
   @JSName("resolveDynamicImport")
   var resolveDynamicImport_Original: ResolveDynamicImportHook = js.native
   
-  def resolveId(source: String, importer: js.UndefOr[scala.Nothing], options: `1`): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveId(source: String, importer: String, options: `1`): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
+  def resolveId(source: String, importer: Unit, options: `1`): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   @JSName("resolveId")
   var resolveId_Original: ResolveIdHook = js.native
   

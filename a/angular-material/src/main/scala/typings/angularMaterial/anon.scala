@@ -3,23 +3,21 @@ package typings.angularMaterial
 import typings.angularMaterial.mod.angularAugmentingMod.material.IDialogOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ABOVE extends StObject {
     
-    var ABOVE: String = js.native
+    var ABOVE: String
     
-    var ALIGN_BOTTOMS: String = js.native
+    var ALIGN_BOTTOMS: String
     
-    var ALIGN_TOPS: String = js.native
+    var ALIGN_TOPS: String
     
-    var BELOW: String = js.native
+    var BELOW: String
     
-    var CENTER: String = js.native
+    var CENTER: String
   }
   object ABOVE {
     
@@ -49,18 +47,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ALIGNEND extends StObject {
     
-    var ALIGN_END: String = js.native
+    var ALIGN_END: String
     
-    var ALIGN_START: String = js.native
+    var ALIGN_START: String
     
-    var CENTER: String = js.native
+    var CENTER: String
     
-    var OFFSET_END: String = js.native
+    var OFFSET_END: String
     
-    var OFFSET_START: String = js.native
+    var OFFSET_START: String
   }
   object ALIGNEND {
     
@@ -90,16 +87,15 @@ object anon {
     }
   }
   
-  @js.native
   trait BOTTOM extends StObject {
     
-    var BOTTOM: String = js.native
+    var BOTTOM: String
     
-    var LEFT: String = js.native
+    var LEFT: String
     
-    var RIGHT: String = js.native
+    var RIGHT: String
     
-    var TOP: String = js.native
+    var TOP: String
   }
   object BOTTOM {
     
@@ -126,12 +122,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CLICKOUTSIDE extends StObject {
     
-    var CLICK_OUTSIDE: String = js.native
+    var CLICK_OUTSIDE: String
     
-    var ESCAPE: String = js.native
+    var ESCAPE: String
   }
   object CLICKOUTSIDE {
     
@@ -152,10 +147,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CLOSE_ extends StObject {
     
-    var CLOSE: String = js.native
+    var CLOSE: String
   }
   object CLOSE_ {
     
@@ -173,12 +167,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Close extends StObject {
     
-    var close: String = js.native
+    var close: String
     
-    var open: String = js.native
+    var open: String
   }
   object Close {
     
@@ -199,14 +192,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FADE extends StObject {
     
-    var FADE: String = js.native
+    var FADE: String
     
-    var SCALE: String = js.native
+    var SCALE: String
     
-    var SLIDE: String = js.native
+    var SLIDE: String
   }
   object FADE {
     
@@ -230,12 +222,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     
@@ -256,12 +247,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Methods extends StObject {
     
-    var methods: js.UndefOr[js.Array[String]] = js.native
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
-    def options(): IDialogOptions = js.native
+    def options(): IDialogOptions
   }
   object Methods {
     
@@ -288,12 +278,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Open extends StObject {
     
-    var close: Double = js.native
+    var close: Double
     
-    var open: Double = js.native
+    var open: Double
   }
   object Open {
     

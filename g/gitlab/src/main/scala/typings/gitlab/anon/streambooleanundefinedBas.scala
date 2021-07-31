@@ -3,17 +3,16 @@ package typings.gitlab.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  stream :boolean | undefined} & gitlab.gitlab/dist/types/core/infrastructure.BaseRequestOptions */
-@js.native
 trait streambooleanundefinedBas
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var stream: js.UndefOr[Boolean] = js.native
+  var stream: js.UndefOr[Boolean] = js.undefined
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object streambooleanundefinedBas {
   

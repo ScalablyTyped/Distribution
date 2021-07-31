@@ -4,7 +4,6 @@ import typings.angular.mod.IPromise
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *
   **/
-@js.native
 trait ILogResource extends StObject {
   
   /**
@@ -37,7 +35,7 @@ trait ILogResource extends StObject {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getEntityLog(id: Double): IPromise[IResourcePromise] = js.native
+  def getEntityLog(id: Double): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -60,7 +58,7 @@ trait ILogResource extends StObject {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getLog(`type`: LogType, since: Date): IPromise[IResourcePromise] = js.native
+  def getLog(`type`: LogType, since: Date): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -83,7 +81,7 @@ trait ILogResource extends StObject {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getUserLog(`type`: LogType, since: Date): IPromise[IResourcePromise] = js.native
+  def getUserLog(`type`: LogType, since: Date): IPromise[IResourcePromise]
 }
 object ILogResource {
   

@@ -3,295 +3,293 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
   /** Account types that can't be managed by the user. */
-  var accountTypesWithManagementDisabled: js.UndefOr[js.Array[String]] = js.native
+  var accountTypesWithManagementDisabled: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether adding new users and profiles is disabled. */
-  var addUserDisabled: js.UndefOr[Boolean] = js.native
+  var addUserDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether adjusting the master volume is disabled. */
-  var adjustVolumeDisabled: js.UndefOr[Boolean] = js.native
+  var adjustVolumeDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Security policies set to the most secure values by default. To maintain the security posture of a device, we don't recommend overriding any of the default values. */
-  var advancedSecurityOverrides: js.UndefOr[AdvancedSecurityOverrides] = js.native
+  var advancedSecurityOverrides: js.UndefOr[AdvancedSecurityOverrides] = js.undefined
   
   /** Configuration for an always-on VPN connection. Use with vpn_config_disabled to prevent modification of this setting. */
-  var alwaysOnVpnPackage: js.UndefOr[AlwaysOnVpnPackage] = js.native
+  var alwaysOnVpnPackage: js.UndefOr[AlwaysOnVpnPackage] = js.undefined
   
   /**
     * The app tracks for Android Device Policy the device can access. The device receives the latest version among all accessible tracks. If no tracks are specified, then the device only
     * uses the production track.
     */
-  var androidDevicePolicyTracks: js.UndefOr[js.Array[String]] = js.native
+  var androidDevicePolicyTracks: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The app auto update policy, which controls when automatic app updates can be applied. */
-  var appAutoUpdatePolicy: js.UndefOr[String] = js.native
+  var appAutoUpdatePolicy: js.UndefOr[String] = js.undefined
   
   /** Policy applied to apps. */
-  var applications: js.UndefOr[js.Array[ApplicationPolicy]] = js.native
+  var applications: js.UndefOr[js.Array[ApplicationPolicy]] = js.undefined
   
   /** Whether auto time is required, which prevents the user from manually setting the date and time. */
-  var autoTimeRequired: js.UndefOr[Boolean] = js.native
+  var autoTimeRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether applications other than the ones configured in applications are blocked from being installed. When set, applications that were installed under a previous policy but no
     * longer appear in the policy are automatically uninstalled.
     */
-  var blockApplicationsEnabled: js.UndefOr[Boolean] = js.native
+  var blockApplicationsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether configuring bluetooth is disabled. */
-  var bluetoothConfigDisabled: js.UndefOr[Boolean] = js.native
+  var bluetoothConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether bluetooth contact sharing is disabled. */
-  var bluetoothContactSharingDisabled: js.UndefOr[Boolean] = js.native
+  var bluetoothContactSharingDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether bluetooth is disabled. Prefer this setting over bluetooth_config_disabled because bluetooth_config_disabled can be bypassed by the user. */
-  var bluetoothDisabled: js.UndefOr[Boolean] = js.native
+  var bluetoothDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether all cameras on the device are disabled. */
-  var cameraDisabled: js.UndefOr[Boolean] = js.native
+  var cameraDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether configuring cell broadcast is disabled. */
-  var cellBroadcastsConfigDisabled: js.UndefOr[Boolean] = js.native
+  var cellBroadcastsConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Rules for automatically choosing a private key and certificate to authenticate the device to a server. The rules are ordered by increasing precedence, so if an outgoing request
     * matches more than one rule, the last rule defines which private key to use.
     */
-  var choosePrivateKeyRules: js.UndefOr[js.Array[ChoosePrivateKeyRule]] = js.native
+  var choosePrivateKeyRules: js.UndefOr[js.Array[ChoosePrivateKeyRule]] = js.undefined
   
   /**
     * Rules declaring which mitigating actions to take when a device is not compliant with its policy. When the conditions for multiple rules are satisfied, all of the mitigating actions
     * for the rules are taken. There is a maximum limit of 100 rules. Use policy enforcement rules instead.
     */
-  var complianceRules: js.UndefOr[js.Array[ComplianceRule]] = js.native
+  var complianceRules: js.UndefOr[js.Array[ComplianceRule]] = js.undefined
   
   /** Whether creating windows besides app windows is disabled. */
-  var createWindowsDisabled: js.UndefOr[Boolean] = js.native
+  var createWindowsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether configuring user credentials is disabled. */
-  var credentialsConfigDisabled: js.UndefOr[Boolean] = js.native
+  var credentialsConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether roaming data services are disabled. */
-  var dataRoamingDisabled: js.UndefOr[Boolean] = js.native
+  var dataRoamingDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the user is allowed to enable debugging features. */
-  var debuggingFeaturesAllowed: js.UndefOr[Boolean] = js.native
+  var debuggingFeaturesAllowed: js.UndefOr[Boolean] = js.undefined
   
   /** The default permission policy for runtime permission requests. */
-  var defaultPermissionPolicy: js.UndefOr[String] = js.native
+  var defaultPermissionPolicy: js.UndefOr[String] = js.undefined
   
   /** The device owner information to be shown on the lock screen. */
-  var deviceOwnerLockScreenInfo: js.UndefOr[UserFacingMessage] = js.native
+  var deviceOwnerLockScreenInfo: js.UndefOr[UserFacingMessage] = js.undefined
   
   /** Whether encryption is enabled */
-  var encryptionPolicy: js.UndefOr[String] = js.native
+  var encryptionPolicy: js.UndefOr[String] = js.undefined
   
   /** Whether app verification is force-enabled. */
-  var ensureVerifyAppsEnabled: js.UndefOr[Boolean] = js.native
+  var ensureVerifyAppsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether factory resetting from settings is disabled. */
-  var factoryResetDisabled: js.UndefOr[Boolean] = js.native
+  var factoryResetDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Email addresses of device administrators for factory reset protection. When the device is factory reset, it will require one of these admins to log in with the Google account email
     * and password to unlock the device. If no admins are specified, the device won't provide factory reset protection.
     */
-  var frpAdminEmails: js.UndefOr[js.Array[String]] = js.native
+  var frpAdminEmails: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether the user is allowed to have fun. Controls whether the Easter egg game in Settings is disabled. */
-  var funDisabled: js.UndefOr[Boolean] = js.native
+  var funDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether user installation of apps is disabled. */
-  var installAppsDisabled: js.UndefOr[Boolean] = js.native
+  var installAppsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the user is allowed to enable the "Unknown Sources" setting, which allows installation of apps from unknown sources. */
-  var installUnknownSourcesAllowed: js.UndefOr[Boolean] = js.native
+  var installUnknownSourcesAllowed: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the keyguard is disabled. */
-  var keyguardDisabled: js.UndefOr[Boolean] = js.native
+  var keyguardDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Disabled keyguard customizations, such as widgets. */
-  var keyguardDisabledFeatures: js.UndefOr[js.Array[String]] = js.native
+  var keyguardDisabledFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the kiosk custom launcher is enabled. This replaces the home screen with a launcher that locks down the device to the apps installed via the applications setting. Apps
     * appear on a single page in alphabetical order. Use kioskCustomization to further configure the kiosk device behavior.
     */
-  var kioskCustomLauncherEnabled: js.UndefOr[Boolean] = js.native
+  var kioskCustomLauncherEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Settings controlling the behavior of a device in kiosk mode. To enable kiosk mode, set kioskCustomLauncherEnabled to true or specify an app in the policy with installType KIOSK. */
-  var kioskCustomization: js.UndefOr[KioskCustomization] = js.native
+  var kioskCustomization: js.UndefOr[KioskCustomization] = js.undefined
   
   /** The degree of location detection enabled. The user may change the value unless the user is otherwise blocked from accessing device settings. */
-  var locationMode: js.UndefOr[String] = js.native
+  var locationMode: js.UndefOr[String] = js.undefined
   
   /** A message displayed to the user in the device administators settings screen. */
-  var longSupportMessage: js.UndefOr[UserFacingMessage] = js.native
+  var longSupportMessage: js.UndefOr[UserFacingMessage] = js.undefined
   
   /** Maximum time in milliseconds for user activity until the device locks. A value of 0 means there is no restriction. */
-  var maximumTimeToLock: js.UndefOr[String] = js.native
+  var maximumTimeToLock: js.UndefOr[String] = js.undefined
   
   /** The minimum allowed Android API level. */
-  var minimumApiLevel: js.UndefOr[Double] = js.native
+  var minimumApiLevel: js.UndefOr[Double] = js.undefined
   
   /** Whether configuring mobile networks is disabled. */
-  var mobileNetworksConfigDisabled: js.UndefOr[Boolean] = js.native
+  var mobileNetworksConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether adding or removing accounts is disabled. */
-  var modifyAccountsDisabled: js.UndefOr[Boolean] = js.native
+  var modifyAccountsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the user mounting physical external media is disabled. */
-  var mountPhysicalMediaDisabled: js.UndefOr[Boolean] = js.native
+  var mountPhysicalMediaDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** The name of the policy in the form enterprises/{enterpriseId}/policies/{policyId}. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the network escape hatch is enabled. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to
     * refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if
     * there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings.
     */
-  var networkEscapeHatchEnabled: js.UndefOr[Boolean] = js.native
+  var networkEscapeHatchEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether resetting network settings is disabled. */
-  var networkResetDisabled: js.UndefOr[Boolean] = js.native
+  var networkResetDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Network configuration for the device. See configure networks for more information. */
   var openNetworkConfiguration: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Whether using NFC to beam data from apps is disabled. */
-  var outgoingBeamDisabled: js.UndefOr[Boolean] = js.native
+  var outgoingBeamDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether outgoing calls are disabled. */
-  var outgoingCallsDisabled: js.UndefOr[Boolean] = js.native
+  var outgoingCallsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Password requirement policies. Different policies can be set for work profile or fully managed devices by setting the password_scope field in the policy. */
-  var passwordPolicies: js.UndefOr[js.Array[PasswordRequirements]] = js.native
+  var passwordPolicies: js.UndefOr[js.Array[PasswordRequirements]] = js.undefined
   
   /** Password requirements. The field password_requirements.require_password_unlock must not be set. DEPRECATED - Use password_policies. */
-  var passwordRequirements: js.UndefOr[PasswordRequirements] = js.native
+  var passwordRequirements: js.UndefOr[PasswordRequirements] = js.undefined
   
   /** Explicit permission or group grants or denials for all apps. These values override the default_permission_policy. */
-  var permissionGrants: js.UndefOr[js.Array[PermissionGrant]] = js.native
+  var permissionGrants: js.UndefOr[js.Array[PermissionGrant]] = js.undefined
   
   /**
     * Specifies permitted accessibility services. If the field is not set, any accessibility service can be used. If the field is set, only the accessibility services in this list and the
     * system's built-in accessibility service can be used. In particular, if the field is set to empty, only the system's built-in accessibility servicess can be used.
     */
-  var permittedAccessibilityServices: js.UndefOr[PackageNameList] = js.native
+  var permittedAccessibilityServices: js.UndefOr[PackageNameList] = js.undefined
   
   /** If present, only the input methods provided by packages in this list are permitted. If this field is present, but the list is empty, then only system input methods are permitted. */
-  var permittedInputMethods: js.UndefOr[PackageNameList] = js.native
+  var permittedInputMethods: js.UndefOr[PackageNameList] = js.undefined
   
   /** Default intent handler activities. */
-  var persistentPreferredActivities: js.UndefOr[js.Array[PersistentPreferredActivity]] = js.native
+  var persistentPreferredActivities: js.UndefOr[js.Array[PersistentPreferredActivity]] = js.undefined
   
   /** Policies managing personal usage on a company-owned device. */
-  var personalUsagePolicies: js.UndefOr[PersonalUsagePolicies] = js.native
+  var personalUsagePolicies: js.UndefOr[PersonalUsagePolicies] = js.undefined
   
   /** This mode controls which apps are available to the user in the Play Store and the behavior on the device when apps are removed from the policy. */
-  var playStoreMode: js.UndefOr[String] = js.native
+  var playStoreMode: js.UndefOr[String] = js.undefined
   
   /** Rules that define the behavior when a particular policy can not be applied on device */
-  var policyEnforcementRules: js.UndefOr[js.Array[PolicyEnforcementRule]] = js.native
+  var policyEnforcementRules: js.UndefOr[js.Array[PolicyEnforcementRule]] = js.undefined
   
   /**
     * Allows showing UI on a device for a user to choose a private key alias if there are no matching rules in ChoosePrivateKeyRules. For devices below Android P, setting this may leave
     * enterprise keys vulnerable.
     */
-  var privateKeySelectionEnabled: js.UndefOr[Boolean] = js.native
+  var privateKeySelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The network-independent global HTTP proxy. Typically proxies should be configured per-network in open_network_configuration. However for unusual configurations like general internal
     * filtering a global HTTP proxy may be useful. If the proxy is not accessible, network access may break. The global proxy is only a recommendation and some apps may ignore it.
     */
-  var recommendedGlobalProxy: js.UndefOr[ProxyInfo] = js.native
+  var recommendedGlobalProxy: js.UndefOr[ProxyInfo] = js.undefined
   
   /** Whether removing other users is disabled. */
-  var removeUserDisabled: js.UndefOr[Boolean] = js.native
+  var removeUserDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether rebooting the device into safe boot is disabled. */
-  var safeBootDisabled: js.UndefOr[Boolean] = js.native
+  var safeBootDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether screen capture is disabled. */
-  var screenCaptureDisabled: js.UndefOr[Boolean] = js.native
+  var screenCaptureDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether changing the user icon is disabled. */
-  var setUserIconDisabled: js.UndefOr[Boolean] = js.native
+  var setUserIconDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether changing the wallpaper is disabled. */
-  var setWallpaperDisabled: js.UndefOr[Boolean] = js.native
+  var setWallpaperDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Actions to take during the setup process. */
-  var setupActions: js.UndefOr[js.Array[SetupAction]] = js.native
+  var setupActions: js.UndefOr[js.Array[SetupAction]] = js.undefined
   
   /** Whether location sharing is disabled. */
-  var shareLocationDisabled: js.UndefOr[Boolean] = js.native
+  var shareLocationDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** A message displayed to the user in the settings screen wherever functionality has been disabled by the admin. If the message is longer than 200 characters it may be truncated. */
-  var shortSupportMessage: js.UndefOr[UserFacingMessage] = js.native
+  var shortSupportMessage: js.UndefOr[UserFacingMessage] = js.undefined
   
   /** Flag to skip hints on the first use. Enterprise admin can enable the system recommendation for apps to skip their user tutorial and other introductory hints on first start-up. */
-  var skipFirstUseHintsEnabled: js.UndefOr[Boolean] = js.native
+  var skipFirstUseHintsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether sending and receiving SMS messages is disabled. */
-  var smsDisabled: js.UndefOr[Boolean] = js.native
+  var smsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the status bar is disabled. This disables notifications, quick settings, and other screen overlays that allow escape from full-screen mode. DEPRECATED. To disable the status
     * bar on a kiosk device, use InstallType KIOSK or kioskCustomLauncherEnabled.
     */
-  var statusBarDisabled: js.UndefOr[Boolean] = js.native
+  var statusBarDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Status reporting settings */
-  var statusReportingSettings: js.UndefOr[StatusReportingSettings] = js.native
+  var statusReportingSettings: js.UndefOr[StatusReportingSettings] = js.undefined
   
   /**
     * The battery plugged in modes for which the device stays on. When using this setting, it is recommended to clear maximum_time_to_lock so that the device doesn't lock itself while it
     * stays on.
     */
-  var stayOnPluggedModes: js.UndefOr[js.Array[String]] = js.native
+  var stayOnPluggedModes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The system update policy, which controls how OS updates are applied. If the update type is WINDOWED, the update window will automatically apply to Play app updates as well. */
-  var systemUpdate: js.UndefOr[SystemUpdate] = js.native
+  var systemUpdate: js.UndefOr[SystemUpdate] = js.undefined
   
   /** Whether configuring tethering and portable hotspots is disabled. */
-  var tetheringConfigDisabled: js.UndefOr[Boolean] = js.native
+  var tetheringConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether user uninstallation of applications is disabled. */
-  var uninstallAppsDisabled: js.UndefOr[Boolean] = js.native
+  var uninstallAppsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the microphone is muted and adjusting microphone volume is disabled. */
-  var unmuteMicrophoneDisabled: js.UndefOr[Boolean] = js.native
+  var unmuteMicrophoneDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether transferring files over USB is disabled. */
-  var usbFileTransferDisabled: js.UndefOr[Boolean] = js.native
+  var usbFileTransferDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether USB storage is enabled. Deprecated. */
-  var usbMassStorageEnabled: js.UndefOr[Boolean] = js.native
+  var usbMassStorageEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** The version of the policy. This is a read-only field. The version is incremented each time the policy is updated. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /** Whether configuring VPN is disabled. */
-  var vpnConfigDisabled: js.UndefOr[Boolean] = js.native
+  var vpnConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether configuring Wi-Fi access points is disabled. */
-  var wifiConfigDisabled: js.UndefOr[Boolean] = js.native
+  var wifiConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** DEPRECATED - Use wifi_config_disabled. */
-  var wifiConfigsLockdownEnabled: js.UndefOr[Boolean] = js.native
+  var wifiConfigsLockdownEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object Policy {
   
@@ -593,7 +591,7 @@ object Policy {
     def setOpenNetworkConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[js.Any]
     ): Self = StObject.set(x, "openNetworkConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline

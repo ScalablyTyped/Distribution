@@ -1,147 +1,270 @@
 package typings.sipml
 
+import typings.sipml.SIPml.Session.EventSubscriptionType
 import typings.sipml.SIPml.Stack.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object SIPml {
     
+    @JSGlobal("SIPml")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSGlobal("SIPml.Event")
     @js.native
     class Event ()
-      extends typings.sipml.SIPml.Event
+      extends StObject
+         with typings.sipml.SIPml.Event {
+      
+      /* CompleteClass */
+      var description: String = js.native
+      
+      /* CompleteClass */
+      override def getContent(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getContentString(): String = js.native
+      
+      /* CompleteClass */
+      override def getContentType(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getSipResponseCode(): Double = js.native
+      
+      /* CompleteClass */
+      var `type`: String = js.native
+    }
     
     @JSGlobal("SIPml.EventTarget")
     @js.native
     class EventTarget[EventSubscriptionType /* <: String */, EventType /* <: typings.sipml.SIPml.Event */] ()
-      extends typings.sipml.SIPml.EventTarget[EventSubscriptionType, EventType]
+      extends StObject
+         with typings.sipml.SIPml.EventTarget[EventSubscriptionType, EventType] {
+      
+      /* CompleteClass */
+      override def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[EventType, Unit]): Unit = js.native
+      
+      /* CompleteClass */
+      override def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+    }
     
     @JSGlobal("SIPml.Session")
     @js.native
     class Session ()
-      extends typings.sipml.SIPml.Session
+      extends StObject
+         with typings.sipml.SIPml.Session {
+      
+      /* CompleteClass */
+      override def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[typings.sipml.SIPml.Session.Event, Unit]): Unit = js.native
+      
+      /* CompleteClass */
+      override def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+    }
     object Session {
       
       @JSGlobal("SIPml.Session.Call")
       @js.native
       class Call ()
-        extends typings.sipml.SIPml.Session.Call
+        extends StObject
+           with typings.sipml.SIPml.Session.Call {
+        
+        /* CompleteClass */
+        override def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[typings.sipml.SIPml.Session.Event, Unit]): Unit = js.native
+        
+        /* CompleteClass */
+        override def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+      }
       
       @JSGlobal("SIPml.Session.Event")
       @js.native
       class Event ()
-        extends typings.sipml.SIPml.Session.Event
+        extends StObject
+           with typings.sipml.SIPml.Session.Event {
+        
+        /* CompleteClass */
+        var description: String = js.native
+        
+        /* CompleteClass */
+        override def getContent(): js.Object = js.native
+        
+        /* CompleteClass */
+        override def getContentString(): String = js.native
+        
+        /* CompleteClass */
+        override def getContentType(): js.Object = js.native
+        
+        /* CompleteClass */
+        override def getSipResponseCode(): Double = js.native
+        
+        /* CompleteClass */
+        override def getTransferDestinationFriendlyName(): String = js.native
+        
+        /* CompleteClass */
+        var session: typings.sipml.SIPml.Session = js.native
+        
+        /* CompleteClass */
+        var `type`: String = js.native
+      }
       
       @JSGlobal("SIPml.Session.Message")
       @js.native
       class Message ()
-        extends typings.sipml.SIPml.Session.Message
+        extends StObject
+           with typings.sipml.SIPml.Session.Message {
+        
+        /* CompleteClass */
+        override def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[typings.sipml.SIPml.Session.Event, Unit]): Unit = js.native
+        
+        /* CompleteClass */
+        override def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+      }
       
       @JSGlobal("SIPml.Session.Publish")
       @js.native
       class Publish ()
-        extends typings.sipml.SIPml.Session.Publish
+        extends StObject
+           with typings.sipml.SIPml.Session.Publish {
+        
+        /* CompleteClass */
+        override def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[typings.sipml.SIPml.Session.Event, Unit]): Unit = js.native
+        
+        /* CompleteClass */
+        override def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+      }
       
       @JSGlobal("SIPml.Session.Registration")
       @js.native
       class Registration ()
-        extends typings.sipml.SIPml.Session.Registration
+        extends StObject
+           with typings.sipml.SIPml.Session.Registration {
+        
+        /* CompleteClass */
+        override def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[typings.sipml.SIPml.Session.Event, Unit]): Unit = js.native
+        
+        /* CompleteClass */
+        override def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+      }
       
       @JSGlobal("SIPml.Session.Subscribe")
       @js.native
       class Subscribe ()
-        extends typings.sipml.SIPml.Session.Subscribe
+        extends StObject
+           with typings.sipml.SIPml.Session.Subscribe {
+        
+        /* CompleteClass */
+        override def addEventListener(`type`: EventSubscriptionType, listener: js.Function1[typings.sipml.SIPml.Session.Event, Unit]): Unit = js.native
+        
+        /* CompleteClass */
+        override def removeEventListener(`type`: EventSubscriptionType): Unit = js.native
+      }
     }
     
     @JSGlobal("SIPml.Stack")
     @js.native
     class Stack ()
-      extends typings.sipml.SIPml.Stack {
+      extends StObject
+         with typings.sipml.SIPml.Stack {
       def this(configuration: Configuration) = this()
+      
+      /* CompleteClass */
+      override def addEventListener(
+        `type`: typings.sipml.SIPml.Stack.EventSubscriptionType,
+        listener: js.Function1[typings.sipml.SIPml.Stack.Event, Unit]
+      ): Unit = js.native
+      
+      /* CompleteClass */
+      override def removeEventListener(`type`: typings.sipml.SIPml.Stack.EventSubscriptionType): Unit = js.native
     }
     object Stack {
       
       @JSGlobal("SIPml.Stack.Event")
       @js.native
       class Event ()
-        extends typings.sipml.SIPml.Stack.Event
+        extends StObject
+           with typings.sipml.SIPml.Stack.Event {
+        
+        /* CompleteClass */
+        var description: String = js.native
+        
+        /* CompleteClass */
+        override def getContent(): js.Object = js.native
+        
+        /* CompleteClass */
+        override def getContentString(): String = js.native
+        
+        /* CompleteClass */
+        override def getContentType(): js.Object = js.native
+        
+        /* CompleteClass */
+        override def getSipResponseCode(): Double = js.native
+        
+        /* CompleteClass */
+        var newSession: typings.sipml.SIPml.Session = js.native
+        
+        /* CompleteClass */
+        var `type`: String = js.native
+      }
     }
     
-    @JSGlobal("SIPml.getNavigatorFriendlyName")
-    @js.native
-    def getNavigatorFriendlyName(): String = js.native
+    @scala.inline
+    def getNavigatorFriendlyName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorFriendlyName")().asInstanceOf[String]
     
-    @JSGlobal("SIPml.getNavigatorVersion")
-    @js.native
-    def getNavigatorVersion(): String = js.native
+    @scala.inline
+    def getNavigatorVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorVersion")().asInstanceOf[String]
     
-    @JSGlobal("SIPml.getSystemFriendlyName")
-    @js.native
-    def getSystemFriendlyName(): String = js.native
+    @scala.inline
+    def getSystemFriendlyName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemFriendlyName")().asInstanceOf[String]
     
-    @JSGlobal("SIPml.getWebRtc4AllVersion")
-    @js.native
-    def getWebRtc4AllVersion(): String = js.native
+    @scala.inline
+    def getWebRtc4AllVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebRtc4AllVersion")().asInstanceOf[String]
     
-    @JSGlobal("SIPml.haveMediaStream")
-    @js.native
-    def haveMediaStream(): Boolean = js.native
+    @scala.inline
+    def haveMediaStream(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("haveMediaStream")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.init")
-    @js.native
-    def init(): Boolean = js.native
-    @JSGlobal("SIPml.init")
-    @js.native
-    def init(readyCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* e */ js.Any, _]): Boolean = js.native
-    @JSGlobal("SIPml.init")
-    @js.native
-    def init(readyCallback: js.Function1[/* e */ js.Any, _]): Boolean = js.native
-    @JSGlobal("SIPml.init")
-    @js.native
-    def init(readyCallback: js.Function1[/* e */ js.Any, _], errorCallback: js.Function1[/* e */ js.Any, _]): Boolean = js.native
+    @scala.inline
+    def init(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Boolean]
+    @scala.inline
+    def init(readyCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def init(
+      readyCallback: js.Function1[/* e */ js.Any, js.Any],
+      errorCallback: js.Function1[/* e */ js.Any, js.Any]
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def init(readyCallback: Unit, errorCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isInitialized")
-    @js.native
-    def isInitialized(): Boolean = js.native
+    @scala.inline
+    def isInitialized(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInitialized")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isNavigatorOutdated")
-    @js.native
-    def isNavigatorOutdated(): Boolean = js.native
+    @scala.inline
+    def isNavigatorOutdated(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavigatorOutdated")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isReady")
-    @js.native
-    def isReady(): Boolean = js.native
+    @scala.inline
+    def isReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReady")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isScreenShareSupported")
-    @js.native
-    def isScreenShareSupported(): Boolean = js.native
+    @scala.inline
+    def isScreenShareSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScreenShareSupported")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isWebRtc4AllSupported")
-    @js.native
-    def isWebRtc4AllSupported(): Boolean = js.native
+    @scala.inline
+    def isWebRtc4AllSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtc4AllSupported")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isWebRtcPluginOutdated")
-    @js.native
-    def isWebRtcPluginOutdated(): Boolean = js.native
+    @scala.inline
+    def isWebRtcPluginOutdated(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtcPluginOutdated")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isWebRtcSupported")
-    @js.native
-    def isWebRtcSupported(): Boolean = js.native
+    @scala.inline
+    def isWebRtcSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebRtcSupported")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.isWebSocketSupported")
-    @js.native
-    def isWebSocketSupported(): Boolean = js.native
+    @scala.inline
+    def isWebSocketSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebSocketSupported")().asInstanceOf[Boolean]
     
-    @JSGlobal("SIPml.setDebugLevel")
-    @js.native
-    def setDebugLevel(level: String): Unit = js.native
+    @scala.inline
+    def setDebugLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("SIPml.setWebRtcType")
-    @js.native
-    def setWebRtcType(`type`: String): Boolean = js.native
+    @scala.inline
+    def setWebRtcType(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebRtcType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

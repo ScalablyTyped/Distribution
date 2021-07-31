@@ -2,11 +2,11 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWebDriverCookie extends IWebDriverOptionsCookie {
+trait IWebDriverCookie
+  extends StObject
+     with IWebDriverOptionsCookie {
   
   /**
     * When the cookie expires.
@@ -17,7 +17,7 @@ trait IWebDriverCookie extends IWebDriverOptionsCookie {
     * @type {(!number|undefined)}
     */
   @JSName("expiry")
-  var expiry_IWebDriverCookie: js.UndefOr[Double] = js.native
+  var expiry_IWebDriverCookie: js.UndefOr[Double] = js.undefined
 }
 object IWebDriverCookie {
   

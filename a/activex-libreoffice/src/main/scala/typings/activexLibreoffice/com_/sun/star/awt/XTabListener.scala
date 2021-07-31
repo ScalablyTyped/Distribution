@@ -7,37 +7,37 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** such listener will be informed if tab's was inserted/removed from an {@link XSimpleTabController} instance or if the properties of a tab was changed. */
-@js.native
-trait XTabListener extends XEventListener {
+trait XTabListener
+  extends StObject
+     with XEventListener {
   
   /** a tab was activated (e.g. by using mouse/keyboard or method {@link XSimpleTabController.activateTab()} */
-  def activated(ID: Double): Unit = js.native
+  def activated(ID: Double): Unit
   
   /**
     * a tab was changed within it's properties.
     * @param ID the unique ID of the changed tab.
     * @param Properties the current set of properties for this tab.
     */
-  def changed(ID: Double, Properties: SeqEquiv[NamedValue]): Unit = js.native
+  def changed(ID: Double, Properties: SeqEquiv[NamedValue]): Unit
   
   /** a tab was deactivated, because another tab became the new active state. */
-  def deactivated(ID: Double): Unit = js.native
+  def deactivated(ID: Double): Unit
   
   /**
     * a new tab was inserted.
     * @param ID this is the unique ID of this new tab.
     */
-  def inserted(ID: Double): Unit = js.native
+  def inserted(ID: Double): Unit
   
   /**
     * a tab was removed.
     * @param ID this was the unique ID of this tab.
     */
-  def removed(ID: Double): Unit = js.native
+  def removed(ID: Double): Unit
 }
 object XTabListener {
   

@@ -6,19 +6,17 @@ import typings.activexStdole.stdole.OLE_XPOS_CONTAINER
 import typings.activexStdole.stdole.OLE_YPOS_CONTAINER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Button extends StObject {
   
-  val Button: OlMouseButton = js.native
+  val Button: OlMouseButton
   
-  val Shift: OlShiftState = js.native
+  val Shift: OlShiftState
   
-  val X: OLE_XPOS_CONTAINER = js.native
+  val X: OLE_XPOS_CONTAINER
   
-  val Y: OLE_YPOS_CONTAINER = js.native
+  val Y: OLE_YPOS_CONTAINER
 }
 object Button {
   

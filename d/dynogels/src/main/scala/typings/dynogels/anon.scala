@@ -2,15 +2,13 @@ package typings.dynogels
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PollingInterval extends StObject {
     
-    var pollingInterval: Double = js.native
+    var pollingInterval: Double
   }
   object PollingInterval {
     
@@ -49,12 +46,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StreamEnabled extends StObject {
     
-    var streamEnabled: Boolean = js.native
+    var streamEnabled: Boolean
     
-    var streamViewType: String = js.native
+    var streamViewType: String
   }
   object StreamEnabled {
     

@@ -2,7 +2,6 @@ package typings.nvd3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -42,9 +41,9 @@ trait Nvd3Axis extends StObject {
   def rangeBand(): Double = js.native
   
   def rangeBands(interval: js.Tuple2[Double, Double]): this.type = js.native
-  def rangeBands(interval: js.Tuple2[Double, Double], padding: js.UndefOr[scala.Nothing], outerPadding: Double): this.type = js.native
   def rangeBands(interval: js.Tuple2[Double, Double], padding: Double): this.type = js.native
   def rangeBands(interval: js.Tuple2[Double, Double], padding: Double, outerPadding: Double): this.type = js.native
+  def rangeBands(interval: js.Tuple2[Double, Double], padding: Unit, outerPadding: Double): this.type = js.native
   
   /*Rotates the X axis labels by the specified degree.*/
   def rotateLabels(): Double = js.native
@@ -74,10 +73,10 @@ trait Nvd3Axis extends StObject {
   def tickSize(inner: Double, outer: Double): this.type = js.native
   def tickSize(size: Double): this.type = js.native
   
-  def tickValues(): js.Array[_] = js.native
-  def tickValues(values: js.Array[_]): this.type = js.native
+  def tickValues(): js.Array[js.Any] = js.native
+  def tickValues(values: js.Array[js.Any]): this.type = js.native
   
-  def ticks(): js.Array[_] = js.native
+  def ticks(): js.Array[js.Any] = js.native
   def ticks(args: js.Any*): this.type = js.native
   
   /* The width the graph or component created inside the SVG should be made*/

@@ -2,31 +2,29 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsTrayFeedResponseFriendshipStatus extends StObject {
   
-  var blocking: js.UndefOr[Boolean] = js.native
+  var blocking: js.UndefOr[Boolean] = js.undefined
   
-  var followed_by: js.UndefOr[Boolean] = js.native
+  var followed_by: js.UndefOr[Boolean] = js.undefined
   
-  var following: Boolean = js.native
+  var following: Boolean
   
-  var incoming_request: js.UndefOr[Boolean] = js.native
+  var incoming_request: js.UndefOr[Boolean] = js.undefined
   
-  var is_bestie: js.UndefOr[Boolean] = js.native
+  var is_bestie: js.UndefOr[Boolean] = js.undefined
   
-  var is_muting_reel: Boolean = js.native
+  var is_muting_reel: Boolean
   
-  var is_private: js.UndefOr[Boolean] = js.native
+  var is_private: js.UndefOr[Boolean] = js.undefined
   
-  var is_restricted: js.UndefOr[Boolean] = js.native
+  var is_restricted: js.UndefOr[Boolean] = js.undefined
   
-  var muting: Boolean = js.native
+  var muting: Boolean
   
-  var outgoing_request: Boolean = js.native
+  var outgoing_request: Boolean
 }
 object ReelsTrayFeedResponseFriendshipStatus {
   

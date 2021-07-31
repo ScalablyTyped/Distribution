@@ -14,34 +14,32 @@ import typings.plotlyJs.plotlyJsStrings.top
 import typings.plotlyJs.plotlyJsStrings.v
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Legend> */
-@js.native
 trait PartialLegend extends StObject {
   
-  var bgcolor: js.UndefOr[String] = js.native
+  var bgcolor: js.UndefOr[String] = js.undefined
   
-  var bordercolor: js.UndefOr[String] = js.native
+  var bordercolor: js.UndefOr[String] = js.undefined
   
-  var borderwidth: js.UndefOr[Double] = js.native
+  var borderwidth: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[PartialFont] = js.native
+  var font: js.UndefOr[PartialFont] = js.undefined
   
-  var orientation: js.UndefOr[v | h] = js.native
+  var orientation: js.UndefOr[v | h] = js.undefined
   
-  var tracegroupgap: js.UndefOr[Double] = js.native
+  var tracegroupgap: js.UndefOr[Double] = js.undefined
   
-  var traceorder: js.UndefOr[grouped | normal | reversed] = js.native
+  var traceorder: js.UndefOr[grouped | normal | reversed] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xanchor: js.UndefOr[auto | left | center | right] = js.native
+  var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.native
+  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
 }
 object PartialLegend {
   

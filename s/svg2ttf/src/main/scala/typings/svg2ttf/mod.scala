@@ -3,40 +3,40 @@ package typings.svg2ttf
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("svg2ttf", JSImport.Namespace)
-  @js.native
-  def apply(svgFontString: String): MicroBuffer = js.native
-  @JSImport("svg2ttf", JSImport.Namespace)
-  @js.native
-  def apply(svgFontString: String, options: FontOptions): MicroBuffer = js.native
+  @scala.inline
+  def apply(svgFontString: String): MicroBuffer = ^.asInstanceOf[js.Dynamic].apply(svgFontString.asInstanceOf[js.Any]).asInstanceOf[MicroBuffer]
+  @scala.inline
+  def apply(svgFontString: String, options: FontOptions): MicroBuffer = (^.asInstanceOf[js.Dynamic].apply(svgFontString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MicroBuffer]
   
+  @JSImport("svg2ttf", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FontOptions extends StObject {
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Unix timestamp (in seconds) to override creation time
       */
-    var ts: js.UndefOr[Double] = js.native
+    var ts: js.UndefOr[Double] = js.undefined
     
     /**
       * manufacturer url
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       * font version string, can be Version x.y or x.y
       * @default 'Version 1.0'
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object FontOptions {
     
@@ -81,10 +81,9 @@ object mod {
     }
   }
   
-  @js.native
   trait MicroBuffer extends StObject {
     
-    var buffer: Uint8Array = js.native
+    var buffer: Uint8Array
   }
   object MicroBuffer {
     

@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogTablePartitionKey extends StObject {
   
   /**
     * Free-form text comment.
     */
-  var comment: js.UndefOr[Input[String]] = js.native
+  var comment: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Name of the SerDe.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * The datatype of data in the Column.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object CatalogTablePartitionKey {
   

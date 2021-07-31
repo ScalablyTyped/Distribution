@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a SearchAgentsResponse. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SearchAgentsResponse.
   * @param [properties] Properties to set
   */
-class SearchAgentsResponse () extends ISearchAgentsResponse {
+class SearchAgentsResponse ()
+  extends StObject
+     with ISearchAgentsResponse {
   def this(properties: ISearchAgentsResponse) = this()
   
   /** SearchAgentsResponse agents. */
@@ -36,18 +37,20 @@ class SearchAgentsResponse () extends ISearchAgentsResponse {
 }
 object SearchAgentsResponse {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SearchAgentsResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns SearchAgentsResponse instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.create")
-  @js.native
-  def create(): SearchAgentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.create")
-  @js.native
-  def create(properties: ISearchAgentsResponse): SearchAgentsResponse = js.native
+  @scala.inline
+  def create(): SearchAgentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SearchAgentsResponse]
+  @scala.inline
+  def create(properties: ISearchAgentsResponse): SearchAgentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SearchAgentsResponse]
   
   /**
     * Decodes a SearchAgentsResponse message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object SearchAgentsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.decode")
-  @js.native
-  def decode(reader: Reader): SearchAgentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): SearchAgentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): SearchAgentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): SearchAgentsResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): SearchAgentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SearchAgentsResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): SearchAgentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SearchAgentsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): SearchAgentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SearchAgentsResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): SearchAgentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SearchAgentsResponse]
   
   /**
     * Decodes a SearchAgentsResponse message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object SearchAgentsResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): SearchAgentsResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): SearchAgentsResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): SearchAgentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SearchAgentsResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): SearchAgentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SearchAgentsResponse]
   
   /**
     * Encodes the specified SearchAgentsResponse message. Does not implicitly {@link google.cloud.dialogflow.v2.SearchAgentsResponse.verify|verify} messages.
@@ -93,12 +90,10 @@ object SearchAgentsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.encode")
-  @js.native
-  def encode(message: ISearchAgentsResponse): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.encode")
-  @js.native
-  def encode(message: ISearchAgentsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ISearchAgentsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ISearchAgentsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified SearchAgentsResponse message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.SearchAgentsResponse.verify|verify} messages.
@@ -107,12 +102,10 @@ object SearchAgentsResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISearchAgentsResponse): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISearchAgentsResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ISearchAgentsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ISearchAgentsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a SearchAgentsResponse message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object SearchAgentsResponse {
     * @returns SearchAgentsResponse
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): SearchAgentsResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): SearchAgentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SearchAgentsResponse]
   
   /**
     * Creates a plain object from a SearchAgentsResponse message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object SearchAgentsResponse {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.toObject")
-  @js.native
-  def toObject(message: SearchAgentsResponse): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.toObject")
-  @js.native
-  def toObject(message: SearchAgentsResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: SearchAgentsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: SearchAgentsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a SearchAgentsResponse message.
@@ -144,7 +134,6 @@ object SearchAgentsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SearchAgentsResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

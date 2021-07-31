@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SolutionStackDescription extends StObject {
   
   /**
     * The permitted file types allowed for a solution stack.
     */
-  var PermittedFileTypes: js.UndefOr[SolutionStackFileTypeList] = js.native
+  var PermittedFileTypes: js.UndefOr[SolutionStackFileTypeList] = js.undefined
   
   /**
     * The name of the solution stack.
     */
-  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.native
+  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.undefined
 }
 object SolutionStackDescription {
   

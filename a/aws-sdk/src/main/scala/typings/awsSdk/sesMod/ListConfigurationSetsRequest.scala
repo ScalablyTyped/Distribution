@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConfigurationSetsRequest extends StObject {
   
   /**
     * The number of configuration sets to return.
     */
-  var MaxItems: js.UndefOr[typings.awsSdk.sesMod.MaxItems] = js.native
+  var MaxItems: js.UndefOr[typings.awsSdk.sesMod.MaxItems] = js.undefined
   
   /**
     * A token returned from a previous call to ListConfigurationSets to indicate the position of the configuration set in the configuration set list.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.undefined
 }
 object ListConfigurationSetsRequest {
   

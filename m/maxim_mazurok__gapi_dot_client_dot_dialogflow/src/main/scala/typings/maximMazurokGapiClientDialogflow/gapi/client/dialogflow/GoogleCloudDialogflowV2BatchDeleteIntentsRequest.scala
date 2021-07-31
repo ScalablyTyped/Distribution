@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2BatchDeleteIntentsRequest extends StObject {
   
   /** Required. The collection of intents to delete. Only intent `name` must be filled in. */
-  var intents: js.UndefOr[js.Array[GoogleCloudDialogflowV2Intent]] = js.native
+  var intents: js.UndefOr[js.Array[GoogleCloudDialogflowV2Intent]] = js.undefined
 }
 object GoogleCloudDialogflowV2BatchDeleteIntentsRequest {
   

@@ -2,25 +2,23 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message defining the cost to run a given survey through API.
   */
-@js.native
 trait SchemaSurveyCost extends StObject {
   
   /**
     * Cost per survey response in nano units of the given currency. To get the
     * total cost for a survey, multiply this value by wanted_response_count.
     */
-  var costPerResponseNanos: js.UndefOr[String] = js.native
+  var costPerResponseNanos: js.UndefOr[String] = js.undefined
   
   /**
     * Currency code that the cost is given in.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * *Deprecated* Threshold to start a survey automatically if the quoted
@@ -41,13 +39,13 @@ trait SchemaSurveyCost extends StObject {
     * immediately start the survey as long the incidence test was run within
     * the last 21 days. This will no longer be available after June 2018.
     */
-  var maxCostPerResponseNanos: js.UndefOr[String] = js.native
+  var maxCostPerResponseNanos: js.UndefOr[String] = js.undefined
   
   /**
     * Cost of survey in nano units of the given currency. DEPRECATED in favor
     * of cost_per_response_nanos
     */
-  var nanos: js.UndefOr[String] = js.native
+  var nanos: js.UndefOr[String] = js.undefined
 }
 object SchemaSurveyCost {
   

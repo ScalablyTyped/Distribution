@@ -3,17 +3,15 @@ package typings.postmanCollection.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Host extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var path: RegExp = js.native
+  var path: RegExp
   
-  var protocols: js.Array[String] = js.native
+  var protocols: js.Array[String]
 }
 object Host {
   

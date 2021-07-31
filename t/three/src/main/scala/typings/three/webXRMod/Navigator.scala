@@ -2,13 +2,11 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  var xr: js.UndefOr[XR] = js.native
+  var xr: js.UndefOr[XR] = js.undefined
 }
 object Navigator {
   

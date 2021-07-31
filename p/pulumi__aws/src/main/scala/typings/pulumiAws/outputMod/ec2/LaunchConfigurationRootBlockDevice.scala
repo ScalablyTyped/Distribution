@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchConfigurationRootBlockDevice extends StObject {
   
-  var deleteOnTermination: js.UndefOr[Boolean] = js.native
+  var deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
-  var encrypted: Boolean = js.native
+  var encrypted: Boolean
   
-  var iops: Double = js.native
+  var iops: Double
   
-  var volumeSize: Double = js.native
+  var volumeSize: Double
   
-  var volumeType: String = js.native
+  var volumeType: String
 }
 object LaunchConfigurationRootBlockDevice {
   

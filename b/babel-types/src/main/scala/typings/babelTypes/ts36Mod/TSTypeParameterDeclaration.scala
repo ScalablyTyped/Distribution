@@ -2,16 +2,16 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TSTypeParameterDeclaration extends Node {
+trait TSTypeParameterDeclaration
+  extends StObject
+     with Node {
   
-  var params: js.Array[TSTypeParameter] = js.native
+  var params: js.Array[TSTypeParameter]
   
   @JSName("type")
-  var type_TSTypeParameterDeclaration: typings.babelTypes.babelTypesStrings.TSTypeParameterDeclaration = js.native
+  var type_TSTypeParameterDeclaration: typings.babelTypes.babelTypesStrings.TSTypeParameterDeclaration
 }
 object TSTypeParameterDeclaration {
   

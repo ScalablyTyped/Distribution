@@ -2,7 +2,6 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,162 +9,145 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object platform {
   
+  @JSImport("onsenui", "platform")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @description Returns whether the OS is Android
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isAndroid")
-  @js.native
-  def isAndroid(): Boolean = js.native
+  @scala.inline
+  def isAndroid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroid")().asInstanceOf[Boolean]
   
-  @JSImport("onsenui", "platform.isAndroidPhone")
-  @js.native
-  def isAndroidPhone(): Boolean = js.native
+  @scala.inline
+  def isAndroidPhone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroidPhone")().asInstanceOf[Boolean]
   
-  @JSImport("onsenui", "platform.isAndroidTablet")
-  @js.native
-  def isAndroidTablet(): Boolean = js.native
+  @scala.inline
+  def isAndroidTablet(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroidTablet")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the device is BlackBerry
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isBlackBerry")
-  @js.native
-  def isBlackBerry(): Boolean = js.native
+  @scala.inline
+  def isBlackBerry(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlackBerry")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the browser is Chrome
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isChrome")
-  @js.native
-  def isChrome(): Boolean = js.native
+  @scala.inline
+  def isChrome(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChrome")().asInstanceOf[Boolean]
   
   /**
     *
     */
-  @JSImport("onsenui", "platform.isEdge")
-  @js.native
-  def isEdge(): Boolean = js.native
+  @scala.inline
+  def isEdge(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEdge")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the browser is Firefox
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isFirefox")
-  @js.native
-  def isFirefox(): Boolean = js.native
+  @scala.inline
+  def isFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirefox")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the browser is Internet Explorer
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIE")
-  @js.native
-  def isIE(): Boolean = js.native
+  @scala.inline
+  def isIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the OS is iOS
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIOS")
-  @js.native
-  def isIOS(): Boolean = js.native
+  @scala.inline
+  def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the iOS version is 7 or above
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIOS7above")
-  @js.native
-  def isIOS7above(): Boolean = js.native
+  @scala.inline
+  def isIOS7above(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS7above")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether app is running in iOS Safari.
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIOSSafari")
-  @js.native
-  def isIOSSafari(): Boolean = js.native
+  @scala.inline
+  def isIOSSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOSSafari")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the device is iPad
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIPad")
-  @js.native
-  def isIPad(): Boolean = js.native
+  @scala.inline
+  def isIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPad")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the OS is iPadOS
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIPadOS")
-  @js.native
-  def isIPadOS(): Boolean = js.native
+  @scala.inline
+  def isIPadOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPadOS")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the device is iPhone
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIPhone")
-  @js.native
-  def isIPhone(): Boolean = js.native
+  @scala.inline
+  def isIPhone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the device is iPhone X
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isIPhoneX")
-  @js.native
-  def isIPhoneX(): Boolean = js.native
+  @scala.inline
+  def isIPhoneX(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneX")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the browser is Opera
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isOpera")
-  @js.native
-  def isOpera(): Boolean = js.native
+  @scala.inline
+  def isOpera(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpera")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether the browser is Safari
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isSafari")
-  @js.native
-  def isSafari(): Boolean = js.native
+  @scala.inline
+  def isSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether app is running in WKWebView.
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isWKWebView")
-  @js.native
-  def isWKWebView(): Boolean = js.native
+  @scala.inline
+  def isWKWebView(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWKWebView")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether device is Windows phone
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isWP")
-  @js.native
-  def isWP(): Boolean = js.native
+  @scala.inline
+  def isWP(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWP")().asInstanceOf[Boolean]
   
   /**
     * @description Returns whether app is running in Cordova
     * @return {Boolean}
     */
-  @JSImport("onsenui", "platform.isWebView")
-  @js.native
-  def isWebView(): Boolean = js.native
+  @scala.inline
+  def isWebView(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebView")().asInstanceOf[Boolean]
   
   /**
     * @param  {string} platform Name of the platform. Possible values are: "opera", "firefox", "safari", "chrome", "ie", "android", "blackberry", "ios" or "wp".
     * @description Sets the platform used to render the elements. Useful for testing.
     */
-  @JSImport("onsenui", "platform.select")
-  @js.native
-  def select(platform: String): Unit = js.native
+  @scala.inline
+  def select(platform: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(platform.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

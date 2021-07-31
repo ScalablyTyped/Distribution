@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformSearchResponse extends StObject {
   
   /**
     * Number of search results.
     */
-  var resultCount: integer = js.native
+  var resultCount: integer
   
   /**
     * Unique search session identifier.
     */
-  var searchId: String = js.native
+  var searchId: String
 }
 object PerformSearchResponse {
   

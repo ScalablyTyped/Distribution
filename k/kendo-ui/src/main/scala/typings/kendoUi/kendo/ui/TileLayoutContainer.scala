@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileLayoutContainer extends StObject {
   
-  var bodyTemplate: js.UndefOr[String | js.Function] = js.native
+  var bodyTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var header: js.UndefOr[TileLayoutContainerHeader] = js.native
+  var header: js.UndefOr[TileLayoutContainerHeader] = js.undefined
   
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
 }
 object TileLayoutContainer {
   

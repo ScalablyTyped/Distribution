@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.IO.StreamHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintToPDFResponse extends StObject {
   
   /**
     * Base64-encoded pdf data. Empty if |returnAsStream| is specified.
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * A handle of the stream that holds resulting PDF data.
     */
-  var stream: js.UndefOr[StreamHandle] = js.native
+  var stream: js.UndefOr[StreamHandle] = js.undefined
 }
 object PrintToPDFResponse {
   

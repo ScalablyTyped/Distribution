@@ -3,17 +3,17 @@ package typings.expo.anon
 import typings.expo.appLoadingMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnError extends Props {
+trait OnError
+  extends StObject
+     with Props {
   
-  var onError: Null = js.native
+  var onError: Null
   
-  var onFinish: Null = js.native
+  var onFinish: Null
   
-  var startAsync: Null = js.native
+  var startAsync: Null
 }
 object OnError {
   

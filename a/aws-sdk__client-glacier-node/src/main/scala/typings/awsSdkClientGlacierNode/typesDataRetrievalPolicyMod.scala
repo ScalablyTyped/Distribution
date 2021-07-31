@@ -5,18 +5,16 @@ import typings.awsSdkClientGlacierNode.typesDataRetrievalRuleMod.UnmarshalledDat
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDataRetrievalPolicyMod {
   
-  @js.native
   trait DataRetrievalPolicy extends StObject {
     
     /**
       * <p>The policy rule. Although this is a list type, currently there must be only one rule, which contains a Strategy field and optionally a BytesPerHour field.</p>
       */
-    var Rules: js.UndefOr[js.Array[DataRetrievalRule] | Iterable[DataRetrievalRule]] = js.native
+    var Rules: js.UndefOr[js.Array[DataRetrievalRule] | Iterable[DataRetrievalRule]] = js.undefined
   }
   object DataRetrievalPolicy {
     
@@ -40,14 +38,15 @@ object typesDataRetrievalPolicyMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDataRetrievalPolicy extends DataRetrievalPolicy {
+  trait UnmarshalledDataRetrievalPolicy
+    extends StObject
+       with DataRetrievalPolicy {
     
     /**
       * <p>The policy rule. Although this is a list type, currently there must be only one rule, which contains a Strategy field and optionally a BytesPerHour field.</p>
       */
     @JSName("Rules")
-    var Rules_UnmarshalledDataRetrievalPolicy: js.UndefOr[js.Array[UnmarshalledDataRetrievalRule]] = js.native
+    var Rules_UnmarshalledDataRetrievalPolicy: js.UndefOr[js.Array[UnmarshalledDataRetrievalRule]] = js.undefined
   }
   object UnmarshalledDataRetrievalPolicy {
     

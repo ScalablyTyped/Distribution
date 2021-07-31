@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFolderPathRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * A comma-separated list of values. Specify "NAME" to include the names of the parent folders.
     */
-  var Fields: js.UndefOr[FieldNamesType] = js.native
+  var Fields: js.UndefOr[FieldNamesType] = js.undefined
   
   /**
     * The ID of the folder.
     */
-  var FolderId: IdType = js.native
+  var FolderId: IdType
   
   /**
     * The maximum number of levels in the hierarchy to return.
     */
-  var Limit: js.UndefOr[LimitType] = js.native
+  var Limit: js.UndefOr[LimitType] = js.undefined
   
   /**
     * This value is not supported.
     */
-  var Marker: js.UndefOr[PageMarkerType] = js.native
+  var Marker: js.UndefOr[PageMarkerType] = js.undefined
 }
 object GetFolderPathRequest {
   

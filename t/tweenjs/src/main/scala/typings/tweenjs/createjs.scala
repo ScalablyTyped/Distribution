@@ -5,13 +5,14 @@ import typings.createjsLib.createjs.Event
 import typings.createjsLib.createjs.EventDispatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createjs {
   
   @js.native
-  trait AbstractTween extends EventDispatcher {
+  trait AbstractTween
+    extends StObject
+       with EventDispatcher {
     
     def addLabel(label: String, position: Double): Unit = js.native
     
@@ -54,31 +55,31 @@ object createjs {
     def setLabels(labels: js.Array[StringDictionary[Double]]): Unit = js.native
     
     def setPosition(rawPosition: Double): Unit = js.native
-    def setPosition(
-      rawPosition: Double,
-      ignoreActions: js.UndefOr[scala.Nothing],
-      jump: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* tween */ this.type, Unit]
-    ): Unit = js.native
-    def setPosition(rawPosition: Double, ignoreActions: js.UndefOr[scala.Nothing], jump: Boolean): Unit = js.native
-    def setPosition(
-      rawPosition: Double,
-      ignoreActions: js.UndefOr[scala.Nothing],
-      jump: Boolean,
-      callback: js.Function1[/* tween */ this.type, Unit]
-    ): Unit = js.native
     def setPosition(rawPosition: Double, ignoreActions: Boolean): Unit = js.native
-    def setPosition(
-      rawPosition: Double,
-      ignoreActions: Boolean,
-      jump: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* tween */ this.type, Unit]
-    ): Unit = js.native
     def setPosition(rawPosition: Double, ignoreActions: Boolean, jump: Boolean): Unit = js.native
     def setPosition(
       rawPosition: Double,
       ignoreActions: Boolean,
       jump: Boolean,
+      callback: js.Function1[/* tween */ this.type, Unit]
+    ): Unit = js.native
+    def setPosition(
+      rawPosition: Double,
+      ignoreActions: Boolean,
+      jump: Unit,
+      callback: js.Function1[/* tween */ this.type, Unit]
+    ): Unit = js.native
+    def setPosition(rawPosition: Double, ignoreActions: Unit, jump: Boolean): Unit = js.native
+    def setPosition(
+      rawPosition: Double,
+      ignoreActions: Unit,
+      jump: Boolean,
+      callback: js.Function1[/* tween */ this.type, Unit]
+    ): Unit = js.native
+    def setPosition(
+      rawPosition: Double,
+      ignoreActions: Unit,
+      jump: Unit,
       callback: js.Function1[/* tween */ this.type, Unit]
     ): Unit = js.native
     
@@ -87,14 +88,14 @@ object createjs {
     var useTicks: Boolean = js.native
   }
   
-  @js.native
   trait Ease extends StObject
   
-  @js.native
   trait MotionGuidePlugin extends StObject
   
   @js.native
-  trait Timeline extends AbstractTween {
+  trait Timeline
+    extends StObject
+       with AbstractTween {
     
     // method
     def addTween(tween: Tween): Tween = js.native
@@ -107,28 +108,27 @@ object createjs {
     def updateDuration(): Unit = js.native
   }
   
-  @js.native
   trait TimelineProps extends StObject {
     
-    var bounce: js.UndefOr[Boolean] = js.native
+    var bounce: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreGlobalPause: js.UndefOr[Boolean] = js.native
+    var ignoreGlobalPause: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Double] = js.native
+    var loop: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
     
-    var timeScale: js.UndefOr[Double] = js.native
+    var timeScale: js.UndefOr[Double] = js.undefined
     
-    var useTicks: js.UndefOr[Boolean] = js.native
+    var useTicks: js.UndefOr[Boolean] = js.undefined
   }
   object TimelineProps {
     
@@ -204,16 +204,14 @@ object createjs {
   }
   
   @js.native
-  trait Tween extends AbstractTween {
+  trait Tween
+    extends StObject
+       with AbstractTween {
     
     def call(callback: js.Function1[/* repeated */ js.Any, Unit]): Tween = js.native
-    def call(
-      callback: js.Function1[/* repeated */ js.Any, Unit],
-      params: js.UndefOr[scala.Nothing],
-      scope: js.Any
-    ): Tween = js.native
-    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): Tween = js.native
-    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_], scope: js.Any): Tween = js.native
+    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[js.Any]): Tween = js.native
+    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[js.Any], scope: js.Any): Tween = js.native
+    def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: Unit, scope: js.Any): Tween = js.native
     
     def label(name: String): Tween = js.native
     
@@ -234,30 +232,29 @@ object createjs {
     var target: js.Any = js.native
     
     def to(props: js.Any): Tween = js.native
-    def to(props: js.Any, duration: js.UndefOr[scala.Nothing], ease: js.Function): Tween = js.native
     def to(props: js.Any, duration: Double): Tween = js.native
     def to(props: js.Any, duration: Double, ease: js.Function): Tween = js.native
+    def to(props: js.Any, duration: Unit, ease: js.Function): Tween = js.native
     
     def wait(duration: Double): Tween = js.native
     def wait(duration: Double, passive: Boolean): Tween = js.native
   }
   
-  @js.native
   trait TweenAction extends StObject {
     
-    var d: Double = js.native
+    var d: Double
     
-    var funct: js.Function = js.native
+    var funct: js.Function
     
-    var next: TweenAction = js.native
+    var next: TweenAction
     
-    var params: js.Array[_] = js.native
+    var params: js.Array[js.Any]
     
-    var prev: TweenAction = js.native
+    var prev: TweenAction
     
-    var scope: js.Any = js.native
+    var scope: js.Any
     
-    var t: Double = js.native
+    var t: Double
   }
   object TweenAction {
     
@@ -266,7 +263,7 @@ object createjs {
       d: Double,
       funct: js.Function,
       next: TweenAction,
-      params: js.Array[_],
+      params: js.Array[js.Any],
       prev: TweenAction,
       scope: js.Any,
       t: Double
@@ -288,7 +285,7 @@ object createjs {
       def setNext(value: TweenAction): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
@@ -304,35 +301,33 @@ object createjs {
     }
   }
   
-  @js.native
   trait TweenJS extends StObject
   
-  @js.native
   trait TweenProps extends StObject {
     
-    var bounce: js.UndefOr[Boolean] = js.native
+    var bounce: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreGlobalPause: js.UndefOr[Boolean] = js.native
+    var ignoreGlobalPause: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Double] = js.native
+    var loop: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var `override`: js.UndefOr[Boolean] = js.native
+    var `override`: js.UndefOr[Boolean] = js.undefined
     
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
-    var pluginData: js.UndefOr[js.Any] = js.native
+    var pluginData: js.UndefOr[js.Any] = js.undefined
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var reversed: js.UndefOr[Boolean] = js.native
+    var reversed: js.UndefOr[Boolean] = js.undefined
     
-    var timeScale: js.UndefOr[Double] = js.native
+    var timeScale: js.UndefOr[Double] = js.undefined
     
-    var useTicks: js.UndefOr[Boolean] = js.native
+    var useTicks: js.UndefOr[Boolean] = js.undefined
   }
   object TweenProps {
     
@@ -419,24 +414,23 @@ object createjs {
     }
   }
   
-  @js.native
   trait TweenStep extends StObject {
     
-    var d: Double = js.native
+    var d: Double
     
-    var ease: js.Function = js.native
+    var ease: js.Function
     
-    var index: Double = js.native
+    var index: Double
     
-    var next: TweenStep = js.native
+    var next: TweenStep
     
-    var passive: Boolean = js.native
+    var passive: Boolean
     
-    var prev: TweenStep = js.native
+    var prev: TweenStep
     
-    var props: TweenProps = js.native
+    var props: TweenProps
     
-    var t: Double = js.native
+    var t: Double
   }
   object TweenStep {
     

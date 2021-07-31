@@ -3,117 +3,115 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutgoingJob Class */
-@js.native
 trait FaxOutgoingJob extends StObject {
   
   /** Available operations, a bit-wise combination of FAX_JOB_OPERATIONS values */
-  val AvailableOperations: FAX_JOB_OPERATIONS_ENUM = js.native
+  val AvailableOperations: FAX_JOB_OPERATIONS_ENUM
   
   /** Called Station ID */
-  val CSID: String = js.native
+  val CSID: String
   
   /** Cancel the outbound job */
-  def Cancel(): Unit = js.native
+  def Cancel(): Unit
   
   /** Copy the job's TIFF image */
-  def CopyTiff(bstrTiffPath: String): Unit = js.native
+  def CopyTiff(bstrTiffPath: String): Unit
   
   /** Page currently in transmision */
-  val CurrentPage: Double = js.native
+  val CurrentPage: Double
   
   /** Device ID that transmits the job */
-  val DeviceId: Double = js.native
+  val DeviceId: Double
   
   /** Document's friendly name */
-  val DocumentName: String = js.native
+  val DocumentName: String
   
   /** Extended status description */
-  val ExtendedStatus: String = js.native
+  val ExtendedStatus: String
   
   /** Code of the job's extended status */
-  val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM = js.native
+  val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM
   
   @JSName("FAXCOMEXLib.FaxOutgoingJob_typekey")
-  var FAXCOMEXLibDotFaxOutgoingJob_typekey: FaxOutgoingJob = js.native
+  var FAXCOMEXLibDotFaxOutgoingJob_typekey: FaxOutgoingJob
   
   /** Whether to group broadcast receipts */
-  val GroupBroadcastReceipts: Boolean = js.native
+  val GroupBroadcastReceipts: Boolean
   
   /** Has Cover page */
-  val HasCoverPage: Boolean = js.native
+  val HasCoverPage: Boolean
   
   /** Unique job ID */
-  val Id: String = js.native
+  val Id: String
   
   /** Time the job was originally scheduled to be transmitted */
-  val OriginalScheduledTime: VarDate = js.native
+  val OriginalScheduledTime: VarDate
   
   /** Total number of pages */
-  val Pages: Double = js.native
+  val Pages: Double
   
   /** Pause the outbound job */
-  def Pause(): Unit = js.native
+  def Pause(): Unit
   
   /** Priority of the fax */
-  val Priority: FAX_PRIORITY_TYPE_ENUM = js.native
+  val Priority: FAX_PRIORITY_TYPE_ENUM
   
   /** Address of the receipt */
-  val ReceiptAddress: String = js.native
+  val ReceiptAddress: String
   
   /** Type of receipt */
-  val ReceiptType: FAX_RECEIPT_TYPE_ENUM = js.native
+  val ReceiptType: FAX_RECEIPT_TYPE_ENUM
   
   /** Recipient information object */
-  val Recipient: FaxRecipient = js.native
+  val Recipient: FaxRecipient
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Restart the outbound job */
-  def Restart(): Unit = js.native
+  def Restart(): Unit
   
   /** Resume the outbound job */
-  def Resume(): Unit = js.native
+  def Resume(): Unit
   
   /** Number of failed transmission retries */
-  val Retries: Double = js.native
+  val Retries: Double
   
   /** When to send the fax */
-  val ScheduleType: FAX_SCHEDULE_TYPE_ENUM = js.native
+  val ScheduleType: FAX_SCHEDULE_TYPE_ENUM
   
   /** The time the fax job is scheduled to be transmitted */
-  val ScheduledTime: VarDate = js.native
+  val ScheduledTime: VarDate
   
   /** Sender information object */
-  val Sender: FaxSender = js.native
+  val Sender: FaxSender
   
   /** Size in bytes of TIFF file */
-  val Size: Double = js.native
+  val Size: Double
   
   /** Current queue status of the job */
-  val Status: FAX_JOB_STATUS_ENUM = js.native
+  val Status: FAX_JOB_STATUS_ENUM
   
   /** Cover page's subject field */
-  val Subject: String = js.native
+  val Subject: String
   
   /** Unique ID the submission process created for the Job */
-  val SubmissionId: String = js.native
+  val SubmissionId: String
   
   /** Time the job was submitted */
-  val SubmissionTime: VarDate = js.native
+  val SubmissionTime: VarDate
   
   /** Transmitting Station ID */
-  val TSID: String = js.native
+  val TSID: String
   
   /** The time the fax job finished its transmission */
-  val TransmissionEnd: VarDate = js.native
+  val TransmissionEnd: VarDate
   
   /** The time the fax job started its transmission */
-  val TransmissionStart: VarDate = js.native
+  val TransmissionStart: VarDate
 }
 object FaxOutgoingJob {
   

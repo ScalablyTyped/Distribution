@@ -2,15 +2,13 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WordNet extends StObject {
   
-  def get(synsetOffset: Double, pos: String, callback: WordNetGetCallback): Unit = js.native
+  def get(synsetOffset: Double, pos: String, callback: WordNetGetCallback): Unit
   
-  def lookup(word: String, callback: WordNetLookupCallback): Unit = js.native
+  def lookup(word: String, callback: WordNetLookupCallback): Unit
 }
 object WordNet {
   

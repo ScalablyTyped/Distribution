@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalDialogButtonApplyClickEventUIParam extends StObject {
   
   /**
     * Gets the array of column layouts.
     */
-  var groupedColumnLayouts: js.UndefOr[js.Array[_]] = js.native
+  var groupedColumnLayouts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets the array of grouped columns.
     */
-  var groupedColumns: js.UndefOr[js.Array[_]] = js.native
+  var groupedColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to the modal dialog element. This is a jQuery object.
     */
-  var modalDialogElement: js.UndefOr[String] = js.native
+  var modalDialogElement: js.UndefOr[String] = js.undefined
   
   /**
     * Gets access the GroupBy widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the array of sorted columns.
     */
-  var sortingExpr: js.UndefOr[js.Array[_]] = js.native
+  var sortingExpr: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object ModalDialogButtonApplyClickEventUIParam {
   
@@ -45,7 +43,7 @@ object ModalDialogButtonApplyClickEventUIParam {
   implicit class ModalDialogButtonApplyClickEventUIParamMutableBuilder[Self <: ModalDialogButtonApplyClickEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGroupedColumnLayouts(value: js.Array[_]): Self = StObject.set(x, "groupedColumnLayouts", value.asInstanceOf[js.Any])
+    def setGroupedColumnLayouts(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumnLayouts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGroupedColumnLayoutsUndefined: Self = StObject.set(x, "groupedColumnLayouts", js.undefined)
@@ -54,7 +52,7 @@ object ModalDialogButtonApplyClickEventUIParam {
     def setGroupedColumnLayoutsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumnLayouts", js.Array(value :_*))
     
     @scala.inline
-    def setGroupedColumns(value: js.Array[_]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
+    def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
@@ -75,7 +73,7 @@ object ModalDialogButtonApplyClickEventUIParam {
     def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setSortingExpr(value: js.Array[_]): Self = StObject.set(x, "sortingExpr", value.asInstanceOf[js.Any])
+    def setSortingExpr(value: js.Array[js.Any]): Self = StObject.set(x, "sortingExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSortingExprUndefined: Self = StObject.set(x, "sortingExpr", js.undefined)

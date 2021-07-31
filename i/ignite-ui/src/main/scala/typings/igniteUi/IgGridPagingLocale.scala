@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridPagingLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,104 +16,104 @@ trait IgGridPagingLocale
     * Leading label text for the drop down from where the page index can be switched.
     *
     */
-  var currentPageDropDownLeadingLabel: js.UndefOr[String] = js.native
+  var currentPageDropDownLeadingLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for the page index drop down.
     *
     */
-  var currentPageDropDownTooltip: js.UndefOr[String] = js.native
+  var currentPageDropDownTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Trailing label text for the drop down from where the page index can be switched.
     *
     */
-  var currentPageDropDownTrailingLabel: js.UndefOr[String] = js.native
+  var currentPageDropDownTrailingLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Text for the first page label.
     *
     */
-  var firstPageLabelText: js.UndefOr[String] = js.native
+  var firstPageLabelText: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for the first page button.
     *
     */
-  var firstPageTooltip: js.UndefOr[String] = js.native
+  var firstPageTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Text for the last page label.
     *
     */
-  var lastPageLabelText: js.UndefOr[String] = js.native
+  var lastPageLabelText: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for the last page button.
     *
     */
-  var lastPageTooltip: js.UndefOr[String] = js.native
+  var lastPageTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Text for the next page label.
     *
     */
-  var nextPageLabelText: js.UndefOr[String] = js.native
+  var nextPageLabelText: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for the next page button.
     *
     */
-  var nextPageTooltip: js.UndefOr[String] = js.native
+  var nextPageTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Text rendered in front of the page size dropdown, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true.
     *
     */
-  var pageSizeDropDownLabel: js.UndefOr[String] = js.native
+  var pageSizeDropDownLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for the page size drop down.
     *
     */
-  var pageSizeDropDownTooltip: js.UndefOr[String] = js.native
+  var pageSizeDropDownTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Trailing text for the page size dropdown, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true.
     *
     */
-  var pageSizeDropDownTrailingLabel: js.UndefOr[String] = js.native
+  var pageSizeDropDownTrailingLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text templates of buttons that navigate to a particular page. The format string follows the [igTemplating](http://www.igniteui.com/help/igtemplating-overview) style and syntax.
     * See also the [pageCountLimit](ui.iggridpaging#options:pageCountLimit) option.
     *
     */
-  var pageTooltipFormat: js.UndefOr[String] = js.native
+  var pageTooltipFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Custom pager records label template - in [igTemplating](http://www.igniteui.com/help/igtemplating-overview) style and syntax.
     *
     */
-  var pagerRecordsLabelTemplate: js.UndefOr[String] = js.native
+  var pagerRecordsLabelTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for the pager records label.
     *
     */
-  var pagerRecordsLabelTooltip: js.UndefOr[String] = js.native
+  var pagerRecordsLabelTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Text for the previous page label.
     *
     */
-  var prevPageLabelText: js.UndefOr[String] = js.native
+  var prevPageLabelText: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text for the previous page button.
     *
     */
-  var prevPageTooltip: js.UndefOr[String] = js.native
+  var prevPageTooltip: js.UndefOr[String] = js.undefined
 }
 object IgGridPagingLocale {
   

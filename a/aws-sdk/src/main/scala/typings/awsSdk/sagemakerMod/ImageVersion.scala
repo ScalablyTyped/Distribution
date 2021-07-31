@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageVersion extends StObject {
   
   /**
     * When the version was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * When a create or delete operation fails, the reason for the failure.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image the version is based on.
     */
-  var ImageArn: typings.awsSdk.sagemakerMod.ImageArn = js.native
+  var ImageArn: typings.awsSdk.sagemakerMod.ImageArn
   
   /**
     * The ARN of the version.
     */
-  var ImageVersionArn: typings.awsSdk.sagemakerMod.ImageVersionArn = js.native
+  var ImageVersionArn: typings.awsSdk.sagemakerMod.ImageVersionArn
   
   /**
     * The status of the version.
     */
-  var ImageVersionStatus: typings.awsSdk.sagemakerMod.ImageVersionStatus = js.native
+  var ImageVersionStatus: typings.awsSdk.sagemakerMod.ImageVersionStatus
   
   /**
     * When the version was last modified.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
   
   /**
     * The version number.
     */
-  var Version: ImageVersionNumber = js.native
+  var Version: ImageVersionNumber
 }
 object ImageVersion {
   

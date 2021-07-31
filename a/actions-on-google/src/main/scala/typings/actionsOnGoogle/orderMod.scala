@@ -5,7 +5,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsOrdersV3OrderUpdate
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2OrdersOrderUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object orderMod {
@@ -13,8 +12,9 @@ object orderMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/order", "OrderUpdate")
   @js.native
   class OrderUpdate protected ()
-    extends _RichResponseItem
-       with GoogleActionsV2OrdersOrderUpdate {
+    extends StObject
+       with GoogleActionsV2OrdersOrderUpdate
+       with _RichResponseItem {
     def this(options: GoogleActionsOrdersV3OrderUpdate) = this()
     /**
       * @param options The raw {@link GoogleActionsV2OrdersOrderUpdate}

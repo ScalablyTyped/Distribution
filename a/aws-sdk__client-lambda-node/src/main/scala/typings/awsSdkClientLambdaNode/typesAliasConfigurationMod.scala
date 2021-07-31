@@ -4,43 +4,41 @@ import typings.awsSdkClientLambdaNode.typesAliasRoutingConfigurationMod.AliasRou
 import typings.awsSdkClientLambdaNode.typesAliasRoutingConfigurationMod.UnmarshalledAliasRoutingConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAliasConfigurationMod {
   
-  @js.native
   trait AliasConfiguration extends StObject {
     
     /**
       * <p>Lambda function ARN that is qualified using the alias name as the suffix. For example, if you create an alias called <code>BETA</code> that points to a helloworld function version, the ARN is <code>arn:aws:lambda:aws-regions:acct-id:function:helloworld:BETA</code>.</p>
       */
-    var AliasArn: js.UndefOr[String] = js.native
+    var AliasArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Alias description.</p>
       */
-    var Description: js.UndefOr[String] = js.native
+    var Description: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Function version to which the alias points.</p>
       */
-    var FunctionVersion: js.UndefOr[String] = js.native
+    var FunctionVersion: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Alias name.</p>
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Represents the latest updated revision of the function or alias.</p>
       */
-    var RevisionId: js.UndefOr[String] = js.native
+    var RevisionId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Specifies an additional function versions the alias points to, allowing you to dictate what percentage of traffic will invoke each version.</p>
       */
-    var RoutingConfig: js.UndefOr[AliasRoutingConfiguration] = js.native
+    var RoutingConfig: js.UndefOr[AliasRoutingConfiguration] = js.undefined
   }
   object AliasConfiguration {
     
@@ -91,14 +89,15 @@ object typesAliasConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAliasConfiguration extends AliasConfiguration {
+  trait UnmarshalledAliasConfiguration
+    extends StObject
+       with AliasConfiguration {
     
     /**
       * <p>Specifies an additional function versions the alias points to, allowing you to dictate what percentage of traffic will invoke each version.</p>
       */
     @JSName("RoutingConfig")
-    var RoutingConfig_UnmarshalledAliasConfiguration: js.UndefOr[UnmarshalledAliasRoutingConfiguration] = js.native
+    var RoutingConfig_UnmarshalledAliasConfiguration: js.UndefOr[UnmarshalledAliasRoutingConfiguration] = js.undefined
   }
   object UnmarshalledAliasConfiguration {
     

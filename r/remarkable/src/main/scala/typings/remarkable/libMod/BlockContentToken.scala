@@ -2,24 +2,24 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait BlockContentToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait BlockContentToken
+  extends StObject
+     with TagToken {
   
   /**
     * This is initialized with an empty array (`[]`) and will be filled
     * with the inline parser tokens as the inline parsing rules are applied.
     */
-  var children: js.UndefOr[js.Array[Token]] = js.native
+  var children: js.UndefOr[js.Array[Token]] = js.undefined
   
   /**
     * The content of the block. This might include inline mardown syntax
     * which may need further processing by the inline rules.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
 }
 object BlockContentToken {
   

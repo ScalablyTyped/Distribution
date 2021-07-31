@@ -2,19 +2,17 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the ListFilters method.
   */
-@js.native
 trait SchemaListFiltersResponse extends StObject {
   
   /**
     * List of a user&#39;s filters.
     */
-  var filter: js.UndefOr[js.Array[SchemaFilter]] = js.native
+  var filter: js.UndefOr[js.Array[SchemaFilter]] = js.undefined
 }
 object SchemaListFiltersResponse {
   

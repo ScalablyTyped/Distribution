@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguagesListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#languagesListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Language collection. */
-  var languages: js.UndefOr[js.Array[Language]] = js.native
+  var languages: js.UndefOr[js.Array[Language]] = js.undefined
 }
 object LanguagesListResponse {
   

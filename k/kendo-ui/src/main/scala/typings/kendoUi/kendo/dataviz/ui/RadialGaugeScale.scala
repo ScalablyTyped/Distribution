@@ -2,39 +2,37 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialGaugeScale extends StObject {
   
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
-  var labels: js.UndefOr[RadialGaugeScaleLabels] = js.native
+  var labels: js.UndefOr[RadialGaugeScaleLabels] = js.undefined
   
-  var majorTicks: js.UndefOr[RadialGaugeScaleMajorTicks] = js.native
+  var majorTicks: js.UndefOr[RadialGaugeScaleMajorTicks] = js.undefined
   
-  var majorUnit: js.UndefOr[Double] = js.native
+  var majorUnit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minorTicks: js.UndefOr[RadialGaugeScaleMinorTicks] = js.native
+  var minorTicks: js.UndefOr[RadialGaugeScaleMinorTicks] = js.undefined
   
-  var minorUnit: js.UndefOr[Double] = js.native
+  var minorUnit: js.UndefOr[Double] = js.undefined
   
-  var rangeDistance: js.UndefOr[Double] = js.native
+  var rangeDistance: js.UndefOr[Double] = js.undefined
   
-  var rangePlaceholderColor: js.UndefOr[String] = js.native
+  var rangePlaceholderColor: js.UndefOr[String] = js.undefined
   
-  var rangeSize: js.UndefOr[Double] = js.native
+  var rangeSize: js.UndefOr[Double] = js.undefined
   
-  var ranges: js.UndefOr[js.Array[RadialGaugeScaleRange]] = js.native
+  var ranges: js.UndefOr[js.Array[RadialGaugeScaleRange]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
 }
 object RadialGaugeScale {
   

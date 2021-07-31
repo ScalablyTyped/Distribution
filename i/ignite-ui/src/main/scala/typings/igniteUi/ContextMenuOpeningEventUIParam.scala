@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenuOpeningEventUIParam extends StObject {
   
   /**
     * Get the [area](ig.spreadsheet.SpreadsheetContextMenuArea) for which the menu is being displayed.
     */
-  var menuArea: js.UndefOr[String] = js.native
+  var menuArea: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ContextMenuOpeningEventUIParam {
   

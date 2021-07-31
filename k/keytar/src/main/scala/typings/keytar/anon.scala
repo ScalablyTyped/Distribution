@@ -2,17 +2,15 @@ package typings.keytar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Account extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var password: String = js.native
+    var password: String
   }
   object Account {
     

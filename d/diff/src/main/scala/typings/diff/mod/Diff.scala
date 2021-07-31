@@ -3,7 +3,6 @@ package typings.diff.mod
 import typings.diff.anon.ArrayOptionsanyanyPartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("diff", "Diff")
@@ -24,7 +23,7 @@ class Diff () extends StObject {
   
   def pushComponent(components: js.Array[Change], added: Boolean, removed: Boolean): Unit = js.native
   
-  def removeEmpty(array: js.Array[_]): js.Array[_] = js.native
+  def removeEmpty(array: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   def tokenize(value: String): js.Any = js.native
 }

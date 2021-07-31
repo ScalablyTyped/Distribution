@@ -2,71 +2,171 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlicerCache extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  def ClearManualFilter(): Unit = js.native
+  def ClearManualFilter(): Unit
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var CrossFilterType: XlSlicerCrossFilterType = js.native
+  var CrossFilterType: XlSlicerCrossFilterType
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.SlicerCache_typekey")
-  var ExcelDotSlicerCache_typekey: SlicerCache = js.native
+  var ExcelDotSlicerCache_typekey: SlicerCache
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  val OLAP: Boolean = js.native
+  val OLAP: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def PivotTables(Index: String): PivotTable = js.native
-  def PivotTables(Index: Double): PivotTable = js.native
+  def PivotTables(Index: String): PivotTable
+  def PivotTables(Index: Double): PivotTable
   @JSName("PivotTables")
-  val PivotTables_Original: SlicerPivotTables = js.native
+  val PivotTables_Original: SlicerPivotTables
   
-  var ShowAllItems: Boolean = js.native
+  var ShowAllItems: Boolean
   
-  def SlicerCacheLevels(): SlicerCacheLevel = js.native
-  def SlicerCacheLevels(Level: String): SlicerCacheLevel = js.native
-  def SlicerCacheLevels(Level: Double): SlicerCacheLevel = js.native
+  def SlicerCacheLevels(): SlicerCacheLevel
+  def SlicerCacheLevels(Level: String): SlicerCacheLevel
+  def SlicerCacheLevels(Level: Double): SlicerCacheLevel
   @JSName("SlicerCacheLevels")
-  val SlicerCacheLevels_Original: SlicerCacheLevels = js.native
+  val SlicerCacheLevels_Original: SlicerCacheLevels
   
-  def SlicerItems(Index: String): SlicerItem = js.native
-  def SlicerItems(Index: Double): SlicerItem = js.native
+  def SlicerItems(Index: String): SlicerItem
+  def SlicerItems(Index: Double): SlicerItem
   @JSName("SlicerItems")
-  val SlicerItems_Original: SlicerItems = js.native
+  val SlicerItems_Original: SlicerItems
   
-  def Slicers(Index: String): Slicer = js.native
-  def Slicers(Index: Double): Slicer = js.native
+  def Slicers(Index: String): Slicer
+  def Slicers(Index: Double): Slicer
   @JSName("Slicers")
-  val Slicers_Original: Slicers = js.native
+  val Slicers_Original: Slicers
   
-  var SortItems: XlSlicerSort = js.native
+  var SortItems: XlSlicerSort
   
-  var SortUsingCustomLists: Boolean = js.native
+  var SortUsingCustomLists: Boolean
   
-  val SourceName: String = js.native
+  val SourceName: String
   
-  val SourceType: XlPivotTableSourceType = js.native
+  val SourceType: XlPivotTableSourceType
   
-  def VisibleSlicerItems(Index: String): SlicerItem = js.native
-  def VisibleSlicerItems(Index: Double): SlicerItem = js.native
+  def VisibleSlicerItems(Index: String): SlicerItem
+  def VisibleSlicerItems(Index: Double): SlicerItem
   
-  var VisibleSlicerItemsList: js.Any = js.native
+  var VisibleSlicerItemsList: js.Any
   
   @JSName("VisibleSlicerItems")
-  val VisibleSlicerItems_Original: SlicerItems = js.native
+  val VisibleSlicerItems_Original: SlicerItems
   
-  val WorkbookConnection: typings.activexExcel.Excel.WorkbookConnection = js.native
+  val WorkbookConnection: typings.activexExcel.Excel.WorkbookConnection
+}
+object SlicerCache {
+  
+  @scala.inline
+  def apply(
+    Application: Application,
+    ClearManualFilter: () => Unit,
+    Creator: XlCreator,
+    CrossFilterType: XlSlicerCrossFilterType,
+    Delete: () => Unit,
+    ExcelDotSlicerCache_typekey: SlicerCache,
+    Index: Double,
+    Name: String,
+    OLAP: Boolean,
+    Parent: js.Any,
+    PivotTables: SlicerPivotTables,
+    ShowAllItems: Boolean,
+    SlicerCacheLevels: SlicerCacheLevels,
+    SlicerItems: SlicerItems,
+    Slicers: Slicers,
+    SortItems: XlSlicerSort,
+    SortUsingCustomLists: Boolean,
+    SourceName: String,
+    SourceType: XlPivotTableSourceType,
+    VisibleSlicerItems: SlicerItems,
+    VisibleSlicerItemsList: js.Any,
+    WorkbookConnection: WorkbookConnection
+  ): SlicerCache = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ClearManualFilter = js.Any.fromFunction0(ClearManualFilter), Creator = Creator.asInstanceOf[js.Any], CrossFilterType = CrossFilterType.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OLAP = OLAP.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PivotTables = PivotTables.asInstanceOf[js.Any], ShowAllItems = ShowAllItems.asInstanceOf[js.Any], SlicerCacheLevels = SlicerCacheLevels.asInstanceOf[js.Any], SlicerItems = SlicerItems.asInstanceOf[js.Any], Slicers = Slicers.asInstanceOf[js.Any], SortItems = SortItems.asInstanceOf[js.Any], SortUsingCustomLists = SortUsingCustomLists.asInstanceOf[js.Any], SourceName = SourceName.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any], VisibleSlicerItems = VisibleSlicerItems.asInstanceOf[js.Any], VisibleSlicerItemsList = VisibleSlicerItemsList.asInstanceOf[js.Any], WorkbookConnection = WorkbookConnection.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.SlicerCache_typekey")(ExcelDotSlicerCache_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SlicerCache]
+  }
+  
+  @scala.inline
+  implicit class SlicerCacheMutableBuilder[Self <: SlicerCache] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setClearManualFilter(value: () => Unit): Self = StObject.set(x, "ClearManualFilter", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCrossFilterType(value: XlSlicerCrossFilterType): Self = StObject.set(x, "CrossFilterType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setExcelDotSlicerCache_typekey(value: SlicerCache): Self = StObject.set(x, "Excel.SlicerCache_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOLAP(value: Boolean): Self = StObject.set(x, "OLAP", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPivotTables(value: SlicerPivotTables): Self = StObject.set(x, "PivotTables", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShowAllItems(value: Boolean): Self = StObject.set(x, "ShowAllItems", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSlicerCacheLevels(value: SlicerCacheLevels): Self = StObject.set(x, "SlicerCacheLevels", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSlicerItems(value: SlicerItems): Self = StObject.set(x, "SlicerItems", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSlicers(value: Slicers): Self = StObject.set(x, "Slicers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSortItems(value: XlSlicerSort): Self = StObject.set(x, "SortItems", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSortUsingCustomLists(value: Boolean): Self = StObject.set(x, "SortUsingCustomLists", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSourceType(value: XlPivotTableSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVisibleSlicerItems(value: SlicerItems): Self = StObject.set(x, "VisibleSlicerItems", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVisibleSlicerItemsList(value: js.Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWorkbookConnection(value: WorkbookConnection): Self = StObject.set(x, "WorkbookConnection", value.asInstanceOf[js.Any])
+  }
 }

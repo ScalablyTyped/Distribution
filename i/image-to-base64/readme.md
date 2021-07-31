@@ -10,9 +10,9 @@ Generate a image to base64.
 | ------------------ | :-------------: |
 | Full name          | image-to-base64 |
 | Keywords           | node, nodejs, module convert base64 nodejs, image2base64, image-to-base64, convert-image-base64, convert, save, code, base64, image, webpack, loader, img, src, img src |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 390847 |
+| # releases         | 3 |
+| # dependents       | 23 |
+| # downloads        | 601970 |
 | # stars            | 1 |
 
 ## Links

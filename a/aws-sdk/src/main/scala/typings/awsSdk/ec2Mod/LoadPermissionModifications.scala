@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadPermissionModifications extends StObject {
   
   /**
     * The load permissions to add.
     */
-  var Add: js.UndefOr[LoadPermissionListRequest] = js.native
+  var Add: js.UndefOr[LoadPermissionListRequest] = js.undefined
   
   /**
     * The load permissions to remove.
     */
-  var Remove: js.UndefOr[LoadPermissionListRequest] = js.native
+  var Remove: js.UndefOr[LoadPermissionListRequest] = js.undefined
 }
 object LoadPermissionModifications {
   

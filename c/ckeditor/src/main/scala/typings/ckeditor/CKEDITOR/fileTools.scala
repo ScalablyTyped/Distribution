@@ -7,13 +7,14 @@ import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileTools {
   
   @js.native
-  trait fileLoader extends event {
+  trait fileLoader
+    extends StObject
+       with event {
     
     def abort(): Unit = js.native
     
@@ -61,7 +62,9 @@ object fileTools {
   }
   
   @js.native
-  trait uploadRepository extends event {
+  trait uploadRepository
+    extends StObject
+       with event {
     
     def create(fileOrData: String, fileName: String): fileLoader = js.native
     def create(fileOrData: String, fileName: String, loaderType: js.Any): fileLoader = js.native
@@ -73,34 +76,35 @@ object fileTools {
     val loaders: js.Array[fileLoader] = js.native
   }
   
-  @js.native
-  trait uploadWidgetDefinition extends definition {
+  trait uploadWidgetDefinition
+    extends StObject
+       with definition {
     
-    var additionalRequestParameters: js.Any = js.native
+    var additionalRequestParameters: js.Any
     
-    def fileToElement(pastedFile: js.Any): HTMLElement = js.native
+    def fileToElement(pastedFile: js.Any): HTMLElement
     
-    var loadMethod: String = js.native
+    var loadMethod: String
     
-    var loaderType: js.Any = js.native
+    var loaderType: js.Any
     
-    def onAbort(): Boolean = js.native
+    def onAbort(): Boolean
     
-    def onError(): Boolean = js.native
+    def onError(): Boolean
     
-    def onLoaded(): Boolean = js.native
+    def onLoaded(): Boolean
     
-    def onUploaded(): Boolean = js.native
+    def onUploaded(): Boolean
     
-    def onUploading(): Boolean = js.native
+    def onUploading(): Boolean
     
-    def replaceWith(): js.Any = js.native
+    def replaceWith(): js.Any
     
-    var skipNotifications: Boolean = js.native
+    var skipNotifications: Boolean
     
-    var supportedTypes: String = js.native
+    var supportedTypes: String
     
-    var uploadUrl: String = js.native
+    var uploadUrl: String
   }
   object uploadWidgetDefinition {
     

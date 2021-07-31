@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the properties and methods associated with a mobile broadband PIN. */
-@js.native
 trait MobileBroadbandPin extends StObject {
   
   /** Gets the number of attempts remaining before the mobile broadband PIN is blocked. */
-  var attemptsRemaining: Double = js.native
+  var attemptsRemaining: Double
   
   /**
     * Starts an asynchronous operation to change an already-enabled mobile broadband PIN.
@@ -19,46 +17,46 @@ trait MobileBroadbandPin extends StObject {
     * @param newPin The new mobile broadband PIN.
     * @return An asynchronous operation that returns the result.
     */
-  def changeAsync(currentPin: String, newPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
+  def changeAsync(currentPin: String, newPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]
   
   /**
     * Starts an asynchronous operation to disable a previously-enabled mobile broadband PIN.
     * @param currentPin The current mobile broadband PIN.
     * @return An asynchronous operation that returns the result.
     */
-  def disableAsync(currentPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
+  def disableAsync(currentPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]
   
   /**
     * Starts an asynchronous operation to enable a previously-disabled mobile broadband PIN.
     * @param currentPin The current mobile broadband PIN.
     * @return An asynchronous operation that returns the result.
     */
-  def enableAsync(currentPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
+  def enableAsync(currentPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]
   
   /** Gets a boolean value that indicates if the mobile broadband PIN is enabled. */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Starts an asynchronous operation to get the current mobile broadband PIN from the user.
     * @param currentPin The current mobile broadband PIN.
     * @return An asynchronous operation that returns the result.
     */
-  def enterAsync(currentPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
+  def enterAsync(currentPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]
   
   /** Gets the format for a mobile broadband PIN. */
-  var format: MobileBroadbandPinFormat = js.native
+  var format: MobileBroadbandPinFormat
   
   /** Gets the lock state for a mobile broadband PIN. */
-  var lockState: MobileBroadbandPinLockState = js.native
+  var lockState: MobileBroadbandPinLockState
   
   /** Gets the maximum length, in bytes, of the mobile broadband PIN. */
-  var maxLength: Double = js.native
+  var maxLength: Double
   
   /** Gets the minimum length, in bytes, of the mobile broadband PIN. */
-  var minLength: Double = js.native
+  var minLength: Double
   
   /** Gets the PIN type for a mobile broadband PIN. */
-  var `type`: MobileBroadbandPinType = js.native
+  var `type`: MobileBroadbandPinType
   
   /**
     * Starts an asynchronous operation to unblock a previously-blocked mobile broadband PIN using a PIN unlock key (PUK).
@@ -66,7 +64,7 @@ trait MobileBroadbandPin extends StObject {
     * @param newPin The new mobile broadband PIN.
     * @return An asynchronous operation that returns the result.
     */
-  def unblockAsync(pinUnblockKey: String, newPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
+  def unblockAsync(pinUnblockKey: String, newPin: String): IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]
 }
 object MobileBroadbandPin {
   

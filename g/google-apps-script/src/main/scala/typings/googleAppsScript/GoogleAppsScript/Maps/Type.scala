@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,14 +17,22 @@ sealed trait Type extends StObject
 object Type extends StObject {
   
   @js.native
-  sealed trait HYBRID extends Type
+  sealed trait HYBRID
+    extends StObject
+       with Type
   
   @js.native
-  sealed trait ROADMAP extends Type
+  sealed trait ROADMAP
+    extends StObject
+       with Type
   
   @js.native
-  sealed trait SATELLITE extends Type
+  sealed trait SATELLITE
+    extends StObject
+       with Type
   
   @js.native
-  sealed trait TERRAIN extends Type
+  sealed trait TERRAIN
+    extends StObject
+       with Type
 }

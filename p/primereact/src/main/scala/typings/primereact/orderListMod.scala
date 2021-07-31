@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object orderListMod {
@@ -22,28 +21,27 @@ object orderListMod {
     def this(props: OrderListProps, context: js.Any) = this()
   }
   
-  @js.native
   trait OrderListProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dragdrop: js.UndefOr[Boolean] = js.native
+    var dragdrop: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.native
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
     
-    var listStyle: js.UndefOr[js.Object] = js.native
+    var listStyle: js.UndefOr[js.Object] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Array[_]] = js.native
+    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object OrderListProps {
     
@@ -111,7 +109,7 @@ object orderListMod {
       def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

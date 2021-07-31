@@ -2,29 +2,27 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableGlobalSecondaryIndex extends StObject {
   
   /**
     * The name of the hash key in the index; must be
     * defined as an attribute in the resource.
     */
-  var hashKey: String = js.native
+  var hashKey: String
   
   /**
     * The name of the index
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Only required with `INCLUDE` as a
     * projection type; a list of attributes to project into the index. These
     * do not need to be defined as attributes on the table.
     */
-  var nonKeyAttributes: js.UndefOr[js.Array[String]] = js.native
+  var nonKeyAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * One of `ALL`, `INCLUDE` or `KEYS_ONLY`
@@ -33,22 +31,22 @@ trait TableGlobalSecondaryIndex extends StObject {
     * projects only the keys specified in the _non_key_attributes_
     * parameter.
     */
-  var projectionType: String = js.native
+  var projectionType: String
   
   /**
     * The name of the range key; must be defined
     */
-  var rangeKey: js.UndefOr[String] = js.native
+  var rangeKey: js.UndefOr[String] = js.undefined
   
   /**
     * The number of read units for this index. Must be set if billingMode is set to PROVISIONED.
     */
-  var readCapacity: js.UndefOr[Double] = js.native
+  var readCapacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
     */
-  var writeCapacity: js.UndefOr[Double] = js.native
+  var writeCapacity: js.UndefOr[Double] = js.undefined
 }
 object TableGlobalSecondaryIndex {
   

@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classes extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[String | RegExp | Boolean]] = js.native
+  var attributes: js.UndefOr[StringDictionary[String | RegExp | Boolean]] = js.undefined
   
-  var classes: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+  var classes: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
   
-  var name: js.UndefOr[String | RegExp] = js.native
+  var name: js.UndefOr[String | RegExp] = js.undefined
   
-  var styles: js.UndefOr[StringDictionary[String | RegExp]] = js.native
+  var styles: js.UndefOr[StringDictionary[String | RegExp]] = js.undefined
 }
 object Classes {
   

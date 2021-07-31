@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileDeleteEvent extends StObject {
   
   /**
     * The files that got deleted.
     */
-  val files: js.Array[Uri] = js.native
+  val files: js.Array[Uri]
 }
 object FileDeleteEvent {
   

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoardReference extends StObject {
   
   /**
     * Id of the resource
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Name of the resource
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Full http link to the resource
     */
-  var url: String = js.native
+  var url: String
 }
 object BoardReference {
   

@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowPan extends StObject {
   
-  var allowPan: js.UndefOr[Boolean] = js.native
+  var allowPan: js.UndefOr[Boolean] = js.undefined
   
-  var allowSelection: js.UndefOr[Boolean] = js.native
+  var allowSelection: js.UndefOr[Boolean] = js.undefined
   
-  var allowZoom: js.UndefOr[Boolean] = js.native
+  var allowZoom: js.UndefOr[Boolean] = js.undefined
 }
 object AllowPan {
   

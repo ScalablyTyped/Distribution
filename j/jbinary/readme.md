@@ -10,8 +10,8 @@ High-level I/O for binary data.
 | Full name          | jbinary |
 | Keywords           | parse, edit, buffer, binary, file, read, write, manipulate |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 20313 |
+| # dependents       | 8 |
+| # downloads        | 17896 |
 | # stars            | 0 |
 
 ## Links

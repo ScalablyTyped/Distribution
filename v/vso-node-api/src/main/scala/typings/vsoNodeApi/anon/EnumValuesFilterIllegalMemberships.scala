@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesFilterIllegalMemberships extends StObject {
   
-  var enumValues: FilterIllegalMemberships = js.native
+  var enumValues: FilterIllegalMemberships
 }
 object EnumValuesFilterIllegalMemberships {
   

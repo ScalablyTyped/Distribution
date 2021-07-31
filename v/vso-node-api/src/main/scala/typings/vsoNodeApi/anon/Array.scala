@@ -2,33 +2,31 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Array extends StObject {
   
-  var array: scala.Double = js.native
+  var array: scala.Double
   
-  var boolean: scala.Double = js.native
+  var boolean: scala.Double
   
-  var dateTime: scala.Double = js.native
+  var dateTime: scala.Double
   
-  var dictionary: scala.Double = js.native
+  var dictionary: scala.Double
   
-  var double: scala.Double = js.native
+  var double: scala.Double
   
-  var guid: scala.Double = js.native
+  var guid: scala.Double
   
-  var integer: scala.Double = js.native
+  var integer: scala.Double
   
-  var `object`: scala.Double = js.native
+  var `object`: scala.Double
   
-  var string: scala.Double = js.native
+  var string: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
   
-  var uri: scala.Double = js.native
+  var uri: scala.Double
 }
 object Array {
   

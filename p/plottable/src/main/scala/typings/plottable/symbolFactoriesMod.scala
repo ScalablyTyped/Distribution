@@ -3,38 +3,34 @@ package typings.plottable
 import typings.d3Shape.mod.Symbol_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object symbolFactoriesMod {
   
-  @JSImport("plottable/build/src/core/symbolFactories", "circle")
+  @JSImport("plottable/build/src/core/symbolFactories", JSImport.Namespace)
   @js.native
-  def circle(): SymbolFactory = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("plottable/build/src/core/symbolFactories", "cross")
-  @js.native
-  def cross(): SymbolFactory = js.native
+  @scala.inline
+  def circle(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("circle")().asInstanceOf[SymbolFactory]
   
-  @JSImport("plottable/build/src/core/symbolFactories", "diamond")
-  @js.native
-  def diamond(): SymbolFactory = js.native
+  @scala.inline
+  def cross(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("cross")().asInstanceOf[SymbolFactory]
   
-  @JSImport("plottable/build/src/core/symbolFactories", "square")
-  @js.native
-  def square(): SymbolFactory = js.native
+  @scala.inline
+  def diamond(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("diamond")().asInstanceOf[SymbolFactory]
   
-  @JSImport("plottable/build/src/core/symbolFactories", "star")
-  @js.native
-  def star(): SymbolFactory = js.native
+  @scala.inline
+  def square(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("square")().asInstanceOf[SymbolFactory]
   
-  @JSImport("plottable/build/src/core/symbolFactories", "triangle")
-  @js.native
-  def triangle(): SymbolFactory = js.native
+  @scala.inline
+  def star(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("star")().asInstanceOf[SymbolFactory]
   
-  @JSImport("plottable/build/src/core/symbolFactories", "wye")
-  @js.native
-  def wye(): SymbolFactory = js.native
+  @scala.inline
+  def triangle(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("triangle")().asInstanceOf[SymbolFactory]
+  
+  @scala.inline
+  def wye(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("wye")().asInstanceOf[SymbolFactory]
   
   type SymbolFactory = js.Function1[/* symbolSize */ Double, Symbol_[js.Any, js.Any]]
 }

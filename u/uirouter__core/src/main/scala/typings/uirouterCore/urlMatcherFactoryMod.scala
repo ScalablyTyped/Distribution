@@ -11,7 +11,6 @@ import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMatcherFactoryMod {
@@ -82,11 +81,7 @@ object urlMatcherFactoryMod {
     
     /** @deprecated use [[UrlConfig.type]] */
     def `type`(name: String): js.Any = js.native
-    def `type`(
-      name: String,
-      definition: js.UndefOr[scala.Nothing],
-      definitionFn: js.Function0[ParamTypeDefinition]
-    ): js.Any = js.native
+    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
   }

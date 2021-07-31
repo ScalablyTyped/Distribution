@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElevationQueryResult extends Object {
+trait ElevationQueryResult
+  extends StObject
+     with Object {
   
   /**
     * The geometry with sampled z-values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
     */
-  var geometry: Point | Multipoint | Polyline = js.native
+  var geometry: Point | Multipoint | Polyline
   
   /**
     * The value used when there is no data available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
     */
-  var noDataValue: Double = js.native
+  var noDataValue: Double
   
   /**
     * Contains additional information about how the geometry was sampled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
     */
-  var sampleInfo: js.UndefOr[js.Array[ElevationQueryResultSampleInfo]] = js.native
+  var sampleInfo: js.UndefOr[js.Array[ElevationQueryResultSampleInfo]] = js.undefined
 }
 object ElevationQueryResult {
   

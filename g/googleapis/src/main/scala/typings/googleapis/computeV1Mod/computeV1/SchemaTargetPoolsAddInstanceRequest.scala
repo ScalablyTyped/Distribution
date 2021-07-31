@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetPoolsAddInstanceRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaTargetPoolsAddInstanceRequest extends StObject {
     * - projects/project-id/zones/zone/instances/instance-name  -
     * zones/zone/instances/instance-name
     */
-  var instances: js.UndefOr[js.Array[SchemaInstanceReference]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaInstanceReference]] = js.undefined
 }
 object SchemaTargetPoolsAddInstanceRequest {
   

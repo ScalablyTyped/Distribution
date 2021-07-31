@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterOnPremisesInstanceInput extends StObject {
   
   /**
     * The name of the on-premises instance to deregister.
     */
-  var instanceName: InstanceName = js.native
+  var instanceName: InstanceName
 }
 object DeregisterOnPremisesInstanceInput {
   

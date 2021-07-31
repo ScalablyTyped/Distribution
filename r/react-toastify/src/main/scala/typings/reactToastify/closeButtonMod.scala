@@ -7,23 +7,24 @@ import typings.reactToastify.typesMod.TypeOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object closeButtonMod {
   
-  @JSImport("react-toastify/dist/components/CloseButton", "CloseButton")
+  @JSImport("react-toastify/dist/components/CloseButton", JSImport.Namespace)
   @js.native
-  def CloseButton(hasCloseToastTypeAriaLabel: CloseButtonProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def CloseButton(hasCloseToastTypeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastTypeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait CloseButtonProps extends StObject {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    def closeToast(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+    def closeToast(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
-    var `type`: TypeOptions = js.native
+    var `type`: TypeOptions
   }
   object CloseButtonProps {
     

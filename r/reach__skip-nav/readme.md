@@ -10,9 +10,9 @@ Skip navigation links for screen reader and keyboard users.
 | ------------------ | :-------------: |
 | Full name          | @reach/skip-nav |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 22 |
-| # downloads        | 275267 |
+| # releases         | 34 |
+| # dependents       | 31 |
+| # downloads        | 402199 |
 | # stars            | 0 |
 
 ## Links

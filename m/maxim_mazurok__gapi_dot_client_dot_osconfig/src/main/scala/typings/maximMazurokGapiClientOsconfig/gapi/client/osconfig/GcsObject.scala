@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GcsObject extends StObject {
   
   /** Required. Bucket of the Cloud Storage object. */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /** Required. Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change. */
-  var generationNumber: js.UndefOr[String] = js.native
+  var generationNumber: js.UndefOr[String] = js.undefined
   
   /** Required. Name of the Cloud Storage object. */
-  var `object`: js.UndefOr[String] = js.native
+  var `object`: js.UndefOr[String] = js.undefined
 }
 object GcsObject {
   

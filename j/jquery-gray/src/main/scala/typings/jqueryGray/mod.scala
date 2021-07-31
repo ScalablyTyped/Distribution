@@ -3,16 +3,14 @@ package typings.jqueryGray
 import typings.jqueryGray.jqueryGrayStrings.`grayscale-off`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Partial<{  fade :string}> */
-  @js.native
   trait Classes extends StObject {
     
-    var fade: js.UndefOr[String] = js.native
+    var fade: js.UndefOr[String] = js.undefined
   }
   object Classes {
     
@@ -34,12 +32,11 @@ object mod {
   }
   
   /* Inlined std.Partial<{  fade :boolean,   classes :jquery-gray.jquery-gray.Classes}> */
-  @js.native
   trait Options extends StObject {
     
-    var classes: js.UndefOr[Classes] = js.native
+    var classes: js.UndefOr[Classes] = js.undefined
     
-    var fade: js.UndefOr[Boolean] = js.native
+    var fade: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

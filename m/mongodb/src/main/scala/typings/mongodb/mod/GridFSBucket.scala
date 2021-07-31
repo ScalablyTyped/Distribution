@@ -4,7 +4,6 @@ import typings.mongodb.anon.End
 import typings.mongodb.anon.Revision
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "GridFSBucket")
@@ -22,10 +21,10 @@ class GridFSBucket protected () extends StObject {
   def drop(callback: GridFSBucketErrorCallback): Unit = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#find */
-  def find(): Cursor[_] = js.native
-  def find(filter: js.UndefOr[scala.Nothing], options: GridFSBucketFindOptions): Cursor[_] = js.native
-  def find(filter: js.Object): Cursor[_] = js.native
-  def find(filter: js.Object, options: GridFSBucketFindOptions): Cursor[_] = js.native
+  def find(): Cursor[js.Any] = js.native
+  def find(filter: js.Object): Cursor[js.Any] = js.native
+  def find(filter: js.Object, options: GridFSBucketFindOptions): Cursor[js.Any] = js.native
+  def find(filter: Unit, options: GridFSBucketFindOptions): Cursor[js.Any] = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openDownloadStream */
   def openDownloadStream(id: typings.bson.mod.ObjectId): GridFSBucketReadStream = js.native

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationTemplateMessage extends StObject {
   
   /**
     * The name of the application to delete the configuration template from.
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * The name of the configuration template to delete.
     */
-  var TemplateName: ConfigurationTemplateName = js.native
+  var TemplateName: ConfigurationTemplateName
 }
 object DeleteConfigurationTemplateMessage {
   

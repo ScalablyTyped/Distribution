@@ -3,51 +3,51 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFilter extends IBase {
+trait IFilter
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Boolean) */
-  var anyMatch: js.UndefOr[Boolean] = js.native
+  var anyMatch: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var exactMatch: js.UndefOr[Boolean] = js.native
+  var exactMatch: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var filterFn: js.UndefOr[js.Any] = js.native
+  var filterFn: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
   /** [Method] Changes the filtering function which this Filter uses to choose items to include
     * @param filterFn Function A function which returns true or false to either include or exclude the passed object.
     */
-  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.native
+  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Changes the value that this filter tests its configured  link cfg property with
     * @param value Mixed The new value to compare the property with.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object IFilter {
   

@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeNumber extends StObject {
   
   /** The event code for media stream relay.
@@ -19,7 +17,7 @@ trait CodeNumber extends StObject {
     * - 6: The server receives the audio stream from the source channel.
     * - 7: The destination channel is updated.
     */
-  var code: Double = js.native
+  var code: Double
 }
 object CodeNumber {
   

@@ -3,7 +3,6 @@ package typings.protractor.mod
 import typings.protractor.locatorsMod.Locator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "ElementFinder")
@@ -18,17 +17,19 @@ class ElementFinder protected ()
 /* static members */
 object ElementFinder {
   
-  @JSImport("protractor", "ElementFinder.fromWebElement_")
+  @JSImport("protractor", "ElementFinder")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def fromWebElement_(
     browser: typings.protractor.browserMod.ProtractorBrowser,
     webElem: typings.seleniumWebdriver.mod.WebElement
-  ): typings.protractor.elementMod.ElementFinder = js.native
-  @JSImport("protractor", "ElementFinder.fromWebElement_")
-  @js.native
+  ): typings.protractor.elementMod.ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any])).asInstanceOf[typings.protractor.elementMod.ElementFinder]
+  @scala.inline
   def fromWebElement_(
     browser: typings.protractor.browserMod.ProtractorBrowser,
     webElem: typings.seleniumWebdriver.mod.WebElement,
     locator: Locator
-  ): typings.protractor.elementMod.ElementFinder = js.native
+  ): typings.protractor.elementMod.ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any], locator.asInstanceOf[js.Any])).asInstanceOf[typings.protractor.elementMod.ElementFinder]
 }

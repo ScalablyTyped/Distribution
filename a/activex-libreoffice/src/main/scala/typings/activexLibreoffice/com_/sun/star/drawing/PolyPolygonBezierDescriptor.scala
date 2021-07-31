@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,17 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A polypolygonbezier consists of multiple Bezier polygons combined in one.
   */
-@js.native
 trait PolyPolygonBezierDescriptor extends StObject {
   
   /** These are the untransformed Bezier coordinates of this polygon. */
-  var Geometry: PolyPolygonBezierCoords = js.native
+  var Geometry: PolyPolygonBezierCoords
   
   /** These are the Bezier points of this polygon. */
-  var PolyPolygonBezier: PolyPolygonBezierCoords = js.native
+  var PolyPolygonBezier: PolyPolygonBezierCoords
   
   /** This is the type of this polygon. */
-  var PolygonKind: typings.activexLibreoffice.com_.sun.star.drawing.PolygonKind = js.native
+  var PolygonKind: typings.activexLibreoffice.com_.sun.star.drawing.PolygonKind
 }
 object PolyPolygonBezierDescriptor {
   

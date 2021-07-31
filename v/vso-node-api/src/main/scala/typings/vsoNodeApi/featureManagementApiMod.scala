@@ -8,7 +8,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureManagementApiMod {
@@ -39,19 +38,19 @@ object featureManagementApiMod {
     def queryFeatureStatesForNamedScope(query: ContributedFeatureStateQuery, userScope: String, scopeName: String, scopeValue: String): js.Promise[ContributedFeatureStateQuery] = js.native
     
     def setFeatureState(feature: ContributedFeatureState, featureId: String, userScope: String): js.Promise[ContributedFeatureState] = js.native
-    def setFeatureState(
-      feature: ContributedFeatureState,
-      featureId: String,
-      userScope: String,
-      reason: js.UndefOr[scala.Nothing],
-      reasonCode: String
-    ): js.Promise[ContributedFeatureState] = js.native
     def setFeatureState(feature: ContributedFeatureState, featureId: String, userScope: String, reason: String): js.Promise[ContributedFeatureState] = js.native
     def setFeatureState(
       feature: ContributedFeatureState,
       featureId: String,
       userScope: String,
       reason: String,
+      reasonCode: String
+    ): js.Promise[ContributedFeatureState] = js.native
+    def setFeatureState(
+      feature: ContributedFeatureState,
+      featureId: String,
+      userScope: String,
+      reason: Unit,
       reasonCode: String
     ): js.Promise[ContributedFeatureState] = js.native
     
@@ -68,15 +67,6 @@ object featureManagementApiMod {
       userScope: String,
       scopeName: String,
       scopeValue: String,
-      reason: js.UndefOr[scala.Nothing],
-      reasonCode: String
-    ): js.Promise[ContributedFeatureState] = js.native
-    def setFeatureStateForScope(
-      feature: ContributedFeatureState,
-      featureId: String,
-      userScope: String,
-      scopeName: String,
-      scopeValue: String,
       reason: String
     ): js.Promise[ContributedFeatureState] = js.native
     def setFeatureStateForScope(
@@ -86,6 +76,15 @@ object featureManagementApiMod {
       scopeName: String,
       scopeValue: String,
       reason: String,
+      reasonCode: String
+    ): js.Promise[ContributedFeatureState] = js.native
+    def setFeatureStateForScope(
+      feature: ContributedFeatureState,
+      featureId: String,
+      userScope: String,
+      scopeName: String,
+      scopeValue: String,
+      reason: Unit,
       reasonCode: String
     ): js.Promise[ContributedFeatureState] = js.native
   }

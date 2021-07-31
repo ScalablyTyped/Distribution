@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vision/v1", "vision_v1.Resource$Projects$Locations$Products$Referenceimages")
@@ -44,7 +43,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends StOb
     */
   def create(): GaxiosPromise[SchemaReferenceImage] = js.native
   def create(callback: BodyResponseCallback[SchemaReferenceImage]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReferenceImage] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReferenceImage] = js.native
   def create(params: ParamsResourceProjectsLocationsProductsReferenceimagesCreate): GaxiosPromise[SchemaReferenceImage] = js.native
   def create(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesCreate,
@@ -80,7 +79,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends StOb
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsProductsReferenceimagesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesDelete,
@@ -113,7 +112,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends StOb
     */
   def get(): GaxiosPromise[SchemaReferenceImage] = js.native
   def get(callback: BodyResponseCallback[SchemaReferenceImage]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReferenceImage] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReferenceImage] = js.native
   def get(params: ParamsResourceProjectsLocationsProductsReferenceimagesGet): GaxiosPromise[SchemaReferenceImage] = js.native
   def get(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesGet,
@@ -149,7 +148,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends StOb
     */
   def list(): GaxiosPromise[SchemaListReferenceImagesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListReferenceImagesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListReferenceImagesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListReferenceImagesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsProductsReferenceimagesList): GaxiosPromise[SchemaListReferenceImagesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesList,

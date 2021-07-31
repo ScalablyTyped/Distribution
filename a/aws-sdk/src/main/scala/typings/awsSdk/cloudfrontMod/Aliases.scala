@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aliases extends StObject {
   
   /**
     * A complex type that contains the CNAME aliases, if any, that you want to associate with this distribution.
     */
-  var Items: js.UndefOr[AliasList] = js.native
+  var Items: js.UndefOr[AliasList] = js.undefined
   
   /**
     * The number of CNAME aliases, if any, that you want to associate with this distribution.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object Aliases {
   

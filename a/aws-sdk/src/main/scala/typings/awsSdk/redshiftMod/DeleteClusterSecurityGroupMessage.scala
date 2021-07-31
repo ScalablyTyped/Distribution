@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterSecurityGroupMessage extends StObject {
   
   /**
     * The name of the cluster security group to be deleted.
     */
-  var ClusterSecurityGroupName: String = js.native
+  var ClusterSecurityGroupName: String
 }
 object DeleteClusterSecurityGroupMessage {
   

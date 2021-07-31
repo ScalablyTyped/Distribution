@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ASPxClientSpreadsheetEditMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ASPxClientSpreadsheetEditMode with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ASPxClientSpreadsheetEditMode & Double] = js.native
   
-  /* 1 */ val Cell: typings.devexpressWeb.ASPxClientSpreadsheetEditMode.Cell with Double = js.native
+  /* 1 */ val Cell: typings.devexpressWeb.ASPxClientSpreadsheetEditMode.Cell & Double = js.native
   
-  /* 2 */ val Comment: typings.devexpressWeb.ASPxClientSpreadsheetEditMode.Comment with Double = js.native
+  /* 2 */ val Comment: typings.devexpressWeb.ASPxClientSpreadsheetEditMode.Comment & Double = js.native
   
-  /* 0 */ val None: typings.devexpressWeb.ASPxClientSpreadsheetEditMode.None with Double = js.native
+  /* 0 */ val None: typings.devexpressWeb.ASPxClientSpreadsheetEditMode.None & Double = js.native
 }

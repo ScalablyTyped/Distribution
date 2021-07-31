@@ -2,23 +2,22 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMLineSymbol
-  extends CIMMultiLayerSymbol
+  extends StObject
+     with CIMMultiLayerSymbol
      with CIMSymbolType {
   
   @JSName("type")
-  var type_CIMLineSymbol: typings.arcgisJsApi.arcgisJsApiStrings.CIMLineSymbol = js.native
+  var type_CIMLineSymbol: typings.arcgisJsApi.arcgisJsApiStrings.CIMLineSymbol
 }
 object CIMLineSymbol {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMLineSymbol): CIMLineSymbol = {
+  def apply(): CIMLineSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMLineSymbol")
     __obj.asInstanceOf[CIMLineSymbol]
   }
   

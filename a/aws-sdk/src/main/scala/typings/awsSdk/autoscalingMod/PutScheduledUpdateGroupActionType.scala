@@ -2,56 +2,54 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutScheduledUpdateGroupActionType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The desired capacity is the initial capacity of the Auto Scaling group after the scheduled action runs and the capacity it attempts to maintain. It can scale beyond this capacity if you add more scaling conditions. 
     */
-  var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.native
+  var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
   
   /**
     * The date and time for the recurring schedule to end. Amazon EC2 Auto Scaling does not perform the action after this time.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.native
+  var EndTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The maximum size of the Auto Scaling group.
     */
-  var MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.native
+  var MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.undefined
   
   /**
     * The minimum size of the Auto Scaling group.
     */
-  var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.native
+  var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
   
   /**
     * The recurring schedule for this action, in Unix cron syntax format. This format consists of five fields separated by white spaces: [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week]. The value must be in quotes (for example, "30 0 1 1,6,12 *"). For more information about this format, see Crontab. When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
     */
-  var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.native
+  var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The name of this scaling action.
     */
-  var ScheduledActionName: XmlStringMaxLen255 = js.native
+  var ScheduledActionName: XmlStringMaxLen255
   
   /**
     * The date and time for this action to start, in YYYY-MM-DDThh:mm:ssZ format in UTC/GMT only and in quotes (for example, "2019-06-01T00:00:00Z"). If you specify Recurrence and StartTime, Amazon EC2 Auto Scaling performs the action at this time, and then performs the action based on the specified recurrence. If you try to schedule your action in the past, Amazon EC2 Auto Scaling returns an error message.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.native
+  var StartTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * This parameter is no longer used.
     */
-  var Time: js.UndefOr[TimestampType] = js.native
+  var Time: js.UndefOr[TimestampType] = js.undefined
 }
 object PutScheduledUpdateGroupActionType {
   

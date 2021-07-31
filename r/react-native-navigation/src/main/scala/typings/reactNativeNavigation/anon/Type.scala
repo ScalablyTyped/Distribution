@@ -4,22 +4,22 @@ import typings.reactNativeNavigation.optionsMod.Interpolation
 import typings.reactNativeNavigation.reactNativeNavigationStrings.decelerate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Type extends Interpolation {
+trait Type
+  extends StObject
+     with Interpolation {
   
-  var factor: js.UndefOr[Double] = js.native
+  var factor: js.UndefOr[Double] = js.undefined
   
-  var `type`: decelerate = js.native
+  var `type`: decelerate
 }
 object Type {
   
   @scala.inline
-  def apply(`type`: decelerate): Type = {
+  def apply(): Type = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("decelerate")
     __obj.asInstanceOf[Type]
   }
   

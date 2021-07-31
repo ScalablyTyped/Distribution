@@ -6,53 +6,46 @@ import typings.gulpIstanbul.anon.Each
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   @JSImport("gulp-istanbul", JSImport.Namespace)
   @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-istanbul", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gulp-istanbul", "enforceThresholds")
-  @js.native
-  def enforceThresholds(): ReadWriteStream = js.native
-  @JSImport("gulp-istanbul", "enforceThresholds")
-  @js.native
-  def enforceThresholds(opts: ThresholdOptions): ReadWriteStream = js.native
+  @scala.inline
+  def enforceThresholds(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceThresholds")().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def enforceThresholds(opts: ThresholdOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceThresholds")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  @JSImport("gulp-istanbul", "hookRequire")
-  @js.native
-  def hookRequire(): ReadWriteStream = js.native
+  @scala.inline
+  def hookRequire(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hookRequire")().asInstanceOf[ReadWriteStream]
   
-  @JSImport("gulp-istanbul", "summarizeCoverage")
-  @js.native
-  def summarizeCoverage(): Coverage = js.native
-  @JSImport("gulp-istanbul", "summarizeCoverage")
-  @js.native
-  def summarizeCoverage(opts: CoverageVariable): Coverage = js.native
+  @scala.inline
+  def summarizeCoverage(): Coverage = ^.asInstanceOf[js.Dynamic].applyDynamic("summarizeCoverage")().asInstanceOf[Coverage]
+  @scala.inline
+  def summarizeCoverage(opts: CoverageVariable): Coverage = ^.asInstanceOf[js.Dynamic].applyDynamic("summarizeCoverage")(opts.asInstanceOf[js.Any]).asInstanceOf[Coverage]
   
-  @JSImport("gulp-istanbul", "writeReports")
-  @js.native
-  def writeReports(): ReadWriteStream = js.native
-  @JSImport("gulp-istanbul", "writeReports")
-  @js.native
-  def writeReports(opts: ReportOptions): ReadWriteStream = js.native
+  @scala.inline
+  def writeReports(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("writeReports")().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def writeReports(opts: ReportOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("writeReports")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  @js.native
   trait Coverage extends StObject {
     
-    var branches: CoverageStats = js.native
+    var branches: CoverageStats
     
-    var functions: CoverageStats = js.native
+    var functions: CoverageStats
     
-    var lines: CoverageStats = js.native
+    var lines: CoverageStats
     
-    var statements: CoverageStats = js.native
+    var statements: CoverageStats
   }
   object Coverage {
     
@@ -79,16 +72,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CoverageOptions extends StObject {
     
-    var branches: js.UndefOr[Double] = js.native
+    var branches: js.UndefOr[Double] = js.undefined
     
-    var functions: js.UndefOr[Double] = js.native
+    var functions: js.UndefOr[Double] = js.undefined
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
     
-    var statements: js.UndefOr[Double] = js.native
+    var statements: js.UndefOr[Double] = js.undefined
   }
   object CoverageOptions {
     
@@ -127,16 +119,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CoverageStats extends StObject {
     
-    var covered: Double = js.native
+    var covered: Double
     
-    var pct: Double = js.native
+    var pct: Double
     
-    var skipped: Double = js.native
+    var skipped: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object CoverageStats {
     
@@ -163,26 +154,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var codeGenerationOptions: js.UndefOr[js.Object] = js.native
+    var codeGenerationOptions: js.UndefOr[js.Object] = js.undefined
     
-    var coverageVariable: js.UndefOr[String] = js.native
+    var coverageVariable: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var embedSource: js.UndefOr[Boolean] = js.native
+    var embedSource: js.UndefOr[Boolean] = js.undefined
     
-    var includeUntested: js.UndefOr[Boolean] = js.native
+    var includeUntested: js.UndefOr[Boolean] = js.undefined
     
-    var noAutoWrap: js.UndefOr[Boolean] = js.native
+    var noAutoWrap: js.UndefOr[Boolean] = js.undefined
     
-    var noCompact: js.UndefOr[Boolean] = js.native
+    var noCompact: js.UndefOr[Boolean] = js.undefined
     
-    var preserveComments: js.UndefOr[Boolean] = js.native
+    var preserveComments: js.UndefOr[Boolean] = js.undefined
     
-    var walkDebug: js.UndefOr[Boolean] = js.native
+    var walkDebug: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -251,16 +241,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ReportOptions extends StObject {
     
-    var coverageVariable: js.UndefOr[String] = js.native
+    var coverageVariable: js.UndefOr[String] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var reportOpts: js.UndefOr[Dir] = js.native
+    var reportOpts: js.UndefOr[Dir] = js.undefined
     
-    var reporters: js.UndefOr[js.Array[String]] = js.native
+    var reporters: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ReportOptions {
     
@@ -302,12 +291,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ThresholdOptions extends StObject {
     
-    var coverageVariable: js.UndefOr[String] = js.native
+    var coverageVariable: js.UndefOr[String] = js.undefined
     
-    var thresholds: js.UndefOr[Each] = js.native
+    var thresholds: js.UndefOr[Each] = js.undefined
   }
   object ThresholdOptions {
     

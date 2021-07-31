@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopedCredentialParameters extends StObject {
   
-  var algorithm: java.lang.String | Algorithm = js.native
+  var algorithm: java.lang.String | Algorithm
   
-  var `type`: ScopedCredentialType = js.native
+  var `type`: ScopedCredentialType
 }
 object ScopedCredentialParameters {
   

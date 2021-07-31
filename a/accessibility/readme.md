@@ -10,9 +10,9 @@ add accessibility to your website
 | ------------------ | :-------------: |
 | Full name          | accessibility |
 | Keywords           | accessibility, website, increase text size, underline links, text to speech, invert colors |
-| # releases         | 13 |
+| # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 10065 |
+| # downloads        | 18039 |
 | # stars            | 3 |
 
 ## Links

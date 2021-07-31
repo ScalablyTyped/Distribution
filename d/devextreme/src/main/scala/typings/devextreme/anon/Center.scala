@@ -4,19 +4,17 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.viz.dxVectorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Center extends StObject {
   
-  var center: js.UndefOr[js.Array[Double]] = js.native
+  var center: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var component: js.UndefOr[dxVectorMap] = js.native
+  var component: js.UndefOr[dxVectorMap] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object Center {
   

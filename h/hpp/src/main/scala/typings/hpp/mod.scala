@@ -5,28 +5,28 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hpp", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("hpp", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("hpp", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var checkBody: js.UndefOr[Boolean] = js.native
+    var checkBody: js.UndefOr[Boolean] = js.undefined
     
-    var checkBodyOnlyForContentType: js.UndefOr[String] = js.native
+    var checkBodyOnlyForContentType: js.UndefOr[String] = js.undefined
     
-    var checkQuery: js.UndefOr[Boolean] = js.native
+    var checkQuery: js.UndefOr[Boolean] = js.undefined
     
-    var whitelist: js.UndefOr[String | js.Array[String]] = js.native
+    var whitelist: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Options {
     

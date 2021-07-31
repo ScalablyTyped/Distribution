@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `workbookRangeAreas.toJSON()`. */
-@js.native
 trait WorkbookRangeAreasData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait WorkbookRangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var addresses: js.UndefOr[js.Array[String]] = js.native
+  var addresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait WorkbookRangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var areas: js.UndefOr[js.Array[RangeAreasData]] = js.native
+  var areas: js.UndefOr[js.Array[RangeAreasData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait WorkbookRangeAreasData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var ranges: js.UndefOr[js.Array[RangeData]] = js.native
+  var ranges: js.UndefOr[js.Array[RangeData]] = js.undefined
 }
 object WorkbookRangeAreasData {
   

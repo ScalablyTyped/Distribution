@@ -2,13 +2,13 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildOptions[T /* <: ProjectType */] extends BaseBuildOptions {
+trait BuildOptions[T /* <: ProjectType */]
+  extends StObject
+     with BaseBuildOptions {
   
-  var `type`: T = js.native
+  var `type`: T
 }
 object BuildOptions {
   
@@ -21,7 +21,7 @@ object BuildOptions {
   }
   
   @scala.inline
-  implicit class BuildOptionsMutableBuilder[Self <: BuildOptions[_], T /* <: ProjectType */] (val x: Self with BuildOptions[T]) extends AnyVal {
+  implicit class BuildOptionsMutableBuilder[Self <: BuildOptions[?], T /* <: ProjectType */] (val x: Self & BuildOptions[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

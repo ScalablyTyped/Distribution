@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FetchResourcesResult extends Object {
+trait FetchResourcesResult
+  extends StObject
+     with Object {
   
   /**
     * The next entry index if the current result set doesn't contain all results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesResult)
     */
-  var nextStart: Double = js.native
+  var nextStart: Double
   
   /**
     * The fetched resources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesResult)
     */
-  var resources: js.Array[FetchResource] = js.native
+  var resources: js.Array[FetchResource]
   
   /**
     * The total number of results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesResult)
     */
-  var total: Double = js.native
+  var total: Double
 }
 object FetchResourcesResult {
   

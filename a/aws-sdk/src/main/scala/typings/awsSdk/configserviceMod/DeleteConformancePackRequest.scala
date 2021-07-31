@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConformancePackRequest extends StObject {
   
   /**
     * Name of the conformance pack you want to delete.
     */
-  var ConformancePackName: typings.awsSdk.configserviceMod.ConformancePackName = js.native
+  var ConformancePackName: typings.awsSdk.configserviceMod.ConformancePackName
 }
 object DeleteConformancePackRequest {
   

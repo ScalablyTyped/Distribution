@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client collection that maintains client menu objects.
   */
-@js.native
-trait ASPxClientMenuCollection extends ASPxClientControlCollection {
+trait ASPxClientMenuCollection
+  extends StObject
+     with ASPxClientControlCollection {
   
   /**
     * Hides all menus maitained by the collection.
     */
-  def HideAll(): Unit = js.native
+  def HideAll(): Unit
   
   /**
     * Recalculates the position of visible sub menus.
     */
-  def RecalculateAll(): Unit = js.native
+  def RecalculateAll(): Unit
 }
 object ASPxClientMenuCollection {
   
@@ -33,8 +33,8 @@ object ASPxClientMenuCollection {
     ForEachControl: ASPxClientControlAction => Unit,
     Get: js.Any => js.Any,
     GetByName: String => js.Any,
-    GetControlsByPredicate: ASPxClientControlPredicate => js.Array[_],
-    GetControlsByType: js.Any => js.Array[_],
+    GetControlsByPredicate: ASPxClientControlPredicate => js.Array[js.Any],
+    GetControlsByType: js.Any => js.Array[js.Any],
     HideAll: () => Unit,
     RecalculateAll: () => Unit,
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]

@@ -3,10 +3,13 @@ package typings.wordpressDeprecated
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@wordpress/deprecated", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Logs a message to notify developers about a deprecated feature.
@@ -28,44 +31,41 @@ object mod {
     * // Logs: 'Eating meat is deprecated and will be removed from the earth in the future. Please use vegetables instead. Note: You may find it beneficial to transition gradually.'
     * ```
     */
-  @JSImport("@wordpress/deprecated", JSImport.Default)
-  @js.native
-  def default(feature: String): Unit = js.native
-  @JSImport("@wordpress/deprecated", JSImport.Default)
-  @js.native
-  def default(feature: String, options: DeprecatedOptions): Unit = js.native
+  @scala.inline
+  def default(feature: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(feature.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(feature: String, options: DeprecatedOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(feature.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@wordpress/deprecated", "logged")
   @js.native
   val logged: Record[String, js.UndefOr[Boolean]] = js.native
   
-  @js.native
   trait DeprecatedOptions extends StObject {
     
     /**
       * Feature to use instead.
       */
-    var alternative: js.UndefOr[String] = js.native
+    var alternative: js.UndefOr[String] = js.undefined
     
     /**
       * Additional message to help transition away from the deprecated feature.
       */
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
     /**
       * Link to documentation.
       */
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
     /**
       * Plugin name if it's a plugin feature.
       */
-    var plugin: js.UndefOr[String] = js.native
+    var plugin: js.UndefOr[String] = js.undefined
     
     /**
       * Version in which the feature will be removed.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object DeprecatedOptions {
     

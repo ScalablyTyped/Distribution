@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.PipelinePrimaryTopicReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `30` extends StObject {
   
-  var `type`: PipelinePrimaryTopicReference = js.native
+  var `type`: PipelinePrimaryTopicReference
 }
 object `30` {
   
   @scala.inline
-  def apply(`type`: PipelinePrimaryTopicReference): `30` = {
+  def apply(): `30` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PipelinePrimaryTopicReference")
     __obj.asInstanceOf[`30`]
   }
   

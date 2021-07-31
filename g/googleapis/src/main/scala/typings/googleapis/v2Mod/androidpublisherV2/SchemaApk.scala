@@ -2,21 +2,19 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaApk extends StObject {
   
   /**
     * Information about the binary payload of this APK.
     */
-  var binary: js.UndefOr[SchemaApkBinary] = js.native
+  var binary: js.UndefOr[SchemaApkBinary] = js.undefined
   
   /**
     * The version code of the APK, as specified in the APK&#39;s manifest file.
     */
-  var versionCode: js.UndefOr[Double] = js.native
+  var versionCode: js.UndefOr[Double] = js.undefined
 }
 object SchemaApk {
   

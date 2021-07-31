@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeClusterSecurityGroupIngressMessage extends StObject {
   
   /**
     * The IP range for which to revoke access. This range must be a valid Classless Inter-Domain Routing (CIDR) block of IP addresses. If CIDRIP is specified, EC2SecurityGroupName and EC2SecurityGroupOwnerId cannot be provided. 
     */
-  var CIDRIP: js.UndefOr[String] = js.native
+  var CIDRIP: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the security Group from which to revoke the ingress rule.
     */
-  var ClusterSecurityGroupName: String = js.native
+  var ClusterSecurityGroupName: String
   
   /**
     * The name of the EC2 Security Group whose access is to be revoked. If EC2SecurityGroupName is specified, EC2SecurityGroupOwnerId must also be provided and CIDRIP cannot be provided. 
     */
-  var EC2SecurityGroupName: js.UndefOr[String] = js.native
+  var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account number of the owner of the security group specified in the EC2SecurityGroupName parameter. The AWS access key ID is not an acceptable value. If EC2SecurityGroupOwnerId is specified, EC2SecurityGroupName must also be provided. and CIDRIP cannot be provided.  Example: 111122223333 
     */
-  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.native
+  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
 }
 object RevokeClusterSecurityGroupIngressMessage {
   

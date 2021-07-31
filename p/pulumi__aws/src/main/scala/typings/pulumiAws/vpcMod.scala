@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcMod {
@@ -119,6 +118,10 @@ object vpcMod {
   /* static members */
   object Vpc {
     
+    @JSImport("@pulumi/aws/ec2/vpc", "Vpc")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Vpc resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -128,29 +131,23 @@ object vpcMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpc", "Vpc.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Vpc = js.native
-    @JSImport("@pulumi/aws/ec2/vpc", "Vpc.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Vpc = js.native
-    @JSImport("@pulumi/aws/ec2/vpc", "Vpc.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcState): Vpc = js.native
-    @JSImport("@pulumi/aws/ec2/vpc", "Vpc.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcState, opts: CustomResourceOptions): Vpc = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Vpc = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Vpc]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Vpc = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vpc]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcState): Vpc = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Vpc]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcState, opts: CustomResourceOptions): Vpc = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vpc]
     
     /**
       * Returns true if the given object is an instance of Vpc.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpc", "Vpc.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpc.Vpc */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpc.Vpc */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpc.Vpc */ Boolean]
   }
   
-  @js.native
   trait VpcArgs extends StObject {
     
     /**
@@ -158,46 +155,46 @@ object vpcMod {
       * block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
       * the size of the CIDR block. Default is `false`.
       */
-    val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.native
+    val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The CIDR block for the VPC.
       */
-    val cidrBlock: Input[String] = js.native
+    val cidrBlock: Input[String]
     
     /**
       * A boolean flag to enable/disable ClassicLink
       * for the VPC. Only valid in regions and accounts that support EC2 Classic.
       * See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html) for more information. Defaults false.
       */
-    val enableClassiclink: js.UndefOr[Input[Boolean]] = js.native
+    val enableClassiclink: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
       * Only valid in regions and accounts that support EC2 Classic.
       */
-    val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.native
+    val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
       */
-    val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.native
+    val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean flag to enable/disable DNS support in the VPC. Defaults true.
       */
-    val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.native
+    val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A tenancy option for instances launched into the VPC. Default is `default`, which
       * makes your instances shared on the host. Using either of the other options (`dedicated` or `host`) costs at least $2/hr.
       */
-    val instanceTenancy: js.UndefOr[Input[String]] = js.native
+    val instanceTenancy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcArgs {
     
@@ -257,98 +254,97 @@ object vpcMod {
     }
   }
   
-  @js.native
   trait VpcState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of VPC
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Requests an Amazon-provided IPv6 CIDR
       * block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
       * the size of the CIDR block. Default is `false`.
       */
-    val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.native
+    val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The CIDR block for the VPC.
       */
-    val cidrBlock: js.UndefOr[Input[String]] = js.native
+    val cidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the network ACL created by default on VPC creation
       */
-    val defaultNetworkAclId: js.UndefOr[Input[String]] = js.native
+    val defaultNetworkAclId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the route table created by default on VPC creation
       */
-    val defaultRouteTableId: js.UndefOr[Input[String]] = js.native
+    val defaultRouteTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the security group created by default on VPC creation
       */
-    val defaultSecurityGroupId: js.UndefOr[Input[String]] = js.native
+    val defaultSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
     
-    val dhcpOptionsId: js.UndefOr[Input[String]] = js.native
+    val dhcpOptionsId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean flag to enable/disable ClassicLink
       * for the VPC. Only valid in regions and accounts that support EC2 Classic.
       * See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html) for more information. Defaults false.
       */
-    val enableClassiclink: js.UndefOr[Input[Boolean]] = js.native
+    val enableClassiclink: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
       * Only valid in regions and accounts that support EC2 Classic.
       */
-    val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.native
+    val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
       */
-    val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.native
+    val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean flag to enable/disable DNS support in the VPC. Defaults true.
       */
-    val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.native
+    val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A tenancy option for instances launched into the VPC. Default is `default`, which
       * makes your instances shared on the host. Using either of the other options (`dedicated` or `host`) costs at least $2/hr.
       */
-    val instanceTenancy: js.UndefOr[Input[String]] = js.native
+    val instanceTenancy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The association ID for the IPv6 CIDR block.
       */
-    val ipv6AssociationId: js.UndefOr[Input[String]] = js.native
+    val ipv6AssociationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv6 CIDR block.
       */
-    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
+    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the main route table associated with
       * this VPC. Note that you can change a VPC's main route table by using an
       * `aws.ec2.MainRouteTableAssociation`.
       */
-    val mainRouteTableId: js.UndefOr[Input[String]] = js.native
+    val mainRouteTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the VPC.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcState {
     

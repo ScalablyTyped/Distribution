@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArns: typings.awsSdk.elbv2Mod.ResourceArns = js.native
+  var ResourceArns: typings.awsSdk.elbv2Mod.ResourceArns
   
   /**
     * The tags.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object AddTagsInput {
   

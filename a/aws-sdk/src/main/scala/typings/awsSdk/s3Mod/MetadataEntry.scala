@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataEntry extends StObject {
   
   /**
     * Name of the Object.
     */
-  var Name: js.UndefOr[MetadataKey] = js.native
+  var Name: js.UndefOr[MetadataKey] = js.undefined
   
   /**
     * Value of the Object.
     */
-  var Value: js.UndefOr[MetadataValue] = js.native
+  var Value: js.UndefOr[MetadataValue] = js.undefined
 }
 object MetadataEntry {
   

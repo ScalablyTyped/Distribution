@@ -6,36 +6,39 @@ import typings.svgParser.svgParserStrings.root
 import typings.svgParser.svgParserStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("svg-parser", "parse")
+  @JSImport("svg-parser", JSImport.Namespace)
   @js.native
-  def parse(source: String): RootNode = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ElementNode extends Node {
+  @scala.inline
+  def parse(source: String): RootNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[RootNode]
+  
+  trait ElementNode
+    extends StObject
+       with Node {
     
-    var children: js.Array[Node | String] = js.native
+    var children: js.Array[Node | String]
     
-    var metadata: js.UndefOr[String] = js.native
+    var metadata: js.UndefOr[String] = js.undefined
     
-    var properties: js.UndefOr[Record[String, String | Double]] = js.native
+    var properties: js.UndefOr[Record[String, String | Double]] = js.undefined
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
     
-    var `type`: element = js.native
+    var `type`: element
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ElementNode {
     
     @scala.inline
-    def apply(children: js.Array[Node | String], `type`: element): ElementNode = {
+    def apply(children: js.Array[Node | String]): ElementNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[ElementNode]
     }
     
@@ -85,33 +88,32 @@ object mod {
   object Node {
     
     @scala.inline
-    def ElementNode(children: js.Array[Node | String], `type`: element): typings.svgParser.mod.ElementNode = {
+    def ElementNode(children: js.Array[Node | String]): typings.svgParser.mod.ElementNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[typings.svgParser.mod.ElementNode]
     }
     
     @scala.inline
-    def TextNode(`type`: text): typings.svgParser.mod.TextNode = {
+    def TextNode(): typings.svgParser.mod.TextNode = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[typings.svgParser.mod.TextNode]
     }
   }
   
-  @js.native
   trait RootNode extends StObject {
     
-    var children: js.Array[Node] = js.native
+    var children: js.Array[Node]
     
-    var `type`: root = js.native
+    var `type`: root
   }
   object RootNode {
     
     @scala.inline
-    def apply(children: js.Array[Node], `type`: root): RootNode = {
+    def apply(children: js.Array[Node]): RootNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[RootNode]
     }
     
@@ -129,19 +131,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait TextNode extends Node {
+  trait TextNode
+    extends StObject
+       with Node {
     
-    var `type`: text = js.native
+    var `type`: text
     
-    var value: js.UndefOr[String | Boolean | Double] = js.native
+    var value: js.UndefOr[String | Boolean | Double] = js.undefined
   }
   object TextNode {
     
     @scala.inline
-    def apply(`type`: text): TextNode = {
+    def apply(): TextNode = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[TextNode]
     }
     

@@ -4,19 +4,17 @@ import typings.openlayers.mod.EventsConditionType
 import typings.openlayers.mod.MapBrowserEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragZoomOptions extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var condition: js.UndefOr[EventsConditionType] = js.native
+  var condition: js.UndefOr[EventsConditionType] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var out: js.UndefOr[Boolean] = js.native
+  var out: js.UndefOr[Boolean] = js.undefined
 }
 object DragZoomOptions {
   

@@ -3,13 +3,11 @@ package typings.mongodb.anon
 import typings.mongodb.mod.ExtractIdType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2`[TSchema /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  _id :any | undefined} */ js.Any */] extends StObject {
   
-  var _id: js.UndefOr[ExtractIdType[TSchema]] = js.native
+  var _id: js.UndefOr[ExtractIdType[TSchema]] = js.undefined
 }
 object `2` {
   
@@ -20,7 +18,7 @@ object `2` {
   }
   
   @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`[_], TSchema /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  _id :any | undefined} */ js.Any */] (val x: Self with `2`[TSchema]) extends AnyVal {
+  implicit class `2MutableBuilder`[Self <: `2`[?], TSchema /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  _id :any | undefined} */ js.Any */] (val x: Self & `2`[TSchema]) extends AnyVal {
     
     @scala.inline
     def set_id(value: ExtractIdType[TSchema]): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])

@@ -2,65 +2,65 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client ASPxFilterControl.
   */
-@js.native
-trait ASPxClientFilterControl extends ASPxClientControl {
+trait ASPxClientFilterControl
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs after a new filter expression has been applied.
     */
-  var Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]] = js.native
+  var Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]]
   
   /**
     * Applies a filter constructed by an end-user.
     */
-  def Apply(): Unit = js.native
+  def Apply(): Unit
   
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
-  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]] = js.native
+  var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]]
   
   /**
     * Fires on the client if any server error occurs during server-side processing of a callback sent by the ASPxClientFilterControl.
     */
-  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]] = js.native
+  var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]]
   
   /**
     * Occurs on the client side after a callback's server-side processing has been completed.
     */
-  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]] = js.native
+  var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]]
   
   /**
     * Returns the applied filter expression.
     */
-  def GetAppliedFilterExpression(): String = js.native
+  def GetAppliedFilterExpression(): String
   
   /**
     * Returns the editor used to edit operand values for the specified filter column. An ASPxClientEditBase descendant that represents the editor used to edit operand values for the specified filter column.
     * @param editorIndex An integer value that identifies the filter column by its index within the collection.
     */
-  def GetEditor(editorIndex: Double): ASPxClientEditBase = js.native
+  def GetEditor(editorIndex: Double): ASPxClientEditBase
   
   /**
     * Returns the filter expression.
     */
-  def GetFilterExpression(): String = js.native
+  def GetFilterExpression(): String
   
   /**
     * Returns a value indicating whether the filter expression being currently composed on the client side is valid - all expression conditions are filled.
     */
-  def IsFilterExpressionValid(): Boolean = js.native
+  def IsFilterExpressionValid(): Boolean
   
   /**
     * Resets the current filter expression to a previously applied filter expression.
     */
-  def Reset(): Unit = js.native
+  def Reset(): Unit
 }
 object ASPxClientFilterControl {
   

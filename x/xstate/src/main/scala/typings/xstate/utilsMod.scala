@@ -31,7 +31,6 @@ import typings.xstate.typesMod.TransitionConfigTarget
 import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
@@ -40,261 +39,213 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("xstate/lib/utils", "evaluateGuard")
-  @js.native
+  @scala.inline
   def evaluateGuard[TContext, TEvent /* <: EventObject */](
-    machine: StateNode[TContext, _, TEvent, ContextTContext[TContext]],
+    machine: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]],
     guard: Guard[TContext, TEvent],
     context: TContext,
     _event: Event[TEvent],
-    state: State[TContext, TEvent, _, ContextTContext[TContext]]
-  ): Boolean = js.native
+    state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateGuard")(machine.asInstanceOf[js.Any], guard.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("xstate/lib/utils", "flatten")
-  @js.native
-  def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
+  @scala.inline
+  def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("xstate/lib/utils", "getActionType")
-  @js.native
-  def getActionType(action: Action[_, _]): ActionType = js.native
+  @scala.inline
+  def getActionType(action: Action[js.Any, js.Any]): ActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionType")(action.asInstanceOf[js.Any]).asInstanceOf[ActionType]
   
-  @JSImport("xstate/lib/utils", "getEventType")
-  @js.native
-  def getEventType[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any = js.native
+  @scala.inline
+  def getEventType[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventType")(event.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any]
   
-  @JSImport("xstate/lib/utils", "isActor")
-  @js.native
-  def isActor(value: js.Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = js.native
+  @scala.inline
+  def isActor(value: js.Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActor")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean]
   
-  @JSImport("xstate/lib/utils", "isArray")
-  @js.native
-  def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
+  @scala.inline
+  def isArray(value: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
-  @JSImport("xstate/lib/utils", "isBuiltInEvent")
-  @js.native
-  def isBuiltInEvent(eventType: EventType): Boolean = js.native
+  @scala.inline
+  def isBuiltInEvent(eventType: EventType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuiltInEvent")(eventType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("xstate/lib/utils", "isFunction")
-  @js.native
-  def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("xstate/lib/utils", "isMachine")
-  @js.native
-  def isMachine(value: js.Any): /* is xstate.xstate/lib/types.StateMachine<any, any, any, xstate.anon.ContextAny> */ Boolean = js.native
+  @scala.inline
+  def isMachine(value: js.Any): /* is xstate.xstate/lib/types.StateMachine<any, any, any, xstate.anon.ContextAny> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMachine")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateMachine<any, any, any, xstate.anon.ContextAny> */ Boolean]
   
-  @JSImport("xstate/lib/utils", "isObservable")
-  @js.native
-  def isObservable[T](value: js.Any): /* is xstate.xstate/lib/types.Subscribable<T> */ Boolean = js.native
+  @scala.inline
+  def isObservable[T](value: js.Any): /* is xstate.xstate/lib/types.Subscribable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.Subscribable<T> */ Boolean]
   
-  @JSImport("xstate/lib/utils", "isPromiseLike")
-  @js.native
-  def isPromiseLike(value: js.Any): /* is std.PromiseLike<any> */ Boolean = js.native
+  @scala.inline
+  def isPromiseLike(value: js.Any): /* is std.PromiseLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<any> */ Boolean]
   
-  @JSImport("xstate/lib/utils", "isStateLike")
-  @js.native
-  def isStateLike(state: js.Any): /* is xstate.xstate/lib/types.StateLike<any> */ Boolean = js.native
+  @scala.inline
+  def isStateLike(state: js.Any): /* is xstate.xstate/lib/types.StateLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateLike")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateLike<any> */ Boolean]
   
-  @JSImport("xstate/lib/utils", "isString")
-  @js.native
-  def isString(value: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isString(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("xstate/lib/utils", "keys")
-  @js.native
-  def keys[T /* <: js.Object */](value: T): js.Array[/* keyof T */ String] = js.native
+  @scala.inline
+  def keys[T /* <: js.Object */](value: T): js.Array[/* keyof T */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[/* keyof T */ String]]
   
-  @JSImport("xstate/lib/utils", "mapContext")
-  @js.native
-  def mapContext[TContext, TEvent /* <: EventObject */](mapper: Mapper[TContext, TEvent, _], context: TContext, _event: Event[TEvent]): js.Any = js.native
-  @JSImport("xstate/lib/utils", "mapContext")
-  @js.native
-  def mapContext[TContext, TEvent /* <: EventObject */](mapper: PropertyMapper[TContext, TEvent, _], context: TContext, _event: Event[TEvent]): js.Any = js.native
+  @scala.inline
+  def mapContext[TContext, TEvent /* <: EventObject */](mapper: Mapper[TContext, TEvent, js.Any], context: TContext, _event: Event[TEvent]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapContext")(mapper.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def mapContext[TContext, TEvent /* <: EventObject */](mapper: PropertyMapper[TContext, TEvent, js.Any], context: TContext, _event: Event[TEvent]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapContext")(mapper.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("xstate/lib/utils", "mapFilterValues")
-  @js.native
+  @scala.inline
   def mapFilterValues[T, P](
     collection: StringDictionary[T],
     iteratee: js.Function3[/* item */ T, /* key */ String, /* collection */ StringDictionary[T], P],
     predicate: js.Function1[/* item */ T, Boolean]
-  ): StringDictionary[P] = js.native
+  ): StringDictionary[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapFilterValues")(collection.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[P]]
   
-  @JSImport("xstate/lib/utils", "mapValues")
-  @js.native
+  @scala.inline
   def mapValues[T, P](
     collection: StringDictionary[T],
     iteratee: js.Function4[/* item */ T, /* key */ String, /* collection */ StringDictionary[T], /* i */ Double, P]
-  ): StringDictionary[P] = js.native
+  ): StringDictionary[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapValues")(collection.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[P]]
   
-  @JSImport("xstate/lib/utils", "matchesState")
-  @js.native
-  def matchesState(parentStateId: StateValue, childStateId: StateValue): Boolean = js.native
-  @JSImport("xstate/lib/utils", "matchesState")
-  @js.native
-  def matchesState(parentStateId: StateValue, childStateId: StateValue, delimiter: String): Boolean = js.native
+  @scala.inline
+  def matchesState(parentStateId: StateValue, childStateId: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesState")(parentStateId.asInstanceOf[js.Any], childStateId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchesState(parentStateId: StateValue, childStateId: StateValue, delimiter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesState")(parentStateId.asInstanceOf[js.Any], childStateId.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("xstate/lib/utils", "nestedPath")
-  @js.native
-  def nestedPath[T /* <: Record[String, _] */](props: js.Array[String], accessorProp: /* keyof T */ String): js.Function1[/* object */ T, T] = js.native
+  @scala.inline
+  def nestedPath[T /* <: Record[String, js.Any] */](props: js.Array[String], accessorProp: /* keyof T */ String): js.Function1[/* object */ T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nestedPath")(props.asInstanceOf[js.Any], accessorProp.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* object */ T, T]]
   
-  @JSImport("xstate/lib/utils", "normalizeTarget")
-  @js.native
-  def normalizeTarget[TContext, TEvent /* <: EventObject */](): js.UndefOr[js.Array[String | (StateNode[TContext, _, TEvent, ContextTContext[TContext]])]] = js.native
-  @JSImport("xstate/lib/utils", "normalizeTarget")
-  @js.native
-  def normalizeTarget[TContext, TEvent /* <: EventObject */](target: SingleOrArray[String | (StateNode[TContext, _, TEvent, ContextTContext[TContext]])]): js.UndefOr[js.Array[String | (StateNode[TContext, _, TEvent, ContextTContext[TContext]])]] = js.native
+  @scala.inline
+  def normalizeTarget[TContext, TEvent /* <: EventObject */](): js.UndefOr[
+    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")().asInstanceOf[js.UndefOr[
+    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+  ]]
+  @scala.inline
+  def normalizeTarget[TContext, TEvent /* <: EventObject */](target: SingleOrArray[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]): js.UndefOr[
+    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+  ]]
   
-  @JSImport("xstate/lib/utils", "partition")
-  @js.native
-  def partition[T, A /* <: T */, B /* <: T */](items: js.Array[T], predicate: js.Function1[/* item */ T, /* is A */ Boolean]): js.Tuple2[js.Array[A], js.Array[B]] = js.native
+  @scala.inline
+  def partition[T, A /* <: T */, B /* <: T */](items: js.Array[T], predicate: js.Function1[/* item */ T, /* is A */ Boolean]): js.Tuple2[js.Array[A], js.Array[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(items.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[A], js.Array[B]]]
   
-  @JSImport("xstate/lib/utils", "path")
-  @js.native
-  def path[T /* <: Record[String, _] */](props: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def path[T /* <: Record[String, js.Any] */](props: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("xstate/lib/utils", "pathToStateValue")
-  @js.native
-  def pathToStateValue(statePath: js.Array[String]): StateValue = js.native
+  @scala.inline
+  def pathToStateValue(statePath: js.Array[String]): StateValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToStateValue")(statePath.asInstanceOf[js.Any]).asInstanceOf[StateValue]
   
-  @JSImport("xstate/lib/utils", "pathsToStateValue")
-  @js.native
-  def pathsToStateValue(paths: js.Array[js.Array[String]]): StateValue = js.native
+  @scala.inline
+  def pathsToStateValue(paths: js.Array[js.Array[String]]): StateValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pathsToStateValue")(paths.asInstanceOf[js.Any]).asInstanceOf[StateValue]
   
-  @JSImport("xstate/lib/utils", "reportUnhandledExceptionOnInvocation")
-  @js.native
-  def reportUnhandledExceptionOnInvocation(originalError: js.Any, currentError: js.Any, id: String): Unit = js.native
+  @scala.inline
+  def reportUnhandledExceptionOnInvocation(originalError: js.Any, currentError: js.Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportUnhandledExceptionOnInvocation")(originalError.asInstanceOf[js.Any], currentError.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("xstate/lib/utils", "symbolObservable")
   @js.native
   val symbolObservable: String | js.Symbol = js.native
   
-  @JSImport("xstate/lib/utils", "toArray")
-  @js.native
-  def toArray[T](): js.Array[T] = js.native
-  @JSImport("xstate/lib/utils", "toArray")
-  @js.native
-  def toArray[T](value: T): js.Array[T] = js.native
-  @JSImport("xstate/lib/utils", "toArray")
-  @js.native
-  def toArray[T](value: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def toArray[T](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Array[T]]
+  @scala.inline
+  def toArray[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def toArray[T](value: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("xstate/lib/utils", "toArrayStrict")
-  @js.native
-  def toArrayStrict[T](value: T): js.Array[T] = js.native
-  @JSImport("xstate/lib/utils", "toArrayStrict")
-  @js.native
-  def toArrayStrict[T](value: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def toArrayStrict[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayStrict")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def toArrayStrict[T](value: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayStrict")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("xstate/lib/utils", "toEventObject")
-  @js.native
-  def toEventObject[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): TEvent = js.native
-  @JSImport("xstate/lib/utils", "toEventObject")
-  @js.native
-  def toEventObject[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent], payload: EventData): TEvent = js.native
+  @scala.inline
+  def toEventObject[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): TEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("toEventObject")(event.asInstanceOf[js.Any]).asInstanceOf[TEvent]
+  @scala.inline
+  def toEventObject[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent], payload: EventData): TEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("toEventObject")(event.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[TEvent]
   
-  @JSImport("xstate/lib/utils", "toGuard")
-  @js.native
-  def toGuard[TContext, TEvent /* <: EventObject */](): js.UndefOr[Guard[TContext, TEvent]] = js.native
-  @JSImport("xstate/lib/utils", "toGuard")
-  @js.native
+  @scala.inline
+  def toGuard[TContext, TEvent /* <: EventObject */](): js.UndefOr[Guard[TContext, TEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGuard")().asInstanceOf[js.UndefOr[Guard[TContext, TEvent]]]
+  @scala.inline
+  def toGuard[TContext, TEvent /* <: EventObject */](condition: Unit, guardMap: Record[String, ConditionPredicate[TContext, TEvent]]): js.UndefOr[Guard[TContext, TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toGuard")(condition.asInstanceOf[js.Any], guardMap.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Guard[TContext, TEvent]]]
+  @scala.inline
+  def toGuard[TContext, TEvent /* <: EventObject */](condition: Condition[TContext, TEvent]): js.UndefOr[Guard[TContext, TEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGuard")(condition.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Guard[TContext, TEvent]]]
+  @scala.inline
   def toGuard[TContext, TEvent /* <: EventObject */](
-    condition: js.UndefOr[Condition[TContext, TEvent]],
+    condition: Condition[TContext, TEvent],
     guardMap: Record[String, ConditionPredicate[TContext, TEvent]]
-  ): js.UndefOr[Guard[TContext, TEvent]] = js.native
-  @JSImport("xstate/lib/utils", "toGuard")
-  @js.native
-  def toGuard[TContext, TEvent /* <: EventObject */](condition: Condition[TContext, TEvent]): js.UndefOr[Guard[TContext, TEvent]] = js.native
+  ): js.UndefOr[Guard[TContext, TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toGuard")(condition.asInstanceOf[js.Any], guardMap.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Guard[TContext, TEvent]]]
   
-  @JSImport("xstate/lib/utils", "toInvokeSource")
-  @js.native
-  def toInvokeSource(src: String): InvokeSourceDefinition = js.native
-  @JSImport("xstate/lib/utils", "toInvokeSource")
-  @js.native
-  def toInvokeSource(src: InvokeSourceDefinition): InvokeSourceDefinition = js.native
+  @scala.inline
+  def toInvokeSource(src: String): InvokeSourceDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("toInvokeSource")(src.asInstanceOf[js.Any]).asInstanceOf[InvokeSourceDefinition]
+  @scala.inline
+  def toInvokeSource(src: InvokeSourceDefinition): InvokeSourceDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("toInvokeSource")(src.asInstanceOf[js.Any]).asInstanceOf[InvokeSourceDefinition]
   
-  @JSImport("xstate/lib/utils", "toSCXMLEvent")
-  @js.native
-  def toSCXMLEvent[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): Event[TEvent] = js.native
-  @JSImport("xstate/lib/utils", "toSCXMLEvent")
-  @js.native
-  def toSCXMLEvent[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent], scxmlEvent: Partial[Event[TEvent]]): Event[TEvent] = js.native
-  @JSImport("xstate/lib/utils", "toSCXMLEvent")
-  @js.native
-  def toSCXMLEvent[TEvent /* <: EventObject */](event: Event[TEvent]): Event[TEvent] = js.native
-  @JSImport("xstate/lib/utils", "toSCXMLEvent")
-  @js.native
-  def toSCXMLEvent[TEvent /* <: EventObject */](event: Event[TEvent], scxmlEvent: Partial[Event[TEvent]]): Event[TEvent] = js.native
+  @scala.inline
+  def toSCXMLEvent[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): Event[TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSCXMLEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Event[TEvent]]
+  @scala.inline
+  def toSCXMLEvent[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent], scxmlEvent: Partial[Event[TEvent]]): Event[TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSCXMLEvent")(event.asInstanceOf[js.Any], scxmlEvent.asInstanceOf[js.Any])).asInstanceOf[Event[TEvent]]
+  @scala.inline
+  def toSCXMLEvent[TEvent /* <: EventObject */](event: Event[TEvent]): Event[TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSCXMLEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Event[TEvent]]
+  @scala.inline
+  def toSCXMLEvent[TEvent /* <: EventObject */](event: Event[TEvent], scxmlEvent: Partial[Event[TEvent]]): Event[TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSCXMLEvent")(event.asInstanceOf[js.Any], scxmlEvent.asInstanceOf[js.Any])).asInstanceOf[Event[TEvent]]
   
-  @JSImport("xstate/lib/utils", "toStatePath")
-  @js.native
-  def toStatePath(stateId: String, delimiter: String): js.Array[String] = js.native
-  @JSImport("xstate/lib/utils", "toStatePath")
-  @js.native
-  def toStatePath(stateId: js.Array[String], delimiter: String): js.Array[String] = js.native
+  @scala.inline
+  def toStatePath(stateId: String, delimiter: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatePath")(stateId.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def toStatePath(stateId: js.Array[String], delimiter: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatePath")(stateId.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("xstate/lib/utils", "toStatePaths")
-  @js.native
-  def toStatePaths(): js.Array[js.Array[String]] = js.native
-  @JSImport("xstate/lib/utils", "toStatePaths")
-  @js.native
-  def toStatePaths(stateValue: StateValue): js.Array[js.Array[String]] = js.native
+  @scala.inline
+  def toStatePaths(): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatePaths")().asInstanceOf[js.Array[js.Array[String]]]
+  @scala.inline
+  def toStatePaths(stateValue: StateValue): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatePaths")(stateValue.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
   
-  @JSImport("xstate/lib/utils", "toStateValue")
-  @js.native
-  def toStateValue(stateValue: js.Array[String], delimiter: String): StateValue = js.native
-  @JSImport("xstate/lib/utils", "toStateValue")
-  @js.native
-  def toStateValue(stateValue: StateLike[_], delimiter: String): StateValue = js.native
-  @JSImport("xstate/lib/utils", "toStateValue")
-  @js.native
-  def toStateValue(stateValue: StateValue, delimiter: String): StateValue = js.native
+  @scala.inline
+  def toStateValue(stateValue: js.Array[String], delimiter: String): StateValue = (^.asInstanceOf[js.Dynamic].applyDynamic("toStateValue")(stateValue.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[StateValue]
+  @scala.inline
+  def toStateValue(stateValue: StateLike[js.Any], delimiter: String): StateValue = (^.asInstanceOf[js.Dynamic].applyDynamic("toStateValue")(stateValue.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[StateValue]
+  @scala.inline
+  def toStateValue(stateValue: StateValue, delimiter: String): StateValue = (^.asInstanceOf[js.Dynamic].applyDynamic("toStateValue")(stateValue.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[StateValue]
   
-  @JSImport("xstate/lib/utils", "toTransitionConfigArray")
-  @js.native
+  @scala.inline
   def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
     event: NullEvent,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with `4`[TEvent]] = js.native
-  @JSImport("xstate/lib/utils", "toTransitionConfigArray")
-  @js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  @scala.inline
   def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
     event: Asterisk,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with `4`[TEvent]] = js.native
-  @JSImport("xstate/lib/utils", "toTransitionConfigArray")
-  @js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  
+  @scala.inline
   def toTransitionConfigArray_type[TContext, TEvent /* <: EventObject */](
     event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) with `4`[TEvent]] = js.native
+  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
   
-  @JSImport("xstate/lib/utils", "uniqueId")
-  @js.native
-  def uniqueId(): String = js.native
+  @scala.inline
+  def uniqueId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String]
   
-  @JSImport("xstate/lib/utils", "updateContext")
-  @js.native
-  def updateContext[TContext, TEvent /* <: EventObject */](context: TContext, _event: Event[TEvent], assignActions: js.Array[AssignAction[TContext, TEvent]]): TContext = js.native
-  @JSImport("xstate/lib/utils", "updateContext")
-  @js.native
+  @scala.inline
+  def updateContext[TContext, TEvent /* <: EventObject */](context: TContext, _event: Event[TEvent], assignActions: js.Array[AssignAction[TContext, TEvent]]): TContext = (^.asInstanceOf[js.Dynamic].applyDynamic("updateContext")(context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], assignActions.asInstanceOf[js.Any])).asInstanceOf[TContext]
+  @scala.inline
   def updateContext[TContext, TEvent /* <: EventObject */](
     context: TContext,
     _event: Event[TEvent],
     assignActions: js.Array[AssignAction[TContext, TEvent]],
-    state: State[TContext, TEvent, _, ContextTContext[TContext]]
-  ): TContext = js.native
+    state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
+  ): TContext = (^.asInstanceOf[js.Dynamic].applyDynamic("updateContext")(context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], assignActions.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TContext]
   
-  @JSImport("xstate/lib/utils", "updateHistoryStates")
-  @js.native
-  def updateHistoryStates(hist: HistoryValue, stateValue: StateValue): Record[String, js.UndefOr[HistoryValue]] = js.native
+  @scala.inline
+  def updateHistoryStates(hist: HistoryValue, stateValue: StateValue): Record[String, js.UndefOr[HistoryValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateHistoryStates")(hist.asInstanceOf[js.Any], stateValue.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.UndefOr[HistoryValue]]]
   
-  @JSImport("xstate/lib/utils", "updateHistoryValue")
-  @js.native
-  def updateHistoryValue(hist: HistoryValue, stateValue: StateValue): HistoryValue = js.native
+  @scala.inline
+  def updateHistoryValue(hist: HistoryValue, stateValue: StateValue): HistoryValue = (^.asInstanceOf[js.Dynamic].applyDynamic("updateHistoryValue")(hist.asInstanceOf[js.Any], stateValue.asInstanceOf[js.Any])).asInstanceOf[HistoryValue]
   
   @JSImport("xstate/lib/utils", "warn")
   @js.native

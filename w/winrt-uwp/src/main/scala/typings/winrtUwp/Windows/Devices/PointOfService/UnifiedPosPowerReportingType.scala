@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object UnifiedPosPowerReportingType extends StObject {
   
   /** Can determine and report the three power states (off, offline, and online) of the device. */
   @js.native
-  sealed trait advanced extends UnifiedPosPowerReportingType
+  sealed trait advanced
+    extends StObject
+       with UnifiedPosPowerReportingType
   
   /** Can determine and report the two power states (online and off/offline) of the device. */
   @js.native
-  sealed trait standard extends UnifiedPosPowerReportingType
+  sealed trait standard
+    extends StObject
+       with UnifiedPosPowerReportingType
   
   /** Cannot determine the state of the device, therefore no power reporting is possible. */
   @js.native
-  sealed trait unknownPowerReportingType extends UnifiedPosPowerReportingType
+  sealed trait unknownPowerReportingType
+    extends StObject
+       with UnifiedPosPowerReportingType
 }

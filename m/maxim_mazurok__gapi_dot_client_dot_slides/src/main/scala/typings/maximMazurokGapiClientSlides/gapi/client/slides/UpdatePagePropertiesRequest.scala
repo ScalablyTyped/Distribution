@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePagePropertiesRequest extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait UpdatePagePropertiesRequest extends StObject {
     * for listing every field. For example to update the page background solid fill color, set `fields` to `"pageBackgroundFill.solidFill.color"`. To reset a property to its default
     * value, include its field name in the field mask but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The object ID of the page the update is applied to. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /** The page properties to update. */
-  var pageProperties: js.UndefOr[PageProperties] = js.native
+  var pageProperties: js.UndefOr[PageProperties] = js.undefined
 }
 object UpdatePagePropertiesRequest {
   

@@ -11,8 +11,8 @@ Convert a string to pascal-case.
 | Full name          | pascalcase |
 | Keywords           | camelcase, case, casing, pascal, pascal-case, pascal case, pascalcase, string, UpperCamelCase |
 | # releases         | 2 |
-| # dependents       | 171 |
-| # downloads        | 549162663 |
+| # dependents       | 219 |
+| # downloads        | 654860912 |
 | # stars            | 1 |
 
 ## Links

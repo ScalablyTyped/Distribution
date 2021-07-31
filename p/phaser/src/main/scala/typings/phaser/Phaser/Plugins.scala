@@ -5,7 +5,6 @@ import typings.phaser.Phaser.Types.Plugins.GlobalPlugin
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Plugins {
@@ -64,28 +63,27 @@ object Plugins {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait DefaultPlugins extends StObject {
     
     /**
       * These are the core plugins that are installed into every Scene.Systems instance, no matter what.
       */
-    var CoreScene: js.Array[_] = js.native
+    var CoreScene: js.Array[js.Any]
     
     /**
       * These plugins are created in Scene.Systems in addition to the CoreScenePlugins.
       */
-    var DefaultScene: js.Array[_] = js.native
+    var DefaultScene: js.Array[js.Any]
     
     /**
       * These are the Global Managers that are created by the Phaser.Game instance.
       */
-    var Global: js.Array[_] = js.native
+    var Global: js.Array[js.Any]
   }
   object DefaultPlugins {
     
     @scala.inline
-    def apply(CoreScene: js.Array[_], DefaultScene: js.Array[_], Global: js.Array[_]): DefaultPlugins = {
+    def apply(CoreScene: js.Array[js.Any], DefaultScene: js.Array[js.Any], Global: js.Array[js.Any]): DefaultPlugins = {
       val __obj = js.Dynamic.literal(CoreScene = CoreScene.asInstanceOf[js.Any], DefaultScene = DefaultScene.asInstanceOf[js.Any], Global = Global.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultPlugins]
     }
@@ -94,19 +92,19 @@ object Plugins {
     implicit class DefaultPluginsMutableBuilder[Self <: DefaultPlugins] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCoreScene(value: js.Array[_]): Self = StObject.set(x, "CoreScene", value.asInstanceOf[js.Any])
+      def setCoreScene(value: js.Array[js.Any]): Self = StObject.set(x, "CoreScene", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCoreSceneVarargs(value: js.Any*): Self = StObject.set(x, "CoreScene", js.Array(value :_*))
       
       @scala.inline
-      def setDefaultScene(value: js.Array[_]): Self = StObject.set(x, "DefaultScene", value.asInstanceOf[js.Any])
+      def setDefaultScene(value: js.Array[js.Any]): Self = StObject.set(x, "DefaultScene", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultSceneVarargs(value: js.Any*): Self = StObject.set(x, "DefaultScene", js.Array(value :_*))
       
       @scala.inline
-      def setGlobal(value: js.Array[_]): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
+      def setGlobal(value: js.Array[js.Any]): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGlobalVarargs(value: js.Any*): Self = StObject.set(x, "Global", js.Array(value :_*))
@@ -159,7 +157,7 @@ object Plugins {
       * @param globalPlugins An array of global plugins to install.
       * @param scenePlugins An array of scene plugins to install.
       */
-    /* protected */ def addToScene(sys: Systems, globalPlugins: js.Array[_], scenePlugins: js.Array[_]): Unit = js.native
+    /* protected */ def addToScene(sys: Systems, globalPlugins: js.Array[js.Any], scenePlugins: js.Array[js.Any]): Unit = js.native
     
     /**
       * Run once the game has booted and installs all of the plugins configured in the Game Config.
@@ -240,19 +238,13 @@ object Plugins {
       * @param data A value passed to the plugin's `init` method.
       */
     def install(key: String, plugin: js.Function): BasePlugin = js.native
-    def install(
-      key: String,
-      plugin: js.Function,
-      start: js.UndefOr[scala.Nothing],
-      mapping: js.UndefOr[scala.Nothing],
-      data: js.Any
-    ): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: js.UndefOr[scala.Nothing], mapping: String): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: js.UndefOr[scala.Nothing], mapping: String, data: js.Any): BasePlugin = js.native
     def install(key: String, plugin: js.Function, start: Boolean): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Boolean, mapping: js.UndefOr[scala.Nothing], data: js.Any): BasePlugin = js.native
     def install(key: String, plugin: js.Function, start: Boolean, mapping: String): BasePlugin = js.native
     def install(key: String, plugin: js.Function, start: Boolean, mapping: String, data: js.Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Boolean, mapping: Unit, data: js.Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: String): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: String, data: js.Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: Unit, data: js.Any): BasePlugin = js.native
     
     /**
       * Installs a new Scene Plugin into the Plugin Manager and optionally adds it
@@ -280,31 +272,13 @@ object Plugins {
       * @param fromLoader Is this being called by the Loader? Default false.
       */
     def installScenePlugin(key: String, plugin: js.Function): Unit = js.native
-    def installScenePlugin(
-      key: String,
-      plugin: js.Function,
-      mapping: js.UndefOr[scala.Nothing],
-      addToScene: js.UndefOr[scala.Nothing],
-      fromLoader: Boolean
-    ): Unit = js.native
-    def installScenePlugin(key: String, plugin: js.Function, mapping: js.UndefOr[scala.Nothing], addToScene: Scene): Unit = js.native
-    def installScenePlugin(
-      key: String,
-      plugin: js.Function,
-      mapping: js.UndefOr[scala.Nothing],
-      addToScene: Scene,
-      fromLoader: Boolean
-    ): Unit = js.native
     def installScenePlugin(key: String, plugin: js.Function, mapping: String): Unit = js.native
-    def installScenePlugin(
-      key: String,
-      plugin: js.Function,
-      mapping: String,
-      addToScene: js.UndefOr[scala.Nothing],
-      fromLoader: Boolean
-    ): Unit = js.native
+    def installScenePlugin(key: String, plugin: js.Function, mapping: String, addToScene: Unit, fromLoader: Boolean): Unit = js.native
     def installScenePlugin(key: String, plugin: js.Function, mapping: String, addToScene: Scene): Unit = js.native
     def installScenePlugin(key: String, plugin: js.Function, mapping: String, addToScene: Scene, fromLoader: Boolean): Unit = js.native
+    def installScenePlugin(key: String, plugin: js.Function, mapping: Unit, addToScene: Unit, fromLoader: Boolean): Unit = js.native
+    def installScenePlugin(key: String, plugin: js.Function, mapping: Unit, addToScene: Scene): Unit = js.native
+    def installScenePlugin(key: String, plugin: js.Function, mapping: Unit, addToScene: Scene, fromLoader: Boolean): Unit = js.native
     
     /**
       * Checks if the given global plugin, based on its key, is active or not.
@@ -382,9 +356,9 @@ object Plugins {
       * @param creatorCallback The callback to invoke when the Game Object Creator is called.
       */
     def registerGameObject(key: String): Unit = js.native
-    def registerGameObject(key: String, factoryCallback: js.UndefOr[scala.Nothing], creatorCallback: js.Function): Unit = js.native
     def registerGameObject(key: String, factoryCallback: js.Function): Unit = js.native
     def registerGameObject(key: String, factoryCallback: js.Function, creatorCallback: js.Function): Unit = js.native
+    def registerGameObject(key: String, factoryCallback: Unit, creatorCallback: js.Function): Unit = js.native
     
     /**
       * Removes a previously registered Game Object from the global Game Object Factory and / or Creator.
@@ -394,9 +368,9 @@ object Plugins {
       * @param removeFromCreator Should the Game Object be removed from the Game Object Creator? Default true.
       */
     def removeGameObject(key: String): Unit = js.native
-    def removeGameObject(key: String, removeFromFactory: js.UndefOr[scala.Nothing], removeFromCreator: Boolean): Unit = js.native
     def removeGameObject(key: String, removeFromFactory: Boolean): Unit = js.native
     def removeGameObject(key: String, removeFromFactory: Boolean, removeFromCreator: Boolean): Unit = js.native
+    def removeGameObject(key: String, removeFromFactory: Unit, removeFromCreator: Boolean): Unit = js.native
     
     /**
       * Removes a global plugin from the Plugin Manager and Plugin Cache.
@@ -455,7 +429,9 @@ object Plugins {
     * It can map itself to a Scene property, or into the Scene Systems, or both.
     */
   @js.native
-  trait ScenePlugin extends BasePlugin {
+  trait ScenePlugin
+    extends StObject
+       with BasePlugin {
     
     /**
       * This method is called when the Scene boots. It is only ever called once.

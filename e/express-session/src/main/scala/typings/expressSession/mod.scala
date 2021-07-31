@@ -18,21 +18,24 @@ import typings.node.eventsMod.EventEmitterOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: SessionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-session", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-session", JSImport.Namespace)
-  @js.native
-  def apply(options: SessionOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-session", "Cookie")
   @js.native
-  class Cookie () extends CookieOptions {
+  class Cookie ()
+    extends StObject
+       with CookieOptions {
     
     /** Returns the original `maxAge` (time-to-live), in milliseconds, of the session cookie. */
     var originalMaxAge: Double = js.native
@@ -139,7 +142,7 @@ object mod {
         js.Function1[/* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]], Unit]
       ] = js.native
     
-    def createSession(req: Request_[ParamsDictionary, _, _, Query], session: SessionData): Unit = js.native
+    def createSession(req: Request_[ParamsDictionary, js.Any, js.Any, Query], session: SessionData): Unit = js.native
     
     /** Destroys the dession with the given session ID. */
     def destroy(sid: String): Unit = js.native
@@ -161,11 +164,14 @@ object mod {
         js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* length */ Double, Unit], Unit]
       ] = js.native
     
-    def load(sid: String, callback: js.Function2[/* err */ js.Any, /* session */ js.UndefOr[SessionData], _]): Unit = js.native
+    def load(
+      sid: String,
+      callback: js.Function2[/* err */ js.Any, /* session */ js.UndefOr[SessionData], js.Any]
+    ): Unit = js.native
     
     def regenerate(
-      req: Request_[ParamsDictionary, _, _, Query],
-      callback: js.Function1[/* err */ js.UndefOr[js.Any], _]
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      callback: js.Function1[/* err */ js.UndefOr[js.Any], js.Any]
     ): Unit = js.native
     
     /** Upsert a session in the store given a session ID and `SessionData` */
@@ -183,16 +189,15 @@ object mod {
       ] = js.native
   }
   
-  @js.native
   trait CookieOptions extends StObject {
     
     /**
       * Specifies the value for the `Domain Set-Cookie` attribute.
       * By default, no domain is set, and most clients will consider the cookie to apply to only the current domain.
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var encode: js.UndefOr[js.Function1[/* val */ String, String]] = js.native
+    var encode: js.UndefOr[js.Function1[/* val */ String, String]] = js.undefined
     
     /**
       * Specifies the `Date` object to be the value for the `Expires Set-Cookie` attribute.
@@ -203,7 +208,7 @@ object mod {
       * @deprecated The `expires` option should not be set directly; instead only use the `maxAge` option
       * @see maxAge
       */
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * Specifies the boolean value for the `HttpOnly Set-Cookie` attribute. When truthy, the `HttpOnly` attribute is set, otherwise it is not.
@@ -211,7 +216,7 @@ object mod {
       *
       * Be careful when setting this to `true`, as compliant clients will not allow client-side JavaScript to see the cookie in `document.cookie`.
       */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies the number (in milliseconds) to use when calculating the `Expires Set-Cookie` attribute.
@@ -222,13 +227,13 @@ object mod {
       *
       * @see expires
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies the value for the `Path Set-Cookie` attribute.
       * By default, this is set to '/', which is the root path of the domain.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the boolean or string to be the value for the `SameSite Set-Cookie` attribute.
@@ -243,7 +248,7 @@ object mod {
       * **Note:** This is an attribute that has not yet been fully standardized, and may change in the future.
       * This also means many clients may ignore this attribute until they understand it.
       */
-    var sameSite: js.UndefOr[Boolean | lax | strict | none] = js.native
+    var sameSite: js.UndefOr[Boolean | lax | strict | none] = js.undefined
     
     /**
       * Specifies the boolean value for the `Secure Set-Cookie` attribute. When truthy, the `Secure` attribute is set, otherwise it is not. By default, the `Secure` attribute is not set.
@@ -261,9 +266,9 @@ object mod {
       *
       * Please see the [README](https://github.com/expressjs/session) for an example of using secure cookies in production, but allowing for testing in development based on NODE_ENV.
       */
-    var secure: js.UndefOr[Boolean | auto] = js.native
+    var secure: js.UndefOr[Boolean | auto] = js.undefined
     
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object CookieOptions {
     
@@ -343,10 +348,9 @@ object mod {
     * }
     *
     */
-  @js.native
   trait SessionData extends StObject {
     
-    var cookie: Cookie = js.native
+    var cookie: Cookie
   }
   object SessionData {
     
@@ -364,14 +368,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SessionOptions extends StObject {
     
     /**
       * Settings object for the session ID cookie.
       * @see CookieOptions
       */
-    var cookie: js.UndefOr[CookieOptions] = js.native
+    var cookie: js.UndefOr[CookieOptions] = js.undefined
     
     /**
       * Function to call to generate a new session ID. Provide a function that returns a string that will be used as a session ID.
@@ -380,7 +383,9 @@ object mod {
       * The default value is a function which uses the uid-safe library to generate IDs.
       * Be careful to generate unique IDs so your sessions do not conflict.
       */
-    var genid: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]] = js.native
+    var genid: js.UndefOr[
+        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+      ] = js.undefined
     
     /**
       * The name of the session ID cookie to set in the response (and read from in the request).
@@ -390,7 +395,7 @@ object mod {
       *   then you need to separate the session cookies from each other.
       * The simplest method is to simply set different names per app.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Trust the reverse proxy when setting secure cookies (via the "X-Forwarded-Proto" header).
@@ -400,7 +405,7 @@ object mod {
       * - `false`: All headers are ignored and the connection is considered secure only if there is a direct TLS/SSL connection.
       * - `undefined`: Uses the "trust proxy" setting from express
       */
-    var proxy: js.UndefOr[Boolean] = js.native
+    var proxy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces the session to be saved back to the session store, even if the session was never modified during the request.
@@ -414,7 +419,7 @@ object mod {
       * If it does, then you can safely set `resave: false`.
       * If it does not implement the `touch` method and your store sets an expiration date on stored sessions, then you likely need `resave: true`.
       */
-    var resave: js.UndefOr[Boolean] = js.native
+    var resave: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Force the session identifier cookie to be set on every response. The expiration is reset to the original `maxAge`, resetting the expiration countdown.
@@ -429,7 +434,7 @@ object mod {
       *
       * @see saveUninitialized
       */
-    var rolling: js.UndefOr[Boolean] = js.native
+    var rolling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces a session that is "uninitialized" to be saved to the store. A session is uninitialized when it is new but not modified.
@@ -443,7 +448,7 @@ object mod {
       * Passport will add an empty Passport object to the session for use after a user is authenticated, which will be treated as a modification to the session, causing it to be saved.
       * This has been fixed in PassportJS 0.3.0.
       */
-    var saveUninitialized: js.UndefOr[Boolean] = js.native
+    var saveUninitialized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is the secret used to sign the session cookie. This can be either a string for a single secret, or an array of multiple secrets.
@@ -461,13 +466,13 @@ object mod {
       * In order to rotate the secret without invalidating sessions, provide an array of secrets,
       *   with the new secret as first element of the array, and including previous secrets as the later elements.
       */
-    var secret: String | js.Array[String] = js.native
+    var secret: String | js.Array[String]
     
     /**
       * The session store instance, defaults to a new `MemoryStore` instance.
       * @see MemoryStore
       */
-    var store: js.UndefOr[Store] = js.native
+    var store: js.UndefOr[Store] = js.undefined
     
     /**
       * Control the result of unsetting req.session (through delete, setting to null, etc.).
@@ -475,7 +480,7 @@ object mod {
       * - `keep`: The session in the store will be kept, but modifications made during the request are ignored and not saved.
       * @default 'keep'
       */
-    var unset: js.UndefOr[destroy | keep] = js.native
+    var unset: js.UndefOr[destroy | keep] = js.undefined
   }
   object SessionOptions {
     
@@ -495,7 +500,7 @@ object mod {
       def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
       @scala.inline
-      def setGenid(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = StObject.set(x, "genid", js.Any.fromFunction1(value))
+      def setGenid(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "genid", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGenidUndefined: Self = StObject.set(x, "genid", js.undefined)
@@ -555,7 +560,6 @@ object mod {
     object Express {
       
       // Inject additional properties on express.Request
-      @js.native
       trait Request extends StObject {
         
         /**
@@ -565,13 +569,13 @@ object mod {
           *
           * @see SessionData
           */
-        var session: SessionPartialSessionData = js.native
+        var session: SessionPartialSessionData
         
         /**
           * This request's session ID.
           * Even though this property isn't marked as optional, it won't exist until you use the `express-session` middleware
           */
-        var sessionID: String = js.native
+        var sessionID: String
       }
       object Request {
         

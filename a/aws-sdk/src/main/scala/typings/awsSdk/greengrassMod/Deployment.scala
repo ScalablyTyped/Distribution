@@ -2,36 +2,34 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployment extends StObject {
   
   /**
     * The time, in milliseconds since the epoch, when the deployment was created.
     */
-  var CreatedAt: js.UndefOr[string] = js.native
+  var CreatedAt: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the deployment.
     */
-  var DeploymentArn: js.UndefOr[string] = js.native
+  var DeploymentArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the deployment.
     */
-  var DeploymentId: js.UndefOr[string] = js.native
+  var DeploymentId: js.UndefOr[string] = js.undefined
   
   /**
     * The type of the deployment.
     */
-  var DeploymentType: js.UndefOr[typings.awsSdk.greengrassMod.DeploymentType] = js.native
+  var DeploymentType: js.UndefOr[typings.awsSdk.greengrassMod.DeploymentType] = js.undefined
   
   /**
     * The ARN of the group for this deployment.
     */
-  var GroupArn: js.UndefOr[string] = js.native
+  var GroupArn: js.UndefOr[string] = js.undefined
 }
 object Deployment {
   

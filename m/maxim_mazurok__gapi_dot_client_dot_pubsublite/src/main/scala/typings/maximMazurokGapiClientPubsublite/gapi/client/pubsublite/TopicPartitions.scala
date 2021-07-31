@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicPartitions extends StObject {
   
   /** The number of partitions in the topic. */
-  var partitionCount: js.UndefOr[String] = js.native
+  var partitionCount: js.UndefOr[String] = js.undefined
 }
 object TopicPartitions {
   

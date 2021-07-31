@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jurisdiction extends StObject {
   
-  var allowSystemCreatedSeal: js.UndefOr[String] = js.native
+  var allowSystemCreatedSeal: js.UndefOr[String] = js.undefined
   
-  var allowUserUploadedSeal: js.UndefOr[String] = js.native
+  var allowUserUploadedSeal: js.UndefOr[String] = js.undefined
   
-  var commissionIdInSeal: js.UndefOr[String] = js.native
+  var commissionIdInSeal: js.UndefOr[String] = js.undefined
   
-  var county: js.UndefOr[String] = js.native
+  var county: js.UndefOr[String] = js.undefined
   
-  var countyInSeal: js.UndefOr[String] = js.native
+  var countyInSeal: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[String] = js.native
+  var enabled: js.UndefOr[String] = js.undefined
   
-  var jurisdictionId: js.UndefOr[String] = js.native
+  var jurisdictionId: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var notaryPublicInSeal: js.UndefOr[String] = js.native
+  var notaryPublicInSeal: js.UndefOr[String] = js.undefined
   
-  var stateNameInSeal: js.UndefOr[String] = js.native
+  var stateNameInSeal: js.UndefOr[String] = js.undefined
 }
 object Jurisdiction {
   

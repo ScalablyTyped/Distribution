@@ -2,21 +2,19 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing all reasons that bid responses were considered
   * to have no applicable bids.
   */
-@js.native
 trait SchemaListBidResponsesWithoutBidsResponse extends StObject {
   
   /**
     * List of rows, with counts of bid responses without bids aggregated by
     * status.
     */
-  var bidResponseWithoutBidsStatusRows: js.UndefOr[js.Array[SchemaBidResponseWithoutBidsStatusRow]] = js.native
+  var bidResponseWithoutBidsStatusRows: js.UndefOr[js.Array[SchemaBidResponseWithoutBidsStatusRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the
@@ -24,7 +22,7 @@ trait SchemaListBidResponsesWithoutBidsResponse extends StObject {
     * to the bidResponsesWithoutBids.list method to retrieve the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListBidResponsesWithoutBidsResponse {
   

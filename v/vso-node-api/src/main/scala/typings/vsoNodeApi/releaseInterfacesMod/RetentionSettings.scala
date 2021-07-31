@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionSettings extends StObject {
   
-  var daysToKeepDeletedReleases: Double = js.native
+  var daysToKeepDeletedReleases: Double
   
-  var defaultEnvironmentRetentionPolicy: EnvironmentRetentionPolicy = js.native
+  var defaultEnvironmentRetentionPolicy: EnvironmentRetentionPolicy
   
-  var maximumEnvironmentRetentionPolicy: EnvironmentRetentionPolicy = js.native
+  var maximumEnvironmentRetentionPolicy: EnvironmentRetentionPolicy
 }
 object RetentionSettings {
   

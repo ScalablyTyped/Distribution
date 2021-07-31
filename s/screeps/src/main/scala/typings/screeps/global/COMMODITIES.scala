@@ -3,7 +3,6 @@ package typings.screeps.global
 import typings.screeps.anon.Components
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<screeps.CommodityConstant | screeps.MineralConstant | screeps.RESOURCE_GHODIUM | screeps.RESOURCE_ENERGY, {  level :number | undefined,   amount :number,   cooldown :number,   components :std.Record<screeps.DepositConstant | screeps.CommodityConstant | screeps.MineralConstant | screeps.RESOURCE_ENERGY | screeps.RESOURCE_GHODIUM, number>}> */

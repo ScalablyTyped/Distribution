@@ -3,22 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.listRepositoriesExceptionsUnionMod.ListRepositoriesExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidSortByExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidSortByExceptionDetails> * / any */ @js.native
-  trait InvalidSortByException extends ListRepositoriesExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidSortByExceptionDetails> * / any */ trait InvalidSortByException
+    extends StObject
+       with ListRepositoriesExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSortByException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSortByException
   }
   object InvalidSortByException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSortByException): InvalidSortByException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidSortByException = {
+      val __obj = js.Dynamic.literal(name = "InvalidSortByException")
       __obj.asInstanceOf[InvalidSortByException]
     }
     
@@ -30,6 +30,5 @@ object typesInvalidSortByExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidSortByExceptionDetails extends StObject
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcPeeringConnectionsOutput extends StObject {
   
   /**
     * A collection of VPC peering connection records that match the request.
     */
-  var VpcPeeringConnections: js.UndefOr[VpcPeeringConnectionList] = js.native
+  var VpcPeeringConnections: js.UndefOr[VpcPeeringConnectionList] = js.undefined
 }
 object DescribeVpcPeeringConnectionsOutput {
   

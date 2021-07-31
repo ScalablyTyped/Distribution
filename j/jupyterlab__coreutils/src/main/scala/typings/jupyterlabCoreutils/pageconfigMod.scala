@@ -4,17 +4,24 @@ import typings.jupyterlabCoreutils.anon.Download
 import typings.jupyterlabCoreutils.anon.Raw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageconfigMod {
   
   object PageConfig {
     
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The namespace for page config `Extension` functions.
       */
     object Extension {
+      
+      @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.Extension")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * The collection of deferred extensions in page config.
@@ -35,41 +42,36 @@ object pageconfigMod {
         *
         * @param id - The plugin ID.
         */
-      @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.Extension.isDeferred")
-      @js.native
-      def isDeferred(id: String): Boolean = js.native
+      @scala.inline
+      def isDeferred(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Returns whether a plugin is disabled.
         *
         * @param id - The plugin ID.
         */
-      @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.Extension.isDisabled")
-      @js.native
-      def isDisabled(id: String): Boolean = js.native
+      @scala.inline
+      def isDisabled(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getBaseUrl")
-    @js.native
-    def getBaseUrl(): String = js.native
+    @scala.inline
+    def getBaseUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseUrl")().asInstanceOf[String]
     
     /**
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getNBConvertURL")
-    @js.native
-    def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
+    @scala.inline
+    def getNBConvertURL(hasPathFormatDownload: Download): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNBConvertURL")(hasPathFormatDownload.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the Notebook version info [major, minor, patch].
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getNotebookVersion")
-    @js.native
-    def getNotebookVersion(): js.Tuple3[Double, Double, Double] = js.native
+    @scala.inline
+    def getNotebookVersion(): js.Tuple3[Double, Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotebookVersion")().asInstanceOf[js.Tuple3[Double, Double, Double]]
     
     /**
       * Get global configuration data for the Jupyter application.
@@ -89,49 +91,42 @@ object pageconfigMod {
       * with a `--jupyter-config-data` option pointing to a JSON settings
       * file.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getOption")
-    @js.native
-    def getOption(name: String): String = js.native
+    @scala.inline
+    def getOption(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the base url for sharing links (usually baseUrl)
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getShareUrl")
-    @js.native
-    def getShareUrl(): String = js.native
+    @scala.inline
+    def getShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareUrl")().asInstanceOf[String]
     
     /**
       * Get the authorization token for a Jupyter application.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getToken")
-    @js.native
-    def getToken(): String = js.native
+    @scala.inline
+    def getToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[String]
     
     /**
       * Get the tree url for shareable links.
       * Usually the same as treeUrl,
       * but overrideable e.g. when sharing with JupyterHub.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getTreeShareUrl")
-    @js.native
-    def getTreeShareUrl(): String = js.native
+    @scala.inline
+    def getTreeShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeShareUrl")().asInstanceOf[String]
     
     /**
       * Get the tree url for a JupyterLab application.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getTreeUrl")
-    @js.native
-    def getTreeUrl(): String = js.native
+    @scala.inline
+    def getTreeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeUrl")().asInstanceOf[String]
     
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getWsUrl")
-    @js.native
-    def getWsUrl(): String = js.native
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getWsUrl")
-    @js.native
-    def getWsUrl(baseUrl: String): String = js.native
+    @scala.inline
+    def getWsUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")().asInstanceOf[String]
+    @scala.inline
+    def getWsUrl(baseUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Set global configuration data for the Jupyter application.
@@ -141,8 +136,7 @@ object pageconfigMod {
       *
       * @returns The last config value or an empty string if it doesn't exist.
       */
-    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.setOption")
-    @js.native
-    def setOption(name: String, value: String): String = js.native
+    @scala.inline
+    def setOption(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

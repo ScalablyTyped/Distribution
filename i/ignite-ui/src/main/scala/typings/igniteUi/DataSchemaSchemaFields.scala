@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSchemaSchemaFields
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,17 +16,17 @@ trait DataSchemaSchemaFields
   /**
     * ParamType="function" optional="true" formatter function which accepts three parameters: val - value of the field; record - data source record; field - field definition; and return the formatted string. Formatter function is used when filtering by all fields.
     */
-  var formatter: js.UndefOr[js.Any] = js.native
+  var formatter: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This option is applicable only for fields with fieldDataType="object". Reference to a function (string or function) that can be used for complex data extraction from the data records, whose return value will be used for all data operations associated with this field.
     */
-  var mapper: js.UndefOr[String | js.Function] = js.native
+  var mapper: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * Name of the field
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * data type of the fieldstring
@@ -41,12 +40,12 @@ trait DataSchemaSchemaFields
     * Valid values:
     * "time"
     */
-  var `type`: js.UndefOr[String | Double | Boolean | Date | js.Object] = js.native
+  var `type`: js.UndefOr[String | Double | Boolean | Date | js.Object] = js.undefined
   
   /**
     * The XPath expression to map the node to the field
     */
-  var xpath: js.UndefOr[String] = js.native
+  var xpath: js.UndefOr[String] = js.undefined
 }
 object DataSchemaSchemaFields {
   

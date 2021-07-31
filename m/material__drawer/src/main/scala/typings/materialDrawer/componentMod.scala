@@ -8,7 +8,6 @@ import typings.materialList.componentMod.MDCListFactory
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -16,11 +15,11 @@ object componentMod {
   @JSImport("@material/drawer/component", "MDCDrawer")
   @js.native
   class MDCDrawer protected () extends MDCComponent[MDCDismissibleDrawerFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCDismissibleDrawerFoundation, args: js.Any*) = this()
     
     def initialize(): Unit = js.native
-    def initialize(focusTrapFactory: js.UndefOr[scala.Nothing], listFactory: MDCListFactory): Unit = js.native
+    def initialize(focusTrapFactory: Unit, listFactory: MDCListFactory): Unit = js.native
     def initialize(focusTrapFactory: MDCDrawerFocusTrapFactory): Unit = js.native
     def initialize(focusTrapFactory: MDCDrawerFocusTrapFactory, listFactory: MDCListFactory): Unit = js.native
     
@@ -39,8 +38,11 @@ object componentMod {
   /* static members */
   object MDCDrawer {
     
-    @JSImport("@material/drawer/component", "MDCDrawer.attachTo")
+    @JSImport("@material/drawer/component", "MDCDrawer")
     @js.native
-    def attachTo(root: Element): MDCDrawer = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCDrawer = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCDrawer]
   }
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDocumentationPartRequest extends StObject {
   
   /**
     * [Required] The location of the targeted API entity of the to-be-created documentation part.
     */
-  var location: DocumentationPartLocation = js.native
+  var location: DocumentationPartLocation
   
   /**
     * [Required] The new documentation content map of the targeted API entity. Enclosed key-value pairs are API-specific, but only OpenAPI-compliant key-value pairs can be exported and, hence, published.
     */
-  var properties: String = js.native
+  var properties: String
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
 }
 object CreateDocumentationPartRequest {
   

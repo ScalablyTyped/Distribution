@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConfig extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) for an Amazon Simple Notification Service (Amazon SNS) topic. Run Command pushes notifications about command status changes to this topic.
     */
-  var NotificationArn: js.UndefOr[typings.awsSdk.ssmMod.NotificationArn] = js.native
+  var NotificationArn: js.UndefOr[typings.awsSdk.ssmMod.NotificationArn] = js.undefined
   
   /**
     * The different events for which you can receive notifications. These events include the following: All (events), InProgress, Success, TimedOut, Cancelled, Failed. To learn more about these events, see Monitoring Systems Manager status changes using Amazon SNS notifications in the AWS Systems Manager User Guide.
     */
-  var NotificationEvents: js.UndefOr[NotificationEventList] = js.native
+  var NotificationEvents: js.UndefOr[NotificationEventList] = js.undefined
   
   /**
     * Command: Receive notification when the status of a command changes. Invocation: For commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. 
     */
-  var NotificationType: js.UndefOr[typings.awsSdk.ssmMod.NotificationType] = js.native
+  var NotificationType: js.UndefOr[typings.awsSdk.ssmMod.NotificationType] = js.undefined
 }
 object NotificationConfig {
   

@@ -3,61 +3,59 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountRecentActivityWorkItemModel extends StObject {
   
   /**
     * Date of the last Activity by the user
     */
-  var activityDate: Date = js.native
+  var activityDate: Date
   
   /**
     * Type of the activity
     */
-  var activityType: WorkItemRecentActivityType = js.native
+  var activityType: WorkItemRecentActivityType
   
   /**
     * Assigned To
     */
-  var assignedTo: String = js.native
+  var assignedTo: String
   
   /**
     * Last changed date of the work item
     */
-  var changedDate: Date = js.native
+  var changedDate: Date
   
   /**
     * Work Item Id
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * TeamFoundationId of the user this activity belongs to
     */
-  var identityId: String = js.native
+  var identityId: String
   
   /**
     * State of the work item
     */
-  var state: String = js.native
+  var state: String
   
   /**
     * Team project the work item belongs to
     */
-  var teamProject: String = js.native
+  var teamProject: String
   
   /**
     * Title of the work item
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Type of Work Item
     */
-  var workItemType: String = js.native
+  var workItemType: String
 }
 object AccountRecentActivityWorkItemModel {
   

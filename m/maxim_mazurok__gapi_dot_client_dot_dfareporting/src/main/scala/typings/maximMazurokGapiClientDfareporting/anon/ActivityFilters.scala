@@ -6,35 +6,33 @@ import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.PathF
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.SortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityFilters extends StObject {
   
   /** The list of 'dfa:activity' values to filter on. */
-  var activityFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var activityFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
   
   /** Channel Grouping. */
-  var customChannelGrouping: js.UndefOr[ChannelGrouping] = js.native
+  var customChannelGrouping: js.UndefOr[ChannelGrouping] = js.undefined
   
   /** The date range this report should be run for. */
-  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.native
+  var dateRange: js.UndefOr[typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange] = js.undefined
   
   /** The list of dimensions the report should include. */
-  var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
   
   /**
     * The floodlight ID for which to show data in this report. All advertisers associated with that ID will automatically be added. The dimension of the value needs to be
     * 'dfa:floodlightConfigId'.
     */
-  var floodlightConfigId: js.UndefOr[DimensionValue] = js.native
+  var floodlightConfigId: js.UndefOr[DimensionValue] = js.undefined
   
   /** The list of names of metrics the report should include. */
-  var metricNames: js.UndefOr[js.Array[String]] = js.native
+  var metricNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Path Filters. */
-  var pathFilters: js.UndefOr[js.Array[PathFilter]] = js.native
+  var pathFilters: js.UndefOr[js.Array[PathFilter]] = js.undefined
 }
 object ActivityFilters {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a background task deferral returned by the AppointmentStoreChangedEventArgs.GetDeferral method. */
-@js.native
 trait AppointmentStoreChangedDeferral extends StObject {
   
   /** Informs the system that an asynchronous operation associated with an AppointmentStore has finished. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object AppointmentStoreChangedDeferral {
   

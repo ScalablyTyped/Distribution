@@ -11,14 +11,15 @@ import typings.typeorm.oracleConnectionOptionsMod.OracleConnectionOptions
 import typings.typeorm.tableColumnMod.TableColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oracleDriverMod {
   
   @JSImport("typeorm/browser/driver/oracle/OracleDriver", "OracleDriver")
   @js.native
-  class OracleDriver protected () extends Driver {
+  class OracleDriver protected ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     /**
@@ -44,7 +45,7 @@ object oracleDriverMod {
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createPool(options: OracleConnectionOptions, credentials: OracleConnectionCredentialsOptions): js.Promise[_] = js.native
+    /* protected */ def createPool(options: OracleConnectionOptions, credentials: OracleConnectionCredentialsOptions): js.Promise[js.Any] = js.native
     
     def getColumnLength(column: TableColumn): String = js.native
     
@@ -93,6 +94,6 @@ object oracleDriverMod {
       * Pool for slave databases.
       * Used in replication.
       */
-    var slaves: js.Array[_] = js.native
+    var slaves: js.Array[js.Any] = js.native
   }
 }

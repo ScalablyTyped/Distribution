@@ -10,9 +10,9 @@ TypeScript typings for Firebase Realtime Database Management API v1beta
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.firebasedatabase |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 47 |
 | # dependents       | 1 |
-| # downloads        | 146 |
+| # downloads        | 3434 |
 | # stars            | 0 |
 
 ## Links

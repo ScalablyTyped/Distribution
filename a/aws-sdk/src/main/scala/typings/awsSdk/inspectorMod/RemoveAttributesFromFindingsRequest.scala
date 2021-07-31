@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveAttributesFromFindingsRequest extends StObject {
   
   /**
     * The array of attribute keys that you want to remove from specified findings.
     */
-  var attributeKeys: UserAttributeKeyList = js.native
+  var attributeKeys: UserAttributeKeyList
   
   /**
     * The ARNs that specify the findings that you want to remove attributes from.
     */
-  var findingArns: AddRemoveAttributesFindingArnList = js.native
+  var findingArns: AddRemoveAttributesFindingArnList
 }
 object RemoveAttributesFromFindingsRequest {
   

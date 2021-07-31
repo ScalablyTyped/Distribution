@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Such objects are provided by a {@link XStatusIndicatorFactory} .
   * @see XStatusIndicatorFactory
   */
-@js.native
-trait XStatusIndicator extends XInterface {
+trait XStatusIndicator
+  extends StObject
+     with XInterface {
   
   /**
     * stop the progress
@@ -23,14 +23,14 @@ trait XStatusIndicator extends XInterface {
     * {@link XStatusIndicator.start()} can reactivate this indicator. It's not allowed to destruct the indicator inside this method. The instance must be
     * gone by using ref count or disposing.
     */
-  def end(): Unit = js.native
+  def end(): Unit
   
   /**
     * clear progress value and description
     *
     * Calling of setValue(0) and setText("") should do the same. Stopped indicators must ignore this call.
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * update progress description
@@ -38,7 +38,7 @@ trait XStatusIndicator extends XInterface {
     * Initial value can be set during starting of the progress by calling {@link XStatusIndicator.start()} . Stopped indicators must ignore this call.
     * @param Text new value for progress description which should be shown now
     */
-  def setText(Text: String): Unit = js.native
+  def setText(Text: String): Unit
   
   /**
     * update progress value
@@ -46,7 +46,7 @@ trait XStatusIndicator extends XInterface {
     * Wrong values must be ignored and stopped indicators must ignore this call generally.
     * @param Value new value for progress which should be shown now Must fit the range [0..Range] which was set during {@link XStatusIndicator.start()} .
     */
-  def setValue(Value: Double): Unit = js.native
+  def setValue(Value: Double): Unit
   
   /**
     * initialize and start the progress
@@ -56,7 +56,7 @@ trait XStatusIndicator extends XInterface {
     * @param Text initial value for progress description for showing Value can be updated by calling {@link XStatusIndicator.setText()} .
     * @param Range means the maximum value of the progress which can be set by calling {@link XStatusIndicator.setValue()} .
     */
-  def start(Text: String, Range: Double): Unit = js.native
+  def start(Text: String, Range: Double): Unit
 }
 object XStatusIndicator {
   

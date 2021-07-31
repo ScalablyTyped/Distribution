@@ -2,22 +2,20 @@ package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPoliciesListResponse extends StObject {
   
-  var header: js.UndefOr[SchemaResponseHeader] = js.native
+  var header: js.UndefOr[SchemaResponseHeader] = js.undefined
   
   /**
     * Type of resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var policies: js.UndefOr[js.Array[SchemaPolicy]] = js.native
+  var policies: js.UndefOr[js.Array[SchemaPolicy]] = js.undefined
 }
 object SchemaPoliciesListResponse {
   

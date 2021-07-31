@@ -2,11 +2,12 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataCountWidget extends BaseMixin[DataCountWidget] {
+trait DataCountWidget
+  extends StObject
+     with BaseMixin[DataCountWidget] {
   
   def formatNumber(): Accessor[Double, String] = js.native
   def formatNumber(t: Accessor[Double, String]): DataCountWidget = js.native

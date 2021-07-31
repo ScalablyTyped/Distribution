@@ -13,7 +13,6 @@ import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textAreaMod {
@@ -21,31 +20,30 @@ object textAreaMod {
   @JSImport("grommet/components/TextArea", "TextArea")
   @js.native
   val TextArea: FC[
-    TextAreaProps with (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement])
+    TextAreaProps & (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement])
   ] = js.native
   
-  @js.native
   trait TextAreaProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var focusIndicator: js.UndefOr[Boolean] = js.native
+    var focusIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var resize: js.UndefOr[vertical | horizontal | Boolean] = js.native
+    var resize: js.UndefOr[vertical | horizontal | Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object TextAreaProps {
     

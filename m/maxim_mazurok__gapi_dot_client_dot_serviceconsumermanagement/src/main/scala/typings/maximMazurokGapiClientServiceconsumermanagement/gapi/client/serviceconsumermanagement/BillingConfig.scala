@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingConfig extends StObject {
   
   /** Name of the billing account. For example `billingAccounts/012345-567890-ABCDEF`. */
-  var billingAccount: js.UndefOr[String] = js.native
+  var billingAccount: js.UndefOr[String] = js.undefined
 }
 object BillingConfig {
   

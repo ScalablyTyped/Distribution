@@ -3,7 +3,6 @@ package typings.autobahn.mod
 import typings.when.When.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autobahn", "Session")
@@ -12,22 +11,17 @@ class Session protected () extends StObject {
   def this(transport: ITransport, defer: DeferFactory, challenge: OnChallengeHandler) = this()
   
   def call[TResult](procedure: String): Promise[TResult] = js.native
-  def call[TResult](
-    procedure: String,
-    args: js.UndefOr[scala.Nothing],
-    kwargs: js.UndefOr[scala.Nothing],
-    options: ICallOptions
-  ): Promise[TResult] = js.native
-  def call[TResult](procedure: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any): Promise[TResult] = js.native
-  def call[TResult](procedure: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Any): Promise[TResult] = js.native
-  def call[TResult](procedure: String, args: js.Any, kwargs: js.UndefOr[scala.Nothing], options: ICallOptions): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Any, kwargs: js.Any): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Any, kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
-  def call[TResult](procedure: String, args: js.Array[_]): Promise[TResult] = js.native
-  def call[TResult](procedure: String, args: js.Array[_], kwargs: js.UndefOr[scala.Nothing], options: ICallOptions): Promise[TResult] = js.native
-  def call[TResult](procedure: String, args: js.Array[_], kwargs: js.Any): Promise[TResult] = js.native
-  def call[TResult](procedure: String, args: js.Array[_], kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.Any, kwargs: Unit, options: ICallOptions): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.Array[js.Any]): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.Array[js.Any], kwargs: js.Any): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.Array[js.Any], kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.Array[js.Any], kwargs: Unit, options: ICallOptions): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: Unit, kwargs: js.Any): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: Unit, kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: Unit, kwargs: Unit, options: ICallOptions): Promise[TResult] = js.native
   
   var caller_disclose_me: Boolean = js.native
   
@@ -48,18 +42,13 @@ class Session protected () extends StObject {
   def prefix(prefix: String, uri: String): Unit = js.native
   
   def publish(topic: String): Promise[IPublication] = js.native
-  def publish(
-    topic: String,
-    args: js.UndefOr[scala.Nothing],
-    kwargs: js.UndefOr[scala.Nothing],
-    options: IPublishOptions
-  ): Promise[IPublication] = js.native
-  def publish(topic: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any): Promise[IPublication] = js.native
-  def publish(topic: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any, options: IPublishOptions): Promise[IPublication] = js.native
-  def publish(topic: String, args: js.Array[_]): Promise[IPublication] = js.native
-  def publish(topic: String, args: js.Array[_], kwargs: js.UndefOr[scala.Nothing], options: IPublishOptions): Promise[IPublication] = js.native
-  def publish(topic: String, args: js.Array[_], kwargs: js.Any): Promise[IPublication] = js.native
-  def publish(topic: String, args: js.Array[_], kwargs: js.Any, options: IPublishOptions): Promise[IPublication] = js.native
+  def publish(topic: String, args: js.Array[js.Any]): Promise[IPublication] = js.native
+  def publish(topic: String, args: js.Array[js.Any], kwargs: js.Any): Promise[IPublication] = js.native
+  def publish(topic: String, args: js.Array[js.Any], kwargs: js.Any, options: IPublishOptions): Promise[IPublication] = js.native
+  def publish(topic: String, args: js.Array[js.Any], kwargs: Unit, options: IPublishOptions): Promise[IPublication] = js.native
+  def publish(topic: String, args: Unit, kwargs: js.Any): Promise[IPublication] = js.native
+  def publish(topic: String, args: Unit, kwargs: js.Any, options: IPublishOptions): Promise[IPublication] = js.native
+  def publish(topic: String, args: Unit, kwargs: Unit, options: IPublishOptions): Promise[IPublication] = js.native
   
   var publisher_disclose_me: Boolean = js.native
   
@@ -77,7 +66,7 @@ class Session protected () extends StObject {
   
   var subscriptions: js.Array[js.Array[ISubscription]] = js.native
   
-  def unregister(registration: IRegistration): Promise[_] = js.native
+  def unregister(registration: IRegistration): Promise[js.Any] = js.native
   
-  def unsubscribe(subscription: ISubscription): Promise[_] = js.native
+  def unsubscribe(subscription: ISubscription): Promise[js.Any] = js.native
 }

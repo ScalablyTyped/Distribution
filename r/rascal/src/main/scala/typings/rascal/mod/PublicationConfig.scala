@@ -3,29 +3,27 @@ package typings.rascal.mod
 import typings.amqplib.propertiesMod.Options.Publish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicationConfig extends StObject {
   
-  var autoCreated: js.UndefOr[Boolean] = js.native
+  var autoCreated: js.UndefOr[Boolean] = js.undefined
   
-  var confirm: js.UndefOr[Boolean] = js.native
+  var confirm: js.UndefOr[Boolean] = js.undefined
   
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
-  var encryption: js.UndefOr[String] = js.native
+  var encryption: js.UndefOr[String] = js.undefined
   
-  var exchange: js.UndefOr[String] = js.native
+  var exchange: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[Publish] = js.native
+  var options: js.UndefOr[Publish] = js.undefined
   
-  var queue: js.UndefOr[String] = js.native
+  var queue: js.UndefOr[String] = js.undefined
   
-  var routingKey: js.UndefOr[String] = js.native
+  var routingKey: js.UndefOr[String] = js.undefined
   
-  var vhost: js.UndefOr[String] = js.native
+  var vhost: js.UndefOr[String] = js.undefined
 }
 object PublicationConfig {
   

@@ -3,13 +3,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single DML statement.
   */
-@js.native
 trait SchemaStatement extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaStatement extends StObject {
     * of the SQL statement parameters. See the definition of Type for more
     * information about SQL types.
     */
-  var paramTypes: js.UndefOr[StringDictionary[SchemaType]] = js.native
+  var paramTypes: js.UndefOr[StringDictionary[SchemaType]] = js.undefined
   
   /**
     * The DML string can contain parameter placeholders. A parameter
@@ -34,12 +32,12 @@ trait SchemaStatement extends StObject {
     * whose keys are parameter names, and whose values are the corresponding
     * parameter values.
     */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Required. The DML string.
     */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
 }
 object SchemaStatement {
   

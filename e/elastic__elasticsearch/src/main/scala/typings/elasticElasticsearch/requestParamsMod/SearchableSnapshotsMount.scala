@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchableSnapshotsMount[T] extends Generic {
+trait SearchableSnapshotsMount[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var repository: String = js.native
+  var repository: String
   
-  var snapshot: String = js.native
+  var snapshot: String
   
-  var wait_for_completion: js.UndefOr[Boolean] = js.native
+  var wait_for_completion: js.UndefOr[Boolean] = js.undefined
 }
 object SearchableSnapshotsMount {
   
@@ -27,7 +27,7 @@ object SearchableSnapshotsMount {
   }
   
   @scala.inline
-  implicit class SearchableSnapshotsMountMutableBuilder[Self <: SearchableSnapshotsMount[_], T] (val x: Self with SearchableSnapshotsMount[T]) extends AnyVal {
+  implicit class SearchableSnapshotsMountMutableBuilder[Self <: SearchableSnapshotsMount[?], T] (val x: Self & SearchableSnapshotsMount[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -10,9 +10,9 @@ TypeScript typings for Cloud Tool Results API v1beta3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.toolresults |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 34 |
 | # dependents       | 1 |
-| # downloads        | 146 |
+| # downloads        | 2363 |
 | # stars            | 0 |
 
 ## Links

@@ -3,15 +3,13 @@ package typings.authmosphere
 import typings.authmosphere.loggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenCacheConfigMod {
   
-  @js.native
   trait CacheConfig extends StObject {
     
-    var percentageLeft: Double = js.native
+    var percentageLeft: Double
   }
   object CacheConfig {
     
@@ -29,12 +27,11 @@ object tokenCacheConfigMod {
     }
   }
   
-  @js.native
   trait TokenCacheOptions extends StObject {
     
-    var cacheConfig: js.UndefOr[CacheConfig] = js.native
+    var cacheConfig: js.UndefOr[CacheConfig] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
   }
   object TokenCacheOptions {
     

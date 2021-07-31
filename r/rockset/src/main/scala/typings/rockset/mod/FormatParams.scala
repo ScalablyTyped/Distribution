@@ -2,18 +2,16 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatParams extends StObject {
   
-  var csv: js.UndefOr[CsvParams] = js.native
+  var csv: js.UndefOr[CsvParams] = js.undefined
   
   // source data is in json format
-  var json: js.UndefOr[Boolean] = js.native
+  var json: js.UndefOr[Boolean] = js.undefined
   
-  var xml: js.UndefOr[XmlParams] = js.native
+  var xml: js.UndefOr[XmlParams] = js.undefined
 }
 object FormatParams {
   

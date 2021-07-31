@@ -2,15 +2,13 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topojsonMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var `object`: String = js.native
+    var `object`: String
   }
   object Options {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CastColumnTypeOperation extends StObject {
   
   /**
     * Column name.
     */
-  var ColumnName: typings.awsSdk.quicksightMod.ColumnName = js.native
+  var ColumnName: typings.awsSdk.quicksightMod.ColumnName
   
   /**
     * When casting a column from string to datetime type, you can supply a string in a format supported by Amazon QuickSight to denote the source data format.
     */
-  var Format: js.UndefOr[TypeCastFormat] = js.native
+  var Format: js.UndefOr[TypeCastFormat] = js.undefined
   
   /**
     * New column data type.
     */
-  var NewColumnType: ColumnDataType = js.native
+  var NewColumnType: ColumnDataType
 }
 object CastColumnTypeOperation {
   

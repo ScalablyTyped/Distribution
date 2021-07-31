@@ -8,13 +8,15 @@ import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.ParsedCommandLine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
-  @JSImport("ts-loader/dist/config", "getConfigFile")
+  @JSImport("ts-loader/dist/config", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getConfigFile(
     compiler: Typeoftypescript,
     colors: Chalk,
@@ -23,37 +25,33 @@ object configMod {
     compilerCompatible: Boolean,
     log: Logger,
     compilerDetailsLogMessage: String
-  ): typings.tsLoader.anon.ConfigFile = js.native
+  ): typings.tsLoader.anon.ConfigFile = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigFile")(compiler.asInstanceOf[js.Any], colors.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], loaderOptions.asInstanceOf[js.Any], compilerCompatible.asInstanceOf[js.Any], log.asInstanceOf[js.Any], compilerDetailsLogMessage.asInstanceOf[js.Any])).asInstanceOf[typings.tsLoader.anon.ConfigFile]
   
-  @JSImport("ts-loader/dist/config", "getConfigParseResult")
-  @js.native
-  def getConfigParseResult(
-    compiler: Typeoftypescript,
-    configFile: ConfigFile,
-    basePath: String,
-    configFilePath: js.UndefOr[scala.Nothing],
-    enableProjectReferences: Boolean
-  ): ParsedCommandLine = js.native
-  @JSImport("ts-loader/dist/config", "getConfigParseResult")
-  @js.native
+  @scala.inline
   def getConfigParseResult(
     compiler: Typeoftypescript,
     configFile: ConfigFile,
     basePath: String,
     configFilePath: String,
     enableProjectReferences: Boolean
-  ): ParsedCommandLine = js.native
+  ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigParseResult")(compiler.asInstanceOf[js.Any], configFile.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any], enableProjectReferences.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
+  @scala.inline
+  def getConfigParseResult(
+    compiler: Typeoftypescript,
+    configFile: ConfigFile,
+    basePath: String,
+    configFilePath: Unit,
+    enableProjectReferences: Boolean
+  ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigParseResult")(compiler.asInstanceOf[js.Any], configFile.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any], enableProjectReferences.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
   
-  @JSImport("ts-loader/dist/config", "getParsedCommandLine")
-  @js.native
-  def getParsedCommandLine(compiler: Typeoftypescript, loaderOptions: LoaderOptions, configFilePath: String): js.UndefOr[ParsedCommandLine] = js.native
+  @scala.inline
+  def getParsedCommandLine(compiler: Typeoftypescript, loaderOptions: LoaderOptions, configFilePath: String): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLine")(compiler.asInstanceOf[js.Any], loaderOptions.asInstanceOf[js.Any], configFilePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
   
-  @js.native
   trait ConfigFile extends StObject {
     
-    var config: js.UndefOr[js.Any] = js.native
+    var config: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[Diagnostic] = js.native
+    var error: js.UndefOr[Diagnostic] = js.undefined
   }
   object ConfigFile {
     

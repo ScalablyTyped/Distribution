@@ -3,15 +3,15 @@ package typings.pubnub.mod
 import typings.pubnub.anon.Custom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MembersInputParameters extends GetObjectsParameters {
+trait MembersInputParameters
+  extends StObject
+     with GetObjectsParameters {
   
-  var spaceId: String = js.native
+  var spaceId: String
   
-  var users: js.Array[Custom] = js.native
+  var users: js.Array[Custom]
 }
 object MembersInputParameters {
   

@@ -4,41 +4,41 @@ import typings.chartist.anon.Y
 import typings.chartist.chartistStrings.bar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChartDrawBarData extends ChartDrawData {
+trait IChartDrawBarData
+  extends StObject
+     with ChartDrawData {
   
-  var axisX: IChartAxis = js.native
+  var axisX: IChartAxis
   
-  var axisY: IChartAxis = js.native
+  var axisY: IChartAxis
   
-  var chartRect: IChartRect = js.native
+  var chartRect: IChartRect
   
-  var element: IChartistSvg = js.native
+  var element: IChartistSvg
   
-  var group: IChartistSvg = js.native
+  var group: IChartistSvg
   
-  var index: Double = js.native
+  var index: Double
   
-  var meta: js.Any = js.native
+  var meta: js.Any
   
-  var series: js.Array[Double] = js.native
+  var series: js.Array[Double]
   
-  var seriesIndex: Double = js.native
+  var seriesIndex: Double
   
-  var `type`: bar = js.native
+  var `type`: bar
   
-  var value: Y = js.native
+  var value: Y
   
-  var x1: Double = js.native
+  var x1: Double
   
-  var x2: Double = js.native
+  var x2: Double
   
-  var y1: Double = js.native
+  var y1: Double
   
-  var y2: Double = js.native
+  var y2: Double
 }
 object IChartDrawBarData {
   
@@ -53,7 +53,6 @@ object IChartDrawBarData {
     meta: js.Any,
     series: js.Array[Double],
     seriesIndex: Double,
-    `type`: bar,
     value: Y,
     x1: Double,
     x2: Double,
@@ -61,7 +60,7 @@ object IChartDrawBarData {
     y2: Double
   ): IChartDrawBarData = {
     val __obj = js.Dynamic.literal(axisX = axisX.asInstanceOf[js.Any], axisY = axisY.asInstanceOf[js.Any], chartRect = chartRect.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], seriesIndex = seriesIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bar")
     __obj.asInstanceOf[IChartDrawBarData]
   }
   

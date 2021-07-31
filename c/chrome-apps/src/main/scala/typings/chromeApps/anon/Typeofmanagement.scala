@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.management.ExtensionInfo
 import typings.chromeApps.chrome.management.UninstallOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -45,7 +44,7 @@ trait Typeofmanagement extends StObject {
     * @param [callback]
     */
   def uninstallSelf(): Unit = js.native
-  def uninstallSelf(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+  def uninstallSelf(options: Unit, callback: js.Function0[Unit]): Unit = js.native
   def uninstallSelf(options: UninstallOptions): Unit = js.native
   def uninstallSelf(options: UninstallOptions, callback: js.Function0[Unit]): Unit = js.native
 }

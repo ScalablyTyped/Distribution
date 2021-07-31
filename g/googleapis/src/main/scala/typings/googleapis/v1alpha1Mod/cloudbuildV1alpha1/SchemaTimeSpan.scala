@@ -2,24 +2,22 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Start and end times for a build execution phase.
   */
-@js.native
 trait SchemaTimeSpan extends StObject {
   
   /**
     * End of time span.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Start of time span.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaTimeSpan {
   

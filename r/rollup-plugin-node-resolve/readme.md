@@ -10,9 +10,9 @@ Bundle third-party dependencies in node_modules
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-node-resolve |
 | Keywords           | rollup, rollup-plugin, es2015, npm, modules |
-| # releases         | 17 |
-| # dependents       | 1014 |
-| # downloads        | 26743381 |
+| # releases         | 16 |
+| # dependents       | 1074 |
+| # downloads        | 24528053 |
 | # stars            | 3 |
 
 ## Links

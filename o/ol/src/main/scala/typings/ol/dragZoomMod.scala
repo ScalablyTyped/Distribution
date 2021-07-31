@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.conditionMod.Condition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragZoomMod {
@@ -18,18 +17,17 @@ object dragZoomMod {
   trait DragZoom
     extends typings.ol.dragBoxMod.default
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var minArea: js.UndefOr[Double] = js.native
+    var minArea: js.UndefOr[Double] = js.undefined
     
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -3,7 +3,6 @@ package typings.parseColumns
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -42,26 +41,27 @@ object mod {
   })();
   ```
   */
-  @JSImport("parse-columns", JSImport.Namespace)
-  @js.native
-  def apply[ValuesType /* <: js.Any */](textColumns: String): js.Array[StringDictionary[ValuesType]] = js.native
-  @JSImport("parse-columns", JSImport.Namespace)
-  @js.native
-  def apply[ValuesType /* <: js.Any */](textColumns: String, options: Options[ValuesType]): js.Array[StringDictionary[ValuesType]] = js.native
+  @scala.inline
+  def apply[ValuesType /* <: js.Any */](textColumns: String): js.Array[StringDictionary[ValuesType]] = ^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any]).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
+  @scala.inline
+  def apply[ValuesType /* <: js.Any */](textColumns: String, options: Options[ValuesType]): js.Array[StringDictionary[ValuesType]] = (^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
   
+  @JSImport("parse-columns", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options[ValuesType /* <: js.Any */] extends StObject {
     
     /**
     		Headers to use instead of the existing ones.
     		*/
-    val headers: js.UndefOr[js.Array[String]] = js.native
+    val headers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		Separator to split columns on.
     		@default ' '
     		*/
-    val separator: js.UndefOr[String] = js.native
+    val separator: js.UndefOr[String] = js.undefined
     
     /**
     		Transform elements.
@@ -75,7 +75,7 @@ object mod {
           /* rowIndex */ Double, 
           ValuesType
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -86,7 +86,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ValuesType /* <: js.Any */] (val x: Self with Options[ValuesType]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ValuesType /* <: js.Any */] (val x: Self & Options[ValuesType]) extends AnyVal {
       
       @scala.inline
       def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

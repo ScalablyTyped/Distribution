@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -51,9 +50,8 @@ object TableCell {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell.create")
-  @js.native
-  def create(model: IModel): TableCell = js.native
+  @scala.inline
+  def create(model: IModel): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TableCell]
   
   /**
     * Creates and returns a new TableCell instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object TableCell {
     * of the parent TableRow element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell.createIn")
-  @js.native
-  def createIn(container: TableRow): TableCell = js.native
+  @scala.inline
+  def createIn(container: TableRow): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[TableCell]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell.structureTypeName")

@@ -2,15 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceRepoTrigger extends ReleaseTriggerBase {
+trait SourceRepoTrigger
+  extends StObject
+     with ReleaseTriggerBase {
   
-  var alias: String = js.native
+  var alias: String
   
-  var branchFilters: js.Array[String] = js.native
+  var branchFilters: js.Array[String]
 }
 object SourceRepoTrigger {
   

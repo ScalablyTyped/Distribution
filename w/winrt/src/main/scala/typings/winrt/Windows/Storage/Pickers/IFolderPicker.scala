@@ -6,27 +6,25 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFolderPicker extends StObject {
   
-  var commitButtonText: String = js.native
+  var commitButtonText: String
   
-  var continuationData: ValueSet = js.native
+  var continuationData: ValueSet
   
-  var fileTypeFilter: IVector[String] = js.native
+  var fileTypeFilter: IVector[String]
   
-  def pickFolderAndContinue(): Unit = js.native
+  def pickFolderAndContinue(): Unit
   
-  def pickSingleFolderAsync(): IAsyncOperation[StorageFolder] = js.native
+  def pickSingleFolderAsync(): IAsyncOperation[StorageFolder]
   
-  var settingsIdentifier: String = js.native
+  var settingsIdentifier: String
   
-  var suggestedStartLocation: PickerLocationId = js.native
+  var suggestedStartLocation: PickerLocationId
   
-  var viewMode: PickerViewMode = js.native
+  var viewMode: PickerViewMode
 }
 object IFolderPicker {
   

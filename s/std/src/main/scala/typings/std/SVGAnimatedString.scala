@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The SVGAnimatedString interface represents string attributes which can be animated from each SVG declaration. You need to create SVG attribute before doing anything else, everything should be declared inside this. */
-@js.native
 trait SVGAnimatedString extends StObject {
   
-  val animVal: java.lang.String = js.native
+  val animVal: java.lang.String
   
-  var baseVal: java.lang.String = js.native
+  var baseVal: java.lang.String
 }
 object SVGAnimatedString {
   

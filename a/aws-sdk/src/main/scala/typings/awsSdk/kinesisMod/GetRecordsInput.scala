@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecordsInput extends StObject {
   
   /**
     * The maximum number of records to return. Specify a value of up to 10,000. If you specify a value that is greater than 10,000, GetRecords throws InvalidArgumentException. The default value is 10,000.
     */
-  var Limit: js.UndefOr[GetRecordsInputLimit] = js.native
+  var Limit: js.UndefOr[GetRecordsInputLimit] = js.undefined
   
   /**
     * The position in the shard from which you want to start sequentially reading data records. A shard iterator specifies this position using the sequence number of a data record in the shard.
     */
-  var ShardIterator: typings.awsSdk.kinesisMod.ShardIterator = js.native
+  var ShardIterator: typings.awsSdk.kinesisMod.ShardIterator
 }
 object GetRecordsInput {
   

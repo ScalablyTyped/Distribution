@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlAuthor extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var name: String = js.native
+  var name: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object KmlAuthor {
   

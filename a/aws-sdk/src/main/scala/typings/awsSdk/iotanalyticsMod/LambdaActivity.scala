@@ -2,31 +2,29 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaActivity extends StObject {
   
   /**
     * The number of messages passed to the Lambda function for processing. The Lambda function must be able to process all of these messages within five minutes, which is the maximum timeout duration for Lambda functions.
     */
-  var batchSize: ActivityBatchSize = js.native
+  var batchSize: ActivityBatchSize
   
   /**
     * The name of the Lambda function that is run on the message.
     */
-  var lambdaName: LambdaName = js.native
+  var lambdaName: LambdaName
   
   /**
     * The name of the lambda activity.
     */
-  var name: ActivityName = js.native
+  var name: ActivityName
   
   /**
     * The next activity in the pipeline.
     */
-  var next: js.UndefOr[ActivityName] = js.native
+  var next: js.UndefOr[ActivityName] = js.undefined
 }
 object LambdaActivity {
   

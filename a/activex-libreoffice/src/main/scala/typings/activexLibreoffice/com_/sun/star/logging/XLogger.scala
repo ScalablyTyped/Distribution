@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,17 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * not form a hierarchy.
   * @since OOo 2.3
   */
-@js.native
 trait XLogger extends StObject {
   
   /**
     * specifies which log events are logged or ignored.
     * @see LogLevel
     */
-  var Level: Double = js.native
+  var Level: Double
   
   /** denotes the name of the logger. */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * adds the given handler to the list of handlers.
@@ -37,7 +35,7 @@ trait XLogger extends StObject {
     * set.
     * @param LogHandler the handler to add to the list of handlers. The call is ignored if this parameter is `NULL` .
     */
-  def addLogHandler(LogHandler: XLogHandler): Unit = js.native
+  def addLogHandler(LogHandler: XLogHandler): Unit
   
   /**
     * determines whether logger instance would produce any output for the given level.
@@ -49,14 +47,14 @@ trait XLogger extends StObject {
     * @see addLogHandler
     * @see removeLogHandler
     */
-  def isLoggable(Level: Double): Boolean = js.native
+  def isLoggable(Level: Double): Boolean
   
   /**
     * logs a given message
     * @param Level the log level of this message. If this level is smaller than the logger's {@link Level} attribute, then the call will be ignored.
     * @param Message the message to log
     */
-  def log(Level: Double, Message: String): Unit = js.native
+  def log(Level: Double, Message: String): Unit
   
   /**
     * logs a given message, detailing the source class and method at which the logged event occurred.
@@ -65,13 +63,13 @@ trait XLogger extends StObject {
     * @param SourceMethod the source class at which the logged event occurred.
     * @param Message the message to log
     */
-  def logp(Level: Double, SourceClass: String, SourceMethod: String, Message: String): Unit = js.native
+  def logp(Level: Double, SourceClass: String, SourceMethod: String, Message: String): Unit
   
   /**
     * removes the given handler from the list of handlers.
     * @param LogHandler the handler to remove from the list of handlers. The call is ignored if this parameter is `NULL` , or if the handler has not previousl
     */
-  def removeLogHandler(LogHandler: XLogHandler): Unit = js.native
+  def removeLogHandler(LogHandler: XLogHandler): Unit
 }
 object XLogger {
   

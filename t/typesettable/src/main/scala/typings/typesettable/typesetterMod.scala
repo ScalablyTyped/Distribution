@@ -11,7 +11,6 @@ import typings.typesettable.writerMod.IWriteOptions
 import typings.typesettable.writersMod.Writer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesetterMod {
@@ -19,7 +18,7 @@ object typesetterMod {
   @JSImport("typesettable/build/src/typesetter", "Typesetter")
   @js.native
   class Typesetter protected () extends StObject {
-    def this(context: ITypesetterContext[_]) = this()
+    def this(context: ITypesetterContext[js.Any]) = this()
     
     /**
       * Clears the `Measurer`'s CacheMeasurer.
@@ -41,7 +40,7 @@ object typesetterMod {
       * Delegates to `Writer.write` using the internal `ITypesetterContext`.
       */
     def write(text: String, width: Double, height: Double): Unit = js.native
-    def write(text: String, width: Double, height: Double, options: js.UndefOr[scala.Nothing], into: js.Any): Unit = js.native
+    def write(text: String, width: Double, height: Double, options: Unit, into: js.Any): Unit = js.native
     def write(text: String, width: Double, height: Double, options: IWriteOptions): Unit = js.native
     def write(text: String, width: Double, height: Double, options: IWriteOptions, into: js.Any): Unit = js.native
     
@@ -50,43 +49,35 @@ object typesetterMod {
   /* static members */
   object Typesetter {
     
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
+    @JSImport("typesettable/build/src/typesetter", "Typesetter")
     @js.native
-    def canvas(ctx: CanvasRenderingContext2D): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
-    @js.native
-    def canvas(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
-    @js.native
-    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
-    @js.native
-    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): Typesetter = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement, className: String): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
-    @js.native
-    def html(element: HTMLElement, className: String, addTitle: Boolean): Typesetter = js.native
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D): Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any]).asInstanceOf[Typesetter]
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
+    @scala.inline
+    def canvas(ctx: CanvasRenderingContext2D, lineHeight: Unit, style: ICanvasFontStyle): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(ctx.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
     
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement, className: String): Typesetter = js.native
-    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
-    @js.native
-    def svg(element: SVGElement, className: String, addTitleElement: Boolean): Typesetter = js.native
+    @scala.inline
+    def html(element: HTMLElement): Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any]).asInstanceOf[Typesetter]
+    @scala.inline
+    def html(element: HTMLElement, className: String): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
+    @scala.inline
+    def html(element: HTMLElement, className: String, addTitle: Boolean): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
+    @scala.inline
+    def html(element: HTMLElement, className: Unit, addTitle: Boolean): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitle.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
+    
+    @scala.inline
+    def svg(element: SVGElement): Typesetter = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any]).asInstanceOf[Typesetter]
+    @scala.inline
+    def svg(element: SVGElement, className: String): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
+    @scala.inline
+    def svg(element: SVGElement, className: String, addTitleElement: Boolean): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
+    @scala.inline
+    def svg(element: SVGElement, className: Unit, addTitleElement: Boolean): Typesetter = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addTitleElement.asInstanceOf[js.Any])).asInstanceOf[Typesetter]
   }
 }

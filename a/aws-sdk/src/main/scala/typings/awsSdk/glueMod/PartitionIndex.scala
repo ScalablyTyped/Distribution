@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionIndex extends StObject {
   
   /**
     * The name of the partition index.
     */
-  var IndexName: NameString = js.native
+  var IndexName: NameString
   
   /**
     * The keys for the partition index.
     */
-  var Keys: KeyList = js.native
+  var Keys: KeyList
 }
 object PartitionIndex {
   

@@ -4,26 +4,24 @@ import typings.azdata.anon.Dark
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentWithIcon extends StObject {
   
   /**
     * @deprecated This will be moved to `ComponentWithIconProperties`
     */
-  var iconHeight: js.UndefOr[Double | String] = js.native
+  var iconHeight: js.UndefOr[Double | String] = js.undefined
   
   /**
     * @deprecated This will be moved to `ComponentWithIconProperties`
     */
-  var iconPath: js.UndefOr[String | Uri | Dark] = js.native
+  var iconPath: js.UndefOr[String | Uri | Dark] = js.undefined
   
   /**
     * @deprecated This will be moved to `ComponentWithIconProperties`
     */
-  var iconWidth: js.UndefOr[Double | String] = js.native
+  var iconWidth: js.UndefOr[Double | String] = js.undefined
 }
 object ComponentWithIcon {
   

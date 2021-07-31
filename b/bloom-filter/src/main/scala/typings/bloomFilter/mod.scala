@@ -3,65 +3,105 @@ package typings.bloomFilter
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bloom-filter", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Filter {
+  class ^ protected ()
+    extends StObject
+       with Filter {
     def this(options: FilterOptions) = this()
-  }
-  
-  @JSImport("bloom-filter", "MurmurHash3")
-  @js.native
-  def MurmurHash3(seed: Double, data: Buffer): Double = js.native
-  
-  /* static member */
-  @JSImport("bloom-filter", "create")
-  @js.native
-  def create(elements: Double, falsePositiveRate: Double): Filter = js.native
-  @JSImport("bloom-filter", "create")
-  @js.native
-  def create(elements: Double, falsePositiveRate: Double, nTweak: js.UndefOr[scala.Nothing], nFlags: Double): Filter = js.native
-  @JSImport("bloom-filter", "create")
-  @js.native
-  def create(elements: Double, falsePositiveRate: Double, nTweak: Double): Filter = js.native
-  @JSImport("bloom-filter", "create")
-  @js.native
-  def create(elements: Double, falsePositiveRate: Double, nTweak: Double, nFlags: Double): Filter = js.native
-  
-  @js.native
-  trait Filter extends StObject {
     
+    /* CompleteClass */
     var BLOOM_UPDATE_ALL: Double = js.native
     
+    /* CompleteClass */
     var BLOOM_UPDATE_NONE: Double = js.native
     
+    /* CompleteClass */
     var BLOOM_UPDATE_P2PUBKEY_ONLY: Double = js.native
     
+    /* CompleteClass */
     var LN2: Double = js.native
     
+    /* CompleteClass */
     var LN2SQUARED: Double = js.native
     
+    /* CompleteClass */
     var MAX_BLOOM_FILTER_SIZE: Double = js.native
     
+    /* CompleteClass */
     var MAX_HASH_FUNCS: Double = js.native
     
+    /* CompleteClass */
     var MIN_HASH_FUNCS: Double = js.native
     
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
-    def contains(data: Buffer): Boolean = js.native
+    /* CompleteClass */
+    override def contains(data: Buffer): Boolean = js.native
     
-    def hash(nHashNum: Double, vDataToHash: Buffer): Double = js.native
+    /* CompleteClass */
+    override def hash(nHashNum: Double, vDataToHash: Buffer): Double = js.native
     
-    def insert(data: Buffer): Unit = js.native
+    /* CompleteClass */
+    override def insert(data: Buffer): Unit = js.native
     
-    def inspect(): String = js.native
+    /* CompleteClass */
+    override def inspect(): String = js.native
     
-    def toObject(): FilterOptions = js.native
+    /* CompleteClass */
+    override def toObject(): FilterOptions = js.native
+  }
+  @JSImport("bloom-filter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def MurmurHash3(seed: Double, data: Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MurmurHash3")(seed.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /* static member */
+  @scala.inline
+  def create(elements: Double, falsePositiveRate: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  @scala.inline
+  def create(elements: Double, falsePositiveRate: Double, nTweak: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  @scala.inline
+  def create(elements: Double, falsePositiveRate: Double, nTweak: Double, nFlags: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any], nFlags.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  @scala.inline
+  def create(elements: Double, falsePositiveRate: Double, nTweak: Unit, nFlags: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any], nFlags.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  
+  trait Filter extends StObject {
+    
+    var BLOOM_UPDATE_ALL: Double
+    
+    var BLOOM_UPDATE_NONE: Double
+    
+    var BLOOM_UPDATE_P2PUBKEY_ONLY: Double
+    
+    var LN2: Double
+    
+    var LN2SQUARED: Double
+    
+    var MAX_BLOOM_FILTER_SIZE: Double
+    
+    var MAX_HASH_FUNCS: Double
+    
+    var MIN_HASH_FUNCS: Double
+    
+    def clear(): Unit
+    
+    def contains(data: Buffer): Boolean
+    
+    def hash(nHashNum: Double, vDataToHash: Buffer): Double
+    
+    def insert(data: Buffer): Unit
+    
+    def inspect(): String
+    
+    def toObject(): FilterOptions
   }
   object Filter {
     
@@ -133,16 +173,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FilterOptions extends StObject {
     
-    var nFlags: js.UndefOr[Double] = js.native
+    var nFlags: js.UndefOr[Double] = js.undefined
     
-    var nHashFuncs: Double = js.native
+    var nHashFuncs: Double
     
-    var nTweak: js.UndefOr[Double] = js.native
+    var nTweak: js.UndefOr[Double] = js.undefined
     
-    var vData: Buffer = js.native
+    var vData: Buffer
   }
   object FilterOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRuleVersionResult extends StObject {
   
   /**
     * The new rule version that was created.
     */
-  var rule: js.UndefOr[Rule] = js.native
+  var rule: js.UndefOr[Rule] = js.undefined
 }
 object UpdateRuleVersionResult {
   

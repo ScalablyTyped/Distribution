@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetImportJobsResponse extends StObject {
   
   /**
     * The list of dataset import jobs.
     */
-  var datasetImportJobs: js.UndefOr[DatasetImportJobs] = js.native
+  var datasetImportJobs: js.UndefOr[DatasetImportJobs] = js.undefined
   
   /**
     * A token for getting the next set of dataset import jobs (if they exist).
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDatasetImportJobsResponse {
   

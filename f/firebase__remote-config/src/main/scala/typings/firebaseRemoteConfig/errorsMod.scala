@@ -17,18 +17,20 @@ import typings.firebaseUtil.mod.ErrorFactory
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
+  
+  @JSImport("@firebase/remote-config/dist/src/errors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/remote-config/dist/src/errors", "ERROR_FACTORY")
   @js.native
   val ERROR_FACTORY: ErrorFactory[ErrorCode, ErrorParams] = js.native
   
-  @JSImport("@firebase/remote-config/dist/src/errors", "hasErrorCode")
-  @js.native
-  def hasErrorCode(e: Error, errorCode: ErrorCode): Boolean = js.native
+  @scala.inline
+  def hasErrorCode(e: Error, errorCode: ErrorCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasErrorCode")(e.asInstanceOf[js.Any], errorCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`registration-window`

@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var `type`: YieldExpression = js.native
+  var `type`: YieldExpression
 }
 object `2` {
   
   @scala.inline
-  def apply(`type`: YieldExpression): `2` = {
+  def apply(): `2` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[`2`]
   }
   

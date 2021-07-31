@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRegistryResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the registry being deleted.
     */
-  var RegistryArn: js.UndefOr[GlueResourceArn] = js.native
+  var RegistryArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the registry being deleted.
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The status of the registry. A successful operation will return the Deleting status.
     */
-  var Status: js.UndefOr[RegistryStatus] = js.native
+  var Status: js.UndefOr[RegistryStatus] = js.undefined
 }
 object DeleteRegistryResponse {
   

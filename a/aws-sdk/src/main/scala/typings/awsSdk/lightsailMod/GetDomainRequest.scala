@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainRequest extends StObject {
   
   /**
     * The domain name for which your want to return information about.
     */
-  var domainName: DomainName = js.native
+  var domainName: DomainName
 }
 object GetDomainRequest {
   

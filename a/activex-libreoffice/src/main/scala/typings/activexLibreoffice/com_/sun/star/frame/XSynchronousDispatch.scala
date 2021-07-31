@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatch
   * @since OOo 2.0
   */
-@js.native
-trait XSynchronousDispatch extends XInterface {
+trait XSynchronousDispatch
+  extends StObject
+     with XInterface {
   
   /**
     * dispatches a URL synchronously and offers a return values
@@ -26,7 +26,7 @@ trait XSynchronousDispatch extends XInterface {
     * @param URL full parsed URL which describe the feature which should be dispatched (executed)
     * @param Arguments optional arguments for this request They depend on the real implementation of the dispatch object.
     */
-  def dispatchWithReturnValue(URL: URL, Arguments: SeqEquiv[PropertyValue]): js.Any = js.native
+  def dispatchWithReturnValue(URL: URL, Arguments: SeqEquiv[PropertyValue]): js.Any
 }
 object XSynchronousDispatch {
   

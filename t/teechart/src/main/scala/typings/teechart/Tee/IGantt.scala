@@ -2,11 +2,12 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGantt extends ISeriesNoBounds {
+trait IGantt
+  extends StObject
+     with ISeriesNoBounds {
   
   def add(index: Double, label: String, start: Double, end: Double): Unit = js.native
   

@@ -14,7 +14,6 @@ import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiGatewayAuthorizerMod {
@@ -33,35 +32,33 @@ object apiGatewayAuthorizerMod {
       httpMethod: String,
       methodArn: String,
       path: String,
-      requestContext: APIGatewayEventRequestContextWithAuthorizer[js.UndefOr[scala.Nothing]],
-      resource: String,
-      `type`: REQUEST
+      requestContext: APIGatewayEventRequestContextWithAuthorizer[Unit],
+      resource: String
     ): typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayRequestAuthorizerEvent = {
-      val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], headers = null, multiValueHeaders = null, multiValueQueryStringParameters = null, pathParameters = null, queryStringParameters = null, stageVariables = null)
+      __obj.updateDynamic("type")("REQUEST")
       __obj.asInstanceOf[typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayRequestAuthorizerEvent]
     }
     
     @scala.inline
-    def APIGatewayTokenAuthorizerEvent(authorizationToken: String, methodArn: String, `type`: TOKEN): typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayTokenAuthorizerEvent = {
+    def APIGatewayTokenAuthorizerEvent(authorizationToken: String, methodArn: String): typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayTokenAuthorizerEvent = {
       val __obj = js.Dynamic.literal(authorizationToken = authorizationToken.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("TOKEN")
       __obj.asInstanceOf[typings.awsLambda.apiGatewayAuthorizerMod.APIGatewayTokenAuthorizerEvent]
     }
   }
   
   type APIGatewayAuthorizerHandler = Handler[APIGatewayAuthorizerEvent, APIGatewayAuthorizerResult]
   
-  @js.native
   trait APIGatewayAuthorizerResult extends StObject {
     
-    var context: js.UndefOr[APIGatewayAuthorizerResultContext | Null] = js.native
+    var context: js.UndefOr[APIGatewayAuthorizerResultContext | Null] = js.undefined
     
-    var policyDocument: PolicyDocument = js.native
+    var policyDocument: PolicyDocument
     
-    var principalId: String = js.native
+    var principalId: String
     
-    var usageIdentifierKey: js.UndefOr[String | Null] = js.native
+    var usageIdentifierKey: js.UndefOr[String | Null] = js.undefined
   }
   object APIGatewayAuthorizerResult {
     
@@ -107,16 +104,15 @@ object apiGatewayAuthorizerMod {
     APIGatewayAuthorizerWithContextResult[TAuthorizerContext]
   ]
   
-  @js.native
   trait APIGatewayAuthorizerWithContextResult[TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */] extends StObject {
     
-    var context: TAuthorizerContext = js.native
+    var context: TAuthorizerContext
     
-    var policyDocument: PolicyDocument = js.native
+    var policyDocument: PolicyDocument
     
-    var principalId: String = js.native
+    var principalId: String
     
-    var usageIdentifierKey: js.UndefOr[String | Null] = js.native
+    var usageIdentifierKey: js.UndefOr[String | Null] = js.undefined
   }
   object APIGatewayAuthorizerWithContextResult {
     
@@ -127,7 +123,7 @@ object apiGatewayAuthorizerMod {
     }
     
     @scala.inline
-    implicit class APIGatewayAuthorizerWithContextResultMutableBuilder[Self <: APIGatewayAuthorizerWithContextResult[_], TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */] (val x: Self with APIGatewayAuthorizerWithContextResult[TAuthorizerContext]) extends AnyVal {
+    implicit class APIGatewayAuthorizerWithContextResultMutableBuilder[Self <: APIGatewayAuthorizerWithContextResult[?], TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */] (val x: Self & APIGatewayAuthorizerWithContextResult[TAuthorizerContext]) extends AnyVal {
       
       @scala.inline
       def setContext(value: TAuthorizerContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -149,32 +145,33 @@ object apiGatewayAuthorizerMod {
     }
   }
   
-  @js.native
-  trait APIGatewayRequestAuthorizerEvent extends APIGatewayAuthorizerEvent {
+  trait APIGatewayRequestAuthorizerEvent
+    extends StObject
+       with APIGatewayAuthorizerEvent {
     
-    var headers: StringDictionary[String] | Null = js.native
+    var headers: StringDictionary[String] | Null
     
-    var httpMethod: String = js.native
+    var httpMethod: String
     
-    var methodArn: String = js.native
+    var methodArn: String
     
-    var multiValueHeaders: StringDictionary[js.Array[String]] | Null = js.native
+    var multiValueHeaders: StringDictionary[js.Array[String]] | Null
     
-    var multiValueQueryStringParameters: StringDictionary[js.Array[String]] | Null = js.native
+    var multiValueQueryStringParameters: StringDictionary[js.Array[String]] | Null
     
-    var path: String = js.native
+    var path: String
     
-    var pathParameters: StringDictionary[String] | Null = js.native
+    var pathParameters: StringDictionary[String] | Null
     
-    var queryStringParameters: StringDictionary[String] | Null = js.native
+    var queryStringParameters: StringDictionary[String] | Null
     
-    var requestContext: APIGatewayEventRequestContextWithAuthorizer[js.UndefOr[scala.Nothing]] = js.native
+    var requestContext: APIGatewayEventRequestContextWithAuthorizer[Unit]
     
-    var resource: String = js.native
+    var resource: String
     
-    var stageVariables: StringDictionary[String] | Null = js.native
+    var stageVariables: StringDictionary[String] | Null
     
-    var `type`: REQUEST = js.native
+    var `type`: REQUEST
   }
   object APIGatewayRequestAuthorizerEvent {
     
@@ -183,12 +180,11 @@ object apiGatewayAuthorizerMod {
       httpMethod: String,
       methodArn: String,
       path: String,
-      requestContext: APIGatewayEventRequestContextWithAuthorizer[js.UndefOr[scala.Nothing]],
-      resource: String,
-      `type`: REQUEST
+      requestContext: APIGatewayEventRequestContextWithAuthorizer[Unit],
+      resource: String
     ): APIGatewayRequestAuthorizerEvent = {
-      val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], headers = null, multiValueHeaders = null, multiValueQueryStringParameters = null, pathParameters = null, queryStringParameters = null, stageVariables = null)
+      __obj.updateDynamic("type")("REQUEST")
       __obj.asInstanceOf[APIGatewayRequestAuthorizerEvent]
     }
     
@@ -235,7 +231,7 @@ object apiGatewayAuthorizerMod {
       def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
       
       @scala.inline
-      def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
+      def setRequestContext(value: APIGatewayEventRequestContextWithAuthorizer[Unit]): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
@@ -258,21 +254,22 @@ object apiGatewayAuthorizerMod {
     APIGatewayAuthorizerWithContextResult[TAuthorizerContext]
   ]
   
-  @js.native
-  trait APIGatewayTokenAuthorizerEvent extends APIGatewayAuthorizerEvent {
+  trait APIGatewayTokenAuthorizerEvent
+    extends StObject
+       with APIGatewayAuthorizerEvent {
     
-    var authorizationToken: String = js.native
+    var authorizationToken: String
     
-    var methodArn: String = js.native
+    var methodArn: String
     
-    var `type`: TOKEN = js.native
+    var `type`: TOKEN
   }
   object APIGatewayTokenAuthorizerEvent {
     
     @scala.inline
-    def apply(authorizationToken: String, methodArn: String, `type`: TOKEN): APIGatewayTokenAuthorizerEvent = {
+    def apply(authorizationToken: String, methodArn: String): APIGatewayTokenAuthorizerEvent = {
       val __obj = js.Dynamic.literal(authorizationToken = authorizationToken.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("TOKEN")
       __obj.asInstanceOf[APIGatewayTokenAuthorizerEvent]
     }
     
@@ -301,14 +298,13 @@ object apiGatewayAuthorizerMod {
   
   type AuthResponseContext = APIGatewayAuthorizerResultContext
   
-  @js.native
   trait BaseStatement extends StObject {
     
-    var Condition: js.UndefOr[ConditionBlock] = js.native
+    var Condition: js.UndefOr[ConditionBlock] = js.undefined
     
-    var Effect: String = js.native
+    var Effect: String
     
-    var Sid: js.UndefOr[String] = js.native
+    var Sid: js.UndefOr[String] = js.undefined
   }
   object BaseStatement {
     
@@ -344,40 +340,39 @@ object apiGatewayAuthorizerMod {
   
   type CustomAuthorizerCallback = APIGatewayAuthorizerCallback
   
-  @js.native
   trait CustomAuthorizerEvent extends StObject {
     
-    var apiId: js.UndefOr[String] = js.native
+    var apiId: js.UndefOr[String] = js.undefined
     
-    var authorizationToken: js.UndefOr[String] = js.native
+    var authorizationToken: js.UndefOr[String] = js.undefined
     
-    var domainName: js.UndefOr[String] = js.native
+    var domainName: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var httpMethod: js.UndefOr[String] = js.native
+    var httpMethod: js.UndefOr[String] = js.undefined
     
-    var methodArn: String = js.native
+    var methodArn: String
     
-    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
-    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]] | Null] = js.native
+    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]] | Null] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pathParameters: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var pathParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
-    var queryStringParameters: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var queryStringParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
     var requestContext: js.UndefOr[
         APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]
-      ] = js.native
+      ] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var stageVariables: js.UndefOr[StringDictionary[String]] = js.native
+    var stageVariables: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CustomAuthorizerEvent {
     
@@ -490,12 +485,11 @@ object apiGatewayAuthorizerMod {
   
   type CustomAuthorizerResult = APIGatewayAuthorizerResult
   
-  @js.native
   trait MaybeStatementPrincipal extends StObject {
     
-    var NotPrincipal: js.UndefOr[PrincipalValue] = js.native
+    var NotPrincipal: js.UndefOr[PrincipalValue] = js.undefined
     
-    var Principal: js.UndefOr[PrincipalValue] = js.native
+    var Principal: js.UndefOr[PrincipalValue] = js.undefined
   }
   object MaybeStatementPrincipal {
     
@@ -528,12 +522,11 @@ object apiGatewayAuthorizerMod {
     }
   }
   
-  @js.native
   trait MaybeStatementResource extends StObject {
     
-    var NotResource: js.UndefOr[String | js.Array[String]] = js.native
+    var NotResource: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var Resource: js.UndefOr[String | js.Array[String]] = js.native
+    var Resource: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object MaybeStatementResource {
     
@@ -566,14 +559,13 @@ object apiGatewayAuthorizerMod {
     }
   }
   
-  @js.native
   trait PolicyDocument extends StObject {
     
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
-    var Statement: js.Array[typings.awsLambda.apiGatewayAuthorizerMod.Statement] = js.native
+    var Statement: js.Array[typings.awsLambda.apiGatewayAuthorizerMod.Statement]
     
-    var Version: String = js.native
+    var Version: String
   }
   object PolicyDocument {
     
@@ -605,7 +597,7 @@ object apiGatewayAuthorizerMod {
   
   type PrincipalValue = (StringDictionary[String | js.Array[String]]) | String | js.Array[String]
   
-  type Statement = BaseStatement with StatementAction with (StatementResource | StatementPrincipal)
+  type Statement = BaseStatement & StatementAction & (StatementResource | StatementPrincipal)
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsLambda.anon.`0`
@@ -627,7 +619,7 @@ object apiGatewayAuthorizerMod {
     }
   }
   
-  type StatementPrincipal = MaybeStatementResource with (Principal | NotPrincipal)
+  type StatementPrincipal = MaybeStatementResource & (Principal | NotPrincipal)
   
-  type StatementResource = MaybeStatementPrincipal with (Resource | NotResource)
+  type StatementResource = MaybeStatementPrincipal & (Resource | NotResource)
 }

@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatRenderAttachmentsOptions extends StObject {
   
-  var attachmentLayout: js.UndefOr[String] = js.native
+  var attachmentLayout: js.UndefOr[String] = js.undefined
   
-  var attachments: js.UndefOr[ChatRenderAttachmentsOptionsAttachments] = js.native
+  var attachments: js.UndefOr[ChatRenderAttachmentsOptionsAttachments] = js.undefined
 }
 object ChatRenderAttachmentsOptions {
   

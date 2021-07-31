@@ -7,37 +7,33 @@ import typings.firebaseInstallations.installationEntryMod.RegisteredInstallation
 import typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idbManagerMod {
   
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", "clear")
+  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", JSImport.Namespace)
   @js.native
-  def clear(): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", "get")
-  @js.native
-  def get(appConfig: AppConfig): js.Promise[js.UndefOr[InstallationEntry]] = js.native
+  @scala.inline
+  def clear(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", "remove")
-  @js.native
-  def remove(appConfig: AppConfig): js.Promise[Unit] = js.native
+  @scala.inline
+  def get(appConfig: AppConfig): js.Promise[js.UndefOr[InstallationEntry]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(appConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[InstallationEntry]]]
   
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", "set")
-  @js.native
-  def set(appConfig: AppConfig, value: InProgressInstallationEntry): js.Promise[InProgressInstallationEntry] = js.native
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", "set")
-  @js.native
-  def set(appConfig: AppConfig, value: RegisteredInstallationEntry): js.Promise[RegisteredInstallationEntry] = js.native
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", "set")
-  @js.native
-  def set(appConfig: AppConfig, value: UnregisteredInstallationEntry): js.Promise[UnregisteredInstallationEntry] = js.native
+  @scala.inline
+  def remove(appConfig: AppConfig): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(appConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/installations/dist/src/helpers/idb-manager", "update")
-  @js.native
+  @scala.inline
+  def set(appConfig: AppConfig, value: InProgressInstallationEntry): js.Promise[InProgressInstallationEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(appConfig.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InProgressInstallationEntry]]
+  @scala.inline
+  def set(appConfig: AppConfig, value: RegisteredInstallationEntry): js.Promise[RegisteredInstallationEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(appConfig.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RegisteredInstallationEntry]]
+  @scala.inline
+  def set(appConfig: AppConfig, value: UnregisteredInstallationEntry): js.Promise[UnregisteredInstallationEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(appConfig.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UnregisteredInstallationEntry]]
+  
+  @scala.inline
   def update[ValueType /* <: js.UndefOr[InstallationEntry] */](
     appConfig: AppConfig,
     updateFn: js.Function1[/* previousValue */ js.UndefOr[InstallationEntry], ValueType]
-  ): js.Promise[ValueType] = js.native
+  ): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(appConfig.asInstanceOf[js.Any], updateFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
 }

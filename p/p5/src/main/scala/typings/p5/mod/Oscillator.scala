@@ -3,7 +3,6 @@ package typings.p5.mod
 import typings.std.AudioParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,9 +20,9 @@ trait Oscillator extends StObject {
   def add(number: Double): Oscillator = js.native
   
   def amp(vol: js.Object): AudioParam = js.native
-  def amp(vol: js.Object, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def amp(vol: js.Object, rampTime: Double): AudioParam = js.native
   def amp(vol: js.Object, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def amp(vol: js.Object, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
   /**
     *   Set the amplitude between 0 and 1.0. Or, pass in
     *   an object such as an oscillator to modulate
@@ -39,9 +38,9 @@ trait Oscillator extends StObject {
     *   oscillator's gain/amplitude/volume)
     */
   def amp(vol: Double): AudioParam = js.native
-  def amp(vol: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def amp(vol: Double, rampTime: Double): AudioParam = js.native
   def amp(vol: Double, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def amp(vol: Double, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
   
   /**
     *   Connect to a p5.sound / Web Audio object.
@@ -55,9 +54,9 @@ trait Oscillator extends StObject {
   def disconnect(): Unit = js.native
   
   def freq(Frequency: js.Object): AudioParam = js.native
-  def freq(Frequency: js.Object, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def freq(Frequency: js.Object, rampTime: Double): AudioParam = js.native
   def freq(Frequency: js.Object, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def freq(Frequency: js.Object, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
   /**
     *   Set frequency of an oscillator to a value. Or,
     *   pass in an object such as an oscillator to
@@ -72,9 +71,9 @@ trait Oscillator extends StObject {
     *   oscillator's frequency
     */
   def freq(Frequency: Double): AudioParam = js.native
-  def freq(Frequency: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def freq(Frequency: Double, rampTime: Double): AudioParam = js.native
   def freq(Frequency: Double, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def freq(Frequency: Double, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
   
   /**
     *   Multiply the p5.Oscillator's output amplitude by a
@@ -133,9 +132,9 @@ trait Oscillator extends StObject {
     *   @param [frequency] frequency in Hz.
     */
   def start(): Unit = js.native
-  def start(time: js.UndefOr[scala.Nothing], frequency: Double): Unit = js.native
   def start(time: Double): Unit = js.native
   def start(time: Double, frequency: Double): Unit = js.native
+  def start(time: Unit, frequency: Double): Unit = js.native
   
   /**
     *   Stop an oscillator. Accepts an optional parameter

@@ -3,28 +3,26 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateCredentials` operation. */
-@js.native
 trait UpdateCredentialsParams extends StObject {
   
   /** Object containing details of the stored credentials. Obtain credentials for your source from the administrator of the source. */
-  var credential_details: js.UndefOr[CredentialDetails] = js.native
+  var credential_details: js.UndefOr[CredentialDetails] = js.undefined
   
   /** The unique identifier for a set of source credentials. */
-  var credential_id: String = js.native
+  var credential_id: String
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The source that this credentials object connects to. -  `box` indicates the credentials are used to connect an instance of Enterprise Box. -  `salesforce` indicates the credentials are used to connect to Salesforce. -  `sharepoint` indicates the credentials are used to connect to Microsoft SharePoint Online. -  `web_crawl` indicates the credentials are used to perform a web crawl. =  `cloud_object_storage` indicates the credentials are used to connect to an IBM Cloud Object Store. */
-  var source_type: js.UndefOr[SourceType | String] = js.native
+  var source_type: js.UndefOr[SourceType | String] = js.undefined
 }
 object UpdateCredentialsParams {
   

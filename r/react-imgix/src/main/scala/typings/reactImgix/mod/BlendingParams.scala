@@ -2,31 +2,29 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlendingParams extends StObject {
   
-  var blend: js.UndefOr[ImgixParamType] = js.native
+  var blend: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-align`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-align`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-alpha`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-alpha`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-crop`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-crop`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-fit`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-fit`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-mode`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-mode`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-pad`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-pad`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-size`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-size`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-x`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-x`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `blend-y`: js.UndefOr[ImgixParamType] = js.native
+  var `blend-y`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object BlendingParams {
   

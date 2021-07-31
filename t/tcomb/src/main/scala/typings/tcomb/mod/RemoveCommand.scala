@@ -2,14 +2,14 @@ package typings.tcomb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoveCommand extends Command {
+trait RemoveCommand
+  extends StObject
+     with Command {
   
   @JSName("$remove")
-  var $remove: js.Array[java.lang.String] = js.native
+  var $remove: js.Array[java.lang.String]
 }
 object RemoveCommand {
   

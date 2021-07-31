@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.shapesMod.ContextMenuSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9` extends StObject {
   
-  var newVal: js.UndefOr[ContextMenuSettings] = js.native
+  var newVal: js.UndefOr[ContextMenuSettings] = js.undefined
   
-  var oldVal: js.UndefOr[ContextMenuSettings] = js.native
+  var oldVal: js.UndefOr[ContextMenuSettings] = js.undefined
 }
 object `9` {
   

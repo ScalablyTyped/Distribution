@@ -3,25 +3,24 @@ package typings.arangodb
 import typings.arangodb.Foxx.SessionTransport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod {
   
-  @JSImport("@arangodb/foxx/sessions/transports/header", JSImport.Namespace)
-  @js.native
-  def apply(): SessionTransport = js.native
-  @JSImport("@arangodb/foxx/sessions/transports/header", JSImport.Namespace)
-  @js.native
-  def apply(name: String): SessionTransport = js.native
-  @JSImport("@arangodb/foxx/sessions/transports/header", JSImport.Namespace)
-  @js.native
-  def apply(options: HeaderTransportOptions): SessionTransport = js.native
+  @scala.inline
+  def apply(): SessionTransport = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SessionTransport]
+  @scala.inline
+  def apply(name: String): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
+  @scala.inline
+  def apply(options: HeaderTransportOptions): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
   
+  @JSImport("@arangodb/foxx/sessions/transports/header", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait HeaderTransportOptions extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object HeaderTransportOptions {
     

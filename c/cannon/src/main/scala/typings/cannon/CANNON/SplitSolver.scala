@@ -2,13 +2,13 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SplitSolver extends Solver {
+trait SplitSolver
+  extends StObject
+     with Solver {
   
-  var subsolver: Solver = js.native
+  var subsolver: Solver
 }
 object SplitSolver {
   

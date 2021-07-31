@@ -12,14 +12,15 @@ import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import typings.uirouterCore.urlRuleMod.UrlRuleFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlRulesMod {
   
   @JSImport("@uirouter/core/lib/url/urlRules", "UrlRules")
   @js.native
-  class UrlRules protected () extends Disposable {
+  class UrlRules protected ()
+    extends StObject
+       with Disposable {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     

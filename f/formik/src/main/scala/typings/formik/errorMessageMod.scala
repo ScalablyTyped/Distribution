@@ -4,7 +4,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMessageMod {
@@ -13,18 +12,17 @@ object errorMessageMod {
   @js.native
   val ErrorMessage: ComponentType[ErrorMessageProps] = js.native
   
-  @js.native
   trait ErrorMessageProps extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* errorMessage */ String, ReactNode]] = js.native
+    var children: js.UndefOr[js.Function1[/* errorMessage */ String, ReactNode]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[String | ComponentType[js.Object]] = js.native
+    var component: js.UndefOr[String | ComponentType[js.Object]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var render: js.UndefOr[js.Function1[/* errorMessage */ String, ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* errorMessage */ String, ReactNode]] = js.undefined
   }
   object ErrorMessageProps {
     

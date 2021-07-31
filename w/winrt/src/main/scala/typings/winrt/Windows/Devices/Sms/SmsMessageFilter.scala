@@ -2,7 +2,6 @@ package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait SmsMessageFilter extends StObject
 object SmsMessageFilter extends StObject {
   
   @js.native
-  sealed trait all extends SmsMessageFilter
+  sealed trait all
+    extends StObject
+       with SmsMessageFilter
   
   @js.native
-  sealed trait draft extends SmsMessageFilter
+  sealed trait draft
+    extends StObject
+       with SmsMessageFilter
   
   @js.native
-  sealed trait read extends SmsMessageFilter
+  sealed trait read
+    extends StObject
+       with SmsMessageFilter
   
   @js.native
-  sealed trait sent extends SmsMessageFilter
+  sealed trait sent
+    extends StObject
+       with SmsMessageFilter
   
   @js.native
-  sealed trait unread extends SmsMessageFilter
+  sealed trait unread
+    extends StObject
+       with SmsMessageFilter
 }

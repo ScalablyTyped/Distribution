@@ -2,21 +2,20 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextComponentProperties
-  extends ComponentProperties
+  extends StObject
+     with ComponentProperties
      with TitledComponentProperties {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var links: js.UndefOr[js.Array[LinkArea]] = js.native
+  var links: js.UndefOr[js.Array[LinkArea]] = js.undefined
   
-  var requiredIndicator: js.UndefOr[Boolean] = js.native
+  var requiredIndicator: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TextComponentProperties {
   

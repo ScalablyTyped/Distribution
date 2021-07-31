@@ -2,23 +2,21 @@ package typings.opentok.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArchiveOptions extends StObject {
   
-  var hasAudio: js.UndefOr[Boolean] = js.native
+  var hasAudio: js.UndefOr[Boolean] = js.undefined
   
-  var hasVideo: js.UndefOr[Boolean] = js.native
+  var hasVideo: js.UndefOr[Boolean] = js.undefined
   
-  var layout: js.UndefOr[ArchiveLayoutOptions] = js.native
+  var layout: js.UndefOr[ArchiveLayoutOptions] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var outputMode: js.UndefOr[OutputMode] = js.native
+  var outputMode: js.UndefOr[OutputMode] = js.undefined
   
-  var resolution: js.UndefOr[String] = js.native
+  var resolution: js.UndefOr[String] = js.undefined
 }
 object ArchiveOptions {
   

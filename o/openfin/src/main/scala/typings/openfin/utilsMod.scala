@@ -26,134 +26,114 @@ import typings.std.HTMLElement
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("openfin/_v2/api/platform/utils", "addComponentToContentItem")
+  @JSImport("openfin/_v2/api/platform/utils", JSImport.Namespace)
   @js.native
-  def addComponentToContentItem(component: ViewComponent, target: ItemConfig): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("openfin/_v2/api/platform/utils", "buildFailedEventPayload")
-  @js.native
-  def buildFailedEventPayload(response: String, identity: Identity): typings.openfin.anon.Identity = js.native
+  @scala.inline
+  def addComponentToContentItem(component: ViewComponent, target: ItemConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addComponentToContentItem")(component.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openfin/_v2/api/platform/utils", "createComponent")
-  @js.native
-  def createComponent(componentState: NameString): ComponentConfig = js.native
+  @scala.inline
+  def buildFailedEventPayload(response: String, identity: Identity): typings.openfin.anon.Identity = (^.asInstanceOf[js.Dynamic].applyDynamic("buildFailedEventPayload")(response.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[typings.openfin.anon.Identity]
   
-  @JSImport("openfin/_v2/api/platform/utils", "debounce")
-  @js.native
-  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T, delay: Double, resizing: Boolean): js.Function1[/* args */ Parameters[T], Unit] = js.native
+  @scala.inline
+  def createComponent(componentState: NameString): ComponentConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(componentState.asInstanceOf[js.Any]).asInstanceOf[ComponentConfig]
   
-  @JSImport("openfin/_v2/api/platform/utils", "delay")
-  @js.native
-  def delay(delay: Double): js.Promise[_] = js.native
+  @scala.inline
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, delay: Double, resizing: Boolean): js.Function1[/* args */ Parameters[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], resizing.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], Unit]]
   
-  @JSImport("openfin/_v2/api/platform/utils", "emitLocalEvent")
-  @js.native
-  def emitLocalEvent(event: String, identity: Identity, container: HTMLElement): Unit = js.native
+  @scala.inline
+  def delay(delay: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("openfin/_v2/api/platform/utils", "generateLayoutContent")
-  @js.native
-  def generateLayoutContent(componentState: js.Any): Config = js.native
+  @scala.inline
+  def emitLocalEvent(event: String, identity: Identity, container: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitLocalEvent")(event.asInstanceOf[js.Any], identity.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openfin/_v2/api/platform/utils", "generatePresetLayoutContent")
-  @js.native
-  def generatePresetLayoutContent(components: js.Array[ViewComponent], `type`: LayoutPresetTypes): Config = js.native
+  @scala.inline
+  def generateLayoutContent(componentState: js.Any): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("generateLayoutContent")(componentState.asInstanceOf[js.Any]).asInstanceOf[Config]
   
-  @JSImport("openfin/_v2/api/platform/utils", "getComponentBounds")
-  @js.native
-  def getComponentBounds(bv: ViewComponent): DOMRect = js.native
+  @scala.inline
+  def generatePresetLayoutContent(components: js.Array[ViewComponent], `type`: LayoutPresetTypes): Config = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePresetLayoutContent")(components.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Config]
   
-  @JSImport("openfin/_v2/api/platform/utils", "getOutOfBoundsWindows")
-  @js.native
-  def getOutOfBoundsWindows(snapshot: Snapshot, monitorInfo: MonitorInfo): js.Promise[js.Array[WindowOptions]] = js.native
+  @scala.inline
+  def getComponentBounds(bv: ViewComponent): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentBounds")(bv.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
   
-  @JSImport("openfin/_v2/api/platform/utils", "getOutOfWindowDropBounds")
-  @js.native
-  def getOutOfWindowDropBounds(e: ScreenX, container: HTMLElement, dimensions: Height): PartialBounds = js.native
+  @scala.inline
+  def getOutOfBoundsWindows(snapshot: Snapshot, monitorInfo: MonitorInfo): js.Promise[js.Array[WindowOptions]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutOfBoundsWindows")(snapshot.asInstanceOf[js.Any], monitorInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[WindowOptions]]]
+  
+  @scala.inline
+  def getOutOfWindowDropBounds(e: ScreenX, container: HTMLElement, dimensions: Height): PartialBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutOfWindowDropBounds")(e.asInstanceOf[js.Any], container.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[PartialBounds]
   
   object getPresetLayoutFunction {
     
-    @JSImport("openfin/_v2/api/platform/utils", "getPresetLayoutFunction.columns")
+    @JSImport("openfin/_v2/api/platform/utils", "getPresetLayoutFunction")
     @js.native
-    def columns(components: js.Array[ViewComponent]): Config = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("openfin/_v2/api/platform/utils", "getPresetLayoutFunction.grid")
-    @js.native
-    def grid(components: js.Array[ViewComponent]): Config = js.native
+    @scala.inline
+    def columns(components: js.Array[ViewComponent]): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("columns")(components.asInstanceOf[js.Any]).asInstanceOf[Config]
     
-    @JSImport("openfin/_v2/api/platform/utils", "getPresetLayoutFunction.rows")
-    @js.native
-    def rows(components: js.Array[ViewComponent]): Config = js.native
+    @scala.inline
+    def grid(components: js.Array[ViewComponent]): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("grid")(components.asInstanceOf[js.Any]).asInstanceOf[Config]
     
-    @JSImport("openfin/_v2/api/platform/utils", "getPresetLayoutFunction.tabs")
-    @js.native
-    def tabs(components: js.Array[ViewComponent]): Config = js.native
+    @scala.inline
+    def rows(components: js.Array[ViewComponent]): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("rows")(components.asInstanceOf[js.Any]).asInstanceOf[Config]
+    
+    @scala.inline
+    def tabs(components: js.Array[ViewComponent]): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("tabs")(components.asInstanceOf[js.Any]).asInstanceOf[Config]
   }
   
-  @JSImport("openfin/_v2/api/platform/utils", "getSourceIdentity")
-  @js.native
-  def getSourceIdentity(e: DragEventBase[HTMLElement, Identity, HTMLElement, HTMLElement]): Uuid = js.native
+  @scala.inline
+  def getSourceIdentity(e: DragEventBase[HTMLElement, Identity, HTMLElement, HTMLElement]): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceIdentity")(e.asInstanceOf[js.Any]).asInstanceOf[Uuid]
   
-  @JSImport("openfin/_v2/api/platform/utils", "handleRenderError")
-  @js.native
-  def handleRenderError(component: ViewComponent, e: Error): Unit = js.native
+  @scala.inline
+  def handleRenderError(component: ViewComponent, e: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRenderError")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openfin/_v2/api/platform/utils", "isSameApp")
-  @js.native
-  def isSameApp(
-    e: DragEventBase[HTMLElement, js.UndefOr[scala.Nothing], HTMLElement, HTMLElement],
-    currentWindow: Identity
-  ): Boolean = js.native
+  @scala.inline
+  def isSameApp(e: DragEventBase[HTMLElement, Unit, HTMLElement, HTMLElement], currentWindow: Identity): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameApp")(e.asInstanceOf[js.Any], currentWindow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("openfin/_v2/api/platform/utils", "isSameWindow")
-  @js.native
-  def isSameWindow(e: DragEventBase[HTMLElement, Identity, HTMLElement, HTMLElement], currentWindow: Identity): Boolean = js.native
+  @scala.inline
+  def isSameWindow(e: DragEventBase[HTMLElement, Identity, HTMLElement, HTMLElement], currentWindow: Identity): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWindow")(e.asInstanceOf[js.Any], currentWindow.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   object mock {
     
-    @JSImport("openfin/_v2/api/platform/utils", "mock.on")
+    @JSImport("openfin/_v2/api/platform/utils", "mock")
     @js.native
-    def on(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def on(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[Unit]
   }
   
-  @JSImport("openfin/_v2/api/platform/utils", "promisifyViewLoadEvents")
-  @js.native
-  def promisifyViewLoadEvents(view: View, windowIdentity: Identity): js.Promise[LayoutEventPayload] = js.native
+  @scala.inline
+  def promisifyViewLoadEvents(view: View, windowIdentity: Identity): js.Promise[LayoutEventPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyViewLoadEvents")(view.asInstanceOf[js.Any], windowIdentity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayoutEventPayload]]
   
-  @JSImport("openfin/_v2/api/platform/utils", "setContainerMessage")
-  @js.native
-  def setContainerMessage(container: Container, message: String): Unit = js.native
+  @scala.inline
+  def setContainerMessage(container: Container, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContainerMessage")(container.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openfin/_v2/api/platform/utils", "setFallbackBodyAndTitle")
-  @js.native
-  def setFallbackBodyAndTitle(viewComponent: ViewComponent): Unit = js.native
+  @scala.inline
+  def setFallbackBodyAndTitle(viewComponent: ViewComponent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFallbackBodyAndTitle")(viewComponent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("openfin/_v2/api/platform/utils", "setTabTitle")
-  @js.native
-  def setTabTitle(tab: Tab, title: String): Unit = js.native
+  @scala.inline
+  def setTabTitle(tab: Tab, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTabTitle")(tab.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openfin/_v2/api/platform/utils", "setViewBoundsByRect")
-  @js.native
-  def setViewBoundsByRect(rect: Bounds, ofView: View): js.Promise[View] = js.native
-  @JSImport("openfin/_v2/api/platform/utils", "setViewBoundsByRect")
-  @js.native
-  def setViewBoundsByRect(rect: ClientRect, ofView: View): js.Promise[View] = js.native
-  @JSImport("openfin/_v2/api/platform/utils", "setViewBoundsByRect")
-  @js.native
-  def setViewBoundsByRect(rect: DOMRect, ofView: View): js.Promise[View] = js.native
+  @scala.inline
+  def setViewBoundsByRect(rect: Bounds, ofView: View): js.Promise[View] = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewBoundsByRect")(rect.asInstanceOf[js.Any], ofView.asInstanceOf[js.Any])).asInstanceOf[js.Promise[View]]
+  @scala.inline
+  def setViewBoundsByRect(rect: ClientRect, ofView: View): js.Promise[View] = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewBoundsByRect")(rect.asInstanceOf[js.Any], ofView.asInstanceOf[js.Any])).asInstanceOf[js.Promise[View]]
+  @scala.inline
+  def setViewBoundsByRect(rect: DOMRect, ofView: View): js.Promise[View] = (^.asInstanceOf[js.Dynamic].applyDynamic("setViewBoundsByRect")(rect.asInstanceOf[js.Any], ofView.asInstanceOf[js.Any])).asInstanceOf[js.Promise[View]]
   
-  @js.native
   trait LayoutEventPayload extends StObject {
     
-    var identity: Identity = js.native
+    var identity: Identity
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object LayoutEventPayload {
     
@@ -203,7 +183,9 @@ object utilsMod {
   }
   
   @js.native
-  trait ViewComponent extends ContentItem {
+  trait ViewComponent
+    extends StObject
+       with ContentItem {
     
     var componentState: ViewState = js.native
   }

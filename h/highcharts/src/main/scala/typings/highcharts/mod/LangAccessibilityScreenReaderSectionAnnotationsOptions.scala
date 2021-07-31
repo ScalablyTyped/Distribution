@@ -2,19 +2,17 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityScreenReaderSectionAnnotationsOptions extends StObject {
   
-  var descriptionMultiplePoints: js.UndefOr[String] = js.native
+  var descriptionMultiplePoints: js.UndefOr[String] = js.undefined
   
-  var descriptionNoPoints: js.UndefOr[String] = js.native
+  var descriptionNoPoints: js.UndefOr[String] = js.undefined
   
-  var descriptionSinglePoint: js.UndefOr[String] = js.native
+  var descriptionSinglePoint: js.UndefOr[String] = js.undefined
   
-  var heading: js.UndefOr[String] = js.native
+  var heading: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityScreenReaderSectionAnnotationsOptions {
   

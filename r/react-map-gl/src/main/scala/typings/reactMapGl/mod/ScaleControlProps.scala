@@ -5,15 +5,15 @@ import typings.reactMapGl.reactMapGlStrings.metric
 import typings.reactMapGl.reactMapGlStrings.nautical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleControlProps extends BaseControlProps {
+trait ScaleControlProps
+  extends StObject
+     with BaseControlProps {
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var unit: js.UndefOr[imperial | metric | nautical] = js.native
+  var unit: js.UndefOr[imperial | metric | nautical] = js.undefined
 }
 object ScaleControlProps {
   

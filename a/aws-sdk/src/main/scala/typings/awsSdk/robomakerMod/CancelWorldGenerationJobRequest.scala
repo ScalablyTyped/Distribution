@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelWorldGenerationJobRequest extends StObject {
   
   /**
     * The Amazon Resource Name (arn) of the world generator job to cancel.
     */
-  var job: Arn = js.native
+  var job: Arn
 }
 object CancelWorldGenerationJobRequest {
   

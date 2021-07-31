@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayValue extends StObject {
   
   /** Values in the array. The order of values in an array is preserved as long as all values have identical settings for 'exclude_from_indexes'. */
-  var values: js.UndefOr[js.Array[Value]] = js.native
+  var values: js.UndefOr[js.Array[Value]] = js.undefined
 }
 object ArrayValue {
   

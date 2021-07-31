@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.AttachmentInfoConstructor
 import typings.arcgisJsApi.esri.AttachmentInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attachmentInfoMod extends Shortcut {
   
   @JSImport("esri/layers/support/AttachmentInfo", JSImport.Namespace)
   @js.native
-  val ^ : AttachmentInfoConstructor = js.native
+  val ^ : js.Object & AttachmentInfoConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/AttachmentInfo", JSImport.Namespace)
@@ -23,12 +22,22 @@ object attachmentInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html)
     */
-  class Class () extends AttachmentInfo {
+  class Class ()
+    extends StObject
+       with AttachmentInfo {
     def this(properties: AttachmentInfoProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = AttachmentInfoConstructor
+  type _To = js.Object & AttachmentInfoConstructor
   
   /* This means you don't have to write `^`, but can instead just say `attachmentInfoMod.foo` */
-  override def _to: AttachmentInfoConstructor = ^
+  override def _to: js.Object & AttachmentInfoConstructor = ^
 }

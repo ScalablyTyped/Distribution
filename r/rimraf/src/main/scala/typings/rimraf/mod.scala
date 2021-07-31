@@ -17,68 +17,66 @@ import typings.rimraf.rimrafBooleans.`false`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: String, options: Options, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("rimraf", JSImport.Namespace)
   @js.native
-  def apply(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("rimraf", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: Options, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * It can remove stuff synchronously, too.
     * But that's not so good. Use the async API.
     * It's better.
     */
-  @JSImport("rimraf", "sync")
-  @js.native
-  def sync(path: String): Unit = js.native
-  @JSImport("rimraf", "sync")
-  @js.native
-  def sync(path: String, options: Options): Unit = js.native
+  @scala.inline
+  def sync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def sync(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * see {@link https://github.com/isaacs/rimraf/blob/79b933fb362b2c51bedfa448be848e1d7ed32d7e/README.md#options}
     */
-  @js.native
   trait Options extends StObject {
     
-    var chmod: js.UndefOr[Typeofchmod] = js.native
+    var chmod: js.UndefOr[Typeofchmod] = js.undefined
     
-    var chmodSync: js.UndefOr[js.Function2[/* path */ PathLike, /* mode */ Mode, Unit]] = js.native
+    var chmodSync: js.UndefOr[js.Function2[/* path */ PathLike, /* mode */ Mode, Unit]] = js.undefined
     
     /** @default false */
-    var disableGlob: js.UndefOr[Boolean] = js.native
+    var disableGlob: js.UndefOr[Boolean] = js.undefined
     
-    var emfileWait: js.UndefOr[Double] = js.native
+    var emfileWait: js.UndefOr[Double] = js.undefined
     
-    var glob: js.UndefOr[IOptions | `false`] = js.native
+    var glob: js.UndefOr[IOptions | `false`] = js.undefined
     
-    var lstat: js.UndefOr[Typeoflstat] = js.native
+    var lstat: js.UndefOr[Typeoflstat] = js.undefined
     
-    var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.native
+    var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
     
-    var maxBusyTries: js.UndefOr[Double] = js.native
+    var maxBusyTries: js.UndefOr[Double] = js.undefined
     
-    var readdir: js.UndefOr[Typeofreaddir] = js.native
+    var readdir: js.UndefOr[Typeofreaddir] = js.undefined
     
-    var readdirSync: js.UndefOr[Fn0] = js.native
+    var readdirSync: js.UndefOr[Fn0] = js.undefined
     
-    var rmdir: js.UndefOr[Typeofrmdir] = js.native
+    var rmdir: js.UndefOr[Typeofrmdir] = js.undefined
     
-    var rmdirSync: js.UndefOr[FnCallPathOptions] = js.native
+    var rmdirSync: js.UndefOr[FnCallPathOptions] = js.undefined
     
-    var stat: js.UndefOr[Typeofstat] = js.native
+    var stat: js.UndefOr[Typeofstat] = js.undefined
     
-    var statSync: js.UndefOr[FnCall] = js.native
+    var statSync: js.UndefOr[FnCall] = js.undefined
     
-    var unlink: js.UndefOr[Typeofunlink] = js.native
+    var unlink: js.UndefOr[Typeofunlink] = js.undefined
     
-    var unlinkSync: js.UndefOr[js.Function1[/* path */ PathLike, Unit]] = js.native
+    var unlinkSync: js.UndefOr[js.Function1[/* path */ PathLike, Unit]] = js.undefined
   }
   object Options {
     

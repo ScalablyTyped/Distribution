@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storagetransferMod {
+  
+  @JSImport("googleapis/build/src/apis/storagetransfer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object storagetransferMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/storagetransfer", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/storagetransfer", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object storagetransferMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/storagetransfer", "storagetransfer")
-  @js.native
-  def storagetransfer(options: Options): Storagetransfer = js.native
-  @JSImport("googleapis/build/src/apis/storagetransfer", "storagetransfer")
-  @js.native
-  def storagetransfer_v1(version: v1): Storagetransfer = js.native
+  @scala.inline
+  def storagetransfer(options: Options): Storagetransfer = ^.asInstanceOf[js.Dynamic].applyDynamic("storagetransfer")(options.asInstanceOf[js.Any]).asInstanceOf[Storagetransfer]
+  
+  @scala.inline
+  def storagetransfer_v1(version: v1): Storagetransfer = ^.asInstanceOf[js.Dynamic].applyDynamic("storagetransfer")(version.asInstanceOf[js.Any]).asInstanceOf[Storagetransfer]
 }

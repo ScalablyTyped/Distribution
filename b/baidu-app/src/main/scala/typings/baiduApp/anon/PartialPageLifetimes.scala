@@ -2,16 +2,14 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<baidu-app.swan.PageLifetimes> */
-@js.native
 trait PartialPageLifetimes extends StObject {
   
-  var hide: js.UndefOr[js.Function0[Unit]] = js.native
+  var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var show: js.UndefOr[js.Function0[Unit]] = js.native
+  var show: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object PartialPageLifetimes {
   

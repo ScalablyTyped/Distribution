@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentials extends StObject {
   
   /**
     * The Access Key portion of the credentials.
     */
-  var AccessKeyId: js.UndefOr[AccessKeyString] = js.native
+  var AccessKeyId: js.UndefOr[AccessKeyString] = js.undefined
   
   /**
     * The date at which these credentials will expire.
     */
-  var Expiration: js.UndefOr[DateType] = js.native
+  var Expiration: js.UndefOr[DateType] = js.undefined
   
   /**
     * The Secret Access Key portion of the credentials
     */
-  var SecretKey: js.UndefOr[SecretKeyString] = js.native
+  var SecretKey: js.UndefOr[SecretKeyString] = js.undefined
   
   /**
     * The Session Token portion of the credentials
     */
-  var SessionToken: js.UndefOr[SessionTokenString] = js.native
+  var SessionToken: js.UndefOr[SessionTokenString] = js.undefined
 }
 object Credentials {
   

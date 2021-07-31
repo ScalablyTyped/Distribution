@@ -6,47 +6,45 @@ import typings.sailthruClient.anon.Full
 import typings.sailthruClient.anon.Limit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("sailthru-client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sailthru-client", "VERSION")
   @js.native
   val VERSION: String = js.native
   
-  @JSImport("sailthru-client", "createClient")
-  @js.native
-  def createClient(apiKey: String, apiSecret: String): SailthruClient = js.native
-  @JSImport("sailthru-client", "createClient")
-  @js.native
-  def createClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = js.native
+  @scala.inline
+  def createClient(apiKey: String, apiSecret: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
+  @scala.inline
+  def createClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], apiUrl.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
   
-  @JSImport("sailthru-client", "createSailthruClient")
-  @js.native
-  def createSailthruClient(apiKey: String, apiSecret: String): SailthruClient = js.native
-  @JSImport("sailthru-client", "createSailthruClient")
-  @js.native
-  def createSailthruClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = js.native
+  @scala.inline
+  def createSailthruClient(apiKey: String, apiSecret: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createSailthruClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
+  @scala.inline
+  def createSailthruClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createSailthruClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], apiUrl.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
   
-  @js.native
   trait PurchaseItem extends StObject {
     
-    var id: String | Double = js.native
+    var id: String | Double
     
-    var images: js.UndefOr[Full] = js.native
+    var images: js.UndefOr[Full] = js.undefined
     
-    var price: Double = js.native
+    var price: Double
     
-    var qty: Double = js.native
+    var qty: Double
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
     
-    var vars: js.UndefOr[js.Object] = js.native
+    var vars: js.UndefOr[js.Object] = js.undefined
   }
   object PurchaseItem {
     
@@ -97,13 +95,12 @@ object mod {
     }
   }
   
-  @js.native
   trait RestlerResult extends StObject {
     
     def on(
       eventName: String,
       listener: js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]
-    ): RestlerResult = js.native
+    ): RestlerResult
   }
   object RestlerResult {
     

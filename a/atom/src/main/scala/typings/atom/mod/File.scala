@@ -4,7 +4,6 @@ import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "File")
@@ -101,8 +100,8 @@ class File protected () extends StObject {
   def setEncoding(encoding: String): Unit = js.native
   
   /** Overwrites the file with the given text. */
-  def write(text: String): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def write(text: String): js.Promise[Unit] = js.native
   
   /** Overwrites the file with the given text. */
-  def writeSync(text: String): js.UndefOr[scala.Nothing] = js.native
+  def writeSync(text: String): Unit = js.native
 }

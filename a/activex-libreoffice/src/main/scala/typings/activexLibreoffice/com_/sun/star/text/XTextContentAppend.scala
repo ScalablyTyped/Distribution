@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows inserting and appending text content. */
-@js.native
-trait XTextContentAppend extends XInterface {
+trait XTextContentAppend
+  extends StObject
+     with XInterface {
   
   /**
     * appends a text content at the end of the text. <p> The sequence can contain all the properties defined by the service
@@ -20,7 +20,7 @@ trait XTextContentAppend extends XInterface {
     * @param CharacterAndParagraphProperties can contain all the properties defined by the service {@link Paragraph} .
     * @returns the anchor text range of the inserted text content.
     */
-  def appendTextContent(TextContent: XTextContent, CharacterAndParagraphProperties: PropertyValues): XTextRange = js.native
+  def appendTextContent(TextContent: XTextContent, CharacterAndParagraphProperties: PropertyValues): XTextRange
   
   /**
     * inserts a text content at the given position.
@@ -30,7 +30,7 @@ trait XTextContentAppend extends XInterface {
     * @returns the anchor text range of the inserted text content.
     * @since LibreOffice 4.0
     */
-  def insertTextContentWithProperties(TextContent: XTextContent, CharacterAndParagraphProperties: PropertyValues, TextRange: XTextRange): XTextRange = js.native
+  def insertTextContentWithProperties(TextContent: XTextContent, CharacterAndParagraphProperties: PropertyValues, TextRange: XTextRange): XTextRange
 }
 object XTextContentAppend {
   

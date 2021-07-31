@@ -29,21 +29,22 @@ import typings.xrm.XrmEnum.SubmitMode
 import typings.xrm.XrmEnum.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xrmStrings {
   
   @js.native
   sealed trait default
-    extends Theme
+    extends StObject
+       with Theme
        with typings.xrm.Xrm.Theme
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait ERROR
-    extends FormNotificationLevel
+    extends StObject
+       with FormNotificationLevel
        with typings.xrm.Xrm.FormNotificationLevel
        with NotificationLevel
   @scala.inline
@@ -51,66 +52,78 @@ object xrmStrings {
   
   @js.native
   sealed trait INFO
-    extends FormNotificationLevel
+    extends StObject
+       with FormNotificationLevel
        with typings.xrm.Xrm.FormNotificationLevel
   @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait MaxChildIncidentNumber extends AdvancedConfigSettingOption
+  sealed trait MaxChildIncidentNumber
+    extends StObject
+       with AdvancedConfigSettingOption
   @scala.inline
   def MaxChildIncidentNumber: MaxChildIncidentNumber = "MaxChildIncidentNumber".asInstanceOf[MaxChildIncidentNumber]
   
   @js.native
-  sealed trait MaxIncidentMergeNumber extends AdvancedConfigSettingOption
+  sealed trait MaxIncidentMergeNumber
+    extends StObject
+       with AdvancedConfigSettingOption
   @scala.inline
   def MaxIncidentMergeNumber: MaxIncidentMergeNumber = "MaxIncidentMergeNumber".asInstanceOf[MaxIncidentMergeNumber]
   
   @js.native
   sealed trait Mobile
-    extends Client
+    extends StObject
+       with Client
        with typings.xrm.Xrm.Client
   @scala.inline
   def Mobile: Mobile = "Mobile".asInstanceOf[Mobile]
   
   @js.native
   sealed trait Next
-    extends StageChangeDirection
+    extends StObject
+       with StageChangeDirection
        with typings.xrm.Xrm.ProcessFlow.StageChangeDirection
   @scala.inline
   def Next: Next = "Next".asInstanceOf[Next]
   
   @js.native
   sealed trait Office12Blue
-    extends Theme
+    extends StObject
+       with Theme
        with typings.xrm.Xrm.Theme
   @scala.inline
   def Office12Blue: Office12Blue = "Office12Blue".asInstanceOf[Office12Blue]
   
   @js.native
   sealed trait Office14Silver
-    extends Theme
+    extends StObject
+       with Theme
        with typings.xrm.Xrm.Theme
   @scala.inline
   def Office14Silver: Office14Silver = "Office14Silver".asInstanceOf[Office14Silver]
   
   @js.native
   sealed trait Offline
-    extends ClientState
+    extends StObject
+       with ClientState
        with typings.xrm.Xrm.ClientState
   @scala.inline
   def Offline: Offline = "Offline".asInstanceOf[Offline]
   
   @js.native
   sealed trait Online
-    extends ClientState
+    extends StObject
+       with ClientState
        with typings.xrm.Xrm.ClientState
   @scala.inline
   def Online: Online = "Online".asInstanceOf[Online]
   
   @js.native
   sealed trait Outlook
-    extends Client
+    extends StObject
+       with Client
        with typings.xrm.Xrm.Client
   @scala.inline
   def Outlook: Outlook = "Outlook".asInstanceOf[Outlook]
@@ -122,47 +135,55 @@ object xrmStrings {
   
   @js.native
   sealed trait Previous
-    extends StageChangeDirection
+    extends StObject
+       with StageChangeDirection
        with typings.xrm.Xrm.ProcessFlow.StageChangeDirection
   @scala.inline
   def Previous: Previous = "Previous".asInstanceOf[Previous]
   
   @js.native
-  sealed trait RECOMMENDATION extends NotificationLevel
+  sealed trait RECOMMENDATION
+    extends StObject
+       with NotificationLevel
   @scala.inline
   def RECOMMENDATION: RECOMMENDATION = "RECOMMENDATION".asInstanceOf[RECOMMENDATION]
   
   @js.native
   sealed trait UnifiedServiceDesk
-    extends Client
+    extends StObject
+       with Client
        with typings.xrm.Xrm.Client
   @scala.inline
   def UnifiedServiceDesk: UnifiedServiceDesk = "UnifiedServiceDesk".asInstanceOf[UnifiedServiceDesk]
   
   @js.native
   sealed trait WARNING
-    extends FormNotificationLevel
+    extends StObject
+       with FormNotificationLevel
        with typings.xrm.Xrm.FormNotificationLevel
   @scala.inline
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
   
   @js.native
   sealed trait Web
-    extends Client
+    extends StObject
+       with Client
        with typings.xrm.Xrm.Client
   @scala.inline
   def Web: Web = "Web".asInstanceOf[Web]
   
   @js.native
   sealed trait aborted
-    extends ProcessStatus
+    extends StObject
+       with ProcessStatus
        with typings.xrm.Xrm.ProcessFlow.ProcessStatus
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
   sealed trait active
-    extends ProcessStatus
+    extends StObject
+       with ProcessStatus
        with typings.xrm.Xrm.ProcessFlow.ProcessStatus
        with StageStatus
        with typings.xrm.Xrm.ProcessFlow.StageStatus
@@ -171,35 +192,40 @@ object xrmStrings {
   
   @js.native
   sealed trait always
-    extends SubmitMode
+    extends StObject
+       with SubmitMode
        with typings.xrm.Xrm.SubmitMode
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait audio
-    extends DevicePickFileType
+    extends StObject
+       with DevicePickFileType
        with PickFileTypes
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
   sealed trait boolean
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait collapsed
-    extends DisplayState
+    extends StObject
+       with DisplayState
        with typings.xrm.Xrm.DisplayState
   @scala.inline
   def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
   
   @js.native
   sealed trait date
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with DateAttributeFormat
        with typings.xrm.Xrm.Attributes.DateAttributeFormat
   @scala.inline
@@ -207,7 +233,8 @@ object xrmStrings {
   
   @js.native
   sealed trait datetime
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
        with DateAttributeFormat
@@ -217,28 +244,32 @@ object xrmStrings {
   
   @js.native
   sealed trait decimal
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
   sealed trait dirty
-    extends SubmitMode
+    extends StObject
+       with SubmitMode
        with typings.xrm.Xrm.SubmitMode
   @scala.inline
   def dirty: dirty = "dirty".asInstanceOf[dirty]
   
   @js.native
   sealed trait double
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
   @scala.inline
   def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait duration
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with IntegerAttributeFormat
        with typings.xrm.Xrm.Attributes.IntegerAttributeFormat
   @scala.inline
@@ -246,7 +277,8 @@ object xrmStrings {
   
   @js.native
   sealed trait email
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   @scala.inline
@@ -254,7 +286,8 @@ object xrmStrings {
   
   @js.native
   sealed trait entity
-    extends NavBarDisplay
+    extends StObject
+       with NavBarDisplay
        with typings.xrm.Xrm.Url.NavBarDisplay
   @scala.inline
   def entity: entity = "entity".asInstanceOf[entity]
@@ -271,70 +304,80 @@ object xrmStrings {
   
   @js.native
   sealed trait expanded
-    extends DisplayState
+    extends StObject
+       with DisplayState
        with typings.xrm.Xrm.DisplayState
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
   sealed trait `false`
-    extends CmdBarDisplay
+    extends StObject
+       with CmdBarDisplay
        with typings.xrm.Xrm.Url.CmdBarDisplay
   @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait filter
-    extends ReportAction
+    extends StObject
+       with ReportAction
        with typings.xrm.Xrm.Url.ReportAction
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
   sealed trait finished
-    extends ProcessStatus
+    extends StObject
+       with ProcessStatus
        with typings.xrm.Xrm.ProcessFlow.ProcessStatus
   @scala.inline
   def finished: finished = "finished".asInstanceOf[finished]
   
   @js.native
   sealed trait iframe
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
   sealed trait image
-    extends DevicePickFileType
+    extends StObject
+       with DevicePickFileType
        with PickFileTypes
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait inactive
-    extends StageStatus
+    extends StObject
+       with StageStatus
        with typings.xrm.Xrm.ProcessFlow.StageStatus
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
   sealed trait integer
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait kbsearch
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def kbsearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
   
   @js.native
   sealed trait language
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with OptionSetAttributeFormat
        with typings.xrm.Xrm.Attributes.OptionSetAttributeFormat
   @scala.inline
@@ -342,7 +385,8 @@ object xrmStrings {
   
   @js.native
   sealed trait lookup
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
        with _ControlType
@@ -351,40 +395,47 @@ object xrmStrings {
   
   @js.native
   sealed trait memo
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
   @scala.inline
   def memo: memo = "memo".asInstanceOf[memo]
   
   @js.native
   sealed trait money
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
   @scala.inline
   def money: money = "money".asInstanceOf[money]
   
   @js.native
-  sealed trait multioptionset extends AttributeType
+  sealed trait multioptionset
+    extends StObject
+       with AttributeType
   @scala.inline
   def multioptionset: multioptionset = "multioptionset".asInstanceOf[multioptionset]
   
   @js.native
   sealed trait multiselectoptionset
-    extends typings.xrm.Xrm.Attributes.AttributeType
+    extends StObject
+       with typings.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
   @scala.inline
   def multiselectoptionset: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
   
   @js.native
   sealed trait never
-    extends SubmitMode
+    extends StObject
+       with SubmitMode
        with typings.xrm.Xrm.SubmitMode
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait none
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with AttributeRequirementLevel
        with IntegerAttributeFormat
        with typings.xrm.Xrm.Attributes.IntegerAttributeFormat
@@ -394,28 +445,32 @@ object xrmStrings {
   
   @js.native
   sealed trait notes
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def notes: notes = "notes".asInstanceOf[notes]
   
   @js.native
   sealed trait off
-    extends NavBarDisplay
+    extends StObject
+       with NavBarDisplay
        with typings.xrm.Xrm.Url.NavBarDisplay
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
   sealed trait on
-    extends NavBarDisplay
+    extends StObject
+       with NavBarDisplay
        with typings.xrm.Xrm.Url.NavBarDisplay
   @scala.inline
   def on: on = "on".asInstanceOf[on]
   
   @js.native
   sealed trait optionset
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
        with _ControlType
@@ -424,7 +479,8 @@ object xrmStrings {
   
   @js.native
   sealed trait phone
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   @scala.inline
@@ -436,41 +492,48 @@ object xrmStrings {
   def px: px = "px".asInstanceOf[px]
   
   @js.native
-  sealed trait quickform extends StandardControlType
+  sealed trait quickform
+    extends StObject
+       with StandardControlType
   @scala.inline
   def quickform: quickform = "quickform".asInstanceOf[quickform]
   
   @js.native
   sealed trait recommended
-    extends AttributeRequirementLevel
+    extends StObject
+       with AttributeRequirementLevel
        with RequirementLevel
   @scala.inline
   def recommended: recommended = "recommended".asInstanceOf[recommended]
   
   @js.native
   sealed trait required
-    extends AttributeRequirementLevel
+    extends StObject
+       with AttributeRequirementLevel
        with RequirementLevel
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   
   @js.native
   sealed trait run
-    extends ReportAction
+    extends StObject
+       with ReportAction
        with typings.xrm.Xrm.Url.ReportAction
   @scala.inline
   def run: run = "run".asInstanceOf[run]
   
   @js.native
   sealed trait saveandclose
-    extends EntitySaveMode
+    extends StObject
+       with EntitySaveMode
        with typings.xrm.Xrm.EntitySaveMode
   @scala.inline
   def saveandclose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
   
   @js.native
   sealed trait saveandnew
-    extends EntitySaveMode
+    extends StObject
+       with EntitySaveMode
        with typings.xrm.Xrm.EntitySaveMode
   @scala.inline
   def saveandnew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
@@ -482,28 +545,32 @@ object xrmStrings {
   
   @js.native
   sealed trait standard
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait string
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typings.xrm.Xrm.Attributes.AttributeType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait subgrid
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def subgrid: subgrid = "subgrid".asInstanceOf[subgrid]
   
   @js.native
   sealed trait text
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   @scala.inline
@@ -511,7 +578,8 @@ object xrmStrings {
   
   @js.native
   sealed trait textarea
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   @scala.inline
@@ -519,7 +587,8 @@ object xrmStrings {
   
   @js.native
   sealed trait tickersymbol
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   @scala.inline
@@ -527,21 +596,24 @@ object xrmStrings {
   
   @js.native
   sealed trait timelinewall
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def timelinewall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
   
   @js.native
   sealed trait timercontrol
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def timercontrol: timercontrol = "timercontrol".asInstanceOf[timercontrol]
   
   @js.native
   sealed trait timezone
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with OptionSetAttributeFormat
        with typings.xrm.Xrm.Attributes.OptionSetAttributeFormat
   @scala.inline
@@ -549,14 +621,16 @@ object xrmStrings {
   
   @js.native
   sealed trait `true`
-    extends CmdBarDisplay
+    extends StObject
+       with CmdBarDisplay
        with typings.xrm.Xrm.Url.CmdBarDisplay
   @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
   
   @js.native
   sealed trait url
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   @scala.inline
@@ -569,14 +643,16 @@ object xrmStrings {
   
   @js.native
   sealed trait video
-    extends DevicePickFileType
+    extends StObject
+       with DevicePickFileType
        with PickFileTypes
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   
   @js.native
   sealed trait webresource
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
   @scala.inline
   def webresource: webresource = "webresource".asInstanceOf[webresource]

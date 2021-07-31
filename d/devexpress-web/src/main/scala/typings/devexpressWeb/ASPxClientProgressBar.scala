@@ -2,70 +2,70 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxProgressBar control.
   */
-@js.native
-trait ASPxClientProgressBar extends ASPxClientEditBase {
+trait ASPxClientProgressBar
+  extends StObject
+     with ASPxClientEditBase {
   
   /**
     * Returns the text displayed within the progress bar.
     */
-  def GetDisplayText(): String = js.native
+  def GetDisplayText(): String
   
   /**
     * Gets the maximum range value of the progress bar.
     */
-  def GetMaximum(): Double = js.native
+  def GetMaximum(): Double
   
   /**
     * Gets the minimum range value of the progress bar.
     */
-  def GetMinimum(): Double = js.native
+  def GetMinimum(): Double
   
   /**
     * Sets the percentage representation of the progress position.
     */
-  def GetPercent(): Double = js.native
+  def GetPercent(): Double
   
   /**
     * Gets the position of the operation's progress.
     */
-  def GetPosition(): Double = js.native
+  def GetPosition(): Double
   
   /**
     * Sets the pattern used to format the displayed text for the progress bar.
     * @param text A  value that is the format pattern.
     */
-  def SetCustomDisplayFormat(text: String): Unit = js.native
+  def SetCustomDisplayFormat(text: String): Unit
   
   /**
     * Sets the maximum range value of the progress bar.
     * @param max An integer value specifying the maximum value of the progress bar range.
     */
-  def SetMaximum(max: Double): Unit = js.native
+  def SetMaximum(max: Double): Unit
   
   /**
     * Sets the minimum and maximum range values of the progress bar.
     * @param minValue An integer value specifying the minimum value of the progress bar range.
     * @param maxValue An integer value specifying the maximum value of the progress bar range.
     */
-  def SetMinMaxValues(minValue: Double, maxValue: Double): Unit = js.native
+  def SetMinMaxValues(minValue: Double, maxValue: Double): Unit
   
   /**
     * Sets the minimum range value of the progress bar.
     * @param min An integer value specifying the minimum value of the progress bar range.
     */
-  def SetMinimum(min: Double): Unit = js.native
+  def SetMinimum(min: Double): Unit
   
   /**
     * Sets the position of the operation's progress.
     * @param position An integer value specifying the progress position.
     */
-  def SetPosition(position: Double): Unit = js.native
+  def SetPosition(position: Double): Unit
 }
 object ASPxClientProgressBar {
   

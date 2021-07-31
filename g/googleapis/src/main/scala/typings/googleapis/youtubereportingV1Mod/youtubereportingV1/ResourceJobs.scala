@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtubereporting/v1", "youtubereporting_v1.Resource$Jobs")
@@ -31,7 +30,7 @@ class ResourceJobs protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaJob] = js.native
   def create(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceJobsCreate): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceJobsCreate, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def create(
@@ -61,7 +60,7 @@ class ResourceJobs protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceJobsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceJobsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -91,7 +90,7 @@ class ResourceJobs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaJob] = js.native
   def get(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def get(
@@ -119,7 +118,7 @@ class ResourceJobs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListJobsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListJobsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(params: ParamsResourceJobsList): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(params: ParamsResourceJobsList, callback: BodyResponseCallback[SchemaListJobsResponse]): Unit = js.native
   def list(

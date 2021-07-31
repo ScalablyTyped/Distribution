@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vscodeLanguageserverProtocol.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitializeResult[T]
-  extends /**
+  extends StObject
+     with /**
   * Custom initialization results.
   */
 /* custom */ StringDictionary[js.Any] {
@@ -17,14 +16,14 @@ trait InitializeResult[T]
   /**
     * The capabilities the language server provides.
     */
-  var capabilities: ServerCapabilities[T] = js.native
+  var capabilities: ServerCapabilities[T]
   
   /**
     * Information about the server.
     *
     * @since 3.15.0
     */
-  var serverInfo: js.UndefOr[Name] = js.native
+  var serverInfo: js.UndefOr[Name] = js.undefined
 }
 object InitializeResult {
   
@@ -35,7 +34,7 @@ object InitializeResult {
   }
   
   @scala.inline
-  implicit class InitializeResultMutableBuilder[Self <: InitializeResult[_], T] (val x: Self with InitializeResult[T]) extends AnyVal {
+  implicit class InitializeResultMutableBuilder[Self <: InitializeResult[?], T] (val x: Self & InitializeResult[T]) extends AnyVal {
     
     @scala.inline
     def setCapabilities(value: ServerCapabilities[T]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])

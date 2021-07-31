@@ -4,7 +4,6 @@ import typings.chromeApps.anon.Max
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -35,7 +34,6 @@ object sockets {
   
   type AcceptEventArgs = ReceiveEventArgs
   
-  @js.native
   trait CreateInfo extends StObject {
     
     /**
@@ -44,7 +42,7 @@ object sockets {
       * **not compatible** with socket IDs created from
       * other APIs, such as the deprecated socket API.
       */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object CreateInfo {
     
@@ -62,14 +60,13 @@ object sockets {
     }
   }
   
-  @js.native
   trait ReceiveErrorEventArgs extends StObject {
     
     /** The result code returned from the underlying network call. */
-    var resultCode: integer = js.native
+    var resultCode: integer
     
     /** The socket identifier. */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object ReceiveErrorEventArgs {
     
@@ -90,14 +87,13 @@ object sockets {
     }
   }
   
-  @js.native
   trait ReceiveEventArgs extends StObject {
     
     /** The data received, with a maxium size of *bufferSize*. */
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
     
     /** The socket identifier. */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object ReceiveEventArgs {
     
@@ -118,14 +114,13 @@ object sockets {
     }
   }
   
-  @js.native
   trait SendInfo extends StObject {
     
     /** The number of bytes sent (if result == 0) */
-    var bytesSent: js.UndefOr[integer] = js.native
+    var bytesSent: js.UndefOr[integer] = js.undefined
     
     /** The result code returned from the underlying network call. A negative value indicates an error. */
-    var resultCode: integer = js.native
+    var resultCode: integer
   }
   object SendInfo {
     
@@ -149,38 +144,37 @@ object sockets {
     }
   }
   
-  @js.native
   trait SocketInfo extends StObject {
     
     /** The size of the buffer used to receive data. If no buffer size has been specified explictly, the value is not provided. */
-    var bufferSize: js.UndefOr[integer] = js.native
+    var bufferSize: js.UndefOr[integer] = js.undefined
     
     /** Flag indicating whether the socket is connected to a remote peer. */
-    var connected: Boolean = js.native
+    var connected: Boolean
     
     /** If the underlying socket is connected, contains its local IPv4/6 address. */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /** If the underlying socket is connected, contains its local port. */
-    var localPort: js.UndefOr[integer] = js.native
+    var localPort: js.UndefOr[integer] = js.undefined
     
     /** Application-defined string associated with the socket. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Flag indicating whether a connected socket blocks its peer from sending more data (see setPaused). */
-    var paused: Boolean = js.native
+    var paused: Boolean
     
     /** If the underlying socket is connected, contains the peer/ IPv4/6 address. */
-    var peerAddress: js.UndefOr[String] = js.native
+    var peerAddress: js.UndefOr[String] = js.undefined
     
     /** If the underlying socket is connected, contains the peer port. */
-    var peerPort: js.UndefOr[integer] = js.native
+    var peerPort: js.UndefOr[integer] = js.undefined
     
     /** Flag indicating whether the socket is left open when the application is suspended (see SocketProperties.persistent). */
-    var persistent: Boolean = js.native
+    var persistent: Boolean
     
     /** The socket identifier. */
-    var socketId: integer = js.native
+    var socketId: integer
   }
   object SocketInfo {
     
@@ -243,17 +237,16 @@ object sockets {
     }
   }
   
-  @js.native
   trait SocketProperties extends StObject {
     
     /**
       * The size of the buffer used to receive data.
       * @default: 4096
       */
-    var bufferSize: js.UndefOr[integer] = js.native
+    var bufferSize: js.UndefOr[integer] = js.undefined
     
     /** An application-defined string associated with the socket. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Flag indicating if the socket is left open when the event page of the
@@ -261,7 +254,7 @@ object sockets {
       * previously opened with persistent=true can be fetched with *getSockets*.
       * @default false
       */
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object SocketProperties {
     
@@ -302,7 +295,6 @@ object sockets {
     */
   object tcp {
     
-    @js.native
     trait SecureOptions extends StObject {
       
       /**
@@ -312,7 +304,7 @@ object sockets {
         * tls1.3 should be supported from Chrome 67.
         * @see[TLS Info and support table]{@link https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3}
         */
-      var tlsVersion: js.UndefOr[Max] = js.native
+      var tlsVersion: js.UndefOr[Max] = js.undefined
     }
     object SecureOptions {
       
@@ -347,34 +339,33 @@ object sockets {
     /**
       * @see https://developer.chrome.com/apps/sockets_tcpServer#type-SocketInfo
       */
-    @js.native
     trait SocketInfo extends StObject {
       
       /** If the socket is listening, contains its local IPv4/6 address. */
-      var localAddress: js.UndefOr[String] = js.native
+      var localAddress: js.UndefOr[String] = js.undefined
       
       /** If the socket is listening, contains its local port. */
-      var localPort: js.UndefOr[integer] = js.native
+      var localPort: js.UndefOr[integer] = js.undefined
       
       /** Application-defined string associated with the socket. */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Flag indicating whether connection requests on a listening socket are
         * dispatched through the onAccept event or queued up in the listen
         * queue backlog. See setPaused. The default value is 'false'
         */
-      var paused: Boolean = js.native
+      var paused: Boolean
       
       /**
         * Flag indicating if the socket remains open when the event page of the
         * application is unloaded (see SocketProperties.persistent). The
         * default value is 'false'.
         */
-      var persistent: Boolean = js.native
+      var persistent: Boolean
       
       /** The socket identifier. */
-      var socketId: integer = js.native
+      var socketId: integer
     }
     object SocketInfo {
       
@@ -419,11 +410,10 @@ object sockets {
     /**
       * @see https://developer.chrome.com/apps/sockets_tcpServer#type-SocketProperties
       */
-    @js.native
     trait SocketProperties extends StObject {
       
       /** An application-defined string associated with the socket. */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Flag indicating if the socket remains open when the event page of the
@@ -433,7 +423,7 @@ object sockets {
         *
         * @see http://developer.chrome.com/apps/app_lifecycle.html
         */
-      var persistent: js.UndefOr[Boolean] = js.native
+      var persistent: js.UndefOr[Boolean] = js.undefined
     }
     object SocketProperties {
       

@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLoggerDefinitionVersionRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
     */
-  var AmznClientToken: js.UndefOr[string] = js.native
+  var AmznClientToken: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the logger definition.
     */
-  var LoggerDefinitionId: string = js.native
+  var LoggerDefinitionId: string
   
   /**
     * A list of loggers.
     */
-  var Loggers: js.UndefOr[listOfLogger] = js.native
+  var Loggers: js.UndefOr[listOfLogger] = js.undefined
 }
 object CreateLoggerDefinitionVersionRequest {
   

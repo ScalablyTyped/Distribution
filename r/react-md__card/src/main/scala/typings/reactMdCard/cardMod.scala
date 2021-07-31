@@ -6,35 +6,35 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod {
   
   @JSImport("@react-md/card/types/Card", "Card")
   @js.native
-  val Card: ForwardRefExoticComponent[CardProps with RefAttributes[HTMLDivElement]] = js.native
+  val Card: ForwardRefExoticComponent[CardProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait CardProps extends HTMLAttributes[HTMLDivElement] {
+  trait CardProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if the card should use a border instead of box-shadow. Enabling
       * this prop will always disable the `raiseable` prop.
       */
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the card should no longer be `display: inline-block`, but
       * instead `display: block; width: 100%;`.
       */
-    var fullWidth: js.UndefOr[Boolean] = js.native
+    var fullWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the card should gain additional box-shadow elevation once
       * hovered.
       */
-    var raiseable: js.UndefOr[Boolean] = js.native
+    var raiseable: js.UndefOr[Boolean] = js.undefined
   }
   object CardProps {
     

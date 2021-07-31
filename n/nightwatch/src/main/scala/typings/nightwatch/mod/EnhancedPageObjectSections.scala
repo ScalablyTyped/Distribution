@@ -3,11 +3,11 @@ package typings.nightwatch.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnhancedPageObjectSections extends /* name */ StringDictionary[EnhancedSectionInstance[_, _, _]]
+trait EnhancedPageObjectSections
+  extends StObject
+     with /* name */ StringDictionary[EnhancedSectionInstance[js.Any, js.Any, js.Any]]
 object EnhancedPageObjectSections {
   
   @scala.inline

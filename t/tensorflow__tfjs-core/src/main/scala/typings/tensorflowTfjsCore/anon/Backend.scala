@@ -8,21 +8,19 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backend extends StObject {
   
-  var backend: KernelBackend = js.native
+  var backend: KernelBackend
   
-  var bytes: Double = js.native
+  var bytes: Double
   
-  var dtype: string | float32 | int32 | bool | complex64 = js.native
+  var dtype: string | float32 | int32 | bool | complex64
   
-  var refCount: Double = js.native
+  var refCount: Double
   
-  var shape: js.Array[Double] = js.native
+  var shape: js.Array[Double]
 }
 object Backend {
   

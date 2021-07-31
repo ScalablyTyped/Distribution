@@ -3,7 +3,6 @@ package typings.parseEntities
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,24 +10,25 @@ object mod {
   /**
     * Decode special characters in `value`.
     */
+  @scala.inline
+  def apply[WC, TC, RC](value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply[WC, TC, RC](value: String, options: Partial[ParseEntitiesOptions[WC, TC, RC]]): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("parse-entities", JSImport.Namespace)
   @js.native
-  def apply[WC, TC, RC](value: String): String = js.native
-  @JSImport("parse-entities", JSImport.Namespace)
-  @js.native
-  def apply[WC, TC, RC](value: String, options: Partial[ParseEntitiesOptions[WC, TC, RC]]): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Error handler.
     */
   type ErrorHandler[C] = js.ThisFunction3[/* this */ C, /* reason */ String, /* position */ Position, /* code */ Double, Unit]
   
-  @js.native
   trait Location extends StObject {
     
-    var end: Position = js.native
+    var end: Position
     
-    var start: Position = js.native
+    var start: Position
   }
   object Location {
     
@@ -49,30 +49,29 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseEntitiesOptions[WC, TC, RC] extends StObject {
     
     /**
       * Additional character to accept (`string?`, default: `''`).
       * This allows other characters, without error, when following an ampersand.
       */
-    var additional: String = js.native
+    var additional: String
     
     /**
       * Whether to parse `value` as an attribute value (`boolean?`, default: `false`).
       */
-    var attribute: Boolean = js.native
+    var attribute: Boolean
     
     /**
       * Whether to allow non-terminated entities (`boolean`, default: `true`).
       * For example, `&copycat` for `©cat`.  This behaviour is spec-compliant but can lead to unexpected results.
       */
-    var nonTerminated: Boolean = js.native
+    var nonTerminated: Boolean
     
     /**
       * Starting `position` of `value` (`Location` or `Position`, optional).  Useful when dealing with values nested in some sort of syntax tree.
       */
-    var position: Position = js.native
+    var position: Position
     
     /**
       * Reference handler (`Function?`).
@@ -90,18 +89,18 @@ object mod {
       * Source of character reference (`Location`).
       */
     source: Location
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Context used when invoking `reference` (`'*'`, optional)
       */
-    var referenceContext: RC = js.native
+    var referenceContext: RC
     
     /**
       * Reference handler (`Function?`).
       */
     @JSName("reference")
-    var reference_Original: ReferenceHandler[RC] = js.native
+    var reference_Original: ReferenceHandler[RC]
     
     /**
       * Text handler (`Function?`).
@@ -115,18 +114,18 @@ object mod {
       * Location at which `value` starts and ends (`Location`).
       */
     location: Location
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Context used when invoking `text` (`'*'`, optional).
       */
-    var textContext: TC = js.native
+    var textContext: TC
     
     /**
       * Text handler (`Function?`).
       */
     @JSName("text")
-    var text_Original: TextHandler[TC] = js.native
+    var text_Original: TextHandler[TC]
     
     /**
       * Error handler (`Function?`).
@@ -144,30 +143,82 @@ object mod {
       * Identifier of reason for triggering a parse error (`number`).
       */
     code: Double
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Context used when invoking `warning` (`'*'`, optional).
       */
-    var warningContext: WC = js.native
+    var warningContext: WC
     
     /**
       * Error handler (`Function?`).
       */
     @JSName("warning")
-    var warning_Original: ErrorHandler[WC] = js.native
+    var warning_Original: ErrorHandler[WC]
+  }
+  object ParseEntitiesOptions {
+    
+    @scala.inline
+    def apply[WC, TC, RC](
+      additional: String,
+      attribute: Boolean,
+      nonTerminated: Boolean,
+      position: Position,
+      reference: ReferenceHandler[RC],
+      referenceContext: RC,
+      text: TextHandler[TC],
+      textContext: TC,
+      warning: ErrorHandler[WC],
+      warningContext: WC
+    ): ParseEntitiesOptions[WC, TC, RC] = {
+      val __obj = js.Dynamic.literal(additional = additional.asInstanceOf[js.Any], attribute = attribute.asInstanceOf[js.Any], nonTerminated = nonTerminated.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], referenceContext = referenceContext.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textContext = textContext.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any], warningContext = warningContext.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParseEntitiesOptions[WC, TC, RC]]
+    }
+    
+    @scala.inline
+    implicit class ParseEntitiesOptionsMutableBuilder[Self <: ParseEntitiesOptions[?, ?, ?], WC, TC, RC] (val x: Self & (ParseEntitiesOptions[WC, TC, RC])) extends AnyVal {
+      
+      @scala.inline
+      def setAdditional(value: String): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNonTerminated(value: Boolean): Self = StObject.set(x, "nonTerminated", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReference(value: ReferenceHandler[RC]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReferenceContext(value: RC): Self = StObject.set(x, "referenceContext", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setText(value: TextHandler[TC]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTextContext(value: TC): Self = StObject.set(x, "textContext", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarning(value: ErrorHandler[WC]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarningContext(value: WC): Self = StObject.set(x, "warningContext", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var indent: js.UndefOr[js.Array[Double]] = js.native
+    var indent: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var line: Double = js.native
+    var line: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Position {
     

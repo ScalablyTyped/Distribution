@@ -3,7 +3,6 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Monitoring and Logging use an ingestion pipeline to extract metadata for
   * cloud resources of all types, and store the metadata in this message.
   */
-@js.native
 trait SchemaMonitoredResourceMetadata extends StObject {
   
   /**
@@ -26,12 +24,12 @@ trait SchemaMonitoredResourceMetadata extends StObject {
     * &quot;security_group&quot;: [&quot;a&quot;, &quot;b&quot;,
     * &quot;c&quot;],   &quot;spot_instance&quot;: false }
     */
-  var systemLabels: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var systemLabels: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Output only. A map of user-defined metadata labels.
     */
-  var userLabels: js.UndefOr[StringDictionary[String]] = js.native
+  var userLabels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaMonitoredResourceMetadata {
   

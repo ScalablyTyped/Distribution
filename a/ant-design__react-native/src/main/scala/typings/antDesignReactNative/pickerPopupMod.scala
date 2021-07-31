@@ -6,7 +6,6 @@ import typings.antDesignReactNative.anon.ReadonlyPopupPickerProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerPopupMod {
@@ -14,7 +13,9 @@ object pickerPopupMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ant-design/react-native/lib/picker/Popup", JSImport.Default)
   @js.native
-  class default protected () extends ComponentDidUpdate {
+  class default protected ()
+    extends StObject
+       with ComponentDidUpdate {
     def this(props: ReadonlyPopupPickerProps) = this()
   }
   object default {

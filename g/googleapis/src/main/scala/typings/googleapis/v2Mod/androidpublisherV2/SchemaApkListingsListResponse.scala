@@ -2,19 +2,17 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaApkListingsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidpublisher#apkListingsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var listings: js.UndefOr[js.Array[SchemaApkListing]] = js.native
+  var listings: js.UndefOr[js.Array[SchemaApkListing]] = js.undefined
 }
 object SchemaApkListingsListResponse {
   

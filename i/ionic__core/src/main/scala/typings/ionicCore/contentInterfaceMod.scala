@@ -4,15 +4,13 @@ import typings.ionicCore.gestureMod.GestureDetail
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentInterfaceMod {
   
-  @js.native
   trait ScrollBaseDetail extends StObject {
     
-    var isScrolling: Boolean = js.native
+    var isScrolling: Boolean
   }
   object ScrollBaseDetail {
     
@@ -32,14 +30,14 @@ object contentInterfaceMod {
   
   type ScrollCallback = js.Function1[/* detail */ js.UndefOr[ScrollDetail], Boolean | Unit]
   
-  @js.native
   trait ScrollDetail
-    extends GestureDetail
+    extends StObject
+       with GestureDetail
        with ScrollBaseDetail {
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object ScrollDetail {
     

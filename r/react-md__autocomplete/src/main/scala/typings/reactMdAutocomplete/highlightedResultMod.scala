@@ -5,16 +5,18 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highlightedResultMod {
   
   object HighlightedResult {
     
+    @scala.inline
+    def apply(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult")
     @js.native
-    def apply(hasIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -72,53 +74,52 @@ object highlightedResultMod {
     }
   }
   
-  @js.native
   trait HighlightedResultProps extends StObject {
     
     /**
       * The children to highlight. If this is not a string, the highlight will not
       * work.
       */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /**
       * An optional className to provide to the `<span>`.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the highlighting functionality should be enabled. Setting this
       * to false will just return the `children` instead.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional id to use for the `<span>`. This will be suffixed by the
       * current `index` if it was provided
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * The match index which is automatically added when the `repeatable` prop is
       * used for nested matches.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean if the highlighting can be repeated multiple times within the
       * children string.
       */
-    var repeatable: js.UndefOr[Boolean] = js.native
+    var repeatable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional style to provide to the `<span>`.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The current value to match against.
       */
-    var value: String = js.native
+    var value: String
   }
   object HighlightedResultProps {
     

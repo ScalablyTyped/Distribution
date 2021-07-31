@@ -12,7 +12,7 @@ Convert geojson to osm
 | Keywords           | osm, geojson |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 679 |
+| # downloads        | 947 |
 | # stars            | 0 |
 
 ## Links

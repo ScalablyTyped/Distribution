@@ -2,13 +2,13 @@ package typings.hooker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HookerPreempt extends IHookerPreHookResult {
+trait HookerPreempt
+  extends StObject
+     with IHookerPreHookResult {
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object HookerPreempt {
   

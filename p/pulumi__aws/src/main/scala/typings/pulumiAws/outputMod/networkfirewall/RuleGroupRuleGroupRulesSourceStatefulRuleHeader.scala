@@ -2,42 +2,40 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSourceStatefulRuleHeader extends StObject {
   
   /**
     * The destination IP address or address range to inspect for, in CIDR notation. If left empty, this matches with any destination address.
     */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /**
     * The destination port to inspect for. If left empty, this matches with any port.
     */
-  var destinationPort: js.UndefOr[String] = js.native
+  var destinationPort: js.UndefOr[String] = js.undefined
   
   /**
     * The direction of traffic flow to inspect. Valid values: `ANY` or `FORWARD`.
     */
-  var direction: String = js.native
+  var direction: String
   
   /**
     * The protocol to inspect. If not specified, this matches with any protocol.
     * Valid values: `IP`, `TCP`, `UDP`, `ICMP`, `HTTP`, `FTP`, `TLS`, `SMB`, `DNS`, `DCERPC`, `SSH`, `SMTP`, `IMAP`, `MSN`, `KRB5`, `IKEV2`, `TFTP`, `NTP`, `DHCP`.
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * The source IP address or address range for, in CIDR notation. If left empty, this matches with any source address.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The source port to inspect for. If left empty, this matches with any port.
     */
-  var sourcePort: js.UndefOr[String] = js.native
+  var sourcePort: js.UndefOr[String] = js.undefined
 }
 object RuleGroupRuleGroupRulesSourceStatefulRuleHeader {
   

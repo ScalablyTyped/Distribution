@@ -2,20 +2,18 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLPerformance extends StObject {
   
   @JSName("MSHTML.HTMLPerformance_typekey")
-  var MSHTMLDotHTMLPerformance_typekey: HTMLPerformance = js.native
+  var MSHTMLDotHTMLPerformance_typekey: HTMLPerformance
   
-  val navigation: IHTMLPerformanceNavigation = js.native
+  val navigation: IHTMLPerformanceNavigation
   
-  val timing: IHTMLPerformanceTiming = js.native
+  val timing: IHTMLPerformanceTiming
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
 }
 object HTMLPerformance {
   

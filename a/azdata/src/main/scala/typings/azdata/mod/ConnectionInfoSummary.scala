@@ -2,46 +2,44 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionInfoSummary extends StObject {
   
   /**
     * connection id returned from service host.
     */
-  var connectionId: String = js.native
+  var connectionId: String
   
   /**
     * information about the actual connection established
     */
-  var connectionSummary: ConnectionSummary = js.native
+  var connectionSummary: ConnectionSummary
   
   /**
     * Error message returned from the engine, if any.
     */
-  var errorMessage: String = js.native
+  var errorMessage: String
   
   /**
     * Error number returned from the engine, if any.
     */
-  var errorNumber: Double = js.native
+  var errorNumber: Double
   
   /**
     * any diagnostic messages return from the service host.
     */
-  var messages: String = js.native
+  var messages: String
   
   /**
     * URI identifying the owner of the connection
     */
-  var ownerUri: String = js.native
+  var ownerUri: String
   
   /**
     * Information about the connected server.
     */
-  var serverInfo: ServerInfo = js.native
+  var serverInfo: ServerInfo
 }
 object ConnectionInfoSummary {
   

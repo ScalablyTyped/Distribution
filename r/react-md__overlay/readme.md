@@ -10,9 +10,9 @@ A very simple package for dynamically creating overlays.
 | ------------------ | :-------------: |
 | Full name          | @react-md/overlay |
 | Keywords           | react-md, material design, react, overlay, component, components |
-| # releases         | 31 |
+| # releases         | 38 |
 | # dependents       | 3 |
-| # downloads        | 6895 |
+| # downloads        | 18578 |
 | # stars            | 0 |
 
 ## Links

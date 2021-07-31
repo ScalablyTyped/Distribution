@@ -23,7 +23,6 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -51,7 +50,16 @@ object Cloud {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("parse", "Cloud.HTTPOptions")
   @js.native
-  class HTTPOptionsCls () extends HTTPOptions
+  class HTTPOptionsCls ()
+    extends StObject
+       with HTTPOptions {
+    
+    /**
+      * The url to send the request to.
+      */
+    /* CompleteClass */
+    var url: String = js.native
+  }
   
   @scala.inline
   def HTTPOptions_=(x: Instantiable0[HTTPOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPOptions")(x.asInstanceOf[js.Any])
@@ -62,87 +70,67 @@ object Cloud {
   object ReadPreferenceOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption with String] = js.native
+    def apply(value: String): js.UndefOr[typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption & String] = js.native
     
-    /* "NEAREST" */ val Nearest: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Nearest with String = js.native
+    /* "NEAREST" */ val Nearest: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Nearest & String = js.native
     
-    /* "PRIMARY" */ val Primary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Primary with String = js.native
+    /* "PRIMARY" */ val Primary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Primary & String = js.native
     
-    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred with String = js.native
+    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred & String = js.native
     
-    /* "SECONDARY" */ val Secondary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Secondary with String = js.native
+    /* "SECONDARY" */ val Secondary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Secondary & String = js.native
     
-    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred with String = js.native
+    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred & String = js.native
   }
   
-  @JSImport("parse", "Cloud.afterDelete")
-  @js.native
-  def afterDelete(arg1: js.Any): Unit = js.native
-  @JSImport("parse", "Cloud.afterDelete")
-  @js.native
-  def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def afterDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.afterDeleteFile")
-  @js.native
-  def afterDeleteFile(): Unit = js.native
-  @JSImport("parse", "Cloud.afterDeleteFile")
-  @js.native
-  def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def afterDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[Unit]
+  @scala.inline
+  def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.afterFind")
-  @js.native
-  def afterFind(arg1: js.Any): Unit = js.native
-  @JSImport("parse", "Cloud.afterFind")
-  @js.native
-  def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, _]): Unit = js.native
+  @scala.inline
+  def afterFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.afterLogin")
-  @js.native
-  def afterLogin(): Unit = js.native
-  @JSImport("parse", "Cloud.afterLogin")
-  @js.native
-  def afterLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def afterLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")().asInstanceOf[Unit]
+  @scala.inline
+  def afterLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.afterLogout")
-  @js.native
-  def afterLogout(): Unit = js.native
-  @JSImport("parse", "Cloud.afterLogout")
-  @js.native
-  def afterLogout(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def afterLogout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")().asInstanceOf[Unit]
+  @scala.inline
+  def afterLogout(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.afterSave")
-  @js.native
-  def afterSave(arg1: js.Any): Unit = js.native
-  @JSImport("parse", "Cloud.afterSave")
-  @js.native
-  def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def afterSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.afterSaveFile")
-  @js.native
-  def afterSaveFile(): Unit = js.native
-  @JSImport("parse", "Cloud.afterSaveFile")
-  @js.native
-  def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def afterSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[Unit]
+  @scala.inline
+  def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.beforeDelete")
-  @js.native
-  def beforeDelete(arg1: js.Any): Unit = js.native
-  @JSImport("parse", "Cloud.beforeDelete")
-  @js.native
-  def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def beforeDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.beforeDeleteFile")
-  @js.native
-  def beforeDeleteFile(): Unit = js.native
-  @JSImport("parse", "Cloud.beforeDeleteFile")
-  @js.native
-  def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def beforeDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[Unit]
+  @scala.inline
+  def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.beforeFind")
-  @js.native
-  def beforeFind(arg1: js.Any): Unit = js.native
-  @JSImport("parse", "Cloud.beforeFind")
-  @js.native
+  @scala.inline
+  def beforeFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def beforeFind(
     arg1: js.Any,
     func: js.Function1[
@@ -151,44 +139,37 @@ object Cloud {
         typings.parse.mod.global.Parse.Query[typings.parse.mod.global.Parse.Object[Attributes]] | Unit
       ]) | typings.parse.mod.global.Parse.Query[typings.parse.mod.global.Parse.Object[Attributes]] | Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.beforeLogin")
-  @js.native
-  def beforeLogin(): Unit = js.native
-  @JSImport("parse", "Cloud.beforeLogin")
-  @js.native
-  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def beforeLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")().asInstanceOf[Unit]
+  @scala.inline
+  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.beforeSave")
-  @js.native
-  def beforeSave(arg1: js.Any): Unit = js.native
-  @JSImport("parse", "Cloud.beforeSave")
-  @js.native
-  def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
+  @scala.inline
+  def beforeSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.beforeSaveFile")
-  @js.native
-  def beforeSaveFile(): Unit = js.native
-  @JSImport("parse", "Cloud.beforeSaveFile")
-  @js.native
+  @scala.inline
+  def beforeSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")().asInstanceOf[Unit]
+  @scala.inline
   def beforeSaveFile(
     func: js.Function1[
       /* request */ FileTriggerRequest, 
       js.Thenable[typings.parse.mod.global.Parse.File] | Unit
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("parse", "Cloud.define")
-  @js.native
-  def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], _]): Unit = js.native
-  @JSImport("parse", "Cloud.define")
-  @js.native
+  @scala.inline
+  def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def define_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ define with TopLevel[Parameters[T]], 
-    _
+    */ /* param */ define & TopLevel[Parameters[T]], 
+    js.Any
   ] */](
     name: String,
     func: js.Function1[
@@ -197,89 +178,77 @@ object Cloud {
       ], 
       js.Promise[ReturnType[T]] | ReturnType[T]
     ]
-  ): Unit = js.native
-  @JSImport("parse", "Cloud.define")
-  @js.native
-  def define_T_Function0Wildcard[T /* <: js.Function0[_] */](
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def define_T_Function0Any[T /* <: js.Function0[js.Any] */](
     name: String,
     func: js.Function1[
       /* request */ FunctionRequest[js.Object], 
       js.Promise[ReturnType[T]] | ReturnType[T]
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets job status by Id
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
-  @JSImport("parse", "Cloud.getJobStatus")
-  @js.native
-  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = js.native
+  @scala.inline
+  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobStatus")(jobStatusId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Object[Attributes]]]
   
   /**
     * Gets data for the current set of cloud jobs.
     * @returns A promise that will be resolved with the result of the function.
     */
-  @JSImport("parse", "Cloud.getJobsData")
-  @js.native
-  def getJobsData(): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = js.native
+  @scala.inline
+  def getJobsData(): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobsData")().asInstanceOf[js.Promise[typings.parse.mod.global.Parse.Object[Attributes]]]
   
-  @JSImport("parse", "Cloud.httpRequest")
-  @js.native
-  def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = js.native
+  @scala.inline
+  def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
   
-  @JSImport("parse", "Cloud.job")
-  @js.native
-  def job(name: String): HttpResponse = js.native
-  @JSImport("parse", "Cloud.job")
-  @js.native
-  def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native
+  @scala.inline
+  def job(name: String): HttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any]).asInstanceOf[HttpResponse]
+  @scala.inline
+  def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[HttpResponse]
   
-  @JSImport("parse", "Cloud.run")
-  @js.native
-  def run(name: String): js.Promise[_] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
-  def run(name: String, data: js.UndefOr[scala.Nothing], options: RunOptions): js.Promise[_] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
-  def run(name: String, data: Params): js.Promise[_] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
-  def run(name: String, data: Params, options: RunOptions): js.Promise[_] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
-  def run[T /* <: js.Function0[_] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
+  @scala.inline
+  def run(name: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def run(name: String, data: Unit, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def run(name: String, data: Params): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def run(name: String, data: Params, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def run[T /* <: js.Function0[js.Any] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  
+  @scala.inline
   def run_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run with TopLevel[Parameters[T]], 
-    _
+    */ /* param */ run & TopLevel[Parameters[T]], 
+    js.Any
   ] */](
     name: String,
     data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
-  ): js.Promise[ReturnType[T]] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
+  ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  @scala.inline
   def run_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run with TopLevel[Parameters[T]], 
-    _
+    */ /* param */ run & TopLevel[Parameters[T]], 
+    js.Any
   ] */](
     name: String,
     data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any,
     options: RunOptions
-  ): js.Promise[ReturnType[T]] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
-  def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String): js.Promise[ReturnType[T]] = js.native
-  @JSImport("parse", "Cloud.run")
-  @js.native
-  def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String, data: js.UndefOr[scala.Nothing], options: RunOptions): js.Promise[ReturnType[T]] = js.native
+  ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  
+  @scala.inline
+  def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
+  @scala.inline
+  def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
   
   /**
     * Starts a given cloud job, which will process asynchronously.
@@ -287,11 +256,9 @@ object Cloud {
     * @param data The parameters to send to the cloud function.
     * @returns A promise that will be resolved with the jobStatusId of the job.
     */
-  @JSImport("parse", "Cloud.startJob")
-  @js.native
-  def startJob(jobName: String, data: js.Any): js.Promise[String] = js.native
+  @scala.inline
+  def startJob(jobName: String, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("parse", "Cloud.useMasterKey")
-  @js.native
-  def useMasterKey(): Unit = js.native
+  @scala.inline
+  def useMasterKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMasterKey")().asInstanceOf[Unit]
 }

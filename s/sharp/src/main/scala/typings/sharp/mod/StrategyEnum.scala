@@ -2,15 +2,13 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StrategyEnum extends StObject {
   
-  var attention: Double = js.native
+  var attention: Double
   
-  var entropy: Double = js.native
+  var entropy: Double
 }
 object StrategyEnum {
   

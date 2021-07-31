@@ -7,7 +7,6 @@ import typings.officeJsPreview.OneNote.Interfaces.InkAnalysisParagraphCollection
 import typings.officeJsPreview.OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait InkAnalysisParagraphCollection extends ClientObject {
+trait InkAnalysisParagraphCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -71,7 +72,7 @@ trait InkAnalysisParagraphCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): InkAnalysisParagraphCollection = js.native
-  def load(option: InkAnalysisParagraphCollectionLoadOptions with CollectionLoadOptions): InkAnalysisParagraphCollection = js.native
+  def load(option: InkAnalysisParagraphCollectionLoadOptions & CollectionLoadOptions): InkAnalysisParagraphCollection = js.native
   def load(option: String): InkAnalysisParagraphCollection = js.native
   def load(option: js.Array[String]): InkAnalysisParagraphCollection = js.native
   def load(option: LoadOption): InkAnalysisParagraphCollection = js.native

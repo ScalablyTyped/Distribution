@@ -2,39 +2,37 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a file&#39;s parent.
   */
-@js.native
 trait SchemaParentReference extends StObject {
   
   /**
     * The ID of the parent.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the parent is the root folder.
     */
-  var isRoot: js.UndefOr[Boolean] = js.native
+  var isRoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is always drive#parentReference.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the parent.
     */
-  var parentLink: js.UndefOr[String] = js.native
+  var parentLink: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this reference.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaParentReference {
   

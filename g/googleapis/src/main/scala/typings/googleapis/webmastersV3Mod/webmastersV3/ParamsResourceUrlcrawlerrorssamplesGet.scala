@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUrlcrawlerrorssamplesGet extends StandardParameters {
+trait ParamsResourceUrlcrawlerrorssamplesGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The crawl error category. For example: authPermissions
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * The user agent type (platform) that made the request. For example: web
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * The site's URL, including protocol. For example: http://www.example.com/
     */
-  var siteUrl: js.UndefOr[String] = js.native
+  var siteUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The relative path (without the site) of the sample URL. It must be one of
@@ -38,7 +38,7 @@ trait ParamsResourceUrlcrawlerrorssamplesGet extends StandardParameters {
     * https://www.example.com/pagename on the site https://www.example.com/,
     * the url value is pagename
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUrlcrawlerrorssamplesGet {
   

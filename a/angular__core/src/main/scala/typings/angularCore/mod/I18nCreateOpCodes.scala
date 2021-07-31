@@ -3,7 +3,6 @@ package typings.angularCore.mod
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait I18nCreateOpCodes
-  extends Array[Double | String]
+  extends StObject
+     with Array[Double | String]
      with I18nDebug {
   
   var __brand__ : typings.angularCore.angularCoreStrings.I18nCreateOpCodes = js.native

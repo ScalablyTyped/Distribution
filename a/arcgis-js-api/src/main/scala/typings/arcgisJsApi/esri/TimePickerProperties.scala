@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimePickerProperties extends WidgetProperties {
+trait TimePickerProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The input value for the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html#value)
     */
-  var value: js.UndefOr[DateProperties] = js.native
+  var value: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html#viewModel)
     */
-  var viewModel: js.UndefOr[TimePickerViewModelProperties] = js.native
+  var viewModel: js.UndefOr[TimePickerViewModelProperties] = js.undefined
 }
 object TimePickerProperties {
   

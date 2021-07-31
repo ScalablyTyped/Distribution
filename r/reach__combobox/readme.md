@@ -10,9 +10,9 @@ Accessible React Combobox (Autocomplete).
 | ------------------ | :-------------: |
 | Full name          | @reach/combobox |
 | Keywords           | - |
-| # releases         | 39 |
-| # dependents       | 13 |
-| # downloads        | 1676064 |
+| # releases         | 44 |
+| # dependents       | 19 |
+| # downloads        | 5253173 |
 | # stars            | 0 |
 
 ## Links

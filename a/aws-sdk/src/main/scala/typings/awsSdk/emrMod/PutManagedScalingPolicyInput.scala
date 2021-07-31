@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutManagedScalingPolicyInput extends StObject {
   
   /**
     *  Specifies the ID of an EMR cluster where the managed scaling policy is attached. 
     */
-  var ClusterId: typings.awsSdk.emrMod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
     *  Specifies the constraints for the managed scaling policy. 
     */
-  var ManagedScalingPolicy: typings.awsSdk.emrMod.ManagedScalingPolicy = js.native
+  var ManagedScalingPolicy: typings.awsSdk.emrMod.ManagedScalingPolicy
 }
 object PutManagedScalingPolicyInput {
   

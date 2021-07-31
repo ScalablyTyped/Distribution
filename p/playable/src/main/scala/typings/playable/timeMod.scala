@@ -7,15 +7,88 @@ import typings.playable.timeTypesMod.ITimeViewConfig
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/time/time", JSImport.Default)
   @js.native
-  class default protected () extends TimeControl {
+  class default protected ()
+    extends StObject
+       with TimeControl {
     def this(hasEventEmitterEngineTheme: EngineEventEmitter) = this()
+    
+    /* CompleteClass */
+    var _bindCallbacks: js.Any = js.native
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _processLiveStateChange: js.Any = js.native
+    
+    /* CompleteClass */
+    var _setCurrentTime: js.Any = js.native
+    
+    /* CompleteClass */
+    var _setDurationTime: js.Any = js.native
+    
+    /* CompleteClass */
+    var _startIntervalUpdates: js.Any = js.native
+    
+    /* CompleteClass */
+    var _stopIntervalUpdates: js.Any = js.native
+    
+    /* CompleteClass */
+    var _theme: js.Any = js.native
+    
+    /* CompleteClass */
+    var _toggleIntervalUpdates: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateControlInterval: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateCurrentTime: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateDurationTime: js.Any = js.native
+    
+    /* CompleteClass */
+    var _updateTimeFromPreview: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    var isHidden: Boolean = js.native
+    
+    /* CompleteClass */
+    override def reset(): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.timeViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -47,46 +120,47 @@ object timeMod {
   @js.native
   val UPDATE_TIME_INTERVAL_DELAY: Double = js.native
   
-  @js.native
-  trait TimeControl extends ITimeControl {
+  trait TimeControl
+    extends StObject
+       with ITimeControl {
     
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _processLiveStateChange: js.Any = js.native
+    var _processLiveStateChange: js.Any
     
-    var _setCurrentTime: js.Any = js.native
+    var _setCurrentTime: js.Any
     
-    var _setDurationTime: js.Any = js.native
+    var _setDurationTime: js.Any
     
-    var _startIntervalUpdates: js.Any = js.native
+    var _startIntervalUpdates: js.Any
     
-    var _stopIntervalUpdates: js.Any = js.native
+    var _stopIntervalUpdates: js.Any
     
-    var _theme: js.Any = js.native
+    var _theme: js.Any
     
-    var _toggleIntervalUpdates: js.Any = js.native
+    var _toggleIntervalUpdates: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var _updateControlInterval: js.Any = js.native
+    var _updateControlInterval: js.Any
     
-    var _updateCurrentTime: js.Any = js.native
+    var _updateCurrentTime: js.Any
     
-    var _updateDurationTime: js.Any = js.native
+    var _updateDurationTime: js.Any
     
-    var _updateTimeFromPreview: js.Any = js.native
+    var _updateTimeFromPreview: js.Any
     
-    var isHidden: Boolean = js.native
+    var isHidden: Boolean
     
-    var view: typings.playable.timeViewMod.default = js.native
+    var view: typings.playable.timeViewMod.default
   }
   object TimeControl {
     

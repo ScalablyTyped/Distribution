@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudienceSegmentGroup extends StObject {
   
   /** Audience segments assigned to this group. The number of segments must be between 2 and 100. */
-  var audienceSegments: js.UndefOr[js.Array[AudienceSegment]] = js.native
+  var audienceSegments: js.UndefOr[js.Array[AudienceSegment]] = js.undefined
   
   /** ID of this audience segment group. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Name of this audience segment group. This is a required field and must be less than 65 characters long. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object AudienceSegmentGroup {
   

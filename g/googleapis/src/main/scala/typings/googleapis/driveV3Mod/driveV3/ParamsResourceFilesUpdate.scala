@@ -7,62 +7,62 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceFilesUpdate extends StandardParameters {
+trait ParamsResourceFilesUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * A comma-separated list of parent IDs to add.
     */
-  var addParents: js.UndefOr[String] = js.native
+  var addParents: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the file.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to set the 'keepForever' field in the new head revision. This is
     * only applicable to files with binary content in Drive.
     */
-  var keepRevisionForever: js.UndefOr[Boolean] = js.native
+  var keepRevisionForever: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * A language hint for OCR processing during image import (ISO 639-1 code).
     */
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of parent IDs to remove.
     */
-  var removeParents: js.UndefOr[String] = js.native
+  var removeParents: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFile] = js.native
+  var requestBody: js.UndefOr[SchemaFile] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to use the uploaded content as indexable text.
     */
-  var useContentAsIndexableText: js.UndefOr[Boolean] = js.native
+  var useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceFilesUpdate {
   

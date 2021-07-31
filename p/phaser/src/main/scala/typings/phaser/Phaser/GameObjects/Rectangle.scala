@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,4 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can change the size of the rectangle by changing the `width` and `height` properties.
   */
 @js.native
-trait Rectangle extends Shape
+trait Rectangle
+  extends StObject
+     with Shape

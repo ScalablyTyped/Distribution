@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConferenceProvidersResponse extends StObject {
   
   /**
     * The conference providers.
     */
-  var ConferenceProviders: js.UndefOr[ConferenceProvidersList] = js.native
+  var ConferenceProviders: js.UndefOr[ConferenceProvidersList] = js.undefined
   
   /**
     * The tokens used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
 }
 object ListConferenceProvidersResponse {
   

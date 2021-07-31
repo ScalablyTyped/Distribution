@@ -2,36 +2,34 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingInvoiceItem extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var chargeAmount: js.UndefOr[String] = js.native
+  var chargeAmount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var chargeName: js.UndefOr[String] = js.native
+  var chargeName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var invoiceItemId: js.UndefOr[String] = js.native
+  var invoiceItemId: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity of envelopes to add to the account.
     */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var unitPrice: js.UndefOr[String] = js.native
+  var unitPrice: js.UndefOr[String] = js.undefined
 }
 object BillingInvoiceItem {
   

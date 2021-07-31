@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Insurance or medical plan
   */
-@js.native
-trait ClaimResponseInsurance extends BackboneElement {
+trait ClaimResponseInsurance
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'businessArrangement'.
     */
-  var _businessArrangement: js.UndefOr[Element] = js.native
+  var _businessArrangement: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'focal'.
     */
-  var _focal: js.UndefOr[Element] = js.native
+  var _focal: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'preAuthRef'.
     */
-  var _preAuthRef: js.UndefOr[js.Array[Element]] = js.native
+  var _preAuthRef: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.native
+  var _sequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Business agreement
     */
-  var businessArrangement: js.UndefOr[String] = js.native
+  var businessArrangement: js.UndefOr[String] = js.undefined
   
   /**
     * Adjudication results
     */
-  var claimResponse: js.UndefOr[Reference] = js.native
+  var claimResponse: js.UndefOr[Reference] = js.undefined
   
   /**
     * Insurance information
     */
-  var coverage: Reference = js.native
+  var coverage: Reference
   
   /**
     * Is the focal Coverage
     */
-  var focal: Boolean = js.native
+  var focal: Boolean
   
   /**
     * Pre-Authorization/Determination Reference
     */
-  var preAuthRef: js.UndefOr[js.Array[String]] = js.native
+  var preAuthRef: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Service instance identifier
     */
-  var sequence: positiveInt = js.native
+  var sequence: positiveInt
 }
 object ClaimResponseInsurance {
   

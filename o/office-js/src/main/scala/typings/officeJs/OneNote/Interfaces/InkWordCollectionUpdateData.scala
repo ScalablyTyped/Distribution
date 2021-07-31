@@ -2,14 +2,12 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the InkWordCollection object, for use in "inkWordCollection.set({ ... })". */
-@js.native
 trait InkWordCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[InkWordData]] = js.native
+  var items: js.UndefOr[js.Array[InkWordData]] = js.undefined
 }
 object InkWordCollectionUpdateData {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeviceRequest extends StObject {
   
   /**
     * A description of the device. Length Constraints: Maximum length of 256 characters.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The location of the device.
     */
-  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.undefined
   
   /**
     * The model of the device. Length Constraints: Maximum length of 128 characters.
     */
-  var Model: js.UndefOr[String] = js.native
+  var Model: js.UndefOr[String] = js.undefined
   
   /**
     * The serial number of the device. Length Constraints: Maximum length of 128 characters.
     */
-  var SerialNumber: js.UndefOr[String] = js.native
+  var SerialNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the site.
     */
-  var SiteId: js.UndefOr[String] = js.native
+  var SiteId: js.UndefOr[String] = js.undefined
   
   /**
     * The tags to apply to the resource during creation.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of the device.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
   
   /**
     * The vendor of the device. Length Constraints: Maximum length of 128 characters.
     */
-  var Vendor: js.UndefOr[String] = js.native
+  var Vendor: js.UndefOr[String] = js.undefined
 }
 object CreateDeviceRequest {
   

@@ -2,7 +2,6 @@ package typings.domHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -785,7 +784,9 @@ object typesMod {
     - typings.domHelpers.domHelpersStrings.textAnchor
     - typings.domHelpers.domHelpersStrings.vectorEffect
   */
-  trait CamelProperty extends Property
+  trait CamelProperty
+    extends StObject
+       with Property
   
   /* keyof csstype.csstype.PropertiesHyphen<string | 0> */ /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.`align-content`
@@ -1565,7 +1566,9 @@ object typesMod {
     - typings.domHelpers.domHelpersStrings.`text-anchor`
     - typings.domHelpers.domHelpersStrings.`vector-effect`
   */
-  trait HyphenProperty extends Property
+  trait HyphenProperty
+    extends StObject
+       with Property
   
   /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.typesMod.HyphenProperty

@@ -2,13 +2,11 @@ package typings.dbJs.DbJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountableQuery[T] extends StObject {
   
-  def count(): ExecutableQuery[T] = js.native
+  def count(): ExecutableQuery[T]
 }
 object CountableQuery {
   
@@ -19,7 +17,7 @@ object CountableQuery {
   }
   
   @scala.inline
-  implicit class CountableQueryMutableBuilder[Self <: CountableQuery[_], T] (val x: Self with CountableQuery[T]) extends AnyVal {
+  implicit class CountableQueryMutableBuilder[Self <: CountableQuery[?], T] (val x: Self & CountableQuery[T]) extends AnyVal {
     
     @scala.inline
     def setCount(value: () => ExecutableQuery[T]): Self = StObject.set(x, "count", js.Any.fromFunction0(value))

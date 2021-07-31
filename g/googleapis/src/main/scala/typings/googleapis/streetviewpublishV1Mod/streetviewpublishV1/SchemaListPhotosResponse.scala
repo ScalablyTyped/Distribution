@@ -2,26 +2,24 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to list all photos that belong to a user.
   */
-@js.native
 trait SchemaListPhotosResponse extends StObject {
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of photos. The pageSize field in the request determines the number
     * of items returned.
     */
-  var photos: js.UndefOr[js.Array[SchemaPhoto]] = js.native
+  var photos: js.UndefOr[js.Array[SchemaPhoto]] = js.undefined
 }
 object SchemaListPhotosResponse {
   

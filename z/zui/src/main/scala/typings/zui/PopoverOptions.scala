@@ -2,33 +2,31 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopoverOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String | Boolean] = js.native
+  var container: js.UndefOr[String | Boolean] = js.undefined
   
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
   
-  var delay: js.UndefOr[Double | js.Object] = js.native
+  var delay: js.UndefOr[Double | js.Object] = js.undefined
   
-  var html: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.undefined
   
-  var placement: js.UndefOr[String | CallBack] = js.native
+  var placement: js.UndefOr[String | CallBack] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String | CallBack] = js.native
+  var title: js.UndefOr[String | CallBack] = js.undefined
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
   
-  var viewport: js.UndefOr[String | CallBack | js.Object] = js.native
+  var viewport: js.UndefOr[String | CallBack | js.Object] = js.undefined
 }
 object PopoverOptions {
   

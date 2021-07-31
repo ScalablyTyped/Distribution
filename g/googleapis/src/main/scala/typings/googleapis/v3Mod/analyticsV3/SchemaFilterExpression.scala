@@ -2,24 +2,22 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Analytics filter expression.
   */
-@js.native
 trait SchemaFilterExpression extends StObject {
   
   /**
     * Determines if the filter is case sensitive.
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Filter expression value
     */
-  var expressionValue: js.UndefOr[String] = js.native
+  var expressionValue: js.UndefOr[String] = js.undefined
   
   /**
     * Field to filter. Possible values:   - Content and Traffic   -
@@ -54,18 +52,18 @@ trait SchemaFilterExpression extends StObject {
     * - Social   - SOCIAL_NETWORK,  - SOCIAL_ACTION,  - SOCIAL_ACTION_TARGET,
     * - Custom dimension   - CUSTOM_DIMENSION (See accompanying field index),
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * The Index of the custom dimension. Set only if the field is a is
     * CUSTOM_DIMENSION.
     */
-  var fieldIndex: js.UndefOr[Double] = js.native
+  var fieldIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Kind value for filter expression
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Match type for this filter. Possible values are BEGINS_WITH, EQUAL,
@@ -73,7 +71,7 @@ trait SchemaFilterExpression extends StObject {
     * PAGE_REQUEST_URI, or PAGE_HOSTNAME filters can use any match type; all
     * other filters must use MATCHES.
     */
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
 }
 object SchemaFilterExpression {
   

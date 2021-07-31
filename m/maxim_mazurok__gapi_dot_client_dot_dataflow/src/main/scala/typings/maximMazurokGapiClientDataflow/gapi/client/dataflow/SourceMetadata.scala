@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMetadata extends StObject {
   
   /**
     * An estimate of the total size (in bytes) of the data that would be read from this source. This estimate is in terms of external storage size, before any decompression or other
     * processing done by the reader.
     */
-  var estimatedSizeBytes: js.UndefOr[String] = js.native
+  var estimatedSizeBytes: js.UndefOr[String] = js.undefined
   
   /** Specifies that the size of this source is known to be infinite (this is a streaming source). */
-  var infinite: js.UndefOr[Boolean] = js.native
+  var infinite: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this source is known to produce key/value pairs with the (encoded) keys in lexicographically sorted order. */
-  var producesSortedKeys: js.UndefOr[Boolean] = js.native
+  var producesSortedKeys: js.UndefOr[Boolean] = js.undefined
 }
 object SourceMetadata {
   

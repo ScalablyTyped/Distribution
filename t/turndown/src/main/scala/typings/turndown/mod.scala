@@ -22,14 +22,15 @@ import typings.turndown.turndownStrings.setext
 import typings.turndown.turndownStrings.shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("turndown", JSImport.Namespace)
   @js.native
-  class ^ () extends TurndownService {
+  class ^ ()
+    extends StObject
+       with TurndownService {
     def this(options: Options) = this()
   }
   
@@ -39,34 +40,33 @@ object mod {
   
   type Node = HTMLElement | Document | DocumentFragment
   
-  @js.native
   trait Options extends StObject {
     
-    var blankReplacement: js.UndefOr[ReplacementFunction] = js.native
+    var blankReplacement: js.UndefOr[ReplacementFunction] = js.undefined
     
-    var br: js.UndefOr[String] = js.native
+    var br: js.UndefOr[String] = js.undefined
     
-    var bulletListMarker: js.UndefOr[`-_` | Plussign | Asterisk] = js.native
+    var bulletListMarker: js.UndefOr[`-_` | Plussign | Asterisk] = js.undefined
     
-    var codeBlockStyle: js.UndefOr[indented | fenced] = js.native
+    var codeBlockStyle: js.UndefOr[indented | fenced] = js.undefined
     
-    var defaultReplacement: js.UndefOr[ReplacementFunction] = js.native
+    var defaultReplacement: js.UndefOr[ReplacementFunction] = js.undefined
     
-    var emDelimiter: js.UndefOr[_underscore | Asterisk] = js.native
+    var emDelimiter: js.UndefOr[_underscore | Asterisk] = js.undefined
     
-    var fence: js.UndefOr[GraveaccentGraveaccentGraveaccent | TildeTildeTilde] = js.native
+    var fence: js.UndefOr[GraveaccentGraveaccentGraveaccent | TildeTildeTilde] = js.undefined
     
-    var headingStyle: js.UndefOr[setext | atx] = js.native
+    var headingStyle: js.UndefOr[setext | atx] = js.undefined
     
-    var hr: js.UndefOr[String] = js.native
+    var hr: js.UndefOr[String] = js.undefined
     
-    var keepReplacement: js.UndefOr[ReplacementFunction] = js.native
+    var keepReplacement: js.UndefOr[ReplacementFunction] = js.undefined
     
-    var linkReferenceStyle: js.UndefOr[full | collapsed | shortcut] = js.native
+    var linkReferenceStyle: js.UndefOr[full | collapsed | shortcut] = js.undefined
     
-    var linkStyle: js.UndefOr[inlined | referenced] = js.native
+    var linkStyle: js.UndefOr[inlined | referenced] = js.undefined
     
-    var strongDelimiter: js.UndefOr[__ | AsteriskAsterisk] = js.native
+    var strongDelimiter: js.UndefOr[__ | AsteriskAsterisk] = js.undefined
   }
   object Options {
     
@@ -163,12 +163,11 @@ object mod {
   
   type ReplacementFunction = js.Function3[/* content */ String, /* node */ Node, /* options */ Options, String]
   
-  @js.native
   trait Rule extends StObject {
     
-    var filter: Filter = js.native
+    var filter: Filter
     
-    var replacement: js.UndefOr[ReplacementFunction] = js.native
+    var replacement: js.UndefOr[ReplacementFunction] = js.undefined
   }
   object Rule {
     
@@ -198,34 +197,89 @@ object mod {
     }
   }
   
-  @js.native
   trait Rules extends StObject {
     
-    def add(key: Filter, rule: Rule): Unit = js.native
+    def add(key: Filter, rule: Rule): Unit
     
-    var array: js.Array[Rule] = js.native
+    var array: js.Array[Rule]
     
-    def blankRule(content: String, node: Node, options: Options): String = js.native
+    def blankRule(content: String, node: Node, options: Options): String
     @JSName("blankRule")
-    var blankRule_Original: ReplacementFunction = js.native
+    var blankRule_Original: ReplacementFunction
     
-    def defaultRule(content: String, node: Node, options: Options): String = js.native
+    def defaultRule(content: String, node: Node, options: Options): String
     @JSName("defaultRule")
-    var defaultRule_Original: ReplacementFunction = js.native
+    var defaultRule_Original: ReplacementFunction
     
-    def forEach(callback: js.Function2[/* rule */ Rule, /* index */ Double, _]): Unit = js.native
+    def forEach(callback: js.Function2[/* rule */ Rule, /* index */ Double, js.Any]): Unit
     
-    def forNode(node: Node): Rule = js.native
+    def forNode(node: Node): Rule
     
-    def keep(filter: Filter): Unit = js.native
+    def keep(filter: Filter): Unit
     
-    def keepReplacement(content: String, node: Node, options: Options): String = js.native
+    def keepReplacement(content: String, node: Node, options: Options): String
     @JSName("keepReplacement")
-    var keepReplacement_Original: ReplacementFunction = js.native
+    var keepReplacement_Original: ReplacementFunction
     
-    var options: Options = js.native
+    var options: Options
     
-    def remove(filter: Filter): Unit = js.native
+    def remove(filter: Filter): Unit
+  }
+  object Rules {
+    
+    @scala.inline
+    def apply(
+      add: (Filter, Rule) => Unit,
+      array: js.Array[Rule],
+      blankRule: (/* content */ String, /* node */ Node, /* options */ Options) => String,
+      defaultRule: (/* content */ String, /* node */ Node, /* options */ Options) => String,
+      forEach: js.Function2[/* rule */ Rule, /* index */ Double, js.Any] => Unit,
+      forNode: Node => Rule,
+      keep: Filter => Unit,
+      keepReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String,
+      options: Options,
+      remove: Filter => Unit
+    ): Rules = {
+      val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), array = array.asInstanceOf[js.Any], blankRule = js.Any.fromFunction3(blankRule), defaultRule = js.Any.fromFunction3(defaultRule), forEach = js.Any.fromFunction1(forEach), forNode = js.Any.fromFunction1(forNode), keep = js.Any.fromFunction1(keep), keepReplacement = js.Any.fromFunction3(keepReplacement), options = options.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove))
+      __obj.asInstanceOf[Rules]
+    }
+    
+    @scala.inline
+    implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAdd(value: (Filter, Rule) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setArray(value: js.Array[Rule]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setArrayVarargs(value: Rule*): Self = StObject.set(x, "array", js.Array(value :_*))
+      
+      @scala.inline
+      def setBlankRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "blankRule", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setDefaultRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "defaultRule", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setForEach(value: js.Function2[/* rule */ Rule, /* index */ Double, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setForNode(value: Node => Rule): Self = StObject.set(x, "forNode", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setKeep(value: Filter => Unit): Self = StObject.set(x, "keep", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setKeepReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "keepReplacement", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRemove(value: Filter => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    }
   }
   
   /* Rewritten from type alias, can be one of: 

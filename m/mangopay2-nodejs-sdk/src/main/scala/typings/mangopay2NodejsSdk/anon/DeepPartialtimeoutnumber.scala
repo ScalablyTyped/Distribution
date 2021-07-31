@@ -3,14 +3,12 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.typesMod.DeepPartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<{  timeout :number}> */
-@js.native
 trait DeepPartialtimeoutnumber extends StObject {
   
-  var timeout: js.UndefOr[DeepPartial[Double]] = js.native
+  var timeout: js.UndefOr[DeepPartial[Double]] = js.undefined
 }
 object DeepPartialtimeoutnumber {
   

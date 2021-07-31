@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object ForegroundText extends StObject {
   
   /** A Windows-specified default dark text color. */
   @js.native
-  sealed trait dark extends ForegroundText
+  sealed trait dark
+    extends StObject
+       with ForegroundText
   
   /** A Windows-specified default light text color. */
   @js.native
-  sealed trait light extends ForegroundText
+  sealed trait light
+    extends StObject
+       with ForegroundText
 }

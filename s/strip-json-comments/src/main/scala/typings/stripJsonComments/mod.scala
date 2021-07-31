@@ -2,7 +2,6 @@ package typings.stripJsonComments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,21 +21,22 @@ object mod {
   //=> {unicorn: 'cake'}
   ```
   */
-  @JSImport("strip-json-comments", JSImport.Namespace)
-  @js.native
-  def apply(jsonString: String): String = js.native
-  @JSImport("strip-json-comments", JSImport.Namespace)
-  @js.native
-  def apply(jsonString: String, options: Options): String = js.native
+  @scala.inline
+  def apply(jsonString: String): String = ^.asInstanceOf[js.Dynamic].apply(jsonString.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(jsonString: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(jsonString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("strip-json-comments", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Replace comments with whitespace instead of stripping them entirely.
     		@default true
     		*/
-    val whitespace: js.UndefOr[Boolean] = js.native
+    val whitespace: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

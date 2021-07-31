@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.c3.mod.FormatFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var format: StringDictionary[Boolean | FormatFunction] = js.native
+  var format: StringDictionary[Boolean | FormatFunction]
 }
 object `1` {
   

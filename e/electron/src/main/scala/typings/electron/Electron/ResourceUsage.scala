@@ -2,23 +2,21 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceUsage extends StObject {
   
-  var cssStyleSheets: MemoryUsageDetails = js.native
+  var cssStyleSheets: MemoryUsageDetails
   
-  var fonts: MemoryUsageDetails = js.native
+  var fonts: MemoryUsageDetails
   
-  var images: MemoryUsageDetails = js.native
+  var images: MemoryUsageDetails
   
-  var other: MemoryUsageDetails = js.native
+  var other: MemoryUsageDetails
   
-  var scripts: MemoryUsageDetails = js.native
+  var scripts: MemoryUsageDetails
   
-  var xslStyleSheets: MemoryUsageDetails = js.native
+  var xslStyleSheets: MemoryUsageDetails
 }
 object ResourceUsage {
   

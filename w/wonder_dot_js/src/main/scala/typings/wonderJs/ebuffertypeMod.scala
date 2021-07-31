@@ -1,63 +1,60 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/buffer/EBufferType", JSImport.Namespace)
-@js.native
-object ebuffertypeMod extends js.Object {
-  @js.native
-  sealed trait EBufferType extends js.Object
+object ebuffertypeMod {
   
   @js.native
-  object EBufferType extends js.Object {
-    @js.native
-    sealed trait BYTE extends EBufferType
-    
-    @js.native
-    sealed trait FLOAT extends EBufferType
-    
-    @js.native
-    sealed trait INT extends EBufferType
-    
-    @js.native
-    sealed trait SHORT extends EBufferType
-    
-    @js.native
-    sealed trait UNSIGNED_BYTE extends EBufferType
-    
-    @js.native
-    sealed trait UNSIGNED_INT extends EBufferType
-    
-    @js.native
-    sealed trait UNSIGNED_SHORT extends EBufferType
+  sealed trait EBufferType extends StObject
+  @JSImport("wonder.js/dist/es2015/renderer/buffer/EBufferType", "EBufferType")
+  @js.native
+  object EBufferType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EBufferType with Double] = js.native
-    /* 0 */ @js.native
-    object BYTE extends TopLevel[BYTE with Double]
+    def apply(value: Double): js.UndefOr[EBufferType & Double] = js.native
     
-    /* 6 */ @js.native
-    object FLOAT extends TopLevel[FLOAT with Double]
+    @js.native
+    sealed trait BYTE
+      extends StObject
+         with EBufferType
+    /* 0 */ val BYTE: typings.wonderJs.ebuffertypeMod.EBufferType.BYTE & Double = js.native
     
-    /* 4 */ @js.native
-    object INT extends TopLevel[INT with Double]
+    @js.native
+    sealed trait FLOAT
+      extends StObject
+         with EBufferType
+    /* 6 */ val FLOAT: typings.wonderJs.ebuffertypeMod.EBufferType.FLOAT & Double = js.native
     
-    /* 2 */ @js.native
-    object SHORT extends TopLevel[SHORT with Double]
+    @js.native
+    sealed trait INT
+      extends StObject
+         with EBufferType
+    /* 4 */ val INT: typings.wonderJs.ebuffertypeMod.EBufferType.INT & Double = js.native
     
-    /* 1 */ @js.native
-    object UNSIGNED_BYTE extends TopLevel[UNSIGNED_BYTE with Double]
+    @js.native
+    sealed trait SHORT
+      extends StObject
+         with EBufferType
+    /* 2 */ val SHORT: typings.wonderJs.ebuffertypeMod.EBufferType.SHORT & Double = js.native
     
-    /* 5 */ @js.native
-    object UNSIGNED_INT extends TopLevel[UNSIGNED_INT with Double]
+    @js.native
+    sealed trait UNSIGNED_BYTE
+      extends StObject
+         with EBufferType
+    /* 1 */ val UNSIGNED_BYTE: typings.wonderJs.ebuffertypeMod.EBufferType.UNSIGNED_BYTE & Double = js.native
     
-    /* 3 */ @js.native
-    object UNSIGNED_SHORT extends TopLevel[UNSIGNED_SHORT with Double]
+    @js.native
+    sealed trait UNSIGNED_INT
+      extends StObject
+         with EBufferType
+    /* 5 */ val UNSIGNED_INT: typings.wonderJs.ebuffertypeMod.EBufferType.UNSIGNED_INT & Double = js.native
     
+    @js.native
+    sealed trait UNSIGNED_SHORT
+      extends StObject
+         with EBufferType
+    /* 3 */ val UNSIGNED_SHORT: typings.wonderJs.ebuffertypeMod.EBufferType.UNSIGNED_SHORT & Double = js.native
   }
-  
 }
-

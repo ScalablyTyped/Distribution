@@ -2,21 +2,19 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ascending extends StObject {
   
-  var ascending: js.UndefOr[js.Any] = js.native
+  var ascending: js.UndefOr[js.Any] = js.undefined
   
-  var contract: js.UndefOr[js.Any] = js.native
+  var contract: js.UndefOr[js.Any] = js.undefined
   
-  var descending: js.UndefOr[js.Any] = js.native
+  var descending: js.UndefOr[js.Any] = js.undefined
   
-  var expand: js.UndefOr[js.Any] = js.native
+  var expand: js.UndefOr[js.Any] = js.undefined
   
-  var sortable: js.UndefOr[js.Any] = js.native
+  var sortable: js.UndefOr[js.Any] = js.undefined
 }
 object Ascending {
   

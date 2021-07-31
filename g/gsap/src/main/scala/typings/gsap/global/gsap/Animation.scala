@@ -2,7 +2,6 @@ package typings.gsap.global.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("gsap.Animation")
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * class directly.
   */
 class Animation ()
-  extends typings.gsap.gsap.Animation {
+  extends StObject
+     with typings.gsap.gsap.Animation {
   def this(duration: Double) = this()
-  def this(duration: js.UndefOr[scala.Nothing], vars: js.Any) = this()
   def this(duration: Double, vars: js.Any) = this()
+  def this(duration: Unit, vars: js.Any) = this()
 }

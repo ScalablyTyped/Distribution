@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBusinessReportSchedulesResponse extends StObject {
   
   /**
     * The schedule of the reports.
     */
-  var BusinessReportSchedules: js.UndefOr[BusinessReportScheduleList] = js.native
+  var BusinessReportSchedules: js.UndefOr[BusinessReportScheduleList] = js.undefined
   
   /**
     * The token used to list the remaining schedules from the previous API call.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
 }
 object ListBusinessReportSchedulesResponse {
   

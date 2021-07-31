@@ -2,19 +2,17 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * If <code>debuggerId</code> is set stack trace comes from another debugger and can be resolved there. This allows to track cross-debugger calls. See <code>Runtime.StackTrace</code> and <code>Debugger.paused</code> for usages.
   * @experimental
   */
-@js.native
 trait StackTraceId extends StObject {
   
-  var debuggerId: js.UndefOr[UniqueDebuggerId] = js.native
+  var debuggerId: js.UndefOr[UniqueDebuggerId] = js.undefined
   
-  var id: String = js.native
+  var id: String
 }
 object StackTraceId {
   

@@ -8,22 +8,23 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uiExtensionMod {
   
-  @JSImport("contentful-management/dist/typings/entities/ui-extension", "wrapUiExtension")
+  @JSImport("contentful-management/dist/typings/entities/ui-extension", JSImport.Namespace)
   @js.native
-  def wrapUiExtension(http: AxiosInstance, data: UIExtensionProps): UIExtension = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/ui-extension", "wrapUiExtensionCollection")
-  @js.native
-  def wrapUiExtensionCollection(http: AxiosInstance, data: CollectionProp[UIExtensionProps]): Collection[UIExtension, UIExtensionProps] = js.native
+  @scala.inline
+  def wrapUiExtension(http: AxiosInstance, data: UIExtensionProps): UIExtension = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUiExtension")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[UIExtension]
   
-  @js.native
+  @scala.inline
+  def wrapUiExtensionCollection(http: AxiosInstance, data: CollectionProp[UIExtensionProps]): Collection[UIExtension, UIExtensionProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUiExtensionCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[UIExtension, UIExtensionProps]]
+  
   trait UIExtension
-    extends UIExtensionProps
+    extends StObject
+       with UIExtensionProps
        with DefaultElements[UIExtensionProps] {
     
     /**
@@ -43,7 +44,7 @@ object uiExtensionMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -65,19 +66,20 @@ object uiExtensionMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[UIExtension] = js.native
+    def update(): js.Promise[UIExtension]
   }
   object UIExtension {
     
     @scala.inline
     def apply(
       delete: () => js.Promise[Unit],
-      extension: FieldTypes,
+      `extension`: FieldTypes,
       sys: MetaSysProps,
       toPlainObject: () => UIExtensionProps,
       update: () => js.Promise[UIExtension]
     ): UIExtension = {
-      val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), extension = extension.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], toPlainObject = js.Any.fromFunction0(toPlainObject), update = js.Any.fromFunction0(update))
+      val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), sys = sys.asInstanceOf[js.Any], toPlainObject = js.Any.fromFunction0(toPlainObject), update = js.Any.fromFunction0(update))
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UIExtension]
     }
     
@@ -92,18 +94,18 @@ object uiExtensionMod {
     }
   }
   
-  @js.native
   trait UIExtensionProps extends StObject {
     
-    var extension: FieldTypes = js.native
+    var `extension`: FieldTypes
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object UIExtensionProps {
     
     @scala.inline
-    def apply(extension: FieldTypes, sys: MetaSysProps): UIExtensionProps = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
+    def apply(`extension`: FieldTypes, sys: MetaSysProps): UIExtensionProps = {
+      val __obj = js.Dynamic.literal(sys = sys.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UIExtensionProps]
     }
     

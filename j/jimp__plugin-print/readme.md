@@ -10,9 +10,9 @@ print an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-print |
 | Keywords           | - |
-| # releases         | 104 |
+| # releases         | 103 |
 | # dependents       | 1 |
-| # downloads        | 33082750 |
+| # downloads        | 42454717 |
 | # stars            | 0 |
 
 ## Links

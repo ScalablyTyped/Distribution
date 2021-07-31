@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressIndicator extends Control {
+trait ProgressIndicator
+  extends StObject
+     with Control {
   
   /**
     * Gets current value of property <code>displayValue</code>.Specifies the text value to be displayed in

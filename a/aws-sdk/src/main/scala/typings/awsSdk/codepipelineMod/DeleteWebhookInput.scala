@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWebhookInput extends StObject {
   
   /**
     * The name of the webhook you want to delete.
     */
-  var name: WebhookName = js.native
+  var name: WebhookName
 }
 object DeleteWebhookInput {
   

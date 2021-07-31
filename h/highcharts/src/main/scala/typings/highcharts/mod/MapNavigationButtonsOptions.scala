@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapNavigationButtonsOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MapNavigationButtonsOptions extends StObject {
     * individual options can be overridden. By default, the `onclick`, `text`
     * and `y` options are individual.
     */
-  var zoomIn: js.UndefOr[MapNavigationButtonsZoomInOptions] = js.native
+  var zoomIn: js.UndefOr[MapNavigationButtonsZoomInOptions] = js.undefined
   
   /**
     * (Highmaps) Options for the zoom out button. Properties for the zoom in
@@ -22,7 +20,7 @@ trait MapNavigationButtonsOptions extends StObject {
     * while individual options can be overridden. By default, the `onclick`,
     * `text` and `y` options are individual.
     */
-  var zoomOut: js.UndefOr[MapNavigationButtonsZoomOutOptions] = js.native
+  var zoomOut: js.UndefOr[MapNavigationButtonsZoomOutOptions] = js.undefined
 }
 object MapNavigationButtonsOptions {
   

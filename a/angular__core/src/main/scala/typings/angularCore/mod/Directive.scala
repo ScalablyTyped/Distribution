@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.angularCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Directive extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait Directive extends StObject {
     * ```
     *
     */
-  var exportAs: js.UndefOr[String] = js.native
+  var exportAs: js.UndefOr[String] = js.undefined
   
   /**
     * Maps class properties to host element bindings for properties,
@@ -56,7 +54,7 @@ trait Directive extends StObject {
     * event. A handler method can refer to the `$event` local variable.
     *
     */
-  var host: js.UndefOr[StringDictionary[String]] = js.native
+  var host: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Enumerates the set of data-bound input properties for a directive
@@ -90,7 +88,7 @@ trait Directive extends StObject {
     * ```
     *
     */
-  var inputs: js.UndefOr[js.Array[String]] = js.native
+  var inputs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When present, this directive/component is ignored by the AOT compiler.
@@ -98,7 +96,7 @@ trait Directive extends StObject {
     * at run time, in the browser.
     * To ensure the correct behavior, the app must import `@angular/compiler`.
     */
-  var jit: js.UndefOr[`true`] = js.native
+  var jit: js.UndefOr[`true`] = js.undefined
   
   /**
     * Enumerates the set of event-bound output properties.
@@ -140,14 +138,14 @@ trait Directive extends StObject {
     * ```
     *
     */
-  var outputs: js.UndefOr[js.Array[String]] = js.native
+  var outputs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Configures the [injector](guide/glossary#injector) of this
     * directive or component with a [token](guide/glossary#di-token)
     * that maps to a [provider](guide/glossary#provider) of a dependency.
     */
-  var providers: js.UndefOr[js.Array[Provider]] = js.native
+  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
   
   /**
     * Configures the queries that will be injected into the directive.
@@ -185,7 +183,7 @@ trait Directive extends StObject {
     *
     * @Annotation
     */
-  var queries: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var queries: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The CSS selector that identifies this directive in a template
@@ -214,7 +212,7 @@ trait Directive extends StObject {
     * ```
     *
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object Directive {
   

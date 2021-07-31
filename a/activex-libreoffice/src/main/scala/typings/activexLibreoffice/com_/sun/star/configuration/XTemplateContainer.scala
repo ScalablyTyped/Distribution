@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `string` returned from {@link XTemplateContainer.getElementTemplateName()} can be used as the service name argument.
   * @see XTemplateInstance
   */
-@js.native
-trait XTemplateContainer extends XInterface {
+trait XTemplateContainer
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the name of the template
@@ -28,7 +28,7 @@ trait XTemplateContainer extends XInterface {
     * Instances of the template must be created using an appropriate factory.
     * @returns the name of the (default) template for elements.
     */
-  val ElementTemplateName: String = js.native
+  val ElementTemplateName: String
   
   /**
     * retrieves the name of the template
@@ -38,7 +38,7 @@ trait XTemplateContainer extends XInterface {
     * Instances of the template must be created using an appropriate factory.
     * @returns the name of the (default) template for elements.
     */
-  def getElementTemplateName(): String = js.native
+  def getElementTemplateName(): String
 }
 object XTemplateContainer {
   

@@ -3,65 +3,58 @@ package typings.gaze
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
-  def apply(patterns: String): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
-  def apply(
-    patterns: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
-  ): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(patterns: String): Unit = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     patterns: String,
     options: Null,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
-  ): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
-  def apply(patterns: String, options: Options): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(
+    patterns: String,
+    options: Unit,
+    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(patterns: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     patterns: String,
     options: Options,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
-  ): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
-  def apply(patterns: js.Array[String]): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
-  def apply(
-    patterns: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
-  ): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(patterns: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     patterns: js.Array[String],
     options: Null,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
-  ): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
-  def apply(patterns: js.Array[String], options: Options): Unit = js.native
-  @JSImport("gaze", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(
+    patterns: js.Array[String],
+    options: Unit,
+    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(patterns: js.Array[String], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     patterns: js.Array[String],
     options: Options,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("gaze", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gaze", "Gaze")
   @js.native
@@ -72,12 +65,12 @@ object mod {
     def this(patterns: js.Array[String], options: Options) = this()
     def this(
       patterns: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Null,
       callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
       patterns: String,
-      options: Null,
+      options: Unit,
       callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
@@ -87,12 +80,12 @@ object mod {
     ) = this()
     def this(
       patterns: js.Array[String],
-      options: js.UndefOr[scala.Nothing],
+      options: Null,
       callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
       patterns: js.Array[String],
-      options: Null,
+      options: Unit,
       callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
@@ -154,29 +147,28 @@ object mod {
     def watch: typings.gaze.gazeStrings.watch = "watch".asInstanceOf[typings.gaze.gazeStrings.watch]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The current working directory to base file patterns from. Default is `process.cwd()`.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Delay for events called in succession for the same file/event in milliseconds.
       */
-    var debounceDelay: js.UndefOr[Double] = js.native
+    var debounceDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Interval to pass to fs.watchFile.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Force the watch mode. Either 'auto' (default),
       * 'watch' (force native events), or 'poll' (force stat polling).
       */
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
   }
   object Options {
     

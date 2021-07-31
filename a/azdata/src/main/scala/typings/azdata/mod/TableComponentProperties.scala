@@ -2,36 +2,36 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableComponentProperties extends ComponentProperties {
+trait TableComponentProperties
+  extends StObject
+     with ComponentProperties {
   
-  var ariaColumnCount: js.UndefOr[Double] = js.native
+  var ariaColumnCount: js.UndefOr[Double] = js.undefined
   
-  var ariaRowCount: js.UndefOr[Double] = js.native
+  var ariaRowCount: js.UndefOr[Double] = js.undefined
   
-  var columns: js.Array[String | TableColumn] = js.native
+  var columns: js.Array[String | TableColumn]
   
-  var data: js.Array[js.Array[_]] = js.native
+  var data: js.Array[js.Array[js.Any]]
   
-  var fontSize: js.UndefOr[Double | String] = js.native
+  var fontSize: js.UndefOr[Double | String] = js.undefined
   
-  var forceFitColumns: js.UndefOr[ColumnSizingMode] = js.native
+  var forceFitColumns: js.UndefOr[ColumnSizingMode] = js.undefined
   
-  var moveFocusOutWithTab: js.UndefOr[Boolean] = js.native
+  var moveFocusOutWithTab: js.UndefOr[Boolean] = js.undefined
   
-  var selectedRows: js.UndefOr[js.Array[Double]] = js.native
+  var selectedRows: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var updateCells: js.UndefOr[js.Array[TableCell]] = js.native
+  var updateCells: js.UndefOr[js.Array[TableCell]] = js.undefined
 }
 object TableComponentProperties {
   
   @scala.inline
-  def apply(columns: js.Array[String | TableColumn], data: js.Array[js.Array[_]]): TableComponentProperties = {
+  def apply(columns: js.Array[String | TableColumn], data: js.Array[js.Array[js.Any]]): TableComponentProperties = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableComponentProperties]
   }
@@ -58,7 +58,7 @@ object TableComponentProperties {
     def setColumnsVarargs(value: (String | TableColumn)*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))

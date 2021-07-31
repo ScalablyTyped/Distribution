@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TlsValidationContextTrust extends StObject {
   
   /**
     * A reference to an object that represents a TLS validation context trust for an AWS Certicate Manager (ACM) certificate.
     */
-  var acm: js.UndefOr[TlsValidationContextAcmTrust] = js.native
+  var acm: js.UndefOr[TlsValidationContextAcmTrust] = js.undefined
   
   /**
     * An object that represents a TLS validation context trust for a local file.
     */
-  var file: js.UndefOr[TlsValidationContextFileTrust] = js.native
+  var file: js.UndefOr[TlsValidationContextFileTrust] = js.undefined
 }
 object TlsValidationContextTrust {
   

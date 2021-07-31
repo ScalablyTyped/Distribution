@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMCGAAttribute extends StObject {
   
   /**
@@ -13,26 +11,26 @@ trait CIMCGAAttribute extends StObject {
     */
   var CGAAttributeType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CGAAttributeType * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMCGAAttribute = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMCGAAttribute
   
   /**
     * The value.
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CIMCGAAttribute {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMCGAAttribute): CIMCGAAttribute = {
+  def apply(): CIMCGAAttribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMCGAAttribute")
     __obj.asInstanceOf[CIMCGAAttribute]
   }
   

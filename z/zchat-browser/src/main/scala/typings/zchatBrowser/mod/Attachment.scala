@@ -2,21 +2,19 @@ package typings.zchatBrowser.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
-  var metadata: js.UndefOr[AttachmentMetadata] = js.native
+  var metadata: js.UndefOr[AttachmentMetadata] = js.undefined
   
-  var mime_type: String = js.native
+  var mime_type: String
   
-  var name: String = js.native
+  var name: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var url: String = js.native
+  var url: String
 }
 object Attachment {
   

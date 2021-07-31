@@ -2,15 +2,13 @@ package typings.pnpapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ConsiderBuiltins extends StObject {
     
-    var considerBuiltins: js.UndefOr[Boolean] = js.native
+    var considerBuiltins: js.UndefOr[Boolean] = js.undefined
   }
   object ConsiderBuiltins {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ConsiderBuiltinsExtensions extends StObject {
     
-    var considerBuiltins: js.UndefOr[Boolean] = js.native
+    var considerBuiltins: js.UndefOr[Boolean] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ConsiderBuiltinsExtensions {
     
@@ -66,10 +63,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Extensions extends StObject {
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Extensions {
     

@@ -10,9 +10,9 @@ Convert modern CSS into something browsers understand
 | ------------------ | :-------------: |
 | Full name          | postcss-preset-env |
 | Keywords           | postcss, css, postcss-plugin, specifications, specs, features, lists, stages, w3c, csswg, future, next |
-| # releases         | 22 |
-| # dependents       | 2352 |
-| # downloads        | 118408062 |
+| # releases         | 3 |
+| # dependents       | 2648 |
+| # downloads        | 148618155 |
 | # stars            | 0 |
 
 ## Links

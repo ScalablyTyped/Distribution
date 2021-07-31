@@ -7,7 +7,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.networkingDotk8sDotioSla
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1beta1 {
@@ -15,18 +14,17 @@ object v1beta1 {
   /**
     * HTTPIngressPath associates a path with a backend. Incoming urls matching the path are forwarded to the backend.
     */
-  @js.native
   trait HTTPIngressPath extends StObject {
     
     /**
       * Backend defines the referenced service endpoint to which the traffic will be forwarded to.
       */
-    var backend: Input[IngressBackend] = js.native
+    var backend: Input[IngressBackend]
     
     /**
       * Path is matched against the path of an incoming request. Currently it can contain characters disallowed from the conventional "path" part of a URL as defined by RFC 3986. Paths must begin with a '/'. When unspecified, all paths from incoming requests are matched.
       */
-    var path: js.UndefOr[Input[String]] = js.native
+    var path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * PathType determines the interpretation of the Path matching. PathType can be one of the following values: * Exact: Matches the URL path exactly. * Prefix: Matches based on a URL path prefix split by '/'. Matching is
@@ -41,7 +39,7 @@ object v1beta1 {
       *   or treat it identically to Prefix or Exact path types.
       * Implementations are required to support all path types. Defaults to ImplementationSpecific.
       */
-    var pathType: js.UndefOr[Input[String]] = js.native
+    var pathType: js.UndefOr[Input[String]] = js.undefined
   }
   object HTTPIngressPath {
     
@@ -74,13 +72,12 @@ object v1beta1 {
   /**
     * HTTPIngressRuleValue is a list of http selectors pointing to backends. In the example: http://<host>/<path>?<searchpart> -> backend where where parts of the url correspond to RFC 3986, this resource will be used to match against everything after the last '/' and before the first '?' or '#'.
     */
-  @js.native
   trait HTTPIngressRuleValue extends StObject {
     
     /**
       * A collection of paths that map requests to backends.
       */
-    var paths: Input[js.Array[Input[HTTPIngressPath]]] = js.native
+    var paths: Input[js.Array[Input[HTTPIngressPath]]]
   }
   object HTTPIngressRuleValue {
     
@@ -118,33 +115,32 @@ object v1beta1 {
     * time out and mark the resource update as Failed. You can override the default timeout value
     * by setting the 'customTimeouts' option on the resource.
     */
-  @js.native
   trait Ingress extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    var apiVersion: js.UndefOr[Input[networkingDotk8sDotioSlashv1beta1]] = js.native
+    var apiVersion: js.UndefOr[Input[networkingDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Ingress]] = js.native
+    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Ingress]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+    var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     
     /**
       * Spec is the desired state of the Ingress. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
       */
-    var spec: js.UndefOr[Input[IngressSpec]] = js.native
+    var spec: js.UndefOr[Input[IngressSpec]] = js.undefined
     
     /**
       * Status is the current state of the Ingress. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
       */
-    var status: js.UndefOr[Input[IngressStatus]] = js.native
+    var status: js.UndefOr[Input[IngressStatus]] = js.undefined
   }
   object Ingress {
     
@@ -192,23 +188,22 @@ object v1beta1 {
   /**
     * IngressBackend describes all endpoints for a given service and port.
     */
-  @js.native
   trait IngressBackend extends StObject {
     
     /**
       * Resource is an ObjectRef to another Kubernetes resource in the namespace of the Ingress object. If resource is specified, serviceName and servicePort must not be specified.
       */
-    var resource: js.UndefOr[Input[TypedLocalObjectReference]] = js.native
+    var resource: js.UndefOr[Input[TypedLocalObjectReference]] = js.undefined
     
     /**
       * Specifies the name of the referenced service.
       */
-    var serviceName: Input[String] = js.native
+    var serviceName: Input[String]
     
     /**
       * Specifies the port of the referenced service.
       */
-    var servicePort: Input[Double | String] = js.native
+    var servicePort: Input[Double | String]
   }
   object IngressBackend {
     
@@ -238,28 +233,27 @@ object v1beta1 {
   /**
     * IngressClass represents the class of the Ingress, referenced by the Ingress Spec. The `ingressclass.kubernetes.io/is-default-class` annotation can be used to indicate that an IngressClass should be considered default. When a single IngressClass resource has this annotation set to true, new Ingress resources without a class specified will be assigned this default class.
     */
-  @js.native
   trait IngressClass extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    var apiVersion: js.UndefOr[Input[networkingDotk8sDotioSlashv1beta1]] = js.native
+    var apiVersion: js.UndefOr[Input[networkingDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.IngressClass]] = js.native
+    var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.IngressClass]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+    var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     
     /**
       * Spec is the desired state of the IngressClass. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
       */
-    var spec: js.UndefOr[Input[IngressClassSpec]] = js.native
+    var spec: js.UndefOr[Input[IngressClassSpec]] = js.undefined
   }
   object IngressClass {
     
@@ -301,18 +295,17 @@ object v1beta1 {
   /**
     * IngressClassSpec provides information about the class of an Ingress.
     */
-  @js.native
   trait IngressClassSpec extends StObject {
     
     /**
       * Controller refers to the name of the controller that should handle this class. This allows for different "flavors" that are controlled by the same controller. For example, you may have different Parameters for the same implementing controller. This should be specified as a domain-prefixed path no more than 250 characters in length, e.g. "acme.io/ingress-controller". This field is immutable.
       */
-    var controller: js.UndefOr[Input[String]] = js.native
+    var controller: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Parameters is a link to a custom resource containing additional configuration for the controller. This is optional if the controller does not require extra parameters.
       */
-    var parameters: js.UndefOr[Input[TypedLocalObjectReference]] = js.native
+    var parameters: js.UndefOr[Input[TypedLocalObjectReference]] = js.undefined
   }
   object IngressClassSpec {
     
@@ -342,7 +335,6 @@ object v1beta1 {
   /**
     * IngressRule represents the rules mapping the paths under a specified host to the related backend services. Incoming requests are first evaluated for a host match, then routed to the backend associated with the matching IngressRuleValue.
     */
-  @js.native
   trait IngressRule extends StObject {
     
     /**
@@ -355,9 +347,9 @@ object v1beta1 {
       *
       * Host can be "precise" which is a domain name without the terminating dot of a network host (e.g. "foo.bar.com") or "wildcard", which is a domain name prefixed with a single wildcard label (e.g. "*.foo.com"). The wildcard character '*' must appear by itself as the first DNS label and matches only a single label. You cannot have a wildcard label by itself (e.g. Host == "*"). Requests will be matched against the Host field in the following way: 1. If Host is precise, the request matches this rule if the http host header is equal to Host. 2. If Host is a wildcard, then the request matches this rule if the http host header is to equal to the suffix (removing the first label) of the wildcard rule.
       */
-    var host: js.UndefOr[Input[String]] = js.native
+    var host: js.UndefOr[Input[String]] = js.undefined
     
-    var http: js.UndefOr[Input[HTTPIngressRuleValue]] = js.native
+    var http: js.UndefOr[Input[HTTPIngressRuleValue]] = js.undefined
   }
   object IngressRule {
     
@@ -387,28 +379,27 @@ object v1beta1 {
   /**
     * IngressSpec describes the Ingress the user wishes to exist.
     */
-  @js.native
   trait IngressSpec extends StObject {
     
     /**
       * A default backend capable of servicing requests that don't match any rule. At least one of 'backend' or 'rules' must be specified. This field is optional to allow the loadbalancer controller or defaulting logic to specify a global default.
       */
-    var backend: js.UndefOr[Input[IngressBackend]] = js.native
+    var backend: js.UndefOr[Input[IngressBackend]] = js.undefined
     
     /**
       * IngressClassName is the name of the IngressClass cluster resource. The associated IngressClass defines which controller will implement the resource. This replaces the deprecated `kubernetes.io/ingress.class` annotation. For backwards compatibility, when that annotation is set, it must be given precedence over this field. The controller may emit a warning if the field and annotation have different values. Implementations of this API should ignore Ingresses without a class specified. An IngressClass resource may be marked as default, which can be used to set a default value for this field. For more information, refer to the IngressClass documentation.
       */
-    var ingressClassName: js.UndefOr[Input[String]] = js.native
+    var ingressClassName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all traffic is sent to the default backend.
       */
-    var rules: js.UndefOr[Input[js.Array[Input[IngressRule]]]] = js.native
+    var rules: js.UndefOr[Input[js.Array[Input[IngressRule]]]] = js.undefined
     
     /**
       * TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple members of this list specify different hosts, they will be multiplexed on the same port according to the hostname specified through the SNI TLS extension, if the ingress controller fulfilling the ingress supports SNI.
       */
-    var tls: js.UndefOr[Input[js.Array[Input[IngressTLS]]]] = js.native
+    var tls: js.UndefOr[Input[js.Array[Input[IngressTLS]]]] = js.undefined
   }
   object IngressSpec {
     
@@ -456,13 +447,12 @@ object v1beta1 {
   /**
     * IngressStatus describe the current state of the Ingress.
     */
-  @js.native
   trait IngressStatus extends StObject {
     
     /**
       * LoadBalancer contains the current status of the load-balancer.
       */
-    var loadBalancer: js.UndefOr[Input[LoadBalancerStatus]] = js.native
+    var loadBalancer: js.UndefOr[Input[LoadBalancerStatus]] = js.undefined
   }
   object IngressStatus {
     
@@ -486,18 +476,17 @@ object v1beta1 {
   /**
     * IngressTLS describes the transport layer security associated with an Ingress.
     */
-  @js.native
   trait IngressTLS extends StObject {
     
     /**
       * Hosts are a list of hosts included in the TLS certificate. The values in this list must match the name/s used in the tlsSecret. Defaults to the wildcard host setting for the loadbalancer controller fulfilling this Ingress, if left unspecified.
       */
-    var hosts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var hosts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * SecretName is the name of the secret used to terminate TLS traffic on port 443. Field is left optional to allow TLS routing based on SNI hostname alone. If the SNI host in a listener conflicts with the "Host" header field used by an IngressRule, the SNI host is used for termination and value of the Host header is used for routing.
       */
-    var secretName: js.UndefOr[Input[String]] = js.native
+    var secretName: js.UndefOr[Input[String]] = js.undefined
   }
   object IngressTLS {
     

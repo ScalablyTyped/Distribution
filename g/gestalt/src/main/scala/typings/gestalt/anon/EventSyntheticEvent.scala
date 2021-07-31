@@ -5,13 +5,11 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSyntheticEvent extends StObject {
   
-  var event: typings.react.mod.SyntheticEvent[MouseEvent[HTMLDivElement, NativeMouseEvent], typings.std.Event] = js.native
+  var event: typings.react.mod.SyntheticEvent[MouseEvent[HTMLDivElement, NativeMouseEvent], typings.std.Event]
 }
 object EventSyntheticEvent {
   

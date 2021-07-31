@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ViewContainerRef")
@@ -28,88 +27,88 @@ abstract class ViewContainerRef () extends StObject {
     *
     */
   def createComponent[C](componentFactory: ComponentFactory[C]): ComponentRef[C] = js.native
-  def createComponent[C](
-    componentFactory: ComponentFactory[C],
-    index: js.UndefOr[scala.Nothing],
-    injector: js.UndefOr[scala.Nothing],
-    projectableNodes: js.UndefOr[scala.Nothing],
-    ngModule: NgModuleRef[_]
-  ): ComponentRef[C] = js.native
-  def createComponent[C](
-    componentFactory: ComponentFactory[C],
-    index: js.UndefOr[scala.Nothing],
-    injector: js.UndefOr[scala.Nothing],
-    projectableNodes: js.Array[js.Array[_]]
-  ): ComponentRef[C] = js.native
-  def createComponent[C](
-    componentFactory: ComponentFactory[C],
-    index: js.UndefOr[scala.Nothing],
-    injector: js.UndefOr[scala.Nothing],
-    projectableNodes: js.Array[js.Array[_]],
-    ngModule: NgModuleRef[_]
-  ): ComponentRef[C] = js.native
-  def createComponent[C](componentFactory: ComponentFactory[C], index: js.UndefOr[scala.Nothing], injector: Injector): ComponentRef[C] = js.native
-  def createComponent[C](
-    componentFactory: ComponentFactory[C],
-    index: js.UndefOr[scala.Nothing],
-    injector: Injector,
-    projectableNodes: js.UndefOr[scala.Nothing],
-    ngModule: NgModuleRef[_]
-  ): ComponentRef[C] = js.native
-  def createComponent[C](
-    componentFactory: ComponentFactory[C],
-    index: js.UndefOr[scala.Nothing],
-    injector: Injector,
-    projectableNodes: js.Array[js.Array[_]]
-  ): ComponentRef[C] = js.native
-  def createComponent[C](
-    componentFactory: ComponentFactory[C],
-    index: js.UndefOr[scala.Nothing],
-    injector: Injector,
-    projectableNodes: js.Array[js.Array[_]],
-    ngModule: NgModuleRef[_]
-  ): ComponentRef[C] = js.native
   def createComponent[C](componentFactory: ComponentFactory[C], index: Double): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
-    injector: js.UndefOr[scala.Nothing],
-    projectableNodes: js.UndefOr[scala.Nothing],
-    ngModule: NgModuleRef[_]
+    injector: Unit,
+    projectableNodes: js.Array[js.Array[js.Any]]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
-    injector: js.UndefOr[scala.Nothing],
-    projectableNodes: js.Array[js.Array[_]]
+    injector: Unit,
+    projectableNodes: js.Array[js.Array[js.Any]],
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
-    injector: js.UndefOr[scala.Nothing],
-    projectableNodes: js.Array[js.Array[_]],
-    ngModule: NgModuleRef[_]
+    injector: Unit,
+    projectableNodes: Unit,
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](componentFactory: ComponentFactory[C], index: Double, injector: Injector): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Injector,
-    projectableNodes: js.UndefOr[scala.Nothing],
-    ngModule: NgModuleRef[_]
+    projectableNodes: js.Array[js.Array[js.Any]]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Injector,
-    projectableNodes: js.Array[js.Array[_]]
+    projectableNodes: js.Array[js.Array[js.Any]],
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
   def createComponent[C](
     componentFactory: ComponentFactory[C],
     index: Double,
     injector: Injector,
-    projectableNodes: js.Array[js.Array[_]],
-    ngModule: NgModuleRef[_]
+    projectableNodes: Unit,
+    ngModule: NgModuleRef[js.Any]
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Unit,
+    projectableNodes: js.Array[js.Array[js.Any]]
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Unit,
+    projectableNodes: js.Array[js.Array[js.Any]],
+    ngModule: NgModuleRef[js.Any]
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Unit,
+    projectableNodes: Unit,
+    ngModule: NgModuleRef[js.Any]
+  ): ComponentRef[C] = js.native
+  def createComponent[C](componentFactory: ComponentFactory[C], index: Unit, injector: Injector): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[js.Any]]
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[js.Any]],
+    ngModule: NgModuleRef[js.Any]
+  ): ComponentRef[C] = js.native
+  def createComponent[C](
+    componentFactory: ComponentFactory[C],
+    index: Unit,
+    injector: Injector,
+    projectableNodes: Unit,
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
   
   /**
@@ -124,7 +123,7 @@ abstract class ViewContainerRef () extends StObject {
   def createEmbeddedView[C](templateRef: TemplateRef[C]): EmbeddedViewRef[C] = js.native
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: C): EmbeddedViewRef[C] = js.native
   def createEmbeddedView[C](templateRef: TemplateRef[C], context: C, index: Double): EmbeddedViewRef[C] = js.native
-  def createEmbeddedView[C](templateRef: TemplateRef[C], context: js.UndefOr[scala.Nothing], index: Double): EmbeddedViewRef[C] = js.native
+  def createEmbeddedView[C](templateRef: TemplateRef[C], context: Unit, index: Double): EmbeddedViewRef[C] = js.native
   
   /**
     * Detaches a view from this container without destroying it.
@@ -148,7 +147,7 @@ abstract class ViewContainerRef () extends StObject {
     *
     * <!-- TODO: rename to anchorElement -->
     */
-  def element: ElementRef[_] = js.native
+  def element: ElementRef[js.Any] = js.native
   
   /**
     * Retrieves a view from this container.

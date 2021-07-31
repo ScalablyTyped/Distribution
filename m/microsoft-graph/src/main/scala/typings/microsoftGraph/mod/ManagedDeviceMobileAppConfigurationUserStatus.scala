@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedDeviceMobileAppConfigurationUserStatus extends Entity {
+trait ManagedDeviceMobileAppConfigurationUserStatus
+  extends StObject
+     with Entity {
   
   // Devices count for that user.
-  var devicesCount: js.UndefOr[Double] = js.native
+  var devicesCount: js.UndefOr[Double] = js.undefined
   
   // Last modified date time of the policy report.
-  var lastReportedDateTime: js.UndefOr[String] = js.native
+  var lastReportedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated,
     * nonCompliant, error, conflict, notAssigned.
     */
-  var status: js.UndefOr[ComplianceStatus] = js.native
+  var status: js.UndefOr[ComplianceStatus] = js.undefined
   
   // User name of the DevicePolicyStatus.
-  var userDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // UserPrincipalName.
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedDeviceMobileAppConfigurationUserStatus {
   

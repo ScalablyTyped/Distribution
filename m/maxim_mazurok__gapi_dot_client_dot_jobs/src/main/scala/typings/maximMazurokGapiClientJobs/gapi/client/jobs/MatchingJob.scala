@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchingJob extends StObject {
   
   /** Commute information which is generated based on specified CommuteFilter. */
-  var commuteInfo: js.UndefOr[CommuteInfo] = js.native
+  var commuteInfo: js.UndefOr[CommuteInfo] = js.undefined
   
   /** Job resource that matches the specified SearchJobsRequest. */
-  var job: js.UndefOr[Job] = js.native
+  var job: js.UndefOr[Job] = js.undefined
   
   /** A summary of the job with core information that's displayed on the search results listing page. */
-  var jobSummary: js.UndefOr[String] = js.native
+  var jobSummary: js.UndefOr[String] = js.undefined
   
   /** Contains snippets of text from the Job.job_title field most closely matching a search query's keywords, if available. The matching query keywords are enclosed in HTML bold tags. */
-  var jobTitleSnippet: js.UndefOr[String] = js.native
+  var jobTitleSnippet: js.UndefOr[String] = js.undefined
   
   /**
     * Contains snippets of text from the Job.description and similar fields that most closely match a search query's keywords, if available. All HTML tags in the original fields are
     * stripped when returned in this field, and matching query keywords are enclosed in HTML bold tags.
     */
-  var searchTextSnippet: js.UndefOr[String] = js.native
+  var searchTextSnippet: js.UndefOr[String] = js.undefined
 }
 object MatchingJob {
   

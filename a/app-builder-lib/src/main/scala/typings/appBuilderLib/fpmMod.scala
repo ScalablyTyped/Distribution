@@ -6,7 +6,6 @@ import typings.appBuilderLib.linuxPackagerMod.LinuxPackager
 import typings.appBuilderLib.linuxTargetHelperMod.LinuxTargetHelper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fpmMod {

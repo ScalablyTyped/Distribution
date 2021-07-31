@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosUpdateDeviceStatus extends Entity {
+trait IosUpdateDeviceStatus
+  extends StObject
+     with Entity {
   
   // The DateTime when device compliance grace period expires
-  var complianceGracePeriodExpirationDateTime: js.UndefOr[String] = js.native
+  var complianceGracePeriodExpirationDateTime: js.UndefOr[String] = js.undefined
   
   // Device name of the DevicePolicyStatus.
-  var deviceDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var deviceDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The device id that is being reported.
-  var deviceId: js.UndefOr[NullableOption[String]] = js.native
+  var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The device model that is being reported
-  var deviceModel: js.UndefOr[NullableOption[String]] = js.native
+  var deviceModel: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The installation status of the policy report. Possible values are: success, available, idle, unknown, downloading,
@@ -26,28 +26,28 @@ trait IosUpdateDeviceStatus extends Entity {
     * downloadInsufficientNetwork, installing, installInsufficientSpace, installInsufficientPower,
     * installPhoneCallInProgress, installFailed, notSupportedOperation, sharedDeviceUserLoggedInError.
     */
-  var installStatus: js.UndefOr[IosUpdatesInstallStatus] = js.native
+  var installStatus: js.UndefOr[IosUpdatesInstallStatus] = js.undefined
   
   // Last modified date time of the policy report.
-  var lastReportedDateTime: js.UndefOr[String] = js.native
+  var lastReportedDateTime: js.UndefOr[String] = js.undefined
   
   // The device version that is being reported.
-  var osVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated,
     * nonCompliant, error, conflict, notAssigned.
     */
-  var status: js.UndefOr[ComplianceStatus] = js.native
+  var status: js.UndefOr[ComplianceStatus] = js.undefined
   
   // The User id that is being reported.
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The User Name that is being reported
-  var userName: js.UndefOr[NullableOption[String]] = js.native
+  var userName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // UserPrincipalName.
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object IosUpdateDeviceStatus {
   

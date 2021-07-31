@@ -2,10 +2,8 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsSearch extends StObject {
   
   /**
@@ -20,14 +18,14 @@ trait JSTreeStaticDefaultsSearch extends StObject {
     * @name $.jstree.defaults.search.ajax
     * @plugin search
     */
-  var ajax: js.Any = js.native
+  var ajax: js.Any
   
   /**
     * Indicates if the search should be case sensitive. Default is `false`.
     * @name $.jstree.defaults.search.case_sensitive
     * @plugin search
     */
-  var case_sensitive: Boolean = js.native
+  var case_sensitive: Boolean
   
   /**
     * Indicates if all nodes opened to reveal the search result,
@@ -35,14 +33,14 @@ trait JSTreeStaticDefaultsSearch extends StObject {
     * @name $.jstree.defaults.search.close_opened_onclear
     * @plugin search
     */
-  var close_opened_onclear: Boolean = js.native
+  var close_opened_onclear: Boolean
   
   /**
     * Indicates if the search should be fuzzy or not (should `chnd3` match `child node 3`). Default is `true`.
     * @name $.jstree.defaults.search.fuzzy
     * @plugin search
     */
-  var fuzzy: Boolean = js.native
+  var fuzzy: Boolean
   
   /**
     * If set to a function it wil be called in the instance's scope with two arguments -
@@ -52,14 +50,14 @@ trait JSTreeStaticDefaultsSearch extends StObject {
     * @name $.jstree.defaults.search.search_callback
     * @plugin search
     */
-  var search_callback: js.Any = js.native
+  var search_callback: js.Any
   
   /**
     * Indicates if only leaf nodes should be included in search results. Default is `false`.
     * @name $.jstree.defaults.search.search_leaves_only
     * @plugin search
     */
-  var search_leaves_only: Boolean = js.native
+  var search_leaves_only: Boolean
   
   /**
     * Indicates if the tree should be filtered (by default) to show only matching nodes
@@ -68,7 +66,7 @@ trait JSTreeStaticDefaultsSearch extends StObject {
     * @name $.jstree.defaults.search.show_only_matches
     * @plugin search
     */
-  var show_only_matches: Boolean = js.native
+  var show_only_matches: Boolean
   
   /**
     * Indicates if the children of matched element are shown (when show_only_matches is true)
@@ -76,7 +74,7 @@ trait JSTreeStaticDefaultsSearch extends StObject {
     * @name $.jstree.defaults.search.show_only_matches_children
     * @plugin search
     */
-  var show_only_matches_children: Boolean = js.native
+  var show_only_matches_children: Boolean
 }
 object JSTreeStaticDefaultsSearch {
   

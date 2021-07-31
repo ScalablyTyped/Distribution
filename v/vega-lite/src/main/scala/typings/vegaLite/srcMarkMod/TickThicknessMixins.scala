@@ -3,10 +3,8 @@ package typings.vegaLite.srcMarkMod
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TickThicknessMixins extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait TickThicknessMixins extends StObject {
     *
     * @minimum 0
     */
-  var thickness: js.UndefOr[Double | SignalRef] = js.native
+  var thickness: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object TickThicknessMixins {
   

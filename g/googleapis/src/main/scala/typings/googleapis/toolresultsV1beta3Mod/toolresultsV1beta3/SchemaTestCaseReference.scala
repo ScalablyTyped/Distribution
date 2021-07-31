@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * lexicographically by these three factors: * First, by test_suite_name. *
   * Second, by class_name. * Third, by name.
   */
-@js.native
 trait SchemaTestCaseReference extends StObject {
   
   /**
     * The name of the class.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the test case.  Required.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the test suite to which this test case belongs.
     */
-  var testSuiteName: js.UndefOr[String] = js.native
+  var testSuiteName: js.UndefOr[String] = js.undefined
 }
 object SchemaTestCaseReference {
   

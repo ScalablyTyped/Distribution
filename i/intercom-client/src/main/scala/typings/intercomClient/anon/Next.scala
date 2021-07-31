@@ -2,19 +2,17 @@ package typings.intercomClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Next extends StObject {
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var page: Double = js.native
+  var page: Double
   
-  var per_page: Double = js.native
+  var per_page: Double
   
-  var total_pages: Double = js.native
+  var total_pages: Double
 }
 object Next {
   

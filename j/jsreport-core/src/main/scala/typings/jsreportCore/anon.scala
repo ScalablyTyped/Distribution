@@ -9,15 +9,13 @@ import typings.jsreportCore.mod.Options
 import typings.jsreportCore.mod.Recipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllowedModules extends StObject {
     
-    var allowedModules: js.Array[String] = js.native
+    var allowedModules: js.Array[String]
   }
   object AllowedModules {
     
@@ -39,26 +37,25 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-core.jsreport-core.Configuration> */
-  @js.native
   trait PartialConfiguration extends StObject {
     
-    var autoTempCleanup: js.UndefOr[Boolean] = js.native
+    var autoTempCleanup: js.UndefOr[Boolean] = js.undefined
     
-    var dataDirectory: js.UndefOr[String] = js.native
+    var dataDirectory: js.UndefOr[String] = js.undefined
     
-    var extensionsLocationCache: js.UndefOr[Boolean] = js.native
+    var extensionsLocationCache: js.UndefOr[Boolean] = js.undefined
     
-    var loadConfig: js.UndefOr[Boolean] = js.native
+    var loadConfig: js.UndefOr[Boolean] = js.undefined
     
-    var logger: js.UndefOr[Silent] = js.native
+    var logger: js.UndefOr[Silent] = js.undefined
     
-    var rootDirectory: js.UndefOr[String] = js.native
+    var rootDirectory: js.UndefOr[String] = js.undefined
     
-    var scripts: js.UndefOr[AllowedModules] = js.native
+    var scripts: js.UndefOr[AllowedModules] = js.undefined
     
-    var tasks: js.UndefOr[PartialallowedModulesArra] = js.native
+    var tasks: js.UndefOr[PartialallowedModulesArra] = js.undefined
     
-    var tempDirectory: js.UndefOr[String] = js.native
+    var tempDirectory: js.UndefOr[String] = js.undefined
   }
   object PartialConfiguration {
     
@@ -128,14 +125,13 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-core.jsreport-core.Request> */
-  @js.native
   trait PartialRequest extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var template: js.UndefOr[PartialTemplate] = js.native
+    var template: js.UndefOr[PartialTemplate] = js.undefined
   }
   object PartialRequest {
     
@@ -169,16 +165,15 @@ object anon {
   }
   
   /* Inlined std.Partial<jsreport-core.jsreport-core.Template> */
-  @js.native
   trait PartialTemplate extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var engine: js.UndefOr[Engine | String] = js.native
+    var engine: js.UndefOr[Engine | String] = js.undefined
     
-    var helpers: js.UndefOr[Helpers] = js.native
+    var helpers: js.UndefOr[Helpers] = js.undefined
     
-    var recipe: js.UndefOr[Recipe | String] = js.native
+    var recipe: js.UndefOr[Recipe | String] = js.undefined
   }
   object PartialTemplate {
     
@@ -218,12 +213,11 @@ object anon {
   }
   
   /* Inlined std.Partial<{  allowedModules :std.Array<string> | string,   strategy :'dedicated-process' | 'http-server' | 'in-process' | string}> */
-  @js.native
   trait PartialallowedModulesArra extends StObject {
     
-    var allowedModules: js.UndefOr[js.Array[String] | String] = js.native
+    var allowedModules: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var strategy: js.UndefOr[`dedicated-process` | `http-server` | `in-process` | String] = js.native
+    var strategy: js.UndefOr[`dedicated-process` | `http-server` | `in-process` | String] = js.undefined
   }
   object PartialallowedModulesArra {
     
@@ -253,10 +247,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Silent extends StObject {
     
-    var silent: Boolean = js.native
+    var silent: Boolean
   }
   object Silent {
     

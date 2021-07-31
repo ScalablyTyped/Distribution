@@ -3,16 +3,14 @@ package typings.accessibility
 import typings.accessibility.mod.SizeOrPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Buttons extends StObject {
     
     /** @default true */
-    var buttons: js.UndefOr[Boolean] = js.native
+    var buttons: js.UndefOr[Boolean] = js.undefined
   }
   object Buttons {
     
@@ -33,17 +31,16 @@ object anon {
     }
   }
   
-  @js.native
   trait CBackground extends StObject {
     
     /** @default '#000000' */
-    var cBackground: js.UndefOr[String] = js.native
+    var cBackground: js.UndefOr[String] = js.undefined
     
     /** @default '#20ff69' */
-    var cBorder: js.UndefOr[String] = js.native
+    var cBorder: js.UndefOr[String] = js.undefined
     
     /** @default '12px' */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
   }
   object CBackground {
     
@@ -76,12 +73,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dimensions extends StObject {
     
-    var dimensions: js.UndefOr[typings.accessibility.mod.Dimensions] = js.native
+    var dimensions: js.UndefOr[typings.accessibility.mod.Dimensions] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
   }
   object Dimensions {
     
@@ -108,10 +104,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Font extends StObject {
     
-    var font: SizeOrPosition = js.native
+    var font: SizeOrPosition
   }
   object Font {
     
@@ -129,11 +124,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Persistent extends StObject {
     
     /** @default true */
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object Persistent {
     

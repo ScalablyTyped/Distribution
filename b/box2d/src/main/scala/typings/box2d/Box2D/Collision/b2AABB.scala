@@ -3,10 +3,8 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2AABB extends StObject {
   
   /**
@@ -14,32 +12,32 @@ trait b2AABB extends StObject {
     * @param aabb1 First AABB to combine.
     * @param aabb2 Second AABB to combine.
     **/
-  def Combine(aabb1: b2AABB, aabb2: b2AABB): Unit = js.native
+  def Combine(aabb1: b2AABB, aabb2: b2AABB): Unit
   
   /**
     * Determines if an AABB is contained within this one.
     * @param aabb AABB to see if it is contained.
     * @return True if aabb is contained, otherwise false.
     **/
-  def Contains(aabb: b2AABB): Boolean = js.native
+  def Contains(aabb: b2AABB): Boolean
   
   /**
     * Gets the center of the AABB.
     * @return Center of this AABB.
     **/
-  def GetCenter(): b2Vec2 = js.native
+  def GetCenter(): b2Vec2
   
   /**
     * Gets the extents of the AABB (half-widths).
     * @return Extents of this AABB.
     **/
-  def GetExtents(): b2Vec2 = js.native
+  def GetExtents(): b2Vec2
   
   /**
     * Verify that the bounds are sorted.
     * @return True if the bounds are sorted, otherwise false.
     **/
-  def IsValid(): Boolean = js.native
+  def IsValid(): Boolean
   
   /**
     * Perform a precise raycast against this AABB.
@@ -47,24 +45,24 @@ trait b2AABB extends StObject {
     * @param input Ray cast input values.
     * @return True if the ray cast hits this AABB, otherwise false.
     **/
-  def RayCast(output: b2RayCastOutput, input: b2RayCastInput): Boolean = js.native
+  def RayCast(output: b2RayCastOutput, input: b2RayCastInput): Boolean
   
   /**
     * Tests if another AABB overlaps this AABB.
     * @param other Other AABB to test for overlap.
     * @return True if other overlaps this AABB, otherwise false.
     **/
-  def TestOverlap(other: b2AABB): Boolean = js.native
+  def TestOverlap(other: b2AABB): Boolean
   
   /**
     * Lower bound.
     **/
-  var lowerBound: b2Vec2 = js.native
+  var lowerBound: b2Vec2
   
   /**
     * Upper bound.
     **/
-  var upperBound: b2Vec2 = js.native
+  var upperBound: b2Vec2
 }
 object b2AABB {
   

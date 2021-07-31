@@ -2,20 +2,18 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/organization-invitation.OrganizationInvitationProps, 'sys'> */
-@js.native
 trait OmitOrganizationInvitatio extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var firstName: String = js.native
+  var firstName: String
   
-  var lastName: String = js.native
+  var lastName: String
   
-  var role: String = js.native
+  var role: String
 }
 object OmitOrganizationInvitatio {
   

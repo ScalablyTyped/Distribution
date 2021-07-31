@@ -2,36 +2,34 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalReplicationGroupMember extends StObject {
   
   /**
     * Indicates whether automatic failover is enabled for the replication group.
     */
-  var AutomaticFailover: js.UndefOr[AutomaticFailoverStatus] = js.native
+  var AutomaticFailover: js.UndefOr[AutomaticFailoverStatus] = js.undefined
   
   /**
     * The replication group id of the Global Datastore member.
     */
-  var ReplicationGroupId: js.UndefOr[String] = js.native
+  var ReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS region of the Global Datastore member.
     */
-  var ReplicationGroupRegion: js.UndefOr[String] = js.native
+  var ReplicationGroupRegion: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the role of the replication group, primary or secondary.
     */
-  var Role: js.UndefOr[String] = js.native
+  var Role: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the membership of the replication group.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object GlobalReplicationGroupMember {
   

@@ -2,17 +2,15 @@ package typings.rbx.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Datatooltip extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var `data-badge`: js.UndefOr[String | Double] = js.native
+  var `data-badge`: js.UndefOr[String | Double] = js.undefined
   
-  var `data-tooltip`: js.UndefOr[String | Double] = js.native
+  var `data-tooltip`: js.UndefOr[String | Double] = js.undefined
 }
 object Datatooltip {
   

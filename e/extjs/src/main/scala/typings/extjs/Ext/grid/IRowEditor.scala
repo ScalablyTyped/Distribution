@@ -4,23 +4,22 @@ import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.form.IBasic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRowEditor
-  extends typings.extjs.Ext.form.IPanel {
+  extends StObject
+     with typings.extjs.Ext.form.IPanel {
   
   /** [Method] Lie to the CQ system about our nesting structure  */
   @JSName("getRefItems")
-  var getRefItems_IRowEditor: js.UndefOr[js.Function0[Unit]] = js.native
+  var getRefItems_IRowEditor: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Loads an Ext data Model into this form internally just calls Ext form Basic loadRecord See also trackResetOnLoad
     * @param record Object
     * @returns Ext.form.Basic The Ext.form.Basic attached to this FormPanel
     */
   @JSName("loadRecord")
-  var loadRecord_IRowEditor: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], IBasic]] = js.native
+  var loadRecord_IRowEditor: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], IBasic]] = js.undefined
   
   /** [Method] Start editing the specified grid at the specified position
     * @param record Ext.data.Model The Store data record which backs the row to be edited.
@@ -28,7 +27,7 @@ trait IRowEditor
     */
   var startEdit: js.UndefOr[
     js.Function2[/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object IRowEditor {
   

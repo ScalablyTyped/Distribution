@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail Message 对象兼容于 mq 各个模块，可用于构建自定义消息处理系统，创建方法：,```JavaScript,var mq = require("mq");,var m = new mq.Message();,```
   */
 @js.native
-trait ClassMessage extends ClassObject {
+trait ClassMessage
+  extends StObject
+     with ClassObject {
   
   /**
     * class prop 
@@ -112,7 +113,7 @@ trait ClassMessage extends ClassObject {
     * @readonly
     * @type NArray
     */
-  var params: js.Array[_] = js.native
+  var params: js.Array[js.Any] = js.native
   
   /**
     * 

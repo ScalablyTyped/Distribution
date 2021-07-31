@@ -2,13 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Swarm extends ClusterInfo {
+trait Swarm
+  extends StObject
+     with ClusterInfo {
   
-  var JoinTokens: typings.dockerode.mod.JoinTokens = js.native
+  var JoinTokens: typings.dockerode.mod.JoinTokens
 }
 object Swarm {
   

@@ -5,48 +5,46 @@ import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerMo
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invitationProgressOptionsMod {
   
-  @js.native
   trait InvitationProgressOptions extends StObject {
     
     /**
       * Body
       */
-    var body: js.UndefOr[String | Body] = js.native
+    var body: js.UndefOr[String | Body] = js.undefined
     
     /**
       * Array of extra headers added to the response.
       */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Reason phrase for response.
       */
-    var reasonPhrase: js.UndefOr[String] = js.native
+    var reasonPhrase: js.UndefOr[String] = js.undefined
     
     /**
       * Send reliable response.
       */
-    var rel100: js.UndefOr[Boolean] = js.native
+    var rel100: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Modifiers to pass to SessionDescriptionHandler during the initial INVITE transaction.
       */
-    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
+    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
     
     /**
       * Options to pass to SessionDescriptionHandler during the initial INVITE transaction.
       */
-    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
+    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.undefined
     
     /**
       * Status code for response.
       */
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object InvitationProgressOptions {
     

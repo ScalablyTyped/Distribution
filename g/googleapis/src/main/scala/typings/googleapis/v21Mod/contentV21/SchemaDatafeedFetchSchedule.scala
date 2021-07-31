@@ -2,7 +2,6 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * schedule, weekday and hour are required. For a daily fetch schedule, only
   * hour is required.
   */
-@js.native
 trait SchemaDatafeedFetchSchedule extends StObject {
   
   /**
     * The day of the month the feed file should be fetched (1-31).
     */
-  var dayOfMonth: js.UndefOr[Double] = js.native
+  var dayOfMonth: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL where the feed file can be fetched. Google Merchant Center will
@@ -25,43 +23,43 @@ trait SchemaDatafeedFetchSchedule extends StObject {
     * protocols, so the value will need to be a valid link using one of those
     * four protocols.
     */
-  var fetchUrl: js.UndefOr[String] = js.native
+  var fetchUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The hour of the day the feed file should be fetched (0-23).
     */
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
   /**
     * The minute of the hour the feed file should be fetched (0-59). Read-only.
     */
-  var minuteOfHour: js.UndefOr[Double] = js.native
+  var minuteOfHour: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional password for fetch_url.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the scheduled fetch is paused or not.
     */
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Time zone used for schedule. UTC by default. E.g.,
     * &quot;America/Los_Angeles&quot;.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   /**
     * An optional user name for fetch_url.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
   /**
     * The day of the week the feed file should be fetched.
     */
-  var weekday: js.UndefOr[String] = js.native
+  var weekday: js.UndefOr[String] = js.undefined
 }
 object SchemaDatafeedFetchSchedule {
   

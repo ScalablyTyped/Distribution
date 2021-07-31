@@ -3,19 +3,19 @@ package typings.msRest.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServiceError extends Error {
+trait ServiceError
+  extends StObject
+     with Error {
   
-  var body: js.Any = js.native
+  var body: js.Any
   
-  var request: WebResource = js.native
+  var request: WebResource
   
-  var response: typings.node.httpMod.IncomingMessage = js.native
+  var response: typings.node.httpMod.IncomingMessage
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object ServiceError {
   

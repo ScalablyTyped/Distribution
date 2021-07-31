@@ -2,13 +2,13 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DesignerProcess extends BuildProcess {
+trait DesignerProcess
+  extends StObject
+     with BuildProcess {
   
-  var phases: js.Array[Phase] = js.native
+  var phases: js.Array[Phase]
 }
 object DesignerProcess {
   

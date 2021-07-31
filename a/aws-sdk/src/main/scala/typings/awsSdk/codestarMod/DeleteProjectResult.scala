@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the deleted project.
     */
-  var projectArn: js.UndefOr[ProjectArn] = js.native
+  var projectArn: js.UndefOr[ProjectArn] = js.undefined
   
   /**
     * The ID of the primary stack in AWS CloudFormation that will be deleted as part of deleting the project and its resources.
     */
-  var stackId: js.UndefOr[StackId] = js.native
+  var stackId: js.UndefOr[StackId] = js.undefined
 }
 object DeleteProjectResult {
   

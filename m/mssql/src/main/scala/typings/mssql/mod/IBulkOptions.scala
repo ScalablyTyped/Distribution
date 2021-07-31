@@ -2,23 +2,21 @@ package typings.mssql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBulkOptions extends StObject {
   
   /** Honors constraints during bulk load, using T-SQL CHECK_CONSTRAINTS. (default: false) */
-  var checkConstraints: js.UndefOr[Boolean] = js.native
+  var checkConstraints: js.UndefOr[Boolean] = js.undefined
   
   /** Honors insert triggers during bulk load, using the T-SQL FIRE_TRIGGERS. (default: false) */
-  var fireTriggers: js.UndefOr[Boolean] = js.native
+  var fireTriggers: js.UndefOr[Boolean] = js.undefined
   
   /** Honors null value passed, ignores the default values set on table, using T-SQL KEEP_NULLS. (default: false) */
-  var keepNulls: js.UndefOr[Boolean] = js.native
+  var keepNulls: js.UndefOr[Boolean] = js.undefined
   
   /** Places a bulk update(BU) lock on table while performing bulk load, using T-SQL TABLOCK. (default: false) */
-  var tableLock: js.UndefOr[Boolean] = js.native
+  var tableLock: js.UndefOr[Boolean] = js.undefined
 }
 object IBulkOptions {
   

@@ -2,24 +2,22 @@ package typings.workboxCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<workbox-core.workbox-core/setCacheNameDetails.CacheNameDetails> */
-  @js.native
   trait PartialCacheNameDetails extends StObject {
     
-    var googleAnalytics: js.UndefOr[String] = js.native
+    var googleAnalytics: js.UndefOr[String] = js.undefined
     
-    var precache: js.UndefOr[String] = js.native
+    var precache: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var runtime: js.UndefOr[String] = js.native
+    var runtime: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object PartialCacheNameDetails {
     

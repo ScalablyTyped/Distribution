@@ -3,26 +3,24 @@ package typings.antDesignIconsVue
 import typings.antDesignIconsSvg.typesMod.IconDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconBaseMod {
   
   object default {
     
-    @JSImport("@ant-design/icons-vue/lib/components/IconBase", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(
       props: IconProps,
       context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
     @JSImport("@ant-design/icons-vue/lib/components/IconBase", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@ant-design/icons-vue/lib/components/IconBase", "default.getTwoToneColors")
-    @js.native
-    def getTwoToneColors(): TwoToneColorPalette = js.native
+    @scala.inline
+    def getTwoToneColors(): TwoToneColorPalette = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColors")().asInstanceOf[TwoToneColorPalette]
     @JSImport("@ant-design/icons-vue/lib/components/IconBase", "default.getTwoToneColors")
     @js.native
     def getTwoToneColors_Fdefault: js.Function0[TwoToneColorPalette] = js.native
@@ -39,31 +37,29 @@ object iconBaseMod {
     @JSImport("@ant-design/icons-vue/lib/components/IconBase", "default.setTwoToneColors")
     @js.native
     def setTwoToneColors: js.Function1[/* hasPrimaryColorSecondaryColor */ TwoToneColorPaletteSetter, Unit] = js.native
-    @JSImport("@ant-design/icons-vue/lib/components/IconBase", "default.setTwoToneColors")
-    @js.native
-    def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = js.native
+    @scala.inline
+    def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTwoToneColors")(hasPrimaryColorSecondaryColor.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def setTwoToneColors_=(x: js.Function1[/* hasPrimaryColorSecondaryColor */ TwoToneColorPaletteSetter, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setTwoToneColors")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IconProps extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var focusable: js.UndefOr[String] = js.native
+    var focusable: js.UndefOr[String] = js.undefined
     
-    var icon: IconDefinition = js.native
+    var icon: IconDefinition
     
-    var onClick: js.UndefOr[js.Function] = js.native
+    var onClick: js.UndefOr[js.Function] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSProperties */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object IconProps {
     
@@ -119,10 +115,11 @@ object iconBaseMod {
     }
   }
   
-  @js.native
-  trait TwoToneColorPalette extends TwoToneColorPaletteSetter {
+  trait TwoToneColorPalette
+    extends StObject
+       with TwoToneColorPaletteSetter {
     
-    var calculated: js.UndefOr[Boolean] = js.native
+    var calculated: js.UndefOr[Boolean] = js.undefined
   }
   object TwoToneColorPalette {
     
@@ -143,12 +140,11 @@ object iconBaseMod {
     }
   }
   
-  @js.native
   trait TwoToneColorPaletteSetter extends StObject {
     
-    var primaryColor: String = js.native
+    var primaryColor: String
     
-    var secondaryColor: js.UndefOr[String] = js.native
+    var secondaryColor: js.UndefOr[String] = js.undefined
   }
   object TwoToneColorPaletteSetter {
     

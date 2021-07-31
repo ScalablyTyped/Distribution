@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxDerivedField...
   */
-@js.native
 trait INxDerivedField extends StObject {
   
   /**
@@ -19,30 +17,30 @@ trait INxDerivedField extends StObject {
     *
     * =${Mydefinition(OrderDate).Year}
     */
-  var qExpr: String = js.native
+  var qExpr: String
   
   /**
     * Identifier of the derived field.
     * >> The identifier is unique.
     */
-  var qId: String = js.native
+  var qId: String
   
   /**
     * Method name associated to the derived field.
     */
-  var qMethod: String = js.native
+  var qMethod: String
   
   /**
     * Combination of field name, definition and method.
     * Example:
     * OrderDate.MyDefinition.Year
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * List of tags.
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
 }
 object INxDerivedField {
   

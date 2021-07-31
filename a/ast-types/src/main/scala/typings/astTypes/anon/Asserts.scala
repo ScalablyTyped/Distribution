@@ -7,21 +7,19 @@ import typings.astTypes.kindsMod.TSThisTypeKind
 import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Asserts extends StObject {
   
-  var asserts: js.UndefOr[Boolean] = js.native
+  var asserts: js.UndefOr[Boolean] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var parameterName: IdentifierKind | TSThisTypeKind = js.native
+  var parameterName: IdentifierKind | TSThisTypeKind
   
-  var typeAnnotation: js.UndefOr[TSTypeAnnotationKind | Null] = js.native
+  var typeAnnotation: js.UndefOr[TSTypeAnnotationKind | Null] = js.undefined
 }
 object Asserts {
   

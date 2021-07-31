@@ -2,15 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcPolicyOverrideInfo extends StObject {
   
-  var comment: String = js.native
+  var comment: String
   
-  var policyFailures: js.Array[TfvcPolicyFailureInfo] = js.native
+  var policyFailures: js.Array[TfvcPolicyFailureInfo]
 }
 object TfvcPolicyOverrideInfo {
   

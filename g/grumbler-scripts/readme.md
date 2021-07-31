@@ -10,9 +10,9 @@ Javascript module template.
 | ------------------ | :-------------: |
 | Full name          | grumbler-scripts |
 | Keywords           | template |
-| # releases         | 64 |
+| # releases         | 47 |
 | # dependents       | 1 |
-| # downloads        | 16908 |
+| # downloads        | 18548 |
 | # stars            | 0 |
 
 ## Links

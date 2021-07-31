@@ -11,12 +11,11 @@ import typings.react.mod.RefAttributes
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMod {
   
-  type ComponentPropsWithRef[T /* <: ElementType[_] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[_] with RefAttributes[InstanceType[T]])
+  type ComponentPropsWithRef[T /* <: ElementType[js.Any] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[js.Any] & RefAttributes[InstanceType[T]])
   
   type ComponentType[P] = (ComponentClass[P, ComponentState]) | LeafFunctionComponent[P]
   

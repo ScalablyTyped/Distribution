@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SearchAgentsResponse. */
-@js.native
 trait ISearchAgentsResponse extends StObject {
   
   /** SearchAgentsResponse agents */
-  var agents: js.UndefOr[js.Array[IAgent] | Null] = js.native
+  var agents: js.UndefOr[js.Array[IAgent] | Null] = js.undefined
   
   /** SearchAgentsResponse nextPageToken */
-  var nextPageToken: js.UndefOr[String | Null] = js.native
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object ISearchAgentsResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubnetGroup extends StObject {
   
   /**
     * The description of the subnet group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the subnet group.
     */
-  var SubnetGroupName: js.UndefOr[String] = js.native
+  var SubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * A list of subnets associated with the subnet group. 
     */
-  var Subnets: js.UndefOr[SubnetList] = js.native
+  var Subnets: js.UndefOr[SubnetList] = js.undefined
   
   /**
     * The Amazon Virtual Private Cloud identifier (VPC ID) of the subnet group.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object SubnetGroup {
   

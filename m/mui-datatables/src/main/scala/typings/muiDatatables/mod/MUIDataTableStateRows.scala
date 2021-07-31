@@ -2,15 +2,13 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableStateRows extends StObject {
   
-  var data: js.Array[String] = js.native
+  var data: js.Array[String]
   
-  var lookup: js.Any = js.native
+  var lookup: js.Any
 }
 object MUIDataTableStateRows {
   

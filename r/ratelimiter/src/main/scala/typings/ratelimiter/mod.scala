@@ -3,29 +3,41 @@ package typings.ratelimiter
 import typings.redis.mod.RedisClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ratelimiter", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Limiter {
+  class ^ protected ()
+    extends StObject
+       with Limiter {
     def this(opts: LimiterOption) = this()
+    
+    /**
+      * Get values and header / status code and invoke `fn(err, info)`.
+      */
+    /* CompleteClass */
+    override def get(fn: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit]): Unit = js.native
+    
+    /**
+      * Inspect implementation
+      */
+    /* CompleteClass */
+    override def inspect(): String = js.native
   }
   
-  @js.native
   trait Limiter extends StObject {
     
     /**
       * Get values and header / status code and invoke `fn(err, info)`.
       */
-    def get(fn: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit]): Unit = js.native
+    def get(fn: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit]): Unit
     
     /**
       * Inspect implementation
       */
-    def inspect(): String = js.native
+    def inspect(): String
   }
   object Limiter {
     
@@ -49,28 +61,27 @@ object mod {
   /**
     * Result Object
     */
-  @js.native
   trait LimiterInfo extends StObject {
     
     /**
       * number of calls left in current `duration` without decreasing current `get`
       */
-    var remaining: Double = js.native
+    var remaining: Double
     
     /**
       * time since epoch in seconds at which the rate limiting period will end (or already ended)
       */
-    var reset: Double = js.native
+    var reset: Double
     
     /**
       * time since epoch in milliseconds at which the rate limiting period will end (or already ended)
       */
-    var resetMs: Double = js.native
+    var resetMs: Double
     
     /**
       * `max` value
       */
-    var total: Double = js.native
+    var total: Double
   }
   object LimiterInfo {
     
@@ -97,30 +108,29 @@ object mod {
     }
   }
   
-  @js.native
   trait LimiterOption extends StObject {
     
     /**
       * Redis connection instance
       */
-    var db: RedisClient = js.native
+    var db: RedisClient
     
     /**
       * Duration of limit in milliseconds
       * @default 3600000
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * The identifier to limit against (typically a user id)
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Max requests within duration
       * @default 2500
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
   }
   object LimiterOption {
     

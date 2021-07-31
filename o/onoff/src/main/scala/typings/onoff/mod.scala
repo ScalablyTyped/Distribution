@@ -5,7 +5,6 @@ import typings.onoff.onoffNumbers.`1`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,7 @@ object mod {
   class Gpio protected () extends StObject {
     def this(gpio: Double, direction: Direction) = this()
     def this(gpio: Double, direction: Direction, edge: Edge) = this()
-    def this(gpio: Double, direction: Direction, edge: js.UndefOr[scala.Nothing], options: Options) = this()
+    def this(gpio: Double, direction: Direction, edge: Unit, options: Options) = this()
     def this(gpio: Double, direction: Direction, edge: Edge, options: Options) = this()
     
     def activeLow(): Boolean = js.native
@@ -125,14 +124,13 @@ object mod {
   
   type Low = `0`
   
-  @js.native
   trait Options extends StObject {
     
-    var activeLow: js.UndefOr[Boolean] = js.native
+    var activeLow: js.UndefOr[Boolean] = js.undefined
     
-    var debounceTimeout: js.UndefOr[Double] = js.native
+    var debounceTimeout: js.UndefOr[Double] = js.undefined
     
-    var reconfigureDirection: js.UndefOr[Boolean] = js.native
+    var reconfigureDirection: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,11 +2,12 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StalkerX86Iterator extends X86Writer {
+trait StalkerX86Iterator
+  extends StObject
+     with X86Writer {
   
   def keep(): Unit = js.native
   

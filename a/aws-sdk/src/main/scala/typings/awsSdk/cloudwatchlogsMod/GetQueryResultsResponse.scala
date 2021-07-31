@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueryResultsResponse extends StObject {
   
   /**
     * The log events that matched the query criteria during the most recent time it ran. The results value is an array of arrays. Each log event is one object in the top-level array. Each of these log event objects is an array of field/value pairs.
     */
-  var results: js.UndefOr[QueryResults] = js.native
+  var results: js.UndefOr[QueryResults] = js.undefined
   
   /**
     * Includes the number of log events scanned by the query, the number of log events that matched the query criteria, and the total number of bytes in the log events that were scanned. These values reflect the full raw results of the query.
     */
-  var statistics: js.UndefOr[QueryStatistics] = js.native
+  var statistics: js.UndefOr[QueryStatistics] = js.undefined
   
   /**
     * The status of the most recent running of the query. Possible values are Cancelled, Complete, Failed, Running, Scheduled, Timeout, and Unknown. Queries time out after 15 minutes of execution. To avoid having your queries time out, reduce the time range being searched or partition your query into a number of queries.
     */
-  var status: js.UndefOr[QueryStatus] = js.native
+  var status: js.UndefOr[QueryStatus] = js.undefined
 }
 object GetQueryResultsResponse {
   

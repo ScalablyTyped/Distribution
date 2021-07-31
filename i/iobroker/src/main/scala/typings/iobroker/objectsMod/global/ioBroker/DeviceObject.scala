@@ -4,26 +4,25 @@ import typings.iobroker.iobrokerStrings.device
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_DeviceObject: DeviceCommon = js.native
+  var common_DeviceObject: DeviceCommon
   
   @JSName("type")
-  var type_DeviceObject: device = js.native
+  var type_DeviceObject: device
 }
 object DeviceObject {
   
   @scala.inline
-  def apply(_id: String, common: DeviceCommon, native: Record[String, _], `type`: device): DeviceObject = {
+  def apply(_id: String, common: DeviceCommon, native: Record[String, js.Any]): DeviceObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("device")
     __obj.asInstanceOf[DeviceObject]
   }
   

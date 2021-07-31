@@ -3,52 +3,50 @@ package typings.firebase.mod.firebase.auth
 import typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A utility class to parse email action URLs.
   */
-@js.native
 trait ActionCodeURL extends StObject {
   
   /**
     * The API key of the email action link.
     */
-  var apiKey: String = js.native
+  var apiKey: String
   
   /**
     * The action code of the email action link.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * The continue URL of the email action link. Null if not provided.
     */
-  var continueUrl: String | Null = js.native
+  var continueUrl: String | Null
   
   /**
     * The language code of the email action link. Null if not provided.
     */
-  var languageCode: String | Null = js.native
+  var languageCode: String | Null
   
   /**
     * The action performed by the email action link. It returns from one
     * of the types from {@link firebase.auth.ActionCodeInfo}.
     */
-  var operation: Operation = js.native
+  var operation: Operation
   
   /**
     * The tenant ID of the email action link. Null if the email action
     * is from the parent project.
     */
-  var tenantId: String | Null = js.native
+  var tenantId: String | Null
 }
 object ActionCodeURL {
   
   @scala.inline
   def apply(apiKey: String, code: String, operation: Operation): ActionCodeURL = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], continueUrl = null, languageCode = null, tenantId = null)
     __obj.asInstanceOf[ActionCodeURL]
   }
   

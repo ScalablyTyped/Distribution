@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delegate {
@@ -10,7 +9,8 @@ object delegate {
   @JSGlobal("sap.ui.core.delegate.ItemNavigation")
   @js.native
   class ItemNavigation protected ()
-    extends typings.openui5.sap.ui.core.delegate.ItemNavigation {
+    extends StObject
+       with typings.openui5.sap.ui.core.delegate.ItemNavigation {
     /**
       * Creates an <code>ItemNavigation</code> delegate that can be attached to controls
       * requiringcapabilities for keyboard navigation between items.
@@ -32,5 +32,6 @@ object delegate {
   @JSGlobal("sap.ui.core.delegate.ScrollEnablement")
   @js.native
   class ScrollEnablement ()
-    extends typings.openui5.sap.ui.core.delegate.ScrollEnablement
+    extends StObject
+       with typings.openui5.sap.ui.core.delegate.ScrollEnablement
 }

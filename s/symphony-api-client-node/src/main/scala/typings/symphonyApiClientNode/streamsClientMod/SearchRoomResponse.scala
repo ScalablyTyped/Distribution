@@ -2,23 +2,21 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchRoomResponse extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var facetedMatchCount: js.Array[FacetedMatch] = js.native
+  var facetedMatchCount: js.Array[FacetedMatch]
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var query: Query = js.native
+  var query: Query
   
-  var rooms: RoomInfo = js.native
+  var rooms: RoomInfo
   
-  var skip: Double = js.native
+  var skip: Double
 }
 object SearchRoomResponse {
   

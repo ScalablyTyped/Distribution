@@ -4,7 +4,6 @@ import typings.node.urlMod.Url
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ServiceSettings {
@@ -21,54 +20,51 @@ object ServiceSettings {
   
   @JSImport("azure", "ServiceSettings.NoMatchError")
   @js.native
-  class NoMatchError () extends Error {
+  class NoMatchError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: String, constr: js.Any) = this()
     
     var constr: js.Any = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @JSImport("azure", "ServiceSettings.allRequired")
-  @js.native
-  def allRequired(args: js.Any*): ValidatorFunction = js.native
+  @scala.inline
+  def allRequired(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("allRequired")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
   
-  @JSImport("azure", "ServiceSettings.atLeastOne")
-  @js.native
-  def atLeastOne(args: js.Any*): ValidatorFunction = js.native
+  @scala.inline
+  def atLeastOne(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("atLeastOne")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
   
-  @JSImport("azure", "ServiceSettings.getValidator")
-  @js.native
-  def getValidator(requirements: Dictionary[Requirement], isRequired: Boolean, atLeastOne: Boolean): ValidatorFunction = js.native
+  @scala.inline
+  def getValidator(requirements: Dictionary[Requirement], isRequired: Boolean, atLeastOne: Boolean): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidator")(requirements.asInstanceOf[js.Any], isRequired.asInstanceOf[js.Any], atLeastOne.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
   
-  @JSImport("azure", "ServiceSettings.matchedSpecification")
-  @js.native
-  def matchedSpecification(settings: Dictionary[_]): Boolean = js.native
+  @scala.inline
+  def matchedSpecification(settings: Dictionary[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedSpecification")(settings.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("azure", "ServiceSettings.noMatchConnectionString")
-  @js.native
-  def noMatchConnectionString(connectionString: String): Unit = js.native
+  @scala.inline
+  def noMatchConnectionString(connectionString: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noMatchConnectionString")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("azure", "ServiceSettings.noMatchSettings")
-  @js.native
-  def noMatchSettings(settings: js.Any): Unit = js.native
+  @scala.inline
+  def noMatchSettings(settings: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noMatchSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("azure", "ServiceSettings.optional")
-  @js.native
-  def optional(args: js.Any*): ValidatorFunction = js.native
+  @scala.inline
+  def optional(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
   
-  @JSImport("azure", "ServiceSettings.parseAndValidateKeys")
-  @js.native
-  def parseAndValidateKeys(connectionString: String, validKeys: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def parseAndValidateKeys(connectionString: String, validKeys: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAndValidateKeys")(connectionString.asInstanceOf[js.Any], validKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("azure", "ServiceSettings.parseHost")
-  @js.native
-  def parseHost(uri: String): Url = js.native
+  @scala.inline
+  def parseHost(uri: String): Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(uri.asInstanceOf[js.Any]).asInstanceOf[Url]
   
-  @JSImport("azure", "ServiceSettings.setting")
-  @js.native
-  def setting(name: String): js.Array[String] = js.native
+  @scala.inline
+  def setting(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setting")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("azure", "ServiceSettings.settingWithFunc")
-  @js.native
-  def settingWithFunc(name: String, predicate: js.Function): js.Array[Requirement] = js.native
+  @scala.inline
+  def settingWithFunc(name: String, predicate: js.Function): js.Array[Requirement] = (^.asInstanceOf[js.Dynamic].applyDynamic("settingWithFunc")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Requirement]]
 }

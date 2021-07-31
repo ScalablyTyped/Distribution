@@ -4,22 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents something that can recalculate. */
-@js.native
-trait XCalculatable extends XInterface {
+trait XCalculatable
+  extends StObject
+     with XInterface {
   
   /**
     * recalculates all dirty cells.
     *
     * This calculates all formula cells which have not yet been calculated after their precedents have changed.
     */
-  def calculate(): Unit = js.native
+  def calculate(): Unit
   
   /** recalculates all cells. */
-  def calculateAll(): Unit = js.native
+  def calculateAll(): Unit
   
   /**
     * enables automatic calculation.
@@ -28,7 +28,7 @@ trait XCalculatable extends XInterface {
     * the cell is displayed or used in another calculation.
     * @param bEnabled `TRUE` to enable automatic calculation, `FALSE` to disable.
     */
-  def enableAutomaticCalculation(bEnabled: Boolean): Unit = js.native
+  def enableAutomaticCalculation(bEnabled: Boolean): Unit
   
   /**
     * returns whether automatic calculation is enabled.
@@ -37,7 +37,7 @@ trait XCalculatable extends XInterface {
     * the cell is displayed or used in another calculation.
     * @returns `TRUE` , if automatic calculation is enabled.
     */
-  def isAutomaticCalculationEnabled(): Boolean = js.native
+  def isAutomaticCalculationEnabled(): Boolean
 }
 object XCalculatable {
   

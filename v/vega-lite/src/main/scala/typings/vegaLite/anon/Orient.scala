@@ -4,10 +4,8 @@ import typings.vegaLite.boxplotMod.BoxPlot
 import typings.vegaTypings.encodeMod.Orientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Orient extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait Orient extends StObject {
     *
     * __Default value:__ `"vertical"`.
     */
-  var orient: js.UndefOr[Orientation] = js.native
+  var orient: js.UndefOr[Orientation] = js.undefined
   
   /**
     * Type of the mark. For box plots, this should always be `"boxplot"`.
     * [boxplot](https://vega.github.io/vega-lite/docs/boxplot.html)
     */
-  var `type`: BoxPlot = js.native
+  var `type`: BoxPlot
 }
 object Orient {
   

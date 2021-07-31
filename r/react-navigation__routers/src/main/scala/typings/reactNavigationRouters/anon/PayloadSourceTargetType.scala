@@ -3,28 +3,26 @@ package typings.reactNavigationRouters.anon
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.RESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayloadSourceTargetType extends StObject {
   
   var payload: js.UndefOr[
     Readonlykeystringindexnum | PartialStateReadonlykeyst | PickReadonlykeystringinde
-  ] = js.native
+  ] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: RESET = js.native
+  var `type`: RESET
 }
 object PayloadSourceTargetType {
   
   @scala.inline
-  def apply(`type`: RESET): PayloadSourceTargetType = {
+  def apply(): PayloadSourceTargetType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RESET")
     __obj.asInstanceOf[PayloadSourceTargetType]
   }
   

@@ -2,61 +2,59 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentInfo extends StObject {
   
   /**
     * The agent or connector ID.
     */
-  var agentId: js.UndefOr[AgentId] = js.native
+  var agentId: js.UndefOr[AgentId] = js.undefined
   
   /**
     * Network details about the host where the agent or connector resides.
     */
-  var agentNetworkInfoList: js.UndefOr[AgentNetworkInfoList] = js.native
+  var agentNetworkInfoList: js.UndefOr[AgentNetworkInfoList] = js.undefined
   
   /**
     * Type of agent.
     */
-  var agentType: js.UndefOr[String] = js.native
+  var agentType: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the collection process for an agent or connector.
     */
-  var collectionStatus: js.UndefOr[String] = js.native
+  var collectionStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the connector.
     */
-  var connectorId: js.UndefOr[String] = js.native
+  var connectorId: js.UndefOr[String] = js.undefined
   
   /**
     * The health of the agent or connector.
     */
-  var health: js.UndefOr[AgentStatus] = js.native
+  var health: js.UndefOr[AgentStatus] = js.undefined
   
   /**
     * The name of the host where the agent or connector resides. The host can be a server or virtual machine.
     */
-  var hostName: js.UndefOr[String] = js.native
+  var hostName: js.UndefOr[String] = js.undefined
   
   /**
     * Time since agent or connector health was reported.
     */
-  var lastHealthPingTime: js.UndefOr[String] = js.native
+  var lastHealthPingTime: js.UndefOr[String] = js.undefined
   
   /**
     * Agent's first registration timestamp in UTC.
     */
-  var registeredTime: js.UndefOr[String] = js.native
+  var registeredTime: js.UndefOr[String] = js.undefined
   
   /**
     * The agent or connector version.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object AgentInfo {
   

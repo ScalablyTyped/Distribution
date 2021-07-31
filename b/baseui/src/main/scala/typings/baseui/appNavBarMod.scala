@@ -8,10 +8,13 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appNavBarMod {
+  
+  @JSImport("baseui/app-nav-bar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("baseui/app-nav-bar", "AppNavBar")
   @js.native
@@ -25,12 +28,11 @@ object appNavBarMod {
     def this(props: AppNavBarPropsT, context: js.Any) = this()
   }
   
-  @js.native
   trait POSITION extends StObject {
     
-    var horizontal: typings.baseui.baseuiStrings.horizontal = js.native
+    var horizontal: typings.baseui.baseuiStrings.horizontal
     
-    var vertical: typings.baseui.baseuiStrings.vertical = js.native
+    var vertical: typings.baseui.baseuiStrings.vertical
   }
   object POSITION {
     
@@ -49,50 +51,33 @@ object appNavBarMod {
     }
   }
   
-  @JSImport("baseui/app-nav-bar", "setItemActive")
-  @js.native
-  def setItemActive(items: js.Array[NavItemT], item: NavItemT): js.Array[NavItemT] = js.native
-  @JSImport("baseui/app-nav-bar", "setItemActive")
-  @js.native
+  @scala.inline
+  def setItemActive(items: js.Array[NavItemT], item: NavItemT): js.Array[NavItemT] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItemT]]
+  @scala.inline
   def setItemActive(
     items: js.Array[NavItemT],
     item: NavItemT,
     getUniqueueIdentifier: js.Function1[/* currentItem */ NavItemT, String | Double]
-  ): js.Array[NavItemT] = js.native
+  ): js.Array[NavItemT] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemActive")(items.asInstanceOf[js.Any], item.asInstanceOf[js.Any], getUniqueueIdentifier.asInstanceOf[js.Any])).asInstanceOf[js.Array[NavItemT]]
   
-  /* Inlined baseui.baseui/app-nav-bar.UserMenuPropsT & {  isMainItemActive :(item : baseui.baseui/app-nav-bar.NavItemT): boolean | undefined,   mainItems :std.Array<baseui.baseui/app-nav-bar.NavItemT> | undefined,   mapItemToNode :(item : baseui.baseui/app-nav-bar.NavItemT): react.react.ReactNode | undefined,   onMainItemSelect :(item : baseui.baseui/app-nav-bar.NavItemT): / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed * / any | undefined,   title :react.react.ReactNode | undefined} */
-  @js.native
-  trait AppNavBarPropsT extends StObject {
+  trait AppNavBarPropsT
+    extends StObject
+       with UserMenuPropsT {
     
-    var isMainItemActive: js.UndefOr[js.Function1[/* item */ NavItemT, Boolean]] = js.native
+    var isMainItemActive: js.UndefOr[js.Function1[/* item */ NavItemT, Boolean]] = js.undefined
     
-    var mainItems: js.UndefOr[js.Array[NavItemT]] = js.native
+    var mainItems: js.UndefOr[js.Array[NavItemT]] = js.undefined
     
-    var mapItemToNode: js.UndefOr[js.Function1[/* item */ NavItemT, ReactNode]] = js.native
+    var mapItemToNode: js.UndefOr[js.Function1[/* item */ NavItemT, ReactNode]] = js.undefined
     
     var onMainItemSelect: js.UndefOr[
         js.Function1[
           /* item */ NavItemT, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onUserItemSelect: js.UndefOr[
-        js.Function1[
-          /* item */ NavItemT, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ _
-        ]
-      ] = js.native
-    
-    var title: js.UndefOr[ReactNode] = js.native
-    
-    var userImgUrl: js.UndefOr[String] = js.native
-    
-    var userItems: js.UndefOr[js.Array[NavItemT]] = js.native
-    
-    var username: js.UndefOr[String] = js.native
-    
-    var usernameSubtitle: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object AppNavBarPropsT {
     
@@ -128,71 +113,35 @@ object appNavBarMod {
       
       @scala.inline
       def setOnMainItemSelect(
-        value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ _
+        value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
       ): Self = StObject.set(x, "onMainItemSelect", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMainItemSelectUndefined: Self = StObject.set(x, "onMainItemSelect", js.undefined)
       
       @scala.inline
-      def setOnUserItemSelect(
-        value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ _
-      ): Self = StObject.set(x, "onUserItemSelect", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnUserItemSelectUndefined: Self = StObject.set(x, "onUserItemSelect", js.undefined)
-      
-      @scala.inline
       def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-      
-      @scala.inline
-      def setUserImgUrl(value: String): Self = StObject.set(x, "userImgUrl", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUserImgUrlUndefined: Self = StObject.set(x, "userImgUrl", js.undefined)
-      
-      @scala.inline
-      def setUserItems(value: js.Array[NavItemT]): Self = StObject.set(x, "userItems", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUserItemsUndefined: Self = StObject.set(x, "userItems", js.undefined)
-      
-      @scala.inline
-      def setUserItemsVarargs(value: NavItemT*): Self = StObject.set(x, "userItems", js.Array(value :_*))
-      
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUsernameSubtitle(value: ReactNode): Self = StObject.set(x, "usernameSubtitle", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUsernameSubtitleUndefined: Self = StObject.set(x, "usernameSubtitle", js.undefined)
-      
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
-  @js.native
   trait NavItemT extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Array[NavItemT]] = js.native
+    var children: js.UndefOr[js.Array[NavItemT]] = js.undefined
     
-    var icon: js.UndefOr[ComponentType[_]] = js.native
+    var icon: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var info: js.UndefOr[js.Any] = js.native
+    var info: js.UndefOr[js.Any] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var navExitIcon: js.UndefOr[ComponentType[_]] = js.native
+    var navExitIcon: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var navPosition: js.UndefOr[Desktop] = js.native
+    var navPosition: js.UndefOr[Desktop] = js.undefined
   }
   object NavItemT {
     
@@ -221,7 +170,7 @@ object appNavBarMod {
       def setChildrenVarargs(value: NavItemT*): Self = StObject.set(x, "children", js.Array(value :_*))
       
       @scala.inline
-      def setIcon(value: ComponentType[_]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      def setIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
@@ -236,7 +185,7 @@ object appNavBarMod {
       def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNavExitIcon(value: ComponentType[_]): Self = StObject.set(x, "navExitIcon", value.asInstanceOf[js.Any])
+      def setNavExitIcon(value: ComponentType[js.Any]): Self = StObject.set(x, "navExitIcon", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNavExitIconUndefined: Self = StObject.set(x, "navExitIcon", js.undefined)
@@ -249,23 +198,22 @@ object appNavBarMod {
     }
   }
   
-  @js.native
   trait UserMenuPropsT extends StObject {
     
     var onUserItemSelect: js.UndefOr[
         js.Function1[
           /* item */ NavItemT, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var userImgUrl: js.UndefOr[String] = js.native
+    var userImgUrl: js.UndefOr[String] = js.undefined
     
-    var userItems: js.UndefOr[js.Array[NavItemT]] = js.native
+    var userItems: js.UndefOr[js.Array[NavItemT]] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
-    var usernameSubtitle: js.UndefOr[ReactNode] = js.native
+    var usernameSubtitle: js.UndefOr[ReactNode] = js.undefined
   }
   object UserMenuPropsT {
     
@@ -280,7 +228,7 @@ object appNavBarMod {
       
       @scala.inline
       def setOnUserItemSelect(
-        value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ _
+        value: /* item */ NavItemT => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mixed */ js.Any
       ): Self = StObject.set(x, "onUserItemSelect", js.Any.fromFunction1(value))
       
       @scala.inline

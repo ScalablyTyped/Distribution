@@ -2,19 +2,17 @@ package typings.tensorflowTfjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IouThreshold extends StObject {
   
-  var iouThreshold: Double = js.native
+  var iouThreshold: Double
   
-  var maxOutputSize: Double = js.native
+  var maxOutputSize: Double
   
-  var scoreThreshold: Double = js.native
+  var scoreThreshold: Double
   
-  var softNmsSigma: Double = js.native
+  var softNmsSigma: Double
 }
 object IouThreshold {
   

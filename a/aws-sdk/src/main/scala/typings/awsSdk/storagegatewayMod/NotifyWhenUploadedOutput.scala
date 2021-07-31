@@ -2,15 +2,13 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyWhenUploadedOutput extends StObject {
   
-  var FileShareARN: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareARN] = js.native
+  var FileShareARN: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareARN] = js.undefined
   
-  var NotificationId: js.UndefOr[typings.awsSdk.storagegatewayMod.NotificationId] = js.native
+  var NotificationId: js.UndefOr[typings.awsSdk.storagegatewayMod.NotificationId] = js.undefined
 }
 object NotifyWhenUploadedOutput {
   

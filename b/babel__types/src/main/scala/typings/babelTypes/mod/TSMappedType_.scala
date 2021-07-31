@@ -3,34 +3,33 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSMappedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSMappedType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSMappedType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var nameType: TSType | Null = js.native
+  var nameType: TSType | Null
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
-  var typeAnnotation: TSType | Null = js.native
+  var typeAnnotation: TSType | Null
   
-  var typeParameter: TSTypeParameter_ = js.native
+  var typeParameter: TSTypeParameter_
   
   @JSName("type")
-  var type_TSMappedType_ : TSMappedType = js.native
+  var type_TSMappedType_ : TSMappedType
 }
 object TSMappedType_ {
   
   @scala.inline
-  def apply(`type`: TSMappedType, typeParameter: TSTypeParameter_): TSMappedType_ = {
-    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeParameter: TSTypeParameter_): TSMappedType_ = {
+    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, nameType = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSMappedType")
     __obj.asInstanceOf[TSMappedType_]
   }
   

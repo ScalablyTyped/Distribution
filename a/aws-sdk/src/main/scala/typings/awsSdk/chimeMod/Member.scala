@@ -2,36 +2,34 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: js.UndefOr[NonEmptyString] = js.native
+  var AccountId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The member email address.
     */
-  var Email: js.UndefOr[SensitiveString] = js.native
+  var Email: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The member name.
     */
-  var FullName: js.UndefOr[SensitiveString] = js.native
+  var FullName: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The member ID (user ID or bot ID).
     */
-  var MemberId: js.UndefOr[NonEmptyString] = js.native
+  var MemberId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The member type.
     */
-  var MemberType: js.UndefOr[typings.awsSdk.chimeMod.MemberType] = js.native
+  var MemberType: js.UndefOr[typings.awsSdk.chimeMod.MemberType] = js.undefined
 }
 object Member {
   

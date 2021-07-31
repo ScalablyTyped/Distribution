@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSignatureProviderOption extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var signatureProviderOptionDisplayName: js.UndefOr[String] = js.native
+  var signatureProviderOptionDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var signatureProviderOptionId: js.UndefOr[String] = js.native
+  var signatureProviderOptionId: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var signatureProviderOptionName: js.UndefOr[String] = js.native
+  var signatureProviderOptionName: js.UndefOr[String] = js.undefined
 }
 object AccountSignatureProviderOption {
   

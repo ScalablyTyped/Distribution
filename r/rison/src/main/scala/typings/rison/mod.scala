@@ -3,7 +3,6 @@ package typings.rison
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,7 +11,6 @@ object mod extends Shortcut {
   @js.native
   val ^ : IRison = js.native
   
-  @js.native
   trait IRison extends StObject {
     
     /**
@@ -20,49 +18,49 @@ object mod extends Shortcut {
       * @param encoded Encoded string.
       * @returns {} Resulting array or object.
       */
-    def decode[T](encoded: String): T = js.native
+    def decode[T](encoded: String): T
     
     /**
       * Parses a A-Rison string into a javascript array.
       * @param encoded Encoded string.
       * @returns {} Resulting array.
       */
-    def decode_array[T](encoded: String): js.Array[T] = js.native
+    def decode_array[T](encoded: String): js.Array[T]
     
     /**
       * Parses a O-Rison string into a javascript object.
       * @param encoded Encoded string.
       * @returns {} Resulting object.
       */
-    def decode_object[T](encoded: String): T = js.native
+    def decode_object[T](encoded: String): T
     
     /**
       * Rison-encodes a javascript structure.
       * @param obj Object to encode.
       * @returns {} Encoded string.
       */
-    def encode(obj: js.Any): String = js.native
+    def encode(obj: js.Any): String
     
     /**
       * Rison-encodes a javascript array without surrounding parens (A-Rison).
       * @param obj Object to encode.
       * @returns {} Encoded string.
       */
-    def encode_array[T](arr: js.Array[T]): String = js.native
+    def encode_array[T](arr: js.Array[T]): String
     
     /**
       * Rison-encodes a javascript object without surrounding parens (O-Rison).
       * @param obj Object to encode.
       * @returns {} Encoded string.
       */
-    def encode_object[T](obj: T): String = js.native
+    def encode_object[T](obj: T): String
     
     /**
       * Rison-encodes and then url-escapes a javascript structure.
       * @param obj Object to encode.
       * @returns {} Encoded string.
       */
-    def encode_uri(obj: js.Any): String = js.native
+    def encode_uri(obj: js.Any): String
   }
   object IRison {
     

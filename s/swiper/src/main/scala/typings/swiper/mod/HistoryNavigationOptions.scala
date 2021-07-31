@@ -2,10 +2,8 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryNavigationOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait HistoryNavigationOptions extends StObject {
     *
     * @default 'slides'
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Works in addition to hashnav or history to replace current url state with the
@@ -21,7 +19,7 @@ trait HistoryNavigationOptions extends StObject {
     *
     * @default false
     */
-  var replaceState: js.UndefOr[Boolean] = js.native
+  var replaceState: js.UndefOr[Boolean] = js.undefined
 }
 object HistoryNavigationOptions {
   

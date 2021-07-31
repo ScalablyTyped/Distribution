@@ -2,19 +2,17 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detailed settings of a stream.
   */
-@js.native
 trait SchemaLiveStreamContentDetails extends StObject {
   
   /**
     * The ingestion URL where the closed captions of this stream are sent.
     */
-  var closedCaptionsIngestionUrl: js.UndefOr[String] = js.native
+  var closedCaptionsIngestionUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the stream is reusable, which means that it can be
@@ -30,7 +28,7 @@ trait SchemaLiveStreamContentDetails extends StObject {
     * true. The only way to use that method to retrieve the resource for a
     * non-reusable stream is to use the id parameter to identify the stream.
     */
-  var isReusable: js.UndefOr[Boolean] = js.native
+  var isReusable: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaLiveStreamContentDetails {
   

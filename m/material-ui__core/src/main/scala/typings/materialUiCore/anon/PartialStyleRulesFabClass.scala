@@ -3,32 +3,30 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Fab.FabClassKey>> */
-@js.native
 trait PartialStyleRulesFabClass extends StObject {
   
-  var colorInherit: js.UndefOr[CSSProperties] = js.native
+  var colorInherit: js.UndefOr[CSSProperties] = js.undefined
   
-  var disabled: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.undefined
   
-  var extended: js.UndefOr[CSSProperties] = js.native
+  var extended: js.UndefOr[CSSProperties] = js.undefined
   
-  var focusVisible: js.UndefOr[CSSProperties] = js.native
+  var focusVisible: js.UndefOr[CSSProperties] = js.undefined
   
-  var label: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.undefined
   
-  var primary: js.UndefOr[CSSProperties] = js.native
+  var primary: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var secondary: js.UndefOr[CSSProperties] = js.native
+  var secondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var sizeMedium: js.UndefOr[CSSProperties] = js.native
+  var sizeMedium: js.UndefOr[CSSProperties] = js.undefined
   
-  var sizeSmall: js.UndefOr[CSSProperties] = js.native
+  var sizeSmall: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesFabClass {
   

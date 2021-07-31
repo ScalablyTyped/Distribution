@@ -2,7 +2,6 @@ package typings.sindresorhusDf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,9 +11,8 @@ object mod {
   	 *
   	 * @returns A list of space info objects for each filesystem.
   	 */
-  @JSImport("@sindresorhus/df", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[js.Array[SpaceInfo]] = js.native
+  @scala.inline
+  def apply(): js.Promise[js.Array[SpaceInfo]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[SpaceInfo]]]
   
   @JSImport("@sindresorhus/df", JSImport.Namespace)
   @js.native
@@ -31,50 +29,47 @@ object mod {
   	 * @param path - Path to a file on the filesystem to get the space info for.
   	 * @returns Space info for the filesystem the given file is part of.
   	 */
-  @JSImport("@sindresorhus/df", "file")
-  @js.native
-  def file(path: String): js.Promise[SpaceInfo] = js.native
+  @scala.inline
+  def file(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
   
   /**
   	 * @param path - Path to a filesystem device file. Example: `'/dev/disk1'`.
   	 * @returns Space info for the given filesystem.
   	 */
-  @JSImport("@sindresorhus/df", "fs")
-  @js.native
-  def fs(path: String): js.Promise[SpaceInfo] = js.native
+  @scala.inline
+  def fs(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
   
-  @js.native
   trait SpaceInfo extends StObject {
     
     /**
     		 * Available size in bytes.
     		 */
-    val available: Double = js.native
+    val available: Double
     
     /**
     		 * Capacity as a float from `0` to `1`.
     		 */
-    val capacity: Double = js.native
+    val capacity: Double
     
     /**
     		 * Name of the filesystem.
     		 */
-    val filesystem: String = js.native
+    val filesystem: String
     
     /**
     		 * Disk mount location.
     		 */
-    val mountpoint: String = js.native
+    val mountpoint: String
     
     /**
     		 * Total size in bytes.
     		 */
-    val size: Double = js.native
+    val size: Double
     
     /**
     		 * Used size in bytes.
     		 */
-    val used: Double = js.native
+    val used: Double
   }
   object SpaceInfo {
     

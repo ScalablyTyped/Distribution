@@ -3,7 +3,6 @@ package typings.nodeunit
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,17 +23,17 @@ object mod {
   
   type ITestCase = js.Function1[/* testCase */ StringDictionary[ITestBody | ITestGroup | Unit], Unit]
   
-  @js.native
   trait ITestGroup
-    extends /* property */ StringDictionary[
+    extends StObject
+       with /* property */ StringDictionary[
           js.UndefOr[ITestGroup | ITestBody | (js.Function1[/* callback */ ICallbackFunction, Unit])]
         ] {
     
     /** The setUp function is run before each test */
-    var setUp: js.UndefOr[js.Function1[/* callback */ ICallbackFunction, Unit]] = js.native
+    var setUp: js.UndefOr[js.Function1[/* callback */ ICallbackFunction, Unit]] = js.undefined
     
     /** The tearDown function is run after each test calls test.done() */
-    var tearDown: js.UndefOr[js.Function1[/* callback */ ICallbackFunction, Unit]] = js.native
+    var tearDown: js.UndefOr[js.Function1[/* callback */ ICallbackFunction, Unit]] = js.undefined
   }
   object ITestGroup {
     
@@ -70,9 +69,9 @@ object mod {
     def deepEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
     
     def doesNotThrow(block: js.Any): Unit = js.native
-    def doesNotThrow(block: js.Any, error: js.UndefOr[scala.Nothing], message: String): Unit = js.native
     def doesNotThrow(block: js.Any, error: js.Any): Unit = js.native
     def doesNotThrow(block: js.Any, error: js.Any, message: String): Unit = js.native
+    def doesNotThrow(block: js.Any, error: Unit, message: String): Unit = js.native
     
     def done(): Unit = js.native
     def done(err: js.Any): Unit = js.native
@@ -112,8 +111,8 @@ object mod {
     def strictEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
     
     def throws(block: js.Any): Unit = js.native
-    def throws(block: js.Any, error: js.UndefOr[scala.Nothing], message: String): Unit = js.native
     def throws(block: js.Any, error: js.Any): Unit = js.native
     def throws(block: js.Any, error: js.Any, message: String): Unit = js.native
+    def throws(block: js.Any, error: Unit, message: String): Unit = js.native
   }
 }

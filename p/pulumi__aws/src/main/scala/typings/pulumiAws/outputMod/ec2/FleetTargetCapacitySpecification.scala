@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetTargetCapacitySpecification extends StObject {
   
   /**
     * Default target capacity type. Valid values: `on-demand`, `spot`.
     */
-  var defaultTargetCapacityType: String = js.native
+  var defaultTargetCapacityType: String
   
   /**
     * The number of On-Demand units to request.
     */
-  var onDemandTargetCapacity: js.UndefOr[Double] = js.native
+  var onDemandTargetCapacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of Spot units to request.
     */
-  var spotTargetCapacity: js.UndefOr[Double] = js.native
+  var spotTargetCapacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of units to request, filled using `defaultTargetCapacityType`.
     */
-  var totalTargetCapacity: Double = js.native
+  var totalTargetCapacity: Double
 }
 object FleetTargetCapacitySpecification {
   

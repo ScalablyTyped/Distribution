@@ -28,14 +28,15 @@ import typings.std.HTMLTextAreaElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textareaMod {
   
   @JSImport("@ionic/core/dist/types/components/textarea/textarea", "Textarea")
   @js.native
-  class Textarea () extends ComponentInterface {
+  class Textarea ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If `true`, the element height will increase based on the value.

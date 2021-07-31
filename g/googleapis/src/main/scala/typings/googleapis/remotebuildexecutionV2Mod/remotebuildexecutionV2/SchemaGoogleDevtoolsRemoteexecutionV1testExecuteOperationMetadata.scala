@@ -2,34 +2,32 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata about an ongoing execution, which will be contained in the
   * metadata field of the Operation.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testExecuteOperationMetadata extends StObject {
   
   /**
     * The digest of the Action being executed.
     */
-  var actionDigest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.native
+  var actionDigest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.undefined
   
-  var stage: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the client can use this name with ByteStream.Read to stream the
     * standard error.
     */
-  var stderrStreamName: js.UndefOr[String] = js.native
+  var stderrStreamName: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the client can use this name with ByteStream.Read to stream the
     * standard output.
     */
-  var stdoutStreamName: js.UndefOr[String] = js.native
+  var stdoutStreamName: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testExecuteOperationMetadata {
   

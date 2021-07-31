@@ -3,19 +3,17 @@ package typings.screeps
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait POWER_CLASS extends StObject {
   
-  var OPERATOR: operator = js.native
+  var OPERATOR: operator
 }
 object POWER_CLASS {
   
   @scala.inline
-  def apply(OPERATOR: operator): POWER_CLASS = {
-    val __obj = js.Dynamic.literal(OPERATOR = OPERATOR.asInstanceOf[js.Any])
+  def apply(): POWER_CLASS = {
+    val __obj = js.Dynamic.literal(OPERATOR = "operator")
     __obj.asInstanceOf[POWER_CLASS]
   }
   

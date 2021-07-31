@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobConfig extends StObject {
   
   /** List of ad breaks. Specifies where to insert ad break tags in the output manifests. */
-  var adBreaks: js.UndefOr[js.Array[AdBreak]] = js.native
+  var adBreaks: js.UndefOr[js.Array[AdBreak]] = js.undefined
   
   /** List of `Edit atom`s. Defines the ultimate timeline of the resulting file or manifest. */
-  var editList: js.UndefOr[js.Array[EditAtom]] = js.native
+  var editList: js.UndefOr[js.Array[EditAtom]] = js.undefined
   
   /** List of elementary streams. */
-  var elementaryStreams: js.UndefOr[js.Array[ElementaryStream]] = js.native
+  var elementaryStreams: js.UndefOr[js.Array[ElementaryStream]] = js.undefined
   
   /** List of input assets stored in Cloud Storage. */
-  var inputs: js.UndefOr[js.Array[Input]] = js.native
+  var inputs: js.UndefOr[js.Array[Input]] = js.undefined
   
   /** List of output manifests. */
-  var manifests: js.UndefOr[js.Array[Manifest]] = js.native
+  var manifests: js.UndefOr[js.Array[Manifest]] = js.undefined
   
   /** List of multiplexing settings for output streams. */
-  var muxStreams: js.UndefOr[js.Array[MuxStream]] = js.native
+  var muxStreams: js.UndefOr[js.Array[MuxStream]] = js.undefined
   
   /** Output configuration. */
-  var output: js.UndefOr[Output] = js.native
+  var output: js.UndefOr[Output] = js.undefined
   
   /** List of overlays on the output video, in descending Z-order. */
-  var overlays: js.UndefOr[js.Array[Overlay]] = js.native
+  var overlays: js.UndefOr[js.Array[Overlay]] = js.undefined
   
   /** Destination on Pub/Sub. */
-  var pubsubDestination: js.UndefOr[PubsubDestination] = js.native
+  var pubsubDestination: js.UndefOr[PubsubDestination] = js.undefined
   
   /** List of output sprite sheets. */
-  var spriteSheets: js.UndefOr[js.Array[SpriteSheet]] = js.native
+  var spriteSheets: js.UndefOr[js.Array[SpriteSheet]] = js.undefined
 }
 object JobConfig {
   

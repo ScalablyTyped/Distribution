@@ -11,13 +11,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows generic access to all spreadsheet functions. */
-@js.native
 trait FunctionAccess
-  extends SpreadsheetDocumentSettings
+  extends StObject
+     with SpreadsheetDocumentSettings
      with XFunctionAccess {
   
   /**
@@ -33,7 +32,7 @@ trait FunctionAccess
     * For compatibility with older versions, the default value of this property is `TRUE` .
     * @since OOo 3.3
     */
-  var IsArrayFunction: Boolean = js.native
+  var IsArrayFunction: Boolean
 }
 object FunctionAccess {
   
@@ -69,7 +68,7 @@ object FunctionAccess {
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    callFunction: (String, SeqEquiv[_]) => js.Any,
+    callFunction: (String, SeqEquiv[js.Any]) => js.Any,
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyValue: String => js.Any,
     queryInterface: `type` => js.Any,

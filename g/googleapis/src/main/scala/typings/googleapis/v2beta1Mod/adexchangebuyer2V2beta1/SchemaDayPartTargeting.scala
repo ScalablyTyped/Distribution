@@ -2,24 +2,22 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the day part targeting criteria.
   */
-@js.native
 trait SchemaDayPartTargeting extends StObject {
   
   /**
     * A list of day part targeting criterion.
     */
-  var dayParts: js.UndefOr[js.Array[SchemaDayPart]] = js.native
+  var dayParts: js.UndefOr[js.Array[SchemaDayPart]] = js.undefined
   
   /**
     * The timezone to use for interpreting the day part targeting.
     */
-  var timeZoneType: js.UndefOr[String] = js.native
+  var timeZoneType: js.UndefOr[String] = js.undefined
 }
 object SchemaDayPartTargeting {
   

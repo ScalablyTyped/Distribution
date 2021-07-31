@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Effects
 import typings.winrtUwp.Windows.Media.AudioFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides context for performing a custom audio effect operation within the ProcessFrame method. */
-@js.native
 trait ProcessAudioFrameContext extends StObject {
   
   /** Gets the input frame for an audio effect operation. */
-  var inputFrame: AudioFrame = js.native
+  var inputFrame: AudioFrame
   
   /** Gets the output frame for an audio effect operation. */
-  var outputFrame: AudioFrame = js.native
+  var outputFrame: AudioFrame
 }
 object ProcessAudioFrameContext {
   

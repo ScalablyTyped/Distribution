@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.ecs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapacityProviderAutoScalingGroupProviderManagedScaling extends StObject {
   
   /**
     * The maximum step adjustment size. A number between 1 and 10,000.
     */
-  var maximumScalingStepSize: Double = js.native
+  var maximumScalingStepSize: Double
   
   /**
     * The minimum step adjustment size. A number between 1 and 10,000.
     */
-  var minimumScalingStepSize: Double = js.native
+  var minimumScalingStepSize: Double
   
   /**
     * Whether auto scaling is managed by ECS. Valid values are `ENABLED` and `DISABLED`.
     */
-  var status: String = js.native
+  var status: String
   
   /**
     * The target utilization for the capacity provider. A number between 1 and 100.
     */
-  var targetCapacity: Double = js.native
+  var targetCapacity: Double
 }
 object CapacityProviderAutoScalingGroupProviderManagedScaling {
   

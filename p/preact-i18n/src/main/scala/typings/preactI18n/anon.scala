@@ -4,15 +4,13 @@ import typings.preact.mod.ComponentChild
 import typings.preact.mod.ComponentChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ComponentChildren = js.native
+    var children: ComponentChildren
   }
   object Children {
     
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Definition extends StObject {
     
-    var definition: js.UndefOr[js.Object] = js.native
+    var definition: js.UndefOr[js.Object] = js.undefined
     
-    var mark: js.UndefOr[Boolean] = js.native
+    var mark: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
   }
   object Definition {
     
@@ -79,14 +76,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.UndefOr[js.Object] = js.native
+    var fields: js.UndefOr[js.Object] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var plural: js.UndefOr[Double] = js.native
+    var plural: js.UndefOr[Double] = js.undefined
   }
   object Fields {
     
@@ -116,12 +112,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var definition: js.UndefOr[js.Object] = js.native
+    var definition: js.UndefOr[js.Object] = js.undefined
     
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
   }
   object Scope {
     

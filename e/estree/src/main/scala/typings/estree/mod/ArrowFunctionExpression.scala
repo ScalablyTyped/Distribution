@@ -2,31 +2,25 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrowFunctionExpression
-  extends BaseFunction
+  extends StObject
+     with BaseFunction
      with Expression
      with Function {
   
-  var expression: Boolean = js.native
+  var expression: Boolean
   
   @JSName("type")
-  var type_ArrowFunctionExpression: typings.estree.estreeStrings.ArrowFunctionExpression = js.native
+  var type_ArrowFunctionExpression: typings.estree.estreeStrings.ArrowFunctionExpression
 }
 object ArrowFunctionExpression {
   
   @scala.inline
-  def apply(
-    body: BlockStatement | Expression,
-    expression: Boolean,
-    params: js.Array[Pattern],
-    `type`: typings.estree.estreeStrings.ArrowFunctionExpression
-  ): ArrowFunctionExpression = {
+  def apply(body: BlockStatement | Expression, expression: Boolean, params: js.Array[Pattern]): ArrowFunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[ArrowFunctionExpression]
   }
   

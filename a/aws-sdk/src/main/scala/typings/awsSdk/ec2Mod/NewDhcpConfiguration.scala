@@ -2,15 +2,13 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewDhcpConfiguration extends StObject {
   
-  var Key: js.UndefOr[String] = js.native
+  var Key: js.UndefOr[String] = js.undefined
   
-  var Values: js.UndefOr[ValueStringList] = js.native
+  var Values: js.UndefOr[ValueStringList] = js.undefined
 }
 object NewDhcpConfiguration {
   

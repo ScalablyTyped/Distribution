@@ -4,25 +4,23 @@ import typings.nextAuth.nextAuthBooleans.`true`
 import typings.nextAuth.utilsMod.NextApiRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieName extends StObject {
   
-  var cookieName: js.UndefOr[String] = js.native
+  var cookieName: js.UndefOr[String] = js.undefined
   
-  var raw: `true` = js.native
+  var raw: `true`
   
-  var req: NextApiRequest = js.native
+  var req: NextApiRequest
   
-  var secureCookie: js.UndefOr[Boolean] = js.native
+  var secureCookie: js.UndefOr[Boolean] = js.undefined
 }
 object CookieName {
   
   @scala.inline
-  def apply(raw: `true`, req: NextApiRequest): CookieName = {
-    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
+  def apply(req: NextApiRequest): CookieName = {
+    val __obj = js.Dynamic.literal(raw = true, req = req.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieName]
   }
   

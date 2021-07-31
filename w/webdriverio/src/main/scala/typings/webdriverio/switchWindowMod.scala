@@ -1,0 +1,18 @@
+package typings.webdriverio
+
+import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object switchWindowMod {
+  
+  @JSImport("webdriverio/build/commands/browser/switchWindow", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(urlOrTitleToMatch: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(urlOrTitleToMatch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def default(urlOrTitleToMatch: RegExp): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(urlOrTitleToMatch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+}

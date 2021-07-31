@@ -2,46 +2,44 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Bucket extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the bucket.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the bucket was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.native
+  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The type of server-side encryption that's used by default to encrypt objects in the bucket.
     */
-  var defaultServerSideEncryption: js.UndefOr[ServerSideEncryption] = js.native
+  var defaultServerSideEncryption: js.UndefOr[ServerSideEncryption] = js.undefined
   
   /**
     * The name of the bucket.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
   
   /**
     * The display name and account identifier for the user who owns the bucket.
     */
-  var owner: js.UndefOr[S3BucketOwner] = js.native
+  var owner: js.UndefOr[S3BucketOwner] = js.undefined
   
   /**
     * The permissions settings that determine whether the bucket is publicly accessible.
     */
-  var publicAccess: js.UndefOr[BucketPublicAccess] = js.native
+  var publicAccess: js.UndefOr[BucketPublicAccess] = js.undefined
   
   /**
     * The tags that are associated with the bucket.
     */
-  var tags: js.UndefOr[KeyValuePairList] = js.native
+  var tags: js.UndefOr[KeyValuePairList] = js.undefined
 }
 object S3Bucket {
   

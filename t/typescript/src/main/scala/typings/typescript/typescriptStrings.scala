@@ -7,24 +7,28 @@ import typings.typescript.mod.SignatureHelpTriggerCharacter
 import typings.typescript.mod.TypeOfTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typescriptStrings {
   
   @js.native
-  sealed trait `@` extends CompletionsTriggerCharacter
+  sealed trait `@`
+    extends StObject
+       with CompletionsTriggerCharacter
   @scala.inline
   def `@`: `@` = "@".asInstanceOf[`@`]
   
   @js.native
-  sealed trait Apostrophe extends CompletionsTriggerCharacter
+  sealed trait Apostrophe
+    extends StObject
+       with CompletionsTriggerCharacter
   @scala.inline
   def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
   sealed trait Comma
-    extends SignatureHelpRetriggerCharacter
+    extends StObject
+       with SignatureHelpRetriggerCharacter
        with SignatureHelpTriggerCharacter
   @scala.inline
   def Comma: Comma = ",".asInstanceOf[Comma]
@@ -35,47 +39,61 @@ object typescriptStrings {
   def CreatePackageJsonAutoImportProvider: CreatePackageJsonAutoImportProvider = "CreatePackageJsonAutoImportProvider".asInstanceOf[CreatePackageJsonAutoImportProvider]
   
   @js.native
-  sealed trait Dot extends CompletionsTriggerCharacter
+  sealed trait Dot
+    extends StObject
+       with CompletionsTriggerCharacter
   @scala.inline
   def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
-  sealed trait Graveaccent extends CompletionsTriggerCharacter
+  sealed trait Graveaccent
+    extends StObject
+       with CompletionsTriggerCharacter
   @scala.inline
   def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
   
   @js.native
   sealed trait Leftparenthesis
-    extends SignatureHelpRetriggerCharacter
+    extends StObject
+       with SignatureHelpRetriggerCharacter
        with SignatureHelpTriggerCharacter
   @scala.inline
   def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   
   @js.native
   sealed trait Lessthansign
-    extends CompletionsTriggerCharacter
+    extends StObject
+       with CompletionsTriggerCharacter
        with SignatureHelpRetriggerCharacter
        with SignatureHelpTriggerCharacter
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait Numbersign extends CompletionsTriggerCharacter
+  sealed trait Numbersign
+    extends StObject
+       with CompletionsTriggerCharacter
   @scala.inline
   def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   
   @js.native
-  sealed trait Quotationmark extends CompletionsTriggerCharacter
+  sealed trait Quotationmark
+    extends StObject
+       with CompletionsTriggerCharacter
   @scala.inline
   def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native
-  sealed trait Rightparenthesis extends SignatureHelpRetriggerCharacter
+  sealed trait Rightparenthesis
+    extends StObject
+       with SignatureHelpRetriggerCharacter
   @scala.inline
   def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   
   @js.native
-  sealed trait Slash extends CompletionsTriggerCharacter
+  sealed trait Slash
+    extends StObject
+       with CompletionsTriggerCharacter
   @scala.inline
   def Slash: Slash = "/".asInstanceOf[Slash]
   
@@ -105,12 +123,16 @@ object typescriptStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bigint extends TypeOfTag
+  sealed trait bigint
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
-  sealed trait boolean extends TypeOfTag
+  sealed trait boolean
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -175,12 +197,16 @@ object typescriptStrings {
   def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait function extends TypeOfTag
+  sealed trait function
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   
   @js.native
-  sealed trait `implicit` extends RefactorTriggerReason
+  sealed trait `implicit`
+    extends StObject
+       with RefactorTriggerReason
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
@@ -195,7 +221,9 @@ object typescriptStrings {
   def installPackage: installPackage = "installPackage".asInstanceOf[installPackage]
   
   @js.native
-  sealed trait invoked extends RefactorTriggerReason
+  sealed trait invoked
+    extends StObject
+       with RefactorTriggerReason
   @scala.inline
   def invoked: invoked = "invoked".asInstanceOf[invoked]
   
@@ -215,12 +243,16 @@ object typescriptStrings {
   def `non-relative`: `non-relative` = "non-relative".asInstanceOf[`non-relative`]
   
   @js.native
-  sealed trait number extends TypeOfTag
+  sealed trait number
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `object` extends TypeOfTag
+  sealed trait `object`
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -260,7 +292,9 @@ object typescriptStrings {
   def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait string extends TypeOfTag
+  sealed trait string
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
@@ -270,7 +304,9 @@ object typescriptStrings {
   def substring: substring = "substring".asInstanceOf[substring]
   
   @js.native
-  sealed trait symbol extends TypeOfTag
+  sealed trait symbol
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
@@ -280,7 +316,9 @@ object typescriptStrings {
   def typesRegistry: typesRegistry = "typesRegistry".asInstanceOf[typesRegistry]
   
   @js.native
-  sealed trait undefined extends TypeOfTag
+  sealed trait undefined
+    extends StObject
+       with TypeOfTag
   @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
 }

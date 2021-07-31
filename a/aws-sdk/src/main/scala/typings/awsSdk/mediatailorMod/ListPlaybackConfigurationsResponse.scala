@@ -2,21 +2,19 @@ package typings.awsSdk.mediatailorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPlaybackConfigurationsResponse extends StObject {
   
   /**
     * Array of playback configurations. This might be all the available configurations or a subset, depending on the settings that you provide and the total number of configurations stored. 
     */
-  var Items: js.UndefOr[listOfPlaybackConfigurations] = js.native
+  var Items: js.UndefOr[listOfPlaybackConfigurations] = js.undefined
   
   /**
     * Pagination token returned by the GET list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListPlaybackConfigurationsResponse {
   

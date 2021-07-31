@@ -6,7 +6,6 @@ import typings.react.mod.StatelessComponent
 import typings.reactVisibilitySensor.anon.IsVisible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,40 +14,39 @@ object mod extends Shortcut {
   @js.native
   val default: StatelessComponent[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode | (js.Function1[/* args */ IsVisible, ReactNode])] = js.native
+    var children: js.UndefOr[ReactNode | (js.Function1[/* args */ IsVisible, ReactNode])] = js.undefined
     
-    var containment: js.UndefOr[js.Any] = js.native
+    var containment: js.UndefOr[js.Any] = js.undefined
     
-    var delayedCall: js.UndefOr[Boolean] = js.native
+    var delayedCall: js.UndefOr[Boolean] = js.undefined
     
-    var intervalCheck: js.UndefOr[Boolean] = js.native
+    var intervalCheck: js.UndefOr[Boolean] = js.undefined
     
-    var intervalDelay: js.UndefOr[Double] = js.native
+    var intervalDelay: js.UndefOr[Double] = js.undefined
     
-    var minTopValue: js.UndefOr[Double] = js.native
+    var minTopValue: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Shape] = js.native
+    var offset: js.UndefOr[Shape] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* isVisible */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* isVisible */ Boolean, Unit]] = js.undefined
     
-    var partialVisibility: js.UndefOr[Boolean] = js.native
+    var partialVisibility: js.UndefOr[Boolean] = js.undefined
     
-    var resizeCheck: js.UndefOr[Boolean] = js.native
+    var resizeCheck: js.UndefOr[Boolean] = js.undefined
     
-    var resizeDelay: js.UndefOr[Double] = js.native
+    var resizeDelay: js.UndefOr[Double] = js.undefined
     
-    var resizeThrottle: js.UndefOr[Double] = js.native
+    var resizeThrottle: js.UndefOr[Double] = js.undefined
     
-    var scrollCheck: js.UndefOr[Boolean] = js.native
+    var scrollCheck: js.UndefOr[Boolean] = js.undefined
     
-    var scrollDelay: js.UndefOr[Double] = js.native
+    var scrollDelay: js.UndefOr[Double] = js.undefined
     
-    var scrollThrottle: js.UndefOr[Double] = js.native
+    var scrollThrottle: js.UndefOr[Double] = js.undefined
   }
   object Props {
     
@@ -162,16 +160,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Shape extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Shape {
     

@@ -2,56 +2,54 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var Arn: js.UndefOr[RuleArn] = js.native
+  var Arn: js.UndefOr[RuleArn] = js.undefined
   
   /**
     * The description of the rule.
     */
-  var Description: js.UndefOr[RuleDescription] = js.native
+  var Description: js.UndefOr[RuleDescription] = js.undefined
   
   /**
     * The name or ARN of the event bus associated with the rule. If you omit this, the default event bus is used.
     */
-  var EventBusName: js.UndefOr[typings.awsSdk.eventbridgeMod.EventBusName] = js.native
+  var EventBusName: js.UndefOr[typings.awsSdk.eventbridgeMod.EventBusName] = js.undefined
   
   /**
     * The event pattern of the rule. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
     */
-  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.native
+  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.undefined
   
   /**
     * If the rule was created on behalf of your account by an AWS service, this field displays the principal name of the service that created the rule.
     */
-  var ManagedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.ManagedBy] = js.native
+  var ManagedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.ManagedBy] = js.undefined
   
   /**
     * The name of the rule.
     */
-  var Name: js.UndefOr[RuleName] = js.native
+  var Name: js.UndefOr[RuleName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role that is used for target invocation.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.eventbridgeMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.eventbridgeMod.RoleArn] = js.undefined
   
   /**
     * The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)".
     */
-  var ScheduleExpression: js.UndefOr[typings.awsSdk.eventbridgeMod.ScheduleExpression] = js.native
+  var ScheduleExpression: js.UndefOr[typings.awsSdk.eventbridgeMod.ScheduleExpression] = js.undefined
   
   /**
     * The state of the rule.
     */
-  var State: js.UndefOr[RuleState] = js.native
+  var State: js.UndefOr[RuleState] = js.undefined
 }
 object Rule {
   

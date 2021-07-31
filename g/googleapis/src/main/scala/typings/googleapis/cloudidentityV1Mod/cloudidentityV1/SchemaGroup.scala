@@ -3,19 +3,17 @@ package typings.googleapis.cloudidentityV1Mod.cloudidentityV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource representing a Group.
   */
-@js.native
 trait SchemaGroup extends StObject {
   
   /**
     * The time when the Group was created. Output only.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * An extended description to help users determine the purpose of a Group.
@@ -23,25 +21,25 @@ trait SchemaGroup extends StObject {
     * the types of messages to send to the Group, links to FAQs about the
     * Group, or related Groups. Maximum length is 4,096 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The Group&#39;s display name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * EntityKey of the Group.  Must be set when creating a Group, read-only
     * afterwards.
     */
-  var groupKey: js.UndefOr[SchemaEntityKey] = js.native
+  var groupKey: js.UndefOr[SchemaEntityKey] = js.undefined
   
   /**
     * `Required`. Labels for Group resource. For creating Groups under a
     * namespace, set label key to &#39;labels/system/groups/external&#39; and
     * label value as empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * [Resource name](https://cloud.google.com/apis/design/resource_names) of
@@ -49,19 +47,19 @@ trait SchemaGroup extends StObject {
     * unique ID assigned to the Group.  Must be left blank while creating a
     * Group.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The entity under which this Group resides in Cloud Identity resource
     * hierarchy. Must be set when creating a Group, read-only afterwards.
     * Currently allowed types: `identitysources`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the Group was last updated. Output only.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGroup {
   

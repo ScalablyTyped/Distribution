@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the GuardDuty resource to apply a tag to.
     */
-  var ResourceArn: GuardDutyArn = js.native
+  var ResourceArn: GuardDutyArn
   
   /**
     * The tags to be added to a resource.
     */
-  var Tags: TagMap = js.native
+  var Tags: TagMap
 }
 object TagResourceRequest {
   

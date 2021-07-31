@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRestoreJobInput extends StObject {
   
   /**
     * Uniquely identifies the job that restores a recovery point.
     */
-  var RestoreJobId: typings.awsSdk.backupMod.RestoreJobId = js.native
+  var RestoreJobId: typings.awsSdk.backupMod.RestoreJobId
 }
 object DescribeRestoreJobInput {
   

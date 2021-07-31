@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reportDefinitionMod {
@@ -83,6 +82,10 @@ object reportDefinitionMod {
   /* static members */
   object ReportDefinition {
     
+    @JSImport("@pulumi/aws/cur/reportDefinition", "ReportDefinition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReportDefinition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,85 +95,79 @@ object reportDefinitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cur/reportDefinition", "ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReportDefinition = js.native
-    @JSImport("@pulumi/aws/cur/reportDefinition", "ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReportDefinition = js.native
-    @JSImport("@pulumi/aws/cur/reportDefinition", "ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReportDefinitionState): ReportDefinition = js.native
-    @JSImport("@pulumi/aws/cur/reportDefinition", "ReportDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): ReportDefinition = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReportDefinitionState): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): ReportDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportDefinition]
     
     /**
       * Returns true if the given object is an instance of ReportDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cur/reportDefinition", "ReportDefinition.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cur/reportDefinition.ReportDefinition */ Boolean]
   }
   
-  @js.native
   trait ReportDefinitionArgs extends StObject {
     
     /**
       * A list of additional artifacts. Valid values are: REDSHIFT, QUICKSIGHT, ATHENA. When ATHENA exists within additional_artifacts, no other artifact type can be declared and reportVersioning must be OVERWRITE_REPORT.
       */
-    val additionalArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val additionalArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of schema elements. Valid values are: RESOURCES.
       */
-    val additionalSchemaElements: Input[js.Array[Input[String]]] = js.native
+    val additionalSchemaElements: Input[js.Array[Input[String]]]
     
     /**
       * Compression format for report. Valid values are: GZIP, ZIP, Parquet. If Parquet is used, then format must also be Parquet.
       */
-    val compression: Input[String] = js.native
+    val compression: Input[String]
     
     /**
       * Format for report. Valid values are: textORcsv, Parquet. If Parquet is used, then Compression must also be Parquet.
       */
-    val format: Input[String] = js.native
+    val format: Input[String]
     
     /**
       * Set to true to update your reports after they have been finalized if AWS detects charges related to previous months.
       */
-    val refreshClosedReports: js.UndefOr[Input[Boolean]] = js.native
+    val refreshClosedReports: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Unique name for the report. Must start with a number/letter and is case sensitive. Limited to 256 characters.
       */
-    val reportName: Input[String] = js.native
+    val reportName: Input[String]
     
     /**
       * Overwrite the previous version of each report or to deliver the report in addition to the previous versions. Valid values are: CREATE_NEW_REPORT, OVERWRITE_REPORT
       */
-    val reportVersioning: js.UndefOr[Input[String]] = js.native
+    val reportVersioning: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the existing S3 bucket to hold generated reports.
       */
-    val s3Bucket: Input[String] = js.native
+    val s3Bucket: Input[String]
     
     /**
       * Report path prefix. Limited to 256 characters.
       */
-    val s3Prefix: js.UndefOr[Input[String]] = js.native
+    val s3Prefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Region of the existing S3 bucket to hold generated reports.
       */
-    val s3Region: Input[String] = js.native
+    val s3Region: Input[String]
     
     /**
       * The frequency on which report data are measured and displayed.  Valid values are: HOURLY, DAILY.
       */
-    val timeUnit: Input[String] = js.native
+    val timeUnit: Input[String]
   }
   object ReportDefinitionArgs {
     
@@ -244,63 +241,62 @@ object reportDefinitionMod {
     }
   }
   
-  @js.native
   trait ReportDefinitionState extends StObject {
     
     /**
       * A list of additional artifacts. Valid values are: REDSHIFT, QUICKSIGHT, ATHENA. When ATHENA exists within additional_artifacts, no other artifact type can be declared and reportVersioning must be OVERWRITE_REPORT.
       */
-    val additionalArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val additionalArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of schema elements. Valid values are: RESOURCES.
       */
-    val additionalSchemaElements: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val additionalSchemaElements: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Compression format for report. Valid values are: GZIP, ZIP, Parquet. If Parquet is used, then format must also be Parquet.
       */
-    val compression: js.UndefOr[Input[String]] = js.native
+    val compression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Format for report. Valid values are: textORcsv, Parquet. If Parquet is used, then Compression must also be Parquet.
       */
-    val format: js.UndefOr[Input[String]] = js.native
+    val format: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set to true to update your reports after they have been finalized if AWS detects charges related to previous months.
       */
-    val refreshClosedReports: js.UndefOr[Input[Boolean]] = js.native
+    val refreshClosedReports: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Unique name for the report. Must start with a number/letter and is case sensitive. Limited to 256 characters.
       */
-    val reportName: js.UndefOr[Input[String]] = js.native
+    val reportName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Overwrite the previous version of each report or to deliver the report in addition to the previous versions. Valid values are: CREATE_NEW_REPORT, OVERWRITE_REPORT
       */
-    val reportVersioning: js.UndefOr[Input[String]] = js.native
+    val reportVersioning: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the existing S3 bucket to hold generated reports.
       */
-    val s3Bucket: js.UndefOr[Input[String]] = js.native
+    val s3Bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Report path prefix. Limited to 256 characters.
       */
-    val s3Prefix: js.UndefOr[Input[String]] = js.native
+    val s3Prefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Region of the existing S3 bucket to hold generated reports.
       */
-    val s3Region: js.UndefOr[Input[String]] = js.native
+    val s3Region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The frequency on which report data are measured and displayed.  Valid values are: HOURLY, DAILY.
       */
-    val timeUnit: js.UndefOr[Input[String]] = js.native
+    val timeUnit: js.UndefOr[Input[String]] = js.undefined
   }
   object ReportDefinitionState {
     

@@ -2,19 +2,17 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxSchemaAgreementWaitSeconds extends StObject {
   
-  var maxSchemaAgreementWaitSeconds: js.UndefOr[Double] = js.native
+  var maxSchemaAgreementWaitSeconds: js.UndefOr[Double] = js.undefined
   
-  var maxVersion: js.UndefOr[Double] = js.native
+  var maxVersion: js.UndefOr[Double] = js.undefined
   
-  var noCompact: js.UndefOr[Boolean] = js.native
+  var noCompact: js.UndefOr[Boolean] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object MaxSchemaAgreementWaitSeconds {
   

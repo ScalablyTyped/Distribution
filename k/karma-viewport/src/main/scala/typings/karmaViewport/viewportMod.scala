@@ -6,10 +6,13 @@ import typings.karmaViewport.anon.ReadonlyViewportConfigura
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewportMod {
+  
+  @JSImport("karma-viewport/dist/adapter/viewport", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("karma-viewport/dist/adapter/viewport", "Viewport")
   @js.native
@@ -41,7 +44,7 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def between[T /* <: js.Promise[_] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def between[T /* <: js.Promise[js.Any] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("between")
     def between_T_Unit[T](first: String, last: String, cb: ViewportCallback[T]): Unit = js.native
     
@@ -67,7 +70,7 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def each[T /* <: js.Promise[_] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def each[T /* <: js.Promise[js.Any] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("each")
     def each_T_Unit[T](cb: ViewportCallback[T]): Unit = js.native
     
@@ -84,7 +87,7 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def from[T /* <: js.Promise[_] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def from[T /* <: js.Promise[js.Any] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("from")
     def from_T_Unit[T](first: String, cb: ViewportCallback[T]): Unit = js.native
     
@@ -135,24 +138,21 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def to[T /* <: js.Promise[_] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+    def to[T /* <: js.Promise[js.Any] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("to")
     def to_T_Unit[T](last: String, cb: ViewportCallback[T]): Unit = js.native
   }
   
-  @JSImport("karma-viewport/dist/adapter/viewport", "range")
-  @js.native
-  def range(breakpoints: js.Array[ViewportBreakpoint], first: String): js.Array[ViewportBreakpoint] = js.native
-  @JSImport("karma-viewport/dist/adapter/viewport", "range")
-  @js.native
-  def range(breakpoints: js.Array[ViewportBreakpoint], first: String, last: String): js.Array[ViewportBreakpoint] = js.native
+  @scala.inline
+  def range(breakpoints: js.Array[ViewportBreakpoint], first: String): js.Array[ViewportBreakpoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(breakpoints.asInstanceOf[js.Any], first.asInstanceOf[js.Any])).asInstanceOf[js.Array[ViewportBreakpoint]]
+  @scala.inline
+  def range(breakpoints: js.Array[ViewportBreakpoint], first: String, last: String): js.Array[ViewportBreakpoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(breakpoints.asInstanceOf[js.Any], first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[ViewportBreakpoint]]
   
-  @js.native
   trait ViewportBreakpoint extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Height = js.native
+    var size: Height
   }
   object ViewportBreakpoint {
     
@@ -175,12 +175,11 @@ object viewportMod {
   
   type ViewportCallback[T] = js.Function1[/* breakpoint */ String, T]
   
-  @js.native
   trait ViewportConfiguration extends StObject {
     
-    var breakpoints: js.Array[ViewportBreakpoint] = js.native
+    var breakpoints: js.Array[ViewportBreakpoint]
     
-    var context: String = js.native
+    var context: String
   }
   object ViewportConfiguration {
     

@@ -10,9 +10,9 @@ Library to compare 2 images
 | ------------------ | :-------------: |
 | Full name          | img-diff-js |
 | Keywords           | diff, image, compare |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 1135275 |
+| # downloads        | 1228552 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,16 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flattenDeepMod {
   
-  @JSImport("@antv/util/lib/flatten-deep", JSImport.Default)
+  @JSImport("@antv/util/lib/flatten-deep", JSImport.Namespace)
   @js.native
-  def default(arr: js.Array[_]): js.Array[_] = js.native
-  @JSImport("@antv/util/lib/flatten-deep", JSImport.Default)
-  @js.native
-  def default(arr: js.Array[_], result: js.Array[_]): js.Array[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def default(arr: js.Array[js.Any], result: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

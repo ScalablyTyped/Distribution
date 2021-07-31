@@ -11,11 +11,12 @@ import typings.ejWebAll.ej.datavisualization.Diagram.Region
 import typings.ejWebAll.ej.datavisualization.Diagram.Zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Diagram extends Widget_ {
+trait Diagram
+  extends StObject
+     with Widget_ {
   
   /** Add nodes and connectors to diagram at runtime
     * @param {any} a JSON to define a node/connector or an array of nodes and connector
@@ -41,14 +42,14 @@ trait Diagram extends Widget_ {
     * @param {any[]} a collection of layers to be added to the existing diagram layers.
     * @returns {void}
     */
-  def addLayers(layers: js.Array[_]): Unit = js.native
+  def addLayers(layers: js.Array[js.Any]): Unit = js.native
   
   /** Add a collection of diagram elements can be added to the specific diagram layer.
     * @param {string} specifies the name of the layer to the nodes will be added.
     * @param {any[]} collection of diagram elements to be added to the specific layer.
     * @returns {void}
     */
-  def addNodeToLayer(layerName: String, nodes: js.Array[_]): Unit = js.native
+  def addNodeToLayer(layerName: String, nodes: js.Array[js.Any]): Unit = js.native
   
   /** Add a phase to a swimlane at runtime
     * @param {string} name of the swimlane to which the phase will be added
@@ -62,7 +63,7 @@ trait Diagram extends Widget_ {
     * @param {any[]} a collection of ports to be added to the specified node
     * @returns {void}
     */
-  def addPorts(name: String, ports: js.Array[_]): Unit = js.native
+  def addPorts(name: String, ports: js.Array[js.Any]): Unit = js.native
   
   /** Add the specified node to selection list
     * @param {any} the node to be selected
@@ -150,11 +151,11 @@ trait Diagram extends Widget_ {
     * @returns {void}
     */
   def fitToPage(): Unit = js.native
-  def fitToPage(mode: js.UndefOr[scala.Nothing], region: js.UndefOr[scala.Nothing], margin: js.Any): Unit = js.native
-  def fitToPage(mode: js.UndefOr[scala.Nothing], region: Region): Unit = js.native
-  def fitToPage(mode: js.UndefOr[scala.Nothing], region: Region, margin: js.Any): Unit = js.native
+  def fitToPage(mode: Unit, region: Unit, margin: js.Any): Unit = js.native
+  def fitToPage(mode: Unit, region: Region): Unit = js.native
+  def fitToPage(mode: Unit, region: Region, margin: js.Any): Unit = js.native
   def fitToPage(mode: FitMode): Unit = js.native
-  def fitToPage(mode: FitMode, region: js.UndefOr[scala.Nothing], margin: js.Any): Unit = js.native
+  def fitToPage(mode: FitMode, region: Unit, margin: js.Any): Unit = js.native
   def fitToPage(mode: FitMode, region: Region): Unit = js.native
   def fitToPage(mode: FitMode, region: Region, margin: js.Any): Unit = js.native
   
@@ -169,7 +170,7 @@ trait Diagram extends Widget_ {
     * @returns {void}
     */
   def getDiagramContent(): Unit = js.native
-  def getDiagramContent(styleSheets: js.Array[_]): Unit = js.native
+  def getDiagramContent(styleSheets: js.Array[js.Any]): Unit = js.native
   
   /** Group the selected nodes and connectors
     * @returns {void}
@@ -218,9 +219,9 @@ trait Diagram extends Widget_ {
     * @returns {void}
     */
   def paste(): Unit = js.native
-  def paste(`object`: js.UndefOr[scala.Nothing], rename: Boolean): Unit = js.native
   def paste(`object`: js.Any): Unit = js.native
   def paste(`object`: js.Any, rename: Boolean): Unit = js.native
+  def paste(`object`: Unit, rename: Boolean): Unit = js.native
   
   /** Print the diagram as image
     * @param {Diagram.PrintSettings} options to print the desired region of diagram and print the diagram in multiple pages.
@@ -259,27 +260,27 @@ trait Diagram extends Widget_ {
     * @param {any[]} a collection of labels to be deleted from the specified node
     * @returns {void}
     */
-  def removeLabels(name: String, labels: js.Array[_]): Unit = js.native
+  def removeLabels(name: String, labels: js.Array[js.Any]): Unit = js.native
   
   /** Remove the collection of layers from the diagram layers.
     * @param {any[]} collection of layers to be removed from diagram layer.
     * @returns {void}
     */
-  def removeLayers(layers: js.Array[_]): Unit = js.native
+  def removeLayers(layers: js.Array[js.Any]): Unit = js.native
   
   /** Remove the collection of nodes from the specific layer.
     * @param {string} Specifies the layer name to the node will be removed.
     * @param {any[]} collection of diagram elements name to be removed from specific layer.
     * @returns {void}
     */
-  def removeNodeToLayer(layerName: String, nodes: js.Array[_]): Unit = js.native
+  def removeNodeToLayer(layerName: String, nodes: js.Array[js.Any]): Unit = js.native
   
   /** Remove the collection of ports from the specified node.
     * @param {string} name of the node to which the ports have to be added
     * @param {any[]} a collection of ports to be deleted from the specified node
     * @returns {void}
     */
-  def removePorts(name: String, ports: js.Array[_]): Unit = js.native
+  def removePorts(name: String, ports: js.Array[js.Any]): Unit = js.native
   
   /** Remove a particular object from selection list
     * @param {any} the node/connector to be removed from selection list
@@ -445,15 +446,21 @@ object Diagram {
     
     //Activate the port tool to drag when the mouse is moved over the port
     @js.native
-    sealed trait Drag extends ActiveTool
+    sealed trait Drag
+      extends StObject
+         with ActiveTool
     
     //Activate the draw tool to draw when the mouse is moved over the port
     @js.native
-    sealed trait Draw extends ActiveTool
+    sealed trait Draw
+      extends StObject
+         with ActiveTool
     
     //Set the default Tool
     @js.native
-    sealed trait None extends ActiveTool
+    sealed trait None
+      extends StObject
+         with ActiveTool
   }
   
   @js.native
@@ -464,15 +471,21 @@ object Diagram {
     
     //Used to align the label either bottom or right(after) of the connector segment
     @js.native
-    sealed trait After extends Alignment
+    sealed trait After
+      extends StObject
+         with Alignment
     
     //Used to align the label either top or left(before) of the connector segment
     @js.native
-    sealed trait Before extends Alignment
+    sealed trait Before
+      extends StObject
+         with Alignment
     
     //Used to align the label at center of the connector segment
     @js.native
-    sealed trait Center extends Alignment
+    sealed trait Center
+      extends StObject
+         with Alignment
   }
   
   @js.native
@@ -483,15 +496,21 @@ object Diagram {
     
     //User to notate bi-directional association in a BPMN Process
     @js.native
-    sealed trait BiDirectional extends AssociationFlows
+    sealed trait BiDirectional
+      extends StObject
+         with AssociationFlows
     
     //Used to notate default association in a BPMN Process
     @js.native
-    sealed trait Default extends AssociationFlows
+    sealed trait Default
+      extends StObject
+         with AssociationFlows
     
     //Used to notate directional association in a BPMN Process
     @js.native
-    sealed trait Directional extends AssociationFlows
+    sealed trait Directional
+      extends StObject
+         with AssociationFlows
   }
   
   @js.native
@@ -502,15 +521,21 @@ object Diagram {
     
     //Used to set BPMN Activity as None
     @js.native
-    sealed trait None extends BPMNActivity
+    sealed trait None
+      extends StObject
+         with BPMNActivity
     
     //Used to set BPMN Activity as SubProcess
     @js.native
-    sealed trait SubProcess extends BPMNActivity
+    sealed trait SubProcess
+      extends StObject
+         with BPMNActivity
     
     //Used to set BPMN Activity as Task
     @js.native
-    sealed trait Task extends BPMNActivity
+    sealed trait Task
+      extends StObject
+         with BPMNActivity
   }
   
   @js.native
@@ -521,19 +546,27 @@ object Diagram {
     
     //Used to set the direction of BPMN Annotation as bottom
     @js.native
-    sealed trait Bottom extends BPMNAnnotationDirection
+    sealed trait Bottom
+      extends StObject
+         with BPMNAnnotationDirection
     
     //Used to set the direction of BPMN Annotation as left
     @js.native
-    sealed trait Left extends BPMNAnnotationDirection
+    sealed trait Left
+      extends StObject
+         with BPMNAnnotationDirection
     
     //Used to set the direction of BPMN Annotation as right
     @js.native
-    sealed trait Right extends BPMNAnnotationDirection
+    sealed trait Right
+      extends StObject
+         with BPMNAnnotationDirection
     
     //Used to set the direction of BPMN Annotation as top
     @js.native
-    sealed trait Top extends BPMNAnnotationDirection
+    sealed trait Top
+      extends StObject
+         with BPMNAnnotationDirection
   }
   
   @js.native
@@ -544,15 +577,21 @@ object Diagram {
     
     //Used to set BPMN SubProcess's Boundary as Call
     @js.native
-    sealed trait Call extends BPMNBoundary
+    sealed trait Call
+      extends StObject
+         with BPMNBoundary
     
     //Used to set BPMN SubProcess's Boundary as Default
     @js.native
-    sealed trait Default extends BPMNBoundary
+    sealed trait Default
+      extends StObject
+         with BPMNBoundary
     
     //Used to set BPMN SubProcess's Boundary as Event
     @js.native
-    sealed trait Event extends BPMNBoundary
+    sealed trait Event
+      extends StObject
+         with BPMNBoundary
   }
   
   @js.native
@@ -563,15 +602,21 @@ object Diagram {
     
     //Used to notate the Input type BPMN data object
     @js.native
-    sealed trait Input extends BPMNDataObjects
+    sealed trait Input
+      extends StObject
+         with BPMNDataObjects
     
     //Used to set BPMN data object type as None
     @js.native
-    sealed trait None extends BPMNDataObjects
+    sealed trait None
+      extends StObject
+         with BPMNDataObjects
     
     //Used to notate the Output type BPMN data object
     @js.native
-    sealed trait Output extends BPMNDataObjects
+    sealed trait Output
+      extends StObject
+         with BPMNDataObjects
   }
   
   @js.native
@@ -582,27 +627,39 @@ object Diagram {
     
     //Used to set BPMN Event as End
     @js.native
-    sealed trait End extends BPMNEvents
+    sealed trait End
+      extends StObject
+         with BPMNEvents
     
     //Used to set BPMN Event as Intermediate
     @js.native
-    sealed trait Intermediate extends BPMNEvents
+    sealed trait Intermediate
+      extends StObject
+         with BPMNEvents
     
     //Used to set BPMN Event as NonInterruptingIntermediate
     @js.native
-    sealed trait NonInterruptingIntermediate extends BPMNEvents
+    sealed trait NonInterruptingIntermediate
+      extends StObject
+         with BPMNEvents
     
     //Used to set BPMN Event as NonInterruptingStart
     @js.native
-    sealed trait NonInterruptingStart extends BPMNEvents
+    sealed trait NonInterruptingStart
+      extends StObject
+         with BPMNEvents
     
     //Used to set BPMN Event as Start
     @js.native
-    sealed trait Start extends BPMNEvents
+    sealed trait Start
+      extends StObject
+         with BPMNEvents
     
     //Used to set BPMN Event as ThrowingIntermediate
     @js.native
-    sealed trait ThrowingIntermediate extends BPMNEvents
+    sealed trait ThrowingIntermediate
+      extends StObject
+         with BPMNEvents
   }
   
   @js.native
@@ -613,15 +670,21 @@ object Diagram {
     
     //Used to specify the Association flow in a BPMN Process
     @js.native
-    sealed trait Association extends BPMNFlows
+    sealed trait Association
+      extends StObject
+         with BPMNFlows
     
     //Used to specify the Message flow in a BPMN Process
     @js.native
-    sealed trait Message extends BPMNFlows
+    sealed trait Message
+      extends StObject
+         with BPMNFlows
     
     //Used to specify the Sequence flow in a BPMN Process
     @js.native
-    sealed trait Sequence extends BPMNFlows
+    sealed trait Sequence
+      extends StObject
+         with BPMNFlows
   }
   
   @js.native
@@ -632,35 +695,51 @@ object Diagram {
     
     //Used to set BPMN Gateway as Complex
     @js.native
-    sealed trait Complex extends BPMNGateways
+    sealed trait Complex
+      extends StObject
+         with BPMNGateways
     
     //Used to set BPMN Gateway as EventBased
     @js.native
-    sealed trait EventBased extends BPMNGateways
+    sealed trait EventBased
+      extends StObject
+         with BPMNGateways
     
     //Used to set BPMN Gateway as Exclusive
     @js.native
-    sealed trait Exclusive extends BPMNGateways
+    sealed trait Exclusive
+      extends StObject
+         with BPMNGateways
     
     //Used to set BPMN Gateway as ExclusiveEventBased
     @js.native
-    sealed trait ExclusiveEventBased extends BPMNGateways
+    sealed trait ExclusiveEventBased
+      extends StObject
+         with BPMNGateways
     
     //Used to set BPMN Gateway as Inclusive
     @js.native
-    sealed trait Inclusive extends BPMNGateways
+    sealed trait Inclusive
+      extends StObject
+         with BPMNGateways
     
     //Used to set BPMN Gateway as None
     @js.native
-    sealed trait None extends BPMNGateways
+    sealed trait None
+      extends StObject
+         with BPMNGateways
     
     //Used to set BPMN Gateway as Parallel
     @js.native
-    sealed trait Parallel extends BPMNGateways
+    sealed trait Parallel
+      extends StObject
+         with BPMNGateways
     
     //Used to set BPMN Gateway as ParallelEventBased
     @js.native
-    sealed trait ParallelEventBased extends BPMNGateways
+    sealed trait ParallelEventBased
+      extends StObject
+         with BPMNGateways
   }
   
   @js.native
@@ -671,19 +750,27 @@ object Diagram {
     
     //Used to set BPMN Activity's Loop as None
     @js.native
-    sealed trait None extends BPMNLoops
+    sealed trait None
+      extends StObject
+         with BPMNLoops
     
     //Used to set BPMN Activity's Loop as ParallelMultiInstance
     @js.native
-    sealed trait ParallelMultiInstance extends BPMNLoops
+    sealed trait ParallelMultiInstance
+      extends StObject
+         with BPMNLoops
     
     //Used to set BPMN Activity's Loop as SequenceMultiInstance
     @js.native
-    sealed trait SequenceMultiInstance extends BPMNLoops
+    sealed trait SequenceMultiInstance
+      extends StObject
+         with BPMNLoops
     
     //Used to set BPMN Activity's Loop as Standard
     @js.native
-    sealed trait Standard extends BPMNLoops
+    sealed trait Standard
+      extends StObject
+         with BPMNLoops
   }
   
   @js.native
@@ -694,15 +781,21 @@ object Diagram {
     
     //Used to notate the default message flow in a BPMN Process
     @js.native
-    sealed trait Default extends BPMNMessageFlows
+    sealed trait Default
+      extends StObject
+         with BPMNMessageFlows
     
     //Used to notate the instantiating message flow in a BPMN Process
     @js.native
-    sealed trait InitiatingMessage extends BPMNMessageFlows
+    sealed trait InitiatingMessage
+      extends StObject
+         with BPMNMessageFlows
     
     //Used to notate the non-instantiating message flow in a BPMN Process
     @js.native
-    sealed trait NonInitiatingMessage extends BPMNMessageFlows
+    sealed trait NonInitiatingMessage
+      extends StObject
+         with BPMNMessageFlows
   }
   
   @js.native
@@ -713,15 +806,21 @@ object Diagram {
     
     //Used to notate the conditional sequence flow in a BPMN Process
     @js.native
-    sealed trait Conditional extends BPMNSequenceFlows
+    sealed trait Conditional
+      extends StObject
+         with BPMNSequenceFlows
     
     //Used to notate the default sequence flow in a BPMN Process
     @js.native
-    sealed trait Default extends BPMNSequenceFlows
+    sealed trait Default
+      extends StObject
+         with BPMNSequenceFlows
     
     //Used to notate the normal sequence flow in a BPMN Process
     @js.native
-    sealed trait Normal extends BPMNSequenceFlows
+    sealed trait Normal
+      extends StObject
+         with BPMNSequenceFlows
   }
   
   @js.native
@@ -732,31 +831,45 @@ object Diagram {
     
     //Used to specify node Shape as Activity
     @js.native
-    sealed trait Activity extends BPMNShapes
+    sealed trait Activity
+      extends StObject
+         with BPMNShapes
     
     //Used to specify node Shape as DataObject
     @js.native
-    sealed trait DataObject extends BPMNShapes
+    sealed trait DataObject
+      extends StObject
+         with BPMNShapes
     
     //Used to specify node Shape as DataSource
     @js.native
-    sealed trait DataSource extends BPMNShapes
+    sealed trait DataSource
+      extends StObject
+         with BPMNShapes
     
     //Used to specify node Shape as Event
     @js.native
-    sealed trait Event extends BPMNShapes
+    sealed trait Event
+      extends StObject
+         with BPMNShapes
     
     //Used to specify node Shape as Gateway
     @js.native
-    sealed trait Gateway extends BPMNShapes
+    sealed trait Gateway
+      extends StObject
+         with BPMNShapes
     
     //Used to specify node Shape as Group
     @js.native
-    sealed trait Group extends BPMNShapes
+    sealed trait Group
+      extends StObject
+         with BPMNShapes
     
     //Used to specify node Shape as Message
     @js.native
-    sealed trait Message extends BPMNShapes
+    sealed trait Message
+      extends StObject
+         with BPMNShapes
   }
   
   @js.native
@@ -767,15 +880,21 @@ object Diagram {
     
     //Used to set BPMN SubProcess type as Event
     @js.native
-    sealed trait Event extends BPMNSubProcessTypes
+    sealed trait Event
+      extends StObject
+         with BPMNSubProcessTypes
     
     //Used to set BPMN SubProcess type as None
     @js.native
-    sealed trait None extends BPMNSubProcessTypes
+    sealed trait None
+      extends StObject
+         with BPMNSubProcessTypes
     
     //Used to set BPMN SubProcess type as Transaction
     @js.native
-    sealed trait Transaction extends BPMNSubProcessTypes
+    sealed trait Transaction
+      extends StObject
+         with BPMNSubProcessTypes
   }
   
   @js.native
@@ -786,43 +905,63 @@ object Diagram {
     
     //Used to set BPMN Task Type as BusinessRule
     @js.native
-    sealed trait BusinessRule extends BPMNTasks
+    sealed trait BusinessRule
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as InstantiatingReceive
     @js.native
-    sealed trait InstantiatingReceive extends BPMNTasks
+    sealed trait InstantiatingReceive
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as Manual
     @js.native
-    sealed trait Manual extends BPMNTasks
+    sealed trait Manual
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as None
     @js.native
-    sealed trait None extends BPMNTasks
+    sealed trait None
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as Parallel
     @js.native
-    sealed trait Parallel extends BPMNTasks
+    sealed trait Parallel
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as Receive
     @js.native
-    sealed trait Receive extends BPMNTasks
+    sealed trait Receive
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as Script
     @js.native
-    sealed trait Script extends BPMNTasks
+    sealed trait Script
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as Send
     @js.native
-    sealed trait Send extends BPMNTasks
+    sealed trait Send
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as Service
     @js.native
-    sealed trait Service extends BPMNTasks
+    sealed trait Service
+      extends StObject
+         with BPMNTasks
     
     //Used to set BPMN Task Type as User
     @js.native
-    sealed trait User extends BPMNTasks
+    sealed trait User
+      extends StObject
+         with BPMNTasks
   }
   
   @js.native
@@ -833,55 +972,81 @@ object Diagram {
     
     //Used to set Event Trigger as Cancel
     @js.native
-    sealed trait Cancel extends BPMNTriggers
+    sealed trait Cancel
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Compensation
     @js.native
-    sealed trait Compensation extends BPMNTriggers
+    sealed trait Compensation
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Conditional
     @js.native
-    sealed trait Conditional extends BPMNTriggers
+    sealed trait Conditional
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Error
     @js.native
-    sealed trait Error extends BPMNTriggers
+    sealed trait Error
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Escalation
     @js.native
-    sealed trait Escalation extends BPMNTriggers
+    sealed trait Escalation
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Link
     @js.native
-    sealed trait Link extends BPMNTriggers
+    sealed trait Link
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Message
     @js.native
-    sealed trait Message extends BPMNTriggers
+    sealed trait Message
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Multiple
     @js.native
-    sealed trait Multiple extends BPMNTriggers
+    sealed trait Multiple
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as None
     @js.native
-    sealed trait None extends BPMNTriggers
+    sealed trait None
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Parallel
     @js.native
-    sealed trait Parallel extends BPMNTriggers
+    sealed trait Parallel
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Signal
     @js.native
-    sealed trait Signal extends BPMNTriggers
+    sealed trait Signal
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Terminate
     @js.native
-    sealed trait Terminate extends BPMNTriggers
+    sealed trait Terminate
+      extends StObject
+         with BPMNTriggers
     
     //Used to set Event Trigger as Timer
     @js.native
-    sealed trait Timer extends BPMNTriggers
+    sealed trait Timer
+      extends StObject
+         with BPMNTriggers
   }
   
   @js.native
@@ -892,59 +1057,87 @@ object Diagram {
     
     //Used to specify node Shape as Cylinder
     @js.native
-    sealed trait Cylinder extends BasicShapes
+    sealed trait Cylinder
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Decagon
     @js.native
-    sealed trait Decagon extends BasicShapes
+    sealed trait Decagon
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Ellipse
     @js.native
-    sealed trait Ellipse extends BasicShapes
+    sealed trait Ellipse
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Heptagon
     @js.native
-    sealed trait Heptagon extends BasicShapes
+    sealed trait Heptagon
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Octagon
     @js.native
-    sealed trait Octagon extends BasicShapes
+    sealed trait Octagon
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Path
     @js.native
-    sealed trait Path extends BasicShapes
+    sealed trait Path
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Pentagon
     @js.native
-    sealed trait Pentagon extends BasicShapes
+    sealed trait Pentagon
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Plus
     @js.native
-    sealed trait Plus extends BasicShapes
+    sealed trait Plus
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Polygon
     @js.native
-    sealed trait Polygon extends BasicShapes
+    sealed trait Polygon
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Rectangle
     @js.native
-    sealed trait Rectangle extends BasicShapes
+    sealed trait Rectangle
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as RightTriangle
     @js.native
-    sealed trait RightTriangle extends BasicShapes
+    sealed trait RightTriangle
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Star
     @js.native
-    sealed trait Star extends BasicShapes
+    sealed trait Star
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Trapezoid
     @js.native
-    sealed trait Trapezoid extends BasicShapes
+    sealed trait Trapezoid
+      extends StObject
+         with BasicShapes
     
     //Used to specify node Shape as Triangle
     @js.native
-    sealed trait Triangle extends BasicShapes
+    sealed trait Triangle
+      extends StObject
+         with BasicShapes
   }
   
   @js.native
@@ -955,15 +1148,21 @@ object Diagram {
     
     //Used to set boundaryConstraints as Diagram
     @js.native
-    sealed trait Diagram extends BoundaryConstraints
+    sealed trait Diagram
+      extends StObject
+         with BoundaryConstraints
     
     //Used to set boundaryConstraints as Infinite
     @js.native
-    sealed trait Infinite extends BoundaryConstraints
+    sealed trait Infinite
+      extends StObject
+         with BoundaryConstraints
     
     //Used to set boundaryConstraints as Page
     @js.native
-    sealed trait Page extends BoundaryConstraints
+    sealed trait Page
+      extends StObject
+         with BoundaryConstraints
   }
   
   @js.native
@@ -974,19 +1173,27 @@ object Diagram {
     
     //Used to set the direction of line bridges as bottom
     @js.native
-    sealed trait Bottom extends BridgeDirection
+    sealed trait Bottom
+      extends StObject
+         with BridgeDirection
     
     //Used to set the direction of line bridges as left
     @js.native
-    sealed trait Left extends BridgeDirection
+    sealed trait Left
+      extends StObject
+         with BridgeDirection
     
     //Used to set the direction of line bridges as right
     @js.native
-    sealed trait Right extends BridgeDirection
+    sealed trait Right
+      extends StObject
+         with BridgeDirection
     
     //Used to set the direction of line bridges as top
     @js.native
-    sealed trait Top extends BridgeDirection
+    sealed trait Top
+      extends StObject
+         with BridgeDirection
   }
   
   @js.native
@@ -997,35 +1204,51 @@ object Diagram {
     
     //Used to notate aggregation in a UML Class Diagram
     @js.native
-    sealed trait Aggregation extends ClassifierShapes
+    sealed trait Aggregation
+      extends StObject
+         with ClassifierShapes
     
     //Used to notate association in UML Class Diagram
     @js.native
-    sealed trait Association extends ClassifierShapes
+    sealed trait Association
+      extends StObject
+         with ClassifierShapes
     
     //Used to define a Class
     @js.native
-    sealed trait Class extends ClassifierShapes
+    sealed trait Class
+      extends StObject
+         with ClassifierShapes
     
     //Used to notate composition in a UML Class Diagram
     @js.native
-    sealed trait Composition extends ClassifierShapes
+    sealed trait Composition
+      extends StObject
+         with ClassifierShapes
     
     //Used to notate dependency in a UML Class Diagram
     @js.native
-    sealed trait Dependency extends ClassifierShapes
+    sealed trait Dependency
+      extends StObject
+         with ClassifierShapes
     
     //Used to define an Enumeration
     @js.native
-    sealed trait Enumeration extends ClassifierShapes
+    sealed trait Enumeration
+      extends StObject
+         with ClassifierShapes
     
     //Used to notate inheritance in a UML Class Diagram
     @js.native
-    sealed trait Inheritance extends ClassifierShapes
+    sealed trait Inheritance
+      extends StObject
+         with ClassifierShapes
     
     //Used to define an Interface
     @js.native
-    sealed trait Interface extends ClassifierShapes
+    sealed trait Interface
+      extends StObject
+         with ClassifierShapes
   }
   
   @js.native
@@ -1036,87 +1259,129 @@ object Diagram {
     
     //Allows the object to drop over the connector.
     @js.native
-    sealed trait AllowDrop extends ConnectorConstraints
+    sealed trait AllowDrop
+      extends StObject
+         with ConnectorConstraints
     
     //Enables or disables bridging over a connector, if bridging constraints disabled..
     @js.native
-    sealed trait BridgeObstacle extends ConnectorConstraints
+    sealed trait BridgeObstacle
+      extends StObject
+         with ConnectorConstraints
     
     //Enables bridging to the connector
     @js.native
-    sealed trait Bridging extends ConnectorConstraints
+    sealed trait Bridging
+      extends StObject
+         with ConnectorConstraints
     
     //Enables the contrast between clean edges of connector over rendering speed and geometric precision
     @js.native
-    sealed trait CrispEdges extends ConnectorConstraints
+    sealed trait CrispEdges
+      extends StObject
+         with ConnectorConstraints
     
     //Enables all constraints
     @js.native
-    sealed trait Default extends ConnectorConstraints
+    sealed trait Default
+      extends StObject
+         with ConnectorConstraints
     
     //Enables connector to be Deleted
     @js.native
-    sealed trait Delete extends ConnectorConstraints
+    sealed trait Delete
+      extends StObject
+         with ConnectorConstraints
     
     //Enables connector to be Dragged
     @js.native
-    sealed trait Drag extends ConnectorConstraints
+    sealed trait Drag
+      extends StObject
+         with ConnectorConstraints
     
     //Enables label of node to be Dragged
     @js.native
-    sealed trait DragLabel extends ConnectorConstraints
+    sealed trait DragLabel
+      extends StObject
+         with ConnectorConstraints
     
     //Enables the contrast between clean edges of connector over rendering speed and geometric precision
     @js.native
-    sealed trait DragLimit extends ConnectorConstraints
+    sealed trait DragLimit
+      extends StObject
+         with ConnectorConstraints
     
     //Enables control point and end point of every segment in a connector for editing
     @js.native
-    sealed trait DragSegmentThumb extends ConnectorConstraints
+    sealed trait DragSegmentThumb
+      extends StObject
+         with ConnectorConstraints
     
     //Enables connectors source end to be selected
     @js.native
-    sealed trait DragSourceEnd extends ConnectorConstraints
+    sealed trait DragSourceEnd
+      extends StObject
+         with ConnectorConstraints
     
     //Enables connectors target end to be selected
     @js.native
-    sealed trait DragTargetEnd extends ConnectorConstraints
+    sealed trait DragTargetEnd
+      extends StObject
+         with ConnectorConstraints
     
     //Inherit the bridging option defined in the diagram constraints.
     @js.native
-    sealed trait InheritBridging extends ConnectorConstraints
+    sealed trait InheritBridging
+      extends StObject
+         with ConnectorConstraints
     
     //Enables the contrast between clean edges of connector over rendering speed and geometric precision
     @js.native
-    sealed trait InheritCrispEdges extends ConnectorConstraints
+    sealed trait InheritCrispEdges
+      extends StObject
+         with ConnectorConstraints
     
     //Inherit the routing option defined in the diagram constraints.
     @js.native
-    sealed trait InheritRouting extends ConnectorConstraints
+    sealed trait InheritRouting
+      extends StObject
+         with ConnectorConstraints
     
     //Inherit the tooltip option defined in the diagram constraints.
     @js.native
-    sealed trait InheritTooltip extends ConnectorConstraints
+    sealed trait InheritTooltip
+      extends StObject
+         with ConnectorConstraints
     
     //Enables connector to be selected and dragged.
     @js.native
-    sealed trait Interaction extends ConnectorConstraints
+    sealed trait Interaction
+      extends StObject
+         with ConnectorConstraints
     
     //Disable all connector Constraints
     @js.native
-    sealed trait None extends ConnectorConstraints
+    sealed trait None
+      extends StObject
+         with ConnectorConstraints
     
     //Enables user interaction to the connector
     @js.native
-    sealed trait PointerEvents extends ConnectorConstraints
+    sealed trait PointerEvents
+      extends StObject
+         with ConnectorConstraints
     
     //Enables the Routing for an connector
     @js.native
-    sealed trait Routing extends ConnectorConstraints
+    sealed trait Routing
+      extends StObject
+         with ConnectorConstraints
     
     //Enables connector to be selected
     @js.native
-    sealed trait Select extends ConnectorConstraints
+    sealed trait Select
+      extends StObject
+         with ConnectorConstraints
   }
   
   @js.native
@@ -1127,15 +1392,21 @@ object Diagram {
     
     //Used to specify connector type as BPMN
     @js.native
-    sealed trait BPMN extends ConnectorShapes
+    sealed trait BPMN
+      extends StObject
+         with ConnectorShapes
     
     //Used to specify connector type as UMLActivity
     @js.native
-    sealed trait UMLActivity extends ConnectorShapes
+    sealed trait UMLActivity
+      extends StObject
+         with ConnectorShapes
     
     //Used to specify connector type as UMLClassifier
     @js.native
-    sealed trait UMLClassifier extends ConnectorShapes
+    sealed trait UMLClassifier
+      extends StObject
+         with ConnectorShapes
   }
   
   @js.native
@@ -1146,11 +1417,15 @@ object Diagram {
     
     //Sets the container type as Canvas
     @js.native
-    sealed trait Canvas extends ContainerType
+    sealed trait Canvas
+      extends StObject
+         with ContainerType
     
     //Sets the container type as Stack
     @js.native
-    sealed trait Stack extends ContainerType
+    sealed trait Stack
+      extends StObject
+         with ContainerType
   }
   
   @js.native
@@ -1161,27 +1436,39 @@ object Diagram {
     
     //Used to set decorator shape as Arrow
     @js.native
-    sealed trait Arrow extends DecoratorShapes
+    sealed trait Arrow
+      extends StObject
+         with DecoratorShapes
     
     //Used to set decorator shape as Circle
     @js.native
-    sealed trait Circle extends DecoratorShapes
+    sealed trait Circle
+      extends StObject
+         with DecoratorShapes
     
     //Used to set decorator shape as Diamond
     @js.native
-    sealed trait Diamond extends DecoratorShapes
+    sealed trait Diamond
+      extends StObject
+         with DecoratorShapes
     
     //Used to set decorator shape as none
     @js.native
-    sealed trait None extends DecoratorShapes
+    sealed trait None
+      extends StObject
+         with DecoratorShapes
     
     //Used to set decorator shape as Open Arrow
     @js.native
-    sealed trait OpenArrow extends DecoratorShapes
+    sealed trait OpenArrow
+      extends StObject
+         with DecoratorShapes
     
     //Used to set decorator shape as path
     @js.native
-    sealed trait Path extends DecoratorShapes
+    sealed trait Path
+      extends StObject
+         with DecoratorShapes
   }
   
   @js.native
@@ -1192,67 +1479,99 @@ object Diagram {
     
     //Enables/Disables interaction done with the help of API methods
     @js.native
-    sealed trait APIUpdate extends DiagramConstraints
+    sealed trait APIUpdate
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables Bridging
     @js.native
-    sealed trait Bridging extends DiagramConstraints
+    sealed trait Bridging
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables the sharp edges
     @js.native
-    sealed trait CrispEdges extends DiagramConstraints
+    sealed trait CrispEdges
+      extends StObject
+         with DiagramConstraints
     
     //Enables all Constraints
     @js.native
-    sealed trait Default extends DiagramConstraints
+    sealed trait Default
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables the drag and drop of element from one diagram to the other
     @js.native
-    sealed trait FloatElements extends DiagramConstraints
+    sealed trait FloatElements
+      extends StObject
+         with DiagramConstraints
     
     //Disables all DiagramConstraints
     @js.native
-    sealed trait None extends DiagramConstraints
+    sealed trait None
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables PageEditing
     @js.native
-    sealed trait PageEditable extends DiagramConstraints
+    sealed trait PageEditable
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables Panning
     @js.native
-    sealed trait Pannable extends DiagramConstraints
+    sealed trait Pannable
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables panning on horizontal axis
     @js.native
-    sealed trait PannableX extends DiagramConstraints
+    sealed trait PannableX
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables panning on vertical axis
     @js.native
-    sealed trait PannableY extends DiagramConstraints
+    sealed trait PannableY
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables the Diagram size updation on the window resize function
     @js.native
-    sealed trait Resizable extends DiagramConstraints
+    sealed trait Resizable
+      extends StObject
+         with DiagramConstraints
     
     //Enables the routing for an connector in diagram
     @js.native
-    sealed trait Routing extends DiagramConstraints
+    sealed trait Routing
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables undo actions
     @js.native
-    sealed trait Undoable extends DiagramConstraints
+    sealed trait Undoable
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables UserInteraction
     @js.native
-    sealed trait UserInteraction extends DiagramConstraints
+    sealed trait UserInteraction
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables the Zooming of labels text editor
     @js.native
-    sealed trait ZoomTextEditor extends DiagramConstraints
+    sealed trait ZoomTextEditor
+      extends StObject
+         with DiagramConstraints
     
     //Enables/Disables Zooming
     @js.native
-    sealed trait Zoomable extends DiagramConstraints
+    sealed trait Zoomable
+      extends StObject
+         with DiagramConstraints
   }
   
   @js.native
@@ -1263,11 +1582,15 @@ object Diagram {
     
     //Used to export the diagram as raw data.
     @js.native
-    sealed trait Data extends ExportModes
+    sealed trait Data
+      extends StObject
+         with ExportModes
     
     //Used to export the diagram as a file.
     @js.native
-    sealed trait Download extends ExportModes
+    sealed trait Download
+      extends StObject
+         with ExportModes
   }
   
   @js.native
@@ -1278,19 +1601,27 @@ object Diagram {
     
     //Used to export the diagram into BMP format.
     @js.native
-    sealed trait BMP extends FileFormats
+    sealed trait BMP
+      extends StObject
+         with FileFormats
     
     //Used to export the diagram into JPG format.
     @js.native
-    sealed trait JPG extends FileFormats
+    sealed trait JPG
+      extends StObject
+         with FileFormats
     
     //Used to export the diagram into PNG format.
     @js.native
-    sealed trait PNG extends FileFormats
+    sealed trait PNG
+      extends StObject
+         with FileFormats
     
     //Used to export the diagram into SVG format.
     @js.native
-    sealed trait SVG extends FileFormats
+    sealed trait SVG
+      extends StObject
+         with FileFormats
   }
   
   @js.native
@@ -1301,15 +1632,21 @@ object Diagram {
     
     //Used to fit the diagram content based on diagram height.
     @js.native
-    sealed trait Height extends FitMode
+    sealed trait Height
+      extends StObject
+         with FitMode
     
     //Used to fit the diagram content based on page size.
     @js.native
-    sealed trait Page extends FitMode
+    sealed trait Page
+      extends StObject
+         with FitMode
     
     //Used to fit the diagram content based on diagram width.
     @js.native
-    sealed trait Width extends FitMode
+    sealed trait Width
+      extends StObject
+         with FitMode
   }
   
   @js.native
@@ -1320,95 +1657,141 @@ object Diagram {
     
     //Used to specify node Shape as Annotation1
     @js.native
-    sealed trait Annotation1 extends FlowShapes
+    sealed trait Annotation1
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Annotation2
     @js.native
-    sealed trait Annotation2 extends FlowShapes
+    sealed trait Annotation2
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Card
     @js.native
-    sealed trait Card extends FlowShapes
+    sealed trait Card
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Collate
     @js.native
-    sealed trait Collate extends FlowShapes
+    sealed trait Collate
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Data
     @js.native
-    sealed trait Data extends FlowShapes
+    sealed trait Data
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Decision
     @js.native
-    sealed trait Decision extends FlowShapes
+    sealed trait Decision
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as DirectData
     @js.native
-    sealed trait DirectData extends FlowShapes
+    sealed trait DirectData
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Document
     @js.native
-    sealed trait Document extends FlowShapes
+    sealed trait Document
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Extract
     @js.native
-    sealed trait Extract extends FlowShapes
+    sealed trait Extract
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as InternalStorage
     @js.native
-    sealed trait InternalStorage extends FlowShapes
+    sealed trait InternalStorage
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as ManualOperation
     @js.native
-    sealed trait ManualOperation extends FlowShapes
+    sealed trait ManualOperation
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Merge
     @js.native
-    sealed trait Merge extends FlowShapes
+    sealed trait Merge
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as MultiDocument
     @js.native
-    sealed trait MultiDocument extends FlowShapes
+    sealed trait MultiDocument
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as OffPageReference
     @js.native
-    sealed trait OffPageReference extends FlowShapes
+    sealed trait OffPageReference
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Or
     @js.native
-    sealed trait Or extends FlowShapes
+    sealed trait Or
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as PaperTap
     @js.native
-    sealed trait PaperTap extends FlowShapes
+    sealed trait PaperTap
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as PreDefinedProcess
     @js.native
-    sealed trait PreDefinedProcess extends FlowShapes
+    sealed trait PreDefinedProcess
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Process
     @js.native
-    sealed trait Process extends FlowShapes
+    sealed trait Process
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as SequentialAccessStorage
     @js.native
-    sealed trait SequentialAccessStorage extends FlowShapes
+    sealed trait SequentialAccessStorage
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as SequentialData
     @js.native
-    sealed trait SequentialData extends FlowShapes
+    sealed trait SequentialData
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Sort
     @js.native
-    sealed trait Sort extends FlowShapes
+    sealed trait Sort
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as SummingJunction
     @js.native
-    sealed trait SummingJunction extends FlowShapes
+    sealed trait SummingJunction
+      extends StObject
+         with FlowShapes
     
     //Used to specify node Shape as Terminator
     @js.native
-    sealed trait Terminator extends FlowShapes
+    sealed trait Terminator
+      extends StObject
+         with FlowShapes
   }
   
   @js.native
@@ -1419,15 +1802,21 @@ object Diagram {
     
     //Used to align text horizontally on center of node/connector
     @js.native
-    sealed trait Center extends HorizontalAlignment
+    sealed trait Center
+      extends StObject
+         with HorizontalAlignment
     
     //Used to align text horizontally on left side of node/connector
     @js.native
-    sealed trait Left extends HorizontalAlignment
+    sealed trait Left
+      extends StObject
+         with HorizontalAlignment
     
     //Used to align text horizontally on right side of node/connector
     @js.native
-    sealed trait Right extends HorizontalAlignment
+    sealed trait Right
+      extends StObject
+         with HorizontalAlignment
   }
   
   @js.native
@@ -1438,31 +1827,45 @@ object Diagram {
     
     //Used to set collapse icon shape as Arrow(Up/Down)
     @js.native
-    sealed trait Arrow extends IconShapes
+    sealed trait Arrow
+      extends StObject
+         with IconShapes
     
     //Used to set icon shape as image
     @js.native
-    sealed trait Image extends IconShapes
+    sealed trait Image
+      extends StObject
+         with IconShapes
     
     //Used to set collapse icon shape as Minus
     @js.native
-    sealed trait Minus extends IconShapes
+    sealed trait Minus
+      extends StObject
+         with IconShapes
     
     //Used to set collapse icon shape as none
     @js.native
-    sealed trait None extends IconShapes
+    sealed trait None
+      extends StObject
+         with IconShapes
     
     //Used to set collapse icon shape as path
     @js.native
-    sealed trait Path extends IconShapes
+    sealed trait Path
+      extends StObject
+         with IconShapes
     
     //Used to set collapse icon shape as Plus
     @js.native
-    sealed trait Plus extends IconShapes
+    sealed trait Plus
+      extends StObject
+         with IconShapes
     
     //Used to set icon shape as template
     @js.native
-    sealed trait Template extends IconShapes
+    sealed trait Template
+      extends StObject
+         with IconShapes
   }
   
   @js.native
@@ -1473,43 +1876,63 @@ object Diagram {
     
     //Scales the graphic content non-uniformly to the width and height of the diagram area
     @js.native
-    sealed trait None extends ImageAlignment
+    sealed trait None
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the bottom right of diagram area/node
     @js.native
-    sealed trait XMaxYMax extends ImageAlignment
+    sealed trait XMaxYMax
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the right center of diagram area/node
     @js.native
-    sealed trait XMaxYMid extends ImageAlignment
+    sealed trait XMaxYMid
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the top right of diagram area/node
     @js.native
-    sealed trait XMaxYMin extends ImageAlignment
+    sealed trait XMaxYMin
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the bottom center of diagram area
     @js.native
-    sealed trait XMidYMax extends ImageAlignment
+    sealed trait XMidYMax
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the center of diagram area
     @js.native
-    sealed trait XMidYMid extends ImageAlignment
+    sealed trait XMidYMid
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the top center of diagram area
     @js.native
-    sealed trait XMidYMin extends ImageAlignment
+    sealed trait XMidYMin
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the bottom left of diagram area
     @js.native
-    sealed trait XMinYMax extends ImageAlignment
+    sealed trait XMinYMax
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the left center of diagram area
     @js.native
-    sealed trait XMinYMid extends ImageAlignment
+    sealed trait XMinYMid
+      extends StObject
+         with ImageAlignment
     
     //Used to align the image at the top left of diagram area
     @js.native
-    sealed trait XMinYMin extends ImageAlignment
+    sealed trait XMinYMin
+      extends StObject
+         with ImageAlignment
   }
   
   @js.native
@@ -1520,19 +1943,27 @@ object Diagram {
     
     //The ALT key.
     @js.native
-    sealed trait Alt extends KeyModifiers
+    sealed trait Alt
+      extends StObject
+         with KeyModifiers
     
     //The CTRL key.
     @js.native
-    sealed trait Control extends KeyModifiers
+    sealed trait Control
+      extends StObject
+         with KeyModifiers
     
     //No modifiers are pressed.
     @js.native
-    sealed trait None extends KeyModifiers
+    sealed trait None
+      extends StObject
+         with KeyModifiers
     
     //The SHIFT key.
     @js.native
-    sealed trait Shift extends KeyModifiers
+    sealed trait Shift
+      extends StObject
+         with KeyModifiers
   }
   
   @js.native
@@ -1543,183 +1974,273 @@ object Diagram {
     
     //The A key.
     @js.native
-    sealed trait A extends Keys
+    sealed trait A
+      extends StObject
+         with Keys
     
     //The B key.
     @js.native
-    sealed trait B extends Keys
+    sealed trait B
+      extends StObject
+         with Keys
     
     //The C key.
     @js.native
-    sealed trait C extends Keys
+    sealed trait C
+      extends StObject
+         with Keys
     
     //The D Key.
     @js.native
-    sealed trait D extends Keys
+    sealed trait D
+      extends StObject
+         with Keys
     
     //The DEL key.
     @js.native
-    sealed trait Delete extends Keys
+    sealed trait Delete
+      extends StObject
+         with Keys
     
     //The DOWN ARROW key.
     @js.native
-    sealed trait Down extends Keys
+    sealed trait Down
+      extends StObject
+         with Keys
     
     //The E key.
     @js.native
-    sealed trait E extends Keys
+    sealed trait E
+      extends StObject
+         with Keys
     
     //The ENTER key.
     @js.native
-    sealed trait Enter extends Keys
+    sealed trait Enter
+      extends StObject
+         with Keys
     
     //The ESC key.
     @js.native
-    sealed trait Escape extends Keys
+    sealed trait Escape
+      extends StObject
+         with Keys
     
     //The F key.
     @js.native
-    sealed trait F extends Keys
+    sealed trait F
+      extends StObject
+         with Keys
     
     //The G key.
     @js.native
-    sealed trait G extends Keys
+    sealed trait G
+      extends StObject
+         with Keys
     
     //The H Key.
     @js.native
-    sealed trait H extends Keys
+    sealed trait H
+      extends StObject
+         with Keys
     
     //The I key.
     @js.native
-    sealed trait I extends Keys
+    sealed trait I
+      extends StObject
+         with Keys
     
     //The J key.
     @js.native
-    sealed trait J extends Keys
+    sealed trait J
+      extends StObject
+         with Keys
     
     //The K key.
     @js.native
-    sealed trait K extends Keys
+    sealed trait K
+      extends StObject
+         with Keys
     
     //The L Key.
     @js.native
-    sealed trait L extends Keys
+    sealed trait L
+      extends StObject
+         with Keys
     
     //The LEFT ARROW key.
     @js.native
-    sealed trait Left extends Keys
+    sealed trait Left
+      extends StObject
+         with Keys
     
     //The M key.
     @js.native
-    sealed trait M extends Keys
+    sealed trait M
+      extends StObject
+         with Keys
     
     //The N key.
     @js.native
-    sealed trait N extends Keys
+    sealed trait N
+      extends StObject
+         with Keys
     
     //No key pressed.
     @js.native
-    sealed trait None extends Keys
+    sealed trait None
+      extends StObject
+         with Keys
     
     //The 0 key.
     @js.native
-    sealed trait Number0 extends Keys
+    sealed trait Number0
+      extends StObject
+         with Keys
     
     //The 1 key.
     @js.native
-    sealed trait Number1 extends Keys
+    sealed trait Number1
+      extends StObject
+         with Keys
     
     //The 2 key.
     @js.native
-    sealed trait Number2 extends Keys
+    sealed trait Number2
+      extends StObject
+         with Keys
     
     //The 3 key.
     @js.native
-    sealed trait Number3 extends Keys
+    sealed trait Number3
+      extends StObject
+         with Keys
     
     //The 4 key.
     @js.native
-    sealed trait Number4 extends Keys
+    sealed trait Number4
+      extends StObject
+         with Keys
     
     //The 5 key.
     @js.native
-    sealed trait Number5 extends Keys
+    sealed trait Number5
+      extends StObject
+         with Keys
     
     //The 6 key.
     @js.native
-    sealed trait Number6 extends Keys
+    sealed trait Number6
+      extends StObject
+         with Keys
     
     //The 7 key.
     @js.native
-    sealed trait Number7 extends Keys
+    sealed trait Number7
+      extends StObject
+         with Keys
     
     //The 8 key.
     @js.native
-    sealed trait Number8 extends Keys
+    sealed trait Number8
+      extends StObject
+         with Keys
     
     //The 9 key.
     @js.native
-    sealed trait Number9 extends Keys
+    sealed trait Number9
+      extends StObject
+         with Keys
     
     //The O key.
     @js.native
-    sealed trait O extends Keys
+    sealed trait O
+      extends StObject
+         with Keys
     
     //The P Key.
     @js.native
-    sealed trait P extends Keys
+    sealed trait P
+      extends StObject
+         with Keys
     
     //The Q key.
     @js.native
-    sealed trait Q extends Keys
+    sealed trait Q
+      extends StObject
+         with Keys
     
     //The R key.
     @js.native
-    sealed trait R extends Keys
+    sealed trait R
+      extends StObject
+         with Keys
     
     //The RIGHT ARROW key.
     @js.native
-    sealed trait Right extends Keys
+    sealed trait Right
+      extends StObject
+         with Keys
     
     //The S key.
     @js.native
-    sealed trait S extends Keys
+    sealed trait S
+      extends StObject
+         with Keys
     
     //The T Key.
     @js.native
-    sealed trait T extends Keys
+    sealed trait T
+      extends StObject
+         with Keys
     
     //The TAB key.
     @js.native
-    sealed trait Tab extends Keys
+    sealed trait Tab
+      extends StObject
+         with Keys
     
     //The U key.
     @js.native
-    sealed trait U extends Keys
+    sealed trait U
+      extends StObject
+         with Keys
     
     //The UP ARROW key.
     @js.native
-    sealed trait Up extends Keys
+    sealed trait Up
+      extends StObject
+         with Keys
     
     //The V key.
     @js.native
-    sealed trait V extends Keys
+    sealed trait V
+      extends StObject
+         with Keys
     
     //The W key.
     @js.native
-    sealed trait W extends Keys
+    sealed trait W
+      extends StObject
+         with Keys
     
     //The X key.
     @js.native
-    sealed trait X extends Keys
+    sealed trait X
+      extends StObject
+         with Keys
     
     //The Y key.
     @js.native
-    sealed trait Y extends Keys
+    sealed trait Y
+      extends StObject
+         with Keys
     
     //The Z key.
     @js.native
-    sealed trait Z extends Keys
+    sealed trait Z
+      extends StObject
+         with Keys
   }
   
   @js.native
@@ -1730,27 +2251,39 @@ object Diagram {
     
     //Enables all label constraints
     @js.native
-    sealed trait All extends LabelConstraints
+    sealed trait All
+      extends StObject
+         with LabelConstraints
     
     //Enables label to be Dragged
     @js.native
-    sealed trait Draggable extends LabelConstraints
+    sealed trait Draggable
+      extends StObject
+         with LabelConstraints
     
     //Disable all label Constraints
     @js.native
-    sealed trait None extends LabelConstraints
+    sealed trait None
+      extends StObject
+         with LabelConstraints
     
     //Enables label to be Resized
     @js.native
-    sealed trait Resizable extends LabelConstraints
+    sealed trait Resizable
+      extends StObject
+         with LabelConstraints
     
     //Enables label to be Rotated
     @js.native
-    sealed trait Rotatable extends LabelConstraints
+    sealed trait Rotatable
+      extends StObject
+         with LabelConstraints
     
     //Enables label to be selected
     @js.native
-    sealed trait Selectable extends LabelConstraints
+    sealed trait Selectable
+      extends StObject
+         with LabelConstraints
   }
   
   @js.native
@@ -1761,11 +2294,15 @@ object Diagram {
     
     //Used to set label edit mode as edit
     @js.native
-    sealed trait Edit extends LabelEditMode
+    sealed trait Edit
+      extends StObject
+         with LabelEditMode
     
     //Used to set label edit mode as view
     @js.native
-    sealed trait View extends LabelEditMode
+    sealed trait View
+      extends StObject
+         with LabelEditMode
   }
   
   @js.native
@@ -1776,11 +2313,15 @@ object Diagram {
     
     //Sets the relativeMode as SegmentBounds
     @js.native
-    sealed trait SegmentBounds extends LabelRelativeMode
+    sealed trait SegmentBounds
+      extends StObject
+         with LabelRelativeMode
     
     //Sets the relativeMode as SegmentPath
     @js.native
-    sealed trait SegmentPath extends LabelRelativeMode
+    sealed trait SegmentPath
+      extends StObject
+         with LabelRelativeMode
   }
   
   @js.native
@@ -1791,11 +2332,15 @@ object Diagram {
     
     //Sets the labelRenderingMode as HTML
     @js.native
-    sealed trait HTML extends LabelRenderingMode
+    sealed trait HTML
+      extends StObject
+         with LabelRenderingMode
     
     //Sets the labelRenderingMode as SVG
     @js.native
-    sealed trait SVG extends LabelRenderingMode
+    sealed trait SVG
+      extends StObject
+         with LabelRenderingMode
   }
   
   @js.native
@@ -1806,19 +2351,27 @@ object Diagram {
     
     //Used to set LayoutOrientation from bottom to top
     @js.native
-    sealed trait BottomToTop extends LayoutOrientations
+    sealed trait BottomToTop
+      extends StObject
+         with LayoutOrientations
     
     //Used to set LayoutOrientation from left to right
     @js.native
-    sealed trait LeftToRight extends LayoutOrientations
+    sealed trait LeftToRight
+      extends StObject
+         with LayoutOrientations
     
     //Used to set LayoutOrientation from right to left
     @js.native
-    sealed trait RightToLeft extends LayoutOrientations
+    sealed trait RightToLeft
+      extends StObject
+         with LayoutOrientations
     
     //Used to set LayoutOrientation from top to bottom
     @js.native
-    sealed trait TopToBottom extends LayoutOrientations
+    sealed trait TopToBottom
+      extends StObject
+         with LayoutOrientations
   }
   
   @js.native
@@ -1829,23 +2382,33 @@ object Diagram {
     
     //Used to set layout type as hierarchical layout
     @js.native
-    sealed trait HierarchicalTree extends LayoutTypes
+    sealed trait HierarchicalTree
+      extends StObject
+         with LayoutTypes
     
     //Used not to set any specific layout
     @js.native
-    sealed trait None extends LayoutTypes
+    sealed trait None
+      extends StObject
+         with LayoutTypes
     
     //Used to set layout type as organnizational chart
     @js.native
-    sealed trait OrganizationalChart extends LayoutTypes
+    sealed trait OrganizationalChart
+      extends StObject
+         with LayoutTypes
     
     //Used to set layout type as radial tree
     @js.native
-    sealed trait RadialTree extends LayoutTypes
+    sealed trait RadialTree
+      extends StObject
+         with LayoutTypes
     
     //Used to set layout type as symmetric layout
     @js.native
-    sealed trait SymmetricLayout extends LayoutTypes
+    sealed trait SymmetricLayout
+      extends StObject
+         with LayoutTypes
   }
   
   @js.native
@@ -1856,19 +2419,27 @@ object Diagram {
     
     //The entity instances can be related to multiple instances of each other
     @js.native
-    sealed trait ManyToMany extends Multiplicity
+    sealed trait ManyToMany
+      extends StObject
+         with Multiplicity
     
     //Multiple instances of an entity can be related to a single instance of the other entity
     @js.native
-    sealed trait ManyToOne extends Multiplicity
+    sealed trait ManyToOne
+      extends StObject
+         with Multiplicity
     
     //An entity instance can be related to multiple instances of the other entities
     @js.native
-    sealed trait OneToMany extends Multiplicity
+    sealed trait OneToMany
+      extends StObject
+         with Multiplicity
     
     //Each entity instance is related to a single instance of another entity
     @js.native
-    sealed trait OneToOne extends Multiplicity
+    sealed trait OneToOne
+      extends StObject
+         with Multiplicity
   }
   
   @js.native
@@ -1879,91 +2450,135 @@ object Diagram {
     
     //Enables panning should be done while node dragging
     @js.native
-    sealed trait AllowPan extends NodeConstraints
+    sealed trait AllowPan
+      extends StObject
+         with NodeConstraints
     
     //Enables Proportional resize for node
     @js.native
-    sealed trait AspectRatio extends NodeConstraints
+    sealed trait AspectRatio
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be connected
     @js.native
-    sealed trait Connect extends NodeConstraints
+    sealed trait Connect
+      extends StObject
+         with NodeConstraints
     
     //Enables contrast between clean edges for the node over rendering speed and geometric precision
     @js.native
-    sealed trait CrispEdges extends NodeConstraints
+    sealed trait CrispEdges
+      extends StObject
+         with NodeConstraints
     
     //Enables default node interactions such as select,delete,drag,rotate,resize,connect,inheritCrispEdges and inheritTooltip
     @js.native
-    sealed trait Default extends NodeConstraints
+    sealed trait Default
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be Deleted
     @js.native
-    sealed trait Delete extends NodeConstraints
+    sealed trait Delete
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be Dragged
     @js.native
-    sealed trait Drag extends NodeConstraints
+    sealed trait Drag
+      extends StObject
+         with NodeConstraints
     
     //Enables label of node to be Dragged
     @js.native
-    sealed trait DragLabel extends NodeConstraints
+    sealed trait DragLabel
+      extends StObject
+         with NodeConstraints
     
     //Disable all node Constraints
     @js.native
-    sealed trait None extends NodeConstraints
+    sealed trait None
+      extends StObject
+         with NodeConstraints
     
     //Enables the user interaction with the node
     @js.native
-    sealed trait PointerEvents extends NodeConstraints
+    sealed trait PointerEvents
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be Resized
     @js.native
-    sealed trait Resize extends NodeConstraints
+    sealed trait Resize
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize east
     @js.native
-    sealed trait ResizeEast extends NodeConstraints
+    sealed trait ResizeEast
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize north
     @js.native
-    sealed trait ResizeNorth extends NodeConstraints
+    sealed trait ResizeNorth
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize north east
     @js.native
-    sealed trait ResizeNorthEast extends NodeConstraints
+    sealed trait ResizeNorthEast
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize north west
     @js.native
-    sealed trait ResizeNorthWest extends NodeConstraints
+    sealed trait ResizeNorthWest
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize south
     @js.native
-    sealed trait ResizeSouth extends NodeConstraints
+    sealed trait ResizeSouth
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize south east
     @js.native
-    sealed trait ResizeSouthEast extends NodeConstraints
+    sealed trait ResizeSouthEast
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize south west
     @js.native
-    sealed trait ResizeSouthWest extends NodeConstraints
+    sealed trait ResizeSouthWest
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be resize west
     @js.native
-    sealed trait ResizeWest extends NodeConstraints
+    sealed trait ResizeWest
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be Rotated
     @js.native
-    sealed trait Rotate extends NodeConstraints
+    sealed trait Rotate
+      extends StObject
+         with NodeConstraints
     
     //Enables node to be selected
     @js.native
-    sealed trait Select extends NodeConstraints
+    sealed trait Select
+      extends StObject
+         with NodeConstraints
     
     //Enables shadow
     @js.native
-    sealed trait Shadow extends NodeConstraints
+    sealed trait Shadow
+      extends StObject
+         with NodeConstraints
   }
   
   @js.native
@@ -1974,11 +2589,15 @@ object Diagram {
     
     //Set overflow Type  as Clip
     @js.native
-    sealed trait Clip extends OverflowType
+    sealed trait Clip
+      extends StObject
+         with OverflowType
     
     //Set overflow Type as ellipsis
     @js.native
-    sealed trait Ellipsis extends OverflowType
+    sealed trait Ellipsis
+      extends StObject
+         with OverflowType
   }
   
   @js.native
@@ -1989,11 +2608,15 @@ object Diagram {
     
     //Used to set orientation as Landscape
     @js.native
-    sealed trait Landscape extends PageOrientations
+    sealed trait Landscape
+      extends StObject
+         with PageOrientations
     
     //Used to set orientation as portrait
     @js.native
-    sealed trait Portrait extends PageOrientations
+    sealed trait Portrait
+      extends StObject
+         with PageOrientations
   }
   
   @js.native
@@ -2004,15 +2627,21 @@ object Diagram {
     
     //Enables connections with connector
     @js.native
-    sealed trait Connect extends PortConstraints
+    sealed trait Connect
+      extends StObject
+         with PortConstraints
     
     //Enables to create the connection when mouse hover on the port.
     @js.native
-    sealed trait ConnectOnDrag extends PortConstraints
+    sealed trait ConnectOnDrag
+      extends StObject
+         with PortConstraints
     
     //Disable all constraints
     @js.native
-    sealed trait None extends PortConstraints
+    sealed trait None
+      extends StObject
+         with PortConstraints
   }
   
   @js.native
@@ -2023,19 +2652,27 @@ object Diagram {
     
     //Used to set port shape as Circle
     @js.native
-    sealed trait Circle extends PortShapes
+    sealed trait Circle
+      extends StObject
+         with PortShapes
     
     //Used to set port shape as Path
     @js.native
-    sealed trait Path extends PortShapes
+    sealed trait Path
+      extends StObject
+         with PortShapes
     
     //Used to set port shape as Square
     @js.native
-    sealed trait Square extends PortShapes
+    sealed trait Square
+      extends StObject
+         with PortShapes
     
     //Used to set port shape as X
     @js.native
-    sealed trait X extends PortShapes
+    sealed trait X
+      extends StObject
+         with PortShapes
   }
   
   @js.native
@@ -2046,23 +2683,33 @@ object Diagram {
     
     //Port gets visible when connect connector to node
     @js.native
-    sealed trait Connect extends PortVisibility
+    sealed trait Connect
+      extends StObject
+         with PortVisibility
     
     //Specifies the port visibility as default
     @js.native
-    sealed trait Default extends PortVisibility
+    sealed trait Default
+      extends StObject
+         with PortVisibility
     
     //Set the port visibility as Hidden
     @js.native
-    sealed trait Hidden extends PortVisibility
+    sealed trait Hidden
+      extends StObject
+         with PortVisibility
     
     //Port get visible when hover connector on node
     @js.native
-    sealed trait Hover extends PortVisibility
+    sealed trait Hover
+      extends StObject
+         with PortVisibility
     
     //Set the port visibility as Visible
     @js.native
-    sealed trait Visible extends PortVisibility
+    sealed trait Visible
+      extends StObject
+         with PortVisibility
   }
   
   @js.native
@@ -2073,11 +2720,15 @@ object Diagram {
     
     //Used to export the content of the diagram only.
     @js.native
-    sealed trait Content extends Region
+    sealed trait Content
+      extends StObject
+         with Region
     
     //Used to export the page region of the diagram.
     @js.native
-    sealed trait PageSettings extends Region
+    sealed trait PageSettings
+      extends StObject
+         with Region
   }
   
   @js.native
@@ -2088,11 +2739,15 @@ object Diagram {
     
     //Shows tooltip at the mouse position
     @js.native
-    sealed trait Mouse extends RelativeMode
+    sealed trait Mouse
+      extends StObject
+         with RelativeMode
     
     //Shows tooltip around the node
     @js.native
-    sealed trait Object extends RelativeMode
+    sealed trait Object
+      extends StObject
+         with RelativeMode
   }
   
   @js.native
@@ -2103,15 +2758,21 @@ object Diagram {
     
     //Used to set scrollLimit as Diagram
     @js.native
-    sealed trait Diagram extends ScrollLimit
+    sealed trait Diagram
+      extends StObject
+         with ScrollLimit
     
     //Used to set scrollLimit as Infinite
     @js.native
-    sealed trait Infinite extends ScrollLimit
+    sealed trait Infinite
+      extends StObject
+         with ScrollLimit
     
     //Used to set scrollLimit as Limited
     @js.native
-    sealed trait Limited extends ScrollLimit
+    sealed trait Limited
+      extends StObject
+         with ScrollLimit
   }
   
   @js.native
@@ -2122,15 +2783,21 @@ object Diagram {
     
     //Used to specify the lines as Bezier
     @js.native
-    sealed trait Bezier extends Segments
+    sealed trait Bezier
+      extends StObject
+         with Segments
     
     //Used to specify the lines as Orthogonal
     @js.native
-    sealed trait Orthogonal extends Segments
+    sealed trait Orthogonal
+      extends StObject
+         with Segments
     
     //Used to specify the lines as Straight
     @js.native
-    sealed trait Straight extends Segments
+    sealed trait Straight
+      extends StObject
+         with Segments
   }
   
   @js.native
@@ -2141,35 +2808,51 @@ object Diagram {
     
     //Sets the visibility of all selection handles as visible
     @js.native
-    sealed trait All extends SelectorConstraints
+    sealed trait All
+      extends StObject
+         with SelectorConstraints
     
     //Show/Hide the selection handles when it is overlapped with each other's.
     @js.native
-    sealed trait AutoHideThumbs extends SelectorConstraints
+    sealed trait AutoHideThumbs
+      extends StObject
+         with SelectorConstraints
     
     //Enables dragging while selecting the multiple nodes and click on the empty region of the selection rectangle.
     @js.native
-    sealed trait DragOnEmptySpace extends SelectorConstraints
+    sealed trait DragOnEmptySpace
+      extends StObject
+         with SelectorConstraints
     
     //Hides the selector
     @js.native
-    sealed trait None extends SelectorConstraints
+    sealed trait None
+      extends StObject
+         with SelectorConstraints
     
     //Sets the visibility of resize handles as visible
     @js.native
-    sealed trait Resizer extends SelectorConstraints
+    sealed trait Resizer
+      extends StObject
+         with SelectorConstraints
     
     //Sets the visibility of rotation handle as visible
     @js.native
-    sealed trait Rotator extends SelectorConstraints
+    sealed trait Rotator
+      extends StObject
+         with SelectorConstraints
     
     //Enables the default tooltip of the diagram control.
     @js.native
-    sealed trait Tooltip extends SelectorConstraints
+    sealed trait Tooltip
+      extends StObject
+         with SelectorConstraints
     
     //Sets the visibility of user handles as visible
     @js.native
-    sealed trait UserHandles extends SelectorConstraints
+    sealed trait UserHandles
+      extends StObject
+         with SelectorConstraints
   }
   
   @js.native
@@ -2180,39 +2863,57 @@ object Diagram {
     
     //Used to specify node type as BPMN
     @js.native
-    sealed trait BPMN extends Shapes
+    sealed trait BPMN
+      extends StObject
+         with Shapes
     
     //Used to specify node type as Basic
     @js.native
-    sealed trait Basic extends Shapes
+    sealed trait Basic
+      extends StObject
+         with Shapes
     
     //Used to specify node type as Flow
     @js.native
-    sealed trait Flow extends Shapes
+    sealed trait Flow
+      extends StObject
+         with Shapes
     
     //Used to specify node type as HTML
     @js.native
-    sealed trait Html extends Shapes
+    sealed trait Html
+      extends StObject
+         with Shapes
     
     //Used to specify node type as Image
     @js.native
-    sealed trait Image extends Shapes
+    sealed trait Image
+      extends StObject
+         with Shapes
     
     //Used to specify node type as Native
     @js.native
-    sealed trait Native extends Shapes
+    sealed trait Native
+      extends StObject
+         with Shapes
     
     //Used to specify node type as Text
     @js.native
-    sealed trait Text extends Shapes
+    sealed trait Text
+      extends StObject
+         with Shapes
     
     //Used to specify node type as UMLActivity
     @js.native
-    sealed trait UMLActivity extends Shapes
+    sealed trait UMLActivity
+      extends StObject
+         with Shapes
     
     //Used to specify node type as UMLClassifier
     @js.native
-    sealed trait UMLClassifier extends Shapes
+    sealed trait UMLClassifier
+      extends StObject
+         with Shapes
   }
   
   @js.native
@@ -2223,35 +2924,51 @@ object Diagram {
     
     //Enable all the constraints
     @js.native
-    sealed trait All extends SnapConstraints
+    sealed trait All
+      extends StObject
+         with SnapConstraints
     
     //Enables node to be snapped to horizontal gridlines
     @js.native
-    sealed trait None extends SnapConstraints
+    sealed trait None
+      extends StObject
+         with SnapConstraints
     
     //Enable horizontal lines
     @js.native
-    sealed trait ShowHorizontalLines extends SnapConstraints
+    sealed trait ShowHorizontalLines
+      extends StObject
+         with SnapConstraints
     
     //Enable both horizontal and vertical lines
     @js.native
-    sealed trait ShowLines extends SnapConstraints
+    sealed trait ShowLines
+      extends StObject
+         with SnapConstraints
     
     //Enable vertical lines
     @js.native
-    sealed trait ShowVerticalLines extends SnapConstraints
+    sealed trait ShowVerticalLines
+      extends StObject
+         with SnapConstraints
     
     //Enables node to be snapped to vertical gridlines
     @js.native
-    sealed trait SnapToHorizontalLines extends SnapConstraints
+    sealed trait SnapToHorizontalLines
+      extends StObject
+         with SnapConstraints
     
     //Enables node to be snapped to gridlines
     @js.native
-    sealed trait SnapToLines extends SnapConstraints
+    sealed trait SnapToLines
+      extends StObject
+         with SnapConstraints
     
     //Enables node to be snapped to horizontal gridlines
     @js.native
-    sealed trait SnapToVerticalLines extends SnapConstraints
+    sealed trait SnapToVerticalLines
+      extends StObject
+         with SnapConstraints
   }
   
   @js.native
@@ -2262,20 +2979,28 @@ object Diagram {
     
     //The diagram content is resized to fill the destination dimensions. The aspect ratio is not preserved.
     @js.native
-    sealed trait Fill extends Stretch
+    sealed trait Fill
+      extends StObject
+         with Stretch
     
     //The diagram content preserves its original size.
     @js.native
-    sealed trait None extends Stretch
+    sealed trait None
+      extends StObject
+         with Stretch
     
     //The diagram content is resized to fit in the destination dimensions while it preserves its native aspect ratio.
     @js.native
-    sealed trait Uniform extends Stretch
+    sealed trait Uniform
+      extends StObject
+         with Stretch
     
     //The diagram content is resized to fill the destination dimensions while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from the
     //source, the source content is clipped to fit in the destination dimensions.
     @js.native
-    sealed trait UniformToFill extends Stretch
+    sealed trait UniformToFill
+      extends StObject
+         with Stretch
   }
   
   @js.native
@@ -2286,15 +3011,21 @@ object Diagram {
     
     //Used to align text on center of node/connector
     @js.native
-    sealed trait Center extends TextAlign
+    sealed trait Center
+      extends StObject
+         with TextAlign
     
     //Used to align text on left side of node/connector
     @js.native
-    sealed trait Left extends TextAlign
+    sealed trait Left
+      extends StObject
+         with TextAlign
     
     //Used to align text on Right side of node/connector
     @js.native
-    sealed trait Right extends TextAlign
+    sealed trait Right
+      extends StObject
+         with TextAlign
   }
   
   @js.native
@@ -2305,19 +3036,27 @@ object Diagram {
     
     //Used to set text decoration of the label as LineThrough
     @js.native
-    sealed trait LineThrough extends TextDecorations
+    sealed trait LineThrough
+      extends StObject
+         with TextDecorations
     
     //Used to set text decoration of the label as None
     @js.native
-    sealed trait None extends TextDecorations
+    sealed trait None
+      extends StObject
+         with TextDecorations
     
     //Used to set text decoration of the label as Overline
     @js.native
-    sealed trait Overline extends TextDecorations
+    sealed trait Overline
+      extends StObject
+         with TextDecorations
     
     //Used to set text decoration of the label as Underline
     @js.native
-    sealed trait Underline extends TextDecorations
+    sealed trait Underline
+      extends StObject
+         with TextDecorations
   }
   
   @js.native
@@ -2328,15 +3067,21 @@ object Diagram {
     
     //Disables wrapping
     @js.native
-    sealed trait NoWrap extends TextWrapping
+    sealed trait NoWrap
+      extends StObject
+         with TextWrapping
     
     //Enables Line-break at normal word break points
     @js.native
-    sealed trait Wrap extends TextWrapping
+    sealed trait Wrap
+      extends StObject
+         with TextWrapping
     
     //Enables Line-break at normal word break points with longer word overflows
     @js.native
-    sealed trait WrapWithOverflow extends TextWrapping
+    sealed trait WrapWithOverflow
+      extends StObject
+         with TextWrapping
   }
   
   @js.native
@@ -2347,11 +3092,15 @@ object Diagram {
     
     //Align the ruler scale either left or top position of the ruler.
     @js.native
-    sealed trait LeftOrTop extends TickAlignment
+    sealed trait LeftOrTop
+      extends StObject
+         with TickAlignment
     
     //Align the ruler scale either right or bottom position of the ruler.
     @js.native
-    sealed trait RightOrBottom extends TickAlignment
+    sealed trait RightOrBottom
+      extends StObject
+         with TickAlignment
   }
   
   @js.native
@@ -2362,27 +3111,39 @@ object Diagram {
     
     //Enables/Disables ContinuousDraw tool
     @js.native
-    sealed trait ContinuesDraw extends Tool
+    sealed trait ContinuesDraw
+      extends StObject
+         with Tool
     
     //Enables/Disables DrawOnce tool
     @js.native
-    sealed trait DrawOnce extends Tool
+    sealed trait DrawOnce
+      extends StObject
+         with Tool
     
     //Enables/Disables MultiSelect tool
     @js.native
-    sealed trait MultipleSelect extends Tool
+    sealed trait MultipleSelect
+      extends StObject
+         with Tool
     
     //Disables all Tools
     @js.native
-    sealed trait None extends Tool
+    sealed trait None
+      extends StObject
+         with Tool
     
     //Enables/Disables SingleSelect tool
     @js.native
-    sealed trait SingleSelect extends Tool
+    sealed trait SingleSelect
+      extends StObject
+         with Tool
     
     //Enables/Disables ZoomPan tool
     @js.native
-    sealed trait ZoomPan extends Tool
+    sealed trait ZoomPan
+      extends StObject
+         with Tool
   }
   
   @js.native
@@ -2393,15 +3154,21 @@ object Diagram {
     
     //Defines a activity flow as Control in UML Activity Diagram
     @js.native
-    sealed trait Control extends UMLActivityFlow
+    sealed trait Control
+      extends StObject
+         with UMLActivityFlow
     
     //Defines a activity flow as Exception in UML Activity Diagram
     @js.native
-    sealed trait Exception extends UMLActivityFlow
+    sealed trait Exception
+      extends StObject
+         with UMLActivityFlow
     
     //Defines a activity flow as Object in UML Activity Diagram
     @js.native
-    sealed trait Object extends UMLActivityFlow
+    sealed trait Object
+      extends StObject
+         with UMLActivityFlow
   }
   
   @js.native
@@ -2412,55 +3179,81 @@ object Diagram {
     
     //Used to set UML ActivityShapes as AcceptingEvent
     @js.native
-    sealed trait AcceptingEvent extends UMLActivityShapes
+    sealed trait AcceptingEvent
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as Action
     @js.native
-    sealed trait Action extends UMLActivityShapes
+    sealed trait Action
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as Decision
     @js.native
-    sealed trait Decision extends UMLActivityShapes
+    sealed trait Decision
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as FinalNode
     @js.native
-    sealed trait FinalNode extends UMLActivityShapes
+    sealed trait FinalNode
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as ForkNode
     @js.native
-    sealed trait ForkNode extends UMLActivityShapes
+    sealed trait ForkNode
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as InitialNode
     @js.native
-    sealed trait InitialNode extends UMLActivityShapes
+    sealed trait InitialNode
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as JoinNode
     @js.native
-    sealed trait JoinNode extends UMLActivityShapes
+    sealed trait JoinNode
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as MergeNode
     @js.native
-    sealed trait MergeNode extends UMLActivityShapes
+    sealed trait MergeNode
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as Note
     @js.native
-    sealed trait Note extends UMLActivityShapes
+    sealed trait Note
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as ReceiveSignal
     @js.native
-    sealed trait ReceiveSignal extends UMLActivityShapes
+    sealed trait ReceiveSignal
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as SendSignal
     @js.native
-    sealed trait SendSignal extends UMLActivityShapes
+    sealed trait SendSignal
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as StructuredNode
     @js.native
-    sealed trait StructuredNode extends UMLActivityShapes
+    sealed trait StructuredNode
+      extends StObject
+         with UMLActivityShapes
     
     //Used to set UML ActivityShapes as TimeEvent
     @js.native
-    sealed trait TimeEvent extends UMLActivityShapes
+    sealed trait TimeEvent
+      extends StObject
+         with UMLActivityShapes
   }
   
   @js.native
@@ -2471,35 +3264,51 @@ object Diagram {
     
     //Set the position of the userhandle as bottomcenter
     @js.native
-    sealed trait BottomCenter extends UserHandlePositions
+    sealed trait BottomCenter
+      extends StObject
+         with UserHandlePositions
     
     //Set the position of the userhandle as bottomleft
     @js.native
-    sealed trait BottomLeft extends UserHandlePositions
+    sealed trait BottomLeft
+      extends StObject
+         with UserHandlePositions
     
     //Set the position of the userhandle as bottom right
     @js.native
-    sealed trait BottomRight extends UserHandlePositions
+    sealed trait BottomRight
+      extends StObject
+         with UserHandlePositions
     
     //Set the position of the userhandle as middleleft
     @js.native
-    sealed trait MiddleLeft extends UserHandlePositions
+    sealed trait MiddleLeft
+      extends StObject
+         with UserHandlePositions
     
     //Set the position of the userhandle as middleright
     @js.native
-    sealed trait MiddleRight extends UserHandlePositions
+    sealed trait MiddleRight
+      extends StObject
+         with UserHandlePositions
     
     //Set the position of the userhandle as topcenter
     @js.native
-    sealed trait TopCenter extends UserHandlePositions
+    sealed trait TopCenter
+      extends StObject
+         with UserHandlePositions
     
     //Set the position of the userhandle as topleft
     @js.native
-    sealed trait TopLeft extends UserHandlePositions
+    sealed trait TopLeft
+      extends StObject
+         with UserHandlePositions
     
     //Set the position of the userhandle as topright
     @js.native
-    sealed trait TopRight extends UserHandlePositions
+    sealed trait TopRight
+      extends StObject
+         with UserHandlePositions
   }
   
   @js.native
@@ -2510,15 +3319,21 @@ object Diagram {
     
     //Used to align text Vertically on bottom of node/connector
     @js.native
-    sealed trait Bottom extends VerticalAlignment
+    sealed trait Bottom
+      extends StObject
+         with VerticalAlignment
     
     //Used to align text Vertically on center of node/connector
     @js.native
-    sealed trait Center extends VerticalAlignment
+    sealed trait Center
+      extends StObject
+         with VerticalAlignment
     
     //Used to align text Vertically on left side of node/connector
     @js.native
-    sealed trait Top extends VerticalAlignment
+    sealed trait Top
+      extends StObject
+         with VerticalAlignment
   }
   
   @js.native
@@ -2529,23 +3344,26 @@ object Diagram {
     
     //Used to zoom in the Diagram
     @js.native
-    sealed trait ZoomIn extends ZoomCommand
+    sealed trait ZoomIn
+      extends StObject
+         with ZoomCommand
     
     //Used to zoom out the diagram
     @js.native
-    sealed trait ZoomOut extends ZoomCommand
+    sealed trait ZoomOut
+      extends StObject
+         with ZoomCommand
   }
   
-  @js.native
   trait AutoScrollChangeEventArgs extends StObject {
     
     /** Returns the delay between subsequent auto scrolls
       */
-    var delay: js.UndefOr[String] = js.native
+    var delay: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
   }
   object AutoScrollChangeEventArgs {
     
@@ -2572,13 +3390,12 @@ object Diagram {
     }
   }
   
-  @js.native
   trait BackgroundImage extends StObject {
     
     /** Defines how to align the background image over the diagram area.
       * @Default {ej.datavisualization.Diagram.ImageAlignment.XMidYMid}
       */
-    var alignment: js.UndefOr[ImageAlignment | String] = js.native
+    var alignment: js.UndefOr[ImageAlignment | String] = js.undefined
   }
   object BackgroundImage {
     
@@ -2599,40 +3416,39 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** parameter returns the object that is actually clicked
       */
-    var actualObject: js.UndefOr[Double] = js.native
+    var actualObject: js.UndefOr[Double] = js.undefined
     
     /** parameter to specify whether or not to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the count of how many times the mouse button is pressed
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the clicked node, connector or diagram
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the event triggered
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the horizontal coordinate of the mouse pointer, relative to the diagram
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /** parameter returns  the vertical coordinate of the mouse pointer, relative to the diagram
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
   }
   object ClickEventArgs {
     
@@ -2695,13 +3511,12 @@ object Diagram {
     }
   }
   
-  @js.native
   trait CommandManager extends StObject {
     
     /** An object that maps a set of command names with the corresponding command objects
       * @Default {{}}
       */
-    var commands: js.UndefOr[CommandManagerCommands] = js.native
+    var commands: js.UndefOr[CommandManagerCommands] = js.undefined
   }
   object CommandManager {
     
@@ -2722,25 +3537,24 @@ object Diagram {
     }
   }
   
-  @js.native
   trait CommandManagerCommands extends StObject {
     
     /** A method that defines whether the command is executable at the moment or not.
       */
-    var canExecute: js.UndefOr[js.Any] = js.native
+    var canExecute: js.UndefOr[js.Any] = js.undefined
     
     /** A method that defines what to be executed when the key combination is recognized.
       */
-    var execute: js.UndefOr[js.Any] = js.native
+    var execute: js.UndefOr[js.Any] = js.undefined
     
     /** Defines a combination of keys and key modifiers, on recognition of which the command will be executed
       */
-    var gesture: js.UndefOr[CommandManagerCommandsGesture] = js.native
+    var gesture: js.UndefOr[CommandManagerCommandsGesture] = js.undefined
     
     /** Defines any additional parameters that are required at runtime
       * @Default {null}
       */
-    var parameter: js.UndefOr[js.Any] = js.native
+    var parameter: js.UndefOr[js.Any] = js.undefined
   }
   object CommandManagerCommands {
     
@@ -2779,18 +3593,17 @@ object Diagram {
     }
   }
   
-  @js.native
   trait CommandManagerCommandsGesture extends StObject {
     
     /** Sets the key value, on recognition of which the command will be executed.
       * @Default {ej.datavisualization.Diagram.Keys.None}
       */
-    var key: js.UndefOr[Keys | String] = js.native
+    var key: js.UndefOr[Keys | String] = js.undefined
     
     /** Sets a combination of key modifiers, on recognition of which the command will be executed.
       * @Default {ej.datavisualization.Diagram.KeyModifiers.None}
       */
-    var keyModifiers: js.UndefOr[KeyModifiers | String] = js.native
+    var keyModifiers: js.UndefOr[KeyModifiers | String] = js.undefined
   }
   object CommandManagerCommandsGesture {
     
@@ -2817,28 +3630,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectionChangeEventArgs extends StObject {
     
     /** parameter defines whether to cancel the change or not
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the new source node or target node of the connector
       */
-    var connection: js.UndefOr[String] = js.native
+    var connection: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the connection that is changed between nodes, ports or points
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the new source port or target port of the connector
       */
-    var port: js.UndefOr[js.Any] = js.native
+    var port: js.UndefOr[js.Any] = js.undefined
   }
   object ConnectionChangeEventArgs {
     
@@ -2883,175 +3695,174 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Connector extends StObject {
     
     /** To maintain additional information about connectors
       * @Default {null}
       */
-    var addInfo: js.UndefOr[js.Any] = js.native
+    var addInfo: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the width of the line bridges
       * @Default {10}
       */
-    var bridgeSpace: js.UndefOr[Double] = js.native
+    var bridgeSpace: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the behaviors of connectors.
       * @Default {ej.datavisualization.Diagram.ConnectorConstraints.Default}
       */
-    var constraints: js.UndefOr[ConnectorConstraints | String] = js.native
+    var constraints: js.UndefOr[ConnectorConstraints | String] = js.undefined
     
     /** Defines the radius of the rounded corner
       * @Default {0}
       */
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /** This property allows you to customize connectors appearance using user-defined CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container.
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Left}
       */
-    var horizontalAlign: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlign: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** A collection of JSON objects where each object represents a label.
       * @Default {[]}
       */
-    var labels: js.UndefOr[js.Array[ConnectorsLabel]] = js.native
+    var labels: js.UndefOr[js.Array[ConnectorsLabel]] = js.undefined
     
     /** Sets the stroke color of the connector
       * @Default {black}
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /** Sets the pattern of dashes and gaps used to stroke the path of the connector
       */
-    var lineDashArray: js.UndefOr[String] = js.native
+    var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** Defines the padding value to ease the interaction with connectors
       * @Default {10}
       */
-    var lineHitPadding: js.UndefOr[Double] = js.native
+    var lineHitPadding: js.UndefOr[Double] = js.undefined
     
     /** Sets the width of the line
       * @Default {1}
       */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the bottom of parent bounds and the connector. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginBottom: js.UndefOr[Double] = js.native
+    var marginBottom: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the left of parent bounds and the connector. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginLeft: js.UndefOr[Double] = js.native
+    var marginLeft: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the right of parent bounds and the connector. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginRight: js.UndefOr[Double] = js.native
+    var marginRight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the top of parent bounds and the connector. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginTop: js.UndefOr[Double] = js.native
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     /** Sets a unique name for the connector
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Defines the transparency of the connector
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Defines the size and preview size of the node to add that to symbol palette. To explore palette item, refer Palette Item
       * @Default {null}
       */
-    var paletteItem: js.UndefOr[js.Any] = js.native
+    var paletteItem: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the parent name of the connector.
       */
-    var parent: js.UndefOr[String] = js.native
+    var parent: js.UndefOr[String] = js.undefined
     
     /** An array of JSON objects where each object represents a segment
       * @Default {[ { type:straight } ]}
       */
-    var segments: js.UndefOr[js.Array[ConnectorsSegment]] = js.native
+    var segments: js.UndefOr[js.Array[ConnectorsSegment]] = js.undefined
     
     /** Defines the role/meaning of the connector
       * @Default {null}
       */
-    var shape: js.UndefOr[ConnectorsShape] = js.native
+    var shape: js.UndefOr[ConnectorsShape] = js.undefined
     
     /** Defines the source decorator of the connector
       * @Default {{ shape:arrow, width: 8, height:8, borderColor:black, fillColor:black }}
       */
-    var sourceDecorator: js.UndefOr[ConnectorsSourceDecorator] = js.native
+    var sourceDecorator: js.UndefOr[ConnectorsSourceDecorator] = js.undefined
     
     /** Sets the source node of the connector
       */
-    var sourceNode: js.UndefOr[String] = js.native
+    var sourceNode: js.UndefOr[String] = js.undefined
     
     /** Defines the space to be left between the source node and the source point of a connector
       * @Default {0}
       */
-    var sourcePadding: js.UndefOr[Double] = js.native
+    var sourcePadding: js.UndefOr[Double] = js.undefined
     
     /** Describes the start point of the connector
       * @Default {ej.datavisualization.Diagram.Point()}
       */
-    var sourcePoint: js.UndefOr[ConnectorsSourcePoint] = js.native
+    var sourcePoint: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Sets the source port of the connector
       */
-    var sourcePort: js.UndefOr[String] = js.native
+    var sourcePort: js.UndefOr[String] = js.undefined
     
     /** Defines the target decorator of the connector
       * @Default {{ shape:arrow, width: 8, height:8, borderColor:black, fillColor:black }}
       */
-    var targetDecorator: js.UndefOr[ConnectorsTargetDecorator] = js.native
+    var targetDecorator: js.UndefOr[ConnectorsTargetDecorator] = js.undefined
     
     /** Sets the target node of the connector
       */
-    var targetNode: js.UndefOr[String] = js.native
+    var targetNode: js.UndefOr[String] = js.undefined
     
     /** Defines the space to be left between the target node and the target point of the connector
       * @Default {0}
       */
-    var targetPadding: js.UndefOr[Double] = js.native
+    var targetPadding: js.UndefOr[Double] = js.undefined
     
     /** Describes the end point of the connector
       * @Default {ej.datavisualization.Diagram.Point()}
       */
-    var targetPoint: js.UndefOr[ConnectorsSourcePoint] = js.native
+    var targetPoint: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Sets the targetPort of the connector
       */
-    var targetPort: js.UndefOr[String] = js.native
+    var targetPort: js.UndefOr[String] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over connector. For tooltip properties, refer Tooltip
       * @Default {null}
       */
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
     /** To set the vertical alignment of connector (Applicable,if the parent is group).
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Top}
       */
-    var verticalAlign: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlign: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Enables or disables the visibility of connector
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the z-index of the connector
       * @Default {0}
       */
-    var zOrder: js.UndefOr[Double] = js.native
+    var zOrder: js.UndefOr[Double] = js.undefined
   }
   object Connector {
     
@@ -3282,28 +4093,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorCollectionChangeEventArgs extends StObject {
     
     /** parameter defines whether to cancel the collection change or not
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns whether the connector is inserted or removed
       */
-    var changeType: js.UndefOr[String] = js.native
+    var changeType: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the connector that is to be added or deleted
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** triggers before and after adding the connector in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the connector.
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object ConnectorCollectionChangeEventArgs {
     
@@ -3348,36 +4158,35 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorSourceChangeEventArgs extends StObject {
     
     /** parameter defines whether to cancel the change or not
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** returns the state of connection end point dragging(starting, dragging, completed)
       */
-    var dragState: js.UndefOr[String] = js.native
+    var dragState: js.UndefOr[String] = js.undefined
     
     /** returns the connector, the source point of which is being dragged
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the source node of the element
       */
-    var node: js.UndefOr[js.Any] = js.native
+    var node: js.UndefOr[js.Any] = js.undefined
     
     /** returns the source point of the element
       */
-    var point: js.UndefOr[js.Any] = js.native
+    var point: js.UndefOr[js.Any] = js.undefined
     
     /** returns the source port of the element
       */
-    var port: js.UndefOr[js.Any] = js.native
+    var port: js.UndefOr[js.Any] = js.undefined
   }
   object ConnectorSourceChangeEventArgs {
     
@@ -3434,36 +4243,35 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorTargetChangeEventArgs extends StObject {
     
     /** parameter defines whether to cancel the change or not
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** returns the state of connection end point dragging(starting, dragging, completed)
       */
-    var dragState: js.UndefOr[String] = js.native
+    var dragState: js.UndefOr[String] = js.undefined
     
     /** parameter returns the connector, the target point of which is being dragged
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target node of the element
       */
-    var node: js.UndefOr[js.Any] = js.native
+    var node: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target point of the element
       */
-    var point: js.UndefOr[js.Any] = js.native
+    var point: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target port of the element
       */
-    var port: js.UndefOr[js.Any] = js.native
+    var port: js.UndefOr[js.Any] = js.undefined
   }
   object ConnectorTargetChangeEventArgs {
     
@@ -3520,166 +4328,165 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsLabel extends StObject {
     
     /** Defines how the label should be aligned with respect to the segment
       * @Default {ej.datavisualization.Diagram.Alignment.Center}
       */
-    var alignment: js.UndefOr[Alignment | String] = js.native
+    var alignment: js.UndefOr[Alignment | String] = js.undefined
     
     /** Enables/disables the bold style
       * @Default {false}
       */
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the border color of the label
       * @Default {transparent}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of the label
       * @Default {0}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines whether the label should be aligned within the connector boundaries
       * @Default {true}
       */
-    var boundaryConstraints: js.UndefOr[Boolean] = js.native
+    var boundaryConstraints: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the default behaviors of the label.
       * @Default {ej.datavisualization.Diagram.LabelConstraints.None}
       */
-    var constraints: js.UndefOr[LabelConstraints | String] = js.native
+    var constraints: js.UndefOr[LabelConstraints | String] = js.undefined
     
     /** Sets the value which is used to drag the label within certain bounds.
       * @Default {null}
       */
-    var dragLimit: js.UndefOr[ConnectorsLabelsDragLimit] = js.native
+    var dragLimit: js.UndefOr[ConnectorsLabelsDragLimit] = js.undefined
     
     /** Sets the fill color of the text area
       * @Default {transparent}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font color of the text
       * @Default {black}
       */
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font family of the text
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Defines the font size of the text
       * @Default {12}
       */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the height of the label(the maximum value of label height and the connector height will be considered as label height)
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the label.
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Sets the hyperlink for the labels in the connectors.
       * @Default {none}
       */
-    var hyperlink: js.UndefOr[String] = js.native
+    var hyperlink: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the italic style
       * @Default {false}
       */
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the fraction/ratio(relative to connector) that defines the position of the label
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var margin: js.UndefOr[ConnectorsLabelsMargin] = js.native
+    var margin: js.UndefOr[ConnectorsLabelsMargin] = js.undefined
     
     /** Gets whether the label is currently being edited or not.
       * @Default {ej.datavisualization.Diagram.LabelEditMode.Edit}
       */
-    var mode: js.UndefOr[LabelEditMode | String] = js.native
+    var mode: js.UndefOr[LabelEditMode | String] = js.undefined
     
     /** Sets the unique identifier of the label
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to connector) that defines the position of the label
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the transparency of labels
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Sets the padding for connector label.
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var padding: js.UndefOr[js.Any] = js.native
+    var padding: js.UndefOr[js.Any] = js.undefined
     
     /** Defines whether the label is editable or not
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Defines whether the label should be positioned whether relative to segments or connector boundaries
       * @Default {ej.datavisualization.Diagram.LabelRelativeMode.SegmentPath}
       */
-    var relativeMode: js.UndefOr[LabelRelativeMode | String] = js.native
+    var relativeMode: js.UndefOr[LabelRelativeMode | String] = js.undefined
     
     /** Defines the angle to which the label needs to be rotated
       * @Default {0}
       */
-    var rotateAngle: js.UndefOr[Double] = js.native
+    var rotateAngle: js.UndefOr[Double] = js.undefined
     
     /** Sets the position of the label with respect to the total segment length
       * @Default {0.5}
       */
-    var segmentOffset: js.UndefOr[String] = js.native
+    var segmentOffset: js.UndefOr[String] = js.undefined
     
     /** Defines the label text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Defines how to align the text inside the label.
       * @Default {ej.datavisualization.Diagram.TextAlign.Center}
       */
-    var textAlign: js.UndefOr[typings.ejWebAll.ej.TextAlign | String] = js.native
+    var textAlign: js.UndefOr[typings.ejWebAll.ej.TextAlign | String] = js.undefined
     
     /** Sets how to decorate the label text.
       * @Default {ej.datavisualization.Diagram.TextDecorations.None}
       */
-    var textDecoration: js.UndefOr[TextDecorations | String] = js.native
+    var textDecoration: js.UndefOr[TextDecorations | String] = js.undefined
     
     /** Sets the vertical alignment of the label.
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Enables or disables the visibility of the label
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the width of the label(the maximum value of label width and the connector width will be considered as label width)
       * @Default {50}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Defines how the label text needs to be wrapped.
       * @Default {ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow}
       */
-    var wrapping: js.UndefOr[TextWrapping | String] = js.native
+    var wrapping: js.UndefOr[TextWrapping | String] = js.undefined
   }
   object ConnectorsLabel {
     
@@ -3886,28 +4693,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsLabelsDragLimit extends StObject {
     
     /** To set the drag limit of the label in bottom direction
       * @Default {10}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** To set the drag limit of the label in left direction
       * @Default {10}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** To set the drag limit of the label in right direction
       * @Default {10}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** To set the drag limit of the label in top direction
       * @Default {10}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object ConnectorsLabelsDragLimit {
     
@@ -3946,28 +4752,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsLabelsMargin extends StObject {
     
     /** To set the margin of the label in bottom direction
       * @Default {0}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** To set the margin of the label in left direction
       * @Default {0}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** To set the margin of the label in right direction
       * @Default {0}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** To set the margin of the label in top direction
       * @Default {0}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object ConnectorsLabelsMargin {
     
@@ -4006,47 +4811,46 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsSegment extends StObject {
     
     /** Sets the direction of orthogonal segment
       */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** Describes the length of orthogonal segment
       * @Default {undefined}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Describes the end point of bezier/straight segment
       * @Default {Diagram.Point()}
       */
-    var point: js.UndefOr[ConnectorsSourcePoint] = js.native
+    var point: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Defines the first control point of the bezier segment
       * @Default {null}
       */
-    var point1: js.UndefOr[ConnectorsSourcePoint] = js.native
+    var point1: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Defines the second control point of bezier segment
       * @Default {null}
       */
-    var point2: js.UndefOr[ConnectorsSourcePoint] = js.native
+    var point2: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Sets the type of the segment.
       * @Default {ej.datavisualization.Diagram.Segments.Straight}
       */
-    var `type`: js.UndefOr[Segments | String] = js.native
+    var `type`: js.UndefOr[Segments | String] = js.undefined
     
     /** Describes the length and angle between the first control point and the start point of bezier segment
       * @Default {null}
       */
-    var vector1: js.UndefOr[js.Any] = js.native
+    var vector1: js.UndefOr[js.Any] = js.undefined
     
     /** Describes the length and angle between the second control point and end point of bezier segment
       * @Default {null}
       */
-    var vector2: js.UndefOr[js.Any] = js.native
+    var vector2: js.UndefOr[js.Any] = js.undefined
   }
   object ConnectorsSegment {
     
@@ -4109,48 +4913,47 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsShape extends StObject {
     
     /** Defines the shape of UMLActivity to connector. Applicable, if the connector is of type UMLActivity
       * @Default {ej.datavisualization.Diagram.UMLActivityFlow.Control}
       */
-    var ActivityFlow: js.UndefOr[UMLActivityFlow | String] = js.native
+    var ActivityFlow: js.UndefOr[UMLActivityFlow | String] = js.undefined
     
     /** Sets the type of the Association in a BPMN Process
       * @Default {ej.datavisualization.Diagram.AssociationFlows.Default}
       */
-    var association: js.UndefOr[AssociationFlows | String] = js.native
+    var association: js.UndefOr[AssociationFlows | String] = js.undefined
     
     /** Sets the type of the flow in a BPMN Process
       * @Default {ej.datavisualization.Diagram.BPMNFlows.Sequence}
       */
-    var flow: js.UndefOr[BPMNFlows | String] = js.native
+    var flow: js.UndefOr[BPMNFlows | String] = js.undefined
     
     /** Sets the type of the message flow. Applicable, if the connector is of type &quot;BPMN&quot;
       * @Default {ej.datavisualization.Diagram.BPMNMessageFlows.Default}
       */
-    var message: js.UndefOr[BPMNMessageFlows | String] = js.native
+    var message: js.UndefOr[BPMNMessageFlows | String] = js.undefined
     
     /** Defines the multiplicity option of the connector
       * @Default {null}
       */
-    var multiplicity: js.UndefOr[ConnectorsShapeMultiplicity] = js.native
+    var multiplicity: js.UndefOr[ConnectorsShapeMultiplicity] = js.undefined
     
     /** Defines the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is &quot;classifier&quot;.
       * @Default {ej.datavisualization.Diagram.ClassifierShapes.Association}
       */
-    var relationship: js.UndefOr[ClassifierShapes | String] = js.native
+    var relationship: js.UndefOr[ClassifierShapes | String] = js.undefined
     
     /** Sets the type of BPMN sequence flow
       * @Default {ej.datavisualization.Diagram.BPMNSequenceFlows.Normal}
       */
-    var sequence: js.UndefOr[BPMNSequenceFlows | String] = js.native
+    var sequence: js.UndefOr[BPMNSequenceFlows | String] = js.undefined
     
     /** Sets the type of the connector
       * @Default {ej.datavisualization.Diagram.ConnectorShapes.BPMN}
       */
-    var `type`: js.UndefOr[ConnectorShapes | String] = js.native
+    var `type`: js.UndefOr[ConnectorShapes | String] = js.undefined
   }
   object ConnectorsShape {
     
@@ -4213,22 +5016,21 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsShapeMultiplicity extends StObject {
     
     /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
       */
-    var source: js.UndefOr[ConnectorsShapeMultiplicitySource] = js.native
+    var source: js.UndefOr[ConnectorsShapeMultiplicitySource] = js.undefined
     
     /** Defines the target label to connector. Applicable, if the connector is of type &quot;UML&quot;
       * @Default {true}
       */
-    var target: js.UndefOr[ConnectorsShapeMultiplicitySource] = js.native
+    var target: js.UndefOr[ConnectorsShapeMultiplicitySource] = js.undefined
     
     /** Sets the type of the multiplicity. Applicable, if the connector is of type &quot;classifier&quot;
       * @Default {ej.datavisualization.Diagram.Multiplicity.OneToOne}
       */
-    var `type`: js.UndefOr[Multiplicity | String] = js.native
+    var `type`: js.UndefOr[Multiplicity | String] = js.undefined
   }
   object ConnectorsShapeMultiplicity {
     
@@ -4261,23 +5063,22 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsShapeMultiplicitySource extends StObject {
     
     /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
       * @Default {null}
       */
-    var lowerBounds: js.UndefOr[Double] = js.native
+    var lowerBounds: js.UndefOr[Double] = js.undefined
     
     /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
       * @Default {true}
       */
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
       * @Default {null}
       */
-    var upperBounds: js.UndefOr[Double] = js.native
+    var upperBounds: js.UndefOr[Double] = js.undefined
   }
   object ConnectorsShapeMultiplicitySource {
     
@@ -4310,46 +5111,45 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsSourceDecorator extends StObject {
     
     /** Sets the border color of the source decorator
       * @Default {black}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of the decorator
       * @Default {1}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** This property allows you to customize sourceDecorator appearance using user-defined CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the fill color of the source decorator
       * @Default {black}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the height of the source decorator
       * @Default {8}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Defines the custom shape of the source decorator
       */
-    var pathData: js.UndefOr[String] = js.native
+    var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the shape of the source decorator.
       * @Default {ej.datavisualization.Diagram.DecoratorShapes.Arrow}
       */
-    var shape: js.UndefOr[DecoratorShapes | String] = js.native
+    var shape: js.UndefOr[DecoratorShapes | String] = js.undefined
     
     /** Defines the width of the source decorator
       * @Default {8}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ConnectorsSourceDecorator {
     
@@ -4412,18 +5212,17 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsSourcePoint extends StObject {
     
     /** Defines the x-coordinate of a position
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Defines the y-coordinate of a position
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ConnectorsSourcePoint {
     
@@ -4450,41 +5249,40 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ConnectorsTargetDecorator extends StObject {
     
     /** Sets the border color of the decorator
       * @Default {black}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** This property allows you to customize targetDecorator appearance using user-defined CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the color with which the decorator will be filled
       * @Default {black}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the target decorator
       * @Default {8}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Defines the custom shape of the target decorator
       */
-    var pathData: js.UndefOr[String] = js.native
+    var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the shape of the target decorator.
       * @Default {ej.datavisualization.Diagram.DecoratorShapes.Arrow}
       */
-    var shape: js.UndefOr[DecoratorShapes | String] = js.native
+    var shape: js.UndefOr[DecoratorShapes | String] = js.undefined
     
     /** Defines the width of the target decorator
       * @Default {8}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ConnectorsTargetDecorator {
     
@@ -4541,18 +5339,17 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ContextMenu extends StObject {
     
     /** Defines the collection of context menu items
       * @Default {[]}
       */
-    var items: js.UndefOr[js.Array[ContextMenuItem]] = js.native
+    var items: js.UndefOr[js.Array[ContextMenuItem]] = js.undefined
     
     /** To set whether to display the default context menu items or not
       * @Default {false}
       */
-    var showCustomMenuItemsOnly: js.UndefOr[Boolean] = js.native
+    var showCustomMenuItemsOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ContextMenu {
     
@@ -4582,36 +5379,35 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ContextMenuBeforeOpenEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the dragOver event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the actual arguments from context menu
       */
-    var contextmenu: js.UndefOr[js.Any] = js.native
+    var contextmenu: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the diagram object
       */
-    var diagram: js.UndefOr[js.Any] = js.native
+    var diagram: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the actual click event arguments that explains which button is clicked
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object that was clicked
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the type of the event triggered
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextMenuBeforeOpenEventArgs {
     
@@ -4668,52 +5464,51 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ContextMenuClickEventArgs extends StObject {
     
     /** parameter defines whether to execute the click event or not
       */
-    var canExecute: js.UndefOr[Boolean] = js.native
+    var canExecute: js.UndefOr[Boolean] = js.undefined
     
     /** parameter to specify whether or not to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the element of the object that was clicked
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the model of the diagram
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the id of the selected context menu item
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** parameter returns the parent id of the selected context menu item
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the parent text of the selected context menu item
       */
-    var parentText: js.UndefOr[String] = js.native
+    var parentText: js.UndefOr[String] = js.undefined
     
     /** parameter returns the object that is selected
       */
-    var selectedItem: js.UndefOr[js.Any] = js.native
+    var selectedItem: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object that was clicked
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the text of the selected context menu item
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ContextMenuClickEventArgs {
     
@@ -4794,33 +5589,32 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ContextMenuItem extends StObject {
     
     /** Defines the CssClass for the collection of context menu items
       * @Default {null}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the image url for the collection of context menu items
       * @Default {null}
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Defines the name for the collection of context menu items
       * @Default {null}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Defines the collection of sub items for the context menu items
       * @Default {[]}
       */
-    var subItems: js.UndefOr[js.Array[_]] = js.native
+    var subItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the text for the collection of context menu item
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ContextMenuItem {
     
@@ -4852,7 +5646,7 @@ object Diagram {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setSubItems(value: js.Array[_]): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
+      def setSubItems(value: js.Array[js.Any]): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubItemsUndefined: Self = StObject.set(x, "subItems", js.undefined)
@@ -4868,20 +5662,19 @@ object Diagram {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** Returns the diagram model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -4914,51 +5707,50 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DataSourceSettings extends StObject {
     
     /** Defines the data source either as a collection of objects or as an instance of ej.DataManager
       * @Default {null}
       */
-    var connectionDataSource: js.UndefOr[DataSourceSettingsConnectionDataSource] = js.native
+    var connectionDataSource: js.UndefOr[DataSourceSettingsConnectionDataSource] = js.undefined
     
     /** Specifies the method name which is used to get the updated data from client side to the server side
       * @Default {null}
       */
-    var crudAction: js.UndefOr[DataSourceSettingsCrudAction] = js.native
+    var crudAction: js.UndefOr[DataSourceSettingsCrudAction] = js.undefined
     
     /** Specifies the custom fields to get the updated data from client side to the server side
       * @Default {[]}
       */
-    var customFields: js.UndefOr[js.Array[_]] = js.native
+    var customFields: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the data source either as a collection of objects or as an instance of ej.DataManager
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the unique id of the data source items
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Defines the parent id of the data source item
       * @Default {''}
       */
-    var parent: js.UndefOr[String] = js.native
+    var parent: js.UndefOr[String] = js.undefined
     
     /** Describes query to retrieve a set of data from the specified datasource
       * @Default {null}
       */
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
     /** Sets the unique id of the root data source item
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /** Describes the name of the table on which the specified query has to be executed
       * @Default {null}
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
   }
   object DataSourceSettings {
     
@@ -4984,7 +5776,7 @@ object Diagram {
       def setCrudActionUndefined: Self = StObject.set(x, "crudAction", js.undefined)
       
       @scala.inline
-      def setCustomFields(value: js.Array[_]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+      def setCustomFields(value: js.Array[js.Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
@@ -5030,58 +5822,57 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DataSourceSettingsConnectionDataSource extends StObject {
     
     /** Specifies the method name which is used to get updated connectors from client side to the server side
       * @Default {null}
       */
-    var crudAction: js.UndefOr[DataSourceSettingsConnectionDataSourceCrudAction] = js.native
+    var crudAction: js.UndefOr[DataSourceSettingsConnectionDataSourceCrudAction] = js.undefined
     
     /** Specifies the custom fields to get the updated data from client side to the server side
       * @Default {[]}
       */
-    var customFields: js.UndefOr[js.Array[_]] = js.native
+    var customFields: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets the datasource for the connection datasource settings items.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[String] = js.native
+    var dataSource: js.UndefOr[String] = js.undefined
     
     /** Sets the unique id of the connection data source item
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Sets the source node of the connection data source item
       * @Default {null}
       */
-    var sourceNode: js.UndefOr[String] = js.native
+    var sourceNode: js.UndefOr[String] = js.undefined
     
     /** Sets the sourcePointX value of the connection data source item
       * @Default {null}
       */
-    var sourcePointX: js.UndefOr[String] = js.native
+    var sourcePointX: js.UndefOr[String] = js.undefined
     
     /** Sets the sourcePointY value of the connection data source item
       * @Default {null}
       */
-    var sourcePointY: js.UndefOr[String] = js.native
+    var sourcePointY: js.UndefOr[String] = js.undefined
     
     /** Sets the target node of the connection data source item
       * @Default {null}
       */
-    var targetNode: js.UndefOr[String] = js.native
+    var targetNode: js.UndefOr[String] = js.undefined
     
     /** Sets the targetPoint-x value of the connection data source item
       * @Default {null}
       */
-    var targetPointX: js.UndefOr[String] = js.native
+    var targetPointX: js.UndefOr[String] = js.undefined
     
     /** Sets the targetPoint-y value of the connection data source item
       * @Default {null}
       */
-    var targetPointY: js.UndefOr[String] = js.native
+    var targetPointY: js.UndefOr[String] = js.undefined
   }
   object DataSourceSettingsConnectionDataSource {
     
@@ -5101,7 +5892,7 @@ object Diagram {
       def setCrudActionUndefined: Self = StObject.set(x, "crudAction", js.undefined)
       
       @scala.inline
-      def setCustomFields(value: js.Array[_]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+      def setCustomFields(value: js.Array[js.Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
@@ -5159,28 +5950,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DataSourceSettingsConnectionDataSourceCrudAction extends StObject {
     
     /** Specifies the create method which is used to get the connectors to be added from client side to the server side
       * @Default {null}
       */
-    var create: js.UndefOr[String] = js.native
+    var create: js.UndefOr[String] = js.undefined
     
     /** Specifies the destroy method which is used to get the deleted items data from client side to the server side
       * @Default {null}
       */
-    var destroy: js.UndefOr[String] = js.native
+    var destroy: js.UndefOr[String] = js.undefined
     
     /** Specifies the read method which is used to get the data from client side to the server side
       * @Default {null}
       */
-    var read: js.UndefOr[String] = js.native
+    var read: js.UndefOr[String] = js.undefined
     
     /** Specifies the update method which is used to get the updated connectors from client side to the server side
       * @Default {null}
       */
-    var update: js.UndefOr[String] = js.native
+    var update: js.UndefOr[String] = js.undefined
   }
   object DataSourceSettingsConnectionDataSourceCrudAction {
     
@@ -5219,28 +6009,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DataSourceSettingsCrudAction extends StObject {
     
     /** Specifies the create method which is used to get the nodes to be added from client side to the server side
       * @Default {null}
       */
-    var create: js.UndefOr[String] = js.native
+    var create: js.UndefOr[String] = js.undefined
     
     /** Specifies the destroy method which is used to get the deleted items data from client side to the server side
       * @Default {null}
       */
-    var destroy: js.UndefOr[String] = js.native
+    var destroy: js.UndefOr[String] = js.undefined
     
     /** Specifies the read method to get the created nodes from client side to the server side
       * @Default {null}
       */
-    var read: js.UndefOr[String] = js.native
+    var read: js.UndefOr[String] = js.undefined
     
     /** Specifies the update method which is used to get the updated data from client side to the server side
       * @Default {null}
       */
-    var update: js.UndefOr[String] = js.native
+    var update: js.UndefOr[String] = js.undefined
   }
   object DataSourceSettingsCrudAction {
     
@@ -5279,23 +6068,22 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DefaultSettings extends StObject {
     
     /** Initializes the default connector properties
       * @Default {null}
       */
-    var connector: js.UndefOr[js.Any] = js.native
+    var connector: js.UndefOr[js.Any] = js.undefined
     
     /** Initializes the default properties of groups
       * @Default {null}
       */
-    var group: js.UndefOr[js.Any] = js.native
+    var group: js.UndefOr[js.Any] = js.undefined
     
     /** Initializes the default properties for nodes
       * @Default {null}
       */
-    var node: js.UndefOr[js.Any] = js.native
+    var node: js.UndefOr[js.Any] = js.undefined
   }
   object DefaultSettings {
     
@@ -5328,24 +6116,23 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** parameter returns the object that is actually clicked
       */
-    var actualObject: js.UndefOr[js.Any] = js.native
+    var actualObject: js.UndefOr[js.Any] = js.undefined
     
     /** parameter to specify whether or not to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the selected object
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -5384,20 +6171,19 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DragEnterEventArgs extends StObject {
     
     /** parameter returns whether to add or remove the symbol from diagram
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the node or connector that is dragged into diagram
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object DragEnterEventArgs {
     
@@ -5430,36 +6216,35 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DragEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the drag event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the state of drag event (Starting, dragging, completed)
       */
-    var dragState: js.UndefOr[String] = js.native
+    var dragState: js.UndefOr[String] = js.undefined
     
     /** parameter returns the node or connector that is being dragged
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the new position of the node/connector
       */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the offset of the selected items
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the previous position of the node/connector
       */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
   }
   object DragEventArgs {
     
@@ -5516,20 +6301,19 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DragLeaveEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the dragOver event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the node or connector that is dragged outside of the diagram
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object DragLeaveEventArgs {
     
@@ -5562,36 +6346,35 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DragOverEventArgs extends StObject {
     
     /** parameter defines whether the symbol can be dropped at the current mouse position
       */
-    var allowDrop: js.UndefOr[Boolean] = js.native
+    var allowDrop: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns whether or not to cancel the dragOver event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the node or connector that is dragged over diagram
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the new position of the node/connector
       */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the previous position of the node/connector
       */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the node/connector over which the symbol is dragged
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object DragOverEventArgs {
     
@@ -5648,32 +6431,31 @@ object Diagram {
     }
   }
   
-  @js.native
   trait DropEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the drop event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns node or connector that is being dropped
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the enum which defines the type of the source
       */
-    var objectType: js.UndefOr[String] = js.native
+    var objectType: js.UndefOr[String] = js.undefined
     
     /** parameter returns the object from where the element is dragged
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object over which the object will be dropped
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object DropEventArgs {
     
@@ -5724,24 +6506,23 @@ object Diagram {
     }
   }
   
-  @js.native
   trait EditorFocusChangeEventArgs extends StObject {
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the editor element
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the diagram model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object EditorFocusChangeEventArgs {
     
@@ -5780,44 +6561,43 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ExportImageSettings extends StObject {
     
     /** to export any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.native
+    var bounds: js.UndefOr[js.Any] = js.undefined
     
     /** name of the file to be downloaded.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** format of the exported file/data.
       */
-    var format: js.UndefOr[FileFormats] = js.native
+    var format: js.UndefOr[FileFormats] = js.undefined
     
     /** to set margin to the exported data.
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** to export the diagram into multiple pages
       */
-    var multiplePage: js.UndefOr[Boolean] = js.native
+    var multiplePage: js.UndefOr[Boolean] = js.undefined
     
     /** to set the page height of the diagram while exporting the diagram into multiple pages.
       */
-    var pageHeight: js.UndefOr[Double] = js.native
+    var pageHeight: js.UndefOr[Double] = js.undefined
     
     /** to sets the orientation of the page.
       */
-    var pageOrientation: js.UndefOr[PageOrientations] = js.native
+    var pageOrientation: js.UndefOr[PageOrientations] = js.undefined
     
     /** to set the page width of the diagram while exporting the diagram into multiple pages.
       */
-    var pageWidth: js.UndefOr[Double] = js.native
+    var pageWidth: js.UndefOr[Double] = js.undefined
     
     /** to set the region of the diagram to be exported.
       */
-    var region: js.UndefOr[Region] = js.native
+    var region: js.UndefOr[Region] = js.undefined
   }
   object ExportImageSettings {
     
@@ -5886,28 +6666,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait GroupChangeEventArgs extends StObject {
     
     /** parameter returns the cause of group change("group", unGroup")
       */
-    var cause: js.UndefOr[String] = js.native
+    var cause: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the object that is added to/removed from a group
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the new parent group(if any) of the object
       */
-    var newParent: js.UndefOr[js.Any] = js.native
+    var newParent: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the old parent group(if any) of the object
       */
-    var oldParent: js.UndefOr[js.Any] = js.native
+    var oldParent: js.UndefOr[js.Any] = js.undefined
   }
   object GroupChangeEventArgs {
     
@@ -5952,28 +6731,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait HistoryChangeEventArgs extends StObject {
     
     /** A collection of objects that are changed in the last undo/redo
       */
-    var Source: js.UndefOr[js.Array[_]] = js.native
+    var Source: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** parameter to specify whether or not to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the model of the diagram
       */
-    var cause: js.UndefOr[Boolean] = js.native
+    var cause: js.UndefOr[Boolean] = js.undefined
     
     /** An array of objects, where each object represents the changes made in last undo/redo. To explore how the changes are defined, refer [Undo Redo Changes](#undo-redo-changes)
       */
-    var changes: js.UndefOr[js.Array[_]] = js.native
+    var changes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
   }
   object HistoryChangeEventArgs {
     
@@ -5999,7 +6777,7 @@ object Diagram {
       def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
       @scala.inline
-      def setChanges(value: js.Array[_]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      def setChanges(value: js.Array[js.Any]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
@@ -6014,7 +6792,7 @@ object Diagram {
       def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
       @scala.inline
-      def setSource(value: js.Array[_]): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
@@ -6024,52 +6802,51 @@ object Diagram {
     }
   }
   
-  @js.native
   trait HistoryManager extends StObject {
     
     /** A method that takes a history entry as argument and returns whether the specific entry can be popped or not
       */
-    var canPop: js.UndefOr[js.Any] = js.native
+    var canPop: js.UndefOr[js.Any] = js.undefined
     
     /** A method that ends grouping the changes
       */
-    var closeGroupAction: js.UndefOr[js.Any] = js.native
+    var closeGroupAction: js.UndefOr[js.Any] = js.undefined
     
     /** A method that removes the history of a recent change made in diagram
       */
-    var pop: js.UndefOr[js.Any] = js.native
+    var pop: js.UndefOr[js.Any] = js.undefined
     
     /** A method that allows to track the custom changes made in diagram
       */
-    var push: js.UndefOr[js.Any] = js.native
+    var push: js.UndefOr[js.Any] = js.undefined
     
     /** Defines what should be happened while trying to restore a custom change
       * @Default {null}
       */
-    var redo: js.UndefOr[js.Any] = js.native
+    var redo: js.UndefOr[js.Any] = js.undefined
     
     /** The redoStack property is used to get the number of redo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
       * @Default {[]}
       */
-    var redoStack: js.UndefOr[js.Array[_]] = js.native
+    var redoStack: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** The stackLimit property used to restrict the undo and redo actions to a certain limit.
       * @Default {null}
       */
-    var stackLimit: js.UndefOr[Double] = js.native
+    var stackLimit: js.UndefOr[Double] = js.undefined
     
     /** A method that starts to group the changes to revert/restore them in a single undo or redo
       */
-    var startGroupAction: js.UndefOr[js.Any] = js.native
+    var startGroupAction: js.UndefOr[js.Any] = js.undefined
     
     /** Defines what should be happened while trying to revert a custom change
       */
-    var undo: js.UndefOr[js.Any] = js.native
+    var undo: js.UndefOr[js.Any] = js.undefined
     
     /** The undoStack property is used to get the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
       * @Default {[]}
       */
-    var undoStack: js.UndefOr[js.Array[_]] = js.native
+    var undoStack: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object HistoryManager {
     
@@ -6110,7 +6887,7 @@ object Diagram {
       def setRedo(value: js.Any): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRedoStack(value: js.Array[_]): Self = StObject.set(x, "redoStack", value.asInstanceOf[js.Any])
+      def setRedoStack(value: js.Array[js.Any]): Self = StObject.set(x, "redoStack", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRedoStackUndefined: Self = StObject.set(x, "redoStack", js.undefined)
@@ -6137,7 +6914,7 @@ object Diagram {
       def setUndo(value: js.Any): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUndoStack(value: js.Array[_]): Self = StObject.set(x, "undoStack", value.asInstanceOf[js.Any])
+      def setUndoStack(value: js.Array[js.Any]): Self = StObject.set(x, "undoStack", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUndoStackUndefined: Self = StObject.set(x, "undoStack", js.undefined)
@@ -6150,28 +6927,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ItemClickEventArgs extends StObject {
     
     /** parameter returns the object that was actually clicked
       */
-    var actualObject: js.UndefOr[js.Any] = js.native
+    var actualObject: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns whether or not to cancel the drop event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the model of the diagram
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object that is selected
       */
-    var selectedObject: js.UndefOr[js.Any] = js.native
+    var selectedObject: js.UndefOr[js.Any] = js.undefined
   }
   object ItemClickEventArgs {
     
@@ -6216,37 +6992,36 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Layer extends StObject {
     
     /** Enable or disable diagram objects to be added to the specific layer.
       * @Default {false}
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disable the interaction of the specific diagram objects.
       * @Default {false}
       */
-    var lock: js.UndefOr[Boolean] = js.native
+    var lock: js.UndefOr[Boolean] = js.undefined
     
     /** To specify the name of the diagram layer. Layer name should be unique.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** To Specify the collection of the object names belongs to the layer.
       * @Default {[]}
       */
-    var objects: js.UndefOr[js.Array[_]] = js.native
+    var objects: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Enable or disable the specific layer objects to be visible on printing or exporting.
       * @Default {true}
       */
-    var print: js.UndefOr[Boolean] = js.native
+    var print: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disable the specific layer objects to be visible.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Layer {
     
@@ -6278,7 +7053,7 @@ object Diagram {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setObjects(value: js.Array[_]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
@@ -6300,87 +7075,86 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Layout extends StObject {
     
     /** Enable or disable connector's segment overlapping with each other when executing the layout with multiple parents.
       * @Default {false}
       */
-    var avoidSegmentOverlapping: js.UndefOr[Boolean] = js.native
+    var avoidSegmentOverlapping: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the custom bounds to arrange/align the layout
       * @Default {ej.datavisualization.Diagram.Rectangle()}
       */
-    var bounds: js.UndefOr[js.Any] = js.native
+    var bounds: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
       */
-    var fixedNode: js.UndefOr[String] = js.native
+    var fixedNode: js.UndefOr[String] = js.undefined
     
     /** Defines a method to customize the segments based on source and target nodes.
       * @Default {null}
       */
-    var getConnectorSegments: js.UndefOr[js.Any] = js.native
+    var getConnectorSegments: js.UndefOr[js.Any] = js.undefined
     
     /** Customizes the orientation of trees/sub trees. For orientations, see Chart Orientations. For chart types, see Chart Types
       * @Default {null}
       */
-    var getLayoutInfo: js.UndefOr[js.Any] = js.native
+    var getLayoutInfo: js.UndefOr[js.Any] = js.undefined
     
     /** Defines how to horizontally align the layout within the layout bounds
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Sets the space to be horizontally left between nodes
       * @Default {30}
       */
-    var horizontalSpacing: js.UndefOr[Double] = js.native
+    var horizontalSpacing: js.UndefOr[Double] = js.undefined
     
     /** Defines the space to be left between layout bounds and layout.
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** Defines how long edges should be, ideally. This will be the resting length for the springs.
       * @Default {1000}
       */
-    var maxIteration: js.UndefOr[Double] = js.native
+    var maxIteration: js.UndefOr[Double] = js.undefined
     
     /** Sets the orientation/direction to arrange the diagram elements.
       * @Default {ej.datavisualization.Diagram.LayoutOrientations.TopToBottom}
       */
-    var orientation: js.UndefOr[LayoutOrientations | String] = js.native
+    var orientation: js.UndefOr[LayoutOrientations | String] = js.undefined
     
     /** Sets the value is used to define the root node of the layout.
       * @Default {30}
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /** Defines how long edges should be, ideally. This will be the resting length for the springs.
       * @Default {0.442}
       */
-    var springFactor: js.UndefOr[Double] = js.native
+    var springFactor: js.UndefOr[Double] = js.undefined
     
     /** Defines how long edges should be, ideally. This will be the resting length for the springs.
       * @Default {100}
       */
-    var springLength: js.UndefOr[Double] = js.native
+    var springLength: js.UndefOr[Double] = js.undefined
     
     /** Sets the type of the layout based on which the elements will be arranged.
       * @Default {ej.datavisualization.Diagram.LayoutTypes.None}
       */
-    var `type`: js.UndefOr[LayoutTypes | String] = js.native
+    var `type`: js.UndefOr[LayoutTypes | String] = js.undefined
     
     /** Defines how to vertically align the layout within the layout bounds
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Sets the space to be vertically left between nodes
       * @Default {30}
       */
-    var verticalSpacing: js.UndefOr[Double] = js.native
+    var verticalSpacing: js.UndefOr[Double] = js.undefined
   }
   object Layout {
     
@@ -6491,280 +7265,279 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers When auto scroll is changed
       */
-    var autoScrollChange: js.UndefOr[js.Function1[/* e */ AutoScrollChangeEventArgs, Unit]] = js.native
+    var autoScrollChange: js.UndefOr[js.Function1[/* e */ AutoScrollChangeEventArgs, Unit]] = js.undefined
     
     /** Defines the background color of diagram elements
       * @Default {transparent}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Defines the path of the background image of diagram elements
       */
-    var backgroundImage: js.UndefOr[String] = js.native
+    var backgroundImage: js.UndefOr[String] = js.undefined
     
     /** Sets the direction of line bridges.
       * @Default {ej.datavisualization.Diagram.BridgeDirection.Top}
       */
-    var bridgeDirection: js.UndefOr[BridgeDirection | String] = js.native
+    var bridgeDirection: js.UndefOr[BridgeDirection | String] = js.undefined
     
     /** Triggers when a node, connector or diagram is clicked
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Defines a set of custom commands and binds them with a set of desired key gestures.
       */
-    var commandManager: js.UndefOr[CommandManager] = js.native
+    var commandManager: js.UndefOr[CommandManager] = js.undefined
     
     /** Triggers when the connection is changed
       */
-    var connectionChange: js.UndefOr[js.Function1[/* e */ ConnectionChangeEventArgs, Unit]] = js.native
+    var connectionChange: js.UndefOr[js.Function1[/* e */ ConnectionChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the connector collection is changed
       */
-    var connectorCollectionChange: js.UndefOr[js.Function1[/* e */ ConnectorCollectionChangeEventArgs, Unit]] = js.native
+    var connectorCollectionChange: js.UndefOr[js.Function1[/* e */ ConnectorCollectionChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the connectors' source point is changed
       */
-    var connectorSourceChange: js.UndefOr[js.Function1[/* e */ ConnectorSourceChangeEventArgs, Unit]] = js.native
+    var connectorSourceChange: js.UndefOr[js.Function1[/* e */ ConnectorSourceChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the connectors' target point is changed
       */
-    var connectorTargetChange: js.UndefOr[js.Function1[/* e */ ConnectorTargetChangeEventArgs, Unit]] = js.native
+    var connectorTargetChange: js.UndefOr[js.Function1[/* e */ ConnectorTargetChangeEventArgs, Unit]] = js.undefined
     
     /** Binds the custom JSON data with connector properties
       * @Default {null}
       */
-    var connectorTemplate: js.UndefOr[js.Any] = js.native
+    var connectorTemplate: js.UndefOr[js.Any] = js.undefined
     
     /** A collection of JSON objects where each object represents a connector
       * @Default {[]}
       */
-    var connectors: js.UndefOr[js.Array[Connector]] = js.native
+    var connectors: js.UndefOr[js.Array[Connector]] = js.undefined
     
     /** Enables/Disables the default behaviors of the diagram.
       * @Default {ej.datavisualization.Diagram.DiagramConstraints.All}
       */
-    var constraints: js.UndefOr[DiagramConstraints | String] = js.native
+    var constraints: js.UndefOr[DiagramConstraints | String] = js.undefined
     
     /** An object to customize the context menu of diagram
       */
-    var contextMenu: js.UndefOr[ContextMenu] = js.native
+    var contextMenu: js.UndefOr[ContextMenu] = js.undefined
     
     /** Triggers before opening the context menu
       */
-    var contextMenuBeforeOpen: js.UndefOr[js.Function1[/* e */ ContextMenuBeforeOpenEventArgs, Unit]] = js.native
+    var contextMenuBeforeOpen: js.UndefOr[js.Function1[/* e */ ContextMenuBeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Triggers when a context menu item is clicked
       */
-    var contextMenuClick: js.UndefOr[js.Function1[/* e */ ContextMenuClickEventArgs, Unit]] = js.native
+    var contextMenuClick: js.UndefOr[js.Function1[/* e */ ContextMenuClickEventArgs, Unit]] = js.undefined
     
     /** Triggered when the diagram is rendered completely.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Configures the data source that is to be bound with diagram
       */
-    var dataSourceSettings: js.UndefOr[DataSourceSettings] = js.native
+    var dataSourceSettings: js.UndefOr[DataSourceSettings] = js.undefined
     
     /** Initializes the default values for nodes and connectors
       * @Default {{}}
       */
-    var defaultSettings: js.UndefOr[DefaultSettings] = js.native
+    var defaultSettings: js.UndefOr[DefaultSettings] = js.undefined
     
     /** Triggers when a node, connector or diagram model is clicked twice
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Triggers while dragging the elements in diagram
       */
-    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.native
+    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.undefined
     
     /** Triggers when a symbol is dragged into diagram from symbol palette
       */
-    var dragEnter: js.UndefOr[js.Function1[/* e */ DragEnterEventArgs, Unit]] = js.native
+    var dragEnter: js.UndefOr[js.Function1[/* e */ DragEnterEventArgs, Unit]] = js.undefined
     
     /** Triggers when a symbol is dragged outside of the diagram.
       */
-    var dragLeave: js.UndefOr[js.Function1[/* e */ DragLeaveEventArgs, Unit]] = js.native
+    var dragLeave: js.UndefOr[js.Function1[/* e */ DragLeaveEventArgs, Unit]] = js.undefined
     
     /** Triggers when a symbol is dragged over diagram
       */
-    var dragOver: js.UndefOr[js.Function1[/* e */ DragOverEventArgs, Unit]] = js.native
+    var dragOver: js.UndefOr[js.Function1[/* e */ DragOverEventArgs, Unit]] = js.undefined
     
     /** Sets the type of JSON object to be drawn through drawing tool
       * @Default {{}}
       */
-    var drawType: js.UndefOr[js.Any] = js.native
+    var drawType: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers when a symbol is dragged and dropped from symbol palette to drawing area
       */
-    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.native
+    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.undefined
     
     /** Triggers when editor got focus at the time of node's label or text node editing.
       */
-    var editorFocusChange: js.UndefOr[js.Function1[/* e */ EditorFocusChangeEventArgs, Unit]] = js.native
+    var editorFocusChange: js.UndefOr[js.Function1[/* e */ EditorFocusChangeEventArgs, Unit]] = js.undefined
     
     /** Enables or disables auto scroll in diagram
       * @Default {true}
       */
-    var enableAutoScroll: js.UndefOr[Boolean] = js.native
+    var enableAutoScroll: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables diagram context menu
       * @Default {true}
       */
-    var enableContextMenu: js.UndefOr[Boolean] = js.native
+    var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when a child is added to or removed from a group
       */
-    var groupChange: js.UndefOr[js.Function1[/* e */ GroupChangeEventArgs, Unit]] = js.native
+    var groupChange: js.UndefOr[js.Function1[/* e */ GroupChangeEventArgs, Unit]] = js.undefined
     
     /** Specifies the height of the diagram
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Triggers when a change is reverted or restored(undo/redo)
       */
-    var historyChange: js.UndefOr[js.Function1[/* e */ HistoryChangeEventArgs, Unit]] = js.native
+    var historyChange: js.UndefOr[js.Function1[/* e */ HistoryChangeEventArgs, Unit]] = js.undefined
     
     /** Customizes the undo redo functionality
       */
-    var historyManager: js.UndefOr[HistoryManager] = js.native
+    var historyManager: js.UndefOr[HistoryManager] = js.undefined
     
     /** Triggers when a diagram element is clicked
       */
-    var itemClick: js.UndefOr[js.Function1[/* e */ ItemClickEventArgs, Unit]] = js.native
+    var itemClick: js.UndefOr[js.Function1[/* e */ ItemClickEventArgs, Unit]] = js.undefined
     
     /** Defines the type of the rendering mode of label.
       * @Default {HTML}
       */
-    var labelRenderingMode: js.UndefOr[LabelRenderingMode | String] = js.native
+    var labelRenderingMode: js.UndefOr[LabelRenderingMode | String] = js.undefined
     
     /** A collection of JSON objects where each object represents a layer. Layer is a named category of diagram shapes.
       * @Default {[]}
       */
-    var layers: js.UndefOr[js.Array[Layer]] = js.native
+    var layers: js.UndefOr[js.Array[Layer]] = js.undefined
     
     /** Automatically arranges the nodes and connectors in a predefined manner.
       */
-    var layout: js.UndefOr[Layout] = js.native
+    var layout: js.UndefOr[Layout] = js.undefined
     
     /** Defines the current culture of diagram
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Triggers when mouse enters a node/connector
       */
-    var mouseEnter: js.UndefOr[js.Function1[/* e */ MouseEnterEventArgs, Unit]] = js.native
+    var mouseEnter: js.UndefOr[js.Function1[/* e */ MouseEnterEventArgs, Unit]] = js.undefined
     
     /** Triggers when mouse leaves node/connector
       */
-    var mouseLeave: js.UndefOr[js.Function1[/* e */ MouseLeaveEventArgs, Unit]] = js.native
+    var mouseLeave: js.UndefOr[js.Function1[/* e */ MouseLeaveEventArgs, Unit]] = js.undefined
     
     /** Triggers when mouse hovers over a node/connector
       */
-    var mouseOver: js.UndefOr[js.Function1[/* e */ MouseOverEventArgs, Unit]] = js.native
+    var mouseOver: js.UndefOr[js.Function1[/* e */ MouseOverEventArgs, Unit]] = js.undefined
     
     /** Triggers when node collection is changed
       */
-    var nodeCollectionChange: js.UndefOr[js.Function1[/* e */ NodeCollectionChangeEventArgs, Unit]] = js.native
+    var nodeCollectionChange: js.UndefOr[js.Function1[/* e */ NodeCollectionChangeEventArgs, Unit]] = js.undefined
     
     /** Binds the custom JSON data with node properties
       * @Default {null}
       */
-    var nodeTemplate: js.UndefOr[js.Any] = js.native
+    var nodeTemplate: js.UndefOr[js.Any] = js.undefined
     
     /** Array of JSON objects where each object represents a node
       * @Default {[]}
       */
-    var nodes: js.UndefOr[js.Array[Node]] = js.native
+    var nodes: js.UndefOr[js.Array[Node]] = js.undefined
     
     /** Defines the size and appearance of diagram page
       */
-    var pageSettings: js.UndefOr[PageSettings] = js.native
+    var pageSettings: js.UndefOr[PageSettings] = js.undefined
     
     /** Triggers when the node properties(x, y,width and height alone) are changed using nudge commands or updateNode API.
       */
-    var propertyChange: js.UndefOr[js.Function1[/* e */ PropertyChangeEventArgs, Unit]] = js.native
+    var propertyChange: js.UndefOr[js.Function1[/* e */ PropertyChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the diagram elements are rotated
       */
-    var rotationChange: js.UndefOr[js.Function1[/* e */ RotationChangeEventArgs, Unit]] = js.native
+    var rotationChange: js.UndefOr[js.Function1[/* e */ RotationChangeEventArgs, Unit]] = js.undefined
     
     /** Defines the properties of the both the horizontal and vertical gauge to measure the diagram area.
       */
-    var rulerSettings: js.UndefOr[RulerSettings] = js.native
+    var rulerSettings: js.UndefOr[RulerSettings] = js.undefined
     
     /** Triggers when the diagram is zoomed or panned
       */
-    var scrollChange: js.UndefOr[js.Function1[/* e */ ScrollChangeEventArgs, Unit]] = js.native
+    var scrollChange: js.UndefOr[js.Function1[/* e */ ScrollChangeEventArgs, Unit]] = js.undefined
     
     /** Defines the zoom value, zoom factor, scroll status and view port size of the diagram
       */
-    var scrollSettings: js.UndefOr[ScrollSettings] = js.native
+    var scrollSettings: js.UndefOr[ScrollSettings] = js.undefined
     
     /** Triggers when a connector segment is edited
       */
-    var segmentChange: js.UndefOr[js.Function1[/* e */ SegmentChangeEventArgs, Unit]] = js.native
+    var segmentChange: js.UndefOr[js.Function1[/* e */ SegmentChangeEventArgs, Unit]] = js.undefined
     
     /** Defines the size and position of selected items and defines the appearance of selector
       */
-    var selectedItems: js.UndefOr[SelectedItems] = js.native
+    var selectedItems: js.UndefOr[SelectedItems] = js.undefined
     
     /** Triggers when the selection is changed in diagram
       */
-    var selectionChange: js.UndefOr[js.Function1[/* e */ SelectionChangeEventArgs, Unit]] = js.native
+    var selectionChange: js.UndefOr[js.Function1[/* e */ SelectionChangeEventArgs, Unit]] = js.undefined
     
     /** Defines diagram serialization properties that would defines how the serialization content would be.
       */
-    var serializationSettings: js.UndefOr[SerializationSettings] = js.native
+    var serializationSettings: js.UndefOr[SerializationSettings] = js.undefined
     
     /** Used to decide on the action on Diagramming elements at runtime.
       */
-    var setTool: js.UndefOr[js.Function1[/* e */ SetToolEventArgs, Unit]] = js.native
+    var setTool: js.UndefOr[js.Function1[/* e */ SetToolEventArgs, Unit]] = js.undefined
     
     /** Enables or disables tooltip of diagram
       * @Default {true}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when a node is resized
       */
-    var sizeChange: js.UndefOr[js.Function1[/* e */ SizeChangeEventArgs, Unit]] = js.native
+    var sizeChange: js.UndefOr[js.Function1[/* e */ SizeChangeEventArgs, Unit]] = js.undefined
     
     /** Defines the gridlines and defines how and when the objects have to be snapped
       */
-    var snapSettings: js.UndefOr[SnapSettings] = js.native
+    var snapSettings: js.UndefOr[SnapSettings] = js.undefined
     
     /** Triggers when label editing is ended
       */
-    var textChange: js.UndefOr[js.Function1[/* e */ TextChangeEventArgs, Unit]] = js.native
+    var textChange: js.UndefOr[js.Function1[/* e */ TextChangeEventArgs, Unit]] = js.undefined
     
     /** Enables/Disables the interactive behaviors of diagram.
       * @Default {ej.datavisualization.Diagram.Tool.All}
       */
-    var tool: js.UndefOr[Tool | String] = js.native
+    var tool: js.UndefOr[Tool | String] = js.undefined
     
     /** An object that defines the description, appearance and alignments of tooltips
       * @Default {null}
       */
-    var tooltip: js.UndefOr[Tooltip] = js.native
+    var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Specifies the width of the diagram
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
     /** Sets the factor by which we can zoom in or zoom out
       * @Default {0.2}
       */
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -7166,28 +7939,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait MouseEnterEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the dragOver event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the target node or connector
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object from where the selected object is dragged
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the target object over which the selected object is dragged
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object MouseEnterEventArgs {
     
@@ -7232,28 +8004,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait MouseLeaveEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the dragOver event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the target node or connector
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object from where the selected object is dragged
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the target object over which the selected object is dragged
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object MouseLeaveEventArgs {
     
@@ -7298,28 +8069,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait MouseOverEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the dragOver event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the target node or connector
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object from where the element is dragged
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the object over which the element is being dragged.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object MouseOverEventArgs {
     
@@ -7364,372 +8134,371 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
     /** Defines the type of BPMN Activity. Applicable, if the node is a BPMN activity.
       * @Default {ej.datavisualization.Diagram.BPMNActivity.Task}
       */
-    var activity: js.UndefOr[BPMNActivity | String] = js.native
+    var activity: js.UndefOr[BPMNActivity | String] = js.undefined
     
     /** To maintain additional information about nodes
       * @Default {{}}
       */
-    var addInfo: js.UndefOr[js.Any] = js.native
+    var addInfo: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process.
       * @Default {ej.datavisualization.Diagram.BPMNTextAnnotation()}
       */
-    var annotation: js.UndefOr[NodesAnnotation] = js.native
+    var annotation: js.UndefOr[NodesAnnotation] = js.undefined
     
     /** Sets the border color of node
       * @Default {black}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the pattern of dashes and gaps to stroke the border
       */
-    var borderDashArray: js.UndefOr[String] = js.native
+    var borderDashArray: js.UndefOr[String] = js.undefined
     
     /** defines the node border with a smooth transition from one color to another color.
       * @Default {null}
       */
-    var borderGradient: js.UndefOr[js.Any] = js.native
+    var borderGradient: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the border width of the node
       * @Default {1}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines whether the group can be ungrouped or not
       * @Default {true}
       */
-    var canUngroup: js.UndefOr[Boolean] = js.native
+    var canUngroup: js.UndefOr[Boolean] = js.undefined
     
     /** Array of JSON objects where each object represents a child node/connector
       * @Default {[]}
       */
-    var children: js.UndefOr[js.Array[_]] = js.native
+    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the name, attributes and methods of a Class. Applicable, if the node is a Class.
       * @Default {null}
       */
-    var `class`: js.UndefOr[NodesClass] = js.native
+    var `class`: js.UndefOr[NodesClass] = js.undefined
     
     /** Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram shape.
       * @Default {ej.datavisualization.Diagram.ClassifierShapes.Class}
       */
-    var classifier: js.UndefOr[ClassifierShapes | String] = js.native
+    var classifier: js.UndefOr[ClassifierShapes | String] = js.undefined
     
     /** Defines the state of the node is collapsed.
       */
-    var collapseIcon: js.UndefOr[NodesCollapseIcon] = js.native
+    var collapseIcon: js.UndefOr[NodesCollapseIcon] = js.undefined
     
     /** Defines the distance to be left between a node and its connections(In coming and out going connections).
       * @Default {0}
       */
-    var connectorPadding: js.UndefOr[Double] = js.native
+    var connectorPadding: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the default behaviors of the node.
       * @Default {ej.datavisualization.Diagram.NodeConstraints.Default}
       */
-    var constraints: js.UndefOr[NodeConstraints | String] = js.native
+    var constraints: js.UndefOr[NodeConstraints | String] = js.undefined
     
     /** Defines how the child objects need to be arranged(Either in any predefined manner or automatically). Applicable, if the node is a group.
       * @Default {null}
       */
-    var container: js.UndefOr[NodesContainer] = js.native
+    var container: js.UndefOr[NodesContainer] = js.undefined
     
     /** Defines the corner radius of rectangular shapes.
       * @Default {0}
       */
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /** This property allows you to customize nodes appearance using user-defined CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the BPMN data object
       */
-    var data: js.UndefOr[NodesData] = js.native
+    var data: js.UndefOr[NodesData] = js.undefined
     
     /** Defines an Enumeration in a UML Class Diagram
       * @Default {null}
       */
-    var enumeration: js.UndefOr[NodesEnumeration] = js.native
+    var enumeration: js.UndefOr[NodesEnumeration] = js.undefined
     
     /** Sets the type of the BPMN Events. Applicable, if the node is a BPMN event.
       * @Default {ej.datavisualization.Diagram.BPMNEvents.Start}
       */
-    var event: js.UndefOr[BPMNEvents | String] = js.native
+    var event: js.UndefOr[BPMNEvents | String] = js.undefined
     
     /** Defines whether the node can be automatically arranged using layout or not
       * @Default {false}
       */
-    var excludeFromLayout: js.UndefOr[Boolean] = js.native
+    var excludeFromLayout: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the state of the node is expanded or collapsed.
       */
-    var expandIcon: js.UndefOr[NodesExpandIcon] = js.native
+    var expandIcon: js.UndefOr[NodesExpandIcon] = js.undefined
     
     /** Defines the fill color of the node
       * @Default {white}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway.
       * @Default {ej.datavisualization.Diagram.BPMNGateways.None}
       */
-    var gateway: js.UndefOr[BPMNGateways | String] = js.native
+    var gateway: js.UndefOr[BPMNGateways | String] = js.undefined
     
     /** Paints the node with a smooth transition from one color to another color
       */
-    var gradient: js.UndefOr[NodesGradient] = js.native
+    var gradient: js.UndefOr[NodesGradient] = js.undefined
     
     /** Defines the header of a swimlane/lane
       * @Default {{ text: Title, fontSize: 11 }}
       */
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the height of the node
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container.
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Left}
       */
-    var horizontalAlign: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlign: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** A read only collection of the incoming connectors/edges of the node
       * @Default {[]}
       */
-    var inEdges: js.UndefOr[js.Array[_]] = js.native
+    var inEdges: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines an interface in a UML Class Diagram
       * @Default {null}
       */
-    var interface: js.UndefOr[NodesInterface] = js.native
+    var interface: js.UndefOr[NodesInterface] = js.undefined
     
     /** Defines whether the sub tree of the node is expanded or collapsed
       * @Default {true}
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the node as a swimlane
       * @Default {false}
       */
-    var isSwimlane: js.UndefOr[Boolean] = js.native
+    var isSwimlane: js.UndefOr[Boolean] = js.undefined
     
     /** A collection of objects where each object represents a label
       * @Default {[]}
       */
-    var labels: js.UndefOr[js.Array[NodesLabel]] = js.native
+    var labels: js.UndefOr[js.Array[NodesLabel]] = js.undefined
     
     /** An array of objects where each object represents a lane. Applicable, if the node is a swimlane.
       * @Default {[]}
       */
-    var lanes: js.UndefOr[js.Array[NodesLane]] = js.native
+    var lanes: js.UndefOr[js.Array[NodesLane]] = js.undefined
     
     /** Defines the minimum space to be left between the bottom of parent bounds and the node. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginBottom: js.UndefOr[Double] = js.native
+    var marginBottom: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the left of parent bounds and the node. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginLeft: js.UndefOr[Double] = js.native
+    var marginLeft: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the right of the parent bounds and the node. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginRight: js.UndefOr[Double] = js.native
+    var marginRight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the top of parent bounds and the node. Applicable, if the parent is a container.
       * @Default {0}
       */
-    var marginTop: js.UndefOr[Double] = js.native
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     /** Defines the maximum height limit of the node
       * @Default {0}
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the maximum width limit of the node
       * @Default {0}
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum height limit of the node
       * @Default {0}
       */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum width limit of the node
       * @Default {0}
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the unique identifier of the node
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Defines the position of the node on X-Axis
       * @Default {0}
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /** Defines the position of the node on Y-Axis
       * @Default {0}
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     /** Defines the opaque of the node
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Defines the orientation of nodes. Applicable, if the node is a swimlane.
       * @Default {vertical}
       */
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
     /** A read only collection of outgoing connectors/edges of the node
       * @Default {[]}
       */
-    var outEdges: js.UndefOr[js.Array[_]] = js.native
+    var outEdges: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the minimum padding value to be left between the bottom most position of a group and its children. Applicable, if the group is a container.
       * @Default {0}
       */
-    var paddingBottom: js.UndefOr[Double] = js.native
+    var paddingBottom: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum padding value to be left between the left most position of a group and its children. Applicable, if the group is a container.
       * @Default {0}
       */
-    var paddingLeft: js.UndefOr[Double] = js.native
+    var paddingLeft: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum padding value to be left between the right most position of a group and its children. Applicable, if the group is a container.
       * @Default {0}
       */
-    var paddingRight: js.UndefOr[Double] = js.native
+    var paddingRight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum padding value to be left between the top most position of a group and its children. Applicable, if the group is a container.
       * @Default {0}
       */
-    var paddingTop: js.UndefOr[Double] = js.native
+    var paddingTop: js.UndefOr[Double] = js.undefined
     
     /** Defines the size and preview size of the node to add that to symbol palette
       * @Default {null}
       */
-    var paletteItem: js.UndefOr[NodesPaletteItem] = js.native
+    var paletteItem: js.UndefOr[NodesPaletteItem] = js.undefined
     
     /** Sets the name of the parent group
       */
-    var parent: js.UndefOr[String] = js.native
+    var parent: js.UndefOr[String] = js.undefined
     
     /** Sets the path geometry that defines the shape of a path node
       */
-    var pathData: js.UndefOr[String] = js.native
+    var pathData: js.UndefOr[String] = js.undefined
     
     /** Sets the height of the phase headers
       * @Default {0}
       */
-    var phaseSize: js.UndefOr[Double] = js.native
+    var phaseSize: js.UndefOr[Double] = js.undefined
     
     /** An array of objects, where each object represents a smaller region(phase) of a swimlane.
       * @Default {[]}
       */
-    var phases: js.UndefOr[js.Array[NodesPhase]] = js.native
+    var phases: js.UndefOr[js.Array[NodesPhase]] = js.undefined
     
     /** Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation)
       * @Default {ej.datavisualization.Diagram.Points(0.5,0.5)}
       */
-    var pivot: js.UndefOr[js.Any] = js.native
+    var pivot: js.UndefOr[js.Any] = js.undefined
     
     /** Defines a collection of points to draw a polygon. Applicable, if the shape is a polygon.
       * @Default {[]}
       */
-    var points: js.UndefOr[js.Array[_]] = js.native
+    var points: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** An array of objects where each object represents a port
       * @Default {[]}
       */
-    var ports: js.UndefOr[js.Array[NodesPort]] = js.native
+    var ports: js.UndefOr[js.Array[NodesPort]] = js.undefined
     
     /** Sets the angle to which the node should be rotated
       * @Default {0}
       */
-    var rotateAngle: js.UndefOr[Double] = js.native
+    var rotateAngle: js.UndefOr[Double] = js.undefined
     
     /** Defines the opacity and the position of shadow
       * @Default {ej.datavisualization.Diagram.Shadow()}
       */
-    var shadow: js.UndefOr[NodesShadow] = js.native
+    var shadow: js.UndefOr[NodesShadow] = js.undefined
     
     /** Sets the shape of the node. It depends upon the type of node.
       * @Default {ej.datavisualization.Diagram.BasicShapes.Rectangle}
       */
-    var shape: js.UndefOr[BasicShapes | FlowShapes | BPMNShapes | UMLActivityShapes | String] = js.native
+    var shape: js.UndefOr[BasicShapes | FlowShapes | BPMNShapes | UMLActivityShapes | String] = js.undefined
     
     /** Sets the source path of the image. Applicable, if the type of the node is image.
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /** Defines the sub process of a BPMN Activity. Applicable, if the type of the BPMN activity is sub process.
       * @Default {ej.datavisualization.Diagram.BPMNSubProcess()}
       */
-    var subProcess: js.UndefOr[NodesSubProcess] = js.native
+    var subProcess: js.UndefOr[NodesSubProcess] = js.undefined
     
     /** Defines the task of the BPMN activity. Applicable, if the type of activity is set as task.
       * @Default {ej.datavisualization.Diagram.BPMNTask()}
       */
-    var task: js.UndefOr[NodesTask] = js.native
+    var task: js.UndefOr[NodesTask] = js.undefined
     
     /** Sets the id of svg/html templates. Applicable, if the node is HTML or native.
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
     
     /** Defines the textBlock of a text node
       * @Default {null}
       */
-    var textBlock: js.UndefOr[js.Any] = js.native
+    var textBlock: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over node. For tooltip properties, refer Tooltip
       * @Default {null}
       */
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the type of BPMN Event Triggers.
       * @Default {ej.datavisualization.Diagram.BPMNTriggers.None}
       */
-    var trigger: js.UndefOr[BPMNTriggers | String] = js.native
+    var trigger: js.UndefOr[BPMNTriggers | String] = js.undefined
     
     /** Defines the type of the node.
       * @Default {ej.datavisualization.Diagram.Shapes.Basic}
       */
-    var `type`: js.UndefOr[Shapes | String] = js.native
+    var `type`: js.UndefOr[Shapes | String] = js.undefined
     
     /** Sets the vertical alignment of a node. Applicable, if the parent of a node is a container.
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Top}
       */
-    var verticalAlign: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlign: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Defines the visibility of the node
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the width of the node
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Defines the z-index of the node
       * @Default {0}
       */
-    var zOrder: js.UndefOr[Double] = js.native
+    var zOrder: js.UndefOr[Double] = js.undefined
   }
   object Node {
     
@@ -7791,7 +8560,7 @@ object Diagram {
       def setCanUngroupUndefined: Self = StObject.set(x, "canUngroup", js.undefined)
       
       @scala.inline
-      def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -7914,7 +8683,7 @@ object Diagram {
       def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
       
       @scala.inline
-      def setInEdges(value: js.Array[_]): Self = StObject.set(x, "inEdges", value.asInstanceOf[js.Any])
+      def setInEdges(value: js.Array[js.Any]): Self = StObject.set(x, "inEdges", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInEdgesUndefined: Self = StObject.set(x, "inEdges", js.undefined)
@@ -8037,7 +8806,7 @@ object Diagram {
       def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
       @scala.inline
-      def setOutEdges(value: js.Array[_]): Self = StObject.set(x, "outEdges", value.asInstanceOf[js.Any])
+      def setOutEdges(value: js.Array[js.Any]): Self = StObject.set(x, "outEdges", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOutEdgesUndefined: Self = StObject.set(x, "outEdges", js.undefined)
@@ -8109,7 +8878,7 @@ object Diagram {
       def setPivotUndefined: Self = StObject.set(x, "pivot", js.undefined)
       
       @scala.inline
-      def setPoints(value: js.Array[_]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
@@ -8218,28 +8987,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodeCollectionChangeEventArgs extends StObject {
     
     /** parameter defines whether to cancel the collection change or not
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns whether the node is to be added or removed
       */
-    var changeType: js.UndefOr[String] = js.native
+    var changeType: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the node which needs to be added or deleted
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** triggers before and after adding the node in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the node
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object NodeCollectionChangeEventArgs {
     
@@ -8284,37 +9052,36 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesAnnotation extends StObject {
     
     /** Sets the angle between the BPMN shape and the annotation
       * @Default {0}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Sets the direction of the text annotation
       * @Default {ej.datavisualization.Diagram.BPMNAnnotationDirections.Left}
       */
-    var direction: js.UndefOr[BPMNAnnotationDirection | String] = js.native
+    var direction: js.UndefOr[BPMNAnnotationDirection | String] = js.undefined
     
     /** Sets the height of the text annotation
       * @Default {20}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the distance between the BPMN shape and the annotation
       * @Default {0}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Defines the additional information about the flow object in a BPMN Process
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Sets the  width of the text annotation
       * @Default {20}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object NodesAnnotation {
     
@@ -8365,22 +9132,21 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesClass extends StObject {
     
     /** Defines the collection of attributes
       * @Default {[]}
       */
-    var attributes: js.UndefOr[js.Array[NodesClassAttribute]] = js.native
+    var attributes: js.UndefOr[js.Array[NodesClassAttribute]] = js.undefined
     
     /** Defines the collection of methods of a Class.
       * @Default {[]}
       */
-    var methods: js.UndefOr[js.Array[NodesClassMethod]] = js.native
+    var methods: js.UndefOr[js.Array[NodesClassMethod]] = js.undefined
     
     /** Sets the name of class.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object NodesClass {
     
@@ -8419,21 +9185,20 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesClassAttribute extends StObject {
     
     /** Sets the name of the attribute
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Defines the visibility of the attribute
       * @Default {ej.datavisualization.Diagram.ScopeValueDefaults.Public}
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /** Sets the data type of attribute
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodesClassAttribute {
     
@@ -8466,13 +9231,12 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesClassMethod extends StObject {
     
     /** Sets the visibility of the method.
       * @Default {ej.datavisualization.Diagram.ScopeValueDefaults.Public}
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object NodesClassMethod {
     
@@ -8493,53 +9257,52 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesCollapseIcon extends StObject {
     
     /** Sets the border color for collapse icon of node
       * @Default {black}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width for collapse icon of node
       * @Default {1}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the fill color for collapse icon of node
       * @Default {white}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the height for collapse icon of node
       * @Default {15}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the icon.
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** To set the margin for the collapse icon of node
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the icon
       * @Default {ej.datavisualization.Diagram.Point(0.5, 1)}
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the shape of the collapsed state of the node.
       * @Default {ej.datavisualization.Diagram.IconShapes.None}
       */
-    var shape: js.UndefOr[IconShapes | String] = js.native
+    var shape: js.UndefOr[IconShapes | String] = js.undefined
     
     /** Sets the vertical alignment of the icon.
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
   }
   object NodesCollapseIcon {
     
@@ -8608,18 +9371,17 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesContainer extends StObject {
     
     /** Defines the orientation of the container. Applicable, if the group is a container.
       * @Default {vertical}
       */
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
     /** Sets the type of the container. Applicable if the group is a container.
       * @Default {ej.datavisualization.Diagram.ContainerType.Canvas}
       */
-    var `type`: js.UndefOr[ContainerType | String] = js.native
+    var `type`: js.UndefOr[ContainerType | String] = js.undefined
   }
   object NodesContainer {
     
@@ -8646,18 +9408,17 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesData extends StObject {
     
     /** Defines whether the BPMN data object is a collection or not
       * @Default {false}
       */
-    var collection: js.UndefOr[Boolean] = js.native
+    var collection: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the type of the BPMN Data object
       * @Default {ej.datavisualization.Diagram.BPMNDataObjects.None}
       */
-    var `type`: js.UndefOr[BPMNDataObjects | String] = js.native
+    var `type`: js.UndefOr[BPMNDataObjects | String] = js.undefined
   }
   object NodesData {
     
@@ -8684,17 +9445,16 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesEnumeration extends StObject {
     
     /** Defines the collection of enumeration members
       * @Default {[]}
       */
-    var members: js.UndefOr[js.Array[NodesEnumerationMember]] = js.native
+    var members: js.UndefOr[js.Array[NodesEnumerationMember]] = js.undefined
     
     /** Sets the name of the Enumeration
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object NodesEnumeration {
     
@@ -8724,12 +9484,11 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesEnumerationMember extends StObject {
     
     /** Sets the name of the enumeration member
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object NodesEnumerationMember {
     
@@ -8750,53 +9509,52 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesExpandIcon extends StObject {
     
     /** Sets the border color for expand icon of node
       * @Default {black}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width for expand icon of node
       * @Default {1}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the fill color for expand icon of node
       * @Default {white}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the height for expand icon of node
       * @Default {15}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the icon.
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** To set the margin for the expand icon of node
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the icon
       * @Default {ej.datavisualization.Diagram.Point(0.5, 1)}
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the shape of the expanded state of the node.
       * @Default {ej.datavisualization.Diagram.IconShapes.None}
       */
-    var shape: js.UndefOr[IconShapes | String] = js.native
+    var shape: js.UndefOr[IconShapes | String] = js.undefined
     
     /** Sets the vertical alignment of the icon.
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
   }
   object NodesExpandIcon {
     
@@ -8865,20 +9623,19 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesGradient extends StObject {
     
     /** Paints the node with linear color transitions
       */
-    var LinearGradient: js.UndefOr[NodesGradientLinearGradient] = js.native
+    var LinearGradient: js.UndefOr[NodesGradientLinearGradient] = js.undefined
     
     /** Paints the node with radial color transitions. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.
       */
-    var RadialGradient: js.UndefOr[NodesGradientRadialGradient] = js.native
+    var RadialGradient: js.UndefOr[NodesGradientRadialGradient] = js.undefined
     
     /** Defines the color and a position where the previous color transition ends and a new color transition starts
       */
-    var Stop: js.UndefOr[NodesGradientStop] = js.native
+    var Stop: js.UndefOr[NodesGradientStop] = js.undefined
   }
   object NodesGradient {
     
@@ -8911,38 +9668,37 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesGradientLinearGradient extends StObject {
     
     /** Defines the different colors and the region of color transitions
       * @Default {[]}
       */
-    var stops: js.UndefOr[js.Array[_]] = js.native
+    var stops: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the type of gradient
       * @Default {linear}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Defines the left most position(relative to node) of the rectangular region that needs to be painted
       * @Default {0}
       */
-    var x1: js.UndefOr[Double] = js.native
+    var x1: js.UndefOr[Double] = js.undefined
     
     /** Defines the right most position(relative to node) of the rectangular region that needs to be painted
       * @Default {0}
       */
-    var x2: js.UndefOr[Double] = js.native
+    var x2: js.UndefOr[Double] = js.undefined
     
     /** Defines the top most position(relative to node) of the rectangular region that needs to be painted
       * @Default {0}
       */
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
     
     /** Defines the bottom most position(relative to node) of the rectangular region that needs to be painted
       * @Default {0}
       */
-    var y2: js.UndefOr[Double] = js.native
+    var y2: js.UndefOr[Double] = js.undefined
   }
   object NodesGradientLinearGradient {
     
@@ -8956,7 +9712,7 @@ object Diagram {
     implicit class NodesGradientLinearGradientMutableBuilder[Self <: NodesGradientLinearGradient] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setStops(value: js.Array[_]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+      def setStops(value: js.Array[js.Any]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
@@ -8996,38 +9752,37 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesGradientRadialGradient extends StObject {
     
     /** Defines the position of the outermost circle
       * @Default {0}
       */
-    var cx: js.UndefOr[Double] = js.native
+    var cx: js.UndefOr[Double] = js.undefined
     
     /** Defines the outer most circle of the radial gradient
       * @Default {0}
       */
-    var cy: js.UndefOr[Double] = js.native
+    var cy: js.UndefOr[Double] = js.undefined
     
     /** Defines the innermost circle of the radial gradient
       * @Default {0}
       */
-    var fx: js.UndefOr[Double] = js.native
+    var fx: js.UndefOr[Double] = js.undefined
     
     /** Defines the innermost circle of the radial gradient
       * @Default {0}
       */
-    var fy: js.UndefOr[Double] = js.native
+    var fy: js.UndefOr[Double] = js.undefined
     
     /** Defines the different colors and the region of color transitions.
       * @Default {[]}
       */
-    var stops: js.UndefOr[js.Array[_]] = js.native
+    var stops: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the type of gradient
       * @Default {radial}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodesGradientRadialGradient {
     
@@ -9065,7 +9820,7 @@ object Diagram {
       def setFyUndefined: Self = StObject.set(x, "fy", js.undefined)
       
       @scala.inline
-      def setStops(value: js.Array[_]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+      def setStops(value: js.Array[js.Any]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
@@ -9081,22 +9836,21 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesGradientStop extends StObject {
     
     /** Sets the color to be filled over the specified region
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Sets the position where the previous color transition ends and a new color transition starts
       * @Default {0}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Describes the transparency level of the region
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object NodesGradientStop {
     
@@ -9129,22 +9883,21 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesInterface extends StObject {
     
     /** Defines a collection of attributes of the interface
       * @Default {[]}
       */
-    var attributes: js.UndefOr[js.Array[NodesInterfaceAttribute]] = js.native
+    var attributes: js.UndefOr[js.Array[NodesInterfaceAttribute]] = js.undefined
     
     /** Defines the collection of public methods of an interface
       * @Default {[]}
       */
-    var methods: js.UndefOr[js.Array[NodesInterfaceMethod]] = js.native
+    var methods: js.UndefOr[js.Array[NodesInterfaceMethod]] = js.undefined
     
     /** Sets the name of the interface
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object NodesInterface {
     
@@ -9183,20 +9936,19 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesInterfaceAttribute extends StObject {
     
     /** Sets the name of the attribute
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the visibility of the attribute
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /** Sets the type of the attribute
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodesInterfaceAttribute {
     
@@ -9229,12 +9981,11 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesInterfaceMethod extends StObject {
     
     /** Sets the visibility of the method
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object NodesInterfaceMethod {
     
@@ -9255,154 +10006,153 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesLabel extends StObject {
     
     /** Enables/disables the bold style
       * @Default {false}
       */
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the border color of the label
       * @Default {transparent}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of the label
       * @Default {0}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the default behaviors of the label.
       * @Default {ej.datavisualization.Diagram.LabelConstraints.None}
       */
-    var constraints: js.UndefOr[LabelConstraints | String] = js.native
+    var constraints: js.UndefOr[LabelConstraints | String] = js.undefined
     
     /** This property allows you to customize labels appearance using user-defined CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the fill color of the text area
       * @Default {transparent}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font color of the text
       * @Default {black}
       */
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font family of the text
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Defines the font size of the text
       * @Default {12}
       */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the height of the label(the maximum value of label height and the node height will be considered as label height)
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the label.
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Enables/disables the italic style
       * @Default {false}
       */
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
     /** To set the margin of the label
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** Gets whether the label is currently being edited or not.
       * @Default {ej.datavisualization.Diagram.LabelEditMode.Edit}
       */
-    var mode: js.UndefOr[LabelEditMode | String] = js.native
+    var mode: js.UndefOr[LabelEditMode | String] = js.undefined
     
     /** Sets the unique identifier of the label
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the label
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the transparency of the labels
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Sets the overflowType of the labels
       * @Default {ej.datavisualization.Diagram.OverflowType.Ellipsis}
       */
-    var overflowType: js.UndefOr[OverflowType | String] = js.native
+    var overflowType: js.UndefOr[OverflowType | String] = js.undefined
     
     /** To set the padding of the node label
       * @Default {ej.datavisualization.Diagram.Padding()}
       */
-    var padding: js.UndefOr[js.Any] = js.native
+    var padding: js.UndefOr[js.Any] = js.undefined
     
     /** Defines whether the label is editable or not
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the angle to which the label needs to be rotated
       * @Default {0}
       */
-    var rotateAngle: js.UndefOr[Double] = js.native
+    var rotateAngle: js.UndefOr[Double] = js.undefined
     
     /** Sets the id of svg/html templates. Applicable, if the node's label is HTML or native.
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
     
     /** Defines the label text
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Defines how to align the text inside the label.
       * @Default {ej.datavisualization.Diagram.TextAlign.Center}
       */
-    var textAlign: js.UndefOr[typings.ejWebAll.ej.TextAlign | String] = js.native
+    var textAlign: js.UndefOr[typings.ejWebAll.ej.TextAlign | String] = js.undefined
     
     /** Sets how to decorate the label text.
       * @Default {ej.datavisualization.Diagram.TextDecorations.None}
       */
-    var textDecoration: js.UndefOr[TextDecorations | String] = js.native
+    var textDecoration: js.UndefOr[TextDecorations | String] = js.undefined
     
     /** Defines the overflowed content is displayed or not.
       * @Default {false}
       */
-    var textOverflow: js.UndefOr[Boolean] = js.native
+    var textOverflow: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the vertical alignment of the label.
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Enables or disables the visibility of the label
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the width of the label(the maximum value of label width and the node width will be considered as label width)
       * @Default {50}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Defines how the label text needs to be wrapped.
       * @Default {ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow}
       */
-    var wrapping: js.UndefOr[TextWrapping | String] = js.native
+    var wrapping: js.UndefOr[TextWrapping | String] = js.undefined
   }
   object NodesLabel {
     
@@ -9597,61 +10347,60 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesLane extends StObject {
     
     /** Allows to maintain additional information about lane
       * @Default {{}}
       */
-    var addInfo: js.UndefOr[js.Any] = js.native
+    var addInfo: js.UndefOr[js.Any] = js.undefined
     
     /** An array of objects where each object represents a child node of the lane
       * @Default {[]}
       */
-    var children: js.UndefOr[js.Array[_]] = js.native
+    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** This property allows you to customize lanes appearance using user-defined CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the fill color of the lane
       * @Default {white}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the header of the lane
       * @Default {{ text: Function, fontSize: 11 }}
       */
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the height of lane
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Defines the object as a lane
       * @Default {false}
       */
-    var isLane: js.UndefOr[Boolean] = js.native
+    var isLane: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the unique identifier of the lane
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the orientation of the lane.
       * @Default {vertical}
       */
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
     /** Defines the width of lane
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** Defines the z-index of the lane
       * @Default {0}
       */
-    var zorder: js.UndefOr[Double] = js.native
+    var zorder: js.UndefOr[Double] = js.undefined
   }
   object NodesLane {
     
@@ -9671,7 +10420,7 @@ object Diagram {
       def setAddInfoUndefined: Self = StObject.set(x, "addInfo", js.undefined)
       
       @scala.inline
-      def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -9735,43 +10484,42 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesPaletteItem extends StObject {
     
     /** Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not
       * @Default {true}
       */
-    var enableScale: js.UndefOr[Boolean] = js.native
+    var enableScale: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the height of the symbol
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** To display a name for nodes in the symbol palette
       * @Default {null}
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** Defines the margin of the symbol item
       * @Default {{ left: 4, right: 4, top: 4, bottom: 4 }}
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the preview height of the symbol
       * @Default {undefined}
       */
-    var previewHeight: js.UndefOr[Double] = js.native
+    var previewHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the preview width of the symbol
       * @Default {undefined}
       */
-    var previewWidth: js.UndefOr[Double] = js.native
+    var previewWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the symbol
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object NodesPaletteItem {
     
@@ -9828,47 +10576,46 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesPhase extends StObject {
     
     /** Defines the header of the smaller regions
       * @Default {null}
       */
-    var label: js.UndefOr[js.Any] = js.native
+    var label: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the line color of the splitter that splits adjacent phases.
       * @Default {#606060}
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /** Sets the dash array that used to stroke the phase splitter
       * @Default {3,3}
       */
-    var lineDashArray: js.UndefOr[String] = js.native
+    var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** Sets the lineWidth of the phase
       * @Default {1}
       */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the unique identifier of the phase
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the length of the smaller region(phase) of a swimlane
       * @Default {100}
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** Sets the orientation of the phase
       * @Default {horizontal}
       */
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
     /** Sets the type of the object as phase
       * @Default {phase}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodesPhase {
     
@@ -9931,69 +10678,68 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesPort extends StObject {
     
     /** Sets the border color of the port
       * @Default {#1a1a1a}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the stroke width of the port
       * @Default {1}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the space to be left between the port bounds and its incoming and outgoing connections.
       * @Default {0}
       */
-    var connectorPadding: js.UndefOr[Double] = js.native
+    var connectorPadding: js.UndefOr[Double] = js.undefined
     
     /** Defines whether connections can be created with the port
       * @Default {ej.datavisualization.Diagram.PortConstraints.Connect}
       */
-    var constraints: js.UndefOr[PortConstraints | String] = js.native
+    var constraints: js.UndefOr[PortConstraints | String] = js.undefined
     
     /** This property allows you to customize ports appearance using user-defined CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the fill color of the port
       * @Default {white}
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the unique identifier of the port
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Defines the position of the port as fraction/ ratio relative to node
       * @Default {ej.datavisualization.Diagram.Point(0, 0)}
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the name of the node which contains this port.
       */
-    var parent: js.UndefOr[String] = js.native
+    var parent: js.UndefOr[String] = js.undefined
     
     /** Defines the path data to draw the port. Applicable, if the port shape is path.
       */
-    var pathData: js.UndefOr[String] = js.native
+    var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the shape of the port.
       * @Default {ej.datavisualization.Diagram.PortShapes.Square}
       */
-    var shape: js.UndefOr[PortShapes | String] = js.native
+    var shape: js.UndefOr[PortShapes | String] = js.undefined
     
     /** Defines the size of the port
       * @Default {8}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Defines when the port should be visible.
       * @Default {ej.datavisualization.Diagram.PortVisibility.Default}
       */
-    var visibility: js.UndefOr[PortVisibility | String] = js.native
+    var visibility: js.UndefOr[PortVisibility | String] = js.undefined
   }
   object NodesPort {
     
@@ -10086,23 +10832,22 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesShadow extends StObject {
     
     /** Defines the angle of the shadow relative to node
       * @Default {45}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Sets the distance to move the shadow relative to node
       * @Default {5}
       */
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
     /** Defines the opaque of the shadow
       * @Default {0.7}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object NodesShadow {
     
@@ -10135,57 +10880,56 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesSubProcess extends StObject {
     
     /** Defines the children for BPMN's SubProcess
       * @Default {[]}
       */
-    var Processes: js.UndefOr[js.Array[_]] = js.native
+    var Processes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines whether the BPMN sub process is without any prescribed order or not
       * @Default {false}
       */
-    var adhoc: js.UndefOr[Boolean] = js.native
+    var adhoc: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the boundary of the BPMN process
       * @Default {ej.datavisualization.Diagram.BPMNBoundary.Default}
       */
-    var boundary: js.UndefOr[BPMNBoundary | String] = js.native
+    var boundary: js.UndefOr[BPMNBoundary | String] = js.undefined
     
     /** Sets whether the BPMN subprocess is triggered as a collapsed of a specific activity
       * @Default {true}
       */
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the BPMN subprocess is triggered as a compensation of a specific activity
       * @Default {false}
       */
-    var compensation: js.UndefOr[Boolean] = js.native
+    var compensation: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the type of the event by which the sub-process will be triggered
       * @Default {ej.datavisualization.Diagram.BPMNEvents.Start}
       */
-    var event: js.UndefOr[BPMNEvents | String] = js.native
+    var event: js.UndefOr[BPMNEvents | String] = js.undefined
     
     /** Defines the collection of events that need to be appended with BPMN Sub-Process
       */
-    var events: js.UndefOr[js.Array[NodesSubProcessEvent]] = js.native
+    var events: js.UndefOr[js.Array[NodesSubProcessEvent]] = js.undefined
     
     /** Defines the loop type of a sub process.
       * @Default {ej.datavisualization.Diagram.BPMNLoops.None}
       */
-    var loop: js.UndefOr[BPMNLoops | String] = js.native
+    var loop: js.UndefOr[BPMNLoops | String] = js.undefined
     
     /** Defines the type of the event trigger
       * @Default {ej.datavisualization.Diagram.BPMNTriggers.Message}
       */
-    var trigger: js.UndefOr[BPMNTriggers | String] = js.native
+    var trigger: js.UndefOr[BPMNTriggers | String] = js.undefined
     
     /** Defines the type of a sub process
       * @Default {ej.datavisualization.Diagram.BPMNSubProcessTypes.None}
       */
-    var `type`: js.UndefOr[BPMNSubProcessTypes | String] = js.native
+    var `type`: js.UndefOr[BPMNSubProcessTypes | String] = js.undefined
   }
   object NodesSubProcess {
     
@@ -10244,7 +10988,7 @@ object Diagram {
       def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
       @scala.inline
-      def setProcesses(value: js.Array[_]): Self = StObject.set(x, "Processes", value.asInstanceOf[js.Any])
+      def setProcesses(value: js.Array[js.Any]): Self = StObject.set(x, "Processes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProcessesUndefined: Self = StObject.set(x, "Processes", js.undefined)
@@ -10266,37 +11010,36 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesSubProcessEvent extends StObject {
     
     /** Sets the type of the event by which the sub-process will be triggered
       * @Default {ej.datavisualization.Diagram.BPMNEvents.Start}
       */
-    var event: js.UndefOr[BPMNEvents | String] = js.native
+    var event: js.UndefOr[BPMNEvents | String] = js.undefined
     
     /** A collection of objects where each object represents a label
       * @Default {[]}
       */
-    var labels: js.UndefOr[js.Array[_]] = js.native
+    var labels: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets the name of the BPMN event shape.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to parent) that defines the position of the event shape
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** An array of objects where each object represents a port
       * @Default {[]}
       */
-    var ports: js.UndefOr[js.Array[_]] = js.native
+    var ports: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Defines the type of the event trigger
       * @Default {ej.datavisualization.Diagram.BPMNTriggers.Message}
       */
-    var trigger: js.UndefOr[BPMNTriggers | String] = js.native
+    var trigger: js.UndefOr[BPMNTriggers | String] = js.undefined
   }
   object NodesSubProcessEvent {
     
@@ -10316,7 +11059,7 @@ object Diagram {
       def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
       @scala.inline
-      def setLabels(value: js.Array[_]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -10337,7 +11080,7 @@ object Diagram {
       def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
       @scala.inline
-      def setPorts(value: js.Array[_]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+      def setPorts(value: js.Array[js.Any]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
@@ -10353,32 +11096,31 @@ object Diagram {
     }
   }
   
-  @js.native
   trait NodesTask extends StObject {
     
     /** To set whether the task is a global task or not
       * @Default {false}
       */
-    var call: js.UndefOr[Boolean] = js.native
+    var call: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the task is triggered as a compensation of another specific activity
       * @Default {false}
       */
-    var compensation: js.UndefOr[Boolean] = js.native
+    var compensation: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the collection of events that need to be appended with BPMN tasks
       */
-    var events: js.UndefOr[js.Array[_]] = js.native
+    var events: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets the loop type of a BPMN task.
       * @Default {ej.datavisualization.Diagram.BPMNLoops.None}
       */
-    var loop: js.UndefOr[BPMNLoops | String] = js.native
+    var loop: js.UndefOr[BPMNLoops | String] = js.undefined
     
     /** Sets the type of the BPMN task.
       * @Default {ej.datavisualization.Diagram.BPMNTasks.None}
       */
-    var `type`: js.UndefOr[BPMNTasks | String] = js.native
+    var `type`: js.UndefOr[BPMNTasks | String] = js.undefined
   }
   object NodesTask {
     
@@ -10404,7 +11146,7 @@ object Diagram {
       def setCompensationUndefined: Self = StObject.set(x, "compensation", js.undefined)
       
       @scala.inline
-      def setEvents(value: js.Array[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -10426,52 +11168,51 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** to export any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.native
+    var bounds: js.UndefOr[js.Any] = js.undefined
     
     /** name of the file to be downloaded.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** format of the exported file/data.
       */
-    var format: js.UndefOr[FileFormats] = js.native
+    var format: js.UndefOr[FileFormats] = js.undefined
     
     /** to set margin to the exported data.
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** to set whether to export diagram as a file or as raw data.
       */
-    var mode: js.UndefOr[ExportModes] = js.native
+    var mode: js.UndefOr[ExportModes] = js.undefined
     
     /** to export the diagram into multiple pages
       */
-    var multiplePage: js.UndefOr[Boolean] = js.native
+    var multiplePage: js.UndefOr[Boolean] = js.undefined
     
     /** to set the page height of the diagram while exporting the diagram into multiple pages.
       */
-    var pageHeight: js.UndefOr[Double] = js.native
+    var pageHeight: js.UndefOr[Double] = js.undefined
     
     /** to sets the orientation of the page.
       */
-    var pageOrientation: js.UndefOr[PageOrientations] = js.native
+    var pageOrientation: js.UndefOr[PageOrientations] = js.undefined
     
     /** to set the page width of the diagram while exporting the diagram into multiple pages.
       */
-    var pageWidth: js.UndefOr[Double] = js.native
+    var pageWidth: js.UndefOr[Double] = js.undefined
     
     /** to set the region of the diagram to be exported.
       */
-    var region: js.UndefOr[Region] = js.native
+    var region: js.UndefOr[Region] = js.undefined
     
     /** to resize the diagram content to fill its allocated space.
       */
-    var stretch: js.UndefOr[Stretch] = js.native
+    var stretch: js.UndefOr[Stretch] = js.undefined
   }
   object Options {
     
@@ -10552,73 +11293,72 @@ object Diagram {
     }
   }
   
-  @js.native
   trait PageSettings extends StObject {
     
     /** Defines the maximum distance to be left between the object and the scroll bar to trigger auto scrolling
       * @Default {{ left: 15, top: 15, right: 15, bottom: 15 }}
       */
-    var autoScrollBorder: js.UndefOr[js.Any] = js.native
+    var autoScrollBorder: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the draggable region of diagram elements.
       * @Default {ej.datavisualization.Diagram.BoundaryConstraints.Infinite}
       */
-    var boundaryConstraints: js.UndefOr[BoundaryConstraints | String] = js.native
+    var boundaryConstraints: js.UndefOr[BoundaryConstraints | String] = js.undefined
     
     /** Sets whether multiple pages can be created to fit all nodes and connectors
       * @Default {false}
       */
-    var multiplePage: js.UndefOr[Boolean] = js.native
+    var multiplePage: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the background color of diagram pages
       * @Default {#ffffff}
       */
-    var pageBackgroundColor: js.UndefOr[String] = js.native
+    var pageBackgroundColor: js.UndefOr[String] = js.undefined
     
     /** Defines the page border color
       * @Default {#565656}
       */
-    var pageBorderColor: js.UndefOr[String] = js.native
+    var pageBorderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of diagram pages
       * @Default {0}
       */
-    var pageBorderWidth: js.UndefOr[Double] = js.native
+    var pageBorderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of a page
       * @Default {null}
       */
-    var pageHeight: js.UndefOr[Double] = js.native
+    var pageHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the page margin
       * @Default {24}
       */
-    var pageMargin: js.UndefOr[Double] = js.native
+    var pageMargin: js.UndefOr[Double] = js.undefined
     
     /** Sets the orientation of the page.
       * @Default {ej.datavisualization.Diagram.PageOrientations.Portrait}
       */
-    var pageOrientation: js.UndefOr[PageOrientations | String] = js.native
+    var pageOrientation: js.UndefOr[PageOrientations | String] = js.undefined
     
     /** Defines the height of a diagram page
       * @Default {null}
       */
-    var pageWidth: js.UndefOr[Double] = js.native
+    var pageWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the scrollable region of diagram.
       * @Default {ej.datavisualization.Diagram.ScrollLimit.Infinite}
       */
-    var scrollLimit: js.UndefOr[ScrollLimit | String] = js.native
+    var scrollLimit: js.UndefOr[ScrollLimit | String] = js.undefined
     
     /** Defines the scrollable area of diagram. Applicable, if the scroll limit is &quot;limited&quot;.
       * @Default {null}
       */
-    var scrollableArea: js.UndefOr[js.Any] = js.native
+    var scrollableArea: js.UndefOr[js.Any] = js.undefined
     
     /** Enables or disables the page breaks
       * @Default {false}
       */
-    var showPageBreak: js.UndefOr[Boolean] = js.native
+    var showPageBreak: js.UndefOr[Boolean] = js.undefined
   }
   object PageSettings {
     
@@ -10711,32 +11451,31 @@ object Diagram {
     }
   }
   
-  @js.native
   trait PrintImageSettings extends StObject {
     
     /** to print any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.native
+    var bounds: js.UndefOr[js.Any] = js.undefined
     
     /** to export the diagram into multiple pages
       */
-    var multiplePage: js.UndefOr[Boolean] = js.native
+    var multiplePage: js.UndefOr[Boolean] = js.undefined
     
     /** to set the page height of the diagram while printing the diagram into multiple pages.
       */
-    var pageHeight: js.UndefOr[Double] = js.native
+    var pageHeight: js.UndefOr[Double] = js.undefined
     
     /** to sets the orientation of the page.
       */
-    var pageOrientation: js.UndefOr[PageOrientations] = js.native
+    var pageOrientation: js.UndefOr[PageOrientations] = js.undefined
     
     /** to set the page width of the diagram while printing the diagram into multiple pages.
       */
-    var pageWidth: js.UndefOr[Double] = js.native
+    var pageWidth: js.UndefOr[Double] = js.undefined
     
     /** to set the region of the diagram to be printed.
       */
-    var region: js.UndefOr[Region] = js.native
+    var region: js.UndefOr[Region] = js.undefined
   }
   object PrintImageSettings {
     
@@ -10787,36 +11526,35 @@ object Diagram {
     }
   }
   
-  @js.native
   trait PrintSettings extends StObject {
     
     /** to print any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.native
+    var bounds: js.UndefOr[js.Any] = js.undefined
     
     /** to print the diagram into multiple pages
       */
-    var multiplePage: js.UndefOr[Boolean] = js.native
+    var multiplePage: js.UndefOr[Boolean] = js.undefined
     
     /** to set the page height of the diagram while printing the diagram into multiple pages.
       */
-    var pageHeight: js.UndefOr[Double] = js.native
+    var pageHeight: js.UndefOr[Double] = js.undefined
     
     /** to sets the orientation of the page.
       */
-    var pageOrientation: js.UndefOr[PageOrientations] = js.native
+    var pageOrientation: js.UndefOr[PageOrientations] = js.undefined
     
     /** to set the page width of the diagram while printing the diagram into multiple pages.
       */
-    var pageWidth: js.UndefOr[Double] = js.native
+    var pageWidth: js.UndefOr[Double] = js.undefined
     
     /** to set the region of the diagram to be printed.
       */
-    var region: js.UndefOr[Region] = js.native
+    var region: js.UndefOr[Region] = js.undefined
     
     /** to resize the diagram content to fill its allocated space and printed.
       */
-    var stretch: js.UndefOr[Stretch] = js.native
+    var stretch: js.UndefOr[Stretch] = js.undefined
   }
   object PrintSettings {
     
@@ -10873,36 +11611,35 @@ object Diagram {
     }
   }
   
-  @js.native
   trait PropertyChangeEventArgs extends StObject {
     
     /** parameter defines whether to cancel the property change or not
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the action is nudge or not
       */
-    var cause: js.UndefOr[String] = js.native
+    var cause: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the selected element
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the new value of the node property that is being changed
       */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the old value of the property that is being changed
       */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the name of the property that is changed
       */
-    var propertyName: js.UndefOr[String] = js.native
+    var propertyName: js.UndefOr[String] = js.undefined
   }
   object PropertyChangeEventArgs {
     
@@ -10959,32 +11696,31 @@ object Diagram {
     }
   }
   
-  @js.native
   trait RotationChangeEventArgs extends StObject {
     
     /** parameter to specify whether or not to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the actual click event arguments that explains which button is clicked
       */
-    var cause: js.UndefOr[String] = js.native
+    var cause: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the node that is rotated
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the new rotation angle
       */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the previous rotation angle
       */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
   }
   object RotationChangeEventArgs {
     
@@ -11035,21 +11771,20 @@ object Diagram {
     }
   }
   
-  @js.native
   trait RulerSettings extends StObject {
     
     /** Defines the appearance of horizontal ruler
       */
-    var horizontalRuler: js.UndefOr[RulerSettingsHorizontalRuler] = js.native
+    var horizontalRuler: js.UndefOr[RulerSettingsHorizontalRuler] = js.undefined
     
     /** Enables or disables both the horizontal and vertical ruler.
       * @Default {false}
       */
-    var showRulers: js.UndefOr[Boolean] = js.native
+    var showRulers: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the appearance of vertical ruler
       */
-    var verticalRuler: js.UndefOr[RulerSettingsVerticalRuler] = js.native
+    var verticalRuler: js.UndefOr[RulerSettingsVerticalRuler] = js.undefined
   }
   object RulerSettings {
     
@@ -11082,43 +11817,42 @@ object Diagram {
     }
   }
   
-  @js.native
   trait RulerSettingsHorizontalRuler extends StObject {
     
     /** Defines the method which used to position and arrange the tick elements of the horizontal ruler.
       * @Default {null}
       */
-    var arrangeTick: js.UndefOr[js.Any] = js.native
+    var arrangeTick: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the number of intervals to be present on the each segment of the horizontal ruler.
       * @Default {5}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the horizontal ruler.
       * @Default {null}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Defines the color of the horizontal marker brush.
       * @Default {red}
       */
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
     /** Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the horizontal ruler.
       * @Default {100}
       */
-    var segmentWidth: js.UndefOr[Double] = js.native
+    var segmentWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the horizontal ruler.
       * @Default {25}
       */
-    var thickness: js.UndefOr[Double] = js.native
+    var thickness: js.UndefOr[Double] = js.undefined
     
     /** Defines and sets the tick alignment of the ruler scale.
       * @Default {ej.datavisualization.Diagram.TickAlignment.RightOrBottom}
       */
-    var tickAlignment: js.UndefOr[TickAlignment | String] = js.native
+    var tickAlignment: js.UndefOr[TickAlignment | String] = js.undefined
   }
   object RulerSettingsHorizontalRuler {
     
@@ -11175,43 +11909,42 @@ object Diagram {
     }
   }
   
-  @js.native
   trait RulerSettingsVerticalRuler extends StObject {
     
     /** Defines the method which used to position and arrange the tick elements of the vertical ruler.
       * @Default {null}
       */
-    var arrangeTick: js.UndefOr[js.Any] = js.native
+    var arrangeTick: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the number of intervals to be present on the each segment of the vertical ruler.
       * @Default {5}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the vertical ruler.
       * @Default {null}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Defines the color of the vertical marker brush.
       * @Default {red}
       */
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
     /** Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the vertical ruler.
       * @Default {100}
       */
-    var segmentWidth: js.UndefOr[Double] = js.native
+    var segmentWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the vertical ruler.
       * @Default {25}
       */
-    var thickness: js.UndefOr[Double] = js.native
+    var thickness: js.UndefOr[Double] = js.undefined
     
     /** Defines and sets the tick alignment of the ruler scale.
       * @Default {ej.datavisualization.Diagram.TickAlignment.RightOrBottom}
       */
-    var tickAlignment: js.UndefOr[TickAlignment | String] = js.native
+    var tickAlignment: js.UndefOr[TickAlignment | String] = js.undefined
   }
   object RulerSettingsVerticalRuler {
     
@@ -11268,28 +12001,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ScrollChangeEventArgs extends StObject {
     
     /** parameter returns whether or not to cancel the dragOver event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Parameter returns the new zoom value, horizontal and vertical scroll offsets.
       */
-    var cause: js.UndefOr[String] = js.native
+    var cause: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** Parameter returns the new zoom value, horizontal and vertical scroll offsets.
       */
-    var newValues: js.UndefOr[js.Any] = js.native
+    var newValues: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the previous zoom value, horizontal and vertical scroll offsets.
       */
-    var oldValues: js.UndefOr[js.Any] = js.native
+    var oldValues: js.UndefOr[js.Any] = js.undefined
   }
   object ScrollChangeEventArgs {
     
@@ -11334,38 +12066,37 @@ object Diagram {
     }
   }
   
-  @js.native
   trait ScrollSettings extends StObject {
     
     /** Allows to read the zoom value of diagram
       * @Default {0}
       */
-    var currentZoom: js.UndefOr[Double] = js.native
+    var currentZoom: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal scroll offset
       * @Default {0}
       */
-    var horizontalOffset: js.UndefOr[Double] = js.native
+    var horizontalOffset: js.UndefOr[Double] = js.undefined
     
     /** Allows to extend the scrollable region that is based on the scroll limit
       * @Default {{left: 0, right: 0, top:0, bottom: 0}}
       */
-    var padding: js.UndefOr[js.Any] = js.native
+    var padding: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the vertical scroll offset
       * @Default {0}
       */
-    var verticalOffset: js.UndefOr[Double] = js.native
+    var verticalOffset: js.UndefOr[Double] = js.undefined
     
     /** Allows to read the view port height of the diagram
       * @Default {0}
       */
-    var viewPortHeight: js.UndefOr[Double] = js.native
+    var viewPortHeight: js.UndefOr[Double] = js.undefined
     
     /** Allows to read the view port width of the diagram
       * @Default {0}
       */
-    var viewPortWidth: js.UndefOr[Double] = js.native
+    var viewPortWidth: js.UndefOr[Double] = js.undefined
   }
   object ScrollSettings {
     
@@ -11416,28 +12147,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SegmentChangeEventArgs extends StObject {
     
     /** parameter to specify whether or not to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the state of editing (starting, dragging, completed)
       */
-    var dragState: js.UndefOr[String] = js.native
+    var dragState: js.UndefOr[String] = js.undefined
     
     /** Parameter returns the connector that is being edited
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the current mouse position
       */
-    var point: js.UndefOr[js.Any] = js.native
+    var point: js.UndefOr[js.Any] = js.undefined
   }
   object SegmentChangeEventArgs {
     
@@ -11482,58 +12212,57 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SelectedItems extends StObject {
     
     /** A read only collection of the selected items
       * @Default {[]}
       */
-    var children: js.UndefOr[js.Array[_]] = js.native
+    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Controls the visibility of selector.
       * @Default {ej.datavisualization.Diagram.SelectorConstraints.All}
       */
-    var constraints: js.UndefOr[SelectorConstraints | String] = js.native
+    var constraints: js.UndefOr[SelectorConstraints | String] = js.undefined
     
     /** Defines a method that dynamically enables/ disables the interaction with multiple selection.
       * @Default {null}
       */
-    var getConstraints: js.UndefOr[js.Any] = js.native
+    var getConstraints: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the height of the selected items
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the x position of the selector
       * @Default {0}
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /** Sets the y position of the selector
       * @Default {0}
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     /** Sets the angle to rotate the selected items
       * @Default {0}
       */
-    var rotateAngle: js.UndefOr[Double] = js.native
+    var rotateAngle: js.UndefOr[Double] = js.undefined
     
     /** Sets the angle to rotate the selected items. For tooltip properties, refer Tooltip
       * @Default {ej.datavisualization.Diagram.Tooltip()}
       */
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
     /** A collection of frequently used commands that will be added around the selector
       * @Default {[]}
       */
-    var userHandles: js.UndefOr[js.Array[SelectedItemsUserHandle]] = js.native
+    var userHandles: js.UndefOr[js.Array[SelectedItemsUserHandle]] = js.undefined
     
     /** Sets the width of the selected items
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SelectedItems {
     
@@ -11547,7 +12276,7 @@ object Diagram {
     implicit class SelectedItemsMutableBuilder[Self <: SelectedItems] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -11614,75 +12343,74 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SelectedItemsUserHandle extends StObject {
     
     /** Defines the background color of the user handle
       * @Default {#2382c3}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border color of the user handle
       * @Default {transparent}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Defines whether the user handle should be added, when more than one element is selected
       * @Default {false}
       */
-    var enableMultiSelection: js.UndefOr[Boolean] = js.native
+    var enableMultiSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the horizontal alignment of the user handle
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
-    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** To set the margin of the user handle
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** Defines the name of the user handle
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the user handle
       * @Default {ej.datavisualization.Diagram.point(0.5, 1)}
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the stroke color of the user handle
       * @Default {transparent}
       */
-    var pathColor: js.UndefOr[String] = js.native
+    var pathColor: js.UndefOr[String] = js.undefined
     
     /** Defines the custom shape of the user handle
       */
-    var pathData: js.UndefOr[String] = js.native
+    var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the position of the user handle
       * @Default {ej.datavisualization.Diagram.UserHandlePositions.BottomCenter}
       */
-    var position: js.UndefOr[UserHandlePositions | String] = js.native
+    var position: js.UndefOr[UserHandlePositions | String] = js.undefined
     
     /** Defines the size of the user handle
       * @Default {8}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Defines the interactive behaviors of the user handle
       */
-    var tool: js.UndefOr[js.Any] = js.native
+    var tool: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the vertical alignment of the user handle
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Defines the visibility of the user handle
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SelectedItemsUserHandle {
     
@@ -11781,45 +12509,44 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SelectionChangeEventArgs extends StObject {
     
     /** parameter to specify whether or not to cancel the selection change event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the actual cause of the event
       */
-    var cause: js.UndefOr[String] = js.native
+    var cause: js.UndefOr[String] = js.undefined
     
     /** parameter returns whether the item is selected or removed selection
       */
-    var changeType: js.UndefOr[String] = js.native
+    var changeType: js.UndefOr[String] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the item which is selected or to be selected
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the collection of nodes and connectors that have to be added to selection list
       */
-    var newItems: js.UndefOr[js.Array[_]] = js.native
+    var newItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** parameter returns the collection of nodes and connectors that have to be removed from selection list
       */
-    var oldItems: js.UndefOr[js.Array[_]] = js.native
+    var oldItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** parameter returns the collection of nodes and connectors that will be selected after selection change
       */
-    var selectedItems: js.UndefOr[js.Array[_]] = js.native
+    var selectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** triggers before and after adding the selection to the object in the diagram which can be differentiated through `state` argument. We can cancel the event only before the selection
       * of the object.
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object SelectionChangeEventArgs {
     
@@ -11863,7 +12590,7 @@ object Diagram {
       def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
       @scala.inline
-      def setNewItems(value: js.Array[_]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
+      def setNewItems(value: js.Array[js.Any]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNewItemsUndefined: Self = StObject.set(x, "newItems", js.undefined)
@@ -11872,7 +12599,7 @@ object Diagram {
       def setNewItemsVarargs(value: js.Any*): Self = StObject.set(x, "newItems", js.Array(value :_*))
       
       @scala.inline
-      def setOldItems(value: js.Array[_]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
+      def setOldItems(value: js.Array[js.Any]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOldItemsUndefined: Self = StObject.set(x, "oldItems", js.undefined)
@@ -11881,7 +12608,7 @@ object Diagram {
       def setOldItemsVarargs(value: js.Any*): Self = StObject.set(x, "oldItems", js.Array(value :_*))
       
       @scala.inline
-      def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
@@ -11897,13 +12624,12 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SerializationSettings extends StObject {
     
     /** defines whether the default diagram properties can be serialized or not.
       * @Default {false}
       */
-    var preventDefaultValues: js.UndefOr[Boolean] = js.native
+    var preventDefaultValues: js.UndefOr[Boolean] = js.undefined
   }
   object SerializationSettings {
     
@@ -11924,16 +12650,15 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SetToolEventArgs extends StObject {
     
     /** Defines the tool to be activated.
       */
-    var action: js.UndefOr[ActiveTool] = js.native
+    var action: js.UndefOr[ActiveTool] = js.undefined
     
     /** Returns the port when mouse move over on it
       */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
   }
   object SetToolEventArgs {
     
@@ -11960,40 +12685,39 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SizeChangeEventArgs extends StObject {
     
     /** parameter to cancel the size change
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the direction of the node is resized
       */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** parameter returns node that was resized
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the new width, height, offsetX and offsetY values of the element that is being resized
       */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the difference between new and old value
       */
-    var offset: js.UndefOr[js.Any] = js.native
+    var offset: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized
       */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the state of resizing(starting,resizing,completed)
       */
-    var resizeState: js.UndefOr[String] = js.native
+    var resizeState: js.UndefOr[String] = js.undefined
   }
   object SizeChangeEventArgs {
     
@@ -12056,35 +12780,34 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SnapSettings extends StObject {
     
     /** Enables or disables snapping nodes/connectors to objects
       * @Default {true}
       */
-    var enableSnapToObject: js.UndefOr[Boolean] = js.native
+    var enableSnapToObject: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the appearance of horizontal gridlines
       */
-    var horizontalGridLines: js.UndefOr[SnapSettingsHorizontalGridLines] = js.native
+    var horizontalGridLines: js.UndefOr[SnapSettingsHorizontalGridLines] = js.undefined
     
     /** Defines the angle by which the object needs to be snapped
       * @Default {5}
       */
-    var snapAngle: js.UndefOr[Double] = js.native
+    var snapAngle: js.UndefOr[Double] = js.undefined
     
     /** Defines and sets the snapConstraints
       */
-    var snapConstraints: js.UndefOr[SnapConstraints | String] = js.native
+    var snapConstraints: js.UndefOr[SnapConstraints | String] = js.undefined
     
     /** Defines the minimum distance between the selected object and the nearest object
       * @Default {5}
       */
-    var snapObjectDistance: js.UndefOr[Double] = js.native
+    var snapObjectDistance: js.UndefOr[Double] = js.undefined
     
     /** Defines the appearance of horizontal gridlines
       */
-    var verticalGridLines: js.UndefOr[SnapSettingsVerticalGridLines] = js.native
+    var verticalGridLines: js.UndefOr[SnapSettingsVerticalGridLines] = js.undefined
   }
   object SnapSettings {
     
@@ -12135,27 +12858,26 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SnapSettingsHorizontalGridLines extends StObject {
     
     /** Defines the line color of horizontal grid lines
       * @Default {lightgray}
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
       */
-    var lineDashArray: js.UndefOr[String] = js.native
+    var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** A pattern of lines and gaps that defines a set of horizontal gridlines
       * @Default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
       */
-    var linesInterval: js.UndefOr[js.Array[_]] = js.native
+    var linesInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies a set of intervals to snap the objects
       * @Default {[20]}
       */
-    var snapInterval: js.UndefOr[js.Array[_]] = js.native
+    var snapInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object SnapSettingsHorizontalGridLines {
     
@@ -12181,7 +12903,7 @@ object Diagram {
       def setLineDashArrayUndefined: Self = StObject.set(x, "lineDashArray", js.undefined)
       
       @scala.inline
-      def setLinesInterval(value: js.Array[_]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
+      def setLinesInterval(value: js.Array[js.Any]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLinesIntervalUndefined: Self = StObject.set(x, "linesInterval", js.undefined)
@@ -12190,7 +12912,7 @@ object Diagram {
       def setLinesIntervalVarargs(value: js.Any*): Self = StObject.set(x, "linesInterval", js.Array(value :_*))
       
       @scala.inline
-      def setSnapInterval(value: js.Array[_]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
+      def setSnapInterval(value: js.Array[js.Any]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSnapIntervalUndefined: Self = StObject.set(x, "snapInterval", js.undefined)
@@ -12200,27 +12922,26 @@ object Diagram {
     }
   }
   
-  @js.native
   trait SnapSettingsVerticalGridLines extends StObject {
     
     /** Defines the line color of horizontal grid lines
       * @Default {lightgray}
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
       */
-    var lineDashArray: js.UndefOr[String] = js.native
+    var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** A pattern of lines and gaps that defines a set of horizontal gridlines
       * @Default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
       */
-    var linesInterval: js.UndefOr[js.Array[_]] = js.native
+    var linesInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies a set of intervals to snap the objects
       * @Default {[20]}
       */
-    var snapInterval: js.UndefOr[js.Array[_]] = js.native
+    var snapInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object SnapSettingsVerticalGridLines {
     
@@ -12246,7 +12967,7 @@ object Diagram {
       def setLineDashArrayUndefined: Self = StObject.set(x, "lineDashArray", js.undefined)
       
       @scala.inline
-      def setLinesInterval(value: js.Array[_]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
+      def setLinesInterval(value: js.Array[js.Any]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLinesIntervalUndefined: Self = StObject.set(x, "linesInterval", js.undefined)
@@ -12255,7 +12976,7 @@ object Diagram {
       def setLinesIntervalVarargs(value: js.Any*): Self = StObject.set(x, "linesInterval", js.Array(value :_*))
       
       @scala.inline
-      def setSnapInterval(value: js.Array[_]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
+      def setSnapInterval(value: js.Array[js.Any]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSnapIntervalUndefined: Self = StObject.set(x, "snapInterval", js.undefined)
@@ -12265,28 +12986,27 @@ object Diagram {
     }
   }
   
-  @js.native
   trait TextChangeEventArgs extends StObject {
     
     /** parameter to specify whether or not to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** parameter returns the id of the diagram
       */
-    var diagramId: js.UndefOr[String] = js.native
+    var diagramId: js.UndefOr[String] = js.undefined
     
     /** parameter returns the node that contains the text being edited
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** parameter returns the keyCode of the key entered
       */
-    var keyCode: js.UndefOr[String] = js.native
+    var keyCode: js.UndefOr[String] = js.undefined
     
     /** parameter returns the new text
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object TextChangeEventArgs {
     
@@ -12331,26 +13051,25 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Tooltip extends StObject {
     
     /** Aligns the tooltip around nodes/connectors
       */
-    var alignment: js.UndefOr[TooltipAlignment] = js.native
+    var alignment: js.UndefOr[TooltipAlignment] = js.undefined
     
     /** Sets the margin of the tooltip
       * @Default {{ left: 5, right: 5, top: 5, bottom: 5 }}
       */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** Defines whether the tooltip should be shown at the mouse position or around node.
       * @Default {ej.datavisualization.Diagram.RelativeMode.Object}
       */
-    var relativeMode: js.UndefOr[RelativeMode | String] = js.native
+    var relativeMode: js.UndefOr[RelativeMode | String] = js.undefined
     
     /** Sets the svg/html template to be bound with tooltip
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
   }
   object Tooltip {
     
@@ -12389,18 +13108,17 @@ object Diagram {
     }
   }
   
-  @js.native
   trait TooltipAlignment extends StObject {
     
     /** Defines the horizontal alignment of tooltip.
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
-    var horizontal: js.UndefOr[HorizontalAlignment | String] = js.native
+    var horizontal: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Defines the vertical alignment of tooltip.
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Bottom}
       */
-    var vertical: js.UndefOr[VerticalAlignment | String] = js.native
+    var vertical: js.UndefOr[VerticalAlignment | String] = js.undefined
   }
   object TooltipAlignment {
     
@@ -12427,20 +13145,19 @@ object Diagram {
     }
   }
   
-  @js.native
   trait Zoom extends StObject {
     
     /** Used to zoom-in or zoom-out the diagram based on the point.
       */
-    var focusPoint: js.UndefOr[ConnectorsSourcePoint] = js.native
+    var focusPoint: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Used to zoom-in or zoom-out the diagram.
       */
-    var zoomCommand: js.UndefOr[ZoomCommand] = js.native
+    var zoomCommand: js.UndefOr[ZoomCommand] = js.undefined
     
     /** Used to increase the zoom-in or zoom-out based on the zoom factor value.
       */
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
   }
   object Zoom {
     

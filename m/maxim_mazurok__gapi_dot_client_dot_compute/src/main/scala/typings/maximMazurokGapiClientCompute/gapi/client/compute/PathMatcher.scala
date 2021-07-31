@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathMatcher extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PathMatcher extends StObject {
     * Only one of defaultRouteAction or defaultUrlRedirect must be set.
     * UrlMaps for external HTTP(S) load balancers support only the urlRewrite action within a pathMatcher's defaultRouteAction.
     */
-  var defaultRouteAction: js.UndefOr[HttpRouteAction] = js.native
+  var defaultRouteAction: js.UndefOr[HttpRouteAction] = js.undefined
   
   /**
     * The full or partial URL to the BackendService resource. This will be used if none of the pathRules or routeRules defined by this PathMatcher are matched. For example, the following
@@ -30,17 +28,17 @@ trait PathMatcher extends StObject {
     * - compute.backendBuckets.use
     * - compute.backendServices.use
     */
-  var defaultService: js.UndefOr[String] = js.native
+  var defaultService: js.UndefOr[String] = js.undefined
   
   /**
     * When none of the specified pathRules or routeRules match, the request is redirected to a URL specified by defaultUrlRedirect.
     * If defaultUrlRedirect is specified, defaultService or defaultRouteAction must not be set.
     * Not supported when the URL map is bound to target gRPC proxy.
     */
-  var defaultUrlRedirect: js.UndefOr[HttpRedirectAction] = js.native
+  var defaultUrlRedirect: js.UndefOr[HttpRedirectAction] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies changes to request and response headers that need to take effect for the selected backendService.
@@ -48,10 +46,10 @@ trait PathMatcher extends StObject {
     * Note that headerAction is not supported for Loadbalancers that have their loadBalancingScheme set to EXTERNAL.
     * Not supported when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
     */
-  var headerAction: js.UndefOr[HttpHeaderAction] = js.native
+  var headerAction: js.UndefOr[HttpHeaderAction] = js.undefined
   
   /** The name to which this PathMatcher is referred by the HostRule. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of path rules. Use this list instead of routeRules when routing based on simple path matching is all that's required. The order by which path rules are specified does not
@@ -59,14 +57,14 @@ trait PathMatcher extends StObject {
     * For example: a pathRule with a path /a/b/c/ * will match before /a/b/ * irrespective of the order in which those paths appear in this list.
     * Within a given pathMatcher, only one of pathRules or routeRules must be set.
     */
-  var pathRules: js.UndefOr[js.Array[PathRule]] = js.native
+  var pathRules: js.UndefOr[js.Array[PathRule]] = js.undefined
   
   /**
     * The list of HTTP route rules. Use this list instead of pathRules when advanced route matching and routing actions are desired. routeRules are evaluated in order of priority, from
     * the lowest to highest number.
     * Within a given pathMatcher, you can set only one of pathRules or routeRules.
     */
-  var routeRules: js.UndefOr[js.Array[HttpRouteRule]] = js.native
+  var routeRules: js.UndefOr[js.Array[HttpRouteRule]] = js.undefined
 }
 object PathMatcher {
   

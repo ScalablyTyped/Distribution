@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information for the KeypadPressed event. */
-@js.native
 trait KeypadPressedEventArgs extends StObject {
   
   /** Returns the value of the keypad button on the device that was pressed. */
-  var telephonyKey: TelephonyKey = js.native
+  var telephonyKey: TelephonyKey
 }
 object KeypadPressedEventArgs {
   

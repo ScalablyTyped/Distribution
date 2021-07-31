@@ -5,40 +5,50 @@ import typings.miniStore.typesMod.StoreProp
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectMod {
   
-  @JSImport("mini-store/cjs/connect", "connect")
+  @JSImport("mini-store/cjs/connect", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def connect[TStateProps, TOwnProps, State](): js.Function1[
     /* WrappedComponent */ js.Any, 
-    ConnectedComponent[_, TStateProps with StoreProp[State], TOwnProps]
-  ] = js.native
-  @JSImport("mini-store/cjs/connect", "connect")
-  @js.native
-  def connect[TStateProps, TOwnProps, State](mapStateToProps: js.UndefOr[scala.Nothing], options: ConnectOptions): js.Function1[
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Function1[
     /* WrappedComponent */ js.Any, 
-    ConnectedComponent[_, TStateProps with StoreProp[State], TOwnProps]
-  ] = js.native
-  @JSImport("mini-store/cjs/connect", "connect")
-  @js.native
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ]]
+  @scala.inline
   def connect[TStateProps, TOwnProps, State](mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps]): js.Function1[
     /* WrappedComponent */ js.Any, 
-    ConnectedComponent[_, TStateProps with StoreProp[State], TOwnProps]
-  ] = js.native
-  @JSImport("mini-store/cjs/connect", "connect")
-  @js.native
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* WrappedComponent */ js.Any, 
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ]]
+  @scala.inline
   def connect[TStateProps, TOwnProps, State](
     mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps],
     options: ConnectOptions
   ): js.Function1[
     /* WrappedComponent */ js.Any, 
-    ConnectedComponent[_, TStateProps with StoreProp[State], TOwnProps]
-  ] = js.native
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* WrappedComponent */ js.Any, 
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ]]
+  @scala.inline
+  def connect[TStateProps, TOwnProps, State](mapStateToProps: Unit, options: ConnectOptions): js.Function1[
+    /* WrappedComponent */ js.Any, 
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* WrappedComponent */ js.Any, 
+    ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
+  ]]
   
-  @js.native
   trait ConnectOptions extends StObject {
     
     /**
@@ -46,7 +56,7 @@ object connectMod {
       *
       * @default false
       */
-    var forwardRef: js.UndefOr[Boolean] = js.native
+    var forwardRef: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectOptions {
     
@@ -67,16 +77,15 @@ object connectMod {
     }
   }
   
-  @js.native
   trait ConnectProps extends StObject {
     
-    var miniStoreForwardedRef: Ref[_] = js.native
+    var miniStoreForwardedRef: Ref[js.Any]
   }
   object ConnectProps {
     
     @scala.inline
     def apply(): ConnectProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(miniStoreForwardedRef = null)
       __obj.asInstanceOf[ConnectProps]
     }
     
@@ -84,24 +93,23 @@ object connectMod {
     implicit class ConnectPropsMutableBuilder[Self <: ConnectProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMiniStoreForwardedRef(value: Ref[_]): Self = StObject.set(x, "miniStoreForwardedRef", value.asInstanceOf[js.Any])
+      def setMiniStoreForwardedRef(value: Ref[js.Any]): Self = StObject.set(x, "miniStoreForwardedRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMiniStoreForwardedRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "miniStoreForwardedRef", js.Any.fromFunction1(value))
+      def setMiniStoreForwardedRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "miniStoreForwardedRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMiniStoreForwardedRefNull: Self = StObject.set(x, "miniStoreForwardedRef", null)
     }
   }
   
-  @js.native
   trait ConnectedState[TStateProps, Store, TOwnProps] extends StObject {
     
-    var props: TOwnProps = js.native
+    var props: TOwnProps
     
-    var store: Store = js.native
+    var store: Store
     
-    var subscribed: TStateProps = js.native
+    var subscribed: TStateProps
   }
   object ConnectedState {
     
@@ -112,7 +120,7 @@ object connectMod {
     }
     
     @scala.inline
-    implicit class ConnectedStateMutableBuilder[Self <: ConnectedState[_, _, _], TStateProps, Store, TOwnProps] (val x: Self with (ConnectedState[TStateProps, Store, TOwnProps])) extends AnyVal {
+    implicit class ConnectedStateMutableBuilder[Self <: ConnectedState[?, ?, ?], TStateProps, Store, TOwnProps] (val x: Self & (ConnectedState[TStateProps, Store, TOwnProps])) extends AnyVal {
       
       @scala.inline
       def setProps(value: TOwnProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])

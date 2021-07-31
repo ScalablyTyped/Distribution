@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.startup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Not allowed in: Content scripts, Devtools pages */
@@ -54,14 +53,13 @@ object experiments {
   type APIPaths = js.Array[APIPath]
   
   /* experiments types */
-  @js.native
   trait ExperimentAPI extends StObject {
     
-    var child: js.UndefOr[ExperimentAPIChild] = js.native
+    var child: js.UndefOr[ExperimentAPIChild] = js.undefined
     
-    var parent: js.UndefOr[ExperimentAPIParent] = js.native
+    var parent: js.UndefOr[ExperimentAPIParent] = js.undefined
     
-    var schema: ExperimentURL = js.native
+    var schema: ExperimentURL
   }
   object ExperimentAPI {
     
@@ -91,14 +89,13 @@ object experiments {
     }
   }
   
-  @js.native
   trait ExperimentAPIChild extends StObject {
     
-    var paths: APIPaths = js.native
+    var paths: APIPaths
     
-    var scopes: js.Array[APIChildScope] = js.native
+    var scopes: js.Array[APIChildScope]
     
-    var script: ExperimentURL = js.native
+    var script: ExperimentURL
   }
   object ExperimentAPIChild {
     
@@ -128,16 +125,15 @@ object experiments {
     }
   }
   
-  @js.native
   trait ExperimentAPIParent extends StObject {
     
-    var events: js.UndefOr[APIEvents] = js.native
+    var events: js.UndefOr[APIEvents] = js.undefined
     
-    var paths: js.UndefOr[APIPaths] = js.native
+    var paths: js.UndefOr[APIPaths] = js.undefined
     
-    var scopes: js.UndefOr[js.Array[APIParentScope]] = js.native
+    var scopes: js.UndefOr[js.Array[APIParentScope]] = js.undefined
     
-    var script: ExperimentURL = js.native
+    var script: ExperimentURL
   }
   object ExperimentAPIParent {
     

@@ -2,10 +2,8 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthCheck extends StObject {
   
   /**
@@ -18,19 +16,19 @@ trait HealthCheck extends StObject {
     * An exit code of 0 indicates success, and non-zero exit code indicates failure. For more
     * information, see HealthCheck in the Create a container section of the Docker Remote API.
     */
-  var command: js.UndefOr[js.Array[String]] = js.native
+  var command: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The time period in seconds between each health check execution. You may specify between 5 and
     * 300 seconds. The default value is 30 seconds.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of times to retry a failed health check before the container is considered
     * unhealthy. You may specify between 1 and 10 retries. The default value is 3.
     */
-  var retries: js.UndefOr[Double] = js.native
+  var retries: js.UndefOr[Double] = js.undefined
   
   /**
     * The optional grace period within which to provide containers time to bootstrap before failed
@@ -41,13 +39,13 @@ trait HealthCheck extends StObject {
     * If a health check succeeds within the startPeriod, then the container is considered healthy
     * and any subsequent failures count toward the maximum number of retries.
     */
-  var startPeriod: js.UndefOr[Double] = js.native
+  var startPeriod: js.UndefOr[Double] = js.undefined
   
   /**
     * The time period in seconds to wait for a health check to succeed before it is considered a
     * failure. You may specify between 2 and 60 seconds. The default value is 5.
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object HealthCheck {
   

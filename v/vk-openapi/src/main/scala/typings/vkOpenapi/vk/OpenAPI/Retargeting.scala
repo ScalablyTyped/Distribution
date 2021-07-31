@@ -2,7 +2,6 @@ package typings.vkOpenapi.vk.OpenAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Retargeting {
@@ -26,20 +25,19 @@ object Retargeting {
     ): Unit = js.native
   }
   
-  @js.native
   trait Product extends StObject {
     
-    var group_id: js.UndefOr[String] = js.native
+    var group_id: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var price: js.UndefOr[Double] = js.native
+    var price: js.UndefOr[Double] = js.undefined
     
-    var price_from: js.UndefOr[NumericBoolean] = js.native
+    var price_from: js.UndefOr[NumericBoolean] = js.undefined
     
-    var price_old: js.UndefOr[Double] = js.native
+    var price_old: js.UndefOr[Double] = js.undefined
     
-    var recommended_ids: js.UndefOr[String] = js.native
+    var recommended_ids: js.UndefOr[String] = js.undefined
   }
   object Product {
     
@@ -141,22 +139,21 @@ object Retargeting {
     def view_search: typings.vkOpenapi.vkOpenapiStrings.view_search = "view_search".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.view_search]
   }
   
-  @js.native
   trait ProductEventParams extends StObject {
     
-    var business_value: js.UndefOr[Double] = js.native
+    var business_value: js.UndefOr[Double] = js.undefined
     
-    var category_ids: js.UndefOr[String] = js.native
+    var category_ids: js.UndefOr[String] = js.undefined
     
-    var currency_code: js.UndefOr[String] = js.native
+    var currency_code: js.UndefOr[String] = js.undefined
     
-    var products: js.UndefOr[js.Array[Product]] = js.native
+    var products: js.UndefOr[js.Array[Product]] = js.undefined
     
-    var products_recommended_ids: js.UndefOr[String] = js.native
+    var products_recommended_ids: js.UndefOr[String] = js.undefined
     
-    var search_string: js.UndefOr[String] = js.native
+    var search_string: js.UndefOr[String] = js.undefined
     
-    var total_price: js.UndefOr[Double] = js.native
+    var total_price: js.UndefOr[Double] = js.undefined
   }
   object ProductEventParams {
     

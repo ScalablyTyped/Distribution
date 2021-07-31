@@ -2,41 +2,39 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupMember extends StObject {
   
   /**
     * The ID of the cluster to which the node belongs.
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the node within its cluster. A node ID is a numeric identifier (0001, 0002, etc.).
     */
-  var CacheNodeId: js.UndefOr[String] = js.native
+  var CacheNodeId: js.UndefOr[String] = js.undefined
   
   /**
     * The role that is currently assigned to the node - primary or replica. This member is only applicable for Redis (cluster mode disabled) replication groups.
     */
-  var CurrentRole: js.UndefOr[String] = js.native
+  var CurrentRole: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Availability Zone in which the node is located.
     */
-  var PreferredAvailabilityZone: js.UndefOr[String] = js.native
+  var PreferredAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The outpost ARN of the node group member.
     */
-  var PreferredOutpostArn: js.UndefOr[String] = js.native
+  var PreferredOutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The information required for client programs to connect to a node for read operations. The read endpoint is only applicable on Redis (cluster mode disabled) clusters.
     */
-  var ReadEndpoint: js.UndefOr[Endpoint] = js.native
+  var ReadEndpoint: js.UndefOr[Endpoint] = js.undefined
 }
 object NodeGroupMember {
   

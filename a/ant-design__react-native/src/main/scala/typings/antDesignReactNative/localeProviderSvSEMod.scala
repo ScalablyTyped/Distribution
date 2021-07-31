@@ -10,7 +10,6 @@ import typings.antDesignReactNative.anon.Extra
 import typings.antDesignReactNative.anon.NextText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeProviderSvSEMod {

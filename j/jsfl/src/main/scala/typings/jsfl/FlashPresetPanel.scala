@@ -2,37 +2,35 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashPresetPanel extends StObject {
   
-  def addNewItem(): js.Any = js.native
+  def addNewItem(): js.Any
   
-  def applyPreset(): js.Any = js.native
+  def applyPreset(): js.Any
   
-  def deleteFolder(): js.Any = js.native
+  def deleteFolder(): js.Any
   
-  def deleteItem(): js.Any = js.native
+  def deleteItem(): js.Any
   
-  def expandFolder(): js.Any = js.native
+  def expandFolder(): js.Any
   
-  def exportItem(): js.Any = js.native
+  def exportItem(): js.Any
   
-  def findItemIndex(): js.Any = js.native
+  def findItemIndex(): js.Any
   
-  def getSelectedItems(): js.Any = js.native
+  def getSelectedItems(): js.Any
   
-  def importItem(): js.Any = js.native
+  def importItem(): js.Any
   
-  def moveToFolder(): js.Any = js.native
+  def moveToFolder(): js.Any
   
-  def newFolder(): js.Any = js.native
+  def newFolder(): js.Any
   
-  def renameItem(): js.Any = js.native
+  def renameItem(): js.Any
   
-  def selectItem(): js.Any = js.native
+  def selectItem(): js.Any
 }
 object FlashPresetPanel {
   

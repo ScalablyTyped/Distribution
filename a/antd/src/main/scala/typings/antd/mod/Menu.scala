@@ -10,7 +10,6 @@ import typings.rcMenu.mod.ItemGroup
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Menu")
@@ -35,16 +34,16 @@ object Menu {
   
   @JSImport("antd", "Menu.ItemGroup")
   @js.native
-  def ItemGroup: TypeofItemGroup with Instantiable0[typings.rcMenu.mod.ItemGroup] = js.native
+  def ItemGroup: TypeofItemGroup & Instantiable0[typings.rcMenu.mod.ItemGroup] = js.native
   @scala.inline
-  def ItemGroup_=(x: TypeofItemGroup with Instantiable0[ItemGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+  def ItemGroup_=(x: TypeofItemGroup & Instantiable0[ItemGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
   
   @scala.inline
   def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @JSImport("antd", "Menu.SubMenu")
   @js.native
-  def SubMenu: Instantiable0[typings.antd.subMenuMod.default] with TypeofSubMenu = js.native
+  def SubMenu: Instantiable0[typings.antd.subMenuMod.default] & TypeofSubMenu = js.native
   @scala.inline
-  def SubMenu_=(x: Instantiable0[typings.antd.subMenuMod.default] with TypeofSubMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubMenu")(x.asInstanceOf[js.Any])
+  def SubMenu_=(x: Instantiable0[typings.antd.subMenuMod.default] & TypeofSubMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubMenu")(x.asInstanceOf[js.Any])
 }

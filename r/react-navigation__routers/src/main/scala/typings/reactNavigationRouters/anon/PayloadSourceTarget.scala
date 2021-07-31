@@ -4,26 +4,26 @@ import typings.reactNavigationRouters.reactNavigationRoutersStrings.POP
 import typings.reactNavigationRouters.stackRouterMod.StackActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PayloadSourceTarget extends StackActionType {
+trait PayloadSourceTarget
+  extends StObject
+     with StackActionType {
   
-  var payload: Count = js.native
+  var payload: Count
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: POP = js.native
+  var `type`: POP
 }
 object PayloadSourceTarget {
   
   @scala.inline
-  def apply(payload: Count, `type`: POP): PayloadSourceTarget = {
+  def apply(payload: Count): PayloadSourceTarget = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("POP")
     __obj.asInstanceOf[PayloadSourceTarget]
   }
   

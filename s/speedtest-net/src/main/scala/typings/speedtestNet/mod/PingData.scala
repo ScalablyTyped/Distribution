@@ -2,19 +2,17 @@ package typings.speedtestNet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PingData extends StObject {
   
   /** Milliseconds */
-  var jitter: Double = js.native
+  var jitter: Double
   
   /** Milliseconds */
-  var latency: Double = js.native
+  var latency: Double
   
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
 }
 object PingData {
   

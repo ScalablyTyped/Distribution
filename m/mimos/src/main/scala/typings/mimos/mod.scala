@@ -4,12 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mimeDb.mod.MimeEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait MimosOptions extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object mod {
       *  * the key is the lower-cased correct mime-type. (Ex. "application/javascript").
       *  * the value should an object @see MimosOptionsValue
       */
-    var `override`: StringDictionary[MimosOptionsValue] = js.native
+    var `override`: StringDictionary[MimosOptionsValue]
   }
   object MimosOptions {
     
@@ -36,14 +34,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait MimosOptionsValue extends MimeEntry {
+  trait MimosOptionsValue
+    extends StObject
+       with MimeEntry {
     
     /** method with signature function(mime) when this mime type is found in the database, this function will run. This allows you make customizations to mime based on developer criteria. */
-    var predicate: js.UndefOr[js.Function1[/* mime */ this.type, this.type]] = js.native
+    var predicate: js.UndefOr[js.Function1[/* mime */ this.type, this.type]] = js.undefined
     
     /** specify the type value of result objects, defaults to key. See the example below for more clarification. */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MimosOptionsValue {
     

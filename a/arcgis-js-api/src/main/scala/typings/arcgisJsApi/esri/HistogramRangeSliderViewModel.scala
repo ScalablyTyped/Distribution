@@ -10,11 +10,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.between
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistogramRangeSliderViewModel extends SliderViewModel {
+trait HistogramRangeSliderViewModel
+  extends StObject
+     with SliderViewModel {
   
   /**
     * The statistical average of the data in the histogram.

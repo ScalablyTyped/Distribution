@@ -8,171 +8,142 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-shape", "arc")
+  @JSImport("d3-shape", JSImport.Namespace)
   @js.native
-  def arc(): Arc_[_, DefaultArcObject] = js.native
-  @JSImport("d3-shape", "arc")
-  @js.native
-  def arc_Datum[Datum](): Arc_[_, Datum] = js.native
-  @JSImport("d3-shape", "arc")
-  @js.native
-  def arc_ThisDatum[This, Datum](): Arc_[This, Datum] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.UndefOr[scala.Nothing],
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: js.UndefOr[scala.Nothing], y0: js.UndefOr[scala.Nothing], y1: Double): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: js.UndefOr[scala.Nothing], y0: Double): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y0: Double,
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: js.UndefOr[scala.Nothing], y0: Double, y1: Double): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](
-    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y0: js.UndefOr[scala.Nothing],
-    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](
-    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
-    y0: js.UndefOr[scala.Nothing],
-    y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  @scala.inline
+  def arc(): Arc_[js.Any, DefaultArcObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, DefaultArcObject]]
+  
+  @scala.inline
+  def arc_Datum[Datum](): Arc_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, Datum]]
+  
+  @scala.inline
+  def arc_ThisDatum[This, Datum](): Arc_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[This, Datum]]
+  
+  @scala.inline
+  def area[Datum](): Area_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("area")().asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any]).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y0: Double): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y0: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: Double,
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y0: Double,
     y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: Double): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
-    x: Double,
-    y0: js.UndefOr[scala.Nothing],
+    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y0: Unit,
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: Double, y0: js.UndefOr[scala.Nothing], y1: Double): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: Double, y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y0: Unit,
+    y1: Double
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double): Area_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any]).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: Double,
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: Double,
     y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y1: Double
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: Double, y0: Double): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
   def area[Datum](
     x: Double,
     y0: Double,
     y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Area_[Datum] = js.native
-  @JSImport("d3-shape", "area")
-  @js.native
-  def area[Datum](x: Double, y0: Double, y1: Double): Area_[Datum] = js.native
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: Double, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Double,
+    y0: Unit,
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Double, y0: Unit, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
+    y1: Double
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: Double,
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: Double, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](
+    x: Unit,
+    y0: Unit,
+    y1: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
+  ): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
+  @scala.inline
+  def area[Datum](x: Unit, y0: Unit, y1: Double): Area_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(x.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Area_[Datum]]
   
-  @JSImport("d3-shape", "areaRadial")
-  @js.native
-  def areaRadial(): AreaRadial_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-shape", "areaRadial")
-  @js.native
-  def areaRadial_Datum[Datum](): AreaRadial_[Datum] = js.native
+  @scala.inline
+  def areaRadial(): AreaRadial_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("areaRadial")().asInstanceOf[AreaRadial_[js.Tuple2[Double, Double]]]
+  
+  @scala.inline
+  def areaRadial_Datum[Datum](): AreaRadial_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("areaRadial")().asInstanceOf[AreaRadial_[Datum]]
   
   @JSImport("d3-shape", "curveBasis")
   @js.native
@@ -246,202 +217,160 @@ object mod {
   @js.native
   val curveStepBefore: CurveFactory = js.native
   
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](
-    x: js.UndefOr[scala.Nothing],
-    y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](x: js.UndefOr[scala.Nothing], y: Double): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
+  @scala.inline
+  def line[Datum](): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")().asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any]).asInstanceOf[Line_[Datum]]
+  @scala.inline
   def line[Datum](
     x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double],
     y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]
-  ): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y: Double): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](x: Double): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](x: Double, y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = js.native
-  @JSImport("d3-shape", "line")
-  @js.native
-  def line[Datum](x: Double, y: Double): Line_[Datum] = js.native
+  ): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double], y: Double): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Double): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any]).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Double, y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Double, y: Double): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Unit, y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
+  @scala.inline
+  def line[Datum](x: Unit, y: Double): Line_[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Line_[Datum]]
   
-  @JSImport("d3-shape", "lineRadial")
-  @js.native
-  def lineRadial(): LineRadial_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-shape", "lineRadial")
-  @js.native
-  def lineRadial_Datum[Datum](): LineRadial_[Datum] = js.native
+  @scala.inline
+  def lineRadial(): LineRadial_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lineRadial")().asInstanceOf[LineRadial_[js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-shape", "linkHorizontal")
-  @js.native
-  def linkHorizontal(): Link[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-shape", "linkHorizontal")
-  @js.native
-  def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[_, LinkDatum, NodeDatum] = js.native
-  @JSImport("d3-shape", "linkHorizontal")
-  @js.native
-  def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = js.native
+  @scala.inline
+  def lineRadial_Datum[Datum](): LineRadial_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("lineRadial")().asInstanceOf[LineRadial_[Datum]]
   
-  @JSImport("d3-shape", "linkRadial")
-  @js.native
-  def linkRadial(): LinkRadial_[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-shape", "linkRadial")
-  @js.native
-  def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[_, LinkDatum, NodeDatum] = js.native
-  @JSImport("d3-shape", "linkRadial")
-  @js.native
-  def linkRadial_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): LinkRadial_[This, LinkDatum, NodeDatum] = js.native
+  @scala.inline
+  def linkHorizontal(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-shape", "linkVertical")
-  @js.native
-  def linkVertical(): Link[_, DefaultLinkObject, js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-shape", "linkVertical")
-  @js.native
-  def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[_, LinkDatum, NodeDatum] = js.native
-  @JSImport("d3-shape", "linkVertical")
-  @js.native
-  def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = js.native
+  @scala.inline
+  def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
   
-  @JSImport("d3-shape", "pie")
-  @js.native
-  def pie(): Pie_[_, Double | ValueOf] = js.native
-  @JSImport("d3-shape", "pie")
-  @js.native
-  def pie_Datum[Datum](): Pie_[_, Datum] = js.native
-  @JSImport("d3-shape", "pie")
-  @js.native
-  def pie_ThisDatum[This, Datum](): Pie_[This, Datum] = js.native
+  @scala.inline
+  def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
   
-  @JSImport("d3-shape", "pointRadial")
-  @js.native
-  def pointRadial(angle: Double, radius: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def linkRadial(): LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-shape", "radialArea")
-  @js.native
-  def radialArea(): RadialArea_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-shape", "radialArea")
-  @js.native
-  def radialArea_Datum[Datum](): RadialArea_[Datum] = js.native
+  @scala.inline
+  def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, LinkDatum, NodeDatum]]
   
-  @JSImport("d3-shape", "radialLine")
-  @js.native
-  def radialLine(): RadialLine_[js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-shape", "radialLine")
-  @js.native
-  def radialLine_Datum[Datum](): RadialLine_[Datum] = js.native
+  @scala.inline
+  def linkRadial_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): LinkRadial_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[This, LinkDatum, NodeDatum]]
   
-  @JSImport("d3-shape", "stack")
-  @js.native
-  def stack(): Stack_[_, StringDictionary[Double], String] = js.native
+  @scala.inline
+  def linkVertical(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-shape", "stackOffsetDiverging")
-  @js.native
-  def stackOffsetDiverging(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
   
-  @JSImport("d3-shape", "stackOffsetExpand")
-  @js.native
-  def stackOffsetExpand(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
   
-  @JSImport("d3-shape", "stackOffsetNone")
-  @js.native
-  def stackOffsetNone(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def pie(): Pie_[js.Any, Double | ValueOf] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Double | ValueOf]]
   
-  @JSImport("d3-shape", "stackOffsetSilhouette")
-  @js.native
-  def stackOffsetSilhouette(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def pie_Datum[Datum](): Pie_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Datum]]
   
-  @JSImport("d3-shape", "stackOffsetWiggle")
-  @js.native
-  def stackOffsetWiggle(series: Series[_, _], order: Iterable[Double]): Unit = js.native
+  @scala.inline
+  def pie_ThisDatum[This, Datum](): Pie_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[This, Datum]]
   
-  @JSImport("d3-shape", "stackOrderAppearance")
-  @js.native
-  def stackOrderAppearance(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def pointRadial(angle: Double, radius: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointRadial")(angle.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("d3-shape", "stackOrderAscending")
-  @js.native
-  def stackOrderAscending(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def radialArea(): RadialArea_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialArea")().asInstanceOf[RadialArea_[js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-shape", "stackOrderDescending")
-  @js.native
-  def stackOrderDescending(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def radialArea_Datum[Datum](): RadialArea_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialArea")().asInstanceOf[RadialArea_[Datum]]
   
-  @JSImport("d3-shape", "stackOrderInsideOut")
-  @js.native
-  def stackOrderInsideOut(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def radialLine(): RadialLine_[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialLine")().asInstanceOf[RadialLine_[js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-shape", "stackOrderNone")
-  @js.native
-  def stackOrderNone(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def radialLine_Datum[Datum](): RadialLine_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialLine")().asInstanceOf[RadialLine_[Datum]]
   
-  @JSImport("d3-shape", "stackOrderReverse")
-  @js.native
-  def stackOrderReverse(series: Series[_, _]): js.Array[Double] = js.native
+  @scala.inline
+  def stack(): Stack_[js.Any, StringDictionary[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, StringDictionary[Double], String]]
   
-  @JSImport("d3-shape", "stack")
-  @js.native
-  def stack_Datum[Datum](): Stack_[_, Datum, String] = js.native
-  @JSImport("d3-shape", "stack")
-  @js.native
-  def stack_DatumKey[Datum, Key](): Stack_[_, Datum, Key] = js.native
-  @JSImport("d3-shape", "stack")
-  @js.native
-  def stack_ThisDatumKey[This, Datum, Key](): Stack_[This, Datum, Key] = js.native
+  @scala.inline
+  def stackOffsetDiverging(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetDiverging")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol[Datum](): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol[Datum](
-    `type`: js.UndefOr[scala.Nothing],
-    size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol[Datum](`type`: js.UndefOr[scala.Nothing], size: Double): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol[Datum](`type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
+  @scala.inline
+  def stackOffsetExpand(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetExpand")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stackOffsetNone(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetNone")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stackOffsetSilhouette(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetSilhouette")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stackOffsetWiggle(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetWiggle")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stackOrderAppearance(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAppearance")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def stackOrderAscending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAscending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def stackOrderDescending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderDescending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def stackOrderInsideOut(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderInsideOut")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def stackOrderNone(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderNone")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def stackOrderReverse(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderReverse")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def stack_Datum[Datum](): Stack_[js.Any, Datum, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, String]]
+  
+  @scala.inline
+  def stack_DatumKey[Datum, Key](): Stack_[js.Any, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, Key]]
+  
+  @scala.inline
+  def stack_ThisDatumKey[This, Datum, Key](): Stack_[This, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[This, Datum, Key]]
+  
+  @scala.inline
+  def symbol[Datum](): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
   def symbol[Datum](
     `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
   def symbol[Datum](
     `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: Double
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol[Datum](`type`: SymbolType): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](
+    `type`: Unit,
+    size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: Unit, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: SymbolType): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
   def symbol[Datum](
     `type`: SymbolType,
     size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[_, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[_, Datum] = js.native
+  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+  @scala.inline
+  def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
   
   @JSImport("d3-shape", "symbolCircle")
   @js.native
@@ -471,45 +400,36 @@ object mod {
   @js.native
   val symbolWye: SymbolType = js.native
   
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](
-    `type`: js.UndefOr[scala.Nothing],
-    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: js.UndefOr[scala.Nothing], size: Double): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
   def symbol_ThisDatum[This, Datum](
     `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
   def symbol_ThisDatum[This, Datum](
     `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
     size: Double
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: SymbolType): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](
+    `type`: Unit,
+    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: Unit, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: SymbolType): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
   def symbol_ThisDatum[This, Datum](
     `type`: SymbolType,
     size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[This, Datum] = js.native
-  @JSImport("d3-shape", "symbol")
-  @js.native
-  def symbol_ThisDatum[This, Datum](`type`: SymbolType, size: Double): Symbol_[This, Datum] = js.native
+  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  @scala.inline
+  def symbol_ThisDatum[This, Datum](`type`: SymbolType, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
   
   @JSImport("d3-shape", "symbols")
   @js.native
@@ -1418,19 +1338,20 @@ object mod {
     */
   js.Function1[/* context */ CanvasRenderingContext2D | Path_, CurveGeneratorLineOnly]
   
-  @js.native
-  trait CurveGenerator extends CurveGeneratorLineOnly {
+  trait CurveGenerator
+    extends StObject
+       with CurveGeneratorLineOnly {
     
     /**
       * Indicates the end of the current area segment.
       */
-    def areaEnd(): Unit = js.native
+    def areaEnd(): Unit
     
     /**
       * Indicates the start of a new area segment.
       * Each area segment consists of exactly two line segments: the topline, followed by the baseline, with the baseline points in reverse order.
       */
-    def areaStart(): Unit = js.native
+    def areaStart(): Unit
   }
   object CurveGenerator {
     
@@ -1457,23 +1378,22 @@ object mod {
     }
   }
   
-  @js.native
   trait CurveGeneratorLineOnly extends StObject {
     
     /**
       * Indicates the end of the current line segment.
       */
-    def lineEnd(): Unit = js.native
+    def lineEnd(): Unit
     
     /**
       * Indicates the start of a new line segment. Zero or more points will follow.
       */
-    def lineStart(): Unit = js.native
+    def lineStart(): Unit
     
     /**
       * Indicates a new point in the current line segment with the given x- and y-values.
       */
-    def point(x: Double, y: Double): Unit = js.native
+    def point(x: Double, y: Double): Unit
   }
   object CurveGeneratorLineOnly {
     
@@ -1497,33 +1417,32 @@ object mod {
     }
   }
   
-  @js.native
   trait DefaultArcObject extends StObject {
     
     /**
       * End angle of arc. The angle is specified in radians, with 0 at -y (12 o’clock) and positive angles proceeding clockwise.
       */
-    var endAngle: Double = js.native
+    var endAngle: Double
     
     /**
       * Inner radius of arc.
       */
-    var innerRadius: Double = js.native
+    var innerRadius: Double
     
     /**
       * Outer radius of arc.
       */
-    var outerRadius: Double = js.native
+    var outerRadius: Double
     
     /**
       * Optional. Pad angle of arc in radians.
       */
-    var padAngle: js.UndefOr[Double] = js.native
+    var padAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * Start angle of arc. The angle is specified in radians, with 0 at -y (12 o’clock) and positive angles proceeding clockwise.
       */
-    var startAngle: Double = js.native
+    var startAngle: Double
   }
   object DefaultArcObject {
     
@@ -1556,7 +1475,6 @@ object mod {
     }
   }
   
-  @js.native
   trait DefaultLinkObject extends StObject {
     
     /**
@@ -1569,7 +1487,7 @@ object mod {
       * the coordinates [angle, radius]. The angle is stated in radians, with 0 at -y (12 o’clock).
       * The radius measures the distance from the origin ⟨0,0⟩.
       */
-    var source: js.Tuple2[Double, Double] = js.native
+    var source: js.Tuple2[Double, Double]
     
     /**
       * Target node of the link.
@@ -1581,7 +1499,7 @@ object mod {
       * the coordinates [angle, radius]. The angle is stated in radians, with 0 at -y (12 o’clock).
       * The radius measures the distance from the origin ⟨0,0⟩.
       */
-    var target: js.Tuple2[Double, Double] = js.native
+    var target: js.Tuple2[Double, Double]
   }
   object DefaultLinkObject {
     
@@ -2073,42 +1991,41 @@ object mod {
     def target(target: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum]): this.type = js.native
   }
   
-  @js.native
   trait PieArcDatum[T] extends StObject {
     
     /**
       * The input datum; the corresponding element in the input data array of the Pie generator.
       */
-    var data: T = js.native
+    var data: T
     
     /**
       * The end angle of the arc.
       * If the pie generator was configured to be used for the arc generator,
       * then the units are in radians with 0 at -y (12 o’clock) and positive angles proceeding clockwise.
       */
-    var endAngle: Double = js.native
+    var endAngle: Double
     
     /**
       * The zero-based sorted index of the arc.
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * The pad angle of the arc. If the pie generator was configured to be used for the arc generator, than the units are in radians.
       */
-    var padAngle: Double = js.native
+    var padAngle: Double
     
     /**
       * The start angle of the arc.
       * If the pie generator was configured to be used for the arc generator,
       * then the units are in radians with 0 at -y (12 o’clock) and positive angles proceeding clockwise.
       */
-    var startAngle: Double = js.native
+    var startAngle: Double
     
     /**
       * The numeric value of the arc.
       */
-    var value: Double = js.native
+    var value: Double
   }
   object PieArcDatum {
     
@@ -2119,7 +2036,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PieArcDatumMutableBuilder[Self <: PieArcDatum[_], T] (val x: Self with PieArcDatum[T]) extends AnyVal {
+    implicit class PieArcDatumMutableBuilder[Self <: PieArcDatum[?], T] (val x: Self & PieArcDatum[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -2343,7 +2260,9 @@ object mod {
   type RadialLink[This, LinkDatum, NodeDatum] = LinkRadial_[This, LinkDatum, NodeDatum]
   
   @js.native
-  trait Series[Datum, Key] extends Array[SeriesPoint[Datum]] {
+  trait Series[Datum, Key]
+    extends StObject
+       with Array[SeriesPoint[Datum]] {
     
     /**
       * Index of the series in the series array returned by stack generator.
@@ -2357,7 +2276,9 @@ object mod {
   }
   
   @js.native
-  trait SeriesPoint[Datum] extends Array[Double] {
+  trait SeriesPoint[Datum]
+    extends StObject
+       with Array[Double] {
     
     /**
       * Corresponds to y0, the lower value (baseline).
@@ -2487,7 +2408,6 @@ object mod {
     def value(value: Double): this.type = js.native
   }
   
-  @js.native
   trait SymbolType extends StObject {
     
     /**
@@ -2497,7 +2417,7 @@ object mod {
       * @param context A rendering context implementing CanvasPath.
       * @param size Size of the symbol to draw.
       */
-    def draw(context: CanvasPathD3Shape, size: Double): Unit = js.native
+    def draw(context: CanvasPathD3Shape, size: Double): Unit
   }
   object SymbolType {
     
@@ -2532,7 +2452,7 @@ object mod {
       * @param d The datum for which the symbol is to be generated.
       */
     def apply(d: Datum, args: js.Any*): String | Null = js.native
-    def apply(d: js.UndefOr[scala.Nothing], args: js.Any*): String | Null = js.native
+    def apply(d: Unit, args: js.Any*): String | Null = js.native
     
     /**
       * Returns the current rendering context, which defaults to null.

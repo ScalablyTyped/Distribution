@@ -5,70 +5,68 @@ import typings.node.tlsMod.ConnectionOptions
 import typings.nodemailer.sharedMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /** defines authentication data */
-  var auth: js.UndefOr[AuthenticationType] = js.native
+  var auth: js.UndefOr[AuthenticationType] = js.undefined
   
   /** defines preferred authentication method, e.g. ‘PLAIN’ */
-  var authMethod: js.UndefOr[String] = js.native
+  var authMethod: js.UndefOr[String] = js.undefined
   
   /** connected socket to use instead of creating and connecting a new one. If secure option is true, then socket is upgraded from plaintext to ciphertext */
-  var connection: js.UndefOr[Socket] = js.native
+  var connection: js.UndefOr[Socket] = js.undefined
   
   /** how many milliseconds to wait for the connection to establish */
-  var connectionTimeout: js.UndefOr[ms] = js.native
+  var connectionTimeout: js.UndefOr[ms] = js.undefined
   
-  var customAuth: js.UndefOr[CustomAuthenticationHandlers] = js.native
+  var customAuth: js.UndefOr[CustomAuthenticationHandlers] = js.undefined
   
   /** if set to true, then logs SMTP traffic and message content, otherwise logs only transaction events */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /** how many milliseconds to wait for the greeting after connection is established */
-  var greetingTimeout: js.UndefOr[ms] = js.native
+  var greetingTimeout: js.UndefOr[ms] = js.undefined
   
   /** the hostname or IP address to connect to (defaults to ‘localhost’) */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** turns off STARTTLS support if true */
-  var ignoreTLS: js.UndefOr[Boolean] = js.native
+  var ignoreTLS: js.UndefOr[Boolean] = js.undefined
   
   /** the local interface to bind to for network connections */
-  var localAddress: js.UndefOr[String] = js.native
+  var localAddress: js.UndefOr[String] = js.undefined
   
   /** optional bunyan compatible logger instance. If set to true then logs to console. If value is not set or is false then nothing is logged */
-  var logger: js.UndefOr[Logger | Boolean] = js.native
+  var logger: js.UndefOr[Logger | Boolean] = js.undefined
   
   /** optional hostname of the client, used for identifying to the server */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** tries to use STARTTLS and continues normally if it fails */
-  var opportunisticTLS: js.UndefOr[Boolean] = js.native
+  var opportunisticTLS: js.UndefOr[Boolean] = js.undefined
   
   /** the port to connect to (defaults to 25 or 465) */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** forces the client to use STARTTLS. Returns an error if upgrading the connection is not possible or fails. */
-  var requireTLS: js.UndefOr[Boolean] = js.native
+  var requireTLS: js.UndefOr[Boolean] = js.undefined
   
   /** defines if the connection should use SSL (if true) or not (if false) */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /** initialized socket to use instead of creating a new one */
-  var socket: js.UndefOr[Socket] = js.native
+  var socket: js.UndefOr[Socket] = js.undefined
   
   /** how many milliseconds of inactivity to allow */
-  var socketTimeout: js.UndefOr[ms] = js.native
+  var socketTimeout: js.UndefOr[ms] = js.undefined
   
   /** defines additional options to be passed to the socket constructor, e.g. {rejectUnauthorized: true} */
-  var tls: js.UndefOr[ConnectionOptions] = js.native
+  var tls: js.UndefOr[ConnectionOptions] = js.undefined
   
   /** if set to true, then logs SMTP traffic without message content */
-  var transactionLog: js.UndefOr[Boolean] = js.native
+  var transactionLog: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

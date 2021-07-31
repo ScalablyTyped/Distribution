@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
@@ -25,7 +24,7 @@ object stackMod {
       */
     def this(name: String) = this()
     def this(name: String, args: StackArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: StackArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -106,6 +105,10 @@ object stackMod {
   /* static members */
   object Stack {
     
+    @JSImport("@pulumi/aws/cloudformation/stack", "Stack")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Stack resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -115,100 +118,94 @@ object stackMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudformation/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Stack = js.native
-    @JSImport("@pulumi/aws/cloudformation/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Stack = js.native
-    @JSImport("@pulumi/aws/cloudformation/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StackState): Stack = js.native
-    @JSImport("@pulumi/aws/cloudformation/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StackState): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
     
     /**
       * Returns true if the given object is an instance of Stack.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudformation/stack", "Stack.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ Boolean]
   }
   
-  @js.native
   trait StackArgs extends StObject {
     
     /**
       * A list of capabilities.
       * Valid values: `CAPABILITY_IAM`, `CAPABILITY_NAMED_IAM`, or `CAPABILITY_AUTO_EXPAND`
       */
-    val capabilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val capabilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Set to true to disable rollback of the stack if stack creation failed.
       * Conflicts with `onFailure`.
       */
-    val disableRollback: js.UndefOr[Input[Boolean]] = js.native
+    val disableRollback: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of an IAM role that AWS CloudFormation assumes to create the stack. If you don't specify a value, AWS CloudFormation uses the role that was previously associated with the stack. If no role is available, AWS CloudFormation uses a temporary session that is generated from your user credentials.
       */
-    val iamRoleArn: js.UndefOr[Input[String]] = js.native
+    val iamRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Stack name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of SNS topic ARNs to publish stack related events.
       */
-    val notificationArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val notificationArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Action to be taken if stack creation fails. This must be
       * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disableRollback`.
       */
-    val onFailure: js.UndefOr[Input[String]] = js.native
+    val onFailure: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of Parameter structures that specify input parameters for the stack.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Structure containing the stack policy body.
       * Conflicts w/ `policyUrl`.
       */
-    val policyBody: js.UndefOr[Input[String]] = js.native
+    val policyBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Location of a file containing the stack policy.
       * Conflicts w/ `policyBody`.
       */
-    val policyUrl: js.UndefOr[Input[String]] = js.native
+    val policyUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of tags to associate with this stack.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Structure containing the template body (max size: 51,200 bytes).
       */
-    val templateBody: js.UndefOr[Input[String]] = js.native
+    val templateBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Location of a file containing the template body (max size: 460,800 bytes).
       */
-    val templateUrl: js.UndefOr[Input[String]] = js.native
+    val templateUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount of time that can pass before the stack status becomes `CREATE_FAILED`.
       */
-    val timeoutInMinutes: js.UndefOr[Input[Double]] = js.native
+    val timeoutInMinutes: js.UndefOr[Input[Double]] = js.undefined
   }
   object StackArgs {
     
@@ -307,83 +304,82 @@ object stackMod {
     }
   }
   
-  @js.native
   trait StackState extends StObject {
     
     /**
       * A list of capabilities.
       * Valid values: `CAPABILITY_IAM`, `CAPABILITY_NAMED_IAM`, or `CAPABILITY_AUTO_EXPAND`
       */
-    val capabilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val capabilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Set to true to disable rollback of the stack if stack creation failed.
       * Conflicts with `onFailure`.
       */
-    val disableRollback: js.UndefOr[Input[Boolean]] = js.native
+    val disableRollback: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of an IAM role that AWS CloudFormation assumes to create the stack. If you don't specify a value, AWS CloudFormation uses the role that was previously associated with the stack. If no role is available, AWS CloudFormation uses a temporary session that is generated from your user credentials.
       */
-    val iamRoleArn: js.UndefOr[Input[String]] = js.native
+    val iamRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Stack name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of SNS topic ARNs to publish stack related events.
       */
-    val notificationArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val notificationArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Action to be taken if stack creation fails. This must be
       * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disableRollback`.
       */
-    val onFailure: js.UndefOr[Input[String]] = js.native
+    val onFailure: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of outputs from the stack.
       */
-    val outputs: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val outputs: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A map of Parameter structures that specify input parameters for the stack.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Structure containing the stack policy body.
       * Conflicts w/ `policyUrl`.
       */
-    val policyBody: js.UndefOr[Input[String]] = js.native
+    val policyBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Location of a file containing the stack policy.
       * Conflicts w/ `policyBody`.
       */
-    val policyUrl: js.UndefOr[Input[String]] = js.native
+    val policyUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of tags to associate with this stack.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Structure containing the template body (max size: 51,200 bytes).
       */
-    val templateBody: js.UndefOr[Input[String]] = js.native
+    val templateBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Location of a file containing the template body (max size: 460,800 bytes).
       */
-    val templateUrl: js.UndefOr[Input[String]] = js.native
+    val templateUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount of time that can pass before the stack status becomes `CREATE_FAILED`.
       */
-    val timeoutInMinutes: js.UndefOr[Input[Double]] = js.native
+    val timeoutInMinutes: js.UndefOr[Input[Double]] = js.undefined
   }
   object StackState {
     

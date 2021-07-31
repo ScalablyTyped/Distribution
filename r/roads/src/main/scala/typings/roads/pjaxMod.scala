@@ -8,14 +8,15 @@ import typings.std.MouseEvent
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pjaxMod {
   
   @JSImport("roads/types/client/pjax", JSImport.Default)
   @js.native
-  class default protected () extends RoadsPjax {
+  class default protected ()
+    extends StObject
+       with RoadsPjax {
     /**
       * Creates a new RoadsPjax instance. The road provided to this constructor will be the backbone of your PJAX requests.
       *
@@ -24,21 +25,18 @@ object pjaxMod {
       * @param {Window} window - The pages window object to help set page title and other items
       */
     def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window) = this()
-  }
-  
-  @js.native
-  trait RoadsPjax extends StObject {
     
+    /* CompleteClass */
     var _container_element: HTMLElement = js.native
-    
-    var _page_title: js.UndefOr[String] = js.native
     
     /**
       * Handles all click events, and directs
       * @param {MouseEvent} event
       */
-    /* protected */ def _pjaxEventMonitor(event: MouseEvent): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def _pjaxEventMonitor(event: MouseEvent): Unit = js.native
     
+    /* CompleteClass */
     var _road: typings.roads.roadMod.default = js.native
     
     /**
@@ -46,15 +44,18 @@ object pjaxMod {
       *
       * @param {HTMLFormElement} form
       */
-    /* protected */ def _roadsFormEvent(form: HTMLFormElement): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def _roadsFormEvent(form: HTMLFormElement): Unit = js.native
     
     /**
       * Follows the link and renders the UI
       *
       * @param  {HTMLAnchorElement} link
       */
-    /* protected */ def _roadsLinkEvent(link: HTMLAnchorElement): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def _roadsLinkEvent(link: HTMLAnchorElement): Unit = js.native
     
+    /* CompleteClass */
     var _window: Window = js.native
     
     /**
@@ -63,7 +64,8 @@ object pjaxMod {
       * @param {Document} document - The pages document object to properly parse and set cookies
       * @returns {RoadsPjax} this object, useful for chaining
       */
-    def addCookieMiddleware(document: Document): RoadsPjax = js.native
+    /* CompleteClass */
+    override def addCookieMiddleware(document: Document): RoadsPjax = js.native
     
     /**
       * Adds middleware to the assigned road whcih will adds setTitle to the PJAX object (as opposed to the request object like the setTitle middlweare does).
@@ -71,25 +73,94 @@ object pjaxMod {
       *
       * @returns {RoadsPjax} this, useful for chaining
       */
-    def addTitleMiddleware(): RoadsPjax = js.native
+    /* CompleteClass */
+    override def addTitleMiddleware(): RoadsPjax = js.native
     
     /**
       * Hooks up the PJAX functionality to the information provided via the constructor.
       */
-    def register(): Unit = js.native
+    /* CompleteClass */
+    override def register(): Unit = js.native
     
     /**
       *
       * @param {HTMLAnchorElement} element
       */
-    def registerAdditionalElement(element: HTMLAnchorElement): Unit = js.native
+    /* CompleteClass */
+    override def registerAdditionalElement(element: HTMLAnchorElement): Unit = js.native
     
     /**
       * The response from the roads request
       *
       * @param {Response} response_object
       */
-    def render(response_object: typings.roads.responseMod.default): Unit = js.native
+    /* CompleteClass */
+    override def render(response_object: typings.roads.responseMod.default): Unit = js.native
+  }
+  
+  trait RoadsPjax extends StObject {
+    
+    var _container_element: HTMLElement
+    
+    var _page_title: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Handles all click events, and directs
+      * @param {MouseEvent} event
+      */
+    /* protected */ def _pjaxEventMonitor(event: MouseEvent): Unit
+    
+    var _road: typings.roads.roadMod.default
+    
+    /**
+      * Submits the form and re-renders the UI
+      *
+      * @param {HTMLFormElement} form
+      */
+    /* protected */ def _roadsFormEvent(form: HTMLFormElement): Unit
+    
+    /**
+      * Follows the link and renders the UI
+      *
+      * @param  {HTMLAnchorElement} link
+      */
+    /* protected */ def _roadsLinkEvent(link: HTMLAnchorElement): Unit
+    
+    var _window: Window
+    
+    /**
+      * Assigns the cookie middlware to the road to properly handle cookies
+      *
+      * @param {Document} document - The pages document object to properly parse and set cookies
+      * @returns {RoadsPjax} this object, useful for chaining
+      */
+    def addCookieMiddleware(document: Document): RoadsPjax
+    
+    /**
+      * Adds middleware to the assigned road whcih will adds setTitle to the PJAX object (as opposed to the request object like the setTitle middlweare does).
+      * This allows you to easily update the page title.
+      *
+      * @returns {RoadsPjax} this, useful for chaining
+      */
+    def addTitleMiddleware(): RoadsPjax
+    
+    /**
+      * Hooks up the PJAX functionality to the information provided via the constructor.
+      */
+    def register(): Unit
+    
+    /**
+      *
+      * @param {HTMLAnchorElement} element
+      */
+    def registerAdditionalElement(element: HTMLAnchorElement): Unit
+    
+    /**
+      * The response from the roads request
+      *
+      * @param {Response} response_object
+      */
+    def render(response_object: typings.roads.responseMod.default): Unit
   }
   object RoadsPjax {
     

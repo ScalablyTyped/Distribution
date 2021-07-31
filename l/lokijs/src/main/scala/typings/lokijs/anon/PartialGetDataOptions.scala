@@ -7,20 +7,18 @@ import typings.lokijs.lokijsStrings.`shallow-recurse-objects`
 import typings.lokijs.lokijsStrings.shallow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.GetDataOptions> */
-@js.native
 trait PartialGetDataOptions extends StObject {
   
   var forceCloneMethod: js.UndefOr[
     `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects` | Null
-  ] = js.native
+  ] = js.undefined
   
-  var forceClones: js.UndefOr[Boolean] = js.native
+  var forceClones: js.UndefOr[Boolean] = js.undefined
   
-  var removeMeta: js.UndefOr[Boolean] = js.native
+  var removeMeta: js.UndefOr[Boolean] = js.undefined
 }
 object PartialGetDataOptions {
   

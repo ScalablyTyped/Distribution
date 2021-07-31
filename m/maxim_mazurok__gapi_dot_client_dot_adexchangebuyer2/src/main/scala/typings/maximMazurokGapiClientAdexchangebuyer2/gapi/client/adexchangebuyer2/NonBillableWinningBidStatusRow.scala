@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonBillableWinningBidStatusRow extends StObject {
   
   /** The number of bids with the specified status. */
-  var bidCount: js.UndefOr[MetricValue] = js.native
+  var bidCount: js.UndefOr[MetricValue] = js.undefined
   
   /** The values of all dimensions associated with metric values in this row. */
-  var rowDimensions: js.UndefOr[RowDimensions] = js.native
+  var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
   
   /** The status specifying why the winning bids were not billed. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object NonBillableWinningBidStatusRow {
   

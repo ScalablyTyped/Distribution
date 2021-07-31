@@ -33,15 +33,14 @@ import typings.awsSdkClientKmsNode.updateAliasExceptionsUnionMod.UpdateAliasExce
 import typings.awsSdkClientKmsNode.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NotFoundExceptionDetails> * / any */ @js.native
-  trait NotFoundException
-    extends CancelKeyDeletionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NotFoundExceptionDetails> * / any */ trait NotFoundException
+    extends StObject
+       with CancelKeyDeletionExceptionsUnion
        with CreateAliasExceptionsUnion
        with CreateGrantExceptionsUnion
        with DecryptExceptionsUnion
@@ -73,13 +72,13 @@ object typesNotFoundExceptionMod {
        with UpdateAliasExceptionsUnion
        with UpdateKeyDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException = js.native
+    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException
   }
   object NotFoundException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException): NotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): NotFoundException = {
+      val __obj = js.Dynamic.literal(name = "NotFoundException")
       __obj.asInstanceOf[NotFoundException]
     }
     
@@ -91,13 +90,12 @@ object typesNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait NotFoundExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object NotFoundExceptionDetails {
     

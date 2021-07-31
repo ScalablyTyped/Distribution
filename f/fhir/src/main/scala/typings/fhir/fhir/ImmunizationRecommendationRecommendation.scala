@@ -2,69 +2,69 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Vaccine administration recommendations
   */
-@js.native
-trait ImmunizationRecommendationRecommendation extends BackboneElement {
+trait ImmunizationRecommendationRecommendation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'doseNumber'.
     */
-  var _doseNumber: js.UndefOr[Element] = js.native
+  var _doseNumber: js.UndefOr[Element] = js.undefined
   
   /**
     * Date recommendation created
     */
-  var date: dateTime = js.native
+  var date: dateTime
   
   /**
     * Dates governing proposed immunization
     */
-  var dateCriterion: js.UndefOr[js.Array[ImmunizationRecommendationRecommendationDateCriterion]] = js.native
+  var dateCriterion: js.UndefOr[js.Array[ImmunizationRecommendationRecommendationDateCriterion]] = js.undefined
   
   /**
     * Recommended dose number
     */
-  var doseNumber: js.UndefOr[positiveInt] = js.native
+  var doseNumber: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Vaccine administration status
     */
-  var forecastStatus: CodeableConcept = js.native
+  var forecastStatus: CodeableConcept
   
   /**
     * Protocol used by recommendation
     */
-  var protocol: js.UndefOr[ImmunizationRecommendationRecommendationProtocol] = js.native
+  var protocol: js.UndefOr[ImmunizationRecommendationRecommendationProtocol] = js.undefined
   
   /**
     * Past immunizations supporting recommendation
     */
-  var supportingImmunization: js.UndefOr[js.Array[Reference]] = js.native
+  var supportingImmunization: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Patient observations supporting recommendation
     */
-  var supportingPatientInformation: js.UndefOr[js.Array[Reference]] = js.native
+  var supportingPatientInformation: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Disease to be immunized against
     */
-  var targetDisease: js.UndefOr[CodeableConcept] = js.native
+  var targetDisease: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Vaccine recommendation applies to
     */
-  var vaccineCode: js.UndefOr[CodeableConcept] = js.native
+  var vaccineCode: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ImmunizationRecommendationRecommendation {
   

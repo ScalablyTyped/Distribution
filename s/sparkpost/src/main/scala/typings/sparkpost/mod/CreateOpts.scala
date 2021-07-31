@@ -2,17 +2,15 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOpts extends StObject {
   
   /**
     * Domain (or subdomain) name for which SparkPost will receive inbound emails
     *
     */
-  var domain: String = js.native
+  var domain: String
 }
 object CreateOpts {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserRequest extends StObject {
   
   /**
     * A system-assigned unique identifier for a server instance that has the user assigned to it.
     */
-  var ServerId: typings.awsSdk.transferMod.ServerId = js.native
+  var ServerId: typings.awsSdk.transferMod.ServerId
   
   /**
     * A unique string that identifies a user that is being deleted from a server.
     */
-  var UserName: typings.awsSdk.transferMod.UserName = js.native
+  var UserName: typings.awsSdk.transferMod.UserName
 }
 object DeleteUserRequest {
   

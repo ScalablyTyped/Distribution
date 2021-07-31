@@ -6,28 +6,28 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a single page of a {@link Wizard}
   * @since OOo 3.3
   */
-@js.native
-trait XWizardPage extends XComponent {
+trait XWizardPage
+  extends StObject
+     with XComponent {
   
   /**
     * denotes the ID of the page.
     *
     * Within a wizard, no two pages are allowed to have the same ID.
     */
-  var PageId: Double = js.native
+  var PageId: Double
   
   /** provides read-only access to the window of the page */
-  var Window: XWindow = js.native
+  var Window: XWindow
   
   /** called when the page is activated */
-  def activatePage(): Unit = js.native
+  def activatePage(): Unit
   
   /**
     * determines whether it is allowed to travel to a later page in the wizard
@@ -38,7 +38,7 @@ trait XWizardPage extends XComponent {
     * If checked for validity is expensive, or if you prefer giving your user more detailed feedback on validity than a disabled `Next` button in the
     * wizard, then move your checks to the {@link commitPage()} method.
     */
-  def canAdvance(): Boolean = js.native
+  def canAdvance(): Boolean
   
   /**
     * is called when the page is about to be left
@@ -46,7 +46,7 @@ trait XWizardPage extends XComponent {
     * An implementation can veto the leave by returning `FALSE` here. Usually, the decision about this depends on the current state of the page.
     * @param Reason is one of the {@link WizardTravelType} constants denoting the reason why the page should be committed.
     */
-  def commitPage(Reason: Double): Boolean = js.native
+  def commitPage(Reason: Double): Boolean
 }
 object XWizardPage {
   

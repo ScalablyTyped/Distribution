@@ -2,19 +2,17 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An array of 64-bit words.
   */
-@js.native
 trait X64WordArray extends StObject {
   
   /**
     * The number of significant bytes in this word array.
     */
-  var sigBytes: Double = js.native
+  var sigBytes: Double
   
   /**
     * Converts this 64-bit word array to a 32-bit word array.
@@ -25,12 +23,12 @@ trait X64WordArray extends StObject {
     *
     *     var x32WordArray = x64WordArray.toX32();
     */
-  def toX32(): WordArray = js.native
+  def toX32(): WordArray
   
   /**
     * The array of CryptoJS.x64.Word objects.
     */
-  var words: js.Array[Double] = js.native
+  var words: js.Array[Double]
 }
 object X64WordArray {
   

@@ -2,25 +2,23 @@ package typings.raygun.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestDetails extends StObject {
   
-  var form: js.Object = js.native
+  var form: js.Object
   
-  var headers: js.Object = js.native
+  var headers: js.Object
   
-  var hostName: String = js.native
+  var hostName: String
   
-  var httpMethod: String = js.native
+  var httpMethod: String
   
-  var ipAddress: String = js.native
+  var ipAddress: String
   
-  var queryString: js.Object = js.native
+  var queryString: js.Object
   
-  var url: String = js.native
+  var url: String
 }
 object RequestDetails {
   

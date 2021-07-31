@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IGrayscaleFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIGrayscaleFilter
-  extends Instantiable0[IGrayscaleFilter]
+  extends StObject
+     with Instantiable0[IGrayscaleFilter]
      with Instantiable1[/* options */ js.Any, IGrayscaleFilter] {
   
   /**

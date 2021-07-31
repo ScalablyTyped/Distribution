@@ -2,13 +2,11 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIssueTypeParams extends StObject {
   
-  var substituteIssueTypeId: Double = js.native
+  var substituteIssueTypeId: Double
 }
 object DeleteIssueTypeParams {
   

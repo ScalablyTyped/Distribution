@@ -2,32 +2,30 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleUsage extends StObject {
   
   /**
     * Offset of the end of the rule body from the beginning of the stylesheet.
     */
-  var endOffset: Double = js.native
+  var endOffset: Double
   
   /**
     * Offset of the start of the rule (including selector) from the beginning of the stylesheet.
     */
-  var startOffset: Double = js.native
+  var startOffset: Double
   
   /**
     * The css style sheet identifier (absent for user agent stylesheet and user-specified
     * stylesheet rules) this rule came from.
     */
-  var styleSheetId: StyleSheetId = js.native
+  var styleSheetId: StyleSheetId
   
   /**
     * Indicates whether the rule was actually used by some element in the page.
     */
-  var used: Boolean = js.native
+  var used: Boolean
 }
 object RuleUsage {
   

@@ -2,15 +2,13 @@ package typings.fhirKitClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseUrl extends StObject {
   
-  var baseUrl: String = js.native
+  var baseUrl: String
   
-  var customHeaders: js.UndefOr[typings.request.mod.Headers] = js.native
+  var customHeaders: js.UndefOr[typings.request.mod.Headers] = js.undefined
 }
 object BaseUrl {
   

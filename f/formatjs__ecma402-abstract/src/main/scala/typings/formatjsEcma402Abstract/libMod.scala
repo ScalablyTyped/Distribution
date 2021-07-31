@@ -91,61 +91,53 @@ import typings.std.Set
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ArrayCreate")
+  @JSImport("@formatjs/ecma402-abstract/lib", JSImport.Namespace)
   @js.native
-  def ArrayCreate(len: Double): js.Array[_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "BasicFormatMatcher")
-  @js.native
-  def BasicFormatMatcher(options: DateTimeFormatOptions, formats: js.Array[Formats]): Formats = js.native
+  @scala.inline
+  def ArrayCreate(len: Double): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayCreate")(len.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "BestFitFormatMatcher")
-  @js.native
-  def BestFitFormatMatcher(options: DateTimeFormatOptions, formats: js.Array[Formats]): Formats = js.native
+  @scala.inline
+  def BasicFormatMatcher(options: DateTimeFormatOptions, formats: js.Array[Formats]): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("BasicFormatMatcher")(options.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalCodeForDisplayNames")
-  @js.native
-  def CanonicalCodeForDisplayNames_currency(`type`: currency, code: String): String = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalCodeForDisplayNames")
-  @js.native
-  def CanonicalCodeForDisplayNames_language(`type`: language, code: String): String = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalCodeForDisplayNames")
-  @js.native
-  def CanonicalCodeForDisplayNames_region(`type`: region, code: String): String = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalCodeForDisplayNames")
-  @js.native
-  def CanonicalCodeForDisplayNames_script(`type`: script, code: String): String = js.native
+  @scala.inline
+  def BestFitFormatMatcher(options: DateTimeFormatOptions, formats: js.Array[Formats]): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("BestFitFormatMatcher")(options.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalizeLocaleList")
-  @js.native
-  def CanonicalizeLocaleList(): js.Array[String] = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalizeLocaleList")
-  @js.native
-  def CanonicalizeLocaleList(locales: String): js.Array[String] = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalizeLocaleList")
-  @js.native
-  def CanonicalizeLocaleList(locales: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def CanonicalCodeForDisplayNames_currency(`type`: currency, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "CanonicalizeTimeZoneName")
-  @js.native
-  def CanonicalizeTimeZoneName(tz: String, hasTzDataUppercaseLinks: TzData): String = js.native
+  @scala.inline
+  def CanonicalCodeForDisplayNames_language(`type`: language, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ComputeExponent")
-  @js.native
-  def ComputeExponent(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `1`): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def CanonicalCodeForDisplayNames_region(`type`: region, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ComputeExponentForMagnitude")
-  @js.native
-  def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, hasGetInternalSlots: `1`): Double = js.native
+  @scala.inline
+  def CanonicalCodeForDisplayNames_script(`type`: script, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "CurrencyDigits")
-  @js.native
-  def CurrencyDigits(c: String, hasCurrencyDigitsData: CurrencyDigitsData): Double = js.native
+  @scala.inline
+  def CanonicalizeLocaleList(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def CanonicalizeLocaleList(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def CanonicalizeLocaleList(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def CanonicalizeTimeZoneName(tz: String, hasTzDataUppercaseLinks: TzData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def ComputeExponent(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `1`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  
+  @scala.inline
+  def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, hasGetInternalSlots: `1`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponentForMagnitude")(numberFormat.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def CurrencyDigits(c: String, hasCurrencyDigitsData: CurrencyDigitsData): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CurrencyDigits")(c.asInstanceOf[js.Any], hasCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("@formatjs/ecma402-abstract/lib", "DATE_TIME_PROPS")
   @js.native
@@ -153,204 +145,125 @@ object libMod {
     /* keyof @formatjs/ecma402-abstract.anon.PickIntlDateTimeFormatInt */ weekday | era | second | day | hour | minute | year | month | timeZoneName
   ] = js.native
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateFromTime")
-  @js.native
-  def DateFromTime(t: Double): Double = js.native
+  @scala.inline
+  def DateFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DateFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(
-    dateStyle: js.UndefOr[scala.Nothing],
-    timeStyle: js.UndefOr[scala.Nothing],
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: full, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: full, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: full, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: long, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: long, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: long, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: medium, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: medium, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: medium, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: short, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: short, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat(dateStyle: short, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_full(
-    dateStyle: js.UndefOr[scala.Nothing],
-    timeStyle: full,
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_full(
-    dateStyle: full,
-    timeStyle: js.UndefOr[scala.Nothing],
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_full(dateStyle: full, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_long(
-    dateStyle: js.UndefOr[scala.Nothing],
-    timeStyle: long,
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_long(
-    dateStyle: long,
-    timeStyle: js.UndefOr[scala.Nothing],
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_long(dateStyle: long, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_medium(
-    dateStyle: js.UndefOr[scala.Nothing],
-    timeStyle: medium,
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_medium(
-    dateStyle: medium,
-    timeStyle: js.UndefOr[scala.Nothing],
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_medium(dateStyle: medium, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_short(
-    dateStyle: js.UndefOr[scala.Nothing],
-    timeStyle: short,
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_short(
-    dateStyle: short,
-    timeStyle: js.UndefOr[scala.Nothing],
-    dataLocaleData: DateTimeFormatLocaleInternalData
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "DateTimeStyleFormat")
-  @js.native
-  def DateTimeStyleFormat_short(dateStyle: short, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = js.native
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: Unit, timeStyle: Unit, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: full, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: full, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: full, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: long, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: long, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: long, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: medium, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: medium, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: medium, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: short, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: short, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat(dateStyle: short, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "Day")
-  @js.native
-  def Day(t: Double): Double = js.native
+  @scala.inline
+  def DateTimeStyleFormat_full(dateStyle: Unit, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_full(dateStyle: full, timeStyle: Unit, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_full(dateStyle: full, timeStyle: full, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "DayFromYear")
-  @js.native
-  def DayFromYear(y: Double): Double = js.native
+  @scala.inline
+  def DateTimeStyleFormat_long(dateStyle: Unit, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_long(dateStyle: long, timeStyle: Unit, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_long(dateStyle: long, timeStyle: long, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "DayWithinYear")
-  @js.native
-  def DayWithinYear(t: Double): Double = js.native
+  @scala.inline
+  def DateTimeStyleFormat_medium(dateStyle: Unit, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_medium(dateStyle: medium, timeStyle: Unit, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_medium(dateStyle: medium, timeStyle: medium, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "DaysInYear")
-  @js.native
-  def DaysInYear(y: Double): `365` | `366` = js.native
+  @scala.inline
+  def DateTimeStyleFormat_short(dateStyle: Unit, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_short(dateStyle: short, timeStyle: Unit, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def DateTimeStyleFormat_short(dateStyle: short, timeStyle: short, dataLocaleData: DateTimeFormatLocaleInternalData): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("DateTimeStyleFormat")(dateStyle.asInstanceOf[js.Any], timeStyle.asInstanceOf[js.Any], dataLocaleData.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatDateTimeRange")
-  @js.native
+  @scala.inline
+  def Day(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Day")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def DayFromYear(y: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DayFromYear")(y.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def DayWithinYear(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DayWithinYear")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def DaysInYear(y: Double): `365` | `366` = ^.asInstanceOf[js.Dynamic].applyDynamic("DaysInYear")(y.asInstanceOf[js.Any]).asInstanceOf[`365` | `366`]
+  
+  @scala.inline
   def FormatDateTimeRange(
     dtf: DateTimeFormat,
     x: Double,
     y: Double,
-    implDetails: FormatDateTimePatternImplDetails with ToLocalTimeImplDetails
-  ): String = js.native
+    implDetails: FormatDateTimePatternImplDetails & ToLocalTimeImplDetails
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatDateTimeRange")(dtf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatDateTimeRangeToParts")
-  @js.native
+  @scala.inline
   def FormatDateTimeRangeToParts(
     dtf: DateTimeFormat,
     x: Double,
     y: Double,
-    implDetails: FormatDateTimePatternImplDetails with ToLocalTimeImplDetails
-  ): js.Array[_] = js.native
+    implDetails: FormatDateTimePatternImplDetails & ToLocalTimeImplDetails
+  ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatDateTimeRangeToParts")(dtf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatDateTimeToParts")
-  @js.native
+  @scala.inline
   def FormatDateTimeToParts_2(
     dtf: DateTimeFormat,
     x: Double,
     implDetails: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(dtf : std.Intl.DateTimeFormat, x : number, implDetails : @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/DateTimeFormat/ToLocalTime.ToLocalTimeImplDetails & @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/DateTimeFormat/FormatDateTimePattern.FormatDateTimePatternImplDetails): std.Array<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.IntlDateTimeFormatPart>>[2] */ js.Any
-  ): js.Array[IntlDateTimeFormatPart] = js.native
+  ): js.Array[IntlDateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatDateTimeToParts")(dtf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntlDateTimeFormatPart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatDateTime")
-  @js.native
+  @scala.inline
   def FormatDateTime_2(
     dtf: DateTimeFormat,
     x: Double,
     implDetails: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(dtf : std.Intl.DateTimeFormat, x : number, implDetails : @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/DateTimeFormat/ToLocalTime.ToLocalTimeImplDetails & @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/DateTimeFormat/FormatDateTimePattern.FormatDateTimePatternImplDetails): std.Array<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.IntlDateTimeFormatPart>>[2] */ js.Any
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatDateTime")(dtf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatNumericToParts")
-  @js.native
-  def FormatNumericToParts(nf: NumberFormat, x: Double, implDetails: `1`): js.Array[NumberFormatPart] = js.native
+  @scala.inline
+  def FormatNumericToParts(nf: NumberFormat, x: Double, implDetails: `1`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericToParts")(nf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatNumericToString")
-  @js.native
-  def FormatNumericToString(intlObject: PickNumberFormatDigitInteMaximumFractionDigits, x: Double): FormattedString = js.native
+  @scala.inline
+  def FormatNumericToString(intlObject: PickNumberFormatDigitInteMaximumFractionDigits, x: Double): FormattedString = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericToString")(intlObject.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[FormattedString]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatRelativeTime")
-  @js.native
-  def FormatRelativeTime(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `2`): String = js.native
+  @scala.inline
+  def FormatRelativeTime(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatRelativeTime")(rtf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "FormatRelativeTimeToParts")
-  @js.native
-  def FormatRelativeTimeToParts(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `2`): js.Array[RelativeTimePart] = js.native
+  @scala.inline
+  def FormatRelativeTimeToParts(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `2`): js.Array[RelativeTimePart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatRelativeTimeToParts")(rtf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[RelativeTimePart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "GetNumberOption")
-  @js.native
-  def GetNumberOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](options: T, property: K, minimum: Double, maximum: Double, fallback: Double): Double = js.native
+  @scala.inline
+  def GetNumberOption[T /* <: js.Object */, K /* <: /* keyof T */ String */](options: T, property: K, minimum: Double, maximum: Double, fallback: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNumberOption")(options.asInstanceOf[js.Any], property.asInstanceOf[js.Any], minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "GetOperands")
-  @js.native
-  def GetOperands(s: String): OperandsRecord = js.native
+  @scala.inline
+  def GetOperands(s: String): OperandsRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperands")(s.asInstanceOf[js.Any]).asInstanceOf[OperandsRecord]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "GetOption")
-  @js.native
-  def GetOption_boolean[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: boolean_, values: js.UndefOr[scala.Nothing], fallback: F): (Exclude[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
-    js.UndefOr[scala.Nothing]
-  ]) | F = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "GetOption")
-  @js.native
+  @scala.inline
   def GetOption_boolean[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](
     opts: T,
     prop: K,
@@ -361,16 +274,21 @@ object libMod {
     fallback: F
   ): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
-    js.UndefOr[scala.Nothing]
-  ]) | F = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "GetOption")
-  @js.native
-  def GetOption_string[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: string_, values: js.UndefOr[scala.Nothing], fallback: F): (Exclude[
+    Unit
+  ]) | F = (^.asInstanceOf[js.Dynamic].applyDynamic("GetOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
-    js.UndefOr[scala.Nothing]
-  ]) | F = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "GetOption")
-  @js.native
+    Unit
+  ]) | F]
+  @scala.inline
+  def GetOption_boolean[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: boolean_, values: Unit, fallback: F): (Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
+    Unit
+  ]) | F = (^.asInstanceOf[js.Dynamic].applyDynamic("GetOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
+    Unit
+  ]) | F]
+  
+  @scala.inline
   def GetOption_string[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](
     opts: T,
     prop: K,
@@ -381,286 +299,257 @@ object libMod {
     fallback: F
   ): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
-    js.UndefOr[scala.Nothing]
-  ]) | F = js.native
+    Unit
+  ]) | F = (^.asInstanceOf[js.Dynamic].applyDynamic("GetOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
+    Unit
+  ]) | F]
+  @scala.inline
+  def GetOption_string[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: string_, values: Unit, fallback: F): (Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
+    Unit
+  ]) | F = (^.asInstanceOf[js.Dynamic].applyDynamic("GetOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
+    Unit
+  ]) | F]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "HasOwnProperty")
-  @js.native
-  def HasOwnProperty(o: js.Object, prop: String): Boolean = js.native
+  @scala.inline
+  def HasOwnProperty(o: js.Object, prop: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("HasOwnProperty")(o.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "HourFromTime")
-  @js.native
-  def HourFromTime(t: Double): Double = js.native
+  @scala.inline
+  def HourFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("HourFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "InLeapYear")
-  @js.native
-  def InLeapYear(t: Double): `0` | typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1` = js.native
+  @scala.inline
+  def InLeapYear(t: Double): `0` | typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1` = ^.asInstanceOf[js.Dynamic].applyDynamic("InLeapYear")(t.asInstanceOf[js.Any]).asInstanceOf[`0` | typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1`]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeDateTimeFormat")
-  @js.native
-  def InitializeDateTimeFormat(
-    dtf: DateTimeFormat,
-    locales: js.UndefOr[scala.Nothing],
-    opts: js.UndefOr[scala.Nothing],
-    hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeDateTimeFormat")
-  @js.native
-  def InitializeDateTimeFormat(
-    dtf: DateTimeFormat,
-    locales: js.UndefOr[scala.Nothing],
-    opts: DateTimeFormatOptions,
-    hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeDateTimeFormat")
-  @js.native
+  @scala.inline
   def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: String,
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeDateTimeFormat")
-  @js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  @scala.inline
   def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: String,
     opts: DateTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeDateTimeFormat")
-  @js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  @scala.inline
   def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: js.Array[String],
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeDateTimeFormat")
-  @js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  @scala.inline
   def InitializeDateTimeFormat(
     dtf: DateTimeFormat,
     locales: js.Array[String],
     opts: DateTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
-  ): DateTimeFormat = js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  @scala.inline
+  def InitializeDateTimeFormat(
+    dtf: DateTimeFormat,
+    locales: Unit,
+    opts: Unit,
+    hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  @scala.inline
+  def InitializeDateTimeFormat(
+    dtf: DateTimeFormat,
+    locales: Unit,
+    opts: DateTimeFormatOptions,
+    hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks: GetDefaultTimeZone
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeDateTimeFormat")(dtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesLocaleDataGetDefaultLocaleGetDefaultTimeZoneRelevantExtensionKeysTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeNumberFormat")
-  @js.native
-  def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: js.UndefOr[scala.Nothing],
-    opts: js.UndefOr[scala.Nothing],
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
-  ): NumberFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeNumberFormat")
-  @js.native
-  def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: js.UndefOr[scala.Nothing],
-    opts: NumberFormatOptions,
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
-  ): NumberFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeNumberFormat")
-  @js.native
+  @scala.inline
   def InitializeNumberFormat(
     nf: NumberFormat,
     locales: String,
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
-  ): NumberFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeNumberFormat")
-  @js.native
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  @scala.inline
   def InitializeNumberFormat(
     nf: NumberFormat,
     locales: String,
     opts: NumberFormatOptions,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
-  ): NumberFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeNumberFormat")
-  @js.native
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  @scala.inline
   def InitializeNumberFormat(
     nf: NumberFormat,
     locales: js.Array[String],
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
-  ): NumberFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeNumberFormat")
-  @js.native
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  @scala.inline
   def InitializeNumberFormat(
     nf: NumberFormat,
     locales: js.Array[String],
     opts: NumberFormatOptions,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
-  ): NumberFormat = js.native
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  @scala.inline
+  def InitializeNumberFormat(
+    nf: NumberFormat,
+    locales: Unit,
+    opts: Unit,
+    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  @scala.inline
+  def InitializeNumberFormat(
+    nf: NumberFormat,
+    locales: Unit,
+    opts: NumberFormatOptions,
+    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializePluralRules")
-  @js.native
-  def InitializePluralRules(
-    pl: PluralRules,
-    locales: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
-  ): PluralRules = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializePluralRules")
-  @js.native
-  def InitializePluralRules(
-    pl: PluralRules,
-    locales: js.UndefOr[scala.Nothing],
-    options: PluralRulesOptions,
-    hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
-  ): PluralRules = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializePluralRules")
-  @js.native
+  @scala.inline
   def InitializePluralRules(
     pl: PluralRules,
     locales: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
-  ): PluralRules = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializePluralRules")
-  @js.native
+  ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
+  @scala.inline
   def InitializePluralRules(
     pl: PluralRules,
     locales: String,
     options: PluralRulesOptions,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
-  ): PluralRules = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializePluralRules")
-  @js.native
+  ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
+  @scala.inline
   def InitializePluralRules(
     pl: PluralRules,
     locales: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
-  ): PluralRules = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializePluralRules")
-  @js.native
+  ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
+  @scala.inline
   def InitializePluralRules(
     pl: PluralRules,
     locales: js.Array[String],
     options: PluralRulesOptions,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
-  ): PluralRules = js.native
+  ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
+  @scala.inline
+  def InitializePluralRules(
+    pl: PluralRules,
+    locales: Unit,
+    options: Unit,
+    hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
+  ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
+  @scala.inline
+  def InitializePluralRules(
+    pl: PluralRules,
+    locales: Unit,
+    options: PluralRulesOptions,
+    hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: AvailableLocalesGetDefaultLocale
+  ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeRelativeTimeFormat")
-  @js.native
-  def InitializeRelativeTimeFormat(
-    rtf: RelativeTimeFormat,
-    locales: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeRelativeTimeFormat")
-  @js.native
-  def InitializeRelativeTimeFormat(
-    rtf: RelativeTimeFormat,
-    locales: js.UndefOr[scala.Nothing],
-    options: IntlRelativeTimeFormatOptions,
-    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeRelativeTimeFormat")
-  @js.native
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeRelativeTimeFormat")
-  @js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: String,
     options: IntlRelativeTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeRelativeTimeFormat")
-  @js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "InitializeRelativeTimeFormat")
-  @js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: js.Array[String],
     options: IntlRelativeTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
-  ): RelativeTimeFormat = js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
+  def InitializeRelativeTimeFormat(
+    rtf: RelativeTimeFormat,
+    locales: Unit,
+    options: Unit,
+    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
+  def InitializeRelativeTimeFormat(
+    rtf: RelativeTimeFormat,
+    locales: Unit,
+    options: IntlRelativeTimeFormatOptions,
+    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: GetDefaultLocaleGetInternalSlots
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "IsSanctionedSimpleUnitIdentifier")
-  @js.native
-  def IsSanctionedSimpleUnitIdentifier(unitIdentifier: String): Boolean = js.native
+  @scala.inline
+  def IsSanctionedSimpleUnitIdentifier(unitIdentifier: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSanctionedSimpleUnitIdentifier")(unitIdentifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "IsValidTimeZoneName")
-  @js.native
-  def IsValidTimeZoneName(tz: String, hasTzDataUppercaseLinks: UppercaseLinks): Boolean = js.native
+  @scala.inline
+  def IsValidTimeZoneName(tz: String, hasTzDataUppercaseLinks: UppercaseLinks): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsValidTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "IsWellFormedCurrencyCode")
-  @js.native
-  def IsWellFormedCurrencyCode(currency: String): Boolean = js.native
+  @scala.inline
+  def IsWellFormedCurrencyCode(currency: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWellFormedCurrencyCode")(currency.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "IsWellFormedUnitIdentifier")
-  @js.native
-  def IsWellFormedUnitIdentifier(unit: String): Boolean = js.native
+  @scala.inline
+  def IsWellFormedUnitIdentifier(unit: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWellFormedUnitIdentifier")(unit.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "MakePartsList")
-  @js.native
-  def MakePartsList(pattern: String, unit: RelativeTimeUnit, parts: js.Array[typings.std.Intl.NumberFormatPart]): js.Array[RelativeTimePart] = js.native
+  @scala.inline
+  def MakePartsList(pattern: String, unit: RelativeTimeUnit, parts: js.Array[typings.std.Intl.NumberFormatPart]): js.Array[RelativeTimePart] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePartsList")(pattern.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[js.Array[RelativeTimePart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "MinFromTime")
-  @js.native
-  def MinFromTime(t: Double): Double = js.native
+  @scala.inline
+  def MinFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("MinFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "MonthFromTime")
-  @js.native
-  def MonthFromTime(t: Double): typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1` | `0` | `4` | `7` | typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`2` | `3` | `5` | `6` | `8` | `9` | `10` | `11` = js.native
+  @scala.inline
+  def MonthFromTime(t: Double): typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1` | `0` | `4` | `7` | typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`2` | `3` | `5` | `6` | `8` | `9` | `10` | `11` = ^.asInstanceOf[js.Dynamic].applyDynamic("MonthFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1` | `0` | `4` | `7` | typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`2` | `3` | `5` | `6` | `8` | `9` | `10` | `11`]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "PartitionDateTimePattern")
-  @js.native
+  @scala.inline
   def PartitionDateTimePattern(
     dtf: DateTimeFormat,
     x: Double,
-    implDetails: ToLocalTimeImplDetails with FormatDateTimePatternImplDetails
-  ): js.Array[IntlDateTimeFormatPart] = js.native
+    implDetails: ToLocalTimeImplDetails & FormatDateTimePatternImplDetails
+  ): js.Array[IntlDateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionDateTimePattern")(dtf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[IntlDateTimeFormatPart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "PartitionNumberPattern")
-  @js.native
-  def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `1`): js.Array[NumberFormatPart] = js.native
+  @scala.inline
+  def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `1`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberPattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "PartitionPattern")
-  @js.native
-  def PartitionPattern[T /* <: String */](pattern: String): js.Array[Type[T]] = js.native
+  @scala.inline
+  def PartitionPattern[T /* <: String */](pattern: String): js.Array[Type[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("PartitionPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[Type[T]]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "PartitionRelativeTimePattern")
-  @js.native
+  @scala.inline
   def PartitionRelativeTimePattern(
     rtf: RelativeTimeFormat,
     value: Double,
     unit: RelativeTimeFormattableUnit,
     hasGetInternalSlots: `2`
-  ): js.Array[RelativeTimePart] = js.native
+  ): js.Array[RelativeTimePart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionRelativeTimePattern")(rtf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[RelativeTimePart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ResolveLocale")
-  @js.native
+  @scala.inline
   def ResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]: any}
-    */ typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ResolveLocale with TopLevel[js.Any] */](
+    */ typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ResolveLocale & TopLevel[js.Any] */](
     availableLocales: Set[String],
     requestedLocales: js.Array[String],
     options: Dictk,
     relevantExtensionKeys: js.Array[K],
     localeData: Record[String, js.UndefOr[D]],
     getDefaultLocale: js.Function0[String]
-  ): ResolveLocaleResult = js.native
+  ): ResolveLocaleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("ResolveLocale")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], relevantExtensionKeys.asInstanceOf[js.Any], localeData.asInstanceOf[js.Any], getDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[ResolveLocaleResult]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ResolvePlural")
-  @js.native
-  def ResolvePlural(pl: PluralRules, n: Double, hasGetInternalSlotsPluralRuleSelect: GetInternalSlotsPluralRuleSelect): LDMLPluralRule = js.native
+  @scala.inline
+  def ResolvePlural(pl: PluralRules, n: Double, hasGetInternalSlotsPluralRuleSelect: GetInternalSlotsPluralRuleSelect): LDMLPluralRule = (^.asInstanceOf[js.Dynamic].applyDynamic("ResolvePlural")(pl.asInstanceOf[js.Any], n.asInstanceOf[js.Any], hasGetInternalSlotsPluralRuleSelect.asInstanceOf[js.Any])).asInstanceOf[LDMLPluralRule]
   
   @JSImport("@formatjs/ecma402-abstract/lib", "SANCTIONED_UNITS")
   @js.native
@@ -670,223 +559,164 @@ object libMod {
   @js.native
   val SIMPLE_UNITS: js.Array[String] = js.native
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "SameValue")
-  @js.native
-  def SameValue(x: js.Any, y: js.Any): Boolean = js.native
+  @scala.inline
+  def SameValue(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SameValue")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "SecFromTime")
-  @js.native
-  def SecFromTime(t: Double): Double = js.native
+  @scala.inline
+  def SecFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("SecFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "SetNumberFormatDigitOptions")
-  @js.native
+  @scala.inline
   def SetNumberFormatDigitOptions(
     internalSlots: NumberFormatDigitInternalSlots,
     opts: NumberFormatDigitOptions,
     mnfdDefault: Double,
     mxfdDefault: Double,
     notation: NumberFormatNotation
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatDigitOptions")(internalSlots.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], mnfdDefault.asInstanceOf[js.Any], mxfdDefault.asInstanceOf[js.Any], notation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "SetNumberFormatUnitOptions")
-  @js.native
-  def SetNumberFormatUnitOptions(nf: NumberFormat, options: js.UndefOr[scala.Nothing], hasGetInternalSlots: `1`): Unit = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "SetNumberFormatUnitOptions")
-  @js.native
-  def SetNumberFormatUnitOptions(nf: NumberFormat, options: NumberFormatOptions, hasGetInternalSlots: `1`): Unit = js.native
+  @scala.inline
+  def SetNumberFormatUnitOptions(nf: NumberFormat, options: Unit, hasGetInternalSlots: `1`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def SetNumberFormatUnitOptions(nf: NumberFormat, options: NumberFormatOptions, hasGetInternalSlots: `1`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "SingularRelativeTimeUnit")
-  @js.native
-  def SingularRelativeTimeUnit(unit: RelativeTimeFormattableUnit): RelativeTimeUnit = js.native
+  @scala.inline
+  def SingularRelativeTimeUnit(unit: RelativeTimeFormattableUnit): RelativeTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("SingularRelativeTimeUnit")(unit.asInstanceOf[js.Any]).asInstanceOf[RelativeTimeUnit]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "SupportedLocales")
-  @js.native
-  def SupportedLocales(availableLocales: Set[String], requestedLocales: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "SupportedLocales")
-  @js.native
-  def SupportedLocales(availableLocales: Set[String], requestedLocales: js.Array[String], options: LocaleMatcher): js.Array[String] = js.native
+  @scala.inline
+  def SupportedLocales(availableLocales: Set[String], requestedLocales: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("SupportedLocales")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def SupportedLocales(availableLocales: Set[String], requestedLocales: js.Array[String], options: LocaleMatcher): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("SupportedLocales")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "TimeClip")
-  @js.native
-  def TimeClip(time: Double): Double = js.native
+  @scala.inline
+  def TimeClip(time: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeClip")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "TimeFromYear")
-  @js.native
-  def TimeFromYear(y: Double): Double = js.native
+  @scala.inline
+  def TimeFromYear(y: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeFromYear")(y.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: js.UndefOr[scala.Nothing], required: js.UndefOr[scala.Nothing], defaults: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: js.UndefOr[scala.Nothing], required: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: js.UndefOr[scala.Nothing], required: String, defaults: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: Null, required: js.UndefOr[scala.Nothing], defaults: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: Null, required: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: Null, required: String, defaults: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: DateTimeFormatOptions): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: DateTimeFormatOptions, required: js.UndefOr[scala.Nothing], defaults: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: DateTimeFormatOptions, required: String): DateTimeFormatOptions = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToDateTimeOptions")
-  @js.native
-  def ToDateTimeOptions(options: DateTimeFormatOptions, required: String, defaults: String): DateTimeFormatOptions = js.native
+  @scala.inline
+  def ToDateTimeOptions(): DateTimeFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")().asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: Null, required: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: Null, required: String, defaults: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: Null, required: Unit, defaults: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: Unit, required: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: Unit, required: String, defaults: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: Unit, required: Unit, defaults: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: DateTimeFormatOptions): DateTimeFormatOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any]).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: DateTimeFormatOptions, required: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: DateTimeFormatOptions, required: String, defaults: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
+  @scala.inline
+  def ToDateTimeOptions(options: DateTimeFormatOptions, required: Unit, defaults: String): DateTimeFormatOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTimeOptions")(options.asInstanceOf[js.Any], required.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormatOptions]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToNumber")
-  @js.native
-  def ToNumber(`val`: js.Any): Double = js.native
+  @scala.inline
+  def ToNumber(`val`: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ToNumber")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToObject")
-  @js.native
-  def ToObject[T](arg: T): T = js.native
+  @scala.inline
+  def ToObject[T](arg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ToObject")(arg.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToRawFixed")
-  @js.native
-  def ToRawFixed(x: Double, minFraction: Double, maxFraction: Double): RawNumberFormatResult = js.native
+  @scala.inline
+  def ToRawFixed(x: Double, minFraction: Double, maxFraction: Double): RawNumberFormatResult = (^.asInstanceOf[js.Dynamic].applyDynamic("ToRawFixed")(x.asInstanceOf[js.Any], minFraction.asInstanceOf[js.Any], maxFraction.asInstanceOf[js.Any])).asInstanceOf[RawNumberFormatResult]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToRawPrecision")
-  @js.native
-  def ToRawPrecision(x: Double, minPrecision: Double, maxPrecision: Double): RawNumberFormatResult = js.native
+  @scala.inline
+  def ToRawPrecision(x: Double, minPrecision: Double, maxPrecision: Double): RawNumberFormatResult = (^.asInstanceOf[js.Dynamic].applyDynamic("ToRawPrecision")(x.asInstanceOf[js.Any], minPrecision.asInstanceOf[js.Any], maxPrecision.asInstanceOf[js.Any])).asInstanceOf[RawNumberFormatResult]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "ToString")
-  @js.native
-  def ToString(o: js.Any): String = js.native
+  @scala.inline
+  def ToString(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "Type")
-  @js.native
+  @scala.inline
   def Type(x: js.Any): js.UndefOr[
     typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Null | Undefined | Object | Number | typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Boolean | typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.String | Symbol | BigInt
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")(x.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+    typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Null | Undefined | Object | Number | typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Boolean | typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.String | Symbol | BigInt
+  ]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "WeekDay")
-  @js.native
-  def WeekDay(t: Double): Double = js.native
+  @scala.inline
+  def WeekDay(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("WeekDay")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "YearFromTime")
-  @js.native
-  def YearFromTime(t: Double): Double = js.native
+  @scala.inline
+  def YearFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("YearFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "defineProperty")
-  @js.native
-  def defineProperty[T /* <: js.Object */](target: T, name: String, hasValue: valueanyThisTypeany): Unit = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "defineProperty")
-  @js.native
-  def defineProperty[T /* <: js.Object */](target: T, name: js.Symbol, hasValue: valueanyThisTypeany): Unit = js.native
+  @scala.inline
+  def defineProperty[T /* <: js.Object */](target: T, name: String, hasValue: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def defineProperty[T /* <: js.Object */](target: T, name: js.Symbol, hasValue: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "_formatToParts")
-  @js.native
+  @scala.inline
   def formatToParts(
     numberResult: NumberResult,
     data: NumberFormatLocaleInternalData,
     pl: PluralRules,
     options: Currency
-  ): js.Array[NumberFormatPart] = js.native
+  ): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("_formatToParts")(numberResult.asInstanceOf[js.Any], data.asInstanceOf[js.Any], pl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "getInternalSlot")
-  @js.native
-  def getInternalSlot[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, field: Field): /* import warning: importer.ImportType#apply Failed type conversion: Internal[Field] */ js.Any = js.native
+  @scala.inline
+  def getInternalSlot[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, field: Field): /* import warning: importer.ImportType#apply Failed type conversion: Internal[Field] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternalSlot")(map.asInstanceOf[js.Any], pl.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Internal[Field] */ js.Any]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "getMagnitude")
-  @js.native
-  def getMagnitude(x: Double): Double = js.native
+  @scala.inline
+  def getMagnitude(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMagnitude")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "getMultiInternalSlots")
-  @js.native
-  def getMultiInternalSlots[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, fields: Field*): Pick[Internal, Field] = js.native
+  @scala.inline
+  def getMultiInternalSlots[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, fields: Field*): Pick[Internal, Field] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMultiInternalSlots")(map.asInstanceOf[js.Any], pl.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Pick[Internal, Field]]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "invariant")
-  @js.native
-  def invariant(condition: Boolean, message: String): /* asserts condition */ Boolean = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "invariant")
-  @js.native
-  def invariant(condition: Boolean, message: String, Err: js.Any): /* asserts condition */ Boolean = js.native
+  @scala.inline
+  def invariant(condition: Boolean, message: String): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
+  @scala.inline
+  def invariant(condition: Boolean, message: String, Err: js.Any): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], Err.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "isLiteralPart")
-  @js.native
-  def isLiteralPart(patternPart: Value): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "isLiteralPart")
-  @js.native
-  def isLiteralPart(patternPart: LiteralPart): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean = js.native
+  @scala.inline
+  def isLiteralPart(patternPart: Value): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralPart")(patternPart.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean]
+  @scala.inline
+  def isLiteralPart(patternPart: LiteralPart): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralPart")(patternPart.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/utils.LiteralPart */ Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "isMissingLocaleDataError")
-  @js.native
-  def isMissingLocaleDataError(e: Error): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean = js.native
+  @scala.inline
+  def isMissingLocaleDataError(e: Error): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMissingLocaleDataError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
-  def parseDateTimeSkeleton(skeleton: String): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
-  def parseDateTimeSkeleton(
-    skeleton: String,
-    rawPattern: js.UndefOr[scala.Nothing],
-    rangePatterns: js.UndefOr[scala.Nothing],
-    intervalFormatFallback: String
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
-  def parseDateTimeSkeleton(skeleton: String, rawPattern: js.UndefOr[scala.Nothing], rangePatterns: Record[String, String]): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
-  def parseDateTimeSkeleton(
-    skeleton: String,
-    rawPattern: js.UndefOr[scala.Nothing],
-    rangePatterns: Record[String, String],
-    intervalFormatFallback: String
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
-  def parseDateTimeSkeleton(skeleton: String, rawPattern: String): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
-  def parseDateTimeSkeleton(
-    skeleton: String,
-    rawPattern: String,
-    rangePatterns: js.UndefOr[scala.Nothing],
-    intervalFormatFallback: String
-  ): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
-  def parseDateTimeSkeleton(skeleton: String, rawPattern: String, rangePatterns: Record[String, String]): Formats = js.native
-  @JSImport("@formatjs/ecma402-abstract/lib", "parseDateTimeSkeleton")
-  @js.native
+  @scala.inline
+  def parseDateTimeSkeleton(skeleton: String): Formats = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any]).asInstanceOf[Formats]
+  @scala.inline
+  def parseDateTimeSkeleton(skeleton: String, rawPattern: String): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any], rawPattern.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def parseDateTimeSkeleton(skeleton: String, rawPattern: String, rangePatterns: Unit, intervalFormatFallback: String): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any], rawPattern.asInstanceOf[js.Any], rangePatterns.asInstanceOf[js.Any], intervalFormatFallback.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def parseDateTimeSkeleton(skeleton: String, rawPattern: String, rangePatterns: Record[String, String]): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any], rawPattern.asInstanceOf[js.Any], rangePatterns.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
   def parseDateTimeSkeleton(
     skeleton: String,
     rawPattern: String,
     rangePatterns: Record[String, String],
     intervalFormatFallback: String
-  ): Formats = js.native
+  ): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any], rawPattern.asInstanceOf[js.Any], rangePatterns.asInstanceOf[js.Any], intervalFormatFallback.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def parseDateTimeSkeleton(skeleton: String, rawPattern: Unit, rangePatterns: Unit, intervalFormatFallback: String): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any], rawPattern.asInstanceOf[js.Any], rangePatterns.asInstanceOf[js.Any], intervalFormatFallback.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def parseDateTimeSkeleton(skeleton: String, rawPattern: Unit, rangePatterns: Record[String, String]): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any], rawPattern.asInstanceOf[js.Any], rangePatterns.asInstanceOf[js.Any])).asInstanceOf[Formats]
+  @scala.inline
+  def parseDateTimeSkeleton(
+    skeleton: String,
+    rawPattern: Unit,
+    rangePatterns: Record[String, String],
+    intervalFormatFallback: String
+  ): Formats = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDateTimeSkeleton")(skeleton.asInstanceOf[js.Any], rawPattern.asInstanceOf[js.Any], rangePatterns.asInstanceOf[js.Any], intervalFormatFallback.asInstanceOf[js.Any])).asInstanceOf[Formats]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "removeUnitNamespace")
-  @js.native
-  def removeUnitNamespace(unit: String): String = js.native
+  @scala.inline
+  def removeUnitNamespace(unit: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUnitNamespace")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "setInternalSlot")
-  @js.native
+  @scala.inline
   def setInternalSlot[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](
     map: WeakMap[Instance, Internal],
     pl: Instance,
     field: Field,
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<Internal>[Field] */ js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInternalSlot")(map.asInstanceOf[js.Any], pl.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@formatjs/ecma402-abstract/lib", "setMultiInternalSlots")
-  @js.native
-  def setMultiInternalSlots[Instance /* <: js.Object */, Internal /* <: js.Object */, K /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, props: Pick[NonNullable[Internal], K]): Unit = js.native
+  @scala.inline
+  def setMultiInternalSlots[Instance /* <: js.Object */, Internal /* <: js.Object */, K /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, props: Pick[NonNullable[Internal], K]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMultiInternalSlots")(map.asInstanceOf[js.Any], pl.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

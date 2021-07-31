@@ -2,17 +2,15 @@ package typings.ioredis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandOptions extends StObject {
   
-  var errorStack: js.UndefOr[String] = js.native
+  var errorStack: js.UndefOr[String] = js.undefined
   
-  var keyPrefix: js.UndefOr[String] = js.native
+  var keyPrefix: js.UndefOr[String] = js.undefined
   
-  var replyEncoding: js.UndefOr[String | Null] = js.native
+  var replyEncoding: js.UndefOr[String | Null] = js.undefined
 }
 object CommandOptions {
   

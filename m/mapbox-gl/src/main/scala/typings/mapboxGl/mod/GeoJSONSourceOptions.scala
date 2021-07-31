@@ -6,44 +6,42 @@ import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Geometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoJSONSourceOptions extends StObject {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var buffer: js.UndefOr[Double] = js.native
+  var buffer: js.UndefOr[Double] = js.undefined
   
-  var cluster: js.UndefOr[Double | Boolean] = js.native
+  var cluster: js.UndefOr[Double | Boolean] = js.undefined
   
-  var clusterMaxZoom: js.UndefOr[Double] = js.native
+  var clusterMaxZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of points necessary to form a cluster if clustering is enabled. Defaults to `2`.
     */
-  var clusterMinPoints: js.UndefOr[Double] = js.native
+  var clusterMinPoints: js.UndefOr[Double] = js.undefined
   
-  var clusterProperties: js.UndefOr[js.Object] = js.native
+  var clusterProperties: js.UndefOr[js.Object] = js.undefined
   
-  var clusterRadius: js.UndefOr[Double] = js.native
+  var clusterRadius: js.UndefOr[Double] = js.undefined
   
   var data: js.UndefOr[
     (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
-  ] = js.native
+  ] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.native
+  var filter: js.UndefOr[js.Any] = js.undefined
   
-  var generateId: js.UndefOr[Boolean] = js.native
+  var generateId: js.UndefOr[Boolean] = js.undefined
   
-  var lineMetrics: js.UndefOr[Boolean] = js.native
+  var lineMetrics: js.UndefOr[Boolean] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var promoteId: js.UndefOr[PromoteIdSpecification] = js.native
+  var promoteId: js.UndefOr[PromoteIdSpecification] = js.undefined
   
-  var tolerance: js.UndefOr[Double] = js.native
+  var tolerance: js.UndefOr[Double] = js.undefined
 }
 object GeoJSONSourceOptions {
   

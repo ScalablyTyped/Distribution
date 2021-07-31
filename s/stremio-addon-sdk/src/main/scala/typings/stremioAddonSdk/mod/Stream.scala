@@ -3,7 +3,6 @@ package typings.stremioAddonSdk.mod
 import typings.stremioAddonSdk.anon.CountryWhitelist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,60 +10,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * It may be torrent info hash, HTTP URL, etc.
   */
-@js.native
 trait Stream extends StObject {
   
-  var behaviorHints: js.UndefOr[CountryWhitelist] = js.native
+  var behaviorHints: js.UndefOr[CountryWhitelist] = js.undefined
   
   /**
     * Meta Link or an external URL to the video, which should be opened in a browser (webpage).
     *
     * e.g. a link to Netflix.
     */
-  var externalUrl: js.UndefOr[String] = js.native
+  var externalUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The index of the video file within the torrent (from infoHash).
     *
     * If fileIdx is not specified, the largest file in the torrent will be selected.
     */
-  var fileIdx: js.UndefOr[Double] = js.native
+  var fileIdx: js.UndefOr[Double] = js.undefined
   
   /**
     * Info hash of a torrent file, and fileIdx is the index of the video file within the torrent.
     *
     * If fileIdx is not specified, the largest file in the torrent will be selected.
     */
-  var infoHash: js.UndefOr[String] = js.native
+  var infoHash: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the stream
     *
     * Usually a short name to identify the addon that provided the stream
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Array of Subtitle objects representing subtitles for this stream.
     */
-  var subtitles: js.UndefOr[js.Array[Subtitle]] = js.native
+  var subtitles: js.UndefOr[js.Array[Subtitle]] = js.undefined
   
   /**
     * Title of the stream
     *
     * Usually used for stream quality.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Direct URL to a video stream - http, https, rtmp protocols are supported.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Youtube video ID, plays using the built-in YouTube player.
     */
-  var ytId: js.UndefOr[String] = js.native
+  var ytId: js.UndefOr[String] = js.undefined
 }
 object Stream {
   

@@ -3,16 +3,14 @@ package typings.awsLambda.anon
 import typings.awsLambda.cloudfrontMod.CloudFrontRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-lambda.aws-lambda/common/cloudfront.CloudFrontEvent & {  request :aws-lambda.aws-lambda/common/cloudfront.CloudFrontRequest} */
-@js.native
 trait CloudFrontEventrequestClo extends StObject {
   
-  var config: DistributionDomainName = js.native
+  var config: DistributionDomainName
   
-  var request: CloudFrontRequest = js.native
+  var request: CloudFrontRequest
 }
 object CloudFrontEventrequestClo {
   

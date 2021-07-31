@@ -2,107 +2,105 @@ package typings.owlcarousel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOwlCarouselOptions extends StObject {
   
-  var addClassActive: js.UndefOr[Boolean] = js.native
+  var addClassActive: js.UndefOr[Boolean] = js.undefined
   
-  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoHeight: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlay: js.UndefOr[js.Any] = js.native
+  var autoPlay: js.UndefOr[js.Any] = js.undefined
   
-  var baseClass: js.UndefOr[String] = js.native
+  var baseClass: js.UndefOr[String] = js.undefined
   
-  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   // callbacks
-  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var dragBeforeAnimFinish: js.UndefOr[Boolean] = js.native
+  var dragBeforeAnimFinish: js.UndefOr[Boolean] = js.undefined
   
   // options
-  var items: js.UndefOr[Double] = js.native
+  var items: js.UndefOr[Double] = js.undefined
   
-  var itemsCustom: js.UndefOr[js.Any] = js.native
+  var itemsCustom: js.UndefOr[js.Any] = js.undefined
   
-  var itemsDesktop: js.UndefOr[js.Array[Double]] = js.native
+  var itemsDesktop: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var itemsDesktopSmall: js.UndefOr[js.Array[Double]] = js.native
+  var itemsDesktopSmall: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var itemsMobile: js.UndefOr[js.Array[Double]] = js.native
+  var itemsMobile: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var itemsScaleUp: js.UndefOr[Boolean] = js.native
+  var itemsScaleUp: js.UndefOr[Boolean] = js.undefined
   
-  var itemsTablet: js.UndefOr[js.Array[Double]] = js.native
+  var itemsTablet: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var itemsTabletSmall: js.UndefOr[js.Any] = js.native
+  var itemsTabletSmall: js.UndefOr[js.Any] = js.undefined
   
-  var jsonPath: js.UndefOr[js.Any] = js.native
+  var jsonPath: js.UndefOr[js.Any] = js.undefined
   
-  var jsonSuccess: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+  var jsonSuccess: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
   
-  var lazyEffect: js.UndefOr[js.Any] = js.native
+  var lazyEffect: js.UndefOr[js.Any] = js.undefined
   
-  var lazyFollow: js.UndefOr[Boolean] = js.native
+  var lazyFollow: js.UndefOr[Boolean] = js.undefined
   
-  var lazyLoad: js.UndefOr[Boolean] = js.native
+  var lazyLoad: js.UndefOr[Boolean] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var mouseDrag: js.UndefOr[Boolean] = js.native
+  var mouseDrag: js.UndefOr[Boolean] = js.undefined
   
-  var nav: js.UndefOr[Boolean] = js.native
+  var nav: js.UndefOr[Boolean] = js.undefined
   
-  var navigation: js.UndefOr[Boolean] = js.native
+  var navigation: js.UndefOr[Boolean] = js.undefined
   
-  var navigationText: js.UndefOr[js.Any] = js.native
+  var navigationText: js.UndefOr[js.Any] = js.undefined
   
-  var pagination: js.UndefOr[Boolean] = js.native
+  var pagination: js.UndefOr[Boolean] = js.undefined
   
-  var paginationNumbers: js.UndefOr[Boolean] = js.native
+  var paginationNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var paginationSpeed: js.UndefOr[Double] = js.native
+  var paginationSpeed: js.UndefOr[Double] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
-  var responsiveBaseWidth: js.UndefOr[JQuery | String] = js.native
+  var responsiveBaseWidth: js.UndefOr[JQuery | String] = js.undefined
   
-  var responsiveRefreshRate: js.UndefOr[Double] = js.native
+  var responsiveRefreshRate: js.UndefOr[Double] = js.undefined
   
-  var rewindNav: js.UndefOr[Boolean] = js.native
+  var rewindNav: js.UndefOr[Boolean] = js.undefined
   
-  var rewindSpeed: js.UndefOr[Double] = js.native
+  var rewindSpeed: js.UndefOr[Double] = js.undefined
   
-  var scrollPerPage: js.UndefOr[Boolean] = js.native
+  var scrollPerPage: js.UndefOr[Boolean] = js.undefined
   
-  var singleItem: js.UndefOr[Boolean] = js.native
+  var singleItem: js.UndefOr[Boolean] = js.undefined
   
-  var slideSpeed: js.UndefOr[Double] = js.native
+  var slideSpeed: js.UndefOr[Double] = js.undefined
   
-  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var stopOnHover: js.UndefOr[Boolean] = js.native
+  var stopOnHover: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var touchDrag: js.UndefOr[Boolean] = js.native
+  var touchDrag: js.UndefOr[Boolean] = js.undefined
   
-  var transitionStyle: js.UndefOr[js.Any] = js.native
+  var transitionStyle: js.UndefOr[js.Any] = js.undefined
 }
 object IOwlCarouselOptions {
   

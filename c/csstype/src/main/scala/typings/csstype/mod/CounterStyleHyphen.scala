@@ -2,31 +2,29 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CounterStyleHyphen extends StObject {
   
-  var `additive-symbols`: js.UndefOr[String] = js.native
+  var `additive-symbols`: js.UndefOr[String] = js.undefined
   
-  var fallback: js.UndefOr[String] = js.native
+  var fallback: js.UndefOr[String] = js.undefined
   
-  var negative: js.UndefOr[String] = js.native
+  var negative: js.UndefOr[String] = js.undefined
   
-  var pad: js.UndefOr[String] = js.native
+  var pad: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var range: js.UndefOr[CounterStyleRangeProperty] = js.native
+  var range: js.UndefOr[CounterStyleRangeProperty] = js.undefined
   
-  var `speak-as`: js.UndefOr[CounterStyleSpeakAsProperty] = js.native
+  var `speak-as`: js.UndefOr[CounterStyleSpeakAsProperty] = js.undefined
   
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
   
-  var symbols: js.UndefOr[String] = js.native
+  var symbols: js.UndefOr[String] = js.undefined
   
-  var system: js.UndefOr[CounterStyleSystemProperty] = js.native
+  var system: js.UndefOr[CounterStyleSystemProperty] = js.undefined
 }
 object CounterStyleHyphen {
   

@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod.applicationloadbalancing
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerSubnetMapping extends StObject {
   
   /**
     * The allocation ID of the Elastic IP address.
     */
-  var allocationId: js.UndefOr[Input[String]] = js.native
+  var allocationId: js.UndefOr[Input[String]] = js.undefined
   
-  var outpostId: js.UndefOr[Input[String]] = js.native
+  var outpostId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A private ipv4 address within the subnet to assign to the internal-facing load balancer.
     */
-  var privateIpv4Address: js.UndefOr[Input[String]] = js.native
+  var privateIpv4Address: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The id of the subnet of which to attach to the load balancer. You can specify only one subnet per Availability Zone.
     */
-  var subnetId: Input[String] = js.native
+  var subnetId: Input[String]
 }
 object LoadBalancerSubnetMapping {
   

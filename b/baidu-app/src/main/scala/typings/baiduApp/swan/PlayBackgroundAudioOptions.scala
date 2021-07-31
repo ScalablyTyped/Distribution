@@ -2,21 +2,20 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayBackgroundAudioOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 封面URL */
-  var coverImgUrl: js.UndefOr[String] = js.native
+  var coverImgUrl: js.UndefOr[String] = js.undefined
   
   /** 音乐链接 */
-  var dataUrl: String = js.native
+  var dataUrl: String
   
   /** 音乐标题 */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PlayBackgroundAudioOptions {
   

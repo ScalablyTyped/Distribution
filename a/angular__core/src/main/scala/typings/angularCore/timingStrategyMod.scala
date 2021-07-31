@@ -4,23 +4,21 @@ import typings.angularCore.queryDefinitionMod.NgQueryDefinition
 import typings.angularCore.queryDefinitionMod.QueryTiming
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timingStrategyMod {
   
-  @js.native
   trait TimingResult extends StObject {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var timing: QueryTiming | Null = js.native
+    var timing: QueryTiming | Null
   }
   object TimingResult {
     
     @scala.inline
     def apply(): TimingResult = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(timing = null)
       __obj.asInstanceOf[TimingResult]
     }
     
@@ -41,14 +39,13 @@ object timingStrategyMod {
     }
   }
   
-  @js.native
   trait TimingStrategy extends StObject {
     
     /** Detects the timing result for a given query. */
-    def detectTiming(query: NgQueryDefinition): TimingResult = js.native
+    def detectTiming(query: NgQueryDefinition): TimingResult
     
     /** Sets up the given strategy. Throws if the strategy could not be set up. */
-    def setup(): Unit = js.native
+    def setup(): Unit
   }
   object TimingStrategy {
     

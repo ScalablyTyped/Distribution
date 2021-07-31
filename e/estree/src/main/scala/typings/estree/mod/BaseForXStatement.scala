@@ -2,17 +2,17 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseForXStatement extends BaseNode {
+trait BaseForXStatement
+  extends StObject
+     with BaseNode {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var left: VariableDeclaration | Pattern = js.native
+  var left: VariableDeclaration | Pattern
   
-  var right: Expression = js.native
+  var right: Expression
 }
 object BaseForXStatement {
   

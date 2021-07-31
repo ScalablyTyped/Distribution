@@ -10,10 +10,10 @@ Fast and low overhead web framework, for Node.js
 | ------------------ | :-------------: |
 | Full name          | fastify |
 | Keywords           | web, framework, json, schema, open, api |
-| # releases         | 61 |
-| # dependents       | 360 |
-| # downloads        | 4941863 |
-| # stars            | 13 |
+| # releases         | 58 |
+| # dependents       | 438 |
+| # downloads        | 7139536 |
+| # stars            | 14 |
 
 ## Links
 - [Homepage](https://www.fastify.io/)

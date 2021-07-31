@@ -11,8 +11,8 @@ Lumino Core Utilities
 | Full name          | @lumino/coreutils |
 | Keywords           | - |
 | # releases         | 12 |
-| # dependents       | 136 |
-| # downloads        | 671932 |
+| # dependents       | 217 |
+| # downloads        | 1411209 |
 | # stars            | 0 |
 
 ## Links

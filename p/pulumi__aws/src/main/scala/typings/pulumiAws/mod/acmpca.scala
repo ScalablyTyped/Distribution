@@ -10,10 +10,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acmpca {
+  
+  @JSImport("@pulumi/aws", "acmpca")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "acmpca.CertificateAuthority")
   @js.native
@@ -32,6 +35,10 @@ object acmpca {
   /* static members */
   object CertificateAuthority {
     
+    @JSImport("@pulumi/aws", "acmpca.CertificateAuthority")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CertificateAuthority resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -41,32 +48,25 @@ object acmpca {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "acmpca.CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = js.native
-    @JSImport("@pulumi/aws", "acmpca.CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = js.native
-    @JSImport("@pulumi/aws", "acmpca.CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateAuthorityState): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = js.native
-    @JSImport("@pulumi/aws", "acmpca.CertificateAuthority.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.certificateAuthorityMod.CertificateAuthority]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.certificateAuthorityMod.CertificateAuthority]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateAuthorityState): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.certificateAuthorityMod.CertificateAuthority]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): typings.pulumiAws.certificateAuthorityMod.CertificateAuthority = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.certificateAuthorityMod.CertificateAuthority]
     
     /**
       * Returns true if the given object is an instance of CertificateAuthority.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "acmpca.CertificateAuthority.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "acmpca.getCertificateAuthority")
-  @js.native
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = js.native
-  @JSImport("@pulumi/aws", "acmpca.getCertificateAuthority")
-  @js.native
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = js.native
+  @scala.inline
+  def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
+  @scala.inline
+  def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
 }

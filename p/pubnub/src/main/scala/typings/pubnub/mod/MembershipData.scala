@@ -2,23 +2,21 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MembershipData extends StObject {
   
-  var created: String = js.native
+  var created: String
   
-  var custom: js.UndefOr[js.Object | Null] = js.native
+  var custom: js.UndefOr[js.Object | Null] = js.undefined
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var spaceId: String = js.native
+  var spaceId: String
   
-  var updated: String = js.native
+  var updated: String
   
-  var userId: String = js.native
+  var userId: String
 }
 object MembershipData {
   

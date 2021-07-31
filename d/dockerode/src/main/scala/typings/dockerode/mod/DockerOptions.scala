@@ -7,35 +7,33 @@ import typings.node.Buffer
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DockerOptions extends StObject {
   
-  var Promise: js.UndefOr[PromiseConstructor] = js.native
+  var Promise: js.UndefOr[PromiseConstructor] = js.undefined
   
-  var ca: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
+  var ca: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
   
-  var cert: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
+  var cert: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String | (js.Array[Buffer | KeyObject | String]) | Buffer] = js.native
+  var key: js.UndefOr[String | (js.Array[Buffer | KeyObject | String]) | Buffer] = js.undefined
   
-  var port: js.UndefOr[Double | String] = js.native
+  var port: js.UndefOr[Double | String] = js.undefined
   
-  var protocol: js.UndefOr[https | http | ssh] = js.native
+  var protocol: js.UndefOr[https | http | ssh] = js.undefined
   
-  var socketPath: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.undefined
   
-  var sshAuthAgent: js.UndefOr[String] = js.native
+  var sshAuthAgent: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object DockerOptions {
   

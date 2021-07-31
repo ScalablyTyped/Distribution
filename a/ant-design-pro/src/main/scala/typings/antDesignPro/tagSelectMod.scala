@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagSelectMod {
@@ -37,26 +36,25 @@ object tagSelectMod {
     var children: ReactElement | js.Array[ReactElement] = js.native
   }
   
-  @js.native
   trait TagSelectProps extends StObject {
     
-    var Option: TagSelectOptionProps = js.native
+    var Option: TagSelectOptionProps
     
-    var actionsText: js.UndefOr[CollapseText] = js.native
+    var actionsText: js.UndefOr[CollapseText] = js.undefined
     
-    var children: ReactElement | js.Array[ReactElement] = js.native
+    var children: ReactElement | js.Array[ReactElement]
     
-    var className: String = js.native
+    var className: String
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var hideCheckAll: js.UndefOr[Boolean] = js.native
+    var hideCheckAll: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Array[String], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Array[String], Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Array[Double | String]] = js.native
+    var value: js.UndefOr[js.Array[Double | String]] = js.undefined
   }
   object TagSelectProps {
     

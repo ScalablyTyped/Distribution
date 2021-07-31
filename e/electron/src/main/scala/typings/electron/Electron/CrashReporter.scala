@@ -3,10 +3,8 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrashReporter extends StObject {
   
   // Docs: https://electronjs.org/docs/api/crash-reporter
@@ -34,7 +32,7 @@ trait CrashReporter extends StObject {
     * 3 bytes.  On your crash reporting backend you should stitch together keys in
     * this format.
     */
-  def addExtraParameter(key: String, value: String): Unit = js.native
+  def addExtraParameter(key: String, value: String): Unit
   
   /**
     * The directory where crashes are temporarily stored before being uploaded.
@@ -43,7 +41,7 @@ trait CrashReporter extends StObject {
     *
     * @deprecated
     */
-  def getCrashesDirectory(): String = js.native
+  def getCrashesDirectory(): String
   
   /**
     * The date and ID of the last crash report. Only crash reports that have been
@@ -53,12 +51,12 @@ trait CrashReporter extends StObject {
     * 
   **Note:** Calling this method from the renderer process is deprecated.
     */
-  def getLastCrashReport(): CrashReport = js.native
+  def getLastCrashReport(): CrashReport
   
   /**
     * The current 'extra' parameters of the crash reporter.
     */
-  def getParameters(): Record[String, String] = js.native
+  def getParameters(): Record[String, String]
   
   /**
     * Whether reports should be submitted to the server. Set through the `start`
@@ -66,20 +64,20 @@ trait CrashReporter extends StObject {
     * 
   **Note:** Calling this method from the renderer process is deprecated.
     */
-  def getUploadToServer(): Boolean = js.native
+  def getUploadToServer(): Boolean
   
   /**
     * Returns all uploaded crash reports. Each report contains the date and uploaded
     * ID.
   **Note:** Calling this method from the renderer process is deprecated.
     */
-  def getUploadedReports(): js.Array[CrashReport] = js.native
+  def getUploadedReports(): js.Array[CrashReport]
   
   /**
     * Remove an extra parameter from the current set of parameters. Future crashes
     * will not include this parameter.
     */
-  def removeExtraParameter(key: String): Unit = js.native
+  def removeExtraParameter(key: String): Unit
   
   /**
     * This would normally be controlled by user preferences. This has no effect if
@@ -87,7 +85,7 @@ trait CrashReporter extends StObject {
     * 
   **Note:** Calling this method from the renderer process is deprecated.
     */
-  def setUploadToServer(uploadToServer: Boolean): Unit = js.native
+  def setUploadToServer(uploadToServer: Boolean): Unit
   
   /**
     * This method must be called before using any other `crashReporter` APIs. Once
@@ -114,7 +112,7 @@ trait CrashReporter extends StObject {
     * 
   **Note:** Calling this method from the renderer process is deprecated.
     */
-  def start(options: CrashReporterStartOptions): Unit = js.native
+  def start(options: CrashReporterStartOptions): Unit
 }
 object CrashReporter {
   

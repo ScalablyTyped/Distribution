@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetParametersResult extends StObject {
   
   /**
     * A list of parameters that are not formatted correctly or do not run during an execution.
     */
-  var InvalidParameters: js.UndefOr[ParameterNameList] = js.native
+  var InvalidParameters: js.UndefOr[ParameterNameList] = js.undefined
   
   /**
     * A list of details for a parameter.
     */
-  var Parameters: js.UndefOr[ParameterList] = js.native
+  var Parameters: js.UndefOr[ParameterList] = js.undefined
 }
 object GetParametersResult {
   

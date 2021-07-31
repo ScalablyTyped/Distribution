@@ -6,7 +6,6 @@ import typings.nodegit.strArrayMod.Strarray
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkoutOptionsMod {
@@ -14,7 +13,8 @@ object checkoutOptionsMod {
   @JSImport("nodegit/checkout-options", "CheckoutOptions")
   @js.native
   class CheckoutOptions ()
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     var ancestorLabel: js.UndefOr[String] = js.native
     
@@ -36,7 +36,7 @@ object checkoutOptionsMod {
     
     var notifyFlags: js.UndefOr[Double] = js.native
     
-    var notifyPayload: js.UndefOr[scala.Nothing] = js.native
+    var notifyPayload: Unit = js.native
     
     var ourLabel: js.UndefOr[String] = js.native
     
@@ -44,11 +44,11 @@ object checkoutOptionsMod {
     
     var perfdataCb: js.UndefOr[js.Any] = js.native
     
-    var perfdataPayload: js.UndefOr[scala.Nothing] = js.native
+    var perfdataPayload: Unit = js.native
     
     var progressCb: js.UndefOr[js.Any] = js.native
     
-    var progressPayload: js.UndefOr[scala.Nothing] = js.native
+    var progressPayload: Unit = js.native
     
     var targetDirectory: js.UndefOr[String] = js.native
     

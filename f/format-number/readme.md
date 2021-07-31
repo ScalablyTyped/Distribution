@@ -11,8 +11,8 @@ Formats numbers with separators every 3 digits and currency etc. Highly configur
 | Full name          | format-number |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 1536688 |
+| # dependents       | 40 |
+| # downloads        | 1536535 |
 | # stars            | 3 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionRestrictionRegex extends StObject {
   
   /**
     * A unique name representing this regular expression.
     */
-  var Label: js.UndefOr[RegexLabel] = js.native
+  var Label: js.UndefOr[RegexLabel] = js.undefined
   
   /**
     * The regular expression pattern that a string configuration option value with this restriction must match.
     */
-  var Pattern: js.UndefOr[RegexPattern] = js.native
+  var Pattern: js.UndefOr[RegexPattern] = js.undefined
 }
 object OptionRestrictionRegex {
   

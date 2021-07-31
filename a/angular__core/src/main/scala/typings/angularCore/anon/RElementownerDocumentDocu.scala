@@ -11,7 +11,6 @@ import typings.std.Document
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @angular/core.@angular/core.RElement & {  ownerDocument :std.Document} */
@@ -66,7 +65,7 @@ trait RElementownerDocumentDocu extends StObject {
   def removeChild(oldChild: RNode): RNode = js.native
   
   def removeEventListener(`type`: String): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
   def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
   def removeEventListener(`type`: String, listener: EventListener, options: Boolean): Unit = js.native
   

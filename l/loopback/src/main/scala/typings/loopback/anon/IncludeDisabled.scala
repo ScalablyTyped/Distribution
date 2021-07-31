@@ -2,13 +2,11 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeDisabled extends StObject {
   
-  var includeDisabled: Boolean = js.native
+  var includeDisabled: Boolean
 }
 object IncludeDisabled {
   

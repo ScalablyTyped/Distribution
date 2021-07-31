@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `30` extends StObject {
   
-  var name: mode = js.native
+  var name: mode
 }
 object `30` {
   
   @scala.inline
-  def apply(name: mode): `30` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `30` = {
+    val __obj = js.Dynamic.literal(name = "mode")
     __obj.asInstanceOf[`30`]
   }
   

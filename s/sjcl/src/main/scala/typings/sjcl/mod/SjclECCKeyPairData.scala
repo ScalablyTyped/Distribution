@@ -2,19 +2,17 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclECCKeyPairData extends StObject {
   
-  var curve: String = js.native
+  var curve: String
   
-  var point: String = js.native
+  var point: String
   
-  var secretKey: Boolean = js.native
+  var secretKey: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SjclECCKeyPairData {
   

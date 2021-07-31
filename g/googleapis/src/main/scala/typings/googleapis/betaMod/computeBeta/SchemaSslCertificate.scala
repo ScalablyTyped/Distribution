@@ -2,7 +2,6 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * from the user. (== resource_for beta.sslCertificates ==) (== resource_for
   * v1.sslCertificates ==)
   */
-@js.native
 trait SchemaSslCertificate extends StObject {
   
   /**
@@ -19,40 +17,40 @@ trait SchemaSslCertificate extends StObject {
     * certificate chain must be no greater than 5 certs long. The chain must
     * include at least one intermediate cert.
     */
-  var certificate: js.UndefOr[String] = js.native
+  var certificate: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Expire time of the certificate. RFC3339
     */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#sslCertificate for SSL
     * certificates.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration and status of a managed SSL certificate.
     */
-  var managed: js.UndefOr[SchemaSslCertificateManagedSslCertificate] = js.native
+  var managed: js.UndefOr[SchemaSslCertificateManagedSslCertificate] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -63,29 +61,29 @@ trait SchemaSslCertificate extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A write-only private key in PEM format. Only insert requests will include
     * this field.
     */
-  var privateKey: js.UndefOr[String] = js.native
+  var privateKey: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration and status of a self-managed SSL certificate.
     */
-  var selfManaged: js.UndefOr[SchemaSslCertificateSelfManagedSslCertificate] = js.native
+  var selfManaged: js.UndefOr[SchemaSslCertificateSelfManagedSslCertificate] = js.undefined
   
   /**
     * [Output Only] Domains associated with the certificate via Subject
     * Alternative Name.
     */
-  var subjectAlternativeNames: js.UndefOr[js.Array[String]] = js.native
+  var subjectAlternativeNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Optional) Specifies the type of SSL certificate, either
@@ -93,7 +91,7 @@ trait SchemaSslCertificate extends StObject {
     * certificate is self-managed and the fields certificate and private_key
     * are used.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaSslCertificate {
   

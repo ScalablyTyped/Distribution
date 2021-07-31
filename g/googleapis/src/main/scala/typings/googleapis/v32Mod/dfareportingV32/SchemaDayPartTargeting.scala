@@ -2,13 +2,11 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Day Part Targeting.
   */
-@js.native
 trait SchemaDayPartTargeting extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaDayPartTargeting extends StObject {
     * &quot;WEDNESDAY&quot; - &quot;THURSDAY&quot; - &quot;FRIDAY&quot; -
     * &quot;SATURDAY&quot;
     */
-  var daysOfWeek: js.UndefOr[js.Array[String]] = js.native
+  var daysOfWeek: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Hours of the day when the ad will serve, where 0 is midnight to 1 AM and
@@ -28,13 +26,13 @@ trait SchemaDayPartTargeting extends StObject {
     * Monday, Wednesdays, and Fridays at 9-10am and 3-5pm. Acceptable values
     * are 0 to 23, inclusive.
     */
-  var hoursOfDay: js.UndefOr[js.Array[Double]] = js.native
+  var hoursOfDay: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Whether or not to use the user&#39;s local time. If false, the
     * America/New York time zone applies.
     */
-  var userLocalTime: js.UndefOr[Boolean] = js.native
+  var userLocalTime: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDayPartTargeting {
   

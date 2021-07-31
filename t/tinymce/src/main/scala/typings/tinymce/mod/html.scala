@@ -3,7 +3,6 @@ package typings.tinymce.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html {
@@ -129,9 +128,9 @@ object html {
     def encodeAllRaw(text: String): String = js.native
     
     def encodeNamed(text: String): String = js.native
-    def encodeNamed(text: String, attr: js.UndefOr[scala.Nothing], entities: js.Object): String = js.native
     def encodeNamed(text: String, attr: Boolean): String = js.native
     def encodeNamed(text: String, attr: Boolean, entities: js.Object): String = js.native
+    def encodeNamed(text: String, attr: Unit, entities: js.Object): String = js.native
     
     def encodeNumeric(text: String): String = js.native
     def encodeNumeric(text: String, attr: Boolean): String = js.native
@@ -143,14 +142,13 @@ object html {
     def getEncodeFunc(name: String, entities: String): js.Function0[Unit] = js.native
   }
   
-  @js.native
   trait Styles extends StObject {
     
-    def parse(css: String): js.Object = js.native
+    def parse(css: String): js.Object
     
-    def serialize(styles: js.Object, elementName: String): String = js.native
+    def serialize(styles: js.Object, elementName: String): String
     
-    def toHex(color: String): String = js.native
+    def toHex(color: String): String
   }
   object Styles {
     
@@ -190,9 +188,9 @@ object html {
     def reset(): Unit = js.native
     
     def start(name: String): Unit = js.native
-    def start(name: String, attrs: js.UndefOr[scala.Nothing], empty: Boolean): Unit = js.native
-    def start(name: String, attrs: js.Array[_]): Unit = js.native
-    def start(name: String, attrs: js.Array[_], empty: Boolean): Unit = js.native
+    def start(name: String, attrs: js.Array[js.Any]): Unit = js.native
+    def start(name: String, attrs: js.Array[js.Any], empty: Boolean): Unit = js.native
+    def start(name: String, attrs: Unit, empty: Boolean): Unit = js.native
     
     def text(text: String, raw: Boolean): Unit = js.native
   }

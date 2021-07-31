@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientPlaycustomapp.anon.Accesstoken
 import typings.maximMazurokGapiClientPlaycustomapp.anon.Account
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,10 +13,9 @@ object gapi {
     
     object playcustomapp {
       
-      @js.native
       trait AccountsResource extends StObject {
         
-        var customApps: CustomAppsResource = js.native
+        var customApps: CustomAppsResource
       }
       object AccountsResource {
         
@@ -35,17 +33,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait CustomApp extends StObject {
         
         /** Default listing language in BCP 47 format. */
-        var languageCode: js.UndefOr[String] = js.native
+        var languageCode: js.UndefOr[String] = js.undefined
         
         /** Output only. Package name of the created Android app. Only present in the API response. */
-        var packageName: js.UndefOr[String] = js.native
+        var packageName: js.UndefOr[String] = js.undefined
         
         /** Title for the Android app. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
       }
       object CustomApp {
         

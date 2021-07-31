@@ -2,26 +2,24 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSurveysListResponse extends StObject {
   
-  var pageInfo: js.UndefOr[SchemaPageInfo] = js.native
+  var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
   /**
     * Unique request ID used for logging and debugging. Please include in any
     * error reporting or troubleshooting requests.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * An individual survey resource.
     */
-  var resources: js.UndefOr[js.Array[SchemaSurvey]] = js.native
+  var resources: js.UndefOr[js.Array[SchemaSurvey]] = js.undefined
   
-  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.native
+  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
 }
 object SchemaSurveysListResponse {
   

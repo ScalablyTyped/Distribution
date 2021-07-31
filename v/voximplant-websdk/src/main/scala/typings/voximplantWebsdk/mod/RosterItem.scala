@@ -2,39 +2,37 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    VoxImplant roster item
   */
-@js.native
 trait RosterItem extends StObject {
   
   /**
     *    Groups this roster item belongs to
     */
-  var groups: js.Array[String] = js.native
+  var groups: js.Array[String]
   
   /**
     *    User id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     *    User display name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     *    Resources
     */
-  var resources: js.Array[String] = js.native
+  var resources: js.Array[String]
   
   /**
     *    Subscription type
     */
-  var subscription_type: Double = js.native
+  var subscription_type: Double
 }
 object RosterItem {
   

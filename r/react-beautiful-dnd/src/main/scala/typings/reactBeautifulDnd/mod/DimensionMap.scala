@@ -2,15 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionMap extends StObject {
   
-  var draggables: DraggableDimensionMap = js.native
+  var draggables: DraggableDimensionMap
   
-  var droppables: DroppableDimensionMap = js.native
+  var droppables: DroppableDimensionMap
 }
 object DimensionMap {
   

@@ -15,7 +15,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,9 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Implementations of this service usually also implement service {@link HierarchyElement} , which concerns the complementary role of being accessible as
   * an element of the hierarchy.
   */
-@js.native
 trait HierarchyAccess
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XHierarchicalNameAccess
      with XContainer
      with XExactName
@@ -46,7 +45,7 @@ trait HierarchyAccess
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
 }
 object HierarchyAccess {
   
@@ -65,7 +64,7 @@ object HierarchyAccess {
     getProperties: () => SafeArray[Property],
     getPropertyByName: String => Property,
     getPropertyDefault: String => js.Any,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     hasByHierarchicalName: String => Boolean,

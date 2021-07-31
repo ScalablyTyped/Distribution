@@ -2,16 +2,14 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEventSubscriptionMessage extends StObject {
   
   /**
     * The name of the event notification subscription you want to delete.
     */
-  var SubscriptionName: String = js.native
+  var SubscriptionName: String
 }
 object DeleteEventSubscriptionMessage {
   

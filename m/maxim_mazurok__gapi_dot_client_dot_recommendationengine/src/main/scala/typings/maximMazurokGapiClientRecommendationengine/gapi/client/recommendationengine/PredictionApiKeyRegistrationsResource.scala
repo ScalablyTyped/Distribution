@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientRecommendationengine.anon.PageSize
 import typings.maximMazurokGapiClientRecommendationengine.anon.Parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

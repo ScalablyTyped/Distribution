@@ -2,7 +2,6 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,21 +18,11 @@ trait AABB extends StObject {
   def overlaps(aabb: AABB): Boolean = js.native
   
   def setFromPoints(points: js.Array[Vec3]): AABB = js.native
-  def setFromPoints(
-    points: js.Array[Vec3],
-    position: js.UndefOr[scala.Nothing],
-    quaternion: js.UndefOr[scala.Nothing],
-    skinSize: Double
-  ): AABB = js.native
-  def setFromPoints(points: js.Array[Vec3], position: js.UndefOr[scala.Nothing], quaternion: Quaternion): AABB = js.native
-  def setFromPoints(
-    points: js.Array[Vec3],
-    position: js.UndefOr[scala.Nothing],
-    quaternion: Quaternion,
-    skinSize: Double
-  ): AABB = js.native
+  def setFromPoints(points: js.Array[Vec3], position: Unit, quaternion: Unit, skinSize: Double): AABB = js.native
+  def setFromPoints(points: js.Array[Vec3], position: Unit, quaternion: Quaternion): AABB = js.native
+  def setFromPoints(points: js.Array[Vec3], position: Unit, quaternion: Quaternion, skinSize: Double): AABB = js.native
   def setFromPoints(points: js.Array[Vec3], position: Vec3): AABB = js.native
-  def setFromPoints(points: js.Array[Vec3], position: Vec3, quaternion: js.UndefOr[scala.Nothing], skinSize: Double): AABB = js.native
+  def setFromPoints(points: js.Array[Vec3], position: Vec3, quaternion: Unit, skinSize: Double): AABB = js.native
   def setFromPoints(points: js.Array[Vec3], position: Vec3, quaternion: Quaternion): AABB = js.native
   def setFromPoints(points: js.Array[Vec3], position: Vec3, quaternion: Quaternion, skinSize: Double): AABB = js.native
   

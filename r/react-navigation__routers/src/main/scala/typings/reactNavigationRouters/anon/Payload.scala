@@ -4,26 +4,26 @@ import typings.reactNavigationRouters.commonActionsMod.Action
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.NAVIGATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Payload extends Action {
+trait Payload
+  extends StObject
+     with Action {
   
-  var payload: Key | Merge = js.native
+  var payload: Key | Merge
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: NAVIGATE = js.native
+  var `type`: NAVIGATE
 }
 object Payload {
   
   @scala.inline
-  def apply(payload: Key | Merge, `type`: NAVIGATE): Payload = {
+  def apply(payload: Key | Merge): Payload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NAVIGATE")
     __obj.asInstanceOf[Payload]
   }
   

@@ -3,23 +3,21 @@ package typings.css
 import typings.css.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
     /** The full source string passed to css.parse. */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var end: js.UndefOr[Position] = js.native
+    var end: js.UndefOr[Position] = js.undefined
     
     /** The value of options.source if passed to css.parse. Otherwise undefined. */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var start: js.UndefOr[Position] = js.native
+    var start: js.UndefOr[Position] = js.undefined
   }
   object Content {
     

@@ -2,15 +2,15 @@ package typings.webBluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BluetoothLEScan extends RequestLEScanOptions {
+trait BluetoothLEScan
+  extends StObject
+     with RequestLEScanOptions {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object BluetoothLEScan {
   

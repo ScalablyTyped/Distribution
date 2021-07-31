@@ -14,7 +14,6 @@ import typings.winrt.anon.First
 import typings.winrt.anon.Items
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Core {
@@ -33,22 +32,21 @@ object Core {
     var uri: Uri = js.native
   }
   
-  @js.native
   trait IResourceCandidate extends StObject {
     
-    def getQualifierValue(qualifierName: String): String = js.native
+    def getQualifierValue(qualifierName: String): String
     
-    def getValueAsFileAsync(): IAsyncOperation[StorageFile] = js.native
+    def getValueAsFileAsync(): IAsyncOperation[StorageFile]
     
-    var isDefault: Boolean = js.native
+    var isDefault: Boolean
     
-    var isMatch: Boolean = js.native
+    var isMatch: Boolean
     
-    var isMatchAsDefault: Boolean = js.native
+    var isMatchAsDefault: Boolean
     
-    var qualifiers: IVectorView[ResourceQualifier] = js.native
+    var qualifiers: IVectorView[ResourceQualifier]
     
-    var valueAsString: String = js.native
+    var valueAsString: String
   }
   object IResourceCandidate {
     
@@ -105,10 +103,9 @@ object Core {
     def reset(qualifierNames: IIterable[String]): Unit = js.native
   }
   
-  @js.native
   trait IResourceContextStatics extends StObject {
     
-    def createMatchingContext(result: IIterable[ResourceQualifier]): ResourceContext = js.native
+    def createMatchingContext(result: IIterable[ResourceQualifier]): ResourceContext
   }
   object IResourceContextStatics {
     
@@ -126,18 +123,17 @@ object Core {
     }
   }
   
-  @js.native
   trait IResourceManager extends StObject {
     
-    var allResourceMaps: IMapView[String, ResourceMap] = js.native
+    var allResourceMaps: IMapView[String, ResourceMap]
     
-    var defaultContext: ResourceContext = js.native
+    var defaultContext: ResourceContext
     
-    def loadPriFiles(files: IIterable[IStorageFile]): Unit = js.native
+    def loadPriFiles(files: IIterable[IStorageFile]): Unit
     
-    var mainResourceMap: ResourceMap = js.native
+    var mainResourceMap: ResourceMap
     
-    def unloadPriFiles(files: IIterable[IStorageFile]): Unit = js.native
+    def unloadPriFiles(files: IIterable[IStorageFile]): Unit
   }
   object IResourceManager {
     
@@ -173,12 +169,11 @@ object Core {
     }
   }
   
-  @js.native
   trait IResourceManagerStatics extends StObject {
     
-    var current: ResourceManager = js.native
+    var current: ResourceManager
     
-    def isResourceReference(resourceReference: String): Boolean = js.native
+    def isResourceReference(resourceReference: String): Boolean
   }
   object IResourceManagerStatics {
     
@@ -200,7 +195,9 @@ object Core {
   }
   
   @js.native
-  trait IResourceMap extends IMapView[String, NamedResource] {
+  trait IResourceMap
+    extends StObject
+       with IMapView[String, NamedResource] {
     
     def getSubtree(reference: String): ResourceMap = js.native
     
@@ -210,18 +207,17 @@ object Core {
     var uri: Uri = js.native
   }
   
-  @js.native
   trait IResourceQualifier extends StObject {
     
-    var isDefault: Boolean = js.native
+    var isDefault: Boolean
     
-    var isMatch: Boolean = js.native
+    var isMatch: Boolean
     
-    var qualifierName: String = js.native
+    var qualifierName: String
     
-    var qualifierValue: String = js.native
+    var qualifierValue: String
     
-    var score: Double = js.native
+    var score: Double
   }
   object IResourceQualifier {
     
@@ -252,10 +248,13 @@ object Core {
   }
   
   @js.native
-  trait NamedResource extends INamedResource
+  trait NamedResource
+    extends StObject
+       with INamedResource
   
-  @js.native
-  trait ResourceCandidate extends IResourceCandidate
+  trait ResourceCandidate
+    extends StObject
+       with IResourceCandidate
   object ResourceCandidate {
     
     @scala.inline
@@ -274,16 +273,23 @@ object Core {
   }
   
   @js.native
-  trait ResourceCandidateVectorView extends IVectorView[ResourceCandidate]
+  trait ResourceCandidateVectorView
+    extends StObject
+       with IVectorView[ResourceCandidate]
   
   @js.native
-  trait ResourceContext extends IResourceContext
+  trait ResourceContext
+    extends StObject
+       with IResourceContext
   
   @js.native
-  trait ResourceContextLanguagesVectorView extends IVectorView[String]
+  trait ResourceContextLanguagesVectorView
+    extends StObject
+       with IVectorView[String]
   
-  @js.native
-  trait ResourceManager extends IResourceManager
+  trait ResourceManager
+    extends StObject
+       with IResourceManager
   object ResourceManager {
     
     @scala.inline
@@ -300,10 +306,13 @@ object Core {
   }
   
   @js.native
-  trait ResourceMap extends IResourceMap
+  trait ResourceMap
+    extends StObject
+       with IResourceMap
   
-  @js.native
-  trait ResourceMapIterator extends IIterator[IKeyValuePair[String, NamedResource]]
+  trait ResourceMapIterator
+    extends StObject
+       with IIterator[IKeyValuePair[String, NamedResource]]
   object ResourceMapIterator {
     
     @scala.inline
@@ -318,8 +327,9 @@ object Core {
     }
   }
   
-  @js.native
-  trait ResourceMapMapView extends IMapView[String, ResourceMap]
+  trait ResourceMapMapView
+    extends StObject
+       with IMapView[String, ResourceMap]
   object ResourceMapMapView {
     
     @scala.inline
@@ -335,8 +345,9 @@ object Core {
     }
   }
   
-  @js.native
-  trait ResourceMapMapViewIterator extends IIterator[IKeyValuePair[String, ResourceMap]]
+  trait ResourceMapMapViewIterator
+    extends StObject
+       with IIterator[IKeyValuePair[String, ResourceMap]]
   object ResourceMapMapViewIterator {
     
     @scala.inline
@@ -351,8 +362,9 @@ object Core {
     }
   }
   
-  @js.native
-  trait ResourceQualifier extends IResourceQualifier
+  trait ResourceQualifier
+    extends StObject
+       with IResourceQualifier
   object ResourceQualifier {
     
     @scala.inline
@@ -362,8 +374,9 @@ object Core {
     }
   }
   
-  @js.native
-  trait ResourceQualifierMapView extends IMapView[String, String]
+  trait ResourceQualifierMapView
+    extends StObject
+       with IMapView[String, String]
   object ResourceQualifierMapView {
     
     @scala.inline
@@ -379,8 +392,9 @@ object Core {
     }
   }
   
-  @js.native
-  trait ResourceQualifierObservableMap extends IObservableMap[String, String]
+  trait ResourceQualifierObservableMap
+    extends StObject
+       with IObservableMap[String, String]
   object ResourceQualifierObservableMap {
     
     @scala.inline
@@ -401,5 +415,7 @@ object Core {
   }
   
   @js.native
-  trait ResourceQualifierVectorView extends IVectorView[ResourceQualifier]
+  trait ResourceQualifierVectorView
+    extends StObject
+       with IVectorView[ResourceQualifier]
 }

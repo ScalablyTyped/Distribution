@@ -3,37 +3,35 @@ package typings.watsonDeveloperCloud.mod
 import typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listExamples` operation. */
-@js.native
 trait ListExamplesParams extends StObject {
   
   /** A token identifying the page of results to retrieve. */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Whether to include the audit properties (`created` and `updated` timestamps) in the response. */
-  var include_audit: js.UndefOr[Boolean] = js.native
+  var include_audit: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to include information about the number of records returned. */
-  var include_count: js.UndefOr[Boolean] = js.native
+  var include_count: js.UndefOr[Boolean] = js.undefined
   
   /** The intent name. */
-  var intent: String = js.native
+  var intent: String
   
   /** The number of records to return in each page of results. */
-  var page_limit: js.UndefOr[Double] = js.native
+  var page_limit: js.UndefOr[Double] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The attribute by which returned examples will be sorted. To reverse the sort order, prefix the value with a minus sign (`-`). */
-  var sort: js.UndefOr[Sort | String] = js.native
+  var sort: js.UndefOr[Sort | String] = js.undefined
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object ListExamplesParams {
   

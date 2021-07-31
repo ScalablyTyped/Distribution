@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatabaseMetadata extends StObject {
   
   /** The database being created. */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
 }
 object CreateDatabaseMetadata {
   

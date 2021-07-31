@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAssociatedRoleResponse extends StObject {
   
   /**
     * The time when the role was associated with the group.
     */
-  var AssociatedAt: js.UndefOr[string] = js.native
+  var AssociatedAt: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the role that is associated with the group.
     */
-  var RoleArn: js.UndefOr[string] = js.native
+  var RoleArn: js.UndefOr[string] = js.undefined
 }
 object GetAssociatedRoleResponse {
   

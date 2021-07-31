@@ -3,37 +3,35 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateInstanceMarketOptionsSpotOptions extends StObject {
   
   /**
     * The required duration in minutes. This value must be a multiple of 60.
     */
-  var blockDurationMinutes: js.UndefOr[Input[Double]] = js.native
+  var blockDurationMinutes: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The behavior when a Spot Instance is interrupted. Can be `hibernate`,
     * `stop`, or `terminate`. (Default: `terminate`).
     */
-  var instanceInterruptionBehavior: js.UndefOr[Input[String]] = js.native
+  var instanceInterruptionBehavior: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The maximum hourly price you're willing to pay for the Spot Instances.
     */
-  var maxPrice: js.UndefOr[Input[String]] = js.native
+  var maxPrice: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The Spot Instance request type. Can be `one-time`, or `persistent`.
     */
-  var spotInstanceType: js.UndefOr[Input[String]] = js.native
+  var spotInstanceType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The end date of the request.
     */
-  var validUntil: js.UndefOr[Input[String]] = js.native
+  var validUntil: js.UndefOr[Input[String]] = js.undefined
 }
 object LaunchTemplateInstanceMarketOptionsSpotOptions {
   

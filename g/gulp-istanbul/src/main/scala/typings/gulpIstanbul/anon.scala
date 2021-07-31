@@ -3,15 +3,13 @@ package typings.gulpIstanbul
 import typings.gulpIstanbul.mod.CoverageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CoverageVariable extends StObject {
     
-    var coverageVariable: js.UndefOr[String] = js.native
+    var coverageVariable: js.UndefOr[String] = js.undefined
   }
   object CoverageVariable {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Dir extends StObject {
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
   }
   object Dir {
     
@@ -56,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Each extends StObject {
     
-    var each: js.UndefOr[CoverageOptions | Double] = js.native
+    var each: js.UndefOr[CoverageOptions | Double] = js.undefined
     
-    var global: js.UndefOr[CoverageOptions | Double] = js.native
+    var global: js.UndefOr[CoverageOptions | Double] = js.undefined
   }
   object Each {
     

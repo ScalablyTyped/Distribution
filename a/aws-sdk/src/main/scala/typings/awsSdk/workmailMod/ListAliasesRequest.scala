@@ -2,31 +2,29 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAliasesRequest extends StObject {
   
   /**
     * The identifier for the entity for which to list the aliases.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.workmailMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.workmailMod.MaxResults] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. The first call does not contain any tokens.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
   
   /**
     * The identifier for the organization under which the entity exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object ListAliasesRequest {
   

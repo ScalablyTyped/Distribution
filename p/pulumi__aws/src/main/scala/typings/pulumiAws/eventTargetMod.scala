@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventTargetMod {
@@ -99,6 +98,10 @@ object eventTargetMod {
   /* static members */
   object EventTarget {
     
+    @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EventTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -108,80 +111,74 @@ object eventTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EventTarget = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventTarget = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventTargetState): EventTarget = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventTargetState, opts: CustomResourceOptions): EventTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventTargetState): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventTargetState, opts: CustomResourceOptions): EventTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventTarget]
     
     /**
       * Returns true if the given object is an instance of EventTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ Boolean]
   }
   
-  @js.native
   trait EventTargetArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) associated of the target.
       */
-    val arn: Input[String] = js.native
+    val arn: Input[String]
     
     /**
       * Parameters used when you are using the rule to invoke an Amazon Batch Job. Documented below. A maximum of 1 are allowed.
       */
-    val batchTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]] = js.native
+    val batchTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke Amazon ECS Task. Documented below. A maximum of 1 are allowed.
       */
-    val ecsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]] = js.native
+    val ecsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]] = js.undefined
     
     /**
       * The event bus to associate with the rule. If you omit this, the `default` event bus is used.
       */
-    val eventBusName: js.UndefOr[Input[String]] = js.native
+    val eventBusName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Valid JSON text passed to the target. Conflicts with `inputPath` and `inputTransformer`.
       */
-    val input: js.UndefOr[Input[String]] = js.native
+    val input: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value of the [JSONPath](http://goessner.net/articles/JsonPath/) that is used for extracting part of the matched event when passing it to the target. Conflicts with `input` and `inputTransformer`.
       */
-    val inputPath: js.UndefOr[Input[String]] = js.native
+    val inputPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Parameters used when you are providing a custom input to a target based on certain event data. Conflicts with `input` and `inputPath`.
       */
-    val inputTransformer: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]] = js.native
+    val inputTransformer: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke an Amazon Kinesis Stream. Documented below. A maximum of 1 are allowed.
       */
-    val kinesisTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]] = js.native
+    val kinesisTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecsTarget` is used.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule you want to add targets to.
       */
-    val rule: Input[String] = js.native
+    val rule: Input[String]
     
     /**
       * Parameters used when you are using the rule to invoke Amazon EC2 Run Command. Documented below. A maximum of 5 are allowed.
@@ -190,17 +187,17 @@ object eventTargetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke an Amazon SQS Queue. Documented below. A maximum of 1 are allowed.
       */
-    val sqsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]] = js.native
+    val sqsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]] = js.undefined
     
     /**
       * The unique target assignment ID.  If missing, will generate a random, unique id.
       */
-    val targetId: js.UndefOr[Input[String]] = js.native
+    val targetId: js.UndefOr[Input[String]] = js.undefined
   }
   object EventTargetArgs {
     
@@ -294,58 +291,57 @@ object eventTargetMod {
     }
   }
   
-  @js.native
   trait EventTargetState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) associated of the target.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke an Amazon Batch Job. Documented below. A maximum of 1 are allowed.
       */
-    val batchTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]] = js.native
+    val batchTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetBatchTarget]] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke Amazon ECS Task. Documented below. A maximum of 1 are allowed.
       */
-    val ecsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]] = js.native
+    val ecsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetEcsTarget]] = js.undefined
     
     /**
       * The event bus to associate with the rule. If you omit this, the `default` event bus is used.
       */
-    val eventBusName: js.UndefOr[Input[String]] = js.native
+    val eventBusName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Valid JSON text passed to the target. Conflicts with `inputPath` and `inputTransformer`.
       */
-    val input: js.UndefOr[Input[String]] = js.native
+    val input: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The value of the [JSONPath](http://goessner.net/articles/JsonPath/) that is used for extracting part of the matched event when passing it to the target. Conflicts with `input` and `inputTransformer`.
       */
-    val inputPath: js.UndefOr[Input[String]] = js.native
+    val inputPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Parameters used when you are providing a custom input to a target based on certain event data. Conflicts with `input` and `inputPath`.
       */
-    val inputTransformer: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]] = js.native
+    val inputTransformer: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetInputTransformer]] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke an Amazon Kinesis Stream. Documented below. A maximum of 1 are allowed.
       */
-    val kinesisTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]] = js.native
+    val kinesisTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetKinesisTarget]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecsTarget` is used.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule you want to add targets to.
       */
-    val rule: js.UndefOr[Input[String]] = js.native
+    val rule: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke Amazon EC2 Run Command. Documented below. A maximum of 5 are allowed.
@@ -354,17 +350,17 @@ object eventTargetMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetRunCommandTarget]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Parameters used when you are using the rule to invoke an Amazon SQS Queue. Documented below. A maximum of 1 are allowed.
       */
-    val sqsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]] = js.native
+    val sqsTarget: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventTargetSqsTarget]] = js.undefined
     
     /**
       * The unique target assignment ID.  If missing, will generate a random, unique id.
       */
-    val targetId: js.UndefOr[Input[String]] = js.native
+    val targetId: js.UndefOr[Input[String]] = js.undefined
   }
   object EventTargetState {
     

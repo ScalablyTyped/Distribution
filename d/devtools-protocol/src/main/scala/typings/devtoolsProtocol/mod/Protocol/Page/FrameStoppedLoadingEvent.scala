@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameStoppedLoadingEvent extends StObject {
   
   /**
     * Id of the frame that has stopped loading.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
 }
 object FrameStoppedLoadingEvent {
   

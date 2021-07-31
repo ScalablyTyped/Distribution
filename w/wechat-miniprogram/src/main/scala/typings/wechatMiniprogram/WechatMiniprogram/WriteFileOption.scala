@@ -14,17 +14,15 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.utf16le
 import typings.wechatMiniprogram.wechatMiniprogramStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteFileOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[WriteFileCompleteCallback] = js.native
+  var complete: js.UndefOr[WriteFileCompleteCallback] = js.undefined
   
   /** 要写入的文本或二进制数据 */
-  var data: String | ArrayBuffer = js.native
+  var data: String | ArrayBuffer
   
   /** 指定写入文件的字符编码
     *
@@ -42,16 +40,16 @@ trait WriteFileOption extends StObject {
     * - 'latin1': ; */
   var encoding: js.UndefOr[
     ascii | base64 | binary | hex | ucs2 | `ucs-2` | utf16le | `utf-16le` | `utf-8` | utf8 | latin1
-  ] = js.native
+  ] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[WriteFileFailCallback] = js.native
+  var fail: js.UndefOr[WriteFileFailCallback] = js.undefined
   
   /** 要写入的文件路径 (本地路径) */
-  var filePath: String = js.native
+  var filePath: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[WriteFileSuccessCallback] = js.native
+  var success: js.UndefOr[WriteFileSuccessCallback] = js.undefined
 }
 object WriteFileOption {
   

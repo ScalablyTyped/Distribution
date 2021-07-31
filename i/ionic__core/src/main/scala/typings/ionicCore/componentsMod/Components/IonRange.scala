@@ -6,76 +6,74 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.rangeInterfaceMod.RangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonRange extends StObject {
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * How long, in milliseconds, to wait to trigger the `ionChange` event after each change in the range value. This also impacts form bindings such as `ngModel` or `v-model`.
     */
-  var debounce: Double = js.native
+  var debounce: Double
   
   /**
     * If `true`, the user cannot interact with the range.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * Show two knobs.
     */
-  var dualKnobs: Boolean = js.native
+  var dualKnobs: Boolean
   
   /**
     * Maximum integer value of the range.
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * Minimum integer value of the range.
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * If `true`, a pin with integer value is shown when the knob is pressed.
     */
-  var pin: Boolean = js.native
+  var pin: Boolean
   
   /**
     * If `true`, the knob snaps to tick marks evenly spaced based on the step property value.
     */
-  var snaps: Boolean = js.native
+  var snaps: Boolean
   
   /**
     * Specifies the value granularity.
     */
-  var step: Double = js.native
+  var step: Double
   
   /**
     * If `true`, tick marks are displayed based on the step value. Only applies when `snaps` is `true`.
     */
-  var ticks: Boolean = js.native
+  var ticks: Boolean
   
   /**
     * the value of the range.
     */
-  var value: RangeValue = js.native
+  var value: RangeValue
 }
 object IonRange {
   

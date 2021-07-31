@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePolicy extends StObject {
   
   /** Optional. Relative scheduling channel applied to resource. */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /**
     * Deny Maintenance Period that is applied to resource to indicate when maintenance is forbidden. User can specify zero or more non-overlapping deny periods. For V1, Maximum number of
     * deny_maintenance_periods is expected to be one.
     */
-  var denyMaintenancePeriods: js.UndefOr[js.Array[DenyMaintenancePeriod]] = js.native
+  var denyMaintenancePeriods: js.UndefOr[js.Array[DenyMaintenancePeriod]] = js.undefined
   
   /** Optional. Maintenance window that is applied to resources covered by this policy. */
-  var window: js.UndefOr[MaintenanceWindow] = js.native
+  var window: js.UndefOr[MaintenanceWindow] = js.undefined
 }
 object UpdatePolicy {
   

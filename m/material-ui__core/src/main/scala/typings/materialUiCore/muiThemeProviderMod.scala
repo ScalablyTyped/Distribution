@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object muiThemeProviderMod extends Shortcut {
@@ -18,16 +17,15 @@ object muiThemeProviderMod extends Shortcut {
   @js.native
   val default: ComponentType[MuiThemeProviderProps] = js.native
   
-  @js.native
   trait MuiThemeProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disableStylesGeneration: js.UndefOr[Boolean] = js.native
+    var disableStylesGeneration: js.UndefOr[Boolean] = js.undefined
     
-    var sheetsManager: js.UndefOr[Map[StylesCreator, Map[Theme, SheetManagerTheme]]] = js.native
+    var sheetsManager: js.UndefOr[Map[StylesCreator, Map[Theme, SheetManagerTheme]]] = js.undefined
     
-    var theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme]) = js.native
+    var theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme])
   }
   object MuiThemeProviderProps {
     
@@ -66,12 +64,11 @@ object muiThemeProviderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait SheetManagerTheme extends StObject {
     
-    var refs: Double = js.native
+    var refs: Double
     
-    var sheet: StyleSheet[String | Double | js.Symbol] = js.native
+    var sheet: StyleSheet[String | Double | js.Symbol]
   }
   object SheetManagerTheme {
     

@@ -2,7 +2,6 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "CertificateList")
@@ -15,7 +14,10 @@ class CertificateList protected () extends PropertyList[Certificate] {
 /* static members */
 object CertificateList {
   
-  @JSImport("postman-collection", "CertificateList.isCertificateList")
+  @JSImport("postman-collection", "CertificateList")
   @js.native
-  def isCertificateList(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isCertificateList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificateList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

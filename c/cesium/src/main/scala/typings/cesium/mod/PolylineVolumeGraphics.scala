@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PolylineVolumeGraphics")
@@ -15,7 +14,7 @@ class PolylineVolumeGraphics () extends StObject {
   
   var cornerType: Property = js.native
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   var fill: Property = js.native
   

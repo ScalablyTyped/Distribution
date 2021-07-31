@@ -3,7 +3,6 @@ package typings.amcharts
 import typings.amcharts.amAngularGaugeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -161,12 +160,10 @@ object mod {
       * @param types - Which chart types should call this method. Defaults to all
       * if none is passed.
       */
-    @JSImport("amcharts", "AmCharts.addInitHandler")
-    @js.native
-    def addInitHandler(handler: js.Function0[js.Object]): js.Any = js.native
-    @JSImport("amcharts", "AmCharts.addInitHandler")
-    @js.native
-    def addInitHandler(handler: js.Function0[js.Object], types: js.Array[String]): js.Any = js.native
+    @scala.inline
+    def addInitHandler(handler: js.Function0[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def addInitHandler(handler: js.Function0[js.Object], types: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Set it to true if you have base href set for your page.
@@ -181,9 +178,8 @@ object mod {
     /**
       * Clears all the charts on page, removes listeners and intervals.
       */
-    @JSImport("amcharts", "AmCharts.clear")
-    @js.native
-    def clear(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     /**
       * Array of day names, used when formatting dates (if categoryAxis.parseDates is set to true)
@@ -198,12 +194,10 @@ object mod {
     /**
       * Create chart by params.
       */
-    @JSImport("amcharts", "AmCharts.makeChart")
-    @js.native
-    def makeChart(selector: String, params: js.Any): AmChart = js.native
-    @JSImport("amcharts", "AmCharts.makeChart")
-    @js.native
-    def makeChart(selector: String, params: js.Any, delay: Double): AmChart = js.native
+    @scala.inline
+    def makeChart(selector: String, params: js.Any): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[AmChart]
+    @scala.inline
+    def makeChart(selector: String, params: js.Any, delay: Double): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[AmChart]
     
     /**
       * Array of month names, used when formatting dates (if categoryAxis.parseDates is set to true)

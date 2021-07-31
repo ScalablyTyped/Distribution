@@ -9,7 +9,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardFooterMod {
@@ -35,12 +34,12 @@ object cardFooterMod {
   trait CardFooter
     extends Component[CardFooterProps, js.Any, js.Any]
   
-  @js.native
   trait CardFooterProps
-    extends CardFooterPropsType
+    extends StObject
+       with CardFooterPropsType
        with WithThemeStyles[PickCardStylefooterConten] {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CardFooterProps {
     
@@ -64,12 +63,11 @@ object cardFooterMod {
     }
   }
   
-  @js.native
   trait CardFooterPropsType extends StObject {
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
   }
   object CardFooterPropsType {
     

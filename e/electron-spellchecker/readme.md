@@ -12,7 +12,7 @@ Implement spellchecking, correctly
 | Keywords           | spelling, electron, rx |
 | # releases         | 10 |
 | # dependents       | 4 |
-| # downloads        | 193293 |
+| # downloads        | 178111 |
 | # stars            | 3 |
 
 ## Links

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientReseller.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinimumTransferableSeats extends StObject {
   
   /**
     * When inserting a subscription, this is the minimum number of seats listed in the transfer order for this product. For example, if the customer has 20 users, the reseller cannot
     * place a transfer order of 15 seats. The minimum is 20 seats.
     */
-  var minimumTransferableSeats: js.UndefOr[Double] = js.native
+  var minimumTransferableSeats: js.UndefOr[Double] = js.undefined
   
   /** The time when transfer token or intent to transfer will expire. The time is in milliseconds using UNIX Epoch format. */
-  var transferabilityExpirationTime: js.UndefOr[String] = js.native
+  var transferabilityExpirationTime: js.UndefOr[String] = js.undefined
 }
 object MinimumTransferableSeats {
   

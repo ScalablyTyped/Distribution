@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceThreshold extends StObject {
   
   /** BasicSli to evaluate to judge window quality. */
-  var basicSliPerformance: js.UndefOr[BasicSli] = js.native
+  var basicSliPerformance: js.UndefOr[BasicSli] = js.undefined
   
   /** RequestBasedSli to evaluate to judge window quality. */
-  var performance: js.UndefOr[RequestBasedSli] = js.native
+  var performance: js.UndefOr[RequestBasedSli] = js.undefined
   
   /** If window performance >= threshold, the window is counted as good. */
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object PerformanceThreshold {
   

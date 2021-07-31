@@ -2,13 +2,11 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveProjectReferencePathHost extends StObject {
   
-  def fileExists(fileName: java.lang.String): Boolean = js.native
+  def fileExists(fileName: java.lang.String): Boolean
 }
 object ResolveProjectReferencePathHost {
   

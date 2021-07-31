@@ -2,7 +2,6 @@ package typings.typedoc.mod.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.ModuleKind")
@@ -10,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ModuleKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.typescript.mod.ModuleKind with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.typescript.mod.ModuleKind & Double] = js.native
   
-  /* 2 */ val AMD: typings.typescript.mod.ModuleKind.AMD with Double = js.native
+  /* 2 */ val AMD: typings.typescript.mod.ModuleKind.AMD & Double = js.native
   
-  /* 1 */ val CommonJS: typings.typescript.mod.ModuleKind.CommonJS with Double = js.native
+  /* 1 */ val CommonJS: typings.typescript.mod.ModuleKind.CommonJS & Double = js.native
   
-  /* 5 */ val ES2015: typings.typescript.mod.ModuleKind.ES2015 with Double = js.native
+  /* 5 */ val ES2015: typings.typescript.mod.ModuleKind.ES2015 & Double = js.native
   
-  /* 6 */ val ES2020: typings.typescript.mod.ModuleKind.ES2020 with Double = js.native
+  /* 6 */ val ES2020: typings.typescript.mod.ModuleKind.ES2020 & Double = js.native
   
-  /* 99 */ val ESNext: typings.typescript.mod.ModuleKind.ESNext with Double = js.native
+  /* 99 */ val ESNext: typings.typescript.mod.ModuleKind.ESNext & Double = js.native
   
-  /* 0 */ val None: typings.typescript.mod.ModuleKind.None with Double = js.native
+  /* 0 */ val None: typings.typescript.mod.ModuleKind.None & Double = js.native
   
-  /* 4 */ val System: typings.typescript.mod.ModuleKind.System with Double = js.native
+  /* 4 */ val System: typings.typescript.mod.ModuleKind.System & Double = js.native
   
-  /* 3 */ val UMD: typings.typescript.mod.ModuleKind.UMD with Double = js.native
+  /* 3 */ val UMD: typings.typescript.mod.ModuleKind.UMD & Double = js.native
 }

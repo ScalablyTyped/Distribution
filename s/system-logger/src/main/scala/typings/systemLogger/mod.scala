@@ -2,7 +2,6 @@ package typings.systemLogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,23 +10,11 @@ object mod {
   @js.native
   class Logger () extends StObject {
     def this(configuration: LoggerConfiguration) = this()
-    def this(configuration: js.UndefOr[scala.Nothing], fileConfig: FileConfiguration) = this()
+    def this(configuration: Unit, fileConfig: FileConfiguration) = this()
     def this(configuration: LoggerConfiguration, fileConfig: FileConfiguration) = this()
-    def this(
-      configuration: js.UndefOr[scala.Nothing],
-      fileConfig: js.UndefOr[scala.Nothing],
-      sourceConfig: SourcesConfiguration
-    ) = this()
-    def this(
-      configuration: js.UndefOr[scala.Nothing],
-      fileConfig: FileConfiguration,
-      sourceConfig: SourcesConfiguration
-    ) = this()
-    def this(
-      configuration: LoggerConfiguration,
-      fileConfig: js.UndefOr[scala.Nothing],
-      sourceConfig: SourcesConfiguration
-    ) = this()
+    def this(configuration: Unit, fileConfig: Unit, sourceConfig: SourcesConfiguration) = this()
+    def this(configuration: Unit, fileConfig: FileConfiguration, sourceConfig: SourcesConfiguration) = this()
+    def this(configuration: LoggerConfiguration, fileConfig: Unit, sourceConfig: SourcesConfiguration) = this()
     def this(
       configuration: LoggerConfiguration,
       fileConfig: FileConfiguration,
@@ -47,27 +34,37 @@ object mod {
   object fileRotateType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[fileRotateType with Double] = js.native
+    def apply(value: Double): js.UndefOr[fileRotateType & Double] = js.native
     
     @js.native
-    sealed trait daily extends fileRotateType
-    /* 2 */ val daily: typings.systemLogger.mod.fileRotateType.daily with Double = js.native
+    sealed trait daily
+      extends StObject
+         with fileRotateType
+    /* 2 */ val daily: typings.systemLogger.mod.fileRotateType.daily & Double = js.native
     
     @js.native
-    sealed trait hourly extends fileRotateType
-    /* 3 */ val hourly: typings.systemLogger.mod.fileRotateType.hourly with Double = js.native
+    sealed trait hourly
+      extends StObject
+         with fileRotateType
+    /* 3 */ val hourly: typings.systemLogger.mod.fileRotateType.hourly & Double = js.native
     
     @js.native
-    sealed trait minutely extends fileRotateType
-    /* 4 */ val minutely: typings.systemLogger.mod.fileRotateType.minutely with Double = js.native
+    sealed trait minutely
+      extends StObject
+         with fileRotateType
+    /* 4 */ val minutely: typings.systemLogger.mod.fileRotateType.minutely & Double = js.native
     
     @js.native
-    sealed trait monthly extends fileRotateType
-    /* 0 */ val monthly: typings.systemLogger.mod.fileRotateType.monthly with Double = js.native
+    sealed trait monthly
+      extends StObject
+         with fileRotateType
+    /* 0 */ val monthly: typings.systemLogger.mod.fileRotateType.monthly & Double = js.native
     
     @js.native
-    sealed trait weekly extends fileRotateType
-    /* 1 */ val weekly: typings.systemLogger.mod.fileRotateType.weekly with Double = js.native
+    sealed trait weekly
+      extends StObject
+         with fileRotateType
+    /* 1 */ val weekly: typings.systemLogger.mod.fileRotateType.weekly & Double = js.native
   }
   
   @js.native
@@ -77,43 +74,54 @@ object mod {
   object level extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[level with Double] = js.native
+    def apply(value: Double): js.UndefOr[level & Double] = js.native
     
     @js.native
-    sealed trait debug extends level
-    /* 4 */ val debug: typings.systemLogger.mod.level.debug with Double = js.native
+    sealed trait debug
+      extends StObject
+         with level
+    /* 4 */ val debug: typings.systemLogger.mod.level.debug & Double = js.native
     
     @js.native
-    sealed trait error extends level
-    /* 0 */ val error: typings.systemLogger.mod.level.error with Double = js.native
+    sealed trait error
+      extends StObject
+         with level
+    /* 0 */ val error: typings.systemLogger.mod.level.error & Double = js.native
     
     @js.native
-    sealed trait info extends level
-    /* 2 */ val info: typings.systemLogger.mod.level.info with Double = js.native
+    sealed trait info
+      extends StObject
+         with level
+    /* 2 */ val info: typings.systemLogger.mod.level.info & Double = js.native
     
     @js.native
-    sealed trait silly extends level
-    /* 5 */ val silly: typings.systemLogger.mod.level.silly with Double = js.native
+    sealed trait silly
+      extends StObject
+         with level
+    /* 5 */ val silly: typings.systemLogger.mod.level.silly & Double = js.native
     
     @js.native
-    sealed trait verbose extends level
-    /* 3 */ val verbose: typings.systemLogger.mod.level.verbose with Double = js.native
+    sealed trait verbose
+      extends StObject
+         with level
+    /* 3 */ val verbose: typings.systemLogger.mod.level.verbose & Double = js.native
     
     @js.native
-    sealed trait warn extends level
-    /* 1 */ val warn: typings.systemLogger.mod.level.warn with Double = js.native
+    sealed trait warn
+      extends StObject
+         with level
+    /* 1 */ val warn: typings.systemLogger.mod.level.warn & Double = js.native
   }
   
-  @js.native
   trait FileConfiguration extends StObject {
     
-    var fileRotateMaxSize: js.UndefOr[Double] = js.native
+    var fileRotateMaxSize: js.UndefOr[Double] = js.undefined
     
-    var fileRotateType: js.UndefOr[typings.systemLogger.mod.fileRotateType] = js.native
+    var fileRotateType: js.UndefOr[typings.systemLogger.mod.fileRotateType] = js.undefined
     
-    var isFileRotate: js.UndefOr[Boolean] = js.native
+    var isFileRotate: js.UndefOr[Boolean] = js.undefined
     
-    var saveToFileName: js.UndefOr[String] = js.native
+    var saveToFileName: js.UndefOr[String] = js.undefined
   }
   object FileConfiguration {
     
@@ -152,14 +160,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LoggerConfiguration extends StObject {
     
-    var externalDisplayFormat: js.UndefOr[js.Any] = js.native
+    var externalDisplayFormat: js.UndefOr[js.Any] = js.undefined
     
-    var level: typings.systemLogger.mod.level = js.native
+    var level: typings.systemLogger.mod.level
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object LoggerConfiguration {
     
@@ -189,14 +196,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SourcesConfiguration extends StObject {
     
-    var callback: js.Any = js.native
+    var callback: js.Any
     
-    var connector: js.Any = js.native
+    var connector: js.Any
     
-    var levels: js.Array[level] = js.native
+    var levels: js.Array[level]
   }
   object SourcesConfiguration {
     

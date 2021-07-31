@@ -2,26 +2,24 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserExtensionPolicy extends StObject {
   
   /**
     * User display name that this policy refers to
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * The extension policy applied to the user
     */
-  var permissions: ExtensionPolicy = js.native
+  var permissions: ExtensionPolicy
   
   /**
     * User id that this policy refers to
     */
-  var userId: String = js.native
+  var userId: String
 }
 object UserExtensionPolicy {
   

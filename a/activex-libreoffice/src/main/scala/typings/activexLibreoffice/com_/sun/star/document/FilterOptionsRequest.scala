@@ -7,21 +7,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Is used for interaction handle to get filter options.
   * @since OOo 1.1.2
   */
-@js.native
-trait FilterOptionsRequest extends Exception {
+trait FilterOptionsRequest
+  extends StObject
+     with Exception {
   
   /** The model of the document that should be provided to filters that supports {@link XExporter} interface. */
-  var rModel: XModel = js.native
+  var rModel: XModel
   
   /** The Media-descriptor of the document */
-  var rProperties: SafeArray[PropertyValue] = js.native
+  var rProperties: SafeArray[PropertyValue]
 }
 object FilterOptionsRequest {
   

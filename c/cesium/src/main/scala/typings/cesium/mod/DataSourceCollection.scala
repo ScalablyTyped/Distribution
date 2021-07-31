@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "DataSourceCollection")
@@ -14,9 +13,9 @@ class DataSourceCollection () extends StObject {
   
   def contains(dataSource: DataSource): Boolean = js.native
   
-  var dataSourceAdded: Event[js.Array[_]] = js.native
+  var dataSourceAdded: Event[js.Array[js.Any]] = js.native
   
-  var dataSourceRemoved: Event[js.Array[_]] = js.native
+  var dataSourceRemoved: Event[js.Array[js.Any]] = js.native
   
   def destroy(): Unit = js.native
   

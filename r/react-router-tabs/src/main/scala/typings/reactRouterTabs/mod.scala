@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.reactRouterDom.mod.NavLinkProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,15 +50,16 @@ object mod {
     def `true`: typings.reactRouterTabs.reactRouterTabsStrings.`true` = "true".asInstanceOf[typings.reactRouterTabs.reactRouterTabsStrings.`true`]
   }
   
-  @js.native
-  trait NavTabProps extends NavLinkProps[LocationState] {
+  trait NavTabProps
+    extends StObject
+       with NavLinkProps[LocationState] {
     
-    var allowClickOnActive: js.UndefOr[Boolean] = js.native
+    var allowClickOnActive: js.UndefOr[Boolean] = js.undefined
     
     @JSName("aria-current")
-    var `aria-current_NavTabProps`: js.UndefOr[AriaCurrent] = js.native
+    var `aria-current_NavTabProps`: js.UndefOr[AriaCurrent] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
   }
   object NavTabProps {
     
@@ -94,24 +94,23 @@ object mod {
     }
   }
   
-  @js.native
   trait RoutedTabsProps extends StObject {
     
-    var activeTabClassName: js.UndefOr[String] = js.native
+    var activeTabClassName: js.UndefOr[String] = js.undefined
     
-    var activeTabStyle: js.UndefOr[js.Object] = js.native
+    var activeTabStyle: js.UndefOr[js.Object] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var startPathWith: js.UndefOr[String] = js.native
+    var startPathWith: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabClassName: js.UndefOr[String] = js.native
+    var tabClassName: js.UndefOr[String] = js.undefined
     
-    var tabStyle: js.UndefOr[js.Object] = js.native
+    var tabStyle: js.UndefOr[js.Object] = js.undefined
   }
   object RoutedTabsProps {
     

@@ -3,7 +3,6 @@ package typings.suitescript
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait nlobjPortlet
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
@@ -71,9 +71,9 @@ Instantiable0[js.Any] {
     * @return
     */
   def addField(name: String, `type`: String): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], source: js.Any): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: Unit, source: js.Any): js.Function0[Unit] = js.native
   
   /**
     * add a line (containing text or simple HTML) with optional indenting and URL to this LINKS portlet.
@@ -87,9 +87,9 @@ Instantiable0[js.Any] {
     * @param indent
     */
   def addLine(text: String): Unit = js.native
-  def addLine(text: String, url: js.UndefOr[scala.Nothing], indent: js.Any): Unit = js.native
   def addLine(text: String, url: String): Unit = js.native
   def addLine(text: String, url: String, indent: js.Any): Unit = js.native
+  def addLine(text: String, url: Unit, indent: js.Any): Unit = js.native
   
   /**
     * add a row (nlobjSearchResult or Array of name-value pairs) to this LIST portlet.
@@ -147,7 +147,6 @@ object nlobjPortlet {
     /**
       *
       */
-    @js.native
     trait AddEditColumn0 extends StObject
   }
 }

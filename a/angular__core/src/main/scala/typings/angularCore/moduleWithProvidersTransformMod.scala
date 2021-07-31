@@ -7,7 +7,6 @@ import typings.typescript.mod.TypeChecker
 import typings.typescript.mod.TypeReferenceNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moduleWithProvidersTransformMod {
@@ -19,7 +18,7 @@ object moduleWithProvidersTransformMod {
       typeChecker: TypeChecker,
       getUpdateRecorder: js.Function1[
             /* sf */ SourceFile, 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateRecorder */ _
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateRecorder */ js.Any
           ]
     ) = this()
     
@@ -69,12 +68,11 @@ object moduleWithProvidersTransformMod {
     var typeChecker: js.Any = js.native
   }
   
-  @js.native
   trait AnalysisFailure extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var node: Node = js.native
+    var node: Node
   }
   object AnalysisFailure {
     
